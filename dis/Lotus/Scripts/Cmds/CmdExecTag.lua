@@ -47,9 +47,9 @@
  20 [-]: SELF      R1 R1 K6     ; R2 := R1; R1 := R1[0xc7fcada9]
  21 [-]: MOVE      R3 R0        ; R3 := R0
  22 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
- 23 [-]: CONST     R2 1         ; R2 := 1.000000
+ 23 [-]: LOADK     R2 1         ; R2 := 1.000000
  24 [-]: LEN       R3 R1        ; R3 := # R1
- 25 [-]: CONST     R4 1         ; R4 := 1.000000
+ 25 [-]: LOADK     R4 1         ; R4 := 1.000000
  26 [-]: FORPREP   R2 59        ; R2 -= R4; PC := 59
  27 [-]: GETTABLE  R6 R1 R5     ; R6 := R1[R5]
  28 [-]: GETGLOBAL R7 K7        ; R7 := 0x7b998233

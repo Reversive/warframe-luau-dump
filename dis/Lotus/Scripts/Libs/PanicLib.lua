@@ -16,15 +16,15 @@
   7 [-]: LOADK     R1 K4        ; R1 := "/Lotus/Types/Enemies/CaptureTargets/CaptureTargetBaseAvatar"
   8 [-]: CALL      R0 2 2       ; R0 := R0(R1)
   9 [-]: LOADNIL   R1 R1        ; R1 := nil
- 10 [-]: CONST     R2 180       ; R2 := 180.000000
+ 10 [-]: LOADK     R2 180       ; R2 := 180.000000
  11 [-]: GETGLOBAL R3 K5        ; R3 := 0x0469f296
  12 [-]: LOADK     R4 K6        ; R4 := "PanicSystemStatus"
  13 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 14 [-]: CONST     R4 0         ; R4 := 0.000000
+ 14 [-]: LOADK     R4 0         ; R4 := 0.000000
  15 [-]: SETGLOBALHASH R4 K7        ; UNALERT := R4
- 16 [-]: CONST     R4 1         ; R4 := 1.000000
+ 16 [-]: LOADK     R4 1         ; R4 := 1.000000
  17 [-]: SETGLOBALHASH R4 K8        ; ALERT := R4
- 18 [-]: CONST     R4 2         ; R4 := 2.000000
+ 18 [-]: LOADK     R4 2         ; R4 := 2.000000
  19 [-]: SETGLOBALHASH R4 K9        ; LOCKDOWN := R4
  20 [-]: CLOSURE   R4 0         ; R4 := closure(Function #1)
  21 [-]: CLOSURE   R5 1         ; R5 := closure(Function #2)
@@ -505,9 +505,9 @@
  26 [-]: GETGLOBAL R3 K6        ; R3 := 0x89326c93
  27 [-]: SELF      R3 R3 K7     ; R4 := R3; R3 := R3[0x7d108ddb]
  28 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 29 [-]: CONST     R4 1         ; R4 := 1.000000
+ 29 [-]: LOADK     R4 1         ; R4 := 1.000000
  30 [-]: LEN       R5 R3        ; R5 := # R3
- 31 [-]: CONST     R6 1         ; R6 := 1.000000
+ 31 [-]: LOADK     R6 1         ; R6 := 1.000000
  32 [-]: FORPREP   R4 134       ; R4 -= R6; PC := 134
  33 [-]: GETTABLE  R8 R3 R7     ; R8 := R3[R7]
  34 [-]: SELF      R8 R8 K8     ; R9 := R8; R8 := R8[0x8b72b36e]
@@ -519,16 +519,16 @@
  40 [-]: CALL      R9 2 2       ; R9 := R9(R10)
  41 [-]: TEST      R9 1         ; if R9 then PC := 134
  42 [-]: JMP       134          ; PC := 134
- 43 [-]: CONST     R9 1         ; R9 := 1.000000
+ 43 [-]: LOADK     R9 1         ; R9 := 1.000000
  44 [-]: LEN       R10 R2       ; R10 := # R2
- 45 [-]: CONST     R11 1        ; R11 := 1.000000
+ 45 [-]: LOADK     R11 1        ; R11 := 1.000000
  46 [-]: FORPREP   R9 133       ; R9 -= R11; PC := 133
  47 [-]: GETGLOBAL R13 K1       ; R13 := _T
  48 [-]: GETTABLE  R13 R13 K2   ; R13 := R13["harlequinObjectChange"]
  49 [-]: GETTABLE  R13 R13 R8   ; R13 := R13[R8]
- 50 [-]: CONST     R14 1        ; R14 := 1.000000
+ 50 [-]: LOADK     R14 1        ; R14 := 1.000000
  51 [-]: LEN       R15 R13      ; R15 := # R13
- 52 [-]: CONST     R16 1        ; R16 := 1.000000
+ 52 [-]: LOADK     R16 1        ; R16 := 1.000000
  53 [-]: FORPREP   R14 132      ; R14 -= R16; PC := 132
  54 [-]: GETTABLE  R18 R2 R12   ; R18 := R2[R12]
  55 [-]: GETTABLE  R19 R13 R17  ; R19 := R13[R17]
@@ -592,15 +592,15 @@
 113 [-]: GETTABLE  R24 R13 R17  ; R24 := R13[R17]
 114 [-]: GETTABLE  R24 R24 K11  ; R24 := R24["params"]
 115 [-]: GETTABLE  R24 R24 K22  ; R24 := R24["consoleRange"]
-116 [-]: CONST     R25 500      ; R25 := 500.000000
-117 [-]: CONST     R26 7        ; R26 := 7.000000
+116 [-]: LOADK     R25 500      ; R25 := 500.000000
+117 [-]: LOADK     R26 7        ; R26 := 7.000000
 118 [-]: GETTABLE  R27 R2 R12   ; R27 := R2[R12]
 119 [-]: MOVE      R28 R18      ; R28 := R18
-120 [-]: CONST     R29 19       ; R29 := 19.000000
+120 [-]: LOADK     R29 19       ; R29 := 19.000000
 121 [-]: OP_LOADBOOL R30 1 0      ; R30 := true
 122 [-]: OP_LOADBOOL R31 1 0      ; R31 := true
 123 [-]: OP_LOADBOOL R32 0 0      ; R32 := false
-124 [-]: CONST     R33 1        ; R33 := 1.000000
+124 [-]: LOADK     R33 1        ; R33 := 1.000000
 125 [-]: OP_LOADBOOL R34 1 0      ; R34 := true
 126 [-]: CALL      R19 16 1     ; R19(R20,R21,R22,R23,R24,R25,R26,R27,R28,R29,R30,R31,R32,R33,R34)
 127 [-]: GETGLOBAL R19 K24      ; R19 := 0x3d106989
@@ -789,7 +789,7 @@
 135 [-]: SELF      R10 R0 K31   ; R11 := R0; R10 := R0[0xde321e6f]
 136 [-]: CALL      R10 2 2      ; R10 := R10(R11)
 137 [-]: SELF      R10 R10 K32  ; R11 := R10; R10 := R10[0x8db2624f]
-138 [-]: CONST     R12 50       ; R12 := 50.000000
+138 [-]: LOADK     R12 50       ; R12 := 50.000000
 139 [-]: MOVE      R13 R0       ; R13 := R0
 140 [-]: GETGLOBAL R14 K8       ; R14 := 0x0469f296
 141 [-]: LOADK     R15 K33      ; R15 := "/Lotus/Language/Actions/HackXP"
@@ -833,7 +833,7 @@
 179 [-]: SELF      R10 R1 K45   ; R11 := R1; R10 := R1[0x659d451f]
 180 [-]: MOVE      R12 R2       ; R12 := R2
 181 [-]: OP_LOADBOOL R13 0 0      ; R13 := false
-182 [-]: CONST     R14 0        ; R14 := 0.000000
+182 [-]: LOADK     R14 0        ; R14 := 0.000000
 183 [-]: OP_LOADBOOL R15 1 0      ; R15 := true
 184 [-]: CALL      R10 6 1      ; R10(R11,R12,R13,R14,R15)
 185 [-]: GETUPVAL  R10 U5       ; R10 := U5

@@ -25,7 +25,7 @@
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x76ea806b
   2 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0x3f3ae64c]
-  3 [-]: CONST     R2 0         ; R2 := 0.000000
+  3 [-]: LOADK     R2 0         ; R2 := 0.000000
   4 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
   5 [-]: NEWTABLE  R1 0 0       ; R1 := {}
   6 [-]: GETGLOBAL R2 K2        ; R2 := 0x7b998233
@@ -59,9 +59,9 @@
  34 [-]: CALL      R12 2 2      ; R12 := R12(R13)
  35 [-]: LE        0 R12 K13    ; if R12 > 0.000000 then PC := 94
  36 [-]: JMP       94           ; PC := 94
- 37 [-]: CONST     R13 1        ; R13 := 1.000000
+ 37 [-]: LOADK     R13 1        ; R13 := 1.000000
  38 [-]: LEN       R14 R6       ; R14 := # R6
- 39 [-]: CONST     R15 1        ; R15 := 1.000000
+ 39 [-]: LOADK     R15 1        ; R15 := 1.000000
  40 [-]: FORPREP   R13 93       ; R13 -= R15; PC := 93
  41 [-]: GETTABLE  R17 R6 R16   ; R17 := R6[R16]
  42 [-]: GETTABLE  R18 R11 K14  ; R18 := R11["mTag"]

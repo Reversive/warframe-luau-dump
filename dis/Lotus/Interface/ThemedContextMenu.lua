@@ -230,12 +230,12 @@
  21 [-]: GETGLOBAL R3 K5        ; R3 := 0xae91e43b
  22 [-]: SELF      R3 R3 K6     ; R4 := R3; R3 := R3[0x91a24e4b]
  23 [-]: GETTABLE  R5 R0 K7     ; R5 := R0["mClipName"]
- 24 [-]: CONST     R6 2         ; R6 := 2.000000
+ 24 [-]: LOADK     R6 2         ; R6 := 2.000000
  25 [-]: CALL      R3 4 2       ; R3 := R3(R4,R5,R6)
  26 [-]: GETGLOBAL R4 K5        ; R4 := 0xae91e43b
  27 [-]: SELF      R4 R4 K6     ; R5 := R4; R4 := R4[0x91a24e4b]
  28 [-]: GETTABLE  R6 R0 K7     ; R6 := R0["mClipName"]
- 29 [-]: CONST     R7 3         ; R7 := 3.000000
+ 29 [-]: LOADK     R7 3         ; R7 := 3.000000
  30 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
  31 [-]: EQ        1 R3 K8      ; if R3 == nil then PC := 56
  32 [-]: JMP       56           ; PC := 56
@@ -294,7 +294,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  5
 
-  1 [-]: CONST     R1 100       ; R1 := 100.000000
+  1 [-]: LOADK     R1 100       ; R1 := 100.000000
   2 [-]: SELF      R2 R0 K0     ; R3 := R0; R2 := R0[0xea061e98]
   3 [-]: CLOSURE   R4 0         ; R4 := closure(Function #1.3.1)
   4 [-]: MOVE      R0 R1        ; R0 := R1
@@ -366,7 +366,7 @@
   3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
   4 [-]: TEST      R0 1         ; if R0 then PC := 59
   5 [-]: JMP       59           ; PC := 59
-  6 [-]: CONST     R0 10        ; R0 := 10.000000
+  6 [-]: LOADK     R0 10        ; R0 := 10.000000
   7 [-]: GETUPVAL  R1 U0        ; R1 := U0
   8 [-]: GETTABLE  R1 R1 K1     ; R1 := R1["Rect"]
   9 [-]: GETUPVAL  R2 U1        ; R2 := U1
@@ -404,7 +404,7 @@
  41 [-]: GETGLOBAL R7 K3        ; R7 := 0xae91e43b
  42 [-]: SELF      R7 R7 K13    ; R8 := R7; R7 := R7[0x67bc869f]
  43 [-]: LOADK     R9 K14       ; R9 := "ContextList"
- 44 [-]: CONST     R10 0        ; R10 := 0.000000
+ 44 [-]: LOADK     R10 0        ; R10 := 0.000000
  45 [-]: GETGLOBAL R11 K15      ; R11 := 0x5bced4c4
  46 [-]: GETTABLE  R11 R11 K16  ; R82 := R11[0x99675e23]
  47 [-]: MOVE      R12 R5       ; R12 := R5
@@ -413,7 +413,7 @@
  50 [-]: GETGLOBAL R7 K3        ; R7 := 0xae91e43b
  51 [-]: SELF      R7 R7 K13    ; R8 := R7; R7 := R7[0x67bc869f]
  52 [-]: LOADK     R9 K14       ; R9 := "ContextList"
- 53 [-]: CONST     R10 1        ; R10 := 1.000000
+ 53 [-]: LOADK     R10 1        ; R10 := 1.000000
  54 [-]: GETGLOBAL R11 K15      ; R11 := 0x5bced4c4
  55 [-]: GETTABLE  R11 R11 K16  ; R82 := R11[0x99675e23]
  56 [-]: MOVE      R12 R6       ; R12 := R6

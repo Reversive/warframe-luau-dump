@@ -41,9 +41,9 @@
 ; Max Stack Size:  11
 
   1 [-]: NEWTABLE  R2 0 0       ; R2 := {}
-  2 [-]: CONST     R3 1         ; R3 := 1.000000
+  2 [-]: LOADK     R3 1         ; R3 := 1.000000
   3 [-]: LEN       R4 R1        ; R4 := # R1
-  4 [-]: CONST     R5 1         ; R5 := 1.000000
+  4 [-]: LOADK     R5 1         ; R5 := 1.000000
   5 [-]: FORPREP   R3 19        ; R3 -= R5; PC := 19
   6 [-]: SELF      R7 R0 K0     ; R8 := R0; R7 := R0[0xae5d27b0]
   7 [-]: GETTABLE  R9 R1 R6     ; R9 := R1[R6]
@@ -75,19 +75,19 @@
   1 [-]: TEST      R2 1         ; if R2 then PC := 19
   2 [-]: JMP       19           ; PC := 19
   3 [-]: NEWTABLE  R4 13 0      ; R4 := {}
-  4 [-]: CONST     R5 1         ; R5 := 1.000000
-  5 [-]: CONST     R6 2         ; R6 := 2.000000
-  6 [-]: CONST     R7 3         ; R7 := 3.000000
-  7 [-]: CONST     R8 4         ; R8 := 4.000000
-  8 [-]: CONST     R9 5         ; R9 := 5.000000
-  9 [-]: CONST     R10 7        ; R10 := 7.000000
- 10 [-]: CONST     R11 8        ; R11 := 8.000000
- 11 [-]: CONST     R12 9        ; R12 := 9.000000
- 12 [-]: CONST     R13 13       ; R13 := 13.000000
- 13 [-]: CONST     R14 14       ; R14 := 14.000000
- 14 [-]: CONST     R15 15       ; R15 := 15.000000
- 15 [-]: CONST     R16 17       ; R16 := 17.000000
- 16 [-]: CONST     R17 32       ; R17 := 32.000000
+  4 [-]: LOADK     R5 1         ; R5 := 1.000000
+  5 [-]: LOADK     R6 2         ; R6 := 2.000000
+  6 [-]: LOADK     R7 3         ; R7 := 3.000000
+  7 [-]: LOADK     R8 4         ; R8 := 4.000000
+  8 [-]: LOADK     R9 5         ; R9 := 5.000000
+  9 [-]: LOADK     R10 7        ; R10 := 7.000000
+ 10 [-]: LOADK     R11 8        ; R11 := 8.000000
+ 11 [-]: LOADK     R12 9        ; R12 := 9.000000
+ 12 [-]: LOADK     R13 13       ; R13 := 13.000000
+ 13 [-]: LOADK     R14 14       ; R14 := 14.000000
+ 14 [-]: LOADK     R15 15       ; R15 := 15.000000
+ 15 [-]: LOADK     R16 17       ; R16 := 17.000000
+ 16 [-]: LOADK     R17 32       ; R17 := 32.000000
  17 [-]: SETLIST   R4 13 1      ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 13
  18 [-]: MOVE      R2 R4        ; R2 := R4
  19 [-]: TEST      R1 0         ; if not R1 then PC := 24
@@ -169,8 +169,8 @@
  95 [-]: MOVE      R10 R1       ; R10 := R1
  96 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
  97 [-]: LEN       R9 R8        ; R9 := # R8
- 98 [-]: CONST     R10 1        ; R10 := 1.000000
- 99 [-]: CONST     R11 -1       ; R11 := -1.000000
+ 98 [-]: LOADK     R10 1        ; R10 := 1.000000
+ 99 [-]: LOADK     R11 -1       ; R11 := -1.000000
 100 [-]: FORPREP   R9 117       ; R9 -= R11; PC := 117
 101 [-]: GETTABLE  R13 R8 R12   ; R13 := R8[R12]
 102 [-]: EQ        0 R13 K16    ; if R13 ~= 32.000000 then PC := 117
@@ -216,7 +216,7 @@
 142 [-]: LOADNIL   R13 R13      ; R13 := nil
 143 [-]: RETURN    R13 2        ; return R13
 144 [-]: GETGLOBAL R13 K27      ; R13 := 0x0c5e62f9
-145 [-]: CONST     R14 1        ; R14 := 1.000000
+145 [-]: LOADK     R14 1        ; R14 := 1.000000
 146 [-]: LEN       R15 R8       ; R15 := # R8
 147 [-]: CALL      R13 3 2      ; R13 := R13(R14,R15)
 148 [-]: GETTABLE  R13 R8 R13   ; R13 := R8[R13]
@@ -243,7 +243,7 @@
 169 [-]: GETGLOBAL R18 K13      ; R18 := 0xb009bbc6
 170 [-]: SELF      R19 R14 K40  ; R20 := R14; R19 := R14[0x4362d451]
 171 [-]: GETGLOBAL R21 K27      ; R21 := 0x0c5e62f9
-172 [-]: CONST     R22 1        ; R22 := 1.000000
+172 [-]: LOADK     R22 1        ; R22 := 1.000000
 173 [-]: MOVE      R23 R15      ; R23 := R15
 174 [-]: CALL      R21 3 2      ; R21 := R21(R22,R23)
 175 [-]: SUB       R21 R21 K41  ; R21 := R21 - 1.000000
@@ -255,7 +255,7 @@
 181 [-]: GETGLOBAL R18 K13      ; R18 := 0xb009bbc6
 182 [-]: SELF      R19 R14 K43  ; R20 := R14; R19 := R14[0x2fb6b8b7]
 183 [-]: GETGLOBAL R21 K27      ; R21 := 0x0c5e62f9
-184 [-]: CONST     R22 1        ; R22 := 1.000000
+184 [-]: LOADK     R22 1        ; R22 := 1.000000
 185 [-]: MOVE      R23 R16      ; R23 := R16
 186 [-]: CALL      R21 3 2      ; R21 := R21(R22,R23)
 187 [-]: SUB       R21 R21 K41  ; R21 := R21 - 1.000000
@@ -277,8 +277,8 @@
 203 [-]: GETTABLE  R18 R18 K48  ; R18 := R18["maxEnemyLevel"]
 204 [-]: SETTABLE  R17 K48 R18  ; R17["maxEnemyLevel"] := R18
 205 [-]: GETGLOBAL R18 K50      ; R18 := 0xdd6e4cf8
-206 [-]: CONST     R19 0        ; R19 := 0.750000
-207 [-]: CONST     R20 1        ; R20 := 1.000000
+206 [-]: LOADK     R19 0        ; R19 := 0.750000
+207 [-]: LOADK     R20 1        ; R20 := 1.000000
 208 [-]: CALL      R18 3 2      ; R18 := R18(R19,R20)
 209 [-]: SETTABLE  R17 K49 R18  ; R17["difficulty"] := R18
 210 [-]: GETTABLE  R18 R5 K17   ; R18 := R5["mission"]

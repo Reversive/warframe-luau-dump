@@ -33,7 +33,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  16
 
-  1 [-]: CONST     R1 30        ; R1 := 30.000000
+  1 [-]: LOADK     R1 30        ; R1 := 30.000000
   2 [-]: LOADNIL   R2 R4        ; R2 := R3 := R4 := nil
   3 [-]: SELF      R5 R0 K0     ; R6 := R0; R5 := R0[0x4528012d]
   4 [-]: CALL      R5 2 2       ; R5 := R5(R6)
@@ -124,17 +124,17 @@
  89 [-]: GETGLOBAL R4 K23       ; R4 := 0x3209764b
  90 [-]: SELF      R8 R0 K24    ; R9 := R0; R8 := R0[0x986d2ab8]
  91 [-]: GETUPVAL  R10 U0       ; R10 := U0
- 92 [-]: CONST     R11 1        ; R11 := 1.000000
+ 92 [-]: LOADK     R11 1        ; R11 := 1.000000
  93 [-]: LOADK     R12 K25      ; R12 := 0.550000
  94 [-]: LOADK     R13 K26      ; R13 := 0.050000
- 95 [-]: CONST     R14 1        ; R14 := 1.000000
+ 95 [-]: LOADK     R14 1        ; R14 := 1.000000
  96 [-]: CALL      R8 7 1       ; R8(R9,R10,R11,R12,R13,R14)
  97 [-]: SELF      R8 R0 K24    ; R9 := R0; R8 := R0[0x986d2ab8]
  98 [-]: GETUPVAL  R10 U1       ; R10 := U1
- 99 [-]: CONST     R11 1        ; R11 := 1.000000
+ 99 [-]: LOADK     R11 1        ; R11 := 1.000000
 100 [-]: LOADK     R12 K25      ; R12 := 0.550000
 101 [-]: LOADK     R13 K26      ; R13 := 0.050000
-102 [-]: CONST     R14 1        ; R14 := 1.000000
+102 [-]: LOADK     R14 1        ; R14 := 1.000000
 103 [-]: CALL      R8 7 1       ; R8(R9,R10,R11,R12,R13,R14)
 104 [-]: JMP       110          ; PC := 110
 105 [-]: EQ        0 R7 K27     ; if R7 ~= 1.000000 then PC := 109
@@ -163,9 +163,9 @@
 128 [-]: MOVE      R10 R4       ; R10 := R4
 129 [-]: GETGLOBAL R11 K6       ; R11 := EMPTY_SYMBOL
 130 [-]: GETGLOBAL R12 K33      ; R12 := 0xa421af95
-131 [-]: CONST     R13 0        ; R13 := 0.000000
+131 [-]: LOADK     R13 0        ; R13 := 0.000000
 132 [-]: LOADK     R14 K34      ; R14 := 0.400000
-133 [-]: CONST     R15 0        ; R15 := 0.000000
+133 [-]: LOADK     R15 0        ; R15 := 0.000000
 134 [-]: CALL      R12 4 0      ; R12,... := R12(R13,R14,R15)
 135 [-]: CALL      R8 0 1       ; R8(R9,...)
 136 [-]: RETURN    R0 1         ; return 
@@ -180,7 +180,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  14
 
-  1 [-]: CONST     R1 30        ; R1 := 30.000000
+  1 [-]: LOADK     R1 30        ; R1 := 30.000000
   2 [-]: LOADNIL   R2 R3        ; R2 := R3 := nil
   3 [-]: SELF      R4 R0 K0     ; R5 := R0; R4 := R0[0x5458ba4c]
   4 [-]: CALL      R4 2 2       ; R4 := R4(R5)
@@ -225,17 +225,17 @@
  43 [-]: GETGLOBAL R3 K12       ; R3 := 0x3209764b
  44 [-]: SELF      R6 R0 K13    ; R7 := R0; R6 := R0[0x986d2ab8]
  45 [-]: GETUPVAL  R8 U0        ; R8 := U0
- 46 [-]: CONST     R9 1         ; R9 := 1.000000
+ 46 [-]: LOADK     R9 1         ; R9 := 1.000000
  47 [-]: LOADK     R10 K14      ; R10 := 0.550000
  48 [-]: LOADK     R11 K15      ; R11 := 0.050000
- 49 [-]: CONST     R12 1        ; R12 := 1.000000
+ 49 [-]: LOADK     R12 1        ; R12 := 1.000000
  50 [-]: CALL      R6 7 1       ; R6(R7,R8,R9,R10,R11,R12)
  51 [-]: SELF      R6 R0 K13    ; R7 := R0; R6 := R0[0x986d2ab8]
  52 [-]: GETUPVAL  R8 U1        ; R8 := U1
- 53 [-]: CONST     R9 1         ; R9 := 1.000000
+ 53 [-]: LOADK     R9 1         ; R9 := 1.000000
  54 [-]: LOADK     R10 K14      ; R10 := 0.550000
  55 [-]: LOADK     R11 K15      ; R11 := 0.050000
- 56 [-]: CONST     R12 1        ; R12 := 1.000000
+ 56 [-]: LOADK     R12 1        ; R12 := 1.000000
  57 [-]: CALL      R6 7 1       ; R6(R7,R8,R9,R10,R11,R12)
  58 [-]: JMP       72           ; PC := 72
  59 [-]: EQ        0 R5 K16     ; if R5 ~= 1.000000 then PC := 63
@@ -260,9 +260,9 @@
  78 [-]: MOVE      R8 R3        ; R8 := R3
  79 [-]: GETGLOBAL R9 K23       ; R9 := EMPTY_SYMBOL
  80 [-]: GETGLOBAL R10 K24      ; R10 := 0xa421af95
- 81 [-]: CONST     R11 0        ; R11 := 0.000000
+ 81 [-]: LOADK     R11 0        ; R11 := 0.000000
  82 [-]: LOADK     R12 K25      ; R12 := 0.400000
- 83 [-]: CONST     R13 0        ; R13 := 0.000000
+ 83 [-]: LOADK     R13 0        ; R13 := 0.000000
  84 [-]: CALL      R10 4 0      ; R10,... := R10(R11,R12,R13)
  85 [-]: CALL      R6 0 1       ; R6(R7,...)
  86 [-]: RETURN    R0 1         ; return 

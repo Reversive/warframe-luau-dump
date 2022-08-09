@@ -83,9 +83,9 @@
 ; Max Stack Size:  16
 
   1 [-]: GETTABLE  R3 R0 K0     ; R3 := R0["mTimers"]
-  2 [-]: CONST     R4 1         ; R4 := 1.000000
+  2 [-]: LOADK     R4 1         ; R4 := 1.000000
   3 [-]: GETTABLE  R5 R0 K1     ; R5 := R0["mMaxIndex"]
-  4 [-]: CONST     R6 1         ; R6 := 1.000000
+  4 [-]: LOADK     R6 1         ; R6 := 1.000000
   5 [-]: FORPREP   R4 48        ; R4 -= R6; PC := 48
   6 [-]: GETTABLE  R8 R3 R7     ; R8 := R3[R7]
   7 [-]: EQ        1 R8 K2      ; if R8 == nil then PC := 48
@@ -132,9 +132,9 @@
  48 [-]: FORLOOP   R4 6         ; R4 += R6; if R4 <= R5 then begin PC := 6; R7 := R4 end
  49 [-]: EQ        1 R2 K2      ; if R2 == nil then PC := 60
  50 [-]: JMP       60           ; PC := 60
- 51 [-]: CONST     R9 1         ; R9 := 1.000000
+ 51 [-]: LOADK     R9 1         ; R9 := 1.000000
  52 [-]: LEN       R10 R2       ; R10 := # R2
- 53 [-]: CONST     R11 1        ; R11 := 1.000000
+ 53 [-]: LOADK     R11 1        ; R11 := 1.000000
  54 [-]: FORPREP   R9 59        ; R9 -= R11; PC := 59
  55 [-]: GETTABLE  R13 R2 R12   ; R13 := R2[R12]
  56 [-]: GETTABLE  R14 R13 K14  ; R82 := R14[0x56348e81]

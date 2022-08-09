@@ -11,11 +11,11 @@
   2 [-]: NEWTABLE  R1 0 0       ; R1 := {}
   3 [-]: NEWTABLE  R2 0 0       ; R2 := {}
   4 [-]: NEWTABLE  R3 0 0       ; R3 := {}
-  5 [-]: CONST     R4 1         ; R4 := 1.000000
-  6 [-]: CONST     R5 2         ; R5 := 2.000000
-  7 [-]: CONST     R6 3         ; R6 := 3.000000
-  8 [-]: CONST     R7 400       ; R7 := 400.000000
-  9 [-]: CONST     R8 415       ; R8 := 415.000000
+  5 [-]: LOADK     R4 1         ; R4 := 1.000000
+  6 [-]: LOADK     R5 2         ; R5 := 2.000000
+  7 [-]: LOADK     R6 3         ; R6 := 3.000000
+  8 [-]: LOADK     R7 400       ; R7 := 400.000000
+  9 [-]: LOADK     R8 415       ; R8 := 415.000000
  10 [-]: CLOSURE   R9 0         ; R9 := closure(Function #1)
  11 [-]: MOVE      R0 R0        ; R0 := R0
  12 [-]: MOVE      R0 R6        ; R0 := R6
@@ -124,7 +124,7 @@
 
   1 [-]: GETUPVAL  R0 U0        ; R0 := U0
   2 [-]: GETUPVAL  R1 U1        ; R1 := U1
-  3 [-]: CONST     R2 1         ; R2 := 1.000000
+  3 [-]: LOADK     R2 1         ; R2 := 1.000000
   4 [-]: FORPREP   R0 10        ; R0 -= R2; PC := 10
   5 [-]: GETUPVAL  R4 U2        ; R4 := U2
   6 [-]: GETTABLE  R4 R4 R3     ; R4 := R4[R3]
@@ -226,12 +226,12 @@
   8 [-]: GETUPVAL  R1 U2        ; R1 := U2
   9 [-]: SETTABLE  R0 K3 R1     ; R0["IsShipQuestLayerLoaded"] := R1
  10 [-]: GETGLOBAL R0 K4        ; R0 := 0xcbd666e1
- 11 [-]: CONST     R1 0         ; R1 := 0.000000
+ 11 [-]: LOADK     R1 0         ; R1 := 0.000000
  12 [-]: CALL      R0 2 1       ; R0(R1)
  13 [-]: GETUPVAL  R0 U3        ; R0 := U3
  14 [-]: LEN       R0 R0        ; R0 := # R0
- 15 [-]: CONST     R1 1         ; R1 := 1.000000
- 16 [-]: CONST     R2 -1        ; R2 := -1.000000
+ 15 [-]: LOADK     R1 1         ; R1 := 1.000000
+ 16 [-]: LOADK     R2 -1        ; R2 := -1.000000
  17 [-]: FORPREP   R0 44        ; R0 -= R2; PC := 44
  18 [-]: GETUPVAL  R4 U3        ; R4 := U3
  19 [-]: GETTABLE  R4 R4 R3     ; R4 := R4[R3]
@@ -262,8 +262,8 @@
  44 [-]: FORLOOP   R0 18        ; R0 += R2; if R0 <= R1 then begin PC := 18; R3 := R0 end
  45 [-]: GETUPVAL  R6 U4        ; R6 := U4
  46 [-]: LEN       R6 R6        ; R6 := # R6
- 47 [-]: CONST     R7 1         ; R7 := 1.000000
- 48 [-]: CONST     R8 -1        ; R8 := -1.000000
+ 47 [-]: LOADK     R7 1         ; R7 := 1.000000
+ 48 [-]: LOADK     R8 -1        ; R8 := -1.000000
  49 [-]: FORPREP   R6 72        ; R6 -= R8; PC := 72
  50 [-]: GETUPVAL  R10 U4       ; R10 := U4
  51 [-]: GETTABLE  R10 R10 R9   ; R10 := R10[R9]

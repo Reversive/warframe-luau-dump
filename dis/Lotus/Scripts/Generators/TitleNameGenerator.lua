@@ -9,7 +9,7 @@
 
   1 [-]: NEWTABLE  R0 6 0       ; R0 := {}
   2 [-]: NEWTABLE  R1 2 0       ; R1 := {}
-  3 [-]: CONST     R2 0         ; R2 := 0.500000
+  3 [-]: LOADK     R2 0         ; R2 := 0.500000
   4 [-]: NEWTABLE  R3 31 0      ; R3 := {}
   5 [-]: LOADK     R4 K0        ; R4 := "Experimental"
   6 [-]: LOADK     R5 K1        ; R5 := "Consulting"
@@ -74,7 +74,7 @@
  65 [-]: SETLIST   R3 9 2       ; R3[(2-1)*FPF+i] := R(3+i), 1 <= i <= 9
  66 [-]: SETLIST   R1 2 1       ; R1[(1-1)*FPF+i] := R(1+i), 1 <= i <= 2
  67 [-]: NEWTABLE  R2 2 0       ; R2 := {}
- 68 [-]: CONST     R3 1         ; R3 := 1.000000
+ 68 [-]: LOADK     R3 1         ; R3 := 1.000000
  69 [-]: NEWTABLE  R4 38 0      ; R4 := {}
  70 [-]: LOADK     R5 K58       ; R5 := "Trainee Assistant"
  71 [-]: LOADK     R6 K59       ; R6 := "Junior Assistant"
@@ -191,7 +191,7 @@
 182 [-]: SETLIST   R4 10 3      ; R4[(3-1)*FPF+i] := R(4+i), 1 <= i <= 10
 183 [-]: SETLIST   R2 2 1       ; R2[(1-1)*FPF+i] := R(2+i), 1 <= i <= 2
 184 [-]: NEWTABLE  R3 2 0       ; R3 := {}
-185 [-]: CONST     R4 1         ; R4 := 1.000000
+185 [-]: LOADK     R4 1         ; R4 := 1.000000
 186 [-]: NEWTABLE  R5 26 0      ; R5 := {}
 187 [-]: LOADK     R6 K161      ; R6 := "Head of"
 188 [-]: LOADK     R7 K162      ; R7 := "Overseer of"
@@ -236,7 +236,7 @@
 227 [-]: SETLIST   R5 40 1      ; R5[(1-1)*FPF+i] := R(5+i), 1 <= i <= 40
 228 [-]: SETLIST   R3 2 1       ; R3[(1-1)*FPF+i] := R(3+i), 1 <= i <= 2
 229 [-]: NEWTABLE  R4 2 0       ; R4 := {}
-230 [-]: CONST     R5 0         ; R5 := 0.500000
+230 [-]: LOADK     R5 0         ; R5 := 0.500000
 231 [-]: NEWTABLE  R6 40 0      ; R6 := {}
 232 [-]: LOADK     R7 K201      ; R7 := "Administration"
 233 [-]: LOADK     R8 K202      ; R8 := "Analytics"
@@ -368,7 +368,7 @@
 359 [-]: SETLIST   R6 25 3      ; R6[(3-1)*FPF+i] := R(6+i), 1 <= i <= 25
 360 [-]: SETLIST   R4 2 1       ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 2
 361 [-]: NEWTABLE  R5 2 0       ; R5 := {}
-362 [-]: CONST     R6 1         ; R6 := 1.000000
+362 [-]: LOADK     R6 1         ; R6 := 1.000000
 363 [-]: NEWTABLE  R7 42 0      ; R7 := {}
 364 [-]: LOADK     R8 K307      ; R8 := "Development"
 365 [-]: LOADK     R9 K308      ; R9 := "Security"
@@ -527,7 +527,7 @@
 518 [-]: SETLIST   R7 1 4       ; R7[(4-1)*FPF+i] := R(7+i), 1 <= i <= 1
 519 [-]: SETLIST   R5 2 1       ; R5[(1-1)*FPF+i] := R(5+i), 1 <= i <= 2
 520 [-]: NEWTABLE  R6 2 0       ; R6 := {}
-521 [-]: CONST     R7 0         ; R7 := 0.500000
+521 [-]: LOADK     R7 0         ; R7 := 0.500000
 522 [-]: NEWTABLE  R8 25 0      ; R8 := {}
 523 [-]: LOADK     R9 K455      ; R9 := "(Earth Sector)"
 524 [-]: LOADK     R10 K456     ; R10 := "(Mars Sector)"
@@ -640,7 +640,7 @@
 631 [-]: SETLIST   R1 1 1       ; R1[(1-1)*FPF+i] := R(1+i), 1 <= i <= 1
 632 [-]: NEWTABLE  R2 1 0       ; R2 := {}
 633 [-]: NEWTABLE  R3 2 0       ; R3 := {}
-634 [-]: CONST     R4 1         ; R4 := 1.000000
+634 [-]: LOADK     R4 1         ; R4 := 1.000000
 635 [-]: NEWTABLE  R5 50 0      ; R5 := {}
 636 [-]: LOADK     R6 K549      ; R6 := "Lug"
 637 [-]: LOADK     R7 K550      ; R7 := "Grease"
@@ -1272,7 +1272,7 @@
 1263 [-]: SETLIST   R3 1 1       ; R3[(1-1)*FPF+i] := R(3+i), 1 <= i <= 1
 1264 [-]: NEWTABLE  R4 1 0       ; R4 := {}
 1265 [-]: NEWTABLE  R5 2 0       ; R5 := {}
-1266 [-]: CONST     R6 1         ; R6 := 1.000000
+1266 [-]: LOADK     R6 1         ; R6 := 1.000000
 1267 [-]: NEWTABLE  R7 11 0      ; R7 := {}
 1268 [-]: LOADK     R8 K989      ; R8 := "Res-Arc"
 1269 [-]: LOADK     R9 K990      ; R9 := "Surv-Tel"
@@ -1290,7 +1290,7 @@
 1281 [-]: SETLIST   R4 1 1       ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 1
 1282 [-]: NEWTABLE  R5 1 0       ; R5 := {}
 1283 [-]: NEWTABLE  R6 2 0       ; R6 := {}
-1284 [-]: CONST     R7 1         ; R7 := 1.000000
+1284 [-]: LOADK     R7 1         ; R7 := 1.000000
 1285 [-]: NEWTABLE  R8 12 0      ; R8 := {}
 1286 [-]: LOADK     R9 K1000     ; R9 := "Arbiter Princeps"
 1287 [-]: LOADK     R10 K1001    ; R10 := "Arbiter"
@@ -1403,9 +1403,9 @@
   9 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
  10 [-]: CONCAT    R6 R7 R8     ; R6 := R7 .. R8
  11 [-]: NEWTABLE  R7 0 0       ; R7 := {}
- 12 [-]: CONST     R8 1         ; R8 := 1.000000
+ 12 [-]: LOADK     R8 1         ; R8 := 1.000000
  13 [-]: LEN       R9 R0        ; R9 := # R0
- 14 [-]: CONST     R10 1        ; R10 := 1.000000
+ 14 [-]: LOADK     R10 1        ; R10 := 1.000000
  15 [-]: FORPREP   R8 33        ; R8 -= R10; PC := 33
  16 [-]: GETTABLE  R12 R0 R11   ; R12 := R0[R11]
  17 [-]: GETTABLE  R12 R12 K5   ; R12 := R12[1.000000]
@@ -1413,13 +1413,13 @@
  19 [-]: GETTABLE  R13 R13 K6   ; R13 := R13[2.000000]
  20 [-]: LOADK     R14 K7       ; R14 := "-"
  21 [-]: GETGLOBAL R15 K8       ; R15 := 0xdd6e4cf8
- 22 [-]: CONST     R16 0        ; R16 := 0.000000
- 23 [-]: CONST     R17 1        ; R17 := 1.000000
+ 22 [-]: LOADK     R16 0        ; R16 := 0.000000
+ 23 [-]: LOADK     R17 1        ; R17 := 1.000000
  24 [-]: CALL      R15 3 2      ; R15 := R15(R16,R17)
  25 [-]: LE        0 R15 R12    ; if R15 > R12 then PC := 32
  26 [-]: JMP       32           ; PC := 32
  27 [-]: GETGLOBAL R15 K9       ; R15 := 0x0c5e62f9
- 28 [-]: CONST     R16 1        ; R16 := 1.000000
+ 28 [-]: LOADK     R16 1        ; R16 := 1.000000
  29 [-]: LEN       R17 R13      ; R17 := # R13
  30 [-]: CALL      R15 3 2      ; R15 := R15(R16,R17)
  31 [-]: GETTABLE  R14 R13 R15  ; R14 := R13[R15]
@@ -1456,9 +1456,9 @@
  62 [-]: CALL      R22 2 1      ; R22(R23)
  63 [-]: JMP       88           ; PC := 88
  64 [-]: NEWTABLE  R22 0 0      ; R22 := {}
- 65 [-]: CONST     R23 1        ; R23 := 1.000000
+ 65 [-]: LOADK     R23 1        ; R23 := 1.000000
  66 [-]: LEN       R24 R7       ; R24 := # R7
- 67 [-]: CONST     R25 1        ; R25 := 1.000000
+ 67 [-]: LOADK     R25 1        ; R25 := 1.000000
  68 [-]: FORPREP   R23 86       ; R23 -= R25; PC := 86
  69 [-]: GETTABLE  R27 R17 R26  ; R27 := R17[R26]
  70 [-]: GETTABLE  R27 R7 R27   ; R27 := R7[R27]
@@ -1479,9 +1479,9 @@
  85 [-]: SETTABLE  R22 R26 R27  ; R22[R26] := R27
  86 [-]: FORLOOP   R23 69       ; R23 += R25; if R23 <= R24 then begin PC := 69; R26 := R23 end
  87 [-]: MOVE      R7 R22       ; R7 := R22
- 88 [-]: CONST     R28 1        ; R28 := 1.000000
+ 88 [-]: LOADK     R28 1        ; R28 := 1.000000
  89 [-]: LEN       R29 R7       ; R29 := # R7
- 90 [-]: CONST     R30 1        ; R30 := 1.000000
+ 90 [-]: LOADK     R30 1        ; R30 := 1.000000
  91 [-]: FORPREP   R28 127      ; R28 -= R30; PC := 127
  92 [-]: GETTABLE  R32 R7 R31   ; R32 := R7[R31]
  93 [-]: EQ        1 R32 K7     ; if R32 == "-" then PC := 127
@@ -1543,22 +1543,22 @@
 ; Max Stack Size:  12
 
   1 [-]: LOADK     R2 K0        ; R2 := ""
-  2 [-]: CONST     R3 1         ; R3 := 1.000000
+  2 [-]: LOADK     R3 1         ; R3 := 1.000000
   3 [-]: LEN       R4 R0        ; R4 := # R0
-  4 [-]: CONST     R5 1         ; R5 := 1.000000
+  4 [-]: LOADK     R5 1         ; R5 := 1.000000
   5 [-]: FORPREP   R3 23        ; R3 -= R5; PC := 23
   6 [-]: GETTABLE  R7 R0 R6     ; R7 := R0[R6]
   7 [-]: GETTABLE  R7 R7 K1     ; R7 := R7[1.000000]
   8 [-]: GETTABLE  R8 R0 R6     ; R8 := R0[R6]
   9 [-]: GETTABLE  R8 R8 K2     ; R8 := R8[2.000000]
  10 [-]: GETGLOBAL R9 K3        ; R9 := 0xdd6e4cf8
- 11 [-]: CONST     R10 0        ; R10 := 0.000000
- 12 [-]: CONST     R11 1        ; R11 := 1.000000
+ 11 [-]: LOADK     R10 0        ; R10 := 0.000000
+ 12 [-]: LOADK     R11 1        ; R11 := 1.000000
  13 [-]: CALL      R9 3 2       ; R9 := R9(R10,R11)
  14 [-]: LE        0 R9 R7      ; if R9 > R7 then PC := 23
  15 [-]: JMP       23           ; PC := 23
  16 [-]: GETGLOBAL R9 K4        ; R9 := 0x0c5e62f9
- 17 [-]: CONST     R10 1        ; R10 := 1.000000
+ 17 [-]: LOADK     R10 1        ; R10 := 1.000000
  18 [-]: LEN       R11 R8       ; R11 := # R8
  19 [-]: CALL      R9 3 2       ; R9 := R9(R10,R11)
  20 [-]: MOVE      R10 R1       ; R10 := R1
@@ -1579,9 +1579,9 @@
 ; Max Stack Size:  13
 
   1 [-]: LOADK     R2 K0        ; R2 := ""
-  2 [-]: CONST     R3 1         ; R3 := 1.000000
+  2 [-]: LOADK     R3 1         ; R3 := 1.000000
   3 [-]: LEN       R4 R0        ; R4 := # R0
-  4 [-]: CONST     R5 1         ; R5 := 1.000000
+  4 [-]: LOADK     R5 1         ; R5 := 1.000000
   5 [-]: FORPREP   R3 38        ; R3 -= R5; PC := 38
   6 [-]: GETTABLE  R7 R0 R6     ; R7 := R0[R6]
   7 [-]: GETTABLE  R7 R7 K1     ; R7 := R7[1.000000]
@@ -1594,7 +1594,7 @@
  14 [-]: JMP       38           ; PC := 38
  15 [-]: GETGLOBAL R9 K3        ; R9 := 0x5bced4c4
  16 [-]: GETTABLE  R9 R9 K4     ; R82 := R9[0x3630e649]
- 17 [-]: CONST     R10 1        ; R10 := 1.000000
+ 17 [-]: LOADK     R10 1        ; R10 := 1.000000
  18 [-]: LEN       R11 R8       ; R11 := # R8
  19 [-]: CALL      R9 3 2       ; R9 := R9(R10,R11)
  20 [-]: GETGLOBAL R10 K5       ; R10 := 0x7f5022cf
@@ -1629,16 +1629,16 @@
 ; Is_vararg:       0
 ; Max Stack Size:  16
 
-  1 [-]: CONST     R2 1         ; R2 := 1.000000
-  2 [-]: CONST     R3 1         ; R3 := 1.000000
+  1 [-]: LOADK     R2 1         ; R2 := 1.000000
+  2 [-]: LOADK     R3 1         ; R3 := 1.000000
   3 [-]: LEN       R4 R0        ; R4 := # R0
-  4 [-]: CONST     R5 1         ; R5 := 1.000000
+  4 [-]: LOADK     R5 1         ; R5 := 1.000000
   5 [-]: FORPREP   R3 29        ; R3 -= R5; PC := 29
   6 [-]: GETTABLE  R7 R0 R6     ; R7 := R0[R6]
   7 [-]: GETTABLE  R7 R7 K0     ; R7 := R7[2.000000]
-  8 [-]: CONST     R8 1         ; R8 := 1.000000
+  8 [-]: LOADK     R8 1         ; R8 := 1.000000
   9 [-]: LEN       R9 R7        ; R9 := # R7
- 10 [-]: CONST     R10 1        ; R10 := 1.000000
+ 10 [-]: LOADK     R10 1        ; R10 := 1.000000
  11 [-]: FORPREP   R8 28        ; R8 -= R10; PC := 28
  12 [-]: GETGLOBAL R12 K1       ; R12 := 0x3d106989
  13 [-]: MOVE      R13 R1       ; R13 := R1
@@ -1702,7 +1702,7 @@
   2 [-]: GETUPVAL  R1 U1        ; R1 := U1
   3 [-]: OP_LOADBOOL R2 1 0       ; R2 := true
   4 [-]: LOADK     R3 K0        ; R3 := "23C9F5"
-  5 [-]: CONST     R4 6         ; R4 := 6.000000
+  5 [-]: LOADK     R4 6         ; R4 := 6.000000
   6 [-]: LOADK     R5 K1        ; R5 := "006493"
   7 [-]: LOADK     R6 K2        ; R6 := "/Lotus/Language/SistersOfParvos/"
   8 [-]: TAILCALL  R0 7 0       ; R0,... := R0(R1,R2,R3,R4,R5,R6)

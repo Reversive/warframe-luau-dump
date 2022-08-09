@@ -240,7 +240,7 @@
   1 [-]: DIV       R0 R0 R3     ; R0 := R0 / R3
   2 [-]: GETUPVAL  R4 U0        ; R4 := U0
   3 [-]: MOVE      R5 R0        ; R5 := R0
-  4 [-]: CONST     R6 2         ; R6 := 2.000000
+  4 [-]: LOADK     R6 2         ; R6 := 2.000000
   5 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
   6 [-]: MUL       R4 R2 R4     ; R4 := R2 * R4
   7 [-]: ADD       R4 R4 R1     ; R4 := R4 + R1
@@ -321,7 +321,7 @@
   5 [-]: DIV       R4 R2 K0     ; R4 := R2 / 2.000000
   6 [-]: GETUPVAL  R5 U0        ; R5 := U0
   7 [-]: MOVE      R6 R0        ; R6 := R0
-  8 [-]: CONST     R7 2         ; R7 := 2.000000
+  8 [-]: LOADK     R7 2         ; R7 := 2.000000
   9 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
  10 [-]: MUL       R4 R4 R5     ; R4 := R4 * R5
  11 [-]: ADD       R4 R4 R1     ; R4 := R4 + R1
@@ -383,7 +383,7 @@
   1 [-]: DIV       R0 R0 R3     ; R0 := R0 / R3
   2 [-]: GETUPVAL  R4 U0        ; R4 := U0
   3 [-]: MOVE      R5 R0        ; R5 := R0
-  4 [-]: CONST     R6 3         ; R6 := 3.000000
+  4 [-]: LOADK     R6 3         ; R6 := 3.000000
   5 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
   6 [-]: MUL       R4 R2 R4     ; R4 := R2 * R4
   7 [-]: ADD       R4 R4 R1     ; R4 := R4 + R1
@@ -404,7 +404,7 @@
   2 [-]: SUB       R0 R4 K0     ; R0 := R4 - 1.000000
   3 [-]: GETUPVAL  R4 U0        ; R4 := U0
   4 [-]: MOVE      R5 R0        ; R5 := R0
-  5 [-]: CONST     R6 3         ; R6 := 3.000000
+  5 [-]: LOADK     R6 3         ; R6 := 3.000000
   6 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
   7 [-]: ADD       R4 R4 K0     ; R4 := R4 + 1.000000
   8 [-]: MUL       R4 R2 R4     ; R4 := R2 * R4
@@ -526,7 +526,7 @@
   1 [-]: DIV       R0 R0 R3     ; R0 := R0 / R3
   2 [-]: GETUPVAL  R4 U0        ; R4 := U0
   3 [-]: MOVE      R5 R0        ; R5 := R0
-  4 [-]: CONST     R6 4         ; R6 := 4.000000
+  4 [-]: LOADK     R6 4         ; R6 := 4.000000
   5 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
   6 [-]: MUL       R4 R2 R4     ; R4 := R2 * R4
   7 [-]: ADD       R4 R4 R1     ; R4 := R4 + R1
@@ -548,7 +548,7 @@
   3 [-]: UNM       R4 R2        ; R4 := ^ R2
   4 [-]: GETUPVAL  R5 U0        ; R5 := U0
   5 [-]: MOVE      R6 R0        ; R6 := R0
-  6 [-]: CONST     R7 4         ; R7 := 4.000000
+  6 [-]: LOADK     R7 4         ; R7 := 4.000000
   7 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
   8 [-]: SUB       R5 R5 K0     ; R5 := R5 - 1.000000
   9 [-]: MUL       R4 R4 R5     ; R4 := R4 * R5
@@ -611,7 +611,7 @@
   5 [-]: DIV       R4 R2 K0     ; R4 := R2 / 2.000000
   6 [-]: GETUPVAL  R5 U0        ; R5 := U0
   7 [-]: MOVE      R6 R0        ; R6 := R0
-  8 [-]: CONST     R7 4         ; R7 := 4.000000
+  8 [-]: LOADK     R7 4         ; R7 := 4.000000
   9 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
  10 [-]: MUL       R4 R4 R5     ; R4 := R4 * R5
  11 [-]: ADD       R4 R4 R1     ; R4 := R4 + R1
@@ -622,7 +622,7 @@
  16 [-]: DIV       R4 R4 K0     ; R4 := R4 / 2.000000
  17 [-]: GETUPVAL  R5 U0        ; R5 := U0
  18 [-]: MOVE      R6 R0        ; R6 := R0
- 19 [-]: CONST     R7 4         ; R7 := 4.000000
+ 19 [-]: LOADK     R7 4         ; R7 := 4.000000
  20 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
  21 [-]: SUB       R5 R5 K0     ; R5 := R5 - 2.000000
  22 [-]: MUL       R4 R4 R5     ; R4 := R4 * R5
@@ -675,7 +675,7 @@
   1 [-]: DIV       R0 R0 R3     ; R0 := R0 / R3
   2 [-]: GETUPVAL  R4 U0        ; R4 := U0
   3 [-]: MOVE      R5 R0        ; R5 := R0
-  4 [-]: CONST     R6 5         ; R6 := 5.000000
+  4 [-]: LOADK     R6 5         ; R6 := 5.000000
   5 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
   6 [-]: MUL       R4 R2 R4     ; R4 := R2 * R4
   7 [-]: ADD       R4 R4 R1     ; R4 := R4 + R1
@@ -696,7 +696,7 @@
   2 [-]: SUB       R0 R4 K0     ; R0 := R4 - 1.000000
   3 [-]: GETUPVAL  R4 U0        ; R4 := U0
   4 [-]: MOVE      R5 R0        ; R5 := R0
-  5 [-]: CONST     R6 5         ; R6 := 5.000000
+  5 [-]: LOADK     R6 5         ; R6 := 5.000000
   6 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
   7 [-]: ADD       R4 R4 K0     ; R4 := R4 + 1.000000
   8 [-]: MUL       R4 R2 R4     ; R4 := R2 * R4
@@ -759,7 +759,7 @@
   5 [-]: DIV       R4 R2 K0     ; R4 := R2 / 2.000000
   6 [-]: GETUPVAL  R5 U0        ; R5 := U0
   7 [-]: MOVE      R6 R0        ; R6 := R0
-  8 [-]: CONST     R7 5         ; R7 := 5.000000
+  8 [-]: LOADK     R7 5         ; R7 := 5.000000
   9 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
  10 [-]: MUL       R4 R4 R5     ; R4 := R4 * R5
  11 [-]: ADD       R4 R4 R1     ; R4 := R4 + R1
@@ -769,7 +769,7 @@
  15 [-]: DIV       R4 R2 K0     ; R4 := R2 / 2.000000
  16 [-]: GETUPVAL  R5 U0        ; R5 := U0
  17 [-]: MOVE      R6 R0        ; R6 := R0
- 18 [-]: CONST     R7 5         ; R7 := 5.000000
+ 18 [-]: LOADK     R7 5         ; R7 := 5.000000
  19 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
  20 [-]: ADD       R5 R5 K0     ; R5 := R5 + 2.000000
  21 [-]: MUL       R4 R4 R5     ; R4 := R4 * R5
@@ -961,7 +961,7 @@
   3 [-]: RETURN    R1 2         ; return R1
   4 [-]: JMP       16           ; PC := 16
   5 [-]: GETUPVAL  R4 U0        ; R4 := U0
-  6 [-]: CONST     R5 2         ; R5 := 2.000000
+  6 [-]: LOADK     R5 2         ; R5 := 2.000000
   7 [-]: DIV       R6 R0 R3     ; R6 := R0 / R3
   8 [-]: SUB       R6 R6 K1     ; R6 := R6 - 1.000000
   9 [-]: MUL       R6 K2 R6     ; R6 := 10.000000 * R6
@@ -990,7 +990,7 @@
   5 [-]: JMP       17           ; PC := 17
   6 [-]: MUL       R4 R2 K0     ; R4 := R2 * 1.001000
   7 [-]: GETUPVAL  R5 U0        ; R5 := U0
-  8 [-]: CONST     R6 2         ; R6 := 2.000000
+  8 [-]: LOADK     R6 2         ; R6 := 2.000000
   9 [-]: MUL       R7 K1 R0     ; R7 := -10.000000 * R0
  10 [-]: DIV       R7 R7 R3     ; R7 := R7 / R3
  11 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
@@ -1062,7 +1062,7 @@
  11 [-]: JMP       24           ; PC := 24
  12 [-]: DIV       R4 R2 K1     ; R4 := R2 / 2.000000
  13 [-]: GETUPVAL  R5 U0        ; R5 := U0
- 14 [-]: CONST     R6 2         ; R6 := 2.000000
+ 14 [-]: LOADK     R6 2         ; R6 := 2.000000
  15 [-]: SUB       R7 R0 K2     ; R7 := R0 - 1.000000
  16 [-]: MUL       R7 K3 R7     ; R7 := 10.000000 * R7
  17 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
@@ -1076,7 +1076,7 @@
  25 [-]: DIV       R4 R2 K1     ; R4 := R2 / 2.000000
  26 [-]: MUL       R4 R4 K5     ; R4 := R4 * 1.000500
  27 [-]: GETUPVAL  R5 U0        ; R5 := U0
- 28 [-]: CONST     R6 2         ; R6 := 2.000000
+ 28 [-]: LOADK     R6 2         ; R6 := 2.000000
  29 [-]: MUL       R7 K6 R0     ; R7 := -10.000000 * R0
  30 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
  31 [-]: UNM       R5 R5        ; R5 := ^ R5
@@ -1133,7 +1133,7 @@
   3 [-]: GETUPVAL  R5 U0        ; R5 := U0
   4 [-]: GETUPVAL  R6 U1        ; R6 := U1
   5 [-]: MOVE      R7 R0        ; R7 := R0
-  6 [-]: CONST     R8 2         ; R8 := 2.000000
+  6 [-]: LOADK     R8 2         ; R8 := 2.000000
   7 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
   8 [-]: SUB       R6 K0 R6     ; R6 := 1.000000 - R6
   9 [-]: CALL      R5 2 2       ; R5 := R5(R6)
@@ -1158,7 +1158,7 @@
   3 [-]: GETUPVAL  R4 U0        ; R4 := U0
   4 [-]: GETUPVAL  R5 U1        ; R5 := U1
   5 [-]: MOVE      R6 R0        ; R6 := R0
-  6 [-]: CONST     R7 2         ; R7 := 2.000000
+  6 [-]: LOADK     R7 2         ; R7 := 2.000000
   7 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
   8 [-]: SUB       R5 K0 R5     ; R5 := 1.000000 - R5
   9 [-]: CALL      R4 2 2       ; R4 := R4(R5)
@@ -1295,7 +1295,7 @@
   9 [-]: TEST      R5 1         ; if R5 then PC := 12
  10 [-]: JMP       12           ; PC := 12
  11 [-]: MUL       R5 R3 K2     ; R5 := R3 * 0.300000
- 12 [-]: CONST     R6 0         ; R6 := 0.000000
+ 12 [-]: LOADK     R6 0         ; R6 := 0.000000
  13 [-]: TEST      R4 0         ; if not R4 then PC := 20
  14 [-]: JMP       20           ; PC := 20
  15 [-]: GETUPVAL  R7 U0        ; R7 := U0
@@ -1315,7 +1315,7 @@
  29 [-]: MUL       R6 R7 R8     ; R6 := R7 * R8
  30 [-]: SUB       R0 R0 K1     ; R0 := R0 - 1.000000
  31 [-]: GETUPVAL  R7 U3        ; R7 := U3
- 32 [-]: CONST     R8 2         ; R8 := 2.000000
+ 32 [-]: LOADK     R8 2         ; R8 := 2.000000
  33 [-]: MUL       R9 K5 R0     ; R9 := 10.000000 * R0
  34 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
  35 [-]: MUL       R7 R4 R7     ; R7 := R4 * R7
@@ -1354,7 +1354,7 @@
   9 [-]: TEST      R5 1         ; if R5 then PC := 12
  10 [-]: JMP       12           ; PC := 12
  11 [-]: MUL       R5 R3 K2     ; R5 := R3 * 0.300000
- 12 [-]: CONST     R6 0         ; R6 := 0.000000
+ 12 [-]: LOADK     R6 0         ; R6 := 0.000000
  13 [-]: TEST      R4 0         ; if not R4 then PC := 20
  14 [-]: JMP       20           ; PC := 20
  15 [-]: GETUPVAL  R7 U0        ; R7 := U0
@@ -1373,7 +1373,7 @@
  28 [-]: CALL      R8 2 2       ; R8 := R8(R9)
  29 [-]: MUL       R6 R7 R8     ; R6 := R7 * R8
  30 [-]: GETUPVAL  R7 U3        ; R7 := U3
- 31 [-]: CONST     R8 2         ; R8 := 2.000000
+ 31 [-]: LOADK     R8 2         ; R8 := 2.000000
  32 [-]: MUL       R9 K5 R0     ; R9 := -10.000000 * R0
  33 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
  34 [-]: MUL       R7 R4 R7     ; R7 := R4 * R7
@@ -1457,8 +1457,8 @@
  12 [-]: MUL       R5 R3 K2     ; R5 := R3 * 0.450000
  13 [-]: TEST      R4 1         ; if R4 then PC := 16
  14 [-]: JMP       16           ; PC := 16
- 15 [-]: CONST     R4 0         ; R4 := 0.000000
- 16 [-]: CONST     R6 0         ; R6 := 0.000000
+ 15 [-]: LOADK     R4 0         ; R4 := 0.000000
+ 16 [-]: LOADK     R6 0         ; R6 := 0.000000
  17 [-]: TEST      R4 0         ; if not R4 then PC := 24
  18 [-]: JMP       24           ; PC := 24
  19 [-]: GETUPVAL  R7 U0        ; R7 := U0
@@ -1480,7 +1480,7 @@
  35 [-]: JMP       55           ; PC := 55
  36 [-]: SUB       R0 R0 K4     ; R0 := R0 - 1.000000
  37 [-]: GETUPVAL  R7 U3        ; R7 := U3
- 38 [-]: CONST     R8 2         ; R8 := 2.000000
+ 38 [-]: LOADK     R8 2         ; R8 := 2.000000
  39 [-]: MUL       R9 K5 R0     ; R9 := 10.000000 * R0
  40 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
  41 [-]: MUL       R7 R4 R7     ; R7 := R4 * R7
@@ -1499,7 +1499,7 @@
  54 [-]: JMP       74           ; PC := 74
  55 [-]: SUB       R0 R0 K4     ; R0 := R0 - 1.000000
  56 [-]: GETUPVAL  R7 U3        ; R7 := U3
- 57 [-]: CONST     R8 2         ; R8 := 2.000000
+ 57 [-]: LOADK     R8 2         ; R8 := 2.000000
  58 [-]: MUL       R9 K7 R0     ; R9 := -10.000000 * R0
  59 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
  60 [-]: MUL       R7 R4 R7     ; R7 := R4 * R7
@@ -1779,7 +1779,7 @@
 
   1 [-]: GETUPVAL  R4 U0        ; R4 := U0
   2 [-]: SUB       R5 R3 R0     ; R5 := R3 - R0
-  3 [-]: CONST     R6 0         ; R6 := 0.000000
+  3 [-]: LOADK     R6 0         ; R6 := 0.000000
   4 [-]: MOVE      R7 R2        ; R7 := R2
   5 [-]: MOVE      R8 R3        ; R8 := R3
   6 [-]: CALL      R4 5 2       ; R4 := R4(R5,R6,R7,R8)
@@ -1841,7 +1841,7 @@
   3 [-]: JMP       14           ; PC := 14
   4 [-]: GETUPVAL  R4 U0        ; R4 := U0
   5 [-]: MUL       R5 R0 K0     ; R5 := R0 * 2.000000
-  6 [-]: CONST     R6 0         ; R6 := 0.000000
+  6 [-]: LOADK     R6 0         ; R6 := 0.000000
   7 [-]: MOVE      R7 R2        ; R7 := R2
   8 [-]: MOVE      R8 R3        ; R8 := R3
   9 [-]: CALL      R4 5 2       ; R4 := R4(R5,R6,R7,R8)
@@ -1852,7 +1852,7 @@
  14 [-]: GETUPVAL  R4 U1        ; R4 := U1
  15 [-]: MUL       R5 R0 K0     ; R5 := R0 * 2.000000
  16 [-]: SUB       R5 R5 R3     ; R5 := R5 - R3
- 17 [-]: CONST     R6 0         ; R6 := 0.000000
+ 17 [-]: LOADK     R6 0         ; R6 := 0.000000
  18 [-]: MOVE      R7 R2        ; R7 := R2
  19 [-]: MOVE      R8 R3        ; R8 := R3
  20 [-]: CALL      R4 5 2       ; R4 := R4(R5,R6,R7,R8)

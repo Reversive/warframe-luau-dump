@@ -7,8 +7,8 @@
 ; Is_vararg:       2
 ; Max Stack Size:  5
 
-  1 [-]: CONST     R0 1         ; R0 := 1.000000
-  2 [-]: CONST     R1 0         ; R1 := 0.000000
+  1 [-]: LOADK     R0 1         ; R0 := 1.000000
+  2 [-]: LOADK     R1 0         ; R1 := 0.000000
   3 [-]: OP_LOADBOOL R2 0 0       ; R2 := false
   4 [-]: LOADNIL   R3 R3        ; R3 := nil
   5 [-]: CLOSURE   R4 0         ; R4 := closure(Function #1)

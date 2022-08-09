@@ -39,14 +39,14 @@
 ; Max Stack Size:  9
 
   1 [-]: NEWTABLE  R1 4 0       ; R1 := {}
-  2 [-]: CONST     R2 0         ; R2 := 0.000000
-  3 [-]: CONST     R3 1         ; R3 := 1.000000
-  4 [-]: CONST     R4 3         ; R4 := 3.000000
-  5 [-]: CONST     R5 5         ; R5 := 5.000000
+  2 [-]: LOADK     R2 0         ; R2 := 0.000000
+  3 [-]: LOADK     R3 1         ; R3 := 1.000000
+  4 [-]: LOADK     R4 3         ; R4 := 3.000000
+  5 [-]: LOADK     R5 5         ; R5 := 5.000000
   6 [-]: SETLIST   R1 4 1       ; R1[(1-1)*FPF+i] := R(1+i), 1 <= i <= 4
-  7 [-]: CONST     R2 1         ; R2 := 1.000000
+  7 [-]: LOADK     R2 1         ; R2 := 1.000000
   8 [-]: LEN       R3 R1        ; R3 := # R1
-  9 [-]: CONST     R4 1         ; R4 := 1.000000
+  9 [-]: LOADK     R4 1         ; R4 := 1.000000
  10 [-]: FORPREP   R2 23        ; R2 -= R4; PC := 23
  11 [-]: SELF      R6 R0 K1     ; R7 := R0; R6 := R0[0xde321e6f]
  12 [-]: CALL      R6 2 2       ; R6 := R6(R7)
@@ -76,7 +76,7 @@
 ; Max Stack Size:  14
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0xcbd666e1
-  2 [-]: CONST     R2 0         ; R2 := 0.000000
+  2 [-]: LOADK     R2 0         ; R2 := 0.000000
   3 [-]: CALL      R1 2 1       ; R1(R2)
   4 [-]: GETGLOBAL R1 K1        ; R1 := 0x89326c93
   5 [-]: SELF      R1 R1 K2     ; R2 := R1; R1 := R1[0x18d05d30]
@@ -122,7 +122,7 @@
  45 [-]: MOVE      R7 R8        ; R7 := R8
  46 [-]: JMP       32           ; PC := 32
  47 [-]: GETGLOBAL R8 K0        ; R8 := 0xcbd666e1
- 48 [-]: CONST     R9 0         ; R9 := 0.000000
+ 48 [-]: LOADK     R9 0         ; R9 := 0.000000
  49 [-]: CALL      R8 2 1       ; R8(R9)
  50 [-]: GETGLOBAL R8 K3        ; R8 := 0x7b998233
  51 [-]: MOVE      R9 R0        ; R9 := R0
@@ -145,8 +145,8 @@
  68 [-]: GETGLOBAL R10 K13      ; R10 := 0x0469f296
  69 [-]: LOADK     R11 K14      ; R11 := "ReplicantDmgMod"
  70 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 71 [-]: CONST     R11 25       ; R11 := 25.000000
- 72 [-]: CONST     R12 6        ; R12 := 6.000000
+ 71 [-]: LOADK     R11 25       ; R11 := 25.000000
+ 72 [-]: LOADK     R12 6        ; R12 := 6.000000
  73 [-]: GETGLOBAL R13 K16      ; R13 := 0x5e9e582a
  74 [-]: CALL      R8 6 1       ; R8(R9,R10,R11,R12,R13)
  75 [-]: SELF      R8 R0 K11    ; R9 := R0; R8 := R0[0x1ac1655c]
@@ -155,8 +155,8 @@
  78 [-]: GETGLOBAL R10 K13      ; R10 := 0x0469f296
  79 [-]: LOADK     R11 K14      ; R11 := "ReplicantDmgMod"
  80 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 81 [-]: CONST     R11 25       ; R11 := 25.000000
- 82 [-]: CONST     R12 6        ; R12 := 6.000000
+ 81 [-]: LOADK     R11 25       ; R11 := 25.000000
+ 82 [-]: LOADK     R12 6        ; R12 := 6.000000
  83 [-]: GETGLOBAL R13 K16      ; R13 := 0x5e9e582a
  84 [-]: CALL      R8 6 1       ; R8(R9,R10,R11,R12,R13)
  85 [-]: SELF      R8 R0 K11    ; R9 := R0; R8 := R0[0x1ac1655c]
@@ -165,8 +165,8 @@
  88 [-]: GETGLOBAL R10 K13      ; R10 := 0x0469f296
  89 [-]: LOADK     R11 K14      ; R11 := "ReplicantDmgMod"
  90 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 91 [-]: CONST     R11 25       ; R11 := 25.000000
- 92 [-]: CONST     R12 6        ; R12 := 6.000000
+ 91 [-]: LOADK     R11 25       ; R11 := 25.000000
+ 92 [-]: LOADK     R12 6        ; R12 := 6.000000
  93 [-]: GETGLOBAL R13 K16      ; R13 := 0x5e9e582a
  94 [-]: CALL      R8 6 1       ; R8(R9,R10,R11,R12,R13)
  95 [-]: GETGLOBAL R8 K3        ; R8 := 0x7b998233
@@ -181,8 +181,8 @@
 104 [-]: SELF      R9 R0 K22    ; R10 := R0; R9 := R0[0xde321e6f]
 105 [-]: CALL      R9 2 2       ; R9 := R9(R10)
 106 [-]: SELF      R9 R9 K23    ; R10 := R9; R9 := R9[0x5e6704ff]
-107 [-]: CONST     R11 88       ; R11 := 88.000000
-108 [-]: CONST     R12 0        ; R12 := 0.000000
+107 [-]: LOADK     R11 88       ; R11 := 88.000000
+108 [-]: LOADK     R12 0        ; R12 := 0.000000
 109 [-]: DIV       R13 R8 K25   ; R13 := R8 / 25.000000
 110 [-]: CALL      R9 5 1       ; R9(R10,R11,R12,R13)
 111 [-]: RETURN    R0 1         ; return 
@@ -258,7 +258,7 @@
  59 [-]: LOADK     R7 K17       ; R7 := "Disable"
  60 [-]: CALL      R5 3 1       ; R5(R6,R7)
  61 [-]: GETGLOBAL R5 K18       ; R5 := 0xcbd666e1
- 62 [-]: CONST     R6 2         ; R6 := 2.000000
+ 62 [-]: LOADK     R6 2         ; R6 := 2.000000
  63 [-]: CALL      R5 2 1       ; R5(R6)
  64 [-]: SELF      R5 R0 K16    ; R6 := R0; R5 := R0[0x8eb2112d]
  65 [-]: LOADK     R7 K19       ; R7 := "Enable"

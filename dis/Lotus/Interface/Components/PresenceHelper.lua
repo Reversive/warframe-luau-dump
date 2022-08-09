@@ -12,9 +12,9 @@
   3 [-]: GETGLOBAL R2 K1        ; R2 := package
   4 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["seeall"]
   5 [-]: CALL      R0 3 1       ; R0(R1,R2)
-  6 [-]: CONST     R0 60        ; R0 := 60.000000
+  6 [-]: LOADK     R0 60        ; R0 := 60.000000
   7 [-]: SETGLOBALHASH R0 K3        ; LITE_PRESENCE_RESYNC_INTERVAL := R0
-  8 [-]: CONST     R0 15        ; R0 := 15.000000
+  8 [-]: LOADK     R0 15        ; R0 := 15.000000
   9 [-]: SETGLOBALHASH R0 K4        ; RICH_PRESENCE_RESYNC_INTERVAL := R0
  10 [-]: CLOSURE   R0 0         ; R0 := closure(Function #1)
  11 [-]: SETGLOBAL R0 K5        ; Create := R0
@@ -61,7 +61,7 @@
   3 [-]: JMP       6            ; PC := 6
   4 [-]: GETTABLE  R1 R0 K0     ; R1 := R0["mParentEnv"]
   5 [-]: RETURN    R1 2         ; return R1
-  6 [-]: CONST     R1 1         ; R1 := 1.000000
+  6 [-]: LOADK     R1 1         ; R1 := 1.000000
   7 [-]: LOADNIL   R2 R2        ; R2 := nil
   8 [-]: GETGLOBAL R3 K2        ; R3 := 0xcd0165a3
   9 [-]: MOVE      R4 R1        ; R4 := R1
@@ -87,7 +87,7 @@
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0x76ea806b
   2 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1[0x3f3ae64c]
-  3 [-]: CONST     R3 0         ; R3 := 0.000000
+  3 [-]: LOADK     R3 0         ; R3 := 0.000000
   4 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
   5 [-]: GETGLOBAL R2 K2        ; R2 := 0x7b998233
   6 [-]: MOVE      R3 R1        ; R3 := R1
@@ -105,10 +105,10 @@
  18 [-]: JMP       21           ; PC := 21
  19 [-]: OP_LOADBOOL R3 0 0       ; R3 := false
  20 [-]: RETURN    R3 2         ; return R3
- 21 [-]: CONST     R3 1         ; R3 := 1.000000
+ 21 [-]: LOADK     R3 1         ; R3 := 1.000000
  22 [-]: GETTABLE  R4 R0 K4     ; R4 := R0["mMoviesToSync"]
  23 [-]: LEN       R4 R4        ; R4 := # R4
- 24 [-]: CONST     R5 1         ; R5 := 1.000000
+ 24 [-]: LOADK     R5 1         ; R5 := 1.000000
  25 [-]: FORPREP   R3 44        ; R3 -= R5; PC := 44
  26 [-]: GETGLOBAL R7 K5        ; R7 := 0x9ba7909f
  27 [-]: SELF      R7 R7 K6     ; R8 := R7; R7 := R7[0xbcfb64ab]

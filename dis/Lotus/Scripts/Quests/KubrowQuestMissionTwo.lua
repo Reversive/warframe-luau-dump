@@ -87,7 +87,7 @@
 ; Max Stack Size:  13
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0xcbd666e1
-  2 [-]: CONST     R1 0         ; R1 := 0.000000
+  2 [-]: LOADK     R1 0         ; R1 := 0.000000
   3 [-]: CALL      R0 2 1       ; R0(R1)
   4 [-]: GETGLOBAL R0 K1        ; R0 := _T
   5 [-]: GETTABLE  R0 R0 K2     ; R0 := R0["KubrowQuestActive"]
@@ -340,7 +340,7 @@
  14 [-]: CALL      R0 1 1       ; R0()
  15 [-]: OP_LOADBOOL R0 0 0       ; R0 := false
  16 [-]: GETGLOBAL R1 K3        ; R1 := 0xcbd666e1
- 17 [-]: CONST     R2 0         ; R2 := 0.000000
+ 17 [-]: LOADK     R2 0         ; R2 := 0.000000
  18 [-]: CALL      R1 2 1       ; R1(R2)
  19 [-]: GETGLOBAL R1 K4        ; R1 := 0x7b998233
  20 [-]: GETUPVAL  R2 U5        ; R2 := U5
@@ -348,7 +348,7 @@
  22 [-]: TEST      R1 0         ; if not R1 then PC := 45
  23 [-]: JMP       45           ; PC := 45
  24 [-]: GETGLOBAL R1 K3        ; R1 := 0xcbd666e1
- 25 [-]: CONST     R2 0         ; R2 := 0.000000
+ 25 [-]: LOADK     R2 0         ; R2 := 0.000000
  26 [-]: CALL      R1 2 1       ; R1(R2)
  27 [-]: GETGLOBAL R1 K5        ; R1 := 0xbe190284
  28 [-]: SETUPVAL  R1 U5        ; U82 := 
@@ -364,7 +364,7 @@
  38 [-]: TEST      R1 1         ; if R1 then PC := 19
  39 [-]: JMP       19           ; PC := 19
  40 [-]: GETGLOBAL R1 K3        ; R1 := 0xcbd666e1
- 41 [-]: CONST     R2 0         ; R2 := 0.000000
+ 41 [-]: LOADK     R2 0         ; R2 := 0.000000
  42 [-]: CALL      R1 2 1       ; R1(R2)
  43 [-]: JMP       35           ; PC := 35
  44 [-]: JMP       19           ; PC := 19
@@ -422,7 +422,7 @@
  11 [-]: LOADK     R2 K4        ; R2 := "/Lotus/Language/Quests/KubrowQuestObjective1"
  12 [-]: CALL      R1 2 1       ; R1(R2)
  13 [-]: GETGLOBAL R1 K5        ; R1 := 0xcbd666e1
- 14 [-]: CONST     R2 0         ; R2 := 0.000000
+ 14 [-]: LOADK     R2 0         ; R2 := 0.000000
  15 [-]: CALL      R1 2 1       ; R1(R2)
  16 [-]: SELF      R1 R0 K6     ; R2 := R0; R1 := R0[0x47901f07]
  17 [-]: GETGLOBAL R3 K7        ; R3 := 0x9394a539

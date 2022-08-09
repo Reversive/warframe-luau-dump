@@ -25,7 +25,7 @@
 ; Max Stack Size:  10
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0xcbd666e1
-  2 [-]: CONST     R2 0         ; R2 := 0.000000
+  2 [-]: LOADK     R2 0         ; R2 := 0.000000
   3 [-]: CALL      R1 2 1       ; R1(R2)
   4 [-]: GETGLOBAL R1 K1        ; R1 := 0x7b998233
   5 [-]: GETGLOBAL R2 K2        ; R2 := 0x0032441c
@@ -39,9 +39,9 @@
  13 [-]: GETGLOBAL R4 K6        ; R4 := 0x0e80b86a
  14 [-]: GETGLOBAL R5 K7        ; R5 := EMPTY_SYMBOL
  15 [-]: GETGLOBAL R6 K8        ; R6 := 0xa421af95
- 16 [-]: CONST     R7 0         ; R7 := 0.000000
+ 16 [-]: LOADK     R7 0         ; R7 := 0.000000
  17 [-]: GETGLOBAL R8 K9        ; R8 := 0x66be5461
- 18 [-]: CONST     R9 0         ; R9 := 0.000000
+ 18 [-]: LOADK     R9 0         ; R9 := 0.000000
  19 [-]: CALL      R6 4 0       ; R6,... := R6(R7,R8,R9)
  20 [-]: CALL      R2 0 2       ; R2 := R2(R3,...)
  21 [-]: SETUPVAL  R2 U0        ; U82 := 
@@ -62,7 +62,7 @@
  36 [-]: GETTABLE  R4 R4 K16    ; R4 := R4["DojoMgr"]
  37 [-]: GETTABLE  R4 R4 K17    ; R4 := R4["mDojo"]
  38 [-]: SELF      R4 R4 K18    ; R5 := R4; R4 := R4[0xcfdcb396]
- 39 [-]: CONST     R6 0         ; R6 := 0.000000
+ 39 [-]: LOADK     R6 0         ; R6 := 0.000000
  40 [-]: CALL      R4 3 0       ; R4,... := R4(R5,R6)
  41 [-]: CALL      R2 0 1       ; R2(R3,...)
  42 [-]: JMP       62           ; PC := 62
@@ -74,7 +74,7 @@
  48 [-]: GETTABLE  R4 R4 K16    ; R4 := R4["DojoMgr"]
  49 [-]: GETTABLE  R4 R4 K17    ; R4 := R4["mDojo"]
  50 [-]: SELF      R4 R4 K18    ; R5 := R4; R4 := R4[0xcfdcb396]
- 51 [-]: CONST     R6 1         ; R6 := 1.000000
+ 51 [-]: LOADK     R6 1         ; R6 := 1.000000
  52 [-]: CALL      R4 3 0       ; R4,... := R4(R5,R6)
  53 [-]: CALL      R2 0 1       ; R2(R3,...)
  54 [-]: JMP       62           ; PC := 62
@@ -264,7 +264,7 @@
  49 [-]: MOVE      R9 R5        ; R9 := R5
  50 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
  51 [-]: GETGLOBAL R6 K10       ; R6 := 0xcbd666e1
- 52 [-]: CONST     R7 0         ; R7 := 0.000000
+ 52 [-]: LOADK     R7 0         ; R7 := 0.000000
  53 [-]: CALL      R6 2 1       ; R6(R7)
  54 [-]: JMP       21           ; PC := 21
  55 [-]: RETURN    R0 1         ; return 

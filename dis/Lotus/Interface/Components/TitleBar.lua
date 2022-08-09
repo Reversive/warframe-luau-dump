@@ -82,7 +82,7 @@
  28 [-]: MOVE      R8 R1        ; R8 := R1
  29 [-]: LOADK     R9 K20       ; R9 := ".Title"
  30 [-]: CONCAT    R8 R8 R9     ; R8 := R8 .. R9
- 31 [-]: CONST     R9 0         ; R9 := 0.000000
+ 31 [-]: LOADK     R9 0         ; R9 := 0.000000
  32 [-]: CALL      R6 4 2       ; R6 := R6(R7,R8,R9)
  33 [-]: SETTABLE  R5 K18 R6    ; R5["mInitTitleXPos"] := R6
  34 [-]: CLOSURE   R6 0         ; R6 := closure(Function #1.1)
@@ -139,50 +139,50 @@
  12 [-]: SELF      R4 R1 K5     ; R5 := R1; R4 := R1[0xf64b7262]
  13 [-]: MOVE      R6 R2        ; R6 := R2
  14 [-]: LOADK     R7 K6        ; R7 := "Title.Label"
- 15 [-]: CONST     R8 65        ; R8 := 65.000000
- 16 [-]: CONST     R9 0         ; R9 := 0.000000
+ 15 [-]: LOADK     R8 65        ; R8 := 65.000000
+ 16 [-]: LOADK     R9 0         ; R9 := 0.000000
  17 [-]: CALL      R4 6 1       ; R4(R5,R6,R7,R8,R9)
  18 [-]: SELF      R4 R1 K7     ; R5 := R1; R4 := R1[0x91a24e4b]
  19 [-]: MOVE      R6 R2        ; R6 := R2
  20 [-]: LOADK     R7 K8        ; R7 := ".Title"
  21 [-]: CONCAT    R6 R6 R7     ; R6 := R6 .. R7
- 22 [-]: CONST     R7 0         ; R7 := 0.000000
+ 22 [-]: LOADK     R7 0         ; R7 := 0.000000
  23 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
  24 [-]: SELF      R5 R1 K7     ; R6 := R1; R5 := R1[0x91a24e4b]
  25 [-]: MOVE      R7 R2        ; R7 := R2
  26 [-]: LOADK     R8 K9        ; R8 := ".Title.Label"
  27 [-]: CONCAT    R7 R7 R8     ; R7 := R7 .. R8
- 28 [-]: CONST     R8 33        ; R8 := 33.000000
+ 28 [-]: LOADK     R8 33        ; R8 := 33.000000
  29 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
  30 [-]: SELF      R6 R1 K7     ; R7 := R1; R6 := R1[0x91a24e4b]
  31 [-]: MOVE      R8 R2        ; R8 := R2
  32 [-]: LOADK     R9 K10       ; R9 := ".Title.BookendIcon"
  33 [-]: CONCAT    R8 R8 R9     ; R8 := R8 .. R9
- 34 [-]: CONST     R9 12        ; R9 := 12.000000
+ 34 [-]: LOADK     R9 12        ; R9 := 12.000000
  35 [-]: CALL      R6 4 2       ; R6 := R6(R7,R8,R9)
  36 [-]: GETTABLE  R7 R0 K11    ; R7 := R0["mBookendVisible"]
  37 [-]: TEST      R7 1         ; if R7 then PC := 40
  38 [-]: JMP       40           ; PC := 40
- 39 [-]: CONST     R6 0         ; R6 := 0.000000
+ 39 [-]: LOADK     R6 0         ; R6 := 0.000000
  40 [-]: ADD       R7 R4 R5     ; R7 := R4 + R5
  41 [-]: ADD       R7 R7 R3     ; R7 := R7 + R3
  42 [-]: ADD       R7 R7 R6     ; R7 := R7 + R6
  43 [-]: SELF      R8 R1 K5     ; R9 := R1; R8 := R1[0xf64b7262]
  44 [-]: MOVE      R10 R2       ; R10 := R2
  45 [-]: LOADK     R11 K12      ; R11 := "Title.BookendIcon"
- 46 [-]: CONST     R12 0        ; R12 := 0.000000
+ 46 [-]: LOADK     R12 0        ; R12 := 0.000000
  47 [-]: ADD       R13 R5 R3    ; R13 := R5 + R3
  48 [-]: CALL      R8 6 1       ; R8(R9,R10,R11,R12,R13)
  49 [-]: SELF      R8 R1 K5     ; R9 := R1; R8 := R1[0xf64b7262]
  50 [-]: MOVE      R10 R2       ; R10 := R2
  51 [-]: LOADK     R11 K13      ; R11 := "Underline.Fill"
- 52 [-]: CONST     R12 12       ; R12 := 12.000000
+ 52 [-]: LOADK     R12 12       ; R12 := 12.000000
  53 [-]: MOVE      R13 R7       ; R13 := R7
  54 [-]: CALL      R8 6 1       ; R8(R9,R10,R11,R12,R13)
  55 [-]: SELF      R8 R1 K5     ; R9 := R1; R8 := R1[0xf64b7262]
  56 [-]: MOVE      R10 R2       ; R10 := R2
  57 [-]: LOADK     R11 K14      ; R11 := "Underline.CapRight"
- 58 [-]: CONST     R12 0        ; R12 := 0.000000
+ 58 [-]: LOADK     R12 0        ; R12 := 0.000000
  59 [-]: ADD       R13 R7 K15   ; R13 := R7 + 32.000000
  60 [-]: CALL      R8 6 1       ; R8(R9,R10,R11,R12,R13)
  61 [-]: RETURN    R0 1         ; return 
@@ -222,12 +222,12 @@
  23 [-]: GETGLOBAL R4 K7        ; R4 := 0x25312c9b
  24 [-]: MOVE      R5 R1        ; R5 := R1
  25 [-]: MOVE      R6 R2        ; R6 := R2
- 26 [-]: CONST     R7 2         ; R7 := 2.000000
+ 26 [-]: LOADK     R7 2         ; R7 := 2.000000
  27 [-]: NEWTABLE  R8 1 0       ; R8 := {}
- 28 [-]: CONST     R9 10        ; R9 := 10.000000
+ 28 [-]: LOADK     R9 10        ; R9 := 10.000000
  29 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
  30 [-]: NEWTABLE  R9 1 0       ; R9 := {}
- 31 [-]: CONST     R10 100      ; R10 := 100.000000
+ 31 [-]: LOADK     R10 100      ; R10 := 100.000000
  32 [-]: SETLIST   R9 1 1       ; R9[(1-1)*FPF+i] := R(9+i), 1 <= i <= 1
  33 [-]: LOADK     R10 K9       ; R10 := 0.200000
  34 [-]: CALL      R4 7 1       ; R4(R5,R6,R7,R8,R9,R10)
@@ -235,12 +235,12 @@
  36 [-]: GETGLOBAL R4 K7        ; R4 := 0x25312c9b
  37 [-]: MOVE      R5 R1        ; R5 := R1
  38 [-]: MOVE      R6 R2        ; R6 := R2
- 39 [-]: CONST     R7 1         ; R7 := 1.000000
+ 39 [-]: LOADK     R7 1         ; R7 := 1.000000
  40 [-]: NEWTABLE  R8 1 0       ; R8 := {}
- 41 [-]: CONST     R9 10        ; R9 := 10.000000
+ 41 [-]: LOADK     R9 10        ; R9 := 10.000000
  42 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
  43 [-]: NEWTABLE  R9 1 0       ; R9 := {}
- 44 [-]: CONST     R10 0        ; R10 := 0.000000
+ 44 [-]: LOADK     R10 0        ; R10 := 0.000000
  45 [-]: SETLIST   R9 1 1       ; R9[(1-1)*FPF+i] := R(9+i), 1 <= i <= 1
  46 [-]: LOADK     R10 K9       ; R10 := 0.200000
  47 [-]: CALL      R4 7 1       ; R4(R5,R6,R7,R8,R9,R10)
@@ -250,13 +250,13 @@
  51 [-]: GETTABLE  R4 R0 K10    ; R4 := R0["mApplyThemes"]
  52 [-]: GETUPVAL  R5 U0        ; R5 := U0
  53 [-]: GETTABLE  R5 R5 K11    ; R82 := R5[0x5d10207d]
- 54 [-]: CONST     R6 9         ; R6 := 9.000000
+ 54 [-]: LOADK     R6 9         ; R6 := 9.000000
  55 [-]: OP_LOADBOOL R7 1 0       ; R7 := true
  56 [-]: MOVE      R8 R4        ; R8 := R4
  57 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
  58 [-]: GETUPVAL  R6 U0        ; R6 := U0
  59 [-]: GETTABLE  R6 R6 K11    ; R82 := R6[0x5d10207d]
- 60 [-]: CONST     R7 10        ; R7 := 10.000000
+ 60 [-]: LOADK     R7 10        ; R7 := 10.000000
  61 [-]: OP_LOADBOOL R8 1 0       ; R8 := true
  62 [-]: MOVE      R9 R4        ; R9 := R4
  63 [-]: CALL      R6 4 2       ; R6 := R6(R7,R8,R9)
@@ -312,7 +312,7 @@
 113 [-]: LOADK     R17 K27      ; R17 := "</p>"
 114 [-]: CONCAT    R14 R14 R17  ; R14 := R14 .. R15 .. R16 .. R17
 115 [-]: LOADNIL   R15 R15      ; R15 := nil
-116 [-]: CONST     R16 1        ; R16 := 1.000000
+116 [-]: LOADK     R16 1        ; R16 := 1.000000
 117 [-]: LOADK     R17 K28      ; R17 := 0.150000
 118 [-]: CALL      R10 8 1      ; R10(R11,R12,R13,R14,R15,R16,R17)
 119 [-]: JMP       131          ; PC := 131
@@ -320,7 +320,7 @@
 121 [-]: MOVE      R12 R2       ; R12 := R2
 122 [-]: LOADK     R13 K25      ; R13 := ".Title.Label"
 123 [-]: CONCAT    R12 R12 R13  ; R12 := R12 .. R13
-124 [-]: CONST     R13 29       ; R13 := 29.000000
+124 [-]: LOADK     R13 29       ; R13 := 29.000000
 125 [-]: LOADK     R14 K26      ; R14 := "<p>"
 126 [-]: MOVE      R15 R8       ; R15 := R8
 127 [-]: MOVE      R16 R9       ; R16 := R9
@@ -368,32 +368,32 @@
   3 [-]: GETTABLE  R3 R0 K2     ; R3 := R0["mApplyThemes"]
   4 [-]: GETUPVAL  R4 U0        ; R4 := U0
   5 [-]: GETTABLE  R4 R4 K3     ; R82 := R4[0x5d10207d]
-  6 [-]: CONST     R5 2         ; R5 := 2.000000
+  6 [-]: LOADK     R5 2         ; R5 := 2.000000
   7 [-]: OP_LOADBOOL R6 1 0       ; R6 := true
   8 [-]: MOVE      R7 R3        ; R7 := R3
   9 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
  10 [-]: GETUPVAL  R5 U0        ; R5 := U0
  11 [-]: GETTABLE  R5 R5 K3     ; R82 := R5[0x5d10207d]
- 12 [-]: CONST     R6 9         ; R6 := 9.000000
+ 12 [-]: LOADK     R6 9         ; R6 := 9.000000
  13 [-]: OP_LOADBOOL R7 1 0       ; R7 := true
  14 [-]: MOVE      R8 R3        ; R8 := R3
  15 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
  16 [-]: SELF      R6 R1 K5     ; R7 := R1; R6 := R1[0xf64b7262]
  17 [-]: MOVE      R8 R2        ; R8 := R2
  18 [-]: LOADK     R9 K6        ; R9 := "Title.Label"
- 19 [-]: CONST     R10 76       ; R10 := 76.000000
+ 19 [-]: LOADK     R10 76       ; R10 := 76.000000
  20 [-]: MOVE      R11 R4       ; R11 := R4
  21 [-]: CALL      R6 6 1       ; R6(R7,R8,R9,R10,R11)
  22 [-]: SELF      R6 R1 K5     ; R7 := R1; R6 := R1[0xf64b7262]
  23 [-]: MOVE      R8 R2        ; R8 := R2
  24 [-]: LOADK     R9 K7        ; R9 := "Title.BookendIcon"
- 25 [-]: CONST     R10 9        ; R10 := 9.000000
+ 25 [-]: LOADK     R10 9        ; R10 := 9.000000
  26 [-]: MOVE      R11 R5       ; R11 := R5
  27 [-]: CALL      R6 6 1       ; R6(R7,R8,R9,R10,R11)
  28 [-]: SELF      R6 R1 K5     ; R7 := R1; R6 := R1[0xf64b7262]
  29 [-]: MOVE      R8 R2        ; R8 := R2
  30 [-]: LOADK     R9 K8        ; R9 := "Underline"
- 31 [-]: CONST     R10 9        ; R10 := 9.000000
+ 31 [-]: LOADK     R10 9        ; R10 := 9.000000
  32 [-]: MOVE      R11 R5       ; R11 := R5
  33 [-]: CALL      R6 6 1       ; R6(R7,R8,R9,R10,R11)
  34 [-]: SELF      R6 R0 K9     ; R7 := R0; R6 := R0[0x73fc03c0]
@@ -518,7 +518,7 @@
   3 [-]: SELF      R3 R3 K2     ; R4 := R3; R3 := R3[0xc0a3774b]
   4 [-]: GETTABLE  R5 R0 K3     ; R5 := R0["mClipName"]
   5 [-]: LOADK     R6 K4        ; R6 := "Title.BookendIcon"
-  6 [-]: CONST     R7 11        ; R7 := 11.000000
+  6 [-]: LOADK     R7 11        ; R7 := 11.000000
   7 [-]: MOVE      R8 R1        ; R8 := R1
   8 [-]: CALL      R3 6 1       ; R3(R4,R5,R6,R7,R8)
   9 [-]: TEST      R2 0         ; if not R2 then PC := 13
@@ -542,7 +542,7 @@
   3 [-]: SELF      R2 R2 K2     ; R3 := R2; R2 := R2[0xc0a3774b]
   4 [-]: GETTABLE  R4 R0 K3     ; R4 := R0["mClipName"]
   5 [-]: LOADK     R5 K4        ; R5 := "Title"
-  6 [-]: CONST     R6 11        ; R6 := 11.000000
+  6 [-]: LOADK     R6 11        ; R6 := 11.000000
   7 [-]: MOVE      R7 R1        ; R7 := R1
   8 [-]: CALL      R2 6 1       ; R2(R3,R4,R5,R6,R7)
   9 [-]: RETURN    R0 1         ; return 

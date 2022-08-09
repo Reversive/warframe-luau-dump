@@ -34,9 +34,9 @@
 
   1 [-]: SELF      R1 R0 K0     ; R2 := R0; R1 := R0[0x42700bd0]
   2 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  3 [-]: CONST     R2 0         ; R2 := 0.000000
+  3 [-]: LOADK     R2 0         ; R2 := 0.000000
   4 [-]: LEN       R3 R1        ; R3 := # R1
-  5 [-]: CONST     R4 1         ; R4 := 1.000000
+  5 [-]: LOADK     R4 1         ; R4 := 1.000000
   6 [-]: FORPREP   R2 23        ; R2 -= R4; PC := 23
   7 [-]: GETGLOBAL R6 K1        ; R6 := 0xd644c2f1
   8 [-]: GETGLOBAL R7 K2        ; R7 := 0x64fb1586
@@ -83,7 +83,7 @@
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0x76ea806b
   2 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1[0x3f3ae64c]
-  3 [-]: CONST     R3 0         ; R3 := 0.000000
+  3 [-]: LOADK     R3 0         ; R3 := 0.000000
   4 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
   5 [-]: SELF      R1 R1 K2     ; R2 := R1; R1 := R1[0x80563238]
   6 [-]: CALL      R1 2 2       ; R1 := R1(R2)
@@ -137,7 +137,7 @@
  54 [-]: MOVE      R8 R0        ; R8 := R0
  55 [-]: CALL      R7 2 0       ; R7,... := R7(R8)
  56 [-]: CALL      R6 0 2       ; R6 := R6(R7,...)
- 57 [-]: CONST     R7 0         ; R7 := 0.000000
+ 57 [-]: LOADK     R7 0         ; R7 := 0.000000
  58 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
  59 [-]: MOVE      R0 R5        ; R0 := R5
  60 [-]: SELF      R5 R2 K19    ; R6 := R2; R5 := R2[0x8a0f9f88]
@@ -161,10 +161,10 @@
  78 [-]: MOVE      R6 R2        ; R6 := R2
  79 [-]: LT        0 K23 R4     ; if 0.000000 >= R4 then PC := 84
  80 [-]: JMP       84           ; PC := 84
- 81 [-]: CONST     R7 0         ; R7 := 0.000000
+ 81 [-]: LOADK     R7 0         ; R7 := 0.000000
  82 [-]: TEST      R7 1         ; if R7 then PC := 85
  83 [-]: JMP       85           ; PC := 85
- 84 [-]: CONST     R7 -1        ; R7 := -1.000000
+ 84 [-]: LOADK     R7 -1        ; R7 := -1.000000
  85 [-]: LOADK     R8 K24       ; R8 := "OnResponse"
  86 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
  87 [-]: SELF      R6 R5 K25    ; R7 := R5; R6 := R5[0xe4162eed]
@@ -177,9 +177,9 @@
  94 [-]: CALL      R6 2 1       ; R6(R7)
  95 [-]: JMP       89           ; PC := 89
  96 [-]: LOADNIL   R5 R5        ; R5 := nil
- 97 [-]: CONST     R6 1         ; R6 := 1.000000
+ 97 [-]: LOADK     R6 1         ; R6 := 1.000000
  98 [-]: MOVE      R7 R0        ; R7 := R0
- 99 [-]: CONST     R8 1         ; R8 := 1.000000
+ 99 [-]: LOADK     R8 1         ; R8 := 1.000000
 100 [-]: FORPREP   R6 114       ; R6 -= R8; PC := 114
 101 [-]: OP_LOADBOOL R10 0 0      ; R10 := false
 102 [-]: SETUPVAL  R10 U2       ; U82 := 

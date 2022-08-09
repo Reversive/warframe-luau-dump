@@ -32,13 +32,13 @@
 
   1 [-]: SELF      R2 R0 K0     ; R3 := R0; R2 := R0[0x5f56eeab]
   2 [-]: MOVE      R4 R1        ; R4 := R1
-  3 [-]: CONST     R5 29        ; R5 := 29.000000
+  3 [-]: LOADK     R5 29        ; R5 := 29.000000
   4 [-]: LOADK     R6 K1        ; R6 := ""
   5 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
   6 [-]: SELF      R2 R0 K2     ; R3 := R0; R2 := R0[0x67bc869f]
   7 [-]: MOVE      R4 R1        ; R4 := R1
-  8 [-]: CONST     R5 10        ; R5 := 10.000000
-  9 [-]: CONST     R6 0         ; R6 := 0.000000
+  8 [-]: LOADK     R5 10        ; R5 := 10.000000
+  9 [-]: LOADK     R6 0         ; R6 := 0.000000
  10 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
  11 [-]: NEWTABLE  R2 0 0       ; R2 := {}
  12 [-]: SETTABLE  R2 K3 R0     ; R2["mMovie"] := R0
@@ -133,7 +133,7 @@
   5 [-]: SETTABLE  R1 R2 K3     ; R1[R2] := 2.000000
   6 [-]: GETTABLE  R2 R0 K4     ; R2 := R0["RARE"]
   7 [-]: SETTABLE  R1 R2 K5     ; R1[R2] := 1.000000
-  8 [-]: CONST     R2 0         ; R2 := 0.000000
+  8 [-]: LOADK     R2 0         ; R2 := 0.000000
   9 [-]: GETGLOBAL R3 K6        ; R3 := 0xc8802016
  10 [-]: GETTABLE  R4 R0 K7     ; R4 := R0["mTips"]
  11 [-]: CALL      R3 2 4       ; R3,R4,R5 := R3(R4)
@@ -144,7 +144,7 @@
  16 [-]: TFORLOOP  R3 2         ; R6,R7 :=  R3(R4,R5); if R6 ~= nil then begin PC = 13; R5 := R6 end
  17 [-]: JMP       13           ; PC := 13
  18 [-]: DIV       R8 K5 R2     ; R8 := 1.000000 / R2
- 19 [-]: CONST     R9 0         ; R9 := 0.000000
+ 19 [-]: LOADK     R9 0         ; R9 := 0.000000
  20 [-]: GETGLOBAL R10 K6       ; R10 := 0xc8802016
  21 [-]: GETTABLE  R11 R0 K7    ; R11 := R0["mTips"]
  22 [-]: CALL      R10 2 4      ; R10,R11,R12 := R10(R11)
@@ -214,7 +214,7 @@
  34 [-]: GETTABLE  R2 R0 K3     ; R2 := R0["mMovie"]
  35 [-]: SELF      R2 R2 K11    ; R3 := R2; R2 := R2[0x5f56eeab]
  36 [-]: GETUPVAL  R4 U1        ; R4 := U1
- 37 [-]: CONST     R5 29        ; R5 := 29.000000
+ 37 [-]: LOADK     R5 29        ; R5 := 29.000000
  38 [-]: MOVE      R6 R1        ; R6 := R1
  39 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
  40 [-]: RETURN    R0 1         ; return 
@@ -239,7 +239,7 @@
   8 [-]: EQ        0 R2 K2      ; if R2 ~= 1.000000 then PC := 11
   9 [-]: JMP       11           ; PC := 11
  10 [-]: RETURN    R0 1         ; return 
- 11 [-]: CONST     R2 1         ; R2 := 1.000000
+ 11 [-]: LOADK     R2 1         ; R2 := 1.000000
  12 [-]: GETTABLE  R3 R0 K4     ; R3 := R0["Random"]
  13 [-]: TEST      R3 0         ; if not R3 then PC := 91
  14 [-]: JMP       91           ; PC := 91
@@ -252,11 +252,11 @@
  21 [-]: SELF      R3 R0 K7     ; R4 := R0; R3 := R0[0x42a621c3]
  22 [-]: CALL      R3 2 1       ; R3(R4)
  23 [-]: GETGLOBAL R3 K8        ; R3 := 0xce225efa
- 24 [-]: CONST     R4 0         ; R4 := 0.000000
+ 24 [-]: LOADK     R4 0         ; R4 := 0.000000
  25 [-]: CALL      R3 2 1       ; R3(R4)
  26 [-]: GETGLOBAL R3 K9        ; R3 := 0xc163f229
- 27 [-]: CONST     R4 0         ; R4 := 0.000000
- 28 [-]: CONST     R5 1         ; R5 := 1.000000
+ 27 [-]: LOADK     R4 0         ; R4 := 0.000000
+ 28 [-]: LOADK     R5 1         ; R5 := 1.000000
  29 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
  30 [-]: SELF      R4 R0 K10    ; R5 := R0; R4 := R0[0x975364e9]
  31 [-]: LOADK     R6 K11       ; R6 := "RandomIndex -> "
@@ -265,10 +265,10 @@
  34 [-]: CALL      R7 2 2       ; R7 := R7(R8)
  35 [-]: CONCAT    R6 R6 R7     ; R6 := R6 .. R7
  36 [-]: CALL      R4 3 1       ; R4(R5,R6)
- 37 [-]: CONST     R4 0         ; R4 := 0.000000
- 38 [-]: CONST     R5 1         ; R5 := 1.000000
+ 37 [-]: LOADK     R4 0         ; R4 := 0.000000
+ 38 [-]: LOADK     R5 1         ; R5 := 1.000000
  39 [-]: MOVE      R6 R1        ; R6 := R1
- 40 [-]: CONST     R7 1         ; R7 := 1.000000
+ 40 [-]: LOADK     R7 1         ; R7 := 1.000000
  41 [-]: FORPREP   R5 79        ; R5 -= R7; PC := 79
  42 [-]: SELF      R9 R0 K10    ; R10 := R0; R9 := R0[0x975364e9]
  43 [-]: LOADK     R11 K13      ; R11 := "IndexCompare lastIndex >="
@@ -323,8 +323,8 @@
  92 [-]: GETTABLE  R9 R9 K18    ; R82 := R9[0x38a41ce7]
  93 [-]: GETUPVAL  R10 U1       ; R10 := U1
  94 [-]: GETTABLE  R10 R10 K3   ; R10 := R10["TipIndex"]
- 95 [-]: CONST     R11 1        ; R11 := 1.000000
- 96 [-]: CONST     R12 1        ; R12 := 1.000000
+ 95 [-]: LOADK     R11 1        ; R11 := 1.000000
+ 96 [-]: LOADK     R12 1        ; R12 := 1.000000
  97 [-]: MOVE      R13 R1       ; R13 := R1
  98 [-]: CALL      R9 5 2       ; R9 := R9(R10,R11,R12,R13)
  99 [-]: MOVE      R2 R9        ; R2 := R9
@@ -338,15 +338,15 @@
 107 [-]: GETGLOBAL R9 K21       ; R9 := 0x25312c9b
 108 [-]: GETTABLE  R10 R0 K22   ; R10 := R0["mMovie"]
 109 [-]: GETUPVAL  R11 U2       ; R11 := U2
-110 [-]: CONST     R12 0        ; R12 := 0.000000
+110 [-]: LOADK     R12 0        ; R12 := 0.000000
 111 [-]: NEWTABLE  R13 1 0      ; R13 := {}
-112 [-]: CONST     R14 10       ; R14 := 10.000000
+112 [-]: LOADK     R14 10       ; R14 := 10.000000
 113 [-]: SETLIST   R13 1 1      ; R13[(1-1)*FPF+i] := R(13+i), 1 <= i <= 1
 114 [-]: NEWTABLE  R14 1 0      ; R14 := {}
-115 [-]: CONST     R15 100      ; R15 := 100.000000
+115 [-]: LOADK     R15 100      ; R15 := 100.000000
 116 [-]: SETLIST   R14 1 1      ; R14[(1-1)*FPF+i] := R(14+i), 1 <= i <= 1
 117 [-]: GETTABLE  R15 R0 K24   ; R15 := R0["FadeDuration"]
-118 [-]: CONST     R16 0        ; R16 := 0.000000
+118 [-]: LOADK     R16 0        ; R16 := 0.000000
 119 [-]: CLOSURE   R17 0        ; R17 := closure(Function #1.5.1)
 120 [-]: MOVE      R0 R0        ; R0 := R0
 121 [-]: GETUPVAL  R0 U2        ; R0 := U2
@@ -375,12 +375,12 @@
   2 [-]: GETUPVAL  R1 U0        ; R1 := U0
   3 [-]: GETTABLE  R1 R1 K1     ; R1 := R1["mMovie"]
   4 [-]: GETUPVAL  R2 U1        ; R2 := U1
-  5 [-]: CONST     R3 0         ; R3 := 0.000000
+  5 [-]: LOADK     R3 0         ; R3 := 0.000000
   6 [-]: NEWTABLE  R4 1 0       ; R4 := {}
-  7 [-]: CONST     R5 10        ; R5 := 10.000000
+  7 [-]: LOADK     R5 10        ; R5 := 10.000000
   8 [-]: SETLIST   R4 1 1       ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 1
   9 [-]: NEWTABLE  R5 1 0       ; R5 := {}
- 10 [-]: CONST     R6 0         ; R6 := 0.000000
+ 10 [-]: LOADK     R6 0         ; R6 := 0.000000
  11 [-]: SETLIST   R5 1 1       ; R5[(1-1)*FPF+i] := R(5+i), 1 <= i <= 1
  12 [-]: GETUPVAL  R6 U0        ; R6 := U0
  13 [-]: GETTABLE  R6 R6 K3     ; R6 := R6["FadeDuration"]

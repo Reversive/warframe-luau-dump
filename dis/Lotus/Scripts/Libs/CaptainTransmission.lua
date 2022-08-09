@@ -89,8 +89,8 @@
  24 [-]: GETGLOBAL R1 K0        ; R1 := _T
  25 [-]: GETTABLE  R1 R1 K1     ; R1 := R1["CaptainNemesis"]
  26 [-]: GETGLOBAL R2 K12       ; R2 := 0x0c5e62f9
- 27 [-]: CONST     R3 0         ; R3 := 0.000000
- 28 [-]: CONST     R4 1         ; R4 := 1.000000
+ 27 [-]: LOADK     R3 0         ; R3 := 0.000000
+ 28 [-]: LOADK     R4 1         ; R4 := 1.000000
  29 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
  30 [-]: SETTABLE  R1 K11 R2    ; R1["mAgentIdx"] := R2
  31 [-]: RETURN    R0 1         ; return 
@@ -222,7 +222,7 @@
  19 [-]: EQ        0 R0 R2      ; if R0 ~= R2 then PC := 25
  20 [-]: JMP       25           ; PC := 25
  21 [-]: SELF      R2 R1 K8     ; R3 := R1; R2 := R1[0x05eeb9db]
- 22 [-]: CONST     R4 1         ; R4 := 1.000000
+ 22 [-]: LOADK     R4 1         ; R4 := 1.000000
  23 [-]: CALL      R2 3 1       ; R2(R3,R4)
  24 [-]: JMP       60           ; PC := 60
  25 [-]: GETGLOBAL R2 K2        ; R2 := 0x0469f296
@@ -231,7 +231,7 @@
  28 [-]: EQ        0 R0 R2      ; if R0 ~= R2 then PC := 34
  29 [-]: JMP       34           ; PC := 34
  30 [-]: SELF      R2 R1 K8     ; R3 := R1; R2 := R1[0x05eeb9db]
- 31 [-]: CONST     R4 2         ; R4 := 2.000000
+ 31 [-]: LOADK     R4 2         ; R4 := 2.000000
  32 [-]: CALL      R2 3 1       ; R2(R3,R4)
  33 [-]: JMP       60           ; PC := 60
  34 [-]: GETGLOBAL R2 K2        ; R2 := 0x0469f296
@@ -240,7 +240,7 @@
  37 [-]: EQ        0 R0 R2      ; if R0 ~= R2 then PC := 43
  38 [-]: JMP       43           ; PC := 43
  39 [-]: SELF      R2 R1 K8     ; R3 := R1; R2 := R1[0x05eeb9db]
- 40 [-]: CONST     R4 3         ; R4 := 3.000000
+ 40 [-]: LOADK     R4 3         ; R4 := 3.000000
  41 [-]: CALL      R2 3 1       ; R2(R3,R4)
  42 [-]: JMP       60           ; PC := 60
  43 [-]: GETGLOBAL R2 K2        ; R2 := 0x0469f296
@@ -249,7 +249,7 @@
  46 [-]: EQ        0 R0 R2      ; if R0 ~= R2 then PC := 52
  47 [-]: JMP       52           ; PC := 52
  48 [-]: SELF      R2 R1 K8     ; R3 := R1; R2 := R1[0x05eeb9db]
- 49 [-]: CONST     R4 4         ; R4 := 4.000000
+ 49 [-]: LOADK     R4 4         ; R4 := 4.000000
  50 [-]: CALL      R2 3 1       ; R2(R3,R4)
  51 [-]: JMP       60           ; PC := 60
  52 [-]: GETGLOBAL R2 K2        ; R2 := 0x0469f296
@@ -258,7 +258,7 @@
  55 [-]: EQ        0 R0 R2      ; if R0 ~= R2 then PC := 60
  56 [-]: JMP       60           ; PC := 60
  57 [-]: SELF      R2 R1 K8     ; R3 := R1; R2 := R1[0x05eeb9db]
- 58 [-]: CONST     R4 5         ; R4 := 5.000000
+ 58 [-]: LOADK     R4 5         ; R4 := 5.000000
  59 [-]: CALL      R2 3 1       ; R2(R3,R4)
  60 [-]: RETURN    R0 1         ; return 
 

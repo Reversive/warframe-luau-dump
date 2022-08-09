@@ -36,7 +36,7 @@
   9 [-]: RETURN    R7 2         ; return R7
  10 [-]: SELF      R7 R0 K3     ; R8 := R0; R7 := R0[0xbe524b27]
  11 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 12 [-]: CONST     R8 0         ; R8 := 0.000000
+ 12 [-]: LOADK     R8 0         ; R8 := 0.000000
  13 [-]: GETGLOBAL R9 K4        ; R9 := 0x7b998233
  14 [-]: MOVE      R10 R7       ; R10 := R7
  15 [-]: CALL      R9 2 2       ; R9 := R9(R10)
@@ -54,10 +54,10 @@
  27 [-]: JMP       30           ; PC := 30
  28 [-]: OP_LOADBOOL R9 0 0       ; R9 := false
  29 [-]: RETURN    R9 2         ; return R9
- 30 [-]: CONST     R9 0         ; R9 := 0.000000
- 31 [-]: CONST     R10 1        ; R10 := 1.000000
+ 30 [-]: LOADK     R9 0         ; R9 := 0.000000
+ 31 [-]: LOADK     R10 1        ; R10 := 1.000000
  32 [-]: LEN       R11 R6       ; R11 := # R6
- 33 [-]: CONST     R12 1        ; R12 := 1.000000
+ 33 [-]: LOADK     R12 1        ; R12 := 1.000000
  34 [-]: FORPREP   R10 51       ; R10 -= R12; PC := 51
  35 [-]: GETTABLE  R14 R6 R13   ; R14 := R6[R13]
  36 [-]: GETTABLE  R15 R14 K7   ; R15 := R14["mission"]

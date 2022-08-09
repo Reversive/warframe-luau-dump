@@ -28,7 +28,7 @@
   5 [-]: TEST      R2 0         ; if not R2 then PC := 11
   6 [-]: JMP       11           ; PC := 11
   7 [-]: GETGLOBAL R2 K2        ; R2 := 0xcbd666e1
-  8 [-]: CONST     R3 0         ; R3 := 0.000000
+  8 [-]: LOADK     R3 0         ; R3 := 0.000000
   9 [-]: CALL      R2 2 1       ; R2(R3)
  10 [-]: JMP       2            ; PC := 2
  11 [-]: GETGLOBAL R2 K1        ; R2 := 0x7b998233
@@ -110,7 +110,7 @@
  87 [-]: MOVE      R10 R6       ; R10 := R6
  88 [-]: CALL      R8 3 1       ; R8(R9,R10)
  89 [-]: GETGLOBAL R8 K2        ; R8 := 0xcbd666e1
- 90 [-]: CONST     R9 0         ; R9 := 0.000000
+ 90 [-]: LOADK     R9 0         ; R9 := 0.000000
  91 [-]: CALL      R8 2 1       ; R8(R9)
  92 [-]: JMP       11           ; PC := 11
  93 [-]: RETURN    R0 1         ; return 

@@ -8,10 +8,10 @@
 ; Max Stack Size:  17
 
   1 [-]: NEWTABLE  R0 0 0       ; R0 := {}
-  2 [-]: CONST     R1 1         ; R1 := 1.000000
-  3 [-]: CONST     R2 2         ; R2 := 2.000000
-  4 [-]: CONST     R3 3         ; R3 := 3.000000
-  5 [-]: CONST     R4 4         ; R4 := 4.000000
+  2 [-]: LOADK     R1 1         ; R1 := 1.000000
+  3 [-]: LOADK     R2 2         ; R2 := 2.000000
+  4 [-]: LOADK     R3 3         ; R3 := 3.000000
+  5 [-]: LOADK     R4 4         ; R4 := 4.000000
   6 [-]: GETGLOBAL R5 K0        ; R5 := 0x0469f296
   7 [-]: LOADK     R6 K1        ; R6 := "GAME_R1_WEAPON1"
   8 [-]: CALL      R5 2 2       ; R5 := R5(R6)
@@ -159,14 +159,14 @@
  28 [-]: SETTABLE  R5 K13 R6    ; R5["verticalImpulse"] := R6
  29 [-]: SELF      R6 R5 K15    ; R7 := R5; R6 := R5[0x1586e35e]
  30 [-]: MOVE      R8 R3        ; R8 := R3
- 31 [-]: CONST     R9 1         ; R9 := 1.000000
+ 31 [-]: LOADK     R9 1         ; R9 := 1.000000
  32 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
  33 [-]: SELF      R6 R5 K16    ; R7 := R5; R6 := R5[0xfc0e440a]
  34 [-]: MOVE      R8 R4        ; R8 := R4
  35 [-]: OP_LOADBOOL R9 1 0       ; R9 := true
  36 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
  37 [-]: SELF      R6 R5 K16    ; R7 := R5; R6 := R5[0xfc0e440a]
- 38 [-]: CONST     R8 23        ; R8 := 23.000000
+ 38 [-]: LOADK     R8 23        ; R8 := 23.000000
  39 [-]: OP_LOADBOOL R9 1 0       ; R9 := true
  40 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
  41 [-]: SETTABLE  R5 K17 K18   ; R5["fallOff"] := 0.000000
@@ -306,14 +306,14 @@
   4 [-]: TEST      R4 0         ; if not R4 then PC := 7
   5 [-]: JMP       7            ; PC := 7
   6 [-]: RETURN    R0 1         ; return 
-  7 [-]: CONST     R4 0         ; R4 := 0.000000
+  7 [-]: LOADK     R4 0         ; R4 := 0.000000
   8 [-]: SELF      R5 R0 K1     ; R6 := R0; R5 := R0[0x1ac1655c]
   9 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  10 [-]: EQ        0 R1 K3      ; if R1 ~= 117.000000 then PC := 22
  11 [-]: JMP       22           ; PC := 22
  12 [-]: GETGLOBAL R6 K4        ; R6 := 0x5bced4c4
  13 [-]: GETTABLE  R6 R6 K5     ; R82 := R6[0xb62ecfe0]
- 14 [-]: CONST     R7 0         ; R7 := 0.000000
+ 14 [-]: LOADK     R7 0         ; R7 := 0.000000
  15 [-]: SELF      R8 R5 K6     ; R9 := R5; R8 := R5[0xf456c2d7]
  16 [-]: CALL      R8 2 2       ; R8 := R8(R9)
  17 [-]: SELF      R9 R5 K7     ; R10 := R5; R9 := R5[0xb87f958d]
@@ -396,14 +396,14 @@
  27 [-]: GETTABLE  R9 R5 K5     ; R9 := R5[2.000000]
  28 [-]: GETTABLE  R10 R5 K6    ; R10 := R5[3.000000]
  29 [-]: CALL      R6 5 1       ; R6(R7,R8,R9,R10)
- 30 [-]: CONST     R6 0         ; R6 := 0.000000
+ 30 [-]: LOADK     R6 0         ; R6 := 0.000000
  31 [-]: SELF      R7 R0 K7     ; R8 := R0; R7 := R0[0x1ac1655c]
  32 [-]: CALL      R7 2 2       ; R7 := R7(R8)
  33 [-]: EQ        0 R1 K9      ; if R1 ~= 117.000000 then PC := 45
  34 [-]: JMP       45           ; PC := 45
  35 [-]: GETGLOBAL R8 K10       ; R8 := 0x5bced4c4
  36 [-]: GETTABLE  R8 R8 K11    ; R82 := R8[0xb62ecfe0]
- 37 [-]: CONST     R9 0         ; R9 := 0.000000
+ 37 [-]: LOADK     R9 0         ; R9 := 0.000000
  38 [-]: SELF      R10 R7 K12   ; R11 := R7; R10 := R7[0xf456c2d7]
  39 [-]: CALL      R10 2 2      ; R10 := R10(R11)
  40 [-]: SELF      R11 R7 K13   ; R12 := R7; R11 := R7[0xb87f958d]
@@ -487,7 +487,7 @@
   8 [-]: SELF      R3 R0 K2     ; R4 := R0; R3 := R0[0x659d451f]
   9 [-]: GETGLOBAL R5 K3        ; R5 := 0xba6eae3d
  10 [-]: OP_LOADBOOL R6 0 0       ; R6 := false
- 11 [-]: CONST     R7 -1        ; R7 := -1.000000
+ 11 [-]: LOADK     R7 -1        ; R7 := -1.000000
  12 [-]: OP_LOADBOOL R8 0 0       ; R8 := false
  13 [-]: CALL      R3 6 1       ; R3(R4,R5,R6,R7,R8)
  14 [-]: GETUPVAL  R3 U0        ; R3 := U0
@@ -515,7 +515,7 @@
  36 [-]: SELF      R3 R0 K2     ; R4 := R0; R3 := R0[0x659d451f]
  37 [-]: GETGLOBAL R5 K10       ; R5 := 0xd30ffd8d
  38 [-]: OP_LOADBOOL R6 0 0       ; R6 := false
- 39 [-]: CONST     R7 -1        ; R7 := -1.000000
+ 39 [-]: LOADK     R7 -1        ; R7 := -1.000000
  40 [-]: OP_LOADBOOL R8 0 0       ; R8 := false
  41 [-]: CALL      R3 6 1       ; R3(R4,R5,R6,R7,R8)
  42 [-]: GETUPVAL  R3 U2        ; R3 := U2
@@ -530,10 +530,10 @@
  51 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  52 [-]: TEST      R3 0         ; if not R3 then PC := 72
  53 [-]: JMP       72           ; PC := 72
- 54 [-]: CONST     R3 1         ; R3 := 1.000000
+ 54 [-]: LOADK     R3 1         ; R3 := 1.000000
  55 [-]: GETTABLE  R4 R1 K17    ; R4 := R1["upgrades"]
  56 [-]: LEN       R4 R4        ; R4 := # R4
- 57 [-]: CONST     R5 1         ; R5 := 1.000000
+ 57 [-]: LOADK     R5 1         ; R5 := 1.000000
  58 [-]: FORPREP   R3 71        ; R3 -= R5; PC := 71
  59 [-]: GETUPVAL  R7 U3        ; R7 := U3
  60 [-]: MOVE      R8 R0        ; R8 := R0
@@ -548,10 +548,10 @@
  69 [-]: GETTABLE  R11 R11 K20  ; R11 := R11[3.000000]
  70 [-]: CALL      R7 5 1       ; R7(R8,R9,R10,R11)
  71 [-]: FORLOOP   R3 59        ; R3 += R5; if R3 <= R4 then begin PC := 59; R6 := R3 end
- 72 [-]: CONST     R7 1         ; R7 := 1.000000
+ 72 [-]: LOADK     R7 1         ; R7 := 1.000000
  73 [-]: GETTABLE  R8 R1 K21    ; R8 := R1["statRestores"]
  74 [-]: LEN       R8 R8        ; R8 := # R8
- 75 [-]: CONST     R9 1         ; R9 := 1.000000
+ 75 [-]: LOADK     R9 1         ; R9 := 1.000000
  76 [-]: FORPREP   R7 89        ; R7 -= R9; PC := 89
  77 [-]: GETUPVAL  R11 U4       ; R11 := U4
  78 [-]: MOVE      R12 R0       ; R12 := R0
@@ -571,7 +571,7 @@
  92 [-]: GETGLOBAL R13 K22      ; R13 := 0xe0541163
  93 [-]: GETUPVAL  R14 U5       ; R14 := U5
  94 [-]: CALL      R11 4 2      ; R11 := R11(R12,R13,R14)
- 95 [-]: CONST     R12 0        ; R12 := 0.000000
+ 95 [-]: LOADK     R12 0        ; R12 := 0.000000
  96 [-]: GETGLOBAL R13 K7       ; R13 := 0x7b998233
  97 [-]: MOVE      R14 R11      ; R14 := R11
  98 [-]: CALL      R13 2 2      ; R13 := R13(R14)
@@ -600,7 +600,7 @@
 121 [-]: OP_LOADBOOL R16 1 0      ; R16 := true
 122 [-]: CALL      R13 4 1      ; R13(R14,R15,R16)
 123 [-]: GETGLOBAL R13 K5       ; R13 := 0xcbd666e1
-124 [-]: CONST     R14 0        ; R14 := 0.000000
+124 [-]: LOADK     R14 0        ; R14 := 0.000000
 125 [-]: CALL      R13 2 1      ; R13(R14)
 126 [-]: GETGLOBAL R13 K26      ; R13 := 0x67652851
 127 [-]: CALL      R13 1 2      ; R13 := R13()
@@ -621,10 +621,10 @@
 142 [-]: CALL      R13 2 2      ; R13 := R13(R14)
 143 [-]: TEST      R13 0        ; if not R13 then PC := 163
 144 [-]: JMP       163          ; PC := 163
-145 [-]: CONST     R13 1        ; R13 := 1.000000
+145 [-]: LOADK     R13 1        ; R13 := 1.000000
 146 [-]: GETTABLE  R14 R1 K17   ; R14 := R1["upgrades"]
 147 [-]: LEN       R14 R14      ; R14 := # R14
-148 [-]: CONST     R15 1        ; R15 := 1.000000
+148 [-]: LOADK     R15 1        ; R15 := 1.000000
 149 [-]: FORPREP   R13 162      ; R13 -= R15; PC := 162
 150 [-]: GETUPVAL  R17 U6       ; R17 := U6
 151 [-]: MOVE      R18 R0       ; R18 := R0
@@ -676,14 +676,14 @@
   7 [-]: NEWTABLE  R3 1 0       ; R3 := {}
   8 [-]: NEWTABLE  R4 2 0       ; R4 := {}
   9 [-]: GETUPVAL  R5 U0        ; R5 := U0
- 10 [-]: CONST     R6 0         ; R6 := 0.250000
+ 10 [-]: LOADK     R6 0         ; R6 := 0.250000
  11 [-]: SETLIST   R4 2 1       ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 2
  12 [-]: SETLIST   R3 1 1       ; R3[(1-1)*FPF+i] := R(3+i), 1 <= i <= 1
  13 [-]: SETTABLE  R2 K11 R3    ; R2["statRestores"] := R3
  14 [-]: NEWTABLE  R3 1 0       ; R3 := {}
  15 [-]: NEWTABLE  R4 3 0       ; R4 := {}
- 16 [-]: CONST     R5 15        ; R5 := 15.000000
- 17 [-]: CONST     R6 2         ; R6 := 2.000000
+ 16 [-]: LOADK     R5 15        ; R5 := 15.000000
+ 17 [-]: LOADK     R6 2         ; R6 := 2.000000
  18 [-]: LOADK     R7 K14       ; R7 := 0.150000
  19 [-]: SETLIST   R4 3 1       ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 3
  20 [-]: SETLIST   R3 1 1       ; R3[(1-1)*FPF+i] := R(3+i), 1 <= i <= 1
@@ -718,14 +718,14 @@
   9 [-]: NEWTABLE  R3 1 0       ; R3 := {}
  10 [-]: NEWTABLE  R4 2 0       ; R4 := {}
  11 [-]: GETUPVAL  R5 U1        ; R5 := U1
- 12 [-]: CONST     R6 0         ; R6 := 0.250000
+ 12 [-]: LOADK     R6 0         ; R6 := 0.250000
  13 [-]: SETLIST   R4 2 1       ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 2
  14 [-]: SETLIST   R3 1 1       ; R3[(1-1)*FPF+i] := R(3+i), 1 <= i <= 1
  15 [-]: SETTABLE  R2 K10 R3    ; R2["statRestores"] := R3
  16 [-]: NEWTABLE  R3 1 0       ; R3 := {}
  17 [-]: NEWTABLE  R4 3 0       ; R4 := {}
- 18 [-]: CONST     R5 79        ; R5 := 79.000000
- 19 [-]: CONST     R6 2         ; R6 := 2.000000
+ 18 [-]: LOADK     R5 79        ; R5 := 79.000000
+ 19 [-]: LOADK     R6 2         ; R6 := 2.000000
  20 [-]: LOADK     R7 K13       ; R7 := 0.100000
  21 [-]: SETLIST   R4 3 1       ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 3
  22 [-]: SETLIST   R3 1 1       ; R3[(1-1)*FPF+i] := R(3+i), 1 <= i <= 1
@@ -760,15 +760,15 @@
   9 [-]: NEWTABLE  R3 1 0       ; R3 := {}
  10 [-]: NEWTABLE  R4 2 0       ; R4 := {}
  11 [-]: GETUPVAL  R5 U1        ; R5 := U1
- 12 [-]: CONST     R6 0         ; R6 := 0.500000
+ 12 [-]: LOADK     R6 0         ; R6 := 0.500000
  13 [-]: SETLIST   R4 2 1       ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 2
  14 [-]: SETLIST   R3 1 1       ; R3[(1-1)*FPF+i] := R(3+i), 1 <= i <= 1
  15 [-]: SETTABLE  R2 K10 R3    ; R2["statRestores"] := R3
  16 [-]: NEWTABLE  R3 1 0       ; R3 := {}
  17 [-]: NEWTABLE  R4 3 0       ; R4 := {}
- 18 [-]: CONST     R5 117       ; R5 := 117.000000
- 19 [-]: CONST     R6 2         ; R6 := 2.000000
- 20 [-]: CONST     R7 0         ; R7 := 0.500000
+ 18 [-]: LOADK     R5 117       ; R5 := 117.000000
+ 19 [-]: LOADK     R6 2         ; R6 := 2.000000
+ 20 [-]: LOADK     R7 0         ; R7 := 0.500000
  21 [-]: SETLIST   R4 3 1       ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 3
  22 [-]: SETLIST   R3 1 1       ; R3[(1-1)*FPF+i] := R(3+i), 1 <= i <= 1
  23 [-]: SETTABLE  R2 K11 R3    ; R2["upgrades"] := R3
@@ -802,15 +802,15 @@
   9 [-]: NEWTABLE  R3 1 0       ; R3 := {}
  10 [-]: NEWTABLE  R4 2 0       ; R4 := {}
  11 [-]: GETUPVAL  R5 U1        ; R5 := U1
- 12 [-]: CONST     R6 0         ; R6 := 0.250000
+ 12 [-]: LOADK     R6 0         ; R6 := 0.250000
  13 [-]: SETLIST   R4 2 1       ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 2
  14 [-]: SETLIST   R3 1 1       ; R3[(1-1)*FPF+i] := R(3+i), 1 <= i <= 1
  15 [-]: SETTABLE  R2 K10 R3    ; R2["statRestores"] := R3
  16 [-]: NEWTABLE  R3 1 0       ; R3 := {}
  17 [-]: NEWTABLE  R4 3 0       ; R4 := {}
- 18 [-]: CONST     R5 64        ; R5 := 64.000000
- 19 [-]: CONST     R6 2         ; R6 := 2.000000
- 20 [-]: CONST     R7 0         ; R7 := 0.250000
+ 18 [-]: LOADK     R5 64        ; R5 := 64.000000
+ 19 [-]: LOADK     R6 2         ; R6 := 2.000000
+ 20 [-]: LOADK     R7 0         ; R7 := 0.250000
  21 [-]: SETLIST   R4 3 1       ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 3
  22 [-]: SETLIST   R3 1 1       ; R3[(1-1)*FPF+i] := R(3+i), 1 <= i <= 1
  23 [-]: SETTABLE  R2 K11 R3    ; R2["upgrades"] := R3
@@ -844,15 +844,15 @@
   9 [-]: NEWTABLE  R3 1 0       ; R3 := {}
  10 [-]: NEWTABLE  R4 2 0       ; R4 := {}
  11 [-]: GETUPVAL  R5 U1        ; R5 := U1
- 12 [-]: CONST     R6 0         ; R6 := 0.250000
+ 12 [-]: LOADK     R6 0         ; R6 := 0.250000
  13 [-]: SETLIST   R4 2 1       ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 2
  14 [-]: SETLIST   R3 1 1       ; R3[(1-1)*FPF+i] := R(3+i), 1 <= i <= 1
  15 [-]: SETTABLE  R2 K10 R3    ; R2["statRestores"] := R3
  16 [-]: NEWTABLE  R3 1 0       ; R3 := {}
  17 [-]: NEWTABLE  R4 3 0       ; R4 := {}
- 18 [-]: CONST     R5 87        ; R5 := 87.000000
- 19 [-]: CONST     R6 2         ; R6 := 2.000000
- 20 [-]: CONST     R7 0         ; R7 := 0.250000
+ 18 [-]: LOADK     R5 87        ; R5 := 87.000000
+ 19 [-]: LOADK     R6 2         ; R6 := 2.000000
+ 20 [-]: LOADK     R7 0         ; R7 := 0.250000
  21 [-]: SETLIST   R4 3 1       ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 3
  22 [-]: SETLIST   R3 1 1       ; R3[(1-1)*FPF+i] := R(3+i), 1 <= i <= 1
  23 [-]: SETTABLE  R2 K11 R3    ; R2["upgrades"] := R3
@@ -886,15 +886,15 @@
   9 [-]: NEWTABLE  R3 1 0       ; R3 := {}
  10 [-]: NEWTABLE  R4 2 0       ; R4 := {}
  11 [-]: GETUPVAL  R5 U1        ; R5 := U1
- 12 [-]: CONST     R6 0         ; R6 := 0.250000
+ 12 [-]: LOADK     R6 0         ; R6 := 0.250000
  13 [-]: SETLIST   R4 2 1       ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 2
  14 [-]: SETLIST   R3 1 1       ; R3[(1-1)*FPF+i] := R(3+i), 1 <= i <= 1
  15 [-]: SETTABLE  R2 K10 R3    ; R2["statRestores"] := R3
  16 [-]: NEWTABLE  R3 1 0       ; R3 := {}
  17 [-]: NEWTABLE  R4 3 0       ; R4 := {}
- 18 [-]: CONST     R5 144       ; R5 := 144.000000
- 19 [-]: CONST     R6 2         ; R6 := 2.000000
- 20 [-]: CONST     R7 0         ; R7 := 0.250000
+ 18 [-]: LOADK     R5 144       ; R5 := 144.000000
+ 19 [-]: LOADK     R6 2         ; R6 := 2.000000
+ 20 [-]: LOADK     R7 0         ; R7 := 0.250000
  21 [-]: SETLIST   R4 3 1       ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 3
  22 [-]: SETLIST   R3 1 1       ; R3[(1-1)*FPF+i] := R(3+i), 1 <= i <= 1
  23 [-]: SETTABLE  R2 K11 R3    ; R2["upgrades"] := R3
@@ -917,7 +917,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  9
 
-  1 [-]: CONST     R1 0         ; R1 := 0.000000
+  1 [-]: LOADK     R1 0         ; R1 := 0.000000
   2 [-]: GETGLOBAL R2 K0        ; R2 := 0x7b998233
   3 [-]: MOVE      R3 R0        ; R3 := R0
   4 [-]: CALL      R2 2 2       ; R2 := R2(R3)
@@ -942,7 +942,7 @@
  23 [-]: MUL       R3 R3 K8     ; R3 := R3 * 1.650000
  24 [-]: ADD       R1 R1 R3     ; R1 := R1 + R3
  25 [-]: GETGLOBAL R3 K9        ; R3 := 0xcbd666e1
- 26 [-]: CONST     R4 0         ; R4 := 0.000000
+ 26 [-]: LOADK     R4 0         ; R4 := 0.000000
  27 [-]: CALL      R3 2 1       ; R3(R4)
  28 [-]: JMP       2            ; PC := 2
  29 [-]: SELF      R3 R0 K10    ; R4 := R0; R3 := R0[0xa2880940]

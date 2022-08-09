@@ -114,7 +114,7 @@
  86 [-]: OP_LOADBOOL R10 1 0      ; R10 := true
  87 [-]: GETGLOBAL R11 K51      ; R11 := 0x0032441c
  88 [-]: GETTABLE  R11 R11 K71  ; R11 := R11["UIColor_Black"]
- 89 [-]: CONST     R12 0        ; R12 := 0.000000
+ 89 [-]: LOADK     R12 0        ; R12 := 0.000000
  90 [-]: CALL      R9 4 2       ; R9 := R9(R10,R11,R12)
  91 [-]: SETTABLE  R8 K16 R9    ; R8["mLabelOnColor"] := R9
  92 [-]: GETTABLE  R9 R8 K38    ; R9 := R8["mNewDesign"]
@@ -229,7 +229,7 @@
   3 [-]: JMP       6            ; PC := 6
   4 [-]: GETTABLE  R1 R0 K0     ; R1 := R0["mParentEnv"]
   5 [-]: RETURN    R1 2         ; return R1
-  6 [-]: CONST     R1 1         ; R1 := 1.000000
+  6 [-]: LOADK     R1 1         ; R1 := 1.000000
   7 [-]: LOADNIL   R2 R2        ; R2 := nil
   8 [-]: GETGLOBAL R3 K2        ; R3 := 0xcd0165a3
   9 [-]: MOVE      R4 R1        ; R4 := R1
@@ -280,16 +280,16 @@
   2 [-]: GETGLOBAL R2 K1        ; R2 := 0x7f5022cf
   3 [-]: GETTABLE  R2 R2 K2     ; R82 := R2[0x1a94c9cc]
   4 [-]: GETTABLE  R3 R0 K3     ; R3 := R0["mCallout"]
-  5 [-]: CONST     R4 2         ; R4 := 2.000000
-  6 [-]: CONST     R5 -2        ; R5 := -2.000000
+  5 [-]: LOADK     R4 2         ; R4 := 2.000000
+  6 [-]: LOADK     R5 -2        ; R5 := -2.000000
   7 [-]: CALL      R2 4 2       ; R2 := R2(R3,R4,R5)
   8 [-]: CONCAT    R1 R1 R2     ; R1 := R1 .. R2
   9 [-]: LOADK     R2 K4        ; R2 := "onKeyDown_"
  10 [-]: GETGLOBAL R3 K1        ; R3 := 0x7f5022cf
  11 [-]: GETTABLE  R3 R3 K2     ; R82 := R3[0x1a94c9cc]
  12 [-]: GETTABLE  R4 R0 K3     ; R4 := R0["mCallout"]
- 13 [-]: CONST     R5 2         ; R5 := 2.000000
- 14 [-]: CONST     R6 -2        ; R6 := -2.000000
+ 13 [-]: LOADK     R5 2         ; R5 := 2.000000
+ 14 [-]: LOADK     R6 -2        ; R6 := -2.000000
  15 [-]: CALL      R3 4 2       ; R3 := R3(R4,R5,R6)
  16 [-]: CONCAT    R2 R2 R3     ; R2 := R2 .. R3
  17 [-]: SELF      R3 R0 K5     ; R4 := R0; R3 := R0[0x1baafed5]
@@ -433,7 +433,7 @@
   4 [-]: GETTABLE  R4 R0 K3     ; R4 := R0["mClipName"]
   5 [-]: LOADK     R5 K4        ; R5 := ".Btn"
   6 [-]: CONCAT    R4 R4 R5     ; R4 := R4 .. R5
-  7 [-]: CONST     R5 85        ; R5 := 85.000000
+  7 [-]: LOADK     R5 85        ; R5 := 85.000000
   8 [-]: GETTABLE  R6 R0 K0     ; R6 := R0["mId"]
   9 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
  10 [-]: RETURN    R0 1         ; return 
@@ -483,14 +483,14 @@
  33 [-]: SELF      R2 R2 K9     ; R3 := R2; R2 := R2[0xe261aa96]
  34 [-]: GETTABLE  R4 R0 K10    ; R4 := R0["mClipName"]
  35 [-]: LOADK     R5 K11       ; R5 := "Label"
- 36 [-]: CONST     R6 29        ; R6 := 29.000000
+ 36 [-]: LOADK     R6 29        ; R6 := 29.000000
  37 [-]: MOVE      R7 R1        ; R7 := R1
  38 [-]: CALL      R2 6 1       ; R2(R3,R4,R5,R6,R7)
  39 [-]: GETTABLE  R2 R0 K2     ; R2 := R0["mMovie"]
  40 [-]: SELF      R2 R2 K12    ; R3 := R2; R2 := R2[0xc0a3774b]
  41 [-]: GETTABLE  R4 R0 K10    ; R4 := R0["mClipName"]
  42 [-]: LOADK     R5 K11       ; R5 := "Label"
- 43 [-]: CONST     R6 75        ; R6 := 75.000000
+ 43 [-]: LOADK     R6 75        ; R6 := 75.000000
  44 [-]: GETTABLE  R7 R0 K13    ; R7 := R0["mTintIcons"]
  45 [-]: CALL      R2 6 1       ; R2(R3,R4,R5,R6,R7)
  46 [-]: GETTABLE  R2 R0 K14    ; R2 := R0["mWidth"]
@@ -502,7 +502,7 @@
  52 [-]: GETTABLE  R5 R0 K10    ; R5 := R0["mClipName"]
  53 [-]: LOADK     R6 K17       ; R6 := ".Label"
  54 [-]: CONCAT    R5 R5 R6     ; R5 := R5 .. R6
- 55 [-]: CONST     R6 33        ; R6 := 33.000000
+ 55 [-]: LOADK     R6 33        ; R6 := 33.000000
  56 [-]: CALL      R3 4 2       ; R3 := R3(R4,R5,R6)
  57 [-]: GETTABLE  R4 R0 K18    ; R4 := R0["UTIL"]
  58 [-]: GETTABLE  R4 R4 K19    ; R82 := R4[0x06d055f9]
@@ -556,14 +556,14 @@
 106 [-]: SELF      R3 R3 K31    ; R4 := R3; R3 := R3[0xf64b7262]
 107 [-]: GETTABLE  R5 R0 K10    ; R5 := R0["mClipName"]
 108 [-]: LOADK     R6 K32       ; R6 := "Callout.Label"
-109 [-]: CONST     R7 12        ; R7 := 12.000000
+109 [-]: LOADK     R7 12        ; R7 := 12.000000
 110 [-]: GETTABLE  R8 R0 K29    ; R8 := R0["mLabelWidth"]
 111 [-]: CALL      R3 6 1       ; R3(R4,R5,R6,R7,R8)
 112 [-]: GETTABLE  R3 R0 K2     ; R3 := R0["mMovie"]
 113 [-]: SELF      R3 R3 K9     ; R4 := R3; R3 := R3[0xe261aa96]
 114 [-]: GETTABLE  R5 R0 K10    ; R5 := R0["mClipName"]
 115 [-]: LOADK     R6 K32       ; R6 := "Callout.Label"
-116 [-]: CONST     R7 38        ; R7 := 38.000000
+116 [-]: LOADK     R7 38        ; R7 := 38.000000
 117 [-]: GETTABLE  R8 R0 K33    ; R8 := R0["mVerticalAlignment"]
 118 [-]: CALL      R3 6 1       ; R3(R4,R5,R6,R7,R8)
 119 [-]: GETTABLE  R3 R0 K34    ; R3 := R0["mMultiline"]
@@ -573,7 +573,7 @@
 123 [-]: SELF      R3 R3 K12    ; R4 := R3; R3 := R3[0xc0a3774b]
 124 [-]: GETTABLE  R5 R0 K10    ; R5 := R0["mClipName"]
 125 [-]: LOADK     R6 K32       ; R6 := "Callout.Label"
-126 [-]: CONST     R7 44        ; R7 := 44.000000
+126 [-]: LOADK     R7 44        ; R7 := 44.000000
 127 [-]: GETTABLE  R8 R0 K34    ; R8 := R0["mMultiline"]
 128 [-]: CALL      R3 6 1       ; R3(R4,R5,R6,R7,R8)
 129 [-]: GETTABLE  R3 R0 K2     ; R3 := R0["mMovie"]
@@ -591,7 +591,7 @@
 141 [-]: GETTABLE  R5 R0 K10    ; R5 := R0["mClipName"]
 142 [-]: LOADK     R6 K37       ; R6 := ".Callout.Icon.Tf"
 143 [-]: CONCAT    R5 R5 R6     ; R5 := R5 .. R6
-144 [-]: CONST     R6 33        ; R6 := 33.000000
+144 [-]: LOADK     R6 33        ; R6 := 33.000000
 145 [-]: CALL      R3 4 2       ; R3 := R3(R4,R5,R6)
 146 [-]: EQ        1 R3 K30     ; if R3 == nil then PC := 176
 147 [-]: JMP       176          ; PC := 176
@@ -599,7 +599,7 @@
 149 [-]: SELF      R4 R4 K31    ; R5 := R4; R4 := R4[0xf64b7262]
 150 [-]: GETTABLE  R6 R0 K10    ; R6 := R0["mClipName"]
 151 [-]: LOADK     R7 K32       ; R7 := "Callout.Label"
-152 [-]: CONST     R8 0         ; R8 := 0.000000
+152 [-]: LOADK     R8 0         ; R8 := 0.000000
 153 [-]: DIV       R9 R3 K38    ; R9 := R3 / 2.000000
 154 [-]: GETTABLE  R10 R0 K39   ; R10 := R0["mCalloutSeparation"]
 155 [-]: ADD       R9 R9 R10    ; R9 := R9 + R10
@@ -611,14 +611,14 @@
 161 [-]: GETTABLE  R7 R0 K10    ; R7 := R0["mClipName"]
 162 [-]: LOADK     R8 K40       ; R8 := ".Callout.Label"
 163 [-]: CONCAT    R7 R7 R8     ; R7 := R7 .. R8
-164 [-]: CONST     R8 33        ; R8 := 33.000000
+164 [-]: LOADK     R8 33        ; R8 := 33.000000
 165 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
 166 [-]: ADD       R4 R4 R5     ; R4 := R4 + R5
 167 [-]: GETTABLE  R5 R0 K2     ; R5 := R0["mMovie"]
 168 [-]: SELF      R5 R5 K31    ; R6 := R5; R5 := R5[0xf64b7262]
 169 [-]: GETTABLE  R7 R0 K10    ; R7 := R0["mClipName"]
 170 [-]: LOADK     R8 K41       ; R8 := "Callout"
-171 [-]: CONST     R9 0         ; R9 := 0.000000
+171 [-]: LOADK     R9 0         ; R9 := 0.000000
 172 [-]: UNM       R10 R4       ; R10 := ^ R4
 173 [-]: DIV       R11 R3 K38   ; R11 := R3 / 2.000000
 174 [-]: ADD       R10 R10 R11  ; R10 := R10 + R11
@@ -627,7 +627,7 @@
 177 [-]: SELF      R5 R5 K12    ; R6 := R5; R5 := R5[0xc0a3774b]
 178 [-]: GETTABLE  R7 R0 K10    ; R7 := R0["mClipName"]
 179 [-]: LOADK     R8 K42       ; R8 := "Btn"
-180 [-]: CONST     R9 11        ; R9 := 11.000000
+180 [-]: LOADK     R9 11        ; R9 := 11.000000
 181 [-]: OP_LOADBOOL R10 0 0      ; R10 := false
 182 [-]: CALL      R5 6 1       ; R5(R6,R7,R8,R9,R10)
 183 [-]: JMP       199          ; PC := 199
@@ -643,7 +643,7 @@
 193 [-]: SELF      R5 R5 K12    ; R6 := R5; R5 := R5[0xc0a3774b]
 194 [-]: GETTABLE  R7 R0 K10    ; R7 := R0["mClipName"]
 195 [-]: LOADK     R8 K42       ; R8 := "Btn"
-196 [-]: CONST     R9 11        ; R9 := 11.000000
+196 [-]: LOADK     R9 11        ; R9 := 11.000000
 197 [-]: OP_LOADBOOL R10 1 0      ; R10 := true
 198 [-]: CALL      R5 6 1       ; R5(R6,R7,R8,R9,R10)
 199 [-]: GETTABLE  R5 R0 K4     ; R5 := R0["mNewDesign"]
@@ -653,7 +653,7 @@
 203 [-]: SELF      R5 R5 K31    ; R6 := R5; R5 := R5[0xf64b7262]
 204 [-]: GETTABLE  R7 R0 K10    ; R7 := R0["mClipName"]
 205 [-]: LOADK     R8 K42       ; R8 := "Btn"
-206 [-]: CONST     R9 12        ; R9 := 12.000000
+206 [-]: LOADK     R9 12        ; R9 := 12.000000
 207 [-]: MOVE      R10 R2       ; R10 := R2
 208 [-]: CALL      R5 6 1       ; R5(R6,R7,R8,R9,R10)
 209 [-]: GETTABLE  R5 R0 K36    ; R5 := R0["mReposition"]
@@ -663,14 +663,14 @@
 213 [-]: SELF      R5 R5 K31    ; R6 := R5; R5 := R5[0xf64b7262]
 214 [-]: GETTABLE  R7 R0 K10    ; R7 := R0["mClipName"]
 215 [-]: LOADK     R8 K11       ; R8 := "Label"
-216 [-]: CONST     R9 0         ; R9 := 0.000000
+216 [-]: LOADK     R9 0         ; R9 := 0.000000
 217 [-]: GETTABLE  R10 R0 K47   ; R10 := R0["mPadding"]
 218 [-]: CALL      R5 6 1       ; R5(R6,R7,R8,R9,R10)
 219 [-]: GETTABLE  R5 R0 K2     ; R5 := R0["mMovie"]
 220 [-]: SELF      R5 R5 K31    ; R6 := R5; R5 := R5[0xf64b7262]
 221 [-]: GETTABLE  R7 R0 K10    ; R7 := R0["mClipName"]
 222 [-]: LOADK     R8 K11       ; R8 := "Label"
-223 [-]: CONST     R9 12        ; R9 := 12.000000
+223 [-]: LOADK     R9 12        ; R9 := 12.000000
 224 [-]: GETTABLE  R10 R0 K47   ; R10 := R0["mPadding"]
 225 [-]: MUL       R10 R10 K38  ; R10 := R10 * 2.000000
 226 [-]: SUB       R10 R2 R10   ; R10 := R2 - R10
@@ -679,7 +679,7 @@
 229 [-]: SELF      R5 R5 K9     ; R6 := R5; R5 := R5[0xe261aa96]
 230 [-]: GETTABLE  R7 R0 K10    ; R7 := R0["mClipName"]
 231 [-]: LOADK     R8 K11       ; R8 := "Label"
-232 [-]: CONST     R9 37        ; R9 := 37.000000
+232 [-]: LOADK     R9 37        ; R9 := 37.000000
 233 [-]: GETTABLE  R10 R0 K48   ; R10 := R0["mAlignment"]
 234 [-]: CALL      R5 6 1       ; R5(R6,R7,R8,R9,R10)
 235 [-]: GETTABLE  R5 R0 K49    ; R5 := R0["mApplyMaterials"]
@@ -798,8 +798,8 @@
  46 [-]: CONCAT    R3 R3 R5     ; R3 := R3 .. R4 .. R5
  47 [-]: GETGLOBAL R4 K18       ; R4 := 0x0032441c
  48 [-]: GETTABLE  R4 R4 K19    ; R4 := R4["UIFx_ConsolePress"]
- 49 [-]: CONST     R5 0         ; R5 := 0.000000
- 50 [-]: CONST     R6 0         ; R6 := 0.000000
+ 49 [-]: LOADK     R5 0         ; R5 := 0.000000
+ 50 [-]: LOADK     R6 0         ; R6 := 0.000000
  51 [-]: CALL      R1 6 1       ; R1(R2,R3,R4,R5,R6)
  52 [-]: JMP       70           ; PC := 70
  53 [-]: GETTABLE  R1 R0 K4     ; R1 := R0["UTIL"]
@@ -816,8 +816,8 @@
  64 [-]: CONCAT    R3 R3 R5     ; R3 := R3 .. R4 .. R5
  65 [-]: GETGLOBAL R4 K18       ; R4 := 0x0032441c
  66 [-]: GETTABLE  R4 R4 K19    ; R4 := R4["UIFx_ConsolePress"]
- 67 [-]: CONST     R5 6         ; R5 := 6.000000
- 68 [-]: CONST     R6 2         ; R6 := 2.000000
+ 67 [-]: LOADK     R5 6         ; R5 := 6.000000
+ 68 [-]: LOADK     R6 2         ; R6 := 2.000000
  69 [-]: CALL      R1 6 1       ; R1(R2,R3,R4,R5,R6)
  70 [-]: RETURN    R0 1         ; return 
 
@@ -835,7 +835,7 @@
   2 [-]: GETTABLE  R2 R0 K1     ; R2 := R0["mMovie"]
   3 [-]: SELF      R2 R2 K2     ; R3 := R2; R2 := R2[0xaade900e]
   4 [-]: GETTABLE  R4 R0 K3     ; R4 := R0["mClipName"]
-  5 [-]: CONST     R5 11        ; R5 := 11.000000
+  5 [-]: LOADK     R5 11        ; R5 := 11.000000
   6 [-]: MOVE      R6 R1        ; R6 := R1
   7 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
   8 [-]: RETURN    R0 1         ; return 
@@ -853,7 +853,7 @@
   1 [-]: GETTABLE  R2 R0 K0     ; R2 := R0["mMovie"]
   2 [-]: SELF      R2 R2 K1     ; R3 := R2; R2 := R2[0x67bc869f]
   3 [-]: GETTABLE  R4 R0 K2     ; R4 := R0["mClipName"]
-  4 [-]: CONST     R5 10        ; R5 := 10.000000
+  4 [-]: LOADK     R5 10        ; R5 := 10.000000
   5 [-]: MOVE      R6 R1        ; R6 := R1
   6 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
   7 [-]: RETURN    R0 1         ; return 
@@ -889,19 +889,19 @@
   2 [-]: GETTABLE  R2 R0 K1     ; R2 := R0["mMovie"]
   3 [-]: SELF      R2 R2 K2     ; R3 := R2; R2 := R2[0x67bc869f]
   4 [-]: GETTABLE  R4 R0 K3     ; R4 := R0["mClipName"]
-  5 [-]: CONST     R5 10        ; R5 := 10.000000
+  5 [-]: LOADK     R5 10        ; R5 := 10.000000
   6 [-]: GETTABLE  R6 R0 K4     ; R6 := R0["UTIL"]
   7 [-]: GETTABLE  R6 R6 K5     ; R82 := R6[0x06d055f9]
   8 [-]: GETTABLE  R7 R0 K0     ; R7 := R0["mIsActive"]
-  9 [-]: CONST     R8 100       ; R8 := 100.000000
- 10 [-]: CONST     R9 50        ; R9 := 50.000000
+  9 [-]: LOADK     R8 100       ; R8 := 100.000000
+ 10 [-]: LOADK     R9 50        ; R9 := 50.000000
  11 [-]: CALL      R6 4 0       ; R6,... := R6(R7,R8,R9)
  12 [-]: CALL      R2 0 1       ; R2(R3,...)
  13 [-]: GETTABLE  R2 R0 K1     ; R2 := R0["mMovie"]
  14 [-]: SELF      R2 R2 K6     ; R3 := R2; R2 := R2[0xc0a3774b]
  15 [-]: GETTABLE  R4 R0 K3     ; R4 := R0["mClipName"]
  16 [-]: LOADK     R5 K7        ; R5 := "Btn"
- 17 [-]: CONST     R6 59        ; R6 := 59.000000
+ 17 [-]: LOADK     R6 59        ; R6 := 59.000000
  18 [-]: GETTABLE  R7 R0 K0     ; R7 := R0["mIsActive"]
  19 [-]: CALL      R2 6 1       ; R2(R3,R4,R5,R6,R7)
  20 [-]: SELF      R2 R0 K8     ; R3 := R0; R2 := R0[0x91898e5b]
@@ -922,7 +922,7 @@
   2 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1[0xf64b7262]
   3 [-]: GETTABLE  R3 R0 K2     ; R3 := R0["mClipName"]
   4 [-]: LOADK     R4 K3        ; R4 := "Callout.Tf"
-  5 [-]: CONST     R5 36        ; R5 := 36.000000
+  5 [-]: LOADK     R5 36        ; R5 := 36.000000
   6 [-]: GETGLOBAL R6 K4        ; R6 := 0x0032441c
   7 [-]: GETTABLE  R6 R6 K5     ; R6 := R6["UIColor_White"]
   8 [-]: CALL      R1 6 1       ; R1(R2,R3,R4,R5,R6)
@@ -937,7 +937,7 @@
  17 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1[0xf64b7262]
  18 [-]: GETTABLE  R3 R0 K2     ; R3 := R0["mClipName"]
  19 [-]: LOADK     R4 K8        ; R4 := "Callout.Label"
- 20 [-]: CONST     R5 36        ; R5 := 36.000000
+ 20 [-]: LOADK     R5 36        ; R5 := 36.000000
  21 [-]: GETTABLE  R6 R0 K9     ; R6 := R0["mLabelOffColor"]
  22 [-]: CALL      R1 6 1       ; R1(R2,R3,R4,R5,R6)
  23 [-]: JMP       46           ; PC := 46
@@ -945,7 +945,7 @@
  25 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1[0xf64b7262]
  26 [-]: GETTABLE  R3 R0 K2     ; R3 := R0["mClipName"]
  27 [-]: LOADK     R4 K10       ; R4 := "Label"
- 28 [-]: CONST     R5 36        ; R5 := 36.000000
+ 28 [-]: LOADK     R5 36        ; R5 := 36.000000
  29 [-]: GETTABLE  R6 R0 K11    ; R6 := R0["UTIL"]
  30 [-]: GETTABLE  R6 R6 K12    ; R82 := R6[0x06d055f9]
  31 [-]: GETTABLE  R7 R0 K13    ; R7 := R0["mClickable"]
@@ -967,7 +967,7 @@
  47 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1[0xf64b7262]
  48 [-]: GETTABLE  R3 R0 K2     ; R3 := R0["mClipName"]
  49 [-]: LOADK     R4 K16       ; R4 := "Btn"
- 50 [-]: CONST     R5 9         ; R5 := 9.000000
+ 50 [-]: LOADK     R5 9         ; R5 := 9.000000
  51 [-]: GETTABLE  R6 R0 K15    ; R6 := R0["mButtonOffColor"]
  52 [-]: CALL      R1 6 1       ; R1(R2,R3,R4,R5,R6)
  53 [-]: GETTABLE  R1 R0 K7     ; R1 := R0["mNewDesign"]
@@ -977,8 +977,8 @@
  57 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1[0xf64b7262]
  58 [-]: GETTABLE  R3 R0 K2     ; R3 := R0["mClipName"]
  59 [-]: LOADK     R4 K16       ; R4 := "Btn"
- 60 [-]: CONST     R5 10        ; R5 := 10.000000
- 61 [-]: CONST     R6 90        ; R6 := 90.000000
+ 60 [-]: LOADK     R5 10        ; R5 := 10.000000
+ 61 [-]: LOADK     R6 90        ; R6 := 90.000000
  62 [-]: CALL      R1 6 1       ; R1(R2,R3,R4,R5,R6)
  63 [-]: RETURN    R0 1         ; return 
 
@@ -1011,7 +1011,7 @@
  17 [-]: SELF      R1 R1 K7     ; R2 := R1; R1 := R1[0xf64b7262]
  18 [-]: GETTABLE  R3 R0 K8     ; R3 := R0["mClipName"]
  19 [-]: LOADK     R4 K9        ; R4 := "Callout.Label"
- 20 [-]: CONST     R5 36        ; R5 := 36.000000
+ 20 [-]: LOADK     R5 36        ; R5 := 36.000000
  21 [-]: GETTABLE  R6 R0 K10    ; R6 := R0["mLabelOnColor"]
  22 [-]: CALL      R1 6 1       ; R1(R2,R3,R4,R5,R6)
  23 [-]: JMP       31           ; PC := 31
@@ -1019,14 +1019,14 @@
  25 [-]: SELF      R1 R1 K7     ; R2 := R1; R1 := R1[0xf64b7262]
  26 [-]: GETTABLE  R3 R0 K8     ; R3 := R0["mClipName"]
  27 [-]: LOADK     R4 K11       ; R4 := "Label"
- 28 [-]: CONST     R5 36        ; R5 := 36.000000
+ 28 [-]: LOADK     R5 36        ; R5 := 36.000000
  29 [-]: GETTABLE  R6 R0 K10    ; R6 := R0["mLabelOnColor"]
  30 [-]: CALL      R1 6 1       ; R1(R2,R3,R4,R5,R6)
  31 [-]: GETTABLE  R1 R0 K6     ; R1 := R0["mMovie"]
  32 [-]: SELF      R1 R1 K7     ; R2 := R1; R1 := R1[0xf64b7262]
  33 [-]: GETTABLE  R3 R0 K8     ; R3 := R0["mClipName"]
  34 [-]: LOADK     R4 K12       ; R4 := "Btn"
- 35 [-]: CONST     R5 9         ; R5 := 9.000000
+ 35 [-]: LOADK     R5 9         ; R5 := 9.000000
  36 [-]: GETTABLE  R6 R0 K13    ; R6 := R0["mButtonOnColor"]
  37 [-]: CALL      R1 6 1       ; R1(R2,R3,R4,R5,R6)
  38 [-]: GETTABLE  R1 R0 K5     ; R1 := R0["mNewDesign"]
@@ -1036,8 +1036,8 @@
  42 [-]: SELF      R1 R1 K7     ; R2 := R1; R1 := R1[0xf64b7262]
  43 [-]: GETTABLE  R3 R0 K8     ; R3 := R0["mClipName"]
  44 [-]: LOADK     R4 K12       ; R4 := "Btn"
- 45 [-]: CONST     R5 10        ; R5 := 10.000000
- 46 [-]: CONST     R6 90        ; R6 := 90.000000
+ 45 [-]: LOADK     R5 10        ; R5 := 10.000000
+ 46 [-]: LOADK     R6 90        ; R6 := 90.000000
  47 [-]: CALL      R1 6 1       ; R1(R2,R3,R4,R5,R6)
  48 [-]: SETTABLE  R0 K14 K15   ; R0["mIsFocused"] := true
  49 [-]: GETTABLE  R1 R0 K16    ; R1 := R0["mOnFocusedCallback"]

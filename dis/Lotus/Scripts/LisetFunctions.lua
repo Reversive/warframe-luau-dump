@@ -40,7 +40,7 @@
  11 [-]: CALL      R1 2 2       ; R1 := R1(R2)
  12 [-]: MOVE      R0 R1        ; R0 := R1
  13 [-]: GETGLOBAL R1 K3        ; R1 := 0xcbd666e1
- 14 [-]: CONST     R2 0         ; R2 := 0.000000
+ 14 [-]: LOADK     R2 0         ; R2 := 0.000000
  15 [-]: CALL      R1 2 1       ; R1(R2)
  16 [-]: JMP       4            ; PC := 4
  17 [-]: GETGLOBAL R1 K0        ; R1 := 0x89326c93
@@ -81,7 +81,7 @@
   9 [-]: LOADNIL   R2 R2        ; R2 := nil
  10 [-]: GETGLOBAL R3 K3        ; R3 := 0x76ea806b
  11 [-]: SELF      R3 R3 K4     ; R4 := R3; R3 := R3[0x3f3ae64c]
- 12 [-]: CONST     R5 0         ; R5 := 0.000000
+ 12 [-]: LOADK     R5 0         ; R5 := 0.000000
  13 [-]: OP_LOADBOOL R6 0 0       ; R6 := false
  14 [-]: CALL      R3 4 2       ; R3 := R3(R4,R5,R6)
  15 [-]: GETGLOBAL R4 K5        ; R4 := 0x7b998233
@@ -179,7 +179,7 @@
 107 [-]: TEST      R8 1         ; if R8 then PC := 113
 108 [-]: JMP       113          ; PC := 113
 109 [-]: GETGLOBAL R8 K32       ; R8 := 0xcbd666e1
-110 [-]: CONST     R9 0         ; R9 := 0.000000
+110 [-]: LOADK     R9 0         ; R9 := 0.000000
 111 [-]: CALL      R8 2 1       ; R8(R9)
 112 [-]: JMP       104          ; PC := 104
 113 [-]: GETGLOBAL R8 K33       ; R8 := 0x25d99d89
@@ -231,7 +231,7 @@
 159 [-]: LOADK     R14 K18      ; R14 := "Disable"
 160 [-]: CALL      R12 3 1      ; R12(R13,R14)
 161 [-]: GETGLOBAL R12 K32      ; R12 := 0xcbd666e1
-162 [-]: CONST     R13 0        ; R13 := 0.000000
+162 [-]: LOADK     R13 0        ; R13 := 0.000000
 163 [-]: CALL      R12 2 1      ; R12(R13)
 164 [-]: SELF      R12 R10 K38  ; R13 := R10; R12 := R10[0x3d89c6aa]
 165 [-]: MOVE      R14 R0       ; R14 := R0

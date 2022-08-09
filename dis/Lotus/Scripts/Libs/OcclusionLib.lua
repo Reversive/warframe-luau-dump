@@ -152,15 +152,15 @@
  16 [-]: CALL      R0 2 2       ; R0 := R0(R1)
  17 [-]: TEST      R0 0         ; if not R0 then PC := 30
  18 [-]: JMP       30           ; PC := 30
- 19 [-]: CONST     R0 1         ; R0 := 1.000000
+ 19 [-]: LOADK     R0 1         ; R0 := 1.000000
  20 [-]: GETUPVAL  R1 U0        ; R1 := U0
  21 [-]: LEN       R1 R1        ; R1 := # R1
- 22 [-]: CONST     R2 1         ; R2 := 1.000000
+ 22 [-]: LOADK     R2 1         ; R2 := 1.000000
  23 [-]: FORPREP   R0 29        ; R0 -= R2; PC := 29
  24 [-]: GETUPVAL  R4 U0        ; R4 := U0
  25 [-]: GETTABLE  R4 R4 R3     ; R4 := R4[R3]
  26 [-]: SELF      R4 R4 K5     ; R5 := R4; R4 := R4[0x62d9cc22]
- 27 [-]: CONST     R6 1         ; R6 := 1.000000
+ 27 [-]: LOADK     R6 1         ; R6 := 1.000000
  28 [-]: CALL      R4 3 1       ; R4(R5,R6)
  29 [-]: FORLOOP   R0 24        ; R0 += R2; if R0 <= R1 then begin PC := 24; R3 := R0 end
  30 [-]: GETGLOBAL R4 K1        ; R4 := _T
@@ -206,15 +206,15 @@
  24 [-]: CALL      R0 2 2       ; R0 := R0(R1)
  25 [-]: TEST      R0 0         ; if not R0 then PC := 38
  26 [-]: JMP       38           ; PC := 38
- 27 [-]: CONST     R0 1         ; R0 := 1.000000
+ 27 [-]: LOADK     R0 1         ; R0 := 1.000000
  28 [-]: GETUPVAL  R1 U0        ; R1 := U0
  29 [-]: LEN       R1 R1        ; R1 := # R1
- 30 [-]: CONST     R2 1         ; R2 := 1.000000
+ 30 [-]: LOADK     R2 1         ; R2 := 1.000000
  31 [-]: FORPREP   R0 37        ; R0 -= R2; PC := 37
  32 [-]: GETUPVAL  R4 U0        ; R4 := U0
  33 [-]: GETTABLE  R4 R4 R3     ; R4 := R4[R3]
  34 [-]: SELF      R4 R4 K6     ; R5 := R4; R4 := R4[0x62d9cc22]
- 35 [-]: CONST     R6 0         ; R6 := 0.000000
+ 35 [-]: LOADK     R6 0         ; R6 := 0.000000
  36 [-]: CALL      R4 3 1       ; R4(R5,R6)
  37 [-]: FORLOOP   R0 32        ; R0 += R2; if R0 <= R1 then begin PC := 32; R3 := R0 end
  38 [-]: RETURN    R0 1         ; return 
@@ -258,15 +258,15 @@
  27 [-]: GETTABLE  R0 R0 K6     ; R0 := R0["occlusionBias"]
  28 [-]: LT        0 K4 R0      ; if 0.000000 >= R0 then PC := 41
  29 [-]: JMP       41           ; PC := 41
- 30 [-]: CONST     R0 1         ; R0 := 1.000000
+ 30 [-]: LOADK     R0 1         ; R0 := 1.000000
  31 [-]: GETUPVAL  R1 U0        ; R1 := U0
  32 [-]: LEN       R1 R1        ; R1 := # R1
- 33 [-]: CONST     R2 1         ; R2 := 1.000000
+ 33 [-]: LOADK     R2 1         ; R2 := 1.000000
  34 [-]: FORPREP   R0 40        ; R0 -= R2; PC := 40
  35 [-]: GETUPVAL  R4 U0        ; R4 := U0
  36 [-]: GETTABLE  R4 R4 R3     ; R4 := R4[R3]
  37 [-]: SELF      R4 R4 K7     ; R5 := R4; R4 := R4[0x62d9cc22]
- 38 [-]: CONST     R6 1         ; R6 := 1.000000
+ 38 [-]: LOADK     R6 1         ; R6 := 1.000000
  39 [-]: CALL      R4 3 1       ; R4(R5,R6)
  40 [-]: FORLOOP   R0 35        ; R0 += R2; if R0 <= R1 then begin PC := 35; R3 := R0 end
  41 [-]: RETURN    R0 1         ; return 
@@ -306,15 +306,15 @@
  23 [-]: GETTABLE  R0 R0 K4     ; R0 := R0["occlusionBias"]
  24 [-]: LT        0 K5 R0      ; if 0.000000 >= R0 then PC := 37
  25 [-]: JMP       37           ; PC := 37
- 26 [-]: CONST     R0 1         ; R0 := 1.000000
+ 26 [-]: LOADK     R0 1         ; R0 := 1.000000
  27 [-]: GETUPVAL  R1 U0        ; R1 := U0
  28 [-]: LEN       R1 R1        ; R1 := # R1
- 29 [-]: CONST     R2 1         ; R2 := 1.000000
+ 29 [-]: LOADK     R2 1         ; R2 := 1.000000
  30 [-]: FORPREP   R0 36        ; R0 -= R2; PC := 36
  31 [-]: GETUPVAL  R4 U0        ; R4 := U0
  32 [-]: GETTABLE  R4 R4 R3     ; R4 := R4[R3]
  33 [-]: SELF      R4 R4 K6     ; R5 := R4; R4 := R4[0x62d9cc22]
- 34 [-]: CONST     R6 0         ; R6 := 0.000000
+ 34 [-]: LOADK     R6 0         ; R6 := 0.000000
  35 [-]: CALL      R4 3 1       ; R4(R5,R6)
  36 [-]: FORLOOP   R0 31        ; R0 += R2; if R0 <= R1 then begin PC := 31; R3 := R0 end
  37 [-]: RETURN    R0 1         ; return 

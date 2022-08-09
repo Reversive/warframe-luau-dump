@@ -102,10 +102,10 @@
  75 [-]: SELF      R3 R2 K34    ; R4 := R2; R3 := R2[0x66905cb0]
  76 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  77 [-]: SELF      R4 R3 K35    ; R5 := R3; R4 := R3[0x3ea76f0c]
- 78 [-]: CONST     R6 0         ; R6 := 0.000000
+ 78 [-]: LOADK     R6 0         ; R6 := 0.000000
  79 [-]: CALL      R4 3 1       ; R4(R5,R6)
  80 [-]: SELF      R4 R3 K36    ; R5 := R3; R4 := R3[0xa0581893]
- 81 [-]: CONST     R6 0         ; R6 := 0.000000
+ 81 [-]: LOADK     R6 0         ; R6 := 0.000000
  82 [-]: CALL      R4 3 1       ; R4(R5,R6)
  83 [-]: GETGLOBAL R4 K37       ; R4 := 0x51458ac5
  84 [-]: TEST      R4 0         ; if not R4 then PC := 92
@@ -173,7 +173,7 @@
 146 [-]: GETGLOBAL R19 K58      ; R19 := 0xbe190284
 147 [-]: SELF      R19 R19 K59  ; R20 := R19; R19 := R19[0x751f061d]
 148 [-]: MOVE      R21 R18      ; R21 := R18
-149 [-]: CONST     R22 1        ; R22 := 1.000000
+149 [-]: LOADK     R22 1        ; R22 := 1.000000
 150 [-]: CALL      R19 4 1      ; R19(R20,R21,R22)
 151 [-]: GETGLOBAL R19 K44      ; R19 := 0xc8802016
 152 [-]: GETGLOBAL R20 K60      ; R20 := 0xe1017d9a
@@ -183,7 +183,7 @@
 156 [-]: SELF      R24 R24 K61  ; R25 := R24; R24 := R24[0xe42ed075]
 157 [-]: MOVE      R26 R23      ; R26 := R23
 158 [-]: LOADNIL   R27 R27      ; R27 := nil
-159 [-]: CONST     R28 0        ; R28 := 0.000000
+159 [-]: LOADK     R28 0        ; R28 := 0.000000
 160 [-]: CALL      R24 5 1      ; R24(R25,R26,R27,R28)
 161 [-]: TFORLOOP  R19 2        ; R22,R23 :=  R19(R20,R21); if R22 ~= nil then begin PC = 155; R21 := R22 end
 162 [-]: JMP       155          ; PC := 155

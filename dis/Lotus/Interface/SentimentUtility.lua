@@ -83,14 +83,14 @@
  15 [-]: GETTABLE  R1 R1 R0     ; R1 := R1[R0]
  16 [-]: RETURN    R1 2         ; return R1
  17 [-]: NEWTABLE  R1 8 0       ; R1 := {}
- 18 [-]: CONST     R2 0         ; R2 := 0.750000
- 19 [-]: CONST     R3 0         ; R3 := 0.000000
- 20 [-]: CONST     R4 0         ; R4 := 0.000000
- 21 [-]: CONST     R5 0         ; R5 := 0.000000
- 22 [-]: CONST     R6 0         ; R6 := 0.000000
- 23 [-]: CONST     R7 0         ; R7 := 0.000000
- 24 [-]: CONST     R8 0         ; R8 := 0.000000
- 25 [-]: CONST     R9 0         ; R9 := 0.000000
+ 18 [-]: LOADK     R2 0         ; R2 := 0.750000
+ 19 [-]: LOADK     R3 0         ; R3 := 0.000000
+ 20 [-]: LOADK     R4 0         ; R4 := 0.000000
+ 21 [-]: LOADK     R5 0         ; R5 := 0.000000
+ 22 [-]: LOADK     R6 0         ; R6 := 0.000000
+ 23 [-]: LOADK     R7 0         ; R7 := 0.000000
+ 24 [-]: LOADK     R8 0         ; R8 := 0.000000
+ 25 [-]: LOADK     R9 0         ; R9 := 0.000000
  26 [-]: SETLIST   R1 8 1       ; R1[(1-1)*FPF+i] := R(1+i), 1 <= i <= 8
  27 [-]: GETGLOBAL R2 K3        ; R2 := 0x7f5022cf
  28 [-]: GETTABLE  R2 R2 K4     ; R82 := R2[0x04981ab3]
@@ -107,10 +107,10 @@
  39 [-]: GETTABLE  R3 R3 R4     ; R3 := R3[R4]
  40 [-]: TEST      R3 0         ; if not R3 then PC := 75
  41 [-]: JMP       75           ; PC := 75
- 42 [-]: CONST     R3 1         ; R3 := 1.000000
+ 42 [-]: LOADK     R3 1         ; R3 := 1.000000
  43 [-]: GETUPVAL  R4 U1        ; R4 := U1
  44 [-]: LEN       R4 R4        ; R4 := # R4
- 45 [-]: CONST     R5 1         ; R5 := 1.000000
+ 45 [-]: LOADK     R5 1         ; R5 := 1.000000
  46 [-]: FORPREP   R3 73        ; R3 -= R5; PC := 73
  47 [-]: GETGLOBAL R7 K8        ; R7 := 0xc8802016
  48 [-]: GETGLOBAL R8 K9        ; R8 := 0x015284cd
@@ -150,10 +150,10 @@
  82 [-]: MOVE      R17 R15      ; R17 := R15
  83 [-]: LOADK     R18 K10      ; R18 := ";"
  84 [-]: CONCAT    R15 R16 R18  ; R15 := R16 .. R17 .. R18
- 85 [-]: CONST     R16 1        ; R16 := 1.000000
+ 85 [-]: LOADK     R16 1        ; R16 := 1.000000
  86 [-]: GETUPVAL  R17 U1       ; R17 := U1
  87 [-]: LEN       R17 R17      ; R17 := # R17
- 88 [-]: CONST     R18 1        ; R18 := 1.000000
+ 88 [-]: LOADK     R18 1        ; R18 := 1.000000
  89 [-]: FORPREP   R16 105      ; R16 -= R18; PC := 105
  90 [-]: GETGLOBAL R20 K3       ; R20 := 0x7f5022cf
  91 [-]: GETTABLE  R20 R20 K12  ; R82 := R20[0xa5c556b9]
@@ -173,11 +173,11 @@
 105 [-]: FORLOOP   R16 90       ; R16 += R18; if R16 <= R17 then begin PC := 90; R19 := R16 end
 106 [-]: TFORLOOP  R12 1        ; R15 :=  R12(R13,R14); if R15 ~= nil then begin PC = 81; R14 := R15 end
 107 [-]: JMP       81           ; PC := 81
-108 [-]: CONST     R20 1        ; R20 := 1.000000
+108 [-]: LOADK     R20 1        ; R20 := 1.000000
 109 [-]: GETTABLE  R21 R1 R20   ; R21 := R1[R20]
-110 [-]: CONST     R22 1        ; R22 := 1.000000
+110 [-]: LOADK     R22 1        ; R22 := 1.000000
 111 [-]: LEN       R23 R1       ; R23 := # R1
-112 [-]: CONST     R24 1        ; R24 := 1.000000
+112 [-]: LOADK     R24 1        ; R24 := 1.000000
 113 [-]: FORPREP   R22 119      ; R22 -= R24; PC := 119
 114 [-]: GETTABLE  R26 R1 R25   ; R26 := R1[R25]
 115 [-]: LT        0 R21 R26    ; if R21 >= R26 then PC := 119

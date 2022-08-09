@@ -298,7 +298,7 @@
   7 [-]: RETURN    R0 1         ; return 
   8 [-]: GETGLOBAL R0 K3        ; R0 := 0x76ea806b
   9 [-]: SELF      R0 R0 K4     ; R1 := R0; R0 := R0[0x3f3ae64c]
- 10 [-]: CONST     R2 0         ; R2 := 0.000000
+ 10 [-]: LOADK     R2 0         ; R2 := 0.000000
  11 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
  12 [-]: GETGLOBAL R1 K5        ; R1 := 0x7b998233
  13 [-]: MOVE      R2 R0        ; R2 := R0
@@ -336,7 +336,7 @@
  45 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
  46 [-]: GETGLOBAL R6 K12       ; R6 := 0x5bced4c4
  47 [-]: GETTABLE  R6 R6 K13    ; R82 := R6[0xb62ecfe0]
- 48 [-]: CONST     R7 0         ; R7 := 0.000000
+ 48 [-]: LOADK     R7 0         ; R7 := 0.000000
  49 [-]: SUB       R8 R5 R4     ; R8 := R5 - R4
  50 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
  51 [-]: EQ        1 R6 K14     ; if R6 == 0.000000 then PC := 54
@@ -351,15 +351,15 @@
  60 [-]: GETTABLE  R9 R9 K19    ; R9 := R9["mDojo"]
  61 [-]: SELF      R9 R9 K20    ; R10 := R9; R9 := R9[0x43c3090e]
  62 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 63 [-]: CONST     R10 1        ; R10 := 1.000000
+ 63 [-]: LOADK     R10 1        ; R10 := 1.000000
  64 [-]: LEN       R11 R9       ; R11 := # R9
- 65 [-]: CONST     R12 1        ; R12 := 1.000000
+ 65 [-]: LOADK     R12 1        ; R12 := 1.000000
  66 [-]: FORPREP   R10 83       ; R10 -= R12; PC := 83
  67 [-]: GETTABLE  R14 R9 R13   ; R14 := R9[R13]
  68 [-]: GETTABLE  R14 R14 K21  ; R14 := R14["placedDecos"]
- 69 [-]: CONST     R15 1        ; R15 := 1.000000
+ 69 [-]: LOADK     R15 1        ; R15 := 1.000000
  70 [-]: LEN       R16 R14      ; R16 := # R14
- 71 [-]: CONST     R17 1        ; R17 := 1.000000
+ 71 [-]: LOADK     R17 1        ; R17 := 1.000000
  72 [-]: FORPREP   R15 79       ; R15 -= R17; PC := 79
  73 [-]: GETTABLE  R19 R14 R18  ; R19 := R14[R18]
  74 [-]: GETTABLE  R19 R19 K22  ; R19 := R19["decoType"]
@@ -376,7 +376,7 @@
  85 [-]: JMP       117          ; PC := 117
  86 [-]: LOADK     R19 K23      ; R19 := "/Lotus/Language/Menu/Notification_DojoRankUpDeviceNeeded"
  87 [-]: LOADK     R20 K24      ; R20 := "Alert"
- 88 [-]: CONST     R21 10       ; R21 := 10.000000
+ 88 [-]: LOADK     R21 10       ; R21 := 10.000000
  89 [-]: GETGLOBAL R22 K17      ; R22 := _T
  90 [-]: GETTABLE  R22 R22 K25  ; R22 := R22["ShowNotification"]
  91 [-]: EQ        1 R22 K26    ; if R22 == nil then PC := 101
@@ -452,9 +452,9 @@
  15 [-]: LOADK     R7 K7        ; R7 := "DojoComponentPanel"
  16 [-]: CALL      R6 2 0       ; R6,... := R6(R7)
  17 [-]: CALL      R4 0 2       ; R4 := R4(R5,...)
- 18 [-]: CONST     R5 1         ; R5 := 1.000000
+ 18 [-]: LOADK     R5 1         ; R5 := 1.000000
  19 [-]: LEN       R6 R4        ; R6 := # R4
- 20 [-]: CONST     R7 1         ; R7 := 1.000000
+ 20 [-]: LOADK     R7 1         ; R7 := 1.000000
  21 [-]: FORPREP   R5 25        ; R5 -= R7; PC := 25
  22 [-]: GETTABLE  R9 R4 R8     ; R9 := R4[R8]
  23 [-]: SELF      R9 R9 K8     ; R10 := R9; R9 := R9[0xa2880940]
@@ -536,7 +536,7 @@
  99 [-]: GETTABLE  R11 R11 K11  ; R11 := R11["DojoMgr"]
 100 [-]: SELF      R11 R11 K27  ; R12 := R11; R11 := R11[0x0311b020]
 101 [-]: GETUPVAL  R13 U0       ; R13 := U0
-102 [-]: CONST     R14 0        ; R14 := 0.000000
+102 [-]: LOADK     R14 0        ; R14 := 0.000000
 103 [-]: CALL      R11 4 1      ; R11(R12,R13,R14)
 104 [-]: JMP       124          ; PC := 124
 105 [-]: GETGLOBAL R11 K10      ; R11 := _T
@@ -550,7 +550,7 @@
 113 [-]: GETTABLE  R11 R11 K11  ; R11 := R11["DojoMgr"]
 114 [-]: SELF      R11 R11 K27  ; R12 := R11; R11 := R11[0x0311b020]
 115 [-]: GETUPVAL  R13 U0       ; R13 := U0
-116 [-]: CONST     R14 0        ; R14 := 0.000000
+116 [-]: LOADK     R14 0        ; R14 := 0.000000
 117 [-]: CALL      R11 4 1      ; R11(R12,R13,R14)
 118 [-]: JMP       124          ; PC := 124
 119 [-]: GETGLOBAL R11 K10      ; R11 := _T
@@ -997,7 +997,7 @@
  14 [-]: GETTABLE  R2 R2 K3     ; R2 := R2["PrevPlacedDecoInfo"]
  15 [-]: GETTABLE  R2 R2 K4     ; R2 := R2["Count"]
  16 [-]: SUB       R2 R2 K7     ; R2 := R2 - 1.000000
- 17 [-]: CONST     R3 0         ; R3 := 0.000000
+ 17 [-]: LOADK     R3 0         ; R3 := 0.000000
  18 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
  19 [-]: SETTABLE  R0 K4 R1     ; R0["Count"] := R1
  20 [-]: GETGLOBAL R0 K0        ; R0 := _T
@@ -1239,7 +1239,7 @@
  52 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  53 [-]: TEST      R3 1         ; if R3 then PC := 91
  54 [-]: JMP       91           ; PC := 91
- 55 [-]: CONST     R3 255       ; R3 := 255.000000
+ 55 [-]: LOADK     R3 255       ; R3 := 255.000000
  56 [-]: GETGLOBAL R4 K1        ; R4 := _T
  57 [-]: GETTABLE  R4 R4 K26    ; R4 := R4["PlacedDecoSocketInfo"]
  58 [-]: EQ        1 R4 K27     ; if R4 == nil then PC := 64
@@ -1250,7 +1250,7 @@
  63 [-]: SETTABLE  R4 K26 K27   ; R4["PlacedDecoSocketInfo"] := nil
  64 [-]: GETGLOBAL R4 K28       ; R4 := 0x76ea806b
  65 [-]: SELF      R4 R4 K29    ; R5 := R4; R4 := R4[0x3f3ae64c]
- 66 [-]: CONST     R6 0         ; R6 := 0.000000
+ 66 [-]: LOADK     R6 0         ; R6 := 0.000000
  67 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
  68 [-]: GETGLOBAL R5 K0        ; R5 := 0x7b998233
  69 [-]: MOVE      R6 R4        ; R6 := R4
@@ -1328,7 +1328,7 @@
 141 [-]: CALL      R6 2 2       ; R6 := R6(R7)
 142 [-]: TEST      R6 1         ; if R6 then PC := 223
 143 [-]: JMP       223          ; PC := 223
-144 [-]: CONST     R6 1         ; R6 := 1.000000
+144 [-]: LOADK     R6 1         ; R6 := 1.000000
 145 [-]: OP_LOADBOOL R7 1 0       ; R7 := true
 146 [-]: GETGLOBAL R8 K1        ; R8 := _T
 147 [-]: GETTABLE  R8 R8 K43    ; R8 := R8["DojoPlacingRecipe"]
@@ -1375,9 +1375,9 @@
 188 [-]: MOVE      R15 R12      ; R15 := R12
 189 [-]: CALL      R13 3 2      ; R13 := R13(R14,R15)
 190 [-]: GETTABLE  R14 R13 K53  ; R14 := R13["placedDecos"]
-191 [-]: CONST     R15 1        ; R15 := 1.000000
+191 [-]: LOADK     R15 1        ; R15 := 1.000000
 192 [-]: LEN       R16 R14      ; R16 := # R14
-193 [-]: CONST     R17 1        ; R17 := 1.000000
+193 [-]: LOADK     R17 1        ; R17 := 1.000000
 194 [-]: FORPREP   R15 205      ; R15 -= R17; PC := 205
 195 [-]: GETTABLE  R19 R14 R18  ; R19 := R14[R18]
 196 [-]: GETGLOBAL R20 K0       ; R20 := 0x7b998233
@@ -1552,7 +1552,7 @@
  62 [-]: MOVE      R0 R4        ; R0 := R4
  63 [-]: GETGLOBAL R4 K18       ; R4 := 0x09423272
  64 [-]: MOVE      R5 R0        ; R5 := R0
- 65 [-]: CONST     R6 0         ; R6 := 0.000000
+ 65 [-]: LOADK     R6 0         ; R6 := 0.000000
  66 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
  67 [-]: EQ        1 R4 R0      ; if R4 == R0 then PC := 73
  68 [-]: JMP       73           ; PC := 73
@@ -1565,22 +1565,22 @@
  75 [-]: GETTABLE  R5 R5 K23    ; R5 := R5["mDojo"]
  76 [-]: SELF      R5 R5 K24    ; R6 := R5; R5 := R5[0x43c3090e]
  77 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 78 [-]: CONST     R6 1         ; R6 := 1.000000
+ 78 [-]: LOADK     R6 1         ; R6 := 1.000000
  79 [-]: LEN       R7 R5        ; R7 := # R5
- 80 [-]: CONST     R8 1         ; R8 := 1.000000
+ 80 [-]: LOADK     R8 1         ; R8 := 1.000000
  81 [-]: FORPREP   R6 98        ; R6 -= R8; PC := 98
  82 [-]: GETTABLE  R10 R5 R9    ; R10 := R5[R9]
  83 [-]: GETTABLE  R10 R10 K25  ; R10 := R10["placedDecos"]
- 84 [-]: CONST     R11 1        ; R11 := 1.000000
+ 84 [-]: LOADK     R11 1        ; R11 := 1.000000
  85 [-]: LEN       R12 R10      ; R12 := # R10
- 86 [-]: CONST     R13 1        ; R13 := 1.000000
+ 86 [-]: LOADK     R13 1        ; R13 := 1.000000
  87 [-]: FORPREP   R11 97       ; R11 -= R13; PC := 97
  88 [-]: GETTABLE  R15 R10 R14  ; R15 := R10[R14]
  89 [-]: GETTABLE  R15 R15 K26  ; R15 := R15["name"]
  90 [-]: EQ        0 R15 R0     ; if R15 ~= R0 then PC := 97
  91 [-]: JMP       97           ; PC := 97
  92 [-]: GETUPVAL  R15 U2       ; R15 := U2
- 93 [-]: CONST     R16 8        ; R16 := 8.000000
+ 93 [-]: LOADK     R16 8        ; R16 := 8.000000
  94 [-]: LOADK     R17 K0       ; R17 := ""
  95 [-]: CALL      R15 3 1      ; R15(R16,R17)
  96 [-]: RETURN    R0 1         ; return 
@@ -1766,7 +1766,7 @@
  42 [-]: LOADNIL   R2 R2        ; R2 := nil
  43 [-]: LOADK     R3 K14       ; R3 := "/Lotus/Language/Dojo/NameDeco"
  44 [-]: LOADK     R4 K15       ; R4 := ""
- 45 [-]: CONST     R5 40        ; R5 := 40.000000
+ 45 [-]: LOADK     R5 40        ; R5 := 40.000000
  46 [-]: LOADK     R6 K12       ; R6 := "OnDecoNamed"
  47 [-]: LOADK     R7 K16       ; R7 := "OSKOnDecoNamed"
  48 [-]: CALL      R1 7 1       ; R1(R2,R3,R4,R5,R6,R7)
@@ -2563,7 +2563,7 @@
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x76ea806b
   2 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0x3f3ae64c]
-  3 [-]: CONST     R2 0         ; R2 := 0.000000
+  3 [-]: LOADK     R2 0         ; R2 := 0.000000
   4 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
   5 [-]: GETGLOBAL R1 K2        ; R1 := 0x7b998233
   6 [-]: MOVE      R2 R0        ; R2 := R0
@@ -2610,7 +2610,7 @@
  47 [-]: CALL      R7 2 2       ; R7 := R7(R8)
  48 [-]: EQ        0 R2 R7      ; if R2 ~= R7 then PC := 52
  49 [-]: JMP       52           ; PC := 52
- 50 [-]: CONST     R6 0         ; R6 := 0.000000
+ 50 [-]: LOADK     R6 0         ; R6 := 0.000000
  51 [-]: JMP       61           ; PC := 61
  52 [-]: GETGLOBAL R7 K11       ; R7 := 0x0032441c
  53 [-]: GETTABLE  R7 R7 K12    ; R7 := R7["CapacityCost"]
@@ -2796,7 +2796,7 @@
 233 [-]: GETGLOBAL R16 K45      ; R16 := 0x33201ebb
 234 [-]: CALL      R14 3 2      ; R14 := R14(R15,R16)
 235 [-]: SETTABLE  R13 K40 R14  ; R13[0xfbb39a9e] := R14
-236 [-]: CONST     R13 255      ; R13 := 255.000000
+236 [-]: LOADK     R13 255      ; R13 := 255.000000
 237 [-]: GETGLOBAL R14 K5       ; R14 := _T
 238 [-]: GETTABLE  R14 R14 K46  ; R14 := R14["PlacedDecoSocketInfo"]
 239 [-]: EQ        1 R14 K15    ; if R14 == nil then PC := 245
@@ -3007,7 +3007,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  50
 
-  1 [-]: CONST     R9 0         ; R9 := 0.000000
+  1 [-]: LOADK     R9 0         ; R9 := 0.000000
   2 [-]: GETGLOBAL R10 K0       ; R10 := 0x7b998233
   3 [-]: GETGLOBAL R11 K1       ; R11 := _T
   4 [-]: GETTABLE  R11 R11 K2   ; R11 := R11["DojoMgr"]
@@ -3016,7 +3016,7 @@
   7 [-]: JMP       42           ; PC := 42
   8 [-]: GETGLOBAL R10 K3       ; R10 := 0x76ea806b
   9 [-]: SELF      R10 R10 K4   ; R11 := R10; R10 := R10[0x3f3ae64c]
- 10 [-]: CONST     R12 0        ; R12 := 0.000000
+ 10 [-]: LOADK     R12 0        ; R12 := 0.000000
  11 [-]: CALL      R10 3 2      ; R10 := R10(R11,R12)
  12 [-]: GETGLOBAL R11 K0       ; R11 := 0x7b998233
  13 [-]: MOVE      R12 R10      ; R12 := R10
@@ -3214,10 +3214,10 @@
 205 [-]: CALL      R31 3 2      ; R31 := R31(R32,R33)
 206 [-]: MOVE      R28 R31      ; R28 := R31
 207 [-]: JMP       229          ; PC := 229
-208 [-]: CONST     R31 2        ; R31 := 2.000000
+208 [-]: LOADK     R31 2        ; R31 := 2.000000
 209 [-]: TEST      R25 0        ; if not R25 then PC := 218
 210 [-]: JMP       218          ; PC := 218
-211 [-]: CONST     R31 0        ; R31 := 0.000000
+211 [-]: LOADK     R31 0        ; R31 := 0.000000
 212 [-]: GETGLOBAL R32 K40      ; R32 := 0x603636ad
 213 [-]: LOADK     R33 K53      ; R33 := "/Lotus/Language/UiElements/PLACEMENT_DEGREES"
 214 [-]: LOADNIL   R34 R34      ; R34 := nil
@@ -3353,10 +3353,10 @@
 344 [-]: CALL      R42 3 2      ; R42 := R42(R43,R44)
 345 [-]: MOVE      R39 R42      ; R39 := R42
 346 [-]: JMP       368          ; PC := 368
-347 [-]: CONST     R42 2        ; R42 := 2.000000
+347 [-]: LOADK     R42 2        ; R42 := 2.000000
 348 [-]: TEST      R34 0        ; if not R34 then PC := 357
 349 [-]: JMP       357          ; PC := 357
-350 [-]: CONST     R42 0        ; R42 := 0.000000
+350 [-]: LOADK     R42 0        ; R42 := 0.000000
 351 [-]: GETGLOBAL R43 K40      ; R43 := 0x603636ad
 352 [-]: LOADK     R44 K53      ; R44 := "/Lotus/Language/UiElements/PLACEMENT_DEGREES"
 353 [-]: LOADNIL   R45 R45      ; R45 := nil
@@ -3535,7 +3535,7 @@
 
   1 [-]: GETGLOBAL R2 K0        ; R2 := 0x76ea806b
   2 [-]: SELF      R2 R2 K1     ; R3 := R2; R2 := R2[0x3f3ae64c]
-  3 [-]: CONST     R4 0         ; R4 := 0.000000
+  3 [-]: LOADK     R4 0         ; R4 := 0.000000
   4 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
   5 [-]: GETGLOBAL R3 K2        ; R3 := 0x7b998233
   6 [-]: MOVE      R4 R2        ; R4 := R2
@@ -3554,7 +3554,7 @@
  19 [-]: GETUPVAL  R4 U0        ; R4 := U0
  20 [-]: GETTABLE  R4 R4 K4     ; R82 := R4[0xb73d420f]
  21 [-]: CALL      R4 1 2       ; R4 := R4()
- 22 [-]: CONST     R5 0         ; R5 := 0.000000
+ 22 [-]: LOADK     R5 0         ; R5 := 0.000000
  23 [-]: LOADK     R6 K5        ; R6 := 999999.000000
  24 [-]: GETTABLE  R7 R0 K6     ; R7 := R0["StoreItem"]
  25 [-]: GETGLOBAL R8 K2        ; R8 := 0x7b998233
@@ -3730,7 +3730,7 @@
   2 [-]: SETTABLE  R1 K1 K2     ; R1["PlacingShipDeco"] := true
   3 [-]: GETGLOBAL R1 K3        ; R1 := 0x76ea806b
   4 [-]: SELF      R1 R1 K4     ; R2 := R1; R1 := R1[0x3f3ae64c]
-  5 [-]: CONST     R3 0         ; R3 := 0.000000
+  5 [-]: LOADK     R3 0         ; R3 := 0.000000
   6 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
   7 [-]: GETGLOBAL R2 K5        ; R2 := 0x7b998233
   8 [-]: MOVE      R3 R1        ; R3 := R1
@@ -3749,7 +3749,7 @@
  21 [-]: GETUPVAL  R3 U0        ; R3 := U0
  22 [-]: GETTABLE  R3 R3 K7     ; R82 := R3[0xb73d420f]
  23 [-]: CALL      R3 1 2       ; R3 := R3()
- 24 [-]: CONST     R4 0         ; R4 := 0.000000
+ 24 [-]: LOADK     R4 0         ; R4 := 0.000000
  25 [-]: GETTABLE  R5 R0 K8     ; R5 := R0["capacityCost"]
  26 [-]: GETGLOBAL R6 K5        ; R6 := 0x7b998233
  27 [-]: GETGLOBAL R7 K0        ; R7 := _T
@@ -3836,7 +3836,7 @@
 108 [-]: GETGLOBAL R11 K39      ; R11 := 0x33bdd652
 109 [-]: GETTABLE  R11 R11 K40  ; R82 := R11[0x9c1f3b5a]
 110 [-]: GETTABLE  R12 R0 K36   ; R12 := R0["TreasureIds"]
-111 [-]: CONST     R13 1        ; R13 := 1.000000
+111 [-]: LOADK     R13 1        ; R13 := 1.000000
 112 [-]: CALL      R11 3 1      ; R11(R12,R13)
 113 [-]: GETGLOBAL R11 K0       ; R11 := _T
 114 [-]: GETTABLE  R11 R11 K25  ; R11 := R11["ShipDecoItemInfo"]
@@ -3871,8 +3871,8 @@
 143 [-]: NEWTABLE  R17 0 0      ; R17 := {}
 144 [-]: LOADK     R18 K45      ; R18 := ""
 145 [-]: GETGLOBAL R19 K46      ; R19 := 0xb7cbd06b
-146 [-]: CONST     R20 1        ; R20 := 1.000000
-147 [-]: CONST     R21 1        ; R21 := 1.000000
+146 [-]: LOADK     R20 1        ; R20 := 1.000000
+147 [-]: LOADK     R21 1        ; R21 := 1.000000
 148 [-]: CALL      R19 3 2      ; R19 := R19(R20,R21)
 149 [-]: OP_LOADBOOL R20 0 0      ; R20 := false
 150 [-]: CALL      R14 7 1      ; R14(R15,R16,R17,R18,R19,R20)
@@ -3895,8 +3895,8 @@
 167 [-]: GETTABLE  R19 R19 R20  ; R19 := R19[R20]
 168 [-]: GETTABLE  R20 R15 K48  ; R20 := R15["id"]
 169 [-]: GETGLOBAL R21 K46      ; R21 := 0xb7cbd06b
-170 [-]: CONST     R22 1        ; R22 := 1.000000
-171 [-]: CONST     R23 1        ; R23 := 1.000000
+170 [-]: LOADK     R22 1        ; R22 := 1.000000
+171 [-]: LOADK     R23 1        ; R23 := 1.000000
 172 [-]: CALL      R21 3 2      ; R21 := R21(R22,R23)
 173 [-]: OP_LOADBOOL R22 0 0      ; R22 := false
 174 [-]: CALL      R16 7 1      ; R16(R17,R18,R19,R20,R21,R22)
@@ -3916,7 +3916,7 @@
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x76ea806b
   2 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0x3f3ae64c]
-  3 [-]: CONST     R2 0         ; R2 := 0.000000
+  3 [-]: LOADK     R2 0         ; R2 := 0.000000
   4 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
   5 [-]: GETGLOBAL R1 K2        ; R1 := 0x7b998233
   6 [-]: MOVE      R2 R0        ; R2 := R0
@@ -3932,7 +3932,7 @@
  16 [-]: TEST      R2 0         ; if not R2 then PC := 19
  17 [-]: JMP       19           ; PC := 19
  18 [-]: RETURN    R0 1         ; return 
- 19 [-]: CONST     R2 0         ; R2 := 0.000000
+ 19 [-]: LOADK     R2 0         ; R2 := 0.000000
  20 [-]: GETGLOBAL R3 K2        ; R3 := 0x7b998233
  21 [-]: GETGLOBAL R4 K4        ; R4 := _T
  22 [-]: GETTABLE  R4 R4 K5     ; R4 := R4["DojoMgr"]
@@ -4038,7 +4038,7 @@
 122 [-]: CALL      R10 4 1      ; R10(R11,R12,R13)
 123 [-]: SELF      R10 R8 K24   ; R11 := R8; R10 := R8[0xe4162eed]
 124 [-]: LOADK     R12 K38      ; R12 := "SetHideCountThreshold"
-125 [-]: CONST     R13 0        ; R13 := 0.000000
+125 [-]: LOADK     R13 0        ; R13 := 0.000000
 126 [-]: CALL      R10 4 1      ; R10(R11,R12,R13)
 127 [-]: SELF      R10 R8 K24   ; R11 := R8; R10 := R8[0xe4162eed]
 128 [-]: LOADK     R12 K39      ; R12 := "SetHidePriceIfOwned"
@@ -4717,9 +4717,9 @@
  58 [-]: GETGLOBAL R6 K17       ; R6 := gShipDecoItemType
  59 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
  60 [-]: LOADNIL   R5 R5        ; R5 := nil
- 61 [-]: CONST     R6 1         ; R6 := 1.000000
+ 61 [-]: LOADK     R6 1         ; R6 := 1.000000
  62 [-]: LEN       R7 R4        ; R7 := # R4
- 63 [-]: CONST     R8 1         ; R8 := 1.000000
+ 63 [-]: LOADK     R8 1         ; R8 := 1.000000
  64 [-]: FORPREP   R6 79        ; R6 -= R8; PC := 79
  65 [-]: GETTABLE  R10 R4 R9    ; R10 := R4[R9]
  66 [-]: SELF      R10 R10 K18  ; R11 := R10; R10 := R10[0x656c098f]
@@ -4759,10 +4759,10 @@
 ; Is_vararg:       0
 ; Max Stack Size:  14
 
-  1 [-]: CONST     R2 1         ; R2 := 1.000000
+  1 [-]: LOADK     R2 1         ; R2 := 1.000000
   2 [-]: OP_LOADBOOL R3 0 0       ; R3 := false
   3 [-]: LOADNIL   R4 R4        ; R4 := nil
-  4 [-]: CONST     R5 4         ; R5 := 4.000000
+  4 [-]: LOADK     R5 4         ; R5 := 4.000000
   5 [-]: GETGLOBAL R6 K1        ; R6 := 0xbe190284
   6 [-]: SELF      R6 R6 K2     ; R7 := R6; R6 := R6[0x99f38c13]
   7 [-]: CALL      R6 2 2       ; R6 := R6(R7)
@@ -4781,21 +4781,21 @@
  20 [-]: CALL      R8 2 2       ; R8 := R8(R9)
  21 [-]: TEST      R8 0         ; if not R8 then PC := 29
  22 [-]: JMP       29           ; PC := 29
- 23 [-]: CONST     R2 2         ; R2 := 2.000000
+ 23 [-]: LOADK     R2 2         ; R2 := 2.000000
  24 [-]: GETGLOBAL R8 K5        ; R8 := _T
  25 [-]: GETTABLE  R8 R8 K6     ; R8 := R8["DojoMgr"]
  26 [-]: GETTABLE  R4 R8 K7     ; R4 := R8["mDecoConstructionQueuedMaterialOverride"]
- 27 [-]: CONST     R5 2         ; R5 := 2.000000
+ 27 [-]: LOADK     R5 2         ; R5 := 2.000000
  28 [-]: JMP       38           ; PC := 38
  29 [-]: SELF      R8 R6 K8     ; R9 := R6; R8 := R6[0x04de00e9]
  30 [-]: CALL      R8 2 2       ; R8 := R8(R9)
  31 [-]: TEST      R8 0         ; if not R8 then PC := 38
  32 [-]: JMP       38           ; PC := 38
- 33 [-]: CONST     R2 2         ; R2 := 2.000000
+ 33 [-]: LOADK     R2 2         ; R2 := 2.000000
  34 [-]: GETGLOBAL R8 K5        ; R8 := _T
  35 [-]: GETTABLE  R8 R8 K6     ; R8 := R8["DojoMgr"]
  36 [-]: GETTABLE  R4 R8 K9     ; R4 := R8["mDecoUnderConstructionMaterialOverride"]
- 37 [-]: CONST     R5 3         ; R5 := 3.000000
+ 37 [-]: LOADK     R5 3         ; R5 := 3.000000
  38 [-]: SELF      R8 R0 K10    ; R9 := R0; R8 := R0[0x5acae14c]
  39 [-]: MOVE      R10 R5       ; R10 := R5
  40 [-]: MOVE      R11 R2       ; R11 := R2
@@ -4948,7 +4948,7 @@
  18 [-]: LOADNIL   R3 R3        ; R3 := nil
  19 [-]: LOADK     R4 K9        ; R4 := "/Lotus/Language/Dojo/NameDeco"
  20 [-]: MOVE      R5 R1        ; R5 := R1
- 21 [-]: CONST     R6 40        ; R6 := 40.000000
+ 21 [-]: LOADK     R6 40        ; R6 := 40.000000
  22 [-]: LOADK     R7 K10       ; R7 := "OnDecoNamed"
  23 [-]: LOADK     R8 K11       ; R8 := "OSKOnPlacedDecoNamed"
  24 [-]: CALL      R2 7 1       ; R2(R3,R4,R5,R6,R7,R8)
@@ -4984,7 +4984,7 @@
  54 [-]: LOADNIL   R4 R4        ; R4 := nil
  55 [-]: LOADK     R5 K9        ; R5 := "/Lotus/Language/Dojo/NameDeco"
  56 [-]: MOVE      R6 R1        ; R6 := R1
- 57 [-]: CONST     R7 40        ; R7 := 40.000000
+ 57 [-]: LOADK     R7 40        ; R7 := 40.000000
  58 [-]: LOADK     R8 K10       ; R8 := "OnDecoNamed"
  59 [-]: LOADK     R9 K11       ; R9 := "OSKOnPlacedDecoNamed"
  60 [-]: CALL      R3 7 1       ; R3(R4,R5,R6,R7,R8,R9)
@@ -5015,7 +5015,7 @@
  85 [-]: LOADNIL   R5 R5        ; R5 := nil
  86 [-]: LOADK     R6 K9        ; R6 := "/Lotus/Language/Dojo/NameDeco"
  87 [-]: MOVE      R7 R1        ; R7 := R1
- 88 [-]: CONST     R8 40        ; R8 := 40.000000
+ 88 [-]: LOADK     R8 40        ; R8 := 40.000000
  89 [-]: LOADK     R9 K10       ; R9 := "OnDecoNamed"
  90 [-]: LOADK     R10 K11      ; R10 := "OSKOnPlacedDecoNamed"
  91 [-]: CALL      R4 7 1       ; R4(R5,R6,R7,R8,R9,R10)
@@ -5028,7 +5028,7 @@
  98 [-]: MOVE      R1 R4        ; R1 := R4
  99 [-]: GETGLOBAL R4 K27       ; R4 := 0x09423272
 100 [-]: MOVE      R5 R1        ; R5 := R1
-101 [-]: CONST     R6 0         ; R6 := 0.000000
+101 [-]: LOADK     R6 0         ; R6 := 0.000000
 102 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
 103 [-]: EQ        1 R4 R1      ; if R4 == R1 then PC := 119
 104 [-]: JMP       119          ; PC := 119
@@ -5041,7 +5041,7 @@
 111 [-]: LOADNIL   R6 R6        ; R6 := nil
 112 [-]: LOADK     R7 K9        ; R7 := "/Lotus/Language/Dojo/NameDeco"
 113 [-]: MOVE      R8 R1        ; R8 := R1
-114 [-]: CONST     R9 40        ; R9 := 40.000000
+114 [-]: LOADK     R9 40        ; R9 := 40.000000
 115 [-]: LOADK     R10 K10      ; R10 := "OnDecoNamed"
 116 [-]: LOADK     R11 K11      ; R11 := "OSKOnPlacedDecoNamed"
 117 [-]: CALL      R5 7 1       ; R5(R6,R7,R8,R9,R10,R11)
@@ -5051,15 +5051,15 @@
 121 [-]: GETTABLE  R5 R5 K30    ; R5 := R5["mDojo"]
 122 [-]: SELF      R5 R5 K31    ; R6 := R5; R5 := R5[0x43c3090e]
 123 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-124 [-]: CONST     R6 1         ; R6 := 1.000000
+124 [-]: LOADK     R6 1         ; R6 := 1.000000
 125 [-]: LEN       R7 R5        ; R7 := # R5
-126 [-]: CONST     R8 1         ; R8 := 1.000000
+126 [-]: LOADK     R8 1         ; R8 := 1.000000
 127 [-]: FORPREP   R6 153       ; R6 -= R8; PC := 153
 128 [-]: GETTABLE  R10 R5 R9    ; R10 := R5[R9]
 129 [-]: GETTABLE  R10 R10 K32  ; R10 := R10["placedDecos"]
-130 [-]: CONST     R11 1        ; R11 := 1.000000
+130 [-]: LOADK     R11 1        ; R11 := 1.000000
 131 [-]: LEN       R12 R10      ; R12 := # R10
-132 [-]: CONST     R13 1        ; R13 := 1.000000
+132 [-]: LOADK     R13 1        ; R13 := 1.000000
 133 [-]: FORPREP   R11 152      ; R11 -= R13; PC := 152
 134 [-]: GETTABLE  R15 R10 R14  ; R15 := R10[R14]
 135 [-]: GETTABLE  R15 R15 K33  ; R15 := R15["name"]
@@ -5074,7 +5074,7 @@
 144 [-]: LOADNIL   R16 R16      ; R16 := nil
 145 [-]: LOADK     R17 K9       ; R17 := "/Lotus/Language/Dojo/NameDeco"
 146 [-]: MOVE      R18 R1       ; R18 := R1
-147 [-]: CONST     R19 40       ; R19 := 40.000000
+147 [-]: LOADK     R19 40       ; R19 := 40.000000
 148 [-]: LOADK     R20 K10      ; R20 := "OnDecoNamed"
 149 [-]: LOADK     R21 K11      ; R21 := "OSKOnPlacedDecoNamed"
 150 [-]: CALL      R15 7 1      ; R15(R16,R17,R18,R19,R20,R21)
@@ -5396,7 +5396,7 @@
 261 [-]: LOADK     R7 K62       ; R7 := "/Lotus/Language/Dojo/NameDeco"
 262 [-]: SELF      R8 R0 K63    ; R9 := R0; R8 := R0[0xe223e2b1]
 263 [-]: CALL      R8 2 2       ; R8 := R8(R9)
-264 [-]: CONST     R9 40        ; R9 := 40.000000
+264 [-]: LOADK     R9 40        ; R9 := 40.000000
 265 [-]: LOADK     R10 K58      ; R10 := "OnDecoNamed"
 266 [-]: LOADK     R11 K64      ; R11 := "OSKOnPlacedDecoNamed"
 267 [-]: CALL      R5 7 1       ; R5(R6,R7,R8,R9,R10,R11)
@@ -5751,9 +5751,9 @@
  66 [-]: SELF      R10 R0 K18   ; R11 := R0; R10 := R0[0xcde10c4a]
  67 [-]: CALL      R10 2 2      ; R10 := R10(R11)
  68 [-]: LOADNIL   R11 R11      ; R11 := nil
- 69 [-]: CONST     R12 1        ; R12 := 1.000000
+ 69 [-]: LOADK     R12 1        ; R12 := 1.000000
  70 [-]: LEN       R13 R9       ; R13 := # R9
- 71 [-]: CONST     R14 1        ; R14 := 1.000000
+ 71 [-]: LOADK     R14 1        ; R14 := 1.000000
  72 [-]: FORPREP   R12 80       ; R12 -= R14; PC := 80
  73 [-]: GETTABLE  R16 R9 R15   ; R16 := R9[R15]
  74 [-]: SELF      R16 R16 K19  ; R17 := R16; R16 := R16[0x656c098f]
@@ -5771,7 +5771,7 @@
  86 [-]: RETURN    R0 1         ; return 
  87 [-]: GETGLOBAL R16 K20      ; R16 := 0x76ea806b
  88 [-]: SELF      R16 R16 K21  ; R17 := R16; R16 := R16[0x3f3ae64c]
- 89 [-]: CONST     R18 0        ; R18 := 0.000000
+ 89 [-]: LOADK     R18 0        ; R18 := 0.000000
  90 [-]: CALL      R16 3 2      ; R16 := R16(R17,R18)
  91 [-]: GETGLOBAL R17 K0       ; R17 := 0x7b998233
  92 [-]: MOVE      R18 R16      ; R18 := R16
@@ -5807,10 +5807,10 @@
 122 [-]: CALL      R18 2 2      ; R18 := R18(R19)
 123 [-]: EQ        1 R18 K3     ; if R18 == nil then PC := 183
 124 [-]: JMP       183          ; PC := 183
-125 [-]: CONST     R19 1        ; R19 := 1.000000
+125 [-]: LOADK     R19 1        ; R19 := 1.000000
 126 [-]: GETTABLE  R20 R18 K33  ; R20 := R18["mShipDecorations"]
 127 [-]: LEN       R20 R20      ; R20 := # R20
-128 [-]: CONST     R21 1        ; R21 := 1.000000
+128 [-]: LOADK     R21 1        ; R21 := 1.000000
 129 [-]: FORPREP   R19 141      ; R19 -= R21; PC := 141
 130 [-]: GETTABLE  R23 R17 K24  ; R23 := R17["Type"]
 131 [-]: GETTABLE  R24 R18 K33  ; R24 := R18["mShipDecorations"]
@@ -5827,7 +5827,7 @@
 142 [-]: GETTABLE  R23 R17 K26  ; R23 := R17["Count"]
 143 [-]: EQ        0 R23 K27    ; if R23 ~= 0.000000 then PC := 177
 144 [-]: JMP       177          ; PC := 177
-145 [-]: CONST     R23 0        ; R23 := 0.000000
+145 [-]: LOADK     R23 0        ; R23 := 0.000000
 146 [-]: SELF      R24 R0 K7    ; R25 := R0; R24 := R0[0xf2deaf69]
 147 [-]: GETGLOBAL R26 K36      ; R26 := gDojoPlaceableDecorationType
 148 [-]: CALL      R24 3 2      ; R24 := R24(R25,R26)
@@ -5836,10 +5836,10 @@
 151 [-]: SELF      R24 R0 K37   ; R25 := R0; R24 := R0[0x3ef3c120]
 152 [-]: CALL      R24 2 2      ; R24 := R24(R25)
 153 [-]: MOVE      R23 R24      ; R23 := R24
-154 [-]: CONST     R24 1        ; R24 := 1.000000
+154 [-]: LOADK     R24 1        ; R24 := 1.000000
 155 [-]: GETTABLE  R25 R18 K38  ; R25 := R18["mFusionTreasures"]
 156 [-]: LEN       R25 R25      ; R25 := # R25
-157 [-]: CONST     R26 1        ; R26 := 1.000000
+157 [-]: LOADK     R26 1        ; R26 := 1.000000
 158 [-]: FORPREP   R24 176      ; R24 -= R26; PC := 176
 159 [-]: GETTABLE  R28 R17 K24  ; R28 := R17["Type"]
 160 [-]: GETTABLE  R29 R18 K38  ; R29 := R18["mFusionTreasures"]
@@ -5883,9 +5883,9 @@
 198 [-]: CALL      R28 2 2      ; R28 := R28(R29)
 199 [-]: SELF      R29 R28 K43  ; R30 := R28; R29 := R28[0x7c12ac22]
 200 [-]: CALL      R29 2 2      ; R29 := R29(R30)
-201 [-]: CONST     R30 1        ; R30 := 1.000000
+201 [-]: LOADK     R30 1        ; R30 := 1.000000
 202 [-]: LEN       R31 R29      ; R31 := # R29
-203 [-]: CONST     R32 1        ; R32 := 1.000000
+203 [-]: LOADK     R32 1        ; R32 := 1.000000
 204 [-]: FORPREP   R30 214      ; R30 -= R32; PC := 214
 205 [-]: GETTABLE  R34 R17 K24  ; R34 := R17["Type"]
 206 [-]: GETTABLE  R35 R29 R33  ; R35 := R29[R33]
@@ -5903,7 +5903,7 @@
 218 [-]: SELF      R34 R28 K44  ; R35 := R28; R34 := R28[0x7a5dc828]
 219 [-]: CALL      R34 2 2      ; R34 := R34(R35)
 220 [-]: MOVE      R29 R34      ; R29 := R34
-221 [-]: CONST     R34 0        ; R34 := 0.000000
+221 [-]: LOADK     R34 0        ; R34 := 0.000000
 222 [-]: SELF      R35 R0 K7    ; R36 := R0; R35 := R0[0xf2deaf69]
 223 [-]: GETGLOBAL R37 K36      ; R37 := gDojoPlaceableDecorationType
 224 [-]: CALL      R35 3 2      ; R35 := R35(R36,R37)
@@ -5912,9 +5912,9 @@
 227 [-]: SELF      R35 R0 K37   ; R36 := R0; R35 := R0[0x3ef3c120]
 228 [-]: CALL      R35 2 2      ; R35 := R35(R36)
 229 [-]: MOVE      R34 R35      ; R34 := R35
-230 [-]: CONST     R35 1        ; R35 := 1.000000
+230 [-]: LOADK     R35 1        ; R35 := 1.000000
 231 [-]: LEN       R36 R29      ; R36 := # R29
-232 [-]: CONST     R37 1        ; R37 := 1.000000
+232 [-]: LOADK     R37 1        ; R37 := 1.000000
 233 [-]: FORPREP   R35 248      ; R35 -= R37; PC := 248
 234 [-]: GETTABLE  R39 R17 K24  ; R39 := R17["Type"]
 235 [-]: GETTABLE  R40 R29 R38  ; R40 := R29[R38]
@@ -6029,7 +6029,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  10
 
-  1 [-]: CONST     R0 0         ; R0 := 0.000000
+  1 [-]: LOADK     R0 0         ; R0 := 0.000000
   2 [-]: GETGLOBAL R1 K0        ; R1 := 0x7b998233
   3 [-]: GETGLOBAL R2 K1        ; R2 := _T
   4 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["DojoMgr"]
@@ -6177,7 +6177,7 @@
  68 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  69 [-]: GETGLOBAL R4 K20       ; R4 := 0x09423272
  70 [-]: MOVE      R5 R3        ; R5 := R3
- 71 [-]: CONST     R6 1         ; R6 := 1.000000
+ 71 [-]: LOADK     R6 1         ; R6 := 1.000000
  72 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
  73 [-]: EQ        1 R4 R3      ; if R4 == R3 then PC := 85
  74 [-]: JMP       85           ; PC := 85
@@ -6323,7 +6323,7 @@
  26 [-]: LOADNIL   R6 R6        ; R6 := nil
  27 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
  28 [-]: LOADK     R5 K5        ; R5 := ""
- 29 [-]: CONST     R6 24        ; R6 := 24.000000
+ 29 [-]: LOADK     R6 24        ; R6 := 24.000000
  30 [-]: LOADK     R7 K9        ; R7 := "NameDecoTemplate"
  31 [-]: LOADK     R8 K10       ; R8 := "OSKNameDecoTemplate"
  32 [-]: NEWTABLE  R9 0 1       ; R9 := {}
@@ -7307,7 +7307,7 @@
 104 [-]: LOADK     R9 K30       ; R9 := "true"
 105 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
 106 [-]: GETGLOBAL R6 K31       ; R6 := 0xa421af95
-107 [-]: CONST     R7 0         ; R7 := 0.000000
+107 [-]: LOADK     R7 0         ; R7 := 0.000000
 108 [-]: LOADK     R8 K32       ; R8 := 0.200000
 109 [-]: LOADK     R9 K33       ; R9 := -0.150000
 110 [-]: CALL      R6 4 2       ; R6 := R6(R7,R8,R9)
@@ -7378,9 +7378,9 @@
   4 [-]: LOADK     R3 K3        ; R3 := "DynamicDojoDeco"
   5 [-]: CALL      R2 2 0       ; R2,... := R2(R3)
   6 [-]: CALL      R0 0 2       ; R0 := R0(R1,...)
-  7 [-]: CONST     R1 1         ; R1 := 1.000000
+  7 [-]: LOADK     R1 1         ; R1 := 1.000000
   8 [-]: LEN       R2 R0        ; R2 := # R0
-  9 [-]: CONST     R3 1         ; R3 := 1.000000
+  9 [-]: LOADK     R3 1         ; R3 := 1.000000
  10 [-]: FORPREP   R1 41        ; R1 -= R3; PC := 41
  11 [-]: GETTABLE  R5 R0 R4     ; R5 := R0[R4]
  12 [-]: GETGLOBAL R6 K4        ; R6 := 0x7b998233
@@ -7400,7 +7400,7 @@
  26 [-]: GETUPVAL  R9 U0        ; R9 := U0
  27 [-]: CALL      R7 3 1       ; R7(R8,R9)
  28 [-]: GETGLOBAL R7 K11       ; R7 := 0xcbd666e1
- 29 [-]: CONST     R8 0         ; R8 := 0.000000
+ 29 [-]: LOADK     R8 0         ; R8 := 0.000000
  30 [-]: CALL      R7 2 1       ; R7(R8)
  31 [-]: SELF      R7 R5 K12    ; R8 := R5; R7 := R5[0x589ef1c1]
  32 [-]: GETGLOBAL R9 K7        ; R9 := _T

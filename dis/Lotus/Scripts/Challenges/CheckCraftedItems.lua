@@ -28,10 +28,10 @@
   5 [-]: JMP       8            ; PC := 8
   6 [-]: OP_LOADBOOL R5 0 0       ; R5 := false
   7 [-]: RETURN    R5 2         ; return R5
-  8 [-]: CONST     R5 1         ; R5 := 1.000000
+  8 [-]: LOADK     R5 1         ; R5 := 1.000000
   9 [-]: GETGLOBAL R6 K1        ; R6 := 0xd1b24cb9
  10 [-]: LEN       R6 R6        ; R6 := # R6
- 11 [-]: CONST     R7 1         ; R7 := 1.000000
+ 11 [-]: LOADK     R7 1         ; R7 := 1.000000
  12 [-]: FORPREP   R5 22        ; R5 -= R7; PC := 22
  13 [-]: GETGLOBAL R9 K1        ; R9 := 0xd1b24cb9
  14 [-]: GETTABLE  R9 R9 R8     ; R9 := R9[R8]

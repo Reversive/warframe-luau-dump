@@ -113,7 +113,7 @@
  15 [-]: TEST      R2 1         ; if R2 then PC := 21
  16 [-]: JMP       21           ; PC := 21
  17 [-]: GETGLOBAL R2 K6        ; R2 := 0xcbd666e1
- 18 [-]: CONST     R3 0         ; R3 := 0.000000
+ 18 [-]: LOADK     R3 0         ; R3 := 0.000000
  19 [-]: CALL      R2 2 1       ; R2(R3)
  20 [-]: JMP       13           ; PC := 13
  21 [-]: RETURN    R0 1         ; return 

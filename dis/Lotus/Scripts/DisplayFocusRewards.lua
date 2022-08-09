@@ -25,9 +25,9 @@
 
   1 [-]: NEWTABLE  R1 0 0       ; R1 := {}
   2 [-]: LOADK     R2 K0        ; R2 := ""
-  3 [-]: CONST     R3 1         ; R3 := 1.000000
+  3 [-]: LOADK     R3 1         ; R3 := 1.000000
   4 [-]: LEN       R4 R0        ; R4 := # R0
-  5 [-]: CONST     R5 1         ; R5 := 1.000000
+  5 [-]: LOADK     R5 1         ; R5 := 1.000000
   6 [-]: FORPREP   R3 31        ; R3 -= R5; PC := 31
   7 [-]: SELF      R7 R0 K1     ; R8 := R0; R7 := R0[0x1a94c9cc]
   8 [-]: MOVE      R9 R6        ; R9 := R6
@@ -110,15 +110,15 @@
  41 [-]: GETGLOBAL R2 K2        ; R2 := 0x3d106989
  42 [-]: LOADK     R3 K10       ; R3 := "ERROR - parameter focusXpGainsString cannot be converted into an array of size "
  43 [-]: GETGLOBAL R4 K11       ; R4 := 0x64fb1586
- 44 [-]: CONST     R5 10        ; R5 := 10.000000
+ 44 [-]: LOADK     R5 10        ; R5 := 10.000000
  45 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  46 [-]: CONCAT    R3 R3 R4     ; R3 := R3 .. R4
  47 [-]: CALL      R2 2 1       ; R2(R3)
  48 [-]: RETURN    R0 1         ; return 
  49 [-]: OP_LOADBOOL R2 0 0       ; R2 := false
- 50 [-]: CONST     R3 1         ; R3 := 1.000000
+ 50 [-]: LOADK     R3 1         ; R3 := 1.000000
  51 [-]: LEN       R4 R1        ; R4 := # R1
- 52 [-]: CONST     R5 1         ; R5 := 1.000000
+ 52 [-]: LOADK     R5 1         ; R5 := 1.000000
  53 [-]: FORPREP   R3 62        ; R3 -= R5; PC := 62
  54 [-]: GETTABLE  R7 R1 R6     ; R7 := R1[R6]
  55 [-]: EQ        1 R7 K12     ; if R7 == nil then PC := 62
@@ -161,9 +161,9 @@
  92 [-]: GETGLOBAL R8 K18       ; R8 := _T
  93 [-]: SETTABLE  R8 K19 R1    ; R8["AccumulatedFocusXpGains"] := R1
  94 [-]: JMP       114          ; PC := 114
- 95 [-]: CONST     R8 1         ; R8 := 1.000000
+ 95 [-]: LOADK     R8 1         ; R8 := 1.000000
  96 [-]: LEN       R9 R1        ; R9 := # R1
- 97 [-]: CONST     R10 1        ; R10 := 1.000000
+ 97 [-]: LOADK     R10 1        ; R10 := 1.000000
  98 [-]: FORPREP   R8 113       ; R8 -= R10; PC := 113
  99 [-]: GETTABLE  R12 R1 R11   ; R12 := R1[R11]
 100 [-]: EQ        1 R12 K12    ; if R12 == nil then PC := 113

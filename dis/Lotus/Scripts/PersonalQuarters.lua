@@ -83,7 +83,7 @@
   3 [-]: OP_LOADBOOL R0 1 0       ; R0 := true
   4 [-]: GETGLOBAL R1 K1        ; R1 := 0x76ea806b
   5 [-]: SELF      R1 R1 K2     ; R2 := R1; R1 := R1[0x3f3ae64c]
-  6 [-]: CONST     R3 0         ; R3 := 0.000000
+  6 [-]: LOADK     R3 0         ; R3 := 0.000000
   7 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
   8 [-]: GETGLOBAL R2 K3        ; R2 := 0x7b998233
   9 [-]: MOVE      R3 R1        ; R3 := R1
@@ -95,11 +95,11 @@
  15 [-]: LOADNIL   R2 R2        ; R2 := nil
  16 [-]: RETURN    R2 2         ; return R2
  17 [-]: GETGLOBAL R2 K4        ; R2 := 0xcbd666e1
- 18 [-]: CONST     R3 0         ; R3 := 0.000000
+ 18 [-]: LOADK     R3 0         ; R3 := 0.000000
  19 [-]: CALL      R2 2 1       ; R2(R3)
  20 [-]: GETGLOBAL R2 K1        ; R2 := 0x76ea806b
  21 [-]: SELF      R2 R2 K2     ; R3 := R2; R2 := R2[0x3f3ae64c]
- 22 [-]: CONST     R4 0         ; R4 := 0.000000
+ 22 [-]: LOADK     R4 0         ; R4 := 0.000000
  23 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
  24 [-]: MOVE      R1 R2        ; R1 := R2
  25 [-]: JMP       8            ; PC := 8
@@ -115,7 +115,7 @@
  35 [-]: LOADNIL   R3 R3        ; R3 := nil
  36 [-]: RETURN    R3 2         ; return R3
  37 [-]: GETGLOBAL R3 K4        ; R3 := 0xcbd666e1
- 38 [-]: CONST     R4 0         ; R4 := 0.000000
+ 38 [-]: LOADK     R4 0         ; R4 := 0.000000
  39 [-]: CALL      R3 2 1       ; R3(R4)
  40 [-]: SELF      R3 R1 K5     ; R4 := R1; R3 := R1[0x80563238]
  41 [-]: CALL      R3 2 2       ; R3 := R3(R4)
@@ -254,7 +254,7 @@
  65 [-]: TEST      R3 1         ; if R3 then PC := 71
  66 [-]: JMP       71           ; PC := 71
  67 [-]: GETGLOBAL R3 K17       ; R3 := 0xcbd666e1
- 68 [-]: CONST     R4 0         ; R4 := 0.000000
+ 68 [-]: LOADK     R4 0         ; R4 := 0.000000
  69 [-]: CALL      R3 2 1       ; R3(R4)
  70 [-]: JMP       48           ; PC := 48
  71 [-]: GETUPVAL  R3 U0        ; R3 := U0
@@ -345,36 +345,36 @@
  33 [-]: SETUPVAL  R4 U3        ; U82 := 
  34 [-]: OP_LOADBOOL R4 0 0       ; R4 := false
  35 [-]: SETUPVAL  R4 U4        ; U82 := 
- 36 [-]: CONST     R4 5         ; R4 := 5.000000
- 37 [-]: CONST     R5 0         ; R5 := 0.000000
+ 36 [-]: LOADK     R4 5         ; R4 := 5.000000
+ 37 [-]: LOADK     R5 0         ; R5 := 0.000000
  38 [-]: SELF      R6 R2 K9     ; R7 := R2; R6 := R2[0x8becddee]
  39 [-]: GETUPVAL  R8 U2        ; R8 := U2
  40 [-]: LOADNIL   R9 R9        ; R9 := nil
- 41 [-]: CONST     R10 0        ; R10 := 0.000000
+ 41 [-]: LOADK     R10 0        ; R10 := 0.000000
  42 [-]: LOADK     R11 K10      ; R11 := "OnFeatureUnlock"
  43 [-]: CALL      R6 6 1       ; R6(R7,R8,R9,R10,R11)
  44 [-]: GETUPVAL  R6 U3        ; R6 := U3
  45 [-]: TEST      R6 1         ; if R6 then PC := 78
  46 [-]: JMP       78           ; PC := 78
  47 [-]: GETGLOBAL R6 K11       ; R6 := 0xcbd666e1
- 48 [-]: CONST     R7 0         ; R7 := 0.000000
+ 48 [-]: LOADK     R7 0         ; R7 := 0.000000
  49 [-]: CALL      R6 2 1       ; R6(R7)
  50 [-]: GETUPVAL  R6 U4        ; R6 := U4
  51 [-]: TEST      R6 0         ; if not R6 then PC := 44
  52 [-]: JMP       44           ; PC := 44
  53 [-]: OP_LOADBOOL R6 0 0       ; R6 := false
  54 [-]: SETUPVAL  R6 U4        ; U82 := 
- 55 [-]: CONST     R6 0         ; R6 := 0.000000
+ 55 [-]: LOADK     R6 0         ; R6 := 0.000000
  56 [-]: ADD       R5 R5 K12    ; R5 := R5 + 1.000000
  57 [-]: GETGLOBAL R7 K13       ; R7 := 0x5bced4c4
  58 [-]: GETTABLE  R7 R7 K14    ; R82 := R7[0xac1b386a]
  59 [-]: MUL       R8 R4 R5     ; R8 := R4 * R5
- 60 [-]: CONST     R9 60        ; R9 := 60.000000
+ 60 [-]: LOADK     R9 60        ; R9 := 60.000000
  61 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
  62 [-]: LT        0 R6 R7      ; if R6 >= R7 then PC := 71
  63 [-]: JMP       71           ; PC := 71
  64 [-]: GETGLOBAL R7 K11       ; R7 := 0xcbd666e1
- 65 [-]: CONST     R8 0         ; R8 := 0.000000
+ 65 [-]: LOADK     R8 0         ; R8 := 0.000000
  66 [-]: CALL      R7 2 1       ; R7(R8)
  67 [-]: GETGLOBAL R7 K15       ; R7 := 0x67652851
  68 [-]: CALL      R7 1 2       ; R7 := R7()
@@ -383,7 +383,7 @@
  71 [-]: SELF      R7 R2 K9     ; R8 := R2; R7 := R2[0x8becddee]
  72 [-]: GETUPVAL  R9 U2        ; R9 := U2
  73 [-]: LOADNIL   R10 R10      ; R10 := nil
- 74 [-]: CONST     R11 0        ; R11 := 0.000000
+ 74 [-]: LOADK     R11 0        ; R11 := 0.000000
  75 [-]: LOADK     R12 K10      ; R12 := "OnFeatureUnlock"
  76 [-]: CALL      R7 6 1       ; R7(R8,R9,R10,R11,R12)
  77 [-]: JMP       44           ; PC := 44

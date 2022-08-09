@@ -161,19 +161,19 @@
   3 [-]: CALL      R5 2 2       ; R5 := R5(R6)
   4 [-]: TEST      R5 0         ; if not R5 then PC := 7
   5 [-]: JMP       7            ; PC := 7
-  6 [-]: CONST     R3 1         ; R3 := 1.000000
+  6 [-]: LOADK     R3 1         ; R3 := 1.000000
   7 [-]: GETGLOBAL R5 K0        ; R5 := 0x7b998233
   8 [-]: MOVE      R6 R4        ; R6 := R4
   9 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  10 [-]: TEST      R5 0         ; if not R5 then PC := 13
  11 [-]: JMP       13           ; PC := 13
- 12 [-]: CONST     R4 1         ; R4 := 1.000000
+ 12 [-]: LOADK     R4 1         ; R4 := 1.000000
  13 [-]: SETTABLE  R1 K1 R2     ; R1["mOverrideClipName"] := R2
  14 [-]: GETTABLE  R5 R0 K2     ; R5 := R0["mMovie"]
  15 [-]: SELF      R5 R5 K3     ; R6 := R5; R5 := R5[0x67bc869f]
  16 [-]: MOVE      R7 R2        ; R7 := R2
- 17 [-]: CONST     R8 10        ; R8 := 10.000000
- 18 [-]: CONST     R9 0         ; R9 := 0.000000
+ 17 [-]: LOADK     R8 10        ; R8 := 10.000000
+ 18 [-]: LOADK     R9 0         ; R9 := 0.000000
  19 [-]: CALL      R5 5 1       ; R5(R6,R7,R8,R9)
  20 [-]: SETTABLE  R1 K4 R3     ; R1["mColumnSpan"] := R3
  21 [-]: SETTABLE  R1 K5 R4     ; R1["mRowSpan"] := R4
@@ -203,7 +203,7 @@
   6 [-]: EQ        0 R2 K2      ; if R2 ~= nil then PC := 12
   7 [-]: JMP       12           ; PC := 12
   8 [-]: SELF      R3 R0 K3     ; R4 := R0; R3 := R0[0x1e63ac7a]
-  9 [-]: CONST     R5 1         ; R5 := 1.000000
+  9 [-]: LOADK     R5 1         ; R5 := 1.000000
  10 [-]: CALL      R3 3 1       ; R3(R4,R5)
  11 [-]: JMP       85           ; PC := 85
  12 [-]: LOADNIL   R3 R5        ; R3 := R4 := R5 := nil
@@ -392,13 +392,13 @@
   9 [-]: DIV       R2 R2 R3     ; R2 := R2 / R3
  10 [-]: CALL      R1 2 2       ; R1 := R1(R2)
  11 [-]: ADD       R1 R1 K4     ; R1 := R1 + 1.000000
- 12 [-]: CONST     R2 1         ; R2 := 1.000000
+ 12 [-]: LOADK     R2 1         ; R2 := 1.000000
  13 [-]: GETGLOBAL R3 K1        ; R3 := 0x5bced4c4
  14 [-]: GETTABLE  R3 R3 K6     ; R82 := R3[0xb62ecfe0]
  15 [-]: GETTABLE  R4 R0 K7     ; R4 := R0["mRows"]
  16 [-]: MOVE      R5 R1        ; R5 := R1
  17 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
- 18 [-]: CONST     R4 1         ; R4 := 1.000000
+ 18 [-]: LOADK     R4 1         ; R4 := 1.000000
  19 [-]: FORPREP   R2 23        ; R2 -= R4; PC := 23
  20 [-]: GETTABLE  R6 R0 K0     ; R6 := R0["mItemGrid"]
  21 [-]: NEWTABLE  R7 0 0       ; R7 := {}
@@ -408,15 +408,15 @@
  25 [-]: SETTABLE  R0 K10 K11   ; R0["mHasMultiSizedElement"] := false
  26 [-]: GETTABLE  R6 R0 K13    ; R6 := R0["mVisibleElements"]
  27 [-]: SETTABLE  R0 K12 R6    ; R0["mCachedVisibleElements"] := R6
- 28 [-]: CONST     R6 1         ; R6 := 1.000000
- 29 [-]: CONST     R7 1         ; R7 := 1.000000
- 30 [-]: CONST     R8 1         ; R8 := 1.000000
+ 28 [-]: LOADK     R6 1         ; R6 := 1.000000
+ 29 [-]: LOADK     R7 1         ; R7 := 1.000000
+ 30 [-]: LOADK     R8 1         ; R8 := 1.000000
  31 [-]: GETTABLE  R9 R0 K3     ; R9 := R0["mElements"]
  32 [-]: LEN       R9 R9        ; R9 := # R9
- 33 [-]: CONST     R10 1        ; R10 := 1.000000
+ 33 [-]: LOADK     R10 1        ; R10 := 1.000000
  34 [-]: FORPREP   R8 100       ; R8 -= R10; PC := 100
  35 [-]: GETGLOBAL R12 K14      ; R12 := 0xce225efa
- 36 [-]: CONST     R13 0        ; R13 := 0.000000
+ 36 [-]: LOADK     R13 0        ; R13 := 0.000000
  37 [-]: CALL      R12 2 1      ; R12(R13)
  38 [-]: GETTABLE  R12 R0 K0    ; R12 := R0["mItemGrid"]
  39 [-]: GETTABLE  R12 R12 R6   ; R12 := R12[R6]
@@ -432,7 +432,7 @@
  49 [-]: LT        0 R12 R7     ; if R12 >= R7 then PC := 38
  50 [-]: JMP       38           ; PC := 38
  51 [-]: ADD       R6 R6 K4     ; R6 := R6 + 1.000000
- 52 [-]: CONST     R7 1         ; R7 := 1.000000
+ 52 [-]: LOADK     R7 1         ; R7 := 1.000000
  53 [-]: JMP       38           ; PC := 38
  54 [-]: GETTABLE  R12 R0 K3    ; R12 := R0["mElements"]
  55 [-]: GETTABLE  R12 R12 R11  ; R12 := R12[R11]
@@ -454,12 +454,12 @@
  71 [-]: MOVE      R14 R7       ; R14 := R7
  72 [-]: ADD       R15 R7 R13   ; R15 := R7 + R13
  73 [-]: SUB       R15 R15 K4   ; R15 := R15 - 1.000000
- 74 [-]: CONST     R16 1        ; R16 := 1.000000
+ 74 [-]: LOADK     R16 1        ; R16 := 1.000000
  75 [-]: FORPREP   R14 87       ; R14 -= R16; PC := 87
  76 [-]: MOVE      R18 R6       ; R18 := R6
  77 [-]: ADD       R19 R6 R12   ; R19 := R6 + R12
  78 [-]: SUB       R19 R19 K4   ; R19 := R19 - 1.000000
- 79 [-]: CONST     R20 1        ; R20 := 1.000000
+ 79 [-]: LOADK     R20 1        ; R20 := 1.000000
  80 [-]: FORPREP   R18 86       ; R18 -= R20; PC := 86
  81 [-]: GETTABLE  R22 R0 K0    ; R22 := R0["mItemGrid"]
  82 [-]: GETTABLE  R22 R22 R21  ; R22 := R22[R21]

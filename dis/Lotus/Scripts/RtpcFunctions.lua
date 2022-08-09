@@ -184,8 +184,8 @@
   7 [-]: GETUPVAL  R1 U0        ; R1 := U0
   8 [-]: MOVE      R2 R0        ; R2 := R0
   9 [-]: CALL      R1 2 1       ; R1(R2)
- 10 [-]: CONST     R1 0         ; R1 := 0.000000
- 11 [-]: CONST     R2 0         ; R2 := 0.000000
+ 10 [-]: LOADK     R1 0         ; R1 := 0.000000
+ 11 [-]: LOADK     R2 0         ; R2 := 0.000000
  12 [-]: GETUPVAL  R3 U1        ; R3 := U1
  13 [-]: MOVE      R4 R0        ; R4 := R0
  14 [-]: CALL      R3 2 2       ; R3 := R3(R4)

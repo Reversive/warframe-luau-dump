@@ -141,11 +141,11 @@
 
   1 [-]: SELF      R4 R1 K0     ; R5 := R1; R4 := R1[0x91a24e4b]
   2 [-]: MOVE      R6 R2        ; R6 := R2
-  3 [-]: CONST     R7 0         ; R7 := 0.000000
+  3 [-]: LOADK     R7 0         ; R7 := 0.000000
   4 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
   5 [-]: SELF      R5 R1 K0     ; R6 := R1; R5 := R1[0x91a24e4b]
   6 [-]: MOVE      R7 R2        ; R7 := R2
-  7 [-]: CONST     R8 1         ; R8 := 1.000000
+  7 [-]: LOADK     R8 1         ; R8 := 1.000000
   8 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
   9 [-]: NEWTABLE  R6 0 6       ; R6 := {}
  10 [-]: SETTABLE  R6 K1 R2     ; R6["clip"] := R2
@@ -156,9 +156,9 @@
  15 [-]: SETTABLE  R6 K7 R1     ; R6["movie"] := R1
  16 [-]: EQ        1 R3 K5      ; if R3 == nil then PC := 59
  17 [-]: JMP       59           ; PC := 59
- 18 [-]: CONST     R7 1         ; R7 := 1.000000
+ 18 [-]: LOADK     R7 1         ; R7 := 1.000000
  19 [-]: LEN       R8 R3        ; R8 := # R3
- 20 [-]: CONST     R9 1         ; R9 := 1.000000
+ 20 [-]: LOADK     R9 1         ; R9 := 1.000000
  21 [-]: FORPREP   R7 58        ; R7 -= R9; PC := 58
  22 [-]: GETTABLE  R11 R3 R10   ; R11 := R3[R10]
  23 [-]: GETGLOBAL R12 K8       ; R12 := 0x60cce7b4
@@ -216,9 +216,9 @@
 
   1 [-]: GETTABLE  R3 R0 K0     ; R3 := R0["list"]
   2 [-]: LEN       R3 R3        ; R3 := # R3
-  3 [-]: CONST     R4 1         ; R4 := 1.000000
+  3 [-]: LOADK     R4 1         ; R4 := 1.000000
   4 [-]: MOVE      R5 R3        ; R5 := R3
-  5 [-]: CONST     R6 1         ; R6 := 1.000000
+  5 [-]: LOADK     R6 1         ; R6 := 1.000000
   6 [-]: FORPREP   R4 23        ; R4 -= R6; PC := 23
   7 [-]: GETTABLE  R8 R0 K0     ; R8 := R0["list"]
   8 [-]: GETTABLE  R8 R8 R7     ; R8 := R8[R7]
@@ -258,8 +258,8 @@
   7 [-]: TEST      R4 1         ; if R4 then PC := 14
   8 [-]: JMP       14           ; PC := 14
   9 [-]: NEWTABLE  R5 2 0       ; R5 := {}
- 10 [-]: CONST     R6 0         ; R6 := 0.000000
- 11 [-]: CONST     R7 0         ; R7 := 0.000000
+ 10 [-]: LOADK     R6 0         ; R6 := 0.000000
+ 11 [-]: LOADK     R7 0         ; R7 := 0.000000
  12 [-]: SETLIST   R5 2 1       ; R5[(1-1)*FPF+i] := R(5+i), 1 <= i <= 2
  13 [-]: MOVE      R4 R5        ; R4 := R5
  14 [-]: GETTABLE  R5 R0 K2     ; R5 := R0["stageWidth"]
@@ -305,20 +305,20 @@
  54 [-]: JMP       95           ; PC := 95
  55 [-]: GETGLOBAL R7 K12       ; R7 := 0x76ea806b
  56 [-]: SELF      R7 R7 K14    ; R8 := R7; R7 := R7[0x3f3ae64c]
- 57 [-]: CONST     R9 0         ; R9 := 0.000000
+ 57 [-]: LOADK     R9 0         ; R9 := 0.000000
  58 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
  59 [-]: SELF      R8 R7 K15    ; R9 := R7; R8 := R7[0x40e9c32b]
  60 [-]: CALL      R8 2 2       ; R8 := R8(R9)
  61 [-]: GETTABLE  R9 R0 K1     ; R9 := R0["movie"]
  62 [-]: SELF      R9 R9 K16    ; R10 := R9; R9 := R9[0x91a24e4b]
  63 [-]: LOADK     R11 K17      ; R11 := "_root"
- 64 [-]: CONST     R12 5        ; R12 := 5.000000
+ 64 [-]: LOADK     R12 5        ; R12 := 5.000000
  65 [-]: CALL      R9 4 2       ; R9 := R9(R10,R11,R12)
  66 [-]: DIV       R9 R9 K18    ; R9 := R9 / 100.000000
  67 [-]: GETTABLE  R10 R0 K1    ; R10 := R0["movie"]
  68 [-]: SELF      R10 R10 K16  ; R11 := R10; R10 := R10[0x91a24e4b]
  69 [-]: LOADK     R12 K17      ; R12 := "_root"
- 70 [-]: CONST     R13 6        ; R13 := 6.000000
+ 70 [-]: LOADK     R13 6        ; R13 := 6.000000
  71 [-]: CALL      R10 4 2      ; R10 := R10(R11,R12,R13)
  72 [-]: DIV       R10 R10 K18  ; R10 := R10 / 100.000000
  73 [-]: GETGLOBAL R11 K19      ; R11 := 0x5bced4c4
@@ -387,10 +387,10 @@
 136 [-]: GETTABLE  R18 R0 K1    ; R18 := R0["movie"]
 137 [-]: SELF      R18 R18 K28  ; R19 := R18; R18 := R18[0x468b2679]
 138 [-]: CALL      R18 2 2      ; R18 := R18(R19)
-139 [-]: CONST     R19 1        ; R19 := 1.000000
+139 [-]: LOADK     R19 1        ; R19 := 1.000000
 140 [-]: GETTABLE  R20 R0 K29   ; R20 := R0["list"]
 141 [-]: LEN       R20 R20      ; R20 := # R20
-142 [-]: CONST     R21 1        ; R21 := 1.000000
+142 [-]: LOADK     R21 1        ; R21 := 1.000000
 143 [-]: FORPREP   R19 366      ; R19 -= R21; PC := 366
 144 [-]: GETTABLE  R23 R0 K29   ; R23 := R0["list"]
 145 [-]: GETTABLE  R23 R23 R22  ; R23 := R23[R22]
@@ -501,7 +501,7 @@
 250 [-]: GETTABLE  R26 R23 K1   ; R26 := R23["movie"]
 251 [-]: SELF      R26 R26 K45  ; R27 := R26; R26 := R26[0x67bc869f]
 252 [-]: GETTABLE  R28 R23 K46  ; R28 := R23["clip"]
-253 [-]: CONST     R29 0        ; R29 := 0.000000
+253 [-]: LOADK     R29 0        ; R29 := 0.000000
 254 [-]: GETTABLE  R30 R23 K43  ; R30 := R23["NewX"]
 255 [-]: CALL      R26 5 1      ; R26(R27,R28,R29,R30)
 256 [-]: GETTABLE  R26 R23 K47  ; R26 := R23["originalY"]
@@ -606,7 +606,7 @@
 355 [-]: GETTABLE  R28 R23 K1   ; R28 := R23["movie"]
 356 [-]: SELF      R28 R28 K45  ; R29 := R28; R28 := R28[0x67bc869f]
 357 [-]: GETTABLE  R30 R23 K46  ; R30 := R23["clip"]
-358 [-]: CONST     R31 1        ; R31 := 1.000000
+358 [-]: LOADK     R31 1        ; R31 := 1.000000
 359 [-]: GETTABLE  R32 R23 K52  ; R32 := R23["NewY"]
 360 [-]: CALL      R28 5 1      ; R28(R29,R30,R31,R32)
 361 [-]: GETTABLE  R28 R23 K53  ; R28 := R23["callback"]
@@ -627,10 +627,10 @@
 ; Is_vararg:       0
 ; Max Stack Size:  8
 
-  1 [-]: CONST     R2 1         ; R2 := 1.000000
+  1 [-]: LOADK     R2 1         ; R2 := 1.000000
   2 [-]: GETTABLE  R3 R0 K0     ; R3 := R0["list"]
   3 [-]: LEN       R3 R3        ; R3 := # R3
-  4 [-]: CONST     R4 1         ; R4 := 1.000000
+  4 [-]: LOADK     R4 1         ; R4 := 1.000000
   5 [-]: FORPREP   R2 21        ; R2 -= R4; PC := 21
   6 [-]: GETTABLE  R6 R0 K0     ; R6 := R0["list"]
   7 [-]: GETTABLE  R6 R6 R5     ; R6 := R6[R5]
@@ -660,10 +660,10 @@
 ; Is_vararg:       0
 ; Max Stack Size:  8
 
-  1 [-]: CONST     R2 1         ; R2 := 1.000000
+  1 [-]: LOADK     R2 1         ; R2 := 1.000000
   2 [-]: GETTABLE  R3 R0 K0     ; R3 := R0["list"]
   3 [-]: LEN       R3 R3        ; R3 := # R3
-  4 [-]: CONST     R4 1         ; R4 := 1.000000
+  4 [-]: LOADK     R4 1         ; R4 := 1.000000
   5 [-]: FORPREP   R2 21        ; R2 -= R4; PC := 21
   6 [-]: GETTABLE  R6 R0 K0     ; R6 := R0["list"]
   7 [-]: GETTABLE  R6 R6 R5     ; R6 := R6[R5]
@@ -693,10 +693,10 @@
 ; Is_vararg:       0
 ; Max Stack Size:  10
 
-  1 [-]: CONST     R4 1         ; R4 := 1.000000
+  1 [-]: LOADK     R4 1         ; R4 := 1.000000
   2 [-]: GETTABLE  R5 R0 K0     ; R5 := R0["list"]
   3 [-]: LEN       R5 R5        ; R5 := # R5
-  4 [-]: CONST     R6 1         ; R6 := 1.000000
+  4 [-]: LOADK     R6 1         ; R6 := 1.000000
   5 [-]: FORPREP   R4 17        ; R4 -= R6; PC := 17
   6 [-]: GETTABLE  R8 R0 K0     ; R8 := R0["list"]
   7 [-]: GETTABLE  R8 R8 R7     ; R8 := R8[R7]
@@ -722,10 +722,10 @@
 ; Is_vararg:       0
 ; Max Stack Size:  10
 
-  1 [-]: CONST     R4 1         ; R4 := 1.000000
+  1 [-]: LOADK     R4 1         ; R4 := 1.000000
   2 [-]: GETTABLE  R5 R0 K0     ; R5 := R0["list"]
   3 [-]: LEN       R5 R5        ; R5 := # R5
-  4 [-]: CONST     R6 1         ; R6 := 1.000000
+  4 [-]: LOADK     R6 1         ; R6 := 1.000000
   5 [-]: FORPREP   R4 17        ; R4 -= R6; PC := 17
   6 [-]: GETTABLE  R8 R0 K0     ; R8 := R0["list"]
   7 [-]: GETTABLE  R8 R8 R7     ; R8 := R8[R7]
@@ -811,10 +811,10 @@
  58 [-]: GETTABLE  R13 R0 K1    ; R13 := R0["movie"]
  59 [-]: SELF      R13 R13 K11  ; R14 := R13; R13 := R13[0x468b2679]
  60 [-]: CALL      R13 2 2      ; R13 := R13(R14)
- 61 [-]: CONST     R14 1        ; R14 := 1.000000
+ 61 [-]: LOADK     R14 1        ; R14 := 1.000000
  62 [-]: GETTABLE  R15 R0 K12   ; R15 := R0["list"]
  63 [-]: LEN       R15 R15      ; R15 := # R15
- 64 [-]: CONST     R16 1        ; R16 := 1.000000
+ 64 [-]: LOADK     R16 1        ; R16 := 1.000000
  65 [-]: FORPREP   R14 283      ; R14 -= R16; PC := 283
  66 [-]: GETTABLE  R18 R0 K12   ; R18 := R0["list"]
  67 [-]: GETTABLE  R18 R18 R17  ; R18 := R18[R17]

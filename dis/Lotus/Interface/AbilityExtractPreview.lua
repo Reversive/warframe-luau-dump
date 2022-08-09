@@ -94,8 +94,8 @@
   5 [-]: GETGLOBAL R2 K3        ; R2 := 0xae91e43b
   6 [-]: LOADK     R3 K4        ; R3 := "Popup.Grid.Ability"
   7 [-]: LOADNIL   R4 R4        ; R4 := nil
-  8 [-]: CONST     R5 1         ; R5 := 1.000000
-  9 [-]: CONST     R6 1         ; R6 := 1.000000
+  8 [-]: LOADK     R5 1         ; R5 := 1.000000
+  9 [-]: LOADK     R6 1         ; R6 := 1.000000
  10 [-]: CALL      R1 6 2       ; R1 := R1(R2,R3,R4,R5,R6)
  11 [-]: SETUPVAL  R1 U0        ; U82 := 
  12 [-]: GETUPVAL  R1 U0        ; R1 := U0
@@ -331,13 +331,13 @@
  37 [-]: NEWTABLE  R0 0 2       ; R0 := {}
  38 [-]: GETUPVAL  R1 U6        ; R1 := U6
  39 [-]: GETTABLE  R1 R1 K12    ; R82 := R1[0x5d10207d]
- 40 [-]: CONST     R2 9         ; R2 := 9.000000
+ 40 [-]: LOADK     R2 9         ; R2 := 9.000000
  41 [-]: OP_LOADBOOL R3 1 0       ; R3 := true
  42 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
  43 [-]: SETTABLE  R0 K11 R1    ; R0["FloatingContent"] := R1
  44 [-]: GETUPVAL  R1 U6        ; R1 := U6
  45 [-]: GETTABLE  R1 R1 K12    ; R82 := R1[0x5d10207d]
- 46 [-]: CONST     R2 10        ; R2 := 10.000000
+ 46 [-]: LOADK     R2 10        ; R2 := 10.000000
  47 [-]: OP_LOADBOOL R3 1 0       ; R3 := true
  48 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
  49 [-]: SETTABLE  R0 K14 R1    ; R0["FloatingContentHighlight"] := R1
@@ -357,29 +357,29 @@
  63 [-]: GETGLOBAL R0 K1        ; R0 := 0xae91e43b
  64 [-]: SELF      R0 R0 K20    ; R1 := R0; R0 := R0[0x67bc869f]
  65 [-]: LOADK     R2 K16       ; R2 := "Popup.Lines"
- 66 [-]: CONST     R3 9         ; R3 := 9.000000
+ 66 [-]: LOADK     R3 9         ; R3 := 9.000000
  67 [-]: GETUPVAL  R4 U5        ; R4 := U5
  68 [-]: GETTABLE  R4 R4 K14    ; R4 := R4["FloatingContentHighlight"]
  69 [-]: CALL      R0 5 1       ; R0(R1,R2,R3,R4)
  70 [-]: GETGLOBAL R0 K1        ; R0 := 0xae91e43b
  71 [-]: SELF      R0 R0 K20    ; R1 := R0; R0 := R0[0x67bc869f]
  72 [-]: LOADK     R2 K19       ; R2 := "Popup.Detail"
- 73 [-]: CONST     R3 9         ; R3 := 9.000000
+ 73 [-]: LOADK     R3 9         ; R3 := 9.000000
  74 [-]: GETUPVAL  R4 U5        ; R4 := U5
  75 [-]: GETTABLE  R4 R4 K14    ; R4 := R4["FloatingContentHighlight"]
  76 [-]: CALL      R0 5 1       ; R0(R1,R2,R3,R4)
  77 [-]: GETGLOBAL R0 K1        ; R0 := 0xae91e43b
  78 [-]: SELF      R0 R0 K20    ; R1 := R0; R0 := R0[0x67bc869f]
  79 [-]: LOADK     R2 K21       ; R2 := "Popup.Arrows"
- 80 [-]: CONST     R3 9         ; R3 := 9.000000
+ 80 [-]: LOADK     R3 9         ; R3 := 9.000000
  81 [-]: GETUPVAL  R4 U5        ; R4 := U5
  82 [-]: GETTABLE  R4 R4 K11    ; R4 := R4["FloatingContent"]
  83 [-]: CALL      R0 5 1       ; R0(R1,R2,R3,R4)
  84 [-]: GETGLOBAL R0 K1        ; R0 := 0xae91e43b
  85 [-]: SELF      R0 R0 K20    ; R1 := R0; R0 := R0[0x67bc869f]
  86 [-]: LOADK     R2 K21       ; R2 := "Popup.Arrows"
- 87 [-]: CONST     R3 10        ; R3 := 10.000000
- 88 [-]: CONST     R4 35        ; R4 := 35.000000
+ 87 [-]: LOADK     R3 10        ; R3 := 10.000000
+ 88 [-]: LOADK     R4 35        ; R4 := 35.000000
  89 [-]: CALL      R0 5 1       ; R0(R1,R2,R3,R4)
  90 [-]: RETURN    R0 1         ; return 
 

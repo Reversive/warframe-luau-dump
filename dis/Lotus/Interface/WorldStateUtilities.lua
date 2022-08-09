@@ -214,7 +214,7 @@
   9 [-]: RETURN    R0 1         ; return 
  10 [-]: GETUPVAL  R1 U1        ; R1 := U1
  11 [-]: LOADK     R2 K4        ; R2 := "sfn"
- 12 [-]: CONST     R3 0         ; R3 := 0.000000
+ 12 [-]: LOADK     R3 0         ; R3 := 0.000000
  13 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
  14 [-]: LE        0 R1 K5      ; if R1 > 0.000000 then PC := 18
  15 [-]: JMP       18           ; PC := 18
@@ -386,9 +386,9 @@
 127 [-]: GETTABLE  R14 R1 R11   ; R14 := R1[R11]
 128 [-]: GETTABLE  R14 R14 K19  ; R14 := R14["SubInvasions"]
 129 [-]: LEN       R14 R14      ; R14 := # R14
-130 [-]: CONST     R15 1        ; R15 := 1.000000
+130 [-]: LOADK     R15 1        ; R15 := 1.000000
 131 [-]: LEN       R16 R2       ; R16 := # R2
-132 [-]: CONST     R17 1        ; R17 := 1.000000
+132 [-]: LOADK     R17 1        ; R17 := 1.000000
 133 [-]: FORPREP   R15 165      ; R15 -= R17; PC := 165
 134 [-]: GETTABLE  R19 R2 R18   ; R19 := R2[R18]
 135 [-]: GETTABLE  R19 R19 K50  ; R19 := R19["mId"]

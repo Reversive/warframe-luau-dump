@@ -250,14 +250,14 @@
  34 [-]: GETGLOBAL R3 K0        ; R3 := 0x7b998233
  35 [-]: GETGLOBAL R4 K8        ; R4 := 0x76ea806b
  36 [-]: SELF      R4 R4 K9     ; R5 := R4; R4 := R4[0x3f3ae64c]
- 37 [-]: CONST     R6 0         ; R6 := 0.000000
+ 37 [-]: LOADK     R6 0         ; R6 := 0.000000
  38 [-]: CALL      R4 3 0       ; R4,... := R4(R5,R6)
  39 [-]: CALL      R3 0 2       ; R3 := R3(R4,...)
  40 [-]: TEST      R3 1         ; if R3 then PC := 50
  41 [-]: JMP       50           ; PC := 50
  42 [-]: GETGLOBAL R3 K8        ; R3 := 0x76ea806b
  43 [-]: SELF      R3 R3 K9     ; R4 := R3; R3 := R3[0x3f3ae64c]
- 44 [-]: CONST     R5 0         ; R5 := 0.000000
+ 44 [-]: LOADK     R5 0         ; R5 := 0.000000
  45 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
  46 [-]: SELF      R3 R3 K10    ; R4 := R3; R3 := R3[0x80563238]
  47 [-]: CALL      R3 2 2       ; R3 := R3(R4)

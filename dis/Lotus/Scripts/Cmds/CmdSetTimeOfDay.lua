@@ -31,9 +31,9 @@
   8 [-]: SELF      R2 R2 K3     ; R3 := R2; R2 := R2[0xfb669000]
   9 [-]: GETGLOBAL R4 K4        ; R4 := gDynamicSkyType
  10 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
- 11 [-]: CONST     R3 1         ; R3 := 1.000000
+ 11 [-]: LOADK     R3 1         ; R3 := 1.000000
  12 [-]: LEN       R4 R2        ; R4 := # R2
- 13 [-]: CONST     R5 1         ; R5 := 1.000000
+ 13 [-]: LOADK     R5 1         ; R5 := 1.000000
  14 [-]: FORPREP   R3 19        ; R3 -= R5; PC := 19
  15 [-]: GETTABLE  R7 R2 R6     ; R7 := R2[R6]
  16 [-]: SELF      R7 R7 K5     ; R8 := R7; R7 := R7[0x16c76090]

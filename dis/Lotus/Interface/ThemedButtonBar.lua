@@ -136,9 +136,9 @@
   5 [-]: GETGLOBAL R1 K1        ; R1 := 0x9ba7909f
   6 [-]: SELF      R1 R1 K2     ; R2 := R1; R1 := R1[0xc12c4f71]
   7 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  8 [-]: CONST     R2 1         ; R2 := 1.000000
+  8 [-]: LOADK     R2 1         ; R2 := 1.000000
   9 [-]: MOVE      R3 R0        ; R3 := R0
- 10 [-]: CONST     R4 1         ; R4 := 1.000000
+ 10 [-]: LOADK     R4 1         ; R4 := 1.000000
  11 [-]: FORPREP   R2 20        ; R2 -= R4; PC := 20
  12 [-]: GETUPVAL  R6 U0        ; R6 := U0
  13 [-]: GETTABLE  R6 R6 R5     ; R6 := R6[R5]
@@ -236,7 +236,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  7
 
-  1 [-]: CONST     R0 0         ; R0 := 0.000000
+  1 [-]: LOADK     R0 0         ; R0 := 0.000000
   2 [-]: GETGLOBAL R1 K0        ; R1 := 0xc8802016
   3 [-]: GETUPVAL  R2 U0        ; R2 := U0
   4 [-]: CALL      R1 2 4       ; R1,R2,R3 := R1(R2)
@@ -276,7 +276,7 @@
   9 [-]: GETGLOBAL R3 K2        ; R3 := 0x33bdd652
  10 [-]: GETTABLE  R3 R3 K3     ; R82 := R3[0x9c1f3b5a]
  11 [-]: MOVE      R4 R1        ; R4 := R1
- 12 [-]: CONST     R5 1         ; R5 := 1.000000
+ 12 [-]: LOADK     R5 1         ; R5 := 1.000000
  13 [-]: CALL      R3 3 1       ; R3(R4,R5)
  14 [-]: GETUPVAL  R3 U1        ; R3 := U1
  15 [-]: SELF      R3 R3 K4     ; R4 := R3; R3 := R3[0xbd2e96ea]
@@ -303,7 +303,7 @@
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0xae91e43b
   2 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0x67bc869f]
   3 [-]: LOADK     R2 K2        ; R2 := "Fx"
-  4 [-]: CONST     R3 0         ; R3 := 0.000000
+  4 [-]: LOADK     R3 0         ; R3 := 0.000000
   5 [-]: GETUPVAL  R4 U0        ; R4 := U0
   6 [-]: CALL      R0 5 1       ; R0(R1,R2,R3,R4)
   7 [-]: GETUPVAL  R0 U1        ; R0 := U1
@@ -396,20 +396,20 @@
  54 [-]: GETGLOBAL R4 K13       ; R4 := 0x25312c9b
  55 [-]: GETGLOBAL R5 K3        ; R5 := 0xae91e43b
  56 [-]: LOADK     R6 K14       ; R6 := "_root"
- 57 [-]: CONST     R7 2         ; R7 := 2.000000
+ 57 [-]: LOADK     R7 2         ; R7 := 2.000000
  58 [-]: NEWTABLE  R8 1 0       ; R8 := {}
- 59 [-]: CONST     R9 10        ; R9 := 10.000000
+ 59 [-]: LOADK     R9 10        ; R9 := 10.000000
  60 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
  61 [-]: NEWTABLE  R9 0 0       ; R9 := {}
  62 [-]: GETUPVAL  R10 U4       ; R10 := U4
  63 [-]: GETTABLE  R10 R10 K16  ; R82 := R10[0x06d055f9]
  64 [-]: MOVE      R11 R3       ; R11 := R3
- 65 [-]: CONST     R12 100      ; R12 := 100.000000
- 66 [-]: CONST     R13 0        ; R13 := 0.000000
+ 65 [-]: LOADK     R12 100      ; R12 := 100.000000
+ 66 [-]: LOADK     R13 0        ; R13 := 0.000000
  67 [-]: CALL      R10 4 0      ; R10,... := R10(R11,R12,R13)
  68 [-]: SETLIST   R9 0 1       ; R9[(1-1)*FPF+i] := R(9+i), 1 <= i <= 0
  69 [-]: LOADK     R10 K17      ; R10 := 0.150000
- 70 [-]: CONST     R11 0        ; R11 := 0.000000
+ 70 [-]: LOADK     R11 0        ; R11 := 0.000000
  71 [-]: CLOSURE   R12 0        ; R12 := closure(Function #7.1)
  72 [-]: MOVE      R0 R3        ; R0 := R3
  73 [-]: CALL      R4 9 1       ; R4(R5,R6,R7,R8,R9,R10,R11,R12)
@@ -431,7 +431,7 @@
  89 [-]: LT        0 K11 R5     ; if 0.000000 >= R5 then PC := 108
  90 [-]: JMP       108          ; PC := 108
  91 [-]: GETGLOBAL R6 K19       ; R6 := 0xcd0165a3
- 92 [-]: CONST     R7 1         ; R7 := 1.000000
+ 92 [-]: LOADK     R7 1         ; R7 := 1.000000
  93 [-]: CALL      R6 2 2       ; R6 := R6(R7)
  94 [-]: GETUPVAL  R7 U5        ; R7 := U5
  95 [-]: SELF      R7 R7 K20    ; R8 := R7; R7 := R7[0xea061e98]
@@ -498,14 +498,14 @@
   1 [-]: GETUPVAL  R0 U0        ; R0 := U0
   2 [-]: TEST      R0 0         ; if not R0 then PC := 234
   3 [-]: JMP       234          ; PC := 234
-  4 [-]: CONST     R0 0         ; R0 := 0.000000
-  5 [-]: CONST     R1 1         ; R1 := 1.000000
+  4 [-]: LOADK     R0 0         ; R0 := 0.000000
+  5 [-]: LOADK     R1 1         ; R1 := 1.000000
   6 [-]: GETUPVAL  R2 U1        ; R2 := U1
-  7 [-]: CONST     R3 1         ; R3 := 1.000000
+  7 [-]: LOADK     R3 1         ; R3 := 1.000000
   8 [-]: FORPREP   R1 106       ; R1 -= R3; PC := 106
   9 [-]: GETUPVAL  R5 U2        ; R5 := U2
  10 [-]: GETTABLE  R5 R5 R4     ; R5 := R5[R4]
- 11 [-]: SETTABLE  R5 K0 R0     ; R5[0x00000001] := R0
+ 11 [-]: SETTABLE  R5 K0 R0     ; R5["TargetX"] := R0
  12 [-]: GETUPVAL  R5 U3        ; R5 := U3
  13 [-]: GETTABLE  R5 R5 K1     ; R5 := R5["mForcedHorizontalSeparation"]
  14 [-]: ADD       R0 R0 R5     ; R0 := R0 + R5
@@ -558,7 +558,7 @@
  61 [-]: GETTABLE  R8 R8 K17    ; R8 := R8["mClipName"]
  62 [-]: LOADK     R9 K18       ; R9 := ".Label"
  63 [-]: CONCAT    R8 R8 R9     ; R8 := R8 .. R9
- 64 [-]: CONST     R9 29        ; R9 := 29.000000
+ 64 [-]: LOADK     R9 29        ; R9 := 29.000000
  65 [-]: MOVE      R10 R5       ; R10 := R5
  66 [-]: CALL      R6 5 1       ; R6(R7,R8,R9,R10)
  67 [-]: GETUPVAL  R6 U2        ; R6 := U2
@@ -569,10 +569,10 @@
  72 [-]: GETTABLE  R9 R9 K17    ; R9 := R9["mClipName"]
  73 [-]: LOADK     R10 K18      ; R10 := ".Label"
  74 [-]: CONCAT    R9 R9 R10    ; R9 := R9 .. R10
- 75 [-]: CONST     R10 33       ; R10 := 33.000000
+ 75 [-]: LOADK     R10 33       ; R10 := 33.000000
  76 [-]: CALL      R7 4 2       ; R7 := R7(R8,R9,R10)
  77 [-]: ADD       R7 R7 K21    ; R7 := R7 + 28.000000
- 78 [-]: SETTABLE  R6 K19 R7    ; R6[0xae91e43b] := R7
+ 78 [-]: SETTABLE  R6 K19 R7    ; R6["ElementWidth"] := R7
  79 [-]: GETUPVAL  R6 U2        ; R6 := U2
  80 [-]: GETTABLE  R6 R6 R4     ; R6 := R6[R4]
  81 [-]: GETTABLE  R6 R6 K22    ; R6 := R6["Padding"]
@@ -582,7 +582,7 @@
  85 [-]: GETTABLE  R6 R6 R4     ; R6 := R6[R4]
  86 [-]: GETGLOBAL R7 K23       ; R7 := 0x5bced4c4
  87 [-]: GETTABLE  R7 R7 K24    ; R82 := R7[0xb62ecfe0]
- 88 [-]: CONST     R8 1         ; R8 := 1.000000
+ 88 [-]: LOADK     R8 1         ; R8 := 1.000000
  89 [-]: GETUPVAL  R9 U2        ; R9 := U2
  90 [-]: GETTABLE  R9 R9 R4     ; R9 := R9[R4]
  91 [-]: GETTABLE  R9 R9 K19    ; R9 := R9["ElementWidth"]
@@ -591,11 +591,11 @@
  94 [-]: GETTABLE  R10 R10 K22  ; R10 := R10["Padding"]
  95 [-]: ADD       R9 R9 R10    ; R9 := R9 + R10
  96 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
- 97 [-]: SETTABLE  R6 K19 R7    ; R6[0xae91e43b] := R7
+ 97 [-]: SETTABLE  R6 K19 R7    ; R6["ElementWidth"] := R7
  98 [-]: GETUPVAL  R6 U2        ; R6 := U2
  99 [-]: GETTABLE  R6 R6 R4     ; R6 := R6[R4]
 100 [-]: GETUPVAL  R7 U4        ; R7 := U4
-101 [-]: SETTABLE  R6 K25 R7    ; R6[0x03f57322] := R7
+101 [-]: SETTABLE  R6 K25 R7    ; R6["Screen"] := R7
 102 [-]: GETUPVAL  R6 U2        ; R6 := U2
 103 [-]: GETTABLE  R6 R6 R4     ; R6 := R6[R4]
 104 [-]: GETTABLE  R6 R6 K19    ; R6 := R6["ElementWidth"]
@@ -616,9 +616,9 @@
 119 [-]: SETTABLE  R7 K29 R0    ; R7["DeltaX"] := R0
 120 [-]: GETUPVAL  R7 U3        ; R7 := U3
 121 [-]: SETTABLE  R7 K30 R6    ; R7["StartingX"] := R6
-122 [-]: CONST     R7 1         ; R7 := 1.000000
+122 [-]: LOADK     R7 1         ; R7 := 1.000000
 123 [-]: GETUPVAL  R8 U1        ; R8 := U1
-124 [-]: CONST     R9 1         ; R9 := 1.000000
+124 [-]: LOADK     R9 1         ; R9 := 1.000000
 125 [-]: FORPREP   R7 233       ; R7 -= R9; PC := 233
 126 [-]: GETUPVAL  R11 U2       ; R11 := U2
 127 [-]: GETTABLE  R11 R11 R10  ; R11 := R11[R10]
@@ -626,7 +626,7 @@
 129 [-]: GETTABLE  R12 R12 R10  ; R12 := R12[R10]
 130 [-]: GETTABLE  R12 R12 K0   ; R12 := R12["TargetX"]
 131 [-]: ADD       R12 R6 R12   ; R12 := R6 + R12
-132 [-]: SETTABLE  R11 K0 R12   ; R11[0x00000001] := R12
+132 [-]: SETTABLE  R11 K0 R12   ; R11["TargetX"] := R12
 133 [-]: GETUPVAL  R11 U2       ; R11 := U2
 134 [-]: GETTABLE  R11 R11 R10  ; R11 := R11[R10]
 135 [-]: GETTABLE  R11 R11 K31  ; R11 := R11["Pulse"]
@@ -642,10 +642,10 @@
 145 [-]: DIV       R13 R13 K32  ; R13 := R13 / 2.000000
 146 [-]: ADD       R12 R12 R13  ; R12 := R12 + R13
 147 [-]: NEWTABLE  R13 4 0      ; R13 := {}
-148 [-]: CONST     R14 2        ; R14 := 2.000000
-149 [-]: CONST     R15 0        ; R15 := 0.750000
-150 [-]: CONST     R16 0        ; R16 := 0.750000
-151 [-]: CONST     R17 7        ; R17 := 7.000000
+148 [-]: LOADK     R14 2        ; R14 := 2.000000
+149 [-]: LOADK     R15 0        ; R15 := 0.750000
+150 [-]: LOADK     R16 0        ; R16 := 0.750000
+151 [-]: LOADK     R17 7        ; R17 := 7.000000
 152 [-]: SETLIST   R13 4 1      ; R13[(1-1)*FPF+i] := R(13+i), 1 <= i <= 4
 153 [-]: CALL      R11 3 1      ; R11(R12,R13)
 154 [-]: GETUPVAL  R11 U4       ; R11 := U4
@@ -682,7 +682,7 @@
 185 [-]: JMP       187          ; PC := 187
 186 [-]: OP_LOADBOOL R15 0 1      ; R15 := false; PC := 187
 187 [-]: OP_LOADBOOL R15 1 0      ; R15 := true
-188 [-]: SETTABLE  R14 K36 R15  ; R14[0xbce5a201] := R15
+188 [-]: SETTABLE  R14 K36 R15  ; R14["mCallbackHandled"] := R15
 189 [-]: GETUPVAL  R14 U2       ; R14 := U2
 190 [-]: GETTABLE  R14 R14 R10  ; R14 := R14[R10]
 191 [-]: GETUPVAL  R15 U2       ; R15 := U2
@@ -702,7 +702,7 @@
 205 [-]: JMP       207          ; PC := 207
 206 [-]: OP_LOADBOOL R15 0 1      ; R15 := false; PC := 207
 207 [-]: OP_LOADBOOL R15 1 0      ; R15 := true
-208 [-]: SETTABLE  R14 K36 R15  ; R14[0xbce5a201] := R15
+208 [-]: SETTABLE  R14 K36 R15  ; R14["mCallbackHandled"] := R15
 209 [-]: GETUPVAL  R14 U6       ; R14 := U6
 210 [-]: GETUPVAL  R15 U2       ; R15 := U2
 211 [-]: GETTABLE  R15 R15 R10  ; R15 := R15[R10]
@@ -711,7 +711,7 @@
 214 [-]: GETUPVAL  R14 U2       ; R14 := U2
 215 [-]: GETTABLE  R14 R14 R10  ; R14 := R14[R10]
 216 [-]: GETGLOBAL R15 K40      ; R15 := 0xcd0165a3
-217 [-]: CONST     R16 1        ; R16 := 1.000000
+217 [-]: LOADK     R16 1        ; R16 := 1.000000
 218 [-]: CALL      R15 2 2      ; R15 := R15(R16)
 219 [-]: CLOSURE   R16 0        ; R16 := closure(Function #7.2.1)
 220 [-]: GETUPVAL  R0 U7        ; R0 := U7
@@ -728,9 +728,9 @@
 231 [-]: SETTABLE  R15 R12 R16  ; R15[R12] := R16
 232 [-]: CLOSE     R12          ; SAVE R12,...
 233 [-]: FORLOOP   R7 126       ; R7 += R9; if R7 <= R8 then begin PC := 126; R10 := R7 end
-234 [-]: CONST     R12 1        ; R12 := 1.000000
+234 [-]: LOADK     R12 1        ; R12 := 1.000000
 235 [-]: GETUPVAL  R13 U1       ; R13 := U1
-236 [-]: CONST     R14 1        ; R14 := 1.000000
+236 [-]: LOADK     R14 1        ; R14 := 1.000000
 237 [-]: FORPREP   R12 284      ; R12 -= R14; PC := 284
 238 [-]: GETUPVAL  R16 U3       ; R16 := U3
 239 [-]: SELF      R16 R16 K41  ; R17 := R16; R16 := R16[0xbad4316f]
@@ -956,7 +956,7 @@
   2 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1[0xc0a3774b]
   3 [-]: GETTABLE  R3 R0 K2     ; R3 := R0["mClipName"]
   4 [-]: LOADK     R4 K3        ; R4 := "Btn"
-  5 [-]: CONST     R5 59        ; R5 := 59.000000
+  5 [-]: LOADK     R5 59        ; R5 := 59.000000
   6 [-]: OP_LOADBOOL R6 0 0       ; R6 := false
   7 [-]: CALL      R1 6 1       ; R1(R2,R3,R4,R5,R6)
   8 [-]: GETTABLE  R1 R0 K4     ; R1 := R0["CallOut"]
@@ -1010,9 +1010,9 @@
  24 [-]: GETGLOBAL R9 K10       ; R9 := 0x34291f5c
  25 [-]: GETTABLE  R9 R9 K12    ; R82 := R9[0x399826a5]
  26 [-]: CALL      R9 1 2       ; R9 := R9()
- 27 [-]: CONST     R10 1        ; R10 := 1.000000
+ 27 [-]: LOADK     R10 1        ; R10 := 1.000000
  28 [-]: MOVE      R11 R7       ; R11 := R7
- 29 [-]: CONST     R12 1        ; R12 := 1.000000
+ 29 [-]: LOADK     R12 1        ; R12 := 1.000000
  30 [-]: FORPREP   R10 96       ; R10 -= R12; PC := 96
  31 [-]: GETUPVAL  R14 U0       ; R14 := U0
  32 [-]: GETTABLE  R14 R14 R13  ; R14 := R14[R13]
@@ -1224,14 +1224,14 @@
  40 [-]: GETTABLE  R7 R0 K17    ; R7 := R0["mClipName"]
  41 [-]: LOADK     R8 K18       ; R8 := ".Btn"
  42 [-]: CONCAT    R7 R7 R8     ; R7 := R7 .. R8
- 43 [-]: CONST     R8 2         ; R8 := 2.000000
+ 43 [-]: LOADK     R8 2         ; R8 := 2.000000
  44 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
  45 [-]: GETGLOBAL R6 K11       ; R6 := 0xae91e43b
  46 [-]: SELF      R6 R6 K16    ; R7 := R6; R6 := R6[0x91a24e4b]
  47 [-]: GETTABLE  R8 R0 K17    ; R8 := R0["mClipName"]
  48 [-]: LOADK     R9 K18       ; R9 := ".Btn"
  49 [-]: CONCAT    R8 R8 R9     ; R8 := R8 .. R9
- 50 [-]: CONST     R9 3         ; R9 := 3.000000
+ 50 [-]: LOADK     R9 3         ; R9 := 3.000000
  51 [-]: CALL      R6 4 2       ; R6 := R6(R7,R8,R9)
  52 [-]: GETTABLE  R7 R0 K2     ; R7 := R0["mButton"]
  53 [-]: GETTABLE  R7 R7 K19    ; R7 := R7["mWidth"]
@@ -1350,13 +1350,13 @@
   1 [-]: GETTABLE  R2 R0 K0     ; R2 := R0["mMovie"]
   2 [-]: SELF      R2 R2 K1     ; R3 := R2; R2 := R2[0x67bc869f]
   3 [-]: GETTABLE  R4 R1 K2     ; R4 := R1["mClipName"]
-  4 [-]: CONST     R5 10        ; R5 := 10.000000
-  5 [-]: CONST     R6 0         ; R6 := 0.000000
+  4 [-]: LOADK     R5 10        ; R5 := 10.000000
+  5 [-]: LOADK     R6 0         ; R6 := 0.000000
   6 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
   7 [-]: GETTABLE  R2 R0 K0     ; R2 := R0["mMovie"]
   8 [-]: SELF      R2 R2 K1     ; R3 := R2; R2 := R2[0x67bc869f]
   9 [-]: GETTABLE  R4 R1 K2     ; R4 := R1["mClipName"]
- 10 [-]: CONST     R5 0         ; R5 := 0.000000
+ 10 [-]: LOADK     R5 0         ; R5 := 0.000000
  11 [-]: GETTABLE  R6 R1 K3     ; R6 := R1["TargetX"]
  12 [-]: GETUPVAL  R7 U0        ; R7 := U0
  13 [-]: GETTABLE  R7 R7 K4     ; R7 := R7["DeltaX"]
@@ -1380,8 +1380,8 @@
   4 [-]: TEST      R2 1         ; if R2 then PC := 16
   5 [-]: JMP       16           ; PC := 16
   6 [-]: NEWTABLE  R2 2 0       ; R2 := {}
-  7 [-]: CONST     R3 10        ; R3 := 10.000000
-  8 [-]: CONST     R4 0         ; R4 := 0.000000
+  7 [-]: LOADK     R3 10        ; R3 := 10.000000
+  8 [-]: LOADK     R4 0         ; R4 := 0.000000
   9 [-]: SETLIST   R2 2 1       ; R2[(1-1)*FPF+i] := R(2+i), 1 <= i <= 2
  10 [-]: NEWTABLE  R3 2 0       ; R3 := {}
  11 [-]: GETTABLE  R4 R1 K1     ; R4 := R1["Alpha"]
@@ -1390,11 +1390,11 @@
  14 [-]: RETURN    R2 3         ; return R2,R3
  15 [-]: JMP       25           ; PC := 25
  16 [-]: NEWTABLE  R2 2 0       ; R2 := {}
- 17 [-]: CONST     R3 10        ; R3 := 10.000000
- 18 [-]: CONST     R4 0         ; R4 := 0.000000
+ 17 [-]: LOADK     R3 10        ; R3 := 10.000000
+ 18 [-]: LOADK     R4 0         ; R4 := 0.000000
  19 [-]: SETLIST   R2 2 1       ; R2[(1-1)*FPF+i] := R(2+i), 1 <= i <= 2
  20 [-]: NEWTABLE  R3 2 0       ; R3 := {}
- 21 [-]: CONST     R4 100       ; R4 := 100.000000
+ 21 [-]: LOADK     R4 100       ; R4 := 100.000000
  22 [-]: GETTABLE  R5 R1 K2     ; R5 := R1["TargetX"]
  23 [-]: SETLIST   R3 2 1       ; R3[(1-1)*FPF+i] := R(3+i), 1 <= i <= 2
  24 [-]: RETURN    R2 3         ; return R2,R3
@@ -1452,15 +1452,15 @@
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x25312c9b
   2 [-]: GETGLOBAL R1 K1        ; R1 := 0xae91e43b
   3 [-]: LOADK     R2 K2        ; R2 := "_root"
-  4 [-]: CONST     R3 0         ; R3 := 0.000000
+  4 [-]: LOADK     R3 0         ; R3 := 0.000000
   5 [-]: NEWTABLE  R4 1 0       ; R4 := {}
-  6 [-]: CONST     R5 10        ; R5 := 10.000000
+  6 [-]: LOADK     R5 10        ; R5 := 10.000000
   7 [-]: SETLIST   R4 1 1       ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 1
   8 [-]: NEWTABLE  R5 1 0       ; R5 := {}
-  9 [-]: CONST     R6 0         ; R6 := 0.000000
+  9 [-]: LOADK     R6 0         ; R6 := 0.000000
  10 [-]: SETLIST   R5 1 1       ; R5[(1-1)*FPF+i] := R(5+i), 1 <= i <= 1
  11 [-]: LOADK     R6 K4        ; R6 := 0.150000
- 12 [-]: CONST     R7 0         ; R7 := 0.000000
+ 12 [-]: LOADK     R7 0         ; R7 := 0.000000
  13 [-]: GETUPVAL  R8 U0        ; R8 := U0
  14 [-]: CALL      R0 9 1       ; R0(R1,R2,R3,R4,R5,R6,R7,R8)
  15 [-]: RETURN    R0 1         ; return 
@@ -1491,7 +1491,7 @@
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0xae91e43b
   2 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1[0xaade900e]
   3 [-]: LOADK     R3 K2        ; R3 := "_root"
-  4 [-]: CONST     R4 11        ; R4 := 11.000000
+  4 [-]: LOADK     R4 11        ; R4 := 11.000000
   5 [-]: MOVE      R5 R0        ; R5 := R0
   6 [-]: CALL      R1 5 1       ; R1(R2,R3,R4,R5)
   7 [-]: RETURN    R0 1         ; return 
@@ -1506,7 +1506,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  5
 
-  1 [-]: CONST     R0 1         ; R0 := 1.000000
+  1 [-]: LOADK     R0 1         ; R0 := 1.000000
   2 [-]: LOADNIL   R1 R1        ; R1 := nil
   3 [-]: GETGLOBAL R2 K0        ; R2 := 0xcd0165a3
   4 [-]: MOVE      R3 R0        ; R3 := R0
@@ -1668,7 +1668,7 @@
  22 [-]: GETGLOBAL R2 K3        ; R2 := 0xb693b6c1
  23 [-]: CALL      R2 1 0       ; R2,... := R2()
  24 [-]: CALL      R0 0 1       ; R0(R1,...)
- 25 [-]: CONST     R0 1         ; R0 := 1.000000
+ 25 [-]: LOADK     R0 1         ; R0 := 1.000000
  26 [-]: GETUPVAL  R1 U2        ; R1 := U2
  27 [-]: LEN       R1 R1        ; R1 := # R1
  28 [-]: LE        0 R0 R1      ; if R0 > R1 then PC := 45

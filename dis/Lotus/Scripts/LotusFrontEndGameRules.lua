@@ -153,8 +153,8 @@
  40 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  41 [-]: TEST      R5 0         ; if not R5 then PC := 85
  42 [-]: JMP       85           ; PC := 85
- 43 [-]: CONST     R5 2         ; R5 := 2.000000
- 44 [-]: CONST     R6 4         ; R6 := 4.000000
+ 43 [-]: LOADK     R5 2         ; R5 := 2.000000
+ 44 [-]: LOADK     R6 4         ; R6 := 4.000000
  45 [-]: GETGLOBAL R7 K10       ; R7 := 0xb009bbc6
  46 [-]: LOADK     R8 K11       ; R8 := "/Lotus/Types/Game/LotusDecoPlacementCameraSpot"
  47 [-]: CALL      R7 2 2       ; R7 := R7(R8)

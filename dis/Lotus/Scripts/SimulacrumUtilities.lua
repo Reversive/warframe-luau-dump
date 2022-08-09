@@ -272,7 +272,7 @@
  32 [-]: NEWTABLE  R3 0 0       ; R3 := {}
  33 [-]: GETGLOBAL R4 K13       ; R4 := 0x76ea806b
  34 [-]: SELF      R4 R4 K14    ; R5 := R4; R4 := R4[0x3f3ae64c]
- 35 [-]: CONST     R6 0         ; R6 := 0.000000
+ 35 [-]: LOADK     R6 0         ; R6 := 0.000000
  36 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
  37 [-]: SELF      R4 R4 K15    ; R5 := R4; R4 := R4[0x80563238]
  38 [-]: CALL      R4 2 2       ; R4 := R4(R5)
@@ -285,9 +285,9 @@
  45 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  46 [-]: SELF      R5 R5 K17    ; R6 := R5; R5 := R5[0xf4045b7e]
  47 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 48 [-]: CONST     R6 1         ; R6 := 1.000000
+ 48 [-]: LOADK     R6 1         ; R6 := 1.000000
  49 [-]: LEN       R7 R5        ; R7 := # R5
- 50 [-]: CONST     R8 1         ; R8 := 1.000000
+ 50 [-]: LOADK     R8 1         ; R8 := 1.000000
  51 [-]: FORPREP   R6 65        ; R6 -= R8; PC := 65
  52 [-]: GETTABLE  R10 R5 R9    ; R10 := R5[R9]
  53 [-]: GETTABLE  R10 R10 K18  ; R10 := R10["mItemType"]
@@ -308,9 +308,9 @@
  68 [-]: GETGLOBAL R13 K20      ; R13 := gDangerRoomTileItemType
  69 [-]: OP_LOADBOOL R14 0 0      ; R14 := false
  70 [-]: CALL      R11 4 2      ; R11 := R11(R12,R13,R14)
- 71 [-]: CONST     R12 1        ; R12 := 1.000000
+ 71 [-]: LOADK     R12 1        ; R12 := 1.000000
  72 [-]: LEN       R13 R11      ; R13 := # R11
- 73 [-]: CONST     R14 1        ; R14 := 1.000000
+ 73 [-]: LOADK     R14 1        ; R14 := 1.000000
  74 [-]: FORPREP   R12 104      ; R12 -= R14; PC := 104
  75 [-]: GETTABLE  R16 R11 R15  ; R16 := R11[R15]
  76 [-]: GETGLOBAL R17 K2       ; R17 := 0x7b998233
@@ -324,9 +324,9 @@
  84 [-]: CALL      R18 2 2      ; R18 := R18(R19)
  85 [-]: TEST      R18 1        ; if R18 then PC := 97
  86 [-]: JMP       97           ; PC := 97
- 87 [-]: CONST     R19 1        ; R19 := 1.000000
+ 87 [-]: LOADK     R19 1        ; R19 := 1.000000
  88 [-]: LEN       R20 R3       ; R20 := # R3
- 89 [-]: CONST     R21 1        ; R21 := 1.000000
+ 89 [-]: LOADK     R21 1        ; R21 := 1.000000
  90 [-]: FORPREP   R19 96       ; R19 -= R21; PC := 96
  91 [-]: GETTABLE  R23 R3 R22   ; R23 := R3[R22]
  92 [-]: EQ        0 R23 R17    ; if R23 ~= R17 then PC := 96
@@ -359,7 +359,7 @@
 119 [-]: CALL      R24 0 1      ; R24(R25,...)
 120 [-]: SELF      R24 R23 K30  ; R25 := R23; R24 := R23[0xe4162eed]
 121 [-]: LOADK     R26 K34      ; R26 := "SetRequiredSelections"
-122 [-]: CONST     R27 1        ; R27 := 1.000000
+122 [-]: LOADK     R27 1        ; R27 := 1.000000
 123 [-]: CALL      R24 4 1      ; R24(R25,R26,R27)
 124 [-]: SELF      R24 R23 K30  ; R25 := R23; R24 := R23[0xe4162eed]
 125 [-]: LOADK     R26 K35      ; R26 := "SetRequiresConfirmation"
@@ -473,10 +473,10 @@
 ; Max Stack Size:  9
 
   1 [-]: NEWTABLE  R0 0 0       ; R0 := {}
-  2 [-]: CONST     R1 1         ; R1 := 1.000000
+  2 [-]: LOADK     R1 1         ; R1 := 1.000000
   3 [-]: GETUPVAL  R2 U0        ; R2 := U0
   4 [-]: LEN       R2 R2        ; R2 := # R2
-  5 [-]: CONST     R3 1         ; R3 := 1.000000
+  5 [-]: LOADK     R3 1         ; R3 := 1.000000
   6 [-]: FORPREP   R1 18        ; R1 -= R3; PC := 18
   7 [-]: GETUPVAL  R5 U1        ; R5 := U1
   8 [-]: GETTABLE  R5 R5 K0     ; R82 := R5[0x08681f50]
@@ -566,8 +566,8 @@
  13 [-]: GETTABLE  R0 R0 K2     ; R0 := R0["spawnedAgents"]
  14 [-]: LOADNIL   R1 R1        ; R1 := nil
  15 [-]: LEN       R2 R0        ; R2 := # R0
- 16 [-]: CONST     R3 1         ; R3 := 1.000000
- 17 [-]: CONST     R4 -1        ; R4 := -1.000000
+ 16 [-]: LOADK     R3 1         ; R3 := 1.000000
+ 17 [-]: LOADK     R4 -1        ; R4 := -1.000000
  18 [-]: FORPREP   R2 39        ; R2 -= R4; PC := 39
  19 [-]: GETTABLE  R1 R0 R5     ; R1 := R0[R5]
  20 [-]: GETGLOBAL R6 K0        ; R6 := 0x7b998233

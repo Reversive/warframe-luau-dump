@@ -10,9 +10,9 @@
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x2d0fad09
   2 [-]: LOADK     R1 K1        ; R1 := "Lotus.Scripts.Libs.AbilitiesLib"
   3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: CONST     R1 0         ; R1 := 0.000000
+  4 [-]: LOADK     R1 0         ; R1 := 0.000000
   5 [-]: LOADNIL   R2 R2        ; R2 := nil
-  6 [-]: CONST     R3 0         ; R3 := 0.000000
+  6 [-]: LOADK     R3 0         ; R3 := 0.000000
   7 [-]: CLOSURE   R4 0         ; R4 := closure(Function #1)
   8 [-]: SETGLOBAL R4 K2        ; GetArmoredRespawnDescriptionInfo := R4
   9 [-]: CLOSURE   R4 1         ; R4 := closure(Function #2)
@@ -185,7 +185,7 @@
  25 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  26 [-]: MOVE      R1 R4        ; R1 := R4
  27 [-]: GETGLOBAL R4 K5        ; R4 := 0xcbd666e1
- 28 [-]: CONST     R5 3         ; R5 := 3.000000
+ 28 [-]: LOADK     R5 3         ; R5 := 3.000000
  29 [-]: CALL      R4 2 1       ; R4(R5)
  30 [-]: GETGLOBAL R4 K0        ; R4 := 0x7b998233
  31 [-]: MOVE      R5 R0        ; R5 := R0
@@ -205,7 +205,7 @@
  45 [-]: SELF      R8 R0 K12    ; R9 := R0; R8 := R0[0xcb3851b8]
  46 [-]: CALL      R8 2 2       ; R8 := R8(R9)
  47 [-]: GETGLOBAL R9 K13       ; R9 := EMPTY_SYMBOL
- 48 [-]: CONST     R10 1        ; R10 := 1.000000
+ 48 [-]: LOADK     R10 1        ; R10 := 1.000000
  49 [-]: CALL      R4 7 2       ; R4 := R4(R5,R6,R7,R8,R9,R10)
  50 [-]: GETGLOBAL R5 K0        ; R5 := 0x7b998233
  51 [-]: MOVE      R6 R4        ; R6 := R4
@@ -276,7 +276,7 @@
 116 [-]: CALL      R9 1 2       ; R9 := R9()
 117 [-]: SUB       R8 R8 R9     ; R8 := R8 - R9
 118 [-]: GETGLOBAL R9 K5        ; R9 := 0xcbd666e1
-119 [-]: CONST     R10 0        ; R10 := 0.000000
+119 [-]: LOADK     R10 0        ; R10 := 0.000000
 120 [-]: CALL      R9 2 1       ; R9(R10)
 121 [-]: JMP       113          ; PC := 113
 122 [-]: GETGLOBAL R9 K0        ; R9 := 0x7b998233
@@ -290,9 +290,9 @@
 130 [-]: SELF      R12 R5 K11   ; R13 := R5; R12 := R5[0xd1586535]
 131 [-]: CALL      R12 2 2      ; R12 := R12(R13)
 132 [-]: GETGLOBAL R13 K31      ; R13 := 0xa421af95
-133 [-]: CONST     R14 0        ; R14 := 0.000000
+133 [-]: LOADK     R14 0        ; R14 := 0.000000
 134 [-]: LOADK     R15 K32      ; R15 := 0.600000
-135 [-]: CONST     R16 0        ; R16 := 0.000000
+135 [-]: LOADK     R16 0        ; R16 := 0.000000
 136 [-]: CALL      R13 4 2      ; R13 := R13(R14,R15,R16)
 137 [-]: ADD       R12 R12 R13  ; R12 := R12 + R13
 138 [-]: GETGLOBAL R13 K33      ; R13 := ZERO_ROTATION
@@ -376,8 +376,8 @@
  20 [-]: SELF      R2 R1 K3     ; R3 := R1; R2 := R1[0x62c81b76]
  21 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  22 [-]: SELF      R2 R2 K4     ; R3 := R2; R2 := R2[0xc1a84a4b]
- 23 [-]: CONST     R4 1         ; R4 := 1.000000
- 24 [-]: CONST     R5 0         ; R5 := 0.000000
+ 23 [-]: LOADK     R4 1         ; R4 := 1.000000
+ 24 [-]: LOADK     R5 0         ; R5 := 0.000000
  25 [-]: CALL      R2 4 2       ; R2 := R2(R3,R4,R5)
  26 [-]: GETTABLE  R2 R2 K6     ; R2 := R2["mAttachedUpgrades"]
  27 [-]: GETGLOBAL R3 K7        ; R3 := 0xc8802016
@@ -462,10 +462,10 @@
  39 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  40 [-]: TEST      R4 0         ; if not R4 then PC := 89
  41 [-]: JMP       89           ; PC := 89
- 42 [-]: CONST     R4 1         ; R4 := 1.000000
+ 42 [-]: LOADK     R4 1         ; R4 := 1.000000
  43 [-]: GETGLOBAL R5 K10       ; R5 := 0x2d1e0bc3
  44 [-]: LEN       R5 R5        ; R5 := # R5
- 45 [-]: CONST     R6 1         ; R6 := 1.000000
+ 45 [-]: LOADK     R6 1         ; R6 := 1.000000
  46 [-]: FORPREP   R4 59        ; R4 -= R6; PC := 59
  47 [-]: SELF      R8 R2 K3     ; R9 := R2; R8 := R2[0xf2deaf69]
  48 [-]: GETGLOBAL R10 K10      ; R10 := 0x2d1e0bc3
@@ -486,7 +486,7 @@
  63 [-]: TEST      R8 0         ; if not R8 then PC := 66
  64 [-]: JMP       66           ; PC := 66
  65 [-]: RETURN    R0 1         ; return 
- 66 [-]: CONST     R8 30        ; R8 := 30.000000
+ 66 [-]: LOADK     R8 30        ; R8 := 30.000000
  67 [-]: SETUPVAL  R8 U2        ; U82 := 
  68 [-]: SELF      R8 R3 K6     ; R9 := R3; R8 := R3[0xde321e6f]
  69 [-]: CALL      R8 2 2       ; R8 := R8(R9)
@@ -500,7 +500,7 @@
  77 [-]: OP_LOADBOOL R11 0 0      ; R11 := false
  78 [-]: CALL      R8 4 1       ; R8(R9,R10,R11)
  79 [-]: GETGLOBAL R8 K17       ; R8 := 0xcbd666e1
- 80 [-]: CONST     R9 1         ; R9 := 1.000000
+ 80 [-]: LOADK     R9 1         ; R9 := 1.000000
  81 [-]: CALL      R8 2 1       ; R8(R9)
  82 [-]: GETGLOBAL R8 K2        ; R8 := 0x7b998233
  83 [-]: MOVE      R9 R0        ; R9 := R0
@@ -550,9 +550,9 @@
  27 [-]: SELF      R3 R3 K9     ; R4 := R3; R3 := R3[0xfb669000]
  28 [-]: GETGLOBAL R5 K10       ; R5 := gLotusSentinelAvatarType
  29 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
- 30 [-]: CONST     R4 1         ; R4 := 1.000000
+ 30 [-]: LOADK     R4 1         ; R4 := 1.000000
  31 [-]: LEN       R5 R3        ; R5 := # R3
- 32 [-]: CONST     R6 1         ; R6 := 1.000000
+ 32 [-]: LOADK     R6 1         ; R6 := 1.000000
  33 [-]: FORPREP   R4 44        ; R4 -= R6; PC := 44
  34 [-]: GETGLOBAL R8 K1        ; R8 := 0x7b998233
  35 [-]: GETTABLE  R9 R3 R7     ; R9 := R3[R7]

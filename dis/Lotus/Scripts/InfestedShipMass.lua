@@ -27,7 +27,7 @@
   2 [-]: GETTABLE  R0 R0 K1     ; R82 := R0[0xc62a6be2]
   3 [-]: GETGLOBAL R1 K2        ; R1 := 0x55156ff7
   4 [-]: CALL      R1 1 2       ; R1 := R1()
-  5 [-]: CONST     R2 1         ; R2 := 1.500000
+  5 [-]: LOADK     R2 1         ; R2 := 1.500000
   6 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
   7 [-]: DIV       R0 R0 K3     ; R0 := R0 / 1.500000
   8 [-]: GETGLOBAL R1 K0        ; R1 := 0x5bced4c4
@@ -81,13 +81,13 @@
  16 [-]: GETTABLE  R3 R3 K6     ; R3 := R3["HelminthSpeaking"]
  17 [-]: TEST      R3 1         ; if R3 then PC := 20
  18 [-]: JMP       20           ; PC := 20
- 19 [-]: CONST     R3 0         ; R3 := 0.000000
+ 19 [-]: LOADK     R3 0         ; R3 := 0.000000
  20 [-]: LT        0 K7 R3      ; if 0.000100 >= R3 then PC := 23
  21 [-]: JMP       23           ; PC := 23
  22 [-]: MOVE      R2 R3        ; R2 := R3
  23 [-]: GETGLOBAL R4 K8        ; R4 := 0x9bafffe3
- 24 [-]: CONST     R5 2         ; R5 := 2.000000
- 25 [-]: CONST     R6 8         ; R6 := 8.000000
+ 24 [-]: LOADK     R5 2         ; R5 := 2.000000
+ 25 [-]: LOADK     R6 8         ; R6 := 8.000000
  26 [-]: MOVE      R7 R2        ; R7 := R2
  27 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
  28 [-]: SELF      R5 R0 K9     ; R6 := R0; R5 := R0[0x986d2ab8]
@@ -98,7 +98,7 @@
  33 [-]: MOVE      R11 R4       ; R11 := R4
  34 [-]: CALL      R5 7 1       ; R5(R6,R7,R8,R9,R10,R11)
  35 [-]: GETGLOBAL R5 K10       ; R5 := 0xcbd666e1
- 36 [-]: CONST     R6 0         ; R6 := 0.000000
+ 36 [-]: LOADK     R6 0         ; R6 := 0.000000
  37 [-]: CALL      R5 2 1       ; R5(R6)
  38 [-]: JMP       8            ; PC := 8
  39 [-]: RETURN    R0 1         ; return 

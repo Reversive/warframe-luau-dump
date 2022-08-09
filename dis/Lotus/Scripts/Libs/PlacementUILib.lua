@@ -16,14 +16,14 @@
   7 [-]: LOADK     R1 K4        ; R1 := "SandBoxInv"
   8 [-]: CALL      R0 2 2       ; R0 := R0(R1)
   9 [-]: GETGLOBAL R1 K5        ; R1 := 0x60130201
- 10 [-]: CONST     R2 181       ; R2 := 181.000000
- 11 [-]: CONST     R3 220       ; R3 := 220.000000
- 12 [-]: CONST     R4 80        ; R4 := 80.000000
+ 10 [-]: LOADK     R2 181       ; R2 := 181.000000
+ 11 [-]: LOADK     R3 220       ; R3 := 220.000000
+ 12 [-]: LOADK     R4 80        ; R4 := 80.000000
  13 [-]: CALL      R1 4 2       ; R1 := R1(R2,R3,R4)
  14 [-]: GETGLOBAL R2 K5        ; R2 := 0x60130201
- 15 [-]: CONST     R3 196       ; R3 := 196.000000
- 16 [-]: CONST     R4 255       ; R4 := 255.000000
- 17 [-]: CONST     R5 196       ; R5 := 196.000000
+ 15 [-]: LOADK     R3 196       ; R3 := 196.000000
+ 16 [-]: LOADK     R4 255       ; R4 := 255.000000
+ 17 [-]: LOADK     R5 196       ; R5 := 196.000000
  18 [-]: CALL      R2 4 2       ; R2 := R2(R3,R4,R5)
  19 [-]: GETGLOBAL R3 K6        ; R3 := 0x7ed0a956
  20 [-]: LOADK     R4 K7        ; R4 := "/Lotus/Levels/ClanDojo/ClanDojoProcLevel"
@@ -101,15 +101,15 @@
   1 [-]: SELF      R1 R0 K0     ; R2 := R0; R1 := R0[0x1ac1655c]
   2 [-]: CALL      R1 2 2       ; R1 := R1(R2)
   3 [-]: SELF      R2 R1 K1     ; R3 := R1; R2 := R1[0xaa0faa2c]
-  4 [-]: CONST     R4 5         ; R4 := 5.000000
+  4 [-]: LOADK     R4 5         ; R4 := 5.000000
   5 [-]: GETUPVAL  R5 U0        ; R5 := U0
   6 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
   7 [-]: SELF      R2 R1 K1     ; R3 := R1; R2 := R1[0xaa0faa2c]
-  8 [-]: CONST     R4 6         ; R4 := 6.000000
+  8 [-]: LOADK     R4 6         ; R4 := 6.000000
   9 [-]: GETUPVAL  R5 U0        ; R5 := U0
  10 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
  11 [-]: SELF      R2 R1 K1     ; R3 := R1; R2 := R1[0xaa0faa2c]
- 12 [-]: CONST     R4 3         ; R4 := 3.000000
+ 12 [-]: LOADK     R4 3         ; R4 := 3.000000
  13 [-]: GETUPVAL  R5 U0        ; R5 := U0
  14 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
  15 [-]: SELF      R2 R1 K3     ; R3 := R1; R2 := R1[0x857557de]
@@ -117,10 +117,10 @@
  17 [-]: CALL      R2 3 1       ; R2(R3,R4)
  18 [-]: SELF      R2 R1 K4     ; R3 := R1; R2 := R1[0xeb3c14da]
  19 [-]: GETUPVAL  R4 U0        ; R4 := U0
- 20 [-]: CONST     R5 25        ; R5 := 25.000000
- 21 [-]: CONST     R6 6         ; R6 := 6.000000
- 22 [-]: CONST     R7 0         ; R7 := 0.000000
- 23 [-]: CONST     R8 0         ; R8 := 0.000000
+ 20 [-]: LOADK     R5 25        ; R5 := 25.000000
+ 21 [-]: LOADK     R6 6         ; R6 := 6.000000
+ 22 [-]: LOADK     R7 0         ; R7 := 0.000000
+ 23 [-]: LOADK     R8 0         ; R8 := 0.000000
  24 [-]: CALL      R2 7 1       ; R2(R3,R4,R5,R6,R7,R8)
  25 [-]: RETURN    R0 1         ; return 
 
@@ -237,9 +237,9 @@
  12 [-]: SELF      R10 R1 K5    ; R11 := R1; R10 := R1[0xf6ebd926]
  13 [-]: CALL      R10 2 2      ; R10 := R10(R11)
  14 [-]: GETGLOBAL R11 K6       ; R11 := 0xa421af95
- 15 [-]: CONST     R12 0        ; R12 := 0.000000
- 16 [-]: CONST     R13 1        ; R13 := 1.500000
- 17 [-]: CONST     R14 0        ; R14 := 0.000000
+ 15 [-]: LOADK     R12 0        ; R12 := 0.000000
+ 16 [-]: LOADK     R13 1        ; R13 := 1.500000
+ 17 [-]: LOADK     R14 0        ; R14 := 0.000000
  18 [-]: CALL      R11 4 2      ; R11 := R11(R12,R13,R14)
  19 [-]: ADD       R10 R10 R11  ; R10 := R10 + R11
  20 [-]: GETGLOBAL R11 K7       ; R11 := ZERO_ROTATION
@@ -277,7 +277,7 @@
  52 [-]: SETTABLE  R8 K12 R9    ; R8["freeCamActive"] := R9
  53 [-]: SETTABLE  R0 K14 R7    ; R0["mPlayer"] := R7
  54 [-]: GETGLOBAL R8 K15       ; R8 := 0xcbd666e1
- 55 [-]: CONST     R9 0         ; R9 := 0.000000
+ 55 [-]: LOADK     R9 0         ; R9 := 0.000000
  56 [-]: CALL      R8 2 1       ; R8(R9)
  57 [-]: GETGLOBAL R8 K1        ; R8 := 0x7b998233
  58 [-]: MOVE      R9 R1        ; R9 := R1
@@ -318,7 +318,7 @@
  93 [-]: CALL      R9 0 1       ; R9(R10,...)
  94 [-]: GETTABLE  R9 R0 K19    ; R9 := R0["mCameraAvatar"]
  95 [-]: SELF      R9 R9 K26    ; R10 := R9; R9 := R9[0x16620b43]
- 96 [-]: CONST     R11 0        ; R11 := 0.000000
+ 96 [-]: LOADK     R11 0        ; R11 := 0.000000
  97 [-]: CALL      R9 3 1       ; R9(R10,R11)
  98 [-]: GETTABLE  R9 R0 K19    ; R9 := R0["mCameraAvatar"]
  99 [-]: SELF      R9 R9 K27    ; R10 := R9; R9 := R9[0x6667e5d4]
@@ -402,9 +402,9 @@
 177 [-]: SELF      R11 R11 K40  ; R12 := R11; R11 := R11[0xfb669000]
 178 [-]: GETGLOBAL R13 K41      ; R13 := gContextActionType
 179 [-]: CALL      R11 3 2      ; R11 := R11(R12,R13)
-180 [-]: CONST     R12 1        ; R12 := 1.000000
+180 [-]: LOADK     R12 1        ; R12 := 1.000000
 181 [-]: LEN       R13 R11      ; R13 := # R11
-182 [-]: CONST     R14 1        ; R14 := 1.000000
+182 [-]: LOADK     R14 1        ; R14 := 1.000000
 183 [-]: FORPREP   R12 226      ; R12 -= R14; PC := 226
 184 [-]: GETTABLE  R16 R11 R15  ; R16 := R11[R15]
 185 [-]: SELF      R16 R16 K42  ; R17 := R16; R16 := R16[0x22da1852]
@@ -470,9 +470,9 @@
 245 [-]: LOADK     R19 K55      ; R19 := "Infested"
 246 [-]: CALL      R18 2 0      ; R18,... := R18(R19)
 247 [-]: CALL      R16 0 2      ; R16 := R16(R17,...)
-248 [-]: CONST     R17 1        ; R17 := 1.000000
+248 [-]: LOADK     R17 1        ; R17 := 1.000000
 249 [-]: LEN       R18 R16      ; R18 := # R16
-250 [-]: CONST     R19 1        ; R19 := 1.000000
+250 [-]: LOADK     R19 1        ; R19 := 1.000000
 251 [-]: FORPREP   R17 256      ; R17 -= R19; PC := 256
 252 [-]: GETGLOBAL R21 K3       ; R21 := 0x89326c93
 253 [-]: SELF      R21 R21 K56  ; R22 := R21; R21 := R21[0x59c96e77]
@@ -485,7 +485,7 @@
 260 [-]: TEST      R21 0        ; if not R21 then PC := 284
 261 [-]: JMP       284          ; PC := 284
 262 [-]: GETGLOBAL R21 K15      ; R21 := 0xcbd666e1
-263 [-]: CONST     R22 0        ; R22 := 0.000000
+263 [-]: LOADK     R22 0        ; R22 := 0.000000
 264 [-]: CALL      R21 2 1      ; R21(R22)
 265 [-]: SELF      R21 R1 K16   ; R22 := R1; R21 := R1[0xd1586535]
 266 [-]: CALL      R21 2 2      ; R21 := R21(R22)
@@ -648,7 +648,7 @@
 128 [-]: GETTABLE  R9 R0 K36    ; R9 := R0["mDefaultCamSpeed"]
 129 [-]: GETGLOBAL R10 K37      ; R10 := 0x76ea806b
 130 [-]: SELF      R10 R10 K38  ; R11 := R10; R10 := R10[0x3f3ae64c]
-131 [-]: CONST     R12 0        ; R12 := 0.000000
+131 [-]: LOADK     R12 0        ; R12 := 0.000000
 132 [-]: CALL      R10 3 2      ; R10 := R10(R11,R12)
 133 [-]: GETGLOBAL R11 K12      ; R11 := 0x7b998233
 134 [-]: MOVE      R12 R10      ; R12 := R10
@@ -699,7 +699,7 @@
 179 [-]: LOADK     R17 K48      ; R17 := 0.010000
 180 [-]: CALL      R14 4 1      ; R14(R15,R16,R17)
 181 [-]: SELF      R14 R1 K49   ; R15 := R1; R14 := R1[0x0e46e45b]
-182 [-]: CONST     R16 0        ; R16 := 0.000000
+182 [-]: LOADK     R16 0        ; R16 := 0.000000
 183 [-]: CALL      R14 3 2      ; R14 := R14(R15,R16)
 184 [-]: TEST      R14 0        ; if not R14 then PC := 204
 185 [-]: JMP       204          ; PC := 204
@@ -757,7 +757,7 @@
 237 [-]: SELF      R16 R1 K61   ; R17 := R1; R16 := R1[0x659d451f]
 238 [-]: GETTABLE  R18 R0 K62   ; R18 := R0["mEnterFreeCameraSound"]
 239 [-]: OP_LOADBOOL R19 0 0      ; R19 := false
-240 [-]: CONST     R20 1        ; R20 := 1.000000
+240 [-]: LOADK     R20 1        ; R20 := 1.000000
 241 [-]: OP_LOADBOOL R21 0 0      ; R21 := false
 242 [-]: CALL      R16 6 1      ; R16(R17,R18,R19,R20,R21)
 243 [-]: GETGLOBAL R16 K12      ; R16 := 0x7b998233
@@ -875,7 +875,7 @@
  43 [-]: JMP       48           ; PC := 48
  44 [-]: SELF      R4 R3 K17    ; R5 := R3; R4 := R3[0x14c7f7dd]
  45 [-]: LOADNIL   R6 R6        ; R6 := nil
- 46 [-]: CONST     R7 0         ; R7 := 0.000000
+ 46 [-]: LOADK     R7 0         ; R7 := 0.000000
  47 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
  48 [-]: GETTABLE  R4 R0 K9     ; R4 := R0["mIsDojo"]
  49 [-]: TEST      R4 1         ; if R4 then PC := 59
@@ -913,7 +913,7 @@
  81 [-]: CALL      R4 2 1       ; R4(R5)
  82 [-]: SETTABLE  R0 K20 K24   ; R0["mCameraAvatar"] := nil
  83 [-]: SELF      R4 R1 K25    ; R5 := R1; R4 := R1[0x0e46e45b]
- 84 [-]: CONST     R6 0         ; R6 := 0.000000
+ 84 [-]: LOADK     R6 0         ; R6 := 0.000000
  85 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
  86 [-]: TEST      R4 0         ; if not R4 then PC := 106
  87 [-]: JMP       106          ; PC := 106
@@ -938,7 +938,7 @@
 106 [-]: SELF      R6 R1 K30    ; R7 := R1; R6 := R1[0x659d451f]
 107 [-]: GETTABLE  R8 R0 K31    ; R8 := R0["mExitFreeCameraSound"]
 108 [-]: OP_LOADBOOL R9 0 0       ; R9 := false
-109 [-]: CONST     R10 1        ; R10 := 1.000000
+109 [-]: LOADK     R10 1        ; R10 := 1.000000
 110 [-]: OP_LOADBOOL R11 0 0      ; R11 := false
 111 [-]: CALL      R6 6 1       ; R6(R7,R8,R9,R10,R11)
 112 [-]: GETGLOBAL R6 K5        ; R6 := 0x7b998233

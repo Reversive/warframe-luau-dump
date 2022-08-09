@@ -10,7 +10,7 @@
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x2d0fad09
   2 [-]: LOADK     R1 K1        ; R1 := "Lotus.Scripts.Libs.AbilitiesLib"
   3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: CONST     R1 0         ; R1 := 0.250000
+  4 [-]: LOADK     R1 0         ; R1 := 0.250000
   5 [-]: CLOSURE   R2 0         ; R2 := closure(Function #1)
   6 [-]: MOVE      R0 R1        ; R0 := R1
   7 [-]: CLOSURE   R3 1         ; R3 := closure(Function #2)
@@ -38,20 +38,20 @@
 
   1 [-]: EQ        0 R0 K0      ; if R0 ~= 1.000000 then PC := 6
   2 [-]: JMP       6            ; PC := 6
-  3 [-]: CONST     R1 0         ; R1 := 0.250000
+  3 [-]: LOADK     R1 0         ; R1 := 0.250000
   4 [-]: SETUPVAL  R1 U0        ; U82 := 
   5 [-]: JMP       18           ; PC := 18
   6 [-]: EQ        0 R0 K1      ; if R0 ~= 2.000000 then PC := 11
   7 [-]: JMP       11           ; PC := 11
-  8 [-]: CONST     R1 0         ; R1 := 0.500000
+  8 [-]: LOADK     R1 0         ; R1 := 0.500000
   9 [-]: SETUPVAL  R1 U0        ; U82 := 
  10 [-]: JMP       18           ; PC := 18
  11 [-]: EQ        0 R0 K2      ; if R0 ~= 3.000000 then PC := 16
  12 [-]: JMP       16           ; PC := 16
- 13 [-]: CONST     R1 0         ; R1 := 0.750000
+ 13 [-]: LOADK     R1 0         ; R1 := 0.750000
  14 [-]: SETUPVAL  R1 U0        ; U82 := 
  15 [-]: JMP       18           ; PC := 18
- 16 [-]: CONST     R1 1         ; R1 := 1.000000
+ 16 [-]: LOADK     R1 1         ; R1 := 1.000000
  17 [-]: SETUPVAL  R1 U0        ; U82 := 
  18 [-]: RETURN    R0 1         ; return 
 
@@ -153,8 +153,8 @@
  19 [-]: GETGLOBAL R6 K8        ; R6 := 0x0ed8b456
  20 [-]: LOADK     R7 K9        ; R7 := "PowerCast"
  21 [-]: OP_LOADBOOL R8 0 0       ; R8 := false
- 22 [-]: CONST     R9 2         ; R9 := 2.000000
- 23 [-]: CONST     R10 1        ; R10 := 1.000000
+ 22 [-]: LOADK     R9 2         ; R9 := 2.000000
+ 23 [-]: LOADK     R10 1        ; R10 := 1.000000
  24 [-]: OP_LOADBOOL R11 1 0      ; R11 := true
  25 [-]: CALL      R4 8 1       ; R4(R5,R6,R7,R8,R9,R10,R11)
  26 [-]: SELF      R4 R1 K0     ; R5 := R1; R4 := R1[0x47901f07]

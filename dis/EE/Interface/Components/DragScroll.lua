@@ -50,12 +50,12 @@
  18 [-]: NEWTABLE  R7 0 2       ; R7 := {}
  19 [-]: SELF      R8 R0 K14    ; R9 := R0; R8 := R0[0x91a24e4b]
  20 [-]: MOVE      R10 R1       ; R10 := R1
- 21 [-]: CONST     R11 0        ; R11 := 0.000000
+ 21 [-]: LOADK     R11 0        ; R11 := 0.000000
  22 [-]: CALL      R8 4 2       ; R8 := R8(R9,R10,R11)
  23 [-]: SETTABLE  R7 K7 R8     ; R7["x"] := R8
  24 [-]: SELF      R8 R0 K14    ; R9 := R0; R8 := R0[0x91a24e4b]
  25 [-]: MOVE      R10 R1       ; R10 := R1
- 26 [-]: CONST     R11 1        ; R11 := 1.000000
+ 26 [-]: LOADK     R11 1        ; R11 := 1.000000
  27 [-]: CALL      R8 4 2       ; R8 := R8(R9,R10,R11)
  28 [-]: SETTABLE  R7 K9 R8     ; R7["y"] := R8
  29 [-]: SETTABLE  R6 K13 R7    ; R6["mOriginalCoords"] := R7

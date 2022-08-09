@@ -47,8 +47,8 @@
  11 [-]: GETUPVAL  R6 U0        ; R6 := U0
  12 [-]: GETTABLE  R6 R6 K3     ; R82 := R6[0x06d055f9]
  13 [-]: GETGLOBAL R7 K4        ; R7 := 0x0c5e62f9
- 14 [-]: CONST     R8 0         ; R8 := 0.000000
- 15 [-]: CONST     R9 1         ; R9 := 1.000000
+ 14 [-]: LOADK     R8 0         ; R8 := 0.000000
+ 15 [-]: LOADK     R9 1         ; R9 := 1.000000
  16 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
  17 [-]: EQ        1 R7 K0      ; if R7 == 0.000000 then PC := 20
  18 [-]: JMP       20           ; PC := 20
@@ -67,9 +67,9 @@
  31 [-]: CALL      R6 4 2       ; R6 := R6(R7,R8,R9)
  32 [-]: MOVE      R5 R6        ; R5 := R6
  33 [-]: NEWTABLE  R6 0 0       ; R6 := {}
- 34 [-]: CONST     R7 1         ; R7 := 1.000000
+ 34 [-]: LOADK     R7 1         ; R7 := 1.000000
  35 [-]: LEN       R8 R2        ; R8 := # R2
- 36 [-]: CONST     R9 1         ; R9 := 1.000000
+ 36 [-]: LOADK     R9 1         ; R9 := 1.000000
  37 [-]: FORPREP   R7 226       ; R7 -= R9; PC := 226
  38 [-]: GETTABLE  R11 R2 R10   ; R11 := R2[R10]
  39 [-]: LOADK     R12 K1       ; R12 := ""
@@ -91,11 +91,11 @@
  55 [-]: GETGLOBAL R15 K11      ; R15 := 0x60cce7b4
  56 [-]: OP_LOADBOOL R16 0 0      ; R16 := false
  57 [-]: CALL      R15 2 1      ; R15(R16)
- 58 [-]: CONST     R15 1        ; R15 := 1.000000
+ 58 [-]: LOADK     R15 1        ; R15 := 1.000000
  59 [-]: LE        0 R15 R13    ; if R15 > R13 then PC := 222
  60 [-]: JMP       222          ; PC := 222
  61 [-]: GETGLOBAL R16 K4       ; R16 := 0x0c5e62f9
- 62 [-]: CONST     R17 1        ; R17 := 1.000000
+ 62 [-]: LOADK     R17 1        ; R17 := 1.000000
  63 [-]: GETTABLE  R18 R11 K8   ; R18 := R11["mMaxLocTagSuffix"]
  64 [-]: CALL      R16 3 2      ; R16 := R16(R17,R18)
  65 [-]: GETGLOBAL R17 K12      ; R17 := 0x64fb1586
@@ -223,17 +223,17 @@
 187 [-]: CONCAT    R12 R22 R23  ; R12 := R22 .. R23
 188 [-]: GETTABLE  R22 R11 K25  ; R22 := R11["mMutuallyExclusiveLoc"]
 189 [-]: LEN       R22 R22      ; R22 := # R22
-190 [-]: CONST     R23 1        ; R23 := 1.000000
+190 [-]: LOADK     R23 1        ; R23 := 1.000000
 191 [-]: MOVE      R24 R22      ; R24 := R22
-192 [-]: CONST     R25 1        ; R25 := 1.000000
+192 [-]: LOADK     R25 1        ; R25 := 1.000000
 193 [-]: FORPREP   R23 219      ; R23 -= R25; PC := 219
 194 [-]: GETTABLE  R27 R11 K25  ; R27 := R11["mMutuallyExclusiveLoc"]
 195 [-]: GETTABLE  R27 R27 R26  ; R27 := R27[R26]
 196 [-]: GETTABLE  R27 R27 K26  ; R27 := R27["mExclusiveIndices"]
 197 [-]: OP_LOADBOOL R28 0 0      ; R28 := false
-198 [-]: CONST     R29 1        ; R29 := 1.000000
+198 [-]: LOADK     R29 1        ; R29 := 1.000000
 199 [-]: LEN       R30 R27      ; R30 := # R27
-200 [-]: CONST     R31 1        ; R31 := 1.000000
+200 [-]: LOADK     R31 1        ; R31 := 1.000000
 201 [-]: FORPREP   R29 207      ; R29 -= R31; PC := 207
 202 [-]: GETTABLE  R33 R27 R32  ; R33 := R27[R32]
 203 [-]: EQ        0 R33 R16    ; if R33 ~= R16 then PC := 207
@@ -243,9 +243,9 @@
 207 [-]: FORLOOP   R29 202      ; R29 += R31; if R29 <= R30 then begin PC := 202; R32 := R29 end
 208 [-]: TEST      R28 0        ; if not R28 then PC := 219
 209 [-]: JMP       219          ; PC := 219
-210 [-]: CONST     R33 1        ; R33 := 1.000000
+210 [-]: LOADK     R33 1        ; R33 := 1.000000
 211 [-]: LEN       R34 R27      ; R34 := # R27
-212 [-]: CONST     R35 1        ; R35 := 1.000000
+212 [-]: LOADK     R35 1        ; R35 := 1.000000
 213 [-]: FORPREP   R33 218      ; R33 -= R35; PC := 218
 214 [-]: GETGLOBAL R37 K12      ; R37 := 0x64fb1586
 215 [-]: GETTABLE  R38 R27 R36  ; R38 := R27[R36]

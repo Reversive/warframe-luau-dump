@@ -27,7 +27,7 @@
   4 [-]: TEST      R1 0         ; if not R1 then PC := 10
   5 [-]: JMP       10           ; PC := 10
   6 [-]: GETGLOBAL R1 K2        ; R1 := 0xcbd666e1
-  7 [-]: CONST     R2 0         ; R2 := 0.000000
+  7 [-]: LOADK     R2 0         ; R2 := 0.000000
   8 [-]: CALL      R1 2 1       ; R1(R2)
   9 [-]: JMP       1            ; PC := 1
  10 [-]: GETGLOBAL R1 K1        ; R1 := 0xbe190284
@@ -47,14 +47,14 @@
  24 [-]: CALL      R1 2 2       ; R1 := R1(R2)
  25 [-]: LT        0 R1 K8      ; if R1 >= 4.000000 then PC := 78
  26 [-]: JMP       78           ; PC := 78
- 27 [-]: CONST     R1 10        ; R1 := 10.000000
+ 27 [-]: LOADK     R1 10        ; R1 := 10.000000
  28 [-]: GETGLOBAL R2 K1        ; R2 := 0xbe190284
  29 [-]: SELF      R2 R2 K6     ; R3 := R2; R2 := R2[0x19b1c237]
  30 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  31 [-]: LT        0 R2 K8      ; if R2 >= 4.000000 then PC := 43
  32 [-]: JMP       43           ; PC := 43
  33 [-]: GETGLOBAL R2 K2        ; R2 := 0xcbd666e1
- 34 [-]: CONST     R3 1         ; R3 := 1.000000
+ 34 [-]: LOADK     R3 1         ; R3 := 1.000000
  35 [-]: CALL      R2 2 1       ; R2(R3)
  36 [-]: GETGLOBAL R2 K0        ; R2 := 0x7b998233
  37 [-]: GETGLOBAL R3 K1        ; R3 := 0xbe190284
@@ -78,7 +78,7 @@
  55 [-]: TEST      R2 0         ; if not R2 then PC := 62
  56 [-]: JMP       62           ; PC := 62
  57 [-]: GETGLOBAL R2 K2        ; R2 := 0xcbd666e1
- 58 [-]: CONST     R3 1         ; R3 := 1.000000
+ 58 [-]: LOADK     R3 1         ; R3 := 1.000000
  59 [-]: CALL      R2 2 1       ; R2(R3)
  60 [-]: SUB       R1 R1 K12    ; R1 := R1 - 1.000000
  61 [-]: JMP       43           ; PC := 43
@@ -95,7 +95,7 @@
  72 [-]: TEST      R2 1         ; if R2 then PC := 78
  73 [-]: JMP       78           ; PC := 78
  74 [-]: GETGLOBAL R2 K2        ; R2 := 0xcbd666e1
- 75 [-]: CONST     R3 1         ; R3 := 1.000000
+ 75 [-]: LOADK     R3 1         ; R3 := 1.000000
  76 [-]: CALL      R2 2 1       ; R2(R3)
  77 [-]: JMP       62           ; PC := 62
  78 [-]: GETGLOBAL R2 K0        ; R2 := 0x7b998233

@@ -63,7 +63,7 @@
  11 [-]: DIV       R6 R6 R4     ; R6 := R6 / R4
  12 [-]: TEST      R6 1         ; if R6 then PC := 15
  13 [-]: JMP       15           ; PC := 15
- 14 [-]: CONST     R6 1         ; R6 := 1.000000
+ 14 [-]: LOADK     R6 1         ; R6 := 1.000000
  15 [-]: TEST      R2 0         ; if not R2 then PC := 23
  16 [-]: JMP       23           ; PC := 23
  17 [-]: SELF      R7 R1 K5     ; R8 := R1; R7 := R1[0xde321e6f]
@@ -139,9 +139,9 @@
   4 [-]: TEST      R4 0         ; if not R4 then PC := 7
   5 [-]: JMP       7            ; PC := 7
   6 [-]: RETURN    R0 1         ; return 
-  7 [-]: CONST     R4 1         ; R4 := 1.000000
-  8 [-]: CONST     R5 5         ; R5 := 5.000000
-  9 [-]: CONST     R6 1         ; R6 := 1.000000
+  7 [-]: LOADK     R4 1         ; R4 := 1.000000
+  8 [-]: LOADK     R5 5         ; R5 := 5.000000
+  9 [-]: LOADK     R6 1         ; R6 := 1.000000
  10 [-]: FORPREP   R4 38        ; R4 -= R6; PC := 38
  11 [-]: SELF      R8 R1 K2     ; R9 := R1; R8 := R1[0x03296a01]
  12 [-]: MOVE      R10 R7       ; R10 := R7
@@ -160,9 +160,9 @@
  25 [-]: CALL      R10 2 2      ; R10 := R10(R11)
  26 [-]: TEST      R10 1        ; if R10 then PC := 38
  27 [-]: JMP       38           ; PC := 38
- 28 [-]: CONST     R10 1        ; R10 := 1.000000
+ 28 [-]: LOADK     R10 1        ; R10 := 1.000000
  29 [-]: LEN       R11 R9       ; R11 := # R9
- 30 [-]: CONST     R12 1        ; R12 := 1.000000
+ 30 [-]: LOADK     R12 1        ; R12 := 1.000000
  31 [-]: FORPREP   R10 37       ; R10 -= R12; PC := 37
  32 [-]: GETUPVAL  R14 U1       ; R14 := U1
  33 [-]: GETTABLE  R15 R9 R13   ; R15 := R9[R13]

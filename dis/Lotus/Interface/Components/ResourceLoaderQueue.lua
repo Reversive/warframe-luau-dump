@@ -117,7 +117,7 @@
  31 [-]: GETGLOBAL R4 K10       ; R4 := 0x33bdd652
  32 [-]: GETTABLE  R4 R4 K11    ; R82 := R4[0x9c1f3b5a]
  33 [-]: GETTABLE  R5 R0 K0     ; R5 := R0["mResourceQueue"]
- 34 [-]: CONST     R6 1         ; R6 := 1.000000
+ 34 [-]: LOADK     R6 1         ; R6 := 1.000000
  35 [-]: CALL      R4 3 1       ; R4(R5,R6)
  36 [-]: SETTABLE  R0 K12 K13   ; R0["mLoading"] := false
  37 [-]: GETTABLE  R4 R0 K0     ; R4 := R0["mResourceQueue"]

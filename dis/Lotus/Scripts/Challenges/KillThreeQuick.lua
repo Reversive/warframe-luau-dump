@@ -7,9 +7,9 @@
 ; Is_vararg:       2
 ; Max Stack Size:  4
 
-  1 [-]: CONST     R0 0         ; R0 := 0.000000
-  2 [-]: CONST     R1 0         ; R1 := 0.000000
-  3 [-]: CONST     R2 0         ; R2 := 0.000000
+  1 [-]: LOADK     R0 0         ; R0 := 0.000000
+  2 [-]: LOADK     R1 0         ; R1 := 0.000000
+  3 [-]: LOADK     R2 0         ; R2 := 0.000000
   4 [-]: CLOSURE   R3 0         ; R3 := closure(Function #1)
   5 [-]: MOVE      R0 R0        ; R0 := R0
   6 [-]: MOVE      R0 R1        ; R0 := R1

@@ -271,18 +271,18 @@
 262 [-]: SETTABLE  R7 K11 K118  ; R7["LocTag"] := "/Lotus/Language/Items/BowCategoryName"
 263 [-]: SETTABLE  R6 K116 R7   ; R6[27.000000] := R7
 264 [-]: NEWTABLE  R7 12 0      ; R7 := {}
-265 [-]: CONST     R8 1         ; R8 := 1.000000
-266 [-]: CONST     R9 2         ; R9 := 2.000000
-267 [-]: CONST     R10 3        ; R10 := 3.000000
-268 [-]: CONST     R11 4        ; R11 := 4.000000
-269 [-]: CONST     R12 7        ; R12 := 7.000000
-270 [-]: CONST     R13 8        ; R13 := 8.000000
-271 [-]: CONST     R14 9        ; R14 := 9.000000
-272 [-]: CONST     R15 13       ; R15 := 13.000000
-273 [-]: CONST     R16 14       ; R16 := 14.000000
-274 [-]: CONST     R17 15       ; R17 := 15.000000
-275 [-]: CONST     R18 17       ; R18 := 17.000000
-276 [-]: CONST     R19 32       ; R19 := 32.000000
+265 [-]: LOADK     R8 1         ; R8 := 1.000000
+266 [-]: LOADK     R9 2         ; R9 := 2.000000
+267 [-]: LOADK     R10 3        ; R10 := 3.000000
+268 [-]: LOADK     R11 4        ; R11 := 4.000000
+269 [-]: LOADK     R12 7        ; R12 := 7.000000
+270 [-]: LOADK     R13 8        ; R13 := 8.000000
+271 [-]: LOADK     R14 9        ; R14 := 9.000000
+272 [-]: LOADK     R15 13       ; R15 := 13.000000
+273 [-]: LOADK     R16 14       ; R16 := 14.000000
+274 [-]: LOADK     R17 15       ; R17 := 15.000000
+275 [-]: LOADK     R18 17       ; R18 := 17.000000
+276 [-]: LOADK     R19 32       ; R19 := 32.000000
 277 [-]: SETLIST   R7 12 1      ; R7[(1-1)*FPF+i] := R(7+i), 1 <= i <= 12
 278 [-]: GETGLOBAL R8 K6        ; R8 := 0x7ed0a956
 279 [-]: LOADK     R9 K119      ; R9 := "/Lotus/Types/Game/EnemySpecs/CorpusGrineerMix"
@@ -380,11 +380,11 @@
 371 [-]: NEWTABLE  R27 0 0      ; R27 := {}
 372 [-]: NEWTABLE  R28 0 0      ; R28 := {}
 373 [-]: NEWTABLE  R29 3 0      ; R29 := {}
-374 [-]: CONST     R30 20000    ; R30 := 20000.000000
+374 [-]: LOADK     R30 20000    ; R30 := 20000.000000
 375 [-]: LOADK     R31 K146     ; R31 := 30000.000000
 376 [-]: LOADK     R32 K147     ; R32 := 50000.000000
 377 [-]: SETLIST   R29 3 1      ; R29[(1-1)*FPF+i] := R(29+i), 1 <= i <= 3
-378 [-]: CONST     R30 4        ; R30 := 4.000000
+378 [-]: LOADK     R30 4        ; R30 := 4.000000
 379 [-]: LOADK     R31 K148     ; R31 := 0.150000
 380 [-]: NEWTABLE  R32 0 0      ; R32 := {}
 381 [-]: GETGLOBAL R33 K149     ; R33 := Localize
@@ -2006,453 +2006,453 @@
 1448 [-]: SETLIST   R7 1 1       ; R7[(1-1)*FPF+i] := R(7+i), 1 <= i <= 1
 1449 [-]: SETTABLE  R6 K34 R7    ; R6[26.000000] := R7
 1450 [-]: GETUPVAL  R6 U1        ; R6 := U1
-1451 [-]: CONST     R7 21        ; R7 := 21.000000
+1451 [-]: LOADK     R7 21        ; R7 := 21.000000
 1452 [-]: GETTABLE  R6 R6 R7     ; R6 := R6[R7]
-1453 [-]: CONST     R7 21        ; R7 := 21.000000
+1453 [-]: LOADK     R7 21        ; R7 := 21.000000
 1454 [-]: NEWTABLE  R8 1 0       ; R8 := {}
 1455 [-]: LOADK     R9 K256      ; R9 := "/Lotus/Language/Sorties/SOPurifyToPurifyDesc1"
 1456 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
 1457 [-]: SETTABLE  R6 R7 R8     ; R6[R7] := R8
 1458 [-]: GETUPVAL  R6 U1        ; R6 := U1
-1459 [-]: CONST     R7 21        ; R7 := 21.000000
+1459 [-]: LOADK     R7 21        ; R7 := 21.000000
 1460 [-]: GETTABLE  R6 R6 R7     ; R6 := R6[R7]
-1461 [-]: CONST     R7 27        ; R7 := 27.000000
+1461 [-]: LOADK     R7 27        ; R7 := 27.000000
 1462 [-]: NEWTABLE  R8 1 0       ; R8 := {}
 1463 [-]: LOADK     R9 K257      ; R9 := "/Lotus/Language/Sorties/SOPurifyToEvacuationDesc1"
 1464 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
 1465 [-]: SETTABLE  R6 R7 R8     ; R6[R7] := R8
 1466 [-]: GETUPVAL  R6 U1        ; R6 := U1
-1467 [-]: CONST     R7 21        ; R7 := 21.000000
+1467 [-]: LOADK     R7 21        ; R7 := 21.000000
 1468 [-]: GETTABLE  R6 R6 R7     ; R6 := R6[R7]
-1469 [-]: CONST     R7 28        ; R7 := 28.000000
+1469 [-]: LOADK     R7 28        ; R7 := 28.000000
 1470 [-]: NEWTABLE  R8 1 0       ; R8 := {}
 1471 [-]: LOADK     R9 K258      ; R9 := "/Lotus/Language/Sorties/SOPurifyToLandscapeDesc1"
 1472 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
 1473 [-]: SETTABLE  R6 R7 R8     ; R6[R7] := R8
 1474 [-]: GETUPVAL  R6 U1        ; R6 := U1
-1475 [-]: CONST     R7 21        ; R7 := 21.000000
+1475 [-]: LOADK     R7 21        ; R7 := 21.000000
 1476 [-]: GETTABLE  R6 R6 R7     ; R6 := R6[R7]
-1477 [-]: CONST     R7 32        ; R7 := 32.000000
+1477 [-]: LOADK     R7 32        ; R7 := 32.000000
 1478 [-]: NEWTABLE  R8 1 0       ; R8 := {}
 1479 [-]: LOADK     R9 K259      ; R9 := "/Lotus/Language/Sorties/SOPurifyToArtifactDesc1"
 1480 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
 1481 [-]: SETTABLE  R6 R7 R8     ; R6[R7] := R8
 1482 [-]: GETUPVAL  R6 U1        ; R6 := U1
-1483 [-]: CONST     R7 27        ; R7 := 27.000000
+1483 [-]: LOADK     R7 27        ; R7 := 27.000000
 1484 [-]: NEWTABLE  R8 0 0       ; R8 := {}
 1485 [-]: SETTABLE  R6 R7 R8     ; R6[R7] := R8
 1486 [-]: GETUPVAL  R6 U1        ; R6 := U1
-1487 [-]: CONST     R7 27        ; R7 := 27.000000
+1487 [-]: LOADK     R7 27        ; R7 := 27.000000
 1488 [-]: GETTABLE  R6 R6 R7     ; R6 := R6[R7]
-1489 [-]: CONST     R7 1         ; R7 := 1.000000
+1489 [-]: LOADK     R7 1         ; R7 := 1.000000
 1490 [-]: NEWTABLE  R8 1 0       ; R8 := {}
 1491 [-]: LOADK     R9 K260      ; R9 := "/Lotus/Language/Sorties/SOEvacuationToExterminationDesc1"
 1492 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
 1493 [-]: SETTABLE  R6 R7 R8     ; R6[R7] := R8
 1494 [-]: GETUPVAL  R6 U1        ; R6 := U1
-1495 [-]: CONST     R7 27        ; R7 := 27.000000
+1495 [-]: LOADK     R7 27        ; R7 := 27.000000
 1496 [-]: GETTABLE  R6 R6 R7     ; R6 := R6[R7]
-1497 [-]: CONST     R7 2         ; R7 := 2.000000
+1497 [-]: LOADK     R7 2         ; R7 := 2.000000
 1498 [-]: NEWTABLE  R8 1 0       ; R8 := {}
 1499 [-]: LOADK     R9 K261      ; R9 := "/Lotus/Language/Sorties/SOEvacuationToSurvivalDesc1"
 1500 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
 1501 [-]: SETTABLE  R6 R7 R8     ; R6[R7] := R8
 1502 [-]: GETUPVAL  R6 U1        ; R6 := U1
-1503 [-]: CONST     R7 27        ; R7 := 27.000000
+1503 [-]: LOADK     R7 27        ; R7 := 27.000000
 1504 [-]: GETTABLE  R6 R6 R7     ; R6 := R6[R7]
-1505 [-]: CONST     R7 3         ; R7 := 3.000000
+1505 [-]: LOADK     R7 3         ; R7 := 3.000000
 1506 [-]: NEWTABLE  R8 1 0       ; R8 := {}
 1507 [-]: LOADK     R9 K262      ; R9 := "/Lotus/Language/Sorties/SOEvacuationToRescueDesc1"
 1508 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
 1509 [-]: SETTABLE  R6 R7 R8     ; R6[R7] := R8
 1510 [-]: GETUPVAL  R6 U1        ; R6 := U1
-1511 [-]: CONST     R7 27        ; R7 := 27.000000
+1511 [-]: LOADK     R7 27        ; R7 := 27.000000
 1512 [-]: GETTABLE  R6 R6 R7     ; R6 := R6[R7]
-1513 [-]: CONST     R7 4         ; R7 := 4.000000
+1513 [-]: LOADK     R7 4         ; R7 := 4.000000
 1514 [-]: NEWTABLE  R8 1 0       ; R8 := {}
 1515 [-]: LOADK     R9 K263      ; R9 := "/Lotus/Language/Sorties/SOEvacuationToSabotageDesc1"
 1516 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
 1517 [-]: SETTABLE  R6 R7 R8     ; R6[R7] := R8
 1518 [-]: GETUPVAL  R6 U1        ; R6 := U1
-1519 [-]: CONST     R7 27        ; R7 := 27.000000
+1519 [-]: LOADK     R7 27        ; R7 := 27.000000
 1520 [-]: GETTABLE  R6 R6 R7     ; R6 := R6[R7]
-1521 [-]: CONST     R7 7         ; R7 := 7.000000
+1521 [-]: LOADK     R7 7         ; R7 := 7.000000
 1522 [-]: NEWTABLE  R8 1 0       ; R8 := {}
 1523 [-]: LOADK     R9 K264      ; R9 := "/Lotus/Language/Sorties/SOEvacuationToIntelDesc1"
 1524 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
 1525 [-]: SETTABLE  R6 R7 R8     ; R6[R7] := R8
 1526 [-]: GETUPVAL  R6 U1        ; R6 := U1
-1527 [-]: CONST     R7 27        ; R7 := 27.000000
+1527 [-]: LOADK     R7 27        ; R7 := 27.000000
 1528 [-]: GETTABLE  R6 R6 R7     ; R6 := R6[R7]
-1529 [-]: CONST     R7 8         ; R7 := 8.000000
+1529 [-]: LOADK     R7 8         ; R7 := 8.000000
 1530 [-]: NEWTABLE  R8 1 0       ; R8 := {}
 1531 [-]: LOADK     R9 K265      ; R9 := "/Lotus/Language/Sorties/SOEvacuationToDefenseDesc1"
 1532 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
 1533 [-]: SETTABLE  R6 R7 R8     ; R6[R7] := R8
 1534 [-]: GETUPVAL  R6 U1        ; R6 := U1
-1535 [-]: CONST     R7 27        ; R7 := 27.000000
+1535 [-]: LOADK     R7 27        ; R7 := 27.000000
 1536 [-]: GETTABLE  R6 R6 R7     ; R6 := R6[R7]
-1537 [-]: CONST     R7 9         ; R7 := 9.000000
+1537 [-]: LOADK     R7 9         ; R7 := 9.000000
 1538 [-]: NEWTABLE  R8 1 0       ; R8 := {}
 1539 [-]: LOADK     R9 K266      ; R9 := "/Lotus/Language/Sorties/SOEvacuationToMobileDefenseDesc1"
 1540 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
 1541 [-]: SETTABLE  R6 R7 R8     ; R6[R7] := R8
 1542 [-]: GETUPVAL  R6 U1        ; R6 := U1
-1543 [-]: CONST     R7 27        ; R7 := 27.000000
+1543 [-]: LOADK     R7 27        ; R7 := 27.000000
 1544 [-]: GETTABLE  R6 R6 R7     ; R6 := R6[R7]
-1545 [-]: CONST     R7 13        ; R7 := 13.000000
+1545 [-]: LOADK     R7 13        ; R7 := 13.000000
 1546 [-]: NEWTABLE  R8 1 0       ; R8 := {}
 1547 [-]: LOADK     R9 K267      ; R9 := "/Lotus/Language/Sorties/SOEvacuationToTerritoryDesc1"
 1548 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
 1549 [-]: SETTABLE  R6 R7 R8     ; R6[R7] := R8
 1550 [-]: GETUPVAL  R6 U1        ; R6 := U1
-1551 [-]: CONST     R7 27        ; R7 := 27.000000
+1551 [-]: LOADK     R7 27        ; R7 := 27.000000
 1552 [-]: GETTABLE  R6 R6 R7     ; R6 := R6[R7]
-1553 [-]: CONST     R7 14        ; R7 := 14.000000
+1553 [-]: LOADK     R7 14        ; R7 := 14.000000
 1554 [-]: NEWTABLE  R8 1 0       ; R8 := {}
 1555 [-]: LOADK     R9 K268      ; R9 := "/Lotus/Language/Sorties/SOEvacuationToRetrievalDesc1"
 1556 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
 1557 [-]: SETTABLE  R6 R7 R8     ; R6[R7] := R8
 1558 [-]: GETUPVAL  R6 U1        ; R6 := U1
-1559 [-]: CONST     R7 27        ; R7 := 27.000000
+1559 [-]: LOADK     R7 27        ; R7 := 27.000000
 1560 [-]: GETTABLE  R6 R6 R7     ; R6 := R6[R7]
-1561 [-]: CONST     R7 15        ; R7 := 15.000000
+1561 [-]: LOADK     R7 15        ; R7 := 15.000000
 1562 [-]: NEWTABLE  R8 1 0       ; R8 := {}
 1563 [-]: LOADK     R9 K269      ; R9 := "/Lotus/Language/Sorties/SOEvacuationToHiveDesc1"
 1564 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
 1565 [-]: SETTABLE  R6 R7 R8     ; R6[R7] := R8
 1566 [-]: GETUPVAL  R6 U1        ; R6 := U1
-1567 [-]: CONST     R7 27        ; R7 := 27.000000
+1567 [-]: LOADK     R7 27        ; R7 := 27.000000
 1568 [-]: GETTABLE  R6 R6 R7     ; R6 := R6[R7]
-1569 [-]: CONST     R7 17        ; R7 := 17.000000
+1569 [-]: LOADK     R7 17        ; R7 := 17.000000
 1570 [-]: NEWTABLE  R8 1 0       ; R8 := {}
 1571 [-]: LOADK     R9 K270      ; R9 := "/Lotus/Language/Sorties/SOEvacuationToExcavateDesc1"
 1572 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
 1573 [-]: SETTABLE  R6 R7 R8     ; R6[R7] := R8
 1574 [-]: GETUPVAL  R6 U1        ; R6 := U1
-1575 [-]: CONST     R7 27        ; R7 := 27.000000
+1575 [-]: LOADK     R7 27        ; R7 := 27.000000
 1576 [-]: GETTABLE  R6 R6 R7     ; R6 := R6[R7]
-1577 [-]: CONST     R7 0         ; R7 := 0.000000
+1577 [-]: LOADK     R7 0         ; R7 := 0.000000
 1578 [-]: NEWTABLE  R8 1 0       ; R8 := {}
 1579 [-]: LOADK     R9 K271      ; R9 := "/Lotus/Language/Sorties/SOEvacuationToAssassinationDesc1"
 1580 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
 1581 [-]: SETTABLE  R6 R7 R8     ; R6[R7] := R8
 1582 [-]: GETUPVAL  R6 U1        ; R6 := U1
-1583 [-]: CONST     R7 27        ; R7 := 27.000000
+1583 [-]: LOADK     R7 27        ; R7 := 27.000000
 1584 [-]: GETTABLE  R6 R6 R7     ; R6 := R6[R7]
-1585 [-]: CONST     R7 26        ; R7 := 26.000000
+1585 [-]: LOADK     R7 26        ; R7 := 26.000000
 1586 [-]: NEWTABLE  R8 1 0       ; R8 := {}
 1587 [-]: LOADK     R9 K272      ; R9 := "/Lotus/Language/Sorties/SOEvacuationToAssaultDesc1"
 1588 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
 1589 [-]: SETTABLE  R6 R7 R8     ; R6[R7] := R8
 1590 [-]: GETUPVAL  R6 U1        ; R6 := U1
-1591 [-]: CONST     R7 27        ; R7 := 27.000000
+1591 [-]: LOADK     R7 27        ; R7 := 27.000000
 1592 [-]: GETTABLE  R6 R6 R7     ; R6 := R6[R7]
-1593 [-]: CONST     R7 21        ; R7 := 21.000000
+1593 [-]: LOADK     R7 21        ; R7 := 21.000000
 1594 [-]: NEWTABLE  R8 1 0       ; R8 := {}
 1595 [-]: LOADK     R9 K273      ; R9 := "/Lotus/Language/Sorties/SOEvacuationToPurifyDesc1"
 1596 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
 1597 [-]: SETTABLE  R6 R7 R8     ; R6[R7] := R8
 1598 [-]: GETUPVAL  R6 U1        ; R6 := U1
-1599 [-]: CONST     R7 27        ; R7 := 27.000000
+1599 [-]: LOADK     R7 27        ; R7 := 27.000000
 1600 [-]: GETTABLE  R6 R6 R7     ; R6 := R6[R7]
-1601 [-]: CONST     R7 27        ; R7 := 27.000000
+1601 [-]: LOADK     R7 27        ; R7 := 27.000000
 1602 [-]: NEWTABLE  R8 1 0       ; R8 := {}
 1603 [-]: LOADK     R9 K274      ; R9 := "/Lotus/Language/Sorties/SOEvacuationToEvacuationDesc1"
 1604 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
 1605 [-]: SETTABLE  R6 R7 R8     ; R6[R7] := R8
 1606 [-]: GETUPVAL  R6 U1        ; R6 := U1
-1607 [-]: CONST     R7 27        ; R7 := 27.000000
+1607 [-]: LOADK     R7 27        ; R7 := 27.000000
 1608 [-]: GETTABLE  R6 R6 R7     ; R6 := R6[R7]
-1609 [-]: CONST     R7 28        ; R7 := 28.000000
+1609 [-]: LOADK     R7 28        ; R7 := 28.000000
 1610 [-]: NEWTABLE  R8 1 0       ; R8 := {}
 1611 [-]: LOADK     R9 K275      ; R9 := "/Lotus/Language/Sorties/SOEvacuationToLandscapeDesc1"
 1612 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
 1613 [-]: SETTABLE  R6 R7 R8     ; R6[R7] := R8
 1614 [-]: GETUPVAL  R6 U1        ; R6 := U1
-1615 [-]: CONST     R7 27        ; R7 := 27.000000
+1615 [-]: LOADK     R7 27        ; R7 := 27.000000
 1616 [-]: GETTABLE  R6 R6 R7     ; R6 := R6[R7]
-1617 [-]: CONST     R7 32        ; R7 := 32.000000
+1617 [-]: LOADK     R7 32        ; R7 := 32.000000
 1618 [-]: NEWTABLE  R8 1 0       ; R8 := {}
 1619 [-]: LOADK     R9 K276      ; R9 := "/Lotus/Language/Sorties/SOEvacuationToArtifactDesc1"
 1620 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
 1621 [-]: SETTABLE  R6 R7 R8     ; R6[R7] := R8
 1622 [-]: GETUPVAL  R6 U1        ; R6 := U1
-1623 [-]: CONST     R7 28        ; R7 := 28.000000
+1623 [-]: LOADK     R7 28        ; R7 := 28.000000
 1624 [-]: NEWTABLE  R8 0 0       ; R8 := {}
 1625 [-]: SETTABLE  R6 R7 R8     ; R6[R7] := R8
 1626 [-]: GETUPVAL  R6 U1        ; R6 := U1
-1627 [-]: CONST     R7 28        ; R7 := 28.000000
+1627 [-]: LOADK     R7 28        ; R7 := 28.000000
 1628 [-]: GETTABLE  R6 R6 R7     ; R6 := R6[R7]
-1629 [-]: CONST     R7 1         ; R7 := 1.000000
+1629 [-]: LOADK     R7 1         ; R7 := 1.000000
 1630 [-]: NEWTABLE  R8 1 0       ; R8 := {}
 1631 [-]: LOADK     R9 K277      ; R9 := "/Lotus/Language/Sorties/SOLandscapeToExterminationDesc1"
 1632 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
 1633 [-]: SETTABLE  R6 R7 R8     ; R6[R7] := R8
 1634 [-]: GETUPVAL  R6 U1        ; R6 := U1
-1635 [-]: CONST     R7 28        ; R7 := 28.000000
+1635 [-]: LOADK     R7 28        ; R7 := 28.000000
 1636 [-]: GETTABLE  R6 R6 R7     ; R6 := R6[R7]
-1637 [-]: CONST     R7 2         ; R7 := 2.000000
+1637 [-]: LOADK     R7 2         ; R7 := 2.000000
 1638 [-]: NEWTABLE  R8 1 0       ; R8 := {}
 1639 [-]: LOADK     R9 K278      ; R9 := "/Lotus/Language/Sorties/SOLandscapeToSurvivalDesc1"
 1640 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
 1641 [-]: SETTABLE  R6 R7 R8     ; R6[R7] := R8
 1642 [-]: GETUPVAL  R6 U1        ; R6 := U1
-1643 [-]: CONST     R7 28        ; R7 := 28.000000
+1643 [-]: LOADK     R7 28        ; R7 := 28.000000
 1644 [-]: GETTABLE  R6 R6 R7     ; R6 := R6[R7]
-1645 [-]: CONST     R7 3         ; R7 := 3.000000
+1645 [-]: LOADK     R7 3         ; R7 := 3.000000
 1646 [-]: NEWTABLE  R8 1 0       ; R8 := {}
 1647 [-]: LOADK     R9 K279      ; R9 := "/Lotus/Language/Sorties/SOLandscapeToRescueDesc1"
 1648 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
 1649 [-]: SETTABLE  R6 R7 R8     ; R6[R7] := R8
 1650 [-]: GETUPVAL  R6 U1        ; R6 := U1
-1651 [-]: CONST     R7 28        ; R7 := 28.000000
+1651 [-]: LOADK     R7 28        ; R7 := 28.000000
 1652 [-]: GETTABLE  R6 R6 R7     ; R6 := R6[R7]
-1653 [-]: CONST     R7 4         ; R7 := 4.000000
+1653 [-]: LOADK     R7 4         ; R7 := 4.000000
 1654 [-]: NEWTABLE  R8 1 0       ; R8 := {}
 1655 [-]: LOADK     R9 K280      ; R9 := "/Lotus/Language/Sorties/SOLandscapeToSabotageDesc1"
 1656 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
 1657 [-]: SETTABLE  R6 R7 R8     ; R6[R7] := R8
 1658 [-]: GETUPVAL  R6 U1        ; R6 := U1
-1659 [-]: CONST     R7 28        ; R7 := 28.000000
+1659 [-]: LOADK     R7 28        ; R7 := 28.000000
 1660 [-]: GETTABLE  R6 R6 R7     ; R6 := R6[R7]
-1661 [-]: CONST     R7 7         ; R7 := 7.000000
+1661 [-]: LOADK     R7 7         ; R7 := 7.000000
 1662 [-]: NEWTABLE  R8 1 0       ; R8 := {}
 1663 [-]: LOADK     R9 K281      ; R9 := "/Lotus/Language/Sorties/SOLandscapeToIntelDesc1"
 1664 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
 1665 [-]: SETTABLE  R6 R7 R8     ; R6[R7] := R8
 1666 [-]: GETUPVAL  R6 U1        ; R6 := U1
-1667 [-]: CONST     R7 28        ; R7 := 28.000000
+1667 [-]: LOADK     R7 28        ; R7 := 28.000000
 1668 [-]: GETTABLE  R6 R6 R7     ; R6 := R6[R7]
-1669 [-]: CONST     R7 8         ; R7 := 8.000000
+1669 [-]: LOADK     R7 8         ; R7 := 8.000000
 1670 [-]: NEWTABLE  R8 1 0       ; R8 := {}
 1671 [-]: LOADK     R9 K282      ; R9 := "/Lotus/Language/Sorties/SOLandscapeToDefenseDesc1"
 1672 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
 1673 [-]: SETTABLE  R6 R7 R8     ; R6[R7] := R8
 1674 [-]: GETUPVAL  R6 U1        ; R6 := U1
-1675 [-]: CONST     R7 28        ; R7 := 28.000000
+1675 [-]: LOADK     R7 28        ; R7 := 28.000000
 1676 [-]: GETTABLE  R6 R6 R7     ; R6 := R6[R7]
-1677 [-]: CONST     R7 9         ; R7 := 9.000000
+1677 [-]: LOADK     R7 9         ; R7 := 9.000000
 1678 [-]: NEWTABLE  R8 1 0       ; R8 := {}
 1679 [-]: LOADK     R9 K283      ; R9 := "/Lotus/Language/Sorties/SOLandscapeToMobileDefenseDesc1"
 1680 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
 1681 [-]: SETTABLE  R6 R7 R8     ; R6[R7] := R8
 1682 [-]: GETUPVAL  R6 U1        ; R6 := U1
-1683 [-]: CONST     R7 28        ; R7 := 28.000000
+1683 [-]: LOADK     R7 28        ; R7 := 28.000000
 1684 [-]: GETTABLE  R6 R6 R7     ; R6 := R6[R7]
-1685 [-]: CONST     R7 13        ; R7 := 13.000000
+1685 [-]: LOADK     R7 13        ; R7 := 13.000000
 1686 [-]: NEWTABLE  R8 1 0       ; R8 := {}
 1687 [-]: LOADK     R9 K284      ; R9 := "/Lotus/Language/Sorties/SOLandscapeToTerritoryDesc1"
 1688 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
 1689 [-]: SETTABLE  R6 R7 R8     ; R6[R7] := R8
 1690 [-]: GETUPVAL  R6 U1        ; R6 := U1
-1691 [-]: CONST     R7 28        ; R7 := 28.000000
+1691 [-]: LOADK     R7 28        ; R7 := 28.000000
 1692 [-]: GETTABLE  R6 R6 R7     ; R6 := R6[R7]
-1693 [-]: CONST     R7 14        ; R7 := 14.000000
+1693 [-]: LOADK     R7 14        ; R7 := 14.000000
 1694 [-]: NEWTABLE  R8 1 0       ; R8 := {}
 1695 [-]: LOADK     R9 K285      ; R9 := "/Lotus/Language/Sorties/SOLandscapeToRetrievalDesc1"
 1696 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
 1697 [-]: SETTABLE  R6 R7 R8     ; R6[R7] := R8
 1698 [-]: GETUPVAL  R6 U1        ; R6 := U1
-1699 [-]: CONST     R7 28        ; R7 := 28.000000
+1699 [-]: LOADK     R7 28        ; R7 := 28.000000
 1700 [-]: GETTABLE  R6 R6 R7     ; R6 := R6[R7]
-1701 [-]: CONST     R7 15        ; R7 := 15.000000
+1701 [-]: LOADK     R7 15        ; R7 := 15.000000
 1702 [-]: NEWTABLE  R8 1 0       ; R8 := {}
 1703 [-]: LOADK     R9 K286      ; R9 := "/Lotus/Language/Sorties/SOLandscapeToHiveDesc1"
 1704 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
 1705 [-]: SETTABLE  R6 R7 R8     ; R6[R7] := R8
 1706 [-]: GETUPVAL  R6 U1        ; R6 := U1
-1707 [-]: CONST     R7 28        ; R7 := 28.000000
+1707 [-]: LOADK     R7 28        ; R7 := 28.000000
 1708 [-]: GETTABLE  R6 R6 R7     ; R6 := R6[R7]
-1709 [-]: CONST     R7 17        ; R7 := 17.000000
+1709 [-]: LOADK     R7 17        ; R7 := 17.000000
 1710 [-]: NEWTABLE  R8 1 0       ; R8 := {}
 1711 [-]: LOADK     R9 K287      ; R9 := "/Lotus/Language/Sorties/SOLandscapeToExcavateDesc1"
 1712 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
 1713 [-]: SETTABLE  R6 R7 R8     ; R6[R7] := R8
 1714 [-]: GETUPVAL  R6 U1        ; R6 := U1
-1715 [-]: CONST     R7 28        ; R7 := 28.000000
+1715 [-]: LOADK     R7 28        ; R7 := 28.000000
 1716 [-]: GETTABLE  R6 R6 R7     ; R6 := R6[R7]
-1717 [-]: CONST     R7 0         ; R7 := 0.000000
+1717 [-]: LOADK     R7 0         ; R7 := 0.000000
 1718 [-]: NEWTABLE  R8 1 0       ; R8 := {}
 1719 [-]: LOADK     R9 K288      ; R9 := "/Lotus/Language/Sorties/SOLandscapeToAssassinationDesc1"
 1720 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
 1721 [-]: SETTABLE  R6 R7 R8     ; R6[R7] := R8
 1722 [-]: GETUPVAL  R6 U1        ; R6 := U1
-1723 [-]: CONST     R7 28        ; R7 := 28.000000
+1723 [-]: LOADK     R7 28        ; R7 := 28.000000
 1724 [-]: GETTABLE  R6 R6 R7     ; R6 := R6[R7]
-1725 [-]: CONST     R7 26        ; R7 := 26.000000
+1725 [-]: LOADK     R7 26        ; R7 := 26.000000
 1726 [-]: NEWTABLE  R8 1 0       ; R8 := {}
 1727 [-]: LOADK     R9 K289      ; R9 := "/Lotus/Language/Sorties/SOLandscapeToAssaultDesc1"
 1728 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
 1729 [-]: SETTABLE  R6 R7 R8     ; R6[R7] := R8
 1730 [-]: GETUPVAL  R6 U1        ; R6 := U1
-1731 [-]: CONST     R7 28        ; R7 := 28.000000
+1731 [-]: LOADK     R7 28        ; R7 := 28.000000
 1732 [-]: GETTABLE  R6 R6 R7     ; R6 := R6[R7]
-1733 [-]: CONST     R7 21        ; R7 := 21.000000
+1733 [-]: LOADK     R7 21        ; R7 := 21.000000
 1734 [-]: NEWTABLE  R8 1 0       ; R8 := {}
 1735 [-]: LOADK     R9 K290      ; R9 := "/Lotus/Language/Sorties/SOLandscapeToPurifyDesc1"
 1736 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
 1737 [-]: SETTABLE  R6 R7 R8     ; R6[R7] := R8
 1738 [-]: GETUPVAL  R6 U1        ; R6 := U1
-1739 [-]: CONST     R7 28        ; R7 := 28.000000
+1739 [-]: LOADK     R7 28        ; R7 := 28.000000
 1740 [-]: GETTABLE  R6 R6 R7     ; R6 := R6[R7]
-1741 [-]: CONST     R7 27        ; R7 := 27.000000
+1741 [-]: LOADK     R7 27        ; R7 := 27.000000
 1742 [-]: NEWTABLE  R8 1 0       ; R8 := {}
 1743 [-]: LOADK     R9 K291      ; R9 := "/Lotus/Language/Sorties/SOLandscapeToEvacuationDesc1"
 1744 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
 1745 [-]: SETTABLE  R6 R7 R8     ; R6[R7] := R8
 1746 [-]: GETUPVAL  R6 U1        ; R6 := U1
-1747 [-]: CONST     R7 28        ; R7 := 28.000000
+1747 [-]: LOADK     R7 28        ; R7 := 28.000000
 1748 [-]: GETTABLE  R6 R6 R7     ; R6 := R6[R7]
-1749 [-]: CONST     R7 28        ; R7 := 28.000000
+1749 [-]: LOADK     R7 28        ; R7 := 28.000000
 1750 [-]: NEWTABLE  R8 1 0       ; R8 := {}
 1751 [-]: LOADK     R9 K292      ; R9 := "/Lotus/Language/Sorties/SOLandscapeToLandscapeDesc1"
 1752 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
 1753 [-]: SETTABLE  R6 R7 R8     ; R6[R7] := R8
 1754 [-]: GETUPVAL  R6 U1        ; R6 := U1
-1755 [-]: CONST     R7 28        ; R7 := 28.000000
+1755 [-]: LOADK     R7 28        ; R7 := 28.000000
 1756 [-]: GETTABLE  R6 R6 R7     ; R6 := R6[R7]
-1757 [-]: CONST     R7 32        ; R7 := 32.000000
+1757 [-]: LOADK     R7 32        ; R7 := 32.000000
 1758 [-]: NEWTABLE  R8 1 0       ; R8 := {}
 1759 [-]: LOADK     R9 K293      ; R9 := "/Lotus/Language/Sorties/SOLandscapeToArtifactDesc1"
 1760 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
 1761 [-]: SETTABLE  R6 R7 R8     ; R6[R7] := R8
 1762 [-]: GETUPVAL  R6 U1        ; R6 := U1
-1763 [-]: CONST     R7 32        ; R7 := 32.000000
+1763 [-]: LOADK     R7 32        ; R7 := 32.000000
 1764 [-]: NEWTABLE  R8 0 0       ; R8 := {}
 1765 [-]: SETTABLE  R6 R7 R8     ; R6[R7] := R8
 1766 [-]: GETUPVAL  R6 U1        ; R6 := U1
-1767 [-]: CONST     R7 32        ; R7 := 32.000000
+1767 [-]: LOADK     R7 32        ; R7 := 32.000000
 1768 [-]: GETTABLE  R6 R6 R7     ; R6 := R6[R7]
-1769 [-]: CONST     R7 1         ; R7 := 1.000000
+1769 [-]: LOADK     R7 1         ; R7 := 1.000000
 1770 [-]: NEWTABLE  R8 1 0       ; R8 := {}
 1771 [-]: LOADK     R9 K294      ; R9 := "/Lotus/Language/Sorties/SOArtifactToExterminationDesc1"
 1772 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
 1773 [-]: SETTABLE  R6 R7 R8     ; R6[R7] := R8
 1774 [-]: GETUPVAL  R6 U1        ; R6 := U1
-1775 [-]: CONST     R7 32        ; R7 := 32.000000
+1775 [-]: LOADK     R7 32        ; R7 := 32.000000
 1776 [-]: GETTABLE  R6 R6 R7     ; R6 := R6[R7]
-1777 [-]: CONST     R7 2         ; R7 := 2.000000
+1777 [-]: LOADK     R7 2         ; R7 := 2.000000
 1778 [-]: NEWTABLE  R8 1 0       ; R8 := {}
 1779 [-]: LOADK     R9 K295      ; R9 := "/Lotus/Language/Sorties/SOArtifactToSurvivalDesc1"
 1780 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
 1781 [-]: SETTABLE  R6 R7 R8     ; R6[R7] := R8
 1782 [-]: GETUPVAL  R6 U1        ; R6 := U1
-1783 [-]: CONST     R7 32        ; R7 := 32.000000
+1783 [-]: LOADK     R7 32        ; R7 := 32.000000
 1784 [-]: GETTABLE  R6 R6 R7     ; R6 := R6[R7]
-1785 [-]: CONST     R7 3         ; R7 := 3.000000
+1785 [-]: LOADK     R7 3         ; R7 := 3.000000
 1786 [-]: NEWTABLE  R8 1 0       ; R8 := {}
 1787 [-]: LOADK     R9 K296      ; R9 := "/Lotus/Language/Sorties/SOArtifactToRescueDesc1"
 1788 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
 1789 [-]: SETTABLE  R6 R7 R8     ; R6[R7] := R8
 1790 [-]: GETUPVAL  R6 U1        ; R6 := U1
-1791 [-]: CONST     R7 32        ; R7 := 32.000000
+1791 [-]: LOADK     R7 32        ; R7 := 32.000000
 1792 [-]: GETTABLE  R6 R6 R7     ; R6 := R6[R7]
-1793 [-]: CONST     R7 4         ; R7 := 4.000000
+1793 [-]: LOADK     R7 4         ; R7 := 4.000000
 1794 [-]: NEWTABLE  R8 1 0       ; R8 := {}
 1795 [-]: LOADK     R9 K297      ; R9 := "/Lotus/Language/Sorties/SOArtifactToSabotageDesc1"
 1796 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
 1797 [-]: SETTABLE  R6 R7 R8     ; R6[R7] := R8
 1798 [-]: GETUPVAL  R6 U1        ; R6 := U1
-1799 [-]: CONST     R7 32        ; R7 := 32.000000
+1799 [-]: LOADK     R7 32        ; R7 := 32.000000
 1800 [-]: GETTABLE  R6 R6 R7     ; R6 := R6[R7]
-1801 [-]: CONST     R7 7         ; R7 := 7.000000
+1801 [-]: LOADK     R7 7         ; R7 := 7.000000
 1802 [-]: NEWTABLE  R8 1 0       ; R8 := {}
 1803 [-]: LOADK     R9 K298      ; R9 := "/Lotus/Language/Sorties/SOArtifactToIntelDesc1"
 1804 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
 1805 [-]: SETTABLE  R6 R7 R8     ; R6[R7] := R8
 1806 [-]: GETUPVAL  R6 U1        ; R6 := U1
-1807 [-]: CONST     R7 32        ; R7 := 32.000000
+1807 [-]: LOADK     R7 32        ; R7 := 32.000000
 1808 [-]: GETTABLE  R6 R6 R7     ; R6 := R6[R7]
-1809 [-]: CONST     R7 8         ; R7 := 8.000000
+1809 [-]: LOADK     R7 8         ; R7 := 8.000000
 1810 [-]: NEWTABLE  R8 1 0       ; R8 := {}
 1811 [-]: LOADK     R9 K299      ; R9 := "/Lotus/Language/Sorties/SOArtifactToDefenseDesc1"
 1812 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
 1813 [-]: SETTABLE  R6 R7 R8     ; R6[R7] := R8
 1814 [-]: GETUPVAL  R6 U1        ; R6 := U1
-1815 [-]: CONST     R7 32        ; R7 := 32.000000
+1815 [-]: LOADK     R7 32        ; R7 := 32.000000
 1816 [-]: GETTABLE  R6 R6 R7     ; R6 := R6[R7]
-1817 [-]: CONST     R7 9         ; R7 := 9.000000
+1817 [-]: LOADK     R7 9         ; R7 := 9.000000
 1818 [-]: NEWTABLE  R8 1 0       ; R8 := {}
 1819 [-]: LOADK     R9 K300      ; R9 := "/Lotus/Language/Sorties/SOArtifactToMobileDefenseDesc1"
 1820 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
 1821 [-]: SETTABLE  R6 R7 R8     ; R6[R7] := R8
 1822 [-]: GETUPVAL  R6 U1        ; R6 := U1
-1823 [-]: CONST     R7 32        ; R7 := 32.000000
+1823 [-]: LOADK     R7 32        ; R7 := 32.000000
 1824 [-]: GETTABLE  R6 R6 R7     ; R6 := R6[R7]
-1825 [-]: CONST     R7 13        ; R7 := 13.000000
+1825 [-]: LOADK     R7 13        ; R7 := 13.000000
 1826 [-]: NEWTABLE  R8 1 0       ; R8 := {}
 1827 [-]: LOADK     R9 K301      ; R9 := "/Lotus/Language/Sorties/SOArtifactToTerritoryDesc1"
 1828 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
 1829 [-]: SETTABLE  R6 R7 R8     ; R6[R7] := R8
 1830 [-]: GETUPVAL  R6 U1        ; R6 := U1
-1831 [-]: CONST     R7 32        ; R7 := 32.000000
+1831 [-]: LOADK     R7 32        ; R7 := 32.000000
 1832 [-]: GETTABLE  R6 R6 R7     ; R6 := R6[R7]
-1833 [-]: CONST     R7 14        ; R7 := 14.000000
+1833 [-]: LOADK     R7 14        ; R7 := 14.000000
 1834 [-]: NEWTABLE  R8 1 0       ; R8 := {}
 1835 [-]: LOADK     R9 K302      ; R9 := "/Lotus/Language/Sorties/SOArtifactToRetrievalDesc1"
 1836 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
 1837 [-]: SETTABLE  R6 R7 R8     ; R6[R7] := R8
 1838 [-]: GETUPVAL  R6 U1        ; R6 := U1
-1839 [-]: CONST     R7 32        ; R7 := 32.000000
+1839 [-]: LOADK     R7 32        ; R7 := 32.000000
 1840 [-]: GETTABLE  R6 R6 R7     ; R6 := R6[R7]
-1841 [-]: CONST     R7 15        ; R7 := 15.000000
+1841 [-]: LOADK     R7 15        ; R7 := 15.000000
 1842 [-]: NEWTABLE  R8 1 0       ; R8 := {}
 1843 [-]: LOADK     R9 K303      ; R9 := "/Lotus/Language/Sorties/SOArtifactToHiveDesc1"
 1844 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
 1845 [-]: SETTABLE  R6 R7 R8     ; R6[R7] := R8
 1846 [-]: GETUPVAL  R6 U1        ; R6 := U1
-1847 [-]: CONST     R7 32        ; R7 := 32.000000
+1847 [-]: LOADK     R7 32        ; R7 := 32.000000
 1848 [-]: GETTABLE  R6 R6 R7     ; R6 := R6[R7]
-1849 [-]: CONST     R7 17        ; R7 := 17.000000
+1849 [-]: LOADK     R7 17        ; R7 := 17.000000
 1850 [-]: NEWTABLE  R8 1 0       ; R8 := {}
 1851 [-]: LOADK     R9 K304      ; R9 := "/Lotus/Language/Sorties/SOArtifactToExcavateDesc1"
 1852 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
 1853 [-]: SETTABLE  R6 R7 R8     ; R6[R7] := R8
 1854 [-]: GETUPVAL  R6 U1        ; R6 := U1
-1855 [-]: CONST     R7 32        ; R7 := 32.000000
+1855 [-]: LOADK     R7 32        ; R7 := 32.000000
 1856 [-]: GETTABLE  R6 R6 R7     ; R6 := R6[R7]
-1857 [-]: CONST     R7 0         ; R7 := 0.000000
+1857 [-]: LOADK     R7 0         ; R7 := 0.000000
 1858 [-]: NEWTABLE  R8 1 0       ; R8 := {}
 1859 [-]: LOADK     R9 K305      ; R9 := "/Lotus/Language/Sorties/SOArtifactToAssassinationDesc1"
 1860 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
 1861 [-]: SETTABLE  R6 R7 R8     ; R6[R7] := R8
 1862 [-]: GETUPVAL  R6 U1        ; R6 := U1
-1863 [-]: CONST     R7 32        ; R7 := 32.000000
+1863 [-]: LOADK     R7 32        ; R7 := 32.000000
 1864 [-]: GETTABLE  R6 R6 R7     ; R6 := R6[R7]
-1865 [-]: CONST     R7 26        ; R7 := 26.000000
+1865 [-]: LOADK     R7 26        ; R7 := 26.000000
 1866 [-]: NEWTABLE  R8 1 0       ; R8 := {}
 1867 [-]: LOADK     R9 K306      ; R9 := "/Lotus/Language/Sorties/SOArtifactToAssaultDesc1"
 1868 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
 1869 [-]: SETTABLE  R6 R7 R8     ; R6[R7] := R8
 1870 [-]: GETUPVAL  R6 U1        ; R6 := U1
-1871 [-]: CONST     R7 32        ; R7 := 32.000000
+1871 [-]: LOADK     R7 32        ; R7 := 32.000000
 1872 [-]: GETTABLE  R6 R6 R7     ; R6 := R6[R7]
-1873 [-]: CONST     R7 21        ; R7 := 21.000000
+1873 [-]: LOADK     R7 21        ; R7 := 21.000000
 1874 [-]: NEWTABLE  R8 1 0       ; R8 := {}
 1875 [-]: LOADK     R9 K307      ; R9 := "/Lotus/Language/Sorties/SOArtifactToPurifyDesc1"
 1876 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
 1877 [-]: SETTABLE  R6 R7 R8     ; R6[R7] := R8
 1878 [-]: GETUPVAL  R6 U1        ; R6 := U1
-1879 [-]: CONST     R7 32        ; R7 := 32.000000
+1879 [-]: LOADK     R7 32        ; R7 := 32.000000
 1880 [-]: GETTABLE  R6 R6 R7     ; R6 := R6[R7]
-1881 [-]: CONST     R7 27        ; R7 := 27.000000
+1881 [-]: LOADK     R7 27        ; R7 := 27.000000
 1882 [-]: NEWTABLE  R8 1 0       ; R8 := {}
 1883 [-]: LOADK     R9 K308      ; R9 := "/Lotus/Language/Sorties/SOArtifactToEvacuationDesc1"
 1884 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
 1885 [-]: SETTABLE  R6 R7 R8     ; R6[R7] := R8
 1886 [-]: GETUPVAL  R6 U1        ; R6 := U1
-1887 [-]: CONST     R7 32        ; R7 := 32.000000
+1887 [-]: LOADK     R7 32        ; R7 := 32.000000
 1888 [-]: GETTABLE  R6 R6 R7     ; R6 := R6[R7]
-1889 [-]: CONST     R7 28        ; R7 := 28.000000
+1889 [-]: LOADK     R7 28        ; R7 := 28.000000
 1890 [-]: NEWTABLE  R8 1 0       ; R8 := {}
 1891 [-]: LOADK     R9 K309      ; R9 := "/Lotus/Language/Sorties/SOArtifactToLandscapeDesc1"
 1892 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
 1893 [-]: SETTABLE  R6 R7 R8     ; R6[R7] := R8
 1894 [-]: GETUPVAL  R6 U1        ; R6 := U1
-1895 [-]: CONST     R7 32        ; R7 := 32.000000
+1895 [-]: LOADK     R7 32        ; R7 := 32.000000
 1896 [-]: GETTABLE  R6 R6 R7     ; R6 := R6[R7]
-1897 [-]: CONST     R7 32        ; R7 := 32.000000
+1897 [-]: LOADK     R7 32        ; R7 := 32.000000
 1898 [-]: NEWTABLE  R8 1 0       ; R8 := {}
 1899 [-]: LOADK     R9 K310      ; R9 := "/Lotus/Language/Sorties/SOArtifactToArtifactDesc1"
 1900 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
@@ -2486,7 +2486,7 @@
 1928 [-]: LOADK     R11 K316     ; R11 := "missionType"
 1929 [-]: GETTABLE  R11 R0 R11   ; R11 := R0[R11]
 1930 [-]: GETTABLE  R10 R10 R11  ; R10 := R10[R11]
-1931 [-]: CONST     R11 1        ; R11 := 1.000000
+1931 [-]: LOADK     R11 1        ; R11 := 1.000000
 1932 [-]: GETTABLE  R10 R10 R11  ; R10 := R10[R11]
 1933 [-]: NEWTABLE  R11 0 2      ; R11 := {}
 1934 [-]: LOADK     R12 K317     ; R12 := "BOSS_NAME"
@@ -2500,7 +2500,7 @@
 1942 [-]: MOVE      R8 R9        ; R8 := R9
 1943 [-]: JMP       1976         ; PC := 1976
 1944 [-]: GETGLOBAL R9 K319      ; R9 := 0x0c5e62f9
-1945 [-]: CONST     R10 1        ; R10 := 1.000000
+1945 [-]: LOADK     R10 1        ; R10 := 1.000000
 1946 [-]: GETUPVAL  R11 U1       ; R11 := U1
 1947 [-]: GETTABLE  R11 R11 R4   ; R11 := R11[R4]
 1948 [-]: LOADK     R12 K316     ; R12 := "missionType"
@@ -2556,30 +2556,30 @@
   6 [-]: EQ        0 R4 K4      ; if R4 ~= 2.000000 then PC := 17
   7 [-]: JMP       17           ; PC := 17
   8 [-]: SELF      R4 R0 K5     ; R5 := R0; R4 := R0[0xafd5ace5]
-  9 [-]: CONST     R6 15        ; R6 := 15.000000
- 10 [-]: CONST     R7 0         ; R7 := 0.000000
- 11 [-]: CONST     R8 100       ; R8 := 100.000000
+  9 [-]: LOADK     R6 15        ; R6 := 15.000000
+ 10 [-]: LOADK     R7 0         ; R7 := 0.000000
+ 11 [-]: LOADK     R8 100       ; R8 := 100.000000
  12 [-]: GETGLOBAL R9 K8        ; R9 := gLotusNpcAvatarType
  13 [-]: LOADNIL   R10 R10      ; R10 := nil
- 14 [-]: CONST     R11 25       ; R11 := 25.000000
+ 14 [-]: LOADK     R11 25       ; R11 := 25.000000
  15 [-]: GETUPVAL  R12 U0       ; R12 := U0
  16 [-]: CALL      R4 9 1       ; R4(R5,R6,R7,R8,R9,R10,R11,R12)
  17 [-]: SELF      R4 R0 K5     ; R5 := R0; R4 := R0[0xafd5ace5]
- 18 [-]: CONST     R6 15        ; R6 := 15.000000
- 19 [-]: CONST     R7 2         ; R7 := 2.000000
- 20 [-]: CONST     R8 3         ; R8 := 3.000000
+ 18 [-]: LOADK     R6 15        ; R6 := 15.000000
+ 19 [-]: LOADK     R7 2         ; R7 := 2.000000
+ 20 [-]: LOADK     R8 3         ; R8 := 3.000000
  21 [-]: GETGLOBAL R9 K8        ; R9 := gLotusNpcAvatarType
  22 [-]: LOADNIL   R10 R10      ; R10 := nil
- 23 [-]: CONST     R11 25       ; R11 := 25.000000
+ 23 [-]: LOADK     R11 25       ; R11 := 25.000000
  24 [-]: GETUPVAL  R12 U0       ; R12 := U0
  25 [-]: CALL      R4 9 1       ; R4(R5,R6,R7,R8,R9,R10,R11,R12)
  26 [-]: SELF      R4 R0 K5     ; R5 := R0; R4 := R0[0xafd5ace5]
- 27 [-]: CONST     R6 307       ; R6 := 307.000000
- 28 [-]: CONST     R7 1         ; R7 := 1.000000
- 29 [-]: CONST     R8 0         ; R8 := 0.250000
+ 27 [-]: LOADK     R6 307       ; R6 := 307.000000
+ 28 [-]: LOADK     R7 1         ; R7 := 1.000000
+ 29 [-]: LOADK     R8 0         ; R8 := 0.250000
  30 [-]: GETGLOBAL R9 K9        ; R9 := gTennoAvatarType
  31 [-]: LOADNIL   R10 R10      ; R10 := nil
- 32 [-]: CONST     R11 12       ; R11 := 12.000000
+ 32 [-]: LOADK     R11 12       ; R11 := 12.000000
  33 [-]: GETGLOBAL R12 K10      ; R12 := EMPTY_SYMBOL
  34 [-]: CALL      R4 9 1       ; R4(R5,R6,R7,R8,R9,R10,R11,R12)
  35 [-]: GETUPVAL  R4 U1        ; R4 := U1
@@ -2596,21 +2596,21 @@
  46 [-]: EQ        0 R1 K13     ; if R1 ~= 1.000000 then PC := 77
  47 [-]: JMP       77           ; PC := 77
  48 [-]: SELF      R4 R0 K5     ; R5 := R0; R4 := R0[0xafd5ace5]
- 49 [-]: CONST     R6 117       ; R6 := 117.000000
- 50 [-]: CONST     R7 2         ; R7 := 2.000000
- 51 [-]: CONST     R8 3         ; R8 := 3.000000
+ 49 [-]: LOADK     R6 117       ; R6 := 117.000000
+ 50 [-]: LOADK     R7 2         ; R7 := 2.000000
+ 51 [-]: LOADK     R8 3         ; R8 := 3.000000
  52 [-]: GETGLOBAL R9 K8        ; R9 := gLotusNpcAvatarType
  53 [-]: LOADNIL   R10 R10      ; R10 := nil
- 54 [-]: CONST     R11 25       ; R11 := 25.000000
+ 54 [-]: LOADK     R11 25       ; R11 := 25.000000
  55 [-]: GETUPVAL  R12 U0       ; R12 := U0
  56 [-]: CALL      R4 9 1       ; R4(R5,R6,R7,R8,R9,R10,R11,R12)
  57 [-]: SELF      R4 R0 K5     ; R5 := R0; R4 := R0[0xafd5ace5]
- 58 [-]: CONST     R6 307       ; R6 := 307.000000
- 59 [-]: CONST     R7 1         ; R7 := 1.000000
- 60 [-]: CONST     R8 0         ; R8 := 0.250000
+ 58 [-]: LOADK     R6 307       ; R6 := 307.000000
+ 59 [-]: LOADK     R7 1         ; R7 := 1.000000
+ 60 [-]: LOADK     R8 0         ; R8 := 0.250000
  61 [-]: GETGLOBAL R9 K9        ; R9 := gTennoAvatarType
  62 [-]: LOADNIL   R10 R10      ; R10 := nil
- 63 [-]: CONST     R11 10       ; R11 := 10.000000
+ 63 [-]: LOADK     R11 10       ; R11 := 10.000000
  64 [-]: GETGLOBAL R12 K10      ; R12 := EMPTY_SYMBOL
  65 [-]: CALL      R4 9 1       ; R4(R5,R6,R7,R8,R9,R10,R11,R12)
  66 [-]: GETUPVAL  R4 U1        ; R4 := U1
@@ -2644,21 +2644,21 @@
  94 [-]: GETUPVAL  R4 U3        ; R4 := U3
  95 [-]: SETTABLE  R0 K16 R4    ; R0["fxLayer"] := R4
  96 [-]: SELF      R4 R0 K5     ; R5 := R0; R4 := R0[0xafd5ace5]
- 97 [-]: CONST     R6 300       ; R6 := 300.000000
- 98 [-]: CONST     R7 0         ; R7 := 0.000000
- 99 [-]: CONST     R8 0         ; R8 := 0.250000
+ 97 [-]: LOADK     R6 300       ; R6 := 300.000000
+ 98 [-]: LOADK     R7 0         ; R7 := 0.000000
+ 99 [-]: LOADK     R8 0         ; R8 := 0.250000
 100 [-]: GETGLOBAL R9 K8        ; R9 := gLotusNpcAvatarType
 101 [-]: LOADNIL   R10 R10      ; R10 := nil
-102 [-]: CONST     R11 4        ; R11 := 4.000000
+102 [-]: LOADK     R11 4        ; R11 := 4.000000
 103 [-]: GETUPVAL  R12 U0       ; R12 := U0
 104 [-]: CALL      R4 9 1       ; R4(R5,R6,R7,R8,R9,R10,R11,R12)
 105 [-]: SELF      R4 R0 K5     ; R5 := R0; R4 := R0[0xafd5ace5]
-106 [-]: CONST     R6 307       ; R6 := 307.000000
-107 [-]: CONST     R7 3         ; R7 := 3.000000
+106 [-]: LOADK     R6 307       ; R6 := 307.000000
+107 [-]: LOADK     R7 3         ; R7 := 3.000000
 108 [-]: GETUPVAL  R8 U4        ; R8 := U4
 109 [-]: GETGLOBAL R9 K8        ; R9 := gLotusNpcAvatarType
 110 [-]: LOADNIL   R10 R10      ; R10 := nil
-111 [-]: CONST     R11 4        ; R11 := 4.000000
+111 [-]: LOADK     R11 4        ; R11 := 4.000000
 112 [-]: GETUPVAL  R12 U0       ; R12 := U0
 113 [-]: CALL      R4 9 1       ; R4(R5,R6,R7,R8,R9,R10,R11,R12)
 114 [-]: GETUPVAL  R4 U1        ; R4 := U1
@@ -2677,57 +2677,57 @@
 127 [-]: GETUPVAL  R4 U5        ; R4 := U5
 128 [-]: SETTABLE  R0 K16 R4    ; R0["fxLayer"] := R4
 129 [-]: SELF      R4 R0 K5     ; R5 := R0; R4 := R0[0xafd5ace5]
-130 [-]: CONST     R6 300       ; R6 := 300.000000
-131 [-]: CONST     R7 0         ; R7 := 0.000000
-132 [-]: CONST     R8 0         ; R8 := 0.250000
+130 [-]: LOADK     R6 300       ; R6 := 300.000000
+131 [-]: LOADK     R7 0         ; R7 := 0.000000
+132 [-]: LOADK     R8 0         ; R8 := 0.250000
 133 [-]: GETGLOBAL R9 K8        ; R9 := gLotusNpcAvatarType
 134 [-]: LOADNIL   R10 R10      ; R10 := nil
-135 [-]: CONST     R11 3        ; R11 := 3.000000
+135 [-]: LOADK     R11 3        ; R11 := 3.000000
 136 [-]: GETUPVAL  R12 U0       ; R12 := U0
 137 [-]: CALL      R4 9 1       ; R4(R5,R6,R7,R8,R9,R10,R11,R12)
 138 [-]: SELF      R4 R0 K5     ; R5 := R0; R4 := R0[0xafd5ace5]
-139 [-]: CONST     R6 307       ; R6 := 307.000000
-140 [-]: CONST     R7 3         ; R7 := 3.000000
+139 [-]: LOADK     R6 307       ; R6 := 307.000000
+140 [-]: LOADK     R7 3         ; R7 := 3.000000
 141 [-]: GETUPVAL  R8 U4        ; R8 := U4
 142 [-]: GETGLOBAL R9 K8        ; R9 := gLotusNpcAvatarType
 143 [-]: LOADNIL   R10 R10      ; R10 := nil
-144 [-]: CONST     R11 3        ; R11 := 3.000000
+144 [-]: LOADK     R11 3        ; R11 := 3.000000
 145 [-]: GETUPVAL  R12 U0       ; R12 := U0
 146 [-]: CALL      R4 9 1       ; R4(R5,R6,R7,R8,R9,R10,R11,R12)
 147 [-]: SELF      R4 R0 K5     ; R5 := R0; R4 := R0[0xafd5ace5]
-148 [-]: CONST     R6 64        ; R6 := 64.000000
-149 [-]: CONST     R7 1         ; R7 := 1.000000
-150 [-]: CONST     R8 0         ; R8 := 0.500000
+148 [-]: LOADK     R6 64        ; R6 := 64.000000
+149 [-]: LOADK     R7 1         ; R7 := 1.000000
+150 [-]: LOADK     R8 0         ; R8 := 0.500000
 151 [-]: GETGLOBAL R9 K9        ; R9 := gTennoAvatarType
 152 [-]: LOADNIL   R10 R10      ; R10 := nil
-153 [-]: CONST     R11 25       ; R11 := 25.000000
+153 [-]: LOADK     R11 25       ; R11 := 25.000000
 154 [-]: GETGLOBAL R12 K10      ; R12 := EMPTY_SYMBOL
 155 [-]: CALL      R4 9 1       ; R4(R5,R6,R7,R8,R9,R10,R11,R12)
 156 [-]: SELF      R4 R0 K5     ; R5 := R0; R4 := R0[0xafd5ace5]
-157 [-]: CONST     R6 62        ; R6 := 62.000000
-158 [-]: CONST     R7 1         ; R7 := 1.000000
-159 [-]: CONST     R8 0         ; R8 := 0.500000
+157 [-]: LOADK     R6 62        ; R6 := 62.000000
+158 [-]: LOADK     R7 1         ; R7 := 1.000000
+159 [-]: LOADK     R8 0         ; R8 := 0.500000
 160 [-]: GETGLOBAL R9 K9        ; R9 := gTennoAvatarType
 161 [-]: LOADNIL   R10 R10      ; R10 := nil
-162 [-]: CONST     R11 25       ; R11 := 25.000000
+162 [-]: LOADK     R11 25       ; R11 := 25.000000
 163 [-]: GETGLOBAL R12 K10      ; R12 := EMPTY_SYMBOL
 164 [-]: CALL      R4 9 1       ; R4(R5,R6,R7,R8,R9,R10,R11,R12)
 165 [-]: SELF      R4 R0 K5     ; R5 := R0; R4 := R0[0xafd5ace5]
-166 [-]: CONST     R6 136       ; R6 := 136.000000
-167 [-]: CONST     R7 1         ; R7 := 1.000000
-168 [-]: CONST     R8 2         ; R8 := 2.000000
+166 [-]: LOADK     R6 136       ; R6 := 136.000000
+167 [-]: LOADK     R7 1         ; R7 := 1.000000
+168 [-]: LOADK     R8 2         ; R8 := 2.000000
 169 [-]: GETGLOBAL R9 K9        ; R9 := gTennoAvatarType
 170 [-]: LOADNIL   R10 R10      ; R10 := nil
-171 [-]: CONST     R11 25       ; R11 := 25.000000
+171 [-]: LOADK     R11 25       ; R11 := 25.000000
 172 [-]: GETGLOBAL R12 K10      ; R12 := EMPTY_SYMBOL
 173 [-]: CALL      R4 9 1       ; R4(R5,R6,R7,R8,R9,R10,R11,R12)
 174 [-]: SELF      R4 R0 K5     ; R5 := R0; R4 := R0[0xafd5ace5]
-175 [-]: CONST     R6 72        ; R6 := 72.000000
-176 [-]: CONST     R7 1         ; R7 := 1.000000
-177 [-]: CONST     R8 0         ; R8 := 0.500000
+175 [-]: LOADK     R6 72        ; R6 := 72.000000
+176 [-]: LOADK     R7 1         ; R7 := 1.000000
+177 [-]: LOADK     R8 0         ; R8 := 0.500000
 178 [-]: GETGLOBAL R9 K9        ; R9 := gTennoAvatarType
 179 [-]: LOADNIL   R10 R10      ; R10 := nil
-180 [-]: CONST     R11 25       ; R11 := 25.000000
+180 [-]: LOADK     R11 25       ; R11 := 25.000000
 181 [-]: GETGLOBAL R12 K10      ; R12 := EMPTY_SYMBOL
 182 [-]: CALL      R4 9 1       ; R4(R5,R6,R7,R8,R9,R10,R11,R12)
 183 [-]: GETUPVAL  R4 U1        ; R4 := U1
@@ -2768,68 +2768,68 @@
 218 [-]: LOADNIL   R6 R6        ; R6 := nil
 219 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
 220 [-]: MOVE      R3 R4        ; R3 := R4
-221 [-]: CONST     R4 0         ; R4 := 0.750000
+221 [-]: LOADK     R4 0         ; R4 := 0.750000
 222 [-]: SELF      R5 R0 K5     ; R6 := R0; R5 := R0[0xafd5ace5]
-223 [-]: CONST     R7 129       ; R7 := 129.000000
-224 [-]: CONST     R8 1         ; R8 := 1.000000
+223 [-]: LOADK     R7 129       ; R7 := 129.000000
+224 [-]: LOADK     R8 1         ; R8 := 1.000000
 225 [-]: MOVE      R9 R4        ; R9 := R4
 226 [-]: GETGLOBAL R10 K9       ; R10 := gTennoAvatarType
 227 [-]: LOADNIL   R11 R11      ; R11 := nil
-228 [-]: CONST     R12 25       ; R12 := 25.000000
+228 [-]: LOADK     R12 25       ; R12 := 25.000000
 229 [-]: GETGLOBAL R13 K10      ; R13 := EMPTY_SYMBOL
 230 [-]: CALL      R5 9 1       ; R5(R6,R7,R8,R9,R10,R11,R12,R13)
 231 [-]: SELF      R5 R0 K5     ; R6 := R0; R5 := R0[0xafd5ace5]
-232 [-]: CONST     R7 70        ; R7 := 70.000000
-233 [-]: CONST     R8 1         ; R8 := 1.000000
+232 [-]: LOADK     R7 70        ; R7 := 70.000000
+233 [-]: LOADK     R8 1         ; R8 := 1.000000
 234 [-]: MOVE      R9 R4        ; R9 := R4
 235 [-]: GETGLOBAL R10 K9       ; R10 := gTennoAvatarType
 236 [-]: LOADNIL   R11 R11      ; R11 := nil
-237 [-]: CONST     R12 25       ; R12 := 25.000000
+237 [-]: LOADK     R12 25       ; R12 := 25.000000
 238 [-]: GETGLOBAL R13 K10      ; R13 := EMPTY_SYMBOL
 239 [-]: CALL      R5 9 1       ; R5(R6,R7,R8,R9,R10,R11,R12,R13)
 240 [-]: SELF      R5 R0 K5     ; R6 := R0; R5 := R0[0xafd5ace5]
-241 [-]: CONST     R7 79        ; R7 := 79.000000
-242 [-]: CONST     R8 1         ; R8 := 1.000000
+241 [-]: LOADK     R7 79        ; R7 := 79.000000
+242 [-]: LOADK     R8 1         ; R8 := 1.000000
 243 [-]: MOVE      R9 R4        ; R9 := R4
 244 [-]: GETGLOBAL R10 K9       ; R10 := gTennoAvatarType
 245 [-]: LOADNIL   R11 R11      ; R11 := nil
-246 [-]: CONST     R12 25       ; R12 := 25.000000
+246 [-]: LOADK     R12 25       ; R12 := 25.000000
 247 [-]: GETGLOBAL R13 K10      ; R13 := EMPTY_SYMBOL
 248 [-]: CALL      R5 9 1       ; R5(R6,R7,R8,R9,R10,R11,R12,R13)
 249 [-]: SELF      R5 R0 K5     ; R6 := R0; R5 := R0[0xafd5ace5]
-250 [-]: CONST     R7 23        ; R7 := 23.000000
-251 [-]: CONST     R8 1         ; R8 := 1.000000
+250 [-]: LOADK     R7 23        ; R7 := 23.000000
+251 [-]: LOADK     R8 1         ; R8 := 1.000000
 252 [-]: MOVE      R9 R4        ; R9 := R4
 253 [-]: GETGLOBAL R10 K9       ; R10 := gTennoAvatarType
 254 [-]: LOADNIL   R11 R11      ; R11 := nil
-255 [-]: CONST     R12 25       ; R12 := 25.000000
+255 [-]: LOADK     R12 25       ; R12 := 25.000000
 256 [-]: GETGLOBAL R13 K10      ; R13 := EMPTY_SYMBOL
 257 [-]: CALL      R5 9 1       ; R5(R6,R7,R8,R9,R10,R11,R12,R13)
 258 [-]: SELF      R5 R0 K5     ; R6 := R0; R5 := R0[0xafd5ace5]
-259 [-]: CONST     R7 325       ; R7 := 325.000000
-260 [-]: CONST     R8 1         ; R8 := 1.000000
+259 [-]: LOADK     R7 325       ; R7 := 325.000000
+260 [-]: LOADK     R8 1         ; R8 := 1.000000
 261 [-]: MOVE      R9 R4        ; R9 := R4
 262 [-]: GETGLOBAL R10 K9       ; R10 := gTennoAvatarType
 263 [-]: LOADNIL   R11 R11      ; R11 := nil
-264 [-]: CONST     R12 25       ; R12 := 25.000000
+264 [-]: LOADK     R12 25       ; R12 := 25.000000
 265 [-]: GETGLOBAL R13 K10      ; R13 := EMPTY_SYMBOL
 266 [-]: CALL      R5 9 1       ; R5(R6,R7,R8,R9,R10,R11,R12,R13)
 267 [-]: SELF      R5 R0 K5     ; R6 := R0; R5 := R0[0xafd5ace5]
-268 [-]: CONST     R7 144       ; R7 := 144.000000
-269 [-]: CONST     R8 1         ; R8 := 1.000000
+268 [-]: LOADK     R7 144       ; R7 := 144.000000
+269 [-]: LOADK     R8 1         ; R8 := 1.000000
 270 [-]: MOVE      R9 R4        ; R9 := R4
 271 [-]: GETGLOBAL R10 K9       ; R10 := gTennoAvatarType
 272 [-]: LOADNIL   R11 R11      ; R11 := nil
-273 [-]: CONST     R12 25       ; R12 := 25.000000
+273 [-]: LOADK     R12 25       ; R12 := 25.000000
 274 [-]: GETGLOBAL R13 K10      ; R13 := EMPTY_SYMBOL
 275 [-]: CALL      R5 9 1       ; R5(R6,R7,R8,R9,R10,R11,R12,R13)
 276 [-]: SELF      R5 R0 K5     ; R6 := R0; R5 := R0[0xafd5ace5]
-277 [-]: CONST     R7 11        ; R7 := 11.000000
-278 [-]: CONST     R8 1         ; R8 := 1.000000
+277 [-]: LOADK     R7 11        ; R7 := 11.000000
+278 [-]: LOADK     R8 1         ; R8 := 1.000000
 279 [-]: MOVE      R9 R4        ; R9 := R4
 280 [-]: GETGLOBAL R10 K9       ; R10 := gTennoAvatarType
 281 [-]: LOADNIL   R11 R11      ; R11 := nil
-282 [-]: CONST     R12 25       ; R12 := 25.000000
+282 [-]: LOADK     R12 25       ; R12 := 25.000000
 283 [-]: GETGLOBAL R13 K10      ; R13 := EMPTY_SYMBOL
 284 [-]: CALL      R5 9 1       ; R5(R6,R7,R8,R9,R10,R11,R12,R13)
 285 [-]: JMP       579          ; PC := 579
@@ -2838,30 +2838,30 @@
 288 [-]: GETUPVAL  R5 U7        ; R5 := U7
 289 [-]: SETTABLE  R0 K16 R5    ; R0["fxLayer"] := R5
 290 [-]: SELF      R5 R0 K5     ; R6 := R0; R5 := R0[0xafd5ace5]
-291 [-]: CONST     R7 300       ; R7 := 300.000000
-292 [-]: CONST     R8 0         ; R8 := 0.000000
-293 [-]: CONST     R9 1         ; R9 := 1.000000
+291 [-]: LOADK     R7 300       ; R7 := 300.000000
+292 [-]: LOADK     R8 0         ; R8 := 0.000000
+293 [-]: LOADK     R9 1         ; R9 := 1.000000
 294 [-]: GETGLOBAL R10 K8       ; R10 := gLotusNpcAvatarType
 295 [-]: LOADNIL   R11 R11      ; R11 := nil
-296 [-]: CONST     R12 8        ; R12 := 8.000000
+296 [-]: LOADK     R12 8        ; R12 := 8.000000
 297 [-]: GETUPVAL  R13 U0       ; R13 := U0
 298 [-]: CALL      R5 9 1       ; R5(R6,R7,R8,R9,R10,R11,R12,R13)
 299 [-]: SELF      R5 R0 K5     ; R6 := R0; R5 := R0[0xafd5ace5]
-300 [-]: CONST     R7 300       ; R7 := 300.000000
-301 [-]: CONST     R8 1         ; R8 := 1.000000
-302 [-]: CONST     R9 0         ; R9 := 0.250000
+300 [-]: LOADK     R7 300       ; R7 := 300.000000
+301 [-]: LOADK     R8 1         ; R8 := 1.000000
+302 [-]: LOADK     R9 0         ; R9 := 0.250000
 303 [-]: GETGLOBAL R10 K8       ; R10 := gLotusNpcAvatarType
 304 [-]: LOADNIL   R11 R11      ; R11 := nil
-305 [-]: CONST     R12 21       ; R12 := 21.000000
+305 [-]: LOADK     R12 21       ; R12 := 21.000000
 306 [-]: GETUPVAL  R13 U0       ; R13 := U0
 307 [-]: CALL      R5 9 1       ; R5(R6,R7,R8,R9,R10,R11,R12,R13)
 308 [-]: SELF      R5 R0 K5     ; R6 := R0; R5 := R0[0xafd5ace5]
-309 [-]: CONST     R7 307       ; R7 := 307.000000
-310 [-]: CONST     R8 3         ; R8 := 3.000000
+309 [-]: LOADK     R7 307       ; R7 := 307.000000
+310 [-]: LOADK     R8 3         ; R8 := 3.000000
 311 [-]: GETUPVAL  R9 U4        ; R9 := U4
 312 [-]: GETGLOBAL R10 K8       ; R10 := gLotusNpcAvatarType
 313 [-]: LOADNIL   R11 R11      ; R11 := nil
-314 [-]: CONST     R12 25       ; R12 := 25.000000
+314 [-]: LOADK     R12 25       ; R12 := 25.000000
 315 [-]: GETUPVAL  R13 U0       ; R13 := U0
 316 [-]: CALL      R5 9 1       ; R5(R6,R7,R8,R9,R10,R11,R12,R13)
 317 [-]: GETUPVAL  R5 U1        ; R5 := U1
@@ -2880,21 +2880,21 @@
 330 [-]: LE        0 R1 K35     ; if R1 > 16.000000 then PC := 442
 331 [-]: JMP       442          ; PC := 442
 332 [-]: SELF      R5 R0 K5     ; R6 := R0; R5 := R0[0xafd5ace5]
-333 [-]: CONST     R7 33        ; R7 := 33.000000
-334 [-]: CONST     R8 1         ; R8 := 1.000000
+333 [-]: LOADK     R7 33        ; R7 := 33.000000
+334 [-]: LOADK     R8 1         ; R8 := 1.000000
 335 [-]: LOADK     R9 K36       ; R9 := 0.150000
 336 [-]: GETGLOBAL R10 K8       ; R10 := gLotusNpcAvatarType
 337 [-]: LOADNIL   R11 R11      ; R11 := nil
-338 [-]: CONST     R12 23       ; R12 := 23.000000
+338 [-]: LOADK     R12 23       ; R12 := 23.000000
 339 [-]: GETUPVAL  R13 U0       ; R13 := U0
 340 [-]: CALL      R5 9 1       ; R5(R6,R7,R8,R9,R10,R11,R12,R13)
 341 [-]: SELF      R5 R0 K5     ; R6 := R0; R5 := R0[0xafd5ace5]
-342 [-]: CONST     R7 33        ; R7 := 33.000000
-343 [-]: CONST     R8 1         ; R8 := 1.000000
+342 [-]: LOADK     R7 33        ; R7 := 33.000000
+343 [-]: LOADK     R8 1         ; R8 := 1.000000
 344 [-]: LOADK     R9 K36       ; R9 := 0.150000
 345 [-]: GETGLOBAL R10 K8       ; R10 := gLotusNpcAvatarType
 346 [-]: LOADNIL   R11 R11      ; R11 := nil
-347 [-]: CONST     R12 24       ; R12 := 24.000000
+347 [-]: LOADK     R12 24       ; R12 := 24.000000
 348 [-]: GETUPVAL  R13 U0       ; R13 := U0
 349 [-]: CALL      R5 9 1       ; R5(R6,R7,R8,R9,R10,R11,R12,R13)
 350 [-]: GETUPVAL  R5 U1        ; R5 := U1
@@ -2907,68 +2907,68 @@
 357 [-]: LOADNIL   R7 R7        ; R7 := nil
 358 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
 359 [-]: MOVE      R3 R5        ; R3 := R5
-360 [-]: CONST     R5 4         ; R5 := 4.000000
+360 [-]: LOADK     R5 4         ; R5 := 4.000000
 361 [-]: LOADK     R6 K39       ; R6 := "/Lotus/Language/Game/DT_FREEZE"
 362 [-]: EQ        0 R1 K34     ; if R1 ~= 8.000000 then PC := 367
 363 [-]: JMP       367          ; PC := 367
-364 [-]: CONST     R5 4         ; R5 := 4.000000
+364 [-]: LOADK     R5 4         ; R5 := 4.000000
 365 [-]: LOADK     R6 K39       ; R6 := "/Lotus/Language/Game/DT_FREEZE"
 366 [-]: JMP       406          ; PC := 406
 367 [-]: EQ        0 R1 K40     ; if R1 ~= 9.000000 then PC := 372
 368 [-]: JMP       372          ; PC := 372
-369 [-]: CONST     R5 3         ; R5 := 3.000000
+369 [-]: LOADK     R5 3         ; R5 := 3.000000
 370 [-]: LOADK     R6 K41       ; R6 := "/Lotus/Language/Game/DT_FIRE"
 371 [-]: JMP       406          ; PC := 406
 372 [-]: EQ        0 R1 K42     ; if R1 ~= 10.000000 then PC := 377
 373 [-]: JMP       377          ; PC := 377
-374 [-]: CONST     R5 5         ; R5 := 5.000000
+374 [-]: LOADK     R5 5         ; R5 := 5.000000
 375 [-]: LOADK     R6 K43       ; R6 := "/Lotus/Language/Game/DT_ELECTRICITY"
 376 [-]: JMP       406          ; PC := 406
 377 [-]: EQ        0 R1 K44     ; if R1 ~= 11.000000 then PC := 382
 378 [-]: JMP       382          ; PC := 382
-379 [-]: CONST     R5 6         ; R5 := 6.000000
+379 [-]: LOADK     R5 6         ; R5 := 6.000000
 380 [-]: LOADK     R6 K45       ; R6 := "/Lotus/Language/Game/DT_POISON"
 381 [-]: JMP       406          ; PC := 406
 382 [-]: EQ        0 R1 K46     ; if R1 ~= 12.000000 then PC := 387
 383 [-]: JMP       387          ; PC := 387
-384 [-]: CONST     R5 8         ; R5 := 8.000000
+384 [-]: LOADK     R5 8         ; R5 := 8.000000
 385 [-]: LOADK     R6 K47       ; R6 := "/Lotus/Language/Game/DT_RADIATION"
 386 [-]: JMP       406          ; PC := 406
 387 [-]: EQ        0 R1 K48     ; if R1 ~= 13.000000 then PC := 392
 388 [-]: JMP       392          ; PC := 392
-389 [-]: CONST     R5 10        ; R5 := 10.000000
+389 [-]: LOADK     R5 10        ; R5 := 10.000000
 390 [-]: LOADK     R6 K49       ; R6 := "/Lotus/Language/Game/DT_MAGNETIC"
 391 [-]: JMP       406          ; PC := 406
 392 [-]: EQ        0 R1 K50     ; if R1 ~= 14.000000 then PC := 397
 393 [-]: JMP       397          ; PC := 397
-394 [-]: CONST     R5 11        ; R5 := 11.000000
+394 [-]: LOADK     R5 11        ; R5 := 11.000000
 395 [-]: LOADK     R6 K51       ; R6 := "/Lotus/Language/Game/DT_VIRAL"
 396 [-]: JMP       406          ; PC := 406
 397 [-]: EQ        0 R1 K52     ; if R1 ~= 15.000000 then PC := 402
 398 [-]: JMP       402          ; PC := 402
-399 [-]: CONST     R5 12        ; R5 := 12.000000
+399 [-]: LOADK     R5 12        ; R5 := 12.000000
 400 [-]: LOADK     R6 K53       ; R6 := "/Lotus/Language/Game/DT_CORROSIVE"
 401 [-]: JMP       406          ; PC := 406
 402 [-]: EQ        0 R1 K35     ; if R1 ~= 16.000000 then PC := 406
 403 [-]: JMP       406          ; PC := 406
-404 [-]: CONST     R5 7         ; R5 := 7.000000
+404 [-]: LOADK     R5 7         ; R5 := 7.000000
 405 [-]: LOADK     R6 K54       ; R6 := "/Lotus/Language/Game/DT_EXPLOSION"
 406 [-]: SELF      R7 R0 K5     ; R8 := R0; R7 := R0[0xafd5ace5]
-407 [-]: CONST     R9 300       ; R9 := 300.000000
-408 [-]: CONST     R10 0        ; R10 := 0.000000
-409 [-]: CONST     R11 1        ; R11 := 1.000000
+407 [-]: LOADK     R9 300       ; R9 := 300.000000
+408 [-]: LOADK     R10 0        ; R10 := 0.000000
+409 [-]: LOADK     R11 1        ; R11 := 1.000000
 410 [-]: GETGLOBAL R12 K8       ; R12 := gLotusNpcAvatarType
 411 [-]: LOADNIL   R13 R13      ; R13 := nil
 412 [-]: MOVE      R14 R5       ; R14 := R5
 413 [-]: GETUPVAL  R15 U0       ; R15 := U0
 414 [-]: CALL      R7 9 1       ; R7(R8,R9,R10,R11,R12,R13,R14,R15)
 415 [-]: SELF      R7 R0 K5     ; R8 := R0; R7 := R0[0xafd5ace5]
-416 [-]: CONST     R9 307       ; R9 := 307.000000
-417 [-]: CONST     R10 3        ; R10 := 3.000000
+416 [-]: LOADK     R9 307       ; R9 := 307.000000
+417 [-]: LOADK     R10 3        ; R10 := 3.000000
 418 [-]: GETUPVAL  R11 U4       ; R11 := U4
 419 [-]: GETGLOBAL R12 K8       ; R12 := gLotusNpcAvatarType
 420 [-]: LOADNIL   R13 R13      ; R13 := nil
-421 [-]: CONST     R14 25       ; R14 := 25.000000
+421 [-]: LOADK     R14 25       ; R14 := 25.000000
 422 [-]: GETUPVAL  R15 U0       ; R15 := U0
 423 [-]: CALL      R7 9 1       ; R7(R8,R9,R10,R11,R12,R13,R14,R15)
 424 [-]: GETUPVAL  R7 U1        ; R7 := U1
@@ -2994,46 +2994,46 @@
 444 [-]: LE        0 R1 K57     ; if R1 > 19.000000 then PC := 506
 445 [-]: JMP       506          ; PC := 506
 446 [-]: SELF      R7 R0 K5     ; R8 := R0; R7 := R0[0xafd5ace5]
-447 [-]: CONST     R9 33        ; R9 := 33.000000
-448 [-]: CONST     R10 1        ; R10 := 1.000000
+447 [-]: LOADK     R9 33        ; R9 := 33.000000
+448 [-]: LOADK     R10 1        ; R10 := 1.000000
 449 [-]: LOADK     R11 K36      ; R11 := 0.150000
 450 [-]: GETGLOBAL R12 K8       ; R12 := gLotusNpcAvatarType
 451 [-]: LOADNIL   R13 R13      ; R13 := nil
-452 [-]: CONST     R14 21       ; R14 := 21.000000
+452 [-]: LOADK     R14 21       ; R14 := 21.000000
 453 [-]: GETUPVAL  R15 U0       ; R15 := U0
 454 [-]: CALL      R7 9 1       ; R7(R8,R9,R10,R11,R12,R13,R14,R15)
-455 [-]: CONST     R7 0         ; R7 := 0.000000
+455 [-]: LOADK     R7 0         ; R7 := 0.000000
 456 [-]: LOADK     R8 K58       ; R8 := "/Lotus/Language/Game/DT_IMPACT"
 457 [-]: EQ        0 R1 K56     ; if R1 ~= 17.000000 then PC := 462
 458 [-]: JMP       462          ; PC := 462
-459 [-]: CONST     R7 0         ; R7 := 0.000000
+459 [-]: LOADK     R7 0         ; R7 := 0.000000
 460 [-]: LOADK     R8 K58       ; R8 := "/Lotus/Language/Game/DT_IMPACT"
 461 [-]: JMP       471          ; PC := 471
 462 [-]: EQ        0 R1 K59     ; if R1 ~= 18.000000 then PC := 467
 463 [-]: JMP       467          ; PC := 467
-464 [-]: CONST     R7 1         ; R7 := 1.000000
+464 [-]: LOADK     R7 1         ; R7 := 1.000000
 465 [-]: LOADK     R8 K60       ; R8 := "/Lotus/Language/Game/DT_PUNCTURE"
 466 [-]: JMP       471          ; PC := 471
 467 [-]: EQ        0 R1 K57     ; if R1 ~= 19.000000 then PC := 471
 468 [-]: JMP       471          ; PC := 471
-469 [-]: CONST     R7 2         ; R7 := 2.000000
+469 [-]: LOADK     R7 2         ; R7 := 2.000000
 470 [-]: LOADK     R8 K61       ; R8 := "/Lotus/Language/Game/DT_SLASH"
 471 [-]: SELF      R9 R0 K5     ; R10 := R0; R9 := R0[0xafd5ace5]
-472 [-]: CONST     R11 300      ; R11 := 300.000000
-473 [-]: CONST     R12 0        ; R12 := 0.000000
-474 [-]: CONST     R13 1        ; R13 := 1.000000
+472 [-]: LOADK     R11 300      ; R11 := 300.000000
+473 [-]: LOADK     R12 0        ; R12 := 0.000000
+474 [-]: LOADK     R13 1        ; R13 := 1.000000
 475 [-]: GETGLOBAL R14 K8       ; R14 := gLotusNpcAvatarType
 476 [-]: LOADNIL   R15 R15      ; R15 := nil
 477 [-]: MOVE      R16 R7       ; R16 := R7
 478 [-]: GETUPVAL  R17 U0       ; R17 := U0
 479 [-]: CALL      R9 9 1       ; R9(R10,R11,R12,R13,R14,R15,R16,R17)
 480 [-]: SELF      R9 R0 K5     ; R10 := R0; R9 := R0[0xafd5ace5]
-481 [-]: CONST     R11 307      ; R11 := 307.000000
-482 [-]: CONST     R12 3        ; R12 := 3.000000
+481 [-]: LOADK     R11 307      ; R11 := 307.000000
+482 [-]: LOADK     R12 3        ; R12 := 3.000000
 483 [-]: GETUPVAL  R13 U4       ; R13 := U4
 484 [-]: GETGLOBAL R14 K8       ; R14 := gLotusNpcAvatarType
 485 [-]: LOADNIL   R15 R15      ; R15 := nil
-486 [-]: CONST     R16 25       ; R16 := 25.000000
+486 [-]: LOADK     R16 25       ; R16 := 25.000000
 487 [-]: GETUPVAL  R17 U0       ; R17 := U0
 488 [-]: CALL      R9 9 1       ; R9(R10,R11,R12,R13,R14,R15,R16,R17)
 489 [-]: GETUPVAL  R9 U1        ; R9 := U1
@@ -3056,22 +3056,22 @@
 506 [-]: EQ        0 R1 K64     ; if R1 ~= 20.000000 then PC := 539
 507 [-]: JMP       539          ; PC := 539
 508 [-]: SELF      R9 R0 K5     ; R10 := R0; R9 := R0[0xafd5ace5]
-509 [-]: CONST     R11 87       ; R11 := 87.000000
-510 [-]: CONST     R12 1        ; R12 := 1.000000
-511 [-]: CONST     R13 0        ; R13 := 0.250000
+509 [-]: LOADK     R11 87       ; R11 := 87.000000
+510 [-]: LOADK     R12 1        ; R12 := 1.000000
+511 [-]: LOADK     R13 0        ; R13 := 0.250000
 512 [-]: GETGLOBAL R14 K9       ; R14 := gTennoAvatarType
 513 [-]: LOADNIL   R15 R15      ; R15 := nil
-514 [-]: CONST     R16 25       ; R16 := 25.000000
+514 [-]: LOADK     R16 25       ; R16 := 25.000000
 515 [-]: GETGLOBAL R17 K10      ; R17 := EMPTY_SYMBOL
 516 [-]: GETGLOBAL R18 K65      ; R18 := gLotusOperatorAvatarType
 517 [-]: CALL      R9 10 1      ; R9(R10,R11,R12,R13,R14,R15,R16,R17,R18)
 518 [-]: SELF      R9 R0 K5     ; R10 := R0; R9 := R0[0xafd5ace5]
-519 [-]: CONST     R11 88       ; R11 := 88.000000
-520 [-]: CONST     R12 1        ; R12 := 1.000000
+519 [-]: LOADK     R11 88       ; R11 := 88.000000
+520 [-]: LOADK     R12 1        ; R12 := 1.000000
 521 [-]: LOADK     R13 K36      ; R13 := 0.150000
 522 [-]: GETGLOBAL R14 K9       ; R14 := gTennoAvatarType
 523 [-]: LOADNIL   R15 R15      ; R15 := nil
-524 [-]: CONST     R16 25       ; R16 := 25.000000
+524 [-]: LOADK     R16 25       ; R16 := 25.000000
 525 [-]: GETGLOBAL R17 K10      ; R17 := EMPTY_SYMBOL
 526 [-]: GETGLOBAL R18 K65      ; R18 := gLotusOperatorAvatarType
 527 [-]: CALL      R9 10 1      ; R9(R10,R11,R12,R13,R14,R15,R16,R17,R18)
@@ -3191,9 +3191,9 @@
  12 [-]: LEN       R4 R3        ; R4 := # R3
  13 [-]: LT        0 K5 R4      ; if 0.000000 >= R4 then PC := 60
  14 [-]: JMP       60           ; PC := 60
- 15 [-]: CONST     R4 1         ; R4 := 1.000000
+ 15 [-]: LOADK     R4 1         ; R4 := 1.000000
  16 [-]: LEN       R5 R3        ; R5 := # R3
- 17 [-]: CONST     R6 1         ; R6 := 1.000000
+ 17 [-]: LOADK     R6 1         ; R6 := 1.000000
  18 [-]: FORPREP   R4 41        ; R4 -= R6; PC := 41
  19 [-]: GETGLOBAL R8 K6        ; R8 := 0x5f93cf5b
  20 [-]: GETTABLE  R9 R3 R7     ; R9 := R3[R7]
@@ -3324,7 +3324,7 @@
 145 [-]: SETLIST   R16 3 1      ; R16[(1-1)*FPF+i] := R(16+i), 1 <= i <= 3
 146 [-]: GETGLOBAL R17 K38      ; R17 := 0x76ea806b
 147 [-]: SELF      R17 R17 K39  ; R18 := R17; R17 := R17[0x3f3ae64c]
-148 [-]: CONST     R19 0        ; R19 := 0.000000
+148 [-]: LOADK     R19 0        ; R19 := 0.000000
 149 [-]: CALL      R17 3 2      ; R17 := R17(R18,R19)
 150 [-]: SELF      R17 R17 K40  ; R18 := R17; R17 := R17[0x80563238]
 151 [-]: CALL      R17 2 2      ; R17 := R17(R18)
@@ -3385,9 +3385,9 @@
 206 [-]: GETTABLE  R27 R26 R27  ; R27 := R26[R27]
 207 [-]: GETTABLE  R27 R27 K53  ; R27 := R27["mSortieId"]
 208 [-]: GETTABLE  R25 R27 K54  ; R25 := R27["mId"]
-209 [-]: CONST     R27 1        ; R27 := 1.000000
+209 [-]: LOADK     R27 1        ; R27 := 1.000000
 210 [-]: LEN       R28 R3       ; R28 := # R3
-211 [-]: CONST     R29 1        ; R29 := 1.000000
+211 [-]: LOADK     R29 1        ; R29 := 1.000000
 212 [-]: FORPREP   R27 817      ; R27 -= R29; PC := 817
 213 [-]: GETTABLE  R31 R3 R30   ; R31 := R3[R30]
 214 [-]: GETTABLE  R32 R31 K54  ; R32 := R31["mId"]
@@ -3439,12 +3439,12 @@
 260 [-]: SETTABLE  R41 K63 R38  ; R41["BOSS_NAME"] := R38
 261 [-]: CALL      R39 3 2      ; R39 := R39(R40,R41)
 262 [-]: NEWTABLE  R40 0 0      ; R40 := {}
-263 [-]: CONST     R41 1        ; R41 := 1.000000
+263 [-]: LOADK     R41 1        ; R41 := 1.000000
 264 [-]: LEN       R42 R36      ; R42 := # R36
-265 [-]: CONST     R43 1        ; R43 := 1.000000
+265 [-]: LOADK     R43 1        ; R43 := 1.000000
 266 [-]: FORPREP   R41 816      ; R41 -= R43; PC := 816
 267 [-]: GETGLOBAL R45 K64      ; R45 := 0xce225efa
-268 [-]: CONST     R46 0        ; R46 := 0.000000
+268 [-]: LOADK     R46 0        ; R46 := 0.000000
 269 [-]: CALL      R45 2 1      ; R45(R46)
 270 [-]: GETTABLE  R45 R36 R44  ; R45 := R36[R44]
 271 [-]: SELF      R46 R14 K65  ; R47 := R14; R46 := R14[0x3ad9ed31]
@@ -3684,9 +3684,9 @@
 505 [-]: SETTABLE  R52 K113 K112; R52["maxWaveNum"] := 8.000000
 506 [-]: LT        0 K70 R44    ; if 1.000000 >= R44 then PC := 531
 507 [-]: JMP       531          ; PC := 531
-508 [-]: CONST     R57 1        ; R57 := 1.000000
+508 [-]: LOADK     R57 1        ; R57 := 1.000000
 509 [-]: SUB       R58 R44 K70  ; R58 := R44 - 1.000000
-510 [-]: CONST     R59 1        ; R59 := 1.000000
+510 [-]: LOADK     R59 1        ; R59 := 1.000000
 511 [-]: FORPREP   R57 516      ; R57 -= R59; PC := 516
 512 [-]: SELF      R61 R52 K127 ; R62 := R52; R61 := R52[0xa5ca46ab]
 513 [-]: GETTABLE  R63 R40 R60  ; R63 := R40[R60]
@@ -3732,7 +3732,7 @@
 553 [-]: JMP       563          ; PC := 563
 554 [-]: GETUPVAL  R61 U13      ; R61 := U13
 555 [-]: GETGLOBAL R62 K134     ; R62 := 0x0c5e62f9
-556 [-]: CONST     R63 1        ; R63 := 1.000000
+556 [-]: LOADK     R63 1        ; R63 := 1.000000
 557 [-]: GETUPVAL  R64 U13      ; R64 := U13
 558 [-]: LEN       R64 R64      ; R64 := # R64
 559 [-]: CALL      R62 3 2      ; R62 := R62(R63,R64)
@@ -3744,7 +3744,7 @@
 565 [-]: JMP       575          ; PC := 575
 566 [-]: GETUPVAL  R61 U14      ; R61 := U14
 567 [-]: GETGLOBAL R62 K134     ; R62 := 0x0c5e62f9
-568 [-]: CONST     R63 1        ; R63 := 1.000000
+568 [-]: LOADK     R63 1        ; R63 := 1.000000
 569 [-]: GETUPVAL  R64 U14      ; R64 := U14
 570 [-]: LEN       R64 R64      ; R64 := # R64
 571 [-]: CALL      R62 3 2      ; R62 := R62(R63,R64)
@@ -3756,7 +3756,7 @@
 577 [-]: JMP       587          ; PC := 587
 578 [-]: GETUPVAL  R61 U15      ; R61 := U15
 579 [-]: GETGLOBAL R62 K134     ; R62 := 0x0c5e62f9
-580 [-]: CONST     R63 1        ; R63 := 1.000000
+580 [-]: LOADK     R63 1        ; R63 := 1.000000
 581 [-]: GETUPVAL  R64 U15      ; R64 := U15
 582 [-]: LEN       R64 R64      ; R64 := # R64
 583 [-]: CALL      R62 3 2      ; R62 := R62(R63,R64)
@@ -3768,7 +3768,7 @@
 589 [-]: JMP       599          ; PC := 599
 590 [-]: GETUPVAL  R61 U16      ; R61 := U16
 591 [-]: GETGLOBAL R62 K134     ; R62 := 0x0c5e62f9
-592 [-]: CONST     R63 1        ; R63 := 1.000000
+592 [-]: LOADK     R63 1        ; R63 := 1.000000
 593 [-]: GETUPVAL  R64 U16      ; R64 := U16
 594 [-]: LEN       R64 R64      ; R64 := # R64
 595 [-]: CALL      R62 3 2      ; R62 := R62(R63,R64)
@@ -3777,7 +3777,7 @@
 598 [-]: JMP       635          ; PC := 635
 599 [-]: GETUPVAL  R61 U17      ; R61 := U17
 600 [-]: GETGLOBAL R62 K134     ; R62 := 0x0c5e62f9
-601 [-]: CONST     R63 1        ; R63 := 1.000000
+601 [-]: LOADK     R63 1        ; R63 := 1.000000
 602 [-]: GETUPVAL  R64 U17      ; R64 := U17
 603 [-]: LEN       R64 R64      ; R64 := # R64
 604 [-]: CALL      R62 3 2      ; R62 := R62(R63,R64)
@@ -3788,7 +3788,7 @@
 609 [-]: JMP       619          ; PC := 619
 610 [-]: GETUPVAL  R61 U18      ; R61 := U18
 611 [-]: GETGLOBAL R62 K134     ; R62 := 0x0c5e62f9
-612 [-]: CONST     R63 1        ; R63 := 1.000000
+612 [-]: LOADK     R63 1        ; R63 := 1.000000
 613 [-]: GETUPVAL  R64 U18      ; R64 := U18
 614 [-]: LEN       R64 R64      ; R64 := # R64
 615 [-]: CALL      R62 3 2      ; R62 := R62(R63,R64)
@@ -3805,7 +3805,7 @@
 626 [-]: JMP       635          ; PC := 635
 627 [-]: GETUPVAL  R61 U19      ; R61 := U19
 628 [-]: GETGLOBAL R62 K134     ; R62 := 0x0c5e62f9
-629 [-]: CONST     R63 1        ; R63 := 1.000000
+629 [-]: LOADK     R63 1        ; R63 := 1.000000
 630 [-]: GETUPVAL  R64 U19      ; R64 := U19
 631 [-]: LEN       R64 R64      ; R64 := # R64
 632 [-]: CALL      R62 3 2      ; R62 := R62(R63,R64)
@@ -3843,7 +3843,7 @@
 664 [-]: GETUPVAL  R67 U23      ; R67 := U23
 665 [-]: GETGLOBAL R68 K142     ; R68 := 0x42dcc9f5
 666 [-]: MOVE      R69 R44      ; R69 := R44
-667 [-]: CONST     R70 1        ; R70 := 1.000000
+667 [-]: LOADK     R70 1        ; R70 := 1.000000
 668 [-]: GETUPVAL  R71 U23      ; R71 := U23
 669 [-]: LEN       R71 R71      ; R71 := # R71
 670 [-]: CALL      R68 4 2      ; R68 := R68(R69,R70,R71)
@@ -3855,10 +3855,10 @@
 676 [-]: MOVE      R67 R18      ; R67 := R18
 677 [-]: GETTABLE  R68 R52 K144 ; R68 := R52["prereqIds"]
 678 [-]: LEN       R68 R68      ; R68 := # R68
-679 [-]: CONST     R69 1        ; R69 := 1.000000
+679 [-]: LOADK     R69 1        ; R69 := 1.000000
 680 [-]: GETTABLE  R70 R52 K144 ; R70 := R52["prereqIds"]
 681 [-]: LEN       R70 R70      ; R70 := # R70
-682 [-]: CONST     R71 1        ; R71 := 1.000000
+682 [-]: LOADK     R71 1        ; R71 := 1.000000
 683 [-]: FORPREP   R69 691      ; R69 -= R71; PC := 691
 684 [-]: SELF      R73 R0 K143  ; R74 := R0; R73 := R0[0xaf584239]
 685 [-]: GETTABLE  R75 R52 K144 ; R75 := R52["prereqIds"]
@@ -4026,9 +4026,9 @@
  16 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  17 [-]: GETGLOBAL R4 K10       ; R4 := 0xffd438ab
  18 [-]: CALL      R4 1 2       ; R4 := R4()
- 19 [-]: CONST     R5 1         ; R5 := 1.000000
+ 19 [-]: LOADK     R5 1         ; R5 := 1.000000
  20 [-]: LEN       R6 R1        ; R6 := # R1
- 21 [-]: CONST     R7 1         ; R7 := 1.000000
+ 21 [-]: LOADK     R7 1         ; R7 := 1.000000
  22 [-]: FORPREP   R5 168       ; R5 -= R7; PC := 168
  23 [-]: GETTABLE  R9 R1 R8     ; R9 := R1[R8]
  24 [-]: GETGLOBAL R10 K11      ; R10 := 0x4f6851ff
@@ -4037,9 +4037,9 @@
  27 [-]: GETTABLE  R10 R9 K13   ; R10 := R9["mExpiry"]
  28 [-]: NEWTABLE  R11 0 0      ; R11 := {}
  29 [-]: GETTABLE  R12 R9 K14   ; R12 := R9["mMissions"]
- 30 [-]: CONST     R13 1        ; R13 := 1.000000
+ 30 [-]: LOADK     R13 1        ; R13 := 1.000000
  31 [-]: LEN       R14 R12      ; R14 := # R12
- 32 [-]: CONST     R15 1        ; R15 := 1.000000
+ 32 [-]: LOADK     R15 1        ; R15 := 1.000000
  33 [-]: FORPREP   R13 165      ; R13 -= R15; PC := 165
  34 [-]: GETTABLE  R17 R12 R16  ; R17 := R12[R16]
  35 [-]: GETTABLE  R18 R17 K15  ; R18 := R17["node"]
@@ -4086,9 +4086,9 @@
  76 [-]: SETTABLE  R31 K32 R19  ; R31["sectorName"] := R19
  77 [-]: SETTABLE  R31 K33 R28  ; R31["regionName"] := R28
  78 [-]: CALL      R29 3 1      ; R29(R30,R31)
- 79 [-]: CONST     R29 1        ; R29 := 1.000000
+ 79 [-]: LOADK     R29 1        ; R29 := 1.000000
  80 [-]: SUB       R30 R16 K18  ; R30 := R16 - 1.000000
- 81 [-]: CONST     R31 1        ; R31 := 1.000000
+ 81 [-]: LOADK     R31 1        ; R31 := 1.000000
  82 [-]: FORPREP   R29 87       ; R29 -= R31; PC := 87
  83 [-]: SELF      R33 R23 K34  ; R34 := R23; R33 := R23[0xa5ca46ab]
  84 [-]: GETTABLE  R35 R11 R32  ; R35 := R11[R32]
@@ -4118,7 +4118,7 @@
 108 [-]: JMP       118          ; PC := 118
 109 [-]: GETUPVAL  R34 U3       ; R34 := U3
 110 [-]: GETGLOBAL R35 K43      ; R35 := 0x0c5e62f9
-111 [-]: CONST     R36 1        ; R36 := 1.000000
+111 [-]: LOADK     R36 1        ; R36 := 1.000000
 112 [-]: GETUPVAL  R37 U3       ; R37 := U3
 113 [-]: LEN       R37 R37      ; R37 := # R37
 114 [-]: CALL      R35 3 2      ; R35 := R35(R36,R37)
@@ -4130,7 +4130,7 @@
 120 [-]: JMP       129          ; PC := 129
 121 [-]: GETUPVAL  R34 U4       ; R34 := U4
 122 [-]: GETGLOBAL R35 K43      ; R35 := 0x0c5e62f9
-123 [-]: CONST     R36 1        ; R36 := 1.000000
+123 [-]: LOADK     R36 1        ; R36 := 1.000000
 124 [-]: GETUPVAL  R37 U4       ; R37 := U4
 125 [-]: LEN       R37 R37      ; R37 := # R37
 126 [-]: CALL      R35 3 2      ; R35 := R35(R36,R37)

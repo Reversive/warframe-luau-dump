@@ -88,7 +88,7 @@
  14 [-]: SELF      R1 R1 K5     ; R2 := R1; R1 := R1[0x5163741e]
  15 [-]: CALL      R1 2 2       ; R1 := R1(R2)
  16 [-]: SELF      R2 R1 K6     ; R3 := R1; R2 := R1[0x014db014]
- 17 [-]: CONST     R4 10        ; R4 := 10.000000
+ 17 [-]: LOADK     R4 10        ; R4 := 10.000000
  18 [-]: CALL      R2 3 1       ; R2(R3,R4)
  19 [-]: RETURN    R0 1         ; return 
 
@@ -131,8 +131,8 @@
  27 [-]: CALL      R0 3 1       ; R0(R1,R2)
  28 [-]: GETGLOBAL R0 K7        ; R0 := 0xbe190284
  29 [-]: SELF      R0 R0 K10    ; R1 := R0; R0 := R0[0xf9bfc5d9]
- 30 [-]: CONST     R2 0         ; R2 := 0.000000
- 31 [-]: CONST     R3 0         ; R3 := 0.000000
+ 30 [-]: LOADK     R2 0         ; R2 := 0.000000
+ 31 [-]: LOADK     R3 0         ; R3 := 0.000000
  32 [-]: CALL      R0 4 1       ; R0(R1,R2,R3)
  33 [-]: GETUPVAL  R0 U0        ; R0 := U0
  34 [-]: GETTABLE  R0 R0 K12    ; R82 := R0[0x8525799d]

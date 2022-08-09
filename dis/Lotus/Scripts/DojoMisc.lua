@@ -105,7 +105,7 @@
  35 [-]: GETGLOBAL R3 K12       ; R3 := _T
  36 [-]: SETTABLE  R3 K15 K16   ; R3["KneelingTrigger"] := nil
  37 [-]: GETGLOBAL R3 K17       ; R3 := 0xcbd666e1
- 38 [-]: CONST     R4 2         ; R4 := 2.000000
+ 38 [-]: LOADK     R4 2         ; R4 := 2.000000
  39 [-]: CALL      R3 2 1       ; R3(R4)
  40 [-]: SELF      R3 R0 K18    ; R4 := R0; R3 := R0[0xbb212a97]
  41 [-]: LOADNIL   R5 R5        ; R5 := nil
@@ -160,7 +160,7 @@
  90 [-]: SELF      R5 R5 K29    ; R6 := R5; R5 := R5[0x930d401c]
  91 [-]: CALL      R5 2 1       ; R5(R6)
  92 [-]: SELF      R5 R1 K30    ; R6 := R1; R5 := R1[0xea2890be]
- 93 [-]: CONST     R7 0         ; R7 := 0.000000
+ 93 [-]: LOADK     R7 0         ; R7 := 0.000000
  94 [-]: CALL      R5 3 1       ; R5(R6,R7)
  95 [-]: SELF      R5 R1 K32    ; R6 := R1; R5 := R1[0x020d4331]
  96 [-]: CALL      R5 2 2       ; R5 := R5(R6)
@@ -203,7 +203,7 @@
 133 [-]: GETGLOBAL R5 K12       ; R5 := _T
 134 [-]: SETTABLE  R5 K13 K39   ; R5["Kneeling"] := true
 135 [-]: GETGLOBAL R5 K17       ; R5 := 0xcbd666e1
-136 [-]: CONST     R6 2         ; R6 := 2.000000
+136 [-]: LOADK     R6 2         ; R6 := 2.000000
 137 [-]: CALL      R5 2 1       ; R5(R6)
 138 [-]: SELF      R5 R0 K40    ; R6 := R0; R5 := R0[0x8eb2112d]
 139 [-]: LOADK     R7 K41       ; R7 := "ToggleText"

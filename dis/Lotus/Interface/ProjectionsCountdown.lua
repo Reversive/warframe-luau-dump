@@ -29,7 +29,7 @@
  20 [-]: LOADNIL   R11 R13      ; R11 := R12 := R13 := nil
  21 [-]: OP_LOADBOOL R14 0 0      ; R14 := false
  22 [-]: NEWTABLE  R15 0 0      ; R15 := {}
- 23 [-]: CONST     R16 5        ; R16 := 5.000000
+ 23 [-]: LOADK     R16 5        ; R16 := 5.000000
  24 [-]: CLOSURE   R17 0        ; R17 := closure(Function #1)
  25 [-]: MOVE      R0 R4        ; R0 := R4
  26 [-]: CLOSURE   R18 1        ; R18 := closure(Function #2)
@@ -169,46 +169,46 @@
 
   1 [-]: GETUPVAL  R0 U0        ; R0 := U0
   2 [-]: GETTABLE  R0 R0 K0     ; R82 := R0[0x5d10207d]
-  3 [-]: CONST     R1 6         ; R1 := 6.000000
+  3 [-]: LOADK     R1 6         ; R1 := 6.000000
   4 [-]: OP_LOADBOOL R2 1 0       ; R2 := true
   5 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
   6 [-]: GETUPVAL  R1 U0        ; R1 := U0
   7 [-]: GETTABLE  R1 R1 K0     ; R82 := R1[0x5d10207d]
-  8 [-]: CONST     R2 2         ; R2 := 2.000000
+  8 [-]: LOADK     R2 2         ; R2 := 2.000000
   9 [-]: OP_LOADBOOL R3 1 0       ; R3 := true
  10 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
  11 [-]: GETUPVAL  R2 U0        ; R2 := U0
  12 [-]: GETTABLE  R2 R2 K0     ; R82 := R2[0x5d10207d]
- 13 [-]: CONST     R3 9         ; R3 := 9.000000
+ 13 [-]: LOADK     R3 9         ; R3 := 9.000000
  14 [-]: OP_LOADBOOL R4 1 0       ; R4 := true
  15 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
  16 [-]: GETUPVAL  R3 U0        ; R3 := U0
  17 [-]: GETTABLE  R3 R3 K0     ; R82 := R3[0x5d10207d]
- 18 [-]: CONST     R4 10        ; R4 := 10.000000
+ 18 [-]: LOADK     R4 10        ; R4 := 10.000000
  19 [-]: OP_LOADBOOL R5 1 0       ; R5 := true
  20 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
  21 [-]: GETGLOBAL R4 K2        ; R4 := 0xae91e43b
  22 [-]: SELF      R4 R4 K3     ; R5 := R4; R4 := R4[0x67bc869f]
  23 [-]: LOADK     R6 K4        ; R6 := "Countdown.RankShadow"
- 24 [-]: CONST     R7 9         ; R7 := 9.000000
+ 24 [-]: LOADK     R7 9         ; R7 := 9.000000
  25 [-]: MOVE      R8 R1        ; R8 := R1
  26 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
  27 [-]: GETGLOBAL R4 K2        ; R4 := 0xae91e43b
  28 [-]: SELF      R4 R4 K3     ; R5 := R4; R4 := R4[0x67bc869f]
  29 [-]: LOADK     R6 K5        ; R6 := "Countdown.RankHeader"
- 30 [-]: CONST     R7 9         ; R7 := 9.000000
+ 30 [-]: LOADK     R7 9         ; R7 := 9.000000
  31 [-]: MOVE      R8 R2        ; R8 := R2
  32 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
  33 [-]: GETGLOBAL R4 K2        ; R4 := 0xae91e43b
  34 [-]: SELF      R4 R4 K3     ; R5 := R4; R4 := R4[0x67bc869f]
  35 [-]: LOADK     R6 K6        ; R6 := "Countdown.Time"
- 36 [-]: CONST     R7 9         ; R7 := 9.000000
+ 36 [-]: LOADK     R7 9         ; R7 := 9.000000
  37 [-]: MOVE      R8 R0        ; R8 := R0
  38 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
  39 [-]: GETGLOBAL R4 K2        ; R4 := 0xae91e43b
  40 [-]: SELF      R4 R4 K3     ; R5 := R4; R4 := R4[0x67bc869f]
  41 [-]: LOADK     R6 K7        ; R6 := "Countdown.Hint"
- 42 [-]: CONST     R7 9         ; R7 := 9.000000
+ 42 [-]: LOADK     R7 9         ; R7 := 9.000000
  43 [-]: MOVE      R8 R3        ; R8 := R3
  44 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
  45 [-]: RETURN    R0 1         ; return 
@@ -241,7 +241,7 @@
  16 [-]: GETGLOBAL R0 K1        ; R0 := 0xbe190284
  17 [-]: SELF      R0 R0 K4     ; R1 := R0; R0 := R0[0xd761a7a1]
  18 [-]: LOADK     R2 K5        ; R2 := 0.300000
- 19 [-]: CONST     R3 2         ; R3 := 2.000000
+ 19 [-]: LOADK     R3 2         ; R3 := 2.000000
  20 [-]: CALL      R0 4 1       ; R0(R1,R2,R3)
  21 [-]: JMP       38           ; PC := 38
  22 [-]: GETUPVAL  R0 U1        ; R0 := U1
@@ -258,7 +258,7 @@
  33 [-]: CALL      R0 3 1       ; R0(R1,R2)
  34 [-]: GETGLOBAL R0 K1        ; R0 := 0xbe190284
  35 [-]: SELF      R0 R0 K9     ; R1 := R0; R0 := R0[0xa0e2a834]
- 36 [-]: CONST     R2 2         ; R2 := 2.000000
+ 36 [-]: LOADK     R2 2         ; R2 := 2.000000
  37 [-]: CALL      R0 3 1       ; R0(R1,R2)
  38 [-]: RETURN    R0 1         ; return 
 
@@ -396,66 +396,66 @@
  25 [-]: GETGLOBAL R3 K4        ; R3 := 0xae91e43b
  26 [-]: SELF      R3 R3 K5     ; R4 := R3; R3 := R3[0x67bc869f]
  27 [-]: LOADK     R5 K6        ; R5 := "Countdown.Time2"
- 28 [-]: CONST     R6 10        ; R6 := 10.000000
- 29 [-]: CONST     R7 100       ; R7 := 100.000000
+ 28 [-]: LOADK     R6 10        ; R6 := 10.000000
+ 29 [-]: LOADK     R7 100       ; R7 := 100.000000
  30 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
  31 [-]: GETGLOBAL R3 K4        ; R3 := 0xae91e43b
  32 [-]: SELF      R3 R3 K7     ; R4 := R3; R3 := R3[0x5f56eeab]
  33 [-]: LOADK     R5 K8        ; R5 := "Countdown.Time2.Label"
- 34 [-]: CONST     R6 29        ; R6 := 29.000000
+ 34 [-]: LOADK     R6 29        ; R6 := 29.000000
  35 [-]: MOVE      R7 R2        ; R7 := R2
  36 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
  37 [-]: GETGLOBAL R3 K4        ; R3 := 0xae91e43b
  38 [-]: SELF      R3 R3 K7     ; R4 := R3; R3 := R3[0x5f56eeab]
  39 [-]: LOADK     R5 K9        ; R5 := "Countdown.Time.Label"
- 40 [-]: CONST     R6 29        ; R6 := 29.000000
+ 40 [-]: LOADK     R6 29        ; R6 := 29.000000
  41 [-]: GETUPVAL  R7 U1        ; R7 := U1
  42 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
  43 [-]: GETGLOBAL R3 K4        ; R3 := 0xae91e43b
  44 [-]: SELF      R3 R3 K5     ; R4 := R3; R3 := R3[0x67bc869f]
  45 [-]: LOADK     R5 K10       ; R5 := "Countdown.Time"
- 46 [-]: CONST     R6 10        ; R6 := 10.000000
- 47 [-]: CONST     R7 0         ; R7 := 0.000000
+ 46 [-]: LOADK     R6 10        ; R6 := 10.000000
+ 47 [-]: LOADK     R7 0         ; R7 := 0.000000
  48 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
  49 [-]: GETGLOBAL R3 K4        ; R3 := 0xae91e43b
  50 [-]: SELF      R3 R3 K5     ; R4 := R3; R3 := R3[0x67bc869f]
  51 [-]: LOADK     R5 K10       ; R5 := "Countdown.Time"
- 52 [-]: CONST     R6 5         ; R6 := 5.000000
- 53 [-]: CONST     R7 10        ; R7 := 10.000000
+ 52 [-]: LOADK     R6 5         ; R6 := 5.000000
+ 53 [-]: LOADK     R7 10        ; R7 := 10.000000
  54 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
  55 [-]: GETGLOBAL R3 K4        ; R3 := 0xae91e43b
  56 [-]: SELF      R3 R3 K5     ; R4 := R3; R3 := R3[0x67bc869f]
  57 [-]: LOADK     R5 K10       ; R5 := "Countdown.Time"
- 58 [-]: CONST     R6 6         ; R6 := 6.000000
- 59 [-]: CONST     R7 10        ; R7 := 10.000000
+ 58 [-]: LOADK     R6 6         ; R6 := 6.000000
+ 59 [-]: LOADK     R7 10        ; R7 := 10.000000
  60 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
  61 [-]: GETGLOBAL R3 K11       ; R3 := 0x25312c9b
  62 [-]: GETGLOBAL R4 K4        ; R4 := 0xae91e43b
  63 [-]: LOADK     R5 K10       ; R5 := "Countdown.Time"
- 64 [-]: CONST     R6 2         ; R6 := 2.000000
+ 64 [-]: LOADK     R6 2         ; R6 := 2.000000
  65 [-]: NEWTABLE  R7 3 0       ; R7 := {}
- 66 [-]: CONST     R8 10        ; R8 := 10.000000
- 67 [-]: CONST     R9 5         ; R9 := 5.000000
- 68 [-]: CONST     R10 6        ; R10 := 6.000000
+ 66 [-]: LOADK     R8 10        ; R8 := 10.000000
+ 67 [-]: LOADK     R9 5         ; R9 := 5.000000
+ 68 [-]: LOADK     R10 6        ; R10 := 6.000000
  69 [-]: SETLIST   R7 3 1       ; R7[(1-1)*FPF+i] := R(7+i), 1 <= i <= 3
  70 [-]: NEWTABLE  R8 3 0       ; R8 := {}
- 71 [-]: CONST     R9 100       ; R9 := 100.000000
- 72 [-]: CONST     R10 80       ; R10 := 80.000000
- 73 [-]: CONST     R11 80       ; R11 := 80.000000
+ 71 [-]: LOADK     R9 100       ; R9 := 100.000000
+ 72 [-]: LOADK     R10 80       ; R10 := 80.000000
+ 73 [-]: LOADK     R11 80       ; R11 := 80.000000
  74 [-]: SETLIST   R8 3 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 3
  75 [-]: LOADK     R9 K13       ; R9 := 0.150000
- 76 [-]: CONST     R10 0        ; R10 := 0.000000
+ 76 [-]: LOADK     R10 0        ; R10 := 0.000000
  77 [-]: CLOSURE   R11 0        ; R11 := closure(Function #8.1)
  78 [-]: CALL      R3 9 1       ; R3(R4,R5,R6,R7,R8,R9,R10,R11)
  79 [-]: GETGLOBAL R3 K11       ; R3 := 0x25312c9b
  80 [-]: GETGLOBAL R4 K4        ; R4 := 0xae91e43b
  81 [-]: LOADK     R5 K6        ; R5 := "Countdown.Time2"
- 82 [-]: CONST     R6 2         ; R6 := 2.000000
+ 82 [-]: LOADK     R6 2         ; R6 := 2.000000
  83 [-]: NEWTABLE  R7 1 0       ; R7 := {}
- 84 [-]: CONST     R8 10        ; R8 := 10.000000
+ 84 [-]: LOADK     R8 10        ; R8 := 10.000000
  85 [-]: SETLIST   R7 1 1       ; R7[(1-1)*FPF+i] := R(7+i), 1 <= i <= 1
  86 [-]: NEWTABLE  R8 1 0       ; R8 := {}
- 87 [-]: CONST     R9 0         ; R9 := 0.000000
+ 87 [-]: LOADK     R9 0         ; R9 := 0.000000
  88 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
  89 [-]: LOADK     R9 K14       ; R9 := 0.100000
  90 [-]: CALL      R3 7 1       ; R3(R4,R5,R6,R7,R8,R9)
@@ -464,10 +464,10 @@
  93 [-]: GETUPVAL  R3 U5        ; R3 := U5
  94 [-]: CALL      R3 1 1       ; R3()
  95 [-]: GETUPVAL  R3 U6        ; R3 := U6
- 96 [-]: CONST     R4 1         ; R4 := 1.000000
+ 96 [-]: LOADK     R4 1         ; R4 := 1.000000
  97 [-]: GETUPVAL  R5 U7        ; R5 := U7
  98 [-]: LEN       R5 R5        ; R5 := # R5
- 99 [-]: CONST     R6 1         ; R6 := 1.000000
+ 99 [-]: LOADK     R6 1         ; R6 := 1.000000
 100 [-]: FORPREP   R4 114       ; R4 -= R6; PC := 114
 101 [-]: GETUPVAL  R8 U8        ; R8 := U8
 102 [-]: GETUPVAL  R9 U7        ; R9 := U7
@@ -499,14 +499,14 @@
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x25312c9b
   2 [-]: GETGLOBAL R1 K1        ; R1 := 0xae91e43b
   3 [-]: LOADK     R2 K2        ; R2 := "Countdown.Time"
-  4 [-]: CONST     R3 0         ; R3 := 0.000000
+  4 [-]: LOADK     R3 0         ; R3 := 0.000000
   5 [-]: NEWTABLE  R4 2 0       ; R4 := {}
-  6 [-]: CONST     R5 5         ; R5 := 5.000000
-  7 [-]: CONST     R6 6         ; R6 := 6.000000
+  6 [-]: LOADK     R5 5         ; R5 := 5.000000
+  7 [-]: LOADK     R6 6         ; R6 := 6.000000
   8 [-]: SETLIST   R4 2 1       ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 2
   9 [-]: NEWTABLE  R5 2 0       ; R5 := {}
- 10 [-]: CONST     R6 110       ; R6 := 110.000000
- 11 [-]: CONST     R7 110       ; R7 := 110.000000
+ 10 [-]: LOADK     R6 110       ; R6 := 110.000000
+ 11 [-]: LOADK     R7 110       ; R7 := 110.000000
  12 [-]: SETLIST   R5 2 1       ; R5[(1-1)*FPF+i] := R(5+i), 1 <= i <= 2
  13 [-]: LOADK     R6 K4        ; R6 := 0.850000
  14 [-]: CALL      R0 7 1       ; R0(R1,R2,R3,R4,R5,R6)
@@ -661,20 +661,20 @@
  11 [-]: GETGLOBAL R0 K1        ; R0 := 0xae91e43b
  12 [-]: SELF      R0 R0 K2     ; R1 := R0; R0 := R0[0x67bc869f]
  13 [-]: LOADK     R2 K3        ; R2 := "Countdown.RankShadow"
- 14 [-]: CONST     R3 10        ; R3 := 10.000000
- 15 [-]: CONST     R4 50        ; R4 := 50.000000
+ 14 [-]: LOADK     R3 10        ; R3 := 10.000000
+ 15 [-]: LOADK     R4 50        ; R4 := 50.000000
  16 [-]: CALL      R0 5 1       ; R0(R1,R2,R3,R4)
  17 [-]: GETGLOBAL R0 K1        ; R0 := 0xae91e43b
  18 [-]: SELF      R0 R0 K2     ; R1 := R0; R0 := R0[0x67bc869f]
  19 [-]: LOADK     R2 K4        ; R2 := "Countdown.Time2"
- 20 [-]: CONST     R3 10        ; R3 := 10.000000
- 21 [-]: CONST     R4 0         ; R4 := 0.000000
+ 20 [-]: LOADK     R3 10        ; R3 := 10.000000
+ 21 [-]: LOADK     R4 0         ; R4 := 0.000000
  22 [-]: CALL      R0 5 1       ; R0(R1,R2,R3,R4)
  23 [-]: GETGLOBAL R0 K1        ; R0 := 0xae91e43b
  24 [-]: SELF      R0 R0 K2     ; R1 := R0; R0 := R0[0x67bc869f]
  25 [-]: LOADK     R2 K5        ; R2 := "Countdown.Hint"
- 26 [-]: CONST     R3 10        ; R3 := 10.000000
- 27 [-]: CONST     R4 0         ; R4 := 0.000000
+ 26 [-]: LOADK     R3 10        ; R3 := 10.000000
+ 27 [-]: LOADK     R4 0         ; R4 := 0.000000
  28 [-]: CALL      R0 5 1       ; R0(R1,R2,R3,R4)
  29 [-]: RETURN    R0 1         ; return 
 
@@ -914,13 +914,13 @@
  21 [-]: GETGLOBAL R4 K3        ; R4 := 0xae91e43b
  22 [-]: SELF      R4 R4 K6     ; R5 := R4; R4 := R4[0x67bc869f]
  23 [-]: LOADK     R6 K5        ; R6 := "Countdown"
- 24 [-]: CONST     R7 0         ; R7 := 0.000000
+ 24 [-]: LOADK     R7 0         ; R7 := 0.000000
  25 [-]: MOVE      R8 R0        ; R8 := R0
  26 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
  27 [-]: GETGLOBAL R4 K3        ; R4 := 0xae91e43b
  28 [-]: SELF      R4 R4 K6     ; R5 := R4; R4 := R4[0x67bc869f]
  29 [-]: LOADK     R6 K5        ; R6 := "Countdown"
- 30 [-]: CONST     R7 1         ; R7 := 1.000000
+ 30 [-]: LOADK     R7 1         ; R7 := 1.000000
  31 [-]: MOVE      R8 R1        ; R8 := R1
  32 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
  33 [-]: EQ        1 R2 K1      ; if R2 == nil then PC := 50
@@ -963,13 +963,13 @@
   1 [-]: GETGLOBAL R2 K0        ; R2 := 0xae91e43b
   2 [-]: SELF      R2 R2 K1     ; R3 := R2; R2 := R2[0x67bc869f]
   3 [-]: LOADK     R4 K2        ; R4 := "Countdown"
-  4 [-]: CONST     R5 5         ; R5 := 5.000000
+  4 [-]: LOADK     R5 5         ; R5 := 5.000000
   5 [-]: MOVE      R6 R0        ; R6 := R0
   6 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
   7 [-]: GETGLOBAL R2 K0        ; R2 := 0xae91e43b
   8 [-]: SELF      R2 R2 K1     ; R3 := R2; R2 := R2[0x67bc869f]
   9 [-]: LOADK     R4 K2        ; R4 := "Countdown"
- 10 [-]: CONST     R5 6         ; R5 := 6.000000
+ 10 [-]: LOADK     R5 6         ; R5 := 6.000000
  11 [-]: MOVE      R6 R1        ; R6 := R1
  12 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
  13 [-]: RETURN    R0 1         ; return 
@@ -989,8 +989,8 @@
   3 [-]: GETGLOBAL R2 K1        ; R2 := 0xae91e43b
   4 [-]: SELF      R2 R2 K2     ; R3 := R2; R2 := R2[0x67bc869f]
   5 [-]: LOADK     R4 K3        ; R4 := "Countdown.Hint"
-  6 [-]: CONST     R5 10        ; R5 := 10.000000
-  7 [-]: CONST     R6 100       ; R6 := 100.000000
+  6 [-]: LOADK     R5 10        ; R5 := 10.000000
+  7 [-]: LOADK     R6 100       ; R6 := 100.000000
   8 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
   9 [-]: GETGLOBAL R2 K1        ; R2 := 0xae91e43b
  10 [-]: SELF      R2 R2 K4     ; R3 := R2; R2 := R2[0x20b98db3]
@@ -1001,8 +1001,8 @@
  15 [-]: GETGLOBAL R2 K1        ; R2 := 0xae91e43b
  16 [-]: SELF      R2 R2 K2     ; R3 := R2; R2 := R2[0x67bc869f]
  17 [-]: LOADK     R4 K3        ; R4 := "Countdown.Hint"
- 18 [-]: CONST     R5 10        ; R5 := 10.000000
- 19 [-]: CONST     R6 0         ; R6 := 0.000000
+ 18 [-]: LOADK     R5 10        ; R5 := 10.000000
+ 19 [-]: LOADK     R6 0         ; R6 := 0.000000
  20 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
  21 [-]: EQ        0 R1 K6      ; if R1 ~= "false" then PC := 24
  22 [-]: JMP       24           ; PC := 24
@@ -1011,25 +1011,25 @@
  25 [-]: GETGLOBAL R2 K1        ; R2 := 0xae91e43b
  26 [-]: SELF      R2 R2 K7     ; R3 := R2; R2 := R2[0xaade900e]
  27 [-]: LOADK     R4 K8        ; R4 := "Countdown.Time"
- 28 [-]: CONST     R5 11        ; R5 := 11.000000
+ 28 [-]: LOADK     R5 11        ; R5 := 11.000000
  29 [-]: MOVE      R6 R1        ; R6 := R1
  30 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
  31 [-]: GETGLOBAL R2 K1        ; R2 := 0xae91e43b
  32 [-]: SELF      R2 R2 K7     ; R3 := R2; R2 := R2[0xaade900e]
  33 [-]: LOADK     R4 K9        ; R4 := "Countdown.Time2"
- 34 [-]: CONST     R5 11        ; R5 := 11.000000
+ 34 [-]: LOADK     R5 11        ; R5 := 11.000000
  35 [-]: MOVE      R6 R1        ; R6 := R1
  36 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
  37 [-]: GETGLOBAL R2 K1        ; R2 := 0xae91e43b
  38 [-]: SELF      R2 R2 K7     ; R3 := R2; R2 := R2[0xaade900e]
  39 [-]: LOADK     R4 K10       ; R4 := "Countdown.RankHeader"
- 40 [-]: CONST     R5 11        ; R5 := 11.000000
+ 40 [-]: LOADK     R5 11        ; R5 := 11.000000
  41 [-]: MOVE      R6 R1        ; R6 := R1
  42 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
  43 [-]: GETGLOBAL R2 K1        ; R2 := 0xae91e43b
  44 [-]: SELF      R2 R2 K7     ; R3 := R2; R2 := R2[0xaade900e]
  45 [-]: LOADK     R4 K11       ; R4 := "Countdown.RankShadow"
- 46 [-]: CONST     R5 11        ; R5 := 11.000000
+ 46 [-]: LOADK     R5 11        ; R5 := 11.000000
  47 [-]: MOVE      R6 R1        ; R6 := R1
  48 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
  49 [-]: RETURN    R0 1         ; return 
@@ -1091,20 +1091,20 @@
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0xae91e43b
   2 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0x67bc869f]
   3 [-]: LOADK     R2 K2        ; R2 := "Countdown.RankHeader"
-  4 [-]: CONST     R3 9         ; R3 := 9.000000
+  4 [-]: LOADK     R3 9         ; R3 := 9.000000
   5 [-]: LOADK     R4 K3        ; R4 := 8188159.000000
   6 [-]: CALL      R0 5 1       ; R0(R1,R2,R3,R4)
   7 [-]: GETGLOBAL R0 K0        ; R0 := 0xae91e43b
   8 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0x67bc869f]
   9 [-]: LOADK     R2 K4        ; R2 := "Countdown.Time"
- 10 [-]: CONST     R3 1         ; R3 := 1.000000
- 11 [-]: CONST     R4 -28       ; R4 := -28.000000
+ 10 [-]: LOADK     R3 1         ; R3 := 1.000000
+ 11 [-]: LOADK     R4 -28       ; R4 := -28.000000
  12 [-]: CALL      R0 5 1       ; R0(R1,R2,R3,R4)
  13 [-]: GETGLOBAL R0 K0        ; R0 := 0xae91e43b
  14 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0x67bc869f]
  15 [-]: LOADK     R2 K5        ; R2 := "Countdown.Time2"
- 16 [-]: CONST     R3 1         ; R3 := 1.000000
- 17 [-]: CONST     R4 -28       ; R4 := -28.000000
+ 16 [-]: LOADK     R3 1         ; R3 := 1.000000
+ 17 [-]: LOADK     R4 -28       ; R4 := -28.000000
  18 [-]: CALL      R0 5 1       ; R0(R1,R2,R3,R4)
  19 [-]: RETURN    R0 1         ; return 
 

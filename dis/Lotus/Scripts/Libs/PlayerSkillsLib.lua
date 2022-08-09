@@ -124,17 +124,17 @@
 115 [-]: LOADK     R1 K59       ; R1 := "SKILL_SECOND_COMMAND"
 116 [-]: CALL      R0 2 2       ; R0 := R0(R1)
 117 [-]: SETGLOBALHASH R0 K58       ; sSkillSecondCommand := R0
-118 [-]: CONST     R0 10        ; R0 := 10.000000
+118 [-]: LOADK     R0 10        ; R0 := 10.000000
 119 [-]: SETGLOBALHASH R0 K60       ; MAX_SKILL_RANK := R0
-120 [-]: CONST     R0 1         ; R0 := 1.000000
+120 [-]: LOADK     R0 1         ; R0 := 1.000000
 121 [-]: SETGLOBALHASH R0 K61       ; CATEGORY_ALL := R0
-122 [-]: CONST     R0 2         ; R0 := 2.000000
+122 [-]: LOADK     R0 2         ; R0 := 2.000000
 123 [-]: SETGLOBALHASH R0 K62       ; CATEGORY_CREWSHIP := R0
-124 [-]: CONST     R0 3         ; R0 := 3.000000
+124 [-]: LOADK     R0 3         ; R0 := 3.000000
 125 [-]: SETGLOBALHASH R0 K63       ; CATEGORY_PLAYER := R0
-126 [-]: CONST     R0 4         ; R0 := 4.000000
+126 [-]: LOADK     R0 4         ; R0 := 4.000000
 127 [-]: SETGLOBALHASH R0 K64       ; CATEGORY_ARCHWING := R0
-128 [-]: CONST     R0 5         ; R0 := 5.000000
+128 [-]: LOADK     R0 5         ; R0 := 5.000000
 129 [-]: SETGLOBALHASH R0 K65       ; CATEGORY_MECH := R0
 130 [-]: GETGLOBAL R0 K66       ; R0 := 0x7ed0a956
 131 [-]: LOADK     R1 K67       ; R1 := "/Lotus/Types/Game/CrewShip/CrewShipArchwingCannonEmplacement"
@@ -456,7 +456,7 @@
 447 [-]: SETTABLE  R12 K85 K102 ; R12["value"] := 0.200000
 448 [-]: SETTABLE  R12 K87 K79  ; R12["operationType"] := 2.000000
 449 [-]: NEWTABLE  R13 1 0      ; R13 := {}
-450 [-]: CONST     R14 1        ; R14 := 1.000000
+450 [-]: LOADK     R14 1        ; R14 := 1.000000
 451 [-]: SETLIST   R13 1 1      ; R13[(1-1)*FPF+i] := R(13+i), 1 <= i <= 1
 452 [-]: SETTABLE  R12 K115 R13 ; R12["validModifiers"] := R13
 453 [-]: SETTABLE  R12 K89 R1   ; R12["validType"] := R1
@@ -640,7 +640,7 @@
  22 [-]: TEST      R2 0         ; if not R2 then PC := 28
  23 [-]: JMP       28           ; PC := 28
  24 [-]: SELF      R2 R1 K6     ; R3 := R1; R2 := R1[0xc670d7f3]
- 25 [-]: CONST     R4 3         ; R4 := 3.000000
+ 25 [-]: LOADK     R4 3         ; R4 := 3.000000
  26 [-]: CALL      R2 3 1       ; R2(R3,R4)
  27 [-]: JMP       31           ; PC := 31
  28 [-]: SELF      R2 R1 K6     ; R3 := R1; R2 := R1[0xc670d7f3]
@@ -652,7 +652,7 @@
  34 [-]: TEST      R2 0         ; if not R2 then PC := 40
  35 [-]: JMP       40           ; PC := 40
  36 [-]: SELF      R2 R1 K9     ; R3 := R1; R2 := R1[0x8550d2a7]
- 37 [-]: CONST     R4 1         ; R4 := 1.000000
+ 37 [-]: LOADK     R4 1         ; R4 := 1.000000
  38 [-]: CALL      R2 3 1       ; R2(R3,R4)
  39 [-]: JMP       43           ; PC := 43
  40 [-]: SELF      R2 R1 K9     ; R3 := R1; R2 := R1[0x8550d2a7]
@@ -729,7 +729,7 @@
  21 [-]: LOADNIL   R5 R5        ; R5 := nil
  22 [-]: RETURN    R5 2         ; return R5
  23 [-]: NEWTABLE  R5 0 0       ; R5 := {}
- 24 [-]: CONST     R6 1         ; R6 := 1.000000
+ 24 [-]: LOADK     R6 1         ; R6 := 1.000000
  25 [-]: TEST      R2 0         ; if not R2 then PC := 28
  26 [-]: JMP       28           ; PC := 28
  27 [-]: MOVE      R6 R1        ; R6 := R1
@@ -741,12 +741,12 @@
  33 [-]: GETGLOBAL R3 K6        ; R3 := CATEGORY_ALL
  34 [-]: MOVE      R7 R6        ; R7 := R6
  35 [-]: MOVE      R8 R1        ; R8 := R1
- 36 [-]: CONST     R9 1         ; R9 := 1.000000
+ 36 [-]: LOADK     R9 1         ; R9 := 1.000000
  37 [-]: FORPREP   R7 83        ; R7 -= R9; PC := 83
  38 [-]: GETTABLE  R11 R4 R10   ; R11 := R4[R10]
- 39 [-]: CONST     R12 1        ; R12 := 1.000000
+ 39 [-]: LOADK     R12 1        ; R12 := 1.000000
  40 [-]: LEN       R13 R11      ; R13 := # R11
- 41 [-]: CONST     R14 1        ; R14 := 1.000000
+ 41 [-]: LOADK     R14 1        ; R14 := 1.000000
  42 [-]: FORPREP   R12 82       ; R12 -= R14; PC := 82
  43 [-]: OP_LOADBOOL R16 0 0      ; R16 := false
  44 [-]: GETGLOBAL R17 K6       ; R17 := CATEGORY_ALL

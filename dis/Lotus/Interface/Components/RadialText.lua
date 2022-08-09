@@ -39,19 +39,19 @@
  11 [-]: SETTABLE  R3 K8 K9     ; R3["mInitialDepth"] := 1000.000000
  12 [-]: SELF      R4 R0 K11    ; R5 := R0; R4 := R0[0x91a24e4b]
  13 [-]: MOVE      R6 R1        ; R6 := R1
- 14 [-]: CONST     R7 0         ; R7 := 0.000000
+ 14 [-]: LOADK     R7 0         ; R7 := 0.000000
  15 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
  16 [-]: SETTABLE  R3 K10 R4    ; R3["mInitialX"] := R4
  17 [-]: SELF      R4 R0 K11    ; R5 := R0; R4 := R0[0x91a24e4b]
  18 [-]: MOVE      R6 R1        ; R6 := R1
- 19 [-]: CONST     R7 1         ; R7 := 1.000000
+ 19 [-]: LOADK     R7 1         ; R7 := 1.000000
  20 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
  21 [-]: SETTABLE  R3 K12 R4    ; R3["mInitialY"] := R4
  22 [-]: SELF      R4 R0 K11    ; R5 := R0; R4 := R0[0x91a24e4b]
  23 [-]: MOVE      R6 R1        ; R6 := R1
- 24 [-]: CONST     R7 4         ; R7 := 4.000000
+ 24 [-]: LOADK     R7 4         ; R7 := 4.000000
  25 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
- 26 [-]: SETTABLE  R3 K13 R4    ; R3[0x7f5022cf] := R4
+ 26 [-]: SETTABLE  R3 K13 R4    ; R3["mInitialZ"] := R4
  27 [-]: SETTABLE  R3 K14 K15   ; R3["mRadius"] := 200.000000
  28 [-]: SETTABLE  R3 K16 K17   ; R3["mLetterSpacing"] := 1.000000
  29 [-]: SETTABLE  R3 K18 K19   ; R3["mInitialLetterRotation"] := 90.000000
@@ -152,10 +152,10 @@
   4 [-]: GETTABLE  R1 R0 K2     ; R1 := R0["mLetters"]
   5 [-]: LEN       R1 R1        ; R1 := # R1
   6 [-]: LOADK     R2 K3        ; R2 := ""
-  7 [-]: CONST     R3 0         ; R3 := 0.000000
-  8 [-]: CONST     R4 0         ; R4 := 0.000000
+  7 [-]: LOADK     R3 0         ; R3 := 0.000000
+  8 [-]: LOADK     R4 0         ; R4 := 0.000000
   9 [-]: SUB       R5 R1 K4     ; R5 := R1 - 1.000000
- 10 [-]: CONST     R6 1         ; R6 := 1.000000
+ 10 [-]: LOADK     R6 1         ; R6 := 1.000000
  11 [-]: FORPREP   R4 37        ; R4 -= R6; PC := 37
  12 [-]: SUB       R3 R1 R7     ; R3 := R1 - R7
  13 [-]: GETTABLE  R8 R0 K2     ; R8 := R0["mLetters"]
@@ -179,14 +179,14 @@
  31 [-]: GETTABLE  R8 R0 K9     ; R8 := R0["mMovie"]
  32 [-]: SELF      R8 R8 K11    ; R9 := R8; R8 := R8[0x67bc869f]
  33 [-]: MOVE      R10 R2       ; R10 := R2
- 34 [-]: CONST     R11 10       ; R11 := 10.000000
- 35 [-]: CONST     R12 0        ; R12 := 0.000000
+ 34 [-]: LOADK     R11 10       ; R11 := 10.000000
+ 35 [-]: LOADK     R12 0        ; R12 := 0.000000
  36 [-]: CALL      R8 5 1       ; R8(R9,R10,R11,R12)
  37 [-]: FORLOOP   R4 12        ; R4 += R6; if R4 <= R5 then begin PC := 12; R7 := R4 end
  38 [-]: NEWTABLE  R8 0 0       ; R8 := {}
  39 [-]: SETTABLE  R0 K2 R8     ; R0["mLetters"] := R8
  40 [-]: LOADNIL   R8 R8        ; R8 := nil
- 41 [-]: CONST     R9 0         ; R9 := 0.000000
+ 41 [-]: LOADK     R9 0         ; R9 := 0.000000
  42 [-]: GETTABLE  R10 R0 K12   ; R10 := R0["mText"]
  43 [-]: GETGLOBAL R11 K13      ; R11 := 0x7f5022cf
  44 [-]: GETTABLE  R11 R11 K14  ; R82 := R11[0x41e2ae25]
@@ -199,13 +199,13 @@
  51 [-]: ADD       R9 R9 K4     ; R9 := R9 + 1.000000
  52 [-]: GETGLOBAL R11 K17      ; R11 := 0x68b0afb4
  53 [-]: MOVE      R12 R10      ; R12 := R10
- 54 [-]: CONST     R13 0        ; R13 := 0.000000
- 55 [-]: CONST     R14 1        ; R14 := 1.000000
+ 54 [-]: LOADK     R13 0        ; R13 := 0.000000
+ 55 [-]: LOADK     R14 1        ; R14 := 1.000000
  56 [-]: CALL      R11 4 2      ; R11 := R11(R12,R13,R14)
  57 [-]: MOVE      R8 R11       ; R8 := R11
  58 [-]: GETGLOBAL R11 K17      ; R11 := 0x68b0afb4
  59 [-]: MOVE      R12 R10      ; R12 := R10
- 60 [-]: CONST     R13 2        ; R13 := 2.000000
+ 60 [-]: LOADK     R13 2        ; R13 := 2.000000
  61 [-]: CALL      R11 3 2      ; R11 := R11(R12,R13)
  62 [-]: MOVE      R10 R11      ; R10 := R11
  63 [-]: GETGLOBAL R11 K6       ; R11 := 0x33bdd652
@@ -219,20 +219,20 @@
  71 [-]: GETTABLE  R11 R0 K2    ; R11 := R0["mLetters"]
  72 [-]: LEN       R1 R11       ; R1 := # R11
  73 [-]: LOADK     R11 K3       ; R11 := ""
- 74 [-]: CONST     R12 0        ; R12 := 0.000000
- 75 [-]: CONST     R13 0        ; R13 := 0.000000
- 76 [-]: CONST     R14 0        ; R14 := 0.000000
- 77 [-]: CONST     R15 0        ; R15 := 0.000000
- 78 [-]: CONST     R16 0        ; R16 := 0.000000
- 79 [-]: CONST     R17 1        ; R17 := 1.000000
+ 74 [-]: LOADK     R12 0        ; R12 := 0.000000
+ 75 [-]: LOADK     R13 0        ; R13 := 0.000000
+ 76 [-]: LOADK     R14 0        ; R14 := 0.000000
+ 77 [-]: LOADK     R15 0        ; R15 := 0.000000
+ 78 [-]: LOADK     R16 0        ; R16 := 0.000000
+ 79 [-]: LOADK     R17 1        ; R17 := 1.000000
  80 [-]: MOVE      R18 R1       ; R18 := R1
- 81 [-]: CONST     R19 1        ; R19 := 1.000000
+ 81 [-]: LOADK     R19 1        ; R19 := 1.000000
  82 [-]: FORPREP   R17 129      ; R17 -= R19; PC := 129
  83 [-]: GETTABLE  R21 R0 K9    ; R21 := R0["mMovie"]
  84 [-]: SELF      R21 R21 K21  ; R22 := R21; R21 := R21[0xe261aa96]
  85 [-]: GETTABLE  R23 R0 K5    ; R23 := R0["mClipName"]
  86 [-]: LOADK     R24 K22      ; R24 := "Tf"
- 87 [-]: CONST     R25 29       ; R25 := 29.000000
+ 87 [-]: LOADK     R25 29       ; R25 := 29.000000
  88 [-]: MOVE      R26 R11      ; R26 := R11
  89 [-]: LOADK     R27 K23      ; R27 := " "
  90 [-]: CONCAT    R26 R26 R27  ; R26 := R26 .. R27
@@ -242,7 +242,7 @@
  94 [-]: GETTABLE  R23 R0 K5    ; R23 := R0["mClipName"]
  95 [-]: LOADK     R24 K25      ; R24 := ".Tf"
  96 [-]: CONCAT    R23 R23 R24  ; R23 := R23 .. R24
- 97 [-]: CONST     R24 33       ; R24 := 33.000000
+ 97 [-]: LOADK     R24 33       ; R24 := 33.000000
  98 [-]: CALL      R21 4 2      ; R21 := R21(R22,R23,R24)
  99 [-]: MOVE      R14 R21      ; R14 := R21
 100 [-]: SUB       R13 R14 R12  ; R13 := R14 - R12
@@ -278,8 +278,8 @@
 130 [-]: GETTABLE  R21 R0 K33   ; R21 := R0["UTIL"]
 131 [-]: GETTABLE  R21 R21 K34  ; R82 := R21[0x06d055f9]
 132 [-]: GETTABLE  R22 R0 K35   ; R22 := R0["mFlip"]
-133 [-]: CONST     R23 -1       ; R23 := -1.000000
-134 [-]: CONST     R24 1        ; R24 := 1.000000
+133 [-]: LOADK     R23 -1       ; R23 := -1.000000
+134 [-]: LOADK     R24 1        ; R24 := 1.000000
 135 [-]: CALL      R21 4 2      ; R21 := R21(R22,R23,R24)
 136 [-]: LOADNIL   R22 R24      ; R22 := R23 := R24 := nil
 137 [-]: GETTABLE  R25 R0 K36   ; R25 := R0["mInitialAngle"]
@@ -421,7 +421,7 @@
 273 [-]: GETTABLE  R32 R0 K9    ; R32 := R0["mMovie"]
 274 [-]: SELF      R32 R32 K11  ; R33 := R32; R32 := R32[0x67bc869f]
 275 [-]: MOVE      R34 R2       ; R34 := R2
-276 [-]: CONST     R35 0        ; R35 := 0.000000
+276 [-]: LOADK     R35 0        ; R35 := 0.000000
 277 [-]: MOVE      R36 R22      ; R36 := R22
 278 [-]: CALL      R32 5 1      ; R32(R33,R34,R35,R36)
 279 [-]: GETTABLE  R32 R0 K55   ; R32 := R0["mUseHeading"]
@@ -430,7 +430,7 @@
 282 [-]: GETTABLE  R32 R0 K9    ; R32 := R0["mMovie"]
 283 [-]: SELF      R32 R32 K11  ; R33 := R32; R32 := R32[0x67bc869f]
 284 [-]: MOVE      R34 R2       ; R34 := R2
-285 [-]: CONST     R35 15       ; R35 := 15.000000
+285 [-]: LOADK     R35 15       ; R35 := 15.000000
 286 [-]: GETTABLE  R36 R0 K64   ; R36 := R0["mInitialLetterRotation"]
 287 [-]: SUB       R37 K65 R25  ; R37 := 180.000000 - R25
 288 [-]: ADD       R36 R36 R37  ; R36 := R36 + R37
@@ -438,7 +438,7 @@
 290 [-]: GETTABLE  R32 R0 K9    ; R32 := R0["mMovie"]
 291 [-]: SELF      R32 R32 K11  ; R33 := R32; R32 := R32[0x67bc869f]
 292 [-]: MOVE      R34 R2       ; R34 := R2
-293 [-]: CONST     R35 4        ; R35 := 4.000000
+293 [-]: LOADK     R35 4        ; R35 := 4.000000
 294 [-]: MOVE      R36 R24      ; R36 := R24
 295 [-]: CALL      R32 5 1      ; R32(R33,R34,R35,R36)
 296 [-]: GETTABLE  R32 R0 K66   ; R32 := R0["mLayflat"]
@@ -447,35 +447,35 @@
 299 [-]: GETTABLE  R32 R0 K9    ; R32 := R0["mMovie"]
 300 [-]: SELF      R32 R32 K11  ; R33 := R32; R32 := R32[0x67bc869f]
 301 [-]: MOVE      R34 R2       ; R34 := R2
-302 [-]: CONST     R35 16       ; R35 := 16.000000
-303 [-]: CONST     R36 -90      ; R36 := -90.000000
+302 [-]: LOADK     R35 16       ; R35 := 16.000000
+303 [-]: LOADK     R36 -90      ; R36 := -90.000000
 304 [-]: CALL      R32 5 1      ; R32(R33,R34,R35,R36)
 305 [-]: JMP       319          ; PC := 319
 306 [-]: GETTABLE  R32 R0 K9    ; R32 := R0["mMovie"]
 307 [-]: SELF      R32 R32 K11  ; R33 := R32; R32 := R32[0x67bc869f]
 308 [-]: MOVE      R34 R2       ; R34 := R2
-309 [-]: CONST     R35 1        ; R35 := 1.000000
+309 [-]: LOADK     R35 1        ; R35 := 1.000000
 310 [-]: MOVE      R36 R23      ; R36 := R23
 311 [-]: CALL      R32 5 1      ; R32(R33,R34,R35,R36)
 312 [-]: GETTABLE  R32 R0 K9    ; R32 := R0["mMovie"]
 313 [-]: SELF      R32 R32 K11  ; R33 := R32; R32 := R32[0x67bc869f]
 314 [-]: MOVE      R34 R2       ; R34 := R2
-315 [-]: CONST     R35 14       ; R35 := 14.000000
+315 [-]: LOADK     R35 14       ; R35 := 14.000000
 316 [-]: GETTABLE  R36 R0 K64   ; R36 := R0["mInitialLetterRotation"]
 317 [-]: ADD       R36 R36 R25  ; R36 := R36 + R25
 318 [-]: CALL      R32 5 1      ; R32(R33,R34,R35,R36)
 319 [-]: GETTABLE  R32 R0 K9    ; R32 := R0["mMovie"]
 320 [-]: SELF      R32 R32 K11  ; R33 := R32; R32 := R32[0x67bc869f]
 321 [-]: MOVE      R34 R2       ; R34 := R2
-322 [-]: CONST     R35 10       ; R35 := 10.000000
-323 [-]: CONST     R36 100      ; R36 := 100.000000
+322 [-]: LOADK     R35 10       ; R35 := 10.000000
+323 [-]: LOADK     R36 100      ; R36 := 100.000000
 324 [-]: CALL      R32 5 1      ; R32(R33,R34,R35,R36)
 325 [-]: GETTABLE  R32 R0 K9    ; R32 := R0["mMovie"]
 326 [-]: SELF      R32 R32 K67  ; R33 := R32; R32 := R32[0x5f56eeab]
 327 [-]: MOVE      R34 R2       ; R34 := R2
 328 [-]: LOADK     R35 K25      ; R35 := ".Tf"
 329 [-]: CONCAT    R34 R34 R35  ; R34 := R34 .. R35
-330 [-]: CONST     R35 29       ; R35 := 29.000000
+330 [-]: LOADK     R35 29       ; R35 := 29.000000
 331 [-]: GETTABLE  R36 R30 K20  ; R36 := R30["Letter"]
 332 [-]: CALL      R32 5 1      ; R32(R33,R34,R35,R36)
 333 [-]: GETTABLE  R32 R0 K68   ; R32 := R0["OnDrawLetter"]
@@ -525,10 +525,10 @@
   3 [-]: CALL      R2 2 2       ; R2 := R2(R3)
   4 [-]: TEST      R2 1         ; if R2 then PC := 16
   5 [-]: JMP       16           ; PC := 16
-  6 [-]: CONST     R2 1         ; R2 := 1.000000
+  6 [-]: LOADK     R2 1         ; R2 := 1.000000
   7 [-]: GETTABLE  R3 R0 K1     ; R3 := R0["mLetters"]
   8 [-]: LEN       R3 R3        ; R3 := # R3
-  9 [-]: CONST     R4 1         ; R4 := 1.000000
+  9 [-]: LOADK     R4 1         ; R4 := 1.000000
  10 [-]: FORPREP   R2 15        ; R2 -= R4; PC := 15
  11 [-]: MOVE      R6 R1        ; R6 := R1
  12 [-]: GETTABLE  R7 R0 K1     ; R7 := R0["mLetters"]

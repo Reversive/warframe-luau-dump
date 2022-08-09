@@ -32,7 +32,7 @@
   6 [-]: TEST      R1 1         ; if R1 then PC := 12
   7 [-]: JMP       12           ; PC := 12
   8 [-]: GETGLOBAL R1 K3        ; R1 := 0xcbd666e1
-  9 [-]: CONST     R2 0         ; R2 := 0.000000
+  9 [-]: LOADK     R2 0         ; R2 := 0.000000
  10 [-]: CALL      R1 2 1       ; R1(R2)
  11 [-]: JMP       1            ; PC := 1
  12 [-]: GETGLOBAL R1 K4        ; R1 := 0x7dbb59fc
@@ -49,7 +49,7 @@
  23 [-]: TEST      R1 1         ; if R1 then PC := 29
  24 [-]: JMP       29           ; PC := 29
  25 [-]: GETGLOBAL R1 K3        ; R1 := 0xcbd666e1
- 26 [-]: CONST     R2 0         ; R2 := 0.000000
+ 26 [-]: LOADK     R2 0         ; R2 := 0.000000
  27 [-]: CALL      R1 2 1       ; R1(R2)
  28 [-]: JMP       12           ; PC := 12
  29 [-]: GETGLOBAL R1 K5        ; R1 := 0x7b998233
@@ -78,15 +78,15 @@
  52 [-]: LT        0 R2 R3      ; if R2 >= R3 then PC := 58
  53 [-]: JMP       58           ; PC := 58
  54 [-]: GETGLOBAL R2 K3        ; R2 := 0xcbd666e1
- 55 [-]: CONST     R3 0         ; R3 := 0.000000
+ 55 [-]: LOADK     R3 0         ; R3 := 0.000000
  56 [-]: CALL      R2 2 1       ; R2(R3)
  57 [-]: JMP       43           ; PC := 43
- 58 [-]: CONST     R2 1         ; R2 := 1.000000
+ 58 [-]: LOADK     R2 1         ; R2 := 1.000000
  59 [-]: GETGLOBAL R3 K15       ; R3 := 0x930eb313
- 60 [-]: CONST     R4 1         ; R4 := 1.000000
+ 60 [-]: LOADK     R4 1         ; R4 := 1.000000
  61 [-]: FORPREP   R2 65        ; R2 -= R4; PC := 65
  62 [-]: GETGLOBAL R6 K3        ; R6 := 0xcbd666e1
- 63 [-]: CONST     R7 0         ; R7 := 0.000000
+ 63 [-]: LOADK     R7 0         ; R7 := 0.000000
  64 [-]: CALL      R6 2 1       ; R6(R7)
  65 [-]: FORLOOP   R2 62        ; R2 += R4; if R2 <= R3 then begin PC := 62; R5 := R2 end
  66 [-]: GETGLOBAL R6 K5        ; R6 := 0x7b998233

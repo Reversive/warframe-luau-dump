@@ -184,8 +184,8 @@
  17 [-]: MUL       R3 R3 R1     ; R3 := R3 * R1
  18 [-]: RETURN    R2 3         ; return R2,R3
  19 [-]: JMP       23           ; PC := 23
- 20 [-]: CONST     R2 0         ; R2 := 0.000000
- 21 [-]: CONST     R3 0         ; R3 := 0.000000
+ 20 [-]: LOADK     R2 0         ; R2 := 0.000000
+ 21 [-]: LOADK     R3 0         ; R3 := 0.000000
  22 [-]: RETURN    R2 3         ; return R2,R3
  23 [-]: RETURN    R0 1         ; return 
 
@@ -199,7 +199,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  4
 
-  1 [-]: CONST     R1 6         ; R1 := 6.000000
+  1 [-]: LOADK     R1 6         ; R1 := 6.000000
   2 [-]: GETTABLE  R2 R0 K0     ; R2 := R0["mRightStickTension"]
   3 [-]: GETTABLE  R2 R2 K1     ; R2 := R2["x"]
   4 [-]: MUL       R2 R2 R1     ; R2 := R2 * R1
@@ -277,12 +277,12 @@
   1 [-]: GETTABLE  R1 R0 K0     ; R1 := R0["mMovie"]
   2 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1[0x91a24e4b]
   3 [-]: LOADK     R3 K2        ; R3 := "_root"
-  4 [-]: CONST     R4 25        ; R4 := 25.000000
+  4 [-]: LOADK     R4 25        ; R4 := 25.000000
   5 [-]: CALL      R1 4 2       ; R1 := R1(R2,R3,R4)
   6 [-]: GETTABLE  R2 R0 K0     ; R2 := R0["mMovie"]
   7 [-]: SELF      R2 R2 K1     ; R3 := R2; R2 := R2[0x91a24e4b]
   8 [-]: LOADK     R4 K2        ; R4 := "_root"
-  9 [-]: CONST     R5 26        ; R5 := 26.000000
+  9 [-]: LOADK     R5 26        ; R5 := 26.000000
  10 [-]: CALL      R2 4 0       ; R2,... := R2(R3,R4,R5)
  11 [-]: RETURN    R1 0         ; return R1,...
  12 [-]: RETURN    R0 1         ; return 

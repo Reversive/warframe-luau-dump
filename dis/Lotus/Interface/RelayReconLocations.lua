@@ -96,7 +96,7 @@
  13 [-]: GETGLOBAL R2 K9        ; R2 := 0xae91e43b
  14 [-]: MOVE      R3 R0        ; R3 := R0
  15 [-]: GETGLOBAL R4 K10       ; R4 := 0xcd0165a3
- 16 [-]: CONST     R5 1         ; R5 := 1.000000
+ 16 [-]: LOADK     R5 1         ; R5 := 1.000000
  17 [-]: CALL      R4 2 0       ; R4,... := R4(R5)
  18 [-]: CALL      R1 0 1       ; R1(R2,...)
  19 [-]: RETURN    R0 1         ; return 
@@ -138,7 +138,7 @@
   8 [-]: GETGLOBAL R0 K0        ; R0 := 0xae91e43b
   9 [-]: SELF      R0 R0 K6     ; R1 := R0; R0 := R0[0x5f56eeab]
  10 [-]: LOADK     R2 K7        ; R2 := "Banner.ProjectName"
- 11 [-]: CONST     R3 38        ; R3 := 38.000000
+ 11 [-]: LOADK     R3 38        ; R3 := 38.000000
  12 [-]: LOADK     R4 K8        ; R4 := "bottom"
  13 [-]: CALL      R0 5 1       ; R0(R1,R2,R3,R4)
  14 [-]: GETGLOBAL R0 K0        ; R0 := 0xae91e43b
@@ -193,7 +193,7 @@
  24 [-]: GETGLOBAL R4 K6        ; R4 := 0xae91e43b
  25 [-]: SELF      R4 R4 K7     ; R5 := R4; R4 := R4[0x67bc869f]
  26 [-]: LOADK     R6 K8        ; R6 := "Bg"
- 27 [-]: CONST     R7 13        ; R7 := 13.000000
+ 27 [-]: LOADK     R7 13        ; R7 := 13.000000
  28 [-]: ADD       R8 K9 R3     ; R8 := 142.000000 + R3
  29 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
  30 [-]: RETURN    R0 1         ; return 
@@ -236,10 +236,10 @@
  26 [-]: GETUPVAL  R0 U0        ; R0 := U0
  27 [-]: GETUPVAL  R0 U1        ; R0 := U1
  28 [-]: SETTABLE  R3 K13 R4    ; R3["mElementDrawCallback"] := R4
- 29 [-]: CONST     R4 1         ; R4 := 1.000000
+ 29 [-]: LOADK     R4 1         ; R4 := 1.000000
  30 [-]: GETTABLE  R5 R1 K14    ; R5 := R1["regions"]
  31 [-]: LEN       R5 R5        ; R5 := # R5
- 32 [-]: CONST     R6 1         ; R6 := 1.000000
+ 32 [-]: LOADK     R6 1         ; R6 := 1.000000
  33 [-]: FORPREP   R4 64        ; R4 -= R6; PC := 64
  34 [-]: GETTABLE  R8 R1 K14    ; R8 := R1["regions"]
  35 [-]: GETTABLE  R8 R8 R7     ; R8 := R8[R7]
@@ -423,7 +423,7 @@
   2 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1[0xc0a3774b]
   3 [-]: GETTABLE  R3 R0 K2     ; R3 := R0["mClipName"]
   4 [-]: LOADK     R4 K3        ; R4 := "Callout"
-  5 [-]: CONST     R5 11        ; R5 := 11.000000
+  5 [-]: LOADK     R5 11        ; R5 := 11.000000
   6 [-]: GETUPVAL  R6 U0        ; R6 := U0
   7 [-]: CALL      R1 6 1       ; R1(R2,R3,R4,R5,R6)
   8 [-]: RETURN    R0 1         ; return 
@@ -442,7 +442,7 @@
   2 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1[0xc0a3774b]
   3 [-]: GETTABLE  R3 R0 K2     ; R3 := R0["mClipName"]
   4 [-]: LOADK     R4 K3        ; R4 := "Callout"
-  5 [-]: CONST     R5 11        ; R5 := 11.000000
+  5 [-]: LOADK     R5 11        ; R5 := 11.000000
   6 [-]: OP_LOADBOOL R6 1 0       ; R6 := true
   7 [-]: CALL      R1 6 1       ; R1(R2,R3,R4,R5,R6)
   8 [-]: RETURN    R0 1         ; return 
@@ -461,7 +461,7 @@
   2 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1[0xc0a3774b]
   3 [-]: GETTABLE  R3 R0 K2     ; R3 := R0["mClipName"]
   4 [-]: LOADK     R4 K3        ; R4 := "Callout"
-  5 [-]: CONST     R5 11        ; R5 := 11.000000
+  5 [-]: LOADK     R5 11        ; R5 := 11.000000
   6 [-]: OP_LOADBOOL R6 0 0       ; R6 := false
   7 [-]: CALL      R1 6 1       ; R1(R2,R3,R4,R5,R6)
   8 [-]: RETURN    R0 1         ; return 
@@ -548,15 +548,15 @@
   9 [-]: CALL      R0 3 1       ; R0(R1,R2)
  10 [-]: GETGLOBAL R0 K0        ; R0 := 0xae91e43b
  11 [-]: SELF      R0 R0 K5     ; R1 := R0; R0 := R0[0xc6a10ab1]
- 12 [-]: CONST     R2 0         ; R2 := 0.000000
+ 12 [-]: LOADK     R2 0         ; R2 := 0.000000
  13 [-]: CALL      R0 3 1       ; R0(R1,R2)
  14 [-]: GETGLOBAL R0 K0        ; R0 := 0xae91e43b
  15 [-]: SELF      R0 R0 K6     ; R1 := R0; R0 := R0[0x58bec6d6]
- 16 [-]: CONST     R2 0         ; R2 := 0.750000
+ 16 [-]: LOADK     R2 0         ; R2 := 0.750000
  17 [-]: CALL      R0 3 1       ; R0(R1,R2)
  18 [-]: GETGLOBAL R0 K7        ; R0 := 0x76ea806b
  19 [-]: SELF      R0 R0 K8     ; R1 := R0; R0 := R0[0x3f3ae64c]
- 20 [-]: CONST     R2 0         ; R2 := 0.000000
+ 20 [-]: LOADK     R2 0         ; R2 := 0.000000
  21 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
  22 [-]: SELF      R0 R0 K9     ; R1 := R0; R0 := R0[0x80563238]
  23 [-]: CALL      R0 2 2       ; R0 := R0(R1)
@@ -580,8 +580,8 @@
  41 [-]: GETGLOBAL R0 K0        ; R0 := 0xae91e43b
  42 [-]: SELF      R0 R0 K13    ; R1 := R0; R0 := R0[0x67bc869f]
  43 [-]: LOADK     R2 K14       ; R2 := "BannerSeparator"
- 44 [-]: CONST     R3 10        ; R3 := 10.000000
- 45 [-]: CONST     R4 20        ; R4 := 20.000000
+ 44 [-]: LOADK     R3 10        ; R3 := 10.000000
+ 45 [-]: LOADK     R4 20        ; R4 := 20.000000
  46 [-]: CALL      R0 5 1       ; R0(R1,R2,R3,R4)
  47 [-]: GETGLOBAL R0 K0        ; R0 := 0xae91e43b
  48 [-]: SELF      R0 R0 K15    ; R1 := R0; R0 := R0[0xd5181643]
@@ -617,7 +617,7 @@
  78 [-]: GETGLOBAL R6 K17       ; R6 := 0x0032441c
  79 [-]: GETTABLE  R6 R6 K27    ; R6 := R6["UIColorObject_DarkBlue"]
  80 [-]: GETTABLE  R6 R6 K24    ; R6 := R6["b"]
- 81 [-]: CONST     R7 0         ; R7 := 0.250000
+ 81 [-]: LOADK     R7 0         ; R7 := 0.250000
  82 [-]: CALL      R0 8 1       ; R0(R1,R2,R3,R4,R5,R6,R7)
  83 [-]: GETUPVAL  R0 U1        ; R0 := U1
  84 [-]: CALL      R0 1 1       ; R0()

@@ -38,7 +38,7 @@
   9 [-]: GETGLOBAL R4 K3        ; R4 := 0x8e5d5bdc
  10 [-]: GETGLOBAL R5 K4        ; R5 := EMPTY_SYMBOL
  11 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
- 12 [-]: CONST     R2 0         ; R2 := 0.000000
+ 12 [-]: LOADK     R2 0         ; R2 := 0.000000
  13 [-]: LT        0 R2 K5      ; if R2 >= 1.000000 then PC := 46
  14 [-]: JMP       46           ; PC := 46
  15 [-]: GETGLOBAL R3 K0        ; R3 := 0x7b998233
@@ -47,9 +47,9 @@
  18 [-]: TEST      R3 0         ; if not R3 then PC := 21
  19 [-]: JMP       21           ; PC := 21
  20 [-]: JMP       46           ; PC := 46
- 21 [-]: CONST     R3 1         ; R3 := 1.000000
+ 21 [-]: LOADK     R3 1         ; R3 := 1.000000
  22 [-]: LEN       R4 R1        ; R4 := # R1
- 23 [-]: CONST     R5 1         ; R5 := 1.000000
+ 23 [-]: LOADK     R5 1         ; R5 := 1.000000
  24 [-]: FORPREP   R3 34        ; R3 -= R5; PC := 34
  25 [-]: GETGLOBAL R7 K0        ; R7 := 0x7b998233
  26 [-]: GETTABLE  R8 R1 R6     ; R8 := R1[R6]
@@ -69,7 +69,7 @@
  40 [-]: MUL       R7 R7 K8     ; R7 := R7 * 0.250000
  41 [-]: ADD       R2 R2 R7     ; R2 := R2 + R7
  42 [-]: GETGLOBAL R7 K9        ; R7 := 0xcbd666e1
- 43 [-]: CONST     R8 0         ; R8 := 0.000000
+ 43 [-]: LOADK     R8 0         ; R8 := 0.000000
  44 [-]: CALL      R7 2 1       ; R7(R8)
  45 [-]: JMP       13           ; PC := 13
  46 [-]: RETURN    R0 1         ; return 
@@ -85,7 +85,7 @@
 ; Max Stack Size:  13
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0xcbd666e1
-  2 [-]: CONST     R2 0         ; R2 := 0.000000
+  2 [-]: LOADK     R2 0         ; R2 := 0.000000
   3 [-]: CALL      R1 2 1       ; R1(R2)
   4 [-]: SELF      R1 R0 K1     ; R2 := R0; R1 := R0[0x28e744cf]
   5 [-]: CALL      R1 2 2       ; R1 := R1(R2)

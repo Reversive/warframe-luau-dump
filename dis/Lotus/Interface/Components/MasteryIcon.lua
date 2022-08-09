@@ -52,19 +52,19 @@
  20 [-]: LOADK     R7 K10       ; R7 := 0.300000
  21 [-]: LOADK     R8 K11       ; R8 := 0.190000
  22 [-]: LOADK     R9 K12       ; R9 := 0.140000
- 23 [-]: CONST     R10 0        ; R10 := 0.000000
+ 23 [-]: LOADK     R10 0        ; R10 := 0.000000
  24 [-]: SETLIST   R6 4 1       ; R6[(1-1)*FPF+i] := R(6+i), 1 <= i <= 4
  25 [-]: NEWTABLE  R7 4 0       ; R7 := {}
  26 [-]: LOADK     R8 K13       ; R8 := 0.440000
  27 [-]: LOADK     R9 K14       ; R9 := 0.430000
  28 [-]: LOADK     R10 K15      ; R10 := 0.400000
- 29 [-]: CONST     R11 0        ; R11 := 0.000000
+ 29 [-]: LOADK     R11 0        ; R11 := 0.000000
  30 [-]: SETLIST   R7 4 1       ; R7[(1-1)*FPF+i] := R(7+i), 1 <= i <= 4
  31 [-]: NEWTABLE  R8 4 0       ; R8 := {}
  32 [-]: LOADK     R9 K16       ; R9 := 0.650000
  33 [-]: LOADK     R10 K17      ; R10 := 0.550000
  34 [-]: LOADK     R11 K18      ; R11 := 0.340000
- 35 [-]: CONST     R12 0        ; R12 := 0.000000
+ 35 [-]: LOADK     R12 0        ; R12 := 0.000000
  36 [-]: SETLIST   R8 4 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 4
  37 [-]: SETLIST   R5 3 1       ; R5[(1-1)*FPF+i] := R(5+i), 1 <= i <= 3
  38 [-]: SETTABLE  R4 K9 R5     ; R4["mColors"] := R5
@@ -115,7 +115,7 @@
   3 [-]: JMP       6            ; PC := 6
   4 [-]: GETTABLE  R1 R0 K0     ; R1 := R0["mParentEnv"]
   5 [-]: RETURN    R1 2         ; return R1
-  6 [-]: CONST     R1 1         ; R1 := 1.000000
+  6 [-]: LOADK     R1 1         ; R1 := 1.000000
   7 [-]: LOADNIL   R2 R2        ; R2 := nil
   8 [-]: GETGLOBAL R3 K2        ; R3 := 0xcd0165a3
   9 [-]: MOVE      R4 R1        ; R4 := R1
@@ -217,8 +217,8 @@
  21 [-]: LOADK     R5 K13       ; R5 := "CubeMapEyePos"
  22 [-]: MOVE      R6 R1        ; R6 := R1
  23 [-]: MOVE      R7 R1        ; R7 := R1
- 24 [-]: CONST     R8 3         ; R8 := 3.000000
- 25 [-]: CONST     R9 0         ; R9 := 0.000000
+ 24 [-]: LOADK     R8 3         ; R8 := 3.000000
+ 25 [-]: LOADK     R9 0         ; R9 := 0.000000
  26 [-]: CALL      R2 8 1       ; R2(R3,R4,R5,R6,R7,R8,R9)
  27 [-]: RETURN    R0 1         ; return 
 

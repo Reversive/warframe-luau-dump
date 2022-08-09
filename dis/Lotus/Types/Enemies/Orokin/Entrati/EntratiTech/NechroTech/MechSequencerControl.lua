@@ -188,7 +188,7 @@
  77 [-]: SELF      R7 R4 K13    ; R8 := R4; R7 := R4[0xf4e253b6]
  78 [-]: CALL      R7 2 1       ; R7(R8)
  79 [-]: GETGLOBAL R7 K14       ; R7 := 0xcbd666e1
- 80 [-]: CONST     R8 0         ; R8 := 0.000000
+ 80 [-]: LOADK     R8 0         ; R8 := 0.000000
  81 [-]: CALL      R7 2 1       ; R7(R8)
  82 [-]: JMP       32           ; PC := 32
  83 [-]: RETURN    R0 1         ; return 

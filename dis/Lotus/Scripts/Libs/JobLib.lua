@@ -230,7 +230,7 @@
  12 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  13 [-]: TEST      R3 0         ; if not R3 then PC := 17
  14 [-]: JMP       17           ; PC := 17
- 15 [-]: CONST     R3 -1        ; R3 := -1.000000
+ 15 [-]: LOADK     R3 -1        ; R3 := -1.000000
  16 [-]: RETURN    R3 2         ; return R3
  17 [-]: GETGLOBAL R3 K4        ; R3 := 0xb009bbc6
  18 [-]: SELF      R4 R2 K5     ; R5 := R2; R4 := R2[0xf1ff6a9c]
@@ -241,23 +241,23 @@
  23 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  24 [-]: TEST      R4 0         ; if not R4 then PC := 28
  25 [-]: JMP       28           ; PC := 28
- 26 [-]: CONST     R4 -1        ; R4 := -1.000000
+ 26 [-]: LOADK     R4 -1        ; R4 := -1.000000
  27 [-]: RETURN    R4 2         ; return R4
  28 [-]: SELF      R4 R3 K6     ; R5 := R3; R4 := R3[0x0fa73ee8]
  29 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 30 [-]: CONST     R5 1         ; R5 := 1.000000
+ 30 [-]: LOADK     R5 1         ; R5 := 1.000000
  31 [-]: LEN       R6 R4        ; R6 := # R4
- 32 [-]: CONST     R7 1         ; R7 := 1.000000
+ 32 [-]: LOADK     R7 1         ; R7 := 1.000000
  33 [-]: FORPREP   R5 58        ; R5 -= R7; PC := 58
  34 [-]: GETTABLE  R9 R4 R8     ; R9 := R4[R8]
  35 [-]: GETTABLE  R10 R9 K7    ; R10 := R9["mLocationTag"]
  36 [-]: EQ        0 R10 R1     ; if R10 ~= R1 then PC := 58
  37 [-]: JMP       58           ; PC := 58
- 38 [-]: CONST     R10 0        ; R10 := 0.000000
- 39 [-]: CONST     R11 1        ; R11 := 1.000000
+ 38 [-]: LOADK     R10 0        ; R10 := 0.000000
+ 39 [-]: LOADK     R11 1        ; R11 := 1.000000
  40 [-]: GETTABLE  R12 R9 K8    ; R12 := R9["mJobs"]
  41 [-]: LEN       R12 R12      ; R12 := # R12
- 42 [-]: CONST     R13 1        ; R13 := 1.000000
+ 42 [-]: LOADK     R13 1        ; R13 := 1.000000
  43 [-]: FORPREP   R11 56       ; R11 -= R13; PC := 56
  44 [-]: GETTABLE  R15 R9 K8    ; R15 := R9["mJobs"]
  45 [-]: GETTABLE  R15 R15 R14  ; R15 := R15[R14]
@@ -274,7 +274,7 @@
  56 [-]: FORLOOP   R11 44       ; R11 += R13; if R11 <= R12 then begin PC := 44; R14 := R11 end
  57 [-]: RETURN    R10 2        ; return R10
  58 [-]: FORLOOP   R5 34        ; R5 += R7; if R5 <= R6 then begin PC := 34; R8 := R5 end
- 59 [-]: CONST     R16 -1       ; R16 := -1.000000
+ 59 [-]: LOADK     R16 -1       ; R16 := -1.000000
  60 [-]: RETURN    R16 2        ; return R16
  61 [-]: RETURN    R0 1         ; return 
 
@@ -339,18 +339,18 @@
  49 [-]: MOVE      R5 R6        ; R5 := R6
  50 [-]: SELF      R6 R2 K14    ; R7 := R2; R6 := R2[0x0fa73ee8]
  51 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 52 [-]: CONST     R7 1         ; R7 := 1.000000
+ 52 [-]: LOADK     R7 1         ; R7 := 1.000000
  53 [-]: LEN       R8 R6        ; R8 := # R6
- 54 [-]: CONST     R9 1         ; R9 := 1.000000
+ 54 [-]: LOADK     R9 1         ; R9 := 1.000000
  55 [-]: FORPREP   R7 85        ; R7 -= R9; PC := 85
  56 [-]: GETTABLE  R11 R6 R10   ; R11 := R6[R10]
  57 [-]: GETTABLE  R12 R11 K15  ; R12 := R11["mLocationTag"]
  58 [-]: EQ        0 R12 R5     ; if R12 ~= R5 then PC := 85
  59 [-]: JMP       85           ; PC := 85
- 60 [-]: CONST     R12 1        ; R12 := 1.000000
+ 60 [-]: LOADK     R12 1        ; R12 := 1.000000
  61 [-]: GETTABLE  R13 R11 K16  ; R13 := R11["mJobs"]
  62 [-]: LEN       R13 R13      ; R13 := # R13
- 63 [-]: CONST     R14 1        ; R14 := 1.000000
+ 63 [-]: LOADK     R14 1        ; R14 := 1.000000
  64 [-]: FORPREP   R12 83       ; R12 -= R14; PC := 83
  65 [-]: GETTABLE  R16 R11 K16  ; R16 := R11["mJobs"]
  66 [-]: GETTABLE  R16 R16 R15  ; R16 := R16[R15]
@@ -415,7 +415,7 @@
  26 [-]: GETGLOBAL R3 K1        ; R3 := 0x7f5022cf
  27 [-]: GETTABLE  R3 R3 K7     ; R82 := R3[0x1a94c9cc]
  28 [-]: MOVE      R4 R1        ; R4 := R1
- 29 [-]: CONST     R5 1         ; R5 := 1.000000
+ 29 [-]: LOADK     R5 1         ; R5 := 1.000000
  30 [-]: SUB       R6 R2 K8     ; R6 := R2 - 1.000000
  31 [-]: CALL      R3 4 2       ; R3 := R3(R4,R5,R6)
  32 [-]: LOADK     R4 K9        ; R4 := "Challenge"
@@ -528,10 +528,10 @@
  31 [-]: CALL      R9 2 1       ; R9(R10)
  32 [-]: GETUPVAL  R9 U1        ; R9 := U1
  33 [-]: GETTABLE  R9 R9 K12    ; R82 := R9[0xa1baee05]
- 34 [-]: CONST     R10 1        ; R10 := 1.000000
+ 34 [-]: LOADK     R10 1        ; R10 := 1.000000
  35 [-]: MOVE      R11 R5       ; R11 := R5
- 36 [-]: CONST     R12 1        ; R12 := 1.000000
- 37 [-]: CONST     R13 0        ; R13 := 0.000000
+ 36 [-]: LOADK     R12 1        ; R12 := 1.000000
+ 37 [-]: LOADK     R13 0        ; R13 := 0.000000
  38 [-]: MOVE      R14 R7       ; R14 := R7
  39 [-]: CALL      R9 6 1       ; R9(R10,R11,R12,R13,R14)
  40 [-]: GETGLOBAL R9 K0        ; R9 := _T
@@ -539,7 +539,7 @@
  42 [-]: GETTABLE  R9 R9 K13    ; R9 := R9["previousProgress"]
  43 [-]: TEST      R9 1         ; if R9 then PC := 46
  44 [-]: JMP       46           ; PC := 46
- 45 [-]: CONST     R9 0         ; R9 := 0.000000
+ 45 [-]: LOADK     R9 0         ; R9 := 0.000000
  46 [-]: OP_LOADBOOL R10 0 0      ; R10 := false
  47 [-]: TEST      R10 0        ; if not R10 then PC := 51
  48 [-]: JMP       51           ; PC := 51
@@ -590,7 +590,7 @@
  12 [-]: TEST      R1 0         ; if not R1 then PC := 25
  13 [-]: JMP       25           ; PC := 25
  14 [-]: GETTABLE  R2 R0 K7     ; R82 := R2[0xd3487874]
- 15 [-]: CONST     R3 1         ; R3 := 1.000000
+ 15 [-]: LOADK     R3 1         ; R3 := 1.000000
  16 [-]: GETTABLE  R4 R0 K8     ; R4 := R0["challengeDesc"]
  17 [-]: GETTABLE  R5 R0 K2     ; R5 := R0["ChallengeState"]
  18 [-]: GETTABLE  R5 R5 K9     ; R5 := R5["FAIL"]
@@ -628,7 +628,7 @@
  50 [-]: LE        0 R4 R3      ; if R4 > R3 then PC := 64
  51 [-]: JMP       64           ; PC := 64
  52 [-]: GETTABLE  R3 R0 K7     ; R82 := R3[0xd3487874]
- 53 [-]: CONST     R4 1         ; R4 := 1.000000
+ 53 [-]: LOADK     R4 1         ; R4 := 1.000000
  54 [-]: GETTABLE  R5 R0 K8     ; R5 := R0["challengeDesc"]
  55 [-]: GETTABLE  R6 R0 K2     ; R6 := R0["ChallengeState"]
  56 [-]: GETTABLE  R6 R6 K3     ; R6 := R6["COMPLETE"]
@@ -640,7 +640,7 @@
  62 [-]: RETURN    R3 2         ; return R3
  63 [-]: JMP       72           ; PC := 72
  64 [-]: GETTABLE  R3 R0 K7     ; R82 := R3[0xd3487874]
- 65 [-]: CONST     R4 1         ; R4 := 1.000000
+ 65 [-]: LOADK     R4 1         ; R4 := 1.000000
  66 [-]: GETTABLE  R5 R0 K8     ; R5 := R0["challengeDesc"]
  67 [-]: GETTABLE  R6 R0 K2     ; R6 := R0["ChallengeState"]
  68 [-]: GETTABLE  R6 R6 K17    ; R6 := R6["IN_PROGRESS"]
@@ -774,7 +774,7 @@
  15 [-]: GETGLOBAL R4 K7        ; R4 := 0x0469f296
  16 [-]: LOADK     R5 K8        ; R5 := "ActiveChallengeProgress"
  17 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 18 [-]: CONST     R5 0         ; R5 := 0.000000
+ 18 [-]: LOADK     R5 0         ; R5 := 0.000000
  19 [-]: CALL      R2 4 2       ; R2 := R2(R3,R4,R5)
  20 [-]: GETGLOBAL R3 K9        ; R3 := 0x3d106989
  21 [-]: LOADK     R4 K10       ; R4 := "recovering challenge mission. previous progress: "

@@ -225,11 +225,11 @@
 167 [-]: SETLIST   R3 0 1       ; R3[(1-1)*FPF+i] := R(3+i), 1 <= i <= 0
 168 [-]: SETTABLE  R0 K124 R3   ; R0["UIMaterial_ModsSyndicateIcons"] := R3
 169 [-]: NEWTABLE  R3 5 0       ; R3 := {}
-170 [-]: CONST     R4 1         ; R4 := 1.000000
-171 [-]: CONST     R5 2         ; R5 := 2.000000
-172 [-]: CONST     R6 3         ; R6 := 3.000000
-173 [-]: CONST     R7 4         ; R7 := 4.000000
-174 [-]: CONST     R8 7         ; R8 := 7.000000
+170 [-]: LOADK     R4 1         ; R4 := 1.000000
+171 [-]: LOADK     R5 2         ; R5 := 2.000000
+172 [-]: LOADK     R6 3         ; R6 := 3.000000
+173 [-]: LOADK     R7 4         ; R7 := 4.000000
+174 [-]: LOADK     R8 7         ; R8 := 7.000000
 175 [-]: SETLIST   R3 5 1       ; R3[(1-1)*FPF+i] := R(3+i), 1 <= i <= 5
 176 [-]: GETUPVAL  R4 U0        ; R4 := U0
 177 [-]: MOVE      R5 R3        ; R5 := R3
@@ -631,8 +631,8 @@
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0xae91e43b
   2 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0x67bc869f]
   3 [-]: LOADK     R2 K2        ; R2 := "_root"
-  4 [-]: CONST     R3 10        ; R3 := 10.000000
-  5 [-]: CONST     R4 0         ; R4 := 0.000000
+  4 [-]: LOADK     R3 10        ; R3 := 10.000000
+  5 [-]: LOADK     R4 0         ; R4 := 0.000000
   6 [-]: CALL      R0 5 1       ; R0(R1,R2,R3,R4)
   7 [-]: GETUPVAL  R0 U0        ; R0 := U0
   8 [-]: GETGLOBAL R1 K3        ; R1 := _G

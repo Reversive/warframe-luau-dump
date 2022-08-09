@@ -45,7 +45,7 @@
  10 [-]: OP_LOADBOOL R4 0 0       ; R4 := false
  11 [-]: CALL      R2 3 1       ; R2(R3,R4)
  12 [-]: SELF      R2 R1 K4     ; R3 := R1; R2 := R1[0x8cff1d7a]
- 13 [-]: CONST     R4 -2        ; R4 := -2.000000
+ 13 [-]: LOADK     R4 -2        ; R4 := -2.000000
  14 [-]: CALL      R2 3 1       ; R2(R3,R4)
  15 [-]: GETGLOBAL R2 K5        ; R2 := 0xe78011b2
  16 [-]: LT        0 K6 R2      ; if 0.000000 >= R2 then PC := 24
@@ -157,7 +157,7 @@
  21 [-]: OP_LOADBOOL R4 0 0       ; R4 := false
  22 [-]: CALL      R2 3 1       ; R2(R3,R4)
  23 [-]: GETGLOBAL R2 K10       ; R2 := 0xcbd666e1
- 24 [-]: CONST     R3 0         ; R3 := 0.500000
+ 24 [-]: LOADK     R3 0         ; R3 := 0.500000
  25 [-]: CALL      R2 2 1       ; R2(R3)
  26 [-]: GETGLOBAL R2 K7        ; R2 := 0x48749ac8
  27 [-]: GETGLOBAL R3 K11       ; R3 := EMPTY_SYMBOL
