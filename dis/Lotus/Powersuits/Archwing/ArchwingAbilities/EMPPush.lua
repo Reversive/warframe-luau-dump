@@ -347,7 +347,7 @@
  36 [-]: JMP       102          ; PC := 102
  37 [-]: GETGLOBAL R7 K13       ; R7 := 0x6c97a788
  38 [-]: GETTABLE  R7 R7 K14    ; R82 := R7[0x733fc736]
- 39 [-]: OP_LOADBOOL R8 0 0       ; R8 := false
+ 39 [-]: LOADBOOL  R8 0 0       ; R8 := false
  40 [-]: CALL      R7 2 2       ; R7 := R7(R8)
  41 [-]: SELF      R8 R1 K15    ; R9 := R1; R8 := R1[0x808b79e6]
  42 [-]: CALL      R8 2 2       ; R8 := R8(R9)
@@ -408,7 +408,7 @@
  97 [-]: GETGLOBAL R17 K3       ; R17 := 0x0469f296
  98 [-]: LOADK     R18 K32      ; R18 := "Countdown"
  99 [-]: CALL      R17 2 2      ; R17 := R17(R18)
-100 [-]: OP_LOADBOOL R18 0 0      ; R18 := false
+100 [-]: LOADBOOL  R18 0 0      ; R18 := false
 101 [-]: CALL      R15 4 1      ; R15(R16,R17,R18)
 102 [-]: RETURN    R0 1         ; return 
 
@@ -453,7 +453,7 @@
  29 [-]: GETGLOBAL R10 K9       ; R10 := 0x0469f296
  30 [-]: LOADK     R11 K10      ; R11 := "DoPush"
  31 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 32 [-]: OP_LOADBOOL R11 0 0      ; R11 := false
+ 32 [-]: LOADBOOL  R11 0 0      ; R11 := false
  33 [-]: CALL      R8 4 1       ; R8(R9,R10,R11)
  34 [-]: TFORLOOP  R3 2         ; R6,R7 :=  R3(R4,R5); if R6 ~= nil then begin PC = 19; R5 := R6 end
  35 [-]: JMP       19           ; PC := 19
@@ -563,7 +563,7 @@
  92 [-]: SELF      R11 R11 K22  ; R12 := R11; R11 := R11[0xcdadcd5d]
  93 [-]: GETGLOBAL R13 K25      ; R13 := ZERO_VECTOR
  94 [-]: CALL      R11 3 1      ; R11(R12,R13)
- 95 [-]: OP_LOADBOOL R11 1 0      ; R11 := true
+ 95 [-]: LOADBOOL  R11 1 0      ; R11 := true
  96 [-]: SELF      R12 R0 K1    ; R13 := R0; R12 := R0[0xf2deaf69]
  97 [-]: GETGLOBAL R14 K2       ; R14 := gAutoTurretAvatarType
  98 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
@@ -576,7 +576,7 @@
 105 [-]: JMP       108          ; PC := 108
 106 [-]: RETURN    R0 1         ; return 
 107 [-]: JMP       109          ; PC := 109
-108 [-]: OP_LOADBOOL R11 0 0      ; R11 := false
+108 [-]: LOADBOOL  R11 0 0      ; R11 := false
 109 [-]: SELF      R12 R0 K26   ; R13 := R0; R12 := R0[0x30eb0cc3]
 110 [-]: LOADK     R14 20       ; R14 := 20.000000
 111 [-]: MOVE      R15 R11      ; R15 := R11

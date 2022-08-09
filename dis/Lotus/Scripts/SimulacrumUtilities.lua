@@ -162,7 +162,7 @@
 101 [-]: SETTABLE  R6 K28 K26   ; R6["loadFromLobby"] := true
 102 [-]: GETUPVAL  R7 U3        ; R7 := U3
 103 [-]: SETTABLE  R6 K29 R7    ; R6["gameRules"] := R7
-104 [-]: OP_LOADBOOL R7 0 0       ; R7 := false
+104 [-]: LOADBOOL  R7 0 0       ; R7 := false
 105 [-]: GETUPVAL  R8 U2        ; R8 := U2
 106 [-]: GETTABLE  R8 R8 K30    ; R82 := R8[0xb73d420f]
 107 [-]: CALL      R8 1 2       ; R8 := R8()
@@ -191,13 +191,13 @@
 130 [-]: CALL      R9 2 2       ; R9 := R9(R10)
 131 [-]: NOT       R7 R9        ; R7 := not R9
 132 [-]: JMP       135          ; PC := 135
-133 [-]: OP_LOADBOOL R7 0 1       ; R7 := false; PC := 134
-134 [-]: OP_LOADBOOL R7 1 0       ; R7 := true
+133 [-]: LOADBOOL  R7 0 1       ; R7 := false; PC := 134
+134 [-]: LOADBOOL  R7 1 0       ; R7 := true
 135 [-]: GETUPVAL  R9 U1        ; R9 := U1
 136 [-]: GETTABLE  R9 R9 K39    ; R82 := R9[0x2d9c34ae]
 137 [-]: MOVE      R10 R6       ; R10 := R6
 138 [-]: MOVE      R11 R7       ; R11 := R7
-139 [-]: OP_LOADBOOL R12 0 0      ; R12 := false
+139 [-]: LOADBOOL  R12 0 0      ; R12 := false
 140 [-]: CALL      R9 4 1       ; R9(R10,R11,R12)
 141 [-]: GETGLOBAL R9 K4        ; R9 := 0xe7f2b02f
 142 [-]: SELF      R9 R9 K40    ; R10 := R9; R9 := R9[0xca33534d]
@@ -206,7 +206,7 @@
 145 [-]: JMP       150          ; PC := 150
 146 [-]: GETGLOBAL R9 K32       ; R9 := 0xbe190284
 147 [-]: SELF      R9 R9 K41    ; R10 := R9; R9 := R9[0x39c667a9]
-148 [-]: OP_LOADBOOL R11 1 0      ; R11 := true
+148 [-]: LOADBOOL  R11 1 0      ; R11 := true
 149 [-]: CALL      R9 3 1       ; R9(R10,R11)
 150 [-]: GETGLOBAL R9 K21       ; R9 := 0x34291f5c
 151 [-]: GETTABLE  R9 R9 K42    ; R82 := R9[0x4e0a1dfc]
@@ -306,7 +306,7 @@
  66 [-]: NEWTABLE  R10 0 0      ; R10 := {}
  67 [-]: SELF      R11 R1 K23   ; R12 := R1; R11 := R1[0xe9cbffa8]
  68 [-]: GETGLOBAL R13 K20      ; R13 := gDangerRoomTileItemType
- 69 [-]: OP_LOADBOOL R14 0 0      ; R14 := false
+ 69 [-]: LOADBOOL  R14 0 0      ; R14 := false
  70 [-]: CALL      R11 4 2      ; R11 := R11(R12,R13,R14)
  71 [-]: LOADK     R12 1        ; R12 := 1.000000
  72 [-]: LEN       R13 R11      ; R13 := # R11
@@ -331,7 +331,7 @@
  91 [-]: GETTABLE  R23 R3 R22   ; R23 := R3[R22]
  92 [-]: EQ        0 R23 R17    ; if R23 ~= R17 then PC := 96
  93 [-]: JMP       96           ; PC := 96
- 94 [-]: OP_LOADBOOL R18 1 0      ; R18 := true
+ 94 [-]: LOADBOOL  R18 1 0      ; R18 := true
  95 [-]: JMP       97           ; PC := 97
  96 [-]: FORLOOP   R19 91       ; R19 += R21; if R19 <= R20 then begin PC := 91; R22 := R19 end
  97 [-]: TEST      R18 0        ; if not R18 then PC := 104
@@ -354,7 +354,7 @@
 114 [-]: LOADK     R26 K31      ; R26 := "SetTitle"
 115 [-]: GETGLOBAL R27 K32      ; R27 := 0x603636ad
 116 [-]: LOADK     R28 K33      ; R28 := "/Lotus/Language/Menu/DangerRoomTileTitle"
-117 [-]: OP_LOADBOOL R29 0 0      ; R29 := false
+117 [-]: LOADBOOL  R29 0 0      ; R29 := false
 118 [-]: CALL      R27 3 0      ; R27,... := R27(R28,R29)
 119 [-]: CALL      R24 0 1      ; R24(R25,...)
 120 [-]: SELF      R24 R23 K30  ; R25 := R23; R24 := R23[0xe4162eed]
@@ -586,7 +586,7 @@
  33 [-]: TEST      R6 1         ; if R6 then PC := 39
  34 [-]: JMP       39           ; PC := 39
  35 [-]: SELF      R6 R1 K7     ; R7 := R1; R6 := R1[0x55e9211c]
- 36 [-]: OP_LOADBOOL R8 1 0       ; R8 := true
+ 36 [-]: LOADBOOL  R8 1 0       ; R8 := true
  37 [-]: GETUPVAL  R9 U0        ; R9 := U0
  38 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
  39 [-]: FORLOOP   R2 19        ; R2 += R4; if R2 <= R3 then begin PC := 19; R5 := R2 end

@@ -119,9 +119,9 @@
   5 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
   6 [-]: TEST      R1 0         ; if not R1 then PC := 10
   7 [-]: JMP       10           ; PC := 10
-  8 [-]: OP_LOADBOOL R1 1 0       ; R1 := true
+  8 [-]: LOADBOOL  R1 1 0       ; R1 := true
   9 [-]: RETURN    R1 2         ; return R1
- 10 [-]: OP_LOADBOOL R1 0 0       ; R1 := false
+ 10 [-]: LOADBOOL  R1 0 0       ; R1 := false
  11 [-]: RETURN    R1 2         ; return R1
  12 [-]: RETURN    R0 1         ; return 
 
@@ -344,7 +344,7 @@
  83 [-]: CALL      R16 2 2      ; R16 := R16(R17)
  84 [-]: GETGLOBAL R17 K6       ; R17 := 0xbe190284
  85 [-]: SELF      R17 R17 K26  ; R18 := R17; R17 := R17[0xc7c8dad6]
- 86 [-]: OP_LOADBOOL R19 1 0      ; R19 := true
+ 86 [-]: LOADBOOL  R19 1 0      ; R19 := true
  87 [-]: CALL      R17 3 1      ; R17(R18,R19)
  88 [-]: GETGLOBAL R17 K2       ; R17 := 0x89326c93
  89 [-]: SELF      R17 R17 K20  ; R18 := R17; R17 := R17[0xc7fcada9]
@@ -757,7 +757,7 @@
 118 [-]: CALL      R14 2 2      ; R14 := R14(R15)
 119 [-]: GETGLOBAL R15 K12      ; R15 := 0xbe190284
 120 [-]: SELF      R15 R15 K28  ; R16 := R15; R15 := R15[0xc7c8dad6]
-121 [-]: OP_LOADBOOL R17 1 0      ; R17 := true
+121 [-]: LOADBOOL  R17 1 0      ; R17 := true
 122 [-]: CALL      R15 3 1      ; R15(R16,R17)
 123 [-]: GETGLOBAL R15 K17      ; R15 := 0x89326c93
 124 [-]: SELF      R15 R15 K22  ; R16 := R15; R15 := R15[0xc7fcada9]

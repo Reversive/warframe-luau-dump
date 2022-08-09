@@ -103,8 +103,8 @@
  63 [-]: SELF      R6 R0 K14    ; R7 := R0; R6 := R0[0xc1595bd5]
  64 [-]: GETGLOBAL R8 K15       ; R8 := gWeaponTrailType
  65 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
- 66 [-]: OP_LOADBOOL R7 1 0       ; R7 := true
- 67 [-]: OP_LOADBOOL R8 0 0       ; R8 := false
+ 66 [-]: LOADBOOL  R7 1 0       ; R7 := true
+ 67 [-]: LOADBOOL  R8 0 0       ; R8 := false
  68 [-]: SELF      R9 R0 K16    ; R10 := R0; R9 := R0[0xc9f6a7d7]
  69 [-]: GETGLOBAL R11 K17      ; R11 := 0x4e66420e
  70 [-]: CALL      R9 3 2       ; R9 := R9(R10,R11)
@@ -451,7 +451,7 @@
  31 [-]: TEST      R5 0         ; if not R5 then PC := 36
  32 [-]: JMP       36           ; PC := 36
  33 [-]: SELF      R5 R4 K12    ; R6 := R4; R5 := R4[0x47c04419]
- 34 [-]: OP_LOADBOOL R7 0 0       ; R7 := false
+ 34 [-]: LOADBOOL  R7 0 0       ; R7 := false
  35 [-]: CALL      R5 3 1       ; R5(R6,R7)
  36 [-]: SELF      R5 R0 K13    ; R6 := R0; R5 := R0[0x5163741e]
  37 [-]: CALL      R5 2 2       ; R5 := R5(R6)
@@ -461,9 +461,9 @@
  41 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  42 [-]: SELF      R5 R5 K14    ; R6 := R5; R5 := R5[0x659d451f]
  43 [-]: GETGLOBAL R7 K15       ; R7 := 0xccebf55a
- 44 [-]: OP_LOADBOOL R8 0 0       ; R8 := false
+ 44 [-]: LOADBOOL  R8 0 0       ; R8 := false
  45 [-]: LOADK     R9 0         ; R9 := 0.000000
- 46 [-]: OP_LOADBOOL R10 0 0      ; R10 := false
+ 46 [-]: LOADBOOL  R10 0 0      ; R10 := false
  47 [-]: CALL      R5 6 1       ; R5(R6,R7,R8,R9,R10)
  48 [-]: RETURN    R0 1         ; return 
 

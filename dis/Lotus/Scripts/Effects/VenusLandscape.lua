@@ -93,8 +93,8 @@
  18 [-]: SELF      R3 R0 K4     ; R4 := R0; R3 := R0[0x2970f52f]
  19 [-]: GETGLOBAL R5 K1        ; R5 := 0xe795e87d
  20 [-]: GETTABLE  R5 R5 R2     ; R5 := R5[R2]
- 21 [-]: OP_LOADBOOL R6 0 0       ; R6 := false
- 22 [-]: OP_LOADBOOL R7 0 0       ; R7 := false
+ 21 [-]: LOADBOOL  R6 0 0       ; R6 := false
+ 22 [-]: LOADBOOL  R7 0 0       ; R7 := false
  23 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
  24 [-]: RETURN    R0 1         ; return 
 
@@ -132,7 +132,7 @@
  22 [-]: LOADK     R6 0         ; R6 := 0.000000
  23 [-]: LOADK     R7 K8        ; R7 := 0.030000
  24 [-]: LOADK     R8 0         ; R8 := 0.000000
- 25 [-]: OP_LOADBOOL R9 0 0       ; R9 := false
+ 25 [-]: LOADBOOL  R9 0 0       ; R9 := false
  26 [-]: CALL      R2 8 1       ; R2(R3,R4,R5,R6,R7,R8,R9)
  27 [-]: RETURN    R0 1         ; return 
 

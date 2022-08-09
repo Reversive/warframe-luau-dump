@@ -165,7 +165,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  11
 
-  1 [-]: OP_LOADBOOL R0 1 0       ; R0 := true
+  1 [-]: LOADBOOL  R0 1 0       ; R0 := true
   2 [-]: LOADK     R1 0         ; R1 := 0.000000
   3 [-]: GETGLOBAL R2 K0        ; R2 := 0x89326c93
   4 [-]: SELF      R2 R2 K1     ; R3 := R2; R2 := R2[0x46a0ebf5]
@@ -176,7 +176,7 @@
   9 [-]: GETUPVAL  R3 U0        ; R3 := U0
  10 [-]: SELF      R3 R3 K4     ; R4 := R3; R3 := R3[0x0d09d3c0]
  11 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 12 [-]: OP_LOADBOOL R0 0 0       ; R0 := false
+ 12 [-]: LOADBOOL  R0 0 0       ; R0 := false
  13 [-]: GETGLOBAL R4 K5        ; R4 := 0xc8802016
  14 [-]: MOVE      R5 R3        ; R5 := R3
  15 [-]: CALL      R4 2 4       ; R4,R5,R6 := R4(R5)
@@ -186,7 +186,7 @@
  19 [-]: CALL      R9 2 2       ; R9 := R9(R10)
  20 [-]: EQ        0 R8 R9      ; if R8 ~= R9 then PC := 24
  21 [-]: JMP       24           ; PC := 24
- 22 [-]: OP_LOADBOOL R0 1 0       ; R0 := true
+ 22 [-]: LOADBOOL  R0 1 0       ; R0 := true
  23 [-]: JMP       26           ; PC := 26
  24 [-]: TFORLOOP  R4 2         ; R7,R8 :=  R4(R5,R6); if R7 ~= nil then begin PC = 17; R6 := R7 end
  25 [-]: JMP       17           ; PC := 17
@@ -317,7 +317,7 @@
  85 [-]: GETGLOBAL R9 K25       ; R9 := 0x0469f296
  86 [-]: LOADK     R10 K26      ; R10 := "OrdisIdleTransmissions"
  87 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 88 [-]: OP_LOADBOOL R10 0 0      ; R10 := false
+ 88 [-]: LOADBOOL  R10 0 0      ; R10 := false
  89 [-]: CALL      R7 4 1       ; R7(R8,R9,R10)
  90 [-]: JMP       99           ; PC := 99
  91 [-]: GETUPVAL  R7 U4        ; R7 := U4

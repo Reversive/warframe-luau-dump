@@ -36,7 +36,7 @@
  12 [-]: SETTABLE  R1 K4 K5     ; R1["sentinelRegens"] := nil
  13 [-]: SELF      R1 R0 K6     ; R2 := R0; R1 := R0[0x659d451f]
  14 [-]: GETGLOBAL R3 K7        ; R3 := 0xed1834ff
- 15 [-]: OP_LOADBOOL R4 0 0       ; R4 := false
+ 15 [-]: LOADBOOL  R4 0 0       ; R4 := false
  16 [-]: CALL      R1 4 2       ; R1 := R1(R2,R3,R4)
  17 [-]: SETUPVAL  R1 U0        ; U82 := 
  18 [-]: LOADK     R1 1         ; R1 := 1.000000
@@ -96,7 +96,7 @@
  72 [-]: JMP       77           ; PC := 77
  73 [-]: GETUPVAL  R6 U0        ; R6 := U0
  74 [-]: SELF      R6 R6 K21    ; R7 := R6; R6 := R6[0x6cf1e476]
- 75 [-]: OP_LOADBOOL R8 0 0       ; R8 := false
+ 75 [-]: LOADBOOL  R8 0 0       ; R8 := false
  76 [-]: CALL      R6 3 1       ; R6(R7,R8)
  77 [-]: RETURN    R0 1         ; return 
 

@@ -33,7 +33,7 @@
   5 [-]: SETTABLE  R2 K2 R1     ; R2["mCallback"] := R1
   6 [-]: SETTABLE  R2 K3 K4     ; R2["mLoading"] := false
   7 [-]: CLOSURE   R3 0         ; R3 := closure(Function #1.1)
-  8 [-]: SETTABLE  R2 K5 R3     ; R2[0x00000000] := R3
+  8 [-]: SETTABLE  R2 K5 R3     ; R2["LoadResource"] := R3
   9 [-]: CLOSURE   R3 1         ; R3 := closure(Function #1.2)
  10 [-]: SETTABLE  R2 K6 R3     ; R2["ResourceLoaded"] := R3
  11 [-]: RETURN    R2 2         ; return R2

@@ -79,10 +79,10 @@
  70 [-]: LOADK     R25 K25      ; R25 := "EmGreenAtten"
  71 [-]: CALL      R24 2 0      ; R24,... := R24(R25)
  72 [-]: SETLIST   R21 0 1      ; R21[(1-1)*FPF+i] := R(21+i), 1 <= i <= 0
- 73 [-]: OP_LOADBOOL R22 0 0      ; R22 := false
- 74 [-]: OP_LOADBOOL R23 0 0      ; R23 := false
- 75 [-]: OP_LOADBOOL R24 0 0      ; R24 := false
- 76 [-]: OP_LOADBOOL R25 0 0      ; R25 := false
+ 73 [-]: LOADBOOL  R22 0 0      ; R22 := false
+ 74 [-]: LOADBOOL  R23 0 0      ; R23 := false
+ 75 [-]: LOADBOOL  R24 0 0      ; R24 := false
+ 76 [-]: LOADBOOL  R25 0 0      ; R25 := false
  77 [-]: LOADNIL   R26 R26      ; R26 := nil
  78 [-]: GETGLOBAL R27 K26      ; R27 := 0x2d0fad09
  79 [-]: LOADK     R28 K27      ; R28 := "Lotus.Interface.LotusUtilities"
@@ -214,7 +214,7 @@
 205 [-]: GETGLOBAL R42 K47      ; R42 := 0xb009bbc6
 206 [-]: LOADK     R43 K48      ; R43 := "/Lotus/Fx/ColorGradingData/BrightContrastColorGrading"
 207 [-]: CALL      R42 2 2      ; R42 := R42(R43)
-208 [-]: SETGLOBALHASH R42 K46      ; infusionPostFx := R42
+208 [-]: SETGLOBAL R42 K46      ; infusionPostFx := R42
 209 [-]: CLOSURE   R42 30       ; R42 := closure(Function #31)
 210 [-]: MOVE      R0 R27       ; R0 := R27
 211 [-]: SETGLOBAL R42 K49      ; InfusionFx := R42
@@ -287,7 +287,7 @@
   9 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  10 [-]: TEST      R2 0         ; if not R2 then PC := 14
  11 [-]: JMP       14           ; PC := 14
- 12 [-]: OP_LOADBOOL R2 0 0       ; R2 := false
+ 12 [-]: LOADBOOL  R2 0 0       ; R2 := false
  13 [-]: RETURN    R2 2         ; return R2
  14 [-]: SELF      R2 R1 K4     ; R3 := R1; R2 := R1[0x80563238]
  15 [-]: CALL      R2 2 2       ; R2 := R2(R3)
@@ -316,10 +316,10 @@
  38 [-]: GETTABLE  R7 R7 R6     ; R7 := R7[R6]
  39 [-]: EQ        0 R7 R2      ; if R7 ~= R2 then PC := 43
  40 [-]: JMP       43           ; PC := 43
- 41 [-]: OP_LOADBOOL R7 1 0       ; R7 := true
+ 41 [-]: LOADBOOL  R7 1 0       ; R7 := true
  42 [-]: RETURN    R7 2         ; return R7
  43 [-]: FORLOOP   R3 36        ; R3 += R5; if R3 <= R4 then begin PC := 36; R6 := R3 end
- 44 [-]: OP_LOADBOOL R7 0 0       ; R7 := false
+ 44 [-]: LOADBOOL  R7 0 0       ; R7 := false
  45 [-]: RETURN    R7 2         ; return R7
  46 [-]: RETURN    R0 1         ; return 
 
@@ -403,7 +403,7 @@
  28 [-]: JMP       106          ; PC := 106
  29 [-]: SELF      R3 R1 K7     ; R4 := R1; R3 := R1[0x2d9ba74f]
  30 [-]: LOADK     R5 K8        ; R5 := 0.010000
- 31 [-]: OP_LOADBOOL R6 1 0       ; R6 := true
+ 31 [-]: LOADBOOL  R6 1 0       ; R6 := true
  32 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
  33 [-]: GETGLOBAL R3 K2        ; R3 := 0x7b998233
  34 [-]: GETGLOBAL R4 K9        ; R4 := 0xd0239758
@@ -412,9 +412,9 @@
  37 [-]: JMP       44           ; PC := 44
  38 [-]: SELF      R3 R1 K10    ; R4 := R1; R3 := R1[0x659d451f]
  39 [-]: GETGLOBAL R5 K9        ; R5 := 0xd0239758
- 40 [-]: OP_LOADBOOL R6 0 0       ; R6 := false
+ 40 [-]: LOADBOOL  R6 0 0       ; R6 := false
  41 [-]: LOADK     R7 0         ; R7 := 0.000000
- 42 [-]: OP_LOADBOOL R8 0 0       ; R8 := false
+ 42 [-]: LOADBOOL  R8 0 0       ; R8 := false
  43 [-]: CALL      R3 6 1       ; R3(R4,R5,R6,R7,R8)
  44 [-]: GETGLOBAL R3 K2        ; R3 := 0x7b998233
  45 [-]: GETGLOBAL R4 K12       ; R4 := 0xeabaca47
@@ -506,7 +506,7 @@
   3 [-]: GETGLOBAL R2 K0        ; R2 := 0x3d106989
   4 [-]: LOADK     R3 K1        ; R3 := "Failed to install umbra echoes on suit."
   5 [-]: CALL      R2 2 1       ; R2(R3)
-  6 [-]: OP_LOADBOOL R2 1 0       ; R2 := true
+  6 [-]: LOADBOOL  R2 1 0       ; R2 := true
   7 [-]: SETUPVAL  R2 U0        ; U82 := 
   8 [-]: GETGLOBAL R2 K2        ; R2 := _T
   9 [-]: SETTABLE  R2 K3 K4     ; R2["umbraEchoesInstalled"] := true
@@ -527,7 +527,7 @@
   3 [-]: GETGLOBAL R2 K0        ; R2 := 0x3d106989
   4 [-]: LOADK     R3 K1        ; R3 := "Failed to cure suit."
   5 [-]: CALL      R2 2 1       ; R2(R3)
-  6 [-]: OP_LOADBOOL R2 1 0       ; R2 := true
+  6 [-]: LOADBOOL  R2 1 0       ; R2 := true
   7 [-]: SETUPVAL  R2 U0        ; U82 := 
   8 [-]: RETURN    R0 1         ; return 
 
@@ -546,7 +546,7 @@
   3 [-]: GETGLOBAL R2 K0        ; R2 := 0x3d106989
   4 [-]: LOADK     R3 K1        ; R3 := "Failed to infect suit."
   5 [-]: CALL      R2 2 1       ; R2(R3)
-  6 [-]: OP_LOADBOOL R2 1 0       ; R2 := true
+  6 [-]: LOADBOOL  R2 1 0       ; R2 := true
   7 [-]: SETUPVAL  R2 U0        ; U82 := 
   8 [-]: RETURN    R0 1         ; return 
 
@@ -565,7 +565,7 @@
   3 [-]: GETGLOBAL R2 K0        ; R2 := 0x3d106989
   4 [-]: LOADK     R3 K1        ; R3 := "Failed to unlock alchemy room."
   5 [-]: CALL      R2 2 1       ; R2(R3)
-  6 [-]: OP_LOADBOOL R2 1 0       ; R2 := true
+  6 [-]: LOADBOOL  R2 1 0       ; R2 := true
   7 [-]: SETUPVAL  R2 U0        ; U82 := 
   8 [-]: RETURN    R0 1         ; return 
 
@@ -784,7 +784,7 @@
 135 [-]: LOADK     R16 K39      ; R16 := "OnFeatureUnlock"
 136 [-]: CALL      R11 6 1      ; R11(R12,R13,R14,R15,R16)
 137 [-]: JMP       140          ; PC := 140
-138 [-]: OP_LOADBOOL R11 1 0      ; R11 := true
+138 [-]: LOADBOOL  R11 1 0      ; R11 := true
 139 [-]: SETUPVAL  R11 U8       ; U82 := 
 140 [-]: SELF      R11 R1 K40   ; R12 := R1; R11 := R1[0x6d822626]
 141 [-]: GETTABLE  R13 R4 K28   ; R13 := R4["mItemId"]
@@ -1148,8 +1148,8 @@
   1 [-]: GETUPVAL  R3 U0        ; R3 := U0
   2 [-]: EQ        1 R2 K1      ; if R2 == 4.000000 then PC := 5
   3 [-]: JMP       5            ; PC := 5
-  4 [-]: OP_LOADBOOL R4 0 1       ; R4 := false; PC := 5
-  5 [-]: OP_LOADBOOL R4 1 0       ; R4 := true
+  4 [-]: LOADBOOL  R4 0 1       ; R4 := false; PC := 5
+  5 [-]: LOADBOOL  R4 1 0       ; R4 := true
   6 [-]: MOVE      R5 R0        ; R5 := R0
   7 [-]: CALL      R3 3 1       ; R3(R4,R5)
   8 [-]: RETURN    R0 1         ; return 
@@ -1203,8 +1203,8 @@
   1 [-]: SELF      R1 R0 K0     ; R2 := R0; R1 := R0[0x68d7cbe0]
   2 [-]: GETUPVAL  R3 U0        ; R3 := U0
   3 [-]: LOADNIL   R4 R4        ; R4 := nil
-  4 [-]: OP_LOADBOOL R5 1 0       ; R5 := true
-  5 [-]: OP_LOADBOOL R6 1 0       ; R6 := true
+  4 [-]: LOADBOOL  R5 1 0       ; R5 := true
+  5 [-]: LOADBOOL  R6 1 0       ; R6 := true
   6 [-]: CALL      R1 6 1       ; R1(R2,R3,R4,R5,R6)
   7 [-]: GETGLOBAL R1 K1        ; R1 := _T
   8 [-]: GETTABLE  R1 R1 K2     ; R1 := R1["TaggedDialog"]
@@ -1733,7 +1733,7 @@
  33 [-]: GETGLOBAL R6 K0        ; R6 := _T
  34 [-]: GETTABLE  R6 R6 K12    ; R6 := R6["ResourceConversionMovie"]
  35 [-]: SELF      R6 R6 K13    ; R7 := R6; R6 := R6[0x368ad758]
- 36 [-]: OP_LOADBOOL R8 0 0       ; R8 := false
+ 36 [-]: LOADBOOL  R8 0 0       ; R8 := false
  37 [-]: CALL      R6 3 1       ; R6(R7,R8)
  38 [-]: SELF      R6 R5 K14    ; R7 := R5; R6 := R5[0x1c84839c]
  39 [-]: CALL      R6 2 2       ; R6 := R6(R7)
@@ -1818,7 +1818,7 @@
  50 [-]: LOADK     R2 0         ; R2 := 0.000000
  51 [-]: CALL      R1 2 1       ; R1(R2)
  52 [-]: JMP       45           ; PC := 45
- 53 [-]: OP_LOADBOOL R1 0 0       ; R1 := false
+ 53 [-]: LOADBOOL  R1 0 0       ; R1 := false
  54 [-]: SETUPVAL  R1 U2        ; U82 := 
  55 [-]: RETURN    R0 1         ; return 
 
@@ -2098,7 +2098,7 @@
 150 [-]: JMP       156          ; PC := 156
 151 [-]: GETGLOBAL R11 K31      ; R11 := 0x603636ad
 152 [-]: LOADK     R12 K32      ; R12 := "/Lotus/Language/Alchemy/HelminthSquadTitle"
-153 [-]: OP_LOADBOOL R13 0 0      ; R13 := false
+153 [-]: LOADBOOL  R13 0 0      ; R13 := false
 154 [-]: CALL      R11 3 2      ; R11 := R11(R12,R13)
 155 [-]: MOVE      R10 R11      ; R10 := R11
 156 [-]: SELF      R11 R0 K21   ; R12 := R0; R11 := R0[0x3961202b]
@@ -2201,8 +2201,8 @@
   6 [-]: GETTABLE  R1 R1 K1     ; R1 := R1["SkipCystOption"]
   7 [-]: NOT       R1 R1        ; R1 := not R1
   8 [-]: JMP       11           ; PC := 11
-  9 [-]: OP_LOADBOOL R1 0 1       ; R1 := false; PC := 10
- 10 [-]: OP_LOADBOOL R1 1 0       ; R1 := true
+  9 [-]: LOADBOOL  R1 0 1       ; R1 := false; PC := 10
+ 10 [-]: LOADBOOL  R1 1 0       ; R1 := true
  11 [-]: GETGLOBAL R2 K0        ; R2 := _T
  12 [-]: SETTABLE  R2 K1 K2     ; R2["SkipCystOption"] := nil
  13 [-]: RETURN    R1 2         ; return R1
@@ -2273,7 +2273,7 @@
   1 [-]: GETUPVAL  R1 U0        ; R1 := U0
   2 [-]: GETGLOBAL R2 K0        ; R2 := 0xb1ab000d
   3 [-]: CALL      R1 2 1       ; R1(R2)
-  4 [-]: OP_LOADBOOL R1 1 0       ; R1 := true
+  4 [-]: LOADBOOL  R1 1 0       ; R1 := true
   5 [-]: SETUPVAL  R1 U1        ; U82 := 
   6 [-]: GETUPVAL  R1 U2        ; R1 := U2
   7 [-]: CALL      R1 1 1       ; R1()
@@ -2291,7 +2291,7 @@
 
   1 [-]: GETUPVAL  R1 U0        ; R1 := U0
   2 [-]: GETGLOBAL R2 K0        ; R2 := 0xd413b333
-  3 [-]: OP_LOADBOOL R3 1 0       ; R3 := true
+  3 [-]: LOADBOOL  R3 1 0       ; R3 := true
   4 [-]: CALL      R1 3 1       ; R1(R2,R3)
   5 [-]: GETGLOBAL R1 K1        ; R1 := 0x7b998233
   6 [-]: GETGLOBAL R2 K2        ; R2 := 0xd2b5841b
@@ -2668,14 +2668,14 @@
  10 [-]: CALL      R4 0 1       ; R4(R5,...)
  11 [-]: SELF      R4 R3 K5     ; R5 := R3; R4 := R3[0x5d985c7e]
  12 [-]: GETTABLE  R6 R2 K6     ; R6 := R2[1.000000]
- 13 [-]: OP_LOADBOOL R7 0 0       ; R7 := false
+ 13 [-]: LOADBOOL  R7 0 0       ; R7 := false
  14 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
  15 [-]: SELF      R4 R0 K5     ; R5 := R0; R4 := R0[0x5d985c7e]
  16 [-]: GETTABLE  R6 R2 K7     ; R6 := R2[2.000000]
- 17 [-]: OP_LOADBOOL R7 1 0       ; R7 := true
+ 17 [-]: LOADBOOL  R7 1 0       ; R7 := true
  18 [-]: LOADK     R8 3         ; R8 := 3.000000
  19 [-]: LOADK     R9 1         ; R9 := 1.000000
- 20 [-]: OP_LOADBOOL R10 1 0      ; R10 := true
+ 20 [-]: LOADBOOL  R10 1 0      ; R10 := true
  21 [-]: CALL      R4 7 1       ; R4(R5,R6,R7,R8,R9,R10)
  22 [-]: RETURN    R0 1         ; return 
 
@@ -2973,7 +2973,7 @@
  26 [-]: JMP       32           ; PC := 32
  27 [-]: GETGLOBAL R1 K7        ; R1 := 0x603636ad
  28 [-]: LOADK     R2 K8        ; R2 := "/Lotus/Language/Alchemy/HelminthSquadTitle"
- 29 [-]: OP_LOADBOOL R3 0 0       ; R3 := false
+ 29 [-]: LOADBOOL  R3 0 0       ; R3 := false
  30 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
  31 [-]: MOVE      R0 R1        ; R0 := R1
  32 [-]: GETGLOBAL R1 K7        ; R1 := 0x603636ad

@@ -330,7 +330,7 @@
  65 [-]: JMP       70           ; PC := 70
  66 [-]: SELF      R8 R4 K15    ; R9 := R4; R8 := R4[0x2d9ba74f]
  67 [-]: MOVE      R10 R3       ; R10 := R3
- 68 [-]: OP_LOADBOOL R11 1 0      ; R11 := true
+ 68 [-]: LOADBOOL  R11 1 0      ; R11 := true
  69 [-]: CALL      R8 4 1       ; R8(R9,R10,R11)
  70 [-]: RETURN    R0 1         ; return 
 
@@ -374,8 +374,8 @@
  28 [-]: JMP       31           ; PC := 31
  29 [-]: EQ        1 R7 K7      ; if R7 == 1.000000 then PC := 32
  30 [-]: JMP       32           ; PC := 32
- 31 [-]: OP_LOADBOOL R8 0 1       ; R8 := false; PC := 32
- 32 [-]: OP_LOADBOOL R8 1 0       ; R8 := true
+ 31 [-]: LOADBOOL  R8 0 1       ; R8 := false; PC := 32
+ 32 [-]: LOADBOOL  R8 1 0       ; R8 := true
  33 [-]: TEST      R8 0         ; if not R8 then PC := 39
  34 [-]: JMP       39           ; PC := 39
  35 [-]: GETUPVAL  R9 U3        ; R9 := U3

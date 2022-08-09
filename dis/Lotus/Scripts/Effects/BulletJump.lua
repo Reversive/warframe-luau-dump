@@ -223,7 +223,7 @@
  67 [-]: SELF      R11 R10 K18  ; R12 := R10; R11 := R10[0x052a3a7c]
  68 [-]: MUL       R13 K19 R9   ; R13 := 3.000000 * R9
  69 [-]: MUL       R14 K20 R9   ; R14 := 6.000000 * R9
- 70 [-]: OP_LOADBOOL R15 0 0      ; R15 := false
+ 70 [-]: LOADBOOL  R15 0 0      ; R15 := false
  71 [-]: CALL      R11 5 1      ; R11(R12,R13,R14,R15)
  72 [-]: SELF      R11 R10 K21  ; R12 := R10; R11 := R10[0x9307aa51]
  73 [-]: MOVE      R13 R6       ; R13 := R6

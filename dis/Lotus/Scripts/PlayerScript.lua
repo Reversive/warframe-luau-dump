@@ -129,8 +129,8 @@
  39 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
  40 [-]: EQ        1 R4 K9      ; if R4 == nil then PC := 43
  41 [-]: JMP       43           ; PC := 43
- 42 [-]: OP_LOADBOOL R4 0 1       ; R4 := false; PC := 43
- 43 [-]: OP_LOADBOOL R4 1 0       ; R4 := true
+ 42 [-]: LOADBOOL  R4 0 1       ; R4 := false; PC := 43
+ 43 [-]: LOADBOOL  R4 1 0       ; R4 := true
  44 [-]: GETGLOBAL R5 K6        ; R5 := 0x7f5022cf
  45 [-]: GETTABLE  R5 R5 K7     ; R82 := R5[0xa5c556b9]
  46 [-]: MOVE      R6 R1        ; R6 := R1
@@ -145,8 +145,8 @@
  55 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
  56 [-]: EQ        1 R5 K9      ; if R5 == nil then PC := 59
  57 [-]: JMP       59           ; PC := 59
- 58 [-]: OP_LOADBOOL R5 0 1       ; R5 := false; PC := 59
- 59 [-]: OP_LOADBOOL R5 1 0       ; R5 := true
+ 58 [-]: LOADBOOL  R5 0 1       ; R5 := false; PC := 59
+ 59 [-]: LOADBOOL  R5 1 0       ; R5 := true
  60 [-]: NOT       R6 R4        ; R6 := not R4
  61 [-]: NOT       R7 R5        ; R7 := not R5
  62 [-]: LOADNIL   R8 R8        ; R8 := nil
@@ -328,7 +328,7 @@
  67 [-]: GETUPVAL  R3 U0        ; R3 := U0
  68 [-]: GETTABLE  R3 R3 K16    ; R82 := R3[0xfd7bb484]
  69 [-]: MOVE      R4 R0        ; R4 := R0
- 70 [-]: OP_LOADBOOL R5 1 0       ; R5 := true
+ 70 [-]: LOADBOOL  R5 1 0       ; R5 := true
  71 [-]: CALL      R3 3 1       ; R3(R4,R5)
  72 [-]: GETGLOBAL R3 K0        ; R3 := 0xcbd666e1
  73 [-]: LOADK     R4 0         ; R4 := 0.000000

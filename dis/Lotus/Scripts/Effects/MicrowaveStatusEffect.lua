@@ -113,8 +113,8 @@
  47 [-]: LOADK     R11 K15      ; R11 := 0.150000
  48 [-]: LOADK     R12 0        ; R12 := 0.000000
  49 [-]: SETLIST   R8 4 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 4
- 50 [-]: OP_LOADBOOL R9 0 0       ; R9 := false
- 51 [-]: OP_LOADBOOL R10 0 0      ; R10 := false
+ 50 [-]: LOADBOOL  R9 0 0       ; R9 := false
+ 51 [-]: LOADBOOL  R10 0 0      ; R10 := false
  52 [-]: LOADNIL   R11 R11      ; R11 := nil
  53 [-]: LOADK     R12 3        ; R12 := 3.000000
  54 [-]: MOVE      R13 R2       ; R13 := R2
@@ -179,7 +179,7 @@
 113 [-]: LOADK     R21 1        ; R21 := 1.000000
 114 [-]: SETLIST   R17 4 1      ; R17[(1-1)*FPF+i] := R(17+i), 1 <= i <= 4
 115 [-]: MOVE      R8 R17       ; R8 := R17
-116 [-]: OP_LOADBOOL R10 1 0      ; R10 := true
+116 [-]: LOADBOOL  R10 1 0      ; R10 := true
 117 [-]: ADD       R12 R14 K33  ; R12 := R14 + 5.000000
 118 [-]: TEST      R10 0        ; if not R10 then PC := 147
 119 [-]: JMP       147          ; PC := 147
@@ -198,7 +198,7 @@
 132 [-]: CALL      R17 2 2      ; R17 := R17(R18)
 133 [-]: TEST      R17 1        ; if R17 then PC := 147
 134 [-]: JMP       147          ; PC := 147
-135 [-]: OP_LOADBOOL R9 1 0       ; R9 := true
+135 [-]: LOADBOOL  R9 1 0       ; R9 := true
 136 [-]: MOVE      R13 R11      ; R13 := R11
 137 [-]: SELF      R17 R11 K16  ; R18 := R11; R17 := R11[0x986d2ab8]
 138 [-]: GETUPVAL  R19 U0       ; R19 := U0

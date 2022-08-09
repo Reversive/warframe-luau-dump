@@ -308,7 +308,7 @@
  83 [-]: CALL      R9 2 1       ; R9(R10)
  84 [-]: GETTABLE  R9 R0 K19    ; R9 := R0["mCameraAvatar"]
  85 [-]: SELF      R9 R9 K22    ; R10 := R9; R9 := R9[0x768274d6]
- 86 [-]: OP_LOADBOOL R11 0 0      ; R11 := false
+ 86 [-]: LOADBOOL  R11 0 0      ; R11 := false
  87 [-]: CALL      R9 3 1       ; R9(R10,R11)
  88 [-]: GETTABLE  R9 R0 K19    ; R9 := R0["mCameraAvatar"]
  89 [-]: SELF      R9 R9 K23    ; R10 := R9; R9 := R9[0x0cca925a]
@@ -322,19 +322,19 @@
  97 [-]: CALL      R9 3 1       ; R9(R10,R11)
  98 [-]: GETTABLE  R9 R0 K19    ; R9 := R0["mCameraAvatar"]
  99 [-]: SELF      R9 R9 K27    ; R10 := R9; R9 := R9[0x6667e5d4]
-100 [-]: OP_LOADBOOL R11 1 0      ; R11 := true
+100 [-]: LOADBOOL  R11 1 0      ; R11 := true
 101 [-]: CALL      R9 3 1       ; R9(R10,R11)
 102 [-]: GETTABLE  R9 R0 K19    ; R9 := R0["mCameraAvatar"]
 103 [-]: SELF      R9 R9 K28    ; R10 := R9; R9 := R9[0x8ff7507f]
-104 [-]: OP_LOADBOOL R11 0 0      ; R11 := false
+104 [-]: LOADBOOL  R11 0 0      ; R11 := false
 105 [-]: CALL      R9 3 1       ; R9(R10,R11)
 106 [-]: GETTABLE  R9 R0 K19    ; R9 := R0["mCameraAvatar"]
 107 [-]: SELF      R9 R9 K29    ; R10 := R9; R9 := R9[0xe39d0733]
-108 [-]: OP_LOADBOOL R11 0 0      ; R11 := false
+108 [-]: LOADBOOL  R11 0 0      ; R11 := false
 109 [-]: CALL      R9 3 1       ; R9(R10,R11)
 110 [-]: GETTABLE  R9 R0 K19    ; R9 := R0["mCameraAvatar"]
 111 [-]: SELF      R9 R9 K30    ; R10 := R9; R9 := R9[0xfcda5f89]
-112 [-]: OP_LOADBOOL R11 0 0      ; R11 := false
+112 [-]: LOADBOOL  R11 0 0      ; R11 := false
 113 [-]: CALL      R9 3 1       ; R9(R10,R11)
 114 [-]: GETUPVAL  R9 U0        ; R9 := U0
 115 [-]: GETTABLE  R10 R0 K19   ; R10 := R0["mCameraAvatar"]
@@ -416,7 +416,7 @@
 191 [-]: JMP       201          ; PC := 201
 192 [-]: GETTABLE  R16 R11 R15  ; R16 := R11[R15]
 193 [-]: SELF      R16 R16 K44  ; R17 := R16; R16 := R16[0x56c05b89]
-194 [-]: OP_LOADBOOL R18 1 0      ; R18 := true
+194 [-]: LOADBOOL  R18 1 0      ; R18 := true
 195 [-]: CALL      R16 3 1      ; R16(R17,R18)
 196 [-]: GETGLOBAL R16 K45      ; R16 := 0xbe190284
 197 [-]: SELF      R16 R16 K46  ; R17 := R16; R16 := R16[0x424c55a8]
@@ -445,8 +445,8 @@
 220 [-]: JMP       226          ; PC := 226
 221 [-]: GETTABLE  R16 R11 R15  ; R16 := R11[R15]
 222 [-]: SELF      R16 R16 K51  ; R17 := R16; R16 := R16[0xbc30cde9]
-223 [-]: OP_LOADBOOL R18 0 0      ; R18 := false
-224 [-]: OP_LOADBOOL R19 0 0      ; R19 := false
+223 [-]: LOADBOOL  R18 0 0      ; R18 := false
+224 [-]: LOADBOOL  R19 0 0      ; R19 := false
 225 [-]: CALL      R16 4 1      ; R16(R17,R18,R19)
 226 [-]: FORLOOP   R12 184      ; R12 += R14; if R12 <= R13 then begin PC := 184; R15 := R12 end
 227 [-]: GETGLOBAL R16 K45      ; R16 := 0xbe190284
@@ -457,7 +457,7 @@
 232 [-]: JMP       237          ; PC := 237
 233 [-]: GETGLOBAL R16 K45      ; R16 := 0xbe190284
 234 [-]: SELF      R16 R16 K53  ; R17 := R16; R16 := R16[0x92266d0d]
-235 [-]: OP_LOADBOOL R18 1 0      ; R18 := true
+235 [-]: LOADBOOL  R18 1 0      ; R18 := true
 236 [-]: CALL      R16 3 1      ; R16(R17,R18)
 237 [-]: GETGLOBAL R16 K3       ; R16 := 0x89326c93
 238 [-]: SELF      R16 R16 K34  ; R17 := R16; R16 := R16[0x18d05d30]
@@ -571,11 +571,11 @@
  51 [-]: CALL      R7 2 0       ; R7,... := R7(R8)
  52 [-]: CALL      R5 0 2       ; R5 := R5(R6,...)
  53 [-]: JMP       56           ; PC := 56
- 54 [-]: OP_LOADBOOL R5 0 1       ; R5 := false; PC := 55
- 55 [-]: OP_LOADBOOL R5 1 0       ; R5 := true
+ 54 [-]: LOADBOOL  R5 0 1       ; R5 := false; PC := 55
+ 55 [-]: LOADBOOL  R5 1 0       ; R5 := true
  56 [-]: TEST      R3 0         ; if not R3 then PC := 102
  57 [-]: JMP       102          ; PC := 102
- 58 [-]: OP_LOADBOOL R6 0 0       ; R6 := false
+ 58 [-]: LOADBOOL  R6 0 0       ; R6 := false
  59 [-]: GETGLOBAL R7 K12       ; R7 := 0x7b998233
  60 [-]: GETGLOBAL R8 K0        ; R8 := _T
  61 [-]: GETTABLE  R8 R8 K21    ; R8 := R8["DojoMgr"]
@@ -599,8 +599,8 @@
  79 [-]: GETUPVAL  R8 U0        ; R8 := U0
  80 [-]: EQ        1 R7 R8      ; if R7 == R8 then PC := 83
  81 [-]: JMP       83           ; PC := 83
- 82 [-]: OP_LOADBOOL R6 0 1       ; R6 := false; PC := 83
- 83 [-]: OP_LOADBOOL R6 1 0       ; R6 := true
+ 82 [-]: LOADBOOL  R6 0 1       ; R6 := false; PC := 83
+ 83 [-]: LOADBOOL  R6 1 0       ; R6 := true
  84 [-]: TEST      R6 0         ; if not R6 then PC := 94
  85 [-]: JMP       94           ; PC := 94
  86 [-]: GETGLOBAL R8 K13       ; R8 := 0xcb79539e
@@ -719,7 +719,7 @@
 199 [-]: TEST      R16 1        ; if R16 then PC := 204
 200 [-]: JMP       204          ; PC := 204
 201 [-]: SELF      R16 R15 K53  ; R17 := R15; R16 := R15[0x368ad758]
-202 [-]: OP_LOADBOOL R18 0 0      ; R18 := false
+202 [-]: LOADBOOL  R18 0 0      ; R18 := false
 203 [-]: CALL      R16 3 1      ; R16(R17,R18)
 204 [-]: GETTABLE  R16 R0 K3    ; R16 := R0["mIsDojo"]
 205 [-]: TEST      R16 1        ; if R16 then PC := 220
@@ -744,21 +744,21 @@
 224 [-]: JMP       237          ; PC := 237
 225 [-]: GETTABLE  R16 R0 K57   ; R16 := R0["mCameraAvatar"]
 226 [-]: SELF      R16 R16 K58  ; R17 := R16; R16 := R16[0x8ff7507f]
-227 [-]: OP_LOADBOOL R18 1 0      ; R18 := true
+227 [-]: LOADBOOL  R18 1 0      ; R18 := true
 228 [-]: CALL      R16 3 1      ; R16(R17,R18)
 229 [-]: GETTABLE  R16 R0 K57   ; R16 := R0["mCameraAvatar"]
 230 [-]: SELF      R16 R16 K59  ; R17 := R16; R16 := R16[0xe39d0733]
-231 [-]: OP_LOADBOOL R18 1 0      ; R18 := true
+231 [-]: LOADBOOL  R18 1 0      ; R18 := true
 232 [-]: CALL      R16 3 1      ; R16(R17,R18)
 233 [-]: GETTABLE  R16 R0 K57   ; R16 := R0["mCameraAvatar"]
 234 [-]: SELF      R16 R16 K60  ; R17 := R16; R16 := R16[0xfcda5f89]
-235 [-]: OP_LOADBOOL R18 1 0      ; R18 := true
+235 [-]: LOADBOOL  R18 1 0      ; R18 := true
 236 [-]: CALL      R16 3 1      ; R16(R17,R18)
 237 [-]: SELF      R16 R1 K61   ; R17 := R1; R16 := R1[0x659d451f]
 238 [-]: GETTABLE  R18 R0 K62   ; R18 := R0["mEnterFreeCameraSound"]
-239 [-]: OP_LOADBOOL R19 0 0      ; R19 := false
+239 [-]: LOADBOOL  R19 0 0      ; R19 := false
 240 [-]: LOADK     R20 1        ; R20 := 1.000000
-241 [-]: OP_LOADBOOL R21 0 0      ; R21 := false
+241 [-]: LOADBOOL  R21 0 0      ; R21 := false
 242 [-]: CALL      R16 6 1      ; R16(R17,R18,R19,R20,R21)
 243 [-]: GETGLOBAL R16 K12      ; R16 := 0x7b998233
 244 [-]: GETTABLE  R17 R0 K57   ; R17 := R0["mCameraAvatar"]
@@ -850,11 +850,11 @@
  18 [-]: JMP       35           ; PC := 35
  19 [-]: GETTABLE  R3 R0 K10    ; R3 := R0["mPlayer"]
  20 [-]: SELF      R3 R3 K11    ; R4 := R3; R3 := R3[0x2a1779ef]
- 21 [-]: OP_LOADBOOL R5 0 0       ; R5 := false
+ 21 [-]: LOADBOOL  R5 0 0       ; R5 := false
  22 [-]: CALL      R3 3 1       ; R3(R4,R5)
  23 [-]: GETTABLE  R3 R0 K10    ; R3 := R0["mPlayer"]
  24 [-]: SELF      R3 R3 K12    ; R4 := R3; R3 := R3[0x3421742c]
- 25 [-]: OP_LOADBOOL R5 0 0       ; R5 := false
+ 25 [-]: LOADBOOL  R5 0 0       ; R5 := false
  26 [-]: CALL      R3 3 1       ; R3(R4,R5)
  27 [-]: GETTABLE  R3 R0 K10    ; R3 := R0["mPlayer"]
  28 [-]: SELF      R3 R3 K13    ; R4 := R3; R3 := R3[0xf08bc0f9]
@@ -895,15 +895,15 @@
  63 [-]: JMP       83           ; PC := 83
  64 [-]: GETTABLE  R4 R0 K20    ; R4 := R0["mCameraAvatar"]
  65 [-]: SELF      R4 R4 K21    ; R5 := R4; R4 := R4[0x8ff7507f]
- 66 [-]: OP_LOADBOOL R6 0 0       ; R6 := false
+ 66 [-]: LOADBOOL  R6 0 0       ; R6 := false
  67 [-]: CALL      R4 3 1       ; R4(R5,R6)
  68 [-]: GETTABLE  R4 R0 K20    ; R4 := R0["mCameraAvatar"]
  69 [-]: SELF      R4 R4 K22    ; R5 := R4; R4 := R4[0xe39d0733]
- 70 [-]: OP_LOADBOOL R6 0 0       ; R6 := false
+ 70 [-]: LOADBOOL  R6 0 0       ; R6 := false
  71 [-]: CALL      R4 3 1       ; R4(R5,R6)
  72 [-]: GETTABLE  R4 R0 K20    ; R4 := R0["mCameraAvatar"]
  73 [-]: SELF      R4 R4 K23    ; R5 := R4; R4 := R4[0xfcda5f89]
- 74 [-]: OP_LOADBOOL R6 0 0       ; R6 := false
+ 74 [-]: LOADBOOL  R6 0 0       ; R6 := false
  75 [-]: CALL      R4 3 1       ; R4(R5,R6)
  76 [-]: GETTABLE  R4 R0 K9     ; R4 := R0["mIsDojo"]
  77 [-]: TEST      R4 0         ; if not R4 then PC := 83
@@ -933,13 +933,13 @@
 101 [-]: TEST      R6 1         ; if R6 then PC := 106
 102 [-]: JMP       106          ; PC := 106
 103 [-]: SELF      R6 R5 K29    ; R7 := R5; R6 := R5[0x368ad758]
-104 [-]: OP_LOADBOOL R8 1 0       ; R8 := true
+104 [-]: LOADBOOL  R8 1 0       ; R8 := true
 105 [-]: CALL      R6 3 1       ; R6(R7,R8)
 106 [-]: SELF      R6 R1 K30    ; R7 := R1; R6 := R1[0x659d451f]
 107 [-]: GETTABLE  R8 R0 K31    ; R8 := R0["mExitFreeCameraSound"]
-108 [-]: OP_LOADBOOL R9 0 0       ; R9 := false
+108 [-]: LOADBOOL  R9 0 0       ; R9 := false
 109 [-]: LOADK     R10 1        ; R10 := 1.000000
-110 [-]: OP_LOADBOOL R11 0 0      ; R11 := false
+110 [-]: LOADBOOL  R11 0 0      ; R11 := false
 111 [-]: CALL      R6 6 1       ; R6(R7,R8,R9,R10,R11)
 112 [-]: GETGLOBAL R6 K5        ; R6 := 0x7b998233
 113 [-]: GETGLOBAL R7 K32       ; R7 := 0xcb79539e
@@ -975,11 +975,11 @@
 143 [-]: CALL      R10 2 0      ; R10,... := R10(R11)
 144 [-]: CALL      R8 0 2       ; R8 := R8(R9,...)
 145 [-]: JMP       148          ; PC := 148
-146 [-]: OP_LOADBOOL R8 0 1       ; R8 := false; PC := 147
-147 [-]: OP_LOADBOOL R8 1 0       ; R8 := true
+146 [-]: LOADBOOL  R8 0 1       ; R8 := false; PC := 147
+147 [-]: LOADBOOL  R8 1 0       ; R8 := true
 148 [-]: TEST      R6 0         ; if not R6 then PC := 194
 149 [-]: JMP       194          ; PC := 194
-150 [-]: OP_LOADBOOL R9 0 0       ; R9 := false
+150 [-]: LOADBOOL  R9 0 0       ; R9 := false
 151 [-]: GETGLOBAL R10 K5       ; R10 := 0x7b998233
 152 [-]: GETGLOBAL R11 K0       ; R11 := _T
 153 [-]: GETTABLE  R11 R11 K39  ; R11 := R11["DojoMgr"]
@@ -1003,8 +1003,8 @@
 171 [-]: GETUPVAL  R11 U0       ; R11 := U0
 172 [-]: EQ        1 R10 R11    ; if R10 == R11 then PC := 175
 173 [-]: JMP       175          ; PC := 175
-174 [-]: OP_LOADBOOL R9 0 1       ; R9 := false; PC := 175
-175 [-]: OP_LOADBOOL R9 1 0       ; R9 := true
+174 [-]: LOADBOOL  R9 0 1       ; R9 := false; PC := 175
+175 [-]: LOADBOOL  R9 1 0       ; R9 := true
 176 [-]: TEST      R9 0         ; if not R9 then PC := 186
 177 [-]: JMP       186          ; PC := 186
 178 [-]: GETGLOBAL R11 K32      ; R11 := 0xcb79539e
@@ -1245,7 +1245,7 @@
 187 [-]: MOVE      R14 R6       ; R14 := R6
 188 [-]: MOVE      R15 R8       ; R15 := R8
 189 [-]: MOVE      R16 R9       ; R16 := R9
-190 [-]: OP_LOADBOOL R17 1 0      ; R17 := true
+190 [-]: LOADBOOL  R17 1 0      ; R17 := true
 191 [-]: LOADNIL   R18 R18      ; R18 := nil
 192 [-]: MOVE      R19 R10      ; R19 := R10
 193 [-]: CALL      R11 9 2      ; R11 := R11(R12,R13,R14,R15,R16,R17,R18,R19)

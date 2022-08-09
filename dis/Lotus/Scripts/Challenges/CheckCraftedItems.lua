@@ -26,7 +26,7 @@
   3 [-]: CALL      R5 2 2       ; R5 := R5(R6)
   4 [-]: TEST      R5 0         ; if not R5 then PC := 8
   5 [-]: JMP       8            ; PC := 8
-  6 [-]: OP_LOADBOOL R5 0 0       ; R5 := false
+  6 [-]: LOADBOOL  R5 0 0       ; R5 := false
   7 [-]: RETURN    R5 2         ; return R5
   8 [-]: LOADK     R5 1         ; R5 := 1.000000
   9 [-]: GETGLOBAL R6 K1        ; R6 := 0xd1b24cb9
@@ -40,10 +40,10 @@
  17 [-]: CALL      R10 3 2      ; R10 := R10(R11,R12)
  18 [-]: TEST      R10 0        ; if not R10 then PC := 22
  19 [-]: JMP       22           ; PC := 22
- 20 [-]: OP_LOADBOOL R10 1 0      ; R10 := true
+ 20 [-]: LOADBOOL  R10 1 0      ; R10 := true
  21 [-]: RETURN    R10 2        ; return R10
  22 [-]: FORLOOP   R5 13        ; R5 += R7; if R5 <= R6 then begin PC := 13; R8 := R5 end
- 23 [-]: OP_LOADBOOL R10 0 0      ; R10 := false
+ 23 [-]: LOADBOOL  R10 0 0      ; R10 := false
  24 [-]: RETURN    R10 2        ; return R10
  25 [-]: RETURN    R0 1         ; return 
 

@@ -316,8 +316,8 @@
  84 [-]: CALL      R9 3 2       ; R9 := R9(R10,R11)
  85 [-]: EQ        0 R9 K16     ; if R9 ~= 0.000000 then PC := 88
  86 [-]: JMP       88           ; PC := 88
- 87 [-]: OP_LOADBOOL R9 0 1       ; R9 := false; PC := 88
- 88 [-]: OP_LOADBOOL R9 1 0       ; R9 := true
+ 87 [-]: LOADBOOL  R9 0 1       ; R9 := false; PC := 88
+ 88 [-]: LOADBOOL  R9 1 0       ; R9 := true
  89 [-]: TEST      R9 1         ; if R9 then PC := 182
  90 [-]: JMP       182          ; PC := 182
  91 [-]: LOADK     R10 0        ; R10 := 0.000000
@@ -489,7 +489,7 @@
 257 [-]: SETTABLE  R51 R52 R53  ; R51[R52] := R53
 258 [-]: FORLOOP   R47 251      ; R47 += R49; if R47 <= R48 then begin PC := 251; R50 := R47 end
 259 [-]: LOADK     R51 0        ; R51 := 0.000000
-260 [-]: OP_LOADBOOL R52 0 0      ; R52 := false
+260 [-]: LOADBOOL  R52 0 0      ; R52 := false
 261 [-]: LOADK     R53 0        ; R53 := 0.000000
 262 [-]: GETGLOBAL R54 K5       ; R54 := _T
 263 [-]: GETGLOBAL R55 K49      ; R55 := 0xe6a3281f
@@ -543,7 +543,7 @@
 311 [-]: CALL      R59 2 2      ; R59 := R59(R60)
 312 [-]: LE        0 R59 K16    ; if R59 > 0.000000 then PC := 356
 313 [-]: JMP       356          ; PC := 356
-314 [-]: OP_LOADBOOL R52 0 0      ; R52 := false
+314 [-]: LOADBOOL  R52 0 0      ; R52 := false
 315 [-]: GETGLOBAL R59 K7       ; R59 := 0x89326c93
 316 [-]: SELF      R59 R59 K35  ; R60 := R59; R59 := R59[0xf16592c8]
 317 [-]: GETGLOBAL R61 K12      ; R61 := 0x0469f296
@@ -580,7 +580,7 @@
 348 [-]: MOVE      R66 R58      ; R66 := R58
 349 [-]: GETTABLE  R67 R59 R63  ; R67 := R59[R63]
 350 [-]: CALL      R64 4 1      ; R64(R65,R66,R67)
-351 [-]: OP_LOADBOOL R52 1 0      ; R52 := true
+351 [-]: LOADBOOL  R52 1 0      ; R52 := true
 352 [-]: FORLOOP   R60 338      ; R60 += R62; if R60 <= R61 then begin PC := 338; R63 := R60 end
 353 [-]: EQ        0 R52 K52    ; if R52 ~= false then PC := 356
 354 [-]: JMP       356          ; PC := 356

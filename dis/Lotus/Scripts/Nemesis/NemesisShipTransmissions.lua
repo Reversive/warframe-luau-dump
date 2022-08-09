@@ -141,14 +141,14 @@
  58 [-]: SELF      R1 R1 K15    ; R2 := R1; R1 := R1[0x56c01834]
  59 [-]: CALL      R1 2 2       ; R1 := R1(R2)
  60 [-]: JMP       63           ; PC := 63
- 61 [-]: OP_LOADBOOL R1 0 1       ; R1 := false; PC := 62
- 62 [-]: OP_LOADBOOL R1 1 0       ; R1 := true
+ 61 [-]: LOADBOOL  R1 0 1       ; R1 := false; PC := 62
+ 62 [-]: LOADBOOL  R1 1 0       ; R1 := true
  63 [-]: NEWTABLE  R2 0 0       ; R2 := {}
  64 [-]: TEST      R1 0         ; if not R1 then PC := 92
  65 [-]: JMP       92           ; PC := 92
  66 [-]: GETGLOBAL R3 K16       ; R3 := 0xbe190284
  67 [-]: SELF      R3 R3 K17    ; R4 := R3; R3 := R3[0xc02f2cb8]
- 68 [-]: OP_LOADBOOL R5 1 0       ; R5 := true
+ 68 [-]: LOADBOOL  R5 1 0       ; R5 := true
  69 [-]: CALL      R3 3 1       ; R3(R4,R5)
  70 [-]: GETGLOBAL R3 K18       ; R3 := 0x89326c93
  71 [-]: SELF      R3 R3 K19    ; R4 := R3; R3 := R3[0xfb669000]
@@ -231,7 +231,7 @@
 148 [-]: LOADK     R18 255      ; R18 := 255.000000
 149 [-]: CALL      R14 5 0      ; R14,... := R14(R15,R16,R17,R18)
 150 [-]: CALL      R10 0 1      ; R10(R11,...)
-151 [-]: OP_LOADBOOL R10 0 0      ; R10 := false
+151 [-]: LOADBOOL  R10 0 0      ; R10 := false
 152 [-]: GETGLOBAL R11 K11      ; R11 := 0x0032441c
 153 [-]: GETTABLE  R11 R11 K14  ; R11 := R11["NemesisTaunt"]
 154 [-]: TEST      R11 0        ; if not R11 then PC := 171
@@ -354,7 +354,7 @@
 271 [-]: JMP       267          ; PC := 267
 272 [-]: GETGLOBAL R16 K16      ; R16 := 0xbe190284
 273 [-]: SELF      R16 R16 K17  ; R17 := R16; R16 := R16[0xc02f2cb8]
-274 [-]: OP_LOADBOOL R18 0 0      ; R18 := false
+274 [-]: LOADBOOL  R18 0 0      ; R18 := false
 275 [-]: CALL      R16 3 1      ; R16(R17,R18)
 276 [-]: GETGLOBAL R16 K0       ; R16 := 0x7b998233
 277 [-]: GETGLOBAL R17 K11      ; R17 := 0x0032441c

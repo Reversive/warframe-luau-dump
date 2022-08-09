@@ -37,7 +37,7 @@
   9 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  10 [-]: EQ        0 R2 K4      ; if R2 ~= nil then PC := 13
  11 [-]: JMP       13           ; PC := 13
- 12 [-]: OP_LOADBOOL R2 1 0       ; R2 := true
+ 12 [-]: LOADBOOL  R2 1 0       ; R2 := true
  13 [-]: GETTABLE  R6 R5 K5     ; R82 := R6[0xae6791ba]
  14 [-]: MOVE      R7 R0        ; R7 := R0
  15 [-]: MOVE      R8 R1        ; R8 := R1
@@ -334,13 +334,13 @@
   4 [-]: GETUPVAL  R2 U0        ; R2 := U0
   5 [-]: GETTABLE  R2 R2 K2     ; R82 := R2[0x5d10207d]
   6 [-]: LOADK     R3 9         ; R3 := 9.000000
-  7 [-]: OP_LOADBOOL R4 1 0       ; R4 := true
+  7 [-]: LOADBOOL  R4 1 0       ; R4 := true
   8 [-]: MOVE      R5 R1        ; R5 := R1
   9 [-]: CALL      R2 4 2       ; R2 := R2(R3,R4,R5)
  10 [-]: GETUPVAL  R3 U0        ; R3 := U0
  11 [-]: GETTABLE  R3 R3 K2     ; R82 := R3[0x5d10207d]
  12 [-]: LOADK     R4 10        ; R4 := 10.000000
- 13 [-]: OP_LOADBOOL R5 1 0       ; R5 := true
+ 13 [-]: LOADBOOL  R5 1 0       ; R5 := true
  14 [-]: MOVE      R6 R1        ; R6 := R1
  15 [-]: CALL      R3 4 2       ; R3 := R3(R4,R5,R6)
  16 [-]: GETTABLE  R4 R0 K4     ; R4 := R0["mMovie"]

@@ -46,7 +46,7 @@
  37 [-]: LOADK     R16 K18      ; R16 := "YareliComic"
  38 [-]: CALL      R15 2 2      ; R15 := R15(R16)
  39 [-]: LOADNIL   R16 R16      ; R16 := nil
- 40 [-]: OP_LOADBOOL R17 0 0      ; R17 := false
+ 40 [-]: LOADBOOL  R17 0 0      ; R17 := false
  41 [-]: GETGLOBAL R18 K0       ; R18 := 0x2d0fad09
  42 [-]: LOADK     R19 K19      ; R19 := "Lotus.Interface.Libs.DioramaLoader"
  43 [-]: CALL      R18 2 2      ; R18 := R18(R19)
@@ -172,8 +172,8 @@
   6 [-]: GETTABLE  R1 R1 K3     ; R1 := R1["FORTUNA_NODE_TAG"]
   7 [-]: EQ        1 R0 R1      ; if R0 == R1 then PC := 10
   8 [-]: JMP       10           ; PC := 10
-  9 [-]: OP_LOADBOOL R0 0 1       ; R0 := false; PC := 10
- 10 [-]: OP_LOADBOOL R0 1 0       ; R0 := true
+  9 [-]: LOADBOOL  R0 0 1       ; R0 := false; PC := 10
+ 10 [-]: LOADBOOL  R0 1 0       ; R0 := true
  11 [-]: RETURN    R0 2         ; return R0
  12 [-]: RETURN    R0 1         ; return 
 
@@ -289,8 +289,8 @@
   2 [-]: CALL      R0 1 2       ; R0 := R0()
   3 [-]: LE        1 K0 R0      ; if 5.000000 <= R0 then PC := 6
   4 [-]: JMP       6            ; PC := 6
-  5 [-]: OP_LOADBOOL R0 0 1       ; R0 := false; PC := 6
-  6 [-]: OP_LOADBOOL R0 1 0       ; R0 := true
+  5 [-]: LOADBOOL  R0 0 1       ; R0 := false; PC := 6
+  6 [-]: LOADBOOL  R0 1 0       ; R0 := true
   7 [-]: RETURN    R0 2         ; return R0
   8 [-]: RETURN    R0 1         ; return 
 
@@ -393,7 +393,7 @@
  16 [-]: SETUPVAL  R2 U1        ; U82 := 
  17 [-]: GETUPVAL  R2 U1        ; R2 := U1
  18 [-]: SELF      R2 R2 K13    ; R3 := R2; R2 := R2[0x368ad758]
- 19 [-]: OP_LOADBOOL R4 0 0       ; R4 := false
+ 19 [-]: LOADBOOL  R4 0 0       ; R4 := false
  20 [-]: CALL      R2 3 1       ; R2(R3,R4)
  21 [-]: GETUPVAL  R2 U3        ; R2 := U3
  22 [-]: GETTABLE  R2 R2 K14    ; R82 := R2[0xbec1f4ee]
@@ -420,7 +420,7 @@
  43 [-]: CALL      R2 2 1       ; R2(R3)
  44 [-]: GETUPVAL  R2 U1        ; R2 := U1
  45 [-]: SELF      R2 R2 K13    ; R3 := R2; R2 := R2[0x368ad758]
- 46 [-]: OP_LOADBOOL R4 1 0       ; R4 := true
+ 46 [-]: LOADBOOL  R4 1 0       ; R4 := true
  47 [-]: CALL      R2 3 1       ; R2(R3,R4)
  48 [-]: RETURN    R0 1         ; return 
 
@@ -491,8 +491,8 @@
  18 [-]: SELF      R2 R1 K7     ; R3 := R1; R2 := R1[0xf4e253b6]
  19 [-]: CALL      R2 2 1       ; R2(R3)
  20 [-]: SELF      R2 R1 K8     ; R3 := R1; R2 := R1[0x768274d6]
- 21 [-]: OP_LOADBOOL R4 0 0       ; R4 := false
- 22 [-]: OP_LOADBOOL R5 1 0       ; R5 := true
+ 21 [-]: LOADBOOL  R4 0 0       ; R4 := false
+ 22 [-]: LOADBOOL  R5 1 0       ; R5 := true
  23 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
  24 [-]: GETGLOBAL R2 K3        ; R2 := 0x89326c93
  25 [-]: SELF      R2 R2 K4     ; R3 := R2; R2 := R2[0x46a0ebf5]
@@ -520,8 +520,8 @@
  47 [-]: CALL      R6 2 0       ; R6,... := R6(R7)
  48 [-]: CALL      R4 0 2       ; R4 := R4(R5,...)
  49 [-]: SELF      R5 R4 K8     ; R6 := R4; R5 := R4[0x768274d6]
- 50 [-]: OP_LOADBOOL R7 0 0       ; R7 := false
- 51 [-]: OP_LOADBOOL R8 1 0       ; R8 := true
+ 50 [-]: LOADBOOL  R7 0 0       ; R7 := false
+ 51 [-]: LOADBOOL  R8 1 0       ; R8 := true
  52 [-]: CALL      R5 4 1       ; R5(R6,R7,R8)
  53 [-]: GETGLOBAL R5 K3        ; R5 := 0x89326c93
  54 [-]: SELF      R5 R5 K4     ; R6 := R5; R5 := R5[0x46a0ebf5]
@@ -646,7 +646,7 @@
  26 [-]: GETGLOBAL R0 K1        ; R0 := 0x25d99d89
  27 [-]: SELF      R0 R0 K7     ; R1 := R0; R0 := R0[0x42ce212f]
  28 [-]: CALL      R0 2 2       ; R0 := R0(R1)
- 29 [-]: OP_LOADBOOL R1 0 0       ; R1 := false
+ 29 [-]: LOADBOOL  R1 0 0       ; R1 := false
  30 [-]: LOADK     R2 1         ; R2 := 1.000000
  31 [-]: LEN       R3 R0        ; R3 := # R0
  32 [-]: LOADK     R4 1         ; R4 := 1.000000
@@ -657,7 +657,7 @@
  37 [-]: GETTABLE  R6 R6 K9     ; R6 := R6["mSubject"]
  38 [-]: EQ        0 R6 K10     ; if R6 ~= "/Lotus/Language/YareliQuest/RokyInboxTitle" then PC := 41
  39 [-]: JMP       41           ; PC := 41
- 40 [-]: OP_LOADBOOL R1 1 0       ; R1 := true
+ 40 [-]: LOADBOOL  R1 1 0       ; R1 := true
  41 [-]: FORLOOP   R2 34        ; R2 += R4; if R2 <= R3 then begin PC := 34; R5 := R2 end
  42 [-]: TEST      R1 1         ; if R1 then PC := 63
  43 [-]: JMP       63           ; PC := 63
@@ -691,7 +691,7 @@
  71 [-]: GETGLOBAL R6 K1        ; R6 := 0x25d99d89
  72 [-]: SELF      R6 R6 K14    ; R7 := R6; R6 := R6[0x24389ec3]
  73 [-]: LOADK     R8 K15       ; R8 := "OnInboxSync"
- 74 [-]: OP_LOADBOOL R9 1 0       ; R9 := true
+ 74 [-]: LOADBOOL  R9 1 0       ; R9 := true
  75 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
  76 [-]: GETUPVAL  R6 U2        ; R6 := U2
  77 [-]: CALL      R6 1 1       ; R6()
@@ -777,13 +777,13 @@
  43 [-]: JMP       52           ; PC := 52
  44 [-]: NEWTABLE  R2 0 2       ; R2 := {}
  45 [-]: GETUPVAL  R3 U8        ; R3 := U8
- 46 [-]: SETTABLE  R2 K13 R3    ; R2["mName"] := R3
+ 46 [-]: SETTABLE  R2 K13 R3    ; R2[0xcbd666e1] := R3
  47 [-]: CLOSURE   R3 0         ; R3 := closure(Function #13.1)
  48 [-]: GETUPVAL  R0 U5        ; R0 := U5
  49 [-]: GETUPVAL  R0 U9        ; R0 := U9
  50 [-]: GETUPVAL  R0 U10       ; R0 := U10
- 51 [-]: SETTABLE  R2 K14 R3    ; R2["mCallback"] := R3
- 52 [-]: SETTABLE  R1 K12 R2    ; R1["Boon_YareliIntro"] := R2
+ 51 [-]: SETTABLE  R2 K14 R3    ; R2[0x25a6e75e] := R3
+ 52 [-]: SETTABLE  R1 K12 R2    ; R1[0x25d99d89] := R2
  53 [-]: GETGLOBAL R1 K0        ; R1 := _T
  54 [-]: GETTABLE  R1 R1 K1     ; R1 := R1["YareliReturnToOrbiter"]
  55 [-]: TEST      R1 1         ; if R1 then PC := 61
@@ -840,8 +840,8 @@
  12 [-]: CALL      R5 2 0       ; R5,... := R5(R6)
  13 [-]: CALL      R3 0 2       ; R3 := R3(R4,...)
  14 [-]: LOADNIL   R4 R4        ; R4 := nil
- 15 [-]: OP_LOADBOOL R5 1 0       ; R5 := true
- 16 [-]: OP_LOADBOOL R6 1 0       ; R6 := true
+ 15 [-]: LOADBOOL  R5 1 0       ; R5 := true
+ 16 [-]: LOADBOOL  R6 1 0       ; R6 := true
  17 [-]: CALL      R1 6 1       ; R1(R2,R3,R4,R5,R6)
  18 [-]: GETUPVAL  R1 U1        ; R1 := U1
  19 [-]: CALL      R1 1 1       ; R1()
@@ -853,8 +853,8 @@
  25 [-]: CALL      R5 2 0       ; R5,... := R5(R6)
  26 [-]: CALL      R3 0 2       ; R3 := R3(R4,...)
  27 [-]: LOADNIL   R4 R4        ; R4 := nil
- 28 [-]: OP_LOADBOOL R5 1 0       ; R5 := true
- 29 [-]: OP_LOADBOOL R6 1 0       ; R6 := true
+ 28 [-]: LOADBOOL  R5 1 0       ; R5 := true
+ 29 [-]: LOADBOOL  R6 1 0       ; R6 := true
  30 [-]: CALL      R1 6 1       ; R1(R2,R3,R4,R5,R6)
  31 [-]: GETGLOBAL R1 K9        ; R1 := 0x7b998233
  32 [-]: GETUPVAL  R2 U2        ; R2 := U2
@@ -873,8 +873,8 @@
  45 [-]: CALL      R5 2 0       ; R5,... := R5(R6)
  46 [-]: CALL      R3 0 2       ; R3 := R3(R4,...)
  47 [-]: LOADNIL   R4 R4        ; R4 := nil
- 48 [-]: OP_LOADBOOL R5 1 0       ; R5 := true
- 49 [-]: OP_LOADBOOL R6 1 0       ; R6 := true
+ 48 [-]: LOADBOOL  R5 1 0       ; R5 := true
+ 49 [-]: LOADBOOL  R6 1 0       ; R6 := true
  50 [-]: CALL      R1 6 1       ; R1(R2,R3,R4,R5,R6)
  51 [-]: GETGLOBAL R1 K0        ; R1 := _T
  52 [-]: SETTABLE  R1 K12 K13   ; R1["YareliReturnToOrbiter"] := true
@@ -893,7 +893,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
-  1 [-]: OP_LOADBOOL R1 1 0       ; R1 := true
+  1 [-]: LOADBOOL  R1 1 0       ; R1 := true
   2 [-]: SETUPVAL  R1 U0        ; U82 := 
   3 [-]: RETURN    R0 1         ; return 
 
@@ -1164,7 +1164,7 @@
 
   1 [-]: SELF      R2 R0 K0     ; R3 := R0; R2 := R0[0x768274d6]
   2 [-]: MOVE      R4 R1        ; R4 := R1
-  3 [-]: OP_LOADBOOL R5 1 0       ; R5 := true
+  3 [-]: LOADBOOL  R5 1 0       ; R5 := true
   4 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
   5 [-]: SELF      R2 R0 K1     ; R3 := R0; R2 := R0[0xc9f6a7d7]
   6 [-]: GETGLOBAL R4 K2        ; R4 := gContextActionType
@@ -1205,8 +1205,8 @@
  15 [-]: GETUPVAL  R3 U0        ; R3 := U0
  16 [-]: EQ        1 R2 R3      ; if R2 == R3 then PC := 19
  17 [-]: JMP       19           ; PC := 19
- 18 [-]: OP_LOADBOOL R2 0 1       ; R2 := false; PC := 19
- 19 [-]: OP_LOADBOOL R2 1 0       ; R2 := true
+ 18 [-]: LOADBOOL  R2 0 1       ; R2 := false; PC := 19
+ 19 [-]: LOADBOOL  R2 1 0       ; R2 := true
  20 [-]: GETUPVAL  R3 U1        ; R3 := U1
  21 [-]: GETTABLE  R3 R3 K5     ; R82 := R3[0xe77c9f88]
  22 [-]: GETUPVAL  R4 U0        ; R4 := U0
@@ -1242,8 +1242,8 @@
  52 [-]: GETUPVAL  R5 U0        ; R5 := U0
  53 [-]: EQ        1 R4 R5      ; if R4 == R5 then PC := 56
  54 [-]: JMP       56           ; PC := 56
- 55 [-]: OP_LOADBOOL R2 0 1       ; R2 := false; PC := 56
- 56 [-]: OP_LOADBOOL R2 1 0       ; R2 := true
+ 55 [-]: LOADBOOL  R2 0 1       ; R2 := false; PC := 56
+ 56 [-]: LOADBOOL  R2 1 0       ; R2 := true
  57 [-]: TEST      R2 0         ; if not R2 then PC := 68
  58 [-]: JMP       68           ; PC := 68
  59 [-]: SELF      R4 R0 K9     ; R5 := R0; R4 := R0[0xd4cc05b4]
@@ -1252,7 +1252,7 @@
  62 [-]: JMP       68           ; PC := 68
  63 [-]: GETUPVAL  R4 U2        ; R4 := U2
  64 [-]: MOVE      R5 R0        ; R5 := R0
- 65 [-]: OP_LOADBOOL R6 1 0       ; R6 := true
+ 65 [-]: LOADBOOL  R6 1 0       ; R6 := true
  66 [-]: CALL      R4 3 1       ; R4(R5,R6)
  67 [-]: JMP       78           ; PC := 78
  68 [-]: TEST      R2 1         ; if R2 then PC := 78
@@ -1263,7 +1263,7 @@
  73 [-]: JMP       78           ; PC := 78
  74 [-]: GETUPVAL  R4 U2        ; R4 := U2
  75 [-]: MOVE      R5 R0        ; R5 := R0
- 76 [-]: OP_LOADBOOL R6 0 0       ; R6 := false
+ 76 [-]: LOADBOOL  R6 0 0       ; R6 := false
  77 [-]: CALL      R4 3 1       ; R4(R5,R6)
  78 [-]: GETGLOBAL R4 K2        ; R4 := 0xcbd666e1
  79 [-]: LOADK     R5 0         ; R5 := 0.000000
@@ -1283,7 +1283,7 @@
 
   1 [-]: SELF      R1 R0 K0     ; R2 := R0; R1 := R0[0x5d985c7e]
   2 [-]: GETGLOBAL R3 K1        ; R3 := 0x3f11767e
-  3 [-]: OP_LOADBOOL R4 1 0       ; R4 := true
+  3 [-]: LOADBOOL  R4 1 0       ; R4 := true
   4 [-]: CALL      R1 4 1       ; R1(R2,R3,R4)
   5 [-]: SELF      R1 R0 K2     ; R2 := R0; R1 := R0[0x4c91b5d8]
   6 [-]: GETGLOBAL R3 K3        ; R3 := 0xb7a872fc
@@ -1389,7 +1389,7 @@
  87 [-]: GETGLOBAL R7 K5        ; R7 := 0x0469f296
  88 [-]: LOADK     R8 K19       ; R8 := "RokyWakeUp"
  89 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 90 [-]: OP_LOADBOOL R8 0 0       ; R8 := false
+ 90 [-]: LOADBOOL  R8 0 0       ; R8 := false
  91 [-]: CALL      R5 4 1       ; R5(R6,R7,R8)
  92 [-]: GETGLOBAL R5 K10       ; R5 := 0xcbd666e1
  93 [-]: LOADK     R6 1         ; R6 := 1.000000
@@ -1481,8 +1481,8 @@
  12 [-]: CALL      R5 2 0       ; R5,... := R5(R6)
  13 [-]: CALL      R3 0 2       ; R3 := R3(R4,...)
  14 [-]: LOADNIL   R4 R4        ; R4 := nil
- 15 [-]: OP_LOADBOOL R5 1 0       ; R5 := true
- 16 [-]: OP_LOADBOOL R6 1 0       ; R6 := true
+ 15 [-]: LOADBOOL  R5 1 0       ; R5 := true
+ 16 [-]: LOADBOOL  R6 1 0       ; R6 := true
  17 [-]: CALL      R1 6 1       ; R1(R2,R3,R4,R5,R6)
  18 [-]: GETGLOBAL R1 K0        ; R1 := _T
  19 [-]: SETTABLE  R1 K9 K10    ; R1["CompleteYareliStage"] := true
@@ -1535,7 +1535,7 @@
  32 [-]: GETGLOBAL R0 K1        ; R0 := 0x25d99d89
  33 [-]: SELF      R0 R0 K8     ; R1 := R0; R0 := R0[0x24389ec3]
  34 [-]: LOADK     R2 K9        ; R2 := "OnInboxSync"
- 35 [-]: OP_LOADBOOL R3 1 0       ; R3 := true
+ 35 [-]: LOADBOOL  R3 1 0       ; R3 := true
  36 [-]: CALL      R0 4 1       ; R0(R1,R2,R3)
  37 [-]: GETGLOBAL R0 K10       ; R0 := _T
  38 [-]: GETTABLE  R0 R0 K11    ; R0 := R0["curTransmission"]

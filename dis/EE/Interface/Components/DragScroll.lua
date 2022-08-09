@@ -240,7 +240,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  15
 
-  1 [-]: OP_LOADBOOL R2 0 0       ; R2 := false
+  1 [-]: LOADBOOL  R2 0 0       ; R2 := false
   2 [-]: GETGLOBAL R3 K0        ; R3 := 0xc8802016
   3 [-]: NEWTABLE  R4 2 0       ; R4 := {}
   4 [-]: LOADK     R5 K1        ; R5 := "x"
@@ -291,8 +291,8 @@
  49 [-]: GETTABLE  R10 R0 K19   ; R10 := R0["mDeselectRange"]
  50 [-]: LT        1 R10 R9     ; if R10 < R9 then PC := 53
  51 [-]: JMP       53           ; PC := 53
- 52 [-]: OP_LOADBOOL R2 0 1       ; R2 := false; PC := 53
- 53 [-]: OP_LOADBOOL R2 1 0       ; R2 := true
+ 52 [-]: LOADBOOL  R2 0 1       ; R2 := false; PC := 53
+ 53 [-]: LOADBOOL  R2 1 0       ; R2 := true
  54 [-]: GETTABLE  R9 R0 K5     ; R9 := R0["mStarting"]
  55 [-]: SETTABLE  R9 R7 R8     ; R9[R7] := R8
  56 [-]: JMP       87           ; PC := 87

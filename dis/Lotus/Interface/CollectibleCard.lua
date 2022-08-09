@@ -11,7 +11,7 @@
   2 [-]: LOADK     R1 K1        ; R1 := "EE.Interface.Utilities"
   3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
   4 [-]: LOADNIL   R1 R1        ; R1 := nil
-  5 [-]: OP_LOADBOOL R2 1 0       ; R2 := true
+  5 [-]: LOADBOOL  R2 1 0       ; R2 := true
   6 [-]: GETGLOBAL R3 K2        ; R3 := 0x78ca68a2
   7 [-]: LOADK     R4 0         ; R4 := 0.000000
   8 [-]: LOADK     R5 0         ; R5 := 0.250000
@@ -20,7 +20,7 @@
  11 [-]: LOADK     R5 0         ; R5 := 0.000000
  12 [-]: LOADK     R6 0         ; R6 := 0.250000
  13 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
- 14 [-]: OP_LOADBOOL R5 0 0       ; R5 := false
+ 14 [-]: LOADBOOL  R5 0 0       ; R5 := false
  15 [-]: LOADNIL   R6 R6        ; R6 := nil
  16 [-]: NEWTABLE  R7 0 3       ; R7 := {}
  17 [-]: SETTABLE  R7 K3 K4     ; R7["Loader"] := nil
@@ -80,7 +80,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  10
 
-  1 [-]: OP_LOADBOOL R0 1 0       ; R0 := true
+  1 [-]: LOADBOOL  R0 1 0       ; R0 := true
   2 [-]: SETUPVAL  R0 U0        ; U82 := 
   3 [-]: GETUPVAL  R0 U1        ; R0 := U1
   4 [-]: GETTABLE  R0 R0 K0     ; R82 := R0[0x659d451f]
@@ -214,7 +214,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
-  1 [-]: OP_LOADBOOL R0 0 0       ; R0 := false
+  1 [-]: LOADBOOL  R0 0 0       ; R0 := false
   2 [-]: SETUPVAL  R0 U0        ; U82 := 
   3 [-]: RETURN    R0 1         ; return 
 
@@ -402,7 +402,7 @@
  26 [-]: SETUPVAL  R2 U0        ; U82 := 
  27 [-]: GETUPVAL  R2 U0        ; R2 := U0
  28 [-]: SELF      R2 R2 K11    ; R3 := R2; R2 := R2[0x46610c50]
- 29 [-]: OP_LOADBOOL R4 1 0       ; R4 := true
+ 29 [-]: LOADBOOL  R4 1 0       ; R4 := true
  30 [-]: CALL      R2 3 1       ; R2(R3,R4)
  31 [-]: GETGLOBAL R2 K7        ; R2 := 0x2d0fad09
  32 [-]: LOADK     R3 K12       ; R3 := "Lotus.Interface.Libs.TimerMgr"
@@ -539,7 +539,7 @@
  50 [-]: JMP       55           ; PC := 55
  51 [-]: GETUPVAL  R0 U0        ; R0 := U0
  52 [-]: SELF      R0 R0 K11    ; R1 := R0; R0 := R0[0x46610c50]
- 53 [-]: OP_LOADBOOL R2 0 0       ; R2 := false
+ 53 [-]: LOADBOOL  R2 0 0       ; R2 := false
  54 [-]: CALL      R0 3 1       ; R0(R1,R2)
  55 [-]: GETUPVAL  R0 U5        ; R0 := U5
  56 [-]: TEST      R0 1         ; if R0 then PC := 61
@@ -573,7 +573,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
-  1 [-]: OP_LOADBOOL R0 1 0       ; R0 := true
+  1 [-]: LOADBOOL  R0 1 0       ; R0 := true
   2 [-]: RETURN    R0 2         ; return R0
   3 [-]: RETURN    R0 1         ; return 
 

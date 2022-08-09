@@ -75,7 +75,7 @@
  19 [-]: SETTABLE  R7 K10 R8    ; R7["mCompatibleItems"] := R8
  20 [-]: SETTABLE  R7 K11 K12   ; R7["mCurrentCompatibleIndex"] := 1.000000
  21 [-]: CLOSURE   R8 0         ; R8 := closure(Function #1.1)
- 22 [-]: SETTABLE  R7 K13 R8    ; R7["GetParentEnv"] := R8
+ 22 [-]: SETTABLE  R7 K13 R8    ; R7[0xe4162eed] := R8
  23 [-]: CLOSURE   R8 1         ; R8 := closure(Function #1.2)
  24 [-]: MOVE      R0 R3        ; R0 := R3
  25 [-]: SETTABLE  R7 K14 R8    ; R7["HookUpCallbacks"] := R8
@@ -83,7 +83,7 @@
  27 [-]: SETTABLE  R7 K15 R8    ; R7["SetUpdateOmegaCallback"] := R8
  28 [-]: CLOSURE   R8 3         ; R8 := closure(Function #1.4)
  29 [-]: MOVE      R0 R4        ; R0 := R4
- 30 [-]: SETTABLE  R7 K16 R8    ; R7["UpdateColors"] := R8
+ 30 [-]: SETTABLE  R7 K16 R8    ; R7[0x7b998233] := R8
  31 [-]: CLOSURE   R8 4         ; R8 := closure(Function #1.5)
  32 [-]: GETUPVAL  R0 U0        ; R0 := U0
  33 [-]: GETUPVAL  R0 U1        ; R0 := U1
@@ -96,7 +96,7 @@
  40 [-]: SETTABLE  R7 K17 R8    ; R7["BuildCompatibleList"] := R8
  41 [-]: CLOSURE   R8 5         ; R8 := closure(Function #1.6)
  42 [-]: MOVE      R0 R1        ; R0 := R1
- 43 [-]: SETTABLE  R7 K18 R8    ; R7["SetupOmega"] := R8
+ 43 [-]: SETTABLE  R7 K18 R8    ; R7[0xbce5a201] := R8
  44 [-]: GETGLOBAL R8 K0        ; R8 := 0x2d0fad09
  45 [-]: LOADK     R9 K19       ; R9 := "Lotus.Interface.Components.CategorizedGrid"
  46 [-]: CALL      R8 2 2       ; R8 := R8(R9)
@@ -156,7 +156,7 @@
 100 [-]: SELF      R9 R9 K40    ; R10 := R9; R9 := R9[0xaade900e]
 101 [-]: MOVE      R11 R1       ; R11 := R1
 102 [-]: LOADK     R12 11       ; R12 := 11.000000
-103 [-]: OP_LOADBOOL R13 0 0      ; R13 := false
+103 [-]: LOADBOOL  R13 0 0      ; R13 := false
 104 [-]: CALL      R9 5 1       ; R9(R10,R11,R12,R13)
 105 [-]: RETURN    R7 2         ; return R7
 106 [-]: RETURN    R0 1         ; return 
@@ -402,8 +402,8 @@
  25 [-]: GETTABLE  R5 R5 K3     ; R5 := R5["mCurrentCompatibleIndex"]
  26 [-]: LT        1 K6 R5      ; if 1.000000 < R5 then PC := 29
  27 [-]: JMP       29           ; PC := 29
- 28 [-]: OP_LOADBOOL R5 0 1       ; R5 := false; PC := 29
- 29 [-]: OP_LOADBOOL R5 1 0       ; R5 := true
+ 28 [-]: LOADBOOL  R5 0 1       ; R5 := false; PC := 29
+ 29 [-]: LOADBOOL  R5 1 0       ; R5 := true
  30 [-]: CALL      R0 6 1       ; R0(R1,R2,R3,R4,R5)
  31 [-]: GETUPVAL  R0 U1        ; R0 := U1
  32 [-]: GETTABLE  R0 R0 K8     ; R0 := R0["mMovie"]
@@ -419,14 +419,14 @@
  42 [-]: LEN       R6 R6        ; R6 := # R6
  43 [-]: LT        1 R5 R6      ; if R5 < R6 then PC := 46
  44 [-]: JMP       46           ; PC := 46
- 45 [-]: OP_LOADBOOL R5 0 1       ; R5 := false; PC := 46
- 46 [-]: OP_LOADBOOL R5 1 0       ; R5 := true
+ 45 [-]: LOADBOOL  R5 0 1       ; R5 := false; PC := 46
+ 46 [-]: LOADBOOL  R5 1 0       ; R5 := true
  47 [-]: CALL      R0 6 1       ; R0(R1,R2,R3,R4,R5)
  48 [-]: GETUPVAL  R0 U1        ; R0 := U1
  49 [-]: GETTABLE  R0 R0 K13    ; R0 := R0["mGrid"]
  50 [-]: SELF      R0 R0 K14    ; R1 := R0; R0 := R0[0x7c09c373]
- 51 [-]: OP_LOADBOOL R2 1 0       ; R2 := true
- 52 [-]: OP_LOADBOOL R3 1 0       ; R3 := true
+ 51 [-]: LOADBOOL  R2 1 0       ; R2 := true
+ 52 [-]: LOADBOOL  R3 1 0       ; R3 := true
  53 [-]: CALL      R0 4 1       ; R0(R1,R2,R3)
  54 [-]: GETUPVAL  R0 U1        ; R0 := U1
  55 [-]: GETTABLE  R0 R0 K13    ; R0 := R0["mGrid"]
@@ -441,8 +441,8 @@
  64 [-]: GETTABLE  R0 R0 K13    ; R0 := R0["mGrid"]
  65 [-]: SELF      R0 R0 K16    ; R1 := R0; R0 := R0[0x71e9ac81]
  66 [-]: LOADNIL   R2 R2        ; R2 := nil
- 67 [-]: OP_LOADBOOL R3 1 0       ; R3 := true
- 68 [-]: OP_LOADBOOL R4 1 0       ; R4 := true
+ 67 [-]: LOADBOOL  R3 1 0       ; R3 := true
+ 68 [-]: LOADBOOL  R4 1 0       ; R4 := true
  69 [-]: CALL      R0 5 1       ; R0(R1,R2,R3,R4)
  70 [-]: RETURN    R0 1         ; return 
 
@@ -525,8 +525,8 @@
  23 [-]: GETTABLE  R5 R5 K3     ; R5 := R5["mCurrentCompatibleIndex"]
  24 [-]: LT        1 K6 R5      ; if 1.000000 < R5 then PC := 27
  25 [-]: JMP       27           ; PC := 27
- 26 [-]: OP_LOADBOOL R5 0 1       ; R5 := false; PC := 27
- 27 [-]: OP_LOADBOOL R5 1 0       ; R5 := true
+ 26 [-]: LOADBOOL  R5 0 1       ; R5 := false; PC := 27
+ 27 [-]: LOADBOOL  R5 1 0       ; R5 := true
  28 [-]: CALL      R0 6 1       ; R0(R1,R2,R3,R4,R5)
  29 [-]: GETUPVAL  R0 U1        ; R0 := U1
  30 [-]: GETTABLE  R0 R0 K7     ; R0 := R0["mMovie"]
@@ -542,14 +542,14 @@
  40 [-]: LEN       R6 R6        ; R6 := # R6
  41 [-]: LT        1 R5 R6      ; if R5 < R6 then PC := 44
  42 [-]: JMP       44           ; PC := 44
- 43 [-]: OP_LOADBOOL R5 0 1       ; R5 := false; PC := 44
- 44 [-]: OP_LOADBOOL R5 1 0       ; R5 := true
+ 43 [-]: LOADBOOL  R5 0 1       ; R5 := false; PC := 44
+ 44 [-]: LOADBOOL  R5 1 0       ; R5 := true
  45 [-]: CALL      R0 6 1       ; R0(R1,R2,R3,R4,R5)
  46 [-]: GETUPVAL  R0 U1        ; R0 := U1
  47 [-]: GETTABLE  R0 R0 K13    ; R0 := R0["mGrid"]
  48 [-]: SELF      R0 R0 K14    ; R1 := R0; R0 := R0[0x7c09c373]
- 49 [-]: OP_LOADBOOL R2 1 0       ; R2 := true
- 50 [-]: OP_LOADBOOL R3 1 0       ; R3 := true
+ 49 [-]: LOADBOOL  R2 1 0       ; R2 := true
+ 50 [-]: LOADBOOL  R3 1 0       ; R3 := true
  51 [-]: CALL      R0 4 1       ; R0(R1,R2,R3)
  52 [-]: GETUPVAL  R0 U1        ; R0 := U1
  53 [-]: GETTABLE  R0 R0 K13    ; R0 := R0["mGrid"]
@@ -564,8 +564,8 @@
  62 [-]: GETTABLE  R0 R0 K13    ; R0 := R0["mGrid"]
  63 [-]: SELF      R0 R0 K16    ; R1 := R0; R0 := R0[0x71e9ac81]
  64 [-]: LOADNIL   R2 R2        ; R2 := nil
- 65 [-]: OP_LOADBOOL R3 1 0       ; R3 := true
- 66 [-]: OP_LOADBOOL R4 1 0       ; R4 := true
+ 65 [-]: LOADBOOL  R3 1 0       ; R3 := true
+ 66 [-]: LOADBOOL  R4 1 0       ; R4 := true
  67 [-]: CALL      R0 5 1       ; R0(R1,R2,R3,R4)
  68 [-]: RETURN    R0 1         ; return 
 
@@ -595,13 +595,13 @@
   1 [-]: GETUPVAL  R1 U0        ; R1 := U0
   2 [-]: GETTABLE  R1 R1 K1     ; R82 := R1[0x5d10207d]
   3 [-]: LOADK     R2 9         ; R2 := 9.000000
-  4 [-]: OP_LOADBOOL R3 1 0       ; R3 := true
+  4 [-]: LOADBOOL  R3 1 0       ; R3 := true
   5 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
   6 [-]: SETTABLE  R0 K0 R1     ; R0["mFloatingContent"] := R1
   7 [-]: GETUPVAL  R1 U0        ; R1 := U0
   8 [-]: GETTABLE  R1 R1 K1     ; R82 := R1[0x5d10207d]
   9 [-]: LOADK     R2 10        ; R2 := 10.000000
- 10 [-]: OP_LOADBOOL R3 1 0       ; R3 := true
+ 10 [-]: LOADBOOL  R3 1 0       ; R3 := true
  11 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
  12 [-]: SETTABLE  R0 K3 R1     ; R0["mFloatingContentHighlight"] := R1
  13 [-]: GETTABLE  R1 R0 K4     ; R1 := R0["mMovie"]
@@ -652,14 +652,14 @@
  13 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  14 [-]: TEST      R4 0         ; if not R4 then PC := 18
  15 [-]: JMP       18           ; PC := 18
- 16 [-]: OP_LOADBOOL R4 0 0       ; R4 := false
+ 16 [-]: LOADBOOL  R4 0 0       ; R4 := false
  17 [-]: RETURN    R4 2         ; return R4
  18 [-]: SELF      R4 R1 K2     ; R5 := R1; R4 := R1[0x0d4a92a7]
  19 [-]: MOVE      R6 R2        ; R6 := R2
  20 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
  21 [-]: TEST      R4 1         ; if R4 then PC := 25
  22 [-]: JMP       25           ; PC := 25
- 23 [-]: OP_LOADBOOL R4 0 0       ; R4 := false
+ 23 [-]: LOADBOOL  R4 0 0       ; R4 := false
  24 [-]: RETURN    R4 2         ; return R4
  25 [-]: GETGLOBAL R4 K0        ; R4 := 0x7b998233
  26 [-]: MOVE      R5 R3        ; R5 := R3
@@ -680,7 +680,7 @@
  41 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  42 [-]: TEST      R4 0         ; if not R4 then PC := 46
  43 [-]: JMP       46           ; PC := 46
- 44 [-]: OP_LOADBOOL R4 0 0       ; R4 := false
+ 44 [-]: LOADBOOL  R4 0 0       ; R4 := false
  45 [-]: RETURN    R4 2         ; return R4
  46 [-]: NEWTABLE  R4 0 0       ; R4 := {}
  47 [-]: SETTABLE  R0 K5 R4     ; R0["mCompatibleItems"] := R4
@@ -762,7 +762,7 @@
 123 [-]: SETTABLE  R29 K22 R30  ; R29["GameData"] := R30
 124 [-]: MOVE      R30 R3       ; R30 := R3
 125 [-]: MOVE      R31 R5       ; R31 := R5
-126 [-]: OP_LOADBOOL R32 1 0      ; R32 := true
+126 [-]: LOADBOOL  R32 1 0      ; R32 := true
 127 [-]: CALL      R26 7 2      ; R26 := R26(R27,R28,R29,R30,R31,R32)
 128 [-]: SETTABLE  R26 K23 K24  ; R26["DefaultItemInfoTab"] := 2.000000
 129 [-]: SETTABLE  R26 K25 K26  ; R26["ShowDisposition"] := true
@@ -798,7 +798,7 @@
 159 [-]: SETTABLE  R31 K22 R32  ; R31["GameData"] := R32
 160 [-]: MOVE      R32 R3       ; R32 := R3
 161 [-]: MOVE      R33 R5       ; R33 := R5
-162 [-]: OP_LOADBOOL R34 1 0      ; R34 := true
+162 [-]: LOADBOOL  R34 1 0      ; R34 := true
 163 [-]: CALL      R28 7 2      ; R28 := R28(R29,R30,R31,R32,R33,R34)
 164 [-]: SETTABLE  R28 K23 K24  ; R28["DefaultItemInfoTab"] := 2.000000
 165 [-]: SETTABLE  R28 K25 K26  ; R28["ShowDisposition"] := true
@@ -900,7 +900,7 @@
 261 [-]: SETTABLE  R51 K22 R52  ; R51["GameData"] := R52
 262 [-]: MOVE      R52 R3       ; R52 := R3
 263 [-]: MOVE      R53 R5       ; R53 := R5
-264 [-]: OP_LOADBOOL R54 1 0      ; R54 := true
+264 [-]: LOADBOOL  R54 1 0      ; R54 := true
 265 [-]: CALL      R48 7 2      ; R48 := R48(R49,R50,R51,R52,R53,R54)
 266 [-]: SETTABLE  R48 K23 K24  ; R48["DefaultItemInfoTab"] := 2.000000
 267 [-]: SETTABLE  R48 K25 K26  ; R48["ShowDisposition"] := true
@@ -932,7 +932,7 @@
 293 [-]: SETTABLE  R53 K22 R54  ; R53["GameData"] := R54
 294 [-]: MOVE      R54 R3       ; R54 := R3
 295 [-]: MOVE      R55 R5       ; R55 := R5
-296 [-]: OP_LOADBOOL R56 1 0      ; R56 := true
+296 [-]: LOADBOOL  R56 1 0      ; R56 := true
 297 [-]: CALL      R50 7 2      ; R50 := R50(R51,R52,R53,R54,R55,R56)
 298 [-]: SETTABLE  R50 K23 K24  ; R50["DefaultItemInfoTab"] := 2.000000
 299 [-]: SETTABLE  R50 K25 K26  ; R50["ShowDisposition"] := true
@@ -941,7 +941,7 @@
 302 [-]: GETTABLE  R52 R0 K5    ; R52 := R0["mCompatibleItems"]
 303 [-]: MOVE      R53 R50      ; R53 := R50
 304 [-]: CALL      R51 3 1      ; R51(R52,R53)
-305 [-]: OP_LOADBOOL R51 1 0      ; R51 := true
+305 [-]: LOADBOOL  R51 1 0      ; R51 := true
 306 [-]: RETURN    R51 2        ; return R51
 307 [-]: RETURN    R0 1         ; return 
 
@@ -975,14 +975,14 @@
  18 [-]: GETTABLE  R4 R0 K3     ; R4 := R0["mGrid"]
  19 [-]: SELF      R4 R4 K6     ; R5 := R4; R4 := R4[0x71e9ac81]
  20 [-]: LOADNIL   R6 R6        ; R6 := nil
- 21 [-]: OP_LOADBOOL R7 1 0       ; R7 := true
+ 21 [-]: LOADBOOL  R7 1 0       ; R7 := true
  22 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
  23 [-]: GETTABLE  R4 R0 K7     ; R4 := R0["mMovie"]
  24 [-]: SELF      R4 R4 K8     ; R5 := R4; R4 := R4[0xc0a3774b]
  25 [-]: GETUPVAL  R6 U0        ; R6 := U0
  26 [-]: LOADK     R7 K9        ; R7 := "PrevBtn"
  27 [-]: LOADK     R8 11        ; R8 := 11.000000
- 28 [-]: OP_LOADBOOL R9 0 0       ; R9 := false
+ 28 [-]: LOADBOOL  R9 0 0       ; R9 := false
  29 [-]: CALL      R4 6 1       ; R4(R5,R6,R7,R8,R9)
  30 [-]: GETTABLE  R4 R0 K7     ; R4 := R0["mMovie"]
  31 [-]: SELF      R4 R4 K8     ; R5 := R4; R4 := R4[0xc0a3774b]
@@ -994,14 +994,14 @@
  37 [-]: LEN       R10 R10      ; R10 := # R10
  38 [-]: LT        1 R9 R10     ; if R9 < R10 then PC := 41
  39 [-]: JMP       41           ; PC := 41
- 40 [-]: OP_LOADBOOL R9 0 1       ; R9 := false; PC := 41
- 41 [-]: OP_LOADBOOL R9 1 0       ; R9 := true
+ 40 [-]: LOADBOOL  R9 0 1       ; R9 := false; PC := 41
+ 41 [-]: LOADBOOL  R9 1 0       ; R9 := true
  42 [-]: CALL      R4 6 1       ; R4(R5,R6,R7,R8,R9)
  43 [-]: GETTABLE  R4 R0 K7     ; R4 := R0["mMovie"]
  44 [-]: SELF      R4 R4 K12    ; R5 := R4; R4 := R4[0xaade900e]
  45 [-]: GETUPVAL  R6 U0        ; R6 := U0
  46 [-]: LOADK     R7 11        ; R7 := 11.000000
- 47 [-]: OP_LOADBOOL R8 1 0       ; R8 := true
+ 47 [-]: LOADBOOL  R8 1 0       ; R8 := true
  48 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
  49 [-]: RETURN    R0 1         ; return 
 
@@ -1105,8 +1105,8 @@
  13 [-]: CALL      R1 2 2       ; R1 := R1(R2)
  14 [-]: EQ        1 R0 R1      ; if R0 == R1 then PC := 17
  15 [-]: JMP       17           ; PC := 17
- 16 [-]: OP_LOADBOOL R1 0 1       ; R1 := false; PC := 17
- 17 [-]: OP_LOADBOOL R1 1 0       ; R1 := true
+ 16 [-]: LOADBOOL  R1 0 1       ; R1 := false; PC := 17
+ 17 [-]: LOADBOOL  R1 1 0       ; R1 := true
  18 [-]: NEWTABLE  R2 0 4       ; R2 := {}
  19 [-]: SETTABLE  R2 K6 K7     ; R2["HideOwned"] := true
  20 [-]: GETTABLE  R3 R0 K9     ; R3 := R0["Filler"]

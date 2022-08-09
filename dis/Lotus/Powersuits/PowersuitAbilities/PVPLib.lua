@@ -74,14 +74,14 @@
   3 [-]: CALL      R2 2 2       ; R2 := R2(R3)
   4 [-]: TEST      R2 0         ; if not R2 then PC := 8
   5 [-]: JMP       8            ; PC := 8
-  6 [-]: OP_LOADBOOL R2 0 0       ; R2 := false
+  6 [-]: LOADBOOL  R2 0 0       ; R2 := false
   7 [-]: RETURN    R2 2         ; return R2
   8 [-]: GETGLOBAL R2 K0        ; R2 := 0x7b998233
   9 [-]: MOVE      R3 R1        ; R3 := R1
  10 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  11 [-]: TEST      R2 0         ; if not R2 then PC := 15
  12 [-]: JMP       15           ; PC := 15
- 13 [-]: OP_LOADBOOL R2 0 0       ; R2 := false
+ 13 [-]: LOADBOOL  R2 0 0       ; R2 := false
  14 [-]: RETURN    R2 2         ; return R2
  15 [-]: GETGLOBAL R2 K1        ; R2 := 0xbe190284
  16 [-]: SELF      R2 R2 K2     ; R3 := R2; R2 := R2[0x32316a21]
@@ -94,7 +94,7 @@
  23 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
  24 [-]: TEST      R2 1         ; if R2 then PC := 28
  25 [-]: JMP       28           ; PC := 28
- 26 [-]: OP_LOADBOOL R2 0 0       ; R2 := false
+ 26 [-]: LOADBOOL  R2 0 0       ; R2 := false
  27 [-]: RETURN    R2 2         ; return R2
  28 [-]: SELF      R2 R1 K3     ; R3 := R1; R2 := R1[0xf2deaf69]
  29 [-]: GETGLOBAL R4 K5        ; R4 := gTennoAvatarType
@@ -106,7 +106,7 @@
  35 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
  36 [-]: TEST      R2 1         ; if R2 then PC := 40
  37 [-]: JMP       40           ; PC := 40
- 38 [-]: OP_LOADBOOL R2 0 0       ; R2 := false
+ 38 [-]: LOADBOOL  R2 0 0       ; R2 := false
  39 [-]: RETURN    R2 2         ; return R2
  40 [-]: GETGLOBAL R2 K7        ; R2 := 0x0469f296
  41 [-]: LOADK     R3 K8        ; R3 := "TENNO"
@@ -118,7 +118,7 @@
  47 [-]: CALL      R3 0 2       ; R3 := R3(R4,...)
  48 [-]: TEST      R3 0         ; if not R3 then PC := 52
  49 [-]: JMP       52           ; PC := 52
- 50 [-]: OP_LOADBOOL R3 0 0       ; R3 := false
+ 50 [-]: LOADBOOL  R3 0 0       ; R3 := false
  51 [-]: RETURN    R3 2         ; return R3
  52 [-]: SELF      R3 R0 K11    ; R4 := R0; R3 := R0[0xee0bc178]
  53 [-]: MOVE      R5 R1        ; R5 := R1
@@ -133,13 +133,13 @@
  62 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  63 [-]: EQ        0 R3 R2      ; if R3 ~= R2 then PC := 66
  64 [-]: JMP       66           ; PC := 66
- 65 [-]: OP_LOADBOOL R3 0 1       ; R3 := false; PC := 66
- 66 [-]: OP_LOADBOOL R3 1 0       ; R3 := true
+ 65 [-]: LOADBOOL  R3 0 1       ; R3 := false; PC := 66
+ 66 [-]: LOADBOOL  R3 1 0       ; R3 := true
  67 [-]: TEST      R3 1         ; if R3 then PC := 71
  68 [-]: JMP       71           ; PC := 71
- 69 [-]: OP_LOADBOOL R4 0 0       ; R4 := false
+ 69 [-]: LOADBOOL  R4 0 0       ; R4 := false
  70 [-]: RETURN    R4 2         ; return R4
- 71 [-]: OP_LOADBOOL R4 1 0       ; R4 := true
+ 71 [-]: LOADBOOL  R4 1 0       ; R4 := true
  72 [-]: RETURN    R4 2         ; return R4
  73 [-]: RETURN    R0 1         ; return 
 
@@ -158,21 +158,21 @@
   3 [-]: CALL      R2 2 2       ; R2 := R2(R3)
   4 [-]: TEST      R2 0         ; if not R2 then PC := 8
   5 [-]: JMP       8            ; PC := 8
-  6 [-]: OP_LOADBOOL R2 0 0       ; R2 := false
+  6 [-]: LOADBOOL  R2 0 0       ; R2 := false
   7 [-]: RETURN    R2 2         ; return R2
   8 [-]: GETGLOBAL R2 K0        ; R2 := 0x7b998233
   9 [-]: MOVE      R3 R1        ; R3 := R1
  10 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  11 [-]: TEST      R2 0         ; if not R2 then PC := 15
  12 [-]: JMP       15           ; PC := 15
- 13 [-]: OP_LOADBOOL R2 0 0       ; R2 := false
+ 13 [-]: LOADBOOL  R2 0 0       ; R2 := false
  14 [-]: RETURN    R2 2         ; return R2
  15 [-]: SELF      R2 R1 K1     ; R3 := R1; R2 := R1[0xf2deaf69]
  16 [-]: GETGLOBAL R4 K2        ; R4 := gLotusNpcAvatarType
  17 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
  18 [-]: TEST      R2 1         ; if R2 then PC := 22
  19 [-]: JMP       22           ; PC := 22
- 20 [-]: OP_LOADBOOL R2 0 0       ; R2 := false
+ 20 [-]: LOADBOOL  R2 0 0       ; R2 := false
  21 [-]: RETURN    R2 2         ; return R2
  22 [-]: SELF      R2 R0 K3     ; R3 := R0; R2 := R0[0xee0bc178]
  23 [-]: MOVE      R4 R1        ; R4 := R1
@@ -180,9 +180,9 @@
  25 [-]: NOT       R2 R2        ; R2 := not R2
  26 [-]: TEST      R2 1         ; if R2 then PC := 30
  27 [-]: JMP       30           ; PC := 30
- 28 [-]: OP_LOADBOOL R3 0 0       ; R3 := false
+ 28 [-]: LOADBOOL  R3 0 0       ; R3 := false
  29 [-]: RETURN    R3 2         ; return R3
- 30 [-]: OP_LOADBOOL R3 1 0       ; R3 := true
+ 30 [-]: LOADBOOL  R3 1 0       ; R3 := true
  31 [-]: RETURN    R3 2         ; return R3
  32 [-]: RETURN    R0 1         ; return 
 
@@ -265,13 +265,13 @@
  11 [-]: TEST      R3 1         ; if R3 then PC := 22
  12 [-]: JMP       22           ; PC := 22
  13 [-]: SELF      R3 R2 K3     ; R4 := R2; R3 := R2[0x3b832566]
- 14 [-]: OP_LOADBOOL R5 0 0       ; R5 := false
+ 14 [-]: LOADBOOL  R5 0 0       ; R5 := false
  15 [-]: CALL      R3 3 1       ; R3(R4,R5)
  16 [-]: GETGLOBAL R3 K4        ; R3 := 0xcbd666e1
  17 [-]: MOVE      R4 R1        ; R4 := R1
  18 [-]: CALL      R3 2 1       ; R3(R4)
  19 [-]: SELF      R3 R2 K3     ; R4 := R2; R3 := R2[0x3b832566]
- 20 [-]: OP_LOADBOOL R5 1 0       ; R5 := true
+ 20 [-]: LOADBOOL  R5 1 0       ; R5 := true
  21 [-]: CALL      R3 3 1       ; R3(R4,R5)
  22 [-]: RETURN    R0 1         ; return 
 
@@ -285,7 +285,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  3
 
-  1 [-]: OP_LOADBOOL R2 1 0       ; R2 := true
+  1 [-]: LOADBOOL  R2 1 0       ; R2 := true
   2 [-]: RETURN    R2 2         ; return R2
   3 [-]: RETURN    R0 1         ; return 
 
@@ -299,7 +299,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  3
 
-  1 [-]: OP_LOADBOOL R2 1 0       ; R2 := true
+  1 [-]: LOADBOOL  R2 1 0       ; R2 := true
   2 [-]: RETURN    R2 2         ; return R2
   3 [-]: RETURN    R0 1         ; return 
 
@@ -485,8 +485,8 @@
  17 [-]: GETGLOBAL R2 K8        ; R2 := gLotusFightingGameRulesType
  18 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
  19 [-]: JMP       22           ; PC := 22
- 20 [-]: OP_LOADBOOL R0 0 1       ; R0 := false; PC := 21
- 21 [-]: OP_LOADBOOL R0 1 0       ; R0 := true
+ 20 [-]: LOADBOOL  R0 0 1       ; R0 := false; PC := 21
+ 21 [-]: LOADBOOL  R0 1 0       ; R0 := true
  22 [-]: RETURN    R0 2         ; return R0
  23 [-]: RETURN    R0 1         ; return 
 
@@ -510,8 +510,8 @@
   8 [-]: GETGLOBAL R2 K3        ; R2 := gLotusFightingGameRulesType
   9 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
  10 [-]: JMP       13           ; PC := 13
- 11 [-]: OP_LOADBOOL R0 0 1       ; R0 := false; PC := 12
- 12 [-]: OP_LOADBOOL R0 1 0       ; R0 := true
+ 11 [-]: LOADBOOL  R0 0 1       ; R0 := false; PC := 12
+ 12 [-]: LOADBOOL  R0 1 0       ; R0 := true
  13 [-]: RETURN    R0 2         ; return R0
  14 [-]: RETURN    R0 1         ; return 
 
@@ -545,8 +545,8 @@
  18 [-]: SELF      R0 R0 K5     ; R1 := R0; R0 := R0[0x3c912430]
  19 [-]: CALL      R0 2 2       ; R0 := R0(R1)
  20 [-]: JMP       23           ; PC := 23
- 21 [-]: OP_LOADBOOL R0 0 1       ; R0 := false; PC := 22
- 22 [-]: OP_LOADBOOL R0 1 0       ; R0 := true
+ 21 [-]: LOADBOOL  R0 0 1       ; R0 := false; PC := 22
+ 22 [-]: LOADBOOL  R0 1 0       ; R0 := true
  23 [-]: RETURN    R0 2         ; return R0
  24 [-]: RETURN    R0 1         ; return 
 
@@ -656,8 +656,8 @@
  53 [-]: SETTABLE  R11 K20 R12  ; R11["buffData"] := R12
  54 [-]: SELF      R12 R2 K21   ; R13 := R2; R12 := R2[0x37e45fb5]
  55 [-]: MOVE      R14 R11      ; R14 := R11
- 56 [-]: OP_LOADBOOL R15 1 0      ; R15 := true
- 57 [-]: OP_LOADBOOL R16 0 0      ; R16 := false
+ 56 [-]: LOADBOOL  R15 1 0      ; R15 := true
+ 57 [-]: LOADBOOL  R16 0 0      ; R16 := false
  58 [-]: CALL      R12 5 1      ; R12(R13,R14,R15,R16)
  59 [-]: RETURN    R0 1         ; return 
 

@@ -53,9 +53,9 @@
  25 [-]: SETTABLE  R7 K13 K14   ; R7["mLabelYOffset"] := -0.500000
  26 [-]: SETTABLE  R7 K15 K16   ; R7["mArrowFocused"] := 0.000000
  27 [-]: GETTABLE  R8 R7 K18    ; R8 := R7["SetActive"]
- 28 [-]: SETTABLE  R7 K17 R8    ; R7[0x00000001] := R8
+ 28 [-]: SETTABLE  R7 K17 R8    ; R7["Button_SetActive"] := R8
  29 [-]: CLOSURE   R8 0         ; R8 := closure(Function #1.1)
- 30 [-]: SETTABLE  R7 K18 R8    ; R7[0x00000001] := R8
+ 30 [-]: SETTABLE  R7 K18 R8    ; R7["SetActive"] := R8
  31 [-]: GETTABLE  R8 R7 K20    ; R8 := R7["HookUpCallbacks"]
  32 [-]: SETTABLE  R7 K19 R8    ; R7["Button_HookUpCallbacks"] := R8
  33 [-]: CLOSURE   R8 1         ; R8 := closure(Function #1.2)
@@ -252,7 +252,7 @@
 
   1 [-]: GETUPVAL  R1 U0        ; R1 := U0
   2 [-]: SELF      R1 R1 K0     ; R2 := R1; R1 := R1[0x627d28fc]
-  3 [-]: OP_LOADBOOL R3 1 0       ; R3 := true
+  3 [-]: LOADBOOL  R3 1 0       ; R3 := true
   4 [-]: GETGLOBAL R4 K1        ; R4 := 0x03f57322
   5 [-]: MOVE      R5 R0        ; R5 := R0
   6 [-]: CALL      R4 2 0       ; R4,... := R4(R5)
@@ -271,7 +271,7 @@
 
   1 [-]: GETUPVAL  R1 U0        ; R1 := U0
   2 [-]: SELF      R1 R1 K0     ; R2 := R1; R1 := R1[0x627d28fc]
-  3 [-]: OP_LOADBOOL R3 0 0       ; R3 := false
+  3 [-]: LOADBOOL  R3 0 0       ; R3 := false
   4 [-]: GETGLOBAL R4 K1        ; R4 := 0x03f57322
   5 [-]: MOVE      R5 R0        ; R5 := R0
   6 [-]: CALL      R4 2 0       ; R4,... := R4(R5)
@@ -290,7 +290,7 @@
 
   1 [-]: GETUPVAL  R1 U0        ; R1 := U0
   2 [-]: SELF      R1 R1 K0     ; R2 := R1; R1 := R1[0x8bb75b10]
-  3 [-]: OP_LOADBOOL R3 1 0       ; R3 := true
+  3 [-]: LOADBOOL  R3 1 0       ; R3 := true
   4 [-]: GETGLOBAL R4 K1        ; R4 := 0x03f57322
   5 [-]: MOVE      R5 R0        ; R5 := R0
   6 [-]: CALL      R4 2 0       ; R4,... := R4(R5)
@@ -309,7 +309,7 @@
 
   1 [-]: GETUPVAL  R1 U0        ; R1 := U0
   2 [-]: SELF      R1 R1 K0     ; R2 := R1; R1 := R1[0x8bb75b10]
-  3 [-]: OP_LOADBOOL R3 0 0       ; R3 := false
+  3 [-]: LOADBOOL  R3 0 0       ; R3 := false
   4 [-]: GETGLOBAL R4 K1        ; R4 := 0x03f57322
   5 [-]: MOVE      R5 R0        ; R5 := R0
   6 [-]: CALL      R4 2 0       ; R4,... := R4(R5)
@@ -536,7 +536,7 @@
  38 [-]: GETTABLE  R5 R0 K8     ; R5 := R0["mClipName"]
  39 [-]: LOADK     R6 K16       ; R6 := "Backer"
  40 [-]: LOADK     R7 11        ; R7 := 11.000000
- 41 [-]: OP_LOADBOOL R8 0 0       ; R8 := false
+ 41 [-]: LOADBOOL  R8 0 0       ; R8 := false
  42 [-]: CALL      R3 6 1       ; R3(R4,R5,R6,R7,R8)
  43 [-]: GETTABLE  R3 R0 K6     ; R3 := R0["mMovie"]
  44 [-]: SELF      R3 R3 K7     ; R4 := R3; R3 := R3[0xf64b7262]
@@ -705,13 +705,13 @@
   4 [-]: GETUPVAL  R2 U0        ; R2 := U0
   5 [-]: GETTABLE  R2 R2 K2     ; R82 := R2[0x5d10207d]
   6 [-]: LOADK     R3 9         ; R3 := 9.000000
-  7 [-]: OP_LOADBOOL R4 1 0       ; R4 := true
+  7 [-]: LOADBOOL  R4 1 0       ; R4 := true
   8 [-]: MOVE      R5 R1        ; R5 := R1
   9 [-]: CALL      R2 4 2       ; R2 := R2(R3,R4,R5)
  10 [-]: GETUPVAL  R3 U0        ; R3 := U0
  11 [-]: GETTABLE  R3 R3 K2     ; R82 := R3[0x5d10207d]
  12 [-]: LOADK     R4 10        ; R4 := 10.000000
- 13 [-]: OP_LOADBOOL R5 1 0       ; R5 := true
+ 13 [-]: LOADBOOL  R5 1 0       ; R5 := true
  14 [-]: MOVE      R6 R1        ; R6 := R1
  15 [-]: CALL      R3 4 2       ; R3 := R3(R4,R5,R6)
  16 [-]: GETTABLE  R4 R0 K4     ; R4 := R0["mMovie"]
@@ -724,8 +724,8 @@
  23 [-]: GETTABLE  R10 R0 K9    ; R10 := R0["mArrowFocused"]
  24 [-]: EQ        1 R10 K10    ; if R10 == -1.000000 then PC := 27
  25 [-]: JMP       27           ; PC := 27
- 26 [-]: OP_LOADBOOL R10 0 1      ; R10 := false; PC := 27
- 27 [-]: OP_LOADBOOL R10 1 0      ; R10 := true
+ 26 [-]: LOADBOOL  R10 0 1      ; R10 := false; PC := 27
+ 27 [-]: LOADBOOL  R10 1 0      ; R10 := true
  28 [-]: MOVE      R11 R3       ; R11 := R3
  29 [-]: MOVE      R12 R2       ; R12 := R2
  30 [-]: CALL      R9 4 0       ; R9,... := R9(R10,R11,R12)
@@ -740,8 +740,8 @@
  39 [-]: GETTABLE  R10 R0 K9    ; R10 := R0["mArrowFocused"]
  40 [-]: EQ        1 R10 K12    ; if R10 == 1.000000 then PC := 43
  41 [-]: JMP       43           ; PC := 43
- 42 [-]: OP_LOADBOOL R10 0 1      ; R10 := false; PC := 43
- 43 [-]: OP_LOADBOOL R10 1 0      ; R10 := true
+ 42 [-]: LOADBOOL  R10 0 1      ; R10 := false; PC := 43
+ 43 [-]: LOADBOOL  R10 1 0      ; R10 := true
  44 [-]: MOVE      R11 R3       ; R11 := R3
  45 [-]: MOVE      R12 R2       ; R12 := R2
  46 [-]: CALL      R9 4 0       ; R9,... := R9(R10,R11,R12)

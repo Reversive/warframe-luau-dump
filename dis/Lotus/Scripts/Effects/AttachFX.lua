@@ -196,7 +196,7 @@
  24 [-]: SELF      R3 R2 K5     ; R4 := R2; R3 := R2[0x052a3a7c]
  25 [-]: LOADK     R5 0         ; R5 := 0.000000
  26 [-]: LOADK     R6 0         ; R6 := 0.000000
- 27 [-]: OP_LOADBOOL R7 0 0       ; R7 := false
+ 27 [-]: LOADBOOL  R7 0 0       ; R7 := false
  28 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
  29 [-]: JMP       32           ; PC := 32
  30 [-]: SELF      R3 R2 K6     ; R4 := R2; R3 := R2[0xa2880940]
@@ -245,7 +245,7 @@
  30 [-]: SELF      R7 R6 K5     ; R8 := R6; R7 := R6[0x052a3a7c]
  31 [-]: LOADK     R9 0         ; R9 := 0.000000
  32 [-]: LOADK     R10 0        ; R10 := 0.000000
- 33 [-]: OP_LOADBOOL R11 0 0      ; R11 := false
+ 33 [-]: LOADBOOL  R11 0 0      ; R11 := false
  34 [-]: CALL      R7 5 1       ; R7(R8,R9,R10,R11)
  35 [-]: JMP       38           ; PC := 38
  36 [-]: SELF      R7 R6 K6     ; R8 := R6; R7 := R6[0xa2880940]
@@ -293,7 +293,7 @@
  28 [-]: SELF      R6 R5 K4     ; R7 := R5; R6 := R5[0x052a3a7c]
  29 [-]: LOADK     R8 0         ; R8 := 0.000000
  30 [-]: LOADK     R9 0         ; R9 := 0.000000
- 31 [-]: OP_LOADBOOL R10 0 0      ; R10 := false
+ 31 [-]: LOADBOOL  R10 0 0      ; R10 := false
  32 [-]: CALL      R6 5 1       ; R6(R7,R8,R9,R10)
  33 [-]: JMP       36           ; PC := 36
  34 [-]: SELF      R6 R5 K5     ; R7 := R5; R6 := R5[0xa2880940]
@@ -500,7 +500,7 @@
  18 [-]: GETGLOBAL R5 K5        ; R5 := EMPTY_SYMBOL
  19 [-]: GETGLOBAL R6 K6        ; R6 := ZERO_VECTOR
  20 [-]: GETGLOBAL R7 K7        ; R7 := ZERO_ROTATION
- 21 [-]: OP_LOADBOOL R8 1 0       ; R8 := true
+ 21 [-]: LOADBOOL  R8 1 0       ; R8 := true
  22 [-]: CALL      R2 7 1       ; R2(R3,R4,R5,R6,R7,R8)
  23 [-]: RETURN    R0 1         ; return 
 
@@ -762,8 +762,8 @@
   7 [-]: JMP       13           ; PC := 13
   8 [-]: SELF      R2 R1 K2     ; R3 := R1; R2 := R1[0x2970f52f]
   9 [-]: GETGLOBAL R4 K3        ; R4 := 0x3334221d
- 10 [-]: OP_LOADBOOL R5 0 0       ; R5 := false
- 11 [-]: OP_LOADBOOL R6 0 0       ; R6 := false
+ 10 [-]: LOADBOOL  R5 0 0       ; R5 := false
+ 11 [-]: LOADBOOL  R6 0 0       ; R6 := false
  12 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
  13 [-]: RETURN    R0 1         ; return 
 

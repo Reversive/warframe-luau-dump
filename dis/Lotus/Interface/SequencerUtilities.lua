@@ -113,7 +113,7 @@
  51 [-]: JMP       56           ; PC := 56
  52 [-]: GETTABLE  R9 R0 K17    ; R9 := R0["StepSequencer"]
  53 [-]: SELF      R9 R9 K18    ; R10 := R9; R9 := R9[0x55e9211c]
- 54 [-]: OP_LOADBOOL R11 1 0      ; R11 := true
+ 54 [-]: LOADBOOL  R11 1 0      ; R11 := true
  55 [-]: CALL      R9 3 1       ; R9(R10,R11)
  56 [-]: RETURN    R0 1         ; return 
 
@@ -266,7 +266,7 @@
 137 [-]: JMP       142          ; PC := 142
 138 [-]: GETTABLE  R15 R0 K2    ; R15 := R0["StepSequencer"]
 139 [-]: SELF      R15 R15 K32  ; R16 := R15; R15 := R15[0x55e9211c]
-140 [-]: OP_LOADBOOL R17 0 0      ; R17 := false
+140 [-]: LOADBOOL  R17 0 0      ; R17 := false
 141 [-]: CALL      R15 3 1      ; R15(R16,R17)
 142 [-]: GETGLOBAL R15 K0       ; R15 := 0x7b998233
 143 [-]: GETTABLE  R16 R0 K2    ; R16 := R0["StepSequencer"]
@@ -357,7 +357,7 @@
  19 [-]: DIV       R4 R4 K7     ; R4 := R4 / 2.000000
  20 [-]: CALL      R2 3 1       ; R2(R3,R4)
  21 [-]: SELF      R2 R0 K8     ; R3 := R0; R2 := R0[0x904a104b]
- 22 [-]: OP_LOADBOOL R4 1 0       ; R4 := true
+ 22 [-]: LOADBOOL  R4 1 0       ; R4 := true
  23 [-]: CALL      R2 3 1       ; R2(R3,R4)
  24 [-]: RETURN    R0 1         ; return 
 

@@ -405,11 +405,11 @@
 131 [-]: MOVE      R21 R13      ; R21 := R13
 132 [-]: MOVE      R22 R17      ; R22 := R17
 133 [-]: CALL      R18 5 1      ; R18(R19,R20,R21,R22)
-134 [-]: OP_LOADBOOL R18 0 0      ; R18 := false
+134 [-]: LOADBOOL  R18 0 0      ; R18 := false
 135 [-]: NEWTABLE  R19 3 0      ; R19 := {}
-136 [-]: OP_LOADBOOL R20 0 0      ; R20 := false
-137 [-]: OP_LOADBOOL R21 0 0      ; R21 := false
-138 [-]: OP_LOADBOOL R22 0 0      ; R22 := false
+136 [-]: LOADBOOL  R20 0 0      ; R20 := false
+137 [-]: LOADBOOL  R21 0 0      ; R21 := false
+138 [-]: LOADBOOL  R22 0 0      ; R22 := false
 139 [-]: SETLIST   R19 3 1      ; R19[(1-1)*FPF+i] := R(19+i), 1 <= i <= 3
 140 [-]: LT        0 R5 K24     ; if R5 >= 1.000000 then PC := 279
 141 [-]: JMP       279          ; PC := 279
@@ -423,7 +423,7 @@
 149 [-]: MOVE      R8 R20       ; R8 := R20
 150 [-]: LT        0 K23 R8     ; if 0.000000 >= R8 then PC := 252
 151 [-]: JMP       252          ; PC := 252
-152 [-]: OP_LOADBOOL R20 0 0      ; R20 := false
+152 [-]: LOADBOOL  R20 0 0      ; R20 := false
 153 [-]: LOADK     R21 0        ; R21 := 0.000000
 154 [-]: SUB       R22 R8 K24   ; R22 := R8 - 1.000000
 155 [-]: LOADK     R23 1        ; R23 := 1.000000
@@ -460,7 +460,7 @@
 186 [-]: SUB       R25 R8 K24   ; R25 := R8 - 1.000000
 187 [-]: EQ        0 R24 R25    ; if R24 ~= R25 then PC := 190
 188 [-]: JMP       190          ; PC := 190
-189 [-]: OP_LOADBOOL R20 1 0      ; R20 := true
+189 [-]: LOADBOOL  R20 1 0      ; R20 := true
 190 [-]: LOADK     R25 1        ; R25 := 1.000000
 191 [-]: GETGLOBAL R26 K45      ; R26 := 0xf959de19
 192 [-]: LEN       R26 R26      ; R26 := # R26
@@ -521,7 +521,7 @@
 247 [-]: FORLOOP   R21 157      ; R21 += R23; if R21 <= R22 then begin PC := 157; R24 := R21 end
 248 [-]: TEST      R20 0        ; if not R20 then PC := 270
 249 [-]: JMP       270          ; PC := 270
-250 [-]: OP_LOADBOOL R18 1 0      ; R18 := true
+250 [-]: LOADBOOL  R18 1 0      ; R18 := true
 251 [-]: JMP       270          ; PC := 270
 252 [-]: GETUPVAL  R30 U2       ; R30 := U2
 253 [-]: MOVE      R31 R6       ; R31 := R6
@@ -642,7 +642,7 @@
  29 [-]: GETGLOBAL R8 K8        ; R8 := 0x0469f296
  30 [-]: LOADK     R9 K9        ; R9 := "Dissolve"
  31 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 32 [-]: OP_LOADBOOL R9 0 0       ; R9 := false
+ 32 [-]: LOADBOOL  R9 0 0       ; R9 := false
  33 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
  34 [-]: RETURN    R0 1         ; return 
 
@@ -693,7 +693,7 @@
  35 [-]: GETGLOBAL R9 K10       ; R9 := 0x0469f296
  36 [-]: LOADK     R10 K11      ; R10 := "Dissolve"
  37 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 38 [-]: OP_LOADBOOL R10 0 0      ; R10 := false
+ 38 [-]: LOADBOOL  R10 0 0      ; R10 := false
  39 [-]: CALL      R7 4 1       ; R7(R8,R9,R10)
  40 [-]: RETURN    R0 1         ; return 
 
@@ -763,7 +763,7 @@
  54 [-]: GETGLOBAL R9 K12       ; R9 := 0x0469f296
  55 [-]: LOADK     R10 K13      ; R10 := "Dissolve"
  56 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 57 [-]: OP_LOADBOOL R10 0 0      ; R10 := false
+ 57 [-]: LOADBOOL  R10 0 0      ; R10 := false
  58 [-]: CALL      R7 4 1       ; R7(R8,R9,R10)
  59 [-]: RETURN    R0 1         ; return 
 

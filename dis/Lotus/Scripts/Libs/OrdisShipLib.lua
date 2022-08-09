@@ -87,8 +87,8 @@
 ; Max Stack Size:  5
 
   1 [-]: SELF      R1 R0 K0     ; R2 := R0; R1 := R0[0x768274d6]
-  2 [-]: OP_LOADBOOL R3 1 0       ; R3 := true
-  3 [-]: OP_LOADBOOL R4 1 0       ; R4 := true
+  2 [-]: LOADBOOL  R3 1 0       ; R3 := true
+  3 [-]: LOADBOOL  R4 1 0       ; R4 := true
   4 [-]: CALL      R1 4 1       ; R1(R2,R3,R4)
   5 [-]: RETURN    R0 1         ; return 
 
@@ -103,8 +103,8 @@
 ; Max Stack Size:  5
 
   1 [-]: SELF      R1 R0 K0     ; R2 := R0; R1 := R0[0x768274d6]
-  2 [-]: OP_LOADBOOL R3 0 0       ; R3 := false
-  3 [-]: OP_LOADBOOL R4 1 0       ; R4 := true
+  2 [-]: LOADBOOL  R3 0 0       ; R3 := false
+  3 [-]: LOADBOOL  R4 1 0       ; R4 := true
   4 [-]: CALL      R1 4 1       ; R1(R2,R3,R4)
   5 [-]: RETURN    R0 1         ; return 
 

@@ -511,8 +511,8 @@
 
   1 [-]: LE        1 K0 R0      ; if 0.000000 <= R0 then PC := 4
   2 [-]: JMP       4            ; PC := 4
-  3 [-]: OP_LOADBOOL R2 0 1       ; R2 := false; PC := 4
-  4 [-]: OP_LOADBOOL R2 1 0       ; R2 := true
+  3 [-]: LOADBOOL  R2 0 1       ; R2 := false; PC := 4
+  4 [-]: LOADBOOL  R2 1 0       ; R2 := true
   5 [-]: GETUPVAL  R3 U0        ; R3 := U0
   6 [-]: GETTABLE  R3 R3 K1     ; R82 := R3[0x74a11ec6]
   7 [-]: MOVE      R4 R0        ; R4 := R0

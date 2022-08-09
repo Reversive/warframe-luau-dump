@@ -167,8 +167,8 @@
  12 [-]: GETGLOBAL R0 K1        ; R0 := 0x8a57928a
  13 [-]: SELF      R0 R0 K3     ; R1 := R0; R0 := R0[0x2970f52f]
  14 [-]: GETGLOBAL R2 K2        ; R2 := 0x3334221d
- 15 [-]: OP_LOADBOOL R3 0 0       ; R3 := false
- 16 [-]: OP_LOADBOOL R4 0 0       ; R4 := false
+ 15 [-]: LOADBOOL  R3 0 0       ; R3 := false
+ 16 [-]: LOADBOOL  R4 0 0       ; R4 := false
  17 [-]: CALL      R0 5 1       ; R0(R1,R2,R3,R4)
  18 [-]: RETURN    R0 1         ; return 
 

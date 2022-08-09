@@ -16,7 +16,7 @@
   7 [-]: GETGLOBAL R2 K0        ; R2 := 0x2d0fad09
   8 [-]: LOADK     R3 K3        ; R3 := "Lotus.Interface.UIUtilities"
   9 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 10 [-]: OP_LOADBOOL R3 0 0       ; R3 := false
+ 10 [-]: LOADBOOL  R3 0 0       ; R3 := false
  11 [-]: LOADNIL   R4 R5        ; R4 := R5 := nil
  12 [-]: LOADK     R6 0         ; R6 := 0.000000
  13 [-]: NEWTABLE  R7 0 2       ; R7 := {}
@@ -39,7 +39,7 @@
  30 [-]: GETGLOBAL R13 K6       ; R13 := 0xa421af95
  31 [-]: CALL      R13 1 0      ; R13,... := R13()
  32 [-]: SETLIST   R9 0 1       ; R9[(1-1)*FPF+i] := R(9+i), 1 <= i <= 0
- 33 [-]: OP_LOADBOOL R10 1 0      ; R10 := true
+ 33 [-]: LOADBOOL  R10 1 0      ; R10 := true
  34 [-]: CLOSURE   R11 0        ; R11 := closure(Function #1)
  35 [-]: MOVE      R0 R6        ; R0 := R6
  36 [-]: MOVE      R0 R1        ; R0 := R1
@@ -110,7 +110,7 @@
  19 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  20 [-]: SELF      R4 R4 K7     ; R5 := R4; R4 := R4[0x6d604ba7]
  21 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 22 [-]: OP_LOADBOOL R5 0 0       ; R5 := false
+ 22 [-]: LOADBOOL  R5 0 0       ; R5 := false
  23 [-]: CALL      R2 4 0       ; R2,... := R2(R3,R4,R5)
  24 [-]: CALL      R1 0 2       ; R1 := R1(R2,...)
  25 [-]: GETGLOBAL R2 K4        ; R2 := 0xae91e43b
@@ -216,7 +216,7 @@
 125 [-]: GETTABLE  R20 R16 K29  ; R20 := R16["titleLoc"]
 126 [-]: SELF      R20 R20 K7   ; R21 := R20; R20 := R20[0x6d604ba7]
 127 [-]: CALL      R20 2 2      ; R20 := R20(R21)
-128 [-]: OP_LOADBOOL R21 0 0      ; R21 := false
+128 [-]: LOADBOOL  R21 0 0      ; R21 := false
 129 [-]: CALL      R18 4 0      ; R18,... := R18(R19,R20,R21)
 130 [-]: CALL      R17 0 2      ; R17 := R17(R18,...)
 131 [-]: MOVE      R11 R17      ; R11 := R17
@@ -231,7 +231,7 @@
 140 [-]: GETGLOBAL R18 K4       ; R18 := 0xae91e43b
 141 [-]: SELF      R18 R18 K5   ; R19 := R18; R18 := R18[0x42b04007]
 142 [-]: LOADK     R20 K33      ; R20 := "<REPUTATION>"
-143 [-]: OP_LOADBOOL R21 1 0      ; R21 := true
+143 [-]: LOADBOOL  R21 1 0      ; R21 := true
 144 [-]: CALL      R18 4 2      ; R18 := R18(R19,R20,R21)
 145 [-]: GETUPVAL  R19 U2       ; R19 := U2
 146 [-]: GETTABLE  R19 R19 K34  ; R82 := R19[0x1142c7a8]
@@ -457,7 +457,7 @@
  20 [-]: GETGLOBAL R3 K7        ; R3 := 0xae91e43b
  21 [-]: SELF      R3 R3 K8     ; R4 := R3; R3 := R3[0x42b04007]
  22 [-]: LOADK     R5 K9        ; R5 := "/Lotus/Language/Menu/DailyStandingRemaining"
- 23 [-]: OP_LOADBOOL R6 0 0       ; R6 := false
+ 23 [-]: LOADBOOL  R6 0 0       ; R6 := false
  24 [-]: NEWTABLE  R7 0 1       ; R7 := {}
  25 [-]: SETTABLE  R7 K10 K11   ; R7["value"] := ""
  26 [-]: CALL      R3 5 2       ; R3 := R3(R4,R5,R6,R7)
@@ -721,7 +721,7 @@
 236 [-]: SETTABLE  R4 K45 R5    ; R4[1.000000] := R5
 237 [-]: GETUPVAL  R4 U8        ; R4 := U8
 238 [-]: CALL      R4 1 1       ; R4()
-239 [-]: OP_LOADBOOL R4 1 0       ; R4 := true
+239 [-]: LOADBOOL  R4 1 0       ; R4 := true
 240 [-]: SETUPVAL  R4 U9        ; U82 := 
 241 [-]: RETURN    R0 1         ; return 
 
@@ -796,7 +796,7 @@
  59 [-]: CALL      R10 4 0      ; R10,... := R10(R11,R12,R13)
  60 [-]: CALL      R8 0 1       ; R8(R9,...)
  61 [-]: FORLOOP   R4 45        ; R4 += R6; if R4 <= R5 then begin PC := 45; R7 := R4 end
- 62 [-]: OP_LOADBOOL R8 0 0       ; R8 := false
+ 62 [-]: LOADBOOL  R8 0 0       ; R8 := false
  63 [-]: SETUPVAL  R8 U1        ; U82 := 
  64 [-]: LOADK     R8 1         ; R8 := 1.000000
  65 [-]: GETUPVAL  R9 U2        ; R9 := U2

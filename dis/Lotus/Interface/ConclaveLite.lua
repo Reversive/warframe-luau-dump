@@ -13,7 +13,7 @@
   4 [-]: GETGLOBAL R1 K0        ; R1 := 0x2d0fad09
   5 [-]: LOADK     R2 K2        ; R2 := "Lotus.Interface.LotusUtilities"
   6 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  7 [-]: OP_LOADBOOL R2 0 0       ; R2 := false
+  7 [-]: LOADBOOL  R2 0 0       ; R2 := false
   8 [-]: LOADNIL   R3 R3        ; R3 := nil
   9 [-]: LOADK     R4 0         ; R4 := 0.000000
  10 [-]: CLOSURE   R5 0         ; R5 := closure(Function #1)
@@ -69,7 +69,7 @@
  16 [-]: GETGLOBAL R2 K3        ; R2 := 0xae91e43b
  17 [-]: SELF      R2 R2 K4     ; R3 := R2; R2 := R2[0x42b04007]
  18 [-]: GETTABLE  R4 R0 K5     ; R4 := R0["Name"]
- 19 [-]: OP_LOADBOOL R5 0 0       ; R5 := false
+ 19 [-]: LOADBOOL  R5 0 0       ; R5 := false
  20 [-]: CALL      R2 4 0       ; R2,... := R2(R3,R4,R5)
  21 [-]: CALL      R1 0 2       ; R1 := R1(R2,...)
  22 [-]: GETGLOBAL R2 K3        ; R2 := 0xae91e43b
@@ -283,7 +283,7 @@
  22 [-]: GETGLOBAL R4 K9        ; R4 := 0xae91e43b
  23 [-]: SELF      R4 R4 K10    ; R5 := R4; R4 := R4[0x42b04007]
  24 [-]: LOADK     R6 K11       ; R6 := "/Lotus/Language/Menu/DailyStandingRemaining"
- 25 [-]: OP_LOADBOOL R7 0 0       ; R7 := false
+ 25 [-]: LOADBOOL  R7 0 0       ; R7 := false
  26 [-]: NEWTABLE  R8 0 1       ; R8 := {}
  27 [-]: SETTABLE  R8 K12 K13   ; R8["value"] := ""
  28 [-]: CALL      R4 5 0       ; R4,... := R4(R5,R6,R7,R8)
@@ -309,7 +309,7 @@
  48 [-]: GETGLOBAL R6 K9        ; R6 := 0xae91e43b
  49 [-]: SELF      R6 R6 K10    ; R7 := R6; R6 := R6[0x42b04007]
  50 [-]: LOADK     R8 K18       ; R8 := "/Lotus/Language/Menu/PVPLeaverPenalty"
- 51 [-]: OP_LOADBOOL R9 0 0       ; R9 := false
+ 51 [-]: LOADBOOL  R9 0 0       ; R9 := false
  52 [-]: CALL      R6 4 0       ; R6,... := R6(R7,R8,R9)
  53 [-]: CALL      R5 0 2       ; R5 := R5(R6,...)
  54 [-]: MOVE      R6 R1        ; R6 := R1
@@ -466,7 +466,7 @@
 127 [-]: CALL      R8 4 1       ; R8(R9,R10,R11)
 128 [-]: GETUPVAL  R8 U4        ; R8 := U4
 129 [-]: CALL      R8 1 1       ; R8()
-130 [-]: OP_LOADBOOL R8 1 0       ; R8 := true
+130 [-]: LOADBOOL  R8 1 0       ; R8 := true
 131 [-]: SETUPVAL  R8 U5        ; U82 := 
 132 [-]: RETURN    R0 1         ; return 
 

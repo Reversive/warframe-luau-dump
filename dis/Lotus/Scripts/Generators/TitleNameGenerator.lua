@@ -1317,7 +1317,7 @@
 1308 [-]: MOVE      R0 R2        ; R0 := R2
 1309 [-]: MOVE      R0 R3        ; R0 := R3
 1310 [-]: MOVE      R0 R5        ; R0 := R5
-1311 [-]: OP_LOADBOOL R11 0 0      ; R11 := false
+1311 [-]: LOADBOOL  R11 0 0      ; R11 := false
 1312 [-]: TEST      R11 0        ; if not R11 then PC := 1316
 1313 [-]: JMP       1316         ; PC := 1316
 1314 [-]: MOVE      R12 R10      ; R12 := R10
@@ -1700,7 +1700,7 @@
 
   1 [-]: GETUPVAL  R0 U0        ; R0 := U0
   2 [-]: GETUPVAL  R1 U1        ; R1 := U1
-  3 [-]: OP_LOADBOOL R2 1 0       ; R2 := true
+  3 [-]: LOADBOOL  R2 1 0       ; R2 := true
   4 [-]: LOADK     R3 K0        ; R3 := "23C9F5"
   5 [-]: LOADK     R4 6         ; R4 := 6.000000
   6 [-]: LOADK     R5 K1        ; R5 := "006493"
@@ -1805,7 +1805,7 @@
 
   1 [-]: GETUPVAL  R0 U0        ; R0 := U0
   2 [-]: GETUPVAL  R1 U1        ; R1 := U1
-  3 [-]: OP_LOADBOOL R2 1 0       ; R2 := true
+  3 [-]: LOADBOOL  R2 1 0       ; R2 := true
   4 [-]: TAILCALL  R0 3 0       ; R0,... := R0(R1,R2)
   5 [-]: RETURN    R0 0         ; return R0,...
   6 [-]: RETURN    R0 1         ; return 

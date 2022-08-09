@@ -69,7 +69,7 @@
   8 [-]: JMP       84           ; PC := 84
   9 [-]: GETGLOBAL R3 K3        ; R3 := 0x25d99d89
  10 [-]: SELF      R3 R3 K4     ; R4 := R3; R3 := R3[0xcd57f819]
- 11 [-]: OP_LOADBOOL R5 1 0       ; R5 := true
+ 11 [-]: LOADBOOL  R5 1 0       ; R5 := true
  12 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
  13 [-]: GETTABLE  R1 R3 K5     ; R1 := R3["mShipInterior"]
  14 [-]: GETTABLE  R3 R2 K6     ; R3 := R2["mColors"]
@@ -154,7 +154,7 @@
  93 [-]: GETTABLE  R3 R2 K6     ; R3 := R2["mColors"]
  94 [-]: SELF      R3 R3 K9     ; R4 := R3; R3 := R3[0xfc5d7158]
  95 [-]: LOADK     R5 6         ; R5 := 6.000000
- 96 [-]: OP_LOADBOOL R6 1 0       ; R6 := true
+ 96 [-]: LOADBOOL  R6 1 0       ; R6 := true
  97 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
  98 [-]: LOADK     R3 1         ; R3 := 1.000000
  99 [-]: GETUPVAL  R4 U0        ; R4 := U0

@@ -15,15 +15,15 @@
   6 [-]: GETGLOBAL R0 K4        ; R0 := 0xb009bbc6
   7 [-]: LOADK     R1 K5        ; R1 := "/Lotus/Interface/Graphics/Themes/TitleDividerBody.png"
   8 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  9 [-]: SETGLOBALHASH R0 K3        ; UnderlineFillTexture := R0
+  9 [-]: SETGLOBAL R0 K3        ; UnderlineFillTexture := R0
  10 [-]: GETGLOBAL R0 K4        ; R0 := 0xb009bbc6
  11 [-]: LOADK     R1 K7        ; R1 := "/Lotus/Interface/Graphics/Themes/TitleDividerStart.png"
  12 [-]: CALL      R0 2 2       ; R0 := R0(R1)
- 13 [-]: SETGLOBALHASH R0 K6        ; UnderlineStartTexture := R0
+ 13 [-]: SETGLOBAL R0 K6        ; UnderlineStartTexture := R0
  14 [-]: GETGLOBAL R0 K4        ; R0 := 0xb009bbc6
  15 [-]: LOADK     R1 K9        ; R1 := "/Lotus/Interface/Graphics/Themes/TitleDividerEnd.png"
  16 [-]: CALL      R0 2 2       ; R0 := R0(R1)
- 17 [-]: SETGLOBALHASH R0 K8        ; UnderlineCapTexture := R0
+ 17 [-]: SETGLOBAL R0 K8        ; UnderlineCapTexture := R0
  18 [-]: GETGLOBAL R0 K10       ; R0 := 0x2d0fad09
  19 [-]: LOADK     R1 K11       ; R1 := "Lotus.Interface.UIStyleUtilities"
  20 [-]: CALL      R0 2 2       ; R0 := R0(R1)
@@ -211,8 +211,8 @@
  12 [-]: GETTABLE  R3 R0 K5     ; R3 := R0["mSubTitle"]
  13 [-]: EQ        0 R3 K4      ; if R3 ~= "" then PC := 16
  14 [-]: JMP       16           ; PC := 16
- 15 [-]: OP_LOADBOOL R3 0 1       ; R3 := false; PC := 16
- 16 [-]: OP_LOADBOOL R3 1 0       ; R3 := true
+ 15 [-]: LOADBOOL  R3 0 1       ; R3 := false; PC := 16
+ 16 [-]: LOADBOOL  R3 1 0       ; R3 := true
  17 [-]: GETTABLE  R4 R0 K6     ; R4 := R0["mVisible"]
  18 [-]: EQ        1 R4 R3      ; if R4 == R3 then PC := 48
  19 [-]: JMP       48           ; PC := 48
@@ -251,13 +251,13 @@
  52 [-]: GETUPVAL  R5 U0        ; R5 := U0
  53 [-]: GETTABLE  R5 R5 K11    ; R82 := R5[0x5d10207d]
  54 [-]: LOADK     R6 9         ; R6 := 9.000000
- 55 [-]: OP_LOADBOOL R7 1 0       ; R7 := true
+ 55 [-]: LOADBOOL  R7 1 0       ; R7 := true
  56 [-]: MOVE      R8 R4        ; R8 := R4
  57 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
  58 [-]: GETUPVAL  R6 U0        ; R6 := U0
  59 [-]: GETTABLE  R6 R6 K11    ; R82 := R6[0x5d10207d]
  60 [-]: LOADK     R7 10        ; R7 := 10.000000
- 61 [-]: OP_LOADBOOL R8 1 0       ; R8 := true
+ 61 [-]: LOADBOOL  R8 1 0       ; R8 := true
  62 [-]: MOVE      R9 R4        ; R9 := R4
  63 [-]: CALL      R6 4 2       ; R6 := R6(R7,R8,R9)
  64 [-]: LOADK     R7 K13       ; R7 := "/"
@@ -369,13 +369,13 @@
   4 [-]: GETUPVAL  R4 U0        ; R4 := U0
   5 [-]: GETTABLE  R4 R4 K3     ; R82 := R4[0x5d10207d]
   6 [-]: LOADK     R5 2         ; R5 := 2.000000
-  7 [-]: OP_LOADBOOL R6 1 0       ; R6 := true
+  7 [-]: LOADBOOL  R6 1 0       ; R6 := true
   8 [-]: MOVE      R7 R3        ; R7 := R3
   9 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
  10 [-]: GETUPVAL  R5 U0        ; R5 := U0
  11 [-]: GETTABLE  R5 R5 K3     ; R82 := R5[0x5d10207d]
  12 [-]: LOADK     R6 9         ; R6 := 9.000000
- 13 [-]: OP_LOADBOOL R7 1 0       ; R7 := true
+ 13 [-]: LOADBOOL  R7 1 0       ; R7 := true
  14 [-]: MOVE      R8 R3        ; R8 := R3
  15 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
  16 [-]: SELF      R6 R1 K5     ; R7 := R1; R6 := R1[0xf64b7262]
@@ -458,8 +458,8 @@
  10 [-]: GETTABLE  R3 R0 K3     ; R3 := R0["mSubTitle"]
  11 [-]: EQ        0 R3 R2      ; if R3 ~= R2 then PC := 14
  12 [-]: JMP       14           ; PC := 14
- 13 [-]: OP_LOADBOOL R3 0 1       ; R3 := false; PC := 14
- 14 [-]: OP_LOADBOOL R3 1 0       ; R3 := true
+ 13 [-]: LOADBOOL  R3 0 1       ; R3 := false; PC := 14
+ 14 [-]: LOADBOOL  R3 1 0       ; R3 := true
  15 [-]: SETTABLE  R0 K1 R3     ; R0["mTitleChanged"] := R3
  16 [-]: SETTABLE  R0 K2 R1     ; R0["mTitle"] := R1
  17 [-]: SETTABLE  R0 K3 R2     ; R0["mSubTitle"] := R2
@@ -483,8 +483,8 @@
   4 [-]: GETTABLE  R1 R0 K2     ; R1 := R0["mSubTitle"]
   5 [-]: EQ        0 R1 K1      ; if R1 ~= "" then PC := 8
   6 [-]: JMP       8            ; PC := 8
-  7 [-]: OP_LOADBOOL R1 0 1       ; R1 := false; PC := 8
-  8 [-]: OP_LOADBOOL R1 1 0       ; R1 := true
+  7 [-]: LOADBOOL  R1 0 1       ; R1 := false; PC := 8
+  8 [-]: LOADBOOL  R1 1 0       ; R1 := true
   9 [-]: RETURN    R1 2         ; return R1
  10 [-]: RETURN    R0 1         ; return 
 

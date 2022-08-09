@@ -34,7 +34,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  16
 
-  1 [-]: OP_LOADBOOL R5 0 0       ; R5 := false
+  1 [-]: LOADBOOL  R5 0 0       ; R5 := false
   2 [-]: GETGLOBAL R6 K0        ; R6 := 0x7b998233
   3 [-]: GETGLOBAL R7 K1        ; R7 := 0x76ea806b
   4 [-]: CALL      R6 2 2       ; R6 := R6(R7)
@@ -55,8 +55,8 @@
  19 [-]: CALL      R7 2 2       ; R7 := R7(R8)
  20 [-]: MOVE      R5 R7        ; R5 := R7
  21 [-]: JMP       24           ; PC := 24
- 22 [-]: OP_LOADBOOL R5 0 1       ; R5 := false; PC := 23
- 23 [-]: OP_LOADBOOL R5 1 0       ; R5 := true
+ 22 [-]: LOADBOOL  R5 0 1       ; R5 := false; PC := 23
+ 23 [-]: LOADBOOL  R5 1 0       ; R5 := true
  24 [-]: GETGLOBAL R7 K5        ; R7 := 0x2d0fad09
  25 [-]: LOADK     R8 K6        ; R8 := "EE.Interface.Components.List"
  26 [-]: CALL      R7 2 2       ; R7 := R7(R8)
@@ -78,7 +78,7 @@
  42 [-]: GETTABLE  R10 R8 K13   ; R10 := R8["mRows"]
  43 [-]: MUL       R9 R9 R10    ; R9 := R9 * R10
  44 [-]: SETTABLE  R8 K17 R9    ; R8["mVisibleElements"] := R9
- 45 [-]: SETTABLE  R8 K18 R2    ; R8["mPaginationClip"] := R2
+ 45 [-]: SETTABLE  R8 K18 R2    ; R8[0xeb0d56b0] := R2
  46 [-]: SETTABLE  R8 K19 K20   ; R8["mSelectPaginationCallback"] := "SelectPage"
  47 [-]: SETTABLE  R8 K21 K22   ; R8["mRollOverPaginationCallback"] := "RollOverPage"
  48 [-]: SETTABLE  R8 K23 K24   ; R8["mRollOutPaginationCallback"] := "RollOutPage"
@@ -621,8 +621,8 @@
   8 [-]: GETTABLE  R2 R0 K4     ; R2 := R0["mVisibleElements"]
   9 [-]: LE        1 R2 K5      ; if R2 <= 0.000000 then PC := 12
  10 [-]: JMP       12           ; PC := 12
- 11 [-]: OP_LOADBOOL R2 0 1       ; R2 := false; PC := 12
- 12 [-]: OP_LOADBOOL R2 1 0       ; R2 := true
+ 11 [-]: LOADBOOL  R2 0 1       ; R2 := false; PC := 12
+ 12 [-]: LOADBOOL  R2 1 0       ; R2 := true
  13 [-]: LOADK     R3 0         ; R3 := 0.000000
  14 [-]: GETGLOBAL R4 K6        ; R4 := 0x5bced4c4
  15 [-]: GETTABLE  R4 R4 K7     ; R82 := R4[0x99675e23]
@@ -638,8 +638,8 @@
  25 [-]: LOADK     R5 11        ; R5 := 11.000000
  26 [-]: LT        1 K11 R1     ; if 1.000000 < R1 then PC := 29
  27 [-]: JMP       29           ; PC := 29
- 28 [-]: OP_LOADBOOL R6 0 1       ; R6 := false; PC := 29
- 29 [-]: OP_LOADBOOL R6 1 0       ; R6 := true
+ 28 [-]: LOADBOOL  R6 0 1       ; R6 := false; PC := 29
+ 29 [-]: LOADBOOL  R6 1 0       ; R6 := true
  30 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
  31 [-]: LT        0 R1 K11     ; if R1 >= 1.000000 then PC := 34
  32 [-]: JMP       34           ; PC := 34
@@ -701,8 +701,8 @@
  88 [-]: GETTABLE  R7 R0 K24    ; R7 := R0["mPaginationLimit"]
  89 [-]: LE        1 R7 R4      ; if R7 <= R4 then PC := 92
  90 [-]: JMP       92           ; PC := 92
- 91 [-]: OP_LOADBOOL R7 0 1       ; R7 := false; PC := 92
- 92 [-]: OP_LOADBOOL R7 1 0       ; R7 := true
+ 91 [-]: LOADBOOL  R7 0 1       ; R7 := false; PC := 92
+ 92 [-]: LOADBOOL  R7 1 0       ; R7 := true
  93 [-]: GETTABLE  R8 R0 K2     ; R8 := R0["UTIL"]
  94 [-]: GETTABLE  R8 R8 K3     ; R82 := R8[0x06d055f9]
  95 [-]: MOVE      R9 R7        ; R9 := R7
@@ -757,7 +757,7 @@
 144 [-]: GETTABLE  R17 R13 R17  ; R17 := R13[R17]
 145 [-]: MOVE      R18 R12      ; R18 := R12
 146 [-]: CALL      R14 5 1      ; R14(R15,R16,R17,R18)
-147 [-]: OP_LOADBOOL R14 1 0      ; R14 := true
+147 [-]: LOADBOOL  R14 1 0      ; R14 := true
 148 [-]: GETTABLE  R15 R0 K24   ; R15 := R0["mPaginationLimit"]
 149 [-]: LT        0 K5 R15     ; if 0.000000 >= R15 then PC := 166
 150 [-]: JMP       166          ; PC := 166
@@ -774,8 +774,8 @@
 161 [-]: JMP       164          ; PC := 164
 162 [-]: LT        1 R12 R16    ; if R12 < R16 then PC := 165
 163 [-]: JMP       165          ; PC := 165
-164 [-]: OP_LOADBOOL R14 0 1      ; R14 := false; PC := 165
-165 [-]: OP_LOADBOOL R14 1 0      ; R14 := true
+164 [-]: LOADBOOL  R14 0 1      ; R14 := false; PC := 165
+165 [-]: LOADBOOL  R14 1 0      ; R14 := true
 166 [-]: TEST      R14 0        ; if not R14 then PC := 169
 167 [-]: JMP       169          ; PC := 169
 168 [-]: ADD       R3 R3 K37    ; R3 := R3 + 20.000000
@@ -807,8 +807,8 @@
 194 [-]: GETTABLE  R21 R21 K3   ; R82 := R21[0x06d055f9]
 195 [-]: EQ        1 R4 R12     ; if R4 == R12 then PC := 198
 196 [-]: JMP       198          ; PC := 198
-197 [-]: OP_LOADBOOL R22 0 1      ; R22 := false; PC := 198
-198 [-]: OP_LOADBOOL R22 1 0      ; R22 := true
+197 [-]: LOADBOOL  R22 0 1      ; R22 := false; PC := 198
+198 [-]: LOADBOOL  R22 1 0      ; R22 := true
 199 [-]: LOADK     R23 90       ; R23 := 90.000000
 200 [-]: LOADK     R24 100      ; R24 := 100.000000
 201 [-]: CALL      R21 4 0      ; R21,... := R21(R22,R23,R24)
@@ -820,8 +820,8 @@
 207 [-]: LOADK     R21 59       ; R21 := 59.000000
 208 [-]: EQ        0 R4 R12     ; if R4 ~= R12 then PC := 211
 209 [-]: JMP       211          ; PC := 211
-210 [-]: OP_LOADBOOL R22 0 1      ; R22 := false; PC := 211
-211 [-]: OP_LOADBOOL R22 1 0      ; R22 := true
+210 [-]: LOADBOOL  R22 0 1      ; R22 := false; PC := 211
+211 [-]: LOADBOOL  R22 1 0      ; R22 := true
 212 [-]: CALL      R17 6 1      ; R17(R18,R19,R20,R21,R22)
 213 [-]: GETTABLE  R17 R0 K9    ; R17 := R0["mMovie"]
 214 [-]: SELF      R17 R17 K42  ; R18 := R17; R17 := R17[0x0c33ebb2]
@@ -960,8 +960,8 @@
 347 [-]: SETTABLE  R0 K65 R1    ; R0["mHowManyPages"] := R1
 348 [-]: LT        1 K11 R4     ; if 1.000000 < R4 then PC := 351
 349 [-]: JMP       351          ; PC := 351
-350 [-]: OP_LOADBOOL R24 0 1      ; R24 := false; PC := 351
-351 [-]: OP_LOADBOOL R24 1 0      ; R24 := true
+350 [-]: LOADBOOL  R24 0 1      ; R24 := false; PC := 351
+351 [-]: LOADBOOL  R24 1 0      ; R24 := true
 352 [-]: GETTABLE  R25 R0 K9    ; R25 := R0["mMovie"]
 353 [-]: SELF      R25 R25 K25  ; R26 := R25; R25 := R25[0xc0a3774b]
 354 [-]: GETTABLE  R27 R0 K1    ; R27 := R0["mPaginationClip"]
@@ -989,8 +989,8 @@
 376 [-]: GETTABLE  R25 R0 K65   ; R25 := R0["mHowManyPages"]
 377 [-]: LT        1 R4 R25     ; if R4 < R25 then PC := 380
 378 [-]: JMP       380          ; PC := 380
-379 [-]: OP_LOADBOOL R25 0 1      ; R25 := false; PC := 380
-380 [-]: OP_LOADBOOL R25 1 0      ; R25 := true
+379 [-]: LOADBOOL  R25 0 1      ; R25 := false; PC := 380
+380 [-]: LOADBOOL  R25 1 0      ; R25 := true
 381 [-]: GETTABLE  R26 R0 K9    ; R26 := R0["mMovie"]
 382 [-]: SELF      R26 R26 K25  ; R27 := R26; R26 := R26[0xc0a3774b]
 383 [-]: GETTABLE  R28 R0 K1    ; R28 := R0["mPaginationClip"]
@@ -1025,8 +1025,8 @@
 412 [-]: GETTABLE  R26 R0 K65   ; R26 := R0["mHowManyPages"]
 413 [-]: LT        1 R4 R26     ; if R4 < R26 then PC := 416
 414 [-]: JMP       416          ; PC := 416
-415 [-]: OP_LOADBOOL R7 0 1       ; R7 := false; PC := 416
-416 [-]: OP_LOADBOOL R7 1 0       ; R7 := true
+415 [-]: LOADBOOL  R7 0 1       ; R7 := false; PC := 416
+416 [-]: LOADBOOL  R7 1 0       ; R7 := true
 417 [-]: GETTABLE  R26 R0 K2    ; R26 := R0["UTIL"]
 418 [-]: GETTABLE  R26 R26 K3   ; R82 := R26[0x06d055f9]
 419 [-]: MOVE      R27 R7       ; R27 := R7
@@ -1091,7 +1091,7 @@
 ; Max Stack Size:  8
 
   1 [-]: GETGLOBAL R3 K0        ; R3 := 0x60cce7b4
-  2 [-]: OP_LOADBOOL R4 0 0       ; R4 := false
+  2 [-]: LOADBOOL  R4 0 0       ; R4 := false
   3 [-]: CALL      R3 2 1       ; R3(R4)
   4 [-]: GETTABLE  R3 R0 K1     ; R3 := R0["PREVIOUS_PAGE_ID"]
   5 [-]: EQ        0 R1 R3      ; if R1 ~= R3 then PC := 11
@@ -1134,7 +1134,7 @@
  42 [-]: JMP       53           ; PC := 53
  43 [-]: SELF      R4 R0 K14    ; R5 := R0; R4 := R0[0x4c4f8717]
  44 [-]: MOVE      R6 R3        ; R6 := R3
- 45 [-]: OP_LOADBOOL R7 1 0       ; R7 := true
+ 45 [-]: LOADBOOL  R7 1 0       ; R7 := true
  46 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
  47 [-]: SELF      R4 R0 K15    ; R5 := R0; R4 := R0[0xa2bc3bdf]
  48 [-]: CLOSURE   R6 0         ; R6 := closure(Function #1.12.1)
@@ -1149,7 +1149,7 @@
  57 [-]: CALL      R4 3 1       ; R4(R5,R6)
  58 [-]: SELF      R4 R0 K14    ; R5 := R0; R4 := R0[0x4c4f8717]
  59 [-]: MOVE      R6 R3        ; R6 := R3
- 60 [-]: OP_LOADBOOL R7 1 0       ; R7 := true
+ 60 [-]: LOADBOOL  R7 1 0       ; R7 := true
  61 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
  62 [-]: RETURN    R0 1         ; return 
 
@@ -1348,8 +1348,8 @@
  41 [-]: CALL      R16 2 2      ; R16 := R16(R17)
  42 [-]: EQ        1 R6 R16     ; if R6 == R16 then PC := 45
  43 [-]: JMP       45           ; PC := 45
- 44 [-]: OP_LOADBOOL R16 0 1      ; R16 := false; PC := 45
- 45 [-]: OP_LOADBOOL R16 1 0      ; R16 := true
+ 44 [-]: LOADBOOL  R16 0 1      ; R16 := false; PC := 45
+ 45 [-]: LOADBOOL  R16 1 0      ; R16 := true
  46 [-]: MOVE      R17 R1       ; R17 := R1
  47 [-]: LOADNIL   R18 R18      ; R18 := nil
  48 [-]: CALL      R15 4 0      ; R15,... := R15(R16,R17,R18)
@@ -1454,7 +1454,7 @@
   7 [-]: GETUPVAL  R8 U0        ; R8 := U0
   8 [-]: GETTABLE  R8 R8 K4     ; R82 := R8[0x5d10207d]
   9 [-]: LOADK     R9 2         ; R9 := 2.000000
- 10 [-]: OP_LOADBOOL R10 1 0      ; R10 := true
+ 10 [-]: LOADBOOL  R10 1 0      ; R10 := true
  11 [-]: GETTABLE  R11 R0 K6    ; R11 := R0["ApplyThemes"]
  12 [-]: CALL      R8 4 2       ; R8 := R8(R9,R10,R11)
  13 [-]: GETTABLE  R9 R1 K7     ; R9 := R1["BackgroundColor"]
@@ -1475,7 +1475,7 @@
  28 [-]: GETUPVAL  R11 U0       ; R11 := U0
  29 [-]: GETTABLE  R11 R11 K4   ; R82 := R11[0x5d10207d]
  30 [-]: LOADK     R12 3        ; R12 := 3.000000
- 31 [-]: OP_LOADBOOL R13 1 0      ; R13 := true
+ 31 [-]: LOADBOOL  R13 1 0      ; R13 := true
  32 [-]: GETTABLE  R14 R0 K6    ; R14 := R0["ApplyThemes"]
  33 [-]: CALL      R11 4 0      ; R11,... := R11(R12,R13,R14)
  34 [-]: CALL      R10 0 2      ; R10 := R10(R11,...)
@@ -1496,7 +1496,7 @@
  49 [-]: GETUPVAL  R12 U0       ; R12 := U0
  50 [-]: GETTABLE  R12 R12 K4   ; R82 := R12[0x5d10207d]
  51 [-]: MOVE      R13 R10      ; R13 := R10
- 52 [-]: OP_LOADBOOL R14 1 0      ; R14 := true
+ 52 [-]: LOADBOOL  R14 1 0      ; R14 := true
  53 [-]: GETTABLE  R15 R0 K6    ; R15 := R0["ApplyThemes"]
  54 [-]: CALL      R12 4 0      ; R12,... := R12(R13,R14,R15)
  55 [-]: CALL      R11 0 2      ; R11 := R11(R12,...)
@@ -1596,7 +1596,7 @@
 149 [-]: MOVE      R21 R5       ; R21 := R5
 150 [-]: MOVE      R22 R19      ; R22 := R19
 151 [-]: MOVE      R23 R18      ; R23 := R18
-152 [-]: OP_LOADBOOL R24 1 0      ; R24 := true
+152 [-]: LOADBOOL  R24 1 0      ; R24 := true
 153 [-]: CALL      R20 5 1      ; R20(R21,R22,R23,R24)
 154 [-]: TFORLOOP  R14 2        ; R17,R18 :=  R14(R15,R16); if R17 ~= nil then begin PC = 135; R16 := R17 end
 155 [-]: JMP       135          ; PC := 135
@@ -1625,13 +1625,13 @@
 178 [-]: GETUPVAL  R21 U0       ; R21 := U0
 179 [-]: GETTABLE  R21 R21 K4   ; R82 := R21[0x5d10207d]
 180 [-]: LOADK     R22 6        ; R22 := 6.000000
-181 [-]: OP_LOADBOOL R23 1 0      ; R23 := true
+181 [-]: LOADBOOL  R23 1 0      ; R23 := true
 182 [-]: GETTABLE  R24 R0 K6    ; R24 := R0["ApplyThemes"]
 183 [-]: CALL      R21 4 2      ; R21 := R21(R22,R23,R24)
 184 [-]: GETUPVAL  R22 U0       ; R22 := U0
 185 [-]: GETTABLE  R22 R22 K4   ; R82 := R22[0x5d10207d]
 186 [-]: LOADK     R23 9        ; R23 := 9.000000
-187 [-]: OP_LOADBOOL R24 1 0      ; R24 := true
+187 [-]: LOADBOOL  R24 1 0      ; R24 := true
 188 [-]: GETTABLE  R25 R0 K6    ; R25 := R0["ApplyThemes"]
 189 [-]: CALL      R22 4 2      ; R22 := R22(R23,R24,R25)
 190 [-]: SELF      R23 R5 K39   ; R24 := R5; R23 := R5[0xf64b7262]
@@ -1643,7 +1643,7 @@
 196 [-]: GETUPVAL  R23 U0       ; R23 := U0
 197 [-]: GETTABLE  R23 R23 K4   ; R82 := R23[0x5d10207d]
 198 [-]: LOADK     R24 10       ; R24 := 10.000000
-199 [-]: OP_LOADBOOL R25 1 0      ; R25 := true
+199 [-]: LOADBOOL  R25 1 0      ; R25 := true
 200 [-]: GETTABLE  R26 R0 K6    ; R26 := R0["ApplyThemes"]
 201 [-]: CALL      R23 4 2      ; R23 := R23(R24,R25,R26)
 202 [-]: SELF      R24 R5 K39   ; R25 := R5; R24 := R5[0xf64b7262]
@@ -1659,7 +1659,7 @@
 212 [-]: GETUPVAL  R25 U0       ; R25 := U0
 213 [-]: GETTABLE  R25 R25 K4   ; R82 := R25[0x5d10207d]
 214 [-]: GETTABLE  R26 R1 K42   ; R26 := R1["LockedIconColor"]
-215 [-]: OP_LOADBOOL R27 1 0      ; R27 := true
+215 [-]: LOADBOOL  R27 1 0      ; R27 := true
 216 [-]: GETTABLE  R28 R0 K6    ; R28 := R0["ApplyThemes"]
 217 [-]: CALL      R25 4 2      ; R25 := R25(R26,R27,R28)
 218 [-]: MOVE      R24 R25      ; R24 := R25
@@ -1765,7 +1765,7 @@
 318 [-]: GETUPVAL  R26 U0       ; R26 := U0
 319 [-]: GETTABLE  R26 R26 K4   ; R82 := R26[0x5d10207d]
 320 [-]: GETTABLE  R27 R1 K53   ; R27 := R1["IconColor"]
-321 [-]: OP_LOADBOOL R28 1 0      ; R28 := true
+321 [-]: LOADBOOL  R28 1 0      ; R28 := true
 322 [-]: GETTABLE  R29 R0 K6    ; R29 := R0["ApplyThemes"]
 323 [-]: CALL      R26 4 2      ; R26 := R26(R27,R28,R29)
 324 [-]: MOVE      R25 R26      ; R25 := R26
@@ -1789,7 +1789,7 @@
 342 [-]: GETTABLE  R31 R1 K58   ; R31 := R1["ExtraShaderVars"]
 343 [-]: GETTABLE  R31 R31 R29  ; R31 := R31[R29]
 344 [-]: GETTABLE  R31 R31 K59  ; R31 := R31["v"]
-345 [-]: OP_LOADBOOL R32 0 0      ; R32 := false
+345 [-]: LOADBOOL  R32 0 0      ; R32 := false
 346 [-]: GETTABLE  R33 R0 K6    ; R33 := R0["ApplyThemes"]
 347 [-]: CALL      R30 4 2      ; R30 := R30(R31,R32,R33)
 348 [-]: SELF      R31 R5 K19   ; R32 := R5; R31 := R5[0x91e13703]
@@ -1852,7 +1852,7 @@
 
   1 [-]: SELF      R2 R0 K0     ; R3 := R0; R2 := R0[0xb12a53a7]
   2 [-]: MOVE      R4 R1        ; R4 := R1
-  3 [-]: OP_LOADBOOL R5 1 0       ; R5 := true
+  3 [-]: LOADBOOL  R5 1 0       ; R5 := true
   4 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
   5 [-]: RETURN    R0 1         ; return 
 
@@ -1958,8 +1958,8 @@
  90 [-]: GETTABLE  R11 R0 K15   ; R11 := R0["UP"]
  91 [-]: EQ        1 R1 R11     ; if R1 == R11 then PC := 94
  92 [-]: JMP       94           ; PC := 94
- 93 [-]: OP_LOADBOOL R11 0 1      ; R11 := false; PC := 94
- 94 [-]: OP_LOADBOOL R11 1 0      ; R11 := true
+ 93 [-]: LOADBOOL  R11 0 1      ; R11 := false; PC := 94
+ 94 [-]: LOADBOOL  R11 1 0      ; R11 := true
  95 [-]: GETTABLE  R12 R0 K22   ; R12 := R0["UTIL"]
  96 [-]: GETTABLE  R12 R12 K24  ; R12 := R12["DECREMENT"]
  97 [-]: GETTABLE  R13 R0 K22   ; R13 := R0["UTIL"]
@@ -2026,8 +2026,8 @@
 158 [-]: GETTABLE  R15 R0 K32   ; R15 := R0["LEFT"]
 159 [-]: EQ        1 R1 R15     ; if R1 == R15 then PC := 162
 160 [-]: JMP       162          ; PC := 162
-161 [-]: OP_LOADBOOL R15 0 1      ; R15 := false; PC := 162
-162 [-]: OP_LOADBOOL R15 1 0      ; R15 := true
+161 [-]: LOADBOOL  R15 0 1      ; R15 := false; PC := 162
+162 [-]: LOADBOOL  R15 1 0      ; R15 := true
 163 [-]: GETTABLE  R16 R0 K22   ; R16 := R0["UTIL"]
 164 [-]: GETTABLE  R16 R16 K24  ; R16 := R16["DECREMENT"]
 165 [-]: GETTABLE  R17 R0 K22   ; R17 := R0["UTIL"]
@@ -2059,15 +2059,15 @@
 191 [-]: MOVE      R17 R18      ; R17 := R18
 192 [-]: LT        1 R17 R7     ; if R17 < R7 then PC := 195
 193 [-]: JMP       195          ; PC := 195
-194 [-]: OP_LOADBOOL R18 0 1      ; R18 := false; PC := 195
-195 [-]: OP_LOADBOOL R18 1 0      ; R18 := true
+194 [-]: LOADBOOL  R18 0 1      ; R18 := false; PC := 195
+195 [-]: LOADBOOL  R18 1 0      ; R18 := true
 196 [-]: GETTABLE  R19 R0 K6    ; R19 := R0["mSmoothScroll"]
 197 [-]: TEST      R19 0        ; if not R19 then PC := 203
 198 [-]: JMP       203          ; PC := 203
 199 [-]: EQ        1 R7 R17     ; if R7 == R17 then PC := 202
 200 [-]: JMP       202          ; PC := 202
-201 [-]: OP_LOADBOOL R18 0 1      ; R18 := false; PC := 202
-202 [-]: OP_LOADBOOL R18 1 0      ; R18 := true
+201 [-]: LOADBOOL  R18 0 1      ; R18 := false; PC := 202
+202 [-]: LOADBOOL  R18 1 0      ; R18 := true
 203 [-]: TEST      R18 0        ; if not R18 then PC := 211
 204 [-]: JMP       211          ; PC := 211
 205 [-]: GETTABLE  R19 R0 K21   ; R19 := R0["mColumns"]
@@ -2349,7 +2349,7 @@
  25 [-]: JMP       102          ; PC := 102
  26 [-]: SELF      R8 R0 K11    ; R9 := R0; R8 := R0[0x4c4f8717]
  27 [-]: MOVE      R10 R7       ; R10 := R7
- 28 [-]: OP_LOADBOOL R11 1 0      ; R11 := true
+ 28 [-]: LOADBOOL  R11 1 0      ; R11 := true
  29 [-]: CALL      R8 4 1       ; R8(R9,R10,R11)
  30 [-]: GETTABLE  R8 R0 K12    ; R8 := R0["mDisableScrollRedraw"]
  31 [-]: TEST      R8 1         ; if R8 then PC := 39
@@ -2357,8 +2357,8 @@
  33 [-]: SETTABLE  R0 K13 K14   ; R0["mRedrawFromScrollBar"] := true
  34 [-]: SELF      R8 R0 K15    ; R9 := R0; R8 := R0[0x71e9ac81]
  35 [-]: LOADNIL   R10 R10      ; R10 := nil
- 36 [-]: OP_LOADBOOL R11 0 0      ; R11 := false
- 37 [-]: OP_LOADBOOL R12 1 0      ; R12 := true
+ 36 [-]: LOADBOOL  R11 0 0      ; R11 := false
+ 37 [-]: LOADBOOL  R12 1 0      ; R12 := true
  38 [-]: CALL      R8 5 1       ; R8(R9,R10,R11,R12)
  39 [-]: SELF      R8 R0 K16    ; R9 := R0; R8 := R0[0x741d078c]
  40 [-]: CLOSURE   R10 0        ; R10 := closure(Function #1.28.1)
@@ -2384,7 +2384,7 @@
  60 [-]: SUB       R9 R9 R10    ; R9 := R9 - R10
  61 [-]: SELF      R10 R0 K11   ; R11 := R0; R10 := R0[0x4c4f8717]
  62 [-]: MOVE      R12 R8       ; R12 := R8
- 63 [-]: OP_LOADBOOL R13 1 0      ; R13 := true
+ 63 [-]: LOADBOOL  R13 1 0      ; R13 := true
  64 [-]: CALL      R10 4 1      ; R10(R11,R12,R13)
  65 [-]: LE        1 K9 R9      ; if 1.000000 <= R9 then PC := 69
  66 [-]: JMP       69           ; PC := 69
@@ -2407,8 +2407,8 @@
  83 [-]: SETTABLE  R0 K13 K14   ; R0["mRedrawFromScrollBar"] := true
  84 [-]: SELF      R11 R0 K15   ; R12 := R0; R11 := R0[0x71e9ac81]
  85 [-]: LOADNIL   R13 R13      ; R13 := nil
- 86 [-]: OP_LOADBOOL R14 0 0      ; R14 := false
- 87 [-]: OP_LOADBOOL R15 1 0      ; R15 := true
+ 86 [-]: LOADBOOL  R14 0 0      ; R14 := false
+ 87 [-]: LOADBOOL  R15 1 0      ; R15 := true
  88 [-]: CALL      R11 5 1      ; R11(R12,R13,R14,R15)
  89 [-]: GETTABLE  R11 R0 K0    ; R11 := R0["mSmoothScroll"]
  90 [-]: TEST      R11 0        ; if not R11 then PC := 98
@@ -2532,8 +2532,8 @@
  23 [-]: SELF      R4 R0 K10    ; R5 := R0; R4 := R0[0xb4c60d07]
  24 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  25 [-]: JMP       28           ; PC := 28
- 26 [-]: OP_LOADBOOL R4 0 1       ; R4 := false; PC := 27
- 27 [-]: OP_LOADBOOL R4 1 0       ; R4 := true
+ 26 [-]: LOADBOOL  R4 0 1       ; R4 := false; PC := 27
+ 27 [-]: LOADBOOL  R4 1 0       ; R4 := true
  28 [-]: GETTABLE  R5 R0 K11    ; R5 := R0["mMovie"]
  29 [-]: SELF      R5 R5 K12    ; R6 := R5; R5 := R5[0xaade900e]
  30 [-]: GETTABLE  R7 R0 K0     ; R7 := R0["mScrollBarClipName"]
@@ -2568,8 +2568,8 @@
  59 [-]: GETTABLE  R9 R0 K7     ; R9 := R0["mColumns"]
  60 [-]: MUL       R9 R5 R9     ; R9 := R5 * R9
  61 [-]: DIV       R8 R8 R9     ; R8 := R8 / R9
- 62 [-]: OP_LOADBOOL R9 1 0       ; R9 := true
- 63 [-]: OP_LOADBOOL R10 1 0      ; R10 := true
+ 62 [-]: LOADBOOL  R9 1 0       ; R9 := true
+ 63 [-]: LOADBOOL  R10 1 0      ; R10 := true
  64 [-]: CALL      R6 5 1       ; R6(R7,R8,R9,R10)
  65 [-]: GETTABLE  R6 R0 K2     ; R6 := R0["mScrollBar"]
  66 [-]: SELF      R6 R6 K21    ; R7 := R6; R6 := R6[0xa8854625]
@@ -2612,7 +2612,7 @@
  20 [-]: GETTABLE  R9 R0 K5     ; R9 := R0["mScrollBar"]
  21 [-]: GETTABLE  R9 R9 K8     ; R9 := R9["mScrollStep"]
  22 [-]: MUL       R8 R8 R9     ; R8 := R8 * R9
- 23 [-]: OP_LOADBOOL R9 0 0       ; R9 := false
+ 23 [-]: LOADBOOL  R9 0 0       ; R9 := false
  24 [-]: MOVE      R10 R2       ; R10 := R2
  25 [-]: CALL      R6 5 1       ; R6(R7,R8,R9,R10)
  26 [-]: TEST      R3 1         ; if R3 then PC := 31
@@ -2643,7 +2643,7 @@
   9 [-]: LOADK     R2 K4        ; R2 := "Error: Smooth scroll dependencies failed!"
  10 [-]: CALL      R1 2 1       ; R1(R2)
  11 [-]: GETGLOBAL R1 K5        ; R1 := 0x60cce7b4
- 12 [-]: OP_LOADBOOL R2 0 0       ; R2 := false
+ 12 [-]: LOADBOOL  R2 0 0       ; R2 := false
  13 [-]: CALL      R1 2 1       ; R1(R2)
  14 [-]: JMP       22           ; PC := 22
  15 [-]: GETTABLE  R1 R0 K7     ; R1 := R0["mColumns"]
@@ -2813,8 +2813,8 @@
 109 [-]: JMP       113          ; PC := 113
 110 [-]: LE        1 R5 K22     ; if R5 <= 0.000000 then PC := 113
 111 [-]: JMP       113          ; PC := 113
-112 [-]: OP_LOADBOOL R8 0 1       ; R8 := false; PC := 113
-113 [-]: OP_LOADBOOL R8 1 0       ; R8 := true
+112 [-]: LOADBOOL  R8 0 1       ; R8 := false; PC := 113
+113 [-]: LOADBOOL  R8 1 0       ; R8 := true
 114 [-]: GETTABLE  R9 R0 K15    ; R9 := R0["mMovie"]
 115 [-]: SELF      R9 R9 K23    ; R10 := R9; R9 := R9[0xc0a3774b]
 116 [-]: GETTABLE  R11 R1 K24   ; R11 := R1["mClipName"]
@@ -2845,8 +2845,8 @@
 141 [-]: LOADK     R13 K28      ; R13 := "noMenuSelection"
 142 [-]: LT        1 R5 K29     ; if R5 < 10.000000 then PC := 145
 143 [-]: JMP       145          ; PC := 145
-144 [-]: OP_LOADBOOL R14 0 1      ; R14 := false; PC := 145
-145 [-]: OP_LOADBOOL R14 1 0      ; R14 := true
+144 [-]: LOADBOOL  R14 0 1      ; R14 := false; PC := 145
+145 [-]: LOADBOOL  R14 1 0      ; R14 := true
 146 [-]: CALL      R9 6 1       ; R9(R10,R11,R12,R13,R14)
 147 [-]: RETURN    R0 1         ; return 
 

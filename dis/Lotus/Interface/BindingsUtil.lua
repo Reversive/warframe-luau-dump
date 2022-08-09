@@ -15,39 +15,39 @@
   6 [-]: GETGLOBAL R0 K4        ; R0 := 0xb009bbc6
   7 [-]: LOADK     R1 K5        ; R1 := "/Lotus/Types/Player/TennoInputFilter"
   8 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  9 [-]: SETGLOBALHASH R0 K3        ; defaultFilter := R0
+  9 [-]: SETGLOBAL R0 K3        ; defaultFilter := R0
  10 [-]: GETGLOBAL R0 K4        ; R0 := 0xb009bbc6
  11 [-]: LOADK     R1 K7        ; R1 := "/Lotus/Types/Player/TennoEquippedMeleeFilter"
  12 [-]: CALL      R0 2 2       ; R0 := R0(R1)
- 13 [-]: SETGLOBALHASH R0 K6        ; meleeFilter := R0
+ 13 [-]: SETGLOBAL R0 K6        ; meleeFilter := R0
  14 [-]: GETGLOBAL R0 K4        ; R0 := 0xb009bbc6
  15 [-]: LOADK     R1 K9        ; R1 := "/Lotus/Types/Player/TennoPowerMenu"
  16 [-]: CALL      R0 2 2       ; R0 := R0(R1)
- 17 [-]: SETGLOBALHASH R0 K8        ; powerMenuFilter := R0
+ 17 [-]: SETGLOBAL R0 K8        ; powerMenuFilter := R0
  18 [-]: GETGLOBAL R0 K4        ; R0 := 0xb009bbc6
  19 [-]: LOADK     R1 K11       ; R1 := "/Lotus/Types/Player/TennoScoopEquippedMeleeFilter"
  20 [-]: CALL      R0 2 2       ; R0 := R0(R1)
- 21 [-]: SETGLOBALHASH R0 K10       ; lunaroFilter := R0
+ 21 [-]: SETGLOBAL R0 K10       ; lunaroFilter := R0
  22 [-]: GETGLOBAL R0 K4        ; R0 := 0xb009bbc6
  23 [-]: LOADK     R1 K13       ; R1 := "/Lotus/Types/Input/DecoPlacementInputFilter"
  24 [-]: CALL      R0 2 2       ; R0 := R0(R1)
- 25 [-]: SETGLOBALHASH R0 K12       ; placementFilter := R0
+ 25 [-]: SETGLOBAL R0 K12       ; placementFilter := R0
  26 [-]: GETGLOBAL R0 K4        ; R0 := 0xb009bbc6
  27 [-]: LOADK     R1 K15       ; R1 := "/Lotus/Types/Player/FightingInputFilter"
  28 [-]: CALL      R0 2 2       ; R0 := R0(R1)
- 29 [-]: SETGLOBALHASH R0 K14       ; frameFighterFilter := R0
+ 29 [-]: SETGLOBAL R0 K14       ; frameFighterFilter := R0
  30 [-]: GETGLOBAL R0 K4        ; R0 := 0xb009bbc6
  31 [-]: LOADK     R1 K17       ; R1 := "/Lotus/Types/Game/CrewShip/RailJack/Input/RailjackInputFilter"
  32 [-]: CALL      R0 2 2       ; R0 := R0(R1)
- 33 [-]: SETGLOBALHASH R0 K16       ; railjackFilter := R0
+ 33 [-]: SETGLOBAL R0 K16       ; railjackFilter := R0
  34 [-]: GETGLOBAL R0 K4        ; R0 := 0xb009bbc6
  35 [-]: LOADK     R1 K19       ; R1 := "/Lotus/Interface/Test/ShawzinInputFilter"
  36 [-]: CALL      R0 2 2       ; R0 := R0(R1)
- 37 [-]: SETGLOBALHASH R0 K18       ; shawzinFilter := R0
+ 37 [-]: SETGLOBAL R0 K18       ; shawzinFilter := R0
  38 [-]: GETGLOBAL R0 K4        ; R0 := 0xb009bbc6
  39 [-]: LOADK     R1 K21       ; R1 := "/Lotus/Types/Player/SpaceBattle/SpaceTennoInputFilter"
  40 [-]: CALL      R0 2 2       ; R0 := R0(R1)
- 41 [-]: SETGLOBALHASH R0 K20       ; archwingFilter := R0
+ 41 [-]: SETGLOBAL R0 K20       ; archwingFilter := R0
  42 [-]: NEWTABLE  R0 0 7       ; R0 := {}
  43 [-]: SETTABLE  R0 K23 K24   ; R0["GENERAL"] := 1.000000
  44 [-]: SETTABLE  R0 K25 K26   ; R0["POWER_MENU"] := 2.000000
@@ -56,7 +56,7 @@
  47 [-]: SETTABLE  R0 K31 K32   ; R0["FRAME_FIGHTER"] := 5.000000
  48 [-]: SETTABLE  R0 K33 K34   ; R0["RAILJACK"] := 6.000000
  49 [-]: SETTABLE  R0 K35 K36   ; R0["SHAWZIN"] := 7.000000
- 50 [-]: SETGLOBALHASH R0 K22       ; SECTION_ID := R0
+ 50 [-]: SETGLOBAL R0 K22       ; SECTION_ID := R0
  51 [-]: NEWTABLE  R0 7 0       ; R0 := {}
  52 [-]: NEWTABLE  R1 29 0      ; R1 := {}
  53 [-]: NEWTABLE  R2 0 3       ; R2 := {}
@@ -668,7 +668,7 @@
 659 [-]: SETTABLE  R19 K63 K43  ; R19["ReadOnly"] := true
 660 [-]: SETLIST   R7 12 1      ; R7[(1-1)*FPF+i] := R(7+i), 1 <= i <= 12
 661 [-]: SETLIST   R0 7 1       ; R0[(1-1)*FPF+i] := R(0+i), 1 <= i <= 7
-662 [-]: SETGLOBALHASH R0 K37       ; BINDINGS := R0
+662 [-]: SETGLOBAL R0 K37       ; BINDINGS := R0
 663 [-]: NEWTABLE  R0 20 0      ; R0 := {}
 664 [-]: NEWTABLE  R1 0 4       ; R1 := {}
 665 [-]: SETTABLE  R1 K248 K249 ; R1["Button"] := "GAMEPAD_L1"
@@ -711,7 +711,7 @@
 702 [-]: LOADK     R8 K259      ; R8 := "GAMEPAD_LX"
 703 [-]: SETTABLE  R7 K248 R8   ; R7["Button"] := R8
 704 [-]: LOADK     R8 K260      ; R8 := "IsStick"
-705 [-]: OP_LOADBOOL R9 1 0       ; R9 := true
+705 [-]: LOADBOOL  R9 1 0       ; R9 := true
 706 [-]: SETTABLE  R7 R8 R9     ; R7[R8] := R9
 707 [-]: LOADK     R8 7         ; R8 := 7.000000
 708 [-]: SETTABLE  R7 K250 R8   ; R7["AnchorIndex"] := R8
@@ -732,7 +732,7 @@
 723 [-]: LOADK     R10 K263     ; R10 := "left"
 724 [-]: SETTABLE  R9 K251 R10  ; R9["TextAlign"] := R10
 725 [-]: SETTABLE  R9 K120 K253 ; R9["Platform"] := "ALL"
-726 [-]: OP_LOADBOOL R10 1 0      ; R10 := true
+726 [-]: LOADBOOL  R10 1 0      ; R10 := true
 727 [-]: SETTABLE  R9 K63 R10   ; R9["ReadOnly"] := R10
 728 [-]: NEWTABLE  R10 0 5      ; R10 := {}
 729 [-]: LOADK     R11 K264     ; R11 := "GAMEPAD_SELECT"
@@ -742,7 +742,7 @@
 733 [-]: SETTABLE  R10 K251 K252; R10["TextAlign"] := "right"
 734 [-]: LOADK     R11 K265     ; R11 := "PC"
 735 [-]: SETTABLE  R10 K120 R11 ; R10["Platform"] := R11
-736 [-]: OP_LOADBOOL R11 1 0      ; R11 := true
+736 [-]: LOADBOOL  R11 1 0      ; R11 := true
 737 [-]: SETTABLE  R10 K63 R11  ; R10["ReadOnly"] := R11
 738 [-]: NEWTABLE  R11 0 4      ; R11 := {}
 739 [-]: LOADK     R12 K266     ; R12 := "GAMEPAD_R1"
@@ -796,7 +796,7 @@
 787 [-]: LOADK     R18 K272     ; R18 := "GAMEPAD_RX"
 788 [-]: SETTABLE  R17 K248 R18 ; R17["Button"] := R18
 789 [-]: LOADK     R18 K260     ; R18 := "IsStick"
-790 [-]: OP_LOADBOOL R19 1 0      ; R19 := true
+790 [-]: LOADBOOL  R19 1 0      ; R19 := true
 791 [-]: SETTABLE  R17 R18 R19  ; R17[R18] := R19
 792 [-]: LOADK     R18 16       ; R18 := 16.000000
 793 [-]: SETTABLE  R17 K250 R18 ; R17["AnchorIndex"] := R18
@@ -815,7 +815,7 @@
 806 [-]: LOADK     R20 K274     ; R20 := "GAMEPAD_SWIPE_UP"
 807 [-]: SETTABLE  R19 K248 R20 ; R19["Button"] := R20
 808 [-]: LOADK     R20 K275     ; R20 := "TouchPad"
-809 [-]: OP_LOADBOOL R21 1 0      ; R21 := true
+809 [-]: LOADBOOL  R21 1 0      ; R21 := true
 810 [-]: SETTABLE  R19 R20 R21  ; R19[R20] := R21
 811 [-]: SETTABLE  R19 K120 K122; R19["Platform"] := "PS5"
 812 [-]: LOADK     R20 K276     ; R20 := "OverrideClipName"
@@ -825,7 +825,7 @@
 816 [-]: LOADK     R21 K278     ; R21 := "GAMEPAD_SWIPE_DOWN"
 817 [-]: SETTABLE  R20 K248 R21 ; R20["Button"] := R21
 818 [-]: LOADK     R21 K275     ; R21 := "TouchPad"
-819 [-]: OP_LOADBOOL R22 1 0      ; R22 := true
+819 [-]: LOADBOOL  R22 1 0      ; R22 := true
 820 [-]: SETTABLE  R20 R21 R22  ; R20[R21] := R22
 821 [-]: SETTABLE  R20 K120 K122; R20["Platform"] := "PS5"
 822 [-]: LOADK     R21 K276     ; R21 := "OverrideClipName"
@@ -835,7 +835,7 @@
 826 [-]: LOADK     R22 K280     ; R22 := "GAMEPAD_SWIPE_LEFT"
 827 [-]: SETTABLE  R21 K248 R22 ; R21["Button"] := R22
 828 [-]: LOADK     R22 K275     ; R22 := "TouchPad"
-829 [-]: OP_LOADBOOL R23 1 0      ; R23 := true
+829 [-]: LOADBOOL  R23 1 0      ; R23 := true
 830 [-]: SETTABLE  R21 R22 R23  ; R21[R22] := R23
 831 [-]: SETTABLE  R21 K120 K122; R21["Platform"] := "PS5"
 832 [-]: LOADK     R22 K276     ; R22 := "OverrideClipName"
@@ -845,7 +845,7 @@
 836 [-]: LOADK     R23 K282     ; R23 := "GAMEPAD_SWIPE_RIGHT"
 837 [-]: SETTABLE  R22 K248 R23 ; R22["Button"] := R23
 838 [-]: LOADK     R23 K275     ; R23 := "TouchPad"
-839 [-]: OP_LOADBOOL R24 1 0      ; R24 := true
+839 [-]: LOADBOOL  R24 1 0      ; R24 := true
 840 [-]: SETTABLE  R22 R23 R24  ; R22[R23] := R24
 841 [-]: SETTABLE  R22 K120 K122; R22["Platform"] := "PS5"
 842 [-]: LOADK     R23 K276     ; R23 := "OverrideClipName"
@@ -855,14 +855,14 @@
 846 [-]: LOADK     R24 K284     ; R24 := "GAMEPAD_MOTION_PRESS"
 847 [-]: SETTABLE  R23 K248 R24 ; R23["Button"] := R24
 848 [-]: LOADK     R24 K275     ; R24 := "TouchPad"
-849 [-]: OP_LOADBOOL R25 1 0      ; R25 := true
+849 [-]: LOADBOOL  R25 1 0      ; R25 := true
 850 [-]: SETTABLE  R23 R24 R25  ; R23[R24] := R25
 851 [-]: SETTABLE  R23 K120 K122; R23["Platform"] := "PS5"
 852 [-]: LOADK     R24 K276     ; R24 := "OverrideClipName"
 853 [-]: LOADK     R25 K285     ; R25 := "Powers.Ability5"
 854 [-]: SETTABLE  R23 R24 R25  ; R23[R24] := R25
 855 [-]: SETLIST   R0 23 1      ; R0[(1-1)*FPF+i] := R(0+i), 1 <= i <= 23
-856 [-]: SETGLOBALHASH R0 K247      ; PS5_CONTROLLER_BUTTON_LAYOUT := R0
+856 [-]: SETGLOBAL R0 K247      ; PS5_CONTROLLER_BUTTON_LAYOUT := R0
 857 [-]: NEWTABLE  R0 20 0      ; R0 := {}
 858 [-]: NEWTABLE  R1 0 4       ; R1 := {}
 859 [-]: SETTABLE  R1 K248 K249 ; R1["Button"] := "GAMEPAD_L1"
@@ -907,7 +907,7 @@
 898 [-]: LOADK     R8 K259      ; R8 := "GAMEPAD_LX"
 899 [-]: SETTABLE  R7 K248 R8   ; R7["Button"] := R8
 900 [-]: LOADK     R8 K260      ; R8 := "IsStick"
-901 [-]: OP_LOADBOOL R9 1 0       ; R9 := true
+901 [-]: LOADBOOL  R9 1 0       ; R9 := true
 902 [-]: SETTABLE  R7 R8 R9     ; R7[R8] := R9
 903 [-]: LOADK     R8 7         ; R8 := 7.000000
 904 [-]: SETTABLE  R7 K250 R8   ; R7["AnchorIndex"] := R8
@@ -928,7 +928,7 @@
 919 [-]: LOADK     R10 K263     ; R10 := "left"
 920 [-]: SETTABLE  R9 K251 R10  ; R9["TextAlign"] := R10
 921 [-]: SETTABLE  R9 K120 K253 ; R9["Platform"] := "ALL"
-922 [-]: OP_LOADBOOL R10 1 0      ; R10 := true
+922 [-]: LOADBOOL  R10 1 0      ; R10 := true
 923 [-]: SETTABLE  R9 K63 R10   ; R9["ReadOnly"] := R10
 924 [-]: NEWTABLE  R10 0 5      ; R10 := {}
 925 [-]: LOADK     R11 K264     ; R11 := "GAMEPAD_SELECT"
@@ -938,7 +938,7 @@
 929 [-]: SETTABLE  R10 K251 K252; R10["TextAlign"] := "right"
 930 [-]: LOADK     R11 K265     ; R11 := "PC"
 931 [-]: SETTABLE  R10 K120 R11 ; R10["Platform"] := R11
-932 [-]: OP_LOADBOOL R11 1 0      ; R11 := true
+932 [-]: LOADBOOL  R11 1 0      ; R11 := true
 933 [-]: SETTABLE  R10 K63 R11  ; R10["ReadOnly"] := R11
 934 [-]: NEWTABLE  R11 0 4      ; R11 := {}
 935 [-]: LOADK     R12 K266     ; R12 := "GAMEPAD_R1"
@@ -992,7 +992,7 @@
 983 [-]: LOADK     R18 K272     ; R18 := "GAMEPAD_RX"
 984 [-]: SETTABLE  R17 K248 R18 ; R17["Button"] := R18
 985 [-]: LOADK     R18 K260     ; R18 := "IsStick"
-986 [-]: OP_LOADBOOL R19 1 0      ; R19 := true
+986 [-]: LOADBOOL  R19 1 0      ; R19 := true
 987 [-]: SETTABLE  R17 R18 R19  ; R17[R18] := R19
 988 [-]: LOADK     R18 16       ; R18 := 16.000000
 989 [-]: SETTABLE  R17 K250 R18 ; R17["AnchorIndex"] := R18
@@ -1011,7 +1011,7 @@
 1002 [-]: LOADK     R20 K274     ; R20 := "GAMEPAD_SWIPE_UP"
 1003 [-]: SETTABLE  R19 K248 R20 ; R19["Button"] := R20
 1004 [-]: LOADK     R20 K275     ; R20 := "TouchPad"
-1005 [-]: OP_LOADBOOL R21 1 0      ; R21 := true
+1005 [-]: LOADBOOL  R21 1 0      ; R21 := true
 1006 [-]: SETTABLE  R19 R20 R21  ; R19[R20] := R21
 1007 [-]: SETTABLE  R19 K120 K121; R19["Platform"] := "PS4"
 1008 [-]: LOADK     R20 K276     ; R20 := "OverrideClipName"
@@ -1021,7 +1021,7 @@
 1012 [-]: LOADK     R21 K278     ; R21 := "GAMEPAD_SWIPE_DOWN"
 1013 [-]: SETTABLE  R20 K248 R21 ; R20["Button"] := R21
 1014 [-]: LOADK     R21 K275     ; R21 := "TouchPad"
-1015 [-]: OP_LOADBOOL R22 1 0      ; R22 := true
+1015 [-]: LOADBOOL  R22 1 0      ; R22 := true
 1016 [-]: SETTABLE  R20 R21 R22  ; R20[R21] := R22
 1017 [-]: SETTABLE  R20 K120 K121; R20["Platform"] := "PS4"
 1018 [-]: LOADK     R21 K276     ; R21 := "OverrideClipName"
@@ -1031,7 +1031,7 @@
 1022 [-]: LOADK     R22 K280     ; R22 := "GAMEPAD_SWIPE_LEFT"
 1023 [-]: SETTABLE  R21 K248 R22 ; R21["Button"] := R22
 1024 [-]: LOADK     R22 K275     ; R22 := "TouchPad"
-1025 [-]: OP_LOADBOOL R23 1 0      ; R23 := true
+1025 [-]: LOADBOOL  R23 1 0      ; R23 := true
 1026 [-]: SETTABLE  R21 R22 R23  ; R21[R22] := R23
 1027 [-]: SETTABLE  R21 K120 K121; R21["Platform"] := "PS4"
 1028 [-]: LOADK     R22 K276     ; R22 := "OverrideClipName"
@@ -1041,7 +1041,7 @@
 1032 [-]: LOADK     R23 K282     ; R23 := "GAMEPAD_SWIPE_RIGHT"
 1033 [-]: SETTABLE  R22 K248 R23 ; R22["Button"] := R23
 1034 [-]: LOADK     R23 K275     ; R23 := "TouchPad"
-1035 [-]: OP_LOADBOOL R24 1 0      ; R24 := true
+1035 [-]: LOADBOOL  R24 1 0      ; R24 := true
 1036 [-]: SETTABLE  R22 R23 R24  ; R22[R23] := R24
 1037 [-]: SETTABLE  R22 K120 K121; R22["Platform"] := "PS4"
 1038 [-]: LOADK     R23 K276     ; R23 := "OverrideClipName"
@@ -1051,14 +1051,14 @@
 1042 [-]: LOADK     R24 K284     ; R24 := "GAMEPAD_MOTION_PRESS"
 1043 [-]: SETTABLE  R23 K248 R24 ; R23["Button"] := R24
 1044 [-]: LOADK     R24 K275     ; R24 := "TouchPad"
-1045 [-]: OP_LOADBOOL R25 1 0      ; R25 := true
+1045 [-]: LOADBOOL  R25 1 0      ; R25 := true
 1046 [-]: SETTABLE  R23 R24 R25  ; R23[R24] := R25
 1047 [-]: SETTABLE  R23 K120 K121; R23["Platform"] := "PS4"
 1048 [-]: LOADK     R24 K276     ; R24 := "OverrideClipName"
 1049 [-]: LOADK     R25 K285     ; R25 := "Powers.Ability5"
 1050 [-]: SETTABLE  R23 R24 R25  ; R23[R24] := R25
 1051 [-]: SETLIST   R0 23 1      ; R0[(1-1)*FPF+i] := R(0+i), 1 <= i <= 23
-1052 [-]: SETGLOBALHASH R0 K286      ; PS4_CONTROLLER_BUTTON_LAYOUT := R0
+1052 [-]: SETGLOBAL R0 K286      ; PS4_CONTROLLER_BUTTON_LAYOUT := R0
 1053 [-]: NEWTABLE  R0 19 0      ; R0 := {}
 1054 [-]: NEWTABLE  R1 0 4       ; R1 := {}
 1055 [-]: SETTABLE  R1 K248 K254 ; R1["Button"] := "GAMEPAD_L2"
@@ -1097,7 +1097,7 @@
 1088 [-]: LOADK     R7 K259      ; R7 := "GAMEPAD_LX"
 1089 [-]: SETTABLE  R6 K248 R7   ; R6["Button"] := R7
 1090 [-]: LOADK     R7 K260      ; R7 := "IsStick"
-1091 [-]: OP_LOADBOOL R8 1 0       ; R8 := true
+1091 [-]: LOADBOOL  R8 1 0       ; R8 := true
 1092 [-]: SETTABLE  R6 R7 R8     ; R6[R7] := R8
 1093 [-]: LOADK     R7 6         ; R7 := 6.000000
 1094 [-]: SETTABLE  R6 K250 R7   ; R6["AnchorIndex"] := R7
@@ -1174,7 +1174,7 @@
 1165 [-]: LOADK     R17 K272     ; R17 := "GAMEPAD_RX"
 1166 [-]: SETTABLE  R16 K248 R17 ; R16["Button"] := R17
 1167 [-]: LOADK     R17 K260     ; R17 := "IsStick"
-1168 [-]: OP_LOADBOOL R18 1 0      ; R18 := true
+1168 [-]: LOADBOOL  R18 1 0      ; R18 := true
 1169 [-]: SETTABLE  R16 R17 R18  ; R16[R17] := R18
 1170 [-]: LOADK     R17 12       ; R17 := 12.000000
 1171 [-]: SETTABLE  R16 K250 R17 ; R16["AnchorIndex"] := R17
@@ -1189,7 +1189,7 @@
 1180 [-]: LOADK     R18 K263     ; R18 := "left"
 1181 [-]: SETTABLE  R17 K251 R18 ; R17["TextAlign"] := R18
 1182 [-]: SETTABLE  R17 K120 K253; R17["Platform"] := "ALL"
-1183 [-]: OP_LOADBOOL R18 1 0      ; R18 := true
+1183 [-]: LOADBOOL  R18 1 0      ; R18 := true
 1184 [-]: SETTABLE  R17 K63 R18  ; R17["ReadOnly"] := R18
 1185 [-]: NEWTABLE  R18 0 5      ; R18 := {}
 1186 [-]: LOADK     R19 K264     ; R19 := "GAMEPAD_SELECT"
@@ -1199,13 +1199,13 @@
 1190 [-]: LOADK     R19 K263     ; R19 := "left"
 1191 [-]: SETTABLE  R18 K251 R19 ; R18["TextAlign"] := R19
 1192 [-]: SETTABLE  R18 K120 K253; R18["Platform"] := "ALL"
-1193 [-]: OP_LOADBOOL R19 1 0      ; R19 := true
+1193 [-]: LOADBOOL  R19 1 0      ; R19 := true
 1194 [-]: SETTABLE  R18 K63 R19  ; R18["ReadOnly"] := R19
 1195 [-]: NEWTABLE  R19 0 4      ; R19 := {}
 1196 [-]: LOADK     R20 K274     ; R20 := "GAMEPAD_SWIPE_UP"
 1197 [-]: SETTABLE  R19 K248 R20 ; R19["Button"] := R20
 1198 [-]: LOADK     R20 K275     ; R20 := "TouchPad"
-1199 [-]: OP_LOADBOOL R21 1 0      ; R21 := true
+1199 [-]: LOADBOOL  R21 1 0      ; R21 := true
 1200 [-]: SETTABLE  R19 R20 R21  ; R19[R20] := R21
 1201 [-]: SETTABLE  R19 K120 K253; R19["Platform"] := "ALL"
 1202 [-]: LOADK     R20 K276     ; R20 := "OverrideClipName"
@@ -1215,7 +1215,7 @@
 1206 [-]: LOADK     R21 K278     ; R21 := "GAMEPAD_SWIPE_DOWN"
 1207 [-]: SETTABLE  R20 K248 R21 ; R20["Button"] := R21
 1208 [-]: LOADK     R21 K275     ; R21 := "TouchPad"
-1209 [-]: OP_LOADBOOL R22 1 0      ; R22 := true
+1209 [-]: LOADBOOL  R22 1 0      ; R22 := true
 1210 [-]: SETTABLE  R20 R21 R22  ; R20[R21] := R22
 1211 [-]: SETTABLE  R20 K120 K253; R20["Platform"] := "ALL"
 1212 [-]: LOADK     R21 K276     ; R21 := "OverrideClipName"
@@ -1225,7 +1225,7 @@
 1216 [-]: LOADK     R22 K280     ; R22 := "GAMEPAD_SWIPE_LEFT"
 1217 [-]: SETTABLE  R21 K248 R22 ; R21["Button"] := R22
 1218 [-]: LOADK     R22 K275     ; R22 := "TouchPad"
-1219 [-]: OP_LOADBOOL R23 1 0      ; R23 := true
+1219 [-]: LOADBOOL  R23 1 0      ; R23 := true
 1220 [-]: SETTABLE  R21 R22 R23  ; R21[R22] := R23
 1221 [-]: SETTABLE  R21 K120 K253; R21["Platform"] := "ALL"
 1222 [-]: LOADK     R22 K276     ; R22 := "OverrideClipName"
@@ -1235,14 +1235,14 @@
 1226 [-]: LOADK     R23 K282     ; R23 := "GAMEPAD_SWIPE_RIGHT"
 1227 [-]: SETTABLE  R22 K248 R23 ; R22["Button"] := R23
 1228 [-]: LOADK     R23 K275     ; R23 := "TouchPad"
-1229 [-]: OP_LOADBOOL R24 1 0      ; R24 := true
+1229 [-]: LOADBOOL  R24 1 0      ; R24 := true
 1230 [-]: SETTABLE  R22 R23 R24  ; R22[R23] := R24
 1231 [-]: SETTABLE  R22 K120 K253; R22["Platform"] := "ALL"
 1232 [-]: LOADK     R23 K276     ; R23 := "OverrideClipName"
 1233 [-]: LOADK     R24 K283     ; R24 := "Powers.Ability4"
 1234 [-]: SETTABLE  R22 R23 R24  ; R22[R23] := R24
 1235 [-]: SETLIST   R0 22 1      ; R0[(1-1)*FPF+i] := R(0+i), 1 <= i <= 22
-1236 [-]: SETGLOBALHASH R0 K287      ; PS4_REMOTE_PLAY_BUTTON_LAYOUT := R0
+1236 [-]: SETGLOBAL R0 K287      ; PS4_REMOTE_PLAY_BUTTON_LAYOUT := R0
 1237 [-]: NEWTABLE  R0 17 0      ; R0 := {}
 1238 [-]: NEWTABLE  R1 0 4       ; R1 := {}
 1239 [-]: LOADK     R2 K264      ; R2 := "GAMEPAD_SELECT"
@@ -1267,7 +1267,7 @@
 1258 [-]: LOADK     R5 K259      ; R5 := "GAMEPAD_LX"
 1259 [-]: SETTABLE  R4 K248 R5   ; R4["Button"] := R5
 1260 [-]: LOADK     R5 K260      ; R5 := "IsStick"
-1261 [-]: OP_LOADBOOL R6 1 0       ; R6 := true
+1261 [-]: LOADBOOL  R6 1 0       ; R6 := true
 1262 [-]: SETTABLE  R4 R5 R6     ; R4[R5] := R6
 1263 [-]: LOADK     R5 3         ; R5 := 3.000000
 1264 [-]: SETTABLE  R4 K250 R5   ; R4["AnchorIndex"] := R5
@@ -1315,7 +1315,7 @@
 1306 [-]: LOADK     R11 K263     ; R11 := "left"
 1307 [-]: SETTABLE  R10 K251 R11 ; R10["TextAlign"] := R11
 1308 [-]: SETTABLE  R10 K120 K253; R10["Platform"] := "ALL"
-1309 [-]: OP_LOADBOOL R11 1 0      ; R11 := true
+1309 [-]: LOADBOOL  R11 1 0      ; R11 := true
 1310 [-]: SETTABLE  R10 K63 R11  ; R10["ReadOnly"] := R11
 1311 [-]: NEWTABLE  R11 0 4      ; R11 := {}
 1312 [-]: LOADK     R12 K266     ; R12 := "GAMEPAD_R1"
@@ -1369,7 +1369,7 @@
 1360 [-]: LOADK     R18 K272     ; R18 := "GAMEPAD_RX"
 1361 [-]: SETTABLE  R17 K248 R18 ; R17["Button"] := R18
 1362 [-]: LOADK     R18 K260     ; R18 := "IsStick"
-1363 [-]: OP_LOADBOOL R19 1 0      ; R19 := true
+1363 [-]: LOADBOOL  R19 1 0      ; R19 := true
 1364 [-]: SETTABLE  R17 R18 R19  ; R17[R18] := R19
 1365 [-]: LOADK     R18 16       ; R18 := 16.000000
 1366 [-]: SETTABLE  R17 K250 R18 ; R17["AnchorIndex"] := R18
@@ -1385,7 +1385,7 @@
 1376 [-]: SETTABLE  R18 K251 R19 ; R18["TextAlign"] := R19
 1377 [-]: SETTABLE  R18 K120 K253; R18["Platform"] := "ALL"
 1378 [-]: SETLIST   R0 18 1      ; R0[(1-1)*FPF+i] := R(0+i), 1 <= i <= 18
-1379 [-]: SETGLOBALHASH R0 K292      ; BIGPIC_CONTROLLER_BUTTON_LAYOUT := R0
+1379 [-]: SETGLOBAL R0 K292      ; BIGPIC_CONTROLLER_BUTTON_LAYOUT := R0
 1380 [-]: NEWTABLE  R0 17 0      ; R0 := {}
 1381 [-]: NEWTABLE  R1 0 4       ; R1 := {}
 1382 [-]: LOADK     R2 K264      ; R2 := "GAMEPAD_SELECT"
@@ -1410,7 +1410,7 @@
 1401 [-]: LOADK     R5 K259      ; R5 := "GAMEPAD_LX"
 1402 [-]: SETTABLE  R4 K248 R5   ; R4["Button"] := R5
 1403 [-]: LOADK     R5 K260      ; R5 := "IsStick"
-1404 [-]: OP_LOADBOOL R6 1 0       ; R6 := true
+1404 [-]: LOADBOOL  R6 1 0       ; R6 := true
 1405 [-]: SETTABLE  R4 R5 R6     ; R4[R5] := R6
 1406 [-]: LOADK     R5 3         ; R5 := 3.000000
 1407 [-]: SETTABLE  R4 K250 R5   ; R4["AnchorIndex"] := R5
@@ -1458,7 +1458,7 @@
 1449 [-]: LOADK     R11 K263     ; R11 := "left"
 1450 [-]: SETTABLE  R10 K251 R11 ; R10["TextAlign"] := R11
 1451 [-]: SETTABLE  R10 K120 K253; R10["Platform"] := "ALL"
-1452 [-]: OP_LOADBOOL R11 1 0      ; R11 := true
+1452 [-]: LOADBOOL  R11 1 0      ; R11 := true
 1453 [-]: SETTABLE  R10 K63 R11  ; R10["ReadOnly"] := R11
 1454 [-]: NEWTABLE  R11 0 4      ; R11 := {}
 1455 [-]: LOADK     R12 K266     ; R12 := "GAMEPAD_R1"
@@ -1512,7 +1512,7 @@
 1503 [-]: LOADK     R18 K272     ; R18 := "GAMEPAD_RX"
 1504 [-]: SETTABLE  R17 K248 R18 ; R17["Button"] := R18
 1505 [-]: LOADK     R18 K260     ; R18 := "IsStick"
-1506 [-]: OP_LOADBOOL R19 1 0      ; R19 := true
+1506 [-]: LOADBOOL  R19 1 0      ; R19 := true
 1507 [-]: SETTABLE  R17 R18 R19  ; R17[R18] := R19
 1508 [-]: LOADK     R18 16       ; R18 := 16.000000
 1509 [-]: SETTABLE  R17 K250 R18 ; R17["AnchorIndex"] := R18
@@ -1528,7 +1528,7 @@
 1519 [-]: SETTABLE  R18 K251 R19 ; R18["TextAlign"] := R19
 1520 [-]: SETTABLE  R18 K120 K253; R18["Platform"] := "ALL"
 1521 [-]: SETLIST   R0 18 1      ; R0[(1-1)*FPF+i] := R(0+i), 1 <= i <= 18
-1522 [-]: SETGLOBALHASH R0 K293      ; XB1_CONTROLLER_BUTTON_LAYOUT := R0
+1522 [-]: SETGLOBAL R0 K293      ; XB1_CONTROLLER_BUTTON_LAYOUT := R0
 1523 [-]: NEWTABLE  R0 17 0      ; R0 := {}
 1524 [-]: NEWTABLE  R1 0 4       ; R1 := {}
 1525 [-]: LOADK     R2 K264      ; R2 := "GAMEPAD_SELECT"
@@ -1553,7 +1553,7 @@
 1544 [-]: LOADK     R5 K259      ; R5 := "GAMEPAD_LX"
 1545 [-]: SETTABLE  R4 K248 R5   ; R4["Button"] := R5
 1546 [-]: LOADK     R5 K260      ; R5 := "IsStick"
-1547 [-]: OP_LOADBOOL R6 1 0       ; R6 := true
+1547 [-]: LOADBOOL  R6 1 0       ; R6 := true
 1548 [-]: SETTABLE  R4 R5 R6     ; R4[R5] := R6
 1549 [-]: LOADK     R5 4         ; R5 := 4.000000
 1550 [-]: SETTABLE  R4 K250 R5   ; R4["AnchorIndex"] := R5
@@ -1601,7 +1601,7 @@
 1592 [-]: LOADK     R11 K263     ; R11 := "left"
 1593 [-]: SETTABLE  R10 K251 R11 ; R10["TextAlign"] := R11
 1594 [-]: SETTABLE  R10 K120 K253; R10["Platform"] := "ALL"
-1595 [-]: OP_LOADBOOL R11 1 0      ; R11 := true
+1595 [-]: LOADBOOL  R11 1 0      ; R11 := true
 1596 [-]: SETTABLE  R10 K63 R11  ; R10["ReadOnly"] := R11
 1597 [-]: NEWTABLE  R11 0 4      ; R11 := {}
 1598 [-]: LOADK     R12 K266     ; R12 := "GAMEPAD_R1"
@@ -1655,7 +1655,7 @@
 1646 [-]: LOADK     R18 K272     ; R18 := "GAMEPAD_RX"
 1647 [-]: SETTABLE  R17 K248 R18 ; R17["Button"] := R18
 1648 [-]: LOADK     R18 K260     ; R18 := "IsStick"
-1649 [-]: OP_LOADBOOL R19 1 0      ; R19 := true
+1649 [-]: LOADBOOL  R19 1 0      ; R19 := true
 1650 [-]: SETTABLE  R17 R18 R19  ; R17[R18] := R19
 1651 [-]: LOADK     R18 18       ; R18 := 18.000000
 1652 [-]: SETTABLE  R17 K250 R18 ; R17["AnchorIndex"] := R18
@@ -1671,7 +1671,7 @@
 1662 [-]: SETTABLE  R18 K251 R19 ; R18["TextAlign"] := R19
 1663 [-]: SETTABLE  R18 K120 K253; R18["Platform"] := "ALL"
 1664 [-]: SETLIST   R0 18 1      ; R0[(1-1)*FPF+i] := R(0+i), 1 <= i <= 18
-1665 [-]: SETGLOBALHASH R0 K294      ; SWITCH_CONTROLLER_BUTTON_LAYOUT := R0
+1665 [-]: SETGLOBAL R0 K294      ; SWITCH_CONTROLLER_BUTTON_LAYOUT := R0
 1666 [-]: CLOSURE   R0 0         ; R0 := closure(Function #1)
 1667 [-]: CLOSURE   R1 1         ; R1 := closure(Function #2)
 1668 [-]: MOVE      R0 R0        ; R0 := R0
@@ -1797,9 +1797,9 @@
  12 [-]: MOVE      R6 R8        ; R6 := R8
  13 [-]: EQ        0 R7 K3      ; if R7 ~= 0.000000 then PC := 17
  14 [-]: JMP       17           ; PC := 17
- 15 [-]: OP_LOADBOOL R8 0 0       ; R8 := false
+ 15 [-]: LOADBOOL  R8 0 0       ; R8 := false
  16 [-]: RETURN    R8 2         ; return R8
- 17 [-]: OP_LOADBOOL R2 1 0       ; R2 := true
+ 17 [-]: LOADBOOL  R2 1 0       ; R2 := true
  18 [-]: LOADNIL   R8 R8        ; R8 := nil
  19 [-]: SELF      R9 R1 K0     ; R10 := R1; R9 := R1[0x66edf04f]
  20 [-]: LOADK     R11 K6       ; R11 := "_([LR])X"
@@ -1810,8 +1810,8 @@
  25 [-]: GETGLOBAL R9 K8        ; R9 := 0x60cce7b4
  26 [-]: EQ        0 R7 K3      ; if R7 ~= 0.000000 then PC := 29
  27 [-]: JMP       29           ; PC := 29
- 28 [-]: OP_LOADBOOL R10 0 1      ; R10 := false; PC := 29
- 29 [-]: OP_LOADBOOL R10 1 0      ; R10 := true
+ 28 [-]: LOADBOOL  R10 0 1      ; R10 := false; PC := 29
+ 29 [-]: LOADBOOL  R10 1 0      ; R10 := true
  30 [-]: CALL      R9 2 1       ; R9(R10)
  31 [-]: SELF      R9 R5 K9     ; R10 := R5; R9 := R5[0x17f38ff3]
  32 [-]: MOVE      R11 R6       ; R11 := R6
@@ -1827,7 +1827,7 @@
  42 [-]: MOVE      R14 R3       ; R14 := R3
  43 [-]: MOVE      R15 R4       ; R15 := R4
  44 [-]: CALL      R9 7 1       ; R9(R10,R11,R12,R13,R14,R15)
- 45 [-]: OP_LOADBOOL R9 1 0       ; R9 := true
+ 45 [-]: LOADBOOL  R9 1 0       ; R9 := true
  46 [-]: RETURN    R9 2         ; return R9
  47 [-]: RETURN    R0 1         ; return 
 
@@ -1861,8 +1861,8 @@
  18 [-]: GETUPVAL  R7 U0        ; R7 := U0
  19 [-]: CALL      R7 1 2       ; R7 := R7()
  20 [-]: LOADNIL   R8 R11       ; R8 := R9 := R10 := R11 := nil
- 21 [-]: OP_LOADBOOL R12 1 0      ; R12 := true
- 22 [-]: OP_LOADBOOL R13 1 0      ; R13 := true
+ 21 [-]: LOADBOOL  R12 1 0      ; R12 := true
+ 22 [-]: LOADBOOL  R13 1 0      ; R13 := true
  23 [-]: LOADK     R14 1        ; R14 := 1.000000
  24 [-]: LEN       R15 R6       ; R15 := # R6
  25 [-]: LOADK     R16 1        ; R16 := 1.000000
@@ -1872,8 +1872,8 @@
  29 [-]: GETTABLE  R18 R8 K7    ; R18 := R8["Invert"]
  30 [-]: EQ        1 R18 K8     ; if R18 == true then PC := 33
  31 [-]: JMP       33           ; PC := 33
- 32 [-]: OP_LOADBOOL R11 0 1      ; R11 := false; PC := 33
- 33 [-]: OP_LOADBOOL R11 1 0      ; R11 := true
+ 32 [-]: LOADBOOL  R11 0 1      ; R11 := false; PC := 33
+ 33 [-]: LOADBOOL  R11 1 0      ; R11 := true
  34 [-]: NOT       R13 R4       ; R13 := not R4
  35 [-]: GETGLOBAL R18 K9       ; R18 := 0xcfc01047
  36 [-]: MOVE      R19 R5       ; R19 := R5
@@ -1914,8 +1914,8 @@
  71 [-]: GETTABLE  R31 R8 K7    ; R31 := R8["Invert"]
  72 [-]: EQ        1 R31 K8     ; if R31 == true then PC := 75
  73 [-]: JMP       75           ; PC := 75
- 74 [-]: OP_LOADBOOL R11 0 1      ; R11 := false; PC := 75
- 75 [-]: OP_LOADBOOL R11 1 0      ; R11 := true
+ 74 [-]: LOADBOOL  R11 0 1      ; R11 := false; PC := 75
+ 75 [-]: LOADBOOL  R11 1 0      ; R11 := true
  76 [-]: GETGLOBAL R31 K14      ; R31 := 0x9ba7909f
  77 [-]: SELF      R31 R31 K15  ; R32 := R31; R31 := R31[0xa50d1a6a]
  78 [-]: MOVE      R33 R10      ; R33 := R10
@@ -1988,8 +1988,8 @@
  22 [-]: GETTABLE  R14 R3 K9    ; R14 := R3["Invert"]
  23 [-]: EQ        1 R14 K10    ; if R14 == true then PC := 26
  24 [-]: JMP       26           ; PC := 26
- 25 [-]: OP_LOADBOOL R14 0 1      ; R14 := false; PC := 26
- 26 [-]: OP_LOADBOOL R14 1 0      ; R14 := true
+ 25 [-]: LOADBOOL  R14 0 1      ; R14 := false; PC := 26
+ 26 [-]: LOADBOOL  R14 1 0      ; R14 := true
  27 [-]: MOVE      R15 R1       ; R15 := R1
  28 [-]: GETGLOBAL R16 K11      ; R16 := defaultFilter
  29 [-]: CALL      R11 6 2      ; R11 := R11(R12,R13,R14,R15,R16)
@@ -2010,8 +2010,8 @@
  44 [-]: GETTABLE  R14 R3 K9    ; R14 := R3["Invert"]
  45 [-]: EQ        1 R14 K10    ; if R14 == true then PC := 48
  46 [-]: JMP       48           ; PC := 48
- 47 [-]: OP_LOADBOOL R14 0 1      ; R14 := false; PC := 48
- 48 [-]: OP_LOADBOOL R14 1 0      ; R14 := true
+ 47 [-]: LOADBOOL  R14 0 1      ; R14 := false; PC := 48
+ 48 [-]: LOADBOOL  R14 1 0      ; R14 := true
  49 [-]: MOVE      R15 R1       ; R15 := R1
  50 [-]: GETGLOBAL R16 K14      ; R16 := archwingFilter
  51 [-]: CALL      R11 6 2      ; R11 := R11(R12,R13,R14,R15,R16)
@@ -2081,8 +2081,8 @@
 115 [-]: GETTABLE  R15 R3 K9    ; R15 := R3["Invert"]
 116 [-]: EQ        1 R15 K10    ; if R15 == true then PC := 119
 117 [-]: JMP       119          ; PC := 119
-118 [-]: OP_LOADBOOL R15 0 1      ; R15 := false; PC := 119
-119 [-]: OP_LOADBOOL R15 1 0      ; R15 := true
+118 [-]: LOADBOOL  R15 0 1      ; R15 := false; PC := 119
+119 [-]: LOADBOOL  R15 1 0      ; R15 := true
 120 [-]: SELF      R16 R0 K23   ; R17 := R0; R16 := R0[0x17f38ff3]
 121 [-]: MOVE      R18 R4       ; R18 := R4
 122 [-]: LOADK     R19 K24      ; R19 := "unused"
@@ -2136,8 +2136,8 @@
  23 [-]: GETTABLE  R11 R5 K10   ; R11 := R5["Invert"]
  24 [-]: EQ        1 R11 K11    ; if R11 == true then PC := 27
  25 [-]: JMP       27           ; PC := 27
- 26 [-]: OP_LOADBOOL R11 0 1      ; R11 := false; PC := 27
- 27 [-]: OP_LOADBOOL R11 1 0      ; R11 := true
+ 26 [-]: LOADBOOL  R11 0 1      ; R11 := false; PC := 27
+ 27 [-]: LOADBOOL  R11 1 0      ; R11 := true
  28 [-]: SELF      R12 R0 K12   ; R13 := R0; R12 := R0[0x8fa32637]
  29 [-]: LOADK     R14 K9       ; R14 := "MOVE_Y"
  30 [-]: MOVE      R15 R11      ; R15 := R11
@@ -2213,7 +2213,7 @@
  30 [-]: GETGLOBAL R9 K7        ; R9 := SECTION_ID
  31 [-]: GETTABLE  R9 R9 K8     ; R9 := R9["PLACEMENT"]
  32 [-]: GETGLOBAL R10 K9       ; R10 := placementFilter
- 33 [-]: OP_LOADBOOL R11 0 0      ; R11 := false
+ 33 [-]: LOADBOOL  R11 0 0      ; R11 := false
  34 [-]: NEWTABLE  R12 0 2      ; R12 := {}
  35 [-]: SETTABLE  R12 K10 K11  ; R12["LOOK_X"] := true
  36 [-]: SETTABLE  R12 K12 K11  ; R12["MOVE_X"] := true
@@ -2237,7 +2237,7 @@
  54 [-]: MOVE      R8 R3        ; R8 := R3
  55 [-]: CALL      R6 3 1       ; R6(R7,R8)
  56 [-]: SELF      R6 R1 K14    ; R7 := R1; R6 := R1[0x12cefdb8]
- 57 [-]: OP_LOADBOOL R8 0 0       ; R8 := false
+ 57 [-]: LOADBOOL  R8 0 0       ; R8 := false
  58 [-]: CALL      R6 3 1       ; R6(R7,R8)
  59 [-]: GETGLOBAL R6 K15       ; R6 := 0x9ba7909f
  60 [-]: SELF      R6 R6 K16    ; R7 := R6; R6 := R6[0xc3803d01]
@@ -2278,9 +2278,9 @@
  12 [-]: LT        0 R2 R0      ; if R2 >= R0 then PC := 17
  13 [-]: JMP       17           ; PC := 17
  14 [-]: SETUPVAL  R0 U0        ; U82 := 
- 15 [-]: OP_LOADBOOL R2 1 0       ; R2 := true
+ 15 [-]: LOADBOOL  R2 1 0       ; R2 := true
  16 [-]: RETURN    R2 2         ; return R2
- 17 [-]: OP_LOADBOOL R2 0 0       ; R2 := false
+ 17 [-]: LOADBOOL  R2 0 0       ; R2 := false
  18 [-]: RETURN    R2 2         ; return R2
  19 [-]: RETURN    R0 1         ; return 
 

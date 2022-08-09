@@ -51,7 +51,7 @@
  13 [-]: CONCAT    R6 R6 R8     ; R6 := R6 .. R7 .. R8
  14 [-]: CALL      R5 2 1       ; R5(R6)
  15 [-]: GETGLOBAL R5 K4        ; R5 := 0x60cce7b4
- 16 [-]: OP_LOADBOOL R6 0 0       ; R6 := false
+ 16 [-]: LOADBOOL  R6 0 0       ; R6 := false
  17 [-]: CALL      R5 2 1       ; R5(R6)
  18 [-]: GETGLOBAL R5 K0        ; R5 := 0x7b998233
  19 [-]: MOVE      R6 R3        ; R6 := R3
@@ -64,7 +64,7 @@
  26 [-]: LOADK     R6 K6        ; R6 := "The visible proportion is a number (> 0 and < 1)"
  27 [-]: CALL      R5 2 1       ; R5(R6)
  28 [-]: GETGLOBAL R5 K4        ; R5 := 0x60cce7b4
- 29 [-]: OP_LOADBOOL R6 0 0       ; R6 := false
+ 29 [-]: LOADBOOL  R6 0 0       ; R6 := false
  30 [-]: CALL      R5 2 1       ; R5(R6)
  31 [-]: NEWTABLE  R5 0 31      ; R5 := {}
  32 [-]: SETTABLE  R5 K7 R0     ; R5["mMovie"] := R0
@@ -84,7 +84,7 @@
  46 [-]: MOVE      R8 R1        ; R8 := R1
  47 [-]: LOADK     R9 0         ; R9 := 0.000000
  48 [-]: CALL      R6 4 2       ; R6 := R6(R7,R8,R9)
- 49 [-]: SETTABLE  R5 K20 R6    ; R5["mInitialRootX"] := R6
+ 49 [-]: SETTABLE  R5 K20 R6    ; R5[0xb55952db] := R6
  50 [-]: SELF      R6 R0 K23    ; R7 := R0; R6 := R0[0x2ce15376]
  51 [-]: MOVE      R8 R1        ; R8 := R1
  52 [-]: LOADK     R9 K24       ; R9 := "Scrub"
@@ -124,7 +124,7 @@
  86 [-]: SETTABLE  R5 K46 K29   ; R5["mScale"] := 100.000000
  87 [-]: SETTABLE  R5 K47 K48   ; R5["mThemedScale"] := 75.000000
  88 [-]: CLOSURE   R6 0         ; R6 := closure(Function #1.1)
- 89 [-]: SETTABLE  R5 K49 R6    ; R5[0x74a11ec6] := R6
+ 89 [-]: SETTABLE  R5 K49 R6    ; R5["GetParentEnv"] := R6
  90 [-]: CLOSURE   R6 1         ; R6 := closure(Function #1.2)
  91 [-]: SETTABLE  R5 K50 R6    ; R5["GetScrollValue"] := R6
  92 [-]: CLOSURE   R6 2         ; R6 := closure(Function #1.3)
@@ -432,14 +432,14 @@
   3 [-]: GETTABLE  R3 R0 K2     ; R3 := R0["mClipName"]
   4 [-]: LOADK     R4 K3        ; R4 := "HitZone"
   5 [-]: LOADK     R5 K4        ; R5 := "noMenuSelection"
-  6 [-]: OP_LOADBOOL R6 1 0       ; R6 := true
+  6 [-]: LOADBOOL  R6 1 0       ; R6 := true
   7 [-]: CALL      R1 6 1       ; R1(R2,R3,R4,R5,R6)
   8 [-]: GETTABLE  R1 R0 K0     ; R1 := R0["mMovie"]
   9 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1[0x19ad3f57]
  10 [-]: GETTABLE  R3 R0 K2     ; R3 := R0["mClipName"]
  11 [-]: LOADK     R4 K5        ; R4 := "Scrub.HitZone"
  12 [-]: LOADK     R5 K4        ; R5 := "noMenuSelection"
- 13 [-]: OP_LOADBOOL R6 1 0       ; R6 := true
+ 13 [-]: LOADBOOL  R6 1 0       ; R6 := true
  14 [-]: CALL      R1 6 1       ; R1(R2,R3,R4,R5,R6)
  15 [-]: SELF      R1 R0 K6     ; R2 := R0; R1 := R0[0xa8854625]
  16 [-]: CALL      R1 2 1       ; R1(R2)
@@ -566,7 +566,7 @@
   2 [-]: GETUPVAL  R2 U0        ; R2 := U0
   3 [-]: GETTABLE  R2 R2 K1     ; R82 := R2[0x5d10207d]
   4 [-]: LOADK     R3 9         ; R3 := 9.000000
-  5 [-]: OP_LOADBOOL R4 1 0       ; R4 := true
+  5 [-]: LOADBOOL  R4 1 0       ; R4 := true
   6 [-]: MOVE      R5 R1        ; R5 := R1
   7 [-]: CALL      R2 4 2       ; R2 := R2(R3,R4,R5)
   8 [-]: GETTABLE  R3 R0 K3     ; R3 := R0["mMovie"]
@@ -709,7 +709,7 @@
  20 [-]: GETTABLE  R6 R0 K6     ; R6 := R0["mClipName"]
  21 [-]: LOADK     R7 K10       ; R7 := ".Scrub.startDrag"
  22 [-]: CONCAT    R6 R6 R7     ; R6 := R6 .. R7
- 23 [-]: OP_LOADBOOL R7 0 0       ; R7 := false
+ 23 [-]: LOADBOOL  R7 0 0       ; R7 := false
  24 [-]: MOVE      R8 R1        ; R8 := R1
  25 [-]: MOVE      R9 R2        ; R9 := R2
  26 [-]: MOVE      R10 R1       ; R10 := R1
@@ -934,7 +934,7 @@
  12 [-]: SELF      R5 R0 K4     ; R6 := R0; R5 := R0[0x70fc2d50]
  13 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  14 [-]: MOVE      R6 R2        ; R6 := R2
- 15 [-]: OP_LOADBOOL R7 1 0       ; R7 := true
+ 15 [-]: LOADBOOL  R7 1 0       ; R7 := true
  16 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
  17 [-]: RETURN    R0 1         ; return 
 
@@ -1225,14 +1225,14 @@
 144 [-]: CONCAT    R6 R6 R7     ; R6 := R6 .. R7
 145 [-]: GETTABLE  R7 R2 K26    ; R7 := R2["OnGamepadTransition"]
 146 [-]: SETTABLE  R2 R6 R7     ; R2[R6] := R7
-147 [-]: OP_LOADBOOL R6 0 0       ; R6 := false
+147 [-]: LOADBOOL  R6 0 0       ; R6 := false
 148 [-]: LOADK     R7 K5        ; R7 := "Prev_"
 149 [-]: MOVE      R8 R5        ; R8 := R5
 150 [-]: CONCAT    R7 R7 R8     ; R7 := R7 .. R8
 151 [-]: GETTABLE  R7 R2 R7     ; R7 := R2[R7]
 152 [-]: EQ        1 R7 K6      ; if R7 == nil then PC := 155
 153 [-]: JMP       155          ; PC := 155
-154 [-]: OP_LOADBOOL R6 1 0       ; R6 := true
+154 [-]: LOADBOOL  R6 1 0       ; R6 := true
 155 [-]: CLOSURE   R7 9         ; R7 := closure(Function #1.27.10)
 156 [-]: MOVE      R0 R6        ; R0 := R6
 157 [-]: MOVE      R0 R2        ; R0 := R2
@@ -1411,8 +1411,8 @@
  12 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1[0x557b7601]
  13 [-]: EQ        1 R0 K2      ; if R0 == "true" then PC := 16
  14 [-]: JMP       16           ; PC := 16
- 15 [-]: OP_LOADBOOL R3 0 1       ; R3 := false; PC := 16
- 16 [-]: OP_LOADBOOL R3 1 0       ; R3 := true
+ 15 [-]: LOADBOOL  R3 0 1       ; R3 := false; PC := 16
+ 16 [-]: LOADBOOL  R3 1 0       ; R3 := true
  17 [-]: CALL      R1 3 1       ; R1(R2,R3)
  18 [-]: RETURN    R0 1         ; return 
 
@@ -1428,8 +1428,8 @@
 
   1 [-]: EQ        1 R1 K0      ; if R1 == true then PC := 4
   2 [-]: JMP       4            ; PC := 4
-  3 [-]: OP_LOADBOOL R1 0 1       ; R1 := false; PC := 4
-  4 [-]: OP_LOADBOOL R1 1 0       ; R1 := true
+  3 [-]: LOADBOOL  R1 0 1       ; R1 := false; PC := 4
+  4 [-]: LOADBOOL  R1 1 0       ; R1 := true
   5 [-]: SETTABLE  R0 K1 R1     ; R0["mEnabled"] := R1
   6 [-]: GETTABLE  R2 R0 K2     ; R2 := R0["mDragging"]
   7 [-]: TEST      R2 0         ; if not R2 then PC := 11
@@ -1478,8 +1478,8 @@
   4 [-]: GETTABLE  R4 R0 K1     ; R4 := R0["mActive"]
   5 [-]: EQ        1 R4 K2      ; if R4 == nil then PC := 8
   6 [-]: JMP       8            ; PC := 8
-  7 [-]: OP_LOADBOOL R4 0 1       ; R4 := false; PC := 8
-  8 [-]: OP_LOADBOOL R4 1 0       ; R4 := true
+  7 [-]: LOADBOOL  R4 0 1       ; R4 := false; PC := 8
+  8 [-]: LOADBOOL  R4 1 0       ; R4 := true
   9 [-]: LOADK     R5 0         ; R5 := 0.000000
  10 [-]: LOADK     R6 K3        ; R6 := 0.200000
  11 [-]: CALL      R3 4 2       ; R3 := R3(R4,R5,R6)

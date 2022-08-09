@@ -13,7 +13,7 @@
   4 [-]: GETGLOBAL R1 K0        ; R1 := 0x2d0fad09
   5 [-]: LOADK     R2 K2        ; R2 := "Lotus.Interface.UIStyleUtilities"
   6 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  7 [-]: OP_LOADBOOL R2 1 0       ; R2 := true
+  7 [-]: LOADBOOL  R2 1 0       ; R2 := true
   8 [-]: NEWTABLE  R3 0 2       ; R3 := {}
   9 [-]: SETTABLE  R3 K3 K4     ; R3["x"] := 0.000000
  10 [-]: SETTABLE  R3 K5 K4     ; R3["y"] := 0.000000
@@ -272,12 +272,12 @@
  39 [-]: GETUPVAL  R6 U0        ; R6 := U0
  40 [-]: GETTABLE  R6 R6 K0     ; R82 := R6[0x5d10207d]
  41 [-]: LOADK     R7 1         ; R7 := 1.000000
- 42 [-]: OP_LOADBOOL R8 1 0       ; R8 := true
+ 42 [-]: LOADBOOL  R8 1 0       ; R8 := true
  43 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
  44 [-]: GETUPVAL  R7 U0        ; R7 := U0
  45 [-]: GETTABLE  R7 R7 K0     ; R82 := R7[0x5d10207d]
  46 [-]: LOADK     R8 9         ; R8 := 9.000000
- 47 [-]: OP_LOADBOOL R9 1 0       ; R9 := true
+ 47 [-]: LOADBOOL  R9 1 0       ; R9 := true
  48 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
  49 [-]: GETUPVAL  R8 U0        ; R8 := U0
  50 [-]: GETTABLE  R8 R8 K0     ; R82 := R8[0x5d10207d]
@@ -541,7 +541,7 @@
  12 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  13 [-]: TEST      R4 0         ; if not R4 then PC := 16
  14 [-]: JMP       16           ; PC := 16
- 15 [-]: OP_LOADBOOL R2 0 0       ; R2 := false
+ 15 [-]: LOADBOOL  R2 0 0       ; R2 := false
  16 [-]: SETUPVAL  R1 U0        ; U82 := 
  17 [-]: SETUPVAL  R2 U1        ; U82 := 
  18 [-]: GETGLOBAL R4 K4        ; R4 := 0xc8802016
@@ -565,7 +565,7 @@
  36 [-]: TFORLOOP  R4 2         ; R7,R8 :=  R4(R5,R6); if R7 ~= nil then begin PC = 22; R6 := R7 end
  37 [-]: JMP       22           ; PC := 22
  38 [-]: GETUPVAL  R9 U3        ; R9 := U3
- 39 [-]: OP_LOADBOOL R10 1 0      ; R10 := true
+ 39 [-]: LOADBOOL  R10 1 0      ; R10 := true
  40 [-]: MOVE      R11 R0       ; R11 := R0
  41 [-]: LOADNIL   R12 R12      ; R12 := nil
  42 [-]: MOVE      R13 R3       ; R13 := R3
@@ -584,7 +584,7 @@
 ; Max Stack Size:  8
 
   1 [-]: GETUPVAL  R2 U0        ; R2 := U0
-  2 [-]: OP_LOADBOOL R3 0 0       ; R3 := false
+  2 [-]: LOADBOOL  R3 0 0       ; R3 := false
   3 [-]: MOVE      R4 R0        ; R4 := R0
   4 [-]: MOVE      R5 R1        ; R5 := R1
   5 [-]: LOADNIL   R6 R6        ; R6 := nil
@@ -706,7 +706,7 @@
  87 [-]: SETTABLE  R4 K36 K21   ; R4["TrackAvatar"] := true
  88 [-]: SETTABLE  R4 K37 K38   ; R4["x"] := 0.000000
  89 [-]: SETTABLE  R4 K39 K38   ; R4["y"] := 0.000000
- 90 [-]: OP_LOADBOOL R5 1 0       ; R5 := true
+ 90 [-]: LOADBOOL  R5 1 0       ; R5 := true
  91 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
  92 [-]: JMP       96           ; PC := 96
  93 [-]: GETUPVAL  R2 U1        ; R2 := U1

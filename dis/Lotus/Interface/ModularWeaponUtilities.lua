@@ -329,7 +329,7 @@
  15 [-]: GETUPVAL  R9 U0        ; R9 := U0
  16 [-]: GETTABLE  R9 R9 R6     ; R9 := R9[R6]
  17 [-]: GETTABLE  R9 R9 K4     ; R9 := R9["Tag"]
- 18 [-]: OP_LOADBOOL R10 0 0      ; R10 := false
+ 18 [-]: LOADBOOL  R10 0 0      ; R10 := false
  19 [-]: CALL      R7 4 2       ; R7 := R7(R8,R9,R10)
  20 [-]: MOVE      R2 R7        ; R2 := R7
  21 [-]: JMP       23           ; PC := 23
@@ -379,7 +379,7 @@
  30 [-]: GETUPVAL  R11 U1       ; R11 := U1
  31 [-]: GETTABLE  R11 R11 K7   ; R82 := R11[0x5d10207d]
  32 [-]: LOADK     R12 9        ; R12 := 9.000000
- 33 [-]: OP_LOADBOOL R13 1 0      ; R13 := true
+ 33 [-]: LOADBOOL  R13 1 0      ; R13 := true
  34 [-]: CALL      R11 3 0      ; R11,... := R11(R12,R13)
  35 [-]: CALL      R10 0 2      ; R10 := R10(R11,...)
  36 [-]: MOVE      R8 R10       ; R8 := R10
@@ -388,7 +388,7 @@
  39 [-]: GETUPVAL  R11 U1       ; R11 := U1
  40 [-]: GETTABLE  R11 R11 K7   ; R82 := R11[0x5d10207d]
  41 [-]: LOADK     R12 6        ; R12 := 6.000000
- 42 [-]: OP_LOADBOOL R13 1 0      ; R13 := true
+ 42 [-]: LOADBOOL  R13 1 0      ; R13 := true
  43 [-]: CALL      R11 3 0      ; R11,... := R11(R12,R13)
  44 [-]: CALL      R10 0 2      ; R10 := R10(R11,...)
  45 [-]: MOVE      R9 R10       ; R9 := R10
@@ -400,7 +400,7 @@
  51 [-]: LOADK     R13 K10      ; R13 := "\"><br><b>"
  52 [-]: SELF      R14 R0 K11   ; R15 := R0; R14 := R0[0x42b04007]
  53 [-]: LOADK     R16 K12      ; R16 := "/Lotus/Language/OstronCrafting/Crafting_PartsHeader"
- 54 [-]: OP_LOADBOOL R17 0 0      ; R17 := false
+ 54 [-]: LOADBOOL  R17 0 0      ; R17 := false
  55 [-]: CALL      R14 4 2      ; R14 := R14(R15,R16,R17)
  56 [-]: LOADK     R15 K13      ; R15 := "<br></font>"
  57 [-]: CONCAT    R7 R10 R15   ; R7 := R10 .. R11 .. R12 .. R13 .. R14 .. R15
@@ -446,7 +446,7 @@
  97 [-]: CALL      R19 2 2      ; R19 := R19(R20)
  98 [-]: SELF      R19 R19 K24  ; R20 := R19; R19 := R19[0x6d604ba7]
  99 [-]: CALL      R19 2 2      ; R19 := R19(R20)
-100 [-]: OP_LOADBOOL R20 0 0      ; R20 := false
+100 [-]: LOADBOOL  R20 0 0      ; R20 := false
 101 [-]: CALL      R17 4 2      ; R17 := R17(R18,R19,R20)
 102 [-]: GETGLOBAL R18 K25      ; R18 := 0x33bdd652
 103 [-]: GETTABLE  R18 R18 K26  ; R82 := R18[0x23d5322f]
@@ -459,8 +459,8 @@
 110 [-]: GETTABLE  R19 R19 K18  ; R19 := R19["Count"]
 111 [-]: EQ        1 R19 K19    ; if R19 == 0.000000 then PC := 114
 112 [-]: JMP       114          ; PC := 114
-113 [-]: OP_LOADBOOL R19 0 1      ; R19 := false; PC := 114
-114 [-]: OP_LOADBOOL R19 1 0      ; R19 := true
+113 [-]: LOADBOOL  R19 0 1      ; R19 := false; PC := 114
+114 [-]: LOADBOOL  R19 1 0      ; R19 := true
 115 [-]: LOADK     R20 K1       ; R20 := ""
 116 [-]: LOADK     R21 K28      ; R21 := ", "
 117 [-]: CALL      R18 4 2      ; R18 := R18(R19,R20,R21)
@@ -488,8 +488,8 @@
 139 [-]: GETTABLE  R20 R20 K18  ; R20 := R20["Count"]
 140 [-]: EQ        1 R20 K19    ; if R20 == 0.000000 then PC := 143
 141 [-]: JMP       143          ; PC := 143
-142 [-]: OP_LOADBOOL R20 0 1      ; R20 := false; PC := 143
-143 [-]: OP_LOADBOOL R20 1 0      ; R20 := true
+142 [-]: LOADBOOL  R20 0 1      ; R20 := false; PC := 143
+143 [-]: LOADBOOL  R20 1 0      ; R20 := true
 144 [-]: LOADK     R21 K1       ; R21 := ""
 145 [-]: LOADK     R22 K28      ; R22 := ", "
 146 [-]: CALL      R19 4 2      ; R19 := R19(R20,R21,R22)
@@ -571,7 +571,7 @@
 222 [-]: CALL      R28 2 2      ; R28 := R28(R29)
 223 [-]: SELF      R28 R28 K24  ; R29 := R28; R28 := R28[0x6d604ba7]
 224 [-]: CALL      R28 2 2      ; R28 := R28(R29)
-225 [-]: OP_LOADBOOL R29 0 0      ; R29 := false
+225 [-]: LOADBOOL  R29 0 0      ; R29 := false
 226 [-]: CALL      R26 4 2      ; R26 := R26(R27,R28,R29)
 227 [-]: GETGLOBAL R27 K25      ; R27 := 0x33bdd652
 228 [-]: GETTABLE  R27 R27 K26  ; R82 := R27[0x23d5322f]

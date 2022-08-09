@@ -99,8 +99,8 @@
   4 [-]: GETUPVAL  R3 U1        ; R3 := U1
   5 [-]: EQ        1 R2 R3      ; if R2 == R3 then PC := 8
   6 [-]: JMP       8            ; PC := 8
-  7 [-]: OP_LOADBOOL R2 0 1       ; R2 := false; PC := 8
-  8 [-]: OP_LOADBOOL R2 1 0       ; R2 := true
+  7 [-]: LOADBOOL  R2 0 1       ; R2 := false; PC := 8
+  8 [-]: LOADBOOL  R2 1 0       ; R2 := true
   9 [-]: CALL      R1 2 1       ; R1(R2)
  10 [-]: GETUPVAL  R1 U0        ; R1 := U0
  11 [-]: GETUPVAL  R2 U2        ; R2 := U2
@@ -201,8 +201,8 @@
   3 [-]: GETUPVAL  R2 U1        ; R2 := U1
   4 [-]: EQ        1 R1 R2      ; if R1 == R2 then PC := 7
   5 [-]: JMP       7            ; PC := 7
-  6 [-]: OP_LOADBOOL R1 0 1       ; R1 := false; PC := 7
-  7 [-]: OP_LOADBOOL R1 1 0       ; R1 := true
+  6 [-]: LOADBOOL  R1 0 1       ; R1 := false; PC := 7
+  7 [-]: LOADBOOL  R1 1 0       ; R1 := true
   8 [-]: RETURN    R1 2         ; return R1
   9 [-]: RETURN    R0 1         ; return 
 

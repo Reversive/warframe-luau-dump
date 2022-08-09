@@ -33,7 +33,7 @@
   2 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1[0xd7d79b74]
   3 [-]: CALL      R1 2 2       ; R1 := R1(R2)
   4 [-]: SELF      R2 R1 K2     ; R3 := R1; R2 := R1[0x1b68b9f9]
-  5 [-]: OP_LOADBOOL R4 1 0       ; R4 := true
+  5 [-]: LOADBOOL  R4 1 0       ; R4 := true
   6 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
   7 [-]: GETTABLE  R2 R2 K3     ; R2 := R2[1.000000]
   8 [-]: SELF      R3 R2 K4     ; R4 := R2; R3 := R2[0x5163741e]
@@ -77,7 +77,7 @@
   3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
   4 [-]: TEST      R0 0         ; if not R0 then PC := 19
   5 [-]: JMP       19           ; PC := 19
-  6 [-]: OP_LOADBOOL R0 0 0       ; R0 := false
+  6 [-]: LOADBOOL  R0 0 0       ; R0 := false
   7 [-]: TEST      R0 0         ; if not R0 then PC := 19
   8 [-]: JMP       19           ; PC := 19
   9 [-]: GETGLOBAL R0 K2        ; R0 := 0xbe190284
@@ -107,7 +107,7 @@
   3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
   4 [-]: TEST      R0 0         ; if not R0 then PC := 36
   5 [-]: JMP       36           ; PC := 36
-  6 [-]: OP_LOADBOOL R0 0 0       ; R0 := false
+  6 [-]: LOADBOOL  R0 0 0       ; R0 := false
   7 [-]: TEST      R0 0         ; if not R0 then PC := 36
   8 [-]: JMP       36           ; PC := 36
   9 [-]: GETGLOBAL R0 K2        ; R0 := _T

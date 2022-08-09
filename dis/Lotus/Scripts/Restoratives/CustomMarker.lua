@@ -50,11 +50,11 @@
   6 [-]: GETTABLE  R1 R1 K2     ; R82 := R1[0x659270d0]
   7 [-]: MOVE      R2 R0        ; R2 := R0
   8 [-]: LOADK     R3 3         ; R3 := 3.000000
-  9 [-]: OP_LOADBOOL R4 1 0       ; R4 := true
+  9 [-]: LOADBOOL  R4 1 0       ; R4 := true
  10 [-]: LOADNIL   R5 R5        ; R5 := nil
- 11 [-]: OP_LOADBOOL R6 0 0       ; R6 := false
+ 11 [-]: LOADBOOL  R6 0 0       ; R6 := false
  12 [-]: CALL      R1 6 1       ; R1(R2,R3,R4,R5,R6)
- 13 [-]: OP_LOADBOOL R1 0 0       ; R1 := false
+ 13 [-]: LOADBOOL  R1 0 0       ; R1 := false
  14 [-]: RETURN    R1 2         ; return R1
  15 [-]: RETURN    R0 1         ; return 
 
@@ -276,7 +276,7 @@
 100 [-]: TAILCALL  R15 2 0      ; R15,... := R15(R16)
 101 [-]: RETURN    R15 0        ; return R15,...
 102 [-]: FORLOOP   R11 93       ; R11 += R13; if R11 <= R12 then begin PC := 93; R14 := R11 end
-103 [-]: OP_LOADBOOL R15 1 0      ; R15 := true
+103 [-]: LOADBOOL  R15 1 0      ; R15 := true
 104 [-]: RETURN    R15 2        ; return R15
 105 [-]: RETURN    R0 1         ; return 
 
@@ -356,7 +356,7 @@
  64 [-]: LOADK     R15 K15      ; R15 := "SetTitle"
  65 [-]: SELF      R16 R12 K16  ; R17 := R12; R16 := R12[0x42b04007]
  66 [-]: LOADK     R18 K17      ; R18 := "/Lotus/Language/SystemMessages/CustomMarker_EditTitle"
- 67 [-]: OP_LOADBOOL R19 1 0      ; R19 := true
+ 67 [-]: LOADBOOL  R19 1 0      ; R19 := true
  68 [-]: CALL      R16 4 0      ; R16,... := R16(R17,R18,R19)
  69 [-]: CALL      R13 0 1      ; R13(R14,...)
  70 [-]: GETGLOBAL R13 K8       ; R13 := _T
@@ -510,7 +510,7 @@
   3 [-]: SETTABLE  R1 K1 K2     ; R1["mLabel"] := "/Lotus/Language/Menu/Photobooth_EditText"
   4 [-]: GETUPVAL  R2 U0        ; R2 := U0
   5 [-]: GETTABLE  R2 R2 K4     ; R2 := R2["INPUTBOX"]
-  6 [-]: SETTABLE  R1 K3 R2     ; R1[0xf4e253b6] := R2
+  6 [-]: SETTABLE  R1 K3 R2     ; R1["mType"] := R2
   7 [-]: GETGLOBAL R2 K6        ; R2 := 0x67d1395d
   8 [-]: SETTABLE  R1 K5 R2     ; R1["mMaxChars"] := R2
   9 [-]: SETTABLE  R1 K7 K8     ; R1["mWidth"] := 500.000000
@@ -521,12 +521,12 @@
  14 [-]: CALL      R2 0 2       ; R2 := R2(R3,...)
  15 [-]: SETTABLE  R1 K9 R2     ; R1["mContent"] := R2
  16 [-]: SETTABLE  R1 K12 K13   ; R1["mMultiLine"] := false
- 17 [-]: SETTABLE  R0 K0 R1     ; R0[0x7b998233] := R1
+ 17 [-]: SETTABLE  R0 K0 R1     ; R0[1.000000] := R1
  18 [-]: NEWTABLE  R1 0 8       ; R1 := {}
  19 [-]: SETTABLE  R1 K1 K15    ; R1["mLabel"] := "/Lotus/Language/SystemMessages/CustomMarker_EditIcon"
  20 [-]: GETUPVAL  R2 U0        ; R2 := U0
  21 [-]: GETTABLE  R2 R2 K16    ; R2 := R2["ICONBUTTON"]
- 22 [-]: SETTABLE  R1 K3 R2     ; R1[0xf4e253b6] := R2
+ 22 [-]: SETTABLE  R1 K3 R2     ; R1["mType"] := R2
  23 [-]: SETTABLE  R1 K7 K8     ; R1["mWidth"] := 500.000000
  24 [-]: SETTABLE  R1 K17 K18   ; R1["mButtonWidth"] := 520.000000
  25 [-]: GETGLOBAL R2 K20       ; R2 := 0xaacb7729
@@ -541,7 +541,7 @@
  34 [-]: SETTABLE  R1 K1 K26    ; R1["mLabel"] := "/Lotus/Language/SystemMessages/CustomMarker_VisibleInHud"
  35 [-]: GETUPVAL  R2 U0        ; R2 := U0
  36 [-]: GETTABLE  R2 R2 K27    ; R2 := R2["CHECKBOX"]
- 37 [-]: SETTABLE  R1 K3 R2     ; R1[0xf4e253b6] := R2
+ 37 [-]: SETTABLE  R1 K3 R2     ; R1["mType"] := R2
  38 [-]: GETUPVAL  R2 U1        ; R2 := U1
  39 [-]: SELF      R2 R2 K29    ; R3 := R2; R2 := R2[0x981869cd]
  40 [-]: CALL      R2 2 2       ; R2 := R2(R3)
@@ -554,13 +554,13 @@
  47 [-]: GETGLOBAL R2 K33       ; R2 := 0x5f0788c4
  48 [-]: GETGLOBAL R3 K34       ; R3 := 0x603636ad
  49 [-]: LOADK     R4 K35       ; R4 := "/Lotus/Language/Menu/Color"
- 50 [-]: OP_LOADBOOL R5 0 0       ; R5 := false
+ 50 [-]: LOADBOOL  R5 0 0       ; R5 := false
  51 [-]: CALL      R3 3 0       ; R3,... := R3(R4,R5)
  52 [-]: CALL      R2 0 2       ; R2 := R2(R3,...)
- 53 [-]: SETTABLE  R1 K1 R2     ; R1[0x25d99d89] := R2
+ 53 [-]: SETTABLE  R1 K1 R2     ; R1["mLabel"] := R2
  54 [-]: GETUPVAL  R2 U0        ; R2 := U0
  55 [-]: GETTABLE  R2 R2 K36    ; R2 := R2["COLOR"]
- 56 [-]: SETTABLE  R1 K3 R2     ; R1[0xf4e253b6] := R2
+ 56 [-]: SETTABLE  R1 K3 R2     ; R1["mType"] := R2
  57 [-]: SETTABLE  R1 K7 K8     ; R1["mWidth"] := 500.000000
  58 [-]: SETTABLE  R1 K17 K18   ; R1["mButtonWidth"] := 520.000000
  59 [-]: GETUPVAL  R2 U4        ; R2 := U4

@@ -345,12 +345,12 @@
  94 [-]: SETTABLE  R13 K25 R14  ; R13["VerticalPadding"] := R14
  95 [-]: LT        1 R1 R5      ; if R1 < R5 then PC := 98
  96 [-]: JMP       98           ; PC := 98
- 97 [-]: OP_LOADBOOL R13 0 1      ; R13 := false; PC := 98
- 98 [-]: OP_LOADBOOL R13 1 0      ; R13 := true
+ 97 [-]: LOADBOOL  R13 0 1      ; R13 := false; PC := 98
+ 98 [-]: LOADBOOL  R13 1 0      ; R13 := true
  99 [-]: LT        1 R2 R6      ; if R2 < R6 then PC := 102
 100 [-]: JMP       102          ; PC := 102
-101 [-]: OP_LOADBOOL R14 0 1      ; R14 := false; PC := 102
-102 [-]: OP_LOADBOOL R14 1 0      ; R14 := true
+101 [-]: LOADBOOL  R14 0 1      ; R14 := false; PC := 102
+102 [-]: LOADBOOL  R14 1 0      ; R14 := true
 103 [-]: TESTSET   R15 R13 1    ; if R13 then PC := 106 else R15 := R13
 104 [-]: JMP       106          ; PC := 106
 105 [-]: MOVE      R15 R14      ; R15 := R14
@@ -769,12 +769,12 @@
  16 [-]: MUL       R7 R7 R8     ; R7 := R7 * R8
  17 [-]: LT        1 R4 R6      ; if R4 < R6 then PC := 20
  18 [-]: JMP       20           ; PC := 20
- 19 [-]: OP_LOADBOOL R8 0 1       ; R8 := false; PC := 20
- 20 [-]: OP_LOADBOOL R8 1 0       ; R8 := true
+ 19 [-]: LOADBOOL  R8 0 1       ; R8 := false; PC := 20
+ 20 [-]: LOADBOOL  R8 1 0       ; R8 := true
  21 [-]: LT        1 R5 R7      ; if R5 < R7 then PC := 24
  22 [-]: JMP       24           ; PC := 24
- 23 [-]: OP_LOADBOOL R9 0 1       ; R9 := false; PC := 24
- 24 [-]: OP_LOADBOOL R9 1 0       ; R9 := true
+ 23 [-]: LOADBOOL  R9 0 1       ; R9 := false; PC := 24
+ 24 [-]: LOADBOOL  R9 1 0       ; R9 := true
  25 [-]: TESTSET   R10 R8 1     ; if R8 then PC := 28 else R10 := R8
  26 [-]: JMP       28           ; PC := 28
  27 [-]: MOVE      R10 R9       ; R10 := R9

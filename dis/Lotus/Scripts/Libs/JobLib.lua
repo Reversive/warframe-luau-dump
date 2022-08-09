@@ -456,7 +456,7 @@
   5 [-]: GETGLOBAL R0 K0        ; R0 := _T
   6 [-]: GETTABLE  R0 R0 K2     ; R82 := R0[0xeb2974e9]
   7 [-]: CALL      R0 1 1       ; R0()
-  8 [-]: OP_LOADBOOL R0 0 0       ; R0 := false
+  8 [-]: LOADBOOL  R0 0 0       ; R0 := false
   9 [-]: TEST      R0 0         ; if not R0 then PC := 15
  10 [-]: JMP       15           ; PC := 15
  11 [-]: GETGLOBAL R0 K0        ; R0 := _T
@@ -540,7 +540,7 @@
  43 [-]: TEST      R9 1         ; if R9 then PC := 46
  44 [-]: JMP       46           ; PC := 46
  45 [-]: LOADK     R9 0         ; R9 := 0.000000
- 46 [-]: OP_LOADBOOL R10 0 0      ; R10 := false
+ 46 [-]: LOADBOOL  R10 0 0      ; R10 := false
  47 [-]: TEST      R10 0        ; if not R10 then PC := 51
  48 [-]: JMP       51           ; PC := 51
  49 [-]: GETGLOBAL R10 K0       ; R10 := _T
@@ -606,7 +606,7 @@
  28 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
  29 [-]: GETTABLE  R3 R0 K11    ; R3 := R0["previousProgress"]
  30 [-]: ADD       R2 R2 R3     ; R2 := R2 + R3
- 31 [-]: OP_LOADBOOL R3 0 0       ; R3 := false
+ 31 [-]: LOADBOOL  R3 0 0       ; R3 := false
  32 [-]: TEST      R3 0         ; if not R3 then PC := 39
  33 [-]: JMP       39           ; PC := 39
  34 [-]: GETGLOBAL R3 K12       ; R3 := _T
@@ -662,7 +662,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  3
 
-  1 [-]: OP_LOADBOOL R1 0 0       ; R1 := false
+  1 [-]: LOADBOOL  R1 0 0       ; R1 := false
   2 [-]: TEST      R1 0         ; if not R1 then PC := 14
   3 [-]: JMP       14           ; PC := 14
   4 [-]: GETGLOBAL R1 K0        ; R1 := _T
@@ -724,7 +724,7 @@
  20 [-]: GETGLOBAL R2 K3        ; R2 := _T
  21 [-]: GETUPVAL  R3 U1        ; R3 := U1
  22 [-]: SETTABLE  R2 K9 R3     ; R2["ClearActiveChallengeMission"] := R3
- 23 [-]: OP_LOADBOOL R2 0 0       ; R2 := false
+ 23 [-]: LOADBOOL  R2 0 0       ; R2 := false
  24 [-]: TEST      R2 0         ; if not R2 then PC := 29
  25 [-]: JMP       29           ; PC := 29
  26 [-]: GETGLOBAL R2 K3        ; R2 := _T

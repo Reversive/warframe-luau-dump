@@ -114,11 +114,11 @@
   9 [-]: TEST      R1 0         ; if not R1 then PC := 15
  10 [-]: JMP       15           ; PC := 15
  11 [-]: SELF      R1 R0 K4     ; R2 := R0; R1 := R0[0x768274d6]
- 12 [-]: OP_LOADBOOL R3 1 0       ; R3 := true
+ 12 [-]: LOADBOOL  R3 1 0       ; R3 := true
  13 [-]: CALL      R1 3 1       ; R1(R2,R3)
  14 [-]: JMP       22           ; PC := 22
  15 [-]: SELF      R1 R0 K4     ; R2 := R0; R1 := R0[0x768274d6]
- 16 [-]: OP_LOADBOOL R3 0 0       ; R3 := false
+ 16 [-]: LOADBOOL  R3 0 0       ; R3 := false
  17 [-]: CALL      R1 3 1       ; R1(R2,R3)
  18 [-]: GETGLOBAL R1 K5        ; R1 := 0x89326c93
  19 [-]: SELF      R1 R1 K6     ; R2 := R1; R1 := R1[0x59c96e77]
@@ -147,7 +147,7 @@
   9 [-]: TEST      R1 0         ; if not R1 then PC := 18
  10 [-]: JMP       18           ; PC := 18
  11 [-]: SELF      R1 R0 K4     ; R2 := R0; R1 := R0[0x768274d6]
- 12 [-]: OP_LOADBOOL R3 0 0       ; R3 := false
+ 12 [-]: LOADBOOL  R3 0 0       ; R3 := false
  13 [-]: CALL      R1 3 1       ; R1(R2,R3)
  14 [-]: GETGLOBAL R1 K5        ; R1 := 0x89326c93
  15 [-]: SELF      R1 R1 K6     ; R2 := R1; R1 := R1[0x59c96e77]
@@ -182,8 +182,8 @@
  15 [-]: LEN       R3 R3        ; R3 := # R3
  16 [-]: EQ        1 R2 R3      ; if R2 == R3 then PC := 19
  17 [-]: JMP       19           ; PC := 19
- 18 [-]: OP_LOADBOOL R2 0 1       ; R2 := false; PC := 19
- 19 [-]: OP_LOADBOOL R2 1 0       ; R2 := true
+ 18 [-]: LOADBOOL  R2 0 1       ; R2 := false; PC := 19
+ 19 [-]: LOADBOOL  R2 1 0       ; R2 := true
  20 [-]: CALL      R1 2 1       ; R1(R2)
  21 [-]: GETGLOBAL R1 K7        ; R1 := 0xcbd666e1
  22 [-]: LOADK     R2 0         ; R2 := 0.000000

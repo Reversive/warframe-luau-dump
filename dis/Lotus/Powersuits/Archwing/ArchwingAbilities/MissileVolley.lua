@@ -215,7 +215,7 @@
  48 [-]: GETTABLE  R2 R2 K5     ; R2 := R2["Modded"]
  49 [-]: SETTABLE  R1 K5 R2     ; R1["Modded"] := R2
  50 [-]: GETGLOBAL R2 K1        ; R2 := _T
- 51 [-]: SETTABLE  R2 K13 R1    ; R2["AbilityUpgradeLevelInfo"] := R1
+ 51 [-]: SETTABLE  R2 K13 R1    ; R2[0x5bced4c4] := R1
  52 [-]: RETURN    R0 1         ; return 
 
 
@@ -257,8 +257,8 @@
   2 [-]: GETTABLE  R3 R1 K0     ; R3 := R1[2.000000]
   3 [-]: LT        1 R3 R2      ; if R3 < R2 then PC := 6
   4 [-]: JMP       6            ; PC := 6
-  5 [-]: OP_LOADBOOL R2 0 1       ; R2 := false; PC := 6
-  6 [-]: OP_LOADBOOL R2 1 0       ; R2 := true
+  5 [-]: LOADBOOL  R2 0 1       ; R2 := false; PC := 6
+  6 [-]: LOADBOOL  R2 1 0       ; R2 := true
   7 [-]: RETURN    R2 2         ; return R2
   8 [-]: RETURN    R0 1         ; return 
 
@@ -298,7 +298,7 @@
  24 [-]: SELF      R4 R0 K6     ; R5 := R0; R4 := R0[0x48d05257]
  25 [-]: MOVE      R6 R3        ; R6 := R3
  26 [-]: CALL      R4 3 1       ; R4(R5,R6)
- 27 [-]: OP_LOADBOOL R4 1 0       ; R4 := true
+ 27 [-]: LOADBOOL  R4 1 0       ; R4 := true
  28 [-]: RETURN    R4 2         ; return R4
  29 [-]: RETURN    R0 1         ; return 
 
@@ -456,7 +456,7 @@
 142 [-]: SETTABLE  R30 K27 R31  ; R30["heading"] := R31
 143 [-]: SELF      R30 R1 K28   ; R31 := R1; R30 := R1[0x659d451f]
 144 [-]: GETGLOBAL R32 K29      ; R32 := 0x42bdd181
-145 [-]: OP_LOADBOOL R33 0 0      ; R33 := false
+145 [-]: LOADBOOL  R33 0 0      ; R33 := false
 146 [-]: CALL      R30 4 1      ; R30(R31,R32,R33)
 147 [-]: GETGLOBAL R30 K6       ; R30 := 0x7b998233
 148 [-]: MOVE      R31 R29      ; R31 := R29
@@ -557,7 +557,7 @@
  18 [-]: SELF      R6 R0 K5     ; R7 := R0; R6 := R0[0x65d389cb]
  19 [-]: CALL      R6 2 2       ; R6 := R6(R7)
  20 [-]: MUL       R6 R6 R2     ; R6 := R6 * R2
- 21 [-]: OP_LOADBOOL R7 1 0       ; R7 := true
+ 21 [-]: LOADBOOL  R7 1 0       ; R7 := true
  22 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
  23 [-]: SELF      R4 R0 K6     ; R5 := R0; R4 := R0[0x76ce1fd1]
  24 [-]: SELF      R6 R0 K7     ; R7 := R0; R6 := R0[0xc498ca15]
@@ -570,7 +570,7 @@
  31 [-]: JMP       36           ; PC := 36
  32 [-]: SELF      R4 R0 K9     ; R5 := R0; R4 := R0[0x87de5cf9]
  33 [-]: GETGLOBAL R6 K10       ; R6 := 0x011a0f84
- 34 [-]: OP_LOADBOOL R7 0 0       ; R7 := false
+ 34 [-]: LOADBOOL  R7 0 0       ; R7 := false
  35 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
  36 [-]: SELF      R4 R1 K11    ; R5 := R1; R4 := R1[0xde321e6f]
  37 [-]: CALL      R4 2 2       ; R4 := R4(R5)

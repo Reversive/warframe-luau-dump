@@ -82,7 +82,7 @@
  10 [-]: GETGLOBAL R3 K3        ; R3 := 0x76ea806b
  11 [-]: SELF      R3 R3 K4     ; R4 := R3; R3 := R3[0x3f3ae64c]
  12 [-]: LOADK     R5 0         ; R5 := 0.000000
- 13 [-]: OP_LOADBOOL R6 0 0       ; R6 := false
+ 13 [-]: LOADBOOL  R6 0 0       ; R6 := false
  14 [-]: CALL      R3 4 2       ; R3 := R3(R4,R5,R6)
  15 [-]: GETGLOBAL R4 K5        ; R4 := 0x7b998233
  16 [-]: MOVE      R5 R3        ; R5 := R3
@@ -102,7 +102,7 @@
  30 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  31 [-]: MOVE      R2 R5        ; R2 := R5
  32 [-]: SELF      R5 R4 K9     ; R6 := R4; R5 := R4[0xcd57f819]
- 33 [-]: OP_LOADBOOL R7 1 0       ; R7 := true
+ 33 [-]: LOADBOOL  R7 1 0       ; R7 := true
  34 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
  35 [-]: GETTABLE  R5 R5 K10    ; R5 := R5["mBootLocation"]
  36 [-]: EQ        1 R2 R1      ; if R2 == R1 then PC := 60
@@ -163,8 +163,8 @@
  91 [-]: JMP       182          ; PC := 182
  92 [-]: EQ        1 R2 R1      ; if R2 == R1 then PC := 95
  93 [-]: JMP       95           ; PC := 95
- 94 [-]: OP_LOADBOOL R7 0 1       ; R7 := false; PC := 95
- 95 [-]: OP_LOADBOOL R7 1 0       ; R7 := true
+ 94 [-]: LOADBOOL  R7 0 1       ; R7 := false; PC := 95
+ 95 [-]: LOADBOOL  R7 1 0       ; R7 := true
  96 [-]: TEST      R7 0         ; if not R7 then PC := 104
  97 [-]: JMP       104          ; PC := 104
  98 [-]: GETGLOBAL R8 K19       ; R8 := 0x3d106989
@@ -189,8 +189,8 @@
 117 [-]: CALL      R8 2 2       ; R8 := R8(R9)
 118 [-]: EQ        1 R8 R1      ; if R8 == R1 then PC := 121
 119 [-]: JMP       121          ; PC := 121
-120 [-]: OP_LOADBOOL R8 0 1       ; R8 := false; PC := 121
-121 [-]: OP_LOADBOOL R8 1 0       ; R8 := true
+120 [-]: LOADBOOL  R8 0 1       ; R8 := false; PC := 121
+121 [-]: LOADBOOL  R8 1 0       ; R8 := true
 122 [-]: EQ        1 R7 R8      ; if R7 == R8 then PC := 182
 123 [-]: JMP       182          ; PC := 182
 124 [-]: GETGLOBAL R9 K13       ; R9 := 0x89326c93

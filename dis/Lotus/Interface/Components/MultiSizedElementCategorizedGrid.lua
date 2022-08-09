@@ -181,7 +181,7 @@
  23 [-]: SETTABLE  R0 K8 K7     ; R0["mHasMultiSizedElement"] := true
  24 [-]: SELF      R5 R0 K9     ; R6 := R0; R5 := R0[0xbad4316f]
  25 [-]: MOVE      R7 R1        ; R7 := R1
- 26 [-]: OP_LOADBOOL R8 1 0       ; R8 := true
+ 26 [-]: LOADBOOL  R8 1 0       ; R8 := true
  27 [-]: CALL      R5 4 1       ; R5(R6,R7,R8)
  28 [-]: RETURN    R0 1         ; return 
 
@@ -226,8 +226,8 @@
  29 [-]: GETTABLE  R8 R0 K7     ; R8 := R0["UP"]
  30 [-]: EQ        1 R1 R8      ; if R1 == R8 then PC := 33
  31 [-]: JMP       33           ; PC := 33
- 32 [-]: OP_LOADBOOL R8 0 1       ; R8 := false; PC := 33
- 33 [-]: OP_LOADBOOL R8 1 0       ; R8 := true
+ 32 [-]: LOADBOOL  R8 0 1       ; R8 := false; PC := 33
+ 33 [-]: LOADBOOL  R8 1 0       ; R8 := true
  34 [-]: GETTABLE  R9 R0 K9     ; R9 := R0["UTIL"]
  35 [-]: GETTABLE  R9 R9 K11    ; R9 := R9["DECREMENT"]
  36 [-]: GETTABLE  R10 R0 K9    ; R10 := R0["UTIL"]
@@ -241,8 +241,8 @@
  44 [-]: GETTABLE  R8 R0 K13    ; R8 := R0["LEFT"]
  45 [-]: EQ        1 R1 R8      ; if R1 == R8 then PC := 48
  46 [-]: JMP       48           ; PC := 48
- 47 [-]: OP_LOADBOOL R8 0 1       ; R8 := false; PC := 48
- 48 [-]: OP_LOADBOOL R8 1 0       ; R8 := true
+ 47 [-]: LOADBOOL  R8 0 1       ; R8 := false; PC := 48
+ 48 [-]: LOADBOOL  R8 1 0       ; R8 := true
  49 [-]: GETTABLE  R9 R0 K9     ; R9 := R0["UTIL"]
  50 [-]: GETTABLE  R9 R9 K11    ; R9 := R9["DECREMENT"]
  51 [-]: GETTABLE  R10 R0 K9    ; R10 := R0["UTIL"]
@@ -491,7 +491,7 @@
 108 [-]: LOADK     R23 K22      ; R23 := "ERROR: Can't go past visible bounds in grids with multisized grid elements"
 109 [-]: CALL      R22 2 1      ; R22(R23)
 110 [-]: GETGLOBAL R22 K23      ; R22 := 0x60cce7b4
-111 [-]: OP_LOADBOOL R23 0 0      ; R23 := false
+111 [-]: LOADBOOL  R23 0 0      ; R23 := false
 112 [-]: CALL      R22 2 1      ; R22(R23)
 113 [-]: GETTABLE  R22 R0 K10   ; R22 := R0["mHasMultiSizedElement"]
 114 [-]: TEST      R22 1        ; if R22 then PC := 118

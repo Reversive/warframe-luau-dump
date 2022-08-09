@@ -70,7 +70,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  3
 
-  1 [-]: OP_LOADBOOL R1 0 0       ; R1 := false
+  1 [-]: LOADBOOL  R1 0 0       ; R1 := false
   2 [-]: TEST      R1 0         ; if not R1 then PC := 7
   3 [-]: JMP       7            ; PC := 7
   4 [-]: GETGLOBAL R1 K0        ; R1 := 0x3d106989
@@ -110,8 +110,8 @@
  20 [-]: GETTABLE  R14 R14 K2   ; R14 := R14["StalkerTargetPlayer"]
  21 [-]: EQ        1 R13 R14    ; if R13 == R14 then PC := 24
  22 [-]: JMP       24           ; PC := 24
- 23 [-]: OP_LOADBOOL R13 0 1      ; R13 := false; PC := 24
- 24 [-]: OP_LOADBOOL R13 1 0      ; R13 := true
+ 23 [-]: LOADBOOL  R13 0 1      ; R13 := false; PC := 24
+ 24 [-]: LOADBOOL  R13 1 0      ; R13 := true
  25 [-]: TEST      R1 1         ; if R1 then PC := 29
  26 [-]: JMP       29           ; PC := 29
  27 [-]: TEST      R13 0        ; if not R13 then PC := 33
@@ -194,7 +194,7 @@
 104 [-]: MOVE      R19 R2       ; R19 := R2
 105 [-]: GETGLOBAL R20 K19      ; R20 := 0xa421af95
 106 [-]: CALL      R20 1 2      ; R20 := R20()
-107 [-]: OP_LOADBOOL R21 0 0      ; R21 := false
+107 [-]: LOADBOOL  R21 0 0      ; R21 := false
 108 [-]: LOADK     R22 0        ; R22 := 0.000000
 109 [-]: CALL      R17 6 1      ; R17(R18,R19,R20,R21,R22)
 110 [-]: EQ        1 R6 K20     ; if R6 == true then PC := 115
@@ -349,7 +349,7 @@
  25 [-]: MOVE      R6 R1        ; R6 := R1
  26 [-]: CALL      R4 3 1       ; R4(R5,R6)
  27 [-]: SELF      R4 R3 K7     ; R5 := R3; R4 := R3[0x543a0b5e]
- 28 [-]: OP_LOADBOOL R6 0 0       ; R6 := false
+ 28 [-]: LOADBOOL  R6 0 0       ; R6 := false
  29 [-]: CALL      R4 3 1       ; R4(R5,R6)
  30 [-]: RETURN    R0 1         ; return 
 
@@ -367,11 +367,11 @@
   2 [-]: SETTABLE  R5 K0 R0     ; R5["teaseEffect"] := R0
   3 [-]: SETTABLE  R5 K1 K2     ; R5["teaseSpawn"] := true
   4 [-]: GETUPVAL  R6 U0        ; R6 := U0
-  5 [-]: OP_LOADBOOL R7 1 0       ; R7 := true
+  5 [-]: LOADBOOL  R7 1 0       ; R7 := true
   6 [-]: MOVE      R8 R3        ; R8 := R3
   7 [-]: MOVE      R9 R1        ; R9 := R1
   8 [-]: MOVE      R10 R2       ; R10 := R2
-  9 [-]: OP_LOADBOOL R11 0 0      ; R11 := false
+  9 [-]: LOADBOOL  R11 0 0      ; R11 := false
  10 [-]: MOVE      R12 R5       ; R12 := R5
  11 [-]: MOVE      R13 R4       ; R13 := R4
  12 [-]: CALL      R6 8 1       ; R6(R7,R8,R9,R10,R11,R12,R13)
@@ -388,12 +388,12 @@
 ; Max Stack Size:  9
 
   1 [-]: GETUPVAL  R2 U0        ; R2 := U0
-  2 [-]: OP_LOADBOOL R3 0 0       ; R3 := false
-  3 [-]: OP_LOADBOOL R4 1 0       ; R4 := true
+  2 [-]: LOADBOOL  R3 0 0       ; R3 := false
+  3 [-]: LOADBOOL  R4 1 0       ; R4 := true
   4 [-]: MOVE      R5 R1        ; R5 := R1
   5 [-]: MOVE      R6 R0        ; R6 := R0
   6 [-]: LOADNIL   R7 R7        ; R7 := nil
-  7 [-]: OP_LOADBOOL R8 0 0       ; R8 := false
+  7 [-]: LOADBOOL  R8 0 0       ; R8 := false
   8 [-]: CALL      R2 7 1       ; R2(R3,R4,R5,R6,R7,R8)
   9 [-]: RETURN    R0 1         ; return 
 
@@ -412,7 +412,7 @@
   3 [-]: SETTABLE  R6 K1 K2     ; R6["teaseAvatar"] := true
   4 [-]: SETTABLE  R6 K3 R3     ; R6["teaseAvatarAttachAll"] := R3
   5 [-]: GETUPVAL  R7 U0        ; R7 := U0
-  6 [-]: OP_LOADBOOL R8 1 0       ; R8 := true
+  6 [-]: LOADBOOL  R8 1 0       ; R8 := true
   7 [-]: MOVE      R9 R2        ; R9 := R2
   8 [-]: LOADNIL   R10 R10      ; R10 := nil
   9 [-]: MOVE      R11 R0       ; R11 := R0
@@ -492,8 +492,8 @@
  58 [-]: JMP       61           ; PC := 61
  59 [-]: EQ        0 R4 K12     ; if R4 ~= 65535.000000 then PC := 62
  60 [-]: JMP       62           ; PC := 62
- 61 [-]: OP_LOADBOOL R13 0 1      ; R13 := false; PC := 62
- 62 [-]: OP_LOADBOOL R13 1 0      ; R13 := true
+ 61 [-]: LOADBOOL  R13 0 1      ; R13 := false; PC := 62
+ 62 [-]: LOADBOOL  R13 1 0      ; R13 := true
  63 [-]: LOADNIL   R14 R14      ; R14 := nil
  64 [-]: TEST      R7 0         ; if not R7 then PC := 158
  65 [-]: JMP       158          ; PC := 158
@@ -551,7 +551,7 @@
 117 [-]: CALL      R22 1 2      ; R22 := R22()
 118 [-]: MOVE      R23 R2       ; R23 := R2
 119 [-]: MOVE      R24 R3       ; R24 := R3
-120 [-]: OP_LOADBOOL R25 0 0      ; R25 := false
+120 [-]: LOADBOOL  R25 0 0      ; R25 := false
 121 [-]: LOADK     R26 1        ; R26 := 1.000000
 122 [-]: MOVE      R27 R4       ; R27 := R4
 123 [-]: CALL      R18 10 2     ; R18 := R18(R19,R20,R21,R22,R23,R24,R25,R26,R27)
@@ -564,7 +564,7 @@
 130 [-]: CALL      R22 1 2      ; R22 := R22()
 131 [-]: MOVE      R23 R2       ; R23 := R2
 132 [-]: MOVE      R24 R3       ; R24 := R3
-133 [-]: OP_LOADBOOL R25 0 0      ; R25 := false
+133 [-]: LOADBOOL  R25 0 0      ; R25 := false
 134 [-]: CALL      R18 8 2      ; R18 := R18(R19,R20,R21,R22,R23,R24,R25)
 135 [-]: MOVE      R17 R18      ; R17 := R18
 136 [-]: JMP       156          ; PC := 156
@@ -631,7 +631,7 @@
   3 [-]: CALL      R6 2 2       ; R6 := R6(R7)
   4 [-]: NOT       R6 R6        ; R6 := not R6
   5 [-]: LOADK     R7 30        ; R7 := 30.000000
-  6 [-]: OP_LOADBOOL R8 1 0       ; R8 := true
+  6 [-]: LOADBOOL  R8 1 0       ; R8 := true
   7 [-]: LOADK     R9 -1        ; R9 := -1.000000
   8 [-]: LOADNIL   R10 R10      ; R10 := nil
   9 [-]: GETGLOBAL R11 K0       ; R11 := 0x7b998233
@@ -717,8 +717,8 @@
  89 [-]: JMP       92           ; PC := 92
  90 [-]: GETTABLE  R14 R13 K20  ; R14 := R13["visible"]
  91 [-]: JMP       94           ; PC := 94
- 92 [-]: OP_LOADBOOL R14 0 1      ; R14 := false; PC := 93
- 93 [-]: OP_LOADBOOL R14 1 0      ; R14 := true
+ 92 [-]: LOADBOOL  R14 0 1      ; R14 := false; PC := 93
+ 93 [-]: LOADBOOL  R14 1 0      ; R14 := true
  94 [-]: TEST      R14 1        ; if R14 then PC := 99
  95 [-]: JMP       99           ; PC := 99
  96 [-]: TEST      R8 0         ; if not R8 then PC := 99
@@ -747,7 +747,7 @@
 119 [-]: CALL      R15 2 2      ; R15 := R15(R16)
 120 [-]: TEST      R15 0        ; if not R15 then PC := 181
 121 [-]: JMP       181          ; PC := 181
-122 [-]: OP_LOADBOOL R15 0 0      ; R15 := false
+122 [-]: LOADBOOL  R15 0 0      ; R15 := false
 123 [-]: GETGLOBAL R16 K22      ; R16 := 0x89326c93
 124 [-]: SELF      R16 R16 K23  ; R17 := R16; R16 := R16[0x7d108ddb]
 125 [-]: CALL      R16 2 2      ; R16 := R16(R17)
@@ -781,7 +781,7 @@
 153 [-]: JMP       158          ; PC := 158
 154 [-]: GETGLOBAL R25 K15      ; R25 := _T
 155 [-]: SETTABLE  R25 K16 R23  ; R25["StalkerTargetPlayer"] := R23
-156 [-]: OP_LOADBOOL R15 1 0      ; R15 := true
+156 [-]: LOADBOOL  R15 1 0      ; R15 := true
 157 [-]: JMP       161          ; PC := 161
 158 [-]: MOD       R25 R18 R17  ; R25 := R18 % R17
 159 [-]: ADD       R18 R25 K25  ; R18 := R25 + 1.000000
@@ -875,9 +875,9 @@
  39 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  40 [-]: TEST      R3 0         ; if not R3 then PC := 44
  41 [-]: JMP       44           ; PC := 44
- 42 [-]: OP_LOADBOOL R3 0 0       ; R3 := false
+ 42 [-]: LOADBOOL  R3 0 0       ; R3 := false
  43 [-]: RETURN    R3 2         ; return R3
- 44 [-]: OP_LOADBOOL R3 1 0       ; R3 := true
+ 44 [-]: LOADBOOL  R3 1 0       ; R3 := true
  45 [-]: RETURN    R3 2         ; return R3
  46 [-]: RETURN    R0 1         ; return 
 
@@ -896,8 +896,8 @@
   3 [-]: CALL      R1 2 2       ; R1 := R1(R2)
   4 [-]: EQ        1 R1 K1      ; if R1 == nil then PC := 7
   5 [-]: JMP       7            ; PC := 7
-  6 [-]: OP_LOADBOOL R1 0 1       ; R1 := false; PC := 7
-  7 [-]: OP_LOADBOOL R1 1 0       ; R1 := true
+  6 [-]: LOADBOOL  R1 0 1       ; R1 := false; PC := 7
+  7 [-]: LOADBOOL  R1 1 0       ; R1 := true
   8 [-]: LOADK     R2 1         ; R2 := 1.000000
   9 [-]: GETUPVAL  R3 U0        ; R3 := U0
  10 [-]: GETTABLE  R3 R3 R2     ; R3 := R3[R2]
@@ -925,7 +925,7 @@
  32 [-]: JMP       25           ; PC := 25
  33 [-]: GETUPVAL  R3 U1        ; R3 := U1
  34 [-]: SETTABLE  R3 R2 K1     ; R3[R2] := nil
- 35 [-]: OP_LOADBOOL R3 1 0       ; R3 := true
+ 35 [-]: LOADBOOL  R3 1 0       ; R3 := true
  36 [-]: RETURN    R3 2         ; return R3
  37 [-]: RETURN    R0 1         ; return 
 

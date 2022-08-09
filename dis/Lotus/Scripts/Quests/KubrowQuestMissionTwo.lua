@@ -122,7 +122,7 @@
  34 [-]: LOADK     R4 K16       ; R4 := "KubrowDen"
  35 [-]: CALL      R3 2 0       ; R3,... := R3(R4)
  36 [-]: CALL      R1 0 2       ; R1 := R1(R2,...)
- 37 [-]: OP_LOADBOOL R2 0 0       ; R2 := false
+ 37 [-]: LOADBOOL  R2 0 0       ; R2 := false
  38 [-]: GETGLOBAL R3 K17       ; R3 := 0xc8802016
  39 [-]: MOVE      R4 R1        ; R4 := R1
  40 [-]: CALL      R3 2 4       ; R3,R4,R5 := R3(R4)
@@ -138,7 +138,7 @@
  50 [-]: CALL      R8 0 2       ; R8 := R8(R9,...)
  51 [-]: LT        0 K20 R8     ; if 300.000000 >= R8 then PC := 60
  52 [-]: JMP       60           ; PC := 60
- 53 [-]: OP_LOADBOOL R2 1 0       ; R2 := true
+ 53 [-]: LOADBOOL  R2 1 0       ; R2 := true
  54 [-]: SELF      R8 R7 K21    ; R9 := R7; R8 := R7[0x47901f07]
  55 [-]: GETGLOBAL R10 K22      ; R10 := 0x9394a539
  56 [-]: GETGLOBAL R11 K23      ; R11 := EMPTY_SYMBOL
@@ -151,7 +151,7 @@
  63 [-]: CALL      R8 3 1       ; R8(R9,R10)
  64 [-]: GETUPVAL  R8 U0        ; R8 := U0
  65 [-]: SELF      R8 R8 K26    ; R9 := R8; R8 := R8[0x2faead12]
- 66 [-]: OP_LOADBOOL R10 1 0      ; R10 := true
+ 66 [-]: LOADBOOL  R10 1 0      ; R10 := true
  67 [-]: CALL      R8 3 1       ; R8(R9,R10)
  68 [-]: TFORLOOP  R3 2         ; R6,R7 :=  R3(R4,R5); if R6 ~= nil then begin PC = 42; R5 := R6 end
  69 [-]: JMP       42           ; PC := 42
@@ -338,7 +338,7 @@
  12 [-]: CALL      R0 1 1       ; R0()
  13 [-]: GETUPVAL  R0 U4        ; R0 := U4
  14 [-]: CALL      R0 1 1       ; R0()
- 15 [-]: OP_LOADBOOL R0 0 0       ; R0 := false
+ 15 [-]: LOADBOOL  R0 0 0       ; R0 := false
  16 [-]: GETGLOBAL R1 K3        ; R1 := 0xcbd666e1
  17 [-]: LOADK     R2 0         ; R2 := 0.000000
  18 [-]: CALL      R1 2 1       ; R1(R2)
@@ -357,7 +357,7 @@
  31 [-]: CALL      R1 2 2       ; R1 := R1(R2)
  32 [-]: TEST      R1 1         ; if R1 then PC := 19
  33 [-]: JMP       19           ; PC := 19
- 34 [-]: OP_LOADBOOL R0 1 0       ; R0 := true
+ 34 [-]: LOADBOOL  R0 1 0       ; R0 := true
  35 [-]: GETUPVAL  R1 U5        ; R1 := U5
  36 [-]: SELF      R1 R1 K6     ; R2 := R1; R1 := R1[0xc1f9f0d9]
  37 [-]: CALL      R1 2 2       ; R1 := R1(R2)
@@ -377,7 +377,7 @@
  51 [-]: CALL      R1 1 1       ; R1()
  52 [-]: GETUPVAL  R1 U4        ; R1 := U4
  53 [-]: CALL      R1 1 1       ; R1()
- 54 [-]: OP_LOADBOOL R0 0 0       ; R0 := false
+ 54 [-]: LOADBOOL  R0 0 0       ; R0 := false
  55 [-]: GETUPVAL  R1 U0        ; R1 := U0
  56 [-]: SELF      R1 R1 K8     ; R2 := R1; R1 := R1[0x209398c2]
  57 [-]: GETUPVAL  R3 U6        ; R3 := U6

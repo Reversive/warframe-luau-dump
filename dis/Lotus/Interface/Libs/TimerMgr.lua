@@ -232,8 +232,8 @@
  19 [-]: JMP       22           ; PC := 22
  20 [-]: EQ        1 R3 K12     ; if R3 == true then PC := 23
  21 [-]: JMP       23           ; PC := 23
- 22 [-]: OP_LOADBOOL R9 0 1       ; R9 := false; PC := 23
- 23 [-]: OP_LOADBOOL R9 1 0       ; R9 := true
+ 22 [-]: LOADBOOL  R9 0 1       ; R9 := false; PC := 23
+ 23 [-]: LOADBOOL  R9 1 0       ; R9 := true
  24 [-]: SETTABLE  R8 K10 R9    ; R8["Loop"] := R9
  25 [-]: SETTABLE  R7 R5 R8     ; R7[R5] := R8
  26 [-]: JMP       49           ; PC := 49
@@ -250,8 +250,8 @@
  37 [-]: JMP       40           ; PC := 40
  38 [-]: EQ        1 R3 K12     ; if R3 == true then PC := 41
  39 [-]: JMP       41           ; PC := 41
- 40 [-]: OP_LOADBOOL R10 0 1      ; R10 := false; PC := 41
- 41 [-]: OP_LOADBOOL R10 1 0      ; R10 := true
+ 40 [-]: LOADBOOL  R10 0 1      ; R10 := false; PC := 41
+ 41 [-]: LOADBOOL  R10 1 0      ; R10 := true
  42 [-]: SETTABLE  R9 K10 R10   ; R9["Loop"] := R10
  43 [-]: SETTABLE  R9 K5 R5     ; R9["Id"] := R5
  44 [-]: GETGLOBAL R10 K3       ; R10 := 0x33bdd652
@@ -274,14 +274,14 @@
 
   1 [-]: EQ        0 R1 K0      ; if R1 ~= nil then PC := 5
   2 [-]: JMP       5            ; PC := 5
-  3 [-]: OP_LOADBOOL R2 0 0       ; R2 := false
+  3 [-]: LOADBOOL  R2 0 0       ; R2 := false
   4 [-]: RETURN    R2 2         ; return R2
   5 [-]: GETTABLE  R2 R0 K1     ; R2 := R0["mTimers"]
   6 [-]: GETTABLE  R2 R2 R1     ; R2 := R2[R1]
   7 [-]: EQ        0 R2 K0      ; if R2 ~= nil then PC := 10
   8 [-]: JMP       10           ; PC := 10
-  9 [-]: OP_LOADBOOL R2 0 1       ; R2 := false; PC := 10
- 10 [-]: OP_LOADBOOL R2 1 0       ; R2 := true
+  9 [-]: LOADBOOL  R2 0 1       ; R2 := false; PC := 10
+ 10 [-]: LOADBOOL  R2 1 0       ; R2 := true
  11 [-]: RETURN    R2 2         ; return R2
  12 [-]: RETURN    R0 1         ; return 
 
@@ -303,11 +303,11 @@
   6 [-]: GETTABLE  R8 R7 K2     ; R8 := R7["Arg"]
   7 [-]: EQ        0 R8 R1      ; if R8 ~= R1 then PC := 11
   8 [-]: JMP       11           ; PC := 11
-  9 [-]: OP_LOADBOOL R8 1 0       ; R8 := true
+  9 [-]: LOADBOOL  R8 1 0       ; R8 := true
  10 [-]: RETURN    R8 2         ; return R8
  11 [-]: TFORLOOP  R3 2         ; R6,R7 :=  R3(R4,R5); if R6 ~= nil then begin PC = 6; R5 := R6 end
  12 [-]: JMP       6            ; PC := 6
- 13 [-]: OP_LOADBOOL R8 0 0       ; R8 := false
+ 13 [-]: LOADBOOL  R8 0 0       ; R8 := false
  14 [-]: RETURN    R8 2         ; return R8
  15 [-]: RETURN    R0 1         ; return 
 

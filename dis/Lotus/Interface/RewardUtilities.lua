@@ -24,7 +24,7 @@
  15 [-]: GETGLOBAL R3 K3        ; R3 := 0x0469f296
  16 [-]: LOADK     R4 K7        ; R4 := "SolNode332"
  17 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 18 [-]: OP_LOADBOOL R4 0 0       ; R4 := false
+ 18 [-]: LOADBOOL  R4 0 0       ; R4 := false
  19 [-]: GETGLOBAL R5 K8        ; R5 := 0x2d0fad09
  20 [-]: LOADK     R6 K9        ; R6 := "Lotus.Interface.LotusUtilities"
  21 [-]: CALL      R5 2 2       ; R5 := R5(R6)
@@ -73,7 +73,7 @@
   7 [-]: CALL      R1 2 2       ; R1 := R1(R2)
   8 [-]: GETTABLE  R1 R1 K2     ; R1 := R1["mIsFirstTimeInNode"]
   9 [-]: RETURN    R1 2         ; return R1
- 10 [-]: OP_LOADBOOL R1 0 0       ; R1 := false
+ 10 [-]: LOADBOOL  R1 0 0       ; R1 := false
  11 [-]: RETURN    R1 2         ; return R1
  12 [-]: RETURN    R0 1         ; return 
 
@@ -145,7 +145,7 @@
  24 [-]: JMP       29           ; PC := 29
  25 [-]: GETTABLE  R10 R1 K4    ; R10 := R1["missionRewardExtra"]
  26 [-]: SETTABLE  R1 K3 R10    ; R1["missionReward"] := R10
- 27 [-]: OP_LOADBOOL R10 1 0      ; R10 := true
+ 27 [-]: LOADBOOL  R10 1 0      ; R10 := true
  28 [-]: SETUPVAL  R10 U2       ; U82 := 
 
  29 [-]: EQ        1 R2 K5      ; if R2 == 0.000000 then PC := 236
@@ -260,8 +260,8 @@
 138 [-]: SUB       R34 R20 K15  ; R34 := R20 - 1.000000
 139 [-]: CALL      R32 3 2      ; R32 := R32(R33,R34)
 140 [-]: JMP       143          ; PC := 143
-141 [-]: OP_LOADBOOL R32 0 1      ; R32 := false; PC := 142
-142 [-]: OP_LOADBOOL R32 1 0      ; R32 := true
+141 [-]: LOADBOOL  R32 0 1      ; R32 := false; PC := 142
+142 [-]: LOADBOOL  R32 1 0      ; R32 := true
 143 [-]: TEST      R32 1        ; if R32 then PC := 146
 144 [-]: JMP       146          ; PC := 146
 145 [-]: LOADNIL   R31 R31      ; R31 := nil
@@ -319,7 +319,7 @@
 197 [-]: CALL      R40 2 0      ; R40,... := R40(R41)
 198 [-]: CALL      R38 0 2      ; R38 := R38(R39,...)
 199 [-]: MOVE      R33 R38      ; R33 := R38
-200 [-]: OP_LOADBOOL R38 0 0      ; R38 := false
+200 [-]: LOADBOOL  R38 0 0      ; R38 := false
 201 [-]: TEST      R6 0         ; if not R6 then PC := 219
 202 [-]: JMP       219          ; PC := 219
 203 [-]: LOADK     R39 1        ; R39 := 1.000000
@@ -335,7 +335,7 @@
 213 [-]: GETTABLE  R44 R44 K42  ; R44 := R44["itemCount"]
 214 [-]: ADD       R44 R44 R35  ; R44 := R44 + R35
 215 [-]: SETTABLE  R43 K42 R44  ; R43[0x9dda54dc] := R44
-216 [-]: OP_LOADBOOL R38 1 0      ; R38 := true
+216 [-]: LOADBOOL  R38 1 0      ; R38 := true
 217 [-]: JMP       219          ; PC := 219
 218 [-]: FORLOOP   R39 207      ; R39 += R41; if R39 <= R40 then begin PC := 207; R42 := R39 end
 219 [-]: TEST      R38 1        ; if R38 then PC := 230
@@ -373,7 +373,7 @@
 
   1 [-]: EQ        0 R0 K0      ; if R0 ~= nil then PC := 4
   2 [-]: JMP       4            ; PC := 4
-  3 [-]: OP_LOADBOOL R0 1 0       ; R0 := true
+  3 [-]: LOADBOOL  R0 1 0       ; R0 := true
   4 [-]: GETGLOBAL R2 K1        ; R2 := 0x89326c93
   5 [-]: SELF      R2 R2 K2     ; R3 := R2; R2 := R2[0xded7d5cd]
   6 [-]: CALL      R2 2 2       ; R2 := R2(R3)

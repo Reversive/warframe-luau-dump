@@ -117,7 +117,7 @@
  12 [-]: NEWTABLE  R5 1 0       ; R5 := {}
  13 [-]: GETGLOBAL R6 K2        ; R6 := 0xa6cebb12
  14 [-]: SETLIST   R5 1 1       ; R5[(1-1)*FPF+i] := R(5+i), 1 <= i <= 1
- 15 [-]: OP_LOADBOOL R6 1 0       ; R6 := true
+ 15 [-]: LOADBOOL  R6 1 0       ; R6 := true
  16 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
  17 [-]: RETURN    R0 1         ; return 
 
@@ -189,7 +189,7 @@
  12 [-]: GETUPVAL  R3 U1        ; R3 := U1
  13 [-]: MOVE      R4 R0        ; R4 := R0
  14 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 15 [-]: OP_LOADBOOL R4 0 0       ; R4 := false
+ 15 [-]: LOADBOOL  R4 0 0       ; R4 := false
  16 [-]: SELF      R5 R3 K1     ; R6 := R3; R5 := R3[0xf2deaf69]
  17 [-]: GETGLOBAL R7 K2        ; R7 := gLotusVehicleAvatarType
  18 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)

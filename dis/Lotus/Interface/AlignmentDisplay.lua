@@ -10,13 +10,13 @@
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x2d0fad09
   2 [-]: LOADK     R1 K1        ; R1 := "EE.Interface.Utilities"
   3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: OP_LOADBOOL R1 0 0       ; R1 := false
-  5 [-]: OP_LOADBOOL R2 0 0       ; R2 := false
+  4 [-]: LOADBOOL  R1 0 0       ; R1 := false
+  5 [-]: LOADBOOL  R2 0 0       ; R2 := false
   6 [-]: GETGLOBAL R3 K2        ; R3 := 0x6c97a788
   7 [-]: GETTABLE  R3 R3 K3     ; R82 := R3[0x314b688b]
   8 [-]: CALL      R3 1 2       ; R3 := R3()
   9 [-]: LOADK     R4 0         ; R4 := 0.000000
- 10 [-]: OP_LOADBOOL R5 1 0       ; R5 := true
+ 10 [-]: LOADBOOL  R5 1 0       ; R5 := true
  11 [-]: LOADNIL   R6 R6        ; R6 := nil
  12 [-]: NEWTABLE  R7 0 0       ; R7 := {}
  13 [-]: NEWTABLE  R8 0 0       ; R8 := {}
@@ -134,7 +134,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  9
 
-  1 [-]: OP_LOADBOOL R0 1 0       ; R0 := true
+  1 [-]: LOADBOOL  R0 1 0       ; R0 := true
   2 [-]: SETUPVAL  R0 U0        ; U82 := 
   3 [-]: GETGLOBAL R0 K0        ; R0 := 0x25312c9b
   4 [-]: GETGLOBAL R1 K1        ; R1 := 0xae91e43b
@@ -818,7 +818,7 @@
 108 [-]: CALL      R2 7 1       ; R2(R3,R4,R5,R6,R7,R8)
 109 [-]: GETUPVAL  R2 U6        ; R2 := U6
 110 [-]: CALL      R2 1 1       ; R2()
-111 [-]: OP_LOADBOOL R2 1 0       ; R2 := true
+111 [-]: LOADBOOL  R2 1 0       ; R2 := true
 112 [-]: SETUPVAL  R2 U7        ; U82 := 
 113 [-]: GETGLOBAL R2 K0        ; R2 := 0xae91e43b
 114 [-]: SELF      R2 R2 K36    ; R3 := R2; R2 := R2[0x58bec6d6]
@@ -852,8 +852,8 @@
 
   1 [-]: EQ        1 R0 K0      ; if R0 == "true" then PC := 4
   2 [-]: JMP       4            ; PC := 4
-  3 [-]: OP_LOADBOOL R1 0 1       ; R1 := false; PC := 4
-  4 [-]: OP_LOADBOOL R1 1 0       ; R1 := true
+  3 [-]: LOADBOOL  R1 0 1       ; R1 := false; PC := 4
+  4 [-]: LOADBOOL  R1 1 0       ; R1 := true
   5 [-]: SETUPVAL  R1 U0        ; U82 := 
   6 [-]: GETUPVAL  R1 U1        ; R1 := U1
   7 [-]: CALL      R1 1 1       ; R1()

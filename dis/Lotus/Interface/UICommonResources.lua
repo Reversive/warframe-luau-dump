@@ -10,7 +10,7 @@
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x2d0fad09
   2 [-]: LOADK     R1 K1        ; R1 := "EE.Interface.Utilities"
   3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: OP_LOADBOOL R1 0 0       ; R1 := false
+  4 [-]: LOADBOOL  R1 0 0       ; R1 := false
   5 [-]: CLOSURE   R2 0         ; R2 := closure(Function #1)
   6 [-]: CLOSURE   R3 1         ; R3 := closure(Function #2)
   7 [-]: MOVE      R0 R2        ; R0 := R2
@@ -637,7 +637,7 @@
   7 [-]: GETUPVAL  R0 U0        ; R0 := U0
   8 [-]: GETGLOBAL R1 K3        ; R1 := _G
   9 [-]: CALL      R0 2 1       ; R0(R1)
- 10 [-]: OP_LOADBOOL R0 1 0       ; R0 := true
+ 10 [-]: LOADBOOL  R0 1 0       ; R0 := true
  11 [-]: SETUPVAL  R0 U1        ; U82 := 
  12 [-]: RETURN    R0 1         ; return 
 

@@ -10,7 +10,7 @@
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x2d0fad09
   2 [-]: LOADK     R1 K1        ; R1 := "EE.Interface.Utilities"
   3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: OP_LOADBOOL R1 0 0       ; R1 := false
+  4 [-]: LOADBOOL  R1 0 0       ; R1 := false
   5 [-]: NEWTABLE  R2 0 2       ; R2 := {}
   6 [-]: NEWTABLE  R3 0 9       ; R3 := {}
   7 [-]: SETTABLE  R3 K3 K4     ; R3["delayAfterParticlesFx"] := 0.250000
@@ -22,7 +22,7 @@
  13 [-]: SETTABLE  R3 K13 K14   ; R3["messageFadeInDelay"] := 0.000000
  14 [-]: SETTABLE  R3 K15 K16   ; R3["messageFadeOutDuration"] := 0.500000
  15 [-]: SETTABLE  R3 K17 K18   ; R3["messageFadeOutDelay"] := 3.000000
- 16 [-]: SETTABLE  R2 K2 R3     ; R2[0x91a24e4b] := R3
+ 16 [-]: SETTABLE  R2 K2 R3     ; R2["default"] := R3
  17 [-]: NEWTABLE  R3 0 9       ; R3 := {}
  18 [-]: SETTABLE  R3 K3 K4     ; R3["delayAfterParticlesFx"] := 0.250000
  19 [-]: SETTABLE  R3 K5 K8     ; R3["gainEntryFadeInDuration"] := 0.120000
@@ -129,7 +129,7 @@
  47 [-]: GETGLOBAL R6 K8        ; R6 := _T
  48 [-]: SETTABLE  R6 K9 K10    ; R6["FocusBoostGains"] := nil
  49 [-]: LOADNIL   R6 R6        ; R6 := nil
- 50 [-]: OP_LOADBOOL R7 0 0       ; R7 := false
+ 50 [-]: LOADBOOL  R7 0 0       ; R7 := false
  51 [-]: LEN       R8 R1        ; R8 := # R1
  52 [-]: EQ        0 R8 K12     ; if R8 ~= 0.000000 then PC := 87
  53 [-]: JMP       87           ; PC := 87
@@ -161,10 +161,10 @@
  79 [-]: GETGLOBAL R9 K21       ; R9 := 0xae91e43b
  80 [-]: SELF      R9 R9 K25    ; R10 := R9; R9 := R9[0x42b04007]
  81 [-]: LOADK     R11 K26      ; R11 := "/Lotus/Language/Focus/FocusCapReached"
- 82 [-]: OP_LOADBOOL R12 0 0      ; R12 := false
+ 82 [-]: LOADBOOL  R12 0 0      ; R12 := false
  83 [-]: CALL      R9 4 2       ; R9 := R9(R10,R11,R12)
  84 [-]: MOVE      R6 R9        ; R6 := R9
- 85 [-]: OP_LOADBOOL R7 1 0       ; R7 := true
+ 85 [-]: LOADBOOL  R7 1 0       ; R7 := true
  86 [-]: JMP       106          ; PC := 106
  87 [-]: GETGLOBAL R9 K16       ; R9 := 0x89326c93
  88 [-]: SELF      R9 R9 K17    ; R10 := R9; R9 := R9[0x78298275]
@@ -238,7 +238,7 @@
 156 [-]: MOVE      R20 R16      ; R20 := R16
 157 [-]: LOADK     R21 K46      ; R21 := "Icon"
 158 [-]: LOADK     R22 75       ; R22 := 75.000000
-159 [-]: OP_LOADBOOL R23 1 0      ; R23 := true
+159 [-]: LOADBOOL  R23 1 0      ; R23 := true
 160 [-]: CALL      R18 6 1      ; R18(R19,R20,R21,R22,R23)
 161 [-]: GETGLOBAL R18 K21      ; R18 := 0xae91e43b
 162 [-]: SELF      R18 R18 K43  ; R19 := R18; R18 := R18[0xe261aa96]
@@ -253,7 +253,7 @@
 171 [-]: GETTABLE  R26 R10 R26  ; R26 := R10[R26]
 172 [-]: LOADK     R27 K48      ; R27 := ">"
 173 [-]: CONCAT    R25 R25 R27  ; R25 := R25 .. R26 .. R27
-174 [-]: OP_LOADBOOL R26 1 0      ; R26 := true
+174 [-]: LOADBOOL  R26 1 0      ; R26 := true
 175 [-]: CALL      R23 4 0      ; R23,... := R23(R24,R25,R26)
 176 [-]: CALL      R18 0 1      ; R18(R19,...)
 177 [-]: LT        0 K11 R15    ; if 1.000000 >= R15 then PC := 180
@@ -337,7 +337,7 @@
 255 [-]: MOVE      R0 R0        ; R0 := R0
 256 [-]: GETUPVAL  R0 U2        ; R0 := U2
 257 [-]: CALL      R19 9 1      ; R19(R20,R21,R22,R23,R24,R25,R26,R27)
-258 [-]: OP_LOADBOOL R19 1 0      ; R19 := true
+258 [-]: LOADBOOL  R19 1 0      ; R19 := true
 259 [-]: RETURN    R19 2        ; return R19
 260 [-]: RETURN    R0 1         ; return 
 
@@ -691,7 +691,7 @@
  11 [-]: GETGLOBAL R0 K0        ; R0 := 0xae91e43b
  12 [-]: SELF      R0 R0 K5     ; R1 := R0; R0 := R0[0x32302b4a]
  13 [-]: CALL      R0 2 1       ; R0(R1)
- 14 [-]: OP_LOADBOOL R0 1 0       ; R0 := true
+ 14 [-]: LOADBOOL  R0 1 0       ; R0 := true
  15 [-]: SETUPVAL  R0 U0        ; U82 := 
  16 [-]: GETUPVAL  R0 U0        ; R0 := U0
  17 [-]: TEST      R0 1         ; if R0 then PC := 33
@@ -708,7 +708,7 @@
  28 [-]: GETGLOBAL R1 K0        ; R1 := 0xae91e43b
  29 [-]: SELF      R1 R1 K5     ; R2 := R1; R1 := R1[0x32302b4a]
  30 [-]: CALL      R1 2 1       ; R1(R2)
- 31 [-]: OP_LOADBOOL R1 1 0       ; R1 := true
+ 31 [-]: LOADBOOL  R1 1 0       ; R1 := true
  32 [-]: SETUPVAL  R1 U0        ; U82 := 
  33 [-]: RETURN    R0 1         ; return 
 

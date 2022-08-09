@@ -119,7 +119,7 @@
  67 [-]: MUL       R11 R11 R6   ; R11 := R11 * R6
  68 [-]: ADD       R11 R11 K16  ; R11 := R11 + 0.500000
  69 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 70 [-]: OP_LOADBOOL R11 1 0      ; R11 := true
+ 70 [-]: LOADBOOL  R11 1 0      ; R11 := true
  71 [-]: CALL      R8 4 1       ; R8(R9,R10,R11)
  72 [-]: RETURN    R0 1         ; return 
 
@@ -152,7 +152,7 @@
  17 [-]: GETTABLE  R9 R9 K4     ; R82 := R9[0x98b1bb53]
  18 [-]: MOVE      R10 R7       ; R10 := R7
  19 [-]: MOVE      R11 R8       ; R11 := R8
- 20 [-]: OP_LOADBOOL R12 0 0      ; R12 := false
+ 20 [-]: LOADBOOL  R12 0 0      ; R12 := false
  21 [-]: MOVE      R13 R3       ; R13 := R3
  22 [-]: CALL      R9 5 2       ; R9 := R9(R10,R11,R12,R13)
  23 [-]: GETGLOBAL R10 K0       ; R10 := 0x7b998233
@@ -186,7 +186,7 @@
   1 [-]: GETUPVAL  R2 U0        ; R2 := U0
   2 [-]: MOVE      R3 R0        ; R3 := R0
   3 [-]: MOVE      R4 R1        ; R4 := R1
-  4 [-]: OP_LOADBOOL R5 1 0       ; R5 := true
+  4 [-]: LOADBOOL  R5 1 0       ; R5 := true
   5 [-]: GETUPVAL  R6 U1        ; R6 := U1
   6 [-]: GETTABLE  R6 R6 K0     ; R6 := R6["CATEGORY_CREWSHIP"]
   7 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
@@ -205,7 +205,7 @@
   1 [-]: GETUPVAL  R2 U0        ; R2 := U0
   2 [-]: MOVE      R3 R0        ; R3 := R0
   3 [-]: MOVE      R4 R1        ; R4 := R1
-  4 [-]: OP_LOADBOOL R5 1 0       ; R5 := true
+  4 [-]: LOADBOOL  R5 1 0       ; R5 := true
   5 [-]: GETUPVAL  R6 U1        ; R6 := U1
   6 [-]: GETTABLE  R6 R6 K0     ; R6 := R6["CATEGORY_ARCHWING"]
   7 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
@@ -224,7 +224,7 @@
   1 [-]: GETUPVAL  R2 U0        ; R2 := U0
   2 [-]: MOVE      R3 R0        ; R3 := R0
   3 [-]: MOVE      R4 R1        ; R4 := R1
-  4 [-]: OP_LOADBOOL R5 0 0       ; R5 := false
+  4 [-]: LOADBOOL  R5 0 0       ; R5 := false
   5 [-]: GETUPVAL  R6 U1        ; R6 := U1
   6 [-]: GETTABLE  R6 R6 K0     ; R6 := R6["CATEGORY_ARCHWING"]
   7 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
@@ -272,7 +272,7 @@
   1 [-]: GETUPVAL  R2 U0        ; R2 := U0
   2 [-]: MOVE      R3 R0        ; R3 := R0
   3 [-]: MOVE      R4 R1        ; R4 := R1
-  4 [-]: OP_LOADBOOL R5 1 0       ; R5 := true
+  4 [-]: LOADBOOL  R5 1 0       ; R5 := true
   5 [-]: GETUPVAL  R6 U1        ; R6 := U1
   6 [-]: GETTABLE  R6 R6 K0     ; R6 := R6["CATEGORY_PLAYER"]
   7 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)

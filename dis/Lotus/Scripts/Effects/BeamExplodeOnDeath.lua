@@ -97,7 +97,7 @@
  62 [-]: GETTABLE  R8 R6 K14    ; R8 := R6["mEnergyColor"]
  63 [-]: CALL      R7 2 2       ; R7 := R7(R8)
  64 [-]: MOVE      R4 R7        ; R4 := R7
- 65 [-]: OP_LOADBOOL R7 0 0       ; R7 := false
+ 65 [-]: LOADBOOL  R7 0 0       ; R7 := false
  66 [-]: LOADNIL   R8 R8        ; R8 := nil
  67 [-]: SELF      R9 R1 K15    ; R10 := R1; R9 := R1[0x986d2ab8]
  68 [-]: GETUPVAL  R11 U1       ; R11 := U1
@@ -158,7 +158,7 @@
 123 [-]: JMP       127          ; PC := 127
 124 [-]: TEST      R7 1         ; if R7 then PC := 127
 125 [-]: JMP       127          ; PC := 127
-126 [-]: OP_LOADBOOL R7 1 0       ; R7 := true
+126 [-]: LOADBOOL  R7 1 0       ; R7 := true
 127 [-]: TEST      R7 0         ; if not R7 then PC := 187
 128 [-]: JMP       187          ; PC := 187
 129 [-]: GETGLOBAL R16 K1       ; R16 := 0x7b998233

@@ -234,8 +234,8 @@
  13 [-]: GETTABLE  R3 R0 K3     ; R3 := R0["Id"]
  14 [-]: EQ        1 R2 R3      ; if R2 == R3 then PC := 17
  15 [-]: JMP       17           ; PC := 17
- 16 [-]: OP_LOADBOOL R2 0 1       ; R2 := false; PC := 17
- 17 [-]: OP_LOADBOOL R2 1 0       ; R2 := true
+ 16 [-]: LOADBOOL  R2 0 1       ; R2 := false; PC := 17
+ 17 [-]: LOADBOOL  R2 1 0       ; R2 := true
  18 [-]: NEWTABLE  R3 0 2       ; R3 := {}
  19 [-]: SETTABLE  R3 K4 K5     ; R3["IgnoreCount"] := true
  20 [-]: SETTABLE  R3 K6 R2     ; R3["IsFocused"] := R2
@@ -262,10 +262,10 @@
   2 [-]: GETTABLE  R1 R1 K0     ; R82 := R1[0xdb22ecd5]
   3 [-]: GETGLOBAL R2 K1        ; R2 := 0xae91e43b
   4 [-]: GETTABLE  R3 R0 K2     ; R3 := R0["AbilityIndex"]
-  5 [-]: OP_LOADBOOL R4 0 0       ; R4 := false
+  5 [-]: LOADBOOL  R4 0 0       ; R4 := false
   6 [-]: GETTABLE  R5 R0 K3     ; R5 := R0["Suit"]
-  7 [-]: OP_LOADBOOL R6 1 0       ; R6 := true
-  8 [-]: OP_LOADBOOL R7 1 0       ; R7 := true
+  7 [-]: LOADBOOL  R6 1 0       ; R6 := true
+  8 [-]: LOADBOOL  R7 1 0       ; R7 := true
   9 [-]: LOADNIL   R8 R8        ; R8 := nil
  10 [-]: GETTABLE  R9 R0 K4     ; R9 := R0["Ability"]
  11 [-]: CALL      R1 9 2       ; R1 := R1(R2,R3,R4,R5,R6,R7,R8,R9)
@@ -275,7 +275,7 @@
  15 [-]: GETUPVAL  R2 U1        ; R2 := U1
  16 [-]: SELF      R2 R2 K9     ; R3 := R2; R2 := R2[0xbad4316f]
  17 [-]: MOVE      R4 R1        ; R4 := R1
- 18 [-]: OP_LOADBOOL R5 1 0       ; R5 := true
+ 18 [-]: LOADBOOL  R5 1 0       ; R5 := true
  19 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
  20 [-]: GETUPVAL  R2 U1        ; R2 := U1
  21 [-]: SELF      R2 R2 K10    ; R3 := R2; R2 := R2[0x71e9ac81]
@@ -332,13 +332,13 @@
  38 [-]: GETUPVAL  R1 U6        ; R1 := U6
  39 [-]: GETTABLE  R1 R1 K12    ; R82 := R1[0x5d10207d]
  40 [-]: LOADK     R2 9         ; R2 := 9.000000
- 41 [-]: OP_LOADBOOL R3 1 0       ; R3 := true
+ 41 [-]: LOADBOOL  R3 1 0       ; R3 := true
  42 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
  43 [-]: SETTABLE  R0 K11 R1    ; R0["FloatingContent"] := R1
  44 [-]: GETUPVAL  R1 U6        ; R1 := U6
  45 [-]: GETTABLE  R1 R1 K12    ; R82 := R1[0x5d10207d]
  46 [-]: LOADK     R2 10        ; R2 := 10.000000
- 47 [-]: OP_LOADBOOL R3 1 0       ; R3 := true
+ 47 [-]: LOADBOOL  R3 1 0       ; R3 := true
  48 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
  49 [-]: SETTABLE  R0 K14 R1    ; R0["FloatingContentHighlight"] := R1
  50 [-]: SETUPVAL  R0 U5        ; U82 := 

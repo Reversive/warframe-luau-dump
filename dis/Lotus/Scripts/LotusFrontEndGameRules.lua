@@ -178,7 +178,7 @@
  65 [-]: MOVE      R14 R9       ; R14 := R9
  66 [-]: MOVE      R15 R5       ; R15 := R5
  67 [-]: MOVE      R16 R6       ; R16 := R6
- 68 [-]: OP_LOADBOOL R17 1 0      ; R17 := true
+ 68 [-]: LOADBOOL  R17 1 0      ; R17 := true
  69 [-]: MOVE      R18 R10      ; R18 := R10
  70 [-]: MOVE      R19 R11      ; R19 := R11
  71 [-]: MOVE      R20 R12      ; R20 := R12

@@ -19,13 +19,13 @@
  10 [-]: GETGLOBAL R3 K0        ; R3 := 0x2d0fad09
  11 [-]: LOADK     R4 K4        ; R4 := "Lotus.Interface.UIUtilities"
  12 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 13 [-]: OP_LOADBOOL R4 0 0       ; R4 := false
+ 13 [-]: LOADBOOL  R4 0 0       ; R4 := false
  14 [-]: LOADNIL   R5 R5        ; R5 := nil
  15 [-]: NEWTABLE  R6 0 0       ; R6 := {}
  16 [-]: NEWTABLE  R7 0 0       ; R7 := {}
  17 [-]: LOADNIL   R8 R9        ; R8 := R9 := nil
- 18 [-]: OP_LOADBOOL R10 0 0      ; R10 := false
- 19 [-]: OP_LOADBOOL R11 0 0      ; R11 := false
+ 18 [-]: LOADBOOL  R10 0 0      ; R10 := false
+ 19 [-]: LOADBOOL  R11 0 0      ; R11 := false
  20 [-]: LOADNIL   R12 R13      ; R12 := R13 := nil
  21 [-]: CLOSURE   R14 0        ; R14 := closure(Function #1)
  22 [-]: MOVE      R0 R6        ; R0 := R6
@@ -181,7 +181,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  9
 
-  1 [-]: OP_LOADBOOL R0 1 0       ; R0 := true
+  1 [-]: LOADBOOL  R0 1 0       ; R0 := true
   2 [-]: SETUPVAL  R0 U0        ; U82 := 
   3 [-]: GETGLOBAL R0 K0        ; R0 := 0x25312c9b
   4 [-]: GETGLOBAL R1 K1        ; R1 := 0xae91e43b
@@ -314,7 +314,7 @@
  27 [-]: LOADK     R4 K16       ; R4 := "ActionsMenu.ActionMenuItem.Image"
  28 [-]: LOADK     R5 1         ; R5 := 1.000000
  29 [-]: CALL      R2 4 2       ; R2 := R2(R3,R4,R5)
- 30 [-]: SETTABLE  R1 K14 R2    ; R1[0xe4162eed] := R2
+ 30 [-]: SETTABLE  R1 K14 R2    ; R1["mOriginalImageYPos"] := R2
  31 [-]: GETUPVAL  R1 U0        ; R1 := U0
  32 [-]: CLOSURE   R2 0         ; R2 := closure(Function #5.1)
  33 [-]: GETUPVAL  R0 U1        ; R0 := U1
@@ -437,13 +437,13 @@
  84 [-]: GETGLOBAL R2 K6        ; R2 := 0xae91e43b
  85 [-]: SELF      R2 R2 K29    ; R3 := R2; R2 := R2[0x42b04007]
  86 [-]: GETTABLE  R4 R0 K8     ; R4 := R0["Title"]
- 87 [-]: OP_LOADBOOL R5 0 0       ; R5 := false
+ 87 [-]: LOADBOOL  R5 0 0       ; R5 := false
  88 [-]: CALL      R2 4 2       ; R2 := R2(R3,R4,R5)
  89 [-]: SETTABLE  R1 K28 R2    ; R1["Name"] := R2
  90 [-]: GETGLOBAL R2 K6        ; R2 := 0xae91e43b
  91 [-]: SELF      R2 R2 K29    ; R3 := R2; R2 := R2[0x42b04007]
  92 [-]: GETTABLE  R4 R0 K31    ; R4 := R0["Desc"]
- 93 [-]: OP_LOADBOOL R5 0 0       ; R5 := false
+ 93 [-]: LOADBOOL  R5 0 0       ; R5 := false
  94 [-]: CALL      R2 4 2       ; R2 := R2(R3,R4,R5)
  95 [-]: SETTABLE  R1 K30 R2    ; R1["LocalizedDesc"] := R2
  96 [-]: GETUPVAL  R2 U2        ; R2 := U2
@@ -474,7 +474,7 @@
 121 [-]: LOADK     R11 K34      ; R11 := "Outline"
 122 [-]: LOADK     R12 13       ; R12 := 13.000000
 123 [-]: CALL      R8 5 2       ; R8 := R8(R9,R10,R11,R12)
-124 [-]: OP_LOADBOOL R9 1 0       ; R9 := true
+124 [-]: LOADBOOL  R9 1 0       ; R9 := true
 125 [-]: CALL      R2 8 1       ; R2(R3,R4,R5,R6,R7,R8,R9)
 126 [-]: GETGLOBAL R2 K35       ; R2 := _T
 127 [-]: SETTABLE  R2 K36 R1    ; R2["InfoPopup_Data"] := R1
@@ -630,12 +630,12 @@
   7 [-]: GETTABLE  R3 R0 K2     ; R3 := R0["Id"]
   8 [-]: EQ        1 R2 R3      ; if R2 == R3 then PC := 11
   9 [-]: JMP       11           ; PC := 11
- 10 [-]: OP_LOADBOOL R2 0 1       ; R2 := false; PC := 11
- 11 [-]: OP_LOADBOOL R2 1 0       ; R2 := true
+ 10 [-]: LOADBOOL  R2 0 1       ; R2 := false; PC := 11
+ 11 [-]: LOADBOOL  R2 1 0       ; R2 := true
  12 [-]: GETGLOBAL R3 K3        ; R3 := 0xae91e43b
  13 [-]: SELF      R3 R3 K4     ; R4 := R3; R3 := R3[0x42b04007]
  14 [-]: GETTABLE  R5 R0 K5     ; R5 := R0["Title"]
- 15 [-]: OP_LOADBOOL R6 0 0       ; R6 := false
+ 15 [-]: LOADBOOL  R6 0 0       ; R6 := false
  16 [-]: CALL      R3 4 2       ; R3 := R3(R4,R5,R6)
  17 [-]: GETGLOBAL R4 K3        ; R4 := 0xae91e43b
  18 [-]: SELF      R4 R4 K6     ; R5 := R4; R4 := R4[0xe261aa96]
@@ -665,8 +665,8 @@
  42 [-]: GETTABLE  R4 R0 K12    ; R4 := R0["LockedMsg"]
  43 [-]: EQ        0 R4 K1      ; if R4 ~= nil then PC := 46
  44 [-]: JMP       46           ; PC := 46
- 45 [-]: OP_LOADBOOL R4 0 1       ; R4 := false; PC := 46
- 46 [-]: OP_LOADBOOL R4 1 0       ; R4 := true
+ 45 [-]: LOADBOOL  R4 0 1       ; R4 := false; PC := 46
+ 46 [-]: LOADBOOL  R4 1 0       ; R4 := true
  47 [-]: GETGLOBAL R5 K3        ; R5 := 0xae91e43b
  48 [-]: SELF      R5 R5 K13    ; R6 := R5; R5 := R5[0xc0a3774b]
  49 [-]: GETTABLE  R7 R0 K7     ; R7 := R0["mClipName"]
@@ -679,12 +679,12 @@
  56 [-]: GETGLOBAL R5 K3        ; R5 := 0xae91e43b
  57 [-]: SELF      R5 R5 K4     ; R6 := R5; R5 := R5[0x42b04007]
  58 [-]: GETTABLE  R7 R0 K12    ; R7 := R0["LockedMsg"]
- 59 [-]: OP_LOADBOOL R8 0 0       ; R8 := false
+ 59 [-]: LOADBOOL  R8 0 0       ; R8 := false
  60 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
  61 [-]: GETGLOBAL R6 K3        ; R6 := 0xae91e43b
  62 [-]: SELF      R6 R6 K4     ; R7 := R6; R6 := R6[0x42b04007]
  63 [-]: LOADK     R8 K14       ; R8 := "<LOCKED> "
- 64 [-]: OP_LOADBOOL R9 1 0       ; R9 := true
+ 64 [-]: LOADBOOL  R9 1 0       ; R9 := true
  65 [-]: CALL      R6 4 2       ; R6 := R6(R7,R8,R9)
  66 [-]: GETGLOBAL R7 K8        ; R7 := 0x5f0788c4
  67 [-]: MOVE      R8 R5        ; R8 := R5
@@ -705,8 +705,8 @@
  82 [-]: GETTABLE  R11 R0 K16   ; R11 := R0["BtnCountMode"]
  83 [-]: EQ        1 R11 K17    ; if R11 == true then PC := 86
  84 [-]: JMP       86           ; PC := 86
- 85 [-]: OP_LOADBOOL R11 0 1      ; R11 := false; PC := 86
- 86 [-]: OP_LOADBOOL R11 1 0      ; R11 := true
+ 85 [-]: LOADBOOL  R11 0 1      ; R11 := false; PC := 86
+ 86 [-]: LOADBOOL  R11 1 0      ; R11 := true
  87 [-]: CALL      R6 6 1       ; R6(R7,R8,R9,R10,R11)
  88 [-]: GETTABLE  R6 R0 K16    ; R6 := R0["BtnCountMode"]
  89 [-]: TEST      R6 0         ; if not R6 then PC := 136
@@ -738,7 +738,7 @@
 115 [-]: LOADK     R11 K26      ; R11 := "<CHECKMARK_NO_BORDER>"
 116 [-]: LOADK     R12 K27      ; R12 := "<CHECKMARK_FAIL_NO_BORDER>"
 117 [-]: CALL      R9 4 2       ; R9 := R9(R10,R11,R12)
-118 [-]: OP_LOADBOOL R10 1 0      ; R10 := true
+118 [-]: LOADBOOL  R10 1 0      ; R10 := true
 119 [-]: CALL      R7 4 2       ; R7 := R7(R8,R9,R10)
 120 [-]: CONCAT    R6 R6 R7     ; R6 := R6 .. R7
 121 [-]: GETGLOBAL R7 K3        ; R7 := 0xae91e43b
@@ -809,8 +809,8 @@
 186 [-]: GETTABLE  R13 R0 K35   ; R13 := R0["ImageAlpha"]
 187 [-]: EQ        0 R13 K1     ; if R13 ~= nil then PC := 190
 188 [-]: JMP       190          ; PC := 190
-189 [-]: OP_LOADBOOL R13 0 1      ; R13 := false; PC := 190
-190 [-]: OP_LOADBOOL R13 1 0      ; R13 := true
+189 [-]: LOADBOOL  R13 0 1      ; R13 := false; PC := 190
+190 [-]: LOADBOOL  R13 1 0      ; R13 := true
 191 [-]: GETTABLE  R14 R0 K35   ; R14 := R0["ImageAlpha"]
 192 [-]: LOADK     R15 100      ; R15 := 100.000000
 193 [-]: CALL      R12 4 0      ; R12,... := R12(R13,R14,R15)
@@ -827,8 +827,8 @@
 204 [-]: GETTABLE  R14 R0 K37   ; R14 := R0["ImageYOffset"]
 205 [-]: EQ        0 R14 K1     ; if R14 ~= nil then PC := 208
 206 [-]: JMP       208          ; PC := 208
-207 [-]: OP_LOADBOOL R14 0 1      ; R14 := false; PC := 208
-208 [-]: OP_LOADBOOL R14 1 0      ; R14 := true
+207 [-]: LOADBOOL  R14 0 1      ; R14 := false; PC := 208
+208 [-]: LOADBOOL  R14 1 0      ; R14 := true
 209 [-]: GETTABLE  R15 R0 K37   ; R15 := R0["ImageYOffset"]
 210 [-]: LOADK     R16 0        ; R16 := 0.000000
 211 [-]: CALL      R13 4 2      ; R13 := R13(R14,R15,R16)
@@ -940,7 +940,7 @@
   7 [-]: SELF      R4 R4 K0     ; R5 := R4; R4 := R4[0xbad4316f]
   8 [-]: GETUPVAL  R6 U0        ; R6 := U0
   9 [-]: GETTABLE  R6 R6 R3     ; R6 := R6[R3]
- 10 [-]: OP_LOADBOOL R7 1 0       ; R7 := true
+ 10 [-]: LOADBOOL  R7 1 0       ; R7 := true
  11 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
  12 [-]: FORLOOP   R0 6         ; R0 += R2; if R0 <= R1 then begin PC := 6; R3 := R0 end
  13 [-]: GETUPVAL  R4 U1        ; R4 := U1
@@ -1059,7 +1059,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
-  1 [-]: OP_LOADBOOL R0 0 0       ; R0 := false
+  1 [-]: LOADBOOL  R0 0 0       ; R0 := false
   2 [-]: SETUPVAL  R0 U0        ; U82 := 
   3 [-]: RETURN    R0 1         ; return 
 
@@ -1073,7 +1073,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  6
 
-  1 [-]: OP_LOADBOOL R0 1 0       ; R0 := true
+  1 [-]: LOADBOOL  R0 1 0       ; R0 := true
   2 [-]: SETUPVAL  R0 U0        ; U82 := 
   3 [-]: GETUPVAL  R0 U1        ; R0 := U1
   4 [-]: GETTABLE  R0 R0 K0     ; R82 := R0[0x659d451f]
@@ -1084,31 +1084,31 @@
   9 [-]: GETUPVAL  R1 U3        ; R1 := U3
  10 [-]: GETTABLE  R1 R1 K4     ; R82 := R1[0x5d10207d]
  11 [-]: LOADK     R2 6         ; R2 := 6.000000
- 12 [-]: OP_LOADBOOL R3 1 0       ; R3 := true
+ 12 [-]: LOADBOOL  R3 1 0       ; R3 := true
  13 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
  14 [-]: SETTABLE  R0 K3 R1     ; R0["Content"] := R1
  15 [-]: GETUPVAL  R1 U3        ; R1 := U3
  16 [-]: GETTABLE  R1 R1 K4     ; R82 := R1[0x5d10207d]
  17 [-]: LOADK     R2 2         ; R2 := 2.000000
- 18 [-]: OP_LOADBOOL R3 1 0       ; R3 := true
+ 18 [-]: LOADBOOL  R3 1 0       ; R3 := true
  19 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
  20 [-]: SETTABLE  R0 K6 R1     ; R0["Background1"] := R1
  21 [-]: GETUPVAL  R1 U3        ; R1 := U3
  22 [-]: GETTABLE  R1 R1 K4     ; R82 := R1[0x5d10207d]
  23 [-]: LOADK     R2 1         ; R2 := 1.000000
- 24 [-]: OP_LOADBOOL R3 1 0       ; R3 := true
+ 24 [-]: LOADBOOL  R3 1 0       ; R3 := true
  25 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
  26 [-]: SETTABLE  R0 K7 R1     ; R0["BackerHighlight"] := R1
  27 [-]: GETUPVAL  R1 U3        ; R1 := U3
  28 [-]: GETTABLE  R1 R1 K4     ; R82 := R1[0x5d10207d]
  29 [-]: LOADK     R2 9         ; R2 := 9.000000
- 30 [-]: OP_LOADBOOL R3 1 0       ; R3 := true
+ 30 [-]: LOADBOOL  R3 1 0       ; R3 := true
  31 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
  32 [-]: SETTABLE  R0 K8 R1     ; R0["FloatingContent"] := R1
  33 [-]: GETUPVAL  R1 U3        ; R1 := U3
  34 [-]: GETTABLE  R1 R1 K4     ; R82 := R1[0x5d10207d]
  35 [-]: LOADK     R2 10        ; R2 := 10.000000
- 36 [-]: OP_LOADBOOL R3 1 0       ; R3 := true
+ 36 [-]: LOADBOOL  R3 1 0       ; R3 := true
  37 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
  38 [-]: SETTABLE  R0 K9 R1     ; R0["FloatingContentHighlight"] := R1
  39 [-]: SETUPVAL  R0 U2        ; U82 := 
@@ -1233,7 +1233,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
-  1 [-]: OP_LOADBOOL R0 1 0       ; R0 := true
+  1 [-]: LOADBOOL  R0 1 0       ; R0 := true
   2 [-]: SETUPVAL  R0 U0        ; U82 := 
   3 [-]: RETURN    R0 1         ; return 
 
@@ -1287,7 +1287,7 @@
  38 [-]: SETUPVAL  R0 U3        ; U82 := 
  39 [-]: GETUPVAL  R0 U4        ; R0 := U4
  40 [-]: CALL      R0 1 1       ; R0()
- 41 [-]: OP_LOADBOOL R0 1 0       ; R0 := true
+ 41 [-]: LOADBOOL  R0 1 0       ; R0 := true
  42 [-]: SETUPVAL  R0 U1        ; U82 := 
  43 [-]: RETURN    R0 1         ; return 
 
@@ -1443,7 +1443,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
-  1 [-]: OP_LOADBOOL R0 1 0       ; R0 := true
+  1 [-]: LOADBOOL  R0 1 0       ; R0 := true
   2 [-]: RETURN    R0 2         ; return R0
   3 [-]: RETURN    R0 1         ; return 
 

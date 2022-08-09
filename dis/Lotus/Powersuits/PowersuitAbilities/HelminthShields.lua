@@ -116,9 +116,9 @@
  11 [-]: LOADK     R7 K5        ; R7 := "/Lotus/Language/Game/AbilityErrorNotReady"
  12 [-]: CALL      R6 2 0       ; R6,... := R6(R7)
  13 [-]: CALL      R4 0 1       ; R4(R5,...)
- 14 [-]: OP_LOADBOOL R4 0 0       ; R4 := false
+ 14 [-]: LOADBOOL  R4 0 0       ; R4 := false
  15 [-]: RETURN    R4 2         ; return R4
- 16 [-]: OP_LOADBOOL R4 1 0       ; R4 := true
+ 16 [-]: LOADBOOL  R4 1 0       ; R4 := true
  17 [-]: RETURN    R4 2         ; return R4
  18 [-]: RETURN    R0 1         ; return 
 
@@ -145,17 +145,17 @@
  11 [-]: MOVE      R10 R0       ; R10 := R0
  12 [-]: CALL      R4 7 1       ; R4(R5,R6,R7,R8,R9,R10)
  13 [-]: SELF      R4 R0 K6     ; R5 := R0; R4 := R0[0x68b88e58]
- 14 [-]: OP_LOADBOOL R6 1 0       ; R6 := true
+ 14 [-]: LOADBOOL  R6 1 0       ; R6 := true
  15 [-]: CALL      R4 3 1       ; R4(R5,R6)
  16 [-]: GETUPVAL  R4 U1        ; R4 := U1
  17 [-]: GETTABLE  R4 R4 K7     ; R82 := R4[0x8d11e79e]
  18 [-]: MOVE      R5 R0        ; R5 := R0
  19 [-]: GETGLOBAL R6 K8        ; R6 := 0x0ed8b456
  20 [-]: LOADK     R7 K9        ; R7 := "PowerCast"
- 21 [-]: OP_LOADBOOL R8 0 0       ; R8 := false
+ 21 [-]: LOADBOOL  R8 0 0       ; R8 := false
  22 [-]: LOADK     R9 2         ; R9 := 2.000000
  23 [-]: LOADK     R10 1        ; R10 := 1.000000
- 24 [-]: OP_LOADBOOL R11 1 0      ; R11 := true
+ 24 [-]: LOADBOOL  R11 1 0      ; R11 := true
  25 [-]: CALL      R4 8 1       ; R4(R5,R6,R7,R8,R9,R10,R11)
  26 [-]: SELF      R4 R1 K0     ; R5 := R1; R4 := R1[0x47901f07]
  27 [-]: GETGLOBAL R6 K11       ; R6 := 0xaba1fa60
@@ -165,7 +165,7 @@
  31 [-]: MOVE      R10 R0       ; R10 := R0
  32 [-]: CALL      R4 7 1       ; R4(R5,R6,R7,R8,R9,R10)
  33 [-]: SELF      R4 R0 K6     ; R5 := R0; R4 := R0[0x68b88e58]
- 34 [-]: OP_LOADBOOL R6 0 0       ; R6 := false
+ 34 [-]: LOADBOOL  R6 0 0       ; R6 := false
  35 [-]: CALL      R4 3 1       ; R4(R5,R6)
  36 [-]: GETGLOBAL R4 K13       ; R4 := 0x89326c93
  37 [-]: SELF      R4 R4 K14    ; R5 := R4; R4 := R4[0x18d05d30]

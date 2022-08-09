@@ -14,9 +14,9 @@
   5 [-]: CALL      R0 3 1       ; R0(R1,R2)
   6 [-]: NEWTABLE  R0 0 2       ; R0 := {}
   7 [-]: CLOSURE   R1 0         ; R1 := closure(Function #1)
-  8 [-]: SETTABLE  R0 K3 R1     ; R0[0x2047cfe7] := R1
+  8 [-]: SETTABLE  R0 K3 R1     ; R0["Fade"] := R1
   9 [-]: CLOSURE   R1 1         ; R1 := closure(Function #2)
- 10 [-]: SETTABLE  R0 K4 R1     ; R0[0x5e651723] := R1
+ 10 [-]: SETTABLE  R0 K4 R1     ; R0["AvatarFade"] := R1
  11 [-]: RETURN    R0 2         ; return R0
  12 [-]: RETURN    R0 1         ; return 
 

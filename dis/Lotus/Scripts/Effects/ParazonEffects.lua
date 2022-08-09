@@ -163,7 +163,7 @@
  94 [-]: CALL      R7 4 1       ; R7(R8,R9,R10)
  95 [-]: SELF      R7 R0 K35    ; R8 := R0; R7 := R0[0x659d451f]
  96 [-]: GETGLOBAL R9 K36       ; R9 := 0x0a8bc95e
- 97 [-]: OP_LOADBOOL R10 0 0      ; R10 := false
+ 97 [-]: LOADBOOL  R10 0 0      ; R10 := false
  98 [-]: CALL      R7 4 1       ; R7(R8,R9,R10)
  99 [-]: LOADK     R7 0         ; R7 := 0.000000
 100 [-]: GETGLOBAL R8 K3        ; R8 := 0x7b998233

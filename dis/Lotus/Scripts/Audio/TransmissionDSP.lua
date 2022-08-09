@@ -15,7 +15,7 @@
   6 [-]: LOADK     R3 K3        ; R3 := "/Lotus/Types/Game/Transmissions/OperatorAdultHudlessTransmission"
   7 [-]: CALL      R2 2 0       ; R2,... := R2(R3)
   8 [-]: SETLIST   R0 0 1       ; R0[(1-1)*FPF+i] := R(0+i), 1 <= i <= 0
-  9 [-]: SETGLOBALHASH R0 K0        ; transmissionTypes := R0
+  9 [-]: SETGLOBAL R0 K0        ; transmissionTypes := R0
  10 [-]: CLOSURE   R0 0         ; R0 := closure(Function #1)
  11 [-]: SETGLOBAL R0 K4        ; DisableDSP := R0
  12 [-]: RETURN    R0 1         ; return 
@@ -50,7 +50,7 @@
  18 [-]: CALL      R1 2 2       ; R1 := R1(R2)
  19 [-]: TEST      R1 1         ; if R1 then PC := 64
  20 [-]: JMP       64           ; PC := 64
- 21 [-]: OP_LOADBOOL R1 0 0       ; R1 := false
+ 21 [-]: LOADBOOL  R1 0 0       ; R1 := false
  22 [-]: LOADK     R2 1         ; R2 := 1.000000
  23 [-]: GETGLOBAL R3 K5        ; R3 := transmissionTypes
  24 [-]: LEN       R3 R3        ; R3 := # R3
@@ -70,7 +70,7 @@
  38 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
  39 [-]: TEST      R6 0         ; if not R6 then PC := 43
  40 [-]: JMP       43           ; PC := 43
- 41 [-]: OP_LOADBOOL R1 1 0       ; R1 := true
+ 41 [-]: LOADBOOL  R1 1 0       ; R1 := true
  42 [-]: JMP       44           ; PC := 44
  43 [-]: FORLOOP   R2 27        ; R2 += R4; if R2 <= R3 then begin PC := 27; R5 := R2 end
  44 [-]: TEST      R1 0         ; if not R1 then PC := 64

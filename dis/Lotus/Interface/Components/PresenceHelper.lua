@@ -13,9 +13,9 @@
   4 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["seeall"]
   5 [-]: CALL      R0 3 1       ; R0(R1,R2)
   6 [-]: LOADK     R0 60        ; R0 := 60.000000
-  7 [-]: SETGLOBALHASH R0 K3        ; LITE_PRESENCE_RESYNC_INTERVAL := R0
+  7 [-]: SETGLOBAL R0 K3        ; LITE_PRESENCE_RESYNC_INTERVAL := R0
   8 [-]: LOADK     R0 15        ; R0 := 15.000000
-  9 [-]: SETGLOBALHASH R0 K4        ; RICH_PRESENCE_RESYNC_INTERVAL := R0
+  9 [-]: SETGLOBAL R0 K4        ; RICH_PRESENCE_RESYNC_INTERVAL := R0
  10 [-]: CLOSURE   R0 0         ; R0 := closure(Function #1)
  11 [-]: SETGLOBAL R0 K5        ; Create := R0
  12 [-]: RETURN    R0 1         ; return 
@@ -94,7 +94,7 @@
   7 [-]: CALL      R2 2 2       ; R2 := R2(R3)
   8 [-]: TEST      R2 0         ; if not R2 then PC := 12
   9 [-]: JMP       12           ; PC := 12
- 10 [-]: OP_LOADBOOL R2 0 0       ; R2 := false
+ 10 [-]: LOADBOOL  R2 0 0       ; R2 := false
  11 [-]: RETURN    R2 2         ; return R2
  12 [-]: SELF      R2 R1 K3     ; R3 := R1; R2 := R1[0x80563238]
  13 [-]: CALL      R2 2 2       ; R2 := R2(R3)
@@ -103,7 +103,7 @@
  16 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  17 [-]: TEST      R3 0         ; if not R3 then PC := 21
  18 [-]: JMP       21           ; PC := 21
- 19 [-]: OP_LOADBOOL R3 0 0       ; R3 := false
+ 19 [-]: LOADBOOL  R3 0 0       ; R3 := false
  20 [-]: RETURN    R3 2         ; return R3
  21 [-]: LOADK     R3 1         ; R3 := 1.000000
  22 [-]: GETTABLE  R4 R0 K4     ; R4 := R0["mMoviesToSync"]
@@ -126,10 +126,10 @@
  39 [-]: CALL      R8 4 2       ; R8 := R8(R9,R10,R11)
  40 [-]: TEST      R8 0         ; if not R8 then PC := 44
  41 [-]: JMP       44           ; PC := 44
- 42 [-]: OP_LOADBOOL R8 1 0       ; R8 := true
+ 42 [-]: LOADBOOL  R8 1 0       ; R8 := true
  43 [-]: RETURN    R8 2         ; return R8
  44 [-]: FORLOOP   R3 26        ; R3 += R5; if R3 <= R4 then begin PC := 26; R6 := R3 end
- 45 [-]: OP_LOADBOOL R8 0 0       ; R8 := false
+ 45 [-]: LOADBOOL  R8 0 0       ; R8 := false
  46 [-]: RETURN    R8 2         ; return R8
  47 [-]: RETURN    R0 1         ; return 
 

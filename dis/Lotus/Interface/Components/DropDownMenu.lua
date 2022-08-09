@@ -119,9 +119,9 @@
  91 [-]: MOVE      R0 R12       ; R0 := R12
  92 [-]: SETTABLE  R12 K48 R14  ; R12["UpdateSelectedText"] := R14
  93 [-]: GETTABLE  R14 R12 K50  ; R14 := R12["OnSelected"]
- 94 [-]: SETTABLE  R12 K49 R14  ; R12[0x00000001] := R14
+ 94 [-]: SETTABLE  R12 K49 R14  ; R12["ButtonOnSelected"] := R14
  95 [-]: GETTABLE  R14 R12 K48  ; R14 := R12["UpdateSelectedText"]
- 96 [-]: SETTABLE  R12 K50 R14  ; R12[0x00000001] := R14
+ 96 [-]: SETTABLE  R12 K50 R14  ; R12["OnSelected"] := R14
  97 [-]: GETTABLE  R14 R12 K52  ; R14 := R12["OnDraw"]
  98 [-]: SETTABLE  R12 K51 R14  ; R12["ListOnDraw"] := R14
  99 [-]: CLOSURE   R14 9        ; R14 := closure(Function #1.10)
@@ -159,7 +159,7 @@
 131 [-]: GETTABLE  R17 R17 K63  ; R17 := R17["UIMaterial_Button"]
 132 [-]: CALL      R14 4 1      ; R14(R15,R16,R17)
 133 [-]: SELF      R14 R12 K64  ; R15 := R12; R14 := R12[0xf20f1913]
-134 [-]: OP_LOADBOOL R16 0 0      ; R16 := false
+134 [-]: LOADBOOL  R16 0 0      ; R16 := false
 135 [-]: CALL      R14 3 1      ; R14(R15,R16)
 136 [-]: SELF      R14 R12 K65  ; R15 := R12; R14 := R12[0xa0ed0e4c]
 137 [-]: CALL      R14 2 1      ; R14(R15)
@@ -285,7 +285,7 @@
   1 [-]: GETUPVAL  R1 U0        ; R1 := U0
   2 [-]: GETTABLE  R1 R1 K0     ; R82 := R1[0x5d10207d]
   3 [-]: LOADK     R2 2         ; R2 := 2.000000
-  4 [-]: OP_LOADBOOL R3 1 0       ; R3 := true
+  4 [-]: LOADBOOL  R3 1 0       ; R3 := true
   5 [-]: GETTABLE  R4 R0 K2     ; R4 := R0["mApplyThemes"]
   6 [-]: CALL      R1 4 2       ; R1 := R1(R2,R3,R4)
   7 [-]: GETUPVAL  R2 U1        ; R2 := U1
@@ -474,7 +474,7 @@
   9 [-]: GETTABLE  R4 R0 K4     ; R4 := R0["mMovie"]
  10 [-]: SELF      R4 R4 K5     ; R5 := R4; R4 := R4[0x42b04007]
  11 [-]: GETTABLE  R6 R0 K3     ; R6 := R0["mSelectedPrefix"]
- 12 [-]: OP_LOADBOOL R7 1 0       ; R7 := true
+ 12 [-]: LOADBOOL  R7 1 0       ; R7 := true
  13 [-]: NEWTABLE  R8 0 1       ; R8 := {}
  14 [-]: SETTABLE  R8 K6 R3     ; R8["SELECTION"] := R3
  15 [-]: CALL      R4 5 2       ; R4 := R4(R5,R6,R7,R8)
@@ -490,21 +490,21 @@
  25 [-]: JMP       30           ; PC := 30
  26 [-]: GETTABLE  R4 R2 K8     ; R4 := R2["mButton"]
  27 [-]: SELF      R4 R4 K9     ; R5 := R4; R4 := R4[0x0b6eac57]
- 28 [-]: OP_LOADBOOL R6 0 0       ; R6 := false
+ 28 [-]: LOADBOOL  R6 0 0       ; R6 := false
  29 [-]: CALL      R4 3 1       ; R4(R5,R6)
  30 [-]: GETTABLE  R4 R1 K8     ; R4 := R1["mButton"]
  31 [-]: EQ        1 R4 K0      ; if R4 == nil then PC := 37
  32 [-]: JMP       37           ; PC := 37
  33 [-]: GETTABLE  R4 R1 K8     ; R4 := R1["mButton"]
  34 [-]: SELF      R4 R4 K9     ; R5 := R4; R4 := R4[0x0b6eac57]
- 35 [-]: OP_LOADBOOL R6 1 0       ; R6 := true
+ 35 [-]: LOADBOOL  R6 1 0       ; R6 := true
  36 [-]: CALL      R4 3 1       ; R4(R5,R6)
  37 [-]: GETTABLE  R4 R0 K10    ; R4 := R0["mMainButton"]
  38 [-]: SELF      R4 R4 K11    ; R5 := R4; R4 := R4[0x9b71e815]
  39 [-]: MOVE      R6 R3        ; R6 := R3
  40 [-]: CALL      R4 3 1       ; R4(R5,R6)
  41 [-]: SELF      R4 R0 K12    ; R5 := R0; R4 := R0[0xf20f1913]
- 42 [-]: OP_LOADBOOL R6 0 0       ; R6 := false
+ 42 [-]: LOADBOOL  R6 0 0       ; R6 := false
  43 [-]: CALL      R4 3 1       ; R4(R5,R6)
  44 [-]: SELF      R4 R0 K13    ; R5 := R0; R4 := R0[0x355bc216]
  45 [-]: MOVE      R6 R1        ; R6 := R1
@@ -577,8 +577,8 @@
  54 [-]: GETTABLE  R6 R0 K27    ; R6 := R0["mSelectedElement"]
  55 [-]: EQ        1 R6 R1      ; if R6 == R1 then PC := 58
  56 [-]: JMP       58           ; PC := 58
- 57 [-]: OP_LOADBOOL R6 0 1       ; R6 := false; PC := 58
- 58 [-]: OP_LOADBOOL R6 1 0       ; R6 := true
+ 57 [-]: LOADBOOL  R6 0 1       ; R6 := false; PC := 58
+ 58 [-]: LOADBOOL  R6 1 0       ; R6 := true
  59 [-]: CALL      R4 3 1       ; R4(R5,R6)
  60 [-]: SELF      R4 R3 K28    ; R5 := R3; R4 := R3[0x6b2ab44e]
  61 [-]: LOADK     R6 K29       ; R6 := "left"
@@ -701,8 +701,8 @@
  38 [-]: JMP       41           ; PC := 41
  39 [-]: LT        0 R5 R7      ; if R5 >= R7 then PC := 42
  40 [-]: JMP       42           ; PC := 42
- 41 [-]: OP_LOADBOOL R8 0 1       ; R8 := false; PC := 42
- 42 [-]: OP_LOADBOOL R8 1 0       ; R8 := true
+ 41 [-]: LOADBOOL  R8 0 1       ; R8 := false; PC := 42
+ 42 [-]: LOADBOOL  R8 1 0       ; R8 := true
  43 [-]: RETURN    R8 2         ; return R8
  44 [-]: RETURN    R0 1         ; return 
 
@@ -734,7 +734,7 @@
  16 [-]: TEST      R1 1         ; if R1 then PC := 21
  17 [-]: JMP       21           ; PC := 21
  18 [-]: SELF      R1 R0 K4     ; R2 := R0; R1 := R0[0xf20f1913]
- 19 [-]: OP_LOADBOOL R3 0 0       ; R3 := false
+ 19 [-]: LOADBOOL  R3 0 0       ; R3 := false
  20 [-]: CALL      R1 3 1       ; R1(R2,R3)
  21 [-]: RETURN    R0 1         ; return 
 

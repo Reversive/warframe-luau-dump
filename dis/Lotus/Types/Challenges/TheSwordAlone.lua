@@ -59,9 +59,9 @@
  28 [-]: CALL      R3 0 2       ; R3 := R3(R4,...)
  29 [-]: TEST      R3 0         ; if not R3 then PC := 33
  30 [-]: JMP       33           ; PC := 33
- 31 [-]: OP_LOADBOOL R3 1 0       ; R3 := true
+ 31 [-]: LOADBOOL  R3 1 0       ; R3 := true
  32 [-]: RETURN    R3 2         ; return R3
- 33 [-]: OP_LOADBOOL R3 0 0       ; R3 := false
+ 33 [-]: LOADBOOL  R3 0 0       ; R3 := false
  34 [-]: RETURN    R3 2         ; return R3
  35 [-]: RETURN    R0 1         ; return 
 

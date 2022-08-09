@@ -31,7 +31,7 @@
  22 [-]: SETTABLE  R5 K11 K12   ; R5["DAILY"] := 1.000000
  23 [-]: SETTABLE  R5 K13 K14   ; R5["WEEKLY"] := 2.000000
  24 [-]: SETTABLE  R5 K15 K16   ; R5["HARDCORE"] := 3.000000
- 25 [-]: SETGLOBALHASH R5 K10       ; NW_CHALLENGE_TYPE := R5
+ 25 [-]: SETGLOBAL R5 K10       ; NW_CHALLENGE_TYPE := R5
  26 [-]: CLOSURE   R5 0         ; R5 := closure(Function #1)
  27 [-]: SETGLOBAL R5 K17       ; IsValidSeasonChallenge := R5
  28 [-]: CLOSURE   R5 1         ; R5 := closure(Function #2)
@@ -71,7 +71,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  13
 
-  1 [-]: OP_LOADBOOL R5 0 0       ; R5 := false
+  1 [-]: LOADBOOL  R5 0 0       ; R5 := false
   2 [-]: GETTABLE  R6 R0 K0     ; R6 := R0["mChallenge"]
   3 [-]: GETGLOBAL R7 K1        ; R7 := 0x7b998233
   4 [-]: MOVE      R8 R6        ; R8 := R6
@@ -90,11 +90,11 @@
  17 [-]: CALL      R7 2 2       ; R7 := R7(R8)
  18 [-]: LT        1 K5 R7      ; if 0.000000 < R7 then PC := 21
  19 [-]: JMP       21           ; PC := 21
- 20 [-]: OP_LOADBOOL R5 0 1       ; R5 := false; PC := 21
- 21 [-]: OP_LOADBOOL R5 1 0       ; R5 := true
+ 20 [-]: LOADBOOL  R5 0 1       ; R5 := false; PC := 21
+ 21 [-]: LOADBOOL  R5 1 0       ; R5 := true
  22 [-]: TEST      R5 0         ; if not R5 then PC := 53
  23 [-]: JMP       53           ; PC := 53
- 24 [-]: OP_LOADBOOL R7 0 0       ; R7 := false
+ 24 [-]: LOADBOOL  R7 0 0       ; R7 := false
  25 [-]: TEST      R4 1         ; if R4 then PC := 29
  26 [-]: JMP       29           ; PC := 29
  27 [-]: EQ        0 R4 K7      ; if R4 ~= nil then PC := 37
@@ -105,9 +105,9 @@
  32 [-]: CALL      R8 0 2       ; R8 := R8(R9,...)
  33 [-]: EQ        0 R8 R2      ; if R8 ~= R2 then PC := 36
  34 [-]: JMP       36           ; PC := 36
- 35 [-]: OP_LOADBOOL R7 0 1       ; R7 := false; PC := 36
- 36 [-]: OP_LOADBOOL R7 1 0       ; R7 := true
- 37 [-]: OP_LOADBOOL R8 0 0       ; R8 := false
+ 35 [-]: LOADBOOL  R7 0 1       ; R7 := false; PC := 36
+ 36 [-]: LOADBOOL  R7 1 0       ; R7 := true
+ 37 [-]: LOADBOOL  R8 0 0       ; R8 := false
  38 [-]: TEST      R4 1         ; if R4 then PC := 48
  39 [-]: JMP       48           ; PC := 48
  40 [-]: SELF      R9 R1 K10    ; R10 := R1; R9 := R1[0x05aa1d92]
@@ -116,8 +116,8 @@
  43 [-]: CALL      R9 0 2       ; R9 := R9(R10,...)
  44 [-]: EQ        0 R9 R3      ; if R9 ~= R3 then PC := 47
  45 [-]: JMP       47           ; PC := 47
- 46 [-]: OP_LOADBOOL R8 0 1       ; R8 := false; PC := 47
- 47 [-]: OP_LOADBOOL R8 1 0       ; R8 := true
+ 46 [-]: LOADBOOL  R8 0 1       ; R8 := false; PC := 47
+ 47 [-]: LOADBOOL  R8 1 0       ; R8 := true
  48 [-]: TEST      R5 0         ; if not R5 then PC := 53
  49 [-]: JMP       53           ; PC := 53
  50 [-]: TESTSET   R5 R7 1      ; if R7 then PC := 53 else R5 := R7
@@ -197,12 +197,12 @@
  59 [-]: GETTABLE  R15 R15 K19  ; R15 := R15["DAILY"]
  60 [-]: EQ        1 R2 R15     ; if R2 == R15 then PC := 63
  61 [-]: JMP       63           ; PC := 63
- 62 [-]: OP_LOADBOOL R15 0 1      ; R15 := false; PC := 63
- 63 [-]: OP_LOADBOOL R15 1 0      ; R15 := true
+ 62 [-]: LOADBOOL  R15 0 1      ; R15 := false; PC := 63
+ 63 [-]: LOADBOOL  R15 1 0      ; R15 := true
  64 [-]: LOADK     R16 K20      ; R16 := "/Lotus/Language/Menu/Profile_DailyLeaderboards"
  65 [-]: LOADK     R17 K21      ; R17 := "/Lotus/Language/Menu/Profile_WeeklyLeaderboards"
  66 [-]: CALL      R14 4 2      ; R14 := R14(R15,R16,R17)
- 67 [-]: OP_LOADBOOL R15 0 0      ; R15 := false
+ 67 [-]: LOADBOOL  R15 0 0      ; R15 := false
  68 [-]: CALL      R12 4 2      ; R12 := R12(R13,R14,R15)
  69 [-]: SELF      R13 R1 K22   ; R14 := R1; R13 := R1[0x049e611b]
  70 [-]: CALL      R13 2 2      ; R13 := R13(R14)
@@ -212,7 +212,7 @@
  74 [-]: GETTABLE  R2 R13 K23   ; R2 := R13["HARDCORE"]
  75 [-]: SELF      R13 R0 K16   ; R14 := R0; R13 := R0[0x42b04007]
  76 [-]: LOADK     R15 K24      ; R15 := "/Lotus/Language/SystemMessages/WeeklyHardcore"
- 77 [-]: OP_LOADBOOL R16 0 0      ; R16 := false
+ 77 [-]: LOADBOOL  R16 0 0      ; R16 := false
  78 [-]: CALL      R13 4 2      ; R13 := R13(R14,R15,R16)
  79 [-]: MOVE      R12 R13      ; R12 := R13
  80 [-]: GETGLOBAL R13 K1       ; R13 := 0x25d99d89
@@ -225,7 +225,7 @@
  87 [-]: LOADK     R15 K26      ; R15 := " ("
  88 [-]: SELF      R16 R0 K16   ; R17 := R0; R16 := R0[0x42b04007]
  89 [-]: LOADK     R18 K27      ; R18 := "/Lotus/Language/SystemMessages/PastWeekly"
- 90 [-]: OP_LOADBOOL R19 0 0      ; R19 := false
+ 90 [-]: LOADBOOL  R19 0 0      ; R19 := false
  91 [-]: CALL      R16 4 2      ; R16 := R16(R17,R18,R19)
  92 [-]: LOADK     R17 K28      ; R17 := ")"
  93 [-]: CONCAT    R12 R14 R17  ; R12 := R14 .. R15 .. R16 .. R17
@@ -292,7 +292,7 @@
 154 [-]: CALL      R20 2 2      ; R20 := R20(R21)
 155 [-]: LOADK     R21 K46      ; R21 := "_Name"
 156 [-]: CONCAT    R19 R19 R21  ; R19 := R19 .. R20 .. R21
-157 [-]: OP_LOADBOOL R20 1 0      ; R20 := true
+157 [-]: LOADBOOL  R20 1 0      ; R20 := true
 158 [-]: CALL      R17 4 2      ; R17 := R17(R18,R19,R20)
 159 [-]: SETTABLE  R16 K45 R17  ; R16["Name"] := R17
 160 [-]: SELF      R17 R0 K16   ; R18 := R0; R17 := R0[0x42b04007]
@@ -301,7 +301,7 @@
 163 [-]: CALL      R20 2 2      ; R20 := R20(R21)
 164 [-]: LOADK     R21 K48      ; R21 := "_Description"
 165 [-]: CONCAT    R19 R19 R21  ; R19 := R19 .. R20 .. R21
-166 [-]: OP_LOADBOOL R20 1 0      ; R20 := true
+166 [-]: LOADBOOL  R20 1 0      ; R20 := true
 167 [-]: MOVE      R21 R9       ; R21 := R9
 168 [-]: CALL      R17 5 2      ; R17 := R17(R18,R19,R20,R21)
 169 [-]: SETTABLE  R16 K47 R17  ; R16["Desc"] := R17
@@ -310,8 +310,8 @@
 172 [-]: SETTABLE  R16 K51 R8   ; R16["Required"] := R8
 173 [-]: EQ        1 R7 R8      ; if R7 == R8 then PC := 176
 174 [-]: JMP       176          ; PC := 176
-175 [-]: OP_LOADBOOL R17 0 1      ; R17 := false; PC := 176
-176 [-]: OP_LOADBOOL R17 1 0      ; R17 := true
+175 [-]: LOADBOOL  R17 0 1      ; R17 := false; PC := 176
+176 [-]: LOADBOOL  R17 1 0      ; R17 := true
 177 [-]: SETTABLE  R16 K52 R17  ; R16["Completed"] := R17
 178 [-]: GETGLOBAL R17 K54      ; R17 := 0x03f57322
 179 [-]: MOVE      R18 R3       ; R18 := R3
@@ -336,7 +336,7 @@
 198 [-]: JMP       228          ; PC := 228
 199 [-]: SELF      R18 R0 K16   ; R19 := R0; R18 := R0[0x42b04007]
 200 [-]: LOADK     R20 K59      ; R20 := "/Lotus/Language/SystemMessages/ActLocked"
-201 [-]: OP_LOADBOOL R21 1 0      ; R21 := true
+201 [-]: LOADBOOL  R21 1 0      ; R21 := true
 202 [-]: CALL      R18 4 2      ; R18 := R18(R19,R20,R21)
 203 [-]: SETTABLE  R16 K45 R18  ; R16["Name"] := R18
 204 [-]: SETTABLE  R16 K60 R18  ; R16["StandingStr"] := R18
@@ -348,7 +348,7 @@
 210 [-]: CALL      R19 0 2      ; R19 := R19(R20,...)
 211 [-]: SELF      R20 R0 K16   ; R21 := R0; R20 := R0[0x42b04007]
 212 [-]: LOADK     R22 K63      ; R22 := "/Lotus/Language/SystemMessages/ActUnlockRequirement"
-213 [-]: OP_LOADBOOL R23 0 0      ; R23 := false
+213 [-]: LOADBOOL  R23 0 0      ; R23 := false
 214 [-]: NEWTABLE  R24 0 1      ; R24 := {}
 215 [-]: SETTABLE  R24 K64 R19  ; R24["QUEST"] := R19
 216 [-]: CALL      R20 5 2      ; R20 := R20(R21,R22,R23,R24)
@@ -713,8 +713,8 @@
 144 [-]: GETTABLE  R15 R6 K22   ; R15 := R6["Progress"]
 145 [-]: EQ        1 R14 R15    ; if R14 == R15 then PC := 148
 146 [-]: JMP       148          ; PC := 148
-147 [-]: OP_LOADBOOL R14 0 1      ; R14 := false; PC := 148
-148 [-]: OP_LOADBOOL R14 1 0      ; R14 := true
+147 [-]: LOADBOOL  R14 0 1      ; R14 := false; PC := 148
+148 [-]: LOADBOOL  R14 1 0      ; R14 := true
 149 [-]: SETTABLE  R6 K31 R14   ; R6["Completed"] := R14
 150 [-]: TEST      R3 0         ; if not R3 then PC := 174
 151 [-]: JMP       174          ; PC := 174
@@ -737,8 +737,8 @@
 168 [-]: GETTABLE  R15 R6 K22   ; R15 := R6["Progress"]
 169 [-]: EQ        1 R14 R15    ; if R14 == R15 then PC := 172
 170 [-]: JMP       172          ; PC := 172
-171 [-]: OP_LOADBOOL R14 0 1      ; R14 := false; PC := 172
-172 [-]: OP_LOADBOOL R14 1 0      ; R14 := true
+171 [-]: LOADBOOL  R14 0 1      ; R14 := false; PC := 172
+172 [-]: LOADBOOL  R14 1 0      ; R14 := true
 173 [-]: SETTABLE  R6 K31 R14   ; R6["Completed"] := R14
 174 [-]: SELF      R14 R7 K40   ; R15 := R7; R14 := R7[0x791b7e87]
 175 [-]: CALL      R14 2 2      ; R14 := R14(R15)
@@ -787,8 +787,8 @@
   6 [-]: GETTABLE  R8 R8 K3     ; R82 := R8[0x06d055f9]
   7 [-]: EQ        0 R3 K4      ; if R3 ~= nil then PC := 10
   8 [-]: JMP       10           ; PC := 10
-  9 [-]: OP_LOADBOOL R9 0 1       ; R9 := false; PC := 10
- 10 [-]: OP_LOADBOOL R9 1 0       ; R9 := true
+  9 [-]: LOADBOOL  R9 0 1       ; R9 := false; PC := 10
+ 10 [-]: LOADBOOL  R9 1 0       ; R9 := true
  11 [-]: MOVE      R10 R3       ; R10 := R3
  12 [-]: LOADK     R11 K5       ; R11 := "Challenges"
  13 [-]: CALL      R8 4 2       ; R8 := R8(R9,R10,R11)
@@ -826,7 +826,7 @@
  45 [-]: JMP       54           ; PC := 54
  46 [-]: SELF      R10 R0 K16   ; R11 := R0; R10 := R0[0x42b04007]
  47 [-]: MOVE      R12 R9       ; R12 := R9
- 48 [-]: OP_LOADBOOL R13 1 0      ; R13 := true
+ 48 [-]: LOADBOOL  R13 1 0      ; R13 := true
  49 [-]: NEWTABLE  R14 0 1      ; R14 := {}
  50 [-]: SETTABLE  R14 K17 R2   ; R14["COUNT"] := R2
  51 [-]: CALL      R10 5 2      ; R10 := R10(R11,R12,R13,R14)
@@ -834,7 +834,7 @@
  53 [-]: JMP       86           ; PC := 86
  54 [-]: SELF      R10 R0 K16   ; R11 := R0; R10 := R0[0x42b04007]
  55 [-]: MOVE      R12 R5       ; R12 := R5
- 56 [-]: OP_LOADBOOL R13 1 0      ; R13 := true
+ 56 [-]: LOADBOOL  R13 1 0      ; R13 := true
  57 [-]: NEWTABLE  R14 0 1      ; R14 := {}
  58 [-]: SETTABLE  R14 K17 R2   ; R14["COUNT"] := R2
  59 [-]: CALL      R10 5 2      ; R10 := R10(R11,R12,R13,R14)
@@ -850,14 +850,14 @@
  69 [-]: CONCAT    R10 R10 R11  ; R10 := R10 .. R11
  70 [-]: SELF      R11 R0 K16   ; R12 := R0; R11 := R0[0x42b04007]
  71 [-]: MOVE      R13 R10      ; R13 := R10
- 72 [-]: OP_LOADBOOL R14 1 0      ; R14 := true
+ 72 [-]: LOADBOOL  R14 1 0      ; R14 := true
  73 [-]: CALL      R11 4 2      ; R11 := R11(R12,R13,R14)
  74 [-]: EQ        1 R10 R11    ; if R10 == R11 then PC := 86
  75 [-]: JMP       86           ; PC := 86
  76 [-]: GETGLOBAL R12 K19      ; R12 := 0x727f259f
  77 [-]: SELF      R13 R0 K16   ; R14 := R0; R13 := R0[0x42b04007]
  78 [-]: LOADK     R15 K20      ; R15 := "/Lotus/Language/Challenges/Challenge_Complication_Combiner"
- 79 [-]: OP_LOADBOOL R16 1 0      ; R16 := true
+ 79 [-]: LOADBOOL  R16 1 0      ; R16 := true
  80 [-]: NEWTABLE  R17 0 2      ; R17 := {}
  81 [-]: SETTABLE  R17 K21 R5   ; R17["REQUIREMENT"] := R5
  82 [-]: SETTABLE  R17 K22 R11  ; R17["CONDITION"] := R11
@@ -882,7 +882,7 @@
   3 [-]: MOVE      R6 R1        ; R6 := R1
   4 [-]: MOVE      R7 R2        ; R7 := R2
   5 [-]: MOVE      R8 R3        ; R8 := R3
-  6 [-]: OP_LOADBOOL R9 0 0       ; R9 := false
+  6 [-]: LOADBOOL  R9 0 0       ; R9 := false
   7 [-]: TAILCALL  R4 6 0       ; R4,... := R4(R5,R6,R7,R8,R9)
   8 [-]: RETURN    R4 0         ; return R4,...
   9 [-]: RETURN    R0 1         ; return 
@@ -902,7 +902,7 @@
   3 [-]: MOVE      R6 R1        ; R6 := R1
   4 [-]: MOVE      R7 R2        ; R7 := R2
   5 [-]: MOVE      R8 R3        ; R8 := R3
-  6 [-]: OP_LOADBOOL R9 1 0       ; R9 := true
+  6 [-]: LOADBOOL  R9 1 0       ; R9 := true
   7 [-]: TAILCALL  R4 6 0       ; R4,... := R4(R5,R6,R7,R8,R9)
   8 [-]: RETURN    R4 0         ; return R4,...
   9 [-]: RETURN    R0 1         ; return 

@@ -225,8 +225,8 @@
   4 [-]: JMP       8            ; PC := 8
   5 [-]: EQ        0 R2 K1      ; if R2 ~= 0.000000 then PC := 8
   6 [-]: JMP       8            ; PC := 8
-  7 [-]: OP_LOADBOOL R3 0 1       ; R3 := false; PC := 8
-  8 [-]: OP_LOADBOOL R3 1 0       ; R3 := true
+  7 [-]: LOADBOOL  R3 0 1       ; R3 := false; PC := 8
+  8 [-]: LOADBOOL  R3 1 0       ; R3 := true
   9 [-]: RETURN    R3 2         ; return R3
  10 [-]: RETURN    R0 1         ; return 
 
@@ -328,8 +328,8 @@
  29 [-]: GETTABLE  R2 R0 K9     ; R2 := R0["mRightStickDeadZone"]
  30 [-]: LT        1 R2 R1      ; if R2 < R1 then PC := 33
  31 [-]: JMP       33           ; PC := 33
- 32 [-]: OP_LOADBOOL R1 0 1       ; R1 := false; PC := 33
- 33 [-]: OP_LOADBOOL R1 1 0       ; R1 := true
+ 32 [-]: LOADBOOL  R1 0 1       ; R1 := false; PC := 33
+ 33 [-]: LOADBOOL  R1 1 0       ; R1 := true
  34 [-]: RETURN    R1 2         ; return R1
  35 [-]: JMP       38           ; PC := 38
  36 [-]: GETTABLE  R1 R0 K11    ; R1 := R0["mMouseDown"]

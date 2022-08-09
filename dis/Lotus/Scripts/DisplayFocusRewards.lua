@@ -115,7 +115,7 @@
  46 [-]: CONCAT    R3 R3 R4     ; R3 := R3 .. R4
  47 [-]: CALL      R2 2 1       ; R2(R3)
  48 [-]: RETURN    R0 1         ; return 
- 49 [-]: OP_LOADBOOL R2 0 0       ; R2 := false
+ 49 [-]: LOADBOOL  R2 0 0       ; R2 := false
  50 [-]: LOADK     R3 1         ; R3 := 1.000000
  51 [-]: LEN       R4 R1        ; R4 := # R1
  52 [-]: LOADK     R5 1         ; R5 := 1.000000
@@ -126,7 +126,7 @@
  57 [-]: GETTABLE  R7 R1 R6     ; R7 := R1[R6]
  58 [-]: LT        0 K13 R7     ; if 0.000000 >= R7 then PC := 62
  59 [-]: JMP       62           ; PC := 62
- 60 [-]: OP_LOADBOOL R2 1 0       ; R2 := true
+ 60 [-]: LOADBOOL  R2 1 0       ; R2 := true
  61 [-]: JMP       63           ; PC := 63
  62 [-]: FORLOOP   R3 54        ; R3 += R5; if R3 <= R4 then begin PC := 54; R6 := R3 end
  63 [-]: TEST      R2 1         ; if R2 then PC := 69

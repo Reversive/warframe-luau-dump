@@ -92,7 +92,7 @@
  33 [-]: SELF      R2 R1 K10    ; R3 := R1; R2 := R1[0xde321e6f]
  34 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  35 [-]: SELF      R3 R2 K11    ; R4 := R2; R3 := R2[0xc7154a44]
- 36 [-]: OP_LOADBOOL R5 1 0       ; R5 := true
+ 36 [-]: LOADBOOL  R5 1 0       ; R5 := true
  37 [-]: CALL      R3 3 1       ; R3(R4,R5)
  38 [-]: SELF      R3 R2 K12    ; R4 := R2; R3 := R2[0xe85a2361]
  39 [-]: LOADK     R5 2         ; R5 := 2.000000
@@ -114,7 +114,7 @@
  55 [-]: JMP       60           ; PC := 60
  56 [-]: SELF      R4 R1 K18    ; R5 := R1; R4 := R1[0x511d26b8]
  57 [-]: GETGLOBAL R6 K6        ; R6 := 0xf129603e
- 58 [-]: OP_LOADBOOL R7 0 0       ; R7 := false
+ 58 [-]: LOADBOOL  R7 0 0       ; R7 := false
  59 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
  60 [-]: LOADK     R4 1         ; R4 := 1.000000
  61 [-]: GETUPVAL  R5 U0        ; R5 := U0
@@ -138,7 +138,7 @@
  79 [-]: CALL      R8 3 1       ; R8(R9,R10)
  80 [-]: GETGLOBAL R8 K24       ; R8 := 0xbe190284
  81 [-]: SELF      R8 R8 K25    ; R9 := R8; R8 := R8[0x9dc2a61a]
- 82 [-]: OP_LOADBOOL R10 1 0      ; R10 := true
+ 82 [-]: LOADBOOL  R10 1 0      ; R10 := true
  83 [-]: CALL      R8 3 1       ; R8(R9,R10)
  84 [-]: GETGLOBAL R8 K3        ; R8 := 0x7b998233
  85 [-]: GETGLOBAL R9 K16       ; R9 := 0x89326c93
@@ -334,7 +334,7 @@
  28 [-]: GETGLOBAL R5 K17       ; R5 := 0x3cb5065d
  29 [-]: SELF      R6 R0 K18    ; R7 := R0; R6 := R0[0xf6ebd926]
  30 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 31 [-]: OP_LOADBOOL R7 0 0       ; R7 := false
+ 31 [-]: LOADBOOL  R7 0 0       ; R7 := false
  32 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
  33 [-]: SELF      R3 R0 K19    ; R4 := R0; R3 := R0[0xa5e492d4]
  34 [-]: CALL      R3 2 2       ; R3 := R3(R4)
@@ -552,7 +552,7 @@
   8 [-]: GETGLOBAL R4 K3        ; R4 := 0x0469f296
   9 [-]: LOADK     R5 K4        ; R5 := "CopyMeleeFinishers"
  10 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 11 [-]: OP_LOADBOOL R5 0 0       ; R5 := false
+ 11 [-]: LOADBOOL  R5 0 0       ; R5 := false
  12 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
  13 [-]: RETURN    R0 1         ; return 
 

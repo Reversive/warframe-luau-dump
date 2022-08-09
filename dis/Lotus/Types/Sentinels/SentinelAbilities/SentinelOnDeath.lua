@@ -76,7 +76,7 @@
   4 [-]: CALL      R1 2 2       ; R1 := R1(R2)
   5 [-]: TEST      R1 0         ; if not R1 then PC := 9
   6 [-]: JMP       9            ; PC := 9
-  7 [-]: OP_LOADBOOL R1 0 0       ; R1 := false
+  7 [-]: LOADBOOL  R1 0 0       ; R1 := false
   8 [-]: RETURN    R1 2         ; return R1
   9 [-]: LOADNIL   R1 R1        ; R1 := nil
  10 [-]: GETGLOBAL R2 K0        ; R2 := 0x7b998233
@@ -172,9 +172,9 @@
 100 [-]: GETTABLE  R7 R7 K8     ; R7 := R7["NumRegens"]
 101 [-]: SUB       R7 R7 K23    ; R7 := R7 - 1.000000
 102 [-]: SETTABLE  R6 K8 R7     ; R6["NumRegens"] := R7
-103 [-]: OP_LOADBOOL R6 1 0       ; R6 := true
+103 [-]: LOADBOOL  R6 1 0       ; R6 := true
 104 [-]: RETURN    R6 2         ; return R6
-105 [-]: OP_LOADBOOL R6 0 0       ; R6 := false
+105 [-]: LOADBOOL  R6 0 0       ; R6 := false
 106 [-]: RETURN    R6 2         ; return R6
 107 [-]: RETURN    R0 1         ; return 
 
@@ -203,9 +203,9 @@
  13 [-]: GETGLOBAL R3 K4        ; R3 := 0xbe190284
  14 [-]: SELF      R3 R3 K5     ; R4 := R3; R3 := R3[0x3d48d263]
  15 [-]: MOVE      R5 R2        ; R5 := R2
- 16 [-]: OP_LOADBOOL R6 1 0       ; R6 := true
- 17 [-]: OP_LOADBOOL R7 0 0       ; R7 := false
- 18 [-]: OP_LOADBOOL R8 0 0       ; R8 := false
+ 16 [-]: LOADBOOL  R6 1 0       ; R6 := true
+ 17 [-]: LOADBOOL  R7 0 0       ; R7 := false
+ 18 [-]: LOADBOOL  R8 0 0       ; R8 := false
  19 [-]: CALL      R3 6 2       ; R3 := R3(R4,R5,R6,R7,R8)
  20 [-]: TEST      R3 1         ; if R3 then PC := 26
  21 [-]: JMP       26           ; PC := 26
@@ -360,8 +360,8 @@
 108 [-]: SETTABLE  R13 K32 K33  ; R13["isDebuff"] := true
 109 [-]: SELF      R14 R1 K34   ; R15 := R1; R14 := R1[0x37e45fb5]
 110 [-]: MOVE      R16 R13      ; R16 := R13
-111 [-]: OP_LOADBOOL R17 1 0      ; R17 := true
-112 [-]: OP_LOADBOOL R18 0 0      ; R18 := false
+111 [-]: LOADBOOL  R17 1 0      ; R17 := true
+112 [-]: LOADBOOL  R18 0 0      ; R18 := false
 113 [-]: CALL      R14 5 1      ; R14(R15,R16,R17,R18)
 114 [-]: GETGLOBAL R14 K3       ; R14 := 0x7b998233
 115 [-]: GETGLOBAL R15 K35      ; R15 := 0xbe190284
@@ -388,7 +388,7 @@
 136 [-]: GETGLOBAL R16 K40      ; R16 := 0x0469f296
 137 [-]: LOADK     R17 K41      ; R17 := "RespawnWait"
 138 [-]: CALL      R16 2 2      ; R16 := R16(R17)
-139 [-]: OP_LOADBOOL R17 0 0      ; R17 := false
+139 [-]: LOADBOOL  R17 0 0      ; R17 := false
 140 [-]: CALL      R14 4 1      ; R14(R15,R16,R17)
 141 [-]: JMP       144          ; PC := 144
 142 [-]: TFORLOOP  R7 2         ; R10,R11 :=  R7(R8,R9); if R10 ~= nil then begin PC = 80; R9 := R10 end

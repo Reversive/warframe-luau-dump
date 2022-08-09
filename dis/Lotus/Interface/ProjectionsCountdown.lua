@@ -20,14 +20,14 @@
  11 [-]: LOADK     R4 K5        ; R4 := "/Lotus/Sounds/UI/NewUI/Projections/ProjectionCountDown"
  12 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  13 [-]: LOADNIL   R4 R4        ; R4 := nil
- 14 [-]: OP_LOADBOOL R5 0 0       ; R5 := false
- 15 [-]: OP_LOADBOOL R6 0 0       ; R6 := false
- 16 [-]: OP_LOADBOOL R7 0 0       ; R7 := false
- 17 [-]: OP_LOADBOOL R8 0 0       ; R8 := false
+ 14 [-]: LOADBOOL  R5 0 0       ; R5 := false
+ 15 [-]: LOADBOOL  R6 0 0       ; R6 := false
+ 16 [-]: LOADBOOL  R7 0 0       ; R7 := false
+ 17 [-]: LOADBOOL  R8 0 0       ; R8 := false
  18 [-]: LOADNIL   R9 R9        ; R9 := nil
- 19 [-]: OP_LOADBOOL R10 1 0      ; R10 := true
+ 19 [-]: LOADBOOL  R10 1 0      ; R10 := true
  20 [-]: LOADNIL   R11 R13      ; R11 := R12 := R13 := nil
- 21 [-]: OP_LOADBOOL R14 0 0      ; R14 := false
+ 21 [-]: LOADBOOL  R14 0 0      ; R14 := false
  22 [-]: NEWTABLE  R15 0 0      ; R15 := {}
  23 [-]: LOADK     R16 5        ; R16 := 5.000000
  24 [-]: CLOSURE   R17 0        ; R17 := closure(Function #1)
@@ -170,22 +170,22 @@
   1 [-]: GETUPVAL  R0 U0        ; R0 := U0
   2 [-]: GETTABLE  R0 R0 K0     ; R82 := R0[0x5d10207d]
   3 [-]: LOADK     R1 6         ; R1 := 6.000000
-  4 [-]: OP_LOADBOOL R2 1 0       ; R2 := true
+  4 [-]: LOADBOOL  R2 1 0       ; R2 := true
   5 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
   6 [-]: GETUPVAL  R1 U0        ; R1 := U0
   7 [-]: GETTABLE  R1 R1 K0     ; R82 := R1[0x5d10207d]
   8 [-]: LOADK     R2 2         ; R2 := 2.000000
-  9 [-]: OP_LOADBOOL R3 1 0       ; R3 := true
+  9 [-]: LOADBOOL  R3 1 0       ; R3 := true
  10 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
  11 [-]: GETUPVAL  R2 U0        ; R2 := U0
  12 [-]: GETTABLE  R2 R2 K0     ; R82 := R2[0x5d10207d]
  13 [-]: LOADK     R3 9         ; R3 := 9.000000
- 14 [-]: OP_LOADBOOL R4 1 0       ; R4 := true
+ 14 [-]: LOADBOOL  R4 1 0       ; R4 := true
  15 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
  16 [-]: GETUPVAL  R3 U0        ; R3 := U0
  17 [-]: GETTABLE  R3 R3 K0     ; R82 := R3[0x5d10207d]
  18 [-]: LOADK     R4 10        ; R4 := 10.000000
- 19 [-]: OP_LOADBOOL R5 1 0       ; R5 := true
+ 19 [-]: LOADBOOL  R5 1 0       ; R5 := true
  20 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
  21 [-]: GETGLOBAL R4 K2        ; R4 := 0xae91e43b
  22 [-]: SELF      R4 R4 K3     ; R5 := R4; R4 := R4[0x67bc869f]
@@ -254,7 +254,7 @@
  29 [-]: JMP       34           ; PC := 34
  30 [-]: GETGLOBAL R0 K1        ; R0 := 0xbe190284
  31 [-]: SELF      R0 R0 K8     ; R1 := R0; R0 := R0[0xbd038ae0]
- 32 [-]: OP_LOADBOOL R2 0 0       ; R2 := false
+ 32 [-]: LOADBOOL  R2 0 0       ; R2 := false
  33 [-]: CALL      R0 3 1       ; R0(R1,R2)
  34 [-]: GETGLOBAL R0 K1        ; R0 := 0xbe190284
  35 [-]: SELF      R0 R0 K9     ; R1 := R0; R0 := R0[0xa0e2a834]
@@ -272,7 +272,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
-  1 [-]: OP_LOADBOOL R0 1 0       ; R0 := true
+  1 [-]: LOADBOOL  R0 1 0       ; R0 := true
   2 [-]: SETUPVAL  R0 U0        ; U82 := 
   3 [-]: RETURN    R0 1         ; return 
 
@@ -312,9 +312,9 @@
  24 [-]: JMP       27           ; PC := 27
  25 [-]: MOVE      R3 R1        ; R3 := R1
  26 [-]: CALL      R3 1 1       ; R3()
- 27 [-]: OP_LOADBOOL R3 1 0       ; R3 := true
+ 27 [-]: LOADBOOL  R3 1 0       ; R3 := true
  28 [-]: RETURN    R3 2         ; return R3
- 29 [-]: OP_LOADBOOL R3 0 0       ; R3 := false
+ 29 [-]: LOADBOOL  R3 0 0       ; R3 := false
  30 [-]: RETURN    R3 2         ; return R3
  31 [-]: RETURN    R0 1         ; return 
 
@@ -332,8 +332,8 @@
   2 [-]: GETTABLE  R3 R1 K0     ; R3 := R1["Time"]
   3 [-]: LT        1 R3 R2      ; if R3 < R2 then PC := 6
   4 [-]: JMP       6            ; PC := 6
-  5 [-]: OP_LOADBOOL R2 0 1       ; R2 := false; PC := 6
-  6 [-]: OP_LOADBOOL R2 1 0       ; R2 := true
+  5 [-]: LOADBOOL  R2 0 1       ; R2 := false; PC := 6
+  6 [-]: LOADBOOL  R2 1 0       ; R2 := true
   7 [-]: RETURN    R2 2         ; return R2
   8 [-]: RETURN    R0 1         ; return 
 
@@ -355,7 +355,7 @@
   6 [-]: GETUPVAL  R0 U3        ; R0 := U3
   7 [-]: ADD       R0 R0 K2     ; R0 := R0 + 0.500000
   8 [-]: SETUPVAL  R0 U2        ; U82 := 
-  9 [-]: OP_LOADBOOL R0 0 0       ; R0 := false
+  9 [-]: LOADBOOL  R0 0 0       ; R0 := false
  10 [-]: SETUPVAL  R0 U4        ; U82 := 
  11 [-]: RETURN    R0 1         ; return 
 
@@ -596,7 +596,7 @@
  27 [-]: JMP       32           ; PC := 32
  28 [-]: GETGLOBAL R0 K4        ; R0 := 0xbe190284
  29 [-]: SELF      R0 R0 K8     ; R1 := R0; R0 := R0[0xbd038ae0]
- 30 [-]: OP_LOADBOOL R2 1 0       ; R2 := true
+ 30 [-]: LOADBOOL  R2 1 0       ; R2 := true
  31 [-]: CALL      R0 3 1       ; R0(R1,R2)
  32 [-]: GETGLOBAL R0 K9        ; R0 := 0xae91e43b
  33 [-]: SELF      R0 R0 K10    ; R1 := R0; R0 := R0[0x33abee92]
@@ -648,7 +648,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  5
 
-  1 [-]: OP_LOADBOOL R0 1 0       ; R0 := true
+  1 [-]: LOADBOOL  R0 1 0       ; R0 := true
   2 [-]: SETUPVAL  R0 U0        ; U82 := 
   3 [-]: GETUPVAL  R0 U1        ; R0 := U1
   4 [-]: CALL      R0 1 1       ; R0()
@@ -656,7 +656,7 @@
   6 [-]: CALL      R0 1 1       ; R0()
   7 [-]: GETUPVAL  R0 U3        ; R0 := U3
   8 [-]: GETGLOBAL R1 K0        ; R1 := 0x971bdfba
-  9 [-]: OP_LOADBOOL R2 1 0       ; R2 := true
+  9 [-]: LOADBOOL  R2 1 0       ; R2 := true
  10 [-]: CALL      R0 3 1       ; R0(R1,R2)
  11 [-]: GETGLOBAL R0 K1        ; R0 := 0xae91e43b
  12 [-]: SELF      R0 R0 K2     ; R1 := R0; R0 := R0[0x67bc869f]
@@ -703,7 +703,7 @@
  13 [-]: SETTABLE  R4 K4 R0     ; R4["Time"] := R0
  14 [-]: SETTABLE  R4 K5 R1     ; R4["Function"] := R1
  15 [-]: CALL      R2 3 1       ; R2(R3,R4)
- 16 [-]: OP_LOADBOOL R2 1 0       ; R2 := true
+ 16 [-]: LOADBOOL  R2 1 0       ; R2 := true
  17 [-]: SETUPVAL  R2 U1        ; U82 := 
  18 [-]: RETURN    R0 1         ; return 
 
@@ -734,18 +734,18 @@
   1 [-]: SETUPVAL  R3 U0        ; U82 := 
   2 [-]: EQ        1 R0 K0      ; if R0 == false then PC := 5
   3 [-]: JMP       5            ; PC := 5
-  4 [-]: OP_LOADBOOL R3 0 1       ; R3 := false; PC := 5
-  5 [-]: OP_LOADBOOL R3 1 0       ; R3 := true
+  4 [-]: LOADBOOL  R3 0 1       ; R3 := false; PC := 5
+  5 [-]: LOADBOOL  R3 1 0       ; R3 := true
   6 [-]: SETUPVAL  R3 U1        ; U82 := 
   7 [-]: EQ        1 R0 K1      ; if R0 == true then PC := 10
   8 [-]: JMP       10           ; PC := 10
-  9 [-]: OP_LOADBOOL R3 0 1       ; R3 := false; PC := 10
- 10 [-]: OP_LOADBOOL R3 1 0       ; R3 := true
+  9 [-]: LOADBOOL  R3 0 1       ; R3 := false; PC := 10
+ 10 [-]: LOADBOOL  R3 1 0       ; R3 := true
  11 [-]: SETUPVAL  R3 U2        ; U82 := 
  12 [-]: SETUPVAL  R2 U3        ; U82 := 
  13 [-]: GETUPVAL  R3 U4        ; R3 := U4
  14 [-]: MOVE      R4 R1        ; R4 := R1
- 15 [-]: OP_LOADBOOL R5 1 0       ; R5 := true
+ 15 [-]: LOADBOOL  R5 1 0       ; R5 := true
  16 [-]: CALL      R3 3 1       ; R3(R4,R5)
  17 [-]: GETGLOBAL R3 K2        ; R3 := 0x3d106989
  18 [-]: LOADK     R4 K3        ; R4 := "Initialize timer "
@@ -768,7 +768,7 @@
 ; Max Stack Size:  6
 
   1 [-]: GETUPVAL  R2 U0        ; R2 := U0
-  2 [-]: OP_LOADBOOL R3 0 0       ; R3 := false
+  2 [-]: LOADBOOL  R3 0 0       ; R3 := false
   3 [-]: GETGLOBAL R4 K0        ; R4 := 0x03f57322
   4 [-]: MOVE      R5 R0        ; R5 := R0
   5 [-]: CALL      R4 2 2       ; R4 := R4(R5)
@@ -790,7 +790,7 @@
 ; Max Stack Size:  6
 
   1 [-]: GETUPVAL  R2 U0        ; R2 := U0
-  2 [-]: OP_LOADBOOL R3 1 0       ; R3 := true
+  2 [-]: LOADBOOL  R3 1 0       ; R3 := true
   3 [-]: GETGLOBAL R4 K0        ; R4 := 0x03f57322
   4 [-]: MOVE      R5 R0        ; R5 := R0
   5 [-]: CALL      R4 2 2       ; R4 := R4(R5)
@@ -876,8 +876,8 @@
 
   1 [-]: EQ        0 R0 K0      ; if R0 ~= "false" then PC := 4
   2 [-]: JMP       4            ; PC := 4
-  3 [-]: OP_LOADBOOL R1 0 1       ; R1 := false; PC := 4
-  4 [-]: OP_LOADBOOL R1 1 0       ; R1 := true
+  3 [-]: LOADBOOL  R1 0 1       ; R1 := false; PC := 4
+  4 [-]: LOADBOOL  R1 1 0       ; R1 := true
   5 [-]: SETUPVAL  R1 U0        ; U82 := 
   6 [-]: RETURN    R0 1         ; return 
 
@@ -1006,8 +1006,8 @@
  20 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
  21 [-]: EQ        0 R1 K6      ; if R1 ~= "false" then PC := 24
  22 [-]: JMP       24           ; PC := 24
- 23 [-]: OP_LOADBOOL R1 0 1       ; R1 := false; PC := 24
- 24 [-]: OP_LOADBOOL R1 1 0       ; R1 := true
+ 23 [-]: LOADBOOL  R1 0 1       ; R1 := false; PC := 24
+ 24 [-]: LOADBOOL  R1 1 0       ; R1 := true
  25 [-]: GETGLOBAL R2 K1        ; R2 := 0xae91e43b
  26 [-]: SELF      R2 R2 K7     ; R3 := R2; R2 := R2[0xaade900e]
  27 [-]: LOADK     R4 K8        ; R4 := "Countdown.Time"
@@ -1044,7 +1044,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
-  1 [-]: OP_LOADBOOL R0 1 0       ; R0 := true
+  1 [-]: LOADBOOL  R0 1 0       ; R0 := true
   2 [-]: RETURN    R0 2         ; return R0
   3 [-]: RETURN    R0 1         ; return 
 

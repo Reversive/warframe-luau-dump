@@ -59,12 +59,12 @@
  36 [-]: SELF      R3 R0 K10    ; R4 := R0; R3 := R0[0xcddc3abb]
  37 [-]: LOADK     R5 0         ; R5 := 0.000000
  38 [-]: GETGLOBAL R6 K11       ; R6 := 0x14d72f3b
- 39 [-]: OP_LOADBOOL R7 0 0       ; R7 := false
+ 39 [-]: LOADBOOL  R7 0 0       ; R7 := false
  40 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
  41 [-]: SELF      R3 R0 K10    ; R4 := R0; R3 := R0[0xcddc3abb]
  42 [-]: LOADK     R5 1         ; R5 := 1.000000
  43 [-]: MOVE      R6 R2        ; R6 := R2
- 44 [-]: OP_LOADBOOL R7 0 0       ; R7 := false
+ 44 [-]: LOADBOOL  R7 0 0       ; R7 := false
  45 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
  46 [-]: RETURN    R0 1         ; return 
 

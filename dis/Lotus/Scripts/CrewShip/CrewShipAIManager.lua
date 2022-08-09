@@ -102,7 +102,7 @@
  65 [-]: TEST      R16 1        ; if R16 then PC := 70
  66 [-]: JMP       70           ; PC := 70
  67 [-]: SELF      R16 R15 K18  ; R17 := R15; R16 := R15[0x91a24aa9]
- 68 [-]: OP_LOADBOOL R18 0 0      ; R18 := false
+ 68 [-]: LOADBOOL  R18 0 0      ; R18 := false
  69 [-]: CALL      R16 3 1      ; R16(R17,R18)
  70 [-]: FORLOOP   R11 59       ; R11 += R13; if R11 <= R12 then begin PC := 59; R14 := R11 end
  71 [-]: GETGLOBAL R16 K9       ; R16 := 0x7b998233

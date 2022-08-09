@@ -476,7 +476,7 @@
   7 [-]: CALL      R3 2 2       ; R3 := R3(R4)
   8 [-]: TEST      R3 0         ; if not R3 then PC := 11
   9 [-]: JMP       11           ; PC := 11
- 10 [-]: OP_LOADBOOL R2 1 0       ; R2 := true
+ 10 [-]: LOADBOOL  R2 1 0       ; R2 := true
  11 [-]: GETUPVAL  R3 U0        ; R3 := U0
  12 [-]: MOVE      R4 R0        ; R4 := R0
  13 [-]: LOADK     R5 1         ; R5 := 1.000000

@@ -179,8 +179,8 @@
  39 [-]: GETTABLE  R5 R5 K0     ; R5 := R5["Splines"]
  40 [-]: GETTABLE  R5 R5 R3     ; R5 := R5[R3]
  41 [-]: SELF      R5 R5 K9     ; R6 := R5; R5 := R5[0x768274d6]
- 42 [-]: OP_LOADBOOL R7 0 0       ; R7 := false
- 43 [-]: OP_LOADBOOL R8 1 0       ; R8 := true
+ 42 [-]: LOADBOOL  R7 0 0       ; R7 := false
+ 43 [-]: LOADBOOL  R8 1 0       ; R8 := true
  44 [-]: CALL      R5 4 1       ; R5(R6,R7,R8)
  45 [-]: FORLOOP   R0 10        ; R0 += R2; if R0 <= R1 then begin PC := 10; R3 := R0 end
  46 [-]: GETUPVAL  R5 U0        ; R5 := U0

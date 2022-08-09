@@ -163,13 +163,13 @@
   2 [-]: GETGLOBAL R3 K1        ; R3 := 0x0469f296
   3 [-]: LOADK     R4 K2        ; R4 := "vtxScaling"
   4 [-]: CALL      R3 2 2       ; R3 := R3(R4)
-  5 [-]: OP_LOADBOOL R4 0 0       ; R4 := false
+  5 [-]: LOADBOOL  R4 0 0       ; R4 := false
   6 [-]: CALL      R1 4 1       ; R1(R2,R3,R4)
   7 [-]: SELF      R1 R0 K0     ; R2 := R0; R1 := R0[0xd5f7912b]
   8 [-]: GETGLOBAL R3 K1        ; R3 := 0x0469f296
   9 [-]: LOADK     R4 K3        ; R4 := "MaterialFade"
  10 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 11 [-]: OP_LOADBOOL R4 0 0       ; R4 := false
+ 11 [-]: LOADBOOL  R4 0 0       ; R4 := false
  12 [-]: CALL      R1 4 1       ; R1(R2,R3,R4)
  13 [-]: RETURN    R0 1         ; return 
 

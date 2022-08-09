@@ -112,7 +112,7 @@
  71 [-]: LOADK     R7 0         ; R7 := 0.000000
  72 [-]: SELF      R8 R0 K17    ; R9 := R0; R8 := R0[0x511d26b8]
  73 [-]: MOVE      R10 R1       ; R10 := R1
- 74 [-]: OP_LOADBOOL R11 0 0      ; R11 := false
+ 74 [-]: LOADBOOL  R11 0 0      ; R11 := false
  75 [-]: CALL      R8 4 1       ; R8(R9,R10,R11)
  76 [-]: GETGLOBAL R8 K3        ; R8 := 0x7b998233
  77 [-]: MOVE      R9 R3        ; R9 := R3
@@ -120,7 +120,7 @@
  79 [-]: TEST      R8 1         ; if R8 then PC := 85
  80 [-]: JMP       85           ; PC := 85
  81 [-]: MOVE      R8 R3        ; R8 := R3
- 82 [-]: OP_LOADBOOL R9 1 0       ; R9 := true
+ 82 [-]: LOADBOOL  R9 1 0       ; R9 := true
  83 [-]: MOVE      R10 R0       ; R10 := R0
  84 [-]: CALL      R8 3 1       ; R8(R9,R10)
  85 [-]: SELF      R8 R4 K18    ; R9 := R4; R8 := R4[0x02a0d8e1]
@@ -144,7 +144,7 @@
 103 [-]: EQ        0 R10 R0     ; if R10 ~= R0 then PC := 108
 104 [-]: JMP       108          ; PC := 108
 105 [-]: SELF      R10 R4 K22   ; R11 := R4; R10 := R4[0x0b5ec5b5]
-106 [-]: OP_LOADBOOL R12 1 0      ; R12 := true
+106 [-]: LOADBOOL  R12 1 0      ; R12 := true
 107 [-]: CALL      R10 3 1      ; R10(R11,R12)
 108 [-]: SELF      R10 R4 K23   ; R11 := R4; R10 := R4[0xc69087f6]
 109 [-]: MOVE      R12 R2       ; R12 := R2

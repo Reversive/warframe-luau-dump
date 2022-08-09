@@ -54,11 +54,11 @@
   1 [-]: GETGLOBAL R2 K0        ; R2 := 0x83f4e77c
   2 [-]: TEST      R2 1         ; if R2 then PC := 6
   3 [-]: JMP       6            ; PC := 6
-  4 [-]: OP_LOADBOOL R2 1 0       ; R2 := true
+  4 [-]: LOADBOOL  R2 1 0       ; R2 := true
   5 [-]: RETURN    R2 2         ; return R2
   6 [-]: EQ        0 R1 K1      ; if R1 ~= nil then PC := 9
   7 [-]: JMP       9            ; PC := 9
-  8 [-]: OP_LOADBOOL R1 1 0       ; R1 := true
+  8 [-]: LOADBOOL  R1 1 0       ; R1 := true
   9 [-]: GETGLOBAL R2 K2        ; R2 := _T
  10 [-]: GETGLOBAL R3 K2        ; R3 := _T
  11 [-]: GETTABLE  R3 R3 K3     ; R3 := R3["CheckQuestCompletionCache"]
@@ -73,7 +73,7 @@
  20 [-]: GETTABLE  R3 R3 R2     ; R3 := R3[R2]
  21 [-]: EQ        0 R3 K1      ; if R3 ~= nil then PC := 25
  22 [-]: JMP       25           ; PC := 25
- 23 [-]: OP_LOADBOOL R3 0 0       ; R3 := false
+ 23 [-]: LOADBOOL  R3 0 0       ; R3 := false
  24 [-]: JMP       26           ; PC := 26
  25 [-]: RETURN    R3 2         ; return R3
  26 [-]: GETGLOBAL R4 K5        ; R4 := 0x7b998233
@@ -83,7 +83,7 @@
  30 [-]: JMP       39           ; PC := 39
  31 [-]: TEST      R1 1         ; if R1 then PC := 35
  32 [-]: JMP       35           ; PC := 35
- 33 [-]: OP_LOADBOOL R4 0 0       ; R4 := false
+ 33 [-]: LOADBOOL  R4 0 0       ; R4 := false
  34 [-]: RETURN    R4 2         ; return R4
  35 [-]: GETGLOBAL R4 K7        ; R4 := 0xcbd666e1
  36 [-]: LOADK     R5 0         ; R5 := 0.000000
@@ -99,7 +99,7 @@
  46 [-]: JMP       59           ; PC := 59
  47 [-]: TEST      R1 1         ; if R1 then PC := 51
  48 [-]: JMP       51           ; PC := 51
- 49 [-]: OP_LOADBOOL R5 0 0       ; R5 := false
+ 49 [-]: LOADBOOL  R5 0 0       ; R5 := false
  50 [-]: RETURN    R5 2         ; return R5
  51 [-]: GETGLOBAL R5 K7        ; R5 := 0xcbd666e1
  52 [-]: LOADK     R6 0         ; R6 := 0.000000
@@ -194,7 +194,7 @@
 
   1 [-]: GETUPVAL  R0 U0        ; R0 := U0
   2 [-]: GETUPVAL  R1 U1        ; R1 := U1
-  3 [-]: OP_LOADBOOL R2 0 0       ; R2 := false
+  3 [-]: LOADBOOL  R2 0 0       ; R2 := false
   4 [-]: TAILCALL  R0 3 0       ; R0,... := R0(R1,R2)
   5 [-]: RETURN    R0 0         ; return R0,...
   6 [-]: RETURN    R0 1         ; return 
@@ -245,8 +245,8 @@
  34 [-]: SELF      R4 R3 K11    ; R5 := R3; R4 := R3[0xd4cc05b4]
  35 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  36 [-]: JMP       39           ; PC := 39
- 37 [-]: OP_LOADBOOL R4 0 1       ; R4 := false; PC := 38
- 38 [-]: OP_LOADBOOL R4 1 0       ; R4 := true
+ 37 [-]: LOADBOOL  R4 0 1       ; R4 := false; PC := 38
+ 38 [-]: LOADBOOL  R4 1 0       ; R4 := true
  39 [-]: NEWTABLE  R5 3 0       ; R5 := {}
  40 [-]: GETGLOBAL R6 K12       ; R6 := 0x7ed0a956
  41 [-]: LOADK     R7 K13       ; R7 := "/Lotus/Interface/ChatRedux.swf"
@@ -275,7 +275,7 @@
  64 [-]: TEST      R12 1        ; if R12 then PC := 69
  65 [-]: JMP       69           ; PC := 69
  66 [-]: SELF      R12 R11 K18  ; R13 := R11; R12 := R11[0x368ad758]
- 67 [-]: OP_LOADBOOL R14 0 0      ; R14 := false
+ 67 [-]: LOADBOOL  R14 0 0      ; R14 := false
  68 [-]: CALL      R12 3 1      ; R12(R13,R14)
  69 [-]: TFORLOOP  R6 2         ; R9,R10 :=  R6(R7,R8); if R9 ~= nil then begin PC = 57; R8 := R9 end
  70 [-]: JMP       57           ; PC := 57
@@ -385,7 +385,7 @@
 174 [-]: TEST      R21 1        ; if R21 then PC := 179
 175 [-]: JMP       179          ; PC := 179
 176 [-]: SELF      R21 R3 K18   ; R22 := R3; R21 := R3[0x368ad758]
-177 [-]: OP_LOADBOOL R23 0 0      ; R23 := false
+177 [-]: LOADBOOL  R23 0 0      ; R23 := false
 178 [-]: CALL      R21 3 1      ; R21(R22,R23)
 179 [-]: GETGLOBAL R21 K1       ; R21 := _T
 180 [-]: GETTABLE  R21 R21 K43  ; R21 := R21["StoryLib_BlockTransmissions"]
@@ -431,7 +431,7 @@
 220 [-]: TEST      R27 1        ; if R27 then PC := 225
 221 [-]: JMP       225          ; PC := 225
 222 [-]: SELF      R27 R26 K18  ; R28 := R26; R27 := R26[0x368ad758]
-223 [-]: OP_LOADBOOL R29 1 0      ; R29 := true
+223 [-]: LOADBOOL  R29 1 0      ; R29 := true
 224 [-]: CALL      R27 3 1      ; R27(R28,R29)
 225 [-]: TFORLOOP  R21 2        ; R24,R25 :=  R21(R22,R23); if R24 ~= nil then begin PC = 213; R23 := R24 end
 226 [-]: JMP       213          ; PC := 213

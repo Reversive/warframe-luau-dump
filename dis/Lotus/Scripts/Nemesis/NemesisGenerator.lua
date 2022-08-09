@@ -419,8 +419,8 @@
   8 [-]: CALL      R1 2 2       ; R1 := R1(R2)
   9 [-]: EQ        1 R1 K4      ; if R1 == 31.000000 then PC := 12
  10 [-]: JMP       12           ; PC := 12
- 11 [-]: OP_LOADBOOL R1 0 1       ; R1 := false; PC := 12
- 12 [-]: OP_LOADBOOL R1 1 0       ; R1 := true
+ 11 [-]: LOADBOOL  R1 0 1       ; R1 := false; PC := 12
+ 12 [-]: LOADBOOL  R1 1 0       ; R1 := true
  13 [-]: GETGLOBAL R2 K0        ; R2 := 0x7b998233
  14 [-]: GETGLOBAL R3 K1        ; R3 := 0xbe190284
  15 [-]: CALL      R2 2 2       ; R2 := R2(R3)
@@ -431,8 +431,8 @@
  20 [-]: GETGLOBAL R4 K6        ; R4 := gLotusDojoGameRulesType
  21 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
  22 [-]: JMP       25           ; PC := 25
- 23 [-]: OP_LOADBOOL R2 0 1       ; R2 := false; PC := 24
- 24 [-]: OP_LOADBOOL R2 1 0       ; R2 := true
+ 23 [-]: LOADBOOL  R2 0 1       ; R2 := false; PC := 24
+ 24 [-]: LOADBOOL  R2 1 0       ; R2 := true
  25 [-]: TESTSET   R3 R1 1      ; if R1 then PC := 28 else R3 := R1
  26 [-]: JMP       28           ; PC := 28
  27 [-]: MOVE      R3 R2        ; R3 := R2
@@ -455,10 +455,10 @@
  44 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  45 [-]: EQ        0 R5 K10     ; if R5 ~= "" then PC := 48
  46 [-]: JMP       48           ; PC := 48
- 47 [-]: OP_LOADBOOL R6 0 1       ; R6 := false; PC := 48
- 48 [-]: OP_LOADBOOL R6 1 0       ; R6 := true
+ 47 [-]: LOADBOOL  R6 0 1       ; R6 := false; PC := 48
+ 48 [-]: LOADBOOL  R6 1 0       ; R6 := true
  49 [-]: RETURN    R6 2         ; return R6
- 50 [-]: OP_LOADBOOL R6 0 0       ; R6 := false
+ 50 [-]: LOADBOOL  R6 0 0       ; R6 := false
  51 [-]: RETURN    R6 2         ; return R6
  52 [-]: RETURN    R0 1         ; return 
 
@@ -566,7 +566,7 @@
  28 [-]: CALL      R2 2 1       ; R2(R3)
  29 [-]: GETUPVAL  R2 U0        ; R2 := U0
  30 [-]: LOADNIL   R3 R3        ; R3 := nil
- 31 [-]: OP_LOADBOOL R4 1 0       ; R4 := true
+ 31 [-]: LOADBOOL  R4 1 0       ; R4 := true
  32 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
  33 [-]: MOVE      R0 R2        ; R0 := R2
  34 [-]: GETGLOBAL R2 K0        ; R2 := 0x7b998233
@@ -1406,8 +1406,8 @@
  23 [-]: GETUPVAL  R3 U0        ; R3 := U0
  24 [-]: LT        1 K3 R2      ; if 0.000000 < R2 then PC := 27
  25 [-]: JMP       27           ; PC := 27
- 26 [-]: OP_LOADBOOL R4 0 1       ; R4 := false; PC := 27
- 27 [-]: OP_LOADBOOL R4 1 0       ; R4 := true
+ 26 [-]: LOADBOOL  R4 0 1       ; R4 := false; PC := 27
+ 27 [-]: LOADBOOL  R4 1 0       ; R4 := true
  28 [-]: CALL      R3 2 1       ; R3(R4)
  29 [-]: RETURN    R0 1         ; return 
 
@@ -1506,14 +1506,14 @@
   3 [-]: EQ        0 R3 K2      ; if R3 ~= nil then PC := 6
   4 [-]: JMP       6            ; PC := 6
   5 [-]: RETURN    R0 1         ; return 
-  6 [-]: OP_LOADBOOL R3 0 0       ; R3 := false
+  6 [-]: LOADBOOL  R3 0 0       ; R3 := false
   7 [-]: GETGLOBAL R4 K0        ; R4 := _T
   8 [-]: GETTABLE  R4 R4 K1     ; R4 := R4["NemesisSquadMembers"]
   9 [-]: GETTABLE  R4 R4 K3     ; R4 := R4["nemesisProfiles"]
  10 [-]: GETTABLE  R4 R4 R0     ; R4 := R4[R0]
  11 [-]: EQ        0 R4 K2      ; if R4 ~= nil then PC := 14
  12 [-]: JMP       14           ; PC := 14
- 13 [-]: OP_LOADBOOL R3 1 0       ; R3 := true
+ 13 [-]: LOADBOOL  R3 1 0       ; R3 := true
  14 [-]: TEST      R3 0         ; if not R3 then PC := 32
  15 [-]: JMP       32           ; PC := 32
  16 [-]: GETGLOBAL R4 K4        ; R4 := 0xe7f2b02f
@@ -1574,8 +1574,8 @@
  11 [-]: GETTABLE  R2 R2 K5     ; R2 := R2["numConnectedProfiles"]
  12 [-]: LT        1 K6 R2      ; if 0.000000 < R2 then PC := 15
  13 [-]: JMP       15           ; PC := 15
- 14 [-]: OP_LOADBOOL R2 0 1       ; R2 := false; PC := 15
- 15 [-]: OP_LOADBOOL R2 1 0       ; R2 := true
+ 14 [-]: LOADBOOL  R2 0 1       ; R2 := false; PC := 15
+ 15 [-]: LOADBOOL  R2 1 0       ; R2 := true
  16 [-]: CALL      R1 2 1       ; R1(R2)
  17 [-]: RETURN    R0 1         ; return 
 
@@ -1985,7 +1985,7 @@
 187 [-]: LOADK     R14 K42      ; R14 := "no valid recipient for nemesis transmission"
 188 [-]: CALL      R13 2 1      ; R13(R14)
 189 [-]: RETURN    R0 1         ; return 
-190 [-]: OP_LOADBOOL R13 1 0      ; R13 := true
+190 [-]: LOADBOOL  R13 1 0      ; R13 := true
 191 [-]: RETURN    R13 2        ; return R13
 192 [-]: RETURN    R0 1         ; return 
 
@@ -2200,13 +2200,13 @@
   4 [-]: MOVE      R8 R1        ; R8 := R1
   5 [-]: TESTSET   R9 R2 1      ; if R2 then PC := 8 else R9 := R2
   6 [-]: JMP       8            ; PC := 8
-  7 [-]: OP_LOADBOOL R9 0 0       ; R9 := false
+  7 [-]: LOADBOOL  R9 0 0       ; R9 := false
   8 [-]: TESTSET   R10 R3 1     ; if R3 then PC := 11 else R10 := R3
   9 [-]: JMP       11           ; PC := 11
- 10 [-]: OP_LOADBOOL R10 0 0      ; R10 := false
+ 10 [-]: LOADBOOL  R10 0 0      ; R10 := false
  11 [-]: TESTSET   R11 R4 1     ; if R4 then PC := 14 else R11 := R4
  12 [-]: JMP       14           ; PC := 14
- 13 [-]: OP_LOADBOOL R11 0 0      ; R11 := false
+ 13 [-]: LOADBOOL  R11 0 0      ; R11 := false
  14 [-]: CALL      R5 7 1       ; R5(R6,R7,R8,R9,R10,R11)
  15 [-]: RETURN    R0 1         ; return 
 
@@ -2228,7 +2228,7 @@
   6 [-]: GETGLOBAL R4 K3        ; R4 := 0x3d106989
   7 [-]: LOADK     R5 K4        ; R5 := "couldn't create nemesis: already have one pending for another player"
   8 [-]: CALL      R4 2 1       ; R4(R5)
-  9 [-]: OP_LOADBOOL R4 0 0       ; R4 := false
+  9 [-]: LOADBOOL  R4 0 0       ; R4 := false
  10 [-]: RETURN    R4 2         ; return R4
  11 [-]: GETGLOBAL R4 K5        ; R4 := 0x7b998233
  12 [-]: MOVE      R5 R2        ; R5 := R2
@@ -2238,7 +2238,7 @@
  16 [-]: GETGLOBAL R4 K3        ; R4 := 0x3d106989
  17 [-]: LOADK     R5 K6        ; R5 := "couldn't create nemesis: no damage data"
  18 [-]: CALL      R4 2 1       ; R4(R5)
- 19 [-]: OP_LOADBOOL R4 0 0       ; R4 := false
+ 19 [-]: LOADBOOL  R4 0 0       ; R4 := false
  20 [-]: RETURN    R4 2         ; return R4
  21 [-]: GETUPVAL  R4 U0        ; R4 := U0
  22 [-]: MOVE      R5 R2        ; R5 := R2
@@ -2251,7 +2251,7 @@
  29 [-]: GETGLOBAL R5 K3        ; R5 := 0x3d106989
  30 [-]: LOADK     R6 K7        ; R6 := "couldn't create nemesis: no source!"
  31 [-]: CALL      R5 2 1       ; R5(R6)
- 32 [-]: OP_LOADBOOL R5 0 0       ; R5 := false
+ 32 [-]: LOADBOOL  R5 0 0       ; R5 := false
  33 [-]: RETURN    R5 2         ; return R5
  34 [-]: SELF      R5 R4 K8     ; R6 := R4; R5 := R4[0xf2deaf69]
  35 [-]: GETGLOBAL R7 K9        ; R7 := gTennoAvatarType
@@ -2265,7 +2265,7 @@
  43 [-]: LOADK     R8 K12       ; R8 := " is not a tennoavatar"
  44 [-]: CONCAT    R6 R6 R8     ; R6 := R6 .. R7 .. R8
  45 [-]: CALL      R5 2 1       ; R5(R6)
- 46 [-]: OP_LOADBOOL R5 0 0       ; R5 := false
+ 46 [-]: LOADBOOL  R5 0 0       ; R5 := false
  47 [-]: RETURN    R5 2         ; return R5
  48 [-]: SELF      R5 R4 K13    ; R6 := R4; R5 := R4[0x5b89142c]
  49 [-]: CALL      R5 2 2       ; R5 := R5(R6)
@@ -2286,7 +2286,7 @@
  64 [-]: GETGLOBAL R7 K3        ; R7 := 0x3d106989
  65 [-]: LOADK     R8 K17       ; R8 := "couldn't create nemesis: player already has an active one!"
  66 [-]: CALL      R7 2 1       ; R7(R8)
- 67 [-]: OP_LOADBOOL R7 0 0       ; R7 := false
+ 67 [-]: LOADBOOL  R7 0 0       ; R7 := false
  68 [-]: RETURN    R7 2         ; return R7
  69 [-]: SELF      R7 R6 K18    ; R8 := R6; R7 := R6[0x9094066e]
  70 [-]: CALL      R7 2 2       ; R7 := R7(R8)
@@ -2295,7 +2295,7 @@
  73 [-]: GETGLOBAL R7 K3        ; R7 := 0x3d106989
  74 [-]: LOADK     R8 K19       ; R8 := "couldn't create nemesis: player has not completed TWW"
  75 [-]: CALL      R7 2 1       ; R7(R8)
- 76 [-]: OP_LOADBOOL R7 0 0       ; R7 := false
+ 76 [-]: LOADBOOL  R7 0 0       ; R7 := false
  77 [-]: RETURN    R7 2         ; return R7
  78 [-]: GETGLOBAL R7 K20       ; R7 := 0xb009bbc6
  79 [-]: MOVE      R8 R3        ; R8 := R3
@@ -2310,7 +2310,7 @@
  88 [-]: GETGLOBAL R9 K3        ; R9 := 0x3d106989
  89 [-]: LOADK     R10 K25      ; R10 := "couldn't create corpus nemesis: player has not completed wraith quest"
  90 [-]: CALL      R9 2 1       ; R9(R10)
- 91 [-]: OP_LOADBOOL R9 0 0       ; R9 := false
+ 91 [-]: LOADBOOL  R9 0 0       ; R9 := false
  92 [-]: RETURN    R9 2         ; return R9
  93 [-]: LOADNIL   R9 R9        ; R9 := nil
  94 [-]: SELF      R10 R5 K26   ; R11 := R5; R10 := R5[0xa534c3ac]
@@ -2324,7 +2324,7 @@
 102 [-]: GETGLOBAL R10 K3       ; R10 := 0x3d106989
 103 [-]: LOADK     R11 K27      ; R11 := "couldn't create nemesis: couldn't find the Warframe Avatar"
 104 [-]: CALL      R10 2 1      ; R10(R11)
-105 [-]: OP_LOADBOOL R10 0 0      ; R10 := false
+105 [-]: LOADBOOL  R10 0 0      ; R10 := false
 106 [-]: RETURN    R10 2        ; return R10
 107 [-]: SELF      R10 R4 K28   ; R11 := R4; R10 := R4[0xde321e6f]
 108 [-]: CALL      R10 2 2      ; R10 := R10(R11)
@@ -2343,7 +2343,7 @@
 121 [-]: LOADK     R13 K30      ; R13 := " has no active powersuit"
 122 [-]: CONCAT    R11 R11 R13  ; R11 := R11 .. R12 .. R13
 123 [-]: CALL      R10 2 1      ; R10(R11)
-124 [-]: OP_LOADBOOL R10 0 0      ; R10 := false
+124 [-]: LOADBOOL  R10 0 0      ; R10 := false
 125 [-]: RETURN    R10 2        ; return R10
 126 [-]: SELF      R10 R6 K31   ; R11 := R6; R10 := R6[0xb61abfd2]
 127 [-]: LOADK     R12 0        ; R12 := 0.000000
@@ -2418,9 +2418,9 @@
 196 [-]: MOVE      R33 R22      ; R33 := R22
 197 [-]: MOVE      R34 R8       ; R34 := R8
 198 [-]: CALL      R25 10 1     ; R25(R26,R27,R28,R29,R30,R31,R32,R33,R34)
-199 [-]: OP_LOADBOOL R25 1 0      ; R25 := true
+199 [-]: LOADBOOL  R25 1 0      ; R25 := true
 200 [-]: RETURN    R25 2        ; return R25
-201 [-]: OP_LOADBOOL R25 0 0      ; R25 := false
+201 [-]: LOADBOOL  R25 0 0      ; R25 := false
 202 [-]: RETURN    R25 2        ; return R25
 203 [-]: RETURN    R0 1         ; return 
 
@@ -2442,12 +2442,12 @@
   6 [-]: GETGLOBAL R1 K3        ; R1 := 0x3d106989
   7 [-]: LOADK     R2 K4        ; R2 := "Cannot start Nemesis: GameRules does not have valid Nemesis Start Info"
   8 [-]: CALL      R1 2 1       ; R1(R2)
-  9 [-]: OP_LOADBOOL R1 0 0       ; R1 := false
+  9 [-]: LOADBOOL  R1 0 0       ; R1 := false
  10 [-]: RETURN    R1 2         ; return R1
  11 [-]: GETGLOBAL R1 K0        ; R1 := 0xbe190284
  12 [-]: SELF      R1 R1 K5     ; R2 := R1; R1 := R1[0x75dff928]
  13 [-]: CALL      R1 2 1       ; R1(R2)
- 14 [-]: OP_LOADBOOL R1 1 0       ; R1 := true
+ 14 [-]: LOADBOOL  R1 1 0       ; R1 := true
  15 [-]: RETURN    R1 2         ; return R1
  16 [-]: RETURN    R0 1         ; return 
 
@@ -2686,7 +2686,7 @@
   3 [-]: CALL      R1 2 2       ; R1 := R1(R2)
   4 [-]: TEST      R1 0         ; if not R1 then PC := 8
   5 [-]: JMP       8            ; PC := 8
-  6 [-]: OP_LOADBOOL R1 0 0       ; R1 := false
+  6 [-]: LOADBOOL  R1 0 0       ; R1 := false
   7 [-]: RETURN    R1 2         ; return R1
   8 [-]: SELF      R1 R0 K1     ; R2 := R0; R1 := R0[0xed4e0128]
   9 [-]: CALL      R1 2 2       ; R1 := R1(R2)
@@ -2702,9 +2702,9 @@
  19 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
  20 [-]: TEST      R2 0         ; if not R2 then PC := 24
  21 [-]: JMP       24           ; PC := 24
- 22 [-]: OP_LOADBOOL R2 1 0       ; R2 := true
+ 22 [-]: LOADBOOL  R2 1 0       ; R2 := true
  23 [-]: RETURN    R2 2         ; return R2
- 24 [-]: OP_LOADBOOL R2 0 0       ; R2 := false
+ 24 [-]: LOADBOOL  R2 0 0       ; R2 := false
  25 [-]: RETURN    R2 2         ; return R2
  26 [-]: RETURN    R0 1         ; return 
 

@@ -167,8 +167,8 @@
 104 [-]: GETUPVAL  R7 U0        ; R7 := U0
 105 [-]: GETTABLE  R7 R7 K45    ; R82 := R7[0x2d9c34ae]
 106 [-]: MOVE      R8 R6        ; R8 := R6
-107 [-]: OP_LOADBOOL R9 0 0       ; R9 := false
-108 [-]: OP_LOADBOOL R10 0 0      ; R10 := false
+107 [-]: LOADBOOL  R9 0 0       ; R9 := false
+108 [-]: LOADBOOL  R10 0 0      ; R10 := false
 109 [-]: CALL      R7 4 1       ; R7(R8,R9,R10)
 110 [-]: GETGLOBAL R7 K34       ; R7 := 0x34291f5c
 111 [-]: GETTABLE  R7 R7 K46    ; R82 := R7[0x4e0a1dfc]
@@ -304,7 +304,7 @@
  14 [-]: SELF      R3 R2 K5     ; R4 := R2; R3 := R2[0xde321e6f]
  15 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  16 [-]: SELF      R3 R3 K6     ; R4 := R3; R3 := R3[0xcfd657f3]
- 17 [-]: OP_LOADBOOL R5 0 0       ; R5 := false
+ 17 [-]: LOADBOOL  R5 0 0       ; R5 := false
  18 [-]: CALL      R3 3 1       ; R3(R4,R5)
  19 [-]: GETUPVAL  R3 U0        ; R3 := U0
  20 [-]: GETTABLE  R3 R3 K7     ; R82 := R3[0xcf1fcba4]
@@ -365,7 +365,7 @@
  26 [-]: RETURN    R0 1         ; return 
  27 [-]: GETGLOBAL R4 K3        ; R4 := _T
  28 [-]: GETTABLE  R4 R4 K4     ; R4 := R4["MenuSuitAvatar"]
- 29 [-]: OP_LOADBOOL R5 0 0       ; R5 := false
+ 29 [-]: LOADBOOL  R5 0 0       ; R5 := false
  30 [-]: GETGLOBAL R6 K0        ; R6 := 0x7b998233
  31 [-]: MOVE      R7 R4        ; R7 := R4
  32 [-]: CALL      R6 2 2       ; R6 := R6(R7)
@@ -375,7 +375,7 @@
  36 [-]: CALL      R6 2 2       ; R6 := R6(R7)
  37 [-]: MOVE      R5 R6        ; R5 := R6
  38 [-]: SELF      R6 R4 K6     ; R7 := R4; R6 := R4[0x044b7be8]
- 39 [-]: OP_LOADBOOL R8 0 0       ; R8 := false
+ 39 [-]: LOADBOOL  R8 0 0       ; R8 := false
  40 [-]: CALL      R6 3 1       ; R6(R7,R8)
  41 [-]: GETGLOBAL R6 K7        ; R6 := 0x7ed0a956
  42 [-]: LOADK     R7 K8        ; R7 := "/Lotus/Types/Items/MiscItems/PhotoboothTile"
@@ -388,7 +388,7 @@
  49 [-]: LOADK     R10 K13      ; R10 := "SetTitle"
  50 [-]: SELF      R11 R0 K14   ; R12 := R0; R11 := R0[0x42b04007]
  51 [-]: LOADK     R13 K15      ; R13 := "/Lotus/Language/Menu/PhotoboothTileSelectTitle"
- 52 [-]: OP_LOADBOOL R14 0 0      ; R14 := false
+ 52 [-]: LOADBOOL  R14 0 0      ; R14 := false
  53 [-]: CALL      R11 4 0      ; R11,... := R11(R12,R13,R14)
  54 [-]: CALL      R8 0 1       ; R8(R9,...)
  55 [-]: SELF      R8 R7 K12    ; R9 := R7; R8 := R7[0xe4162eed]
@@ -464,7 +464,7 @@
   3 [-]: GETTABLE  R1 R0 K1     ; R1 := R0[1.000000]
   4 [-]: EQ        0 R1 K0      ; if R1 ~= nil then PC := 9
   5 [-]: JMP       9            ; PC := 9
-  6 [-]: OP_LOADBOOL R1 0 0       ; R1 := false
+  6 [-]: LOADBOOL  R1 0 0       ; R1 := false
   7 [-]: LOADK     R2 K2        ; R2 := ""
   8 [-]: RETURN    R1 3         ; return R1,R2
   9 [-]: GETTABLE  R1 R0 K1     ; R1 := R0[1.000000]
@@ -475,11 +475,11 @@
  14 [-]: GETTABLE  R1 R1 K4     ; R1 := R1["RegularPrice"]
  15 [-]: EQ        0 R1 K0      ; if R1 ~= nil then PC := 21
  16 [-]: JMP       21           ; PC := 21
- 17 [-]: OP_LOADBOOL R1 0 0       ; R1 := false
+ 17 [-]: LOADBOOL  R1 0 0       ; R1 := false
  18 [-]: GETTABLE  R2 R0 K1     ; R2 := R0[1.000000]
  19 [-]: GETTABLE  R2 R2 K5     ; R2 := R2["LockedMsg"]
  20 [-]: RETURN    R1 3         ; return R1,R2
- 21 [-]: OP_LOADBOOL R1 1 0       ; R1 := true
+ 21 [-]: LOADBOOL  R1 1 0       ; R1 := true
  22 [-]: RETURN    R1 2         ; return R1
  23 [-]: RETURN    R0 1         ; return 
 
@@ -511,7 +511,7 @@
  16 [-]: JMP       21           ; PC := 21
  17 [-]: GETUPVAL  R1 U0        ; R1 := U0
  18 [-]: SELF      R1 R1 K7     ; R2 := R1; R1 := R1[0x044b7be8]
- 19 [-]: OP_LOADBOOL R3 1 0       ; R3 := true
+ 19 [-]: LOADBOOL  R3 1 0       ; R3 := true
  20 [-]: CALL      R1 3 1       ; R1(R2,R3)
  21 [-]: EQ        1 R0 K2      ; if R0 == nil then PC := 98
  22 [-]: JMP       98           ; PC := 98
@@ -633,7 +633,7 @@
   4 [-]: GETTABLE  R2 R1 K0     ; R2 := R1["Locked"]
   5 [-]: TEST      R2 0         ; if not R2 then PC := 10
   6 [-]: JMP       10           ; PC := 10
-  7 [-]: OP_LOADBOOL R2 1 0       ; R2 := true
+  7 [-]: LOADBOOL  R2 1 0       ; R2 := true
   8 [-]: RETURN    R2 2         ; return R2
   9 [-]: JMP       26           ; PC := 26
  10 [-]: GETTABLE  R2 R0 K0     ; R2 := R0["Locked"]
@@ -642,15 +642,15 @@
  13 [-]: GETTABLE  R2 R1 K0     ; R2 := R1["Locked"]
  14 [-]: TEST      R2 1         ; if R2 then PC := 19
  15 [-]: JMP       19           ; PC := 19
- 16 [-]: OP_LOADBOOL R2 0 0       ; R2 := false
+ 16 [-]: LOADBOOL  R2 0 0       ; R2 := false
  17 [-]: RETURN    R2 2         ; return R2
  18 [-]: JMP       26           ; PC := 26
  19 [-]: GETTABLE  R2 R0 K1     ; R2 := R0["Name"]
  20 [-]: GETTABLE  R3 R1 K1     ; R3 := R1["Name"]
  21 [-]: LT        1 R2 R3      ; if R2 < R3 then PC := 24
  22 [-]: JMP       24           ; PC := 24
- 23 [-]: OP_LOADBOOL R2 0 1       ; R2 := false; PC := 24
- 24 [-]: OP_LOADBOOL R2 1 0       ; R2 := true
+ 23 [-]: LOADBOOL  R2 0 1       ; R2 := false; PC := 24
+ 24 [-]: LOADBOOL  R2 1 0       ; R2 := true
  25 [-]: RETURN    R2 2         ; return R2
  26 [-]: RETURN    R0 1         ; return 
 
@@ -709,7 +709,7 @@
  43 [-]: GETUPVAL  R9 U1        ; R9 := U1
  44 [-]: SELF      R9 R9 K14    ; R10 := R9; R9 := R9[0xe9cbffa8]
  45 [-]: GETUPVAL  R11 U0       ; R11 := U0
- 46 [-]: OP_LOADBOOL R12 1 0      ; R12 := true
+ 46 [-]: LOADBOOL  R12 1 0      ; R12 := true
  47 [-]: CALL      R9 4 2       ; R9 := R9(R10,R11,R12)
  48 [-]: LOADK     R10 1        ; R10 := 1.000000
  49 [-]: LEN       R11 R9       ; R11 := # R9
@@ -734,7 +734,7 @@
  68 [-]: GETTABLE  R21 R1 R20   ; R21 := R1[R20]
  69 [-]: EQ        0 R21 R15    ; if R21 ~= R15 then PC := 73
  70 [-]: JMP       73           ; PC := 73
- 71 [-]: OP_LOADBOOL R16 1 0      ; R16 := true
+ 71 [-]: LOADBOOL  R16 1 0      ; R16 := true
  72 [-]: JMP       74           ; PC := 74
  73 [-]: FORLOOP   R17 68       ; R17 += R19; if R17 <= R18 then begin PC := 68; R20 := R17 end
  74 [-]: SELF      R21 R14 K17  ; R22 := R14; R21 := R14[0xa0d9a8de]
@@ -745,7 +745,7 @@
  79 [-]: SELF      R24 R21 K13  ; R25 := R21; R24 := R21[0xed4e0128]
  80 [-]: CALL      R24 2 0      ; R24,... := R24(R25)
  81 [-]: CALL      R22 0 2      ; R22 := R22(R23,...)
- 82 [-]: OP_LOADBOOL R23 1 0      ; R23 := true
+ 82 [-]: LOADBOOL  R23 1 0      ; R23 := true
  83 [-]: SELF      R24 R15 K7   ; R25 := R15; R24 := R15[0xf2deaf69]
  84 [-]: GETGLOBAL R26 K20      ; R26 := 0x0032441c
  85 [-]: GETTABLE  R26 R26 K21  ; R26 := R26["UITypes_QuestRequiredCapturaTile"]
@@ -768,7 +768,7 @@
 102 [-]: CALL      R30 2 2      ; R30 := R30(R31)
 103 [-]: TEST      R30 1        ; if R30 then PC := 107
 104 [-]: JMP       107          ; PC := 107
-105 [-]: OP_LOADBOOL R23 0 0      ; R23 := false
+105 [-]: LOADBOOL  R23 0 0      ; R23 := false
 106 [-]: JMP       109          ; PC := 109
 107 [-]: TFORLOOP  R25 2        ; R28,R29 :=  R25(R26,R27); if R28 ~= nil then begin PC = 99; R27 := R28 end
 108 [-]: JMP       99           ; PC := 99

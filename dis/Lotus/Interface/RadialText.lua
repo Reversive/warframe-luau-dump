@@ -16,7 +16,7 @@
   7 [-]: LOADK     R2 40        ; R2 := 40.000000
   8 [-]: NEWTABLE  R3 0 0       ; R3 := {}
   9 [-]: NEWTABLE  R4 0 0       ; R4 := {}
- 10 [-]: OP_LOADBOOL R5 0 0       ; R5 := false
+ 10 [-]: LOADBOOL  R5 0 0       ; R5 := false
  11 [-]: NEWTABLE  R6 0 2       ; R6 := {}
  12 [-]: SETTABLE  R6 K3 K4     ; R6["CanUpdate"] := true
  13 [-]: SETTABLE  R6 K5 K6     ; R6["Hidden"] := false
@@ -189,15 +189,15 @@
  16 [-]: GETTABLE  R3 R3 K4     ; R82 := R3[0x06d055f9]
  17 [-]: LE        1 R2 K5      ; if R2 <= 7.000000 then PC := 20
  18 [-]: JMP       20           ; PC := 20
- 19 [-]: OP_LOADBOOL R4 0 1       ; R4 := false; PC := 20
- 20 [-]: OP_LOADBOOL R4 1 0       ; R4 := true
+ 19 [-]: LOADBOOL  R4 0 1       ; R4 := false; PC := 20
+ 20 [-]: LOADBOOL  R4 1 0       ; R4 := true
  21 [-]: LOADK     R5 3         ; R5 := 3.000000
  22 [-]: GETUPVAL  R6 U3        ; R6 := U3
  23 [-]: GETTABLE  R6 R6 K4     ; R82 := R6[0x06d055f9]
  24 [-]: LE        1 R2 K6      ; if R2 <= 10.000000 then PC := 27
  25 [-]: JMP       27           ; PC := 27
- 26 [-]: OP_LOADBOOL R7 0 1       ; R7 := false; PC := 27
- 27 [-]: OP_LOADBOOL R7 1 0       ; R7 := true
+ 26 [-]: LOADBOOL  R7 0 1       ; R7 := false; PC := 27
+ 27 [-]: LOADBOOL  R7 1 0       ; R7 := true
  28 [-]: LOADK     R8 2         ; R8 := 2.000000
  29 [-]: LOADK     R9 1         ; R9 := 1.000000
  30 [-]: CALL      R6 4 0       ; R6,... := R6(R7,R8,R9)
@@ -304,7 +304,7 @@
  25 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
  26 [-]: TEST      R0 0         ; if not R0 then PC := 42
  27 [-]: JMP       42           ; PC := 42
- 28 [-]: OP_LOADBOOL R0 1 0       ; R0 := true
+ 28 [-]: LOADBOOL  R0 1 0       ; R0 := true
  29 [-]: SETUPVAL  R0 U1        ; U82 := 
  30 [-]: GETUPVAL  R0 U2        ; R0 := U2
  31 [-]: GETGLOBAL R1 K7        ; R1 := 0xbe190284
@@ -439,7 +439,7 @@
  77 [-]: SELF      R6 R6 K24    ; R7 := R6; R6 := R6[0x42b04007]
  78 [-]: GETUPVAL  R8 U1        ; R8 := U1
  79 [-]: GETTABLE  R8 R8 K25    ; R8 := R8["DojoCeremonyTimeTag"]
- 80 [-]: OP_LOADBOOL R9 0 0       ; R9 := false
+ 80 [-]: LOADBOOL  R9 0 0       ; R9 := false
  81 [-]: NEWTABLE  R10 0 1      ; R10 := {}
  82 [-]: SETTABLE  R10 K26 R3   ; R10["TIME"] := R3
  83 [-]: CALL      R6 5 0       ; R6,... := R6(R7,R8,R9,R10)
@@ -464,7 +464,7 @@
 102 [-]: SELF      R6 R6 K24    ; R7 := R6; R6 := R6[0x42b04007]
 103 [-]: GETUPVAL  R8 U1        ; R8 := U1
 104 [-]: GETTABLE  R8 R8 K29    ; R8 := R8["DojoContributorTag"]
-105 [-]: OP_LOADBOOL R9 0 0       ; R9 := false
+105 [-]: LOADBOOL  R9 0 0       ; R9 := false
 106 [-]: NEWTABLE  R10 0 2      ; R10 := {}
 107 [-]: GETUPVAL  R11 U1       ; R11 := U1
 108 [-]: GETTABLE  R11 R11 K28  ; R11 := R11["DojoContributors"]
@@ -495,7 +495,7 @@
 133 [-]: SELF      R4 R4 K34    ; R5 := R4; R4 := R4[0xaade900e]
 134 [-]: LOADK     R6 K35       ; R6 := "_root"
 135 [-]: LOADK     R7 11        ; R7 := 11.000000
-136 [-]: OP_LOADBOOL R8 0 0       ; R8 := false
+136 [-]: LOADBOOL  R8 0 0       ; R8 := false
 137 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
 138 [-]: GETUPVAL  R4 U1        ; R4 := U1
 139 [-]: SETTABLE  R4 K28 K17   ; R4["DojoContributors"] := 0.000000
@@ -505,7 +505,7 @@
 143 [-]: SELF      R6 R6 K24    ; R7 := R6; R6 := R6[0x42b04007]
 144 [-]: GETUPVAL  R8 U1        ; R8 := U1
 145 [-]: GETTABLE  R8 R8 K29    ; R8 := R8["DojoContributorTag"]
-146 [-]: OP_LOADBOOL R9 0 0       ; R9 := false
+146 [-]: LOADBOOL  R9 0 0       ; R9 := false
 147 [-]: NEWTABLE  R10 0 2      ; R10 := {}
 148 [-]: GETUPVAL  R11 U1       ; R11 := U1
 149 [-]: GETTABLE  R11 R11 K28  ; R11 := R11["DojoContributors"]
@@ -539,7 +539,7 @@
  10 [-]: SELF      R0 R0 K3     ; R1 := R0; R0 := R0[0xaade900e]
  11 [-]: LOADK     R2 K4        ; R2 := "_root"
  12 [-]: LOADK     R3 11        ; R3 := 11.000000
- 13 [-]: OP_LOADBOOL R4 1 0       ; R4 := true
+ 13 [-]: LOADBOOL  R4 1 0       ; R4 := true
  14 [-]: CALL      R0 5 1       ; R0(R1,R2,R3,R4)
  15 [-]: GETUPVAL  R0 U0        ; R0 := U0
  16 [-]: SETTABLE  R0 K1 K5     ; R0["Hidden"] := false

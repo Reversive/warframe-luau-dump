@@ -165,7 +165,7 @@
  23 [-]: GETTABLE  R2 R2 R1     ; R2 := R2[R1]
  24 [-]: NEWTABLE  R3 0 0       ; R3 := {}
  25 [-]: SETTABLE  R2 K4 R3     ; R2["activeMissionIcons"] := R3
- 26 [-]: OP_LOADBOOL R2 0 0       ; R2 := false
+ 26 [-]: LOADBOOL  R2 0 0       ; R2 := false
  27 [-]: GETGLOBAL R3 K5        ; R3 := 0xcfc01047
  28 [-]: GETGLOBAL R4 K2        ; R4 := _T
  29 [-]: GETTABLE  R4 R4 K3     ; R4 := R4["CachedRegionStatus"]
@@ -176,7 +176,7 @@
  34 [-]: GETTABLE  R8 R0 K6     ; R8 := R0["mIcon"]
  35 [-]: EQ        0 R7 R8      ; if R7 ~= R8 then PC := 39
  36 [-]: JMP       39           ; PC := 39
- 37 [-]: OP_LOADBOOL R2 1 0       ; R2 := true
+ 37 [-]: LOADBOOL  R2 1 0       ; R2 := true
  38 [-]: JMP       41           ; PC := 41
  39 [-]: TFORLOOP  R3 2         ; R6,R7 :=  R3(R4,R5); if R6 ~= nil then begin PC = 34; R5 := R6 end
  40 [-]: JMP       34           ; PC := 34
@@ -340,8 +340,8 @@
  11 [-]: SELF      R1 R1 K5     ; R2 := R1; R1 := R1[0xbf9494fc]
  12 [-]: LOADK     R3 K6        ; R3 := "LotusGameRules.DebugActiveMissions"
  13 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
- 14 [-]: OP_LOADBOOL R2 0 0       ; R2 := false
- 15 [-]: OP_LOADBOOL R3 0 0       ; R3 := false
+ 14 [-]: LOADBOOL  R2 0 0       ; R2 := false
+ 15 [-]: LOADBOOL  R3 0 0       ; R3 := false
  16 [-]: SELF      R4 R0 K7     ; R5 := R0; R4 := R0[0x69727e0b]
  17 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  18 [-]: GETTABLE  R4 R4 K8     ; R4 := R4["mActiveMissions"]
@@ -363,7 +363,7 @@
  34 [-]: JMP       38           ; PC := 38
  35 [-]: GETUPVAL  R10 U1       ; R10 := U1
  36 [-]: SETTABLE  R10 R8 R9    ; R10[R8] := R9
- 37 [-]: OP_LOADBOOL R3 1 0       ; R3 := true
+ 37 [-]: LOADBOOL  R3 1 0       ; R3 := true
  38 [-]: FORLOOP   R5 23        ; R5 += R7; if R5 <= R6 then begin PC := 23; R8 := R5 end
  39 [-]: TEST      R3 1         ; if R3 then PC := 62
  40 [-]: JMP       62           ; PC := 62
@@ -428,7 +428,7 @@
  99 [-]: CALL      R26 3 2      ; R26 := R26(R27,R28)
 100 [-]: TEST      R26 0        ; if not R26 then PC := 104
 101 [-]: JMP       104          ; PC := 104
-102 [-]: OP_LOADBOOL R18 1 0      ; R18 := true
+102 [-]: LOADBOOL  R18 1 0      ; R18 := true
 103 [-]: JMP       106          ; PC := 106
 104 [-]: TFORLOOP  R21 2        ; R24,R25 :=  R21(R22,R23); if R24 ~= nil then begin PC = 91; R23 := R24 end
 105 [-]: JMP       91           ; PC := 91
@@ -602,18 +602,18 @@
 273 [-]: CALL      R54 3 2      ; R54 := R54(R55,R56)
 274 [-]: TEST      R54 1        ; if R54 then PC := 280
 275 [-]: JMP       280          ; PC := 280
-276 [-]: OP_LOADBOOL R54 0 0      ; R54 := false
+276 [-]: LOADBOOL  R54 0 0      ; R54 := false
 277 [-]: JMP       280          ; PC := 280
-278 [-]: OP_LOADBOOL R54 0 1      ; R54 := false; PC := 279
-279 [-]: OP_LOADBOOL R54 1 0      ; R54 := true
-280 [-]: OP_LOADBOOL R55 0 0      ; R55 := false
+278 [-]: LOADBOOL  R54 0 1      ; R54 := false; PC := 279
+279 [-]: LOADBOOL  R54 1 0      ; R54 := true
+280 [-]: LOADBOOL  R55 0 0      ; R55 := false
 281 [-]: MOVE      R56 R18      ; R56 := R18
 282 [-]: TEST      R54 0        ; if not R54 then PC := 287
 283 [-]: JMP       287          ; PC := 287
 284 [-]: GETTABLE  R57 R37 K74  ; R57 := R37["unlocked"]
 285 [-]: TEST      R57 1        ; if R57 then PC := 288
 286 [-]: JMP       288          ; PC := 288
-287 [-]: OP_LOADBOOL R57 0 0      ; R57 := false
+287 [-]: LOADBOOL  R57 0 0      ; R57 := false
 288 [-]: GETGLOBAL R58 K0       ; R58 := _T
 289 [-]: GETTABLE  R58 R58 K11  ; R58 := R58["CachedActiveMissions"]
 290 [-]: NEWTABLE  R59 0 12     ; R59 := {}
@@ -636,7 +636,7 @@
 307 [-]: GETTABLE  R59 R59 K11  ; R59 := R59["CachedActiveMissions"]
 308 [-]: GETTABLE  R59 R59 R38  ; R59 := R59[R38]
 309 [-]: CALL      R58 2 1      ; R58(R59)
-310 [-]: OP_LOADBOOL R58 0 0      ; R58 := false
+310 [-]: LOADBOOL  R58 0 0      ; R58 := false
 311 [-]: TEST      R58 0        ; if not R58 then PC := 390
 312 [-]: JMP       390          ; PC := 390
 313 [-]: TEST      R1 0         ; if not R1 then PC := 354
@@ -651,7 +651,7 @@
 322 [-]: GETGLOBAL R64 K37      ; R64 := 0x64fb1586
 323 [-]: GETTABLE  R65 R37 K73  ; R65 := R37["region"]
 324 [-]: CALL      R64 2 2      ; R64 := R64(R65)
-325 [-]: OP_LOADBOOL R65 0 0      ; R65 := false
+325 [-]: LOADBOOL  R65 0 0      ; R65 := false
 326 [-]: CALL      R63 3 2      ; R63 := R63(R64,R65)
 327 [-]: LOADK     R64 K89      ; R64 := " Node="
 328 [-]: MOVE      R65 R38      ; R65 := R38
@@ -690,7 +690,7 @@
 361 [-]: GETGLOBAL R64 K37      ; R64 := 0x64fb1586
 362 [-]: GETTABLE  R65 R37 K73  ; R65 := R37["region"]
 363 [-]: CALL      R64 2 2      ; R64 := R64(R65)
-364 [-]: OP_LOADBOOL R65 0 0      ; R65 := false
+364 [-]: LOADBOOL  R65 0 0      ; R65 := false
 365 [-]: CALL      R63 3 2      ; R63 := R63(R64,R65)
 366 [-]: LOADK     R64 K89      ; R64 := " Node="
 367 [-]: MOVE      R65 R38      ; R65 := R38

@@ -187,7 +187,7 @@
   7 [-]: GETTABLE  R1 R0 K3     ; R1 := R0["mMovie"]
   8 [-]: SELF      R1 R1 K4     ; R2 := R1; R1 := R1[0x42b04007]
   9 [-]: LOADK     R3 K5        ; R3 := "<WARNING>"
- 10 [-]: OP_LOADBOOL R4 1 0       ; R4 := true
+ 10 [-]: LOADBOOL  R4 1 0       ; R4 := true
  11 [-]: CALL      R1 4 2       ; R1 := R1(R2,R3,R4)
  12 [-]: LOADK     R2 K6        ; R2 := " "
  13 [-]: GETTABLE  R3 R0 K3     ; R3 := R0["mMovie"]
@@ -196,7 +196,7 @@
  16 [-]: GETTABLE  R6 R0 K1     ; R6 := R0["TipIndex"]
  17 [-]: GETTABLE  R5 R5 R6     ; R5 := R5[R6]
  18 [-]: GETTABLE  R5 R5 K7     ; R5 := R5["Tip"]
- 19 [-]: OP_LOADBOOL R6 1 0       ; R6 := true
+ 19 [-]: LOADBOOL  R6 1 0       ; R6 := true
  20 [-]: CALL      R3 4 2       ; R3 := R3(R4,R5,R6)
  21 [-]: CONCAT    R1 R1 R3     ; R1 := R1 .. R2 .. R3
  22 [-]: GETTABLE  R2 R0 K8     ; R2 := R0["MaxLines"]
@@ -290,8 +290,8 @@
  59 [-]: GETTABLE  R17 R17 K14  ; R17 := R17["RandomIndex"]
  60 [-]: LT        1 R3 R17     ; if R3 < R17 then PC := 63
  61 [-]: JMP       63           ; PC := 63
- 62 [-]: OP_LOADBOOL R17 0 1      ; R17 := false; PC := 63
- 63 [-]: OP_LOADBOOL R17 1 0      ; R17 := true
+ 62 [-]: LOADBOOL  R17 0 1      ; R17 := false; PC := 63
+ 63 [-]: LOADBOOL  R17 1 0      ; R17 := true
  64 [-]: CALL      R16 2 2      ; R16 := R16(R17)
  65 [-]: CONCAT    R11 R11 R16  ; R11 := R11 .. R12 .. R13 .. R14 .. R15 .. R16
  66 [-]: CALL      R9 3 1       ; R9(R10,R11)

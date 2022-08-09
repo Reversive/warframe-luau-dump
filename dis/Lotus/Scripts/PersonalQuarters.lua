@@ -16,8 +16,8 @@
   7 [-]: GETGLOBAL R2 K2        ; R2 := 0x7ed0a956
   8 [-]: LOADK     R3 K4        ; R3 := "/Lotus/StoreItems/Types/Items/ShipFeatureItems/PersonalQuartersFeatureItem"
   9 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 10 [-]: OP_LOADBOOL R3 0 0       ; R3 := false
- 11 [-]: OP_LOADBOOL R4 0 0       ; R4 := false
+ 10 [-]: LOADBOOL  R3 0 0       ; R3 := false
+ 11 [-]: LOADBOOL  R4 0 0       ; R4 := false
  12 [-]: GETGLOBAL R5 K5        ; R5 := 0x2d0fad09
  13 [-]: LOADK     R6 K6        ; R6 := "Lotus.Interface.LotusUtilities"
  14 [-]: CALL      R5 2 2       ; R5 := R5(R6)
@@ -58,10 +58,10 @@
 
   1 [-]: TEST      R0 0         ; if not R0 then PC := 6
   2 [-]: JMP       6            ; PC := 6
-  3 [-]: OP_LOADBOOL R2 1 0       ; R2 := true
+  3 [-]: LOADBOOL  R2 1 0       ; R2 := true
   4 [-]: SETUPVAL  R2 U0        ; U82 := 
   5 [-]: JMP       11           ; PC := 11
-  6 [-]: OP_LOADBOOL R2 1 0       ; R2 := true
+  6 [-]: LOADBOOL  R2 1 0       ; R2 := true
   7 [-]: SETUPVAL  R2 U1        ; U82 := 
   8 [-]: GETGLOBAL R2 K0        ; R2 := 0x3d106989
   9 [-]: LOADK     R3 K1        ; R3 := "Failed to unlock personal quarters ship feature"
@@ -80,7 +80,7 @@
 
   1 [-]: EQ        0 R0 K0      ; if R0 ~= nil then PC := 4
   2 [-]: JMP       4            ; PC := 4
-  3 [-]: OP_LOADBOOL R0 1 0       ; R0 := true
+  3 [-]: LOADBOOL  R0 1 0       ; R0 := true
   4 [-]: GETGLOBAL R1 K1        ; R1 := 0x76ea806b
   5 [-]: SELF      R1 R1 K2     ; R2 := R1; R1 := R1[0x3f3ae64c]
   6 [-]: LOADK     R3 0         ; R3 := 0.000000
@@ -259,7 +259,7 @@
  70 [-]: JMP       48           ; PC := 48
  71 [-]: GETUPVAL  R3 U0        ; R3 := U0
  72 [-]: MOVE      R4 R0        ; R4 := R0
- 73 [-]: OP_LOADBOOL R5 1 0       ; R5 := true
+ 73 [-]: LOADBOOL  R5 1 0       ; R5 := true
  74 [-]: CALL      R3 3 1       ; R3(R4,R5)
  75 [-]: RETURN    R0 1         ; return 
 
@@ -275,7 +275,7 @@
 
   1 [-]: GETUPVAL  R0 U0        ; R0 := U0
   2 [-]: GETUPVAL  R1 U1        ; R1 := U1
-  3 [-]: OP_LOADBOOL R2 0 0       ; R2 := false
+  3 [-]: LOADBOOL  R2 0 0       ; R2 := false
   4 [-]: CALL      R0 3 1       ; R0(R1,R2)
   5 [-]: RETURN    R0 1         ; return 
 
@@ -341,9 +341,9 @@
  29 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
  30 [-]: TEST      R4 0         ; if not R4 then PC := 100
  31 [-]: JMP       100          ; PC := 100
- 32 [-]: OP_LOADBOOL R4 0 0       ; R4 := false
+ 32 [-]: LOADBOOL  R4 0 0       ; R4 := false
  33 [-]: SETUPVAL  R4 U3        ; U82 := 
- 34 [-]: OP_LOADBOOL R4 0 0       ; R4 := false
+ 34 [-]: LOADBOOL  R4 0 0       ; R4 := false
  35 [-]: SETUPVAL  R4 U4        ; U82 := 
  36 [-]: LOADK     R4 5         ; R4 := 5.000000
  37 [-]: LOADK     R5 0         ; R5 := 0.000000
@@ -362,7 +362,7 @@
  50 [-]: GETUPVAL  R6 U4        ; R6 := U4
  51 [-]: TEST      R6 0         ; if not R6 then PC := 44
  52 [-]: JMP       44           ; PC := 44
- 53 [-]: OP_LOADBOOL R6 0 0       ; R6 := false
+ 53 [-]: LOADBOOL  R6 0 0       ; R6 := false
  54 [-]: SETUPVAL  R6 U4        ; U82 := 
  55 [-]: LOADK     R6 0         ; R6 := 0.000000
  56 [-]: ADD       R5 R5 K12    ; R5 := R5 + 1.000000

@@ -373,9 +373,9 @@
  18 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
  19 [-]: CONCAT    R1 R1 R3     ; R1 := R1 .. R2 .. R3
  20 [-]: LOADK     R2 2         ; R2 := 2.000000
- 21 [-]: OP_LOADBOOL R3 1 0       ; R3 := true
+ 21 [-]: LOADBOOL  R3 1 0       ; R3 := true
  22 [-]: LOADNIL   R4 R4        ; R4 := nil
- 23 [-]: OP_LOADBOOL R5 0 0       ; R5 := false
+ 23 [-]: LOADBOOL  R5 0 0       ; R5 := false
  24 [-]: CALL      R0 6 1       ; R0(R1,R2,R3,R4,R5)
  25 [-]: JMP       40           ; PC := 40
  26 [-]: GETGLOBAL R0 K2        ; R0 := _T
@@ -388,14 +388,14 @@
  33 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
  34 [-]: CONCAT    R1 R1 R3     ; R1 := R1 .. R2 .. R3
  35 [-]: LOADK     R2 2         ; R2 := 2.000000
- 36 [-]: OP_LOADBOOL R3 1 0       ; R3 := true
+ 36 [-]: LOADBOOL  R3 1 0       ; R3 := true
  37 [-]: LOADNIL   R4 R4        ; R4 := nil
- 38 [-]: OP_LOADBOOL R5 0 0       ; R5 := false
+ 38 [-]: LOADBOOL  R5 0 0       ; R5 := false
  39 [-]: CALL      R0 6 1       ; R0(R1,R2,R3,R4,R5)
- 40 [-]: OP_LOADBOOL R0 1 0       ; R0 := true
+ 40 [-]: LOADBOOL  R0 1 0       ; R0 := true
  41 [-]: RETURN    R0 2         ; return R0
  42 [-]: JMP       45           ; PC := 45
- 43 [-]: OP_LOADBOOL R0 0 0       ; R0 := false
+ 43 [-]: LOADBOOL  R0 0 0       ; R0 := false
  44 [-]: RETURN    R0 2         ; return R0
  45 [-]: RETURN    R0 1         ; return 
 

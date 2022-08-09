@@ -24,23 +24,23 @@
  15 [-]: GETGLOBAL R3 K8        ; R3 := 0xb009bbc6
  16 [-]: LOADK     R4 K9        ; R4 := "/Lotus/Interface/Graphics/Arcanes/ArcaneGlow.png"
  17 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 18 [-]: SETGLOBALHASH R3 K7        ; glowTexture := R3
+ 18 [-]: SETGLOBAL R3 K7        ; glowTexture := R3
  19 [-]: GETGLOBAL R3 K8        ; R3 := 0xb009bbc6
  20 [-]: LOADK     R4 K11       ; R4 := "/Lotus/Interface/Materials/ThemedAbilitySpots"
  21 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 22 [-]: SETGLOBALHASH R3 K10       ; sparklesMaterial := R3
+ 22 [-]: SETGLOBAL R3 K10       ; sparklesMaterial := R3
  23 [-]: GETGLOBAL R3 K8        ; R3 := 0xb009bbc6
  24 [-]: LOADK     R4 K13       ; R4 := "/Lotus/Interface/Materials/WarframeSelectVisibleRange"
  25 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 26 [-]: SETGLOBALHASH R3 K12       ; visRangeMaterial := R3
+ 26 [-]: SETGLOBAL R3 K12       ; visRangeMaterial := R3
  27 [-]: GETGLOBAL R3 K8        ; R3 := 0xb009bbc6
  28 [-]: LOADK     R4 K15       ; R4 := "/Lotus/Interface/Materials/AbilitiesIconShadow"
  29 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 30 [-]: SETGLOBALHASH R3 K14       ; shadowMaterial := R3
+ 30 [-]: SETGLOBAL R3 K14       ; shadowMaterial := R3
  31 [-]: GETGLOBAL R3 K8        ; R3 := 0xb009bbc6
  32 [-]: LOADK     R4 K17       ; R4 := "/Lotus/Interface/Icons/Abilities/PassiveAbilityIcon.png"
  33 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 34 [-]: SETGLOBALHASH R3 K16       ; passiveIcon := R3
+ 34 [-]: SETGLOBAL R3 K16       ; passiveIcon := R3
  35 [-]: CLOSURE   R3 0         ; R3 := closure(Function #1)
  36 [-]: MOVE      R0 R2        ; R0 := R2
  37 [-]: CLOSURE   R4 1         ; R4 := closure(Function #2)
@@ -125,7 +125,7 @@
  59 [-]: CALL      R18 2 2      ; R18 := R18(R19)
  60 [-]: SELF      R18 R18 K12  ; R19 := R18; R18 := R18[0x6d604ba7]
  61 [-]: CALL      R18 2 2      ; R18 := R18(R19)
- 62 [-]: OP_LOADBOOL R19 1 0      ; R19 := true
+ 62 [-]: LOADBOOL  R19 1 0      ; R19 := true
  63 [-]: CALL      R16 4 2      ; R16 := R16(R17,R18,R19)
  64 [-]: MOVE      R15 R16      ; R15 := R16
  65 [-]: JMP       74           ; PC := 74
@@ -134,7 +134,7 @@
  68 [-]: CALL      R18 2 2      ; R18 := R18(R19)
  69 [-]: SELF      R18 R18 K12  ; R19 := R18; R18 := R18[0x6d604ba7]
  70 [-]: CALL      R18 2 2      ; R18 := R18(R19)
- 71 [-]: OP_LOADBOOL R19 1 0      ; R19 := true
+ 71 [-]: LOADBOOL  R19 1 0      ; R19 := true
  72 [-]: CALL      R16 4 2      ; R16 := R16(R17,R18,R19)
  73 [-]: MOVE      R15 R16      ; R15 := R16
  74 [-]: NEWTABLE  R16 0 16     ; R16 := {}
@@ -151,7 +151,7 @@
  85 [-]: CALL      R20 2 2      ; R20 := R20(R21)
  86 [-]: SELF      R20 R20 K12  ; R21 := R20; R20 := R20[0x6d604ba7]
  87 [-]: CALL      R20 2 2      ; R20 := R20(R21)
- 88 [-]: OP_LOADBOOL R21 0 0      ; R21 := false
+ 88 [-]: LOADBOOL  R21 0 0      ; R21 := false
  89 [-]: CALL      R18 4 0      ; R18,... := R18(R19,R20,R21)
  90 [-]: CALL      R17 0 2      ; R17 := R17(R18,...)
  91 [-]: SETTABLE  R16 K21 R17  ; R16["Name"] := R17
@@ -163,8 +163,8 @@
  97 [-]: SETTABLE  R16 K26 R17  ; R16["Level"] := R17
  98 [-]: LT        1 R13 R14    ; if R13 < R14 then PC := 101
  99 [-]: JMP       101          ; PC := 101
-100 [-]: OP_LOADBOOL R17 0 1      ; R17 := false; PC := 101
-101 [-]: OP_LOADBOOL R17 1 0      ; R17 := true
+100 [-]: LOADBOOL  R17 0 1      ; R17 := false; PC := 101
+101 [-]: LOADBOOL  R17 1 0      ; R17 := true
 102 [-]: SETTABLE  R16 K28 R17  ; R16["Locked"] := R17
 103 [-]: SELF      R17 R12 K30  ; R18 := R12; R17 := R12[0x056dcf06]
 104 [-]: CALL      R17 2 2      ; R17 := R17(R18)
@@ -370,8 +370,8 @@
 ; Max Stack Size:  32
 
   1 [-]: SELF      R7 R0 K0     ; R8 := R0; R7 := R0[0x7c09c373]
-  2 [-]: OP_LOADBOOL R9 1 0       ; R9 := true
-  3 [-]: OP_LOADBOOL R10 1 0      ; R10 := true
+  2 [-]: LOADBOOL  R9 1 0       ; R9 := true
+  3 [-]: LOADBOOL  R10 1 0      ; R10 := true
   4 [-]: CALL      R7 4 1       ; R7(R8,R9,R10)
   5 [-]: MOVE      R7 R1        ; R7 := R1
   6 [-]: GETGLOBAL R8 K1        ; R8 := 0x6728fd22
@@ -402,7 +402,7 @@
  31 [-]: GETGLOBAL R12 K12      ; R12 := 0x0469f296
  32 [-]: LOADK     R13 K13      ; R13 := "GetPassiveInfo"
  33 [-]: CALL      R12 2 2      ; R12 := R12(R13)
- 34 [-]: OP_LOADBOOL R13 0 0      ; R13 := false
+ 34 [-]: LOADBOOL  R13 0 0      ; R13 := false
  35 [-]: CALL      R9 5 1       ; R9(R10,R11,R12,R13)
  36 [-]: NEWTABLE  R9 0 5       ; R9 := {}
  37 [-]: SETTABLE  R9 K14 K15   ; R9["IsPassive"] := true
@@ -412,7 +412,7 @@
  41 [-]: GETTABLE  R11 R0 K20   ; R11 := R0["mMovie"]
  42 [-]: SELF      R11 R11 K21  ; R12 := R11; R11 := R11[0x42b04007]
  43 [-]: LOADK     R13 K22      ; R13 := "/Lotus/Language/Menu/Ability_Passive"
- 44 [-]: OP_LOADBOOL R14 0 0      ; R14 := false
+ 44 [-]: LOADBOOL  R14 0 0      ; R14 := false
  45 [-]: CALL      R11 4 0      ; R11,... := R11(R12,R13,R14)
  46 [-]: CALL      R10 0 2      ; R10 := R10(R11,...)
  47 [-]: SETTABLE  R9 K17 R10   ; R9["Name"] := R10
@@ -422,7 +422,7 @@
  51 [-]: CALL      R12 2 2      ; R12 := R12(R13)
  52 [-]: SELF      R12 R12 K25  ; R13 := R12; R12 := R12[0x6d604ba7]
  53 [-]: CALL      R12 2 2      ; R12 := R12(R13)
- 54 [-]: OP_LOADBOOL R13 1 0      ; R13 := true
+ 54 [-]: LOADBOOL  R13 1 0      ; R13 := true
  55 [-]: GETGLOBAL R14 K4       ; R14 := _T
  56 [-]: GETTABLE  R14 R14 K5   ; R14 := R14["PassiveInfo"]
  57 [-]: CALL      R10 5 2      ; R10 := R10(R11,R12,R13,R14)
@@ -431,7 +431,7 @@
  60 [-]: SETTABLE  R9 K26 R10   ; R9["Icon"] := R10
  61 [-]: SELF      R10 R0 K28   ; R11 := R0; R10 := R0[0xbad4316f]
  62 [-]: MOVE      R12 R9       ; R12 := R9
- 63 [-]: OP_LOADBOOL R13 1 0      ; R13 := true
+ 63 [-]: LOADBOOL  R13 1 0      ; R13 := true
  64 [-]: CALL      R10 4 1      ; R10(R11,R12,R13)
  65 [-]: GETUPVAL  R10 U0       ; R10 := U0
  66 [-]: GETTABLE  R10 R10 K29  ; R10 := R10["mIconLoader"]
@@ -478,7 +478,7 @@
 107 [-]: SETTABLE  R14 K38 K31  ; R14["IsAbility"] := false
 108 [-]: SELF      R15 R0 K28   ; R16 := R0; R15 := R0[0xbad4316f]
 109 [-]: MOVE      R17 R14      ; R17 := R14
-110 [-]: OP_LOADBOOL R18 1 0      ; R18 := true
+110 [-]: LOADBOOL  R18 1 0      ; R18 := true
 111 [-]: CALL      R15 4 1      ; R15(R16,R17,R18)
 112 [-]: FORLOOP   R10 76       ; R10 += R12; if R10 <= R11 then begin PC := 76; R13 := R10 end
 113 [-]: EQ        1 R6 K6      ; if R6 == nil then PC := 158
@@ -523,7 +523,7 @@
 152 [-]: SETTABLE  R19 K38 K31  ; R19["IsAbility"] := false
 153 [-]: SELF      R20 R0 K28   ; R21 := R0; R20 := R0[0xbad4316f]
 154 [-]: MOVE      R22 R19      ; R22 := R19
-155 [-]: OP_LOADBOOL R23 1 0      ; R23 := true
+155 [-]: LOADBOOL  R23 1 0      ; R23 := true
 156 [-]: CALL      R20 4 1      ; R20(R21,R22,R23)
 157 [-]: FORLOOP   R15 119      ; R15 += R17; if R15 <= R16 then begin PC := 119; R18 := R15 end
 158 [-]: GETUPVAL  R20 U0       ; R20 := U0
@@ -561,7 +561,7 @@
 190 [-]: CALL      R20 3 1      ; R20(R21,R22)
 191 [-]: SELF      R20 R7 K47   ; R21 := R7; R20 := R7[0xa3ef5d65]
 192 [-]: GETTABLE  R22 R0 K46   ; R22 := R0["mAbilityColor2"]
-193 [-]: OP_LOADBOOL R23 1 0      ; R23 := true
+193 [-]: LOADBOOL  R23 1 0      ; R23 := true
 194 [-]: CALL      R20 4 1      ; R20(R21,R22,R23)
 195 [-]: GETUPVAL  R20 U0       ; R20 := U0
 196 [-]: GETTABLE  R20 R20 K48  ; R20 := R20["mSparkleMaterial"]
@@ -625,7 +625,7 @@
 254 [-]: GETUPVAL  R26 U3       ; R26 := U3
 255 [-]: GETTABLE  R26 R26 K67  ; R82 := R26[0x5d10207d]
 256 [-]: LOADK     R27 9        ; R27 := 9.000000
-257 [-]: OP_LOADBOOL R28 1 0      ; R28 := true
+257 [-]: LOADBOOL  R28 1 0      ; R28 := true
 258 [-]: CALL      R26 3 0      ; R26,... := R26(R27,R28)
 259 [-]: CALL      R21 0 1      ; R21(R22,...)
 260 [-]: GETTABLE  R21 R0 K69   ; R21 := R0["VisibleRangeInfo"]
@@ -761,7 +761,7 @@
  73 [-]: GETUPVAL  R1 U0        ; R1 := U0
  74 [-]: SELF      R1 R1 K17    ; R2 := R1; R1 := R1[0x087cbd3f]
  75 [-]: MOVE      R3 R0        ; R3 := R0
- 76 [-]: OP_LOADBOOL R4 1 0       ; R4 := true
+ 76 [-]: LOADBOOL  R4 1 0       ; R4 := true
  77 [-]: CALL      R1 4 1       ; R1(R2,R3,R4)
  78 [-]: RETURN    R0 1         ; return 
 
@@ -833,7 +833,7 @@
  24 [-]: GETUPVAL  R1 U0        ; R1 := U0
  25 [-]: SELF      R1 R1 K11    ; R2 := R1; R1 := R1[0x087cbd3f]
  26 [-]: MOVE      R3 R0        ; R3 := R0
- 27 [-]: OP_LOADBOOL R4 0 0       ; R4 := false
+ 27 [-]: LOADBOOL  R4 0 0       ; R4 := false
  28 [-]: CALL      R1 4 1       ; R1(R2,R3,R4)
  29 [-]: RETURN    R0 1         ; return 
 
@@ -911,7 +911,7 @@
   7 [-]: GETTABLE  R3 R0 K3     ; R3 := R0["mClipName"]
   8 [-]: LOADK     R4 K4        ; R4 := "Icon"
   9 [-]: LOADK     R5 11        ; R5 := 11.000000
- 10 [-]: OP_LOADBOOL R6 1 0       ; R6 := true
+ 10 [-]: LOADBOOL  R6 1 0       ; R6 := true
  11 [-]: CALL      R1 6 1       ; R1(R2,R3,R4,R5,R6)
  12 [-]: GETUPVAL  R1 U0        ; R1 := U0
  13 [-]: SELF      R1 R1 K5     ; R2 := R1; R1 := R1[0x84ef094e]
@@ -932,17 +932,17 @@
   1 [-]: GETUPVAL  R3 U0        ; R3 := U0
   2 [-]: GETTABLE  R3 R3 K0     ; R82 := R3[0x5d10207d]
   3 [-]: LOADK     R4 6         ; R4 := 6.000000
-  4 [-]: OP_LOADBOOL R5 1 0       ; R5 := true
+  4 [-]: LOADBOOL  R5 1 0       ; R5 := true
   5 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
   6 [-]: GETUPVAL  R4 U0        ; R4 := U0
   7 [-]: GETTABLE  R4 R4 K0     ; R82 := R4[0x5d10207d]
   8 [-]: LOADK     R5 9         ; R5 := 9.000000
-  9 [-]: OP_LOADBOOL R6 1 0       ; R6 := true
+  9 [-]: LOADBOOL  R6 1 0       ; R6 := true
  10 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
  11 [-]: GETUPVAL  R5 U0        ; R5 := U0
  12 [-]: GETTABLE  R5 R5 K0     ; R82 := R5[0x5d10207d]
  13 [-]: LOADK     R6 10        ; R6 := 10.000000
- 14 [-]: OP_LOADBOOL R7 1 0       ; R7 := true
+ 14 [-]: LOADBOOL  R7 1 0       ; R7 := true
  15 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
  16 [-]: GETTABLE  R6 R0 K2     ; R6 := R0["mAbilityColor1"]
  17 [-]: SELF      R6 R6 K3     ; R7 := R6; R6 := R6[0xa5d5c8f6]
@@ -1109,8 +1109,8 @@
  14 [-]: GETTABLE  R3 R0 K4     ; R3 := R0["Id"]
  15 [-]: EQ        1 R2 R3      ; if R2 == R3 then PC := 18
  16 [-]: JMP       18           ; PC := 18
- 17 [-]: OP_LOADBOOL R2 0 1       ; R2 := false; PC := 18
- 18 [-]: OP_LOADBOOL R2 1 0       ; R2 := true
+ 17 [-]: LOADBOOL  R2 0 1       ; R2 := false; PC := 18
+ 18 [-]: LOADBOOL  R2 1 0       ; R2 := true
  19 [-]: GETUPVAL  R3 U1        ; R3 := U1
  20 [-]: GETTABLE  R3 R3 K5     ; R82 := R3[0xfc3fed1f]
  21 [-]: GETUPVAL  R4 U0        ; R4 := U0
@@ -1182,7 +1182,7 @@
  87 [-]: GETTABLE  R10 R10 K6   ; R10 := R10["mMovie"]
  88 [-]: SELF      R10 R10 K20  ; R11 := R10; R10 := R10[0x42b04007]
  89 [-]: GETTABLE  R12 R0 K21   ; R12 := R0["Name"]
- 90 [-]: OP_LOADBOOL R13 1 0      ; R13 := true
+ 90 [-]: LOADBOOL  R13 1 0      ; R13 := true
  91 [-]: CALL      R10 4 0      ; R10,... := R10(R11,R12,R13)
  92 [-]: CALL      R9 0 0       ; R9,... := R9(R10,...)
  93 [-]: CALL      R4 0 1       ; R4(R5,...)
@@ -1235,7 +1235,7 @@
 140 [-]: GETTABLE  R11 R11 K6   ; R11 := R11["mMovie"]
 141 [-]: SELF      R11 R11 K20  ; R12 := R11; R11 := R11[0x42b04007]
 142 [-]: LOADK     R13 K30      ; R13 := "/Lotus/Language/Menu/FocusLocked"
-143 [-]: OP_LOADBOOL R14 1 0      ; R14 := true
+143 [-]: LOADBOOL  R14 1 0      ; R14 := true
 144 [-]: CALL      R11 4 0      ; R11,... := R11(R12,R13,R14)
 145 [-]: CALL      R10 0 0      ; R10,... := R10(R11,...)
 146 [-]: CALL      R5 0 1       ; R5(R6,...)
@@ -1251,7 +1251,7 @@
 156 [-]: GETTABLE  R11 R11 K6   ; R11 := R11["mMovie"]
 157 [-]: SELF      R11 R11 K20  ; R12 := R11; R11 := R11[0x42b04007]
 158 [-]: LOADK     R13 K31      ; R13 := "/Lotus/Language/Menu/Global_FormattedRankCaps"
-159 [-]: OP_LOADBOOL R14 1 0      ; R14 := true
+159 [-]: LOADBOOL  R14 1 0      ; R14 := true
 160 [-]: NEWTABLE  R15 0 1      ; R15 := {}
 161 [-]: GETTABLE  R16 R0 K33   ; R16 := R0["Level"]
 162 [-]: SETTABLE  R15 K32 R16  ; R15["RANK"] := R16
@@ -1273,8 +1273,8 @@
 178 [-]: GETTABLE  R5 R5 K37    ; R5 := R5["IsLoading"]
 179 [-]: NOT       R5 R5        ; R5 := not R5
 180 [-]: JMP       183          ; PC := 183
-181 [-]: OP_LOADBOOL R5 0 1       ; R5 := false; PC := 182
-182 [-]: OP_LOADBOOL R5 1 0       ; R5 := true
+181 [-]: LOADBOOL  R5 0 1       ; R5 := false; PC := 182
+182 [-]: LOADBOOL  R5 1 0       ; R5 := true
 183 [-]: GETUPVAL  R6 U0        ; R6 := U0
 184 [-]: GETTABLE  R6 R6 K6     ; R6 := R6["mMovie"]
 185 [-]: SELF      R6 R6 K10    ; R7 := R6; R6 := R6[0xc0a3774b]
@@ -1356,7 +1356,7 @@
 261 [-]: GETTABLE  R9 R0 K0     ; R9 := R0["mClipName"]
 262 [-]: LOADK     R10 K46      ; R10 := "Icon.Shadow"
 263 [-]: LOADK     R11 11       ; R11 := 11.000000
-264 [-]: OP_LOADBOOL R12 0 0      ; R12 := false
+264 [-]: LOADBOOL  R12 0 0      ; R12 := false
 265 [-]: CALL      R7 6 1       ; R7(R8,R9,R10,R11,R12)
 266 [-]: GETTABLE  R7 R0 K34    ; R7 := R0["IsPassive"]
 267 [-]: TEST      R7 1         ; if R7 then PC := 303

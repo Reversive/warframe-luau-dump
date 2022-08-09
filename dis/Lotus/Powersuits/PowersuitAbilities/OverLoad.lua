@@ -877,8 +877,8 @@
  76 [-]: CALL      R10 3 2      ; R10 := R10(R11,R12)
  77 [-]: EQ        1 R10 K25    ; if R10 == 1.000000 then PC := 80
  78 [-]: JMP       80           ; PC := 80
- 79 [-]: OP_LOADBOOL R10 0 1      ; R10 := false; PC := 80
- 80 [-]: OP_LOADBOOL R10 1 0      ; R10 := true
+ 79 [-]: LOADBOOL  R10 0 1      ; R10 := false; PC := 80
+ 80 [-]: LOADBOOL  R10 1 0      ; R10 := true
  81 [-]: LOADNIL   R11 R11      ; R11 := nil
  82 [-]: TEST      R6 0         ; if not R6 then PC := 114
  83 [-]: JMP       114          ; PC := 114
@@ -1076,10 +1076,10 @@
 275 [-]: JMP       284          ; PC := 284
 276 [-]: SELF      R30 R0 K69   ; R31 := R0; R30 := R0[0x0f89a4d4]
 277 [-]: MOVE      R32 R21      ; R32 := R21
-278 [-]: OP_LOADBOOL R33 0 0      ; R33 := false
+278 [-]: LOADBOOL  R33 0 0      ; R33 := false
 279 [-]: LOADK     R34 3        ; R34 := 3.000000
 280 [-]: LOADK     R35 2        ; R35 := 2.000000
-281 [-]: OP_LOADBOOL R36 1 0      ; R36 := true
+281 [-]: LOADBOOL  R36 1 0      ; R36 := true
 282 [-]: MOVE      R37 R22      ; R37 := R22
 283 [-]: CALL      R30 8 1      ; R30(R31,R32,R33,R34,R35,R36,R37)
 284 [-]: LE        0 R23 K22    ; if R23 > 0.000000 then PC := 544
@@ -1109,7 +1109,7 @@
 308 [-]: SELF      R31 R18 K71  ; R32 := R18; R31 := R18[0xf326045f]
 309 [-]: MOVE      R33 R30      ; R33 := R30
 310 [-]: CALL      R31 3 1      ; R31(R32,R33)
-311 [-]: OP_LOADBOOL R31 0 0      ; R31 := false
+311 [-]: LOADBOOL  R31 0 0      ; R31 := false
 312 [-]: GETGLOBAL R32 K10      ; R32 := 0x89326c93
 313 [-]: SELF      R32 R32 K72  ; R33 := R32; R32 := R32[0xfb669000]
 314 [-]: GETGLOBAL R34 K73      ; R34 := gLotusAvatarType
@@ -1177,7 +1177,7 @@
 376 [-]: MOVE      R41 R0       ; R41 := R0
 377 [-]: MOVE      R42 R13      ; R42 := R13
 378 [-]: CALL      R39 4 1      ; R39(R40,R41,R42)
-379 [-]: OP_LOADBOOL R31 1 0      ; R31 := true
+379 [-]: LOADBOOL  R31 1 0      ; R31 := true
 380 [-]: TEST      R7 0         ; if not R7 then PC := 409
 381 [-]: JMP       409          ; PC := 409
 382 [-]: SELF      R39 R37 K61  ; R40 := R37; R39 := R37[0xd2715720]
@@ -1324,7 +1324,7 @@
 523 [-]: CALL      R58 2 2      ; R58 := R58(R59)
 524 [-]: SELF      R58 R58 K90  ; R59 := R58; R58 := R58[0x60bf5f59]
 525 [-]: MOVE      R60 R52      ; R60 := R52
-526 [-]: OP_LOADBOOL R61 1 0      ; R61 := true
+526 [-]: LOADBOOL  R61 1 0      ; R61 := true
 527 [-]: CALL      R58 4 1      ; R58(R59,R60,R61)
 528 [-]: TFORLOOP  R53 2        ; R56,R57 :=  R53(R54,R55); if R56 ~= nil then begin PC = 507; R55 := R56 end
 529 [-]: JMP       507          ; PC := 507
@@ -1393,10 +1393,10 @@
 592 [-]: GETGLOBAL R61 K57      ; R61 := 0x0469f296
 593 [-]: LOADK     R62 K94      ; R62 := "ELECTRIFIED_END"
 594 [-]: CALL      R61 2 2      ; R61 := R61(R62)
-595 [-]: OP_LOADBOOL R62 0 0      ; R62 := false
+595 [-]: LOADBOOL  R62 0 0      ; R62 := false
 596 [-]: LOADK     R63 3        ; R63 := 3.000000
 597 [-]: LOADK     R64 1        ; R64 := 1.000000
-598 [-]: OP_LOADBOOL R65 1 0      ; R65 := true
+598 [-]: LOADBOOL  R65 1 0      ; R65 := true
 599 [-]: MOVE      R66 R22      ; R66 := R22
 600 [-]: CALL      R59 8 0      ; R59,... := R59(R60,R61,R62,R63,R64,R65,R66)
 601 [-]: CALL      R58 0 2      ; R58 := R58(R59,...)
@@ -1404,10 +1404,10 @@
 603 [-]: JMP       611          ; PC := 611
 604 [-]: SELF      R58 R0 K95   ; R59 := R0; R58 := R0[0x7027c544]
 605 [-]: LOADNIL   R60 R60      ; R60 := nil
-606 [-]: OP_LOADBOOL R61 0 0      ; R61 := false
+606 [-]: LOADBOOL  R61 0 0      ; R61 := false
 607 [-]: LOADK     R62 3        ; R62 := 3.000000
 608 [-]: LOADK     R63 1        ; R63 := 1.000000
-609 [-]: OP_LOADBOOL R64 0 0      ; R64 := false
+609 [-]: LOADBOOL  R64 0 0      ; R64 := false
 610 [-]: CALL      R58 7 1      ; R58(R59,R60,R61,R62,R63,R64)
 611 [-]: TEST      R7 0         ; if not R7 then PC := 653
 612 [-]: JMP       653          ; PC := 653
@@ -1607,7 +1607,7 @@
  38 [-]: GETGLOBAL R13 K13      ; R13 := 0x0469f296
  39 [-]: LOADK     R14 K14      ; R14 := "AmbientLightning"
  40 [-]: CALL      R13 2 2      ; R13 := R13(R14)
- 41 [-]: OP_LOADBOOL R14 0 0      ; R14 := false
+ 41 [-]: LOADBOOL  R14 0 0      ; R14 := false
  42 [-]: CALL      R11 4 1      ; R11(R12,R13,R14)
  43 [-]: SELF      R11 R1 K15   ; R12 := R1; R11 := R1[0x47901f07]
  44 [-]: SELF      R13 R0 K16   ; R14 := R0; R13 := R0[0xbc4ebb44]
@@ -1625,10 +1625,10 @@
  56 [-]: MOVE      R13 R0       ; R13 := R0
  57 [-]: GETGLOBAL R14 K22      ; R14 := 0x0ed8b456
  58 [-]: LOADK     R15 K23      ; R15 := "OverloadAttackStart"
- 59 [-]: OP_LOADBOOL R16 0 0      ; R16 := false
+ 59 [-]: LOADBOOL  R16 0 0      ; R16 := false
  60 [-]: LOADK     R17 2        ; R17 := 2.000000
  61 [-]: LOADK     R18 1        ; R18 := 1.000000
- 62 [-]: OP_LOADBOOL R19 1 0      ; R19 := true
+ 62 [-]: LOADBOOL  R19 1 0      ; R19 := true
  63 [-]: CALL      R12 8 1      ; R12(R13,R14,R15,R16,R17,R18,R19)
  64 [-]: SELF      R12 R0 K25   ; R13 := R0; R12 := R0[0x0d0482e0]
  65 [-]: CALL      R12 2 1      ; R12(R13)
@@ -1769,7 +1769,7 @@
 200 [-]: CALL      R28 2 2      ; R28 := R28(R29)
 201 [-]: LT        0 K6 R28     ; if 0.000000 >= R28 then PC := 236
 202 [-]: JMP       236          ; PC := 236
-203 [-]: OP_LOADBOOL R28 0 0      ; R28 := false
+203 [-]: LOADBOOL  R28 0 0      ; R28 := false
 204 [-]: GETGLOBAL R29 K48      ; R29 := 0xc8802016
 205 [-]: GETGLOBAL R30 K39      ; R30 := _T
 206 [-]: GETTABLE  R30 R30 K40  ; R30 := R30["voltOverload"]
@@ -1778,7 +1778,7 @@
 209 [-]: JMP       214          ; PC := 214
 210 [-]: EQ        0 R33 R27    ; if R33 ~= R27 then PC := 214
 211 [-]: JMP       214          ; PC := 214
-212 [-]: OP_LOADBOOL R28 1 0      ; R28 := true
+212 [-]: LOADBOOL  R28 1 0      ; R28 := true
 213 [-]: JMP       216          ; PC := 216
 214 [-]: TFORLOOP  R29 2        ; R32,R33 :=  R29(R30,R31); if R32 ~= nil then begin PC = 210; R31 := R32 end
 215 [-]: JMP       210          ; PC := 210
@@ -2160,8 +2160,8 @@
  42 [-]: JMP       45           ; PC := 45
  43 [-]: EQ        1 R5 K10     ; if R5 == 1.000000 then PC := 46
  44 [-]: JMP       46           ; PC := 46
- 45 [-]: OP_LOADBOOL R6 0 1       ; R6 := false; PC := 46
- 46 [-]: OP_LOADBOOL R6 1 0       ; R6 := true
+ 45 [-]: LOADBOOL  R6 0 1       ; R6 := false; PC := 46
+ 46 [-]: LOADBOOL  R6 1 0       ; R6 := true
  47 [-]: GETUPVAL  R7 U0        ; R7 := U0
  48 [-]: SELF      R8 R1 K11    ; R9 := R1; R8 := R1[0xa776e126]
  49 [-]: GETGLOBAL R10 K6       ; R10 := 0x0ef21e9f
@@ -2250,7 +2250,7 @@
 130 [-]: GETGLOBAL R11 K31      ; R11 := 0x0469f296
 131 [-]: LOADK     R12 K32      ; R12 := "TeslaCoil"
 132 [-]: CALL      R11 2 2      ; R11 := R11(R12)
-133 [-]: OP_LOADBOOL R12 0 0      ; R12 := false
+133 [-]: LOADBOOL  R12 0 0      ; R12 := false
 134 [-]: CALL      R9 4 1       ; R9(R10,R11,R12)
 135 [-]: GETGLOBAL R9 K1        ; R9 := 0x7b998233
 136 [-]: GETGLOBAL R10 K33      ; R10 := 0x83f4e77c

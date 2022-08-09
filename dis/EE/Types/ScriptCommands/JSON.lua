@@ -316,12 +316,12 @@
  32 [-]: TEST      R5 0         ; if not R5 then PC := 39
  33 [-]: JMP       39           ; PC := 39
  34 [-]: GETTABLE  R5 R0 K9     ; R82 := R5[0x60cce7b4]
- 35 [-]: OP_LOADBOOL R6 0 0       ; R6 := false
+ 35 [-]: LOADBOOL  R6 0 0       ; R6 := false
  36 [-]: MOVE      R7 R1        ; R7 := R1
  37 [-]: CALL      R5 3 1       ; R5(R6,R7)
  38 [-]: JMP       43           ; PC := 43
  39 [-]: GETGLOBAL R5 K9        ; R5 := 0x60cce7b4
- 40 [-]: OP_LOADBOOL R6 0 0       ; R6 := false
+ 40 [-]: LOADBOOL  R6 0 0       ; R6 := false
  41 [-]: MOVE      R7 R1        ; R7 := R1
  42 [-]: CALL      R5 3 1       ; R5(R6,R7)
  43 [-]: RETURN    R0 1         ; return 
@@ -350,12 +350,12 @@
  12 [-]: TEST      R3 0         ; if not R3 then PC := 19
  13 [-]: JMP       19           ; PC := 19
  14 [-]: GETTABLE  R3 R0 K5     ; R82 := R3[0x60cce7b4]
- 15 [-]: OP_LOADBOOL R4 0 0       ; R4 := false
+ 15 [-]: LOADBOOL  R4 0 0       ; R4 := false
  16 [-]: MOVE      R5 R1        ; R5 := R1
  17 [-]: CALL      R3 3 1       ; R3(R4,R5)
  18 [-]: JMP       23           ; PC := 23
  19 [-]: GETGLOBAL R3 K5        ; R3 := 0x60cce7b4
- 20 [-]: OP_LOADBOOL R4 0 0       ; R4 := false
+ 20 [-]: LOADBOOL  R4 0 0       ; R4 := false
  21 [-]: MOVE      R5 R1        ; R5 := R1
  22 [-]: CALL      R3 3 1       ; R3(R4,R5)
  23 [-]: RETURN    R0 1         ; return 
@@ -914,7 +914,7 @@
  75 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
  76 [-]: TEST      R4 0         ; if not R4 then PC := 82
  77 [-]: JMP       82           ; PC := 82
- 78 [-]: OP_LOADBOOL R4 1 0       ; R4 := true
+ 78 [-]: LOADBOOL  R4 1 0       ; R4 := true
  79 [-]: ADD       R5 R2 K9     ; R5 := R2 + 4.000000
  80 [-]: RETURN    R4 3         ; return R4,R5
  81 [-]: JMP       108          ; PC := 108
@@ -924,7 +924,7 @@
  85 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
  86 [-]: TEST      R4 0         ; if not R4 then PC := 92
  87 [-]: JMP       92           ; PC := 92
- 88 [-]: OP_LOADBOOL R4 0 0       ; R4 := false
+ 88 [-]: LOADBOOL  R4 0 0       ; R4 := false
  89 [-]: ADD       R5 R2 K11    ; R5 := R2 + 5.000000
  90 [-]: RETURN    R4 3         ; return R4,R5
  91 [-]: JMP       108          ; PC := 108
@@ -1060,12 +1060,12 @@
 102 [-]: TEST      R5 0         ; if not R5 then PC := 109
 103 [-]: JMP       109          ; PC := 109
 104 [-]: GETTABLE  R5 R0 K25    ; R82 := R5[0x60cce7b4]
-105 [-]: OP_LOADBOOL R6 0 0       ; R6 := false
+105 [-]: LOADBOOL  R6 0 0       ; R6 := false
 106 [-]: MOVE      R7 R4        ; R7 := R4
 107 [-]: CALL      R5 3 1       ; R5(R6,R7)
 108 [-]: JMP       113          ; PC := 113
 109 [-]: GETGLOBAL R5 K25       ; R5 := 0x60cce7b4
-110 [-]: OP_LOADBOOL R6 0 0       ; R6 := false
+110 [-]: LOADBOOL  R6 0 0       ; R6 := false
 111 [-]: MOVE      R7 R4        ; R7 := R4
 112 [-]: CALL      R5 3 1       ; R5(R6,R7)
 113 [-]: LOADNIL   R5 R5        ; R5 := nil
@@ -1160,7 +1160,7 @@
 
   1 [-]: NEWTABLE  R3 0 0       ; R3 := {}
   2 [-]: NEWTABLE  R4 0 0       ; R4 := {}
-  3 [-]: OP_LOADBOOL R5 0 0       ; R5 := false
+  3 [-]: LOADBOOL  R5 0 0       ; R5 := false
   4 [-]: LOADNIL   R6 R6        ; R6 := nil
   5 [-]: GETGLOBAL R7 K0        ; R7 := 0xcfc01047
   6 [-]: MOVE      R8 R1        ; R8 := R1
@@ -1191,7 +1191,7 @@
  31 [-]: JMP       34           ; PC := 34
  32 [-]: LE        0 K8 R10     ; if inf > R10 then PC := 36
  33 [-]: JMP       36           ; PC := 36
- 34 [-]: OP_LOADBOOL R5 1 0       ; R5 := true
+ 34 [-]: LOADBOOL  R5 1 0       ; R5 := true
  35 [-]: JMP       50           ; PC := 50
  36 [-]: TEST      R6 0         ; if not R6 then PC := 40
  37 [-]: JMP       40           ; PC := 40

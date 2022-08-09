@@ -264,7 +264,7 @@
  48 [-]: MOVE      R2 R3        ; R2 := R3
  49 [-]: JMP       51           ; PC := 51
  50 [-]: RETURN    R0 1         ; return 
- 51 [-]: OP_LOADBOOL R3 1 0       ; R3 := true
+ 51 [-]: LOADBOOL  R3 1 0       ; R3 := true
  52 [-]: GETUPVAL  R4 U0        ; R4 := U0
  53 [-]: SELF      R4 R4 K11    ; R5 := R4; R4 := R4[0x92cabcc5]
  54 [-]: GETGLOBAL R6 K12       ; R6 := 0x0469f296

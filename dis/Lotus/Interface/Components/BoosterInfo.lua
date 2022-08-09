@@ -214,7 +214,7 @@
 109 [-]: FORPREP   R10 154      ; R10 -= R12; PC := 154
 110 [-]: GETTABLE  R14 R2 R13   ; R14 := R2[R13]
 111 [-]: GETTABLE  R14 R14 K10  ; R14 := R14["mItemType"]
-112 [-]: OP_LOADBOOL R15 0 0      ; R15 := false
+112 [-]: LOADBOOL  R15 0 0      ; R15 := false
 113 [-]: LOADK     R16 1        ; R16 := 1.000000
 114 [-]: GETTABLE  R17 R0 K0    ; R17 := R0["mActiveBoosters"]
 115 [-]: LEN       R17 R17      ; R17 := # R17
@@ -242,7 +242,7 @@
 137 [-]: CALL      R25 3 2      ; R25 := R25(R26,R27)
 138 [-]: TEST      R25 0        ; if not R25 then PC := 143
 139 [-]: JMP       143          ; PC := 143
-140 [-]: OP_LOADBOOL R15 1 0      ; R15 := true
+140 [-]: LOADBOOL  R15 1 0      ; R15 := true
 141 [-]: JMP       143          ; PC := 143
 142 [-]: FORLOOP   R21 126      ; R21 += R23; if R21 <= R22 then begin PC := 126; R24 := R21 end
 143 [-]: TEST      R15 0        ; if not R15 then PC := 148
@@ -289,7 +289,7 @@
 184 [-]: GETTABLE  R34 R34 K34  ; R34 := R34["HubBlessings"]
 185 [-]: CALL      R33 2 4      ; R33,R34,R35 := R33(R34)
 186 [-]: JMP       237          ; PC := 237
-187 [-]: OP_LOADBOOL R38 0 0      ; R38 := false
+187 [-]: LOADBOOL  R38 0 0      ; R38 := false
 188 [-]: LOADK     R39 1        ; R39 := 1.000000
 189 [-]: GETTABLE  R40 R0 K0    ; R40 := R0["mActiveBoosters"]
 190 [-]: LEN       R40 R40      ; R40 := # R40
@@ -305,7 +305,7 @@
 200 [-]: JMP       205          ; PC := 205
 201 [-]: GETTABLE  R44 R37 K14  ; R44 := R37["mExpiryDate"]
 202 [-]: SETTABLE  R43 K14 R44  ; R43["mExpiryDate"] := R44
-203 [-]: OP_LOADBOOL R38 1 0      ; R38 := true
+203 [-]: LOADBOOL  R38 1 0      ; R38 := true
 204 [-]: JMP       206          ; PC := 206
 205 [-]: FORLOOP   R39 193      ; R39 += R41; if R39 <= R40 then begin PC := 193; R42 := R39 end
 206 [-]: TEST      R38 1        ; if R38 then PC := 237

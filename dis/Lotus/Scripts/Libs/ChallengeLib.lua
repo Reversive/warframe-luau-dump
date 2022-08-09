@@ -152,8 +152,8 @@
  68 [-]: GETTABLE  R20 R18 K20  ; R20 := R18["Requirements"]
  69 [-]: EQ        1 R19 R20    ; if R19 == R20 then PC := 72
  70 [-]: JMP       72           ; PC := 72
- 71 [-]: OP_LOADBOOL R19 0 1      ; R19 := false; PC := 72
- 72 [-]: OP_LOADBOOL R19 1 0      ; R19 := true
+ 71 [-]: LOADBOOL  R19 0 1      ; R19 := false; PC := 72
+ 72 [-]: LOADBOOL  R19 1 0      ; R19 := true
  73 [-]: SETTABLE  R18 K24 R19  ; R18["Completed"] := R19
  74 [-]: SELF      R19 R4 K26   ; R20 := R4; R19 := R4[0xd8e82278]
  75 [-]: CALL      R19 2 2      ; R19 := R19(R20)
@@ -303,8 +303,8 @@
  41 [-]: LOADK     R7 0         ; R7 := 0.000000
  42 [-]: LT        1 R7 K16     ; if R7 < 5.000000 then PC := 45
  43 [-]: JMP       45           ; PC := 45
- 44 [-]: OP_LOADBOOL R8 0 1       ; R8 := false; PC := 45
- 45 [-]: OP_LOADBOOL R8 1 0       ; R8 := true
+ 44 [-]: LOADBOOL  R8 0 1       ; R8 := false; PC := 45
+ 45 [-]: LOADBOOL  R8 1 0       ; R8 := true
  46 [-]: GETGLOBAL R9 K14       ; R9 := 0x34291f5c
  47 [-]: GETTABLE  R9 R9 K15    ; R82 := R9[0x9ad21ae9]
  48 [-]: CALL      R9 1 2       ; R9 := R9()
@@ -312,7 +312,7 @@
  50 [-]: JMP       54           ; PC := 54
  51 [-]: LT        0 K6 R7      ; if 0.000000 >= R7 then PC := 54
  52 [-]: JMP       54           ; PC := 54
- 53 [-]: OP_LOADBOOL R8 0 0       ; R8 := false
+ 53 [-]: LOADBOOL  R8 0 0       ; R8 := false
  54 [-]: TEST      R8 0         ; if not R8 then PC := 268
  55 [-]: JMP       268          ; PC := 268
  56 [-]: GETGLOBAL R9 K17       ; R9 := 0xba7dfcd2
@@ -946,7 +946,7 @@
 684 [-]: JMP       690          ; PC := 690
 685 [-]: SELF      R101 R0 K100 ; R102 := R0; R101 := R0[0xd47acea6]
 686 [-]: MOVE      R103 R1      ; R103 := R1
-687 [-]: OP_LOADBOOL R104 0 0     ; R104 := false
+687 [-]: LOADBOOL  R104 0 0     ; R104 := false
 688 [-]: LOADK     R105 K101    ; R105 := "OnInitChallenges"
 689 [-]: CALL      R101 5 1     ; R101(R102,R103,R104,R105)
 690 [-]: RETURN    R0 1         ; return 

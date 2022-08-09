@@ -21,7 +21,7 @@
  12 [-]: GETGLOBAL R2 K3        ; R2 := 0x2d0fad09
  13 [-]: LOADK     R3 K6        ; R3 := "Lotus.Interface.Libs.MissionGeneratorUtil"
  14 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 15 [-]: OP_LOADBOOL R3 0 0       ; R3 := false
+ 15 [-]: LOADBOOL  R3 0 0       ; R3 := false
  16 [-]: LOADK     R4 1440      ; R4 := 1440.000000
  17 [-]: LOADK     R5 15        ; R5 := 15.000000
  18 [-]: NEWTABLE  R6 0 0       ; R6 := {}
@@ -66,7 +66,7 @@
  57 [-]: GETGLOBAL R12 K10      ; R12 := 0x7ed0a956
  58 [-]: LOADK     R13 K26      ; R13 := "/Lotus/Types/Friendly/Rescue/RescueAgentGrineer"
  59 [-]: CALL      R12 2 2      ; R12 := R12(R13)
- 60 [-]: SETTABLE  R11 K16 R12  ; R11["vipAgent"] := R12
+ 60 [-]: SETTABLE  R11 K16 R12  ; R11[0x7b998233] := R12
  61 [-]: NEWTABLE  R12 0 4      ; R12 := {}
  62 [-]: GETGLOBAL R13 K10      ; R13 := 0x7ed0a956
  63 [-]: LOADK     R14 K27      ; R14 := "/Lotus/Levels/Proc/Transitional/GrineerToCorpusSabotage"
@@ -118,7 +118,7 @@
 109 [-]: GETGLOBAL R12 K10      ; R12 := 0x7ed0a956
 110 [-]: LOADK     R13 K35      ; R13 := "/Lotus/Types/Friendly/Rescue/RescueAgentCorpus"
 111 [-]: CALL      R12 2 2      ; R12 := R12(R13)
-112 [-]: SETTABLE  R11 K16 R12  ; R11["vipAgent"] := R12
+112 [-]: SETTABLE  R11 K16 R12  ; R11[0x7b998233] := R12
 113 [-]: NEWTABLE  R12 0 4      ; R12 := {}
 114 [-]: GETGLOBAL R13 K10      ; R13 := 0x7ed0a956
 115 [-]: LOADK     R14 K36      ; R14 := "/Lotus/Levels/Proc/Transitional/CorpusToGrineerSabotage"
@@ -128,7 +128,7 @@
 119 [-]: SETTABLE  R12 K14 K15  ; R12["extraEnemySpec"] := nil
 120 [-]: SETTABLE  R12 K16 K15  ; R12["vipAgent"] := nil
 121 [-]: SETLIST   R7 5 1       ; R7[(1-1)*FPF+i] := R(7+i), 1 <= i <= 5
-122 [-]: SETTABLE  R6 K13 R7    ; R6[1.000000] := R7
+122 [-]: SETTABLE  R6 K13 R7    ; R6[0xce225efa] := R7
 123 [-]: NEWTABLE  R7 9 0       ; R7 := {}
 124 [-]: NEWTABLE  R8 0 2       ; R8 := {}
 125 [-]: NEWTABLE  R9 2 0       ; R9 := {}
@@ -356,7 +356,7 @@
 347 [-]: GETGLOBAL R12 K10      ; R12 := 0x7ed0a956
 348 [-]: LOADK     R13 K72      ; R13 := "/Lotus/Types/Enemies/Infested/Vip/QuadrupedVIP"
 349 [-]: CALL      R12 2 2      ; R12 := R12(R13)
-350 [-]: SETTABLE  R11 K16 R12  ; R11["vipAgent"] := R12
+350 [-]: SETTABLE  R11 K16 R12  ; R11[0x7b998233] := R12
 351 [-]: SETTABLE  R11 K73 K74  ; R11["uniqueName"] := "/Lotus/Language/Bosses/BossPhorid"
 352 [-]: NEWTABLE  R12 0 0      ; R12 := {}
 353 [-]: GETGLOBAL R13 K7       ; R13 := 0x6c97a788
@@ -531,7 +531,7 @@
   3 [-]: CALL      R1 2 2       ; R1 := R1(R2)
   4 [-]: TEST      R1 0         ; if not R1 then PC := 8
   5 [-]: JMP       8            ; PC := 8
-  6 [-]: OP_LOADBOOL R1 0 0       ; R1 := false
+  6 [-]: LOADBOOL  R1 0 0       ; R1 := false
   7 [-]: RETURN    R1 2         ; return R1
   8 [-]: GETGLOBAL R1 K1        ; R1 := 0x64fb1586
   9 [-]: SELF      R2 R0 K2     ; R3 := R0; R2 := R0[0xe223e2b1]
@@ -551,8 +551,8 @@
  23 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
  24 [-]: EQ        0 R2 K6      ; if R2 ~= nil then PC := 27
  25 [-]: JMP       27           ; PC := 27
- 26 [-]: OP_LOADBOOL R2 0 1       ; R2 := false; PC := 27
- 27 [-]: OP_LOADBOOL R2 1 0       ; R2 := true
+ 26 [-]: LOADBOOL  R2 0 1       ; R2 := false; PC := 27
+ 27 [-]: LOADBOOL  R2 1 0       ; R2 := true
  28 [-]: RETURN    R2 2         ; return R2
  29 [-]: RETURN    R0 1         ; return 
 
@@ -682,8 +682,8 @@
  76 [-]: GETTABLE  R12 R12 K16  ; R12 := R12["seed"]
  77 [-]: EQ        1 R11 R12    ; if R11 == R12 then PC := 80
  78 [-]: JMP       80           ; PC := 80
- 79 [-]: OP_LOADBOOL R11 0 1      ; R11 := false; PC := 80
- 80 [-]: OP_LOADBOOL R11 1 0      ; R11 := true
+ 79 [-]: LOADBOOL  R11 0 1      ; R11 := false; PC := 80
+ 80 [-]: LOADBOOL  R11 1 0      ; R11 := true
  81 [-]: GETTABLE  R12 R1 K14   ; R12 := R1["mission"]
  82 [-]: GETTABLE  R12 R12 K16  ; R12 := R12["seed"]
  83 [-]: GETTABLE  R13 R7 K16   ; R13 := R7["seed"]
@@ -716,8 +716,8 @@
 110 [-]: GETTABLE  R12 R12 K11  ; R82 := R12[0x06d055f9]
 111 [-]: EQ        1 R8 K22     ; if R8 == 0.000000 then PC := 114
 112 [-]: JMP       114          ; PC := 114
-113 [-]: OP_LOADBOOL R13 0 1      ; R13 := false; PC := 114
-114 [-]: OP_LOADBOOL R13 1 0      ; R13 := true
+113 [-]: LOADBOOL  R13 0 1      ; R13 := false; PC := 114
+114 [-]: LOADBOOL  R13 1 0      ; R13 := true
 115 [-]: GETUPVAL  R14 U3       ; R14 := U3
 116 [-]: GETTABLE  R14 R14 K25  ; R14 := R14["enemySpecGrineer"]
 117 [-]: GETUPVAL  R15 U3       ; R15 := U3
@@ -1067,12 +1067,12 @@
 115 [-]: GETUPVAL  R18 U2       ; R18 := U2
 116 [-]: MOVE      R19 R12      ; R19 := R12
 117 [-]: MOVE      R20 R17      ; R20 := R17
-118 [-]: OP_LOADBOOL R21 1 0      ; R21 := true
+118 [-]: LOADBOOL  R21 1 0      ; R21 := true
 119 [-]: CALL      R18 4 1      ; R18(R19,R20,R21)
 120 [-]: GETUPVAL  R18 U2       ; R18 := U2
 121 [-]: MOVE      R19 R12      ; R19 := R12
 122 [-]: MOVE      R20 R17      ; R20 := R17
-123 [-]: OP_LOADBOOL R21 0 0      ; R21 := false
+123 [-]: LOADBOOL  R21 0 0      ; R21 := false
 124 [-]: CALL      R18 4 1      ; R18(R19,R20,R21)
 125 [-]: ADD       R6 R6 K7     ; R6 := R6 + 1.000000
 126 [-]: TFORLOOP  R13 2        ; R16,R17 :=  R13(R14,R15); if R16 ~= nil then begin PC = 65; R15 := R16 end
@@ -1099,7 +1099,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  13
 
-  1 [-]: OP_LOADBOOL R2 0 0       ; R2 := false
+  1 [-]: LOADBOOL  R2 0 0       ; R2 := false
   2 [-]: TEST      R2 0         ; if not R2 then PC := 6
   3 [-]: JMP       6            ; PC := 6
   4 [-]: GETUPVAL  R2 U0        ; R2 := U0
@@ -1159,7 +1159,7 @@
  58 [-]: GETUPVAL  R7 U6        ; R7 := U6
  59 [-]: MOVE      R8 R1        ; R8 := R1
  60 [-]: MOVE      R9 R5        ; R9 := R5
- 61 [-]: OP_LOADBOOL R10 1 0      ; R10 := true
+ 61 [-]: LOADBOOL  R10 1 0      ; R10 := true
  62 [-]: CALL      R7 4 2       ; R7 := R7(R8,R9,R10)
  63 [-]: SETTABLE  R6 K16 R7    ; R6["attackerMissionInfo"] := R7
  64 [-]: GETUPVAL  R6 U4        ; R6 := U4
@@ -1167,7 +1167,7 @@
  66 [-]: GETUPVAL  R7 U6        ; R7 := U6
  67 [-]: MOVE      R8 R1        ; R8 := R1
  68 [-]: MOVE      R9 R5        ; R9 := R5
- 69 [-]: OP_LOADBOOL R10 0 0      ; R10 := false
+ 69 [-]: LOADBOOL  R10 0 0      ; R10 := false
  70 [-]: CALL      R7 4 2       ; R7 := R7(R8,R9,R10)
  71 [-]: SETTABLE  R6 K5 R7     ; R6["defenderMissionInfo"] := R7
  72 [-]: GETUPVAL  R6 U4        ; R6 := U4

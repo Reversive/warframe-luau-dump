@@ -222,7 +222,7 @@
  77 [-]: GETUPVAL  R4 U3        ; R4 := U3
  78 [-]: GETTABLE  R4 R4 K34    ; R4 := R4["mClipName"]
  79 [-]: LOADK     R5 11        ; R5 := 11.000000
- 80 [-]: OP_LOADBOOL R6 0 0       ; R6 := false
+ 80 [-]: LOADBOOL  R6 0 0       ; R6 := false
  81 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
  82 [-]: RETURN    R0 1         ; return 
 
@@ -321,8 +321,8 @@
  17 [-]: MOD       R7 R7 K8     ; R7 := R7 % 2.000000
  18 [-]: EQ        1 R7 K9      ; if R7 == 0.000000 then PC := 21
  19 [-]: JMP       21           ; PC := 21
- 20 [-]: OP_LOADBOOL R7 0 1       ; R7 := false; PC := 21
- 21 [-]: OP_LOADBOOL R7 1 0       ; R7 := true
+ 20 [-]: LOADBOOL  R7 0 1       ; R7 := false; PC := 21
+ 21 [-]: LOADBOOL  R7 1 0       ; R7 := true
  22 [-]: LOADK     R8 50        ; R8 := 50.000000
  23 [-]: LOADK     R9 75        ; R9 := 75.000000
  24 [-]: CALL      R6 4 0       ; R6,... := R6(R7,R8,R9)
@@ -478,8 +478,8 @@
  28 [-]: GETTABLE  R9 R7 K11    ; R9 := R7["LinkType"]
  29 [-]: EQ        1 R9 K12     ; if R9 == "Item" then PC := 32
  30 [-]: JMP       32           ; PC := 32
- 31 [-]: OP_LOADBOOL R9 0 1       ; R9 := false; PC := 32
- 32 [-]: OP_LOADBOOL R9 1 0       ; R9 := true
+ 31 [-]: LOADBOOL  R9 0 1       ; R9 := false; PC := 32
+ 32 [-]: LOADBOOL  R9 1 0       ; R9 := true
  33 [-]: LOADK     R10 K13      ; R10 := "["
  34 [-]: LOADK     R11 K14      ; R11 := "{"
  35 [-]: CALL      R8 4 2       ; R8 := R8(R9,R10,R11)
@@ -488,8 +488,8 @@
  38 [-]: GETTABLE  R10 R7 K11   ; R10 := R7["LinkType"]
  39 [-]: EQ        1 R10 K12    ; if R10 == "Item" then PC := 42
  40 [-]: JMP       42           ; PC := 42
- 41 [-]: OP_LOADBOOL R10 0 1      ; R10 := false; PC := 42
- 42 [-]: OP_LOADBOOL R10 1 0      ; R10 := true
+ 41 [-]: LOADBOOL  R10 0 1      ; R10 := false; PC := 42
+ 42 [-]: LOADBOOL  R10 1 0      ; R10 := true
  43 [-]: LOADK     R11 K15      ; R11 := "]"
  44 [-]: LOADK     R12 K16      ; R12 := "}"
  45 [-]: CALL      R9 4 2       ; R9 := R9(R10,R11,R12)
@@ -536,7 +536,7 @@
  86 [-]: MOVE      R18 R9       ; R18 := R9
  87 [-]: CONCAT    R16 R16 R18  ; R16 := R16 .. R17 .. R18
  88 [-]: MOVE      R17 R1       ; R17 := R1
- 89 [-]: OP_LOADBOOL R18 1 0      ; R18 := true
+ 89 [-]: LOADBOOL  R18 1 0      ; R18 := true
  90 [-]: CALL      R14 5 3      ; R14,R15 := R14(R15,R16,R17,R18)
  91 [-]: EQ        0 R14 K23    ; if R14 ~= nil then PC := 105
  92 [-]: JMP       105          ; PC := 105
@@ -548,7 +548,7 @@
  98 [-]: MOVE      R20 R9       ; R20 := R9
  99 [-]: CONCAT    R18 R18 R20  ; R18 := R18 .. R19 .. R20
 100 [-]: MOVE      R19 R1       ; R19 := R1
-101 [-]: OP_LOADBOOL R20 1 0      ; R20 := true
+101 [-]: LOADBOOL  R20 1 0      ; R20 := true
 102 [-]: CALL      R16 5 3      ; R16,R17 := R16(R17,R18,R19,R20)
 103 [-]: MOVE      R15 R17      ; R15 := R17
 104 [-]: MOVE      R14 R16      ; R14 := R16
@@ -634,8 +634,8 @@
 184 [-]: MOD       R23 R23 K39  ; R23 := R23 % 2.000000
 185 [-]: EQ        1 R23 K40    ; if R23 == 0.000000 then PC := 188
 186 [-]: JMP       188          ; PC := 188
-187 [-]: OP_LOADBOOL R23 0 1      ; R23 := false; PC := 188
-188 [-]: OP_LOADBOOL R23 1 0      ; R23 := true
+187 [-]: LOADBOOL  R23 0 1      ; R23 := false; PC := 188
+188 [-]: LOADBOOL  R23 1 0      ; R23 := true
 189 [-]: LOADK     R24 50       ; R24 := 50.000000
 190 [-]: LOADK     R25 75       ; R25 := 75.000000
 191 [-]: CALL      R22 4 0      ; R22,... := R22(R23,R24,R25)
@@ -694,8 +694,8 @@
  13 [-]: RETURN    R0 1         ; return 
  14 [-]: GETUPVAL  R0 U1        ; R0 := U1
  15 [-]: SELF      R0 R0 K2     ; R1 := R0; R0 := R0[0x7c09c373]
- 16 [-]: OP_LOADBOOL R2 1 0       ; R2 := true
- 17 [-]: OP_LOADBOOL R3 1 0       ; R3 := true
+ 16 [-]: LOADBOOL  R2 1 0       ; R2 := true
+ 17 [-]: LOADBOOL  R3 1 0       ; R3 := true
  18 [-]: CALL      R0 4 1       ; R0(R1,R2,R3)
  19 [-]: GETGLOBAL R0 K1        ; R0 := _T
  20 [-]: GETUPVAL  R1 U0        ; R1 := U0
@@ -714,13 +714,13 @@
  33 [-]: GETTABLE  R8 R0 R4     ; R8 := R0[R4]
  34 [-]: GETTABLE  R8 R8 K5     ; R8 := R8["Hyperlinks"]
  35 [-]: SETTABLE  R7 K5 R8     ; R7["Hyperlinks"] := R8
- 36 [-]: OP_LOADBOOL R8 1 0       ; R8 := true
+ 36 [-]: LOADBOOL  R8 1 0       ; R8 := true
  37 [-]: CALL      R5 4 1       ; R5(R6,R7,R8)
  38 [-]: FORLOOP   R1 27        ; R1 += R3; if R1 <= R2 then begin PC := 27; R4 := R1 end
  39 [-]: GETUPVAL  R5 U1        ; R5 := U1
  40 [-]: SELF      R5 R5 K6     ; R6 := R5; R5 := R5[0x71e9ac81]
  41 [-]: LOADNIL   R7 R8        ; R7 := R8 := nil
- 42 [-]: OP_LOADBOOL R9 1 0       ; R9 := true
+ 42 [-]: LOADBOOL  R9 1 0       ; R9 := true
  43 [-]: CALL      R5 5 1       ; R5(R6,R7,R8,R9)
  44 [-]: GETUPVAL  R5 U1        ; R5 := U1
  45 [-]: SELF      R5 R5 K7     ; R6 := R5; R5 := R5[0x5465f8f3]
@@ -765,7 +765,7 @@
  84 [-]: GETUPVAL  R10 U2       ; R10 := U2
  85 [-]: GETTABLE  R10 R10 K9   ; R10 := R10["mClipName"]
  86 [-]: LOADK     R11 11       ; R11 := 11.000000
- 87 [-]: OP_LOADBOOL R12 1 0      ; R12 := true
+ 87 [-]: LOADBOOL  R12 1 0      ; R12 := true
  88 [-]: CALL      R8 5 1       ; R8(R9,R10,R11,R12)
  89 [-]: GETUPVAL  R8 U2        ; R8 := U2
  90 [-]: GETUPVAL  R9 U1        ; R9 := U1
@@ -777,7 +777,7 @@
  96 [-]: GETUPVAL  R8 U2        ; R8 := U2
  97 [-]: SELF      R8 R8 K20    ; R9 := R8; R8 := R8[0x44aa79ac]
  98 [-]: LOADK     R10 1        ; R10 := 1.000000
- 99 [-]: OP_LOADBOOL R11 1 0      ; R11 := true
+ 99 [-]: LOADBOOL  R11 1 0      ; R11 := true
 100 [-]: CALL      R8 4 1       ; R8(R9,R10,R11)
 101 [-]: GETUPVAL  R8 U2        ; R8 := U2
 102 [-]: SELF      R8 R8 K21    ; R9 := R8; R8 := R8[0xa8854625]
@@ -805,13 +805,13 @@
 124 [-]: SELF      R14 R14 K3   ; R15 := R14; R14 := R14[0xbad4316f]
 125 [-]: NEWTABLE  R16 0 1      ; R16 := {}
 126 [-]: SETTABLE  R16 K24 K25  ; R16["Filler"] := true
-127 [-]: OP_LOADBOOL R17 1 0      ; R17 := true
+127 [-]: LOADBOOL  R17 1 0      ; R17 := true
 128 [-]: CALL      R14 4 1      ; R14(R15,R16,R17)
 129 [-]: FORLOOP   R10 123      ; R10 += R12; if R10 <= R11 then begin PC := 123; R13 := R10 end
 130 [-]: GETUPVAL  R14 U1       ; R14 := U1
 131 [-]: SELF      R14 R14 K6   ; R15 := R14; R14 := R14[0x71e9ac81]
 132 [-]: LOADNIL   R16 R17      ; R16 := R17 := nil
-133 [-]: OP_LOADBOOL R18 1 0      ; R18 := true
+133 [-]: LOADBOOL  R18 1 0      ; R18 := true
 134 [-]: CALL      R14 5 1      ; R14(R15,R16,R17,R18)
 135 [-]: RETURN    R0 1         ; return 
 
@@ -1062,7 +1062,7 @@
  11 [-]: GETGLOBAL R5 K3        ; R5 := 0x0032441c
  12 [-]: GETTABLE  R5 R5 K4     ; R5 := R5["UISound_Scroll"]
  13 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
- 14 [-]: OP_LOADBOOL R2 0 0       ; R2 := false
+ 14 [-]: LOADBOOL  R2 0 0       ; R2 := false
  15 [-]: RETURN    R2 2         ; return R2
  16 [-]: RETURN    R0 1         ; return 
 

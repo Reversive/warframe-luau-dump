@@ -53,7 +53,7 @@
  14 [-]: RETURN    R0 1         ; return 
  15 [-]: LOADNIL   R2 R2        ; R2 := nil
  16 [-]: LOADK     R3 100       ; R3 := 100.000000
- 17 [-]: OP_LOADBOOL R4 0 0       ; R4 := false
+ 17 [-]: LOADBOOL  R4 0 0       ; R4 := false
  18 [-]: GETGLOBAL R5 K4        ; R5 := 0x0f1f9fdd
  19 [-]: TEST      R5 0         ; if not R5 then PC := 49
  20 [-]: JMP       49           ; PC := 49
@@ -162,7 +162,7 @@
  22 [-]: GETUPVAL  R6 U2        ; R6 := U2
  23 [-]: GETTABLE  R6 R6 K7     ; R6 := R6["z"]
  24 [-]: LOADK     R7 1         ; R7 := 1.000000
- 25 [-]: OP_LOADBOOL R8 1 0       ; R8 := true
+ 25 [-]: LOADBOOL  R8 1 0       ; R8 := true
  26 [-]: CALL      R1 8 1       ; R1(R2,R3,R4,R5,R6,R7,R8)
  27 [-]: GETUPVAL  R1 U0        ; R1 := U0
  28 [-]: MOVE      R2 R0        ; R2 := R0

@@ -60,7 +60,7 @@
  19 [-]: JMP       33           ; PC := 33
  20 [-]: GETTABLE  R8 R3 R7     ; R8 := R3[R7]
  21 [-]: SELF      R8 R8 K5     ; R9 := R8; R8 := R8[0x768274d6]
- 22 [-]: OP_LOADBOOL R10 1 0      ; R10 := true
+ 22 [-]: LOADBOOL  R10 1 0      ; R10 := true
  23 [-]: CALL      R8 3 1       ; R8(R9,R10)
  24 [-]: ADD       R8 K6 R7     ; R8 := 4.000000 + R7
  25 [-]: LE        0 R8 R2      ; if R8 > R2 then PC := 37
@@ -73,7 +73,7 @@
  32 [-]: JMP       37           ; PC := 37
  33 [-]: GETTABLE  R8 R3 R7     ; R8 := R3[R7]
  34 [-]: SELF      R8 R8 K5     ; R9 := R8; R8 := R8[0x768274d6]
- 35 [-]: OP_LOADBOOL R10 0 0      ; R10 := false
+ 35 [-]: LOADBOOL  R10 0 0      ; R10 := false
  36 [-]: CALL      R8 3 1       ; R8(R9,R10)
  37 [-]: FORLOOP   R4 18        ; R4 += R6; if R4 <= R5 then begin PC := 18; R7 := R4 end
  38 [-]: RETURN    R0 1         ; return 

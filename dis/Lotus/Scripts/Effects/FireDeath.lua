@@ -126,13 +126,13 @@
  95 [-]: MOVE      R13 R5       ; R13 := R5
  96 [-]: CALL      R10 4 1      ; R10(R11,R12,R13)
  97 [-]: FORLOOP   R6 92        ; R6 += R8; if R6 <= R7 then begin PC := 92; R9 := R6 end
- 98 [-]: OP_LOADBOOL R10 0 0      ; R10 := false
- 99 [-]: OP_LOADBOOL R11 0 0      ; R11 := false
+ 98 [-]: LOADBOOL  R10 0 0      ; R10 := false
+ 99 [-]: LOADBOOL  R11 0 0      ; R11 := false
 100 [-]: LOADNIL   R12 R12      ; R12 := nil
 101 [-]: LOADK     R13 6        ; R13 := 6.000000
 102 [-]: SELF      R14 R4 K20   ; R15 := R4; R14 := R4[0x01883505]
 103 [-]: GETGLOBAL R16 K21      ; R16 := 0x64a24a69
-104 [-]: OP_LOADBOOL R17 0 0      ; R17 := false
+104 [-]: LOADBOOL  R17 0 0      ; R17 := false
 105 [-]: CALL      R14 4 1      ; R14(R15,R16,R17)
 106 [-]: SELF      R14 R4 K22   ; R15 := R4; R14 := R4[0xc1595bd5]
 107 [-]: GETGLOBAL R16 K23      ; R16 := gDecorationType
@@ -154,7 +154,7 @@
 123 [-]: JMP       128          ; PC := 128
 124 [-]: SELF      R20 R19 K20  ; R21 := R19; R20 := R19[0x01883505]
 125 [-]: GETGLOBAL R22 K21      ; R22 := 0x64a24a69
-126 [-]: OP_LOADBOOL R23 0 0      ; R23 := false
+126 [-]: LOADBOOL  R23 0 0      ; R23 := false
 127 [-]: CALL      R20 4 1      ; R20(R21,R22,R23)
 128 [-]: FORLOOP   R15 113      ; R15 += R17; if R15 <= R16 then begin PC := 113; R18 := R15 end
 129 [-]: LOADK     R20 0        ; R20 := 0.000000
@@ -171,7 +171,7 @@
 140 [-]: JMP       144          ; PC := 144
 141 [-]: TEST      R10 1        ; if R10 then PC := 144
 142 [-]: JMP       144          ; PC := 144
-143 [-]: OP_LOADBOOL R10 1 0      ; R10 := true
+143 [-]: LOADBOOL  R10 1 0      ; R10 := true
 144 [-]: TEST      R10 0        ; if not R10 then PC := 208
 145 [-]: JMP       208          ; PC := 208
 146 [-]: TEST      R11 1        ; if R11 then PC := 208
@@ -189,11 +189,11 @@
 158 [-]: CALL      R21 2 2      ; R21 := R21(R22)
 159 [-]: TEST      R21 1        ; if R21 then PC := 208
 160 [-]: JMP       208          ; PC := 208
-161 [-]: OP_LOADBOOL R11 1 0      ; R11 := true
+161 [-]: LOADBOOL  R11 1 0      ; R11 := true
 162 [-]: MOVE      R4 R12       ; R4 := R12
 163 [-]: SELF      R21 R4 K20   ; R22 := R4; R21 := R4[0x01883505]
 164 [-]: GETGLOBAL R23 K21      ; R23 := 0x64a24a69
-165 [-]: OP_LOADBOOL R24 0 0      ; R24 := false
+165 [-]: LOADBOOL  R24 0 0      ; R24 := false
 166 [-]: CALL      R21 4 1      ; R21(R22,R23,R24)
 167 [-]: SELF      R21 R4 K22   ; R22 := R4; R21 := R4[0xc1595bd5]
 168 [-]: GETGLOBAL R23 K23      ; R23 := gDecorationType
@@ -216,7 +216,7 @@
 185 [-]: JMP       190          ; PC := 190
 186 [-]: SELF      R26 R25 K20  ; R27 := R25; R26 := R25[0x01883505]
 187 [-]: GETGLOBAL R28 K21      ; R28 := 0x64a24a69
-188 [-]: OP_LOADBOOL R29 0 0      ; R29 := false
+188 [-]: LOADBOOL  R29 0 0      ; R29 := false
 189 [-]: CALL      R26 4 1      ; R26(R27,R28,R29)
 190 [-]: FORLOOP   R21 175      ; R21 += R23; if R21 <= R22 then begin PC := 175; R24 := R21 end
 191 [-]: LOADK     R26 1        ; R26 := 1.000000

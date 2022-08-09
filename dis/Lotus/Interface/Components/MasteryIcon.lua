@@ -39,8 +39,8 @@
   7 [-]: GETTABLE  R5 R5 K6     ; R82 := R5[0x06d055f9]
   8 [-]: EQ        1 R3 K3      ; if R3 == nil then PC := 11
   9 [-]: JMP       11           ; PC := 11
- 10 [-]: OP_LOADBOOL R6 0 1       ; R6 := false; PC := 11
- 11 [-]: OP_LOADBOOL R6 1 0       ; R6 := true
+ 10 [-]: LOADBOOL  R6 0 1       ; R6 := false; PC := 11
+ 11 [-]: LOADBOOL  R6 1 0       ; R6 := true
  12 [-]: LOADK     R7 K7        ; R7 := ""
  13 [-]: GETGLOBAL R8 K8        ; R8 := 0x64fb1586
  14 [-]: MOVE      R9 R3        ; R9 := R3
@@ -296,7 +296,7 @@
  62 [-]: JMP       79           ; PC := 79
  63 [-]: SELF      R7 R0 K17    ; R8 := R0; R7 := R0[0xff96af09]
  64 [-]: LOADNIL   R9 R9        ; R9 := nil
- 65 [-]: OP_LOADBOOL R10 1 0      ; R10 := true
+ 65 [-]: LOADBOOL  R10 1 0      ; R10 := true
  66 [-]: CALL      R7 4 1       ; R7(R8,R9,R10)
  67 [-]: JMP       79           ; PC := 79
  68 [-]: SELF      R7 R0 K17    ; R8 := R0; R7 := R0[0xff96af09]
@@ -304,7 +304,7 @@
  70 [-]: CALL      R7 3 1       ; R7(R8,R9)
  71 [-]: SELF      R7 R0 K17    ; R8 := R0; R7 := R0[0xff96af09]
  72 [-]: GETTABLE  R9 R0 K19    ; R9 := R0["mMasteryMaterial"]
- 73 [-]: OP_LOADBOOL R10 1 0      ; R10 := true
+ 73 [-]: LOADBOOL  R10 1 0      ; R10 := true
  74 [-]: CALL      R7 4 1       ; R7(R8,R9,R10)
  75 [-]: JMP       79           ; PC := 79
  76 [-]: GETGLOBAL R7 K20       ; R7 := 0x3d106989
@@ -395,13 +395,13 @@
  26 [-]: GETUPVAL  R2 U2        ; R2 := U2
  27 [-]: SELF      R2 R2 K8     ; R3 := R2; R2 := R2[0xff96af09]
  28 [-]: MOVE      R4 R1        ; R4 := R1
- 29 [-]: OP_LOADBOOL R5 1 0       ; R5 := true
+ 29 [-]: LOADBOOL  R5 1 0       ; R5 := true
  30 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
  31 [-]: JMP       37           ; PC := 37
  32 [-]: GETUPVAL  R2 U2        ; R2 := U2
  33 [-]: SELF      R2 R2 K8     ; R3 := R2; R2 := R2[0xff96af09]
  34 [-]: LOADNIL   R4 R4        ; R4 := nil
- 35 [-]: OP_LOADBOOL R5 1 0       ; R5 := true
+ 35 [-]: LOADBOOL  R5 1 0       ; R5 := true
  36 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
  37 [-]: RETURN    R0 1         ; return 
 

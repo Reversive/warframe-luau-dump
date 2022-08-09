@@ -30,7 +30,7 @@
   3 [-]: GETUPVAL  R1 U0        ; R1 := U0
   4 [-]: GETTABLE  R1 R1 K1     ; R82 := R1[0x0c9eedd2]
   5 [-]: MOVE      R2 R0        ; R2 := R0
-  6 [-]: OP_LOADBOOL R3 1 0       ; R3 := true
+  6 [-]: LOADBOOL  R3 1 0       ; R3 := true
   7 [-]: CALL      R1 3 1       ; R1(R2,R3)
   8 [-]: JMP       12           ; PC := 12
   9 [-]: GETGLOBAL R1 K2        ; R1 := 0xd644c2f1

@@ -18,7 +18,7 @@
   9 [-]: GETGLOBAL R3 K3        ; R3 := 0x0469f296
  10 [-]: LOADK     R4 K5        ; R4 := "EmissiveTintColor"
  11 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 12 [-]: OP_LOADBOOL R4 0 0       ; R4 := false
+ 12 [-]: LOADBOOL  R4 0 0       ; R4 := false
  13 [-]: CLOSURE   R5 0         ; R5 := closure(Function #1)
  14 [-]: MOVE      R0 R4        ; R0 := R4
  15 [-]: CLOSURE   R6 1         ; R6 := closure(Function #2)
@@ -62,8 +62,8 @@
  16 [-]: GETGLOBAL R3 K6        ; R3 := 0x60130201
  17 [-]: GETTABLE  R4 R2 K7     ; R4 := R2["mEnergyColor"]
  18 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 19 [-]: SETGLOBALHASH R3 K5        ; (0x5a5ba3e8) := R3
- 20 [-]: OP_LOADBOOL R3 1 0       ; R3 := true
+ 19 [-]: SETGLOBAL R3 K5        ; (0x5a5ba3e8) := R3
+ 20 [-]: LOADBOOL  R3 1 0       ; R3 := true
  21 [-]: SETUPVAL  R3 U0        ; U82 := 
  22 [-]: SELF      R3 R2 K4     ; R4 := R2; R3 := R2[0x697019d0]
  23 [-]: LOADK     R5 7         ; R5 := 7.000000
@@ -73,20 +73,20 @@
  27 [-]: GETGLOBAL R3 K6        ; R3 := 0x60130201
  28 [-]: GETTABLE  R4 R2 K9     ; R4 := R2["mEnergyColor1"]
  29 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 30 [-]: SETGLOBALHASH R3 K8        ; (0x5d5ba8a1) := R3
+ 30 [-]: SETGLOBAL R3 K8        ; (0x5d5ba8a1) := R3
  31 [-]: JMP       45           ; PC := 45
  32 [-]: GETGLOBAL R3 K5        ; R3 := 0x5a5ba3e8
- 33 [-]: SETGLOBALHASH R3 K8        ; (0x5d5ba8a1) := R3
+ 33 [-]: SETGLOBAL R3 K8        ; (0x5d5ba8a1) := R3
  34 [-]: JMP       45           ; PC := 45
  35 [-]: SELF      R3 R0 K10    ; R4 := R0; R3 := R0[0xa3ef5d65]
  36 [-]: GETGLOBAL R5 K5        ; R5 := 0x5a5ba3e8
- 37 [-]: OP_LOADBOOL R6 0 0       ; R6 := false
+ 37 [-]: LOADBOOL  R6 0 0       ; R6 := false
  38 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
  39 [-]: SELF      R3 R0 K10    ; R4 := R0; R3 := R0[0xa3ef5d65]
  40 [-]: GETGLOBAL R5 K8        ; R5 := 0x5d5ba8a1
- 41 [-]: OP_LOADBOOL R6 1 0       ; R6 := true
+ 41 [-]: LOADBOOL  R6 1 0       ; R6 := true
  42 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
- 43 [-]: OP_LOADBOOL R3 1 0       ; R3 := true
+ 43 [-]: LOADBOOL  R3 1 0       ; R3 := true
  44 [-]: SETUPVAL  R3 U0        ; U82 := 
  45 [-]: RETURN    R0 1         ; return 
 

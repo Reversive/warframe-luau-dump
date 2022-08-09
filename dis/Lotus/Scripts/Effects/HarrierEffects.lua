@@ -125,7 +125,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  85
 
-  1 [-]: OP_LOADBOOL R2 0 0       ; R2 := false
+  1 [-]: LOADBOOL  R2 0 0       ; R2 := false
   2 [-]: GETGLOBAL R3 K0        ; R3 := 0x9c4bb34b
   3 [-]: TEST      R3 0         ; if not R3 then PC := 29
   4 [-]: JMP       29           ; PC := 29
@@ -150,7 +150,7 @@
  23 [-]: CALL      R6 2 2       ; R6 := R6(R7)
  24 [-]: MOVE      R4 R6        ; R4 := R6
  25 [-]: JMP       11           ; PC := 11
- 26 [-]: OP_LOADBOOL R2 1 0       ; R2 := true
+ 26 [-]: LOADBOOL  R2 1 0       ; R2 := true
  27 [-]: MOVE      R1 R3        ; R1 := R3
  28 [-]: JMP       32           ; PC := 32
  29 [-]: SELF      R6 R0 K7     ; R7 := R0; R6 := R0[0x5163741e]
@@ -254,8 +254,8 @@
 127 [-]: GETGLOBAL R20 K23      ; R20 := gTerrainZoneType
 128 [-]: CALL      R18 3 2      ; R18 := R18(R19,R20)
 129 [-]: JMP       132          ; PC := 132
-130 [-]: OP_LOADBOOL R18 0 1      ; R18 := false; PC := 131
-131 [-]: OP_LOADBOOL R18 1 0      ; R18 := true
+130 [-]: LOADBOOL  R18 0 1      ; R18 := false; PC := 131
+131 [-]: LOADBOOL  R18 1 0      ; R18 := true
 132 [-]: GETGLOBAL R19 K2       ; R19 := 0x89326c93
 133 [-]: SELF      R19 R19 K3   ; R20 := R19; R19 := R19[0x78298275]
 134 [-]: CALL      R19 2 2      ; R19 := R19(R20)
@@ -532,7 +532,7 @@
 405 [-]: SELF      R66 R64 K74  ; R67 := R64; R66 := R64[0x052a3a7c]
 406 [-]: MOVE      R68 R65      ; R68 := R65
 407 [-]: MOVE      R69 R65      ; R69 := R65
-408 [-]: OP_LOADBOOL R70 0 0      ; R70 := false
+408 [-]: LOADBOOL  R70 0 0      ; R70 := false
 409 [-]: CALL      R66 5 1      ; R66(R67,R68,R69,R70)
 410 [-]: TFORLOOP  R60 2        ; R63,R64 :=  R60(R61,R62); if R63 ~= nil then begin PC = 391; R62 := R63 end
 411 [-]: JMP       391          ; PC := 391
@@ -557,7 +557,7 @@
 430 [-]: SELF      R72 R70 K74  ; R73 := R70; R72 := R70[0x052a3a7c]
 431 [-]: MOVE      R74 R71      ; R74 := R71
 432 [-]: MOVE      R75 R71      ; R75 := R71
-433 [-]: OP_LOADBOOL R76 0 0      ; R76 := false
+433 [-]: LOADBOOL  R76 0 0      ; R76 := false
 434 [-]: CALL      R72 5 1      ; R72(R73,R74,R75,R76)
 435 [-]: TFORLOOP  R66 2        ; R69,R70 :=  R66(R67,R68); if R69 ~= nil then begin PC = 416; R68 := R69 end
 436 [-]: JMP       416          ; PC := 416
@@ -578,7 +578,7 @@
 451 [-]: SELF      R73 R13 K74  ; R74 := R13; R73 := R13[0x052a3a7c]
 452 [-]: MOVE      R75 R72      ; R75 := R72
 453 [-]: MOVE      R76 R72      ; R76 := R72
-454 [-]: OP_LOADBOOL R77 0 0      ; R77 := false
+454 [-]: LOADBOOL  R77 0 0      ; R77 := false
 455 [-]: CALL      R73 5 1      ; R73(R74,R75,R76,R77)
 456 [-]: GETGLOBAL R73 K4       ; R73 := 0x7b998233
 457 [-]: MOVE      R74 R16      ; R74 := R16
@@ -593,8 +593,8 @@
 466 [-]: TEST      R73 0        ; if not R73 then PC := 500
 467 [-]: JMP       500          ; PC := 500
 468 [-]: SELF      R73 R16 K79  ; R74 := R16; R73 := R16[0x768274d6]
-469 [-]: OP_LOADBOOL R75 0 0      ; R75 := false
-470 [-]: OP_LOADBOOL R76 0 0      ; R76 := false
+469 [-]: LOADBOOL  R75 0 0      ; R75 := false
+470 [-]: LOADBOOL  R76 0 0      ; R76 := false
 471 [-]: CALL      R73 4 1      ; R73(R74,R75,R76)
 472 [-]: JMP       500          ; PC := 500
 473 [-]: SELF      R73 R16 K78  ; R74 := R16; R73 := R16[0xd4cc05b4]
@@ -602,8 +602,8 @@
 475 [-]: TEST      R73 1        ; if R73 then PC := 481
 476 [-]: JMP       481          ; PC := 481
 477 [-]: SELF      R73 R16 K79  ; R74 := R16; R73 := R16[0x768274d6]
-478 [-]: OP_LOADBOOL R75 1 0      ; R75 := true
-479 [-]: OP_LOADBOOL R76 0 0      ; R76 := false
+478 [-]: LOADBOOL  R75 1 0      ; R75 := true
+479 [-]: LOADBOOL  R76 0 0      ; R76 := false
 480 [-]: CALL      R73 4 1      ; R73(R74,R75,R76)
 481 [-]: GETGLOBAL R73 K60      ; R73 := 0x5bced4c4
 482 [-]: GETTABLE  R73 R73 K61  ; R82 := R73[0xb62ecfe0]
@@ -1136,7 +1136,7 @@
  71 [-]: GETGLOBAL R6 K19       ; R6 := 0x13d9a5d1
  72 [-]: GETGLOBAL R7 K14       ; R7 := 0xa421af95
  73 [-]: CALL      R7 1 2       ; R7 := R7()
- 74 [-]: OP_LOADBOOL R8 0 0       ; R8 := false
+ 74 [-]: LOADBOOL  R8 0 0       ; R8 := false
  75 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
  76 [-]: GETGLOBAL R4 K5        ; R4 := 0x89326c93
  77 [-]: SELF      R4 R4 K21    ; R5 := R4; R4 := R4[0x05909209]

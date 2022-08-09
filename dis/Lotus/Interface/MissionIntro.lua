@@ -16,8 +16,8 @@
   7 [-]: GETGLOBAL R2 K0        ; R2 := 0x2d0fad09
   8 [-]: LOADK     R3 K3        ; R3 := "Lotus.Interface.Components.MissionPanel"
   9 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 10 [-]: OP_LOADBOOL R3 0 0       ; R3 := false
- 11 [-]: OP_LOADBOOL R4 0 0       ; R4 := false
+ 10 [-]: LOADBOOL  R3 0 0       ; R3 := false
+ 11 [-]: LOADBOOL  R4 0 0       ; R4 := false
  12 [-]: LOADNIL   R5 R6        ; R5 := R6 := nil
  13 [-]: CLOSURE   R7 0         ; R7 := closure(Function #1)
  14 [-]: MOVE      R0 R4        ; R0 := R4
@@ -80,7 +80,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
-  1 [-]: OP_LOADBOOL R0 1 0       ; R0 := true
+  1 [-]: LOADBOOL  R0 1 0       ; R0 := true
   2 [-]: SETUPVAL  R0 U0        ; U82 := 
   3 [-]: RETURN    R0 1         ; return 
 
@@ -191,7 +191,7 @@
  73 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
  74 [-]: GETUPVAL  R2 U2        ; R2 := U2
  75 [-]: SELF      R2 R2 K20    ; R3 := R2; R2 := R2[0x587aa683]
- 76 [-]: OP_LOADBOOL R4 1 0       ; R4 := true
+ 76 [-]: LOADBOOL  R4 1 0       ; R4 := true
  77 [-]: CALL      R2 3 1       ; R2(R3,R4)
  78 [-]: GETGLOBAL R2 K21       ; R2 := 0x25312c9b
  79 [-]: GETGLOBAL R3 K8        ; R3 := 0xae91e43b
@@ -207,7 +207,7 @@
  89 [-]: LOADK     R9 2         ; R9 := 2.000000
  90 [-]: GETUPVAL  R10 U4       ; R10 := U4
  91 [-]: CALL      R2 9 1       ; R2(R3,R4,R5,R6,R7,R8,R9,R10)
- 92 [-]: OP_LOADBOOL R2 1 0       ; R2 := true
+ 92 [-]: LOADBOOL  R2 1 0       ; R2 := true
  93 [-]: SETUPVAL  R2 U5        ; U82 := 
  94 [-]: GETGLOBAL R2 K23       ; R2 := _T
  95 [-]: SETTABLE  R2 K24 K25   ; R2["MissionIntroShowing"] := true

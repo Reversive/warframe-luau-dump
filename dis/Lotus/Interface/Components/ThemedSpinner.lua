@@ -196,13 +196,13 @@
   4 [-]: GETUPVAL  R4 U0        ; R4 := U0
   5 [-]: GETTABLE  R4 R4 K3     ; R82 := R4[0x5d10207d]
   6 [-]: LOADK     R5 2         ; R5 := 2.000000
-  7 [-]: OP_LOADBOOL R6 1 0       ; R6 := true
+  7 [-]: LOADBOOL  R6 1 0       ; R6 := true
   8 [-]: MOVE      R7 R3        ; R7 := R3
   9 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
  10 [-]: GETUPVAL  R5 U0        ; R5 := U0
  11 [-]: GETTABLE  R5 R5 K3     ; R82 := R5[0x5d10207d]
  12 [-]: LOADK     R6 10        ; R6 := 10.000000
- 13 [-]: OP_LOADBOOL R7 1 0       ; R7 := true
+ 13 [-]: LOADBOOL  R7 1 0       ; R7 := true
  14 [-]: MOVE      R8 R3        ; R8 := R3
  15 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
  16 [-]: TEST      R3 1         ; if R3 then PC := 25
@@ -267,7 +267,7 @@
   1 [-]: GETTABLE  R2 R0 K0     ; R2 := R0["mMovie"]
   2 [-]: SELF      R3 R2 K1     ; R4 := R2; R3 := R2[0x42b04007]
   3 [-]: MOVE      R5 R1        ; R5 := R1
-  4 [-]: OP_LOADBOOL R6 1 0       ; R6 := true
+  4 [-]: LOADBOOL  R6 1 0       ; R6 := true
   5 [-]: CALL      R3 4 2       ; R3 := R3(R4,R5,R6)
   6 [-]: MOVE      R1 R3        ; R1 := R3
   7 [-]: SELF      R3 R2 K2     ; R4 := R2; R3 := R2[0xe261aa96]
@@ -290,8 +290,8 @@
 
   1 [-]: EQ        0 R1 K0      ; if R1 ~= false then PC := 4
   2 [-]: JMP       4            ; PC := 4
-  3 [-]: OP_LOADBOOL R1 0 1       ; R1 := false; PC := 4
-  4 [-]: OP_LOADBOOL R1 1 0       ; R1 := true
+  3 [-]: LOADBOOL  R1 0 1       ; R1 := false; PC := 4
+  4 [-]: LOADBOOL  R1 1 0       ; R1 := true
   5 [-]: GETTABLE  R4 R0 K1     ; R4 := R0["mActive"]
   6 [-]: EQ        0 R4 R1      ; if R4 ~= R1 then PC := 9
   7 [-]: JMP       9            ; PC := 9
@@ -537,8 +537,8 @@
  40 [-]: GETTABLE  R10 R10 K11  ; R82 := R10[0x06d055f9]
  41 [-]: LT        1 R9 R8      ; if R9 < R8 then PC := 44
  42 [-]: JMP       44           ; PC := 44
- 43 [-]: OP_LOADBOOL R11 0 1      ; R11 := false; PC := 44
- 44 [-]: OP_LOADBOOL R11 1 0      ; R11 := true
+ 43 [-]: LOADBOOL  R11 0 1      ; R11 := false; PC := 44
+ 44 [-]: LOADBOOL  R11 1 0      ; R11 := true
  45 [-]: MOVE      R12 R9       ; R12 := R9
  46 [-]: MOVE      R13 R8       ; R13 := R8
  47 [-]: CALL      R10 4 2      ; R10 := R10(R11,R12,R13)
@@ -546,8 +546,8 @@
  49 [-]: GETTABLE  R11 R11 K11  ; R82 := R11[0x06d055f9]
  50 [-]: LT        1 R9 R8      ; if R9 < R8 then PC := 53
  51 [-]: JMP       53           ; PC := 53
- 52 [-]: OP_LOADBOOL R12 0 1      ; R12 := false; PC := 53
- 53 [-]: OP_LOADBOOL R12 1 0      ; R12 := true
+ 52 [-]: LOADBOOL  R12 0 1      ; R12 := false; PC := 53
+ 53 [-]: LOADBOOL  R12 1 0      ; R12 := true
  54 [-]: MOVE      R13 R8       ; R13 := R8
  55 [-]: MOVE      R14 R9       ; R14 := R9
  56 [-]: CALL      R11 4 2      ; R11 := R11(R12,R13,R14)

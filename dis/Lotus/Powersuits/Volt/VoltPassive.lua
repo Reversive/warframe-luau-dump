@@ -151,7 +151,7 @@
  68 [-]: ADD       R15 R15 R10  ; R15 := R15 + R10
  69 [-]: MOVE      R16 R3       ; R16 := R3
  70 [-]: CALL      R14 3 2      ; R14 := R14(R15,R16)
- 71 [-]: OP_LOADBOOL R15 1 0      ; R15 := true
+ 71 [-]: LOADBOOL  R15 1 0      ; R15 := true
  72 [-]: CALL      R11 5 1      ; R11(R12,R13,R14,R15)
  73 [-]: MOVE      R6 R8        ; R6 := R8
  74 [-]: GETGLOBAL R11 K1       ; R11 := 0xcbd666e1

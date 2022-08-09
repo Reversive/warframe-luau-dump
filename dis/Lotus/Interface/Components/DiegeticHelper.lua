@@ -303,7 +303,7 @@
 101 [-]: LOADK     R7 0         ; R7 := 0.000000
 102 [-]: LOADK     R8 255       ; R8 := 255.000000
 103 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
-104 [-]: SETTABLE  R4 K28 R5    ; R4["alpha"] := R5
+104 [-]: SETTABLE  R4 K28 R5    ; R4[0x2b54251b] := R5
 105 [-]: RETURN    R0 1         ; return 
 
 
@@ -358,7 +358,7 @@
 
   1 [-]: EQ        0 R2 K0      ; if R2 ~= nil then PC := 4
   2 [-]: JMP       4            ; PC := 4
-  3 [-]: OP_LOADBOOL R2 0 0       ; R2 := false
+  3 [-]: LOADBOOL  R2 0 0       ; R2 := false
   4 [-]: SETTABLE  R0 K1 K2     ; R0["mClosing"] := true
   5 [-]: SETTABLE  R0 K3 R1     ; R0["mTransitionOutCallback"] := R1
   6 [-]: SETTABLE  R0 K4 K2     ; R0["mTransitioning"] := true

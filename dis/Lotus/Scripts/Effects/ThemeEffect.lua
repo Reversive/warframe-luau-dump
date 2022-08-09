@@ -71,7 +71,7 @@
  27 [-]: GETUPVAL  R4 U1        ; R4 := U1
  28 [-]: GETTABLE  R4 R4 K8     ; R82 := R4[0x5d10207d]
  29 [-]: MOVE      R5 R1        ; R5 := R1
- 30 [-]: OP_LOADBOOL R6 1 0       ; R6 := true
+ 30 [-]: LOADBOOL  R6 1 0       ; R6 := true
  31 [-]: CALL      R4 3 0       ; R4,... := R4(R5,R6)
  32 [-]: CALL      R3 0 2       ; R3 := R3(R4,...)
  33 [-]: GETUPVAL  R4 U0        ; R4 := U0
@@ -79,7 +79,7 @@
  35 [-]: GETUPVAL  R5 U1        ; R5 := U1
  36 [-]: GETTABLE  R5 R5 K8     ; R82 := R5[0x5d10207d]
  37 [-]: MOVE      R6 R2        ; R6 := R2
- 38 [-]: OP_LOADBOOL R7 1 0       ; R7 := true
+ 38 [-]: LOADBOOL  R7 1 0       ; R7 := true
  39 [-]: CALL      R5 3 0       ; R5,... := R5(R6,R7)
  40 [-]: CALL      R4 0 2       ; R4 := R4(R5,...)
  41 [-]: SELF      R5 R0 K9     ; R6 := R0; R5 := R0[0xf2deaf69]
@@ -188,7 +188,7 @@
  25 [-]: CALL      R4 1 2       ; R4 := R4()
  26 [-]: SELF      R5 R3 K7     ; R6 := R3; R5 := R3[0xa3ef5d65]
  27 [-]: MOVE      R7 R4        ; R7 := R4
- 28 [-]: OP_LOADBOOL R8 0 0       ; R8 := false
+ 28 [-]: LOADBOOL  R8 0 0       ; R8 := false
  29 [-]: CALL      R5 4 1       ; R5(R6,R7,R8)
  30 [-]: SELF      R5 R0 K8     ; R6 := R0; R5 := R0[0xf2deaf69]
  31 [-]: GETGLOBAL R7 K9        ; R7 := gParticleSysType
@@ -202,7 +202,7 @@
  39 [-]: CALL      R5 1 2       ; R5 := R5()
  40 [-]: SELF      R6 R3 K7     ; R7 := R3; R6 := R3[0xa3ef5d65]
  41 [-]: MOVE      R8 R5        ; R8 := R5
- 42 [-]: OP_LOADBOOL R9 1 0       ; R9 := true
+ 42 [-]: LOADBOOL  R9 1 0       ; R9 := true
  43 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
  44 [-]: SELF      R6 R0 K11    ; R7 := R0; R6 := R0[0x8feccd8b]
  45 [-]: MOVE      R8 R4        ; R8 := R4
@@ -280,7 +280,7 @@
   7 [-]: GETUPVAL  R3 U0        ; R3 := U0
   8 [-]: GETTABLE  R3 R3 K3     ; R82 := R3[0x5d10207d]
   9 [-]: LOADK     R4 2         ; R4 := 2.000000
- 10 [-]: OP_LOADBOOL R5 0 0       ; R5 := false
+ 10 [-]: LOADBOOL  R5 0 0       ; R5 := false
  11 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
  12 [-]: GETGLOBAL R4 K5        ; R4 := 0x5bced4c4
  13 [-]: GETTABLE  R4 R4 K6     ; R82 := R4[0xb62ecfe0]
@@ -322,7 +322,7 @@
  49 [-]: GETUPVAL  R6 U0        ; R6 := U0
  50 [-]: GETTABLE  R6 R6 K3     ; R82 := R6[0x5d10207d]
  51 [-]: LOADK     R7 3         ; R7 := 3.000000
- 52 [-]: OP_LOADBOOL R8 0 0       ; R8 := false
+ 52 [-]: LOADBOOL  R8 0 0       ; R8 := false
  53 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
  54 [-]: GETGLOBAL R7 K5        ; R7 := 0x5bced4c4
  55 [-]: GETTABLE  R7 R7 K6     ; R82 := R7[0xb62ecfe0]

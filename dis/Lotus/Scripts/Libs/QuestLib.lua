@@ -75,10 +75,10 @@
  16 [-]: GETTABLE  R7 R6 K4     ; R7 := R6["mItemType"]
  17 [-]: EQ        0 R7 R0      ; if R7 ~= R0 then PC := 21
  18 [-]: JMP       21           ; PC := 21
- 19 [-]: OP_LOADBOOL R7 1 0       ; R7 := true
+ 19 [-]: LOADBOOL  R7 1 0       ; R7 := true
  20 [-]: RETURN    R7 2         ; return R7
  21 [-]: FORLOOP   R2 10        ; R2 += R4; if R2 <= R3 then begin PC := 10; R5 := R2 end
- 22 [-]: OP_LOADBOOL R7 0 0       ; R7 := false
+ 22 [-]: LOADBOOL  R7 0 0       ; R7 := false
  23 [-]: RETURN    R7 2         ; return R7
  24 [-]: RETURN    R0 1         ; return 
 
@@ -122,9 +122,9 @@
  12 [-]: SETTABLE  R3 K2 K3     ; R3["mRewardType"] := 0.000000
  13 [-]: SETTABLE  R3 K4 K6     ; R3["mProductCategory"] := 21.000000
  14 [-]: SETTABLE  R3 K7 R0     ; R3["mItemType"] := R0
- 15 [-]: OP_LOADBOOL R4 0 0       ; R4 := false
- 16 [-]: OP_LOADBOOL R5 0 0       ; R5 := false
- 17 [-]: OP_LOADBOOL R6 0 0       ; R6 := false
+ 15 [-]: LOADBOOL  R4 0 0       ; R4 := false
+ 16 [-]: LOADBOOL  R5 0 0       ; R5 := false
+ 17 [-]: LOADBOOL  R6 0 0       ; R6 := false
  18 [-]: LOADK     R7 5         ; R7 := 5.000000
  19 [-]: LOADK     R8 0         ; R8 := 0.000000
  20 [-]: CLOSURE   R9 0         ; R9 := closure(Function #3.1)
@@ -149,7 +149,7 @@
  39 [-]: JMP       49           ; PC := 49
  40 [-]: LT        0 K12 R8     ; if 1.000000 >= R8 then PC := 49
  41 [-]: JMP       49           ; PC := 49
- 42 [-]: OP_LOADBOOL R4 1 0       ; R4 := true
+ 42 [-]: LOADBOOL  R4 1 0       ; R4 := true
  43 [-]: GETGLOBAL R10 K13      ; R10 := _T
  44 [-]: GETTABLE  R10 R10 K14  ; R10 := R10["BackgroundMovie"]
  45 [-]: SELF      R10 R10 K15  ; R11 := R10; R10 := R10[0xe4162eed]
@@ -160,7 +160,7 @@
  50 [-]: JMP       30           ; PC := 30
  51 [-]: LT        0 R7 R8      ; if R7 >= R8 then PC := 30
  52 [-]: JMP       30           ; PC := 30
- 53 [-]: OP_LOADBOOL R6 0 0       ; R6 := false
+ 53 [-]: LOADBOOL  R6 0 0       ; R6 := false
  54 [-]: LOADK     R8 0         ; R8 := 0.000000
  55 [-]: GETGLOBAL R10 K18      ; R10 := 0x3d106989
  56 [-]: LOADK     R11 K19      ; R11 := "Retrying give quest..."
@@ -177,8 +177,8 @@
  67 [-]: CALL      R10 3 2      ; R10 := R10(R11,R12)
  68 [-]: MOVE      R7 R10       ; R7 := R10
  69 [-]: JMP       30           ; PC := 30
- 70 [-]: OP_LOADBOOL R5 0 0       ; R5 := false
- 71 [-]: OP_LOADBOOL R6 0 0       ; R6 := false
+ 70 [-]: LOADBOOL  R5 0 0       ; R5 := false
+ 71 [-]: LOADBOOL  R6 0 0       ; R6 := false
  72 [-]: LOADK     R7 5         ; R7 := 5.000000
  73 [-]: LOADK     R8 0         ; R8 := 0.000000
  74 [-]: GETGLOBAL R10 K8       ; R10 := 0x25d99d89
@@ -198,7 +198,7 @@
  88 [-]: JMP       98           ; PC := 98
  89 [-]: LT        0 K12 R8     ; if 1.000000 >= R8 then PC := 98
  90 [-]: JMP       98           ; PC := 98
- 91 [-]: OP_LOADBOOL R4 1 0       ; R4 := true
+ 91 [-]: LOADBOOL  R4 1 0       ; R4 := true
  92 [-]: GETGLOBAL R10 K13      ; R10 := _T
  93 [-]: GETTABLE  R10 R10 K14  ; R10 := R10["BackgroundMovie"]
  94 [-]: SELF      R10 R10 K15  ; R11 := R10; R10 := R10[0xe4162eed]
@@ -209,7 +209,7 @@
  99 [-]: JMP       79           ; PC := 79
 100 [-]: LT        0 R7 R8      ; if R7 >= R8 then PC := 79
 101 [-]: JMP       79           ; PC := 79
-102 [-]: OP_LOADBOOL R6 0 0       ; R6 := false
+102 [-]: LOADBOOL  R6 0 0       ; R6 := false
 103 [-]: LOADK     R8 0         ; R8 := 0.000000
 104 [-]: GETGLOBAL R10 K18      ; R10 := 0x3d106989
 105 [-]: LOADK     R11 K24      ; R11 := "Retrying set active quest..."
@@ -248,10 +248,10 @@
 
   1 [-]: TEST      R0 1         ; if R0 then PC := 6
   2 [-]: JMP       6            ; PC := 6
-  3 [-]: OP_LOADBOOL R2 1 0       ; R2 := true
+  3 [-]: LOADBOOL  R2 1 0       ; R2 := true
   4 [-]: SETUPVAL  R2 U0        ; U82 := 
   5 [-]: JMP       8            ; PC := 8
-  6 [-]: OP_LOADBOOL R2 1 0       ; R2 := true
+  6 [-]: LOADBOOL  R2 1 0       ; R2 := true
   7 [-]: SETUPVAL  R2 U1        ; U82 := 
   8 [-]: RETURN    R0 1         ; return 
 
@@ -273,9 +273,9 @@
   6 [-]: EQ        1 R2 R0      ; if R2 == R0 then PC := 9
   7 [-]: JMP       9            ; PC := 9
   8 [-]: RETURN    R0 1         ; return 
-  9 [-]: OP_LOADBOOL R2 0 0       ; R2 := false
- 10 [-]: OP_LOADBOOL R3 0 0       ; R3 := false
- 11 [-]: OP_LOADBOOL R4 0 0       ; R4 := false
+  9 [-]: LOADBOOL  R2 0 0       ; R2 := false
+ 10 [-]: LOADBOOL  R3 0 0       ; R3 := false
+ 11 [-]: LOADBOOL  R4 0 0       ; R4 := false
  12 [-]: LOADK     R5 5         ; R5 := 5.000000
  13 [-]: LOADK     R6 0         ; R6 := 0.000000
  14 [-]: CLOSURE   R7 0         ; R7 := closure(Function #4.1)
@@ -298,7 +298,7 @@
  31 [-]: JMP       41           ; PC := 41
  32 [-]: LT        0 K6 R6      ; if 1.000000 >= R6 then PC := 41
  33 [-]: JMP       41           ; PC := 41
- 34 [-]: OP_LOADBOOL R2 1 0       ; R2 := true
+ 34 [-]: LOADBOOL  R2 1 0       ; R2 := true
  35 [-]: GETGLOBAL R8 K7        ; R8 := _T
  36 [-]: GETTABLE  R8 R8 K8     ; R8 := R8["BackgroundMovie"]
  37 [-]: SELF      R8 R8 K9     ; R9 := R8; R8 := R8[0xe4162eed]
@@ -314,7 +314,7 @@
  47 [-]: CALL      R8 2 2       ; R8 := R8(R9)
  48 [-]: TEST      R8 1         ; if R8 then PC := 22
  49 [-]: JMP       22           ; PC := 22
- 50 [-]: OP_LOADBOOL R4 0 0       ; R4 := false
+ 50 [-]: LOADBOOL  R4 0 0       ; R4 := false
  51 [-]: LOADK     R6 0         ; R6 := 0.000000
  52 [-]: GETGLOBAL R8 K13       ; R8 := 0x3d106989
  53 [-]: LOADK     R9 K14       ; R9 := "Retrying CompleteStage."
@@ -341,7 +341,7 @@
  74 [-]: CALL      R8 4 1       ; R8(R9,R10,R11)
  75 [-]: GETUPVAL  R8 U0        ; R8 := U0
  76 [-]: GETTABLE  R8 R8 K19    ; R82 := R8[0x7c37aeec]
- 77 [-]: OP_LOADBOOL R9 1 0       ; R9 := true
+ 77 [-]: LOADBOOL  R9 1 0       ; R9 := true
  78 [-]: CALL      R8 2 1       ; R8(R9)
  79 [-]: RETURN    R0 1         ; return 
 
@@ -357,10 +357,10 @@
 
   1 [-]: TEST      R0 1         ; if R0 then PC := 6
   2 [-]: JMP       6            ; PC := 6
-  3 [-]: OP_LOADBOOL R2 1 0       ; R2 := true
+  3 [-]: LOADBOOL  R2 1 0       ; R2 := true
   4 [-]: SETUPVAL  R2 U0        ; U82 := 
   5 [-]: JMP       8            ; PC := 8
-  6 [-]: OP_LOADBOOL R2 1 0       ; R2 := true
+  6 [-]: LOADBOOL  R2 1 0       ; R2 := true
   7 [-]: SETUPVAL  R2 U1        ; U82 := 
   8 [-]: RETURN    R0 1         ; return 
 
@@ -396,8 +396,8 @@
  20 [-]: CONCAT    R3 R3 R6     ; R3 := R3 .. R4 .. R5 .. R6
  21 [-]: CALL      R2 2 1       ; R2(R3)
  22 [-]: RETURN    R0 1         ; return 
- 23 [-]: OP_LOADBOOL R2 0 0       ; R2 := false
- 24 [-]: OP_LOADBOOL R3 0 0       ; R3 := false
+ 23 [-]: LOADBOOL  R2 0 0       ; R2 := false
+ 24 [-]: LOADBOOL  R3 0 0       ; R3 := false
  25 [-]: CLOSURE   R4 0         ; R4 := closure(Function #5.1)
  26 [-]: MOVE      R0 R2        ; R0 := R2
  27 [-]: MOVE      R0 R3        ; R0 := R3
@@ -427,7 +427,7 @@
  51 [-]: LOADK     R7 0         ; R7 := 0.000000
  52 [-]: CALL      R6 2 1       ; R6(R7)
  53 [-]: JMP       48           ; PC := 48
- 54 [-]: OP_LOADBOOL R2 0 0       ; R2 := false
+ 54 [-]: LOADBOOL  R2 0 0       ; R2 := false
  55 [-]: GETGLOBAL R6 K11       ; R6 := 0xcbd666e1
  56 [-]: LOADK     R7 0         ; R7 := 0.000000
  57 [-]: CALL      R6 2 1       ; R6(R7)
@@ -466,14 +466,14 @@
 ; Is_vararg:       0
 ; Max Stack Size:  3
 
-  1 [-]: OP_LOADBOOL R2 1 0       ; R2 := true
+  1 [-]: LOADBOOL  R2 1 0       ; R2 := true
   2 [-]: SETUPVAL  R2 U0        ; U82 := 
   3 [-]: TEST      R0 0         ; if not R0 then PC := 8
   4 [-]: JMP       8            ; PC := 8
-  5 [-]: OP_LOADBOOL R2 1 0       ; R2 := true
+  5 [-]: LOADBOOL  R2 1 0       ; R2 := true
   6 [-]: SETUPVAL  R2 U1        ; U82 := 
   7 [-]: JMP       10           ; PC := 10
-  8 [-]: OP_LOADBOOL R2 0 0       ; R2 := false
+  8 [-]: LOADBOOL  R2 0 0       ; R2 := false
   9 [-]: SETUPVAL  R2 U1        ; U82 := 
  10 [-]: RETURN    R0 1         ; return 
 
@@ -501,14 +501,14 @@
  12 [-]: TEST      R2 0         ; if not R2 then PC := 15
  13 [-]: JMP       15           ; PC := 15
  14 [-]: RETURN    R0 1         ; return 
- 15 [-]: OP_LOADBOOL R2 0 0       ; R2 := false
- 16 [-]: OP_LOADBOOL R3 0 0       ; R3 := false
+ 15 [-]: LOADBOOL  R2 0 0       ; R2 := false
+ 16 [-]: LOADBOOL  R3 0 0       ; R3 := false
  17 [-]: CLOSURE   R4 0         ; R4 := closure(Function #6.1)
  18 [-]: MOVE      R0 R2        ; R0 := R2
  19 [-]: MOVE      R0 R3        ; R0 := R3
  20 [-]: LOADK     R5 5         ; R5 := 5.000000
  21 [-]: LOADK     R6 0         ; R6 := 0.000000
- 22 [-]: OP_LOADBOOL R7 0 0       ; R7 := false
+ 22 [-]: LOADBOOL  R7 0 0       ; R7 := false
  23 [-]: GETGLOBAL R8 K1        ; R8 := 0x25d99d89
  24 [-]: SELF      R8 R8 K4     ; R9 := R8; R8 := R8[0xc106d418]
  25 [-]: MOVE      R10 R0       ; R10 := R0
@@ -527,7 +527,7 @@
  38 [-]: JMP       48           ; PC := 48
  39 [-]: LT        0 K3 R6      ; if 1.000000 >= R6 then PC := 48
  40 [-]: JMP       48           ; PC := 48
- 41 [-]: OP_LOADBOOL R7 1 0       ; R7 := true
+ 41 [-]: LOADBOOL  R7 1 0       ; R7 := true
  42 [-]: GETGLOBAL R8 K7        ; R8 := _T
  43 [-]: GETTABLE  R8 R8 K8     ; R8 := R8["BackgroundMovie"]
  44 [-]: SELF      R8 R8 K9     ; R9 := R8; R8 := R8[0xe4162eed]
@@ -538,7 +538,7 @@
  49 [-]: JMP       29           ; PC := 29
  50 [-]: LT        0 R5 R6      ; if R5 >= R6 then PC := 29
  51 [-]: JMP       29           ; PC := 29
- 52 [-]: OP_LOADBOOL R3 0 0       ; R3 := false
+ 52 [-]: LOADBOOL  R3 0 0       ; R3 := false
  53 [-]: LOADK     R6 0         ; R6 := 0.000000
  54 [-]: GETGLOBAL R8 K12       ; R8 := 0x3d106989
  55 [-]: LOADK     R9 K13       ; R9 := "Retrying GiveMail."
@@ -578,10 +578,10 @@
 
   1 [-]: TEST      R0 0         ; if not R0 then PC := 6
   2 [-]: JMP       6            ; PC := 6
-  3 [-]: OP_LOADBOOL R2 1 0       ; R2 := true
+  3 [-]: LOADBOOL  R2 1 0       ; R2 := true
   4 [-]: SETUPVAL  R2 U0        ; U82 := 
   5 [-]: JMP       13           ; PC := 13
-  6 [-]: OP_LOADBOOL R2 1 0       ; R2 := true
+  6 [-]: LOADBOOL  R2 1 0       ; R2 := true
   7 [-]: SETUPVAL  R2 U1        ; U82 := 
   8 [-]: GETGLOBAL R2 K0        ; R2 := 0x3d106989
   9 [-]: LOADK     R3 K1        ; R3 := "Failed to give mail: "
@@ -695,8 +695,8 @@
   8 [-]: JMP       11           ; PC := 11
   9 [-]: LT        1 R1 K3      ; if R1 < 8.000000 then PC := 12
  10 [-]: JMP       12           ; PC := 12
- 11 [-]: OP_LOADBOOL R2 0 1       ; R2 := false; PC := 12
- 12 [-]: OP_LOADBOOL R2 1 0       ; R2 := true
+ 11 [-]: LOADBOOL  R2 0 1       ; R2 := false; PC := 12
+ 12 [-]: LOADBOOL  R2 1 0       ; R2 := true
  13 [-]: RETURN    R2 2         ; return R2
  14 [-]: RETURN    R0 1         ; return 
 
@@ -799,7 +799,7 @@
  52 [-]: SELF      R4 R3 K16    ; R5 := R3; R4 := R3[0x32302b4a]
  53 [-]: CALL      R4 2 1       ; R4(R5)
  54 [-]: SELF      R4 R1 K17    ; R5 := R1; R4 := R1[0x32f28249]
- 55 [-]: OP_LOADBOOL R6 0 0       ; R6 := false
+ 55 [-]: LOADBOOL  R6 0 0       ; R6 := false
  56 [-]: CALL      R4 3 1       ; R4(R5,R6)
  57 [-]: RETURN    R0 1         ; return 
 
@@ -832,7 +832,7 @@
  17 [-]: JMP       13           ; PC := 13
  18 [-]: GETUPVAL  R6 U1        ; R6 := U1
  19 [-]: GETTABLE  R6 R6 K5     ; R82 := R6[0x22828de3]
- 20 [-]: OP_LOADBOOL R7 1 0       ; R7 := true
+ 20 [-]: LOADBOOL  R7 1 0       ; R7 := true
  21 [-]: CALL      R6 2 1       ; R6(R7)
  22 [-]: RETURN    R0 1         ; return 
 
@@ -861,7 +861,7 @@
  13 [-]: TEST      R1 0         ; if not R1 then PC := 18
  14 [-]: JMP       18           ; PC := 18
  15 [-]: SELF      R3 R2 K4     ; R4 := R2; R3 := R2[0x32f28249]
- 16 [-]: OP_LOADBOOL R5 1 0       ; R5 := true
+ 16 [-]: LOADBOOL  R5 1 0       ; R5 := true
  17 [-]: CALL      R3 3 1       ; R3(R4,R5)
  18 [-]: RETURN    R0 1         ; return 
 

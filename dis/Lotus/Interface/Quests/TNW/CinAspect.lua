@@ -7,7 +7,7 @@
 ; Is_vararg:       2
 ; Max Stack Size:  6
 
-  1 [-]: OP_LOADBOOL R0 0 0       ; R0 := false
+  1 [-]: LOADBOOL  R0 0 0       ; R0 := false
   2 [-]: LOADK     R1 86        ; R1 := 86.000000
   3 [-]: LOADK     R2 1         ; R2 := 1.000000
   4 [-]: LOADK     R3 1         ; R3 := 1.000000
@@ -164,7 +164,7 @@
  19 [-]: GETTABLE  R2 R2 K7     ; R2 := R2["RemoveCinAspectBars"]
  20 [-]: TEST      R2 0         ; if not R2 then PC := 62
  21 [-]: JMP       62           ; PC := 62
- 22 [-]: OP_LOADBOOL R2 1 0       ; R2 := true
+ 22 [-]: LOADBOOL  R2 1 0       ; R2 := true
  23 [-]: SETUPVAL  R2 U0        ; U82 := 
  24 [-]: GETGLOBAL R2 K8        ; R2 := 0x25312c9b
  25 [-]: GETGLOBAL R3 K1        ; R3 := 0xae91e43b

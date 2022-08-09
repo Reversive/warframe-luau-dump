@@ -219,9 +219,9 @@
  20 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
  21 [-]: LE        0 R1 R0      ; if R1 > R0 then PC := 25
  22 [-]: JMP       25           ; PC := 25
- 23 [-]: OP_LOADBOOL R1 1 0       ; R1 := true
+ 23 [-]: LOADBOOL  R1 1 0       ; R1 := true
  24 [-]: RETURN    R1 2         ; return R1
- 25 [-]: OP_LOADBOOL R1 0 0       ; R1 := false
+ 25 [-]: LOADBOOL  R1 0 0       ; R1 := false
  26 [-]: RETURN    R1 2         ; return R1
  27 [-]: RETURN    R0 1         ; return 
 
@@ -318,7 +318,7 @@
  38 [-]: SETUPVAL  R4 U0        ; U82 := 
  39 [-]: GETUPVAL  R4 U0        ; R4 := U0
  40 [-]: SELF      R4 R4 K13    ; R5 := R4; R4 := R4[0xa69ce1e5]
- 41 [-]: OP_LOADBOOL R6 0 0       ; R6 := false
+ 41 [-]: LOADBOOL  R6 0 0       ; R6 := false
  42 [-]: CALL      R4 3 1       ; R4(R5,R6)
  43 [-]: GETUPVAL  R4 U0        ; R4 := U0
  44 [-]: SELF      R4 R4 K14    ; R5 := R4; R4 := R4[0x53bc0559]
@@ -394,8 +394,8 @@
   4 [-]: GETTABLE  R1 R0 K2     ; R1 := R0["mOperatorType"]
   5 [-]: EQ        0 R1 K4      ; if R1 ~= 4.000000 then PC := 8
   6 [-]: JMP       8            ; PC := 8
-  7 [-]: OP_LOADBOOL R1 0 1       ; R1 := false; PC := 8
-  8 [-]: OP_LOADBOOL R1 1 0       ; R1 := true
+  7 [-]: LOADBOOL  R1 0 1       ; R1 := false; PC := 8
+  8 [-]: LOADBOOL  R1 1 0       ; R1 := true
   9 [-]: SETUPVAL  R1 U0        ; U82 := 
  10 [-]: GETUPVAL  R1 U0        ; R1 := U0
  11 [-]: TEST      R1 0         ; if not R1 then PC := 16
@@ -481,17 +481,17 @@
  62 [-]: CALL      R4 2 1       ; R4(R5)
  63 [-]: GETUPVAL  R4 U2        ; R4 := U2
  64 [-]: GETTABLE  R4 R4 K22    ; R82 := R4[0xbdd9801d]
- 65 [-]: OP_LOADBOOL R5 0 0       ; R5 := false
+ 65 [-]: LOADBOOL  R5 0 0       ; R5 := false
  66 [-]: CALL      R4 2 1       ; R4(R5)
  67 [-]: GETGLOBAL R4 K23       ; R4 := _T
  68 [-]: SETTABLE  R4 K24 K19   ; R4["HideTransferenceFx"] := true
  69 [-]: GETUPVAL  R4 U3        ; R4 := U3
- 70 [-]: OP_LOADBOOL R5 1 0       ; R5 := true
+ 70 [-]: LOADBOOL  R5 1 0       ; R5 := true
  71 [-]: CALL      R4 2 1       ; R4(R5)
  72 [-]: GETUPVAL  R4 U4        ; R4 := U4
  73 [-]: SELF      R4 R4 K25    ; R5 := R4; R4 := R4[0x5d985c7e]
  74 [-]: LOADNIL   R6 R6        ; R6 := nil
- 75 [-]: OP_LOADBOOL R7 0 0       ; R7 := false
+ 75 [-]: LOADBOOL  R7 0 0       ; R7 := false
  76 [-]: LOADK     R8 0         ; R8 := 0.000000
  77 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
  78 [-]: GETUPVAL  R4 U5        ; R4 := U5
@@ -617,17 +617,17 @@
  53 [-]: SELF      R8 R7 K17    ; R9 := R7; R8 := R7[0x32302b4a]
  54 [-]: CALL      R8 2 1       ; R8(R9)
  55 [-]: SELF      R8 R6 K18    ; R9 := R6; R8 := R6[0x32f28249]
- 56 [-]: OP_LOADBOOL R10 0 0      ; R10 := false
+ 56 [-]: LOADBOOL  R10 0 0      ; R10 := false
  57 [-]: CALL      R8 3 1       ; R8(R9,R10)
  58 [-]: TFORLOOP  R2 2         ; R5,R6 :=  R2(R3,R4); if R5 ~= nil then begin PC = 34; R4 := R5 end
  59 [-]: JMP       34           ; PC := 34
  60 [-]: GETUPVAL  R8 U1        ; R8 := U1
  61 [-]: GETTABLE  R8 R8 K19    ; R82 := R8[0x56d89411]
- 62 [-]: OP_LOADBOOL R9 1 0       ; R9 := true
+ 62 [-]: LOADBOOL  R9 1 0       ; R9 := true
  63 [-]: CALL      R8 2 1       ; R8(R9)
  64 [-]: GETUPVAL  R8 U1        ; R8 := U1
  65 [-]: GETTABLE  R8 R8 K20    ; R82 := R8[0x15deabb1]
- 66 [-]: OP_LOADBOOL R9 1 0       ; R9 := true
+ 66 [-]: LOADBOOL  R9 1 0       ; R9 := true
  67 [-]: CALL      R8 2 1       ; R8(R9)
  68 [-]: GETGLOBAL R8 K0        ; R8 := 0x3d106989
  69 [-]: LOADK     R9 K21       ; R9 := "Initial context action setup done"
@@ -894,7 +894,7 @@
  70 [-]: JMP       76           ; PC := 76
  71 [-]: GETUPVAL  R4 U1        ; R4 := U1
  72 [-]: GETTABLE  R4 R4 K24    ; R82 := R4[0x12a41a40]
- 73 [-]: OP_LOADBOOL R5 1 0       ; R5 := true
+ 73 [-]: LOADBOOL  R5 1 0       ; R5 := true
  74 [-]: LOADK     R6 0         ; R6 := 0.000000
  75 [-]: CALL      R4 3 1       ; R4(R5,R6)
  76 [-]: GETUPVAL  R4 U2        ; R4 := U2
@@ -927,7 +927,7 @@
 103 [-]: SETUPVAL  R4 U6        ; U82 := 
 104 [-]: GETUPVAL  R4 U1        ; R4 := U1
 105 [-]: GETTABLE  R4 R4 K24    ; R82 := R4[0x12a41a40]
-106 [-]: OP_LOADBOOL R5 1 0       ; R5 := true
+106 [-]: LOADBOOL  R5 1 0       ; R5 := true
 107 [-]: LOADK     R6 0         ; R6 := 0.000000
 108 [-]: CALL      R4 3 1       ; R4(R5,R6)
 109 [-]: GETGLOBAL R4 K8        ; R4 := _T
@@ -958,7 +958,7 @@
 134 [-]: CALL      R4 2 1       ; R4(R5)
 135 [-]: GETUPVAL  R4 U7        ; R4 := U7
 136 [-]: SELF      R4 R4 K36    ; R5 := R4; R4 := R4[0x8e20fbbb]
-137 [-]: OP_LOADBOOL R6 1 0       ; R6 := true
+137 [-]: LOADBOOL  R6 1 0       ; R6 := true
 138 [-]: CALL      R4 3 1       ; R4(R5,R6)
 139 [-]: GETUPVAL  R4 U8        ; R4 := U8
 140 [-]: CALL      R4 1 1       ; R4()
@@ -987,7 +987,7 @@
 163 [-]: GETGLOBAL R6 K43       ; R6 := 0x88efc25e
 164 [-]: LOADK     R7 K44       ; R7 := "/Lotus/Weapons/Orokin/BallasSword/TNWQuestBallasSwordWeapon"
 165 [-]: CALL      R6 2 2       ; R6 := R6(R7)
-166 [-]: OP_LOADBOOL R7 0 0       ; R7 := false
+166 [-]: LOADBOOL  R7 0 0       ; R7 := false
 167 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
 168 [-]: GETGLOBAL R5 K18       ; R5 := 0x7b998233
 169 [-]: MOVE      R6 R4        ; R6 := R4
@@ -996,7 +996,7 @@
 172 [-]: JMP       173          ; PC := 173
 173 [-]: GETGLOBAL R5 K45       ; R5 := 0xbe190284
 174 [-]: SELF      R5 R5 K46    ; R6 := R5; R5 := R5[0x9dc2a61a]
-175 [-]: OP_LOADBOOL R7 1 0       ; R7 := true
+175 [-]: LOADBOOL  R7 1 0       ; R7 := true
 176 [-]: CALL      R5 3 1       ; R5(R6,R7)
 177 [-]: GETUPVAL  R5 U10       ; R5 := U10
 178 [-]: GETTABLE  R5 R5 K47    ; R82 := R5[0xc474a99e]
@@ -1031,23 +1031,23 @@
 207 [-]: CALL      R13 2 0      ; R13,... := R13(R14)
 208 [-]: CALL      R11 0 2      ; R11 := R11(R12,...)
 209 [-]: SELF      R12 R11 K57  ; R13 := R11; R12 := R11[0x768274d6]
-210 [-]: OP_LOADBOOL R14 0 0      ; R14 := false
-211 [-]: OP_LOADBOOL R15 1 0      ; R15 := true
+210 [-]: LOADBOOL  R14 0 0      ; R14 := false
+211 [-]: LOADBOOL  R15 1 0      ; R15 := true
 212 [-]: CALL      R12 4 1      ; R12(R13,R14,R15)
 213 [-]: GETUPVAL  R12 U1       ; R12 := U1
 214 [-]: GETTABLE  R12 R12 K58  ; R82 := R12[0xc2019ef5]
 215 [-]: GETGLOBAL R13 K48      ; R13 := 0x0469f296
 216 [-]: LOADK     R14 K59      ; R14 := "OrbiterChairReturn"
 217 [-]: CALL      R13 2 2      ; R13 := R13(R14)
-218 [-]: OP_LOADBOOL R14 1 0      ; R14 := true
+218 [-]: LOADBOOL  R14 1 0      ; R14 := true
 219 [-]: CALL      R12 3 1      ; R12(R13,R14)
 220 [-]: SELF      R12 R11 K57  ; R13 := R11; R12 := R11[0x768274d6]
-221 [-]: OP_LOADBOOL R14 1 0      ; R14 := true
-222 [-]: OP_LOADBOOL R15 1 0      ; R15 := true
+221 [-]: LOADBOOL  R14 1 0      ; R14 := true
+222 [-]: LOADBOOL  R15 1 0      ; R15 := true
 223 [-]: CALL      R12 4 1      ; R12(R13,R14,R15)
 224 [-]: GETUPVAL  R12 U7       ; R12 := U7
 225 [-]: SELF      R12 R12 K36  ; R13 := R12; R12 := R12[0x8e20fbbb]
-226 [-]: OP_LOADBOOL R14 0 0      ; R14 := false
+226 [-]: LOADBOOL  R14 0 0      ; R14 := false
 227 [-]: CALL      R12 3 1      ; R12(R13,R14)
 228 [-]: GETUPVAL  R12 U12      ; R12 := U12
 229 [-]: GETTABLE  R12 R12 K60  ; R82 := R12[0x9742b85b]
@@ -1098,7 +1098,7 @@
 274 [-]: GETGLOBAL R13 K48      ; R13 := 0x0469f296
 275 [-]: LOADK     R14 K71      ; R14 := "Market"
 276 [-]: CALL      R13 2 2      ; R13 := R13(R14)
-277 [-]: OP_LOADBOOL R14 1 0      ; R14 := true
+277 [-]: LOADBOOL  R14 1 0      ; R14 := true
 278 [-]: CALL      R12 3 1      ; R12(R13,R14)
 279 [-]: GETUPVAL  R12 U10      ; R12 := U10
 280 [-]: GETTABLE  R12 R12 K68  ; R82 := R12[0x89a7b20b]
@@ -1120,7 +1120,7 @@
 296 [-]: CALL      R12 0 1      ; R12(R13,...)
 297 [-]: GETUPVAL  R12 U15      ; R12 := U15
 298 [-]: GETTABLE  R12 R12 K75  ; R82 := R12[0x22828de3]
-299 [-]: OP_LOADBOOL R13 1 0      ; R13 := true
+299 [-]: LOADBOOL  R13 1 0      ; R13 := true
 300 [-]: CALL      R12 2 1      ; R12(R13)
 301 [-]: GETGLOBAL R12 K6       ; R12 := 0x3d106989
 302 [-]: LOADK     R13 K76      ; R13 := "Arsenal"
@@ -1128,7 +1128,7 @@
 304 [-]: GETUPVAL  R12 U16      ; R12 := U16
 305 [-]: GETUPVAL  R13 U4       ; R13 := U4
 306 [-]: GETTABLE  R13 R13 K28  ; R13 := R13["fakeArsenal"]
-307 [-]: OP_LOADBOOL R14 1 0      ; R14 := true
+307 [-]: LOADBOOL  R14 1 0      ; R14 := true
 308 [-]: GETGLOBAL R15 K77      ; R15 := 0xa421af95
 309 [-]: LOADK     R16 0        ; R16 := 0.000000
 310 [-]: LOADK     R17 0        ; R17 := 0.500000
@@ -1167,18 +1167,18 @@
 343 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
 344 [-]: SELF      R13 R12 K80  ; R14 := R12; R13 := R12[0x5d985c7e]
 345 [-]: GETGLOBAL R15 K81      ; R15 := 0x2d9d49c1
-346 [-]: OP_LOADBOOL R16 1 0      ; R16 := true
-347 [-]: OP_LOADBOOL R17 0 0      ; R17 := false
+346 [-]: LOADBOOL  R16 1 0      ; R16 := true
+347 [-]: LOADBOOL  R17 0 0      ; R17 := false
 348 [-]: CALL      R13 5 1      ; R13(R14,R15,R16,R17)
 349 [-]: SELF      R13 R12 K80  ; R14 := R12; R13 := R12[0x5d985c7e]
 350 [-]: GETGLOBAL R15 K82      ; R15 := 0xa12239ef
-351 [-]: OP_LOADBOOL R16 0 0      ; R16 := false
-352 [-]: OP_LOADBOOL R17 1 0      ; R17 := true
+351 [-]: LOADBOOL  R16 0 0      ; R16 := false
+352 [-]: LOADBOOL  R17 1 0      ; R17 := true
 353 [-]: CALL      R13 5 1      ; R13(R14,R15,R16,R17)
 354 [-]: GETUPVAL  R13 U16      ; R13 := U16
 355 [-]: GETUPVAL  R14 U4       ; R14 := U4
 356 [-]: GETTABLE  R14 R14 K28  ; R14 := R14["fakeArsenal"]
-357 [-]: OP_LOADBOOL R15 1 0      ; R15 := true
+357 [-]: LOADBOOL  R15 1 0      ; R15 := true
 358 [-]: GETGLOBAL R16 K77      ; R16 := 0xa421af95
 359 [-]: LOADK     R17 0        ; R17 := 0.000000
 360 [-]: LOADK     R18 0        ; R18 := 0.500000
@@ -1219,20 +1219,20 @@
 395 [-]: CALL      R17 2 1      ; R17(R18)
 396 [-]: GETGLOBAL R17 K45      ; R17 := 0xbe190284
 397 [-]: SELF      R17 R17 K91  ; R18 := R17; R17 := R17[0xc02f2cb8]
-398 [-]: OP_LOADBOOL R19 1 0      ; R19 := true
+398 [-]: LOADBOOL  R19 1 0      ; R19 := true
 399 [-]: CALL      R17 3 1      ; R17(R18,R19)
 400 [-]: GETGLOBAL R17 K8       ; R17 := _T
 401 [-]: SETTABLE  R17 K92 K12  ; R17["TransferenceToArsenal"] := true
 402 [-]: GETUPVAL  R17 U1       ; R17 := U1
 403 [-]: GETTABLE  R17 R17 K93  ; R82 := R17[0xbdd9801d]
-404 [-]: OP_LOADBOOL R18 1 0      ; R18 := true
+404 [-]: LOADBOOL  R18 1 0      ; R18 := true
 405 [-]: CALL      R17 2 1      ; R17(R18)
 406 [-]: GETUPVAL  R17 U20      ; R17 := U20
-407 [-]: OP_LOADBOOL R18 0 0      ; R18 := false
+407 [-]: LOADBOOL  R18 0 0      ; R18 := false
 408 [-]: CALL      R17 2 1      ; R17(R18)
 409 [-]: GETUPVAL  R17 U7       ; R17 := U7
 410 [-]: SELF      R17 R17 K36  ; R18 := R17; R17 := R17[0x8e20fbbb]
-411 [-]: OP_LOADBOOL R19 1 0      ; R19 := true
+411 [-]: LOADBOOL  R19 1 0      ; R19 := true
 412 [-]: CALL      R17 3 1      ; R17(R18,R19)
 413 [-]: GETUPVAL  R17 U7       ; R17 := U7
 414 [-]: SELF      R17 R17 K94  ; R18 := R17; R17 := R17[0x89f5abe4]
@@ -1254,10 +1254,10 @@
 430 [-]: GETUPVAL  R17 U7       ; R17 := U7
 431 [-]: SELF      R17 R17 K80  ; R18 := R17; R17 := R17[0x5d985c7e]
 432 [-]: GETGLOBAL R19 K97      ; R19 := 0xcfa8f451
-433 [-]: OP_LOADBOOL R20 1 0      ; R20 := true
+433 [-]: LOADBOOL  R20 1 0      ; R20 := true
 434 [-]: LOADK     R21 3        ; R21 := 3.000000
 435 [-]: LOADK     R22 1        ; R22 := 1.000000
-436 [-]: OP_LOADBOOL R23 1 0      ; R23 := true
+436 [-]: LOADBOOL  R23 1 0      ; R23 := true
 437 [-]: CALL      R17 7 1      ; R17(R18,R19,R20,R21,R22,R23)
 438 [-]: JMP       451          ; PC := 451
 439 [-]: GETUPVAL  R17 U22      ; R17 := U22
@@ -1267,10 +1267,10 @@
 443 [-]: GETUPVAL  R17 U7       ; R17 := U7
 444 [-]: SELF      R17 R17 K80  ; R18 := R17; R17 := R17[0x5d985c7e]
 445 [-]: GETGLOBAL R19 K100     ; R19 := 0x704356a5
-446 [-]: OP_LOADBOOL R20 1 0      ; R20 := true
+446 [-]: LOADBOOL  R20 1 0      ; R20 := true
 447 [-]: LOADK     R21 3        ; R21 := 3.000000
 448 [-]: LOADK     R22 1        ; R22 := 1.000000
-449 [-]: OP_LOADBOOL R23 1 0      ; R23 := true
+449 [-]: LOADBOOL  R23 1 0      ; R23 := true
 450 [-]: CALL      R17 7 1      ; R17(R18,R19,R20,R21,R22,R23)
 451 [-]: SELF      R17 R14 K95  ; R18 := R14; R17 := R14[0x68f07b6a]
 452 [-]: MOVE      R19 R16      ; R19 := R16
@@ -1296,15 +1296,15 @@
 472 [-]: CALL      R17 3 1      ; R17(R18,R19)
 473 [-]: GETUPVAL  R17 U7       ; R17 := U7
 474 [-]: SELF      R17 R17 K36  ; R18 := R17; R17 := R17[0x8e20fbbb]
-475 [-]: OP_LOADBOOL R19 0 0      ; R19 := false
+475 [-]: LOADBOOL  R19 0 0      ; R19 := false
 476 [-]: CALL      R17 3 1      ; R17(R18,R19)
 477 [-]: GETGLOBAL R17 K45      ; R17 := 0xbe190284
 478 [-]: SELF      R17 R17 K91  ; R18 := R17; R17 := R17[0xc02f2cb8]
-479 [-]: OP_LOADBOOL R19 0 0      ; R19 := false
+479 [-]: LOADBOOL  R19 0 0      ; R19 := false
 480 [-]: CALL      R17 3 1      ; R17(R18,R19)
 481 [-]: GETUPVAL  R17 U1       ; R17 := U1
 482 [-]: GETTABLE  R17 R17 K93  ; R82 := R17[0xbdd9801d]
-483 [-]: OP_LOADBOOL R18 0 0      ; R18 := false
+483 [-]: LOADBOOL  R18 0 0      ; R18 := false
 484 [-]: CALL      R17 2 1      ; R17(R18)
 485 [-]: GETGLOBAL R17 K8       ; R17 := _T
 486 [-]: SETTABLE  R17 K92 K31  ; R17["TransferenceToArsenal"] := nil
@@ -1317,13 +1317,13 @@
 493 [-]: CALL      R17 3 1      ; R17(R18,R19)
 494 [-]: SELF      R17 R12 K80  ; R18 := R12; R17 := R12[0x5d985c7e]
 495 [-]: GETGLOBAL R19 K104     ; R19 := 0x44e76d02
-496 [-]: OP_LOADBOOL R20 1 0      ; R20 := true
-497 [-]: OP_LOADBOOL R21 0 0      ; R21 := false
+496 [-]: LOADBOOL  R20 1 0      ; R20 := true
+497 [-]: LOADBOOL  R21 0 0      ; R21 := false
 498 [-]: CALL      R17 5 1      ; R17(R18,R19,R20,R21)
 499 [-]: SELF      R17 R12 K80  ; R18 := R12; R17 := R12[0x5d985c7e]
 500 [-]: GETGLOBAL R19 K105     ; R19 := 0x8640227f
-501 [-]: OP_LOADBOOL R20 0 0      ; R20 := false
-502 [-]: OP_LOADBOOL R21 1 0      ; R21 := true
+501 [-]: LOADBOOL  R20 0 0      ; R20 := false
+502 [-]: LOADBOOL  R21 1 0      ; R21 := true
 503 [-]: CALL      R17 5 1      ; R17(R18,R19,R20,R21)
 504 [-]: GETGLOBAL R17 K8       ; R17 := _T
 505 [-]: SETTABLE  R17 K14 K12  ; R17["DisableTransferToOperatorOnShip"] := true
@@ -1339,7 +1339,7 @@
 515 [-]: GETUPVAL  R17 U16      ; R17 := U16
 516 [-]: GETUPVAL  R18 U4       ; R18 := U4
 517 [-]: GETTABLE  R18 R18 K107 ; R18 := R18["helminth"]
-518 [-]: OP_LOADBOOL R19 1 0      ; R19 := true
+518 [-]: LOADBOOL  R19 1 0      ; R19 := true
 519 [-]: CALL      R17 3 1      ; R17(R18,R19)
 520 [-]: GETUPVAL  R17 U19      ; R17 := U19
 521 [-]: TEST      R17 1        ; if R17 then PC := 562
@@ -1374,10 +1374,10 @@
 550 [-]: GETUPVAL  R17 U7       ; R17 := U7
 551 [-]: SELF      R17 R17 K80  ; R18 := R17; R17 := R17[0x5d985c7e]
 552 [-]: GETGLOBAL R19 K111     ; R19 := 0x63531e49
-553 [-]: OP_LOADBOOL R20 1 0      ; R20 := true
+553 [-]: LOADBOOL  R20 1 0      ; R20 := true
 554 [-]: LOADK     R21 3        ; R21 := 3.000000
 555 [-]: LOADK     R22 1        ; R22 := 1.000000
-556 [-]: OP_LOADBOOL R23 0 0      ; R23 := false
+556 [-]: LOADBOOL  R23 0 0      ; R23 := false
 557 [-]: CALL      R17 7 1      ; R17(R18,R19,R20,R21,R22,R23)
 558 [-]: GETUPVAL  R17 U7       ; R17 := U7
 559 [-]: SELF      R17 R17 K103 ; R18 := R17; R17 := R17[0xaf7c1d8d]
@@ -1420,8 +1420,8 @@
 596 [-]: CALL      R17 0 2      ; R17 := R17(R18,...)
 597 [-]: SELF      R18 R17 K80  ; R19 := R17; R18 := R17[0x5d985c7e]
 598 [-]: GETGLOBAL R20 K114     ; R20 := 0x5cc695a4
-599 [-]: OP_LOADBOOL R21 0 0      ; R21 := false
-600 [-]: OP_LOADBOOL R22 0 0      ; R22 := false
+599 [-]: LOADBOOL  R21 0 0      ; R21 := false
+600 [-]: LOADBOOL  R22 0 0      ; R22 := false
 601 [-]: CALL      R18 5 1      ; R18(R19,R20,R21,R22)
 602 [-]: GETUPVAL  R18 U12      ; R18 := U12
 603 [-]: GETTABLE  R18 R18 K62  ; R82 := R18[0x11dcfe97]
@@ -1476,7 +1476,7 @@
 652 [-]: GETGLOBAL R20 K48      ; R20 := 0x0469f296
 653 [-]: LOADK     R21 K123     ; R21 := "LotusHelmetAction"
 654 [-]: CALL      R20 2 2      ; R20 := R20(R21)
-655 [-]: OP_LOADBOOL R21 1 0      ; R21 := true
+655 [-]: LOADBOOL  R21 1 0      ; R21 := true
 656 [-]: CALL      R19 3 1      ; R19(R20,R21)
 657 [-]: GETUPVAL  R19 U6       ; R19 := U6
 658 [-]: SELF      R19 R19 K84  ; R20 := R19; R19 := R19[0xf37943ff]
@@ -1500,11 +1500,11 @@
 676 [-]: CALL      R19 2 1      ; R19(R20)
 677 [-]: GETGLOBAL R19 K45      ; R19 := 0xbe190284
 678 [-]: SELF      R19 R19 K91  ; R20 := R19; R19 := R19[0xc02f2cb8]
-679 [-]: OP_LOADBOOL R21 1 0      ; R21 := true
+679 [-]: LOADBOOL  R21 1 0      ; R21 := true
 680 [-]: CALL      R19 3 1      ; R19(R20,R21)
 681 [-]: GETUPVAL  R19 U7       ; R19 := U7
 682 [-]: SELF      R19 R19 K36  ; R20 := R19; R19 := R19[0x8e20fbbb]
-683 [-]: OP_LOADBOOL R21 1 0      ; R21 := true
+683 [-]: LOADBOOL  R21 1 0      ; R21 := true
 684 [-]: CALL      R19 3 1      ; R19(R20,R21)
 685 [-]: GETUPVAL  R19 U7       ; R19 := U7
 686 [-]: SELF      R19 R19 K94  ; R20 := R19; R19 := R19[0x89f5abe4]
@@ -1512,7 +1512,7 @@
 688 [-]: CALL      R19 3 1      ; R19(R20,R21)
 689 [-]: GETUPVAL  R19 U1       ; R19 := U1
 690 [-]: GETTABLE  R19 R19 K24  ; R82 := R19[0x12a41a40]
-691 [-]: OP_LOADBOOL R20 1 0      ; R20 := true
+691 [-]: LOADBOOL  R20 1 0      ; R20 := true
 692 [-]: LOADK     R21 0        ; R21 := 0.500000
 693 [-]: CALL      R19 3 1      ; R19(R20,R21)
 694 [-]: GETUPVAL  R19 U12      ; R19 := U12
@@ -1527,7 +1527,7 @@
 703 [-]: CALL      R19 1 1      ; R19()
 704 [-]: GETUPVAL  R19 U1       ; R19 := U1
 705 [-]: GETTABLE  R19 R19 K24  ; R82 := R19[0x12a41a40]
-706 [-]: OP_LOADBOOL R20 0 0      ; R20 := false
+706 [-]: LOADBOOL  R20 0 0      ; R20 := false
 707 [-]: LOADK     R21 0        ; R21 := 0.500000
 708 [-]: CALL      R19 3 1      ; R19(R20,R21)
 709 [-]: GETUPVAL  R19 U7       ; R19 := U7
@@ -1536,11 +1536,11 @@
 712 [-]: CALL      R19 3 1      ; R19(R20,R21)
 713 [-]: GETUPVAL  R19 U7       ; R19 := U7
 714 [-]: SELF      R19 R19 K36  ; R20 := R19; R19 := R19[0x8e20fbbb]
-715 [-]: OP_LOADBOOL R21 0 0      ; R21 := false
+715 [-]: LOADBOOL  R21 0 0      ; R21 := false
 716 [-]: CALL      R19 3 1      ; R19(R20,R21)
 717 [-]: GETGLOBAL R19 K45      ; R19 := 0xbe190284
 718 [-]: SELF      R19 R19 K91  ; R20 := R19; R19 := R19[0xc02f2cb8]
-719 [-]: OP_LOADBOOL R21 0 0      ; R21 := false
+719 [-]: LOADBOOL  R21 0 0      ; R21 := false
 720 [-]: CALL      R19 3 1      ; R19(R20,R21)
 721 [-]: GETUPVAL  R19 U12      ; R19 := U12
 722 [-]: GETTABLE  R19 R19 K62  ; R82 := R19[0x11dcfe97]
@@ -1571,14 +1571,14 @@
 747 [-]: GETUPVAL  R19 U16      ; R19 := U16
 748 [-]: GETUPVAL  R20 U4       ; R20 := U4
 749 [-]: GETTABLE  R20 R20 K129 ; R20 := R20["navigation"]
-750 [-]: OP_LOADBOOL R21 1 0      ; R21 := true
+750 [-]: LOADBOOL  R21 1 0      ; R21 := true
 751 [-]: CALL      R19 3 1      ; R19(R20,R21)
 752 [-]: GETUPVAL  R19 U17      ; R19 := U17
 753 [-]: LOADK     R20 3        ; R20 := 3.000000
 754 [-]: CALL      R19 2 1      ; R19(R20)
 755 [-]: GETUPVAL  R19 U15      ; R19 := U15
 756 [-]: GETTABLE  R19 R19 K130 ; R82 := R19[0x56d89411]
-757 [-]: OP_LOADBOOL R20 0 0      ; R20 := false
+757 [-]: LOADBOOL  R20 0 0      ; R20 := false
 758 [-]: CALL      R19 2 1      ; R19(R20)
 759 [-]: GETGLOBAL R19 K16      ; R19 := 0x76ea806b
 760 [-]: SELF      R19 R19 K17  ; R20 := R19; R19 := R19[0x3f3ae64c]
@@ -1613,11 +1613,11 @@
 789 [-]: GETTABLE  R22 R22 K70  ; R82 := R22[0x57a7bb78]
 790 [-]: GETUPVAL  R23 U4       ; R23 := U4
 791 [-]: GETTABLE  R23 R23 K129 ; R23 := R23["navigation"]
-792 [-]: OP_LOADBOOL R24 1 0      ; R24 := true
+792 [-]: LOADBOOL  R24 1 0      ; R24 := true
 793 [-]: CALL      R22 3 1      ; R22(R23,R24)
 794 [-]: GETUPVAL  R22 U15      ; R22 := U15
 795 [-]: GETTABLE  R22 R22 K75  ; R82 := R22[0x22828de3]
-796 [-]: OP_LOADBOOL R23 1 0      ; R23 := true
+796 [-]: LOADBOOL  R23 1 0      ; R23 := true
 797 [-]: CALL      R22 2 1      ; R22(R23)
 798 [-]: GETGLOBAL R22 K6       ; R22 := 0x3d106989
 799 [-]: LOADK     R23 K139     ; R23 := "Advancing to next quest stage"
@@ -1684,7 +1684,7 @@
  45 [-]: GETGLOBAL R1 K9        ; R1 := 0x0469f296
  46 [-]: LOADK     R2 K17       ; R2 := "Market"
  47 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 48 [-]: OP_LOADBOOL R2 1 0       ; R2 := true
+ 48 [-]: LOADBOOL  R2 1 0       ; R2 := true
  49 [-]: CALL      R0 3 1       ; R0(R1,R2)
  50 [-]: GETUPVAL  R0 U1        ; R0 := U1
  51 [-]: GETTABLE  R0 R0 K14    ; R82 := R0[0x89a7b20b]
@@ -1723,20 +1723,20 @@
  84 [-]: GETTABLE  R0 R0 K16    ; R82 := R0[0x57a7bb78]
  85 [-]: GETUPVAL  R1 U4        ; R1 := U4
  86 [-]: GETTABLE  R1 R1 K25    ; R1 := R1["navigation"]
- 87 [-]: OP_LOADBOOL R2 1 0       ; R2 := true
+ 87 [-]: LOADBOOL  R2 1 0       ; R2 := true
  88 [-]: CALL      R0 3 1       ; R0(R1,R2)
  89 [-]: GETUPVAL  R0 U5        ; R0 := U5
  90 [-]: GETTABLE  R0 R0 K26    ; R82 := R0[0x22828de3]
- 91 [-]: OP_LOADBOOL R1 1 0       ; R1 := true
+ 91 [-]: LOADBOOL  R1 1 0       ; R1 := true
  92 [-]: CALL      R0 2 1       ; R0(R1)
  93 [-]: GETUPVAL  R0 U6        ; R0 := U6
  94 [-]: GETUPVAL  R1 U4        ; R1 := U4
  95 [-]: GETTABLE  R1 R1 K25    ; R1 := R1["navigation"]
- 96 [-]: OP_LOADBOOL R2 1 0       ; R2 := true
+ 96 [-]: LOADBOOL  R2 1 0       ; R2 := true
  97 [-]: CALL      R0 3 1       ; R0(R1,R2)
  98 [-]: GETUPVAL  R0 U5        ; R0 := U5
  99 [-]: GETTABLE  R0 R0 K27    ; R82 := R0[0x56d89411]
-100 [-]: OP_LOADBOOL R1 0 0       ; R1 := false
+100 [-]: LOADBOOL  R1 0 0       ; R1 := false
 101 [-]: CALL      R0 2 1       ; R0(R1)
 102 [-]: GETUPVAL  R0 U7        ; R0 := U7
 103 [-]: GETTABLE  R0 R0 K28    ; R82 := R0[0xd9d37af2]

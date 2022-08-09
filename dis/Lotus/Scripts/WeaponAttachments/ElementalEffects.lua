@@ -109,8 +109,8 @@
  76 [-]: CALL      R6 1 2       ; R6 := R6()
  77 [-]: LT        1 R6 K13     ; if R6 < 1.000000 then PC := 80
  78 [-]: JMP       80           ; PC := 80
- 79 [-]: OP_LOADBOOL R6 0 1       ; R6 := false; PC := 80
- 80 [-]: OP_LOADBOOL R6 1 0       ; R6 := true
+ 79 [-]: LOADBOOL  R6 0 1       ; R6 := false; PC := 80
+ 80 [-]: LOADBOOL  R6 1 0       ; R6 := true
  81 [-]: TEST      R6 0         ; if not R6 then PC := 107
  82 [-]: JMP       107          ; PC := 107
  83 [-]: GETGLOBAL R7 K2        ; R7 := 0x7b998233
@@ -138,7 +138,7 @@
 105 [-]: LOADK     R9 3         ; R9 := 3.000000
 106 [-]: CALL      R7 3 1       ; R7(R8,R9)
 107 [-]: SELF      R7 R4 K18    ; R8 := R4; R7 := R4[0xbc617e0f]
-108 [-]: OP_LOADBOOL R9 1 0       ; R9 := true
+108 [-]: LOADBOOL  R9 1 0       ; R9 := true
 109 [-]: LOADK     R10 49       ; R10 := 49.000000
 110 [-]: CALL      R7 4 2       ; R7 := R7(R8,R9,R10)
 111 [-]: LOADK     R8 0         ; R8 := 0.000000

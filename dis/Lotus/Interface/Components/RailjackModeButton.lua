@@ -53,7 +53,7 @@
  25 [-]: SETTABLE  R9 K15 K11   ; R9["mNemesisActive"] := false
  26 [-]: SETTABLE  R9 K16 K17   ; R9["mPulseTimer"] := 0.000000
  27 [-]: CLOSURE   R10 0        ; R10 := closure(Function #1.1)
- 28 [-]: SETTABLE  R9 K18 R10   ; R9["GetParentEnv"] := R10
+ 28 [-]: SETTABLE  R9 K18 R10   ; R9[0xbd054f2d] := R10
  29 [-]: CLOSURE   R10 1        ; R10 := closure(Function #1.2)
  30 [-]: MOVE      R0 R0        ; R0 := R0
  31 [-]: SETTABLE  R9 K19 R10   ; R9["HookUpCallbacks"] := R10
@@ -105,7 +105,7 @@
  77 [-]: CLOSURE   R10 11       ; R10 := closure(Function #1.12)
  78 [-]: MOVE      R0 R0        ; R0 := R0
  79 [-]: MOVE      R0 R1        ; R0 := R1
- 80 [-]: SETTABLE  R9 K29 R10   ; R9["Update"] := R10
+ 80 [-]: SETTABLE  R9 K29 R10   ; R9[0x00000093] := R10
  81 [-]: SELF      R10 R0 K30   ; R11 := R0; R10 := R0[0xe261aa96]
  82 [-]: MOVE      R12 R1       ; R12 := R1
  83 [-]: LOADK     R13 K31      ; R13 := "Title"
@@ -116,7 +116,7 @@
  88 [-]: MOVE      R12 R1       ; R12 := R1
  89 [-]: LOADK     R13 K34      ; R13 := "LichHint"
  90 [-]: LOADK     R14 11       ; R14 := 11.000000
- 91 [-]: OP_LOADBOOL R15 0 0      ; R15 := false
+ 91 [-]: LOADBOOL  R15 0 0      ; R15 := false
  92 [-]: CALL      R10 6 1      ; R10(R11,R12,R13,R14,R15)
  93 [-]: SELF      R10 R0 K35   ; R11 := R0; R10 := R0[0xf64b7262]
  94 [-]: MOVE      R12 R1       ; R12 := R1
@@ -280,7 +280,7 @@
   8 [-]: GETUPVAL  R5 U2        ; R5 := U2
   9 [-]: GETTABLE  R5 R5 K4     ; R82 := R5[0x5d10207d]
  10 [-]: LOADK     R6 10        ; R6 := 10.000000
- 11 [-]: OP_LOADBOOL R7 1 0       ; R7 := true
+ 11 [-]: LOADBOOL  R7 1 0       ; R7 := true
  12 [-]: CALL      R5 3 0       ; R5,... := R5(R6,R7)
  13 [-]: CALL      R1 0 1       ; R1(R2,...)
  14 [-]: GETGLOBAL R1 K6        ; R1 := 0x25312c9b
@@ -331,7 +331,7 @@
   8 [-]: GETUPVAL  R5 U2        ; R5 := U2
   9 [-]: GETTABLE  R5 R5 K4     ; R82 := R5[0x5d10207d]
  10 [-]: LOADK     R6 9         ; R6 := 9.000000
- 11 [-]: OP_LOADBOOL R7 1 0       ; R7 := true
+ 11 [-]: LOADBOOL  R7 1 0       ; R7 := true
  12 [-]: CALL      R5 3 0       ; R5,... := R5(R6,R7)
  13 [-]: CALL      R1 0 1       ; R1(R2,...)
  14 [-]: GETGLOBAL R1 K6        ; R1 := 0x25312c9b
@@ -622,14 +622,14 @@
 236 [-]: GETUPVAL  R10 U5       ; R10 := U5
 237 [-]: GETTABLE  R10 R10 K22  ; R82 := R10[0x5d10207d]
 238 [-]: LOADK     R11 6        ; R11 := 6.000000
-239 [-]: OP_LOADBOOL R12 1 0      ; R12 := true
-240 [-]: OP_LOADBOOL R13 1 0      ; R13 := true
+239 [-]: LOADBOOL  R12 1 0      ; R12 := true
+240 [-]: LOADBOOL  R13 1 0      ; R13 := true
 241 [-]: CALL      R10 4 2      ; R10 := R10(R11,R12,R13)
 242 [-]: GETUPVAL  R11 U5       ; R11 := U5
 243 [-]: GETTABLE  R11 R11 K22  ; R82 := R11[0x5d10207d]
 244 [-]: LOADK     R12 9        ; R12 := 9.000000
-245 [-]: OP_LOADBOOL R13 1 0      ; R13 := true
-246 [-]: OP_LOADBOOL R14 1 0      ; R14 := true
+245 [-]: LOADBOOL  R13 1 0      ; R13 := true
+246 [-]: LOADBOOL  R14 1 0      ; R14 := true
 247 [-]: CALL      R11 4 2      ; R11 := R11(R12,R13,R14)
 248 [-]: LOADK     R12 K24      ; R12 := "/Lotus/Language/Railjack/Railjack_ClientStarchartMode"
 249 [-]: GETTABLE  R13 R0 K25   ; R82 := R13[0xdd4c254f]
@@ -668,7 +668,7 @@
 282 [-]: GETUPVAL  R17 U3       ; R17 := U3
 283 [-]: SELF      R17 R17 K38  ; R18 := R17; R17 := R17[0x42b04007]
 284 [-]: MOVE      R19 R12      ; R19 := R12
-285 [-]: OP_LOADBOOL R20 0 0      ; R20 := false
+285 [-]: LOADBOOL  R20 0 0      ; R20 := false
 286 [-]: NEWTABLE  R21 0 2      ; R21 := {}
 287 [-]: LOADK     R22 K40      ; R22 := "</font><font color=\""
 288 [-]: MOVE      R23 R14      ; R23 := R14
@@ -707,17 +707,17 @@
   1 [-]: GETUPVAL  R1 U0        ; R1 := U0
   2 [-]: GETTABLE  R1 R1 K0     ; R82 := R1[0x5d10207d]
   3 [-]: LOADK     R2 2         ; R2 := 2.000000
-  4 [-]: OP_LOADBOOL R3 1 0       ; R3 := true
+  4 [-]: LOADBOOL  R3 1 0       ; R3 := true
   5 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
   6 [-]: GETUPVAL  R2 U0        ; R2 := U0
   7 [-]: GETTABLE  R2 R2 K0     ; R82 := R2[0x5d10207d]
   8 [-]: LOADK     R3 9         ; R3 := 9.000000
-  9 [-]: OP_LOADBOOL R4 1 0       ; R4 := true
+  9 [-]: LOADBOOL  R4 1 0       ; R4 := true
  10 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
  11 [-]: GETUPVAL  R3 U0        ; R3 := U0
  12 [-]: GETTABLE  R3 R3 K0     ; R82 := R3[0x5d10207d]
  13 [-]: LOADK     R4 10        ; R4 := 10.000000
- 14 [-]: OP_LOADBOOL R5 1 0       ; R5 := true
+ 14 [-]: LOADBOOL  R5 1 0       ; R5 := true
  15 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
  16 [-]: GETUPVAL  R4 U1        ; R4 := U1
  17 [-]: GETTABLE  R4 R4 K2     ; R82 := R4[0x8bcd12b6]
@@ -864,7 +864,7 @@
  23 [-]: CALL      R1 2 1       ; R1(R2)
  24 [-]: SELF      R1 R0 K8     ; R2 := R0; R1 := R0[0x46610c50]
  25 [-]: GETTABLE  R3 R0 K9     ; R3 := R0["mActive"]
- 26 [-]: OP_LOADBOOL R4 1 0       ; R4 := true
+ 26 [-]: LOADBOOL  R4 1 0       ; R4 := true
  27 [-]: CALL      R1 4 1       ; R1(R2,R3,R4)
  28 [-]: SELF      R1 R0 K10    ; R2 := R0; R1 := R0[0xe91c55ec]
  29 [-]: CALL      R1 2 1       ; R1(R2)
@@ -882,8 +882,8 @@
 
   1 [-]: EQ        1 R1 K1      ; if R1 == true then PC := 4
   2 [-]: JMP       4            ; PC := 4
-  3 [-]: OP_LOADBOOL R2 0 1       ; R2 := false; PC := 4
-  4 [-]: OP_LOADBOOL R2 1 0       ; R2 := true
+  3 [-]: LOADBOOL  R2 0 1       ; R2 := false; PC := 4
+  4 [-]: LOADBOOL  R2 1 0       ; R2 := true
   5 [-]: SETTABLE  R0 K0 R2     ; R0["mVisible"] := R2
   6 [-]: GETUPVAL  R2 U0        ; R2 := U0
   7 [-]: SELF      R2 R2 K2     ; R3 := R2; R2 := R2[0xaade900e]
@@ -931,7 +931,7 @@
   8 [-]: GETUPVAL  R4 U1        ; R4 := U1
   9 [-]: LOADK     R5 K2        ; R5 := "LichHint"
  10 [-]: LOADK     R6 11        ; R6 := 11.000000
- 11 [-]: OP_LOADBOOL R7 0 0       ; R7 := false
+ 11 [-]: LOADBOOL  R7 0 0       ; R7 := false
  12 [-]: CALL      R2 6 1       ; R2(R3,R4,R5,R6,R7)
  13 [-]: SETTABLE  R0 K3 K4     ; R0["mNemesisActive"] := false
  14 [-]: JMP       54           ; PC := 54
@@ -971,7 +971,7 @@
  48 [-]: GETUPVAL  R4 U1        ; R4 := U1
  49 [-]: LOADK     R5 K2        ; R5 := "LichHint"
  50 [-]: LOADK     R6 11        ; R6 := 11.000000
- 51 [-]: OP_LOADBOOL R7 1 0       ; R7 := true
+ 51 [-]: LOADBOOL  R7 1 0       ; R7 := true
  52 [-]: CALL      R2 6 1       ; R2(R3,R4,R5,R6,R7)
  53 [-]: SETTABLE  R0 K3 K12    ; R0["mNemesisActive"] := true
  54 [-]: RETURN    R0 1         ; return 

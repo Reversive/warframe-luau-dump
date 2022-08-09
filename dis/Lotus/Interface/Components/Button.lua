@@ -110,8 +110,8 @@
  82 [-]: GETTABLE  R10 R10 K71  ; R10 := R10["UIColor_Black"]
  83 [-]: EQ        0 R10 K8     ; if R10 ~= nil then PC := 86
  84 [-]: JMP       86           ; PC := 86
- 85 [-]: OP_LOADBOOL R10 0 1      ; R10 := false; PC := 86
- 86 [-]: OP_LOADBOOL R10 1 0      ; R10 := true
+ 85 [-]: LOADBOOL  R10 0 1      ; R10 := false; PC := 86
+ 86 [-]: LOADBOOL  R10 1 0      ; R10 := true
  87 [-]: GETGLOBAL R11 K51      ; R11 := 0x0032441c
  88 [-]: GETTABLE  R11 R11 K71  ; R11 := R11["UIColor_Black"]
  89 [-]: LOADK     R12 0        ; R12 := 0.000000
@@ -126,8 +126,8 @@
  98 [-]: GETTABLE  R10 R10 K72  ; R10 := R10["UIColor_DarkGrey"]
  99 [-]: EQ        0 R10 K8     ; if R10 ~= nil then PC := 102
 100 [-]: JMP       102          ; PC := 102
-101 [-]: OP_LOADBOOL R10 0 1      ; R10 := false; PC := 102
-102 [-]: OP_LOADBOOL R10 1 0      ; R10 := true
+101 [-]: LOADBOOL  R10 0 1      ; R10 := false; PC := 102
+102 [-]: LOADBOOL  R10 1 0      ; R10 := true
 103 [-]: GETGLOBAL R11 K51      ; R11 := 0x0032441c
 104 [-]: GETTABLE  R11 R11 K72  ; R11 := R11["UIColor_DarkGrey"]
 105 [-]: LOADK     R12 K73      ; R12 := 2368548.000000
@@ -139,8 +139,8 @@
 111 [-]: GETTABLE  R10 R10 K74  ; R10 := R10["UIColor_Yellow"]
 112 [-]: EQ        0 R10 K8     ; if R10 ~= nil then PC := 115
 113 [-]: JMP       115          ; PC := 115
-114 [-]: OP_LOADBOOL R10 0 1      ; R10 := false; PC := 115
-115 [-]: OP_LOADBOOL R10 1 0      ; R10 := true
+114 [-]: LOADBOOL  R10 0 1      ; R10 := false; PC := 115
+115 [-]: LOADBOOL  R10 1 0      ; R10 := true
 116 [-]: GETGLOBAL R11 K51      ; R11 := 0x0032441c
 117 [-]: GETTABLE  R11 R11 K74  ; R11 := R11["UIColor_Yellow"]
 118 [-]: LOADK     R12 K75      ; R12 := 14276480.000000
@@ -152,8 +152,8 @@
 124 [-]: GETTABLE  R10 R10 K76  ; R10 := R10["UIColor_White"]
 125 [-]: EQ        0 R10 K8     ; if R10 ~= nil then PC := 128
 126 [-]: JMP       128          ; PC := 128
-127 [-]: OP_LOADBOOL R10 0 1      ; R10 := false; PC := 128
-128 [-]: OP_LOADBOOL R10 1 0      ; R10 := true
+127 [-]: LOADBOOL  R10 0 1      ; R10 := false; PC := 128
+128 [-]: LOADBOOL  R10 1 0      ; R10 := true
 129 [-]: GETGLOBAL R11 K51      ; R11 := 0x0032441c
 130 [-]: GETTABLE  R11 R11 K76  ; R11 := R11["UIColor_White"]
 131 [-]: LOADK     R12 K77      ; R12 := 16777215.000000
@@ -166,8 +166,8 @@
 138 [-]: GETTABLE  R10 R10 K78  ; R10 := R10["UIColor_LightBlue"]
 139 [-]: EQ        0 R10 K8     ; if R10 ~= nil then PC := 142
 140 [-]: JMP       142          ; PC := 142
-141 [-]: OP_LOADBOOL R10 0 1      ; R10 := false; PC := 142
-142 [-]: OP_LOADBOOL R10 1 0      ; R10 := true
+141 [-]: LOADBOOL  R10 0 1      ; R10 := false; PC := 142
+142 [-]: LOADBOOL  R10 1 0      ; R10 := true
 143 [-]: GETGLOBAL R11 K51      ; R11 := 0x0032441c
 144 [-]: GETTABLE  R11 R11 K78  ; R11 := R11["UIColor_LightBlue"]
 145 [-]: LOADK     R12 K79      ; R12 := 12769497.000000
@@ -179,8 +179,8 @@
 151 [-]: GETTABLE  R10 R10 K80  ; R10 := R10["UIColor_Orange"]
 152 [-]: EQ        0 R10 K8     ; if R10 ~= nil then PC := 155
 153 [-]: JMP       155          ; PC := 155
-154 [-]: OP_LOADBOOL R10 0 1      ; R10 := false; PC := 155
-155 [-]: OP_LOADBOOL R10 1 0      ; R10 := true
+154 [-]: LOADBOOL  R10 0 1      ; R10 := false; PC := 155
+155 [-]: LOADBOOL  R10 1 0      ; R10 := true
 156 [-]: GETGLOBAL R11 K51      ; R11 := 0x0032441c
 157 [-]: GETTABLE  R11 R11 K80  ; R11 := R11["UIColor_Orange"]
 158 [-]: LOADK     R12 K81      ; R12 := 13466625.000000
@@ -192,8 +192,8 @@
 164 [-]: GETTABLE  R10 R10 K82  ; R10 := R10["UIColor_DarkBlue"]
 165 [-]: EQ        0 R10 K8     ; if R10 ~= nil then PC := 168
 166 [-]: JMP       168          ; PC := 168
-167 [-]: OP_LOADBOOL R10 0 1      ; R10 := false; PC := 168
-168 [-]: OP_LOADBOOL R10 1 0      ; R10 := true
+167 [-]: LOADBOOL  R10 0 1      ; R10 := false; PC := 168
+168 [-]: LOADBOOL  R10 1 0      ; R10 := true
 169 [-]: GETGLOBAL R11 K51      ; R11 := 0x0032441c
 170 [-]: GETTABLE  R11 R11 K82  ; R11 := R11["UIColor_DarkBlue"]
 171 [-]: LOADK     R12 K83      ; R12 := 4546669.000000
@@ -261,8 +261,8 @@
   6 [-]: GETTABLE  R1 R0 K2     ; R1 := R0["mCallout"]
   7 [-]: EQ        0 R1 K3      ; if R1 ~= "" then PC := 10
   8 [-]: JMP       10           ; PC := 10
-  9 [-]: OP_LOADBOOL R1 0 1       ; R1 := false; PC := 10
- 10 [-]: OP_LOADBOOL R1 1 0       ; R1 := true
+  9 [-]: LOADBOOL  R1 0 1       ; R1 := false; PC := 10
+ 10 [-]: LOADBOOL  R1 1 0       ; R1 := true
  11 [-]: RETURN    R1 2         ; return R1
  12 [-]: RETURN    R0 1         ; return 
 
@@ -455,7 +455,7 @@
   5 [-]: GETTABLE  R2 R0 K2     ; R2 := R0["mMovie"]
   6 [-]: SELF      R2 R2 K3     ; R3 := R2; R2 := R2[0x42b04007]
   7 [-]: MOVE      R4 R1        ; R4 := R1
-  8 [-]: OP_LOADBOOL R5 1 0       ; R5 := true
+  8 [-]: LOADBOOL  R5 1 0       ; R5 := true
   9 [-]: CALL      R2 4 2       ; R2 := R2(R3,R4,R5)
  10 [-]: MOVE      R1 R2        ; R1 := R2
  11 [-]: GETTABLE  R2 R0 K4     ; R2 := R0["mNewDesign"]
@@ -474,7 +474,7 @@
  24 [-]: GETTABLE  R2 R0 K2     ; R2 := R0["mMovie"]
  25 [-]: SELF      R2 R2 K3     ; R3 := R2; R2 := R2[0x42b04007]
  26 [-]: GETTABLE  R4 R0 K5     ; R4 := R0["mCallout"]
- 27 [-]: OP_LOADBOOL R5 1 0       ; R5 := true
+ 27 [-]: LOADBOOL  R5 1 0       ; R5 := true
  28 [-]: CALL      R2 4 2       ; R2 := R2(R3,R4,R5)
  29 [-]: LOADK     R3 K8        ; R3 := " "
  30 [-]: MOVE      R4 R1        ; R4 := R1
@@ -628,7 +628,7 @@
 178 [-]: GETTABLE  R7 R0 K10    ; R7 := R0["mClipName"]
 179 [-]: LOADK     R8 K42       ; R8 := "Btn"
 180 [-]: LOADK     R9 11        ; R9 := 11.000000
-181 [-]: OP_LOADBOOL R10 0 0      ; R10 := false
+181 [-]: LOADBOOL  R10 0 0      ; R10 := false
 182 [-]: CALL      R5 6 1       ; R5(R6,R7,R8,R9,R10)
 183 [-]: JMP       199          ; PC := 199
 184 [-]: GETTABLE  R5 R0 K2     ; R5 := R0["mMovie"]
@@ -644,7 +644,7 @@
 194 [-]: GETTABLE  R7 R0 K10    ; R7 := R0["mClipName"]
 195 [-]: LOADK     R8 K42       ; R8 := "Btn"
 196 [-]: LOADK     R9 11        ; R9 := 11.000000
-197 [-]: OP_LOADBOOL R10 1 0      ; R10 := true
+197 [-]: LOADBOOL  R10 1 0      ; R10 := true
 198 [-]: CALL      R5 6 1       ; R5(R6,R7,R8,R9,R10)
 199 [-]: GETTABLE  R5 R0 K4     ; R5 := R0["mNewDesign"]
 200 [-]: TEST      R5 0         ; if not R5 then PC := 258
@@ -766,8 +766,8 @@
  14 [-]: GETTABLE  R3 R0 K6     ; R3 := R0["mId"]
  15 [-]: EQ        1 R3 K7      ; if R3 == nil then PC := 18
  16 [-]: JMP       18           ; PC := 18
- 17 [-]: OP_LOADBOOL R3 0 1       ; R3 := false; PC := 18
- 18 [-]: OP_LOADBOOL R3 1 0       ; R3 := true
+ 17 [-]: LOADBOOL  R3 0 1       ; R3 := false; PC := 18
+ 18 [-]: LOADBOOL  R3 1 0       ; R3 := true
  19 [-]: LOADK     R4 K2        ; R4 := ""
  20 [-]: GETGLOBAL R5 K8        ; R5 := 0x64fb1586
  21 [-]: GETTABLE  R6 R0 K6     ; R6 := R0["mId"]
@@ -885,7 +885,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  10
 
-  1 [-]: SETTABLE  R0 K0 R1     ; R0["mIsActive"] := R1
+  1 [-]: SETTABLE  R0 K0 R1     ; R0[0xd8140b94] := R1
   2 [-]: GETTABLE  R2 R0 K1     ; R2 := R0["mMovie"]
   3 [-]: SELF      R2 R2 K2     ; R3 := R2; R2 := R2[0x67bc869f]
   4 [-]: GETTABLE  R4 R0 K3     ; R4 := R0["mClipName"]
@@ -957,8 +957,8 @@
  37 [-]: JMP       42           ; PC := 42
  38 [-]: GETTABLE  R7 R0 K14    ; R7 := R0["mShowCallout"]
  39 [-]: JMP       42           ; PC := 42
- 40 [-]: OP_LOADBOOL R7 0 1       ; R7 := false; PC := 41
- 41 [-]: OP_LOADBOOL R7 1 0       ; R7 := true
+ 40 [-]: LOADBOOL  R7 0 1       ; R7 := false; PC := 41
+ 41 [-]: LOADBOOL  R7 1 0       ; R7 := true
  42 [-]: GETTABLE  R8 R0 K15    ; R8 := R0["mButtonOffColor"]
  43 [-]: GETTABLE  R9 R0 K9     ; R9 := R0["mLabelOffColor"]
  44 [-]: CALL      R6 4 0       ; R6,... := R6(R7,R8,R9)

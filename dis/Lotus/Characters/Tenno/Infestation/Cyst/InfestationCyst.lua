@@ -147,7 +147,7 @@
  61 [-]: JMP       63           ; PC := 63
  62 [-]: RETURN    R0 1         ; return 
  63 [-]: SELF      R6 R5 K15    ; R7 := R5; R6 := R5[0x712e2346]
- 64 [-]: OP_LOADBOOL R8 1 0       ; R8 := true
+ 64 [-]: LOADBOOL  R8 1 0       ; R8 := true
  65 [-]: CALL      R6 3 1       ; R6(R7,R8)
  66 [-]: RETURN    R0 1         ; return 
 
@@ -174,8 +174,8 @@
  11 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  12 [-]: LT        1 R4 R3      ; if R4 < R3 then PC := 15
  13 [-]: JMP       15           ; PC := 15
- 14 [-]: OP_LOADBOOL R5 0 1       ; R5 := false; PC := 15
- 15 [-]: OP_LOADBOOL R5 1 0       ; R5 := true
+ 14 [-]: LOADBOOL  R5 0 1       ; R5 := false; PC := 15
+ 15 [-]: LOADBOOL  R5 1 0       ; R5 := true
  16 [-]: DIV       R6 R4 K4     ; R6 := R4 / 86400.000000
  17 [-]: GETGLOBAL R7 K5        ; R7 := 0x42dcc9f5
  18 [-]: ADD       R8 R6 K6     ; R8 := R6 + 1.000000
@@ -193,8 +193,8 @@
  30 [-]: MUL       R10 R3 R9    ; R10 := R3 * R9
  31 [-]: LE        1 R4 R10     ; if R4 <= R10 then PC := 34
  32 [-]: JMP       34           ; PC := 34
- 33 [-]: OP_LOADBOOL R10 0 1      ; R10 := false; PC := 34
- 34 [-]: OP_LOADBOOL R10 1 0      ; R10 := true
+ 33 [-]: LOADBOOL  R10 0 1      ; R10 := false; PC := 34
+ 34 [-]: LOADBOOL  R10 1 0      ; R10 := true
  35 [-]: TEST      R5 0         ; if not R5 then PC := 78
  36 [-]: JMP       78           ; PC := 78
  37 [-]: SELF      R11 R1 K10   ; R12 := R1; R11 := R1[0x2d9ba74f]
@@ -205,7 +205,7 @@
  42 [-]: SELF      R11 R1 K11   ; R12 := R1; R11 := R1[0xcddc3abb]
  43 [-]: LOADK     R13 1        ; R13 := 1.000000
  44 [-]: GETGLOBAL R14 K12      ; R14 := 0x45a763eb
- 45 [-]: OP_LOADBOOL R15 0 0      ; R15 := false
+ 45 [-]: LOADBOOL  R15 0 0      ; R15 := false
  46 [-]: CALL      R11 5 1      ; R11(R12,R13,R14,R15)
  47 [-]: GETGLOBAL R11 K13      ; R11 := 0x7b998233
  48 [-]: MOVE      R12 R0       ; R12 := R0

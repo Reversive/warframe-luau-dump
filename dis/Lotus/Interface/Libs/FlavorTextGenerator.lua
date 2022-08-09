@@ -52,8 +52,8 @@
  16 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
  17 [-]: EQ        1 R7 K0      ; if R7 == 0.000000 then PC := 20
  18 [-]: JMP       20           ; PC := 20
- 19 [-]: OP_LOADBOOL R7 0 1       ; R7 := false; PC := 20
- 20 [-]: OP_LOADBOOL R7 1 0       ; R7 := true
+ 19 [-]: LOADBOOL  R7 0 1       ; R7 := false; PC := 20
+ 20 [-]: LOADBOOL  R7 1 0       ; R7 := true
  21 [-]: GETUPVAL  R8 U1        ; R8 := U1
  22 [-]: GETUPVAL  R9 U2        ; R9 := U2
  23 [-]: CALL      R6 4 2       ; R6 := R6(R7,R8,R9)
@@ -89,7 +89,7 @@
  53 [-]: LOADK     R16 K10      ; R16 := "Vendor flavour loc text data not set up correctly! NumToUse max value must be less than equal to MaxLocTagSuffix!"
  54 [-]: CALL      R15 2 1      ; R15(R16)
  55 [-]: GETGLOBAL R15 K11      ; R15 := 0x60cce7b4
- 56 [-]: OP_LOADBOOL R16 0 0      ; R16 := false
+ 56 [-]: LOADBOOL  R16 0 0      ; R16 := false
  57 [-]: CALL      R15 2 1      ; R15(R16)
  58 [-]: LOADK     R15 1        ; R15 := 1.000000
  59 [-]: LE        0 R15 R13    ; if R15 > R13 then PC := 222
@@ -130,7 +130,7 @@
  94 [-]: JMP       101          ; PC := 101
  95 [-]: SELF      R21 R0 K18   ; R22 := R0; R21 := R0[0x42b04007]
  96 [-]: MOVE      R23 R20      ; R23 := R20
- 97 [-]: OP_LOADBOOL R24 1 0      ; R24 := true
+ 97 [-]: LOADBOOL  R24 1 0      ; R24 := true
  98 [-]: CALL      R21 4 2      ; R21 := R21(R22,R23,R24)
  99 [-]: MOVE      R19 R21      ; R19 := R21
 100 [-]: JMP       106          ; PC := 106
@@ -150,7 +150,7 @@
 114 [-]: MOVE      R23 R18      ; R23 := R18
 115 [-]: MOVE      R24 R17      ; R24 := R17
 116 [-]: CONCAT    R23 R23 R24  ; R23 := R23 .. R24
-117 [-]: OP_LOADBOOL R24 1 0      ; R24 := true
+117 [-]: LOADBOOL  R24 1 0      ; R24 := true
 118 [-]: CALL      R21 4 2      ; R21 := R21(R22,R23,R24)
 119 [-]: MOVE      R19 R21      ; R19 := R21
 120 [-]: JMP       149          ; PC := 149
@@ -171,7 +171,7 @@
 135 [-]: MOVE      R23 R18      ; R23 := R18
 136 [-]: MOVE      R24 R17      ; R24 := R17
 137 [-]: CONCAT    R23 R23 R24  ; R23 := R23 .. R24
-138 [-]: OP_LOADBOOL R24 1 0      ; R24 := true
+138 [-]: LOADBOOL  R24 1 0      ; R24 := true
 139 [-]: CALL      R21 4 2      ; R21 := R21(R22,R23,R24)
 140 [-]: MOVE      R19 R21      ; R19 := R21
 141 [-]: JMP       149          ; PC := 149
@@ -207,7 +207,7 @@
 171 [-]: GETTABLE  R24 R11 K24  ; R24 := R11["mElementSeparatorLocTag"]
 172 [-]: SELF      R24 R24 K15  ; R25 := R24; R24 := R24[0x6d604ba7]
 173 [-]: CALL      R24 2 2      ; R24 := R24(R25)
-174 [-]: OP_LOADBOOL R25 1 0      ; R25 := true
+174 [-]: LOADBOOL  R25 1 0      ; R25 := true
 175 [-]: CALL      R22 4 2      ; R22 := R22(R23,R24,R25)
 176 [-]: MOVE      R21 R22      ; R21 := R22
 177 [-]: JMP       185          ; PC := 185
@@ -230,7 +230,7 @@
 194 [-]: GETTABLE  R27 R11 K25  ; R27 := R11["mMutuallyExclusiveLoc"]
 195 [-]: GETTABLE  R27 R27 R26  ; R27 := R27[R26]
 196 [-]: GETTABLE  R27 R27 K26  ; R27 := R27["mExclusiveIndices"]
-197 [-]: OP_LOADBOOL R28 0 0      ; R28 := false
+197 [-]: LOADBOOL  R28 0 0      ; R28 := false
 198 [-]: LOADK     R29 1        ; R29 := 1.000000
 199 [-]: LEN       R30 R27      ; R30 := # R27
 200 [-]: LOADK     R31 1        ; R31 := 1.000000
@@ -238,7 +238,7 @@
 202 [-]: GETTABLE  R33 R27 R32  ; R33 := R27[R32]
 203 [-]: EQ        0 R33 R16    ; if R33 ~= R16 then PC := 207
 204 [-]: JMP       207          ; PC := 207
-205 [-]: OP_LOADBOOL R28 1 0      ; R28 := true
+205 [-]: LOADBOOL  R28 1 0      ; R28 := true
 206 [-]: JMP       208          ; PC := 208
 207 [-]: FORLOOP   R29 202      ; R29 += R31; if R29 <= R30 then begin PC := 202; R32 := R29 end
 208 [-]: TEST      R28 0        ; if not R28 then PC := 219
@@ -268,7 +268,7 @@
 232 [-]: SELF      R37 R0 K18   ; R38 := R0; R37 := R0[0x42b04007]
 233 [-]: SELF      R39 R3 K15   ; R40 := R3; R39 := R3[0x6d604ba7]
 234 [-]: CALL      R39 2 2      ; R39 := R39(R40)
-235 [-]: OP_LOADBOOL R40 1 0      ; R40 := true
+235 [-]: LOADBOOL  R40 1 0      ; R40 := true
 236 [-]: MOVE      R41 R6       ; R41 := R6
 237 [-]: CALL      R37 5 2      ; R37 := R37(R38,R39,R40,R41)
 238 [-]: RETURN    R37 2        ; return R37

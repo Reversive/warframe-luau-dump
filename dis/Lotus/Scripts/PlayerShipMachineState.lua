@@ -122,7 +122,7 @@
  29 [-]: CALL      R11 2 2      ; R11 := R11(R12)
  30 [-]: TEST      R11 1        ; if R11 then PC := 76
  31 [-]: JMP       76           ; PC := 76
- 32 [-]: OP_LOADBOOL R11 0 0      ; R11 := false
+ 32 [-]: LOADBOOL  R11 0 0      ; R11 := false
  33 [-]: TEST      R10 0        ; if not R10 then PC := 44
  34 [-]: JMP       44           ; PC := 44
  35 [-]: GETGLOBAL R12 K9       ; R12 := 0x7b998233
@@ -214,7 +214,7 @@
  17 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  18 [-]: TEST      R5 1         ; if R5 then PC := 44
  19 [-]: JMP       44           ; PC := 44
- 20 [-]: OP_LOADBOOL R5 0 0       ; R5 := false
+ 20 [-]: LOADBOOL  R5 0 0       ; R5 := false
  21 [-]: TEST      R4 0         ; if not R4 then PC := 32
  22 [-]: JMP       32           ; PC := 32
  23 [-]: GETGLOBAL R6 K4        ; R6 := 0x7b998233
@@ -231,7 +231,7 @@
  34 [-]: SELF      R6 R0 K6     ; R7 := R0; R6 := R0[0xcddc3abb]
  35 [-]: GETGLOBAL R8 K7        ; R8 := 0x8dfe314f
  36 [-]: GETGLOBAL R9 K8        ; R9 := 0xc8ac5aeb
- 37 [-]: OP_LOADBOOL R10 0 0      ; R10 := false
+ 37 [-]: LOADBOOL  R10 0 0      ; R10 := false
  38 [-]: CALL      R6 5 1       ; R6(R7,R8,R9,R10)
  39 [-]: RETURN    R0 1         ; return 
  40 [-]: GETGLOBAL R6 K9        ; R6 := 0xcbd666e1

@@ -451,7 +451,7 @@
  35 [-]: JMP       43           ; PC := 43
  36 [-]: SELF      R10 R9 K9    ; R11 := R9; R10 := R9[0x93989c33]
  37 [-]: MOVE      R12 R0       ; R12 := R0
- 38 [-]: OP_LOADBOOL R13 0 0      ; R13 := false
+ 38 [-]: LOADBOOL  R13 0 0      ; R13 := false
  39 [-]: CALL      R10 4 2      ; R10 := R10(R11,R12,R13)
  40 [-]: EQ        0 R8 K10     ; if R8 ~= 1.000000 then PC := 43
  41 [-]: JMP       43           ; PC := 43
@@ -463,7 +463,7 @@
  47 [-]: SELF      R11 R11 K11  ; R12 := R11; R11 := R11[0x659d451f]
  48 [-]: MOVE      R13 R0       ; R13 := R0
  49 [-]: MOVE      R14 R2       ; R14 := R2
- 50 [-]: OP_LOADBOOL R15 0 0      ; R15 := false
+ 50 [-]: LOADBOOL  R15 0 0      ; R15 := false
  51 [-]: CALL      R11 5 2      ; R11 := R11(R12,R13,R14,R15)
  52 [-]: MOVE      R3 R11       ; R3 := R11
  53 [-]: NEWTABLE  R11 0 2      ; R11 := {}

@@ -336,7 +336,7 @@
  18 [-]: GETGLOBAL R5 K5        ; R5 := EMPTY_SYMBOL
  19 [-]: GETGLOBAL R6 K6        ; R6 := ZERO_VECTOR
  20 [-]: GETGLOBAL R7 K7        ; R7 := ZERO_ROTATION
- 21 [-]: OP_LOADBOOL R8 1 0       ; R8 := true
+ 21 [-]: LOADBOOL  R8 1 0       ; R8 := true
  22 [-]: CALL      R2 7 1       ; R2(R3,R4,R5,R6,R7,R8)
  23 [-]: RETURN    R0 1         ; return 
 
@@ -964,8 +964,8 @@
  60 [-]: LOADK     R9 0         ; R9 := 0.000000
  61 [-]: GETGLOBAL R10 K17      ; R10 := 0xa421af95
  62 [-]: CALL      R10 1 2      ; R10 := R10()
- 63 [-]: OP_LOADBOOL R11 0 0      ; R11 := false
- 64 [-]: OP_LOADBOOL R12 0 0      ; R12 := false
+ 63 [-]: LOADBOOL  R11 0 0      ; R11 := false
+ 64 [-]: LOADBOOL  R12 0 0      ; R12 := false
  65 [-]: LT        0 R9 K9      ; if R9 >= 1.000000 then PC := 168
  66 [-]: JMP       168          ; PC := 168
  67 [-]: GETGLOBAL R13 K1       ; R13 := 0x7b998233
@@ -1030,7 +1030,7 @@
 126 [-]: JMP       129          ; PC := 129
 127 [-]: SELF      R15 R14 K28  ; R16 := R14; R15 := R14[0xf4e253b6]
 128 [-]: CALL      R15 2 1      ; R15(R16)
-129 [-]: OP_LOADBOOL R11 1 0      ; R11 := true
+129 [-]: LOADBOOL  R11 1 0      ; R11 := true
 130 [-]: LT        0 K25 R9     ; if 0.500000 >= R9 then PC := 145
 131 [-]: JMP       145          ; PC := 145
 132 [-]: TEST      R12 1        ; if R12 then PC := 145
@@ -1045,7 +1045,7 @@
 141 [-]: JMP       144          ; PC := 144
 142 [-]: SELF      R16 R15 K28  ; R17 := R15; R16 := R15[0xf4e253b6]
 143 [-]: CALL      R16 2 1      ; R16(R17)
-144 [-]: OP_LOADBOOL R12 1 0      ; R12 := true
+144 [-]: LOADBOOL  R12 1 0      ; R12 := true
 145 [-]: GETGLOBAL R16 K1       ; R16 := 0x7b998233
 146 [-]: MOVE      R17 R6       ; R17 := R6
 147 [-]: CALL      R16 2 2      ; R16 := R16(R17)

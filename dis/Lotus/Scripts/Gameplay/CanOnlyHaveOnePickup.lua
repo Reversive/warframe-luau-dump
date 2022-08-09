@@ -22,7 +22,7 @@
 ; Max Stack Size:  9
 
   1 [-]: SELF      R1 R0 K0     ; R2 := R0; R1 := R0[0x04dfb587]
-  2 [-]: OP_LOADBOOL R3 1 0       ; R3 := true
+  2 [-]: LOADBOOL  R3 1 0       ; R3 := true
   3 [-]: CALL      R1 3 1       ; R1(R2,R3)
   4 [-]: SELF      R1 R0 K1     ; R2 := R0; R1 := R0[0x8b3c8605]
   5 [-]: CALL      R1 2 2       ; R1 := R1(R2)
@@ -98,7 +98,7 @@
  75 [-]: EQ        0 R5 K15     ; if R5 ~= 0.000000 then PC := 80
  76 [-]: JMP       80           ; PC := 80
  77 [-]: SELF      R6 R0 K0     ; R7 := R0; R6 := R0[0x04dfb587]
- 78 [-]: OP_LOADBOOL R8 0 0       ; R8 := false
+ 78 [-]: LOADBOOL  R8 0 0       ; R8 := false
  79 [-]: CALL      R6 3 1       ; R6(R7,R8)
  80 [-]: RETURN    R0 1         ; return 
 

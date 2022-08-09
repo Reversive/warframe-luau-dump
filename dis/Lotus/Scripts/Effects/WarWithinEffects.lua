@@ -144,7 +144,7 @@
  22 [-]: JMP       97           ; PC := 97
  23 [-]: SELF      R6 R1 K4     ; R7 := R1; R6 := R1[0x003c792f]
  24 [-]: GETUPVAL  R8 U0        ; R8 := U0
- 25 [-]: OP_LOADBOOL R9 0 0       ; R9 := false
+ 25 [-]: LOADBOOL  R9 0 0       ; R9 := false
  26 [-]: CALL      R6 4 2       ; R6 := R6(R7,R8,R9)
  27 [-]: MOVE      R2 R6        ; R2 := R6
  28 [-]: SELF      R6 R0 K5     ; R7 := R0; R6 := R0[0xd1586535]
@@ -1366,7 +1366,7 @@
  25 [-]: GETUPVAL  R6 U1        ; R6 := U1
  26 [-]: LOADK     R7 1         ; R7 := 1.000000
  27 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
- 28 [-]: OP_LOADBOOL R5 1 0       ; R5 := true
+ 28 [-]: LOADBOOL  R5 1 0       ; R5 := true
  29 [-]: GETGLOBAL R6 K4        ; R6 := 0x7b998233
  30 [-]: MOVE      R7 R2        ; R7 := R2
  31 [-]: CALL      R6 2 2       ; R6 := R6(R7)
@@ -1480,9 +1480,9 @@
  34 [-]: GETTABLE  R3 R3 K1     ; R3 := R3["weatherVolCount"]
  35 [-]: LT        1 R3 K5      ; if R3 < 1.000000 then PC := 38
  36 [-]: JMP       38           ; PC := 38
- 37 [-]: OP_LOADBOOL R3 0 1       ; R3 := false; PC := 38
- 38 [-]: OP_LOADBOOL R3 1 0       ; R3 := true
- 39 [-]: OP_LOADBOOL R4 0 0       ; R4 := false
+ 37 [-]: LOADBOOL  R3 0 1       ; R3 := false; PC := 38
+ 38 [-]: LOADBOOL  R3 1 0       ; R3 := true
+ 39 [-]: LOADBOOL  R4 0 0       ; R4 := false
  40 [-]: CALL      R1 4 1       ; R1(R2,R3,R4)
  41 [-]: RETURN    R0 1         ; return 
 

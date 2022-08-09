@@ -14,9 +14,9 @@
   5 [-]: GETGLOBAL R2 K1        ; R2 := 0x2d0fad09
   6 [-]: LOADK     R3 K3        ; R3 := "EE.Interface.AnchorMgr"
   7 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  8 [-]: OP_LOADBOOL R3 0 0       ; R3 := false
+  8 [-]: LOADBOOL  R3 0 0       ; R3 := false
   9 [-]: LOADNIL   R4 R4        ; R4 := nil
- 10 [-]: OP_LOADBOOL R5 0 0       ; R5 := false
+ 10 [-]: LOADBOOL  R5 0 0       ; R5 := false
  11 [-]: GETGLOBAL R6 K4        ; R6 := 0x78ca68a2
  12 [-]: LOADK     R7 1         ; R7 := 1.000000
  13 [-]: LOADK     R8 K5        ; R8 := 0.200000
@@ -146,7 +146,7 @@
  18 [-]: MOVE      R2 R7        ; R2 := R7
  19 [-]: TFORLOOP  R3 2         ; R6,R7 :=  R3(R4,R5); if R6 ~= nil then begin PC = 14; R5 := R6 end
  20 [-]: JMP       14           ; PC := 14
- 21 [-]: OP_LOADBOOL R8 0 0       ; R8 := false
+ 21 [-]: LOADBOOL  R8 0 0       ; R8 := false
  22 [-]: EQ        0 R2 K6      ; if R2 ~= nil then PC := 26
  23 [-]: JMP       26           ; PC := 26
  24 [-]: TEST      R8 0         ; if not R8 then PC := 101
@@ -177,7 +177,7 @@
  49 [-]: GETGLOBAL R17 K12      ; R17 := 0xae91e43b
  50 [-]: SELF      R17 R17 K13  ; R18 := R17; R17 := R17[0x42b04007]
  51 [-]: MOVE      R19 R16      ; R19 := R16
- 52 [-]: OP_LOADBOOL R20 0 0      ; R20 := false
+ 52 [-]: LOADBOOL  R20 0 0      ; R20 := false
  53 [-]: CALL      R17 4 2      ; R17 := R17(R18,R19,R20)
  54 [-]: TEST      R8 1         ; if R8 then PC := 68
  55 [-]: JMP       68           ; PC := 68
@@ -207,7 +207,7 @@
  79 [-]: MOVE      R22 R11      ; R22 := R11
  80 [-]: CALL      R21 2 2      ; R21 := R21(R22)
  81 [-]: SETTABLE  R20 K22 R21  ; R20["Verse"] := R21
- 82 [-]: OP_LOADBOOL R21 1 0      ; R21 := true
+ 82 [-]: LOADBOOL  R21 1 0      ; R21 := true
  83 [-]: CALL      R18 4 1      ; R18(R19,R20,R21)
  84 [-]: LOADK     R11 K11      ; R11 := ""
  85 [-]: JMP       89           ; PC := 89
@@ -768,7 +768,7 @@
  57 [-]: LOADK     R7 0         ; R7 := 0.000000
  58 [-]: CALL      R4 4 0       ; R4,... := R4(R5,R6,R7)
  59 [-]: CALL      R2 0 1       ; R2(R3,...)
- 60 [-]: OP_LOADBOOL R2 1 0       ; R2 := true
+ 60 [-]: LOADBOOL  R2 1 0       ; R2 := true
  61 [-]: SETUPVAL  R2 U2        ; U82 := 
  62 [-]: RETURN    R0 1         ; return 
 
@@ -837,7 +837,7 @@
 
   1 [-]: GETUPVAL  R0 U0        ; R0 := U0
   2 [-]: CALL      R0 1 1       ; R0()
-  3 [-]: OP_LOADBOOL R0 1 0       ; R0 := true
+  3 [-]: LOADBOOL  R0 1 0       ; R0 := true
   4 [-]: RETURN    R0 2         ; return R0
   5 [-]: RETURN    R0 1         ; return 
 
@@ -853,7 +853,7 @@
 
   1 [-]: GETUPVAL  R0 U0        ; R0 := U0
   2 [-]: CALL      R0 1 1       ; R0()
-  3 [-]: OP_LOADBOOL R0 1 0       ; R0 := true
+  3 [-]: LOADBOOL  R0 1 0       ; R0 := true
   4 [-]: RETURN    R0 2         ; return R0
   5 [-]: RETURN    R0 1         ; return 
 
@@ -869,7 +869,7 @@
 
   1 [-]: GETUPVAL  R0 U0        ; R0 := U0
   2 [-]: CALL      R0 1 1       ; R0()
-  3 [-]: OP_LOADBOOL R0 1 0       ; R0 := true
+  3 [-]: LOADBOOL  R0 1 0       ; R0 := true
   4 [-]: RETURN    R0 2         ; return R0
   5 [-]: RETURN    R0 1         ; return 
 
@@ -885,7 +885,7 @@
 
   1 [-]: GETUPVAL  R0 U0        ; R0 := U0
   2 [-]: CALL      R0 1 1       ; R0()
-  3 [-]: OP_LOADBOOL R0 1 0       ; R0 := true
+  3 [-]: LOADBOOL  R0 1 0       ; R0 := true
   4 [-]: RETURN    R0 2         ; return R0
   5 [-]: RETURN    R0 1         ; return 
 

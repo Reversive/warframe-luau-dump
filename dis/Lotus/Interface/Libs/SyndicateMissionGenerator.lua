@@ -154,7 +154,7 @@
  26 [-]: GETTABLE  R2 R2 R1     ; R2 := R2[R1]
  27 [-]: NEWTABLE  R3 0 0       ; R3 := {}
  28 [-]: SETTABLE  R2 K5 R3     ; R2["syndicateIcons"] := R3
- 29 [-]: OP_LOADBOOL R2 0 0       ; R2 := false
+ 29 [-]: LOADBOOL  R2 0 0       ; R2 := false
  30 [-]: GETGLOBAL R3 K6        ; R3 := 0xcfc01047
  31 [-]: GETGLOBAL R4 K3        ; R4 := _T
  32 [-]: GETTABLE  R4 R4 K4     ; R4 := R4["CachedRegionStatus"]
@@ -165,7 +165,7 @@
  37 [-]: GETTABLE  R8 R0 K7     ; R8 := R0["mIcon"]
  38 [-]: EQ        0 R7 R8      ; if R7 ~= R8 then PC := 42
  39 [-]: JMP       42           ; PC := 42
- 40 [-]: OP_LOADBOOL R2 1 0       ; R2 := true
+ 40 [-]: LOADBOOL  R2 1 0       ; R2 := true
  41 [-]: JMP       44           ; PC := 44
  42 [-]: TFORLOOP  R3 2         ; R6,R7 :=  R3(R4,R5); if R6 ~= nil then begin PC = 37; R5 := R6 end
  43 [-]: JMP       37           ; PC := 37
@@ -195,7 +195,7 @@
   2 [-]: SELF      R19 R19 K1   ; R20 := R19; R19 := R19[0xbf9494fc]
   3 [-]: LOADK     R21 K2       ; R21 := "Syndicates.DebugSyndicates"
   4 [-]: CALL      R19 3 2      ; R19 := R19(R20,R21)
-  5 [-]: OP_LOADBOOL R20 0 0      ; R20 := false
+  5 [-]: LOADBOOL  R20 0 0      ; R20 := false
   6 [-]: GETGLOBAL R21 K3       ; R21 := 0xa94df70b
   7 [-]: SELF      R21 R21 K4   ; R22 := R21; R21 := R21[0xe0fb7d10]
   8 [-]: CALL      R21 2 2      ; R21 := R21(R22)
@@ -453,8 +453,8 @@
 260 [-]: JMP       264          ; PC := 264
 261 [-]: MOVE      R52 R19      ; R52 := R19
 262 [-]: JMP       265          ; PC := 265
-263 [-]: OP_LOADBOOL R52 0 1      ; R52 := false; PC := 264
-264 [-]: OP_LOADBOOL R52 1 0      ; R52 := true
+263 [-]: LOADBOOL  R52 0 1      ; R52 := false; PC := 264
+264 [-]: LOADBOOL  R52 1 0      ; R52 := true
 265 [-]: SELF      R53 R18 K54  ; R54 := R18; R53 := R18[0x5484bf3c]
 266 [-]: GETTABLE  R55 R32 K16  ; R55 := R32["name"]
 267 [-]: CALL      R53 3 2      ; R53 := R53(R54,R55)
@@ -467,16 +467,16 @@
 274 [-]: CALL      R54 3 2      ; R54 := R54(R55,R56)
 275 [-]: TEST      R54 1        ; if R54 then PC := 281
 276 [-]: JMP       281          ; PC := 281
-277 [-]: OP_LOADBOOL R54 0 0      ; R54 := false
+277 [-]: LOADBOOL  R54 0 0      ; R54 := false
 278 [-]: JMP       281          ; PC := 281
-279 [-]: OP_LOADBOOL R54 0 1      ; R54 := false; PC := 280
-280 [-]: OP_LOADBOOL R54 1 0      ; R54 := true
+279 [-]: LOADBOOL  R54 0 1      ; R54 := false; PC := 280
+280 [-]: LOADBOOL  R54 1 0      ; R54 := true
 281 [-]: TEST      R54 0        ; if not R54 then PC := 286
 282 [-]: JMP       286          ; PC := 286
 283 [-]: GETTABLE  R55 R32 K58  ; R55 := R32["unlocked"]
 284 [-]: TEST      R55 1        ; if R55 then PC := 287
 285 [-]: JMP       287          ; PC := 287
-286 [-]: OP_LOADBOOL R55 0 0      ; R55 := false
+286 [-]: LOADBOOL  R55 0 0      ; R55 := false
 287 [-]: NEWTABLE  R56 0 15     ; R56 := {}
 288 [-]: SETTABLE  R56 K16 R33  ; R56["name"] := R33
 289 [-]: GETTABLE  R57 R32 K57  ; R57 := R32["region"]
@@ -503,7 +503,7 @@
 310 [-]: SELF      R57 R1 K74   ; R58 := R1; R57 := R1[0xbef75804]
 311 [-]: CALL      R57 2 2      ; R57 := R57(R58)
 312 [-]: SETTABLE  R56 K73 R57  ; R56["mBuddyAgents"] := R57
-313 [-]: OP_LOADBOOL R57 0 0      ; R57 := false
+313 [-]: LOADBOOL  R57 0 0      ; R57 := false
 314 [-]: TEST      R57 0        ; if not R57 then PC := 408
 315 [-]: JMP       408          ; PC := 408
 316 [-]: TEST      R19 0        ; if not R19 then PC := 362
@@ -525,7 +525,7 @@
 332 [-]: GETGLOBAL R68 K15      ; R68 := 0x64fb1586
 333 [-]: GETTABLE  R69 R32 K57  ; R69 := R32["region"]
 334 [-]: CALL      R68 2 2      ; R68 := R68(R69)
-335 [-]: OP_LOADBOOL R69 0 0      ; R69 := false
+335 [-]: LOADBOOL  R69 0 0      ; R69 := false
 336 [-]: CALL      R67 3 2      ; R67 := R67(R68,R69)
 337 [-]: LOADK     R68 K82      ; R68 := " Node="
 338 [-]: MOVE      R69 R33      ; R69 := R33
@@ -569,7 +569,7 @@
 376 [-]: GETGLOBAL R68 K15      ; R68 := 0x64fb1586
 377 [-]: GETTABLE  R69 R32 K57  ; R69 := R32["region"]
 378 [-]: CALL      R68 2 2      ; R68 := R68(R69)
-379 [-]: OP_LOADBOOL R69 0 0      ; R69 := false
+379 [-]: LOADBOOL  R69 0 0      ; R69 := false
 380 [-]: CALL      R67 3 2      ; R67 := R67(R68,R69)
 381 [-]: LOADK     R68 K82      ; R68 := " Node="
 382 [-]: MOVE      R69 R33      ; R69 := R33
@@ -757,14 +757,14 @@
  90 [-]: GETUPVAL  R37 U3       ; R37 := U3
  91 [-]: MOVE      R38 R36      ; R38 := R36
  92 [-]: CALL      R37 2 2      ; R37 := R37(R38)
- 93 [-]: OP_LOADBOOL R38 0 0      ; R38 := false
+ 93 [-]: LOADBOOL  R38 0 0      ; R38 := false
  94 [-]: GETGLOBAL R39 K27      ; R39 := 0xcfc01047
  95 [-]: MOVE      R40 R14      ; R40 := R14
  96 [-]: CALL      R39 2 4      ; R39,R40,R41 := R39(R40)
  97 [-]: JMP       102          ; PC := 102
  98 [-]: EQ        0 R37 R43    ; if R37 ~= R43 then PC := 102
  99 [-]: JMP       102          ; PC := 102
-100 [-]: OP_LOADBOOL R38 1 0      ; R38 := true
+100 [-]: LOADBOOL  R38 1 0      ; R38 := true
 101 [-]: JMP       104          ; PC := 104
 102 [-]: TFORLOOP  R39 2        ; R42,R43 :=  R39(R40,R41); if R42 ~= nil then begin PC = 98; R41 := R42 end
 103 [-]: JMP       98           ; PC := 98
@@ -901,7 +901,7 @@
  19 [-]: SELF      R14 R0 K9    ; R15 := R0; R14 := R0[0x2b1b267d]
  20 [-]: CALL      R14 2 2      ; R14 := R14(R15)
  21 [-]: LOADK     R15 0        ; R15 := 0.000000
- 22 [-]: OP_LOADBOOL R16 0 0      ; R16 := false
+ 22 [-]: LOADBOOL  R16 0 0      ; R16 := false
  23 [-]: LOADK     R17 1        ; R17 := 1.000000
  24 [-]: LEN       R18 R14      ; R18 := # R14
  25 [-]: LOADK     R19 1        ; R19 := 1.000000
@@ -957,7 +957,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  72
 
-  1 [-]: OP_LOADBOOL R1 0 0       ; R1 := false
+  1 [-]: LOADBOOL  R1 0 0       ; R1 := false
   2 [-]: SELF      R2 R0 K0     ; R3 := R0; R2 := R0[0x69727e0b]
   3 [-]: CALL      R2 2 2       ; R2 := R2(R3)
   4 [-]: GETTABLE  R2 R2 K1     ; R2 := R2["mSyndicateMissions"]
@@ -979,7 +979,7 @@
  20 [-]: JMP       24           ; PC := 24
  21 [-]: GETUPVAL  R8 U0        ; R8 := U0
  22 [-]: SETTABLE  R8 R6 R7     ; R8[R6] := R7
- 23 [-]: OP_LOADBOOL R1 1 0       ; R1 := true
+ 23 [-]: LOADBOOL  R1 1 0       ; R1 := true
  24 [-]: FORLOOP   R3 9         ; R3 += R5; if R3 <= R4 then begin PC := 9; R6 := R3 end
  25 [-]: TEST      R1 1         ; if R1 then PC := 47
  26 [-]: JMP       47           ; PC := 47
@@ -1073,7 +1073,7 @@
 114 [-]: GETTABLE  R38 R21 K27  ; R38 := R21["mId"]
 115 [-]: GETTABLE  R38 R38 K27  ; R38 := R38["mId"]
 116 [-]: LOADK     R39 0        ; R39 := 0.000000
-117 [-]: OP_LOADBOOL R40 0 0      ; R40 := false
+117 [-]: LOADBOOL  R40 0 0      ; R40 := false
 118 [-]: LOADK     R41 1        ; R41 := 1.000000
 119 [-]: LEN       R42 R15      ; R42 := # R15
 120 [-]: LOADK     R43 1        ; R43 := 1.000000

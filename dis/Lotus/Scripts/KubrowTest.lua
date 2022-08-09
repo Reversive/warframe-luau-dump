@@ -363,7 +363,7 @@
 170 [-]: CALL      R25 4 1      ; R25(R26,R27,R28)
 171 [-]: SELF      R25 R18 K42  ; R26 := R18; R25 := R18[0x5d985c7e]
 172 [-]: LOADNIL   R27 R27      ; R27 := nil
-173 [-]: OP_LOADBOOL R28 0 0      ; R28 := false
+173 [-]: LOADBOOL  R28 0 0      ; R28 := false
 174 [-]: CALL      R25 4 1      ; R25(R26,R27,R28)
 175 [-]: SELF      R25 R18 K43  ; R26 := R18; R25 := R18[0xb2532845]
 176 [-]: GETGLOBAL R27 K44      ; R27 := 0x0469f296
@@ -396,7 +396,7 @@
 203 [-]: JMP       181          ; PC := 181
 204 [-]: JMP       206          ; PC := 206
 205 [-]: JMP       181          ; PC := 181
-206 [-]: OP_LOADBOOL R28 0 0      ; R28 := false
+206 [-]: LOADBOOL  R28 0 0      ; R28 := false
 207 [-]: SELF      R29 R3 K13   ; R30 := R3; R29 := R3[0xf2deaf69]
 208 [-]: GETGLOBAL R31 K51      ; R31 := 0x02216222
 209 [-]: CALL      R29 3 2      ; R29 := R29(R30,R31)

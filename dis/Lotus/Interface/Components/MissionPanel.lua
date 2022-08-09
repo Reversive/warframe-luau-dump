@@ -121,8 +121,8 @@
  17 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
  18 [-]: EQ        0 R2 K9      ; if R2 ~= -1.000000 then PC := 21
  19 [-]: JMP       21           ; PC := 21
- 20 [-]: OP_LOADBOOL R2 0 1       ; R2 := false; PC := 21
- 21 [-]: OP_LOADBOOL R2 1 0       ; R2 := true
+ 20 [-]: LOADBOOL  R2 0 1       ; R2 := false; PC := 21
+ 21 [-]: LOADBOOL  R2 1 0       ; R2 := true
  22 [-]: RETURN    R2 2         ; return R2
  23 [-]: RETURN    R0 1         ; return 
 
@@ -325,7 +325,7 @@
  64 [-]: SELF      R8 R8 K15    ; R9 := R8; R8 := R8[0xaade900e]
  65 [-]: LOADK     R10 K16      ; R10 := "MissionPanel.Date"
  66 [-]: LOADK     R11 11       ; R11 := 11.000000
- 67 [-]: OP_LOADBOOL R12 0 0      ; R12 := false
+ 67 [-]: LOADBOOL  R12 0 0      ; R12 := false
  68 [-]: CALL      R8 5 1       ; R8(R9,R10,R11,R12)
  69 [-]: GETGLOBAL R8 K18       ; R8 := 0x7f5022cf
  70 [-]: GETTABLE  R8 R8 K19    ; R82 := R8[0x3f3e4d12]
@@ -347,7 +347,7 @@
  86 [-]: GETTABLE  R12 R0 K2    ; R12 := R0["mMissionInfo"]
  87 [-]: CALL      R11 2 2      ; R11 := R11(R12)
  88 [-]: CONCAT    R10 R10 R11  ; R10 := R10 .. R11
- 89 [-]: OP_LOADBOOL R11 0 0      ; R11 := false
+ 89 [-]: LOADBOOL  R11 0 0      ; R11 := false
  90 [-]: CALL      R8 4 2       ; R8 := R8(R9,R10,R11)
  91 [-]: SETTABLE  R0 K23 R8    ; R0["mAssignment"] := R8
  92 [-]: GETGLOBAL R8 K28       ; R8 := 0x64fb1586
@@ -381,7 +381,7 @@
 120 [-]: MOVE      R13 R8       ; R13 := R8
 121 [-]: LOADK     R14 K36      ; R14 := "UC"
 122 [-]: CONCAT    R12 R12 R14  ; R12 := R12 .. R13 .. R14
-123 [-]: OP_LOADBOOL R13 0 0      ; R13 := false
+123 [-]: LOADBOOL  R13 0 0      ; R13 := false
 124 [-]: CALL      R10 4 2      ; R10 := R10(R11,R12,R13)
 125 [-]: SETTABLE  R0 K34 R10   ; R0["mShip"] := R10
 126 [-]: GETGLOBAL R10 K0       ; R10 := 0xbe190284
@@ -405,7 +405,7 @@
 144 [-]: GETTABLE  R12 R0 K4    ; R12 := R0["mMovie"]
 145 [-]: SELF      R12 R12 K24  ; R13 := R12; R12 := R12[0x42b04007]
 146 [-]: MOVE      R14 R10      ; R14 := R10
-147 [-]: OP_LOADBOOL R15 0 0      ; R15 := false
+147 [-]: LOADBOOL  R15 0 0      ; R15 := false
 148 [-]: CALL      R12 4 0      ; R12,... := R12(R13,R14,R15)
 149 [-]: CALL      R11 0 2      ; R11 := R11(R12,...)
 150 [-]: SETTABLE  R0 K34 R11   ; R0["mShip"] := R11
@@ -419,7 +419,7 @@
 158 [-]: GETTABLE  R12 R0 K4    ; R12 := R0["mMovie"]
 159 [-]: SELF      R12 R12 K24  ; R13 := R12; R12 := R12[0x42b04007]
 160 [-]: LOADK     R14 K45      ; R14 := "/Lotus/Language/SquadLink/LocationFlotilla"
-161 [-]: OP_LOADBOOL R15 0 0      ; R15 := false
+161 [-]: LOADBOOL  R15 0 0      ; R15 := false
 162 [-]: CALL      R12 4 0      ; R12,... := R12(R13,R14,R15)
 163 [-]: CALL      R11 0 2      ; R11 := R11(R12,...)
 164 [-]: SETTABLE  R0 K23 R11   ; R0["mAssignment"] := R11
@@ -434,7 +434,7 @@
 173 [-]: GETTABLE  R11 R0 K4    ; R11 := R0["mMovie"]
 174 [-]: SELF      R11 R11 K24  ; R12 := R11; R11 := R11[0x42b04007]
 175 [-]: LOADK     R13 K46      ; R13 := "/Lotus/Language/G1Quests/FlotillaOperation"
-176 [-]: OP_LOADBOOL R14 0 0      ; R14 := false
+176 [-]: LOADBOOL  R14 0 0      ; R14 := false
 177 [-]: CALL      R11 4 2      ; R11 := R11(R12,R13,R14)
 178 [-]: SETTABLE  R0 K17 R11   ; R0["mName"] := R11
 179 [-]: GETGLOBAL R11 K47      ; R11 := 0xb009bbc6
@@ -452,7 +452,7 @@
 191 [-]: SELF      R13 R13 K24  ; R14 := R13; R13 := R13[0x42b04007]
 192 [-]: SELF      R15 R12 K50  ; R16 := R12; R15 := R12[0x6d604ba7]
 193 [-]: CALL      R15 2 2      ; R15 := R15(R16)
-194 [-]: OP_LOADBOOL R16 0 0      ; R16 := false
+194 [-]: LOADBOOL  R16 0 0      ; R16 := false
 195 [-]: CALL      R13 4 2      ; R13 := R13(R14,R15,R16)
 196 [-]: SETTABLE  R0 K23 R13   ; R0["mAssignment"] := R13
 197 [-]: GETGLOBAL R13 K1       ; R13 := 0x7b998233
@@ -492,8 +492,8 @@
   7 [-]: EQ        1 R1 K2      ; if R1 == nil then PC := 10
   8 [-]: JMP       10           ; PC := 10
   9 [-]: JMP       12           ; PC := 12
- 10 [-]: OP_LOADBOOL R1 0 1       ; R1 := false; PC := 11
- 11 [-]: OP_LOADBOOL R1 1 0       ; R1 := true
+ 10 [-]: LOADBOOL  R1 0 1       ; R1 := false; PC := 11
+ 11 [-]: LOADBOOL  R1 1 0       ; R1 := true
  12 [-]: GETTABLE  R2 R0 K3     ; R2 := R0["mTransitionClips"]
  13 [-]: LEN       R2 R2        ; R2 := # R2
  14 [-]: NEWTABLE  R3 4 0       ; R3 := {}
@@ -518,7 +518,7 @@
  33 [-]: GETTABLE  R9 R0 K15    ; R9 := R0["mMovie"]
  34 [-]: SELF      R9 R9 K16    ; R10 := R9; R9 := R9[0x42b04007]
  35 [-]: GETTABLE  R11 R3 R7    ; R11 := R3[R7]
- 36 [-]: OP_LOADBOOL R12 1 0      ; R12 := true
+ 36 [-]: LOADBOOL  R12 1 0      ; R12 := true
  37 [-]: CALL      R9 4 0       ; R9,... := R9(R10,R11,R12)
  38 [-]: CALL      R8 0 2       ; R8 := R8(R9,...)
  39 [-]: SETTABLE  R3 R7 R8     ; R3[R7] := R8
@@ -552,8 +552,8 @@
  67 [-]: GETTABLE  R17 R8 R15   ; R17 := R8[R15]
  68 [-]: EQ        0 R17 K23    ; if R17 ~= "" then PC := 71
  69 [-]: JMP       71           ; PC := 71
- 70 [-]: OP_LOADBOOL R17 0 1      ; R17 := false; PC := 71
- 71 [-]: OP_LOADBOOL R17 1 0      ; R17 := true
+ 70 [-]: LOADBOOL  R17 0 1      ; R17 := false; PC := 71
+ 71 [-]: LOADBOOL  R17 1 0      ; R17 := true
  72 [-]: GETTABLE  R18 R0 K18   ; R18 := R0["mClipName"]
  73 [-]: LOADK     R19 K24      ; R19 := "."
  74 [-]: MOVE      R20 R16      ; R20 := R16

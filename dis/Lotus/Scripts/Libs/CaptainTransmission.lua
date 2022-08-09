@@ -186,8 +186,8 @@
  11 [-]: GETUPVAL  R3 U1        ; R3 := U1
  12 [-]: EQ        1 R2 R3      ; if R2 == R3 then PC := 15
  13 [-]: JMP       15           ; PC := 15
- 14 [-]: OP_LOADBOOL R2 0 1       ; R2 := false; PC := 15
- 15 [-]: OP_LOADBOOL R2 1 0       ; R2 := true
+ 14 [-]: LOADBOOL  R2 0 1       ; R2 := false; PC := 15
+ 15 [-]: LOADBOOL  R2 1 0       ; R2 := true
  16 [-]: RETURN    R2 2         ; return R2
  17 [-]: RETURN    R0 1         ; return 
 
@@ -340,7 +340,7 @@
   3 [-]: CALL      R1 2 2       ; R1 := R1(R2)
   4 [-]: TEST      R1 0         ; if not R1 then PC := 8
   5 [-]: JMP       8            ; PC := 8
-  6 [-]: OP_LOADBOOL R1 0 0       ; R1 := false
+  6 [-]: LOADBOOL  R1 0 0       ; R1 := false
   7 [-]: RETURN    R1 2         ; return R1
   8 [-]: SELF      R1 R0 K1     ; R2 := R0; R1 := R0[0xed4e0128]
   9 [-]: CALL      R1 2 2       ; R1 := R1(R2)
@@ -356,9 +356,9 @@
  19 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
  20 [-]: TEST      R2 0         ; if not R2 then PC := 24
  21 [-]: JMP       24           ; PC := 24
- 22 [-]: OP_LOADBOOL R2 1 0       ; R2 := true
+ 22 [-]: LOADBOOL  R2 1 0       ; R2 := true
  23 [-]: RETURN    R2 2         ; return R2
- 24 [-]: OP_LOADBOOL R2 0 0       ; R2 := false
+ 24 [-]: LOADBOOL  R2 0 0       ; R2 := false
  25 [-]: RETURN    R2 2         ; return R2
  26 [-]: RETURN    R0 1         ; return 
 

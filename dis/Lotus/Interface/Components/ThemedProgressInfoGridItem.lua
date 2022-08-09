@@ -242,17 +242,17 @@
   1 [-]: GETUPVAL  R1 U0        ; R1 := U0
   2 [-]: GETTABLE  R1 R1 K0     ; R82 := R1[0x5d10207d]
   3 [-]: LOADK     R2 6         ; R2 := 6.000000
-  4 [-]: OP_LOADBOOL R3 1 0       ; R3 := true
+  4 [-]: LOADBOOL  R3 1 0       ; R3 := true
   5 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
   6 [-]: GETUPVAL  R2 U0        ; R2 := U0
   7 [-]: GETTABLE  R2 R2 K0     ; R82 := R2[0x5d10207d]
   8 [-]: LOADK     R3 9         ; R3 := 9.000000
-  9 [-]: OP_LOADBOOL R4 1 0       ; R4 := true
+  9 [-]: LOADBOOL  R4 1 0       ; R4 := true
  10 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
  11 [-]: GETUPVAL  R3 U0        ; R3 := U0
  12 [-]: GETTABLE  R3 R3 K0     ; R82 := R3[0x5d10207d]
  13 [-]: LOADK     R4 10        ; R4 := 10.000000
- 14 [-]: OP_LOADBOOL R5 1 0       ; R5 := true
+ 14 [-]: LOADBOOL  R5 1 0       ; R5 := true
  15 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
  16 [-]: LOADK     R4 K2        ; R4 := "<font color=\""
  17 [-]: GETUPVAL  R5 U1        ; R5 := U1
@@ -285,7 +285,7 @@
  44 [-]: GETUPVAL  R8 U2        ; R8 := U2
  45 [-]: SELF      R8 R8 K9     ; R9 := R8; R8 := R8[0x42b04007]
  46 [-]: GETTABLE  R10 R0 K7    ; R10 := R0["mProgressFormatting"]
- 47 [-]: OP_LOADBOOL R11 1 0      ; R11 := true
+ 47 [-]: LOADBOOL  R11 1 0      ; R11 := true
  48 [-]: NEWTABLE  R12 0 1      ; R12 := {}
  49 [-]: GETTABLE  R13 R0 K11   ; R13 := R0["mProgressText"]
  50 [-]: SETTABLE  R12 K10 R13  ; R12["VAL"] := R13
@@ -299,7 +299,7 @@
  58 [-]: GETUPVAL  R8 U2        ; R8 := U2
  59 [-]: SELF      R8 R8 K9     ; R9 := R8; R8 := R8[0x42b04007]
  60 [-]: LOADK     R10 K13      ; R10 := "/Lotus/Language/Menu/ProgressXOfY"
- 61 [-]: OP_LOADBOOL R11 1 0      ; R11 := true
+ 61 [-]: LOADBOOL  R11 1 0      ; R11 := true
  62 [-]: NEWTABLE  R12 0 2      ; R12 := {}
  63 [-]: MOVE      R13 R5       ; R13 := R5
  64 [-]: MOVE      R14 R7       ; R14 := R7
@@ -317,7 +317,7 @@
  76 [-]: GETUPVAL  R8 U2        ; R8 := U2
  77 [-]: SELF      R8 R8 K9     ; R9 := R8; R8 := R8[0x42b04007]
  78 [-]: LOADK     R10 K18      ; R10 := "/Lotus/Language/Labels/ProgressDescFormat"
- 79 [-]: OP_LOADBOOL R11 1 0      ; R11 := true
+ 79 [-]: LOADBOOL  R11 1 0      ; R11 := true
  80 [-]: NEWTABLE  R12 0 2      ; R12 := {}
  81 [-]: SETTABLE  R12 K10 R7   ; R12["VAL"] := R7
  82 [-]: GETTABLE  R13 R0 K17   ; R13 := R0["mTotalDesc"]
@@ -332,7 +332,7 @@
  91 [-]: GETUPVAL  R8 U2        ; R8 := U2
  92 [-]: SELF      R8 R8 K9     ; R9 := R8; R8 := R8[0x42b04007]
  93 [-]: GETTABLE  R10 R0 K7    ; R10 := R0["mProgressFormatting"]
- 94 [-]: OP_LOADBOOL R11 1 0      ; R11 := true
+ 94 [-]: LOADBOOL  R11 1 0      ; R11 := true
  95 [-]: NEWTABLE  R12 0 1      ; R12 := {}
  96 [-]: SETTABLE  R12 K10 R7   ; R12["VAL"] := R7
  97 [-]: CALL      R8 5 2       ; R8 := R8(R9,R10,R11,R12)
@@ -424,7 +424,7 @@
   3 [-]: TESTSET   R7 R3 1      ; if R3 then PC := 6 else R7 := R3
   4 [-]: JMP       6            ; PC := 6
   5 [-]: LOADK     R7 K1        ; R7 := ""
-  6 [-]: OP_LOADBOOL R8 1 0       ; R8 := true
+  6 [-]: LOADBOOL  R8 1 0       ; R8 := true
   7 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
   8 [-]: MOVE      R3 R5        ; R3 := R5
   9 [-]: GETUPVAL  R5 U0        ; R5 := U0
@@ -432,7 +432,7 @@
  11 [-]: TESTSET   R7 R4 1      ; if R4 then PC := 14 else R7 := R4
  12 [-]: JMP       14           ; PC := 14
  13 [-]: LOADK     R7 K1        ; R7 := ""
- 14 [-]: OP_LOADBOOL R8 1 0       ; R8 := true
+ 14 [-]: LOADBOOL  R8 1 0       ; R8 := true
  15 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
  16 [-]: MOVE      R4 R5        ; R4 := R5
  17 [-]: GETTABLE  R5 R0 K2     ; R5 := R0["mToUpper"]
@@ -469,8 +469,8 @@
   1 [-]: LEN       R5 R1        ; R5 := # R1
   2 [-]: LT        1 K0 R5      ; if 0.000000 < R5 then PC := 5
   3 [-]: JMP       5            ; PC := 5
-  4 [-]: OP_LOADBOOL R5 0 1       ; R5 := false; PC := 5
-  5 [-]: OP_LOADBOOL R5 1 0       ; R5 := true
+  4 [-]: LOADBOOL  R5 0 1       ; R5 := false; PC := 5
+  5 [-]: LOADBOOL  R5 1 0       ; R5 := true
   6 [-]: GETTABLE  R6 R0 K1     ; R6 := R0["mProgressBar"]
   7 [-]: SELF      R6 R6 K2     ; R7 := R6; R6 := R6[0x368ad758]
   8 [-]: TESTSET   R8 R5 0      ; if not R5 then PC := 12 else R8 := R5
@@ -559,22 +559,22 @@
   3 [-]: GETUPVAL  R1 U0        ; R1 := U0
   4 [-]: GETTABLE  R1 R1 K1     ; R82 := R1[0x5d10207d]
   5 [-]: LOADK     R2 12        ; R2 := 12.000000
-  6 [-]: OP_LOADBOOL R3 1 0       ; R3 := true
+  6 [-]: LOADBOOL  R3 1 0       ; R3 := true
   7 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
   8 [-]: GETUPVAL  R2 U0        ; R2 := U0
   9 [-]: GETTABLE  R2 R2 K1     ; R82 := R2[0x5d10207d]
  10 [-]: LOADK     R3 2         ; R3 := 2.000000
- 11 [-]: OP_LOADBOOL R4 1 0       ; R4 := true
+ 11 [-]: LOADBOOL  R4 1 0       ; R4 := true
  12 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
  13 [-]: GETUPVAL  R3 U0        ; R3 := U0
  14 [-]: GETTABLE  R3 R3 K1     ; R82 := R3[0x5d10207d]
  15 [-]: LOADK     R4 9         ; R4 := 9.000000
- 16 [-]: OP_LOADBOOL R5 1 0       ; R5 := true
+ 16 [-]: LOADBOOL  R5 1 0       ; R5 := true
  17 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
  18 [-]: GETUPVAL  R4 U0        ; R4 := U0
  19 [-]: GETTABLE  R4 R4 K1     ; R82 := R4[0x5d10207d]
  20 [-]: LOADK     R5 10        ; R5 := 10.000000
- 21 [-]: OP_LOADBOOL R6 1 0       ; R6 := true
+ 21 [-]: LOADBOOL  R6 1 0       ; R6 := true
  22 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
  23 [-]: GETTABLE  R5 R0 K3     ; R5 := R0["mLevel"]
  24 [-]: TEST      R5 1         ; if R5 then PC := 27
@@ -582,8 +582,8 @@
  26 [-]: LOADK     R5 0         ; R5 := 0.000000
  27 [-]: LE        1 K4 R5      ; if 0.000000 <= R5 then PC := 30
  28 [-]: JMP       30           ; PC := 30
- 29 [-]: OP_LOADBOOL R5 0 1       ; R5 := false; PC := 30
- 30 [-]: OP_LOADBOOL R5 1 0       ; R5 := true
+ 29 [-]: LOADBOOL  R5 0 1       ; R5 := false; PC := 30
+ 30 [-]: LOADBOOL  R5 1 0       ; R5 := true
  31 [-]: GETUPVAL  R6 U1        ; R6 := U1
  32 [-]: SELF      R6 R6 K5     ; R7 := R6; R6 := R6[0xf64b7262]
  33 [-]: GETUPVAL  R8 U2        ; R8 := U2
@@ -856,21 +856,21 @@
 185 [-]: GETUPVAL  R13 U2       ; R13 := U2
 186 [-]: LOADK     R14 K30      ; R14 := "Name.Label"
 187 [-]: LOADK     R15 46       ; R15 := 46.000000
-188 [-]: OP_LOADBOOL R16 1 0      ; R16 := true
+188 [-]: LOADBOOL  R16 1 0      ; R16 := true
 189 [-]: CALL      R11 6 1      ; R11(R12,R13,R14,R15,R16)
 190 [-]: GETUPVAL  R11 U1       ; R11 := U1
 191 [-]: SELF      R11 R11 K29  ; R12 := R11; R11 := R11[0xc0a3774b]
 192 [-]: GETUPVAL  R13 U2       ; R13 := U2
 193 [-]: LOADK     R14 K30      ; R14 := "Name.Label"
 194 [-]: LOADK     R15 44       ; R15 := 44.000000
-195 [-]: OP_LOADBOOL R16 0 0      ; R16 := false
+195 [-]: LOADBOOL  R16 0 0      ; R16 := false
 196 [-]: CALL      R11 6 1      ; R11(R12,R13,R14,R15,R16)
 197 [-]: GETUPVAL  R11 U1       ; R11 := U1
 198 [-]: SELF      R11 R11 K29  ; R12 := R11; R11 := R11[0xc0a3774b]
 199 [-]: GETUPVAL  R13 U2       ; R13 := U2
 200 [-]: LOADK     R14 K31      ; R14 := "BotRight.Label"
 201 [-]: LOADK     R15 44       ; R15 := 44.000000
-202 [-]: OP_LOADBOOL R16 1 0      ; R16 := true
+202 [-]: LOADBOOL  R16 1 0      ; R16 := true
 203 [-]: CALL      R11 6 1      ; R11(R12,R13,R14,R15,R16)
 204 [-]: GETTABLE  R11 R0 K18   ; R11 := R0["mWidth"]
 205 [-]: SUB       R11 R11 R2   ; R11 := R11 - R2
@@ -921,8 +921,8 @@
   1 [-]: SETTABLE  R0 K0 R1     ; R0["mLevel"] := R1
   2 [-]: EQ        0 R1 K1      ; if R1 ~= nil then PC := 5
   3 [-]: JMP       5            ; PC := 5
-  4 [-]: OP_LOADBOOL R3 0 1       ; R3 := false; PC := 5
-  5 [-]: OP_LOADBOOL R3 1 0       ; R3 := true
+  4 [-]: LOADBOOL  R3 0 1       ; R3 := false; PC := 5
+  5 [-]: LOADBOOL  R3 1 0       ; R3 := true
   6 [-]: GETUPVAL  R4 U0        ; R4 := U0
   7 [-]: SELF      R4 R4 K2     ; R5 := R4; R4 := R4[0xc0a3774b]
   8 [-]: GETUPVAL  R6 U1        ; R6 := U1
@@ -935,8 +935,8 @@
  15 [-]: RETURN    R0 1         ; return 
  16 [-]: LE        1 K4 R1      ; if 0.000000 <= R1 then PC := 19
  17 [-]: JMP       19           ; PC := 19
- 18 [-]: OP_LOADBOOL R4 0 1       ; R4 := false; PC := 19
- 19 [-]: OP_LOADBOOL R4 1 0       ; R4 := true
+ 18 [-]: LOADBOOL  R4 0 1       ; R4 := false; PC := 19
+ 19 [-]: LOADBOOL  R4 1 0       ; R4 := true
  20 [-]: GETGLOBAL R5 K5        ; R5 := 0x38f10e85
  21 [-]: GETUPVAL  R6 U0        ; R6 := U0
  22 [-]: GETUPVAL  R7 U1        ; R7 := U1
@@ -954,7 +954,7 @@
  34 [-]: GETUPVAL  R7 U1        ; R7 := U1
  35 [-]: LOADK     R8 K10       ; R8 := "Rank.Shadow"
  36 [-]: LOADK     R9 11        ; R9 := 11.000000
- 37 [-]: OP_LOADBOOL R10 0 0      ; R10 := false
+ 37 [-]: LOADBOOL  R10 0 0      ; R10 := false
  38 [-]: CALL      R5 6 1       ; R5(R6,R7,R8,R9,R10)
  39 [-]: GETUPVAL  R5 U0        ; R5 := U0
  40 [-]: SELF      R5 R5 K11    ; R6 := R5; R5 := R5[0xe261aa96]
@@ -969,7 +969,7 @@
  49 [-]: LOADK     R14 K14      ; R14 := "<NEUTRAL_SYNDICATE>"
  50 [-]: MOVE      R15 R1       ; R15 := R1
  51 [-]: CALL      R12 4 2      ; R12 := R12(R13,R14,R15)
- 52 [-]: OP_LOADBOOL R13 1 0      ; R13 := true
+ 52 [-]: LOADBOOL  R13 1 0      ; R13 := true
  53 [-]: CALL      R10 4 0      ; R10,... := R10(R11,R12,R13)
  54 [-]: CALL      R5 0 1       ; R5(R6,...)
  55 [-]: GETTABLE  R5 R0 K15    ; R5 := R0["mTextMaterial"]

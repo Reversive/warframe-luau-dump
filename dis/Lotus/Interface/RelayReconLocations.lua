@@ -14,7 +14,7 @@
   5 [-]: LOADK     R2 K2        ; R2 := "Lotus.Interface.LotusUtilities"
   6 [-]: CALL      R1 2 2       ; R1 := R1(R2)
   7 [-]: LOADNIL   R2 R2        ; R2 := nil
-  8 [-]: OP_LOADBOOL R3 1 0       ; R3 := true
+  8 [-]: LOADBOOL  R3 1 0       ; R3 := true
   9 [-]: LOADNIL   R4 R4        ; R4 := nil
  10 [-]: CLOSURE   R5 0         ; R5 := closure(Function #1)
  11 [-]: MOVE      R0 R3        ; R0 := R3
@@ -151,7 +151,7 @@
  21 [-]: GETGLOBAL R7 K3        ; R7 := _T
  22 [-]: GETTABLE  R7 R7 K4     ; R7 := R7["RelayReconPhaseInfo"]
  23 [-]: GETTABLE  R7 R7 K14    ; R7 := R7["ProjectName"]
- 24 [-]: OP_LOADBOOL R8 0 0       ; R8 := false
+ 24 [-]: LOADBOOL  R8 0 0       ; R8 := false
  25 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
  26 [-]: SETTABLE  R4 K12 R5    ; R4["PROJECT"] := R5
  27 [-]: CALL      R0 5 1       ; R0(R1,R2,R3,R4)
@@ -252,7 +252,7 @@
  42 [-]: GETTABLE  R13 R13 R7   ; R13 := R13[R7]
  43 [-]: CALL      R11 3 0      ; R11,... := R11(R12,R13)
  44 [-]: CALL      R10 0 2      ; R10 := R10(R11,...)
- 45 [-]: OP_LOADBOOL R11 0 0      ; R11 := false
+ 45 [-]: LOADBOOL  R11 0 0      ; R11 := false
  46 [-]: CALL      R9 3 2       ; R9 := R9(R10,R11)
  47 [-]: GETUPVAL  R10 U3       ; R10 := U3
  48 [-]: GETTABLE  R10 R10 K19  ; R82 := R10[0xdebdf69b]
@@ -269,7 +269,7 @@
  59 [-]: SETTABLE  R13 K21 R14  ; R13["Name"] := R14
  60 [-]: SETTABLE  R13 K24 R10  ; R13["Unlocked"] := R10
  61 [-]: SETTABLE  R13 K25 R8   ; R13["RegionIdx"] := R8
- 62 [-]: OP_LOADBOOL R14 1 0      ; R14 := true
+ 62 [-]: LOADBOOL  R14 1 0      ; R14 := true
  63 [-]: CALL      R11 4 1      ; R11(R12,R13,R14)
  64 [-]: FORLOOP   R4 34        ; R4 += R6; if R4 <= R5 then begin PC := 34; R7 := R4 end
  65 [-]: SELF      R11 R3 K26   ; R12 := R3; R11 := R3[0x71e9ac81]
@@ -369,8 +369,8 @@
  14 [-]: GETTABLE  R3 R0 K4     ; R3 := R0["Id"]
  15 [-]: EQ        1 R2 R3      ; if R2 == R3 then PC := 18
  16 [-]: JMP       18           ; PC := 18
- 17 [-]: OP_LOADBOOL R2 0 1       ; R2 := false; PC := 18
- 18 [-]: OP_LOADBOOL R2 1 0       ; R2 := true
+ 17 [-]: LOADBOOL  R2 0 1       ; R2 := false; PC := 18
+ 18 [-]: LOADBOOL  R2 1 0       ; R2 := true
  19 [-]: GETGLOBAL R3 K5        ; R3 := 0x2d0fad09
  20 [-]: LOADK     R4 K6        ; R4 := "Lotus.Interface.Components.Button"
  21 [-]: CALL      R3 2 2       ; R3 := R3(R4)
@@ -381,7 +381,7 @@
  26 [-]: LOADK     R8 K11       ; R8 := ""
  27 [-]: LOADK     R9 K11       ; R9 := ""
  28 [-]: LOADNIL   R10 R11      ; R10 := R11 := nil
- 29 [-]: OP_LOADBOOL R12 1 0      ; R12 := true
+ 29 [-]: LOADBOOL  R12 1 0      ; R12 := true
  30 [-]: CALL      R4 9 2       ; R4 := R4(R5,R6,R7,R8,R9,R10,R11,R12)
  31 [-]: SETTABLE  R0 K7 R4     ; R0["mBtn"] := R4
  32 [-]: GETTABLE  R4 R0 K7     ; R4 := R0["mBtn"]
@@ -443,7 +443,7 @@
   3 [-]: GETTABLE  R3 R0 K2     ; R3 := R0["mClipName"]
   4 [-]: LOADK     R4 K3        ; R4 := "Callout"
   5 [-]: LOADK     R5 11        ; R5 := 11.000000
-  6 [-]: OP_LOADBOOL R6 1 0       ; R6 := true
+  6 [-]: LOADBOOL  R6 1 0       ; R6 := true
   7 [-]: CALL      R1 6 1       ; R1(R2,R3,R4,R5,R6)
   8 [-]: RETURN    R0 1         ; return 
 
@@ -462,7 +462,7 @@
   3 [-]: GETTABLE  R3 R0 K2     ; R3 := R0["mClipName"]
   4 [-]: LOADK     R4 K3        ; R4 := "Callout"
   5 [-]: LOADK     R5 11        ; R5 := 11.000000
-  6 [-]: OP_LOADBOOL R6 0 0       ; R6 := false
+  6 [-]: LOADBOOL  R6 0 0       ; R6 := false
   7 [-]: CALL      R1 6 1       ; R1(R2,R3,R4,R5,R6)
   8 [-]: RETURN    R0 1         ; return 
 
@@ -499,14 +499,14 @@
  21 [-]: GETGLOBAL R2 K4        ; R2 := 0xae91e43b
  22 [-]: SELF      R2 R2 K10    ; R3 := R2; R2 := R2[0x42b04007]
  23 [-]: LOADK     R4 K11       ; R4 := "/Lotus/Language/RelayReconstruction/PlanetLockedWarning"
- 24 [-]: OP_LOADBOOL R5 0 0       ; R5 := false
+ 24 [-]: LOADBOOL  R5 0 0       ; R5 := false
  25 [-]: NEWTABLE  R6 0 1       ; R6 := {}
  26 [-]: GETUPVAL  R7 U0        ; R7 := U0
  27 [-]: GETTABLE  R7 R7 K13    ; R7 := R7["Name"]
  28 [-]: SETTABLE  R6 K12 R7    ; R6["PLANET"] := R7
  29 [-]: CALL      R2 5 2       ; R2 := R2(R3,R4,R5,R6)
  30 [-]: LOADNIL   R3 R4        ; R3 := R4 := nil
- 31 [-]: OP_LOADBOOL R5 1 0       ; R5 := true
+ 31 [-]: LOADBOOL  R5 1 0       ; R5 := true
  32 [-]: CALL      R1 5 1       ; R1(R2,R3,R4,R5)
  33 [-]: RETURN    R0 1         ; return 
 
@@ -543,8 +543,8 @@
   4 [-]: GETTABLE  R2 R2 K3     ; R2 := R2["RadialSolarMapOpen"]
   5 [-]: EQ        1 R2 K4      ; if R2 == true then PC := 8
   6 [-]: JMP       8            ; PC := 8
-  7 [-]: OP_LOADBOOL R2 0 1       ; R2 := false; PC := 8
-  8 [-]: OP_LOADBOOL R2 1 0       ; R2 := true
+  7 [-]: LOADBOOL  R2 0 1       ; R2 := false; PC := 8
+  8 [-]: LOADBOOL  R2 1 0       ; R2 := true
   9 [-]: CALL      R0 3 1       ; R0(R1,R2)
  10 [-]: GETGLOBAL R0 K0        ; R0 := 0xae91e43b
  11 [-]: SELF      R0 R0 K5     ; R1 := R0; R0 := R0[0xc6a10ab1]
@@ -627,7 +627,7 @@
  88 [-]: SETTABLE  R0 K11 K28   ; R0["RelayReconPhaseInfo"] := nil
  89 [-]: GETUPVAL  R0 U3        ; R0 := U3
  90 [-]: CALL      R0 1 1       ; R0()
- 91 [-]: OP_LOADBOOL R0 0 0       ; R0 := false
+ 91 [-]: LOADBOOL  R0 0 0       ; R0 := false
  92 [-]: SETUPVAL  R0 U4        ; U82 := 
  93 [-]: RETURN    R0 1         ; return 
 

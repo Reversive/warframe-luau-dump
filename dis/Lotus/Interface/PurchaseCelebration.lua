@@ -102,22 +102,22 @@
  30 [-]: GETUPVAL  R1 U1        ; R1 := U1
  31 [-]: GETTABLE  R1 R1 K8     ; R82 := R1[0x5d10207d]
  32 [-]: LOADK     R2 9         ; R2 := 9.000000
- 33 [-]: OP_LOADBOOL R3 1 0       ; R3 := true
+ 33 [-]: LOADBOOL  R3 1 0       ; R3 := true
  34 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
  35 [-]: GETUPVAL  R2 U1        ; R2 := U1
  36 [-]: GETTABLE  R2 R2 K8     ; R82 := R2[0x5d10207d]
  37 [-]: LOADK     R3 10        ; R3 := 10.000000
- 38 [-]: OP_LOADBOOL R4 1 0       ; R4 := true
+ 38 [-]: LOADBOOL  R4 1 0       ; R4 := true
  39 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
  40 [-]: GETUPVAL  R3 U1        ; R3 := U1
  41 [-]: GETTABLE  R3 R3 K8     ; R82 := R3[0x5d10207d]
  42 [-]: LOADK     R4 1         ; R4 := 1.000000
- 43 [-]: OP_LOADBOOL R5 1 0       ; R5 := true
+ 43 [-]: LOADBOOL  R5 1 0       ; R5 := true
  44 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
  45 [-]: GETUPVAL  R4 U1        ; R4 := U1
  46 [-]: GETTABLE  R4 R4 K8     ; R82 := R4[0x5d10207d]
  47 [-]: LOADK     R5 2         ; R5 := 2.000000
- 48 [-]: OP_LOADBOOL R6 1 0       ; R6 := true
+ 48 [-]: LOADBOOL  R6 1 0       ; R6 := true
  49 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
  50 [-]: GETGLOBAL R5 K4        ; R5 := 0xae91e43b
  51 [-]: SELF      R5 R5 K5     ; R6 := R5; R5 := R5[0x67bc869f]
@@ -260,7 +260,7 @@
 188 [-]: GETGLOBAL R8 K4        ; R8 := 0xae91e43b
 189 [-]: SELF      R8 R8 K35    ; R9 := R8; R8 := R8[0x42b04007]
 190 [-]: MOVE      R10 R6       ; R10 := R6
-191 [-]: OP_LOADBOOL R11 1 0      ; R11 := true
+191 [-]: LOADBOOL  R11 1 0      ; R11 := true
 192 [-]: LOADNIL   R12 R12      ; R12 := nil
 193 [-]: CALL      R8 5 0       ; R8,... := R8(R9,R10,R11,R12)
 194 [-]: CALL      R7 0 2       ; R7 := R7(R8,...)
@@ -341,7 +341,7 @@
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0xae91e43b
   2 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0xbed40e9c]
-  3 [-]: OP_LOADBOOL R2 1 0       ; R2 := true
+  3 [-]: LOADBOOL  R2 1 0       ; R2 := true
   4 [-]: CALL      R0 3 1       ; R0(R1,R2)
   5 [-]: RETURN    R0 1         ; return 
 
@@ -602,7 +602,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
-  1 [-]: OP_LOADBOOL R0 1 0       ; R0 := true
+  1 [-]: LOADBOOL  R0 1 0       ; R0 := true
   2 [-]: RETURN    R0 2         ; return R0
   3 [-]: RETURN    R0 1         ; return 
 

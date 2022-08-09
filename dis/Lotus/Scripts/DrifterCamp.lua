@@ -57,14 +57,14 @@
  10 [-]: TEST      R2 0         ; if not R2 then PC := 15
  11 [-]: JMP       15           ; PC := 15
  12 [-]: SELF      R2 R0 K4     ; R3 := R0; R2 := R0[0xd7e40a81]
- 13 [-]: OP_LOADBOOL R4 1 0       ; R4 := true
+ 13 [-]: LOADBOOL  R4 1 0       ; R4 := true
  14 [-]: CALL      R2 3 1       ; R2(R3,R4)
  15 [-]: GETGLOBAL R2 K5        ; R2 := 0xf87424cb
  16 [-]: LE        0 K6 R2      ; if 0.000000 > R2 then PC := 22
  17 [-]: JMP       22           ; PC := 22
  18 [-]: SELF      R2 R0 K7     ; R3 := R0; R2 := R0[0x36fc5f03]
  19 [-]: GETGLOBAL R4 K5        ; R4 := 0xf87424cb
- 20 [-]: OP_LOADBOOL R5 1 0       ; R5 := true
+ 20 [-]: LOADBOOL  R5 1 0       ; R5 := true
  21 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
  22 [-]: RETURN    R0 1         ; return 
 

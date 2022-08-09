@@ -218,7 +218,7 @@
  13 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
  14 [-]: LE        0 R1 K5      ; if R1 > 0.000000 then PC := 18
  15 [-]: JMP       18           ; PC := 18
- 16 [-]: OP_LOADBOOL R2 0 0       ; R2 := false
+ 16 [-]: LOADBOOL  R2 0 0       ; R2 := false
  17 [-]: RETURN    R2 2         ; return R2
  18 [-]: GETGLOBAL R2 K6        ; R2 := 0x64fb1586
  19 [-]: GETTABLE  R3 R0 K7     ; R3 := R0["mission"]
@@ -238,12 +238,12 @@
  33 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  34 [-]: EQ        0 R4 K0      ; if R4 ~= nil then PC := 38
  35 [-]: JMP       38           ; PC := 38
- 36 [-]: OP_LOADBOOL R5 0 0       ; R5 := false
+ 36 [-]: LOADBOOL  R5 0 0       ; R5 := false
  37 [-]: RETURN    R5 2         ; return R5
  38 [-]: EQ        1 R4 R1      ; if R4 == R1 then PC := 41
  39 [-]: JMP       41           ; PC := 41
- 40 [-]: OP_LOADBOOL R5 0 1       ; R5 := false; PC := 41
- 41 [-]: OP_LOADBOOL R5 1 0       ; R5 := true
+ 40 [-]: LOADBOOL  R5 0 1       ; R5 := false; PC := 41
+ 41 [-]: LOADBOOL  R5 1 0       ; R5 := true
  42 [-]: RETURN    R5 2         ; return R5
  43 [-]: RETURN    R0 1         ; return 
 
@@ -540,7 +540,7 @@
 101 [-]: CALL      R11 2 2      ; R11 := R11(R12)
 102 [-]: TEST      R11 1        ; if R11 then PC := 107
 103 [-]: JMP       107          ; PC := 107
-104 [-]: OP_LOADBOOL R11 0 0      ; R11 := false
+104 [-]: LOADBOOL  R11 0 0      ; R11 := false
 105 [-]: TEST      R11 0        ; if not R11 then PC := 136
 106 [-]: JMP       136          ; PC := 136
 107 [-]: SELF      R11 R10 K25  ; R12 := R10; R11 := R10[0x8f89d633]
@@ -594,8 +594,8 @@
   7 [-]: GETGLOBAL R4 K2        ; R4 := EMPTY_SYMBOL
   8 [-]: EQ        1 R3 R4      ; if R3 == R4 then PC := 11
   9 [-]: JMP       11           ; PC := 11
- 10 [-]: OP_LOADBOOL R3 0 1       ; R3 := false; PC := 11
- 11 [-]: OP_LOADBOOL R3 1 0       ; R3 := true
+ 10 [-]: LOADBOOL  R3 0 1       ; R3 := false; PC := 11
+ 11 [-]: LOADBOOL  R3 1 0       ; R3 := true
  12 [-]: GETUPVAL  R4 U1        ; R4 := U1
  13 [-]: GETTABLE  R5 R1 K3     ; R5 := R1["AttackerFaction"]
  14 [-]: ADD       R5 R5 K4     ; R5 := R5 + 1.000000
@@ -608,7 +608,7 @@
  21 [-]: GETTABLE  R3 R3 K7     ; R82 := R3[0x3f3e4d12]
  22 [-]: SELF      R4 R0 K8     ; R5 := R0; R4 := R0[0x42b04007]
  23 [-]: GETTABLE  R6 R1 K9     ; R6 := R1["Region"]
- 24 [-]: OP_LOADBOOL R7 0 0       ; R7 := false
+ 24 [-]: LOADBOOL  R7 0 0       ; R7 := false
  25 [-]: CALL      R4 4 0       ; R4,... := R4(R5,R6,R7)
  26 [-]: CALL      R3 0 2       ; R3 := R3(R4,...)
  27 [-]: NEWTABLE  R4 0 5       ; R4 := {}
@@ -616,7 +616,7 @@
  29 [-]: SETTABLE  R4 K12 R3    ; R4["Name"] := R3
  30 [-]: SELF      R5 R0 K8     ; R6 := R0; R5 := R0[0x42b04007]
  31 [-]: LOADK     R7 K14       ; R7 := "/Lotus/Language/UiElements/InvasionsSubHint"
- 32 [-]: OP_LOADBOOL R8 0 0       ; R8 := false
+ 32 [-]: LOADBOOL  R8 0 0       ; R8 := false
  33 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
  34 [-]: SETTABLE  R4 K13 R5    ; R4["LocalizedDesc"] := R5
  35 [-]: GETTABLE  R5 R1 K15    ; R5 := R1["SubInvasions"]
@@ -626,7 +626,7 @@
  39 [-]: NEWTABLE  R5 0 0       ; R5 := {}
  40 [-]: SELF      R6 R0 K8     ; R7 := R0; R6 := R0[0x42b04007]
  41 [-]: MOVE      R8 R2        ; R8 := R2
- 42 [-]: OP_LOADBOOL R9 0 0       ; R9 := false
+ 42 [-]: LOADBOOL  R9 0 0       ; R9 := false
  43 [-]: CALL      R6 4 2       ; R6 := R6(R7,R8,R9)
  44 [-]: GETUPVAL  R7 U2        ; R7 := U2
  45 [-]: GETTABLE  R7 R7 K16    ; R82 := R7[0x0f164e09]

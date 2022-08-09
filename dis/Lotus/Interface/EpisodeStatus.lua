@@ -165,7 +165,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  14
 
-  1 [-]: OP_LOADBOOL R1 0 0       ; R1 := false
+  1 [-]: LOADBOOL  R1 0 0       ; R1 := false
   2 [-]: GETGLOBAL R2 K0        ; R2 := 0x7b998233
   3 [-]: GETGLOBAL R3 K1        ; R3 := 0x25d99d89
   4 [-]: CALL      R2 2 2       ; R2 := R2(R3)
@@ -309,8 +309,8 @@
   8 [-]: GETTABLE  R2 R2 K4     ; R2 := R2["RadialSolarMapOpen"]
   9 [-]: EQ        1 R2 K5      ; if R2 == true then PC := 12
  10 [-]: JMP       12           ; PC := 12
- 11 [-]: OP_LOADBOOL R2 0 1       ; R2 := false; PC := 12
- 12 [-]: OP_LOADBOOL R2 1 0       ; R2 := true
+ 11 [-]: LOADBOOL  R2 0 1       ; R2 := false; PC := 12
+ 12 [-]: LOADBOOL  R2 1 0       ; R2 := true
  13 [-]: CALL      R0 3 1       ; R0(R1,R2)
  14 [-]: GETUPVAL  R0 U1        ; R0 := U1
  15 [-]: GETTABLE  R0 R0 K6     ; R82 := R0[0xae6791ba]
@@ -381,7 +381,7 @@
  80 [-]: GETGLOBAL R7 K0        ; R7 := 0xae91e43b
  81 [-]: SELF      R7 R7 K27    ; R8 := R7; R7 := R7[0x42b04007]
  82 [-]: LOADK     R9 K28       ; R9 := "/Lotus/Language/Syndicates/RadioLegionTitle"
- 83 [-]: OP_LOADBOOL R10 0 0      ; R10 := false
+ 83 [-]: LOADBOOL  R10 0 0      ; R10 := false
  84 [-]: CALL      R7 4 0       ; R7,... := R7(R8,R9,R10)
  85 [-]: CALL      R6 0 2       ; R6 := R6(R7,...)
  86 [-]: LOADK     R7 K29       ; R7 := "</b></font>"
@@ -393,7 +393,7 @@
  92 [-]: SELF      R8 R8 K27    ; R9 := R8; R8 := R8[0x42b04007]
  93 [-]: SELF      R10 R2 K31   ; R11 := R2; R10 := R2[0x19e3c2ac]
  94 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 95 [-]: OP_LOADBOOL R11 0 0      ; R11 := false
+ 95 [-]: LOADBOOL  R11 0 0      ; R11 := false
  96 [-]: CALL      R8 4 0       ; R8,... := R8(R9,R10,R11)
  97 [-]: CALL      R7 0 2       ; R7 := R7(R8,...)
  98 [-]: LOADK     R8 K32       ; R8 := "</font>"
@@ -560,12 +560,12 @@
 259 [-]: GETUPVAL  R7 U7        ; R7 := U7
 260 [-]: GETTABLE  R7 R7 K73    ; R82 := R7[0x5d10207d]
 261 [-]: LOADK     R8 6         ; R8 := 6.000000
-262 [-]: OP_LOADBOOL R9 1 0       ; R9 := true
+262 [-]: LOADBOOL  R9 1 0       ; R9 := true
 263 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
 264 [-]: GETUPVAL  R8 U7        ; R8 := U7
 265 [-]: GETTABLE  R8 R8 K73    ; R82 := R8[0x5d10207d]
 266 [-]: LOADK     R9 9         ; R9 := 9.000000
-267 [-]: OP_LOADBOOL R10 1 0      ; R10 := true
+267 [-]: LOADBOOL  R10 1 0      ; R10 := true
 268 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
 269 [-]: LOADK     R9 K75       ; R9 := "color=\""
 270 [-]: GETUPVAL  R10 U8       ; R10 := U8
@@ -592,16 +592,16 @@
 291 [-]: GETTABLE  R14 R14 K79  ; R14 := R14["WorldStateOutbreakChains"]
 292 [-]: EQ        0 R14 K80    ; if R14 ~= nil then PC := 295
 293 [-]: JMP       295          ; PC := 295
-294 [-]: OP_LOADBOOL R14 0 1      ; R14 := false; PC := 295
-295 [-]: OP_LOADBOOL R14 1 0      ; R14 := true
+294 [-]: LOADBOOL  R14 0 1      ; R14 := false; PC := 295
+295 [-]: LOADBOOL  R14 1 0      ; R14 := true
 296 [-]: GETGLOBAL R15 K0       ; R15 := 0xae91e43b
 297 [-]: SELF      R15 R15 K67  ; R16 := R15; R15 := R15[0xaade900e]
 298 [-]: LOADK     R17 K81      ; R17 := "Container.Icon"
 299 [-]: LOADK     R18 11       ; R18 := 11.000000
 300 [-]: EQ        1 R14 K5     ; if R14 == true then PC := 303
 301 [-]: JMP       303          ; PC := 303
-302 [-]: OP_LOADBOOL R19 0 1      ; R19 := false; PC := 303
-303 [-]: OP_LOADBOOL R19 1 0      ; R19 := true
+302 [-]: LOADBOOL  R19 0 1      ; R19 := false; PC := 303
+303 [-]: LOADBOOL  R19 1 0      ; R19 := true
 304 [-]: CALL      R15 5 1      ; R15(R16,R17,R18,R19)
 305 [-]: TEST      R14 0        ; if not R14 then PC := 383
 306 [-]: JMP       383          ; PC := 383
@@ -647,7 +647,7 @@
 346 [-]: GETGLOBAL R29 K0       ; R29 := 0xae91e43b
 347 [-]: SELF      R29 R29 K27  ; R30 := R29; R29 := R29[0x42b04007]
 348 [-]: MOVE      R31 R18      ; R31 := R18
-349 [-]: OP_LOADBOOL R32 0 0      ; R32 := false
+349 [-]: LOADBOOL  R32 0 0      ; R32 := false
 350 [-]: CALL      R29 4 2      ; R29 := R29(R30,R31,R32)
 351 [-]: LOADK     R30 K32      ; R30 := "</font>"
 352 [-]: CONCAT    R13 R21 R30  ; R13 := R21 .. R22 .. R23 .. R24 .. R25 .. R26 .. R27 .. R28 .. R29 .. R30
@@ -776,7 +776,7 @@
 475 [-]: MOVE      R33 R23      ; R33 := R23
 476 [-]: CALL      R32 2 2      ; R32 := R32(R33)
 477 [-]: CONCAT    R31 R31 R32  ; R31 := R31 .. R32
-478 [-]: OP_LOADBOOL R32 0 0      ; R32 := false
+478 [-]: LOADBOOL  R32 0 0      ; R32 := false
 479 [-]: CALL      R29 4 0      ; R29,... := R29(R30,R31,R32)
 480 [-]: CALL      R28 0 2      ; R28 := R28(R29,...)
 481 [-]: GETUPVAL  R29 U3       ; R29 := U3
@@ -874,7 +874,7 @@
 573 [-]: SELF      R32 R32 K67  ; R33 := R32; R32 := R32[0xaade900e]
 574 [-]: LOADK     R34 K136     ; R34 := "Container.NodeDetails"
 575 [-]: LOADK     R35 11       ; R35 := 11.000000
-576 [-]: OP_LOADBOOL R36 0 0      ; R36 := false
+576 [-]: LOADBOOL  R36 0 0      ; R36 := false
 577 [-]: CALL      R32 5 1      ; R32(R33,R34,R35,R36)
 578 [-]: RETURN    R0 1         ; return 
 
@@ -912,7 +912,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
-  1 [-]: OP_LOADBOOL R0 0 0       ; R0 := false
+  1 [-]: LOADBOOL  R0 0 0       ; R0 := false
   2 [-]: RETURN    R0 2         ; return R0
   3 [-]: RETURN    R0 1         ; return 
 
@@ -997,8 +997,8 @@
  29 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  30 [-]: EQ        1 R1 R2      ; if R1 == R2 then PC := 33
  31 [-]: JMP       33           ; PC := 33
- 32 [-]: OP_LOADBOOL R1 0 1       ; R1 := false; PC := 33
- 33 [-]: OP_LOADBOOL R1 1 0       ; R1 := true
+ 32 [-]: LOADBOOL  R1 0 1       ; R1 := false; PC := 33
+ 33 [-]: LOADBOOL  R1 1 0       ; R1 := true
  34 [-]: GETGLOBAL R2 K8        ; R2 := 0x0032441c
  35 [-]: GETTABLE  R2 R2 K9     ; R2 := R2["StalkerMode"]
  36 [-]: TEST      R2 1         ; if R2 then PC := 40
@@ -1009,16 +1009,16 @@
  41 [-]: GETTABLE  R3 R3 K12    ; R3 := R3["ResourceDroneVisible"]
  42 [-]: EQ        1 R3 K13     ; if R3 == true then PC := 45
  43 [-]: JMP       45           ; PC := 45
- 44 [-]: OP_LOADBOOL R3 0 1       ; R3 := false; PC := 45
- 45 [-]: OP_LOADBOOL R3 1 0       ; R3 := true
+ 44 [-]: LOADBOOL  R3 0 1       ; R3 := false; PC := 45
+ 45 [-]: LOADBOOL  R3 1 0       ; R3 := true
  46 [-]: TESTSET   R4 R1 0      ; if not R1 then PC := 54 else R4 := R1
  47 [-]: JMP       54           ; PC := 54
  48 [-]: TEST      R2 1         ; if R2 then PC := 52
  49 [-]: JMP       52           ; PC := 52
  50 [-]: NOT       R4 R3        ; R4 := not R3
  51 [-]: JMP       54           ; PC := 54
- 52 [-]: OP_LOADBOOL R4 0 1       ; R4 := false; PC := 53
- 53 [-]: OP_LOADBOOL R4 1 0       ; R4 := true
+ 52 [-]: LOADBOOL  R4 0 1       ; R4 := false; PC := 53
+ 53 [-]: LOADBOOL  R4 1 0       ; R4 := true
  54 [-]: GETUPVAL  R5 U1        ; R5 := U1
  55 [-]: EQ        1 R5 R4      ; if R5 == R4 then PC := 68
  56 [-]: JMP       68           ; PC := 68
@@ -1235,7 +1235,7 @@
   6 [-]: GETUPVAL  R1 U1        ; R1 := U1
   7 [-]: GETTABLE  R1 R1 K3     ; R82 := R1[0x5d10207d]
   8 [-]: LOADK     R2 10        ; R2 := 10.000000
-  9 [-]: OP_LOADBOOL R3 1 0       ; R3 := true
+  9 [-]: LOADBOOL  R3 1 0       ; R3 := true
  10 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
  11 [-]: GETGLOBAL R2 K5        ; R2 := 0xae91e43b
  12 [-]: SELF      R2 R2 K6     ; R3 := R2; R2 := R2[0x67bc869f]
@@ -1272,7 +1272,7 @@
   1 [-]: GETUPVAL  R1 U0        ; R1 := U0
   2 [-]: GETTABLE  R1 R1 K0     ; R82 := R1[0x5d10207d]
   3 [-]: LOADK     R2 9         ; R2 := 9.000000
-  4 [-]: OP_LOADBOOL R3 1 0       ; R3 := true
+  4 [-]: LOADBOOL  R3 1 0       ; R3 := true
   5 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
   6 [-]: GETGLOBAL R2 K2        ; R2 := 0xae91e43b
   7 [-]: SELF      R2 R2 K3     ; R3 := R2; R2 := R2[0x67bc869f]
@@ -1335,7 +1335,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
-  1 [-]: OP_LOADBOOL R0 1 0       ; R0 := true
+  1 [-]: LOADBOOL  R0 1 0       ; R0 := true
   2 [-]: RETURN    R0 2         ; return R0
   3 [-]: RETURN    R0 1         ; return 
 

@@ -246,8 +246,8 @@
 207 [-]: MOVE      R34 R19      ; R34 := R19
 208 [-]: CALL      R30 5 1      ; R30(R31,R32,R33,R34)
 209 [-]: FORLOOP   R25 188      ; R25 += R27; if R25 <= R26 then begin PC := 188; R28 := R25 end
-210 [-]: OP_LOADBOOL R30 0 0      ; R30 := false
-211 [-]: OP_LOADBOOL R31 0 0      ; R31 := false
+210 [-]: LOADBOOL  R30 0 0      ; R30 := false
+211 [-]: LOADBOOL  R31 0 0      ; R31 := false
 212 [-]: NEWTABLE  R32 0 0      ; R32 := {}
 213 [-]: SELF      R33 R2 K41   ; R34 := R2; R33 := R2[0x986d2ab8]
 214 [-]: GETUPVAL  R35 U2       ; R35 := U2
@@ -279,7 +279,7 @@
 240 [-]: JMP       244          ; PC := 244
 241 [-]: TEST      R30 1        ; if R30 then PC := 244
 242 [-]: JMP       244          ; PC := 244
-243 [-]: OP_LOADBOOL R30 1 0      ; R30 := true
+243 [-]: LOADBOOL  R30 1 0      ; R30 := true
 244 [-]: TEST      R30 0        ; if not R30 then PC := 305
 245 [-]: JMP       305          ; PC := 305
 246 [-]: TEST      R31 1        ; if R31 then PC := 305
@@ -303,7 +303,7 @@
 264 [-]: CALL      R40 2 2      ; R40 := R40(R41)
 265 [-]: TEST      R40 1        ; if R40 then PC := 304
 266 [-]: JMP       304          ; PC := 304
-267 [-]: OP_LOADBOOL R31 1 0      ; R31 := true
+267 [-]: LOADBOOL  R31 1 0      ; R31 := true
 268 [-]: LOADNIL   R2 R2        ; R2 := nil
 269 [-]: SELF      R40 R39 K41  ; R41 := R39; R40 := R39[0x986d2ab8]
 270 [-]: GETUPVAL  R42 U2       ; R42 := U2
