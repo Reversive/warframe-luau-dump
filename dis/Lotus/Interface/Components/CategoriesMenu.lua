@@ -126,7 +126,7 @@
  90 [-]: CLOSURE   R5 14        ; R5 := closure(Function #1.15)
  91 [-]: SETTABLE  R4 K57 R5    ; R4["OnGamepadTransition"] := R5
  92 [-]: CLOSURE   R5 15        ; R5 := closure(Function #1.16)
- 93 [-]: SETTABLE  R4 K58 R5    ; R4[0x06d055f9] := R5
+ 93 [-]: SETTABLE  R4 K58 R5    ; R4["GetParentEnv"] := R5
  94 [-]: CLOSURE   R5 16        ; R5 := closure(Function #1.17)
  95 [-]: SETTABLE  R4 K59 R5    ; R4["HookUpCallbacks"] := R5
  96 [-]: SELF      R5 R4 K60    ; R6 := R4; R5 := R4[0xe91c55ec]

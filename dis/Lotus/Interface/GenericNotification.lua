@@ -1629,7 +1629,7 @@
  34 [-]: GETGLOBAL R3 K5        ; R3 := _T
  35 [-]: GETTABLE  R3 R3 K8     ; R3 := R3["NotificationTransmissionThrottle"]
  36 [-]: SUB       R3 R3 R0     ; R3 := R3 - R0
- 37 [-]: SETTABLE  R2 K8 R3     ; R2["NotificationTransmissionThrottle"] := R3
+ 37 [-]: SETTABLE  R2 K8 R3     ; R2[0x20b98db3] := R3
  38 [-]: GETUPVAL  R2 U0        ; R2 := U0
  39 [-]: LT        0 K7 R2      ; if 0.000000 >= R2 then PC := 53
  40 [-]: JMP       53           ; PC := 53

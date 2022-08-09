@@ -2206,7 +2206,7 @@
   6 [-]: JMP       8            ; PC := 8
   7 [-]: LOADBOOL  R2 0 1       ; R2 := false; PC := 8
   8 [-]: LOADBOOL  R2 1 0       ; R2 := true
-  9 [-]: SETTABLE  R0 K1 R1     ; R0[0xe261aa96] := R1
+  9 [-]: SETTABLE  R0 K1 R1     ; R0["mLabel"] := R1
  10 [-]: GETTABLE  R3 R0 K2     ; R3 := R0["mLocalizeText"]
  11 [-]: TEST      R3 0         ; if not R3 then PC := 19
  12 [-]: JMP       19           ; PC := 19

@@ -2529,7 +2529,7 @@
   3 [-]: CALL      R8 2 2       ; R8 := R8(R9)
   4 [-]: TEST      R8 0         ; if not R8 then PC := 17
   5 [-]: JMP       17           ; PC := 17
-  6 [-]: SETTABLE  R0 K1 R7     ; R0[0x0d2e7996] := R7
+  6 [-]: SETTABLE  R0 K1 R7     ; R0["mComponentOperationCallback"] := R7
   7 [-]: GETTABLE  R8 R0 K2     ; R8 := R0["mJsonProcLevelHelper"]
   8 [-]: SELF      R8 R8 K3     ; R9 := R8; R8 := R8[0xc31121b8]
   9 [-]: MOVE      R10 R1       ; R10 := R1

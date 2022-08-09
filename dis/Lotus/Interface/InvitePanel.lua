@@ -404,14 +404,14 @@
  53 [-]: LOADK     R2 4         ; R2 := 4.000000
  54 [-]: LOADBOOL  R3 1 0       ; R3 := true
  55 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
- 56 [-]: SETTABLE  R0 K10 R1    ; R0["Background3"] := R1
+ 56 [-]: SETTABLE  R0 K10 R1    ; R0[0xae91e43b] := R1
  57 [-]: GETUPVAL  R0 U0        ; R0 := U0
  58 [-]: GETUPVAL  R1 U1        ; R1 := U1
  59 [-]: GETTABLE  R1 R1 K1     ; R82 := R1[0x5d10207d]
  60 [-]: LOADK     R2 1         ; R2 := 1.000000
  61 [-]: LOADBOOL  R3 1 0       ; R3 := true
  62 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
- 63 [-]: SETTABLE  R0 K11 R1    ; R0["BackerHighlight"] := R1
+ 63 [-]: SETTABLE  R0 K11 R1    ; R0[0x67bc869f] := R1
  64 [-]: GETUPVAL  R0 U0        ; R0 := U0
  65 [-]: GETUPVAL  R1 U1        ; R1 := U1
  66 [-]: GETTABLE  R1 R1 K1     ; R82 := R1[0x5d10207d]
@@ -581,7 +581,7 @@
 141 [-]: GETUPVAL  R0 U7        ; R0 := U7
 142 [-]: GETUPVAL  R0 U2        ; R0 := U2
 143 [-]: GETUPVAL  R0 U3        ; R0 := U3
-144 [-]: SETTABLE  R1 K60 R2    ; R1[0x00000086] := R2
+144 [-]: SETTABLE  R1 K60 R2    ; R1["mOnSelectedCallback"] := R2
 145 [-]: GETUPVAL  R1 U0        ; R1 := U0
 146 [-]: GETUPVAL  R2 U0        ; R2 := U0
 147 [-]: GETTABLE  R2 R2 K62    ; R2 := R2["OnDraw"]
@@ -2323,7 +2323,7 @@
 180 [-]: GETUPVAL  R4 U11       ; R4 := U11
 181 [-]: GETUPVAL  R5 U11       ; R5 := U11
 182 [-]: GETTABLE  R5 R5 K63    ; R5 := R5["OnGamepadTransition"]
-183 [-]: SETTABLE  R4 K62 R5    ; R4[0x7b998233] := R5
+183 [-]: SETTABLE  R4 K62 R5    ; R4["BaseOnGamepadTransition"] := R5
 184 [-]: GETUPVAL  R4 U11       ; R4 := U11
 185 [-]: CLOSURE   R5 2         ; R5 := closure(Function #20.3)
 186 [-]: GETUPVAL  R0 U11       ; R0 := U11

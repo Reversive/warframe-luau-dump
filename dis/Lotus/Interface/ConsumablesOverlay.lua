@@ -993,7 +993,7 @@
  17 [-]: SETTABLE  R2 K4 R3     ; R2["GetItemSorting"] := R3
  18 [-]: GETGLOBAL R2 K2        ; R2 := _T
  19 [-]: CLOSURE   R3 2         ; R3 := closure(Function #13.3)
- 20 [-]: SETTABLE  R2 K5 R3     ; R2[0x7b998233] := R3
+ 20 [-]: SETTABLE  R2 K5 R3     ; R2["GetItemCategories"] := R3
  21 [-]: GETGLOBAL R2 K2        ; R2 := _T
  22 [-]: CLOSURE   R3 3         ; R3 := closure(Function #13.4)
  23 [-]: GETUPVAL  R0 U3        ; R0 := U3
@@ -1003,7 +1003,7 @@
  27 [-]: GETUPVAL  R0 U6        ; R0 := U6
  28 [-]: GETUPVAL  R0 U7        ; R0 := U7
  29 [-]: MOVE      R0 R0        ; R0 := R0
- 30 [-]: SETTABLE  R2 K6 R3     ; R2[0xdf42446e] := R3
+ 30 [-]: SETTABLE  R2 K6 R3     ; R2["BrowseItemsDone"] := R3
  31 [-]: LOADBOOL  R2 1 0       ; R2 := true
  32 [-]: TEST      R2 0         ; if not R2 then PC := 58
  33 [-]: JMP       58           ; PC := 58
@@ -1015,16 +1015,16 @@
  39 [-]: GETGLOBAL R4 K2        ; R4 := _T
  40 [-]: GETTABLE  R4 R4 K10    ; R82 := R4[0x02bac03b]
  41 [-]: CALL      R4 1 2       ; R4 := R4()
- 42 [-]: SETTABLE  R3 K9 R4     ; R3[0x7b998233] := R4
+ 42 [-]: SETTABLE  R3 K9 R4     ; R3["OwnedItems"] := R4
  43 [-]: GETTABLE  R4 R0 K12    ; R4 := R0["mItem"]
- 44 [-]: SETTABLE  R3 K11 R4    ; R3[0x03f57322] := R4
+ 44 [-]: SETTABLE  R3 K11 R4    ; R3["Type"] := R4
  45 [-]: TEST      R1 0         ; if not R1 then PC := 50
  46 [-]: JMP       50           ; PC := 50
  47 [-]: LOADK     R4 2         ; R4 := 2.000000
  48 [-]: TEST      R4 1         ; if R4 then PC := 51
  49 [-]: JMP       51           ; PC := 51
  50 [-]: LOADNIL   R4 R4        ; R4 := nil
- 51 [-]: SETTABLE  R3 K13 R4    ; R3[0x7b998233] := R4
+ 51 [-]: SETTABLE  R3 K13 R4    ; R3["StoreItemId"] := R4
  52 [-]: GETGLOBAL R4 K2        ; R4 := _T
  53 [-]: GETTABLE  R4 R4 K15    ; R82 := R4[0x9f0c1db4]
  54 [-]: MOVE      R5 R3        ; R5 := R3
@@ -2203,7 +2203,7 @@
  55 [-]: GETUPVAL  R1 U0        ; R1 := U0
  56 [-]: CLOSURE   R2 4         ; R2 := closure(Function #18.5)
  57 [-]: GETUPVAL  R0 U4        ; R0 := U4
- 58 [-]: SETTABLE  R1 K27 R2    ; R1[0x7b998233] := R2
+ 58 [-]: SETTABLE  R1 K27 R2    ; R1["mOnSelectedCallback"] := R2
  59 [-]: GETUPVAL  R1 U0        ; R1 := U0
  60 [-]: CLOSURE   R2 5         ; R2 := closure(Function #18.6)
  61 [-]: SETTABLE  R1 K28 R2    ; R1["CalculateX"] := R2
@@ -2212,11 +2212,11 @@
  64 [-]: SETTABLE  R1 K29 R2    ; R1["CalculateY"] := R2
  65 [-]: GETUPVAL  R1 U0        ; R1 := U0
  66 [-]: CLOSURE   R2 7         ; R2 := closure(Function #18.8)
- 67 [-]: SETTABLE  R1 K30 R2    ; R1[0x659d451f] := R2
+ 67 [-]: SETTABLE  R1 K30 R2    ; R1["SetupPreInterpolationValues"] := R2
  68 [-]: GETUPVAL  R1 U0        ; R1 := U0
  69 [-]: GETUPVAL  R2 U0        ; R2 := U0
  70 [-]: GETTABLE  R2 R2 K32    ; R2 := R2["DefaultAlphaInterpolation"]
- 71 [-]: SETTABLE  R1 K31 R2    ; R1[0x0032441c] := R2
+ 71 [-]: SETTABLE  R1 K31 R2    ; R1["GetInterpolationProperties"] := R2
  72 [-]: GETUPVAL  R1 U0        ; R1 := U0
  73 [-]: GETGLOBAL R2 K34       ; R2 := 0x809832f8
  74 [-]: SETTABLE  R1 K33 R2    ; R1["mIconMaterialOverride"] := R2
@@ -5800,7 +5800,7 @@
  24 [-]: JMP       28           ; PC := 28
  25 [-]: SELF      R2 R0 K4     ; R3 := R0; R2 := R0[0xc704a9b7]
  26 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 27 [-]: SETTABLE  R0 K3 R2     ; R0[0xae91e43b] := R2
+ 27 [-]: SETTABLE  R0 K3 R2     ; R0[0x89326c93] := R2
  28 [-]: RETURN    R1 2         ; return R1
  29 [-]: RETURN    R0 1         ; return 
 

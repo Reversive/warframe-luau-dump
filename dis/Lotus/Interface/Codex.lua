@@ -2810,7 +2810,7 @@
  28 [-]: NEWTABLE  R4 0 1       ; R4 := {}
  29 [-]: SELF      R5 R0 K5     ; R6 := R0; R5 := R0[0x9ed94a63]
  30 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 31 [-]: SETTABLE  R4 K11 R5    ; R4[0xae91e43b] := R5
+ 31 [-]: SETTABLE  R4 K11 R5    ; R4["RANK"] := R5
  32 [-]: CALL      R2 3 0       ; R2,... := R2(R3,R4)
  33 [-]: CALL      R1 0 1       ; R1(R2,...)
  34 [-]: JMP       206          ; PC := 206
@@ -3459,7 +3459,7 @@
 204 [-]: MOVE      R22 R17      ; R22 := R17
 205 [-]: CALL      R20 3 1      ; R20(R21,R22)
 206 [-]: GETUPVAL  R20 U4       ; R20 := U4
-207 [-]: SETTABLE  R20 K58 R18  ; R20["mHeight"] := R18
+207 [-]: SETTABLE  R20 K58 R18  ; R20[0x0000004e] := R18
 208 [-]: GETUPVAL  R20 U4       ; R20 := U4
 209 [-]: CLOSURE   R21 0        ; R21 := closure(Function #30.1)
 210 [-]: GETUPVAL  R0 U4        ; R0 := U4
@@ -12972,7 +12972,7 @@
  10 [-]: MOVE      R10 R7       ; R10 := R7
  11 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
  12 [-]: GETTABLE  R9 R8 K2     ; R9 := R8["mClipName"]
- 13 [-]: SETTABLE  R8 K3 R1     ; R8[0x32b02cab] := R1
+ 13 [-]: SETTABLE  R8 K3 R1     ; R8["NewX"] := R1
  14 [-]: GETGLOBAL R10 K5       ; R10 := 0xae91e43b
  15 [-]: SELF      R10 R10 K6   ; R11 := R10; R10 := R10[0x91a24e4b]
  16 [-]: MOVE      R12 R9       ; R12 := R9

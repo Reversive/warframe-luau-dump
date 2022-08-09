@@ -95,9 +95,9 @@
  67 [-]: CLOSURE   R9 9         ; R9 := closure(Function #1.10)
  68 [-]: SETTABLE  R8 K64 R9    ; R8["IsActive"] := R9
  69 [-]: CLOSURE   R9 10        ; R9 := closure(Function #1.11)
- 70 [-]: SETTABLE  R8 K65 R9    ; R8["SetActive"] := R9
+ 70 [-]: SETTABLE  R8 K65 R9    ; R8[0x00000001] := R9
  71 [-]: CLOSURE   R9 11        ; R9 := closure(Function #1.12)
- 72 [-]: SETTABLE  R8 K66 R9    ; R8["SetDefaultColors"] := R9
+ 72 [-]: SETTABLE  R8 K66 R9    ; R8[0x00000001] := R9
  73 [-]: CLOSURE   R9 12        ; R9 := closure(Function #1.13)
  74 [-]: SETTABLE  R8 K67 R9    ; R8["RollOver"] := R9
  75 [-]: CLOSURE   R9 13        ; R9 := closure(Function #1.14)
@@ -885,7 +885,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  10
 
-  1 [-]: SETTABLE  R0 K0 R1     ; R0[0xd8140b94] := R1
+  1 [-]: SETTABLE  R0 K0 R1     ; R0["mIsActive"] := R1
   2 [-]: GETTABLE  R2 R0 K1     ; R2 := R0["mMovie"]
   3 [-]: SELF      R2 R2 K2     ; R3 := R2; R2 := R2[0x67bc869f]
   4 [-]: GETTABLE  R4 R0 K3     ; R4 := R0["mClipName"]

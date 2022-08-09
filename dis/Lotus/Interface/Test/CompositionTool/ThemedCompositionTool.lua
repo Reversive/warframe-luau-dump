@@ -3818,7 +3818,7 @@
  82 [-]: SETTABLE  R22 K18 R15  ; R22["PremiumPrice"] := R15
  83 [-]: GETUPVAL  R23 U2       ; R23 := U2
  84 [-]: SETTABLE  R22 K19 R23  ; R22["NoteType"] := R23
- 85 [-]: SETTABLE  R22 K20 R17  ; R22["Locked"] := R17
+ 85 [-]: SETTABLE  R22 K20 R17  ; R22[0x00000000] := R17
  86 [-]: SETTABLE  R22 K21 K22  ; R22["LockedTag"] := "/Lotus/Language/Menu/ShipSelection_ShipSelected"
  87 [-]: GETGLOBAL R23 K7       ; R23 := 0x33bdd652
  88 [-]: GETTABLE  R23 R23 K8   ; R82 := R23[0x23d5322f]
@@ -4176,7 +4176,7 @@
  11 [-]: GETUPVAL  R1 U0        ; R1 := U0
  12 [-]: SETTABLE  R1 K4 R0     ; R1[1.000000] := R0
  13 [-]: GETUPVAL  R1 U0        ; R1 := U0
- 14 [-]: SETTABLE  R1 K5 R0     ; R1[2.000000] := R0
+ 14 [-]: SETTABLE  R1 K5 R0     ; R1[0x8a8eba7f] := R0
  15 [-]: RETURN    R0 1         ; return 
 
 

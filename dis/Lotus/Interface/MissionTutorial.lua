@@ -485,7 +485,7 @@
  51 [-]: JMP       53           ; PC := 53
  52 [-]: LOADBOOL  R8 0 1       ; R8 := false; PC := 53
  53 [-]: LOADBOOL  R8 1 0       ; R8 := true
- 54 [-]: SETTABLE  R7 K16 R8    ; R7["ShowConnector"] := R8
+ 54 [-]: SETTABLE  R7 K16 R8    ; R7[0x87fa802b] := R8
  55 [-]: LOADBOOL  R8 1 0       ; R8 := true
  56 [-]: CALL      R5 4 1       ; R5(R6,R7,R8)
  57 [-]: FORLOOP   R1 43        ; R1 += R3; if R1 <= R2 then begin PC := 43; R4 := R1 end

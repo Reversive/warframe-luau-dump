@@ -2444,7 +2444,7 @@
 111 [-]: SETTABLE  R6 K6 R7     ; R6["Job"] := R7
 112 [-]: GETUPVAL  R6 U0        ; R6 := U0
 113 [-]: GETTABLE  R7 R0 K9     ; R7 := R0["challengeMissionId"]
-114 [-]: SETTABLE  R6 K8 R7     ; R6["ChallengeMissionId"] := R7
+114 [-]: SETTABLE  R6 K8 R7     ; R6[0xbe190284] := R7
 115 [-]: GETUPVAL  R6 U0        ; R6 := U0
 116 [-]: GETTABLE  R6 R6 K4     ; R6 := R6["Info"]
 117 [-]: GETUPVAL  R7 U0        ; R7 := U0
@@ -6202,13 +6202,13 @@
 244 [-]: SETTABLE  R14 K20 R15  ; R14["playerName"] := R15
 245 [-]: SETTABLE  R14 K52 K34  ; R14["inviteLoadOutInfo"] := nil
 246 [-]: GETTABLE  R15 R4 K35   ; R15 := R4["name"]
-247 [-]: SETTABLE  R14 K53 R15  ; R14[0x00000051] := R15
+247 [-]: SETTABLE  R14 K53 R15  ; R14["hubName"] := R15
 248 [-]: GETGLOBAL R15 K23      ; R15 := mGameInviteInfo
 249 [-]: GETTABLE  R15 R15 K54  ; R15 := R15["accountId"]
 250 [-]: SETTABLE  R14 K54 R15  ; R14["accountId"] := R15
 251 [-]: GETGLOBAL R15 K23      ; R15 := mGameInviteInfo
 252 [-]: GETTABLE  R15 R15 K13  ; R15 := R15["bindingServerId"]
-253 [-]: SETTABLE  R14 K13 R15  ; R14["bindingServerId"] := R15
+253 [-]: SETTABLE  R14 K13 R15  ; R14[0x00000099] := R15
 254 [-]: GETGLOBAL R15 K23      ; R15 := mGameInviteInfo
 255 [-]: GETTABLE  R15 R15 K26  ; R15 := R15["squadMission"]
 256 [-]: SETTABLE  R14 K26 R15  ; R14["squadMission"] := R15
@@ -13699,7 +13699,7 @@
 139 [-]: SELF      R17 R17 K36  ; R18 := R17; R17 := R17[0x776913bc]
 140 [-]: CALL      R17 2 0      ; R17,... := R17(R18)
 141 [-]: CALL      R16 0 2      ; R16 := R16(R17,...)
-142 [-]: SETTABLE  R15 K34 R16  ; R15["scenarioLocation"] := R16
+142 [-]: SETTABLE  R15 K34 R16  ; R15[0x0000009a] := R16
 143 [-]: GETGLOBAL R16 K1       ; R16 := 0xe7f2b02f
 144 [-]: SELF      R16 R16 K38  ; R17 := R16; R16 := R16[0xb6b65f09]
 145 [-]: CALL      R16 2 2      ; R16 := R16(R17)
@@ -14282,7 +14282,7 @@
  23 [-]: NEWTABLE  R4 0 2       ; R4 := {}
  24 [-]: SETTABLE  R4 K10 R0    ; R4["teleportNeeded"] := R0
  25 [-]: SETTABLE  R4 K5 R1     ; R4["name"] := R1
- 26 [-]: SETTABLE  R3 K9 R4     ; R3[0x74a6df5d] := R4
+ 26 [-]: SETTABLE  R3 K9 R4     ; R3["RailjackAutoLaunchPending"] := R4
  27 [-]: RETURN    R0 1         ; return 
 
 

@@ -685,7 +685,7 @@
 150 [-]: LOADK     R15 K41      ; R15 := "/Lotus/Language/Menu/VoidTraderLeavingCountdown"
 151 [-]: LOADBOOL  R16 0 0      ; R16 := false
 152 [-]: NEWTABLE  R17 0 1      ; R17 := {}
-153 [-]: SETTABLE  R17 K42 R12  ; R17["TIME"] := R12
+153 [-]: SETTABLE  R17 K42 R12  ; R17[0xdcbeb3e3] := R12
 154 [-]: CALL      R13 5 2      ; R13 := R13(R14,R15,R16,R17)
 155 [-]: MOVE      R4 R13       ; R4 := R13
 156 [-]: JMP       255          ; PC := 255
@@ -752,7 +752,7 @@
 217 [-]: LOADK     R17 K51      ; R17 := "/Lotus/Language/Menu/VoidTraderArrivalCountdown"
 218 [-]: LOADBOOL  R18 0 0      ; R18 := false
 219 [-]: NEWTABLE  R19 0 1      ; R19 := {}
-220 [-]: SETTABLE  R19 K42 R14  ; R19["TIME"] := R14
+220 [-]: SETTABLE  R19 K42 R14  ; R19[0xdcbeb3e3] := R14
 221 [-]: CALL      R15 5 2      ; R15 := R15(R16,R17,R18,R19)
 222 [-]: MOVE      R4 R15       ; R4 := R15
 223 [-]: JMP       253          ; PC := 253
@@ -781,7 +781,7 @@
 246 [-]: LOADK     R18 K52      ; R18 := "/Lotus/Language/Menu/VoidTraderArrivalCountdownWithLocation"
 247 [-]: LOADBOOL  R19 0 0      ; R19 := false
 248 [-]: NEWTABLE  R20 0 2      ; R20 := {}
-249 [-]: SETTABLE  R20 K42 R14  ; R20["TIME"] := R14
+249 [-]: SETTABLE  R20 K42 R14  ; R20[0xdcbeb3e3] := R14
 250 [-]: SETTABLE  R20 K50 R11  ; R20["LOCATION"] := R11
 251 [-]: CALL      R16 5 2      ; R16 := R16(R17,R18,R19,R20)
 252 [-]: MOVE      R4 R16       ; R4 := R16
@@ -3450,7 +3450,7 @@
  37 [-]: GETUPVAL  R0 U4        ; R0 := U4
  38 [-]: GETUPVAL  R0 U5        ; R0 := U5
  39 [-]: GETUPVAL  R0 U6        ; R0 := U6
- 40 [-]: SETTABLE  R13 K14 R14  ; R13[0xf4e253b6] := R14
+ 40 [-]: SETTABLE  R13 K14 R14  ; R13["mCallback"] := R14
  41 [-]: CALL      R11 3 1      ; R11(R12,R13)
  42 [-]: JMP       252          ; PC := 252
  43 [-]: TEST      R5 1         ; if R5 then PC := 57
@@ -3465,7 +3465,7 @@
  52 [-]: NEWTABLE  R13 0 2      ; R13 := {}
  53 [-]: SETTABLE  R13 K12 K16  ; R13["mName"] := "/Lotus/Language/G1Quests/DragonQuestTitleSimaris"
  54 [-]: GETUPVAL  R14 U7       ; R14 := U7
- 55 [-]: SETTABLE  R13 K14 R14  ; R13[0xf4e253b6] := R14
+ 55 [-]: SETTABLE  R13 K14 R14  ; R13["mCallback"] := R14
  56 [-]: CALL      R11 3 1      ; R11(R12,R13)
  57 [-]: TEST      R5 0         ; if not R5 then PC := 90
  58 [-]: JMP       90           ; PC := 90
@@ -3487,7 +3487,7 @@
  74 [-]: NEWTABLE  R14 0 2      ; R14 := {}
  75 [-]: SETTABLE  R14 K12 K22  ; R14["mName"] := "/Lotus/Language/G1Quests/DragonQuestSimarisTask"
  76 [-]: GETUPVAL  R15 U8       ; R15 := U8
- 77 [-]: SETTABLE  R14 K14 R15  ; R14[0xf4e253b6] := R15
+ 77 [-]: SETTABLE  R14 K14 R15  ; R14["mCallback"] := R15
  78 [-]: CALL      R12 3 1      ; R12(R13,R14)
  79 [-]: JMP       90           ; PC := 90
  80 [-]: EQ        0 R11 K23    ; if R11 ~= 3.000000 then PC := 90
@@ -3498,7 +3498,7 @@
  85 [-]: NEWTABLE  R14 0 2      ; R14 := {}
  86 [-]: SETTABLE  R14 K12 K24  ; R14["mName"] := "/Lotus/Language/G1Quests/DragonQuestSimarisTaskComplete"
  87 [-]: GETUPVAL  R15 U9       ; R15 := U9
- 88 [-]: SETTABLE  R14 K14 R15  ; R14[0xf4e253b6] := R15
+ 88 [-]: SETTABLE  R14 K14 R15  ; R14["mCallback"] := R15
  89 [-]: CALL      R12 3 1      ; R12(R13,R14)
  90 [-]: SELF      R12 R2 K25   ; R13 := R2; R12 := R2[0x55e93a91]
  91 [-]: CALL      R12 2 2      ; R12 := R12(R13)
@@ -3537,7 +3537,7 @@
 124 [-]: GETUPVAL  R0 U3        ; R0 := U3
 125 [-]: GETUPVAL  R0 U6        ; R0 := U6
 126 [-]: MOVE      R0 R2        ; R0 := R2
-127 [-]: SETTABLE  R20 K14 R21  ; R20[0xf4e253b6] := R21
+127 [-]: SETTABLE  R20 K14 R21  ; R20["mCallback"] := R21
 128 [-]: CALL      R18 3 1      ; R18(R19,R20)
 129 [-]: JMP       173          ; PC := 173
 130 [-]: TEST      R14 0        ; if not R14 then PC := 153
@@ -3549,7 +3549,7 @@
 136 [-]: SETTABLE  R20 K12 K31  ; R20["mName"] := "/Lotus/Language/G1Quests/AbandonDailySimarisTask"
 137 [-]: CLOSURE   R21 2        ; R21 := closure(Function #39.3)
 138 [-]: GETUPVAL  R0 U10       ; R0 := U10
-139 [-]: SETTABLE  R20 K14 R21  ; R20[0xf4e253b6] := R21
+139 [-]: SETTABLE  R20 K14 R21  ; R20["mCallback"] := R21
 140 [-]: CALL      R18 3 1      ; R18(R19,R20)
 141 [-]: GETGLOBAL R18 K10      ; R18 := 0x33bdd652
 142 [-]: GETTABLE  R18 R18 K11  ; R82 := R18[0x23d5322f]
@@ -3560,7 +3560,7 @@
 147 [-]: GETUPVAL  R0 U3        ; R0 := U3
 148 [-]: GETUPVAL  R0 U4        ; R0 := U4
 149 [-]: GETUPVAL  R0 U6        ; R0 := U6
-150 [-]: SETTABLE  R20 K14 R21  ; R20[0xf4e253b6] := R21
+150 [-]: SETTABLE  R20 K14 R21  ; R20["mCallback"] := R21
 151 [-]: CALL      R18 3 1      ; R18(R19,R20)
 152 [-]: JMP       173          ; PC := 173
 153 [-]: TEST      R13 0        ; if not R13 then PC := 169
@@ -3576,7 +3576,7 @@
 163 [-]: MOVE      R0 R2        ; R0 := R2
 164 [-]: GETUPVAL  R0 U10       ; R0 := U10
 165 [-]: GETUPVAL  R0 U6        ; R0 := U6
-166 [-]: SETTABLE  R20 K14 R21  ; R20[0xf4e253b6] := R21
+166 [-]: SETTABLE  R20 K14 R21  ; R20["mCallback"] := R21
 167 [-]: CALL      R18 3 1      ; R18(R19,R20)
 168 [-]: JMP       173          ; PC := 173
 169 [-]: GETUPVAL  R18 U3       ; R18 := U3
@@ -3606,7 +3606,7 @@
 193 [-]: NEWTABLE  R20 0 2      ; R20 := {}
 194 [-]: SETTABLE  R20 K12 K38  ; R20["mName"] := "/Lotus/Language/Game/PlayerDialog_SynthesisStatus"
 195 [-]: GETUPVAL  R21 U12      ; R21 := U12
-196 [-]: SETTABLE  R20 K14 R21  ; R20[0xf4e253b6] := R21
+196 [-]: SETTABLE  R20 K14 R21  ; R20["mCallback"] := R21
 197 [-]: CALL      R18 3 1      ; R18(R19,R20)
 198 [-]: TEST      R10 0        ; if not R10 then PC := 210
 199 [-]: JMP       210          ; PC := 210
@@ -3618,7 +3618,7 @@
 205 [-]: CLOSURE   R21 5        ; R21 := closure(Function #39.6)
 206 [-]: GETUPVAL  R0 U13       ; R0 := U13
 207 [-]: GETUPVAL  R0 U6        ; R0 := U6
-208 [-]: SETTABLE  R20 K14 R21  ; R20[0xf4e253b6] := R21
+208 [-]: SETTABLE  R20 K14 R21  ; R20["mCallback"] := R21
 209 [-]: CALL      R18 3 1      ; R18(R19,R20)
 210 [-]: GETUPVAL  R18 U14      ; R18 := U14
 211 [-]: GETTABLE  R18 R18 K40  ; R82 := R18[0x52fb05b3]
@@ -3639,7 +3639,7 @@
 226 [-]: GETUPVAL  R0 U4        ; R0 := U4
 227 [-]: GETUPVAL  R0 U6        ; R0 := U6
 228 [-]: GETUPVAL  R0 U15       ; R0 := U15
-229 [-]: SETTABLE  R20 K14 R21  ; R20[0xf4e253b6] := R21
+229 [-]: SETTABLE  R20 K14 R21  ; R20["mCallback"] := R21
 230 [-]: CALL      R18 3 1      ; R18(R19,R20)
 231 [-]: JMP       242          ; PC := 242
 232 [-]: GETGLOBAL R18 K10      ; R18 := 0x33bdd652
@@ -3650,7 +3650,7 @@
 237 [-]: CLOSURE   R21 7        ; R21 := closure(Function #39.8)
 238 [-]: GETUPVAL  R0 U3        ; R0 := U3
 239 [-]: GETUPVAL  R0 U6        ; R0 := U6
-240 [-]: SETTABLE  R20 K14 R21  ; R20[0xf4e253b6] := R21
+240 [-]: SETTABLE  R20 K14 R21  ; R20["mCallback"] := R21
 241 [-]: CALL      R18 3 1      ; R18(R19,R20)
 242 [-]: GETGLOBAL R18 K10      ; R18 := 0x33bdd652
 243 [-]: GETTABLE  R18 R18 K11  ; R82 := R18[0x23d5322f]
@@ -3660,7 +3660,7 @@
 247 [-]: SETTABLE  R20 K43 K44  ; R20["mShowOptions"] := true
 248 [-]: CLOSURE   R21 8        ; R21 := closure(Function #39.9)
 249 [-]: GETUPVAL  R0 U14       ; R0 := U14
-250 [-]: SETTABLE  R20 K14 R21  ; R20[0xf4e253b6] := R21
+250 [-]: SETTABLE  R20 K14 R21  ; R20["mCallback"] := R21
 251 [-]: CALL      R18 3 1      ; R18(R19,R20)
 252 [-]: SELF      R18 R2 K45   ; R19 := R2; R18 := R2[0xbf6c9575]
 253 [-]: GETGLOBAL R20 K19      ; R20 := 0x0469f296
@@ -3912,13 +3912,13 @@
  22 [-]: GETUPVAL  R0 U3        ; R0 := U3
  23 [-]: GETUPVAL  R0 U0        ; R0 := U0
  24 [-]: GETUPVAL  R0 U4        ; R0 := U4
- 25 [-]: SETTABLE  R3 K7 R4     ; R3[0x80563238] := R4
+ 25 [-]: SETTABLE  R3 K7 R4     ; R3["mCallback"] := R4
  26 [-]: NEWTABLE  R4 0 2       ; R4 := {}
  27 [-]: SETTABLE  R4 K5 K8     ; R4["mName"] := "/Lotus/Language/G1Quests/DeclineDailySimarisTask"
  28 [-]: CLOSURE   R5 1         ; R5 := closure(Function #39.5.2)
  29 [-]: GETUPVAL  R0 U0        ; R0 := U0
  30 [-]: GETUPVAL  R0 U4        ; R0 := U4
- 31 [-]: SETTABLE  R4 K7 R5     ; R4[0x80563238] := R5
+ 31 [-]: SETTABLE  R4 K7 R5     ; R4["mCallback"] := R5
  32 [-]: SETLIST   R2 2 1       ; R2[(1-1)*FPF+i] := R(2+i), 1 <= i <= 2
  33 [-]: CLOSURE   R3 2         ; R3 := closure(Function #39.5.3)
  34 [-]: MOVE      R0 R0        ; R0 := R0
@@ -8153,7 +8153,7 @@
 266 [-]: MOVE      R0 R16       ; R0 := R16
 267 [-]: MOVE      R0 R6        ; R0 := R6
 268 [-]: MOVE      R0 R9        ; R0 := R9
-269 [-]: SETTABLE  R17 K58 R18  ; R17[0x6c97a788] := R18
+269 [-]: SETTABLE  R17 K58 R18  ; R17["mCallback"] := R18
 270 [-]: CLOSE     R16          ; SAVE R16,...
 271 [-]: FORLOOP   R13 261      ; R13 += R15; if R13 <= R14 then begin PC := 261; R16 := R13 end
 272 [-]: GETGLOBAL R16 K59      ; R16 := 0x7b998233
@@ -10577,7 +10577,7 @@
 ; Max Stack Size:  3
 
   1 [-]: GETGLOBAL R2 K0        ; R2 := _T
-  2 [-]: SETTABLE  R2 K1 R0     ; R2["PerrinDataResult"] := R0
+  2 [-]: SETTABLE  R2 K1 R0     ; R2[0x89326c93] := R0
   3 [-]: RETURN    R0 1         ; return 
 
 
@@ -10751,11 +10751,11 @@
  14 [-]: LOADK     R11 K6       ; R11 := "/Lotus/Language/Syndicates/PerrinSequenceName"
  15 [-]: LOADNIL   R12 R12      ; R12 := nil
  16 [-]: CALL      R10 3 2      ; R10 := R10(R11,R12)
- 17 [-]: SETTABLE  R9 K5 R10    ; R9["SYNDICATE"] := R10
+ 17 [-]: SETTABLE  R9 K5 R10    ; R9[0x33307f92] := R10
  18 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
  19 [-]: SETTABLE  R6 K2 R7     ; R6["mName"] := R7
  20 [-]: GETUPVAL  R7 U3        ; R7 := U3
- 21 [-]: SETTABLE  R6 K7 R7     ; R6["mCallback"] := R7
+ 21 [-]: SETTABLE  R6 K7 R7     ; R6[0x603636ad] := R7
  22 [-]: CALL      R4 3 1       ; R4(R5,R6)
  23 [-]: GETGLOBAL R4 K8        ; R4 := 0x7b998233
  24 [-]: GETGLOBAL R5 K9        ; R5 := 0x89326c93
@@ -10776,7 +10776,7 @@
  39 [-]: NEWTABLE  R6 0 2       ; R6 := {}
  40 [-]: SETTABLE  R6 K2 K12    ; R6["mName"] := "/Lotus/Language/SolarisVenus/BrowseMerchandise"
  41 [-]: GETUPVAL  R7 U5        ; R7 := U5
- 42 [-]: SETTABLE  R6 K7 R7     ; R6["mCallback"] := R7
+ 42 [-]: SETTABLE  R6 K7 R7     ; R6[0x603636ad] := R7
  43 [-]: CALL      R4 3 1       ; R4(R5,R6)
  44 [-]: TEST      R2 0         ; if not R2 then PC := 58
  45 [-]: JMP       58           ; PC := 58
@@ -10790,7 +10790,7 @@
  53 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
  54 [-]: SETTABLE  R6 K2 R7     ; R6["mName"] := R7
  55 [-]: GETUPVAL  R7 U6        ; R7 := U6
- 56 [-]: SETTABLE  R6 K7 R7     ; R6["mCallback"] := R7
+ 56 [-]: SETTABLE  R6 K7 R7     ; R6[0x603636ad] := R7
  57 [-]: CALL      R4 3 1       ; R4(R5,R6)
  58 [-]: GETGLOBAL R4 K14       ; R4 := _T
  59 [-]: GETTABLE  R4 R4 K15    ; R4 := R4["TaggedDialog"]
@@ -11141,7 +11141,7 @@
   8 [-]: CALL      R1 1 2       ; R1 := R1()
   9 [-]: GETUPVAL  R2 U1        ; R2 := U1
  10 [-]: GETTABLE  R2 R2 K3     ; R2 := R2["mWisdom"]
- 11 [-]: SETTABLE  R1 K3 R2     ; R1[0x00000007] := R2
+ 11 [-]: SETTABLE  R1 K3 R2     ; R1["mWisdom"] := R2
  12 [-]: GETUPVAL  R2 U2        ; R2 := U2
  13 [-]: GETTABLE  R2 R2 K5     ; R82 := R2[0x06d055f9]
  14 [-]: GETTABLE  R3 R0 K6     ; R3 := R0["mAlignmentType"]
@@ -11478,8 +11478,8 @@
   4 [-]: SETTABLE  R1 K3 K4     ; R1["mName"] := "/Lotus/Language/Syndicates/TeshinHardModeVendor"
   5 [-]: CLOSURE   R2 0         ; R2 := closure(Function #116.1)
   6 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  7 [-]: SETTABLE  R1 K5 R2     ; R1[0x3f3ae64c] := R2
-  8 [-]: SETTABLE  R0 K2 R1     ; R0[0x649bb612] := R1
+  7 [-]: SETTABLE  R1 K5 R2     ; R1["mCallback"] := R2
+  8 [-]: SETTABLE  R0 K2 R1     ; R0["Teshin_Vendor"] := R1
   9 [-]: RETURN    R0 1         ; return 
 
 

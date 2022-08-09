@@ -4661,7 +4661,7 @@
   5 [-]: SETTABLE  R1 K0 R2     ; R1["mDrawnElements"] := R2
   6 [-]: GETUPVAL  R1 U0        ; R1 := U0
   7 [-]: GETTABLE  R1 R1 K0     ; R1 := R1["mDrawnElements"]
-  8 [-]: SETTABLE  R0 K2 R1     ; R0[0xae91e43b] := R1
+  8 [-]: SETTABLE  R0 K2 R1     ; R0["mDrawnIndex"] := R1
   9 [-]: GETGLOBAL R1 K3        ; R1 := 0xae91e43b
  10 [-]: SELF      R1 R1 K4     ; R2 := R1; R1 := R1[0xc0a3774b]
  11 [-]: GETTABLE  R3 R0 K5     ; R3 := R0["mClipName"]
@@ -11488,7 +11488,7 @@
  17 [-]: SETTABLE  R5 K30 K31   ; R5["MESSAGE_TYPE_NOTIFICATION"] := 14.000000
  18 [-]: SETTABLE  R5 K32 K33   ; R5["MESSAGE_TYPE_STAFF"] := 15.000000
  19 [-]: SETTABLE  R5 K34 K35   ; R5["MESSAGE_TYPE_WG_MOD"] := 16.000000
- 20 [-]: SETTABLE  R5 K36 R0    ; R5["mParent"] := R0
+ 20 [-]: SETTABLE  R5 K36 R0    ; R5[0x7b998233] := R0
  21 [-]: SETTABLE  R5 K37 K38   ; R5["mIsActive"] := false
  22 [-]: SETTABLE  R5 K39 R4    ; R5["mIsChatEnabled"] := R4
  23 [-]: GETGLOBAL R6 K41       ; R6 := mWindow
@@ -18490,7 +18490,7 @@
  41 [-]: JMP       43           ; PC := 43
  42 [-]: LOADBOOL  R13 0 1      ; R13 := false; PC := 43
  43 [-]: LOADBOOL  R13 1 0      ; R13 := true
- 44 [-]: SETTABLE  R0 K10 R13   ; R0["mHasHyperlink"] := R13
+ 44 [-]: SETTABLE  R0 K10 R13   ; R0[0x67bc869f] := R13
  45 [-]: EQ        1 R12 K3     ; if R12 == nil then PC := 51
  46 [-]: JMP       51           ; PC := 51
  47 [-]: EQ        1 R12 K1     ; if R12 == "" then PC := 51
@@ -18966,7 +18966,7 @@
   4 [-]: GETTABLE  R1 R1 K5     ; R1 := R1["mListControl"]
   5 [-]: SELF      R1 R1 K6     ; R2 := R1; R1 := R1[0xc704a9b7]
   6 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  7 [-]: SETTABLE  R0 K2 R1     ; R0["mStoredFocusIndex"] := R1
+  7 [-]: SETTABLE  R0 K2 R1     ; R0[0xfe7704c3] := R1
   8 [-]: GETGLOBAL R1 K7        ; R1 := 0x7b998233
   9 [-]: GETTABLE  R2 R0 K2     ; R2 := R0["mStoredFocusIndex"]
  10 [-]: CALL      R1 2 2       ; R1 := R1(R2)
@@ -18976,7 +18976,7 @@
  14 [-]: GETTABLE  R1 R1 K4     ; R1 := R1["mUserPanel"]
  15 [-]: GETTABLE  R1 R1 K5     ; R1 := R1["mListControl"]
  16 [-]: GETTABLE  R1 R1 K8     ; R1 := R1["mScroll"]
- 17 [-]: SETTABLE  R0 K2 R1     ; R0["mStoredFocusIndex"] := R1
+ 17 [-]: SETTABLE  R0 K2 R1     ; R0[0xfe7704c3] := R1
  18 [-]: RETURN    R0 1         ; return 
 
 
@@ -19279,7 +19279,7 @@
 105 [-]: NEWTABLE  R10 0 4      ; R10 := {}
 106 [-]: SETTABLE  R10 K32 R1   ; R10["Line"] := R1
 107 [-]: SETTABLE  R10 K33 R2   ; R10["MsgType"] := R2
-108 [-]: SETTABLE  R10 K34 R3   ; R10[0x00000000] := R3
+108 [-]: SETTABLE  R10 K34 R3   ; R10["TimeStamp"] := R3
 109 [-]: SETTABLE  R10 K35 R6   ; R10["sender"] := R6
 110 [-]: GETTABLE  R11 R0 K36   ; R11 := R0["mCachedLines"]
 111 [-]: GETTABLE  R12 R0 K36   ; R12 := R0["mCachedLines"]
@@ -19314,8 +19314,8 @@
 140 [-]: ADD       R11 R11 K26  ; R11 := R11 + 1.000000
 141 [-]: GETTABLE  R12 R0 K38   ; R12 := R0["mLineLog"]
 142 [-]: NEWTABLE  R13 0 5      ; R13 := {}
-143 [-]: SETTABLE  R13 K42 R1   ; R13["text"] := R1
-144 [-]: SETTABLE  R13 K43 R2   ; R13["messageType"] := R2
+143 [-]: SETTABLE  R13 K42 R1   ; R13[0xae91e43b] := R1
+144 [-]: SETTABLE  R13 K43 R2   ; R13[0x015284cd] := R2
 145 [-]: SETTABLE  R13 K44 R3   ; R13["timeStamp"] := R3
 146 [-]: SETTABLE  R13 K35 R6   ; R13["sender"] := R6
 147 [-]: NEWTABLE  R14 0 0      ; R14 := {}
@@ -22714,8 +22714,8 @@
  16 [-]: SETTABLE  R7 K5 R6     ; R7["Icon"] := R6
  17 [-]: SETTABLE  R7 K6 R1     ; R7["Name"] := R1
  18 [-]: SETTABLE  R7 K7 R2     ; R7["ChannelName"] := R2
- 19 [-]: SETTABLE  R7 K8 R3     ; R7[0x7b998233] := R3
- 20 [-]: SETTABLE  R7 K9 R5     ; R7["Id"] := R5
+ 19 [-]: SETTABLE  R7 K8 R3     ; R7[0x34291f5c] := R3
+ 20 [-]: SETTABLE  R7 K9 R5     ; R7[0x1467d5f4] := R5
  21 [-]: SETTABLE  R7 K10 K11   ; R7["isFlashing"] := false
  22 [-]: LOADK     R8 1         ; R8 := 1.000000
  23 [-]: LOADK     R9 1         ; R9 := 1.000000
@@ -22956,7 +22956,7 @@
  85 [-]: SETTABLE  R1 K33 R2    ; R1["mOnFocusedCallback"] := R2
  86 [-]: GETTABLE  R1 R0 K0     ; R1 := R0["mTabMenu"]
  87 [-]: CLOSURE   R2 14        ; R2 := closure(Function #121.16.15)
- 88 [-]: SETTABLE  R1 K34 R2    ; R1["mOnUnfocusedCallback"] := R2
+ 88 [-]: SETTABLE  R1 K34 R2    ; R1[0x00c5ff70] := R2
  89 [-]: GETTABLE  R1 R0 K0     ; R1 := R0["mTabMenu"]
  90 [-]: GETTABLE  R2 R0 K0     ; R2 := R0["mTabMenu"]
  91 [-]: GETTABLE  R2 R2 K36    ; R2 := R2["OnSelected"]
@@ -28733,7 +28733,7 @@
  11 [-]: GETGLOBAL R3 K4        ; R3 := 0x0032441c
  12 [-]: GETTABLE  R3 R3 K5     ; R3 := R3["StalkerMode"]
  13 [-]: NOT       R3 R3        ; R3 := not R3
- 14 [-]: SETTABLE  R0 K3 R3     ; R0[0x7f5022cf] := R3
+ 14 [-]: SETTABLE  R0 K3 R3     ; R0["mRecruitingChatEnabled"] := R3
  15 [-]: JMP       35           ; PC := 35
  16 [-]: GETTABLE  R3 R0 K6     ; R3 := R0["CHANNEL_TRADE"]
  17 [-]: EQ        0 R2 R3      ; if R2 ~= R3 then PC := 26
@@ -30101,7 +30101,7 @@
 635 [-]: GETUPVAL  R31 U9       ; R31 := U9
 636 [-]: GETTABLE  R31 R31 K121 ; R31 := R31["RefreshChatHistoryCooldown"]
 637 [-]: SUB       R31 R31 R1   ; R31 := R31 - R1
-638 [-]: SETTABLE  R30 K121 R31 ; R30[0xae91e43b] := R31
+638 [-]: SETTABLE  R30 K121 R31 ; R30["RefreshChatHistoryCooldown"] := R31
 639 [-]: GETGLOBAL R30 K122     ; R30 := _T
 640 [-]: GETUPVAL  R31 U10      ; R31 := U10
 641 [-]: CALL      R31 1 2      ; R31 := R31()
@@ -30133,7 +30133,7 @@
 667 [-]: GETTABLE  R33 R0 K129  ; R33 := R0["mInitMouseX"]
 668 [-]: EQ        0 R33 K71    ; if R33 ~= nil then PC := 684
 669 [-]: JMP       684          ; PC := 684
-670 [-]: SETTABLE  R0 K129 R31  ; R0[0x67bc869f] := R31
+670 [-]: SETTABLE  R0 K129 R31  ; R0["mInitMouseX"] := R31
 671 [-]: SETTABLE  R0 K130 R32  ; R0["mInitMouseY"] := R32
 672 [-]: GETTABLE  R33 R0 K60   ; R33 := R0["mWindow"]
 673 [-]: GETTABLE  R33 R33 K132 ; R33 := R33["x"]
@@ -31482,7 +31482,7 @@
 ; Max Stack Size:  5
 
   1 [-]: GETTABLE  R2 R0 K1     ; R2 := R0["mDelayedFadeOutTimer"]
-  2 [-]: SETTABLE  R0 K0 R2     ; R0[0xae91e43b] := R2
+  2 [-]: SETTABLE  R0 K0 R2     ; R0["mActiveTabListFadeOutTimer"] := R2
   3 [-]: TEST      R1 1         ; if R1 then PC := 7
   4 [-]: JMP       7            ; PC := 7
   5 [-]: GETTABLE  R2 R0 K1     ; R2 := R0["mDelayedFadeOutTimer"]
@@ -34076,7 +34076,7 @@
 294 [-]: LOADBOOL  R8 0 0       ; R8 := false
 295 [-]: CALL      R5 4 0       ; R5,... := R5(R6,R7,R8)
 296 [-]: CALL      R4 0 2       ; R4 := R4(R5,...)
-297 [-]: SETTABLE  R3 K82 R4    ; R3["AppearanceSearchable"] := R4
+297 [-]: SETTABLE  R3 K82 R4    ; R3[0xae91e43b] := R4
 298 [-]: GETUPVAL  R3 U11       ; R3 := U11
 299 [-]: GETGLOBAL R4 K0        ; R4 := 0xae91e43b
 300 [-]: SELF      R4 R4 K54    ; R5 := R4; R4 := R4[0x42b04007]
@@ -34112,7 +34112,7 @@
 330 [-]: LOADBOOL  R8 0 0       ; R8 := false
 331 [-]: CALL      R5 4 0       ; R5,... := R5(R6,R7,R8)
 332 [-]: CALL      R4 0 2       ; R4 := R4(R5,...)
-333 [-]: SETTABLE  R3 K90 R4    ; R3["ShawzinSearchable"] := R4
+333 [-]: SETTABLE  R3 K90 R4    ; R3[0xae91e43b] := R4
 334 [-]: GETUPVAL  R3 U12       ; R3 := U12
 335 [-]: CALL      R3 1 1       ; R3()
 336 [-]: GETUPVAL  R3 U13       ; R3 := U13

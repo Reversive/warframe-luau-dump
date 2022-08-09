@@ -777,13 +777,13 @@
  43 [-]: JMP       52           ; PC := 52
  44 [-]: NEWTABLE  R2 0 2       ; R2 := {}
  45 [-]: GETUPVAL  R3 U8        ; R3 := U8
- 46 [-]: SETTABLE  R2 K13 R3    ; R2[0xcbd666e1] := R3
+ 46 [-]: SETTABLE  R2 K13 R3    ; R2["mName"] := R3
  47 [-]: CLOSURE   R3 0         ; R3 := closure(Function #13.1)
  48 [-]: GETUPVAL  R0 U5        ; R0 := U5
  49 [-]: GETUPVAL  R0 U9        ; R0 := U9
  50 [-]: GETUPVAL  R0 U10       ; R0 := U10
- 51 [-]: SETTABLE  R2 K14 R3    ; R2[0x25a6e75e] := R3
- 52 [-]: SETTABLE  R1 K12 R2    ; R1[0x25d99d89] := R2
+ 51 [-]: SETTABLE  R2 K14 R3    ; R2["mCallback"] := R3
+ 52 [-]: SETTABLE  R1 K12 R2    ; R1["Boon_YareliIntro"] := R2
  53 [-]: GETGLOBAL R1 K0        ; R1 := _T
  54 [-]: GETTABLE  R1 R1 K1     ; R1 := R1["YareliReturnToOrbiter"]
  55 [-]: TEST      R1 1         ; if R1 then PC := 61

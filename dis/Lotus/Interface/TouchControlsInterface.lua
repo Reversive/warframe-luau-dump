@@ -4083,7 +4083,7 @@
  25 [-]: GETUPVAL  R3 U0        ; R3 := U0
  26 [-]: SUB       R3 R1 R3     ; R3 := R1 - R3
  27 [-]: MUL       R2 R2 R3     ; R2 := R2 * R3
- 28 [-]: SETTABLE  R0 K3 R2     ; R0["y"] := R2
+ 28 [-]: SETTABLE  R0 K3 R2     ; R0[0x8d77b2b2] := R2
  29 [-]: GETTABLE  R2 R0 K2     ; R2 := R0["x"]
  30 [-]: GETUPVAL  R3 U1        ; R3 := U1
  31 [-]: DIV       R2 R2 R3     ; R2 := R2 / R3

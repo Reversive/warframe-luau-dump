@@ -574,7 +574,7 @@
   2 [-]: GETGLOBAL R1 K2        ; R1 := 0x64fb1586
   3 [-]: LOADK     R2 K3        ; R2 := "TradeHUB1"
   4 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  5 [-]: SETTABLE  R0 K1 R1     ; R0["DesiredGoToNode"] := R1
+  5 [-]: SETTABLE  R0 K1 R1     ; R0[0x7b998233] := R1
   6 [-]: GETGLOBAL R0 K0        ; R0 := _T
   7 [-]: GETUPVAL  R1 U0        ; R1 := U0
   8 [-]: GETTABLE  R1 R1 K5     ; R1 := R1["ALERT_TAG"]
@@ -643,7 +643,7 @@
  22 [-]: CALL      R0 2 2       ; R0 := R0(R1)
  23 [-]: GETUPVAL  R1 U1        ; R1 := U1
  24 [-]: NEWTABLE  R2 0 0       ; R2 := {}
- 25 [-]: SETTABLE  R1 K4 R2     ; R1[0x03f57322] := R2
+ 25 [-]: SETTABLE  R1 K4 R2     ; R1["SocketIds"] := R2
  26 [-]: GETUPVAL  R1 U1        ; R1 := U1
  27 [-]: NEWTABLE  R2 0 0       ; R2 := {}
  28 [-]: SETTABLE  R1 K5 R2     ; R1["ReqTypes"] := R2
@@ -3513,8 +3513,8 @@
  29 [-]: GETUPVAL  R7 U0        ; R7 := U0
  30 [-]: MOVE      R8 R0        ; R8 := R0
  31 [-]: NEWTABLE  R9 0 3       ; R9 := {}
- 32 [-]: SETTABLE  R9 K6 R3     ; R9[0xa421af95] := R3
- 33 [-]: SETTABLE  R9 K7 R4     ; R9[0x00046924] := R4
+ 32 [-]: SETTABLE  R9 K6 R3     ; R9["IsFocused"] := R3
+ 33 [-]: SETTABLE  R9 K7 R4     ; R9["IsSelected"] := R4
  34 [-]: SETTABLE  R9 K8 K9     ; R9["ShowInfoPopup"] := true
  35 [-]: CALL      R5 5 1       ; R5(R6,R7,R8,R9)
  36 [-]: RETURN    R0 1         ; return 

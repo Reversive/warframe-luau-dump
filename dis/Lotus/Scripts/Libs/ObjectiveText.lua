@@ -1512,7 +1512,7 @@
  21 [-]: MOVE      R15 R8       ; R15 := R8
  22 [-]: MOVE      R16 R9       ; R16 := R9
  23 [-]: CALL      R11 6 2      ; R11 := R11(R12,R13,R14,R15,R16)
- 24 [-]: SETTABLE  R10 K3 R11   ; R10["ObjProgressBar"] := R11
+ 24 [-]: SETTABLE  R10 K3 R11   ; R10[0x1a41a3c1] := R11
  25 [-]: GETGLOBAL R10 K2       ; R10 := _T
  26 [-]: GETTABLE  R10 R10 K3   ; R10 := R10["ObjProgressBar"]
  27 [-]: GETTABLE  R10 R10 K6   ; R82 := R10[0xb7ae3621]
@@ -1587,7 +1587,7 @@
  96 [-]: MOVE      R13 R10      ; R13 := R10
  97 [-]: NEWTABLE  R14 0 2      ; R14 := {}
  98 [-]: SETTABLE  R14 K15 R1   ; R14["CURRENT"] := R1
- 99 [-]: SETTABLE  R14 K16 R2   ; R14[0x659270d0] := R2
+ 99 [-]: SETTABLE  R14 K16 R2   ; R14[0x1a41a3c1] := R2
 100 [-]: CALL      R12 3 0      ; R12,... := R12(R13,R14)
 101 [-]: CALL      R11 0 1      ; R11(R12,...)
 102 [-]: GETGLOBAL R11 K2       ; R11 := _T

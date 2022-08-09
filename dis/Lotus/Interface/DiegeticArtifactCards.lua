@@ -1182,7 +1182,7 @@
 ; Max Stack Size:  4
 
   1 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  2 [-]: SETTABLE  R1 K0 R0     ; R1["mStats"] := R0
+  2 [-]: SETTABLE  R1 K0 R0     ; R1[0x00000063] := R0
   3 [-]: GETUPVAL  R1 U0        ; R1 := U0
   4 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1[0x71e9ac81]
   5 [-]: CLOSURE   R3 0         ; R3 := closure(Function #9.1)
@@ -2319,7 +2319,7 @@
   3 [-]: GETTABLE  R0 R0 K1     ; R0 := R0["mUpgrade"]
   4 [-]: GETTABLE  R1 R0 K2     ; R1 := R0["mUpgradeFingerprint"]
   5 [-]: GETUPVAL  R2 U1        ; R2 := U1
-  6 [-]: SETTABLE  R0 K2 R2     ; R0["mUpgradeFingerprint"] := R2
+  6 [-]: SETTABLE  R0 K2 R2     ; R0[0xb8e9d205] := R2
   7 [-]: GETUPVAL  R2 U3        ; R2 := U3
   8 [-]: GETTABLE  R2 R2 K3     ; R82 := R2[0xfc31b69e]
   9 [-]: MOVE      R3 R0        ; R3 := R0
@@ -2338,8 +2338,8 @@
  22 [-]: GETUPVAL  R3 U0        ; R3 := U0
  23 [-]: GETTABLE  R3 R3 K0     ; R3 := R3["Card"]
  24 [-]: GETTABLE  R3 R3 K6     ; R3 := R3["mSeed"]
- 25 [-]: SETTABLE  R2 K6 R3     ; R2[0x5f56eeab] := R3
- 26 [-]: SETTABLE  R0 K2 R1     ; R0["mUpgradeFingerprint"] := R1
+ 25 [-]: SETTABLE  R2 K6 R3     ; R2["mSeed"] := R3
+ 26 [-]: SETTABLE  R0 K2 R1     ; R0[0xb8e9d205] := R1
  27 [-]: GETUPVAL  R2 U2        ; R2 := U2
  28 [-]: GETTABLE  R2 R2 K7     ; R2 := R2["mIsStance"]
  29 [-]: TEST      R2 0         ; if not R2 then PC := 74
@@ -2375,7 +2375,7 @@
  59 [-]: GETUPVAL  R3 U2        ; R3 := U2
  60 [-]: GETTABLE  R3 R3 K1     ; R3 := R3["mUpgrade"]
  61 [-]: GETTABLE  R3 R3 K10    ; R3 := R3["mItemType"]
- 62 [-]: SETTABLE  R2 K8 R3     ; R2["Type"] := R3
+ 62 [-]: SETTABLE  R2 K8 R3     ; R2[0x5f56eeab] := R3
  63 [-]: GETUPVAL  R2 U5        ; R2 := U5
  64 [-]: GETGLOBAL R3 K16       ; R3 := 0xbd496aa1
  65 [-]: GETTABLE  R3 R3 K17    ; R82 := R3[0x42645da3]
@@ -3031,7 +3031,7 @@
 166 [-]: NEWTABLE  R9 0 1       ; R9 := {}
 167 [-]: GETUPVAL  R10 U1       ; R10 := U1
 168 [-]: SUB       R10 K41 R10  ; R10 := 4.000000 - R10
-169 [-]: SETTABLE  R9 K43 R10   ; R9[0xbd496aa1] := R10
+169 [-]: SETTABLE  R9 K43 R10   ; R9["NUM"] := R10
 170 [-]: CALL      R5 5 2       ; R5 := R5(R6,R7,R8,R9)
 171 [-]: MOVE      R2 R5        ; R2 := R5
 172 [-]: JMP       258          ; PC := 258
@@ -3255,7 +3255,7 @@
 390 [-]: NEWTABLE  R11 0 1      ; R11 := {}
 391 [-]: GETUPVAL  R12 U1       ; R12 := U1
 392 [-]: SUB       R12 K41 R12  ; R12 := 4.000000 - R12
-393 [-]: SETTABLE  R11 K43 R12  ; R11[0xbd496aa1] := R12
+393 [-]: SETTABLE  R11 K43 R12  ; R11["NUM"] := R12
 394 [-]: CALL      R7 5 2       ; R7 := R7(R8,R9,R10,R11)
 395 [-]: MOVE      R2 R7        ; R2 := R7
 396 [-]: JMP       423          ; PC := 423
@@ -3397,7 +3397,7 @@
 532 [-]: LOADBOOL  R12 0 0      ; R12 := false
 533 [-]: NEWTABLE  R13 0 2      ; R13 := {}
 534 [-]: GETUPVAL  R14 U1       ; R14 := U1
-535 [-]: SETTABLE  R13 K43 R14  ; R13[0xbd496aa1] := R14
+535 [-]: SETTABLE  R13 K43 R14  ; R13["NUM"] := R14
 536 [-]: SETTABLE  R13 K38 R8   ; R13["PRICE"] := R8
 537 [-]: CALL      R9 5 2       ; R9 := R9(R10,R11,R12,R13)
 538 [-]: MOVE      R2 R9        ; R2 := R9
@@ -7158,7 +7158,7 @@
  48 [-]: GETUPVAL  R4 U2        ; R4 := U2
  49 [-]: NEWTABLE  R5 0 4       ; R5 := {}
  50 [-]: GETTABLE  R6 R0 K0     ; R6 := R0["Card"]
- 51 [-]: SETTABLE  R5 K0 R6     ; R5[0x3d106989] := R6
+ 51 [-]: SETTABLE  R5 K0 R6     ; R5["Card"] := R6
  52 [-]: GETUPVAL  R6 U3        ; R6 := U3
  53 [-]: GETTABLE  R6 R6 K14    ; R82 := R6[0x06d055f9]
  54 [-]: GETTABLE  R7 R0 K10    ; R7 := R0["NumSelected"]
@@ -9554,7 +9554,7 @@
  13 [-]: GETTABLE  R2 R0 K2     ; R2 := R0["Id"]
  14 [-]: SETTABLE  R1 K2 R2     ; R1["Id"] := R2
  15 [-]: GETTABLE  R2 R0 K3     ; R2 := R0["Card"]
- 16 [-]: SETTABLE  R1 K3 R2     ; R1["Card"] := R2
+ 16 [-]: SETTABLE  R1 K3 R2     ; R1[0xcc4b959d] := R2
  17 [-]: SETTABLE  R1 K4 K5     ; R1["mClipName"] := "FusionTarget.DetailCard"
  18 [-]: SETUPVAL  R1 U3        ; U82 := 
  19 [-]: GETTABLE  R1 R0 K2     ; R1 := R0["Id"]
@@ -12001,7 +12001,7 @@
  51 [-]: GETTABLE  R7 R7 K5     ; R7 := R7["mUpgrade"]
  52 [-]: GETTABLE  R7 R7 K9     ; R7 := R7["mItemCount"]
  53 [-]: SUB       R7 R7 K10    ; R7 := R7 - 1.000000
- 54 [-]: SETTABLE  R6 K9 R7     ; R6["mItemCount"] := R7
+ 54 [-]: SETTABLE  R6 K9 R7     ; R6[0x537ac148] := R7
  55 [-]: EQ        1 R0 K3      ; if R0 == nil then PC := 195
  56 [-]: JMP       195          ; PC := 195
  57 [-]: GETGLOBAL R6 K11       ; R6 := 0xcfc01047
@@ -12078,7 +12078,7 @@
 128 [-]: GETTABLE  R27 R27 K29  ; R82 := R27[0xd3f3ad63]
 129 [-]: CALL      R27 1 2      ; R27 := R27()
 130 [-]: GETTABLE  R28 R27 K7   ; R28 := R27["mId"]
-131 [-]: SETTABLE  R28 K7 R0    ; R28["mId"] := R0
+131 [-]: SETTABLE  R28 K7 R0    ; R28[0x76ea806b] := R0
 132 [-]: SETTABLE  R22 R26 R27  ; R22[R26] := R27
 133 [-]: SELF      R28 R4 K30   ; R29 := R4; R28 := R4[0x835d4c57]
 134 [-]: MOVE      R30 R9       ; R30 := R9
@@ -12116,7 +12116,7 @@
 166 [-]: GETTABLE  R29 R29 K13  ; R29 := R29["mItemType"]
 167 [-]: SETTABLE  R28 K13 R29  ; R28["mItemType"] := R29
 168 [-]: GETTABLE  R29 R28 K6   ; R29 := R28["mItemId"]
-169 [-]: SETTABLE  R29 K7 R0    ; R29["mId"] := R0
+169 [-]: SETTABLE  R29 K7 R0    ; R29[0x76ea806b] := R0
 170 [-]: GETUPVAL  R29 U9       ; R29 := U9
 171 [-]: SETTABLE  R28 K33 R29  ; R28["mUpgradeFingerprint"] := R29
 172 [-]: GETUPVAL  R29 U4       ; R29 := U4

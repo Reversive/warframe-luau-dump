@@ -157,7 +157,7 @@
  42 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
  43 [-]: LOADK     R6 K18       ; R6 := ""
  44 [-]: CALL      R3 4 2       ; R3 := R3(R4,R5,R6)
- 45 [-]: SETTABLE  R1 K14 R3    ; R1[0x00000078] := R3
+ 45 [-]: SETTABLE  R1 K14 R3    ; R1["mFormatPrefix"] := R3
  46 [-]: GETGLOBAL R3 K1        ; R3 := 0x7b998233
  47 [-]: GETTABLE  R4 R0 K19    ; R4 := R0["NamePrefix"]
  48 [-]: CALL      R3 2 2       ; R3 := R3(R4)
@@ -168,11 +168,11 @@
  53 [-]: GETTABLE  R5 R0 K19    ; R5 := R0["NamePrefix"]
  54 [-]: LOADBOOL  R6 1 0       ; R6 := true
  55 [-]: CALL      R3 4 2       ; R3 := R3(R4,R5,R6)
- 56 [-]: SETTABLE  R1 K14 R3    ; R1[0x00000078] := R3
+ 56 [-]: SETTABLE  R1 K14 R3    ; R1["mFormatPrefix"] := R3
  57 [-]: GETTABLE  R3 R0 K20    ; R3 := R0["Tooltip"]
  58 [-]: SETTABLE  R1 K20 R3    ; R1["Tooltip"] := R3
  59 [-]: GETTABLE  R3 R0 K21    ; R3 := R0["ShowTooltipCheck"]
- 60 [-]: SETTABLE  R1 K21 R3    ; R1[0x7b998233] := R3
+ 60 [-]: SETTABLE  R1 K21 R3    ; R1["ShowTooltipCheck"] := R3
  61 [-]: SELF      R3 R1 K22    ; R4 := R1; R3 := R1[0x9b71e815]
  62 [-]: GETTABLE  R5 R0 K23    ; R5 := R0["Name"]
  63 [-]: CALL      R3 3 1       ; R3(R4,R5)

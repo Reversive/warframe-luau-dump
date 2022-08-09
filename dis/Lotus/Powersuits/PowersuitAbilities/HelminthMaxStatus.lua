@@ -184,7 +184,7 @@
  27 [-]: GETUPVAL  R7 U4        ; R7 := U4
  28 [-]: MUL       R6 R6 R7     ; R6 := R6 * R7
  29 [-]: ADD       R5 R5 R6     ; R5 := R5 + R6
- 30 [-]: SETTABLE  R4 K10 R5    ; R4["Value"] := R5
+ 30 [-]: SETTABLE  R4 K10 R5    ; R4[0xf4dc3420] := R5
  31 [-]: SETTABLE  R4 K11 K12   ; R4["ValueUnit"] := "/Lotus/Language/Game/UNIT_METER"
  32 [-]: CALL      R2 3 1       ; R2(R3,R4)
  33 [-]: GETGLOBAL R2 K6        ; R2 := 0x33bdd652
@@ -193,7 +193,7 @@
  36 [-]: NEWTABLE  R4 0 3       ; R4 := {}
  37 [-]: SETTABLE  R4 K8 K13    ; R4["Label"] := "/Lotus/Language/Game/POWER_DURATION"
  38 [-]: GETUPVAL  R5 U2        ; R5 := U2
- 39 [-]: SETTABLE  R4 K10 R5    ; R4["Value"] := R5
+ 39 [-]: SETTABLE  R4 K10 R5    ; R4[0xf4dc3420] := R5
  40 [-]: SETTABLE  R4 K11 K14   ; R4["ValueUnit"] := "/Lotus/Language/Game/UNIT_SECOND"
  41 [-]: CALL      R2 3 1       ; R2(R3,R4)
  42 [-]: GETGLOBAL R2 K6        ; R2 := 0x33bdd652
@@ -202,15 +202,15 @@
  45 [-]: NEWTABLE  R4 0 3       ; R4 := {}
  46 [-]: SETTABLE  R4 K8 K15    ; R4["Label"] := "/Lotus/Language/Labels/WEAPON_PROC"
  47 [-]: GETUPVAL  R5 U5        ; R5 := U5
- 48 [-]: SETTABLE  R4 K10 R5    ; R4["Value"] := R5
+ 48 [-]: SETTABLE  R4 K10 R5    ; R4[0xf4dc3420] := R5
  49 [-]: SETTABLE  R4 K11 K16   ; R4["ValueUnit"] := "/Lotus/Language/Game/UNIT_MULTIPLIER"
  50 [-]: CALL      R2 3 1       ; R2(R3,R4)
  51 [-]: GETGLOBAL R2 K0        ; R2 := _T
  52 [-]: GETTABLE  R2 R2 K1     ; R2 := R2["AbilityLevelQueryParms"]
  53 [-]: GETTABLE  R2 R2 K3     ; R2 := R2["Modded"]
- 54 [-]: SETTABLE  R1 K3 R2     ; R1["Modded"] := R2
+ 54 [-]: SETTABLE  R1 K3 R2     ; R1[0x79f6af86] := R2
  55 [-]: GETGLOBAL R2 K0        ; R2 := _T
- 56 [-]: SETTABLE  R2 K17 R1    ; R2["AbilityUpgradeLevelInfo"] := R1
+ 56 [-]: SETTABLE  R2 K17 R1    ; R2[0x30f46140] := R1
  57 [-]: RETURN    R0 1         ; return 
 
 

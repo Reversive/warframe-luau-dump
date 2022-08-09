@@ -1376,7 +1376,7 @@
 232 [-]: MOVE      R23 R16      ; R23 := R16
 233 [-]: LOADK     R24 0        ; R24 := 0.500000
 234 [-]: CALL      R21 4 2      ; R21 := R21(R22,R23,R24)
-235 [-]: SETTABLE  R20 K65 R21  ; R20["mVisibleProp"] := R21
+235 [-]: SETTABLE  R20 K65 R21  ; R20[0xae91e43b] := R21
 236 [-]: GETUPVAL  R20 U4       ; R20 := U4
 237 [-]: SELF      R20 R20 K66  ; R21 := R20; R20 := R20[0x44aa79ac]
 238 [-]: LOADK     R22 0        ; R22 := 0.000000

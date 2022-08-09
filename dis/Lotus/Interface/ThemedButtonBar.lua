@@ -794,7 +794,7 @@
 297 [-]: GETGLOBAL R19 K7       ; R19 := 0x34291f5c
 298 [-]: GETTABLE  R19 R19 K9   ; R82 := R19[0x399826a5]
 299 [-]: CALL      R19 1 2      ; R19 := R19()
-300 [-]: SETTABLE  R18 K48 R19  ; R18[0xdf42446e] := R19
+300 [-]: SETTABLE  R18 K48 R19  ; R18["CalloutDisplayed"] := R19
 301 [-]: RETURN    R0 1         ; return 
 
 

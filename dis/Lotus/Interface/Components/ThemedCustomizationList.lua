@@ -3733,7 +3733,7 @@
  17 [-]: GETTABLE  R4 R9 K0     ; R4 := R9["Id"]
  18 [-]: FORLOOP   R5 10        ; R5 += R7; if R5 <= R6 then begin PC := 10; R8 := R5 end
  19 [-]: ADD       R4 R4 K2     ; R4 := R4 + 1.000000
- 20 [-]: SETTABLE  R2 K0 R4     ; R2["Id"] := R4
+ 20 [-]: SETTABLE  R2 K0 R4     ; R2[0xdfc0d50b] := R4
  21 [-]: RETURN    R0 1         ; return 
 
 
@@ -4270,7 +4270,7 @@
  13 [-]: GETTABLE  R3 R2 K4     ; R3 := R2["mMovie"]
  14 [-]: TEST      R3 0         ; if not R3 then PC := 8
  15 [-]: JMP       8            ; PC := 8
- 16 [-]: SETTABLE  R0 K0 R2     ; R0["mParentEnv"] := R2
+ 16 [-]: SETTABLE  R0 K0 R2     ; R0[0x1baafed5] := R2
  17 [-]: RETURN    R2 2         ; return R2
  18 [-]: RETURN    R0 1         ; return 
 

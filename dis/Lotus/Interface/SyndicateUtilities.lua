@@ -833,7 +833,7 @@
 154 [-]: CALL      R3 2 0       ; R3,... := R3(R4)
 155 [-]: SETLIST   R2 0 1       ; R2[(1-1)*FPF+i] := R(2+i), 1 <= i <= 0
 156 [-]: SETTABLE  R1 K3 R2     ; R1["Types"] := R2
-157 [-]: SETTABLE  R0 K56 R1    ; R0[0x00000041] := R1
+157 [-]: SETTABLE  R0 K56 R1    ; R0["BRACKET"] := R1
 158 [-]: NEWTABLE  R1 0 2       ; R1 := {}
 159 [-]: SETTABLE  R1 K1 K60    ; R1["Id"] := 18.000000
 160 [-]: NEWTABLE  R2 0 0       ; R2 := {}

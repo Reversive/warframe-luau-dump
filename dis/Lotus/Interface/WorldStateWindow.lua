@@ -294,7 +294,7 @@
 285 [-]: SETTABLE  R74 K109 K143; R74["BannerIndex"] := 12.000000
 286 [-]: SETTABLE  R74 K110 K144; R74["BannerDesc"] := "/Lotus/Language/WorldStateWindow/EventMPVDesc"
 287 [-]: SETTABLE  R74 K112 K145; R74["Hint"] := "/Lotus/Language/WorldStateWindow/EventMPVHint"
-288 [-]: SETTABLE  R73 K142 R74 ; R73[0x76ea806b] := R74
+288 [-]: SETTABLE  R73 K142 R74 ; R73["PrimeVaultTrader"] := R74
 289 [-]: LOADNIL   R74 R74      ; R74 := nil
 290 [-]: NEWTABLE  R75 5 0      ; R75 := {}
 291 [-]: NEWTABLE  R76 0 2      ; R76 := {}
@@ -2290,7 +2290,7 @@
  37 [-]: GETUPVAL  R7 U3        ; R7 := U3
  38 [-]: SETTABLE  R7 K11 R3    ; R7["mTotalHeight"] := R3
  39 [-]: GETUPVAL  R7 U3        ; R7 := U3
- 40 [-]: SETTABLE  R7 K12 R4    ; R7["mHeight"] := R4
+ 40 [-]: SETTABLE  R7 K12 R4    ; R7[0x0000007b] := R4
  41 [-]: GETUPVAL  R7 U3        ; R7 := U3
  42 [-]: CLOSURE   R8 0         ; R8 := closure(Function #19.1)
  43 [-]: GETUPVAL  R0 U1        ; R0 := U1
@@ -7912,7 +7912,7 @@
  27 [-]: SELF      R5 R5 K13    ; R6 := R5; R5 := R5[0x757f0100]
  28 [-]: GETGLOBAL R7 K14       ; R7 := gPowerSuitType
  29 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
- 30 [-]: SETTABLE  R4 K11 R5    ; R4[0xbd496aa1] := R5
+ 30 [-]: SETTABLE  R4 K11 R5    ; R4["SUIT_RANK"] := R5
  31 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
  32 [-]: MOVE      R1 R2        ; R1 := R2
  33 [-]: JMP       39           ; PC := 39

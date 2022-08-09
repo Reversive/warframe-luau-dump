@@ -481,7 +481,7 @@
   6 [-]: GETGLOBAL R2 K8        ; R2 := 0x7ed0a956
   7 [-]: MOVE      R3 R0        ; R3 := R0
   8 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  9 [-]: SETTABLE  R1 K7 R2     ; R1[0xe9768ed0] := R2
+  9 [-]: SETTABLE  R1 K7 R2     ; R1["mItemType"] := R2
  10 [-]: LOADBOOL  R2 0 0       ; R2 := false
  11 [-]: SETUPVAL  R2 U0        ; U82 := 
  12 [-]: LOADBOOL  R2 0 0       ; R2 := false

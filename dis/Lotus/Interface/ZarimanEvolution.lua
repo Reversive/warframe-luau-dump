@@ -3736,7 +3736,7 @@
 127 [-]: SETTABLE  R2 K41 K39   ; R2["GlowVis"] := false
 128 [-]: SETTABLE  R2 K42 K43   ; R2["NumPulses"] := 3.000000
 129 [-]: SETTABLE  R2 K44 K43   ; R2["PulseTime"] := 3.000000
-130 [-]: SETTABLE  R1 K37 R2    ; R1[0xbce5a201] := R2
+130 [-]: SETTABLE  R1 K37 R2    ; R1["mPulseInfo"] := R2
 131 [-]: GETUPVAL  R1 U1        ; R1 := U1
 132 [-]: CLOSURE   R2 0         ; R2 := closure(Function #31.1)
 133 [-]: GETUPVAL  R0 U2        ; R0 := U2

@@ -1444,7 +1444,7 @@
  19 [-]: CALL      R1 2 1       ; R1(R2)
  20 [-]: GETGLOBAL R1 K3        ; R1 := 0x0032441c
  21 [-]: GETUPVAL  R2 U2        ; R2 := U2
- 22 [-]: SETTABLE  R1 K4 R2     ; R1["NemesisKillChoiceMade"] := R2
+ 22 [-]: SETTABLE  R1 K4 R2     ; R1[0x5bced4c4] := R2
  23 [-]: GETGLOBAL R1 K1        ; R1 := 0x7b998233
  24 [-]: GETUPVAL  R2 U5        ; R2 := U5
  25 [-]: CALL      R1 2 2       ; R1 := R1(R2)

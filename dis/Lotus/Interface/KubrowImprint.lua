@@ -2287,7 +2287,7 @@
  24 [-]: MOVE      R5 R0        ; R5 := R0
  25 [-]: NEWTABLE  R6 0 2       ; R6 := {}
  26 [-]: SETTABLE  R6 K7 K8     ; R6["IsFocused"] := false
- 27 [-]: SETTABLE  R6 K9 R1     ; R6[0x7b998233] := R1
+ 27 [-]: SETTABLE  R6 K9 R1     ; R6["IsSelected"] := R1
  28 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
  29 [-]: RETURN    R0 1         ; return 
 

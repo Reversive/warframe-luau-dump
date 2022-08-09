@@ -191,7 +191,7 @@
 182 [-]: SETTABLE  R21 K41 K67  ; R21["max"] := 6.000000
 183 [-]: CLOSURE   R22 26       ; R22 := closure(Function #27)
 184 [-]: SETTABLE  R21 K43 R22  ; R21["GetUpgrade"] := R22
-185 [-]: SETTABLE  R20 K68 R21  ; R20["meleeXp"] := R21
+185 [-]: SETTABLE  R20 K68 R21  ; R20[0xac1b386a] := R21
 186 [-]: NEWTABLE  R21 0 6      ; R21 := {}
 187 [-]: GETGLOBAL R22 K15      ; R22 := 0x0469f296
 188 [-]: LOADK     R23 K75      ; R23 := "MeleeCombo"

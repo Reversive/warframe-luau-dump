@@ -1298,15 +1298,15 @@
  57 [-]: GETGLOBAL R2 K23       ; R2 := 0x7ed0a956
  58 [-]: LOADK     R3 K24       ; R3 := "/Lotus/Levels/Proc/TheNewWar/PartTwo/TNWDrifterCampMain"
  59 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 60 [-]: SETTABLE  R1 K22 R2    ; R1[0x78298275] := R2
+ 60 [-]: SETTABLE  R1 K22 R2    ; R1[0xd1586535] := R2
  61 [-]: GETGLOBAL R2 K26       ; R2 := 0xa94df70b
  62 [-]: SELF      R2 R2 K27    ; R3 := R2; R2 := R2[0x30388273]
  63 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 64 [-]: SETTABLE  R1 K25 R2    ; R1[0x6d604ba7] := R2
+ 64 [-]: SETTABLE  R1 K25 R2    ; R1["menuMovie"] := R2
  65 [-]: GETGLOBAL R2 K29       ; R2 := 0x83f4e77c
  66 [-]: SELF      R2 R2 K30    ; R3 := R2; R2 := R2[0xe09828e1]
  67 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 68 [-]: SETTABLE  R1 K28 R2    ; R1[0xcbd666e1] := R2
+ 68 [-]: SETTABLE  R1 K28 R2    ; R1["gameRules"] := R2
  69 [-]: SETTABLE  R1 K31 K32   ; R1["hostingMultiplayer"] := false
  70 [-]: SETTABLE  R1 K33 K32   ; R1["flushSave"] := false
  71 [-]: SETTABLE  R1 K34 K32   ; R1["restartLevel"] := false

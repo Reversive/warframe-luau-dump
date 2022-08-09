@@ -719,7 +719,7 @@
 211 [-]: GETUPVAL  R9 U6        ; R9 := U6
 212 [-]: GETTABLE  R9 R9 K34    ; R9 := R9["distance"]
 213 [-]: CALL      R8 2 2       ; R8 := R8(R9)
-214 [-]: SETTABLE  R7 K33 R8    ; R7[0x00000099] := R8
+214 [-]: SETTABLE  R7 K33 R8    ; R7["DISTANCE"] := R8
 215 [-]: MOVE      R3 R7        ; R3 := R7
 216 [-]: JMP       555          ; PC := 555
 217 [-]: GETGLOBAL R7 K0        ; R7 := 0x0469f296

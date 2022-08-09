@@ -9046,7 +9046,7 @@
 447 [-]: GETGLOBAL R47 K90      ; R47 := mOtherStuff
 448 [-]: NEWTABLE  R48 0 6      ; R48 := {}
 449 [-]: SETTABLE  R48 K20 R44  ; R48["Name"] := R44
-450 [-]: SETTABLE  R48 K91 R45  ; R48[0x00000079] := R45
+450 [-]: SETTABLE  R48 K91 R45  ; R48["Count"] := R45
 451 [-]: SETTABLE  R48 K92 K93  ; R48["SortPriority"] := 25.000000
 452 [-]: GETUPVAL  R49 U6       ; R49 := U6
 453 [-]: CALL      R49 1 2      ; R49 := R49()
@@ -12766,7 +12766,7 @@
 294 [-]: CALL      R26 4 1      ; R26(R27,R28,R29)
 295 [-]: SELF      R26 R25 K81  ; R27 := R25; R26 := R25[0x71e9ac81]
 296 [-]: CALL      R26 2 1      ; R26(R27)
-297 [-]: SETTABLE  R0 K56 R25   ; R0[0x00000079] := R25
+297 [-]: SETTABLE  R0 K56 R25   ; R0["ProgressInfo"] := R25
 298 [-]: EQ        1 R10 K1     ; if R10 == nil then PC := 301
 299 [-]: JMP       301          ; PC := 301
 300 [-]: RETURN    R0 1         ; return 
@@ -13998,7 +13998,7 @@
  15 [-]: SETTABLE  R2 K4 K5     ; R2["mProgressText"] := ""
  16 [-]: SELF      R3 R2 K6     ; R4 := R2; R3 := R2[0x71e9ac81]
  17 [-]: CALL      R3 2 1       ; R3(R4)
- 18 [-]: SETTABLE  R0 K7 R2     ; R0["ProgressInfo"] := R2
+ 18 [-]: SETTABLE  R0 K7 R2     ; R0[0x10e5bb7a] := R2
  19 [-]: SETTABLE  R0 K8 K9     ; R0["IconHeight"] := 76.000000
  20 [-]: RETURN    R0 1         ; return 
 
@@ -15298,7 +15298,7 @@
 165 [-]: GETUPVAL  R22 U10      ; R22 := U10
 166 [-]: MOVE      R23 R20      ; R23 := R20
 167 [-]: CALL      R22 2 2      ; R22 := R22(R23)
-168 [-]: SETTABLE  R21 K34 R22  ; R21["PlainsFreeRoamArchwing"] := R22
+168 [-]: SETTABLE  R21 K34 R22  ; R21[0x00000053] := R22
 169 [-]: GETUPVAL  R21 U11      ; R21 := U11
 170 [-]: MOVE      R22 R10      ; R22 := R10
 171 [-]: LOADK     R23 0        ; R23 := 0.000000
@@ -19890,7 +19890,7 @@
 238 [-]: SETTABLE  R10 K70 R11  ; R10["FACTION"] := R11
 239 [-]: GETUPVAL  R11 U10      ; R11 := U10
 240 [-]: CALL      R11 1 2      ; R11 := R11()
-241 [-]: SETTABLE  R10 K73 R11  ; R10["TYPE"] := R11
+241 [-]: SETTABLE  R10 K73 R11  ; R10[0x7b998233] := R11
 242 [-]: CALL      R8 3 0       ; R8,... := R8(R9,R10)
 243 [-]: CALL      R7 0 2       ; R7 := R7(R8,...)
 244 [-]: GETGLOBAL R8 K3        ; R8 := 0xae91e43b
@@ -23872,14 +23872,14 @@
  51 [-]: LOADK     R14 2        ; R14 := 2.000000
  52 [-]: CALL      R11 4 2      ; R11 := R11(R12,R13,R14)
  53 [-]: ADD       R11 R11 K17  ; R11 := R11 + 26.000000
- 54 [-]: SETTABLE  R10 K15 R11  ; R10["x"] := R11
+ 54 [-]: SETTABLE  R10 K15 R11  ; R10[0xae91e43b] := R11
  55 [-]: GETGLOBAL R11 K1       ; R11 := 0xae91e43b
  56 [-]: SELF      R11 R11 K16  ; R12 := R11; R11 := R11[0x91a24e4b]
  57 [-]: MOVE      R13 R1       ; R13 := R1
  58 [-]: LOADK     R14 3        ; R14 := 3.000000
  59 [-]: CALL      R11 4 2      ; R11 := R11(R12,R13,R14)
  60 [-]: SUB       R11 R11 K17  ; R11 := R11 - 26.000000
- 61 [-]: SETTABLE  R10 K18 R11  ; R10["y"] := R11
+ 61 [-]: SETTABLE  R10 K18 R11  ; R10[0xbd496aa1] := R11
  62 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
  63 [-]: SETTABLE  R7 K13 R8    ; R7["gToolTipCoords"] := R8
  64 [-]: JMP       66           ; PC := 66

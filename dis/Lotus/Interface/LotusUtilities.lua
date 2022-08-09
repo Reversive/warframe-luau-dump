@@ -4342,7 +4342,7 @@
 497 [-]: GETGLOBAL R21 K67      ; R21 := 0xb693b6c1
 498 [-]: CALL      R21 1 2      ; R21 := R21()
 499 [-]: SUB       R20 R20 R21  ; R20 := R20 - R21
-500 [-]: SETTABLE  R19 K58 R20  ; R19[0x228a5581] := R20
+500 [-]: SETTABLE  R19 K58 R20  ; R19["queuedTeleport"] := R20
 501 [-]: GETGLOBAL R19 K1       ; R19 := _T
 502 [-]: GETTABLE  R19 R19 K13  ; R19 := R19["suitTable"]
 503 [-]: GETTABLE  R19 R19 K58  ; R19 := R19["queuedTeleport"]
@@ -9104,7 +9104,7 @@
  31 [-]: GETGLOBAL R4 K0        ; R4 := _T
  32 [-]: GETTABLE  R4 R4 K1     ; R4 := R4["QueuedTransmissions"]
  33 [-]: NEWTABLE  R5 0 2       ; R5 := {}
- 34 [-]: SETTABLE  R5 K12 R0    ; R5[0x23d5322f] := R0
+ 34 [-]: SETTABLE  R5 K12 R0    ; R5["Transmission"] := R0
  35 [-]: SETTABLE  R5 K13 R1    ; R5["SpeakerData"] := R1
  36 [-]: CALL      R3 3 1       ; R3(R4,R5)
  37 [-]: RETURN    R0 1         ; return 
@@ -10074,7 +10074,7 @@
 148 [-]: SETTABLE  R26 K4 R27   ; R26["missingNodes"] := R27
 149 [-]: SETTABLE  R26 K5 R4    ; R26["numHardCompleted"] := R4
 150 [-]: SETTABLE  R26 K6 R23   ; R26["missionXp"] := R23
-151 [-]: SETTABLE  R26 K7 R24   ; R26[0x33bdd652] := R24
+151 [-]: SETTABLE  R26 K7 R24   ; R26["hardMissionXp"] := R24
 152 [-]: SETTABLE  R25 K1 R26   ; R25["CachedStarChartProgress"] := R26
 153 [-]: MOVE      R25 R14      ; R25 := R14
 154 [-]: MOVE      R26 R13      ; R26 := R13
@@ -11346,10 +11346,10 @@
  58 [-]: JMP       70           ; PC := 70
  59 [-]: NEWTABLE  R10 0 3      ; R10 := {}
  60 [-]: GETTABLE  R11 R7 K2    ; R11 := R7["mItemType"]
- 61 [-]: SETTABLE  R10 K9 R11   ; R10["Type"] := R11
+ 61 [-]: SETTABLE  R10 K9 R11   ; R10[0xf37943ff] := R11
  62 [-]: GETTABLE  R11 R7 K8    ; R11 := R7["mItemCount"]
  63 [-]: SETTABLE  R10 K5 R11   ; R10["Count"] := R11
- 64 [-]: SETTABLE  R10 K10 R7   ; R10["Item"] := R7
+ 64 [-]: SETTABLE  R10 K10 R7   ; R10[0xc3962b21] := R7
  65 [-]: GETTABLE  R11 R10 K5   ; R11 := R10["Count"]
  66 [-]: EQ        0 R11 K0     ; if R11 ~= nil then PC := 69
  67 [-]: JMP       69           ; PC := 69
@@ -16765,7 +16765,7 @@
  48 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
  49 [-]: MOVE      R2 R5        ; R2 := R5
  50 [-]: NEWTABLE  R5 0 1       ; R5 := {}
- 51 [-]: SETTABLE  R5 K11 R2    ; R5["ITEM"] := R2
+ 51 [-]: SETTABLE  R5 K11 R2    ; R5[0x99675e23] := R2
  52 [-]: MOVE      R3 R5        ; R3 := R5
  53 [-]: LOADK     R5 K12       ; R5 := "/Lotus/Language/Items/BlueprintAndItem"
  54 [-]: SELF      R6 R1 K13    ; R7 := R1; R6 := R1[0x78ceba36]
@@ -21389,7 +21389,7 @@
  61 [-]: MOVE      R15 R4       ; R15 := R4
  62 [-]: LOADK     R16 K6       ; R16 := "\">"
  63 [-]: CONCAT    R14 R14 R16  ; R14 := R14 .. R15 .. R16
- 64 [-]: SETTABLE  R13 K16 R14  ; R13["OPEN_COLOR"] := R14
+ 64 [-]: SETTABLE  R13 K16 R14  ; R13[0x9c1f3b5a] := R14
  65 [-]: LOADK     R14 K17      ; R14 := "</font><font color=\""
  66 [-]: MOVE      R15 R5       ; R15 := R5
  67 [-]: LOADK     R16 K6       ; R16 := "\">"
@@ -21490,7 +21490,7 @@
 162 [-]: MOVE      R17 R4       ; R17 := R4
 163 [-]: LOADK     R18 K6       ; R18 := "\">"
 164 [-]: CONCAT    R16 R16 R18  ; R16 := R16 .. R17 .. R18
-165 [-]: SETTABLE  R15 K16 R16  ; R15["OPEN_COLOR"] := R16
+165 [-]: SETTABLE  R15 K16 R16  ; R15[0x9c1f3b5a] := R16
 166 [-]: LOADK     R16 K17      ; R16 := "</font><font color=\""
 167 [-]: MOVE      R17 R5       ; R17 := R5
 168 [-]: LOADK     R18 K6       ; R18 := "\">"
@@ -21511,7 +21511,7 @@
 183 [-]: MOVE      R19 R4       ; R19 := R4
 184 [-]: LOADK     R20 K6       ; R20 := "\">"
 185 [-]: CONCAT    R18 R18 R20  ; R18 := R18 .. R19 .. R20
-186 [-]: SETTABLE  R17 K16 R18  ; R17["OPEN_COLOR"] := R18
+186 [-]: SETTABLE  R17 K16 R18  ; R17[0x9c1f3b5a] := R18
 187 [-]: LOADK     R18 K17      ; R18 := "</font><font color=\""
 188 [-]: MOVE      R19 R5       ; R19 := R5
 189 [-]: LOADK     R20 K6       ; R20 := "\">"
@@ -21540,7 +21540,7 @@
 212 [-]: MOVE      R19 R4       ; R19 := R4
 213 [-]: LOADK     R20 K6       ; R20 := "\">"
 214 [-]: CONCAT    R18 R18 R20  ; R18 := R18 .. R19 .. R20
-215 [-]: SETTABLE  R17 K16 R18  ; R17["OPEN_COLOR"] := R18
+215 [-]: SETTABLE  R17 K16 R18  ; R17[0x9c1f3b5a] := R18
 216 [-]: LOADK     R18 K17      ; R18 := "</font><font color=\""
 217 [-]: MOVE      R19 R5       ; R19 := R5
 218 [-]: LOADK     R20 K6       ; R20 := "\">"
@@ -21560,7 +21560,7 @@
 232 [-]: MOVE      R19 R4       ; R19 := R4
 233 [-]: LOADK     R20 K6       ; R20 := "\">"
 234 [-]: CONCAT    R18 R18 R20  ; R18 := R18 .. R19 .. R20
-235 [-]: SETTABLE  R17 K16 R18  ; R17["OPEN_COLOR"] := R18
+235 [-]: SETTABLE  R17 K16 R18  ; R17[0x9c1f3b5a] := R18
 236 [-]: LOADK     R18 K17      ; R18 := "</font><font color=\""
 237 [-]: MOVE      R19 R5       ; R19 := R5
 238 [-]: LOADK     R20 K6       ; R20 := "\">"
@@ -21580,7 +21580,7 @@
 252 [-]: MOVE      R19 R4       ; R19 := R4
 253 [-]: LOADK     R20 K6       ; R20 := "\">"
 254 [-]: CONCAT    R18 R18 R20  ; R18 := R18 .. R19 .. R20
-255 [-]: SETTABLE  R17 K16 R18  ; R17["OPEN_COLOR"] := R18
+255 [-]: SETTABLE  R17 K16 R18  ; R17[0x9c1f3b5a] := R18
 256 [-]: LOADK     R18 K17      ; R18 := "</font><font color=\""
 257 [-]: MOVE      R19 R5       ; R19 := R5
 258 [-]: LOADK     R20 K6       ; R20 := "\">"
@@ -21599,7 +21599,7 @@
 271 [-]: MOVE      R19 R4       ; R19 := R4
 272 [-]: LOADK     R20 K6       ; R20 := "\">"
 273 [-]: CONCAT    R18 R18 R20  ; R18 := R18 .. R19 .. R20
-274 [-]: SETTABLE  R17 K16 R18  ; R17["OPEN_COLOR"] := R18
+274 [-]: SETTABLE  R17 K16 R18  ; R17[0x9c1f3b5a] := R18
 275 [-]: LOADK     R18 K17      ; R18 := "</font><font color=\""
 276 [-]: MOVE      R19 R5       ; R19 := R5
 277 [-]: LOADK     R20 K6       ; R20 := "\">"
@@ -22631,7 +22631,7 @@
   6 [-]: JMP       10           ; PC := 10
   7 [-]: GETGLOBAL R2 K1        ; R2 := _T
   8 [-]: NEWTABLE  R3 0 0       ; R3 := {}
-  9 [-]: SETTABLE  R2 K2 R3     ; R2["PendingEquippingGearItem"] := R3
+  9 [-]: SETTABLE  R2 K2 R3     ; R2[0x8623cf14] := R3
  10 [-]: GETGLOBAL R2 K1        ; R2 := _T
  11 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["PendingEquippingGearItem"]
  12 [-]: SELF      R3 R0 K3     ; R4 := R0; R3 := R0[0x388577d5]
@@ -29621,7 +29621,7 @@
  33 [-]: LOADK     R2 K10       ; R2 := "/Lotus/Language/Labels/IgnoreLimitReached"
  34 [-]: NEWTABLE  R3 0 1       ; R3 := {}
  35 [-]: GETUPVAL  R4 U0        ; R4 := U0
- 36 [-]: SETTABLE  R3 K11 R4    ; R3[0x67513231] := R4
+ 36 [-]: SETTABLE  R3 K11 R4    ; R3["PLAYER_NAME"] := R4
  37 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
  38 [-]: LOADK     R2 K7        ; R2 := "UtilOnIgnoreUser"
  39 [-]: CALL      R0 3 1       ; R0(R1,R2)

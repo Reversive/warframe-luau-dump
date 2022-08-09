@@ -53,7 +53,7 @@
  25 [-]: SETTABLE  R9 K15 K11   ; R9["mNemesisActive"] := false
  26 [-]: SETTABLE  R9 K16 K17   ; R9["mPulseTimer"] := 0.000000
  27 [-]: CLOSURE   R10 0        ; R10 := closure(Function #1.1)
- 28 [-]: SETTABLE  R9 K18 R10   ; R9[0xbd054f2d] := R10
+ 28 [-]: SETTABLE  R9 K18 R10   ; R9["GetParentEnv"] := R10
  29 [-]: CLOSURE   R10 1        ; R10 := closure(Function #1.2)
  30 [-]: MOVE      R0 R0        ; R0 := R0
  31 [-]: SETTABLE  R9 K19 R10   ; R9["HookUpCallbacks"] := R10
@@ -105,7 +105,7 @@
  77 [-]: CLOSURE   R10 11       ; R10 := closure(Function #1.12)
  78 [-]: MOVE      R0 R0        ; R0 := R0
  79 [-]: MOVE      R0 R1        ; R0 := R1
- 80 [-]: SETTABLE  R9 K29 R10   ; R9[0x00000093] := R10
+ 80 [-]: SETTABLE  R9 K29 R10   ; R9["Update"] := R10
  81 [-]: SELF      R10 R0 K30   ; R11 := R0; R10 := R0[0xe261aa96]
  82 [-]: MOVE      R12 R1       ; R12 := R1
  83 [-]: LOADK     R13 K31      ; R13 := "Title"

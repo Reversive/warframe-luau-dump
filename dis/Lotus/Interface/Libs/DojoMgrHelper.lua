@@ -5626,13 +5626,13 @@
  13 [-]: GETTABLE  R3 R3 K3     ; R3 := R3["Count"]
  14 [-]: GETTABLE  R4 R1 K4     ; R4 := R1["mQuantity"]
  15 [-]: ADD       R3 R3 R4     ; R3 := R3 + R4
- 16 [-]: SETTABLE  R2 K3 R3     ; R2[0x8332bbfc] := R3
+ 16 [-]: SETTABLE  R2 K3 R3     ; R2["Count"] := R3
  17 [-]: GETUPVAL  R2 U0        ; R2 := U0
  18 [-]: GETUPVAL  R3 U0        ; R3 := U0
  19 [-]: GETTABLE  R3 R3 K3     ; R3 := R3["Count"]
  20 [-]: GETTABLE  R4 R1 K4     ; R4 := R1["mQuantity"]
  21 [-]: ADD       R3 R3 R4     ; R3 := R3 + R4
- 22 [-]: SETTABLE  R2 K3 R3     ; R2[0x8332bbfc] := R3
+ 22 [-]: SETTABLE  R2 K3 R3     ; R2["Count"] := R3
  23 [-]: GETUPVAL  R2 U1        ; R2 := U1
  24 [-]: GETUPVAL  R3 U0        ; R3 := U0
  25 [-]: LOADBOOL  R4 0 0       ; R4 := false

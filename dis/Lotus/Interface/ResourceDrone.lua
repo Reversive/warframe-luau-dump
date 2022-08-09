@@ -1372,7 +1372,7 @@
  43 [-]: CALL      R2 5 2       ; R2 := R2(R3,R4,R5,R6)
  44 [-]: GETUPVAL  R3 U9        ; R3 := U9
  45 [-]: GETTABLE  R4 R2 K7     ; R4 := R2["Icon"]
- 46 [-]: SETTABLE  R3 K7 R4     ; R3[0x00000051] := R4
+ 46 [-]: SETTABLE  R3 K7 R4     ; R3["Icon"] := R4
  47 [-]: GETUPVAL  R3 U9        ; R3 := U9
  48 [-]: GETTABLE  R4 R2 K8     ; R4 := R2["Themed"]
  49 [-]: SETTABLE  R3 K8 R4     ; R3["Themed"] := R4

@@ -2479,7 +2479,7 @@
  29 [-]: GETUPVAL  R4 U1        ; R4 := U1
  30 [-]: GETTABLE  R4 R4 K10    ; R4 := R4["HUB_TAG"]
  31 [-]: CONCAT    R3 R3 R4     ; R3 := R3 .. R4
- 32 [-]: SETTABLE  R2 K7 R3     ; R2[0x310355a7] := R3
+ 32 [-]: SETTABLE  R2 K7 R3     ; R2["name"] := R3
  33 [-]: JMP       83           ; PC := 83
  34 [-]: GETUPVAL  R3 U0        ; R3 := U0
  35 [-]: GETTABLE  R3 R3 K11    ; R3 := R3["IsFortunaSyndicate"]
@@ -2492,7 +2492,7 @@
  42 [-]: GETUPVAL  R4 U1        ; R4 := U1
  43 [-]: GETTABLE  R4 R4 K10    ; R4 := R4["HUB_TAG"]
  44 [-]: CONCAT    R3 R3 R4     ; R3 := R3 .. R4
- 45 [-]: SETTABLE  R2 K7 R3     ; R2[0x310355a7] := R3
+ 45 [-]: SETTABLE  R2 K7 R3     ; R2["name"] := R3
  46 [-]: JMP       83           ; PC := 83
  47 [-]: GETUPVAL  R3 U0        ; R3 := U0
  48 [-]: GETTABLE  R3 R3 K13    ; R3 := R3["IsDeimosSyndicate"]
@@ -2505,7 +2505,7 @@
  55 [-]: GETUPVAL  R4 U1        ; R4 := U1
  56 [-]: GETTABLE  R4 R4 K10    ; R4 := R4["HUB_TAG"]
  57 [-]: CONCAT    R3 R3 R4     ; R3 := R3 .. R4
- 58 [-]: SETTABLE  R2 K7 R3     ; R2[0x310355a7] := R3
+ 58 [-]: SETTABLE  R2 K7 R3     ; R2["name"] := R3
  59 [-]: JMP       83           ; PC := 83
  60 [-]: GETUPVAL  R3 U0        ; R3 := U0
  61 [-]: GETTABLE  R3 R3 K15    ; R3 := R3["IsZarimanSyndicate"]
@@ -2518,7 +2518,7 @@
  68 [-]: GETUPVAL  R4 U1        ; R4 := U1
  69 [-]: GETTABLE  R4 R4 K10    ; R4 := R4["HUB_TAG"]
  70 [-]: CONCAT    R3 R3 R4     ; R3 := R3 .. R4
- 71 [-]: SETTABLE  R2 K7 R3     ; R2[0x310355a7] := R3
+ 71 [-]: SETTABLE  R2 K7 R3     ; R2["name"] := R3
  72 [-]: JMP       83           ; PC := 83
  73 [-]: GETGLOBAL R3 K8        ; R3 := 0x64fb1586
  74 [-]: SELF      R4 R1 K17    ; R5 := R1; R4 := R1[0x365d0eb2]
@@ -2529,7 +2529,7 @@
  79 [-]: GETUPVAL  R5 U1        ; R5 := U1
  80 [-]: GETTABLE  R5 R5 K10    ; R5 := R5["HUB_TAG"]
  81 [-]: CONCAT    R4 R4 R5     ; R4 := R4 .. R5
- 82 [-]: SETTABLE  R2 K7 R4     ; R2[0x310355a7] := R4
+ 82 [-]: SETTABLE  R2 K7 R4     ; R2["name"] := R4
  83 [-]: GETUPVAL  R4 U3        ; R4 := U3
  84 [-]: GETGLOBAL R5 K8        ; R5 := 0x64fb1586
  85 [-]: GETUPVAL  R6 U0        ; R6 := U0
@@ -5788,7 +5788,7 @@
  89 [-]: GETTABLE  R12 R12 K37  ; R82 := R12[0x23d5322f]
  90 [-]: GETTABLE  R13 R1 K26   ; R13 := R1["Titles"]
  91 [-]: NEWTABLE  R14 0 5      ; R14 := {}
- 92 [-]: SETTABLE  R14 K38 R11  ; R14["Label"] := R11
+ 92 [-]: SETTABLE  R14 K38 R11  ; R14[0x00000078] := R11
  93 [-]: GETTABLE  R15 R9 K29   ; R15 := R9["level"]
  94 [-]: SETTABLE  R14 K4 R15   ; R14["Level"] := R15
  95 [-]: GETTABLE  R15 R9 K40   ; R15 := R9["icon"]
@@ -5851,10 +5851,10 @@
 152 [-]: NEWTABLE  R12 0 2      ; R12 := {}
 153 [-]: GETTABLE  R13 R9 K50   ; R13 := R9["sacrifice"]
 154 [-]: GETTABLE  R13 R13 K49  ; R13 := R13["items"]
-155 [-]: SETTABLE  R12 K49 R13  ; R12["items"] := R13
+155 [-]: SETTABLE  R12 K49 R13  ; R12[0x7b998233] := R13
 156 [-]: GETTABLE  R13 R9 K50   ; R13 := R9["sacrifice"]
 157 [-]: GETTABLE  R13 R13 K51  ; R13 := R13["credits"]
-158 [-]: SETTABLE  R12 K51 R13  ; R12["credits"] := R13
+158 [-]: SETTABLE  R12 K51 R13  ; R12[0x03f57322] := R13
 159 [-]: SETTABLE  R1 K11 R12   ; R1["NextSacrifice"] := R12
 160 [-]: GETTABLE  R12 R9 K29   ; R12 := R9["level"]
 161 [-]: SETTABLE  R1 K12 R12   ; R1["SacrificeLevel"] := R12
@@ -5979,15 +5979,15 @@
 280 [-]: SETTABLE  R24 K68 R25  ; R24["ItemInfo"] := R25
 281 [-]: SETTABLE  R24 K69 K18  ; R24["HideRecipesInUse"] := true
 282 [-]: GETGLOBAL R25 K71      ; R25 := 0x25d99d89
-283 [-]: SETTABLE  R24 K70 R25  ; R24["GameData"] := R25
+283 [-]: SETTABLE  R24 K70 R25  ; R24[0x03f57322] := R25
 284 [-]: LOADNIL   R25 R26      ; R25 := R26 := nil
 285 [-]: LOADBOOL  R27 1 0      ; R27 := true
 286 [-]: CALL      R21 7 2      ; R21 := R21(R22,R23,R24,R25,R26,R27)
 287 [-]: SETTABLE  R21 K72 R18  ; R21["storeItem"] := R18
 288 [-]: GETTABLE  R22 R17 K74  ; R22 := R17["mItemCount"]
-289 [-]: SETTABLE  R21 K73 R22  ; R21[0xbd2e96ea] := R22
+289 [-]: SETTABLE  R21 K73 R22  ; R21[0x7b998233] := R22
 290 [-]: GETTABLE  R22 R21 K64  ; R22 := R21["Count"]
-291 [-]: SETTABLE  R21 K75 R22  ; R21[0x7b998233] := R22
+291 [-]: SETTABLE  R21 K75 R22  ; R21[0x03f57322] := R22
 292 [-]: SETTABLE  R21 K64 K44  ; R21["Count"] := 1.000000
 293 [-]: GETGLOBAL R22 K32      ; R22 := 0xae91e43b
 294 [-]: SELF      R22 R22 K33  ; R23 := R22; R22 := R22[0x42b04007]
@@ -14715,7 +14715,7 @@
   8 [-]: JMP       10           ; PC := 10
   9 [-]: LOADBOOL  R2 0 1       ; R2 := false; PC := 10
  10 [-]: LOADBOOL  R2 1 0       ; R2 := true
- 11 [-]: SETTABLE  R1 K1 R2     ; R1[0x20b98db3] := R2
+ 11 [-]: SETTABLE  R1 K1 R2     ; R1["mFavorsVis"] := R2
  12 [-]: GETGLOBAL R1 K3        ; R1 := 0xae91e43b
  13 [-]: SELF      R1 R1 K4     ; R2 := R1; R1 := R1[0x67bc869f]
  14 [-]: LOADK     R3 K5        ; R3 := "DetailPanel.ResearchList"

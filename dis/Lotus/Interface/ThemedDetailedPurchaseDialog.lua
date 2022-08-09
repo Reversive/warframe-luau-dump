@@ -952,7 +952,7 @@
  22 [-]: LOADK     R2 2         ; R2 := 2.000000
  23 [-]: LOADBOOL  R3 1 0       ; R3 := true
  24 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
- 25 [-]: SETTABLE  R0 K5 R1     ; R0[0x087cbd3f] := R1
+ 25 [-]: SETTABLE  R0 K5 R1     ; R0[0x00000053] := R1
  26 [-]: GETUPVAL  R1 U1        ; R1 := U1
  27 [-]: GETTABLE  R1 R1 K1     ; R82 := R1[0x5d10207d]
  28 [-]: LOADK     R2 12        ; R2 := 12.000000
@@ -978,7 +978,7 @@
  48 [-]: GETUPVAL  R2 U0        ; R2 := U0
  49 [-]: GETTABLE  R2 R2 K0     ; R2 := R2["FloatingContent"]
  50 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 51 [-]: SETTABLE  R0 K9 R1     ; R0["FloatingContentHex"] := R1
+ 51 [-]: SETTABLE  R0 K9 R1     ; R0[0x00000051] := R1
  52 [-]: GETUPVAL  R0 U0        ; R0 := U0
  53 [-]: GETUPVAL  R1 U2        ; R1 := U2
  54 [-]: GETTABLE  R1 R1 K10    ; R82 := R1[0x9f57dd7d]
@@ -4248,7 +4248,7 @@
  77 [-]: LOADK     R8 K33       ; R8 := "/Lotus/Language/Menu/GiftFail_NoGiftsRemaining"
  78 [-]: LOADBOOL  R9 1 0       ; R9 := true
  79 [-]: NEWTABLE  R10 0 1      ; R10 := {}
- 80 [-]: SETTABLE  R10 K34 R4   ; R10[0xe4162eed] := R4
+ 80 [-]: SETTABLE  R10 K34 R4   ; R10["NUM_GIFTS"] := R4
  81 [-]: CALL      R6 5 0       ; R6,... := R6(R7,R8,R9,R10)
  82 [-]: CALL      R5 0 1       ; R5(R6,...)
  83 [-]: RETURN    R0 1         ; return 
@@ -6000,7 +6000,7 @@
  42 [-]: LOADK     R6 K11       ; R6 := "/Lotus/Language/Store/GiftBonusInclude"
  43 [-]: LOADBOOL  R7 0 0       ; R7 := false
  44 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
- 45 [-]: SETTABLE  R3 K10 R4    ; R3["LocalizedDesc"] := R4
+ 45 [-]: SETTABLE  R3 K10 R4    ; R3[0xae91e43b] := R4
  46 [-]: NEWTABLE  R4 0 0       ; R4 := {}
  47 [-]: GETUPVAL  R5 U2        ; R5 := U2
  48 [-]: GETTABLE  R5 R5 K12    ; R82 := R5[0x0f164e09]
@@ -7379,7 +7379,7 @@
 318 [-]: GETTABLE  R18 R18 K88  ; R82 := R18[0xcd71f5a1]
 319 [-]: MOVE      R19 R1       ; R19 := R1
 320 [-]: CALL      R18 2 2      ; R18 := R18(R19)
-321 [-]: SETTABLE  R0 K87 R18   ; R0[0x0000005f] := R18
+321 [-]: SETTABLE  R0 K87 R18   ; R0["Sale"] := R18
 322 [-]: GETUPVAL  R18 U0       ; R18 := U0
 323 [-]: GETTABLE  R18 R18 K89  ; R82 := R18[0xe9947039]
 324 [-]: MOVE      R19 R1       ; R19 := R1

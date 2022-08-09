@@ -2131,13 +2131,13 @@
  28 [-]: CALL      R3 4 3       ; R3,R4 := R3(R4,R5,R6)
  29 [-]: GETGLOBAL R5 K0        ; R5 := _T
  30 [-]: NEWTABLE  R6 0 2       ; R6 := {}
- 31 [-]: SETTABLE  R6 K9 R3     ; R6[0x5163741e] := R3
+ 31 [-]: SETTABLE  R6 K9 R3     ; R6[0xed324116] := R3
  32 [-]: TEST      R3 0         ; if not R3 then PC := 36
  33 [-]: JMP       36           ; PC := 36
  34 [-]: TESTSET   R7 R4 1      ; if R4 then PC := 37 else R7 := R4
  35 [-]: JMP       37           ; PC := 37
  36 [-]: LOADNIL   R7 R7        ; R7 := nil
- 37 [-]: SETTABLE  R6 K10 R7    ; R6[0xd1586535] := R7
+ 37 [-]: SETTABLE  R6 K10 R7    ; R6[0x7b998233] := R7
  38 [-]: SETTABLE  R5 K1 R6     ; R5["CrewShipAbilityEval"] := R6
  39 [-]: RETURN    R0 1         ; return 
 

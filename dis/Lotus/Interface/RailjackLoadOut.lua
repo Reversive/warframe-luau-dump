@@ -4174,7 +4174,7 @@
  91 [-]: LOADBOOL  R8 1 0       ; R8 := true
  92 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
  93 [-]: SETTABLE  R4 K21 R5    ; R4["Label"] := R5
- 94 [-]: SETTABLE  R4 K24 R1    ; R4[0xf64b7262] := R1
+ 94 [-]: SETTABLE  R4 K24 R1    ; R4["Tips"] := R1
  95 [-]: SETTABLE  R4 K25 K26   ; R4["Padding"] := -10.000000
  96 [-]: CALL      R2 3 1       ; R2(R3,R4)
  97 [-]: LOADBOOL  R2 0 0       ; R2 := false
@@ -15392,7 +15392,7 @@
  54 [-]: LOADK     R6 K15       ; R6 := "BottomRightContainer.ScrollBar"
  55 [-]: CALL      R4 3 3       ; R4,R5 := R4(R5,R6)
  56 [-]: SETTABLE  R3 K22 R5    ; R3["mActiveY"] := R5
- 57 [-]: SETTABLE  R2 K21 R4    ; R2["mActiveX"] := R4
+ 57 [-]: SETTABLE  R2 K21 R4    ; R2[0x0b35b612] := R4
  58 [-]: RETURN    R0 1         ; return 
 
 
@@ -15428,7 +15428,7 @@
  21 [-]: SETTABLE  R5 K7 R6     ; R5["OwnedInfo"] := R6
  22 [-]: SETTABLE  R5 K10 R2    ; R5["IsFiller"] := R2
  23 [-]: SETTABLE  R5 K11 R1    ; R5["IsFocused"] := R1
- 24 [-]: SETTABLE  R5 K12 R3    ; R5[0x00000001] := R3
+ 24 [-]: SETTABLE  R5 K12 R3    ; R5["IsSelected"] := R3
  25 [-]: EQ        0 R4 K14     ; if R4 ~= nil then PC := 28
  26 [-]: JMP       28           ; PC := 28
  27 [-]: LOADBOOL  R6 0 1       ; R6 := false; PC := 28
@@ -15445,7 +15445,7 @@
  38 [-]: JMP       41           ; PC := 41
  39 [-]: LOADBOOL  R6 0 1       ; R6 := false; PC := 40
  40 [-]: LOADBOOL  R6 1 0       ; R6 := true
- 41 [-]: SETTABLE  R5 K16 R6    ; R5[0xae91e43b] := R6
+ 41 [-]: SETTABLE  R5 K16 R6    ; R5["ShowInfoPopup"] := R6
  42 [-]: RETURN    R5 2         ; return R5
  43 [-]: RETURN    R0 1         ; return 
 
@@ -16034,7 +16034,7 @@
 145 [-]: CLOSURE   R6 6         ; R6 := closure(Function #144.7)
 146 [-]: MOVE      R0 R1        ; R0 := R1
 147 [-]: MOVE      R0 R2        ; R0 := R2
-148 [-]: SETTABLE  R5 K65 R6    ; R5["Attribute"] := R6
+148 [-]: SETTABLE  R5 K65 R6    ; R5[0xdf42446e] := R6
 149 [-]: CALL      R3 3 1       ; R3(R4,R5)
 150 [-]: GETGLOBAL R3 K6        ; R3 := mInventoryGrid
 151 [-]: SELF      R3 R3 K59    ; R4 := R3; R3 := R3[0xb029c588]
@@ -16049,7 +16049,7 @@
 160 [-]: CLOSURE   R6 7         ; R6 := closure(Function #144.8)
 161 [-]: MOVE      R0 R1        ; R0 := R1
 162 [-]: MOVE      R0 R2        ; R0 := R2
-163 [-]: SETTABLE  R5 K65 R6    ; R5["Attribute"] := R6
+163 [-]: SETTABLE  R5 K65 R6    ; R5[0xdf42446e] := R6
 164 [-]: CALL      R3 3 1       ; R3(R4,R5)
 165 [-]: GETGLOBAL R3 K6        ; R3 := mInventoryGrid
 166 [-]: SELF      R3 R3 K59    ; R4 := R3; R3 := R3[0xb029c588]
@@ -16064,7 +16064,7 @@
 175 [-]: CLOSURE   R6 8         ; R6 := closure(Function #144.9)
 176 [-]: MOVE      R0 R1        ; R0 := R1
 177 [-]: MOVE      R0 R2        ; R0 := R2
-178 [-]: SETTABLE  R5 K65 R6    ; R5["Attribute"] := R6
+178 [-]: SETTABLE  R5 K65 R6    ; R5[0xdf42446e] := R6
 179 [-]: CALL      R3 3 1       ; R3(R4,R5)
 180 [-]: GETGLOBAL R3 K0        ; R3 := 0xae91e43b
 181 [-]: SELF      R3 R3 K70    ; R4 := R3; R3 := R3[0x492f9da2]
@@ -17713,7 +17713,7 @@
  59 [-]: GETTABLE  R16 R7 K18   ; R16 := R7["SalvageProgress"]
  60 [-]: MUL       R16 R16 K19  ; R16 := R16 * 100.000000
  61 [-]: CALL      R15 2 2      ; R15 := R15(R16)
- 62 [-]: SETTABLE  R14 K15 R15  ; R14["PERCENT"] := R15
+ 62 [-]: SETTABLE  R14 K15 R15  ; R14[0x7b998233] := R15
  63 [-]: CALL      R10 5 2      ; R10 := R10(R11,R12,R13,R14)
  64 [-]: MOVE      R8 R10       ; R8 := R10
  65 [-]: LOADK     R2 K20       ; R2 := "/Lotus/Language/Menu/ItemSelection_Repair"
@@ -17741,7 +17741,7 @@
  87 [-]: MOVE      R19 R10      ; R19 := R10
  88 [-]: CALL      R17 3 0      ; R17,... := R17(R18,R19)
  89 [-]: CALL      R16 0 2      ; R16 := R16(R17,...)
- 90 [-]: SETTABLE  R15 K26 R16  ; R15[0x03f57322] := R16
+ 90 [-]: SETTABLE  R15 K26 R16  ; R15["TIME"] := R16
  91 [-]: CALL      R11 5 2      ; R11 := R11(R12,R13,R14,R15)
  92 [-]: MOVE      R8 R11       ; R8 := R11
  93 [-]: LOADK     R2 K29       ; R2 := "/Lotus/Language/Menu/ItemSelection_Rush"

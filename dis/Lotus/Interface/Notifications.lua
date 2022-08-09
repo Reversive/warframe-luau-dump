@@ -1381,7 +1381,7 @@
  20 [-]: SETTABLE  R1 K9 R2     ; R1["Name"] := R2
  21 [-]: GETGLOBAL R2 K3        ; R2 := _T
  22 [-]: GETTABLE  R2 R2 K6     ; R2 := R2["CurrentInvigoration"]
- 23 [-]: SETTABLE  R1 K13 R2    ; R1[0xae91e43b] := R2
+ 23 [-]: SETTABLE  R1 K13 R2    ; R1["LocalizedDesc"] := R2
  24 [-]: SETTABLE  R1 K14 K1    ; R1["RightAligned"] := true
  25 [-]: GETUPVAL  R2 U1        ; R2 := U1
  26 [-]: GETTABLE  R2 R2 K15    ; R82 := R2[0xfc3fed1f]
@@ -2176,15 +2176,15 @@
  51 [-]: SETTABLE  R1 K1 K21    ; R1["RequiredLevel"] := 4.000000
  52 [-]: GETUPVAL  R2 U1        ; R2 := U1
  53 [-]: GETTABLE  R2 R2 K25    ; R2 := R2["SF_RAILJACK_KEY"]
- 54 [-]: SETTABLE  R1 K24 R2    ; R1["RequiredShipFeature"] := R2
- 55 [-]: SETTABLE  R0 K22 R1    ; R0["WraithQuestKeyChain"] := R1
+ 54 [-]: SETTABLE  R1 K24 R2    ; R1[0x7b998233] := R2
+ 55 [-]: SETTABLE  R0 K22 R1    ; R0[0x8792aaab] := R1
  56 [-]: GETUPVAL  R0 U0        ; R0 := U0
  57 [-]: NEWTABLE  R1 0 1       ; R1 := {}
  58 [-]: NEWTABLE  R2 1 0       ; R2 := {}
  59 [-]: LOADK     R3 K27       ; R3 := "VenusToMercuryJunction"
  60 [-]: SETLIST   R2 1 1       ; R2[(1-1)*FPF+i] := R(2+i), 1 <= i <= 1
  61 [-]: SETTABLE  R1 K4 R2     ; R1["Junctions"] := R2
- 62 [-]: SETTABLE  R0 K26 R1    ; R0["KubrowQuestKeyChain"] := R1
+ 62 [-]: SETTABLE  R0 K26 R1    ; R0[0xfbc567eb] := R1
  63 [-]: GETUPVAL  R0 U0        ; R0 := U0
  64 [-]: NEWTABLE  R1 0 2       ; R1 := {}
  65 [-]: GETGLOBAL R2 K8        ; R2 := 0x7ed0a956
@@ -2232,7 +2232,7 @@
 107 [-]: LOADK     R3 K40       ; R3 := "/Lotus/Types/Keys/WarWithinQuest/WarWithinQuestKeyChain"
 108 [-]: CALL      R2 2 2       ; R2 := R2(R3)
 109 [-]: SETTABLE  R1 K7 R2     ; R1["PrereqQuest"] := R2
-110 [-]: SETTABLE  R0 K39 R1    ; R0["IndexQuestKeyChain"] := R1
+110 [-]: SETTABLE  R0 K39 R1    ; R0[0xe4162eed] := R1
 111 [-]: GETUPVAL  R0 U0        ; R0 := U0
 112 [-]: NEWTABLE  R1 0 1       ; R1 := {}
 113 [-]: GETGLOBAL R2 K8        ; R2 := 0x7ed0a956

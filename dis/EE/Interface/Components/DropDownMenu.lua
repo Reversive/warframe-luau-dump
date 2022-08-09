@@ -990,7 +990,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  8
 
-  1 [-]: SETTABLE  R0 K0 R1     ; R0["mWidth"] := R1
+  1 [-]: SETTABLE  R0 K0 R1     ; R0[0xd5181643] := R1
   2 [-]: GETTABLE  R2 R0 K1     ; R2 := R0["mMovie"]
   3 [-]: SELF      R2 R2 K2     ; R3 := R2; R2 := R2[0xf64b7262]
   4 [-]: GETTABLE  R4 R0 K3     ; R4 := R0["mContainerClipName"]

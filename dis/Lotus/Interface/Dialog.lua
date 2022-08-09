@@ -408,7 +408,7 @@
  21 [-]: SELF      R6 R2 K6     ; R7 := R2; R6 := R2[0xa5d5c8f6]
  22 [-]: CALL      R6 2 0       ; R6,... := R6(R7)
  23 [-]: CALL      R4 0 2       ; R4 := R4(R5,...)
- 24 [-]: SETTABLE  R3 K2 R4     ; R3[0x087cbd3f] := R4
+ 24 [-]: SETTABLE  R3 K2 R4     ; R3[6.000000] := R4
  25 [-]: GETUPVAL  R3 U2        ; R3 := U2
  26 [-]: CALL      R3 1 1       ; R3()
  27 [-]: GETGLOBAL R3 K7        ; R3 := 0xae91e43b

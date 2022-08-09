@@ -2249,7 +2249,7 @@
  24 [-]: GETGLOBAL R1 K7        ; R1 := _T
  25 [-]: GETTABLE  R1 R1 K8     ; R1 := R1["gNemesis"]
  26 [-]: GETUPVAL  R2 U1        ; R2 := U1
- 27 [-]: SETTABLE  R1 K9 R2     ; R1["generatedProfile"] := R2
+ 27 [-]: SETTABLE  R1 K9 R2     ; R1[0xe1aad8c4] := R2
  28 [-]: GETUPVAL  R1 U2        ; R1 := U2
  29 [-]: GETGLOBAL R2 K11       ; R2 := 0x89326c93
  30 [-]: SELF      R2 R2 K12    ; R3 := R2; R2 := R2[0xfb64e76c]

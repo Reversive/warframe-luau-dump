@@ -178,18 +178,18 @@
 107 [-]: CLOSURE   R5 0         ; R5 := closure(Function #1.1)
 108 [-]: SETTABLE  R4 K72 R5    ; R4["GetParentEnv"] := R5
 109 [-]: CLOSURE   R5 1         ; R5 := closure(Function #1.2)
-110 [-]: SETTABLE  R4 K73 R5    ; R4[0x7b998233] := R5
+110 [-]: SETTABLE  R4 K73 R5    ; R4["Print"] := R5
 111 [-]: CLOSURE   R5 2         ; R5 := closure(Function #1.3)
-112 [-]: SETTABLE  R4 K74 R5    ; R4[0xbe190284] := R5
+112 [-]: SETTABLE  R4 K74 R5    ; R4["GetFocusedPlayerInfo"] := R5
 113 [-]: CLOSURE   R5 3         ; R5 := closure(Function #1.4)
-114 [-]: SETTABLE  R4 K75 R5    ; R4[0xc1f9f0d9] := R5
+114 [-]: SETTABLE  R4 K75 R5    ; R4["GetPlayerInfoByOnlineId"] := R5
 115 [-]: CLOSURE   R5 4         ; R5 := closure(Function #1.5)
 116 [-]: SETTABLE  R4 K76 R5    ; R4["GetLocalPlayerInfo"] := R5
 117 [-]: CLOSURE   R5 5         ; R5 := closure(Function #1.6)
 118 [-]: SETTABLE  R4 K77 R5    ; R4["CalculateBgWidth"] := R5
 119 [-]: CLOSURE   R5 6         ; R5 := closure(Function #1.7)
 120 [-]: GETUPVAL  R0 U2        ; R0 := U2
-121 [-]: SETTABLE  R4 K78 R5    ; R4[0x7b998233] := R5
+121 [-]: SETTABLE  R4 K78 R5    ; R4["CalculateBgHeight"] := R5
 122 [-]: CLOSURE   R5 7         ; R5 := closure(Function #1.8)
 123 [-]: SETTABLE  R4 K79 R5    ; R4["CanEnablePlayerBtn"] := R5
 124 [-]: CLOSURE   R5 8         ; R5 := closure(Function #1.9)
@@ -238,11 +238,11 @@
 167 [-]: SETTABLE  R4 K92 R5    ; R4["UpdateCallouts"] := R5
 168 [-]: CLOSURE   R5 21        ; R5 := closure(Function #1.22)
 169 [-]: GETUPVAL  R0 U2        ; R0 := U2
-170 [-]: SETTABLE  R4 K93 R5    ; R4["RollOverPlayer"] := R5
+170 [-]: SETTABLE  R4 K93 R5    ; R4[0x7b998233] := R5
 171 [-]: CLOSURE   R5 22        ; R5 := closure(Function #1.23)
-172 [-]: SETTABLE  R4 K94 R5    ; R4["RollOutPlayer"] := R5
+172 [-]: SETTABLE  R4 K94 R5    ; R4[0xbe190284] := R5
 173 [-]: CLOSURE   R5 23        ; R5 := closure(Function #1.24)
-174 [-]: SETTABLE  R4 K95 R5    ; R4["SelectPlayer"] := R5
+174 [-]: SETTABLE  R4 K95 R5    ; R4[0xc1f9f0d9] := R5
 175 [-]: CLOSURE   R5 24        ; R5 := closure(Function #1.25)
 176 [-]: SETTABLE  R4 K96 R5    ; R4["CanInvite"] := R5
 177 [-]: CLOSURE   R5 25        ; R5 := closure(Function #1.26)
@@ -3286,7 +3286,7 @@
  26 [-]: MOVE      R0 R0        ; R0 := R0
  27 [-]: MOVE      R0 R1        ; R0 := R1
  28 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
- 29 [-]: SETTABLE  R3 K9 R4     ; R3[0x67bc869f] := R4
+ 29 [-]: SETTABLE  R3 K9 R4     ; R3["mFadeOutTimerId"] := R4
  30 [-]: RETURN    R0 1         ; return 
  31 [-]: GETTABLE  R3 R0 K8     ; R3 := R0["mPlayerInfo"]
  32 [-]: GETTABLE  R3 R3 R1     ; R3 := R3[R1]

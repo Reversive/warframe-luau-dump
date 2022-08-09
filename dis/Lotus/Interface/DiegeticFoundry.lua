@@ -2132,7 +2132,7 @@
   9 [-]: MOVE      R8 R1        ; R8 := R1
  10 [-]: NEWTABLE  R9 0 2       ; R9 := {}
  11 [-]: GETTABLE  R10 R6 K2    ; R10 := R6["mItemType"]
- 12 [-]: SETTABLE  R9 K2 R10    ; R9[0x00000048] := R10
+ 12 [-]: SETTABLE  R9 K2 R10    ; R9["mItemType"] := R10
  13 [-]: GETTABLE  R10 R6 K3    ; R10 := R6["mItemCount"]
  14 [-]: SETTABLE  R9 K3 R10    ; R9["mItemCount"] := R10
  15 [-]: CALL      R7 3 1       ; R7(R8,R9)
@@ -2783,7 +2783,7 @@
 419 [-]: LOADNIL   R45 R45      ; R45 := nil
 420 [-]: GETTABLE  R46 R5 K57   ; R46 := R5["Category"]
 421 [-]: CALL      R42 5 2      ; R42 := R42(R43,R44,R45,R46)
-422 [-]: SETTABLE  R5 K89 R42   ; R5["ToolTip"] := R42
+422 [-]: SETTABLE  R5 K89 R42   ; R5[0xc0a3774b] := R42
 423 [-]: NEWTABLE  R42 0 0      ; R42 := {}
 424 [-]: SETTABLE  R5 K91 R42   ; R5["Components"] := R42
 425 [-]: SELF      R42 R4 K93   ; R43 := R4; R42 := R4[0x05af28f3]
@@ -4668,7 +4668,7 @@
 235 [-]: CLOSURE   R16 0        ; R16 := closure(Function #33.1)
 236 [-]: GETUPVAL  R0 U11       ; R0 := U11
 237 [-]: GETUPVAL  R0 U12       ; R0 := U12
-238 [-]: SETTABLE  R15 K42 R16  ; R15["gSpectreLoadoutFinishedCallback"] := R16
+238 [-]: SETTABLE  R15 K42 R16  ; R15[0x1c5b546f] := R16
 239 [-]: GETGLOBAL R15 K41      ; R15 := _T
 240 [-]: GETTABLE  R15 R15 K43  ; R15 := R15["BackgroundMovie"]
 241 [-]: EQ        1 R15 K44    ; if R15 == nil then PC := 249
@@ -12903,7 +12903,7 @@
   5 [-]: GETGLOBAL R2 K2        ; R2 := _T
   6 [-]: GETUPVAL  R3 U1        ; R3 := U1
   7 [-]: GETTABLE  R3 R3 R1     ; R3 := R3[R1]
-  8 [-]: SETTABLE  R2 K3 R3     ; R2[0x7b998233] := R3
+  8 [-]: SETTABLE  R2 K3 R3     ; R2["gToolTip"] := R3
   9 [-]: RETURN    R0 1         ; return 
 
 

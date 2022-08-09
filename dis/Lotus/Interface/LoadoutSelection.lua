@@ -218,9 +218,9 @@
  89 [-]: GETTABLE  R15 R15 K7   ; R15 := R15["mId"]
  90 [-]: SETTABLE  R14 K23 R15  ; R14["PresetId"] := R15
  91 [-]: NEWTABLE  R15 0 0      ; R15 := {}
- 92 [-]: SETTABLE  R14 K25 R15  ; R14["Items"] := R15
+ 92 [-]: SETTABLE  R14 K25 R15  ; R14[0xdf42446e] := R15
  93 [-]: NEWTABLE  R15 0 0      ; R15 := {}
- 94 [-]: SETTABLE  R14 K26 R15  ; R14["Names"] := R15
+ 94 [-]: SETTABLE  R14 K26 R15  ; R14[0x03f57322] := R15
  95 [-]: SETTABLE  R14 K27 K0   ; R14["Icon"] := nil
  96 [-]: GETTABLE  R15 R14 K23  ; R15 := R14["PresetId"]
  97 [-]: EQ        0 R15 R1     ; if R15 ~= R1 then PC := 100
@@ -613,7 +613,7 @@
  80 [-]: GETUPVAL  R0 U0        ; R0 := U0
  81 [-]: GETUPVAL  R0 U1        ; R0 := U1
  82 [-]: GETUPVAL  R0 U2        ; R0 := U2
- 83 [-]: SETTABLE  R1 K40 R2    ; R1["mOnSelectedCallback"] := R2
+ 83 [-]: SETTABLE  R1 K40 R2    ; R1[0x7b998233] := R2
  84 [-]: GETUPVAL  R1 U0        ; R1 := U0
  85 [-]: CLOSURE   R2 3         ; R2 := closure(Function #5.4)
  86 [-]: GETUPVAL  R0 U0        ; R0 := U0

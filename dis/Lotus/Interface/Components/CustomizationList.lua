@@ -2722,7 +2722,7 @@
  29 [-]: LOADK     R8 -1        ; R8 := -1.000000
  30 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
  31 [-]: MUL       R2 R4 R5     ; R2 := R4 * R5
- 32 [-]: SETTABLE  R3 K9 R2     ; R3["ValueChange"] := R2
+ 32 [-]: SETTABLE  R3 K9 R2     ; R3[0x33bdd652] := R2
  33 [-]: LT        0 K8 R2      ; if 0.000000 >= R2 then PC := 44
  34 [-]: JMP       44           ; PC := 44
  35 [-]: GETTABLE  R5 R0 K10    ; R5 := R0["mMovie"]
@@ -2744,7 +2744,7 @@
  51 [-]: GETGLOBAL R10 K14      ; R10 := 0x0032441c
  52 [-]: GETTABLE  R10 R10 K15  ; R10 := R10["UIColor_White"]
  53 [-]: CALL      R5 6 1       ; R5(R6,R7,R8,R9,R10)
- 54 [-]: SETTABLE  R0 K17 R1    ; R0["mVSId"] := R1
+ 54 [-]: SETTABLE  R0 K17 R1    ; R0[0xfa984a8e] := R1
  55 [-]: RETURN    R0 1         ; return 
 
 
@@ -2972,7 +2972,7 @@
   6 [-]: LOADBOOL  R2 0 0       ; R2 := false
   7 [-]: RETURN    R2 2         ; return R2
   8 [-]: GETTABLE  R2 R1 K2     ; R2 := R1["Id"]
-  9 [-]: SETTABLE  R0 K1 R2     ; R0[0x7b998233] := R2
+  9 [-]: SETTABLE  R0 K1 R2     ; R0["mCurrentElementId"] := R2
  10 [-]: SELF      R2 R0 K3     ; R3 := R0; R2 := R0[0xad03c283]
  11 [-]: MOVE      R4 R1        ; R4 := R1
  12 [-]: CALL      R2 3 1       ; R2(R3,R4)

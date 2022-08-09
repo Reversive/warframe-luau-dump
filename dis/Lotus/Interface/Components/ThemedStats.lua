@@ -54,7 +54,7 @@
  26 [-]: MOVE      R12 R1       ; R12 := R1
  27 [-]: LOADK     R13 12       ; R13 := 12.000000
  28 [-]: CALL      R10 4 2      ; R10 := R10(R11,R12,R13)
- 29 [-]: SETTABLE  R9 K20 R10   ; R9["mWidth"] := R10
+ 29 [-]: SETTABLE  R9 K20 R10   ; R9[0x67bc869f] := R10
  30 [-]: SETTABLE  R9 K22 K19   ; R9["mCached"] := nil
  31 [-]: SETTABLE  R9 K23 K19   ; R9["mCurrent"] := nil
  32 [-]: SETTABLE  R9 K24 K19   ; R9["mType"] := nil
@@ -85,7 +85,7 @@
  57 [-]: MOVE      R0 R6        ; R0 := R6
  58 [-]: SETTABLE  R9 K47 R10   ; R9["Redraw"] := R10
  59 [-]: CLOSURE   R10 3        ; R10 := closure(Function #1.4)
- 60 [-]: SETTABLE  R9 K48 R10   ; R9["SetBorderPadding"] := R10
+ 60 [-]: SETTABLE  R9 K48 R10   ; R9[0x00000041] := R10
  61 [-]: CLOSURE   R10 4        ; R10 := closure(Function #1.5)
  62 [-]: MOVE      R0 R8        ; R0 := R8
  63 [-]: MOVE      R0 R7        ; R0 := R7

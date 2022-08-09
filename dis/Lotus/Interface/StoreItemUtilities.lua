@@ -4110,7 +4110,7 @@
  34 [-]: TEST      R8 1         ; if R8 then PC := 46
  35 [-]: JMP       46           ; PC := 46
  36 [-]: GETTABLE  R8 R5 K7     ; R8 := R5["Name"]
- 37 [-]: SETTABLE  R5 K6 R8     ; R5[0x603636ad] := R8
+ 37 [-]: SETTABLE  R5 K6 R8     ; R5["RawName"] := R8
  38 [-]: GETUPVAL  R8 U1        ; R8 := U1
  39 [-]: GETTABLE  R8 R8 K8     ; R82 := R8[0x0c382f1c]
  40 [-]: MOVE      R9 R0        ; R9 := R0
@@ -7378,7 +7378,7 @@
 110 [-]: LOADK     R23 K21      ; R23 := "/Lotus/Language/Menu/Global_FormattedRankCaps"
 111 [-]: LOADBOOL  R24 0 0      ; R24 := false
 112 [-]: NEWTABLE  R25 0 1      ; R25 := {}
-113 [-]: SETTABLE  R25 K22 R19  ; R25[0x9df9be7e] := R19
+113 [-]: SETTABLE  R25 K22 R19  ; R25["RANK"] := R19
 114 [-]: CALL      R21 5 2      ; R21 := R21(R22,R23,R24,R25)
 115 [-]: MOVE      R20 R21      ; R20 := R21
 116 [-]: SELF      R21 R12 K23  ; R22 := R12; R21 := R12[0x86ba2663]

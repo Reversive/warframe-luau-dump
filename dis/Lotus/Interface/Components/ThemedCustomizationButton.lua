@@ -2836,7 +2836,7 @@
  68 [-]: SETTABLE  R3 K29 K30   ; R3["mEdgeAlpha"] := 40.000000
  69 [-]: SETTABLE  R3 K31 K32   ; R3["mFocusedEdgeAlpha"] := 80.000000
  70 [-]: GETTABLE  R8 R0 K26    ; R8 := R0["mDisableSlider"]
- 71 [-]: SETTABLE  R3 K33 R8    ; R3["mHideArrows"] := R8
+ 71 [-]: SETTABLE  R3 K33 R8    ; R3[0x6474e31b] := R8
  72 [-]: SETTABLE  R3 K34 K36   ; R3["mUnfocusedEdgeColor"] := 1.000000
  73 [-]: GETUPVAL  R8 U3        ; R8 := U3
  74 [-]: GETGLOBAL R9 K38       ; R9 := IconTypes
@@ -3462,7 +3462,7 @@
  15 [-]: SETTABLE  R2 K4 R0     ; R2["mDragSource"] := R0
  16 [-]: JMP       19           ; PC := 19
  17 [-]: GETUPVAL  R2 U2        ; R2 := U2
- 18 [-]: SETTABLE  R2 K5 R0     ; R2["mDragTarget"] := R0
+ 18 [-]: SETTABLE  R2 K5 R0     ; R2[0x71e9ac81] := R0
  19 [-]: RETURN    R0 1         ; return 
 
 

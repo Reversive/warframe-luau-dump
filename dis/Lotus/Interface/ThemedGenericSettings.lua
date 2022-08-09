@@ -1969,7 +1969,7 @@
   4 [-]: SETTABLE  R2 K1 K0     ; R2["mNewColor"] := nil
   5 [-]: JMP       8            ; PC := 8
   6 [-]: GETUPVAL  R2 U0        ; R2 := U0
-  7 [-]: SETTABLE  R2 K1 R0     ; R2["mNewColor"] := R0
+  7 [-]: SETTABLE  R2 K1 R0     ; R2[0x03f57322] := R0
   8 [-]: RETURN    R0 1         ; return 
 
 
@@ -1987,7 +1987,7 @@
   3 [-]: GETUPVAL  R1 U0        ; R1 := U0
   4 [-]: GETUPVAL  R2 U0        ; R2 := U0
   5 [-]: GETTABLE  R2 R2 K1     ; R2 := R2["mNewColor"]
-  6 [-]: SETTABLE  R1 K0 R2     ; R1["mCurrColor"] := R2
+  6 [-]: SETTABLE  R1 K0 R2     ; R1[0x1c5b546f] := R2
   7 [-]: GETGLOBAL R1 K2        ; R1 := 0x7b998233
   8 [-]: GETUPVAL  R2 U0        ; R2 := U0
   9 [-]: GETTABLE  R2 R2 K3     ; R2 := R2["mOnColorSelected"]

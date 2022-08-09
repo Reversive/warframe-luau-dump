@@ -7214,7 +7214,7 @@
 124 [-]: LOADK     R6 K17       ; R6 := "DragImage"
 125 [-]: MOVE      R7 R2        ; R7 := R2
 126 [-]: NEWTABLE  R8 0 3       ; R8 := {}
-127 [-]: SETTABLE  R8 K33 R1    ; R8[0x00000041] := R1
+127 [-]: SETTABLE  R8 K33 R1    ; R8[0x0000004a] := R1
 128 [-]: GETGLOBAL R9 K3        ; R9 := mInstalledGrid
 129 [-]: SETTABLE  R8 K34 R9    ; R8["grid"] := R9
 130 [-]: SETTABLE  R8 K35 R0    ; R8["element"] := R0
@@ -7801,7 +7801,7 @@
  53 [-]: TEST      R8 0         ; if not R8 then PC := 84
  54 [-]: JMP       84           ; PC := 84
  55 [-]: NEWTABLE  R8 0 0       ; R8 := {}
- 56 [-]: SETTABLE  R7 K25 R8    ; R7["Categories"] := R8
+ 56 [-]: SETTABLE  R7 K25 R8    ; R7[0x91a24e4b] := R8
  57 [-]: LE        0 R5 K26     ; if R5 > 3.000000 then PC := 67
  58 [-]: JMP       67           ; PC := 67
  59 [-]: GETGLOBAL R8 K27       ; R8 := 0x33bdd652
@@ -8671,13 +8671,13 @@
  82 [-]: GETGLOBAL R2 K45       ; R2 := mAvionicCategories
  83 [-]: GETTABLE  R2 R2 K46    ; R2 := R2["mSelectedElement"]
  84 [-]: GETTABLE  R2 R2 K48    ; R2 := R2["HiddenCats"]
- 85 [-]: SETTABLE  R1 K47 R2    ; R1[0x34291f5c] := R2
+ 85 [-]: SETTABLE  R1 K47 R2    ; R1["mForceHiddenCategories"] := R2
  86 [-]: GETGLOBAL R1 K0        ; R1 := mCollectionGrid
  87 [-]: CLOSURE   R2 1         ; R2 := closure(Function #66.2)
  88 [-]: SETTABLE  R1 K49 R2    ; R1["RepositionButton"] := R2
  89 [-]: GETGLOBAL R1 K0        ; R1 := mCollectionGrid
  90 [-]: CLOSURE   R2 2         ; R2 := closure(Function #66.3)
- 91 [-]: SETTABLE  R1 K50 R2    ; R1[0xea061e98] := R2
+ 91 [-]: SETTABLE  R1 K50 R2    ; R1["SetupPreInterpolationValues"] := R2
  92 [-]: GETGLOBAL R1 K0        ; R1 := mCollectionGrid
  93 [-]: GETGLOBAL R2 K0        ; R2 := mCollectionGrid
  94 [-]: GETTABLE  R2 R2 K52    ; R2 := R2["DefaultAlphaInterpolation"]
@@ -13661,7 +13661,7 @@
  87 [-]: GETTABLE  R10 R10 K28  ; R82 := R10[0x3f3e4d12]
  88 [-]: MOVE      R11 R4       ; R11 := R4
  89 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 90 [-]: SETTABLE  R9 K26 R10   ; R9["TYPE"] := R10
+ 90 [-]: SETTABLE  R9 K26 R10   ; R9[0x659d451f] := R10
  91 [-]: CALL      R5 5 2       ; R5 := R5(R6,R7,R8,R9)
  92 [-]: GETGLOBAL R6 K29       ; R6 := 0x33bdd652
  93 [-]: GETTABLE  R6 R6 K30    ; R82 := R6[0x23d5322f]
@@ -13849,7 +13849,7 @@
 275 [-]: CALL      R23 2 2      ; R23 := R23(R24)
 276 [-]: LOADBOOL  R24 0 0      ; R24 := false
 277 [-]: CALL      R21 4 2      ; R21 := R21(R22,R23,R24)
-278 [-]: SETTABLE  R20 K26 R21  ; R20["TYPE"] := R21
+278 [-]: SETTABLE  R20 K26 R21  ; R20[0x659d451f] := R21
 279 [-]: CALL      R16 5 2      ; R16 := R16(R17,R18,R19,R20)
 280 [-]: MOVE      R17 R16      ; R17 := R16
 281 [-]: LOADK     R18 K66      ; R18 := "\r\n\r\n"
@@ -13888,7 +13888,7 @@
 314 [-]: CALL      R26 2 2      ; R26 := R26(R27)
 315 [-]: LOADBOOL  R27 0 0      ; R27 := false
 316 [-]: CALL      R24 4 2      ; R24 := R24(R25,R26,R27)
-317 [-]: SETTABLE  R23 K26 R24  ; R23["TYPE"] := R24
+317 [-]: SETTABLE  R23 K26 R24  ; R23[0x659d451f] := R24
 318 [-]: GETGLOBAL R24 K3       ; R24 := 0x64fb1586
 319 [-]: MOVE      R25 R18      ; R25 := R18
 320 [-]: CALL      R24 2 2      ; R24 := R24(R25)
@@ -14045,7 +14045,7 @@
 471 [-]: LOADK     R30 K99      ; R30 := "/Lotus/Language/Menu/Loadout_Polarize_UnGildedModularDesc"
 472 [-]: LOADBOOL  R31 0 0      ; R31 := false
 473 [-]: NEWTABLE  R32 0 1      ; R32 := {}
-474 [-]: SETTABLE  R32 K26 R4   ; R32["TYPE"] := R4
+474 [-]: SETTABLE  R32 K26 R4   ; R32[0x659d451f] := R4
 475 [-]: CALL      R28 5 2      ; R28 := R28(R29,R30,R31,R32)
 476 [-]: SETTABLE  R21 K77 R28  ; R21["ErrorMsg"] := R28
 477 [-]: JMP       518          ; PC := 518
@@ -14079,7 +14079,7 @@
 505 [-]: CALL      R37 2 2      ; R37 := R37(R38)
 506 [-]: LOADBOOL  R38 0 0      ; R38 := false
 507 [-]: CALL      R35 4 2      ; R35 := R35(R36,R37,R38)
-508 [-]: SETTABLE  R34 K26 R35  ; R34["TYPE"] := R35
+508 [-]: SETTABLE  R34 K26 R35  ; R34[0x659d451f] := R35
 509 [-]: GETGLOBAL R35 K3       ; R35 := 0x64fb1586
 510 [-]: MOVE      R36 R29      ; R36 := R29
 511 [-]: CALL      R35 2 2      ; R35 := R35(R36)
@@ -14281,7 +14281,7 @@
 707 [-]: LOADK     R38 K131     ; R38 := "/Lotus/Language/Menu/Loadout_FocusLens_UnGildedModularDesc"
 708 [-]: LOADBOOL  R39 0 0      ; R39 := false
 709 [-]: NEWTABLE  R40 0 1      ; R40 := {}
-710 [-]: SETTABLE  R40 K26 R4   ; R40["TYPE"] := R4
+710 [-]: SETTABLE  R40 K26 R4   ; R40[0x659d451f] := R4
 711 [-]: CALL      R36 5 2      ; R36 := R36(R37,R38,R39,R40)
 712 [-]: SETTABLE  R33 K77 R36  ; R33["ErrorMsg"] := R36
 713 [-]: JMP       730          ; PC := 730
@@ -14742,7 +14742,7 @@
 188 [-]: GETGLOBAL R10 K46      ; R10 := 0x67652851
 189 [-]: CALL      R10 1 2      ; R10 := R10()
 190 [-]: SUB       R9 R9 R10    ; R9 := R9 - R10
-191 [-]: SETTABLE  R8 K45 R9    ; R8[0x7b998233] := R9
+191 [-]: SETTABLE  R8 K45 R9    ; R8[1.000000] := R9
 192 [-]: GETGLOBAL R8 K44       ; R8 := mWarningFlash
 193 [-]: GETGLOBAL R9 K47       ; R9 := 0x5bced4c4
 194 [-]: GETTABLE  R9 R9 K48    ; R82 := R9[0xb62ecfe0]
@@ -14750,7 +14750,7 @@
 196 [-]: GETGLOBAL R11 K44      ; R11 := mWarningFlash
 197 [-]: GETTABLE  R11 R11 K45  ; R11 := R11[1.000000]
 198 [-]: CALL      R9 3 2       ; R9 := R9(R10,R11)
-199 [-]: SETTABLE  R8 K45 R9    ; R8[0x7b998233] := R9
+199 [-]: SETTABLE  R8 K45 R9    ; R8[1.000000] := R9
 200 [-]: GETGLOBAL R8 K49       ; R8 := 0x60130201
 201 [-]: LOADK     R9 255       ; R9 := 255.000000
 202 [-]: LOADK     R10 0        ; R10 := 0.000000
@@ -17665,7 +17665,7 @@
  10 [-]: MOVE      R10 R7       ; R10 := R7
  11 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
  12 [-]: GETTABLE  R9 R8 K2     ; R9 := R8["mClipName"]
- 13 [-]: SETTABLE  R8 K3 R1     ; R8[0x464b3347] := R1
+ 13 [-]: SETTABLE  R8 K3 R1     ; R8[0xae91e43b] := R1
  14 [-]: GETGLOBAL R10 K5       ; R10 := 0xae91e43b
  15 [-]: SELF      R10 R10 K6   ; R11 := R10; R10 := R10[0x91a24e4b]
  16 [-]: MOVE      R12 R9       ; R12 := R9
@@ -17674,7 +17674,7 @@
  19 [-]: LOADK     R13 33       ; R13 := 33.000000
  20 [-]: CALL      R10 4 2      ; R10 := R10(R11,R12,R13)
  21 [-]: ADD       R10 R10 K8   ; R10 := R10 + 20.000000
- 22 [-]: SETTABLE  R8 K4 R10    ; R8[0xae91e43b] := R10
+ 22 [-]: SETTABLE  R8 K4 R10    ; R8[0x5f56eeab] := R10
  23 [-]: GETTABLE  R10 R8 K4    ; R10 := R8["BgWidth"]
  24 [-]: ADD       R10 R1 R10   ; R10 := R1 + R10
  25 [-]: ADD       R1 R10 R3    ; R1 := R10 + R3
@@ -19583,7 +19583,7 @@
  41 [-]: SETTABLE  R1 K26 R2    ; R1["mOnFocusedCallback"] := R2
  42 [-]: GETGLOBAL R1 K2        ; R1 := mAvionicCategories
  43 [-]: CLOSURE   R2 4         ; R2 := closure(Function #157.5)
- 44 [-]: SETTABLE  R1 K27 R2    ; R1["mOnUnfocusedCallback"] := R2
+ 44 [-]: SETTABLE  R1 K27 R2    ; R1[0x00b2acb0] := R2
  45 [-]: GETGLOBAL R1 K2        ; R1 := mAvionicCategories
  46 [-]: CLOSURE   R2 5         ; R2 := closure(Function #157.6)
  47 [-]: SETTABLE  R1 K28 R2    ; R1["mOnSelectedCallback"] := R2
@@ -24974,7 +24974,7 @@
  44 [-]: SETTABLE  R5 K18 R3    ; R5["StoredItem"] := R3
  45 [-]: SETTABLE  R5 K19 R0    ; R5["LoadOutType"] := R0
  46 [-]: SETTABLE  R5 K20 R1    ; R5["LoadOutSlot"] := R1
- 47 [-]: SETTABLE  R4 K17 R5    ; R4[0x00020029] := R5
+ 47 [-]: SETTABLE  R4 K17 R5    ; R4[0x0003007e] := R5
  48 [-]: SELF      R4 R2 K21    ; R5 := R2; R4 := R2[0xe4162eed]
  49 [-]: LOADK     R6 K22       ; R6 := "LinkModConfig"
  50 [-]: LOADK     R7 K23       ; R7 := ""

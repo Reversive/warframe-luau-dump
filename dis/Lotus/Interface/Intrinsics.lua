@@ -2677,7 +2677,7 @@
  16 [-]: GETTABLE  R6 R6 K10    ; R82 := R6[0x1142c7a8]
  17 [-]: GETUPVAL  R7 U1        ; R7 := U1
  18 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 19 [-]: SETTABLE  R5 K9 R6     ; R5[0xae7e2261] := R6
+ 19 [-]: SETTABLE  R5 K9 R6     ; R5["COUNT"] := R6
  20 [-]: CALL      R1 5 1       ; R1(R2,R3,R4,R5)
  21 [-]: RETURN    R0 1         ; return 
 

@@ -390,7 +390,7 @@
  26 [-]: GETUPVAL  R10 U3       ; R10 := U3
  27 [-]: GETTABLE  R10 R10 K0   ; R10 := R10["Fishes"]
  28 [-]: GETTABLE  R10 R10 R5   ; R10 := R10[R5]
- 29 [-]: SETTABLE  R9 K4 R10    ; R9["StoreItem"] := R10
+ 29 [-]: SETTABLE  R9 K4 R10    ; R9[0xf7abfecf] := R10
  30 [-]: SETTABLE  R9 K5 K6     ; R9["Count"] := -1.000000
  31 [-]: CALL      R7 3 1       ; R7(R8,R9)
  32 [-]: GETUPVAL  R7 U2        ; R7 := U2
@@ -403,7 +403,7 @@
  39 [-]: NEWTABLE  R9 0 2       ; R9 := {}
  40 [-]: GETUPVAL  R10 U2       ; R10 := U2
  41 [-]: GETTABLE  R10 R10 R5   ; R10 := R10[R5]
- 42 [-]: SETTABLE  R9 K4 R10    ; R9["StoreItem"] := R10
+ 42 [-]: SETTABLE  R9 K4 R10    ; R9[0xf7abfecf] := R10
  43 [-]: SETTABLE  R9 K5 K7     ; R9["Count"] := 1.000000
  44 [-]: CALL      R7 3 1       ; R7(R8,R9)
  45 [-]: LOADK     R7 1         ; R7 := 1.000000
@@ -426,7 +426,7 @@
  62 [-]: GETTABLE  R18 R18 K5   ; R18 := R18["Count"]
  63 [-]: GETTABLE  R19 R11 K5   ; R19 := R11["Count"]
  64 [-]: ADD       R18 R18 R19  ; R18 := R18 + R19
- 65 [-]: SETTABLE  R17 K5 R18   ; R17["Count"] := R18
+ 65 [-]: SETTABLE  R17 K5 R18   ; R17[0x81284a57] := R18
  66 [-]: LOADBOOL  R12 1 0      ; R12 := true
  67 [-]: JMP       69           ; PC := 69
  68 [-]: FORLOOP   R13 55       ; R13 += R15; if R13 <= R14 then begin PC := 55; R16 := R13 end

@@ -953,7 +953,7 @@
   6 [-]: JMP       10           ; PC := 10
   7 [-]: GETGLOBAL R0 K1        ; R0 := _T
   8 [-]: NEWTABLE  R1 0 0       ; R1 := {}
-  9 [-]: SETTABLE  R0 K2 R1     ; R0["MissionSettings"] := R1
+  9 [-]: SETTABLE  R0 K2 R1     ; R0[0x00000083] := R1
  10 [-]: GETGLOBAL R0 K0        ; R0 := 0x7b998233
  11 [-]: GETGLOBAL R1 K1        ; R1 := _T
  12 [-]: GETTABLE  R1 R1 K2     ; R1 := R1["MissionSettings"]

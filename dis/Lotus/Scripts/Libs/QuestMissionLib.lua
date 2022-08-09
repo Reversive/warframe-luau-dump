@@ -217,7 +217,7 @@
  14 [-]: SETTABLE  R2 K9 K8     ; R2["loadFromLobby"] := false
  15 [-]: SETTABLE  R2 K10 K11   ; R2["migrateServer"] := true
  16 [-]: GETTABLE  R3 R0 K12    ; R3 := R0["gameRules"]
- 17 [-]: SETTABLE  R2 K12 R3    ; R2["gameRules"] := R3
+ 17 [-]: SETTABLE  R2 K12 R3    ; R2[0x8eb2112d] := R3
  18 [-]: GETUPVAL  R3 U0        ; R3 := U0
  19 [-]: GETTABLE  R3 R3 K13    ; R82 := R3[0x6c3b4854]
  20 [-]: MOVE      R4 R2        ; R4 := R2

@@ -84,7 +84,7 @@
  46 [-]: MOVE      R8 R1        ; R8 := R1
  47 [-]: LOADK     R9 0         ; R9 := 0.000000
  48 [-]: CALL      R6 4 2       ; R6 := R6(R7,R8,R9)
- 49 [-]: SETTABLE  R5 K20 R6    ; R5[0xb55952db] := R6
+ 49 [-]: SETTABLE  R5 K20 R6    ; R5["mInitialRootX"] := R6
  50 [-]: SELF      R6 R0 K23    ; R7 := R0; R6 := R0[0x2ce15376]
  51 [-]: MOVE      R8 R1        ; R8 := R1
  52 [-]: LOADK     R9 K24       ; R9 := "Scrub"

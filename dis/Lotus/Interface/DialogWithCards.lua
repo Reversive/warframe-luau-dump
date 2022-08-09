@@ -1235,7 +1235,7 @@
 422 [-]: LOADNIL   R32 R33      ; R32 := R33 := nil
 423 [-]: LOADBOOL  R34 1 0      ; R34 := true
 424 [-]: CALL      R28 7 2      ; R28 := R28(R29,R30,R31,R32,R33,R34)
-425 [-]: SETTABLE  R27 K73 R28  ; R27[0x00000000] := R28
+425 [-]: SETTABLE  R27 K73 R28  ; R27["StoreInfo"] := R28
 426 [-]: GETUPVAL  R29 U11      ; R29 := U11
 427 [-]: GETTABLE  R29 R29 K74  ; R82 := R29[0xb15e6aca]
 428 [-]: MOVE      R30 R27      ; R30 := R27
@@ -1435,7 +1435,7 @@
  12 [-]: GETTABLE  R4 R4 K0     ; R4 := R4[3.000000]
  13 [-]: GETTABLE  R4 R4 K3     ; R4 := R4["mClipName"]
  14 [-]: SETTABLE  R3 K3 R4     ; R3["mClipName"] := R4
- 15 [-]: SETTABLE  R3 K4 R1     ; R3[0xda0c93a2] := R1
+ 15 [-]: SETTABLE  R3 K4 R1     ; R3["Card"] := R1
  16 [-]: CALL      R2 2 1       ; R2(R3)
  17 [-]: RETURN    R0 1         ; return 
 

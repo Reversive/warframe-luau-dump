@@ -1533,7 +1533,7 @@
  19 [-]: CALL      R2 3 1       ; R2(R3,R4)
  20 [-]: GETGLOBAL R2 K7        ; R2 := _T
  21 [-]: GETGLOBAL R3 K9        ; R3 := 0xbb297032
- 22 [-]: SETTABLE  R2 K8 R3     ; R2[0xb2532845] := R3
+ 22 [-]: SETTABLE  R2 K8 R3     ; R2["QuestProgressWaitingForUpgradesScreen"] := R3
  23 [-]: GETGLOBAL R2 K10       ; R2 := 0x7ed0a956
  24 [-]: LOADK     R3 K11       ; R3 := "/Lotus/Interface/DiegeticUpgradeCards.swf"
  25 [-]: CALL      R2 2 2       ; R2 := R2(R3)

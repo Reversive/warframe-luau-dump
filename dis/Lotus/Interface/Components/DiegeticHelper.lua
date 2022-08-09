@@ -303,7 +303,7 @@
 101 [-]: LOADK     R7 0         ; R7 := 0.000000
 102 [-]: LOADK     R8 255       ; R8 := 255.000000
 103 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
-104 [-]: SETTABLE  R4 K28 R5    ; R4[0x2b54251b] := R5
+104 [-]: SETTABLE  R4 K28 R5    ; R4["alpha"] := R5
 105 [-]: RETURN    R0 1         ; return 
 
 

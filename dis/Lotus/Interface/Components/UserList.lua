@@ -162,7 +162,7 @@
 122 [-]: CLOSURE   R13 1        ; R13 := closure(Function #1.2)
 123 [-]: SETTABLE  R10 K69 R13  ; R10["HideMenus"] := R13
 124 [-]: CLOSURE   R13 2        ; R13 := closure(Function #1.3)
-125 [-]: SETTABLE  R10 K70 R13  ; R10[0x00000041] := R13
+125 [-]: SETTABLE  R10 K70 R13  ; R10["GetPlanetAndNodeFromNodeName"] := R13
 126 [-]: CLOSURE   R13 3        ; R13 := closure(Function #1.4)
 127 [-]: GETUPVAL  R0 U0        ; R0 := U0
 128 [-]: SETTABLE  R10 K71 R13  ; R10["GetPlanetAndNodeFromModeId"] := R13
@@ -173,7 +173,7 @@
 133 [-]: GETTABLE  R13 R10 K74  ; R13 := R10["Redraw"]
 134 [-]: SETTABLE  R10 K73 R13  ; R10["_UserList_Redraw"] := R13
 135 [-]: CLOSURE   R13 5        ; R13 := closure(Function #1.6)
-136 [-]: SETTABLE  R10 K74 R13  ; R10[0x0000005f] := R13
+136 [-]: SETTABLE  R10 K74 R13  ; R10["Redraw"] := R13
 137 [-]: CLOSURE   R13 6        ; R13 := closure(Function #1.7)
 138 [-]: SETTABLE  R10 K75 R13  ; R10["SetupPreInterpolationValues"] := R13
 139 [-]: GETTABLE  R13 R10 K77  ; R13 := R10["DefaultAlphaInterpolation"]
@@ -2170,9 +2170,9 @@
 
   1 [-]: GETTABLE  R2 R0 K0     ; R2 := R0["mDrawnElements"]
   2 [-]: ADD       R2 R2 K1     ; R2 := R2 + 1.000000
-  3 [-]: SETTABLE  R0 K0 R2     ; R0[0x06d055f9] := R2
+  3 [-]: SETTABLE  R0 K0 R2     ; R0["mDrawnElements"] := R2
   4 [-]: GETTABLE  R2 R0 K0     ; R2 := R0["mDrawnElements"]
-  5 [-]: SETTABLE  R1 K2 R2     ; R1[0x34291f5c] := R2
+  5 [-]: SETTABLE  R1 K2 R2     ; R1["mDrawnIndex"] := R2
   6 [-]: GETTABLE  R2 R0 K3     ; R2 := R0["mMovie"]
   7 [-]: SELF      R2 R2 K4     ; R3 := R2; R2 := R2[0xaade900e]
   8 [-]: GETTABLE  R4 R1 K5     ; R4 := R1["mClipName"]
@@ -2225,7 +2225,7 @@
  12 [-]: SETTABLE  R3 K7 R4     ; R3["AccountId"] := R4
  13 [-]: GETTABLE  R4 R1 K10    ; R4 := R1["mPresence"]
  14 [-]: GETTABLE  R4 R4 K11    ; R4 := R4["state"]
- 15 [-]: SETTABLE  R3 K9 R4     ; R3["State"] := R4
+ 15 [-]: SETTABLE  R3 K9 R4     ; R3[0xcf0cb9c2] := R4
  16 [-]: GETTABLE  R4 R1 K13    ; R4 := R1["mStatus"]
  17 [-]: SETTABLE  R3 K12 R4    ; R3["Status"] := R4
  18 [-]: GETTABLE  R4 R1 K15    ; R4 := R1["mActiveAvatarImageType"]
@@ -2234,9 +2234,9 @@
  21 [-]: GETTABLE  R4 R4 K18    ; R4 := R4["sec"]
  22 [-]: SETTABLE  R3 K16 R4    ; R3["LastLogin"] := R4
  23 [-]: GETTABLE  R4 R1 K20    ; R4 := R1["mPlayerLevel"]
- 24 [-]: SETTABLE  R3 K19 R4    ; R3["PlayerLevel"] := R4
+ 24 [-]: SETTABLE  R3 K19 R4    ; R3[0x372f38bf] := R4
  25 [-]: NEWTABLE  R4 0 0       ; R4 := {}
- 26 [-]: SETTABLE  R3 K21 R4    ; R3["Categories"] := R4
+ 26 [-]: SETTABLE  R3 K21 R4    ; R3[0xe0f7ce9e] := R4
  27 [-]: GETTABLE  R4 R0 K22    ; R4 := R0["mShowClanRank"]
  28 [-]: TEST      R4 0         ; if not R4 then PC := 81
  29 [-]: JMP       81           ; PC := 81

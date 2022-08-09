@@ -2089,7 +2089,7 @@
  91 [-]: SELF      R9 R9 K23    ; R10 := R9; R9 := R9[0xeb9c0cad]
  92 [-]: MOVE      R11 R8       ; R11 := R8
  93 [-]: CALL      R9 3 1       ; R9(R10,R11)
- 94 [-]: SETTABLE  R3 K19 R8    ; R3[0x668fc4eb] := R8
+ 94 [-]: SETTABLE  R3 K19 R8    ; R3["mAttachment"] := R8
  95 [-]: GETTABLE  R9 R3 K16    ; R9 := R3["mPlayingAnimDuration"]
  96 [-]: EQ        1 R9 K0      ; if R9 == nil then PC := 109
  97 [-]: JMP       109          ; PC := 109
@@ -3567,7 +3567,7 @@
  56 [-]: SETTABLE  R9 K17 R11   ; R9["Icon"] := R11
  57 [-]: SETTABLE  R9 K26 K27   ; R9["Themed"] := true
  58 [-]: SETTABLE  R9 K28 R7    ; R9["MemberIndex"] := R7
- 59 [-]: SETTABLE  R9 K29 R8    ; R9["CrewMemberInfo"] := R8
+ 59 [-]: SETTABLE  R9 K29 R8    ; R9[0x0000005d] := R8
  60 [-]: SETTABLE  R9 K30 K31   ; R9["IsNone"] := false
  61 [-]: GETTABLE  R11 R8 K33   ; R11 := R8["mItemId"]
  62 [-]: GETTABLE  R11 R11 K34  ; R11 := R11["mId"]
@@ -7382,7 +7382,7 @@
   3 [-]: GETUPVAL  R2 U0        ; R2 := U0
   4 [-]: SETTABLE  R1 K0 R2     ; R1["mOnFocusedCallback"] := R2
   5 [-]: GETUPVAL  R2 U1        ; R2 := U1
-  6 [-]: SETTABLE  R1 K1 R2     ; R1[0xe4162eed] := R2
+  6 [-]: SETTABLE  R1 K1 R2     ; R1["mOnUnfocusedCallback"] := R2
   7 [-]: GETUPVAL  R2 U2        ; R2 := U2
   8 [-]: SETTABLE  R1 K2 R2     ; R1["mOnReleasedCallback"] := R2
   9 [-]: GETGLOBAL R2 K4        ; R2 := 0x603636ad
@@ -7706,7 +7706,7 @@
 122 [-]: GETTABLE  R18 R5 K12   ; R18 := R5["mItemType"]
 123 [-]: CALL      R16 3 2      ; R16 := R16(R17,R18)
 124 [-]: SETTABLE  R15 K46 R16  ; R15["storeItem"] := R16
-125 [-]: SETTABLE  R15 K48 R5   ; R15["info"] := R5
+125 [-]: SETTABLE  R15 K48 R5   ; R15[0x0000004a] := R5
 126 [-]: SETTABLE  R15 K49 K40  ; R15["xp"] := 0.000000
 127 [-]: GETTABLE  R16 R1 K25   ; R16 := R1["mWeaponConfigIdx"]
 128 [-]: SETTABLE  R15 K50 R16  ; R15["configSlot"] := R16
@@ -7714,7 +7714,7 @@
 130 [-]: MOVE      R18 R6       ; R18 := R6
 131 [-]: CALL      R16 3 2      ; R16 := R16(R17,R18)
 132 [-]: SETTABLE  R15 K51 R16  ; R15["item"] := R16
-133 [-]: SETTABLE  R14 K44 R15  ; R14["upgradeItem"] := R15
+133 [-]: SETTABLE  R14 K44 R15  ; R14[0x0000004c] := R15
 134 [-]: GETGLOBAL R14 K53      ; R14 := 0xae91e43b
 135 [-]: SELF      R14 R14 K54  ; R15 := R14; R14 := R14[0x1fd6abd0]
 136 [-]: GETGLOBAL R16 K55      ; R16 := 0x93a422ee

@@ -1103,7 +1103,7 @@
  74 [-]: SETTABLE  R16 K15 R13  ; R16["mName"] := R13
  75 [-]: GETUPVAL  R17 U0       ; R17 := U0
  76 [-]: GETTABLE  R17 R17 K25  ; R17 := R17["TITLE"]
- 77 [-]: SETTABLE  R16 K24 R17  ; R16["Type"] := R17
+ 77 [-]: SETTABLE  R16 K24 R17  ; R16[0x34291f5c] := R17
  78 [-]: CALL      R14 3 1      ; R14(R15,R16)
  79 [-]: LOADK     R14 1        ; R14 := 1.000000
  80 [-]: MOVE      R15 R10      ; R15 := R10
