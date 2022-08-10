@@ -95,9 +95,9 @@
  67 [-]: CLOSURE   R9 9         ; R9 := closure(Function #1.10)
  68 [-]: SETTABLE  R8 K64 R9    ; R8["IsActive"] := R9
  69 [-]: CLOSURE   R9 10        ; R9 := closure(Function #1.11)
- 70 [-]: SETTABLE  R8 K65 R9    ; R8[0x00000001] := R9
+ 70 [-]: SETTABLE  R8 K65 R9    ; R8["SetActive"] := R9
  71 [-]: CLOSURE   R9 11        ; R9 := closure(Function #1.12)
- 72 [-]: SETTABLE  R8 K66 R9    ; R8[0x00000001] := R9
+ 72 [-]: SETTABLE  R8 K66 R9    ; R8["SetDefaultColors"] := R9
  73 [-]: CLOSURE   R9 12        ; R9 := closure(Function #1.13)
  74 [-]: SETTABLE  R8 K67 R9    ; R8["RollOver"] := R9
  75 [-]: CLOSURE   R9 13        ; R9 := closure(Function #1.14)

@@ -2444,7 +2444,7 @@
 111 [-]: SETTABLE  R6 K6 R7     ; R6["Job"] := R7
 112 [-]: GETUPVAL  R6 U0        ; R6 := U0
 113 [-]: GETTABLE  R7 R0 K9     ; R7 := R0["challengeMissionId"]
-114 [-]: SETTABLE  R6 K8 R7     ; R6[0xbe190284] := R7
+114 [-]: SETTABLE  R6 K8 R7     ; R6["ChallengeMissionId"] := R7
 115 [-]: GETUPVAL  R6 U0        ; R6 := U0
 116 [-]: GETTABLE  R6 R6 K4     ; R6 := R6["Info"]
 117 [-]: GETUPVAL  R7 U0        ; R7 := U0
@@ -2889,7 +2889,7 @@
  67 [-]: GETGLOBAL R6 K19       ; R6 := mVoteInfoText
  68 [-]: SETTABLE  R6 K20 R0    ; R6["Title"] := R0
  69 [-]: GETGLOBAL R6 K19       ; R6 := mVoteInfoText
- 70 [-]: SETTABLE  R6 K21 R1    ; R6["SubTitle"] := R1
+ 70 [-]: SETTABLE  R6 K21 R1    ; R6[0xe7f2b02f] := R1
  71 [-]: RETURN    R0 1         ; return 
 
 
@@ -3113,7 +3113,7 @@
  71 [-]: LOADK     R6 1         ; R6 := 1.000000
  72 [-]: LOADK     R7 3         ; R7 := 3.000000
  73 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
- 74 [-]: SETTABLE  R3 K17 R4    ; R3[0x2ccfe858] := R4
+ 74 [-]: SETTABLE  R3 K17 R4    ; R3["regionId"] := R4
  75 [-]: GETGLOBAL R4 K5        ; R4 := 0xe7f2b02f
  76 [-]: SELF      R4 R4 K23    ; R5 := R4; R4 := R4[0xee2f24fc]
  77 [-]: MOVE      R6 R3        ; R6 := R3
@@ -6208,7 +6208,7 @@
 250 [-]: SETTABLE  R14 K54 R15  ; R14["accountId"] := R15
 251 [-]: GETGLOBAL R15 K23      ; R15 := mGameInviteInfo
 252 [-]: GETTABLE  R15 R15 K13  ; R15 := R15["bindingServerId"]
-253 [-]: SETTABLE  R14 K13 R15  ; R14[0x00000099] := R15
+253 [-]: SETTABLE  R14 K13 R15  ; R14["bindingServerId"] := R15
 254 [-]: GETGLOBAL R15 K23      ; R15 := mGameInviteInfo
 255 [-]: GETTABLE  R15 R15 K26  ; R15 := R15["squadMission"]
 256 [-]: SETTABLE  R14 K26 R15  ; R14["squadMission"] := R15
@@ -10457,7 +10457,7 @@
  99 [-]: GETGLOBAL R1 K18       ; R1 := _T
 100 [-]: GETUPVAL  R2 U6        ; R2 := U6
 101 [-]: GETTABLE  R2 R2 K20    ; R2 := R2["NONE"]
-102 [-]: SETTABLE  R1 K19 R2    ; R1["SquadCountdownTimer"] := R2
+102 [-]: SETTABLE  R1 K19 R2    ; R1[0x3d106989] := R2
 103 [-]: GETUPVAL  R1 U2        ; R1 := U2
 104 [-]: GETUPVAL  R2 U7        ; R2 := U7
 105 [-]: EQ        1 R1 R2      ; if R1 == R2 then PC := 158
@@ -13010,7 +13010,7 @@
 138 [-]: LOADK     R9 K38       ; R9 := "/Lotus/Language/Menu/ConfirmJoinHighPing"
 139 [-]: LOADBOOL  R10 0 0      ; R10 := false
 140 [-]: NEWTABLE  R11 0 1      ; R11 := {}
-141 [-]: SETTABLE  R11 K39 R3   ; R11[0x3f3ae64c] := R3
+141 [-]: SETTABLE  R11 K39 R3   ; R11["PING"] := R3
 142 [-]: CALL      R7 5 2       ; R7 := R7(R8,R9,R10,R11)
 143 [-]: LOADK     R8 K37       ; R8 := "ConfirmJoinExtraCondition"
 144 [-]: CALL      R6 3 1       ; R6(R7,R8)
@@ -13154,7 +13154,7 @@
  60 [-]: NEWTABLE  R10 0 1      ; R10 := {}
  61 [-]: SETTABLE  R10 K21 R5   ; R10["CURRENCY"] := R5
  62 [-]: CALL      R6 5 2       ; R6 := R6(R7,R8,R9,R10)
- 63 [-]: SETTABLE  R4 K22 R6    ; R4["locString"] := R6
+ 63 [-]: SETTABLE  R4 K22 R6    ; R4[0xd8140b94] := R6
  64 [-]: GETGLOBAL R7 K0        ; R7 := 0x7b998233
  65 [-]: GETGLOBAL R8 K23       ; R8 := 0xd1d0c729
  66 [-]: CALL      R7 2 2       ; R7 := R7(R8)
@@ -13699,7 +13699,7 @@
 139 [-]: SELF      R17 R17 K36  ; R18 := R17; R17 := R17[0x776913bc]
 140 [-]: CALL      R17 2 0      ; R17,... := R17(R18)
 141 [-]: CALL      R16 0 2      ; R16 := R16(R17,...)
-142 [-]: SETTABLE  R15 K34 R16  ; R15[0x0000009a] := R16
+142 [-]: SETTABLE  R15 K34 R16  ; R15[0x74a6df5d] := R16
 143 [-]: GETGLOBAL R16 K1       ; R16 := 0xe7f2b02f
 144 [-]: SELF      R16 R16 K38  ; R17 := R16; R16 := R16[0xb6b65f09]
 145 [-]: CALL      R16 2 2      ; R16 := R16(R17)

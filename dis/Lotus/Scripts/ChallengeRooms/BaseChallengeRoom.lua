@@ -267,7 +267,7 @@
  94 [-]: CALL      R11 3 2      ; R11 := R11(R12,R13)
  95 [-]: SELF      R11 R11 K27  ; R12 := R11; R11 := R11[0x5ca33548]
  96 [-]: CALL      R11 2 2      ; R11 := R11(R12)
- 97 [-]: SETTABLE  R10 K26 R11  ; R10[0x8f99293a] := R11
+ 97 [-]: SETTABLE  R10 K26 R11  ; R10["PLAYER_NAME"] := R11
  98 [-]: GETGLOBAL R11 K21      ; R11 := 0x603636ad
  99 [-]: GETUPVAL  R12 U13      ; R12 := U13
 100 [-]: MOVE      R13 R10      ; R13 := R10

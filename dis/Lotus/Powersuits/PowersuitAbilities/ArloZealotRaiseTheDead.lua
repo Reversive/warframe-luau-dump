@@ -251,7 +251,7 @@
  16 [-]: JMP       20           ; PC := 20
  17 [-]: GETGLOBAL R3 K3        ; R3 := _T
  18 [-]: NEWTABLE  R4 0 0       ; R4 := {}
- 19 [-]: SETTABLE  R3 K4 R4     ; R3[0x0c5e62f9] := R4
+ 19 [-]: SETTABLE  R3 K4 R4     ; R3[0x5d985c7e] := R4
  20 [-]: SELF      R3 R1 K5     ; R4 := R1; R3 := R1[0x388577d5]
  21 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  22 [-]: GETGLOBAL R4 K2        ; R4 := 0x7b998233

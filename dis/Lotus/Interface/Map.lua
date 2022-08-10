@@ -647,7 +647,7 @@
   7 [-]: SETTABLE  R2 K2 R3     ; R2["x"] := R3
   8 [-]: GETUPVAL  R3 U1        ; R3 := U1
   9 [-]: GETTABLE  R3 R3 K5     ; R3 := R3["Y"]
- 10 [-]: SETTABLE  R2 K4 R3     ; R2[0xae91e43b] := R3
+ 10 [-]: SETTABLE  R2 K4 R3     ; R2["y"] := R3
  11 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
  12 [-]: GETGLOBAL R1 K6        ; R1 := 0x34291f5c
  13 [-]: GETTABLE  R1 R1 K7     ; R82 := R1[0x1467d5f4]
@@ -1417,7 +1417,7 @@
  98 [-]: DIV       R13 R10 R13  ; R13 := R10 / R13
  99 [-]: DIV       R13 R7 R13   ; R13 := R7 / R13
 100 [-]: ADD       R12 R12 R13  ; R12 := R12 + R13
-101 [-]: SETTABLE  R11 K13 R12  ; R11[0xbb610e5b] := R12
+101 [-]: SETTABLE  R11 K13 R12  ; R11["y"] := R12
 102 [-]: GETUPVAL  R11 U0       ; R11 := U0
 103 [-]: GETTABLE  R11 R11 K12  ; R11 := R11["mMax"]
 104 [-]: SUB       R12 K8 R3    ; R12 := 1.000000 - R3
@@ -1426,7 +1426,7 @@
 107 [-]: DIV       R13 R10 R13  ; R13 := R10 / R13
 108 [-]: DIV       R13 R7 R13   ; R13 := R7 / R13
 109 [-]: SUB       R12 R12 R13  ; R12 := R12 - R13
-110 [-]: SETTABLE  R11 K13 R12  ; R11[0xbb610e5b] := R12
+110 [-]: SETTABLE  R11 K13 R12  ; R11["y"] := R12
 111 [-]: JMP       140          ; PC := 140
 112 [-]: GETUPVAL  R11 U0       ; R11 := U0
 113 [-]: GETTABLE  R11 R11 K11  ; R11 := R11["mMin"]
@@ -1448,14 +1448,14 @@
 129 [-]: MUL       R12 R12 R3   ; R12 := R12 * R3
 130 [-]: GETGLOBAL R13 K14      ; R13 := 0x6d34258b
 131 [-]: ADD       R12 R12 R13  ; R12 := R12 + R13
-132 [-]: SETTABLE  R11 K13 R12  ; R11[0xbb610e5b] := R12
+132 [-]: SETTABLE  R11 K13 R12  ; R11["y"] := R12
 133 [-]: GETUPVAL  R11 U0       ; R11 := U0
 134 [-]: GETTABLE  R11 R11 K12  ; R11 := R11["mMax"]
 135 [-]: SUB       R12 K8 R3    ; R12 := 1.000000 - R3
 136 [-]: MUL       R12 R5 R12   ; R12 := R5 * R12
 137 [-]: GETGLOBAL R13 K14      ; R13 := 0x6d34258b
 138 [-]: SUB       R12 R12 R13  ; R12 := R12 - R13
-139 [-]: SETTABLE  R11 K13 R12  ; R11[0xbb610e5b] := R12
+139 [-]: SETTABLE  R11 K13 R12  ; R11["y"] := R12
 140 [-]: GETUPVAL  R11 U0       ; R11 := U0
 141 [-]: GETTABLE  R11 R11 K11  ; R11 := R11["mMin"]
 142 [-]: GETTABLE  R11 R11 K2   ; R11 := R11["x"]
@@ -1492,10 +1492,10 @@
 173 [-]: GETUPVAL  R14 U0       ; R14 := U0
 174 [-]: GETTABLE  R14 R14 K12  ; R14 := R14["mMax"]
 175 [-]: GETTABLE  R14 R14 K13  ; R14 := R14["y"]
-176 [-]: SETTABLE  R13 K13 R14  ; R13[0xbb610e5b] := R14
+176 [-]: SETTABLE  R13 K13 R14  ; R13["y"] := R14
 177 [-]: GETUPVAL  R13 U0       ; R13 := U0
 178 [-]: GETTABLE  R13 R13 K12  ; R13 := R13["mMax"]
-179 [-]: SETTABLE  R13 K13 R12  ; R13[0xbb610e5b] := R12
+179 [-]: SETTABLE  R13 K13 R12  ; R13["y"] := R12
 180 [-]: GETUPVAL  R13 U0       ; R13 := U0
 181 [-]: GETTABLE  R13 R13 K15  ; R13 := R13["mScrollRange"]
 182 [-]: GETUPVAL  R14 U0       ; R14 := U0
@@ -1515,7 +1515,7 @@
 196 [-]: GETTABLE  R15 R15 K12  ; R15 := R15["mMax"]
 197 [-]: GETTABLE  R15 R15 K13  ; R15 := R15["y"]
 198 [-]: SUB       R14 R14 R15  ; R14 := R14 - R15
-199 [-]: SETTABLE  R13 K13 R14  ; R13[0xbb610e5b] := R14
+199 [-]: SETTABLE  R13 K13 R14  ; R13["y"] := R14
 200 [-]: GETUPVAL  R13 U0       ; R13 := U0
 201 [-]: GETTABLE  R13 R13 K12  ; R13 := R13["mMax"]
 202 [-]: GETTABLE  R13 R13 K13  ; R13 := R13["y"]

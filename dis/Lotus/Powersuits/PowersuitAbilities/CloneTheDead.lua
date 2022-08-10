@@ -581,7 +581,7 @@
  31 [-]: NEWTABLE  R3 0 2       ; R3 := {}
  32 [-]: SETTABLE  R3 K9 K10    ; R3["Label"] := "/Lotus/Language/Game/ENEMIES_EFFECTED"
  33 [-]: GETUPVAL  R4 U1        ; R4 := U1
- 34 [-]: SETTABLE  R3 K11 R4    ; R3[0xd7091d77] := R4
+ 34 [-]: SETTABLE  R3 K11 R4    ; R3["Value"] := R4
  35 [-]: CALL      R1 3 1       ; R1(R2,R3)
  36 [-]: GETGLOBAL R1 K7        ; R1 := 0x33bdd652
  37 [-]: GETTABLE  R1 R1 K8     ; R82 := R1[0x23d5322f]
@@ -589,7 +589,7 @@
  39 [-]: NEWTABLE  R3 0 3       ; R3 := {}
  40 [-]: SETTABLE  R3 K9 K12    ; R3["Label"] := "/Lotus/Language/Game/DAMAGE_MULTIPLIER"
  41 [-]: GETUPVAL  R4 U2        ; R4 := U2
- 42 [-]: SETTABLE  R3 K11 R4    ; R3[0xd7091d77] := R4
+ 42 [-]: SETTABLE  R3 K11 R4    ; R3["Value"] := R4
  43 [-]: SETTABLE  R3 K13 K14   ; R3["ValueUnit"] := "/Lotus/Language/Game/UNIT_MULTIPLIER"
  44 [-]: CALL      R1 3 1       ; R1(R2,R3)
  45 [-]: GETGLOBAL R1 K7        ; R1 := 0x33bdd652
@@ -598,7 +598,7 @@
  48 [-]: NEWTABLE  R3 0 3       ; R3 := {}
  49 [-]: SETTABLE  R3 K9 K15    ; R3["Label"] := "/Lotus/Language/Game/HEALTH_MULTIPLIER"
  50 [-]: GETUPVAL  R4 U3        ; R4 := U3
- 51 [-]: SETTABLE  R3 K11 R4    ; R3[0xd7091d77] := R4
+ 51 [-]: SETTABLE  R3 K11 R4    ; R3["Value"] := R4
  52 [-]: SETTABLE  R3 K13 K14   ; R3["ValueUnit"] := "/Lotus/Language/Game/UNIT_MULTIPLIER"
  53 [-]: CALL      R1 3 1       ; R1(R2,R3)
  54 [-]: GETGLOBAL R1 K7        ; R1 := 0x33bdd652
@@ -607,7 +607,7 @@
  57 [-]: NEWTABLE  R3 0 3       ; R3 := {}
  58 [-]: SETTABLE  R3 K9 K16    ; R3["Label"] := "/Lotus/Language/Game/SHIELD_MULTIPLIER"
  59 [-]: GETUPVAL  R4 U4        ; R4 := U4
- 60 [-]: SETTABLE  R3 K11 R4    ; R3[0xd7091d77] := R4
+ 60 [-]: SETTABLE  R3 K11 R4    ; R3["Value"] := R4
  61 [-]: SETTABLE  R3 K13 K14   ; R3["ValueUnit"] := "/Lotus/Language/Game/UNIT_MULTIPLIER"
  62 [-]: CALL      R1 3 1       ; R1(R2,R3)
  63 [-]: GETGLOBAL R1 K7        ; R1 := 0x33bdd652
@@ -621,7 +621,7 @@
  71 [-]: MUL       R5 R5 K20    ; R5 := R5 * 100.000000
  72 [-]: ADD       R5 R5 K21    ; R5 := R5 + 0.500000
  73 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 74 [-]: SETTABLE  R3 K11 R4    ; R3[0xd7091d77] := R4
+ 74 [-]: SETTABLE  R3 K11 R4    ; R3["Value"] := R4
  75 [-]: SETTABLE  R3 K22 K4    ; R3["SmallerIsBetter"] := true
  76 [-]: SETTABLE  R3 K13 K23   ; R3["ValueUnit"] := "/Lotus/Language/Game/UNIT_PERCENT"
  77 [-]: CALL      R1 3 1       ; R1(R2,R3)
@@ -632,7 +632,7 @@
  82 [-]: NEWTABLE  R3 0 3       ; R3 := {}
  83 [-]: SETTABLE  R3 K9 K24    ; R3["Label"] := "/Lotus/Language/Menu/DURATION"
  84 [-]: GETUPVAL  R4 U6        ; R4 := U6
- 85 [-]: SETTABLE  R3 K11 R4    ; R3[0xd7091d77] := R4
+ 85 [-]: SETTABLE  R3 K11 R4    ; R3["Value"] := R4
  86 [-]: SETTABLE  R3 K13 K25   ; R3["ValueUnit"] := "/Lotus/Language/Game/UNIT_SECOND"
  87 [-]: CALL      R1 3 1       ; R1(R2,R3)
  88 [-]: GETGLOBAL R1 K7        ; R1 := 0x33bdd652
@@ -642,7 +642,7 @@
  92 [-]: SETTABLE  R3 K9 K26    ; R3["Label"] := "/Lotus/Language/Game/RESPAWN_TIME_REDUCTION"
  93 [-]: GETUPVAL  R4 U9        ; R4 := U9
  94 [-]: MUL       R4 K20 R4    ; R4 := 100.000000 * R4
- 95 [-]: SETTABLE  R3 K11 R4    ; R3[0xd7091d77] := R4
+ 95 [-]: SETTABLE  R3 K11 R4    ; R3["Value"] := R4
  96 [-]: CALL      R1 3 1       ; R1(R2,R3)
  97 [-]: GETUPVAL  R1 U10       ; R1 := U10
  98 [-]: MOVE      R2 R0        ; R2 := R0
@@ -652,7 +652,7 @@
 102 [-]: GETTABLE  R1 R1 K3     ; R1 := R1["Modded"]
 103 [-]: SETTABLE  R0 K3 R1     ; R0["Modded"] := R1
 104 [-]: GETGLOBAL R1 K0        ; R1 := _T
-105 [-]: SETTABLE  R1 K27 R0    ; R1[0x40f8914b] := R0
+105 [-]: SETTABLE  R1 K27 R0    ; R1["AbilityUpgradeLevelInfo"] := R0
 106 [-]: RETURN    R0 1         ; return 
 
 

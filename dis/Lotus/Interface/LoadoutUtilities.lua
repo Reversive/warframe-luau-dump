@@ -651,7 +651,7 @@
 102 [-]: CALL      R17 2 2      ; R17 := R17(R18)
 103 [-]: LOADBOOL  R18 0 0      ; R18 := false
 104 [-]: CALL      R15 4 2      ; R15 := R15(R16,R17,R18)
-105 [-]: SETTABLE  R14 K25 R15  ; R14[0x0469f296] := R15
+105 [-]: SETTABLE  R14 K25 R15  ; R14["ITEM"] := R15
 106 [-]: CALL      R10 5 2      ; R10 := R10(R11,R12,R13,R14)
 107 [-]: MOVE      R11 R1       ; R11 := R1
 108 [-]: CALL      R9 3 1       ; R9(R10,R11)
@@ -1103,7 +1103,7 @@
  74 [-]: SETTABLE  R16 K15 R13  ; R16["mName"] := R13
  75 [-]: GETUPVAL  R17 U0       ; R17 := U0
  76 [-]: GETTABLE  R17 R17 K25  ; R17 := R17["TITLE"]
- 77 [-]: SETTABLE  R16 K24 R17  ; R16[0x34291f5c] := R17
+ 77 [-]: SETTABLE  R16 K24 R17  ; R16["Type"] := R17
  78 [-]: CALL      R14 3 1      ; R14(R15,R16)
  79 [-]: LOADK     R14 1        ; R14 := 1.000000
  80 [-]: MOVE      R15 R10      ; R15 := R10
@@ -1849,7 +1849,7 @@
  23 [-]: SETTABLE  R4 K17 R5    ; R4["sentinelIsKubrow"] := R5
  24 [-]: SELF      R5 R3 K20    ; R6 := R3; R5 := R3[0x5ea7c3b1]
  25 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 26 [-]: SETTABLE  R4 K19 R5    ; R4[0x00000001] := R5
+ 26 [-]: SETTABLE  R4 K19 R5    ; R4["sentinelIsMoa"] := R5
  27 [-]: NEWTABLE  R5 0 2       ; R5 := {}
  28 [-]: SETTABLE  R5 K22 K8    ; R5["closed"] := false
  29 [-]: SETTABLE  R5 K23 K8    ; R5["opaque"] := false

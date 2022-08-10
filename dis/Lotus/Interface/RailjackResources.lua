@@ -1138,7 +1138,7 @@
  14 [-]: GETTABLE  R10 R8 K3    ; R10 := R8["Amount"]
  15 [-]: EQ        1 R9 R10     ; if R9 == R10 then PC := 25
  16 [-]: JMP       25           ; PC := 25
- 17 [-]: SETTABLE  R8 K3 R9     ; R8[0x1142c7a8] := R9
+ 17 [-]: SETTABLE  R8 K3 R9     ; R8["Amount"] := R9
  18 [-]: LOADBOOL  R2 1 0       ; R2 := true
  19 [-]: TEST      R3 1         ; if R3 then PC := 25
  20 [-]: JMP       25           ; PC := 25
@@ -1177,7 +1177,7 @@
  53 [-]: JMP       65           ; PC := 65
  54 [-]: GETTABLE  R21 R10 R20  ; R21 := R10[R20]
  55 [-]: GETTABLE  R21 R21 K9   ; R21 := R21["mItemCount"]
- 56 [-]: SETTABLE  R15 K3 R21   ; R15[0x1142c7a8] := R21
+ 56 [-]: SETTABLE  R15 K3 R21   ; R15["Amount"] := R21
  57 [-]: LOADBOOL  R2 1 0       ; R2 := true
  58 [-]: TEST      R3 1         ; if R3 then PC := 65
  59 [-]: JMP       65           ; PC := 65
@@ -1878,7 +1878,7 @@
   6 [-]: LOADK     R4 K4        ; R4 := "/Lotus/Language/Intrinsics/NextRankCost"
   7 [-]: NEWTABLE  R5 0 1       ; R5 := {}
   8 [-]: GETTABLE  R6 R0 K6     ; R6 := R0["mNextRankCost"]
-  9 [-]: SETTABLE  R5 K5 R6     ; R5[0xde243f73] := R6
+  9 [-]: SETTABLE  R5 K5 R6     ; R5["COST"] := R6
  10 [-]: CALL      R1 5 1       ; R1(R2,R3,R4,R5)
  11 [-]: RETURN    R0 1         ; return 
 
@@ -2207,7 +2207,7 @@
  74 [-]: CALL      R1 8 1       ; R1(R2,R3,R4,R5,R6,R7,R8)
  75 [-]: GETGLOBAL R1 K24       ; R1 := _T
  76 [-]: GETTABLE  R2 R0 K2     ; R2 := R0["Info"]
- 77 [-]: SETTABLE  R1 K25 R2    ; R1["InfoPopup_Data"] := R2
+ 77 [-]: SETTABLE  R1 K25 R2    ; R1[0xaec424db] := R2
  78 [-]: RETURN    R0 1         ; return 
 
 

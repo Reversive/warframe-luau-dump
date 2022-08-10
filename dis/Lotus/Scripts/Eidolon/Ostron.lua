@@ -82,7 +82,7 @@
   8 [-]: LOADK     R3 2         ; R3 := 2.000000
   9 [-]: LOADK     R4 7         ; R4 := 7.000000
  10 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
- 11 [-]: SETTABLE  R1 K0 R2     ; R1[0xcbd666e1] := R2
+ 11 [-]: SETTABLE  R1 K0 R2     ; R1["Blink"] := R2
  12 [-]: GETUPVAL  R1 U0        ; R1 := U0
  13 [-]: GETTABLE  R1 R1 K0     ; R1 := R1["Blink"]
  14 [-]: GETGLOBAL R2 K3        ; R2 := 0x67652851
@@ -117,7 +117,7 @@
  43 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
  44 [-]: MOVE      R1 R3        ; R1 := R3
  45 [-]: GETUPVAL  R3 U0        ; R3 := U0
- 46 [-]: SETTABLE  R3 K0 R1     ; R3[0xcbd666e1] := R1
+ 46 [-]: SETTABLE  R3 K0 R1     ; R3["Blink"] := R1
  47 [-]: RETURN    R0 1         ; return 
 
 

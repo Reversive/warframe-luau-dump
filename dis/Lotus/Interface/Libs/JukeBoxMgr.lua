@@ -1611,7 +1611,7 @@
  85 [-]: MOVE      R9 R2        ; R9 := R2
  86 [-]: LOADK     R10 0        ; R10 := 0.750000
  87 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
- 88 [-]: SETTABLE  R7 K7 R8     ; R7[0xf21b1d8e] := R8
+ 88 [-]: SETTABLE  R7 K7 R8     ; R7[1.000000] := R8
  89 [-]: GETGLOBAL R7 K0        ; R7 := 0x7b998233
  90 [-]: GETUPVAL  R8 U0        ; R8 := U0
  91 [-]: CALL      R7 2 2       ; R7 := R7(R8)
@@ -2217,7 +2217,7 @@
  71 [-]: LOADK     R18 K17      ; R18 := "/Lotus/Language/Menu/Composition_SaveSong"
  72 [-]: LOADBOOL  R19 0 0      ; R19 := false
  73 [-]: NEWTABLE  R20 0 1      ; R20 := {}
- 74 [-]: SETTABLE  R20 K18 R13  ; R20[0x23d5322f] := R13
+ 74 [-]: SETTABLE  R20 K18 R13  ; R20[0xed4e0128] := R13
  75 [-]: CALL      R16 5 2      ; R16 := R16(R17,R18,R19,R20)
  76 [-]: MOVE      R15 R16      ; R15 := R16
  77 [-]: NEWTABLE  R16 0 0      ; R16 := {}
@@ -2229,7 +2229,7 @@
  83 [-]: GETTABLE  R21 R21 K20  ; R82 := R21[0x23d5322f]
  84 [-]: MOVE      R22 R16      ; R22 := R16
  85 [-]: NEWTABLE  R23 0 2      ; R23 := {}
- 86 [-]: SETTABLE  R23 K21 R20  ; R23[0x4d7a0caf] := R20
+ 86 [-]: SETTABLE  R23 K21 R20  ; R23[0x42b04007] := R20
  87 [-]: SELF      R24 R14 K23  ; R25 := R14; R24 := R14[0x4d7a0caf]
  88 [-]: MOVE      R26 R20      ; R26 := R20
  89 [-]: CALL      R24 3 2      ; R24 := R24(R25,R26)
@@ -2253,15 +2253,15 @@
 107 [-]: GETTABLE  R27 R27 K20  ; R82 := R27[0x23d5322f]
 108 [-]: GETUPVAL  R28 U0       ; R28 := U0
 109 [-]: NEWTABLE  R29 0 8      ; R29 := {}
-110 [-]: SETTABLE  R29 K26 R15  ; R29["Name"] := R15
+110 [-]: SETTABLE  R29 K26 R15  ; R29[0x76ea806b] := R15
 111 [-]: SETTABLE  R29 K27 K28  ; R29["Progress"] := 4.000000
 112 [-]: SETTABLE  R29 K29 K28  ; R29["Required"] := 4.000000
 113 [-]: SETTABLE  R29 K30 K31  ; R29["Locked"] := false
 114 [-]: GETTABLE  R30 R14 K32  ; R30 := R14["mFingerPrint"]
-115 [-]: SETTABLE  R29 K3 R30   ; R29[0x42b04007] := R30
+115 [-]: SETTABLE  R29 K3 R30   ; R29["Fingerprint"] := R30
 116 [-]: SETTABLE  R29 K33 R16  ; R29["NotePacks"] := R16
-117 [-]: SETTABLE  R29 K4 R21   ; R29["MongoId"] := R21
-118 [-]: SETTABLE  R29 K34 R22  ; R29["AutoplayEnabled"] := R22
+117 [-]: SETTABLE  R29 K4 R21   ; R29[0x64fb1586] := R21
+118 [-]: SETTABLE  R29 K34 R22  ; R29[0x6c97a788] := R22
 119 [-]: CALL      R27 3 1      ; R27(R28,R29)
 120 [-]: FORLOOP   R10 64       ; R10 += R12; if R10 <= R11 then begin PC := 64; R13 := R10 end
 121 [-]: GETUPVAL  R27 U2       ; R27 := U2
@@ -2344,23 +2344,23 @@
  36 [-]: GETTABLE  R10 R3 R8    ; R10 := R3[R8]
  37 [-]: SELF      R11 R9 K10   ; R12 := R9; R11 := R9[0xe98aa126]
  38 [-]: CALL      R11 2 2      ; R11 := R11(R12)
- 39 [-]: SETTABLE  R10 K8 R11   ; R10[0x3f3ae64c] := R11
+ 39 [-]: SETTABLE  R10 K8 R11   ; R10["mRegion"] := R11
  40 [-]: GETUPVAL  R10 U0       ; R10 := U0
  41 [-]: NEWTABLE  R11 0 7      ; R11 := {}
  42 [-]: GETGLOBAL R12 K12      ; R12 := 0x64fb1586
  43 [-]: SELF      R13 R9 K13   ; R14 := R9; R13 := R9[0xd3a9d01f]
  44 [-]: CALL      R13 2 0      ; R13,... := R13(R14)
  45 [-]: CALL      R12 0 2      ; R12 := R12(R13,...)
- 46 [-]: SETTABLE  R11 K11 R12  ; R11[0x89326c93] := R12
+ 46 [-]: SETTABLE  R11 K11 R12  ; R11["Tag"] := R12
  47 [-]: SELF      R12 R9 K15   ; R13 := R9; R12 := R9[0xce6f9f03]
  48 [-]: CALL      R12 2 2      ; R12 := R12(R13)
  49 [-]: SETTABLE  R11 K14 R12  ; R11["Song"] := R12
  50 [-]: GETTABLE  R12 R3 R8    ; R12 := R3[R8]
  51 [-]: GETTABLE  R12 R12 K8   ; R12 := R12["mRegion"]
- 52 [-]: SETTABLE  R11 K16 R12  ; R11[0x986d2ab8] := R12
+ 52 [-]: SETTABLE  R11 K16 R12  ; R11["RegionLocName"] := R12
  53 [-]: GETTABLE  R12 R3 R8    ; R12 := R3[R8]
  54 [-]: GETTABLE  R12 R12 K18  ; R12 := R12["mItemCount"]
- 55 [-]: SETTABLE  R11 K17 R12  ; R11[0x0469f296] := R12
+ 55 [-]: SETTABLE  R11 K17 R12  ; R11["Progress"] := R12
  56 [-]: SELF      R12 R9 K20   ; R13 := R9; R12 := R9[0xece44481]
  57 [-]: CALL      R12 2 2      ; R12 := R12(R13)
  58 [-]: SETTABLE  R11 K19 R12  ; R11["Required"] := R12
@@ -2374,7 +2374,7 @@
  66 [-]: GETUPVAL  R11 U0       ; R11 := U0
  67 [-]: GETTABLE  R11 R11 R8   ; R11 := R11[R8]
  68 [-]: GETTABLE  R11 R11 K19  ; R11 := R11["Required"]
- 69 [-]: SETTABLE  R10 K17 R11  ; R10[0x0469f296] := R11
+ 69 [-]: SETTABLE  R10 K17 R11  ; R10["Progress"] := R11
  70 [-]: GETUPVAL  R10 U0       ; R10 := U0
  71 [-]: GETTABLE  R10 R10 R8   ; R10 := R10[R8]
  72 [-]: GETTABLE  R10 R10 K17  ; R10 := R10["Progress"]

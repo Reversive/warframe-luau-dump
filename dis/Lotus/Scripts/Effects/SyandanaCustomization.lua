@@ -877,7 +877,7 @@
  22 [-]: TEST      R3 0         ; if not R3 then PC := 26
  23 [-]: JMP       26           ; PC := 26
  24 [-]: GETUPVAL  R4 U0        ; R4 := U0
- 25 [-]: SETTABLE  R0 K7 R4     ; R0["stateTimer"] := R4
+ 25 [-]: SETTABLE  R0 K7 R4     ; R0[0x7b998233] := R4
  26 [-]: GETGLOBAL R4 K3        ; R4 := _T
  27 [-]: GETTABLE  R4 R4 K4     ; R4 := R4["SyandanaCustomization"]
  28 [-]: SELF      R5 R1 K5     ; R6 := R1; R5 := R1[0x388577d5]
@@ -905,7 +905,7 @@
   6 [-]: JMP       10           ; PC := 10
   7 [-]: GETGLOBAL R2 K1        ; R2 := _T
   8 [-]: NEWTABLE  R3 0 0       ; R3 := {}
-  9 [-]: SETTABLE  R2 K2 R3     ; R2["SyandanaCustomization"] := R3
+  9 [-]: SETTABLE  R2 K2 R3     ; R2[0x9bafffe3] := R3
  10 [-]: GETGLOBAL R2 K1        ; R2 := _T
  11 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["SyandanaCustomization"]
  12 [-]: SELF      R3 R1 K3     ; R4 := R1; R3 := R1[0x388577d5]

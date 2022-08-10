@@ -132,7 +132,7 @@
  18 [-]: GETTABLE  R9 R5 K6     ; R9 := R5["mCallback"]
  19 [-]: SETTABLE  R8 K5 R9     ; R8["CallBack"] := R9
  20 [-]: GETTABLE  R9 R5 K8     ; R9 := R5["mCallout"]
- 21 [-]: SETTABLE  R8 K7 R9     ; R8["CallOut"] := R9
+ 21 [-]: SETTABLE  R8 K7 R9     ; R8[0xe4162eed] := R9
  22 [-]: CALL      R6 3 1       ; R6(R7,R8)
  23 [-]: FORLOOP   R1 7         ; R1 += R3; if R1 <= R2 then begin PC := 7; R4 := R1 end
  24 [-]: GETGLOBAL R6 K9        ; R6 := 0x7b998233

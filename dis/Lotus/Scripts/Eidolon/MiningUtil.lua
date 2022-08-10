@@ -431,7 +431,7 @@
  93 [-]: GETTABLE  R26 R0 K7    ; R26 := R0["verticalDeviation"]
  94 [-]: MUL       R26 R23 R26  ; R26 := R23 * R26
  95 [-]: ADD       R25 R25 R26  ; R25 := R25 + R26
- 96 [-]: SETTABLE  R24 K0 R25   ; R24[0x007fa2f8] := R25
+ 96 [-]: SETTABLE  R24 K0 R25   ; R24["y"] := R25
  97 [-]: TEST      R4 0         ; if not R4 then PC := 114
  98 [-]: JMP       114          ; PC := 114
  99 [-]: GETGLOBAL R24 K14      ; R24 := 0x89326c93
@@ -455,7 +455,7 @@
 117 [-]: GETUPVAL  R24 U0       ; R24 := U0
 118 [-]: SETTABLE  R7 K22 R24   ; R7["x"] := R24
 119 [-]: GETUPVAL  R24 U0       ; R24 := U0
-120 [-]: SETTABLE  R7 K0 R24    ; R7[0x007fa2f8] := R24
+120 [-]: SETTABLE  R7 K0 R24    ; R7["y"] := R24
 121 [-]: GETUPVAL  R24 U0       ; R24 := U0
 122 [-]: SETTABLE  R7 K24 R24   ; R7["z"] := R24
 123 [-]: TEST      R8 0         ; if not R8 then PC := 134
@@ -465,7 +465,7 @@
 127 [-]: SETTABLE  R8 K22 R24   ; R8["x"] := R24
 128 [-]: GETUPVAL  R24 U0       ; R24 := U0
 129 [-]: UNM       R24 R24      ; R24 := ^ R24
-130 [-]: SETTABLE  R8 K0 R24    ; R8[0x007fa2f8] := R24
+130 [-]: SETTABLE  R8 K0 R24    ; R8["y"] := R24
 131 [-]: GETUPVAL  R24 U0       ; R24 := U0
 132 [-]: UNM       R24 R24      ; R24 := ^ R24
 133 [-]: SETTABLE  R8 K24 R24   ; R8["z"] := R24
@@ -546,7 +546,7 @@
 208 [-]: GETTABLE  R34 R25 K0   ; R34 := R25["y"]
 209 [-]: GETTABLE  R35 R7 K0    ; R35 := R7["y"]
 210 [-]: CALL      R33 3 2      ; R33 := R33(R34,R35)
-211 [-]: SETTABLE  R7 K0 R33    ; R7[0x007fa2f8] := R33
+211 [-]: SETTABLE  R7 K0 R33    ; R7["y"] := R33
 212 [-]: GETUPVAL  R33 U1       ; R33 := U1
 213 [-]: GETTABLE  R34 R25 K24  ; R34 := R25["z"]
 214 [-]: GETTABLE  R35 R7 K24   ; R35 := R7["z"]
@@ -563,7 +563,7 @@
 225 [-]: GETTABLE  R34 R25 K0   ; R34 := R25["y"]
 226 [-]: GETTABLE  R35 R8 K0    ; R35 := R8["y"]
 227 [-]: CALL      R33 3 2      ; R33 := R33(R34,R35)
-228 [-]: SETTABLE  R8 K0 R33    ; R8[0x007fa2f8] := R33
+228 [-]: SETTABLE  R8 K0 R33    ; R8["y"] := R33
 229 [-]: GETUPVAL  R33 U2       ; R33 := U2
 230 [-]: GETTABLE  R34 R25 K24  ; R34 := R25["z"]
 231 [-]: GETTABLE  R35 R8 K24   ; R35 := R8["z"]

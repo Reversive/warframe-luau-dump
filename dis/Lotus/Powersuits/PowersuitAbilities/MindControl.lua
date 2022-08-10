@@ -517,7 +517,7 @@
  11 [-]: GETUPVAL  R5 U1        ; R5 := U1
  12 [-]: MUL       R5 R5 K5     ; R5 := R5 * 100.000000
  13 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 14 [-]: SETTABLE  R3 K2 R4     ; R3[0xde321e6f] := R4
+ 14 [-]: SETTABLE  R3 K2 R4     ; R3["DAMAGE_INCREASE"] := R4
  15 [-]: MOVE      R2 R3        ; R2 := R3
  16 [-]: GETGLOBAL R3 K6        ; R3 := cjson
  17 [-]: GETTABLE  R3 R3 K7     ; R82 := R3[0xb139d7bc]
@@ -2083,12 +2083,12 @@
  21 [-]: NEWTABLE  R3 0 2       ; R3 := {}
  22 [-]: GETGLOBAL R4 K7        ; R4 := 0x4da5c118
  23 [-]: DIV       R4 R4 K11    ; R4 := R4 / 2.000000
- 24 [-]: SETTABLE  R3 K10 R4    ; R3["Radius"] := R4
+ 24 [-]: SETTABLE  R3 K10 R4    ; R3[0xd1586535] := R4
  25 [-]: SELF      R4 R0 K13    ; R5 := R0; R4 := R0[0x7e627183]
  26 [-]: LOADBOOL  R6 1 0       ; R6 := true
  27 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
- 28 [-]: SETTABLE  R3 K12 R4    ; R3["EnergyCost"] := R4
- 29 [-]: SETTABLE  R2 K9 R3     ; R2["mAbilityInfo"] := R3
+ 28 [-]: SETTABLE  R3 K12 R4    ; R3[0xc163f229] := R4
+ 29 [-]: SETTABLE  R2 K9 R3     ; R2[0x5163741e] := R3
  30 [-]: RETURN    R0 1         ; return 
 
 
@@ -2131,13 +2131,13 @@
  28 [-]: CALL      R3 4 3       ; R3,R4 := R3(R4,R5,R6)
  29 [-]: GETGLOBAL R5 K0        ; R5 := _T
  30 [-]: NEWTABLE  R6 0 2       ; R6 := {}
- 31 [-]: SETTABLE  R6 K9 R3     ; R6[0xed324116] := R3
+ 31 [-]: SETTABLE  R6 K9 R3     ; R6["success"] := R3
  32 [-]: TEST      R3 0         ; if not R3 then PC := 36
  33 [-]: JMP       36           ; PC := 36
  34 [-]: TESTSET   R7 R4 1      ; if R4 then PC := 37 else R7 := R4
  35 [-]: JMP       37           ; PC := 37
  36 [-]: LOADNIL   R7 R7        ; R7 := nil
- 37 [-]: SETTABLE  R6 K10 R7    ; R6[0x7b998233] := R7
+ 37 [-]: SETTABLE  R6 K10 R7    ; R6["target"] := R7
  38 [-]: SETTABLE  R5 K1 R6     ; R5["CrewShipAbilityEval"] := R6
  39 [-]: RETURN    R0 1         ; return 
 

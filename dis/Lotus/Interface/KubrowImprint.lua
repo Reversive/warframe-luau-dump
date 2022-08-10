@@ -2084,9 +2084,9 @@
  23 [-]: LOADBOOL  R3 1 0       ; R3 := true
  24 [-]: NEWTABLE  R4 0 3       ; R4 := {}
  25 [-]: SETTABLE  R4 K4 R2     ; R4["IsFocused"] := R2
- 26 [-]: SETTABLE  R4 K5 R3     ; R4["IsSelected"] := R3
+ 26 [-]: SETTABLE  R4 K5 R3     ; R4[0x659d451f] := R3
  27 [-]: GETTABLE  R5 R0 K7     ; R5 := R0["Filler"]
- 28 [-]: SETTABLE  R4 K6 R5     ; R4["IsFiller"] := R5
+ 28 [-]: SETTABLE  R4 K6 R5     ; R4[0x0032441c] := R5
  29 [-]: GETUPVAL  R5 U1        ; R5 := U1
  30 [-]: GETTABLE  R5 R5 K8     ; R82 := R5[0xc339daf7]
  31 [-]: GETGLOBAL R6 K9        ; R6 := 0xae91e43b

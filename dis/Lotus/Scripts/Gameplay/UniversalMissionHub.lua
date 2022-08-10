@@ -709,7 +709,7 @@
   4 [-]: JMP       8            ; PC := 8
   5 [-]: GETGLOBAL R2 K0        ; R2 := _T
   6 [-]: NEWTABLE  R3 0 0       ; R3 := {}
-  7 [-]: SETTABLE  R2 K1 R3     ; R2[0x0032441c] := R3
+  7 [-]: SETTABLE  R2 K1 R3     ; R2["ScenarioTransmissions"] := R3
   8 [-]: GETGLOBAL R2 K3        ; R2 := 0x3d106989
   9 [-]: LOADK     R3 K4        ; R3 := "ShowSupportTransmission from "
  10 [-]: GETGLOBAL R4 K5        ; R4 := 0x64fb1586
@@ -1172,10 +1172,10 @@
 
   1 [-]: NEWTABLE  R0 0 17      ; R0 := {}
   2 [-]: NEWTABLE  R1 0 0       ; R1 := {}
-  3 [-]: SETTABLE  R0 K0 R1     ; R0[0xa5c556b9] := R1
+  3 [-]: SETTABLE  R0 K0 R1     ; R0["State"] := R1
   4 [-]: SETTABLE  R0 K1 K2     ; R0["LastEvent"] := nil
   5 [-]: NEWTABLE  R1 0 0       ; R1 := {}
-  6 [-]: SETTABLE  R0 K3 R1     ; R0[0x1a94c9cc] := R1
+  6 [-]: SETTABLE  R0 K3 R1     ; R0["ActivityLog"] := R1
   7 [-]: SETTABLE  R0 K4 K2     ; R0["PeerNameList"] := nil
   8 [-]: SETTABLE  R0 K5 K2     ; R0["PeerNamesAnnounced"] := nil
   9 [-]: NEWTABLE  R1 0 0       ; R1 := {}

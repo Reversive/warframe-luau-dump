@@ -2474,13 +2474,13 @@
  69 [-]: JMP       74           ; PC := 74
  70 [-]: GETGLOBAL R12 K0       ; R12 := _T
  71 [-]: GETGLOBAL R13 K17      ; R13 := GOOD_STATUS
- 72 [-]: SETTABLE  R12 K9 R13   ; R12["ScenarioReadyForSquadSupportStatus"] := R13
+ 72 [-]: SETTABLE  R12 K9 R13   ; R12[0x56c01834] := R13
  73 [-]: JMP       96           ; PC := 96
  74 [-]: LT        0 K18 R5     ; if 0.500000 >= R5 then PC := 83
  75 [-]: JMP       83           ; PC := 83
  76 [-]: GETGLOBAL R12 K0       ; R12 := _T
  77 [-]: GETGLOBAL R13 K19      ; R13 := FAIR_STATUS
- 78 [-]: SETTABLE  R12 K9 R13   ; R12["ScenarioReadyForSquadSupportStatus"] := R13
+ 78 [-]: SETTABLE  R12 K9 R13   ; R12[0x56c01834] := R13
  79 [-]: MOVE      R12 R11      ; R12 := R11
  80 [-]: LOADK     R13 K20      ; R13 := "Fair"
  81 [-]: CONCAT    R11 R12 R13  ; R11 := R12 .. R13
@@ -2489,14 +2489,14 @@
  84 [-]: JMP       92           ; PC := 92
  85 [-]: GETGLOBAL R12 K0       ; R12 := _T
  86 [-]: GETGLOBAL R13 K21      ; R13 := CRITICAL_STATUS
- 87 [-]: SETTABLE  R12 K9 R13   ; R12["ScenarioReadyForSquadSupportStatus"] := R13
+ 87 [-]: SETTABLE  R12 K9 R13   ; R12[0x56c01834] := R13
  88 [-]: MOVE      R12 R11      ; R12 := R11
  89 [-]: LOADK     R13 K22      ; R13 := "Critical"
  90 [-]: CONCAT    R11 R12 R13  ; R11 := R12 .. R13
  91 [-]: JMP       96           ; PC := 96
  92 [-]: GETGLOBAL R12 K0       ; R12 := _T
  93 [-]: GETGLOBAL R13 K23      ; R13 := NOT_READY_STATUS
- 94 [-]: SETTABLE  R12 K9 R13   ; R12["ScenarioReadyForSquadSupportStatus"] := R13
+ 94 [-]: SETTABLE  R12 K9 R13   ; R12[0x56c01834] := R13
  95 [-]: RETURN    R0 1         ; return 
  96 [-]: GETGLOBAL R12 K0       ; R12 := _T
  97 [-]: GETTABLE  R12 R12 K9   ; R12 := R12["ScenarioReadyForSquadSupportStatus"]
@@ -3752,7 +3752,7 @@
   6 [-]: GETTABLE  R4 R4 K4     ; R4 := R4["KEY_TAG"]
   7 [-]: CONCAT    R3 R3 R4     ; R3 := R3 .. R4
   8 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  9 [-]: SETTABLE  R1 K1 R2     ; R1["RailJackNextMissionNode"] := R2
+  9 [-]: SETTABLE  R1 K1 R2     ; R1[0x864b7b71] := R2
  10 [-]: GETUPVAL  R1 U0        ; R1 := U0
  11 [-]: GETTABLE  R1 R1 K5     ; R82 := R1[0x5e35d4d6]
  12 [-]: CALL      R1 1 2       ; R1 := R1()

@@ -1311,14 +1311,14 @@
  49 [-]: LOADK     R11 0        ; R11 := 0.000000
  50 [-]: LOADK     R12 1        ; R12 := 1.000000
  51 [-]: CALL      R9 4 2       ; R9 := R9(R10,R11,R12)
- 52 [-]: SETTABLE  R4 K10 R9    ; R4[0xc163f229] := R9
+ 52 [-]: SETTABLE  R4 K10 R9    ; R4["blur"] := R9
  53 [-]: GETGLOBAL R9 K11       ; R9 := 0x42dcc9f5
  54 [-]: MUL       R10 R8 K12   ; R10 := R8 * 100.000000
  55 [-]: LOADK     R11 0        ; R11 := 0.000000
  56 [-]: LOADK     R12 2        ; R12 := 2.000000
  57 [-]: CALL      R9 4 2       ; R9 := R9(R10,R11,R12)
  58 [-]: ADD       R9 R5 R9     ; R9 := R5 + R9
- 59 [-]: SETTABLE  R4 K13 R9    ; R4[0xcbd666e1] := R9
+ 59 [-]: SETTABLE  R4 K13 R9    ; R4["bloom"] := R9
  60 [-]: GETGLOBAL R9 K11       ; R9 := 0x42dcc9f5
  61 [-]: MUL       R10 R8 K12   ; R10 := R8 * 100.000000
  62 [-]: ADD       R10 K15 R10  ; R10 := 0.500000 + R10
@@ -1360,13 +1360,13 @@
  98 [-]: LOADK     R12 0        ; R12 := 0.000000
  99 [-]: MOVE      R13 R9       ; R13 := R9
 100 [-]: CALL      R10 4 2      ; R10 := R10(R11,R12,R13)
-101 [-]: SETTABLE  R4 K10 R10   ; R4[0xc163f229] := R10
+101 [-]: SETTABLE  R4 K10 R10   ; R4["blur"] := R10
 102 [-]: GETGLOBAL R10 K22      ; R10 := 0x9bafffe3
 103 [-]: GETTABLE  R11 R4 K13   ; R11 := R4["bloom"]
 104 [-]: LOADK     R12 0        ; R12 := 0.000000
 105 [-]: MOVE      R13 R9       ; R13 := R9
 106 [-]: CALL      R10 4 2      ; R10 := R10(R11,R12,R13)
-107 [-]: SETTABLE  R4 K13 R10   ; R4[0xcbd666e1] := R10
+107 [-]: SETTABLE  R4 K13 R10   ; R4["bloom"] := R10
 108 [-]: SELF      R10 R3 K16   ; R11 := R3; R10 := R3[0xb6df3e50]
 109 [-]: GETGLOBAL R12 K22      ; R12 := 0x9bafffe3
 110 [-]: SELF      R13 R3 K23   ; R14 := R3; R13 := R3[0x65c7544c]
@@ -1964,7 +1964,7 @@
  21 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
  22 [-]: MOVE      R3 R4        ; R3 := R4
  23 [-]: SUB       R4 K6 R3     ; R4 := 1.000000 - R3
- 24 [-]: SETTABLE  R2 K5 R4     ; R2[0xcbd666e1] := R4
+ 24 [-]: SETTABLE  R2 K5 R4     ; R2["radialBlurStrength"] := R4
  25 [-]: GETGLOBAL R4 K10       ; R4 := 0xcbd666e1
  26 [-]: LOADK     R5 0         ; R5 := 0.000000
  27 [-]: CALL      R4 2 1       ; R4(R5)

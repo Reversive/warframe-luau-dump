@@ -1391,23 +1391,23 @@
  15 [-]: SETTABLE  R10 K5 R11   ; R10["Debuffs"] := R11
  16 [-]: GETGLOBAL R11 K8       ; R11 := 0x5378a973
  17 [-]: GETTABLE  R11 R11 R3   ; R11 := R11[R3]
- 18 [-]: SETTABLE  R10 K7 R11   ; R10[0xa5c556b9] := R11
+ 18 [-]: SETTABLE  R10 K7 R11   ; R10["Image"] := R11
  19 [-]: SETTABLE  R10 K9 R5    ; R10["BuyIn"] := R5
- 20 [-]: SETTABLE  R10 K10 R7   ; R10[0x1a94c9cc] := R7
+ 20 [-]: SETTABLE  R10 K10 R7   ; R10["Odds"] := R7
  21 [-]: GETTABLE  R11 R1 K12   ; R11 := R1["mScoreGoal"]
  22 [-]: SETTABLE  R10 K11 R11  ; R10["Score"] := R11
- 23 [-]: SETTABLE  R10 K13 R6   ; R10[0x7b998233] := R6
+ 23 [-]: SETTABLE  R10 K13 R6   ; R10["Reward"] := R6
  24 [-]: LT        1 R5 R2      ; if R5 < R2 then PC := 27
  25 [-]: JMP       27           ; PC := 27
  26 [-]: LOADBOOL  R11 0 1      ; R11 := false; PC := 27
  27 [-]: LOADBOOL  R11 1 0      ; R11 := true
- 28 [-]: SETTABLE  R10 K14 R11  ; R10[0xef893aec] := R11
+ 28 [-]: SETTABLE  R10 K14 R11  ; R10["Active"] := R11
  29 [-]: EQ        1 R3 K6      ; if R3 == 1.000000 then PC := 32
  30 [-]: JMP       32           ; PC := 32
  31 [-]: LOADBOOL  R11 0 1      ; R11 := false; PC := 32
  32 [-]: LOADBOOL  R11 1 0      ; R11 := true
- 33 [-]: SETTABLE  R10 K15 R11  ; R10[0x5e35d4d6] := R11
- 34 [-]: SETTABLE  R10 K16 R3   ; R10[0xc18bf6f0] := R3
+ 33 [-]: SETTABLE  R10 K15 R11  ; R10["IsDefault"] := R11
+ 34 [-]: SETTABLE  R10 K16 R3   ; R10["tier"] := R3
  35 [-]: LOADBOOL  R11 1 0      ; R11 := true
  36 [-]: CALL      R8 4 1       ; R8(R9,R10,R11)
  37 [-]: RETURN    R0 1         ; return 

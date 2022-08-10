@@ -1162,7 +1162,7 @@
   9 [-]: JMP       15           ; PC := 15
  10 [-]: GETTABLE  R3 R0 K0     ; R3 := R0["mElements"]
  11 [-]: NEWTABLE  R4 0 1       ; R4 := {}
- 12 [-]: SETTABLE  R4 K6 R1     ; R4["Id"] := R1
+ 12 [-]: SETTABLE  R4 K6 R1     ; R4[0x9ae7e2d2] := R1
  13 [-]: SETTABLE  R3 R1 R4     ; R3[R1] := R4
  14 [-]: JMP       38           ; PC := 38
  15 [-]: GETTABLE  R3 R0 K0     ; R3 := R0["mElements"]
@@ -1178,7 +1178,7 @@
  25 [-]: SETTABLE  R2 R6 K2     ; R2[R6] := nil
  26 [-]: TFORLOOP  R3 2         ; R6,R7 :=  R3(R4,R5); if R6 ~= nil then begin PC = 25; R5 := R6 end
  27 [-]: JMP       25           ; PC := 25
- 28 [-]: SETTABLE  R2 K6 R1     ; R2["Id"] := R1
+ 28 [-]: SETTABLE  R2 K6 R1     ; R2[0x9ae7e2d2] := R1
  29 [-]: JMP       38           ; PC := 38
  30 [-]: GETGLOBAL R8 K8        ; R8 := 0x33bdd652
  31 [-]: GETTABLE  R8 R8 K9     ; R82 := R8[0x9c1f3b5a]
@@ -1467,7 +1467,7 @@
  64 [-]: CALL      R19 2 2      ; R19 := R19(R20)
  65 [-]: LOADBOOL  R20 0 0      ; R20 := false
  66 [-]: CALL      R17 4 2      ; R17 := R17(R18,R19,R20)
- 67 [-]: SETTABLE  R16 K10 R17  ; R16[0x5f0788c4] := R17
+ 67 [-]: SETTABLE  R16 K10 R17  ; R16["ITEMA"] := R17
  68 [-]: GETUPVAL  R17 U0       ; R17 := U0
  69 [-]: SELF      R17 R17 K8   ; R18 := R17; R17 := R17[0x42b04007]
  70 [-]: SELF      R19 R4 K11   ; R20 := R4; R19 := R4[0xd3a9d01f]
@@ -1476,7 +1476,7 @@
  73 [-]: CALL      R19 2 2      ; R19 := R19(R20)
  74 [-]: LOADBOOL  R20 0 0      ; R20 := false
  75 [-]: CALL      R17 4 2      ; R17 := R17(R18,R19,R20)
- 76 [-]: SETTABLE  R16 K13 R17  ; R16[0x52793e16] := R17
+ 76 [-]: SETTABLE  R16 K13 R17  ; R16["ITEMB"] := R17
  77 [-]: CALL      R12 5 2      ; R12 := R12(R13,R14,R15,R16)
  78 [-]: GETUPVAL  R13 U1       ; R13 := U1
  79 [-]: GETTABLE  R13 R13 K14  ; R82 := R13[0xe0cba3ca]

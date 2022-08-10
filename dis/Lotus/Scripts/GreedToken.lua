@@ -268,18 +268,18 @@
  78 [-]: GETGLOBAL R11 K15      ; R11 := _T
  79 [-]: NEWTABLE  R12 0 6      ; R12 := {}
  80 [-]: GETGLOBAL R13 K23      ; R13 := 0x4035c9e0
- 81 [-]: SETTABLE  R12 K22 R13  ; R12[0xcddc3abb] := R13
+ 81 [-]: SETTABLE  R12 K22 R13  ; R12["TokenTypes"] := R13
  82 [-]: GETGLOBAL R13 K25      ; R13 := 0xd70945ce
- 83 [-]: SETTABLE  R12 K24 R13  ; R12[0x0e723618] := R13
+ 83 [-]: SETTABLE  R12 K24 R13  ; R12["TokenActionLocs"] := R13
  84 [-]: GETGLOBAL R13 K27      ; R13 := 0x459f703e
- 85 [-]: SETTABLE  R12 K26 R13  ; R12[0x4abea814] := R13
+ 85 [-]: SETTABLE  R12 K26 R13  ; R12["TokenTags"] := R13
  86 [-]: GETGLOBAL R13 K29      ; R13 := 0x1ee8c8de
  87 [-]: SETTABLE  R12 K28 R13  ; R12["TokenConsumeActions"] := R13
  88 [-]: GETGLOBAL R13 K31      ; R13 := 0x309af330
- 89 [-]: SETTABLE  R12 K30 R13  ; R12[0x6dd7aa66] := R13
+ 89 [-]: SETTABLE  R12 K30 R13  ; R12["LoreShrine"] := R13
  90 [-]: GETGLOBAL R13 K33      ; R13 := 0x953a83de
- 91 [-]: SETTABLE  R12 K32 R13  ; R12[0x42b04007] := R13
- 92 [-]: SETTABLE  R11 K21 R12  ; R11[0x68d77b75] := R12
+ 91 [-]: SETTABLE  R12 K32 R13  ; R12["UseRankDesc"] := R13
+ 92 [-]: SETTABLE  R11 K21 R12  ; R11["GreedInfo"] := R12
  93 [-]: GETGLOBAL R11 K34      ; R11 := 0x9ba7909f
  94 [-]: SELF      R11 R11 K35  ; R12 := R11; R11 := R11[0xcfba257f]
  95 [-]: GETGLOBAL R13 K36      ; R13 := 0xa2cef911
@@ -424,9 +424,9 @@
 117 [-]: GETTABLE  R13 R13 K40  ; R82 := R13[0xd2a1d93b]
 118 [-]: MOVE      R14 R10      ; R14 := R10
 119 [-]: NEWTABLE  R15 0 4      ; R15 := {}
-120 [-]: SETTABLE  R15 K41 R12  ; R15[0x59e42e1b] := R12
+120 [-]: SETTABLE  R15 K41 R12  ; R15["Name"] := R12
 121 [-]: SETTABLE  R15 K42 K13  ; R15["itemCount"] := 1.000000
-122 [-]: SETTABLE  R15 K43 R9   ; R15[0x659270d0] := R9
+122 [-]: SETTABLE  R15 K43 R9   ; R15["OverrideCount"] := R9
 123 [-]: SETTABLE  R15 K44 K46  ; R15["OverrideCatergory"] := 11.000000
 124 [-]: CALL      R13 3 1      ; R13(R14,R15)
 125 [-]: GETGLOBAL R13 K12      ; R13 := 0xf0b2d46b

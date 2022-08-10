@@ -450,7 +450,7 @@
  37 [-]: SETTABLE  R7 K8 R8     ; R7["CraftingSaleWeapon"] := R8
  38 [-]: GETGLOBAL R7 K4        ; R7 := _T
  39 [-]: GETTABLE  R8 R6 K7     ; R8 := R6["mWeapon"]
- 40 [-]: SETTABLE  R7 K10 R8    ; R7[0x89326c93] := R8
+ 40 [-]: SETTABLE  R7 K10 R8    ; R7["ModularCraftingSaleWeapon"] := R8
  41 [-]: JMP       53           ; PC := 53
  42 [-]: GETUPVAL  R7 U1        ; R7 := U1
  43 [-]: GETTABLE  R7 R7 K11    ; R82 := R7[0xa53f5e12]
@@ -464,7 +464,7 @@
  51 [-]: GETGLOBAL R7 K4        ; R7 := _T
  52 [-]: SETTABLE  R7 K10 K3    ; R7["ModularCraftingSaleWeapon"] := nil
  53 [-]: GETGLOBAL R7 K4        ; R7 := _T
- 54 [-]: SETTABLE  R7 K15 R2    ; R7[0x9ba7909f] := R2
+ 54 [-]: SETTABLE  R7 K15 R2    ; R7["previousConsoleTag"] := R2
  55 [-]: SELF      R7 R5 K16    ; R8 := R5; R7 := R5[0x263a3cc2]
  56 [-]: GETTABLE  R9 R1 K17    ; R9 := R1["mPlayerAvatar"]
  57 [-]: CALL      R7 3 1       ; R7(R8,R9)

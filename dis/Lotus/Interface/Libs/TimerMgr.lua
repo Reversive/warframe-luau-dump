@@ -47,9 +47,9 @@
  19 [-]: CLOSURE   R1 6         ; R1 := closure(Function #1.7)
  20 [-]: SETTABLE  R0 K10 R1    ; R0["HasTimerWithArg"] := R1
  21 [-]: CLOSURE   R1 7         ; R1 := closure(Function #1.8)
- 22 [-]: SETTABLE  R0 K11 R1    ; R0[0x33bdd652] := R1
+ 22 [-]: SETTABLE  R0 K11 R1    ; R0["GetTimerWithArg"] := R1
  23 [-]: CLOSURE   R1 8         ; R1 := closure(Function #1.9)
- 24 [-]: SETTABLE  R0 K12 R1    ; R0[0x9c1f3b5a] := R1
+ 24 [-]: SETTABLE  R0 K12 R1    ; R0["GetTimeLeft"] := R1
  25 [-]: RETURN    R0 2         ; return R0
  26 [-]: RETURN    R0 1         ; return 
 
@@ -111,7 +111,7 @@
  27 [-]: MOVE      R10 R2       ; R10 := R2
  28 [-]: NEWTABLE  R11 0 2      ; R11 := {}
  29 [-]: GETTABLE  R12 R8 K6    ; R12 := R8["Callback"]
- 30 [-]: SETTABLE  R11 K9 R12   ; R11["callback"] := R12
+ 30 [-]: SETTABLE  R11 K9 R12   ; R11[0x23d5322f] := R12
  31 [-]: GETTABLE  R12 R8 K11   ; R12 := R8["Arg"]
  32 [-]: SETTABLE  R11 K10 R12  ; R11["arg"] := R12
  33 [-]: CALL      R9 3 1       ; R9(R10,R11)

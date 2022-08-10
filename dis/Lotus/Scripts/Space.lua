@@ -92,21 +92,21 @@
  44 [-]: LOADK     R13 360      ; R13 := 360.000000
  45 [-]: CALL      R11 3 2      ; R11 := R11(R12,R13)
  46 [-]: ADD       R10 R10 R11  ; R10 := R10 + R11
- 47 [-]: SETTABLE  R9 K16 R10   ; R9[0x28e744cf] := R10
+ 47 [-]: SETTABLE  R9 K16 R10   ; R9["bank"] := R10
  48 [-]: GETTABLE  R10 R9 K17   ; R10 := R9["heading"]
  49 [-]: GETGLOBAL R11 K6       ; R11 := 0xc163f229
  50 [-]: LOADK     R12 0        ; R12 := 0.000000
  51 [-]: LOADK     R13 360      ; R13 := 360.000000
  52 [-]: CALL      R11 3 2      ; R11 := R11(R12,R13)
  53 [-]: ADD       R10 R10 R11  ; R10 := R10 + R11
- 54 [-]: SETTABLE  R9 K17 R10   ; R9[0x7b998233] := R10
+ 54 [-]: SETTABLE  R9 K17 R10   ; R9["heading"] := R10
  55 [-]: GETTABLE  R10 R9 K18   ; R10 := R9["pitch"]
  56 [-]: GETGLOBAL R11 K6       ; R11 := 0xc163f229
  57 [-]: LOADK     R12 0        ; R12 := 0.000000
  58 [-]: LOADK     R13 360      ; R13 := 360.000000
  59 [-]: CALL      R11 3 2      ; R11 := R11(R12,R13)
  60 [-]: ADD       R10 R10 R11  ; R10 := R10 + R11
- 61 [-]: SETTABLE  R9 K18 R10   ; R9[0x89326c93] := R10
+ 61 [-]: SETTABLE  R9 K18 R10   ; R9["pitch"] := R10
  62 [-]: GETGLOBAL R10 K19      ; R10 := 0x89326c93
  63 [-]: SELF      R10 R10 K20  ; R11 := R10; R10 := R10[0x05909209]
  64 [-]: MOVE      R12 R7       ; R12 := R7
@@ -140,13 +140,13 @@
  92 [-]: DIV       R13 R13 R11  ; R13 := R13 / R11
  93 [-]: GETTABLE  R14 R9 K16   ; R14 := R9["bank"]
  94 [-]: MUL       R14 R14 R13  ; R14 := R14 * R13
- 95 [-]: SETTABLE  R9 K16 R14   ; R9[0x28e744cf] := R14
+ 95 [-]: SETTABLE  R9 K16 R14   ; R9["bank"] := R14
  96 [-]: GETTABLE  R14 R9 K17   ; R14 := R9["heading"]
  97 [-]: MUL       R14 R14 R13  ; R14 := R14 * R13
- 98 [-]: SETTABLE  R9 K17 R14   ; R9[0x7b998233] := R14
+ 98 [-]: SETTABLE  R9 K17 R14   ; R9["heading"] := R14
  99 [-]: GETTABLE  R14 R9 K18   ; R14 := R9["pitch"]
 100 [-]: MUL       R14 R14 R13  ; R14 := R14 * R13
-101 [-]: SETTABLE  R9 K18 R14   ; R9[0x89326c93] := R14
+101 [-]: SETTABLE  R9 K18 R14   ; R9["pitch"] := R14
 102 [-]: SELF      R14 R10 K29  ; R15 := R10; R14 := R10[0x1dd41378]
 103 [-]: MOVE      R16 R9       ; R16 := R9
 104 [-]: CALL      R14 3 1      ; R14(R15,R16)

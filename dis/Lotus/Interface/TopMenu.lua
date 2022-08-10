@@ -5767,7 +5767,7 @@
  11 [-]: CLOSURE   R2 0         ; R2 := closure(Function #91.1)
  12 [-]: GETUPVAL  R0 U0        ; R0 := U0
  13 [-]: MOVE      R0 R0        ; R0 := R0
- 14 [-]: SETTABLE  R1 K7 R2     ; R1["MenuSelectionDone"] := R2
+ 14 [-]: SETTABLE  R1 K7 R2     ; R1[0xb009bbc6] := R2
  15 [-]: SELF      R1 R0 K3     ; R2 := R0; R1 := R0[0xe4162eed]
  16 [-]: LOADK     R3 K8        ; R3 := "SetCallBack"
  17 [-]: LOADK     R4 K7        ; R4 := "MenuSelectionDone"
@@ -8623,7 +8623,7 @@
 2053 [-]: SETTABLE  R89 K132 R90 ; R89["ShouldDisplay"] := R90
 2054 [-]: NEWTABLE  R90 0 4      ; R90 := {}
 2055 [-]: LOADK     R91 K359     ; R91 := "INIT SQUAD LINK ["
-2056 [-]: GETGLOBAL R92 K360     ; R92 := 0x9ba7909f
+2056 [-]: GETGLOBAL R92 K360     ; R92 := 0x8226bfac
 2057 [-]: LOADK     R94 K361     ; R94 := true
 2058 [-]: SELF      R92 R92 R94  ; R93 := R92; R92 := R92[R94]
 2059 [-]: LOADK     R94 K362     ; R94 := "Relay.ScenarioOverride"
@@ -12437,10 +12437,10 @@
  24 [-]: CALL      R0 3 1       ; R0(R1,R2)
  25 [-]: GETUPVAL  R0 U0        ; R0 := U0
  26 [-]: GETUPVAL  R1 U7        ; R1 := U7
- 27 [-]: SETTABLE  R0 K5 R1     ; R0["mElementTransitionTime"] := R1
+ 27 [-]: SETTABLE  R0 K5 R1     ; R0[0x7b998233] := R1
  28 [-]: GETUPVAL  R0 U0        ; R0 := U0
  29 [-]: GETUPVAL  R1 U8        ; R1 := U8
- 30 [-]: SETTABLE  R0 K6 R1     ; R0["mElementDelayTime"] := R1
+ 30 [-]: SETTABLE  R0 K6 R1     ; R0[0x986d2ab8] := R1
  31 [-]: LOADNIL   R0 R0        ; R0 := nil
  32 [-]: SETUPVAL  R0 U2        ; U82 := 
  33 [-]: RETURN    R0 1         ; return 
@@ -12681,7 +12681,7 @@
 127 [-]: SETTABLE  R5 K36 R6    ; R5["CalculateY"] := R6
 128 [-]: GETUPVAL  R5 U4        ; R5 := U4
 129 [-]: CLOSURE   R6 8         ; R6 := closure(Function #112.9)
-130 [-]: SETTABLE  R5 K37 R6    ; R5[0x7b998233] := R6
+130 [-]: SETTABLE  R5 K37 R6    ; R5["OnElementTransitionStarted"] := R6
 131 [-]: RETURN    R0 1         ; return 
 
 

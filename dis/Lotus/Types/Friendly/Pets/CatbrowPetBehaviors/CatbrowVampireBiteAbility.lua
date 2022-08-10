@@ -249,7 +249,7 @@
  88 [-]: GETGLOBAL R10 K16      ; R10 := 0x34291f5c
  89 [-]: GETTABLE  R10 R10 K20  ; R82 := R10[0x35c16153]
  90 [-]: CALL      R10 1 2      ; R10 := R10()
- 91 [-]: SETTABLE  R10 K21 R9   ; R10[0xa2880940] := R9
+ 91 [-]: SETTABLE  R10 K21 R9   ; R10["baseAmount"] := R9
  92 [-]: SELF      R11 R10 K22  ; R12 := R10; R11 := R10[0x1586e35e]
  93 [-]: LOADK     R13 2        ; R13 := 2.000000
  94 [-]: LOADK     R14 1        ; R14 := 1.000000

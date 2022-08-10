@@ -671,13 +671,13 @@
  40 [-]: JMP       50           ; PC := 50
  41 [-]: GETTABLE  R3 R1 K9     ; R3 := R1["red"]
  42 [-]: SUB       R3 K10 R3    ; R3 := 255.000000 - R3
- 43 [-]: SETTABLE  R1 K9 R3     ; R1[0x16110ada] := R3
+ 43 [-]: SETTABLE  R1 K9 R3     ; R1["red"] := R3
  44 [-]: GETTABLE  R3 R1 K11    ; R3 := R1["green"]
  45 [-]: SUB       R3 K10 R3    ; R3 := 255.000000 - R3
- 46 [-]: SETTABLE  R1 K11 R3    ; R1[0xbb4a3d82] := R3
+ 46 [-]: SETTABLE  R1 K11 R3    ; R1["green"] := R3
  47 [-]: GETTABLE  R3 R1 K12    ; R3 := R1["blue"]
  48 [-]: SUB       R3 K10 R3    ; R3 := 255.000000 - R3
- 49 [-]: SETTABLE  R1 K12 R3    ; R1[0x2713c640] := R3
+ 49 [-]: SETTABLE  R1 K12 R3    ; R1["blue"] := R3
  50 [-]: SELF      R3 R0 K13    ; R4 := R0; R3 := R0[0x986d2ab8]
  51 [-]: GETGLOBAL R5 K14       ; R5 := 0x1b0c1f1f
  52 [-]: GETUPVAL  R6 U2        ; R6 := U2
@@ -1022,13 +1022,13 @@
  26 [-]: JMP       36           ; PC := 36
  27 [-]: GETTABLE  R3 R1 K5     ; R3 := R1["red"]
  28 [-]: SUB       R3 K6 R3     ; R3 := 255.000000 - R3
- 29 [-]: SETTABLE  R1 K5 R3     ; R1[0x5514e04a] := R3
+ 29 [-]: SETTABLE  R1 K5 R3     ; R1["red"] := R3
  30 [-]: GETTABLE  R3 R1 K7     ; R3 := R1["green"]
  31 [-]: SUB       R3 K6 R3     ; R3 := 255.000000 - R3
- 32 [-]: SETTABLE  R1 K7 R3     ; R1[0x7b998233] := R3
+ 32 [-]: SETTABLE  R1 K7 R3     ; R1["green"] := R3
  33 [-]: GETTABLE  R3 R1 K8     ; R3 := R1["blue"]
  34 [-]: SUB       R3 K6 R3     ; R3 := 255.000000 - R3
- 35 [-]: SETTABLE  R1 K8 R3     ; R1[0x77409050] := R3
+ 35 [-]: SETTABLE  R1 K8 R3     ; R1["blue"] := R3
  36 [-]: SELF      R3 R0 K9     ; R4 := R0; R3 := R0[0x986d2ab8]
  37 [-]: GETGLOBAL R5 K10       ; R5 := 0x1b0c1f1f
  38 [-]: GETUPVAL  R6 U1        ; R6 := U1
@@ -1265,15 +1265,15 @@
  47 [-]: GETTABLE  R5 R1 K9     ; R5 := R1["red"]
  48 [-]: GETGLOBAL R6 K10       ; R6 := 0x131e240e
  49 [-]: MUL       R5 R5 R6     ; R5 := R5 * R6
- 50 [-]: SETTABLE  R1 K9 R5     ; R1["red"] := R5
+ 50 [-]: SETTABLE  R1 K9 R5     ; R1[0xcbd666e1] := R5
  51 [-]: GETTABLE  R5 R1 K11    ; R5 := R1["green"]
  52 [-]: GETGLOBAL R6 K10       ; R6 := 0x131e240e
  53 [-]: MUL       R5 R5 R6     ; R5 := R5 * R6
- 54 [-]: SETTABLE  R1 K11 R5    ; R1["green"] := R5
+ 54 [-]: SETTABLE  R1 K11 R5    ; R1[0x89326c93] := R5
  55 [-]: GETTABLE  R5 R1 K12    ; R5 := R1["blue"]
  56 [-]: GETGLOBAL R6 K10       ; R6 := 0x131e240e
  57 [-]: MUL       R5 R5 R6     ; R5 := R5 * R6
- 58 [-]: SETTABLE  R1 K12 R5    ; R1["blue"] := R5
+ 58 [-]: SETTABLE  R1 K12 R5    ; R1[0xdd25e9d1] := R5
  59 [-]: GETGLOBAL R5 K13       ; R5 := 0x0c1fefbf
  60 [-]: TEST      R5 0         ; if not R5 then PC := 77
  61 [-]: JMP       77           ; PC := 77
@@ -1291,7 +1291,7 @@
  73 [-]: MOVE      R12 R8       ; R12 := R8
  74 [-]: CALL      R9 4 2       ; R9 := R9(R10,R11,R12)
  75 [-]: MOVE      R1 R9        ; R1 := R9
- 76 [-]: SETTABLE  R1 K14 R5    ; R1["alpha"] := R5
+ 76 [-]: SETTABLE  R1 K14 R5    ; R1[0xf2deaf69] := R5
  77 [-]: SELF      R9 R0 K19    ; R10 := R0; R9 := R0[0xc2b4e597]
  78 [-]: MOVE      R11 R1       ; R11 := R1
  79 [-]: CALL      R9 3 1       ; R9(R10,R11)
@@ -1379,7 +1379,7 @@
  70 [-]: MOVE      R12 R8       ; R12 := R8
  71 [-]: CALL      R9 4 2       ; R9 := R9(R10,R11,R12)
  72 [-]: MOVE      R1 R9        ; R1 := R9
- 73 [-]: SETTABLE  R1 K14 R5    ; R1[0x5163741e] := R5
+ 73 [-]: SETTABLE  R1 K14 R5    ; R1["alpha"] := R5
  74 [-]: SELF      R9 R0 K19    ; R10 := R0; R9 := R0[0xa3927fe9]
  75 [-]: MOVE      R11 R1       ; R11 := R1
  76 [-]: CALL      R9 3 1       ; R9(R10,R11)

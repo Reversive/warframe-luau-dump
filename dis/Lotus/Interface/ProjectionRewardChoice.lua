@@ -925,7 +925,7 @@
  71 [-]: GETGLOBAL R7 K1        ; R7 := _T
  72 [-]: GETTABLE  R7 R7 K19    ; R7 := R7["HideHud"]
  73 [-]: ADD       R7 R7 K11    ; R7 := R7 + 1.000000
- 74 [-]: SETTABLE  R6 K19 R7    ; R6["HideHud"] := R7
+ 74 [-]: SETTABLE  R6 K19 R7    ; R6[0x509d9f9e] := R7
  75 [-]: RETURN    R0 1         ; return 
 
 

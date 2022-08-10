@@ -2433,7 +2433,7 @@
  12 [-]: GETGLOBAL R1 K1        ; R1 := _T
  13 [-]: SELF      R2 R0 K6     ; R3 := R0; R2 := R0[0xcea36880]
  14 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 15 [-]: SETTABLE  R1 K2 R2     ; R1[0x243148d6] := R2
+ 15 [-]: SETTABLE  R1 K2 R2     ; R1[0x8151451d] := R2
  16 [-]: GETGLOBAL R1 K7        ; R1 := 0x5bced4c4
  17 [-]: GETTABLE  R1 R1 K8     ; R82 := R1[0xac1b386a]
  18 [-]: GETGLOBAL R2 K1        ; R2 := _T

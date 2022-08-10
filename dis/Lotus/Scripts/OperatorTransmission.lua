@@ -14,11 +14,11 @@
   5 [-]: GETGLOBAL R2 K4        ; R2 := 0x0469f296
   6 [-]: LOADK     R3 K5        ; R3 := "NearDeath"
   7 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  8 [-]: SETTABLE  R1 K3 R2     ; R1[0x7b998233] := R2
+  8 [-]: SETTABLE  R1 K3 R2     ; R1[22.000000] := R2
   9 [-]: GETGLOBAL R2 K4        ; R2 := 0x0469f296
  10 [-]: LOADK     R3 K7        ; R3 := "Revived"
  11 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 12 [-]: SETTABLE  R1 K6 R2     ; R1[0x99f38c13] := R2
+ 12 [-]: SETTABLE  R1 K6 R2     ; R1[33.000000] := R2
  13 [-]: GETGLOBAL R2 K4        ; R2 := 0x0469f296
  14 [-]: LOADK     R3 K9        ; R3 := "WaypointMarked"
  15 [-]: CALL      R2 2 2       ; R2 := R2(R3)
@@ -28,7 +28,7 @@
  19 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  20 [-]: SETTABLE  R1 K10 R2    ; R1[15.000000] := R2
  21 [-]: GETGLOBAL R2 K13       ; R2 := EMPTY_SYMBOL
- 22 [-]: SETTABLE  R1 K12 R2    ; R1[0x3f3ae64c] := R2
+ 22 [-]: SETTABLE  R1 K12 R2    ; R1[43.000000] := R2
  23 [-]: GETGLOBAL R2 K4        ; R2 := 0x0469f296
  24 [-]: LOADK     R3 K14       ; R3 := "EnemyMarked"
  25 [-]: CALL      R2 2 2       ; R2 := R2(R3)

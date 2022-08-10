@@ -1217,7 +1217,7 @@
   9 [-]: CALL      R3 4 2       ; R3 := R3(R4,R5,R6)
  10 [-]: SETTABLE  R2 K0 R3     ; R2["Name"] := R3
  11 [-]: SETTABLE  R2 K4 K5     ; R2["SortId"] := "NAME"
- 12 [-]: SETTABLE  R2 K6 R1     ; R2["Attribute"] := R1
+ 12 [-]: SETTABLE  R2 K6 R1     ; R2[0xe3a0bbca] := R1
  13 [-]: CLOSURE   R3 2         ; R3 := closure(Function #13.2.3)
  14 [-]: MOVE      R0 R0        ; R0 := R0
  15 [-]: NEWTABLE  R4 0 3       ; R4 := {}
@@ -1228,7 +1228,7 @@
  20 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
  21 [-]: SETTABLE  R4 K0 R5     ; R4["Name"] := R5
  22 [-]: SETTABLE  R4 K4 K8     ; R4["SortId"] := "TYPE"
- 23 [-]: SETTABLE  R4 K6 R3     ; R4["Attribute"] := R3
+ 23 [-]: SETTABLE  R4 K6 R3     ; R4[0xe3a0bbca] := R3
  24 [-]: NEWTABLE  R5 2 0       ; R5 := {}
  25 [-]: MOVE      R6 R2        ; R6 := R2
  26 [-]: MOVE      R7 R4        ; R7 := R4
@@ -1382,7 +1382,7 @@
   5 [-]: LOADK     R3 K4        ; R3 := "/Lotus/Language/Menu/CategoryAll"
   6 [-]: NEWTABLE  R4 0 0       ; R4 := {}
   7 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
-  8 [-]: SETTABLE  R1 K2 R2     ; R1["Name"] := R2
+  8 [-]: SETTABLE  R1 K2 R2     ; R1[0x603636ad] := R2
   9 [-]: GETGLOBAL R2 K6        ; R2 := 0x0032441c
  10 [-]: GETTABLE  R2 R2 K7     ; R2 := R2["UICategoryIcon_AllOn"]
  11 [-]: SETTABLE  R1 K5 R2     ; R1["Icon"] := R2
@@ -2847,7 +2847,7 @@
  39 [-]: GETGLOBAL R2 K4        ; R2 := _T
  40 [-]: GETTABLE  R3 R0 K2     ; R3 := R0["Data"]
  41 [-]: GETTABLE  R3 R3 K3     ; R3 := R3["mCommandSymbol"]
- 42 [-]: SETTABLE  R2 K7 R3     ; R2[0x4b9624ef] := R3
+ 42 [-]: SETTABLE  R2 K7 R3     ; R2["TacticsOverlayCommand"] := R3
  43 [-]: GETUPVAL  R2 U0        ; R2 := U0
  44 [-]: GETTABLE  R2 R2 K8     ; R82 := R2[0x659d451f]
  45 [-]: GETGLOBAL R3 K9        ; R3 := 0xff9c43e7
@@ -2967,7 +2967,7 @@
  27 [-]: SETUPVAL  R1 U2        ; U82 := 
  28 [-]: GETUPVAL  R1 U2        ; R1 := U2
  29 [-]: GETGLOBAL R2 K10       ; R2 := 0xffdde721
- 30 [-]: SETTABLE  R1 K9 R2     ; R1["mAddItemTexture"] := R2
+ 30 [-]: SETTABLE  R1 K9 R2     ; R1[0x42b04007] := R2
  31 [-]: GETUPVAL  R1 U2        ; R1 := U2
  32 [-]: SETTABLE  R1 K11 K12   ; R1["mTypeLoc"] := "/Lotus/Language/Menu/Loadout_Emotes"
  33 [-]: GETUPVAL  R1 U2        ; R1 := U2
@@ -5800,7 +5800,7 @@
  24 [-]: JMP       28           ; PC := 28
  25 [-]: SELF      R2 R0 K4     ; R3 := R0; R2 := R0[0xc704a9b7]
  26 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 27 [-]: SETTABLE  R0 K3 R2     ; R0[0x89326c93] := R2
+ 27 [-]: SETTABLE  R0 K3 R2     ; R0["mDragElement"] := R2
  28 [-]: RETURN    R1 2         ; return R1
  29 [-]: RETURN    R0 1         ; return 
 

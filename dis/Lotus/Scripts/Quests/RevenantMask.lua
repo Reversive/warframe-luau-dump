@@ -412,7 +412,7 @@
 125 [-]: SETUPVAL  R14 U6       ; U82 := 
 126 [-]: GETGLOBAL R14 K27      ; R14 := _T
 127 [-]: GETUPVAL  R15 U6       ; R15 := U6
-128 [-]: SETTABLE  R14 K28 R15  ; R14[0x068c9308] := R15
+128 [-]: SETTABLE  R14 K28 R15  ; R14["RevenantMask_Stage"] := R15
 129 [-]: GETGLOBAL R14 K27      ; R14 := _T
 130 [-]: SETTABLE  R14 K29 K30  ; R14["RevenantMask_DisableAction"] := nil
 131 [-]: JMP       134          ; PC := 134

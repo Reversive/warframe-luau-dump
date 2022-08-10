@@ -313,10 +313,10 @@
  67 [-]: SETTABLE  R4 K16 R9    ; R4["x"] := R9
  68 [-]: GETTABLE  R9 R4 K18    ; R9 := R4["y"]
  69 [-]: MUL       R9 R9 K17    ; R9 := R9 * 12.000000
- 70 [-]: SETTABLE  R4 K18 R9    ; R4[0xcbd666e1] := R9
+ 70 [-]: SETTABLE  R4 K18 R9    ; R4["y"] := R9
  71 [-]: GETTABLE  R9 R4 K19    ; R9 := R4["z"]
  72 [-]: MUL       R9 R9 K17    ; R9 := R9 * 12.000000
- 73 [-]: SETTABLE  R4 K19 R9    ; R4[0xde321e6f] := R9
+ 73 [-]: SETTABLE  R4 K19 R9    ; R4["z"] := R9
  74 [-]: GETGLOBAL R9 K14       ; R9 := 0x808dc004
  75 [-]: MOVE      R10 R5       ; R10 := R5
  76 [-]: MOVE      R11 R2       ; R11 := R2

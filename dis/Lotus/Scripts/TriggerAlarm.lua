@@ -5071,7 +5071,7 @@
  40 [-]: JMP       42           ; PC := 42
  41 [-]: LOADBOOL  R9 0 1       ; R9 := false; PC := 42
  42 [-]: LOADBOOL  R9 1 0       ; R9 := true
- 43 [-]: SETTABLE  R8 K3 R9     ; R8[0x8eb2112d] := R9
+ 43 [-]: SETTABLE  R8 K3 R9     ; R8["reactorVisible"] := R9
  44 [-]: GETGLOBAL R8 K13       ; R8 := 0x3d106989
  45 [-]: LOADK     R9 K14       ; R9 := "InitializeReactorAfterMigration - "
  46 [-]: GETGLOBAL R10 K15      ; R10 := 0x64fb1586

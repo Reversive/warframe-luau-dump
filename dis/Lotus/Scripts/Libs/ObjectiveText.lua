@@ -826,7 +826,7 @@
  13 [-]: GETTABLE  R1 R1 K4     ; R82 := R1[0xca312f51]
  14 [-]: LOADK     R2 K2        ; R2 := "ExtractionTimer"
  15 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 16 [-]: SETTABLE  R0 K2 R1     ; R0["ExtractionTimer"] := R1
+ 16 [-]: SETTABLE  R0 K2 R1     ; R0[0xb7ae3621] := R1
  17 [-]: GETGLOBAL R0 K0        ; R0 := 0x7b998233
  18 [-]: GETGLOBAL R1 K1        ; R1 := _T
  19 [-]: GETTABLE  R1 R1 K2     ; R1 := R1["ExtractionTimer"]
@@ -1512,7 +1512,7 @@
  21 [-]: MOVE      R15 R8       ; R15 := R8
  22 [-]: MOVE      R16 R9       ; R16 := R9
  23 [-]: CALL      R11 6 2      ; R11 := R11(R12,R13,R14,R15,R16)
- 24 [-]: SETTABLE  R10 K3 R11   ; R10[0x1a41a3c1] := R11
+ 24 [-]: SETTABLE  R10 K3 R11   ; R10["ObjProgressBar"] := R11
  25 [-]: GETGLOBAL R10 K2       ; R10 := _T
  26 [-]: GETTABLE  R10 R10 K3   ; R10 := R10["ObjProgressBar"]
  27 [-]: GETTABLE  R10 R10 K6   ; R82 := R10[0xb7ae3621]
@@ -1587,7 +1587,7 @@
  96 [-]: MOVE      R13 R10      ; R13 := R10
  97 [-]: NEWTABLE  R14 0 2      ; R14 := {}
  98 [-]: SETTABLE  R14 K15 R1   ; R14["CURRENT"] := R1
- 99 [-]: SETTABLE  R14 K16 R2   ; R14[0x1a41a3c1] := R2
+ 99 [-]: SETTABLE  R14 K16 R2   ; R14["TOTAL"] := R2
 100 [-]: CALL      R12 3 0      ; R12,... := R12(R13,R14)
 101 [-]: CALL      R11 0 1      ; R11(R12,...)
 102 [-]: GETGLOBAL R11 K2       ; R11 := _T
@@ -1858,7 +1858,7 @@
  23 [-]: MOVE      R8 R2        ; R8 := R2
  24 [-]: LOADBOOL  R9 1 0       ; R9 := true
  25 [-]: CALL      R4 6 2       ; R4 := R4(R5,R6,R7,R8,R9)
- 26 [-]: SETTABLE  R3 K3 R4     ; R3["NpcHealthTracker"] := R4
+ 26 [-]: SETTABLE  R3 K3 R4     ; R3[0x1a41a3c1] := R4
  27 [-]: GETGLOBAL R3 K2        ; R3 := _T
  28 [-]: GETTABLE  R3 R3 K3     ; R3 := R3["NpcHealthTracker"]
  29 [-]: GETTABLE  R3 R3 K6     ; R82 := R3[0xb7ae3621]

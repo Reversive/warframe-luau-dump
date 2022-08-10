@@ -2430,7 +2430,7 @@
   6 [-]: JMP       10           ; PC := 10
   7 [-]: GETGLOBAL R2 K1        ; R2 := _T
   8 [-]: NEWTABLE  R3 0 0       ; R3 := {}
-  9 [-]: SETTABLE  R2 K2 R3     ; R2[0xbb610e5b] := R3
+  9 [-]: SETTABLE  R2 K2 R3     ; R2["PurgatoryTeleportingAvatars"] := R3
  10 [-]: LOADNIL   R2 R2        ; R2 := nil
  11 [-]: GETGLOBAL R3 K3        ; R3 := 0xc8802016
  12 [-]: GETGLOBAL R4 K1        ; R4 := _T

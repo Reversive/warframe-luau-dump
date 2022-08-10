@@ -162,7 +162,7 @@
  78 [-]: CALL      R12 4 2      ; R12 := R12(R13,R14,R15)
  79 [-]: GETTABLE  R13 R9 K19   ; R13 := R9["y"]
  80 [-]: ADD       R13 R13 K20  ; R13 := R13 + 1.100000
- 81 [-]: SETTABLE  R9 K19 R13   ; R9["y"] := R13
+ 81 [-]: SETTABLE  R9 K19 R13   ; R9[0xd2715720] := R13
  82 [-]: GETGLOBAL R13 K0       ; R13 := 0x89326c93
  83 [-]: SELF      R13 R13 K21  ; R14 := R13; R13 := R13[0x18d05d30]
  84 [-]: CALL      R13 2 2      ; R13 := R13(R14)

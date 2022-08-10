@@ -3440,7 +3440,7 @@
  20 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  21 [-]: NEWTABLE  R4 0 3       ; R4 := {}
  22 [-]: SETTABLE  R4 K9 K10    ; R4["difficulty"] := 0.500000
- 23 [-]: SETTABLE  R4 K11 R3    ; R4["baseNodeName"] := R3
+ 23 [-]: SETTABLE  R4 K11 R3    ; R4[0x397b920f] := R3
  24 [-]: MOVE      R5 R3        ; R5 := R3
  25 [-]: LOADK     R6 K13       ; R6 := "_HUB"
  26 [-]: CONCAT    R5 R5 R6     ; R5 := R5 .. R6
@@ -5935,7 +5935,7 @@
  17 [-]: CALL      R3 2 0       ; R3,... := R3(R4)
  18 [-]: CALL      R1 0 1       ; R1(R2,...)
  19 [-]: GETGLOBAL R1 K6        ; R1 := 0x1aff92ed
- 20 [-]: SETTABLE  R0 K5 R1     ; R0[0xe7f2b02f] := R1
+ 20 [-]: SETTABLE  R0 K5 R1     ; R0["gameRules"] := R1
  21 [-]: GETUPVAL  R1 U5        ; R1 := U5
  22 [-]: GETTABLE  R1 R1 K7     ; R82 := R1[0x5e35d4d6]
  23 [-]: CALL      R1 1 2       ; R1 := R1()
@@ -6293,7 +6293,7 @@
  27 [-]: LOADK     R3 255       ; R3 := 255.000000
  28 [-]: LOADK     R4 255       ; R4 := 255.000000
  29 [-]: CALL      R1 4 2       ; R1 := R1(R2,R3,R4)
- 30 [-]: SETTABLE  R0 K11 R1    ; R0[0xae91e43b] := R1
+ 30 [-]: SETTABLE  R0 K11 R1    ; R0["PriorLightMapTint"] := R1
  31 [-]: GETGLOBAL R0 K13       ; R0 := 0xae91e43b
  32 [-]: SELF      R0 R0 K14    ; R1 := R0; R0 := R0[0xaade900e]
  33 [-]: LOADK     R2 K15       ; R2 := "CaptchaImage"

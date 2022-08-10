@@ -340,7 +340,7 @@
  33 [-]: GETUPVAL  R13 U3       ; R13 := U3
  34 [-]: SETTABLE  R12 K14 R13  ; R12["procChance"] := R13
  35 [-]: SETTABLE  R12 K15 K16  ; R12["abilityActiveAnim"] := true
- 36 [-]: SETTABLE  R12 K17 R11  ; R12[0x84aac15c] := R11
+ 36 [-]: SETTABLE  R12 K17 R11  ; R12["weaponEquippedFnc"] := R11
  37 [-]: GETUPVAL  R13 U2       ; R13 := U2
  38 [-]: GETTABLE  R13 R13 K18  ; R82 := R13[0xcbff1688]
  39 [-]: MOVE      R14 R12      ; R14 := R12

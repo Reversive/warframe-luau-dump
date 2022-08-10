@@ -649,7 +649,7 @@
  97 [-]: SELF      R10 R0 K27   ; R11 := R0; R10 := R0[0xb40c191a]
  98 [-]: CALL      R10 2 2      ; R10 := R10(R11)
  99 [-]: MUL       R10 R10 R7   ; R10 := R10 * R7
-100 [-]: SETTABLE  R9 K26 R10   ; R9["baseAmount"] := R10
+100 [-]: SETTABLE  R9 K26 R10   ; R9[0xcbd666e1] := R10
 101 [-]: SELF      R10 R9 K28   ; R11 := R9; R10 := R9[0x1586e35e]
 102 [-]: LOADK     R12 5        ; R12 := 5.000000
 103 [-]: LOADK     R13 1        ; R13 := 1.000000
@@ -1967,7 +1967,7 @@
   3 [-]: GETGLOBAL R3 K1        ; R3 := 0xa508bfde
   4 [-]: MOVE      R4 R0        ; R4 := R0
   5 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
-  6 [-]: SETTABLE  R1 K0 R2     ; R1["RADIUS"] := R2
+  6 [-]: SETTABLE  R1 K0 R2     ; R1[0x9ba17154] := R2
   7 [-]: GETGLOBAL R2 K3        ; R2 := 0x5bced4c4
   8 [-]: GETTABLE  R2 R2 K4     ; R82 := R2[0x55f27c30]
   9 [-]: GETUPVAL  R3 U0        ; R3 := U0
@@ -1981,12 +1981,12 @@
  17 [-]: GETGLOBAL R3 K8        ; R3 := 0xa031f71c
  18 [-]: MOVE      R4 R0        ; R4 := R0
  19 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
- 20 [-]: SETTABLE  R1 K7 R2     ; R1["ENERGY"] := R2
+ 20 [-]: SETTABLE  R1 K7 R2     ; R1[0xef23c099] := R2
  21 [-]: GETUPVAL  R2 U0        ; R2 := U0
  22 [-]: GETGLOBAL R3 K10       ; R3 := 0x2bf4b101
  23 [-]: MOVE      R4 R0        ; R4 := R0
  24 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
- 25 [-]: SETTABLE  R1 K9 R2     ; R1["COST"] := R2
+ 25 [-]: SETTABLE  R1 K9 R2     ; R1[0xcbd666e1] := R2
  26 [-]: GETGLOBAL R2 K11       ; R2 := cjson
  27 [-]: GETTABLE  R2 R2 K12    ; R82 := R2[0xb139d7bc]
  28 [-]: MOVE      R3 R1        ; R3 := R1

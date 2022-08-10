@@ -474,7 +474,7 @@
  60 [-]: GETTABLE  R7 R0 K20    ; R7 := R0["mOriginalMaxZoom"]
  61 [-]: GETTABLE  R8 R0 K12    ; R8 := R0["mCurrentZoom"]
  62 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
- 63 [-]: SETTABLE  R0 K18 R6    ; R0[0xbd496aa1] := R6
+ 63 [-]: SETTABLE  R0 K18 R6    ; R0["mMaxZoom"] := R6
  64 [-]: GETTABLE  R6 R0 K21    ; R6 := R0["mMovie"]
  65 [-]: SELF      R6 R6 K22    ; R7 := R6; R6 := R6[0xf64b7262]
  66 [-]: GETTABLE  R8 R0 K23    ; R8 := R0["mActiveClipName"]

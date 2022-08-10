@@ -909,7 +909,7 @@
  36 [-]: MOVE      R12 R9       ; R12 := R9
  37 [-]: LOADBOOL  R13 0 0      ; R13 := false
  38 [-]: NEWTABLE  R14 0 1      ; R14 := {}
- 39 [-]: SETTABLE  R14 K13 R7   ; R14["COUNT"] := R7
+ 39 [-]: SETTABLE  R14 K13 R7   ; R14[0x4bc5dc8b] := R7
  40 [-]: CALL      R10 5 2      ; R10 := R10(R11,R12,R13,R14)
  41 [-]: LEN       R11 R10      ; R11 := # R10
  42 [-]: EQ        1 R11 K2     ; if R11 == 0.000000 then PC := 52
@@ -956,7 +956,7 @@
  83 [-]: CONCAT    R14 R14 R16  ; R14 := R14 .. R15 .. R16
  84 [-]: LOADBOOL  R15 0 0      ; R15 := false
  85 [-]: NEWTABLE  R16 0 1      ; R16 := {}
- 86 [-]: SETTABLE  R16 K13 R7   ; R16["COUNT"] := R7
+ 86 [-]: SETTABLE  R16 K13 R7   ; R16[0x4bc5dc8b] := R7
  87 [-]: CALL      R12 5 2      ; R12 := R12(R13,R14,R15,R16)
  88 [-]: GETGLOBAL R13 K17      ; R13 := 0x34291f5c
  89 [-]: GETTABLE  R13 R13 K18  ; R82 := R13[0x1467d5f4]

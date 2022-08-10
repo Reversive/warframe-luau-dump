@@ -349,7 +349,7 @@
 159 [-]: GETTABLE  R16 R16 R2   ; R16 := R16[R2]
 160 [-]: GETTABLE  R16 R16 K10  ; R16 := R16["params"]
 161 [-]: GETGLOBAL R17 K30      ; R17 := 0x9c4a1cd5
-162 [-]: SETTABLE  R16 K33 R17  ; R16["laserDoorDamTrigger"] := R17
+162 [-]: SETTABLE  R16 K33 R17  ; R16[0xf2deaf69] := R17
 163 [-]: GETGLOBAL R16 K6       ; R16 := 0x89326c93
 164 [-]: SELF      R16 R16 K34  ; R17 := R16; R16 := R16[0x18d05d30]
 165 [-]: CALL      R16 2 2      ; R16 := R16(R17)

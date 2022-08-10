@@ -3459,7 +3459,7 @@
 204 [-]: MOVE      R22 R17      ; R22 := R17
 205 [-]: CALL      R20 3 1      ; R20(R21,R22)
 206 [-]: GETUPVAL  R20 U4       ; R20 := U4
-207 [-]: SETTABLE  R20 K58 R18  ; R20[0x0000004e] := R18
+207 [-]: SETTABLE  R20 K58 R18  ; R20["mHeight"] := R18
 208 [-]: GETUPVAL  R20 U4       ; R20 := U4
 209 [-]: CLOSURE   R21 0        ; R21 := closure(Function #30.1)
 210 [-]: GETUPVAL  R0 U4        ; R0 := U4
@@ -5129,7 +5129,7 @@
  16 [-]: JMP       18           ; PC := 18
  17 [-]: LOADBOOL  R2 0 1       ; R2 := false; PC := 18
  18 [-]: LOADBOOL  R2 1 0       ; R2 := true
- 19 [-]: SETTABLE  R1 K9 R2     ; R1["FullyScanned"] := R2
+ 19 [-]: SETTABLE  R1 K9 R2     ; R1[0x4706ff8f] := R2
  20 [-]: GETUPVAL  R1 U0        ; R1 := U0
  21 [-]: SETTABLE  R1 K12 R0    ; R1["Element"] := R0
  22 [-]: GETUPVAL  R1 U0        ; R1 := U0
@@ -5285,13 +5285,13 @@
   4 [-]: MOVE      R2 R0        ; R2 := R0
   5 [-]: NEWTABLE  R3 0 3       ; R3 := {}
   6 [-]: GETGLOBAL R4 K3        ; R4 := 0xd812b407
-  7 [-]: SETTABLE  R3 K2 R4     ; R3[0x3f3ae64c] := R4
+  7 [-]: SETTABLE  R3 K2 R4     ; R3["Category"] := R4
   8 [-]: GETGLOBAL R4 K5        ; R4 := 0xae91e43b
   9 [-]: SELF      R4 R4 K6     ; R5 := R4; R4 := R4[0x42b04007]
  10 [-]: LOADK     R6 K7        ; R6 := "/Lotus/Language/Menu/CategoryAll"
  11 [-]: LOADBOOL  R7 0 0       ; R7 := false
  12 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
- 13 [-]: SETTABLE  R3 K4 R4     ; R3[0x3c759bf2] := R4
+ 13 [-]: SETTABLE  R3 K4 R4     ; R3["Name"] := R4
  14 [-]: GETGLOBAL R4 K9        ; R4 := 0x0032441c
  15 [-]: GETTABLE  R4 R4 K10    ; R4 := R4["UICategoryIcon_AllOn"]
  16 [-]: SETTABLE  R3 K8 R4     ; R3["Icon"] := R4
@@ -5301,13 +5301,13 @@
  20 [-]: MOVE      R2 R0        ; R2 := R0
  21 [-]: NEWTABLE  R3 0 3       ; R3 := {}
  22 [-]: GETGLOBAL R4 K11       ; R4 := 0xf6eef9ce
- 23 [-]: SETTABLE  R3 K2 R4     ; R3[0x3f3ae64c] := R4
+ 23 [-]: SETTABLE  R3 K2 R4     ; R3["Category"] := R4
  24 [-]: GETGLOBAL R4 K5        ; R4 := 0xae91e43b
  25 [-]: SELF      R4 R4 K6     ; R5 := R4; R4 := R4[0x42b04007]
  26 [-]: LOADK     R6 K12       ; R6 := "/Lotus/Language/Game/Faction_GrineerUC"
  27 [-]: LOADBOOL  R7 0 0       ; R7 := false
  28 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
- 29 [-]: SETTABLE  R3 K4 R4     ; R3[0x3c759bf2] := R4
+ 29 [-]: SETTABLE  R3 K4 R4     ; R3["Name"] := R4
  30 [-]: GETGLOBAL R4 K9        ; R4 := 0x0032441c
  31 [-]: GETTABLE  R4 R4 K13    ; R4 := R4["UICategoryIcon_GrineerOn"]
  32 [-]: SETTABLE  R3 K8 R4     ; R3["Icon"] := R4
@@ -5317,13 +5317,13 @@
  36 [-]: MOVE      R2 R0        ; R2 := R0
  37 [-]: NEWTABLE  R3 0 3       ; R3 := {}
  38 [-]: GETGLOBAL R4 K14       ; R4 := 0x1058a310
- 39 [-]: SETTABLE  R3 K2 R4     ; R3[0x3f3ae64c] := R4
+ 39 [-]: SETTABLE  R3 K2 R4     ; R3["Category"] := R4
  40 [-]: GETGLOBAL R4 K5        ; R4 := 0xae91e43b
  41 [-]: SELF      R4 R4 K6     ; R5 := R4; R4 := R4[0x42b04007]
  42 [-]: LOADK     R6 K15       ; R6 := "/Lotus/Language/Game/Faction_CorpusUC"
  43 [-]: LOADBOOL  R7 0 0       ; R7 := false
  44 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
- 45 [-]: SETTABLE  R3 K4 R4     ; R3[0x3c759bf2] := R4
+ 45 [-]: SETTABLE  R3 K4 R4     ; R3["Name"] := R4
  46 [-]: GETGLOBAL R4 K9        ; R4 := 0x0032441c
  47 [-]: GETTABLE  R4 R4 K16    ; R4 := R4["UICategoryIcon_CorpusOn"]
  48 [-]: SETTABLE  R3 K8 R4     ; R3["Icon"] := R4
@@ -5333,13 +5333,13 @@
  52 [-]: MOVE      R2 R0        ; R2 := R0
  53 [-]: NEWTABLE  R3 0 3       ; R3 := {}
  54 [-]: GETGLOBAL R4 K17       ; R4 := 0x21d808d0
- 55 [-]: SETTABLE  R3 K2 R4     ; R3[0x3f3ae64c] := R4
+ 55 [-]: SETTABLE  R3 K2 R4     ; R3["Category"] := R4
  56 [-]: GETGLOBAL R4 K5        ; R4 := 0xae91e43b
  57 [-]: SELF      R4 R4 K6     ; R5 := R4; R4 := R4[0x42b04007]
  58 [-]: LOADK     R6 K18       ; R6 := "/Lotus/Language/Game/Faction_InfestationUC"
  59 [-]: LOADBOOL  R7 0 0       ; R7 := false
  60 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
- 61 [-]: SETTABLE  R3 K4 R4     ; R3[0x3c759bf2] := R4
+ 61 [-]: SETTABLE  R3 K4 R4     ; R3["Name"] := R4
  62 [-]: GETGLOBAL R4 K9        ; R4 := 0x0032441c
  63 [-]: GETTABLE  R4 R4 K19    ; R4 := R4["UICategoryIcon_InfestedOn"]
  64 [-]: SETTABLE  R3 K8 R4     ; R3["Icon"] := R4
@@ -5349,13 +5349,13 @@
  68 [-]: MOVE      R2 R0        ; R2 := R0
  69 [-]: NEWTABLE  R3 0 3       ; R3 := {}
  70 [-]: GETGLOBAL R4 K20       ; R4 := 0x2e875a98
- 71 [-]: SETTABLE  R3 K2 R4     ; R3[0x3f3ae64c] := R4
+ 71 [-]: SETTABLE  R3 K2 R4     ; R3["Category"] := R4
  72 [-]: GETGLOBAL R4 K5        ; R4 := 0xae91e43b
  73 [-]: SELF      R4 R4 K6     ; R5 := R4; R4 := R4[0x42b04007]
  74 [-]: LOADK     R6 K21       ; R6 := "/Lotus/Language/Game/Faction_WildUC"
  75 [-]: LOADBOOL  R7 0 0       ; R7 := false
  76 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
- 77 [-]: SETTABLE  R3 K4 R4     ; R3[0x3c759bf2] := R4
+ 77 [-]: SETTABLE  R3 K4 R4     ; R3["Name"] := R4
  78 [-]: GETGLOBAL R4 K9        ; R4 := 0x0032441c
  79 [-]: GETTABLE  R4 R4 K22    ; R4 := R4["UICategoryIcon_WildOn"]
  80 [-]: SETTABLE  R3 K8 R4     ; R3["Icon"] := R4
@@ -5365,13 +5365,13 @@
  84 [-]: MOVE      R2 R0        ; R2 := R0
  85 [-]: NEWTABLE  R3 0 3       ; R3 := {}
  86 [-]: GETGLOBAL R4 K23       ; R4 := 0x1ba16100
- 87 [-]: SETTABLE  R3 K2 R4     ; R3[0x3f3ae64c] := R4
+ 87 [-]: SETTABLE  R3 K2 R4     ; R3["Category"] := R4
  88 [-]: GETGLOBAL R4 K5        ; R4 := 0xae91e43b
  89 [-]: SELF      R4 R4 K6     ; R5 := R4; R4 := R4[0x42b04007]
  90 [-]: LOADK     R6 K24       ; R6 := "/Lotus/Language/Game/Faction_OrokinUC"
  91 [-]: LOADBOOL  R7 0 0       ; R7 := false
  92 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
- 93 [-]: SETTABLE  R3 K4 R4     ; R3[0x3c759bf2] := R4
+ 93 [-]: SETTABLE  R3 K4 R4     ; R3["Name"] := R4
  94 [-]: GETGLOBAL R4 K9        ; R4 := 0x0032441c
  95 [-]: GETTABLE  R4 R4 K25    ; R4 := R4["UICategoryIcon_OrokinOn"]
  96 [-]: SETTABLE  R3 K8 R4     ; R3["Icon"] := R4
@@ -5381,13 +5381,13 @@
 100 [-]: MOVE      R2 R0        ; R2 := R0
 101 [-]: NEWTABLE  R3 0 3       ; R3 := {}
 102 [-]: GETGLOBAL R4 K26       ; R4 := 0x159bf276
-103 [-]: SETTABLE  R3 K2 R4     ; R3[0x3f3ae64c] := R4
+103 [-]: SETTABLE  R3 K2 R4     ; R3["Category"] := R4
 104 [-]: GETGLOBAL R4 K5        ; R4 := 0xae91e43b
 105 [-]: SELF      R4 R4 K6     ; R5 := R4; R4 := R4[0x42b04007]
 106 [-]: LOADK     R6 K27       ; R6 := "/Lotus/Language/Game/Faction_SentientUC"
 107 [-]: LOADBOOL  R7 0 0       ; R7 := false
 108 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
-109 [-]: SETTABLE  R3 K4 R4     ; R3[0x3c759bf2] := R4
+109 [-]: SETTABLE  R3 K4 R4     ; R3["Name"] := R4
 110 [-]: GETGLOBAL R4 K9        ; R4 := 0x0032441c
 111 [-]: GETTABLE  R4 R4 K28    ; R4 := R4["UICategoryIcon_SentientOn"]
 112 [-]: SETTABLE  R3 K8 R4     ; R3["Icon"] := R4
@@ -5397,13 +5397,13 @@
 116 [-]: MOVE      R2 R0        ; R2 := R0
 117 [-]: NEWTABLE  R3 0 3       ; R3 := {}
 118 [-]: GETGLOBAL R4 K29       ; R4 := 0xc3d4b93c
-119 [-]: SETTABLE  R3 K2 R4     ; R3[0x3f3ae64c] := R4
+119 [-]: SETTABLE  R3 K2 R4     ; R3["Category"] := R4
 120 [-]: GETGLOBAL R4 K5        ; R4 := 0xae91e43b
 121 [-]: SELF      R4 R4 K6     ; R5 := R4; R4 := R4[0x42b04007]
 122 [-]: LOADK     R6 K30       ; R6 := "/Lotus/Language/Game/Stalker"
 123 [-]: LOADBOOL  R7 0 0       ; R7 := false
 124 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
-125 [-]: SETTABLE  R3 K4 R4     ; R3[0x3c759bf2] := R4
+125 [-]: SETTABLE  R3 K4 R4     ; R3["Name"] := R4
 126 [-]: GETGLOBAL R4 K9        ; R4 := 0x0032441c
 127 [-]: GETTABLE  R4 R4 K31    ; R4 := R4["UICategoryIcon_StalkerOn"]
 128 [-]: SETTABLE  R3 K8 R4     ; R3["Icon"] := R4
@@ -5413,13 +5413,13 @@
 132 [-]: MOVE      R2 R0        ; R2 := R0
 133 [-]: NEWTABLE  R3 0 3       ; R3 := {}
 134 [-]: GETGLOBAL R4 K32       ; R4 := 0x4706ff8f
-135 [-]: SETTABLE  R3 K2 R4     ; R3[0x3f3ae64c] := R4
+135 [-]: SETTABLE  R3 K2 R4     ; R3["Category"] := R4
 136 [-]: GETGLOBAL R4 K5        ; R4 := 0xae91e43b
 137 [-]: SELF      R4 R4 K6     ; R5 := R4; R4 := R4[0x42b04007]
 138 [-]: LOADK     R6 K33       ; R6 := "/Lotus/Language/Factions/Faction_NewWarNarmerUC"
 139 [-]: LOADBOOL  R7 0 0       ; R7 := false
 140 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
-141 [-]: SETTABLE  R3 K4 R4     ; R3[0x3c759bf2] := R4
+141 [-]: SETTABLE  R3 K4 R4     ; R3["Name"] := R4
 142 [-]: GETGLOBAL R4 K9        ; R4 := 0x0032441c
 143 [-]: GETTABLE  R4 R4 K34    ; R4 := R4["UICategoryIcon_NarmerOn"]
 144 [-]: SETTABLE  R3 K8 R4     ; R3["Icon"] := R4
@@ -5763,7 +5763,7 @@
  13 [-]: SETTABLE  R3 K4 R4     ; R3["Name"] := R4
  14 [-]: GETGLOBAL R4 K9        ; R4 := 0x0032441c
  15 [-]: GETTABLE  R4 R4 K10    ; R4 := R4["UICategoryIcon_AllOn"]
- 16 [-]: SETTABLE  R3 K8 R4     ; R3[0x33bdd652] := R4
+ 16 [-]: SETTABLE  R3 K8 R4     ; R3["Icon"] := R4
  17 [-]: CALL      R1 3 1       ; R1(R2,R3)
  18 [-]: GETGLOBAL R1 K0        ; R1 := 0x33bdd652
  19 [-]: GETTABLE  R1 R1 K1     ; R82 := R1[0x23d5322f]
@@ -5779,7 +5779,7 @@
  29 [-]: SETTABLE  R3 K4 R4     ; R3["Name"] := R4
  30 [-]: GETGLOBAL R4 K13       ; R4 := 0x4f04c01c
  31 [-]: GETTABLE  R4 R4 K14    ; R4 := R4[1.000000]
- 32 [-]: SETTABLE  R3 K8 R4     ; R3[0x33bdd652] := R4
+ 32 [-]: SETTABLE  R3 K8 R4     ; R3["Icon"] := R4
  33 [-]: CALL      R1 3 1       ; R1(R2,R3)
  34 [-]: GETGLOBAL R1 K0        ; R1 := 0x33bdd652
  35 [-]: GETTABLE  R1 R1 K1     ; R82 := R1[0x23d5322f]
@@ -5795,7 +5795,7 @@
  45 [-]: SETTABLE  R3 K4 R4     ; R3["Name"] := R4
  46 [-]: GETGLOBAL R4 K13       ; R4 := 0x4f04c01c
  47 [-]: GETTABLE  R4 R4 K17    ; R4 := R4[2.000000]
- 48 [-]: SETTABLE  R3 K8 R4     ; R3[0x33bdd652] := R4
+ 48 [-]: SETTABLE  R3 K8 R4     ; R3["Icon"] := R4
  49 [-]: CALL      R1 3 1       ; R1(R2,R3)
  50 [-]: GETGLOBAL R1 K0        ; R1 := 0x33bdd652
  51 [-]: GETTABLE  R1 R1 K1     ; R82 := R1[0x23d5322f]
@@ -5811,7 +5811,7 @@
  61 [-]: SETTABLE  R3 K4 R4     ; R3["Name"] := R4
  62 [-]: GETGLOBAL R4 K13       ; R4 := 0x4f04c01c
  63 [-]: GETTABLE  R4 R4 K20    ; R4 := R4[3.000000]
- 64 [-]: SETTABLE  R3 K8 R4     ; R3[0x33bdd652] := R4
+ 64 [-]: SETTABLE  R3 K8 R4     ; R3["Icon"] := R4
  65 [-]: CALL      R1 3 1       ; R1(R2,R3)
  66 [-]: GETGLOBAL R1 K0        ; R1 := 0x33bdd652
  67 [-]: GETTABLE  R1 R1 K1     ; R82 := R1[0x23d5322f]
@@ -5827,7 +5827,7 @@
  77 [-]: SETTABLE  R3 K4 R4     ; R3["Name"] := R4
  78 [-]: GETGLOBAL R4 K13       ; R4 := 0x4f04c01c
  79 [-]: GETTABLE  R4 R4 K23    ; R4 := R4[4.000000]
- 80 [-]: SETTABLE  R3 K8 R4     ; R3[0x33bdd652] := R4
+ 80 [-]: SETTABLE  R3 K8 R4     ; R3["Icon"] := R4
  81 [-]: CALL      R1 3 1       ; R1(R2,R3)
  82 [-]: RETURN    R0 2         ; return R0
  83 [-]: RETURN    R0 1         ; return 
@@ -6875,7 +6875,7 @@
  62 [-]: SETTABLE  R9 K22 R6    ; R9["Label"] := R6
  63 [-]: GETGLOBAL R10 K24      ; R10 := 0xa8cb46da
  64 [-]: GETTABLE  R10 R10 R4   ; R10 := R10[R4]
- 65 [-]: SETTABLE  R9 K23 R10   ; R9["Icon"] := R10
+ 65 [-]: SETTABLE  R9 K23 R10   ; R9[0x1ac299fb] := R10
  66 [-]: SETTABLE  R9 K25 R5    ; R9["Tint"] := R5
  67 [-]: MOVE      R10 R0       ; R10 := R0
  68 [-]: MOVE      R11 R2       ; R11 := R2
@@ -6999,7 +6999,7 @@
 186 [-]: SETTABLE  R21 K22 R17  ; R21["Label"] := R17
 187 [-]: GETGLOBAL R22 K24      ; R22 := 0xa8cb46da
 188 [-]: GETTABLE  R22 R22 R15  ; R22 := R22[R15]
-189 [-]: SETTABLE  R21 K23 R22  ; R21["Icon"] := R22
+189 [-]: SETTABLE  R21 K23 R22  ; R21[0x1ac299fb] := R22
 190 [-]: SETTABLE  R21 K25 R16  ; R21["Tint"] := R16
 191 [-]: SETTABLE  R21 K42 R12  ; R21["Nemesis"] := R12
 192 [-]: MOVE      R22 R0       ; R22 := R0
@@ -8227,7 +8227,7 @@
  19 [-]: GETGLOBAL R2 K3        ; R2 := _T
  20 [-]: NEWTABLE  R3 0 1       ; R3 := {}
  21 [-]: NEWTABLE  R4 0 2       ; R4 := {}
- 22 [-]: SETTABLE  R4 K7 R1     ; R4[0x38f10e85] := R1
+ 22 [-]: SETTABLE  R4 K7 R1     ; R4["StoreItem"] := R1
  23 [-]: GETGLOBAL R5 K9        ; R5 := 0xa27a9428
  24 [-]: SETTABLE  R4 K8 R5     ; R4["CodexManifest"] := R5
  25 [-]: SETTABLE  R3 K6 R4     ; R3["ITEM"] := R4
@@ -12062,8 +12062,8 @@
  49 [-]: SETTABLE  R6 K7 R7     ; R6["Label"] := R7
  50 [-]: GETTABLE  R7 R0 K15    ; R7 := R0["icon"]
  51 [-]: SETTABLE  R6 K14 R7    ; R6["Icon"] := R7
- 52 [-]: SETTABLE  R6 K16 R0    ; R6[0xae91e43b] := R0
- 53 [-]: SETTABLE  R6 K17 R3    ; R6[0xb009bbc6] := R3
+ 52 [-]: SETTABLE  R6 K16 R0    ; R6["Filter"] := R0
+ 53 [-]: SETTABLE  R6 K17 R3    ; R6["Section"] := R3
  54 [-]: GETUPVAL  R7 U0        ; R7 := U0
  55 [-]: SELF      R7 R7 K18    ; R8 := R7; R7 := R7[0x02691607]
  56 [-]: MOVE      R9 R6        ; R9 := R6

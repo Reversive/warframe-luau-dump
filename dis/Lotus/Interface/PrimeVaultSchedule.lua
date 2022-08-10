@@ -1311,7 +1311,7 @@
   4 [-]: LOADK     R2 6         ; R2 := 6.000000
   5 [-]: LOADBOOL  R3 1 0       ; R3 := true
   6 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
-  7 [-]: SETTABLE  R0 K0 R1     ; R0[0x33bdd652] := R1
+  7 [-]: SETTABLE  R0 K0 R1     ; R0["Content"] := R1
   8 [-]: GETUPVAL  R1 U1        ; R1 := U1
   9 [-]: GETTABLE  R1 R1 K1     ; R82 := R1[0x5d10207d]
  10 [-]: LOADK     R2 2         ; R2 := 2.000000
@@ -1323,13 +1323,13 @@
  16 [-]: LOADK     R2 9         ; R2 := 9.000000
  17 [-]: LOADBOOL  R3 1 0       ; R3 := true
  18 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
- 19 [-]: SETTABLE  R0 K4 R1     ; R0[0xbd496aa1] := R1
+ 19 [-]: SETTABLE  R0 K4 R1     ; R0["FloatingContent"] := R1
  20 [-]: GETUPVAL  R1 U1        ; R1 := U1
  21 [-]: GETTABLE  R1 R1 K1     ; R82 := R1[0x5d10207d]
  22 [-]: LOADK     R2 10        ; R2 := 10.000000
  23 [-]: LOADBOOL  R3 1 0       ; R3 := true
  24 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
- 25 [-]: SETTABLE  R0 K5 R1     ; R0[0x42645da3] := R1
+ 25 [-]: SETTABLE  R0 K5 R1     ; R0["FloatingContentHighlight"] := R1
  26 [-]: SETUPVAL  R0 U0        ; U82 := 
  27 [-]: GETUPVAL  R0 U0        ; R0 := U0
  28 [-]: GETUPVAL  R1 U2        ; R1 := U2
@@ -1337,7 +1337,7 @@
  30 [-]: GETUPVAL  R2 U0        ; R2 := U0
  31 [-]: GETTABLE  R2 R2 K3     ; R2 := R2["Background1"]
  32 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 33 [-]: SETTABLE  R0 K6 R1     ; R0[0x00000001] := R1
+ 33 [-]: SETTABLE  R0 K6 R1     ; R0["Background1Object"] := R1
  34 [-]: GETUPVAL  R0 U0        ; R0 := U0
  35 [-]: GETUPVAL  R1 U2        ; R1 := U2
  36 [-]: GETTABLE  R1 R1 K7     ; R82 := R1[0x8bcd12b6]
@@ -1351,7 +1351,7 @@
  44 [-]: GETUPVAL  R2 U0        ; R2 := U0
  45 [-]: GETTABLE  R2 R2 K5     ; R2 := R2["FloatingContentHighlight"]
  46 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 47 [-]: SETTABLE  R0 K9 R1     ; R0[0x46610c50] := R1
+ 47 [-]: SETTABLE  R0 K9 R1     ; R0["FloatingContentHighlightObject"] := R1
  48 [-]: GETGLOBAL R0 K10       ; R0 := _T
  49 [-]: GETTABLE  R0 R0 K11    ; R0 := R0["BackgroundVisible"]
  50 [-]: TEST      R0 0         ; if not R0 then PC := 56

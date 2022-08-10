@@ -695,7 +695,7 @@
  18 [-]: SETTABLE  R0 K6 R1     ; R0["AddAbilityTimer"] := R1
  19 [-]: GETGLOBAL R0 K0        ; R0 := _T
  20 [-]: CLOSURE   R1 6         ; R1 := closure(Function #9.7)
- 21 [-]: SETTABLE  R0 K7 R1     ; R0["SetFocusTimer"] := R1
+ 21 [-]: SETTABLE  R0 K7 R1     ; R0[0x00000000] := R1
  22 [-]: GETGLOBAL R0 K0        ; R0 := _T
  23 [-]: CLOSURE   R1 7         ; R1 := closure(Function #9.8)
  24 [-]: SETTABLE  R0 K8 R1     ; R0["AddLogMessage"] := R1

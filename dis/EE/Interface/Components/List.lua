@@ -1672,7 +1672,7 @@
  26 [-]: JMP       47           ; PC := 47
  27 [-]: GETTABLE  R3 R0 K5     ; R3 := R0["mClickDrag"]
  28 [-]: GETTABLE  R4 R2 K8     ; R4 := R2["Id"]
- 29 [-]: SETTABLE  R3 K7 R4     ; R3["DragId"] := R4
+ 29 [-]: SETTABLE  R3 K7 R4     ; R3[0x7b998233] := R4
  30 [-]: GETTABLE  R3 R0 K5     ; R3 := R0["mClickDrag"]
  31 [-]: SETTABLE  R3 K9 R1     ; R3["DragIndex"] := R1
  32 [-]: GETTABLE  R3 R0 K5     ; R3 := R0["mClickDrag"]
@@ -3231,7 +3231,7 @@
  34 [-]: GETTABLE  R3 R2 K6     ; R3 := R2["mClipName"]
  35 [-]: GETTABLE  R4 R0 K2     ; R4 := R0["mClickDrag"]
  36 [-]: GETTABLE  R4 R4 K3     ; R4 := R4["DragClipName"]
- 37 [-]: SETTABLE  R2 K6 R4     ; R2["mClipName"] := R4
+ 37 [-]: SETTABLE  R2 K6 R4     ; R2[0xbce5a201] := R4
  38 [-]: GETGLOBAL R4 K16       ; R4 := 0x7b998233
  39 [-]: GETTABLE  R5 R0 K17    ; R5 := R0["mElementDrawCallback"]
  40 [-]: CALL      R4 2 2       ; R4 := R4(R5)
@@ -3240,7 +3240,7 @@
  43 [-]: GETTABLE  R4 R0 K18    ; R82 := R4[0xb15e6aca]
  44 [-]: MOVE      R5 R2        ; R5 := R2
  45 [-]: CALL      R4 2 1       ; R4(R5)
- 46 [-]: SETTABLE  R2 K6 R3     ; R2["mClipName"] := R3
+ 46 [-]: SETTABLE  R2 K6 R3     ; R2[0xbce5a201] := R3
  47 [-]: GETTABLE  R4 R0 K0     ; R4 := R0["mMovie"]
  48 [-]: SELF      R4 R4 K19    ; R5 := R4; R4 := R4[0xaade900e]
  49 [-]: GETTABLE  R6 R0 K2     ; R6 := R0["mClickDrag"]
@@ -3493,7 +3493,7 @@
 135 [-]: EQ        1 R11 R14    ; if R11 == R14 then PC := 150
 136 [-]: JMP       150          ; PC := 150
 137 [-]: GETTABLE  R14 R0 K3    ; R14 := R0["mClickDrag"]
-138 [-]: SETTABLE  R14 K29 R11  ; R14["FocusedIndex"] := R11
+138 [-]: SETTABLE  R14 K29 R11  ; R14[0x00000001] := R11
 139 [-]: GETTABLE  R14 R0 K33   ; R14 := R0["mOnDragFocusedCallback"]
 140 [-]: EQ        1 R14 K5     ; if R14 == nil then PC := 152
 141 [-]: JMP       152          ; PC := 152

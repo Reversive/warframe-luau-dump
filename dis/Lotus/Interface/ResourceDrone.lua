@@ -1244,7 +1244,7 @@
  12 [-]: GETTABLE  R6 R6 K2     ; R82 := R6[0x23d5322f]
  13 [-]: GETUPVAL  R7 U0        ; R7 := U0
  14 [-]: NEWTABLE  R8 0 4       ; R8 := {}
- 15 [-]: SETTABLE  R8 K3 R5     ; R8["Drone"] := R5
+ 15 [-]: SETTABLE  R8 K3 R5     ; R8[0x42b04007] := R5
  16 [-]: GETTABLE  R9 R5 K5     ; R9 := R5["mResources"]
  17 [-]: GETTABLE  R9 R9 K6     ; R9 := R9[1.000000]
  18 [-]: GETTABLE  R9 R9 K7     ; R9 := R9["mStartTime"]
@@ -3825,10 +3825,10 @@
  93 [-]: GETTABLE  R20 R16 K22  ; R20 := R16["Themed"]
  94 [-]: SETTABLE  R19 K21 R20  ; R19["resIconThemed"] := R20
  95 [-]: GETTABLE  R20 R16 K24  ; R20 := R16["Icon"]
- 96 [-]: SETTABLE  R19 K23 R20  ; R19[0x33abee92] := R20
+ 96 [-]: SETTABLE  R19 K23 R20  ; R19["resIcon"] := R20
  97 [-]: GETTABLE  R20 R16 K26  ; R20 := R16["Name"]
- 98 [-]: SETTABLE  R19 K25 R20  ; R19[0x9ba7909f] := R20
- 99 [-]: SETTABLE  R19 K27 R17  ; R19[0x0032441c] := R17
+ 98 [-]: SETTABLE  R19 K25 R20  ; R19["resName"] := R20
+ 99 [-]: SETTABLE  R19 K27 R17  ; R19["resTotal"] := R17
 100 [-]: SETTABLE  R18 R14 R19  ; R18[R14] := R19
 101 [-]: FORLOOP   R11 76       ; R11 += R13; if R11 <= R12 then begin PC := 76; R14 := R11 end
 102 [-]: FORLOOP   R2 18        ; R2 += R4; if R2 <= R3 then begin PC := 18; R5 := R2 end
@@ -3871,7 +3871,7 @@
 139 [-]: LOADBOOL  R23 0 0      ; R23 := false
 140 [-]: NEWTABLE  R24 0 1      ; R24 := {}
 141 [-]: GETUPVAL  R25 U0       ; R25 := U0
-142 [-]: SETTABLE  R24 K34 R25  ; R24["TOTAL_COUNT"] := R25
+142 [-]: SETTABLE  R24 K34 R25  ; R24[0x8a8c8d5a] := R25
 143 [-]: CALL      R20 5 0      ; R20,... := R20(R21,R22,R23,R24)
 144 [-]: CALL      R18 0 1      ; R18(R19,...)
 145 [-]: RETURN    R0 1         ; return 

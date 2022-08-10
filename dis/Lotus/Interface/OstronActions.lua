@@ -1864,7 +1864,7 @@
  47 [-]: GETTABLE  R5 R5 K24    ; R5 := R5["mPolarity"]
  48 [-]: SETTABLE  R4 K23 R5    ; R4["mPolarizeValue"] := R5
  49 [-]: SETTABLE  R4 K25 R3    ; R4["mLoadOutType"] := R3
- 50 [-]: SETTABLE  R4 K26 R1    ; R4["mCategory"] := R1
+ 50 [-]: SETTABLE  R4 K26 R1    ; R4[0x338a8686] := R1
  51 [-]: GETUPVAL  R5 U0        ; R5 := U0
  52 [-]: SELF      R5 R5 K27    ; R6 := R5; R5 := R5[0x98a4e6ae]
  53 [-]: MOVE      R7 R4        ; R7 := R4
@@ -2641,7 +2641,7 @@
  72 [-]: GETUPVAL  R0 U9        ; R0 := U9
  73 [-]: GETUPVAL  R0 U10       ; R0 := U10
  74 [-]: GETUPVAL  R0 U12       ; R0 := U12
- 75 [-]: SETTABLE  R0 K19 R1    ; R0[0xdbfbf6c0] := R1
+ 75 [-]: SETTABLE  R0 K19 R1    ; R0["ValidateDonate"] := R1
  76 [-]: GETUPVAL  R0 U0        ; R0 := U0
  77 [-]: SELF      R0 R0 K8     ; R1 := R0; R0 := R0[0xe4162eed]
  78 [-]: LOADK     R2 K20       ; R2 := "SetValidationFunction"
@@ -2690,7 +2690,7 @@
  29 [-]: SETTABLE  R2 K11 R3    ; R2["Standing"] := R3
  30 [-]: GETUPVAL  R2 U0        ; R2 := U0
  31 [-]: GETTABLE  R3 R1 K14    ; R3 := R1["RawItem"]
- 32 [-]: SETTABLE  R2 K13 R3    ; R2["Info"] := R3
+ 32 [-]: SETTABLE  R2 K13 R3    ; R2[0x33bdd652] := R3
  33 [-]: GETUPVAL  R2 U1        ; R2 := U1
  34 [-]: GETUPVAL  R3 U2        ; R3 := U2
  35 [-]: CALL      R2 2 4       ; R2,R3,R4 := R2(R3)
@@ -3267,9 +3267,9 @@
 105 [-]: GETTABLE  R11 R0 K27   ; R11 := R0["Desc"]
 106 [-]: LOADBOOL  R12 1 0      ; R12 := true
 107 [-]: CALL      R9 4 2       ; R9 := R9(R10,R11,R12)
-108 [-]: SETTABLE  R8 K26 R9    ; R8["LocalizedDesc"] := R9
+108 [-]: SETTABLE  R8 K26 R9    ; R8[0xf64b7262] := R9
 109 [-]: GETTABLE  R9 R0 K28    ; R9 := R0["Tags"]
-110 [-]: SETTABLE  R8 K28 R9    ; R8["Tags"] := R9
+110 [-]: SETTABLE  R8 K28 R9    ; R8[0xd5181643] := R9
 111 [-]: GETGLOBAL R9 K7        ; R9 := 0xae91e43b
 112 [-]: SELF      R9 R9 K29    ; R10 := R9; R9 := R9[0x91a24e4b]
 113 [-]: GETTABLE  R11 R0 K9    ; R11 := R0["mClipName"]
@@ -3328,7 +3328,7 @@
 166 [-]: CALL      R15 4 2      ; R15 := R15(R16,R17,R18)
 167 [-]: LOADK     R16 K38      ; R16 := "</font>"
 168 [-]: CONCAT    R11 R11 R16  ; R11 := R11 .. R12 .. R13 .. R14 .. R15 .. R16
-169 [-]: SETTABLE  R8 K26 R11   ; R8["LocalizedDesc"] := R11
+169 [-]: SETTABLE  R8 K26 R11   ; R8[0xf64b7262] := R11
 170 [-]: GETGLOBAL R11 K39      ; R11 := _T
 171 [-]: SETTABLE  R11 K40 R8   ; R11["InfoPopup_Data"] := R8
 172 [-]: GETGLOBAL R11 K39      ; R11 := _T
@@ -3921,7 +3921,7 @@
 372 [-]: ADD       R49 K2 R0    ; R49 := 1.000000 + R0
 373 [-]: GETTABLE  R48 R48 R49  ; R48 := R48[R49]
 374 [-]: SETTABLE  R47 K45 R48  ; R47["Icon"] := R48
-375 [-]: SETTABLE  R47 K74 R16  ; R47["ErrorMsg"] := R16
+375 [-]: SETTABLE  R47 K74 R16  ; R47[0x03f57322] := R16
 376 [-]: SETTABLE  R47 K75 R17  ; R47["ErrorTransTag"] := R17
 377 [-]: GETUPVAL  R48 U11      ; R48 := U11
 378 [-]: GETTABLE  R48 R48 K77  ; R48 := R48["GILD"]
@@ -4001,7 +4001,7 @@
 452 [-]: ADD       R51 K3 R0    ; R51 := 2.000000 + R0
 453 [-]: GETTABLE  R50 R50 R51  ; R50 := R50[R51]
 454 [-]: SETTABLE  R49 K45 R50  ; R49["Icon"] := R50
-455 [-]: SETTABLE  R49 K74 R16  ; R49["ErrorMsg"] := R16
+455 [-]: SETTABLE  R49 K74 R16  ; R49[0x03f57322] := R16
 456 [-]: SETTABLE  R49 K75 R17  ; R49["ErrorTransTag"] := R17
 457 [-]: GETUPVAL  R50 U11      ; R50 := U11
 458 [-]: GETTABLE  R50 R50 K88  ; R50 := R50["DONATE"]
@@ -4086,7 +4086,7 @@
 537 [-]: ADD       R54 K4 R0    ; R54 := 3.000000 + R0
 538 [-]: GETTABLE  R53 R53 R54  ; R53 := R53[R54]
 539 [-]: SETTABLE  R52 K45 R53  ; R52["Icon"] := R53
-540 [-]: SETTABLE  R52 K74 R16  ; R52["ErrorMsg"] := R16
+540 [-]: SETTABLE  R52 K74 R16  ; R52[0x03f57322] := R16
 541 [-]: SETTABLE  R52 K75 R17  ; R52["ErrorTransTag"] := R17
 542 [-]: GETUPVAL  R53 U11      ; R53 := U11
 543 [-]: GETTABLE  R53 R53 K98  ; R53 := R53["DECLARE"]

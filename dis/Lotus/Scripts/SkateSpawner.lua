@@ -180,7 +180,7 @@
 144 [-]: GETGLOBAL R17 K12      ; R17 := _T
 145 [-]: GETTABLE  R17 R17 K13  ; R17 := R17["SkatesKilled"]
 146 [-]: ADD       R17 R17 K36  ; R17 := R17 + 1.000000
-147 [-]: SETTABLE  R16 K13 R17  ; R16[0xde321e6f] := R17
+147 [-]: SETTABLE  R16 K13 R17  ; R16["SkatesKilled"] := R17
 148 [-]: FORLOOP   R11 126      ; R11 += R13; if R11 <= R12 then begin PC := 126; R14 := R11 end
 149 [-]: GETGLOBAL R16 K37      ; R16 := 0x5bced4c4
 150 [-]: GETTABLE  R16 R16 K38  ; R82 := R16[0x99675e23]

@@ -755,7 +755,7 @@
 ; Max Stack Size:  2
 
   1 [-]: NEWTABLE  R1 0 0       ; R1 := {}
-  2 [-]: SETTABLE  R0 K0 R1     ; R0[0xa7d6b215] := R1
+  2 [-]: SETTABLE  R0 K0 R1     ; R0["mBuffs"] := R1
   3 [-]: SETTABLE  R0 K1 K2     ; R0["mRefreshBuffLists"] := true
   4 [-]: RETURN    R0 1         ; return 
 

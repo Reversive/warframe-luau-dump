@@ -340,7 +340,7 @@
  12 [-]: LOADK     R4 K5        ; R4 := "NexusContainer.Line"
  13 [-]: GETUPVAL  R5 U0        ; R5 := U0
  14 [-]: CONCAT    R4 R4 R5     ; R4 := R4 .. R5
- 15 [-]: SETTABLE  R3 K4 R4     ; R3[0x0000004f] := R4
+ 15 [-]: SETTABLE  R3 K4 R4     ; R3["mClipName"] := R4
  16 [-]: GETUPVAL  R4 U0        ; R4 := U0
  17 [-]: SETTABLE  R3 K6 R4     ; R3["mId"] := R4
  18 [-]: GETGLOBAL R4 K7        ; R4 := 0xae91e43b

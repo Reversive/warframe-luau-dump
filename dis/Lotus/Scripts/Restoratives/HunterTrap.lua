@@ -546,7 +546,7 @@
  83 [-]: SELF      R15 R1 K14   ; R16 := R1; R15 := R1[0x388577d5]
  84 [-]: CALL      R15 2 2      ; R15 := R15(R16)
  85 [-]: SETTABLE  R14 K20 R15  ; R14["target"] := R15
- 86 [-]: SETTABLE  R14 K15 R0   ; R14["trap"] := R0
+ 86 [-]: SETTABLE  R14 K15 R0   ; R14[0xae2294fa] := R0
  87 [-]: CALL      R12 3 1      ; R12(R13,R14)
  88 [-]: LEN       R6 R5        ; R6 := # R5
  89 [-]: JMP       102          ; PC := 102

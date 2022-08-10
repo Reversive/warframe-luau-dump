@@ -78,7 +78,7 @@
  38 [-]: GETUPVAL  R11 U0       ; R11 := U0
  39 [-]: GETTABLE  R11 R11 K33  ; R82 := R11[0x5e35d4d6]
  40 [-]: CALL      R11 1 2      ; R11 := R11()
- 41 [-]: SETTABLE  R10 K32 R11  ; R10[0xe7f2b02f] := R11
+ 41 [-]: SETTABLE  R10 K32 R11  ; R10["mStarChart"] := R11
  42 [-]: GETTABLE  R11 R10 K32  ; R11 := R10["mStarChart"]
  43 [-]: SELF      R11 R11 K35  ; R12 := R11; R11 := R11[0xd13b47be]
  44 [-]: CALL      R11 2 2      ; R11 := R11(R12)
@@ -1127,15 +1127,15 @@
  68 [-]: GETTABLE  R6 R0 K16    ; R6 := R0["mMovie"]
  69 [-]: NEWTABLE  R7 0 2       ; R7 := {}
  70 [-]: SETTABLE  R7 K24 R2    ; R7["x"] := R2
- 71 [-]: SETTABLE  R7 K25 R3    ; R7["y"] := R3
+ 71 [-]: SETTABLE  R7 K25 R3    ; R7[0x33bdd652] := R3
  72 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
  73 [-]: GETGLOBAL R6 K11       ; R6 := _T
  74 [-]: NEWTABLE  R7 0 2       ; R7 := {}
  75 [-]: GETTABLE  R8 R5 K24    ; R8 := R5["x"]
  76 [-]: SETTABLE  R7 K24 R8    ; R7["x"] := R8
  77 [-]: GETTABLE  R8 R5 K25    ; R8 := R5["y"]
- 78 [-]: SETTABLE  R7 K25 R8    ; R7["y"] := R8
- 79 [-]: SETTABLE  R6 K26 R7    ; R6["gToolTipCoords"] := R7
+ 78 [-]: SETTABLE  R7 K25 R8    ; R7[0x33bdd652] := R8
+ 79 [-]: SETTABLE  R6 K26 R7    ; R6[0x23d5322f] := R7
  80 [-]: JMP       83           ; PC := 83
  81 [-]: GETGLOBAL R6 K11       ; R6 := _T
  82 [-]: SETTABLE  R6 K12 K1    ; R6["gToolTip"] := nil
@@ -2225,7 +2225,7 @@
  12 [-]: SETTABLE  R3 K7 R4     ; R3["AccountId"] := R4
  13 [-]: GETTABLE  R4 R1 K10    ; R4 := R1["mPresence"]
  14 [-]: GETTABLE  R4 R4 K11    ; R4 := R4["state"]
- 15 [-]: SETTABLE  R3 K9 R4     ; R3[0xcf0cb9c2] := R4
+ 15 [-]: SETTABLE  R3 K9 R4     ; R3["State"] := R4
  16 [-]: GETTABLE  R4 R1 K13    ; R4 := R1["mStatus"]
  17 [-]: SETTABLE  R3 K12 R4    ; R3["Status"] := R4
  18 [-]: GETTABLE  R4 R1 K15    ; R4 := R1["mActiveAvatarImageType"]
@@ -2234,9 +2234,9 @@
  21 [-]: GETTABLE  R4 R4 K18    ; R4 := R4["sec"]
  22 [-]: SETTABLE  R3 K16 R4    ; R3["LastLogin"] := R4
  23 [-]: GETTABLE  R4 R1 K20    ; R4 := R1["mPlayerLevel"]
- 24 [-]: SETTABLE  R3 K19 R4    ; R3[0x372f38bf] := R4
+ 24 [-]: SETTABLE  R3 K19 R4    ; R3["PlayerLevel"] := R4
  25 [-]: NEWTABLE  R4 0 0       ; R4 := {}
- 26 [-]: SETTABLE  R3 K21 R4    ; R3[0xe0f7ce9e] := R4
+ 26 [-]: SETTABLE  R3 K21 R4    ; R3["Categories"] := R4
  27 [-]: GETTABLE  R4 R0 K22    ; R4 := R0["mShowClanRank"]
  28 [-]: TEST      R4 0         ; if not R4 then PC := 81
  29 [-]: JMP       81           ; PC := 81
@@ -2374,7 +2374,7 @@
  68 [-]: GETTABLE  R11 R7 K19   ; R11 := R7["LastLogin"]
  69 [-]: CALL      R10 2 0      ; R10,... := R10(R11)
  70 [-]: CALL      R9 0 2       ; R9 := R9(R10,...)
- 71 [-]: SETTABLE  R7 K11 R9    ; R7["LastLoginSeconds"] := R9
+ 71 [-]: SETTABLE  R7 K11 R9    ; R7[0x06d055f9] := R9
  72 [-]: GETTABLE  R9 R7 K11    ; R9 := R7["LastLoginSeconds"]
  73 [-]: EQ        1 R9 K3      ; if R9 == 0.000000 then PC := 82
  74 [-]: JMP       82           ; PC := 82
@@ -3154,7 +3154,7 @@
  14 [-]: GETTABLE  R4 R0 K6     ; R4 := R0["mAltButtonicon"]
  15 [-]: EQ        1 R4 R3      ; if R4 == R3 then PC := 25
  16 [-]: JMP       25           ; PC := 25
- 17 [-]: SETTABLE  R0 K6 R3     ; R0[0xaade900e] := R3
+ 17 [-]: SETTABLE  R0 K6 R3     ; R0["mAltButtonicon"] := R3
  18 [-]: GETTABLE  R4 R0 K7     ; R4 := R0["mMovie"]
  19 [-]: SELF      R4 R4 K8     ; R5 := R4; R4 := R4[0x1cb415c1]
  20 [-]: GETTABLE  R6 R0 K9     ; R6 := R0["mClipName"]

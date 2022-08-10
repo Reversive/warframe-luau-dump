@@ -296,7 +296,7 @@
  60 [-]: GETGLOBAL R2 K0        ; R2 := _T
  61 [-]: GETTABLE  R2 R2 K1     ; R2 := R2["AbilityLevelQueryParms"]
  62 [-]: GETTABLE  R2 R2 K3     ; R2 := R2["Modded"]
- 63 [-]: SETTABLE  R1 K3 R2     ; R1[0xa53cf701] := R2
+ 63 [-]: SETTABLE  R1 K3 R2     ; R1["Modded"] := R2
  64 [-]: GETGLOBAL R2 K0        ; R2 := _T
  65 [-]: SETTABLE  R2 K21 R1    ; R2["AbilityUpgradeLevelInfo"] := R1
  66 [-]: RETURN    R0 1         ; return 

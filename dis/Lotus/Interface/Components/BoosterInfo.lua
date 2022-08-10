@@ -104,7 +104,7 @@
 ; Max Stack Size:  52
 
   1 [-]: NEWTABLE  R1 0 0       ; R1 := {}
-  2 [-]: SETTABLE  R0 K0 R1     ; R0["mActiveBoosters"] := R1
+  2 [-]: SETTABLE  R0 K0 R1     ; R0[0x7b998233] := R1
   3 [-]: SETTABLE  R0 K1 K2     ; R0["mRefreshDelay"] := nil
   4 [-]: GETGLOBAL R1 K3        ; R1 := 0x76ea806b
   5 [-]: SELF      R1 R1 K4     ; R2 := R1; R1 := R1[0x3f3ae64c]
@@ -118,7 +118,7 @@
  13 [-]: RETURN    R0 1         ; return 
  14 [-]: SELF      R2 R1 K7     ; R3 := R1; R2 := R1[0x80563238]
  15 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 16 [-]: SETTABLE  R0 K6 R2     ; R0["mGameData"] := R2
+ 16 [-]: SETTABLE  R0 K6 R2     ; R0[0xfaa69527] := R2
  17 [-]: GETGLOBAL R2 K5        ; R2 := 0x7b998233
  18 [-]: GETTABLE  R3 R0 K6     ; R3 := R0["mGameData"]
  19 [-]: CALL      R2 2 2       ; R2 := R2(R3)

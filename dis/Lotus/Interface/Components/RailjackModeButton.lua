@@ -994,7 +994,7 @@
   6 [-]: JMP       44           ; PC := 44
   7 [-]: GETTABLE  R2 R0 K2     ; R2 := R0["mPulseTimer"]
   8 [-]: ADD       R2 R2 R1     ; R2 := R2 + R1
-  9 [-]: SETTABLE  R0 K2 R2     ; R0["mPulseTimer"] := R2
+  9 [-]: SETTABLE  R0 K2 R2     ; R0[0x89326c93] := R2
  10 [-]: GETTABLE  R2 R0 K2     ; R2 := R0["mPulseTimer"]
  11 [-]: LT        0 K3 R2      ; if 2.000000 >= R2 then PC := 44
  12 [-]: JMP       44           ; PC := 44
@@ -1028,7 +1028,7 @@
  40 [-]: CALL      R2 9 1       ; R2(R3,R4,R5,R6,R7,R8,R9,R10)
  41 [-]: GETTABLE  R2 R0 K2     ; R2 := R0["mPulseTimer"]
  42 [-]: SUB       R2 R2 K3     ; R2 := R2 - 2.000000
- 43 [-]: SETTABLE  R0 K2 R2     ; R0["mPulseTimer"] := R2
+ 43 [-]: SETTABLE  R0 K2 R2     ; R0[0x89326c93] := R2
  44 [-]: RETURN    R0 1         ; return 
 
 

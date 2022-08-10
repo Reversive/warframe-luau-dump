@@ -1966,14 +1966,14 @@
  30 [-]: GETGLOBAL R7 K12       ; R7 := 0x7ed0a956
  31 [-]: MOVE      R8 R4        ; R8 := R4
  32 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 33 [-]: SETTABLE  R6 K11 R7    ; R6[0xa65fc8a8] := R7
+ 33 [-]: SETTABLE  R6 K11 R7    ; R6[0xcbd666e1] := R7
  34 [-]: TEST      R1 0         ; if not R1 then PC := 41
  35 [-]: JMP       41           ; PC := 41
  36 [-]: GETTABLE  R7 R1 K13    ; R7 := R1["difficulty"]
  37 [-]: TEST      R7 0         ; if not R7 then PC := 41
  38 [-]: JMP       41           ; PC := 41
  39 [-]: GETTABLE  R7 R1 K13    ; R7 := R1["difficulty"]
- 40 [-]: SETTABLE  R6 K13 R7    ; R6[0x9c12f7ba] := R7
+ 40 [-]: SETTABLE  R6 K13 R7    ; R6[0xa6f182de] := R7
  41 [-]: RETURN    R6 2         ; return R6
  42 [-]: GETGLOBAL R7 K1        ; R7 := 0x7f5022cf
  43 [-]: GETTABLE  R7 R7 K2     ; R82 := R7[0xa5c556b9]
@@ -2853,7 +2853,7 @@
  57 [-]: GETUPVAL  R8 U6        ; R8 := U6
  58 [-]: GETTABLE  R8 R8 K17    ; R8 := R8["PLAINS_ELO_BOUNTY_ACTIVE"]
  59 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
- 60 [-]: SETTABLE  R2 K15 R6    ; R2[0xe7f2b02f] := R6
+ 60 [-]: SETTABLE  R2 K15 R6    ; R2["eloRating"] := R6
  61 [-]: SELF      R6 R2 K18    ; R7 := R2; R6 := R2[0x211fca40]
  62 [-]: GETUPVAL  R8 U8        ; R8 := U8
  63 [-]: CALL      R8 1 0       ; R8,... := R8()
@@ -2866,7 +2866,7 @@
  70 [-]: GETUPVAL  R8 U6        ; R8 := U6
  71 [-]: GETTABLE  R8 R8 K19    ; R8 := R8["PLAINS_ELO_INSIDE_SAFE_ZONE"]
  72 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
- 73 [-]: SETTABLE  R2 K15 R6    ; R2[0xe7f2b02f] := R6
+ 73 [-]: SETTABLE  R2 K15 R6    ; R2["eloRating"] := R6
  74 [-]: GETUPVAL  R6 U8        ; R6 := U8
  75 [-]: CALL      R6 1 2       ; R6 := R6()
  76 [-]: EQ        1 R6 K20     ; if R6 == "" then PC := 82
@@ -2888,7 +2888,7 @@
  92 [-]: CALL      R7 0 1       ; R7(R8,...)
  93 [-]: GETUPVAL  R7 U6        ; R7 := U6
  94 [-]: GETTABLE  R7 R7 K22    ; R7 := R7["PLAINS_ELO_OUTSIDE_SAFE_ZONE"]
- 95 [-]: SETTABLE  R2 K15 R7    ; R2[0xe7f2b02f] := R7
+ 95 [-]: SETTABLE  R2 K15 R7    ; R2["eloRating"] := R7
  96 [-]: GETGLOBAL R7 K23       ; R7 := 0x0398d1d4
  97 [-]: TEST      R7 0         ; if not R7 then PC := 100
  98 [-]: JMP       100          ; PC := 100
@@ -4031,7 +4031,7 @@
   8 [-]: GETUPVAL  R2 U0        ; R2 := U0
   9 [-]: LOADBOOL  R3 1 0       ; R3 := true
  10 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 11 [-]: SETTABLE  R1 K2 R2     ; R1["gameModeId"] := R2
+ 11 [-]: SETTABLE  R1 K2 R2     ; R1[0xbf9494fc] := R2
  12 [-]: GETUPVAL  R2 U1        ; R2 := U1
  13 [-]: CALL      R2 1 2       ; R2 := R2()
  14 [-]: TEST      R2 0         ; if not R2 then PC := 18
@@ -4053,7 +4053,7 @@
  30 [-]: SELF      R4 R3 K12    ; R5 := R3; R4 := R3[0xad716520]
  31 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  32 [-]: GETTABLE  R5 R4 K3     ; R5 := R4["regionId"]
- 33 [-]: SETTABLE  R1 K3 R5     ; R1[0x59c96e77] := R5
+ 33 [-]: SETTABLE  R1 K3 R5     ; R1["regionId"] := R5
  34 [-]: JMP       46           ; PC := 46
  35 [-]: GETGLOBAL R5 K6        ; R5 := _T
  36 [-]: GETTABLE  R5 R5 K7     ; R5 := R5["gActiveMatchMakingMode"]
@@ -4065,7 +4065,7 @@
  42 [-]: TEST      R5 1         ; if R5 then PC := 45
  43 [-]: JMP       45           ; PC := 45
  44 [-]: LOADK     R5 3         ; R5 := 3.000000
- 45 [-]: SETTABLE  R1 K3 R5     ; R1[0x59c96e77] := R5
+ 45 [-]: SETTABLE  R1 K3 R5     ; R1["regionId"] := R5
  46 [-]: SETTABLE  R1 K14 K15   ; R1["originalSessionId"] := "reset"
  47 [-]: SELF      R5 R1 K16    ; R6 := R1; R5 := R1[0xc71dd345]
  48 [-]: CALL      R5 2 1       ; R5(R6)
@@ -4075,7 +4075,7 @@
  52 [-]: GETUPVAL  R7 U2        ; R7 := U2
  53 [-]: GETTABLE  R7 R7 K20    ; R7 := R7["PLAINS_ELO_INSIDE_SAFE_ZONE"]
  54 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
- 55 [-]: SETTABLE  R1 K17 R5    ; R1[0x3b62d69a] := R5
+ 55 [-]: SETTABLE  R1 K17 R5    ; R1[0x59c96e77] := R5
  56 [-]: GETGLOBAL R5 K21       ; R5 := 0xe7f2b02f
  57 [-]: SELF      R5 R5 K22    ; R6 := R5; R5 := R5[0xee2f24fc]
  58 [-]: MOVE      R7 R1        ; R7 := R1
@@ -5717,7 +5717,7 @@
 494 [-]: CALL      R17 1 1      ; R17()
 495 [-]: GETGLOBAL R17 K9       ; R17 := _T
 496 [-]: GETUPVAL  R18 U30      ; R18 := U30
-497 [-]: SETTABLE  R17 K92 R18  ; R17["publicSessionSearchResult"] := R18
+497 [-]: SETTABLE  R17 K92 R18  ; R17[0xbb610e5b] := R18
 498 [-]: GETGLOBAL R17 K13      ; R17 := 0xe7f2b02f
 499 [-]: SELF      R17 R17 K94  ; R18 := R17; R17 := R17[0xb7905934]
 500 [-]: CALL      R17 2 1      ; R17(R18)
@@ -8376,7 +8376,7 @@
  14 [-]: JMP       16           ; PC := 16
  15 [-]: RETURN    R0 1         ; return 
  16 [-]: GETGLOBAL R1 K3        ; R1 := _T
- 17 [-]: SETTABLE  R1 K5 R0     ; R1[0x18d05d30] := R0
+ 17 [-]: SETTABLE  R1 K5 R0     ; R1["waitingForFullTownTrigger"] := R0
  18 [-]: GETUPVAL  R1 U0        ; R1 := U0
  19 [-]: GETUPVAL  R2 U1        ; R2 := U1
  20 [-]: LOADBOOL  R3 0 0       ; R3 := false
@@ -8797,7 +8797,7 @@
  52 [-]: JMP       59           ; PC := 59
  53 [-]: GETGLOBAL R4 K2        ; R4 := _T
  54 [-]: NEWTABLE  R5 0 0       ; R5 := {}
- 55 [-]: SETTABLE  R4 K16 R5    ; R4[0xf2deaf69] := R5
+ 55 [-]: SETTABLE  R4 K16 R5    ; R4["AvatarsReadyToExtract"] := R5
  56 [-]: GETGLOBAL R4 K0        ; R4 := 0x3d106989
  57 [-]: LOADK     R5 K17       ; R5 := "EIDOLONMP: Initializing AvatarsReadyToExtract."
  58 [-]: CALL      R4 2 1       ; R4(R5)

@@ -1378,7 +1378,7 @@
  17 [-]: LOADK     R4 K12       ; R4 := "/Lotus/Language/Alchemy/InvigorationSingular"
  18 [-]: LOADBOOL  R5 0 0       ; R5 := false
  19 [-]: CALL      R2 4 2       ; R2 := R2(R3,R4,R5)
- 20 [-]: SETTABLE  R1 K9 R2     ; R1["Name"] := R2
+ 20 [-]: SETTABLE  R1 K9 R2     ; R1[0x9307aa51] := R2
  21 [-]: GETGLOBAL R2 K3        ; R2 := _T
  22 [-]: GETTABLE  R2 R2 K6     ; R2 := R2["CurrentInvigoration"]
  23 [-]: SETTABLE  R1 K13 R2    ; R1["LocalizedDesc"] := R2
@@ -2176,15 +2176,15 @@
  51 [-]: SETTABLE  R1 K1 K21    ; R1["RequiredLevel"] := 4.000000
  52 [-]: GETUPVAL  R2 U1        ; R2 := U1
  53 [-]: GETTABLE  R2 R2 K25    ; R2 := R2["SF_RAILJACK_KEY"]
- 54 [-]: SETTABLE  R1 K24 R2    ; R1[0x7b998233] := R2
- 55 [-]: SETTABLE  R0 K22 R1    ; R0[0x8792aaab] := R1
+ 54 [-]: SETTABLE  R1 K24 R2    ; R1["RequiredShipFeature"] := R2
+ 55 [-]: SETTABLE  R0 K22 R1    ; R0["WraithQuestKeyChain"] := R1
  56 [-]: GETUPVAL  R0 U0        ; R0 := U0
  57 [-]: NEWTABLE  R1 0 1       ; R1 := {}
  58 [-]: NEWTABLE  R2 1 0       ; R2 := {}
  59 [-]: LOADK     R3 K27       ; R3 := "VenusToMercuryJunction"
  60 [-]: SETLIST   R2 1 1       ; R2[(1-1)*FPF+i] := R(2+i), 1 <= i <= 1
  61 [-]: SETTABLE  R1 K4 R2     ; R1["Junctions"] := R2
- 62 [-]: SETTABLE  R0 K26 R1    ; R0[0xfbc567eb] := R1
+ 62 [-]: SETTABLE  R0 K26 R1    ; R0["KubrowQuestKeyChain"] := R1
  63 [-]: GETUPVAL  R0 U0        ; R0 := U0
  64 [-]: NEWTABLE  R1 0 2       ; R1 := {}
  65 [-]: GETGLOBAL R2 K8        ; R2 := 0x7ed0a956
@@ -2232,7 +2232,7 @@
 107 [-]: LOADK     R3 K40       ; R3 := "/Lotus/Types/Keys/WarWithinQuest/WarWithinQuestKeyChain"
 108 [-]: CALL      R2 2 2       ; R2 := R2(R3)
 109 [-]: SETTABLE  R1 K7 R2     ; R1["PrereqQuest"] := R2
-110 [-]: SETTABLE  R0 K39 R1    ; R0[0xe4162eed] := R1
+110 [-]: SETTABLE  R0 K39 R1    ; R0["IndexQuestKeyChain"] := R1
 111 [-]: GETUPVAL  R0 U0        ; R0 := U0
 112 [-]: NEWTABLE  R1 0 1       ; R1 := {}
 113 [-]: GETGLOBAL R2 K8        ; R2 := 0x7ed0a956
@@ -2550,10 +2550,10 @@
 153 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
 154 [-]: GETGLOBAL R2 K46       ; R2 := _T
 155 [-]: GETUPVAL  R3 U10       ; R3 := U10
-156 [-]: SETTABLE  R2 K47 R3    ; R2[0x9a6ca645] := R3
+156 [-]: SETTABLE  R2 K47 R3    ; R2["NotificationSquadPanelChanged"] := R3
 157 [-]: GETGLOBAL R2 K46       ; R2 := _T
 158 [-]: GETUPVAL  R3 U11       ; R3 := U11
-159 [-]: SETTABLE  R2 K48 R3    ; R2[0xca30dfb6] := R3
+159 [-]: SETTABLE  R2 K48 R3    ; R2["RefreshTennoGuide"] := R3
 160 [-]: GETGLOBAL R2 K4        ; R2 := 0x76ea806b
 161 [-]: SELF      R2 R2 K49    ; R3 := R2; R2 := R2[0x8792aaab]
 162 [-]: CALL      R2 2 2       ; R2 := R2(R3)
@@ -2722,7 +2722,7 @@
 108 [-]: GETTABLE  R17 R17 R18  ; R17 := R17[R18]
 109 [-]: SETTABLE  R16 K24 R17  ; R16["Icon"] := R17
 110 [-]: GETTABLE  R17 R8 K17   ; R17 := R8["Expiry"]
-111 [-]: SETTABLE  R16 K26 R17  ; R16[0x397b920f] := R17
+111 [-]: SETTABLE  R16 K26 R17  ; R16["ExpDate"] := R17
 112 [-]: GETTABLE  R17 R8 K27   ; R17 := R8["Polarity"]
 113 [-]: SETTABLE  R16 K27 R17  ; R16["Polarity"] := R17
 114 [-]: LOADBOOL  R17 1 0      ; R17 := true
@@ -2811,7 +2811,7 @@
 197 [-]: GETTABLE  R13 R8 K16   ; R13 := R8["Value"]
 198 [-]: SETTABLE  R9 K23 R13   ; R9["Warning"] := R13
 199 [-]: GETTABLE  R13 R8 K17   ; R13 := R8["Expiry"]
-200 [-]: SETTABLE  R9 K26 R13   ; R9[0x397b920f] := R13
+200 [-]: SETTABLE  R9 K26 R13   ; R9["ExpDate"] := R13
 201 [-]: GETTABLE  R13 R8 K14   ; R13 := R8["Id"]
 202 [-]: GETGLOBAL R14 K2       ; R14 := _T
 203 [-]: GETTABLE  R14 R14 K11  ; R14 := R14["Notifications"]

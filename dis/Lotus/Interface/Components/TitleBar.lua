@@ -59,15 +59,15 @@
   5 [-]: LOADK     R8 K4        ; R8 := "SupportsThemes"
   6 [-]: LOADK     R9 K5        ; R9 := ""
   7 [-]: CALL      R6 4 2       ; R6 := R6(R7,R8,R9)
-  8 [-]: SETTABLE  R5 K2 R6     ; R5[0x5d10207d] := R6
+  8 [-]: SETTABLE  R5 K2 R6     ; R5["mApplyThemes"] := R6
   9 [-]: TESTSET   R6 R2 1      ; if R2 then PC := 12 else R6 := R2
  10 [-]: JMP       12           ; PC := 12
  11 [-]: LOADK     R6 K5        ; R6 := ""
- 12 [-]: SETTABLE  R5 K6 R6     ; R5[0x7f5022cf] := R6
+ 12 [-]: SETTABLE  R5 K6 R6     ; R5["mTitle"] := R6
  13 [-]: TESTSET   R6 R3 1      ; if R3 then PC := 16 else R6 := R3
  14 [-]: JMP       16           ; PC := 16
  15 [-]: LOADK     R6 K5        ; R6 := ""
- 16 [-]: SETTABLE  R5 K7 R6     ; R5[0xe8072ded] := R6
+ 16 [-]: SETTABLE  R5 K7 R6     ; R5["mSubTitle"] := R6
  17 [-]: SETTABLE  R5 K8 K9     ; R5["mVisible"] := nil
  18 [-]: SETTABLE  R5 K10 K11   ; R5["mTitleVisible"] := true
  19 [-]: SETTABLE  R5 K12 K11   ; R5["mBookendVisible"] := true
@@ -77,7 +77,7 @@
  23 [-]: GETGLOBAL R6 K16       ; R6 := 0xb009bbc6
  24 [-]: LOADK     R7 K17       ; R7 := "/Lotus/Interface/Graphics/Themes/TitleDecoration.png"
  25 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 26 [-]: SETTABLE  R5 K15 R6    ; R5[0xf6e70fb6] := R6
+ 26 [-]: SETTABLE  R5 K15 R6    ; R5["mBookendIcon"] := R6
  27 [-]: SELF      R6 R0 K19    ; R7 := R0; R6 := R0[0x91a24e4b]
  28 [-]: MOVE      R8 R1        ; R8 := R1
  29 [-]: LOADK     R9 K20       ; R9 := ".Title"
@@ -87,7 +87,7 @@
  33 [-]: SETTABLE  R5 K18 R6    ; R5["mInitTitleXPos"] := R6
  34 [-]: CLOSURE   R6 0         ; R6 := closure(Function #1.1)
  35 [-]: GETUPVAL  R0 U0        ; R0 := U0
- 36 [-]: SETTABLE  R5 K21 R6    ; R5[0x9c683672] := R6
+ 36 [-]: SETTABLE  R5 K21 R6    ; R5["Resize"] := R6
  37 [-]: CLOSURE   R6 1         ; R6 := closure(Function #1.2)
  38 [-]: GETUPVAL  R0 U1        ; R0 := U1
  39 [-]: GETUPVAL  R0 U2        ; R0 := U2

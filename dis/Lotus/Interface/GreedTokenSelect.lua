@@ -670,7 +670,7 @@
   4 [-]: NEWTABLE  R3 0 2       ; R3 := {}
   5 [-]: SETTABLE  R3 K4 K5     ; R3["TagOverride"] := "/Lotus/Language/Menu/GraphicManifest_Result"
   6 [-]: SETTABLE  R3 K6 K2     ; R3["mShowOne"] := true
-  7 [-]: SETTABLE  R2 K3 R3     ; R2[0x25d99d89] := R3
+  7 [-]: SETTABLE  R2 K3 R3     ; R2["OwnedInfo"] := R3
   8 [-]: SETTABLE  R2 K7 K8     ; R2["HideCountThreshold"] := -1.000000
   9 [-]: SETTABLE  R2 K9 K2     ; R2["HidePrice"] := true
  10 [-]: GETTABLE  R3 R0 K11    ; R3 := R0["Selected"]

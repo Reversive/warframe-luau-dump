@@ -1676,13 +1676,13 @@
  47 [-]: MOVE      R10 R0       ; R10 := R0
  48 [-]: LOADK     R11 K15      ; R11 := ".Mod"
  49 [-]: CONCAT    R10 R10 R11  ; R10 := R10 .. R11
- 50 [-]: SETTABLE  R9 K14 R10   ; R9[0xae91e43b] := R10
- 51 [-]: SETTABLE  R9 K16 R7    ; R9[0x00000000] := R7
+ 50 [-]: SETTABLE  R9 K14 R10   ; R9["mClipName"] := R10
+ 51 [-]: SETTABLE  R9 K16 R7    ; R9["Card"] := R7
  52 [-]: CALL      R8 2 1       ; R8(R9)
  53 [-]: GETUPVAL  R8 U3        ; R8 := U3
  54 [-]: GETTABLE  R8 R8 K17    ; R82 := R8[0x37970f97]
  55 [-]: NEWTABLE  R9 0 1       ; R9 := {}
- 56 [-]: SETTABLE  R9 K16 R7    ; R9[0x00000000] := R7
+ 56 [-]: SETTABLE  R9 K16 R7    ; R9["Card"] := R7
  57 [-]: MOVE      R10 R0       ; R10 := R0
  58 [-]: LOADK     R11 K18      ; R11 := ".Mod.Card"
  59 [-]: CONCAT    R10 R10 R11  ; R10 := R10 .. R11
@@ -3500,7 +3500,7 @@
  17 [-]: GETTABLE  R6 R6 K6     ; R82 := R6[0x1142c7a8]
  18 [-]: GETUPVAL  R7 U1        ; R7 := U1
  19 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 20 [-]: SETTABLE  R5 K5 R6     ; R5["PRICE"] := R6
+ 20 [-]: SETTABLE  R5 K5 R6     ; R5[0x0032441c] := R6
  21 [-]: CALL      R1 5 0       ; R1,... := R1(R2,R3,R4,R5)
  22 [-]: CALL      R0 0 1       ; R0(R1,...)
  23 [-]: RETURN    R0 1         ; return 
@@ -3512,12 +3512,12 @@
  29 [-]: GETUPVAL  R5 U0        ; R5 := U0
  30 [-]: GETTABLE  R5 R5 K0     ; R5 := R5[1.000000]
  31 [-]: GETTABLE  R5 R5 K9     ; R5 := R5["mName"]
- 32 [-]: SETTABLE  R4 K8 R5     ; R4["MOD"] := R5
+ 32 [-]: SETTABLE  R4 K8 R5     ; R4[0xb62ecfe0] := R5
  33 [-]: GETUPVAL  R5 U3        ; R5 := U3
  34 [-]: GETTABLE  R5 R5 K6     ; R82 := R5[0x1142c7a8]
  35 [-]: GETUPVAL  R6 U1        ; R6 := U1
  36 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 37 [-]: SETTABLE  R4 K5 R5     ; R4["PRICE"] := R5
+ 37 [-]: SETTABLE  R4 K5 R5     ; R4[0x0032441c] := R5
  38 [-]: CALL      R0 5 2       ; R0 := R0(R1,R2,R3,R4)
  39 [-]: GETUPVAL  R1 U3        ; R1 := U3
  40 [-]: GETTABLE  R1 R1 K10    ; R82 := R1[0xdedfded7]

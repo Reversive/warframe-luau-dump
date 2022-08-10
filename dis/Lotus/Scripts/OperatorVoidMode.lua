@@ -1835,12 +1835,12 @@
 108 [-]: GETTABLE  R15 R15 K24  ; R82 := R15[0x608bc054]
 109 [-]: CALL      R15 1 2      ; R15 := R15()
 110 [-]: GETUPVAL  R16 U8       ; R16 := U8
-111 [-]: SETTABLE  R15 K25 R16  ; R15["instigator"] := R16
-112 [-]: SETTABLE  R15 K26 R3   ; R15[0x0e46e45b] := R3
+111 [-]: SETTABLE  R15 K25 R16  ; R15[0x1586e35e] := R16
+112 [-]: SETTABLE  R15 K26 R3   ; R15[0x86cd00cb] := R3
 113 [-]: GETUPVAL  R16 U9       ; R16 := U9
 114 [-]: SETTABLE  R15 K8 R16   ; R15["buffData"] := R16
 115 [-]: GETUPVAL  R16 U4       ; R16 := U4
-116 [-]: SETTABLE  R15 K27 R16  ; R15[0x34291f5c] := R16
+116 [-]: SETTABLE  R15 K27 R16  ; R15[0xf4dc3420] := R16
 117 [-]: SETTABLE  R15 K28 K29  ; R15["buffType"] := 7.000000
 118 [-]: GETGLOBAL R16 K31      ; R16 := 0x7ed0a956
 119 [-]: LOADK     R17 K32      ; R17 := "/Lotus/Upgrades/Focus/Defense/Active/CloakHealOthersFocusUpgrade"
@@ -2094,12 +2094,12 @@
  37 [-]: MOVE      R9 R0        ; R9 := R0
  38 [-]: MOVE      R10 R5       ; R10 := R5
  39 [-]: SETLIST   R8 2 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 2
- 40 [-]: SETTABLE  R7 K11 R8    ; R7["affected"] := R8
+ 40 [-]: SETTABLE  R7 K11 R8    ; R7[0x89326c93] := R8
  41 [-]: SETTABLE  R7 K12 K13   ; R7["buffType"] := 2.000000
  42 [-]: GETGLOBAL R8 K15       ; R8 := 0x7ed0a956
  43 [-]: LOADK     R9 K16       ; R9 := "/Lotus/Upgrades/Focus/Tactic/Active/CloakMeleeCritFocusUpgrade"
  44 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 45 [-]: SETTABLE  R7 K14 R8    ; R7["abilityType"] := R8
+ 45 [-]: SETTABLE  R7 K14 R8    ; R7[0xd1586535] := R8
  46 [-]: LOADK     R8 0         ; R8 := 0.000000
  47 [-]: LOADNIL   R9 R9        ; R9 := nil
  48 [-]: SELF      R10 R0 K17   ; R11 := R0; R10 := R0[0xde321e6f]
@@ -4342,7 +4342,7 @@
  21 [-]: GETGLOBAL R6 K13       ; R6 := 0x7ed0a956
  22 [-]: LOADK     R7 K14       ; R7 := "/Lotus/Upgrades/Focus/Ward/Active/CloakReduceDamageFocusUpgrade"
  23 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 24 [-]: SETTABLE  R5 K12 R6    ; R5[0x89326c93] := R6
+ 24 [-]: SETTABLE  R5 K12 R6    ; R5["abilityType"] := R6
  25 [-]: SELF      R6 R1 K15    ; R7 := R1; R6 := R1[0x37e45fb5]
  26 [-]: MOVE      R8 R5        ; R8 := R5
  27 [-]: LOADBOOL  R9 1 0       ; R9 := true
@@ -4396,7 +4396,7 @@
   5 [-]: GETGLOBAL R2 K1        ; R2 := 0x6c97a788
   6 [-]: GETTABLE  R2 R2 K2     ; R82 := R2[0x608bc054]
   7 [-]: CALL      R2 1 2       ; R2 := R2()
-  8 [-]: SETTABLE  R2 K3 R0     ; R2["instigator"] := R0
+  8 [-]: SETTABLE  R2 K3 R0     ; R2[0x34291f5c] := R0
   9 [-]: NEWTABLE  R3 1 0       ; R3 := {}
  10 [-]: MOVE      R4 R1        ; R4 := R1
  11 [-]: SETLIST   R3 1 1       ; R3[(1-1)*FPF+i] := R(3+i), 1 <= i <= 1

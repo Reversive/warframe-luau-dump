@@ -574,7 +574,7 @@
   2 [-]: GETGLOBAL R1 K2        ; R1 := 0x64fb1586
   3 [-]: LOADK     R2 K3        ; R2 := "TradeHUB1"
   4 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  5 [-]: SETTABLE  R0 K1 R1     ; R0[0x7b998233] := R1
+  5 [-]: SETTABLE  R0 K1 R1     ; R0["DesiredGoToNode"] := R1
   6 [-]: GETGLOBAL R0 K0        ; R0 := _T
   7 [-]: GETUPVAL  R1 U0        ; R1 := U0
   8 [-]: GETTABLE  R1 R1 K5     ; R1 := R1["ALERT_TAG"]
@@ -1320,7 +1320,7 @@
 144 [-]: GETTABLE  R17 R17 K30  ; R82 := R17[0x42645da3]
 145 [-]: MOVE      R18 R1       ; R18 := R1
 146 [-]: CALL      R17 2 2      ; R17 := R17(R18)
-147 [-]: SETTABLE  R16 K28 R17  ; R16["Loader"] := R17
+147 [-]: SETTABLE  R16 K28 R17  ; R16[0xe28aa928] := R17
 148 [-]: GETUPVAL  R16 U0       ; R16 := U0
 149 [-]: LEN       R16 R16      ; R16 := # R16
 150 [-]: LT        1 K9 R16     ; if 0.000000 < R16 then PC := 153
@@ -1957,7 +1957,7 @@
 248 [-]: GETUPVAL  R36 U9       ; R36 := U9
 249 [-]: CALL      R33 4 5      ; R33,R34,R35,R36 := R33(R34,R35,R36)
 250 [-]: GETUPVAL  R37 U3       ; R37 := U3
-251 [-]: SETTABLE  R37 K33 R34  ; R37[0x03f57322] := R34
+251 [-]: SETTABLE  R37 K33 R34  ; R37["FusionPointValue"] := R34
 252 [-]: GETUPVAL  R37 U3       ; R37 := U3
 253 [-]: GETUPVAL  R38 U11      ; R38 := U11
 254 [-]: GETTABLE  R38 R38 K35  ; R82 := R38[0x0c382f1c]
@@ -1969,7 +1969,7 @@
 260 [-]: GETUPVAL  R42 U3       ; R42 := U3
 261 [-]: GETTABLE  R42 R42 K36  ; R42 := R42["RawName"]
 262 [-]: CALL      R38 5 2      ; R38 := R38(R39,R40,R41,R42)
-263 [-]: SETTABLE  R37 K34 R38  ; R37[0x34291f5c] := R38
+263 [-]: SETTABLE  R37 K34 R38  ; R37["Name"] := R38
 264 [-]: GETUPVAL  R37 U1       ; R37 := U1
 265 [-]: TEST      R37 0        ; if not R37 then PC := 271
 266 [-]: JMP       271          ; PC := 271
@@ -2206,7 +2206,7 @@
  14 [-]: GETUPVAL  R3 U1        ; R3 := U1
  15 [-]: SETTABLE  R3 K5 K6     ; R3["ItemInfo"] := nil
  16 [-]: GETUPVAL  R3 U1        ; R3 := U1
- 17 [-]: SETTABLE  R3 K7 R0     ; R3[0x7b998233] := R0
+ 17 [-]: SETTABLE  R3 K7 R0     ; R3["Id"] := R0
  18 [-]: GETGLOBAL R3 K0        ; R3 := 0x7b998233
  19 [-]: MOVE      R4 R2        ; R4 := R2
  20 [-]: CALL      R3 2 2       ; R3 := R3(R4)
@@ -2283,7 +2283,7 @@
  91 [-]: GETUPVAL  R15 U1       ; R15 := U1
  92 [-]: GETTABLE  R15 R15 K5   ; R15 := R15["ItemInfo"]
  93 [-]: GETTABLE  R15 R15 K23  ; R15 := R15["Name"]
- 94 [-]: SETTABLE  R14 K22 R15  ; R14[0xae91e43b] := R15
+ 94 [-]: SETTABLE  R14 K22 R15  ; R14["ITEM"] := R15
  95 [-]: CALL      R10 5 1      ; R10(R11,R12,R13,R14)
  96 [-]: GETGLOBAL R10 K10      ; R10 := 0xae91e43b
  97 [-]: SELF      R10 R10 K24  ; R11 := R10; R10 := R10[0x91a24e4b]
@@ -3120,7 +3120,7 @@
  91 [-]: MOVE      R8 R4        ; R8 := R4
  92 [-]: GETGLOBAL R9 K28       ; R9 := EMPTY_SYMBOL
  93 [-]: CALL      R6 4 2       ; R6 := R6(R7,R8,R9)
- 94 [-]: SETTABLE  R5 K26 R6    ; R5[0x1e5b5cfe] := R6
+ 94 [-]: SETTABLE  R5 K26 R6    ; R5["TreasureEntity"] := R6
  95 [-]: GETUPVAL  R5 U1        ; R5 := U1
  96 [-]: GETTABLE  R5 R5 K29    ; R5 := R5["Info"]
  97 [-]: EQ        1 R5 K30     ; if R5 == nil then PC := 106
@@ -3167,14 +3167,14 @@
 138 [-]: JMP       145          ; PC := 145
 139 [-]: GETTABLE  R7 R1 K36    ; R7 := R1["y"]
 140 [-]: ADD       R7 R7 K42    ; R7 := R7 + 0.040000
-141 [-]: SETTABLE  R1 K36 R7    ; R1[0x00000001] := R7
+141 [-]: SETTABLE  R1 K36 R7    ; R1["y"] := R7
 142 [-]: GETUPVAL  R7 U6        ; R7 := U6
 143 [-]: SETTABLE  R7 K43 K44   ; R7["Max"] := -15.000000
 144 [-]: JMP       151          ; PC := 151
 145 [-]: GETTABLE  R7 R1 K36    ; R7 := R1["y"]
 146 [-]: GETTABLE  R8 R6 K36    ; R8 := R6["y"]
 147 [-]: SUB       R7 R7 R8     ; R7 := R7 - R8
-148 [-]: SETTABLE  R1 K36 R7    ; R1[0x00000001] := R7
+148 [-]: SETTABLE  R1 K36 R7    ; R1["y"] := R7
 149 [-]: GETUPVAL  R7 U6        ; R7 := U6
 150 [-]: SETTABLE  R7 K43 K45   ; R7["Max"] := 8.000000
 151 [-]: GETUPVAL  R7 U7        ; R7 := U7
@@ -4617,7 +4617,7 @@
  17 [-]: GETUPVAL  R1 U1        ; R1 := U1
  18 [-]: SELF      R1 R1 K3     ; R2 := R1; R1 := R1[0x54ab95f9]
  19 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 20 [-]: SETTABLE  R0 K4 R1     ; R0[0x06d055f9] := R1
+ 20 [-]: SETTABLE  R0 K4 R1     ; R0["pitch"] := R1
  21 [-]: GETGLOBAL R0 K5        ; R0 := 0x7b998233
  22 [-]: GETUPVAL  R1 U3        ; R1 := U3
  23 [-]: GETTABLE  R1 R1 K6     ; R1 := R1["Parent"]

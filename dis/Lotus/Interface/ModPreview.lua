@@ -392,7 +392,7 @@
  16 [-]: SETTABLE  R1 K8 K3     ; R1["Gild"] := true
  17 [-]: GETUPVAL  R2 U0        ; R2 := U0
  18 [-]: GETTABLE  R2 R2 K5     ; R2 := R2["mModularParts"]
- 19 [-]: SETTABLE  R1 K9 R2     ; R1[0xf21b1d8e] := R2
+ 19 [-]: SETTABLE  R1 K9 R2     ; R1[0xbe53a7a2] := R2
  20 [-]: SETTABLE  R0 K7 R1     ; R0["ModularInfo"] := R1
  21 [-]: GETUPVAL  R1 U1        ; R1 := U1
  22 [-]: SELF      R1 R1 K10    ; R2 := R1; R1 := R1[0xfec1c88a]
@@ -2290,14 +2290,14 @@
  62 [-]: GETTABLE  R10 R10 R11  ; R10 := R10[R11]
  63 [-]: GETTABLE  R8 R10 K15   ; R8 := R10["mStoreItem"]
  64 [-]: GETTABLE  R11 R10 K16  ; R11 := R10["mItemType"]
- 65 [-]: SETTABLE  R7 K16 R11   ; R7[0xef99134f] := R11
+ 65 [-]: SETTABLE  R7 K16 R11   ; R7["mItemType"] := R11
  66 [-]: GETGLOBAL R11 K13      ; R11 := 0x7b998233
  67 [-]: GETTABLE  R12 R10 K17  ; R12 := R10["mFingerprint"]
  68 [-]: CALL      R11 2 2      ; R11 := R11(R12)
  69 [-]: TEST      R11 1        ; if R11 then PC := 73
  70 [-]: JMP       73           ; PC := 73
  71 [-]: GETTABLE  R11 R10 K17  ; R11 := R10["mFingerprint"]
- 72 [-]: SETTABLE  R7 K18 R11   ; R7[0xcf770dcf] := R11
+ 72 [-]: SETTABLE  R7 K18 R11   ; R7["mUpgradeFingerprint"] := R11
  73 [-]: GETTABLE  R11 R10 K19  ; R11 := R10["mOwnedUpgrades"]
  74 [-]: LEN       R11 R11      ; R11 := # R11
  75 [-]: LT        1 K20 R11    ; if 0.000000 < R11 then PC := 78
@@ -2309,7 +2309,7 @@
  81 [-]: NEWTABLE  R12 0 3      ; R12 := {}
  82 [-]: SETTABLE  R12 K22 R9   ; R12["Owned"] := R9
  83 [-]: SETTABLE  R12 K23 R8   ; R12["StoreItem"] := R8
- 84 [-]: SETTABLE  R12 K24 R7   ; R12[0xd3a9d01f] := R7
+ 84 [-]: SETTABLE  R12 K24 R7   ; R12["Upgrade"] := R7
  85 [-]: SETTABLE  R11 R4 R12   ; R11[R4] := R12
  86 [-]: FORLOOP   R1 5         ; R1 += R3; if R1 <= R2 then begin PC := 5; R4 := R1 end
  87 [-]: LOADK     R11 1        ; R11 := 1.000000
@@ -2619,7 +2619,7 @@
  29 [-]: GETUPVAL  R0 U1        ; R0 := U1
  30 [-]: GETUPVAL  R0 U2        ; R0 := U2
  31 [-]: GETUPVAL  R0 U0        ; R0 := U0
- 32 [-]: SETTABLE  R1 K18 R2    ; R1["mOnFocusedCallback"] := R2
+ 32 [-]: SETTABLE  R1 K18 R2    ; R1[0x68e36b8d] := R2
  33 [-]: GETUPVAL  R1 U0        ; R1 := U0
  34 [-]: CLOSURE   R2 1         ; R2 := closure(Function #19.2)
  35 [-]: GETUPVAL  R0 U2        ; R0 := U2
@@ -2633,7 +2633,7 @@
  43 [-]: GETUPVAL  R0 U3        ; R0 := U3
  44 [-]: GETUPVAL  R0 U4        ; R0 := U4
  45 [-]: GETUPVAL  R0 U5        ; R0 := U5
- 46 [-]: SETTABLE  R1 K20 R2    ; R1["mElementDrawCallback"] := R2
+ 46 [-]: SETTABLE  R1 K20 R2    ; R1[0x64fb1586] := R2
  47 [-]: RETURN    R0 1         ; return 
 
 
@@ -3012,7 +3012,7 @@
  36 [-]: NEWTABLE  R6 0 2       ; R6 := {}
  37 [-]: GETUPVAL  R7 U3        ; R7 := U3
  38 [-]: GETTABLE  R7 R7 K13    ; R7 := R7["mItemType"]
- 39 [-]: SETTABLE  R6 K12 R7    ; R6["type"] := R7
+ 39 [-]: SETTABLE  R6 K12 R7    ; R6[0x20b98db3] := R7
  40 [-]: SETTABLE  R6 K14 K15   ; R6["item"] := ""
  41 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
  42 [-]: TEST      R4 0         ; if not R4 then PC := 47
@@ -3227,7 +3227,7 @@
 251 [-]: NEWTABLE  R25 0 2      ; R25 := {}
 252 [-]: GETUPVAL  R26 U3       ; R26 := U3
 253 [-]: GETTABLE  R26 R26 K13  ; R26 := R26["mItemType"]
-254 [-]: SETTABLE  R25 K12 R26  ; R25["type"] := R26
+254 [-]: SETTABLE  R25 K12 R26  ; R25[0x20b98db3] := R26
 255 [-]: SETTABLE  R25 K14 K55  ; R25["item"] := true
 256 [-]: LOADBOOL  R26 0 0      ; R26 := false
 257 [-]: CALL      R21 6 1      ; R21(R22,R23,R24,R25,R26)
@@ -3240,7 +3240,7 @@
 264 [-]: NEWTABLE  R25 0 2      ; R25 := {}
 265 [-]: GETUPVAL  R26 U3       ; R26 := U3
 266 [-]: GETTABLE  R26 R26 K13  ; R26 := R26["mItemType"]
-267 [-]: SETTABLE  R25 K12 R26  ; R25["type"] := R26
+267 [-]: SETTABLE  R25 K12 R26  ; R25[0x20b98db3] := R26
 268 [-]: SETTABLE  R25 K14 K55  ; R25["item"] := true
 269 [-]: LOADBOOL  R26 0 0      ; R26 := false
 270 [-]: CALL      R21 6 1      ; R21(R22,R23,R24,R25,R26)
@@ -4004,19 +4004,19 @@
  22 [-]: SETTABLE  R6 K7 K8     ; R6["LinkStat"] := 107.000000
  23 [-]: SELF      R7 R2 K10    ; R8 := R2; R7 := R2[0xb40c191a]
  24 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 25 [-]: SETTABLE  R6 K9 R7     ; R6[0xea061e98] := R7
+ 25 [-]: SETTABLE  R6 K9 R7     ; R6[0xe227a53e] := R7
  26 [-]: NEWTABLE  R7 0 3       ; R7 := {}
  27 [-]: SETTABLE  R7 K4 K11    ; R7["Stat"] := 15.000000
  28 [-]: SETTABLE  R7 K7 K12    ; R7["LinkStat"] := 104.000000
  29 [-]: SELF      R8 R4 K13    ; R9 := R4; R8 := R4[0x76aa1e1b]
  30 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 31 [-]: SETTABLE  R7 K9 R8     ; R7[0xea061e98] := R8
+ 31 [-]: SETTABLE  R7 K9 R8     ; R7[0xe227a53e] := R8
  32 [-]: NEWTABLE  R8 0 3       ; R8 := {}
  33 [-]: SETTABLE  R8 K4 K14    ; R8["Stat"] := 117.000000
  34 [-]: SETTABLE  R8 K7 K15    ; R8["LinkStat"] := 112.000000
  35 [-]: SELF      R9 R4 K16    ; R10 := R4; R9 := R4[0xb87f958d]
  36 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 37 [-]: SETTABLE  R8 K9 R9     ; R8[0xea061e98] := R9
+ 37 [-]: SETTABLE  R8 K9 R9     ; R8[0xe227a53e] := R9
  38 [-]: SETLIST   R5 3 1       ; R5[(1-1)*FPF+i] := R(5+i), 1 <= i <= 3
  39 [-]: LOADK     R6 1         ; R6 := 1.000000
  40 [-]: LEN       R7 R5        ; R7 := # R5

@@ -55,7 +55,7 @@
  27 [-]: LOADK     R14 K15      ; R14 := ""
  28 [-]: CALL      R11 4 2      ; R11 := R11(R12,R13,R14)
  29 [-]: SETTABLE  R10 K12 R11  ; R10["mApplyThemes"] := R11
- 30 [-]: SETTABLE  R10 K16 R4   ; R10["mCategoryClipName"] := R4
+ 30 [-]: SETTABLE  R10 K16 R4   ; R10[0xce225efa] := R4
  31 [-]: SETTABLE  R10 K17 R7   ; R10["mCategoryNameClipName"] := R7
  32 [-]: SETTABLE  R10 K18 R5   ; R10["mSortClipName"] := R5
  33 [-]: SETTABLE  R10 K19 K20  ; R10["mDepthDirection"] := 1.000000
@@ -725,7 +725,7 @@
   7 [-]: SETTABLE  R0 K1 R3     ; R0["mUnfilteredElements"] := R3
   8 [-]: SETTABLE  R0 K2 K3     ; R0["mNonFillerElements"] := 0.000000
   9 [-]: NEWTABLE  R3 0 0       ; R3 := {}
- 10 [-]: SETTABLE  R0 K4 R3     ; R0[0xbad4316f] := R3
+ 10 [-]: SETTABLE  R0 K4 R3     ; R0["mCategoriesCount"] := R3
  11 [-]: SETTABLE  R0 K5 K6     ; R0["mLastFilterBy"] := nil
  12 [-]: RETURN    R0 1         ; return 
 

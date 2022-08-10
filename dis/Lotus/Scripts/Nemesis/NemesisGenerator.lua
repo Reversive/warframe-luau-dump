@@ -205,7 +205,7 @@
 196 [-]: CLOSURE   R45 41       ; R45 := closure(Function #42)
 197 [-]: SETTABLE  R44 K64 R45  ; R44["CacheLastLarvlingDamage"] := R45
 198 [-]: CLOSURE   R45 42       ; R45 := closure(Function #43)
-199 [-]: SETTABLE  R44 K65 R45  ; R44["ClearLastLarvlingDamage"] := R45
+199 [-]: SETTABLE  R44 K65 R45  ; R44[0x603636ad] := R45
 200 [-]: CLOSURE   R45 43       ; R45 := closure(Function #44)
 201 [-]: SETTABLE  R44 K66 R45  ; R44["GetColorFromProfile"] := R45
 202 [-]: CLOSURE   R45 44       ; R45 := closure(Function #45)

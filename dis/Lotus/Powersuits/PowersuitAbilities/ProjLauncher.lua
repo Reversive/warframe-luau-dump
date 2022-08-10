@@ -23,7 +23,7 @@
  14 [-]: GETGLOBAL R5 K6        ; R5 := 0x7ed0a956
  15 [-]: LOADK     R6 K7        ; R6 := "/Lotus/Powersuits/PowersuitAbilities/ZapProbe.lua"
  16 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 17 [-]: SETTABLE  R4 K5 R5     ; R4["/Lotus/Powersuits/PowersuitAbilities/ZapTrapAbility"] := R5
+ 17 [-]: SETTABLE  R4 K5 R5     ; R4[0x0000005f] := R5
  18 [-]: GETGLOBAL R5 K6        ; R5 := 0x7ed0a956
  19 [-]: LOADK     R6 K9        ; R6 := "/Lotus/Powersuits/PowersuitAbilities/TrapperStrike.lua"
  20 [-]: CALL      R5 2 2       ; R5 := R5(R6)
@@ -235,7 +235,7 @@
  16 [-]: MOVE      R6 R0        ; R6 := R0
  17 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
  18 [-]: GETTABLE  R3 R3 R4     ; R3 := R3[R4]
- 19 [-]: SETTABLE  R2 K2 R3     ; R2["radius"] := R3
+ 19 [-]: SETTABLE  R2 K2 R3     ; R2[0x5bced4c4] := R3
  20 [-]: GETUPVAL  R2 U0        ; R2 := U0
  21 [-]: GETUPVAL  R3 U0        ; R3 := U0
  22 [-]: GETTABLE  R3 R3 K5     ; R3 := R3["damagePct"]
@@ -388,7 +388,7 @@
  62 [-]: MOVE      R12 R1       ; R12 := R1
  63 [-]: MOVE      R13 R7       ; R13 := R7
  64 [-]: CALL      R11 3 4      ; R11,R12,R13 := R11(R12,R13)
- 65 [-]: SETTABLE  R10 K17 R13  ; R10["duration"] := R13
+ 65 [-]: SETTABLE  R10 K17 R13  ; R10[0xb139d7bc] := R13
  66 [-]: SETTABLE  R9 K16 R12   ; R9["damagePct"] := R12
  67 [-]: SETTABLE  R8 K15 R11   ; R8["radius"] := R11
  68 [-]: SELF      R8 R2 K18    ; R9 := R2; R8 := R2[0xd3a9d01f]

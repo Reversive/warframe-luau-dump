@@ -57,9 +57,9 @@
  29 [-]: CLOSURE   R8 0         ; R8 := closure(Function #1.1)
  30 [-]: SETTABLE  R7 K18 R8    ; R7["SetActive"] := R8
  31 [-]: GETTABLE  R8 R7 K20    ; R8 := R7["HookUpCallbacks"]
- 32 [-]: SETTABLE  R7 K19 R8    ; R7["Button_HookUpCallbacks"] := R8
+ 32 [-]: SETTABLE  R7 K19 R8    ; R7[0x7f5022cf] := R8
  33 [-]: CLOSURE   R8 1         ; R8 := closure(Function #1.2)
- 34 [-]: SETTABLE  R7 K20 R8    ; R7["HookUpCallbacks"] := R8
+ 34 [-]: SETTABLE  R7 K20 R8    ; R7[0x66edf04f] := R8
  35 [-]: GETTABLE  R8 R7 K22    ; R8 := R7["SetFocus"]
  36 [-]: SETTABLE  R7 K21 R8    ; R7["ButtonSetFocus"] := R8
  37 [-]: CLOSURE   R8 2         ; R8 := closure(Function #1.3)
@@ -73,13 +73,13 @@
  45 [-]: CLOSURE   R8 6         ; R8 := closure(Function #1.7)
  46 [-]: SETTABLE  R7 K26 R8    ; R7["TryAltPressed"] := R8
  47 [-]: CLOSURE   R8 7         ; R8 := closure(Function #1.8)
- 48 [-]: SETTABLE  R7 K27 R8    ; R7["AltPressed"] := R8
+ 48 [-]: SETTABLE  R7 K27 R8    ; R7[0x1e5b5cfe] := R8
  49 [-]: CLOSURE   R8 8         ; R8 := closure(Function #1.9)
  50 [-]: SETTABLE  R7 K28 R8    ; R7["SetIndexByValue"] := R8
  51 [-]: CLOSURE   R8 9         ; R8 := closure(Function #1.10)
  52 [-]: SETTABLE  R7 K29 R8    ; R7["SetValue"] := R8
  53 [-]: GETTABLE  R8 R7 K31    ; R8 := R7["Resize"]
- 54 [-]: SETTABLE  R7 K30 R8    ; R7["ButtonResize"] := R8
+ 54 [-]: SETTABLE  R7 K30 R8    ; R7[0x67bc869f] := R8
  55 [-]: CLOSURE   R8 10        ; R8 := closure(Function #1.11)
  56 [-]: MOVE      R0 R4        ; R0 := R4
  57 [-]: SETTABLE  R7 K31 R8    ; R7["Resize"] := R8

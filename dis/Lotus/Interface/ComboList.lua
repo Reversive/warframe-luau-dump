@@ -1136,7 +1136,7 @@
 226 [-]: NEWTABLE  R30 0 3      ; R30 := {}
 227 [-]: SETTABLE  R30 K48 K49  ; R30["Label"] := "/Lotus/Language/Menu/Global_Back"
 228 [-]: GETUPVAL  R31 U8       ; R31 := U8
-229 [-]: SETTABLE  R30 K50 R31  ; R30[0x0032441c] := R31
+229 [-]: SETTABLE  R30 K50 R31  ; R30["CallBack"] := R31
 230 [-]: SETTABLE  R30 K51 K52  ; R30["CallOut"] := "MENU_CANCEL"
 231 [-]: CALL      R28 3 1      ; R28(R29,R30)
 232 [-]: GETGLOBAL R28 K8       ; R28 := 0x7b998233

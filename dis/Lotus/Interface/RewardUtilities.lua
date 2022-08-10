@@ -304,7 +304,7 @@
 182 [-]: GETGLOBAL R37 K33      ; R37 := 0x6c97a788
 183 [-]: GETTABLE  R37 R37 K34  ; R82 := R37[0x1aba4d9e]
 184 [-]: CALL      R37 1 2      ; R37 := R37()
-185 [-]: SETTABLE  R37 K35 R36  ; R37[0xbe190284] := R36
+185 [-]: SETTABLE  R37 K35 R36  ; R37["mItemType"] := R36
 186 [-]: SETTABLE  R37 K27 K15  ; R37["mItemCount"] := 1.000000
 187 [-]: GETGLOBAL R38 K36      ; R38 := 0x25d99d89
 188 [-]: SELF      R38 R38 K37  ; R39 := R38; R38 := R38[0x303eb010]
@@ -334,7 +334,7 @@
 212 [-]: GETTABLE  R44 R8 R42   ; R44 := R8[R42]
 213 [-]: GETTABLE  R44 R44 K42  ; R44 := R44["itemCount"]
 214 [-]: ADD       R44 R44 R35  ; R44 := R44 + R35
-215 [-]: SETTABLE  R43 K42 R44  ; R43[0x9dda54dc] := R44
+215 [-]: SETTABLE  R43 K42 R44  ; R43["itemCount"] := R44
 216 [-]: LOADBOOL  R38 1 0      ; R38 := true
 217 [-]: JMP       219          ; PC := 219
 218 [-]: FORLOOP   R39 207      ; R39 += R41; if R39 <= R40 then begin PC := 207; R42 := R39 end
@@ -344,9 +344,9 @@
 222 [-]: GETTABLE  R43 R43 K44  ; R82 := R43[0x23d5322f]
 223 [-]: MOVE      R44 R8       ; R44 := R8
 224 [-]: NEWTABLE  R45 0 4      ; R45 := {}
-225 [-]: SETTABLE  R45 K41 R34  ; R45[0x8946b719] := R34
+225 [-]: SETTABLE  R45 K41 R34  ; R45["storeItem"] := R34
 226 [-]: SETTABLE  R45 K45 R33  ; R45["levelOverride"] := R33
-227 [-]: SETTABLE  R45 K42 R35  ; R45[0x9dda54dc] := R35
+227 [-]: SETTABLE  R45 K42 R35  ; R45["itemCount"] := R35
 228 [-]: SETTABLE  R45 K46 R20  ; R45["wave"] := R20
 229 [-]: CALL      R43 3 1      ; R43(R44,R45)
 230 [-]: FORLOOP   R25 116      ; R25 += R27; if R25 <= R26 then begin PC := 116; R28 := R25 end

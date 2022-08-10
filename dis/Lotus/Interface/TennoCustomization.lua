@@ -835,11 +835,11 @@
   3 [-]: GETTABLE  R4 R4 K2     ; R82 := R4[0x42645da3]
   4 [-]: MOVE      R5 R0        ; R5 := R0
   5 [-]: CALL      R4 2 2       ; R4 := R4(R5)
-  6 [-]: SETTABLE  R3 K0 R4     ; R3[0x09c8a77d] := R4
+  6 [-]: SETTABLE  R3 K0 R4     ; R3["mLoader"] := R4
   7 [-]: GETUPVAL  R3 U0        ; R3 := U0
   8 [-]: SETTABLE  R3 K3 R1     ; R3["mCallback"] := R1
   9 [-]: GETUPVAL  R3 U0        ; R3 := U0
- 10 [-]: SETTABLE  R3 K4 R2     ; R3[0x00000001] := R2
+ 10 [-]: SETTABLE  R3 K4 R2     ; R3["mData"] := R2
  11 [-]: RETURN    R0 1         ; return 
 
 
@@ -1500,7 +1500,7 @@
 127 [-]: SETTABLE  R20 K24 K25  ; R20["ConfigSlot"] := 0.000000
 128 [-]: SETTABLE  R20 K11 R7   ; R20["Slot"] := R7
 129 [-]: SETTABLE  R20 K26 R6   ; R20["StoreItem"] := R6
-130 [-]: SETTABLE  R20 K27 R5   ; R20[0x00000062] := R5
+130 [-]: SETTABLE  R20 K27 R5   ; R20["Weapon"] := R5
 131 [-]: SETTABLE  R20 K28 K22  ; R20["Callback"] := "OnArcaneSelected"
 132 [-]: SETTABLE  R19 K23 R20  ; R19["ArcaneEquipInfo"] := R20
 133 [-]: GETTABLE  R19 R0 K4    ; R19 := R0["IsAmp"]
@@ -1552,7 +1552,7 @@
  11 [-]: GETTABLE  R3 R1 K7     ; R3 := R1["mItemId"]
  12 [-]: SETTABLE  R2 K6 R3     ; R2["mId"] := R3
  13 [-]: GETTABLE  R3 R1 K9     ; R3 := R1["mItemType"]
- 14 [-]: SETTABLE  R2 K8 R3     ; R2["mType"] := R3
+ 14 [-]: SETTABLE  R2 K8 R3     ; R2[0x7b998233] := R3
  15 [-]: GETUPVAL  R3 U0        ; R3 := U0
  16 [-]: GETTABLE  R3 R3 K10    ; R3 := R3["IsAmp"]
  17 [-]: TEST      R3 0         ; if not R3 then PC := 48
@@ -3092,7 +3092,7 @@
  19 [-]: SELF      R1 R1 K9     ; R2 := R1; R1 := R1[0x2cc9d281]
  20 [-]: CALL      R1 2 2       ; R1 := R1(R2)
  21 [-]: MUL       R1 R1 K10    ; R1 := R1 * 1.150000
- 22 [-]: SETTABLE  R0 K8 R1     ; R0[0xc8802016] := R1
+ 22 [-]: SETTABLE  R0 K8 R1     ; R0["y"] := R1
  23 [-]: SETUPVAL  R0 U3        ; U82 := 
  24 [-]: LOADBOOL  R0 1 0       ; R0 := true
  25 [-]: SETUPVAL  R0 U4        ; U82 := 
@@ -3464,7 +3464,7 @@
 237 [-]: GETTABLE  R11 R11 K47  ; R11 := R11["suitTable"]
 238 [-]: GETGLOBAL R12 K9       ; R12 := 0x00046924
 239 [-]: CALL      R12 1 2      ; R12 := R12()
-240 [-]: SETTABLE  R11 K52 R12  ; R11[0x3d106989] := R12
+240 [-]: SETTABLE  R11 K52 R12  ; R11["lerpHead"] := R12
 241 [-]: RETURN    R0 1         ; return 
 
 
@@ -4465,7 +4465,7 @@
  38 [-]: GETGLOBAL R5 K12       ; R5 := 0x8650181f
  39 [-]: GETTABLE  R6 R2 K10    ; R6 := R2["UID"]
  40 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 41 [-]: SETTABLE  R4 K11 R5    ; R4[0x659d451f] := R5
+ 41 [-]: SETTABLE  R4 K11 R5    ; R4["mItemId"] := R5
  42 [-]: GETGLOBAL R5 K6        ; R5 := 0x7b998233
  43 [-]: GETTABLE  R6 R2 K13    ; R6 := R2["StoreItem"]
  44 [-]: CALL      R5 2 2       ; R5 := R5(R6)
@@ -4474,7 +4474,7 @@
  47 [-]: GETTABLE  R5 R2 K13    ; R5 := R2["StoreItem"]
  48 [-]: SELF      R5 R5 K15    ; R6 := R5; R5 := R5[0xf278f8a1]
  49 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 50 [-]: SETTABLE  R4 K14 R5    ; R4[0xae91e43b] := R5
+ 50 [-]: SETTABLE  R4 K14 R5    ; R4["mItemType"] := R5
  51 [-]: SELF      R5 R3 K16    ; R6 := R3; R5 := R3[0x569554e7]
  52 [-]: MOVE      R7 R4        ; R7 := R4
  53 [-]: LOADK     R8 0         ; R8 := 0.000000
@@ -4500,7 +4500,7 @@
  73 [-]: GETTABLE  R6 R1 K4     ; R6 := R1["ItemSelectionData"]
  74 [-]: GETTABLE  R7 R4 K11    ; R7 := R4["mItemId"]
  75 [-]: GETTABLE  R7 R7 K19    ; R7 := R7["mId"]
- 76 [-]: SETTABLE  R6 K10 R7    ; R6[0xb15e6aca] := R7
+ 76 [-]: SETTABLE  R6 K10 R7    ; R6["UID"] := R7
  77 [-]: GETGLOBAL R6 K6        ; R6 := 0x7b998233
  78 [-]: MOVE      R7 R5        ; R7 := R5
  79 [-]: CALL      R6 2 2       ; R6 := R6(R7)
@@ -7349,7 +7349,7 @@
 130 [-]: GETUPVAL  R4 U0        ; R4 := U0
 131 [-]: SETTABLE  R4 K38 R1    ; R4["destPos"] := R1
 132 [-]: GETUPVAL  R4 U0        ; R4 := U0
-133 [-]: SETTABLE  R4 K39 R2    ; R4[0x00046924] := R2
+133 [-]: SETTABLE  R4 K39 R2    ; R4["destRot"] := R2
 134 [-]: GETUPVAL  R4 U0        ; R4 := U0
 135 [-]: SETTABLE  R4 K40 R3    ; R4["destFov"] := R3
 136 [-]: RETURN    R0 1         ; return 
@@ -7890,7 +7890,7 @@
  75 [-]: GETUPVAL  R2 U0        ; R2 := U0
  76 [-]: GETTABLE  R2 R2 K5     ; R2 := R2["CustomizationList"]
  77 [-]: GETTABLE  R2 R2 K28    ; R2 := R2["OnFocused"]
- 78 [-]: SETTABLE  R1 K27 R2    ; R1[0x7b998233] := R2
+ 78 [-]: SETTABLE  R1 K27 R2    ; R1["_CustModule_OnFocused"] := R2
  79 [-]: GETUPVAL  R1 U0        ; R1 := U0
  80 [-]: GETTABLE  R1 R1 K5     ; R1 := R1["CustomizationList"]
  81 [-]: CLOSURE   R2 1         ; R2 := closure(Function #46.2)
@@ -7911,7 +7911,7 @@
  96 [-]: CLOSURE   R2 2         ; R2 := closure(Function #46.3)
  97 [-]: GETUPVAL  R0 U11       ; R0 := U11
  98 [-]: GETUPVAL  R0 U0        ; R0 := U0
- 99 [-]: SETTABLE  R1 K30 R2    ; R1[0x46610c50] := R2
+ 99 [-]: SETTABLE  R1 K30 R2    ; R1["mOnSelectedCallback"] := R2
 100 [-]: GETGLOBAL R1 K3        ; R1 := 0xae91e43b
 101 [-]: SELF      R1 R1 K31    ; R2 := R1; R1 := R1[0x67bc869f]
 102 [-]: GETUPVAL  R3 U0        ; R3 := U0
@@ -7936,7 +7936,7 @@
 121 [-]: GETUPVAL  R0 U12       ; R0 := U12
 122 [-]: GETUPVAL  R0 U1        ; R0 := U1
 123 [-]: GETUPVAL  R0 U0        ; R0 := U0
-124 [-]: SETTABLE  R1 K30 R2    ; R1[0x46610c50] := R2
+124 [-]: SETTABLE  R1 K30 R2    ; R1["mOnSelectedCallback"] := R2
 125 [-]: LOADBOOL  R1 0 0       ; R1 := false
 126 [-]: GETGLOBAL R2 K35       ; R2 := 0x25d99d89
 127 [-]: SELF      R2 R2 K36    ; R3 := R2; R2 := R2[0x25a6e75e]
@@ -11277,16 +11277,16 @@
 115 [-]: NEWTABLE  R16 0 8      ; R16 := {}
 116 [-]: GETTABLE  R17 R6 K32   ; R17 := R6["mItemId"]
 117 [-]: GETTABLE  R17 R17 K33  ; R17 := R17["mId"]
-118 [-]: SETTABLE  R16 K31 R17  ; R16[0x7b998233] := R17
+118 [-]: SETTABLE  R16 K31 R17  ; R16["UID"] := R17
 119 [-]: GETUPVAL  R17 U5       ; R17 := U5
 120 [-]: MOVE      R18 R6       ; R18 := R6
 121 [-]: MOVE      R19 R7       ; R19 := R7
 122 [-]: CALL      R17 3 2      ; R17 := R17(R18,R19)
-123 [-]: SETTABLE  R16 K34 R17  ; R16[0xbce5a201] := R17
-124 [-]: SETTABLE  R16 K35 R8   ; R16[0x03f57322] := R8
+123 [-]: SETTABLE  R16 K34 R17  ; R16["CustomName"] := R17
+124 [-]: SETTABLE  R16 K35 R8   ; R16["CustomDesc"] := R8
 125 [-]: SETTABLE  R16 K3 R7    ; R16["StoreItem"] := R7
 126 [-]: SETTABLE  R16 K36 R12  ; R16["Icon"] := R12
-127 [-]: SETTABLE  R16 K37 R13  ; R16[0x7b998233] := R13
+127 [-]: SETTABLE  R16 K37 R13  ; R16["Themed"] := R13
 128 [-]: SETTABLE  R16 K38 K6   ; R16["Owned"] := true
 129 [-]: GETGLOBAL R17 K9       ; R17 := 0x7b998233
 130 [-]: GETTABLE  R18 R6 K11   ; R18 := R6["mUpgradeInstance"]

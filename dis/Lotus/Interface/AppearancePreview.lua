@@ -545,8 +545,8 @@
  83 [-]: GETTABLE  R19 R19 K21  ; R82 := R19[0x23d5322f]
  84 [-]: GETUPVAL  R20 U0       ; R20 := U0
  85 [-]: NEWTABLE  R21 0 2      ; R21 := {}
- 86 [-]: SETTABLE  R21 K22 R11  ; R21["mStoreItem"] := R11
- 87 [-]: SETTABLE  R21 K23 R13  ; R21["mOwned"] := R13
+ 86 [-]: SETTABLE  R21 K22 R11  ; R21[0xfec1c88a] := R11
+ 87 [-]: SETTABLE  R21 K23 R13  ; R21[0x25d99d89] := R13
  88 [-]: CALL      R19 3 1      ; R19(R20,R21)
  89 [-]: TFORLOOP  R7 2         ; R10,R11 :=  R7(R8,R9); if R10 ~= nil then begin PC = 29; R9 := R10 end
  90 [-]: JMP       29           ; PC := 29
@@ -682,7 +682,7 @@
  16 [-]: SETTABLE  R1 K8 K3     ; R1["Gild"] := true
  17 [-]: GETUPVAL  R2 U0        ; R2 := U0
  18 [-]: GETTABLE  R2 R2 K5     ; R2 := R2["mModularParts"]
- 19 [-]: SETTABLE  R1 K9 R2     ; R1["Parts"] := R2
+ 19 [-]: SETTABLE  R1 K9 R2     ; R1[0xc1a84a4b] := R2
  20 [-]: SETTABLE  R0 K7 R1     ; R0["ModularInfo"] := R1
  21 [-]: GETUPVAL  R1 U1        ; R1 := U1
  22 [-]: SELF      R1 R1 K10    ; R2 := R1; R1 := R1[0xfec1c88a]

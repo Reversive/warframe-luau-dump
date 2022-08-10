@@ -672,7 +672,7 @@
  67 [-]: NEWTABLE  R9 0 3       ; R9 := {}
  68 [-]: SETTABLE  R9 K17 K21   ; R9["Label"] := "/Lotus/Language/Game/ABILITY_RADIUS"
  69 [-]: GETUPVAL  R10 U1       ; R10 := U1
- 70 [-]: SETTABLE  R9 K22 R10   ; R9[0x23d5322f] := R10
+ 70 [-]: SETTABLE  R9 K22 R10   ; R9["Value"] := R10
  71 [-]: SETTABLE  R9 K23 K24   ; R9["ValueUnit"] := "/Lotus/Language/Game/UNIT_METER"
  72 [-]: CALL      R7 3 1       ; R7(R8,R9)
  73 [-]: GETGLOBAL R7 K15       ; R7 := 0x33bdd652
@@ -685,7 +685,7 @@
  80 [-]: GETUPVAL  R11 U2       ; R11 := U2
  81 [-]: MUL       R11 R11 K28  ; R11 := R11 * 100.000000
  82 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 83 [-]: SETTABLE  R9 K22 R10   ; R9[0x23d5322f] := R10
+ 83 [-]: SETTABLE  R9 K22 R10   ; R9["Value"] := R10
  84 [-]: SETTABLE  R9 K29 K30   ; R9["ValueIcon"] := "<DT_CORROSIVE>"
  85 [-]: SETTABLE  R9 K23 K31   ; R9["ValueUnit"] := "/Lotus/Language/Game/UNIT_PERCENT"
  86 [-]: CALL      R7 3 1       ; R7(R8,R9)
@@ -695,7 +695,7 @@
  90 [-]: NEWTABLE  R9 0 3       ; R9 := {}
  91 [-]: SETTABLE  R9 K17 K32   ; R9["Label"] := "/Lotus/Language/Game/ABILITY_DURATION"
  92 [-]: GETUPVAL  R10 U3       ; R10 := U3
- 93 [-]: SETTABLE  R9 K22 R10   ; R9[0x23d5322f] := R10
+ 93 [-]: SETTABLE  R9 K22 R10   ; R9["Value"] := R10
  94 [-]: SETTABLE  R9 K23 K33   ; R9["ValueUnit"] := "/Lotus/Language/Game/UNIT_SECOND"
  95 [-]: CALL      R7 3 1       ; R7(R8,R9)
  96 [-]: JMP       125          ; PC := 125
@@ -724,7 +724,7 @@
 119 [-]: NEWTABLE  R9 0 3       ; R9 := {}
 120 [-]: SETTABLE  R9 K17 K21   ; R9["Label"] := "/Lotus/Language/Game/ABILITY_RADIUS"
 121 [-]: GETUPVAL  R10 U5       ; R10 := U5
-122 [-]: SETTABLE  R9 K22 R10   ; R9[0x23d5322f] := R10
+122 [-]: SETTABLE  R9 K22 R10   ; R9["Value"] := R10
 123 [-]: SETTABLE  R9 K23 K24   ; R9["ValueUnit"] := "/Lotus/Language/Game/UNIT_METER"
 124 [-]: CALL      R7 3 1       ; R7(R8,R9)
 125 [-]: RETURN    R0 1         ; return 

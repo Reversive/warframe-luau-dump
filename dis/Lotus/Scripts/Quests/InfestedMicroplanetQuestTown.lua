@@ -1388,15 +1388,15 @@
  29 [-]: NEWTABLE  R4 0 2       ; R4 := {}
  30 [-]: SETTABLE  R4 K16 K17   ; R4["mName"] := "/Lotus/Language/InfestedMicroplanetQuest/Daughter2Option1"
  31 [-]: GETUPVAL  R5 U1        ; R5 := U1
- 32 [-]: SETTABLE  R4 K18 R5    ; R4[0xa72afc7e] := R5
+ 32 [-]: SETTABLE  R4 K18 R5    ; R4["mCallback"] := R5
  33 [-]: NEWTABLE  R5 0 2       ; R5 := {}
  34 [-]: SETTABLE  R5 K16 K19   ; R5["mName"] := "/Lotus/Language/InfestedMicroplanetQuest/Daughter2Option2"
  35 [-]: GETUPVAL  R6 U1        ; R6 := U1
- 36 [-]: SETTABLE  R5 K18 R6    ; R5[0xa72afc7e] := R6
+ 36 [-]: SETTABLE  R5 K18 R6    ; R5["mCallback"] := R6
  37 [-]: NEWTABLE  R6 0 2       ; R6 := {}
  38 [-]: SETTABLE  R6 K16 K20   ; R6["mName"] := "/Lotus/Language/InfestedMicroplanetQuest/Daughter2Option3"
  39 [-]: GETUPVAL  R7 U1        ; R7 := U1
- 40 [-]: SETTABLE  R6 K18 R7    ; R6[0xa72afc7e] := R7
+ 40 [-]: SETTABLE  R6 K18 R7    ; R6["mCallback"] := R7
  41 [-]: SETLIST   R3 3 1       ; R3[(1-1)*FPF+i] := R(3+i), 1 <= i <= 3
  42 [-]: LOADNIL   R4 R4        ; R4 := nil
  43 [-]: LOADBOOL  R5 0 0       ; R5 := false

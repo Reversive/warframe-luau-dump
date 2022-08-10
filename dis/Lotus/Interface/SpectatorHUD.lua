@@ -1463,32 +1463,32 @@
  31 [-]: MOVE      R0 R0        ; R0 := R0
  32 [-]: GETUPVAL  R0 U0        ; R0 := U0
  33 [-]: GETUPVAL  R0 U2        ; R0 := U2
- 34 [-]: SETTABLE  R2 K16 R3    ; R2[0x3d106989] := R3
+ 34 [-]: SETTABLE  R2 K16 R3    ; R2["mElementDrawCallback"] := R3
  35 [-]: GETUPVAL  R2 U0        ; R2 := U0
  36 [-]: CLOSURE   R3 2         ; R3 := closure(Function #24.3)
  37 [-]: GETUPVAL  R0 U1        ; R0 := U1
  38 [-]: SETTABLE  R2 K17 R3    ; R2["mOnFocusedCallback"] := R3
  39 [-]: GETUPVAL  R2 U0        ; R2 := U0
  40 [-]: CLOSURE   R3 3         ; R3 := closure(Function #24.4)
- 41 [-]: SETTABLE  R2 K18 R3    ; R2[0xbe190284] := R3
+ 41 [-]: SETTABLE  R2 K18 R3    ; R2["mOnUnfocusedCallback"] := R3
  42 [-]: GETUPVAL  R2 U0        ; R2 := U0
  43 [-]: CLOSURE   R3 4         ; R3 := closure(Function #24.5)
  44 [-]: GETUPVAL  R0 U1        ; R0 := U1
  45 [-]: GETUPVAL  R0 U3        ; R0 := U3
  46 [-]: GETUPVAL  R0 U4        ; R0 := U4
  47 [-]: GETUPVAL  R0 U5        ; R0 := U5
- 48 [-]: SETTABLE  R2 K19 R3    ; R2[0xece808d2] := R3
+ 48 [-]: SETTABLE  R2 K19 R3    ; R2["mOnSelectedCallback"] := R3
  49 [-]: GETUPVAL  R2 U0        ; R2 := U0
  50 [-]: CLOSURE   R3 5         ; R3 := closure(Function #24.6)
  51 [-]: GETUPVAL  R0 U2        ; R0 := U2
- 52 [-]: SETTABLE  R2 K20 R3    ; R2[0x7b998233] := R3
+ 52 [-]: SETTABLE  R2 K20 R3    ; R2["RepositionElements"] := R3
  53 [-]: GETUPVAL  R2 U0        ; R2 := U0
  54 [-]: GETUPVAL  R3 U0        ; R3 := U0
  55 [-]: GETTABLE  R3 R3 K22    ; R3 := R3["Redraw"]
- 56 [-]: SETTABLE  R2 K21 R3    ; R2[0x76ea806b] := R3
+ 56 [-]: SETTABLE  R2 K21 R3    ; R2["_SpectatorMenu_Redraw"] := R3
  57 [-]: GETUPVAL  R2 U0        ; R2 := U0
  58 [-]: CLOSURE   R3 6         ; R3 := closure(Function #24.7)
- 59 [-]: SETTABLE  R2 K22 R3    ; R2[0x3f3ae64c] := R3
+ 59 [-]: SETTABLE  R2 K22 R3    ; R2["Redraw"] := R3
  60 [-]: GETGLOBAL R2 K23       ; R2 := 0x89326c93
  61 [-]: SELF      R2 R2 K24    ; R3 := R2; R2 := R2[0x7d108ddb]
  62 [-]: CALL      R2 2 2       ; R2 := R2(R3)
@@ -1511,7 +1511,7 @@
  79 [-]: GETUPVAL  R8 U0        ; R8 := U0
  80 [-]: SELF      R8 R8 K27    ; R9 := R8; R8 := R8[0xbad4316f]
  81 [-]: NEWTABLE  R10 0 3      ; R10 := {}
- 82 [-]: SETTABLE  R10 K28 R7   ; R10[0x32302b4a] := R7
+ 82 [-]: SETTABLE  R10 K28 R7   ; R10["Name"] := R7
  83 [-]: GETTABLE  R11 R2 R6    ; R11 := R2[R6]
  84 [-]: SETTABLE  R10 K29 R11  ; R10["Player"] := R11
  85 [-]: GETTABLE  R11 R2 R6    ; R11 := R2[R6]
@@ -3047,12 +3047,12 @@
 149 [-]: GETTABLE  R6 R6 K10    ; R6 := R6["Pitch"]
 150 [-]: SELF      R6 R6 K14    ; R7 := R6; R6 := R6[0x54ab95f9]
 151 [-]: CALL      R6 2 2       ; R6 := R6(R7)
-152 [-]: SETTABLE  R2 K11 R6    ; R2[0x67652851] := R6
+152 [-]: SETTABLE  R2 K11 R6    ; R2[0x7b998233] := R6
 153 [-]: GETUPVAL  R6 U1        ; R6 := U1
 154 [-]: GETTABLE  R6 R6 K12    ; R6 := R6["Bank"]
 155 [-]: SELF      R6 R6 K14    ; R7 := R6; R6 := R6[0x54ab95f9]
 156 [-]: CALL      R6 2 2       ; R6 := R6(R7)
-157 [-]: SETTABLE  R2 K13 R6    ; R2[0xac1b386a] := R6
+157 [-]: SETTABLE  R2 K13 R6    ; R2["bank"] := R6
 158 [-]: SELF      R6 R0 K19    ; R7 := R0; R6 := R0[0xcca5cd30]
 159 [-]: MOVE      R8 R2        ; R8 := R2
 160 [-]: CALL      R6 3 1       ; R6(R7,R8)
@@ -3299,7 +3299,7 @@
 229 [-]: GETTABLE  R12 R11 K37  ; R12 := R11["Player"]
 230 [-]: SELF      R12 R12 K38  ; R13 := R12; R12 := R12[0xbb610e5b]
 231 [-]: CALL      R12 2 2      ; R12 := R12(R13)
-232 [-]: SETTABLE  R11 K35 R12  ; R11["Avatar"] := R12
+232 [-]: SETTABLE  R11 K35 R12  ; R11[0x54f5d6ad] := R12
 233 [-]: GETTABLE  R12 R11 K35  ; R12 := R11["Avatar"]
 234 [-]: EQ        0 R12 R6     ; if R12 ~= R6 then PC := 238
 235 [-]: JMP       238          ; PC := 238

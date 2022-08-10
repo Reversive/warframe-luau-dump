@@ -185,13 +185,13 @@
 ; Max Stack Size:  9
 
   1 [-]: NEWTABLE  R7 0 17      ; R7 := {}
-  2 [-]: SETTABLE  R7 K0 R0     ; R7[0x6667e5d4] := R0
-  3 [-]: SETTABLE  R7 K1 R1     ; R7[0x8ff7507f] := R1
-  4 [-]: SETTABLE  R7 K2 R2     ; R7[0xe39d0733] := R2
-  5 [-]: SETTABLE  R7 K3 R3     ; R7[0xfcda5f89] := R3
-  6 [-]: SETTABLE  R7 K4 R4     ; R7[0x3d106989] := R4
+  2 [-]: SETTABLE  R7 K0 R0     ; R7["mCameraInputFilter"] := R0
+  3 [-]: SETTABLE  R7 K1 R1     ; R7["mDefaultCamSpeed"] := R1
+  4 [-]: SETTABLE  R7 K2 R2     ; R7["mMinCameraStartDistance"] := R2
+  5 [-]: SETTABLE  R7 K3 R3     ; R7["mIsDojo"] := R3
+  6 [-]: SETTABLE  R7 K4 R4     ; R7["mEnterFreeCameraSound"] := R4
   7 [-]: SETTABLE  R7 K5 R5     ; R7["mExitFreeCameraSound"] := R5
-  8 [-]: SETTABLE  R7 K6 R6     ; R7[0x55684e45] := R6
+  8 [-]: SETTABLE  R7 K6 R6     ; R7["mCameraSequencerType"] := R6
   9 [-]: SETTABLE  R7 K7 K8     ; R7["mPlayer"] := nil
  10 [-]: SETTABLE  R7 K9 K10    ; R7["mOperatorSet"] := false
  11 [-]: SETTABLE  R7 K11 K8    ; R7["mControlsMovie"] := nil
@@ -203,13 +203,13 @@
  17 [-]: SETTABLE  R7 K16 R8    ; R7["InitCamera"] := R8
  18 [-]: CLOSURE   R8 1         ; R8 := closure(Function #5.2)
  19 [-]: GETUPVAL  R0 U1        ; R0 := U1
- 20 [-]: SETTABLE  R7 K17 R8    ; R7[0x56c05b89] := R8
+ 20 [-]: SETTABLE  R7 K17 R8    ; R7["ActivateFreeCam"] := R8
  21 [-]: CLOSURE   R8 2         ; R8 := closure(Function #5.3)
  22 [-]: GETUPVAL  R0 U1        ; R0 := U1
- 23 [-]: SETTABLE  R7 K18 R8    ; R7[0xbe190284] := R8
+ 23 [-]: SETTABLE  R7 K18 R8    ; R7["DeactivateFreeCam"] := R8
  24 [-]: CLOSURE   R8 3         ; R8 := closure(Function #5.4)
  25 [-]: GETUPVAL  R0 U2        ; R0 := U2
- 26 [-]: SETTABLE  R7 K19 R8    ; R7[0x424c55a8] := R8
+ 26 [-]: SETTABLE  R7 K19 R8    ; R7["OnUpdate"] := R8
  27 [-]: RETURN    R7 2         ; return R7
  28 [-]: RETURN    R0 1         ; return 
 

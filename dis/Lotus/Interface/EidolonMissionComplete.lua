@@ -317,7 +317,7 @@
  64 [-]: GETGLOBAL R5 K15       ; R5 := 0x6c97a788
  65 [-]: GETTABLE  R5 R5 K16    ; R82 := R5[0x1aba4d9e]
  66 [-]: CALL      R5 1 2       ; R5 := R5()
- 67 [-]: SETTABLE  R5 K17 R3    ; R5[0x25312c9b] := R3
+ 67 [-]: SETTABLE  R5 K17 R3    ; R5["mItemType"] := R3
  68 [-]: SETTABLE  R5 K18 K19   ; R5["mItemCount"] := 1.000000
  69 [-]: GETUPVAL  R6 U3        ; R6 := U3
  70 [-]: GETTABLE  R6 R6 K20    ; R82 := R6[0xfc31b69e]
@@ -352,7 +352,7 @@
  99 [-]: NEWTABLE  R10 0 1      ; R10 := {}
 100 [-]: GETUPVAL  R11 U1       ; R11 := U1
 101 [-]: GETTABLE  R11 R11 K30  ; R11 := R11["ItemCount"]
-102 [-]: SETTABLE  R10 K29 R11  ; R10[0x00000023] := R11
+102 [-]: SETTABLE  R10 K29 R11  ; R10["Count"] := R11
 103 [-]: SETTABLE  R9 K28 R10   ; R9["AppendInfo"] := R10
 104 [-]: LOADNIL   R10 R11      ; R10 := R11 := nil
 105 [-]: LOADBOOL  R12 1 0      ; R12 := true

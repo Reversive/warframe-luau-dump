@@ -1127,7 +1127,7 @@
  45 [-]: GETTABLE  R10 R2 K13   ; R10 := R2["mChildren"]
  46 [-]: MOVE      R11 R1       ; R11 := R1
  47 [-]: CALL      R9 3 1       ; R9(R10,R11)
- 48 [-]: SETTABLE  R1 K16 R2    ; R1["mParent"] := R2
+ 48 [-]: SETTABLE  R1 K16 R2    ; R1[0x0032441c] := R2
  49 [-]: GETGLOBAL R9 K14       ; R9 := 0x33bdd652
  50 [-]: GETTABLE  R9 R9 K15    ; R82 := R9[0x23d5322f]
  51 [-]: GETTABLE  R10 R0 K8    ; R10 := R0["mUnfilteredElements"]
@@ -2722,7 +2722,7 @@
  29 [-]: LOADK     R8 -1        ; R8 := -1.000000
  30 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
  31 [-]: MUL       R2 R4 R5     ; R2 := R4 * R5
- 32 [-]: SETTABLE  R3 K9 R2     ; R3[0x33bdd652] := R2
+ 32 [-]: SETTABLE  R3 K9 R2     ; R3["ValueChange"] := R2
  33 [-]: LT        0 K8 R2      ; if 0.000000 >= R2 then PC := 44
  34 [-]: JMP       44           ; PC := 44
  35 [-]: GETTABLE  R5 R0 K10    ; R5 := R0["mMovie"]
@@ -2744,7 +2744,7 @@
  51 [-]: GETGLOBAL R10 K14      ; R10 := 0x0032441c
  52 [-]: GETTABLE  R10 R10 K15  ; R10 := R10["UIColor_White"]
  53 [-]: CALL      R5 6 1       ; R5(R6,R7,R8,R9,R10)
- 54 [-]: SETTABLE  R0 K17 R1    ; R0[0xfa984a8e] := R1
+ 54 [-]: SETTABLE  R0 K17 R1    ; R0["mVSId"] := R1
  55 [-]: RETURN    R0 1         ; return 
 
 
@@ -2972,7 +2972,7 @@
   6 [-]: LOADBOOL  R2 0 0       ; R2 := false
   7 [-]: RETURN    R2 2         ; return R2
   8 [-]: GETTABLE  R2 R1 K2     ; R2 := R1["Id"]
-  9 [-]: SETTABLE  R0 K1 R2     ; R0["mCurrentElementId"] := R2
+  9 [-]: SETTABLE  R0 K1 R2     ; R0[0x03f57322] := R2
  10 [-]: SELF      R2 R0 K3     ; R3 := R0; R2 := R0[0xad03c283]
  11 [-]: MOVE      R4 R1        ; R4 := R1
  12 [-]: CALL      R2 3 1       ; R2(R3,R4)
@@ -5257,7 +5257,7 @@
 169 [-]: GETTABLE  R23 R23 K35  ; R23 := R23["Id"]
 170 [-]: CALL      R21 3 2      ; R21 := R21(R22,R23)
 171 [-]: NOT       R21 R21      ; R21 := not R21
-172 [-]: SETTABLE  R20 K32 R21  ; R20["mInterpolate"] := R21
+172 [-]: SETTABLE  R20 K32 R21  ; R20[0xae6791ba] := R21
 173 [-]: FORLOOP   R16 141      ; R16 += R18; if R16 <= R17 then begin PC := 141; R19 := R16 end
 174 [-]: CLOSE     R9           ; SAVE R9,...
 175 [-]: SELF      R9 R0 K36    ; R10 := R0; R9 := R0[0xc13d088c]
@@ -5343,7 +5343,7 @@
 255 [-]: CALL      R14 3 1      ; R14(R15,R16)
 256 [-]: GETUPVAL  R14 U0       ; R14 := U0
 257 [-]: GETTABLE  R14 R14 K43  ; R14 := R14["CustListScrollBar"]
-258 [-]: SETTABLE  R14 K46 R9   ; R14["mTotalHeight"] := R9
+258 [-]: SETTABLE  R14 K46 R9   ; R14[0xaade900e] := R9
 259 [-]: GETUPVAL  R14 U0       ; R14 := U0
 260 [-]: GETTABLE  R14 R14 K43  ; R14 := R14["CustListScrollBar"]
 261 [-]: CLOSURE   R15 1        ; R15 := closure(Function #3.40.2)
@@ -6106,7 +6106,7 @@
  11 [-]: SETTABLE  R1 K1 R2     ; R1["ItemSelectGridItemSelected"] := R2
  12 [-]: CLOSURE   R2 1         ; R2 := closure(Function #3.51.2)
  13 [-]: MOVE      R0 R0        ; R0 := R0
- 14 [-]: SETTABLE  R1 K2 R2     ; R1["ItemSelectGridItemFocused"] := R2
+ 14 [-]: SETTABLE  R1 K2 R2     ; R1[0x4187f84e] := R2
  15 [-]: CLOSURE   R2 2         ; R2 := closure(Function #3.51.3)
  16 [-]: MOVE      R0 R0        ; R0 := R0
  17 [-]: SETTABLE  R1 K3 R2     ; R1["ItemSelectGridItemUnfocused"] := R2
@@ -8014,7 +8014,7 @@
  22 [-]: LOADBOOL  R7 0 1       ; R7 := false; PC := 23
  23 [-]: LOADBOOL  R7 1 0       ; R7 := true
  24 [-]: CALL      R2 6 1       ; R2(R3,R4,R5,R6,R7)
- 25 [-]: SETTABLE  R0 K8 R1     ; R0["mState"] := R1
+ 25 [-]: SETTABLE  R0 K8 R1     ; R0[0x8606033a] := R1
  26 [-]: GETTABLE  R2 R0 K4     ; R2 := R0["State"]
  27 [-]: GETTABLE  R2 R2 K5     ; R2 := R2["CUSTOMIZATION"]
  28 [-]: EQ        0 R1 R2      ; if R1 ~= R2 then PC := 46

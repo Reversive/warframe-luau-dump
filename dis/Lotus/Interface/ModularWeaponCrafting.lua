@@ -879,7 +879,7 @@
 152 [-]: GETTABLE  R4 R4 K59    ; R4 := R4[3.000000]
 153 [-]: SETTABLE  R3 K50 R4    ; R3["mDefaultIcon"] := R4
 154 [-]: SETTABLE  R3 K60 K10   ; R3["mHasBottomLine"] := true
-155 [-]: SETTABLE  R2 K52 R3    ; R2[0x7b998233] := R3
+155 [-]: SETTABLE  R2 K52 R3    ; R2[2.000000] := R3
 156 [-]: JMP       982          ; PC := 982
 157 [-]: GETUPVAL  R2 U3        ; R2 := U3
 158 [-]: EQ        0 R2 K23     ; if R2 ~= 1.000000 then PC := 255
@@ -2074,7 +2074,7 @@
  62 [-]: LOADK     R11 K18      ; R11 := "/Lotus/Language/OstronCrafting/Crafting_GildPreview"
  63 [-]: LOADBOOL  R12 1 0      ; R12 := true
  64 [-]: NEWTABLE  R13 0 1      ; R13 := {}
- 65 [-]: SETTABLE  R13 K19 R8   ; R13[0x06d055f9] := R8
+ 65 [-]: SETTABLE  R13 K19 R8   ; R13["CHECK"] := R8
  66 [-]: CALL      R9 5 2       ; R9 := R9(R10,R11,R12,R13)
  67 [-]: GETGLOBAL R10 K3       ; R10 := 0x33bdd652
  68 [-]: GETTABLE  R10 R10 K4   ; R82 := R10[0x23d5322f]
@@ -2084,7 +2084,7 @@
  72 [-]: GETTABLE  R13 R13 K15  ; R13 := R13["Preview"]
  73 [-]: NOT       R13 R13      ; R13 := not R13
  74 [-]: SETTABLE  R12 K20 R13  ; R12["OverrideTintIcons"] := R13
- 75 [-]: SETTABLE  R12 K21 R9   ; R12[0x7b998233] := R9
+ 75 [-]: SETTABLE  R12 K21 R9   ; R12["Label"] := R9
  76 [-]: CLOSURE   R13 0        ; R13 := closure(Function #13.1)
  77 [-]: SETTABLE  R12 K22 R13  ; R12["CallBack"] := R13
  78 [-]: SETTABLE  R12 K23 K24  ; R12["CallOut"] := "MENU_GENERIC1"
@@ -2589,7 +2589,7 @@
  12 [-]: LOADK     R4 K7        ; R4 := "StatContainer"
  13 [-]: LOADK     R5 0         ; R5 := 0.000000
  14 [-]: CALL      R2 4 2       ; R2 := R2(R3,R4,R5)
- 15 [-]: SETTABLE  R1 K5 R2     ; R1["mInitContainerXPos"] := R2
+ 15 [-]: SETTABLE  R1 K5 R2     ; R1[0x33bdd652] := R2
  16 [-]: GETUPVAL  R1 U0        ; R1 := U0
  17 [-]: GETGLOBAL R2 K3        ; R2 := 0xae91e43b
  18 [-]: SELF      R2 R2 K6     ; R3 := R2; R2 := R2[0x91a24e4b]
@@ -2744,7 +2744,7 @@
   8 [-]: GETUPVAL  R6 U0        ; R6 := U0
   9 [-]: GETTABLE  R6 R6 K3     ; R6 := R6["mCurrent"]
  10 [-]: CALL      R1 6 2       ; R1 := R1(R2,R3,R4,R5,R6)
- 11 [-]: SETTABLE  R0 K0 R1     ; R0["mStats"] := R1
+ 11 [-]: SETTABLE  R0 K0 R1     ; R0[0x6c97a788] := R1
  12 [-]: GETUPVAL  R0 U0        ; R0 := U0
  13 [-]: SELF      R0 R0 K4     ; R1 := R0; R0 := R0[0x71e9ac81]
  14 [-]: CALL      R0 2 1       ; R0(R1)
@@ -3615,10 +3615,10 @@
  16 [-]: GETTABLE  R1 R1 K5     ; R1 := R1["ModularCraftingSaleWeapon"]
  17 [-]: SELF      R1 R1 K8     ; R2 := R1; R1 := R1[0xde7a1002]
  18 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 19 [-]: SETTABLE  R0 K7 R1     ; R0["mModularParts"] := R1
+ 19 [-]: SETTABLE  R0 K7 R1     ; R0[0x99c4ef3a] := R1
  20 [-]: GETGLOBAL R1 K4        ; R1 := _T
  21 [-]: NEWTABLE  R2 0 2       ; R2 := {}
- 22 [-]: SETTABLE  R2 K10 R0    ; R2["info"] := R0
+ 22 [-]: SETTABLE  R2 K10 R0    ; R2[0x2c6cc890] := R0
  23 [-]: GETUPVAL  R3 U0        ; R3 := U0
  24 [-]: SETTABLE  R2 K11 R3    ; R2["item"] := R3
  25 [-]: SETTABLE  R1 K9 R2     ; R1["upgradeItem"] := R2
@@ -4891,7 +4891,7 @@
  45 [-]: GETTABLE  R12 R8 K19   ; R12 := R8["mTopTitle"]
  46 [-]: SETTABLE  R11 K18 R12  ; R11["TopTitle"] := R12
  47 [-]: GETTABLE  R12 R8 K21   ; R12 := R8["mNameTag"]
- 48 [-]: SETTABLE  R11 K20 R12  ; R11[0x3d106989] := R12
+ 48 [-]: SETTABLE  R11 K20 R12  ; R11["NameTag"] := R12
  49 [-]: SETTABLE  R11 K22 R7   ; R11["PartType"] := R7
  50 [-]: SETTABLE  R11 K23 R10  ; R11["ParentType"] := R10
  51 [-]: GETTABLE  R12 R8 K25   ; R12 := R8["mDefaultIcon"]
@@ -5751,13 +5751,13 @@
  51 [-]: LOADK     R2 6         ; R2 := 6.000000
  52 [-]: LOADBOOL  R3 1 0       ; R3 := true
  53 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
- 54 [-]: SETTABLE  R0 K14 R1    ; R0[0x46610c50] := R1
+ 54 [-]: SETTABLE  R0 K14 R1    ; R0["Content"] := R1
  55 [-]: GETUPVAL  R1 U4        ; R1 := U4
  56 [-]: GETTABLE  R1 R1 K11    ; R82 := R1[0x5d10207d]
  57 [-]: LOADK     R2 2         ; R2 := 2.000000
  58 [-]: LOADBOOL  R3 1 0       ; R3 := true
  59 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
- 60 [-]: SETTABLE  R0 K15 R1    ; R0[0x3d106989] := R1
+ 60 [-]: SETTABLE  R0 K15 R1    ; R0["Background1"] := R1
  61 [-]: GETUPVAL  R1 U4        ; R1 := U4
  62 [-]: GETTABLE  R1 R1 K11    ; R82 := R1[0x5d10207d]
  63 [-]: LOADK     R2 9         ; R2 := 9.000000

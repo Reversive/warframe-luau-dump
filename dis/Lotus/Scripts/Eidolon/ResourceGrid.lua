@@ -138,7 +138,7 @@
 129 [-]: CLOSURE   R12 18       ; R12 := closure(Function #19)
 130 [-]: SETTABLE  R11 K19 R12  ; R11[true] := R12
 131 [-]: CLOSURE   R12 19       ; R12 := closure(Function #20)
-132 [-]: SETTABLE  R11 K20 R12  ; R11[0xcdf11087] := R12
+132 [-]: SETTABLE  R11 K20 R12  ; R11[true] := R12
 133 [-]: CLOSURE   R12 20       ; R12 := closure(Function #21)
 134 [-]: SETTABLE  R11 K15 R12  ; R11[true] := R12
 135 [-]: CLOSURE   R12 21       ; R12 := closure(Function #22)
@@ -174,7 +174,7 @@
 165 [-]: CLOSURE   R13 34       ; R13 := closure(Function #35)
 166 [-]: SETTABLE  R12 K33 R13  ; R12[true] := R13
 167 [-]: CLOSURE   R13 35       ; R13 := closure(Function #36)
-168 [-]: SETTABLE  R12 K34 R13  ; R12[0xcdf11087] := R13
+168 [-]: SETTABLE  R12 K34 R13  ; R12[true] := R13
 169 [-]: CLOSURE   R13 36       ; R13 := closure(Function #37)
 170 [-]: SETTABLE  R12 K35 R13  ; R12[true] := R13
 171 [-]: CLOSURE   R13 37       ; R13 := closure(Function #38)
@@ -1201,7 +1201,7 @@
  14 [-]: GETUPVAL  R2 U0        ; R2 := U0
  15 [-]: GETTABLE  R3 R0 K8     ; R3 := R0["mVisitedCells"]
  16 [-]: CALL      R2 2 1       ; R2(R3)
- 17 [-]: SETTABLE  R0 K9 R1     ; R0["mLastPos"] := R1
+ 17 [-]: SETTABLE  R0 K9 R1     ; R0[0x2296a8fd] := R1
  18 [-]: RETURN    R0 1         ; return 
 
 
@@ -2082,14 +2082,14 @@
   2 [-]: NEWTABLE  R2 0 0       ; R2 := {}
   3 [-]: SETTABLE  R1 K1 R2     ; R1["mDirty"] := R2
   4 [-]: NEWTABLE  R2 0 0       ; R2 := {}
-  5 [-]: SETTABLE  R1 K2 R2     ; R1[0x89326c93] := R2
+  5 [-]: SETTABLE  R1 K2 R2     ; R1["mCells"] := R2
   6 [-]: CLOSURE   R2 0         ; R2 := closure(Function #39.1)
-  7 [-]: SETTABLE  R1 K3 R2     ; R1[0x9ed3b54e] := R2
+  7 [-]: SETTABLE  R1 K3 R2     ; R1["IncrementActive"] := R2
   8 [-]: CLOSURE   R2 1         ; R2 := closure(Function #39.2)
   9 [-]: SETTABLE  R1 K4 R2     ; R1["DecrementActive"] := R2
  10 [-]: SETTABLE  R0 K0 R1     ; R0["mActiveCellTable"] := R1
  11 [-]: NEWTABLE  R1 0 0       ; R1 := {}
- 12 [-]: SETTABLE  R0 K5 R1     ; R0[0x60130201] := R1
+ 12 [-]: SETTABLE  R0 K5 R1     ; R0["mActiveCellQueryWorkers"] := R1
  13 [-]: LOADK     R1 1         ; R1 := 1.000000
  14 [-]: LOADK     R2 4         ; R2 := 4.000000
  15 [-]: LOADK     R3 1         ; R3 := 1.000000
@@ -2631,7 +2631,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
-  1 [-]: SETTABLE  R0 K0 R1     ; R0[0xdd2c9860] := R1
+  1 [-]: SETTABLE  R0 K0 R1     ; R0["mGenerateForAllPlayers"] := R1
   2 [-]: RETURN    R0 1         ; return 
 
 
@@ -2689,7 +2689,7 @@
  17 [-]: GETUPVAL  R8 U2        ; R8 := U2
  18 [-]: GETTABLE  R8 R8 K8     ; R82 := R8[0x7d4d5d68]
  19 [-]: CALL      R8 1 2       ; R8 := R8()
- 20 [-]: SETTABLE  R7 K7 R8     ; R7[0x01151b50] := R8
+ 20 [-]: SETTABLE  R7 K7 R8     ; R7["mValidationQueue"] := R8
  21 [-]: GETUPVAL  R8 U2        ; R8 := U2
  22 [-]: GETTABLE  R8 R8 K8     ; R82 := R8[0x7d4d5d68]
  23 [-]: CALL      R8 1 2       ; R8 := R8()

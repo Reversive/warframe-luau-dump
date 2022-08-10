@@ -1182,7 +1182,7 @@
 ; Max Stack Size:  4
 
   1 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  2 [-]: SETTABLE  R1 K0 R0     ; R1[0x00000063] := R0
+  2 [-]: SETTABLE  R1 K0 R0     ; R1["mStats"] := R0
   3 [-]: GETUPVAL  R1 U0        ; R1 := U0
   4 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1[0x71e9ac81]
   5 [-]: CLOSURE   R3 0         ; R3 := closure(Function #9.1)
@@ -1505,7 +1505,7 @@
  62 [-]: LOADK     R8 K22       ; R8 := "%"
  63 [-]: CONCAT    R3 R7 R8     ; R3 := R7 .. R8
  64 [-]: GETTABLE  R7 R2 K6     ; R7 := R2["Previous"]
- 65 [-]: SETTABLE  R7 K23 R3    ; R7["DisplayValue"] := R3
+ 65 [-]: SETTABLE  R7 K23 R3    ; R7[0xa2880940] := R3
  66 [-]: GETUPVAL  R7 U1        ; R7 := U1
  67 [-]: GETTABLE  R7 R7 K24    ; R7 := R7["mLevel"]
  68 [-]: LT        0 K25 R7     ; if 0.000000 >= R7 then PC := 120
@@ -1559,7 +1559,7 @@
 116 [-]: LOADK     R9 K22       ; R9 := "%"
 117 [-]: CONCAT    R3 R8 R9     ; R3 := R8 .. R9
 118 [-]: GETTABLE  R8 R2 K9     ; R8 := R2["Current"]
-119 [-]: SETTABLE  R8 K23 R3    ; R8["DisplayValue"] := R3
+119 [-]: SETTABLE  R8 K23 R3    ; R8[0xa2880940] := R3
 120 [-]: RETURN    R2 2         ; return R2
 121 [-]: RETURN    R0 1         ; return 
 
@@ -1652,11 +1652,11 @@
  36 [-]: NEWTABLE  R6 0 2       ; R6 := {}
  37 [-]: SETTABLE  R6 K16 K6    ; R6["StatValue"] := 0.000000
  38 [-]: SETTABLE  R6 K17 K18   ; R6["DisplayValue"] := ""
- 39 [-]: SETTABLE  R5 K15 R6    ; R5[0x492f9da2] := R6
+ 39 [-]: SETTABLE  R5 K15 R6    ; R5["Previous"] := R6
  40 [-]: NEWTABLE  R6 0 2       ; R6 := {}
  41 [-]: SETTABLE  R6 K16 K6    ; R6["StatValue"] := 0.000000
  42 [-]: SETTABLE  R6 K17 K18   ; R6["DisplayValue"] := ""
- 43 [-]: SETTABLE  R5 K19 R6    ; R5[0x0b4bcfb6] := R6
+ 43 [-]: SETTABLE  R5 K19 R6    ; R5["Current"] := R6
  44 [-]: CALL      R3 3 1       ; R3(R4,R5)
  45 [-]: JMP       150          ; PC := 150
  46 [-]: GETGLOBAL R3 K20       ; R3 := 0xb009bbc6
@@ -1682,7 +1682,7 @@
  66 [-]: SELF      R10 R3 K27   ; R11 := R3; R10 := R3[0x9ed94a63]
  67 [-]: MOVE      R12 R7       ; R12 := R7
  68 [-]: CALL      R10 3 2      ; R10 := R10(R11,R12)
- 69 [-]: SETTABLE  R9 K26 R10   ; R9[0x32302b4a] := R10
+ 69 [-]: SETTABLE  R9 K26 R10   ; R9["mRequiredFusion"] := R10
  70 [-]: GETGLOBAL R10 K29      ; R10 := 0x7f5022cf
  71 [-]: GETTABLE  R10 R10 K30  ; R82 := R10[0x3f3e4d12]
  72 [-]: GETGLOBAL R11 K12      ; R11 := 0xae91e43b
@@ -1715,13 +1715,13 @@
  99 [-]: NEWTABLE  R13 0 2      ; R13 := {}
 100 [-]: SETTABLE  R13 K16 K6   ; R13["StatValue"] := 0.000000
 101 [-]: GETTABLE  R14 R9 K28   ; R14 := R9["mName"]
-102 [-]: SETTABLE  R13 K17 R14  ; R13[0xa2880940] := R14
-103 [-]: SETTABLE  R12 K15 R13  ; R12[0x492f9da2] := R13
+102 [-]: SETTABLE  R13 K17 R14  ; R13["DisplayValue"] := R14
+103 [-]: SETTABLE  R12 K15 R13  ; R12["Previous"] := R13
 104 [-]: NEWTABLE  R13 0 2      ; R13 := {}
 105 [-]: SETTABLE  R13 K16 K6   ; R13["StatValue"] := 0.000000
 106 [-]: GETTABLE  R14 R9 K28   ; R14 := R9["mName"]
-107 [-]: SETTABLE  R13 K17 R14  ; R13[0xa2880940] := R14
-108 [-]: SETTABLE  R12 K19 R13  ; R12[0x0b4bcfb6] := R13
+107 [-]: SETTABLE  R13 K17 R14  ; R13["DisplayValue"] := R14
+108 [-]: SETTABLE  R12 K19 R13  ; R12["Current"] := R13
 109 [-]: CALL      R10 3 1      ; R10(R11,R12)
 110 [-]: FORLOOP   R4 55        ; R4 += R6; if R4 <= R5 then begin PC := 55; R7 := R4 end
 111 [-]: JMP       150          ; PC := 150
@@ -2081,7 +2081,7 @@
  36 [-]: CALL      R18 2 2      ; R18 := R18(R19)
  37 [-]: MOVE      R19 R9       ; R19 := R9
  38 [-]: CONCAT    R17 R17 R19  ; R17 := R17 .. R18 .. R19
- 39 [-]: SETTABLE  R16 K9 R17   ; R16[0xf5d68fd7] := R17
+ 39 [-]: SETTABLE  R16 K9 R17   ; R16["TOTAL"] := R17
  40 [-]: MOVE      R17 R8       ; R17 := R8
  41 [-]: GETUPVAL  R18 U3       ; R18 := U3
  42 [-]: GETTABLE  R18 R18 K10  ; R82 := R18[0x1142c7a8]
@@ -2089,7 +2089,7 @@
  44 [-]: CALL      R18 2 2      ; R18 := R18(R19)
  45 [-]: MOVE      R19 R9       ; R19 := R9
  46 [-]: CONCAT    R17 R17 R19  ; R17 := R17 .. R18 .. R19
- 47 [-]: SETTABLE  R16 K11 R17  ; R16[0x6b32352d] := R17
+ 47 [-]: SETTABLE  R16 K11 R17  ; R16["DUPLICATES"] := R17
  48 [-]: CALL      R12 5 2      ; R12 := R12(R13,R14,R15,R16)
  49 [-]: CONCAT    R10 R11 R12  ; R10 := R11 .. R12
  50 [-]: LOADNIL   R11 R11      ; R11 := nil
@@ -2319,7 +2319,7 @@
   3 [-]: GETTABLE  R0 R0 K1     ; R0 := R0["mUpgrade"]
   4 [-]: GETTABLE  R1 R0 K2     ; R1 := R0["mUpgradeFingerprint"]
   5 [-]: GETUPVAL  R2 U1        ; R2 := U1
-  6 [-]: SETTABLE  R0 K2 R2     ; R0[0xb8e9d205] := R2
+  6 [-]: SETTABLE  R0 K2 R2     ; R0["mUpgradeFingerprint"] := R2
   7 [-]: GETUPVAL  R2 U3        ; R2 := U3
   8 [-]: GETTABLE  R2 R2 K3     ; R82 := R2[0xfc31b69e]
   9 [-]: MOVE      R3 R0        ; R3 := R0
@@ -2339,7 +2339,7 @@
  23 [-]: GETTABLE  R3 R3 K0     ; R3 := R3["Card"]
  24 [-]: GETTABLE  R3 R3 K6     ; R3 := R3["mSeed"]
  25 [-]: SETTABLE  R2 K6 R3     ; R2["mSeed"] := R3
- 26 [-]: SETTABLE  R0 K2 R1     ; R0[0xb8e9d205] := R1
+ 26 [-]: SETTABLE  R0 K2 R1     ; R0["mUpgradeFingerprint"] := R1
  27 [-]: GETUPVAL  R2 U2        ; R2 := U2
  28 [-]: GETTABLE  R2 R2 K7     ; R2 := R2["mIsStance"]
  29 [-]: TEST      R2 0         ; if not R2 then PC := 74
@@ -2375,7 +2375,7 @@
  59 [-]: GETUPVAL  R3 U2        ; R3 := U2
  60 [-]: GETTABLE  R3 R3 K1     ; R3 := R3["mUpgrade"]
  61 [-]: GETTABLE  R3 R3 K10    ; R3 := R3["mItemType"]
- 62 [-]: SETTABLE  R2 K8 R3     ; R2[0x5f56eeab] := R3
+ 62 [-]: SETTABLE  R2 K8 R3     ; R2["Type"] := R3
  63 [-]: GETUPVAL  R2 U5        ; R2 := U5
  64 [-]: GETGLOBAL R3 K16       ; R3 := 0xbd496aa1
  65 [-]: GETTABLE  R3 R3 K17    ; R82 := R3[0x42645da3]
@@ -4202,7 +4202,7 @@
 125 [-]: GETUPVAL  R9 U4        ; R9 := U4
 126 [-]: GETTABLE  R9 R9 K8     ; R9 := R9["mLevel"]
 127 [-]: CALL      R8 2 2       ; R8 := R8(R9)
-128 [-]: SETTABLE  R7 K29 R8    ; R7[0xfa86e69d] := R8
+128 [-]: SETTABLE  R7 K29 R8    ; R7["RANK"] := R8
 129 [-]: CALL      R3 5 2       ; R3 := R3(R4,R5,R6,R7)
 130 [-]: GETUPVAL  R4 U4        ; R4 := U4
 131 [-]: GETTABLE  R4 R4 K8     ; R4 := R4["mLevel"]
@@ -5482,7 +5482,7 @@
  36 [-]: GETTABLE  R9 R9 K15    ; R82 := R9[0x23d5322f]
  37 [-]: GETUPVAL  R10 U2       ; R10 := U2
  38 [-]: NEWTABLE  R11 0 2      ; R11 := {}
- 39 [-]: SETTABLE  R11 K16 R5   ; R11[0x1c5b5b33] := R5
+ 39 [-]: SETTABLE  R11 K16 R5   ; R11["Entry"] := R5
  40 [-]: SETTABLE  R11 K17 R8   ; R11["Upgrade"] := R8
  41 [-]: CALL      R9 3 1       ; R9(R10,R11)
  42 [-]: TFORLOOP  R1 2         ; R4,R5 :=  R1(R2,R3); if R4 ~= nil then begin PC = 8; R3 := R4 end
@@ -7329,7 +7329,7 @@
  15 [-]: MOVE      R6 R1        ; R6 := R1
  16 [-]: LOADBOOL  R7 0 0       ; R7 := false
  17 [-]: NEWTABLE  R8 0 1       ; R8 := {}
- 18 [-]: SETTABLE  R8 K6 R2     ; R8["NUMBER"] := R2
+ 18 [-]: SETTABLE  R8 K6 R2     ; R8[0x9c1f3b5a] := R2
  19 [-]: CALL      R4 5 2       ; R4 := R4(R5,R6,R7,R8)
  20 [-]: GETUPVAL  R5 U0        ; R5 := U0
  21 [-]: MOVE      R6 R4        ; R6 := R4
@@ -9552,9 +9552,9 @@
  11 [-]: JMP       22           ; PC := 22
  12 [-]: NEWTABLE  R1 0 3       ; R1 := {}
  13 [-]: GETTABLE  R2 R0 K2     ; R2 := R0["Id"]
- 14 [-]: SETTABLE  R1 K2 R2     ; R1["Id"] := R2
+ 14 [-]: SETTABLE  R1 K2 R2     ; R1[0x1e5b5cfe] := R2
  15 [-]: GETTABLE  R2 R0 K3     ; R2 := R0["Card"]
- 16 [-]: SETTABLE  R1 K3 R2     ; R1[0xcc4b959d] := R2
+ 16 [-]: SETTABLE  R1 K3 R2     ; R1["Card"] := R2
  17 [-]: SETTABLE  R1 K4 K5     ; R1["mClipName"] := "FusionTarget.DetailCard"
  18 [-]: SETUPVAL  R1 U3        ; U82 := 
  19 [-]: GETTABLE  R1 R0 K2     ; R1 := R0["Id"]
@@ -10713,7 +10713,7 @@
   9 [-]: GETUPVAL  R1 U0        ; R1 := U0
  10 [-]: GETGLOBAL R2 K6        ; R2 := 0x0032441c
  11 [-]: GETTABLE  R2 R2 K7     ; R2 := R2["UIMaterial_Rectangle"]
- 12 [-]: SETTABLE  R1 K5 R2     ; R1["mBgMaterial"] := R2
+ 12 [-]: SETTABLE  R1 K5 R2     ; R1[0x03f57322] := R2
  13 [-]: GETUPVAL  R1 U0        ; R1 := U0
  14 [-]: GETUPVAL  R2 U1        ; R2 := U1
  15 [-]: GETTABLE  R2 R2 K9     ; R82 := R2[0x06d055f9]
@@ -10727,7 +10727,7 @@
  23 [-]: GETUPVAL  R1 U0        ; R1 := U0
  24 [-]: CLOSURE   R2 0         ; R2 := closure(Function #76.1)
  25 [-]: GETUPVAL  R0 U2        ; R0 := U2
- 26 [-]: SETTABLE  R1 K12 R2    ; R1["OnSearchChanged"] := R2
+ 26 [-]: SETTABLE  R1 K12 R2    ; R1[0x7b998233] := R2
  27 [-]: GETUPVAL  R1 U0        ; R1 := U0
  28 [-]: SELF      R1 R1 K13    ; R2 := R1; R1 := R1[0x687ae094]
  29 [-]: CALL      R1 2 1       ; R1(R2)
@@ -12001,7 +12001,7 @@
  51 [-]: GETTABLE  R7 R7 K5     ; R7 := R7["mUpgrade"]
  52 [-]: GETTABLE  R7 R7 K9     ; R7 := R7["mItemCount"]
  53 [-]: SUB       R7 R7 K10    ; R7 := R7 - 1.000000
- 54 [-]: SETTABLE  R6 K9 R7     ; R6[0x537ac148] := R7
+ 54 [-]: SETTABLE  R6 K9 R7     ; R6["mItemCount"] := R7
  55 [-]: EQ        1 R0 K3      ; if R0 == nil then PC := 195
  56 [-]: JMP       195          ; PC := 195
  57 [-]: GETGLOBAL R6 K11       ; R6 := 0xcfc01047
@@ -12078,7 +12078,7 @@
 128 [-]: GETTABLE  R27 R27 K29  ; R82 := R27[0xd3f3ad63]
 129 [-]: CALL      R27 1 2      ; R27 := R27()
 130 [-]: GETTABLE  R28 R27 K7   ; R28 := R27["mId"]
-131 [-]: SETTABLE  R28 K7 R0    ; R28[0x76ea806b] := R0
+131 [-]: SETTABLE  R28 K7 R0    ; R28["mId"] := R0
 132 [-]: SETTABLE  R22 R26 R27  ; R22[R26] := R27
 133 [-]: SELF      R28 R4 K30   ; R29 := R4; R28 := R4[0x835d4c57]
 134 [-]: MOVE      R30 R9       ; R30 := R9
@@ -12116,7 +12116,7 @@
 166 [-]: GETTABLE  R29 R29 K13  ; R29 := R29["mItemType"]
 167 [-]: SETTABLE  R28 K13 R29  ; R28["mItemType"] := R29
 168 [-]: GETTABLE  R29 R28 K6   ; R29 := R28["mItemId"]
-169 [-]: SETTABLE  R29 K7 R0    ; R29[0x76ea806b] := R0
+169 [-]: SETTABLE  R29 K7 R0    ; R29["mId"] := R0
 170 [-]: GETUPVAL  R29 U9       ; R29 := U9
 171 [-]: SETTABLE  R28 K33 R29  ; R28["mUpgradeFingerprint"] := R29
 172 [-]: GETUPVAL  R29 U4       ; R29 := U4
@@ -14001,7 +14001,7 @@
  60 [-]: GETTABLE  R6 R6 K23    ; R82 := R6[0xd2a1d93b]
  61 [-]: MOVE      R7 R3        ; R7 := R3
  62 [-]: NEWTABLE  R8 0 4       ; R8 := {}
- 63 [-]: SETTABLE  R8 K24 R4    ; R8[0xe4162eed] := R4
+ 63 [-]: SETTABLE  R8 K24 R4    ; R8["Name"] := R4
  64 [-]: SETTABLE  R8 K25 R2    ; R8["itemCount"] := R2
  65 [-]: SETTABLE  R8 K26 R2    ; R8["OverrideCount"] := R2
  66 [-]: SETTABLE  R8 K27 K29   ; R8["OverrideCatergory"] := 11.000000

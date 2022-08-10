@@ -1839,7 +1839,7 @@
 429 [-]: GETUPVAL  R46 U13      ; R46 := U13
 430 [-]: DIV       R45 R45 R46  ; R45 := R45 / R46
 431 [-]: CALL      R42 4 2      ; R42 := R42(R43,R44,R45)
-432 [-]: SETTABLE  R6 K75 R42   ; R6["IconMid"] := R42
+432 [-]: SETTABLE  R6 K75 R42   ; R6[0x3f3e4d12] := R42
 433 [-]: GETTABLE  R42 R6 K69   ; R42 := R6["IconHeight"]
 434 [-]: GETUPVAL  R43 U13      ; R43 := U13
 435 [-]: DIV       R42 R42 R43  ; R42 := R42 / R43
@@ -8127,7 +8127,7 @@
  33 [-]: GETTABLE  R8 R2 K1     ; R8 := R2["Card"]
  34 [-]: MOVE      R9 R3        ; R9 := R3
  35 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
- 36 [-]: SETTABLE  R2 K12 R7    ; R2[0xc163f229] := R7
+ 36 [-]: SETTABLE  R2 K12 R7    ; R2["Categories"] := R7
  37 [-]: JMP       49           ; PC := 49
  38 [-]: GETGLOBAL R7 K13       ; R7 := 0xc8802016
  39 [-]: MOVE      R8 R6        ; R8 := R6
@@ -8181,12 +8181,12 @@
  87 [-]: SETTABLE  R2 K23 R5    ; R2["mPrice"] := R5
  88 [-]: GETTABLE  R12 R2 K1    ; R12 := R2["Card"]
  89 [-]: GETTABLE  R12 R12 K24  ; R12 := R12["mName"]
- 90 [-]: SETTABLE  R2 K24 R12   ; R2[0x5bced4c4] := R12
+ 90 [-]: SETTABLE  R2 K24 R12   ; R2[0x67652851] := R12
  91 [-]: GETTABLE  R12 R2 K24   ; R12 := R2["mName"]
- 92 [-]: SETTABLE  R2 K25 R12   ; R2[0x3630e649] := R12
+ 92 [-]: SETTABLE  R2 K25 R12   ; R2["Name"] := R12
  93 [-]: GETTABLE  R12 R2 K1    ; R12 := R2["Card"]
  94 [-]: GETTABLE  R12 R12 K26  ; R12 := R12["mType"]
- 95 [-]: SETTABLE  R2 K26 R12   ; R2["mType"] := R12
+ 95 [-]: SETTABLE  R2 K26 R12   ; R2[0xc163f229] := R12
  96 [-]: GETTABLE  R12 R2 K1    ; R12 := R2["Card"]
  97 [-]: GETTABLE  R12 R12 K6   ; R12 := R12["mUpgrade"]
  98 [-]: GETTABLE  R12 R12 K28  ; R12 := R12["mItemId"]
@@ -8247,7 +8247,7 @@
  22 [-]: GETGLOBAL R7 K5        ; R7 := 0x67652851
  23 [-]: CALL      R7 1 2       ; R7 := R7()
  24 [-]: SUB       R6 R6 R7     ; R6 := R6 - R7
- 25 [-]: SETTABLE  R5 K4 R6     ; R5[0x98b1bb53] := R6
+ 25 [-]: SETTABLE  R5 K4 R6     ; R5["mNextChange"] := R6
  26 [-]: GETTABLE  R6 R5 K4     ; R6 := R5["mNextChange"]
  27 [-]: LE        0 R6 K6      ; if R6 > 0.000000 then PC := 50
  28 [-]: JMP       50           ; PC := 50
@@ -8255,7 +8255,7 @@
  30 [-]: LOADK     R7 K8        ; R7 := 0.200000
  31 [-]: LOADK     R8 K9        ; R8 := 1.350000
  32 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
- 33 [-]: SETTABLE  R5 K4 R6     ; R5[0x98b1bb53] := R6
+ 33 [-]: SETTABLE  R5 K4 R6     ; R5["mNextChange"] := R6
  34 [-]: LOADK     R6 0         ; R6 := 0.500000
  35 [-]: GETGLOBAL R7 K10       ; R7 := 0x55730e1a
  36 [-]: LOADK     R8 0         ; R8 := 0.000000
@@ -8316,7 +8316,7 @@
  91 [-]: SETTABLE  R5 K18 R10   ; R5["mIconIndexB"] := R10
  92 [-]: GETTABLE  R11 R5 K17   ; R11 := R5["mIcons"]
  93 [-]: GETTABLE  R11 R11 R10  ; R11 := R11[R10]
- 94 [-]: SETTABLE  R5 K22 R11   ; R5["mIcon"] := R11
+ 94 [-]: SETTABLE  R5 K22 R11   ; R5[0x23d5322f] := R11
  95 [-]: SELF      R11 R4 K23   ; R12 := R4; R11 := R4[0x64735a8e]
  96 [-]: GETTABLE  R13 R0 K2    ; R13 := R0["mClipName"]
  97 [-]: LOADK     R14 K24      ; R14 := ".Card.Icon"
@@ -8357,10 +8357,10 @@
 132 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
 133 [-]: MOVE      R11 R12      ; R11 := R12
 134 [-]: JMP       124          ; PC := 124
-135 [-]: SETTABLE  R5 K21 R11   ; R5["mIconIndexA"] := R11
+135 [-]: SETTABLE  R5 K21 R11   ; R5[0x33bdd652] := R11
 136 [-]: GETTABLE  R12 R5 K17   ; R12 := R5["mIcons"]
 137 [-]: GETTABLE  R12 R12 R11  ; R12 := R12[R11]
-138 [-]: SETTABLE  R5 K22 R12   ; R5["mIcon"] := R12
+138 [-]: SETTABLE  R5 K22 R12   ; R5[0x23d5322f] := R12
 139 [-]: SELF      R12 R4 K28   ; R13 := R4; R12 := R4[0x1cb415c1]
 140 [-]: GETTABLE  R14 R0 K2    ; R14 := R0["mClipName"]
 141 [-]: LOADK     R15 K24      ; R15 := ".Card.Icon"
@@ -8885,7 +8885,7 @@
  29 [-]: FORLOOP   R1 13        ; R1 += R3; if R1 <= R2 then begin PC := 13; R4 := R1 end
  30 [-]: GETUPVAL  R5 U0        ; R5 := U0
  31 [-]: GETUPVAL  R6 U1        ; R6 := U1
- 32 [-]: SETTABLE  R5 K12 R6    ; R5[0x7ed0a956] := R6
+ 32 [-]: SETTABLE  R5 K12 R6    ; R5["mSellPrice"] := R6
  33 [-]: GETUPVAL  R5 U2        ; R5 := U2
  34 [-]: GETTABLE  R5 R5 K13    ; R5 := R5["mMovie"]
  35 [-]: SELF      R5 R5 K14    ; R6 := R5; R5 := R5[0xe4162eed]

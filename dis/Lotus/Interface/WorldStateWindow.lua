@@ -2290,7 +2290,7 @@
  37 [-]: GETUPVAL  R7 U3        ; R7 := U3
  38 [-]: SETTABLE  R7 K11 R3    ; R7["mTotalHeight"] := R3
  39 [-]: GETUPVAL  R7 U3        ; R7 := U3
- 40 [-]: SETTABLE  R7 K12 R4    ; R7[0x0000007b] := R4
+ 40 [-]: SETTABLE  R7 K12 R4    ; R7["mHeight"] := R4
  41 [-]: GETUPVAL  R7 U3        ; R7 := U3
  42 [-]: CLOSURE   R8 0         ; R8 := closure(Function #19.1)
  43 [-]: GETUPVAL  R0 U1        ; R0 := U1
@@ -11612,7 +11612,7 @@
  31 [-]: GETGLOBAL R2 K5        ; R2 := _T
  32 [-]: NEWTABLE  R3 0 2       ; R3 := {}
  33 [-]: GETGLOBAL R4 K8        ; R4 := 0x97a871a8
- 34 [-]: SETTABLE  R3 K7 R4     ; R3[0x2d0fad09] := R4
+ 34 [-]: SETTABLE  R3 K7 R4     ; R3["Banner"] := R4
  35 [-]: GETGLOBAL R4 K10       ; R4 := 0x201f8d45
  36 [-]: SETTABLE  R3 K9 R4     ; R3["ProjectName"] := R4
  37 [-]: SETTABLE  R2 K6 R3     ; R2["RelayReconPhaseInfo"] := R3
@@ -18661,7 +18661,7 @@
  77 [-]: NEWTABLE  R3 0 3       ; R3 := {}
  78 [-]: GETUPVAL  R4 U1        ; R4 := U1
  79 [-]: GETTABLE  R4 R4 K30    ; R4 := R4["QUESTS"]
- 80 [-]: SETTABLE  R3 K29 R4    ; R3["Section"] := R4
+ 80 [-]: SETTABLE  R3 K29 R4    ; R3[0xd5181643] := R4
  81 [-]: SETTABLE  R3 K31 K32   ; R3["Title"] := "/Lotus/Language/Menu/Codex_Quests"
  82 [-]: GETGLOBAL R4 K34       ; R4 := 0x0032441c
  83 [-]: GETTABLE  R4 R4 K35    ; R4 := R4["UITexture_Story"]
@@ -18755,7 +18755,7 @@
 171 [-]: NEWTABLE  R11 0 4      ; R11 := {}
 172 [-]: GETUPVAL  R12 U1       ; R12 := U1
 173 [-]: GETTABLE  R12 R12 K56  ; R12 := R12["EVENTS"]
-174 [-]: SETTABLE  R11 K29 R12  ; R11["Section"] := R12
+174 [-]: SETTABLE  R11 K29 R12  ; R11[0xd5181643] := R12
 175 [-]: SETTABLE  R11 K31 K57  ; R11["Title"] := "/Lotus/Language/Menu/WorldStatePanel_Event"
 176 [-]: SETTABLE  R11 K58 R2   ; R11["Images"] := R2
 177 [-]: SETTABLE  R11 K59 K41  ; R11["ImagesIndex"] := 1.000000
@@ -18771,8 +18771,8 @@
 187 [-]: NEWTABLE  R12 0 3      ; R12 := {}
 188 [-]: GETUPVAL  R13 U1       ; R13 := U1
 189 [-]: GETTABLE  R13 R13 K30  ; R13 := R13["QUESTS"]
-190 [-]: SETTABLE  R12 K29 R13  ; R12["Section"] := R13
-191 [-]: SETTABLE  R12 K31 R9   ; R12["Title"] := R9
+190 [-]: SETTABLE  R12 K29 R13  ; R12[0xd5181643] := R13
+191 [-]: SETTABLE  R12 K31 R9   ; R12[0x0032441c] := R9
 192 [-]: GETGLOBAL R13 K60      ; R13 := 0x5de7c318
 193 [-]: GETTABLE  R13 R13 K41  ; R13 := R13[1.000000]
 194 [-]: SETTABLE  R12 K33 R13  ; R12["Image"] := R13
@@ -18862,7 +18862,7 @@
 278 [-]: NEWTABLE  R33 0 3      ; R33 := {}
 279 [-]: GETUPVAL  R34 U1       ; R34 := U1
 280 [-]: GETTABLE  R34 R34 K70  ; R34 := R34["ALERTS"]
-281 [-]: SETTABLE  R33 K29 R34  ; R33["Section"] := R34
+281 [-]: SETTABLE  R33 K29 R34  ; R33[0xd5181643] := R34
 282 [-]: SETTABLE  R33 K31 K71  ; R33["Title"] := "/Lotus/Language/Menu/MainMenu_Alerts"
 283 [-]: GETGLOBAL R34 K60      ; R34 := 0x5de7c318
 284 [-]: GETTABLE  R34 R34 K72  ; R34 := R34[2.000000]
@@ -18886,7 +18886,7 @@
 302 [-]: NEWTABLE  R34 0 3      ; R34 := {}
 303 [-]: GETUPVAL  R35 U1       ; R35 := U1
 304 [-]: GETTABLE  R35 R35 K76  ; R35 := R35["HARD_ALERTS"]
-305 [-]: SETTABLE  R34 K29 R35  ; R34["Section"] := R35
+305 [-]: SETTABLE  R34 K29 R35  ; R34[0xd5181643] := R35
 306 [-]: SETTABLE  R34 K31 K77  ; R34["Title"] := "/Lotus/Language/Labels/SteelPathDailies"
 307 [-]: GETGLOBAL R35 K78      ; R35 := 0x649a746b
 308 [-]: SELF      R35 R35 K79  ; R36 := R35; R35 := R35[0x628bc0ab]
@@ -18920,7 +18920,7 @@
 336 [-]: NEWTABLE  R40 0 3      ; R40 := {}
 337 [-]: GETUPVAL  R41 U1       ; R41 := U1
 338 [-]: GETTABLE  R41 R41 K83  ; R41 := R41["INVASIONS"]
-339 [-]: SETTABLE  R40 K29 R41  ; R40["Section"] := R41
+339 [-]: SETTABLE  R40 K29 R41  ; R40[0xd5181643] := R41
 340 [-]: SETTABLE  R40 K31 K84  ; R40["Title"] := "/Lotus/Language/Menu/WorldStatePanel_Invasions"
 341 [-]: GETGLOBAL R41 K60      ; R41 := 0x5de7c318
 342 [-]: GETTABLE  R41 R41 K85  ; R41 := R41[3.000000]
@@ -18985,7 +18985,7 @@
 401 [-]: NEWTABLE  R51 0 3      ; R51 := {}
 402 [-]: GETUPVAL  R52 U1       ; R52 := U1
 403 [-]: GETTABLE  R52 R52 K92  ; R52 := R52["SYND_MISSIONS"]
-404 [-]: SETTABLE  R51 K29 R52  ; R51["Section"] := R52
+404 [-]: SETTABLE  R51 K29 R52  ; R51[0xd5181643] := R52
 405 [-]: SETTABLE  R51 K31 K93  ; R51["Title"] := "/Lotus/Language/Menu/SyndicateMissionName"
 406 [-]: GETGLOBAL R52 K34      ; R52 := 0x0032441c
 407 [-]: GETTABLE  R52 R52 K94  ; R52 := R52["UITexture_Syndicate"]
@@ -19014,7 +19014,7 @@
 430 [-]: NEWTABLE  R52 0 3      ; R52 := {}
 431 [-]: GETUPVAL  R53 U1       ; R53 := U1
 432 [-]: GETTABLE  R53 R53 K98  ; R53 := R53["VOID_TEARS"]
-433 [-]: SETTABLE  R52 K29 R53  ; R52["Section"] := R53
+433 [-]: SETTABLE  R52 K29 R53  ; R52[0xd5181643] := R53
 434 [-]: SETTABLE  R52 K31 K99  ; R52["Title"] := "/Lotus/Language/Menu/VoidTearMissionCategoryName"
 435 [-]: GETGLOBAL R53 K34      ; R53 := 0x0032441c
 436 [-]: GETTABLE  R53 R53 K100 ; R53 := R53["UITexture_VoidTear"]
@@ -19049,12 +19049,12 @@
 465 [-]: NEWTABLE  R58 0 3      ; R58 := {}
 466 [-]: GETUPVAL  R59 U1       ; R59 := U1
 467 [-]: GETTABLE  R59 R59 K103 ; R59 := R59["SORTIES"]
-468 [-]: SETTABLE  R58 K29 R59  ; R58["Section"] := R59
+468 [-]: SETTABLE  R58 K29 R59  ; R58[0xd5181643] := R59
 469 [-]: GETGLOBAL R59 K104     ; R59 := 0x603636ad
 470 [-]: LOADK     R60 K105     ; R60 := "/Lotus/Language/Menu/SortieMissionName"
 471 [-]: LOADBOOL  R61 0 0      ; R61 := false
 472 [-]: CALL      R59 3 2      ; R59 := R59(R60,R61)
-473 [-]: SETTABLE  R58 K31 R59  ; R58["Title"] := R59
+473 [-]: SETTABLE  R58 K31 R59  ; R58[0x0032441c] := R59
 474 [-]: GETGLOBAL R59 K60      ; R59 := 0x5de7c318
 475 [-]: GETTABLE  R59 R59 K106 ; R59 := R59[4.000000]
 476 [-]: SETTABLE  R58 K33 R59  ; R58["Image"] := R59
@@ -19069,12 +19069,12 @@
 485 [-]: NEWTABLE  R58 0 3      ; R58 := {}
 486 [-]: GETUPVAL  R59 U1       ; R59 := U1
 487 [-]: GETTABLE  R59 R59 K108 ; R59 := R59["LITE_SORTIES"]
-488 [-]: SETTABLE  R58 K29 R59  ; R58["Section"] := R59
+488 [-]: SETTABLE  R58 K29 R59  ; R58[0xd5181643] := R59
 489 [-]: GETGLOBAL R59 K104     ; R59 := 0x603636ad
 490 [-]: LOADK     R60 K109     ; R60 := "/Lotus/Language/Menu/LiteSortieMissionName"
 491 [-]: LOADBOOL  R61 0 0      ; R61 := false
 492 [-]: CALL      R59 3 2      ; R59 := R59(R60,R61)
-493 [-]: SETTABLE  R58 K31 R59  ; R58["Title"] := R59
+493 [-]: SETTABLE  R58 K31 R59  ; R58[0x0032441c] := R59
 494 [-]: GETGLOBAL R59 K60      ; R59 := 0x5de7c318
 495 [-]: GETTABLE  R59 R59 K106 ; R59 := R59[4.000000]
 496 [-]: SETTABLE  R58 K33 R59  ; R58["Image"] := R59
@@ -19086,7 +19086,7 @@
 502 [-]: NEWTABLE  R58 0 3      ; R58 := {}
 503 [-]: GETUPVAL  R59 U1       ; R59 := U1
 504 [-]: GETTABLE  R59 R59 K110 ; R59 := R59["PVPCHALLENGES"]
-505 [-]: SETTABLE  R58 K29 R59  ; R58["Section"] := R59
+505 [-]: SETTABLE  R58 K29 R59  ; R58[0xd5181643] := R59
 506 [-]: SETTABLE  R58 K31 K111 ; R58["Title"] := "/Lotus/Language/Menu/PVPChallenges"
 507 [-]: GETGLOBAL R59 K34      ; R59 := 0x0032441c
 508 [-]: GETTABLE  R59 R59 K112 ; R59 := R59["UITexture_PvpChallenges"]
@@ -19098,7 +19098,7 @@
 514 [-]: NEWTABLE  R58 0 3      ; R58 := {}
 515 [-]: GETUPVAL  R59 U1       ; R59 := U1
 516 [-]: GETTABLE  R59 R59 K113 ; R59 := R59["PVPCHALLENGES_WEEKLY"]
-517 [-]: SETTABLE  R58 K29 R59  ; R58["Section"] := R59
+517 [-]: SETTABLE  R58 K29 R59  ; R58[0xd5181643] := R59
 518 [-]: SETTABLE  R58 K31 K114 ; R58["Title"] := "/Lotus/Language/Menu/PVPChallengesWeekly"
 519 [-]: GETGLOBAL R59 K34      ; R59 := 0x0032441c
 520 [-]: GETTABLE  R59 R59 K115 ; R59 := R59["UITexture_PvpWeeklyChallenges"]
@@ -19966,7 +19966,7 @@
  69 [-]: JMP       72           ; PC := 72
  70 [-]: LOADBOOL  R10 0 1      ; R10 := false; PC := 71
  71 [-]: LOADBOOL  R10 1 0      ; R10 := true
- 72 [-]: SETTABLE  R3 K23 R10   ; R3[0x25a6e75e] := R10
+ 72 [-]: SETTABLE  R3 K23 R10   ; R3["CanStart"] := R10
  73 [-]: SELF      R10 R0 K24   ; R11 := R0; R10 := R0[0xf8eabce5]
  74 [-]: CALL      R10 2 2      ; R10 := R10(R11)
  75 [-]: SELF      R10 R10 K25  ; R11 := R10; R10 := R10[0x56c01834]
@@ -19975,7 +19975,7 @@
  78 [-]: JMP       82           ; PC := 82
  79 [-]: SELF      R10 R0 K24   ; R11 := R0; R10 := R0[0xf8eabce5]
  80 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 81 [-]: SETTABLE  R3 K26 R10   ; R3[0x7b998233] := R10
+ 81 [-]: SETTABLE  R3 K26 R10   ; R3["CommitmentTag"] := R10
  82 [-]: TEST      R2 0         ; if not R2 then PC := 229
  83 [-]: JMP       229          ; PC := 229
  84 [-]: LEN       R10 R6       ; R10 := # R6
@@ -20006,10 +20006,10 @@
 109 [-]: CALL      R12 2 2      ; R12 := R12(R13)
 110 [-]: SELF      R12 R12 K34  ; R13 := R12; R12 := R12[0x8f89d633]
 111 [-]: CALL      R12 2 2      ; R12 := R12(R13)
-112 [-]: SETTABLE  R3 K32 R12   ; R3[0x39f637e6] := R12
+112 [-]: SETTABLE  R3 K32 R12   ; R3["MissionInfo"] := R12
 113 [-]: SELF      R12 R11 K36  ; R13 := R11; R12 := R11[0x92608d86]
 114 [-]: CALL      R12 2 2      ; R12 := R12(R13)
-115 [-]: SETTABLE  R3 K35 R12   ; R3[0x52fb05b3] := R12
+115 [-]: SETTABLE  R3 K35 R12   ; R3["Node"] := R12
 116 [-]: GETGLOBAL R12 K14      ; R12 := 0x64fb1586
 117 [-]: SELF      R13 R11 K38  ; R14 := R11; R13 := R11[0xed4e0128]
 118 [-]: CALL      R13 2 0      ; R13,... := R13(R14)
@@ -20017,7 +20017,7 @@
 120 [-]: GETUPVAL  R13 U1       ; R13 := U1
 121 [-]: GETTABLE  R13 R13 K39  ; R13 := R13["KEY_TAG"]
 122 [-]: CONCAT    R12 R12 R13  ; R12 := R12 .. R13
-123 [-]: SETTABLE  R3 K37 R12   ; R3[0xc8802016] := R12
+123 [-]: SETTABLE  R3 K37 R12   ; R3["KeyName"] := R12
 124 [-]: JMP       229          ; PC := 229
 125 [-]: GETTABLE  R12 R6 R4    ; R12 := R6[R4]
 126 [-]: GETTABLE  R12 R12 K40  ; R12 := R12["mMarkedNodes"]
@@ -20029,7 +20029,7 @@
 132 [-]: EQ        0 R13 R14    ; if R13 ~= R14 then PC := 137
 133 [-]: JMP       137          ; PC := 137
 134 [-]: GETUPVAL  R13 U4       ; R13 := U4
-135 [-]: SETTABLE  R3 K35 R13   ; R3[0x52fb05b3] := R13
+135 [-]: SETTABLE  R3 K35 R13   ; R3["Node"] := R13
 136 [-]: JMP       229          ; PC := 229
 137 [-]: LOADNIL   R13 R13      ; R13 := nil
 138 [-]: SELF      R14 R0 K42   ; R15 := R0; R14 := R0[0xf2deaf69]
@@ -20122,7 +20122,7 @@
 225 [-]: CALL      R26 2 2      ; R26 := R26(R27)
 226 [-]: TEST      R26 0        ; if not R26 then PC := 229
 227 [-]: JMP       229          ; PC := 229
-228 [-]: SETTABLE  R3 K35 R13   ; R3[0x52fb05b3] := R13
+228 [-]: SETTABLE  R3 K35 R13   ; R3["Node"] := R13
 229 [-]: SETTABLE  R3 K61 K62   ; R3["IsLoaded"] := true
 230 [-]: GETUPVAL  R26 U8       ; R26 := U8
 231 [-]: EQ        1 R26 K0     ; if R26 == nil then PC := 241

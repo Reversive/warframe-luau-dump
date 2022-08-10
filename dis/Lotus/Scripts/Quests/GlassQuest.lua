@@ -1112,11 +1112,11 @@
  39 [-]: GETGLOBAL R9 K15       ; R9 := 0x7ed0a956
  40 [-]: MOVE      R10 R2       ; R10 := R2
  41 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 42 [-]: SETTABLE  R8 K14 R9    ; R8[0x34291f5c] := R9
+ 42 [-]: SETTABLE  R8 K14 R9    ; R8["keyChainName"] := R9
  43 [-]: GETGLOBAL R9 K15       ; R9 := 0x7ed0a956
  44 [-]: MOVE      R10 R7       ; R10 := R7
  45 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 46 [-]: SETTABLE  R8 K16 R9    ; R8[0xe7f2b02f] := R9
+ 46 [-]: SETTABLE  R8 K16 R9    ; R8["levelKeyName"] := R9
  47 [-]: GETGLOBAL R9 K17       ; R9 := _T
  48 [-]: SETTABLE  R9 K18 K19   ; R9["StartingSoloMission"] := true
  49 [-]: GETUPVAL  R9 U1        ; R9 := U1

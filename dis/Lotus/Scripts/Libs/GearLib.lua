@@ -21,11 +21,11 @@
  12 [-]: CLOSURE   R4 2         ; R4 := closure(Function #3)
  13 [-]: MOVE      R0 R0        ; R0 := R0
  14 [-]: NEWTABLE  R5 0 5       ; R5 := {}
- 15 [-]: SETTABLE  R5 K9 R2     ; R5[0x34291f5c] := R2
- 16 [-]: SETTABLE  R5 K10 R3    ; R5[0xde321e6f] := R3
- 17 [-]: SETTABLE  R5 K11 R4    ; R5[0x388577d5] := R4
- 18 [-]: SETTABLE  R5 K12 R0    ; R5[0x73901acf] := R0
- 19 [-]: SETTABLE  R5 K13 R1    ; R5[0x881b6b90] := R1
+ 15 [-]: SETTABLE  R5 K9 R2     ; R5["TryEquipGear"] := R2
+ 16 [-]: SETTABLE  R5 K10 R3    ; R5["UnequipGear"] := R3
+ 17 [-]: SETTABLE  R5 K11 R4    ; R5["GetEquipStatus"] := R4
+ 18 [-]: SETTABLE  R5 K12 R0    ; R5["EquipStatus"] := R0
+ 19 [-]: SETTABLE  R5 K13 R1    ; R5["EquipResult"] := R1
  20 [-]: RETURN    R5 2         ; return R5
  21 [-]: RETURN    R0 1         ; return 
 

@@ -581,7 +581,7 @@
   7 [-]: JMP       14           ; PC := 14
   8 [-]: NEWTABLE  R3 0 2       ; R3 := {}
   9 [-]: GETUPVAL  R4 U1        ; R4 := U1
- 10 [-]: SETTABLE  R3 K2 R4     ; R3["TRAIL_DURATION"] := R4
+ 10 [-]: SETTABLE  R3 K2 R4     ; R3[0x7b998233] := R4
  11 [-]: GETUPVAL  R4 U2        ; R4 := U2
  12 [-]: SETTABLE  R3 K3 R4     ; R3["STONE_DURATION"] := R4
  13 [-]: MOVE      R2 R3        ; R2 := R3
@@ -1893,7 +1893,7 @@
  83 [-]: GETGLOBAL R6 K18       ; R6 := 0x67652851
  84 [-]: CALL      R6 1 2       ; R6 := R6()
  85 [-]: SUB       R5 R5 R6     ; R5 := R5 - R6
- 86 [-]: SETTABLE  R4 K12 R5    ; R4[0x7b998233] := R5
+ 86 [-]: SETTABLE  R4 K12 R5    ; R4["pWindow"] := R5
  87 [-]: GETGLOBAL R4 K1        ; R4 := _T
  88 [-]: GETTABLE  R4 R4 K2     ; R4 := R4["brawlerPunch"]
  89 [-]: GETTABLE  R4 R4 R1     ; R4 := R4[R1]

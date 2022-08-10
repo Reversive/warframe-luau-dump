@@ -239,9 +239,9 @@
  18 [-]: SELF      R10 R8 K4    ; R11 := R8; R10 := R8[0xc90179bc]
  19 [-]: CALL      R10 2 2      ; R10 := R10(R11)
  20 [-]: NEWTABLE  R11 0 3      ; R11 := {}
- 21 [-]: SETTABLE  R11 K5 R8    ; R11[0x93989c33] := R8
+ 21 [-]: SETTABLE  R11 K5 R8    ; R11["mixer"] := R8
  22 [-]: SETTABLE  R11 K6 R10   ; R11["startGainBias"] := R10
- 23 [-]: SETTABLE  R11 K7 R9    ; R11[0x659d451f] := R9
+ 23 [-]: SETTABLE  R11 K7 R9    ; R11["endGainBias"] := R9
  24 [-]: SETTABLE  R1 R6 R11    ; R1[R6] := R11
  25 [-]: FORLOOP   R3 8         ; R3 += R5; if R3 <= R4 then begin PC := 8; R6 := R3 end
  26 [-]: RETURN    R1 2         ; return R1

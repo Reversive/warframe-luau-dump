@@ -228,7 +228,7 @@
  27 [-]: GETUPVAL  R3 U4        ; R3 := U4
  28 [-]: NEWTABLE  R4 0 1       ; R4 := {}
  29 [-]: GETUPVAL  R5 U1        ; R5 := U1
- 30 [-]: SETTABLE  R4 K9 R5     ; R4["VALUE"] := R5
+ 30 [-]: SETTABLE  R4 K9 R5     ; R4[0xa2880940] := R5
  31 [-]: CALL      R2 3 1       ; R2(R3,R4)
  32 [-]: RETURN    R0 1         ; return 
 

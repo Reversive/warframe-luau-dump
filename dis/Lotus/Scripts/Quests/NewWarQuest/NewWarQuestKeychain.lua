@@ -1298,7 +1298,7 @@
  57 [-]: GETGLOBAL R2 K23       ; R2 := 0x7ed0a956
  58 [-]: LOADK     R3 K24       ; R3 := "/Lotus/Levels/Proc/TheNewWar/PartTwo/TNWDrifterCampMain"
  59 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 60 [-]: SETTABLE  R1 K22 R2    ; R1[0xd1586535] := R2
+ 60 [-]: SETTABLE  R1 K22 R2    ; R1["level"] := R2
  61 [-]: GETGLOBAL R2 K26       ; R2 := 0xa94df70b
  62 [-]: SELF      R2 R2 K27    ; R3 := R2; R2 := R2[0x30388273]
  63 [-]: CALL      R2 2 2       ; R2 := R2(R3)

@@ -720,7 +720,7 @@
  71 [-]: LOADK     R10 K28      ; R10 := "/Lotus/Language/DesignCouncilTips/DC_Councillor"
  72 [-]: LOADBOOL  R11 1 0      ; R11 := true
  73 [-]: NEWTABLE  R12 0 1      ; R12 := {}
- 74 [-]: SETTABLE  R12 K29 R6   ; R12[0x42700bd0] := R6
+ 74 [-]: SETTABLE  R12 K29 R6   ; R12["NAME"] := R6
  75 [-]: CALL      R8 5 2       ; R8 := R8(R9,R10,R11,R12)
  76 [-]: CONCAT    R6 R7 R8     ; R6 := R7 .. R8
  77 [-]: LOADBOOL  R7 1 0       ; R7 := true
@@ -2446,7 +2446,7 @@
  89 [-]: JMP       93           ; PC := 93
  90 [-]: GETUPVAL  R9 U2        ; R9 := U2
  91 [-]: GETTABLE  R9 R9 R0     ; R9 := R9[R0]
- 92 [-]: SETTABLE  R9 K14 R1    ; R9[0x04981ab3] := R1
+ 92 [-]: SETTABLE  R9 K14 R1    ; R9["Visible"] := R1
  93 [-]: RETURN    R0 1         ; return 
 
 

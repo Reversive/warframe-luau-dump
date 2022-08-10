@@ -2635,31 +2635,31 @@
  82 [-]: MOVE      R6 R10       ; R6 := R10
  83 [-]: MOVE      R5 R7        ; R5 := R7
  84 [-]: GETUPVAL  R11 U6       ; R11 := U6
- 85 [-]: SETTABLE  R11 K12 R5   ; R11[0xd08fa3ab] := R5
+ 85 [-]: SETTABLE  R11 K12 R5   ; R11["Desc"] := R5
  86 [-]: GETUPVAL  R11 U6       ; R11 := U6
  87 [-]: GETUPVAL  R12 U7       ; R12 := U7
  88 [-]: GETTABLE  R12 R12 K14  ; R82 := R12[0x9f57dd7d]
  89 [-]: MOVE      R13 R5       ; R13 := R5
  90 [-]: CALL      R12 2 2      ; R12 := R12(R13)
- 91 [-]: SETTABLE  R11 K13 R12  ; R11[0x056dcf06] := R12
+ 91 [-]: SETTABLE  R11 K13 R12  ; R11[0xcbec7122] := R12
  92 [-]: GETUPVAL  R11 U6       ; R11 := U6
  93 [-]: GETUPVAL  R12 U7       ; R12 := U7
  94 [-]: GETTABLE  R12 R12 K14  ; R82 := R12[0x9f57dd7d]
  95 [-]: MOVE      R13 R2       ; R13 := R2
  96 [-]: CALL      R12 2 2      ; R12 := R12(R13)
- 97 [-]: SETTABLE  R11 K15 R12  ; R11[0x23d5322f] := R12
+ 97 [-]: SETTABLE  R11 K15 R12  ; R11[0xd62e6460] := R12
  98 [-]: GETUPVAL  R11 U6       ; R11 := U6
- 99 [-]: SETTABLE  R11 K16 R0   ; R11[0x791b7e87] := R0
+ 99 [-]: SETTABLE  R11 K16 R0   ; R11["Icon"] := R0
 100 [-]: GETUPVAL  R11 U6       ; R11 := U6
-101 [-]: SETTABLE  R11 K17 R1   ; R11["Flare"] := R1
+101 [-]: SETTABLE  R11 K17 R1   ; R11[0x89326c93] := R1
 102 [-]: GETUPVAL  R11 U6       ; R11 := U6
-103 [-]: SETTABLE  R11 K18 R2   ; R11["ProgressFill"] := R2
+103 [-]: SETTABLE  R11 K18 R2   ; R11[0x78298275] := R2
 104 [-]: GETUPVAL  R11 U6       ; R11 := U6
-105 [-]: SETTABLE  R11 K19 R3   ; R11["ProgressBg"] := R3
+105 [-]: SETTABLE  R11 K19 R3   ; R11[0xde321e6f] := R3
 106 [-]: GETUPVAL  R11 U6       ; R11 := U6
-107 [-]: SETTABLE  R11 K20 R4   ; R11["Title"] := R4
+107 [-]: SETTABLE  R11 K20 R4   ; R11[0x34291f5c] := R4
 108 [-]: GETUPVAL  R11 U6       ; R11 := U6
-109 [-]: SETTABLE  R11 K21 R6   ; R11[0x00000000] := R6
+109 [-]: SETTABLE  R11 K21 R6   ; R11[0xe85a2361] := R6
 110 [-]: RETURN    R0 1         ; return 
 
 

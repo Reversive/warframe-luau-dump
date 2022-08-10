@@ -191,7 +191,7 @@
 182 [-]: SETTABLE  R21 K41 K67  ; R21["max"] := 6.000000
 183 [-]: CLOSURE   R22 26       ; R22 := closure(Function #27)
 184 [-]: SETTABLE  R21 K43 R22  ; R21["GetUpgrade"] := R22
-185 [-]: SETTABLE  R20 K68 R21  ; R20[0xac1b386a] := R21
+185 [-]: SETTABLE  R20 K68 R21  ; R20["meleeXp"] := R21
 186 [-]: NEWTABLE  R21 0 6      ; R21 := {}
 187 [-]: GETGLOBAL R22 K15      ; R22 := 0x0469f296
 188 [-]: LOADK     R23 K75      ; R23 := "MeleeCombo"
@@ -1297,7 +1297,7 @@
  19 [-]: CALL      R3 1 2       ; R3 := R3()
  20 [-]: SELF      R4 R2 K6     ; R5 := R2; R4 := R2[0x68d708a7]
  21 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 22 [-]: SETTABLE  R3 K5 R4     ; R3["mCustomization"] := R4
+ 22 [-]: SETTABLE  R3 K5 R4     ; R3[0x76ea806b] := R4
  23 [-]: TEST      R1 0         ; if not R1 then PC := 37
  24 [-]: JMP       37           ; PC := 37
  25 [-]: GETTABLE  R4 R3 K5     ; R4 := R3["mCustomization"]
@@ -2822,7 +2822,7 @@
  16 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
  17 [-]: MUL       R6 R6 K8     ; R6 := R6 * 100.000000
  18 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 19 [-]: SETTABLE  R4 K4 R5     ; R4["PERCENT"] := R5
+ 19 [-]: SETTABLE  R4 K4 R5     ; R4[0xef893aec] := R5
  20 [-]: MOVE      R3 R4        ; R3 := R4
  21 [-]: JMP       232          ; PC := 232
  22 [-]: GETUPVAL  R4 U0        ; R4 := U0
@@ -2900,7 +2900,7 @@
  94 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
  95 [-]: MUL       R6 R6 K8     ; R6 := R6 * 100.000000
  96 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 97 [-]: SETTABLE  R4 K4 R5     ; R4["PERCENT"] := R5
+ 97 [-]: SETTABLE  R4 K4 R5     ; R4[0xef893aec] := R5
  98 [-]: GETUPVAL  R5 U1        ; R5 := U1
  99 [-]: GETTABLE  R5 R5 K18    ; R5 := R5["instantRevive"]
 100 [-]: SELF      R5 R5 K20    ; R6 := R5; R5 := R5[0x60a64b0e]
@@ -2926,7 +2926,7 @@
 120 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
 121 [-]: MUL       R6 R6 K8     ; R6 := R6 * 100.000000
 122 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-123 [-]: SETTABLE  R4 K4 R5     ; R4["PERCENT"] := R5
+123 [-]: SETTABLE  R4 K4 R5     ; R4[0xef893aec] := R5
 124 [-]: GETUPVAL  R5 U2        ; R5 := U2
 125 [-]: GETTABLE  R5 R5 K22    ; R5 := R5["energyOverTime"]
 126 [-]: SELF      R5 R5 K13    ; R6 := R5; R5 := R5[0x5c4938ae]
@@ -2952,7 +2952,7 @@
 146 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
 147 [-]: MUL       R6 R6 K8     ; R6 := R6 * 100.000000
 148 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-149 [-]: SETTABLE  R4 K4 R5     ; R4["PERCENT"] := R5
+149 [-]: SETTABLE  R4 K4 R5     ; R4[0xef893aec] := R5
 150 [-]: MOVE      R3 R4        ; R3 := R4
 151 [-]: JMP       232          ; PC := 232
 152 [-]: GETUPVAL  R4 U3        ; R4 := U3
@@ -2985,7 +2985,7 @@
 179 [-]: MUL       R6 R6 K8     ; R6 := R6 * 100.000000
 180 [-]: CALL      R5 2 2       ; R5 := R5(R6)
 181 [-]: SUB       R5 K8 R5     ; R5 := 100.000000 - R5
-182 [-]: SETTABLE  R4 K4 R5     ; R4["PERCENT"] := R5
+182 [-]: SETTABLE  R4 K4 R5     ; R4[0xef893aec] := R5
 183 [-]: MOVE      R3 R4        ; R3 := R4
 184 [-]: JMP       232          ; PC := 232
 185 [-]: EQ        0 R0 K29     ; if R0 ~= 7.000000 then PC := 232
@@ -3005,7 +3005,7 @@
 199 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
 200 [-]: MUL       R6 R6 K8     ; R6 := R6 * 100.000000
 201 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-202 [-]: SETTABLE  R4 K4 R5     ; R4["PERCENT"] := R5
+202 [-]: SETTABLE  R4 K4 R5     ; R4[0xef893aec] := R5
 203 [-]: MOVE      R3 R4        ; R3 := R4
 204 [-]: JMP       232          ; PC := 232
 205 [-]: GETUPVAL  R4 U4        ; R4 := U4

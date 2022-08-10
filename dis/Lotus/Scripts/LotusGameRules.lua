@@ -2843,7 +2843,7 @@
  61 [-]: JMP       65           ; PC := 65
  62 [-]: GETGLOBAL R4 K13       ; R4 := _T
  63 [-]: NEWTABLE  R5 0 0       ; R5 := {}
- 64 [-]: SETTABLE  R4 K14 R5    ; R4[0xf2deaf69] := R5
+ 64 [-]: SETTABLE  R4 K14 R5    ; R4["noModsImpactMessage"] := R5
  65 [-]: SELF      R4 R1 K15    ; R5 := R1; R4 := R1[0x8b72b36e]
  66 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  67 [-]: GETGLOBAL R5 K7        ; R5 := 0x7b998233
@@ -2868,7 +2868,7 @@
  86 [-]: JMP       90           ; PC := 90
  87 [-]: GETGLOBAL R5 K13       ; R5 := _T
  88 [-]: NEWTABLE  R6 0 0       ; R6 := {}
- 89 [-]: SETTABLE  R5 K18 R6    ; R5[0x6923a4fa] := R6
+ 89 [-]: SETTABLE  R5 K18 R6    ; R5["EliteAlertPlayerSpawned"] := R6
  90 [-]: GETGLOBAL R5 K19       ; R5 := 0x33bdd652
  91 [-]: GETTABLE  R5 R5 K20    ; R82 := R5[0x23d5322f]
  92 [-]: GETGLOBAL R6 K13       ; R6 := _T
@@ -4405,13 +4405,13 @@
  25 [-]: GETGLOBAL R3 K8        ; R3 := 0x34291f5c
  26 [-]: GETTABLE  R3 R3 K9     ; R82 := R3[0x5cb2adf8]
  27 [-]: CALL      R3 1 2       ; R3 := R3()
- 28 [-]: SETTABLE  R3 K10 R2    ; R3[0xbb610e5b] := R2
+ 28 [-]: SETTABLE  R3 K10 R2    ; R3["baseAmount"] := R2
  29 [-]: SETTABLE  R3 K11 K12   ; R3["radius"] := 20.000000
  30 [-]: SETTABLE  R3 K13 K14   ; R3["baseProcChance"] := 1.000000
  31 [-]: SETTABLE  R3 K15 K16   ; R3["hostAuthoritative"] := true
  32 [-]: GETGLOBAL R4 K18       ; R4 := _T
  33 [-]: GETTABLE  R4 R4 K19    ; R4 := R4["EliteAlertDroneKiller"]
- 34 [-]: SETTABLE  R3 K17 R4    ; R3[0x243148d6] := R4
+ 34 [-]: SETTABLE  R3 K17 R4    ; R3[0xed5227aa] := R4
  35 [-]: SETTABLE  R3 K20 K21   ; R3["checkForCover"] := false
  36 [-]: SETTABLE  R3 K22 K16   ; R3["hitAirborneTargets"] := true
  37 [-]: SELF      R4 R3 K23    ; R5 := R3; R4 := R3[0x86cd00cb]
@@ -4670,7 +4670,7 @@
 220 [-]: GETGLOBAL R15 K0       ; R15 := _T
 221 [-]: GETTABLE  R15 R15 K44  ; R15 := R15["EliteAlertDroneList"]
 222 [-]: NEWTABLE  R16 0 2      ; R16 := {}
-223 [-]: SETTABLE  R16 K47 R1   ; R16[0x18d05d30] := R1
+223 [-]: SETTABLE  R16 K47 R1   ; R16["droneAgent"] := R1
 224 [-]: GETGLOBAL R17 K49      ; R17 := 0x55156ff7
 225 [-]: CALL      R17 1 2      ; R17 := R17()
 226 [-]: SETTABLE  R16 K48 R17  ; R16["creationTime"] := R17
@@ -4844,7 +4844,7 @@
   2 [-]: GETGLOBAL R1 K2        ; R1 := 0x89326c93
   3 [-]: SELF      R1 R1 K3     ; R2 := R1; R1 := R1[0x18d05d30]
   4 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  5 [-]: SETTABLE  R0 K1 R1     ; R0[0xe8cfc5d3] := R1
+  5 [-]: SETTABLE  R0 K1 R1     ; R0[0x89326c93] := R1
   6 [-]: GETGLOBAL R0 K0        ; R0 := _T
   7 [-]: GETGLOBAL R1 K5        ; R1 := 0x55730e1a
   8 [-]: GETGLOBAL R2 K0        ; R2 := _T
@@ -4856,7 +4856,7 @@
  14 [-]: GETTABLE  R3 R3 K7     ; R3 := R3["spawnDelay"]
  15 [-]: GETTABLE  R3 R3 K9     ; R3 := R3[2.000000]
  16 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
- 17 [-]: SETTABLE  R0 K4 R1     ; R0[0x1a320555] := R1
+ 17 [-]: SETTABLE  R0 K4 R1     ; R0[0xef893aec] := R1
  18 [-]: GETGLOBAL R0 K0        ; R0 := _T
  19 [-]: SETTABLE  R0 K10 K11   ; R0["RelayEventTargetEnemy"] := nil
  20 [-]: GETGLOBAL R0 K0        ; R0 := _T

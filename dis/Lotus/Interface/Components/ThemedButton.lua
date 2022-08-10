@@ -183,7 +183,7 @@
 155 [-]: MOVE      R0 R10       ; R0 := R10
 156 [-]: SETTABLE  R12 K111 R13 ; R12["SetActive"] := R13
 157 [-]: CLOSURE   R13 28       ; R13 := closure(Function #1.29)
-158 [-]: SETTABLE  R12 K112 R13 ; R12["IsActive"] := R13
+158 [-]: SETTABLE  R12 K112 R13 ; R12[0x00000083] := R13
 159 [-]: CLOSURE   R13 29       ; R13 := closure(Function #1.30)
 160 [-]: SETTABLE  R12 K113 R13 ; R12["UpdateEnabledState"] := R13
 161 [-]: CLOSURE   R13 30       ; R13 := closure(Function #1.31)
@@ -202,7 +202,7 @@
 174 [-]: CLOSURE   R13 35       ; R13 := closure(Function #1.36)
 175 [-]: SETTABLE  R12 K119 R13 ; R12["SetVisibleRangeMaterials"] := R13
 176 [-]: CLOSURE   R13 36       ; R13 := closure(Function #1.37)
-177 [-]: SETTABLE  R12 K120 R13 ; R12["ValueChanged"] := R13
+177 [-]: SETTABLE  R12 K120 R13 ; R12[0x00000061] := R13
 178 [-]: CLOSURE   R13 37       ; R13 := closure(Function #1.38)
 179 [-]: SETTABLE  R12 K121 R13 ; R12["SetPressedCallback"] := R13
 180 [-]: CLOSURE   R13 38       ; R13 := closure(Function #1.39)
@@ -483,7 +483,7 @@
  14 [-]: GETGLOBAL R1 K5        ; R1 := _T
  15 [-]: GETUPVAL  R2 U0        ; R2 := U0
  16 [-]: GETTABLE  R2 R2 K3     ; R2 := R2["mToolTip"]
- 17 [-]: SETTABLE  R1 K6 R2     ; R1[0xd2c30198] := R2
+ 17 [-]: SETTABLE  R1 K6 R2     ; R1["gToolTip"] := R2
  18 [-]: GETUPVAL  R1 U0        ; R1 := U0
  19 [-]: SELF      R1 R1 K7     ; R2 := R1; R1 := R1[0xdfc0d50b]
  20 [-]: LOADBOOL  R3 1 0       ; R3 := true
@@ -2385,7 +2385,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  12
 
-  1 [-]: SETTABLE  R0 K0 R1     ; R0["mIconOverride"] := R1
+  1 [-]: SETTABLE  R0 K0 R1     ; R0[0x91a24e4b] := R1
   2 [-]: EQ        0 R1 K1      ; if R1 ~= nil then PC := 8
   3 [-]: JMP       8            ; PC := 8
   4 [-]: SETTABLE  R0 K2 K1     ; R0["mShowIcon"] := nil
@@ -2398,7 +2398,7 @@
  11 [-]: TESTSET   R4 R2 1      ; if R2 then PC := 14 else R4 := R2
  12 [-]: JMP       14           ; PC := 14
  13 [-]: GETTABLE  R4 R0 K6     ; R4 := R0["mIconDefaultWidth"]
- 14 [-]: SETTABLE  R0 K5 R4     ; R0["mIconWidth"] := R4
+ 14 [-]: SETTABLE  R0 K5 R4     ; R0[0x67bc869f] := R4
  15 [-]: TESTSET   R4 R3 1      ; if R3 then PC := 20 else R4 := R3
  16 [-]: JMP       20           ; PC := 20
  17 [-]: TESTSET   R4 R2 1      ; if R2 then PC := 20 else R4 := R2

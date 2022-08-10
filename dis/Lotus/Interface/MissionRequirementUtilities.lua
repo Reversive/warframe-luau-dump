@@ -543,7 +543,7 @@
 132 [-]: CALL      R34 0 2      ; R34 := R34(R35,...)
 133 [-]: LOADBOOL  R35 0 0      ; R35 := false
 134 [-]: CALL      R33 3 2      ; R33 := R33(R34,R35)
-135 [-]: SETTABLE  R32 K20 R33  ; R32["ITEM"] := R33
+135 [-]: SETTABLE  R32 K20 R33  ; R32[0xcfc01047] := R33
 136 [-]: RETURN    R32 2        ; return R32
 137 [-]: JMP       151          ; PC := 151
 138 [-]: NEWTABLE  R32 0 3      ; R32 := {}
@@ -557,7 +557,7 @@
 146 [-]: CALL      R34 0 2      ; R34 := R34(R35,...)
 147 [-]: LOADBOOL  R35 0 0      ; R35 := false
 148 [-]: CALL      R33 3 2      ; R33 := R33(R34,R35)
-149 [-]: SETTABLE  R32 K20 R33  ; R32["ITEM"] := R33
+149 [-]: SETTABLE  R32 K20 R33  ; R32[0xcfc01047] := R33
 150 [-]: RETURN    R32 2        ; return R32
 151 [-]: TFORLOOP  R10 2        ; R13,R14 :=  R10(R11,R12); if R13 ~= nil then begin PC = 32; R12 := R13 end
 152 [-]: JMP       32           ; PC := 32

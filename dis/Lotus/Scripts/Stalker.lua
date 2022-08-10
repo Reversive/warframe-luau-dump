@@ -1798,7 +1798,7 @@
 151 [-]: GETTABLE  R9 R9 K13    ; R9 := R9["StalkerTargetPlayer"]
 152 [-]: SELF      R9 R9 K23    ; R10 := R9; R9 := R9[0x5ca33548]
 153 [-]: CALL      R9 2 2       ; R9 := R9(R10)
-154 [-]: SETTABLE  R8 K22 R9    ; R8[0xcbd666e1] := R9
+154 [-]: SETTABLE  R8 K22 R9    ; R8["PLAYER_NAME"] := R9
 155 [-]: GETGLOBAL R9 K24       ; R9 := 0x603636ad
 156 [-]: GETUPVAL  R10 U7       ; R10 := U7
 157 [-]: MOVE      R11 R8       ; R11 := R8
@@ -4052,11 +4052,11 @@
  60 [-]: LEN       R15 R0       ; R15 := # R0
  61 [-]: ADD       R15 R15 K21  ; R15 := R15 + 1.000000
  62 [-]: NEWTABLE  R16 0 6      ; R16 := {}
- 63 [-]: SETTABLE  R16 K23 R6   ; R16[0x89326c93] := R6
- 64 [-]: SETTABLE  R16 K24 R13  ; R16[0x7d108ddb] := R13
+ 63 [-]: SETTABLE  R16 K23 R6   ; R16["Player"] := R6
+ 64 [-]: SETTABLE  R16 K24 R13  ; R16["Agent"] := R13
  65 [-]: SETTABLE  R16 K25 R10  ; R16["BaseChanceOverride"] := R10
  66 [-]: SETTABLE  R16 K26 K27  ; R16["ForceTrySpawn"] := false
- 67 [-]: SETTABLE  R16 K28 R14  ; R16[0x64fb1586] := R14
+ 67 [-]: SETTABLE  R16 K28 R14  ; R16["Transmission"] := R14
  68 [-]: SETTABLE  R16 K29 K30  ; R16["SyndicateLevel"] := 5.000000
  69 [-]: SETTABLE  R0 R15 R16   ; R0[R15] := R16
  70 [-]: GETUPVAL  R15 U2       ; R15 := U2
@@ -4139,7 +4139,7 @@
  59 [-]: LEN       R14 R2       ; R14 := # R2
  60 [-]: ADD       R14 R14 K17  ; R14 := R14 + 1.000000
  61 [-]: NEWTABLE  R15 0 2      ; R15 := {}
- 62 [-]: SETTABLE  R15 K18 R8   ; R15["Player"] := R8
+ 62 [-]: SETTABLE  R15 K18 R8   ; R15[0xc163f229] := R8
  63 [-]: SETTABLE  R15 K19 R13  ; R15["Agent"] := R13
  64 [-]: SETTABLE  R2 R14 R15   ; R2[R14] := R15
  65 [-]: GETUPVAL  R14 U0       ; R14 := U0
@@ -4157,7 +4157,7 @@
  77 [-]: LEN       R14 R2       ; R14 := # R2
  78 [-]: ADD       R14 R14 K17  ; R14 := R14 + 1.000000
  79 [-]: NEWTABLE  R15 0 2      ; R15 := {}
- 80 [-]: SETTABLE  R15 K18 R8   ; R15["Player"] := R8
+ 80 [-]: SETTABLE  R15 K18 R8   ; R15[0xc163f229] := R8
  81 [-]: GETGLOBAL R16 K23      ; R16 := 0x5396b419
  82 [-]: SETTABLE  R15 K19 R16  ; R15["Agent"] := R16
  83 [-]: SETTABLE  R2 R14 R15   ; R2[R14] := R15
@@ -4180,7 +4180,7 @@
 100 [-]: LEN       R14 R2       ; R14 := # R2
 101 [-]: ADD       R14 R14 K17  ; R14 := R14 + 1.000000
 102 [-]: NEWTABLE  R15 0 2      ; R15 := {}
-103 [-]: SETTABLE  R15 K18 R8   ; R15["Player"] := R8
+103 [-]: SETTABLE  R15 K18 R8   ; R15[0xc163f229] := R8
 104 [-]: GETGLOBAL R16 K26      ; R16 := 0xefbca6f1
 105 [-]: SETTABLE  R15 K19 R16  ; R15["Agent"] := R16
 106 [-]: SETTABLE  R2 R14 R15   ; R2[R14] := R15
@@ -4193,7 +4193,7 @@
 113 [-]: LEN       R14 R2       ; R14 := # R2
 114 [-]: ADD       R14 R14 K17  ; R14 := R14 + 1.000000
 115 [-]: NEWTABLE  R15 0 4      ; R15 := {}
-116 [-]: SETTABLE  R15 K18 R8   ; R15["Player"] := R8
+116 [-]: SETTABLE  R15 K18 R8   ; R15[0xc163f229] := R8
 117 [-]: GETGLOBAL R16 K28      ; R16 := 0xf5e3d938
 118 [-]: SETTABLE  R15 K19 R16  ; R15["Agent"] := R16
 119 [-]: GETGLOBAL R16 K30      ; R16 := 0xb93e5efd
@@ -4782,7 +4782,7 @@
  15 [-]: MUL       R4 K8 R4     ; R4 := 10.000000 * R4
  16 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
  17 [-]: MUL       R1 R1 R2     ; R1 := R1 * R2
- 18 [-]: SETTABLE  R0 K0 R1     ; R0["scale"] := R1
+ 18 [-]: SETTABLE  R0 K0 R1     ; R0[0xadda6a00] := R1
  19 [-]: GETTABLE  R1 R0 K3     ; R1 := R0["deco"]
  20 [-]: SELF      R1 R1 K9     ; R2 := R1; R1 := R1[0x2d9ba74f]
  21 [-]: GETTABLE  R3 R0 K0     ; R3 := R0["scale"]
@@ -6230,21 +6230,21 @@
 154 [-]: GETGLOBAL R8 K14       ; R8 := 0x6c97a788
 155 [-]: GETTABLE  R8 R8 K43    ; R82 := R8[0x867f9409]
 156 [-]: CALL      R8 1 2       ; R8 := R8()
-157 [-]: SETTABLE  R7 K42 R8    ; R7["AcolyteForceSpawnInfo"] := R8
+157 [-]: SETTABLE  R7 K42 R8    ; R7[0x23d5322f] := R8
 158 [-]: GETGLOBAL R7 K5        ; R7 := _T
 159 [-]: GETTABLE  R7 R7 K42    ; R7 := R7["AcolyteForceSpawnInfo"]
-160 [-]: SETTABLE  R7 K44 R0    ; R7["mAgentType"] := R0
+160 [-]: SETTABLE  R7 K44 R0    ; R7[0xef27db20] := R0
 161 [-]: GETGLOBAL R7 K5        ; R7 := _T
 162 [-]: GETTABLE  R7 R7 K42    ; R7 := R7["AcolyteForceSpawnInfo"]
 163 [-]: GETGLOBAL R8 K46       ; R8 := EMPTY_SYMBOL
-164 [-]: SETTABLE  R7 K45 R8    ; R7["mLocTag"] := R8
+164 [-]: SETTABLE  R7 K45 R8    ; R7[0xd577a963] := R8
 165 [-]: GETGLOBAL R7 K5        ; R7 := _T
 166 [-]: GETTABLE  R7 R7 K42    ; R7 := R7["AcolyteForceSpawnInfo"]
 167 [-]: SETTABLE  R7 K47 K48   ; R7["mIcon"] := nil
 168 [-]: GETGLOBAL R7 K5        ; R7 := _T
 169 [-]: GETTABLE  R7 R7 K42    ; R7 := R7["AcolyteForceSpawnInfo"]
 170 [-]: ADD       R8 R6 R4     ; R8 := R6 + R4
-171 [-]: SETTABLE  R7 K49 R8    ; R7["mRank"] := R8
+171 [-]: SETTABLE  R7 K49 R8    ; R7[0x8d66ec64] := R8
 172 [-]: GETGLOBAL R7 K5        ; R7 := _T
 173 [-]: GETTABLE  R7 R7 K42    ; R7 := R7["AcolyteForceSpawnInfo"]
 174 [-]: SETTABLE  R7 K50 K23   ; R7["mHealthPercent"] := 1.000000

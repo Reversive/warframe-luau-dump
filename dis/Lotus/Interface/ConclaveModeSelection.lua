@@ -549,13 +549,13 @@
   5 [-]: GETGLOBAL R0 K0        ; R0 := 0x0032441c
   6 [-]: GETUPVAL  R1 U0        ; R1 := U0
   7 [-]: GETTABLE  R1 R1 K3     ; R1 := R1["SESSION_CLAN_ONLY"]
-  8 [-]: SETTABLE  R0 K1 R1     ; R0[0xe4162eed] := R1
+  8 [-]: SETTABLE  R0 K1 R1     ; R0["gClanOnlyMatchMaking"] := R1
   9 [-]: JMP       23           ; PC := 23
  10 [-]: GETGLOBAL R0 K0        ; R0 := 0x0032441c
  11 [-]: GETGLOBAL R1 K0        ; R1 := 0x0032441c
  12 [-]: GETTABLE  R1 R1 K1     ; R1 := R1["gClanOnlyMatchMaking"]
  13 [-]: ADD       R1 R1 K4     ; R1 := R1 + 1.000000
- 14 [-]: SETTABLE  R0 K1 R1     ; R0[0xe4162eed] := R1
+ 14 [-]: SETTABLE  R0 K1 R1     ; R0["gClanOnlyMatchMaking"] := R1
  15 [-]: GETGLOBAL R0 K0        ; R0 := 0x0032441c
  16 [-]: GETTABLE  R0 R0 K1     ; R0 := R0["gClanOnlyMatchMaking"]
  17 [-]: GETUPVAL  R1 U0        ; R1 := U0

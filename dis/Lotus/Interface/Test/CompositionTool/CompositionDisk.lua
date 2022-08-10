@@ -1726,7 +1726,7 @@
  33 [-]: NEWTABLE  R4 0 2       ; R4 := {}
  34 [-]: SETTABLE  R4 K9 K11    ; R4["NoteType"] := 3.000000
  35 [-]: GETTABLE  R5 R0 K7     ; R5 := R0["mNotePack"]
- 36 [-]: SETTABLE  R4 K12 R5    ; R4["NotePack"] := R5
+ 36 [-]: SETTABLE  R4 K12 R5    ; R4[0x3eda26fc] := R5
  37 [-]: SETLIST   R3 1 1       ; R3[(1-1)*FPF+i] := R(3+i), 1 <= i <= 1
  38 [-]: GETTABLE  R4 R0 K7     ; R4 := R0["mNotePack"]
  39 [-]: CALL      R1 4 1       ; R1(R2,R3,R4)
@@ -1753,7 +1753,7 @@
  60 [-]: MOVE      R8 R1        ; R8 := R1
  61 [-]: NEWTABLE  R9 0 2       ; R9 := {}
  62 [-]: SETTABLE  R9 K9 R5     ; R9["NoteType"] := R5
- 63 [-]: SETTABLE  R9 K12 R6    ; R9["NotePack"] := R6
+ 63 [-]: SETTABLE  R9 K12 R6    ; R9[0x3eda26fc] := R6
  64 [-]: CALL      R7 3 1       ; R7(R8,R9)
  65 [-]: FORLOOP   R2 49        ; R2 += R4; if R2 <= R3 then begin PC := 49; R5 := R2 end
  66 [-]: GETUPVAL  R7 U1        ; R7 := U1
@@ -4042,7 +4042,7 @@
  16 [-]: LOADBOOL  R12 0 0      ; R12 := false
  17 [-]: CALL      R9 4 2       ; R9 := R9(R10,R11,R12)
  18 [-]: SETTABLE  R8 K2 R9     ; R8["Label"] := R9
- 19 [-]: SETTABLE  R8 K6 R5     ; R8[0x55e9211c] := R5
+ 19 [-]: SETTABLE  R8 K6 R5     ; R8["Value"] := R5
  20 [-]: CALL      R6 3 1       ; R6(R7,R8)
  21 [-]: FORLOOP   R2 7         ; R2 += R4; if R2 <= R3 then begin PC := 7; R5 := R2 end
  22 [-]: GETGLOBAL R6 K0        ; R6 := 0x33bdd652
@@ -4057,7 +4057,7 @@
  31 [-]: SETTABLE  R8 K7 R9     ; R8["mLabel"] := R9
  32 [-]: GETUPVAL  R9 U0        ; R9 := U0
  33 [-]: GETTABLE  R9 R9 K10    ; R9 := R9["TOGGLE"]
- 34 [-]: SETTABLE  R8 K9 R9     ; R8[0xe261aa96] := R9
+ 34 [-]: SETTABLE  R8 K9 R9     ; R8["mType"] := R9
  35 [-]: GETUPVAL  R9 U1        ; R9 := U1
  36 [-]: GETTABLE  R9 R9 K12    ; R9 := R9["FROM"]
  37 [-]: SETTABLE  R8 K11 R9    ; R8["mSetting"] := R9
@@ -4099,7 +4099,7 @@
  73 [-]: SETTABLE  R9 K7 R10    ; R9["mLabel"] := R10
  74 [-]: GETUPVAL  R10 U0       ; R10 := U0
  75 [-]: GETTABLE  R10 R10 K10  ; R10 := R10["TOGGLE"]
- 76 [-]: SETTABLE  R9 K9 R10    ; R9[0xe261aa96] := R10
+ 76 [-]: SETTABLE  R9 K9 R10    ; R9["mType"] := R10
  77 [-]: GETUPVAL  R10 U1       ; R10 := U1
  78 [-]: GETTABLE  R10 R10 K21  ; R10 := R10["TO"]
  79 [-]: SETTABLE  R9 K11 R10   ; R9["mSetting"] := R10
@@ -4167,7 +4167,7 @@
 141 [-]: SETTABLE  R10 K7 R11   ; R10["mLabel"] := R11
 142 [-]: GETUPVAL  R11 U0       ; R11 := U0
 143 [-]: GETTABLE  R11 R11 K10  ; R11 := R11["TOGGLE"]
-144 [-]: SETTABLE  R10 K9 R11   ; R10[0xe261aa96] := R11
+144 [-]: SETTABLE  R10 K9 R11   ; R10["mType"] := R11
 145 [-]: GETUPVAL  R11 U1       ; R11 := U1
 146 [-]: GETTABLE  R11 R11 K30  ; R11 := R11["SECTION"]
 147 [-]: SETTABLE  R10 K11 R11  ; R10["mSetting"] := R11
@@ -4186,7 +4186,7 @@
 160 [-]: SETTABLE  R10 K7 R11   ; R10["mLabel"] := R11
 161 [-]: GETUPVAL  R11 U0       ; R11 := U0
 162 [-]: GETTABLE  R11 R11 K10  ; R11 := R11["TOGGLE"]
-163 [-]: SETTABLE  R10 K9 R11   ; R10[0xe261aa96] := R11
+163 [-]: SETTABLE  R10 K9 R11   ; R10["mType"] := R11
 164 [-]: GETUPVAL  R11 U1       ; R11 := U1
 165 [-]: GETTABLE  R11 R11 K32  ; R11 := R11["COPY_TYPE"]
 166 [-]: SETTABLE  R10 K11 R11  ; R10["mSetting"] := R11
@@ -5436,17 +5436,17 @@
   9 [-]: GETGLOBAL R5 K1        ; R5 := 0x03f57322
  10 [-]: MOVE      R6 R1        ; R6 := R1
  11 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 12 [-]: SETTABLE  R4 K2 R5     ; R4["y"] := R5
+ 12 [-]: SETTABLE  R4 K2 R5     ; R4[0x9b71e815] := R5
  13 [-]: GETUPVAL  R4 U0        ; R4 := U0
  14 [-]: GETGLOBAL R5 K1        ; R5 := 0x03f57322
  15 [-]: MOVE      R6 R2        ; R6 := R2
  16 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 17 [-]: SETTABLE  R4 K3 R5     ; R4["width"] := R5
+ 17 [-]: SETTABLE  R4 K3 R5     ; R4[0x7f5022cf] := R5
  18 [-]: GETUPVAL  R4 U0        ; R4 := U0
  19 [-]: GETGLOBAL R5 K1        ; R5 := 0x03f57322
  20 [-]: MOVE      R6 R3        ; R6 := R3
  21 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 22 [-]: SETTABLE  R4 K4 R5     ; R4["height"] := R5
+ 22 [-]: SETTABLE  R4 K4 R5     ; R4[0x3f3e4d12] := R5
  23 [-]: RETURN    R0 1         ; return 
 
 

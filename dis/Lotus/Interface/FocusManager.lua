@@ -496,25 +496,25 @@
  10 [-]: LOADK     R2 10        ; R2 := 10.000000
  11 [-]: LOADBOOL  R3 1 0       ; R3 := true
  12 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
- 13 [-]: SETTABLE  R0 K3 R1     ; R0[0x659d451f] := R1
+ 13 [-]: SETTABLE  R0 K3 R1     ; R0["FloatingContentHighlight"] := R1
  14 [-]: GETUPVAL  R1 U1        ; R1 := U1
  15 [-]: GETTABLE  R1 R1 K1     ; R82 := R1[0x5d10207d]
  16 [-]: LOADK     R2 6         ; R2 := 6.000000
  17 [-]: LOADBOOL  R3 1 0       ; R3 := true
  18 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
- 19 [-]: SETTABLE  R0 K4 R1     ; R0[0x7307292b] := R1
+ 19 [-]: SETTABLE  R0 K4 R1     ; R0["Content"] := R1
  20 [-]: GETUPVAL  R1 U1        ; R1 := U1
  21 [-]: GETTABLE  R1 R1 K1     ; R82 := R1[0x5d10207d]
  22 [-]: LOADK     R2 2         ; R2 := 2.000000
  23 [-]: LOADBOOL  R3 1 0       ; R3 := true
  24 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
- 25 [-]: SETTABLE  R0 K5 R1     ; R0[0xea061e98] := R1
+ 25 [-]: SETTABLE  R0 K5 R1     ; R0["Background1"] := R1
  26 [-]: GETUPVAL  R1 U1        ; R1 := U1
  27 [-]: GETTABLE  R1 R1 K1     ; R82 := R1[0x5d10207d]
  28 [-]: LOADK     R2 3         ; R2 := 3.000000
  29 [-]: LOADBOOL  R3 1 0       ; R3 := true
  30 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
- 31 [-]: SETTABLE  R0 K6 R1     ; R0[0x7b998233] := R1
+ 31 [-]: SETTABLE  R0 K6 R1     ; R0["Background2"] := R1
  32 [-]: GETUPVAL  R1 U1        ; R1 := U1
  33 [-]: GETTABLE  R1 R1 K1     ; R82 := R1[0x5d10207d]
  34 [-]: LOADK     R2 4         ; R2 := 4.000000
@@ -695,7 +695,7 @@
   5 [-]: SETTABLE  R2 K2 R3     ; R2["PlayTime"] := R3
   6 [-]: SETTABLE  R2 K4 K5     ; R2["PendingAnimation"] := nil
   7 [-]: SETTABLE  R2 K6 K5     ; R2["LastPlayed"] := nil
-  8 [-]: SETTABLE  R1 K1 R2     ; R1[0x0000008b] := R2
+  8 [-]: SETTABLE  R1 K1 R2     ; R1["PodState"] := R2
   9 [-]: GETGLOBAL R1 K7        ; R1 := 0x7b998233
  10 [-]: GETGLOBAL R2 K0        ; R2 := _T
  11 [-]: GETTABLE  R2 R2 K1     ; R2 := R2["PodState"]
@@ -2436,7 +2436,7 @@
  46 [-]: CLOSURE   R2 3         ; R2 := closure(Function #28.4)
  47 [-]: GETUPVAL  R0 U0        ; R0 := U0
  48 [-]: GETUPVAL  R0 U4        ; R0 := U4
- 49 [-]: SETTABLE  R1 K25 R2    ; R1[0x06d055f9] := R2
+ 49 [-]: SETTABLE  R1 K25 R2    ; R1["UpdateFX"] := R2
  50 [-]: GETUPVAL  R1 U0        ; R1 := U0
  51 [-]: CLOSURE   R2 4         ; R2 := closure(Function #28.5)
  52 [-]: GETUPVAL  R0 U5        ; R0 := U5
@@ -2459,7 +2459,7 @@
  69 [-]: GETUPVAL  R0 U2        ; R0 := U2
  70 [-]: GETUPVAL  R0 U6        ; R0 := U6
  71 [-]: GETUPVAL  R0 U10       ; R0 := U10
- 72 [-]: SETTABLE  R1 K28 R2    ; R1[0xae91e43b] := R2
+ 72 [-]: SETTABLE  R1 K28 R2    ; R1["mOnUnfocusedCallback"] := R2
  73 [-]: GETUPVAL  R1 U0        ; R1 := U0
  74 [-]: CLOSURE   R2 7         ; R2 := closure(Function #28.8)
  75 [-]: GETUPVAL  R0 U2        ; R0 := U2
@@ -2469,7 +2469,7 @@
  79 [-]: GETUPVAL  R0 U14       ; R0 := U14
  80 [-]: GETUPVAL  R0 U15       ; R0 := U15
  81 [-]: GETUPVAL  R0 U16       ; R0 := U16
- 82 [-]: SETTABLE  R1 K29 R2    ; R1[0xf64b7262] := R2
+ 82 [-]: SETTABLE  R1 K29 R2    ; R1["mOnSelectedCallback"] := R2
  83 [-]: GETUPVAL  R1 U0        ; R1 := U0
  84 [-]: CLOSURE   R2 8         ; R2 := closure(Function #28.9)
  85 [-]: GETUPVAL  R0 U0        ; R0 := U0
@@ -2687,7 +2687,7 @@
  20 [-]: SETUPVAL  R2 U2        ; U82 := 
  21 [-]: GETUPVAL  R2 U0        ; R2 := U0
  22 [-]: GETUPVAL  R3 U2        ; R3 := U2
- 23 [-]: SETTABLE  R2 K7 R3     ; R2[0x4ccc0ee9] := R3
+ 23 [-]: SETTABLE  R2 K7 R3     ; R2["mSelectedSchoolFx"] := R3
  24 [-]: RETURN    R0 1         ; return 
 
 
@@ -4825,7 +4825,7 @@
  19 [-]: GETTABLE  R8 R8 K0     ; R8 := R8["Focus"]
  20 [-]: LOADK     R9 0         ; R9 := 0.000000
  21 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
- 22 [-]: SETTABLE  R6 K7 R7     ; R6[0x8e62760a] := R7
+ 22 [-]: SETTABLE  R6 K7 R7     ; R6["NUM"] := R7
  23 [-]: LOADK     R7 K10       ; R7 := "+"
  24 [-]: GETUPVAL  R8 U2        ; R8 := U2
  25 [-]: GETTABLE  R8 R8 K11    ; R8 := R8["Total"]
@@ -4833,14 +4833,14 @@
  27 [-]: GETTABLE  R9 R9 K12    ; R9 := R9["Cached"]
  28 [-]: SUB       R8 R8 R9     ; R8 := R8 - R9
  29 [-]: CONCAT    R7 R7 R8     ; R7 := R7 .. R8
- 30 [-]: SETTABLE  R6 K9 R7     ; R6[0x60130201] := R7
+ 30 [-]: SETTABLE  R6 K9 R7     ; R6["AMOUNT"] := R7
  31 [-]: CALL      R2 5 2       ; R2 := R2(R3,R4,R5,R6)
  32 [-]: GETGLOBAL R3 K4        ; R3 := 0xae91e43b
  33 [-]: SELF      R3 R3 K5     ; R4 := R3; R3 := R3[0x42b04007]
  34 [-]: LOADK     R5 K13       ; R5 := "/Lotus/Language/TennoWay/CommitChanges"
  35 [-]: LOADBOOL  R6 0 0       ; R6 := false
  36 [-]: NEWTABLE  R7 0 1       ; R7 := {}
- 37 [-]: SETTABLE  R7 K14 R2    ; R7[0x0469f296] := R2
+ 37 [-]: SETTABLE  R7 K14 R2    ; R7["LIST"] := R2
  38 [-]: CALL      R3 5 2       ; R3 := R3(R4,R5,R6,R7)
  39 [-]: GETGLOBAL R4 K15       ; R4 := 0x34291f5c
  40 [-]: GETTABLE  R4 R4 K16    ; R82 := R4[0xe27b35bb]
@@ -6056,7 +6056,7 @@
  32 [-]: MOVE      R9 R2        ; R9 := R2
  33 [-]: LOADK     R10 0        ; R10 := 0.000000
  34 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
- 35 [-]: SETTABLE  R7 K10 R8    ; R7["COST"] := R8
+ 35 [-]: SETTABLE  R7 K10 R8    ; R7[0x7b998233] := R8
  36 [-]: CALL      R3 5 2       ; R3 := R3(R4,R5,R6,R7)
  37 [-]: GETUPVAL  R4 U2        ; R4 := U2
  38 [-]: GETTABLE  R4 R4 K12    ; R82 := R4[0xe0cba3ca]
@@ -6079,7 +6079,7 @@
  55 [-]: MOVE      R11 R2       ; R11 := R2
  56 [-]: LOADK     R12 0        ; R12 := 0.000000
  57 [-]: CALL      R10 3 2      ; R10 := R10(R11,R12)
- 58 [-]: SETTABLE  R9 K10 R10   ; R9["COST"] := R10
+ 58 [-]: SETTABLE  R9 K10 R10   ; R9[0x7b998233] := R10
  59 [-]: CALL      R5 5 2       ; R5 := R5(R6,R7,R8,R9)
  60 [-]: SETUPVAL  R1 U3        ; U82 := 
  61 [-]: GETUPVAL  R6 U2        ; R6 := U2

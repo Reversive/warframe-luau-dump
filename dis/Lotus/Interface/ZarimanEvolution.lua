@@ -1852,7 +1852,7 @@
  16 [-]: GETUPVAL  R2 U2        ; R2 := U2
  17 [-]: SELF      R2 R2 K5     ; R3 := R2; R2 := R2[0x6daa621a]
  18 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 19 [-]: SETTABLE  R1 K4 R2     ; R1["mItemId"] := R2
+ 19 [-]: SETTABLE  R1 K4 R2     ; R1[0xa5d5c8f6] := R2
  20 [-]: GETUPVAL  R2 U1        ; R2 := U1
  21 [-]: SETTABLE  R1 K1 R2     ; R1["mSkillTree"] := R2
  22 [-]: GETUPVAL  R2 U2        ; R2 := U2
@@ -3214,7 +3214,7 @@
  29 [-]: GETTABLE  R7 R5 R7     ; R7 := R5[R7]
  30 [-]: GETTABLE  R7 R7 K11    ; R7 := R7["mUpgrades"]
  31 [-]: GETTABLE  R7 R7 K9     ; R7 := R7[1.000000]
- 32 [-]: SETTABLE  R6 K10 R7    ; R6[0x42dcc9f5] := R7
+ 32 [-]: SETTABLE  R6 K10 R7    ; R6["mItemType"] := R7
  33 [-]: GETUPVAL  R7 U1        ; R7 := U1
  34 [-]: GETTABLE  R7 R7 K12    ; R82 := R7[0xfc31b69e]
  35 [-]: MOVE      R8 R6        ; R8 := R6

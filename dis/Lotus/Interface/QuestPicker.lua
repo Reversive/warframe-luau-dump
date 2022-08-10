@@ -1376,7 +1376,7 @@
 232 [-]: MOVE      R23 R16      ; R23 := R16
 233 [-]: LOADK     R24 0        ; R24 := 0.500000
 234 [-]: CALL      R21 4 2      ; R21 := R21(R22,R23,R24)
-235 [-]: SETTABLE  R20 K65 R21  ; R20[0xae91e43b] := R21
+235 [-]: SETTABLE  R20 K65 R21  ; R20["mVisibleProp"] := R21
 236 [-]: GETUPVAL  R20 U4       ; R20 := U4
 237 [-]: SELF      R20 R20 K66  ; R21 := R20; R20 := R20[0x44aa79ac]
 238 [-]: LOADK     R22 0        ; R22 := 0.000000
@@ -1978,7 +1978,7 @@
  47 [-]: GETUPVAL  R0 U0        ; R0 := U0
  48 [-]: GETUPVAL  R0 U12       ; R0 := U12
  49 [-]: GETUPVAL  R0 U1        ; R0 := U1
- 50 [-]: SETTABLE  R1 K17 R2    ; R1["mElementDrawCallback"] := R2
+ 50 [-]: SETTABLE  R1 K17 R2    ; R1[0x7b998233] := R2
  51 [-]: RETURN    R0 1         ; return 
 
 

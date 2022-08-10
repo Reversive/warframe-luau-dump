@@ -24,14 +24,14 @@
  15 [-]: LOADK     R6 K9        ; R6 := 0.300000
  16 [-]: LOADK     R7 K10       ; R7 := 0.600000
  17 [-]: SETLIST   R3 4 1       ; R3[(1-1)*FPF+i] := R(3+i), 1 <= i <= 4
- 18 [-]: SETTABLE  R2 K6 R3     ; R2[0x55f27c30] := R3
+ 18 [-]: SETTABLE  R2 K6 R3     ; R2["duration"] := R3
  19 [-]: NEWTABLE  R3 4 0       ; R3 := {}
  20 [-]: LOADK     R4 1         ; R4 := 1.000000
  21 [-]: LOADK     R5 1         ; R5 := 1.500000
  22 [-]: LOADK     R6 2         ; R6 := 2.000000
  23 [-]: LOADK     R7 2         ; R7 := 2.500000
  24 [-]: SETLIST   R3 4 1       ; R3[(1-1)*FPF+i] := R(3+i), 1 <= i <= 4
- 25 [-]: SETTABLE  R2 K11 R3    ; R2[0xb139d7bc] := R3
+ 25 [-]: SETTABLE  R2 K11 R3    ; R2["damage"] := R3
  26 [-]: NEWTABLE  R3 0 2       ; R3 := {}
  27 [-]: GETGLOBAL R4 K2        ; R4 := 0x0469f296
  28 [-]: LOADK     R5 K12       ; R5 := "BlastSelfShield"
@@ -94,7 +94,7 @@
  85 [-]: LOADK     R11 12       ; R11 := 12.000000
  86 [-]: LOADK     R12 15       ; R12 := 15.000000
  87 [-]: SETLIST   R6 6 1       ; R6[(1-1)*FPF+i] := R(6+i), 1 <= i <= 6
- 88 [-]: SETTABLE  R5 K6 R6     ; R5[0x55f27c30] := R6
+ 88 [-]: SETTABLE  R5 K6 R6     ; R5["duration"] := R6
  89 [-]: NEWTABLE  R6 0 3       ; R6 := {}
  90 [-]: GETGLOBAL R7 K2        ; R7 := 0x0469f296
  91 [-]: LOADK     R8 K23       ; R8 := "BlastBurst"
@@ -113,7 +113,7 @@
 104 [-]: LOADK     R10 1        ; R10 := 1.500000
 105 [-]: LOADK     R11 2        ; R11 := 2.000000
 106 [-]: SETLIST   R7 4 1       ; R7[(1-1)*FPF+i] := R(7+i), 1 <= i <= 4
-107 [-]: SETTABLE  R6 K11 R7    ; R6[0xb139d7bc] := R7
+107 [-]: SETTABLE  R6 K11 R7    ; R6["damage"] := R7
 108 [-]: NEWTABLE  R7 0 3       ; R7 := {}
 109 [-]: GETGLOBAL R8 K2        ; R8 := 0x0469f296
 110 [-]: LOADK     R9 K25       ; R9 := "BlastConfuse"
@@ -132,7 +132,7 @@
 123 [-]: LOADK     R11 12       ; R11 := 12.000000
 124 [-]: LOADK     R12 16       ; R12 := 16.000000
 125 [-]: SETLIST   R8 4 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 4
-126 [-]: SETTABLE  R7 K6 R8     ; R7[0x55f27c30] := R8
+126 [-]: SETTABLE  R7 K6 R8     ; R7["duration"] := R8
 127 [-]: NEWTABLE  R8 0 2       ; R8 := {}
 128 [-]: GETGLOBAL R9 K2        ; R9 := 0x0469f296
 129 [-]: LOADK     R10 K27      ; R10 := "BlastDisarm"
@@ -158,7 +158,7 @@
 149 [-]: LOADK     R13 8        ; R13 := 8.000000
 150 [-]: LOADK     R14 10       ; R14 := 10.000000
 151 [-]: SETLIST   R10 4 1      ; R10[(1-1)*FPF+i] := R(10+i), 1 <= i <= 4
-152 [-]: SETTABLE  R9 K6 R10    ; R9[0x55f27c30] := R10
+152 [-]: SETTABLE  R9 K6 R10    ; R9["duration"] := R10
 153 [-]: NEWTABLE  R10 0 4      ; R10 := {}
 154 [-]: GETGLOBAL R11 K2       ; R11 := 0x0469f296
 155 [-]: LOADK     R12 K30      ; R12 := "BlastDamagePickup"
@@ -177,14 +177,14 @@
 168 [-]: LOADK     R14 9        ; R14 := 9.000000
 169 [-]: LOADK     R15 12       ; R15 := 12.000000
 170 [-]: SETLIST   R11 4 1      ; R11[(1-1)*FPF+i] := R(11+i), 1 <= i <= 4
-171 [-]: SETTABLE  R10 K6 R11   ; R10[0x55f27c30] := R11
+171 [-]: SETTABLE  R10 K6 R11   ; R10["duration"] := R11
 172 [-]: NEWTABLE  R11 4 0      ; R11 := {}
 173 [-]: LOADK     R12 K20      ; R12 := 0.200000
 174 [-]: LOADK     R13 K21      ; R13 := 0.400000
 175 [-]: LOADK     R14 K10      ; R14 := 0.600000
 176 [-]: LOADK     R15 1        ; R15 := 1.000000
 177 [-]: SETLIST   R11 4 1      ; R11[(1-1)*FPF+i] := R(11+i), 1 <= i <= 4
-178 [-]: SETTABLE  R10 K11 R11  ; R10[0xb139d7bc] := R11
+178 [-]: SETTABLE  R10 K11 R11  ; R10["damage"] := R11
 179 [-]: NEWTABLE  R11 0 2      ; R11 := {}
 180 [-]: GETGLOBAL R12 K32      ; R12 := 0x7ed0a956
 181 [-]: LOADK     R13 K33      ; R13 := "/Lotus/Upgrades/CosmeticEnhancers/OperatorArmour/HeatResistOnBlast"
@@ -458,7 +458,7 @@
  15 [-]: GETTABLE  R9 R9 K4     ; R9 := R9["duration"]
  16 [-]: CALL      R8 2 2       ; R8 := R8(R9)
  17 [-]: CONCAT    R7 R7 R8     ; R7 := R7 .. R8
- 18 [-]: SETTABLE  R6 K2 R7     ; R6["DURATION"] := R7
+ 18 [-]: SETTABLE  R6 K2 R7     ; R6[0x35844cf2] := R7
  19 [-]: GETGLOBAL R7 K6        ; R7 := 0x5bced4c4
  20 [-]: GETTABLE  R7 R7 K7     ; R82 := R7[0x55f27c30]
  21 [-]: MOVE      R8 R4        ; R8 := R4
@@ -541,7 +541,7 @@
  98 [-]: GETUPVAL  R8 U3        ; R8 := U3
  99 [-]: GETTABLE  R8 R8 K4     ; R8 := R8["duration"]
 100 [-]: CALL      R7 2 2       ; R7 := R7(R8)
-101 [-]: SETTABLE  R6 K2 R7     ; R6["DURATION"] := R7
+101 [-]: SETTABLE  R6 K2 R7     ; R6[0x35844cf2] := R7
 102 [-]: MOVE      R3 R6        ; R3 := R6
 103 [-]: JMP       203          ; PC := 203
 104 [-]: GETUPVAL  R6 U4        ; R6 := U4
@@ -583,7 +583,7 @@
 140 [-]: GETUPVAL  R8 U5        ; R8 := U5
 141 [-]: GETTABLE  R8 R8 K4     ; R8 := R8["duration"]
 142 [-]: CALL      R7 2 2       ; R7 := R7(R8)
-143 [-]: SETTABLE  R6 K2 R7     ; R6["DURATION"] := R7
+143 [-]: SETTABLE  R6 K2 R7     ; R6[0x35844cf2] := R7
 144 [-]: MOVE      R3 R6        ; R3 := R6
 145 [-]: JMP       203          ; PC := 203
 146 [-]: GETUPVAL  R6 U6        ; R6 := U6
@@ -611,7 +611,7 @@
 168 [-]: GETUPVAL  R8 U7        ; R8 := U7
 169 [-]: GETTABLE  R8 R8 K4     ; R8 := R8["duration"]
 170 [-]: CALL      R7 2 2       ; R7 := R7(R8)
-171 [-]: SETTABLE  R6 K2 R7     ; R6["DURATION"] := R7
+171 [-]: SETTABLE  R6 K2 R7     ; R6[0x35844cf2] := R7
 172 [-]: MOVE      R3 R6        ; R3 := R6
 173 [-]: JMP       203          ; PC := 203
 174 [-]: GETUPVAL  R6 U8        ; R6 := U8
@@ -623,7 +623,7 @@
 180 [-]: GETUPVAL  R8 U8        ; R8 := U8
 181 [-]: GETTABLE  R8 R8 K4     ; R8 := R8["duration"]
 182 [-]: CALL      R7 2 2       ; R7 := R7(R8)
-183 [-]: SETTABLE  R6 K2 R7     ; R6["DURATION"] := R7
+183 [-]: SETTABLE  R6 K2 R7     ; R6[0x35844cf2] := R7
 184 [-]: GETGLOBAL R7 K6        ; R7 := 0x5bced4c4
 185 [-]: GETTABLE  R7 R7 K7     ; R82 := R7[0x55f27c30]
 186 [-]: MOVE      R8 R4        ; R8 := R4

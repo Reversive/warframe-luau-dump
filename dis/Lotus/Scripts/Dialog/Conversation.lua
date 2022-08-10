@@ -2107,7 +2107,7 @@
 172 [-]: SETTABLE  R3 K39 R5    ; R3["mTransmissionSet"] := R5
 173 [-]: CLOSURE   R5 0         ; R5 := closure(Function #21.1)
 174 [-]: MOVE      R0 R3        ; R0 := R3
-175 [-]: SETTABLE  R3 K60 R5    ; R3[0xc8802016] := R5
+175 [-]: SETTABLE  R3 K60 R5    ; R3["Reset"] := R5
 176 [-]: GETGLOBAL R5 K3        ; R5 := 0x7b998233
 177 [-]: GETGLOBAL R6 K52       ; R6 := 0xbd91cce0
 178 [-]: CALL      R5 2 2       ; R5 := R5(R6)

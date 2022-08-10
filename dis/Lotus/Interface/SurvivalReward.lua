@@ -1587,13 +1587,13 @@
 138 [-]: CALL      R6 1 1       ; R6()
 139 [-]: GETGLOBAL R6 K29       ; R6 := _T
 140 [-]: GETUPVAL  R7 U4        ; R7 := U4
-141 [-]: SETTABLE  R6 K30 R7    ; R6["DisplayReward"] := R7
+141 [-]: SETTABLE  R6 K30 R7    ; R6[0xae91e43b] := R7
 142 [-]: GETGLOBAL R6 K29       ; R6 := _T
 143 [-]: GETUPVAL  R7 U5        ; R7 := U5
 144 [-]: SETTABLE  R6 K31 R7    ; R6["DisplayMysteryPrize"] := R7
 145 [-]: GETGLOBAL R6 K29       ; R6 := _T
 146 [-]: GETUPVAL  R7 U6        ; R7 := U6
-147 [-]: SETTABLE  R6 K32 R7    ; R6["DisplayCard"] := R7
+147 [-]: SETTABLE  R6 K32 R7    ; R6[0xbd496aa1] := R7
 148 [-]: GETGLOBAL R6 K29       ; R6 := _T
 149 [-]: GETUPVAL  R7 U7        ; R7 := U7
 150 [-]: SETTABLE  R6 K33 R7    ; R6["ResetDisplayTime"] := R7

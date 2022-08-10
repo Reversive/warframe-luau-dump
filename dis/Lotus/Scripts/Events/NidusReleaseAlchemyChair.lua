@@ -1258,11 +1258,11 @@
  30 [-]: NEWTABLE  R1 0 4       ; R1 := {}
  31 [-]: SETTABLE  R1 K14 K15   ; R1["mName"] := "/Lotus/Language/Alchemy/RenameHelminth"
  32 [-]: CLOSURE   R2 0         ; R2 := closure(Function #18.1)
- 33 [-]: SETTABLE  R1 K16 R2    ; R1[0x46a0ebf5] := R2
+ 33 [-]: SETTABLE  R1 K16 R2    ; R1["mCondition"] := R2
  34 [-]: CLOSURE   R2 1         ; R2 := closure(Function #18.2)
- 35 [-]: SETTABLE  R1 K17 R2    ; R1[0x8eb2112d] := R2
+ 35 [-]: SETTABLE  R1 K17 R2    ; R1["mCallback"] := R2
  36 [-]: SETTABLE  R1 K18 K19   ; R1["mAlwaysShow"] := true
- 37 [-]: SETTABLE  R0 K13 R1    ; R0[0x78298275] := R1
+ 37 [-]: SETTABLE  R0 K13 R1    ; R0["HelminthTutorialChooseName"] := R1
  38 [-]: RETURN    R0 1         ; return 
 
 

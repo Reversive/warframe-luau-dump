@@ -151,12 +151,12 @@
  20 [-]: SELF      R8 R8 K8     ; R9 := R8; R8 := R8[0xf7d48ee0]
  21 [-]: CALL      R8 2 0       ; R8,... := R8(R9)
  22 [-]: CALL      R6 0 1       ; R6(R7,...)
- 23 [-]: SETTABLE  R5 K9 R1     ; R5["baseAmount"] := R1
- 24 [-]: SETTABLE  R5 K10 R2    ; R5["radius"] := R2
+ 23 [-]: SETTABLE  R5 K9 R1     ; R5[0x1ac1655c] := R1
+ 24 [-]: SETTABLE  R5 K10 R2    ; R5[0xaf6ac8d4] := R2
  25 [-]: SETTABLE  R5 K11 K12   ; R5["horizontalImpulse"] := 200.000000
  26 [-]: GETTABLE  R6 R5 K11    ; R6 := R5["horizontalImpulse"]
  27 [-]: MUL       R6 R6 K14    ; R6 := R6 * 0.300000
- 28 [-]: SETTABLE  R5 K13 R6    ; R5["verticalImpulse"] := R6
+ 28 [-]: SETTABLE  R5 K13 R6    ; R5[0xb62ecfe0] := R6
  29 [-]: SELF      R6 R5 K15    ; R7 := R5; R6 := R5[0x1586e35e]
  30 [-]: MOVE      R8 R3        ; R8 := R3
  31 [-]: LOADK     R9 1         ; R9 := 1.000000

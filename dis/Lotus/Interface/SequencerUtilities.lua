@@ -41,7 +41,7 @@
   5 [-]: GETGLOBAL R1 K6        ; R1 := 0x7ed0a956
   6 [-]: LOADK     R2 K7        ; R2 := "/Lotus/Powersuits/Bard/StepSequencerLocal"
   7 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  8 [-]: SETTABLE  R0 K5 R1     ; R0[0x8f91eec7] := R1
+  8 [-]: SETTABLE  R0 K5 R1     ; R0["StepSequencerType"] := R1
   9 [-]: SETTABLE  R0 K8 K3     ; R0["StepSequencerRes"] := nil
  10 [-]: SETTABLE  R0 K9 K3     ; R0["NotePackInfo"] := nil
  11 [-]: SETTABLE  R0 K10 K3    ; R0["NotePackRes"] := nil
@@ -207,8 +207,8 @@
  78 [-]: GETTABLE  R9 R9 K20    ; R82 := R9[0x23d5322f]
  79 [-]: GETTABLE  R10 R0 K8    ; R10 := R0["NotePackRes"]
  80 [-]: NEWTABLE  R11 0 2      ; R11 := {}
- 81 [-]: SETTABLE  R11 K17 R7   ; R11[0x7b998233] := R7
- 82 [-]: SETTABLE  R11 K18 R8   ; R11[0x76ea806b] := R8
+ 81 [-]: SETTABLE  R11 K17 R7   ; R11["NoteType"] := R7
+ 82 [-]: SETTABLE  R11 K18 R8   ; R11[0x7b998233] := R8
  83 [-]: CALL      R9 3 1       ; R9(R10,R11)
  84 [-]: SELF      R9 R8 K21    ; R10 := R8; R9 := R8[0x8f91eec7]
  85 [-]: MOVE      R11 R7       ; R11 := R7

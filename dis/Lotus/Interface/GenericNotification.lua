@@ -1028,15 +1028,15 @@
 101 [-]: GETUPVAL  R0 U0        ; R0 := U0
 102 [-]: GETGLOBAL R1 K1        ; R1 := 0xb977a38a
 103 [-]: GETTABLE  R1 R1 K50    ; R1 := R1[24.000000]
-104 [-]: SETTABLE  R0 K49 R1    ; R0["PVPMODE_DEATHMATCH"] := R1
+104 [-]: SETTABLE  R0 K49 R1    ; R0[0x7b998233] := R1
 105 [-]: GETUPVAL  R0 U0        ; R0 := U0
 106 [-]: GETGLOBAL R1 K1        ; R1 := 0xb977a38a
 107 [-]: GETTABLE  R1 R1 K50    ; R1 := R1[24.000000]
-108 [-]: SETTABLE  R0 K51 R1    ; R0["PVPMODE_SPEEDBALL"] := R1
+108 [-]: SETTABLE  R0 K51 R1    ; R0[0x3f3ae64c] := R1
 109 [-]: GETUPVAL  R0 U0        ; R0 := U0
 110 [-]: GETGLOBAL R1 K1        ; R1 := 0xb977a38a
 111 [-]: GETTABLE  R1 R1 K53    ; R1 := R1[25.000000]
-112 [-]: SETTABLE  R0 K52 R1    ; R0["LevelUpAvailable"] := R1
+112 [-]: SETTABLE  R0 K52 R1    ; R0[0x80563238] := R1
 113 [-]: GETUPVAL  R0 U0        ; R0 := U0
 114 [-]: GETGLOBAL R1 K1        ; R1 := 0xb977a38a
 115 [-]: GETTABLE  R1 R1 K55    ; R1 := R1[26.000000]
@@ -1148,15 +1148,15 @@
 221 [-]: GETUPVAL  R0 U1        ; R0 := U1
 222 [-]: GETGLOBAL R1 K58       ; R1 := 0x04511406
 223 [-]: GETTABLE  R1 R1 K50    ; R1 := R1[24.000000]
-224 [-]: SETTABLE  R0 K49 R1    ; R0["PVPMODE_DEATHMATCH"] := R1
+224 [-]: SETTABLE  R0 K49 R1    ; R0[0x7b998233] := R1
 225 [-]: GETUPVAL  R0 U1        ; R0 := U1
 226 [-]: GETGLOBAL R1 K58       ; R1 := 0x04511406
 227 [-]: GETTABLE  R1 R1 K50    ; R1 := R1[24.000000]
-228 [-]: SETTABLE  R0 K51 R1    ; R0["PVPMODE_SPEEDBALL"] := R1
+228 [-]: SETTABLE  R0 K51 R1    ; R0[0x3f3ae64c] := R1
 229 [-]: GETUPVAL  R0 U1        ; R0 := U1
 230 [-]: GETGLOBAL R1 K58       ; R1 := 0x04511406
 231 [-]: GETTABLE  R1 R1 K53    ; R1 := R1[25.000000]
-232 [-]: SETTABLE  R0 K52 R1    ; R0["LevelUpAvailable"] := R1
+232 [-]: SETTABLE  R0 K52 R1    ; R0[0x80563238] := R1
 233 [-]: GETUPVAL  R0 U1        ; R0 := U1
 234 [-]: GETGLOBAL R1 K58       ; R1 := 0x04511406
 235 [-]: GETTABLE  R1 R1 K55    ; R1 := R1[26.000000]
@@ -1629,7 +1629,7 @@
  34 [-]: GETGLOBAL R3 K5        ; R3 := _T
  35 [-]: GETTABLE  R3 R3 K8     ; R3 := R3["NotificationTransmissionThrottle"]
  36 [-]: SUB       R3 R3 R0     ; R3 := R3 - R0
- 37 [-]: SETTABLE  R2 K8 R3     ; R2[0x20b98db3] := R3
+ 37 [-]: SETTABLE  R2 K8 R3     ; R2["NotificationTransmissionThrottle"] := R3
  38 [-]: GETUPVAL  R2 U0        ; R2 := U0
  39 [-]: LT        0 K7 R2      ; if 0.000000 >= R2 then PC := 53
  40 [-]: JMP       53           ; PC := 53

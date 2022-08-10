@@ -610,7 +610,7 @@
 125 [-]: ADD       R11 R1 R3    ; R11 := R1 + R3
 126 [-]: SETLIST   R9 2 1       ; R9[(1-1)*FPF+i] := R(9+i), 1 <= i <= 2
 127 [-]: SETLIST   R5 4 1       ; R5[(1-1)*FPF+i] := R(5+i), 1 <= i <= 4
-128 [-]: SETTABLE  R4 K29 R5    ; R4[0xae91e43b] := R5
+128 [-]: SETTABLE  R4 K29 R5    ; R4["Screen"] := R5
 129 [-]: GETGLOBAL R4 K4        ; R4 := 0xae91e43b
 130 [-]: SELF      R4 R4 K30    ; R5 := R4; R4 := R4[0x67bc869f]
 131 [-]: LOADK     R6 K31       ; R6 := "ExtraStanding"
@@ -714,7 +714,7 @@
 229 [-]: SUB       R11 R11 K44  ; R11 := R11 - 5.000000
 230 [-]: SETLIST   R9 2 1       ; R9[(1-1)*FPF+i] := R(9+i), 1 <= i <= 2
 231 [-]: SETLIST   R5 4 1       ; R5[(1-1)*FPF+i] := R(5+i), 1 <= i <= 4
-232 [-]: SETTABLE  R4 K29 R5    ; R4[0xae91e43b] := R5
+232 [-]: SETTABLE  R4 K29 R5    ; R4["Screen"] := R5
 233 [-]: GETUPVAL  R4 U7        ; R4 := U7
 234 [-]: GETGLOBAL R5 K46       ; R5 := 0xa421af95
 235 [-]: CALL      R5 1 2       ; R5 := R5()

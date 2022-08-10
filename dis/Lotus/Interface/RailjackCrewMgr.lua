@@ -157,7 +157,7 @@
 148 [-]: LOADK     R27 K58      ; R27 := -0.300000
 149 [-]: LOADK     R28 1        ; R28 := 1.500000
 150 [-]: CALL      R25 4 2      ; R25 := R25(R26,R27,R28)
-151 [-]: SETTABLE  R24 K56 R25  ; R24["mOffset"] := R25
+151 [-]: SETTABLE  R24 K56 R25  ; R24[0xb5b3f4ea] := R25
 152 [-]: SETTABLE  R23 K52 R24  ; R23["HEAD"] := R24
 153 [-]: NEWTABLE  R24 0 2      ; R24 := {}
 154 [-]: GETGLOBAL R25 K54      ; R25 := 0x0469f296
@@ -169,7 +169,7 @@
 160 [-]: LOADK     R27 K58      ; R27 := -0.300000
 161 [-]: LOADK     R28 1        ; R28 := 1.500000
 162 [-]: CALL      R25 4 2      ; R25 := R25(R26,R27,R28)
-163 [-]: SETTABLE  R24 K56 R25  ; R24["mOffset"] := R25
+163 [-]: SETTABLE  R24 K56 R25  ; R24[0xb5b3f4ea] := R25
 164 [-]: SETTABLE  R23 K59 R24  ; R23["LEFT_ARM"] := R24
 165 [-]: NEWTABLE  R24 0 2      ; R24 := {}
 166 [-]: GETGLOBAL R25 K54      ; R25 := 0x0469f296
@@ -181,8 +181,8 @@
 172 [-]: LOADK     R27 K58      ; R27 := -0.300000
 173 [-]: LOADK     R28 1        ; R28 := 1.500000
 174 [-]: CALL      R25 4 2      ; R25 := R25(R26,R27,R28)
-175 [-]: SETTABLE  R24 K56 R25  ; R24["mOffset"] := R25
-176 [-]: SETTABLE  R23 K60 R24  ; R23["RIGHT_ARM"] := R24
+175 [-]: SETTABLE  R24 K56 R25  ; R24[0xb5b3f4ea] := R25
+176 [-]: SETTABLE  R23 K60 R24  ; R23[0x2f4b6216] := R24
 177 [-]: NEWTABLE  R24 0 2      ; R24 := {}
 178 [-]: GETGLOBAL R25 K54      ; R25 := 0x0469f296
 179 [-]: LOADK     R26 K55      ; R26 := "GAME_C1_HEAD1"
@@ -193,8 +193,8 @@
 184 [-]: LOADK     R27 -1       ; R27 := -1.000000
 185 [-]: LOADK     R28 1        ; R28 := 1.500000
 186 [-]: CALL      R25 4 2      ; R25 := R25(R26,R27,R28)
-187 [-]: SETTABLE  R24 K56 R25  ; R24["mOffset"] := R25
-188 [-]: SETTABLE  R23 K61 R24  ; R23["LEFT_LEG"] := R24
+187 [-]: SETTABLE  R24 K56 R25  ; R24[0xb5b3f4ea] := R25
+188 [-]: SETTABLE  R23 K61 R24  ; R23[0xb15e6aca] := R24
 189 [-]: NEWTABLE  R24 0 2      ; R24 := {}
 190 [-]: GETGLOBAL R25 K54      ; R25 := 0x0469f296
 191 [-]: LOADK     R26 K55      ; R26 := "GAME_C1_HEAD1"
@@ -205,7 +205,7 @@
 196 [-]: LOADK     R27 -1       ; R27 := -1.000000
 197 [-]: LOADK     R28 1        ; R28 := 1.500000
 198 [-]: CALL      R25 4 2      ; R25 := R25(R26,R27,R28)
-199 [-]: SETTABLE  R24 K56 R25  ; R24["mOffset"] := R25
+199 [-]: SETTABLE  R24 K56 R25  ; R24[0xb5b3f4ea] := R25
 200 [-]: SETTABLE  R23 K62 R24  ; R23["RIGHT_LEG"] := R24
 201 [-]: NEWTABLE  R24 0 2      ; R24 := {}
 202 [-]: GETGLOBAL R25 K54      ; R25 := 0x0469f296
@@ -217,7 +217,7 @@
 208 [-]: LOADK     R27 K64      ; R27 := -0.100000
 209 [-]: LOADK     R28 K65      ; R28 := 1.100000
 210 [-]: CALL      R25 4 2      ; R25 := R25(R26,R27,R28)
-211 [-]: SETTABLE  R24 K56 R25  ; R24["mOffset"] := R25
+211 [-]: SETTABLE  R24 K56 R25  ; R24[0xb5b3f4ea] := R25
 212 [-]: SETTABLE  R23 K63 R24  ; R23["CENTER"] := R24
 213 [-]: NEWTABLE  R24 0 2      ; R24 := {}
 214 [-]: SETTABLE  R24 K14 K67  ; R24[1.000000] := true
@@ -1242,7 +1242,7 @@
 101 [-]: JMP       103          ; PC := 103
 102 [-]: LOADBOOL  R16 0 1      ; R16 := false; PC := 103
 103 [-]: LOADBOOL  R16 1 0      ; R16 := true
-104 [-]: SETTABLE  R0 K18 R16   ; R0["mFlipButtons"] := R16
+104 [-]: SETTABLE  R0 K18 R16   ; R0[0x091c120e] := R16
 105 [-]: GETGLOBAL R17 K2       ; R17 := 0xc8802016
 106 [-]: GETTABLE  R18 R0 K3    ; R18 := R0["mRankInfoButtons"]
 107 [-]: CALL      R17 2 4      ; R17,R18,R19 := R17(R18)
@@ -3393,7 +3393,7 @@
 125 [-]: SELF      R10 R7 K30   ; R11 := R7; R10 := R7[0xc70965fe]
 126 [-]: MOVE      R12 R8       ; R12 := R8
 127 [-]: CALL      R10 3 2      ; R10 := R10(R11,R12)
-128 [-]: SETTABLE  R9 K29 R10   ; R9["mItem"] := R10
+128 [-]: SETTABLE  R9 K29 R10   ; R9[0x7f5022cf] := R10
 129 [-]: GETTABLE  R9 R6 K26    ; R9 := R6["mWeaponId"]
 130 [-]: SELF      R9 R9 K31    ; R10 := R9; R9 := R9[0x46e9d221]
 131 [-]: MOVE      R11 R8       ; R11 := R8
@@ -3567,7 +3567,7 @@
  56 [-]: SETTABLE  R9 K17 R11   ; R9["Icon"] := R11
  57 [-]: SETTABLE  R9 K26 K27   ; R9["Themed"] := true
  58 [-]: SETTABLE  R9 K28 R7    ; R9["MemberIndex"] := R7
- 59 [-]: SETTABLE  R9 K29 R8    ; R9[0x0000005d] := R8
+ 59 [-]: SETTABLE  R9 K29 R8    ; R9["CrewMemberInfo"] := R8
  60 [-]: SETTABLE  R9 K30 K31   ; R9["IsNone"] := false
  61 [-]: GETTABLE  R11 R8 K33   ; R11 := R8["mItemId"]
  62 [-]: GETTABLE  R11 R11 K34  ; R11 := R11["mId"]
@@ -3647,9 +3647,9 @@
   4 [-]: NEWTABLE  R3 0 0       ; R3 := {}
   5 [-]: SETTABLE  R2 K1 R3     ; R2["Values"] := R3
   6 [-]: NEWTABLE  R3 0 0       ; R3 := {}
-  7 [-]: SETTABLE  R2 K2 R3     ; R2[0x25d99d89] := R3
+  7 [-]: SETTABLE  R2 K2 R3     ; R2["BaseValues"] := R3
   8 [-]: NEWTABLE  R3 0 0       ; R3 := {}
-  9 [-]: SETTABLE  R2 K3 R3     ; R2[0x2bc6bc3e] := R3
+  9 [-]: SETTABLE  R2 K3 R3     ; R2["StatChanges"] := R3
  10 [-]: CLOSURE   R3 0         ; R3 := closure(Function #24.1)
  11 [-]: MOVE      R0 R2        ; R0 := R2
  12 [-]: CLOSURE   R4 1         ; R4 := closure(Function #24.2)
@@ -4958,7 +4958,7 @@
   9 [-]: GETUPVAL  R1 U0        ; R1 := U0
  10 [-]: SELF      R2 R0 K6     ; R3 := R0; R2 := R0[0x1c63046c]
  11 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 12 [-]: SETTABLE  R1 K5 R2     ; R1["mMaxSkill"] := R2
+ 12 [-]: SETTABLE  R1 K5 R2     ; R1[0xa2880940] := R2
  13 [-]: GETUPVAL  R1 U0        ; R1 := U0
  14 [-]: SELF      R1 R1 K7     ; R2 := R1; R1 := R1[0xea061e98]
  15 [-]: CLOSURE   R3 0         ; R3 := closure(Function #40.1)
@@ -6157,7 +6157,7 @@
  18 [-]: TEST      R0 0         ; if not R0 then PC := 26
  19 [-]: JMP       26           ; PC := 26
  20 [-]: GETTABLE  R4 R2 K6     ; R4 := R2["Weapon"]
- 21 [-]: SETTABLE  R1 K5 R4     ; R1[0x0032441c] := R4
+ 21 [-]: SETTABLE  R1 K5 R4     ; R1["EquippedItem"] := R4
  22 [-]: GETTABLE  R4 R3 K8     ; R4 := R3["mWeaponId"]
  23 [-]: GETTABLE  R4 R4 K9     ; R4 := R4["mId"]
  24 [-]: SETTABLE  R1 K7 R4     ; R1["UID"] := R4
@@ -6167,11 +6167,11 @@
  28 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  29 [-]: SELF      R4 R4 K12    ; R5 := R4; R4 := R4[0xf7d48ee0]
  30 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 31 [-]: SETTABLE  R1 K5 R4     ; R1[0x0032441c] := R4
+ 31 [-]: SETTABLE  R1 K5 R4     ; R1["EquippedItem"] := R4
  32 [-]: GETTABLE  R4 R3 K13    ; R4 := R3["mItemId"]
  33 [-]: GETTABLE  R4 R4 K9     ; R4 := R4["mId"]
  34 [-]: SETTABLE  R1 K7 R4     ; R1["UID"] := R4
- 35 [-]: SETTABLE  R1 K3 R3     ; R1[0x00000000] := R3
+ 35 [-]: SETTABLE  R1 K3 R3     ; R1["CrewMemberInfo"] := R3
  36 [-]: RETURN    R1 2         ; return R1
  37 [-]: RETURN    R0 1         ; return 
 
@@ -6628,99 +6628,99 @@
  15 [-]: GETUPVAL  R2 U0        ; R2 := U0
  16 [-]: GETTABLE  R2 R2 K18    ; R2 := R2["Types"]
  17 [-]: GETTABLE  R2 R2 K19    ; R2 := R2["ITEM_SELECTION"]
- 18 [-]: SETTABLE  R1 K17 R2    ; R1["Type"] := R2
+ 18 [-]: SETTABLE  R1 K17 R2    ; R1[0xb5b3f4ea] := R2
  19 [-]: GETUPVAL  R2 U1        ; R2 := U1
  20 [-]: GETTABLE  R2 R2 K21    ; R2 := R2["ATTACHMENTS"]
- 21 [-]: SETTABLE  R1 K20 R2    ; R1[0x6c97a788] := R2
+ 21 [-]: SETTABLE  R1 K20 R2    ; R1[0x4bed4571] := R2
  22 [-]: NEWTABLE  R2 0 4       ; R2 := {}
  23 [-]: SETTABLE  R2 K0 K22    ; R2["NameTag"] := "/Lotus/Language/Menu/Arsenal_Primary"
  24 [-]: NEWTABLE  R3 1 0       ; R3 := {}
  25 [-]: LOADK     R4 0         ; R4 := 0.000000
  26 [-]: SETLIST   R3 1 1       ; R3[(1-1)*FPF+i] := R(3+i), 1 <= i <= 1
- 27 [-]: SETTABLE  R2 K23 R3    ; R2[0x34291f5c] := R3
+ 27 [-]: SETTABLE  R2 K23 R3    ; R2["mColorRegions"] := R3
  28 [-]: GETUPVAL  R3 U0        ; R3 := U0
  29 [-]: GETTABLE  R3 R3 K18    ; R3 := R3["Types"]
  30 [-]: GETTABLE  R3 R3 K24    ; R3 := R3["COLOR"]
- 31 [-]: SETTABLE  R2 K17 R3    ; R2["Type"] := R3
+ 31 [-]: SETTABLE  R2 K17 R3    ; R2[0xb5b3f4ea] := R3
  32 [-]: GETUPVAL  R3 U1        ; R3 := U1
  33 [-]: GETTABLE  R3 R3 K25    ; R3 := R3["COLORS"]
- 34 [-]: SETTABLE  R2 K20 R3    ; R2[0x6c97a788] := R3
+ 34 [-]: SETTABLE  R2 K20 R3    ; R2[0x4bed4571] := R3
  35 [-]: NEWTABLE  R3 0 4       ; R3 := {}
  36 [-]: SETTABLE  R3 K0 K26    ; R3["NameTag"] := "/Lotus/Language/Menu/Arsenal_Secondary"
  37 [-]: NEWTABLE  R4 1 0       ; R4 := {}
  38 [-]: LOADK     R5 1         ; R5 := 1.000000
  39 [-]: SETLIST   R4 1 1       ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 1
- 40 [-]: SETTABLE  R3 K23 R4    ; R3[0x34291f5c] := R4
+ 40 [-]: SETTABLE  R3 K23 R4    ; R3["mColorRegions"] := R4
  41 [-]: GETUPVAL  R4 U0        ; R4 := U0
  42 [-]: GETTABLE  R4 R4 K18    ; R4 := R4["Types"]
  43 [-]: GETTABLE  R4 R4 K24    ; R4 := R4["COLOR"]
- 44 [-]: SETTABLE  R3 K17 R4    ; R3["Type"] := R4
+ 44 [-]: SETTABLE  R3 K17 R4    ; R3[0xb5b3f4ea] := R4
  45 [-]: GETUPVAL  R4 U1        ; R4 := U1
  46 [-]: GETTABLE  R4 R4 K25    ; R4 := R4["COLORS"]
- 47 [-]: SETTABLE  R3 K20 R4    ; R3[0x6c97a788] := R4
+ 47 [-]: SETTABLE  R3 K20 R4    ; R3[0x4bed4571] := R4
  48 [-]: NEWTABLE  R4 0 4       ; R4 := {}
  49 [-]: SETTABLE  R4 K0 K27    ; R4["NameTag"] := "/Lotus/Language/Menu/Arsenal_TintColor3"
  50 [-]: NEWTABLE  R5 1 0       ; R5 := {}
  51 [-]: LOADK     R6 2         ; R6 := 2.000000
  52 [-]: SETLIST   R5 1 1       ; R5[(1-1)*FPF+i] := R(5+i), 1 <= i <= 1
- 53 [-]: SETTABLE  R4 K23 R5    ; R4[0x34291f5c] := R5
+ 53 [-]: SETTABLE  R4 K23 R5    ; R4["mColorRegions"] := R5
  54 [-]: GETUPVAL  R5 U0        ; R5 := U0
  55 [-]: GETTABLE  R5 R5 K18    ; R5 := R5["Types"]
  56 [-]: GETTABLE  R5 R5 K24    ; R5 := R5["COLOR"]
- 57 [-]: SETTABLE  R4 K17 R5    ; R4["Type"] := R5
+ 57 [-]: SETTABLE  R4 K17 R5    ; R4[0xb5b3f4ea] := R5
  58 [-]: GETUPVAL  R5 U1        ; R5 := U1
  59 [-]: GETTABLE  R5 R5 K25    ; R5 := R5["COLORS"]
- 60 [-]: SETTABLE  R4 K20 R5    ; R4[0x6c97a788] := R5
+ 60 [-]: SETTABLE  R4 K20 R5    ; R4[0x4bed4571] := R5
  61 [-]: NEWTABLE  R5 0 4       ; R5 := {}
  62 [-]: SETTABLE  R5 K0 K28    ; R5["NameTag"] := "/Lotus/Language/Menu/Arsenal_TintColor4"
  63 [-]: NEWTABLE  R6 1 0       ; R6 := {}
  64 [-]: LOADK     R7 3         ; R7 := 3.000000
  65 [-]: SETLIST   R6 1 1       ; R6[(1-1)*FPF+i] := R(6+i), 1 <= i <= 1
- 66 [-]: SETTABLE  R5 K23 R6    ; R5[0x34291f5c] := R6
+ 66 [-]: SETTABLE  R5 K23 R6    ; R5["mColorRegions"] := R6
  67 [-]: GETUPVAL  R6 U0        ; R6 := U0
  68 [-]: GETTABLE  R6 R6 K18    ; R6 := R6["Types"]
  69 [-]: GETTABLE  R6 R6 K24    ; R6 := R6["COLOR"]
- 70 [-]: SETTABLE  R5 K17 R6    ; R5["Type"] := R6
+ 70 [-]: SETTABLE  R5 K17 R6    ; R5[0xb5b3f4ea] := R6
  71 [-]: GETUPVAL  R6 U1        ; R6 := U1
  72 [-]: GETTABLE  R6 R6 K25    ; R6 := R6["COLORS"]
- 73 [-]: SETTABLE  R5 K20 R6    ; R5[0x6c97a788] := R6
+ 73 [-]: SETTABLE  R5 K20 R6    ; R5[0x4bed4571] := R6
  74 [-]: NEWTABLE  R6 0 4       ; R6 := {}
  75 [-]: SETTABLE  R6 K0 K29    ; R6["NameTag"] := "/Lotus/Language/Menu/Arsenal_Emissive"
  76 [-]: NEWTABLE  R7 2 0       ; R7 := {}
  77 [-]: LOADK     R8 4         ; R8 := 4.000000
  78 [-]: LOADK     R9 5         ; R9 := 5.000000
  79 [-]: SETLIST   R7 2 1       ; R7[(1-1)*FPF+i] := R(7+i), 1 <= i <= 2
- 80 [-]: SETTABLE  R6 K23 R7    ; R6[0x34291f5c] := R7
+ 80 [-]: SETTABLE  R6 K23 R7    ; R6["mColorRegions"] := R7
  81 [-]: GETUPVAL  R7 U0        ; R7 := U0
  82 [-]: GETTABLE  R7 R7 K18    ; R7 := R7["Types"]
  83 [-]: GETTABLE  R7 R7 K24    ; R7 := R7["COLOR"]
- 84 [-]: SETTABLE  R6 K17 R7    ; R6["Type"] := R7
+ 84 [-]: SETTABLE  R6 K17 R7    ; R6[0xb5b3f4ea] := R7
  85 [-]: GETUPVAL  R7 U1        ; R7 := U1
  86 [-]: GETTABLE  R7 R7 K25    ; R7 := R7["COLORS"]
- 87 [-]: SETTABLE  R6 K20 R7    ; R6[0x6c97a788] := R7
+ 87 [-]: SETTABLE  R6 K20 R7    ; R6[0x4bed4571] := R7
  88 [-]: NEWTABLE  R7 0 4       ; R7 := {}
  89 [-]: SETTABLE  R7 K0 K30    ; R7["NameTag"] := "/Lotus/Language/Menu/Arsenal_PrimaryEnergy"
  90 [-]: NEWTABLE  R8 2 0       ; R8 := {}
  91 [-]: LOADK     R9 6         ; R9 := 6.000000
  92 [-]: LOADK     R10 7        ; R10 := 7.000000
  93 [-]: SETLIST   R8 2 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 2
- 94 [-]: SETTABLE  R7 K23 R8    ; R7[0x34291f5c] := R8
+ 94 [-]: SETTABLE  R7 K23 R8    ; R7["mColorRegions"] := R8
  95 [-]: GETUPVAL  R8 U0        ; R8 := U0
  96 [-]: GETTABLE  R8 R8 K18    ; R8 := R8["Types"]
  97 [-]: GETTABLE  R8 R8 K24    ; R8 := R8["COLOR"]
- 98 [-]: SETTABLE  R7 K17 R8    ; R7["Type"] := R8
+ 98 [-]: SETTABLE  R7 K17 R8    ; R7[0xb5b3f4ea] := R8
  99 [-]: GETUPVAL  R8 U1        ; R8 := U1
 100 [-]: GETTABLE  R8 R8 K25    ; R8 := R8["COLORS"]
-101 [-]: SETTABLE  R7 K20 R8    ; R7[0x6c97a788] := R8
+101 [-]: SETTABLE  R7 K20 R8    ; R7[0x4bed4571] := R8
 102 [-]: NEWTABLE  R8 0 3       ; R8 := {}
 103 [-]: SETTABLE  R8 K0 K31    ; R8["NameTag"] := "/Lotus/Language/Menu/Cosmetics_AllColors"
 104 [-]: GETUPVAL  R9 U0        ; R9 := U0
 105 [-]: GETTABLE  R9 R9 K18    ; R9 := R9["Types"]
 106 [-]: GETTABLE  R9 R9 K24    ; R9 := R9["COLOR"]
-107 [-]: SETTABLE  R8 K17 R9    ; R8["Type"] := R9
+107 [-]: SETTABLE  R8 K17 R9    ; R8[0xb5b3f4ea] := R9
 108 [-]: GETUPVAL  R9 U1        ; R9 := U1
 109 [-]: GETTABLE  R9 R9 K32    ; R9 := R9["ALL_COLORS"]
-110 [-]: SETTABLE  R8 K20 R9    ; R8[0x6c97a788] := R9
+110 [-]: SETTABLE  R8 K20 R9    ; R8[0x4bed4571] := R9
 111 [-]: NEWTABLE  R9 0 5       ; R9 := {}
 112 [-]: SETTABLE  R9 K0 K33    ; R9["NameTag"] := "/Lotus/Language/Menu/Cosmetics_CopyColors"
 113 [-]: GETGLOBAL R10 K5       ; R10 := 0x0032441c
@@ -6734,10 +6734,10 @@
 121 [-]: GETUPVAL  R10 U0       ; R10 := U0
 122 [-]: GETTABLE  R10 R10 K18  ; R10 := R10["Types"]
 123 [-]: GETTABLE  R10 R10 K37  ; R10 := R10["BUTTON"]
-124 [-]: SETTABLE  R9 K17 R10   ; R9["Type"] := R10
+124 [-]: SETTABLE  R9 K17 R10   ; R9[0xb5b3f4ea] := R10
 125 [-]: GETUPVAL  R10 U1       ; R10 := U1
 126 [-]: GETTABLE  R10 R10 K32  ; R10 := R10["ALL_COLORS"]
-127 [-]: SETTABLE  R9 K20 R10   ; R9[0x6c97a788] := R10
+127 [-]: SETTABLE  R9 K20 R10   ; R9[0x4bed4571] := R10
 128 [-]: SETLIST   R0 9 1       ; R0[(1-1)*FPF+i] := R(0+i), 1 <= i <= 9
 129 [-]: GETGLOBAL R1 K38       ; R1 := 0xc8802016
 130 [-]: MOVE      R2 R0        ; R2 := R0
@@ -7059,7 +7059,7 @@
 230 [-]: SETTABLE  R5 K52 R6    ; R5["ItemSelectionData"] := R6
 231 [-]: GETUPVAL  R6 U7        ; R6 := U7
 232 [-]: CALL      R6 1 2       ; R6 := R6()
-233 [-]: SETTABLE  R5 K62 R6    ; R5["mUnequipItem"] := R6
+233 [-]: SETTABLE  R5 K62 R6    ; R5[0x6c97a788] := R6
 234 [-]: TFORLOOP  R1 2         ; R4,R5 :=  R1(R2,R3); if R4 ~= nil then begin PC = 199; R3 := R4 end
 235 [-]: JMP       199          ; PC := 199
 236 [-]: MOVE      R6 R0        ; R6 := R0
@@ -7706,7 +7706,7 @@
 122 [-]: GETTABLE  R18 R5 K12   ; R18 := R5["mItemType"]
 123 [-]: CALL      R16 3 2      ; R16 := R16(R17,R18)
 124 [-]: SETTABLE  R15 K46 R16  ; R15["storeItem"] := R16
-125 [-]: SETTABLE  R15 K48 R5   ; R15[0x0000004a] := R5
+125 [-]: SETTABLE  R15 K48 R5   ; R15["info"] := R5
 126 [-]: SETTABLE  R15 K49 K40  ; R15["xp"] := 0.000000
 127 [-]: GETTABLE  R16 R1 K25   ; R16 := R1["mWeaponConfigIdx"]
 128 [-]: SETTABLE  R15 K50 R16  ; R15["configSlot"] := R16
@@ -7714,7 +7714,7 @@
 130 [-]: MOVE      R18 R6       ; R18 := R6
 131 [-]: CALL      R16 3 2      ; R16 := R16(R17,R18)
 132 [-]: SETTABLE  R15 K51 R16  ; R15["item"] := R16
-133 [-]: SETTABLE  R14 K44 R15  ; R14[0x0000004c] := R15
+133 [-]: SETTABLE  R14 K44 R15  ; R14["upgradeItem"] := R15
 134 [-]: GETGLOBAL R14 K53      ; R14 := 0xae91e43b
 135 [-]: SELF      R14 R14 K54  ; R15 := R14; R14 := R14[0x1fd6abd0]
 136 [-]: GETGLOBAL R16 K55      ; R16 := 0x93a422ee
@@ -7770,7 +7770,7 @@
  36 [-]: GETUPVAL  R6 U1        ; R6 := U1
  37 [-]: GETTABLE  R6 R6 K15    ; R6 := R6["Id"]
  38 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 39 [-]: SETTABLE  R4 K13 R5    ; R4["mItemId"] := R5
+ 39 [-]: SETTABLE  R4 K13 R5    ; R4[0x7b998233] := R5
  40 [-]: GETTABLE  R5 R4 K16    ; R5 := R4["mModSlot"]
  41 [-]: GETTABLE  R6 R1 K17    ; R6 := R1["mWeaponConfigIdx"]
  42 [-]: EQ        1 R5 R6      ; if R5 == R6 then PC := 47
@@ -7780,7 +7780,7 @@
  46 [-]: LOADBOOL  R2 1 0       ; R2 := true
  47 [-]: GETUPVAL  R5 U1        ; R5 := U1
  48 [-]: GETTABLE  R5 R5 K18    ; R5 := R5["ModSlot"]
- 49 [-]: SETTABLE  R4 K16 R5    ; R4["mModSlot"] := R5
+ 49 [-]: SETTABLE  R4 K16 R5    ; R4[0xe4162eed] := R5
  50 [-]: SELF      R5 R3 K19    ; R6 := R3; R5 := R3[0xffca321e]
  51 [-]: GETUPVAL  R7 U1        ; R7 := U1
  52 [-]: GETTABLE  R7 R7 K12    ; R7 := R7["Slot"]
@@ -8252,7 +8252,7 @@
  40 [-]: GETUPVAL  R0 U3        ; R0 := U3
  41 [-]: GETUPVAL  R0 U4        ; R0 := U4
  42 [-]: GETUPVAL  R0 U5        ; R0 := U5
- 43 [-]: SETTABLE  R4 K14 R5    ; R4[0xc0a3774b] := R5
+ 43 [-]: SETTABLE  R4 K14 R5    ; R4["mClipCreatedCallback"] := R5
  44 [-]: GETUPVAL  R4 U2        ; R4 := U2
  45 [-]: CLOSURE   R5 1         ; R5 := closure(Function #86.2)
  46 [-]: GETUPVAL  R0 U6        ; R0 := U6
@@ -11036,7 +11036,7 @@
  46 [-]: ADD       R11 R11 K21  ; R11 := R11 + 1.000000
  47 [-]: GETTABLE  R10 R10 R11  ; R10 := R10[R11]
  48 [-]: GETTABLE  R10 R10 K22  ; R10 := R10["Text"]
- 49 [-]: SETTABLE  R9 K20 R10   ; R9["SLOT"] := R10
+ 49 [-]: SETTABLE  R9 K20 R10   ; R9[0xf64b7262] := R10
  50 [-]: CALL      R5 5 2       ; R5 := R5(R6,R7,R8,R9)
  51 [-]: SETTABLE  R4 K15 R5    ; R4["LockedMsg"] := R5
  52 [-]: RETURN    R4 2         ; return R4
@@ -11795,7 +11795,7 @@
  14 [-]: GETTABLE  R4 R0 K6     ; R4 := R0["mAltButtonicon"]
  15 [-]: EQ        1 R4 R3      ; if R4 == R3 then PC := 25
  16 [-]: JMP       25           ; PC := 25
- 17 [-]: SETTABLE  R0 K6 R3     ; R0["mAltButtonicon"] := R3
+ 17 [-]: SETTABLE  R0 K6 R3     ; R0[0xae91e43b] := R3
  18 [-]: GETTABLE  R4 R0 K7     ; R4 := R0["mMovie"]
  19 [-]: SELF      R4 R4 K8     ; R5 := R4; R4 := R4[0x1cb415c1]
  20 [-]: GETTABLE  R6 R0 K9     ; R6 := R0["mClipName"]
@@ -11953,7 +11953,7 @@
  94 [-]: GETUPVAL  R4 U1        ; R4 := U1
  95 [-]: CLOSURE   R5 0         ; R5 := closure(Function #94.1)
  96 [-]: GETUPVAL  R0 U0        ; R0 := U0
- 97 [-]: SETTABLE  R4 K34 R5    ; R4[0x9383bc56] := R5
+ 97 [-]: SETTABLE  R4 K34 R5    ; R4["mClipCreatedCallback"] := R5
  98 [-]: GETUPVAL  R4 U1        ; R4 := U1
  99 [-]: CLOSURE   R5 1         ; R5 := closure(Function #94.2)
 100 [-]: GETUPVAL  R0 U1        ; R0 := U1
@@ -11994,11 +11994,11 @@
 135 [-]: GETUPVAL  R8 U1        ; R8 := U1
 136 [-]: SELF      R8 R8 K39    ; R9 := R8; R8 := R8[0xbad4316f]
 137 [-]: NEWTABLE  R10 0 4      ; R10 := {}
-138 [-]: SETTABLE  R10 K40 R7   ; R10["Skill"] := R7
+138 [-]: SETTABLE  R10 K40 R7   ; R10[0xae91e43b] := R7
 139 [-]: GETGLOBAL R11 K42      ; R11 := 0x38c7b4fe
 140 [-]: ADD       R12 R7 K43   ; R12 := R7 + 1.000000
 141 [-]: GETTABLE  R11 R11 R12  ; R11 := R11[R12]
-142 [-]: SETTABLE  R10 K41 R11  ; R10["Icon"] := R11
+142 [-]: SETTABLE  R10 K41 R11  ; R10[0x1cb415c1] := R11
 143 [-]: SETTABLE  R10 K44 K31  ; R10["mRank"] := 0.000000
 144 [-]: SETTABLE  R10 K45 K31  ; R10["Added"] := 0.000000
 145 [-]: LOADBOOL  R11 1 0      ; R11 := true
@@ -13154,7 +13154,7 @@
 102 [-]: GETUPVAL  R6 U2        ; R6 := U2
 103 [-]: GETTABLE  R6 R6 K12    ; R6 := R6["FloatingContentHighlight"]
 104 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-105 [-]: SETTABLE  R4 K22 R5    ; R4["FloatingContentHighlightObject"] := R5
+105 [-]: SETTABLE  R4 K22 R5    ; R4[0x7b998233] := R5
 106 [-]: GETGLOBAL R4 K23       ; R4 := 0x2d0fad09
 107 [-]: LOADK     R5 K24       ; R5 := "Lotus.Interface.Components.ThemedSpinner"
 108 [-]: CALL      R4 2 2       ; R4 := R4(R5)

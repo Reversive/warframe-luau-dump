@@ -369,10 +369,10 @@
  58 [-]: GETTABLE  R11 R11 K19  ; R82 := R11[0x338a8686]
  59 [-]: GETGLOBAL R12 K13      ; R12 := 0x0d0dada1
  60 [-]: CALL      R11 2 5      ; R11,R12,R13,R14 := R11(R12)
- 61 [-]: SETTABLE  R10 K18 R14  ; R10["HasEnoughReputationForSacrifice"] := R14
- 62 [-]: SETTABLE  R9 K17 R13   ; R9["ReputationRequired"] := R13
- 63 [-]: SETTABLE  R8 K16 R12   ; R8["Reputation"] := R12
- 64 [-]: SETTABLE  R7 K15 R11   ; R7["Level"] := R11
+ 61 [-]: SETTABLE  R10 K18 R14  ; R10[0xb4aa9d0e] := R14
+ 62 [-]: SETTABLE  R9 K17 R13   ; R9[0x50325564] := R13
+ 63 [-]: SETTABLE  R8 K16 R12   ; R8[0xf278f8a1] := R12
+ 64 [-]: SETTABLE  R7 K15 R11   ; R7[0xef3662ab] := R11
  65 [-]: GETGLOBAL R7 K20       ; R7 := 0x39190d81
  66 [-]: TEST      R7 1         ; if R7 then PC := 74
  67 [-]: JMP       74           ; PC := 74

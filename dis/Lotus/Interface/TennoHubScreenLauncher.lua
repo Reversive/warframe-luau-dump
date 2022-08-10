@@ -685,7 +685,7 @@
 150 [-]: LOADK     R15 K41      ; R15 := "/Lotus/Language/Menu/VoidTraderLeavingCountdown"
 151 [-]: LOADBOOL  R16 0 0      ; R16 := false
 152 [-]: NEWTABLE  R17 0 1      ; R17 := {}
-153 [-]: SETTABLE  R17 K42 R12  ; R17[0xdcbeb3e3] := R12
+153 [-]: SETTABLE  R17 K42 R12  ; R17["TIME"] := R12
 154 [-]: CALL      R13 5 2      ; R13 := R13(R14,R15,R16,R17)
 155 [-]: MOVE      R4 R13       ; R4 := R13
 156 [-]: JMP       255          ; PC := 255
@@ -752,7 +752,7 @@
 217 [-]: LOADK     R17 K51      ; R17 := "/Lotus/Language/Menu/VoidTraderArrivalCountdown"
 218 [-]: LOADBOOL  R18 0 0      ; R18 := false
 219 [-]: NEWTABLE  R19 0 1      ; R19 := {}
-220 [-]: SETTABLE  R19 K42 R14  ; R19[0xdcbeb3e3] := R14
+220 [-]: SETTABLE  R19 K42 R14  ; R19["TIME"] := R14
 221 [-]: CALL      R15 5 2      ; R15 := R15(R16,R17,R18,R19)
 222 [-]: MOVE      R4 R15       ; R4 := R15
 223 [-]: JMP       253          ; PC := 253
@@ -781,7 +781,7 @@
 246 [-]: LOADK     R18 K52      ; R18 := "/Lotus/Language/Menu/VoidTraderArrivalCountdownWithLocation"
 247 [-]: LOADBOOL  R19 0 0      ; R19 := false
 248 [-]: NEWTABLE  R20 0 2      ; R20 := {}
-249 [-]: SETTABLE  R20 K42 R14  ; R20[0xdcbeb3e3] := R14
+249 [-]: SETTABLE  R20 K42 R14  ; R20["TIME"] := R14
 250 [-]: SETTABLE  R20 K50 R11  ; R20["LOCATION"] := R11
 251 [-]: CALL      R16 5 2      ; R16 := R16(R17,R18,R19,R20)
 252 [-]: MOVE      R4 R16       ; R4 := R16
@@ -1209,7 +1209,7 @@
 115 [-]: MOVE      R16 R3       ; R16 := R3
 116 [-]: LOADNIL   R17 R17      ; R17 := nil
 117 [-]: CALL      R14 4 2      ; R14 := R14(R15,R16,R17)
-118 [-]: SETTABLE  R13 K29 R14  ; R13[0xaa041663] := R14
+118 [-]: SETTABLE  R13 K29 R14  ; R13[0xa9882367] := R14
 119 [-]: GETGLOBAL R13 K0       ; R13 := 0x7b998233
 120 [-]: MOVE      R14 R8       ; R14 := R8
 121 [-]: CALL      R13 2 2      ; R13 := R13(R14)
@@ -5940,7 +5940,7 @@
  10 [-]: GETUPVAL  R2 U3        ; R2 := U3
  11 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["KEY_TAG"]
  12 [-]: CONCAT    R1 R1 R2     ; R1 := R1 .. R2
- 13 [-]: SETTABLE  R0 K0 R1     ; R0["name"] := R1
+ 13 [-]: SETTABLE  R0 K0 R1     ; R0[0x1c3568a5] := R1
  14 [-]: SETTABLE  R0 K3 K4     ; R0["quest"] := ""
  15 [-]: SETTABLE  R0 K5 K6     ; R0["difficulty"] := nil
  16 [-]: GETGLOBAL R1 K7        ; R1 := cjson
@@ -7450,7 +7450,7 @@
  16 [-]: JMP       20           ; PC := 20
  17 [-]: GETGLOBAL R3 K5        ; R3 := _T
  18 [-]: NEWTABLE  R4 0 0       ; R4 := {}
- 19 [-]: SETTABLE  R3 K6 R4     ; R3[0x25a6e75e] := R4
+ 19 [-]: SETTABLE  R3 K6 R4     ; R3["DontPlayUntil"] := R4
  20 [-]: LT        0 K7 R2      ; if 0.000000 >= R2 then PC := 42
  21 [-]: JMP       42           ; PC := 42
  22 [-]: GETGLOBAL R3 K5        ; R3 := _T
@@ -9914,7 +9914,7 @@
   8 [-]: CALL      R1 1 2       ; R1 := R1()
   9 [-]: GETUPVAL  R2 U1        ; R2 := U1
  10 [-]: GETTABLE  R2 R2 K3     ; R2 := R2["mWisdom"]
- 11 [-]: SETTABLE  R1 K3 R2     ; R1[0x34291f5c] := R2
+ 11 [-]: SETTABLE  R1 K3 R2     ; R1["mWisdom"] := R2
  12 [-]: GETUPVAL  R2 U2        ; R2 := U2
  13 [-]: GETTABLE  R2 R2 K5     ; R82 := R2[0x06d055f9]
  14 [-]: GETTABLE  R3 R0 K6     ; R3 := R0["mAlignmentType"]
@@ -10577,7 +10577,7 @@
 ; Max Stack Size:  3
 
   1 [-]: GETGLOBAL R2 K0        ; R2 := _T
-  2 [-]: SETTABLE  R2 K1 R0     ; R2[0x89326c93] := R0
+  2 [-]: SETTABLE  R2 K1 R0     ; R2["PerrinDataResult"] := R0
   3 [-]: RETURN    R0 1         ; return 
 
 
@@ -10751,11 +10751,11 @@
  14 [-]: LOADK     R11 K6       ; R11 := "/Lotus/Language/Syndicates/PerrinSequenceName"
  15 [-]: LOADNIL   R12 R12      ; R12 := nil
  16 [-]: CALL      R10 3 2      ; R10 := R10(R11,R12)
- 17 [-]: SETTABLE  R9 K5 R10    ; R9[0x33307f92] := R10
+ 17 [-]: SETTABLE  R9 K5 R10    ; R9["SYNDICATE"] := R10
  18 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
  19 [-]: SETTABLE  R6 K2 R7     ; R6["mName"] := R7
  20 [-]: GETUPVAL  R7 U3        ; R7 := U3
- 21 [-]: SETTABLE  R6 K7 R7     ; R6[0x603636ad] := R7
+ 21 [-]: SETTABLE  R6 K7 R7     ; R6["mCallback"] := R7
  22 [-]: CALL      R4 3 1       ; R4(R5,R6)
  23 [-]: GETGLOBAL R4 K8        ; R4 := 0x7b998233
  24 [-]: GETGLOBAL R5 K9        ; R5 := 0x89326c93
@@ -10776,7 +10776,7 @@
  39 [-]: NEWTABLE  R6 0 2       ; R6 := {}
  40 [-]: SETTABLE  R6 K2 K12    ; R6["mName"] := "/Lotus/Language/SolarisVenus/BrowseMerchandise"
  41 [-]: GETUPVAL  R7 U5        ; R7 := U5
- 42 [-]: SETTABLE  R6 K7 R7     ; R6[0x603636ad] := R7
+ 42 [-]: SETTABLE  R6 K7 R7     ; R6["mCallback"] := R7
  43 [-]: CALL      R4 3 1       ; R4(R5,R6)
  44 [-]: TEST      R2 0         ; if not R2 then PC := 58
  45 [-]: JMP       58           ; PC := 58
@@ -10790,7 +10790,7 @@
  53 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
  54 [-]: SETTABLE  R6 K2 R7     ; R6["mName"] := R7
  55 [-]: GETUPVAL  R7 U6        ; R7 := U6
- 56 [-]: SETTABLE  R6 K7 R7     ; R6[0x603636ad] := R7
+ 56 [-]: SETTABLE  R6 K7 R7     ; R6["mCallback"] := R7
  57 [-]: CALL      R4 3 1       ; R4(R5,R6)
  58 [-]: GETGLOBAL R4 K14       ; R4 := _T
  59 [-]: GETTABLE  R4 R4 K15    ; R4 := R4["TaggedDialog"]

@@ -83,7 +83,7 @@
  51 [-]: SETTABLE  R1 K54 K16   ; R1["mPitchOffset"] := 0.000000
  52 [-]: SETTABLE  R1 K55 K56   ; R1["mApplyFocalTint"] := true
  53 [-]: CLOSURE   R2 0         ; R2 := closure(Function #1.1)
- 54 [-]: SETTABLE  R1 K57 R2    ; R1["GetParentEnv"] := R2
+ 54 [-]: SETTABLE  R1 K57 R2    ; R1[0x916fb113] := R2
  55 [-]: CLOSURE   R2 1         ; R2 := closure(Function #1.2)
  56 [-]: SETTABLE  R1 K58 R2    ; R1["TransitionInDone"] := R2
  57 [-]: CLOSURE   R2 2         ; R2 := closure(Function #1.3)

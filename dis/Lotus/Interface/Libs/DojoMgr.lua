@@ -963,16 +963,16 @@
 195 [-]: SETTABLE  R0 K105 R1   ; R0["OnComponentAborted"] := R1
 196 [-]: CLOSURE   R1 37        ; R1 := closure(Function #11.38)
 197 [-]: GETUPVAL  R0 U10       ; R0 := U10
-198 [-]: SETTABLE  R0 K106 R1   ; R0["SetComponentMessage"] := R1
+198 [-]: SETTABLE  R0 K106 R1   ; R0[0x7b998233] := R1
 199 [-]: CLOSURE   R1 38        ; R1 := closure(Function #11.39)
 200 [-]: SETTABLE  R0 K107 R1   ; R0["OnComponentMessageSet"] := R1
 201 [-]: CLOSURE   R1 39        ; R1 := closure(Function #11.40)
 202 [-]: GETUPVAL  R0 U10       ; R0 := U10
 203 [-]: SETTABLE  R0 K108 R1   ; R0["SetComponentName"] := R1
 204 [-]: CLOSURE   R1 40        ; R1 := closure(Function #11.41)
-205 [-]: SETTABLE  R0 K109 R1   ; R0["OnComponentNameSet"] := R1
+205 [-]: SETTABLE  R0 K109 R1   ; R0[0xdf830197] := R1
 206 [-]: CLOSURE   R1 41        ; R1 := closure(Function #11.42)
-207 [-]: SETTABLE  R0 K110 R1   ; R0["SetComponentSettings"] := R1
+207 [-]: SETTABLE  R0 K110 R1   ; R0[0x6c97a788] := R1
 208 [-]: CLOSURE   R1 42        ; R1 := closure(Function #11.43)
 209 [-]: SETTABLE  R0 K111 R1   ; R0["OnComponentSettingsSet"] := R1
 210 [-]: CLOSURE   R1 43        ; R1 := closure(Function #11.44)
@@ -991,7 +991,7 @@
 223 [-]: GETUPVAL  R0 U11       ; R0 := U11
 224 [-]: GETUPVAL  R0 U12       ; R0 := U12
 225 [-]: GETUPVAL  R0 U13       ; R0 := U13
-226 [-]: SETTABLE  R0 K118 R1   ; R0["CreateDeco"] := R1
+226 [-]: SETTABLE  R0 K118 R1   ; R0[0x7b998233] := R1
 227 [-]: CLOSURE   R1 50        ; R1 := closure(Function #11.51)
 228 [-]: SETTABLE  R0 K119 R1   ; R0["OnDecoResourceReady"] := R1
 229 [-]: CLOSURE   R1 51        ; R1 := closure(Function #11.52)
@@ -1000,9 +1000,9 @@
 232 [-]: GETUPVAL  R0 U14       ; R0 := U14
 233 [-]: GETUPVAL  R0 U10       ; R0 := U10
 234 [-]: GETUPVAL  R0 U13       ; R0 := U13
-235 [-]: SETTABLE  R0 K121 R1   ; R0["OnComponentChanged"] := R1
+235 [-]: SETTABLE  R0 K121 R1   ; R0[0xfbac5251] := R1
 236 [-]: CLOSURE   R1 53        ; R1 := closure(Function #11.54)
-237 [-]: SETTABLE  R0 K122 R1   ; R0["FindAllInZones"] := R1
+237 [-]: SETTABLE  R0 K122 R1   ; R0[0x6c97a788] := R1
 238 [-]: CLOSURE   R1 54        ; R1 := closure(Function #11.55)
 239 [-]: SETTABLE  R0 K123 R1   ; R0["IsEntityInZones"] := R1
 240 [-]: CLOSURE   R1 55        ; R1 := closure(Function #11.56)
@@ -1048,7 +1048,7 @@
 280 [-]: SETTABLE  R0 K141 R1   ; R0["RefreshOpenSpaceBackdrop"] := R1
 281 [-]: CLOSURE   R1 73        ; R1 := closure(Function #11.74)
 282 [-]: GETUPVAL  R0 U17       ; R0 := U17
-283 [-]: SETTABLE  R0 K142 R1   ; R0["RefreshAllDojoBackdrops"] := R1
+283 [-]: SETTABLE  R0 K142 R1   ; R0[0x7b998233] := R1
 284 [-]: RETURN    R0 2         ; return R0
 285 [-]: RETURN    R0 1         ; return 
 
@@ -2618,7 +2618,7 @@
  27 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  28 [-]: TEST      R4 1         ; if R4 then PC := 72
  29 [-]: JMP       72           ; PC := 72
- 30 [-]: SETTABLE  R0 K6 R1     ; R0["mComponentOperationCallback"] := R1
+ 30 [-]: SETTABLE  R0 K6 R1     ; R0[0x6c97a788] := R1
  31 [-]: LOADK     R4 255       ; R4 := 255.000000
  32 [-]: GETGLOBAL R5 K9        ; R5 := _T
  33 [-]: GETTABLE  R5 R5 K10    ; R5 := R5["PlacedDecoSocketInfo"]
@@ -2961,7 +2961,7 @@
  28 [-]: LOADK     R8 K8        ; R8 := "Bad character"
  29 [-]: CALL      R6 3 1       ; R6(R7,R8)
  30 [-]: RETURN    R0 1         ; return 
- 31 [-]: SETTABLE  R0 K1 R3     ; R0["mComponentOperationCallback"] := R3
+ 31 [-]: SETTABLE  R0 K1 R3     ; R0[0xc7fcada9] := R3
  32 [-]: GETTABLE  R6 R0 K9     ; R6 := R0["mJsonProcLevelHelper"]
  33 [-]: SELF      R6 R6 K10    ; R7 := R6; R6 := R6[0x2d8b1a74]
  34 [-]: MOVE      R8 R1        ; R8 := R1
@@ -3366,7 +3366,7 @@
  58 [-]: CALL      R7 2 2       ; R7 := R7(R8)
  59 [-]: EQ        1 R7 K16     ; if R7 == "" then PC := 62
  60 [-]: JMP       62           ; PC := 62
- 61 [-]: SETTABLE  R0 K17 R7    ; R0[0x450ef75f] := R7
+ 61 [-]: SETTABLE  R0 K17 R7    ; R0["mSpawnRoomId"] := R7
  62 [-]: GETTABLE  R8 R0 K17    ; R8 := R0["mSpawnRoomId"]
  63 [-]: EQ        1 R8 K16     ; if R8 == "" then PC := 85
  64 [-]: JMP       85           ; PC := 85
@@ -5657,7 +5657,7 @@
  49 [-]: MOVE      R12 R3       ; R12 := R3
  50 [-]: CALL      R6 7 1       ; R6(R7,R8,R9,R10,R11,R12)
  51 [-]: GETGLOBAL R6 K8        ; R6 := _T
- 52 [-]: SETTABLE  R6 K20 R1    ; R6[0x7ab914d8] := R1
+ 52 [-]: SETTABLE  R6 K20 R1    ; R6["DojoPlacingRecipe"] := R1
  53 [-]: LOADBOOL  R6 1 0       ; R6 := true
  54 [-]: RETURN    R6 2         ; return R6
  55 [-]: LOADBOOL  R6 0 0       ; R6 := false

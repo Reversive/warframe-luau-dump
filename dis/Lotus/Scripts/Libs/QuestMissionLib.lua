@@ -217,7 +217,7 @@
  14 [-]: SETTABLE  R2 K9 K8     ; R2["loadFromLobby"] := false
  15 [-]: SETTABLE  R2 K10 K11   ; R2["migrateServer"] := true
  16 [-]: GETTABLE  R3 R0 K12    ; R3 := R0["gameRules"]
- 17 [-]: SETTABLE  R2 K12 R3    ; R2[0x8eb2112d] := R3
+ 17 [-]: SETTABLE  R2 K12 R3    ; R2["gameRules"] := R3
  18 [-]: GETUPVAL  R3 U0        ; R3 := U0
  19 [-]: GETTABLE  R3 R3 K13    ; R82 := R3[0x6c3b4854]
  20 [-]: MOVE      R4 R2        ; R4 := R2
@@ -1538,7 +1538,7 @@
   8 [-]: LOADK     R7 0         ; R7 := 0.000000
   9 [-]: CALL      R3 5 2       ; R3 := R3(R4,R5,R6,R7)
  10 [-]: SETTABLE  R2 K4 R3     ; R2["Color"] := R3
- 11 [-]: SETTABLE  R1 K1 R2     ; R1["CustomStarChartNodeFilter"] := R2
+ 11 [-]: SETTABLE  R1 K1 R2     ; R1[0x77c731a8] := R2
  12 [-]: TEST      R0 0         ; if not R0 then PC := 47
  13 [-]: JMP       47           ; PC := 47
  14 [-]: GETGLOBAL R1 K0        ; R1 := _T
@@ -2171,7 +2171,7 @@
  43 [-]: TESTSET   R9 R3 1      ; if R3 then PC := 46 else R9 := R3
  44 [-]: JMP       46           ; PC := 46
  45 [-]: LOADNIL   R9 R9        ; R9 := nil
- 46 [-]: SETTABLE  R8 K11 R9    ; R8["questHidePets"] := R9
+ 46 [-]: SETTABLE  R8 K11 R9    ; R8[0x89326c93] := R9
  47 [-]: RETURN    R0 1         ; return 
 
 

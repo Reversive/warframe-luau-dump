@@ -377,7 +377,7 @@
  25 [-]: CONCAT    R5 R5 R6     ; R5 := R5 .. R6
  26 [-]: SETTABLE  R4 K7 R5     ; R4["Label"] := R5
  27 [-]: GETUPVAL  R5 U1        ; R5 := U1
- 28 [-]: SETTABLE  R4 K12 R5    ; R4["CallBack"] := R5
+ 28 [-]: SETTABLE  R4 K12 R5    ; R4[0x5b0290d2] := R5
  29 [-]: SETTABLE  R4 K13 K14   ; R4["CallOut"] := "MENU_CANCEL"
  30 [-]: CALL      R2 3 1       ; R2(R3,R4)
  31 [-]: GETGLOBAL R2 K2        ; R2 := _T

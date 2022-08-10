@@ -733,7 +733,7 @@
 158 [-]: GETTABLE  R16 R13 K22  ; R16 := R13[1.000000]
 159 [-]: GETTABLE  R17 R13 K34  ; R17 := R13[2.000000]
 160 [-]: CALL      R15 3 2      ; R15 := R15(R16,R17)
-161 [-]: SETTABLE  R14 K35 R15  ; R14[0x21fa5471] := R15
+161 [-]: SETTABLE  R14 K35 R15  ; R14["waitTimer"] := R15
 162 [-]: RETURN    R9 2         ; return R9
 163 [-]: RETURN    R0 1         ; return 
 
@@ -1045,7 +1045,7 @@
   2 [-]: GETGLOBAL R1 K2        ; R1 := 0x89326c93
   3 [-]: SELF      R1 R1 K3     ; R2 := R1; R1 := R1[0xfb64e76c]
   4 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  5 [-]: SETTABLE  R0 K1 R1     ; R0["StalkerTargetPlayer"] := R1
+  5 [-]: SETTABLE  R0 K1 R1     ; R0[0xdd25e9d1] := R1
   6 [-]: GETGLOBAL R0 K4        ; R0 := 0xbe190284
   7 [-]: SELF      R0 R0 K5     ; R1 := R0; R0 := R0[0x41bb89bc]
   8 [-]: CALL      R0 2 2       ; R0 := R0(R1)

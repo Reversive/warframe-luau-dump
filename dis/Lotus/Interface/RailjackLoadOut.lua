@@ -1690,7 +1690,7 @@
 144 [-]: GETUPVAL  R28 U9       ; R28 := U9
 145 [-]: CALL      R25 4 1      ; R25(R26,R27,R28)
 146 [-]: GETGLOBAL R25 K35      ; R25 := _T
-147 [-]: SETTABLE  R25 K36 R0   ; R25["CrewShip"] := R0
+147 [-]: SETTABLE  R25 K36 R0   ; R25[0xcbd666e1] := R0
 148 [-]: GETGLOBAL R25 K31      ; R25 := 0xe7f2b02f
 149 [-]: SELF      R25 R25 K32  ; R26 := R25; R25 := R25[0xb321d806]
 150 [-]: CALL      R25 2 2      ; R25 := R25(R26)
@@ -2997,7 +2997,7 @@
  94 [-]: JMP       98           ; PC := 98
  95 [-]: SELF      R21 R19 K27  ; R22 := R19; R21 := R19[0xf278f8a1]
  96 [-]: CALL      R21 2 2      ; R21 := R21(R22)
- 97 [-]: SETTABLE  R20 K26 R21  ; R20["mItemType"] := R21
+ 97 [-]: SETTABLE  R20 K26 R21  ; R20[0x25a6e75e] := R21
  98 [-]: GETGLOBAL R21 K24      ; R21 := 0x6c97a788
  99 [-]: GETTABLE  R21 R21 K28  ; R82 := R21[0x118303e2]
 100 [-]: GETTABLE  R22 R2 R16   ; R22 := R2[R16]
@@ -4535,7 +4535,7 @@
  13 [-]: GETTABLE  R11 R0 K0    ; R11 := R0["mElements"]
  14 [-]: GETTABLE  R11 R11 R8   ; R11 := R11[R8]
  15 [-]: GETTABLE  R11 R11 K4   ; R11 := R11["UID"]
- 16 [-]: SETTABLE  R10 K3 R11   ; R10[0x25d99d89] := R11
+ 16 [-]: SETTABLE  R10 K3 R11   ; R10["Id"] := R11
  17 [-]: GETTABLE  R11 R9 K1    ; R11 := R9["ItemType"]
  18 [-]: SELF      R11 R11 K5   ; R12 := R11; R11 := R11[0xed4e0128]
  19 [-]: CALL      R11 2 2      ; R11 := R11(R12)
@@ -6141,7 +6141,7 @@
  56 [-]: EQ        1 R12 K25    ; if R12 == "" then PC := 60
  57 [-]: JMP       60           ; PC := 60
  58 [-]: GETTABLE  R12 R7 K24   ; R12 := R7["mItemName"]
- 59 [-]: SETTABLE  R11 K26 R12  ; R11[0x2d0fad09] := R12
+ 59 [-]: SETTABLE  R11 K26 R12  ; R11["CustomName"] := R12
  60 [-]: TEST      R1 0         ; if not R1 then PC := 71
  61 [-]: JMP       71           ; PC := 71
  62 [-]: GETGLOBAL R12 K4       ; R12 := 0x7b998233
@@ -7670,7 +7670,7 @@
  42 [-]: GETUPVAL  R0 U5        ; R0 := U5
  43 [-]: MOVE      R0 R0        ; R0 := R0
  44 [-]: GETUPVAL  R0 U6        ; R0 := U6
- 45 [-]: SETTABLE  R2 K20 R3    ; R2[0xf64b7262] := R3
+ 45 [-]: SETTABLE  R2 K20 R3    ; R2["mOnSelectedCallback"] := R3
  46 [-]: GETGLOBAL R2 K5        ; R2 := mCategories
  47 [-]: CLOSURE   R3 4         ; R3 := closure(Function #68.5)
  48 [-]: GETUPVAL  R0 U0        ; R0 := U0
@@ -8734,7 +8734,7 @@
 320 [-]: SETTABLE  R25 K90 R26  ; R25["Name"] := R26
 321 [-]: SETTABLE  R25 K24 R18  ; R25["UID"] := R18
 322 [-]: SETTABLE  R25 K41 K17  ; R25["Xp"] := 0.000000
-323 [-]: SETTABLE  R25 K92 R16  ; R25[0x42b04007] := R16
+323 [-]: SETTABLE  R25 K92 R16  ; R25["Item"] := R16
 324 [-]: SETTABLE  R25 K93 K22  ; R25["ItemCount"] := 1.000000
 325 [-]: SETTABLE  R25 K94 K63  ; R25["AlwaysAvailable"] := true
 326 [-]: CALL      R23 3 1      ; R23(R24,R25)
@@ -9683,7 +9683,7 @@
   6 [-]: GETGLOBAL R0 K0        ; R0 := mEquipment
   7 [-]: GETUPVAL  R1 U0        ; R1 := U0
   8 [-]: GETTABLE  R1 R1 K3     ; R1 := R1["EQUIP_INV"]
-  9 [-]: SETTABLE  R0 K2 R1     ; R0["mOnSelectedState"] := R1
+  9 [-]: SETTABLE  R0 K2 R1     ; R0[0xbad4316f] := R1
  10 [-]: GETGLOBAL R0 K0        ; R0 := mEquipment
  11 [-]: SETTABLE  R0 K4 K6     ; R0["mProductCategory"] := 46.000000
  12 [-]: GETGLOBAL R0 K0        ; R0 := mEquipment
@@ -9862,7 +9862,7 @@
   6 [-]: GETGLOBAL R0 K0        ; R0 := mEquipment
   7 [-]: GETUPVAL  R1 U0        ; R1 := U0
   8 [-]: GETTABLE  R1 R1 K3     ; R1 := R1["WEAPON_INV"]
-  9 [-]: SETTABLE  R0 K2 R1     ; R0["mOnSelectedState"] := R1
+  9 [-]: SETTABLE  R0 K2 R1     ; R0[0xbad4316f] := R1
  10 [-]: GETGLOBAL R0 K0        ; R0 := mEquipment
  11 [-]: SETTABLE  R0 K4 K6     ; R0["mProductCategory"] := 43.000000
  12 [-]: GETGLOBAL R0 K0        ; R0 := mEquipment
@@ -11785,7 +11785,7 @@
  37 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
  38 [-]: SETTABLE  R4 K11 R5    ; R4["CONSUME_TYPE"] := R5
  39 [-]: GETTABLE  R5 R0 K16    ; R5 := R0["Name"]
- 40 [-]: SETTABLE  R4 K15 R5    ; R4[0x03f57322] := R5
+ 40 [-]: SETTABLE  R4 K15 R5    ; R4["ITEM_TYPE"] := R5
  41 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
  42 [-]: GETUPVAL  R3 U0        ; R3 := U0
  43 [-]: GETTABLE  R3 R3 K17    ; R82 := R3[0xf616a184]
@@ -13725,13 +13725,13 @@
  85 [-]: SETTABLE  R13 K21 R14  ; R13["TYPE_ONE"] := R14
  86 [-]: GETGLOBAL R14 K4       ; R14 := mFuseElement2
  87 [-]: GETTABLE  R14 R14 K11  ; R14 := R14["Name"]
- 88 [-]: SETTABLE  R13 K22 R14  ; R13[0x6c97a788] := R14
+ 88 [-]: SETTABLE  R13 K22 R14  ; R13["TYPE_TWO"] := R14
  89 [-]: GETGLOBAL R14 K10      ; R14 := mFuseElement3
  90 [-]: GETTABLE  R14 R14 K11  ; R14 := R14["Name"]
- 91 [-]: SETTABLE  R13 K23 R14  ; R13[0x1aba4d9e] := R14
+ 91 [-]: SETTABLE  R13 K23 R14  ; R13["TYPE_THREE"] := R14
  92 [-]: SETTABLE  R13 K24 R3   ; R13["STATS_ONE"] := R3
  93 [-]: SETTABLE  R13 K25 R5   ; R13["STATS_TWO"] := R5
- 94 [-]: SETTABLE  R13 K26 R7   ; R13[0xf2deaf69] := R7
+ 94 [-]: SETTABLE  R13 K26 R7   ; R13["STATS_THREE"] := R7
  95 [-]: SETTABLE  R13 K27 R2   ; R13["COST"] := R2
  96 [-]: SETTABLE  R13 K28 R8   ; R13["WORD"] := R8
  97 [-]: SETTABLE  R13 K29 K30  ; R13["HIGHLIGHT"] := "<font color=\"#FloatingContentHighlight\"><b>"
@@ -13747,13 +13747,13 @@
 107 [-]: SETTABLE  R14 K21 R15  ; R14["TYPE_ONE"] := R15
 108 [-]: GETGLOBAL R15 K4       ; R15 := mFuseElement2
 109 [-]: GETTABLE  R15 R15 K11  ; R15 := R15["Name"]
-110 [-]: SETTABLE  R14 K22 R15  ; R14[0x6c97a788] := R15
+110 [-]: SETTABLE  R14 K22 R15  ; R14["TYPE_TWO"] := R15
 111 [-]: GETGLOBAL R15 K10      ; R15 := mFuseElement3
 112 [-]: GETTABLE  R15 R15 K11  ; R15 := R15["Name"]
-113 [-]: SETTABLE  R14 K23 R15  ; R14[0x1aba4d9e] := R15
+113 [-]: SETTABLE  R14 K23 R15  ; R14["TYPE_THREE"] := R15
 114 [-]: SETTABLE  R14 K24 R3   ; R14["STATS_ONE"] := R3
 115 [-]: SETTABLE  R14 K25 R5   ; R14["STATS_TWO"] := R5
-116 [-]: SETTABLE  R14 K26 R7   ; R14[0xf2deaf69] := R7
+116 [-]: SETTABLE  R14 K26 R7   ; R14["STATS_THREE"] := R7
 117 [-]: SETTABLE  R14 K27 R2   ; R14["COST"] := R2
 118 [-]: CALL      R10 5 2      ; R10 := R10(R11,R12,R13,R14)
 119 [-]: LOADK     R11 K34      ; R11 := "<font color=\"#FloatingContent\">"
@@ -14585,7 +14585,7 @@
  48 [-]: LOADBOOL  R14 0 0      ; R14 := false
  49 [-]: NEWTABLE  R15 0 1      ; R15 := {}
  50 [-]: GETTABLE  R16 R10 K15  ; R16 := R10["Name"]
- 51 [-]: SETTABLE  R15 K14 R16  ; R15["SLOT"] := R16
+ 51 [-]: SETTABLE  R15 K14 R16  ; R15[0x42b04007] := R16
  52 [-]: TAILCALL  R11 5 0      ; R11,... := R11(R12,R13,R14,R15)
  53 [-]: RETURN    R11 0        ; return R11,...
  54 [-]: RETURN    R0 1         ; return 
@@ -14867,7 +14867,7 @@
  82 [-]: GETGLOBAL R3 K15       ; R3 := _T
  83 [-]: CLOSURE   R4 2         ; R4 := closure(Function #128.3)
  84 [-]: MOVE      R0 R1        ; R0 := R1
- 85 [-]: SETTABLE  R3 K28 R4    ; R3["GetFuseItems"] := R4
+ 85 [-]: SETTABLE  R3 K28 R4    ; R3[0xe4162eed] := R4
  86 [-]: GETGLOBAL R3 K1        ; R3 := mChildMovie
  87 [-]: SELF      R3 R3 K20    ; R4 := R3; R3 := R3[0xe4162eed]
  88 [-]: LOADK     R5 K29       ; R5 := "SetElementsFunction"
@@ -15392,7 +15392,7 @@
  54 [-]: LOADK     R6 K15       ; R6 := "BottomRightContainer.ScrollBar"
  55 [-]: CALL      R4 3 3       ; R4,R5 := R4(R5,R6)
  56 [-]: SETTABLE  R3 K22 R5    ; R3["mActiveY"] := R5
- 57 [-]: SETTABLE  R2 K21 R4    ; R2[0x0b35b612] := R4
+ 57 [-]: SETTABLE  R2 K21 R4    ; R2["mActiveX"] := R4
  58 [-]: RETURN    R0 1         ; return 
 
 
@@ -16034,7 +16034,7 @@
 145 [-]: CLOSURE   R6 6         ; R6 := closure(Function #144.7)
 146 [-]: MOVE      R0 R1        ; R0 := R1
 147 [-]: MOVE      R0 R2        ; R0 := R2
-148 [-]: SETTABLE  R5 K65 R6    ; R5[0xdf42446e] := R6
+148 [-]: SETTABLE  R5 K65 R6    ; R5["Attribute"] := R6
 149 [-]: CALL      R3 3 1       ; R3(R4,R5)
 150 [-]: GETGLOBAL R3 K6        ; R3 := mInventoryGrid
 151 [-]: SELF      R3 R3 K59    ; R4 := R3; R3 := R3[0xb029c588]
@@ -16049,7 +16049,7 @@
 160 [-]: CLOSURE   R6 7         ; R6 := closure(Function #144.8)
 161 [-]: MOVE      R0 R1        ; R0 := R1
 162 [-]: MOVE      R0 R2        ; R0 := R2
-163 [-]: SETTABLE  R5 K65 R6    ; R5[0xdf42446e] := R6
+163 [-]: SETTABLE  R5 K65 R6    ; R5["Attribute"] := R6
 164 [-]: CALL      R3 3 1       ; R3(R4,R5)
 165 [-]: GETGLOBAL R3 K6        ; R3 := mInventoryGrid
 166 [-]: SELF      R3 R3 K59    ; R4 := R3; R3 := R3[0xb029c588]
@@ -16064,7 +16064,7 @@
 175 [-]: CLOSURE   R6 8         ; R6 := closure(Function #144.9)
 176 [-]: MOVE      R0 R1        ; R0 := R1
 177 [-]: MOVE      R0 R2        ; R0 := R2
-178 [-]: SETTABLE  R5 K65 R6    ; R5[0xdf42446e] := R6
+178 [-]: SETTABLE  R5 K65 R6    ; R5["Attribute"] := R6
 179 [-]: CALL      R3 3 1       ; R3(R4,R5)
 180 [-]: GETGLOBAL R3 K0        ; R3 := 0xae91e43b
 181 [-]: SELF      R3 R3 K70    ; R4 := R3; R3 := R3[0x492f9da2]
@@ -16335,7 +16335,7 @@
  12 [-]: RETURN    R0 1         ; return 
  13 [-]: GETGLOBAL R2 K2        ; R2 := mInventoryGrid
  14 [-]: GETTABLE  R3 R0 K4     ; R3 := R0["Id"]
- 15 [-]: SETTABLE  R2 K3 R3     ; R2["mPrevSelectedId"] := R3
+ 15 [-]: SETTABLE  R2 K3 R3     ; R2[0x38f10e85] := R3
  16 [-]: GETUPVAL  R2 U0        ; R2 := U0
  17 [-]: GETTABLE  R2 R2 K5     ; R82 := R2[0x659d451f]
  18 [-]: GETGLOBAL R3 K6        ; R3 := 0x0032441c
@@ -17081,7 +17081,7 @@
  65 [-]: GETTABLE  R4 R4 K32    ; R4 := R4["mClipName"]
  66 [-]: LOADK     R5 0         ; R5 := 0.000000
  67 [-]: CALL      R2 4 2       ; R2 := R2(R3,R4,R5)
- 68 [-]: SETTABLE  R1 K30 R2    ; R1["mInitialX"] := R2
+ 68 [-]: SETTABLE  R1 K30 R2    ; R1[0xb6df3e50] := R2
  69 [-]: GETGLOBAL R1 K19       ; R1 := mScrapBtn
  70 [-]: GETGLOBAL R2 K0        ; R2 := 0xae91e43b
  71 [-]: SELF      R2 R2 K31    ; R3 := R2; R2 := R2[0x91a24e4b]
@@ -17124,7 +17124,7 @@
 108 [-]: GETTABLE  R4 R4 K32    ; R4 := R4["mClipName"]
 109 [-]: LOADK     R5 0         ; R5 := 0.000000
 110 [-]: CALL      R2 4 2       ; R2 := R2(R3,R4,R5)
-111 [-]: SETTABLE  R1 K30 R2    ; R1["mInitialX"] := R2
+111 [-]: SETTABLE  R1 K30 R2    ; R1[0xb6df3e50] := R2
 112 [-]: GETGLOBAL R1 K37       ; R1 := mTransferBtn
 113 [-]: GETGLOBAL R2 K0        ; R2 := 0xae91e43b
 114 [-]: SELF      R2 R2 K31    ; R3 := R2; R2 := R2[0x91a24e4b]
@@ -17271,14 +17271,14 @@
   5 [-]: SETTABLE  R1 K2 K3     ; R1["CustomEntry"] := true
   6 [-]: SETTABLE  R1 K4 K5     ; R1["Name"] := ""
   7 [-]: SETTABLE  R1 K6 K3     ; R1["TintName"] := true
-  8 [-]: SETTABLE  R0 K0 R1     ; R0["Info"] := R1
+  8 [-]: SETTABLE  R0 K0 R1     ; R0[0x19bd9dce] := R1
   9 [-]: GETTABLE  R1 R0 K0     ; R1 := R0["Info"]
  10 [-]: GETGLOBAL R2 K7        ; R2 := 0xae91e43b
  11 [-]: SELF      R2 R2 K8     ; R3 := R2; R2 := R2[0x42b04007]
  12 [-]: LOADK     R4 K9        ; R4 := "/Lotus/Language/Menu/ItemSelection_SellSalvage"
  13 [-]: LOADBOOL  R5 1 0       ; R5 := true
  14 [-]: CALL      R2 4 2       ; R2 := R2(R3,R4,R5)
- 15 [-]: SETTABLE  R1 K4 R2     ; R1["Name"] := R2
+ 15 [-]: SETTABLE  R1 K4 R2     ; R1[0x25d99d89] := R2
  16 [-]: GETGLOBAL R1 K10       ; R1 := mInventoryGrid
  17 [-]: GETTABLE  R1 R1 K11    ; R1 := R1["mSelectedElement"]
  18 [-]: EQ        0 R1 K1      ; if R1 ~= nil then PC := 21
@@ -17713,7 +17713,7 @@
  59 [-]: GETTABLE  R16 R7 K18   ; R16 := R7["SalvageProgress"]
  60 [-]: MUL       R16 R16 K19  ; R16 := R16 * 100.000000
  61 [-]: CALL      R15 2 2      ; R15 := R15(R16)
- 62 [-]: SETTABLE  R14 K15 R15  ; R14[0x7b998233] := R15
+ 62 [-]: SETTABLE  R14 K15 R15  ; R14["PERCENT"] := R15
  63 [-]: CALL      R10 5 2      ; R10 := R10(R11,R12,R13,R14)
  64 [-]: MOVE      R8 R10       ; R8 := R10
  65 [-]: LOADK     R2 K20       ; R2 := "/Lotus/Language/Menu/ItemSelection_Repair"

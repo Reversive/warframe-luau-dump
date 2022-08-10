@@ -49,9 +49,9 @@
  40 [-]: LOADK     R24 K11      ; R24 := ""
  41 [-]: NEWTABLE  R25 0 3      ; R25 := {}
  42 [-]: NEWTABLE  R26 0 0      ; R26 := {}
- 43 [-]: SETTABLE  R25 K12 R26  ; R25["Real"] := R26
+ 43 [-]: SETTABLE  R25 K12 R26  ; R25[0x41e2ae25] := R26
  44 [-]: NEWTABLE  R26 0 0      ; R26 := {}
- 45 [-]: SETTABLE  R25 K13 R26  ; R25["Tags"] := R26
+ 45 [-]: SETTABLE  R25 K13 R26  ; R25[0x64fb1586] := R26
  46 [-]: NEWTABLE  R26 0 0      ; R26 := {}
  47 [-]: SETTABLE  R25 K14 R26  ; R25["Indexer"] := R26
  48 [-]: NEWTABLE  R26 0 0      ; R26 := {}
@@ -1129,7 +1129,7 @@
  80 [-]: LOADK     R10 K19      ; R10 := ">"
  81 [-]: CONCAT    R8 R8 R10    ; R8 := R8 .. R9 .. R10
  82 [-]: CALL      R3 6 2       ; R3 := R3(R4,R5,R6,R7,R8)
- 83 [-]: SETTABLE  R2 K13 R3    ; R2[0x2cc9d281] := R3
+ 83 [-]: SETTABLE  R2 K13 R3    ; R2["CustomBtn"] := R3
  84 [-]: GETGLOBAL R2 K11       ; R2 := 0x7b998233
  85 [-]: GETTABLE  R3 R1 K20    ; R3 := R1["ConfirmCallback"]
  86 [-]: CALL      R2 2 2       ; R2 := R2(R3)
@@ -1153,7 +1153,7 @@
 104 [-]: SETTABLE  R2 K24 R3    ; R2["CallBack"] := R3
 105 [-]: GETUPVAL  R2 U7        ; R2 := U7
 106 [-]: GETTABLE  R3 R1 K15    ; R3 := R1["Label"]
-107 [-]: SETTABLE  R2 K15 R3    ; R2[0x06d055f9] := R3
+107 [-]: SETTABLE  R2 K15 R3    ; R2["Label"] := R3
 108 [-]: GETUPVAL  R2 U0        ; R2 := U0
 109 [-]: ADD       R2 R2 K9     ; R2 := R2 + 1.000000
 110 [-]: SETUPVAL  R2 U0        ; U82 := 
@@ -1639,7 +1639,7 @@
  73 [-]: GETUPVAL  R1 U0        ; R1 := U0
  74 [-]: CLOSURE   R2 6         ; R2 := closure(Function #15.7)
  75 [-]: GETUPVAL  R0 U6        ; R0 := U6
- 76 [-]: SETTABLE  R1 K26 R2    ; R1["CalculateWidth"] := R2
+ 76 [-]: SETTABLE  R1 K26 R2    ; R1[0xdfc0d50b] := R2
  77 [-]: GETUPVAL  R1 U0        ; R1 := U0
  78 [-]: GETUPVAL  R2 U0        ; R2 := U0
  79 [-]: GETTABLE  R2 R2 K28    ; R2 := R2["CalculateX"]
@@ -1969,7 +1969,7 @@
   4 [-]: SETTABLE  R2 K1 K0     ; R2["mNewColor"] := nil
   5 [-]: JMP       8            ; PC := 8
   6 [-]: GETUPVAL  R2 U0        ; R2 := U0
-  7 [-]: SETTABLE  R2 K1 R0     ; R2[0x03f57322] := R0
+  7 [-]: SETTABLE  R2 K1 R0     ; R2["mNewColor"] := R0
   8 [-]: RETURN    R0 1         ; return 
 
 
@@ -1987,7 +1987,7 @@
   3 [-]: GETUPVAL  R1 U0        ; R1 := U0
   4 [-]: GETUPVAL  R2 U0        ; R2 := U0
   5 [-]: GETTABLE  R2 R2 K1     ; R2 := R2["mNewColor"]
-  6 [-]: SETTABLE  R1 K0 R2     ; R1[0x1c5b546f] := R2
+  6 [-]: SETTABLE  R1 K0 R2     ; R1["mCurrColor"] := R2
   7 [-]: GETGLOBAL R1 K2        ; R1 := 0x7b998233
   8 [-]: GETUPVAL  R2 U0        ; R2 := U0
   9 [-]: GETTABLE  R2 R2 K3     ; R2 := R2["mOnColorSelected"]
@@ -2241,12 +2241,12 @@
 217 [-]: GETTABLE  R3 R0 K57    ; R3 := R0["Toggle"]
 218 [-]: GETTABLE  R4 R0 K57    ; R4 := R0["Toggle"]
 219 [-]: GETTABLE  R4 R4 K66    ; R4 := R4["TrySetFocus"]
-220 [-]: SETTABLE  R3 K65 R4    ; R3["ComponentTrySetFocus"] := R4
+220 [-]: SETTABLE  R3 K65 R4    ; R3[0xdf42446e] := R4
 221 [-]: GETTABLE  R3 R0 K57    ; R3 := R0["Toggle"]
 222 [-]: CLOSURE   R4 1         ; R4 := closure(Function #15.5.2)
 223 [-]: GETUPVAL  R0 U6        ; R0 := U6
 224 [-]: MOVE      R0 R0        ; R0 := R0
-225 [-]: SETTABLE  R3 K66 R4    ; R3["TrySetFocus"] := R4
+225 [-]: SETTABLE  R3 K66 R4    ; R3[0x03f57322] := R4
 226 [-]: GETTABLE  R3 R0 K57    ; R3 := R0["Toggle"]
 227 [-]: GETTABLE  R4 R0 K57    ; R4 := R0["Toggle"]
 228 [-]: GETTABLE  R4 R4 K68    ; R4 := R4["TrySetAltFocus"]
@@ -2467,16 +2467,16 @@
 443 [-]: CLOSURE   R7 6         ; R7 := closure(Function #15.5.7)
 444 [-]: GETUPVAL  R0 U6        ; R0 := U6
 445 [-]: MOVE      R0 R0        ; R0 := R0
-446 [-]: SETTABLE  R6 K104 R7   ; R6["InputFieldFocused"] := R7
+446 [-]: SETTABLE  R6 K104 R7   ; R6[0x7e5bccc3] := R7
 447 [-]: GETTABLE  R6 R0 K99    ; R6 := R0["InputField"]
 448 [-]: CLOSURE   R7 7         ; R7 := closure(Function #15.5.8)
 449 [-]: GETUPVAL  R0 U6        ; R0 := U6
 450 [-]: MOVE      R0 R0        ; R0 := R0
-451 [-]: SETTABLE  R6 K105 R7   ; R6["mOnFocusedCallback"] := R7
+451 [-]: SETTABLE  R6 K105 R7   ; R6[0xdf42446e] := R7
 452 [-]: GETTABLE  R6 R0 K99    ; R6 := R0["InputField"]
 453 [-]: GETTABLE  R7 R0 K99    ; R7 := R0["InputField"]
 454 [-]: GETTABLE  R7 R7 K107   ; R7 := R7["InputFieldTextChanged"]
-455 [-]: SETTABLE  R6 K106 R7   ; R6["BaseInputFieldTextChanged"] := R7
+455 [-]: SETTABLE  R6 K106 R7   ; R6[0x03f57322] := R7
 456 [-]: GETTABLE  R6 R0 K99    ; R6 := R0["InputField"]
 457 [-]: CLOSURE   R7 8         ; R7 := closure(Function #15.5.9)
 458 [-]: GETUPVAL  R0 U4        ; R0 := U4
@@ -2733,7 +2733,7 @@
 709 [-]: GETTABLE  R16 R0 K156  ; R16 := R0["mColumns"]
 710 [-]: GETTABLE  R17 R0 K145  ; R17 := R0["mRows"]
 711 [-]: CALL      R12 6 2      ; R12 := R12(R13,R14,R15,R16,R17)
-712 [-]: SETTABLE  R0 K147 R12  ; R0["mIconGrid"] := R12
+712 [-]: SETTABLE  R0 K147 R12  ; R0[0x1e7d283a] := R12
 713 [-]: GETTABLE  R12 R0 K147  ; R12 := R0["mIconGrid"]
 714 [-]: SELF      R12 R12 K85  ; R13 := R12; R12 := R12[0x1e5b5cfe]
 715 [-]: LOADK     R14 K151     ; R14 := "IconPressed"
@@ -2754,7 +2754,7 @@
 730 [-]: CLOSURE   R13 12       ; R13 := closure(Function #15.5.13)
 731 [-]: MOVE      R0 R0        ; R0 := R0
 732 [-]: GETUPVAL  R0 U9        ; R0 := U9
-733 [-]: SETTABLE  R12 K105 R13 ; R12["mOnFocusedCallback"] := R13
+733 [-]: SETTABLE  R12 K105 R13 ; R12[0xdf42446e] := R13
 734 [-]: GETTABLE  R12 R0 K147  ; R12 := R0["mIconGrid"]
 735 [-]: CLOSURE   R13 13       ; R13 := closure(Function #15.5.14)
 736 [-]: MOVE      R0 R0        ; R0 := R0
@@ -4625,7 +4625,7 @@
  21 [-]: GETUPVAL  R3 U0        ; R3 := U0
  22 [-]: ADD       R4 R2 R1     ; R4 := R2 + R1
  23 [-]: ADD       R4 R4 K7     ; R4 := R4 + 55.000000
- 24 [-]: SETTABLE  R3 K6 R4     ; R3[0x9ba7909f] := R4
+ 24 [-]: SETTABLE  R3 K6 R4     ; R3["mInitialY"] := R4
  25 [-]: RETURN    R0 1         ; return 
 
 

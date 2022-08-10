@@ -357,7 +357,7 @@
  26 [-]: MOVE      R12 R8       ; R12 := R8
  27 [-]: MOVE      R13 R6       ; R13 := R6
  28 [-]: CALL      R10 4 2      ; R10 := R10(R11,R12,R13)
- 29 [-]: SETTABLE  R9 K3 R10    ; R9[0x91fb01d5] := R10
+ 29 [-]: SETTABLE  R9 K3 R10    ; R9["mUpgradeFingerprint"] := R10
  30 [-]: GETUPVAL  R9 U1        ; R9 := U1
  31 [-]: GETUPVAL  R10 U2       ; R10 := U2
  32 [-]: GETTABLE  R10 R10 K8   ; R82 := R10[0xfc31b69e]
@@ -371,7 +371,7 @@
  40 [-]: LOADK     R12 0        ; R12 := 0.000000
  41 [-]: MOVE      R13 R6       ; R13 := R6
  42 [-]: CALL      R10 4 2      ; R10 := R10(R11,R12,R13)
- 43 [-]: SETTABLE  R9 K3 R10    ; R9[0x91fb01d5] := R10
+ 43 [-]: SETTABLE  R9 K3 R10    ; R9["mUpgradeFingerprint"] := R10
  44 [-]: GETUPVAL  R9 U1        ; R9 := U1
  45 [-]: GETUPVAL  R10 U2       ; R10 := U2
  46 [-]: GETTABLE  R10 R10 K8   ; R82 := R10[0xfc31b69e]

@@ -3300,7 +3300,7 @@
  95 [-]: GETTABLE  R11 R11 R10  ; R11 := R11[R10]
  96 [-]: GETUPVAL  R12 U6       ; R12 := U6
  97 [-]: GETTABLE  R12 R12 R10  ; R12 := R12[R10]
- 98 [-]: SETTABLE  R11 K21 R12  ; R11["mReward"] := R12
+ 98 [-]: SETTABLE  R11 K21 R12  ; R11[0x1fcc5f94] := R12
  99 [-]: GETUPVAL  R11 U7       ; R11 := U7
 100 [-]: GETUPVAL  R12 U1       ; R12 := U1
 101 [-]: GETTABLE  R12 R12 R10  ; R12 := R12[R10]
@@ -4638,7 +4638,7 @@
  55 [-]: GETUPVAL  R0 U2        ; R0 := U2
  56 [-]: GETUPVAL  R0 U1        ; R0 := U1
  57 [-]: GETUPVAL  R0 U0        ; R0 := U0
- 58 [-]: SETTABLE  R1 K30 R2    ; R1["mOnFocusedCallback"] := R2
+ 58 [-]: SETTABLE  R1 K30 R2    ; R1[0xbd2e96ea] := R2
  59 [-]: GETUPVAL  R1 U0        ; R1 := U0
  60 [-]: CLOSURE   R2 3         ; R2 := closure(Function #39.4)
  61 [-]: GETUPVAL  R0 U2        ; R0 := U2
@@ -4811,7 +4811,7 @@
  27 [-]: JMP       29           ; PC := 29
  28 [-]: LOADBOOL  R6 0 1       ; R6 := false; PC := 29
  29 [-]: LOADBOOL  R6 1 0       ; R6 := true
- 30 [-]: SETTABLE  R5 K8 R6     ; R5[0xc339daf7] := R6
+ 30 [-]: SETTABLE  R5 K8 R6     ; R5["IsSelected"] := R6
  31 [-]: SETTABLE  R5 K11 K12   ; R5["ZoomYShift"] := 0.000000
  32 [-]: CALL      R1 5 1       ; R1(R2,R3,R4,R5)
  33 [-]: RETURN    R0 1         ; return 

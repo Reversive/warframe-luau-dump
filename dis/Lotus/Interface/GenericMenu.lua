@@ -2009,7 +2009,7 @@
  32 [-]: MOVE      R9 R5        ; R9 := R5
  33 [-]: LOADK     R10 K8       ; R10 := "Test"
  34 [-]: CONCAT    R9 R9 R10    ; R9 := R9 .. R10
- 35 [-]: SETTABLE  R8 K9 R9     ; R8[0x7c09c373] := R9
+ 35 [-]: SETTABLE  R8 K9 R9     ; R8["mName"] := R9
  36 [-]: SETTABLE  R8 K10 K11   ; R8["Action"] := "AIM_WEAPON"
  37 [-]: SETTABLE  R8 K12 K13   ; R8["ExcludePowers"] := true
  38 [-]: SETTABLE  R8 K14 K13   ; R8["AllowMelee2"] := true
@@ -3393,7 +3393,7 @@
   4 [-]: GETTABLE  R1 R1 K2     ; R82 := R1[0x1467d5f4]
   5 [-]: CALL      R1 1 2       ; R1 := R1()
   6 [-]: NOT       R1 R1        ; R1 := not R1
-  7 [-]: SETTABLE  R0 K3 R1     ; R0[0xac1b386a] := R1
+  7 [-]: SETTABLE  R0 K3 R1     ; R0["mAltButtonVisible"] := R1
   8 [-]: GETGLOBAL R2 K4        ; R2 := 0xae91e43b
   9 [-]: SELF      R2 R2 K5     ; R3 := R2; R2 := R2[0xc0a3774b]
  10 [-]: GETTABLE  R4 R0 K6     ; R4 := R0["mClipName"]

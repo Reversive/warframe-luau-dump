@@ -83,7 +83,7 @@
  74 [-]: LOADK     R23 0        ; R23 := 0.750000
  75 [-]: LOADK     R24 1        ; R24 := 1.000000
  76 [-]: SETLIST   R20 4 1      ; R20[(1-1)*FPF+i] := R(20+i), 1 <= i <= 4
- 77 [-]: SETTABLE  R19 K27 R20  ; R19[0xf7d48ee0] := R20
+ 77 [-]: SETTABLE  R19 K27 R20  ; R19["percent"] := R20
  78 [-]: NEWTABLE  R20 0 2      ; R20 := {}
  79 [-]: GETGLOBAL R21 K1       ; R21 := 0x0469f296
  80 [-]: LOADK     R22 K28      ; R22 := "SecondChance"
@@ -123,7 +123,7 @@
 114 [-]: LOADK     R26 K37      ; R26 := 0.800000
 115 [-]: LOADK     R27 1        ; R27 := 1.000000
 116 [-]: SETLIST   R23 4 1      ; R23[(1-1)*FPF+i] := R(23+i), 1 <= i <= 4
-117 [-]: SETTABLE  R22 K27 R23  ; R22[0xf7d48ee0] := R23
+117 [-]: SETTABLE  R22 K27 R23  ; R22["percent"] := R23
 118 [-]: NEWTABLE  R23 4 0      ; R23 := {}
 119 [-]: LOADK     R24 10       ; R24 := 10.000000
 120 [-]: LOADK     R25 20       ; R25 := 20.000000
@@ -142,7 +142,7 @@
 133 [-]: LOADK     R27 K35      ; R27 := 0.400000
 134 [-]: LOADK     R28 0        ; R28 := 0.500000
 135 [-]: SETLIST   R24 4 1      ; R24[(1-1)*FPF+i] := R(24+i), 1 <= i <= 4
-136 [-]: SETTABLE  R23 K27 R24  ; R23[0xf7d48ee0] := R24
+136 [-]: SETTABLE  R23 K27 R24  ; R23["percent"] := R24
 137 [-]: NEWTABLE  R24 4 0      ; R24 := {}
 138 [-]: LOADK     R25 10       ; R25 := 10.000000
 139 [-]: LOADK     R26 20       ; R26 := 20.000000
@@ -161,7 +161,7 @@
 152 [-]: LOADK     R28 K40      ; R28 := 0.300000
 153 [-]: LOADK     R29 K35      ; R29 := 0.400000
 154 [-]: SETLIST   R25 4 1      ; R25[(1-1)*FPF+i] := R(25+i), 1 <= i <= 4
-155 [-]: SETTABLE  R24 K27 R25  ; R24[0xf7d48ee0] := R25
+155 [-]: SETTABLE  R24 K27 R25  ; R24["percent"] := R25
 156 [-]: NEWTABLE  R25 4 0      ; R25 := {}
 157 [-]: LOADK     R26 5        ; R26 := 5.000000
 158 [-]: LOADK     R27 10       ; R27 := 10.000000
@@ -1941,7 +1941,7 @@
  77 [-]: ADD       R4 R10 R9    ; R4 := R10 + R9
  78 [-]: GETTABLE  R10 R4 K15   ; R10 := R4["y"]
  79 [-]: SUB       R10 R10 K17  ; R10 := R10 - 0.250000
- 80 [-]: SETTABLE  R4 K15 R10   ; R4["y"] := R10
+ 80 [-]: SETTABLE  R4 K15 R10   ; R4[0xc69087f6] := R10
  81 [-]: SELF      R10 R6 K10   ; R11 := R6; R10 := R6[0x5280b883]
  82 [-]: CALL      R10 2 2      ; R10 := R10(R11)
  83 [-]: MOVE      R5 R10       ; R5 := R10
@@ -5948,7 +5948,7 @@
 1361 [-]: SETLIST   R46 1 1      ; R46[(1-1)*FPF+i] := R(46+i), 1 <= i <= 1
 1362 [-]: SETTABLE  R45 K173 R46 ; R45["affected"] := R46
 1363 [-]: SETTABLE  R45 K174 K175; R45["buffType"] := 3.000000
-1364 [-]: SETTABLE  R45 K176 R43 ; R45[0x7b998233] := R43
+1364 [-]: SETTABLE  R45 K176 R43 ; R45["buffData"] := R43
 1365 [-]: GETGLOBAL R46 K135     ; R46 := 0x5bced4c4
 1366 [-]: GETTABLE  R46 R46 K178 ; R82 := R46[0x55f27c30]
 1367 [-]: MUL       R47 R44 K179 ; R47 := R44 * 100.000000
@@ -5957,7 +5957,7 @@
 1370 [-]: GETGLOBAL R46 K29      ; R46 := 0x7ed0a956
 1371 [-]: LOADK     R47 K181     ; R47 := "/Lotus/Upgrades/Focus/Tactic/Active/ComboAmpDamageFocusUpgrade"
 1372 [-]: CALL      R46 2 2      ; R46 := R46(R47)
-1373 [-]: SETTABLE  R45 K180 R46 ; R45[0x388577d5] := R46
+1373 [-]: SETTABLE  R45 K180 R46 ; R45["abilityType"] := R46
 1374 [-]: SELF      R46 R2 K88   ; R47 := R2; R46 := R2[0xde321e6f]
 1375 [-]: CALL      R46 2 2      ; R46 := R46(R47)
 1376 [-]: MOVE      R40 R46      ; R40 := R46
@@ -6032,11 +6032,11 @@
 1445 [-]: SETLIST   R49 1 1      ; R49[(1-1)*FPF+i] := R(49+i), 1 <= i <= 1
 1446 [-]: SETTABLE  R48 K173 R49 ; R48["affected"] := R49
 1447 [-]: SETTABLE  R48 K174 K134; R48["buffType"] := 1.000000
-1448 [-]: SETTABLE  R48 K176 R47 ; R48[0x7b998233] := R47
+1448 [-]: SETTABLE  R48 K176 R47 ; R48["buffData"] := R47
 1449 [-]: GETGLOBAL R49 K29      ; R49 := 0x7ed0a956
 1450 [-]: LOADK     R50 K188     ; R50 := "/Lotus/Upgrades/Focus/Ward/Active/InvulnerableReturnFocusUpgrade"
 1451 [-]: CALL      R49 2 2      ; R49 := R49(R50)
-1452 [-]: SETTABLE  R48 K180 R49 ; R48[0x388577d5] := R49
+1452 [-]: SETTABLE  R48 K180 R49 ; R48["abilityType"] := R49
 1453 [-]: SELF      R49 R2 K122  ; R50 := R2; R49 := R2[0x1ac1655c]
 1454 [-]: CALL      R49 2 2      ; R49 := R49(R50)
 1455 [-]: SELF      R49 R49 K189 ; R50 := R49; R49 := R49[0x4a9da24c]
@@ -8604,11 +8604,11 @@
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0x6c97a788
   2 [-]: GETTABLE  R1 R1 K1     ; R82 := R1[0x608bc054]
   3 [-]: CALL      R1 1 2       ; R1 := R1()
-  4 [-]: SETTABLE  R1 K2 R0     ; R1[0xf27431aa] := R0
+  4 [-]: SETTABLE  R1 K2 R0     ; R1["instigator"] := R0
   5 [-]: NEWTABLE  R2 1 0       ; R2 := {}
   6 [-]: MOVE      R3 R0        ; R3 := R0
   7 [-]: SETLIST   R2 1 1       ; R2[(1-1)*FPF+i] := R(2+i), 1 <= i <= 1
-  8 [-]: SETTABLE  R1 K3 R2     ; R1[0x7b998233] := R2
+  8 [-]: SETTABLE  R1 K3 R2     ; R1["affected"] := R2
   9 [-]: SETTABLE  R1 K4 K5     ; R1["buffType"] := 1.000000
  10 [-]: GETGLOBAL R2 K6        ; R2 := 0x7b998233
  11 [-]: GETGLOBAL R3 K7        ; R3 := 0x6687f6e0
@@ -8618,12 +8618,12 @@
  15 [-]: GETGLOBAL R2 K7        ; R2 := 0x6687f6e0
  16 [-]: SELF      R2 R2 K9     ; R3 := R2; R2 := R2[0xcde10c4a]
  17 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 18 [-]: SETTABLE  R1 K8 R2     ; R1[0x6687f6e0] := R2
+ 18 [-]: SETTABLE  R1 K8 R2     ; R1["abilityType"] := R2
  19 [-]: JMP       22           ; PC := 22
  20 [-]: GETGLOBAL R2 K10       ; R2 := 0x52d433a4
- 21 [-]: SETTABLE  R1 K8 R2     ; R1[0x6687f6e0] := R2
+ 21 [-]: SETTABLE  R1 K8 R2     ; R1["abilityType"] := R2
  22 [-]: GETUPVAL  R2 U0        ; R2 := U0
- 23 [-]: SETTABLE  R1 K11 R2    ; R1[0x5578d98b] := R2
+ 23 [-]: SETTABLE  R1 K11 R2    ; R1[0xbe190284] := R2
  24 [-]: SELF      R2 R0 K12    ; R3 := R0; R2 := R0[0x37e45fb5]
  25 [-]: MOVE      R4 R1        ; R4 := R1
  26 [-]: LOADBOOL  R5 1 0       ; R5 := true
@@ -8688,12 +8688,12 @@
  85 [-]: GETUPVAL  R6 U0        ; R6 := U0
  86 [-]: LT        0 K19 R6     ; if 0.000000 >= R6 then PC := 99
  87 [-]: JMP       99           ; PC := 99
- 88 [-]: SETTABLE  R1 K2 R0     ; R1[0xf27431aa] := R0
+ 88 [-]: SETTABLE  R1 K2 R0     ; R1["instigator"] := R0
  89 [-]: NEWTABLE  R6 2 0       ; R6 := {}
  90 [-]: MOVE      R7 R0        ; R7 := R0
  91 [-]: MOVE      R8 R4        ; R8 := R4
  92 [-]: SETLIST   R6 2 1       ; R6[(1-1)*FPF+i] := R(6+i), 1 <= i <= 2
- 93 [-]: SETTABLE  R1 K3 R6     ; R1[0x7b998233] := R6
+ 93 [-]: SETTABLE  R1 K3 R6     ; R1["affected"] := R6
  94 [-]: SELF      R6 R0 K12    ; R7 := R0; R6 := R0[0x37e45fb5]
  95 [-]: MOVE      R8 R1        ; R8 := R1
  96 [-]: LOADBOOL  R9 0 0       ; R9 := false

@@ -222,7 +222,7 @@
  27 [-]: MOVE      R3 R4        ; R3 := R4
  28 [-]: GETTABLE  R4 R2 K8     ; R4 := R2["i"]
  29 [-]: ADD       R4 R4 K9     ; R4 := R4 + 1.000000
- 30 [-]: SETTABLE  R2 K8 R4     ; R2[0x34291f5c] := R4
+ 30 [-]: SETTABLE  R2 K8 R4     ; R2["i"] := R4
  31 [-]: GETTABLE  R4 R2 K8     ; R4 := R2["i"]
  32 [-]: GETTABLE  R5 R2 K10    ; R5 := R2["t"]
  33 [-]: GETTABLE  R6 R2 K8     ; R6 := R2["i"]
@@ -317,7 +317,7 @@
  38 [-]: MOVE      R3 R4        ; R3 := R4
  39 [-]: GETTABLE  R4 R2 K9     ; R4 := R2["i"]
  40 [-]: ADD       R4 R4 K10    ; R4 := R4 + 1.000000
- 41 [-]: SETTABLE  R2 K9 R4     ; R2[0x20833f15] := R4
+ 41 [-]: SETTABLE  R2 K9 R4     ; R2["i"] := R4
  42 [-]: GETTABLE  R4 R2 K9     ; R4 := R2["i"]
  43 [-]: GETTABLE  R5 R2 K11    ; R5 := R2["t"]
  44 [-]: GETUPVAL  R6 U1        ; R6 := U1
@@ -360,7 +360,7 @@
  81 [-]: CALL      R14 4 2      ; R14 := R14(R15,R16,R17)
  82 [-]: LOADBOOL  R15 1 0      ; R15 := true
  83 [-]: CALL      R12 4 1      ; R12(R13,R14,R15)
- 84 [-]: SETTABLE  R2 K11 R5    ; R2[0x1bd9757d] := R5
+ 84 [-]: SETTABLE  R2 K11 R5    ; R2["t"] := R5
  85 [-]: LE        0 R5 K21     ; if R5 > 0.000000 then PC := 88
  86 [-]: JMP       88           ; PC := 88
  87 [-]: JMP       92           ; PC := 92

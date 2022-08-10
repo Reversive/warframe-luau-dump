@@ -210,7 +210,7 @@
  65 [-]: GETUPVAL  R2 U3        ; R2 := U3
  66 [-]: CLOSURE   R3 5         ; R3 := closure(Function #4.6)
  67 [-]: GETUPVAL  R0 U0        ; R0 := U0
- 68 [-]: SETTABLE  R2 K30 R3    ; R2[0x08a5afb4] := R3
+ 68 [-]: SETTABLE  R2 K30 R3    ; R2["mScrollValueChangedCallback"] := R3
  69 [-]: GETUPVAL  R2 U3        ; R2 := U3
  70 [-]: SELF      R2 R2 K31    ; R3 := R2; R2 := R2[0xe91c55ec]
  71 [-]: CALL      R2 2 1       ; R2(R3)

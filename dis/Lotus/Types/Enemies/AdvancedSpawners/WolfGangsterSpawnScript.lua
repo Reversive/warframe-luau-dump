@@ -654,7 +654,7 @@
  17 [-]: JMP       21           ; PC := 21
  18 [-]: GETGLOBAL R3 K4        ; R3 := _T
  19 [-]: NEWTABLE  R4 0 0       ; R4 := {}
- 20 [-]: SETTABLE  R3 K5 R4     ; R3[0xa5e492d4] := R4
+ 20 [-]: SETTABLE  R3 K5 R4     ; R3["CapturedConvictAvatars"] := R4
  21 [-]: SELF      R3 R2 K7     ; R4 := R2; R3 := R2[0x388577d5]
  22 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  23 [-]: GETGLOBAL R4 K1        ; R4 := 0x7b998233

@@ -3051,7 +3051,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  12
 
-  1 [-]: SETTABLE  R1 K0 R2     ; R1["mExpanded"] := R2
+  1 [-]: SETTABLE  R1 K0 R2     ; R1[0x7b998233] := R2
   2 [-]: TEST      R2 1         ; if R2 then PC := 17
   3 [-]: JMP       17           ; PC := 17
   4 [-]: GETTABLE  R3 R1 K1     ; R3 := R1["mChildren"]
@@ -3329,7 +3329,7 @@
 196 [-]: FORLOOP   R16 145      ; R16 += R18; if R16 <= R17 then begin PC := 145; R19 := R16 end
 197 [-]: CLOSE     R9           ; SAVE R9,...
 198 [-]: NEWTABLE  R9 0 0       ; R9 := {}
-199 [-]: SETTABLE  R0 K37 R9    ; R0[0x3d106989] := R9
+199 [-]: SETTABLE  R0 K37 R9    ; R0["mAllColors"] := R9
 200 [-]: SELF      R9 R0 K38    ; R10 := R0; R9 := R0[0xc13d088c]
 201 [-]: MOVE      R11 R1       ; R11 := R1
 202 [-]: MOVE      R12 R2       ; R12 := R2
@@ -3448,7 +3448,7 @@
 315 [-]: ADD       R16 R16 K42  ; R16 := R16 + 1.000000
 316 [-]: MUL       R15 R15 R16  ; R15 := R15 * R16
 317 [-]: DIV       R15 K42 R15  ; R15 := 1.000000 / R15
-318 [-]: SETTABLE  R14 K57 R15  ; R14[0xc0a3774b] := R15
+318 [-]: SETTABLE  R14 K57 R15  ; R14["mScrollStep"] := R15
 319 [-]: CLOSE     R9           ; SAVE R9,...
 320 [-]: GETTABLE  R9 R0 K59    ; R9 := R0["mElementWidth"]
 321 [-]: EQ        1 R9 K3      ; if R9 == nil then PC := 333
@@ -3733,7 +3733,7 @@
  17 [-]: GETTABLE  R4 R9 K0     ; R4 := R9["Id"]
  18 [-]: FORLOOP   R5 10        ; R5 += R7; if R5 <= R6 then begin PC := 10; R8 := R5 end
  19 [-]: ADD       R4 R4 K2     ; R4 := R4 + 1.000000
- 20 [-]: SETTABLE  R2 K0 R4     ; R2[0xdfc0d50b] := R4
+ 20 [-]: SETTABLE  R2 K0 R4     ; R2["Id"] := R4
  21 [-]: RETURN    R0 1         ; return 
 
 
@@ -4270,7 +4270,7 @@
  13 [-]: GETTABLE  R3 R2 K4     ; R3 := R2["mMovie"]
  14 [-]: TEST      R3 0         ; if not R3 then PC := 8
  15 [-]: JMP       8            ; PC := 8
- 16 [-]: SETTABLE  R0 K0 R2     ; R0[0x1baafed5] := R2
+ 16 [-]: SETTABLE  R0 K0 R2     ; R0["mParentEnv"] := R2
  17 [-]: RETURN    R2 2         ; return R2
  18 [-]: RETURN    R0 1         ; return 
 
@@ -4319,7 +4319,7 @@
  33 [-]: SETTABLE  R1 K4 R2     ; R1["ItemSelectGridItemFocused"] := R2
  34 [-]: CLOSURE   R2 4         ; R2 := closure(Function #1.46.5)
  35 [-]: MOVE      R0 R0        ; R0 := R0
- 36 [-]: SETTABLE  R1 K5 R2     ; R1["ItemSelectGridItemUnfocused"] := R2
+ 36 [-]: SETTABLE  R1 K5 R2     ; R1[0x00000004] := R2
  37 [-]: RETURN    R0 1         ; return 
 
 

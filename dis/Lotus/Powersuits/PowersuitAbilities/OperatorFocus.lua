@@ -67,7 +67,7 @@
  10 [-]: SETTABLE  R4 K2 R5     ; R4["DURATION"] := R5
  11 [-]: GETUPVAL  R5 U0        ; R5 := U0
  12 [-]: GETTABLE  R5 R5 K5     ; R5 := R5["damage"]
- 13 [-]: SETTABLE  R4 K4 R5     ; R4[0xa9365339] := R5
+ 13 [-]: SETTABLE  R4 K4 R5     ; R4["DAMAGE"] := R5
  14 [-]: GETUPVAL  R5 U0        ; R5 := U0
  15 [-]: GETTABLE  R5 R5 K7     ; R5 := R5["length"]
  16 [-]: SETTABLE  R4 K6 R5     ; R4["LENGTH"] := R5

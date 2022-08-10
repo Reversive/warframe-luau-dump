@@ -228,7 +228,7 @@
 157 [-]: GETUPVAL  R0 U5        ; R0 := U5
 158 [-]: GETUPVAL  R0 U2        ; R0 := U2
 159 [-]: GETUPVAL  R0 U7        ; R0 := U7
-160 [-]: SETTABLE  R4 K89 R5    ; R4["Initialize"] := R5
+160 [-]: SETTABLE  R4 K89 R5    ; R4[0xcd0165a3] := R5
 161 [-]: CLOSURE   R5 18        ; R5 := closure(Function #1.19)
 162 [-]: SETTABLE  R4 K90 R5    ; R4["SetVisible"] := R5
 163 [-]: CLOSURE   R5 19        ; R5 := closure(Function #1.20)
@@ -238,11 +238,11 @@
 167 [-]: SETTABLE  R4 K92 R5    ; R4["UpdateCallouts"] := R5
 168 [-]: CLOSURE   R5 21        ; R5 := closure(Function #1.22)
 169 [-]: GETUPVAL  R0 U2        ; R0 := U2
-170 [-]: SETTABLE  R4 K93 R5    ; R4[0x7b998233] := R5
+170 [-]: SETTABLE  R4 K93 R5    ; R4["RollOverPlayer"] := R5
 171 [-]: CLOSURE   R5 22        ; R5 := closure(Function #1.23)
-172 [-]: SETTABLE  R4 K94 R5    ; R4[0xbe190284] := R5
+172 [-]: SETTABLE  R4 K94 R5    ; R4["RollOutPlayer"] := R5
 173 [-]: CLOSURE   R5 23        ; R5 := closure(Function #1.24)
-174 [-]: SETTABLE  R4 K95 R5    ; R4[0xc1f9f0d9] := R5
+174 [-]: SETTABLE  R4 K95 R5    ; R4["SelectPlayer"] := R5
 175 [-]: CLOSURE   R5 24        ; R5 := closure(Function #1.25)
 176 [-]: SETTABLE  R4 K96 R5    ; R4["CanInvite"] := R5
 177 [-]: CLOSURE   R5 25        ; R5 := closure(Function #1.26)

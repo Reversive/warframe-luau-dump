@@ -682,7 +682,7 @@
 185 [-]: JMP       187          ; PC := 187
 186 [-]: LOADBOOL  R15 0 1      ; R15 := false; PC := 187
 187 [-]: LOADBOOL  R15 1 0      ; R15 := true
-188 [-]: SETTABLE  R14 K36 R15  ; R14["mCallbackHandled"] := R15
+188 [-]: SETTABLE  R14 K36 R15  ; R14[0x67bc869f] := R15
 189 [-]: GETUPVAL  R14 U2       ; R14 := U2
 190 [-]: GETTABLE  R14 R14 R10  ; R14 := R14[R10]
 191 [-]: GETUPVAL  R15 U2       ; R15 := U2
@@ -702,7 +702,7 @@
 205 [-]: JMP       207          ; PC := 207
 206 [-]: LOADBOOL  R15 0 1      ; R15 := false; PC := 207
 207 [-]: LOADBOOL  R15 1 0      ; R15 := true
-208 [-]: SETTABLE  R14 K36 R15  ; R14["mCallbackHandled"] := R15
+208 [-]: SETTABLE  R14 K36 R15  ; R14[0x67bc869f] := R15
 209 [-]: GETUPVAL  R14 U6       ; R14 := U6
 210 [-]: GETUPVAL  R15 U2       ; R15 := U2
 211 [-]: GETTABLE  R15 R15 R10  ; R15 := R15[R10]

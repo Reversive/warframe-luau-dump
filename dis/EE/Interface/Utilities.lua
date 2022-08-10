@@ -1932,7 +1932,7 @@
   3 [-]: GETTABLE  R2 R2 K2     ; R82 := R2[0x1467d5f4]
   4 [-]: CALL      R2 1 2       ; R2 := R2()
   5 [-]: SETTABLE  R1 K0 R2     ; R1["mValue"] := R2
-  6 [-]: SETTABLE  R1 K3 R0     ; R1[0x00000065] := R0
+  6 [-]: SETTABLE  R1 K3 R0     ; R1["mOnChangeFunc"] := R0
   7 [-]: CLOSURE   R2 0         ; R2 := closure(Function #50.1)
   8 [-]: SETTABLE  R1 K4 R2     ; R1["Update"] := R2
   9 [-]: RETURN    R1 2         ; return R1

@@ -1533,7 +1533,7 @@
  56 [-]: GETUPVAL  R0 U0        ; R0 := U0
  57 [-]: GETUPVAL  R0 U5        ; R0 := U5
  58 [-]: GETUPVAL  R0 U6        ; R0 := U6
- 59 [-]: SETTABLE  R1 K13 R2    ; R1["GetSongList"] := R2
+ 59 [-]: SETTABLE  R1 K13 R2    ; R1[0x6c97a788] := R2
  60 [-]: GETUPVAL  R1 U1        ; R1 := U1
  61 [-]: SELF      R1 R1 K6     ; R2 := R1; R1 := R1[0xe4162eed]
  62 [-]: LOADK     R3 K14       ; R3 := "SetElementsFunction"
@@ -3041,7 +3041,7 @@
   5 [-]: LOADK     R4 K3        ; R4 := "/Lotus/Language/Menu/Composition_BarFull"
   6 [-]: LOADBOOL  R5 0 0       ; R5 := false
   7 [-]: CALL      R2 4 2       ; R2 := R2(R3,R4,R5)
-  8 [-]: SETTABLE  R1 K0 R2     ; R1["Name"] := R2
+  8 [-]: SETTABLE  R1 K0 R2     ; R1[0x91a24e4b] := R2
   9 [-]: SETTABLE  R1 K4 K5     ; R1["Bar"] := nil
  10 [-]: NEWTABLE  R2 0 2       ; R2 := {}
  11 [-]: GETGLOBAL R3 K1        ; R3 := 0xae91e43b
@@ -3049,7 +3049,7 @@
  13 [-]: LOADK     R5 K6        ; R5 := "/Lotus/Language/Menu/Composition_Bar1"
  14 [-]: LOADBOOL  R6 0 0       ; R6 := false
  15 [-]: CALL      R3 4 2       ; R3 := R3(R4,R5,R6)
- 16 [-]: SETTABLE  R2 K0 R3     ; R2["Name"] := R3
+ 16 [-]: SETTABLE  R2 K0 R3     ; R2[0x91a24e4b] := R3
  17 [-]: SETTABLE  R2 K4 K7     ; R2["Bar"] := 1.000000
  18 [-]: NEWTABLE  R3 0 2       ; R3 := {}
  19 [-]: GETGLOBAL R4 K1        ; R4 := 0xae91e43b
@@ -3057,7 +3057,7 @@
  21 [-]: LOADK     R6 K8        ; R6 := "/Lotus/Language/Menu/Composition_Bar2"
  22 [-]: LOADBOOL  R7 0 0       ; R7 := false
  23 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
- 24 [-]: SETTABLE  R3 K0 R4     ; R3["Name"] := R4
+ 24 [-]: SETTABLE  R3 K0 R4     ; R3[0x91a24e4b] := R4
  25 [-]: SETTABLE  R3 K4 K9     ; R3["Bar"] := 2.000000
  26 [-]: NEWTABLE  R4 0 2       ; R4 := {}
  27 [-]: GETGLOBAL R5 K1        ; R5 := 0xae91e43b
@@ -3065,7 +3065,7 @@
  29 [-]: LOADK     R7 K10       ; R7 := "/Lotus/Language/Menu/Composition_Bar3"
  30 [-]: LOADBOOL  R8 0 0       ; R8 := false
  31 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
- 32 [-]: SETTABLE  R4 K0 R5     ; R4["Name"] := R5
+ 32 [-]: SETTABLE  R4 K0 R5     ; R4[0x91a24e4b] := R5
  33 [-]: SETTABLE  R4 K4 K11    ; R4["Bar"] := 3.000000
  34 [-]: NEWTABLE  R5 0 2       ; R5 := {}
  35 [-]: GETGLOBAL R6 K1        ; R6 := 0xae91e43b
@@ -3073,7 +3073,7 @@
  37 [-]: LOADK     R8 K12       ; R8 := "/Lotus/Language/Menu/Composition_Bar4"
  38 [-]: LOADBOOL  R9 0 0       ; R9 := false
  39 [-]: CALL      R6 4 2       ; R6 := R6(R7,R8,R9)
- 40 [-]: SETTABLE  R5 K0 R6     ; R5["Name"] := R6
+ 40 [-]: SETTABLE  R5 K0 R6     ; R5[0x91a24e4b] := R6
  41 [-]: SETTABLE  R5 K4 K13    ; R5["Bar"] := 4.000000
  42 [-]: SETLIST   R0 5 1       ; R0[(1-1)*FPF+i] := R(0+i), 1 <= i <= 5
  43 [-]: RETURN    R0 2         ; return R0
@@ -3190,7 +3190,7 @@
  78 [-]: SETTABLE  R6 K26 K8    ; R6["mMaxValue"] := 100.000000
  79 [-]: SETTABLE  R6 K27 K29   ; R6["NoteType"] := 2.000000
  80 [-]: GETUPVAL  R7 U4        ; R7 := U4
- 81 [-]: SETTABLE  R6 K30 R7    ; R6["mValueChangedCallback"] := R7
+ 81 [-]: SETTABLE  R6 K30 R7    ; R6[0x00000000] := R7
  82 [-]: SETTABLE  R6 K7 K8     ; R6["BackerAlphaOverride"] := 100.000000
  83 [-]: NEWTABLE  R7 0 9       ; R7 := {}
  84 [-]: GETUPVAL  R8 U0        ; R8 := U0
@@ -3204,7 +3204,7 @@
  92 [-]: SETTABLE  R7 K26 K8    ; R7["mMaxValue"] := 100.000000
  93 [-]: SETTABLE  R7 K27 K31   ; R7["NoteType"] := 1.000000
  94 [-]: GETUPVAL  R8 U5        ; R8 := U5
- 95 [-]: SETTABLE  R7 K30 R8    ; R7["mValueChangedCallback"] := R8
+ 95 [-]: SETTABLE  R7 K30 R8    ; R7[0x00000000] := R8
  96 [-]: SETTABLE  R7 K7 K8     ; R7["BackerAlphaOverride"] := 100.000000
  97 [-]: NEWTABLE  R8 0 9       ; R8 := {}
  98 [-]: GETUPVAL  R9 U0        ; R9 := U0
@@ -3218,7 +3218,7 @@
 106 [-]: SETTABLE  R8 K26 K8    ; R8["mMaxValue"] := 100.000000
 107 [-]: SETTABLE  R8 K27 K24   ; R8["NoteType"] := 0.000000
 108 [-]: GETUPVAL  R9 U6        ; R9 := U6
-109 [-]: SETTABLE  R8 K30 R9    ; R8["mValueChangedCallback"] := R9
+109 [-]: SETTABLE  R8 K30 R9    ; R8[0x00000000] := R9
 110 [-]: SETTABLE  R8 K7 K8     ; R8["BackerAlphaOverride"] := 100.000000
 111 [-]: NEWTABLE  R9 0 4       ; R9 := {}
 112 [-]: GETUPVAL  R10 U0       ; R10 := U0
@@ -3238,7 +3238,7 @@
 126 [-]: SETTABLE  R10 K34 K6   ; R10["mInitialValue"] := true
 127 [-]: SETTABLE  R10 K27 K29  ; R10["NoteType"] := 2.000000
 128 [-]: GETUPVAL  R11 U7       ; R11 := U7
-129 [-]: SETTABLE  R10 K30 R11  ; R10["mValueChangedCallback"] := R11
+129 [-]: SETTABLE  R10 K30 R11  ; R10[0x00000000] := R11
 130 [-]: SETTABLE  R10 K7 K8    ; R10["BackerAlphaOverride"] := 100.000000
 131 [-]: NEWTABLE  R11 0 7      ; R11 := {}
 132 [-]: GETUPVAL  R12 U0       ; R12 := U0
@@ -3250,7 +3250,7 @@
 138 [-]: SETTABLE  R11 K34 K6   ; R11["mInitialValue"] := true
 139 [-]: SETTABLE  R11 K27 K31  ; R11["NoteType"] := 1.000000
 140 [-]: GETUPVAL  R12 U8       ; R12 := U8
-141 [-]: SETTABLE  R11 K30 R12  ; R11["mValueChangedCallback"] := R12
+141 [-]: SETTABLE  R11 K30 R12  ; R11[0x00000000] := R12
 142 [-]: SETTABLE  R11 K7 K8    ; R11["BackerAlphaOverride"] := 100.000000
 143 [-]: NEWTABLE  R12 0 7      ; R12 := {}
 144 [-]: GETUPVAL  R13 U0       ; R13 := U0
@@ -3262,7 +3262,7 @@
 150 [-]: SETTABLE  R12 K34 K6   ; R12["mInitialValue"] := true
 151 [-]: SETTABLE  R12 K27 K24  ; R12["NoteType"] := 0.000000
 152 [-]: GETUPVAL  R13 U9       ; R13 := U9
-153 [-]: SETTABLE  R12 K30 R13  ; R12["mValueChangedCallback"] := R13
+153 [-]: SETTABLE  R12 K30 R13  ; R12[0x00000000] := R13
 154 [-]: SETTABLE  R12 K7 K8    ; R12["BackerAlphaOverride"] := 100.000000
 155 [-]: NEWTABLE  R13 0 4      ; R13 := {}
 156 [-]: GETUPVAL  R14 U0       ; R14 := U0
@@ -3283,7 +3283,7 @@
 171 [-]: SETTABLE  R14 K37 R15  ; R14["mOptions"] := R15
 172 [-]: SETTABLE  R14 K23 K31  ; R14["mDefaultValue"] := 1.000000
 173 [-]: GETUPVAL  R15 U11      ; R15 := U11
-174 [-]: SETTABLE  R14 K30 R15  ; R14["mValueChangedCallback"] := R15
+174 [-]: SETTABLE  R14 K30 R15  ; R14[0x00000000] := R15
 175 [-]: SETTABLE  R14 K7 K8    ; R14["BackerAlphaOverride"] := 100.000000
 176 [-]: NEWTABLE  R15 0 5      ; R15 := {}
 177 [-]: GETUPVAL  R16 U0       ; R16 := U0
@@ -3614,7 +3614,7 @@
  60 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
  61 [-]: GETGLOBAL R3 K19       ; R3 := _T
  62 [-]: CLOSURE   R4 0         ; R4 := closure(Function #40.1)
- 63 [-]: SETTABLE  R3 K20 R4    ; R3["ValidateNotePack"] := R4
+ 63 [-]: SETTABLE  R3 K20 R4    ; R3[0x986d2ab8] := R4
  64 [-]: GETUPVAL  R3 U0        ; R3 := U0
  65 [-]: SELF      R3 R3 K14    ; R4 := R3; R3 := R3[0xe4162eed]
  66 [-]: LOADK     R5 K21       ; R5 := "SetValidationFunction"
@@ -3637,7 +3637,7 @@
  83 [-]: GETUPVAL  R0 U4        ; R0 := U4
  84 [-]: MOVE      R0 R1        ; R0 := R1
  85 [-]: MOVE      R0 R0        ; R0 := R0
- 86 [-]: SETTABLE  R3 K24 R4    ; R3["GetAllNotePacks"] := R4
+ 86 [-]: SETTABLE  R3 K24 R4    ; R3[0xae91e43b] := R4
  87 [-]: GETUPVAL  R3 U0        ; R3 := U0
  88 [-]: SELF      R3 R3 K14    ; R4 := R3; R3 := R3[0xe4162eed]
  89 [-]: LOADK     R5 K25       ; R5 := "SetElementsFunction"
@@ -3818,7 +3818,7 @@
  82 [-]: SETTABLE  R22 K18 R15  ; R22["PremiumPrice"] := R15
  83 [-]: GETUPVAL  R23 U2       ; R23 := U2
  84 [-]: SETTABLE  R22 K19 R23  ; R22["NoteType"] := R23
- 85 [-]: SETTABLE  R22 K20 R17  ; R22[0x00000000] := R17
+ 85 [-]: SETTABLE  R22 K20 R17  ; R22["Locked"] := R17
  86 [-]: SETTABLE  R22 K21 K22  ; R22["LockedTag"] := "/Lotus/Language/Menu/ShipSelection_ShipSelected"
  87 [-]: GETGLOBAL R23 K7       ; R23 := 0x33bdd652
  88 [-]: GETTABLE  R23 R23 K8   ; R82 := R23[0x23d5322f]
@@ -4176,7 +4176,7 @@
  11 [-]: GETUPVAL  R1 U0        ; R1 := U0
  12 [-]: SETTABLE  R1 K4 R0     ; R1[1.000000] := R0
  13 [-]: GETUPVAL  R1 U0        ; R1 := U0
- 14 [-]: SETTABLE  R1 K5 R0     ; R1[0x8a8eba7f] := R0
+ 14 [-]: SETTABLE  R1 K5 R0     ; R1[2.000000] := R0
  15 [-]: RETURN    R0 1         ; return 
 
 

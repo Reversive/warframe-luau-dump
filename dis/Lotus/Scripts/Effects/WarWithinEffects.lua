@@ -1015,13 +1015,13 @@
  65 [-]: LOADK     R7 0         ; R7 := 0.000000
  66 [-]: MOVE      R8 R4        ; R8 := R4
  67 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
- 68 [-]: SETTABLE  R2 K11 R5    ; R2["radialBlurStrength"] := R5
+ 68 [-]: SETTABLE  R2 K11 R5    ; R2[0xcbd666e1] := R5
  69 [-]: GETGLOBAL R5 K21       ; R5 := 0x9bafffe3
  70 [-]: GETTABLE  R6 R2 K15    ; R6 := R2["saturation"]
  71 [-]: LOADK     R7 0         ; R7 := 0.000000
  72 [-]: MOVE      R8 R4        ; R8 := R4
  73 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
- 74 [-]: SETTABLE  R2 K15 R5    ; R2["saturation"] := R5
+ 74 [-]: SETTABLE  R2 K15 R5    ; R2[0xf6ebd926] := R5
  75 [-]: GETGLOBAL R5 K17       ; R5 := 0xcbd666e1
  76 [-]: LOADK     R6 0         ; R6 := 0.000000
  77 [-]: CALL      R5 2 1       ; R5(R6)

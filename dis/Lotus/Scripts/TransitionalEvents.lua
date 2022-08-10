@@ -322,7 +322,7 @@
  26 [-]: JMP       30           ; PC := 30
  27 [-]: GETGLOBAL R5 K3        ; R5 := _T
  28 [-]: GETGLOBAL R6 K17       ; R6 := 0x750d8cd1
- 29 [-]: SETTABLE  R5 K16 R6    ; R5[0x7d05e45f] := R6
+ 29 [-]: SETTABLE  R5 K16 R6    ; R5["MissionTransmissionSet"] := R6
  30 [-]: GETGLOBAL R5 K12       ; R5 := 0x744a780b
  31 [-]: SELF      R5 R5 K18    ; R6 := R5; R5 := R5[0x8eb2112d]
  32 [-]: LOADK     R7 K19       ; R7 := "Execute"

@@ -206,7 +206,7 @@
  58 [-]: JMP       62           ; PC := 62
  59 [-]: GETGLOBAL R7 K13       ; R7 := _T
  60 [-]: NEWTABLE  R8 0 0       ; R8 := {}
- 61 [-]: SETTABLE  R7 K14 R8    ; R7[0x18d05d30] := R8
+ 61 [-]: SETTABLE  R7 K14 R8    ; R7["infectedKavatType"] := R8
  62 [-]: GETGLOBAL R7 K13       ; R7 := _T
  63 [-]: GETTABLE  R7 R7 K14    ; R7 := R7["infectedKavatType"]
  64 [-]: SELF      R8 R3 K15    ; R9 := R3; R8 := R3[0x5ca33548]

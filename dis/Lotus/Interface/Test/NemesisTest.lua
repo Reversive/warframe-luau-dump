@@ -2249,7 +2249,7 @@
  24 [-]: GETGLOBAL R1 K7        ; R1 := _T
  25 [-]: GETTABLE  R1 R1 K8     ; R1 := R1["gNemesis"]
  26 [-]: GETUPVAL  R2 U1        ; R2 := U1
- 27 [-]: SETTABLE  R1 K9 R2     ; R1[0xe1aad8c4] := R2
+ 27 [-]: SETTABLE  R1 K9 R2     ; R1["generatedProfile"] := R2
  28 [-]: GETUPVAL  R1 U2        ; R1 := U2
  29 [-]: GETGLOBAL R2 K11       ; R2 := 0x89326c93
  30 [-]: SELF      R2 R2 K12    ; R3 := R2; R2 := R2[0xfb64e76c]
@@ -2854,7 +2854,7 @@
  52 [-]: MOVE      R14 R5       ; R14 := R5
  53 [-]: LOADK     R15 K12      ; R15 := "\">"
  54 [-]: CONCAT    R13 R13 R15  ; R13 := R13 .. R14 .. R15
- 55 [-]: SETTABLE  R12 K15 R13  ; R12[0x0003003e] := R13
+ 55 [-]: SETTABLE  R12 K15 R13  ; R12["OPEN_COLOR"] := R13
  56 [-]: LOADK     R13 K16      ; R13 := "</font><font color=\""
  57 [-]: MOVE      R14 R4       ; R14 := R4
  58 [-]: LOADK     R15 K12      ; R15 := "\">"
@@ -4449,15 +4449,15 @@
  12 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  13 [-]: NEWTABLE  R4 0 3       ; R4 := {}
  14 [-]: GETTABLE  R5 R2 K6     ; R5 := R2["mName"]
- 15 [-]: SETTABLE  R4 K5 R5     ; R4["name"] := R5
+ 15 [-]: SETTABLE  R4 K5 R5     ; R4[0xddd5b6eb] := R5
  16 [-]: GETTABLE  R5 R1 K8     ; R5 := R1["mRank"]
  17 [-]: SETTABLE  R4 K7 R5     ; R4["rank"] := R5
  18 [-]: GETGLOBAL R5 K10       ; R5 := 0x5eb99e86
  19 [-]: GETTABLE  R5 R5 R3     ; R5 := R5[R3]
- 20 [-]: SETTABLE  R4 K9 R5     ; R4["faction"] := R5
+ 20 [-]: SETTABLE  R4 K9 R5     ; R4[0x553549e8] := R5
  21 [-]: NEWTABLE  R5 0 2       ; R5 := {}
  22 [-]: GETTABLE  R6 R1 K12    ; R6 := R1["mKillingSuit"]
- 23 [-]: SETTABLE  R5 K11 R6    ; R5["killingPowersuitType"] := R6
+ 23 [-]: SETTABLE  R5 K11 R6    ; R5[0x492c7f2a] := R6
  24 [-]: GETTABLE  R6 R1 K14    ; R6 := R1["mBirthNode"]
  25 [-]: SETTABLE  R5 K13 R6    ; R5["birthNode"] := R6
  26 [-]: GETUPVAL  R6 U1        ; R6 := U1

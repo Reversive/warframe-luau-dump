@@ -262,7 +262,7 @@
 253 [-]: SETTABLE  R40 K66 R33  ; R40["AddMember"] := R33
 254 [-]: SETTABLE  R40 K67 R34  ; R40["RemoveMember"] := R34
 255 [-]: SETTABLE  R40 K68 R36  ; R40["UpdateSquad"] := R36
-256 [-]: SETTABLE  R40 K69 R37  ; R40["Shutdown"] := R37
+256 [-]: SETTABLE  R40 K69 R37  ; R40[0x5bced4c4] := R37
 257 [-]: RETURN    R40 2        ; return R40
 258 [-]: RETURN    R0 1         ; return 
 

@@ -993,7 +993,7 @@
  22 [-]: NEWTABLE  R7 0 4       ; R7 := {}
  23 [-]: SETTABLE  R7 K6 K7     ; R7["IgnoreCount"] := true
  24 [-]: SETTABLE  R7 K8 K7     ; R7["HideLockedOnFocus"] := true
- 25 [-]: SETTABLE  R7 K9 R2     ; R7[0x1c5b546f] := R2
+ 25 [-]: SETTABLE  R7 K9 R2     ; R7["IsSelected"] := R2
  26 [-]: SETTABLE  R7 K10 K11   ; R7["IsFocused"] := false
  27 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
  28 [-]: RETURN    R0 1         ; return 
@@ -1041,7 +1041,7 @@
  31 [-]: JMP       34           ; PC := 34
  32 [-]: GETTABLE  R6 R0 K6     ; R6 := R0["IsExclusive"]
  33 [-]: NOT       R6 R6        ; R6 := not R6
- 34 [-]: SETTABLE  R5 K5 R6     ; R5[0x0032441c] := R6
+ 34 [-]: SETTABLE  R5 K5 R6     ; R5["Locked"] := R6
  35 [-]: GETGLOBAL R6 K8        ; R6 := 0xae91e43b
  36 [-]: SELF      R6 R6 K9     ; R7 := R6; R6 := R6[0x42b04007]
  37 [-]: LOADK     R8 K10       ; R8 := "/Lotus/Language/Alchemy/AbilitySelection_ExclusiveLocked"
@@ -1050,7 +1050,7 @@
  40 [-]: SETTABLE  R5 K7 R6     ; R5["LockedMsg"] := R6
  41 [-]: SETTABLE  R5 K11 K12   ; R5["IgnoreCount"] := true
  42 [-]: SETTABLE  R5 K13 R2    ; R5["IsFocused"] := R2
- 43 [-]: SETTABLE  R5 K14 R4    ; R5["IsSelected"] := R4
+ 43 [-]: SETTABLE  R5 K14 R4    ; R5[0x46610c50] := R4
  44 [-]: GETUPVAL  R6 U2        ; R6 := U2
  45 [-]: GETTABLE  R6 R6 K15    ; R82 := R6[0xc339daf7]
  46 [-]: GETGLOBAL R7 K8        ; R7 := 0xae91e43b

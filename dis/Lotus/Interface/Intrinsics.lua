@@ -432,7 +432,7 @@
  16 [-]: LOADK     R7 K8        ; R7 := "<WARNING>"
  17 [-]: LOADBOOL  R8 1 0       ; R8 := true
  18 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
- 19 [-]: SETTABLE  R4 K6 R5     ; R4["Label"] := R5
+ 19 [-]: SETTABLE  R4 K6 R5     ; R4[0x34291f5c] := R5
  20 [-]: SETTABLE  R4 K9 R1     ; R4["Tips"] := R1
  21 [-]: SETTABLE  R4 K10 K11   ; R4["Padding"] := -10.000000
  22 [-]: CALL      R2 3 1       ; R2(R3,R4)
@@ -954,7 +954,7 @@
 103 [-]: CALL      R18 4 2      ; R18 := R18(R19,R20,R21)
 104 [-]: SETTABLE  R17 K30 R18  ; R17["mInitialContentY"] := R18
 105 [-]: GETTABLE  R17 R8 K25   ; R17 := R8["mScrollBar"]
-106 [-]: SETTABLE  R17 K33 R1   ; R17["mVisibleHeight"] := R1
+106 [-]: SETTABLE  R17 K33 R1   ; R17[0xe261aa96] := R1
 107 [-]: GETTABLE  R17 R8 K25   ; R17 := R8["mScrollBar"]
 108 [-]: ADD       R18 R15 K35  ; R18 := R15 + 10.000000
 109 [-]: SETTABLE  R17 K34 R18  ; R17["mMaxHeight"] := R18
@@ -2855,7 +2855,7 @@
   7 [-]: MOVE      R5 R2        ; R5 := R2
   8 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
   9 [-]: GETUPVAL  R4 U0        ; R4 := U0
- 10 [-]: SETTABLE  R4 K2 R3     ; R4["CurrentRank"] := R3
+ 10 [-]: SETTABLE  R4 K2 R3     ; R4[0x307ce835] := R3
  11 [-]: GETUPVAL  R4 U2        ; R4 := U2
  12 [-]: GETTABLE  R4 R4 K3     ; R82 := R4[0xf76783e5]
  13 [-]: GETGLOBAL R5 K4        ; R5 := 0xae91e43b
@@ -3769,7 +3769,7 @@
  12 [-]: MOVE      R5 R1        ; R5 := R1
  13 [-]: MOVE      R6 R2        ; R6 := R2
  14 [-]: CALL      R3 4 2       ; R3 := R3(R4,R5,R6)
- 15 [-]: SETTABLE  R0 K4 R3     ; R0["Description"] := R3
+ 15 [-]: SETTABLE  R0 K4 R3     ; R0[0x34291f5c] := R3
  16 [-]: GETUPVAL  R3 U1        ; R3 := U1
  17 [-]: GETTABLE  R3 R3 K6     ; R3 := R3["mRankList"]
  18 [-]: GETTABLE  R3 R3 K7     ; R82 := R3[0xb15e6aca]

@@ -168,7 +168,7 @@
  60 [-]: CALL      R4 2 1       ; R4(R5)
  61 [-]: GETGLOBAL R4 K1        ; R4 := 0x0032441c
  62 [-]: NEWTABLE  R5 0 5       ; R5 := {}
- 63 [-]: SETTABLE  R5 K15 R1    ; R5["Style"] := R1
+ 63 [-]: SETTABLE  R5 K15 R1    ; R5[0x7d63f19c] := R1
  64 [-]: SELF      R6 R1 K16    ; R7 := R1; R6 := R1[0x59ee06ef]
  65 [-]: CALL      R6 2 2       ; R6 := R6(R7)
  66 [-]: SETTABLE  R5 K3 R6     ; R5["Colors"] := R6
@@ -184,7 +184,7 @@
  76 [-]: SELF      R9 R1 K20    ; R10 := R1; R9 := R1[0x07b41cb8]
  77 [-]: CALL      R9 2 0       ; R9,... := R9(R10)
  78 [-]: CALL      R6 0 2       ; R6 := R6(R7,...)
- 79 [-]: SETTABLE  R5 K17 R6    ; R5["ColorCorrection"] := R6
+ 79 [-]: SETTABLE  R5 K17 R6    ; R5[0x59ee06ef] := R6
  80 [-]: SETTABLE  R5 K4 R2     ; R5["Background"] := R2
  81 [-]: SETTABLE  R5 K5 R3     ; R5["Sounds"] := R3
  82 [-]: SETTABLE  R4 K2 R5     ; R4["CurrStyle"] := R5
@@ -1582,7 +1582,7 @@
   1 [-]: NEWTABLE  R0 0 0       ; R0 := {}
   2 [-]: GETGLOBAL R1 K1        ; R1 := _T
   3 [-]: GETTABLE  R1 R1 K2     ; R1 := R1["BackgroundVisible"]
-  4 [-]: SETTABLE  R0 K0 R1     ; R0[0x0469f296] := R1
+  4 [-]: SETTABLE  R0 K0 R1     ; R0["Visible"] := R1
   5 [-]: GETTABLE  R1 R0 K0     ; R1 := R0["Visible"]
   6 [-]: TEST      R1 0         ; if not R1 then PC := 39
   7 [-]: JMP       39           ; PC := 39
@@ -1594,7 +1594,7 @@
  13 [-]: GETGLOBAL R2 K1        ; R2 := _T
  14 [-]: GETTABLE  R2 R2 K3     ; R2 := R2["Style_CurrVisRangeInfo"]
  15 [-]: GETTABLE  R2 R2 K6     ; R2 := R2["Size"]
- 16 [-]: SETTABLE  R1 K6 R2     ; R1[0x06d055f9] := R2
+ 16 [-]: SETTABLE  R1 K6 R2     ; R1["Size"] := R2
  17 [-]: GETGLOBAL R2 K1        ; R2 := _T
  18 [-]: GETTABLE  R2 R2 K3     ; R2 := R2["Style_CurrVisRangeInfo"]
  19 [-]: GETTABLE  R2 R2 K7     ; R2 := R2["Center"]
@@ -1611,7 +1611,7 @@
  30 [-]: GETTABLE  R2 R2 K3     ; R2 := R2["Style_CurrVisRangeInfo"]
  31 [-]: GETTABLE  R2 R2 K10    ; R2 := R2["InvertY"]
  32 [-]: SETTABLE  R1 K10 R2    ; R1["InvertY"] := R2
- 33 [-]: SETTABLE  R0 K5 R1     ; R0[0x14c7f7dd] := R1
+ 33 [-]: SETTABLE  R0 K5 R1     ; R0["VisRangeInfo"] := R1
  34 [-]: GETGLOBAL R1 K1        ; R1 := _T
  35 [-]: GETTABLE  R1 R1 K13    ; R82 := R1[0xd0e74c32]
  36 [-]: CALL      R1 1 3       ; R1,R2 := R1()

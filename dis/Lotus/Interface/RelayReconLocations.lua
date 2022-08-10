@@ -88,7 +88,7 @@
   5 [-]: NEWTABLE  R3 0 3       ; R3 := {}
   6 [-]: SETTABLE  R3 K2 K3     ; R3["Label"] := "/Lotus/Language/Menu/Global_Back"
   7 [-]: GETUPVAL  R4 U0        ; R4 := U0
-  8 [-]: SETTABLE  R3 K4 R4     ; R3[0x7f5022cf] := R4
+  8 [-]: SETTABLE  R3 K4 R4     ; R3["CallBack"] := R4
   9 [-]: SETTABLE  R3 K5 K6     ; R3["CallOut"] := "MENU_CANCEL"
  10 [-]: CALL      R1 3 1       ; R1(R2,R3)
  11 [-]: GETGLOBAL R1 K7        ; R1 := _T
@@ -387,7 +387,7 @@
  32 [-]: GETTABLE  R4 R0 K7     ; R4 := R0["mBtn"]
  33 [-]: CLOSURE   R5 0         ; R5 := closure(Function #6.1.4.1)
  34 [-]: MOVE      R0 R2        ; R0 := R2
- 35 [-]: SETTABLE  R4 K12 R5    ; R4["OnRedraw"] := R5
+ 35 [-]: SETTABLE  R4 K12 R5    ; R4[0x91e13703] := R5
  36 [-]: GETTABLE  R4 R0 K7     ; R4 := R0["mBtn"]
  37 [-]: CLOSURE   R5 1         ; R5 := closure(Function #6.1.4.2)
  38 [-]: SETTABLE  R4 K13 R5    ; R4["mOnFocusedCallback"] := R5

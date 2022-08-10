@@ -1513,7 +1513,7 @@
  61 [-]: GETGLOBAL R7 K20       ; R7 := 0x83e41587
  62 [-]: MOVE      R8 R4        ; R8 := R4
  63 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 64 [-]: SETTABLE  R0 K19 R7    ; R0[0x80dc5f76] := R7
+ 64 [-]: SETTABLE  R0 K19 R7    ; R0["mLowerSearchTerm"] := R7
  65 [-]: GETTABLE  R7 R0 K0     ; R7 := R0["mMovie"]
  66 [-]: SELF      R7 R7 K21    ; R8 := R7; R7 := R7[0xc0a3774b]
  67 [-]: GETTABLE  R9 R0 K7     ; R9 := R0["mClipName"]

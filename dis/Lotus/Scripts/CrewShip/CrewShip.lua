@@ -1181,7 +1181,7 @@
  46 [-]: MOVE      R23 R17      ; R23 := R17
  47 [-]: NEWTABLE  R24 0 2      ; R24 := {}
  48 [-]: GETTABLE  R25 R16 R21  ; R25 := R16[R21]
- 49 [-]: SETTABLE  R24 K8 R25   ; R24["cin"] := R25
+ 49 [-]: SETTABLE  R24 K8 R25   ; R24[0x3d106989] := R25
  50 [-]: GETGLOBAL R25 K10      ; R25 := 0xc0da2b81
  51 [-]: GETGLOBAL R26 K11      ; R26 := ZERO_VECTOR
  52 [-]: GETTABLE  R27 R16 R21  ; R27 := R16[R21]

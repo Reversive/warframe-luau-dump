@@ -137,7 +137,7 @@
  13 [-]: LOADK     R8 1         ; R8 := 1.000000
  14 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
  15 [-]: MUL       R5 R5 K5     ; R5 := R5 * 255.000000
- 16 [-]: SETTABLE  R4 K3 R5     ; R4["red"] := R5
+ 16 [-]: SETTABLE  R4 K3 R5     ; R4[0xcb79539e] := R5
  17 [-]: SELF      R5 R3 K4     ; R6 := R3; R5 := R3[0xae79653b]
  18 [-]: MOVE      R7 R2        ; R7 := R2
  19 [-]: LOADK     R8 2         ; R8 := 2.000000
@@ -149,13 +149,13 @@
  25 [-]: LOADK     R8 3         ; R8 := 3.000000
  26 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
  27 [-]: MUL       R5 R5 K5     ; R5 := R5 * 255.000000
- 28 [-]: SETTABLE  R4 K7 R5     ; R4["blue"] := R5
+ 28 [-]: SETTABLE  R4 K7 R5     ; R4[0xcde10c4a] := R5
  29 [-]: SELF      R5 R3 K4     ; R6 := R3; R5 := R3[0xae79653b]
  30 [-]: MOVE      R7 R2        ; R7 := R2
  31 [-]: LOADK     R8 4         ; R8 := 4.000000
  32 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
  33 [-]: MUL       R5 R5 K5     ; R5 := R5 * 255.000000
- 34 [-]: SETTABLE  R4 K8 R5     ; R4["alpha"] := R5
+ 34 [-]: SETTABLE  R4 K8 R5     ; R4[0xed4e0128] := R5
  35 [-]: RETURN    R4 2         ; return R4
  36 [-]: RETURN    R0 1         ; return 
 

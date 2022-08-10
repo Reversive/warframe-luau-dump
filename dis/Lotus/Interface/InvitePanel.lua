@@ -404,14 +404,14 @@
  53 [-]: LOADK     R2 4         ; R2 := 4.000000
  54 [-]: LOADBOOL  R3 1 0       ; R3 := true
  55 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
- 56 [-]: SETTABLE  R0 K10 R1    ; R0[0xae91e43b] := R1
+ 56 [-]: SETTABLE  R0 K10 R1    ; R0["Background3"] := R1
  57 [-]: GETUPVAL  R0 U0        ; R0 := U0
  58 [-]: GETUPVAL  R1 U1        ; R1 := U1
  59 [-]: GETTABLE  R1 R1 K1     ; R82 := R1[0x5d10207d]
  60 [-]: LOADK     R2 1         ; R2 := 1.000000
  61 [-]: LOADBOOL  R3 1 0       ; R3 := true
  62 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
- 63 [-]: SETTABLE  R0 K11 R1    ; R0[0x67bc869f] := R1
+ 63 [-]: SETTABLE  R0 K11 R1    ; R0["BackerHighlight"] := R1
  64 [-]: GETUPVAL  R0 U0        ; R0 := U0
  65 [-]: GETUPVAL  R1 U1        ; R1 := U1
  66 [-]: GETTABLE  R1 R1 K1     ; R82 := R1[0x5d10207d]
@@ -573,7 +573,7 @@
 133 [-]: GETUPVAL  R0 U4        ; R0 := U4
 134 [-]: GETUPVAL  R0 U5        ; R0 := U5
 135 [-]: GETUPVAL  R0 U0        ; R0 := U0
-136 [-]: SETTABLE  R1 K59 R2    ; R1["mOnUnfocusedCallback"] := R2
+136 [-]: SETTABLE  R1 K59 R2    ; R1[0xae91e43b] := R2
 137 [-]: GETUPVAL  R1 U0        ; R1 := U0
 138 [-]: CLOSURE   R2 7         ; R2 := closure(Function #4.8)
 139 [-]: GETUPVAL  R0 U5        ; R0 := U5
@@ -581,7 +581,7 @@
 141 [-]: GETUPVAL  R0 U7        ; R0 := U7
 142 [-]: GETUPVAL  R0 U2        ; R0 := U2
 143 [-]: GETUPVAL  R0 U3        ; R0 := U3
-144 [-]: SETTABLE  R1 K60 R2    ; R1["mOnSelectedCallback"] := R2
+144 [-]: SETTABLE  R1 K60 R2    ; R1[0x5b638cce] := R2
 145 [-]: GETUPVAL  R1 U0        ; R1 := U0
 146 [-]: GETUPVAL  R2 U0        ; R2 := U0
 147 [-]: GETTABLE  R2 R2 K62    ; R2 := R2["OnDraw"]
@@ -598,7 +598,7 @@
 158 [-]: GETUPVAL  R0 U9        ; R0 := U9
 159 [-]: GETUPVAL  R0 U8        ; R0 := U8
 160 [-]: GETUPVAL  R0 U10       ; R0 := U10
-161 [-]: SETTABLE  R1 K63 R2    ; R1["Populate"] := R2
+161 [-]: SETTABLE  R1 K63 R2    ; R1[0x38f10e85] := R2
 162 [-]: GETUPVAL  R1 U0        ; R1 := U0
 163 [-]: CLOSURE   R2 10        ; R2 := closure(Function #4.11)
 164 [-]: GETUPVAL  R0 U11       ; R0 := U11
@@ -610,7 +610,7 @@
 170 [-]: GETUPVAL  R1 U0        ; R1 := U0
 171 [-]: CLOSURE   R2 12        ; R2 := closure(Function #4.13)
 172 [-]: GETUPVAL  R0 U11       ; R0 := U11
-173 [-]: SETTABLE  R1 K66 R2    ; R1["GetUsers"] := R2
+173 [-]: SETTABLE  R1 K66 R2    ; R1[0xe261aa96] := R2
 174 [-]: GETUPVAL  R1 U0        ; R1 := U0
 175 [-]: GETUPVAL  R2 U0        ; R2 := U0
 176 [-]: GETTABLE  R2 R2 K68    ; R2 := R2["SetCategory_Internal"]
@@ -622,7 +622,7 @@
 182 [-]: GETUPVAL  R1 U0        ; R1 := U0
 183 [-]: CLOSURE   R2 14        ; R2 := closure(Function #4.15)
 184 [-]: GETUPVAL  R0 U12       ; R0 := U12
-185 [-]: SETTABLE  R1 K69 R2    ; R1["AdditionalFilterFunction"] := R2
+185 [-]: SETTABLE  R1 K69 R2    ; R1[0xc0a3774b] := R2
 186 [-]: GETUPVAL  R1 U0        ; R1 := U0
 187 [-]: SELF      R1 R1 K70    ; R2 := R1; R1 := R1[0x06d36229]
 188 [-]: NEWTABLE  R3 0 3       ; R3 := {}
@@ -637,7 +637,7 @@
 197 [-]: SETTABLE  R3 K74 R4    ; R3["Icon"] := R4
 198 [-]: GETUPVAL  R4 U0        ; R4 := U0
 199 [-]: GETTABLE  R4 R4 K78    ; R4 := R4["ONLINE"]
-200 [-]: SETTABLE  R3 K77 R4    ; R3["Category"] := R4
+200 [-]: SETTABLE  R3 K77 R4    ; R3[0x64fb1586] := R4
 201 [-]: CALL      R1 3 1       ; R1(R2,R3)
 202 [-]: GETUPVAL  R1 U0        ; R1 := U0
 203 [-]: SELF      R1 R1 K70    ; R2 := R1; R1 := R1[0x06d36229]
@@ -653,7 +653,7 @@
 213 [-]: SETTABLE  R3 K74 R4    ; R3["Icon"] := R4
 214 [-]: GETUPVAL  R4 U0        ; R4 := U0
 215 [-]: GETTABLE  R4 R4 K33    ; R4 := R4["CLAN"]
-216 [-]: SETTABLE  R3 K77 R4    ; R3["Category"] := R4
+216 [-]: SETTABLE  R3 K77 R4    ; R3[0x64fb1586] := R4
 217 [-]: CALL      R1 3 1       ; R1(R2,R3)
 218 [-]: GETUPVAL  R1 U0        ; R1 := U0
 219 [-]: SELF      R1 R1 K70    ; R2 := R1; R1 := R1[0x06d36229]
@@ -669,7 +669,7 @@
 229 [-]: SETTABLE  R3 K74 R4    ; R3["Icon"] := R4
 230 [-]: GETUPVAL  R4 U0        ; R4 := U0
 231 [-]: GETTABLE  R4 R4 K35    ; R4 := R4["RECENT"]
-232 [-]: SETTABLE  R3 K77 R4    ; R3["Category"] := R4
+232 [-]: SETTABLE  R3 K77 R4    ; R3[0x64fb1586] := R4
 233 [-]: CALL      R1 3 1       ; R1(R2,R3)
 234 [-]: GETUPVAL  R1 U0        ; R1 := U0
 235 [-]: SELF      R1 R1 K82    ; R2 := R1; R1 := R1[0xabe497fe]
@@ -1355,7 +1355,7 @@
  83 [-]: GETTABLE  R12 R12 K29  ; R82 := R12[0x04981ab3]
  84 [-]: GETTABLE  R13 R7 K26   ; R13 := R7["User"]
  85 [-]: CALL      R12 2 2      ; R12 := R12(R13)
- 86 [-]: SETTABLE  R11 K27 R12  ; R11["LowerName"] := R12
+ 86 [-]: SETTABLE  R11 K27 R12  ; R11[0x3a61a150] := R12
  87 [-]: CALL      R9 3 1       ; R9(R10,R11)
  88 [-]: SELF      R9 R0 K30    ; R10 := R0; R9 := R0[0xbad4316f]
  89 [-]: MOVE      R11 R7       ; R11 := R7
@@ -1409,7 +1409,7 @@
 137 [-]: GETTABLE  R20 R20 K29  ; R82 := R20[0x04981ab3]
 138 [-]: GETTABLE  R21 R15 K26  ; R21 := R15["User"]
 139 [-]: CALL      R20 2 2      ; R20 := R20(R21)
-140 [-]: SETTABLE  R19 K27 R20  ; R19["LowerName"] := R20
+140 [-]: SETTABLE  R19 K27 R20  ; R19[0x3a61a150] := R20
 141 [-]: CALL      R17 3 1      ; R17(R18,R19)
 142 [-]: GETTABLE  R17 R0 K3    ; R17 := R0["mUserCount"]
 143 [-]: GETTABLE  R18 R0 K6    ; R18 := R0["CLAN"]
@@ -1474,7 +1474,7 @@
 202 [-]: GETTABLE  R27 R27 K29  ; R82 := R27[0x04981ab3]
 203 [-]: GETTABLE  R28 R22 K26  ; R28 := R22["User"]
 204 [-]: CALL      R27 2 2      ; R27 := R27(R28)
-205 [-]: SETTABLE  R26 K27 R27  ; R26["LowerName"] := R27
+205 [-]: SETTABLE  R26 K27 R27  ; R26[0x3a61a150] := R27
 206 [-]: CALL      R24 3 1      ; R24(R25,R26)
 207 [-]: SELF      R24 R0 K30   ; R25 := R0; R24 := R0[0xbad4316f]
 208 [-]: MOVE      R26 R22      ; R26 := R22
@@ -2463,7 +2463,7 @@
   2 [-]: GETGLOBAL R3 K1        ; R3 := 0x83e41587
   3 [-]: MOVE      R4 R1        ; R4 := R1
   4 [-]: CALL      R3 2 2       ; R3 := R3(R4)
-  5 [-]: SETTABLE  R2 K0 R3     ; R2[0x638926f7] := R3
+  5 [-]: SETTABLE  R2 K0 R3     ; R2["mLowerSearchTerm"] := R3
   6 [-]: GETUPVAL  R2 U1        ; R2 := U1
   7 [-]: SELF      R2 R2 K2     ; R3 := R2; R2 := R2[0x741d078c]
   8 [-]: CLOSURE   R4 0         ; R4 := closure(Function #20.2.1)

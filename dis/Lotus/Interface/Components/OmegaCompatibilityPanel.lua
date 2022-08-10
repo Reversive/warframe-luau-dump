@@ -75,7 +75,7 @@
  19 [-]: SETTABLE  R7 K10 R8    ; R7["mCompatibleItems"] := R8
  20 [-]: SETTABLE  R7 K11 K12   ; R7["mCurrentCompatibleIndex"] := 1.000000
  21 [-]: CLOSURE   R8 0         ; R8 := closure(Function #1.1)
- 22 [-]: SETTABLE  R7 K13 R8    ; R7[0xe4162eed] := R8
+ 22 [-]: SETTABLE  R7 K13 R8    ; R7["GetParentEnv"] := R8
  23 [-]: CLOSURE   R8 1         ; R8 := closure(Function #1.2)
  24 [-]: MOVE      R0 R3        ; R0 := R3
  25 [-]: SETTABLE  R7 K14 R8    ; R7["HookUpCallbacks"] := R8
@@ -83,7 +83,7 @@
  27 [-]: SETTABLE  R7 K15 R8    ; R7["SetUpdateOmegaCallback"] := R8
  28 [-]: CLOSURE   R8 3         ; R8 := closure(Function #1.4)
  29 [-]: MOVE      R0 R4        ; R0 := R4
- 30 [-]: SETTABLE  R7 K16 R8    ; R7[0x7b998233] := R8
+ 30 [-]: SETTABLE  R7 K16 R8    ; R7["UpdateColors"] := R8
  31 [-]: CLOSURE   R8 4         ; R8 := closure(Function #1.5)
  32 [-]: GETUPVAL  R0 U0        ; R0 := U0
  33 [-]: GETUPVAL  R0 U1        ; R0 := U1
@@ -96,7 +96,7 @@
  40 [-]: SETTABLE  R7 K17 R8    ; R7["BuildCompatibleList"] := R8
  41 [-]: CLOSURE   R8 5         ; R8 := closure(Function #1.6)
  42 [-]: MOVE      R0 R1        ; R0 := R1
- 43 [-]: SETTABLE  R7 K18 R8    ; R7[0xbce5a201] := R8
+ 43 [-]: SETTABLE  R7 K18 R8    ; R7["SetupOmega"] := R8
  44 [-]: GETGLOBAL R8 K0        ; R8 := 0x2d0fad09
  45 [-]: LOADK     R9 K19       ; R9 := "Lotus.Interface.Components.CategorizedGrid"
  46 [-]: CALL      R8 2 2       ; R8 := R8(R9)

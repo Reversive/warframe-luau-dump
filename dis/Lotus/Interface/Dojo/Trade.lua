@@ -2751,9 +2751,9 @@
   8 [-]: GETTABLE  R3 R1 K3     ; R3 := R1["mIndex"]
   9 [-]: SETTABLE  R2 K3 R3     ; R2["mIndex"] := R3
  10 [-]: GETTABLE  R3 R1 K4     ; R3 := R1["mForceRedraw"]
- 11 [-]: SETTABLE  R2 K4 R3     ; R2["mForceRedraw"] := R3
+ 11 [-]: SETTABLE  R2 K4 R3     ; R2[0x03f57322] := R3
  12 [-]: GETTABLE  R3 R1 K5     ; R3 := R1["mInitialized"]
- 13 [-]: SETTABLE  R2 K5 R3     ; R2["mInitialized"] := R3
+ 13 [-]: SETTABLE  R2 K5 R3     ; R2[0x34291f5c] := R3
  14 [-]: GETTABLE  R3 R1 K6     ; R3 := R1["mClipEnabled"]
  15 [-]: SETTABLE  R2 K6 R3     ; R2["mClipEnabled"] := R3
  16 [-]: SELF      R3 R0 K7     ; R4 := R0; R3 := R0[0x5de055fe]
@@ -4395,11 +4395,11 @@
  18 [-]: EQ        0 R8 R9      ; if R8 ~= R9 then PC := 27
  19 [-]: JMP       27           ; PC := 27
  20 [-]: GETTABLE  R8 R6 K4     ; R8 := R6["Name"]
- 21 [-]: SETTABLE  R7 K3 R8     ; R7[0x42b04007] := R8
+ 21 [-]: SETTABLE  R7 K3 R8     ; R7["name"] := R8
  22 [-]: GETGLOBAL R8 K6        ; R8 := 0x06608641
  23 [-]: SELF      R8 R8 K7     ; R9 := R8; R8 := R8[0xed4e0128]
  24 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 25 [-]: SETTABLE  R7 K5 R8     ; R7[0x1142c7a8] := R8
+ 25 [-]: SETTABLE  R7 K5 R8     ; R7["storeItem"] := R8
  26 [-]: JMP       69           ; PC := 69
  27 [-]: GETGLOBAL R8 K8        ; R8 := 0x7b998233
  28 [-]: GETTABLE  R9 R6 K9     ; R9 := R6["mItemType"]
@@ -4409,7 +4409,7 @@
  32 [-]: GETTABLE  R8 R6 K9     ; R8 := R6["mItemType"]
  33 [-]: SELF      R8 R8 K7     ; R9 := R8; R8 := R8[0xed4e0128]
  34 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 35 [-]: SETTABLE  R7 K10 R8    ; R7[0x2cc9d281] := R8
+ 35 [-]: SETTABLE  R7 K10 R8    ; R7["itemType"] := R8
  36 [-]: GETTABLE  R8 R6 K1     ; R8 := R6["TradeType"]
  37 [-]: GETUPVAL  R9 U2        ; R9 := U2
  38 [-]: GETTABLE  R9 R9 K11    ; R9 := R9["MOD"]
@@ -4418,7 +4418,7 @@
  41 [-]: GETTABLE  R8 R6 K13    ; R8 := R6["Card"]
  42 [-]: GETTABLE  R8 R8 K14    ; R8 := R8["mUpgrade"]
  43 [-]: GETTABLE  R8 R8 K15    ; R8 := R8["mUpgradeFingerprint"]
- 44 [-]: SETTABLE  R7 K12 R8    ; R7[0x25312c9b] := R8
+ 44 [-]: SETTABLE  R7 K12 R8    ; R7["upgradeFingerprint"] := R8
  45 [-]: JMP       69           ; PC := 69
  46 [-]: GETTABLE  R8 R6 K1     ; R8 := R6["TradeType"]
  47 [-]: GETUPVAL  R9 U2        ; R9 := U2
@@ -4432,7 +4432,7 @@
  55 [-]: JMP       69           ; PC := 69
  56 [-]: GETTABLE  R8 R6 K17    ; R8 := R6["Trading"]
  57 [-]: GETTABLE  R8 R8 K18    ; R8 := R8["mName"]
- 58 [-]: SETTABLE  R7 K3 R8     ; R7[0x42b04007] := R8
+ 58 [-]: SETTABLE  R7 K3 R8     ; R7["name"] := R8
  59 [-]: JMP       69           ; PC := 69
  60 [-]: GETTABLE  R8 R6 K1     ; R8 := R6["TradeType"]
  61 [-]: GETUPVAL  R9 U2        ; R9 := U2
@@ -4440,9 +4440,9 @@
  63 [-]: EQ        0 R8 R9      ; if R8 ~= R9 then PC := 69
  64 [-]: JMP       69           ; PC := 69
  65 [-]: GETTABLE  R8 R6 K4     ; R8 := R6["Name"]
- 66 [-]: SETTABLE  R7 K3 R8     ; R7[0x42b04007] := R8
+ 66 [-]: SETTABLE  R7 K3 R8     ; R7["name"] := R8
  67 [-]: GETTABLE  R8 R6 K21    ; R8 := R6["ArcaneRank"]
- 68 [-]: SETTABLE  R7 K20 R8    ; R7["rank"] := R8
+ 68 [-]: SETTABLE  R7 K20 R8    ; R7[0xf76783e5] := R8
  69 [-]: GETGLOBAL R8 K22       ; R8 := cjson
  70 [-]: GETTABLE  R8 R8 K23    ; R82 := R8[0xb139d7bc]
  71 [-]: MOVE      R9 R7        ; R9 := R7
@@ -4541,7 +4541,7 @@
  65 [-]: NEWTABLE  R9 0 3       ; R9 := {}
  66 [-]: GETTABLE  R10 R1 K19   ; R10 := R1["Card"]
  67 [-]: GETTABLE  R10 R10 K22  ; R10 := R10["mName"]
- 68 [-]: SETTABLE  R9 K4 R10    ; R9[0x42b04007] := R10
+ 68 [-]: SETTABLE  R9 K4 R10    ; R9["MOD"] := R10
  69 [-]: SETTABLE  R9 K23 R4    ; R9["RARITY"] := R4
  70 [-]: GETTABLE  R10 R1 K19   ; R10 := R1["Card"]
  71 [-]: GETTABLE  R10 R10 K25  ; R10 := R10["mLevel"]
@@ -4778,8 +4778,8 @@
  64 [-]: MOVE      R2 R7        ; R2 := R7
  65 [-]: FORLOOP   R3 51        ; R3 += R5; if R3 <= R4 then begin PC := 51; R6 := R3 end
  66 [-]: NEWTABLE  R7 0 3       ; R7 := {}
- 67 [-]: SETTABLE  R7 K13 R1    ; R7[0x7b998233] := R1
- 68 [-]: SETTABLE  R7 K14 R2    ; R7[0xae91e43b] := R2
+ 67 [-]: SETTABLE  R7 K13 R1    ; R7["GIVING"] := R1
+ 68 [-]: SETTABLE  R7 K14 R2    ; R7["GETTING"] := R2
  69 [-]: GETUPVAL  R8 U9        ; R8 := U9
  70 [-]: SETTABLE  R7 K15 R8    ; R7["PLAYER_NAME"] := R8
  71 [-]: GETGLOBAL R8 K6        ; R8 := 0xae91e43b
@@ -5310,7 +5310,7 @@
  90 [-]: GETUPVAL  R0 U0        ; R0 := U0
  91 [-]: MOVE      R0 R8        ; R0 := R8
  92 [-]: MOVE      R0 R7        ; R0 := R7
- 93 [-]: SETTABLE  R9 K28 R10   ; R9["SongSelectionDone"] := R10
+ 93 [-]: SETTABLE  R9 K28 R10   ; R9[0x7b998233] := R10
  94 [-]: GETUPVAL  R9 U3        ; R9 := U3
  95 [-]: SELF      R9 R9 K23    ; R10 := R9; R9 := R9[0xe4162eed]
  96 [-]: LOADK     R11 K29      ; R11 := "SetCallBack"
@@ -5800,7 +5800,7 @@
 188 [-]: SETTABLE  R15 K12 R16  ; R15["mItemType"] := R16
 189 [-]: GETUPVAL  R15 U4       ; R15 := U4
 190 [-]: GETTABLE  R16 R6 K10   ; R16 := R6["Card"]
-191 [-]: SETTABLE  R15 K35 R16  ; R15["Trading"] := R16
+191 [-]: SETTABLE  R15 K35 R16  ; R15[0x340da740] := R16
 192 [-]: GETUPVAL  R15 U4       ; R15 := U4
 193 [-]: GETTABLE  R16 R6 K10   ; R16 := R6["Card"]
 194 [-]: SETTABLE  R15 K10 R16  ; R15["Card"] := R16
@@ -7572,11 +7572,11 @@
  92 [-]: GETGLOBAL R8 K23       ; R8 := _T
  93 [-]: NEWTABLE  R9 0 1       ; R9 := {}
  94 [-]: NEWTABLE  R10 0 3      ; R10 := {}
- 95 [-]: SETTABLE  R10 K26 R7   ; R10[0xfb753cfb] := R7
+ 95 [-]: SETTABLE  R10 K26 R7   ; R10["StoreItem"] := R7
  96 [-]: SETTABLE  R10 K27 K10  ; R10["CanGiftOverride"] := false
  97 [-]: SETTABLE  R10 K28 K10  ; R10["CanPurchaseOverride"] := false
  98 [-]: SETTABLE  R9 K25 R10   ; R9["ITEM"] := R10
- 99 [-]: SETTABLE  R8 K24 R9    ; R8[0xae91e43b] := R9
+ 99 [-]: SETTABLE  R8 K24 R9    ; R8["marketDetailedViewParms"] := R9
 100 [-]: GETGLOBAL R8 K29       ; R8 := 0xae91e43b
 101 [-]: SELF      R8 R8 K30    ; R9 := R8; R8 := R8[0x1fd6abd0]
 102 [-]: GETGLOBAL R10 K31      ; R10 := 0x0032441c

@@ -689,7 +689,7 @@
  10 [-]: GETGLOBAL R3 K6        ; R3 := gLotusSigilType
  11 [-]: SETLIST   R2 1 1       ; R2[(1-1)*FPF+i] := R(2+i), 1 <= i <= 1
  12 [-]: SETTABLE  R1 K3 R2     ; R1["Types"] := R2
- 13 [-]: SETTABLE  R0 K4 R1     ; R0["SIGIL"] := R1
+ 13 [-]: SETTABLE  R0 K4 R1     ; R0[0x0000001e] := R1
  14 [-]: NEWTABLE  R1 0 2       ; R1 := {}
  15 [-]: SETTABLE  R1 K1 K8     ; R1["Id"] := 2.000000
  16 [-]: NEWTABLE  R2 1 0       ; R2 := {}

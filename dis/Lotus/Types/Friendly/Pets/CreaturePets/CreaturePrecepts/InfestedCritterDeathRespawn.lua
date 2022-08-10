@@ -91,11 +91,11 @@
   9 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
  10 [-]: GETTABLE  R3 R3 R4     ; R3 := R3[R4]
  11 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 12 [-]: SETTABLE  R1 K0 R2     ; R1[0xcb3851b8] := R2
+ 12 [-]: SETTABLE  R1 K0 R2     ; R1["DAMAGE"] := R2
  13 [-]: GETGLOBAL R2 K1        ; R2 := 0x64fb1586
  14 [-]: GETGLOBAL R3 K6        ; R3 := 0x4993c90f
  15 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 16 [-]: SETTABLE  R1 K5 R2     ; R1[0xc5d49e69] := R2
+ 16 [-]: SETTABLE  R1 K5 R2     ; R1[0x03cbee37] := R2
  17 [-]: GETGLOBAL R2 K7        ; R2 := cjson
  18 [-]: GETTABLE  R2 R2 K8     ; R82 := R2[0xb139d7bc]
  19 [-]: MOVE      R3 R1        ; R3 := R1

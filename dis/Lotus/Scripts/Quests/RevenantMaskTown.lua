@@ -297,7 +297,7 @@
 268 [-]: SETTABLE  R45 K47 K51  ; R45["mName"] := "/Lotus/Language/RevenantQuest/NakakDialogOption"
 269 [-]: SETTABLE  R45 K52 K22  ; R45["mAlwaysShow"] := true
 270 [-]: CLOSURE   R46 2        ; R46 := closure(Function #1.3)
-271 [-]: SETTABLE  R45 K53 R46  ; R45[0x46a0ebf5] := R46
+271 [-]: SETTABLE  R45 K53 R46  ; R45["mCondition"] := R46
 272 [-]: CLOSURE   R46 3        ; R46 := closure(Function #1.4)
 273 [-]: MOVE      R0 R18       ; R0 := R18
 274 [-]: SETTABLE  R45 K49 R46  ; R45["mCallback"] := R46
@@ -308,7 +308,7 @@
 279 [-]: TEST      R45 1        ; if R45 then PC := 282
 280 [-]: JMP       282          ; PC := 282
 281 [-]: NEWTABLE  R45 0 0      ; R45 := {}
-282 [-]: SETTABLE  R44 K54 R45  ; R44[0x0469f296] := R45
+282 [-]: SETTABLE  R44 K54 R45  ; R44["OnBuyVendorItemCallbacks"] := R45
 283 [-]: GETGLOBAL R44 K2       ; R44 := _T
 284 [-]: GETTABLE  R44 R44 K54  ; R44 := R44["OnBuyVendorItemCallbacks"]
 285 [-]: CLOSURE   R45 4        ; R45 := closure(Function #1.5)

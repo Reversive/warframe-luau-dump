@@ -143,7 +143,7 @@
  42 [-]: SETTABLE  R6 K23 R11   ; R6["ComponentInterpolate"] := R11
  43 [-]: CLOSURE   R11 6        ; R11 := closure(Function #1.7)
  44 [-]: GETUPVAL  R0 U2        ; R0 := U2
- 45 [-]: SETTABLE  R6 K24 R11   ; R6["Interpolate"] := R11
+ 45 [-]: SETTABLE  R6 K24 R11   ; R6[0x47bbb028] := R11
  46 [-]: CLOSURE   R11 7        ; R11 := closure(Function #1.8)
  47 [-]: SETTABLE  R6 K25 R11   ; R6["TrySetDrag"] := R11
  48 [-]: GETTABLE  R11 R6 K27   ; R11 := R6["TrySetFocus"]
@@ -2836,7 +2836,7 @@
  68 [-]: SETTABLE  R3 K29 K30   ; R3["mEdgeAlpha"] := 40.000000
  69 [-]: SETTABLE  R3 K31 K32   ; R3["mFocusedEdgeAlpha"] := 80.000000
  70 [-]: GETTABLE  R8 R0 K26    ; R8 := R0["mDisableSlider"]
- 71 [-]: SETTABLE  R3 K33 R8    ; R3[0x6474e31b] := R8
+ 71 [-]: SETTABLE  R3 K33 R8    ; R3["mHideArrows"] := R8
  72 [-]: SETTABLE  R3 K34 K36   ; R3["mUnfocusedEdgeColor"] := 1.000000
  73 [-]: GETUPVAL  R8 U3        ; R8 := U3
  74 [-]: GETGLOBAL R9 K38       ; R9 := IconTypes
@@ -3068,7 +3068,7 @@
  50 [-]: CALL      R7 5 1       ; R7(R8,R9,R10,R11)
  51 [-]: SETTABLE  R3 K21 R5    ; R3["mHeight"] := R5
  52 [-]: SETTABLE  R3 K22 R6    ; R3["mMinSize"] := R6
- 53 [-]: SETTABLE  R3 K23 R6    ; R3["mMaxSize"] := R6
+ 53 [-]: SETTABLE  R3 K23 R6    ; R3[0xae6791ba] := R6
  54 [-]: SETTABLE  R3 K24 K25   ; R3["mEdgeAlpha"] := 40.000000
  55 [-]: SETTABLE  R3 K26 K27   ; R3["mFocusedEdgeAlpha"] := 80.000000
  56 [-]: SETTABLE  R3 K28 K30   ; R3["mUnfocusedEdgeColor"] := 1.000000
@@ -3081,7 +3081,7 @@
  63 [-]: GETGLOBAL R8 K32       ; R8 := IconTypes
  64 [-]: GETTABLE  R8 R8 K35    ; R8 := R8["CROSS"]
  65 [-]: GETTABLE  R7 R7 R8     ; R7 := R7[R8]
- 66 [-]: SETTABLE  R3 K34 R7    ; R3[0xddb5df06] := R7
+ 66 [-]: SETTABLE  R3 K34 R7    ; R3["mIconOff"] := R7
  67 [-]: GETUPVAL  R7 U2        ; R7 := U2
  68 [-]: GETGLOBAL R8 K32       ; R8 := IconTypes
  69 [-]: GETTABLE  R8 R8 K37    ; R8 := R8["GRIP"]
@@ -3094,7 +3094,7 @@
  76 [-]: MOVE      R0 R0        ; R0 := R0
  77 [-]: SETTABLE  R3 K39 R7    ; R3["TrySetFocus"] := R7
  78 [-]: GETTABLE  R7 R3 K41    ; R7 := R3["TryPressed"]
- 79 [-]: SETTABLE  R3 K40 R7    ; R3["ComponentTryPressed"] := R7
+ 79 [-]: SETTABLE  R3 K40 R7    ; R3[0x6c97a788] := R7
  80 [-]: CLOSURE   R7 1         ; R7 := closure(Function #1.29.2)
  81 [-]: MOVE      R0 R3        ; R0 := R3
  82 [-]: MOVE      R0 R0        ; R0 := R0
@@ -3106,14 +3106,14 @@
  88 [-]: SETTABLE  R3 K43 R7    ; R3["ValueChanged"] := R7
  89 [-]: SETTABLE  R0 K7 R3     ; R0["mCheckbox"] := R3
  90 [-]: JMP       97           ; PC := 97
- 91 [-]: SETTABLE  R3 K4 R2     ; R3[0xa7ec3e8a] := R2
+ 91 [-]: SETTABLE  R3 K4 R2     ; R3["mClipName"] := R2
  92 [-]: SETTABLE  R3 K44 K45   ; R3["mHookedUpCallbacks"] := false
  93 [-]: SELF      R7 R3 K46    ; R8 := R3; R7 := R3[0xe91c55ec]
  94 [-]: CALL      R7 2 1       ; R7(R8)
  95 [-]: SELF      R7 R3 K47    ; R8 := R3; R7 := R3[0x9c683672]
  96 [-]: CALL      R7 2 1       ; R7(R8)
  97 [-]: GETTABLE  R7 R0 K49    ; R7 := R0["mId"]
- 98 [-]: SETTABLE  R3 K48 R7    ; R3[0x00000001] := R7
+ 98 [-]: SETTABLE  R3 K48 R7    ; R3["mParentId"] := R7
  99 [-]: NEWTABLE  R7 1 0       ; R7 := {}
 100 [-]: MOVE      R8 R3        ; R8 := R3
 101 [-]: SETLIST   R7 1 1       ; R7[(1-1)*FPF+i] := R(7+i), 1 <= i <= 1
@@ -3462,7 +3462,7 @@
  15 [-]: SETTABLE  R2 K4 R0     ; R2["mDragSource"] := R0
  16 [-]: JMP       19           ; PC := 19
  17 [-]: GETUPVAL  R2 U2        ; R2 := U2
- 18 [-]: SETTABLE  R2 K5 R0     ; R2[0x71e9ac81] := R0
+ 18 [-]: SETTABLE  R2 K5 R0     ; R2["mDragTarget"] := R0
  19 [-]: RETURN    R0 1         ; return 
 
 

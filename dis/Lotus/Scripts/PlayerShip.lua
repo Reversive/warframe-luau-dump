@@ -1189,7 +1189,7 @@
 157 [-]: JMP       161          ; PC := 161
 158 [-]: GETTABLE  R12 R11 K44  ; R12 := R11["heading"]
 159 [-]: ADD       R12 R12 K45  ; R12 := R12 + 180.000000
-160 [-]: SETTABLE  R11 K44 R12  ; R11["heading"] := R12
+160 [-]: SETTABLE  R11 K44 R12  ; R11[0xfe967de6] := R12
 161 [-]: SELF      R12 R4 K8    ; R13 := R4; R12 := R4[0x22da1852]
 162 [-]: CALL      R12 2 2      ; R12 := R12(R13)
 163 [-]: SELF      R12 R12 K9   ; R13 := R12; R12 := R12[0x6d604ba7]

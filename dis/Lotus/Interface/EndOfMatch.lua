@@ -6294,7 +6294,7 @@
 188 [-]: CALL      R30 2 2      ; R30 := R30(R31)
 189 [-]: NEWTABLE  R31 0 0      ; R31 := {}
 190 [-]: CALL      R29 3 2      ; R29 := R29(R30,R31)
-191 [-]: SETTABLE  R28 K47 R29  ; R28["Name"] := R29
+191 [-]: SETTABLE  R28 K47 R29  ; R28[0xae91e43b] := R29
 192 [-]: SETTABLE  R28 K51 R12  ; R28["Desc"] := R12
 193 [-]: GETGLOBAL R29 K49      ; R29 := 0x64fb1586
 194 [-]: SELF      R30 R5 K53   ; R31 := R5; R30 := R5[0x5660f6f0]
@@ -6596,20 +6596,20 @@
 200 [-]: LOADK     R41 K53      ; R41 := "\r"
 201 [-]: CONCAT    R30 R30 R41  ; R30 := R30 .. R31 .. R32 .. R33 .. R34 .. R35 .. R36 .. R37 .. R38 .. R39 .. R40 .. R41
 202 [-]: NEWTABLE  R31 0 9      ; R31 := {}
-203 [-]: SETTABLE  R31 K56 R9   ; R31["Type"] := R9
+203 [-]: SETTABLE  R31 K56 R9   ; R31[0x7f5022cf] := R9
 204 [-]: SETTABLE  R31 K57 K58  ; R31["Onslaught"] := true
 205 [-]: GETUPVAL  R32 U2       ; R32 := U2
 206 [-]: GETTABLE  R32 R32 K52  ; R82 := R32[0x1142c7a8]
 207 [-]: MOVE      R33 R15      ; R33 := R15
 208 [-]: CALL      R32 2 2      ; R32 := R32(R33)
 209 [-]: SETTABLE  R31 K15 R32  ; R31["Score"] := R32
-210 [-]: SETTABLE  R31 K59 R10  ; R31[0x64fb1586] := R10
+210 [-]: SETTABLE  R31 K59 R10  ; R31["Icon"] := R10
 211 [-]: SETTABLE  R31 K60 K58  ; R31["Themed"] := true
 212 [-]: GETGLOBAL R32 K62      ; R32 := 0x7f5022cf
 213 [-]: GETTABLE  R32 R32 K63  ; R82 := R32[0x3f3e4d12]
 214 [-]: MOVE      R33 R30      ; R33 := R30
 215 [-]: CALL      R32 2 2      ; R32 := R32(R33)
-216 [-]: SETTABLE  R31 K61 R32  ; R31[0xe4a5b3ca] := R32
+216 [-]: SETTABLE  R31 K61 R32  ; R31["Name"] := R32
 217 [-]: LOADK     R32 K65      ; R32 := "<font color=\"#FloatingContentHighlight\" size=\"50\"><b>"
 218 [-]: MOVE      R33 R29      ; R33 := R29
 219 [-]: LOADK     R34 K66      ; R34 := "</b> </font>"
@@ -6815,18 +6815,18 @@
 174 [-]: CONCAT    R17 R17 R23  ; R17 := R17 .. R18 .. R19 .. R20 .. R21 .. R22 .. R23
 175 [-]: NEWTABLE  R18 0 8      ; R18 := {}
 176 [-]: SETTABLE  R18 K41 K42  ; R18["Invasion"] := true
-177 [-]: SETTABLE  R18 K43 R6   ; R18[0x64fb1586] := R6
-178 [-]: SETTABLE  R18 K44 R13  ; R18[0x6bd7c146] := R13
+177 [-]: SETTABLE  R18 K43 R6   ; R18["Score"] := R6
+178 [-]: SETTABLE  R18 K44 R13  ; R18["Delta"] := R13
 179 [-]: GETGLOBAL R19 K46      ; R19 := 0x6b3ec1d5
 180 [-]: GETTABLE  R20 R0 K17   ; R20 := R0["invasionAllyFaction"]
 181 [-]: ADD       R20 R20 K19  ; R20 := R20 + 1.000000
 182 [-]: GETTABLE  R19 R19 R20  ; R19 := R19[R20]
 183 [-]: SETTABLE  R18 K45 R19  ; R18["Icon"] := R19
 184 [-]: GETGLOBAL R19 K48      ; R19 := 0x74c5e454
-185 [-]: SETTABLE  R18 K47 R19  ; R18[0xe6b719a2] := R19
+185 [-]: SETTABLE  R18 K47 R19  ; R18["Icon2"] := R19
 186 [-]: SETTABLE  R18 K49 K42  ; R18["Themed"] := true
 187 [-]: SETTABLE  R18 K50 R17  ; R18["Name"] := R17
-188 [-]: SETTABLE  R18 K51 R14  ; R18[0x00000001] := R14
+188 [-]: SETTABLE  R18 K51 R14  ; R18["CompletionFaction"] := R14
 189 [-]: GETGLOBAL R19 K52      ; R19 := mAffinityGrid
 190 [-]: SELF      R19 R19 K53  ; R20 := R19; R19 := R19[0xbad4316f]
 191 [-]: MOVE      R21 R18      ; R21 := R18
@@ -8245,8 +8245,8 @@
  44 [-]: NEWTABLE  R17 0 0      ; R17 := {}
  45 [-]: SETTABLE  R16 K4 R17   ; R16["Value"] := R17
  46 [-]: SETTABLE  R16 K6 R7    ; R16["BestValue"] := R7
- 47 [-]: SETTABLE  R16 K7 R3    ; R16["BestIsMax"] := R3
- 48 [-]: SETTABLE  R16 K8 R4    ; R16["IsRatio"] := R4
+ 47 [-]: SETTABLE  R16 K7 R3    ; R16[0xae91e43b] := R3
+ 48 [-]: SETTABLE  R16 K8 R4    ; R16[0x42b04007] := R4
  49 [-]: SETTABLE  R16 K9 R6    ; R16["HideValue"] := R6
  50 [-]: SETTABLE  R0 R15 R16   ; R0[R15] := R16
  51 [-]: ADD       R15 R8 K5    ; R15 := R8 + 1.000000
@@ -13998,7 +13998,7 @@
  15 [-]: SETTABLE  R2 K4 K5     ; R2["mProgressText"] := ""
  16 [-]: SELF      R3 R2 K6     ; R4 := R2; R3 := R2[0x71e9ac81]
  17 [-]: CALL      R3 2 1       ; R3(R4)
- 18 [-]: SETTABLE  R0 K7 R2     ; R0[0x10e5bb7a] := R2
+ 18 [-]: SETTABLE  R0 K7 R2     ; R0["ProgressInfo"] := R2
  19 [-]: SETTABLE  R0 K8 K9     ; R0["IconHeight"] := 76.000000
  20 [-]: RETURN    R0 1         ; return 
 
@@ -15298,7 +15298,7 @@
 165 [-]: GETUPVAL  R22 U10      ; R22 := U10
 166 [-]: MOVE      R23 R20      ; R23 := R20
 167 [-]: CALL      R22 2 2      ; R22 := R22(R23)
-168 [-]: SETTABLE  R21 K34 R22  ; R21[0x00000053] := R22
+168 [-]: SETTABLE  R21 K34 R22  ; R21["PlainsFreeRoamArchwing"] := R22
 169 [-]: GETUPVAL  R21 U11      ; R21 := U11
 170 [-]: MOVE      R22 R10      ; R22 := R10
 171 [-]: LOADK     R23 0        ; R23 := 0.000000
@@ -17268,7 +17268,7 @@
  69 [-]: GETTABLE  R15 R15 K10  ; R82 := R15[0x23d5322f]
  70 [-]: MOVE      R16 R1       ; R16 := R1
  71 [-]: NEWTABLE  R17 0 2      ; R17 := {}
- 72 [-]: SETTABLE  R17 K6 R14   ; R17[0xa94df70b] := R14
+ 72 [-]: SETTABLE  R17 K6 R14   ; R17["mItemType"] := R14
  73 [-]: GETTABLE  R18 R13 K14  ; R18 := R13["itemCount"]
  74 [-]: SETTABLE  R17 K13 R18  ; R17["mItemCount"] := R18
  75 [-]: CALL      R15 3 1      ; R15(R16,R17)
@@ -17318,7 +17318,7 @@
 119 [-]: GETGLOBAL R23 K19      ; R23 := 0x6c97a788
 120 [-]: GETTABLE  R23 R23 K20  ; R82 := R23[0x1aba4d9e]
 121 [-]: CALL      R23 1 2      ; R23 := R23()
-122 [-]: SETTABLE  R23 K6 R22   ; R23[0xa94df70b] := R22
+122 [-]: SETTABLE  R23 K6 R22   ; R23["mItemType"] := R22
 123 [-]: GETTABLE  R24 R21 K21  ; R24 := R21["levelOverride"]
 124 [-]: SELF      R25 R22 K7   ; R26 := R22; R25 := R22[0xf2deaf69]
 125 [-]: GETGLOBAL R27 K22      ; R27 := gRandomizedArtifactUpgradeType
@@ -17387,7 +17387,7 @@
 188 [-]: GETGLOBAL R33 K39      ; R33 := 0x70177a2b
 189 [-]: GETTABLE  R33 R33 R30  ; R33 := R33[R30]
 190 [-]: CALL      R32 2 2      ; R32 := R32(R33)
-191 [-]: SETTABLE  R31 K6 R32   ; R31[0xa94df70b] := R32
+191 [-]: SETTABLE  R31 K6 R32   ; R31["mItemType"] := R32
 192 [-]: GETGLOBAL R32 K9       ; R32 := 0x33bdd652
 193 [-]: GETTABLE  R32 R32 K10  ; R82 := R32[0x23d5322f]
 194 [-]: GETUPVAL  R33 U6       ; R33 := U6
@@ -19890,7 +19890,7 @@
 238 [-]: SETTABLE  R10 K70 R11  ; R10["FACTION"] := R11
 239 [-]: GETUPVAL  R11 U10      ; R11 := U10
 240 [-]: CALL      R11 1 2      ; R11 := R11()
-241 [-]: SETTABLE  R10 K73 R11  ; R10[0x7b998233] := R11
+241 [-]: SETTABLE  R10 K73 R11  ; R10["TYPE"] := R11
 242 [-]: CALL      R8 3 0       ; R8,... := R8(R9,R10)
 243 [-]: CALL      R7 0 2       ; R7 := R7(R8,...)
 244 [-]: GETGLOBAL R8 K3        ; R8 := 0xae91e43b
@@ -23872,14 +23872,14 @@
  51 [-]: LOADK     R14 2        ; R14 := 2.000000
  52 [-]: CALL      R11 4 2      ; R11 := R11(R12,R13,R14)
  53 [-]: ADD       R11 R11 K17  ; R11 := R11 + 26.000000
- 54 [-]: SETTABLE  R10 K15 R11  ; R10[0xae91e43b] := R11
+ 54 [-]: SETTABLE  R10 K15 R11  ; R10["x"] := R11
  55 [-]: GETGLOBAL R11 K1       ; R11 := 0xae91e43b
  56 [-]: SELF      R11 R11 K16  ; R12 := R11; R11 := R11[0x91a24e4b]
  57 [-]: MOVE      R13 R1       ; R13 := R1
  58 [-]: LOADK     R14 3        ; R14 := 3.000000
  59 [-]: CALL      R11 4 2      ; R11 := R11(R12,R13,R14)
  60 [-]: SUB       R11 R11 K17  ; R11 := R11 - 26.000000
- 61 [-]: SETTABLE  R10 K18 R11  ; R10[0xbd496aa1] := R11
+ 61 [-]: SETTABLE  R10 K18 R11  ; R10["y"] := R11
  62 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
  63 [-]: SETTABLE  R7 K13 R8    ; R7["gToolTipCoords"] := R8
  64 [-]: JMP       66           ; PC := 66

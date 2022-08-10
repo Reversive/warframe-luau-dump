@@ -160,7 +160,7 @@
 120 [-]: GETGLOBAL R10 K4       ; R10 := _T
 121 [-]: GETGLOBAL R11 K4       ; R11 := _T
 122 [-]: GETTABLE  R11 R11 K26  ; R11 := R11["VideoWallEndColor"]
-123 [-]: SETTABLE  R10 K27 R11  ; R10[0x00000001] := R11
+123 [-]: SETTABLE  R10 K27 R11  ; R10["VideoWallStartColor"] := R11
 124 [-]: GETGLOBAL R10 K4       ; R10 := _T
 125 [-]: SETTABLE  R10 K26 R4   ; R10["VideoWallEndColor"] := R4
 126 [-]: GETGLOBAL R10 K7       ; R10 := 0x89326c93

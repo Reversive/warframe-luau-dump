@@ -389,7 +389,7 @@
  27 [-]: EQ        1 R2 R1      ; if R2 == R1 then PC := 40
  28 [-]: JMP       40           ; PC := 40
  29 [-]: GETUPVAL  R2 U1        ; R2 := U1
- 30 [-]: SETTABLE  R2 K9 R1     ; R2[0xf2deaf69] := R1
+ 30 [-]: SETTABLE  R2 K9 R1     ; R2["Tier"] := R1
  31 [-]: GETUPVAL  R2 U1        ; R2 := U1
  32 [-]: SETTABLE  R2 K10 K6    ; R2["TierChanged"] := true
  33 [-]: GETUPVAL  R2 U1        ; R2 := U1
@@ -398,7 +398,7 @@
  36 [-]: GETUPVAL  R5 U1        ; R5 := U1
  37 [-]: GETTABLE  R5 R5 K9     ; R5 := R5["Tier"]
  38 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
- 39 [-]: SETTABLE  R2 K11 R3    ; R2[0xa2196f29] := R3
+ 39 [-]: SETTABLE  R2 K11 R3    ; R2["RequiredContributors"] := R3
  40 [-]: GETGLOBAL R2 K1        ; R2 := 0xbe190284
  41 [-]: SELF      R2 R2 K13    ; R3 := R2; R2 := R2[0x1c6d73e1]
  42 [-]: CALL      R2 2 2       ; R2 := R2(R3)

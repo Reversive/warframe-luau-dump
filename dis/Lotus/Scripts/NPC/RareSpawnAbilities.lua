@@ -1083,7 +1083,7 @@
  14 [-]: JMP       18           ; PC := 18
  15 [-]: GETGLOBAL R3 K3        ; R3 := _T
  16 [-]: NEWTABLE  R4 0 0       ; R4 := {}
- 17 [-]: SETTABLE  R3 K4 R4     ; R3[0xcbd666e1] := R4
+ 17 [-]: SETTABLE  R3 K4 R4     ; R3["forcedRifters"] := R4
  18 [-]: GETGLOBAL R3 K2        ; R3 := 0x7b998233
  19 [-]: GETGLOBAL R4 K3        ; R4 := _T
  20 [-]: GETTABLE  R4 R4 K4     ; R4 := R4["forcedRifters"]

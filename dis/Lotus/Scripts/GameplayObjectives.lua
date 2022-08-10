@@ -233,7 +233,7 @@
  15 [-]: JMP       19           ; PC := 19
  16 [-]: GETGLOBAL R4 K5        ; R4 := _T
  17 [-]: NEWTABLE  R5 0 0       ; R5 := {}
- 18 [-]: SETTABLE  R4 K6 R5     ; R4[0x487b4aae] := R5
+ 18 [-]: SETTABLE  R4 K6 R5     ; R4["gCaptureFlagKilledHolder"] := R5
  19 [-]: GETGLOBAL R4 K5        ; R4 := _T
  20 [-]: GETTABLE  R4 R4 K6     ; R4 := R4["gCaptureFlagKilledHolder"]
  21 [-]: SETTABLE  R4 R0 R3     ; R4[R0] := R3

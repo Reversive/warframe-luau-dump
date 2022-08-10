@@ -197,7 +197,7 @@
  63 [-]: CALL      R12 2 2      ; R12 := R12(R13)
  64 [-]: SELF      R12 R12 K20  ; R13 := R12; R12 := R12[0xef980197]
  65 [-]: CALL      R12 2 2      ; R12 := R12(R13)
- 66 [-]: SETTABLE  R11 K17 R12  ; R11[0x5ca33548] := R12
+ 66 [-]: SETTABLE  R11 K17 R12  ; R11["k"] := R12
  67 [-]: SETTABLE  R2 R10 R11   ; R2[R10] := R11
  68 [-]: TFORLOOP  R3 2         ; R6,R7 :=  R3(R4,R5); if R6 ~= nil then begin PC = 22; R5 := R6 end
  69 [-]: JMP       22           ; PC := 22
@@ -214,7 +214,7 @@
  80 [-]: TEST      R17 1        ; if R17 then PC := 83
  81 [-]: JMP       83           ; PC := 83
  82 [-]: LOADK     R17 K15      ; R17 := ""
- 83 [-]: SETTABLE  R16 K14 R17  ; R16[0x1c881607] := R17
+ 83 [-]: SETTABLE  R16 K14 R17  ; R16["s"] := R17
  84 [-]: TFORLOOP  R11 2        ; R14,R15 :=  R11(R12,R13); if R14 ~= nil then begin PC = 74; R13 := R14 end
  85 [-]: JMP       74           ; PC := 74
  86 [-]: RETURN    R2 2         ; return R2

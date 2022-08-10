@@ -286,7 +286,7 @@
  24 [-]: GETGLOBAL R1 K1        ; R1 := _T
  25 [-]: GETTABLE  R1 R1 K2     ; R1 := R1["gActiveDropshipCount"]
  26 [-]: SUB       R1 R1 K6     ; R1 := R1 - 1.000000
- 27 [-]: SETTABLE  R0 K2 R1     ; R0[0x7ed0a956] := R1
+ 27 [-]: SETTABLE  R0 K2 R1     ; R0["gActiveDropshipCount"] := R1
  28 [-]: RETURN    R0 1         ; return 
 
 
@@ -1448,7 +1448,7 @@
 112 [-]: GETGLOBAL R18 K19      ; R18 := _T
 113 [-]: GETTABLE  R19 R17 K22  ; R19 := R17["minEnemyLevel"]
 114 [-]: ADD       R19 R19 K23  ; R19 := R19 + 2.000000
-115 [-]: SETTABLE  R18 K20 R19  ; R18["AmbulasSpawnLastAgentLevel"] := R19
+115 [-]: SETTABLE  R18 K20 R19  ; R18[0x0bd84cae] := R19
 116 [-]: SELF      R18 R0 K24   ; R19 := R0; R18 := R0[0xfa9e477f]
 117 [-]: CALL      R18 2 2      ; R18 := R18(R19)
 118 [-]: GETGLOBAL R19 K0       ; R19 := 0x7b998233
@@ -1459,7 +1459,7 @@
 123 [-]: GETGLOBAL R19 K19      ; R19 := _T
 124 [-]: SELF      R20 R18 K25  ; R21 := R18; R20 := R18[0xc45c884b]
 125 [-]: CALL      R20 2 2      ; R20 := R20(R21)
-126 [-]: SETTABLE  R19 K20 R20  ; R19["AmbulasSpawnLastAgentLevel"] := R20
+126 [-]: SETTABLE  R19 K20 R20  ; R19[0x0bd84cae] := R20
 127 [-]: JMP       151          ; PC := 151
 128 [-]: SELF      R19 R0 K24   ; R20 := R0; R19 := R0[0xfa9e477f]
 129 [-]: CALL      R19 2 2      ; R19 := R19(R20)
@@ -1471,7 +1471,7 @@
 135 [-]: GETGLOBAL R20 K19      ; R20 := _T
 136 [-]: SELF      R21 R19 K25  ; R22 := R19; R21 := R19[0xc45c884b]
 137 [-]: CALL      R21 2 2      ; R21 := R21(R22)
-138 [-]: SETTABLE  R20 K20 R21  ; R20["AmbulasSpawnLastAgentLevel"] := R21
+138 [-]: SETTABLE  R20 K20 R21  ; R20[0x0bd84cae] := R21
 139 [-]: JMP       151          ; PC := 151
 140 [-]: TEST      R2 0         ; if not R2 then PC := 151
 141 [-]: JMP       151          ; PC := 151
@@ -1483,7 +1483,7 @@
 147 [-]: GETGLOBAL R24 K28      ; R24 := 0x4bbeaa3f
 148 [-]: CALL      R22 3 2      ; R22 := R22(R23,R24)
 149 [-]: ADD       R21 R21 R22  ; R21 := R21 + R22
-150 [-]: SETTABLE  R20 K20 R21  ; R20["AmbulasSpawnLastAgentLevel"] := R21
+150 [-]: SETTABLE  R20 K20 R21  ; R20[0x0bd84cae] := R21
 151 [-]: SELF      R20 R0 K29   ; R21 := R0; R20 := R0[0xb45afc36]
 152 [-]: GETGLOBAL R22 K30      ; R22 := 0x88efc25e
 153 [-]: GETGLOBAL R23 K1       ; R23 := 0x4443184f
@@ -1911,7 +1911,7 @@
   7 [-]: LOADK     R3 4         ; R3 := 4.000000
   8 [-]: LOADK     R4 9         ; R4 := 9.000000
   9 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
- 10 [-]: SETTABLE  R1 K1 R2     ; R1["HunterShipCountLeft"] := R2
+ 10 [-]: SETTABLE  R1 K1 R2     ; R1[0xb009bbc6] := R2
  11 [-]: JMP       20           ; PC := 20
  12 [-]: GETGLOBAL R1 K0        ; R1 := _T
  13 [-]: GETTABLE  R1 R1 K1     ; R1 := R1["HunterShipCountLeft"]
@@ -2034,7 +2034,7 @@
 130 [-]: GETGLOBAL R11 K0       ; R11 := _T
 131 [-]: GETTABLE  R11 R11 K1   ; R11 := R11["HunterShipCountLeft"]
 132 [-]: SUB       R11 R11 K19  ; R11 := R11 - 1.000000
-133 [-]: SETTABLE  R10 K1 R11   ; R10["HunterShipCountLeft"] := R11
+133 [-]: SETTABLE  R10 K1 R11   ; R10[0xb009bbc6] := R11
 134 [-]: GETGLOBAL R10 K0       ; R10 := _T
 135 [-]: GETTABLE  R10 R10 K7   ; R10 := R10["DropshipNextEventTime"]
 136 [-]: EQ        0 R10 K2     ; if R10 ~= nil then PC := 145
@@ -2045,7 +2045,7 @@
 141 [-]: GETUPVAL  R13 U3       ; R13 := U3
 142 [-]: CALL      R11 3 2      ; R11 := R11(R12,R13)
 143 [-]: ADD       R11 R1 R11   ; R11 := R1 + R11
-144 [-]: SETTABLE  R10 K7 R11   ; R10["DropshipNextEventTime"] := R11
+144 [-]: SETTABLE  R10 K7 R11   ; R10[0x39954e19] := R11
 145 [-]: SELF      R10 R0 K5    ; R11 := R0; R10 := R0[0xf4e253b6]
 146 [-]: CALL      R10 2 1      ; R10(R11)
 147 [-]: LOADBOOL  R10 1 0      ; R10 := true

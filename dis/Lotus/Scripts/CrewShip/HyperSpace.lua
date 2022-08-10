@@ -2663,7 +2663,7 @@
 124 [-]: TEST      R9 1         ; if R9 then PC := 146
 125 [-]: JMP       146          ; PC := 146
 126 [-]: GETGLOBAL R9 K12       ; R9 := _T
-127 [-]: SETTABLE  R9 K35 R8    ; R9[0x88efc25e] := R8
+127 [-]: SETTABLE  R9 K35 R8    ; R9["RailJackNextMissionNode"] := R8
 128 [-]: GETGLOBAL R9 K12       ; R9 := _T
 129 [-]: GETGLOBAL R10 K0       ; R10 := 0xbe190284
 130 [-]: SELF      R10 R10 K1   ; R11 := R10; R10 := R10[0xf2deaf69]

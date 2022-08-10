@@ -2498,9 +2498,9 @@
  12 [-]: GETGLOBAL R2 K2        ; R2 := _T
  13 [-]: SELF      R3 R0 K4     ; R4 := R0; R3 := R0[0x2b54251b]
  14 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 15 [-]: SETTABLE  R2 K3 R3     ; R2[0x5e651723] := R3
+ 15 [-]: SETTABLE  R2 K3 R3     ; R2["CapturedAvatar"] := R3
  16 [-]: GETGLOBAL R2 K2        ; R2 := _T
- 17 [-]: SETTABLE  R2 K5 R1     ; R2[0x5d985c7e] := R1
+ 17 [-]: SETTABLE  R2 K5 R1     ; R2["CapturingAvatar"] := R1
  18 [-]: SELF      R2 R1 K6     ; R3 := R1; R2 := R1[0xd5f7912b]
  19 [-]: GETGLOBAL R4 K7        ; R4 := 0x0469f296
  20 [-]: LOADK     R5 K8        ; R5 := "PlayCaptureAnimation"

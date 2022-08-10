@@ -1886,11 +1886,11 @@
  28 [-]: SETTABLE  R12 K5 R13   ; R12["jobId"] := R13
  29 [-]: SETTABLE  R12 K11 R5   ; R12["stages"] := R5
  30 [-]: SETTABLE  R12 K12 K13  ; R12["reward"] := nil
- 31 [-]: SETTABLE  R12 K14 R0   ; R12["jobType"] := R0
+ 31 [-]: SETTABLE  R12 K14 R0   ; R12[0x0469f296] := R0
  32 [-]: SETTABLE  R12 K15 K16  ; R12["skipInventoryUpdate"] := true
  33 [-]: GETGLOBAL R13 K18      ; R13 := 0x6c97a788
  34 [-]: GETTABLE  R13 R13 K19  ; R13 := R13["JobDifficultyTier_QUEST_JOB"]
- 35 [-]: SETTABLE  R12 K17 R13  ; R12["tier"] := R13
+ 35 [-]: SETTABLE  R12 K17 R13  ; R12[0x89326c93] := R13
  36 [-]: GETGLOBAL R13 K20      ; R13 := EMPTY_SYMBOL
  37 [-]: SETTABLE  R12 K10 R13  ; R12["location"] := R13
  38 [-]: SETTABLE  R12 K21 K4   ; R12["masteryReq"] := 0.000000
@@ -1904,7 +1904,7 @@
  46 [-]: SETTABLE  R12 K23 R13  ; R12["maxEnemyLevel"] := R13
  47 [-]: SETTABLE  R12 K24 R6   ; R12["xpAmounts"] := R6
  48 [-]: GETGLOBAL R13 K20      ; R13 := EMPTY_SYMBOL
- 49 [-]: SETTABLE  R12 K25 R13  ; R12["syndicateTag"] := R13
+ 49 [-]: SETTABLE  R12 K25 R13  ; R12[0x263a3cc2] := R13
  50 [-]: SETTABLE  R12 K26 K13  ; R12["expiry"] := nil
  51 [-]: SETTABLE  R12 K27 K28  ; R12["hasCompleted"] := false
  52 [-]: SETTABLE  R12 K29 K16  ; R12["isQuest"] := true
@@ -1916,7 +1916,7 @@
  58 [-]: TEST      R12 1        ; if R12 then PC := 61
  59 [-]: JMP       61           ; PC := 61
  60 [-]: NEWTABLE  R12 0 0      ; R12 := {}
- 61 [-]: SETTABLE  R11 K32 R12  ; R11["JobTypeAnchors"] := R12
+ 61 [-]: SETTABLE  R11 K32 R12  ; R11[0x383d2e7d] := R12
  62 [-]: GETGLOBAL R11 K31      ; R11 := _T
  63 [-]: GETTABLE  R11 R11 K32  ; R11 := R11["JobTypeAnchors"]
  64 [-]: GETGLOBAL R12 K33      ; R12 := 0x88efc25e
@@ -2526,7 +2526,7 @@
 155 [-]: SETTABLE  R8 K46 R9    ; R8["Recruiter_Storefront"] := R9
 156 [-]: GETGLOBAL R8 K0        ; R8 := _T
 157 [-]: GETUPVAL  R9 U4        ; R9 := U4
-158 [-]: SETTABLE  R8 K48 R9    ; R8["OpenJobBoard"] := R9
+158 [-]: SETTABLE  R8 K48 R9    ; R8[0x9fd57658] := R9
 159 [-]: GETGLOBAL R8 K19       ; R8 := 0x7b998233
 160 [-]: GETGLOBAL R9 K4        ; R9 := 0x89326c93
 161 [-]: SELF      R9 R9 K49    ; R10 := R9; R9 := R9[0xa277037f]
@@ -2587,7 +2587,7 @@
 216 [-]: GETGLOBAL R9 K0        ; R9 := _T
 217 [-]: GETUPVAL  R10 U6       ; R10 := U6
 218 [-]: CALL      R10 1 2      ; R10 := R10()
-219 [-]: SETTABLE  R9 K67 R10   ; R9["AvailableJobs"] := R10
+219 [-]: SETTABLE  R9 K67 R10   ; R9[0x00000001] := R10
 220 [-]: GETGLOBAL R9 K19       ; R9 := 0x7b998233
 221 [-]: GETGLOBAL R10 K0       ; R10 := _T
 222 [-]: GETTABLE  R10 R10 K68  ; R10 := R10["JobBoardMovieInstance"]
@@ -2875,7 +2875,7 @@
 504 [-]: GETGLOBAL R34 K0       ; R34 := _T
 505 [-]: GETUPVAL  R35 U6       ; R35 := U6
 506 [-]: CALL      R35 1 2      ; R35 := R35()
-507 [-]: SETTABLE  R34 K67 R35  ; R34["AvailableJobs"] := R35
+507 [-]: SETTABLE  R34 K67 R35  ; R34[0x00000001] := R35
 508 [-]: JMP       359          ; PC := 359
 509 [-]: JMP       206          ; PC := 206
 510 [-]: RETURN    R0 1         ; return 

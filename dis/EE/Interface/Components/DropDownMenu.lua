@@ -102,9 +102,9 @@
  70 [-]: CLOSURE   R6 10        ; R6 := closure(Function #1.11)
  71 [-]: SETTABLE  R5 K49 R6    ; R5["OnUnfocused"] := R6
  72 [-]: GETTABLE  R6 R5 K51    ; R6 := R5["OnSelected"]
- 73 [-]: SETTABLE  R5 K50 R6    ; R5["_DropDownMenu_OnSelected"] := R6
+ 73 [-]: SETTABLE  R5 K50 R6    ; R5[0x2f8cf3ac] := R6
  74 [-]: CLOSURE   R6 11        ; R6 := closure(Function #1.12)
- 75 [-]: SETTABLE  R5 K51 R6    ; R5["OnSelected"] := R6
+ 75 [-]: SETTABLE  R5 K51 R6    ; R5[0x7b998233] := R6
  76 [-]: CLOSURE   R6 12        ; R6 := closure(Function #1.13)
  77 [-]: SETTABLE  R5 K52 R6    ; R5["UpdateSelectedText"] := R6
  78 [-]: GETTABLE  R6 R5 K54    ; R6 := R5["OnDraw"]
@@ -576,7 +576,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  14
 
-  1 [-]: SETTABLE  R0 K0 R1     ; R0[0xd4cc05b4] := R1
+  1 [-]: SETTABLE  R0 K0 R1     ; R0["mVisible"] := R1
   2 [-]: TEST      R1 1         ; if R1 then PC := 7
   3 [-]: JMP       7            ; PC := 7
   4 [-]: GETTABLE  R3 R0 K1     ; R3 := R0["mMovie"]
@@ -990,7 +990,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  8
 
-  1 [-]: SETTABLE  R0 K0 R1     ; R0[0xd5181643] := R1
+  1 [-]: SETTABLE  R0 K0 R1     ; R0["mWidth"] := R1
   2 [-]: GETTABLE  R2 R0 K1     ; R2 := R0["mMovie"]
   3 [-]: SELF      R2 R2 K2     ; R3 := R2; R2 := R2[0xf64b7262]
   4 [-]: GETTABLE  R4 R0 K3     ; R4 := R0["mContainerClipName"]

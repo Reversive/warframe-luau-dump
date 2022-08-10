@@ -525,7 +525,7 @@
  37 [-]: LOADNIL   R12 R12      ; R12 := nil
  38 [-]: LOADK     R13 1        ; R13 := 1.000000
  39 [-]: CALL      R5 9 2       ; R5 := R5(R6,R7,R8,R9,R10,R11,R12,R13)
- 40 [-]: SETTABLE  R4 K8 R5     ; R4[0x66905cb0] := R5
+ 40 [-]: SETTABLE  R4 K8 R5     ; R4[1.000000] := R5
  41 [-]: JMP       20           ; PC := 20
  42 [-]: GETTABLE  R5 R4 K8     ; R5 := R4[1.000000]
  43 [-]: SELF      R5 R5 K13    ; R6 := R5; R5 := R5[0xbb610e5b]
