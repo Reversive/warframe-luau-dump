@@ -16,7 +16,7 @@
   7 [-]: GETGLOBAL R2 K0        ; R2 := 0x2d0fad09
   8 [-]: LOADK     R3 K3        ; R3 := "Lotus.Interface.Libs.TimerMgr"
   9 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 10 [-]: GETTABLE  R3 R2 K4     ; R82 := R3[0xde474187]
+ 10 [-]: GETTABLE  R3 R2 K4     ; R3 := R2[0xde474187]
  11 [-]: CALL      R3 1 2       ; R3 := R3()
  12 [-]: LOADBOOL  R4 1 0       ; R4 := true
  13 [-]: LOADNIL   R5 R5        ; R5 := nil
@@ -68,15 +68,15 @@
 ; Is_vararg:       0
 ; Max Stack Size:  17
 
-  1 [-]: SETUPVAL  R4 U0        ; U82 := 
-  2 [-]: SETUPVAL  R3 U1        ; U82 := 
+  1 [-]: SETUPVAL  R4 U0        ; U82 := R0
+  2 [-]: SETUPVAL  R3 U1        ; U82 := R1
   3 [-]: GETGLOBAL R5 K0        ; R5 := 0xae91e43b
   4 [-]: SELF      R5 R5 K1     ; R6 := R5; R5 := R5[0x42b04007]
   5 [-]: MOVE      R7 R1        ; R7 := R1
   6 [-]: LOADBOOL  R8 0 0       ; R8 := false
   7 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
   8 [-]: GETGLOBAL R6 K2        ; R6 := 0x7f5022cf
-  9 [-]: GETTABLE  R6 R6 K3     ; R82 := R6[0x3f3e4d12]
+  9 [-]: GETTABLE  R6 R6 K3     ; R6 := R6[0x3f3e4d12]
  10 [-]: MOVE      R7 R5        ; R7 := R5
  11 [-]: CALL      R6 2 2       ; R6 := R6(R7)
  12 [-]: MOVE      R5 R6        ; R5 := R6
@@ -234,13 +234,13 @@
 ; Max Stack Size:  4
 
   1 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  2 [-]: GETTABLE  R0 R0 K0     ; R82 := R0[0xf76783e5]
+  2 [-]: GETTABLE  R0 R0 K0     ; R0 := R0[0xf76783e5]
   3 [-]: GETGLOBAL R1 K1        ; R1 := 0xae91e43b
   4 [-]: LOADK     R2 K2        ; R2 := "Sigil"
   5 [-]: GETGLOBAL R3 K3        ; R3 := 0x34348b35
   6 [-]: CALL      R0 4 1       ; R0(R1,R2,R3)
   7 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  8 [-]: GETTABLE  R0 R0 K4     ; R82 := R0[0x659d451f]
+  8 [-]: GETTABLE  R0 R0 K4     ; R0 := R0[0x659d451f]
   9 [-]: GETGLOBAL R1 K5        ; R1 := 0xdbb5fc72
  10 [-]: CALL      R0 2 1       ; R0(R1)
  11 [-]: RETURN    R0 1         ; return 
@@ -262,7 +262,7 @@
   5 [-]: LOADK     R4 100       ; R4 := 100.000000
   6 [-]: CALL      R0 5 1       ; R0(R1,R2,R3,R4)
   7 [-]: LOADBOOL  R0 0 0       ; R0 := false
-  8 [-]: SETUPVAL  R0 U0        ; U82 := 
+  8 [-]: SETUPVAL  R0 U0        ; U82 := R0
   9 [-]: GETGLOBAL R0 K3        ; R0 := 0x25312c9b
  10 [-]: GETGLOBAL R1 K0        ; R1 := 0xae91e43b
  11 [-]: LOADK     R2 K4        ; R2 := "Complete.Title"
@@ -322,12 +322,12 @@
 ; Max Stack Size:  10
 
   1 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  2 [-]: GETTABLE  R0 R0 K0     ; R82 := R0[0x659d451f]
+  2 [-]: GETTABLE  R0 R0 K0     ; R0 := R0[0x659d451f]
   3 [-]: GETGLOBAL R1 K1        ; R1 := 0x0032441c
   4 [-]: GETTABLE  R1 R1 K2     ; R1 := R1["UISound_GridOpenTwo"]
   5 [-]: CALL      R0 2 1       ; R0(R1)
   6 [-]: LOADBOOL  R0 1 0       ; R0 := true
-  7 [-]: SETUPVAL  R0 U1        ; U82 := 
+  7 [-]: SETUPVAL  R0 U1        ; U82 := R1
   8 [-]: GETGLOBAL R0 K3        ; R0 := 0x25312c9b
   9 [-]: GETGLOBAL R1 K4        ; R1 := 0xae91e43b
  10 [-]: LOADK     R2 K5        ; R2 := "Sigil"
@@ -438,27 +438,27 @@
 ; Max Stack Size:  14
 
   1 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  2 [-]: GETTABLE  R0 R0 K0     ; R82 := R0[0x5d10207d]
+  2 [-]: GETTABLE  R0 R0 K0     ; R0 := R0[0x5d10207d]
   3 [-]: LOADK     R1 6         ; R1 := 6.000000
   4 [-]: LOADBOOL  R2 1 0       ; R2 := true
   5 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
   6 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  7 [-]: GETTABLE  R1 R1 K0     ; R82 := R1[0x5d10207d]
+  7 [-]: GETTABLE  R1 R1 K0     ; R1 := R1[0x5d10207d]
   8 [-]: LOADK     R2 9         ; R2 := 9.000000
   9 [-]: LOADBOOL  R3 1 0       ; R3 := true
  10 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
  11 [-]: GETUPVAL  R2 U0        ; R2 := U0
- 12 [-]: GETTABLE  R2 R2 K0     ; R82 := R2[0x5d10207d]
+ 12 [-]: GETTABLE  R2 R2 K0     ; R2 := R2[0x5d10207d]
  13 [-]: LOADK     R3 10        ; R3 := 10.000000
  14 [-]: LOADBOOL  R4 1 0       ; R4 := true
  15 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
  16 [-]: GETUPVAL  R3 U0        ; R3 := U0
- 17 [-]: GETTABLE  R3 R3 K0     ; R82 := R3[0x5d10207d]
+ 17 [-]: GETTABLE  R3 R3 K0     ; R3 := R3[0x5d10207d]
  18 [-]: LOADK     R4 2         ; R4 := 2.000000
  19 [-]: LOADBOOL  R5 1 0       ; R5 := true
  20 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
  21 [-]: GETUPVAL  R4 U0        ; R4 := U0
- 22 [-]: GETTABLE  R4 R4 K0     ; R82 := R4[0x5d10207d]
+ 22 [-]: GETTABLE  R4 R4 K0     ; R4 := R4[0x5d10207d]
  23 [-]: LOADK     R5 1         ; R5 := 1.000000
  24 [-]: LOADBOOL  R6 1 0       ; R6 := true
  25 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
@@ -586,7 +586,7 @@
 147 [-]: MOVE      R9 R1        ; R9 := R1
 148 [-]: CALL      R5 5 1       ; R5(R6,R7,R8,R9)
 149 [-]: GETUPVAL  R5 U0        ; R5 := U0
-150 [-]: GETTABLE  R5 R5 K0     ; R82 := R5[0x5d10207d]
+150 [-]: GETTABLE  R5 R5 K0     ; R5 := R5[0x5d10207d]
 151 [-]: LOADK     R6 6         ; R6 := 6.000000
 152 [-]: CALL      R5 2 2       ; R5 := R5(R6)
 153 [-]: GETGLOBAL R6 K2        ; R6 := 0xae91e43b
@@ -705,7 +705,7 @@
  35 [-]: TEST      R1 1         ; if R1 then PC := 45
  36 [-]: JMP       45           ; PC := 45
  37 [-]: GETGLOBAL R1 K3        ; R1 := _T
- 38 [-]: GETTABLE  R1 R1 K17    ; R82 := R1[0x1c5b546f]
+ 38 [-]: GETTABLE  R1 R1 K17    ; R1 := R1[0x1c5b546f]
  39 [-]: GETGLOBAL R2 K0        ; R2 := 0xae91e43b
  40 [-]: MOVE      R3 R0        ; R3 := R0
  41 [-]: GETGLOBAL R4 K18       ; R4 := 0xcd0165a3
@@ -717,7 +717,7 @@
  47 [-]: LOADK     R3 0         ; R3 := 0.000000
  48 [-]: CALL      R1 3 1       ; R1(R2,R3)
  49 [-]: GETUPVAL  R1 U2        ; R1 := U2
- 50 [-]: GETTABLE  R1 R1 K20    ; R82 := R1[0x44537adf]
+ 50 [-]: GETTABLE  R1 R1 K20    ; R1 := R1[0x44537adf]
  51 [-]: GETGLOBAL R2 K0        ; R2 := 0xae91e43b
  52 [-]: CALL      R1 2 3       ; R1,R2 := R1(R2)
  53 [-]: GETGLOBAL R3 K0        ; R3 := 0xae91e43b
@@ -774,7 +774,7 @@
 ; Max Stack Size:  9
 
   1 [-]: GETUPVAL  R2 U0        ; R2 := U0
-  2 [-]: GETTABLE  R2 R2 K0     ; R82 := R2[0x44537adf]
+  2 [-]: GETTABLE  R2 R2 K0     ; R2 := R2[0x44537adf]
   3 [-]: GETGLOBAL R3 K1        ; R3 := 0xae91e43b
   4 [-]: CALL      R2 2 3       ; R2,R3 := R2(R3)
   5 [-]: GETGLOBAL R4 K1        ; R4 := 0xae91e43b

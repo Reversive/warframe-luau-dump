@@ -134,7 +134,7 @@
  68 [-]: LT        0 R14 R12    ; if R14 >= R12 then PC := 162
  69 [-]: JMP       162          ; PC := 162
  70 [-]: GETUPVAL  R16 U1       ; R16 := U1
- 71 [-]: GETTABLE  R16 R16 K22  ; R82 := R16[0x064508b0]
+ 71 [-]: GETTABLE  R16 R16 K22  ; R16 := R16[0x064508b0]
  72 [-]: DIV       R17 R14 R12  ; R17 := R14 / R12
  73 [-]: MOVE      R18 R8       ; R18 := R8
  74 [-]: CALL      R16 3 2      ; R16 := R16(R17,R18)

@@ -111,7 +111,7 @@
  76 [-]: CALL      R7 3 1       ; R7(R8,R9)
  77 [-]: GETUPVAL  R7 U0        ; R7 := U0
  78 [-]: SUB       R7 R7 K7     ; R7 := R7 - 1.000000
- 79 [-]: SETUPVAL  R7 U0        ; U82 := 
+ 79 [-]: SETUPVAL  R7 U0        ; U82 := 
  80 [-]: GETUPVAL  R7 U0        ; R7 := U0
  81 [-]: LE        0 R7 K19     ; if R7 > 0.000000 then PC := 88
  82 [-]: JMP       88           ; PC := 88
@@ -156,7 +156,7 @@
   4 [-]: TEST      R1 0         ; if not R1 then PC := 8
   5 [-]: JMP       8            ; PC := 8
   6 [-]: GETGLOBAL R1 K1        ; R1 := 0xdad8928a
-  7 [-]: SETUPVAL  R1 U0        ; U82 := 
+  7 [-]: SETUPVAL  R1 U0        ; U82 := 
   8 [-]: SELF      R1 R0 K2     ; R2 := R0; R1 := R0[0x54420af8]
   9 [-]: LOADK     R3 K3        ; R3 := "OnPreDeath"
  10 [-]: CALL      R1 3 1       ; R1(R2,R3)

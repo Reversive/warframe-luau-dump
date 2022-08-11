@@ -81,7 +81,7 @@
 ; Max Stack Size:  5
 
   1 [-]: GETGLOBAL R2 K0        ; R2 := 0x5bced4c4
-  2 [-]: GETTABLE  R2 R2 K1     ; R82 := R2[0xac1b386a]
+  2 [-]: GETTABLE  R2 R2 K1     ; R2 := R2[0xac1b386a]
   3 [-]: MOVE      R3 R1        ; R3 := R1
   4 [-]: LEN       R4 R0        ; R4 := # R0
   5 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
@@ -122,7 +122,7 @@
  21 [-]: SETTABLE  R5 K4 R6     ; R5["AMOUNT"] := R6
  22 [-]: MOVE      R3 R5        ; R3 := R5
  23 [-]: GETGLOBAL R5 K6        ; R5 := cjson
- 24 [-]: GETTABLE  R5 R5 K7     ; R82 := R5[0xb139d7bc]
+ 24 [-]: GETTABLE  R5 R5 K7     ; R5 := R5[0xb139d7bc]
  25 [-]: MOVE      R6 R3        ; R6 := R3
  26 [-]: TAILCALL  R5 2 0       ; R5,... := R5(R6)
  27 [-]: RETURN    R5 0         ; return R5,...
@@ -139,7 +139,7 @@
 ; Max Stack Size:  10
 
   1 [-]: GETUPVAL  R2 U0        ; R2 := U0
-  2 [-]: GETTABLE  R2 R2 K0     ; R82 := R2[0x7788c940]
+  2 [-]: GETTABLE  R2 R2 K0     ; R2 := R2[0x7788c940]
   3 [-]: MOVE      R3 R1        ; R3 := R1
   4 [-]: GETUPVAL  R4 U1        ; R4 := U1
   5 [-]: GETTABLE  R4 R4 K1     ; R4 := R4["tag"]
@@ -185,7 +185,7 @@
 ; Max Stack Size:  6
 
   1 [-]: GETUPVAL  R2 U0        ; R2 := U0
-  2 [-]: GETTABLE  R2 R2 K0     ; R82 := R2[0x7788c940]
+  2 [-]: GETTABLE  R2 R2 K0     ; R2 := R2[0x7788c940]
   3 [-]: MOVE      R3 R1        ; R3 := R1
   4 [-]: GETUPVAL  R4 U1        ; R4 := U1
   5 [-]: GETTABLE  R4 R4 K1     ; R4 := R4["tag"]
@@ -260,7 +260,7 @@
  36 [-]: LOADBOOL  R12 0 0      ; R12 := false
  37 [-]: CALL      R7 6 1       ; R7(R8,R9,R10,R11,R12)
  38 [-]: GETUPVAL  R7 U0        ; R7 := U0
- 39 [-]: GETTABLE  R7 R7 K14    ; R82 := R7[0x2d8e811d]
+ 39 [-]: GETTABLE  R7 R7 K14    ; R7 := R7[0x2d8e811d]
  40 [-]: MOVE      R8 R0        ; R8 := R0
  41 [-]: GETGLOBAL R9 K15       ; R9 := 0x0ed8b456
  42 [-]: LOADBOOL  R10 0 0      ; R10 := false
@@ -521,7 +521,7 @@
  11 [-]: MOVE      R7 R0        ; R7 := R0
  12 [-]: CALL      R2 6 1       ; R2(R3,R4,R5,R6,R7)
  13 [-]: GETUPVAL  R2 U0        ; R2 := U0
- 14 [-]: GETTABLE  R2 R2 K5     ; R82 := R2[0x7788c940]
+ 14 [-]: GETTABLE  R2 R2 K5     ; R2 := R2[0x7788c940]
  15 [-]: MOVE      R3 R0        ; R3 := R0
  16 [-]: GETUPVAL  R4 U1        ; R4 := U1
  17 [-]: GETTABLE  R4 R4 K6     ; R4 := R4["tag"]

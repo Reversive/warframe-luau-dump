@@ -302,7 +302,7 @@
 196 [-]: TEST      R12 0        ; if not R12 then PC := 202
 197 [-]: JMP       202          ; PC := 202
 198 [-]: GETGLOBAL R12 K34      ; R12 := _T
-199 [-]: GETTABLE  R12 R12 K52  ; R82 := R12[0x1e2cfa88]
+199 [-]: GETTABLE  R12 R12 K52  ; R12 := R12[0x1e2cfa88]
 200 [-]: MOVE      R13 R2       ; R13 := R2
 201 [-]: CALL      R12 2 1      ; R12(R13)
 202 [-]: RETURN    R0 1         ; return 
@@ -349,7 +349,7 @@
  30 [-]: JMP       32           ; PC := 32
  31 [-]: RETURN    R0 1         ; return 
  32 [-]: GETUPVAL  R5 U0        ; R5 := U0
- 33 [-]: GETTABLE  R5 R5 K5     ; R82 := R5[0xba8be587]
+ 33 [-]: GETTABLE  R5 R5 K5     ; R5 := R5[0xba8be587]
  34 [-]: MOVE      R6 R1        ; R6 := R1
  35 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  36 [-]: GETGLOBAL R6 K0        ; R6 := 0x7b998233
@@ -394,7 +394,7 @@
  75 [-]: LT        0 R7 R6      ; if R7 >= R6 then PC := 85
  76 [-]: JMP       85           ; PC := 85
  77 [-]: GETUPVAL  R8 U0        ; R8 := U0
- 78 [-]: GETTABLE  R8 R8 K15    ; R82 := R8[0x12c35b26]
+ 78 [-]: GETTABLE  R8 R8 K15    ; R8 := R8[0x12c35b26]
  79 [-]: MOVE      R9 R1        ; R9 := R1
  80 [-]: GETGLOBAL R10 K16      ; R10 := 0xaa4283ff
  81 [-]: GETGLOBAL R11 K17      ; R11 := 0x2b2bd884
@@ -402,7 +402,7 @@
  83 [-]: CALL      R8 5 1       ; R8(R9,R10,R11,R12)
  84 [-]: JMP       116          ; PC := 116
  85 [-]: GETUPVAL  R8 U0        ; R8 := U0
- 86 [-]: GETTABLE  R8 R8 K19    ; R82 := R8[0xb667ae25]
+ 86 [-]: GETTABLE  R8 R8 K19    ; R8 := R8[0xb667ae25]
  87 [-]: MOVE      R9 R1        ; R9 := R1
  88 [-]: GETGLOBAL R10 K16      ; R10 := 0xaa4283ff
  89 [-]: CALL      R8 3 1       ; R8(R9,R10)
@@ -420,7 +420,7 @@
 101 [-]: TEST      R8 0         ; if not R8 then PC := 111
 102 [-]: JMP       111          ; PC := 111
 103 [-]: GETUPVAL  R8 U0        ; R8 := U0
-104 [-]: GETTABLE  R8 R8 K15    ; R82 := R8[0x12c35b26]
+104 [-]: GETTABLE  R8 R8 K15    ; R8 := R8[0x12c35b26]
 105 [-]: MOVE      R9 R1        ; R9 := R1
 106 [-]: GETGLOBAL R10 K16      ; R10 := 0xaa4283ff
 107 [-]: GETGLOBAL R11 K17      ; R11 := 0x2b2bd884
@@ -428,7 +428,7 @@
 109 [-]: CALL      R8 5 1       ; R8(R9,R10,R11,R12)
 110 [-]: JMP       116          ; PC := 116
 111 [-]: GETUPVAL  R8 U0        ; R8 := U0
-112 [-]: GETTABLE  R8 R8 K19    ; R82 := R8[0xb667ae25]
+112 [-]: GETTABLE  R8 R8 K19    ; R8 := R8[0xb667ae25]
 113 [-]: MOVE      R9 R1        ; R9 := R1
 114 [-]: GETGLOBAL R10 K16      ; R10 := 0xaa4283ff
 115 [-]: CALL      R8 3 1       ; R8(R9,R10)

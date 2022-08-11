@@ -317,7 +317,7 @@
 ; Max Stack Size:  5
 
   1 [-]: GETTABLE  R1 R0 K0     ; R1 := R0["UTIL"]
-  2 [-]: GETTABLE  R1 R1 K1     ; R82 := R1[0x06d055f9]
+  2 [-]: GETTABLE  R1 R1 K1     ; R1 := R1[0x06d055f9]
   3 [-]: GETTABLE  R2 R0 K2     ; R2 := R0["mVisibleElements"]
   4 [-]: EQ        1 R2 K3      ; if R2 == nil then PC := 7
   5 [-]: JMP       7            ; PC := 7
@@ -556,7 +556,7 @@
  28 [-]: JMP       30           ; PC := 30
  29 [-]: GETTABLE  R3 R0 K8     ; R3 := R0["mForcedHorizontalSeparation"]
  30 [-]: GETTABLE  R4 R0 K9     ; R4 := R0["UTIL"]
- 31 [-]: GETTABLE  R4 R4 K10    ; R82 := R4[0x74a11ec6]
+ 31 [-]: GETTABLE  R4 R4 K10    ; R4 := R4[0x74a11ec6]
  32 [-]: GETTABLE  R5 R0 K5     ; R5 := R0["mInitialX"]
  33 [-]: SUB       R6 R2 K7     ; R6 := R2 - 1.000000
  34 [-]: MUL       R6 R3 R6     ; R6 := R3 * R6
@@ -617,7 +617,7 @@
  40 [-]: JMP       42           ; PC := 42
  41 [-]: GETTABLE  R4 R1 K12    ; R4 := R1["listExtraY"]
  42 [-]: GETTABLE  R5 R0 K13    ; R5 := R0["UTIL"]
- 43 [-]: GETTABLE  R5 R5 K14    ; R82 := R5[0x74a11ec6]
+ 43 [-]: GETTABLE  R5 R5 K14    ; R5 := R5[0x74a11ec6]
  44 [-]: GETTABLE  R6 R0 K5     ; R6 := R0["mInitialY"]
  45 [-]: SUB       R7 R2 K7     ; R7 := R2 - 1.000000
  46 [-]: MUL       R7 R3 R7     ; R7 := R3 * R7
@@ -850,7 +850,7 @@
  33 [-]: ADD       R7 R7 K3     ; R7 := R7 + 1.000000
  34 [-]: SETTABLE  R2 K5 R7     ; R2["Id"] := R7
  35 [-]: GETGLOBAL R8 K7        ; R8 := 0x5bced4c4
- 36 [-]: GETTABLE  R8 R8 K8     ; R82 := R8[0xb62ecfe0]
+ 36 [-]: GETTABLE  R8 R8 K8     ; R8 := R8[0xb62ecfe0]
  37 [-]: GETTABLE  R9 R2 K5     ; R9 := R2["Id"]
  38 [-]: GETTABLE  R10 R0 K6    ; R10 := R0["mTopId"]
  39 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
@@ -860,7 +860,7 @@
  43 [-]: SETTABLE  R2 K12 K10   ; R2["mClipEnabled"] := false
  44 [-]: SETTABLE  R2 K13 R1    ; R2["mIndex"] := R1
  45 [-]: GETGLOBAL R8 K14       ; R8 := 0x33bdd652
- 46 [-]: GETTABLE  R8 R8 K15    ; R82 := R8[0x23d5322f]
+ 46 [-]: GETTABLE  R8 R8 K15    ; R8 := R8[0x23d5322f]
  47 [-]: GETTABLE  R9 R0 K16    ; R9 := R0["mElements"]
  48 [-]: MOVE      R10 R1       ; R10 := R1
  49 [-]: MOVE      R11 R2       ; R11 := R2
@@ -1055,7 +1055,7 @@
 126 [-]: GETTABLE  R12 R12 R1   ; R12 := R12[R1]
 127 [-]: GETTABLE  R12 R12 K23  ; R12 := R12["Id"]
 128 [-]: GETGLOBAL R13 K24      ; R13 := 0x33bdd652
-129 [-]: GETTABLE  R13 R13 K25  ; R82 := R13[0x9c1f3b5a]
+129 [-]: GETTABLE  R13 R13 K25  ; R13 := R13[0x9c1f3b5a]
 130 [-]: GETTABLE  R14 R0 K2    ; R14 := R0["mElements"]
 131 [-]: MOVE      R15 R1       ; R15 := R1
 132 [-]: CALL      R13 3 1      ; R13(R14,R15)
@@ -1296,7 +1296,7 @@
   3 [-]: CALL      R2 2 2       ; R2 := R2(R3)
   4 [-]: TEST      R2 1         ; if R2 then PC := 9
   5 [-]: JMP       9            ; PC := 9
-  6 [-]: GETTABLE  R2 R0 K2     ; R82 := R2[0xd838387b]
+  6 [-]: GETTABLE  R2 R0 K2     ; R2 := R0[0xd838387b]
   7 [-]: MOVE      R3 R1        ; R3 := R1
   8 [-]: CALL      R2 2 1       ; R2(R3)
   9 [-]: RETURN    R0 1         ; return 
@@ -1370,7 +1370,7 @@
   3 [-]: CALL      R2 2 2       ; R2 := R2(R3)
   4 [-]: TEST      R2 1         ; if R2 then PC := 9
   5 [-]: JMP       9            ; PC := 9
-  6 [-]: GETTABLE  R2 R0 K2     ; R82 := R2[0xaf2cb9be]
+  6 [-]: GETTABLE  R2 R0 K2     ; R2 := R0[0xaf2cb9be]
   7 [-]: MOVE      R3 R1        ; R3 := R1
   8 [-]: CALL      R2 2 1       ; R2(R3)
   9 [-]: RETURN    R0 1         ; return 
@@ -1550,7 +1550,7 @@
  61 [-]: TEST      R4 0         ; if not R4 then PC := 73
  62 [-]: JMP       73           ; PC := 73
  63 [-]: GETTABLE  R4 R0 K16    ; R4 := R0["UTIL"]
- 64 [-]: GETTABLE  R4 R4 K17    ; R82 := R4[0x38a41ce7]
+ 64 [-]: GETTABLE  R4 R4 K17    ; R4 := R4[0x38a41ce7]
  65 [-]: MOVE      R5 R3        ; R5 := R3
  66 [-]: MOVE      R6 R1        ; R6 := R1
  67 [-]: LOADK     R7 1         ; R7 := 1.000000
@@ -1662,7 +1662,7 @@
  16 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  17 [-]: TEST      R3 1         ; if R3 then PC := 23
  18 [-]: JMP       23           ; PC := 23
- 19 [-]: GETTABLE  R3 R0 K4     ; R82 := R3[0xbd054f2d]
+ 19 [-]: GETTABLE  R3 R0 K4     ; R3 := R0[0xbd054f2d]
  20 [-]: MOVE      R4 R2        ; R4 := R2
  21 [-]: CALL      R3 2 1       ; R3(R4)
  22 [-]: JMP       47           ; PC := 47
@@ -1672,7 +1672,7 @@
  26 [-]: JMP       47           ; PC := 47
  27 [-]: GETTABLE  R3 R0 K5     ; R3 := R0["mClickDrag"]
  28 [-]: GETTABLE  R4 R2 K8     ; R4 := R2["Id"]
- 29 [-]: SETTABLE  R3 K7 R4     ; R3[0x7b998233] := R4
+ 29 [-]: SETTABLE  R3 K7 R4     ; R3["DragId"] := R4
  30 [-]: GETTABLE  R3 R0 K5     ; R3 := R0["mClickDrag"]
  31 [-]: SETTABLE  R3 K9 R1     ; R3["DragIndex"] := R1
  32 [-]: GETTABLE  R3 R0 K5     ; R3 := R0["mClickDrag"]
@@ -1786,7 +1786,7 @@
  42 [-]: TEST      R5 0         ; if not R5 then PC := 67
  43 [-]: JMP       67           ; PC := 67
  44 [-]: GETTABLE  R5 R0 K10    ; R5 := R0["UTIL"]
- 45 [-]: GETTABLE  R5 R5 K11    ; R82 := R5[0x659d451f]
+ 45 [-]: GETTABLE  R5 R5 K11    ; R5 := R5[0x659d451f]
  46 [-]: GETGLOBAL R6 K12       ; R6 := 0x0032441c
  47 [-]: GETTABLE  R6 R6 K13    ; R6 := R6["UISound_EndDrag"]
  48 [-]: CALL      R5 2 1       ; R5(R6)
@@ -1805,7 +1805,7 @@
  61 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  62 [-]: TEST      R5 1         ; if R5 then PC := 66
  63 [-]: JMP       66           ; PC := 66
- 64 [-]: GETTABLE  R5 R0 K18    ; R82 := R5[0x64fa5be5]
+ 64 [-]: GETTABLE  R5 R0 K18    ; R5 := R0[0x64fa5be5]
  65 [-]: CALL      R5 1 1       ; R5()
  66 [-]: LOADBOOL  R4 0 0       ; R4 := false
  67 [-]: SELF      R5 R0 K19    ; R6 := R0; R5 := R0[0xb31346eb]
@@ -1822,7 +1822,7 @@
  78 [-]: TEST      R5 1         ; if R5 then PC := 91
  79 [-]: JMP       91           ; PC := 91
  80 [-]: GETGLOBAL R5 K22       ; R5 := 0x34291f5c
- 81 [-]: GETTABLE  R5 R5 K23    ; R82 := R5[0x1467d5f4]
+ 81 [-]: GETTABLE  R5 R5 K23    ; R5 := R5[0x1467d5f4]
  82 [-]: CALL      R5 1 2       ; R5 := R5()
  83 [-]: TEST      R5 1         ; if R5 then PC := 93
  84 [-]: JMP       93           ; PC := 93
@@ -1840,7 +1840,7 @@
  96 [-]: SETTABLE  R0 K20 R1    ; R0["mSelectedElement"] := R1
  97 [-]: TEST      R5 0         ; if not R5 then PC := 104
  98 [-]: JMP       104          ; PC := 104
- 99 [-]: GETTABLE  R6 R0 K27    ; R82 := R6[0xfea5918c]
+ 99 [-]: GETTABLE  R6 R0 K27    ; R6 := R0[0xfea5918c]
 100 [-]: MOVE      R7 R1        ; R7 := R1
 101 [-]: MOVE      R8 R2        ; R8 := R2
 102 [-]: CALL      R6 3 1       ; R6(R7,R8)
@@ -1850,7 +1850,7 @@
 106 [-]: CALL      R6 2 2       ; R6 := R6(R7)
 107 [-]: TEST      R6 1         ; if R6 then PC := 113
 108 [-]: JMP       113          ; PC := 113
-109 [-]: GETTABLE  R6 R0 K29    ; R82 := R6[0x0274aa4e]
+109 [-]: GETTABLE  R6 R0 K29    ; R6 := R0[0x0274aa4e]
 110 [-]: MOVE      R7 R1        ; R7 := R1
 111 [-]: MOVE      R8 R2        ; R8 := R2
 112 [-]: CALL      R6 3 1       ; R6(R7,R8)
@@ -2023,7 +2023,7 @@
  47 [-]: LOADK     R8 K11       ; R8 := "Btn"
  48 [-]: LOADK     R9 13        ; R9 := 13.000000
  49 [-]: GETGLOBAL R10 K12      ; R10 := 0x5bced4c4
- 50 [-]: GETTABLE  R10 R10 K13  ; R82 := R10[0xb62ecfe0]
+ 50 [-]: GETTABLE  R10 R10 K13  ; R10 := R10[0xb62ecfe0]
  51 [-]: MOVE      R11 R2       ; R11 := R2
  52 [-]: LOADK     R12 K14      ; R12 := 0.010000
  53 [-]: CALL      R10 3 0      ; R10,... := R10(R11,R12)
@@ -2068,7 +2068,7 @@
  19 [-]: JMP       25           ; PC := 25
  20 [-]: TEST      R2 0         ; if not R2 then PC := 25
  21 [-]: JMP       25           ; PC := 25
- 22 [-]: GETTABLE  R3 R0 K8     ; R82 := R3[0xb15e6aca]
+ 22 [-]: GETTABLE  R3 R0 K8     ; R3 := R0[0xb15e6aca]
  23 [-]: MOVE      R4 R1        ; R4 := R1
  24 [-]: CALL      R3 2 1       ; R3(R4)
  25 [-]: RETURN    R0 1         ; return 
@@ -2176,10 +2176,10 @@
  11 [-]: TEST      R6 0         ; if not R6 then PC := 33
  12 [-]: JMP       33           ; PC := 33
  13 [-]: GETGLOBAL R6 K5        ; R6 := 0x5bced4c4
- 14 [-]: GETTABLE  R6 R6 K6     ; R82 := R6[0xb62ecfe0]
+ 14 [-]: GETTABLE  R6 R6 K6     ; R6 := R6[0xb62ecfe0]
  15 [-]: LOADK     R7 1         ; R7 := 1.000000
  16 [-]: GETGLOBAL R8 K5        ; R8 := 0x5bced4c4
- 17 [-]: GETTABLE  R8 R8 K7     ; R82 := R8[0x55f27c30]
+ 17 [-]: GETTABLE  R8 R8 K7     ; R8 := R8[0x55f27c30]
  18 [-]: MOVE      R9 R5        ; R9 := R5
  19 [-]: CALL      R8 2 2       ; R8 := R8(R9)
  20 [-]: GETTABLE  R9 R0 K8     ; R9 := R0["mLowerBoundBuffer"]
@@ -2187,7 +2187,7 @@
  22 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
  23 [-]: MOVE      R3 R6        ; R3 := R6
  24 [-]: GETGLOBAL R6 K5        ; R6 := 0x5bced4c4
- 25 [-]: GETTABLE  R6 R6 K7     ; R82 := R6[0x55f27c30]
+ 25 [-]: GETTABLE  R6 R6 K7     ; R6 := R6[0x55f27c30]
  26 [-]: ADD       R7 R3 R2     ; R7 := R3 + R2
  27 [-]: CALL      R6 2 2       ; R6 := R6(R7)
  28 [-]: GETTABLE  R7 R0 K8     ; R7 := R0["mLowerBoundBuffer"]
@@ -2216,7 +2216,7 @@
   1 [-]: GETTABLE  R1 R0 K0     ; R1 := R0["mClipCreatedCallback"]
   2 [-]: EQ        1 R1 K1      ; if R1 == nil then PC := 9
   3 [-]: JMP       9            ; PC := 9
-  4 [-]: GETTABLE  R1 R0 K2     ; R82 := R1[0x1eed44f2]
+  4 [-]: GETTABLE  R1 R0 K2     ; R1 := R0[0x1eed44f2]
   5 [-]: GETTABLE  R2 R0 K3     ; R2 := R0["mClipName"]
   6 [-]: GETTABLE  R3 R0 K4     ; R3 := R0["mElements"]
   7 [-]: GETTABLE  R3 R3 K5     ; R3 := R3[1.000000]
@@ -2442,7 +2442,7 @@
 207 [-]: GETTABLE  R25 R0 K34   ; R25 := R0["mClipCreatedCallback"]
 208 [-]: EQ        1 R25 K16    ; if R25 == nil then PC := 214
 209 [-]: JMP       214          ; PC := 214
-210 [-]: GETTABLE  R25 R0 K35   ; R82 := R25[0x1eed44f2]
+210 [-]: GETTABLE  R25 R0 K35   ; R25 := R0[0x1eed44f2]
 211 [-]: MOVE      R26 R5       ; R26 := R5
 212 [-]: MOVE      R27 R17      ; R27 := R17
 213 [-]: CALL      R25 3 1      ; R25(R26,R27)
@@ -2511,7 +2511,7 @@
 276 [-]: GETTABLE  R25 R0 K44   ; R25 := R0["mElementDelayTime"]
 277 [-]: ADD       R6 R6 R25    ; R6 := R6 + R25
 278 [-]: GETTABLE  R25 R0 K45   ; R25 := R0["UTIL"]
-279 [-]: GETTABLE  R25 R25 K46  ; R82 := R25[0x06d055f9]
+279 [-]: GETTABLE  R25 R25 K46  ; R25 := R25[0x06d055f9]
 280 [-]: MOVE      R26 R7       ; R26 := R7
 281 [-]: MOVE      R27 R1       ; R27 := R1
 282 [-]: LOADNIL   R28 R28      ; R28 := nil
@@ -2634,7 +2634,7 @@
   2 [-]: MOVE      R4 R1        ; R4 := R1
   3 [-]: LOADK     R5 1         ; R5 := 1.000000
   4 [-]: GETGLOBAL R6 K2        ; R6 := 0x5bced4c4
-  5 [-]: GETTABLE  R6 R6 K3     ; R82 := R6[0xb62ecfe0]
+  5 [-]: GETTABLE  R6 R6 K3     ; R6 := R6[0xb62ecfe0]
   6 [-]: GETTABLE  R7 R0 K4     ; R7 := R0["mElements"]
   7 [-]: LEN       R7 R7        ; R7 := # R7
   8 [-]: LOADK     R8 1         ; R8 := 1.000000
@@ -2696,7 +2696,7 @@
   7 [-]: MOVE      R4 R6        ; R4 := R6
   8 [-]: MOVE      R3 R5        ; R3 := R5
   9 [-]: GETGLOBAL R5 K1        ; R5 := 0x5bced4c4
- 10 [-]: GETTABLE  R5 R5 K2     ; R82 := R5[0xac1b386a]
+ 10 [-]: GETTABLE  R5 R5 K2     ; R5 := R5[0xac1b386a]
  11 [-]: MOVE      R6 R4        ; R6 := R4
  12 [-]: GETTABLE  R7 R0 K3     ; R7 := R0["mElements"]
  13 [-]: LEN       R7 R7        ; R7 := # R7
@@ -2792,7 +2792,7 @@
   7 [-]: JMP       35           ; PC := 35
   8 [-]: GETGLOBAL R4 K3        ; R4 := 0x42dcc9f5
   9 [-]: GETTABLE  R5 R0 K4     ; R5 := R0["UTIL"]
- 10 [-]: GETTABLE  R5 R5 K5     ; R82 := R5[0x74a11ec6]
+ 10 [-]: GETTABLE  R5 R5 K5     ; R5 := R5[0x74a11ec6]
  11 [-]: MUL       R6 R3 R1     ; R6 := R3 * R1
  12 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  13 [-]: LOADK     R6 0         ; R6 := 0.000000
@@ -2827,11 +2827,11 @@
  42 [-]: EQ        1 R5 R6      ; if R5 == R6 then PC := 71
  43 [-]: JMP       71           ; PC := 71
  44 [-]: GETGLOBAL R6 K13       ; R6 := 0x5bced4c4
- 45 [-]: GETTABLE  R6 R6 K14    ; R82 := R6[0x55f27c30]
+ 45 [-]: GETTABLE  R6 R6 K14    ; R6 := R6[0x55f27c30]
  46 [-]: MOVE      R7 R5        ; R7 := R5
  47 [-]: CALL      R6 2 2       ; R6 := R6(R7)
  48 [-]: GETGLOBAL R7 K13       ; R7 := 0x5bced4c4
- 49 [-]: GETTABLE  R7 R7 K14    ; R82 := R7[0x55f27c30]
+ 49 [-]: GETTABLE  R7 R7 K14    ; R7 := R7[0x55f27c30]
  50 [-]: GETTABLE  R8 R0 K7     ; R8 := R0["mScroll"]
  51 [-]: CALL      R7 2 2       ; R7 := R7(R8)
  52 [-]: SUB       R6 R6 R7     ; R6 := R6 - R7
@@ -2945,7 +2945,7 @@
  12 [-]: GETGLOBAL R4 K3        ; R4 := 0x2d0fad09
  13 [-]: LOADK     R5 K4        ; R5 := "EE.Interface.Components.ScrollBar"
  14 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 15 [-]: GETTABLE  R5 R4 K6     ; R82 := R5[0x3b3ea08c]
+ 15 [-]: GETTABLE  R5 R4 K6     ; R5 := R4[0x3b3ea08c]
  16 [-]: GETTABLE  R6 R0 K7     ; R6 := R0["mMovie"]
  17 [-]: GETTABLE  R7 R0 K0     ; R7 := R0["mScrollBarClipName"]
  18 [-]: SELF      R8 R0 K8     ; R9 := R0; R8 := R0[0x1facc513]
@@ -3237,7 +3237,7 @@
  40 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  41 [-]: TEST      R4 1         ; if R4 then PC := 46
  42 [-]: JMP       46           ; PC := 46
- 43 [-]: GETTABLE  R4 R0 K18    ; R82 := R4[0xb15e6aca]
+ 43 [-]: GETTABLE  R4 R0 K18    ; R4 := R0[0xb15e6aca]
  44 [-]: MOVE      R5 R2        ; R5 := R2
  45 [-]: CALL      R4 2 1       ; R4(R5)
  46 [-]: SETTABLE  R2 K6 R3     ; R2[0xbce5a201] := R3
@@ -3267,7 +3267,7 @@
  70 [-]: GETTABLE  R4 R0 K2     ; R4 := R0["mClickDrag"]
  71 [-]: SETTABLE  R4 K22 K23   ; R4["Dragging"] := true
  72 [-]: GETTABLE  R4 R0 K24    ; R4 := R0["UTIL"]
- 73 [-]: GETTABLE  R4 R4 K25    ; R82 := R4[0x659d451f]
+ 73 [-]: GETTABLE  R4 R4 K25    ; R4 := R4[0x659d451f]
  74 [-]: GETGLOBAL R5 K26       ; R5 := 0x0032441c
  75 [-]: GETTABLE  R5 R5 K27    ; R5 := R5["UISound_StartDrag"]
  76 [-]: CALL      R4 2 1       ; R4(R5)
@@ -3284,7 +3284,7 @@
 ; Max Stack Size:  3
 
   1 [-]: GETGLOBAL R2 K0        ; R2 := 0x34291f5c
-  2 [-]: GETTABLE  R2 R2 K1     ; R82 := R2[0xe6b41adb]
+  2 [-]: GETTABLE  R2 R2 K1     ; R2 := R2[0xe6b41adb]
   3 [-]: CALL      R2 1 2       ; R2 := R2()
   4 [-]: TEST      R2 1         ; if R2 then PC := 7
   5 [-]: JMP       7            ; PC := 7
@@ -3431,7 +3431,7 @@
  73 [-]: EQ        1 R8 K23     ; if R8 == "" then PC := 83
  74 [-]: JMP       83           ; PC := 83
  75 [-]: GETTABLE  R8 R0 K24    ; R8 := R0["UTIL"]
- 76 [-]: GETTABLE  R8 R8 K25    ; R82 := R8[0xb5be5d4a]
+ 76 [-]: GETTABLE  R8 R8 K25    ; R8 := R8[0xb5be5d4a]
  77 [-]: GETTABLE  R9 R0 K7     ; R9 := R0["mMovie"]
  78 [-]: GETTABLE  R10 R0 K3    ; R10 := R0["mClickDrag"]
  79 [-]: GETTABLE  R10 R10 K22  ; R10 := R10["RootClip"]
@@ -3485,7 +3485,7 @@
 127 [-]: GETTABLE  R15 R0 K3    ; R15 := R0["mClickDrag"]
 128 [-]: GETTABLE  R15 R15 K29  ; R15 := R15["FocusedIndex"]
 129 [-]: CALL      R13 3 2      ; R13 := R13(R14,R15)
-130 [-]: GETTABLE  R14 R0 K32   ; R82 := R14[0xeb93bb45]
+130 [-]: GETTABLE  R14 R0 K32   ; R14 := R0[0xeb93bb45]
 131 [-]: MOVE      R15 R13      ; R15 := R13
 132 [-]: CALL      R14 2 1      ; R14(R15)
 133 [-]: GETTABLE  R14 R0 K3    ; R14 := R0["mClickDrag"]
@@ -3501,7 +3501,7 @@
 143 [-]: GETTABLE  R16 R0 K3    ; R16 := R0["mClickDrag"]
 144 [-]: GETTABLE  R16 R16 K29  ; R16 := R16["FocusedIndex"]
 145 [-]: CALL      R14 3 2      ; R14 := R14(R15,R16)
-146 [-]: GETTABLE  R15 R0 K34   ; R82 := R15[0x15242be4]
+146 [-]: GETTABLE  R15 R0 K34   ; R15 := R0[0x15242be4]
 147 [-]: MOVE      R16 R14      ; R16 := R14
 148 [-]: CALL      R15 2 1      ; R15(R16)
 149 [-]: JMP       152          ; PC := 152
@@ -3528,7 +3528,7 @@
   5 [-]: EQ        1 R3 K1      ; if R3 == nil then PC := 14
   6 [-]: JMP       14           ; PC := 14
   7 [-]: GETUPVAL  R3 U0        ; R3 := U0
-  8 [-]: GETTABLE  R3 R3 K2     ; R82 := R3[0x65c1816c]
+  8 [-]: GETTABLE  R3 R3 K2     ; R3 := R3[0x65c1816c]
   9 [-]: MOVE      R4 R0        ; R4 := R0
  10 [-]: CALL      R3 2 3       ; R3,R4 := R3(R4)
  11 [-]: MOVE      R2 R4        ; R2 := R4
@@ -3563,8 +3563,8 @@
  40 [-]: LT        0 R3 R4      ; if R3 >= R4 then PC := 45
  41 [-]: JMP       45           ; PC := 45
  42 [-]: GETTABLE  R4 R0 K8     ; R4 := R0["mIndex"]
- 43 [-]: SETUPVAL  R4 U2        ; U82 := 
- 44 [-]: SETUPVAL  R3 U3        ; U82 := 
+ 43 [-]: SETUPVAL  R4 U2        ; U82 := R2
+ 44 [-]: SETUPVAL  R3 U3        ; U82 := R3
  45 [-]: RETURN    R0 1         ; return 
 
 
@@ -3690,7 +3690,7 @@
  28 [-]: TEST      R3 1         ; if R3 then PC := 169
  29 [-]: JMP       169          ; PC := 169
  30 [-]: GETTABLE  R3 R0 K9     ; R3 := R0["UTIL"]
- 31 [-]: GETTABLE  R3 R3 K10    ; R82 := R3[0x06d055f9]
+ 31 [-]: GETTABLE  R3 R3 K10    ; R3 := R3[0x06d055f9]
  32 [-]: GETGLOBAL R4 K11       ; R4 := 0x7b998233
  33 [-]: GETTABLE  R5 R0 K12    ; R5 := R0["mScrollBar"]
  34 [-]: CALL      R4 2 2       ; R4 := R4(R5)
@@ -3776,7 +3776,7 @@
 114 [-]: SELF      R12 R0 K19   ; R13 := R0; R12 := R0[0x64042814]
 115 [-]: CALL      R12 2 2      ; R12 := R12(R13)
 116 [-]: GETGLOBAL R13 K22      ; R13 := 0x5bced4c4
-117 [-]: GETTABLE  R13 R13 K23  ; R82 := R13[0x78c740cc]
+117 [-]: GETTABLE  R13 R13 K23  ; R13 := R13[0x78c740cc]
 118 [-]: DIV       R14 R11 R12  ; R14 := R11 / R12
 119 [-]: CALL      R13 2 2      ; R13 := R13(R14)
 120 [-]: EQ        1 R13 K17    ; if R13 == 0.000000 then PC := 180

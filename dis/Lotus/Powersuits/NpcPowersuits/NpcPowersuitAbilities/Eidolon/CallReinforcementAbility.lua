@@ -223,7 +223,7 @@
 118 [-]: LT        0 R11 R10    ; if R11 >= R10 then PC := 126
 119 [-]: JMP       126          ; PC := 126
 120 [-]: GETGLOBAL R10 K25      ; R10 := 0x33bdd652
-121 [-]: GETTABLE  R10 R10 K26  ; R82 := R10[0x9c1f3b5a]
+121 [-]: GETTABLE  R10 R10 K26  ; R10 := R10[0x9c1f3b5a]
 122 [-]: MOVE      R11 R4       ; R11 := R4
 123 [-]: MOVE      R12 R8       ; R12 := R8
 124 [-]: CALL      R10 3 1      ; R10(R11,R12)
@@ -270,16 +270,16 @@
 165 [-]: LT        0 R16 K22    ; if R16 >= 0.000000 then PC := 173
 166 [-]: JMP       173          ; PC := 173
 167 [-]: GETGLOBAL R17 K25      ; R17 := 0x33bdd652
-168 [-]: GETTABLE  R17 R17 K26  ; R82 := R17[0x9c1f3b5a]
+168 [-]: GETTABLE  R17 R17 K26  ; R17 := R17[0x9c1f3b5a]
 169 [-]: MOVE      R18 R4       ; R18 := R4
 170 [-]: MOVE      R19 R8       ; R19 := R8
 171 [-]: CALL      R17 3 1      ; R17(R18,R19)
 172 [-]: JMP       106          ; PC := 106
 173 [-]: GETGLOBAL R17 K37      ; R17 := 0x5bced4c4
-174 [-]: GETTABLE  R17 R17 K38  ; R82 := R17[0xb62ecfe0]
+174 [-]: GETTABLE  R17 R17 K38  ; R17 := R17[0xb62ecfe0]
 175 [-]: UNM       R18 R14      ; R18 := ^ R14
 176 [-]: GETGLOBAL R19 K37      ; R19 := 0x5bced4c4
-177 [-]: GETTABLE  R19 R19 K39  ; R82 := R19[0x34e9f45c]
+177 [-]: GETTABLE  R19 R19 K39  ; R19 := R19[0x34e9f45c]
 178 [-]: POW       R20 R14 K35  ; R20 := R14 ^ 2.000000
 179 [-]: MUL       R21 K36 R13  ; R21 := 4.000000 * R13
 180 [-]: MUL       R21 R21 R15  ; R21 := R21 * R15
@@ -290,7 +290,7 @@
 185 [-]: DIV       R18 R18 R19  ; R18 := R18 / R19
 186 [-]: UNM       R19 R14      ; R19 := ^ R14
 187 [-]: GETGLOBAL R20 K37      ; R20 := 0x5bced4c4
-188 [-]: GETTABLE  R20 R20 K39  ; R82 := R20[0x34e9f45c]
+188 [-]: GETTABLE  R20 R20 K39  ; R20 := R20[0x34e9f45c]
 189 [-]: POW       R21 R14 K35  ; R21 := R14 ^ 2.000000
 190 [-]: MUL       R22 K36 R13  ; R22 := 4.000000 * R13
 191 [-]: MUL       R22 R22 R15  ; R22 := R22 * R15
@@ -310,26 +310,26 @@
 205 [-]: CALL      R18 0 2      ; R18 := R18(R19,...)
 206 [-]: DIV       R19 R18 R17  ; R19 := R18 / R17
 207 [-]: GETGLOBAL R20 K37      ; R20 := 0x5bced4c4
-208 [-]: GETTABLE  R20 R20 K39  ; R82 := R20[0x34e9f45c]
+208 [-]: GETTABLE  R20 R20 K39  ; R20 := R20[0x34e9f45c]
 209 [-]: POW       R21 R19 K35  ; R21 := R19 ^ 2.000000
 210 [-]: GETGLOBAL R22 K34      ; R22 := 0xf2115bfe
 211 [-]: POW       R22 R22 K35  ; R22 := R22 ^ 2.000000
 212 [-]: ADD       R21 R21 R22  ; R21 := R21 + R22
 213 [-]: CALL      R20 2 2      ; R20 := R20(R21)
 214 [-]: GETGLOBAL R21 K37      ; R21 := 0x5bced4c4
-215 [-]: GETTABLE  R21 R21 K41  ; R82 := R21[0x450c9504]
+215 [-]: GETTABLE  R21 R21 K41  ; R21 := R21[0x450c9504]
 216 [-]: DIV       R22 R19 R20  ; R22 := R19 / R20
 217 [-]: CALL      R21 2 2      ; R21 := R21(R22)
 218 [-]: LT        1 K42 R21    ; if 100.000000 < R21 then PC := 226
 219 [-]: JMP       226          ; PC := 226
 220 [-]: GETGLOBAL R21 K37      ; R21 := 0x5bced4c4
-221 [-]: GETTABLE  R21 R21 K41  ; R82 := R21[0x450c9504]
+221 [-]: GETTABLE  R21 R21 K41  ; R21 := R21[0x450c9504]
 222 [-]: DIV       R22 R19 R20  ; R22 := R19 / R20
 223 [-]: CALL      R21 2 2      ; R21 := R21(R22)
 224 [-]: LT        0 R21 K43    ; if R21 >= -100.000000 then PC := 232
 225 [-]: JMP       232          ; PC := 232
 226 [-]: GETGLOBAL R21 K25      ; R21 := 0x33bdd652
-227 [-]: GETTABLE  R21 R21 K26  ; R82 := R21[0x9c1f3b5a]
+227 [-]: GETTABLE  R21 R21 K26  ; R21 := R21[0x9c1f3b5a]
 228 [-]: MOVE      R22 R4       ; R22 := R4
 229 [-]: MOVE      R23 R8       ; R23 := R8
 230 [-]: CALL      R21 3 1      ; R21(R22,R23)
@@ -361,7 +361,7 @@
 256 [-]: TEST      R24 1        ; if R24 then PC := 264
 257 [-]: JMP       264          ; PC := 264
 258 [-]: GETGLOBAL R24 K25      ; R24 := 0x33bdd652
-259 [-]: GETTABLE  R24 R24 K26  ; R82 := R24[0x9c1f3b5a]
+259 [-]: GETTABLE  R24 R24 K26  ; R24 := R24[0x9c1f3b5a]
 260 [-]: MOVE      R25 R4       ; R25 := R4
 261 [-]: MOVE      R26 R8       ; R26 := R8
 262 [-]: CALL      R24 3 1      ; R24(R25,R26)

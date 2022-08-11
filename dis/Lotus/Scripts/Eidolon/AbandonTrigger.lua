@@ -49,13 +49,13 @@
 
   1 [-]: SELF      R1 R0 K0     ; R2 := R0; R1 := R0[0x2b54251b]
   2 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  3 [-]: SETUPVAL  R1 U0        ; U82 := 
+  3 [-]: SETUPVAL  R1 U0        ; U82 := 
   4 [-]: GETUPVAL  R1 U0        ; R1 := U0
   5 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1[0x4c976eda]
   6 [-]: CALL      R1 2 2       ; R1 := R1(R2)
   7 [-]: SELF      R2 R1 K2     ; R3 := R1; R2 := R1[0xe4c355e2]
   8 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  9 [-]: SETUPVAL  R2 U1        ; U82 := 
+  9 [-]: SETUPVAL  R2 U1        ; U82 := 
  10 [-]: SELF      R2 R0 K3     ; R3 := R0; R2 := R0[0x5004be24]
  11 [-]: GETUPVAL  R4 U0        ; R4 := U0
  12 [-]: SELF      R4 R4 K4     ; R5 := R4; R4 := R4[0x7c97b143]
@@ -101,11 +101,11 @@
  52 [-]: TEST      R2 0         ; if not R2 then PC := 58
  53 [-]: JMP       58           ; PC := 58
  54 [-]: GETUPVAL  R2 U2        ; R2 := U2
- 55 [-]: GETTABLE  R2 R2 K17    ; R82 := R2[0xd712b9db]
+ 55 [-]: GETTABLE  R2 R2 K17    ; R2 := R2[0xd712b9db]
  56 [-]: CALL      R2 1 1       ; R2()
  57 [-]: JMP       63           ; PC := 63
  58 [-]: GETUPVAL  R2 U2        ; R2 := U2
- 59 [-]: GETTABLE  R2 R2 K18    ; R82 := R2[0x7e8a976a]
+ 59 [-]: GETTABLE  R2 R2 K18    ; R2 := R2[0x7e8a976a]
  60 [-]: GETUPVAL  R3 U0        ; R3 := U0
  61 [-]: LOADBOOL  R4 0 0       ; R4 := false
  62 [-]: CALL      R2 3 1       ; R2(R3,R4)
@@ -136,7 +136,7 @@
 ; Max Stack Size:  4
 
   1 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  2 [-]: GETTABLE  R1 R1 K0     ; R82 := R1[0x7e8a976a]
+  2 [-]: GETTABLE  R1 R1 K0     ; R1 := R1[0x7e8a976a]
   3 [-]: GETUPVAL  R2 U1        ; R2 := U1
   4 [-]: LOADBOOL  R3 0 0       ; R3 := false
   5 [-]: CALL      R1 3 1       ; R1(R2,R3)
@@ -153,7 +153,7 @@
 ; Max Stack Size:  4
 
   1 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  2 [-]: GETTABLE  R1 R1 K0     ; R82 := R1[0x7e8a976a]
+  2 [-]: GETTABLE  R1 R1 K0     ; R1 := R1[0x7e8a976a]
   3 [-]: GETUPVAL  R2 U1        ; R2 := U1
   4 [-]: LOADBOOL  R3 0 0       ; R3 := false
   5 [-]: CALL      R1 3 1       ; R1(R2,R3)
@@ -201,12 +201,12 @@
  30 [-]: TEST      R1 0         ; if not R1 then PC := 44
  31 [-]: JMP       44           ; PC := 44
  32 [-]: GETUPVAL  R9 U0        ; R9 := U0
- 33 [-]: GETTABLE  R9 R9 K8     ; R82 := R9[0x7e8a976a]
+ 33 [-]: GETTABLE  R9 R9 K8     ; R9 := R9[0x7e8a976a]
  34 [-]: GETUPVAL  R10 U1       ; R10 := U1
  35 [-]: LOADBOOL  R11 1 0      ; R11 := true
  36 [-]: CALL      R9 3 1       ; R9(R10,R11)
  37 [-]: GETUPVAL  R9 U2        ; R9 := U2
- 38 [-]: GETTABLE  R9 R9 K9     ; R82 := R9[0x9742b85b]
+ 38 [-]: GETTABLE  R9 R9 K9     ; R9 := R9[0x9742b85b]
  39 [-]: GETUPVAL  R10 U3       ; R10 := U3
  40 [-]: GETGLOBAL R11 K10      ; R11 := 0x0469f296
  41 [-]: LOADK     R12 K11      ; R12 := "Abandoning"

@@ -243,7 +243,7 @@
  53 [-]: TEST      R11 0        ; if not R11 then PC := 76
  54 [-]: JMP       76           ; PC := 76
  55 [-]: GETUPVAL  R11 U1       ; R11 := U1
- 56 [-]: GETTABLE  R11 R11 K14  ; R82 := R11[0x9742b85b]
+ 56 [-]: GETTABLE  R11 R11 K14  ; R11 := R11[0x9742b85b]
  57 [-]: GETGLOBAL R12 K15      ; R12 := _T
  58 [-]: GETTABLE  R12 R12 K16  ; R12 := R12["MissionTransmissionSet"]
  59 [-]: GETGLOBAL R13 K8       ; R13 := 0x0469f296
@@ -257,7 +257,7 @@
  67 [-]: TEST      R11 1        ; if R11 then PC := 75
  68 [-]: JMP       75           ; PC := 75
  69 [-]: GETGLOBAL R11 K15      ; R11 := _T
- 70 [-]: GETTABLE  R11 R11 K19  ; R82 := R11[0x659270d0]
+ 70 [-]: GETTABLE  R11 R11 K19  ; R11 := R11[0x659270d0]
  71 [-]: LOADK     R12 K20      ; R12 := "/Lotus/Language/EidolonPlains/ExterminateObjective"
  72 [-]: LOADK     R13 5        ; R13 := 5.000000
  73 [-]: LOADBOOL  R14 0 0      ; R14 := false
@@ -290,7 +290,7 @@
 100 [-]: TEST      R11 1        ; if R11 then PC := 106
 101 [-]: JMP       106          ; PC := 106
 102 [-]: GETUPVAL  R11 U2       ; R11 := U2
-103 [-]: GETTABLE  R11 R11 K38  ; R82 := R11[0x659d451f]
+103 [-]: GETTABLE  R11 R11 K38  ; R11 := R11[0x659d451f]
 104 [-]: GETGLOBAL R12 K37      ; R12 := 0x6d130fe3
 105 [-]: CALL      R11 2 1      ; R11(R12)
 106 [-]: RETURN    R0 1         ; return 
@@ -421,7 +421,7 @@
 114 [-]: TEST      R13 1        ; if R13 then PC := 125
 115 [-]: JMP       125          ; PC := 125
 116 [-]: GETGLOBAL R13 K2       ; R13 := _T
-117 [-]: GETTABLE  R13 R13 K40  ; R82 := R13[0xd2a1d93b]
+117 [-]: GETTABLE  R13 R13 K40  ; R13 := R13[0xd2a1d93b]
 118 [-]: MOVE      R14 R10      ; R14 := R10
 119 [-]: NEWTABLE  R15 0 4      ; R15 := {}
 120 [-]: SETTABLE  R15 K41 R12  ; R15["Name"] := R12
@@ -486,7 +486,7 @@
   2 [-]: CALL      R2 2 2       ; R2 := R2(R3)
   3 [-]: MOVE      R3 R2        ; R3 := R2
   4 [-]: GETGLOBAL R4 K1        ; R4 := 0x33bdd652
-  5 [-]: GETTABLE  R4 R4 K2     ; R82 := R4[0x23d5322f]
+  5 [-]: GETTABLE  R4 R4 K2     ; R4 := R4[0x23d5322f]
   6 [-]: MOVE      R5 R3        ; R5 := R3
   7 [-]: MOVE      R6 R0        ; R6 := R0
   8 [-]: CALL      R4 3 1       ; R4(R5,R6)
@@ -527,7 +527,7 @@
  43 [-]: EQ        1 R13 R14    ; if R13 == R14 then PC := 56
  44 [-]: JMP       56           ; PC := 56
  45 [-]: GETGLOBAL R13 K5       ; R13 := _T
- 46 [-]: GETTABLE  R13 R13 K11  ; R82 := R13[0x659270d0]
+ 46 [-]: GETTABLE  R13 R13 K11  ; R13 := R13[0x659270d0]
  47 [-]: LOADK     R14 K12      ; R14 := "/Lotus/Language/SystemMessages/GreedTokenSpentByOther"
  48 [-]: LOADK     R15 10       ; R15 := 10.000000
  49 [-]: LOADBOOL  R16 0 0      ; R16 := false
@@ -571,7 +571,7 @@
  87 [-]: TEST      R15 0        ; if not R15 then PC := 69
  88 [-]: JMP       69           ; PC := 69
  89 [-]: GETGLOBAL R15 K5       ; R15 := _T
- 90 [-]: GETTABLE  R15 R15 K11  ; R82 := R15[0x659270d0]
+ 90 [-]: GETTABLE  R15 R15 K11  ; R15 := R15[0x659270d0]
  91 [-]: LOADK     R16 K20      ; R16 := "/Lotus/Language/SystemMessages/GreedTokenConsumingSlow"
  92 [-]: LOADK     R17 10       ; R17 := 10.000000
  93 [-]: LOADBOOL  R18 0 0      ; R18 := false
@@ -643,7 +643,7 @@
 159 [-]: CALL      R18 2 1      ; R18(R19)
 160 [-]: JMP       165          ; PC := 165
 161 [-]: GETUPVAL  R18 U1       ; R18 := U1
-162 [-]: GETTABLE  R18 R18 K37  ; R82 := R18[0xe0cba3ca]
+162 [-]: GETTABLE  R18 R18 K37  ; R18 := R18[0xe0cba3ca]
 163 [-]: LOADK     R19 K38      ; R19 := "/Lotus/Language/SystemMessages/GreedTokenSpendFailed"
 164 [-]: CALL      R18 2 1      ; R18(R19)
 165 [-]: TEST      R15 0        ; if not R15 then PC := 208
@@ -658,7 +658,7 @@
 174 [-]: LOADK     R20 K41      ; R20 := "TriggerPort"
 175 [-]: CALL      R18 3 1      ; R18(R19,R20)
 176 [-]: GETUPVAL  R18 U1       ; R18 := U1
-177 [-]: GETTABLE  R18 R18 K42  ; R82 := R18[0x659d451f]
+177 [-]: GETTABLE  R18 R18 K42  ; R18 := R18[0x659d451f]
 178 [-]: GETGLOBAL R19 K43      ; R19 := 0x4b40cdaa
 179 [-]: CALL      R18 2 1      ; R18(R19)
 180 [-]: GETGLOBAL R18 K3       ; R18 := 0x89326c93

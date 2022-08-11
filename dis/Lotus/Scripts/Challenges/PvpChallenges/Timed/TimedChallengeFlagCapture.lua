@@ -40,7 +40,7 @@
   5 [-]: SELF      R0 R0 K3     ; R1 := R0; R0 := R0[0xd31cfac0]
   6 [-]: GETGLOBAL R2 K4        ; R2 := 0x83062d09
   7 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
-  8 [-]: SETUPVAL  R0 U0        ; U82 := 
+  8 [-]: SETUPVAL  R0 U0        ; U82 := R0
   9 [-]: GETGLOBAL R0 K5        ; R0 := 0x7b998233
  10 [-]: GETUPVAL  R1 U0        ; R1 := U0
  11 [-]: CALL      R0 2 2       ; R0 := R0(R1)
@@ -51,7 +51,7 @@
  16 [-]: SELF      R0 R0 K6     ; R1 := R0; R0 := R0[0xc97b7a44]
  17 [-]: GETGLOBAL R2 K4        ; R2 := 0x83062d09
  18 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
- 19 [-]: SETUPVAL  R0 U1        ; U82 := 
+ 19 [-]: SETUPVAL  R0 U1        ; U82 := R1
  20 [-]: GETGLOBAL R0 K5        ; R0 := 0x7b998233
  21 [-]: GETUPVAL  R1 U1        ; R1 := U1
  22 [-]: CALL      R0 2 2       ; R0 := R0(R1)
@@ -73,12 +73,12 @@
  38 [-]: SELF      R0 R0 K10    ; R1 := R0; R0 := R0[0xbf0268f4]
  39 [-]: LOADK     R2 K8        ; R2 := "curNum"
  40 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
- 41 [-]: SETUPVAL  R0 U2        ; U82 := 
+ 41 [-]: SETUPVAL  R0 U2        ; U82 := R2
  42 [-]: GETUPVAL  R0 U0        ; R0 := U0
  43 [-]: SELF      R0 R0 K10    ; R1 := R0; R0 := R0[0xbf0268f4]
  44 [-]: LOADK     R2 K11       ; R2 := "ScriptParamValue"
  45 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
- 46 [-]: SETUPVAL  R0 U3        ; U82 := 
+ 46 [-]: SETUPVAL  R0 U3        ; U82 := R3
  47 [-]: RETURN    R0 1         ; return 
 
 
@@ -102,7 +102,7 @@
   9 [-]: CALL      R4 2 1       ; R4(R5)
  10 [-]: GETUPVAL  R4 U0        ; R4 := U0
  11 [-]: ADD       R4 R4 K4     ; R4 := R4 + 1.000000
- 12 [-]: SETUPVAL  R4 U0        ; U82 := 
+ 12 [-]: SETUPVAL  R4 U0        ; U82 := R0
  13 [-]: GETGLOBAL R4 K5        ; R4 := 0x7b998233
  14 [-]: GETUPVAL  R5 U1        ; R5 := U1
  15 [-]: CALL      R4 2 2       ; R4 := R4(R5)

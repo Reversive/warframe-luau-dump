@@ -221,7 +221,7 @@
   9 [-]: TEST      R4 1         ; if R4 then PC := 104
  10 [-]: JMP       104          ; PC := 104
  11 [-]: GETGLOBAL R4 K3        ; R4 := 0xbd496aa1
- 12 [-]: GETTABLE  R4 R4 K4     ; R82 := R4[0x42645da3]
+ 12 [-]: GETTABLE  R4 R4 K4     ; R4 := R4[0x42645da3]
  13 [-]: NEWTABLE  R5 0 0       ; R5 := {}
  14 [-]: SELF      R6 R3 K5     ; R7 := R3; R6 := R3[0xed4e0128]
  15 [-]: CALL      R6 2 0       ; R6,... := R6(R7)
@@ -272,7 +272,7 @@
  60 [-]: MOVE      R10 R7       ; R10 := R7
  61 [-]: MOVE      R11 R5       ; R11 := R5
  62 [-]: GETUPVAL  R12 U1       ; R12 := U1
- 63 [-]: GETTABLE  R12 R12 K16  ; R82 := R12[0x06d055f9]
+ 63 [-]: GETTABLE  R12 R12 K16  ; R12 := R12[0x06d055f9]
  64 [-]: GETGLOBAL R13 K17      ; R13 := _T
  65 [-]: GETTABLE  R13 R13 K18  ; R13 := R13["PlayingTwinDialog"]
  66 [-]: EQ        0 R13 K19    ; if R13 ~= nil then PC := 69
@@ -408,7 +408,7 @@
 ; Max Stack Size:  4
 
   1 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  2 [-]: GETTABLE  R1 R1 K0     ; R82 := R1[0x0deacd54]
+  2 [-]: GETTABLE  R1 R1 K0     ; R1 := R1[0x0deacd54]
   3 [-]: CALL      R1 1 2       ; R1 := R1()
   4 [-]: TEST      R1 0         ; if not R1 then PC := 10
   5 [-]: JMP       10           ; PC := 10
@@ -464,7 +464,7 @@
  22 [-]: LT        0 K4 R4      ; if 0.000000 >= R4 then PC := 40
  23 [-]: JMP       40           ; PC := 40
  24 [-]: GETGLOBAL R4 K5        ; R4 := 0x5bced4c4
- 25 [-]: GETTABLE  R4 R4 K6     ; R82 := R4[0x3630e649]
+ 25 [-]: GETTABLE  R4 R4 K6     ; R4 := R4[0x3630e649]
  26 [-]: LOADK     R5 1         ; R5 := 1.000000
  27 [-]: GETGLOBAL R6 K3        ; R6 := 0xa5e10051
  28 [-]: LEN       R6 R6        ; R6 := # R6
@@ -647,7 +647,7 @@
  65 [-]: TEST      R6 1         ; if R6 then PC := 86
  66 [-]: JMP       86           ; PC := 86
  67 [-]: GETGLOBAL R6 K15       ; R6 := 0x5bced4c4
- 68 [-]: GETTABLE  R6 R6 K16    ; R82 := R6[0x3630e649]
+ 68 [-]: GETTABLE  R6 R6 K16    ; R6 := R6[0x3630e649]
  69 [-]: LOADK     R7 1         ; R7 := 1.000000
  70 [-]: GETGLOBAL R8 K13       ; R8 := 0xa5e10051
  71 [-]: LEN       R8 R8        ; R8 := # R8
@@ -730,7 +730,7 @@
  20 [-]: MOVE      R7 R2        ; R7 := R2
  21 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
  22 [-]: GETUPVAL  R4 U3        ; R4 := U3
- 23 [-]: GETTABLE  R4 R4 K5     ; R82 := R4[0x1f60d532]
+ 23 [-]: GETTABLE  R4 R4 K5     ; R4 := R4[0x1f60d532]
  24 [-]: SELF      R5 R3 K6     ; R6 := R3; R5 := R3[0x10c9eef2]
  25 [-]: GETGLOBAL R7 K3        ; R7 := 0x0469f296
  26 [-]: LOADK     R8 K7        ; R8 := "DSacQuestEnd3180OperatorVoice"
@@ -748,7 +748,7 @@
  38 [-]: MOVE      R7 R2        ; R7 := R2
  39 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
  40 [-]: GETUPVAL  R4 U3        ; R4 := U3
- 41 [-]: GETTABLE  R4 R4 K5     ; R82 := R4[0x1f60d532]
+ 41 [-]: GETTABLE  R4 R4 K5     ; R4 := R4[0x1f60d532]
  42 [-]: SELF      R5 R3 K6     ; R6 := R3; R5 := R3[0x10c9eef2]
  43 [-]: GETGLOBAL R7 K3        ; R7 := 0x0469f296
  44 [-]: LOADK     R8 K9        ; R8 := "DSacQuestEnd3240OperatorVoice"
@@ -812,13 +812,13 @@
  26 [-]: EQ        0 R8 R2      ; if R8 ~= R2 then PC := 33
  27 [-]: JMP       33           ; PC := 33
  28 [-]: GETGLOBAL R8 K9        ; R8 := 0x33bdd652
- 29 [-]: GETTABLE  R8 R8 K10    ; R82 := R8[0x23d5322f]
+ 29 [-]: GETTABLE  R8 R8 K10    ; R8 := R8[0x23d5322f]
  30 [-]: MOVE      R9 R3        ; R9 := R3
  31 [-]: MOVE      R10 R7       ; R10 := R7
  32 [-]: CALL      R8 3 1       ; R8(R9,R10)
  33 [-]: FORLOOP   R4 24        ; R4 += R6; if R4 <= R5 then begin PC := 24; R7 := R4 end
  34 [-]: GETGLOBAL R8 K11       ; R8 := 0x5bced4c4
- 35 [-]: GETTABLE  R8 R8 K12    ; R82 := R8[0x3630e649]
+ 35 [-]: GETTABLE  R8 R8 K12    ; R8 := R8[0x3630e649]
  36 [-]: LOADK     R9 1         ; R9 := 1.000000
  37 [-]: LEN       R10 R3       ; R10 := # R3
  38 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
@@ -909,7 +909,7 @@
  38 [-]: CALL      R3 2 1       ; R3(R4)
  39 [-]: JMP       31           ; PC := 31
  40 [-]: GETUPVAL  R3 U0        ; R3 := U0
- 41 [-]: GETTABLE  R3 R3 K7     ; R82 := R3[0x4a280c4a]
+ 41 [-]: GETTABLE  R3 R3 K7     ; R3 := R3[0x4a280c4a]
  42 [-]: MOVE      R4 R0        ; R4 := R0
  43 [-]: MOVE      R5 R2        ; R5 := R2
  44 [-]: CALL      R3 3 1       ; R3(R4,R5)

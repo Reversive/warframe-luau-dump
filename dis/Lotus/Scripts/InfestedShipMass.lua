@@ -24,14 +24,14 @@
 ; Max Stack Size:  5
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x5bced4c4
-  2 [-]: GETTABLE  R0 R0 K1     ; R82 := R0[0xc62a6be2]
+  2 [-]: GETTABLE  R0 R0 K1     ; R0 := R0[0xc62a6be2]
   3 [-]: GETGLOBAL R1 K2        ; R1 := 0x55156ff7
   4 [-]: CALL      R1 1 2       ; R1 := R1()
   5 [-]: LOADK     R2 1         ; R2 := 1.500000
   6 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
   7 [-]: DIV       R0 R0 K3     ; R0 := R0 / 1.500000
   8 [-]: GETGLOBAL R1 K0        ; R1 := 0x5bced4c4
-  9 [-]: GETTABLE  R1 R1 K4     ; R82 := R1[0xa40531d8]
+  9 [-]: GETTABLE  R1 R1 K4     ; R1 := R1[0xa40531d8]
  10 [-]: MOVE      R2 R0        ; R2 := R0
  11 [-]: LOADK     R3 K5        ; R3 := 0.200000
  12 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
@@ -39,13 +39,13 @@
  14 [-]: ADD       R1 R1 K6     ; R1 := R1 + 0.500000
  15 [-]: MUL       R2 R1 K6     ; R2 := R1 * 0.500000
  16 [-]: GETGLOBAL R3 K0        ; R3 := 0x5bced4c4
- 17 [-]: GETTABLE  R3 R3 K7     ; R82 := R3[0x3eda26fc]
+ 17 [-]: GETTABLE  R3 R3 K7     ; R3 := R3[0x3eda26fc]
  18 [-]: MUL       R4 R0 K8     ; R4 := R0 * 6.283100
  19 [-]: MUL       R4 R4 K9     ; R4 := R4 * 3.000000
  20 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  21 [-]: MUL       R2 R2 R3     ; R2 := R2 * R3
  22 [-]: GETGLOBAL R3 K0        ; R3 := 0x5bced4c4
- 23 [-]: GETTABLE  R3 R3 K10    ; R82 := R3[0x2b043591]
+ 23 [-]: GETTABLE  R3 R3 K10    ; R3 := R3[0x2b043591]
  24 [-]: UNM       R4 R0        ; R4 := ^ R0
  25 [-]: MUL       R4 R4 K11    ; R4 := R4 * 4.000000
  26 [-]: CALL      R3 2 2       ; R3 := R3(R4)
@@ -67,7 +67,7 @@
   2 [-]: LOADK     R2 K1        ; R2 := "EmGreenAtten"
   3 [-]: CALL      R1 2 2       ; R1 := R1(R2)
   4 [-]: GETGLOBAL R2 K2        ; R2 := 0x34291f5c
-  5 [-]: GETTABLE  R2 R2 K3     ; R82 := R2[0xe82b9b03]
+  5 [-]: GETTABLE  R2 R2 K3     ; R2 := R2[0xe82b9b03]
   6 [-]: MOVE      R3 R0        ; R3 := R0
   7 [-]: CALL      R2 2 1       ; R2(R3)
   8 [-]: GETGLOBAL R2 K4        ; R2 := 0x7b998233

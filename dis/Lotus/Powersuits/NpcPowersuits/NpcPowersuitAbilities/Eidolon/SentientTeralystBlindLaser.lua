@@ -110,7 +110,7 @@
   6 [-]: LOADK     R2 0         ; R2 := 0.000000
   7 [-]: RETURN    R2 2         ; return R2
   8 [-]: GETUPVAL  R2 U0        ; R2 := U0
-  9 [-]: GETTABLE  R2 R2 K2     ; R82 := R2[0xf0090084]
+  9 [-]: GETTABLE  R2 R2 K2     ; R2 := R2[0xf0090084]
  10 [-]: CALL      R2 1 2       ; R2 := R2()
  11 [-]: TEST      R2 1         ; if R2 then PC := 15
  12 [-]: JMP       15           ; PC := 15

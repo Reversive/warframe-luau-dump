@@ -62,14 +62,14 @@
  32 [-]: TFORLOOP  R6 2         ; R9,R10 :=  R6(R7,R8); if R9 ~= nil then begin PC = 29; R8 := R9 end
  33 [-]: JMP       29           ; PC := 29
  34 [-]: GETGLOBAL R11 K5       ; R11 := 0x33bdd652
- 35 [-]: GETTABLE  R11 R11 K6   ; R82 := R11[0x23d5322f]
+ 35 [-]: GETTABLE  R11 R11 K6   ; R11 := R11[0x23d5322f]
  36 [-]: GETGLOBAL R12 K1       ; R12 := _T
  37 [-]: GETTABLE  R12 R12 K2   ; R12 := R12["invisOnFinisher"]
  38 [-]: GETTABLE  R12 R12 R5   ; R12 := R12[R5]
  39 [-]: MOVE      R13 R4       ; R13 := R4
  40 [-]: CALL      R11 3 1      ; R11(R12,R13)
  41 [-]: GETUPVAL  R11 U0       ; R11 := U0
- 42 [-]: GETTABLE  R11 R11 K7   ; R82 := R11[0xc8ae8a12]
+ 42 [-]: GETTABLE  R11 R11 K7   ; R11 := R11[0xc8ae8a12]
  43 [-]: MOVE      R12 R0       ; R12 := R0
  44 [-]: CALL      R11 2 1      ; R11(R12)
  45 [-]: SELF      R11 R0 K8    ; R12 := R0; R11 := R0[0xa5e492d4]
@@ -126,7 +126,7 @@
  16 [-]: EQ        0 R11 R4     ; if R11 ~= R4 then PC := 36
  17 [-]: JMP       36           ; PC := 36
  18 [-]: GETGLOBAL R12 K5       ; R12 := 0x33bdd652
- 19 [-]: GETTABLE  R12 R12 K6   ; R82 := R12[0x9c1f3b5a]
+ 19 [-]: GETTABLE  R12 R12 K6   ; R12 := R12[0x9c1f3b5a]
  20 [-]: GETGLOBAL R13 K2       ; R13 := _T
  21 [-]: GETTABLE  R13 R13 K3   ; R13 := R13["invisOnFinisher"]
  22 [-]: GETTABLE  R13 R13 R5   ; R13 := R13[R5]
@@ -149,7 +149,7 @@
  39 [-]: JMP       41           ; PC := 41
  40 [-]: RETURN    R0 1         ; return 
  41 [-]: GETUPVAL  R12 U0       ; R12 := U0
- 42 [-]: GETTABLE  R12 R12 K9   ; R82 := R12[0x21476c5e]
+ 42 [-]: GETTABLE  R12 R12 K9   ; R12 := R12[0x21476c5e]
  43 [-]: MOVE      R13 R0       ; R13 := R0
  44 [-]: CALL      R12 2 1      ; R12(R13)
  45 [-]: SELF      R12 R0 K10   ; R13 := R0; R12 := R0[0xa5e492d4]

@@ -183,7 +183,7 @@
 119 [-]: TEST      R8 1         ; if R8 then PC := 128
 120 [-]: JMP       128          ; PC := 128
 121 [-]: GETUPVAL  R8 U1        ; R8 := U1
-122 [-]: GETTABLE  R8 R8 K24    ; R82 := R8[0x1f60d532]
+122 [-]: GETTABLE  R8 R8 K24    ; R8 := R8[0x1f60d532]
 123 [-]: MOVE      R9 R7        ; R9 := R7
 124 [-]: GETTABLE  R10 R6 K25   ; R10 := R6["mData"]
 125 [-]: SELF      R10 R10 K26  ; R11 := R10; R10 := R10[0x8f89d633]

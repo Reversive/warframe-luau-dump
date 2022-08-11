@@ -94,7 +94,7 @@
   4 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
   5 [-]: GETTABLE  R2 R0 R1     ; R2 := R0[R1]
   6 [-]: GETGLOBAL R3 K1        ; R3 := 0x33bdd652
-  7 [-]: GETTABLE  R3 R3 K2     ; R82 := R3[0x9c1f3b5a]
+  7 [-]: GETTABLE  R3 R3 K2     ; R3 := R3[0x9c1f3b5a]
   8 [-]: MOVE      R4 R0        ; R4 := R0
   9 [-]: MOVE      R5 R1        ; R5 := R1
  10 [-]: CALL      R3 3 1       ; R3(R4,R5)

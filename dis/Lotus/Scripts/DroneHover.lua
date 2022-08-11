@@ -30,7 +30,7 @@
   2 [-]: GETGLOBAL R3 K1        ; R3 := 0xed1834ff
   3 [-]: LOADBOOL  R4 0 0       ; R4 := false
   4 [-]: CALL      R1 4 2       ; R1 := R1(R2,R3,R4)
-  5 [-]: SETUPVAL  R1 U0        ; U82 := 
+  5 [-]: SETUPVAL  R1 U0        ; U82 := R0
   6 [-]: LOADK     R1 1         ; R1 := 1.000000
   7 [-]: LOADK     R2 1         ; R2 := 1.000000
   8 [-]: GETGLOBAL R3 K2        ; R3 := 0x29522b52
@@ -74,7 +74,7 @@
  46 [-]: SELF      R5 R0 K12    ; R6 := R0; R5 := R0[0xf376adf1]
  47 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  48 [-]: GETGLOBAL R6 K14       ; R6 := 0x5bced4c4
- 49 [-]: GETTABLE  R6 R6 K15    ; R82 := R6[0xb62ecfe0]
+ 49 [-]: GETTABLE  R6 R6 K15    ; R6 := R6[0xb62ecfe0]
  50 [-]: GETTABLE  R7 R5 K13    ; R7 := R5["y"]
  51 [-]: LOADK     R8 0         ; R8 := 0.000000
  52 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)

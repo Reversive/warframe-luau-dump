@@ -59,10 +59,10 @@
   1 [-]: TEST      R0 0         ; if not R0 then PC := 6
   2 [-]: JMP       6            ; PC := 6
   3 [-]: LOADBOOL  R2 1 0       ; R2 := true
-  4 [-]: SETUPVAL  R2 U0        ; U82 := 
+  4 [-]: SETUPVAL  R2 U0        ; U82 := R0
   5 [-]: JMP       11           ; PC := 11
   6 [-]: LOADBOOL  R2 1 0       ; R2 := true
-  7 [-]: SETUPVAL  R2 U1        ; U82 := 
+  7 [-]: SETUPVAL  R2 U1        ; U82 := R1
   8 [-]: GETGLOBAL R2 K0        ; R2 := 0x3d106989
   9 [-]: LOADK     R3 K1        ; R3 := "Failed to unlock personal quarters ship feature"
  10 [-]: CALL      R2 2 1       ; R2(R3)
@@ -159,7 +159,7 @@
  23 [-]: SELF      R4 R0 K3     ; R5 := R0; R4 := R0[0x383d2e7d]
  24 [-]: CALL      R4 2 1       ; R4(R5)
  25 [-]: GETUPVAL  R4 U2        ; R4 := U2
- 26 [-]: GETTABLE  R4 R4 K5     ; R82 := R4[0x1f60d532]
+ 26 [-]: GETTABLE  R4 R4 K5     ; R4 := R4[0x1f60d532]
  27 [-]: GETUPVAL  R5 U3        ; R5 := U3
  28 [-]: SELF      R5 R5 K6     ; R6 := R5; R5 := R5[0x10c9eef2]
  29 [-]: GETGLOBAL R7 K7        ; R7 := 0x0469f296
@@ -290,7 +290,7 @@
 ; Max Stack Size:  5
 
   1 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  2 [-]: GETTABLE  R0 R0 K0     ; R82 := R0[0x1f60d532]
+  2 [-]: GETTABLE  R0 R0 K0     ; R0 := R0[0x1f60d532]
   3 [-]: GETUPVAL  R1 U1        ; R1 := U1
   4 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1[0x10c9eef2]
   5 [-]: GETGLOBAL R3 K2        ; R3 := 0x0469f296
@@ -331,7 +331,7 @@
  19 [-]: TEST      R4 1         ; if R4 then PC := 27
  20 [-]: JMP       27           ; PC := 27
  21 [-]: GETUPVAL  R4 U1        ; R4 := U1
- 22 [-]: GETTABLE  R4 R4 K6     ; R82 := R4[0x1f60d532]
+ 22 [-]: GETTABLE  R4 R4 K6     ; R4 := R4[0x1f60d532]
  23 [-]: MOVE      R5 R3        ; R5 := R3
  24 [-]: CALL      R4 2 1       ; R4(R5)
  25 [-]: GETGLOBAL R4 K3        ; R4 := _T
@@ -342,9 +342,9 @@
  30 [-]: TEST      R4 0         ; if not R4 then PC := 100
  31 [-]: JMP       100          ; PC := 100
  32 [-]: LOADBOOL  R4 0 0       ; R4 := false
- 33 [-]: SETUPVAL  R4 U3        ; U82 := 
+ 33 [-]: SETUPVAL  R4 U3        ; U82 := R3
  34 [-]: LOADBOOL  R4 0 0       ; R4 := false
- 35 [-]: SETUPVAL  R4 U4        ; U82 := 
+ 35 [-]: SETUPVAL  R4 U4        ; U82 := R4
  36 [-]: LOADK     R4 5         ; R4 := 5.000000
  37 [-]: LOADK     R5 0         ; R5 := 0.000000
  38 [-]: SELF      R6 R2 K9     ; R7 := R2; R6 := R2[0x8becddee]
@@ -363,11 +363,11 @@
  51 [-]: TEST      R6 0         ; if not R6 then PC := 44
  52 [-]: JMP       44           ; PC := 44
  53 [-]: LOADBOOL  R6 0 0       ; R6 := false
- 54 [-]: SETUPVAL  R6 U4        ; U82 := 
+ 54 [-]: SETUPVAL  R6 U4        ; U82 := R4
  55 [-]: LOADK     R6 0         ; R6 := 0.000000
  56 [-]: ADD       R5 R5 K12    ; R5 := R5 + 1.000000
  57 [-]: GETGLOBAL R7 K13       ; R7 := 0x5bced4c4
- 58 [-]: GETTABLE  R7 R7 K14    ; R82 := R7[0xac1b386a]
+ 58 [-]: GETTABLE  R7 R7 K14    ; R7 := R7[0xac1b386a]
  59 [-]: MUL       R8 R4 R5     ; R8 := R4 * R5
  60 [-]: LOADK     R9 60        ; R9 := 60.000000
  61 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
@@ -407,7 +407,7 @@
  95 [-]: TEST      R8 1         ; if R8 then PC := 100
  96 [-]: JMP       100          ; PC := 100
  97 [-]: GETGLOBAL R8 K3        ; R8 := _T
- 98 [-]: GETTABLE  R8 R8 K21    ; R82 := R8[0xd0d3e579]
+ 98 [-]: GETTABLE  R8 R8 K21    ; R8 := R8[0xd0d3e579]
  99 [-]: CALL      R8 1 1       ; R8()
 100 [-]: RETURN    R0 1         ; return 
 

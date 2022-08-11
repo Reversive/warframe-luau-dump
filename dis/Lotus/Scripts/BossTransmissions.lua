@@ -132,13 +132,13 @@
   6 [-]: LOADK     R5 1         ; R5 := 1.000000
   7 [-]: FORPREP   R3 13        ; R3 -= R5; PC := 13
   8 [-]: GETGLOBAL R7 K1        ; R7 := 0x33bdd652
-  9 [-]: GETTABLE  R7 R7 K2     ; R82 := R7[0x23d5322f]
+  9 [-]: GETTABLE  R7 R7 K2     ; R7 := R7[0x23d5322f]
  10 [-]: MOVE      R8 R0        ; R8 := R0
  11 [-]: GETTABLE  R9 R1 R6     ; R9 := R1[R6]
  12 [-]: CALL      R7 3 1       ; R7(R8,R9)
  13 [-]: FORLOOP   R3 8         ; R3 += R5; if R3 <= R4 then begin PC := 8; R6 := R3 end
  14 [-]: GETUPVAL  R7 U0        ; R7 := U0
- 15 [-]: GETTABLE  R7 R7 K3     ; R82 := R7[0xb8f73de1]
+ 15 [-]: GETTABLE  R7 R7 K3     ; R7 := R7[0xb8f73de1]
  16 [-]: MOVE      R8 R0        ; R8 := R0
  17 [-]: CALL      R7 2 2       ; R7 := R7(R8)
  18 [-]: MOVE      R0 R7        ; R0 := R7
@@ -241,7 +241,7 @@
  84 [-]: GETTABLE  R18 R1 K15   ; R18 := R1[1.000000]
  85 [-]: CALL      R17 2 1      ; R17(R18)
  86 [-]: GETGLOBAL R17 K20      ; R17 := 0x33bdd652
- 87 [-]: GETTABLE  R17 R17 K21  ; R82 := R17[0x9c1f3b5a]
+ 87 [-]: GETTABLE  R17 R17 K21  ; R17 := R17[0x9c1f3b5a]
  88 [-]: MOVE      R18 R1       ; R18 := R1
  89 [-]: LOADK     R19 1        ; R19 := 1.000000
  90 [-]: CALL      R17 3 1      ; R17(R18,R19)
@@ -285,13 +285,13 @@
 128 [-]: GETTABLE  R18 R2 K15   ; R18 := R2[1.000000]
 129 [-]: CALL      R17 2 1      ; R17(R18)
 130 [-]: GETGLOBAL R17 K20      ; R17 := 0x33bdd652
-131 [-]: GETTABLE  R17 R17 K21  ; R82 := R17[0x9c1f3b5a]
+131 [-]: GETTABLE  R17 R17 K21  ; R17 := R17[0x9c1f3b5a]
 132 [-]: MOVE      R18 R2       ; R18 := R2
 133 [-]: LOADK     R19 1        ; R19 := 1.000000
 134 [-]: CALL      R17 3 1      ; R17(R18,R19)
 135 [-]: GETGLOBAL R17 K7       ; R17 := 0xcbd666e1
 136 [-]: GETGLOBAL R18 K28      ; R18 := 0x5bced4c4
-137 [-]: GETTABLE  R18 R18 K29  ; R82 := R18[0x3630e649]
+137 [-]: GETTABLE  R18 R18 K29  ; R18 := R18[0x3630e649]
 138 [-]: GETGLOBAL R19 K30      ; R19 := 0x019b4727
 139 [-]: GETGLOBAL R20 K31      ; R20 := 0xc5ce1dcd
 140 [-]: CALL      R18 3 0      ; R18,... := R18(R19,R20)

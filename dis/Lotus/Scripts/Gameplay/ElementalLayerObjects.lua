@@ -46,7 +46,7 @@
  15 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
  16 [-]: LOADK     R4 1         ; R4 := 1.000000
  17 [-]: GETGLOBAL R5 K6        ; R5 := 0x5bced4c4
- 18 [-]: GETTABLE  R5 R5 K7     ; R82 := R5[0xac1b386a]
+ 18 [-]: GETTABLE  R5 R5 K7     ; R5 := R5[0xac1b386a]
  19 [-]: LEN       R6 R2        ; R6 := # R2
  20 [-]: MOVE      R7 R3        ; R7 := R3
  21 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
@@ -92,7 +92,7 @@
  61 [-]: CALL      R11 0 1      ; R11(R12,...)
  62 [-]: SELF      R11 R10 K20  ; R12 := R10; R11 := R10[0x175f96c1]
  63 [-]: GETGLOBAL R13 K6       ; R13 := 0x5bced4c4
- 64 [-]: GETTABLE  R13 R13 K21  ; R82 := R13[0x3630e649]
+ 64 [-]: GETTABLE  R13 R13 K21  ; R13 := R13[0x3630e649]
  65 [-]: CALL      R13 1 2      ; R13 := R13()
  66 [-]: MUL       R13 R13 K22  ; R13 := R13 * 0.300000
  67 [-]: ADD       R13 K11 R13  ; R13 := 0.200000 + R13

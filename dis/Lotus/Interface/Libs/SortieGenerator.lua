@@ -535,7 +535,7 @@
  46 [-]: TEST      R1 1         ; if R1 then PC := 58
  47 [-]: JMP       58           ; PC := 58
  48 [-]: GETGLOBAL R7 K7        ; R7 := 0x33bdd652
- 49 [-]: GETTABLE  R7 R7 K8     ; R82 := R7[0x23d5322f]
+ 49 [-]: GETTABLE  R7 R7 K8     ; R7 := R7[0x23d5322f]
  50 [-]: GETGLOBAL R8 K0        ; R8 := _T
  51 [-]: GETTABLE  R8 R8 K1     ; R8 := R8["CachedRegionStatus"]
  52 [-]: GETTABLE  R9 R0 K2     ; R9 := R0["mRegion"]
@@ -2399,4 +2399,4 @@
 1841 [-]: LOADK     R7 15        ; R7 := 15.000000
 1842 [-]: NEWTABLE  R8 1 0       ; R8 := {}
 1843 [-]: LOADK     R9 K303      ; R9 := "/Lotus/Language/Sorties/SOArtifactToHiveDesc1"
-1844 [-]: SETLIST   R8 1 1 
+1844 [-]: SETLIST   R8 1 1  

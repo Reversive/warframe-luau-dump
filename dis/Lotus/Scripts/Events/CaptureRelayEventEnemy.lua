@@ -283,7 +283,7 @@
 182 [-]: TEST      R16 1        ; if R16 then PC := 191
 183 [-]: JMP       191          ; PC := 191
 184 [-]: GETGLOBAL R16 K3       ; R16 := _T
-185 [-]: GETTABLE  R16 R16 K43  ; R82 := R16[0xd2a1d93b]
+185 [-]: GETTABLE  R16 R16 K43  ; R16 := R16[0xd2a1d93b]
 186 [-]: MOVE      R17 R3       ; R17 := R3
 187 [-]: GETGLOBAL R18 K3       ; R18 := _T
 188 [-]: GETTABLE  R18 R18 K23  ; R18 := R18["RelayEventPhaseInfo"]
@@ -362,7 +362,7 @@
  51 [-]: LOADK     R16 K16      ; R16 := "SECONDS"
  52 [-]: GETGLOBAL R17 K17      ; R17 := 0x64fb1586
  53 [-]: GETGLOBAL R18 K18      ; R18 := 0x5bced4c4
- 54 [-]: GETTABLE  R18 R18 K19  ; R82 := R18[0x55f27c30]
+ 54 [-]: GETTABLE  R18 R18 K19  ; R18 := R18[0x55f27c30]
  55 [-]: GETGLOBAL R19 K2       ; R19 := _T
  56 [-]: GETTABLE  R19 R19 K3   ; R19 := R19["RelayEventCaptureTimer"]
  57 [-]: CALL      R18 2 0      ; R18,... := R18(R19)
@@ -425,7 +425,7 @@
 114 [-]: MOVE      R10 R0       ; R10 := R0
 115 [-]: CALL      R8 3 1       ; R8(R9,R10)
 116 [-]: GETGLOBAL R8 K2        ; R8 := _T
-117 [-]: GETTABLE  R8 R8 K29    ; R82 := R8[0x481f0179]
+117 [-]: GETTABLE  R8 R8 K29    ; R8 := R8[0x481f0179]
 118 [-]: CALL      R8 1 1       ; R8()
 119 [-]: RETURN    R0 1         ; return 
 

@@ -35,7 +35,7 @@
   8 [-]: TEST      R2 0         ; if not R2 then PC := 31
   9 [-]: JMP       31           ; PC := 31
  10 [-]: GETGLOBAL R2 K2        ; R2 := 0x5bced4c4
- 11 [-]: GETTABLE  R2 R2 K3     ; R82 := R2[0x55f27c30]
+ 11 [-]: GETTABLE  R2 R2 K3     ; R2 := R2[0x55f27c30]
  12 [-]: GETGLOBAL R3 K4        ; R3 := _T
  13 [-]: GETTABLE  R3 R3 K5     ; R3 := R3["RevenantMask_Stage"]
  14 [-]: TEST      R3 1         ; if R3 then PC := 17
@@ -50,7 +50,7 @@
  23 [-]: TEST      R2 1         ; if R2 then PC := 29
  24 [-]: JMP       29           ; PC := 29
  25 [-]: GETUPVAL  R2 U0        ; R2 := U0
- 26 [-]: GETTABLE  R2 R2 K8     ; R82 := R2[0xf0090084]
+ 26 [-]: GETTABLE  R2 R2 K8     ; R2 := R2[0xf0090084]
  27 [-]: CALL      R2 1 2       ; R2 := R2()
  28 [-]: JMP       31           ; PC := 31
  29 [-]: LOADBOOL  R2 0 1       ; R2 := false; PC := 30

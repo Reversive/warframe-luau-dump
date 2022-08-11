@@ -38,7 +38,7 @@
 ; Max Stack Size:  11
 
   1 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  2 [-]: GETTABLE  R1 R1 K0     ; R82 := R1[0x3077ca89]
+  2 [-]: GETTABLE  R1 R1 K0     ; R1 := R1[0x3077ca89]
   3 [-]: MOVE      R2 R0        ; R2 := R0
   4 [-]: CALL      R1 2 2       ; R1 := R1(R2)
   5 [-]: GETGLOBAL R2 K1        ; R2 := 0x25d99d89

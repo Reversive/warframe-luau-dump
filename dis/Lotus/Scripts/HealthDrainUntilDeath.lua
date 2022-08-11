@@ -55,7 +55,7 @@
  30 [-]: LOADK     R4 0         ; R4 := 0.500000
  31 [-]: GETGLOBAL R5 K1        ; R5 := 0xcbd666e1
  32 [-]: GETGLOBAL R6 K10       ; R6 := 0x5bced4c4
- 33 [-]: GETTABLE  R6 R6 K11    ; R82 := R6[0xb62ecfe0]
+ 33 [-]: GETTABLE  R6 R6 K11    ; R6 := R6[0xb62ecfe0]
  34 [-]: LOADK     R7 0         ; R7 := 0.000000
  35 [-]: GETGLOBAL R8 K12       ; R8 := 0xd27a04f1
  36 [-]: SUB       R8 R8 R4     ; R8 := R8 - R4

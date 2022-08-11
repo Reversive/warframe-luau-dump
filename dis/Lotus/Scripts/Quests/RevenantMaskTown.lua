@@ -69,7 +69,7 @@
  40 [-]: EQ        0 R14 R15    ; if R14 ~= R15 then PC := 52
  41 [-]: JMP       52           ; PC := 52
  42 [-]: GETGLOBAL R15 K14      ; R15 := 0x33bdd652
- 43 [-]: GETTABLE  R15 R15 K15  ; R82 := R15[0x9c1f3b5a]
+ 43 [-]: GETTABLE  R15 R15 K15  ; R15 := R15[0x9c1f3b5a]
  44 [-]: GETGLOBAL R16 K2       ; R16 := _T
  45 [-]: GETTABLE  R16 R16 K3   ; R16 := R16["HubNpcs"]
  46 [-]: GETTABLE  R16 R16 K4   ; R16 := R16["/Lotus/Language/Npcs/Nakak"]
@@ -188,7 +188,7 @@
 159 [-]: MOVE      R26 R27      ; R26 := R27
 160 [-]: JMP       137          ; PC := 137
 161 [-]: GETGLOBAL R27 K36      ; R27 := 0xbd496aa1
-162 [-]: GETTABLE  R27 R27 K37  ; R82 := R27[0x42645da3]
+162 [-]: GETTABLE  R27 R27 K37  ; R27 := R27[0x42645da3]
 163 [-]: NEWTABLE  R28 1 0      ; R28 := {}
 164 [-]: MOVE      R29 R18      ; R29 := R18
 165 [-]: GETGLOBAL R30 K38      ; R30 := 0x6fed6096
@@ -360,7 +360,7 @@
 331 [-]: JMP       333          ; PC := 333
 332 [-]: GETGLOBAL R43 K61      ; R43 := 0x9a2df0c1
 333 [-]: GETGLOBAL R44 K36      ; R44 := 0xbd496aa1
-334 [-]: GETTABLE  R44 R44 K37  ; R82 := R44[0x42645da3]
+334 [-]: GETTABLE  R44 R44 K37  ; R44 := R44[0x42645da3]
 335 [-]: NEWTABLE  R45 0 0      ; R45 := {}
 336 [-]: SELF      R46 R43 K20  ; R47 := R43; R46 := R43[0xed4e0128]
 337 [-]: CALL      R46 2 0      ; R46,... := R46(R47)
@@ -380,7 +380,7 @@
 351 [-]: CALL      R45 2 2      ; R45 := R45(R46)
 352 [-]: SETTABLE  R16 K12 R45  ; R16[1.000000] := R45
 353 [-]: GETGLOBAL R45 K14      ; R45 := 0x33bdd652
-354 [-]: GETTABLE  R45 R45 K62  ; R82 := R45[0x23d5322f]
+354 [-]: GETTABLE  R45 R45 K62  ; R45 := R45[0x23d5322f]
 355 [-]: GETGLOBAL R46 K2       ; R46 := _T
 356 [-]: GETTABLE  R46 R46 K3   ; R46 := R46["HubNpcs"]
 357 [-]: GETTABLE  R46 R46 K4   ; R46 := R46["/Lotus/Language/Npcs/Nakak"]
@@ -397,7 +397,7 @@
 368 [-]: SETTABLE  R47 K11 R48  ; R47["sets"] := R48
 369 [-]: CALL      R45 3 1      ; R45(R46,R47)
 370 [-]: GETGLOBAL R45 K14      ; R45 := 0x33bdd652
-371 [-]: GETTABLE  R45 R45 K62  ; R82 := R45[0x23d5322f]
+371 [-]: GETTABLE  R45 R45 K62  ; R45 := R45[0x23d5322f]
 372 [-]: GETGLOBAL R46 K2       ; R46 := _T
 373 [-]: GETTABLE  R46 R46 K3   ; R46 := R46["HubNpcs"]
 374 [-]: GETTABLE  R46 R46 K4   ; R46 := R46["/Lotus/Language/Npcs/Nakak"]
@@ -476,7 +476,7 @@
  33 [-]: EQ        0 R6 R7      ; if R6 ~= R7 then PC := 41
  34 [-]: JMP       41           ; PC := 41
  35 [-]: GETGLOBAL R6 K11       ; R6 := 0x33bdd652
- 36 [-]: GETTABLE  R6 R6 K12    ; R82 := R6[0x9c1f3b5a]
+ 36 [-]: GETTABLE  R6 R6 K12    ; R6 := R6[0x9c1f3b5a]
  37 [-]: MOVE      R7 R1        ; R7 := R1
  38 [-]: MOVE      R8 R5        ; R8 := R5
  39 [-]: CALL      R6 3 1       ; R6(R7,R8)
@@ -505,7 +505,7 @@
  62 [-]: CALL      R8 0 0       ; R8,... := R8(R9,...)
  63 [-]: CALL      R6 0 1       ; R6(R7,...)
  64 [-]: LOADNIL   R6 R6        ; R6 := nil
- 65 [-]: SETUPVAL  R6 U5        ; U82 := 
+ 65 [-]: SETUPVAL  R6 U5        ; U82 := 
  66 [-]: RETURN    R0 1         ; return 
 
 

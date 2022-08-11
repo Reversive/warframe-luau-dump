@@ -96,7 +96,7 @@
  27 [-]: TEST      R3 0         ; if not R3 then PC := 37
  28 [-]: JMP       37           ; PC := 37
  29 [-]: GETUPVAL  R3 U1        ; R3 := U1
- 30 [-]: GETTABLE  R3 R3 K4     ; R82 := R3[0x7baa66e1]
+ 30 [-]: GETTABLE  R3 R3 K4     ; R3 := R3[0x7baa66e1]
  31 [-]: CALL      R3 1 2       ; R3 := R3()
  32 [-]: EQ        1 R3 K5      ; if R3 == 2.000000 then PC := 36
  33 [-]: JMP       36           ; PC := 36
@@ -318,7 +318,7 @@
 140 [-]: CALL      R26 2 2      ; R26 := R26(R27)
 141 [-]: MOVE      R23 R26      ; R23 := R26
 142 [-]: GETGLOBAL R26 K27      ; R26 := 0x5bced4c4
-143 [-]: GETTABLE  R26 R26 K28  ; R82 := R26[0xb62ecfe0]
+143 [-]: GETTABLE  R26 R26 K28  ; R26 := R26[0xb62ecfe0]
 144 [-]: LOADK     R27 1        ; R27 := 1.000000
 145 [-]: SELF      R28 R0 K29   ; R29 := R0; R28 := R0[0x1f420a3a]
 146 [-]: MOVE      R30 R23      ; R30 := R23
@@ -341,7 +341,7 @@
 163 [-]: MOVE      R30 R25      ; R30 := R25
 164 [-]: CALL      R27 4 1      ; R27(R28,R29,R30)
 165 [-]: GETGLOBAL R27 K27      ; R27 := 0x5bced4c4
-166 [-]: GETTABLE  R27 R27 K28  ; R82 := R27[0xb62ecfe0]
+166 [-]: GETTABLE  R27 R27 K28  ; R27 := R27[0xb62ecfe0]
 167 [-]: LOADK     R28 16       ; R28 := 16.000000
 168 [-]: GETGLOBAL R29 K34      ; R29 := 0xf3753d0b
 169 [-]: MUL       R29 R29 R26  ; R29 := R29 * R26
@@ -379,7 +379,7 @@
 201 [-]: GETGLOBAL R33 K37      ; R33 := _T
 202 [-]: GETTABLE  R33 R33 K38  ; R33 := R33["flameThrowerGlow"]
 203 [-]: GETGLOBAL R34 K27      ; R34 := 0x5bced4c4
-204 [-]: GETTABLE  R34 R34 K40  ; R82 := R34[0xac1b386a]
+204 [-]: GETTABLE  R34 R34 K40  ; R34 := R34[0xac1b386a]
 205 [-]: LOADK     R35 4        ; R35 := 4.000000
 206 [-]: GETGLOBAL R36 K37      ; R36 := _T
 207 [-]: GETTABLE  R36 R36 K38  ; R36 := R36["flameThrowerGlow"]
@@ -522,7 +522,7 @@
  82 [-]: GETTABLE  R5 R5 K7     ; R5 := R5["flameThrowerGlow"]
  83 [-]: GETTABLE  R5 R5 R4     ; R5 := R5[R4]
  84 [-]: GETGLOBAL R6 K19       ; R6 := 0x5bced4c4
- 85 [-]: GETTABLE  R6 R6 K20    ; R82 := R6[0xb62ecfe0]
+ 85 [-]: GETTABLE  R6 R6 K20    ; R6 := R6[0xb62ecfe0]
  86 [-]: LOADK     R7 0         ; R7 := 0.000000
  87 [-]: MOVE      R8 R5        ; R8 := R5
  88 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
@@ -539,7 +539,7 @@
  99 [-]: GETGLOBAL R7 K6        ; R7 := _T
 100 [-]: GETTABLE  R7 R7 K7     ; R7 := R7["flameThrowerGlow"]
 101 [-]: GETGLOBAL R8 K19       ; R8 := 0x5bced4c4
-102 [-]: GETTABLE  R8 R8 K20    ; R82 := R8[0xb62ecfe0]
+102 [-]: GETTABLE  R8 R8 K20    ; R8 := R8[0xb62ecfe0]
 103 [-]: LOADK     R9 0         ; R9 := 0.000000
 104 [-]: GETGLOBAL R10 K25      ; R10 := 0x67652851
 105 [-]: CALL      R10 1 2      ; R10 := R10()

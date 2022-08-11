@@ -40,7 +40,7 @@
  12 [-]: MOVE      R2 R6        ; R2 := R6
  13 [-]: EQ        0 R3 K3      ; if R3 ~= nil then PC := 19
  14 [-]: JMP       19           ; PC := 19
- 15 [-]: GETTABLE  R6 R4 K6     ; R82 := R6[0xa9882367]
+ 15 [-]: GETTABLE  R6 R4 K6     ; R6 := R4[0xa9882367]
  16 [-]: LOADK     R7 K7        ; R7 := "OverviewCam"
  17 [-]: CALL      R6 2 2       ; R6 := R6(R7)
  18 [-]: MOVE      R3 R6        ; R3 := R6
@@ -241,7 +241,7 @@
 ; Max Stack Size:  11
 
   1 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  2 [-]: GETTABLE  R1 R1 K0     ; R82 := R1[0x44537adf]
+  2 [-]: GETTABLE  R1 R1 K0     ; R1 := R1[0x44537adf]
   3 [-]: GETTABLE  R2 R0 K1     ; R2 := R0["mMovie"]
   4 [-]: CALL      R1 2 3       ; R1,R2 := R1(R2)
   5 [-]: GETGLOBAL R3 K2        ; R3 := 0x42dcc9f5

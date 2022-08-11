@@ -13,7 +13,7 @@
   4 [-]: LOADBOOL  R1 0 0       ; R1 := false
   5 [-]: LOADBOOL  R2 0 0       ; R2 := false
   6 [-]: GETGLOBAL R3 K2        ; R3 := 0x6c97a788
-  7 [-]: GETTABLE  R3 R3 K3     ; R82 := R3[0x314b688b]
+  7 [-]: GETTABLE  R3 R3 K3     ; R3 := R3[0x314b688b]
   8 [-]: CALL      R3 1 2       ; R3 := R3()
   9 [-]: LOADK     R4 0         ; R4 := 0.000000
  10 [-]: LOADBOOL  R5 1 0       ; R5 := true
@@ -135,7 +135,7 @@
 ; Max Stack Size:  9
 
   1 [-]: LOADBOOL  R0 1 0       ; R0 := true
-  2 [-]: SETUPVAL  R0 U0        ; U82 := 
+  2 [-]: SETUPVAL  R0 U0        ; U82 := R0
   3 [-]: GETGLOBAL R0 K0        ; R0 := 0x25312c9b
   4 [-]: GETGLOBAL R1 K1        ; R1 := 0xae91e43b
   5 [-]: LOADK     R2 K2        ; R2 := "_root"
@@ -183,7 +183,7 @@
   4 [-]: JMP       27           ; PC := 27
   5 [-]: NEWTABLE  R0 0 0       ; R0 := {}
   6 [-]: GETGLOBAL R1 K2        ; R1 := 0x33bdd652
-  7 [-]: GETTABLE  R1 R1 K3     ; R82 := R1[0x23d5322f]
+  7 [-]: GETTABLE  R1 R1 K3     ; R1 := R1[0x23d5322f]
   8 [-]: MOVE      R2 R0        ; R2 := R0
   9 [-]: NEWTABLE  R3 0 3       ; R3 := {}
  10 [-]: SETTABLE  R3 K4 K5     ; R3["Label"] := "/Lotus/Language/Menu/Exit"
@@ -196,7 +196,7 @@
  17 [-]: JMP       19           ; PC := 19
  18 [-]: LOADNIL   R0 R0        ; R0 := nil
  19 [-]: GETGLOBAL R1 K0        ; R1 := _T
- 20 [-]: GETTABLE  R1 R1 K9     ; R82 := R1[0x1c5b546f]
+ 20 [-]: GETTABLE  R1 R1 K9     ; R1 := R1[0x1c5b546f]
  21 [-]: GETGLOBAL R2 K10       ; R2 := 0xae91e43b
  22 [-]: MOVE      R3 R0        ; R3 := R0
  23 [-]: GETGLOBAL R4 K11       ; R4 := 0xcd0165a3
@@ -237,7 +237,7 @@
  20 [-]: LOADK     R2 K5        ; R2 := "Debug.SunValue"
  21 [-]: LOADK     R3 29        ; R3 := 29.000000
  22 [-]: GETUPVAL  R4 U1        ; R4 := U1
- 23 [-]: GETTABLE  R4 R4 K6     ; R82 := R4[0x1142c7a8]
+ 23 [-]: GETTABLE  R4 R4 K6     ; R4 := R4[0x1142c7a8]
  24 [-]: GETUPVAL  R5 U2        ; R5 := U2
  25 [-]: GETTABLE  R5 R5 K7     ; R5 := R5["mWisdom"]
  26 [-]: LOADK     R6 1         ; R6 := 1.000000
@@ -248,7 +248,7 @@
  31 [-]: LOADK     R2 K8        ; R2 := "Debug.MoonValue"
  32 [-]: LOADK     R3 29        ; R3 := 29.000000
  33 [-]: GETUPVAL  R4 U1        ; R4 := U1
- 34 [-]: GETTABLE  R4 R4 K6     ; R82 := R4[0x1142c7a8]
+ 34 [-]: GETTABLE  R4 R4 K6     ; R4 := R4[0x1142c7a8]
  35 [-]: GETUPVAL  R5 U2        ; R5 := U2
  36 [-]: GETTABLE  R5 R5 K9     ; R5 := R5["mAlignment"]
  37 [-]: LOADK     R6 1         ; R6 := 1.000000
@@ -287,9 +287,9 @@
  17 [-]: MUL       R2 R2 R2     ; R2 := R2 * R2
  18 [-]: MUL       R3 R1 K5     ; R3 := R1 * 89.000000
  19 [-]: GETGLOBAL R4 K6        ; R4 := 0x5bced4c4
- 20 [-]: GETTABLE  R4 R4 K7     ; R82 := R4[0xb62ecfe0]
+ 20 [-]: GETTABLE  R4 R4 K7     ; R4 := R4[0xb62ecfe0]
  21 [-]: GETGLOBAL R5 K6        ; R5 := 0x5bced4c4
- 22 [-]: GETTABLE  R5 R5 K8     ; R82 := R5[0xe4a5b3ca]
+ 22 [-]: GETTABLE  R5 R5 K8     ; R5 := R5[0xe4a5b3ca]
  23 [-]: GETUPVAL  R6 U1        ; R6 := U1
  24 [-]: SUB       R6 R6 R0     ; R6 := R6 - R0
  25 [-]: CALL      R5 2 2       ; R5 := R5(R6)
@@ -434,7 +434,7 @@
 164 [-]: FORLOOP   R12 130      ; R12 += R14; if R12 <= R13 then begin PC := 130; R15 := R12 end
 165 [-]: GETUPVAL  R17 U8       ; R17 := U8
 166 [-]: GETGLOBAL R18 K6       ; R18 := 0x5bced4c4
-167 [-]: GETTABLE  R18 R18 K8   ; R82 := R18[0xe4a5b3ca]
+167 [-]: GETTABLE  R18 R18 K8   ; R18 := R18[0xe4a5b3ca]
 168 [-]: MOVE      R19 R0       ; R19 := R0
 169 [-]: CALL      R18 2 2      ; R18 := R18(R19)
 170 [-]: LT        0 R10 R18    ; if R10 >= R18 then PC := 173
@@ -443,7 +443,7 @@
 173 [-]: GETUPVAL  R18 U9       ; R18 := U9
 174 [-]: EQ        1 R18 R17    ; if R18 == R17 then PC := 182
 175 [-]: JMP       182          ; PC := 182
-176 [-]: SETUPVAL  R17 U9       ; U82 := 
+176 [-]: SETUPVAL  R17 U9       ; U82 := R9
 177 [-]: GETGLOBAL R18 K27      ; R18 := 0x38f10e85
 178 [-]: GETGLOBAL R19 K13      ; R19 := 0xae91e43b
 179 [-]: LOADK     R20 K30      ; R20 := "Alignment.MetalFrame.swapDepths"
@@ -462,7 +462,7 @@
 ; Max Stack Size:  10
 
   1 [-]: GETUPVAL  R4 U0        ; R4 := U0
-  2 [-]: GETTABLE  R4 R4 K0     ; R82 := R4[0x74a11ec6]
+  2 [-]: GETTABLE  R4 R4 K0     ; R4 := R4[0x74a11ec6]
   3 [-]: GETGLOBAL R5 K1        ; R5 := 0x9bafffe3
   4 [-]: MOVE      R6 R2        ; R6 := R2
   5 [-]: MOVE      R7 R3        ; R7 := R3
@@ -472,7 +472,7 @@
   9 [-]: GETUPVAL  R5 U1        ; R5 := U1
  10 [-]: EQ        1 R5 R4      ; if R5 == R4 then PC := 29
  11 [-]: JMP       29           ; PC := 29
- 12 [-]: SETUPVAL  R4 U1        ; U82 := 
+ 12 [-]: SETUPVAL  R4 U1        ; U82 := R1
  13 [-]: GETGLOBAL R5 K2        ; R5 := 0x38f10e85
  14 [-]: GETGLOBAL R6 K3        ; R6 := 0xae91e43b
  15 [-]: LOADK     R7 K4        ; R7 := "Alignment.Contents."
@@ -524,7 +524,7 @@
   3 [-]: GETUPVAL  R3 U2        ; R3 := U2
   4 [-]: MOVE      R4 R0        ; R4 := R0
   5 [-]: CALL      R1 4 2       ; R1 := R1(R2,R3,R4)
-  6 [-]: SETUPVAL  R1 U0        ; U82 := 
+  6 [-]: SETUPVAL  R1 U0        ; U82 := R0
   7 [-]: RETURN    R0 1         ; return 
 
 
@@ -681,7 +681,7 @@
  13 [-]: CALL      R2 1 0       ; R2,... := R2()
  14 [-]: CALL      R0 0 1       ; R0(R1,...)
  15 [-]: GETGLOBAL R0 K4        ; R0 := 0x5bced4c4
- 16 [-]: GETTABLE  R0 R0 K5     ; R82 := R0[0x3eda26fc]
+ 16 [-]: GETTABLE  R0 R0 K5     ; R0 := R0[0x3eda26fc]
  17 [-]: GETGLOBAL R1 K6        ; R1 := 0x55156ff7
  18 [-]: CALL      R1 1 2       ; R1 := R1()
  19 [-]: MUL       R1 R1 K7     ; R1 := R1 * 0.600000
@@ -714,7 +714,7 @@
   4 [-]: EQ        0 R0 K3      ; if R0 ~= 0.000000 then PC := 22
   5 [-]: JMP       22           ; PC := 22
   6 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  7 [-]: GETTABLE  R0 R0 K4     ; R82 := R0[0x49f30025]
+  7 [-]: GETTABLE  R0 R0 K4     ; R0 := R0[0x49f30025]
   8 [-]: GETGLOBAL R1 K0        ; R1 := 0xae91e43b
   9 [-]: CALL      R0 2 3       ; R0,R1 := R0(R1)
  10 [-]: GETGLOBAL R2 K0        ; R2 := 0xae91e43b
@@ -793,9 +793,9 @@
  83 [-]: LOADK     R5 K30       ; R5 := "Alignment.MetalFrame.getDepth"
  84 [-]: CALL      R3 3 0       ; R3,... := R3(R4,R5)
  85 [-]: CALL      R2 0 2       ; R2 := R2(R3,...)
- 86 [-]: SETUPVAL  R2 U3        ; U82 := 
+ 86 [-]: SETUPVAL  R2 U3        ; U82 := R3
  87 [-]: GETUPVAL  R2 U3        ; R2 := U3
- 88 [-]: SETUPVAL  R2 U4        ; U82 := 
+ 88 [-]: SETUPVAL  R2 U4        ; U82 := R4
  89 [-]: GETGLOBAL R2 K0        ; R2 := 0xae91e43b
  90 [-]: SELF      R2 R2 K31    ; R3 := R2; R2 := R2[0xef99134f]
  91 [-]: LOADK     R4 K32       ; R4 := "Alignment.MetalFrame"
@@ -819,7 +819,7 @@
 109 [-]: GETUPVAL  R2 U6        ; R2 := U6
 110 [-]: CALL      R2 1 1       ; R2()
 111 [-]: LOADBOOL  R2 1 0       ; R2 := true
-112 [-]: SETUPVAL  R2 U7        ; U82 := 
+112 [-]: SETUPVAL  R2 U7        ; U82 := R7
 113 [-]: GETGLOBAL R2 K0        ; R2 := 0xae91e43b
 114 [-]: SELF      R2 R2 K36    ; R3 := R2; R2 := R2[0x58bec6d6]
 115 [-]: LOADK     R4 0         ; R4 := 0.000000
@@ -854,7 +854,7 @@
   2 [-]: JMP       4            ; PC := 4
   3 [-]: LOADBOOL  R1 0 1       ; R1 := false; PC := 4
   4 [-]: LOADBOOL  R1 1 0       ; R1 := true
-  5 [-]: SETUPVAL  R1 U0        ; U82 := 
+  5 [-]: SETUPVAL  R1 U0        ; U82 := R0
   6 [-]: GETUPVAL  R1 U1        ; R1 := U1
   7 [-]: CALL      R1 1 1       ; R1()
   8 [-]: RETURN    R0 1         ; return 

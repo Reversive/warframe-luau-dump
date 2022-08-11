@@ -174,7 +174,7 @@
  61 [-]: LOADK     R13 K16      ; R13 := "/Lotus/Sounds/Gameplay/Photobooth/PhotoboothFreeCameraMusicSeq"
  62 [-]: CALL      R12 2 2      ; R12 := R12(R13)
  63 [-]: GETUPVAL  R13 U1       ; R13 := U1
- 64 [-]: GETTABLE  R13 R13 K17  ; R82 := R13[0xe1bf264f]
+ 64 [-]: GETTABLE  R13 R13 K17  ; R13 := R13[0xe1bf264f]
  65 [-]: MOVE      R14 R9       ; R14 := R9
  66 [-]: MOVE      R15 R5       ; R15 := R5
  67 [-]: MOVE      R16 R6       ; R16 := R6
@@ -183,7 +183,7 @@
  70 [-]: MOVE      R19 R11      ; R19 := R11
  71 [-]: MOVE      R20 R12      ; R20 := R12
  72 [-]: CALL      R13 8 2      ; R13 := R13(R14,R15,R16,R17,R18,R19,R20)
- 73 [-]: SETUPVAL  R13 U0       ; U82 := 
+ 73 [-]: SETUPVAL  R13 U0       ; U82 := R0
  74 [-]: GETUPVAL  R13 U0       ; R13 := U0
  75 [-]: SELF      R13 R13 K18  ; R14 := R13; R13 := R13[0xbcd25023]
  76 [-]: MOVE      R15 R2       ; R15 := R2
@@ -209,7 +209,7 @@
  96 [-]: MOVE      R15 R2       ; R15 := R2
  97 [-]: CALL      R13 3 1      ; R13(R14,R15)
  98 [-]: LOADNIL   R13 R13      ; R13 := nil
- 99 [-]: SETUPVAL  R13 U0       ; U82 := 
+ 99 [-]: SETUPVAL  R13 U0       ; U82 := R0
 100 [-]: JMP       112          ; PC := 112
 101 [-]: GETGLOBAL R13 K2       ; R13 := 0x7b998233
 102 [-]: GETUPVAL  R14 U0       ; R14 := U0
@@ -221,7 +221,7 @@
 108 [-]: MOVE      R15 R2       ; R15 := R2
 109 [-]: CALL      R13 3 1      ; R13(R14,R15)
 110 [-]: LOADNIL   R13 R13      ; R13 := nil
-111 [-]: SETUPVAL  R13 U0       ; U82 := 
+111 [-]: SETUPVAL  R13 U0       ; U82 := R0
 112 [-]: RETURN    R0 1         ; return 
 
 

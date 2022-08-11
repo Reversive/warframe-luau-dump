@@ -50,7 +50,7 @@
  10 [-]: JMP       17           ; PC := 17
  11 [-]: MUL       R8 R7 R1     ; R8 := R7 * R1
  12 [-]: GETGLOBAL R9 K5        ; R9 := 0x33bdd652
- 13 [-]: GETTABLE  R9 R9 K6     ; R82 := R9[0x23d5322f]
+ 13 [-]: GETTABLE  R9 R9 K6     ; R9 := R9[0x23d5322f]
  14 [-]: MOVE      R10 R2       ; R10 := R2
  15 [-]: MOVE      R11 R8       ; R11 := R8
  16 [-]: CALL      R9 3 1       ; R9(R10,R11)
@@ -82,7 +82,7 @@
  42 [-]: MOVE      R25 R20      ; R25 := R20
  43 [-]: CALL      R21 5 1      ; R21(R22,R23,R24,R25)
  44 [-]: GETGLOBAL R21 K5       ; R21 := 0x33bdd652
- 45 [-]: GETTABLE  R21 R21 K12  ; R82 := R21[0x9c1f3b5a]
+ 45 [-]: GETTABLE  R21 R21 K12  ; R21 := R21[0x9c1f3b5a]
  46 [-]: MOVE      R22 R0       ; R22 := R0
  47 [-]: MOVE      R23 R17      ; R23 := R17
  48 [-]: CALL      R21 3 1      ; R21(R22,R23)
@@ -128,7 +128,7 @@
 
   1 [-]: LOADK     R2 0         ; R2 := 0.500000
   2 [-]: GETGLOBAL R3 K0        ; R3 := 0x5bced4c4
-  3 [-]: GETTABLE  R3 R3 K1     ; R82 := R3[0x3630e649]
+  3 [-]: GETTABLE  R3 R3 K1     ; R3 := R3[0x3630e649]
   4 [-]: CALL      R3 1 2       ; R3 := R3()
   5 [-]: LT        0 R3 R2      ; if R3 >= R2 then PC := 10
   6 [-]: JMP       10           ; PC := 10
@@ -153,7 +153,7 @@
   2 [-]: LOADK     R2 0         ; R2 := 0.000000
   3 [-]: CALL      R1 2 1       ; R1(R2)
   4 [-]: GETGLOBAL R1 K1        ; R1 := 0x5bced4c4
-  5 [-]: GETTABLE  R1 R1 K2     ; R82 := R1[0x3630e649]
+  5 [-]: GETTABLE  R1 R1 K2     ; R1 := R1[0x3630e649]
   6 [-]: CALL      R1 1 2       ; R1 := R1()
   7 [-]: GETGLOBAL R2 K3        ; R2 := 0xd644c2f1
   8 [-]: LOADK     R3 K4        ; R3 := "Deco alive"

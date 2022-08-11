@@ -61,11 +61,11 @@
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x2d0fad09
   2 [-]: LOADK     R1 K1        ; R1 := "EE.Interface.Components.List"
   3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: GETTABLE  R1 R0 K2     ; R82 := R1[0x9383bc56]
+  4 [-]: GETTABLE  R1 R0 K2     ; R1 := R0[0x9383bc56]
   5 [-]: GETGLOBAL R2 K3        ; R2 := 0xae91e43b
   6 [-]: LOADK     R3 K4        ; R3 := "ContextList.Button"
   7 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
-  8 [-]: SETUPVAL  R1 U0        ; U82 := 
+  8 [-]: SETUPVAL  R1 U0        ; U82 := R0
   9 [-]: GETUPVAL  R1 U0        ; R1 := U0
  10 [-]: SETTABLE  R1 K5 K6     ; R1["mForcedVerticalSeparation"] := 32.000000
  11 [-]: GETUPVAL  R1 U0        ; R1 := U0
@@ -120,7 +120,7 @@
   5 [-]: TEST      R2 0         ; if not R2 then PC := 26
   6 [-]: JMP       26           ; PC := 26
   7 [-]: GETUPVAL  R2 U0        ; R2 := U0
-  8 [-]: GETTABLE  R2 R2 K2     ; R82 := R2[0xae6791ba]
+  8 [-]: GETTABLE  R2 R2 K2     ; R2 := R2[0xae6791ba]
   9 [-]: GETGLOBAL R3 K3        ; R3 := 0xae91e43b
  10 [-]: GETTABLE  R4 R0 K4     ; R4 := R0["mClipName"]
  11 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
@@ -141,14 +141,14 @@
  26 [-]: GETTABLE  R2 R0 K10    ; R2 := R0["IsLockedCheck"]
  27 [-]: EQ        1 R2 K11     ; if R2 == nil then PC := 32
  28 [-]: JMP       32           ; PC := 32
- 29 [-]: GETTABLE  R2 R0 K12    ; R82 := R2[0xa8d1afec]
+ 29 [-]: GETTABLE  R2 R0 K12    ; R2 := R0[0xa8d1afec]
  30 [-]: CALL      R2 1 2       ; R2 := R2()
  31 [-]: JMP       34           ; PC := 34
  32 [-]: LOADBOOL  R2 0 1       ; R2 := false; PC := 33
  33 [-]: LOADBOOL  R2 1 0       ; R2 := true
  34 [-]: SETTABLE  R0 K13 R2    ; R0["Locked"] := R2
  35 [-]: GETUPVAL  R3 U3        ; R3 := U3
- 36 [-]: GETTABLE  R3 R3 K15    ; R82 := R3[0x06d055f9]
+ 36 [-]: GETTABLE  R3 R3 K15    ; R3 := R3[0x06d055f9]
  37 [-]: MOVE      R4 R2        ; R4 := R2
  38 [-]: GETGLOBAL R5 K3        ; R5 := 0xae91e43b
  39 [-]: SELF      R5 R5 K16    ; R6 := R5; R5 := R5[0x42b04007]
@@ -222,7 +222,7 @@
  13 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  14 [-]: TEST      R2 1         ; if R2 then PC := 20
  15 [-]: JMP       20           ; PC := 20
- 16 [-]: GETTABLE  R2 R0 K4     ; R82 := R2[0xa156b732]
+ 16 [-]: GETTABLE  R2 R0 K4     ; R2 := R0[0xa156b732]
  17 [-]: CALL      R2 1 2       ; R2 := R2()
  18 [-]: TEST      R2 0         ; if not R2 then PC := 56
  19 [-]: JMP       56           ; PC := 56
@@ -242,7 +242,7 @@
  33 [-]: EQ        1 R4 K8      ; if R4 == nil then PC := 56
  34 [-]: JMP       56           ; PC := 56
  35 [-]: GETUPVAL  R5 U0        ; R5 := U0
- 36 [-]: GETTABLE  R5 R5 K9     ; R82 := R5[0xfc3fed1f]
+ 36 [-]: GETTABLE  R5 R5 K9     ; R5 := R5[0xfc3fed1f]
  37 [-]: GETGLOBAL R6 K5        ; R6 := 0xae91e43b
  38 [-]: MOVE      R7 R2        ; R7 := R2
  39 [-]: GETTABLE  R8 R0 K10    ; R8 := R0["mWidth"]
@@ -280,7 +280,7 @@
   4 [-]: GETTABLE  R1 R0 K2     ; R1 := R0["Locked"]
   5 [-]: TEST      R1 1         ; if R1 then PC := 9
   6 [-]: JMP       9            ; PC := 9
-  7 [-]: GETTABLE  R1 R0 K3     ; R82 := R1[0x3a813ce0]
+  7 [-]: GETTABLE  R1 R0 K3     ; R1 := R0[0x3a813ce0]
   8 [-]: CALL      R1 1 1       ; R1()
   9 [-]: RETURN    R0 1         ; return 
 
@@ -327,7 +327,7 @@
  10 [-]: JMP       14           ; PC := 14
  11 [-]: GETTABLE  R1 R0 K1     ; R1 := R0["mButton"]
  12 [-]: GETTABLE  R1 R1 K2     ; R1 := R1["mWidth"]
- 13 [-]: SETUPVAL  R1 U0        ; U82 := 
+ 13 [-]: SETUPVAL  R1 U0        ; U82 := R0
  14 [-]: RETURN    R0 1         ; return 
 
 
@@ -370,7 +370,7 @@
   7 [-]: GETUPVAL  R1 U0        ; R1 := U0
   8 [-]: GETTABLE  R1 R1 K1     ; R1 := R1["Rect"]
   9 [-]: GETUPVAL  R2 U1        ; R2 := U1
- 10 [-]: GETTABLE  R2 R2 K2     ; R82 := R2[0xee122c82]
+ 10 [-]: GETTABLE  R2 R2 K2     ; R2 := R2[0xee122c82]
  11 [-]: GETGLOBAL R3 K3        ; R3 := 0xae91e43b
  12 [-]: NEWTABLE  R4 0 2       ; R4 := {}
  13 [-]: GETTABLE  R5 R1 K5     ; R5 := R1["X"]
@@ -406,7 +406,7 @@
  43 [-]: LOADK     R9 K14       ; R9 := "ContextList"
  44 [-]: LOADK     R10 0        ; R10 := 0.000000
  45 [-]: GETGLOBAL R11 K15      ; R11 := 0x5bced4c4
- 46 [-]: GETTABLE  R11 R11 K16  ; R82 := R11[0x99675e23]
+ 46 [-]: GETTABLE  R11 R11 K16  ; R11 := R11[0x99675e23]
  47 [-]: MOVE      R12 R5       ; R12 := R5
  48 [-]: CALL      R11 2 0      ; R11,... := R11(R12)
  49 [-]: CALL      R7 0 1       ; R7(R8,...)
@@ -415,7 +415,7 @@
  52 [-]: LOADK     R9 K14       ; R9 := "ContextList"
  53 [-]: LOADK     R10 1        ; R10 := 1.000000
  54 [-]: GETGLOBAL R11 K15      ; R11 := 0x5bced4c4
- 55 [-]: GETTABLE  R11 R11 K16  ; R82 := R11[0x99675e23]
+ 55 [-]: GETTABLE  R11 R11 K16  ; R11 := R11[0x99675e23]
  56 [-]: MOVE      R12 R6       ; R12 := R6
  57 [-]: CALL      R11 2 0      ; R11,... := R11(R12)
  58 [-]: CALL      R7 0 1       ; R7(R8,...)
@@ -441,7 +441,7 @@
   8 [-]: CALL      R5 2 2       ; R5 := R5(R6)
   9 [-]: TEST      R5 1         ; if R5 then PC := 15
  10 [-]: JMP       15           ; PC := 15
- 11 [-]: GETTABLE  R5 R4 K4     ; R82 := R5[0x061e5391]
+ 11 [-]: GETTABLE  R5 R4 K4     ; R5 := R4[0x061e5391]
  12 [-]: CALL      R5 1 2       ; R5 := R5()
  13 [-]: TEST      R5 1         ; if R5 then PC := 20
  14 [-]: JMP       20           ; PC := 20
@@ -535,7 +535,7 @@
  35 [-]: GETTABLE  R2 R1 K8     ; R2 := R1["Refresh"]
  36 [-]: TEST      R2 0         ; if not R2 then PC := 83
  37 [-]: JMP       83           ; PC := 83
- 38 [-]: SETUPVAL  R1 U1        ; U82 := 
+ 38 [-]: SETUPVAL  R1 U1        ; U82 := R1
  39 [-]: GETUPVAL  R2 U1        ; R2 := U1
  40 [-]: EQ        0 R2 K7      ; if R2 ~= nil then PC := 43
  41 [-]: JMP       43           ; PC := 43

@@ -135,7 +135,7 @@
  88 [-]: CALL      R12 4 2      ; R12 := R12(R13,R14,R15)
  89 [-]: GETGLOBAL R13 K24      ; R13 := 0x00046924
  90 [-]: GETGLOBAL R14 K25      ; R14 := 0x5bced4c4
- 91 [-]: GETTABLE  R14 R14 K26  ; R82 := R14[0x3630e649]
+ 91 [-]: GETTABLE  R14 R14 K26  ; R14 := R14[0x3630e649]
  92 [-]: CALL      R14 1 2      ; R14 := R14()
  93 [-]: MUL       R14 R14 K27  ; R14 := R14 * 360.000000
  94 [-]: LOADK     R15 0        ; R15 := 0.000000
@@ -143,7 +143,7 @@
  96 [-]: CALL      R13 4 0      ; R13,... := R13(R14,R15,R16)
  97 [-]: CALL      R11 0 2      ; R11 := R11(R12,...)
  98 [-]: GETGLOBAL R12 K25      ; R12 := 0x5bced4c4
- 99 [-]: GETTABLE  R12 R12 K26  ; R82 := R12[0x3630e649]
+ 99 [-]: GETTABLE  R12 R12 K26  ; R12 := R12[0x3630e649]
 100 [-]: CALL      R12 1 2      ; R12 := R12()
 101 [-]: MUL       R12 R11 R12  ; R12 := R11 * R12
 102 [-]: GETGLOBAL R13 K28      ; R13 := 0x8d319efc
@@ -228,7 +228,7 @@
 ; Max Stack Size:  5
 
   1 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  2 [-]: GETTABLE  R1 R1 K0     ; R82 := R1[0x3bc64ac2]
+  2 [-]: GETTABLE  R1 R1 K0     ; R1 := R1[0x3bc64ac2]
   3 [-]: GETGLOBAL R2 K1        ; R2 := 0x6687f6e0
   4 [-]: LOADK     R3 K2        ; R3 := 0.100000
   5 [-]: LOADK     R4 2         ; R4 := 2.000000
@@ -284,7 +284,7 @@
  19 [-]: JMP       6            ; PC := 6
  20 [-]: GETGLOBAL R3 K0        ; R3 := 0x1b329dc4
  21 [-]: GETGLOBAL R4 K5        ; R4 := 0x5bced4c4
- 22 [-]: GETTABLE  R4 R4 K6     ; R82 := R4[0x3630e649]
+ 22 [-]: GETTABLE  R4 R4 K6     ; R4 := R4[0x3630e649]
  23 [-]: LOADK     R5 1         ; R5 := 1.000000
  24 [-]: GETGLOBAL R6 K0        ; R6 := 0x1b329dc4
  25 [-]: LEN       R6 R6        ; R6 := # R6
@@ -328,7 +328,7 @@
  63 [-]: TEST      R5 1         ; if R5 then PC := 72
  64 [-]: JMP       72           ; PC := 72
  65 [-]: GETUPVAL  R6 U0        ; R6 := U0
- 66 [-]: GETTABLE  R6 R6 K23    ; R82 := R6[0xa6943849]
+ 66 [-]: GETTABLE  R6 R6 K23    ; R6 := R6[0xa6943849]
  67 [-]: GETGLOBAL R7 K21       ; R7 := 0x0469f296
  68 [-]: LOADK     R8 K24       ; R8 := "BattleTaunts"
  69 [-]: CALL      R7 2 2       ; R7 := R7(R8)
@@ -402,13 +402,13 @@
  47 [-]: TEST      R9 0         ; if not R9 then PC := 142
  48 [-]: JMP       142          ; PC := 142
  49 [-]: GETGLOBAL R12 K16      ; R12 := 0x5bced4c4
- 50 [-]: GETTABLE  R12 R12 K17  ; R82 := R12[0xac1b386a]
+ 50 [-]: GETTABLE  R12 R12 K17  ; R12 := R12[0xac1b386a]
  51 [-]: GETTABLE  R13 R8 K15   ; R13 := R8["maxValue"]
  52 [-]: GETGLOBAL R14 K18      ; R14 := 0x1f7f9037
  53 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
  54 [-]: SETTABLE  R8 K15 R12   ; R8["maxValue"] := R12
  55 [-]: GETGLOBAL R12 K16      ; R12 := 0x5bced4c4
- 56 [-]: GETTABLE  R12 R12 K17  ; R82 := R12[0xac1b386a]
+ 56 [-]: GETTABLE  R12 R12 K17  ; R12 := R12[0xac1b386a]
  57 [-]: GETTABLE  R13 R8 K8    ; R13 := R8["minValue"]
  58 [-]: GETTABLE  R14 R8 K15   ; R14 := R8["maxValue"]
  59 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)

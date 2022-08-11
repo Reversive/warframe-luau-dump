@@ -1223,7 +1223,7 @@
  29 [-]: GETGLOBAL R2 K2        ; R2 := 0x89326c93
  30 [-]: SELF      R2 R2 K11    ; R3 := R2; R2 := R2[0x8b5b1f58]
  31 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 32 [-]: SETTABLE  R1 K8 R2     ; R1["players"] := R2
+ 32 [-]: SETTABLE  R1 K8 R2     ; R1[0x89326c93] := R2
  33 [-]: JMP       52           ; PC := 52
  34 [-]: GETGLOBAL R1 K12       ; R1 := 0xc8802016
  35 [-]: GETUPVAL  R2 U0        ; R2 := U0
@@ -1239,12 +1239,12 @@
  45 [-]: GETGLOBAL R7 K2        ; R7 := 0x89326c93
  46 [-]: SELF      R7 R7 K11    ; R8 := R7; R7 := R7[0x8b5b1f58]
  47 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 48 [-]: SETTABLE  R6 K8 R7     ; R6["players"] := R7
+ 48 [-]: SETTABLE  R6 K8 R7     ; R6[0x89326c93] := R7
  49 [-]: JMP       52           ; PC := 52
  50 [-]: TFORLOOP  R1 2         ; R4,R5 :=  R1(R2,R3); if R4 ~= nil then begin PC = 39; R3 := R4 end
  51 [-]: JMP       39           ; PC := 39
  52 [-]: GETUPVAL  R6 U0        ; R6 := U0
- 53 [-]: SETTABLE  R6 K10 R0    ; R6["numPlayers"] := R0
+ 53 [-]: SETTABLE  R6 K10 R0    ; R6[0x0469f296] := R0
  54 [-]: RETURN    R0 1         ; return 
 
 
@@ -1264,7 +1264,7 @@
   5 [-]: SETTABLE  R2 K4 K5     ; R2["min"] := 0.100000
   6 [-]: SETTABLE  R2 K6 K7     ; R2["max"] := 0.250000
   7 [-]: SETTABLE  R2 K8 K7     ; R2["initialSpawnChance"] := 0.250000
-  8 [-]: SETTABLE  R1 K3 R2     ; R1["activeValue"] := R2
+  8 [-]: SETTABLE  R1 K3 R2     ; R1[0x7b998233] := R2
   9 [-]: SETTABLE  R1 K9 K10    ; R1["state"] := nil
  10 [-]: SETTABLE  R0 K0 R1     ; R0["eximusWave"] := R1
  11 [-]: NEWTABLE  R1 0 3       ; R1 := {}
@@ -5921,7 +5921,7 @@
 117 [-]: GETUPVAL  R2 U3        ; R2 := U3
 118 [-]: GETTABLE  R2 R2 K34    ; R82 := R2[0x7e1c98b2]
 119 [-]: CALL      R2 1 2       ; R2 := R2()
-120 [-]: SETTABLE  R1 K33 R2    ; R1[0x7b998233] := R2
+120 [-]: SETTABLE  R1 K33 R2    ; R1["exit"] := R2
 121 [-]: GETGLOBAL R1 K35       ; R1 := 0x7b998233
 122 [-]: GETUPVAL  R2 U10       ; R2 := U10
 123 [-]: GETTABLE  R2 R2 K21    ; R2 := R2["info"]

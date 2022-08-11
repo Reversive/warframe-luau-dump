@@ -94,7 +94,7 @@
  22 [-]: TEST      R8 0         ; if not R8 then PC := 29
  23 [-]: JMP       29           ; PC := 29
  24 [-]: GETGLOBAL R8 K3        ; R8 := 0x33bdd652
- 25 [-]: GETTABLE  R8 R8 K4     ; R82 := R8[0x23d5322f]
+ 25 [-]: GETTABLE  R8 R8 K4     ; R8 := R8[0x23d5322f]
  26 [-]: MOVE      R9 R2        ; R9 := R2
  27 [-]: GETTABLE  R10 R3 R7    ; R10 := R3[R7]
  28 [-]: CALL      R8 3 1       ; R8(R9,R10)
@@ -365,7 +365,7 @@
 
   1 [-]: LOADK     R1 K0        ; R1 := "<font color=\"#"
   2 [-]: GETGLOBAL R2 K1        ; R2 := 0x7f5022cf
-  3 [-]: GETTABLE  R2 R2 K2     ; R82 := R2[0xe8072ded]
+  3 [-]: GETTABLE  R2 R2 K2     ; R2 := R2[0xe8072ded]
   4 [-]: LOADK     R3 K3        ; R3 := "%X"
   5 [-]: MOVE      R4 R0        ; R4 := R0
   6 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
@@ -427,7 +427,7 @@
 ; Max Stack Size:  4
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := _T
-  2 [-]: GETTABLE  R1 R1 K1     ; R82 := R1[0x1a41a3c1]
+  2 [-]: GETTABLE  R1 R1 K1     ; R1 := R1[0x1a41a3c1]
   3 [-]: LOADK     R2 K2        ; R2 := "QuestObjective"
   4 [-]: CALL      R1 2 1       ; R1(R2)
   5 [-]: SELF      R1 R0 K3     ; R2 := R0; R1 := R0[0xfe9dc265]
@@ -646,7 +646,7 @@
  29 [-]: EQ        0 R17 R18    ; if R17 ~= R18 then PC := 36
  30 [-]: JMP       36           ; PC := 36
  31 [-]: GETGLOBAL R17 K11      ; R17 := 0x33bdd652
- 32 [-]: GETTABLE  R17 R17 K12  ; R82 := R17[0x23d5322f]
+ 32 [-]: GETTABLE  R17 R17 K12  ; R17 := R17[0x23d5322f]
  33 [-]: MOVE      R18 R11      ; R18 := R11
  34 [-]: MOVE      R19 R16      ; R19 := R16
  35 [-]: CALL      R17 3 1      ; R17(R18,R19)
@@ -684,7 +684,7 @@
  67 [-]: CALL      R24 0 2      ; R24 := R24(R25,...)
  68 [-]: MOVE      R22 R24      ; R22 := R24
  69 [-]: GETGLOBAL R24 K11      ; R24 := 0x33bdd652
- 70 [-]: GETTABLE  R24 R24 K20  ; R82 := R24[0x9c1f3b5a]
+ 70 [-]: GETTABLE  R24 R24 K20  ; R24 := R24[0x9c1f3b5a]
  71 [-]: MOVE      R25 R11      ; R25 := R11
  72 [-]: MOVE      R26 R23      ; R26 := R23
  73 [-]: CALL      R24 3 1      ; R24(R25,R26)

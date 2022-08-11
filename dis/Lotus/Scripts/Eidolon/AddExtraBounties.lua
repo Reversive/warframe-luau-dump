@@ -230,7 +230,7 @@
 148 [-]: CALL      R13 1 2      ; R13 := R13()
 149 [-]: MOVE      R2 R13       ; R2 := R13
 150 [-]: GETGLOBAL R13 K22      ; R13 := 0x7f5022cf
-151 [-]: GETTABLE  R13 R13 K23  ; R82 := R13[0xe8072ded]
+151 [-]: GETTABLE  R13 R13 K23  ; R13 := R13[0xe8072ded]
 152 [-]: LOADK     R14 K24      ; R14 := "%u"
 153 [-]: GETGLOBAL R15 K25      ; R15 := 0xbe190284
 154 [-]: SELF      R15 R15 K26  ; R16 := R15; R15 := R15[0x67b221fa]
@@ -286,7 +286,7 @@
 204 [-]: LOADK     R25 1        ; R25 := 1.000000
 205 [-]: FORPREP   R23 229      ; R23 -= R25; PC := 229
 206 [-]: GETGLOBAL R27 K40      ; R27 := 0x33bdd652
-207 [-]: GETTABLE  R27 R27 K41  ; R82 := R27[0x23d5322f]
+207 [-]: GETTABLE  R27 R27 K41  ; R27 := R27[0x23d5322f]
 208 [-]: MOVE      R28 R21      ; R28 := R21
 209 [-]: GETTABLE  R29 R20 R26  ; R29 := R20[R26]
 210 [-]: GETTABLE  R29 R29 K42  ; R29 := R29["encounterChoices"]
@@ -296,7 +296,7 @@
 214 [-]: EQ        0 R26 R27    ; if R26 ~= R27 then PC := 224
 215 [-]: JMP       224          ; PC := 224
 216 [-]: GETGLOBAL R27 K40      ; R27 := 0x33bdd652
-217 [-]: GETTABLE  R27 R27 K41  ; R82 := R27[0x23d5322f]
+217 [-]: GETTABLE  R27 R27 K41  ; R27 := R27[0x23d5322f]
 218 [-]: MOVE      R28 R22      ; R28 := R22
 219 [-]: GETTABLE  R29 R14 R18  ; R29 := R14[R18]
 220 [-]: GETTABLE  R29 R29 K43  ; R29 := R29["xpAmount"]
@@ -304,13 +304,13 @@
 222 [-]: CALL      R27 3 1      ; R27(R28,R29)
 223 [-]: JMP       229          ; PC := 229
 224 [-]: GETGLOBAL R27 K40      ; R27 := 0x33bdd652
-225 [-]: GETTABLE  R27 R27 K41  ; R82 := R27[0x23d5322f]
+225 [-]: GETTABLE  R27 R27 K41  ; R27 := R27[0x23d5322f]
 226 [-]: MOVE      R28 R22      ; R28 := R22
 227 [-]: LOADK     R29 0        ; R29 := 0.000000
 228 [-]: CALL      R27 3 1      ; R27(R28,R29)
 229 [-]: FORLOOP   R23 206      ; R23 += R25; if R23 <= R24 then begin PC := 206; R26 := R23 end
 230 [-]: GETGLOBAL R27 K40      ; R27 := 0x33bdd652
-231 [-]: GETTABLE  R27 R27 K41  ; R82 := R27[0x23d5322f]
+231 [-]: GETTABLE  R27 R27 K41  ; R27 := R27[0x23d5322f]
 232 [-]: MOVE      R28 R13      ; R28 := R13
 233 [-]: NEWTABLE  R29 0 12     ; R29 := {}
 234 [-]: SELF      R30 R19 K46  ; R31 := R19; R30 := R19[0xed4e0128]

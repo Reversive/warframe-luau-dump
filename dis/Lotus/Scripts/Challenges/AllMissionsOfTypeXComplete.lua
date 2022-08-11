@@ -26,7 +26,7 @@
 ; Max Stack Size:  19
 
   1 [-]: GETUPVAL  R5 U0        ; R5 := U0
-  2 [-]: GETTABLE  R5 R5 K0     ; R82 := R5[0x5e35d4d6]
+  2 [-]: GETTABLE  R5 R5 K0     ; R5 := R5[0x5e35d4d6]
   3 [-]: CALL      R5 1 2       ; R5 := R5()
   4 [-]: SELF      R6 R5 K1     ; R7 := R5; R6 := R5[0xd13b47be]
   5 [-]: CALL      R6 2 2       ; R6 := R6(R7)

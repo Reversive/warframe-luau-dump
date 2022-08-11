@@ -100,12 +100,12 @@
  64 [-]: TEST      R7 1         ; if R7 then PC := 71
  65 [-]: JMP       71           ; PC := 71
  66 [-]: GETUPVAL  R7 U0        ; R7 := U0
- 67 [-]: GETTABLE  R7 R7 K12    ; R82 := R7[0xfe0d9469]
+ 67 [-]: GETTABLE  R7 R7 K12    ; R7 := R7[0xfe0d9469]
  68 [-]: MOVE      R8 R6        ; R8 := R6
  69 [-]: LOADBOOL  R9 1 0       ; R9 := true
  70 [-]: CALL      R7 3 1       ; R7(R8,R9)
  71 [-]: GETUPVAL  R7 U1        ; R7 := U1
- 72 [-]: GETTABLE  R7 R7 K13    ; R82 := R7[0xf22cfc77]
+ 72 [-]: GETTABLE  R7 R7 K13    ; R7 := R7[0xf22cfc77]
  73 [-]: MOVE      R8 R5        ; R8 := R5
  74 [-]: GETGLOBAL R9 K14       ; R9 := 0x0469f296
  75 [-]: LOADK     R10 K15      ; R10 := "PlayerKilled"

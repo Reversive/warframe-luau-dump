@@ -34,7 +34,7 @@
   3 [-]: LOADK     R2 0         ; R2 := 0.000000
   4 [-]: POW       R2 K0 R2     ; R2 := 10.000000 ^ R2
   5 [-]: GETGLOBAL R3 K1        ; R3 := 0x5bced4c4
-  6 [-]: GETTABLE  R3 R3 K2     ; R82 := R3[0x55f27c30]
+  6 [-]: GETTABLE  R3 R3 K2     ; R3 := R3[0x55f27c30]
   7 [-]: MUL       R4 R0 R2     ; R4 := R0 * R2
   8 [-]: ADD       R4 R4 K3     ; R4 := R4 + 0.500000
   9 [-]: CALL      R3 2 2       ; R3 := R3(R4)
@@ -262,7 +262,7 @@
 107 [-]: CALL      R20 3 2      ; R20 := R20(R21,R22)
 108 [-]: LEN       R21 R20      ; R21 := # R20
 109 [-]: GETGLOBAL R22 K25      ; R22 := 0x5bced4c4
-110 [-]: GETTABLE  R22 R22 K26  ; R82 := R22[0x55f27c30]
+110 [-]: GETTABLE  R22 R22 K26  ; R22 := R22[0x55f27c30]
 111 [-]: DIV       R23 R9 K27   ; R23 := R9 / 2.000000
 112 [-]: CALL      R22 2 2      ; R22 := R22(R23)
 113 [-]: LE        0 R22 R21    ; if R22 > R21 then PC := 130
@@ -543,7 +543,7 @@
  77 [-]: LT        0 K23 R6     ; if 1.000000 >= R6 then PC := 93
  78 [-]: JMP       93           ; PC := 93
  79 [-]: GETGLOBAL R9 K24       ; R9 := 0x5bced4c4
- 80 [-]: GETTABLE  R9 R9 K25    ; R82 := R9[0x71e5d13c]
+ 80 [-]: GETTABLE  R9 R9 K25    ; R9 := R9[0x71e5d13c]
  81 [-]: MOVE      R10 R6       ; R10 := R6
  82 [-]: LOADK     R11 1        ; R11 := 1.000000
  83 [-]: CALL      R9 3 2       ; R9 := R9(R10,R11)

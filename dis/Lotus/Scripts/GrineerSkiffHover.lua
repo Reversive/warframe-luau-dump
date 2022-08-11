@@ -63,7 +63,7 @@
  40 [-]: SELF      R4 R0 K5     ; R5 := R0; R4 := R0[0xa0dd18b6]
  41 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  42 [-]: GETGLOBAL R5 K7        ; R5 := 0x5bced4c4
- 43 [-]: GETTABLE  R5 R5 K8     ; R82 := R5[0xb62ecfe0]
+ 43 [-]: GETTABLE  R5 R5 K8     ; R5 := R5[0xb62ecfe0]
  44 [-]: GETTABLE  R6 R4 K6     ; R6 := R4["y"]
  45 [-]: LOADK     R7 0         ; R7 := 0.000000
  46 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)

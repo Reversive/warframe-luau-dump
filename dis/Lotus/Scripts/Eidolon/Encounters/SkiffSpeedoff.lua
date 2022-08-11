@@ -92,7 +92,7 @@
  28 [-]: LT        0 K2 R6      ; if 0.000000 >= R6 then PC := 141
  29 [-]: JMP       141          ; PC := 141
  30 [-]: GETUPVAL  R9 U0        ; R9 := U0
- 31 [-]: GETTABLE  R9 R9 K11    ; R82 := R9[0x39f3686f]
+ 31 [-]: GETTABLE  R9 R9 K11    ; R9 := R9[0x39f3686f]
  32 [-]: MOVE      R10 R6       ; R10 := R6
  33 [-]: MOVE      R11 R2       ; R11 := R2
  34 [-]: GETGLOBAL R12 K12      ; R12 := 0xb5cf8b85
@@ -107,7 +107,7 @@
  43 [-]: LOADK     R11 1        ; R11 := 1.000000
  44 [-]: FORPREP   R9 82        ; R9 -= R11; PC := 82
  45 [-]: GETUPVAL  R13 U1       ; R13 := U1
- 46 [-]: GETTABLE  R13 R13 K13  ; R82 := R13[0x06d055f9]
+ 46 [-]: GETTABLE  R13 R13 K13  ; R13 := R13[0x06d055f9]
  47 [-]: GETGLOBAL R14 K14      ; R14 := 0x9224ed40
  48 [-]: TEST      R14 0        ; if not R14 then PC := 54
  49 [-]: JMP       54           ; PC := 54
@@ -145,7 +145,7 @@
  81 [-]: CALL      R18 3 1      ; R18(R19,R20)
  82 [-]: FORLOOP   R9 45        ; R9 += R11; if R9 <= R10 then begin PC := 45; R12 := R9 end
  83 [-]: GETUPVAL  R18 U0       ; R18 := U0
- 84 [-]: GETTABLE  R18 R18 K11  ; R82 := R18[0x39f3686f]
+ 84 [-]: GETTABLE  R18 R18 K11  ; R18 := R18[0x39f3686f]
  85 [-]: MOVE      R19 R6       ; R19 := R6
  86 [-]: MOVE      R20 R2       ; R20 := R2
  87 [-]: GETGLOBAL R21 K22      ; R21 := 0xfb7e8590

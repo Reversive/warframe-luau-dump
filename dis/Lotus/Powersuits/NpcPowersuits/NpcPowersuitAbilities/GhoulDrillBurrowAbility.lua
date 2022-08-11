@@ -458,7 +458,7 @@
  95 [-]: CALL      R11 2 1      ; R11(R12)
  96 [-]: GETGLOBAL R11 K20      ; R11 := 0x0ceb0825
  97 [-]: GETGLOBAL R12 K21      ; R12 := 0x5bced4c4
- 98 [-]: GETTABLE  R12 R12 K22  ; R82 := R12[0x3630e649]
+ 98 [-]: GETTABLE  R12 R12 K22  ; R12 := R12[0x3630e649]
  99 [-]: CALL      R12 1 2      ; R12 := R12()
 100 [-]: LE        0 R12 K23    ; if R12 > 0.200000 then PC := 103
 101 [-]: JMP       103          ; PC := 103

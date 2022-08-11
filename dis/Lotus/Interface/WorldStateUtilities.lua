@@ -92,7 +92,7 @@
  31 [-]: SETTABLE  R3 K3 R4     ; R3[0x1a94c9cc] := R4
  32 [-]: GETGLOBAL R3 K2        ; R3 := _T
  33 [-]: GETGLOBAL R4 K9        ; R4 := cjson
- 34 [-]: GETTABLE  R4 R4 K10    ; R82 := R4[0x7ab914d8]
+ 34 [-]: GETTABLE  R4 R4 K10    ; R4 := R4[0x7ab914d8]
  35 [-]: GETGLOBAL R5 K2        ; R5 := _T
  36 [-]: GETTABLE  R5 R5 K3     ; R5 := R5["SeasonParamString"]
  37 [-]: CALL      R4 2 2       ; R4 := R4(R5)
@@ -154,7 +154,7 @@
  29 [-]: SETTABLE  R3 K3 R4     ; R3["WorldStateOverrideString"] := R4
  30 [-]: GETGLOBAL R3 K2        ; R3 := _T
  31 [-]: GETGLOBAL R4 K8        ; R4 := cjson
- 32 [-]: GETTABLE  R4 R4 K9     ; R82 := R4[0x7ab914d8]
+ 32 [-]: GETTABLE  R4 R4 K9     ; R4 := R4[0x7ab914d8]
  33 [-]: GETGLOBAL R5 K2        ; R5 := _T
  34 [-]: GETTABLE  R5 R5 K3     ; R5 := R5["WorldStateOverrideString"]
  35 [-]: CALL      R4 2 2       ; R4 := R4(R5)
@@ -225,10 +225,10 @@
  20 [-]: GETTABLE  R3 R3 K8     ; R3 := R3["location"]
  21 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  22 [-]: GETGLOBAL R3 K9        ; R3 := 0x7f5022cf
- 23 [-]: GETTABLE  R3 R3 K10    ; R82 := R3[0x1a94c9cc]
+ 23 [-]: GETTABLE  R3 R3 K10    ; R3 := R3[0x1a94c9cc]
  24 [-]: MOVE      R4 R2        ; R4 := R2
  25 [-]: GETGLOBAL R5 K9        ; R5 := 0x7f5022cf
- 26 [-]: GETTABLE  R5 R5 K11    ; R82 := R5[0x41e2ae25]
+ 26 [-]: GETTABLE  R5 R5 K11    ; R5 := R5[0x41e2ae25]
  27 [-]: MOVE      R6 R2        ; R6 := R2
  28 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  29 [-]: SUB       R5 R5 K12    ; R5 := R5 - 2.000000
@@ -268,7 +268,7 @@
   9 [-]: SELF      R2 R2 K2     ; R3 := R2; R2 := R2[0xbc93edaa]
  10 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  11 [-]: GETUPVAL  R3 U0        ; R3 := U0
- 12 [-]: GETTABLE  R3 R3 K3     ; R82 := R3[0x5e35d4d6]
+ 12 [-]: GETTABLE  R3 R3 K3     ; R3 := R3[0x5e35d4d6]
  13 [-]: CALL      R3 1 2       ; R3 := R3()
  14 [-]: GETGLOBAL R4 K0        ; R4 := 0x7b998233
  15 [-]: MOVE      R5 R3        ; R5 := R3
@@ -300,7 +300,7 @@
  41 [-]: JMP       166          ; PC := 166
  42 [-]: GETTABLE  R11 R10 K15  ; R11 := R10["name"]
  43 [-]: GETUPVAL  R12 U0       ; R12 := U0
- 44 [-]: GETTABLE  R12 R12 K16  ; R82 := R12[0xdebdf69b]
+ 44 [-]: GETTABLE  R12 R12 K16  ; R12 := R12[0xdebdf69b]
  45 [-]: MOVE      R13 R3       ; R13 := R3
  46 [-]: GETGLOBAL R14 K1       ; R14 := 0x25d99d89
  47 [-]: GETTABLE  R15 R9 K10   ; R15 := R9["region"]
@@ -359,7 +359,7 @@
 100 [-]: CALL      R14 2 0      ; R14,... := R14(R15)
 101 [-]: CALL      R13 0 2      ; R13 := R13(R14,...)
 102 [-]: GETGLOBAL R14 K38      ; R14 := 0x33bdd652
-103 [-]: GETTABLE  R14 R14 K39  ; R82 := R14[0x23d5322f]
+103 [-]: GETTABLE  R14 R14 K39  ; R14 := R14[0x23d5322f]
 104 [-]: GETTABLE  R15 R1 R11   ; R15 := R1[R11]
 105 [-]: GETTABLE  R15 R15 K19  ; R15 := R15["SubInvasions"]
 106 [-]: NEWTABLE  R16 0 9      ; R16 := {}
@@ -403,7 +403,7 @@
 144 [-]: GETTABLE  R20 R20 K19  ; R20 := R20["SubInvasions"]
 145 [-]: GETTABLE  R20 R20 R14  ; R20 := R20[R14]
 146 [-]: GETGLOBAL R21 K53      ; R21 := 0x5bced4c4
-147 [-]: GETTABLE  R21 R21 K54  ; R82 := R21[0xe4a5b3ca]
+147 [-]: GETTABLE  R21 R21 K54  ; R21 := R21[0xe4a5b3ca]
 148 [-]: MOVE      R22 R19      ; R22 := R19
 149 [-]: CALL      R21 2 2      ; R21 := R21(R22)
 150 [-]: SETTABLE  R20 K52 R21  ; R20["Delta"] := R21
@@ -535,7 +535,7 @@
  96 [-]: TEST      R11 1        ; if R11 then PC := 107
  97 [-]: JMP       107          ; PC := 107
  98 [-]: GETUPVAL  R11 U0       ; R11 := U0
- 99 [-]: GETTABLE  R11 R11 K24  ; R82 := R11[0x52fb05b3]
+ 99 [-]: GETTABLE  R11 R11 K24  ; R11 := R11[0x52fb05b3]
 100 [-]: GETTABLE  R12 R10 K23  ; R12 := R10["questReq"]
 101 [-]: CALL      R11 2 2      ; R11 := R11(R12)
 102 [-]: TEST      R11 1        ; if R11 then PC := 107
@@ -586,7 +586,7 @@
 ; Max Stack Size:  11
 
   1 [-]: GETUPVAL  R2 U0        ; R2 := U0
-  2 [-]: GETTABLE  R2 R2 K0     ; R82 := R2[0x06d055f9]
+  2 [-]: GETTABLE  R2 R2 K0     ; R2 := R2[0x06d055f9]
   3 [-]: GETTABLE  R3 R1 K1     ; R3 := R1["LocTag"]
   4 [-]: TEST      R3 0         ; if not R3 then PC := 11
   5 [-]: JMP       11           ; PC := 11
@@ -605,7 +605,7 @@
  18 [-]: CALL      R5 2 0       ; R5,... := R5(R6)
  19 [-]: CALL      R2 0 2       ; R2 := R2(R3,...)
  20 [-]: GETGLOBAL R3 K6        ; R3 := 0x7f5022cf
- 21 [-]: GETTABLE  R3 R3 K7     ; R82 := R3[0x3f3e4d12]
+ 21 [-]: GETTABLE  R3 R3 K7     ; R3 := R3[0x3f3e4d12]
  22 [-]: SELF      R4 R0 K8     ; R5 := R0; R4 := R0[0x42b04007]
  23 [-]: GETTABLE  R6 R1 K9     ; R6 := R1["Region"]
  24 [-]: LOADBOOL  R7 0 0       ; R7 := false
@@ -629,13 +629,13 @@
  42 [-]: LOADBOOL  R9 0 0       ; R9 := false
  43 [-]: CALL      R6 4 2       ; R6 := R6(R7,R8,R9)
  44 [-]: GETUPVAL  R7 U2        ; R7 := U2
- 45 [-]: GETTABLE  R7 R7 K16    ; R82 := R7[0x0f164e09]
+ 45 [-]: GETTABLE  R7 R7 K16    ; R7 := R7[0x0f164e09]
  46 [-]: GETUPVAL  R8 U2        ; R8 := U2
  47 [-]: GETTABLE  R8 R8 K17    ; R8 := R8["LABEL_TYPE_UNIQUE_TEXT"]
  48 [-]: MOVE      R9 R6        ; R9 := R6
  49 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
  50 [-]: GETGLOBAL R8 K18       ; R8 := 0x33bdd652
- 51 [-]: GETTABLE  R8 R8 K19    ; R82 := R8[0x23d5322f]
+ 51 [-]: GETTABLE  R8 R8 K19    ; R8 := R8[0x23d5322f]
  52 [-]: MOVE      R9 R5        ; R9 := R5
  53 [-]: MOVE      R10 R7       ; R10 := R7
  54 [-]: CALL      R8 3 1       ; R8(R9,R10)

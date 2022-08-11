@@ -125,7 +125,7 @@
   2 [-]: NEWTABLE  R1 0 0       ; R1 := {}
   3 [-]: SETTABLE  R0 K2 R1     ; R0["mIndicators"] := R1
   4 [-]: GETTABLE  R1 R0 K4     ; R1 := R0["LOTUS_UTIL"]
-  5 [-]: GETTABLE  R1 R1 K5     ; R82 := R1[0xb73d420f]
+  5 [-]: GETTABLE  R1 R1 K5     ; R1 := R1[0xb73d420f]
   6 [-]: CALL      R1 1 2       ; R1 := R1()
   7 [-]: SETTABLE  R0 K3 R1     ; R0["mUIMode"] := R1
   8 [-]: GETTABLE  R1 R0 K6     ; R1 := R0["mInitialX"]
@@ -207,7 +207,7 @@
  84 [-]: CALL      R1 5 1       ; R1(R2,R3,R4,R5)
  85 [-]: LOADK     R1 K29       ; R1 := "Noto Sans"
  86 [-]: GETGLOBAL R2 K30       ; R2 := 0x34291f5c
- 87 [-]: GETTABLE  R2 R2 K31    ; R82 := R2[0xa7a2e381]
+ 87 [-]: GETTABLE  R2 R2 K31    ; R2 := R2[0xa7a2e381]
  88 [-]: CALL      R2 1 2       ; R2 := R2()
  89 [-]: TEST      R2 0         ; if not R2 then PC := 92
  90 [-]: JMP       92           ; PC := 92
@@ -216,7 +216,7 @@
  93 [-]: MOVE      R3 R1        ; R3 := R1
  94 [-]: LOADK     R4 K35       ; R4 := "\" color=\"#"
  95 [-]: GETGLOBAL R5 K36       ; R5 := 0x7f5022cf
- 96 [-]: GETTABLE  R5 R5 K37    ; R82 := R5[0xe8072ded]
+ 96 [-]: GETTABLE  R5 R5 K37    ; R5 := R5[0xe8072ded]
  97 [-]: LOADK     R6 K38       ; R6 := "%X"
  98 [-]: GETTABLE  R7 R0 K25    ; R7 := R0["mHealthColor"]
  99 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
@@ -233,7 +233,7 @@
 110 [-]: MOVE      R3 R1        ; R3 := R1
 111 [-]: LOADK     R4 K35       ; R4 := "\" color=\"#"
 112 [-]: GETGLOBAL R5 K36       ; R5 := 0x7f5022cf
-113 [-]: GETTABLE  R5 R5 K37    ; R82 := R5[0xe8072ded]
+113 [-]: GETTABLE  R5 R5 K37    ; R5 := R5[0xe8072ded]
 114 [-]: LOADK     R6 K38       ; R6 := "%X"
 115 [-]: GETTABLE  R7 R0 K25    ; R7 := R0["mHealthColor"]
 116 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
@@ -271,7 +271,7 @@
 148 [-]: MOVE      R4 R1        ; R4 := R1
 149 [-]: LOADK     R5 K35       ; R5 := "\" color=\"#"
 150 [-]: GETGLOBAL R6 K36       ; R6 := 0x7f5022cf
-151 [-]: GETTABLE  R6 R6 K37    ; R82 := R6[0xe8072ded]
+151 [-]: GETTABLE  R6 R6 K37    ; R6 := R6[0xe8072ded]
 152 [-]: LOADK     R7 K38       ; R7 := "%X"
 153 [-]: GETTABLE  R8 R0 K25    ; R8 := R0["mHealthColor"]
 154 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
@@ -512,7 +512,7 @@
  38 [-]: GETTABLE  R6 R0 K10    ; R6 := R0["mMaxShield"]
  39 [-]: ADD       R5 R5 R6     ; R5 := R5 + R6
  40 [-]: GETTABLE  R6 R0 K12    ; R6 := R0["UTIL"]
- 41 [-]: GETTABLE  R6 R6 K13    ; R82 := R6[0x74a11ec6]
+ 41 [-]: GETTABLE  R6 R6 K13    ; R6 := R6[0x74a11ec6]
  42 [-]: GETTABLE  R7 R0 K9     ; R7 := R0["mMaxHealth"]
  43 [-]: DIV       R7 R7 R5     ; R7 := R7 / R5
  44 [-]: GETTABLE  R8 R0 K14    ; R8 := R0["mWidth"]
@@ -566,7 +566,7 @@
   9 [-]: JMP       13           ; PC := 13
  10 [-]: SELF      R2 R1 K4     ; R3 := R1; R2 := R1[0x32316a21]
  11 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 12 [-]: SETTABLE  R0 K0 R2     ; R0["mIsPvp"] := R2
+ 12 [-]: SETTABLE  R0 K0 R2     ; R0[0xf64b7262] := R2
  13 [-]: GETTABLE  R2 R0 K0     ; R2 := R0["mIsPvp"]
  14 [-]: EQ        1 R2 K5      ; if R2 == true then PC := 17
  15 [-]: JMP       17           ; PC := 17
@@ -674,7 +674,7 @@
  87 [-]: EQ        0 R12 R13    ; if R12 ~= R13 then PC := 96
  88 [-]: JMP       96           ; PC := 96
  89 [-]: GETGLOBAL R12 K19      ; R12 := 0x5bced4c4
- 90 [-]: GETTABLE  R12 R12 K20  ; R82 := R12[0x99675e23]
+ 90 [-]: GETTABLE  R12 R12 K20  ; R12 := R12[0x99675e23]
  91 [-]: GETTABLE  R13 R0 K5    ; R13 := R0["mDamageControl"]
  92 [-]: SELF      R13 R13 K21  ; R14 := R13; R13 := R13[0x2fdd85ec]
  93 [-]: CALL      R13 2 0      ; R13,... := R13(R14)
@@ -727,19 +727,19 @@
 140 [-]: CALL      R12 2 2      ; R12 := R12(R13)
 141 [-]: MOVE      R6 R12       ; R6 := R12
 142 [-]: GETGLOBAL R12 K19      ; R12 := 0x5bced4c4
-143 [-]: GETTABLE  R12 R12 K32  ; R82 := R12[0xb62ecfe0]
+143 [-]: GETTABLE  R12 R12 K32  ; R12 := R12[0xb62ecfe0]
 144 [-]: MOVE      R13 R5       ; R13 := R5
 145 [-]: LOADK     R14 0        ; R14 := 0.000000
 146 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
 147 [-]: MOVE      R5 R12       ; R5 := R12
 148 [-]: GETGLOBAL R12 K19      ; R12 := 0x5bced4c4
-149 [-]: GETTABLE  R12 R12 K32  ; R82 := R12[0xb62ecfe0]
+149 [-]: GETTABLE  R12 R12 K32  ; R12 := R12[0xb62ecfe0]
 150 [-]: MOVE      R13 R6       ; R13 := R6
 151 [-]: LOADK     R14 0        ; R14 := 0.000000
 152 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
 153 [-]: MOVE      R6 R12       ; R6 := R12
 154 [-]: GETTABLE  R12 R0 K33   ; R12 := R0["UTIL"]
-155 [-]: GETTABLE  R12 R12 K34  ; R82 := R12[0x06d055f9]
+155 [-]: GETTABLE  R12 R12 K34  ; R12 := R12[0x06d055f9]
 156 [-]: MOVE      R13 R10      ; R13 := R10
 157 [-]: GETTABLE  R14 R0 K35   ; R14 := R0["mArmorColor"]
 158 [-]: GETTABLE  R15 R0 K36   ; R15 := R0["mHealthColor"]
@@ -842,7 +842,7 @@
 255 [-]: JMP       257          ; PC := 257
 256 [-]: SETTABLE  R0 K47 K14   ; R0["mPreDeathTime"] := 0.000000
 257 [-]: GETTABLE  R22 R0 K33   ; R22 := R0["UTIL"]
-258 [-]: GETTABLE  R22 R22 K34  ; R82 := R22[0x06d055f9]
+258 [-]: GETTABLE  R22 R22 K34  ; R22 := R22[0x06d055f9]
 259 [-]: GETTABLE  R23 R0 K41   ; R23 := R0["mIsInvulnerable"]
 260 [-]: GETTABLE  R24 R0 K59   ; R24 := R0["mInvulnHealthColor"]
 261 [-]: MOVE      R25 R12      ; R25 := R12
@@ -884,10 +884,10 @@
 297 [-]: EQ        1 R24 R25    ; if R24 == R25 then PC := 312
 298 [-]: JMP       312          ; PC := 312
 299 [-]: GETGLOBAL R24 K66      ; R24 := 0x7f5022cf
-300 [-]: GETTABLE  R24 R24 K67  ; R82 := R24[0xe8072ded]
+300 [-]: GETTABLE  R24 R24 K67  ; R24 := R24[0xe8072ded]
 301 [-]: GETTABLE  R25 R0 K68   ; R25 := R0["mReviveString"]
 302 [-]: GETTABLE  R26 R0 K33   ; R26 := R0["UTIL"]
-303 [-]: GETTABLE  R26 R26 K69  ; R82 := R26[0x74a11ec6]
+303 [-]: GETTABLE  R26 R26 K69  ; R26 := R26[0x74a11ec6]
 304 [-]: GETTABLE  R27 R0 K1    ; R27 := R0["mAvatar"]
 305 [-]: SELF      R27 R27 K70  ; R28 := R27; R27 := R27[0x0a7ffa48]
 306 [-]: CALL      R27 2 2      ; R27 := R27(R28)
@@ -900,7 +900,7 @@
 313 [-]: LT        0 K14 R15    ; if 0.000000 >= R15 then PC := 320
 314 [-]: JMP       320          ; PC := 320
 315 [-]: GETGLOBAL R25 K19      ; R25 := 0x5bced4c4
-316 [-]: GETTABLE  R25 R25 K72  ; R82 := R25[0x55f27c30]
+316 [-]: GETTABLE  R25 R25 K72  ; R25 := R25[0x55f27c30]
 317 [-]: DIV       R26 R24 R15  ; R26 := R24 / R15
 318 [-]: CALL      R25 2 2      ; R25 := R25(R26)
 319 [-]: MOVE      R24 R25      ; R24 := R25
@@ -908,7 +908,7 @@
 321 [-]: TEST      R25 0        ; if not R25 then PC := 330
 322 [-]: JMP       330          ; PC := 330
 323 [-]: GETGLOBAL R25 K66      ; R25 := 0x7f5022cf
-324 [-]: GETTABLE  R25 R25 K67  ; R82 := R25[0xe8072ded]
+324 [-]: GETTABLE  R25 R25 K67  ; R25 := R25[0xe8072ded]
 325 [-]: GETTABLE  R26 R0 K73   ; R26 := R0["mDownString"]
 326 [-]: MOVE      R27 R24      ; R27 := R24
 327 [-]: CALL      R25 3 2      ; R25 := R25(R26,R27)
@@ -917,15 +917,15 @@
 330 [-]: LE        0 K14 R24    ; if 0.000000 > R24 then PC := 365
 331 [-]: JMP       365          ; PC := 365
 332 [-]: GETGLOBAL R25 K19      ; R25 := 0x5bced4c4
-333 [-]: GETTABLE  R25 R25 K72  ; R82 := R25[0x55f27c30]
+333 [-]: GETTABLE  R25 R25 K72  ; R25 := R25[0x55f27c30]
 334 [-]: DIV       R26 R24 K74  ; R26 := R24 / 60.000000
 335 [-]: CALL      R25 2 2      ; R25 := R25(R26)
 336 [-]: MOD       R26 R24 K74  ; R26 := R24 % 60.000000
 337 [-]: GETGLOBAL R27 K66      ; R27 := 0x7f5022cf
-338 [-]: GETTABLE  R27 R27 K67  ; R82 := R27[0xe8072ded]
+338 [-]: GETTABLE  R27 R27 K67  ; R27 := R27[0xe8072ded]
 339 [-]: GETTABLE  R28 R0 K73   ; R28 := R0["mDownString"]
 340 [-]: GETTABLE  R29 R0 K33   ; R29 := R0["UTIL"]
-341 [-]: GETTABLE  R29 R29 K34  ; R82 := R29[0x06d055f9]
+341 [-]: GETTABLE  R29 R29 K34  ; R29 := R29[0x06d055f9]
 342 [-]: LE        1 K75 R25    ; if 10.000000 <= R25 then PC := 345
 343 [-]: JMP       345          ; PC := 345
 344 [-]: LOADBOOL  R30 0 1      ; R30 := false; PC := 345
@@ -936,7 +936,7 @@
 349 [-]: CONCAT    R32 R32 R33  ; R32 := R32 .. R33
 350 [-]: CALL      R29 4 2      ; R29 := R29(R30,R31,R32)
 351 [-]: GETTABLE  R30 R0 K33   ; R30 := R0["UTIL"]
-352 [-]: GETTABLE  R30 R30 K34  ; R82 := R30[0x06d055f9]
+352 [-]: GETTABLE  R30 R30 K34  ; R30 := R30[0x06d055f9]
 353 [-]: LE        1 K75 R26    ; if 10.000000 <= R26 then PC := 356
 354 [-]: JMP       356          ; PC := 356
 355 [-]: LOADBOOL  R31 0 1      ; R31 := false; PC := 356
@@ -970,7 +970,7 @@
 383 [-]: TEST      R28 0        ; if not R28 then PC := 395
 384 [-]: JMP       395          ; PC := 395
 385 [-]: GETGLOBAL R28 K66      ; R28 := 0x7f5022cf
-386 [-]: GETTABLE  R28 R28 K67  ; R82 := R28[0xe8072ded]
+386 [-]: GETTABLE  R28 R28 K67  ; R28 := R28[0xe8072ded]
 387 [-]: GETTABLE  R29 R0 K81   ; R29 := R0["mRightAlignedHealthString"]
 388 [-]: MOVE      R30 R22      ; R30 := R22
 389 [-]: MOVE      R31 R27      ; R31 := R27
@@ -980,7 +980,7 @@
 393 [-]: MOVE      R23 R28      ; R23 := R28
 394 [-]: JMP       404          ; PC := 404
 395 [-]: GETGLOBAL R28 K66      ; R28 := 0x7f5022cf
-396 [-]: GETTABLE  R28 R28 K67  ; R82 := R28[0xe8072ded]
+396 [-]: GETTABLE  R28 R28 K67  ; R28 := R28[0xe8072ded]
 397 [-]: GETTABLE  R29 R0 K82   ; R29 := R0["mLeftAlignedHealthString"]
 398 [-]: MOVE      R30 R12      ; R30 := R12
 399 [-]: GETTABLE  R31 R0 K45   ; R31 := R0["mHealth"]
@@ -1020,7 +1020,7 @@
 433 [-]: CALL      R28 5 1      ; R28(R29,R30,R31,R32)
 434 [-]: GETGLOBAL R28 K88      ; R28 := 0x42dcc9f5
 435 [-]: GETTABLE  R29 R0 K33   ; R29 := R0["UTIL"]
-436 [-]: GETTABLE  R29 R29 K69  ; R82 := R29[0x74a11ec6]
+436 [-]: GETTABLE  R29 R29 K69  ; R29 := R29[0x74a11ec6]
 437 [-]: GETTABLE  R30 R0 K45   ; R30 := R0["mHealth"]
 438 [-]: GETTABLE  R31 R0 K13   ; R31 := R0["mMaxHealth"]
 439 [-]: DIV       R30 R30 R31  ; R30 := R30 / R31
@@ -1032,7 +1032,7 @@
 445 [-]: CALL      R28 4 2      ; R28 := R28(R29,R30,R31)
 446 [-]: GETGLOBAL R29 K88      ; R29 := 0x42dcc9f5
 447 [-]: GETTABLE  R30 R0 K33   ; R30 := R0["UTIL"]
-448 [-]: GETTABLE  R30 R30 K69  ; R82 := R30[0x74a11ec6]
+448 [-]: GETTABLE  R30 R30 K69  ; R30 := R30[0x74a11ec6]
 449 [-]: GETTABLE  R31 R0 K46   ; R31 := R0["mShield"]
 450 [-]: GETTABLE  R32 R0 K15   ; R32 := R0["mMaxShield"]
 451 [-]: DIV       R31 R31 R32  ; R31 := R31 / R32
@@ -1043,7 +1043,7 @@
 456 [-]: GETTABLE  R32 R0 K90   ; R32 := R0["mShieldMaxWidth"]
 457 [-]: CALL      R29 4 2      ; R29 := R29(R30,R31,R32)
 458 [-]: GETTABLE  R30 R0 K33   ; R30 := R0["UTIL"]
-459 [-]: GETTABLE  R30 R30 K34  ; R82 := R30[0x06d055f9]
+459 [-]: GETTABLE  R30 R30 K34  ; R30 := R30[0x06d055f9]
 460 [-]: GETTABLE  R31 R0 K80   ; R31 := R0["mRightAligned"]
 461 [-]: LOADK     R32 -1       ; R32 := -1.000000
 462 [-]: LOADK     R33 1        ; R33 := 1.000000
@@ -1053,7 +1053,7 @@
 466 [-]: GETTABLE  R33 R0 K40   ; R33 := R0["mHealthClip"]
 467 [-]: LOADK     R34 5        ; R34 := 5.000000
 468 [-]: GETGLOBAL R35 K19      ; R35 := 0x5bced4c4
-469 [-]: GETTABLE  R35 R35 K32  ; R82 := R35[0xb62ecfe0]
+469 [-]: GETTABLE  R35 R35 K32  ; R35 := R35[0xb62ecfe0]
 470 [-]: MOVE      R36 R28      ; R36 := R28
 471 [-]: LOADK     R37 K91      ; R37 := 0.010000
 472 [-]: CALL      R35 3 2      ; R35 := R35(R36,R37)
@@ -1064,7 +1064,7 @@
 477 [-]: GETTABLE  R33 R0 K63   ; R33 := R0["mShieldClip"]
 478 [-]: LOADK     R34 5        ; R34 := 5.000000
 479 [-]: GETGLOBAL R35 K19      ; R35 := 0x5bced4c4
-480 [-]: GETTABLE  R35 R35 K32  ; R82 := R35[0xb62ecfe0]
+480 [-]: GETTABLE  R35 R35 K32  ; R35 := R35[0xb62ecfe0]
 481 [-]: MOVE      R36 R29      ; R36 := R29
 482 [-]: LOADK     R37 K91      ; R37 := 0.010000
 483 [-]: CALL      R35 3 2      ; R35 := R35(R36,R37)
@@ -1086,7 +1086,7 @@
 499 [-]: MOVE      R32 R28      ; R32 := R28
 500 [-]: GETGLOBAL R34 K88      ; R34 := 0x42dcc9f5
 501 [-]: GETTABLE  R35 R0 K33   ; R35 := R0["UTIL"]
-502 [-]: GETTABLE  R35 R35 K69  ; R82 := R35[0x74a11ec6]
+502 [-]: GETTABLE  R35 R35 K69  ; R35 := R35[0x74a11ec6]
 503 [-]: UNM       R36 R13      ; R36 := ^ R13
 504 [-]: GETTABLE  R37 R0 K13   ; R37 := R0["mMaxHealth"]
 505 [-]: DIV       R36 R36 R37  ; R36 := R36 / R37
@@ -1103,7 +1103,7 @@
 516 [-]: ADD       R32 R34 R29  ; R32 := R34 + R29
 517 [-]: GETGLOBAL R34 K88      ; R34 := 0x42dcc9f5
 518 [-]: GETTABLE  R35 R0 K33   ; R35 := R0["UTIL"]
-519 [-]: GETTABLE  R35 R35 K69  ; R82 := R35[0x74a11ec6]
+519 [-]: GETTABLE  R35 R35 K69  ; R35 := R35[0x74a11ec6]
 520 [-]: UNM       R36 R14      ; R36 := ^ R14
 521 [-]: GETTABLE  R37 R0 K15   ; R37 := R0["mMaxShield"]
 522 [-]: DIV       R36 R36 R37  ; R36 := R36 / R37

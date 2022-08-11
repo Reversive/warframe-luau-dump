@@ -69,7 +69,7 @@
   7 [-]: TEST      R4 0         ; if not R4 then PC := 16
   8 [-]: JMP       16           ; PC := 16
   9 [-]: GETGLOBAL R4 K5        ; R4 := 0x33bdd652
- 10 [-]: GETTABLE  R4 R4 K6     ; R82 := R4[0x23d5322f]
+ 10 [-]: GETTABLE  R4 R4 K6     ; R4 := R4[0x23d5322f]
  11 [-]: MOVE      R5 R3        ; R5 := R3
  12 [-]: GETTABLE  R6 R0 K7     ; R6 := R0["StepSequencerType"]
  13 [-]: SELF      R6 R6 K8     ; R7 := R6; R6 := R6[0xed4e0128]
@@ -87,12 +87,12 @@
  25 [-]: TEST      R9 1         ; if R9 then PC := 39
  26 [-]: JMP       39           ; PC := 39
  27 [-]: GETGLOBAL R9 K5        ; R9 := 0x33bdd652
- 28 [-]: GETTABLE  R9 R9 K6     ; R82 := R9[0x23d5322f]
+ 28 [-]: GETTABLE  R9 R9 K6     ; R9 := R9[0x23d5322f]
  29 [-]: GETTABLE  R10 R0 K9    ; R10 := R0["NotePackInfo"]
  30 [-]: MOVE      R11 R8       ; R11 := R8
  31 [-]: CALL      R9 3 1       ; R9(R10,R11)
  32 [-]: GETGLOBAL R9 K5        ; R9 := 0x33bdd652
- 33 [-]: GETTABLE  R9 R9 K6     ; R82 := R9[0x23d5322f]
+ 33 [-]: GETTABLE  R9 R9 K6     ; R9 := R9[0x23d5322f]
  34 [-]: MOVE      R10 R3       ; R10 := R3
  35 [-]: GETTABLE  R11 R8 K11   ; R11 := R8["NotePack"]
  36 [-]: SELF      R11 R11 K8   ; R12 := R11; R11 := R11[0xed4e0128]
@@ -101,7 +101,7 @@
  39 [-]: TFORLOOP  R4 2         ; R7,R8 :=  R4(R5,R6); if R7 ~= nil then begin PC = 22; R6 := R7 end
  40 [-]: JMP       22           ; PC := 22
  41 [-]: GETGLOBAL R9 K13       ; R9 := 0xbd496aa1
- 42 [-]: GETTABLE  R9 R9 K14    ; R82 := R9[0x42645da3]
+ 42 [-]: GETTABLE  R9 R9 K14    ; R9 := R9[0x42645da3]
  43 [-]: MOVE      R10 R3       ; R10 := R3
  44 [-]: CALL      R9 2 2       ; R9 := R9(R10)
  45 [-]: SETTABLE  R0 K12 R9    ; R0["Loader"] := R9
@@ -204,11 +204,11 @@
  75 [-]: TEST      R9 1         ; if R9 then PC := 107
  76 [-]: JMP       107          ; PC := 107
  77 [-]: GETGLOBAL R9 K19       ; R9 := 0x33bdd652
- 78 [-]: GETTABLE  R9 R9 K20    ; R82 := R9[0x23d5322f]
+ 78 [-]: GETTABLE  R9 R9 K20    ; R9 := R9[0x23d5322f]
  79 [-]: GETTABLE  R10 R0 K8    ; R10 := R0["NotePackRes"]
  80 [-]: NEWTABLE  R11 0 2      ; R11 := {}
  81 [-]: SETTABLE  R11 K17 R7   ; R11["NoteType"] := R7
- 82 [-]: SETTABLE  R11 K18 R8   ; R11[0x7b998233] := R8
+ 82 [-]: SETTABLE  R11 K18 R8   ; R11["NotePack"] := R8
  83 [-]: CALL      R9 3 1       ; R9(R10,R11)
  84 [-]: SELF      R9 R8 K21    ; R10 := R8; R9 := R8[0x8f91eec7]
  85 [-]: MOVE      R11 R7       ; R11 := R7
@@ -227,7 +227,7 @@
  98 [-]: TEST      R15 1        ; if R15 then PC := 106
  99 [-]: JMP       106          ; PC := 106
 100 [-]: GETGLOBAL R15 K19      ; R15 := 0x33bdd652
-101 [-]: GETTABLE  R15 R15 K20  ; R82 := R15[0x23d5322f]
+101 [-]: GETTABLE  R15 R15 K20  ; R15 := R15[0x23d5322f]
 102 [-]: MOVE      R16 R1       ; R16 := R1
 103 [-]: SELF      R17 R14 K24  ; R18 := R14; R17 := R14[0xed4e0128]
 104 [-]: CALL      R17 2 0      ; R17,... := R17(R18)
@@ -239,7 +239,7 @@
 110 [-]: LT        0 K25 R15    ; if 0.000000 >= R15 then PC := 118
 111 [-]: JMP       118          ; PC := 118
 112 [-]: GETGLOBAL R15 K26      ; R15 := 0xbd496aa1
-113 [-]: GETTABLE  R15 R15 K27  ; R82 := R15[0x42645da3]
+113 [-]: GETTABLE  R15 R15 K27  ; R15 := R15[0x42645da3]
 114 [-]: MOVE      R16 R1       ; R16 := R1
 115 [-]: CALL      R15 2 2      ; R15 := R15(R16)
 116 [-]: SETTABLE  R0 K10 R15   ; R0["Loader"] := R15

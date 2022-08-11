@@ -47,12 +47,12 @@
  12 [-]: MOVE      R4 R3        ; R4 := R3
  13 [-]: CALL      R4 1 1       ; R4()
  14 [-]: GETUPVAL  R4 U0        ; R4 := U0
- 15 [-]: GETTABLE  R4 R4 K2     ; R82 := R4[0xa1df01d6]
+ 15 [-]: GETTABLE  R4 R4 K2     ; R4 := R4[0xa1df01d6]
  16 [-]: LOADK     R5 K3        ; R5 := "/Lotus/Language/SolarisQuest/QuestAvailableObjective"
  17 [-]: LOADK     R6 0         ; R6 := 0.000000
  18 [-]: CALL      R4 3 1       ; R4(R5,R6)
  19 [-]: GETUPVAL  R4 U0        ; R4 := U0
- 20 [-]: GETTABLE  R4 R4 K4     ; R82 := R4[0x118e5c26]
+ 20 [-]: GETTABLE  R4 R4 K4     ; R4 := R4[0x118e5c26]
  21 [-]: LOADK     R5 K5        ; R5 := "/Lotus/Language/SolarisQuest/TalkToEudicoObjective"
  22 [-]: GETUPVAL  R6 U0        ; R6 := U0
  23 [-]: GETTABLE  R6 R6 K6     ; R6 := R6["NEW_QUEST"]
@@ -86,7 +86,7 @@
  51 [-]: CALL      R4 2 1       ; R4(R5)
  52 [-]: JMP       43           ; PC := 43
  53 [-]: GETGLOBAL R4 K7        ; R4 := _T
- 54 [-]: GETTABLE  R4 R4 K15    ; R82 := R4[0xc4c29ea3]
+ 54 [-]: GETTABLE  R4 R4 K15    ; R4 := R4[0xc4c29ea3]
  55 [-]: GETGLOBAL R5 K16       ; R5 := 0x0469f296
  56 [-]: LOADK     R6 K17       ; R6 := "SolarisQuest_Intro"
  57 [-]: CALL      R5 2 0       ; R5,... := R5(R6)
@@ -127,7 +127,7 @@
  15 [-]: LOADK     R7 0         ; R7 := 0.000000
  16 [-]: CALL      R4 4 0       ; R4,... := R4(R5,R6,R7)
  17 [-]: CALL      R0 0 2       ; R0 := R0(R1,...)
- 18 [-]: SETUPVAL  R0 U1        ; U82 := 
+ 18 [-]: SETUPVAL  R0 U1        ; U82 := 
  19 [-]: RETURN    R0 1         ; return 
 
 
@@ -202,10 +202,10 @@
 ; Max Stack Size:  7
 
   1 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  2 [-]: GETTABLE  R1 R1 K0     ; R82 := R1[0xdc3b2033]
+  2 [-]: GETTABLE  R1 R1 K0     ; R1 := R1[0xdc3b2033]
   3 [-]: CALL      R1 1 1       ; R1()
   4 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  5 [-]: GETTABLE  R1 R1 K1     ; R82 := R1[0xf94b7537]
+  5 [-]: GETTABLE  R1 R1 K1     ; R1 := R1[0xf94b7537]
   6 [-]: CALL      R1 1 1       ; R1()
   7 [-]: GETGLOBAL R1 K2        ; R1 := _T
   8 [-]: GETTABLE  R1 R1 K3     ; R1 := R1["TaggedDialog"]
@@ -241,7 +241,7 @@
  38 [-]: SELF      R1 R1 K15    ; R2 := R1; R1 := R1[0xf4e253b6]
  39 [-]: CALL      R1 2 1       ; R1(R2)
  40 [-]: GETGLOBAL R1 K2        ; R1 := _T
- 41 [-]: GETTABLE  R1 R1 K16    ; R82 := R1[0xa7457ad5]
+ 41 [-]: GETTABLE  R1 R1 K16    ; R1 := R1[0xa7457ad5]
  42 [-]: LOADBOOL  R2 0 0       ; R2 := false
  43 [-]: CALL      R1 2 1       ; R1(R2)
  44 [-]: RETURN    R0 1         ; return 
@@ -493,7 +493,7 @@
 222 [-]: LOADK     R37 K43      ; R37 := "TriggerPort"
 223 [-]: CALL      R35 3 1      ; R35(R36,R37)
 224 [-]: GETUPVAL  R35 U0       ; R35 := U0
-225 [-]: GETTABLE  R35 R35 K44  ; R82 := R35[0xe3a77939]
+225 [-]: GETTABLE  R35 R35 K44  ; R35 := R35[0xe3a77939]
 226 [-]: LOADK     R36 K45      ; R36 := "SolarisUnitedMoaPet"
 227 [-]: CALL      R35 2 2      ; R35 := R35(R36)
 228 [-]: SELF      R35 R35 K46  ; R36 := R35; R35 := R35[0x0077d753]
@@ -513,7 +513,7 @@
 242 [-]: LT        0 R12 K30    ; if R12 >= 0.000000 then PC := 249
 243 [-]: JMP       249          ; PC := 249
 244 [-]: GETGLOBAL R36 K7       ; R36 := _T
-245 [-]: GETTABLE  R36 R36 K48  ; R82 := R36[0xa7457ad5]
+245 [-]: GETTABLE  R36 R36 K48  ; R36 := R36[0xa7457ad5]
 246 [-]: LOADBOOL  R37 1 0      ; R37 := true
 247 [-]: LOADK     R38 K49      ; R38 := "/Lotus/Language/SolarisQuest/PreQuestTownElevatorLocked"
 248 [-]: CALL      R36 3 1      ; R36(R37,R38)
@@ -615,7 +615,7 @@
   7 [-]: SELF      R2 R2 K2     ; R3 := R2; R2 := R2[0xcfba257f]
   8 [-]: GETGLOBAL R4 K3        ; R4 := 0xaf77f814
   9 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
- 10 [-]: SETUPVAL  R2 U0        ; U82 := 
+ 10 [-]: SETUPVAL  R2 U0        ; U82 := 
  11 [-]: GETGLOBAL R2 K0        ; R2 := 0x7b998233
  12 [-]: GETUPVAL  R3 U0        ; R3 := U0
  13 [-]: CALL      R2 2 2       ; R2 := R2(R3)
@@ -754,7 +754,7 @@
  26 [-]: GETGLOBAL R7 K10       ; R7 := 0xc163f229
  27 [-]: LOADK     R8 0         ; R8 := 0.000000
  28 [-]: GETGLOBAL R9 K11       ; R9 := 0x5bced4c4
- 29 [-]: GETTABLE  R9 R9 K12    ; R82 := R9[0xb62ecfe0]
+ 29 [-]: GETTABLE  R9 R9 K12    ; R9 := R9[0xb62ecfe0]
  30 [-]: LOADK     R10 1        ; R10 := 1.000000
  31 [-]: GETGLOBAL R11 K13      ; R11 := 0xb50253d7
  32 [-]: GETGLOBAL R12 K14      ; R12 := 0x8664a66d
@@ -875,7 +875,7 @@
 147 [-]: TEST      R12 1        ; if R12 then PC := 186
 148 [-]: JMP       186          ; PC := 186
 149 [-]: GETGLOBAL R12 K31      ; R12 := 0xbd496aa1
-150 [-]: GETTABLE  R12 R12 K32  ; R82 := R12[0x42645da3]
+150 [-]: GETTABLE  R12 R12 K32  ; R12 := R12[0x42645da3]
 151 [-]: NEWTABLE  R13 0 0      ; R13 := {}
 152 [-]: SELF      R14 R11 K33  ; R15 := R11; R14 := R11[0xed4e0128]
 153 [-]: CALL      R14 2 0      ; R14,... := R14(R15)
@@ -904,7 +904,7 @@
 176 [-]: NEWTABLE  R13 0 0      ; R13 := {}
 177 [-]: SETTABLE  R12 K35 R13  ; R12["InWorldTransmissionQueue"] := R13
 178 [-]: GETGLOBAL R12 K36      ; R12 := 0x33bdd652
-179 [-]: GETTABLE  R12 R12 K37  ; R82 := R12[0x23d5322f]
+179 [-]: GETTABLE  R12 R12 K37  ; R12 := R12[0x23d5322f]
 180 [-]: GETGLOBAL R13 K15      ; R13 := _T
 181 [-]: GETTABLE  R13 R13 K35  ; R13 := R13["InWorldTransmissionQueue"]
 182 [-]: GETGLOBAL R14 K38      ; R14 := 0xb009bbc6
@@ -916,16 +916,16 @@
 188 [-]: CALL      R12 2 2      ; R12 := R12(R13)
 189 [-]: GETGLOBAL R13 K10      ; R13 := 0xc163f229
 190 [-]: GETGLOBAL R14 K11      ; R14 := 0x5bced4c4
-191 [-]: GETTABLE  R14 R14 K12  ; R82 := R14[0xb62ecfe0]
+191 [-]: GETTABLE  R14 R14 K12  ; R14 := R14[0xb62ecfe0]
 192 [-]: LOADK     R15 0        ; R15 := 0.000000
 193 [-]: GETGLOBAL R16 K11      ; R16 := 0x5bced4c4
-194 [-]: GETTABLE  R16 R16 K39  ; R82 := R16[0xac1b386a]
+194 [-]: GETTABLE  R16 R16 K39  ; R16 := R16[0xac1b386a]
 195 [-]: GETGLOBAL R17 K13      ; R17 := 0xb50253d7
 196 [-]: GETGLOBAL R18 K14      ; R18 := 0x8664a66d
 197 [-]: CALL      R16 3 0      ; R16,... := R16(R17,R18)
 198 [-]: CALL      R14 0 2      ; R14 := R14(R15,...)
 199 [-]: GETGLOBAL R15 K11      ; R15 := 0x5bced4c4
-200 [-]: GETTABLE  R15 R15 K12  ; R82 := R15[0xb62ecfe0]
+200 [-]: GETTABLE  R15 R15 K12  ; R15 := R15[0xb62ecfe0]
 201 [-]: LOADK     R16 1        ; R16 := 1.000000
 202 [-]: GETGLOBAL R17 K13      ; R17 := 0xb50253d7
 203 [-]: GETGLOBAL R18 K14      ; R18 := 0x8664a66d

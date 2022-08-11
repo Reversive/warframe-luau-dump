@@ -106,7 +106,7 @@
 ; Max Stack Size:  3
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0x7f5022cf
-  2 [-]: GETTABLE  R1 R1 K1     ; R82 := R1[0x41e2ae25]
+  2 [-]: GETTABLE  R1 R1 K1     ; R1 := R1[0x41e2ae25]
   3 [-]: GETTABLE  R2 R0 K2     ; R2 := R0["mText"]
   4 [-]: CALL      R1 2 2       ; R1 := R1(R2)
   5 [-]: RETURN    R1 2         ; return R1
@@ -128,7 +128,7 @@
   4 [-]: MUL       R2 R2 K2     ; R2 := R2 * 2.000000
   5 [-]: DIV       R3 R1 R2     ; R3 := R1 / R2
   6 [-]: GETTABLE  R4 R0 K3     ; R4 := R0["UTIL"]
-  7 [-]: GETTABLE  R4 R4 K4     ; R82 := R4[0xd4ea5665]
+  7 [-]: GETTABLE  R4 R4 K4     ; R4 := R4[0xd4ea5665]
   8 [-]: MUL       R5 R3 K2     ; R5 := R3 * 2.000000
   9 [-]: GETTABLE  R6 R0 K0     ; R6 := R0["PI"]
  10 [-]: MUL       R5 R5 R6     ; R5 := R5 * R6
@@ -162,7 +162,7 @@
  14 [-]: GETTABLE  R8 R8 R3     ; R8 := R8[R3]
  15 [-]: GETTABLE  R2 R8 K5     ; R2 := R8["mClipName"]
  16 [-]: GETGLOBAL R8 K6        ; R8 := 0x33bdd652
- 17 [-]: GETTABLE  R8 R8 K7     ; R82 := R8[0x9c1f3b5a]
+ 17 [-]: GETTABLE  R8 R8 K7     ; R8 := R8[0x9c1f3b5a]
  18 [-]: GETTABLE  R9 R0 K2     ; R9 := R0["mLetters"]
  19 [-]: MOVE      R10 R3       ; R10 := R3
  20 [-]: CALL      R8 3 1       ; R8(R9,R10)
@@ -189,7 +189,7 @@
  41 [-]: LOADK     R9 0         ; R9 := 0.000000
  42 [-]: GETTABLE  R10 R0 K12   ; R10 := R0["mText"]
  43 [-]: GETGLOBAL R11 K13      ; R11 := 0x7f5022cf
- 44 [-]: GETTABLE  R11 R11 K14  ; R82 := R11[0x41e2ae25]
+ 44 [-]: GETTABLE  R11 R11 K14  ; R11 := R11[0x41e2ae25]
  45 [-]: MOVE      R12 R10      ; R12 := R10
  46 [-]: CALL      R11 2 2      ; R11 := R11(R12)
  47 [-]: LT        0 K15 R11    ; if 0.000000 >= R11 then PC := 71
@@ -209,7 +209,7 @@
  61 [-]: CALL      R11 3 2      ; R11 := R11(R12,R13)
  62 [-]: MOVE      R10 R11      ; R10 := R11
  63 [-]: GETGLOBAL R11 K6       ; R11 := 0x33bdd652
- 64 [-]: GETTABLE  R11 R11 K18  ; R82 := R11[0x23d5322f]
+ 64 [-]: GETTABLE  R11 R11 K18  ; R11 := R11[0x23d5322f]
  65 [-]: GETTABLE  R12 R0 K2    ; R12 := R0["mLetters"]
  66 [-]: NEWTABLE  R13 0 2      ; R13 := {}
  67 [-]: SETTABLE  R13 K19 R9   ; R13["Id"] := R9
@@ -276,7 +276,7 @@
 128 [-]: SETTABLE  R21 K32 R15  ; R21["DeltaAngle"] := R15
 129 [-]: FORLOOP   R17 83       ; R17 += R19; if R17 <= R18 then begin PC := 83; R20 := R17 end
 130 [-]: GETTABLE  R21 R0 K33   ; R21 := R0["UTIL"]
-131 [-]: GETTABLE  R21 R21 K34  ; R82 := R21[0x06d055f9]
+131 [-]: GETTABLE  R21 R21 K34  ; R21 := R21[0x06d055f9]
 132 [-]: GETTABLE  R22 R0 K35   ; R22 := R0["mFlip"]
 133 [-]: LOADK     R23 -1       ; R23 := -1.000000
 134 [-]: LOADK     R24 1        ; R24 := 1.000000
@@ -359,9 +359,9 @@
 211 [-]: ADD       R25 R25 R32  ; R25 := R25 + R32
 212 [-]: GETTABLE  R32 R0 K50   ; R32 := R0["mInitialX"]
 213 [-]: GETGLOBAL R33 K51      ; R33 := 0x5bced4c4
-214 [-]: GETTABLE  R33 R33 K52  ; R82 := R33[0x00fa6bf1]
+214 [-]: GETTABLE  R33 R33 K52  ; R33 := R33[0x00fa6bf1]
 215 [-]: GETTABLE  R34 R0 K33   ; R34 := R0["UTIL"]
-216 [-]: GETTABLE  R34 R34 K53  ; R82 := R34[0x15ba5fe6]
+216 [-]: GETTABLE  R34 R34 K53  ; R34 := R34[0x15ba5fe6]
 217 [-]: MOVE      R35 R25      ; R35 := R25
 218 [-]: CALL      R34 2 0      ; R34,... := R34(R35)
 219 [-]: CALL      R33 0 2      ; R33 := R33(R34,...)
@@ -373,9 +373,9 @@
 225 [-]: JMP       240          ; PC := 240
 226 [-]: GETTABLE  R32 R0 K56   ; R32 := R0["mInitialZ"]
 227 [-]: GETGLOBAL R33 K51      ; R33 := 0x5bced4c4
-228 [-]: GETTABLE  R33 R33 K57  ; R82 := R33[0x3eda26fc]
+228 [-]: GETTABLE  R33 R33 K57  ; R33 := R33[0x3eda26fc]
 229 [-]: GETTABLE  R34 R0 K33   ; R34 := R0["UTIL"]
-230 [-]: GETTABLE  R34 R34 K53  ; R82 := R34[0x15ba5fe6]
+230 [-]: GETTABLE  R34 R34 K53  ; R34 := R34[0x15ba5fe6]
 231 [-]: MOVE      R35 R25      ; R35 := R25
 232 [-]: CALL      R34 2 0      ; R34,... := R34(R35)
 233 [-]: CALL      R33 0 2      ; R33 := R33(R34,...)
@@ -387,9 +387,9 @@
 239 [-]: JMP       251          ; PC := 251
 240 [-]: GETTABLE  R32 R0 K59   ; R32 := R0["mInitialY"]
 241 [-]: GETGLOBAL R33 K51      ; R33 := 0x5bced4c4
-242 [-]: GETTABLE  R33 R33 K57  ; R82 := R33[0x3eda26fc]
+242 [-]: GETTABLE  R33 R33 K57  ; R33 := R33[0x3eda26fc]
 243 [-]: GETTABLE  R34 R0 K33   ; R34 := R0["UTIL"]
-244 [-]: GETTABLE  R34 R34 K53  ; R82 := R34[0x15ba5fe6]
+244 [-]: GETTABLE  R34 R34 K53  ; R34 := R34[0x15ba5fe6]
 245 [-]: MOVE      R35 R25      ; R35 := R25
 246 [-]: CALL      R34 2 0      ; R34,... := R34(R35)
 247 [-]: CALL      R33 0 2      ; R33 := R33(R34,...)

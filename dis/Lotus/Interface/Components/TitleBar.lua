@@ -249,13 +249,13 @@
  50 [-]: RETURN    R0 1         ; return 
  51 [-]: GETTABLE  R4 R0 K10    ; R4 := R0["mApplyThemes"]
  52 [-]: GETUPVAL  R5 U0        ; R5 := U0
- 53 [-]: GETTABLE  R5 R5 K11    ; R82 := R5[0x5d10207d]
+ 53 [-]: GETTABLE  R5 R5 K11    ; R5 := R5[0x5d10207d]
  54 [-]: LOADK     R6 9         ; R6 := 9.000000
  55 [-]: LOADBOOL  R7 1 0       ; R7 := true
  56 [-]: MOVE      R8 R4        ; R8 := R4
  57 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
  58 [-]: GETUPVAL  R6 U0        ; R6 := U0
- 59 [-]: GETTABLE  R6 R6 K11    ; R82 := R6[0x5d10207d]
+ 59 [-]: GETTABLE  R6 R6 K11    ; R6 := R6[0x5d10207d]
  60 [-]: LOADK     R7 10        ; R7 := 10.000000
  61 [-]: LOADBOOL  R8 1 0       ; R8 := true
  62 [-]: MOVE      R9 R4        ; R9 := R4
@@ -270,13 +270,13 @@
  71 [-]: LOADK     R7 K4        ; R7 := ""
  72 [-]: LOADK     R8 K14       ; R8 := "<font color=\"#"
  73 [-]: GETGLOBAL R9 K15       ; R9 := 0x7f5022cf
- 74 [-]: GETTABLE  R9 R9 K16    ; R82 := R9[0xe8072ded]
+ 74 [-]: GETTABLE  R9 R9 K16    ; R9 := R9[0xe8072ded]
  75 [-]: LOADK     R10 K17      ; R10 := "%X"
  76 [-]: MOVE      R11 R5       ; R11 := R5
  77 [-]: CALL      R9 3 2       ; R9 := R9(R10,R11)
  78 [-]: LOADK     R10 K18      ; R10 := "\">"
  79 [-]: GETGLOBAL R11 K15      ; R11 := 0x7f5022cf
- 80 [-]: GETTABLE  R11 R11 K19  ; R82 := R11[0x3f3e4d12]
+ 80 [-]: GETTABLE  R11 R11 K19  ; R11 := R11[0x3f3e4d12]
  81 [-]: GETTABLE  R12 R0 K3    ; R12 := R0["mTitle"]
  82 [-]: CALL      R11 2 2      ; R11 := R11(R12)
  83 [-]: MOVE      R12 R7       ; R12 := R7
@@ -284,13 +284,13 @@
  85 [-]: CONCAT    R8 R8 R13    ; R8 := R8 .. R9 .. R10 .. R11 .. R12 .. R13
  86 [-]: LOADK     R9 K14       ; R9 := "<font color=\"#"
  87 [-]: GETGLOBAL R10 K15      ; R10 := 0x7f5022cf
- 88 [-]: GETTABLE  R10 R10 K16  ; R82 := R10[0xe8072ded]
+ 88 [-]: GETTABLE  R10 R10 K16  ; R10 := R10[0xe8072ded]
  89 [-]: LOADK     R11 K17      ; R11 := "%X"
  90 [-]: MOVE      R12 R6       ; R12 := R6
  91 [-]: CALL      R10 3 2      ; R10 := R10(R11,R12)
  92 [-]: LOADK     R11 K18      ; R11 := "\">"
  93 [-]: GETGLOBAL R12 K15      ; R12 := 0x7f5022cf
- 94 [-]: GETTABLE  R12 R12 K19  ; R82 := R12[0x3f3e4d12]
+ 94 [-]: GETTABLE  R12 R12 K19  ; R12 := R12[0x3f3e4d12]
  95 [-]: GETTABLE  R13 R0 K5    ; R13 := R0["mSubTitle"]
  96 [-]: CALL      R12 2 2      ; R12 := R12(R13)
  97 [-]: LOADK     R13 K21      ; R13 := " </font>"
@@ -300,7 +300,7 @@
 101 [-]: JMP       120          ; PC := 120
 102 [-]: SETTABLE  R0 K22 K23   ; R0["mTitleChanged"] := false
 103 [-]: GETUPVAL  R10 U1       ; R10 := U1
-104 [-]: GETTABLE  R10 R10 K24  ; R82 := R10[0xf6e70fb6]
+104 [-]: GETTABLE  R10 R10 K24  ; R10 := R10[0xf6e70fb6]
 105 [-]: MOVE      R11 R1       ; R11 := R1
 106 [-]: LOADNIL   R12 R12      ; R12 := nil
 107 [-]: MOVE      R13 R2       ; R13 := R2
@@ -347,7 +347,7 @@
   4 [-]: LOADK     R4 K3        ; R4 := ".Title.BookendIcon"
   5 [-]: CONCAT    R3 R3 R4     ; R3 := R3 .. R4
   6 [-]: GETUPVAL  R4 U0        ; R4 := U0
-  7 [-]: GETTABLE  R4 R4 K4     ; R82 := R4[0x3834e137]
+  7 [-]: GETTABLE  R4 R4 K4     ; R4 := R4[0x3834e137]
   8 [-]: GETTABLE  R5 R0 K5     ; R5 := R0["mBookendIcon"]
   9 [-]: CALL      R4 2 0       ; R4,... := R4(R5)
  10 [-]: CALL      R1 0 1       ; R1(R2,...)
@@ -367,13 +367,13 @@
   2 [-]: GETTABLE  R2 R0 K1     ; R2 := R0["mClipName"]
   3 [-]: GETTABLE  R3 R0 K2     ; R3 := R0["mApplyThemes"]
   4 [-]: GETUPVAL  R4 U0        ; R4 := U0
-  5 [-]: GETTABLE  R4 R4 K3     ; R82 := R4[0x5d10207d]
+  5 [-]: GETTABLE  R4 R4 K3     ; R4 := R4[0x5d10207d]
   6 [-]: LOADK     R5 2         ; R5 := 2.000000
   7 [-]: LOADBOOL  R6 1 0       ; R6 := true
   8 [-]: MOVE      R7 R3        ; R7 := R3
   9 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
  10 [-]: GETUPVAL  R5 U0        ; R5 := U0
- 11 [-]: GETTABLE  R5 R5 K3     ; R82 := R5[0x5d10207d]
+ 11 [-]: GETTABLE  R5 R5 K3     ; R5 := R5[0x5d10207d]
  12 [-]: LOADK     R6 9         ; R6 := 9.000000
  13 [-]: LOADBOOL  R7 1 0       ; R7 := true
  14 [-]: MOVE      R8 R3        ; R8 := R3

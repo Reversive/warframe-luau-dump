@@ -72,13 +72,13 @@
  43 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  44 [-]: EQ        0 R4 K11     ; if R4 ~= 0.000000 then PC := 47
  45 [-]: JMP       47           ; PC := 47
- 46 [-]: SETUPVAL  R3 U0        ; U82 := 
+ 46 [-]: SETUPVAL  R3 U0        ; U82 := R0
  47 [-]: EQ        0 R4 K12     ; if R4 ~= 1.000000 then PC := 50
  48 [-]: JMP       50           ; PC := 50
- 49 [-]: SETUPVAL  R3 U1        ; U82 := 
+ 49 [-]: SETUPVAL  R3 U1        ; U82 := R1
  50 [-]: EQ        0 R4 K13     ; if R4 ~= 5.000000 then PC := 53
  51 [-]: JMP       53           ; PC := 53
- 52 [-]: SETUPVAL  R3 U2        ; U82 := 
+ 52 [-]: SETUPVAL  R3 U2        ; U82 := R2
  53 [-]: GETUPVAL  R5 U0        ; R5 := U0
  54 [-]: SUB       R5 R3 R5     ; R5 := R3 - R5
  55 [-]: LT        0 R5 K13     ; if R5 >= 5.000000 then PC := 67

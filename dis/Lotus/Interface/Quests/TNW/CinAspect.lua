@@ -103,8 +103,7 @@
  14 [-]: MOVE      R7 R10       ; R7 := R10
  15 [-]: GETUPVAL  R10 U0       ; R10 := U0
  16 [-]: DIV       R10 R7 R10   ; R10 := R7 / R10
- 17 [-]: SETUPVAL  R10 U1       ; U82 := 
-
+ 17 [-]: SETUPVAL  R10 U1       ; U82 := R1
  18 [-]: GETGLOBAL R10 K4       ; R10 := 0x25312c9b
  19 [-]: GETGLOBAL R11 K5       ; R11 := 0xae91e43b
  20 [-]: LOADK     R12 K6       ; R12 := "Top"
@@ -165,7 +164,7 @@
  20 [-]: TEST      R2 0         ; if not R2 then PC := 62
  21 [-]: JMP       62           ; PC := 62
  22 [-]: LOADBOOL  R2 1 0       ; R2 := true
- 23 [-]: SETUPVAL  R2 U0        ; U82 := 
+ 23 [-]: SETUPVAL  R2 U0        ; U82 := R0
  24 [-]: GETGLOBAL R2 K8        ; R2 := 0x25312c9b
  25 [-]: GETGLOBAL R3 K1        ; R3 := 0xae91e43b
  26 [-]: LOADK     R4 K9        ; R4 := "_root"

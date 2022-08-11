@@ -162,7 +162,7 @@
  12 [-]: TEST      R5 0         ; if not R5 then PC := 17
  13 [-]: JMP       17           ; PC := 17
  14 [-]: LOADBOOL  R5 1 0       ; R5 := true
- 15 [-]: SETUPVAL  R5 U0        ; U82 := 
+ 15 [-]: SETUPVAL  R5 U0        ; U82 := 
  16 [-]: LOADBOOL  R4 0 0       ; R4 := false
  17 [-]: SELF      R5 R0 K0     ; R6 := R0; R5 := R0[0x0e3d9621]
  18 [-]: CALL      R5 2 2       ; R5 := R5(R6)
@@ -352,7 +352,7 @@
  27 [-]: LE        0 R8 R7      ; if R8 > R7 then PC := 268
  28 [-]: JMP       268          ; PC := 268
  29 [-]: GETGLOBAL R7 K11       ; R7 := 0x5bced4c4
- 30 [-]: GETTABLE  R7 R7 K12    ; R82 := R7[0x3630e649]
+ 30 [-]: GETTABLE  R7 R7 K12    ; R7 := R7[0x3630e649]
  31 [-]: CALL      R7 1 2       ; R7 := R7()
  32 [-]: GETGLOBAL R8 K13       ; R8 := 0x193a9af9
  33 [-]: LE        0 R7 R8      ; if R7 > R8 then PC := 268
@@ -389,7 +389,7 @@
  64 [-]: TEST      R14 0        ; if not R14 then PC := 69
  65 [-]: JMP       69           ; PC := 69
  66 [-]: LOADBOOL  R14 1 0      ; R14 := true
- 67 [-]: SETUPVAL  R14 U1       ; U82 := 
+ 67 [-]: SETUPVAL  R14 U1       ; U82 := 
  68 [-]: JMP       70           ; PC := 70
  69 [-]: FORLOOP   R10 60       ; R10 += R12; if R10 <= R11 then begin PC := 60; R13 := R10 end
  70 [-]: GETUPVAL  R14 U2       ; R14 := U2
@@ -638,9 +638,9 @@
  34 [-]: GETUPVAL  R8 U1        ; R8 := U1
  35 [-]: GETUPVAL  R9 U2        ; R9 := U2
  36 [-]: GETGLOBAL R10 K13      ; R10 := 0x5bced4c4
- 37 [-]: GETTABLE  R10 R10 K14  ; R82 := R10[0xa40531d8]
+ 37 [-]: GETTABLE  R10 R10 K14  ; R10 := R10[0xa40531d8]
  38 [-]: GETGLOBAL R11 K13      ; R11 := 0x5bced4c4
- 39 [-]: GETTABLE  R11 R11 K15  ; R82 := R11[0x3630e649]
+ 39 [-]: GETTABLE  R11 R11 K15  ; R11 := R11[0x3630e649]
  40 [-]: CALL      R11 1 2      ; R11 := R11()
  41 [-]: LOADK     R12 2        ; R12 := 2.000000
  42 [-]: CALL      R10 3 0      ; R10,... := R10(R11,R12)
@@ -657,7 +657,7 @@
  53 [-]: LE        0 R7 R8      ; if R7 > R8 then PC := 131
  54 [-]: JMP       131          ; PC := 131
  55 [-]: GETGLOBAL R9 K13       ; R9 := 0x5bced4c4
- 56 [-]: GETTABLE  R9 R9 K15    ; R82 := R9[0x3630e649]
+ 56 [-]: GETTABLE  R9 R9 K15    ; R9 := R9[0x3630e649]
  57 [-]: CALL      R9 1 2       ; R9 := R9()
  58 [-]: GETUPVAL  R10 U3       ; R10 := U3
  59 [-]: LE        0 R9 R10     ; if R9 > R10 then PC := 131
@@ -759,7 +759,7 @@
   9 [-]: LE        0 R3 R2      ; if R3 > R2 then PC := 17
  10 [-]: JMP       17           ; PC := 17
  11 [-]: GETGLOBAL R2 K5        ; R2 := 0x5bced4c4
- 12 [-]: GETTABLE  R2 R2 K6     ; R82 := R2[0x3630e649]
+ 12 [-]: GETTABLE  R2 R2 K6     ; R2 := R2[0x3630e649]
  13 [-]: CALL      R2 1 2       ; R2 := R2()
  14 [-]: GETGLOBAL R3 K7        ; R3 := 0x193a9af9
  15 [-]: LE        0 R2 R3      ; if R2 > R3 then PC := 17

@@ -32,7 +32,7 @@
   9 [-]: GETGLOBAL R1 K4        ; R1 := _T
  10 [-]: SETTABLE  R1 K5 K6     ; R1["gWeatherRain"] := 1.000000
  11 [-]: GETGLOBAL R1 K7        ; R1 := 0x2d5c5020
- 12 [-]: GETTABLE  R1 R1 K8     ; R82 := R1[0x0542d42b]
+ 12 [-]: GETTABLE  R1 R1 K8     ; R1 := R1[0x0542d42b]
  13 [-]: MOVE      R2 R0        ; R2 := R0
  14 [-]: GETGLOBAL R3 K9        ; R3 := 0x899dda88
  15 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
@@ -43,14 +43,14 @@
  20 [-]: CALL      R1 2 1       ; R1(R2)
  21 [-]: JMP       11           ; PC := 11
  22 [-]: GETGLOBAL R1 K7        ; R1 := 0x2d5c5020
- 23 [-]: GETTABLE  R1 R1 K10    ; R82 := R1[0x4a2c3a0f]
+ 23 [-]: GETTABLE  R1 R1 K10    ; R1 := R1[0x4a2c3a0f]
  24 [-]: MOVE      R2 R0        ; R2 := R0
  25 [-]: GETGLOBAL R3 K11       ; R3 := gParticleSysType
  26 [-]: LOADBOOL  R4 0 0       ; R4 := false
  27 [-]: LOADBOOL  R5 1 0       ; R5 := true
  28 [-]: CALL      R1 5 1       ; R1(R2,R3,R4,R5)
  29 [-]: GETGLOBAL R1 K7        ; R1 := 0x2d5c5020
- 30 [-]: GETTABLE  R1 R1 K10    ; R82 := R1[0x4a2c3a0f]
+ 30 [-]: GETTABLE  R1 R1 K10    ; R1 := R1[0x4a2c3a0f]
  31 [-]: MOVE      R2 R0        ; R2 := R0
  32 [-]: GETGLOBAL R3 K9        ; R3 := 0x899dda88
  33 [-]: LOADBOOL  R4 1 0       ; R4 := true
@@ -65,7 +65,7 @@
  42 [-]: TEST      R1 0         ; if not R1 then PC := 49
  43 [-]: JMP       49           ; PC := 49
  44 [-]: GETGLOBAL R1 K4        ; R1 := _T
- 45 [-]: GETTABLE  R1 R1 K14    ; R82 := R1[0x656daa90]
+ 45 [-]: GETTABLE  R1 R1 K14    ; R1 := R1[0x656daa90]
  46 [-]: GETGLOBAL R2 K4        ; R2 := _T
  47 [-]: GETTABLE  R2 R2 K13    ; R2 := R2["WeatherFxOverride"]
  48 [-]: CALL      R1 2 1       ; R1(R2)
@@ -92,7 +92,7 @@
   9 [-]: SETTABLE  R1 K3 K4     ; R1["SetWeatherFxOverride"] := nil
  10 [-]: JMP       39           ; PC := 39
  11 [-]: GETGLOBAL R1 K5        ; R1 := 0x2d5c5020
- 12 [-]: GETTABLE  R1 R1 K6     ; R82 := R1[0x4a2c3a0f]
+ 12 [-]: GETTABLE  R1 R1 K6     ; R1 := R1[0x4a2c3a0f]
  13 [-]: GETUPVAL  R2 U0        ; R2 := U0
  14 [-]: GETGLOBAL R3 K7        ; R3 := gParticleSysType
  15 [-]: LOADBOOL  R4 0 0       ; R4 := false
@@ -103,7 +103,7 @@
  20 [-]: EQ        0 R0 K4      ; if R0 ~= nil then PC := 30
  21 [-]: JMP       30           ; PC := 30
  22 [-]: GETGLOBAL R1 K5        ; R1 := 0x2d5c5020
- 23 [-]: GETTABLE  R1 R1 K6     ; R82 := R1[0x4a2c3a0f]
+ 23 [-]: GETTABLE  R1 R1 K6     ; R1 := R1[0x4a2c3a0f]
  24 [-]: GETUPVAL  R2 U0        ; R2 := U0
  25 [-]: GETGLOBAL R3 K9        ; R3 := 0x899dda88
  26 [-]: LOADBOOL  R4 1 0       ; R4 := true
@@ -113,7 +113,7 @@
  30 [-]: EQ        0 R0 K10     ; if R0 ~= "infestation" then PC := 39
  31 [-]: JMP       39           ; PC := 39
  32 [-]: GETGLOBAL R1 K5        ; R1 := 0x2d5c5020
- 33 [-]: GETTABLE  R1 R1 K6     ; R82 := R1[0x4a2c3a0f]
+ 33 [-]: GETTABLE  R1 R1 K6     ; R1 := R1[0x4a2c3a0f]
  34 [-]: GETUPVAL  R2 U0        ; R2 := U0
  35 [-]: GETGLOBAL R3 K11       ; R3 := 0xe70f22bb
  36 [-]: LOADBOOL  R4 1 0       ; R4 := true

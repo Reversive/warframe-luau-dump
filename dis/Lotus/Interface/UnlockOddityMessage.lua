@@ -53,7 +53,7 @@
  15 [-]: LOADK     R8 29        ; R8 := 29.000000
  16 [-]: LOADK     R9 K5        ; R9 := "\""
  17 [-]: GETGLOBAL R10 K6       ; R10 := 0x7f5022cf
- 18 [-]: GETTABLE  R10 R10 K7   ; R82 := R10[0x3f3e4d12]
+ 18 [-]: GETTABLE  R10 R10 K7   ; R10 := R10[0x3f3e4d12]
  19 [-]: MOVE      R11 R4       ; R11 := R4
  20 [-]: CALL      R10 2 2      ; R10 := R10(R11)
  21 [-]: LOADK     R11 K5       ; R11 := "\""
@@ -112,7 +112,7 @@
 ; Max Stack Size:  9
 
   1 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  2 [-]: GETTABLE  R0 R0 K0     ; R82 := R0[0x659d451f]
+  2 [-]: GETTABLE  R0 R0 K0     ; R0 := R0[0x659d451f]
   3 [-]: GETGLOBAL R1 K1        ; R1 := 0x933a3fdd
   4 [-]: CALL      R0 2 1       ; R0(R1)
   5 [-]: GETGLOBAL R0 K2        ; R0 := 0x25312c9b

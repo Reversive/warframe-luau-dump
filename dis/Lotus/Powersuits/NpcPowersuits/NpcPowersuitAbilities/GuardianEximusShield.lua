@@ -175,7 +175,7 @@
  18 [-]: TEST      R2 1         ; if R2 then PC := 24
  19 [-]: JMP       24           ; PC := 24
  20 [-]: GETUPVAL  R2 U0        ; R2 := U0
- 21 [-]: GETTABLE  R2 R2 K5     ; R82 := R2[0x659d451f]
+ 21 [-]: GETTABLE  R2 R2 K5     ; R2 := R2[0x659d451f]
  22 [-]: GETGLOBAL R3 K4        ; R3 := 0x6dd57ac6
  23 [-]: CALL      R2 2 1       ; R2(R3)
  24 [-]: RETURN    R0 1         ; return 
@@ -214,7 +214,7 @@
  22 [-]: JMP       39           ; PC := 39
  23 [-]: GETUPVAL  R1 U0        ; R1 := U0
  24 [-]: ADD       R1 R1 K4     ; R1 := R1 + 1.000000
- 25 [-]: SETUPVAL  R1 U0        ; U82 := 
+ 25 [-]: SETUPVAL  R1 U0        ; U82 := R0
  26 [-]: SELF      R1 R0 K5     ; R2 := R0; R1 := R0[0xfa9e477f]
  27 [-]: CALL      R1 2 2       ; R1 := R1(R2)
  28 [-]: GETGLOBAL R2 K1        ; R2 := 0x7b998233

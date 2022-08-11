@@ -76,13 +76,13 @@
  17 [-]: FORPREP   R3 24        ; R3 -= R5; PC := 24
  18 [-]: GETTABLE  R7 R2 R6     ; R7 := R2[R6]
  19 [-]: GETGLOBAL R8 K4        ; R8 := 0x33bdd652
- 20 [-]: GETTABLE  R8 R8 K5     ; R82 := R8[0x23d5322f]
+ 20 [-]: GETTABLE  R8 R8 K5     ; R8 := R8[0x23d5322f]
  21 [-]: MOVE      R9 R1        ; R9 := R1
  22 [-]: MOVE      R10 R7       ; R10 := R7
  23 [-]: CALL      R8 3 1       ; R8(R9,R10)
  24 [-]: FORLOOP   R3 18        ; R3 += R5; if R3 <= R4 then begin PC := 18; R6 := R3 end
  25 [-]: GETGLOBAL R8 K4        ; R8 := 0x33bdd652
- 26 [-]: GETTABLE  R8 R8 K5     ; R82 := R8[0x23d5322f]
+ 26 [-]: GETTABLE  R8 R8 K5     ; R8 := R8[0x23d5322f]
  27 [-]: MOVE      R9 R1        ; R9 := R1
  28 [-]: MOVE      R10 R0       ; R10 := R0
  29 [-]: CALL      R8 3 1       ; R8(R9,R10)
@@ -94,7 +94,7 @@
  35 [-]: LOADK     R11 1        ; R11 := 1.000000
  36 [-]: FORPREP   R9 42        ; R9 -= R11; PC := 42
  37 [-]: GETGLOBAL R13 K4       ; R13 := 0x33bdd652
- 38 [-]: GETTABLE  R13 R13 K5   ; R82 := R13[0x23d5322f]
+ 38 [-]: GETTABLE  R13 R13 K5   ; R13 := R13[0x23d5322f]
  39 [-]: MOVE      R14 R1       ; R14 := R1
  40 [-]: GETTABLE  R15 R8 R12   ; R15 := R8[R12]
  41 [-]: CALL      R13 3 1      ; R13(R14,R15)
@@ -119,7 +119,7 @@
   5 [-]: LOADK     R5 255       ; R5 := 255.000000
   6 [-]: CALL      R1 5 2       ; R1 := R1(R2,R3,R4,R5)
   7 [-]: GETUPVAL  R2 U0        ; R2 := U0
-  8 [-]: GETTABLE  R2 R2 K1     ; R82 := R2[0x4dbfb382]
+  8 [-]: GETTABLE  R2 R2 K1     ; R2 := R2[0x4dbfb382]
   9 [-]: MOVE      R3 R1        ; R3 := R1
  10 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  11 [-]: MOVE      R1 R2        ; R1 := R2
@@ -282,7 +282,7 @@
  47 [-]: TEST      R8 0         ; if not R8 then PC := 56
  48 [-]: JMP       56           ; PC := 56
  49 [-]: GETGLOBAL R8 K6        ; R8 := 0x33bdd652
- 50 [-]: GETTABLE  R8 R8 K7     ; R82 := R8[0x9c1f3b5a]
+ 50 [-]: GETTABLE  R8 R8 K7     ; R8 := R8[0x9c1f3b5a]
  51 [-]: GETGLOBAL R9 K3        ; R9 := _T
  52 [-]: GETTABLE  R9 R9 K4     ; R9 := R9["ArloMinions"]
  53 [-]: GETTABLE  R9 R9 R3     ; R9 := R9[R3]
@@ -431,7 +431,7 @@
  64 [-]: LEN       R13 R13      ; R13 := # R13
  65 [-]: SUB       R12 R12 R13  ; R12 := R12 - R13
  66 [-]: GETGLOBAL R13 K25      ; R13 := 0x5bced4c4
- 67 [-]: GETTABLE  R13 R13 K26  ; R82 := R13[0xdde5c6a1]
+ 67 [-]: GETTABLE  R13 R13 K26  ; R13 := R13[0xdde5c6a1]
  68 [-]: GETGLOBAL R14 K27      ; R14 := 0x20b7f774
  69 [-]: MOVE      R15 R7       ; R15 := R7
  70 [-]: MOVE      R16 R11      ; R16 := R11
@@ -455,13 +455,13 @@
  88 [-]: MOVE      R21 R7       ; R21 := R7
  89 [-]: GETGLOBAL R22 K34      ; R22 := 0xa421af95
  90 [-]: GETGLOBAL R23 K25      ; R23 := 0x5bced4c4
- 91 [-]: GETTABLE  R23 R23 K35  ; R82 := R23[0x3eda26fc]
+ 91 [-]: GETTABLE  R23 R23 K35  ; R23 := R23[0x3eda26fc]
  92 [-]: MOVE      R24 R13      ; R24 := R13
  93 [-]: CALL      R23 2 2      ; R23 := R23(R24)
  94 [-]: MUL       R23 R18 R23  ; R23 := R18 * R23
  95 [-]: LOADK     R24 0        ; R24 := 0.000000
  96 [-]: GETGLOBAL R25 K25      ; R25 := 0x5bced4c4
- 97 [-]: GETTABLE  R25 R25 K36  ; R82 := R25[0x00fa6bf1]
+ 97 [-]: GETTABLE  R25 R25 K36  ; R25 := R25[0x00fa6bf1]
  98 [-]: MOVE      R26 R13      ; R26 := R13
  99 [-]: CALL      R25 2 2      ; R25 := R25(R26)
 100 [-]: MUL       R25 R18 R25  ; R25 := R18 * R25
@@ -498,7 +498,7 @@
 131 [-]: MOVE      R28 R1       ; R28 := R1
 132 [-]: CALL      R22 7 1      ; R22(R23,R24,R25,R26,R27,R28)
 133 [-]: GETGLOBAL R22 K46      ; R22 := 0x33bdd652
-134 [-]: GETTABLE  R22 R22 K47  ; R82 := R22[0x23d5322f]
+134 [-]: GETTABLE  R22 R22 K47  ; R22 := R22[0x23d5322f]
 135 [-]: GETGLOBAL R23 K23      ; R23 := _T
 136 [-]: GETTABLE  R23 R23 K24  ; R23 := R23["ArloMinions"]
 137 [-]: GETTABLE  R23 R23 R4   ; R23 := R23[R4]
@@ -564,13 +564,13 @@
  30 [-]: SELF      R4 R0 K6     ; R5 := R0; R4 := R0[0xd2715720]
  31 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  32 [-]: GETGLOBAL R5 K9        ; R5 := 0x5bced4c4
- 33 [-]: GETTABLE  R5 R5 K10    ; R82 := R5[0x55f27c30]
+ 33 [-]: GETTABLE  R5 R5 K10    ; R5 := R5[0x55f27c30]
  34 [-]: MOVE      R6 R1        ; R6 := R1
  35 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  36 [-]: SUB       R4 R4 R5     ; R4 := R4 - R5
  37 [-]: CALL      R2 3 1       ; R2(R3,R4)
  38 [-]: GETGLOBAL R2 K9        ; R2 := 0x5bced4c4
- 39 [-]: GETTABLE  R2 R2 K10    ; R82 := R2[0x55f27c30]
+ 39 [-]: GETTABLE  R2 R2 K10    ; R2 := R2[0x55f27c30]
  40 [-]: MOVE      R3 R1        ; R3 := R1
  41 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  42 [-]: SUB       R1 R1 R2     ; R1 := R1 - R2

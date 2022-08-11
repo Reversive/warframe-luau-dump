@@ -617,7 +617,7 @@
  48 [-]: TEST      R6 1         ; if R6 then PC := 64
  49 [-]: JMP       64           ; PC := 64
  50 [-]: GETGLOBAL R6 K9        ; R6 := 0x6c97a788
- 51 [-]: GETTABLE  R6 R6 K10    ; R82 := R6[0x733fc736]
+ 51 [-]: GETTABLE  R6 R6 K10    ; R6 := R6[0x733fc736]
  52 [-]: LOADBOOL  R7 1 0       ; R7 := true
  53 [-]: CALL      R6 2 2       ; R6 := R6(R7)
  54 [-]: SELF      R7 R6 K11    ; R8 := R6; R7 := R6[0x277bf617]
@@ -733,7 +733,7 @@
  87 [-]: TEST      R10 1        ; if R10 then PC := 116
  88 [-]: JMP       116          ; PC := 116
  89 [-]: GETGLOBAL R10 K22      ; R10 := 0x34291f5c
- 90 [-]: GETTABLE  R10 R10 K23  ; R82 := R10[0x35c16153]
+ 90 [-]: GETTABLE  R10 R10 K23  ; R10 := R10[0x35c16153]
  91 [-]: CALL      R10 1 2      ; R10 := R10()
  92 [-]: SETTABLE  R10 K24 R9   ; R10["baseAmount"] := R9
  93 [-]: SELF      R11 R10 K25  ; R12 := R10; R11 := R10[0x1586e35e]

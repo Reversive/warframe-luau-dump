@@ -151,7 +151,7 @@
  67 [-]: TEST      R6 0         ; if not R6 then PC := 101
  68 [-]: JMP       101          ; PC := 101
  69 [-]: GETGLOBAL R6 K13       ; R6 := _T
- 70 [-]: GETTABLE  R6 R6 K20    ; R82 := R6[0x7d021b96]
+ 70 [-]: GETTABLE  R6 R6 K20    ; R6 := R6[0x7d021b96]
  71 [-]: MOVE      R7 R5        ; R7 := R5
  72 [-]: LOADK     R8 K21       ; R8 := ".Progress"
  73 [-]: CONCAT    R7 R7 R8     ; R7 := R7 .. R8
@@ -169,7 +169,7 @@
  85 [-]: LOADK     R11 K25      ; R11 := 0.400000
  86 [-]: CALL      R6 6 1       ; R6(R7,R8,R9,R10,R11)
  87 [-]: GETGLOBAL R6 K13       ; R6 := _T
- 88 [-]: GETTABLE  R6 R6 K20    ; R82 := R6[0x7d021b96]
+ 88 [-]: GETTABLE  R6 R6 K20    ; R6 := R6[0x7d021b96]
  89 [-]: MOVE      R7 R5        ; R7 := R5
  90 [-]: LOADK     R8 K26       ; R8 := ".TacticalText"
  91 [-]: CONCAT    R7 R7 R8     ; R7 := R7 .. R8
@@ -302,7 +302,7 @@
   6 [-]: TEST      R3 1         ; if R3 then PC := 12
   7 [-]: JMP       12           ; PC := 12
   8 [-]: GETUPVAL  R3 U0        ; R3 := U0
-  9 [-]: GETTABLE  R3 R3 K5     ; R82 := R3[0x659d451f]
+  9 [-]: GETTABLE  R3 R3 K5     ; R3 := R3[0x659d451f]
  10 [-]: GETGLOBAL R4 K4        ; R4 := 0x865dff4f
  11 [-]: CALL      R3 2 1       ; R3(R4)
  12 [-]: GETGLOBAL R3 K0        ; R3 := _T
@@ -316,7 +316,7 @@
  20 [-]: TEST      R5 1         ; if R5 then PC := 89
  21 [-]: JMP       89           ; PC := 89
  22 [-]: GETGLOBAL R5 K0        ; R5 := _T
- 23 [-]: GETTABLE  R5 R5 K9     ; R82 := R5[0xcd34d200]
+ 23 [-]: GETTABLE  R5 R5 K9     ; R5 := R5[0xcd34d200]
  24 [-]: MOVE      R6 R4        ; R6 := R4
  25 [-]: CALL      R5 2 1       ; R5(R6)
  26 [-]: GETGLOBAL R5 K0        ; R5 := _T
@@ -366,7 +366,7 @@
  70 [-]: LOADK     R10 -7       ; R10 := -7.000000
  71 [-]: CALL      R5 6 1       ; R5(R6,R7,R8,R9,R10)
  72 [-]: GETGLOBAL R5 K0        ; R5 := _T
- 73 [-]: GETTABLE  R5 R5 K18    ; R82 := R5[0x7d021b96]
+ 73 [-]: GETTABLE  R5 R5 K18    ; R5 := R5[0x7d021b96]
  74 [-]: MOVE      R6 R4        ; R6 := R4
  75 [-]: LOADK     R7 K19       ; R7 := ".Progress"
  76 [-]: CONCAT    R6 R6 R7     ; R6 := R6 .. R7
@@ -439,7 +439,7 @@
 143 [-]: GETTABLE  R12 R12 K30  ; R12 := R12["UIColor_Green"]
 144 [-]: CALL      R7 6 1       ; R7(R8,R9,R10,R11,R12)
 145 [-]: GETGLOBAL R7 K0        ; R7 := _T
-146 [-]: GETTABLE  R7 R7 K18    ; R82 := R7[0x7d021b96]
+146 [-]: GETTABLE  R7 R7 K18    ; R7 := R7[0x7d021b96]
 147 [-]: MOVE      R8 R4        ; R8 := R4
 148 [-]: LOADK     R9 K31       ; R9 := ".TacticalText"
 149 [-]: CONCAT    R8 R8 R9     ; R8 := R8 .. R9

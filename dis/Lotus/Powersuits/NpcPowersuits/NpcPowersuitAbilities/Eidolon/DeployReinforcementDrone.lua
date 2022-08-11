@@ -33,7 +33,7 @@
 ; Max Stack Size:  7
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0x34291f5c
-  2 [-]: GETTABLE  R1 R1 K1     ; R82 := R1[0x35c16153]
+  2 [-]: GETTABLE  R1 R1 K1     ; R1 := R1[0x35c16153]
   3 [-]: CALL      R1 1 2       ; R1 := R1()
   4 [-]: SELF      R2 R0 K3     ; R3 := R0; R2 := R0[0xb40c191a]
   5 [-]: CALL      R2 2 2       ; R2 := R2(R3)

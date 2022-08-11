@@ -66,7 +66,7 @@
  57 [-]: GETGLOBAL R12 K10      ; R12 := 0x7ed0a956
  58 [-]: LOADK     R13 K26      ; R13 := "/Lotus/Types/Friendly/Rescue/RescueAgentGrineer"
  59 [-]: CALL      R12 2 2      ; R12 := R12(R13)
- 60 [-]: SETTABLE  R11 K16 R12  ; R11["vipAgent"] := R12
+ 60 [-]: SETTABLE  R11 K16 R12  ; R11[0x00000041] := R12
  61 [-]: NEWTABLE  R12 0 4      ; R12 := {}
  62 [-]: GETGLOBAL R13 K10      ; R13 := 0x7ed0a956
  63 [-]: LOADK     R14 K27      ; R14 := "/Lotus/Levels/Proc/Transitional/GrineerToCorpusSabotage"
@@ -118,7 +118,7 @@
 109 [-]: GETGLOBAL R12 K10      ; R12 := 0x7ed0a956
 110 [-]: LOADK     R13 K35      ; R13 := "/Lotus/Types/Friendly/Rescue/RescueAgentCorpus"
 111 [-]: CALL      R12 2 2      ; R12 := R12(R13)
-112 [-]: SETTABLE  R11 K16 R12  ; R11["vipAgent"] := R12
+112 [-]: SETTABLE  R11 K16 R12  ; R11[0x00000041] := R12
 113 [-]: NEWTABLE  R12 0 4      ; R12 := {}
 114 [-]: GETGLOBAL R13 K10      ; R13 := 0x7ed0a956
 115 [-]: LOADK     R14 K36      ; R14 := "/Lotus/Levels/Proc/Transitional/CorpusToGrineerSabotage"
@@ -348,7 +348,7 @@
 339 [-]: GETGLOBAL R12 K19      ; R12 := 0xb009bbc6
 340 [-]: LOADK     R13 K43      ; R13 := "/Lotus/Types/Game/EnemySpecs/GrineerInfestedMixB"
 341 [-]: CALL      R12 2 2      ; R12 := R12(R13)
-342 [-]: SETTABLE  R11 K70 R12  ; R11[0x00000061] := R12
+342 [-]: SETTABLE  R11 K70 R12  ; R11["enemySpecGrineer"] := R12
 343 [-]: GETGLOBAL R12 K19      ; R12 := 0xb009bbc6
 344 [-]: LOADK     R13 K45      ; R13 := "/Lotus/Types/Game/EnemySpecs/CorpusInfestedMixB"
 345 [-]: CALL      R12 2 2      ; R12 := R12(R13)
@@ -356,11 +356,11 @@
 347 [-]: GETGLOBAL R12 K10      ; R12 := 0x7ed0a956
 348 [-]: LOADK     R13 K72      ; R13 := "/Lotus/Types/Enemies/Infested/Vip/QuadrupedVIP"
 349 [-]: CALL      R12 2 2      ; R12 := R12(R13)
-350 [-]: SETTABLE  R11 K16 R12  ; R11["vipAgent"] := R12
+350 [-]: SETTABLE  R11 K16 R12  ; R11[0x00000041] := R12
 351 [-]: SETTABLE  R11 K73 K74  ; R11["uniqueName"] := "/Lotus/Language/Bosses/BossPhorid"
 352 [-]: NEWTABLE  R12 0 0      ; R12 := {}
 353 [-]: GETGLOBAL R13 K7       ; R13 := 0x6c97a788
-354 [-]: GETTABLE  R13 R13 K75  ; R82 := R13[0x6e0e9f85]
+354 [-]: GETTABLE  R13 R13 K75  ; R13 := R13[0x6e0e9f85]
 355 [-]: CALL      R13 1 2      ; R13 := R13()
 356 [-]: CLOSURE   R14 0        ; R14 := closure(Function #1)
 357 [-]: MOVE      R0 R3        ; R0 := R3
@@ -470,7 +470,7 @@
  18 [-]: EQ        0 R8 K3      ; if R8 ~= 2.000000 then PC := 25
  19 [-]: JMP       25           ; PC := 25
  20 [-]: GETGLOBAL R14 K4       ; R14 := 0x33bdd652
- 21 [-]: GETTABLE  R14 R14 K5   ; R82 := R14[0x23d5322f]
+ 21 [-]: GETTABLE  R14 R14 K5   ; R14 := R14[0x23d5322f]
  22 [-]: MOVE      R15 R2       ; R15 := R2
  23 [-]: GETTABLE  R16 R7 K6    ; R16 := R7["enemySpec"]
  24 [-]: CALL      R14 3 1      ; R14(R15,R16)
@@ -504,7 +504,7 @@
  10 [-]: EQ        0 R9 R2      ; if R9 ~= R2 then PC := 17
  11 [-]: JMP       17           ; PC := 17
  12 [-]: GETGLOBAL R9 K3        ; R9 := 0x33bdd652
- 13 [-]: GETTABLE  R9 R9 K4     ; R82 := R9[0x23d5322f]
+ 13 [-]: GETTABLE  R9 R9 K4     ; R9 := R9[0x23d5322f]
  14 [-]: MOVE      R10 R3       ; R10 := R3
  15 [-]: GETTABLE  R11 R8 K5    ; R11 := R8["enemySpec"]
  16 [-]: CALL      R9 3 1       ; R9(R10,R11)
@@ -538,14 +538,14 @@
  10 [-]: CALL      R2 2 0       ; R2,... := R2(R3)
  11 [-]: CALL      R1 0 2       ; R1 := R1(R2,...)
  12 [-]: GETGLOBAL R2 K3        ; R2 := 0x7f5022cf
- 13 [-]: GETTABLE  R2 R2 K4     ; R82 := R2[0xa5c556b9]
+ 13 [-]: GETTABLE  R2 R2 K4     ; R2 := R2[0xa5c556b9]
  14 [-]: MOVE      R3 R1        ; R3 := R1
  15 [-]: LOADK     R4 K5        ; R4 := "Galleon"
  16 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
  17 [-]: EQ        0 R2 K6      ; if R2 ~= nil then PC := 27
  18 [-]: JMP       27           ; PC := 27
  19 [-]: GETGLOBAL R2 K3        ; R2 := 0x7f5022cf
- 20 [-]: GETTABLE  R2 R2 K4     ; R82 := R2[0xa5c556b9]
+ 20 [-]: GETTABLE  R2 R2 K4     ; R2 := R2[0xa5c556b9]
  21 [-]: MOVE      R3 R1        ; R3 := R1
  22 [-]: LOADK     R4 K7        ; R4 := "CorpusShip"
  23 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
@@ -581,7 +581,7 @@
  13 [-]: CALL      R3 2 4       ; R3,R4,R5 := R3(R4)
  14 [-]: JMP       23           ; PC := 23
  15 [-]: GETGLOBAL R8 K7        ; R8 := 0x7f5022cf
- 16 [-]: GETTABLE  R8 R8 K8     ; R82 := R8[0xa5c556b9]
+ 16 [-]: GETTABLE  R8 R8 K8     ; R8 := R8[0xa5c556b9]
  17 [-]: MOVE      R9 R1        ; R9 := R1
  18 [-]: MOVE      R10 R7       ; R10 := R7
  19 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
@@ -656,27 +656,27 @@
  50 [-]: SETTABLE  R6 K7 R7     ; R6["invasionAllyFaction"] := R7
  51 [-]: RETURN    R6 2         ; return R6
  52 [-]: GETUPVAL  R7 U0        ; R7 := U0
- 53 [-]: GETTABLE  R7 R7 K11    ; R82 := R7[0x06d055f9]
+ 53 [-]: GETTABLE  R7 R7 K11    ; R7 := R7[0x06d055f9]
  54 [-]: MOVE      R8 R2        ; R8 := R2
  55 [-]: GETTABLE  R9 R0 K12    ; R9 := R0["mAttackerMissionInfo"]
  56 [-]: GETTABLE  R10 R0 K13   ; R10 := R0["mDefenderMissionInfo"]
  57 [-]: CALL      R7 4 2       ; R7 := R7(R8,R9,R10)
  58 [-]: GETUPVAL  R8 U0        ; R8 := U0
- 59 [-]: GETTABLE  R8 R8 K11    ; R82 := R8[0x06d055f9]
+ 59 [-]: GETTABLE  R8 R8 K11    ; R8 := R8[0x06d055f9]
  60 [-]: MOVE      R9 R2        ; R9 := R2
  61 [-]: GETTABLE  R10 R0 K8    ; R10 := R0["mFaction"]
  62 [-]: GETTABLE  R11 R1 K14   ; R11 := R1["mission"]
  63 [-]: GETTABLE  R11 R11 K15  ; R11 := R11["faction"]
  64 [-]: CALL      R8 4 2       ; R8 := R8(R9,R10,R11)
  65 [-]: GETUPVAL  R9 U0        ; R9 := U0
- 66 [-]: GETTABLE  R9 R9 K11    ; R82 := R9[0x06d055f9]
+ 66 [-]: GETTABLE  R9 R9 K11    ; R9 := R9[0x06d055f9]
  67 [-]: MOVE      R10 R2       ; R10 := R2
  68 [-]: GETTABLE  R11 R1 K14   ; R11 := R1["mission"]
  69 [-]: GETTABLE  R11 R11 K15  ; R11 := R11["faction"]
  70 [-]: GETTABLE  R12 R0 K8    ; R12 := R0["mFaction"]
  71 [-]: CALL      R9 4 2       ; R9 := R9(R10,R11,R12)
  72 [-]: GETUPVAL  R10 U0       ; R10 := U0
- 73 [-]: GETTABLE  R10 R10 K11  ; R82 := R10[0x06d055f9]
+ 73 [-]: GETTABLE  R10 R10 K11  ; R10 := R10[0x06d055f9]
  74 [-]: GETTABLE  R11 R7 K16   ; R11 := R7["seed"]
  75 [-]: GETUPVAL  R12 U1       ; R12 := U1
  76 [-]: GETTABLE  R12 R12 K16  ; R12 := R12["seed"]
@@ -713,7 +713,7 @@
 107 [-]: GETTABLE  R12 R12 K23  ; R12 := R12["levelOverride"]
 108 [-]: SETTABLE  R11 K23 R12  ; R11["levelOverride"] := R12
 109 [-]: GETUPVAL  R12 U0       ; R12 := U0
-110 [-]: GETTABLE  R12 R12 K11  ; R82 := R12[0x06d055f9]
+110 [-]: GETTABLE  R12 R12 K11  ; R12 := R12[0x06d055f9]
 111 [-]: EQ        1 R8 K22     ; if R8 == 0.000000 then PC := 114
 112 [-]: JMP       114          ; PC := 114
 113 [-]: LOADBOOL  R13 0 1      ; R13 := false; PC := 114
@@ -759,13 +759,13 @@
 153 [-]: SETTABLE  R11 K27 R13  ; R11["vipAgent"] := R13
 154 [-]: JMP       191          ; PC := 191
 155 [-]: GETUPVAL  R13 U0       ; R13 := U0
-156 [-]: GETTABLE  R13 R13 K11  ; R82 := R13[0x06d055f9]
+156 [-]: GETTABLE  R13 R13 K11  ; R13 := R13[0x06d055f9]
 157 [-]: MOVE      R14 R2       ; R14 := R2
 158 [-]: GETUPVAL  R15 U7       ; R15 := U7
 159 [-]: GETUPVAL  R16 U8       ; R16 := U8
 160 [-]: CALL      R13 4 2      ; R13 := R13(R14,R15,R16)
 161 [-]: GETUPVAL  R14 U9       ; R14 := U9
-162 [-]: GETTABLE  R14 R14 K30  ; R82 := R14[0xfcbca8f8]
+162 [-]: GETTABLE  R14 R14 K30  ; R14 := R14[0xfcbca8f8]
 163 [-]: GETTABLE  R15 R1 K14   ; R15 := R1["mission"]
 164 [-]: GETTABLE  R15 R15 K31  ; R15 := R15["location"]
 165 [-]: MOVE      R16 R13      ; R16 := R13
@@ -900,7 +900,7 @@
 294 [-]: JMP       307          ; PC := 307
 295 [-]: GETUPVAL  R18 U15      ; R18 := U15
 296 [-]: GETUPVAL  R19 U0       ; R19 := U0
-297 [-]: GETTABLE  R19 R19 K11  ; R82 := R19[0x06d055f9]
+297 [-]: GETTABLE  R19 R19 K11  ; R19 := R19[0x06d055f9]
 298 [-]: MOVE      R20 R2       ; R20 := R2
 299 [-]: LOADK     R21 K53      ; R21 := "ATTACKER : "
 300 [-]: LOADK     R22 K54      ; R22 := "DEFENDER: "
@@ -916,7 +916,7 @@
 310 [-]: JMP       334          ; PC := 334
 311 [-]: GETGLOBAL R18 K32      ; R18 := 0x3d106989
 312 [-]: GETUPVAL  R19 U0       ; R19 := U0
-313 [-]: GETTABLE  R19 R19 K11  ; R82 := R19[0x06d055f9]
+313 [-]: GETTABLE  R19 R19 K11  ; R19 := R19[0x06d055f9]
 314 [-]: MOVE      R20 R2       ; R20 := R2
 315 [-]: LOADK     R21 K53      ; R21 := "ATTACKER : "
 316 [-]: LOADK     R22 K54      ; R22 := "DEFENDER: "
@@ -958,7 +958,7 @@
   6 [-]: GETGLOBAL R0 K0        ; R0 := _T
   7 [-]: SETTABLE  R0 K1 K2     ; R0["InvasionTest"] := true
   8 [-]: NEWTABLE  R0 0 0       ; R0 := {}
-  9 [-]: SETUPVAL  R0 U0        ; U82 := 
+  9 [-]: SETUPVAL  R0 U0        ; U82 := R0
  10 [-]: NEWTABLE  R0 4 0       ; R0 := {}
  11 [-]: NEWTABLE  R1 0 2       ; R1 := {}
  12 [-]: SETTABLE  R1 K3 K5     ; R1["factionA"] := 0.000000
@@ -974,7 +974,7 @@
  22 [-]: SETTABLE  R4 K6 K7     ; R4["factionB"] := 1.000000
  23 [-]: SETLIST   R0 4 1       ; R0[(1-1)*FPF+i] := R(0+i), 1 <= i <= 4
  24 [-]: GETUPVAL  R1 U1        ; R1 := U1
- 25 [-]: GETTABLE  R1 R1 K9     ; R82 := R1[0x5e35d4d6]
+ 25 [-]: GETTABLE  R1 R1 K9     ; R1 := R1[0x5e35d4d6]
  26 [-]: CALL      R1 1 2       ; R1 := R1()
  27 [-]: SELF      R1 R1 K10    ; R2 := R1; R1 := R1[0xd13b47be]
  28 [-]: CALL      R1 2 2       ; R1 := R1(R2)
@@ -1049,7 +1049,7 @@
  97 [-]: NEWTABLE  R18 0 0      ; R18 := {}
  98 [-]: SETTABLE  R12 K25 R18  ; R12["mAttackerMissionInfo"] := R18
  99 [-]: GETGLOBAL R18 K4       ; R18 := 0x6c97a788
-100 [-]: GETTABLE  R18 R18 K26  ; R82 := R18[0x6e0e9f85]
+100 [-]: GETTABLE  R18 R18 K26  ; R18 := R18[0x6e0e9f85]
 101 [-]: CALL      R18 1 2      ; R18 := R18()
 102 [-]: SETTABLE  R12 K25 R18  ; R12["mAttackerMissionInfo"] := R18
 103 [-]: GETTABLE  R18 R12 K25  ; R18 := R12["mAttackerMissionInfo"]
@@ -1058,7 +1058,7 @@
 106 [-]: NEWTABLE  R18 0 0      ; R18 := {}
 107 [-]: SETTABLE  R12 K27 R18  ; R12["mDefenderMissionInfo"] := R18
 108 [-]: GETGLOBAL R18 K4       ; R18 := 0x6c97a788
-109 [-]: GETTABLE  R18 R18 K26  ; R82 := R18[0x6e0e9f85]
+109 [-]: GETTABLE  R18 R18 K26  ; R18 := R18[0x6e0e9f85]
 110 [-]: CALL      R18 1 2      ; R18 := R18()
 111 [-]: SETTABLE  R12 K27 R18  ; R12["mDefenderMissionInfo"] := R18
 112 [-]: GETTABLE  R18 R12 K27  ; R18 := R12["mDefenderMissionInfo"]
@@ -1105,12 +1105,12 @@
   4 [-]: GETUPVAL  R2 U0        ; R2 := U0
   5 [-]: CALL      R2 1 1       ; R2()
   6 [-]: GETUPVAL  R2 U1        ; R2 := U1
-  7 [-]: GETTABLE  R2 R2 K0     ; R82 := R2[0x55f0bd6d]
+  7 [-]: GETTABLE  R2 R2 K0     ; R2 := R2[0x55f0bd6d]
   8 [-]: CALL      R2 1 2       ; R2 := R2()
   9 [-]: GETUPVAL  R3 U2        ; R3 := U2
  10 [-]: MOD       R2 R2 R3     ; R2 := R2 % R3
  11 [-]: GETGLOBAL R3 K1        ; R3 := 0x5bced4c4
- 12 [-]: GETTABLE  R3 R3 K2     ; R82 := R3[0x55f27c30]
+ 12 [-]: GETTABLE  R3 R3 K2     ; R3 := R3[0x55f27c30]
  13 [-]: GETUPVAL  R4 U3        ; R4 := U3
  14 [-]: DIV       R4 R2 R4     ; R4 := R2 / R4
  15 [-]: CALL      R3 2 2       ; R3 := R3(R4)
@@ -1137,7 +1137,7 @@
  36 [-]: GETTABLE  R5 R5 R4     ; R5 := R5[R4]
  37 [-]: SETTABLE  R5 K4 R3     ; R5["cycleNum"] := R3
  38 [-]: GETUPVAL  R5 U1        ; R5 := U1
- 39 [-]: GETTABLE  R5 R5 K6     ; R82 := R5[0x5e35d4d6]
+ 39 [-]: GETTABLE  R5 R5 K6     ; R5 := R5[0x5e35d4d6]
  40 [-]: CALL      R5 1 2       ; R5 := R5()
  41 [-]: SELF      R5 R5 K7     ; R6 := R5; R5 := R5[0x3ad9ed31]
  42 [-]: GETTABLE  R7 R1 K8     ; R7 := R1["mNode"]

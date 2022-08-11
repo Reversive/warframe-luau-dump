@@ -305,7 +305,7 @@
  21 [-]: TEST      R7 0         ; if not R7 then PC := 28
  22 [-]: JMP       28           ; PC := 28
  23 [-]: GETGLOBAL R7 K5        ; R7 := 0x33bdd652
- 24 [-]: GETTABLE  R7 R7 K6     ; R82 := R7[0x9c1f3b5a]
+ 24 [-]: GETTABLE  R7 R7 K6     ; R7 := R7[0x9c1f3b5a]
  25 [-]: MOVE      R8 R1        ; R8 := R1
  26 [-]: MOVE      R9 R5        ; R9 := R5
  27 [-]: CALL      R7 3 1       ; R7(R8,R9)
@@ -337,7 +337,7 @@
   9 [-]: MOVE      R2 R0        ; R2 := R0
  10 [-]: CALL      R1 2 2       ; R1 := R1(R2)
  11 [-]: GETGLOBAL R2 K2        ; R2 := 0x33bdd652
- 12 [-]: GETTABLE  R2 R2 K3     ; R82 := R2[0x23d5322f]
+ 12 [-]: GETTABLE  R2 R2 K3     ; R2 := R2[0x23d5322f]
  13 [-]: GETGLOBAL R3 K0        ; R3 := _T
  14 [-]: GETTABLE  R3 R3 K1     ; R3 := R3["activeConservationEncounters"]
  15 [-]: MOVE      R4 R1        ; R4 := R1
@@ -411,7 +411,7 @@
  20 [-]: EQ        0 R8 R9      ; if R8 ~= R9 then PC := 28
  21 [-]: JMP       28           ; PC := 28
  22 [-]: GETGLOBAL R8 K5        ; R8 := 0x33bdd652
- 23 [-]: GETTABLE  R8 R8 K6     ; R82 := R8[0x9c1f3b5a]
+ 23 [-]: GETTABLE  R8 R8 K6     ; R8 := R8[0x9c1f3b5a]
  24 [-]: MOVE      R9 R2        ; R9 := R2
  25 [-]: MOVE      R10 R6       ; R10 := R6
  26 [-]: CALL      R8 3 1       ; R8(R9,R10)
@@ -469,7 +469,7 @@
  13 [-]: TEST      R6 0         ; if not R6 then PC := 22
  14 [-]: JMP       22           ; PC := 22
  15 [-]: GETGLOBAL R6 K4        ; R6 := 0x33bdd652
- 16 [-]: GETTABLE  R6 R6 K5     ; R82 := R6[0x9c1f3b5a]
+ 16 [-]: GETTABLE  R6 R6 K5     ; R6 := R6[0x9c1f3b5a]
  17 [-]: GETGLOBAL R7 K0        ; R7 := _T
  18 [-]: GETTABLE  R7 R7 K1     ; R7 := R7["activeConservationEncounters"]
  19 [-]: MOVE      R8 R4        ; R8 := R4
@@ -525,7 +525,7 @@
  13 [-]: TEST      R6 0         ; if not R6 then PC := 22
  14 [-]: JMP       22           ; PC := 22
  15 [-]: GETGLOBAL R6 K4        ; R6 := 0x33bdd652
- 16 [-]: GETTABLE  R6 R6 K5     ; R82 := R6[0x9c1f3b5a]
+ 16 [-]: GETTABLE  R6 R6 K5     ; R6 := R6[0x9c1f3b5a]
  17 [-]: GETGLOBAL R7 K0        ; R7 := _T
  18 [-]: GETTABLE  R7 R7 K1     ; R7 := R7["activeConservationEncounters"]
  19 [-]: MOVE      R8 R4        ; R8 := R4
@@ -568,7 +568,7 @@
  13 [-]: TEST      R6 0         ; if not R6 then PC := 22
  14 [-]: JMP       22           ; PC := 22
  15 [-]: GETGLOBAL R6 K4        ; R6 := 0x33bdd652
- 16 [-]: GETTABLE  R6 R6 K5     ; R82 := R6[0x9c1f3b5a]
+ 16 [-]: GETTABLE  R6 R6 K5     ; R6 := R6[0x9c1f3b5a]
  17 [-]: GETGLOBAL R7 K0        ; R7 := _T
  18 [-]: GETTABLE  R7 R7 K1     ; R7 := R7["activeConservationEncounters"]
  19 [-]: MOVE      R8 R4        ; R8 := R4

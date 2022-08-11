@@ -39,20 +39,20 @@
   1 [-]: EQ        0 R0 K0      ; if R0 ~= 1.000000 then PC := 6
   2 [-]: JMP       6            ; PC := 6
   3 [-]: LOADK     R1 0         ; R1 := 0.250000
-  4 [-]: SETUPVAL  R1 U0        ; U82 := 
+  4 [-]: SETUPVAL  R1 U0        ; U82 := R0
   5 [-]: JMP       18           ; PC := 18
   6 [-]: EQ        0 R0 K1      ; if R0 ~= 2.000000 then PC := 11
   7 [-]: JMP       11           ; PC := 11
   8 [-]: LOADK     R1 0         ; R1 := 0.500000
-  9 [-]: SETUPVAL  R1 U0        ; U82 := 
+  9 [-]: SETUPVAL  R1 U0        ; U82 := R0
  10 [-]: JMP       18           ; PC := 18
  11 [-]: EQ        0 R0 K2      ; if R0 ~= 3.000000 then PC := 16
  12 [-]: JMP       16           ; PC := 16
  13 [-]: LOADK     R1 0         ; R1 := 0.750000
- 14 [-]: SETUPVAL  R1 U0        ; U82 := 
+ 14 [-]: SETUPVAL  R1 U0        ; U82 := R0
  15 [-]: JMP       18           ; PC := 18
  16 [-]: LOADK     R1 1         ; R1 := 1.000000
- 17 [-]: SETUPVAL  R1 U0        ; U82 := 
+ 17 [-]: SETUPVAL  R1 U0        ; U82 := R0
  18 [-]: RETURN    R0 1         ; return 
 
 
@@ -73,12 +73,12 @@
   6 [-]: CALL      R1 2 1       ; R1(R2)
   7 [-]: NEWTABLE  R1 0 0       ; R1 := {}
   8 [-]: GETGLOBAL R2 K3        ; R2 := 0x33bdd652
-  9 [-]: GETTABLE  R2 R2 K4     ; R82 := R2[0x23d5322f]
+  9 [-]: GETTABLE  R2 R2 K4     ; R2 := R2[0x23d5322f]
  10 [-]: MOVE      R3 R1        ; R3 := R1
  11 [-]: NEWTABLE  R4 0 3       ; R4 := {}
  12 [-]: SETTABLE  R4 K5 K6     ; R4["Label"] := "/Lotus/Language/Labels/AVATAR_SHIELD_RECHARGE_RATE"
  13 [-]: GETGLOBAL R5 K8        ; R5 := 0x5bced4c4
- 14 [-]: GETTABLE  R5 R5 K9     ; R82 := R5[0x55f27c30]
+ 14 [-]: GETTABLE  R5 R5 K9     ; R5 := R5[0x55f27c30]
  15 [-]: GETUPVAL  R6 U1        ; R6 := U1
  16 [-]: MUL       R6 R6 K10    ; R6 := R6 * 100.000000
  17 [-]: CALL      R5 2 2       ; R5 := R5(R6)
@@ -148,7 +148,7 @@
  14 [-]: LOADBOOL  R6 1 0       ; R6 := true
  15 [-]: CALL      R4 3 1       ; R4(R5,R6)
  16 [-]: GETUPVAL  R4 U1        ; R4 := U1
- 17 [-]: GETTABLE  R4 R4 K7     ; R82 := R4[0x8d11e79e]
+ 17 [-]: GETTABLE  R4 R4 K7     ; R4 := R4[0x8d11e79e]
  18 [-]: MOVE      R5 R0        ; R5 := R0
  19 [-]: GETGLOBAL R6 K8        ; R6 := 0x0ed8b456
  20 [-]: LOADK     R7 K9        ; R7 := "PowerCast"

@@ -29,7 +29,7 @@
 ; Max Stack Size:  3
 
   1 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  2 [-]: GETTABLE  R0 R0 K0     ; R82 := R0[0x102e0097]
+  2 [-]: GETTABLE  R0 R0 K0     ; R0 := R0[0x102e0097]
   3 [-]: GETGLOBAL R1 K1        ; R1 := 0x8347ad5f
   4 [-]: GETGLOBAL R2 K2        ; R2 := 0x3dac46c4
   5 [-]: CALL      R0 3 1       ; R0(R1,R2)
@@ -51,7 +51,7 @@
   4 [-]: TEST      R0 0         ; if not R0 then PC := 11
   5 [-]: JMP       11           ; PC := 11
   6 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  7 [-]: GETTABLE  R0 R0 K2     ; R82 := R0[0x102e0097]
+  7 [-]: GETTABLE  R0 R0 K2     ; R0 := R0[0x102e0097]
   8 [-]: GETGLOBAL R1 K3        ; R1 := 0x8347ad5f
   9 [-]: GETGLOBAL R2 K4        ; R2 := 0x3dac46c4
  10 [-]: CALL      R0 3 1       ; R0(R1,R2)

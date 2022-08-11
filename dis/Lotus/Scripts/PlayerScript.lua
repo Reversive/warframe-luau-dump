@@ -116,14 +116,14 @@
  26 [-]: JMP       28           ; PC := 28
  27 [-]: RETURN    R0 1         ; return 
  28 [-]: GETGLOBAL R4 K6        ; R4 := 0x7f5022cf
- 29 [-]: GETTABLE  R4 R4 K7     ; R82 := R4[0xa5c556b9]
+ 29 [-]: GETTABLE  R4 R4 K7     ; R4 := R4[0xa5c556b9]
  30 [-]: MOVE      R5 R0        ; R5 := R0
  31 [-]: LOADK     R6 K8        ; R6 := "Combat"
  32 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
  33 [-]: EQ        1 R4 K9      ; if R4 == nil then PC := 42
  34 [-]: JMP       42           ; PC := 42
  35 [-]: GETGLOBAL R4 K6        ; R4 := 0x7f5022cf
- 36 [-]: GETTABLE  R4 R4 K7     ; R82 := R4[0xa5c556b9]
+ 36 [-]: GETTABLE  R4 R4 K7     ; R4 := R4[0xa5c556b9]
  37 [-]: MOVE      R5 R1        ; R5 := R1
  38 [-]: LOADK     R6 K10       ; R6 := "Fallback"
  39 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
@@ -132,14 +132,14 @@
  42 [-]: LOADBOOL  R4 0 1       ; R4 := false; PC := 43
  43 [-]: LOADBOOL  R4 1 0       ; R4 := true
  44 [-]: GETGLOBAL R5 K6        ; R5 := 0x7f5022cf
- 45 [-]: GETTABLE  R5 R5 K7     ; R82 := R5[0xa5c556b9]
+ 45 [-]: GETTABLE  R5 R5 K7     ; R5 := R5[0xa5c556b9]
  46 [-]: MOVE      R6 R1        ; R6 := R1
  47 [-]: LOADK     R7 K8        ; R7 := "Combat"
  48 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
  49 [-]: EQ        1 R5 K9      ; if R5 == nil then PC := 58
  50 [-]: JMP       58           ; PC := 58
  51 [-]: GETGLOBAL R5 K6        ; R5 := 0x7f5022cf
- 52 [-]: GETTABLE  R5 R5 K7     ; R82 := R5[0xa5c556b9]
+ 52 [-]: GETTABLE  R5 R5 K7     ; R5 := R5[0xa5c556b9]
  53 [-]: MOVE      R6 R1        ; R6 := R1
  54 [-]: LOADK     R7 K10       ; R7 := "Fallback"
  55 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
@@ -200,7 +200,7 @@
 ; Max Stack Size:  2
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := _T
-  2 [-]: GETTABLE  R0 R0 K1     ; R82 := R0[0x2bb5d2cc]
+  2 [-]: GETTABLE  R0 R0 K1     ; R0 := R0[0x2bb5d2cc]
   3 [-]: CALL      R0 1 1       ; R0()
   4 [-]: RETURN    R0 1         ; return 
 
@@ -215,7 +215,7 @@
 ; Max Stack Size:  2
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := _T
-  2 [-]: GETTABLE  R0 R0 K1     ; R82 := R0[0xdf2147fb]
+  2 [-]: GETTABLE  R0 R0 K1     ; R0 := R0[0xdf2147fb]
   3 [-]: CALL      R0 1 1       ; R0()
   4 [-]: RETURN    R0 1         ; return 
 
@@ -230,7 +230,7 @@
 ; Max Stack Size:  2
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := _T
-  2 [-]: GETTABLE  R0 R0 K1     ; R82 := R0[0xf27431aa]
+  2 [-]: GETTABLE  R0 R0 K1     ; R0 := R0[0xf27431aa]
   3 [-]: CALL      R0 1 1       ; R0()
   4 [-]: RETURN    R0 1         ; return 
 
@@ -245,7 +245,7 @@
 ; Max Stack Size:  2
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := _T
-  2 [-]: GETTABLE  R0 R0 K1     ; R82 := R0[0xc206a867]
+  2 [-]: GETTABLE  R0 R0 K1     ; R0 := R0[0xc206a867]
   3 [-]: CALL      R0 1 1       ; R0()
   4 [-]: RETURN    R0 1         ; return 
 
@@ -263,7 +263,7 @@
   2 [-]: LOADK     R2 1         ; R2 := 1.000000
   3 [-]: CALL      R1 2 1       ; R1(R2)
   4 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  5 [-]: GETTABLE  R1 R1 K1     ; R82 := R1[0xb73d420f]
+  5 [-]: GETTABLE  R1 R1 K1     ; R1 := R1[0xb73d420f]
   6 [-]: CALL      R1 1 2       ; R1 := R1()
   7 [-]: GETUPVAL  R2 U0        ; R2 := U0
   8 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["UI_MODE_IN_GAME"]
@@ -326,7 +326,7 @@
  65 [-]: TEST      R3 1         ; if R3 then PC := 76
  66 [-]: JMP       76           ; PC := 76
  67 [-]: GETUPVAL  R3 U0        ; R3 := U0
- 68 [-]: GETTABLE  R3 R3 K16    ; R82 := R3[0xfd7bb484]
+ 68 [-]: GETTABLE  R3 R3 K16    ; R3 := R3[0xfd7bb484]
  69 [-]: MOVE      R4 R0        ; R4 := R0
  70 [-]: LOADBOOL  R5 1 0       ; R5 := true
  71 [-]: CALL      R3 3 1       ; R3(R4,R5)

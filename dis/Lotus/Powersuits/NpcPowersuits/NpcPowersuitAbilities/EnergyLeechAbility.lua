@@ -78,7 +78,7 @@
  24 [-]: TEST      R4 1         ; if R4 then PC := 117
  25 [-]: JMP       117          ; PC := 117
  26 [-]: GETGLOBAL R4 K4        ; R4 := 0x34291f5c
- 27 [-]: GETTABLE  R4 R4 K5     ; R82 := R4[0x35c16153]
+ 27 [-]: GETTABLE  R4 R4 K5     ; R4 := R4[0x35c16153]
  28 [-]: CALL      R4 1 2       ; R4 := R4()
  29 [-]: SELF      R5 R3 K3     ; R6 := R3; R5 := R3[0x9d6904c1]
  30 [-]: GETUPVAL  R7 U0        ; R7 := U0
@@ -87,14 +87,14 @@
  33 [-]: JMP       41           ; PC := 41
  34 [-]: SELF      R5 R4 K6     ; R6 := R4; R5 := R4[0xf326045f]
  35 [-]: GETGLOBAL R7 K4        ; R7 := 0x34291f5c
- 36 [-]: GETTABLE  R7 R7 K7     ; R82 := R7[0x7258f36f]
+ 36 [-]: GETTABLE  R7 R7 K7     ; R7 := R7[0x7258f36f]
  37 [-]: GETGLOBAL R8 K8        ; R8 := 0x1bdff456
  38 [-]: CALL      R7 2 0       ; R7,... := R7(R8)
  39 [-]: CALL      R5 0 1       ; R5(R6,...)
  40 [-]: JMP       47           ; PC := 47
  41 [-]: SELF      R5 R4 K6     ; R6 := R4; R5 := R4[0xf326045f]
  42 [-]: GETGLOBAL R7 K4        ; R7 := 0x34291f5c
- 43 [-]: GETTABLE  R7 R7 K7     ; R82 := R7[0x7258f36f]
+ 43 [-]: GETTABLE  R7 R7 K7     ; R7 := R7[0x7258f36f]
  44 [-]: GETGLOBAL R8 K9        ; R8 := 0x1320887f
  45 [-]: CALL      R7 2 0       ; R7,... := R7(R8)
  46 [-]: CALL      R5 0 1       ; R5(R6,...)
@@ -359,7 +359,7 @@
  35 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  36 [-]: SELF      R3 R3 K12    ; R4 := R3; R3 := R3[0x66905cb0]
  37 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 38 [-]: SETUPVAL  R3 U0        ; U82 := 
+ 38 [-]: SETUPVAL  R3 U0        ; U82 := R0
  39 [-]: GETGLOBAL R3 K0        ; R3 := 0x7b998233
  40 [-]: GETUPVAL  R4 U0        ; R4 := U0
  41 [-]: CALL      R3 2 2       ; R3 := R3(R4)
@@ -500,7 +500,7 @@
 176 [-]: TEST      R4 0         ; if not R4 then PC := 191
 177 [-]: JMP       191          ; PC := 191
 178 [-]: GETGLOBAL R19 K32      ; R19 := 0x5bced4c4
-179 [-]: GETTABLE  R19 R19 K33  ; R82 := R19[0x3630e649]
+179 [-]: GETTABLE  R19 R19 K33  ; R19 := R19[0x3630e649]
 180 [-]: CALL      R19 1 2      ; R19 := R19()
 181 [-]: LT        0 K34 R19    ; if 0.600000 >= R19 then PC := 191
 182 [-]: JMP       191          ; PC := 191

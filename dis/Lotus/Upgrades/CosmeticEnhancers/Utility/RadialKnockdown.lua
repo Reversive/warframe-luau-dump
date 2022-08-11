@@ -48,7 +48,7 @@
  25 [-]: CALL      R12 2 2      ; R12 := R12(R13)
  26 [-]: SUB       R11 R11 R12  ; R11 := R11 - R12
  27 [-]: GETGLOBAL R12 K8       ; R12 := 0x34291f5c
- 28 [-]: GETTABLE  R12 R12 K9   ; R82 := R12[0x35c16153]
+ 28 [-]: GETTABLE  R12 R12 K9   ; R12 := R12[0x35c16153]
  29 [-]: CALL      R12 1 2      ; R12 := R12()
  30 [-]: SETTABLE  R12 K10 K11  ; R12["baseAmount"] := 0.000000
  31 [-]: SELF      R13 R12 K12  ; R14 := R12; R13 := R12[0xfc0e440a]

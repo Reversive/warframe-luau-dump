@@ -105,7 +105,7 @@
  77 [-]: CLOSURE   R9 14        ; R9 := closure(Function #1.15)
  78 [-]: SETTABLE  R8 K69 R9    ; R8["Pressed"] := R9
  79 [-]: GETTABLE  R9 R8 K23    ; R9 := R8["UTIL"]
- 80 [-]: GETTABLE  R9 R9 K70    ; R82 := R9[0x06d055f9]
+ 80 [-]: GETTABLE  R9 R9 K70    ; R9 := R9[0x06d055f9]
  81 [-]: GETGLOBAL R10 K51      ; R10 := 0x0032441c
  82 [-]: GETTABLE  R10 R10 K71  ; R10 := R10["UIColor_Black"]
  83 [-]: EQ        0 R10 K8     ; if R10 ~= nil then PC := 86
@@ -121,7 +121,7 @@
  93 [-]: TEST      R9 0         ; if not R9 then PC := 135
  94 [-]: JMP       135          ; PC := 135
  95 [-]: GETTABLE  R9 R8 K23    ; R9 := R8["UTIL"]
- 96 [-]: GETTABLE  R9 R9 K70    ; R82 := R9[0x06d055f9]
+ 96 [-]: GETTABLE  R9 R9 K70    ; R9 := R9[0x06d055f9]
  97 [-]: GETGLOBAL R10 K51      ; R10 := 0x0032441c
  98 [-]: GETTABLE  R10 R10 K72  ; R10 := R10["UIColor_DarkGrey"]
  99 [-]: EQ        0 R10 K8     ; if R10 ~= nil then PC := 102
@@ -134,7 +134,7 @@
 106 [-]: CALL      R9 4 2       ; R9 := R9(R10,R11,R12)
 107 [-]: SETTABLE  R8 K17 R9    ; R8["mLabelOffColor"] := R9
 108 [-]: GETTABLE  R9 R8 K23    ; R9 := R8["UTIL"]
-109 [-]: GETTABLE  R9 R9 K70    ; R82 := R9[0x06d055f9]
+109 [-]: GETTABLE  R9 R9 K70    ; R9 := R9[0x06d055f9]
 110 [-]: GETGLOBAL R10 K51      ; R10 := 0x0032441c
 111 [-]: GETTABLE  R10 R10 K74  ; R10 := R10["UIColor_Yellow"]
 112 [-]: EQ        0 R10 K8     ; if R10 ~= nil then PC := 115
@@ -147,7 +147,7 @@
 119 [-]: CALL      R9 4 2       ; R9 := R9(R10,R11,R12)
 120 [-]: SETTABLE  R8 K18 R9    ; R8["mButtonOnColor"] := R9
 121 [-]: GETTABLE  R9 R8 K23    ; R9 := R8["UTIL"]
-122 [-]: GETTABLE  R9 R9 K70    ; R82 := R9[0x06d055f9]
+122 [-]: GETTABLE  R9 R9 K70    ; R9 := R9[0x06d055f9]
 123 [-]: GETGLOBAL R10 K51      ; R10 := 0x0032441c
 124 [-]: GETTABLE  R10 R10 K76  ; R10 := R10["UIColor_White"]
 125 [-]: EQ        0 R10 K8     ; if R10 ~= nil then PC := 128
@@ -161,7 +161,7 @@
 133 [-]: SETTABLE  R8 K19 R9    ; R8["mButtonOffColor"] := R9
 134 [-]: JMP       174          ; PC := 174
 135 [-]: GETTABLE  R9 R8 K23    ; R9 := R8["UTIL"]
-136 [-]: GETTABLE  R9 R9 K70    ; R82 := R9[0x06d055f9]
+136 [-]: GETTABLE  R9 R9 K70    ; R9 := R9[0x06d055f9]
 137 [-]: GETGLOBAL R10 K51      ; R10 := 0x0032441c
 138 [-]: GETTABLE  R10 R10 K78  ; R10 := R10["UIColor_LightBlue"]
 139 [-]: EQ        0 R10 K8     ; if R10 ~= nil then PC := 142
@@ -174,7 +174,7 @@
 146 [-]: CALL      R9 4 2       ; R9 := R9(R10,R11,R12)
 147 [-]: SETTABLE  R8 K17 R9    ; R8["mLabelOffColor"] := R9
 148 [-]: GETTABLE  R9 R8 K23    ; R9 := R8["UTIL"]
-149 [-]: GETTABLE  R9 R9 K70    ; R82 := R9[0x06d055f9]
+149 [-]: GETTABLE  R9 R9 K70    ; R9 := R9[0x06d055f9]
 150 [-]: GETGLOBAL R10 K51      ; R10 := 0x0032441c
 151 [-]: GETTABLE  R10 R10 K80  ; R10 := R10["UIColor_Orange"]
 152 [-]: EQ        0 R10 K8     ; if R10 ~= nil then PC := 155
@@ -187,7 +187,7 @@
 159 [-]: CALL      R9 4 2       ; R9 := R9(R10,R11,R12)
 160 [-]: SETTABLE  R8 K18 R9    ; R8["mButtonOnColor"] := R9
 161 [-]: GETTABLE  R9 R8 K23    ; R9 := R8["UTIL"]
-162 [-]: GETTABLE  R9 R9 K70    ; R82 := R9[0x06d055f9]
+162 [-]: GETTABLE  R9 R9 K70    ; R9 := R9[0x06d055f9]
 163 [-]: GETGLOBAL R10 K51      ; R10 := 0x0032441c
 164 [-]: GETTABLE  R10 R10 K82  ; R10 := R10["UIColor_DarkBlue"]
 165 [-]: EQ        0 R10 K8     ; if R10 ~= nil then PC := 168
@@ -254,7 +254,7 @@
 ; Max Stack Size:  2
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0x34291f5c
-  2 [-]: GETTABLE  R1 R1 K1     ; R82 := R1[0x1467d5f4]
+  2 [-]: GETTABLE  R1 R1 K1     ; R1 := R1[0x1467d5f4]
   3 [-]: CALL      R1 1 2       ; R1 := R1()
   4 [-]: TEST      R1 0         ; if not R1 then PC := 11
   5 [-]: JMP       11           ; PC := 11
@@ -278,7 +278,7 @@
 
   1 [-]: LOADK     R1 K0        ; R1 := "onKeyUp_"
   2 [-]: GETGLOBAL R2 K1        ; R2 := 0x7f5022cf
-  3 [-]: GETTABLE  R2 R2 K2     ; R82 := R2[0x1a94c9cc]
+  3 [-]: GETTABLE  R2 R2 K2     ; R2 := R2[0x1a94c9cc]
   4 [-]: GETTABLE  R3 R0 K3     ; R3 := R0["mCallout"]
   5 [-]: LOADK     R4 2         ; R4 := 2.000000
   6 [-]: LOADK     R5 -2        ; R5 := -2.000000
@@ -286,7 +286,7 @@
   8 [-]: CONCAT    R1 R1 R2     ; R1 := R1 .. R2
   9 [-]: LOADK     R2 K4        ; R2 := "onKeyDown_"
  10 [-]: GETGLOBAL R3 K1        ; R3 := 0x7f5022cf
- 11 [-]: GETTABLE  R3 R3 K2     ; R82 := R3[0x1a94c9cc]
+ 11 [-]: GETTABLE  R3 R3 K2     ; R3 := R3[0x1a94c9cc]
  12 [-]: GETTABLE  R4 R0 K3     ; R4 := R0["mCallout"]
  13 [-]: LOADK     R5 2         ; R5 := 2.000000
  14 [-]: LOADK     R6 -2        ; R6 := -2.000000
@@ -308,7 +308,7 @@
  30 [-]: MOVE      R0 R0        ; R0 := R0
  31 [-]: SETTABLE  R3 R1 R4     ; R3[R1] := R4
  32 [-]: GETGLOBAL R4 K1        ; R4 := 0x7f5022cf
- 33 [-]: GETTABLE  R4 R4 K8     ; R82 := R4[0x66edf04f]
+ 33 [-]: GETTABLE  R4 R4 K8     ; R4 := R4[0x66edf04f]
  34 [-]: GETTABLE  R5 R0 K9     ; R5 := R0["mClipName"]
  35 [-]: LOADK     R6 K10       ; R6 := "%."
  36 [-]: LOADK     R7 K7        ; R7 := ""
@@ -363,7 +363,7 @@
 ; Max Stack Size:  2
 
   1 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  2 [-]: GETTABLE  R0 R0 K0     ; R82 := R0[0xfecbb112]
+  2 [-]: GETTABLE  R0 R0 K0     ; R0 := R0[0xfecbb112]
   3 [-]: CALL      R0 1 2       ; R0 := R0()
   4 [-]: TEST      R0 1         ; if R0 then PC := 9
   5 [-]: JMP       9            ; PC := 9
@@ -505,7 +505,7 @@
  55 [-]: LOADK     R6 33        ; R6 := 33.000000
  56 [-]: CALL      R3 4 2       ; R3 := R3(R4,R5,R6)
  57 [-]: GETTABLE  R4 R0 K18    ; R4 := R0["UTIL"]
- 58 [-]: GETTABLE  R4 R4 K19    ; R82 := R4[0x06d055f9]
+ 58 [-]: GETTABLE  R4 R4 K19    ; R4 := R4[0x06d055f9]
  59 [-]: SELF      R5 R0 K6     ; R6 := R0; R5 := R0[0x1467d5f4]
  60 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  61 [-]: GETTABLE  R6 R0 K20    ; R6 := R0["mFittedPaddingWithController"]
@@ -518,7 +518,7 @@
  68 [-]: LOADK     R6 K23       ; R6 := ".gotoAndStop"
  69 [-]: CONCAT    R5 R5 R6     ; R5 := R5 .. R6
  70 [-]: GETTABLE  R6 R0 K18    ; R6 := R0["UTIL"]
- 71 [-]: GETTABLE  R6 R6 K19    ; R82 := R6[0x06d055f9]
+ 71 [-]: GETTABLE  R6 R6 K19    ; R6 := R6[0x06d055f9]
  72 [-]: GETTABLE  R7 R0 K4     ; R7 := R0["mNewDesign"]
  73 [-]: TEST      R7 1         ; if R7 then PC := 78
  74 [-]: JMP       78           ; PC := 78
@@ -762,7 +762,7 @@
  10 [-]: GETTABLE  R2 R0 K1     ; R2 := R0["mCallback"]
  11 [-]: GETTABLE  R1 R1 R2     ; R1 := R1[R2]
  12 [-]: GETTABLE  R2 R0 K4     ; R2 := R0["UTIL"]
- 13 [-]: GETTABLE  R2 R2 K5     ; R82 := R2[0x06d055f9]
+ 13 [-]: GETTABLE  R2 R2 K5     ; R2 := R2[0x06d055f9]
  14 [-]: GETTABLE  R3 R0 K6     ; R3 := R0["mId"]
  15 [-]: EQ        1 R3 K7      ; if R3 == nil then PC := 18
  16 [-]: JMP       18           ; PC := 18
@@ -785,12 +785,12 @@
  33 [-]: TEST      R1 0         ; if not R1 then PC := 53
  34 [-]: JMP       53           ; PC := 53
  35 [-]: GETTABLE  R1 R0 K4     ; R1 := R0["UTIL"]
- 36 [-]: GETTABLE  R1 R1 K12    ; R82 := R1[0x310355a7]
+ 36 [-]: GETTABLE  R1 R1 K12    ; R1 := R1[0x310355a7]
  37 [-]: GETTABLE  R2 R0 K13    ; R2 := R0["mMovie"]
  38 [-]: GETTABLE  R3 R0 K14    ; R3 := R0["mClipName"]
  39 [-]: LOADK     R4 K15       ; R4 := ".Callout"
  40 [-]: GETTABLE  R5 R0 K4     ; R5 := R0["UTIL"]
- 41 [-]: GETTABLE  R5 R5 K5     ; R82 := R5[0x06d055f9]
+ 41 [-]: GETTABLE  R5 R5 K5     ; R5 := R5[0x06d055f9]
  42 [-]: GETTABLE  R6 R0 K16    ; R6 := R0["mNewDesign"]
  43 [-]: LOADK     R7 K2        ; R7 := ""
  44 [-]: LOADK     R8 K17       ; R8 := ".Icon"
@@ -803,12 +803,12 @@
  51 [-]: CALL      R1 6 1       ; R1(R2,R3,R4,R5,R6)
  52 [-]: JMP       70           ; PC := 70
  53 [-]: GETTABLE  R1 R0 K4     ; R1 := R0["UTIL"]
- 54 [-]: GETTABLE  R1 R1 K20    ; R82 := R1[0xf76783e5]
+ 54 [-]: GETTABLE  R1 R1 K20    ; R1 := R1[0xf76783e5]
  55 [-]: GETTABLE  R2 R0 K13    ; R2 := R0["mMovie"]
  56 [-]: GETTABLE  R3 R0 K14    ; R3 := R0["mClipName"]
  57 [-]: LOADK     R4 K15       ; R4 := ".Callout"
  58 [-]: GETTABLE  R5 R0 K4     ; R5 := R0["UTIL"]
- 59 [-]: GETTABLE  R5 R5 K5     ; R82 := R5[0x06d055f9]
+ 59 [-]: GETTABLE  R5 R5 K5     ; R5 := R5[0x06d055f9]
  60 [-]: GETTABLE  R6 R0 K16    ; R6 := R0["mNewDesign"]
  61 [-]: LOADK     R7 K2        ; R7 := ""
  62 [-]: LOADK     R8 K17       ; R8 := ".Icon"
@@ -891,7 +891,7 @@
   4 [-]: GETTABLE  R4 R0 K3     ; R4 := R0["mClipName"]
   5 [-]: LOADK     R5 10        ; R5 := 10.000000
   6 [-]: GETTABLE  R6 R0 K4     ; R6 := R0["UTIL"]
-  7 [-]: GETTABLE  R6 R6 K5     ; R82 := R6[0x06d055f9]
+  7 [-]: GETTABLE  R6 R6 K5     ; R6 := R6[0x06d055f9]
   8 [-]: GETTABLE  R7 R0 K0     ; R7 := R0["mIsActive"]
   9 [-]: LOADK     R8 100       ; R8 := 100.000000
  10 [-]: LOADK     R9 50        ; R9 := 50.000000
@@ -947,7 +947,7 @@
  27 [-]: LOADK     R4 K10       ; R4 := "Label"
  28 [-]: LOADK     R5 36        ; R5 := 36.000000
  29 [-]: GETTABLE  R6 R0 K11    ; R6 := R0["UTIL"]
- 30 [-]: GETTABLE  R6 R6 K12    ; R82 := R6[0x06d055f9]
+ 30 [-]: GETTABLE  R6 R6 K12    ; R6 := R6[0x06d055f9]
  31 [-]: GETTABLE  R7 R0 K13    ; R7 := R0["mClickable"]
  32 [-]: TEST      R7 1         ; if R7 then PC := 40
  33 [-]: JMP       40           ; PC := 40
@@ -997,7 +997,7 @@
   3 [-]: TEST      R1 0         ; if not R1 then PC := 54
   4 [-]: JMP       54           ; PC := 54
   5 [-]: GETTABLE  R1 R0 K1     ; R1 := R0["UTIL"]
-  6 [-]: GETTABLE  R1 R1 K2     ; R82 := R1[0x659d451f]
+  6 [-]: GETTABLE  R1 R1 K2     ; R1 := R1[0x659d451f]
   7 [-]: GETTABLE  R2 R0 K3     ; R2 := R0["mRollOverSound"]
   8 [-]: CALL      R1 2 1       ; R1(R2)
   9 [-]: SELF      R1 R0 K4     ; R2 := R0; R1 := R0[0x1467d5f4]

@@ -53,7 +53,7 @@
  17 [-]: TEST      R3 1         ; if R3 then PC := 28
  18 [-]: JMP       28           ; PC := 28
  19 [-]: GETGLOBAL R3 K7        ; R3 := 0x7f5022cf
- 20 [-]: GETTABLE  R3 R3 K8     ; R82 := R3[0xa5c556b9]
+ 20 [-]: GETTABLE  R3 R3 K8     ; R3 := R3[0xa5c556b9]
  21 [-]: GETTABLE  R4 R2 K6     ; R4 := R2["levelOverride"]
  22 [-]: SELF      R4 R4 K9     ; R5 := R4; R4 := R4[0xed4e0128]
  23 [-]: CALL      R4 2 2       ; R4 := R4(R5)
@@ -108,7 +108,7 @@
  72 [-]: TEST      R11 1        ; if R11 then PC := 81
  73 [-]: JMP       81           ; PC := 81
  74 [-]: GETGLOBAL R11 K25      ; R11 := 0x33bdd652
- 75 [-]: GETTABLE  R11 R11 K26  ; R82 := R11[0x23d5322f]
+ 75 [-]: GETTABLE  R11 R11 K26  ; R11 := R11[0x23d5322f]
  76 [-]: MOVE      R12 R10      ; R12 := R10
  77 [-]: GETGLOBAL R13 K24      ; R13 := 0xab29cced
  78 [-]: SELF      R13 R13 K9   ; R14 := R13; R13 := R13[0xed4e0128]
@@ -172,7 +172,7 @@
 136 [-]: TEST      R16 0        ; if not R16 then PC := 148
 137 [-]: JMP       148          ; PC := 148
 138 [-]: GETGLOBAL R16 K25      ; R16 := 0x33bdd652
-139 [-]: GETTABLE  R16 R16 K35  ; R82 := R16[0x9c1f3b5a]
+139 [-]: GETTABLE  R16 R16 K35  ; R16 := R16[0x9c1f3b5a]
 140 [-]: MOVE      R17 R3       ; R17 := R3
 141 [-]: MOVE      R18 R14      ; R18 := R14
 142 [-]: CALL      R16 3 1      ; R16(R17,R18)
@@ -183,7 +183,7 @@
 147 [-]: SETTABLE  R16 K13 R17  ; R16["SkatesKilled"] := R17
 148 [-]: FORLOOP   R11 126      ; R11 += R13; if R11 <= R12 then begin PC := 126; R14 := R11 end
 149 [-]: GETGLOBAL R16 K37      ; R16 := 0x5bced4c4
-150 [-]: GETTABLE  R16 R16 K38  ; R82 := R16[0x99675e23]
+150 [-]: GETTABLE  R16 R16 K38  ; R16 := R16[0x99675e23]
 151 [-]: GETGLOBAL R17 K0       ; R17 := 0x89326c93
 152 [-]: SELF      R17 R17 K39  ; R18 := R17; R17 := R17[0x5d971903]
 153 [-]: CALL      R17 2 2      ; R17 := R17(R18)
@@ -211,7 +211,7 @@
 175 [-]: GETGLOBAL R22 K47      ; R22 := 0x42dcc9f5
 176 [-]: GETTABLE  R23 R2 K48   ; R23 := R2["minEnemyLevel"]
 177 [-]: GETGLOBAL R24 K37      ; R24 := 0x5bced4c4
-178 [-]: GETTABLE  R24 R24 K38  ; R82 := R24[0x99675e23]
+178 [-]: GETTABLE  R24 R24 K38  ; R24 := R24[0x99675e23]
 179 [-]: GETGLOBAL R25 K12      ; R25 := _T
 180 [-]: GETTABLE  R25 R25 K13  ; R25 := R25["SkatesKilled"]
 181 [-]: DIV       R25 R25 K49  ; R25 := R25 / 20.000000
@@ -253,7 +253,7 @@
 217 [-]: LOADK     R27 -5       ; R27 := -5.000000
 218 [-]: CALL      R25 3 1      ; R25(R26,R27)
 219 [-]: GETGLOBAL R25 K25      ; R25 := 0x33bdd652
-220 [-]: GETTABLE  R25 R25 K26  ; R82 := R25[0x23d5322f]
+220 [-]: GETTABLE  R25 R25 K26  ; R25 := R25[0x23d5322f]
 221 [-]: MOVE      R26 R3       ; R26 := R3
 222 [-]: MOVE      R27 R23      ; R27 := R23
 223 [-]: CALL      R25 3 1      ; R25(R26,R27)
@@ -349,7 +349,7 @@
   9 [-]: JMP       1            ; PC := 1
  10 [-]: GETGLOBAL R1 K1        ; R1 := 0xbe190284
  11 [-]: GETUPVAL  R2 U0        ; R2 := U0
- 12 [-]: GETTABLE  R2 R2 K3     ; R82 := R2[0xb73d420f]
+ 12 [-]: GETTABLE  R2 R2 K3     ; R2 := R2[0xb73d420f]
  13 [-]: CALL      R2 1 2       ; R2 := R2()
  14 [-]: GETUPVAL  R3 U0        ; R3 := U0
  15 [-]: GETTABLE  R3 R3 K4     ; R3 := R3["UI_MODE_IN_SPACE_SHIP"]
@@ -368,7 +368,7 @@
  28 [-]: TEST      R3 1         ; if R3 then PC := 39
  29 [-]: JMP       39           ; PC := 39
  30 [-]: GETGLOBAL R3 K8        ; R3 := 0x7f5022cf
- 31 [-]: GETTABLE  R3 R3 K9     ; R82 := R3[0xa5c556b9]
+ 31 [-]: GETTABLE  R3 R3 K9     ; R3 := R3[0xa5c556b9]
  32 [-]: GETTABLE  R4 R2 K7     ; R4 := R2["levelOverride"]
  33 [-]: SELF      R4 R4 K10    ; R5 := R4; R4 := R4[0xed4e0128]
  34 [-]: CALL      R4 2 2       ; R4 := R4(R5)

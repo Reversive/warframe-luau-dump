@@ -89,7 +89,7 @@
  15 [-]: TEST      R7 1         ; if R7 then PC := 27
  16 [-]: JMP       27           ; PC := 27
  17 [-]: GETGLOBAL R7 K6        ; R7 := 0x34291f5c
- 18 [-]: GETTABLE  R7 R7 K7     ; R82 := R7[0x09808b84]
+ 18 [-]: GETTABLE  R7 R7 K7     ; R7 := R7[0x09808b84]
  19 [-]: SELF      R8 R6 K8     ; R9 := R6; R8 := R6[0xed4e0128]
  20 [-]: CALL      R8 2 0       ; R8,... := R8(R9)
  21 [-]: CALL      R7 0 2       ; R7 := R7(R8,...)
@@ -167,10 +167,10 @@
   6 [-]: GETGLOBAL R1 K1        ; R1 := 0x3d106989
   7 [-]: LOADK     R2 K2        ; R2 := "ShipReady - success"
   8 [-]: CALL      R1 2 1       ; R1(R2)
-  9 [-]: SETUPVAL  R0 U0        ; U82 := 
+  9 [-]: SETUPVAL  R0 U0        ; U82 := R0
  10 [-]: JMP       13           ; PC := 13
  11 [-]: LOADBOOL  R1 0 0       ; R1 := false
- 12 [-]: SETUPVAL  R1 U0        ; U82 := 
+ 12 [-]: SETUPVAL  R1 U0        ; U82 := R0
  13 [-]: RETURN    R0 1         ; return 
 
 
@@ -213,7 +213,7 @@
   7 [-]: GETTABLE  R1 R0 K3     ; R1 := R0[1.000000]
   8 [-]: GETTABLE  R1 R1 K4     ; R1 := R1["loadout"]
   9 [-]: GETUPVAL  R2 U0        ; R2 := U0
- 10 [-]: GETTABLE  R2 R2 K5     ; R82 := R2[0x4356d102]
+ 10 [-]: GETTABLE  R2 R2 K5     ; R2 := R2[0x4356d102]
  11 [-]: MOVE      R3 R1        ; R3 := R1
  12 [-]: TAILCALL  R2 2 0       ; R2,... := R2(R3)
  13 [-]: RETURN    R2 0         ; return R2,...
@@ -233,7 +233,7 @@
 
   1 [-]: LOADBOOL  R3 1 0       ; R3 := true
   2 [-]: LOADNIL   R4 R5        ; R4 := R5 := nil
-  3 [-]: SETUPVAL  R5 U0        ; U82 := 
+  3 [-]: SETUPVAL  R5 U0        ; U82 := R0
   4 [-]: LOADBOOL  R5 0 0       ; R5 := false
   5 [-]: GETGLOBAL R6 K0        ; R6 := 0x7ed0a956
   6 [-]: GETGLOBAL R7 K1        ; R7 := 0x9ba7909f
@@ -289,10 +289,10 @@
  56 [-]: TEST      R7 0         ; if not R7 then PC := 61
  57 [-]: JMP       61           ; PC := 61
  58 [-]: LOADBOOL  R7 0 0       ; R7 := false
- 59 [-]: SETUPVAL  R7 U0        ; U82 := 
+ 59 [-]: SETUPVAL  R7 U0        ; U82 := R0
  60 [-]: RETURN    R0 1         ; return 
  61 [-]: GETGLOBAL R7 K14       ; R7 := 0xbd496aa1
- 62 [-]: GETTABLE  R7 R7 K15    ; R82 := R7[0x42645da3]
+ 62 [-]: GETTABLE  R7 R7 K15    ; R7 := R7[0x42645da3]
  63 [-]: NEWTABLE  R8 0 0       ; R8 := {}
  64 [-]: SELF      R9 R4 K16    ; R10 := R4; R9 := R4[0xed4e0128]
  65 [-]: CALL      R9 2 0       ; R9,... := R9(R10)
@@ -744,7 +744,7 @@
  70 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  71 [-]: TEST      R4 1         ; if R4 then PC := 75
  72 [-]: JMP       75           ; PC := 75
- 73 [-]: SETUPVAL  R3 U0        ; U82 := 
+ 73 [-]: SETUPVAL  R3 U0        ; U82 := R0
  74 [-]: JMP       100          ; PC := 100
  75 [-]: GETGLOBAL R4 K18       ; R4 := 0x25d99d89
  76 [-]: SELF      R4 R4 K19    ; R5 := R4; R4 := R4[0x62c81b76]
@@ -770,7 +770,7 @@
  96 [-]: CALL      R7 2 2       ; R7 := R7(R8)
  97 [-]: MOVE      R6 R7        ; R6 := R7
  98 [-]: JMP       87           ; PC := 87
- 99 [-]: SETUPVAL  R6 U0        ; U82 := 
+ 99 [-]: SETUPVAL  R6 U0        ; U82 := R0
 100 [-]: GETUPVAL  R7 U0        ; R7 := U0
 101 [-]: EQ        1 R7 K21     ; if R7 == false then PC := 233
 102 [-]: JMP       233          ; PC := 233
@@ -811,7 +811,7 @@
 137 [-]: LT        0 R9 K30     ; if R9 >= 1.000000 then PC := 160
 138 [-]: JMP       160          ; PC := 160
 139 [-]: GETGLOBAL R13 K31      ; R13 := 0x5bced4c4
-140 [-]: GETTABLE  R13 R13 K32  ; R82 := R13[0xac1b386a]
+140 [-]: GETTABLE  R13 R13 K32  ; R13 := R13[0xac1b386a]
 141 [-]: LOADK     R14 1        ; R14 := 1.000000
 142 [-]: GETGLOBAL R15 K33      ; R15 := 0x67652851
 143 [-]: CALL      R15 1 2      ; R15 := R15()
@@ -883,7 +883,7 @@
 209 [-]: LT        0 R9 K30     ; if R9 >= 1.000000 then PC := 243
 210 [-]: JMP       243          ; PC := 243
 211 [-]: GETGLOBAL R18 K31      ; R18 := 0x5bced4c4
-212 [-]: GETTABLE  R18 R18 K32  ; R82 := R18[0xac1b386a]
+212 [-]: GETTABLE  R18 R18 K32  ; R18 := R18[0xac1b386a]
 213 [-]: LOADK     R19 1        ; R19 := 1.000000
 214 [-]: GETGLOBAL R20 K33      ; R20 := 0x67652851
 215 [-]: CALL      R20 1 2      ; R20 := R20()
@@ -911,7 +911,7 @@
 237 [-]: LOADK     R22 K41      ; R22 := "0"
 238 [-]: CALL      R19 4 1      ; R19(R20,R21,R22)
 239 [-]: GETUPVAL  R19 U3       ; R19 := U3
-240 [-]: GETTABLE  R19 R19 K45  ; R82 := R19[0xa53f5e12]
+240 [-]: GETTABLE  R19 R19 K45  ; R19 := R19[0xa53f5e12]
 241 [-]: LOADK     R20 K46      ; R20 := "/Lotus/Language/Railjack/RailjackRequiredToHost"
 242 [-]: CALL      R19 2 1      ; R19(R20)
 243 [-]: RETURN    R0 1         ; return 

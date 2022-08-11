@@ -77,11 +77,11 @@
   4 [-]: GETGLOBAL R0 K2        ; R0 := 0x2d0fad09
   5 [-]: LOADK     R1 K3        ; R1 := "Lotus.Interface.Components.ThemedSpinner"
   6 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  7 [-]: GETTABLE  R1 R0 K4     ; R82 := R1[0xae6791ba]
+  7 [-]: GETTABLE  R1 R0 K4     ; R1 := R0[0xae6791ba]
   8 [-]: GETGLOBAL R2 K5        ; R2 := 0xae91e43b
   9 [-]: LOADK     R3 K6        ; R3 := "Spinner"
  10 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
- 11 [-]: SETUPVAL  R1 U0        ; U82 := 
+ 11 [-]: SETUPVAL  R1 U0        ; U82 := R0
  12 [-]: GETUPVAL  R1 U0        ; R1 := U0
  13 [-]: SELF      R1 R1 K7     ; R2 := R1; R1 := R1[0x46610c50]
  14 [-]: LOADBOOL  R3 1 0       ; R3 := true
@@ -105,7 +105,7 @@
   5 [-]: LOADK     R1 K1        ; R1 := "SaveSpinner:Finished"
   6 [-]: CALL      R0 2 1       ; R0(R1)
   7 [-]: LOADBOOL  R0 1 0       ; R0 := true
-  8 [-]: SETUPVAL  R0 U0        ; U82 := 
+  8 [-]: SETUPVAL  R0 U0        ; U82 := R0
   9 [-]: LOADBOOL  R0 1 0       ; R0 := true
  10 [-]: RETURN    R0 2         ; return R0
  11 [-]: RETURN    R0 1         ; return 
@@ -145,7 +145,7 @@
  23 [-]: GETGLOBAL R1 K2        ; R1 := 0xb693b6c1
  24 [-]: CALL      R1 1 2       ; R1 := R1()
  25 [-]: ADD       R0 R0 R1     ; R0 := R0 + R1
- 26 [-]: SETUPVAL  R0 U1        ; U82 := 
+ 26 [-]: SETUPVAL  R0 U1        ; U82 := R1
  27 [-]: GETUPVAL  R0 U2        ; R0 := U2
  28 [-]: TEST      R0 0         ; if not R0 then PC := 38
  29 [-]: JMP       38           ; PC := 38

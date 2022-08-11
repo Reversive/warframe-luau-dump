@@ -73,7 +73,7 @@
   3 [-]: TEST      R2 0         ; if not R2 then PC := 12
   4 [-]: JMP       12           ; PC := 12
   5 [-]: GETUPVAL  R2 U0        ; R2 := U0
-  6 [-]: GETTABLE  R2 R2 K1     ; R82 := R2[0xe0cba3ca]
+  6 [-]: GETTABLE  R2 R2 K1     ; R2 := R2[0xe0cba3ca]
   7 [-]: LOADK     R3 K2        ; R3 := "/Lotus/Language/Dojo/KneelingNotAllowedWhileTrading"
   8 [-]: CALL      R2 2 1       ; R2(R3)
   9 [-]: SELF      R2 R0 K3     ; R3 := R0; R2 := R0[0x383d2e7d]

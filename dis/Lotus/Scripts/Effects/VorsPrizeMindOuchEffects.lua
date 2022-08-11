@@ -80,7 +80,7 @@
  57 [-]: CALL      R8 0 2       ; R8 := R8(R9,...)
  58 [-]: SELF      R9 R4 K14    ; R10 := R4; R9 := R4[0xb6df3e50]
  59 [-]: GETGLOBAL R11 K15      ; R11 := 0x5bced4c4
- 60 [-]: GETTABLE  R11 R11 K16  ; R82 := R11[0xac1b386a]
+ 60 [-]: GETTABLE  R11 R11 K16  ; R11 := R11[0xac1b386a]
  61 [-]: LOADK     R12 1        ; R12 := 1.000000
  62 [-]: MUL       R13 R8 R6    ; R13 := R8 * R6
  63 [-]: MUL       R13 R13 K17  ; R13 := R13 * 2.000000

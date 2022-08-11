@@ -1705,7 +1705,7 @@
   4 [-]: RETURN    R1 2         ; return R1
   5 [-]: JMP       55           ; PC := 55
   6 [-]: GETGLOBAL R1 K1        ; R1 := 0x34291f5c
-  7 [-]: GETTABLE  R1 R1 K2     ; R82 := R1[0x2a31b96e]
+  7 [-]: GETTABLE  R1 R1 K2     ; R1 := R1[0x2a31b96e]
   8 [-]: CALL      R1 1 2       ; R1 := R1()
   9 [-]: TEST      R1 1         ; if R1 then PC := 17
  10 [-]: JMP       17           ; PC := 17
@@ -1719,7 +1719,7 @@
  18 [-]: RETURN    R1 2         ; return R1
  19 [-]: JMP       55           ; PC := 55
  20 [-]: GETGLOBAL R1 K1        ; R1 := 0x34291f5c
- 21 [-]: GETTABLE  R1 R1 K8     ; R82 := R1[0x86647daf]
+ 21 [-]: GETTABLE  R1 R1 K8     ; R1 := R1[0x86647daf]
  22 [-]: CALL      R1 1 2       ; R1 := R1()
  23 [-]: TEST      R1 1         ; if R1 then PC := 31
  24 [-]: JMP       31           ; PC := 31
@@ -1733,7 +1733,7 @@
  32 [-]: RETURN    R1 2         ; return R1
  33 [-]: JMP       55           ; PC := 55
  34 [-]: GETGLOBAL R1 K1        ; R1 := 0x34291f5c
- 35 [-]: GETTABLE  R1 R1 K11    ; R82 := R1[0x9ad21ae9]
+ 35 [-]: GETTABLE  R1 R1 K11    ; R1 := R1[0x9ad21ae9]
  36 [-]: CALL      R1 1 2       ; R1 := R1()
  37 [-]: TEST      R1 0         ; if not R1 then PC := 42
  38 [-]: JMP       42           ; PC := 42
@@ -1741,7 +1741,7 @@
  40 [-]: RETURN    R1 2         ; return R1
  41 [-]: JMP       55           ; PC := 55
  42 [-]: GETGLOBAL R1 K1        ; R1 := 0x34291f5c
- 43 [-]: GETTABLE  R1 R1 K13    ; R82 := R1[0xc84fa15a]
+ 43 [-]: GETTABLE  R1 R1 K13    ; R1 := R1[0xc84fa15a]
  44 [-]: CALL      R1 1 2       ; R1 := R1()
  45 [-]: TEST      R1 1         ; if R1 then PC := 53
  46 [-]: JMP       53           ; PC := 53
@@ -2265,7 +2265,7 @@
 ; Max Stack Size:  3
 
   1 [-]: GETGLOBAL R2 K0        ; R2 := 0x34291f5c
-  2 [-]: GETTABLE  R2 R2 K1     ; R82 := R2[0x056bfe8b]
+  2 [-]: GETTABLE  R2 R2 K1     ; R2 := R2[0x056bfe8b]
   3 [-]: CALL      R2 1 2       ; R2 := R2()
   4 [-]: TEST      R2 0         ; if not R2 then PC := 9
   5 [-]: JMP       9            ; PC := 9
@@ -2277,7 +2277,7 @@
  11 [-]: GETUPVAL  R2 U0        ; R2 := U0
  12 [-]: LT        0 R2 R0      ; if R2 >= R0 then PC := 17
  13 [-]: JMP       17           ; PC := 17
- 14 [-]: SETUPVAL  R0 U0        ; U82 := 
+ 14 [-]: SETUPVAL  R0 U0        ; U82 := R0
  15 [-]: LOADBOOL  R2 1 0       ; R2 := true
  16 [-]: RETURN    R2 2         ; return R2
  17 [-]: LOADBOOL  R2 0 0       ; R2 := false

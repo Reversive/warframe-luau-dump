@@ -47,7 +47,7 @@
   6 [-]: RETURN    R0 1         ; return 
   7 [-]: GETUPVAL  R1 U0        ; R1 := U0
   8 [-]: LOADNIL   R2 R2        ; R2 := nil
-  9 [-]: SETUPVAL  R2 U0        ; U82 := 
+  9 [-]: SETUPVAL  R2 U0        ; U82 := 
  10 [-]: SELF      R2 R1 K1     ; R3 := R1; R2 := R1[0x5e651723]
  11 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  12 [-]: GETGLOBAL R3 K0        ; R3 := 0x7b998233

@@ -164,7 +164,7 @@
  18 [-]: MOVE      R5 R2        ; R5 := R2
  19 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
  20 [-]: GETGLOBAL R4 K8        ; R4 := 0x5bced4c4
- 21 [-]: GETTABLE  R4 R4 K9     ; R82 := R4[0xb62ecfe0]
+ 21 [-]: GETTABLE  R4 R4 K9     ; R4 := R4[0xb62ecfe0]
  22 [-]: LOADK     R5 0         ; R5 := 0.000000
  23 [-]: SUB       R6 K10 R3    ; R6 := 75.000000 - R3
  24 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
@@ -247,7 +247,7 @@
  45 [-]: TFORLOOP  R7 2         ; R10,R11 :=  R7(R8,R9); if R10 ~= nil then begin PC = 43; R9 := R10 end
  46 [-]: JMP       43           ; PC := 43
  47 [-]: GETGLOBAL R12 K18      ; R12 := 0x5bced4c4
- 48 [-]: GETTABLE  R12 R12 K19  ; R82 := R12[0x3630e649]
+ 48 [-]: GETTABLE  R12 R12 K19  ; R12 := R12[0x3630e649]
  49 [-]: CALL      R12 1 2      ; R12 := R12()
  50 [-]: MUL       R12 R12 R6   ; R12 := R12 * R6
  51 [-]: GETGLOBAL R13 K16      ; R13 := 0xc8802016
@@ -257,7 +257,7 @@
  55 [-]: GETTABLE  R18 R17 K17  ; R18 := R17["Weight"]
  56 [-]: LE        0 R12 R18    ; if R12 > R18 then PC := 62
  57 [-]: JMP       62           ; PC := 62
- 58 [-]: GETTABLE  R18 R17 K20  ; R82 := R18[0xf3c62772]
+ 58 [-]: GETTABLE  R18 R17 K20  ; R18 := R17[0xf3c62772]
  59 [-]: MOVE      R19 R0       ; R19 := R0
  60 [-]: CALL      R18 2 1      ; R18(R19)
  61 [-]: JMP       66           ; PC := 66

@@ -84,7 +84,7 @@
  52 [-]: SETTABLE  R7 K7 R8     ; R7["x"] := R8
  53 [-]: SUB       R8 R3 R5     ; R8 := R3 - R5
  54 [-]: SETTABLE  R7 K9 R8     ; R7["y"] := R8
- 55 [-]: SETTABLE  R6 K21 R7    ; R6["mScrollRange"] := R7
+ 55 [-]: SETTABLE  R6 K21 R7    ; R6[0x00000000] := R7
  56 [-]: SETTABLE  R6 K22 K23   ; R6["mDeselectRange"] := 10.000000
  57 [-]: CLOSURE   R7 0         ; R7 := closure(Function #1.1)
  58 [-]: GETUPVAL  R0 U0        ; R0 := U0
@@ -126,7 +126,7 @@
  16 [-]: SETTABLE  R6 R1 R2     ; R6[R1] := R2
  17 [-]: GETTABLE  R6 R0 K4     ; R6 := R0["mCurrentCoords"]
  18 [-]: GETUPVAL  R7 U0        ; R7 := U0
- 19 [-]: GETTABLE  R7 R7 K5     ; R82 := R7[0x74a11ec6]
+ 19 [-]: GETTABLE  R7 R7 K5     ; R7 := R7[0x74a11ec6]
  20 [-]: GETTABLE  R8 R0 K6     ; R8 := R0["mMax"]
  21 [-]: GETTABLE  R8 R8 R1     ; R8 := R8[R1]
  22 [-]: GETTABLE  R9 R0 K7     ; R9 := R0["mScrollRange"]
@@ -195,7 +195,7 @@
  29 [-]: GETTABLE  R7 R0 K15    ; R7 := R0["mOnStartDrag"]
  30 [-]: EQ        1 R7 K16     ; if R7 == nil then PC := 34
  31 [-]: JMP       34           ; PC := 34
- 32 [-]: GETTABLE  R7 R0 K17    ; R82 := R7[0x2a70b00a]
+ 32 [-]: GETTABLE  R7 R0 K17    ; R7 := R0[0x2a70b00a]
  33 [-]: CALL      R7 1 1       ; R7()
  34 [-]: RETURN    R0 1         ; return 
 
@@ -226,7 +226,7 @@
  15 [-]: GETTABLE  R6 R0 K8     ; R6 := R0["mOnStopDrag"]
  16 [-]: EQ        1 R6 K6      ; if R6 == nil then PC := 20
  17 [-]: JMP       20           ; PC := 20
- 18 [-]: GETTABLE  R6 R0 K9     ; R82 := R6[0xc18e91ae]
+ 18 [-]: GETTABLE  R6 R0 K9     ; R6 := R0[0xc18e91ae]
  19 [-]: CALL      R6 1 1       ; R6()
  20 [-]: RETURN    R0 1         ; return 
 
@@ -283,7 +283,7 @@
  41 [-]: TEST      R2 1         ; if R2 then PC := 54
  42 [-]: JMP       54           ; PC := 54
  43 [-]: GETGLOBAL R9 K16       ; R9 := 0x5bced4c4
- 44 [-]: GETTABLE  R9 R9 K17    ; R82 := R9[0xe4a5b3ca]
+ 44 [-]: GETTABLE  R9 R9 K17    ; R9 := R9[0xe4a5b3ca]
  45 [-]: GETTABLE  R10 R0 K18   ; R10 := R0["mFirst"]
  46 [-]: GETTABLE  R10 R10 R7   ; R10 := R10[R7]
  47 [-]: SUB       R10 R10 R8   ; R10 := R10 - R8
@@ -365,7 +365,7 @@
 123 [-]: GETTABLE  R9 R0 K27    ; R9 := R0["mOnDeselectCallback"]
 124 [-]: EQ        1 R9 K6      ; if R9 == nil then PC := 128
 125 [-]: JMP       128          ; PC := 128
-126 [-]: GETTABLE  R9 R0 K28    ; R82 := R9[0xa518d268]
+126 [-]: GETTABLE  R9 R0 K28    ; R9 := R0[0xa518d268]
 127 [-]: CALL      R9 1 1       ; R9()
 128 [-]: RETURN    R0 1         ; return 
 

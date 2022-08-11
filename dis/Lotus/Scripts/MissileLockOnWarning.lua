@@ -108,7 +108,7 @@
  81 [-]: TEST      R4 0         ; if not R4 then PC := 87
  82 [-]: JMP       87           ; PC := 87
  83 [-]: GETGLOBAL R4 K5        ; R4 := _T
- 84 [-]: GETTABLE  R4 R4 K20    ; R82 := R4[0xb01fcb6c]
+ 84 [-]: GETTABLE  R4 R4 K20    ; R4 := R4[0xb01fcb6c]
  85 [-]: MOVE      R5 R1        ; R5 := R1
  86 [-]: CALL      R4 2 1       ; R4(R5)
  87 [-]: RETURN    R0 1         ; return 

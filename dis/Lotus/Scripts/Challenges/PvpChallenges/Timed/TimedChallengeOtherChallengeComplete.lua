@@ -35,11 +35,11 @@
 ; Max Stack Size:  3
 
   1 [-]: GETUPVAL  R0 U1        ; R0 := U1
-  2 [-]: GETTABLE  R0 R0 K0     ; R82 := R0[0xb8ae375d]
+  2 [-]: GETTABLE  R0 R0 K0     ; R0 := R0[0xb8ae375d]
   3 [-]: GETGLOBAL R1 K1        ; R1 := 0x83062d09
   4 [-]: GETGLOBAL R2 K2        ; R2 := 0x5bf84945
   5 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
-  6 [-]: SETUPVAL  R0 U0        ; U82 := 
+  6 [-]: SETUPVAL  R0 U0        ; U82 := R0
   7 [-]: RETURN    R0 1         ; return 
 
 
@@ -131,14 +131,14 @@
  29 [-]: EQ        1 R5 K10     ; if R5 == "" then PC := 38
  30 [-]: JMP       38           ; PC := 38
  31 [-]: GETGLOBAL R5 K5        ; R5 := 0x6c97a788
- 32 [-]: GETTABLE  R5 R5 K11    ; R82 := R5[0xc90dd276]
+ 32 [-]: GETTABLE  R5 R5 K11    ; R5 := R5[0xc90dd276]
  33 [-]: GETTABLE  R6 R4 K12    ; R6 := R4["mDifficultyGroup"]
  34 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  35 [-]: GETGLOBAL R6 K9        ; R6 := 0x21e8cc9e
  36 [-]: EQ        0 R5 R6      ; if R5 ~= R6 then PC := 42
  37 [-]: JMP       42           ; PC := 42
  38 [-]: GETUPVAL  R5 U1        ; R5 := U1
- 39 [-]: GETTABLE  R5 R5 K13    ; R82 := R5[0x098c2676]
+ 39 [-]: GETTABLE  R5 R5 K13    ; R5 := R5[0x098c2676]
  40 [-]: GETUPVAL  R6 U2        ; R6 := U2
  41 [-]: CALL      R5 2 1       ; R5(R6)
  42 [-]: RETURN    R0 1         ; return 

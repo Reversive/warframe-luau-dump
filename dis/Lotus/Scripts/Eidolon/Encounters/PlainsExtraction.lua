@@ -169,7 +169,7 @@
  43 [-]: MOVE      R6 R2        ; R6 := R2
  44 [-]: CALL      R4 3 1       ; R4(R5,R6)
  45 [-]: GETUPVAL  R4 U3        ; R4 := U3
- 46 [-]: GETTABLE  R4 R4 K13    ; R82 := R4[0x9ef786e2]
+ 46 [-]: GETTABLE  R4 R4 K13    ; R4 := R4[0x9ef786e2]
  47 [-]: CALL      R4 1 1       ; R4()
  48 [-]: RETURN    R0 1         ; return 
  49 [-]: GETGLOBAL R4 K14       ; R4 := 0xcbd666e1
@@ -229,7 +229,7 @@
 103 [-]: GETGLOBAL R17 K4       ; R17 := ZERO_ROTATION
 104 [-]: CALL      R13 5 2      ; R13 := R13(R14,R15,R16,R17)
 105 [-]: GETGLOBAL R14 K27      ; R14 := 0x33bdd652
-106 [-]: GETTABLE  R14 R14 K28  ; R82 := R14[0x23d5322f]
+106 [-]: GETTABLE  R14 R14 K28  ; R14 := R14[0x23d5322f]
 107 [-]: MOVE      R15 R8       ; R15 := R8
 108 [-]: MOVE      R16 R13      ; R16 := R13
 109 [-]: CALL      R14 3 1      ; R14(R15,R16)

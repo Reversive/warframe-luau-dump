@@ -78,7 +78,7 @@
  45 [-]: CALL      R0 2 1       ; R0(R1)
  46 [-]: JMP       39           ; PC := 39
  47 [-]: GETGLOBAL R0 K0        ; R0 := _T
- 48 [-]: GETTABLE  R0 R0 K14    ; R82 := R0[0xd6937dab]
+ 48 [-]: GETTABLE  R0 R0 K14    ; R0 := R0[0xd6937dab]
  49 [-]: GETGLOBAL R1 K15       ; R1 := 0xf9f75899
  50 [-]: GETGLOBAL R2 K16       ; R2 := 0x228372c4
  51 [-]: GETGLOBAL R3 K17       ; R3 := 0x00016d82
@@ -125,7 +125,7 @@
  92 [-]: LOADK     R1 K21       ; R1 := "Quest bounty completed successfully"
  93 [-]: CALL      R0 2 1       ; R0(R1)
  94 [-]: GETUPVAL  R0 U0        ; R0 := U0
- 95 [-]: GETTABLE  R0 R0 K22    ; R82 := R0[0xa26220ed]
+ 95 [-]: GETTABLE  R0 R0 K22    ; R0 := R0[0xa26220ed]
  96 [-]: GETGLOBAL R1 K23       ; R1 := 0xb009bbc6
  97 [-]: GETGLOBAL R2 K18       ; R2 := 0x6fed6096
  98 [-]: CALL      R1 2 2       ; R1 := R1(R2)
@@ -145,7 +145,7 @@
 112 [-]: SELF      R1 R0 K29    ; R2 := R0; R1 := R0[0x383d2e7d]
 113 [-]: CALL      R1 2 1       ; R1(R2)
 114 [-]: GETUPVAL  R1 U1        ; R1 := U1
-115 [-]: GETTABLE  R1 R1 K30    ; R82 := R1[0xa1df01d6]
+115 [-]: GETTABLE  R1 R1 K30    ; R1 := R1[0xa1df01d6]
 116 [-]: LOADK     R2 K31       ; R2 := "/Lotus/Language/InfestedMicroplanetQuest/ObjectiveM2ReturnToHub"
 117 [-]: CALL      R1 2 1       ; R1(R2)
 118 [-]: RETURN    R0 1         ; return 

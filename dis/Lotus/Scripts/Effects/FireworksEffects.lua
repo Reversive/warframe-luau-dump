@@ -36,7 +36,7 @@
  13 [-]: GETGLOBAL R2 K3        ; R2 := 0xe13c588a
  14 [-]: LEN       R2 R2        ; R2 := # R2
  15 [-]: GETGLOBAL R3 K4        ; R3 := 0x5bced4c4
- 16 [-]: GETTABLE  R3 R3 K5     ; R82 := R3[0x3630e649]
+ 16 [-]: GETTABLE  R3 R3 K5     ; R3 := R3[0x3630e649]
  17 [-]: LOADK     R4 1         ; R4 := 1.000000
  18 [-]: MOVE      R5 R2        ; R5 := R2
  19 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
@@ -89,7 +89,7 @@
  66 [-]: MOVE      R9 R1        ; R9 := R1
  67 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
  68 [-]: GETGLOBAL R6 K22       ; R6 := 0x2d5c5020
- 69 [-]: GETTABLE  R6 R6 K23    ; R82 := R6[0xc06cb5e5]
+ 69 [-]: GETTABLE  R6 R6 K23    ; R6 := R6[0xc06cb5e5]
  70 [-]: MOVE      R7 R0        ; R7 := R0
  71 [-]: GETGLOBAL R8 K24       ; R8 := gEffectType
  72 [-]: MOVE      R9 R5        ; R9 := R5

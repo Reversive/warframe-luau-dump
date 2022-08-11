@@ -54,7 +54,7 @@
  12 [-]: TEST      R8 1         ; if R8 then PC := 19
  13 [-]: JMP       19           ; PC := 19
  14 [-]: GETGLOBAL R8 K3        ; R8 := 0x33bdd652
- 15 [-]: GETTABLE  R8 R8 K4     ; R82 := R8[0x23d5322f]
+ 15 [-]: GETTABLE  R8 R8 K4     ; R8 := R8[0x23d5322f]
  16 [-]: MOVE      R9 R2        ; R9 := R2
  17 [-]: GETTABLE  R10 R1 R6    ; R10 := R1[R6]
  18 [-]: CALL      R8 3 1       ; R8(R9,R10)
@@ -97,7 +97,7 @@
  23 [-]: JMP       25           ; PC := 25
  24 [-]: MOVE      R1 R2        ; R1 := R2
  25 [-]: GETUPVAL  R4 U0        ; R4 := U0
- 26 [-]: GETTABLE  R4 R4 K2     ; R82 := R4[0x5e35d4d6]
+ 26 [-]: GETTABLE  R4 R4 K2     ; R4 := R4[0x5e35d4d6]
  27 [-]: CALL      R4 1 2       ; R4 := R4()
  28 [-]: SELF      R5 R4 K3     ; R6 := R4; R5 := R4[0x3ad9ed31]
  29 [-]: MOVE      R7 R0        ; R7 := R0
@@ -184,7 +184,7 @@
 110 [-]: LT        0 R3 K19     ; if R3 >= 15.000000 then PC := 117
 111 [-]: JMP       117          ; PC := 117
 112 [-]: GETGLOBAL R13 K21      ; R13 := 0x33bdd652
-113 [-]: GETTABLE  R13 R13 K22  ; R82 := R13[0x9c1f3b5a]
+113 [-]: GETTABLE  R13 R13 K22  ; R13 := R13[0x9c1f3b5a]
 114 [-]: MOVE      R14 R8       ; R14 := R8
 115 [-]: MOVE      R15 R12      ; R15 := R12
 116 [-]: CALL      R13 3 1      ; R13(R14,R15)
@@ -228,7 +228,7 @@
 154 [-]: SELF      R16 R14 K30  ; R17 := R14; R16 := R14[0x4ad8ff14]
 155 [-]: CALL      R16 2 2      ; R16 := R16(R17)
 156 [-]: GETGLOBAL R17 K0       ; R17 := 0x6c97a788
-157 [-]: GETTABLE  R17 R17 K31  ; R82 := R17[0x6e0e9f85]
+157 [-]: GETTABLE  R17 R17 K31  ; R17 := R17[0x6e0e9f85]
 158 [-]: CALL      R17 1 2      ; R17 := R17()
 159 [-]: SETTABLE  R17 K32 R13  ; R17["missionType"] := R13
 160 [-]: SELF      R18 R7 K34   ; R19 := R7; R18 := R7[0x808b79e6]
@@ -285,7 +285,7 @@
 211 [-]: GETTABLE  R18 R18 K51  ; R18 := R18["seed"]
 212 [-]: SETTABLE  R17 K51 R18  ; R17["seed"] := R18
 213 [-]: GETGLOBAL R18 K52      ; R18 := 0x7f5022cf
-214 [-]: GETTABLE  R18 R18 K53  ; R82 := R18[0xa5c556b9]
+214 [-]: GETTABLE  R18 R18 K53  ; R18 := R18[0xa5c556b9]
 215 [-]: MOVE      R19 R6       ; R19 := R6
 216 [-]: LOADK     R20 K54      ; R20 := "Archwing"
 217 [-]: CALL      R18 3 2      ; R18 := R18(R19,R20)
@@ -294,7 +294,7 @@
 220 [-]: SETTABLE  R17 K55 K56  ; R17["archwingRequired"] := true
 221 [-]: JMP       243          ; PC := 243
 222 [-]: GETGLOBAL R18 K52      ; R18 := 0x7f5022cf
-223 [-]: GETTABLE  R18 R18 K53  ; R82 := R18[0xa5c556b9]
+223 [-]: GETTABLE  R18 R18 K53  ; R18 := R18[0xa5c556b9]
 224 [-]: MOVE      R19 R6       ; R19 := R6
 225 [-]: LOADK     R20 K57      ; R20 := "Ocean"
 226 [-]: CALL      R18 3 2      ; R18 := R18(R19,R20)
@@ -307,7 +307,7 @@
 233 [-]: SETTABLE  R17 K59 K56  ; R17["isSharkwingMission"] := true
 234 [-]: JMP       243          ; PC := 243
 235 [-]: GETGLOBAL R18 K52      ; R18 := 0x7f5022cf
-236 [-]: GETTABLE  R18 R18 K53  ; R82 := R18[0xa5c556b9]
+236 [-]: GETTABLE  R18 R18 K53  ; R18 := R18[0xa5c556b9]
 237 [-]: MOVE      R19 R6       ; R19 := R6
 238 [-]: LOADK     R20 K60      ; R20 := "Fortress"
 239 [-]: CALL      R18 3 2      ; R18 := R18(R19,R20)

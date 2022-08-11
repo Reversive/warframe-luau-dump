@@ -197,7 +197,7 @@
  64 [-]: RETURN    R0 1         ; return 
  65 [-]: TFORLOOP  R4 2         ; R7,R8 :=  R4(R5,R6); if R7 ~= nil then begin PC = 54; R6 := R7 end
  66 [-]: JMP       54           ; PC := 54
- 67 [-]: SETUPVAL  R0 U0        ; U82 := 
+ 67 [-]: SETUPVAL  R0 U0        ; U82 := R0
  68 [-]: SELF      R9 R1 K11    ; R10 := R1; R9 := R1[0xd5f7912b]
  69 [-]: GETGLOBAL R11 K12      ; R11 := 0x0469f296
  70 [-]: LOADK     R12 K13      ; R12 := "DoMagGrappleSlow"

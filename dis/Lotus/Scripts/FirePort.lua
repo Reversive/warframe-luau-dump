@@ -441,12 +441,12 @@
  64 [-]: GETTABLE  R7 R7 R4     ; R7 := R7[R4]
  65 [-]: CALL      R5 3 1       ; R5(R6,R7)
  66 [-]: GETGLOBAL R5 K11       ; R5 := 0x33bdd652
- 67 [-]: GETTABLE  R5 R5 K12    ; R82 := R5[0x9c1f3b5a]
+ 67 [-]: GETTABLE  R5 R5 K12    ; R5 := R5[0x9c1f3b5a]
  68 [-]: GETGLOBAL R6 K2        ; R6 := 0xf1b5ec8d
  69 [-]: MOVE      R7 R4        ; R7 := R4
  70 [-]: CALL      R5 3 1       ; R5(R6,R7)
  71 [-]: GETGLOBAL R5 K11       ; R5 := 0x33bdd652
- 72 [-]: GETTABLE  R5 R5 K12    ; R82 := R5[0x9c1f3b5a]
+ 72 [-]: GETTABLE  R5 R5 K12    ; R5 := R5[0x9c1f3b5a]
  73 [-]: GETGLOBAL R6 K9        ; R6 := 0x0e94a80f
  74 [-]: MOVE      R7 R4        ; R7 := R4
  75 [-]: CALL      R5 3 1       ; R5(R6,R7)
@@ -505,7 +505,7 @@
   2 [-]: GETGLOBAL R1 K1        ; R1 := 0x74b75231
   3 [-]: CALL      R0 2 1       ; R0(R1)
   4 [-]: GETGLOBAL R0 K2        ; R0 := 0x5bced4c4
-  5 [-]: GETTABLE  R0 R0 K3     ; R82 := R0[0x3630e649]
+  5 [-]: GETTABLE  R0 R0 K3     ; R0 := R0[0x3630e649]
   6 [-]: CALL      R0 1 2       ; R0 := R0()
   7 [-]: GETGLOBAL R1 K4        ; R1 := 0x91ef19b5
   8 [-]: LE        0 R0 R1      ; if R0 > R1 then PC := 26

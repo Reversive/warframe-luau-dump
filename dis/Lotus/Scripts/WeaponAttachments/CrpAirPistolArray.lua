@@ -51,7 +51,7 @@
  20 [-]: GETGLOBAL R4 K6        ; R4 := 0x154b1aad
  21 [-]: GETGLOBAL R5 K7        ; R5 := 0x451f939e
  22 [-]: GETGLOBAL R6 K8        ; R6 := 0x5bced4c4
- 23 [-]: GETTABLE  R6 R6 K9     ; R82 := R6[0xa40531d8]
+ 23 [-]: GETTABLE  R6 R6 K9     ; R6 := R6[0xa40531d8]
  24 [-]: GETGLOBAL R7 K1        ; R7 := 0xffe5f3b7
  25 [-]: DIV       R7 R1 R7     ; R7 := R1 / R7
  26 [-]: SUB       R7 K10 R7    ; R7 := 1.000000 - R7
@@ -67,7 +67,7 @@
  36 [-]: LOADK     R4 10        ; R4 := 10.000000
  37 [-]: LOADK     R5 0         ; R5 := 0.000000
  38 [-]: GETGLOBAL R6 K8        ; R6 := 0x5bced4c4
- 39 [-]: GETTABLE  R6 R6 K9     ; R82 := R6[0xa40531d8]
+ 39 [-]: GETTABLE  R6 R6 K9     ; R6 := R6[0xa40531d8]
  40 [-]: GETGLOBAL R7 K1        ; R7 := 0xffe5f3b7
  41 [-]: DIV       R7 R1 R7     ; R7 := R1 / R7
  42 [-]: LOADK     R8 2         ; R8 := 2.000000

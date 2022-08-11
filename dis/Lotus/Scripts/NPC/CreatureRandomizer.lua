@@ -241,7 +241,7 @@
  70 [-]: MOVE      R32 R21      ; R32 := R21
  71 [-]: CALL      R30 3 2      ; R30 := R30(R31,R32)
  72 [-]: GETUPVAL  R31 U3       ; R31 := U3
- 73 [-]: GETTABLE  R31 R31 K19  ; R82 := R31[0x6bcd0a85]
+ 73 [-]: GETTABLE  R31 R31 K19  ; R31 := R31[0x6bcd0a85]
  74 [-]: MOVE      R32 R30      ; R32 := R30
  75 [-]: CALL      R31 2 4      ; R31,R32,R33 := R31(R32)
  76 [-]: MOVE      R27 R33      ; R27 := R33
@@ -255,7 +255,7 @@
  84 [-]: CALL      R31 4 2      ; R31 := R31(R32,R33,R34)
  85 [-]: MOVE      R26 R31      ; R26 := R31
  86 [-]: GETUPVAL  R31 U3       ; R31 := U3
- 87 [-]: GETTABLE  R31 R31 K22  ; R82 := R31[0x6b70106d]
+ 87 [-]: GETTABLE  R31 R31 K22  ; R31 := R31[0x6b70106d]
  88 [-]: MOVE      R32 R25      ; R32 := R25
  89 [-]: MOVE      R33 R26      ; R33 := R26
  90 [-]: MOVE      R34 R27      ; R34 := R27
@@ -283,7 +283,7 @@
 112 [-]: MOVE      R34 R22      ; R34 := R22
 113 [-]: CALL      R32 3 2      ; R32 := R32(R33,R34)
 114 [-]: GETUPVAL  R33 U3       ; R33 := U3
-115 [-]: GETTABLE  R33 R33 K19  ; R82 := R33[0x6bcd0a85]
+115 [-]: GETTABLE  R33 R33 K19  ; R33 := R33[0x6bcd0a85]
 116 [-]: MOVE      R34 R32      ; R34 := R32
 117 [-]: CALL      R33 2 4      ; R33,R34,R35 := R33(R34)
 118 [-]: MOVE      R27 R35      ; R27 := R35
@@ -297,7 +297,7 @@
 126 [-]: CALL      R33 4 2      ; R33 := R33(R34,R35,R36)
 127 [-]: MOVE      R26 R33      ; R26 := R33
 128 [-]: GETUPVAL  R33 U3       ; R33 := U3
-129 [-]: GETTABLE  R33 R33 K22  ; R82 := R33[0x6b70106d]
+129 [-]: GETTABLE  R33 R33 K22  ; R33 := R33[0x6b70106d]
 130 [-]: MOVE      R34 R25      ; R34 := R25
 131 [-]: MOVE      R35 R26      ; R35 := R26
 132 [-]: MOVE      R36 R27      ; R36 := R27
@@ -325,7 +325,7 @@
 154 [-]: MOVE      R36 R23      ; R36 := R23
 155 [-]: CALL      R34 3 2      ; R34 := R34(R35,R36)
 156 [-]: GETUPVAL  R35 U3       ; R35 := U3
-157 [-]: GETTABLE  R35 R35 K19  ; R82 := R35[0x6bcd0a85]
+157 [-]: GETTABLE  R35 R35 K19  ; R35 := R35[0x6bcd0a85]
 158 [-]: MOVE      R36 R34      ; R36 := R34
 159 [-]: CALL      R35 2 4      ; R35,R36,R37 := R35(R36)
 160 [-]: MOVE      R27 R37      ; R27 := R37
@@ -339,7 +339,7 @@
 168 [-]: CALL      R35 4 2      ; R35 := R35(R36,R37,R38)
 169 [-]: MOVE      R26 R35      ; R26 := R35
 170 [-]: GETUPVAL  R35 U3       ; R35 := U3
-171 [-]: GETTABLE  R35 R35 K22  ; R82 := R35[0x6b70106d]
+171 [-]: GETTABLE  R35 R35 K22  ; R35 := R35[0x6b70106d]
 172 [-]: MOVE      R36 R25      ; R36 := R25
 173 [-]: MOVE      R37 R26      ; R37 := R26
 174 [-]: MOVE      R38 R27      ; R38 := R27
@@ -367,7 +367,7 @@
 196 [-]: MOVE      R38 R24      ; R38 := R24
 197 [-]: CALL      R36 3 2      ; R36 := R36(R37,R38)
 198 [-]: GETUPVAL  R37 U3       ; R37 := U3
-199 [-]: GETTABLE  R37 R37 K19  ; R82 := R37[0x6bcd0a85]
+199 [-]: GETTABLE  R37 R37 K19  ; R37 := R37[0x6bcd0a85]
 200 [-]: MOVE      R38 R36      ; R38 := R36
 201 [-]: CALL      R37 2 4      ; R37,R38,R39 := R37(R38)
 202 [-]: MOVE      R27 R39      ; R27 := R39
@@ -381,7 +381,7 @@
 210 [-]: CALL      R37 4 2      ; R37 := R37(R38,R39,R40)
 211 [-]: MOVE      R26 R37      ; R26 := R37
 212 [-]: GETUPVAL  R37 U3       ; R37 := U3
-213 [-]: GETTABLE  R37 R37 K22  ; R82 := R37[0x6b70106d]
+213 [-]: GETTABLE  R37 R37 K22  ; R37 := R37[0x6b70106d]
 214 [-]: MOVE      R38 R25      ; R38 := R25
 215 [-]: MOVE      R39 R26      ; R39 := R26
 216 [-]: MOVE      R40 R27      ; R40 := R27

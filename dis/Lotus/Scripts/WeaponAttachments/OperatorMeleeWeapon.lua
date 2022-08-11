@@ -45,7 +45,7 @@
  36 [-]: LOADK     R9 350       ; R9 := 350.000000
  37 [-]: LOADK     R10 400      ; R10 := 400.000000
  38 [-]: SETLIST   R4 6 1       ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 6
- 39 [-]: SETTABLE  R3 K13 R4    ; R3["absorbPerEnergy"] := R4
+ 39 [-]: SETTABLE  R3 K13 R4    ; R3[0x00000061] := R4
  40 [-]: NEWTABLE  R4 0 4       ; R4 := {}
  41 [-]: GETGLOBAL R5 K2        ; R5 := 0x0469f296
  42 [-]: LOADK     R6 K14       ; R6 := "BlastAllyShield"
@@ -333,11 +333,11 @@
   3 [-]: GETTABLE  R2 R2 K1     ; R2 := R2["stunDuration"]
   4 [-]: SETTABLE  R1 K0 R2     ; R1["DURATION"] := R2
   5 [-]: GETGLOBAL R2 K3        ; R2 := 0x5bced4c4
-  6 [-]: GETTABLE  R2 R2 K4     ; R82 := R2[0x55f27c30]
+  6 [-]: GETTABLE  R2 R2 K4     ; R2 := R2[0x55f27c30]
   7 [-]: GETUPVAL  R3 U0        ; R3 := U0
   8 [-]: GETTABLE  R3 R3 K5     ; R3 := R3["maxHealthAsDamage"]
   9 [-]: GETGLOBAL R4 K3        ; R4 := 0x5bced4c4
- 10 [-]: GETTABLE  R4 R4 K6     ; R82 := R4[0xac1b386a]
+ 10 [-]: GETTABLE  R4 R4 K6     ; R4 := R4[0xac1b386a]
  11 [-]: GETUPVAL  R5 U0        ; R5 := U0
  12 [-]: GETTABLE  R5 R5 K5     ; R5 := R5["maxHealthAsDamage"]
  13 [-]: LEN       R5 R5        ; R5 := # R5
@@ -350,7 +350,7 @@
  20 [-]: GETUPVAL  R2 U0        ; R2 := U0
  21 [-]: GETTABLE  R2 R2 K9     ; R2 := R2["damageRange"]
  22 [-]: GETGLOBAL R3 K3        ; R3 := 0x5bced4c4
- 23 [-]: GETTABLE  R3 R3 K6     ; R82 := R3[0xac1b386a]
+ 23 [-]: GETTABLE  R3 R3 K6     ; R3 := R3[0xac1b386a]
  24 [-]: GETUPVAL  R4 U0        ; R4 := U0
  25 [-]: GETTABLE  R4 R4 K9     ; R4 := R4["damageRange"]
  26 [-]: LEN       R4 R4        ; R4 := # R4
@@ -359,7 +359,7 @@
  29 [-]: GETTABLE  R2 R2 R3     ; R2 := R2[R3]
  30 [-]: SETTABLE  R1 K8 R2     ; R1["DISTANCE"] := R2
  31 [-]: GETGLOBAL R2 K10       ; R2 := cjson
- 32 [-]: GETTABLE  R2 R2 K11    ; R82 := R2[0xb139d7bc]
+ 32 [-]: GETTABLE  R2 R2 K11    ; R2 := R2[0xb139d7bc]
  33 [-]: MOVE      R3 R1        ; R3 := R1
  34 [-]: TAILCALL  R2 2 0       ; R2,... := R2(R3)
  35 [-]: RETURN    R2 0         ; return R2,...
@@ -377,11 +377,11 @@
 
   1 [-]: NEWTABLE  R1 0 1       ; R1 := {}
   2 [-]: GETGLOBAL R2 K1        ; R2 := 0x5bced4c4
-  3 [-]: GETTABLE  R2 R2 K2     ; R82 := R2[0x55f27c30]
+  3 [-]: GETTABLE  R2 R2 K2     ; R2 := R2[0x55f27c30]
   4 [-]: GETUPVAL  R3 U0        ; R3 := U0
   5 [-]: GETTABLE  R3 R3 K3     ; R3 := R3["extraDamageTaken"]
   6 [-]: GETGLOBAL R4 K1        ; R4 := 0x5bced4c4
-  7 [-]: GETTABLE  R4 R4 K4     ; R82 := R4[0xac1b386a]
+  7 [-]: GETTABLE  R4 R4 K4     ; R4 := R4[0xac1b386a]
   8 [-]: GETUPVAL  R5 U0        ; R5 := U0
   9 [-]: GETTABLE  R5 R5 K3     ; R5 := R5["extraDamageTaken"]
  10 [-]: LEN       R5 R5        ; R5 := # R5
@@ -392,7 +392,7 @@
  15 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  16 [-]: SETTABLE  R1 K0 R2     ; R1["AMOUNT"] := R2
  17 [-]: GETGLOBAL R2 K6        ; R2 := cjson
- 18 [-]: GETTABLE  R2 R2 K7     ; R82 := R2[0xb139d7bc]
+ 18 [-]: GETTABLE  R2 R2 K7     ; R2 := R2[0xb139d7bc]
  19 [-]: MOVE      R3 R1        ; R3 := R1
  20 [-]: TAILCALL  R2 2 0       ; R2,... := R2(R3)
  21 [-]: RETURN    R2 0         ; return R2,...
@@ -410,11 +410,11 @@
 
   1 [-]: NEWTABLE  R1 0 1       ; R1 := {}
   2 [-]: GETGLOBAL R2 K1        ; R2 := 0x5bced4c4
-  3 [-]: GETTABLE  R2 R2 K2     ; R82 := R2[0x55f27c30]
+  3 [-]: GETTABLE  R2 R2 K2     ; R2 := R2[0x55f27c30]
   4 [-]: GETUPVAL  R3 U0        ; R3 := U0
   5 [-]: GETTABLE  R3 R3 K3     ; R3 := R3["extraDamageTaken"]
   6 [-]: GETGLOBAL R4 K1        ; R4 := 0x5bced4c4
-  7 [-]: GETTABLE  R4 R4 K4     ; R82 := R4[0xac1b386a]
+  7 [-]: GETTABLE  R4 R4 K4     ; R4 := R4[0xac1b386a]
   8 [-]: GETUPVAL  R5 U0        ; R5 := U0
   9 [-]: GETTABLE  R5 R5 K3     ; R5 := R5["extraDamageTaken"]
  10 [-]: LEN       R5 R5        ; R5 := # R5
@@ -425,7 +425,7 @@
  15 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  16 [-]: SETTABLE  R1 K0 R2     ; R1["AMOUNT"] := R2
  17 [-]: GETGLOBAL R2 K6        ; R2 := cjson
- 18 [-]: GETTABLE  R2 R2 K7     ; R82 := R2[0xb139d7bc]
+ 18 [-]: GETTABLE  R2 R2 K7     ; R2 := R2[0xb139d7bc]
  19 [-]: MOVE      R3 R1        ; R3 := R1
  20 [-]: TAILCALL  R2 2 0       ; R2,... := R2(R3)
  21 [-]: RETURN    R2 0         ; return R2,...
@@ -460,7 +460,7 @@
  17 [-]: CONCAT    R7 R7 R8     ; R7 := R7 .. R8
  18 [-]: SETTABLE  R6 K2 R7     ; R6[0x35844cf2] := R7
  19 [-]: GETGLOBAL R7 K6        ; R7 := 0x5bced4c4
- 20 [-]: GETTABLE  R7 R7 K7     ; R82 := R7[0x55f27c30]
+ 20 [-]: GETTABLE  R7 R7 K7     ; R7 := R7[0x55f27c30]
  21 [-]: MOVE      R8 R4        ; R8 := R4
  22 [-]: GETUPVAL  R9 U0        ; R9 := U0
  23 [-]: GETTABLE  R9 R9 K8     ; R9 := R9["damage"]
@@ -477,7 +477,7 @@
  34 [-]: JMP       49           ; PC := 49
  35 [-]: NEWTABLE  R6 0 1       ; R6 := {}
  36 [-]: GETGLOBAL R7 K6        ; R7 := 0x5bced4c4
- 37 [-]: GETTABLE  R7 R7 K7     ; R82 := R7[0x55f27c30]
+ 37 [-]: GETTABLE  R7 R7 K7     ; R7 := R7[0x55f27c30]
  38 [-]: SELF      R8 R2 K12    ; R9 := R2; R8 := R2[0xfef27732]
  39 [-]: LOADK     R10 0        ; R10 := 0.000000
  40 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
@@ -529,7 +529,7 @@
  86 [-]: JMP       104          ; PC := 104
  87 [-]: NEWTABLE  R6 0 2       ; R6 := {}
  88 [-]: GETGLOBAL R7 K6        ; R7 := 0x5bced4c4
- 89 [-]: GETTABLE  R7 R7 K7     ; R82 := R7[0x55f27c30]
+ 89 [-]: GETTABLE  R7 R7 K7     ; R7 := R7[0x55f27c30]
  90 [-]: MOVE      R8 R4        ; R8 := R4
  91 [-]: GETUPVAL  R9 U3        ; R9 := U3
  92 [-]: GETTABLE  R9 R9 K22    ; R9 := R9["slow"]
@@ -555,7 +555,7 @@
 112 [-]: CALL      R7 2 2       ; R7 := R7(R8)
 113 [-]: SETTABLE  R6 K16 R7    ; R6["RADIUS"] := R7
 114 [-]: GETGLOBAL R7 K6        ; R7 := 0x5bced4c4
-115 [-]: GETTABLE  R7 R7 K7     ; R82 := R7[0x55f27c30]
+115 [-]: GETTABLE  R7 R7 K7     ; R7 := R7[0x55f27c30]
 116 [-]: MOVE      R8 R4        ; R8 := R4
 117 [-]: GETUPVAL  R9 U4        ; R9 := U4
 118 [-]: GETTABLE  R9 R9 K8     ; R9 := R9["damage"]
@@ -571,7 +571,7 @@
 128 [-]: JMP       146          ; PC := 146
 129 [-]: NEWTABLE  R6 0 2       ; R6 := {}
 130 [-]: GETGLOBAL R7 K6        ; R7 := 0x5bced4c4
-131 [-]: GETTABLE  R7 R7 K7     ; R82 := R7[0x55f27c30]
+131 [-]: GETTABLE  R7 R7 K7     ; R7 := R7[0x55f27c30]
 132 [-]: MOVE      R8 R4        ; R8 := R4
 133 [-]: GETUPVAL  R9 U5        ; R9 := U5
 134 [-]: GETTABLE  R9 R9 K25    ; R9 := R9["chance"]
@@ -592,7 +592,7 @@
 149 [-]: JMP       162          ; PC := 162
 150 [-]: NEWTABLE  R6 0 1       ; R6 := {}
 151 [-]: GETGLOBAL R7 K6        ; R7 := 0x5bced4c4
-152 [-]: GETTABLE  R7 R7 K7     ; R82 := R7[0x55f27c30]
+152 [-]: GETTABLE  R7 R7 K7     ; R7 := R7[0x55f27c30]
 153 [-]: MOVE      R8 R4        ; R8 := R4
 154 [-]: GETUPVAL  R9 U6        ; R9 := U6
 155 [-]: GETTABLE  R9 R9 K25    ; R9 := R9["chance"]
@@ -625,7 +625,7 @@
 182 [-]: CALL      R7 2 2       ; R7 := R7(R8)
 183 [-]: SETTABLE  R6 K2 R7     ; R6[0x35844cf2] := R7
 184 [-]: GETGLOBAL R7 K6        ; R7 := 0x5bced4c4
-185 [-]: GETTABLE  R7 R7 K7     ; R82 := R7[0x55f27c30]
+185 [-]: GETTABLE  R7 R7 K7     ; R7 := R7[0x55f27c30]
 186 [-]: MOVE      R8 R4        ; R8 := R4
 187 [-]: GETUPVAL  R9 U8        ; R9 := U8
 188 [-]: GETTABLE  R9 R9 K8     ; R9 := R9["damage"]
@@ -634,7 +634,7 @@
 191 [-]: CALL      R7 2 2       ; R7 := R7(R8)
 192 [-]: SETTABLE  R6 K5 R7     ; R6["DAMAGE"] := R7
 193 [-]: GETGLOBAL R7 K6        ; R7 := 0x5bced4c4
-194 [-]: GETTABLE  R7 R7 K7     ; R82 := R7[0x55f27c30]
+194 [-]: GETTABLE  R7 R7 K7     ; R7 := R7[0x55f27c30]
 195 [-]: MOVE      R8 R4        ; R8 := R4
 196 [-]: GETUPVAL  R9 U8        ; R9 := U8
 197 [-]: GETTABLE  R9 R9 K25    ; R9 := R9["chance"]
@@ -644,7 +644,7 @@
 201 [-]: SETTABLE  R6 K24 R7    ; R6["CHANCE"] := R7
 202 [-]: MOVE      R3 R6        ; R3 := R6
 203 [-]: GETGLOBAL R6 K26       ; R6 := cjson
-204 [-]: GETTABLE  R6 R6 K27    ; R82 := R6[0xb139d7bc]
+204 [-]: GETTABLE  R6 R6 K27    ; R6 := R6[0xb139d7bc]
 205 [-]: MOVE      R7 R3        ; R7 := R3
 206 [-]: TAILCALL  R6 2 0       ; R6,... := R6(R7)
 207 [-]: RETURN    R6 0         ; return R6,...
@@ -661,7 +661,7 @@
 ; Max Stack Size:  4
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0x5bced4c4
-  2 [-]: GETTABLE  R1 R1 K1     ; R82 := R1[0xac1b386a]
+  2 [-]: GETTABLE  R1 R1 K1     ; R1 := R1[0xac1b386a]
   3 [-]: GETUPVAL  R2 U0        ; R2 := U0
   4 [-]: LEN       R3 R0        ; R3 := # R0
   5 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
@@ -879,7 +879,7 @@
   3 [-]: TEST      R2 0         ; if not R2 then PC := 61
   4 [-]: JMP       61           ; PC := 61
   5 [-]: GETGLOBAL R2 K1        ; R2 := 0x34291f5c
-  6 [-]: GETTABLE  R2 R2 K2     ; R82 := R2[0x5cb2adf8]
+  6 [-]: GETTABLE  R2 R2 K2     ; R2 := R2[0x5cb2adf8]
   7 [-]: CALL      R2 1 2       ; R2 := R2()
   8 [-]: GETUPVAL  R3 U0        ; R3 := U0
   9 [-]: GETTABLE  R3 R3 K4     ; R3 := R3["damage"]
@@ -966,13 +966,13 @@
 
   1 [-]: LOADBOOL  R1 0 0       ; R1 := false
   2 [-]: GETUPVAL  R2 U0        ; R2 := U0
-  3 [-]: GETTABLE  R2 R2 K0     ; R82 := R2[0x4c2a051e]
+  3 [-]: GETTABLE  R2 R2 K0     ; R2 := R2[0x4c2a051e]
   4 [-]: MOVE      R3 R0        ; R3 := R0
   5 [-]: CALL      R2 2 2       ; R2 := R2(R3)
   6 [-]: EQ        0 R2 K2      ; if R2 ~= 1.000000 then PC := 23
   7 [-]: JMP       23           ; PC := 23
   8 [-]: GETUPVAL  R3 U0        ; R3 := U0
-  9 [-]: GETTABLE  R3 R3 K3     ; R82 := R3[0x7788c940]
+  9 [-]: GETTABLE  R3 R3 K3     ; R3 := R3[0x7788c940]
  10 [-]: MOVE      R4 R0        ; R4 := R0
  11 [-]: GETUPVAL  R5 U1        ; R5 := U1
  12 [-]: GETTABLE  R5 R5 K4     ; R5 := R5["tag"]
@@ -989,7 +989,7 @@
  23 [-]: EQ        0 R2 K7      ; if R2 ~= 2.000000 then PC := 40
  24 [-]: JMP       40           ; PC := 40
  25 [-]: GETUPVAL  R4 U0        ; R4 := U0
- 26 [-]: GETTABLE  R4 R4 K3     ; R82 := R4[0x7788c940]
+ 26 [-]: GETTABLE  R4 R4 K3     ; R4 := R4[0x7788c940]
  27 [-]: MOVE      R5 R0        ; R5 := R0
  28 [-]: GETUPVAL  R6 U3        ; R6 := U3
  29 [-]: GETTABLE  R6 R6 K4     ; R6 := R6["tag"]
@@ -1006,7 +1006,7 @@
  40 [-]: EQ        0 R2 K9      ; if R2 ~= 4.000000 then PC := 69
  41 [-]: JMP       69           ; PC := 69
  42 [-]: GETUPVAL  R5 U0        ; R5 := U0
- 43 [-]: GETTABLE  R5 R5 K3     ; R82 := R5[0x7788c940]
+ 43 [-]: GETTABLE  R5 R5 K3     ; R5 := R5[0x7788c940]
  44 [-]: MOVE      R6 R0        ; R6 := R0
  45 [-]: GETUPVAL  R7 U5        ; R7 := U5
  46 [-]: GETTABLE  R7 R7 K4     ; R7 := R7["tag"]
@@ -1018,7 +1018,7 @@
  52 [-]: LOADBOOL  R1 0 1       ; R1 := false; PC := 53
  53 [-]: LOADBOOL  R1 1 0       ; R1 := true
  54 [-]: GETUPVAL  R5 U0        ; R5 := U0
- 55 [-]: GETTABLE  R5 R5 K3     ; R82 := R5[0x7788c940]
+ 55 [-]: GETTABLE  R5 R5 K3     ; R5 := R5[0x7788c940]
  56 [-]: MOVE      R6 R0        ; R6 := R0
  57 [-]: GETUPVAL  R7 U6        ; R7 := U6
  58 [-]: GETTABLE  R7 R7 K4     ; R7 := R7["tag"]
@@ -1035,7 +1035,7 @@
  69 [-]: EQ        0 R2 K12     ; if R2 ~= 3.000000 then PC := 93
  70 [-]: JMP       93           ; PC := 93
  71 [-]: GETUPVAL  R6 U0        ; R6 := U0
- 72 [-]: GETTABLE  R6 R6 K3     ; R82 := R6[0x7788c940]
+ 72 [-]: GETTABLE  R6 R6 K3     ; R6 := R6[0x7788c940]
  73 [-]: MOVE      R7 R0        ; R7 := R0
  74 [-]: GETUPVAL  R8 U8        ; R8 := U8
  75 [-]: GETTABLE  R8 R8 K4     ; R8 := R8["tag"]
@@ -1045,7 +1045,7 @@
  79 [-]: LT        1 K6 R6      ; if 0.000000 < R6 then PC := 91
  80 [-]: JMP       91           ; PC := 91
  81 [-]: GETUPVAL  R6 U0        ; R6 := U0
- 82 [-]: GETTABLE  R6 R6 K3     ; R82 := R6[0x7788c940]
+ 82 [-]: GETTABLE  R6 R6 K3     ; R6 := R6[0x7788c940]
  83 [-]: MOVE      R7 R0        ; R7 := R0
  84 [-]: GETUPVAL  R8 U9        ; R8 := U9
  85 [-]: GETTABLE  R8 R8 K4     ; R8 := R8["tag"]
@@ -1059,7 +1059,7 @@
  93 [-]: EQ        0 R2 K14     ; if R2 ~= 7.000000 then PC := 116
  94 [-]: JMP       116          ; PC := 116
  95 [-]: GETUPVAL  R6 U0        ; R6 := U0
- 96 [-]: GETTABLE  R6 R6 K3     ; R82 := R6[0x7788c940]
+ 96 [-]: GETTABLE  R6 R6 K3     ; R6 := R6[0x7788c940]
  97 [-]: MOVE      R7 R0        ; R7 := R0
  98 [-]: GETUPVAL  R8 U10       ; R8 := U10
  99 [-]: GETTABLE  R8 R8 K4     ; R8 := R8["tag"]
@@ -1069,7 +1069,7 @@
 103 [-]: LT        1 K6 R6      ; if 0.000000 < R6 then PC := 115
 104 [-]: JMP       115          ; PC := 115
 105 [-]: GETUPVAL  R6 U0        ; R6 := U0
-106 [-]: GETTABLE  R6 R6 K3     ; R82 := R6[0x7788c940]
+106 [-]: GETTABLE  R6 R6 K3     ; R6 := R6[0x7788c940]
 107 [-]: MOVE      R7 R0        ; R7 := R0
 108 [-]: GETUPVAL  R8 U11       ; R8 := U11
 109 [-]: GETTABLE  R8 R8 K4     ; R8 := R8["tag"]
@@ -1242,7 +1242,7 @@
  13 [-]: TEST      R6 1         ; if R6 then PC := 79
  14 [-]: JMP       79           ; PC := 79
  15 [-]: GETUPVAL  R6 U0        ; R6 := U0
- 16 [-]: GETTABLE  R6 R6 K3     ; R82 := R6[0x7788c940]
+ 16 [-]: GETTABLE  R6 R6 K3     ; R6 := R6[0x7788c940]
  17 [-]: MOVE      R7 R4        ; R7 := R4
  18 [-]: GETUPVAL  R8 U1        ; R8 := U1
  19 [-]: GETTABLE  R8 R8 K4     ; R8 := R8["tag"]
@@ -1282,7 +1282,7 @@
  53 [-]: MOVE      R14 R7       ; R14 := R7
  54 [-]: CALL      R9 6 1       ; R9(R10,R11,R12,R13,R14)
  55 [-]: GETGLOBAL R9 K12       ; R9 := 0x6c97a788
- 56 [-]: GETTABLE  R9 R9 K13    ; R82 := R9[0x608bc054]
+ 56 [-]: GETTABLE  R9 R9 K13    ; R9 := R9[0x608bc054]
  57 [-]: CALL      R9 1 2       ; R9 := R9()
  58 [-]: SETTABLE  R9 K14 R5    ; R9["instigator"] := R5
  59 [-]: NEWTABLE  R10 1 0      ; R10 := {}
@@ -1292,7 +1292,7 @@
  63 [-]: SETTABLE  R9 K16 K17   ; R9["buffType"] := 3.000000
  64 [-]: SETTABLE  R9 K18 R8    ; R9["buffData"] := R8
  65 [-]: GETGLOBAL R10 K20      ; R10 := 0x5bced4c4
- 66 [-]: GETTABLE  R10 R10 K21  ; R82 := R10[0x99675e23]
+ 66 [-]: GETTABLE  R10 R10 K21  ; R10 := R10[0x99675e23]
  67 [-]: MUL       R11 R7 K22   ; R11 := R7 * 100.000000
  68 [-]: CALL      R10 2 2      ; R10 := R10(R11)
  69 [-]: SETTABLE  R9 K19 R10   ; R9["buffDataExtra"] := R10
@@ -1388,7 +1388,7 @@
  69 [-]: GETUPVAL  R7 U0        ; R7 := U0
  70 [-]: GETTABLE  R7 R7 K19    ; R7 := R7["maxHealthAsDamage"]
  71 [-]: GETGLOBAL R8 K20       ; R8 := 0x5bced4c4
- 72 [-]: GETTABLE  R8 R8 K21    ; R82 := R8[0xac1b386a]
+ 72 [-]: GETTABLE  R8 R8 K21    ; R8 := R8[0xac1b386a]
  73 [-]: GETUPVAL  R9 U0        ; R9 := U0
  74 [-]: GETTABLE  R9 R9 K19    ; R9 := R9["maxHealthAsDamage"]
  75 [-]: LEN       R9 R9        ; R9 := # R9
@@ -1398,7 +1398,7 @@
  79 [-]: GETUPVAL  R8 U0        ; R8 := U0
  80 [-]: GETTABLE  R8 R8 K22    ; R8 := R8["damageRange"]
  81 [-]: GETGLOBAL R9 K20       ; R9 := 0x5bced4c4
- 82 [-]: GETTABLE  R9 R9 K21    ; R82 := R9[0xac1b386a]
+ 82 [-]: GETTABLE  R9 R9 K21    ; R9 := R9[0xac1b386a]
  83 [-]: GETUPVAL  R10 U0       ; R10 := U0
  84 [-]: GETTABLE  R10 R10 K22  ; R10 := R10["damageRange"]
  85 [-]: LEN       R10 R10      ; R10 := # R10
@@ -1406,7 +1406,7 @@
  87 [-]: CALL      R9 3 2       ; R9 := R9(R10,R11)
  88 [-]: GETTABLE  R8 R8 R9     ; R8 := R8[R9]
  89 [-]: GETGLOBAL R9 K23       ; R9 := 0x34291f5c
- 90 [-]: GETTABLE  R9 R9 K24    ; R82 := R9[0x35c16153]
+ 90 [-]: GETTABLE  R9 R9 K24    ; R9 := R9[0x35c16153]
  91 [-]: CALL      R9 1 2       ; R9 := R9()
  92 [-]: SELF      R10 R0 K26   ; R11 := R0; R10 := R0[0xb40c191a]
  93 [-]: CALL      R10 2 2      ; R10 := R10(R11)
@@ -1483,7 +1483,7 @@
  11 [-]: CALL      R12 2 2      ; R12 := R12(R13)
  12 [-]: MOVE      R10 R12      ; R10 := R12
  13 [-]: GETUPVAL  R12 U0       ; R12 := U0
- 14 [-]: GETTABLE  R12 R12 K5   ; R82 := R12[0x4c2a051e]
+ 14 [-]: GETTABLE  R12 R12 K5   ; R12 := R12[0x4c2a051e]
  15 [-]: MOVE      R13 R10      ; R13 := R10
  16 [-]: CALL      R12 2 2      ; R12 := R12(R13)
  17 [-]: MOVE      R11 R12      ; R11 := R12
@@ -1492,7 +1492,7 @@
  20 [-]: LT        0 K8 R4      ; if 0.000000 >= R4 then PC := 68
  21 [-]: JMP       68           ; PC := 68
  22 [-]: GETUPVAL  R12 U0       ; R12 := U0
- 23 [-]: GETTABLE  R12 R12 K9   ; R82 := R12[0x7788c940]
+ 23 [-]: GETTABLE  R12 R12 K9   ; R12 := R12[0x7788c940]
  24 [-]: MOVE      R13 R10      ; R13 := R10
  25 [-]: GETUPVAL  R14 U1       ; R14 := U1
  26 [-]: GETTABLE  R14 R14 K10  ; R14 := R14["tag"]
@@ -1561,7 +1561,7 @@
  89 [-]: CALL      R16 2 2      ; R16 := R16(R17)
  90 [-]: MOVE      R10 R16      ; R10 := R16
  91 [-]: GETUPVAL  R16 U0       ; R16 := U0
- 92 [-]: GETTABLE  R16 R16 K5   ; R82 := R16[0x4c2a051e]
+ 92 [-]: GETTABLE  R16 R16 K5   ; R16 := R16[0x4c2a051e]
  93 [-]: MOVE      R17 R10      ; R17 := R10
  94 [-]: CALL      R16 2 2      ; R16 := R16(R17)
  95 [-]: MOVE      R11 R16      ; R11 := R16
@@ -1573,7 +1573,7 @@
 101 [-]: TEST      R16 0        ; if not R16 then PC := 298
 102 [-]: JMP       298          ; PC := 298
 103 [-]: GETUPVAL  R16 U0       ; R16 := U0
-104 [-]: GETTABLE  R16 R16 K9   ; R82 := R16[0x7788c940]
+104 [-]: GETTABLE  R16 R16 K9   ; R16 := R16[0x7788c940]
 105 [-]: MOVE      R17 R10      ; R17 := R10
 106 [-]: GETUPVAL  R18 U2       ; R18 := U2
 107 [-]: GETTABLE  R18 R18 K10  ; R18 := R18["tag"]
@@ -1607,7 +1607,7 @@
 135 [-]: TEST      R17 0        ; if not R17 then PC := 298
 136 [-]: JMP       298          ; PC := 298
 137 [-]: GETUPVAL  R17 U0       ; R17 := U0
-138 [-]: GETTABLE  R17 R17 K9   ; R82 := R17[0x7788c940]
+138 [-]: GETTABLE  R17 R17 K9   ; R17 := R17[0x7788c940]
 139 [-]: MOVE      R18 R10      ; R18 := R10
 140 [-]: GETUPVAL  R19 U4       ; R19 := U4
 141 [-]: GETTABLE  R19 R19 K10  ; R19 := R19["tag"]
@@ -1633,7 +1633,7 @@
 161 [-]: GETUPVAL  R19 U4       ; R19 := U4
 162 [-]: GETTABLE  R19 R19 K11  ; R19 := R19["duration"]
 163 [-]: GETTABLE  R19 R19 R17  ; R19 := R19[R17]
-164 [-]: SETUPVAL  R19 U5       ; U82 := 
+164 [-]: SETUPVAL  R19 U5       ; U82 := R5
 165 [-]: SELF      R19 R3 K28   ; R20 := R3; R19 := R3[0xd5f7912b]
 166 [-]: GETGLOBAL R21 K29      ; R21 := 0x0469f296
 167 [-]: LOADK     R22 K31      ; R22 := "ConfuseTarget"
@@ -1656,7 +1656,7 @@
 184 [-]: TEST      R19 1        ; if R19 then PC := 298
 185 [-]: JMP       298          ; PC := 298
 186 [-]: GETUPVAL  R19 U0       ; R19 := U0
-187 [-]: GETTABLE  R19 R19 K9   ; R82 := R19[0x7788c940]
+187 [-]: GETTABLE  R19 R19 K9   ; R19 := R19[0x7788c940]
 188 [-]: MOVE      R20 R10      ; R20 := R10
 189 [-]: GETUPVAL  R21 U6       ; R21 := U6
 190 [-]: GETTABLE  R21 R21 K10  ; R21 := R21["tag"]
@@ -1726,7 +1726,7 @@
 254 [-]: EQ        0 R11 K7     ; if R11 ~= 7.000000 then PC := 298
 255 [-]: JMP       298          ; PC := 298
 256 [-]: GETUPVAL  R27 U0       ; R27 := U0
-257 [-]: GETTABLE  R27 R27 K9   ; R82 := R27[0x7788c940]
+257 [-]: GETTABLE  R27 R27 K9   ; R27 := R27[0x7788c940]
 258 [-]: MOVE      R28 R10      ; R28 := R10
 259 [-]: GETUPVAL  R29 U7       ; R29 := U7
 260 [-]: GETTABLE  R29 R29 K10  ; R29 := R29["tag"]
@@ -1834,7 +1834,7 @@
 362 [-]: GETUPVAL  R39 U8       ; R39 := U8
 363 [-]: GETTABLE  R39 R39 K62  ; R39 := R39["extraDamageTaken"]
 364 [-]: GETGLOBAL R40 K63      ; R40 := 0x5bced4c4
-365 [-]: GETTABLE  R40 R40 K64  ; R82 := R40[0xac1b386a]
+365 [-]: GETTABLE  R40 R40 K64  ; R40 := R40[0xac1b386a]
 366 [-]: GETUPVAL  R41 U8       ; R41 := U8
 367 [-]: GETTABLE  R41 R41 K62  ; R41 := R41["extraDamageTaken"]
 368 [-]: LEN       R41 R41      ; R41 := # R41
@@ -1855,7 +1855,7 @@
 383 [-]: GETUPVAL  R40 U9       ; R40 := U9
 384 [-]: GETTABLE  R40 R40 K62  ; R40 := R40["extraDamageTaken"]
 385 [-]: GETGLOBAL R41 K63      ; R41 := 0x5bced4c4
-386 [-]: GETTABLE  R41 R41 K64  ; R82 := R41[0xac1b386a]
+386 [-]: GETTABLE  R41 R41 K64  ; R41 := R41[0xac1b386a]
 387 [-]: GETUPVAL  R42 U9       ; R42 := U9
 388 [-]: GETTABLE  R42 R42 K62  ; R42 := R42["extraDamageTaken"]
 389 [-]: LEN       R42 R42      ; R42 := # R42
@@ -1907,12 +1907,12 @@
 435 [-]: GETTABLE  R44 R44 K72  ; R44 := R44["robotStun"]
 436 [-]: SETTABLE  R44 R43 R33  ; R44[R43] := R33
 437 [-]: GETGLOBAL R44 K0       ; R44 := 0x34291f5c
-438 [-]: GETTABLE  R44 R44 K74  ; R82 := R44[0x35c16153]
+438 [-]: GETTABLE  R44 R44 K74  ; R44 := R44[0x35c16153]
 439 [-]: CALL      R44 1 2      ; R44 := R44()
 440 [-]: GETUPVAL  R45 U10      ; R45 := U10
 441 [-]: GETTABLE  R45 R45 K75  ; R45 := R45["maxHealthAsDamage"]
 442 [-]: GETGLOBAL R46 K63      ; R46 := 0x5bced4c4
-443 [-]: GETTABLE  R46 R46 K64  ; R82 := R46[0xac1b386a]
+443 [-]: GETTABLE  R46 R46 K64  ; R46 := R46[0xac1b386a]
 444 [-]: GETUPVAL  R47 U10      ; R47 := U10
 445 [-]: GETTABLE  R47 R47 K75  ; R47 := R47["maxHealthAsDamage"]
 446 [-]: LEN       R47 R47      ; R47 := # R47
@@ -1979,7 +1979,7 @@
 ; Max Stack Size:  13
 
   1 [-]: GETUPVAL  R2 U0        ; R2 := U0
-  2 [-]: GETTABLE  R2 R2 K0     ; R82 := R2[0x7788c940]
+  2 [-]: GETTABLE  R2 R2 K0     ; R2 := R2[0x7788c940]
   3 [-]: MOVE      R3 R1        ; R3 := R1
   4 [-]: GETUPVAL  R4 U1        ; R4 := U1
   5 [-]: GETTABLE  R4 R4 K1     ; R4 := R4["tag"]

@@ -88,7 +88,7 @@
 ; Max Stack Size:  6
 
   1 [-]: GETGLOBAL R3 K0        ; R3 := 0x5bced4c4
-  2 [-]: GETTABLE  R3 R3 K1     ; R82 := R3[0xb62ecfe0]
+  2 [-]: GETTABLE  R3 R3 K1     ; R3 := R3[0xb62ecfe0]
   3 [-]: LOADK     R4 0         ; R4 := 0.000000
   4 [-]: MOVE      R5 R0        ; R5 := R0
   5 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
@@ -146,8 +146,7 @@
  25 [-]: GETTABLE  R10 R1 K4    ; R10 := R1["missionRewardExtra"]
  26 [-]: SETTABLE  R1 K3 R10    ; R1["missionReward"] := R10
  27 [-]: LOADBOOL  R10 1 0      ; R10 := true
- 28 [-]: SETUPVAL  R10 U2       ; U82 := 
-
+ 28 [-]: SETUPVAL  R10 U2       ; U82 := R2
  29 [-]: EQ        1 R2 K5      ; if R2 == 0.000000 then PC := 236
  30 [-]: JMP       236          ; PC := 236
  31 [-]: GETGLOBAL R10 K0       ; R10 := 0x7b998233
@@ -302,7 +301,7 @@
 180 [-]: TEST      R37 1        ; if R37 then PC := 191
 181 [-]: JMP       191          ; PC := 191
 182 [-]: GETGLOBAL R37 K33      ; R37 := 0x6c97a788
-183 [-]: GETTABLE  R37 R37 K34  ; R82 := R37[0x1aba4d9e]
+183 [-]: GETTABLE  R37 R37 K34  ; R37 := R37[0x1aba4d9e]
 184 [-]: CALL      R37 1 2      ; R37 := R37()
 185 [-]: SETTABLE  R37 K35 R36  ; R37["mItemType"] := R36
 186 [-]: SETTABLE  R37 K27 K15  ; R37["mItemCount"] := 1.000000
@@ -341,7 +340,7 @@
 219 [-]: TEST      R38 1        ; if R38 then PC := 230
 220 [-]: JMP       230          ; PC := 230
 221 [-]: GETGLOBAL R43 K43      ; R43 := 0x33bdd652
-222 [-]: GETTABLE  R43 R43 K44  ; R82 := R43[0x23d5322f]
+222 [-]: GETTABLE  R43 R43 K44  ; R43 := R43[0x23d5322f]
 223 [-]: MOVE      R44 R8       ; R44 := R8
 224 [-]: NEWTABLE  R45 0 4      ; R45 := {}
 225 [-]: SETTABLE  R45 K41 R34  ; R45["storeItem"] := R34
@@ -395,7 +394,7 @@
  22 [-]: LOADK     R7 0         ; R7 := 0.000000
  23 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
  24 [-]: GETGLOBAL R5 K7        ; R5 := 0x5bced4c4
- 25 [-]: GETTABLE  R5 R5 K8     ; R82 := R5[0x99675e23]
+ 25 [-]: GETTABLE  R5 R5 K8     ; R5 := R5[0x99675e23]
  26 [-]: DIV       R6 R4 K9     ; R6 := R4 / 5.000000
  27 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  28 [-]: MOVE      R4 R5        ; R4 := R5

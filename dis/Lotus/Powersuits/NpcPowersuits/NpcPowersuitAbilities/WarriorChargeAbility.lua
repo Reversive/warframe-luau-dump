@@ -179,7 +179,7 @@
  33 [-]: TEST      R3 1         ; if R3 then PC := 42
  34 [-]: JMP       42           ; PC := 42
  35 [-]: GETUPVAL  R7 U1        ; R7 := U1
- 36 [-]: GETTABLE  R7 R7 K6     ; R82 := R7[0xa6943849]
+ 36 [-]: GETTABLE  R7 R7 K6     ; R7 := R7[0xa6943849]
  37 [-]: GETGLOBAL R8 K2        ; R8 := 0x0469f296
  38 [-]: LOADK     R9 K7        ; R9 := "BattleTaunts"
  39 [-]: CALL      R8 2 2       ; R8 := R8(R9)
@@ -321,7 +321,7 @@
 175 [-]: EQ        0 R24 R25    ; if R24 ~= R25 then PC := 238
 176 [-]: JMP       238          ; PC := 238
 177 [-]: GETGLOBAL R24 K10      ; R24 := 0x34291f5c
-178 [-]: GETTABLE  R24 R24 K34  ; R82 := R24[0x35c16153]
+178 [-]: GETTABLE  R24 R24 K34  ; R24 := R24[0x35c16153]
 179 [-]: CALL      R24 1 2      ; R24 := R24()
 180 [-]: GETGLOBAL R25 K35      ; R25 := 0xeb29760b
 181 [-]: SELF      R26 R1 K36   ; R27 := R1; R26 := R1[0xde321e6f]
@@ -377,7 +377,7 @@
 231 [-]: LOADBOOL  R33 1 0      ; R33 := true
 232 [-]: CALL      R28 6 1      ; R28(R29,R30,R31,R32,R33)
 233 [-]: GETGLOBAL R28 K52      ; R28 := 0x33bdd652
-234 [-]: GETTABLE  R28 R28 K53  ; R82 := R28[0x23d5322f]
+234 [-]: GETTABLE  R28 R28 K53  ; R28 := R28[0x23d5322f]
 235 [-]: MOVE      R29 R14      ; R29 := R14
 236 [-]: GETTABLE  R30 R19 R23  ; R30 := R19[R23]
 237 [-]: CALL      R28 3 1      ; R28(R29,R30)

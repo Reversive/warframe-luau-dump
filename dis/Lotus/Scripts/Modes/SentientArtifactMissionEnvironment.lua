@@ -508,16 +508,16 @@
  42 [-]: FORPREP   R10 60       ; R10 -= R12; PC := 60
  43 [-]: NEWTABLE  R14 0 3      ; R14 := {}
  44 [-]: GETTABLE  R15 R7 R13   ; R15 := R7[R13]
- 45 [-]: SETTABLE  R14 K14 R15  ; R14[0x5d985c7e] := R15
+ 45 [-]: SETTABLE  R14 K14 R15  ; R14["deco"] := R15
  46 [-]: GETTABLE  R15 R7 R13   ; R15 := R7[R13]
  47 [-]: SELF      R15 R15 K16  ; R16 := R15; R15 := R15[0xd1586535]
  48 [-]: CALL      R15 2 2      ; R15 := R15(R16)
- 49 [-]: SETTABLE  R14 K15 R15  ; R14[0x1d12e7aa] := R15
+ 49 [-]: SETTABLE  R14 K15 R15  ; R14["pos"] := R15
  50 [-]: GETGLOBAL R15 K18      ; R15 := 0x55730e1a
  51 [-]: LOADK     R16 15       ; R16 := 15.000000
  52 [-]: LOADK     R17 30       ; R17 := 30.000000
  53 [-]: CALL      R15 3 2      ; R15 := R15(R16,R17)
- 54 [-]: SETTABLE  R14 K17 R15  ; R14[0x6cca19c6] := R15
+ 54 [-]: SETTABLE  R14 K17 R15  ; R14["triggerDist"] := R15
  55 [-]: GETGLOBAL R15 K19      ; R15 := 0x33bdd652
  56 [-]: GETTABLE  R15 R15 K20  ; R82 := R15[0x23d5322f]
  57 [-]: MOVE      R16 R9       ; R16 := R9
@@ -542,12 +542,12 @@
  76 [-]: GETTABLE  R20 R8 R18   ; R20 := R8[R18]
  77 [-]: SELF      R20 R20 K16  ; R21 := R20; R20 := R20[0xd1586535]
  78 [-]: CALL      R20 2 2      ; R20 := R20(R21)
- 79 [-]: SETTABLE  R19 K15 R20  ; R19[0x1d12e7aa] := R20
+ 79 [-]: SETTABLE  R19 K15 R20  ; R19["pos"] := R20
  80 [-]: GETGLOBAL R20 K18      ; R20 := 0x55730e1a
  81 [-]: LOADK     R21 10       ; R21 := 10.000000
  82 [-]: LOADK     R22 30       ; R22 := 30.000000
  83 [-]: CALL      R20 3 2      ; R20 := R20(R21,R22)
- 84 [-]: SETTABLE  R19 K17 R20  ; R19[0x6cca19c6] := R20
+ 84 [-]: SETTABLE  R19 K17 R20  ; R19["triggerDist"] := R20
  85 [-]: GETGLOBAL R20 K19      ; R20 := 0x33bdd652
  86 [-]: GETTABLE  R20 R20 K20  ; R82 := R20[0x23d5322f]
  87 [-]: MOVE      R21 R9       ; R21 := R9

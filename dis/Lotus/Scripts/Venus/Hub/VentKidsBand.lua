@@ -84,13 +84,13 @@
 ; Max Stack Size:  12
 
   1 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  2 [-]: GETTABLE  R1 R1 K0     ; R82 := R1[0xbdf58098]
+  2 [-]: GETTABLE  R1 R1 K0     ; R1 := R1[0xbdf58098]
   3 [-]: GETUPVAL  R2 U1        ; R2 := U1
   4 [-]: CALL      R1 2 2       ; R1 := R1(R2)
   5 [-]: TEST      R1 0         ; if not R1 then PC := 14
   6 [-]: JMP       14           ; PC := 14
   7 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  8 [-]: GETTABLE  R1 R1 K1     ; R82 := R1[0xe77c9f88]
+  8 [-]: GETTABLE  R1 R1 K1     ; R1 := R1[0xe77c9f88]
   9 [-]: GETUPVAL  R2 U1        ; R2 := U1
  10 [-]: CALL      R1 2 2       ; R1 := R1(R2)
  11 [-]: LE        0 K2 R1      ; if 1.000000 > R1 then PC := 14

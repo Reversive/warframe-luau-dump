@@ -41,7 +41,7 @@
   1 [-]: NEWTABLE  R1 0 2       ; R1 := {}
   2 [-]: GETGLOBAL R2 K1        ; R2 := 0xcf64b7ba
   3 [-]: GETGLOBAL R3 K2        ; R3 := 0x5bced4c4
-  4 [-]: GETTABLE  R3 R3 K3     ; R82 := R3[0xac1b386a]
+  4 [-]: GETTABLE  R3 R3 K3     ; R3 := R3[0xac1b386a]
   5 [-]: GETGLOBAL R4 K1        ; R4 := 0xcf64b7ba
   6 [-]: LEN       R4 R4        ; R4 := # R4
   7 [-]: MOVE      R5 R0        ; R5 := R0
@@ -49,10 +49,10 @@
   9 [-]: GETTABLE  R2 R2 R3     ; R2 := R2[R3]
  10 [-]: SETTABLE  R1 K0 R2     ; R1["DAMAGE"] := R2
  11 [-]: GETGLOBAL R2 K2        ; R2 := 0x5bced4c4
- 12 [-]: GETTABLE  R2 R2 K5     ; R82 := R2[0x55f27c30]
+ 12 [-]: GETTABLE  R2 R2 K5     ; R2 := R2[0x55f27c30]
  13 [-]: GETGLOBAL R3 K6        ; R3 := 0x1bfda8a7
  14 [-]: GETGLOBAL R4 K2        ; R4 := 0x5bced4c4
- 15 [-]: GETTABLE  R4 R4 K3     ; R82 := R4[0xac1b386a]
+ 15 [-]: GETTABLE  R4 R4 K3     ; R4 := R4[0xac1b386a]
  16 [-]: GETGLOBAL R5 K6        ; R5 := 0x1bfda8a7
  17 [-]: LEN       R5 R5        ; R5 := # R5
  18 [-]: MOVE      R6 R0        ; R6 := R0
@@ -62,7 +62,7 @@
  22 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  23 [-]: SETTABLE  R1 K4 R2     ; R1["HEAL"] := R2
  24 [-]: GETGLOBAL R2 K8        ; R2 := cjson
- 25 [-]: GETTABLE  R2 R2 K9     ; R82 := R2[0xb139d7bc]
+ 25 [-]: GETTABLE  R2 R2 K9     ; R2 := R2[0xb139d7bc]
  26 [-]: MOVE      R3 R1        ; R3 := R1
  27 [-]: TAILCALL  R2 2 0       ; R2,... := R2(R3)
  28 [-]: RETURN    R2 0         ; return R2,...
@@ -240,14 +240,14 @@
  79 [-]: JMP       127          ; PC := 127
  80 [-]: GETGLOBAL R9 K17       ; R9 := 0xcf64b7ba
  81 [-]: GETGLOBAL R10 K18      ; R10 := 0x5bced4c4
- 82 [-]: GETTABLE  R10 R10 K19  ; R82 := R10[0xac1b386a]
+ 82 [-]: GETTABLE  R10 R10 K19  ; R10 := R10[0xac1b386a]
  83 [-]: GETGLOBAL R11 K17      ; R11 := 0xcf64b7ba
  84 [-]: LEN       R11 R11      ; R11 := # R11
  85 [-]: MOVE      R12 R3       ; R12 := R3
  86 [-]: CALL      R10 3 2      ; R10 := R10(R11,R12)
  87 [-]: GETTABLE  R9 R9 R10    ; R9 := R9[R10]
  88 [-]: GETGLOBAL R10 K16      ; R10 := 0x34291f5c
- 89 [-]: GETTABLE  R10 R10 K20  ; R82 := R10[0x35c16153]
+ 89 [-]: GETTABLE  R10 R10 K20  ; R10 := R10[0x35c16153]
  90 [-]: CALL      R10 1 2      ; R10 := R10()
  91 [-]: SETTABLE  R10 K21 R9   ; R10["baseAmount"] := R9
  92 [-]: SELF      R11 R10 K22  ; R12 := R10; R11 := R10[0x1586e35e]
@@ -277,7 +277,7 @@
 116 [-]: CALL      R14 2 2      ; R14 := R14(R15)
 117 [-]: GETGLOBAL R15 K30      ; R15 := 0x1bfda8a7
 118 [-]: GETGLOBAL R16 K18      ; R16 := 0x5bced4c4
-119 [-]: GETTABLE  R16 R16 K19  ; R82 := R16[0xac1b386a]
+119 [-]: GETTABLE  R16 R16 K19  ; R16 := R16[0xac1b386a]
 120 [-]: GETGLOBAL R17 K30      ; R17 := 0x1bfda8a7
 121 [-]: LEN       R17 R17      ; R17 := # R17
 122 [-]: MOVE      R18 R3       ; R18 := R3
@@ -510,7 +510,7 @@
 166 [-]: TEST      R9 0         ; if not R9 then PC := 191
 167 [-]: JMP       191          ; PC := 191
 168 [-]: GETGLOBAL R20 K42      ; R20 := 0x5bced4c4
-169 [-]: GETTABLE  R20 R20 K43  ; R82 := R20[0xac1b386a]
+169 [-]: GETTABLE  R20 R20 K43  ; R20 := R20[0xac1b386a]
 170 [-]: GETGLOBAL R21 K44      ; R21 := 0x0fd1e4d4
 171 [-]: GETTABLE  R22 R10 K45  ; R22 := R10["mInfestationDays"]
 172 [-]: ADD       R22 K40 R22  ; R22 := 1.000000 + R22

@@ -83,7 +83,7 @@
 
   1 [-]: NEWTABLE  R0 0 0       ; R0 := {}
   2 [-]: GETGLOBAL R1 K0        ; R1 := 0x33bdd652
-  3 [-]: GETTABLE  R1 R1 K1     ; R82 := R1[0x23d5322f]
+  3 [-]: GETTABLE  R1 R1 K1     ; R1 := R1[0x23d5322f]
   4 [-]: MOVE      R2 R0        ; R2 := R0
   5 [-]: NEWTABLE  R3 0 3       ; R3 := {}
   6 [-]: SETTABLE  R3 K2 K3     ; R3["Label"] := "/Lotus/Language/Menu/Global_Back"
@@ -92,7 +92,7 @@
   9 [-]: SETTABLE  R3 K5 K6     ; R3["CallOut"] := "MENU_CANCEL"
  10 [-]: CALL      R1 3 1       ; R1(R2,R3)
  11 [-]: GETGLOBAL R1 K7        ; R1 := _T
- 12 [-]: GETTABLE  R1 R1 K8     ; R82 := R1[0x1c5b546f]
+ 12 [-]: GETTABLE  R1 R1 K8     ; R1 := R1[0x1c5b546f]
  13 [-]: GETGLOBAL R2 K9        ; R2 := 0xae91e43b
  14 [-]: MOVE      R3 R0        ; R3 := R0
  15 [-]: GETGLOBAL R4 K10       ; R4 := 0xcd0165a3
@@ -112,7 +112,7 @@
 ; Max Stack Size:  3
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := _T
-  2 [-]: GETTABLE  R0 R0 K1     ; R82 := R0[0x1c5b546f]
+  2 [-]: GETTABLE  R0 R0 K1     ; R0 := R0[0x1c5b546f]
   3 [-]: GETGLOBAL R1 K2        ; R1 := 0xae91e43b
   4 [-]: LOADNIL   R2 R2        ; R2 := nil
   5 [-]: CALL      R0 3 1       ; R0(R1,R2)
@@ -168,7 +168,7 @@
 ; Max Stack Size:  9
 
   1 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  2 [-]: GETTABLE  R0 R0 K0     ; R82 := R0[0x5e35d4d6]
+  2 [-]: GETTABLE  R0 R0 K0     ; R0 := R0[0x5e35d4d6]
   3 [-]: CALL      R0 1 2       ; R0 := R0()
   4 [-]: CLOSURE   R1 0         ; R1 := closure(Function #6.1)
   5 [-]: GETUPVAL  R0 U1        ; R0 := U1
@@ -183,7 +183,7 @@
  14 [-]: LOADK     R4 K3        ; R4 := "Locations"
  15 [-]: MOVE      R5 R2        ; R5 := R2
  16 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
- 17 [-]: SETUPVAL  R3 U4        ; U82 := 
+ 17 [-]: SETUPVAL  R3 U4        ; U82 := R4
  18 [-]: GETUPVAL  R3 U4        ; R3 := U4
  19 [-]: SELF      R3 R3 K4     ; R4 := R3; R3 := R3[0x5fbddc1a]
  20 [-]: CALL      R3 2 2       ; R3 := R3(R4)
@@ -218,7 +218,7 @@
   8 [-]: GETGLOBAL R2 K4        ; R2 := 0x2d0fad09
   9 [-]: LOADK     R3 K5        ; R3 := "EE.Interface.Components.List"
  10 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 11 [-]: GETTABLE  R3 R2 K6     ; R82 := R3[0x9383bc56]
+ 11 [-]: GETTABLE  R3 R2 K6     ; R3 := R2[0x9383bc56]
  12 [-]: GETGLOBAL R4 K0        ; R4 := 0xae91e43b
  13 [-]: MOVE      R5 R0        ; R5 := R0
  14 [-]: LOADK     R6 K7        ; R6 := ".Element"
@@ -255,7 +255,7 @@
  45 [-]: LOADBOOL  R11 0 0      ; R11 := false
  46 [-]: CALL      R9 3 2       ; R9 := R9(R10,R11)
  47 [-]: GETUPVAL  R10 U3       ; R10 := U3
- 48 [-]: GETTABLE  R10 R10 K19  ; R82 := R10[0xdebdf69b]
+ 48 [-]: GETTABLE  R10 R10 K19  ; R10 := R10[0xdebdf69b]
  49 [-]: GETUPVAL  R11 U2       ; R11 := U2
  50 [-]: GETUPVAL  R12 U4       ; R12 := U4
  51 [-]: MOVE      R13 R8       ; R13 := R8
@@ -263,7 +263,7 @@
  53 [-]: SELF      R11 R3 K20   ; R12 := R3; R11 := R3[0xbad4316f]
  54 [-]: NEWTABLE  R13 0 3      ; R13 := {}
  55 [-]: GETGLOBAL R14 K22      ; R14 := 0x7f5022cf
- 56 [-]: GETTABLE  R14 R14 K23  ; R82 := R14[0x3f3e4d12]
+ 56 [-]: GETTABLE  R14 R14 K23  ; R14 := R14[0x3f3e4d12]
  57 [-]: MOVE      R15 R9       ; R15 := R9
  58 [-]: CALL      R14 2 2      ; R14 := R14(R15)
  59 [-]: SETTABLE  R13 K21 R14  ; R13["Name"] := R14
@@ -374,7 +374,7 @@
  19 [-]: GETGLOBAL R3 K5        ; R3 := 0x2d0fad09
  20 [-]: LOADK     R4 K6        ; R4 := "Lotus.Interface.Components.Button"
  21 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 22 [-]: GETTABLE  R4 R3 K8     ; R82 := R4[0x4675a542]
+ 22 [-]: GETTABLE  R4 R3 K8     ; R4 := R3[0x4675a542]
  23 [-]: GETGLOBAL R5 K9        ; R5 := 0xae91e43b
  24 [-]: GETTABLE  R6 R0 K0     ; R6 := R0["mClipName"]
  25 [-]: GETTABLE  R7 R0 K10    ; R7 := R0["Name"]
@@ -495,7 +495,7 @@
  17 [-]: CALL      R1 1 1       ; R1()
  18 [-]: JMP       33           ; PC := 33
  19 [-]: GETUPVAL  R1 U2        ; R1 := U2
- 20 [-]: GETTABLE  R1 R1 K9     ; R82 := R1[0xa53f5e12]
+ 20 [-]: GETTABLE  R1 R1 K9     ; R1 := R1[0xa53f5e12]
  21 [-]: GETGLOBAL R2 K4        ; R2 := 0xae91e43b
  22 [-]: SELF      R2 R2 K10    ; R3 := R2; R2 := R2[0x42b04007]
  23 [-]: LOADK     R4 K11       ; R4 := "/Lotus/Language/RelayReconstruction/PlanetLockedWarning"
@@ -560,7 +560,7 @@
  21 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
  22 [-]: SELF      R0 R0 K9     ; R1 := R0; R0 := R0[0x80563238]
  23 [-]: CALL      R0 2 2       ; R0 := R0(R1)
- 24 [-]: SETUPVAL  R0 U0        ; U82 := 
+ 24 [-]: SETUPVAL  R0 U0        ; U82 := R0
  25 [-]: GETGLOBAL R0 K10       ; R0 := 0x7b998233
  26 [-]: GETUPVAL  R1 U0        ; R1 := U0
  27 [-]: CALL      R0 2 2       ; R0 := R0(R1)
@@ -628,7 +628,7 @@
  89 [-]: GETUPVAL  R0 U3        ; R0 := U3
  90 [-]: CALL      R0 1 1       ; R0()
  91 [-]: LOADBOOL  R0 0 0       ; R0 := false
- 92 [-]: SETUPVAL  R0 U4        ; U82 := 
+ 92 [-]: SETUPVAL  R0 U4        ; U82 := R4
  93 [-]: RETURN    R0 1         ; return 
 
 

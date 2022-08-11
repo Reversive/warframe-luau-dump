@@ -222,7 +222,7 @@
  65 [-]: CALL      R6 6 2       ; R6 := R6(R7,R8,R9,R10,R11)
  66 [-]: MOVE      R4 R6        ; R4 := R6
  67 [-]: GETUPVAL  R6 U0        ; R6 := U0
- 68 [-]: GETTABLE  R6 R6 K13    ; R82 := R6[0x74a11ec6]
+ 68 [-]: GETTABLE  R6 R6 K13    ; R6 := R6[0x74a11ec6]
  69 [-]: MOVE      R7 R4        ; R7 := R4
  70 [-]: CALL      R6 2 2       ; R6 := R6(R7)
  71 [-]: MOVE      R4 R6        ; R4 := R6
@@ -235,15 +235,15 @@
  78 [-]: GETGLOBAL R9 K17       ; R9 := 0x6c97a788
  79 [-]: GETTABLE  R9 R9 K18    ; R9 := R9["EMISSIVE_TINT_COLOR"]
  80 [-]: GETUPVAL  R10 U1       ; R10 := U1
- 81 [-]: GETTABLE  R10 R10 K19  ; R82 := R10[0x021dc4be]
+ 81 [-]: GETTABLE  R10 R10 K19  ; R10 := R10[0x021dc4be]
  82 [-]: GETTABLE  R11 R6 K20   ; R11 := R6["red"]
  83 [-]: CALL      R10 2 2      ; R10 := R10(R11)
  84 [-]: GETUPVAL  R11 U1       ; R11 := U1
- 85 [-]: GETTABLE  R11 R11 K19  ; R82 := R11[0x021dc4be]
+ 85 [-]: GETTABLE  R11 R11 K19  ; R11 := R11[0x021dc4be]
  86 [-]: GETTABLE  R12 R6 K21   ; R12 := R6["green"]
  87 [-]: CALL      R11 2 2      ; R11 := R11(R12)
  88 [-]: GETUPVAL  R12 U1       ; R12 := U1
- 89 [-]: GETTABLE  R12 R12 K19  ; R82 := R12[0x021dc4be]
+ 89 [-]: GETTABLE  R12 R12 K19  ; R12 := R12[0x021dc4be]
  90 [-]: GETTABLE  R13 R6 K22   ; R13 := R6["blue"]
  91 [-]: CALL      R12 2 2      ; R12 := R12(R13)
  92 [-]: LOADK     R13 1        ; R13 := 1.000000
@@ -284,7 +284,7 @@
 127 [-]: MOVE      R15 R6       ; R15 := R6
 128 [-]: CALL      R12 4 1      ; R12(R13,R14,R15)
 129 [-]: GETUPVAL  R12 U1       ; R12 := U1
-130 [-]: GETTABLE  R12 R12 K33  ; R82 := R12[0xa627f28c]
+130 [-]: GETTABLE  R12 R12 K33  ; R12 := R12[0xa627f28c]
 131 [-]: MOVE      R13 R11      ; R13 := R11
 132 [-]: MOVE      R14 R6       ; R14 := R6
 133 [-]: CALL      R12 3 1      ; R12(R13,R14)
@@ -364,7 +364,7 @@
  61 [-]: MOVE      R15 R4       ; R15 := R4
  62 [-]: CALL      R12 4 1      ; R12(R13,R14,R15)
  63 [-]: GETUPVAL  R12 U0       ; R12 := U0
- 64 [-]: GETTABLE  R12 R12 K16  ; R82 := R12[0xa627f28c]
+ 64 [-]: GETTABLE  R12 R12 K16  ; R12 := R12[0xa627f28c]
  65 [-]: MOVE      R13 R11      ; R13 := R11
  66 [-]: MOVE      R14 R4       ; R14 := R4
  67 [-]: CALL      R12 3 1      ; R12(R13,R14)

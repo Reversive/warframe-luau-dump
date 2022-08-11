@@ -75,7 +75,7 @@
  44 [-]: TEST      R8 0         ; if not R8 then PC := 51
  45 [-]: JMP       51           ; PC := 51
  46 [-]: GETGLOBAL R8 K11       ; R8 := _T
- 47 [-]: GETTABLE  R8 R8 K14    ; R82 := R8[0xbca92cc3]
+ 47 [-]: GETTABLE  R8 R8 K14    ; R8 := R8[0xbca92cc3]
  48 [-]: MOVE      R9 R0        ; R9 := R0
  49 [-]: MOVE      R10 R2       ; R10 := R2
  50 [-]: CALL      R8 3 1       ; R8(R9,R10)
@@ -114,7 +114,7 @@
  83 [-]: TEST      R14 0        ; if not R14 then PC := 90
  84 [-]: JMP       90           ; PC := 90
  85 [-]: GETGLOBAL R14 K20      ; R14 := 0x33bdd652
- 86 [-]: GETTABLE  R14 R14 K21  ; R82 := R14[0x9c1f3b5a]
+ 86 [-]: GETTABLE  R14 R14 K21  ; R14 := R14[0x9c1f3b5a]
  87 [-]: MOVE      R15 R1       ; R15 := R1
  88 [-]: MOVE      R16 R12      ; R16 := R12
  89 [-]: CALL      R14 3 1      ; R14(R15,R16)
@@ -157,7 +157,7 @@
 126 [-]: TEST      R20 0        ; if not R20 then PC := 212
 127 [-]: JMP       212          ; PC := 212
 128 [-]: GETUPVAL  R20 U0       ; R20 := U0
-129 [-]: GETTABLE  R20 R20 K27  ; R82 := R20[0x622a0c19]
+129 [-]: GETTABLE  R20 R20 K27  ; R20 := R20[0x622a0c19]
 130 [-]: MOVE      R21 R19      ; R21 := R19
 131 [-]: CALL      R20 2 1      ; R20(R21)
 132 [-]: LOADK     R20 1        ; R20 := 1.000000
@@ -206,7 +206,7 @@
 175 [-]: SELF      R26 R25 K35  ; R27 := R25; R26 := R25[0xbb610e5b]
 176 [-]: CALL      R26 2 2      ; R26 := R26(R27)
 177 [-]: GETGLOBAL R27 K20      ; R27 := 0x33bdd652
-178 [-]: GETTABLE  R27 R27 K36  ; R82 := R27[0x23d5322f]
+178 [-]: GETTABLE  R27 R27 K36  ; R27 := R27[0x23d5322f]
 179 [-]: MOVE      R28 R1       ; R28 := R1
 180 [-]: MOVE      R29 R26      ; R29 := R26
 181 [-]: CALL      R27 3 1      ; R27(R28,R29)
@@ -255,7 +255,7 @@
 224 [-]: LT        0 K17 R27    ; if 0.000000 >= R27 then PC := 242
 225 [-]: JMP       242          ; PC := 242
 226 [-]: GETGLOBAL R27 K44      ; R27 := 0x5bced4c4
-227 [-]: GETTABLE  R27 R27 K45  ; R82 := R27[0xb62ecfe0]
+227 [-]: GETTABLE  R27 R27 K45  ; R27 := R27[0xb62ecfe0]
 228 [-]: GETGLOBAL R28 K43      ; R28 := 0x10994e17
 229 [-]: GETGLOBAL R29 K46      ; R29 := 0xc163f229
 230 [-]: GETGLOBAL R30 K47      ; R30 := 0x4f4dd0ce

@@ -51,11 +51,11 @@
  23 [-]: CLOSURE   R2 2         ; R2 := closure(Function #1.3)
  24 [-]: SETTABLE  R1 K15 R2    ; R1["SetRightStickTensionX"] := R2
  25 [-]: CLOSURE   R2 3         ; R2 := closure(Function #1.4)
- 26 [-]: SETTABLE  R1 K16 R2    ; R1[0x00000098] := R2
+ 26 [-]: SETTABLE  R1 K16 R2    ; R1["SetRightStickTensionY"] := R2
  27 [-]: CLOSURE   R2 4         ; R2 := closure(Function #1.5)
  28 [-]: SETTABLE  R1 K17 R2    ; R1["SetRightStickDeadZone"] := R2
  29 [-]: CLOSURE   R2 5         ; R2 := closure(Function #1.6)
- 30 [-]: SETTABLE  R1 K18 R2    ; R1["GetMouseDelta"] := R2
+ 30 [-]: SETTABLE  R1 K18 R2    ; R1[0x00000098] := R2
  31 [-]: CLOSURE   R2 6         ; R2 := closure(Function #1.7)
  32 [-]: SETTABLE  R1 K19 R2    ; R1["GetControllerDelta"] := R2
  33 [-]: CLOSURE   R2 7         ; R2 := closure(Function #1.8)
@@ -241,7 +241,7 @@
 ; Max Stack Size:  3
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0x34291f5c
-  2 [-]: GETTABLE  R1 R1 K1     ; R82 := R1[0x1467d5f4]
+  2 [-]: GETTABLE  R1 R1 K1     ; R1 := R1[0x1467d5f4]
   3 [-]: CALL      R1 1 2       ; R1 := R1()
   4 [-]: TEST      R1 1         ; if R1 then PC := 16
   5 [-]: JMP       16           ; PC := 16
@@ -298,7 +298,7 @@
 ; Max Stack Size:  3
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0x34291f5c
-  2 [-]: GETTABLE  R1 R1 K1     ; R82 := R1[0x1467d5f4]
+  2 [-]: GETTABLE  R1 R1 K1     ; R1 := R1[0x1467d5f4]
   3 [-]: CALL      R1 1 2       ; R1 := R1()
   4 [-]: TEST      R1 1         ; if R1 then PC := 16
   5 [-]: JMP       16           ; PC := 16
@@ -313,7 +313,7 @@
  14 [-]: TEST      R1 0         ; if not R1 then PC := 36
  15 [-]: JMP       36           ; PC := 36
  16 [-]: GETGLOBAL R1 K5        ; R1 := 0x5bced4c4
- 17 [-]: GETTABLE  R1 R1 K6     ; R82 := R1[0xe4a5b3ca]
+ 17 [-]: GETTABLE  R1 R1 K6     ; R1 := R1[0xe4a5b3ca]
  18 [-]: GETTABLE  R2 R0 K7     ; R2 := R0["mRightStickTension"]
  19 [-]: GETTABLE  R2 R2 K8     ; R2 := R2["x"]
  20 [-]: CALL      R1 2 2       ; R1 := R1(R2)
@@ -321,7 +321,7 @@
  22 [-]: LT        1 R2 R1      ; if R2 < R1 then PC := 33
  23 [-]: JMP       33           ; PC := 33
  24 [-]: GETGLOBAL R1 K5        ; R1 := 0x5bced4c4
- 25 [-]: GETTABLE  R1 R1 K6     ; R82 := R1[0xe4a5b3ca]
+ 25 [-]: GETTABLE  R1 R1 K6     ; R1 := R1[0xe4a5b3ca]
  26 [-]: GETTABLE  R2 R0 K7     ; R2 := R0["mRightStickTension"]
  27 [-]: GETTABLE  R2 R2 K10    ; R2 := R2["y"]
  28 [-]: CALL      R1 2 2       ; R1 := R1(R2)

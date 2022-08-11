@@ -121,7 +121,7 @@
   8 [-]: CALL      R0 2 2       ; R0 := R0(R1)
   9 [-]: SELF      R0 R0 K3     ; R1 := R0; R0 := R0[0x66905cb0]
  10 [-]: CALL      R0 2 2       ; R0 := R0(R1)
- 11 [-]: SETUPVAL  R0 U0        ; U82 := 
+ 11 [-]: SETUPVAL  R0 U0        ; U82 := R0
  12 [-]: GETUPVAL  R0 U0        ; R0 := U0
  13 [-]: SELF      R0 R0 K4     ; R1 := R0; R0 := R0[0xde51d004]
  14 [-]: CALL      R0 2 2       ; R0 := R0(R1)
@@ -221,7 +221,7 @@
  14 [-]: CALL      R1 2 2       ; R1 := R1(R2)
  15 [-]: SELF      R1 R1 K5     ; R2 := R1; R1 := R1[0x66905cb0]
  16 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 17 [-]: SETUPVAL  R1 U0        ; U82 := 
+ 17 [-]: SETUPVAL  R1 U0        ; U82 := R0
  18 [-]: GETUPVAL  R1 U0        ; R1 := U0
  19 [-]: SELF      R1 R1 K6     ; R2 := R1; R1 := R1[0xb700e355]
  20 [-]: CALL      R1 2 2       ; R1 := R1(R2)
@@ -439,7 +439,7 @@
  14 [-]: CALL      R1 2 2       ; R1 := R1(R2)
  15 [-]: SELF      R1 R1 K4     ; R2 := R1; R1 := R1[0x66905cb0]
  16 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 17 [-]: SETUPVAL  R1 U0        ; U82 := 
+ 17 [-]: SETUPVAL  R1 U0        ; U82 := R0
  18 [-]: GETGLOBAL R1 K5        ; R1 := UNALERT
  19 [-]: EQ        0 R0 R1      ; if R0 ~= R1 then PC := 25
  20 [-]: JMP       25           ; PC := 25
@@ -662,7 +662,7 @@
   8 [-]: CALL      R3 2 2       ; R3 := R3(R4)
   9 [-]: SELF      R3 R3 K3     ; R4 := R3; R3 := R3[0x66905cb0]
  10 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 11 [-]: SETUPVAL  R3 U0        ; U82 := 
+ 11 [-]: SETUPVAL  R3 U0        ; U82 := R0
  12 [-]: GETGLOBAL R3 K4        ; R3 := 0x3d106989
  13 [-]: LOADK     R4 K5        ; R4 := "Alarm System: Panic button activated"
  14 [-]: CALL      R3 2 1       ; R3(R4)
@@ -813,7 +813,7 @@
 159 [-]: GETGLOBAL R4 K41       ; R4 := LOCKDOWN
 160 [-]: JMP       167          ; PC := 167
 161 [-]: GETGLOBAL R10 K42      ; R10 := 0x5bced4c4
-162 [-]: GETTABLE  R10 R10 K43  ; R82 := R10[0xac1b386a]
+162 [-]: GETTABLE  R10 R10 K43  ; R10 := R10[0xac1b386a]
 163 [-]: ADD       R11 R3 K44   ; R11 := R3 + 1.000000
 164 [-]: GETGLOBAL R12 K41      ; R12 := LOCKDOWN
 165 [-]: CALL      R10 3 2      ; R10 := R10(R11,R12)

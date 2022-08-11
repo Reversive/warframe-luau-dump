@@ -38,7 +38,7 @@
   7 [-]: CALL      R2 2 2       ; R2 := R2(R3)
   8 [-]: LOADNIL   R3 R3        ; R3 := nil
   9 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
- 10 [-]: SETUPVAL  R1 U0        ; U82 := 
+ 10 [-]: SETUPVAL  R1 U0        ; U82 := 
  11 [-]: GETGLOBAL R1 K4        ; R1 := 0x6932c95b
  12 [-]: SETGLOBAL R1 K4        ; (0x6932c95b) := R1
  13 [-]: GETGLOBAL R1 K5        ; R1 := 0x5ca213a9
@@ -119,7 +119,7 @@
  22 [-]: SELF      R2 R2 K5     ; R3 := R2; R2 := R2[0xcfba257f]
  23 [-]: GETGLOBAL R4 K6        ; R4 := 0x6932c95b
  24 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
- 25 [-]: SETUPVAL  R2 U0        ; U82 := 
+ 25 [-]: SETUPVAL  R2 U0        ; U82 := 
  26 [-]: GETGLOBAL R2 K0        ; R2 := 0x7b998233
  27 [-]: GETUPVAL  R3 U0        ; R3 := U0
  28 [-]: CALL      R2 2 2       ; R2 := R2(R3)

@@ -35,7 +35,7 @@
   7 [-]: GETGLOBAL R6 K0        ; R6 := 0x2d0fad09
   8 [-]: LOADK     R7 K3        ; R7 := "Lotus.Interface.Components.ThemedButton"
   9 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 10 [-]: GETTABLE  R7 R6 K4     ; R82 := R7[0xae6791ba]
+ 10 [-]: GETTABLE  R7 R6 K4     ; R7 := R6[0xae6791ba]
  11 [-]: MOVE      R8 R0        ; R8 := R0
  12 [-]: MOVE      R9 R1        ; R9 := R1
  13 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
@@ -55,11 +55,11 @@
  27 [-]: GETTABLE  R8 R7 K18    ; R8 := R7["SetActive"]
  28 [-]: SETTABLE  R7 K17 R8    ; R7["Button_SetActive"] := R8
  29 [-]: CLOSURE   R8 0         ; R8 := closure(Function #1.1)
- 30 [-]: SETTABLE  R7 K18 R8    ; R7["SetActive"] := R8
+ 30 [-]: SETTABLE  R7 K18 R8    ; R7[0x7f5022cf] := R8
  31 [-]: GETTABLE  R8 R7 K20    ; R8 := R7["HookUpCallbacks"]
- 32 [-]: SETTABLE  R7 K19 R8    ; R7[0x7f5022cf] := R8
+ 32 [-]: SETTABLE  R7 K19 R8    ; R7[0x66edf04f] := R8
  33 [-]: CLOSURE   R8 1         ; R8 := closure(Function #1.2)
- 34 [-]: SETTABLE  R7 K20 R8    ; R7[0x66edf04f] := R8
+ 34 [-]: SETTABLE  R7 K20 R8    ; R7["HookUpCallbacks"] := R8
  35 [-]: GETTABLE  R8 R7 K22    ; R8 := R7["SetFocus"]
  36 [-]: SETTABLE  R7 K21 R8    ; R7["ButtonSetFocus"] := R8
  37 [-]: CLOSURE   R8 2         ; R8 := closure(Function #1.3)
@@ -71,15 +71,15 @@
  43 [-]: CLOSURE   R8 5         ; R8 := closure(Function #1.6)
  44 [-]: SETTABLE  R7 K25 R8    ; R7["Pressed"] := R8
  45 [-]: CLOSURE   R8 6         ; R8 := closure(Function #1.7)
- 46 [-]: SETTABLE  R7 K26 R8    ; R7["TryAltPressed"] := R8
+ 46 [-]: SETTABLE  R7 K26 R8    ; R7[0x1e5b5cfe] := R8
  47 [-]: CLOSURE   R8 7         ; R8 := closure(Function #1.8)
- 48 [-]: SETTABLE  R7 K27 R8    ; R7[0x1e5b5cfe] := R8
+ 48 [-]: SETTABLE  R7 K27 R8    ; R7["AltPressed"] := R8
  49 [-]: CLOSURE   R8 8         ; R8 := closure(Function #1.9)
  50 [-]: SETTABLE  R7 K28 R8    ; R7["SetIndexByValue"] := R8
  51 [-]: CLOSURE   R8 9         ; R8 := closure(Function #1.10)
- 52 [-]: SETTABLE  R7 K29 R8    ; R7["SetValue"] := R8
+ 52 [-]: SETTABLE  R7 K29 R8    ; R7[0x67bc869f] := R8
  53 [-]: GETTABLE  R8 R7 K31    ; R8 := R7["Resize"]
- 54 [-]: SETTABLE  R7 K30 R8    ; R7[0x67bc869f] := R8
+ 54 [-]: SETTABLE  R7 K30 R8    ; R7["ButtonResize"] := R8
  55 [-]: CLOSURE   R8 10        ; R8 := closure(Function #1.11)
  56 [-]: MOVE      R0 R4        ; R0 := R4
  57 [-]: SETTABLE  R7 K31 R8    ; R7["Resize"] := R8
@@ -161,7 +161,7 @@
   5 [-]: GETTABLE  R2 R0 K2     ; R2 := R0["mMovie"]
   6 [-]: GETTABLE  R3 R0 K3     ; R3 := R0["mClipName"]
   7 [-]: GETGLOBAL R4 K4        ; R4 := 0x7f5022cf
-  8 [-]: GETTABLE  R4 R4 K5     ; R82 := R4[0x66edf04f]
+  8 [-]: GETTABLE  R4 R4 K5     ; R4 := R4[0x66edf04f]
   9 [-]: MOVE      R5 R3        ; R5 := R3
  10 [-]: LOADK     R6 K6        ; R6 := "%."
  11 [-]: LOADK     R7 K7        ; R7 := ""
@@ -499,7 +499,7 @@
   1 [-]: SELF      R1 R0 K0     ; R2 := R0; R1 := R0[0x9703e512]
   2 [-]: CALL      R1 2 1       ; R1(R2)
   3 [-]: GETGLOBAL R1 K1        ; R1 := 0x5bced4c4
-  4 [-]: GETTABLE  R1 R1 K2     ; R82 := R1[0xb62ecfe0]
+  4 [-]: GETTABLE  R1 R1 K2     ; R1 := R1[0xb62ecfe0]
   5 [-]: GETTABLE  R2 R0 K3     ; R2 := R0["mArrowIconWidth"]
   6 [-]: GETTABLE  R3 R0 K4     ; R3 := R0["mArrowIconHeight"]
   7 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
@@ -524,7 +524,7 @@
  26 [-]: EQ        1 R3 K12     ; if R3 == nil then PC := 36
  27 [-]: JMP       36           ; PC := 36
  28 [-]: GETUPVAL  R3 U0        ; R3 := U0
- 29 [-]: GETTABLE  R3 R3 K13    ; R82 := R3[0x5f0440b6]
+ 29 [-]: GETTABLE  R3 R3 K13    ; R3 := R3[0x5f0440b6]
  30 [-]: GETTABLE  R4 R0 K6     ; R4 := R0["mMovie"]
  31 [-]: GETTABLE  R5 R0 K8     ; R5 := R0["mClipName"]
  32 [-]: LOADK     R6 K14       ; R6 := ".Label"
@@ -703,13 +703,13 @@
   2 [-]: CALL      R1 2 1       ; R1(R2)
   3 [-]: GETTABLE  R1 R0 K1     ; R1 := R0["mApplyThemes"]
   4 [-]: GETUPVAL  R2 U0        ; R2 := U0
-  5 [-]: GETTABLE  R2 R2 K2     ; R82 := R2[0x5d10207d]
+  5 [-]: GETTABLE  R2 R2 K2     ; R2 := R2[0x5d10207d]
   6 [-]: LOADK     R3 9         ; R3 := 9.000000
   7 [-]: LOADBOOL  R4 1 0       ; R4 := true
   8 [-]: MOVE      R5 R1        ; R5 := R1
   9 [-]: CALL      R2 4 2       ; R2 := R2(R3,R4,R5)
  10 [-]: GETUPVAL  R3 U0        ; R3 := U0
- 11 [-]: GETTABLE  R3 R3 K2     ; R82 := R3[0x5d10207d]
+ 11 [-]: GETTABLE  R3 R3 K2     ; R3 := R3[0x5d10207d]
  12 [-]: LOADK     R4 10        ; R4 := 10.000000
  13 [-]: LOADBOOL  R5 1 0       ; R5 := true
  14 [-]: MOVE      R6 R1        ; R6 := R1
@@ -720,7 +720,7 @@
  19 [-]: LOADK     R7 K7        ; R7 := "IconLeft"
  20 [-]: LOADK     R8 9         ; R8 := 9.000000
  21 [-]: GETUPVAL  R9 U1        ; R9 := U1
- 22 [-]: GETTABLE  R9 R9 K8     ; R82 := R9[0x06d055f9]
+ 22 [-]: GETTABLE  R9 R9 K8     ; R9 := R9[0x06d055f9]
  23 [-]: GETTABLE  R10 R0 K9    ; R10 := R0["mArrowFocused"]
  24 [-]: EQ        1 R10 K10    ; if R10 == -1.000000 then PC := 27
  25 [-]: JMP       27           ; PC := 27
@@ -736,7 +736,7 @@
  35 [-]: LOADK     R7 K11       ; R7 := "IconRight"
  36 [-]: LOADK     R8 9         ; R8 := 9.000000
  37 [-]: GETUPVAL  R9 U1        ; R9 := U1
- 38 [-]: GETTABLE  R9 R9 K8     ; R82 := R9[0x06d055f9]
+ 38 [-]: GETTABLE  R9 R9 K8     ; R9 := R9[0x06d055f9]
  39 [-]: GETTABLE  R10 R0 K9    ; R10 := R0["mArrowFocused"]
  40 [-]: EQ        1 R10 K12    ; if R10 == 1.000000 then PC := 43
  41 [-]: JMP       43           ; PC := 43

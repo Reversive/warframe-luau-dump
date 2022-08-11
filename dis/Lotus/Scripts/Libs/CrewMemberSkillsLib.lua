@@ -71,7 +71,7 @@
  62 [-]: SETTABLE  R6 K27 K31   ; R6["value"] := 0.050000
  63 [-]: SETTABLE  R6 K28 K30   ; R6["operationType"] := 2.000000
  64 [-]: SETLIST   R5 1 1       ; R5[(1-1)*FPF+i] := R(5+i), 1 <= i <= 1
- 65 [-]: SETTABLE  R4 K30 R5    ; R4[0x00000061] := R5
+ 65 [-]: SETTABLE  R4 K30 R5    ; R4[2.000000] := R5
  66 [-]: NEWTABLE  R5 1 0       ; R5 := {}
  67 [-]: NEWTABLE  R6 0 3       ; R6 := {}
  68 [-]: SETTABLE  R6 K26 K19   ; R6["upgradeType"] := 79.000000
@@ -126,7 +126,7 @@
 117 [-]: SETTABLE  R8 K27 K36   ; R8["value"] := 0.150000
 118 [-]: SETTABLE  R8 K28 K30   ; R8["operationType"] := 2.000000
 119 [-]: SETLIST   R6 2 1       ; R6[(1-1)*FPF+i] := R(6+i), 1 <= i <= 2
-120 [-]: SETTABLE  R5 K30 R6    ; R5[0x00000061] := R6
+120 [-]: SETTABLE  R5 K30 R6    ; R5[2.000000] := R6
 121 [-]: NEWTABLE  R6 2 0       ; R6 := {}
 122 [-]: NEWTABLE  R7 0 3       ; R7 := {}
 123 [-]: SETTABLE  R7 K26 K21   ; R7["upgradeType"] := 189.000000
@@ -181,7 +181,7 @@
 172 [-]: SETTABLE  R8 K27 K37   ; R8["value"] := 0.400000
 173 [-]: SETTABLE  R8 K28 K30   ; R8["operationType"] := 2.000000
 174 [-]: SETLIST   R7 1 1       ; R7[(1-1)*FPF+i] := R(7+i), 1 <= i <= 1
-175 [-]: SETTABLE  R6 K30 R7    ; R6[0x00000061] := R7
+175 [-]: SETTABLE  R6 K30 R7    ; R6[2.000000] := R7
 176 [-]: NEWTABLE  R7 1 0       ; R7 := {}
 177 [-]: NEWTABLE  R8 0 3       ; R8 := {}
 178 [-]: SETTABLE  R8 K26 K11   ; R8["upgradeType"] := 216.000000
@@ -236,7 +236,7 @@
 227 [-]: SETTABLE  R10 K27 K39  ; R10["value"] := 100.000000
 228 [-]: SETTABLE  R10 K28 K25  ; R10["operationType"] := 0.000000
 229 [-]: SETLIST   R8 2 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 2
-230 [-]: SETTABLE  R7 K30 R8    ; R7[0x00000061] := R8
+230 [-]: SETTABLE  R7 K30 R8    ; R7[2.000000] := R8
 231 [-]: NEWTABLE  R8 2 0       ; R8 := {}
 232 [-]: NEWTABLE  R9 0 3       ; R9 := {}
 233 [-]: SETTABLE  R9 K26 K6    ; R9["upgradeType"] := 64.000000
@@ -303,7 +303,7 @@
 294 [-]: SETTABLE  R11 K27 K41  ; R11["value"] := 0.020000
 295 [-]: SETTABLE  R11 K28 K25  ; R11["operationType"] := 0.000000
 296 [-]: SETLIST   R9 2 1       ; R9[(1-1)*FPF+i] := R(9+i), 1 <= i <= 2
-297 [-]: SETTABLE  R8 K30 R9    ; R8[0x00000061] := R9
+297 [-]: SETTABLE  R8 K30 R9    ; R8[2.000000] := R9
 298 [-]: NEWTABLE  R9 2 0       ; R9 := {}
 299 [-]: NEWTABLE  R10 0 3      ; R10 := {}
 300 [-]: SETTABLE  R10 K26 K15  ; R10["upgradeType"] := 351.000000
@@ -340,7 +340,7 @@
 331 [-]: NEWTABLE  R9 0 5       ; R9 := {}
 332 [-]: SETTABLE  R9 K25 R4    ; R9[0.000000] := R4
 333 [-]: SETTABLE  R9 K14 R5    ; R9[1.000000] := R5
-334 [-]: SETTABLE  R9 K30 R8    ; R9[0x00000061] := R8
+334 [-]: SETTABLE  R9 K30 R8    ; R9[2.000000] := R8
 335 [-]: SETTABLE  R9 K32 R6    ; R9[3.000000] := R6
 336 [-]: SETTABLE  R9 K33 R7    ; R9[4.000000] := R7
 337 [-]: CLOSURE   R10 1        ; R10 := closure(Function #2)
@@ -401,7 +401,7 @@
  11 [-]: LOADNIL   R1 R1        ; R1 := nil
  12 [-]: RETURN    R1 2         ; return R1
  13 [-]: GETGLOBAL R1 K2        ; R1 := 0xaf6ac8d4
- 14 [-]: GETTABLE  R1 R1 K3     ; R82 := R1[0x449a507e]
+ 14 [-]: GETTABLE  R1 R1 K3     ; R1 := R1[0x449a507e]
  15 [-]: CALL      R1 1 2       ; R1 := R1()
  16 [-]: SELF      R2 R1 K4     ; R3 := R1; R2 := R1[0x14894de6]
  17 [-]: GETTABLE  R4 R0 K1     ; R4 := R0["upgradeType"]
@@ -490,7 +490,7 @@
  45 [-]: TEST      R14 1        ; if R14 then PC := 52
  46 [-]: JMP       52           ; PC := 52
  47 [-]: GETGLOBAL R14 K7       ; R14 := 0x33bdd652
- 48 [-]: GETTABLE  R14 R14 K8   ; R82 := R14[0x23d5322f]
+ 48 [-]: GETTABLE  R14 R14 K8   ; R14 := R14[0x23d5322f]
  49 [-]: MOVE      R15 R3       ; R15 := R3
  50 [-]: MOVE      R16 R13      ; R16 := R13
  51 [-]: CALL      R14 3 1      ; R14(R15,R16)
@@ -514,7 +514,7 @@
   3 [-]: LOADBOOL  R2 0 1       ; R2 := false; PC := 4
   4 [-]: LOADBOOL  R2 1 0       ; R2 := true
   5 [-]: GETUPVAL  R3 U0        ; R3 := U0
-  6 [-]: GETTABLE  R3 R3 K1     ; R82 := R3[0x74a11ec6]
+  6 [-]: GETTABLE  R3 R3 K1     ; R3 := R3[0x74a11ec6]
   7 [-]: MOVE      R4 R0        ; R4 := R0
   8 [-]: LOADK     R5 2         ; R5 := 2.000000
   9 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
@@ -563,9 +563,9 @@
  18 [-]: ADD       R3 R8 R9     ; R3 := R8 + R9
  19 [-]: LOADK     R9 0         ; R9 := 0.000000
  20 [-]: GETGLOBAL R10 K2       ; R10 := 0x5bced4c4
- 21 [-]: GETTABLE  R10 R10 K3   ; R82 := R10[0xac1b386a]
+ 21 [-]: GETTABLE  R10 R10 K3   ; R10 := R10[0xac1b386a]
  22 [-]: GETGLOBAL R11 K2       ; R11 := 0x5bced4c4
- 23 [-]: GETTABLE  R11 R11 K4   ; R82 := R11[0xb62ecfe0]
+ 23 [-]: GETTABLE  R11 R11 K4   ; R11 := R11[0xb62ecfe0]
  24 [-]: MOVE      R12 R8       ; R12 := R8
  25 [-]: MOVE      R13 R3       ; R13 := R3
  26 [-]: CALL      R11 3 2      ; R11 := R11(R12,R13)

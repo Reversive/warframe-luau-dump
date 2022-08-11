@@ -59,7 +59,7 @@
  36 [-]: SELF      R3 R1 K13    ; R4 := R1; R3 := R1[0x1ac1655c]
  37 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  38 [-]: GETGLOBAL R4 K14       ; R4 := 0x5bced4c4
- 39 [-]: GETTABLE  R4 R4 K15    ; R82 := R4[0xac1b386a]
+ 39 [-]: GETTABLE  R4 R4 K15    ; R4 := R4[0xac1b386a]
  40 [-]: SELF      R5 R3 K16    ; R6 := R3; R5 := R3[0xb87f958d]
  41 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  42 [-]: MUL       R5 R5 K17    ; R5 := R5 * 0.400000

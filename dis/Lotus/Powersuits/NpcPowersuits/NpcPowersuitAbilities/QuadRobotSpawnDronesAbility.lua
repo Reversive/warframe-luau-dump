@@ -136,7 +136,7 @@
  41 [-]: ADD       R11 R7 K9    ; R11 := R7 + 1.000000
  42 [-]: CALL      R8 4 1       ; R8(R9,R10,R11)
  43 [-]: GETGLOBAL R8 K10       ; R8 := 0x5bced4c4
- 44 [-]: GETTABLE  R8 R8 K11    ; R82 := R8[0xa40531d8]
+ 44 [-]: GETTABLE  R8 R8 K11    ; R8 := R8[0xa40531d8]
  45 [-]: LOADK     R9 K12       ; R9 := 1.259920
  46 [-]: MOVE      R10 R7       ; R10 := R7
  47 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
@@ -215,7 +215,7 @@
 120 [-]: LOADBOOL  R24 1 0      ; R24 := true
 121 [-]: CALL      R22 3 2      ; R22 := R22(R23,R24)
 122 [-]: GETGLOBAL R23 K10      ; R23 := 0x5bced4c4
-123 [-]: GETTABLE  R23 R23 K32  ; R82 := R23[0xac1b386a]
+123 [-]: GETTABLE  R23 R23 K32  ; R23 := R23[0xac1b386a]
 124 [-]: MOVE      R24 R20      ; R24 := R20
 125 [-]: SUB       R25 R21 R22  ; R25 := R21 - R22
 126 [-]: CALL      R23 3 2      ; R23 := R23(R24,R25)
@@ -371,7 +371,7 @@
 276 [-]: LOADBOOL  R36 0 0      ; R36 := false
 277 [-]: CALL      R33 4 1      ; R33(R34,R35,R36)
 278 [-]: GETUPVAL  R33 U2       ; R33 := U2
-279 [-]: GETTABLE  R33 R33 K65  ; R82 := R33[0x5c90d6b1]
+279 [-]: GETTABLE  R33 R33 K65  ; R33 := R33[0x5c90d6b1]
 280 [-]: MOVE      R34 R1       ; R34 := R1
 281 [-]: MOVE      R35 R32      ; R35 := R32
 282 [-]: CALL      R33 3 1      ; R33(R34,R35)

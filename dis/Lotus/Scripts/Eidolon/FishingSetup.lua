@@ -148,7 +148,7 @@
   6 [-]: TEST      R2 1         ; if R2 then PC := 107
   7 [-]: JMP       107          ; PC := 107
   8 [-]: GETGLOBAL R2 K1        ; R2 := 0x5bced4c4
-  9 [-]: GETTABLE  R2 R2 K2     ; R82 := R2[0x55f27c30]
+  9 [-]: GETTABLE  R2 R2 K2     ; R2 := R2[0x55f27c30]
  10 [-]: GETGLOBAL R3 K3        ; R3 := 0x55156ff7
  11 [-]: CALL      R3 1 0       ; R3,... := R3()
  12 [-]: CALL      R2 0 2       ; R2 := R2(R3,...)
@@ -226,7 +226,7 @@
  84 [-]: GETGLOBAL R7 K18       ; R7 := _T
  85 [-]: GETTABLE  R7 R7 K19    ; R7 := R7["gFishing"]
  86 [-]: GETTABLE  R7 R7 K20    ; R7 := R7["levelData"]
- 87 [-]: GETTABLE  R7 R7 K22    ; R82 := R7[0x8aad7866]
+ 87 [-]: GETTABLE  R7 R7 K22    ; R7 := R7[0x8aad7866]
  88 [-]: MOVE      R8 R1        ; R8 := R1
  89 [-]: CALL      R7 2 1       ; R7(R8)
  90 [-]: GETGLOBAL R7 K23       ; R7 := 0x55730e1a
@@ -279,7 +279,7 @@
  19 [-]: TEST      R6 1         ; if R6 then PC := 66
  20 [-]: JMP       66           ; PC := 66
  21 [-]: GETGLOBAL R6 K5        ; R6 := 0x5bced4c4
- 22 [-]: GETTABLE  R6 R6 K6     ; R82 := R6[0x3630e649]
+ 22 [-]: GETTABLE  R6 R6 K6     ; R6 := R6[0x3630e649]
  23 [-]: CALL      R6 1 2       ; R6 := R6()
  24 [-]: GETGLOBAL R7 K7        ; R7 := 0xac8041db
  25 [-]: LT        0 R6 R7      ; if R6 >= R7 then PC := 37
@@ -302,7 +302,7 @@
  42 [-]: CONCAT    R7 R7 R8     ; R7 := R7 .. R8
  43 [-]: CALL      R6 2 1       ; R6(R7)
  44 [-]: GETGLOBAL R6 K5        ; R6 := 0x5bced4c4
- 45 [-]: GETTABLE  R6 R6 K12    ; R82 := R6[0x55f27c30]
+ 45 [-]: GETTABLE  R6 R6 K12    ; R6 := R6[0x55f27c30]
  46 [-]: GETGLOBAL R7 K13       ; R7 := 0x55156ff7
  47 [-]: CALL      R7 1 0       ; R7,... := R7()
  48 [-]: CALL      R6 0 2       ; R6 := R6(R7,...)
@@ -361,7 +361,7 @@
  23 [-]: JMP       38           ; PC := 38
  24 [-]: GETUPVAL  R6 U2        ; R6 := U2
  25 [-]: GETGLOBAL R7 K2        ; R7 := 0x5bced4c4
- 26 [-]: GETTABLE  R7 R7 K3     ; R82 := R7[0x55f27c30]
+ 26 [-]: GETTABLE  R7 R7 K3     ; R7 := R7[0x55f27c30]
  27 [-]: GETGLOBAL R8 K4        ; R8 := 0x55156ff7
  28 [-]: CALL      R8 1 0       ; R8,... := R8()
  29 [-]: CALL      R7 0 2       ; R7 := R7(R8,...)
@@ -404,12 +404,12 @@
  14 [-]: TEST      R0 0         ; if not R0 then PC := 45
  15 [-]: JMP       45           ; PC := 45
  16 [-]: GETGLOBAL R2 K6        ; R2 := 0x5bced4c4
- 17 [-]: GETTABLE  R2 R2 K7     ; R82 := R2[0x55f27c30]
+ 17 [-]: GETTABLE  R2 R2 K7     ; R2 := R2[0x55f27c30]
  18 [-]: GETGLOBAL R3 K8        ; R3 := 0x55156ff7
  19 [-]: CALL      R3 1 0       ; R3,... := R3()
  20 [-]: CALL      R2 0 2       ; R2 := R2(R3,...)
  21 [-]: GETGLOBAL R3 K6        ; R3 := 0x5bced4c4
- 22 [-]: GETTABLE  R3 R3 K9     ; R82 := R3[0xb62ecfe0]
+ 22 [-]: GETTABLE  R3 R3 K9     ; R3 := R3[0xb62ecfe0]
  23 [-]: SUB       R4 R1 R2     ; R4 := R1 - R2
  24 [-]: LOADK     R5 0         ; R5 := 0.000000
  25 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)

@@ -40,7 +40,7 @@
  13 [-]: MOVE      R1 R2        ; R1 := R2
  14 [-]: JMP       3            ; PC := 3
  15 [-]: GETUPVAL  R2 U0        ; R2 := U0
- 16 [-]: GETTABLE  R2 R2 K3     ; R82 := R2[0xd3a32459]
+ 16 [-]: GETTABLE  R2 R2 K3     ; R2 := R2[0xd3a32459]
  17 [-]: MOVE      R3 R1        ; R3 := R1
  18 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  19 [-]: EQ        0 R2 K4      ; if R2 ~= nil then PC := 30
@@ -49,7 +49,7 @@
  22 [-]: LOADK     R4 0         ; R4 := 0.000000
  23 [-]: CALL      R3 2 1       ; R3(R4)
  24 [-]: GETUPVAL  R3 U0        ; R3 := U0
- 25 [-]: GETTABLE  R3 R3 K3     ; R82 := R3[0xd3a32459]
+ 25 [-]: GETTABLE  R3 R3 K3     ; R3 := R3[0xd3a32459]
  26 [-]: MOVE      R4 R1        ; R4 := R1
  27 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  28 [-]: MOVE      R2 R3        ; R2 := R3

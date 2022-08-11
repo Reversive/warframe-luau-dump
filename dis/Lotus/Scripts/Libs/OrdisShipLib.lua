@@ -61,14 +61,14 @@
  20 [-]: CALL      R7 0 2       ; R7 := R7(R8,...)
  21 [-]: MOVE      R2 R7        ; R2 := R7
  22 [-]: GETGLOBAL R7 K6        ; R7 := 0x7f5022cf
- 23 [-]: GETTABLE  R7 R7 K7     ; R82 := R7[0xa5c556b9]
+ 23 [-]: GETTABLE  R7 R7 K7     ; R7 := R7[0xa5c556b9]
  24 [-]: MOVE      R8 R2        ; R8 := R2
  25 [-]: LOADK     R9 K8        ; R9 := "OrdisWaypoint"
  26 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
  27 [-]: EQ        1 R7 K9      ; if R7 == nil then PC := 34
  28 [-]: JMP       34           ; PC := 34
  29 [-]: GETGLOBAL R7 K10       ; R7 := 0x33bdd652
- 30 [-]: GETTABLE  R7 R7 K11    ; R82 := R7[0x23d5322f]
+ 30 [-]: GETTABLE  R7 R7 K11    ; R7 := R7[0x23d5322f]
  31 [-]: MOVE      R8 R1        ; R8 := R1
  32 [-]: GETTABLE  R9 R0 R6     ; R9 := R0[R6]
  33 [-]: CALL      R7 3 1       ; R7(R8,R9)
@@ -216,7 +216,7 @@
  81 [-]: GETTABLE  R14 R2 K11   ; R14 := R2[1.000000]
  82 [-]: CALL      R13 2 1      ; R13(R14)
  83 [-]: GETGLOBAL R13 K16      ; R13 := 0x5bced4c4
- 84 [-]: GETTABLE  R13 R13 K17  ; R82 := R13[0x3630e649]
+ 84 [-]: GETTABLE  R13 R13 K17  ; R13 := R13[0x3630e649]
  85 [-]: LOADK     R14 1        ; R14 := 1.000000
  86 [-]: LEN       R15 R12      ; R15 := # R12
  87 [-]: CALL      R13 3 2      ; R13 := R13(R14,R15)

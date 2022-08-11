@@ -26,7 +26,7 @@
   3 [-]: TEST      R0 0         ; if not R0 then PC := 8
   4 [-]: JMP       8            ; PC := 8
   5 [-]: GETGLOBAL R0 K0        ; R0 := _T
-  6 [-]: GETTABLE  R0 R0 K2     ; R82 := R0[0x1d39da27]
+  6 [-]: GETTABLE  R0 R0 K2     ; R0 := R0[0x1d39da27]
   7 [-]: CALL      R0 1 1       ; R0()
   8 [-]: RETURN    R0 1         ; return 
 

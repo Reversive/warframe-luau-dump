@@ -394,7 +394,7 @@
 ; Max Stack Size:  9
 
   1 [-]: GETUPVAL  R2 U0        ; R2 := U0
-  2 [-]: GETTABLE  R2 R2 K0     ; R82 := R2[0xf0090084]
+  2 [-]: GETTABLE  R2 R2 K0     ; R2 := R2[0xf0090084]
   3 [-]: CALL      R2 1 2       ; R2 := R2()
   4 [-]: TEST      R2 1         ; if R2 then PC := 86
   5 [-]: JMP       86           ; PC := 86
@@ -417,7 +417,7 @@
  22 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  23 [-]: LOADK     R6 1000      ; R6 := 1000.000000
  24 [-]: CALL      R2 5 2       ; R2 := R2(R3,R4,R5,R6)
- 25 [-]: SETUPVAL  R2 U1        ; U82 := 
+ 25 [-]: SETUPVAL  R2 U1        ; U82 := 
  26 [-]: GETGLOBAL R2 K4        ; R2 := 0x7b998233
  27 [-]: GETUPVAL  R3 U1        ; R3 := U1
  28 [-]: CALL      R2 2 2       ; R2 := R2(R3)
@@ -1039,7 +1039,7 @@
   4 [-]: TEST      R1 0         ; if not R1 then PC := 26
   5 [-]: JMP       26           ; PC := 26
   6 [-]: GETUPVAL  R1 U1        ; R1 := U1
-  7 [-]: GETTABLE  R1 R1 K0     ; R82 := R1[0xf22cfc77]
+  7 [-]: GETTABLE  R1 R1 K0     ; R1 := R1[0xf22cfc77]
   8 [-]: GETUPVAL  R2 U2        ; R2 := U2
   9 [-]: GETGLOBAL R3 K1        ; R3 := 0x0469f296
  10 [-]: LOADK     R4 K2        ; R4 := "TeraFindLure"
@@ -1053,7 +1053,7 @@
  18 [-]: TEST      R1 1         ; if R1 then PC := 26
  19 [-]: JMP       26           ; PC := 26
  20 [-]: GETGLOBAL R1 K6        ; R1 := 0x33bdd652
- 21 [-]: GETTABLE  R1 R1 K7     ; R82 := R1[0x23d5322f]
+ 21 [-]: GETTABLE  R1 R1 K7     ; R1 := R1[0x23d5322f]
  22 [-]: GETGLOBAL R2 K4        ; R2 := _T
  23 [-]: GETTABLE  R2 R2 K5     ; R2 := R2["PlayersVomIntroTransmitted"]
  24 [-]: MOVE      R3 R0        ; R3 := R0
@@ -1076,7 +1076,7 @@
   4 [-]: TEST      R1 0         ; if not R1 then PC := 14
   5 [-]: JMP       14           ; PC := 14
   6 [-]: GETUPVAL  R1 U1        ; R1 := U1
-  7 [-]: GETTABLE  R1 R1 K0     ; R82 := R1[0xf22cfc77]
+  7 [-]: GETTABLE  R1 R1 K0     ; R1 := R1[0xf22cfc77]
   8 [-]: GETUPVAL  R2 U2        ; R2 := U2
   9 [-]: GETGLOBAL R3 K1        ; R3 := 0x0469f296
  10 [-]: LOADK     R4 K2        ; R4 := "TeraDestroyLure"

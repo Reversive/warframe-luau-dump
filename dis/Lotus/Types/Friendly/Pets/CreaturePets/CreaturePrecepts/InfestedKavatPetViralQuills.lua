@@ -180,7 +180,7 @@
  14 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  15 [-]: SETTABLE  R1 K4 R2     ; R1["COOLDOWN"] := R2
  16 [-]: GETGLOBAL R2 K5        ; R2 := cjson
- 17 [-]: GETTABLE  R2 R2 K6     ; R82 := R2[0xb139d7bc]
+ 17 [-]: GETTABLE  R2 R2 K6     ; R2 := R2[0xb139d7bc]
  18 [-]: MOVE      R3 R1        ; R3 := R1
  19 [-]: TAILCALL  R2 2 0       ; R2,... := R2(R3)
  20 [-]: RETURN    R2 0         ; return R2,...
@@ -218,7 +218,7 @@
  20 [-]: LOADK     R7 0         ; R7 := 0.000000
  21 [-]: RETURN    R7 2         ; return R7
  22 [-]: GETGLOBAL R7 K5        ; R7 := 0x5bced4c4
- 23 [-]: GETTABLE  R7 R7 K6     ; R82 := R7[0xa40531d8]
+ 23 [-]: GETTABLE  R7 R7 K6     ; R7 := R7[0xa40531d8]
  24 [-]: LOADK     R8 2         ; R8 := 2.000000
  25 [-]: LEN       R9 R5        ; R9 := # R5
  26 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
@@ -303,9 +303,9 @@
  64 [-]: MOVE      R6 R4        ; R6 := R4
  65 [-]: CALL      R5 2 1       ; R5(R6)
  66 [-]: GETGLOBAL R5 K8        ; R5 := 0x5bced4c4
- 67 [-]: GETTABLE  R5 R5 K9     ; R82 := R5[0xbf79b942]
+ 67 [-]: GETTABLE  R5 R5 K9     ; R5 := R5[0xbf79b942]
  68 [-]: GETGLOBAL R6 K8        ; R6 := 0x5bced4c4
- 69 [-]: GETTABLE  R6 R6 K10    ; R82 := R6[0x450c9504]
+ 69 [-]: GETTABLE  R6 R6 K10    ; R6 := R6[0x450c9504]
  70 [-]: GETUPVAL  R7 U0        ; R7 := U0
  71 [-]: MOVE      R8 R3        ; R8 := R3
  72 [-]: MOVE      R9 R4        ; R9 := R4
@@ -313,7 +313,7 @@
  74 [-]: CALL      R6 0 0       ; R6,... := R6(R7,...)
  75 [-]: CALL      R5 0 2       ; R5 := R5(R6,...)
  76 [-]: GETGLOBAL R6 K8        ; R6 := 0x5bced4c4
- 77 [-]: GETTABLE  R6 R6 K11    ; R82 := R6[0xe4a5b3ca]
+ 77 [-]: GETTABLE  R6 R6 K11    ; R6 := R6[0xe4a5b3ca]
  78 [-]: MOVE      R7 R5        ; R7 := R5
  79 [-]: CALL      R6 2 2       ; R6 := R6(R7)
  80 [-]: GETGLOBAL R7 K12       ; R7 := 0xda39097c

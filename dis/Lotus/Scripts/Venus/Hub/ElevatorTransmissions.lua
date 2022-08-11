@@ -44,9 +44,9 @@
  13 [-]: GETTABLE  R0 R0 K1     ; R0 := R0["ElevatorTransmissions"]
  14 [-]: GETTABLE  R0 R0 K3     ; R0 := R0[1.000000]
  15 [-]: GETGLOBAL R1 K4        ; R1 := 0xbd496aa1
- 16 [-]: GETTABLE  R1 R1 K5     ; R82 := R1[0x42645da3]
+ 16 [-]: GETTABLE  R1 R1 K5     ; R1 := R1[0x42645da3]
  17 [-]: GETUPVAL  R2 U0        ; R2 := U0
- 18 [-]: GETTABLE  R2 R2 K6     ; R82 := R2[0x5ba444d8]
+ 18 [-]: GETTABLE  R2 R2 K6     ; R2 := R2[0x5ba444d8]
  19 [-]: GETGLOBAL R3 K0        ; R3 := _T
  20 [-]: GETTABLE  R3 R3 K1     ; R3 := R3["ElevatorTransmissions"]
  21 [-]: CLOSURE   R4 0         ; R4 := closure(Function #1.1)
@@ -98,7 +98,7 @@
  67 [-]: EQ        0 R3 R2      ; if R3 ~= R2 then PC := 101
  68 [-]: JMP       101          ; PC := 101
  69 [-]: GETUPVAL  R3 U1        ; R3 := U1
- 70 [-]: GETTABLE  R3 R3 K17    ; R82 := R3[0x1f60d532]
+ 70 [-]: GETTABLE  R3 R3 K17    ; R3 := R3[0x1f60d532]
  71 [-]: GETGLOBAL R4 K18       ; R4 := 0xb009bbc6
  72 [-]: MOVE      R5 R0        ; R5 := R0
  73 [-]: CALL      R4 2 0       ; R4,... := R4(R5)

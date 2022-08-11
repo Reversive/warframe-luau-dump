@@ -192,7 +192,7 @@
  30 [-]: LOADK     R4 1         ; R4 := 1.000000
  31 [-]: FORPREP   R2 40        ; R2 -= R4; PC := 40
  32 [-]: GETGLOBAL R6 K5        ; R6 := 0x33bdd652
- 33 [-]: GETTABLE  R6 R6 K6     ; R82 := R6[0x23d5322f]
+ 33 [-]: GETTABLE  R6 R6 K6     ; R6 := R6[0x23d5322f]
  34 [-]: MOVE      R7 R1        ; R7 := R1
  35 [-]: GETGLOBAL R8 K4        ; R8 := 0xa4eaa12b
  36 [-]: GETTABLE  R8 R8 R5     ; R8 := R8[R5]
@@ -201,7 +201,7 @@
  39 [-]: CALL      R6 0 1       ; R6(R7,...)
  40 [-]: FORLOOP   R2 32        ; R2 += R4; if R2 <= R3 then begin PC := 32; R5 := R2 end
  41 [-]: GETGLOBAL R6 K8        ; R6 := 0xbd496aa1
- 42 [-]: GETTABLE  R6 R6 K9     ; R82 := R6[0x42645da3]
+ 42 [-]: GETTABLE  R6 R6 K9     ; R6 := R6[0x42645da3]
  43 [-]: MOVE      R7 R1        ; R7 := R1
  44 [-]: CALL      R6 2 2       ; R6 := R6(R7)
  45 [-]: SELF      R7 R6 K10    ; R8 := R6; R7 := R6[0xd2d3875a]
@@ -222,7 +222,7 @@
  60 [-]: LOADK     R11 1        ; R11 := 1.000000
  61 [-]: FORPREP   R9 70        ; R9 -= R11; PC := 70
  62 [-]: GETGLOBAL R13 K5       ; R13 := 0x33bdd652
- 63 [-]: GETTABLE  R13 R13 K6   ; R82 := R13[0x23d5322f]
+ 63 [-]: GETTABLE  R13 R13 K6   ; R13 := R13[0x23d5322f]
  64 [-]: MOVE      R14 R8       ; R14 := R8
  65 [-]: GETGLOBAL R15 K13      ; R15 := 0x88efc25e
  66 [-]: GETGLOBAL R16 K4       ; R16 := 0xa4eaa12b

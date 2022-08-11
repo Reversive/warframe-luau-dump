@@ -54,7 +54,7 @@
  17 [-]: LOADK     R4 4         ; R4 := 4.000000
  18 [-]: CALL      R3 2 1       ; R3(R4)
  19 [-]: GETUPVAL  R3 U1        ; R3 := U1
- 20 [-]: GETTABLE  R3 R3 K4     ; R82 := R3[0x659d451f]
+ 20 [-]: GETTABLE  R3 R3 K4     ; R3 := R3[0x659d451f]
  21 [-]: GETGLOBAL R4 K3        ; R4 := 0x7a70cdca
  22 [-]: GETTABLE  R4 R4 R0     ; R4 := R4[R0]
  23 [-]: CALL      R3 2 2       ; R3 := R3(R4)
@@ -73,7 +73,7 @@
  36 [-]: MUL       R4 R4 K9     ; R4 := R4 * 0.050000
  37 [-]: ADD       R2 R2 R4     ; R2 := R2 + R4
  38 [-]: GETGLOBAL R4 K10       ; R4 := 0x5bced4c4
- 39 [-]: GETTABLE  R4 R4 K11    ; R82 := R4[0xa40531d8]
+ 39 [-]: GETTABLE  R4 R4 K11    ; R4 := R4[0xa40531d8]
  40 [-]: GETUPVAL  R5 U0        ; R5 := U0
  41 [-]: GETTABLE  R5 R5 K12    ; R5 := R5["mSmoothAmp"]
  42 [-]: GETTABLE  R5 R5 K13    ; R5 := R5["value"]

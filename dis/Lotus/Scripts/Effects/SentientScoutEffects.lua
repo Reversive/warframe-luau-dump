@@ -64,7 +64,7 @@
  33 [-]: SELF      R2 R0 K6     ; R3 := R0; R2 := R0[0x388577d5]
  34 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  35 [-]: GETGLOBAL R3 K8        ; R3 := 0x5bced4c4
- 36 [-]: GETTABLE  R3 R3 K9     ; R82 := R3[0xac1b386a]
+ 36 [-]: GETTABLE  R3 R3 K9     ; R3 := R3[0xac1b386a]
  37 [-]: GETGLOBAL R4 K10       ; R4 := 0x8b7d1fd1
  38 [-]: GETGLOBAL R5 K3        ; R5 := _T
  39 [-]: GETTABLE  R5 R5 K4     ; R5 := R5["sentientScoutGlow"]
@@ -125,7 +125,7 @@
  36 [-]: TEST      R3 1         ; if R3 then PC := 90
  37 [-]: JMP       90           ; PC := 90
  38 [-]: GETGLOBAL R3 K11       ; R3 := 0x5bced4c4
- 39 [-]: GETTABLE  R3 R3 K12    ; R82 := R3[0xb62ecfe0]
+ 39 [-]: GETTABLE  R3 R3 K12    ; R3 := R3[0xb62ecfe0]
  40 [-]: LOADK     R4 0         ; R4 := 0.000000
  41 [-]: GETGLOBAL R5 K5        ; R5 := _T
  42 [-]: GETTABLE  R5 R5 K6     ; R5 := R5["sentientScoutGlow"]

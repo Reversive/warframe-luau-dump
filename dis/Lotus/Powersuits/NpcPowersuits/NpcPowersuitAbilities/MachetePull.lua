@@ -520,7 +520,7 @@
  47 [-]: TEST      R7 1         ; if R7 then PC := 91
  48 [-]: JMP       91           ; PC := 91
  49 [-]: GETGLOBAL R7 K11       ; R7 := 0x6c97a788
- 50 [-]: GETTABLE  R7 R7 K12    ; R82 := R7[0x733fc736]
+ 50 [-]: GETTABLE  R7 R7 K12    ; R7 := R7[0x733fc736]
  51 [-]: LOADBOOL  R8 1 0       ; R8 := true
  52 [-]: CALL      R7 2 2       ; R7 := R7(R8)
  53 [-]: GETGLOBAL R8 K2        ; R8 := 0x7b998233
@@ -802,7 +802,7 @@
 225 [-]: GETTABLE  R11 R11 R4   ; R11 := R11[R4]
 226 [-]: SETTABLE  R11 K4 K7    ; R11["pulling"] := false
 227 [-]: GETGLOBAL R11 K15      ; R11 := 0x34291f5c
-228 [-]: GETTABLE  R11 R11 K46  ; R82 := R11[0x35c16153]
+228 [-]: GETTABLE  R11 R11 K46  ; R11 := R11[0x35c16153]
 229 [-]: CALL      R11 1 2      ; R11 := R11()
 230 [-]: SETTABLE  R11 K47 K31  ; R11["baseAmount"] := 1.000000
 231 [-]: SELF      R12 R11 K48  ; R13 := R11; R12 := R11[0xca73dd2a]
@@ -1055,7 +1055,7 @@
 478 [-]: LOADK     R25 K78      ; R25 := "Initiating player damage"
 479 [-]: CALL      R24 2 1      ; R24(R25)
 480 [-]: GETGLOBAL R24 K15      ; R24 := 0x34291f5c
-481 [-]: GETTABLE  R24 R24 K46  ; R82 := R24[0x35c16153]
+481 [-]: GETTABLE  R24 R24 K46  ; R24 := R24[0x35c16153]
 482 [-]: CALL      R24 1 2      ; R24 := R24()
 483 [-]: SETTABLE  R24 K47 R23  ; R24["baseAmount"] := R23
 484 [-]: SELF      R25 R24 K79  ; R26 := R24; R25 := R24[0x1586e35e]
@@ -1357,7 +1357,7 @@
  47 [-]: TEST      R7 1         ; if R7 then PC := 91
  48 [-]: JMP       91           ; PC := 91
  49 [-]: GETGLOBAL R7 K11       ; R7 := 0x6c97a788
- 50 [-]: GETTABLE  R7 R7 K12    ; R82 := R7[0x733fc736]
+ 50 [-]: GETTABLE  R7 R7 K12    ; R7 := R7[0x733fc736]
  51 [-]: LOADBOOL  R8 1 0       ; R8 := true
  52 [-]: CALL      R7 2 2       ; R7 := R7(R8)
  53 [-]: GETGLOBAL R8 K2        ; R8 := 0x7b998233
@@ -1539,7 +1539,7 @@
 125 [-]: TEST      R19 1        ; if R19 then PC := 148
 126 [-]: JMP       148          ; PC := 148
 127 [-]: GETGLOBAL R19 K20      ; R19 := 0x34291f5c
-128 [-]: GETTABLE  R19 R19 K31  ; R82 := R19[0x35c16153]
+128 [-]: GETTABLE  R19 R19 K31  ; R19 := R19[0x35c16153]
 129 [-]: CALL      R19 1 2      ; R19 := R19()
 130 [-]: MOVE      R17 R19      ; R17 := R19
 131 [-]: SELF      R19 R17 K32  ; R20 := R17; R19 := R17[0x1586e35e]
@@ -1677,7 +1677,7 @@
 263 [-]: TEST      R22 1        ; if R22 then PC := 293
 264 [-]: JMP       293          ; PC := 293
 265 [-]: GETGLOBAL R22 K20      ; R22 := 0x34291f5c
-266 [-]: GETTABLE  R22 R22 K31  ; R82 := R22[0x35c16153]
+266 [-]: GETTABLE  R22 R22 K31  ; R22 := R22[0x35c16153]
 267 [-]: CALL      R22 1 2      ; R22 := R22()
 268 [-]: SETTABLE  R22 K41 R12  ; R22["baseAmount"] := R12
 269 [-]: SELF      R23 R22 K32  ; R24 := R22; R23 := R22[0x1586e35e]

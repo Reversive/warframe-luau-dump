@@ -375,18 +375,18 @@
  26 [-]: TEST      R10 0        ; if not R10 then PC := 46
  27 [-]: JMP       46           ; PC := 46
  28 [-]: GETUPVAL  R10 U0       ; R10 := U0
- 29 [-]: GETTABLE  R10 R10 K6   ; R82 := R10[0x9f57dd7d]
+ 29 [-]: GETTABLE  R10 R10 K6   ; R10 := R10[0x9f57dd7d]
  30 [-]: GETUPVAL  R11 U1       ; R11 := U1
- 31 [-]: GETTABLE  R11 R11 K7   ; R82 := R11[0x5d10207d]
+ 31 [-]: GETTABLE  R11 R11 K7   ; R11 := R11[0x5d10207d]
  32 [-]: LOADK     R12 9        ; R12 := 9.000000
  33 [-]: LOADBOOL  R13 1 0      ; R13 := true
  34 [-]: CALL      R11 3 0      ; R11,... := R11(R12,R13)
  35 [-]: CALL      R10 0 2      ; R10 := R10(R11,...)
  36 [-]: MOVE      R8 R10       ; R8 := R10
  37 [-]: GETUPVAL  R10 U0       ; R10 := U0
- 38 [-]: GETTABLE  R10 R10 K6   ; R82 := R10[0x9f57dd7d]
+ 38 [-]: GETTABLE  R10 R10 K6   ; R10 := R10[0x9f57dd7d]
  39 [-]: GETUPVAL  R11 U1       ; R11 := U1
- 40 [-]: GETTABLE  R11 R11 K7   ; R82 := R11[0x5d10207d]
+ 40 [-]: GETTABLE  R11 R11 K7   ; R11 := R11[0x5d10207d]
  41 [-]: LOADK     R12 6        ; R12 := 6.000000
  42 [-]: LOADBOOL  R13 1 0      ; R13 := true
  43 [-]: CALL      R11 3 0      ; R11,... := R11(R12,R13)
@@ -449,12 +449,12 @@
 100 [-]: LOADBOOL  R20 0 0      ; R20 := false
 101 [-]: CALL      R17 4 2      ; R17 := R17(R18,R19,R20)
 102 [-]: GETGLOBAL R18 K25      ; R18 := 0x33bdd652
-103 [-]: GETTABLE  R18 R18 K26  ; R82 := R18[0x23d5322f]
+103 [-]: GETTABLE  R18 R18 K26  ; R18 := R18[0x23d5322f]
 104 [-]: MOVE      R19 R6       ; R19 := R6
 105 [-]: MOVE      R20 R17      ; R20 := R17
 106 [-]: CALL      R18 3 1      ; R18(R19,R20)
 107 [-]: GETUPVAL  R18 U0       ; R18 := U0
-108 [-]: GETTABLE  R18 R18 K27  ; R82 := R18[0x06d055f9]
+108 [-]: GETTABLE  R18 R18 K27  ; R18 := R18[0x06d055f9]
 109 [-]: GETTABLE  R19 R10 K16  ; R19 := R10["Antigen"]
 110 [-]: GETTABLE  R19 R19 K18  ; R19 := R19["Count"]
 111 [-]: EQ        1 R19 K19    ; if R19 == 0.000000 then PC := 114
@@ -483,7 +483,7 @@
 134 [-]: SETTABLE  R19 K18 R20  ; R19["Count"] := R20
 135 [-]: JMP       160          ; PC := 160
 136 [-]: GETUPVAL  R19 U0       ; R19 := U0
-137 [-]: GETTABLE  R19 R19 K27  ; R82 := R19[0x06d055f9]
+137 [-]: GETTABLE  R19 R19 K27  ; R19 := R19[0x06d055f9]
 138 [-]: GETTABLE  R20 R10 K21  ; R20 := R10["Mutagen"]
 139 [-]: GETTABLE  R20 R20 K18  ; R20 := R20["Count"]
 140 [-]: EQ        1 R20 K19    ; if R20 == 0.000000 then PC := 143
@@ -574,7 +574,7 @@
 225 [-]: LOADBOOL  R29 0 0      ; R29 := false
 226 [-]: CALL      R26 4 2      ; R26 := R26(R27,R28,R29)
 227 [-]: GETGLOBAL R27 K25      ; R27 := 0x33bdd652
-228 [-]: GETTABLE  R27 R27 K26  ; R82 := R27[0x23d5322f]
+228 [-]: GETTABLE  R27 R27 K26  ; R27 := R27[0x23d5322f]
 229 [-]: MOVE      R28 R6       ; R28 := R6
 230 [-]: MOVE      R29 R26      ; R29 := R26
 231 [-]: CALL      R27 3 1      ; R27(R28,R29)

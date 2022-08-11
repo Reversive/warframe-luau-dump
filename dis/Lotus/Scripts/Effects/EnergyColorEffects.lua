@@ -549,7 +549,7 @@
 130 [-]: TEST      R12 0        ; if not R12 then PC := 147
 131 [-]: JMP       147          ; PC := 147
 132 [-]: GETUPVAL  R12 U0       ; R12 := U0
-133 [-]: GETTABLE  R12 R12 K27  ; R82 := R12[0x7baa66e1]
+133 [-]: GETTABLE  R12 R12 K27  ; R12 := R12[0x7baa66e1]
 134 [-]: CALL      R12 1 2      ; R12 := R12()
 135 [-]: GETGLOBAL R13 K28      ; R13 := 0xa009fdfd
 136 [-]: TEST      R13 0        ; if not R13 then PC := 144
@@ -681,15 +681,15 @@
  50 [-]: SELF      R3 R0 K13    ; R4 := R0; R3 := R0[0x986d2ab8]
  51 [-]: GETGLOBAL R5 K14       ; R5 := 0x1b0c1f1f
  52 [-]: GETUPVAL  R6 U2        ; R6 := U2
- 53 [-]: GETTABLE  R6 R6 K15    ; R82 := R6[0x021dc4be]
+ 53 [-]: GETTABLE  R6 R6 K15    ; R6 := R6[0x021dc4be]
  54 [-]: GETTABLE  R7 R1 K9     ; R7 := R1["red"]
  55 [-]: CALL      R6 2 2       ; R6 := R6(R7)
  56 [-]: GETUPVAL  R7 U2        ; R7 := U2
- 57 [-]: GETTABLE  R7 R7 K15    ; R82 := R7[0x021dc4be]
+ 57 [-]: GETTABLE  R7 R7 K15    ; R7 := R7[0x021dc4be]
  58 [-]: GETTABLE  R8 R1 K11    ; R8 := R1["green"]
  59 [-]: CALL      R7 2 2       ; R7 := R7(R8)
  60 [-]: GETUPVAL  R8 U2        ; R8 := U2
- 61 [-]: GETTABLE  R8 R8 K15    ; R82 := R8[0x021dc4be]
+ 61 [-]: GETTABLE  R8 R8 K15    ; R8 := R8[0x021dc4be]
  62 [-]: GETTABLE  R9 R1 K12    ; R9 := R1["blue"]
  63 [-]: CALL      R8 2 2       ; R8 := R8(R9)
  64 [-]: LOADK     R9 1         ; R9 := 1.000000
@@ -699,7 +699,7 @@
  68 [-]: TEST      R3 0         ; if not R3 then PC := 75
  69 [-]: JMP       75           ; PC := 75
  70 [-]: GETUPVAL  R3 U2        ; R3 := U2
- 71 [-]: GETTABLE  R3 R3 K18    ; R82 := R3[0xa627f28c]
+ 71 [-]: GETTABLE  R3 R3 K18    ; R3 := R3[0xa627f28c]
  72 [-]: MOVE      R4 R0        ; R4 := R0
  73 [-]: MOVE      R5 R1        ; R5 := R1
  74 [-]: CALL      R3 3 1       ; R3(R4,R5)
@@ -755,17 +755,17 @@
  12 [-]: SELF      R1 R0 K3     ; R2 := R0; R1 := R0[0x986d2ab8]
  13 [-]: GETGLOBAL R3 K4        ; R3 := 0x1b0c1f1f
  14 [-]: GETUPVAL  R4 U0        ; R4 := U0
- 15 [-]: GETTABLE  R4 R4 K5     ; R82 := R4[0x021dc4be]
+ 15 [-]: GETTABLE  R4 R4 K5     ; R4 := R4[0x021dc4be]
  16 [-]: GETGLOBAL R5 K6        ; R5 := 0x5383e4e3
  17 [-]: GETTABLE  R5 R5 K7     ; R5 := R5["red"]
  18 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  19 [-]: GETUPVAL  R5 U0        ; R5 := U0
- 20 [-]: GETTABLE  R5 R5 K5     ; R82 := R5[0x021dc4be]
+ 20 [-]: GETTABLE  R5 R5 K5     ; R5 := R5[0x021dc4be]
  21 [-]: GETGLOBAL R6 K6        ; R6 := 0x5383e4e3
  22 [-]: GETTABLE  R6 R6 K8     ; R6 := R6["green"]
  23 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  24 [-]: GETUPVAL  R6 U0        ; R6 := U0
- 25 [-]: GETTABLE  R6 R6 K5     ; R82 := R6[0x021dc4be]
+ 25 [-]: GETTABLE  R6 R6 K5     ; R6 := R6[0x021dc4be]
  26 [-]: GETGLOBAL R7 K6        ; R7 := 0x5383e4e3
  27 [-]: GETTABLE  R7 R7 K9     ; R7 := R7["blue"]
  28 [-]: CALL      R6 2 2       ; R6 := R6(R7)
@@ -790,17 +790,17 @@
  47 [-]: SELF      R7 R6 K3     ; R8 := R6; R7 := R6[0x986d2ab8]
  48 [-]: GETGLOBAL R9 K4        ; R9 := 0x1b0c1f1f
  49 [-]: GETUPVAL  R10 U0       ; R10 := U0
- 50 [-]: GETTABLE  R10 R10 K5   ; R82 := R10[0x021dc4be]
+ 50 [-]: GETTABLE  R10 R10 K5   ; R10 := R10[0x021dc4be]
  51 [-]: GETGLOBAL R11 K6       ; R11 := 0x5383e4e3
  52 [-]: GETTABLE  R11 R11 K7   ; R11 := R11["red"]
  53 [-]: CALL      R10 2 2      ; R10 := R10(R11)
  54 [-]: GETUPVAL  R11 U0       ; R11 := U0
- 55 [-]: GETTABLE  R11 R11 K5   ; R82 := R11[0x021dc4be]
+ 55 [-]: GETTABLE  R11 R11 K5   ; R11 := R11[0x021dc4be]
  56 [-]: GETGLOBAL R12 K6       ; R12 := 0x5383e4e3
  57 [-]: GETTABLE  R12 R12 K8   ; R12 := R12["green"]
  58 [-]: CALL      R11 2 2      ; R11 := R11(R12)
  59 [-]: GETUPVAL  R12 U0       ; R12 := U0
- 60 [-]: GETTABLE  R12 R12 K5   ; R82 := R12[0x021dc4be]
+ 60 [-]: GETTABLE  R12 R12 K5   ; R12 := R12[0x021dc4be]
  61 [-]: GETGLOBAL R13 K6       ; R13 := 0x5383e4e3
  62 [-]: GETTABLE  R13 R13 K9   ; R13 := R13["blue"]
  63 [-]: CALL      R12 2 2      ; R12 := R12(R13)
@@ -922,7 +922,7 @@
 101 [-]: TEST      R8 0         ; if not R8 then PC := 118
 102 [-]: JMP       118          ; PC := 118
 103 [-]: GETUPVAL  R8 U0        ; R8 := U0
-104 [-]: GETTABLE  R8 R8 K19    ; R82 := R8[0x7baa66e1]
+104 [-]: GETTABLE  R8 R8 K19    ; R8 := R8[0x7baa66e1]
 105 [-]: CALL      R8 1 2       ; R8 := R8()
 106 [-]: GETGLOBAL R9 K20       ; R9 := 0xa009fdfd
 107 [-]: TEST      R9 0         ; if not R9 then PC := 115
@@ -1032,15 +1032,15 @@
  36 [-]: SELF      R3 R0 K9     ; R4 := R0; R3 := R0[0x986d2ab8]
  37 [-]: GETGLOBAL R5 K10       ; R5 := 0x1b0c1f1f
  38 [-]: GETUPVAL  R6 U1        ; R6 := U1
- 39 [-]: GETTABLE  R6 R6 K11    ; R82 := R6[0x021dc4be]
+ 39 [-]: GETTABLE  R6 R6 K11    ; R6 := R6[0x021dc4be]
  40 [-]: GETTABLE  R7 R1 K5     ; R7 := R1["red"]
  41 [-]: CALL      R6 2 2       ; R6 := R6(R7)
  42 [-]: GETUPVAL  R7 U1        ; R7 := U1
- 43 [-]: GETTABLE  R7 R7 K11    ; R82 := R7[0x021dc4be]
+ 43 [-]: GETTABLE  R7 R7 K11    ; R7 := R7[0x021dc4be]
  44 [-]: GETTABLE  R8 R1 K7     ; R8 := R1["green"]
  45 [-]: CALL      R7 2 2       ; R7 := R7(R8)
  46 [-]: GETUPVAL  R8 U1        ; R8 := U1
- 47 [-]: GETTABLE  R8 R8 K11    ; R82 := R8[0x021dc4be]
+ 47 [-]: GETTABLE  R8 R8 K11    ; R8 := R8[0x021dc4be]
  48 [-]: GETTABLE  R9 R1 K8     ; R9 := R1["blue"]
  49 [-]: CALL      R8 2 2       ; R8 := R8(R9)
  50 [-]: LOADK     R9 1         ; R9 := 1.000000
@@ -1049,7 +1049,7 @@
  53 [-]: TEST      R3 0         ; if not R3 then PC := 60
  54 [-]: JMP       60           ; PC := 60
  55 [-]: GETUPVAL  R3 U1        ; R3 := U1
- 56 [-]: GETTABLE  R3 R3 K13    ; R82 := R3[0xa627f28c]
+ 56 [-]: GETTABLE  R3 R3 K13    ; R3 := R3[0xa627f28c]
  57 [-]: MOVE      R4 R0        ; R4 := R0
  58 [-]: MOVE      R5 R1        ; R5 := R1
  59 [-]: CALL      R3 3 1       ; R3(R4,R5)
@@ -1072,21 +1072,21 @@
  76 [-]: SELF      R9 R8 K9     ; R10 := R8; R9 := R8[0x986d2ab8]
  77 [-]: GETGLOBAL R11 K10      ; R11 := 0x1b0c1f1f
  78 [-]: GETUPVAL  R12 U1       ; R12 := U1
- 79 [-]: GETTABLE  R12 R12 K11  ; R82 := R12[0x021dc4be]
+ 79 [-]: GETTABLE  R12 R12 K11  ; R12 := R12[0x021dc4be]
  80 [-]: GETTABLE  R13 R1 K5    ; R13 := R1["red"]
  81 [-]: CALL      R12 2 2      ; R12 := R12(R13)
  82 [-]: GETUPVAL  R13 U1       ; R13 := U1
- 83 [-]: GETTABLE  R13 R13 K11  ; R82 := R13[0x021dc4be]
+ 83 [-]: GETTABLE  R13 R13 K11  ; R13 := R13[0x021dc4be]
  84 [-]: GETTABLE  R14 R1 K7    ; R14 := R1["green"]
  85 [-]: CALL      R13 2 2      ; R13 := R13(R14)
  86 [-]: GETUPVAL  R14 U1       ; R14 := U1
- 87 [-]: GETTABLE  R14 R14 K11  ; R82 := R14[0x021dc4be]
+ 87 [-]: GETTABLE  R14 R14 K11  ; R14 := R14[0x021dc4be]
  88 [-]: GETTABLE  R15 R1 K8    ; R15 := R1["blue"]
  89 [-]: CALL      R14 2 2      ; R14 := R14(R15)
  90 [-]: LOADK     R15 1        ; R15 := 1.000000
  91 [-]: CALL      R9 7 1       ; R9(R10,R11,R12,R13,R14,R15)
  92 [-]: GETUPVAL  R9 U1        ; R9 := U1
- 93 [-]: GETTABLE  R9 R9 K13    ; R82 := R9[0xa627f28c]
+ 93 [-]: GETTABLE  R9 R9 K13    ; R9 := R9[0xa627f28c]
  94 [-]: MOVE      R10 R8       ; R10 := R8
  95 [-]: MOVE      R11 R1       ; R11 := R1
  96 [-]: CALL      R9 3 1       ; R9(R10,R11)
@@ -1162,7 +1162,7 @@
  57 [-]: TEST      R6 0         ; if not R6 then PC := 64
  58 [-]: JMP       64           ; PC := 64
  59 [-]: GETUPVAL  R6 U3        ; R6 := U3
- 60 [-]: GETTABLE  R6 R6 K15    ; R82 := R6[0xa627f28c]
+ 60 [-]: GETTABLE  R6 R6 K15    ; R6 := R6[0xa627f28c]
  61 [-]: MOVE      R7 R0        ; R7 := R0
  62 [-]: MOVE      R8 R2        ; R8 := R2
  63 [-]: CALL      R6 3 1       ; R6(R7,R8)
@@ -1279,13 +1279,13 @@
  61 [-]: JMP       77           ; PC := 77
  62 [-]: GETTABLE  R5 R1 K14    ; R5 := R1["alpha"]
  63 [-]: GETUPVAL  R6 U2        ; R6 := U2
- 64 [-]: GETTABLE  R6 R6 K15    ; R82 := R6[0x6bcd0a85]
+ 64 [-]: GETTABLE  R6 R6 K15    ; R6 := R6[0x6bcd0a85]
  65 [-]: MOVE      R7 R1        ; R7 := R1
  66 [-]: CALL      R6 2 4       ; R6,R7,R8 := R6(R7)
  67 [-]: GETGLOBAL R7 K16       ; R7 := 0x021a1f91
  68 [-]: GETGLOBAL R8 K17       ; R8 := 0xd686340f
  69 [-]: GETUPVAL  R9 U2        ; R9 := U2
- 70 [-]: GETTABLE  R9 R9 K18    ; R82 := R9[0x6b70106d]
+ 70 [-]: GETTABLE  R9 R9 K18    ; R9 := R9[0x6b70106d]
  71 [-]: MOVE      R10 R6       ; R10 := R6
  72 [-]: MOVE      R11 R7       ; R11 := R7
  73 [-]: MOVE      R12 R8       ; R12 := R8
@@ -1367,13 +1367,13 @@
  58 [-]: JMP       74           ; PC := 74
  59 [-]: GETTABLE  R5 R1 K14    ; R5 := R1["alpha"]
  60 [-]: GETUPVAL  R6 U2        ; R6 := U2
- 61 [-]: GETTABLE  R6 R6 K15    ; R82 := R6[0x6bcd0a85]
+ 61 [-]: GETTABLE  R6 R6 K15    ; R6 := R6[0x6bcd0a85]
  62 [-]: MOVE      R7 R1        ; R7 := R1
  63 [-]: CALL      R6 2 4       ; R6,R7,R8 := R6(R7)
  64 [-]: GETGLOBAL R7 K16       ; R7 := 0x021a1f91
  65 [-]: GETGLOBAL R8 K17       ; R8 := 0xd686340f
  66 [-]: GETUPVAL  R9 U2        ; R9 := U2
- 67 [-]: GETTABLE  R9 R9 K18    ; R82 := R9[0x6b70106d]
+ 67 [-]: GETTABLE  R9 R9 K18    ; R9 := R9[0x6b70106d]
  68 [-]: MOVE      R10 R6       ; R10 := R6
  69 [-]: MOVE      R11 R7       ; R11 := R7
  70 [-]: MOVE      R12 R8       ; R12 := R8
@@ -1463,7 +1463,7 @@
  66 [-]: TEST      R5 0         ; if not R5 then PC := 73
  67 [-]: JMP       73           ; PC := 73
  68 [-]: GETUPVAL  R5 U2        ; R5 := U2
- 69 [-]: GETTABLE  R5 R5 K16    ; R82 := R5[0xa627f28c]
+ 69 [-]: GETTABLE  R5 R5 K16    ; R5 := R5[0xa627f28c]
  70 [-]: MOVE      R6 R0        ; R6 := R0
  71 [-]: MOVE      R7 R2        ; R7 := R2
  72 [-]: CALL      R5 3 1       ; R5(R6,R7)
@@ -1609,7 +1609,7 @@
 115 [-]: TEST      R12 1        ; if R12 then PC := 121
 116 [-]: JMP       121          ; PC := 121
 117 [-]: GETGLOBAL R12 K23      ; R12 := _T
-118 [-]: GETTABLE  R12 R12 K27  ; R82 := R12[0x13c5405b]
+118 [-]: GETTABLE  R12 R12 K27  ; R12 := R12[0x13c5405b]
 119 [-]: MOVE      R13 R2       ; R13 := R2
 120 [-]: CALL      R12 2 1      ; R12(R13)
 121 [-]: GETGLOBAL R12 K2       ; R12 := 0x7b998233

@@ -194,7 +194,7 @@
  20 [-]: TEST      R9 1         ; if R9 then PC := 30
  21 [-]: JMP       30           ; PC := 30
  22 [-]: GETGLOBAL R9 K4        ; R9 := 0x33bdd652
- 23 [-]: GETTABLE  R9 R9 K5     ; R82 := R9[0x23d5322f]
+ 23 [-]: GETTABLE  R9 R9 K5     ; R9 := R9[0x23d5322f]
  24 [-]: MOVE      R10 R0       ; R10 := R0
  25 [-]: GETGLOBAL R11 K6       ; R11 := 0x64fb1586
  26 [-]: SELF      R12 R8 K7    ; R13 := R8; R12 := R8[0xed4e0128]
@@ -217,7 +217,7 @@
 
   1 [-]: NEWTABLE  R2 0 0       ; R2 := {}
   2 [-]: GETUPVAL  R3 U0        ; R3 := U0
-  3 [-]: GETTABLE  R3 R3 K0     ; R82 := R3[0x06d055f9]
+  3 [-]: GETTABLE  R3 R3 K0     ; R3 := R3[0x06d055f9]
   4 [-]: MOVE      R4 R1        ; R4 := R1
   5 [-]: GETGLOBAL R5 K1        ; R5 := 0x25d99d89
   6 [-]: SELF      R5 R5 K2     ; R6 := R5; R5 := R5[0x25a6e75e]
@@ -232,7 +232,7 @@
  15 [-]: TEST      R4 1         ; if R4 then PC := 24
  16 [-]: JMP       24           ; PC := 24
  17 [-]: GETGLOBAL R4 K6        ; R4 := 0x33bdd652
- 18 [-]: GETTABLE  R4 R4 K7     ; R82 := R4[0x23d5322f]
+ 18 [-]: GETTABLE  R4 R4 K7     ; R4 := R4[0x23d5322f]
  19 [-]: MOVE      R5 R2        ; R5 := R2
  20 [-]: GETTABLE  R6 R0 K5     ; R6 := R0["mItemType"]
  21 [-]: SELF      R6 R6 K8     ; R7 := R6; R6 := R6[0xed4e0128]
@@ -245,7 +245,7 @@
  28 [-]: TEST      R4 1         ; if R4 then PC := 44
  29 [-]: JMP       44           ; PC := 44
  30 [-]: GETGLOBAL R4 K6        ; R4 := 0x33bdd652
- 31 [-]: GETTABLE  R4 R4 K7     ; R82 := R4[0x23d5322f]
+ 31 [-]: GETTABLE  R4 R4 K7     ; R4 := R4[0x23d5322f]
  32 [-]: MOVE      R5 R2        ; R5 := R2
  33 [-]: GETTABLE  R6 R0 K9     ; R6 := R0["mPowersuitInfo"]
  34 [-]: GETTABLE  R6 R6 K5     ; R6 := R6["mItemType"]
@@ -265,7 +265,7 @@
  48 [-]: TEST      R5 1         ; if R5 then PC := 57
  49 [-]: JMP       57           ; PC := 57
  50 [-]: GETGLOBAL R5 K6        ; R5 := 0x33bdd652
- 51 [-]: GETTABLE  R5 R5 K7     ; R82 := R5[0x23d5322f]
+ 51 [-]: GETTABLE  R5 R5 K7     ; R5 := R5[0x23d5322f]
  52 [-]: MOVE      R6 R2        ; R6 := R2
  53 [-]: GETTABLE  R7 R4 K11    ; R7 := R4["mAvatarTypeOverride"]
  54 [-]: SELF      R7 R7 K8     ; R8 := R7; R7 := R7[0xed4e0128]
@@ -277,7 +277,7 @@
  60 [-]: TEST      R5 1         ; if R5 then PC := 69
  61 [-]: JMP       69           ; PC := 69
  62 [-]: GETGLOBAL R5 K6        ; R5 := 0x33bdd652
- 63 [-]: GETTABLE  R5 R5 K7     ; R82 := R5[0x23d5322f]
+ 63 [-]: GETTABLE  R5 R5 K7     ; R5 := R5[0x23d5322f]
  64 [-]: MOVE      R6 R2        ; R6 := R2
  65 [-]: GETTABLE  R7 R4 K12    ; R7 := R4["mAgentType"]
  66 [-]: SELF      R7 R7 K8     ; R8 := R7; R7 := R7[0xed4e0128]
@@ -299,7 +299,7 @@
  82 [-]: TEST      R10 1        ; if R10 then PC := 92
  83 [-]: JMP       92           ; PC := 92
  84 [-]: GETGLOBAL R10 K6       ; R10 := 0x33bdd652
- 85 [-]: GETTABLE  R10 R10 K7   ; R82 := R10[0x23d5322f]
+ 85 [-]: GETTABLE  R10 R10 K7   ; R10 := R10[0x23d5322f]
  86 [-]: MOVE      R11 R2       ; R11 := R2
  87 [-]: SELF      R12 R9 K15   ; R13 := R9; R12 := R9[0x94463c2f]
  88 [-]: CALL      R12 2 2      ; R12 := R12(R13)
@@ -314,7 +314,7 @@
  97 [-]: TEST      R10 1        ; if R10 then PC := 106
  98 [-]: JMP       106          ; PC := 106
  99 [-]: GETGLOBAL R10 K6       ; R10 := 0x33bdd652
-100 [-]: GETTABLE  R10 R10 K7   ; R82 := R10[0x23d5322f]
+100 [-]: GETTABLE  R10 R10 K7   ; R10 := R10[0x23d5322f]
 101 [-]: MOVE      R11 R2       ; R11 := R2
 102 [-]: GETTABLE  R12 R4 K16   ; R12 := R4["mSuitCustomization"]
 103 [-]: SELF      R12 R12 K8   ; R13 := R12; R12 := R12[0xed4e0128]
@@ -334,7 +334,7 @@
 117 [-]: TEST      R10 0        ; if not R10 then PC := 140
 118 [-]: JMP       140          ; PC := 140
 119 [-]: GETUPVAL  R10 U0       ; R10 := U0
-120 [-]: GETTABLE  R10 R10 K0   ; R82 := R10[0x06d055f9]
+120 [-]: GETTABLE  R10 R10 K0   ; R10 := R10[0x06d055f9]
 121 [-]: GETGLOBAL R11 K4       ; R11 := 0x7b998233
 122 [-]: GETTABLE  R12 R4 K19   ; R12 := R4["mWeaponType"]
 123 [-]: CALL      R11 2 2      ; R11 := R11(R12)
@@ -348,14 +348,14 @@
 131 [-]: TEST      R11 1        ; if R11 then PC := 175
 132 [-]: JMP       175          ; PC := 175
 133 [-]: GETGLOBAL R11 K6       ; R11 := 0x33bdd652
-134 [-]: GETTABLE  R11 R11 K7   ; R82 := R11[0x23d5322f]
+134 [-]: GETTABLE  R11 R11 K7   ; R11 := R11[0x23d5322f]
 135 [-]: MOVE      R12 R2       ; R12 := R2
 136 [-]: SELF      R13 R10 K8   ; R14 := R10; R13 := R10[0xed4e0128]
 137 [-]: CALL      R13 2 0      ; R13,... := R13(R14)
 138 [-]: CALL      R11 0 1      ; R11(R12,...)
 139 [-]: JMP       175          ; PC := 175
 140 [-]: GETGLOBAL R11 K6       ; R11 := 0x33bdd652
-141 [-]: GETTABLE  R11 R11 K7   ; R82 := R11[0x23d5322f]
+141 [-]: GETTABLE  R11 R11 K7   ; R11 := R11[0x23d5322f]
 142 [-]: MOVE      R12 R2       ; R12 := R2
 143 [-]: GETTABLE  R13 R0 K17   ; R13 := R0["mStoredWeapon"]
 144 [-]: GETTABLE  R13 R13 K18  ; R13 := R13["mItem"]
@@ -382,7 +382,7 @@
 165 [-]: TEST      R16 1        ; if R16 then PC := 173
 166 [-]: JMP       173          ; PC := 173
 167 [-]: GETGLOBAL R16 K6       ; R16 := 0x33bdd652
-168 [-]: GETTABLE  R16 R16 K7   ; R82 := R16[0x23d5322f]
+168 [-]: GETTABLE  R16 R16 K7   ; R16 := R16[0x23d5322f]
 169 [-]: MOVE      R17 R2       ; R17 := R2
 170 [-]: SELF      R18 R15 K8   ; R19 := R15; R18 := R15[0xed4e0128]
 171 [-]: CALL      R18 2 0      ; R18,... := R18(R19)
@@ -395,7 +395,7 @@
 178 [-]: TEST      R16 1        ; if R16 then PC := 187
 179 [-]: JMP       187          ; PC := 187
 180 [-]: GETGLOBAL R16 K6       ; R16 := 0x33bdd652
-181 [-]: GETTABLE  R16 R16 K7   ; R82 := R16[0x23d5322f]
+181 [-]: GETTABLE  R16 R16 K7   ; R16 := R16[0x23d5322f]
 182 [-]: MOVE      R17 R2       ; R17 := R2
 183 [-]: GETTABLE  R18 R4 K22   ; R18 := R4["mSkelMesh"]
 184 [-]: SELF      R18 R18 K8   ; R19 := R18; R18 := R18[0xed4e0128]
@@ -411,7 +411,7 @@
 194 [-]: TEST      R21 1        ; if R21 then PC := 202
 195 [-]: JMP       202          ; PC := 202
 196 [-]: GETGLOBAL R21 K6       ; R21 := 0x33bdd652
-197 [-]: GETTABLE  R21 R21 K7   ; R82 := R21[0x23d5322f]
+197 [-]: GETTABLE  R21 R21 K7   ; R21 := R21[0x23d5322f]
 198 [-]: MOVE      R22 R2       ; R22 := R2
 199 [-]: SELF      R23 R20 K8   ; R24 := R20; R23 := R20[0xed4e0128]
 200 [-]: CALL      R23 2 0      ; R23,... := R23(R24)
@@ -424,14 +424,14 @@
 207 [-]: TEST      R21 1        ; if R21 then PC := 223
 208 [-]: JMP       223          ; PC := 223
 209 [-]: GETGLOBAL R21 K6       ; R21 := 0x33bdd652
-210 [-]: GETTABLE  R21 R21 K7   ; R82 := R21[0x23d5322f]
+210 [-]: GETTABLE  R21 R21 K7   ; R21 := R21[0x23d5322f]
 211 [-]: MOVE      R22 R2       ; R22 := R2
 212 [-]: GETTABLE  R23 R4 K24   ; R23 := R4["mVoiceBoxRes"]
 213 [-]: SELF      R23 R23 K8   ; R24 := R23; R23 := R23[0xed4e0128]
 214 [-]: CALL      R23 2 0      ; R23,... := R23(R24)
 215 [-]: CALL      R21 0 1      ; R21(R22,...)
 216 [-]: GETGLOBAL R21 K6       ; R21 := 0x33bdd652
-217 [-]: GETTABLE  R21 R21 K7   ; R82 := R21[0x23d5322f]
+217 [-]: GETTABLE  R21 R21 K7   ; R21 := R21[0x23d5322f]
 218 [-]: MOVE      R22 R2       ; R22 := R2
 219 [-]: GETTABLE  R23 R4 K25   ; R23 := R4["mVoiceBoxDspEffectRes"]
 220 [-]: SELF      R23 R23 K8   ; R24 := R23; R23 := R23[0xed4e0128]
@@ -443,7 +443,7 @@
 226 [-]: TEST      R21 1        ; if R21 then PC := 235
 227 [-]: JMP       235          ; PC := 235
 228 [-]: GETGLOBAL R21 K6       ; R21 := 0x33bdd652
-229 [-]: GETTABLE  R21 R21 K7   ; R82 := R21[0x23d5322f]
+229 [-]: GETTABLE  R21 R21 K7   ; R21 := R21[0x23d5322f]
 230 [-]: MOVE      R22 R2       ; R22 := R2
 231 [-]: GETTABLE  R23 R4 K26   ; R23 := R4["mTransmissionSet"]
 232 [-]: SELF      R23 R23 K8   ; R24 := R23; R23 := R23[0xed4e0128]
@@ -455,7 +455,7 @@
 238 [-]: TEST      R21 1        ; if R21 then PC := 247
 239 [-]: JMP       247          ; PC := 247
 240 [-]: GETGLOBAL R21 K6       ; R21 := 0x33bdd652
-241 [-]: GETTABLE  R21 R21 K7   ; R82 := R21[0x23d5322f]
+241 [-]: GETTABLE  R21 R21 K7   ; R21 := R21[0x23d5322f]
 242 [-]: MOVE      R22 R2       ; R22 := R2
 243 [-]: GETTABLE  R23 R4 K27   ; R23 := R4["mSkillUpgrade"]
 244 [-]: SELF      R23 R23 K8   ; R24 := R23; R23 := R23[0xed4e0128]
@@ -467,7 +467,7 @@
 250 [-]: TEST      R21 1        ; if R21 then PC := 259
 251 [-]: JMP       259          ; PC := 259
 252 [-]: GETGLOBAL R21 K6       ; R21 := 0x33bdd652
-253 [-]: GETTABLE  R21 R21 K7   ; R82 := R21[0x23d5322f]
+253 [-]: GETTABLE  R21 R21 K7   ; R21 := R21[0x23d5322f]
 254 [-]: MOVE      R22 R2       ; R22 := R2
 255 [-]: GETTABLE  R23 R4 K16   ; R23 := R4["mSuitCustomization"]
 256 [-]: SELF      R23 R23 K8   ; R24 := R23; R23 := R23[0xed4e0128]
@@ -871,7 +871,7 @@
  47 [-]: JMP       64           ; PC := 64
  48 [-]: GETTABLE  R3 R1 K11    ; R3 := R1["mCrewMemberGeneratedDetails"]
  49 [-]: GETUPVAL  R4 U0        ; R4 := U0
- 50 [-]: GETTABLE  R4 R4 K12    ; R82 := R4[0x06d055f9]
+ 50 [-]: GETTABLE  R4 R4 K12    ; R4 := R4[0x06d055f9]
  51 [-]: GETGLOBAL R5 K8        ; R5 := 0x7b998233
  52 [-]: GETTABLE  R6 R3 K13    ; R6 := R3["mWeaponType"]
  53 [-]: CALL      R5 2 2       ; R5 := R5(R6)
@@ -1266,7 +1266,7 @@
  22 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  23 [-]: LOADBOOL  R6 0 0       ; R6 := false
  24 [-]: GETGLOBAL R7 K5        ; R7 := 0x6c97a788
- 25 [-]: GETTABLE  R7 R7 K6     ; R82 := R7[0x315349a7]
+ 25 [-]: GETTABLE  R7 R7 K6     ; R7 := R7[0x315349a7]
  26 [-]: CALL      R7 1 2       ; R7 := R7()
  27 [-]: GETTABLE  R8 R0 K8     ; R8 := R0["mItemId"]
  28 [-]: GETTABLE  R8 R8 K9     ; R8 := R8["mId"]
@@ -1274,7 +1274,7 @@
  30 [-]: TEST      R3 0         ; if not R3 then PC := 43
  31 [-]: JMP       43           ; PC := 43
  32 [-]: GETUPVAL  R8 U0        ; R8 := U0
- 33 [-]: GETTABLE  R8 R8 K10    ; R82 := R8[0xf22cfc77]
+ 33 [-]: GETTABLE  R8 R8 K10    ; R8 := R8[0xf22cfc77]
  34 [-]: MOVE      R9 R5        ; R9 := R5
  35 [-]: MOVE      R10 R1       ; R10 := R1
  36 [-]: GETGLOBAL R11 K11      ; R11 := 0x89326c93
@@ -1285,7 +1285,7 @@
  41 [-]: MOVE      R6 R8        ; R6 := R8
  42 [-]: JMP       51           ; PC := 51
  43 [-]: GETUPVAL  R8 U0        ; R8 := U0
- 44 [-]: GETTABLE  R8 R8 K13    ; R82 := R8[0x9742b85b]
+ 44 [-]: GETTABLE  R8 R8 K13    ; R8 := R8[0x9742b85b]
  45 [-]: MOVE      R9 R5        ; R9 := R5
  46 [-]: MOVE      R10 R1       ; R10 := R1
  47 [-]: LOADNIL   R11 R12      ; R11 := R12 := nil
@@ -1470,7 +1470,7 @@
 ; Max Stack Size:  10
 
   1 [-]: GETUPVAL  R2 U0        ; R2 := U0
-  2 [-]: GETTABLE  R2 R2 K0     ; R82 := R2[0x02ef4892]
+  2 [-]: GETTABLE  R2 R2 K0     ; R2 := R2[0x02ef4892]
   3 [-]: CALL      R2 1 2       ; R2 := R2()
   4 [-]: GETGLOBAL R3 K1        ; R3 := 0x7b998233
   5 [-]: MOVE      R4 R2        ; R4 := R2
@@ -1514,7 +1514,7 @@
 ; Max Stack Size:  18
 
   1 [-]: GETUPVAL  R3 U0        ; R3 := U0
-  2 [-]: GETTABLE  R3 R3 K0     ; R82 := R3[0x02ef4892]
+  2 [-]: GETTABLE  R3 R3 K0     ; R3 := R3[0x02ef4892]
   3 [-]: CALL      R3 1 2       ; R3 := R3()
   4 [-]: GETGLOBAL R4 K1        ; R4 := 0x7b998233
   5 [-]: MOVE      R5 R3        ; R5 := R3
@@ -1667,7 +1667,7 @@
  10 [-]: LOADK     R1 K2        ; R1 := ""
  11 [-]: RETURN    R1 2         ; return R1
  12 [-]: GETGLOBAL R1 K3        ; R1 := 0x6c97a788
- 13 [-]: GETTABLE  R1 R1 K4     ; R82 := R1[0x1aba4d9e]
+ 13 [-]: GETTABLE  R1 R1 K4     ; R1 := R1[0x1aba4d9e]
  14 [-]: CALL      R1 1 2       ; R1 := R1()
  15 [-]: SETTABLE  R1 K5 R0     ; R1["mItemType"] := R0
  16 [-]: GETGLOBAL R2 K0        ; R2 := 0xb009bbc6

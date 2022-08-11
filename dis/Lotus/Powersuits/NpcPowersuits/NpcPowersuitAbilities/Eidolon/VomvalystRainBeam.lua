@@ -374,7 +374,7 @@
  17 [-]: GETTABLE  R8 R2 K7     ; R8 := R2["z"]
  18 [-]: CALL      R3 6 1       ; R3(R4,R5,R6,R7,R8)
  19 [-]: GETGLOBAL R3 K8        ; R3 := 0x5bced4c4
- 20 [-]: GETTABLE  R3 R3 K9     ; R82 := R3[0xa40531d8]
+ 20 [-]: GETTABLE  R3 R3 K9     ; R3 := R3[0xa40531d8]
  21 [-]: MOVE      R4 R1        ; R4 := R1
  22 [-]: LOADK     R5 3         ; R5 := 3.000000
  23 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)

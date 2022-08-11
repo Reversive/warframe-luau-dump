@@ -44,7 +44,7 @@
  15 [-]: LT        0 R1 R3      ; if R1 >= R3 then PC := 44
  16 [-]: JMP       44           ; PC := 44
  17 [-]: GETUPVAL  R3 U0        ; R3 := U0
- 18 [-]: GETTABLE  R3 R3 K5     ; R82 := R3[0x0de53e77]
+ 18 [-]: GETTABLE  R3 R3 K5     ; R3 := R3[0x0de53e77]
  19 [-]: MOVE      R4 R1        ; R4 := R1
  20 [-]: GETGLOBAL R5 K6        ; R5 := 0xc4eca37e
  21 [-]: GETGLOBAL R6 K7        ; R6 := 0x1d752f8b
@@ -83,7 +83,7 @@
 ; Max Stack Size:  4
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x5bced4c4
-  2 [-]: GETTABLE  R0 R0 K1     ; R82 := R0[0x3630e649]
+  2 [-]: GETTABLE  R0 R0 K1     ; R0 := R0[0x3630e649]
   3 [-]: LOADK     R1 0         ; R1 := 0.000000
   4 [-]: LOADK     R2 100       ; R2 := 100.000000
   5 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)

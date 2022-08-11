@@ -64,7 +64,7 @@
  35 [-]: GETTABLE  R5 R3 K13    ; R5 := R3["location"]
  36 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  37 [-]: GETUPVAL  R5 U0        ; R5 := U0
- 38 [-]: GETTABLE  R5 R5 K14    ; R82 := R5[0x5e35d4d6]
+ 38 [-]: GETTABLE  R5 R5 K14    ; R5 := R5[0x5e35d4d6]
  39 [-]: CALL      R5 1 2       ; R5 := R5()
  40 [-]: SELF      R5 R5 K15    ; R6 := R5; R5 := R5[0x3ad9ed31]
  41 [-]: MOVE      R7 R4        ; R7 := R4
@@ -94,7 +94,7 @@
  65 [-]: RETURN    R0 1         ; return 
  66 [-]: GETGLOBAL R15 K7       ; R15 := _T
  67 [-]: GETGLOBAL R16 K21      ; R16 := 0xbd496aa1
- 68 [-]: GETTABLE  R16 R16 K22  ; R82 := R16[0x42645da3]
+ 68 [-]: GETTABLE  R16 R16 K22  ; R16 := R16[0x42645da3]
  69 [-]: MOVE      R17 R7       ; R17 := R7
  70 [-]: CALL      R16 2 2      ; R16 := R16(R17)
  71 [-]: SETTABLE  R15 K20 R16  ; R15["gTrapTypeLoader"] := R16
@@ -133,7 +133,7 @@
 104 [-]: JMP       106          ; PC := 106
 105 [-]: RETURN    R0 1         ; return 
 106 [-]: GETGLOBAL R22 K21      ; R22 := 0xbd496aa1
-107 [-]: GETTABLE  R22 R22 K22  ; R82 := R22[0x42645da3]
+107 [-]: GETTABLE  R22 R22 K22  ; R22 := R22[0x42645da3]
 108 [-]: MOVE      R23 R15      ; R23 := R15
 109 [-]: CALL      R22 2 2      ; R22 := R22(R23)
 110 [-]: SELF      R23 R22 K23  ; R24 := R22; R23 := R22[0xd2d3875a]

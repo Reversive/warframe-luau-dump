@@ -83,7 +83,7 @@
  51 [-]: SETTABLE  R1 K54 K16   ; R1["mPitchOffset"] := 0.000000
  52 [-]: SETTABLE  R1 K55 K56   ; R1["mApplyFocalTint"] := true
  53 [-]: CLOSURE   R2 0         ; R2 := closure(Function #1.1)
- 54 [-]: SETTABLE  R1 K57 R2    ; R1[0x916fb113] := R2
+ 54 [-]: SETTABLE  R1 K57 R2    ; R1["GetParentEnv"] := R2
  55 [-]: CLOSURE   R2 1         ; R2 := closure(Function #1.2)
  56 [-]: SETTABLE  R1 K58 R2    ; R1["TransitionInDone"] := R2
  57 [-]: CLOSURE   R2 2         ; R2 := closure(Function #1.3)
@@ -144,7 +144,7 @@
   1 [-]: GETTABLE  R2 R0 K0     ; R2 := R0["mTransitionInCallback"]
   2 [-]: EQ        1 R2 K1      ; if R2 == nil then PC := 7
   3 [-]: JMP       7            ; PC := 7
-  4 [-]: GETTABLE  R2 R0 K2     ; R82 := R2[0xcc76bab2]
+  4 [-]: GETTABLE  R2 R0 K2     ; R2 := R0[0xcc76bab2]
   5 [-]: CALL      R2 1 1       ; R2()
   6 [-]: SETTABLE  R0 K0 K1     ; R0["mTransitionInCallback"] := nil
   7 [-]: SETTABLE  R0 K3 K4     ; R0["mTransitioning"] := false
@@ -167,7 +167,7 @@
   5 [-]: TEST      R2 1         ; if R2 then PC := 10
   6 [-]: JMP       10           ; PC := 10
   7 [-]: GETGLOBAL R2 K1        ; R2 := _T
-  8 [-]: GETTABLE  R2 R2 K3     ; R82 := R2[0x3b0face1]
+  8 [-]: GETTABLE  R2 R2 K3     ; R2 := R2[0x3b0face1]
   9 [-]: CALL      R2 1 1       ; R2()
  10 [-]: SETTABLE  R0 K4 R1     ; R0["mTransitionInCallback"] := R1
  11 [-]: SETTABLE  R0 K5 K6     ; R0["mTransitioning"] := true
@@ -202,7 +202,7 @@
 
   1 [-]: MOVE      R1 R0        ; R1 := R0
   2 [-]: GETGLOBAL R2 K0        ; R2 := 0x5bced4c4
-  3 [-]: GETTABLE  R2 R2 K1     ; R82 := R2[0xb62ecfe0]
+  3 [-]: GETTABLE  R2 R2 K1     ; R2 := R2[0xb62ecfe0]
   4 [-]: MOVE      R3 R1        ; R3 := R1
   5 [-]: LOADK     R4 K2        ; R4 := 0.001000
   6 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
@@ -242,7 +242,7 @@
  40 [-]: LOADK     R6 0         ; R6 := 0.500000
  41 [-]: CALL      R2 5 2       ; R2 := R2(R3,R4,R5,R6)
  42 [-]: GETGLOBAL R3 K0        ; R3 := 0x5bced4c4
- 43 [-]: GETTABLE  R3 R3 K13    ; R82 := R3[0xe4a5b3ca]
+ 43 [-]: GETTABLE  R3 R3 K13    ; R3 := R3[0xe4a5b3ca]
  44 [-]: MOVE      R4 R2        ; R4 := R2
  45 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  46 [-]: MOVE      R2 R3        ; R2 := R3
@@ -260,7 +260,7 @@
  58 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  59 [-]: LOADK     R6 1         ; R6 := 1.000000
  60 [-]: GETGLOBAL R7 K0        ; R7 := 0x5bced4c4
- 61 [-]: GETTABLE  R7 R7 K20    ; R82 := R7[0xa40531d8]
+ 61 [-]: GETTABLE  R7 R7 K20    ; R7 := R7[0xa40531d8]
  62 [-]: MOVE      R8 R0        ; R8 := R0
  63 [-]: LOADK     R9 0         ; R9 := 0.500000
  64 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
@@ -281,7 +281,7 @@
  79 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  80 [-]: LOADK     R6 1         ; R6 := 1.000000
  81 [-]: GETGLOBAL R7 K0        ; R7 := 0x5bced4c4
- 82 [-]: GETTABLE  R7 R7 K20    ; R82 := R7[0xa40531d8]
+ 82 [-]: GETTABLE  R7 R7 K20    ; R7 := R7[0xa40531d8]
  83 [-]: MOVE      R8 R0        ; R8 := R0
  84 [-]: LOADK     R9 0         ; R9 := 0.500000
  85 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
@@ -334,14 +334,14 @@
   1 [-]: GETTABLE  R1 R0 K0     ; R1 := R0["mTransitionOutCallback"]
   2 [-]: EQ        1 R1 K1      ; if R1 == nil then PC := 7
   3 [-]: JMP       7            ; PC := 7
-  4 [-]: GETTABLE  R1 R0 K2     ; R82 := R1[0x45180425]
+  4 [-]: GETTABLE  R1 R0 K2     ; R1 := R0[0x45180425]
   5 [-]: CALL      R1 1 1       ; R1()
   6 [-]: SETTABLE  R0 K0 K1     ; R0["mTransitionOutCallback"] := nil
   7 [-]: GETTABLE  R1 R0 K3     ; R1 := R0["mWasUIInputEnabled"]
   8 [-]: TEST      R1 1         ; if R1 then PC := 13
   9 [-]: JMP       13           ; PC := 13
  10 [-]: GETGLOBAL R1 K4        ; R1 := _T
- 11 [-]: GETTABLE  R1 R1 K5     ; R82 := R1[0x80172c74]
+ 11 [-]: GETTABLE  R1 R1 K5     ; R1 := R1[0x80172c74]
  12 [-]: CALL      R1 1 1       ; R1()
  13 [-]: SETTABLE  R0 K6 K7     ; R0["mTransitioning"] := false
  14 [-]: RETURN    R0 1         ; return 
@@ -541,19 +541,19 @@
  11 [-]: LOADK     R5 0         ; R5 := 0.500000
  12 [-]: CALL      R1 5 2       ; R1 := R1(R2,R3,R4,R5)
  13 [-]: GETGLOBAL R2 K4        ; R2 := 0x5bced4c4
- 14 [-]: GETTABLE  R2 R2 K5     ; R82 := R2[0xe4a5b3ca]
+ 14 [-]: GETTABLE  R2 R2 K5     ; R2 := R2[0xe4a5b3ca]
  15 [-]: MOVE      R3 R1        ; R3 := R1
  16 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  17 [-]: MOVE      R1 R2        ; R1 := R2
  18 [-]: GETGLOBAL R2 K4        ; R2 := 0x5bced4c4
- 19 [-]: GETTABLE  R2 R2 K5     ; R82 := R2[0xe4a5b3ca]
+ 19 [-]: GETTABLE  R2 R2 K5     ; R2 := R2[0xe4a5b3ca]
  20 [-]: GETTABLE  R3 R0 K6     ; R3 := R0["mSmoothCursorX"]
  21 [-]: GETTABLE  R3 R3 K7     ; R3 := R3["mVelocity"]
  22 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  23 [-]: MUL       R2 R2 K8     ; R2 := R2 * 0.100000
  24 [-]: ADD       R1 R1 R2     ; R1 := R1 + R2
  25 [-]: GETGLOBAL R2 K4        ; R2 := 0x5bced4c4
- 26 [-]: GETTABLE  R2 R2 K5     ; R82 := R2[0xe4a5b3ca]
+ 26 [-]: GETTABLE  R2 R2 K5     ; R2 := R2[0xe4a5b3ca]
  27 [-]: GETTABLE  R3 R0 K9     ; R3 := R0["mSmoothCursorY"]
  28 [-]: GETTABLE  R3 R3 K7     ; R3 := R3["mVelocity"]
  29 [-]: CALL      R2 2 2       ; R2 := R2(R3)
@@ -754,7 +754,7 @@
 127 [-]: JMP       150          ; PC := 150
 128 [-]: GETTABLE  R8 R0 K30    ; R8 := R0["mSmoothCursorX"]
 129 [-]: GETUPVAL  R9 U0        ; R9 := U0
-130 [-]: GETTABLE  R9 R9 K32    ; R82 := R9[0x06d055f9]
+130 [-]: GETTABLE  R9 R9 K32    ; R9 := R9[0x06d055f9]
 131 [-]: MOVE      R10 R7       ; R10 := R7
 132 [-]: GETTABLE  R11 R0 K33   ; R11 := R0["mActiveMouseInterpSmoothTime"]
 133 [-]: GETTABLE  R12 R0 K34   ; R12 := R0["mDefaultSmoothTime"]
@@ -762,7 +762,7 @@
 135 [-]: SETTABLE  R8 K31 R9    ; R8["mSmoothTime"] := R9
 136 [-]: GETTABLE  R8 R0 K35    ; R8 := R0["mSmoothCursorY"]
 137 [-]: GETUPVAL  R9 U0        ; R9 := U0
-138 [-]: GETTABLE  R9 R9 K32    ; R82 := R9[0x06d055f9]
+138 [-]: GETTABLE  R9 R9 K32    ; R9 := R9[0x06d055f9]
 139 [-]: MOVE      R10 R7       ; R10 := R7
 140 [-]: GETTABLE  R11 R0 K33   ; R11 := R0["mActiveMouseInterpSmoothTime"]
 141 [-]: GETTABLE  R12 R0 K34   ; R12 := R0["mDefaultSmoothTime"]

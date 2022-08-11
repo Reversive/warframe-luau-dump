@@ -45,7 +45,7 @@
 ; Max Stack Size:  2
 
   1 [-]: LOADBOOL  R0 0 0       ; R0 := false
-  2 [-]: SETUPVAL  R0 U0        ; U82 := 
+  2 [-]: SETUPVAL  R0 U0        ; U82 := R0
   3 [-]: GETUPVAL  R0 U1        ; R0 := U1
   4 [-]: EQ        0 R0 K0      ; if R0 ~= nil then PC := 9
   5 [-]: JMP       9            ; PC := 9
@@ -252,7 +252,7 @@
 ; Max Stack Size:  9
 
   1 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  2 [-]: GETTABLE  R0 R0 K0     ; R82 := R0[0x659d451f]
+  2 [-]: GETTABLE  R0 R0 K0     ; R0 := R0[0x659d451f]
   3 [-]: GETGLOBAL R1 K1        ; R1 := 0x933a3fdd
   4 [-]: CALL      R0 2 1       ; R0(R1)
   5 [-]: GETGLOBAL R0 K2        ; R0 := 0x25312c9b
@@ -344,7 +344,7 @@
   6 [-]: LOADK     R2 K3        ; R2 := "Message.Icon"
   7 [-]: LOADK     R3 1         ; R3 := 1.000000
   8 [-]: CALL      R0 4 2       ; R0 := R0(R1,R2,R3)
-  9 [-]: SETUPVAL  R0 U0        ; U82 := 
+  9 [-]: SETUPVAL  R0 U0        ; U82 := R0
  10 [-]: GETGLOBAL R0 K1        ; R0 := 0xae91e43b
  11 [-]: SELF      R0 R0 K4     ; R1 := R0; R0 := R0[0x67bc869f]
  12 [-]: LOADK     R2 K5        ; R2 := "Message"
@@ -441,7 +441,7 @@
  42 [-]: CALL      R4 2 0       ; R4,... := R4(R5)
  43 [-]: CALL      R1 0 1       ; R1(R2,...)
  44 [-]: GETGLOBAL R1 K7        ; R1 := 0x33bdd652
- 45 [-]: GETTABLE  R1 R1 K8     ; R82 := R1[0x9c1f3b5a]
+ 45 [-]: GETTABLE  R1 R1 K8     ; R1 := R1[0x9c1f3b5a]
  46 [-]: GETUPVAL  R2 U1        ; R2 := U1
  47 [-]: LOADK     R3 1         ; R3 := 1.000000
  48 [-]: CALL      R1 3 1       ; R1(R2,R3)
@@ -450,9 +450,9 @@
  51 [-]: EQ        0 R1 K9      ; if R1 ~= 0.000000 then PC := 55
  52 [-]: JMP       55           ; PC := 55
  53 [-]: LOADNIL   R1 R1        ; R1 := nil
- 54 [-]: SETUPVAL  R1 U1        ; U82 := 
+ 54 [-]: SETUPVAL  R1 U1        ; U82 := R1
  55 [-]: LOADBOOL  R1 1 0       ; R1 := true
- 56 [-]: SETUPVAL  R1 U0        ; U82 := 
+ 56 [-]: SETUPVAL  R1 U0        ; U82 := R0
  57 [-]: GETGLOBAL R1 K10       ; R1 := 0xae91e43b
  58 [-]: SELF      R1 R1 K11    ; R2 := R1; R1 := R1[0x8a8c8d5a]
  59 [-]: GETGLOBAL R3 K12       ; R3 := 0xb693b6c1
@@ -474,9 +474,9 @@
   2 [-]: EQ        0 R4 K0      ; if R4 ~= nil then PC := 6
   3 [-]: JMP       6            ; PC := 6
   4 [-]: NEWTABLE  R4 0 0       ; R4 := {}
-  5 [-]: SETUPVAL  R4 U0        ; U82 := 
+  5 [-]: SETUPVAL  R4 U0        ; U82 := R0
   6 [-]: GETGLOBAL R4 K1        ; R4 := 0x33bdd652
-  7 [-]: GETTABLE  R4 R4 K2     ; R82 := R4[0x23d5322f]
+  7 [-]: GETTABLE  R4 R4 K2     ; R4 := R4[0x23d5322f]
   8 [-]: GETUPVAL  R5 U0        ; R5 := U0
   9 [-]: NEWTABLE  R6 0 4       ; R6 := {}
  10 [-]: SETTABLE  R6 K3 R0     ; R6["TargetName"] := R0

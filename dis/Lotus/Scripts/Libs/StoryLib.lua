@@ -218,7 +218,7 @@
   7 [-]: GETGLOBAL R2 K1        ; R2 := _T
   8 [-]: SETTABLE  R2 K2 K3     ; R2["StoryLib_PlayingCin"] := true
   9 [-]: GETUPVAL  R2 U0        ; R2 := U0
- 10 [-]: GETTABLE  R2 R2 K4     ; R82 := R2[0xb6ba7af3]
+ 10 [-]: GETTABLE  R2 R2 K4     ; R2 := R2[0xb6ba7af3]
  11 [-]: CALL      R2 1 2       ; R2 := R2()
  12 [-]: GETGLOBAL R3 K0        ; R3 := 0x7b998233
  13 [-]: GETGLOBAL R4 K1        ; R4 := _T
@@ -227,14 +227,14 @@
  16 [-]: TEST      R3 1         ; if R3 then PC := 21
  17 [-]: JMP       21           ; PC := 21
  18 [-]: GETGLOBAL R3 K1        ; R3 := _T
- 19 [-]: GETTABLE  R3 R3 K6     ; R82 := R3[0x6d147816]
+ 19 [-]: GETTABLE  R3 R3 K6     ; R3 := R3[0x6d147816]
  20 [-]: CALL      R3 1 1       ; R3()
  21 [-]: GETGLOBAL R3 K1        ; R3 := _T
  22 [-]: SETTABLE  R3 K7 K3     ; R3["QuestStartCinPlaying"] := true
  23 [-]: GETGLOBAL R3 K8        ; R3 := 0x9ba7909f
  24 [-]: SELF      R3 R3 K9     ; R4 := R3; R3 := R3[0xbcfb64ab]
  25 [-]: GETUPVAL  R5 U1        ; R5 := U1
- 26 [-]: GETTABLE  R5 R5 K10    ; R82 := R5[0xc472e470]
+ 26 [-]: GETTABLE  R5 R5 K10    ; R5 := R5[0xc472e470]
  27 [-]: CALL      R5 1 0       ; R5,... := R5()
  28 [-]: CALL      R3 0 2       ; R3 := R3(R4,...)
  29 [-]: GETGLOBAL R4 K0        ; R4 := 0x7b998233
@@ -309,7 +309,7 @@
  98 [-]: LOADK     R20 0        ; R20 := 0.000000
  99 [-]: CALL      R18 3 1      ; R18(R19,R20)
 100 [-]: GETGLOBAL R18 K1       ; R18 := _T
-101 [-]: GETTABLE  R18 R18 K24  ; R82 := R18[0x80172c74]
+101 [-]: GETTABLE  R18 R18 K24  ; R18 := R18[0x80172c74]
 102 [-]: CALL      R18 1 1      ; R18()
 103 [-]: GETGLOBAL R18 K0       ; R18 := 0x7b998233
 104 [-]: MOVE      R19 R1       ; R19 := R1
@@ -327,7 +327,7 @@
 116 [-]: GETGLOBAL R18 K29      ; R18 := 0x2d0fad09
 117 [-]: LOADK     R19 K30      ; R19 := "Lotus.Interface.Libs.DioramaLoader"
 118 [-]: CALL      R18 2 2      ; R18 := R18(R19)
-119 [-]: GETTABLE  R19 R18 K31  ; R82 := R19[0xbec1f4ee]
+119 [-]: GETTABLE  R19 R18 K31  ; R19 := R18[0xbec1f4ee]
 120 [-]: GETGLOBAL R20 K1       ; R20 := _T
 121 [-]: GETTABLE  R20 R20 K32  ; R20 := R20["BackgroundMovie"]
 122 [-]: CALL      R19 2 2      ; R19 := R19(R20)
@@ -398,10 +398,10 @@
 187 [-]: TEST      R21 1        ; if R21 then PC := 155
 188 [-]: JMP       155          ; PC := 155
 189 [-]: GETUPVAL  R21 U2       ; R21 := U2
-190 [-]: GETTABLE  R21 R21 K45  ; R82 := R21[0xa559eb32]
+190 [-]: GETTABLE  R21 R21 K45  ; R21 := R21[0xa559eb32]
 191 [-]: CALL      R21 1 1      ; R21()
 192 [-]: GETUPVAL  R21 U2       ; R21 := U2
-193 [-]: GETTABLE  R21 R21 K46  ; R82 := R21[0xfe0d9469]
+193 [-]: GETTABLE  R21 R21 K46  ; R21 := R21[0xfe0d9469]
 194 [-]: CALL      R21 1 1      ; R21()
 195 [-]: JMP       155          ; PC := 155
 196 [-]: GETGLOBAL R21 K8       ; R21 := 0x9ba7909f
@@ -491,7 +491,7 @@
 280 [-]: TEST      R33 1        ; if R33 then PC := 289
 281 [-]: JMP       289          ; PC := 289
 282 [-]: GETGLOBAL R33 K1       ; R33 := _T
-283 [-]: GETTABLE  R33 R33 K51  ; R82 := R33[0xa460d8df]
+283 [-]: GETTABLE  R33 R33 K51  ; R33 := R33[0xa460d8df]
 284 [-]: LOADK     R34 0        ; R34 := 0.000000
 285 [-]: GETTABLE  R35 R2 K52   ; R35 := R2["HighlightOffset"]
 286 [-]: GETTABLE  R36 R2 K53   ; R36 := R2["HighlightOn"]

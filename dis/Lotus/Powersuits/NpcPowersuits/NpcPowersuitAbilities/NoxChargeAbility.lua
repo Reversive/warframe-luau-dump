@@ -291,7 +291,7 @@
 153 [-]: EQ        0 R23 R24    ; if R23 ~= R24 then PC := 204
 154 [-]: JMP       204          ; PC := 204
 155 [-]: GETGLOBAL R23 K5       ; R23 := 0x34291f5c
-156 [-]: GETTABLE  R23 R23 K26  ; R82 := R23[0x35c16153]
+156 [-]: GETTABLE  R23 R23 K26  ; R23 := R23[0x35c16153]
 157 [-]: CALL      R23 1 2      ; R23 := R23()
 158 [-]: GETGLOBAL R24 K28      ; R24 := 0xeb29760b
 159 [-]: SETTABLE  R23 K27 R24  ; R23["baseAmount"] := R24
@@ -335,7 +335,7 @@
 197 [-]: LOADBOOL  R30 1 0      ; R30 := true
 198 [-]: CALL      R25 6 1      ; R25(R26,R27,R28,R29,R30)
 199 [-]: GETGLOBAL R25 K41      ; R25 := 0x33bdd652
-200 [-]: GETTABLE  R25 R25 K42  ; R82 := R25[0x23d5322f]
+200 [-]: GETTABLE  R25 R25 K42  ; R25 := R25[0x23d5322f]
 201 [-]: MOVE      R26 R13      ; R26 := R13
 202 [-]: GETTABLE  R27 R18 R22  ; R27 := R18[R22]
 203 [-]: CALL      R25 3 1      ; R25(R26,R27)

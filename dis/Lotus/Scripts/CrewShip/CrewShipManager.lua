@@ -48,7 +48,7 @@
  12 [-]: JMP       19           ; PC := 19
  13 [-]: GETGLOBAL R1 K2        ; R1 := 0x0a8f62a7
  14 [-]: CALL      R1 1 2       ; R1 := R1()
- 15 [-]: SETUPVAL  R1 U0        ; U82 := 
+ 15 [-]: SETUPVAL  R1 U0        ; U82 := R0
  16 [-]: GETGLOBAL R1 K3        ; R1 := 0x3d106989
  17 [-]: LOADK     R2 K4        ; R2 := "AVATAR IS GOING OUT OF BOUND"
  18 [-]: CALL      R1 2 1       ; R1(R2)
@@ -78,7 +78,7 @@
  12 [-]: JMP       19           ; PC := 19
  13 [-]: GETGLOBAL R1 K2        ; R1 := 0x0a8f62a7
  14 [-]: CALL      R1 1 2       ; R1 := R1()
- 15 [-]: SETUPVAL  R1 U0        ; U82 := 
+ 15 [-]: SETUPVAL  R1 U0        ; U82 := R0
  16 [-]: GETGLOBAL R1 K3        ; R1 := 0x3d106989
  17 [-]: LOADK     R2 K4        ; R2 := "RAILJACK AVATAR IS GOING OUT OF BOUND.. SLOWING DOWN"
  18 [-]: CALL      R1 2 1       ; R1(R2)
@@ -108,7 +108,7 @@
  12 [-]: JMP       19           ; PC := 19
  13 [-]: GETGLOBAL R1 K2        ; R1 := 0x0a8f62a7
  14 [-]: CALL      R1 1 2       ; R1 := R1()
- 15 [-]: SETUPVAL  R1 U0        ; U82 := 
+ 15 [-]: SETUPVAL  R1 U0        ; U82 := R0
  16 [-]: GETGLOBAL R1 K3        ; R1 := 0x3d106989
  17 [-]: LOADK     R2 K4        ; R2 := "RAILJACK IS AT WORLD BOUND.. AUTO Turning"
  18 [-]: CALL      R1 2 1       ; R1(R2)

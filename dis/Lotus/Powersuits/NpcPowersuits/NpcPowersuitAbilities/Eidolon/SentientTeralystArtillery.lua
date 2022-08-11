@@ -103,7 +103,7 @@
   9 [-]: SELF      R4 R1 K2     ; R5 := R1; R4 := R1[0xfa9e477f]
  10 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  11 [-]: GETUPVAL  R5 U0        ; R5 := U0
- 12 [-]: GETTABLE  R5 R5 K3     ; R82 := R5[0xf0090084]
+ 12 [-]: GETTABLE  R5 R5 K3     ; R5 := R5[0xf0090084]
  13 [-]: CALL      R5 1 2       ; R5 := R5()
  14 [-]: TEST      R5 1         ; if R5 then PC := 18
  15 [-]: JMP       18           ; PC := 18
@@ -333,7 +333,7 @@
   3 [-]: GETUPVAL  R2 U0        ; R2 := U0
   4 [-]: GETUPVAL  R3 U1        ; R3 := U1
   5 [-]: GETGLOBAL R4 K1        ; R4 := 0x34291f5c
-  6 [-]: GETTABLE  R4 R4 K2     ; R82 := R4[0x056bfe8b]
+  6 [-]: GETTABLE  R4 R4 K2     ; R4 := R4[0x056bfe8b]
   7 [-]: CALL      R4 1 2       ; R4 := R4()
   8 [-]: TEST      R4 0         ; if not R4 then PC := 12
   9 [-]: JMP       12           ; PC := 12

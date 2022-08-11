@@ -36,7 +36,7 @@
   4 [-]: SETTABLE  R4 K2 K3     ; R4["mRank"] := nil
   5 [-]: SETTABLE  R4 K4 K3     ; R4["mMasteryIcon"] := nil
   6 [-]: GETUPVAL  R5 U0        ; R5 := U0
-  7 [-]: GETTABLE  R5 R5 K6     ; R82 := R5[0x06d055f9]
+  7 [-]: GETTABLE  R5 R5 K6     ; R5 := R5[0x06d055f9]
   8 [-]: EQ        1 R3 K3      ; if R3 == nil then PC := 11
   9 [-]: JMP       11           ; PC := 11
  10 [-]: LOADBOOL  R6 0 1       ; R6 := false; PC := 11
@@ -203,7 +203,7 @@
   7 [-]: LT        0 K3 R1      ; if 0.000000 >= R1 then PC := 27
   8 [-]: JMP       27           ; PC := 27
   9 [-]: GETGLOBAL R1 K4        ; R1 := 0x5bced4c4
- 10 [-]: GETTABLE  R1 R1 K5     ; R82 := R1[0x3eda26fc]
+ 10 [-]: GETTABLE  R1 R1 K5     ; R1 := R1[0x3eda26fc]
  11 [-]: GETGLOBAL R2 K6        ; R2 := 0x55156ff7
  12 [-]: CALL      R2 1 2       ; R2 := R2()
  13 [-]: MUL       R2 R2 K7     ; R2 := R2 * 1.000000
@@ -245,7 +245,7 @@
  11 [-]: JMP       68           ; PC := 68
  12 [-]: SETTABLE  R0 K1 R1     ; R0["mRank"] := R1
  13 [-]: GETGLOBAL R2 K3        ; R2 := 0x5bced4c4
- 14 [-]: GETTABLE  R2 R2 K4     ; R82 := R2[0x99675e23]
+ 14 [-]: GETTABLE  R2 R2 K4     ; R2 := R2[0x99675e23]
  15 [-]: DIV       R3 R1 K5     ; R3 := R1 / 3.000000
  16 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  17 [-]: ADD       R2 R2 K6     ; R2 := R2 + 1.000000
@@ -326,7 +326,7 @@
   2 [-]: GETUPVAL  R3 U0        ; R3 := U0
   3 [-]: LOADK     R4 K1        ; R4 := "("
   4 [-]: GETUPVAL  R5 U1        ; R5 := U1
-  5 [-]: GETTABLE  R5 R5 K2     ; R82 := R5[0x06d055f9]
+  5 [-]: GETTABLE  R5 R5 K2     ; R5 := R5[0x06d055f9]
   6 [-]: MOVE      R6 R0        ; R6 := R0
   7 [-]: LOADK     R7 K3        ; R7 := "Loaded: "
   8 [-]: MOVE      R8 R1        ; R8 := R1
@@ -371,7 +371,7 @@
   2 [-]: GETUPVAL  R3 U0        ; R3 := U0
   3 [-]: LOADK     R4 K1        ; R4 := "("
   4 [-]: GETUPVAL  R5 U1        ; R5 := U1
-  5 [-]: GETTABLE  R5 R5 K2     ; R82 := R5[0x06d055f9]
+  5 [-]: GETTABLE  R5 R5 K2     ; R5 := R5[0x06d055f9]
   6 [-]: MOVE      R6 R0        ; R6 := R0
   7 [-]: LOADK     R7 K3        ; R7 := "Loaded: "
   8 [-]: MOVE      R8 R1        ; R8 := R1

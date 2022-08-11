@@ -249,21 +249,21 @@
  56 [-]: SELF      R10 R10 K18  ; R11 := R10; R10 := R10[0xcb3851b8]
  57 [-]: CALL      R10 2 2      ; R10 := R10(R11)
  58 [-]: GETGLOBAL R11 K19      ; R11 := 0x5bced4c4
- 59 [-]: GETTABLE  R11 R11 K20  ; R82 := R11[0xe4a5b3ca]
+ 59 [-]: GETTABLE  R11 R11 K20  ; R11 := R11[0xe4a5b3ca]
  60 [-]: GETTABLE  R12 R10 K21  ; R12 := R10["pitch"]
  61 [-]: CALL      R11 2 2      ; R11 := R11(R12)
  62 [-]: GETGLOBAL R12 K22      ; R12 := 0x006d37c7
  63 [-]: LE        0 R11 R12    ; if R11 > R12 then PC := 77
  64 [-]: JMP       77           ; PC := 77
  65 [-]: GETGLOBAL R11 K19      ; R11 := 0x5bced4c4
- 66 [-]: GETTABLE  R11 R11 K20  ; R82 := R11[0xe4a5b3ca]
+ 66 [-]: GETTABLE  R11 R11 K20  ; R11 := R11[0xe4a5b3ca]
  67 [-]: GETTABLE  R12 R10 K23  ; R12 := R10["bank"]
  68 [-]: CALL      R11 2 2      ; R11 := R11(R12)
  69 [-]: GETGLOBAL R12 K22      ; R12 := 0x006d37c7
  70 [-]: LE        0 R11 R12    ; if R11 > R12 then PC := 77
  71 [-]: JMP       77           ; PC := 77
  72 [-]: GETGLOBAL R11 K24      ; R11 := 0x33bdd652
- 73 [-]: GETTABLE  R11 R11 K25  ; R82 := R11[0x23d5322f]
+ 73 [-]: GETTABLE  R11 R11 K25  ; R11 := R11[0x23d5322f]
  74 [-]: GETGLOBAL R12 K26      ; R12 := 0x6cbcb2c6
  75 [-]: GETTABLE  R13 R5 R9    ; R13 := R5[R9]
  76 [-]: CALL      R11 3 1      ; R11(R12,R13)

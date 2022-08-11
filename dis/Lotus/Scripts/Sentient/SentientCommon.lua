@@ -54,7 +54,7 @@
  31 [-]: LOADK     R8 1         ; R8 := 1.000000
  32 [-]: FORPREP   R6 67        ; R6 -= R8; PC := 67
  33 [-]: GETGLOBAL R10 K8       ; R10 := 0x34291f5c
- 34 [-]: GETTABLE  R10 R10 K9   ; R82 := R10[0x13c230d1]
+ 34 [-]: GETTABLE  R10 R10 K9   ; R10 := R10[0x13c230d1]
  35 [-]: CALL      R10 1 2      ; R10 := R10()
  36 [-]: GETGLOBAL R11 K7       ; R11 := 0xdf3e4510
  37 [-]: GETTABLE  R11 R11 R9   ; R11 := R11[R9]

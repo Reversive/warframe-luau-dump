@@ -33,7 +33,7 @@
  10 [-]: TEST      R1 1         ; if R1 then PC := 19
  11 [-]: JMP       19           ; PC := 19
  12 [-]: GETGLOBAL R1 K4        ; R1 := 0x33bdd652
- 13 [-]: GETTABLE  R1 R1 K5     ; R82 := R1[0x23d5322f]
+ 13 [-]: GETTABLE  R1 R1 K5     ; R1 := R1[0x23d5322f]
  14 [-]: GETGLOBAL R2 K0        ; R2 := _T
  15 [-]: GETTABLE  R2 R2 K1     ; R2 := R2["SolarisEmissivesEntities"]
  16 [-]: MOVE      R3 R0        ; R3 := R0

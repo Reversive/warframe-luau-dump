@@ -46,7 +46,7 @@
 ; Max Stack Size:  6
 
   1 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  2 [-]: GETTABLE  R1 R1 K0     ; R82 := R1[0xf47b8ec3]
+  2 [-]: GETTABLE  R1 R1 K0     ; R1 := R1[0xf47b8ec3]
   3 [-]: CALL      R1 1 2       ; R1 := R1()
   4 [-]: TEST      R1 0         ; if not R1 then PC := 22
   5 [-]: JMP       22           ; PC := 22
@@ -79,7 +79,7 @@
 ; Max Stack Size:  6
 
   1 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  2 [-]: GETTABLE  R1 R1 K0     ; R82 := R1[0xf47b8ec3]
+  2 [-]: GETTABLE  R1 R1 K0     ; R1 := R1[0xf47b8ec3]
   3 [-]: CALL      R1 1 2       ; R1 := R1()
   4 [-]: TEST      R1 0         ; if not R1 then PC := 36
   5 [-]: JMP       36           ; PC := 36
@@ -174,7 +174,7 @@
 ; Max Stack Size:  9
 
   1 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  2 [-]: GETTABLE  R1 R1 K0     ; R82 := R1[0xf47b8ec3]
+  2 [-]: GETTABLE  R1 R1 K0     ; R1 := R1[0xf47b8ec3]
   3 [-]: CALL      R1 1 2       ; R1 := R1()
   4 [-]: TEST      R1 0         ; if not R1 then PC := 44
   5 [-]: JMP       44           ; PC := 44
@@ -229,7 +229,7 @@
 ; Max Stack Size:  5
 
   1 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  2 [-]: GETTABLE  R1 R1 K0     ; R82 := R1[0xf47b8ec3]
+  2 [-]: GETTABLE  R1 R1 K0     ; R1 := R1[0xf47b8ec3]
   3 [-]: CALL      R1 1 2       ; R1 := R1()
   4 [-]: TEST      R1 0         ; if not R1 then PC := 14
   5 [-]: JMP       14           ; PC := 14
@@ -254,7 +254,7 @@
 ; Max Stack Size:  5
 
   1 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  2 [-]: GETTABLE  R1 R1 K0     ; R82 := R1[0xf47b8ec3]
+  2 [-]: GETTABLE  R1 R1 K0     ; R1 := R1[0xf47b8ec3]
   3 [-]: CALL      R1 1 2       ; R1 := R1()
   4 [-]: TEST      R1 0         ; if not R1 then PC := 14
   5 [-]: JMP       14           ; PC := 14

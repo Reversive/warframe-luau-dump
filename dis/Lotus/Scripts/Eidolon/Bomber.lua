@@ -135,9 +135,9 @@
 ; Max Stack Size:  7
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0x5bced4c4
-  2 [-]: GETTABLE  R1 R1 K1     ; R82 := R1[0xbf79b942]
+  2 [-]: GETTABLE  R1 R1 K1     ; R1 := R1[0xbf79b942]
   3 [-]: GETGLOBAL R2 K0        ; R2 := 0x5bced4c4
-  4 [-]: GETTABLE  R2 R2 K2     ; R82 := R2[0x450c9504]
+  4 [-]: GETTABLE  R2 R2 K2     ; R2 := R2[0x450c9504]
   5 [-]: GETGLOBAL R3 K3        ; R3 := 0x42dcc9f5
   6 [-]: GETTABLE  R4 R0 K4     ; R4 := R0["z"]
   7 [-]: LOADK     R5 -1        ; R5 := -1.000000
@@ -146,7 +146,7 @@
  10 [-]: CALL      R2 0 0       ; R2,... := R2(R3,...)
  11 [-]: CALL      R1 0 2       ; R1 := R1(R2,...)
  12 [-]: GETUPVAL  R2 U0        ; R2 := U0
- 13 [-]: GETTABLE  R2 R2 K5     ; R82 := R2[0x06d055f9]
+ 13 [-]: GETTABLE  R2 R2 K5     ; R2 := R2[0x06d055f9]
  14 [-]: GETTABLE  R3 R0 K6     ; R3 := R0["x"]
  15 [-]: LE        1 K7 R3      ; if 0.000000 <= R3 then PC := 18
  16 [-]: JMP       18           ; PC := 18

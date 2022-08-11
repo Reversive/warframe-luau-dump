@@ -164,9 +164,9 @@
 ; Max Stack Size:  11
 
   1 [-]: GETUPVAL  R2 U0        ; R2 := U0
-  2 [-]: GETTABLE  R2 R2 K0     ; R82 := R2[0x8bcd12b6]
+  2 [-]: GETTABLE  R2 R2 K0     ; R2 := R2[0x8bcd12b6]
   3 [-]: GETUPVAL  R3 U1        ; R3 := U1
-  4 [-]: GETTABLE  R3 R3 K1     ; R82 := R3[0x5d10207d]
+  4 [-]: GETTABLE  R3 R3 K1     ; R3 := R3[0x5d10207d]
   5 [-]: GETTABLE  R4 R0 K2     ; R4 := R0["mBarColors"]
   6 [-]: GETTABLE  R4 R4 R1     ; R4 := R4[R1]
   7 [-]: LOADBOOL  R5 1 0       ; R5 := true
@@ -209,9 +209,9 @@
 ; Max Stack Size:  11
 
   1 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  2 [-]: GETTABLE  R1 R1 K0     ; R82 := R1[0x8bcd12b6]
+  2 [-]: GETTABLE  R1 R1 K0     ; R1 := R1[0x8bcd12b6]
   3 [-]: GETUPVAL  R2 U1        ; R2 := U1
-  4 [-]: GETTABLE  R2 R2 K1     ; R82 := R2[0x5d10207d]
+  4 [-]: GETTABLE  R2 R2 K1     ; R2 := R2[0x5d10207d]
   5 [-]: GETTABLE  R3 R0 K2     ; R3 := R0["mBackerColor"]
   6 [-]: LOADBOOL  R4 1 0       ; R4 := true
   7 [-]: CALL      R2 3 0       ; R2,... := R2(R3,R4)
@@ -221,9 +221,9 @@
  11 [-]: EQ        1 R3 K4      ; if R3 == nil then PC := 22
  12 [-]: JMP       22           ; PC := 22
  13 [-]: GETUPVAL  R3 U0        ; R3 := U0
- 14 [-]: GETTABLE  R3 R3 K0     ; R82 := R3[0x8bcd12b6]
+ 14 [-]: GETTABLE  R3 R3 K0     ; R3 := R3[0x8bcd12b6]
  15 [-]: GETUPVAL  R4 U1        ; R4 := U1
- 16 [-]: GETTABLE  R4 R4 K1     ; R82 := R4[0x5d10207d]
+ 16 [-]: GETTABLE  R4 R4 K1     ; R4 := R4[0x5d10207d]
  17 [-]: GETTABLE  R5 R0 K3     ; R5 := R0["mBgEdgeColor"]
  18 [-]: LOADBOOL  R6 1 0       ; R6 := true
  19 [-]: CALL      R4 3 0       ; R4,... := R4(R5,R6)
@@ -358,7 +358,7 @@
  84 [-]: CALL      R14 5 1      ; R14(R15,R16,R17,R18)
  85 [-]: FORLOOP   R10 28       ; R10 += R12; if R10 <= R11 then begin PC := 28; R13 := R10 end
  86 [-]: GETGLOBAL R14 K17      ; R14 := 0x5bced4c4
- 87 [-]: GETTABLE  R14 R14 K18  ; R82 := R14[0xb62ecfe0]
+ 87 [-]: GETTABLE  R14 R14 K18  ; R14 := R14[0xb62ecfe0]
  88 [-]: GETTABLE  R15 R0 K4    ; R15 := R0["mValues"]
  89 [-]: LEN       R15 R15      ; R15 := # R15
  90 [-]: ADD       R15 R15 K19  ; R15 := R15 + 1.000000
@@ -384,7 +384,7 @@
 110 [-]: ADD       R14 R14 K19  ; R14 := R14 + 1.000000
 111 [-]: JMP       93           ; PC := 93
 112 [-]: GETUPVAL  R15 U2       ; R15 := U2
-113 [-]: GETTABLE  R15 R15 K21  ; R82 := R15[0x06d055f9]
+113 [-]: GETTABLE  R15 R15 K21  ; R15 := R15[0x06d055f9]
 114 [-]: GETTABLE  R16 R0 K22   ; R16 := R0["mFillEdgeAlpha"]
 115 [-]: EQ        1 R16 K23    ; if R16 == 0.000000 then PC := 118
 116 [-]: JMP       118          ; PC := 118
@@ -417,10 +417,10 @@
 143 [-]: SUB       R26 R26 R27  ; R26 := R26 - R27
 144 [-]: ADD       R20 R26 R20  ; R20 := R26 + R20
 145 [-]: GETGLOBAL R26 K17      ; R26 := 0x5bced4c4
-146 [-]: GETTABLE  R26 R26 K18  ; R82 := R26[0xb62ecfe0]
+146 [-]: GETTABLE  R26 R26 K18  ; R26 := R26[0xb62ecfe0]
 147 [-]: MOVE      R27 R15      ; R27 := R15
 148 [-]: GETGLOBAL R28 K17      ; R28 := 0x5bced4c4
-149 [-]: GETTABLE  R28 R28 K27  ; R82 := R28[0x55f27c30]
+149 [-]: GETTABLE  R28 R28 K27  ; R28 := R28[0x55f27c30]
 150 [-]: ADD       R29 R20 K28  ; R29 := R20 + 0.500000
 151 [-]: CALL      R28 2 0      ; R28,... := R28(R29)
 152 [-]: CALL      R26 0 2      ; R26 := R26(R27,...)

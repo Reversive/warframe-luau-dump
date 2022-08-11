@@ -79,7 +79,7 @@
  48 [-]: GETGLOBAL R4 K9        ; R4 := 0x8abacb72
  49 [-]: CALL      R2 3 1       ; R2(R3,R4)
  50 [-]: GETUPVAL  R2 U1        ; R2 := U1
- 51 [-]: GETTABLE  R2 R2 K14    ; R82 := R2[0xf22cfc77]
+ 51 [-]: GETTABLE  R2 R2 K14    ; R2 := R2[0xf22cfc77]
  52 [-]: GETGLOBAL R3 K15       ; R3 := 0xe91d7466
  53 [-]: GETGLOBAL R4 K16       ; R4 := 0x0469f296
  54 [-]: LOADK     R5 K17       ; R5 := "NodeIntro"

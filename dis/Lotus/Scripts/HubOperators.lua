@@ -42,7 +42,7 @@
   7 [-]: CALL      R2 2 2       ; R2 := R2(R3)
   8 [-]: SELF      R3 R1 K3     ; R4 := R1; R3 := R1[0x83bfaed0]
   9 [-]: GETGLOBAL R5 K4        ; R5 := 0x7f5022cf
- 10 [-]: GETTABLE  R5 R5 K5     ; R82 := R5[0xe8072ded]
+ 10 [-]: GETTABLE  R5 R5 K5     ; R5 := R5[0xe8072ded]
  11 [-]: LOADK     R6 K6        ; R6 := "{\"status\":%s}"
  12 [-]: MOVE      R7 R2        ; R7 := R2
  13 [-]: CALL      R5 3 0       ; R5,... := R5(R6,R7)
@@ -109,7 +109,7 @@
  45 [-]: NEWTABLE  R3 0 0       ; R3 := {}
  46 [-]: SETTABLE  R2 K11 R3    ; R2["ToggleOperatorCallbacks"] := R3
  47 [-]: GETGLOBAL R2 K12       ; R2 := 0x33bdd652
- 48 [-]: GETTABLE  R2 R2 K13    ; R82 := R2[0x23d5322f]
+ 48 [-]: GETTABLE  R2 R2 K13    ; R2 := R2[0x23d5322f]
  49 [-]: GETGLOBAL R3 K8        ; R3 := _T
  50 [-]: GETTABLE  R3 R3 K11    ; R3 := R3["ToggleOperatorCallbacks"]
  51 [-]: GETUPVAL  R4 U0        ; R4 := U0
@@ -148,7 +148,7 @@
  84 [-]: TEST      R6 1         ; if R6 then PC := 123
  85 [-]: JMP       123          ; PC := 123
  86 [-]: GETGLOBAL R6 K12       ; R6 := 0x33bdd652
- 87 [-]: GETTABLE  R6 R6 K20    ; R82 := R6[0x9c1f3b5a]
+ 87 [-]: GETTABLE  R6 R6 K20    ; R6 := R6[0x9c1f3b5a]
  88 [-]: GETGLOBAL R7 K8        ; R7 := _T
  89 [-]: GETTABLE  R7 R7 K11    ; R7 := R7["ToggleOperatorCallbacks"]
  90 [-]: CALL      R6 2 1       ; R6(R7)
@@ -251,7 +251,7 @@
  53 [-]: CALL      R10 3 1      ; R10(R11,R12)
  54 [-]: FORLOOP   R6 51        ; R6 += R8; if R6 <= R7 then begin PC := 51; R9 := R6 end
  55 [-]: GETUPVAL  R10 U0       ; R10 := U0
- 56 [-]: GETTABLE  R10 R10 K15  ; R82 := R10[0x222e16f3]
+ 56 [-]: GETTABLE  R10 R10 K15  ; R10 := R10[0x222e16f3]
  57 [-]: MOVE      R11 R0       ; R11 := R0
  58 [-]: MOVE      R12 R4       ; R12 := R4
  59 [-]: CALL      R10 3 1      ; R10(R11,R12)

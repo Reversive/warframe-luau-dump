@@ -171,7 +171,7 @@
 ; Max Stack Size:  9
 
   1 [-]: LOADBOOL  R0 1 0       ; R0 := true
-  2 [-]: SETUPVAL  R0 U0        ; U82 := 
+  2 [-]: SETUPVAL  R0 U0        ; U82 := R0
   3 [-]: GETGLOBAL R0 K0        ; R0 := 0x25312c9b
   4 [-]: GETGLOBAL R1 K1        ; R1 := 0xae91e43b
   5 [-]: LOADK     R2 K2        ; R2 := "_root"
@@ -231,9 +231,9 @@
   2 [-]: TEST      R0 1         ; if R0 then PC := 13
   3 [-]: JMP       13           ; PC := 13
   4 [-]: LOADBOOL  R0 1 0       ; R0 := true
-  5 [-]: SETUPVAL  R0 U0        ; U82 := 
+  5 [-]: SETUPVAL  R0 U0        ; U82 := R0
   6 [-]: GETUPVAL  R0 U1        ; R0 := U1
-  7 [-]: GETTABLE  R0 R0 K0     ; R82 := R0[0x659d451f]
+  7 [-]: GETTABLE  R0 R0 K0     ; R0 := R0[0x659d451f]
   8 [-]: GETGLOBAL R1 K1        ; R1 := 0x0032441c
   9 [-]: GETTABLE  R1 R1 K2     ; R1 := R1["UISound_Close"]
  10 [-]: CALL      R0 2 1       ; R0(R1)
@@ -287,7 +287,7 @@
  14 [-]: GETTABLE  R1 R0 K3     ; R1 := R0[1.000000]
  15 [-]: SELF      R1 R1 K4     ; R2 := R1; R1 := R1[0xbb610e5b]
  16 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 17 [-]: SETUPVAL  R1 U0        ; U82 := 
+ 17 [-]: SETUPVAL  R1 U0        ; U82 := R0
  18 [-]: GETGLOBAL R1 K2        ; R1 := 0x7b998233
  19 [-]: GETUPVAL  R2 U0        ; R2 := U0
  20 [-]: CALL      R1 2 2       ; R1 := R1(R2)
@@ -302,7 +302,7 @@
  29 [-]: CALL      R1 2 2       ; R1 := R1(R2)
  30 [-]: SELF      R1 R1 K8     ; R2 := R1; R1 := R1[0x474501e1]
  31 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 32 [-]: SETUPVAL  R1 U1        ; U82 := 
+ 32 [-]: SETUPVAL  R1 U1        ; U82 := R1
  33 [-]: GETGLOBAL R1 K2        ; R1 := 0x7b998233
  34 [-]: GETUPVAL  R2 U1        ; R2 := U1
  35 [-]: CALL      R1 2 2       ; R1 := R1(R2)
@@ -338,11 +338,11 @@
  65 [-]: GETGLOBAL R2 K18       ; R2 := 0x2d0fad09
  66 [-]: LOADK     R3 K19       ; R3 := "Lotus.Interface.Components.ThemedStats"
  67 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 68 [-]: GETTABLE  R3 R2 K20    ; R82 := R3[0xae6791ba]
+ 68 [-]: GETTABLE  R3 R2 K20    ; R3 := R2[0xae6791ba]
  69 [-]: GETGLOBAL R4 K9        ; R4 := 0xae91e43b
  70 [-]: LOADK     R5 K21       ; R5 := "StatContainer.Stats"
  71 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
- 72 [-]: SETUPVAL  R3 U3        ; U82 := 
+ 72 [-]: SETUPVAL  R3 U3        ; U82 := R3
  73 [-]: GETUPVAL  R3 U3        ; R3 := U3
  74 [-]: NEWTABLE  R4 0 4       ; R4 := {}
  75 [-]: NEWTABLE  R5 1 0       ; R5 := {}
@@ -395,7 +395,7 @@
 122 [-]: TEST      R7 0         ; if not R7 then PC := 160
 123 [-]: JMP       160          ; PC := 160
 124 [-]: GETGLOBAL R7 K37       ; R7 := 0x33bdd652
-125 [-]: GETTABLE  R7 R7 K38    ; R82 := R7[0x23d5322f]
+125 [-]: GETTABLE  R7 R7 K38    ; R7 := R7[0x23d5322f]
 126 [-]: GETUPVAL  R8 U3        ; R8 := U3
 127 [-]: GETTABLE  R8 R8 K22    ; R8 := R8["mStats"]
 128 [-]: GETTABLE  R8 R8 K23    ; R8 := R8["Labels"]
@@ -409,7 +409,7 @@
 136 [-]: CALL      R9 4 0       ; R9,... := R9(R10,R11,R12)
 137 [-]: CALL      R7 0 1       ; R7(R8,...)
 138 [-]: GETGLOBAL R7 K37       ; R7 := 0x33bdd652
-139 [-]: GETTABLE  R7 R7 K38    ; R82 := R7[0x23d5322f]
+139 [-]: GETTABLE  R7 R7 K38    ; R7 := R7[0x23d5322f]
 140 [-]: GETUPVAL  R8 U3        ; R8 := U3
 141 [-]: GETTABLE  R8 R8 K22    ; R8 := R8["mStats"]
 142 [-]: GETTABLE  R8 R8 K29    ; R8 := R8["Values"]
@@ -420,7 +420,7 @@
 147 [-]: CALL      R9 3 0       ; R9,... := R9(R10,R11)
 148 [-]: CALL      R7 0 1       ; R7(R8,...)
 149 [-]: GETGLOBAL R7 K37       ; R7 := 0x33bdd652
-150 [-]: GETTABLE  R7 R7 K38    ; R82 := R7[0x23d5322f]
+150 [-]: GETTABLE  R7 R7 K38    ; R7 := R7[0x23d5322f]
 151 [-]: GETUPVAL  R8 U3        ; R8 := U3
 152 [-]: GETTABLE  R8 R8 K22    ; R8 := R8["mStats"]
 153 [-]: GETTABLE  R8 R8 K33    ; R8 := R8["ValueColors"]
@@ -501,7 +501,7 @@
  52 [-]: GETUPVAL  R1 U3        ; R1 := U3
  53 [-]: EQ        1 R1 R0      ; if R1 == R0 then PC := 60
  54 [-]: JMP       60           ; PC := 60
- 55 [-]: SETUPVAL  R0 U3        ; U82 := 
+ 55 [-]: SETUPVAL  R0 U3        ; U82 := R3
  56 [-]: GETGLOBAL R1 K1        ; R1 := 0xae91e43b
  57 [-]: SELF      R1 R1 K14    ; R2 := R1; R1 := R1[0x368ad758]
  58 [-]: GETUPVAL  R3 U3        ; R3 := U3
@@ -519,7 +519,7 @@
 ; Max Stack Size:  5
 
   1 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  2 [-]: GETTABLE  R0 R0 K0     ; R82 := R0[0x659d451f]
+  2 [-]: GETTABLE  R0 R0 K0     ; R0 := R0[0x659d451f]
   3 [-]: GETGLOBAL R1 K1        ; R1 := 0x0032441c
   4 [-]: GETTABLE  R1 R1 K2     ; R1 := R1["UISound_Open"]
   5 [-]: CALL      R0 2 1       ; R0(R1)
@@ -530,16 +530,16 @@
  10 [-]: LOADK     R4 0         ; R4 := 0.000000
  11 [-]: CALL      R0 5 1       ; R0(R1,R2,R3,R4)
  12 [-]: GETUPVAL  R0 U2        ; R0 := U2
- 13 [-]: GETTABLE  R0 R0 K6     ; R82 := R0[0xae6791ba]
+ 13 [-]: GETTABLE  R0 R0 K6     ; R0 := R0[0xae6791ba]
  14 [-]: GETGLOBAL R1 K3        ; R1 := 0xae91e43b
  15 [-]: CALL      R0 2 2       ; R0 := R0(R1)
- 16 [-]: SETUPVAL  R0 U1        ; U82 := 
+ 16 [-]: SETUPVAL  R0 U1        ; U82 := R1
  17 [-]: GETUPVAL  R0 U3        ; R0 := U3
  18 [-]: CALL      R0 1 1       ; R0()
  19 [-]: GETUPVAL  R0 U4        ; R0 := U4
  20 [-]: CALL      R0 1 1       ; R0()
  21 [-]: LOADBOOL  R0 1 0       ; R0 := true
- 22 [-]: SETUPVAL  R0 U5        ; U82 := 
+ 22 [-]: SETUPVAL  R0 U5        ; U82 := R5
  23 [-]: RETURN    R0 1         ; return 
 
 
@@ -633,7 +633,7 @@
  51 [-]: CALL      R0 7 1       ; R0(R1,R2,R3,R4,R5,R6)
  52 [-]: GETUPVAL  R0 U2        ; R0 := U2
  53 [-]: NOT       R0 R0        ; R0 := not R0
- 54 [-]: SETUPVAL  R0 U2        ; U82 := 
+ 54 [-]: SETUPVAL  R0 U2        ; U82 := R2
  55 [-]: RETURN    R0 1         ; return 
 
 
@@ -682,7 +682,7 @@
  34 [-]: LOADK     R6 K7        ; R6 := 0.200000
  35 [-]: CALL      R0 7 1       ; R0(R1,R2,R3,R4,R5,R6)
  36 [-]: LOADBOOL  R0 0 0       ; R0 := false
- 37 [-]: SETUPVAL  R0 U2        ; U82 := 
+ 37 [-]: SETUPVAL  R0 U2        ; U82 := R2
  38 [-]: RETURN    R0 1         ; return 
 
 
@@ -714,7 +714,7 @@
  17 [-]: LOADK     R6 K4        ; R6 := 0.200000
  18 [-]: CALL      R0 7 1       ; R0(R1,R2,R3,R4,R5,R6)
  19 [-]: LOADBOOL  R0 1 0       ; R0 := true
- 20 [-]: SETUPVAL  R0 U1        ; U82 := 
+ 20 [-]: SETUPVAL  R0 U1        ; U82 := R1
  21 [-]: RETURN    R0 1         ; return 
 
 

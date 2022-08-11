@@ -29,7 +29,7 @@
   1 [-]: NEWTABLE  R3 0 33      ; R3 := {}
   2 [-]: SETTABLE  R3 K0 R0     ; R3["mMovie"] := R0
   3 [-]: GETGLOBAL R4 K2        ; R4 := 0x7f5022cf
-  4 [-]: GETTABLE  R4 R4 K3     ; R82 := R4[0x1a94c9cc]
+  4 [-]: GETTABLE  R4 R4 K3     ; R4 := R4[0x1a94c9cc]
   5 [-]: MOVE      R5 R1        ; R5 := R1
   6 [-]: LOADK     R6 1         ; R6 := 1.000000
   7 [-]: LOADK     R7 -7        ; R7 := -7.000000
@@ -61,7 +61,7 @@
  33 [-]: GETGLOBAL R4 K11       ; R4 := 0x2d0fad09
  34 [-]: LOADK     R5 K18       ; R5 := "Lotus.Interface.UIUtilities"
  35 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 36 [-]: SETTABLE  R3 K17 R4    ; R3["UI_UTIL"] := R4
+ 36 [-]: SETTABLE  R3 K17 R4    ; R3[0xea07b5ab] := R4
  37 [-]: SETTABLE  R3 K19 K20   ; R3["mInitialized"] := false
  38 [-]: SETTABLE  R3 K21 K22   ; R3["mWrapAroundNavigation"] := true
  39 [-]: SETTABLE  R3 K23 K24   ; R3["mInitialDepth"] := 5000.000000
@@ -93,7 +93,7 @@
  65 [-]: SETTABLE  R3 K34 K35   ; R3["mImageChangedCallback"] := nil
  66 [-]: NEWTABLE  R4 0 0       ; R4 := {}
  67 [-]: SETTABLE  R3 K36 R4    ; R3["mImages"] := R4
- 68 [-]: SETTABLE  R3 K37 R1    ; R3["mActiveClipName"] := R1
+ 68 [-]: SETTABLE  R3 K37 R1    ; R3[0x06d055f9] := R1
  69 [-]: SETTABLE  R3 K38 K35   ; R3["mCurrentImageIndex"] := nil
  70 [-]: SETTABLE  R3 K39 K40   ; R3["mImageTime"] := 5.000000
  71 [-]: SETTABLE  R3 K41 K42   ; R3["mElapsedImageTime"] := 0.000000
@@ -285,7 +285,7 @@
   7 [-]: MOVE      R7 R1        ; R7 := R1
   8 [-]: LOADK     R8 10        ; R8 := 10.000000
   9 [-]: GETTABLE  R9 R0 K3     ; R9 := R0["UTIL"]
- 10 [-]: GETTABLE  R9 R9 K4     ; R82 := R9[0x06d055f9]
+ 10 [-]: GETTABLE  R9 R9 K4     ; R9 := R9[0x06d055f9]
  11 [-]: MOVE      R10 R2       ; R10 := R2
  12 [-]: LOADK     R11 0        ; R11 := 0.000000
  13 [-]: LOADK     R12 100      ; R12 := 100.000000
@@ -320,7 +320,7 @@
   9 [-]: SETLIST   R5 2 1       ; R5[(1-1)*FPF+i] := R(5+i), 1 <= i <= 2
  10 [-]: NEWTABLE  R6 2 0       ; R6 := {}
  11 [-]: GETTABLE  R7 R0 K1     ; R7 := R0["UTIL"]
- 12 [-]: GETTABLE  R7 R7 K2     ; R82 := R7[0x06d055f9]
+ 12 [-]: GETTABLE  R7 R7 K2     ; R7 := R7[0x06d055f9]
  13 [-]: MOVE      R8 R2        ; R8 := R2
  14 [-]: LOADK     R9 100       ; R9 := 100.000000
  15 [-]: LOADK     R10 0        ; R10 := 0.000000
@@ -464,13 +464,13 @@
  50 [-]: JMP       52           ; PC := 52
  51 [-]: SETTABLE  R0 K12 K13   ; R0["mCurrentZoom"] := 1.000000
  52 [-]: GETGLOBAL R6 K15       ; R6 := 0x5bced4c4
- 53 [-]: GETTABLE  R6 R6 K16    ; R82 := R6[0xac1b386a]
+ 53 [-]: GETTABLE  R6 R6 K16    ; R6 := R6[0xac1b386a]
  54 [-]: GETTABLE  R7 R0 K17    ; R7 := R0["mOriginalMinZoom"]
  55 [-]: GETTABLE  R8 R0 K12    ; R8 := R0["mCurrentZoom"]
  56 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
  57 [-]: SETTABLE  R0 K14 R6    ; R0["mMinZoom"] := R6
  58 [-]: GETGLOBAL R6 K15       ; R6 := 0x5bced4c4
- 59 [-]: GETTABLE  R6 R6 K19    ; R82 := R6[0xb62ecfe0]
+ 59 [-]: GETTABLE  R6 R6 K19    ; R6 := R6[0xb62ecfe0]
  60 [-]: GETTABLE  R7 R0 K20    ; R7 := R0["mOriginalMaxZoom"]
  61 [-]: GETTABLE  R8 R0 K12    ; R8 := R0["mCurrentZoom"]
  62 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
@@ -556,7 +556,7 @@
  39 [-]: JMP       103          ; PC := 103
  40 [-]: GETTABLE  R3 R0 K16    ; R3 := R0["mActiveClipName"]
  41 [-]: GETTABLE  R4 R0 K17    ; R4 := R0["UTIL"]
- 42 [-]: GETTABLE  R4 R4 K18    ; R82 := R4[0x06d055f9]
+ 42 [-]: GETTABLE  R4 R4 K18    ; R4 := R4[0x06d055f9]
  43 [-]: GETTABLE  R5 R0 K16    ; R5 := R0["mActiveClipName"]
  44 [-]: GETTABLE  R6 R0 K19    ; R6 := R0["mClipName"]
  45 [-]: EQ        1 R5 R6      ; if R5 == R6 then PC := 48
@@ -638,7 +638,7 @@
 121 [-]: GETTABLE  R8 R0 K32    ; R8 := R0["mOriginalDimensions"]
 122 [-]: GETTABLE  R9 R0 K32    ; R9 := R0["mOriginalDimensions"]
 123 [-]: GETTABLE  R10 R0 K35   ; R10 := R0["LOTUS_UTIL"]
-124 [-]: GETTABLE  R10 R10 K36  ; R82 := R10[0x2be16af5]
+124 [-]: GETTABLE  R10 R10 K36  ; R10 := R10[0x2be16af5]
 125 [-]: GETTABLE  R11 R0 K2    ; R11 := R0["mImages"]
 126 [-]: GETTABLE  R12 R0 K0    ; R12 := R0["mCurrentImageIndex"]
 127 [-]: GETTABLE  R11 R11 R12  ; R11 := R11[R12]
@@ -778,7 +778,7 @@
 116 [-]: CALL      R13 5 1      ; R13(R14,R15,R16,R17)
 117 [-]: JMP       157          ; PC := 157
 118 [-]: GETTABLE  R13 R0 K33   ; R13 := R0["UTIL"]
-119 [-]: GETTABLE  R13 R13 K34  ; R82 := R13[0x06d055f9]
+119 [-]: GETTABLE  R13 R13 K34  ; R13 := R13[0x06d055f9]
 120 [-]: EQ        1 R7 K35     ; if R7 == 5.000000 then PC := 123
 121 [-]: JMP       123          ; PC := 123
 122 [-]: LOADBOOL  R14 0 1      ; R14 := false; PC := 123
@@ -798,7 +798,7 @@
 136 [-]: MOVE      R17 R9       ; R17 := R9
 137 [-]: LOADK     R18 0        ; R18 := 0.000000
 138 [-]: GETTABLE  R19 R0 K33   ; R19 := R0["UTIL"]
-139 [-]: GETTABLE  R19 R19 K34  ; R82 := R19[0x06d055f9]
+139 [-]: GETTABLE  R19 R19 K34  ; R19 := R19[0x06d055f9]
 140 [-]: LT        1 K37 R14    ; if 85.000000 < R14 then PC := 143
 141 [-]: JMP       143          ; PC := 143
 142 [-]: LOADBOOL  R20 0 1      ; R20 := false; PC := 143
@@ -831,7 +831,7 @@
 ; Max Stack Size:  8
 
   1 [-]: GETTABLE  R1 R0 K0     ; R1 := R0["UTIL"]
-  2 [-]: GETTABLE  R1 R1 K1     ; R82 := R1[0xe5e5a417]
+  2 [-]: GETTABLE  R1 R1 K1     ; R1 := R1[0xe5e5a417]
   3 [-]: GETTABLE  R2 R0 K2     ; R2 := R0["mMovie"]
   4 [-]: GETTABLE  R3 R0 K2     ; R3 := R0["mMovie"]
   5 [-]: SELF      R3 R3 K3     ; R4 := R3; R3 := R3[0x91a24e4b]
@@ -841,13 +841,13 @@
   9 [-]: LOADBOOL  R4 1 0       ; R4 := true
  10 [-]: CALL      R1 4 2       ; R1 := R1(R2,R3,R4)
  11 [-]: GETTABLE  R2 R0 K0     ; R2 := R0["UTIL"]
- 12 [-]: GETTABLE  R2 R2 K5     ; R82 := R2[0xd718f59b]
+ 12 [-]: GETTABLE  R2 R2 K5     ; R2 := R2[0xd718f59b]
  13 [-]: GETTABLE  R3 R0 K2     ; R3 := R0["mMovie"]
  14 [-]: LOADK     R4 200       ; R4 := 200.000000
  15 [-]: LOADBOOL  R5 1 0       ; R5 := true
  16 [-]: CALL      R2 4 2       ; R2 := R2(R3,R4,R5)
  17 [-]: GETTABLE  R3 R0 K0     ; R3 := R0["UTIL"]
- 18 [-]: GETTABLE  R3 R3 K6     ; R82 := R3[0x0db7934d]
+ 18 [-]: GETTABLE  R3 R3 K6     ; R3 := R3[0x0db7934d]
  19 [-]: GETTABLE  R4 R0 K2     ; R4 := R0["mMovie"]
  20 [-]: LOADK     R5 100       ; R5 := 100.000000
  21 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
@@ -883,19 +883,19 @@
 
   1 [-]: NEWTABLE  R1 0 3       ; R1 := {}
   2 [-]: GETTABLE  R2 R0 K2     ; R2 := R0["STYLE_UTIL"]
-  3 [-]: GETTABLE  R2 R2 K3     ; R82 := R2[0x5d10207d]
+  3 [-]: GETTABLE  R2 R2 K3     ; R2 := R2[0x5d10207d]
   4 [-]: LOADK     R3 9         ; R3 := 9.000000
   5 [-]: LOADBOOL  R4 1 0       ; R4 := true
   6 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
   7 [-]: SETTABLE  R1 K1 R2     ; R1["FloatingContentColor"] := R2
   8 [-]: GETTABLE  R2 R0 K2     ; R2 := R0["STYLE_UTIL"]
-  9 [-]: GETTABLE  R2 R2 K3     ; R82 := R2[0x5d10207d]
+  9 [-]: GETTABLE  R2 R2 K3     ; R2 := R2[0x5d10207d]
  10 [-]: LOADK     R3 10        ; R3 := 10.000000
  11 [-]: LOADBOOL  R4 1 0       ; R4 := true
  12 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
  13 [-]: SETTABLE  R1 K5 R2     ; R1["FloatingContentHighlightColor"] := R2
  14 [-]: GETTABLE  R2 R0 K2     ; R2 := R0["STYLE_UTIL"]
- 15 [-]: GETTABLE  R2 R2 K3     ; R82 := R2[0x5d10207d]
+ 15 [-]: GETTABLE  R2 R2 K3     ; R2 := R2[0x5d10207d]
  16 [-]: LOADK     R3 2         ; R3 := 2.000000
  17 [-]: LOADBOOL  R4 1 0       ; R4 := true
  18 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
@@ -1018,7 +1018,7 @@
 ; Max Stack Size:  5
 
   1 [-]: GETTABLE  R1 R0 K0     ; R1 := R0["LOTUS_UTIL"]
-  2 [-]: GETTABLE  R1 R1 K1     ; R82 := R1[0xdd3cfb64]
+  2 [-]: GETTABLE  R1 R1 K1     ; R1 := R1[0xdd3cfb64]
   3 [-]: GETTABLE  R2 R0 K2     ; R2 := R0["mMovie"]
   4 [-]: GETTABLE  R3 R0 K3     ; R3 := R0["mMainClipName"]
   5 [-]: LOADK     R4 K4        ; R4 := ".Bg"
@@ -1109,7 +1109,7 @@
  47 [-]: CALL      R2 6 1       ; R2(R3,R4,R5,R6,R7)
  48 [-]: SELF      R2 R0 K20    ; R3 := R0; R2 := R0[0xde585f2a]
  49 [-]: GETGLOBAL R4 K21       ; R4 := 0x34291f5c
- 50 [-]: GETTABLE  R4 R4 K22    ; R82 := R4[0x1467d5f4]
+ 50 [-]: GETTABLE  R4 R4 K22    ; R4 := R4[0x1467d5f4]
  51 [-]: CALL      R4 1 0       ; R4,... := R4()
  52 [-]: CALL      R2 0 1       ; R2(R3,...)
  53 [-]: SELF      R2 R0 K23    ; R3 := R0; R2 := R0[0xb569d9e2]
@@ -1285,7 +1285,7 @@
  15 [-]: TEST      R4 0         ; if not R4 then PC := 27
  16 [-]: JMP       27           ; PC := 27
  17 [-]: GETTABLE  R4 R0 K7     ; R4 := R0["UTIL"]
- 18 [-]: GETTABLE  R4 R4 K8     ; R82 := R4[0x38a41ce7]
+ 18 [-]: GETTABLE  R4 R4 K8     ; R4 := R4[0x38a41ce7]
  19 [-]: MOVE      R5 R3        ; R5 := R3
  20 [-]: MOVE      R6 R1        ; R6 := R1
  21 [-]: LOADK     R7 1         ; R7 := 1.000000
@@ -1308,7 +1308,7 @@
  38 [-]: TEST      R2 1         ; if R2 then PC := 79
  39 [-]: JMP       79           ; PC := 79
  40 [-]: GETGLOBAL R4 K12       ; R4 := 0x34291f5c
- 41 [-]: GETTABLE  R4 R4 K13    ; R82 := R4[0x1467d5f4]
+ 41 [-]: GETTABLE  R4 R4 K13    ; R4 := R4[0x1467d5f4]
  42 [-]: CALL      R4 1 2       ; R4 := R4()
  43 [-]: TEST      R4 0         ; if not R4 then PC := 79
  44 [-]: JMP       79           ; PC := 79
@@ -1316,12 +1316,12 @@
  46 [-]: EQ        0 R4 R3      ; if R4 ~= R3 then PC := 79
  47 [-]: JMP       79           ; PC := 79
  48 [-]: GETTABLE  R4 R0 K7     ; R4 := R0["UTIL"]
- 49 [-]: GETTABLE  R4 R4 K14    ; R82 := R4[0xf76783e5]
+ 49 [-]: GETTABLE  R4 R4 K14    ; R4 := R4[0xf76783e5]
  50 [-]: GETTABLE  R5 R0 K15    ; R5 := R0["mMovie"]
  51 [-]: GETTABLE  R6 R0 K16    ; R6 := R0["mControlsClipName"]
  52 [-]: LOADK     R7 K17       ; R7 := "."
  53 [-]: GETTABLE  R8 R0 K7     ; R8 := R0["UTIL"]
- 54 [-]: GETTABLE  R8 R8 K18    ; R82 := R8[0x06d055f9]
+ 54 [-]: GETTABLE  R8 R8 K18    ; R8 := R8[0x06d055f9]
  55 [-]: LT        1 K19 R1     ; if 0.000000 < R1 then PC := 58
  56 [-]: JMP       58           ; PC := 58
  57 [-]: LOADBOOL  R9 0 1       ; R9 := false; PC := 58
@@ -1332,7 +1332,7 @@
  62 [-]: LOADK     R9 K22       ; R9 := "Callout"
  63 [-]: CONCAT    R6 R6 R9     ; R6 := R6 .. R7 .. R8 .. R9
  64 [-]: GETTABLE  R7 R0 K7     ; R7 := R0["UTIL"]
- 65 [-]: GETTABLE  R7 R7 K18    ; R82 := R7[0x06d055f9]
+ 65 [-]: GETTABLE  R7 R7 K18    ; R7 := R7[0x06d055f9]
  66 [-]: LT        1 K19 R1     ; if 0.000000 < R1 then PC := 69
  67 [-]: JMP       69           ; PC := 69
  68 [-]: LOADBOOL  R8 0 1       ; R8 := false; PC := 69
@@ -1448,7 +1448,7 @@
   4 [-]: MOVE      R4 R1        ; R4 := R1
   5 [-]: CALL      R2 3 1       ; R2(R3,R4)
   6 [-]: GETGLOBAL R2 K2        ; R2 := 0x34291f5c
-  7 [-]: GETTABLE  R2 R2 K3     ; R82 := R2[0x1467d5f4]
+  7 [-]: GETTABLE  R2 R2 K3     ; R2 := R2[0x1467d5f4]
   8 [-]: CALL      R2 1 2       ; R2 := R2()
   9 [-]: TEST      R2 0         ; if not R2 then PC := 26
  10 [-]: JMP       26           ; PC := 26
@@ -1456,7 +1456,7 @@
  12 [-]: EQ        0 R2 R1      ; if R2 ~= R1 then PC := 26
  13 [-]: JMP       26           ; PC := 26
  14 [-]: GETTABLE  R2 R0 K4     ; R2 := R0["UTIL"]
- 15 [-]: GETTABLE  R2 R2 K5     ; R82 := R2[0xf76783e5]
+ 15 [-]: GETTABLE  R2 R2 K5     ; R2 := R2[0xf76783e5]
  16 [-]: GETTABLE  R3 R0 K6     ; R3 := R0["mMovie"]
  17 [-]: GETTABLE  R4 R0 K7     ; R4 := R0["mControlsClipName"]
  18 [-]: LOADK     R5 K8        ; R5 := ".PlayBtnCallout"
@@ -1763,14 +1763,14 @@
   1 [-]: SELF      R1 R0 K0     ; R2 := R0; R1 := R0[0x1baafed5]
   2 [-]: CALL      R1 2 2       ; R1 := R1(R2)
   3 [-]: GETTABLE  R2 R0 K1     ; R2 := R0["UTIL"]
-  4 [-]: GETTABLE  R2 R2 K2     ; R82 := R2[0x9b1b496f]
+  4 [-]: GETTABLE  R2 R2 K2     ; R2 := R2[0x9b1b496f]
   5 [-]: MOVE      R3 R1        ; R3 := R1
   6 [-]: LOADK     R4 K3        ; R4 := "Update"
   7 [-]: CLOSURE   R5 0         ; R5 := closure(Function #1.29.1)
   8 [-]: MOVE      R0 R0        ; R0 := R0
   9 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
  10 [-]: GETGLOBAL R2 K4        ; R2 := 0x7f5022cf
- 11 [-]: GETTABLE  R2 R2 K5     ; R82 := R2[0x66edf04f]
+ 11 [-]: GETTABLE  R2 R2 K5     ; R2 := R2[0x66edf04f]
  12 [-]: GETTABLE  R3 R0 K6     ; R3 := R0["mControlsClipName"]
  13 [-]: LOADK     R4 K7        ; R4 := "%."
  14 [-]: LOADK     R5 K8        ; R5 := ""
@@ -1918,91 +1918,91 @@
 156 [-]: CONCAT    R6 R6 R7     ; R6 := R6 .. R7
 157 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
 158 [-]: GETTABLE  R3 R0 K1     ; R3 := R0["UTIL"]
-159 [-]: GETTABLE  R3 R3 K2     ; R82 := R3[0x9b1b496f]
+159 [-]: GETTABLE  R3 R3 K2     ; R3 := R3[0x9b1b496f]
 160 [-]: MOVE      R4 R1        ; R4 := R1
 161 [-]: LOADK     R5 K25       ; R5 := "onViewportSizeChanged"
 162 [-]: CLOSURE   R6 8         ; R6 := closure(Function #1.29.9)
 163 [-]: MOVE      R0 R0        ; R0 := R0
 164 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
 165 [-]: GETTABLE  R3 R0 K1     ; R3 := R0["UTIL"]
-166 [-]: GETTABLE  R3 R3 K2     ; R82 := R3[0x9b1b496f]
+166 [-]: GETTABLE  R3 R3 K2     ; R3 := R3[0x9b1b496f]
 167 [-]: MOVE      R4 R1        ; R4 := R1
 168 [-]: LOADK     R5 K26       ; R5 := "onKeyDown_MENU_GENERIC1"
 169 [-]: CLOSURE   R6 9         ; R6 := closure(Function #1.29.10)
 170 [-]: MOVE      R0 R0        ; R0 := R0
 171 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
 172 [-]: GETTABLE  R3 R0 K1     ; R3 := R0["UTIL"]
-173 [-]: GETTABLE  R3 R3 K2     ; R82 := R3[0x9b1b496f]
+173 [-]: GETTABLE  R3 R3 K2     ; R3 := R3[0x9b1b496f]
 174 [-]: MOVE      R4 R1        ; R4 := R1
 175 [-]: LOADK     R5 K27       ; R5 := "onKeyUp_MENU_GENERIC1"
 176 [-]: CLOSURE   R6 10        ; R6 := closure(Function #1.29.11)
 177 [-]: MOVE      R0 R0        ; R0 := R0
 178 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
 179 [-]: GETTABLE  R3 R0 K1     ; R3 := R0["UTIL"]
-180 [-]: GETTABLE  R3 R3 K2     ; R82 := R3[0x9b1b496f]
+180 [-]: GETTABLE  R3 R3 K2     ; R3 := R3[0x9b1b496f]
 181 [-]: MOVE      R4 R1        ; R4 := R1
 182 [-]: LOADK     R5 K28       ; R5 := "onKeyUp_MENU_LTRIGGER2"
 183 [-]: CLOSURE   R6 11        ; R6 := closure(Function #1.29.12)
 184 [-]: MOVE      R0 R0        ; R0 := R0
 185 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
 186 [-]: GETTABLE  R3 R0 K1     ; R3 := R0["UTIL"]
-187 [-]: GETTABLE  R3 R3 K2     ; R82 := R3[0x9b1b496f]
+187 [-]: GETTABLE  R3 R3 K2     ; R3 := R3[0x9b1b496f]
 188 [-]: MOVE      R4 R1        ; R4 := R1
 189 [-]: LOADK     R5 K29       ; R5 := "onKeyUp_MENU_RTRIGGER2"
 190 [-]: CLOSURE   R6 12        ; R6 := closure(Function #1.29.13)
 191 [-]: MOVE      R0 R0        ; R0 := R0
 192 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
 193 [-]: GETTABLE  R3 R0 K1     ; R3 := R0["UTIL"]
-194 [-]: GETTABLE  R3 R3 K2     ; R82 := R3[0x9b1b496f]
+194 [-]: GETTABLE  R3 R3 K2     ; R3 := R3[0x9b1b496f]
 195 [-]: MOVE      R4 R1        ; R4 := R1
 196 [-]: LOADK     R5 K30       ; R5 := "onKeyDown_MENU_MOUSE_Z"
 197 [-]: CLOSURE   R6 13        ; R6 := closure(Function #1.29.14)
 198 [-]: MOVE      R0 R0        ; R0 := R0
 199 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
 200 [-]: GETTABLE  R3 R0 K1     ; R3 := R0["UTIL"]
-201 [-]: GETTABLE  R3 R3 K2     ; R82 := R3[0x9b1b496f]
+201 [-]: GETTABLE  R3 R3 K2     ; R3 := R3[0x9b1b496f]
 202 [-]: MOVE      R4 R1        ; R4 := R1
 203 [-]: LOADK     R5 K31       ; R5 := "onKeyDown_MENU_X"
 204 [-]: CLOSURE   R6 14        ; R6 := closure(Function #1.29.15)
 205 [-]: MOVE      R0 R0        ; R0 := R0
 206 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
 207 [-]: GETTABLE  R3 R0 K1     ; R3 := R0["UTIL"]
-208 [-]: GETTABLE  R3 R3 K2     ; R82 := R3[0x9b1b496f]
+208 [-]: GETTABLE  R3 R3 K2     ; R3 := R3[0x9b1b496f]
 209 [-]: MOVE      R4 R1        ; R4 := R1
 210 [-]: LOADK     R5 K32       ; R5 := "onKeyUp_MENU_X"
 211 [-]: CLOSURE   R6 15        ; R6 := closure(Function #1.29.16)
 212 [-]: MOVE      R0 R0        ; R0 := R0
 213 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
 214 [-]: GETTABLE  R3 R0 K1     ; R3 := R0["UTIL"]
-215 [-]: GETTABLE  R3 R3 K2     ; R82 := R3[0x9b1b496f]
+215 [-]: GETTABLE  R3 R3 K2     ; R3 := R3[0x9b1b496f]
 216 [-]: MOVE      R4 R1        ; R4 := R1
 217 [-]: LOADK     R5 K33       ; R5 := "onKeyDown_MENU_Y"
 218 [-]: CLOSURE   R6 16        ; R6 := closure(Function #1.29.17)
 219 [-]: MOVE      R0 R0        ; R0 := R0
 220 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
 221 [-]: GETTABLE  R3 R0 K1     ; R3 := R0["UTIL"]
-222 [-]: GETTABLE  R3 R3 K2     ; R82 := R3[0x9b1b496f]
+222 [-]: GETTABLE  R3 R3 K2     ; R3 := R3[0x9b1b496f]
 223 [-]: MOVE      R4 R1        ; R4 := R1
 224 [-]: LOADK     R5 K34       ; R5 := "onKeyUp_MENU_Y"
 225 [-]: CLOSURE   R6 17        ; R6 := closure(Function #1.29.18)
 226 [-]: MOVE      R0 R0        ; R0 := R0
 227 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
 228 [-]: GETTABLE  R3 R0 K1     ; R3 := R0["UTIL"]
-229 [-]: GETTABLE  R3 R3 K2     ; R82 := R3[0x9b1b496f]
+229 [-]: GETTABLE  R3 R3 K2     ; R3 := R3[0x9b1b496f]
 230 [-]: MOVE      R4 R1        ; R4 := R1
 231 [-]: LOADK     R5 K35       ; R5 := "onKeyDown_MENU_RIGHT_Y"
 232 [-]: CLOSURE   R6 18        ; R6 := closure(Function #1.29.19)
 233 [-]: MOVE      R0 R0        ; R0 := R0
 234 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
 235 [-]: GETTABLE  R3 R0 K1     ; R3 := R0["UTIL"]
-236 [-]: GETTABLE  R3 R3 K2     ; R82 := R3[0x9b1b496f]
+236 [-]: GETTABLE  R3 R3 K2     ; R3 := R3[0x9b1b496f]
 237 [-]: MOVE      R4 R1        ; R4 := R1
 238 [-]: LOADK     R5 K36       ; R5 := "onKeyUp_MENU_RIGHT_Y"
 239 [-]: CLOSURE   R6 19        ; R6 := closure(Function #1.29.20)
 240 [-]: MOVE      R0 R0        ; R0 := R0
 241 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
 242 [-]: GETTABLE  R3 R0 K1     ; R3 := R0["UTIL"]
-243 [-]: GETTABLE  R3 R3 K2     ; R82 := R3[0x9b1b496f]
+243 [-]: GETTABLE  R3 R3 K2     ; R3 := R3[0x9b1b496f]
 244 [-]: MOVE      R4 R1        ; R4 := R1
 245 [-]: LOADK     R5 K37       ; R5 := "OnGamepadTransition"
 246 [-]: CLOSURE   R6 20        ; R6 := closure(Function #1.29.21)
@@ -2169,7 +2169,7 @@
 ; Max Stack Size:  2
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x34291f5c
-  2 [-]: GETTABLE  R0 R0 K1     ; R82 := R0[0x1467d5f4]
+  2 [-]: GETTABLE  R0 R0 K1     ; R0 := R0[0x1467d5f4]
   3 [-]: CALL      R0 1 2       ; R0 := R0()
   4 [-]: TEST      R0 0         ; if not R0 then PC := 12
   5 [-]: JMP       12           ; PC := 12
@@ -2192,7 +2192,7 @@
 ; Max Stack Size:  2
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x34291f5c
-  2 [-]: GETTABLE  R0 R0 K1     ; R82 := R0[0x1467d5f4]
+  2 [-]: GETTABLE  R0 R0 K1     ; R0 := R0[0x1467d5f4]
   3 [-]: CALL      R0 1 2       ; R0 := R0()
   4 [-]: TEST      R0 0         ; if not R0 then PC := 17
   5 [-]: JMP       17           ; PC := 17
@@ -2222,7 +2222,7 @@
 ; Max Stack Size:  2
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x34291f5c
-  2 [-]: GETTABLE  R0 R0 K1     ; R82 := R0[0x1467d5f4]
+  2 [-]: GETTABLE  R0 R0 K1     ; R0 := R0[0x1467d5f4]
   3 [-]: CALL      R0 1 2       ; R0 := R0()
   4 [-]: TEST      R0 0         ; if not R0 then PC := 13
   5 [-]: JMP       13           ; PC := 13
@@ -2246,7 +2246,7 @@
 ; Max Stack Size:  2
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x34291f5c
-  2 [-]: GETTABLE  R0 R0 K1     ; R82 := R0[0x1467d5f4]
+  2 [-]: GETTABLE  R0 R0 K1     ; R0 := R0[0x1467d5f4]
   3 [-]: CALL      R0 1 2       ; R0 := R0()
   4 [-]: TEST      R0 0         ; if not R0 then PC := 13
   5 [-]: JMP       13           ; PC := 13
@@ -2275,7 +2275,7 @@
   4 [-]: CALL      R2 3 1       ; R2(R3,R4)
   5 [-]: GETUPVAL  R2 U0        ; R2 := U0
   6 [-]: GETTABLE  R2 R2 K1     ; R2 := R2["UTIL"]
-  7 [-]: GETTABLE  R2 R2 K2     ; R82 := R2[0x659d451f]
+  7 [-]: GETTABLE  R2 R2 K2     ; R2 := R2[0x659d451f]
   8 [-]: GETGLOBAL R3 K3        ; R3 := 0x0032441c
   9 [-]: GETTABLE  R3 R3 K4     ; R3 := R3["UISound_Scroll"]
  10 [-]: CALL      R2 2 1       ; R2(R3)

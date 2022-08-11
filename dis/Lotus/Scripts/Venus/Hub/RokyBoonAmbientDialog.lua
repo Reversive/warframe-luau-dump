@@ -56,7 +56,7 @@
  29 [-]: TEST      R7 1         ; if R7 then PC := 38
  30 [-]: JMP       38           ; PC := 38
  31 [-]: GETGLOBAL R7 K10       ; R7 := 0x33bdd652
- 32 [-]: GETTABLE  R7 R7 K11    ; R82 := R7[0x23d5322f]
+ 32 [-]: GETTABLE  R7 R7 K11    ; R7 := R7[0x23d5322f]
  33 [-]: MOVE      R8 R0        ; R8 := R0
  34 [-]: MOVE      R9 R6        ; R9 := R6
  35 [-]: CALL      R7 3 1       ; R7(R8,R9)
@@ -81,7 +81,7 @@
  54 [-]: GETGLOBAL R8 K20       ; R8 := 0xbae80e88
  55 [-]: SETGLOBAL R8 K19       ; (0xdfda639e) := R8
  56 [-]: GETUPVAL  R8 U0        ; R8 := U0
- 57 [-]: GETTABLE  R8 R8 K21    ; R82 := R8[0xc9890f54]
+ 57 [-]: GETTABLE  R8 R8 K21    ; R8 := R8[0xc9890f54]
  58 [-]: GETGLOBAL R9 K22       ; R9 := 0xe91d7466
  59 [-]: GETGLOBAL R10 K19      ; R10 := 0xdfda639e
  60 [-]: CALL      R8 3 1       ; R8(R9,R10)

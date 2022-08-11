@@ -302,7 +302,7 @@
 100 [-]: CALL      R13 1 1      ; R13()
 101 [-]: RETURN    R0 1         ; return 
 102 [-]: GETGLOBAL R13 K22      ; R13 := 0x5bced4c4
-103 [-]: GETTABLE  R13 R13 K23  ; R82 := R13[0x3630e649]
+103 [-]: GETTABLE  R13 R13 K23  ; R13 := R13[0x3630e649]
 104 [-]: CALL      R13 1 2      ; R13 := R13()
 105 [-]: LE        0 K24 R13    ; if 0.100000 > R13 then PC := 120
 106 [-]: JMP       120          ; PC := 120
@@ -857,7 +857,7 @@
 190 [-]: CALL      R21 2 1      ; R21(R22)
 191 [-]: FORLOOP   R17 188      ; R17 += R19; if R17 <= R18 then begin PC := 188; R20 := R17 end
 192 [-]: GETGLOBAL R21 K15      ; R21 := _T
-193 [-]: GETTABLE  R21 R21 K42  ; R82 := R21[0x1a41a3c1]
+193 [-]: GETTABLE  R21 R21 K42  ; R21 := R21[0x1a41a3c1]
 194 [-]: LOADK     R22 K43      ; R22 := "MDProgressBar"
 195 [-]: CALL      R21 2 1      ; R21(R22)
 196 [-]: JMP       241          ; PC := 241

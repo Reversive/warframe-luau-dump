@@ -46,7 +46,7 @@
  20 [-]: JMP       24           ; PC := 24
  21 [-]: SELF      R4 R3 K4     ; R5 := R3; R4 := R3[0x02bb4ff1]
  22 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 23 [-]: SETUPVAL  R4 U0        ; U82 := 
+ 23 [-]: SETUPVAL  R4 U0        ; U82 := R0
  24 [-]: GETGLOBAL R4 K0        ; R4 := 0x7b998233
  25 [-]: GETUPVAL  R5 U0        ; R5 := U0
  26 [-]: CALL      R4 2 2       ; R4 := R4(R5)

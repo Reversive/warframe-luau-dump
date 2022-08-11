@@ -64,9 +64,9 @@
   7 [-]: CALL      R0 2 2       ; R0 := R0(R1)
   8 [-]: GETTABLE  R0 R0 K4     ; R0 := R0["postProcess"]
   9 [-]: GETGLOBAL R1 K6        ; R1 := 0x5bced4c4
- 10 [-]: GETTABLE  R1 R1 K7     ; R82 := R1[0xe4a5b3ca]
+ 10 [-]: GETTABLE  R1 R1 K7     ; R1 := R1[0xe4a5b3ca]
  11 [-]: GETGLOBAL R2 K6        ; R2 := 0x5bced4c4
- 12 [-]: GETTABLE  R2 R2 K8     ; R82 := R2[0x3eda26fc]
+ 12 [-]: GETTABLE  R2 R2 K8     ; R2 := R2[0x3eda26fc]
  13 [-]: GETGLOBAL R3 K9        ; R3 := 0x107bf6da
  14 [-]: GETGLOBAL R4 K10       ; R4 := 0x55156ff7
  15 [-]: CALL      R4 1 2       ; R4 := R4()

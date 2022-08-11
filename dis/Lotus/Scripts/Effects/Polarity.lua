@@ -1203,7 +1203,7 @@
  91 [-]: JMP       87           ; PC := 87
  92 [-]: JMP       110          ; PC := 110
  93 [-]: GETGLOBAL R36 K13      ; R36 := 0x6c97a788
- 94 [-]: GETTABLE  R36 R36 K14  ; R82 := R36[0xef4fc55c]
+ 94 [-]: GETTABLE  R36 R36 K14  ; R36 := R36[0xef4fc55c]
  95 [-]: MOVE      R37 R12      ; R37 := R12
  96 [-]: MOVE      R38 R5       ; R38 := R5
  97 [-]: LOADBOOL  R39 1 0      ; R39 := true
@@ -1426,7 +1426,7 @@
 191 [-]: CALL      R26 4 1      ; R26(R27,R28,R29)
 192 [-]: FORLOOP   R22 156      ; R22 += R24; if R22 <= R23 then begin PC := 156; R25 := R22 end
 193 [-]: GETGLOBAL R26 K4       ; R26 := 0x6c97a788
-194 [-]: GETTABLE  R26 R26 K34  ; R82 := R26[0xef4fc55c]
+194 [-]: GETTABLE  R26 R26 K34  ; R26 := R26[0xef4fc55c]
 195 [-]: MOVE      R27 R15      ; R27 := R15
 196 [-]: MOVE      R28 R21      ; R28 := R21
 197 [-]: LOADBOOL  R29 0 0      ; R29 := false
@@ -1465,7 +1465,7 @@
 230 [-]: LOADBOOL  R36 0 0      ; R36 := false
 231 [-]: CALL      R32 5 1      ; R32(R33,R34,R35,R36)
 232 [-]: GETGLOBAL R32 K4       ; R32 := 0x6c97a788
-233 [-]: GETTABLE  R32 R32 K34  ; R82 := R32[0xef4fc55c]
+233 [-]: GETTABLE  R32 R32 K34  ; R32 := R32[0xef4fc55c]
 234 [-]: MOVE      R33 R31      ; R33 := R31
 235 [-]: MOVE      R34 R21      ; R34 := R21
 236 [-]: LOADBOOL  R35 1 0      ; R35 := true

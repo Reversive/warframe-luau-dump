@@ -295,7 +295,7 @@
  44 [-]: MUL       R5 R5 K13    ; R5 := R5 * 3.330000
  45 [-]: ADD       R4 R4 R5     ; R4 := R4 + R5
  46 [-]: GETGLOBAL R5 K14       ; R5 := 0x5bced4c4
- 47 [-]: GETTABLE  R5 R5 K15    ; R82 := R5[0xb62ecfe0]
+ 47 [-]: GETTABLE  R5 R5 K15    ; R5 := R5[0xb62ecfe0]
  48 [-]: LOADK     R6 0         ; R6 := 0.000000
  49 [-]: MOVE      R7 R3        ; R7 := R3
  50 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
@@ -415,7 +415,7 @@
 164 [-]: MOVE      R13 R4       ; R13 := R4
 165 [-]: CALL      R11 3 1      ; R11(R12,R13)
 166 [-]: GETGLOBAL R11 K14      ; R11 := 0x5bced4c4
-167 [-]: GETTABLE  R11 R11 K28  ; R82 := R11[0xac1b386a]
+167 [-]: GETTABLE  R11 R11 K28  ; R11 := R11[0xac1b386a]
 168 [-]: LOADK     R12 1        ; R12 := 1.000000
 169 [-]: GETGLOBAL R13 K12      ; R13 := 0x67652851
 170 [-]: CALL      R13 1 2      ; R13 := R13()

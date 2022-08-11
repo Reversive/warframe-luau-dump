@@ -73,7 +73,7 @@
   8 [-]: TEST      R0 0         ; if not R0 then PC := 22
   9 [-]: JMP       22           ; PC := 22
  10 [-]: GETGLOBAL R0 K3        ; R0 := 0x7f5022cf
- 11 [-]: GETTABLE  R0 R0 K4     ; R82 := R0[0xa5c556b9]
+ 11 [-]: GETTABLE  R0 R0 K4     ; R0 := R0[0xa5c556b9]
  12 [-]: GETGLOBAL R1 K5        ; R1 := 0x64fb1586
  13 [-]: GETGLOBAL R2 K0        ; R2 := 0x0032441c
  14 [-]: GETTABLE  R2 R2 K1     ; R2 := R2["CachedGoalInfo"]

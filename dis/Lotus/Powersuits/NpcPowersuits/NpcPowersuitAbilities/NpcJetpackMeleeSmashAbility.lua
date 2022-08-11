@@ -35,7 +35,7 @@
   6 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
   7 [-]: GETGLOBAL R5 K2        ; R5 := 0x00046924
   8 [-]: GETGLOBAL R6 K3        ; R6 := 0x5bced4c4
-  9 [-]: GETTABLE  R6 R6 K4     ; R82 := R6[0x3630e649]
+  9 [-]: GETTABLE  R6 R6 K4     ; R6 := R6[0x3630e649]
  10 [-]: CALL      R6 1 2       ; R6 := R6()
  11 [-]: MUL       R6 R6 K5     ; R6 := R6 * 360.000000
  12 [-]: LOADK     R7 0         ; R7 := 0.000000
@@ -166,7 +166,7 @@
  73 [-]: RETURN    R9 2         ; return R9
  74 [-]: SUB       R9 R5 R6     ; R9 := R5 - R6
  75 [-]: GETGLOBAL R10 K20      ; R10 := 0x5bced4c4
- 76 [-]: GETTABLE  R10 R10 K21  ; R82 := R10[0xe4a5b3ca]
+ 76 [-]: GETTABLE  R10 R10 K21  ; R10 := R10[0xe4a5b3ca]
  77 [-]: GETTABLE  R11 R9 K22   ; R11 := R9["y"]
  78 [-]: CALL      R10 2 2      ; R10 := R10(R11)
  79 [-]: LT        0 K23 R10    ; if 1.500000 >= R10 then PC := 83

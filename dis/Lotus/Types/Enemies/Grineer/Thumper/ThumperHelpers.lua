@@ -422,7 +422,7 @@
   6 [-]: SETLIST   R3 4 1       ; R3[(1-1)*FPF+i] := R(3+i), 1 <= i <= 4
   7 [-]: LOADNIL   R4 R4        ; R4 := nil
   8 [-]: GETGLOBAL R5 K4        ; R5 := 0x34291f5c
-  9 [-]: GETTABLE  R5 R5 K5     ; R82 := R5[0x5cb2adf8]
+  9 [-]: GETTABLE  R5 R5 K5     ; R5 := R5[0x5cb2adf8]
  10 [-]: CALL      R5 1 2       ; R5 := R5()
  11 [-]: SETTABLE  R5 K6 K7     ; R5["baseProcChance"] := 1.000000
  12 [-]: GETGLOBAL R6 K9        ; R6 := 0xe73e5ea4

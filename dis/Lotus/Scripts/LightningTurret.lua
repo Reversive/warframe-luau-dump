@@ -183,7 +183,7 @@
  36 [-]: JMP       38           ; PC := 38
  37 [-]: JMP       44           ; PC := 44
  38 [-]: GETGLOBAL R8 K7        ; R8 := 0x33bdd652
- 39 [-]: GETTABLE  R8 R8 K8     ; R82 := R8[0x23d5322f]
+ 39 [-]: GETTABLE  R8 R8 K8     ; R8 := R8[0x23d5322f]
  40 [-]: GETGLOBAL R9 K1        ; R9 := _T
  41 [-]: GETTABLE  R9 R9 K2     ; R9 := R9["lightningTurrets"]
  42 [-]: MOVE      R10 R2       ; R10 := R2
@@ -273,7 +273,7 @@
  28 [-]: CALL      R4 2 1       ; R4(R5)
  29 [-]: JMP       43           ; PC := 43
  30 [-]: GETGLOBAL R4 K7        ; R4 := 0x33bdd652
- 31 [-]: GETTABLE  R4 R4 K8     ; R82 := R4[0x23d5322f]
+ 31 [-]: GETTABLE  R4 R4 K8     ; R4 := R4[0x23d5322f]
  32 [-]: GETGLOBAL R5 K1        ; R5 := _T
  33 [-]: GETTABLE  R5 R5 K2     ; R5 := R5["lightningTurrets"]
  34 [-]: MOVE      R6 R2        ; R6 := R2

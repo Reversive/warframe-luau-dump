@@ -506,7 +506,7 @@
   7 [-]: JMP       35           ; PC := 35
   8 [-]: GETGLOBAL R2 K4        ; R2 := 0x00046924
   9 [-]: GETGLOBAL R3 K5        ; R3 := 0x5bced4c4
- 10 [-]: GETTABLE  R3 R3 K6     ; R82 := R3[0x3630e649]
+ 10 [-]: GETTABLE  R3 R3 K6     ; R3 := R3[0x3630e649]
  11 [-]: GETGLOBAL R4 K2        ; R4 := 0x67089366
  12 [-]: GETTABLE  R4 R4 K7     ; R4 := R4["pitch"]
  13 [-]: UNM       R4 R4        ; R4 := ^ R4
@@ -514,7 +514,7 @@
  15 [-]: GETTABLE  R5 R5 K7     ; R5 := R5["pitch"]
  16 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
  17 [-]: GETGLOBAL R4 K5        ; R4 := 0x5bced4c4
- 18 [-]: GETTABLE  R4 R4 K6     ; R82 := R4[0x3630e649]
+ 18 [-]: GETTABLE  R4 R4 K6     ; R4 := R4[0x3630e649]
  19 [-]: GETGLOBAL R5 K2        ; R5 := 0x67089366
  20 [-]: GETTABLE  R5 R5 K8     ; R5 := R5["heading"]
  21 [-]: UNM       R5 R5        ; R5 := ^ R5
@@ -522,7 +522,7 @@
  23 [-]: GETTABLE  R6 R6 K8     ; R6 := R6["heading"]
  24 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
  25 [-]: GETGLOBAL R5 K5        ; R5 := 0x5bced4c4
- 26 [-]: GETTABLE  R5 R5 K6     ; R82 := R5[0x3630e649]
+ 26 [-]: GETTABLE  R5 R5 K6     ; R5 := R5[0x3630e649]
  27 [-]: GETGLOBAL R6 K2        ; R6 := 0x67089366
  28 [-]: GETTABLE  R6 R6 K9     ; R6 := R6["bank"]
  29 [-]: UNM       R6 R6        ; R6 := ^ R6

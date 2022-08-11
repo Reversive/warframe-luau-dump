@@ -95,7 +95,7 @@
 ; Max Stack Size:  2
 
   1 [-]: LOADBOOL  R0 1 0       ; R0 := true
-  2 [-]: SETUPVAL  R0 U0        ; U82 := 
+  2 [-]: SETUPVAL  R0 U0        ; U82 := R0
   3 [-]: RETURN    R0 1         ; return 
 
 
@@ -111,13 +111,13 @@
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x2d0fad09
   2 [-]: LOADK     R1 K1        ; R1 := "Lotus.Interface.Components.CategorizedGrid"
   3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: GETTABLE  R1 R0 K2     ; R82 := R1[0x67d7b715]
+  4 [-]: GETTABLE  R1 R0 K2     ; R1 := R0[0x67d7b715]
   5 [-]: GETGLOBAL R2 K3        ; R2 := 0xae91e43b
   6 [-]: LOADK     R3 K4        ; R3 := "RewardContainer.RewardItem"
   7 [-]: LOADK     R4 1         ; R4 := 1.000000
   8 [-]: LOADK     R5 1         ; R5 := 1.000000
   9 [-]: CALL      R1 5 2       ; R1 := R1(R2,R3,R4,R5)
- 10 [-]: SETUPVAL  R1 U0        ; U82 := 
+ 10 [-]: SETUPVAL  R1 U0        ; U82 := R0
  11 [-]: GETUPVAL  R1 U0        ; R1 := U0
  12 [-]: SETTABLE  R1 K5 K6     ; R1["mSelectedScale"] := 100.000000
  13 [-]: GETUPVAL  R1 U0        ; R1 := U0
@@ -167,7 +167,7 @@
   3 [-]: JMP       5            ; PC := 5
   4 [-]: RETURN    R0 1         ; return 
   5 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  6 [-]: GETTABLE  R1 R1 K2     ; R82 := R1[0xb496de90]
+  6 [-]: GETTABLE  R1 R1 K2     ; R1 := R1[0xb496de90]
   7 [-]: GETGLOBAL R2 K3        ; R2 := 0xae91e43b
   8 [-]: GETUPVAL  R3 U1        ; R3 := U1
   9 [-]: MOVE      R4 R0        ; R4 := R0
@@ -193,7 +193,7 @@
   3 [-]: JMP       5            ; PC := 5
   4 [-]: RETURN    R0 1         ; return 
   5 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  6 [-]: GETTABLE  R1 R1 K2     ; R82 := R1[0xb496de90]
+  6 [-]: GETTABLE  R1 R1 K2     ; R1 := R1[0xb496de90]
   7 [-]: GETGLOBAL R2 K3        ; R2 := 0xae91e43b
   8 [-]: GETUPVAL  R3 U1        ; R3 := U1
   9 [-]: MOVE      R4 R0        ; R4 := R0
@@ -214,7 +214,7 @@
 ; Max Stack Size:  6
 
   1 [-]: GETUPVAL  R2 U0        ; R2 := U0
-  2 [-]: GETTABLE  R2 R2 K0     ; R82 := R2[0xbf9f30a4]
+  2 [-]: GETTABLE  R2 R2 K0     ; R2 := R2[0xbf9f30a4]
   3 [-]: GETGLOBAL R3 K1        ; R3 := 0xae91e43b
   4 [-]: GETUPVAL  R4 U1        ; R4 := U1
   5 [-]: MOVE      R5 R0        ; R5 := R0
@@ -259,7 +259,7 @@
  26 [-]: SETTABLE  R2 K11 R3    ; R2["NameOverride"] := R3
  27 [-]: SETTABLE  R2 K13 K6    ; R2["IgnoreCount"] := true
  28 [-]: GETUPVAL  R3 U1        ; R3 := U1
- 29 [-]: GETTABLE  R3 R3 K14    ; R82 := R3[0xc339daf7]
+ 29 [-]: GETTABLE  R3 R3 K14    ; R3 := R3[0xc339daf7]
  30 [-]: GETGLOBAL R4 K15       ; R4 := 0xae91e43b
  31 [-]: GETUPVAL  R5 U0        ; R5 := U0
  32 [-]: MOVE      R6 R0        ; R6 := R0
@@ -286,7 +286,7 @@
 ; Max Stack Size:  8
 
   1 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  2 [-]: GETTABLE  R1 R1 K0     ; R82 := R1[0x08681f50]
+  2 [-]: GETTABLE  R1 R1 K0     ; R1 := R1[0x08681f50]
   3 [-]: GETGLOBAL R2 K1        ; R2 := 0xae91e43b
   4 [-]: MOVE      R3 R0        ; R3 := R0
   5 [-]: LOADNIL   R4 R6        ; R4 := R5 := R6 := nil
@@ -315,7 +315,7 @@
 ; Max Stack Size:  6
 
   1 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  2 [-]: GETTABLE  R0 R0 K0     ; R82 := R0[0x5d10207d]
+  2 [-]: GETTABLE  R0 R0 K0     ; R0 := R0[0x5d10207d]
   3 [-]: LOADK     R1 9         ; R1 := 9.000000
   4 [-]: LOADBOOL  R2 1 0       ; R2 := true
   5 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
@@ -382,9 +382,9 @@
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x2d0fad09
   2 [-]: LOADK     R1 K1        ; R1 := "Lotus.Interface.Libs.TimerMgr"
   3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: GETTABLE  R1 R0 K2     ; R82 := R1[0xde474187]
+  4 [-]: GETTABLE  R1 R0 K2     ; R1 := R0[0xde474187]
   5 [-]: CALL      R1 1 2       ; R1 := R1()
-  6 [-]: SETUPVAL  R1 U0        ; U82 := 
+  6 [-]: SETUPVAL  R1 U0        ; U82 := R0
   7 [-]: GETUPVAL  R1 U1        ; R1 := U1
   8 [-]: CALL      R1 1 1       ; R1()
   9 [-]: GETUPVAL  R1 U2        ; R1 := U2

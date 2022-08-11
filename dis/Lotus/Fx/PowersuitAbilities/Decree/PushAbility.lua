@@ -43,7 +43,7 @@
   4 [-]: RETURN    R4 2         ; return R4
   5 [-]: JMP       17           ; PC := 17
   6 [-]: GETGLOBAL R4 K0        ; R4 := 0x5bced4c4
-  7 [-]: GETTABLE  R4 R4 K1     ; R82 := R4[0xa40531d8]
+  7 [-]: GETTABLE  R4 R4 K1     ; R4 := R4[0xa40531d8]
   8 [-]: LOADK     R5 2         ; R5 := 2.000000
   9 [-]: MUL       R6 K2 R0     ; R6 := -10.000000 * R0
  10 [-]: DIV       R6 R6 R3     ; R6 := R6 / R3
@@ -143,7 +143,7 @@
  57 [-]: LOADK     R14 1        ; R14 := 1.000000
  58 [-]: CALL      R8 7 1       ; R8(R9,R10,R11,R12,R13,R14)
  59 [-]: GETUPVAL  R8 U0        ; R8 := U0
- 60 [-]: GETTABLE  R8 R8 K19    ; R82 := R8[0xa627f28c]
+ 60 [-]: GETTABLE  R8 R8 K19    ; R8 := R8[0xa627f28c]
  61 [-]: MOVE      R9 R0        ; R9 := R0
  62 [-]: MOVE      R10 R7       ; R10 := R7
  63 [-]: CALL      R8 3 1       ; R8(R9,R10)

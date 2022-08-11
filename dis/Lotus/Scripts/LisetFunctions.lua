@@ -71,7 +71,7 @@
 ; Max Stack Size:  21
 
   1 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  2 [-]: GETTABLE  R1 R1 K0     ; R82 := R1[0xf47b8ec3]
+  2 [-]: GETTABLE  R1 R1 K0     ; R1 := R1[0xf47b8ec3]
   3 [-]: CALL      R1 1 2       ; R1 := R1()
   4 [-]: TEST      R1 0         ; if not R1 then PC := 182
   5 [-]: JMP       182          ; PC := 182

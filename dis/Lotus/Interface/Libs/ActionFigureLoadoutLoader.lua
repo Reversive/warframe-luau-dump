@@ -203,7 +203,7 @@
   6 [-]: SELF      R6 R6 K0     ; R7 := R6; R6 := R6[0xc498b9ab]
   7 [-]: CALL      R6 2 1       ; R6(R7)
   8 [-]: GETGLOBAL R6 K1        ; R6 := 0x33bdd652
-  9 [-]: GETTABLE  R6 R6 K2     ; R82 := R6[0x9c1f3b5a]
+  9 [-]: GETTABLE  R6 R6 K2     ; R6 := R6[0x9c1f3b5a]
  10 [-]: MOVE      R7 R1        ; R7 := R1
  11 [-]: CALL      R6 2 1       ; R6(R7)
  12 [-]: FORLOOP   R2 5         ; R2 += R4; if R2 <= R3 then begin PC := 5; R5 := R2 end
@@ -371,7 +371,7 @@
  23 [-]: CONCAT    R7 R7 R10    ; R7 := R7 .. R8 .. R9 .. R10
  24 [-]: CALL      R6 2 1       ; R6(R7)
  25 [-]: GETGLOBAL R6 K6        ; R6 := 0x33bdd652
- 26 [-]: GETTABLE  R6 R6 K7     ; R82 := R6[0x9c1f3b5a]
+ 26 [-]: GETTABLE  R6 R6 K7     ; R6 := R6[0x9c1f3b5a]
  27 [-]: GETTABLE  R7 R0 K0     ; R7 := R0["mPendingActionFigures"]
  28 [-]: MOVE      R8 R4        ; R8 := R4
  29 [-]: CALL      R6 3 1       ; R6(R7,R8)
@@ -431,7 +431,7 @@
  83 [-]: EQ        0 R19 K25    ; if R19 ~= 8.000000 then PC := 93
  84 [-]: JMP       93           ; PC := 93
  85 [-]: GETUPVAL  R19 U2       ; R19 := U2
- 86 [-]: GETTABLE  R19 R19 K26  ; R82 := R19[0x445ff284]
+ 86 [-]: GETTABLE  R19 R19 K26  ; R19 := R19[0x445ff284]
  87 [-]: MOVE      R20 R5       ; R20 := R5
  88 [-]: GETTABLE  R21 R0 K27   ; R21 := R0["mMechAvatar"]
  89 [-]: LOADBOOL  R22 0 0      ; R22 := false
@@ -439,14 +439,14 @@
  91 [-]: CALL      R19 5 1      ; R19(R20,R21,R22,R23)
  92 [-]: JMP       100          ; PC := 100
  93 [-]: GETUPVAL  R19 U2       ; R19 := U2
- 94 [-]: GETTABLE  R19 R19 K26  ; R82 := R19[0x445ff284]
+ 94 [-]: GETTABLE  R19 R19 K26  ; R19 := R19[0x445ff284]
  95 [-]: MOVE      R20 R5       ; R20 := R5
  96 [-]: GETTABLE  R21 R0 K28   ; R21 := R0["mPreviewAvatar"]
  97 [-]: LOADBOOL  R22 0 0      ; R22 := false
  98 [-]: MOVE      R23 R18      ; R23 := R18
  99 [-]: CALL      R19 5 1      ; R19(R20,R21,R22,R23)
 100 [-]: GETGLOBAL R19 K6       ; R19 := 0x33bdd652
-101 [-]: GETTABLE  R19 R19 K7   ; R82 := R19[0x9c1f3b5a]
+101 [-]: GETTABLE  R19 R19 K7   ; R19 := R19[0x9c1f3b5a]
 102 [-]: GETTABLE  R20 R0 K0    ; R20 := R0["mPendingActionFigures"]
 103 [-]: MOVE      R21 R4       ; R21 := R4
 104 [-]: CALL      R19 3 1      ; R19(R20,R21)
@@ -472,7 +472,7 @@
 124 [-]: TEST      R19 1        ; if R19 then PC := 130
 125 [-]: JMP       130          ; PC := 130
 126 [-]: GETGLOBAL R19 K6       ; R19 := 0x33bdd652
-127 [-]: GETTABLE  R19 R19 K7   ; R82 := R19[0x9c1f3b5a]
+127 [-]: GETTABLE  R19 R19 K7   ; R19 := R19[0x9c1f3b5a]
 128 [-]: GETTABLE  R20 R0 K31   ; R20 := R0["mPendingLoadOutPresetInfos"]
 129 [-]: CALL      R19 2 1      ; R19(R20)
 130 [-]: LOADBOOL  R19 1 0      ; R19 := true
@@ -502,7 +502,7 @@
  11 [-]: TEST      R6 0         ; if not R6 then PC := 19
  12 [-]: JMP       19           ; PC := 19
  13 [-]: GETGLOBAL R6 K2        ; R6 := 0x33bdd652
- 14 [-]: GETTABLE  R6 R6 K3     ; R82 := R6[0x9c1f3b5a]
+ 14 [-]: GETTABLE  R6 R6 K3     ; R6 := R6[0x9c1f3b5a]
  15 [-]: GETTABLE  R7 R0 K0     ; R7 := R0["mPendingEnemyFigures"]
  16 [-]: MOVE      R8 R4        ; R8 := R4
  17 [-]: CALL      R6 3 1       ; R6(R7,R8)
@@ -565,7 +565,7 @@
  74 [-]: JMP       76           ; PC := 76
  75 [-]: FORLOOP   R19 54       ; R19 += R21; if R19 <= R20 then begin PC := 54; R22 := R19 end
  76 [-]: GETUPVAL  R23 U1       ; R23 := U1
- 77 [-]: GETTABLE  R23 R23 K19  ; R82 := R23[0x445ff284]
+ 77 [-]: GETTABLE  R23 R23 K19  ; R23 := R23[0x445ff284]
  78 [-]: MOVE      R24 R5       ; R24 := R5
  79 [-]: GETTABLE  R25 R0 K13   ; R25 := R0["mEnemyLoader"]
  80 [-]: GETTABLE  R25 R25 K14  ; R25 := R25["Avatar"]
@@ -595,13 +595,13 @@
 104 [-]: LOADBOOL  R28 1 0      ; R28 := true
 105 [-]: CALL      R25 4 1      ; R25(R26,R27,R28)
 106 [-]: GETGLOBAL R25 K2       ; R25 := 0x33bdd652
-107 [-]: GETTABLE  R25 R25 K3   ; R82 := R25[0x9c1f3b5a]
+107 [-]: GETTABLE  R25 R25 K3   ; R25 := R25[0x9c1f3b5a]
 108 [-]: GETTABLE  R26 R0 K0    ; R26 := R0["mPendingEnemyFigures"]
 109 [-]: MOVE      R27 R4       ; R27 := R4
 110 [-]: CALL      R25 3 1      ; R25(R26,R27)
 111 [-]: FORLOOP   R1 6         ; R1 += R3; if R1 <= R2 then begin PC := 6; R4 := R1 end
 112 [-]: GETGLOBAL R25 K2       ; R25 := 0x33bdd652
-113 [-]: GETTABLE  R25 R25 K3   ; R82 := R25[0x9c1f3b5a]
+113 [-]: GETTABLE  R25 R25 K3   ; R25 := R25[0x9c1f3b5a]
 114 [-]: GETTABLE  R26 R0 K6    ; R26 := R0["mPendingEnemyTypes"]
 115 [-]: LOADK     R27 1        ; R27 := 1.000000
 116 [-]: CALL      R25 3 1      ; R25(R26,R27)
@@ -910,7 +910,7 @@
 115 [-]: SETTABLE  R8 K21 R6    ; R8["mMechAvatar"] := R6
 116 [-]: SETTABLE  R8 K22 R0    ; R8["mSpinner"] := R0
 117 [-]: GETGLOBAL R9 K24       ; R9 := 0x6c97a788
-118 [-]: GETTABLE  R9 R9 K25    ; R82 := R9[0x17574a02]
+118 [-]: GETTABLE  R9 R9 K25    ; R9 := R9[0x17574a02]
 119 [-]: CALL      R9 1 2       ; R9 := R9()
 120 [-]: SETTABLE  R8 K23 R9    ; R8["mLoadOut"] := R9
 121 [-]: SETTABLE  R8 K26 K27   ; R8["mNeedToShutdown"] := false
@@ -1226,7 +1226,7 @@
 228 [-]: EQ        0 R10 K3     ; if R10 ~= 0.000000 then PC := 235
 229 [-]: JMP       235          ; PC := 235
 230 [-]: GETGLOBAL R10 K46      ; R10 := 0x33bdd652
-231 [-]: GETTABLE  R10 R10 K47  ; R82 := R10[0x9c1f3b5a]
+231 [-]: GETTABLE  R10 R10 K47  ; R10 := R10[0x9c1f3b5a]
 232 [-]: GETTABLE  R11 R0 K34   ; R11 := R0["mPendingLoadOutPresetInfos"]
 233 [-]: CALL      R10 2 1      ; R10(R11)
 234 [-]: JMP       371          ; PC := 371
@@ -1241,7 +1241,7 @@
 243 [-]: TEST      R11 1        ; if R11 then PC := 250
 244 [-]: JMP       250          ; PC := 250
 245 [-]: GETGLOBAL R11 K46      ; R11 := 0x33bdd652
-246 [-]: GETTABLE  R11 R11 K47  ; R82 := R11[0x9c1f3b5a]
+246 [-]: GETTABLE  R11 R11 K47  ; R11 := R11[0x9c1f3b5a]
 247 [-]: GETTABLE  R12 R0 K34   ; R12 := R0["mPendingLoadOutPresetInfos"]
 248 [-]: CALL      R11 2 1      ; R11(R12)
 249 [-]: RETURN    R0 1         ; return 
@@ -1300,12 +1300,12 @@
 302 [-]: GETTABLE  R15 R10 K61  ; R15 := R10["LoadOutType"]
 303 [-]: SETTABLE  R0 K18 R15   ; R0["mCurrentLoadOutType"] := R15
 304 [-]: GETGLOBAL R15 K46      ; R15 := 0x33bdd652
-305 [-]: GETTABLE  R15 R15 K62  ; R82 := R15[0x23d5322f]
+305 [-]: GETTABLE  R15 R15 K62  ; R15 := R15[0x23d5322f]
 306 [-]: MOVE      R16 R13      ; R16 := R13
 307 [-]: LOADK     R17 0        ; R17 := 0.000000
 308 [-]: CALL      R15 3 1      ; R15(R16,R17)
 309 [-]: GETGLOBAL R15 K46      ; R15 := 0x33bdd652
-310 [-]: GETTABLE  R15 R15 K62  ; R82 := R15[0x23d5322f]
+310 [-]: GETTABLE  R15 R15 K62  ; R15 := R15[0x23d5322f]
 311 [-]: MOVE      R16 R14      ; R16 := R14
 312 [-]: GETTABLE  R17 R10 K56  ; R17 := R10["Preset"]
 313 [-]: CALL      R15 3 1      ; R15(R16,R17)
@@ -1313,12 +1313,12 @@
 315 [-]: EQ        0 R15 K24    ; if R15 ~= 2.000000 then PC := 328
 316 [-]: JMP       328          ; PC := 328
 317 [-]: GETGLOBAL R15 K46      ; R15 := 0x33bdd652
-318 [-]: GETTABLE  R15 R15 K62  ; R82 := R15[0x23d5322f]
+318 [-]: GETTABLE  R15 R15 K62  ; R15 := R15[0x23d5322f]
 319 [-]: MOVE      R16 R13      ; R16 := R13
 320 [-]: LOADK     R17 2        ; R17 := 2.000000
 321 [-]: CALL      R15 3 1      ; R15(R16,R17)
 322 [-]: GETGLOBAL R15 K46      ; R15 := 0x33bdd652
-323 [-]: GETTABLE  R15 R15 K62  ; R82 := R15[0x23d5322f]
+323 [-]: GETTABLE  R15 R15 K62  ; R15 := R15[0x23d5322f]
 324 [-]: MOVE      R16 R14      ; R16 := R14
 325 [-]: GETTABLE  R17 R10 K60  ; R17 := R10["VehiclePreset"]
 326 [-]: CALL      R15 3 1      ; R15(R16,R17)
@@ -1460,7 +1460,7 @@
 462 [-]: TEST      R19 1        ; if R19 then PC := 471
 463 [-]: JMP       471          ; PC := 471
 464 [-]: GETGLOBAL R19 K46      ; R19 := 0x33bdd652
-465 [-]: GETTABLE  R19 R19 K62  ; R82 := R19[0x23d5322f]
+465 [-]: GETTABLE  R19 R19 K62  ; R19 := R19[0x23d5322f]
 466 [-]: MOVE      R20 R17      ; R20 := R17
 467 [-]: GETTABLE  R21 R18 K76  ; R21 := R18["equipType"]
 468 [-]: SELF      R21 R21 K71  ; R22 := R21; R21 := R21[0xed4e0128]
@@ -1471,7 +1471,7 @@
 473 [-]: SETTABLE  R19 K77 R20  ; R19["Weapon"] := R20
 474 [-]: GETTABLE  R19 R0 K39   ; R19 := R0["mEnemyLoader"]
 475 [-]: GETGLOBAL R20 K78      ; R20 := 0xbd496aa1
-476 [-]: GETTABLE  R20 R20 K79  ; R82 := R20[0x42645da3]
+476 [-]: GETTABLE  R20 R20 K79  ; R20 := R20[0x42645da3]
 477 [-]: MOVE      R21 R17      ; R21 := R17
 478 [-]: CALL      R20 2 2      ; R20 := R20(R21)
 479 [-]: SETTABLE  R19 K15 R20  ; R19["Loader"] := R20
@@ -1584,20 +1584,20 @@
 ; Max Stack Size:  8
 
   1 [-]: GETGLOBAL R3 K0        ; R3 := 0x33bdd652
-  2 [-]: GETTABLE  R3 R3 K1     ; R82 := R3[0x23d5322f]
+  2 [-]: GETTABLE  R3 R3 K1     ; R3 := R3[0x23d5322f]
   3 [-]: GETTABLE  R4 R0 K2     ; R4 := R0["mPendingLoadOutPresetInfos"]
   4 [-]: NEWTABLE  R5 0 3       ; R5 := {}
   5 [-]: SELF      R6 R2 K4     ; R7 := R2; R6 := R2[0x8f89d633]
   6 [-]: CALL      R6 2 2       ; R6 := R6(R7)
   7 [-]: SETTABLE  R5 K3 R6     ; R5["Preset"] := R6
   8 [-]: GETGLOBAL R6 K6        ; R6 := 0x6c97a788
-  9 [-]: GETTABLE  R6 R6 K7     ; R82 := R6[0x313a28d9]
+  9 [-]: GETTABLE  R6 R6 K7     ; R6 := R6[0x313a28d9]
  10 [-]: CALL      R6 1 2       ; R6 := R6()
  11 [-]: SETTABLE  R5 K5 R6     ; R5["VehiclePreset"] := R6
  12 [-]: SETTABLE  R5 K8 K9     ; R5["LoadOutType"] := 0.000000
  13 [-]: CALL      R3 3 1       ; R3(R4,R5)
  14 [-]: GETGLOBAL R3 K0        ; R3 := 0x33bdd652
- 15 [-]: GETTABLE  R3 R3 K1     ; R82 := R3[0x23d5322f]
+ 15 [-]: GETTABLE  R3 R3 K1     ; R3 := R3[0x23d5322f]
  16 [-]: GETTABLE  R4 R0 K10    ; R4 := R0["mPendingActionFigures"]
  17 [-]: MOVE      R5 R1        ; R5 := R1
  18 [-]: CALL      R3 3 1       ; R3(R4,R5)
@@ -1614,7 +1614,7 @@
 ; Max Stack Size:  10
 
   1 [-]: GETGLOBAL R5 K0        ; R5 := 0x33bdd652
-  2 [-]: GETTABLE  R5 R5 K1     ; R82 := R5[0x23d5322f]
+  2 [-]: GETTABLE  R5 R5 K1     ; R5 := R5[0x23d5322f]
   3 [-]: GETTABLE  R6 R0 K2     ; R6 := R0["mPendingLoadOutPresetInfos"]
   4 [-]: NEWTABLE  R7 0 3       ; R7 := {}
   5 [-]: SELF      R8 R2 K4     ; R9 := R2; R8 := R2[0x8f89d633]
@@ -1626,7 +1626,7 @@
  11 [-]: SETTABLE  R7 K6 R4     ; R7["LoadOutType"] := R4
  12 [-]: CALL      R5 3 1       ; R5(R6,R7)
  13 [-]: GETGLOBAL R5 K0        ; R5 := 0x33bdd652
- 14 [-]: GETTABLE  R5 R5 K1     ; R82 := R5[0x23d5322f]
+ 14 [-]: GETTABLE  R5 R5 K1     ; R5 := R5[0x23d5322f]
  15 [-]: GETTABLE  R6 R0 K7     ; R6 := R0["mPendingActionFigures"]
  16 [-]: MOVE      R7 R1        ; R7 := R1
  17 [-]: CALL      R5 3 1       ; R5(R6,R7)
@@ -1648,7 +1648,7 @@
   4 [-]: JMP       6            ; PC := 6
   5 [-]: RETURN    R0 1         ; return 
   6 [-]: GETGLOBAL R2 K1        ; R2 := 0x33bdd652
-  7 [-]: GETTABLE  R2 R2 K2     ; R82 := R2[0x23d5322f]
+  7 [-]: GETTABLE  R2 R2 K2     ; R2 := R2[0x23d5322f]
   8 [-]: GETTABLE  R3 R0 K3     ; R3 := R0["mPendingActionFigures"]
   9 [-]: MOVE      R4 R1        ; R4 := R1
  10 [-]: CALL      R2 3 1       ; R2(R3,R4)
@@ -1664,7 +1664,7 @@
  20 [-]: SELF      R2 R1 K7     ; R3 := R1; R2 := R1[0xf5b90b23]
  21 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  22 [-]: GETGLOBAL R3 K1        ; R3 := 0x33bdd652
- 23 [-]: GETTABLE  R3 R3 K2     ; R82 := R3[0x23d5322f]
+ 23 [-]: GETTABLE  R3 R3 K2     ; R3 := R3[0x23d5322f]
  24 [-]: GETTABLE  R4 R0 K8     ; R4 := R0["mPendingLoadOutPresetInfos"]
  25 [-]: NEWTABLE  R5 0 3       ; R5 := {}
  26 [-]: GETTABLE  R6 R2 K10    ; R6 := R2["mLoadOutPreset"]
@@ -1699,7 +1699,7 @@
   4 [-]: JMP       6            ; PC := 6
   5 [-]: RETURN    R0 1         ; return 
   6 [-]: GETGLOBAL R3 K1        ; R3 := 0x33bdd652
-  7 [-]: GETTABLE  R3 R3 K2     ; R82 := R3[0x23d5322f]
+  7 [-]: GETTABLE  R3 R3 K2     ; R3 := R3[0x23d5322f]
   8 [-]: GETTABLE  R4 R0 K3     ; R4 := R0["mPendingEnemyFigures"]
   9 [-]: MOVE      R5 R1        ; R5 := R1
  10 [-]: CALL      R3 3 1       ; R3(R4,R5)
@@ -1709,7 +1709,7 @@
  14 [-]: TEST      R3 1         ; if R3 then PC := 21
  15 [-]: JMP       21           ; PC := 21
  16 [-]: GETGLOBAL R3 K1        ; R3 := 0x33bdd652
- 17 [-]: GETTABLE  R3 R3 K2     ; R82 := R3[0x23d5322f]
+ 17 [-]: GETTABLE  R3 R3 K2     ; R3 := R3[0x23d5322f]
  18 [-]: GETTABLE  R4 R0 K5     ; R4 := R0["mPendingEnemyTypes"]
  19 [-]: MOVE      R5 R2        ; R5 := R2
  20 [-]: CALL      R3 3 1       ; R3(R4,R5)

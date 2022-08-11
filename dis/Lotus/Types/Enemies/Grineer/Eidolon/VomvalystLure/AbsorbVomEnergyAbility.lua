@@ -155,7 +155,7 @@
 113 [-]: JMP       139          ; PC := 139
 114 [-]: LOADK     R8 0         ; R8 := 0.000000
 115 [-]: GETGLOBAL R15 K20      ; R15 := 0x34291f5c
-116 [-]: GETTABLE  R15 R15 K22  ; R82 := R15[0x35c16153]
+116 [-]: GETTABLE  R15 R15 K22  ; R15 := R15[0x35c16153]
 117 [-]: CALL      R15 1 2      ; R15 := R15()
 118 [-]: SETTABLE  R15 K23 R12  ; R15["baseAmount"] := R12
 119 [-]: SELF      R16 R15 K24  ; R17 := R15; R16 := R15[0x1586e35e]
@@ -215,7 +215,7 @@
 173 [-]: GETUPVAL  R20 U2       ; R20 := U2
 174 [-]: CALL      R18 3 2      ; R18 := R18(R19,R20)
 175 [-]: GETGLOBAL R19 K40      ; R19 := 0x5bced4c4
-176 [-]: GETTABLE  R19 R19 K41  ; R82 := R19[0xac1b386a]
+176 [-]: GETTABLE  R19 R19 K41  ; R19 := R19[0xac1b386a]
 177 [-]: GETUPVAL  R20 U3       ; R20 := U3
 178 [-]: ADD       R21 R18 K42  ; R21 := R18 + 1.000000
 179 [-]: CALL      R19 3 2      ; R19 := R19(R20,R21)
@@ -381,7 +381,7 @@
  47 [-]: CALL      R7 4 2       ; R7 := R7(R8,R9,R10)
  48 [-]: GETGLOBAL R8 K10       ; R8 := 0xa533083a
  49 [-]: GETGLOBAL R9 K11       ; R9 := 0x5bced4c4
- 50 [-]: GETTABLE  R9 R9 K12    ; R82 := R9[0xe4a5b3ca]
+ 50 [-]: GETTABLE  R9 R9 K12    ; R9 := R9[0xe4a5b3ca]
  51 [-]: SUB       R10 K13 R6   ; R10 := 0.500000 - R6
  52 [-]: CALL      R9 2 2       ; R9 := R9(R10)
  53 [-]: MUL       R9 K14 R9    ; R9 := 2.000000 * R9

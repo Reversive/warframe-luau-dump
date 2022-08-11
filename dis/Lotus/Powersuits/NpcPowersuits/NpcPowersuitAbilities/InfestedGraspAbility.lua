@@ -253,7 +253,7 @@
 171 [-]: LOADBOOL  R28 1 0      ; R28 := true
 172 [-]: CALL      R22 7 1      ; R22(R23,R24,R25,R26,R27,R28)
 173 [-]: GETGLOBAL R22 K34      ; R22 := 0x33bdd652
-174 [-]: GETTABLE  R22 R22 K35  ; R82 := R22[0x23d5322f]
+174 [-]: GETTABLE  R22 R22 K35  ; R22 := R22[0x23d5322f]
 175 [-]: GETGLOBAL R23 K20      ; R23 := _T
 176 [-]: SELF      R24 R1 K21   ; R25 := R1; R24 := R1[0xfa9e477f]
 177 [-]: CALL      R24 2 2      ; R24 := R24(R25)

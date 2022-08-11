@@ -344,7 +344,7 @@
  48 [-]: EQ        0 R10 R0     ; if R10 ~= R0 then PC := 55
  49 [-]: JMP       55           ; PC := 55
  50 [-]: GETGLOBAL R10 K24      ; R10 := 0x33bdd652
- 51 [-]: GETTABLE  R10 R10 K25  ; R82 := R10[0x9c1f3b5a]
+ 51 [-]: GETTABLE  R10 R10 K25  ; R10 := R10[0x9c1f3b5a]
  52 [-]: MOVE      R11 R5       ; R11 := R5
  53 [-]: MOVE      R12 R9       ; R12 := R9
  54 [-]: CALL      R10 3 1      ; R10(R11,R12)

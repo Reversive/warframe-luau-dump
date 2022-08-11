@@ -65,7 +65,7 @@
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := _T
   2 [-]: GETGLOBAL R2 K2        ; R2 := 0x6c97a788
-  3 [-]: GETTABLE  R2 R2 K3     ; R82 := R2[0x908c1972]
+  3 [-]: GETTABLE  R2 R2 K3     ; R2 := R2[0x908c1972]
   4 [-]: CALL      R2 1 2       ; R2 := R2()
   5 [-]: SETTABLE  R1 K1 R2     ; R1["CaptainNemesis"] := R2
   6 [-]: GETGLOBAL R1 K0        ; R1 := _T
@@ -139,7 +139,7 @@
  32 [-]: CALL      R4 3 1       ; R4(R5,R6)
  33 [-]: GETGLOBAL R4 K1        ; R4 := _T
  34 [-]: GETUPVAL  R5 U1        ; R5 := U1
- 35 [-]: GETTABLE  R5 R5 K12    ; R82 := R5[0x6a965652]
+ 35 [-]: GETTABLE  R5 R5 K12    ; R5 := R5[0x6a965652]
  36 [-]: GETGLOBAL R6 K1        ; R6 := _T
  37 [-]: GETTABLE  R6 R6 K2     ; R6 := R6["CaptainNemesis"]
  38 [-]: CALL      R5 2 2       ; R5 := R5(R6)
@@ -148,7 +148,7 @@
  41 [-]: MOVE      R5 R0        ; R5 := R0
  42 [-]: CALL      R4 2 1       ; R4(R5)
  43 [-]: GETUPVAL  R4 U1        ; R4 := U1
- 44 [-]: GETTABLE  R4 R4 K13    ; R82 := R4[0x26fb926e]
+ 44 [-]: GETTABLE  R4 R4 K13    ; R4 := R4[0x26fb926e]
  45 [-]: GETGLOBAL R5 K1        ; R5 := _T
  46 [-]: GETTABLE  R5 R5 K11    ; R5 := R5["CaptainNemesisProfile"]
  47 [-]: CALL      R4 2 2       ; R4 := R4(R5)
@@ -174,7 +174,7 @@
 ; Max Stack Size:  5
 
   1 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  2 [-]: GETTABLE  R0 R0 K0     ; R82 := R0[0x5e35d4d6]
+  2 [-]: GETTABLE  R0 R0 K0     ; R0 := R0[0x5e35d4d6]
   3 [-]: CALL      R0 1 2       ; R0 := R0()
   4 [-]: SELF      R1 R0 K1     ; R2 := R0; R1 := R0[0x3ad9ed31]
   5 [-]: GETGLOBAL R3 K2        ; R3 := 0xbe190284
@@ -288,7 +288,7 @@
  14 [-]: GETUPVAL  R1 U2        ; R1 := U2
  15 [-]: CALL      R1 1 1       ; R1()
  16 [-]: GETUPVAL  R1 U3        ; R1 := U3
- 17 [-]: GETTABLE  R1 R1 K2     ; R82 := R1[0xa67f2658]
+ 17 [-]: GETTABLE  R1 R1 K2     ; R1 := R1[0xa67f2658]
  18 [-]: MOVE      R2 R0        ; R2 := R0
  19 [-]: CALL      R1 2 1       ; R1(R2)
  20 [-]: RETURN    R0 1         ; return 
@@ -319,7 +319,7 @@
  14 [-]: GETUPVAL  R2 U2        ; R2 := U2
  15 [-]: CALL      R2 1 1       ; R2()
  16 [-]: GETUPVAL  R2 U3        ; R2 := U3
- 17 [-]: GETTABLE  R2 R2 K2     ; R82 := R2[0xa67f2658]
+ 17 [-]: GETTABLE  R2 R2 K2     ; R2 := R2[0xa67f2658]
  18 [-]: MOVE      R3 R0        ; R3 := R0
  19 [-]: MOVE      R4 R1        ; R4 := R1
  20 [-]: CALL      R2 3 1       ; R2(R3,R4)
@@ -350,7 +350,7 @@
  13 [-]: TEST      R2 1         ; if R2 then PC := 24
  14 [-]: JMP       24           ; PC := 24
  15 [-]: GETGLOBAL R2 K2        ; R2 := 0x7f5022cf
- 16 [-]: GETTABLE  R2 R2 K3     ; R82 := R2[0xa5c556b9]
+ 16 [-]: GETTABLE  R2 R2 K3     ; R2 := R2[0xa5c556b9]
  17 [-]: MOVE      R3 R1        ; R3 := R1
  18 [-]: LOADK     R4 K4        ; R4 := "Captain"
  19 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
@@ -391,7 +391,7 @@
  17 [-]: CALL      R3 2 1       ; R3(R4)
  18 [-]: GETGLOBAL R3 K1        ; R3 := _T
  19 [-]: GETUPVAL  R4 U1        ; R4 := U1
- 20 [-]: GETTABLE  R4 R4 K8     ; R82 := R4[0x6a965652]
+ 20 [-]: GETTABLE  R4 R4 K8     ; R4 := R4[0x6a965652]
  21 [-]: GETGLOBAL R5 K1        ; R5 := _T
  22 [-]: GETTABLE  R5 R5 K2     ; R5 := R5["CaptainNemesis"]
  23 [-]: CALL      R4 2 2       ; R4 := R4(R5)
@@ -404,7 +404,7 @@
  30 [-]: GETTABLE  R4 R4 K2     ; R4 := R4["CaptainNemesis"]
  31 [-]: SETTABLE  R3 K9 R4     ; R3["NemesisTransmissionCustomPortraitInfo"] := R4
  32 [-]: GETUPVAL  R3 U1        ; R3 := U1
- 33 [-]: GETTABLE  R3 R3 K10    ; R82 := R3[0x6e2c3baf]
+ 33 [-]: GETTABLE  R3 R3 K10    ; R3 := R3[0x6e2c3baf]
  34 [-]: MOVE      R4 R0        ; R4 := R0
  35 [-]: CALL      R3 2 1       ; R3(R4)
  36 [-]: RETURN    R0 1         ; return 

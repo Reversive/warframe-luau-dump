@@ -70,7 +70,7 @@
   8 [-]: GETGLOBAL R4 K2        ; R4 := gEntityType
   9 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
  10 [-]: GETUPVAL  R3 U0        ; R3 := U0
- 11 [-]: GETTABLE  R3 R3 K3     ; R82 := R3[0x06d055f9]
+ 11 [-]: GETTABLE  R3 R3 K3     ; R3 := R3[0x06d055f9]
  12 [-]: MOVE      R4 R1        ; R4 := R1
  13 [-]: LOADK     R5 0         ; R5 := 0.000000
  14 [-]: LOADK     R6 1         ; R6 := 1.000000
@@ -223,7 +223,7 @@
  45 [-]: LOADK     R6 K11       ; R6 := "Focus"
  46 [-]: CALL      R4 3 1       ; R4(R5,R6)
  47 [-]: GETGLOBAL R4 K13       ; R4 := 0x34291f5c
- 48 [-]: GETTABLE  R4 R4 K14    ; R82 := R4[0x1467d5f4]
+ 48 [-]: GETTABLE  R4 R4 K14    ; R4 := R4[0x1467d5f4]
  49 [-]: CALL      R4 1 2       ; R4 := R4()
  50 [-]: TEST      R4 1         ; if R4 then PC := 55
  51 [-]: JMP       55           ; PC := 55
@@ -363,7 +363,7 @@
  22 [-]: TEST      R2 0         ; if not R2 then PC := 35
  23 [-]: JMP       35           ; PC := 35
  24 [-]: GETUPVAL  R2 U1        ; R2 := U1
- 25 [-]: GETTABLE  R2 R2 K9     ; R82 := R2[0x06d055f9]
+ 25 [-]: GETTABLE  R2 R2 K9     ; R2 := R2[0x06d055f9]
  26 [-]: GETTABLE  R3 R1 K2     ; R3 := R1["sortieId"]
  27 [-]: EQ        1 R3 K3      ; if R3 == "" then PC := 30
  28 [-]: JMP       30           ; PC := 30
@@ -417,11 +417,11 @@
  12 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  13 [-]: MUL       R3 R3 R0     ; R3 := R3 * R0
  14 [-]: GETGLOBAL R4 K5        ; R4 := 0x34291f5c
- 15 [-]: GETTABLE  R4 R4 K6     ; R82 := R4[0x35c16153]
+ 15 [-]: GETTABLE  R4 R4 K6     ; R4 := R4[0x35c16153]
  16 [-]: CALL      R4 1 2       ; R4 := R4()
  17 [-]: SELF      R5 R4 K7     ; R6 := R4; R5 := R4[0xf326045f]
  18 [-]: GETGLOBAL R7 K5        ; R7 := 0x34291f5c
- 19 [-]: GETTABLE  R7 R7 K8     ; R82 := R7[0x7258f36f]
+ 19 [-]: GETTABLE  R7 R7 K8     ; R7 := R7[0x7258f36f]
  20 [-]: MOVE      R8 R3        ; R8 := R3
  21 [-]: CALL      R7 2 0       ; R7,... := R7(R8)
  22 [-]: CALL      R5 0 1       ; R5(R6,...)

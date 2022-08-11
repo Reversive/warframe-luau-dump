@@ -90,14 +90,14 @@
  38 [-]: EQ        0 R7 K12     ; if R7 ~= 64.000000 then PC := 58
  39 [-]: JMP       58           ; PC := 58
  40 [-]: GETGLOBAL R7 K13       ; R7 := 0x5bced4c4
- 41 [-]: GETTABLE  R7 R7 K14    ; R82 := R7[0x55f27c30]
+ 41 [-]: GETTABLE  R7 R7 K14    ; R7 := R7[0x55f27c30]
  42 [-]: SELF      R8 R1 K15    ; R9 := R1; R8 := R1[0xb40c191a]
  43 [-]: CALL      R8 2 2       ; R8 := R8(R9)
  44 [-]: MUL       R8 R8 R5     ; R8 := R8 * R5
  45 [-]: ADD       R8 R8 K16    ; R8 := R8 + 0.500000
  46 [-]: CALL      R7 2 2       ; R7 := R7(R8)
  47 [-]: GETGLOBAL R8 K13       ; R8 := 0x5bced4c4
- 48 [-]: GETTABLE  R8 R8 K17    ; R82 := R8[0xb62ecfe0]
+ 48 [-]: GETTABLE  R8 R8 K17    ; R8 := R8[0xb62ecfe0]
  49 [-]: MOVE      R9 R7        ; R9 := R7
  50 [-]: SELF      R10 R3 K18   ; R11 := R3; R10 := R3[0xfe9ed1e0]
  51 [-]: CALL      R10 2 0      ; R10,... := R10(R11)
@@ -113,7 +113,7 @@
  61 [-]: JMP       72           ; PC := 72
  62 [-]: SELF      R8 R3 K21    ; R9 := R3; R8 := R3[0x57369b8b]
  63 [-]: GETGLOBAL R10 K13      ; R10 := 0x5bced4c4
- 64 [-]: GETTABLE  R10 R10 K14  ; R82 := R10[0x55f27c30]
+ 64 [-]: GETTABLE  R10 R10 K14  ; R10 := R10[0x55f27c30]
  65 [-]: SELF      R11 R3 K1    ; R12 := R3; R11 := R3[0xb87f958d]
  66 [-]: CALL      R11 2 2      ; R11 := R11(R12)
  67 [-]: MUL       R11 R11 R6   ; R11 := R11 * R6
@@ -149,7 +149,7 @@
  14 [-]: LT        0 K3 R8      ; if 0.000000 >= R8 then PC := 38
  15 [-]: JMP       38           ; PC := 38
  16 [-]: GETUPVAL  R9 U0        ; R9 := U0
- 17 [-]: GETTABLE  R9 R9 K4     ; R82 := R9[0x98b1bb53]
+ 17 [-]: GETTABLE  R9 R9 K4     ; R9 := R9[0x98b1bb53]
  18 [-]: MOVE      R10 R7       ; R10 := R7
  19 [-]: MOVE      R11 R8       ; R11 := R8
  20 [-]: LOADBOOL  R12 0 0      ; R12 := false

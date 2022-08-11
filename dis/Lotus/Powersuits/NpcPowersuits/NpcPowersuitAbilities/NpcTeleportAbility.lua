@@ -172,7 +172,7 @@
  90 [-]: TEST      R13 0        ; if not R13 then PC := 111
  91 [-]: JMP       111          ; PC := 111
  92 [-]: GETGLOBAL R13 K17      ; R13 := 0x6c97a788
- 93 [-]: GETTABLE  R13 R13 K18  ; R82 := R13[0x733fc736]
+ 93 [-]: GETTABLE  R13 R13 K18  ; R13 := R13[0x733fc736]
  94 [-]: LOADBOOL  R14 1 0      ; R14 := true
  95 [-]: CALL      R13 2 2      ; R13 := R13(R14)
  96 [-]: SELF      R14 R13 K19  ; R15 := R13; R14 := R13[0x277bf617]

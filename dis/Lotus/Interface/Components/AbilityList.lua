@@ -145,7 +145,7 @@
  79 [-]: SETTABLE  R16 K19 R1   ; R16["AbilityIndex"] := R1
  80 [-]: SETTABLE  R16 K20 R12  ; R16["Resource"] := R12
  81 [-]: GETGLOBAL R17 K22      ; R17 := 0x7f5022cf
- 82 [-]: GETTABLE  R17 R17 K23  ; R82 := R17[0x3f3e4d12]
+ 82 [-]: GETTABLE  R17 R17 K23  ; R17 := R17[0x3f3e4d12]
  83 [-]: SELF      R18 R0 K11   ; R19 := R0; R18 := R0[0x42b04007]
  84 [-]: SELF      R20 R12 K24  ; R21 := R12; R20 := R12[0xd3a9d01f]
  85 [-]: CALL      R20 2 2      ; R20 := R20(R21)
@@ -170,7 +170,7 @@
 104 [-]: CALL      R17 2 2      ; R17 := R17(R18)
 105 [-]: SETTABLE  R16 K29 R17  ; R16["Icon"] := R17
 106 [-]: GETUPVAL  R17 U0       ; R17 := U0
-107 [-]: GETTABLE  R17 R17 K32  ; R82 := R17[0x06d055f9]
+107 [-]: GETTABLE  R17 R17 K32  ; R17 := R17[0x06d055f9]
 108 [-]: SELF      R18 R12 K33  ; R19 := R12; R18 := R12[0xeb7b349c]
 109 [-]: CALL      R18 2 2      ; R18 := R18(R19)
 110 [-]: LOADK     R19 6        ; R19 := 6.000000
@@ -226,7 +226,7 @@
   1 [-]: GETGLOBAL R2 K0        ; R2 := 0x2d0fad09
   2 [-]: LOADK     R3 K1        ; R3 := "EE.Interface.Components.List"
   3 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  4 [-]: GETTABLE  R3 R2 K2     ; R82 := R3[0x9383bc56]
+  4 [-]: GETTABLE  R3 R2 K2     ; R3 := R2[0x9383bc56]
   5 [-]: MOVE      R4 R0        ; R4 := R0
   6 [-]: MOVE      R5 R1        ; R5 := R1
   7 [-]: LOADK     R6 K3        ; R6 := ".Ability"
@@ -323,14 +323,14 @@
   8 [-]: LOADK     R5 3         ; R5 := 3.000000
   9 [-]: CALL      R2 4 2       ; R2 := R2(R3,R4,R5)
  10 [-]: GETUPVAL  R3 U0        ; R3 := U0
- 11 [-]: GETTABLE  R3 R3 K5     ; R82 := R3[0xe5e5a417]
+ 11 [-]: GETTABLE  R3 R3 K5     ; R3 := R3[0xe5e5a417]
  12 [-]: GETTABLE  R4 R0 K2     ; R4 := R0["mMovie"]
  13 [-]: GETTABLE  R5 R0 K6     ; R5 := R0["mIconHeight"]
  14 [-]: DIV       R5 R5 K7     ; R5 := R5 / 2.000000
  15 [-]: SUB       R5 R2 R5     ; R5 := R2 - R5
  16 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
  17 [-]: GETUPVAL  R4 U0        ; R4 := U0
- 18 [-]: GETTABLE  R4 R4 K8     ; R82 := R4[0xd718f59b]
+ 18 [-]: GETTABLE  R4 R4 K8     ; R4 := R4[0xd718f59b]
  19 [-]: GETTABLE  R5 R0 K2     ; R5 := R0["mMovie"]
  20 [-]: GETTABLE  R6 R0 K6     ; R6 := R0["mIconHeight"]
  21 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
@@ -408,7 +408,7 @@
  37 [-]: SETTABLE  R9 K14 K15   ; R9["IsPassive"] := true
  38 [-]: SETTABLE  R9 K16 K15   ; R9["CustomEntry"] := true
  39 [-]: GETGLOBAL R10 K18      ; R10 := 0x7f5022cf
- 40 [-]: GETTABLE  R10 R10 K19  ; R82 := R10[0x3f3e4d12]
+ 40 [-]: GETTABLE  R10 R10 K19  ; R10 := R10[0x3f3e4d12]
  41 [-]: GETTABLE  R11 R0 K20   ; R11 := R0["mMovie"]
  42 [-]: SELF      R11 R11 K21  ; R12 := R11; R11 := R11[0x42b04007]
  43 [-]: LOADK     R13 K22      ; R13 := "/Lotus/Language/Menu/Ability_Passive"
@@ -464,7 +464,7 @@
  93 [-]: TEST      R15 1        ; if R15 then PC := 104
  94 [-]: JMP       104          ; PC := 104
  95 [-]: GETGLOBAL R15 K34      ; R15 := 0x33bdd652
- 96 [-]: GETTABLE  R15 R15 K35  ; R82 := R15[0x23d5322f]
+ 96 [-]: GETTABLE  R15 R15 K35  ; R15 := R15[0x23d5322f]
  97 [-]: GETUPVAL  R16 U0       ; R16 := U0
  98 [-]: GETTABLE  R16 R16 K29  ; R16 := R16["mIconLoader"]
  99 [-]: GETTABLE  R16 R16 K32  ; R16 := R16["StuffToLoad"]
@@ -509,7 +509,7 @@
 138 [-]: TEST      R20 1        ; if R20 then PC := 149
 139 [-]: JMP       149          ; PC := 149
 140 [-]: GETGLOBAL R20 K34      ; R20 := 0x33bdd652
-141 [-]: GETTABLE  R20 R20 K35  ; R82 := R20[0x23d5322f]
+141 [-]: GETTABLE  R20 R20 K35  ; R20 := R20[0x23d5322f]
 142 [-]: GETUPVAL  R21 U0       ; R21 := U0
 143 [-]: GETTABLE  R21 R21 K29  ; R21 := R21["mIconLoader"]
 144 [-]: GETTABLE  R21 R21 K32  ; R21 := R21["StuffToLoad"]
@@ -535,7 +535,7 @@
 164 [-]: GETUPVAL  R20 U0       ; R20 := U0
 165 [-]: GETTABLE  R20 R20 K29  ; R20 := R20["mIconLoader"]
 166 [-]: GETGLOBAL R21 K41      ; R21 := 0xbd496aa1
-167 [-]: GETTABLE  R21 R21 K42  ; R82 := R21[0x42645da3]
+167 [-]: GETTABLE  R21 R21 K42  ; R21 := R21[0x42645da3]
 168 [-]: GETUPVAL  R22 U0       ; R22 := U0
 169 [-]: GETTABLE  R22 R22 K29  ; R22 := R22["mIconLoader"]
 170 [-]: GETTABLE  R22 R22 K32  ; R22 := R22["StuffToLoad"]
@@ -610,7 +610,7 @@
 239 [-]: JMP       241          ; PC := 241
 240 [-]: SUB       R20 R20 K61  ; R20 := R20 - 30.000000
 241 [-]: GETUPVAL  R21 U2       ; R21 := U2
-242 [-]: GETTABLE  R21 R21 K62  ; R82 := R21[0x00fa676f]
+242 [-]: GETTABLE  R21 R21 K62  ; R21 := R21[0x00fa676f]
 243 [-]: GETTABLE  R22 R0 K20   ; R22 := R0["mMovie"]
 244 [-]: GETTABLE  R23 R0 K63   ; R23 := R0["mParentClipName"]
 245 [-]: LOADK     R24 K64      ; R24 := ".Underline"
@@ -623,7 +623,7 @@
 252 [-]: LOADK     R24 K66      ; R24 := "Underline"
 253 [-]: LOADK     R25 9        ; R25 := 9.000000
 254 [-]: GETUPVAL  R26 U3       ; R26 := U3
-255 [-]: GETTABLE  R26 R26 K67  ; R82 := R26[0x5d10207d]
+255 [-]: GETTABLE  R26 R26 K67  ; R26 := R26[0x5d10207d]
 256 [-]: LOADK     R27 9        ; R27 := 9.000000
 257 [-]: LOADBOOL  R28 1 0      ; R28 := true
 258 [-]: CALL      R26 3 0      ; R26,... := R26(R27,R28)
@@ -731,7 +731,7 @@
  43 [-]: GETUPVAL  R0 U0        ; R0 := U0
  44 [-]: CALL      R1 3 1       ; R1(R2,R3)
  45 [-]: GETUPVAL  R1 U1        ; R1 := U1
- 46 [-]: GETTABLE  R1 R1 K11    ; R82 := R1[0xfc3fed1f]
+ 46 [-]: GETTABLE  R1 R1 K11    ; R1 := R1[0xfc3fed1f]
  47 [-]: GETUPVAL  R2 U0        ; R2 := U0
  48 [-]: GETTABLE  R2 R2 K3     ; R2 := R2["mMovie"]
  49 [-]: MOVE      R3 R0        ; R3 := R0
@@ -930,17 +930,17 @@
 ; Max Stack Size:  19
 
   1 [-]: GETUPVAL  R3 U0        ; R3 := U0
-  2 [-]: GETTABLE  R3 R3 K0     ; R82 := R3[0x5d10207d]
+  2 [-]: GETTABLE  R3 R3 K0     ; R3 := R3[0x5d10207d]
   3 [-]: LOADK     R4 6         ; R4 := 6.000000
   4 [-]: LOADBOOL  R5 1 0       ; R5 := true
   5 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
   6 [-]: GETUPVAL  R4 U0        ; R4 := U0
-  7 [-]: GETTABLE  R4 R4 K0     ; R82 := R4[0x5d10207d]
+  7 [-]: GETTABLE  R4 R4 K0     ; R4 := R4[0x5d10207d]
   8 [-]: LOADK     R5 9         ; R5 := 9.000000
   9 [-]: LOADBOOL  R6 1 0       ; R6 := true
  10 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
  11 [-]: GETUPVAL  R5 U0        ; R5 := U0
- 12 [-]: GETTABLE  R5 R5 K0     ; R82 := R5[0x5d10207d]
+ 12 [-]: GETTABLE  R5 R5 K0     ; R5 := R5[0x5d10207d]
  13 [-]: LOADK     R6 10        ; R6 := 10.000000
  14 [-]: LOADBOOL  R7 1 0       ; R7 := true
  15 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
@@ -967,7 +967,7 @@
  36 [-]: LOADK     R13 K8       ; R13 := "Icon.Icon"
  37 [-]: LOADK     R14 9        ; R14 := 9.000000
  38 [-]: GETUPVAL  R15 U1       ; R15 := U1
- 39 [-]: GETTABLE  R15 R15 K9   ; R82 := R15[0x06d055f9]
+ 39 [-]: GETTABLE  R15 R15 K9   ; R15 := R15[0x06d055f9]
  40 [-]: GETTABLE  R16 R1 K10   ; R16 := R1["IsPassive"]
  41 [-]: MOVE      R17 R4       ; R17 := R4
  42 [-]: LOADK     R18 K11      ; R18 := 16777215.000000
@@ -1112,7 +1112,7 @@
  17 [-]: LOADBOOL  R2 0 1       ; R2 := false; PC := 18
  18 [-]: LOADBOOL  R2 1 0       ; R2 := true
  19 [-]: GETUPVAL  R3 U1        ; R3 := U1
- 20 [-]: GETTABLE  R3 R3 K5     ; R82 := R3[0xfc3fed1f]
+ 20 [-]: GETTABLE  R3 R3 K5     ; R3 := R3[0xfc3fed1f]
  21 [-]: GETUPVAL  R4 U0        ; R4 := U0
  22 [-]: GETTABLE  R4 R4 K6     ; R4 := R4["mMovie"]
  23 [-]: MOVE      R5 R0        ; R5 := R0
@@ -1164,7 +1164,7 @@
  69 [-]: LOADK     R7 K11       ; R7 := "Title"
  70 [-]: LOADK     R8 0         ; R8 := 0.000000
  71 [-]: GETUPVAL  R9 U2        ; R9 := U2
- 72 [-]: GETTABLE  R9 R9 K15    ; R82 := R9[0x74a11ec6]
+ 72 [-]: GETTABLE  R9 R9 K15    ; R9 := R9[0x74a11ec6]
  73 [-]: DIV       R10 R3 K16   ; R10 := R3 / 2.000000
  74 [-]: CALL      R9 2 2       ; R9 := R9(R10)
  75 [-]: SUB       R9 R9 K16    ; R9 := R9 - 2.000000
@@ -1177,7 +1177,7 @@
  82 [-]: LOADK     R7 K11       ; R7 := "Title"
  83 [-]: LOADK     R8 29        ; R8 := 29.000000
  84 [-]: GETGLOBAL R9 K18       ; R9 := 0x7f5022cf
- 85 [-]: GETTABLE  R9 R9 K19    ; R82 := R9[0x3f3e4d12]
+ 85 [-]: GETTABLE  R9 R9 K19    ; R9 := R9[0x3f3e4d12]
  86 [-]: GETUPVAL  R10 U0       ; R10 := U0
  87 [-]: GETTABLE  R10 R10 K6   ; R10 := R10["mMovie"]
  88 [-]: SELF      R10 R10 K20  ; R11 := R10; R10 := R10[0x42b04007]
@@ -1292,7 +1292,7 @@
 197 [-]: GETUPVAL  R6 U0        ; R6 := U0
 198 [-]: GETTABLE  R6 R6 K40    ; R6 := R6["mIconDim"]
 199 [-]: GETUPVAL  R7 U2        ; R7 := U2
-200 [-]: GETTABLE  R7 R7 K41    ; R82 := R7[0x06d055f9]
+200 [-]: GETTABLE  R7 R7 K41    ; R7 := R7[0x06d055f9]
 201 [-]: GETTABLE  R8 R0 K34    ; R8 := R0["IsPassive"]
 202 [-]: LOADK     R9 20        ; R9 := 20.000000
 203 [-]: LOADK     R10 0        ; R10 := 0.000000

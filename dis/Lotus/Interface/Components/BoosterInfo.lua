@@ -86,7 +86,7 @@
   2 [-]: NEWTABLE  R2 0 0       ; R2 := {}
   3 [-]: SETTABLE  R0 K1 R2     ; R0["mActiveBoosters"] := R2
   4 [-]: GETUPVAL  R2 U0        ; R2 := U0
-  5 [-]: GETTABLE  R2 R2 K3     ; R82 := R2[0xde474187]
+  5 [-]: GETTABLE  R2 R2 K3     ; R2 := R2[0xde474187]
   6 [-]: CALL      R2 1 2       ; R2 := R2()
   7 [-]: SETTABLE  R0 K2 R2     ; R0["mTimerMgr"] := R2
   8 [-]: SELF      R2 R0 K4     ; R3 := R0; R2 := R0[0x431e8984]
@@ -149,7 +149,7 @@
  44 [-]: TEST      R9 0         ; if not R9 then PC := 60
  45 [-]: JMP       60           ; PC := 60
  46 [-]: GETGLOBAL R9 K12       ; R9 := 0x34291f5c
- 47 [-]: GETTABLE  R9 R9 K13    ; R82 := R9[0x397b920f]
+ 47 [-]: GETTABLE  R9 R9 K13    ; R9 := R9[0x397b920f]
  48 [-]: GETTABLE  R10 R3 R7    ; R10 := R3[R7]
  49 [-]: GETTABLE  R10 R10 K14  ; R10 := R10["mExpiryDate"]
  50 [-]: CALL      R9 2 2       ; R9 := R9(R10)
@@ -197,13 +197,13 @@
  92 [-]: TEST      R10 1        ; if R10 then PC := 100
  93 [-]: JMP       100          ; PC := 100
  94 [-]: GETGLOBAL R10 K23      ; R10 := 0x33bdd652
- 95 [-]: GETTABLE  R10 R10 K24  ; R82 := R10[0x23d5322f]
+ 95 [-]: GETTABLE  R10 R10 K24  ; R10 := R10[0x23d5322f]
  96 [-]: MOVE      R11 R2       ; R11 := R2
  97 [-]: MOVE      R12 R8       ; R12 := R8
  98 [-]: CALL      R10 3 1      ; R10(R11,R12)
  99 [-]: JMP       105          ; PC := 105
 100 [-]: GETGLOBAL R10 K23      ; R10 := 0x33bdd652
-101 [-]: GETTABLE  R10 R10 K24  ; R82 := R10[0x23d5322f]
+101 [-]: GETTABLE  R10 R10 K24  ; R10 := R10[0x23d5322f]
 102 [-]: GETTABLE  R11 R0 K0    ; R11 := R0["mActiveBoosters"]
 103 [-]: MOVE      R12 R8       ; R12 := R8
 104 [-]: CALL      R10 3 1      ; R10(R11,R12)
@@ -252,7 +252,7 @@
 147 [-]: JMP       149          ; PC := 149
 148 [-]: FORLOOP   R16 118      ; R16 += R18; if R16 <= R17 then begin PC := 118; R19 := R16 end
 149 [-]: GETGLOBAL R25 K23      ; R25 := 0x33bdd652
-150 [-]: GETTABLE  R25 R25 K24  ; R82 := R25[0x23d5322f]
+150 [-]: GETTABLE  R25 R25 K24  ; R25 := R25[0x23d5322f]
 151 [-]: GETTABLE  R26 R0 K0    ; R26 := R0["mActiveBoosters"]
 152 [-]: GETTABLE  R27 R2 R13   ; R27 := R2[R13]
 153 [-]: CALL      R25 3 1      ; R25(R26,R27)
@@ -268,11 +268,11 @@
 163 [-]: GETTABLE  R30 R25 K31  ; R30 := R25["mGlobalUpgrades"]
 164 [-]: GETTABLE  R30 R30 R29  ; R30 := R30[R29]
 165 [-]: GETGLOBAL R31 K12      ; R31 := 0x34291f5c
-166 [-]: GETTABLE  R31 R31 K13  ; R82 := R31[0x397b920f]
+166 [-]: GETTABLE  R31 R31 K13  ; R31 := R31[0x397b920f]
 167 [-]: GETTABLE  R32 R30 K32  ; R32 := R30["mActivation"]
 168 [-]: CALL      R31 2 2      ; R31 := R31(R32)
 169 [-]: GETGLOBAL R32 K12      ; R32 := 0x34291f5c
-170 [-]: GETTABLE  R32 R32 K13  ; R82 := R32[0x397b920f]
+170 [-]: GETTABLE  R32 R32 K13  ; R32 := R32[0x397b920f]
 171 [-]: GETTABLE  R33 R30 K14  ; R33 := R30["mExpiryDate"]
 172 [-]: CALL      R32 2 2      ; R32 := R32(R33)
 173 [-]: LT        0 R31 K15    ; if R31 >= 0.000000 then PC := 177
@@ -311,7 +311,7 @@
 206 [-]: TEST      R38 1        ; if R38 then PC := 237
 207 [-]: JMP       237          ; PC := 237
 208 [-]: GETGLOBAL R44 K12      ; R44 := 0x34291f5c
-209 [-]: GETTABLE  R44 R44 K13  ; R82 := R44[0x397b920f]
+209 [-]: GETTABLE  R44 R44 K13  ; R44 := R44[0x397b920f]
 210 [-]: GETTABLE  R45 R37 K14  ; R45 := R37["mExpiryDate"]
 211 [-]: CALL      R44 2 2      ; R44 := R44(R45)
 212 [-]: LT        0 K15 R44    ; if 0.000000 >= R44 then PC := 237
@@ -335,7 +335,7 @@
 230 [-]: GETTABLE  R46 R37 K10  ; R46 := R37["mItemType"]
 231 [-]: SETTABLE  R45 K10 R46  ; R45["mItemType"] := R46
 232 [-]: GETGLOBAL R46 K23      ; R46 := 0x33bdd652
-233 [-]: GETTABLE  R46 R46 K24  ; R82 := R46[0x23d5322f]
+233 [-]: GETTABLE  R46 R46 K24  ; R46 := R46[0x23d5322f]
 234 [-]: GETTABLE  R47 R0 K0    ; R47 := R0["mActiveBoosters"]
 235 [-]: MOVE      R48 R45      ; R48 := R45
 236 [-]: CALL      R46 3 1      ; R46(R47,R48)
@@ -355,7 +355,7 @@
 250 [-]: EQ        1 R50 K2     ; if R50 == nil then PC := 267
 251 [-]: JMP       267          ; PC := 267
 252 [-]: GETGLOBAL R50 K12      ; R50 := 0x34291f5c
-253 [-]: GETTABLE  R50 R50 K13  ; R82 := R50[0x397b920f]
+253 [-]: GETTABLE  R50 R50 K13  ; R50 := R50[0x397b920f]
 254 [-]: GETTABLE  R51 R0 K0    ; R51 := R0["mActiveBoosters"]
 255 [-]: GETTABLE  R51 R51 R49  ; R51 := R51[R49]
 256 [-]: GETTABLE  R51 R51 K14  ; R51 := R51["mExpiryDate"]

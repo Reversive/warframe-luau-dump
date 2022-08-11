@@ -48,7 +48,7 @@
  15 [-]: LT        0 R4 K5      ; if R4 >= 1.000000 then PC := 44
  16 [-]: JMP       44           ; PC := 44
  17 [-]: GETGLOBAL R5 K6        ; R5 := 0x5bced4c4
- 18 [-]: GETTABLE  R5 R5 K7     ; R82 := R5[0xac1b386a]
+ 18 [-]: GETTABLE  R5 R5 K7     ; R5 := R5[0xac1b386a]
  19 [-]: LOADK     R6 1         ; R6 := 1.000000
  20 [-]: MUL       R7 R4 K8     ; R7 := R4 * 2.000000
  21 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
@@ -57,7 +57,7 @@
  24 [-]: MOVE      R9 R5        ; R9 := R5
  25 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
  26 [-]: GETGLOBAL R6 K6        ; R6 := 0x5bced4c4
- 27 [-]: GETTABLE  R6 R6 K10    ; R82 := R6[0xb62ecfe0]
+ 27 [-]: GETTABLE  R6 R6 K10    ; R6 := R6[0xb62ecfe0]
  28 [-]: LOADK     R7 0         ; R7 := 0.000000
  29 [-]: SUB       R8 R4 K11    ; R8 := R4 - 0.333000
  30 [-]: MUL       R8 R8 K12    ; R8 := R8 * 1.500000

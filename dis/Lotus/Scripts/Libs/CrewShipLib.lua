@@ -44,7 +44,7 @@
  10 [-]: JMP       12           ; PC := 12
  11 [-]: RETURN    R0 1         ; return 
  12 [-]: GETGLOBAL R10 K4       ; R10 := 0x5bced4c4
- 13 [-]: GETTABLE  R10 R10 K5   ; R82 := R10[0x55f27c30]
+ 13 [-]: GETTABLE  R10 R10 K5   ; R10 := R10[0x55f27c30]
  14 [-]: GETGLOBAL R11 K6       ; R11 := 0x9bafffe3
  15 [-]: LOADK     R12 3        ; R12 := 3.000000
  16 [-]: LOADK     R13 5        ; R13 := 5.000000
@@ -55,7 +55,7 @@
  21 [-]: SELF      R11 R11 K8   ; R12 := R11; R11 := R11[0xef893aec]
  22 [-]: CALL      R11 2 2      ; R11 := R11(R12)
  23 [-]: GETGLOBAL R12 K4       ; R12 := 0x5bced4c4
- 24 [-]: GETTABLE  R12 R12 K5   ; R82 := R12[0x55f27c30]
+ 24 [-]: GETTABLE  R12 R12 K5   ; R12 := R12[0x55f27c30]
  25 [-]: GETGLOBAL R13 K6       ; R13 := 0x9bafffe3
  26 [-]: LOADK     R14 1        ; R14 := 1.000000
  27 [-]: LOADK     R15 1        ; R15 := 1.000000

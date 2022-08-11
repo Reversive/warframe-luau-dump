@@ -342,7 +342,7 @@
  61 [-]: LOADBOOL  R9 0 0       ; R9 := false
  62 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
  63 [-]: GETGLOBAL R6 K24       ; R6 := 0x34291f5c
- 64 [-]: GETTABLE  R6 R6 K25    ; R82 := R6[0x35c16153]
+ 64 [-]: GETTABLE  R6 R6 K25    ; R6 := R6[0x35c16153]
  65 [-]: CALL      R6 1 2       ; R6 := R6()
  66 [-]: SELF      R7 R6 K26    ; R8 := R6; R7 := R6[0xfc0e440a]
  67 [-]: LOADK     R9 10        ; R9 := 10.000000
@@ -799,7 +799,7 @@
 200 [-]: LT        0 K53 R14    ; if 0.000000 >= R14 then PC := 219
 201 [-]: JMP       219          ; PC := 219
 202 [-]: GETGLOBAL R14 K54      ; R14 := 0x5bced4c4
-203 [-]: GETTABLE  R14 R14 K55  ; R82 := R14[0x3630e649]
+203 [-]: GETTABLE  R14 R14 K55  ; R14 := R14[0x3630e649]
 204 [-]: LEN       R15 R13      ; R15 := # R13
 205 [-]: CALL      R14 2 2      ; R14 := R14(R15)
 206 [-]: GETTABLE  R14 R13 R14  ; R14 := R13[R14]
@@ -817,7 +817,7 @@
 218 [-]: MOVE      R12 R14      ; R12 := R14
 219 [-]: LOADNIL   R15 R16      ; R15 := R16 := nil
 220 [-]: GETGLOBAL R17 K54      ; R17 := 0x5bced4c4
-221 [-]: GETTABLE  R17 R17 K55  ; R82 := R17[0x3630e649]
+221 [-]: GETTABLE  R17 R17 K55  ; R17 := R17[0x3630e649]
 222 [-]: CALL      R17 1 2      ; R17 := R17()
 223 [-]: LT        0 R17 K57    ; if R17 >= 0.500000 then PC := 236
 224 [-]: JMP       236          ; PC := 236
@@ -1210,7 +1210,7 @@
  32 [-]: TEST      R11 1        ; if R11 then PC := 39
  33 [-]: JMP       39           ; PC := 39
  34 [-]: GETGLOBAL R11 K11      ; R11 := 0x33bdd652
- 35 [-]: GETTABLE  R11 R11 K12  ; R82 := R11[0x23d5322f]
+ 35 [-]: GETTABLE  R11 R11 K12  ; R11 := R11[0x23d5322f]
  36 [-]: MOVE      R12 R4       ; R12 := R4
  37 [-]: MOVE      R13 R10      ; R13 := R10
  38 [-]: CALL      R11 3 1      ; R11(R12,R13)
@@ -1352,7 +1352,7 @@
  13 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  14 [-]: MOVE      R1 R2        ; R1 := R2
  15 [-]: JMP       2            ; PC := 2
- 16 [-]: SETUPVAL  R0 U0        ; U82 := 
+ 16 [-]: SETUPVAL  R0 U0        ; U82 := R0
  17 [-]: SELF      R2 R1 K3     ; R3 := R1; R2 := R1[0xd5f7912b]
  18 [-]: GETGLOBAL R4 K4        ; R4 := 0x0469f296
  19 [-]: LOADK     R5 K5        ; R5 := "NullifyShrink"
@@ -1422,7 +1422,7 @@
  13 [-]: CALL      R10 2 2      ; R10 := R10(R11)
  14 [-]: GETGLOBAL R11 K7       ; R11 := 0x00046924
  15 [-]: GETGLOBAL R12 K8       ; R12 := 0x5bced4c4
- 16 [-]: GETTABLE  R12 R12 K9   ; R82 := R12[0x3630e649]
+ 16 [-]: GETTABLE  R12 R12 K9   ; R12 := R12[0x3630e649]
  17 [-]: LOADK     R13 0        ; R13 := 0.000000
  18 [-]: LOADK     R14 360      ; R14 := 360.000000
  19 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
@@ -1618,7 +1618,7 @@
  28 [-]: GETGLOBAL R2 K9        ; R2 := 0xc7389b1d
  29 [-]: GETGLOBAL R2 K10       ; R2 := 0x4f468d45
  30 [-]: GETGLOBAL R2 K11       ; R2 := 0x74227cf8
- 31 [-]: SETUPVAL  R0 U1        ; U82 := 
+ 31 [-]: SETUPVAL  R0 U1        ; U82 := R1
  32 [-]: SELF      R3 R1 K12    ; R4 := R1; R3 := R1[0xd5f7912b]
  33 [-]: GETGLOBAL R5 K13       ; R5 := 0x0469f296
  34 [-]: LOADK     R6 K14       ; R6 := "EvaluateLoop"

@@ -78,7 +78,7 @@
  10 [-]: RETURN    R0 1         ; return 
  11 [-]: GETGLOBAL R4 K3        ; R4 := 0x338861c5
  12 [-]: GETGLOBAL R5 K4        ; R5 := 0x5bced4c4
- 13 [-]: GETTABLE  R5 R5 K5     ; R82 := R5[0x55f27c30]
+ 13 [-]: GETTABLE  R5 R5 K5     ; R5 := R5[0x55f27c30]
  14 [-]: MOVE      R6 R2        ; R6 := R2
  15 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  16 [-]: GETGLOBAL R6 K3        ; R6 := 0x338861c5
@@ -104,13 +104,13 @@
  36 [-]: CALL      R10 2 0      ; R10,... := R10(R11)
  37 [-]: CALL      R5 0 2       ; R5 := R5(R6,...)
  38 [-]: GETGLOBAL R6 K13       ; R6 := 0x34291f5c
- 39 [-]: GETTABLE  R6 R6 K16    ; R82 := R6[0x5cb2adf8]
+ 39 [-]: GETTABLE  R6 R6 K16    ; R6 := R6[0x5cb2adf8]
  40 [-]: CALL      R6 1 2       ; R6 := R6()
  41 [-]: GETGLOBAL R7 K18       ; R7 := 0x58808c02
  42 [-]: SETTABLE  R6 K17 R7    ; R6["radius"] := R7
  43 [-]: SELF      R7 R6 K19    ; R8 := R6; R7 := R6[0xf326045f]
  44 [-]: GETGLOBAL R9 K13       ; R9 := 0x34291f5c
- 45 [-]: GETTABLE  R9 R9 K20    ; R82 := R9[0x7258f36f]
+ 45 [-]: GETTABLE  R9 R9 K20    ; R9 := R9[0x7258f36f]
  46 [-]: MOVE      R10 R5       ; R10 := R5
  47 [-]: CALL      R9 2 0       ; R9,... := R9(R10)
  48 [-]: CALL      R7 0 1       ; R7(R8,...)

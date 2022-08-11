@@ -169,7 +169,7 @@
   6 [-]: JMP       78           ; PC := 78
   7 [-]: LOADK     R3 -86400    ; R3 := -86400.000000
   8 [-]: GETGLOBAL R4 K2        ; R4 := 0x34291f5c
-  9 [-]: GETTABLE  R4 R4 K3     ; R82 := R4[0x397b920f]
+  9 [-]: GETTABLE  R4 R4 K3     ; R4 := R4[0x397b920f]
  10 [-]: MOVE      R5 R2        ; R5 := R2
  11 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  12 [-]: LT        1 R4 R3      ; if R4 < R3 then PC := 15

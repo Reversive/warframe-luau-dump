@@ -412,7 +412,7 @@
  29 [-]: EQ        1 R11 R6     ; if R11 == R6 then PC := 38
  30 [-]: JMP       38           ; PC := 38
  31 [-]: GETGLOBAL R11 K9       ; R11 := 0x33bdd652
- 32 [-]: GETTABLE  R11 R11 K10  ; R82 := R11[0x23d5322f]
+ 32 [-]: GETTABLE  R11 R11 K10  ; R11 := R11[0x23d5322f]
  33 [-]: MOVE      R12 R4       ; R12 := R4
  34 [-]: GETTABLE  R13 R3 R10   ; R13 := R3[R10]
  35 [-]: SELF      R13 R13 K11  ; R14 := R13; R13 := R13[0xe79e7ef4]

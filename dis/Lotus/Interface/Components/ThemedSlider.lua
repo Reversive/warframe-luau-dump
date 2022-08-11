@@ -67,17 +67,17 @@
  39 [-]: EQ        0 R6 K7      ; if R6 ~= nil then PC := 57
  40 [-]: JMP       57           ; PC := 57
  41 [-]: GETGLOBAL R10 K8       ; R10 := 0x7f5022cf
- 42 [-]: GETTABLE  R10 R10 K9   ; R82 := R10[0x348c01f7]
+ 42 [-]: GETTABLE  R10 R10 K9   ; R10 := R10[0x348c01f7]
  43 [-]: MOVE      R11 R5       ; R11 := R5
  44 [-]: LOADK     R12 K10      ; R12 := "%.(%d+)"
  45 [-]: CALL      R10 3 2      ; R10 := R10(R11,R12)
  46 [-]: GETGLOBAL R11 K8       ; R11 := 0x7f5022cf
- 47 [-]: GETTABLE  R11 R11 K9   ; R82 := R11[0x348c01f7]
+ 47 [-]: GETTABLE  R11 R11 K9   ; R11 := R11[0x348c01f7]
  48 [-]: MOVE      R12 R2       ; R12 := R2
  49 [-]: LOADK     R13 K10      ; R13 := "%.(%d+)"
  50 [-]: CALL      R11 3 2      ; R11 := R11(R12,R13)
  51 [-]: GETGLOBAL R12 K11      ; R12 := 0x5bced4c4
- 52 [-]: GETTABLE  R12 R12 K12  ; R82 := R12[0xb62ecfe0]
+ 52 [-]: GETTABLE  R12 R12 K12  ; R12 := R12[0xb62ecfe0]
  53 [-]: LEN       R13 R10      ; R13 := # R10
  54 [-]: LEN       R14 R11      ; R14 := # R11
  55 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
@@ -102,7 +102,7 @@
  74 [-]: LOADK     R16 31       ; R16 := 31.000000
  75 [-]: MOVE      R17 R12      ; R17 := R12
  76 [-]: CALL      R13 5 1      ; R13(R14,R15,R16,R17)
- 77 [-]: GETTABLE  R13 R9 K19   ; R82 := R13[0xae6791ba]
+ 77 [-]: GETTABLE  R13 R9 K19   ; R13 := R9[0xae6791ba]
  78 [-]: MOVE      R14 R0       ; R14 := R0
  79 [-]: MOVE      R15 R1       ; R15 := R1
  80 [-]: MOVE      R16 R2       ; R16 := R2
@@ -243,7 +243,7 @@
  36 [-]: CONCAT    R4 R4 R5     ; R4 := R4 .. R5
  37 [-]: LOADK     R5 49        ; R5 := 49.000000
  38 [-]: GETUPVAL  R6 U0        ; R6 := U0
- 39 [-]: GETTABLE  R6 R6 K10    ; R82 := R6[0x06d055f9]
+ 39 [-]: GETTABLE  R6 R6 K10    ; R6 := R6[0x06d055f9]
  40 [-]: MOVE      R7 R1        ; R7 := R1
  41 [-]: LOADK     R8 K11       ; R8 := "input"
  42 [-]: LOADK     R9 K12       ; R9 := "dynamic"
@@ -268,7 +268,7 @@
   5 [-]: GETTABLE  R2 R0 K2     ; R2 := R0["mMovie"]
   6 [-]: GETTABLE  R3 R0 K3     ; R3 := R0["mClipName"]
   7 [-]: GETGLOBAL R4 K4        ; R4 := 0x7f5022cf
-  8 [-]: GETTABLE  R4 R4 K5     ; R82 := R4[0x66edf04f]
+  8 [-]: GETTABLE  R4 R4 K5     ; R4 := R4[0x66edf04f]
   9 [-]: MOVE      R5 R3        ; R5 := R3
  10 [-]: LOADK     R6 K6        ; R6 := "%."
  11 [-]: LOADK     R7 K7        ; R7 := ""
@@ -582,7 +582,7 @@
  11 [-]: GETUPVAL  R2 U0        ; R2 := U0
  12 [-]: GETGLOBAL R3 K1        ; R3 := 0x03f57322
  13 [-]: GETGLOBAL R4 K3        ; R4 := 0x7f5022cf
- 14 [-]: GETTABLE  R4 R4 K4     ; R82 := R4[0xe8072ded]
+ 14 [-]: GETTABLE  R4 R4 K4     ; R4 := R4[0xe8072ded]
  15 [-]: LOADK     R5 K5        ; R5 := "%."
  16 [-]: GETTABLE  R6 R0 K6     ; R6 := R0["mDecimals"]
  17 [-]: LOADK     R7 K7        ; R7 := "f"
@@ -693,7 +693,7 @@
  11 [-]: CALL      R2 4 2       ; R2 := R2(R3,R4,R5)
  12 [-]: MOVE      R1 R2        ; R1 := R2
  13 [-]: GETGLOBAL R2 K4        ; R2 := 0x5bced4c4
- 14 [-]: GETTABLE  R2 R2 K5     ; R82 := R2[0xb62ecfe0]
+ 14 [-]: GETTABLE  R2 R2 K5     ; R2 := R2[0xb62ecfe0]
  15 [-]: GETTABLE  R3 R0 K6     ; R3 := R0["mArrowIconWidth"]
  16 [-]: GETTABLE  R4 R0 K7     ; R4 := R0["mArrowIconHeight"]
  17 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
@@ -779,7 +779,7 @@
   4 [-]: GETTABLE  R3 R0 K2     ; R3 := R0["mLabel"]
   5 [-]: CALL      R1 3 1       ; R1(R2,R3)
   6 [-]: GETGLOBAL R1 K3        ; R1 := 0x5bced4c4
-  7 [-]: GETTABLE  R1 R1 K4     ; R82 := R1[0xb62ecfe0]
+  7 [-]: GETTABLE  R1 R1 K4     ; R1 := R1[0xb62ecfe0]
   8 [-]: GETTABLE  R2 R0 K5     ; R2 := R0["mArrowIconWidth"]
   9 [-]: GETTABLE  R3 R0 K6     ; R3 := R0["mArrowIconHeight"]
  10 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
@@ -796,7 +796,7 @@
  21 [-]: GETTABLE  R8 R0 K7     ; R8 := R0["mWidth"]
  22 [-]: GETTABLE  R9 R0 K8     ; R9 := R0["mTextWidth"]
  23 [-]: GETUPVAL  R10 U0       ; R10 := U0
- 24 [-]: GETTABLE  R10 R10 K13  ; R82 := R10[0x06d055f9]
+ 24 [-]: GETTABLE  R10 R10 K13  ; R10 := R10[0x06d055f9]
  25 [-]: GETTABLE  R11 R0 K14   ; R11 := R0["mHideArrows"]
  26 [-]: LOADK     R12 30       ; R12 := 30.000000
  27 [-]: LOADK     R13 0        ; R13 := 0.000000
@@ -1019,13 +1019,13 @@
 
   1 [-]: GETTABLE  R1 R0 K0     ; R1 := R0["mApplyThemes"]
   2 [-]: GETUPVAL  R2 U0        ; R2 := U0
-  3 [-]: GETTABLE  R2 R2 K1     ; R82 := R2[0x5d10207d]
+  3 [-]: GETTABLE  R2 R2 K1     ; R2 := R2[0x5d10207d]
   4 [-]: LOADK     R3 9         ; R3 := 9.000000
   5 [-]: LOADBOOL  R4 1 0       ; R4 := true
   6 [-]: MOVE      R5 R1        ; R5 := R1
   7 [-]: CALL      R2 4 2       ; R2 := R2(R3,R4,R5)
   8 [-]: GETUPVAL  R3 U0        ; R3 := U0
-  9 [-]: GETTABLE  R3 R3 K1     ; R82 := R3[0x5d10207d]
+  9 [-]: GETTABLE  R3 R3 K1     ; R3 := R3[0x5d10207d]
  10 [-]: LOADK     R4 10        ; R4 := 10.000000
  11 [-]: LOADBOOL  R5 1 0       ; R5 := true
  12 [-]: MOVE      R6 R1        ; R6 := R1
@@ -1034,7 +1034,7 @@
  15 [-]: TEST      R4 1         ; if R4 then PC := 23
  16 [-]: JMP       23           ; PC := 23
  17 [-]: GETUPVAL  R4 U0        ; R4 := U0
- 18 [-]: GETTABLE  R4 R4 K1     ; R82 := R4[0x5d10207d]
+ 18 [-]: GETTABLE  R4 R4 K1     ; R4 := R4[0x5d10207d]
  19 [-]: LOADK     R5 2         ; R5 := 2.000000
  20 [-]: LOADBOOL  R6 1 0       ; R6 := true
  21 [-]: MOVE      R7 R1        ; R7 := R1
@@ -1045,7 +1045,7 @@
  26 [-]: LOADK     R8 K7        ; R8 := "Label"
  27 [-]: LOADK     R9 9         ; R9 := 9.000000
  28 [-]: GETUPVAL  R10 U1       ; R10 := U1
- 29 [-]: GETTABLE  R10 R10 K8   ; R82 := R10[0x06d055f9]
+ 29 [-]: GETTABLE  R10 R10 K8   ; R10 := R10[0x06d055f9]
  30 [-]: GETTABLE  R11 R0 K9    ; R11 := R0["mFocused"]
  31 [-]: MOVE      R12 R3       ; R12 := R3
  32 [-]: MOVE      R13 R2       ; R13 := R2
@@ -1057,7 +1057,7 @@
  38 [-]: LOADK     R8 K10       ; R8 := "IconLeft"
  39 [-]: LOADK     R9 9         ; R9 := 9.000000
  40 [-]: GETUPVAL  R10 U1       ; R10 := U1
- 41 [-]: GETTABLE  R10 R10 K8   ; R82 := R10[0x06d055f9]
+ 41 [-]: GETTABLE  R10 R10 K8   ; R10 := R10[0x06d055f9]
  42 [-]: GETTABLE  R11 R0 K11   ; R11 := R0["mArrowFocused"]
  43 [-]: EQ        1 R11 K12    ; if R11 == -1.000000 then PC := 46
  44 [-]: JMP       46           ; PC := 46
@@ -1073,7 +1073,7 @@
  54 [-]: LOADK     R8 K13       ; R8 := "IconRight"
  55 [-]: LOADK     R9 9         ; R9 := 9.000000
  56 [-]: GETUPVAL  R10 U1       ; R10 := U1
- 57 [-]: GETTABLE  R10 R10 K8   ; R82 := R10[0x06d055f9]
+ 57 [-]: GETTABLE  R10 R10 K8   ; R10 := R10[0x06d055f9]
  58 [-]: GETTABLE  R11 R0 K11   ; R11 := R0["mArrowFocused"]
  59 [-]: EQ        1 R11 K14    ; if R11 == 1.000000 then PC := 62
  60 [-]: JMP       62           ; PC := 62
@@ -1091,24 +1091,24 @@
  72 [-]: JMP       74           ; PC := 74
  73 [-]: GETTABLE  R5 R0 K17    ; R5 := R0["mEdgeAlpha"]
  74 [-]: GETUPVAL  R6 U1        ; R6 := U1
- 75 [-]: GETTABLE  R6 R6 K18    ; R82 := R6[0x8bcd12b6]
+ 75 [-]: GETTABLE  R6 R6 K18    ; R6 := R6[0x8bcd12b6]
  76 [-]: MOVE      R7 R3        ; R7 := R3
  77 [-]: CALL      R6 2 2       ; R6 := R6(R7)
  78 [-]: GETUPVAL  R7 U1        ; R7 := U1
- 79 [-]: GETTABLE  R7 R7 K18    ; R82 := R7[0x8bcd12b6]
+ 79 [-]: GETTABLE  R7 R7 K18    ; R7 := R7[0x8bcd12b6]
  80 [-]: GETUPVAL  R8 U1        ; R8 := U1
- 81 [-]: GETTABLE  R8 R8 K8     ; R82 := R8[0x06d055f9]
+ 81 [-]: GETTABLE  R8 R8 K8     ; R8 := R8[0x06d055f9]
  82 [-]: GETTABLE  R9 R0 K15    ; R9 := R0["mSliderFocused"]
  83 [-]: MOVE      R10 R3       ; R10 := R3
  84 [-]: MOVE      R11 R2       ; R11 := R2
  85 [-]: CALL      R8 4 0       ; R8,... := R8(R9,R10,R11)
  86 [-]: CALL      R7 0 2       ; R7 := R7(R8,...)
  87 [-]: GETUPVAL  R8 U1        ; R8 := U1
- 88 [-]: GETTABLE  R8 R8 K18    ; R82 := R8[0x8bcd12b6]
+ 88 [-]: GETTABLE  R8 R8 K18    ; R8 := R8[0x8bcd12b6]
  89 [-]: MOVE      R9 R4        ; R9 := R4
  90 [-]: CALL      R8 2 2       ; R8 := R8(R9)
  91 [-]: GETUPVAL  R9 U1        ; R9 := U1
- 92 [-]: GETTABLE  R9 R9 K18    ; R82 := R9[0x8bcd12b6]
+ 92 [-]: GETTABLE  R9 R9 K18    ; R9 := R9[0x8bcd12b6]
  93 [-]: MOVE      R10 R2       ; R10 := R2
  94 [-]: CALL      R9 2 2       ; R9 := R9(R10)
  95 [-]: GETTABLE  R10 R0 K4    ; R10 := R0["mMovie"]
@@ -1342,7 +1342,7 @@
  46 [-]: ADD       R4 R5 R6     ; R4 := R5 + R6
  47 [-]: GETGLOBAL R5 K8        ; R5 := 0x03f57322
  48 [-]: GETGLOBAL R6 K9        ; R6 := 0x7f5022cf
- 49 [-]: GETTABLE  R6 R6 K10    ; R82 := R6[0xe8072ded]
+ 49 [-]: GETTABLE  R6 R6 K10    ; R6 := R6[0xe8072ded]
  50 [-]: LOADK     R7 K11       ; R7 := "%."
  51 [-]: GETTABLE  R8 R0 K12    ; R8 := R0["mDecimals"]
  52 [-]: LOADK     R9 K13       ; R9 := "f"

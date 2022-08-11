@@ -166,7 +166,7 @@
  23 [-]: LOADK     R1 1         ; R1 := 1.000000
  24 [-]: CALL      R0 2 1       ; R0(R1)
  25 [-]: GETUPVAL  R0 U0        ; R0 := U0
- 26 [-]: GETTABLE  R0 R0 K5     ; R82 := R0[0xf47b8ec3]
+ 26 [-]: GETTABLE  R0 R0 K5     ; R0 := R0[0xf47b8ec3]
  27 [-]: CALL      R0 1 2       ; R0 := R0()
  28 [-]: TEST      R0 1         ; if R0 then PC := 60
  29 [-]: JMP       60           ; PC := 60
@@ -275,7 +275,7 @@
 132 [-]: LOADK     R19 0        ; R19 := 0.000000
 133 [-]: LOADK     R20 0        ; R20 := 0.000000
 134 [-]: GETUPVAL  R21 U2       ; R21 := U2
-135 [-]: GETTABLE  R21 R21 K27  ; R82 := R21[0xe77c9f88]
+135 [-]: GETTABLE  R21 R21 K27  ; R21 := R21[0xe77c9f88]
 136 [-]: GETUPVAL  R22 U1       ; R22 := U1
 137 [-]: CALL      R21 2 2      ; R21 := R21(R22)
 138 [-]: LE        0 R21 K28    ; if R21 > 13.000000 then PC := 191
@@ -423,7 +423,7 @@
  70 [-]: LOADK     R10 0        ; R10 := 0.000000
  71 [-]: LOADK     R11 1        ; R11 := 1.000000
  72 [-]: GETGLOBAL R12 K14      ; R12 := 0x5bced4c4
- 73 [-]: GETTABLE  R12 R12 K15  ; R82 := R12[0xac1b386a]
+ 73 [-]: GETTABLE  R12 R12 K15  ; R12 := R12[0xac1b386a]
  74 [-]: MUL       R13 R5 K16   ; R13 := R5 * 3.000000
  75 [-]: LOADK     R14 4        ; R14 := 4.000000
  76 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)

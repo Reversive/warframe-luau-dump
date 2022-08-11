@@ -73,7 +73,7 @@
  25 [-]: SELF      R3 R3 K14    ; R4 := R3; R3 := R3[0xc97b7a44]
  26 [-]: MOVE      R5 R0        ; R5 := R0
  27 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
- 28 [-]: SETTABLE  R2 K13 R3    ; R2["challengeUserState"] := R3
+ 28 [-]: SETTABLE  R2 K13 R3    ; R2[0x01145f7a] := R3
  29 [-]: GETGLOBAL R3 K12       ; R3 := 0x7b998233
  30 [-]: GETTABLE  R4 R2 K13    ; R4 := R2["challengeUserState"]
  31 [-]: CALL      R3 2 2       ; R3 := R3(R4)
@@ -278,7 +278,7 @@
 154 [-]: CALL      R14 2 2      ; R14 := R14(R15)
 155 [-]: TEST      R14 0        ; if not R14 then PC := 170
 156 [-]: JMP       170          ; PC := 170
-157 [-]: GETTABLE  R14 R0 K31   ; R82 := R14[0xf58a38c0]
+157 [-]: GETTABLE  R14 R0 K31   ; R14 := R0[0xf58a38c0]
 158 [-]: MOVE      R15 R5       ; R15 := R5
 159 [-]: MOVE      R16 R2       ; R16 := R2
 160 [-]: MOVE      R17 R10      ; R17 := R10
@@ -291,7 +291,7 @@
 167 [-]: CALL      R21 2 2      ; R21 := R21(R22)
 168 [-]: LOADBOOL  R22 1 0      ; R22 := true
 169 [-]: CALL      R14 9 1      ; R14(R15,R16,R17,R18,R19,R20,R21,R22)
-170 [-]: GETTABLE  R14 R0 K31   ; R82 := R14[0xf58a38c0]
+170 [-]: GETTABLE  R14 R0 K31   ; R14 := R0[0xf58a38c0]
 171 [-]: MOVE      R15 R5       ; R15 := R5
 172 [-]: MOVE      R16 R2       ; R16 := R2
 173 [-]: MOVE      R17 R10      ; R17 := R10
@@ -359,7 +359,7 @@
 235 [-]: GETTABLE  R14 R0 K38   ; R14 := R0["CallBackOnKill"]
 236 [-]: TEST      R14 0        ; if not R14 then PC := 247
 237 [-]: JMP       247          ; PC := 247
-238 [-]: GETTABLE  R14 R0 K39   ; R82 := R14[0xfc0d2cdc]
+238 [-]: GETTABLE  R14 R0 K39   ; R14 := R0[0xfc0d2cdc]
 239 [-]: MOVE      R15 R5       ; R15 := R5
 240 [-]: MOVE      R16 R10      ; R16 := R10
 241 [-]: SELF      R17 R1 K32   ; R18 := R1; R17 := R1[0x36e85886]
@@ -371,7 +371,7 @@
 247 [-]: GETTABLE  R14 R0 K40   ; R14 := R0["CallBackOnKillEx"]
 248 [-]: TEST      R14 0        ; if not R14 then PC := 260
 249 [-]: JMP       260          ; PC := 260
-250 [-]: GETTABLE  R14 R0 K41   ; R82 := R14[0x7fd9dc99]
+250 [-]: GETTABLE  R14 R0 K41   ; R14 := R0[0x7fd9dc99]
 251 [-]: MOVE      R15 R5       ; R15 := R5
 252 [-]: MOVE      R16 R2       ; R16 := R2
 253 [-]: MOVE      R17 R10      ; R17 := R10

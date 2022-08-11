@@ -50,7 +50,7 @@
 ; Max Stack Size:  6
 
   1 [-]: GETGLOBAL R2 K0        ; R2 := cjson
-  2 [-]: GETTABLE  R2 R2 K1     ; R82 := R2[0xb139d7bc]
+  2 [-]: GETTABLE  R2 R2 K1     ; R2 := R2[0xb139d7bc]
   3 [-]: NEWTABLE  R3 0 1       ; R3 := {}
   4 [-]: GETUPVAL  R4 U0        ; R4 := U0
   5 [-]: MOVE      R5 R0        ; R5 := R0
@@ -343,9 +343,9 @@
  91 [-]: GETUPVAL  R13 U2       ; R13 := U2
  92 [-]: ADD       R14 R12 K25  ; R14 := R12 + 1.000000
  93 [-]: CALL      R13 2 2      ; R13 := R13(R14)
- 94 [-]: SETUPVAL  R13 U1       ; U82 := 
+ 94 [-]: SETUPVAL  R13 U1       ; U82 := R1
  95 [-]: GETGLOBAL R13 K17      ; R13 := 0x6c97a788
- 96 [-]: GETTABLE  R13 R13 K26  ; R82 := R13[0x608bc054]
+ 96 [-]: GETTABLE  R13 R13 K26  ; R13 := R13[0x608bc054]
  97 [-]: CALL      R13 1 2      ; R13 := R13()
  98 [-]: SETTABLE  R13 K27 R1   ; R13["instigator"] := R1
  99 [-]: NEWTABLE  R14 1 0      ; R14 := {}

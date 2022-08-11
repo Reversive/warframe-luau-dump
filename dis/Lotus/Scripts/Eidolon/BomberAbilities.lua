@@ -139,7 +139,7 @@
 114 [-]: CALL      R11 3 1      ; R11(R12,R13)
 115 [-]: SELF      R11 R10 K23  ; R12 := R10; R11 := R10[0x419785d7]
 116 [-]: GETGLOBAL R13 K24      ; R13 := 0x5bced4c4
-117 [-]: GETTABLE  R13 R13 K25  ; R82 := R13[0x3630e649]
+117 [-]: GETTABLE  R13 R13 K25  ; R13 := R13[0x3630e649]
 118 [-]: LEN       R14 R2       ; R14 := # R2
 119 [-]: CALL      R13 2 2      ; R13 := R13(R14)
 120 [-]: GETTABLE  R13 R2 R13   ; R13 := R2[R13]

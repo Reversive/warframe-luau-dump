@@ -98,14 +98,14 @@
 
   1 [-]: NEWTABLE  R0 0 0       ; R0 := {}
   2 [-]: GETGLOBAL R1 K0        ; R1 := 0x33bdd652
-  3 [-]: GETTABLE  R1 R1 K1     ; R82 := R1[0x23d5322f]
+  3 [-]: GETTABLE  R1 R1 K1     ; R1 := R1[0x23d5322f]
   4 [-]: MOVE      R2 R0        ; R2 := R0
   5 [-]: GETUPVAL  R3 U0        ; R3 := U0
   6 [-]: SELF      R3 R3 K2     ; R4 := R3; R3 := R3[0xed4e0128]
   7 [-]: CALL      R3 2 0       ; R3,... := R3(R4)
   8 [-]: CALL      R1 0 1       ; R1(R2,...)
   9 [-]: GETGLOBAL R1 K3        ; R1 := 0xbd496aa1
- 10 [-]: GETTABLE  R1 R1 K4     ; R82 := R1[0x42645da3]
+ 10 [-]: GETTABLE  R1 R1 K4     ; R1 := R1[0x42645da3]
  11 [-]: MOVE      R2 R0        ; R2 := R0
  12 [-]: CALL      R1 2 2       ; R1 := R1(R2)
  13 [-]: SELF      R2 R1 K5     ; R3 := R1; R2 := R1[0xd2d3875a]

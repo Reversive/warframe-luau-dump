@@ -47,7 +47,7 @@
  19 [-]: JMP       32           ; PC := 32
  20 [-]: LOADK     R5 K8        ; R5 := "<p><font color=\"#"
  21 [-]: GETGLOBAL R6 K9        ; R6 := 0x7f5022cf
- 22 [-]: GETTABLE  R6 R6 K10    ; R82 := R6[0xe8072ded]
+ 22 [-]: GETTABLE  R6 R6 K10    ; R6 := R6[0xe8072ded]
  23 [-]: LOADK     R7 K11       ; R7 := "%X"
  24 [-]: GETGLOBAL R8 K12       ; R8 := 0x0032441c
  25 [-]: GETTABLE  R8 R8 K13    ; R8 := R8["UIColor_Red"]
@@ -59,7 +59,7 @@
  31 [-]: JMP       33           ; PC := 33
  32 [-]: MOVE      R4 R3        ; R4 := R3
  33 [-]: GETGLOBAL R5 K16       ; R5 := _T
- 34 [-]: GETTABLE  R5 R5 K17    ; R82 := R5[0x80b8b450]
+ 34 [-]: GETTABLE  R5 R5 K17    ; R5 := R5[0x80b8b450]
  35 [-]: MOVE      R6 R4        ; R6 := R4
  36 [-]: MOVE      R7 R2        ; R7 := R2
  37 [-]: CALL      R5 3 1       ; R5(R6,R7)
@@ -78,7 +78,7 @@
   1 [-]: SELF      R2 R0 K0     ; R3 := R0; R2 := R0[0x2b54251b]
   2 [-]: CALL      R2 2 2       ; R2 := R2(R3)
   3 [-]: GETGLOBAL R3 K1        ; R3 := 0x5bced4c4
-  4 [-]: GETTABLE  R3 R3 K2     ; R82 := R3[0x99675e23]
+  4 [-]: GETTABLE  R3 R3 K2     ; R3 := R3[0x99675e23]
   5 [-]: SELF      R4 R2 K3     ; R5 := R2; R4 := R2[0xfa527ec6]
   6 [-]: CALL      R4 2 0       ; R4,... := R4(R5)
   7 [-]: CALL      R3 0 2       ; R3 := R3(R4,...)
@@ -172,7 +172,7 @@
   5 [-]: JMP       7            ; PC := 7
   6 [-]: RETURN    R0 1         ; return 
   7 [-]: GETGLOBAL R1 K2        ; R1 := 0x34291f5c
-  8 [-]: GETTABLE  R1 R1 K3     ; R82 := R1[0xe82b9b03]
+  8 [-]: GETTABLE  R1 R1 K3     ; R1 := R1[0xe82b9b03]
   9 [-]: MOVE      R2 R0        ; R2 := R0
  10 [-]: CALL      R1 2 1       ; R1(R2)
  11 [-]: GETGLOBAL R1 K0        ; R1 := 0x7b998233
@@ -209,7 +209,7 @@
  42 [-]: SELF      R2 R2 K10    ; R3 := R2; R2 := R2[0x6dd7aa66]
  43 [-]: GETGLOBAL R4 K1        ; R4 := 0x58075188
  44 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
- 45 [-]: SETUPVAL  R2 U0        ; U82 := 
+ 45 [-]: SETUPVAL  R2 U0        ; U82 := 
  46 [-]: GETGLOBAL R2 K0        ; R2 := 0x7b998233
  47 [-]: GETUPVAL  R3 U0        ; R3 := U0
  48 [-]: CALL      R2 2 2       ; R2 := R2(R3)

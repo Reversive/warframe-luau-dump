@@ -141,7 +141,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
-  1 [-]: SETUPVAL  R0 U0        ; U82 := 
+  1 [-]: SETUPVAL  R0 U0        ; U82 := R0
   2 [-]: RETURN    R0 1         ; return 
 
 
@@ -216,7 +216,7 @@
  43 [-]: EQ        0 R4 K19     ; if R4 ~= 0.000000 then PC := 53
  44 [-]: JMP       53           ; PC := 53
  45 [-]: GETGLOBAL R4 K15       ; R4 := _T
- 46 [-]: GETTABLE  R4 R4 K20    ; R82 := R4[0x7dce37bc]
+ 46 [-]: GETTABLE  R4 R4 K20    ; R4 := R4[0x7dce37bc]
  47 [-]: GETGLOBAL R5 K21       ; R5 := 0x603636ad
  48 [-]: LOADK     R6 K22       ; R6 := "/Lotus/Language/Menu/Loadout_NewSlotUnlocked"
  49 [-]: NEWTABLE  R7 0 0       ; R7 := {}
@@ -359,12 +359,12 @@
   4 [-]: JMP       43           ; PC := 43
   5 [-]: GETUPVAL  R0 U0        ; R0 := U0
   6 [-]: SUB       R0 R0 K0     ; R0 := R0 - 1.000000
-  7 [-]: SETUPVAL  R0 U0        ; U82 := 
+  7 [-]: SETUPVAL  R0 U0        ; U82 := R0
   8 [-]: GETUPVAL  R0 U0        ; R0 := U0
   9 [-]: EQ        1 R0 K0      ; if R0 == 1.000000 then PC := 26
  10 [-]: JMP       26           ; PC := 26
  11 [-]: GETGLOBAL R0 K2        ; R0 := _T
- 12 [-]: GETTABLE  R0 R0 K3     ; R82 := R0[0x659270d0]
+ 12 [-]: GETTABLE  R0 R0 K3     ; R0 := R0[0x659270d0]
  13 [-]: GETUPVAL  R1 U0        ; R1 := U0
  14 [-]: LOADK     R2 K4        ; R2 := " "
  15 [-]: GETGLOBAL R3 K5        ; R3 := 0x603636ad
@@ -379,7 +379,7 @@
  24 [-]: CALL      R0 6 1       ; R0(R1,R2,R3,R4,R5)
  25 [-]: JMP       40           ; PC := 40
  26 [-]: GETGLOBAL R0 K2        ; R0 := _T
- 27 [-]: GETTABLE  R0 R0 K3     ; R82 := R0[0x659270d0]
+ 27 [-]: GETTABLE  R0 R0 K3     ; R0 := R0[0x659270d0]
  28 [-]: GETUPVAL  R1 U0        ; R1 := U0
  29 [-]: LOADK     R2 K4        ; R2 := " "
  30 [-]: GETGLOBAL R3 K5        ; R3 := 0x603636ad

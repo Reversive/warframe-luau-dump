@@ -28,7 +28,7 @@
   1 [-]: LT        0 K0 R0      ; if 0.000000 >= R0 then PC := 9
   2 [-]: JMP       9            ; PC := 9
   3 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  4 [-]: GETTABLE  R1 R1 K1     ; R82 := R1[0x0c9eedd2]
+  4 [-]: GETTABLE  R1 R1 K1     ; R1 := R1[0x0c9eedd2]
   5 [-]: MOVE      R2 R0        ; R2 := R0
   6 [-]: LOADBOOL  R3 1 0       ; R3 := true
   7 [-]: CALL      R1 3 1       ; R1(R2,R3)

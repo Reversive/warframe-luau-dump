@@ -143,12 +143,12 @@
   5 [-]: GETGLOBAL R2 K3        ; R2 := 0xe365bcc8
   6 [-]: CALL      R0 3 1       ; R0(R1,R2)
   7 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  8 [-]: GETTABLE  R0 R0 K4     ; R82 := R0[0xa26220ed]
+  8 [-]: GETTABLE  R0 R0 K4     ; R0 := R0[0xa26220ed]
   9 [-]: GETGLOBAL R1 K5        ; R1 := 0x46ceb9a3
  10 [-]: LOADK     R2 0         ; R2 := 0.000000
  11 [-]: CALL      R0 3 1       ; R0(R1,R2)
  12 [-]: GETGLOBAL R0 K6        ; R0 := 0x34291f5c
- 13 [-]: GETTABLE  R0 R0 K7     ; R82 := R0[0x8ee24660]
+ 13 [-]: GETTABLE  R0 R0 K7     ; R0 := R0[0x8ee24660]
  14 [-]: LOADBOOL  R1 1 0       ; R1 := true
  15 [-]: CALL      R0 2 1       ; R0(R1)
  16 [-]: RETURN    R0 1         ; return 
@@ -168,7 +168,7 @@
   3 [-]: TEST      R1 1         ; if R1 then PC := 81
   4 [-]: JMP       81           ; PC := 81
   5 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  6 [-]: GETTABLE  R1 R1 K2     ; R82 := R1[0xbdf58098]
+  6 [-]: GETTABLE  R1 R1 K2     ; R1 := R1[0xbdf58098]
   7 [-]: GETGLOBAL R2 K3        ; R2 := 0x46ceb9a3
   8 [-]: CALL      R1 2 2       ; R1 := R1(R2)
   9 [-]: GETGLOBAL R2 K0        ; R2 := _T
@@ -182,7 +182,7 @@
  17 [-]: SELF      R4 R0 K8     ; R5 := R0; R4 := R0[0xa2880940]
  18 [-]: CALL      R4 2 1       ; R4(R5)
  19 [-]: GETUPVAL  R4 U0        ; R4 := U0
- 20 [-]: GETTABLE  R4 R4 K9     ; R82 := R4[0x6bfeac2e]
+ 20 [-]: GETTABLE  R4 R4 K9     ; R4 := R4[0x6bfeac2e]
  21 [-]: GETGLOBAL R5 K3        ; R5 := 0x46ceb9a3
  22 [-]: CALL      R4 2 1       ; R4(R5)
  23 [-]: GETGLOBAL R4 K10       ; R4 := 0x89326c93
@@ -256,14 +256,14 @@
 ; Max Stack Size:  6
 
   1 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  2 [-]: GETTABLE  R1 R1 K0     ; R82 := R1[0x200054f6]
+  2 [-]: GETTABLE  R1 R1 K0     ; R1 := R1[0x200054f6]
   3 [-]: GETGLOBAL R2 K1        ; R2 := 0x647528de
   4 [-]: LOADBOOL  R3 1 0       ; R3 := true
   5 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
   6 [-]: TEST      R1 0         ; if not R1 then PC := 19
   7 [-]: JMP       19           ; PC := 19
   8 [-]: GETUPVAL  R1 U1        ; R1 := U1
-  9 [-]: GETTABLE  R1 R1 K2     ; R82 := R1[0xbdf58098]
+  9 [-]: GETTABLE  R1 R1 K2     ; R1 := R1[0xbdf58098]
  10 [-]: GETGLOBAL R2 K3        ; R2 := 0x46ceb9a3
  11 [-]: CALL      R1 2 2       ; R1 := R1(R2)
  12 [-]: TEST      R1 1         ; if R1 then PC := 19

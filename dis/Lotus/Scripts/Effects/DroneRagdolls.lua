@@ -137,7 +137,7 @@
  72 [-]: LT        0 K12 R5     ; if 0.000000 >= R5 then PC := 168
  73 [-]: JMP       168          ; PC := 168
  74 [-]: GETGLOBAL R10 K13      ; R10 := 0x5bced4c4
- 75 [-]: GETTABLE  R10 R10 K14  ; R82 := R10[0xa40531d8]
+ 75 [-]: GETTABLE  R10 R10 K14  ; R10 := R10[0xa40531d8]
  76 [-]: MOVE      R11 R5       ; R11 := R5
  77 [-]: LOADK     R12 3        ; R12 := 3.000000
  78 [-]: CALL      R10 3 2      ; R10 := R10(R11,R12)

@@ -356,7 +356,7 @@
   4 [-]: TEST      R0 1         ; if R0 then PC := 17
   5 [-]: JMP       17           ; PC := 17
   6 [-]: GETGLOBAL R0 K2        ; R0 := 0x7f5022cf
-  7 [-]: GETTABLE  R0 R0 K3     ; R82 := R0[0xa5c556b9]
+  7 [-]: GETTABLE  R0 R0 K3     ; R0 := R0[0xa5c556b9]
   8 [-]: GETGLOBAL R1 K1        ; R1 := 0xe7f2b02f
   9 [-]: SELF      R1 R1 K4     ; R2 := R1; R1 := R1[0x6923a4fa]
  10 [-]: CALL      R1 2 2       ; R1 := R1(R2)
@@ -456,7 +456,7 @@
  31 [-]: TEST      R6 0         ; if not R6 then PC := 41
  32 [-]: JMP       41           ; PC := 41
  33 [-]: GETGLOBAL R6 K7        ; R6 := 0x7f5022cf
- 34 [-]: GETTABLE  R6 R6 K8     ; R82 := R6[0x04981ab3]
+ 34 [-]: GETTABLE  R6 R6 K8     ; R6 := R6[0x04981ab3]
  35 [-]: GETGLOBAL R7 K9        ; R7 := 0x64fb1586
  36 [-]: GETGLOBAL R8 K5        ; R8 := _T
  37 [-]: GETTABLE  R8 R8 K6     ; R8 := R8["RailJackNextMissionNode"]
@@ -468,14 +468,14 @@
  43 [-]: TESTSET   R3 R6 1      ; if R6 then PC := 61 else R3 := R6
  44 [-]: JMP       61           ; PC := 61
  45 [-]: GETGLOBAL R6 K7        ; R6 := 0x7f5022cf
- 46 [-]: GETTABLE  R6 R6 K11    ; R82 := R6[0xa5c556b9]
+ 46 [-]: GETTABLE  R6 R6 K11    ; R6 := R6[0xa5c556b9]
  47 [-]: MOVE      R7 R5        ; R7 := R5
  48 [-]: LOADK     R8 K12       ; R8 := "dojo"
  49 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
  50 [-]: EQ        0 R6 K13     ; if R6 ~= nil then PC := 60
  51 [-]: JMP       60           ; PC := 60
  52 [-]: GETGLOBAL R6 K7        ; R6 := 0x7f5022cf
- 53 [-]: GETTABLE  R6 R6 K11    ; R82 := R6[0xa5c556b9]
+ 53 [-]: GETTABLE  R6 R6 K11    ; R6 := R6[0xa5c556b9]
  54 [-]: MOVE      R7 R5        ; R7 := R5
  55 [-]: LOADK     R8 K14       ; R8 := "hub"
  56 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
@@ -525,12 +525,12 @@
 100 [-]: TEST      R6 1         ; if R6 then PC := 111
 101 [-]: JMP       111          ; PC := 111
 102 [-]: GETUPVAL  R7 U2        ; R7 := U2
-103 [-]: GETTABLE  R7 R7 K22    ; R82 := R7[0x5182210f]
+103 [-]: GETTABLE  R7 R7 K22    ; R7 := R7[0x5182210f]
 104 [-]: CALL      R7 1 2       ; R7 := R7()
 105 [-]: TESTSET   R6 R7 1      ; if R7 then PC := 111 else R6 := R7
 106 [-]: JMP       111          ; PC := 111
 107 [-]: GETUPVAL  R7 U2        ; R7 := U2
-108 [-]: GETTABLE  R7 R7 K23    ; R82 := R7[0x60fc57fc]
+108 [-]: GETTABLE  R7 R7 K23    ; R7 := R7[0x60fc57fc]
 109 [-]: CALL      R7 1 2       ; R7 := R7()
 110 [-]: MOVE      R6 R7        ; R6 := R7
 111 [-]: JMP       135          ; PC := 135
@@ -740,7 +740,7 @@
 ; Max Stack Size:  17
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0x34291f5c
-  2 [-]: GETTABLE  R1 R1 K1     ; R82 := R1[0xe82b9b03]
+  2 [-]: GETTABLE  R1 R1 K1     ; R1 := R1[0xe82b9b03]
   3 [-]: MOVE      R2 R0        ; R2 := R0
   4 [-]: CALL      R1 2 1       ; R1(R2)
   5 [-]: GETGLOBAL R1 K2        ; R1 := 0x0469f296
@@ -915,7 +915,7 @@
  20 [-]: GETGLOBAL R2 K1        ; R2 := _T
  21 [-]: SETTABLE  R2 K2 K9     ; R2["Railjack_ExternalCameraSpot"] := nil
  22 [-]: GETUPVAL  R2 U0        ; R2 := U0
- 23 [-]: GETTABLE  R2 R2 K10    ; R82 := R2[0x9e3d3434]
+ 23 [-]: GETTABLE  R2 R2 K10    ; R2 := R2[0x9e3d3434]
  24 [-]: LOADBOOL  R3 0 0       ; R3 := false
  25 [-]: CALL      R2 2 1       ; R2(R3)
  26 [-]: LOADBOOL  R2 1 0       ; R2 := true
@@ -994,7 +994,7 @@
  58 [-]: SETTABLE  R6 K9 K12    ; R6["ExternalCamsIndex"] := 1.000000
  59 [-]: GETGLOBAL R6 K0        ; R6 := _T
  60 [-]: GETUPVAL  R7 U0        ; R7 := U0
- 61 [-]: GETTABLE  R7 R7 K14    ; R82 := R7[0x659d451f]
+ 61 [-]: GETTABLE  R7 R7 K14    ; R7 := R7[0x659d451f]
  62 [-]: GETGLOBAL R8 K15       ; R8 := 0x4f517e48
  63 [-]: CALL      R7 2 2       ; R7 := R7(R8)
  64 [-]: SETTABLE  R6 K13 R7    ; R6["Railjack_OutsideSound"] := R7
@@ -1084,7 +1084,7 @@
 148 [-]: TEST      R5 0         ; if not R5 then PC := 154
 149 [-]: JMP       154          ; PC := 154
 150 [-]: GETUPVAL  R8 U3        ; R8 := U3
-151 [-]: GETTABLE  R8 R8 K30    ; R82 := R8[0x9e3d3434]
+151 [-]: GETTABLE  R8 R8 K30    ; R8 := R8[0x9e3d3434]
 152 [-]: LOADBOOL  R9 1 0       ; R9 := true
 153 [-]: CALL      R8 2 1       ; R8(R9)
 154 [-]: LOADBOOL  R8 1 0       ; R8 := true

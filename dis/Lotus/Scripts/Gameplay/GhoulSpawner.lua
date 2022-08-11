@@ -131,7 +131,7 @@
  83 [-]: RETURN    R0 1         ; return 
  84 [-]: LOADBOOL  R5 1 0       ; R5 := true
  85 [-]: GETGLOBAL R6 K15       ; R6 := 0x5bced4c4
- 86 [-]: GETTABLE  R6 R6 K16    ; R82 := R6[0x3630e649]
+ 86 [-]: GETTABLE  R6 R6 K16    ; R6 := R6[0x3630e649]
  87 [-]: GETUPVAL  R7 U1        ; R7 := U1
  88 [-]: GETUPVAL  R8 U2        ; R8 := U2
  89 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
@@ -200,7 +200,7 @@
 152 [-]: LOADBOOL  R10 1 0      ; R10 := true
 153 [-]: JMP       162          ; PC := 162
 154 [-]: GETGLOBAL R15 K15      ; R15 := 0x5bced4c4
-155 [-]: GETTABLE  R15 R15 K16  ; R82 := R15[0x3630e649]
+155 [-]: GETTABLE  R15 R15 K16  ; R15 := R15[0x3630e649]
 156 [-]: LOADK     R16 0        ; R16 := 0.500000
 157 [-]: LOADK     R17 2        ; R17 := 2.000000
 158 [-]: CALL      R15 3 2      ; R15 := R15(R16,R17)
@@ -438,7 +438,7 @@
  23 [-]: LOADBOOL  R4 0 1       ; R4 := false; PC := 24
  24 [-]: LOADBOOL  R4 1 0       ; R4 := true
  25 [-]: GETGLOBAL R5 K7        ; R5 := 0x5bced4c4
- 26 [-]: GETTABLE  R5 R5 K8     ; R82 := R5[0x3630e649]
+ 26 [-]: GETTABLE  R5 R5 K8     ; R5 := R5[0x3630e649]
  27 [-]: GETUPVAL  R6 U0        ; R6 := U0
  28 [-]: GETUPVAL  R7 U1        ; R7 := U1
  29 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)

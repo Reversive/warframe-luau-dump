@@ -52,7 +52,7 @@
   1 [-]: EQ        1 R1 K0      ; if R1 == nil then PC := 23
   2 [-]: JMP       23           ; PC := 23
   3 [-]: GETGLOBAL R3 K1        ; R3 := 0x33bdd652
-  4 [-]: GETTABLE  R3 R3 K2     ; R82 := R3[0x23d5322f]
+  4 [-]: GETTABLE  R3 R3 K2     ; R3 := R3[0x23d5322f]
   5 [-]: GETTABLE  R4 R0 K3     ; R4 := R0["mResourceQueue"]
   6 [-]: NEWTABLE  R5 0 2       ; R5 := {}
   7 [-]: SETTABLE  R5 K4 R1     ; R5["Name"] := R1
@@ -107,15 +107,15 @@
  21 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  22 [-]: TEST      R4 1         ; if R4 then PC := 28
  23 [-]: JMP       28           ; PC := 28
- 24 [-]: GETTABLE  R4 R2 K9     ; R82 := R4[0x75afeb61]
+ 24 [-]: GETTABLE  R4 R2 K9     ; R4 := R2[0x75afeb61]
  25 [-]: MOVE      R5 R3        ; R5 := R3
  26 [-]: CALL      R4 2 1       ; R4(R5)
  27 [-]: JMP       31           ; PC := 31
- 28 [-]: GETTABLE  R4 R2 K9     ; R82 := R4[0x75afeb61]
+ 28 [-]: GETTABLE  R4 R2 K9     ; R4 := R2[0x75afeb61]
  29 [-]: LOADNIL   R5 R5        ; R5 := nil
  30 [-]: CALL      R4 2 1       ; R4(R5)
  31 [-]: GETGLOBAL R4 K10       ; R4 := 0x33bdd652
- 32 [-]: GETTABLE  R4 R4 K11    ; R82 := R4[0x9c1f3b5a]
+ 32 [-]: GETTABLE  R4 R4 K11    ; R4 := R4[0x9c1f3b5a]
  33 [-]: GETTABLE  R5 R0 K0     ; R5 := R0["mResourceQueue"]
  34 [-]: LOADK     R6 1         ; R6 := 1.000000
  35 [-]: CALL      R4 3 1       ; R4(R5,R6)

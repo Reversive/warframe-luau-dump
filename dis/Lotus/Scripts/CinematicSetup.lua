@@ -76,13 +76,13 @@
  47 [-]: LOADBOOL  R11 1 0      ; R11 := true
  48 [-]: CALL      R8 4 1       ; R8(R9,R10,R11)
  49 [-]: GETGLOBAL R8 K15       ; R8 := 0x33bdd652
- 50 [-]: GETTABLE  R8 R8 K16    ; R82 := R8[0x23d5322f]
+ 50 [-]: GETTABLE  R8 R8 K16    ; R8 := R8[0x23d5322f]
  51 [-]: MOVE      R9 R2        ; R9 := R2
  52 [-]: GETTABLE  R10 R7 K13   ; R10 := R7[1.000000]
  53 [-]: CALL      R8 3 1       ; R8(R9,R10)
  54 [-]: FORLOOP   R3 35        ; R3 += R5; if R3 <= R4 then begin PC := 35; R6 := R3 end
  55 [-]: GETGLOBAL R8 K15       ; R8 := 0x33bdd652
- 56 [-]: GETTABLE  R8 R8 K17    ; R82 := R8[0xf21b1d8e]
+ 56 [-]: GETTABLE  R8 R8 K17    ; R8 := R8[0xf21b1d8e]
  57 [-]: MOVE      R9 R2        ; R9 := R2
  58 [-]: CLOSURE   R10 0        ; R10 := closure(Function #1.1)
  59 [-]: CALL      R8 3 1       ; R8(R9,R10)
@@ -239,7 +239,7 @@
  12 [-]: CALL      R2 2 1       ; R2(R3)
  13 [-]: LOADNIL   R2 R2        ; R2 := nil
  14 [-]: GETGLOBAL R3 K6        ; R3 := 0x7f5022cf
- 15 [-]: GETTABLE  R3 R3 K7     ; R82 := R3[0xa5c556b9]
+ 15 [-]: GETTABLE  R3 R3 K7     ; R3 := R3[0xa5c556b9]
  16 [-]: MOVE      R4 R1        ; R4 := R1
  17 [-]: LOADK     R5 K8        ; R5 := "Derelict"
  18 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
@@ -254,7 +254,7 @@
  27 [-]: GETTABLE  R2 R4 R3     ; R2 := R4[R3]
  28 [-]: JMP       136          ; PC := 136
  29 [-]: GETGLOBAL R4 K6        ; R4 := 0x7f5022cf
- 30 [-]: GETTABLE  R4 R4 K7     ; R82 := R4[0xa5c556b9]
+ 30 [-]: GETTABLE  R4 R4 K7     ; R4 := R4[0xa5c556b9]
  31 [-]: MOVE      R5 R1        ; R5 := R1
  32 [-]: LOADK     R6 K12       ; R6 := "Infested"
  33 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
@@ -262,7 +262,7 @@
  35 [-]: JMP       62           ; PC := 62
  36 [-]: LOADNIL   R4 R4        ; R4 := nil
  37 [-]: GETGLOBAL R5 K6        ; R5 := 0x7f5022cf
- 38 [-]: GETTABLE  R5 R5 K7     ; R82 := R5[0xa5c556b9]
+ 38 [-]: GETTABLE  R5 R5 K7     ; R5 := R5[0xa5c556b9]
  39 [-]: MOVE      R6 R1        ; R6 := R1
  40 [-]: LOADK     R7 K13       ; R7 := "Grineer"
  41 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
@@ -287,7 +287,7 @@
  60 [-]: GETTABLE  R2 R5 R4     ; R2 := R5[R4]
  61 [-]: JMP       136          ; PC := 136
  62 [-]: GETGLOBAL R5 K6        ; R5 := 0x7f5022cf
- 63 [-]: GETTABLE  R5 R5 K7     ; R82 := R5[0xa5c556b9]
+ 63 [-]: GETTABLE  R5 R5 K7     ; R5 := R5[0xa5c556b9]
  64 [-]: MOVE      R6 R1        ; R6 := R1
  65 [-]: LOADK     R7 K16       ; R7 := "GrineerAsteroid"
  66 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
@@ -302,7 +302,7 @@
  75 [-]: GETTABLE  R2 R6 R5     ; R2 := R6[R5]
  76 [-]: JMP       136          ; PC := 136
  77 [-]: GETGLOBAL R6 K6        ; R6 := 0x7f5022cf
- 78 [-]: GETTABLE  R6 R6 K7     ; R82 := R6[0xa5c556b9]
+ 78 [-]: GETTABLE  R6 R6 K7     ; R6 := R6[0xa5c556b9]
  79 [-]: MOVE      R7 R1        ; R7 := R1
  80 [-]: LOADK     R8 K17       ; R8 := "Ocean"
  81 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
@@ -317,7 +317,7 @@
  90 [-]: GETTABLE  R2 R7 R6     ; R2 := R7[R6]
  91 [-]: JMP       136          ; PC := 136
  92 [-]: GETGLOBAL R7 K6        ; R7 := 0x7f5022cf
- 93 [-]: GETTABLE  R7 R7 K7     ; R82 := R7[0xa5c556b9]
+ 93 [-]: GETTABLE  R7 R7 K7     ; R7 := R7[0xa5c556b9]
  94 [-]: MOVE      R8 R1        ; R8 := R1
  95 [-]: LOADK     R9 K13       ; R9 := "Grineer"
  96 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
@@ -332,7 +332,7 @@
 105 [-]: GETTABLE  R2 R8 R7     ; R2 := R8[R7]
 106 [-]: JMP       136          ; PC := 136
 107 [-]: GETGLOBAL R8 K6        ; R8 := 0x7f5022cf
-108 [-]: GETTABLE  R8 R8 K7     ; R82 := R8[0xa5c556b9]
+108 [-]: GETTABLE  R8 R8 K7     ; R8 := R8[0xa5c556b9]
 109 [-]: MOVE      R9 R1        ; R9 := R1
 110 [-]: LOADK     R10 K20      ; R10 := "Corpus"
 111 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
@@ -347,7 +347,7 @@
 120 [-]: GETTABLE  R2 R9 R8     ; R2 := R9[R8]
 121 [-]: JMP       136          ; PC := 136
 122 [-]: GETGLOBAL R9 K6        ; R9 := 0x7f5022cf
-123 [-]: GETTABLE  R9 R9 K7     ; R82 := R9[0xa5c556b9]
+123 [-]: GETTABLE  R9 R9 K7     ; R9 := R9[0xa5c556b9]
 124 [-]: MOVE      R10 R1       ; R10 := R1
 125 [-]: LOADK     R11 K22      ; R11 := "OrokinTower"
 126 [-]: CALL      R9 3 2       ; R9 := R9(R10,R11)
@@ -370,7 +370,7 @@
 143 [-]: CALL      R10 2 1      ; R10(R11)
 144 [-]: RETURN    R0 1         ; return 
 145 [-]: GETGLOBAL R10 K26      ; R10 := 0xbd496aa1
-146 [-]: GETTABLE  R10 R10 K27  ; R82 := R10[0x42645da3]
+146 [-]: GETTABLE  R10 R10 K27  ; R10 := R10[0x42645da3]
 147 [-]: NEWTABLE  R11 0 0      ; R11 := {}
 148 [-]: SELF      R12 R2 K2    ; R13 := R2; R12 := R2[0xed4e0128]
 149 [-]: CALL      R12 2 0      ; R12,... := R12(R13)

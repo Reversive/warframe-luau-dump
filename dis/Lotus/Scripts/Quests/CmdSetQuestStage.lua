@@ -68,7 +68,7 @@
 ; Max Stack Size:  2
 
   1 [-]: LOADBOOL  R0 1 0       ; R0 := true
-  2 [-]: SETUPVAL  R0 U0        ; U82 := 
+  2 [-]: SETUPVAL  R0 U0        ; U82 := R0
   3 [-]: RETURN    R0 1         ; return 
 
 
@@ -94,7 +94,7 @@
  11 [-]: CALL      R3 2 0       ; R3,... := R3(R4)
  12 [-]: CALL      R2 0 2       ; R2 := R2(R3,...)
  13 [-]: GETUPVAL  R3 U0        ; R3 := U0
- 14 [-]: GETTABLE  R3 R3 K6     ; R82 := R3[0xa5a62f78]
+ 14 [-]: GETTABLE  R3 R3 K6     ; R3 := R3[0xa5a62f78]
  15 [-]: MOVE      R4 R1        ; R4 := R1
  16 [-]: MOVE      R5 R2        ; R5 := R2
  17 [-]: LOADBOOL  R6 0 0       ; R6 := false
@@ -130,9 +130,9 @@
  47 [-]: CALL      R5 2 1       ; R5(R6)
  48 [-]: RETURN    R0 1         ; return 
  49 [-]: GETGLOBAL R5 K16       ; R5 := 0x5bced4c4
- 50 [-]: GETTABLE  R5 R5 K17    ; R82 := R5[0xb62ecfe0]
+ 50 [-]: GETTABLE  R5 R5 K17    ; R5 := R5[0xb62ecfe0]
  51 [-]: GETGLOBAL R6 K16       ; R6 := 0x5bced4c4
- 52 [-]: GETTABLE  R6 R6 K18    ; R82 := R6[0x55f27c30]
+ 52 [-]: GETTABLE  R6 R6 K18    ; R6 := R6[0x55f27c30]
  53 [-]: GETGLOBAL R7 K11       ; R7 := 0x03f57322
  54 [-]: MOVE      R8 R0        ; R8 := R0
  55 [-]: CALL      R7 2 0       ; R7,... := R7(R8)
@@ -155,9 +155,9 @@
  72 [-]: LOADK     R6 K20       ; R6 := "Changing quest stage, please wait..."
  73 [-]: CALL      R5 2 1       ; R5(R6)
  74 [-]: LOADBOOL  R5 0 0       ; R5 := false
- 75 [-]: SETUPVAL  R5 U2        ; U82 := 
+ 75 [-]: SETUPVAL  R5 U2        ; U82 := R2
  76 [-]: GETGLOBAL R5 K21       ; R5 := 0x6c97a788
- 77 [-]: GETTABLE  R5 R5 K22    ; R82 := R5[0x3cc30953]
+ 77 [-]: GETTABLE  R5 R5 K22    ; R5 := R5[0x3cc30953]
  78 [-]: MOVE      R6 R2        ; R6 := R2
  79 [-]: LT        0 K23 R4     ; if 0.000000 >= R4 then PC := 84
  80 [-]: JMP       84           ; PC := 84
@@ -182,8 +182,7 @@
  99 [-]: LOADK     R8 1         ; R8 := 1.000000
 100 [-]: FORPREP   R6 114       ; R6 -= R8; PC := 114
 101 [-]: LOADBOOL  R10 0 0      ; R10 := false
-102 [-]: SETUPVAL  R10 U2       ; U82 := 
-
+102 [-]: SETUPVAL  R10 U2       ; U82 := R2
 103 [-]: SELF      R10 R1 K28   ; R11 := R1; R10 := R1[0x88cfae95]
 104 [-]: SUB       R12 R9 K15   ; R12 := R9 - 1.000000
 105 [-]: LOADK     R13 K24      ; R13 := "OnResponse"
@@ -220,7 +219,7 @@
 136 [-]: CONCAT    R13 R13 R14  ; R13 := R13 .. R14
 137 [-]: CALL      R12 2 1      ; R12(R13)
 138 [-]: GETUPVAL  R12 U0       ; R12 := U0
-139 [-]: GETTABLE  R12 R12 K36  ; R82 := R12[0x7c37aeec]
+139 [-]: GETTABLE  R12 R12 K36  ; R12 := R12[0x7c37aeec]
 140 [-]: CALL      R12 1 1      ; R12()
 141 [-]: RETURN    R0 1         ; return 
 

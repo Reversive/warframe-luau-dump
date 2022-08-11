@@ -77,7 +77,7 @@
   8 [-]: SELF      R2 R1 K2     ; R3 := R1; R2 := R1[0xfa9e477f]
   9 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  10 [-]: GETUPVAL  R3 U0        ; R3 := U0
- 11 [-]: GETTABLE  R3 R3 K3     ; R82 := R3[0xf0090084]
+ 11 [-]: GETTABLE  R3 R3 K3     ; R3 := R3[0xf0090084]
  12 [-]: CALL      R3 1 2       ; R3 := R3()
  13 [-]: TEST      R3 1         ; if R3 then PC := 17
  14 [-]: JMP       17           ; PC := 17
@@ -231,7 +231,7 @@
  48 [-]: MOVE      R14 R1       ; R14 := R1
  49 [-]: CALL      R8 7 1       ; R8(R9,R10,R11,R12,R13,R14)
  50 [-]: GETGLOBAL R8 K14       ; R8 := 0x6c97a788
- 51 [-]: GETTABLE  R8 R8 K15    ; R82 := R8[0x733fc736]
+ 51 [-]: GETTABLE  R8 R8 K15    ; R8 := R8[0x733fc736]
  52 [-]: LOADBOOL  R9 1 0       ; R9 := true
  53 [-]: LOADBOOL  R10 1 0      ; R10 := true
  54 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
@@ -309,11 +309,11 @@
  39 [-]: LOADK     R11 1        ; R11 := 1.000000
  40 [-]: FORPREP   R9 109       ; R9 -= R11; PC := 109
  41 [-]: GETGLOBAL R13 K11      ; R13 := 0x5bced4c4
- 42 [-]: GETTABLE  R13 R13 K12  ; R82 := R13[0xdde5c6a1]
+ 42 [-]: GETTABLE  R13 R13 K12  ; R13 := R13[0xdde5c6a1]
  43 [-]: MOVE      R14 R8       ; R14 := R8
  44 [-]: CALL      R13 2 2      ; R13 := R13(R14)
  45 [-]: GETGLOBAL R14 K11      ; R14 := 0x5bced4c4
- 46 [-]: GETTABLE  R14 R14 K13  ; R82 := R14[0x3eda26fc]
+ 46 [-]: GETTABLE  R14 R14 K13  ; R14 := R14[0x3eda26fc]
  47 [-]: MOVE      R15 R13      ; R15 := R13
  48 [-]: CALL      R14 2 2      ; R14 := R14(R15)
  49 [-]: GETGLOBAL R15 K14      ; R15 := 0x0c5e62f9
@@ -322,7 +322,7 @@
  52 [-]: CALL      R15 3 2      ; R15 := R15(R16,R17)
  53 [-]: MUL       R14 R14 R15  ; R14 := R14 * R15
  54 [-]: GETGLOBAL R15 K11      ; R15 := 0x5bced4c4
- 55 [-]: GETTABLE  R15 R15 K15  ; R82 := R15[0x00fa6bf1]
+ 55 [-]: GETTABLE  R15 R15 K15  ; R15 := R15[0x00fa6bf1]
  56 [-]: MOVE      R16 R13      ; R16 := R13
  57 [-]: CALL      R15 2 2      ; R15 := R15(R16)
  58 [-]: GETGLOBAL R16 K14      ; R16 := 0x0c5e62f9
@@ -366,7 +366,7 @@
  96 [-]: MUL       R21 R20 K26  ; R21 := R20 * 2.000000
  97 [-]: ADD       R21 R3 R21   ; R21 := R3 + R21
  98 [-]: GETGLOBAL R22 K27      ; R22 := 0x33bdd652
- 99 [-]: GETTABLE  R22 R22 K28  ; R82 := R22[0x23d5322f]
+ 99 [-]: GETTABLE  R22 R22 K28  ; R22 := R22[0x23d5322f]
 100 [-]: MOVE      R23 R7       ; R23 := R7
 101 [-]: NEWTABLE  R24 0 4      ; R24 := {}
 102 [-]: SETTABLE  R24 K29 R17  ; R24["endPos"] := R17

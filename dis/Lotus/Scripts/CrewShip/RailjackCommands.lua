@@ -115,14 +115,14 @@
  11 [-]: TEST      R0 0         ; if not R0 then PC := 16
  12 [-]: JMP       16           ; PC := 16
  13 [-]: GETGLOBAL R0 K2        ; R0 := _T
- 14 [-]: GETTABLE  R0 R0 K4     ; R82 := R0[0x6bc4e323]
+ 14 [-]: GETTABLE  R0 R0 K4     ; R0 := R0[0x6bc4e323]
  15 [-]: CALL      R0 1 1       ; R0()
  16 [-]: GETGLOBAL R0 K2        ; R0 := _T
  17 [-]: GETTABLE  R0 R0 K5     ; R0 := R0["BreachFailedOverride"]
  18 [-]: TEST      R0 0         ; if not R0 then PC := 24
  19 [-]: JMP       24           ; PC := 24
  20 [-]: GETGLOBAL R0 K2        ; R0 := _T
- 21 [-]: GETTABLE  R0 R0 K6     ; R82 := R0[0x3a2a69c2]
+ 21 [-]: GETTABLE  R0 R0 K6     ; R0 := R0[0x3a2a69c2]
  22 [-]: CALL      R0 1 1       ; R0()
  23 [-]: RETURN    R0 1         ; return 
  24 [-]: GETGLOBAL R0 K7        ; R0 := 0xbe190284
@@ -135,7 +135,7 @@
  31 [-]: LOADK     R3 0         ; R3 := 0.000000
  32 [-]: CALL      R0 4 1       ; R0(R1,R2,R3)
  33 [-]: GETUPVAL  R0 U0        ; R0 := U0
- 34 [-]: GETTABLE  R0 R0 K12    ; R82 := R0[0x8525799d]
+ 34 [-]: GETTABLE  R0 R0 K12    ; R0 := R0[0x8525799d]
  35 [-]: CALL      R0 1 1       ; R0()
  36 [-]: RETURN    R0 1         ; return 
 

@@ -87,7 +87,7 @@
  78 [-]: MOVE      R23 R11      ; R23 := R11
  79 [-]: SETLIST   R18 5 1      ; R18[(1-1)*FPF+i] := R(18+i), 1 <= i <= 5
  80 [-]: SETTABLE  R17 K18 R18  ; R17["active"] := R18
- 81 [-]: SETTABLE  R17 K22 R0   ; R17["extraKonzuTransmissionSet"] := R0
+ 81 [-]: SETTABLE  R17 K22 R0   ; R17[0x8eb2112d] := R0
  82 [-]: SETTABLE  R17 K23 K24  ; R17["addExtraTownDialog"] := true
  83 [-]: SETTABLE  R17 K25 K26  ; R17["weatherOverride"] := "infestation"
  84 [-]: NEWTABLE  R18 0 7      ; R18 := {}
@@ -109,7 +109,7 @@
 100 [-]: MOVE      R20 R7       ; R20 := R7
 101 [-]: SETLIST   R19 1 1      ; R19[(1-1)*FPF+i] := R(19+i), 1 <= i <= 1
 102 [-]: SETTABLE  R18 K27 R19  ; R18["complete"] := R19
-103 [-]: SETTABLE  R18 K22 R1   ; R18["extraKonzuTransmissionSet"] := R1
+103 [-]: SETTABLE  R18 K22 R1   ; R18[0x8eb2112d] := R1
 104 [-]: SETTABLE  R18 K23 K24  ; R18["addExtraTownDialog"] := true
 105 [-]: SETTABLE  R18 K25 K26  ; R18["weatherOverride"] := "infestation"
 106 [-]: CLOSURE   R19 0        ; R19 := closure(Function #1)
@@ -248,7 +248,7 @@
  25 [-]: TEST      R8 1         ; if R8 then PC := 34
  26 [-]: JMP       34           ; PC := 34
  27 [-]: GETGLOBAL R8 K6        ; R8 := 0x33bdd652
- 28 [-]: GETTABLE  R8 R8 K7     ; R82 := R8[0x23d5322f]
+ 28 [-]: GETTABLE  R8 R8 K7     ; R8 := R8[0x23d5322f]
  29 [-]: MOVE      R9 R1        ; R9 := R1
  30 [-]: GETTABLE  R10 R7 K5    ; R10 := R7["agent"]
  31 [-]: SELF      R10 R10 K8   ; R11 := R10; R10 := R10[0xed4e0128]
@@ -271,7 +271,7 @@
  48 [-]: TEST      R13 0        ; if not R13 then PC := 56
  49 [-]: JMP       56           ; PC := 56
  50 [-]: GETGLOBAL R13 K6       ; R13 := 0x33bdd652
- 51 [-]: GETTABLE  R13 R13 K7   ; R82 := R13[0x23d5322f]
+ 51 [-]: GETTABLE  R13 R13 K7   ; R13 := R13[0x23d5322f]
  52 [-]: MOVE      R14 R1       ; R14 := R1
  53 [-]: SELF      R15 R12 K8   ; R16 := R12; R15 := R12[0xed4e0128]
  54 [-]: CALL      R15 2 0      ; R15,... := R15(R16)
@@ -293,7 +293,7 @@
  70 [-]: TEST      R18 0        ; if not R18 then PC := 78
  71 [-]: JMP       78           ; PC := 78
  72 [-]: GETGLOBAL R18 K6       ; R18 := 0x33bdd652
- 73 [-]: GETTABLE  R18 R18 K7   ; R82 := R18[0x23d5322f]
+ 73 [-]: GETTABLE  R18 R18 K7   ; R18 := R18[0x23d5322f]
  74 [-]: MOVE      R19 R1       ; R19 := R1
  75 [-]: SELF      R20 R17 K8   ; R21 := R17; R20 := R17[0xed4e0128]
  76 [-]: CALL      R20 2 0      ; R20,... := R20(R21)
@@ -307,7 +307,7 @@
  84 [-]: LOADK     R19 K13      ; R19 := "Start Loading Infested Agent Types"
  85 [-]: CALL      R18 2 1      ; R18(R19)
  86 [-]: GETGLOBAL R18 K14      ; R18 := 0xbd496aa1
- 87 [-]: GETTABLE  R18 R18 K15  ; R82 := R18[0x42645da3]
+ 87 [-]: GETTABLE  R18 R18 K15  ; R18 := R18[0x42645da3]
  88 [-]: MOVE      R19 R1       ; R19 := R1
  89 [-]: CALL      R18 2 2      ; R18 := R18(R19)
  90 [-]: GETGLOBAL R19 K0       ; R19 := 0x7b998233
@@ -451,7 +451,7 @@
  17 [-]: TEST      R7 0         ; if not R7 then PC := 24
  18 [-]: JMP       24           ; PC := 24
  19 [-]: GETGLOBAL R7 K6        ; R7 := _T
- 20 [-]: GETTABLE  R7 R7 K8     ; R82 := R7[0x656daa90]
+ 20 [-]: GETTABLE  R7 R7 K8     ; R7 := R7[0x656daa90]
  21 [-]: MOVE      R8 R6        ; R8 := R6
  22 [-]: CALL      R7 2 1       ; R7(R8)
  23 [-]: JMP       26           ; PC := 26
@@ -510,14 +510,14 @@
  76 [-]: SETTABLE  R10 K19 R11  ; R10["mCallback"] := R11
  77 [-]: SETTABLE  R9 K15 R10   ; R9["Recruiter_InfestedPlains"] := R10
  78 [-]: GETGLOBAL R9 K20       ; R9 := 0xbd496aa1
- 79 [-]: GETTABLE  R9 R9 K21    ; R82 := R9[0x42645da3]
+ 79 [-]: GETTABLE  R9 R9 K21    ; R9 := R9[0x42645da3]
  80 [-]: NEWTABLE  R10 0 0      ; R10 := {}
  81 [-]: GETGLOBAL R11 K10      ; R11 := 0xfc8bd7a1
  82 [-]: SELF      R11 R11 K22  ; R12 := R11; R11 := R11[0xed4e0128]
  83 [-]: CALL      R11 2 0      ; R11,... := R11(R12)
  84 [-]: SETLIST   R10 0 1      ; R10[(1-1)*FPF+i] := R(10+i), 1 <= i <= 0
  85 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 86 [-]: SETUPVAL  R9 U0        ; U82 := 	
+ 86 [-]: SETUPVAL  R9 U0        ; U82 := 
  87 [-]: LOADK     R9 1         ; R9 := 1.000000
  88 [-]: LEN       R10 R0       ; R10 := # R0
  89 [-]: LOADK     R11 1        ; R11 := 1.000000
@@ -580,7 +580,7 @@
 146 [-]: JMP       148          ; PC := 148
 147 [-]: RETURN    R0 1         ; return 
 148 [-]: GETGLOBAL R20 K33      ; R20 := 0x5bced4c4
-149 [-]: GETTABLE  R20 R20 K34  ; R82 := R20[0xe4a5b3ca]
+149 [-]: GETTABLE  R20 R20 K34  ; R20 := R20[0xe4a5b3ca]
 150 [-]: MOVE      R21 R2       ; R21 := R2
 151 [-]: CALL      R20 2 2      ; R20 := R20(R21)
 152 [-]: GETGLOBAL R21 K35      ; R21 := 0xb7cbd06b
@@ -622,12 +622,12 @@
 188 [-]: TEST      R35 0        ; if not R35 then PC := 201
 189 [-]: JMP       201          ; PC := 201
 190 [-]: GETGLOBAL R35 K38      ; R35 := 0x33bdd652
-191 [-]: GETTABLE  R35 R35 K39  ; R82 := R35[0x23d5322f]
+191 [-]: GETTABLE  R35 R35 K39  ; R35 := R35[0x23d5322f]
 192 [-]: MOVE      R36 R22      ; R36 := R22
 193 [-]: MOVE      R37 R34      ; R37 := R34
 194 [-]: CALL      R35 3 1      ; R35(R36,R37)
 195 [-]: GETGLOBAL R35 K38      ; R35 := 0x33bdd652
-196 [-]: GETTABLE  R35 R35 K39  ; R82 := R35[0x23d5322f]
+196 [-]: GETTABLE  R35 R35 K39  ; R35 := R35[0x23d5322f]
 197 [-]: MOVE      R36 R23      ; R36 := R23
 198 [-]: SELF      R37 R34 K40  ; R38 := R34; R37 := R34[0x65d389cb]
 199 [-]: CALL      R37 2 0      ; R37,... := R37(R38)
@@ -873,11 +873,11 @@
 102 [-]: EQ        0 R16 R17    ; if R16 ~= R17 then PC := 136
 103 [-]: JMP       136          ; PC := 136
 104 [-]: GETGLOBAL R16 K22      ; R16 := 0x34291f5c
-105 [-]: GETTABLE  R16 R16 K23  ; R82 := R16[0x397b920f]
+105 [-]: GETTABLE  R16 R16 K23  ; R16 := R16[0x397b920f]
 106 [-]: GETTABLE  R17 R15 K24  ; R17 := R15["mActivation"]
 107 [-]: CALL      R16 2 2      ; R16 := R16(R17)
 108 [-]: GETGLOBAL R17 K22      ; R17 := 0x34291f5c
-109 [-]: GETTABLE  R17 R17 K23  ; R82 := R17[0x397b920f]
+109 [-]: GETTABLE  R17 R17 K23  ; R17 := R17[0x397b920f]
 110 [-]: GETTABLE  R18 R15 K25  ; R18 := R15["mExpiry"]
 111 [-]: CALL      R17 2 2      ; R17 := R17(R18)
 112 [-]: LE        0 R16 K26    ; if R16 > 0.000000 then PC := 136
@@ -887,7 +887,7 @@
 116 [-]: GETTABLE  R18 R10 K27  ; R18 := R10["callback"]
 117 [-]: TEST      R18 0        ; if not R18 then PC := 121
 118 [-]: JMP       121          ; PC := 121
-119 [-]: GETTABLE  R18 R10 K28  ; R82 := R18[0x56348e81]
+119 [-]: GETTABLE  R18 R10 K28  ; R18 := R10[0x56348e81]
 120 [-]: CALL      R18 1 1      ; R18()
 121 [-]: GETUPVAL  R18 U3       ; R18 := U3
 122 [-]: GETTABLE  R19 R10 K29  ; R19 := R10["active"]
@@ -915,11 +915,11 @@
 144 [-]: EQ        0 R23 R24    ; if R23 ~= R24 then PC := 178
 145 [-]: JMP       178          ; PC := 178
 146 [-]: GETGLOBAL R23 K22      ; R23 := 0x34291f5c
-147 [-]: GETTABLE  R23 R23 K23  ; R82 := R23[0x397b920f]
+147 [-]: GETTABLE  R23 R23 K23  ; R23 := R23[0x397b920f]
 148 [-]: GETTABLE  R24 R22 K24  ; R24 := R22["mActivation"]
 149 [-]: CALL      R23 2 2      ; R23 := R23(R24)
 150 [-]: GETGLOBAL R24 K22      ; R24 := 0x34291f5c
-151 [-]: GETTABLE  R24 R24 K23  ; R82 := R24[0x397b920f]
+151 [-]: GETTABLE  R24 R24 K23  ; R24 := R24[0x397b920f]
 152 [-]: GETTABLE  R25 R22 K25  ; R25 := R22["mExpiry"]
 153 [-]: CALL      R24 2 2      ; R24 := R24(R25)
 154 [-]: LE        0 R23 K26    ; if R23 > 0.000000 then PC := 178
@@ -929,7 +929,7 @@
 158 [-]: GETTABLE  R25 R10 K27  ; R25 := R10["callback"]
 159 [-]: TEST      R25 0        ; if not R25 then PC := 163
 160 [-]: JMP       163          ; PC := 163
-161 [-]: GETTABLE  R25 R10 K28  ; R82 := R25[0x56348e81]
+161 [-]: GETTABLE  R25 R10 K28  ; R25 := R10[0x56348e81]
 162 [-]: CALL      R25 1 1      ; R25()
 163 [-]: GETUPVAL  R25 U3       ; R25 := U3
 164 [-]: GETTABLE  R26 R10 K29  ; R26 := R10["active"]

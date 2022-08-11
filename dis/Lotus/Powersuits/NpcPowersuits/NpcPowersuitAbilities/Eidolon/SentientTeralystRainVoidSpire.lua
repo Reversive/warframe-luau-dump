@@ -37,7 +37,7 @@
  14 [-]: LT        0 R4 R5      ; if R4 >= R5 then PC := 34
  15 [-]: JMP       34           ; PC := 34
  16 [-]: GETGLOBAL R5 K8        ; R5 := 0x5bced4c4
- 17 [-]: GETTABLE  R5 R5 K9     ; R82 := R5[0xb62ecfe0]
+ 17 [-]: GETTABLE  R5 R5 K9     ; R5 := R5[0xb62ecfe0]
  18 [-]: GETGLOBAL R6 K7        ; R6 := 0xba7d82a1
  19 [-]: DIV       R6 R4 R6     ; R6 := R4 / R6
  20 [-]: SUB       R6 K10 R6    ; R6 := 1.000000 - R6
@@ -63,7 +63,7 @@
  40 [-]: SELF      R6 R6 K15    ; R7 := R6; R6 := R6[0x66905cb0]
  41 [-]: CALL      R6 2 2       ; R6 := R6(R7)
  42 [-]: GETGLOBAL R7 K8        ; R7 := 0x5bced4c4
- 43 [-]: GETTABLE  R7 R7 K16    ; R82 := R7[0x3630e649]
+ 43 [-]: GETTABLE  R7 R7 K16    ; R7 := R7[0x3630e649]
  44 [-]: CALL      R7 1 2       ; R7 := R7()
  45 [-]: GETGLOBAL R8 K17       ; R8 := 0x0bfe46be
  46 [-]: GETGLOBAL R9 K18       ; R9 := 0x5c317908
@@ -110,7 +110,7 @@
  87 [-]: TEST      R9 0         ; if not R9 then PC := 219
  88 [-]: JMP       219          ; PC := 219
  89 [-]: GETGLOBAL R9 K8        ; R9 := 0x5bced4c4
- 90 [-]: GETTABLE  R9 R9 K16    ; R82 := R9[0x3630e649]
+ 90 [-]: GETTABLE  R9 R9 K16    ; R9 := R9[0x3630e649]
  91 [-]: CALL      R9 1 2       ; R9 := R9()
  92 [-]: GETGLOBAL R10 K17      ; R10 := 0x0bfe46be
  93 [-]: GETGLOBAL R11 K18      ; R11 := 0x5c317908
@@ -145,7 +145,7 @@
 122 [-]: TEST      R15 1        ; if R15 then PC := 129
 123 [-]: JMP       129          ; PC := 129
 124 [-]: GETGLOBAL R15 K28      ; R15 := 0x33bdd652
-125 [-]: GETTABLE  R15 R15 K29  ; R82 := R15[0x23d5322f]
+125 [-]: GETTABLE  R15 R15 K29  ; R15 := R15[0x23d5322f]
 126 [-]: MOVE      R16 R9       ; R16 := R9
 127 [-]: MOVE      R17 R14      ; R17 := R14
 128 [-]: CALL      R15 3 1      ; R15(R16,R17)
@@ -226,7 +226,7 @@
 203 [-]: LOADK     R21 1        ; R21 := 1.000000
 204 [-]: CALL      R19 3 1      ; R19(R20,R21)
 205 [-]: GETGLOBAL R19 K28      ; R19 := 0x33bdd652
-206 [-]: GETTABLE  R19 R19 K29  ; R82 := R19[0x23d5322f]
+206 [-]: GETTABLE  R19 R19 K29  ; R19 := R19[0x23d5322f]
 207 [-]: GETGLOBAL R20 K26      ; R20 := _T
 208 [-]: GETTABLE  R20 R20 K27  ; R20 := R20["parentMinions"]
 209 [-]: MOVE      R21 R17      ; R21 := R17
@@ -258,7 +258,7 @@
 235 [-]: LT        0 R4 R19     ; if R4 >= R19 then PC := 254
 236 [-]: JMP       254          ; PC := 254
 237 [-]: GETGLOBAL R19 K8       ; R19 := 0x5bced4c4
-238 [-]: GETTABLE  R19 R19 K52  ; R82 := R19[0xac1b386a]
+238 [-]: GETTABLE  R19 R19 K52  ; R19 := R19[0xac1b386a]
 239 [-]: GETGLOBAL R20 K7       ; R20 := 0xba7d82a1
 240 [-]: DIV       R20 R4 R20   ; R20 := R4 / R20
 241 [-]: LOADK     R21 1        ; R21 := 1.000000

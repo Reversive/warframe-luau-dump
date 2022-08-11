@@ -294,7 +294,7 @@
  32 [-]: CONCAT    R9 R9 R10    ; R9 := R9 .. R10
  33 [-]: CALL      R8 2 1       ; R8(R9)
  34 [-]: GETGLOBAL R8 K14       ; R8 := 0x34291f5c
- 35 [-]: GETTABLE  R8 R8 K15    ; R82 := R8[0x9ad21ae9]
+ 35 [-]: GETTABLE  R8 R8 K15    ; R8 := R8[0x9ad21ae9]
  36 [-]: CALL      R8 1 2       ; R8 := R8()
  37 [-]: TEST      R8 0         ; if not R8 then PC := 42
  38 [-]: JMP       42           ; PC := 42
@@ -306,7 +306,7 @@
  44 [-]: LOADBOOL  R8 0 1       ; R8 := false; PC := 45
  45 [-]: LOADBOOL  R8 1 0       ; R8 := true
  46 [-]: GETGLOBAL R9 K14       ; R9 := 0x34291f5c
- 47 [-]: GETTABLE  R9 R9 K15    ; R82 := R9[0x9ad21ae9]
+ 47 [-]: GETTABLE  R9 R9 K15    ; R9 := R9[0x9ad21ae9]
  48 [-]: CALL      R9 1 2       ; R9 := R9()
  49 [-]: TEST      R9 0         ; if not R9 then PC := 54
  50 [-]: JMP       54           ; PC := 54
@@ -528,7 +528,7 @@
 266 [-]: LOADK     R46 0        ; R46 := 0.000000
 267 [-]: CALL      R44 3 1      ; R44(R45,R46)
 268 [-]: GETGLOBAL R44 K14      ; R44 := 0x34291f5c
-269 [-]: GETTABLE  R44 R44 K15  ; R82 := R44[0x9ad21ae9]
+269 [-]: GETTABLE  R44 R44 K15  ; R44 := R44[0x9ad21ae9]
 270 [-]: CALL      R44 1 2      ; R44 := R44()
 271 [-]: TEST      R44 0        ; if not R44 then PC := 366
 272 [-]: JMP       366          ; PC := 366
@@ -626,14 +626,14 @@
 364 [-]: FORLOOP   R56 357      ; R56 += R58; if R56 <= R57 then begin PC := 357; R59 := R56 end
 365 [-]: FORLOOP   R52 324      ; R52 += R54; if R52 <= R53 then begin PC := 324; R55 := R52 end
 366 [-]: GETGLOBAL R60 K14      ; R60 := 0x34291f5c
-367 [-]: GETTABLE  R60 R60 K15  ; R82 := R60[0x9ad21ae9]
+367 [-]: GETTABLE  R60 R60 K15  ; R60 := R60[0x9ad21ae9]
 368 [-]: CALL      R60 1 2      ; R60 := R60()
 369 [-]: TEST      R60 0        ; if not R60 then PC := 373
 370 [-]: JMP       373          ; PC := 373
 371 [-]: LT        1 R7 K50     ; if R7 < 2.000000 then PC := 380
 372 [-]: JMP       380          ; PC := 380
 373 [-]: GETGLOBAL R60 K14      ; R60 := 0x34291f5c
-374 [-]: GETTABLE  R60 R60 K51  ; R82 := R60[0x056bfe8b]
+374 [-]: GETTABLE  R60 R60 K51  ; R60 := R60[0x056bfe8b]
 375 [-]: CALL      R60 1 2      ; R60 := R60()
 376 [-]: TEST      R60 1        ; if R60 then PC := 447
 377 [-]: JMP       447          ; PC := 447
@@ -647,7 +647,7 @@
 385 [-]: LOADK     R65 K57      ; R65 := "/Lotus/Upgrades/Focus/Attack/AttackFocusAbility"
 386 [-]: SETLIST   R60 5 1      ; R60[(1-1)*FPF+i] := R(60+i), 1 <= i <= 5
 387 [-]: GETGLOBAL R61 K58      ; R61 := 0xbd496aa1
-388 [-]: GETTABLE  R61 R61 K59  ; R82 := R61[0x42645da3]
+388 [-]: GETTABLE  R61 R61 K59  ; R61 := R61[0x42645da3]
 389 [-]: MOVE      R62 R60      ; R62 := R60
 390 [-]: CALL      R61 2 2      ; R61 := R61(R62)
 391 [-]: SELF      R62 R61 K60  ; R63 := R61; R62 := R61[0x28f42b1e]
@@ -707,7 +707,7 @@
 445 [-]: MOVE      R82 R62      ; R82 := R62
 446 [-]: CALL      R78 5 1      ; R78(R79,R80,R81,R82)
 447 [-]: GETGLOBAL R78 K14      ; R78 := 0x34291f5c
-448 [-]: GETTABLE  R78 R78 K15  ; R82 := R78[0x9ad21ae9]
+448 [-]: GETTABLE  R78 R78 K15  ; R78 := R78[0x9ad21ae9]
 449 [-]: CALL      R78 1 2      ; R78 := R78()
 450 [-]: TEST      R78 0        ; if not R78 then PC := 642
 451 [-]: JMP       642          ; PC := 642
@@ -902,7 +902,7 @@
 640 [-]: FORLOOP   R91 635      ; R91 += R93; if R91 <= R92 then begin PC := 635; R94 := R91 end
 641 [-]: FORLOOP   R80 462      ; R80 += R82; if R80 <= R81 then begin PC := 462; R83 := R80 end
 642 [-]: GETGLOBAL R95 K14      ; R95 := 0x34291f5c
-643 [-]: GETTABLE  R95 R95 K51  ; R82 := R95[0x056bfe8b]
+643 [-]: GETTABLE  R95 R95 K51  ; R95 := R95[0x056bfe8b]
 644 [-]: CALL      R95 1 2      ; R95 := R95()
 645 [-]: TEST      R95 1        ; if R95 then PC := 675
 646 [-]: JMP       675          ; PC := 675
@@ -935,7 +935,7 @@
 673 [-]: JMP       675          ; PC := 675
 674 [-]: FORLOOP   R97 658      ; R97 += R99; if R97 <= R98 then begin PC := 658; R100 := R97 end
 675 [-]: GETGLOBAL R101 K14     ; R101 := 0x34291f5c
-676 [-]: GETTABLE  R101 R101 K15; R82 := R101[0x9ad21ae9]
+676 [-]: GETTABLE  R101 R101 K15; R101 := R101[0x9ad21ae9]
 677 [-]: CALL      R101 1 2     ; R101 := R101()
 678 [-]: TEST      R101 0       ; if not R101 then PC := 685
 679 [-]: JMP       685          ; PC := 685

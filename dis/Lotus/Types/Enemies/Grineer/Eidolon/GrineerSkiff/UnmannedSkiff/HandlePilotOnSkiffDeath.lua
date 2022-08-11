@@ -57,7 +57,7 @@
  34 [-]: SELF      R8 R1 K7     ; R9 := R1; R8 := R1[0x9e21e394]
  35 [-]: CALL      R8 2 1       ; R8(R9)
  36 [-]: GETGLOBAL R8 K8        ; R8 := 0x34291f5c
- 37 [-]: GETTABLE  R8 R8 K9     ; R82 := R8[0x35c16153]
+ 37 [-]: GETTABLE  R8 R8 K9     ; R8 := R8[0x35c16153]
  38 [-]: CALL      R8 1 2       ; R8 := R8()
  39 [-]: SETTABLE  R8 K10 K11   ; R8["baseAmount"] := 1.000000
  40 [-]: SELF      R9 R8 K12    ; R10 := R8; R9 := R8[0x1586e35e]

@@ -120,9 +120,9 @@
  32 [-]: CALL      R5 1 2       ; R5 := R5()
  33 [-]: ADD       R4 R4 R5     ; R4 := R4 + R5
  34 [-]: GETGLOBAL R5 K10       ; R5 := 0x5bced4c4
- 35 [-]: GETTABLE  R5 R5 K11    ; R82 := R5[0xe4a5b3ca]
+ 35 [-]: GETTABLE  R5 R5 K11    ; R5 := R5[0xe4a5b3ca]
  36 [-]: GETGLOBAL R6 K10       ; R6 := 0x5bced4c4
- 37 [-]: GETTABLE  R6 R6 K12    ; R82 := R6[0xa40531d8]
+ 37 [-]: GETTABLE  R6 R6 K12    ; R6 := R6[0xa40531d8]
  38 [-]: MOVE      R7 R4        ; R7 := R4
  39 [-]: LOADK     R8 K13       ; R8 := 0.300000
  40 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
@@ -210,7 +210,7 @@
  54 [-]: CALL      R11 3 2      ; R11 := R11(R12,R13)
  55 [-]: MOVE      R8 R11       ; R8 := R11
  56 [-]: GETGLOBAL R11 K12      ; R11 := 0x5bced4c4
- 57 [-]: GETTABLE  R11 R11 K13  ; R82 := R11[0xac1b386a]
+ 57 [-]: GETTABLE  R11 R11 K13  ; R11 := R11[0xac1b386a]
  58 [-]: LOADK     R12 20       ; R12 := 20.000000
  59 [-]: SELF      R13 R1 K14   ; R14 := R1; R13 := R1[0xc69299ed]
  60 [-]: CALL      R13 2 0      ; R13,... := R13(R14)
@@ -250,21 +250,21 @@
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0xa421af95
   2 [-]: GETTABLE  R2 R0 K1     ; R2 := R0["x"]
   3 [-]: GETGLOBAL R3 K2        ; R3 := 0x5bced4c4
-  4 [-]: GETTABLE  R3 R3 K3     ; R82 := R3[0x3630e649]
+  4 [-]: GETTABLE  R3 R3 K3     ; R3 := R3[0x3630e649]
   5 [-]: LOADK     R4 -6        ; R4 := -6.000000
   6 [-]: LOADK     R5 6         ; R5 := 6.000000
   7 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
   8 [-]: ADD       R2 R2 R3     ; R2 := R2 + R3
   9 [-]: GETTABLE  R3 R0 K4     ; R3 := R0["y"]
  10 [-]: GETGLOBAL R4 K2        ; R4 := 0x5bced4c4
- 11 [-]: GETTABLE  R4 R4 K3     ; R82 := R4[0x3630e649]
+ 11 [-]: GETTABLE  R4 R4 K3     ; R4 := R4[0x3630e649]
  12 [-]: LOADK     R5 -6        ; R5 := -6.000000
  13 [-]: LOADK     R6 6         ; R6 := 6.000000
  14 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
  15 [-]: SUB       R3 R3 R4     ; R3 := R3 - R4
  16 [-]: GETTABLE  R4 R0 K5     ; R4 := R0["z"]
  17 [-]: GETGLOBAL R5 K2        ; R5 := 0x5bced4c4
- 18 [-]: GETTABLE  R5 R5 K3     ; R82 := R5[0x3630e649]
+ 18 [-]: GETTABLE  R5 R5 K3     ; R5 := R5[0x3630e649]
  19 [-]: LOADK     R6 -6        ; R6 := -6.000000
  20 [-]: LOADK     R7 6         ; R7 := 6.000000
  21 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
@@ -291,21 +291,21 @@
  42 [-]: GETGLOBAL R4 K0        ; R4 := 0xa421af95
  43 [-]: GETTABLE  R5 R0 K1     ; R5 := R0["x"]
  44 [-]: GETGLOBAL R6 K2        ; R6 := 0x5bced4c4
- 45 [-]: GETTABLE  R6 R6 K3     ; R82 := R6[0x3630e649]
+ 45 [-]: GETTABLE  R6 R6 K3     ; R6 := R6[0x3630e649]
  46 [-]: LOADK     R7 -5        ; R7 := -5.000000
  47 [-]: LOADK     R8 5         ; R8 := 5.000000
  48 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
  49 [-]: ADD       R5 R5 R6     ; R5 := R5 + R6
  50 [-]: GETTABLE  R6 R0 K4     ; R6 := R0["y"]
  51 [-]: GETGLOBAL R7 K2        ; R7 := 0x5bced4c4
- 52 [-]: GETTABLE  R7 R7 K3     ; R82 := R7[0x3630e649]
+ 52 [-]: GETTABLE  R7 R7 K3     ; R7 := R7[0x3630e649]
  53 [-]: LOADK     R8 -5        ; R8 := -5.000000
  54 [-]: LOADK     R9 5         ; R9 := 5.000000
  55 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
  56 [-]: ADD       R6 R6 R7     ; R6 := R6 + R7
  57 [-]: GETTABLE  R7 R0 K5     ; R7 := R0["z"]
  58 [-]: GETGLOBAL R8 K2        ; R8 := 0x5bced4c4
- 59 [-]: GETTABLE  R8 R8 K3     ; R82 := R8[0x3630e649]
+ 59 [-]: GETTABLE  R8 R8 K3     ; R8 := R8[0x3630e649]
  60 [-]: LOADK     R9 -5        ; R9 := -5.000000
  61 [-]: LOADK     R10 5        ; R10 := 5.000000
  62 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
@@ -329,7 +329,7 @@
   1 [-]: SELF      R1 R0 K0     ; R2 := R0; R1 := R0[0x2b54251b]
   2 [-]: CALL      R1 2 2       ; R1 := R1(R2)
   3 [-]: GETUPVAL  R2 U0        ; R2 := U0
-  4 [-]: GETTABLE  R2 R2 K1     ; R82 := R2[0x7baa66e1]
+  4 [-]: GETTABLE  R2 R2 K1     ; R2 := R2[0x7baa66e1]
   5 [-]: CALL      R2 1 2       ; R2 := R2()
   6 [-]: EQ        1 R2 K2      ; if R2 == 0.000000 then PC := 13
   7 [-]: JMP       13           ; PC := 13
@@ -353,7 +353,7 @@
  25 [-]: JMP       69           ; PC := 69
  26 [-]: GETUPVAL  R6 U1        ; R6 := U1
  27 [-]: GETGLOBAL R7 K6        ; R7 := 0x5bced4c4
- 28 [-]: GETTABLE  R7 R7 K7     ; R82 := R7[0x3630e649]
+ 28 [-]: GETTABLE  R7 R7 K7     ; R7 := R7[0x3630e649]
  29 [-]: LOADK     R8 1         ; R8 := 1.000000
  30 [-]: GETUPVAL  R9 U1        ; R9 := U1
  31 [-]: LEN       R9 R9        ; R9 := # R9
@@ -419,7 +419,7 @@
   1 [-]: SELF      R1 R0 K0     ; R2 := R0; R1 := R0[0x2b54251b]
   2 [-]: CALL      R1 2 2       ; R1 := R1(R2)
   3 [-]: GETUPVAL  R2 U0        ; R2 := U0
-  4 [-]: GETTABLE  R2 R2 K1     ; R82 := R2[0x7baa66e1]
+  4 [-]: GETTABLE  R2 R2 K1     ; R2 := R2[0x7baa66e1]
   5 [-]: CALL      R2 1 2       ; R2 := R2()
   6 [-]: EQ        1 R2 K2      ; if R2 == 0.000000 then PC := 13
   7 [-]: JMP       13           ; PC := 13
@@ -463,7 +463,7 @@
   1 [-]: SELF      R1 R0 K0     ; R2 := R0; R1 := R0[0x2b54251b]
   2 [-]: CALL      R1 2 2       ; R1 := R1(R2)
   3 [-]: GETUPVAL  R2 U0        ; R2 := U0
-  4 [-]: GETTABLE  R2 R2 K1     ; R82 := R2[0x7baa66e1]
+  4 [-]: GETTABLE  R2 R2 K1     ; R2 := R2[0x7baa66e1]
   5 [-]: CALL      R2 1 2       ; R2 := R2()
   6 [-]: EQ        1 R2 K2      ; if R2 == 0.000000 then PC := 13
   7 [-]: JMP       13           ; PC := 13
@@ -539,7 +539,7 @@
   1 [-]: SELF      R1 R0 K0     ; R2 := R0; R1 := R0[0x2b54251b]
   2 [-]: CALL      R1 2 2       ; R1 := R1(R2)
   3 [-]: GETUPVAL  R2 U0        ; R2 := U0
-  4 [-]: GETTABLE  R2 R2 K1     ; R82 := R2[0x7baa66e1]
+  4 [-]: GETTABLE  R2 R2 K1     ; R2 := R2[0x7baa66e1]
   5 [-]: CALL      R2 1 2       ; R2 := R2()
   6 [-]: EQ        1 R2 K2      ; if R2 == 0.000000 then PC := 13
   7 [-]: JMP       13           ; PC := 13
@@ -563,7 +563,7 @@
  25 [-]: JMP       58           ; PC := 58
  26 [-]: GETUPVAL  R6 U1        ; R6 := U1
  27 [-]: GETGLOBAL R7 K6        ; R7 := 0x5bced4c4
- 28 [-]: GETTABLE  R7 R7 K7     ; R82 := R7[0x3630e649]
+ 28 [-]: GETTABLE  R7 R7 K7     ; R7 := R7[0x3630e649]
  29 [-]: LOADK     R8 1         ; R8 := 1.000000
  30 [-]: GETUPVAL  R9 U1        ; R9 := U1
  31 [-]: LEN       R9 R9        ; R9 := # R9

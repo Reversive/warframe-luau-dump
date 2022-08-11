@@ -105,7 +105,7 @@
  32 [-]: CALL      R9 4 2       ; R9 := R9(R10,R11,R12)
  33 [-]: ADD       R8 R8 R9     ; R8 := R8 + R9
  34 [-]: GETGLOBAL R9 K7        ; R9 := 0x34291f5c
- 35 [-]: GETTABLE  R9 R9 K8     ; R82 := R9[0xd96dcc3b]
+ 35 [-]: GETTABLE  R9 R9 K8     ; R9 := R9[0xd96dcc3b]
  36 [-]: MOVE      R10 R8       ; R10 := R8
  37 [-]: MOVE      R11 R6       ; R11 := R6
  38 [-]: GETGLOBAL R12 K9       ; R12 := 0x74dcae95

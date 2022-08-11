@@ -73,7 +73,7 @@
  27 [-]: TEST      R13 1        ; if R13 then PC := 55
  28 [-]: JMP       55           ; PC := 55
  29 [-]: GETGLOBAL R13 K3       ; R13 := 0x34291f5c
- 30 [-]: GETTABLE  R13 R13 K4   ; R82 := R13[0x35c16153]
+ 30 [-]: GETTABLE  R13 R13 K4   ; R13 := R13[0x35c16153]
  31 [-]: CALL      R13 1 2      ; R13 := R13()
  32 [-]: SETTABLE  R13 K5 R2    ; R13["baseAmount"] := R2
  33 [-]: SELF      R14 R13 K6   ; R15 := R13; R14 := R13[0x1586e35e]
@@ -94,7 +94,7 @@
  48 [-]: MOVE      R16 R13      ; R16 := R13
  49 [-]: CALL      R14 3 1      ; R14(R15,R16)
  50 [-]: GETGLOBAL R14 K11      ; R14 := 0x33bdd652
- 51 [-]: GETTABLE  R14 R14 K12  ; R82 := R14[0x23d5322f]
+ 51 [-]: GETTABLE  R14 R14 K12  ; R14 := R14[0x23d5322f]
  52 [-]: MOVE      R15 R4       ; R15 := R4
  53 [-]: GETTABLE  R16 R3 R8    ; R16 := R3[R8]
  54 [-]: CALL      R14 3 1      ; R14(R15,R16)

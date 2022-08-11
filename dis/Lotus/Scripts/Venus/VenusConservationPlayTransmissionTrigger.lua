@@ -39,7 +39,7 @@
  12 [-]: TEST      R2 0         ; if not R2 then PC := 23
  13 [-]: JMP       23           ; PC := 23
  14 [-]: GETUPVAL  R2 U0        ; R2 := U0
- 15 [-]: GETTABLE  R2 R2 K4     ; R82 := R2[0xf22cfc77]
+ 15 [-]: GETTABLE  R2 R2 K4     ; R2 := R2[0xf22cfc77]
  16 [-]: GETGLOBAL R3 K5        ; R3 := 0xe91d7466
  17 [-]: GETGLOBAL R4 K6        ; R4 := 0xa2b4bebe
  18 [-]: MOVE      R5 R1        ; R5 := R1

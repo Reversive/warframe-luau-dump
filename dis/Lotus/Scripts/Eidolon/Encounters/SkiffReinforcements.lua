@@ -93,9 +93,9 @@
 ; Max Stack Size:  7
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0x5bced4c4
-  2 [-]: GETTABLE  R1 R1 K1     ; R82 := R1[0xbf79b942]
+  2 [-]: GETTABLE  R1 R1 K1     ; R1 := R1[0xbf79b942]
   3 [-]: GETGLOBAL R2 K0        ; R2 := 0x5bced4c4
-  4 [-]: GETTABLE  R2 R2 K2     ; R82 := R2[0x450c9504]
+  4 [-]: GETTABLE  R2 R2 K2     ; R2 := R2[0x450c9504]
   5 [-]: GETGLOBAL R3 K3        ; R3 := 0x42dcc9f5
   6 [-]: GETTABLE  R4 R0 K4     ; R4 := R0["z"]
   7 [-]: LOADK     R5 -1        ; R5 := -1.000000
@@ -104,7 +104,7 @@
  10 [-]: CALL      R2 0 0       ; R2,... := R2(R3,...)
  11 [-]: CALL      R1 0 2       ; R1 := R1(R2,...)
  12 [-]: GETUPVAL  R2 U0        ; R2 := U0
- 13 [-]: GETTABLE  R2 R2 K5     ; R82 := R2[0x06d055f9]
+ 13 [-]: GETTABLE  R2 R2 K5     ; R2 := R2[0x06d055f9]
  14 [-]: GETTABLE  R3 R0 K6     ; R3 := R0["x"]
  15 [-]: LE        1 K7 R3      ; if 0.000000 <= R3 then PC := 18
  16 [-]: JMP       18           ; PC := 18
@@ -350,7 +350,7 @@
 161 [-]: GETGLOBAL R21 K37      ; R21 := EMPTY_SYMBOL
 162 [-]: CALL      R18 4 1      ; R18(R19,R20,R21)
 163 [-]: GETGLOBAL R18 K38      ; R18 := 0x33bdd652
-164 [-]: GETTABLE  R18 R18 K39  ; R82 := R18[0x23d5322f]
+164 [-]: GETTABLE  R18 R18 K39  ; R18 := R18[0x23d5322f]
 165 [-]: MOVE      R19 R3       ; R19 := R3
 166 [-]: MOVE      R20 R17      ; R20 := R17
 167 [-]: CALL      R18 3 1      ; R18(R19,R20)
@@ -674,7 +674,7 @@
 102 [-]: CALL      R23 3 2      ; R23 := R23(R24,R25)
 103 [-]: GETTABLE  R23 R23 K14  ; R23 := R23["heading"]
 104 [-]: GETGLOBAL R24 K15      ; R24 := 0x5bced4c4
-105 [-]: GETTABLE  R24 R24 K16  ; R82 := R24[0xe4a5b3ca]
+105 [-]: GETTABLE  R24 R24 K16  ; R24 := R24[0xe4a5b3ca]
 106 [-]: GETUPVAL  R25 U1       ; R25 := U1
 107 [-]: MOVE      R26 R23      ; R26 := R23
 108 [-]: MOVE      R27 R18      ; R27 := R18

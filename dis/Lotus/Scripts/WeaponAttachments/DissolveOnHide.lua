@@ -297,7 +297,7 @@
 175 [-]: GETTABLE  R28 R3 R27   ; R28 := R3[R27]
 176 [-]: SELF      R28 R28 K38  ; R29 := R28; R28 := R28[0x66472bf5]
 177 [-]: GETGLOBAL R30 K39      ; R30 := 0x5bced4c4
-178 [-]: GETTABLE  R30 R30 K40  ; R82 := R30[0xac1b386a]
+178 [-]: GETTABLE  R30 R30 K40  ; R30 := R30[0xac1b386a]
 179 [-]: LOADK     R31 1        ; R31 := 1.000000
 180 [-]: MUL       R32 K41 R23  ; R32 := 3.000000 * R23
 181 [-]: CALL      R30 3 0      ; R30,... := R30(R31,R32)
@@ -642,10 +642,10 @@
  29 [-]: GETGLOBAL R9 K6        ; R9 := 0xa421af95
  30 [-]: CALL      R9 1 2       ; R9 := R9()
  31 [-]: GETGLOBAL R10 K10      ; R10 := 0x5bced4c4
- 32 [-]: GETTABLE  R10 R10 K11  ; R82 := R10[0x55f27c30]
+ 32 [-]: GETTABLE  R10 R10 K11  ; R10 := R10[0x55f27c30]
  33 [-]: GETGLOBAL R11 K12      ; R11 := 0x42dcc9f5
  34 [-]: GETGLOBAL R12 K10      ; R12 := 0x5bced4c4
- 35 [-]: GETTABLE  R12 R12 K13  ; R82 := R12[0xb62ecfe0]
+ 35 [-]: GETTABLE  R12 R12 K13  ; R12 := R12[0xb62ecfe0]
  36 [-]: GETTABLE  R13 R3 K14   ; R13 := R3["y"]
  37 [-]: GETTABLE  R14 R4 K14   ; R14 := R4["y"]
  38 [-]: SUB       R13 R13 R14  ; R13 := R13 - R14

@@ -49,7 +49,7 @@
  26 [-]: GETTABLE  R6 R5 K5     ; R6 := R5["mCondition"]
  27 [-]: EQ        1 R6 K6      ; if R6 == nil then PC := 33
  28 [-]: JMP       33           ; PC := 33
- 29 [-]: GETTABLE  R6 R5 K7     ; R82 := R6[0x8af82eaa]
+ 29 [-]: GETTABLE  R6 R5 K7     ; R6 := R5[0x8af82eaa]
  30 [-]: CALL      R6 1 2       ; R6 := R6()
  31 [-]: TEST      R6 0         ; if not R6 then PC := 35
  32 [-]: JMP       35           ; PC := 35

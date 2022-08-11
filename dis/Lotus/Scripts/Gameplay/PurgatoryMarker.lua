@@ -101,7 +101,7 @@
  16 [-]: GETGLOBAL R5 K7        ; R5 := ZERO_ROTATION
  17 [-]: LOADNIL   R6 R7        ; R6 := R7 := nil
  18 [-]: GETUPVAL  R8 U1        ; R8 := U1
- 19 [-]: GETTABLE  R8 R8 K8     ; R82 := R8[0x06d055f9]
+ 19 [-]: GETTABLE  R8 R8 K8     ; R8 := R8[0x06d055f9]
  20 [-]: GETGLOBAL R9 K3        ; R9 := 0x89326c93
  21 [-]: SELF      R9 R9 K9     ; R10 := R9; R9 := R9[0x18d05d30]
  22 [-]: CALL      R9 2 2       ; R9 := R9(R10)

@@ -120,14 +120,14 @@
  62 [-]: SELF      R2 R1 K12    ; R3 := R1; R2 := R1[0xc45c884b]
  63 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  64 [-]: GETGLOBAL R3 K13       ; R3 := 0x5bced4c4
- 65 [-]: GETTABLE  R3 R3 K14    ; R82 := R3[0x99675e23]
+ 65 [-]: GETTABLE  R3 R3 K14    ; R3 := R3[0x99675e23]
  66 [-]: GETUPVAL  R4 U0        ; R4 := U0
  67 [-]: POW       R5 R2 K15    ; R5 := R2 ^ 1.550000
  68 [-]: MUL       R4 R4 R5     ; R4 := R4 * R5
  69 [-]: MUL       R4 R4 K16    ; R4 := R4 * 0.015000
  70 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  71 [-]: GETGLOBAL R4 K17       ; R4 := 0x34291f5c
- 72 [-]: GETTABLE  R4 R4 K18    ; R82 := R4[0x5cb2adf8]
+ 72 [-]: GETTABLE  R4 R4 K18    ; R4 := R4[0x5cb2adf8]
  73 [-]: CALL      R4 1 2       ; R4 := R4()
  74 [-]: SELF      R5 R4 K19    ; R6 := R4; R5 := R4[0x1586e35e]
  75 [-]: GETUPVAL  R7 U1        ; R7 := U1
@@ -190,11 +190,11 @@
 132 [-]: SELF      R6 R1 K40    ; R7 := R1; R6 := R1[0xb40c191a]
 133 [-]: CALL      R6 2 2       ; R6 := R6(R7)
 134 [-]: GETGLOBAL R7 K13       ; R7 := 0x5bced4c4
-135 [-]: GETTABLE  R7 R7 K41    ; R82 := R7[0xac1b386a]
+135 [-]: GETTABLE  R7 R7 K41    ; R7 := R7[0xac1b386a]
 136 [-]: MUL       R8 R6 K42    ; R8 := R6 * 0.350000
 137 [-]: CALL      R7 2 2       ; R7 := R7(R8)
 138 [-]: GETGLOBAL R8 K17       ; R8 := 0x34291f5c
-139 [-]: GETTABLE  R8 R8 K43    ; R82 := R8[0x35c16153]
+139 [-]: GETTABLE  R8 R8 K43    ; R8 := R8[0x35c16153]
 140 [-]: CALL      R8 1 2       ; R8 := R8()
 141 [-]: SETTABLE  R8 K29 R7    ; R8["baseAmount"] := R7
 142 [-]: SELF      R9 R8 K19    ; R10 := R8; R9 := R8[0x1586e35e]

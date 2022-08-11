@@ -53,7 +53,7 @@
  25 [-]: EQ        0 R10 R15    ; if R10 ~= R15 then PC := 34
  26 [-]: JMP       34           ; PC := 34
  27 [-]: NEWTABLE  R15 0 0      ; R15 := {}
- 28 [-]: SETUPVAL  R15 U0       ; U82 := 
+ 28 [-]: SETUPVAL  R15 U0       ; U82 := R0
  29 [-]: LOADBOOL  R15 1 0      ; R15 := true
  30 [-]: RETURN    R15 2        ; return R15
  31 [-]: JMP       34           ; PC := 34
@@ -100,7 +100,7 @@
  25 [-]: EQ        0 R7 R12     ; if R7 ~= R12 then PC := 34
  26 [-]: JMP       34           ; PC := 34
  27 [-]: NEWTABLE  R12 0 0      ; R12 := {}
- 28 [-]: SETUPVAL  R12 U0       ; U82 := 
+ 28 [-]: SETUPVAL  R12 U0       ; U82 := R0
  29 [-]: LOADBOOL  R12 1 0      ; R12 := true
  30 [-]: RETURN    R12 2        ; return R12
  31 [-]: JMP       34           ; PC := 34

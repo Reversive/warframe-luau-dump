@@ -106,7 +106,7 @@
  11 [-]: GETUPVAL  R2 U2        ; R2 := U2
  12 [-]: SETTABLE  R1 R0 R2     ; R1[R0] := R2
  13 [-]: GETGLOBAL R1 K1        ; R1 := 0x33bdd652
- 14 [-]: GETTABLE  R1 R1 K2     ; R82 := R1[0x23d5322f]
+ 14 [-]: GETTABLE  R1 R1 K2     ; R1 := R1[0x23d5322f]
  15 [-]: GETUPVAL  R2 U3        ; R2 := U3
  16 [-]: MOVE      R3 R0        ; R3 := R0
  17 [-]: CALL      R1 3 1       ; R1(R2,R3)
@@ -169,7 +169,7 @@
  21 [-]: GETUPVAL  R4 U3        ; R4 := U3
  22 [-]: SETTABLE  R4 R3 R0     ; R4[R3] := R0
  23 [-]: GETGLOBAL R4 K4        ; R4 := 0x33bdd652
- 24 [-]: GETTABLE  R4 R4 K5     ; R82 := R4[0x23d5322f]
+ 24 [-]: GETTABLE  R4 R4 K5     ; R4 := R4[0x23d5322f]
  25 [-]: GETUPVAL  R5 U4        ; R5 := U4
  26 [-]: NEWTABLE  R6 0 4       ; R6 := {}
  27 [-]: SETTABLE  R6 K6 R0     ; R6["level"] := R0
@@ -236,7 +236,7 @@
  18 [-]: GETUPVAL  R4 U3        ; R4 := U3
  19 [-]: GETTABLE  R4 R4 R3     ; R4 := R4[R3]
  20 [-]: GETGLOBAL R5 K5        ; R5 := 0x34291f5c
- 21 [-]: GETTABLE  R5 R5 K6     ; R82 := R5[0x68d83431]
+ 21 [-]: GETTABLE  R5 R5 K6     ; R5 := R5[0x68d83431]
  22 [-]: CALL      R5 1 2       ; R5 := R5()
  23 [-]: GETTABLE  R6 R4 K7     ; R6 := R4["level"]
  24 [-]: SETTABLE  R5 K7 R6     ; R5["level"] := R6
@@ -251,11 +251,11 @@
  33 [-]: GETTABLE  R9 R4 K17    ; R9 := R4["rot"]
  34 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
  35 [-]: GETGLOBAL R6 K5        ; R6 := 0x34291f5c
- 36 [-]: GETTABLE  R6 R6 K18    ; R82 := R6[0xa37dca0a]
+ 36 [-]: GETTABLE  R6 R6 K18    ; R6 := R6[0xa37dca0a]
  37 [-]: MOVE      R7 R5        ; R7 := R5
  38 [-]: CALL      R6 2 1       ; R6(R7)
  39 [-]: GETGLOBAL R6 K19       ; R6 := 0x33bdd652
- 40 [-]: GETTABLE  R6 R6 K20    ; R82 := R6[0x9c1f3b5a]
+ 40 [-]: GETTABLE  R6 R6 K20    ; R6 := R6[0x9c1f3b5a]
  41 [-]: GETUPVAL  R7 U3        ; R7 := U3
  42 [-]: MOVE      R8 R3        ; R8 := R3
  43 [-]: CALL      R6 3 1       ; R6(R7,R8)
@@ -268,7 +268,7 @@
  50 [-]: GETUPVAL  R10 U4       ; R10 := U4
  51 [-]: GETTABLE  R10 R10 R9   ; R10 := R10[R9]
  52 [-]: GETGLOBAL R11 K5       ; R11 := 0x34291f5c
- 53 [-]: GETTABLE  R11 R11 K6   ; R82 := R11[0x68d83431]
+ 53 [-]: GETTABLE  R11 R11 K6   ; R11 := R11[0x68d83431]
  54 [-]: CALL      R11 1 2      ; R11 := R11()
  55 [-]: GETUPVAL  R12 U5       ; R12 := U5
  56 [-]: GETTABLE  R12 R12 R10  ; R12 := R12[R10]
@@ -279,11 +279,11 @@
  61 [-]: LOADK     R14 K21      ; R14 := "OnLayerRemoved"
  62 [-]: CALL      R12 3 1      ; R12(R13,R14)
  63 [-]: GETGLOBAL R12 K5       ; R12 := 0x34291f5c
- 64 [-]: GETTABLE  R12 R12 K22  ; R82 := R12[0x47aa0f1b]
+ 64 [-]: GETTABLE  R12 R12 K22  ; R12 := R12[0x47aa0f1b]
  65 [-]: MOVE      R13 R11      ; R13 := R11
  66 [-]: CALL      R12 2 1      ; R12(R13)
  67 [-]: GETGLOBAL R12 K19      ; R12 := 0x33bdd652
- 68 [-]: GETTABLE  R12 R12 K20  ; R82 := R12[0x9c1f3b5a]
+ 68 [-]: GETTABLE  R12 R12 K20  ; R12 := R12[0x9c1f3b5a]
  69 [-]: GETUPVAL  R13 U4       ; R13 := U4
  70 [-]: MOVE      R14 R9       ; R14 := R9
  71 [-]: CALL      R12 3 1      ; R12(R13,R14)

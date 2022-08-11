@@ -74,7 +74,7 @@
  17 [-]: LT        0 R1 R3      ; if R1 >= R3 then PC := 52
  18 [-]: JMP       52           ; PC := 52
  19 [-]: GETUPVAL  R3 U0        ; R3 := U0
- 20 [-]: GETTABLE  R3 R3 K7     ; R82 := R3[0x9d085f96]
+ 20 [-]: GETTABLE  R3 R3 K7     ; R3 := R3[0x9d085f96]
  21 [-]: MOVE      R4 R1        ; R4 := R1
  22 [-]: GETGLOBAL R5 K5        ; R5 := 0xbb192e45
  23 [-]: GETGLOBAL R6 K8        ; R6 := 0x42fbb96a
@@ -227,7 +227,7 @@
  14 [-]: TEST      R3 0         ; if not R3 then PC := 29
  15 [-]: JMP       29           ; PC := 29
  16 [-]: GETUPVAL  R3 U0        ; R3 := U0
- 17 [-]: GETTABLE  R3 R3 K7     ; R82 := R3[0x9d085f96]
+ 17 [-]: GETTABLE  R3 R3 K7     ; R3 := R3[0x9d085f96]
  18 [-]: MOVE      R4 R1        ; R4 := R1
  19 [-]: GETGLOBAL R5 K8        ; R5 := 0xaaf9fdf4
  20 [-]: GETTABLE  R5 R5 K6     ; R5 := R5["pitch"]
@@ -243,7 +243,7 @@
  30 [-]: TEST      R3 0         ; if not R3 then PC := 45
  31 [-]: JMP       45           ; PC := 45
  32 [-]: GETUPVAL  R3 U0        ; R3 := U0
- 33 [-]: GETTABLE  R3 R3 K7     ; R82 := R3[0x9d085f96]
+ 33 [-]: GETTABLE  R3 R3 K7     ; R3 := R3[0x9d085f96]
  34 [-]: MOVE      R4 R1        ; R4 := R1
  35 [-]: GETGLOBAL R5 K8        ; R5 := 0xaaf9fdf4
  36 [-]: GETTABLE  R5 R5 K11    ; R5 := R5["heading"]
@@ -259,7 +259,7 @@
  46 [-]: TEST      R3 0         ; if not R3 then PC := 61
  47 [-]: JMP       61           ; PC := 61
  48 [-]: GETUPVAL  R3 U0        ; R3 := U0
- 49 [-]: GETTABLE  R3 R3 K7     ; R82 := R3[0x9d085f96]
+ 49 [-]: GETTABLE  R3 R3 K7     ; R3 := R3[0x9d085f96]
  50 [-]: MOVE      R4 R1        ; R4 := R1
  51 [-]: GETGLOBAL R5 K8        ; R5 := 0xaaf9fdf4
  52 [-]: GETTABLE  R5 R5 K13    ; R5 := R5["bank"]
@@ -352,7 +352,7 @@
  39 [-]: TEST      R9 1         ; if R9 then PC := 51
  40 [-]: JMP       51           ; PC := 51
  41 [-]: GETGLOBAL R9 K11       ; R9 := 0x33bdd652
- 42 [-]: GETTABLE  R9 R9 K12    ; R82 := R9[0x9c1f3b5a]
+ 42 [-]: GETTABLE  R9 R9 K12    ; R9 := R9[0x9c1f3b5a]
  43 [-]: MOVE      R10 R0       ; R10 := R0
  44 [-]: MOVE      R11 R8       ; R11 := R8
  45 [-]: CALL      R9 3 1       ; R9(R10,R11)
@@ -752,7 +752,7 @@
   6 [-]: LT        0 R1 R5      ; if R1 >= R5 then PC := 26
   7 [-]: JMP       26           ; PC := 26
   8 [-]: GETUPVAL  R5 U0        ; R5 := U0
-  9 [-]: GETTABLE  R5 R5 K2     ; R82 := R5[0x9d085f96]
+  9 [-]: GETTABLE  R5 R5 K2     ; R5 := R5[0x9d085f96]
  10 [-]: MOVE      R6 R1        ; R6 := R1
  11 [-]: MOVE      R7 R3        ; R7 := R3
  12 [-]: SUB       R8 R4 R3     ; R8 := R4 - R3

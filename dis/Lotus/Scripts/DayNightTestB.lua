@@ -118,7 +118,7 @@
  38 [-]: MOVE      R6 R10       ; R6 := R10
  39 [-]: GETGLOBAL R10 K3       ; R10 := 0x42dcc9f5
  40 [-]: GETGLOBAL R11 K9       ; R11 := 0x5bced4c4
- 41 [-]: GETTABLE  R11 R11 K10  ; R82 := R11[0xe4a5b3ca]
+ 41 [-]: GETTABLE  R11 R11 K10  ; R11 := R11[0xe4a5b3ca]
  42 [-]: SUB       R12 R6 K11   ; R12 := R6 - 60.000000
  43 [-]: CALL      R11 2 2      ; R11 := R11(R12)
  44 [-]: DIV       R11 R11 K12  ; R11 := R11 / 90.000000
@@ -298,22 +298,22 @@
 ; Max Stack Size:  6
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0x5bced4c4
-  2 [-]: GETTABLE  R1 R1 K1     ; R82 := R1[0x55f27c30]
+  2 [-]: GETTABLE  R1 R1 K1     ; R1 := R1[0x55f27c30]
   3 [-]: DIV       R2 R0 K2     ; R2 := R0 / 86400.000000
   4 [-]: CALL      R1 2 2       ; R1 := R1(R2)
   5 [-]: MOD       R1 R1 K3     ; R1 := R1 % 365.000000
   6 [-]: GETGLOBAL R2 K0        ; R2 := 0x5bced4c4
-  7 [-]: GETTABLE  R2 R2 K1     ; R82 := R2[0x55f27c30]
+  7 [-]: GETTABLE  R2 R2 K1     ; R2 := R2[0x55f27c30]
   8 [-]: DIV       R3 R0 K4     ; R3 := R0 / 3600.000000
   9 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  10 [-]: MOD       R2 R2 K5     ; R2 := R2 % 24.000000
  11 [-]: GETGLOBAL R3 K0        ; R3 := 0x5bced4c4
- 12 [-]: GETTABLE  R3 R3 K1     ; R82 := R3[0x55f27c30]
+ 12 [-]: GETTABLE  R3 R3 K1     ; R3 := R3[0x55f27c30]
  13 [-]: DIV       R4 R0 K6     ; R4 := R0 / 60.000000
  14 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  15 [-]: MOD       R3 R3 K6     ; R3 := R3 % 60.000000
  16 [-]: GETGLOBAL R4 K0        ; R4 := 0x5bced4c4
- 17 [-]: GETTABLE  R4 R4 K1     ; R82 := R4[0x55f27c30]
+ 17 [-]: GETTABLE  R4 R4 K1     ; R4 := R4[0x55f27c30]
  18 [-]: DIV       R5 R0 K7     ; R5 := R0 / 31556926.000000
  19 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  20 [-]: ADD       R4 K8 R4     ; R4 := 1970.000000 + R4
@@ -871,7 +871,7 @@
 206 [-]: MUL       R17 R3 K20   ; R17 := R3 * 4.000000
 207 [-]: ADD       R17 K19 R17  ; R17 := 1.000000 + R17
 208 [-]: GETGLOBAL R18 K21      ; R18 := 0x5bced4c4
-209 [-]: GETTABLE  R18 R18 K22  ; R82 := R18[0x55f27c30]
+209 [-]: GETTABLE  R18 R18 K22  ; R18 := R18[0x55f27c30]
 210 [-]: MOVE      R19 R17      ; R19 := R17
 211 [-]: CALL      R18 2 2      ; R18 := R18(R19)
 212 [-]: ADD       R18 R18 K19  ; R18 := R18 + 1.000000
@@ -879,13 +879,13 @@
 214 [-]: JMP       216          ; PC := 216
 215 [-]: LOADK     R18 1        ; R18 := 1.000000
 216 [-]: GETGLOBAL R19 K21      ; R19 := 0x5bced4c4
-217 [-]: GETTABLE  R19 R19 K22  ; R82 := R19[0x55f27c30]
+217 [-]: GETTABLE  R19 R19 K22  ; R19 := R19[0x55f27c30]
 218 [-]: MOVE      R20 R17      ; R20 := R17
 219 [-]: CALL      R19 2 2      ; R19 := R19(R20)
 220 [-]: SUB       R19 R17 R19  ; R19 := R17 - R19
 221 [-]: MUL       R19 R19 R19  ; R19 := R19 * R19
 222 [-]: GETGLOBAL R20 K21      ; R20 := 0x5bced4c4
-223 [-]: GETTABLE  R20 R20 K22  ; R82 := R20[0x55f27c30]
+223 [-]: GETTABLE  R20 R20 K22  ; R20 := R20[0x55f27c30]
 224 [-]: MOVE      R21 R17      ; R21 := R17
 225 [-]: CALL      R20 2 2      ; R20 := R20(R21)
 226 [-]: MOVE      R17 R20      ; R17 := R20

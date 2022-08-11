@@ -81,7 +81,7 @@
 ; Max Stack Size:  2
 
   1 [-]: LOADBOOL  R0 1 0       ; R0 := true
-  2 [-]: SETUPVAL  R0 U0        ; U82 := 
+  2 [-]: SETUPVAL  R0 U0        ; U82 := R0
   3 [-]: RETURN    R0 1         ; return 
 
 
@@ -154,10 +154,10 @@
  36 [-]: CALL      R2 2 1       ; R2(R3)
  37 [-]: RETURN    R0 1         ; return 
  38 [-]: GETUPVAL  R2 U1        ; R2 := U1
- 39 [-]: GETTABLE  R2 R2 K10    ; R82 := R2[0xae6791ba]
+ 39 [-]: GETTABLE  R2 R2 K10    ; R2 := R2[0xae6791ba]
  40 [-]: GETGLOBAL R3 K8        ; R3 := 0xae91e43b
  41 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 42 [-]: SETUPVAL  R2 U0        ; U82 := 
+ 42 [-]: SETUPVAL  R2 U0        ; U82 := R0
  43 [-]: GETUPVAL  R2 U0        ; R2 := U0
  44 [-]: SELF      R2 R2 K11    ; R3 := R2; R2 := R2[0x20ff29f7]
  45 [-]: GETGLOBAL R4 K8        ; R4 := 0xae91e43b
@@ -179,10 +179,10 @@
  61 [-]: CALL      R5 2 0       ; R5,... := R5(R6)
  62 [-]: CALL      R2 0 1       ; R2(R3,...)
  63 [-]: GETUPVAL  R2 U3        ; R2 := U3
- 64 [-]: GETTABLE  R2 R2 K10    ; R82 := R2[0xae6791ba]
+ 64 [-]: GETTABLE  R2 R2 K10    ; R2 := R2[0xae6791ba]
  65 [-]: GETGLOBAL R3 K8        ; R3 := 0xae91e43b
  66 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 67 [-]: SETUPVAL  R2 U2        ; U82 := 
+ 67 [-]: SETUPVAL  R2 U2        ; U82 := R2
  68 [-]: GETGLOBAL R2 K8        ; R2 := 0xae91e43b
  69 [-]: SELF      R2 R2 K18    ; R3 := R2; R2 := R2[0x67bc869f]
  70 [-]: LOADK     R4 K19       ; R4 := "_root"
@@ -208,7 +208,7 @@
  90 [-]: GETUPVAL  R10 U4       ; R10 := U4
  91 [-]: CALL      R2 9 1       ; R2(R3,R4,R5,R6,R7,R8,R9,R10)
  92 [-]: LOADBOOL  R2 1 0       ; R2 := true
- 93 [-]: SETUPVAL  R2 U5        ; U82 := 
+ 93 [-]: SETUPVAL  R2 U5        ; U82 := R5
  94 [-]: GETGLOBAL R2 K23       ; R2 := _T
  95 [-]: SETTABLE  R2 K24 K25   ; R2["MissionIntroShowing"] := true
  96 [-]: RETURN    R0 1         ; return 
@@ -250,7 +250,7 @@
  11 [-]: TEST      R0 0         ; if not R0 then PC := 29
  12 [-]: JMP       29           ; PC := 29
  13 [-]: GETUPVAL  R0 U2        ; R0 := U2
- 14 [-]: GETTABLE  R0 R0 K2     ; R82 := R0[0xa9882367]
+ 14 [-]: GETTABLE  R0 R0 K2     ; R0 := R0[0xa9882367]
  15 [-]: LOADK     R1 K3        ; R1 := "MainMenu"
  16 [-]: CALL      R0 2 2       ; R0 := R0(R1)
  17 [-]: GETGLOBAL R1 K0        ; R1 := 0x7b998233

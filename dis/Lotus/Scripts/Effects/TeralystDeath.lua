@@ -131,12 +131,12 @@
  27 [-]: LT        0 R3 K8      ; if R3 >= 0.000000 then PC := 60
  28 [-]: JMP       60           ; PC := 60
  29 [-]: GETGLOBAL R5 K9        ; R5 := 0x5bced4c4
- 30 [-]: GETTABLE  R5 R5 K10    ; R82 := R5[0x3630e649]
+ 30 [-]: GETTABLE  R5 R5 K10    ; R5 := R5[0x3630e649]
  31 [-]: LOADK     R6 1         ; R6 := 1.000000
  32 [-]: LEN       R7 R4        ; R7 := # R4
  33 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
  34 [-]: GETGLOBAL R6 K9        ; R6 := 0x5bced4c4
- 35 [-]: GETTABLE  R6 R6 K10    ; R82 := R6[0x3630e649]
+ 35 [-]: GETTABLE  R6 R6 K10    ; R6 := R6[0x3630e649]
  36 [-]: LOADK     R7 1         ; R7 := 1.000000
  37 [-]: GETUPVAL  R8 U1        ; R8 := U1
  38 [-]: LEN       R8 R8        ; R8 := # R8
@@ -228,7 +228,7 @@
  43 [-]: CALL      R7 4 2       ; R7 := R7(R8,R9,R10)
  44 [-]: GETGLOBAL R8 K12       ; R8 := 0xa533083a
  45 [-]: GETGLOBAL R9 K13       ; R9 := 0x5bced4c4
- 46 [-]: GETTABLE  R9 R9 K14    ; R82 := R9[0xe4a5b3ca]
+ 46 [-]: GETTABLE  R9 R9 K14    ; R9 := R9[0xe4a5b3ca]
  47 [-]: SUB       R10 K15 R6   ; R10 := 0.500000 - R6
  48 [-]: CALL      R9 2 2       ; R9 := R9(R10)
  49 [-]: MUL       R9 K8 R9     ; R9 := 2.000000 * R9

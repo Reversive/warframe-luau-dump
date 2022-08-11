@@ -633,7 +633,7 @@
  17 [-]: LOADK     R5 1         ; R5 := 1.000000
  18 [-]: FORPREP   R3 75        ; R3 -= R5; PC := 75
  19 [-]: GETGLOBAL R7 K4        ; R7 := 0x5bced4c4
- 20 [-]: GETTABLE  R7 R7 K5     ; R82 := R7[0x3eda26fc]
+ 20 [-]: GETTABLE  R7 R7 K5     ; R7 := R7[0x3eda26fc]
  21 [-]: MUL       R8 R6 K6     ; R8 := R6 * 0.200000
  22 [-]: CALL      R7 2 2       ; R7 := R7(R8)
  23 [-]: GETGLOBAL R8 K7        ; R8 := 0x89326c93
@@ -1297,7 +1297,7 @@
  51 [-]: SETTABLE  R5 K10 R6    ; R5["id"] := R6
  52 [-]: SELF      R5 R0 K11    ; R6 := R0; R5 := R0[0x65d389cb]
  53 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 54 [-]: SETUPVAL  R5 U0        ; U82 := 
+ 54 [-]: SETUPVAL  R5 U0        ; U82 := R0
  55 [-]: GETGLOBAL R5 K12       ; R5 := 0x2dc24769
  56 [-]: GETUPVAL  R6 U0        ; R6 := U0
  57 [-]: MUL       R5 R5 R6     ; R5 := R5 * R6

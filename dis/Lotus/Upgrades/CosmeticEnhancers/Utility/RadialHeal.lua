@@ -31,7 +31,7 @@
   2 [-]: GETGLOBAL R2 K1        ; R2 := 0xd14173b7
   3 [-]: SETTABLE  R1 K0 R2     ; R1["val"] := R2
   4 [-]: GETGLOBAL R2 K2        ; R2 := cjson
-  5 [-]: GETTABLE  R2 R2 K3     ; R82 := R2[0xb139d7bc]
+  5 [-]: GETTABLE  R2 R2 K3     ; R2 := R2[0xb139d7bc]
   6 [-]: MOVE      R3 R1        ; R3 := R1
   7 [-]: TAILCALL  R2 2 0       ; R2,... := R2(R3)
   8 [-]: RETURN    R2 0         ; return R2,...
@@ -52,7 +52,7 @@
   3 [-]: GETTABLE  R2 R2 R0     ; R2 := R2[R0]
   4 [-]: SETTABLE  R1 K0 R2     ; R1["val"] := R2
   5 [-]: GETGLOBAL R2 K2        ; R2 := cjson
-  6 [-]: GETTABLE  R2 R2 K3     ; R82 := R2[0xb139d7bc]
+  6 [-]: GETTABLE  R2 R2 K3     ; R2 := R2[0xb139d7bc]
   7 [-]: MOVE      R3 R1        ; R3 := R1
   8 [-]: TAILCALL  R2 2 0       ; R2,... := R2(R3)
   9 [-]: RETURN    R2 0         ; return R2,...
@@ -73,7 +73,7 @@
   3 [-]: GETTABLE  R2 R2 R0     ; R2 := R2[R0]
   4 [-]: SETTABLE  R1 K0 R2     ; R1["val"] := R2
   5 [-]: GETGLOBAL R2 K2        ; R2 := cjson
-  6 [-]: GETTABLE  R2 R2 K3     ; R82 := R2[0xb139d7bc]
+  6 [-]: GETTABLE  R2 R2 K3     ; R2 := R2[0xb139d7bc]
   7 [-]: MOVE      R3 R1        ; R3 := R1
   8 [-]: TAILCALL  R2 2 0       ; R2,... := R2(R3)
   9 [-]: RETURN    R2 0         ; return R2,...
@@ -140,7 +140,7 @@
  49 [-]: SELF      R15 R13 K14  ; R16 := R13; R15 := R13[0x58a4d5ac]
  50 [-]: CALL      R15 2 2      ; R15 := R15(R16)
  51 [-]: GETGLOBAL R16 K15      ; R16 := 0x5bced4c4
- 52 [-]: GETTABLE  R16 R16 K16  ; R82 := R16[0xac1b386a]
+ 52 [-]: GETTABLE  R16 R16 K16  ; R16 := R16[0xac1b386a]
  53 [-]: SUB       R17 R14 R15  ; R17 := R14 - R15
  54 [-]: GETGLOBAL R18 K17      ; R18 := 0x1c139f5c
  55 [-]: GETTABLE  R18 R18 R2   ; R18 := R18[R2]
@@ -153,7 +153,7 @@
  62 [-]: CALL      R16 3 1      ; R16(R17,R18)
  63 [-]: JMP       81           ; PC := 81
  64 [-]: GETGLOBAL R16 K15      ; R16 := 0x5bced4c4
- 65 [-]: GETTABLE  R16 R16 K16  ; R82 := R16[0xac1b386a]
+ 65 [-]: GETTABLE  R16 R16 K16  ; R16 := R16[0xac1b386a]
  66 [-]: SELF      R17 R11 K20  ; R18 := R11; R17 := R11[0xb40c191a]
  67 [-]: CALL      R17 2 2      ; R17 := R17(R18)
  68 [-]: SELF      R18 R11 K21  ; R19 := R11; R18 := R11[0xd2715720]

@@ -511,7 +511,7 @@
  16 [-]: LT        0 K7 R2      ; if 0.000000 >= R2 then PC := 20
  17 [-]: JMP       20           ; PC := 20
  18 [-]: LOADK     R2 0         ; R2 := 0.000000
- 19 [-]: SETUPVAL  R2 U0        ; U82 := 
+ 19 [-]: SETUPVAL  R2 U0        ; U82 := R0
  20 [-]: RETURN    R0 1         ; return 
 
 
@@ -533,17 +533,17 @@
   7 [-]: EQ        1 R4 K2      ; if R4 == nil then PC := 19
   8 [-]: JMP       19           ; PC := 19
   9 [-]: GETGLOBAL R4 K0        ; R4 := _T
- 10 [-]: GETTABLE  R4 R4 K3     ; R82 := R4[0x8e6a7b4e]
+ 10 [-]: GETTABLE  R4 R4 K3     ; R4 := R4[0x8e6a7b4e]
  11 [-]: LOADK     R5 K4        ; R5 := "DiegeticArtifactCards"
  12 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  13 [-]: MOVE      R0 R4        ; R0 := R4
  14 [-]: GETGLOBAL R4 K0        ; R4 := _T
- 15 [-]: GETTABLE  R4 R4 K3     ; R82 := R4[0x8e6a7b4e]
+ 15 [-]: GETTABLE  R4 R4 K3     ; R4 := R4[0x8e6a7b4e]
  16 [-]: LOADK     R5 K5        ; R5 := "LoadOut"
  17 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  18 [-]: MOVE      R1 R4        ; R1 := R4
  19 [-]: GETGLOBAL R4 K6        ; R4 := 0x5bced4c4
- 20 [-]: GETTABLE  R4 R4 K7     ; R82 := R4[0x3630e649]
+ 20 [-]: GETTABLE  R4 R4 K7     ; R4 := R4[0x3630e649]
  21 [-]: CALL      R4 1 2       ; R4 := R4()
  22 [-]: GETGLOBAL R5 K8        ; R5 := 0xae01a52e
  23 [-]: LE        0 R4 R5      ; if R4 > R5 then PC := 80
@@ -554,14 +554,14 @@
  28 [-]: TEST      R5 0         ; if not R5 then PC := 32
  29 [-]: JMP       32           ; PC := 32
  30 [-]: LOADK     R5 1         ; R5 := 1.000000
- 31 [-]: SETUPVAL  R5 U1        ; U82 := 
+ 31 [-]: SETUPVAL  R5 U1        ; U82 := R1
  32 [-]: TEST      R0 1         ; if R0 then PC := 39
  33 [-]: JMP       39           ; PC := 39
  34 [-]: GETUPVAL  R5 U2        ; R5 := U2
  35 [-]: TEST      R5 0         ; if not R5 then PC := 39
  36 [-]: JMP       39           ; PC := 39
  37 [-]: LOADK     R5 2         ; R5 := 2.000000
- 38 [-]: SETUPVAL  R5 U1        ; U82 := 
+ 38 [-]: SETUPVAL  R5 U1        ; U82 := R1
  39 [-]: GETGLOBAL R5 K10       ; R5 := 0x7ed0a956
  40 [-]: LOADK     R6 K11       ; R6 := "/Lotus/Interface/DiegeticFoundry.swf"
  41 [-]: CALL      R5 2 2       ; R5 := R5(R6)
@@ -581,7 +581,7 @@
  55 [-]: TEST      R7 0         ; if not R7 then PC := 59
  56 [-]: JMP       59           ; PC := 59
  57 [-]: LOADK     R7 3         ; R7 := 3.000000
- 58 [-]: SETUPVAL  R7 U1        ; U82 := 
+ 58 [-]: SETUPVAL  R7 U1        ; U82 := R1
  59 [-]: GETGLOBAL R7 K10       ; R7 := 0x7ed0a956
  60 [-]: LOADK     R8 K15       ; R8 := "/Lotus/Interface/DecorationsHud.swf"
  61 [-]: CALL      R7 2 2       ; R7 := R7(R8)
@@ -602,11 +602,11 @@
  76 [-]: TEST      R8 0         ; if not R8 then PC := 80
  77 [-]: JMP       80           ; PC := 80
  78 [-]: LOADK     R8 4         ; R8 := 4.000000
- 79 [-]: SETUPVAL  R8 U1        ; U82 := 
- 80 [-]: SETUPVAL  R0 U2        ; U82 := 
- 81 [-]: SETUPVAL  R1 U0        ; U82 := 
- 82 [-]: SETUPVAL  R2 U3        ; U82 := 
- 83 [-]: SETUPVAL  R3 U4        ; U82 := 
+ 79 [-]: SETUPVAL  R8 U1        ; U82 := R1
+ 80 [-]: SETUPVAL  R0 U2        ; U82 := R2
+ 81 [-]: SETUPVAL  R1 U0        ; U82 := R0
+ 82 [-]: SETUPVAL  R2 U3        ; U82 := R3
+ 83 [-]: SETUPVAL  R3 U4        ; U82 := R4
  84 [-]: RETURN    R0 1         ; return 
 
 
@@ -644,7 +644,7 @@
  23 [-]: TEST      R2 1         ; if R2 then PC := 35
  24 [-]: JMP       35           ; PC := 35
  25 [-]: LOADBOOL  R2 1 0       ; R2 := true
- 26 [-]: SETUPVAL  R2 U0        ; U82 := 
+ 26 [-]: SETUPVAL  R2 U0        ; U82 := R0
  27 [-]: SELF      R2 R1 K6     ; R3 := R1; R2 := R1[0xb2532845]
  28 [-]: GETGLOBAL R4 K7        ; R4 := 0x0469f296
  29 [-]: LOADK     R5 K8        ; R5 := "DisableInteractions"
@@ -671,9 +671,9 @@
  50 [-]: LOADBOOL  R5 1 0       ; R5 := true
  51 [-]: CALL      R3 3 1       ; R3(R4,R5)
  52 [-]: LOADK     R3 11        ; R3 := 11.000000
- 53 [-]: SETUPVAL  R3 U2        ; U82 := 
+ 53 [-]: SETUPVAL  R3 U2        ; U82 := R2
  54 [-]: GETUPVAL  R3 U3        ; R3 := U3
- 55 [-]: GETTABLE  R3 R3 K11    ; R82 := R3[0x0deacd54]
+ 55 [-]: GETTABLE  R3 R3 K11    ; R3 := R3[0x0deacd54]
  56 [-]: CALL      R3 1 2       ; R3 := R3()
  57 [-]: TEST      R3 0         ; if not R3 then PC := 69
  58 [-]: JMP       69           ; PC := 69

@@ -163,7 +163,7 @@
  80 [-]: TEST      R9 0         ; if not R9 then PC := 90
  81 [-]: JMP       90           ; PC := 90
  82 [-]: GETGLOBAL R9 K23       ; R9 := 0x33bdd652
- 83 [-]: GETTABLE  R9 R9 K24    ; R82 := R9[0x23d5322f]
+ 83 [-]: GETTABLE  R9 R9 K24    ; R9 := R9[0x23d5322f]
  84 [-]: MOVE      R10 R2       ; R10 := R2
  85 [-]: MOVE      R11 R8       ; R11 := R8
  86 [-]: CALL      R9 3 1       ; R9(R10,R11)
@@ -243,7 +243,7 @@
 160 [-]: TEST      R11 0        ; if not R11 then PC := 171
 161 [-]: JMP       171          ; PC := 171
 162 [-]: GETUPVAL  R11 U1       ; R11 := U1
-163 [-]: GETTABLE  R11 R11 K37  ; R82 := R11[0x9d3fe9c0]
+163 [-]: GETTABLE  R11 R11 K37  ; R11 := R11[0x9d3fe9c0]
 164 [-]: GETGLOBAL R12 K11      ; R12 := 0x0032441c
 165 [-]: GETTABLE  R12 R12 K14  ; R12 := R12["NemesisTaunt"]
 166 [-]: CALL      R11 2 2      ; R11 := R11(R12)
@@ -268,7 +268,7 @@
 185 [-]: TEST      R11 0        ; if not R11 then PC := 196
 186 [-]: JMP       196          ; PC := 196
 187 [-]: GETUPVAL  R11 U1       ; R11 := U1
-188 [-]: GETTABLE  R11 R11 K37  ; R82 := R11[0x9d3fe9c0]
+188 [-]: GETTABLE  R11 R11 K37  ; R11 := R11[0x9d3fe9c0]
 189 [-]: GETGLOBAL R12 K42      ; R12 := 0x0469f296
 190 [-]: LOADK     R13 K43      ; R13 := "Reminder"
 191 [-]: CALL      R12 2 0      ; R12,... := R12(R13)

@@ -637,7 +637,7 @@
 134 [-]: GETTABLE  R4 R4 K15    ; R4 := R4["initialSpawnAmount"]
 135 [-]: GETTABLE  R5 R0 K15    ; R5 := R0["initialSpawnAmount"]
 136 [-]: CALL      R2 4 2       ; R2 := R2(R3,R4,R5)
-137 [-]: SETTABLE  R1 K15 R2    ; R1[0x7b998233] := R2
+137 [-]: SETTABLE  R1 K15 R2    ; R1["initialSpawnAmount"] := R2
 138 [-]: GETUPVAL  R1 U2        ; R1 := U2
 139 [-]: GETUPVAL  R2 U3        ; R2 := U3
 140 [-]: GETTABLE  R2 R2 K6     ; R82 := R2[0x06d055f9]
@@ -659,7 +659,7 @@
 156 [-]: GETTABLE  R4 R4 K17    ; R4 := R4["maxLeaders"]
 157 [-]: GETTABLE  R5 R0 K17    ; R5 := R0["maxLeaders"]
 158 [-]: CALL      R2 4 2       ; R2 := R2(R3,R4,R5)
-159 [-]: SETTABLE  R1 K17 R2    ; R1[0xf6e6fdf6] := R2
+159 [-]: SETTABLE  R1 K17 R2    ; R1["maxLeaders"] := R2
 160 [-]: GETUPVAL  R1 U2        ; R1 := U2
 161 [-]: GETUPVAL  R2 U3        ; R2 := U3
 162 [-]: GETTABLE  R2 R2 K6     ; R82 := R2[0x06d055f9]

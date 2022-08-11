@@ -41,20 +41,20 @@
   1 [-]: EQ        0 R0 K0      ; if R0 ~= 1.000000 then PC := 6
   2 [-]: JMP       6            ; PC := 6
   3 [-]: LOADK     R1 0         ; R1 := 0.250000
-  4 [-]: SETUPVAL  R1 U0        ; U82 := 
+  4 [-]: SETUPVAL  R1 U0        ; U82 := R0
   5 [-]: JMP       18           ; PC := 18
   6 [-]: EQ        0 R0 K1      ; if R0 ~= 2.000000 then PC := 11
   7 [-]: JMP       11           ; PC := 11
   8 [-]: LOADK     R1 0         ; R1 := 0.500000
-  9 [-]: SETUPVAL  R1 U0        ; U82 := 
+  9 [-]: SETUPVAL  R1 U0        ; U82 := R0
  10 [-]: JMP       18           ; PC := 18
  11 [-]: EQ        0 R0 K2      ; if R0 ~= 3.000000 then PC := 16
  12 [-]: JMP       16           ; PC := 16
  13 [-]: LOADK     R1 0         ; R1 := 0.750000
- 14 [-]: SETUPVAL  R1 U0        ; U82 := 
+ 14 [-]: SETUPVAL  R1 U0        ; U82 := R0
  15 [-]: JMP       18           ; PC := 18
  16 [-]: LOADK     R1 1         ; R1 := 1.000000
- 17 [-]: SETUPVAL  R1 U0        ; U82 := 
+ 17 [-]: SETUPVAL  R1 U0        ; U82 := R0
  18 [-]: RETURN    R0 1         ; return 
 
 
@@ -75,12 +75,12 @@
   6 [-]: CALL      R1 2 1       ; R1(R2)
   7 [-]: NEWTABLE  R1 0 0       ; R1 := {}
   8 [-]: GETGLOBAL R2 K3        ; R2 := 0x33bdd652
-  9 [-]: GETTABLE  R2 R2 K4     ; R82 := R2[0x23d5322f]
+  9 [-]: GETTABLE  R2 R2 K4     ; R2 := R2[0x23d5322f]
  10 [-]: MOVE      R3 R1        ; R3 := R1
  11 [-]: NEWTABLE  R4 0 3       ; R4 := {}
  12 [-]: SETTABLE  R4 K5 K6     ; R4["Label"] := "/Lotus/Language/Labels/AVATAR_HACK_CHANCE"
  13 [-]: GETGLOBAL R5 K8        ; R5 := 0x5bced4c4
- 14 [-]: GETTABLE  R5 R5 K9     ; R82 := R5[0x55f27c30]
+ 14 [-]: GETTABLE  R5 R5 K9     ; R5 := R5[0x55f27c30]
  15 [-]: GETUPVAL  R6 U1        ; R6 := U1
  16 [-]: MUL       R6 R6 K10    ; R6 := R6 * 100.000000
  17 [-]: CALL      R5 2 2       ; R5 := R5(R6)
@@ -128,7 +128,7 @@
  21 [-]: LOADBOOL  R7 1 0       ; R7 := true
  22 [-]: CALL      R5 3 1       ; R5(R6,R7)
  23 [-]: GETUPVAL  R5 U1        ; R5 := U1
- 24 [-]: GETTABLE  R5 R5 K10    ; R82 := R5[0x2d8e811d]
+ 24 [-]: GETTABLE  R5 R5 K10    ; R5 := R5[0x2d8e811d]
  25 [-]: MOVE      R6 R0        ; R6 := R0
  26 [-]: GETGLOBAL R7 K11       ; R7 := 0x0ed8b456
  27 [-]: LOADBOOL  R8 1 0       ; R8 := true
@@ -179,7 +179,7 @@
  72 [-]: GETGLOBAL R5 K25       ; R5 := _T
  73 [-]: SETTABLE  R5 K26 K27   ; R5["HackComplete"] := nil
  74 [-]: GETGLOBAL R5 K28       ; R5 := 0x6c97a788
- 75 [-]: GETTABLE  R5 R5 K29    ; R82 := R5[0x608bc054]
+ 75 [-]: GETTABLE  R5 R5 K29    ; R5 := R5[0x608bc054]
  76 [-]: CALL      R5 1 2       ; R5 := R5()
  77 [-]: SETTABLE  R5 K30 R1    ; R5["instigator"] := R1
  78 [-]: NEWTABLE  R6 1 0       ; R6 := {}
@@ -192,7 +192,7 @@
  85 [-]: CALL      R6 2 2       ; R6 := R6(R7)
  86 [-]: SETTABLE  R5 K34 R6    ; R5["abilityType"] := R6
  87 [-]: GETGLOBAL R6 K38       ; R6 := 0x5bced4c4
- 88 [-]: GETTABLE  R6 R6 K39    ; R82 := R6[0x55f27c30]
+ 88 [-]: GETTABLE  R6 R6 K39    ; R6 := R6[0x55f27c30]
  89 [-]: GETUPVAL  R7 U2        ; R7 := U2
  90 [-]: MUL       R7 R7 K40    ; R7 := R7 * 100.000000
  91 [-]: CALL      R6 2 2       ; R6 := R6(R7)
@@ -228,7 +228,7 @@
 121 [-]: TEST      R6 0         ; if not R6 then PC := 128
 122 [-]: JMP       128          ; PC := 128
 123 [-]: GETGLOBAL R8 K25       ; R8 := _T
-124 [-]: GETTABLE  R8 R8 K46    ; R82 := R8[0xa647617f]
+124 [-]: GETTABLE  R8 R8 K46    ; R8 := R8[0xa647617f]
 125 [-]: MOVE      R9 R7        ; R9 := R7
 126 [-]: LOADBOOL  R10 1 0      ; R10 := true
 127 [-]: CALL      R8 3 1       ; R8(R9,R10)
@@ -286,7 +286,7 @@
  24 [-]: TEST      R5 0         ; if not R5 then PC := 35
  25 [-]: JMP       35           ; PC := 35
  26 [-]: GETGLOBAL R5 K10       ; R5 := _T
- 27 [-]: GETTABLE  R5 R5 K11    ; R82 := R5[0xa647617f]
+ 27 [-]: GETTABLE  R5 R5 K11    ; R5 := R5[0xa647617f]
  28 [-]: SELF      R6 R0 K12    ; R7 := R0; R6 := R0[0x73712b9c]
  29 [-]: GETGLOBAL R8 K13       ; R8 := 0x6687f6e0
  30 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
@@ -295,7 +295,7 @@
  33 [-]: GETGLOBAL R5 K10       ; R5 := _T
  34 [-]: SETTABLE  R5 K14 K15   ; R5["HackComplete"] := nil
  35 [-]: GETGLOBAL R5 K16       ; R5 := 0x6c97a788
- 36 [-]: GETTABLE  R5 R5 K17    ; R82 := R5[0x608bc054]
+ 36 [-]: GETTABLE  R5 R5 K17    ; R5 := R5[0x608bc054]
  37 [-]: CALL      R5 1 2       ; R5 := R5()
  38 [-]: SETTABLE  R5 K18 R1    ; R5["instigator"] := R1
  39 [-]: NEWTABLE  R6 1 0       ; R6 := {}

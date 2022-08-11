@@ -477,7 +477,7 @@
 229 [-]: CALL      R11 2 2      ; R11 := R11(R12)
 230 [-]: MOVE      R10 R11      ; R10 := R11
 231 [-]: GETGLOBAL R11 K13      ; R11 := 0x34291f5c
-232 [-]: GETTABLE  R11 R11 K42  ; R82 := R11[0x35c16153]
+232 [-]: GETTABLE  R11 R11 K42  ; R11 := R11[0x35c16153]
 233 [-]: CALL      R11 1 2      ; R11 := R11()
 234 [-]: GETGLOBAL R12 K44      ; R12 := 0x661d93df
 235 [-]: MUL       R12 R10 R12  ; R12 := R10 * R12

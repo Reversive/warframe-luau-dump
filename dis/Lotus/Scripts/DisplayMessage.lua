@@ -64,7 +64,7 @@
  41 [-]: CALL      R19 2 2      ; R19 := R19(R20)
  42 [-]: MOVE      R8 R19       ; R8 := R19
  43 [-]: GETGLOBAL R19 K1       ; R19 := _T
- 44 [-]: GETTABLE  R19 R19 K9   ; R82 := R19[0x659270d0]
+ 44 [-]: GETTABLE  R19 R19 K9   ; R19 := R19[0x659270d0]
  45 [-]: GETGLOBAL R20 K10      ; R20 := 0x603636ad
  46 [-]: MOVE      R21 R1       ; R21 := R1
  47 [-]: MOVE      R22 R12      ; R22 := R12
@@ -80,7 +80,7 @@
  57 [-]: CALL      R19 13 1     ; R19(R20,R21,R22,R23,R24,R25,R26,R27,R28,R29,R30,R31)
  58 [-]: JMP       62           ; PC := 62
  59 [-]: GETGLOBAL R19 K1       ; R19 := _T
- 60 [-]: GETTABLE  R19 R19 K11  ; R82 := R19[0x24b14663]
+ 60 [-]: GETTABLE  R19 R19 K11  ; R19 := R19[0x24b14663]
  61 [-]: CALL      R19 1 1      ; R19()
  62 [-]: GETGLOBAL R19 K12      ; R19 := 0x89326c93
  63 [-]: SELF      R19 R19 K13  ; R20 := R19; R19 := R19[0x78298275]

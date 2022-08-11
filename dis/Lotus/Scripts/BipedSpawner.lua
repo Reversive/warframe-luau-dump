@@ -54,14 +54,14 @@
   6 [-]: EQ        1 R0 K2      ; if R0 == "" then PC := 25
   7 [-]: JMP       25           ; PC := 25
   8 [-]: GETGLOBAL R1 K3        ; R1 := cjson
-  9 [-]: GETTABLE  R1 R1 K4     ; R82 := R1[0x7ab914d8]
+  9 [-]: GETTABLE  R1 R1 K4     ; R1 := R1[0x7ab914d8]
  10 [-]: MOVE      R2 R0        ; R2 := R0
  11 [-]: CALL      R1 2 2       ; R1 := R1(R2)
  12 [-]: GETTABLE  R2 R1 K5     ; R2 := R1["name"]
  13 [-]: EQ        1 R2 K6      ; if R2 == nil then PC := 23
  14 [-]: JMP       23           ; PC := 23
  15 [-]: GETGLOBAL R2 K7        ; R2 := 0x7f5022cf
- 16 [-]: GETTABLE  R2 R2 K8     ; R82 := R2[0xa5c556b9]
+ 16 [-]: GETTABLE  R2 R2 K8     ; R2 := R2[0xa5c556b9]
  17 [-]: GETTABLE  R3 R1 K5     ; R3 := R1["name"]
  18 [-]: GETUPVAL  R4 U0        ; R4 := U0
  19 [-]: GETTABLE  R4 R4 K9     ; R4 := R4["EVENT_TAG"]
@@ -96,7 +96,7 @@
  10 [-]: JMP       14           ; PC := 14
  11 [-]: SELF      R1 R0 K3     ; R2 := R0; R1 := R0[0xbb610e5b]
  12 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 13 [-]: SETUPVAL  R1 U0        ; U82 := 
+ 13 [-]: SETUPVAL  R1 U0        ; U82 := R0
  14 [-]: GETGLOBAL R1 K0        ; R1 := 0x7b998233
  15 [-]: GETGLOBAL R2 K4        ; R2 := 0xb33b46f2
  16 [-]: CALL      R1 2 2       ; R1 := R1(R2)
@@ -203,7 +203,7 @@
   5 [-]: JMP       59           ; PC := 59
   6 [-]: SELF      R1 R0 K1     ; R2 := R0; R1 := R0[0xbb610e5b]
   7 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  8 [-]: SETUPVAL  R1 U0        ; U82 := 
+  8 [-]: SETUPVAL  R1 U0        ; U82 := R0
   9 [-]: SELF      R1 R0 K2     ; R2 := R0; R1 := R0[0xf433d122]
  10 [-]: LOADBOOL  R3 0 0       ; R3 := false
  11 [-]: CALL      R1 3 1       ; R1(R2,R3)

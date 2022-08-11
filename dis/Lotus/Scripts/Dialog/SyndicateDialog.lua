@@ -116,7 +116,7 @@
   8 [-]: TEST      R1 1         ; if R1 then PC := 15
   9 [-]: JMP       15           ; PC := 15
  10 [-]: GETUPVAL  R1 U0        ; R1 := U0
- 11 [-]: GETTABLE  R1 R1 K5     ; R82 := R1[0x659d451f]
+ 11 [-]: GETTABLE  R1 R1 K5     ; R1 := R1[0x659d451f]
  12 [-]: GETGLOBAL R2 K4        ; R2 := 0xe4ee43ab
  13 [-]: CALL      R1 2 2       ; R1 := R1(R2)
  14 [-]: MOVE      R0 R1        ; R0 := R1
@@ -126,7 +126,7 @@
  18 [-]: TEST      R1 1         ; if R1 then PC := 24
  19 [-]: JMP       24           ; PC := 24
  20 [-]: GETUPVAL  R1 U0        ; R1 := U0
- 21 [-]: GETTABLE  R1 R1 K5     ; R82 := R1[0x659d451f]
+ 21 [-]: GETTABLE  R1 R1 K5     ; R1 := R1[0x659d451f]
  22 [-]: GETGLOBAL R2 K6        ; R2 := 0x0856e17d
  23 [-]: CALL      R1 2 1       ; R1(R2)
  24 [-]: GETGLOBAL R1 K7        ; R1 := 0x8207141d
@@ -182,7 +182,7 @@
  13 [-]: TEST      R0 1         ; if R0 then PC := 19
  14 [-]: JMP       19           ; PC := 19
  15 [-]: GETUPVAL  R0 U1        ; R0 := U1
- 16 [-]: GETTABLE  R0 R0 K3     ; R82 := R0[0x659d451f]
+ 16 [-]: GETTABLE  R0 R0 K3     ; R0 := R0[0x659d451f]
  17 [-]: GETGLOBAL R1 K2        ; R1 := 0xb607efe1
  18 [-]: CALL      R0 2 1       ; R0(R1)
  19 [-]: RETURN    R0 1         ; return 

@@ -207,7 +207,7 @@
  21 [-]: JMP       51           ; PC := 51
  22 [-]: GETGLOBAL R7 K9        ; R7 := 0x1716cc63
  23 [-]: GETUPVAL  R8 U0        ; R8 := U0
- 24 [-]: GETTABLE  R8 R8 K10    ; R82 := R8[0xe17b82b0]
+ 24 [-]: GETTABLE  R8 R8 K10    ; R8 := R8[0xe17b82b0]
  25 [-]: CALL      R8 1 2       ; R8 := R8()
  26 [-]: GETUPVAL  R9 U0        ; R9 := U0
  27 [-]: GETTABLE  R9 R9 K11    ; R9 := R9["LOCKDOWN"]

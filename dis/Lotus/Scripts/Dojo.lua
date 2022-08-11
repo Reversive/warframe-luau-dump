@@ -134,7 +134,7 @@
  10 [-]: TEST      R4 1         ; if R4 then PC := 33
  11 [-]: JMP       33           ; PC := 33
  12 [-]: GETUPVAL  R4 U0        ; R4 := U0
- 13 [-]: GETTABLE  R4 R4 K3     ; R82 := R4[0xb5be5d4a]
+ 13 [-]: GETTABLE  R4 R4 K3     ; R4 := R4[0xb5be5d4a]
  14 [-]: MOVE      R5 R0        ; R5 := R0
  15 [-]: MOVE      R6 R1        ; R6 := R1
  16 [-]: CALL      R4 3 3       ; R4,R5 := R4(R5,R6)
@@ -147,7 +147,7 @@
  23 [-]: LOADK     R9 K6        ; R9 := ""
  24 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
  25 [-]: GETUPVAL  R6 U0        ; R6 := U0
- 26 [-]: GETTABLE  R6 R6 K7     ; R82 := R6[0x5a22d251]
+ 26 [-]: GETTABLE  R6 R6 K7     ; R6 := R6[0x5a22d251]
  27 [-]: MOVE      R7 R0        ; R7 := R0
  28 [-]: GETGLOBAL R8 K2        ; R8 := 0x993e98c3
  29 [-]: ADD       R9 R4 R2     ; R9 := R4 + R2
@@ -170,7 +170,7 @@
   2 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0x7c1a0374]
   3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
   4 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  5 [-]: GETTABLE  R1 R1 K2     ; R82 := R1[0x659d451f]
+  5 [-]: GETTABLE  R1 R1 K2     ; R1 := R1[0x659d451f]
   6 [-]: GETGLOBAL R2 K3        ; R2 := 0x6ae59cf4
   7 [-]: CALL      R1 2 1       ; R1(R2)
   8 [-]: LOADK     R1 1         ; R1 := 1.000000
@@ -202,7 +202,7 @@
 ; Max Stack Size:  3
 
   1 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  2 [-]: GETTABLE  R0 R0 K0     ; R82 := R0[0x659d451f]
+  2 [-]: GETTABLE  R0 R0 K0     ; R0 := R0[0x659d451f]
   3 [-]: GETGLOBAL R1 K1        ; R1 := 0x4b858385
   4 [-]: CALL      R0 2 1       ; R0(R1)
   5 [-]: GETGLOBAL R0 K2        ; R0 := 0x9ba7909f
@@ -540,7 +540,7 @@
 157 [-]: LOADK     R12 5        ; R12 := 5.000000
 158 [-]: CALL      R11 2 1      ; R11(R12)
 159 [-]: GETGLOBAL R11 K21      ; R11 := 0x34291f5c
-160 [-]: GETTABLE  R11 R11 K51  ; R82 := R11[0xff935e74]
+160 [-]: GETTABLE  R11 R11 K51  ; R11 := R11[0xff935e74]
 161 [-]: CALL      R11 1 2      ; R11 := R11()
 162 [-]: TEST      R11 0        ; if not R11 then PC := 169
 163 [-]: JMP       169          ; PC := 169
@@ -1096,7 +1096,7 @@
 713 [-]: GETTABLE  R37 R31 K105 ; R37 := R31["y"]
 714 [-]: CALL      R33 5 1      ; R33(R34,R35,R36,R37)
 715 [-]: GETGLOBAL R33 K21      ; R33 := 0x34291f5c
-716 [-]: GETTABLE  R33 R33 K110 ; R82 := R33[0x1467d5f4]
+716 [-]: GETTABLE  R33 R33 K110 ; R33 := R33[0x1467d5f4]
 717 [-]: CALL      R33 1 2      ; R33 := R33()
 718 [-]: TEST      R33 0        ; if not R33 then PC := 755
 719 [-]: JMP       755          ; PC := 755
@@ -1111,9 +1111,9 @@
 728 [-]: TEST      R35 1        ; if R35 then PC := 739
 729 [-]: JMP       739          ; PC := 739
 730 [-]: GETUPVAL  R35 U4       ; R35 := U4
-731 [-]: GETTABLE  R35 R35 K113 ; R82 := R35[0x06d055f9]
+731 [-]: GETTABLE  R35 R35 K113 ; R35 := R35[0x06d055f9]
 732 [-]: GETGLOBAL R36 K21      ; R36 := 0x34291f5c
-733 [-]: GETTABLE  R36 R36 K114 ; R82 := R36[0x86647daf]
+733 [-]: GETTABLE  R36 R36 K114 ; R36 := R36[0x86647daf]
 734 [-]: CALL      R36 1 2      ; R36 := R36()
 735 [-]: LOADBOOL  R37 0 0      ; R37 := false
 736 [-]: LOADBOOL  R38 1 0      ; R38 := true
@@ -1122,7 +1122,7 @@
 739 [-]: TEST      R33 1        ; if R33 then PC := 746
 740 [-]: JMP       746          ; PC := 746
 741 [-]: GETGLOBAL R35 K21      ; R35 := 0x34291f5c
-742 [-]: GETTABLE  R35 R35 K51  ; R82 := R35[0xff935e74]
+742 [-]: GETTABLE  R35 R35 K51  ; R35 := R35[0xff935e74]
 743 [-]: CALL      R35 1 2      ; R35 := R35()
 744 [-]: TEST      R35 0        ; if not R35 then PC := 750
 745 [-]: JMP       750          ; PC := 750
@@ -1354,10 +1354,10 @@
 971 [-]: LOADBOOL  R46 0 0      ; R46 := false
 972 [-]: CALL      R43 4 1      ; R43(R44,R45,R46)
 973 [-]: GETUPVAL  R43 U4       ; R43 := U4
-974 [-]: GETTABLE  R43 R43 K147 ; R82 := R43[0x659d451f]
+974 [-]: GETTABLE  R43 R43 K147 ; R43 := R43[0x659d451f]
 975 [-]: GETGLOBAL R44 K148     ; R44 := 0xe1d6c9b3
 976 [-]: CALL      R43 2 2      ; R43 := R43(R44)
-977 [-]: SETUPVAL  R43 U5       ; U82 := +
+977 [-]: SETUPVAL  R43 U5       ; U82 := R5
 978 [-]: GETGLOBAL R43 K39      ; R43 := 0x7b998233
 979 [-]: MOVE      R44 R5       ; R44 := R5
 980 [-]: CALL      R43 2 2      ; R43 := R43(R44)

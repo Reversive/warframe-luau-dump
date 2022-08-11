@@ -137,7 +137,7 @@
 107 [-]: EQ        1 R17 K24    ; if R17 == nil then PC := 171
 108 [-]: JMP       171          ; PC := 171
 109 [-]: GETGLOBAL R17 K22      ; R17 := _T
-110 [-]: GETTABLE  R17 R17 K25  ; R82 := R17[0xec4b1a4a]
+110 [-]: GETTABLE  R17 R17 K25  ; R17 := R17[0xec4b1a4a]
 111 [-]: MOVE      R18 R0       ; R18 := R0
 112 [-]: CALL      R17 2 2      ; R17 := R17(R18)
 113 [-]: GETGLOBAL R18 K0       ; R18 := 0x7b998233
@@ -243,7 +243,7 @@
  26 [-]: LOADK     R5 10        ; R5 := 10.000000
  27 [-]: GETGLOBAL R6 K3        ; R6 := 0x42dcc9f5
  28 [-]: GETGLOBAL R7 K4        ; R7 := 0x5bced4c4
- 29 [-]: GETTABLE  R7 R7 K5     ; R82 := R7[0x3eda26fc]
+ 29 [-]: GETTABLE  R7 R7 K5     ; R7 := R7[0x3eda26fc]
  30 [-]: MUL       R8 R0 K6     ; R8 := R0 * 3.141593
  31 [-]: CALL      R7 2 2       ; R7 := R7(R8)
  32 [-]: MUL       R7 R7 K7     ; R7 := R7 * 2.000000

@@ -671,7 +671,7 @@
  70 [-]: GETTABLE  R28 R4 K18   ; R28 := R4["mValidateEntity"]
  71 [-]: TEST      R28 0        ; if not R28 then PC := 81
  72 [-]: JMP       81           ; PC := 81
- 73 [-]: GETTABLE  R28 R4 K19   ; R82 := R28[0xabbb6050]
+ 73 [-]: GETTABLE  R28 R4 K19   ; R28 := R4[0xabbb6050]
  74 [-]: MOVE      R29 R27      ; R29 := R27
  75 [-]: CALL      R28 2 2      ; R28 := R28(R29)
  76 [-]: TEST      R28 1        ; if R28 then PC := 81
@@ -936,11 +936,11 @@
   9 [-]: TESTSET   R3 R1 1      ; if R1 then PC := 14 else R3 := R1
  10 [-]: JMP       14           ; PC := 14
  11 [-]: GETUPVAL  R3 U1        ; R3 := U1
- 12 [-]: GETTABLE  R3 R3 K5     ; R82 := R3[0x7d4d5d68]
+ 12 [-]: GETTABLE  R3 R3 K5     ; R3 := R3[0x7d4d5d68]
  13 [-]: CALL      R3 1 2       ; R3 := R3()
  14 [-]: SETTABLE  R2 K4 R3     ; R2["mResultsQueue"] := R3
  15 [-]: GETUPVAL  R3 U1        ; R3 := U1
- 16 [-]: GETTABLE  R3 R3 K5     ; R82 := R3[0x7d4d5d68]
+ 16 [-]: GETTABLE  R3 R3 K5     ; R3 := R3[0x7d4d5d68]
  17 [-]: CALL      R3 1 2       ; R3 := R3()
  18 [-]: SETTABLE  R2 K6 R3     ; R2["mNextCellList"] := R3
  19 [-]: NEWTABLE  R3 0 0       ; R3 := {}
@@ -1393,11 +1393,11 @@
  13 [-]: SETTABLE  R5 K6 R3     ; R5["mPlayerNum"] := R3
  14 [-]: SETTABLE  R5 K7 R1     ; R5["mRange"] := R1
  15 [-]: GETUPVAL  R6 U1        ; R6 := U1
- 16 [-]: GETTABLE  R6 R6 K9     ; R82 := R6[0x7d4d5d68]
+ 16 [-]: GETTABLE  R6 R6 K9     ; R6 := R6[0x7d4d5d68]
  17 [-]: CALL      R6 1 2       ; R6 := R6()
  18 [-]: SETTABLE  R5 K8 R6     ; R5["mNextCellList"] := R6
  19 [-]: GETUPVAL  R6 U1        ; R6 := U1
- 20 [-]: GETTABLE  R6 R6 K9     ; R82 := R6[0x7d4d5d68]
+ 20 [-]: GETTABLE  R6 R6 K9     ; R6 := R6[0x7d4d5d68]
  21 [-]: CALL      R6 1 2       ; R6 := R6()
  22 [-]: SETTABLE  R5 K10 R6    ; R5["mActiveCellResults"] := R6
  23 [-]: NEWTABLE  R6 0 0       ; R6 := {}
@@ -1422,13 +1422,13 @@
   3 [-]: SETTABLE  R0 K1 R3     ; R0["mCellWidth"] := R3
   4 [-]: SETTABLE  R0 K3 R2     ; R0["mMaxRange"] := R2
   5 [-]: GETGLOBAL R3 K5        ; R3 := 0x5bced4c4
-  6 [-]: GETTABLE  R3 R3 K6     ; R82 := R3[0x99675e23]
+  6 [-]: GETTABLE  R3 R3 K6     ; R3 := R3[0x99675e23]
   7 [-]: GETTABLE  R4 R0 K1     ; R4 := R0["mCellWidth"]
   8 [-]: DIV       R4 R2 R4     ; R4 := R2 / R4
   9 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  10 [-]: SETTABLE  R0 K4 R3     ; R0["mFullCellCount"] := R3
  11 [-]: GETGLOBAL R3 K5        ; R3 := 0x5bced4c4
- 12 [-]: GETTABLE  R3 R3 K6     ; R82 := R3[0x99675e23]
+ 12 [-]: GETTABLE  R3 R3 K6     ; R3 := R3[0x99675e23]
  13 [-]: GETTABLE  R4 R0 K4     ; R4 := R0["mFullCellCount"]
  14 [-]: DIV       R4 R4 K2     ; R4 := R4 / 2.000000
  15 [-]: CALL      R3 2 2       ; R3 := R3(R4)
@@ -1614,19 +1614,19 @@
 ; Max Stack Size:  13
 
   1 [-]: GETGLOBAL R5 K0        ; R5 := 0x5bced4c4
-  2 [-]: GETTABLE  R5 R5 K1     ; R82 := R5[0x55f27c30]
+  2 [-]: GETTABLE  R5 R5 K1     ; R5 := R5[0x55f27c30]
   3 [-]: GETTABLE  R6 R1 K2     ; R6 := R1["x"]
   4 [-]: GETTABLE  R7 R0 K3     ; R7 := R0["mCellWidth"]
   5 [-]: DIV       R6 R6 R7     ; R6 := R6 / R7
   6 [-]: CALL      R5 2 2       ; R5 := R5(R6)
   7 [-]: GETGLOBAL R6 K0        ; R6 := 0x5bced4c4
-  8 [-]: GETTABLE  R6 R6 K1     ; R82 := R6[0x55f27c30]
+  8 [-]: GETTABLE  R6 R6 K1     ; R6 := R6[0x55f27c30]
   9 [-]: GETTABLE  R7 R1 K4     ; R7 := R1["y"]
  10 [-]: GETTABLE  R8 R0 K3     ; R8 := R0["mCellWidth"]
  11 [-]: DIV       R7 R7 R8     ; R7 := R7 / R8
  12 [-]: CALL      R6 2 2       ; R6 := R6(R7)
  13 [-]: GETGLOBAL R7 K0        ; R7 := 0x5bced4c4
- 14 [-]: GETTABLE  R7 R7 K1     ; R82 := R7[0x55f27c30]
+ 14 [-]: GETTABLE  R7 R7 K1     ; R7 := R7[0x55f27c30]
  15 [-]: GETTABLE  R8 R1 K5     ; R8 := R1["z"]
  16 [-]: GETTABLE  R9 R0 K3     ; R9 := R0["mCellWidth"]
  17 [-]: DIV       R8 R8 R9     ; R8 := R8 / R9
@@ -1659,17 +1659,17 @@
 ; Max Stack Size:  15
 
   1 [-]: GETGLOBAL R7 K0        ; R7 := 0x5bced4c4
-  2 [-]: GETTABLE  R7 R7 K1     ; R82 := R7[0x55f27c30]
+  2 [-]: GETTABLE  R7 R7 K1     ; R7 := R7[0x55f27c30]
   3 [-]: GETTABLE  R8 R0 K2     ; R8 := R0["mCellWidth"]
   4 [-]: DIV       R8 R1 R8     ; R8 := R1 / R8
   5 [-]: CALL      R7 2 2       ; R7 := R7(R8)
   6 [-]: GETGLOBAL R8 K0        ; R8 := 0x5bced4c4
-  7 [-]: GETTABLE  R8 R8 K1     ; R82 := R8[0x55f27c30]
+  7 [-]: GETTABLE  R8 R8 K1     ; R8 := R8[0x55f27c30]
   8 [-]: GETTABLE  R9 R0 K2     ; R9 := R0["mCellWidth"]
   9 [-]: DIV       R9 R2 R9     ; R9 := R2 / R9
  10 [-]: CALL      R8 2 2       ; R8 := R8(R9)
  11 [-]: GETGLOBAL R9 K0        ; R9 := 0x5bced4c4
- 12 [-]: GETTABLE  R9 R9 K1     ; R82 := R9[0x55f27c30]
+ 12 [-]: GETTABLE  R9 R9 K1     ; R9 := R9[0x55f27c30]
  13 [-]: GETTABLE  R10 R0 K2    ; R10 := R0["mCellWidth"]
  14 [-]: DIV       R10 R3 R10   ; R10 := R3 / R10
  15 [-]: CALL      R9 2 2       ; R9 := R9(R10)
@@ -1730,7 +1730,7 @@
   7 [-]: LOADBOOL  R9 1 0       ; R9 := true
   8 [-]: CALL      R5 5 2       ; R5 := R5(R6,R7,R8,R9)
   9 [-]: GETGLOBAL R6 K2        ; R6 := 0x33bdd652
- 10 [-]: GETTABLE  R6 R6 K3     ; R82 := R6[0x23d5322f]
+ 10 [-]: GETTABLE  R6 R6 K3     ; R6 := R6[0x23d5322f]
  11 [-]: GETTABLE  R7 R5 K4     ; R7 := R5["resourceEntries"]
  12 [-]: NEWTABLE  R8 0 3       ; R8 := {}
  13 [-]: SETTABLE  R8 K5 R1     ; R8["pos"] := R1
@@ -1810,13 +1810,13 @@
  44 [-]: FORPREP   R8 86        ; R8 -= R10; PC := 86
  45 [-]: GETTABLE  R12 R4 K14   ; R12 := R4["resourceEntries"]
  46 [-]: GETTABLE  R12 R12 R11  ; R12 := R12[R11]
- 47 [-]: GETTABLE  R13 R0 K15   ; R82 := R13[0x90b5625a]
+ 47 [-]: GETTABLE  R13 R0 K15   ; R13 := R0[0x90b5625a]
  48 [-]: MOVE      R14 R2       ; R14 := R2
  49 [-]: MOVE      R15 R12      ; R15 := R12
  50 [-]: CALL      R13 3 2      ; R13 := R13(R14,R15)
  51 [-]: TEST      R13 0        ; if not R13 then PC := 86
  52 [-]: JMP       86           ; PC := 86
- 53 [-]: GETTABLE  R13 R0 K16   ; R82 := R13[0x4099a2e1]
+ 53 [-]: GETTABLE  R13 R0 K16   ; R13 := R0[0x4099a2e1]
  54 [-]: MOVE      R14 R12      ; R14 := R12
  55 [-]: LOADBOOL  R15 1 0      ; R15 := true
  56 [-]: CALL      R13 3 1      ; R13(R14,R15)
@@ -1830,14 +1830,14 @@
  64 [-]: EQ        0 R17 R18    ; if R17 ~= R18 then PC := 72
  65 [-]: JMP       72           ; PC := 72
  66 [-]: GETGLOBAL R17 K19      ; R17 := 0x33bdd652
- 67 [-]: GETTABLE  R17 R17 K20  ; R82 := R17[0x9c1f3b5a]
+ 67 [-]: GETTABLE  R17 R17 K20  ; R17 := R17[0x9c1f3b5a]
  68 [-]: GETTABLE  R18 R4 K13   ; R18 := R4["creationInfo"]
  69 [-]: MOVE      R19 R16      ; R19 := R16
  70 [-]: CALL      R17 3 1      ; R17(R18,R19)
  71 [-]: JMP       73           ; PC := 73
  72 [-]: FORLOOP   R13 61       ; R13 += R15; if R13 <= R14 then begin PC := 61; R16 := R13 end
  73 [-]: GETGLOBAL R17 K19      ; R17 := 0x33bdd652
- 74 [-]: GETTABLE  R17 R17 K20  ; R82 := R17[0x9c1f3b5a]
+ 74 [-]: GETTABLE  R17 R17 K20  ; R17 := R17[0x9c1f3b5a]
  75 [-]: GETTABLE  R18 R4 K14   ; R18 := R4["resourceEntries"]
  76 [-]: MOVE      R19 R11      ; R19 := R11
  77 [-]: CALL      R17 3 1      ; R17(R18,R19)
@@ -1890,7 +1890,7 @@
  17 [-]: CALL      R5 3 1       ; R5(R6,R7)
  18 [-]: JMP       25           ; PC := 25
  19 [-]: GETGLOBAL R5 K6        ; R5 := 0x33bdd652
- 20 [-]: GETTABLE  R5 R5 K7     ; R82 := R5[0x23d5322f]
+ 20 [-]: GETTABLE  R5 R5 K7     ; R5 := R5[0x23d5322f]
  21 [-]: GETTABLE  R6 R4 K8     ; R6 := R4["candidates"]
  22 [-]: MOVE      R7 R1        ; R7 := R1
  23 [-]: CALL      R5 3 1       ; R5(R6,R7)
@@ -1937,7 +1937,7 @@
  13 [-]: ADD       R6 R6 K5     ; R6 := R6 + 1.000000
  14 [-]: SETTABLE  R5 K4 R6     ; R5["mNextCreationId"] := R6
  15 [-]: GETGLOBAL R6 K6        ; R6 := 0x33bdd652
- 16 [-]: GETTABLE  R6 R6 K7     ; R82 := R6[0x23d5322f]
+ 16 [-]: GETTABLE  R6 R6 K7     ; R6 := R6[0x23d5322f]
  17 [-]: GETTABLE  R7 R5 K8     ; R7 := R5["creationInfo"]
  18 [-]: MOVE      R8 R2        ; R8 := R2
  19 [-]: CALL      R6 3 1       ; R6(R7,R8)
@@ -1983,17 +1983,17 @@
   7 [-]: GETTABLE  R4 R0 K5     ; R4 := R0["mCellWidth"]
   8 [-]: DIV       R2 R3 R4     ; R2 := R3 / R4
   9 [-]: GETGLOBAL R3 K6        ; R3 := 0x5bced4c4
- 10 [-]: GETTABLE  R3 R3 K7     ; R82 := R3[0x55f27c30]
+ 10 [-]: GETTABLE  R3 R3 K7     ; R3 := R3[0x55f27c30]
  11 [-]: GETTABLE  R4 R2 K1     ; R4 := R2["x"]
  12 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  13 [-]: SETTABLE  R2 K1 R3     ; R2["x"] := R3
  14 [-]: GETGLOBAL R3 K6        ; R3 := 0x5bced4c4
- 15 [-]: GETTABLE  R3 R3 K7     ; R82 := R3[0x55f27c30]
+ 15 [-]: GETTABLE  R3 R3 K7     ; R3 := R3[0x55f27c30]
  16 [-]: GETTABLE  R4 R2 K2     ; R4 := R2["y"]
  17 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  18 [-]: SETTABLE  R2 K2 R3     ; R2["y"] := R3
  19 [-]: GETGLOBAL R3 K6        ; R3 := 0x5bced4c4
- 20 [-]: GETTABLE  R3 R3 K7     ; R82 := R3[0x55f27c30]
+ 20 [-]: GETTABLE  R3 R3 K7     ; R3 := R3[0x55f27c30]
  21 [-]: GETTABLE  R4 R2 K3     ; R4 := R2["z"]
  22 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  23 [-]: SETTABLE  R2 K3 R3     ; R2["z"] := R3
@@ -2061,7 +2061,7 @@
 ; Max Stack Size:  5
 
   1 [-]: GETUPVAL  R2 U0        ; R2 := U0
-  2 [-]: GETTABLE  R2 R2 K0     ; R82 := R2[0x7d4d5d68]
+  2 [-]: GETTABLE  R2 R2 K0     ; R2 := R2[0x7d4d5d68]
   3 [-]: MOVE      R3 R0        ; R3 := R0
   4 [-]: MOVE      R4 R1        ; R4 := R1
   5 [-]: TAILCALL  R2 3 0       ; R2,... := R2(R3,R4)
@@ -2096,7 +2096,7 @@
  16 [-]: FORPREP   R1 27        ; R1 -= R3; PC := 27
  17 [-]: GETTABLE  R5 R0 K5     ; R5 := R0["mActiveCellQueryWorkers"]
  18 [-]: GETUPVAL  R6 U0        ; R6 := U0
- 19 [-]: GETTABLE  R6 R6 K6     ; R82 := R6[0x7d4d5d68]
+ 19 [-]: GETTABLE  R6 R6 K6     ; R6 := R6[0x7d4d5d68]
  20 [-]: MOVE      R7 R0        ; R7 := R0
  21 [-]: GETTABLE  R8 R0 K7     ; R8 := R0["mUpdateRange"]
  22 [-]: GETTABLE  R9 R0 K0     ; R9 := R0["mActiveCellTable"]
@@ -2429,7 +2429,7 @@
  33 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  34 [-]: TEST      R5 1         ; if R5 then PC := 46
  35 [-]: JMP       46           ; PC := 46
- 36 [-]: GETTABLE  R5 R0 K14    ; R82 := R5[0xd8625812]
+ 36 [-]: GETTABLE  R5 R0 K14    ; R5 := R0[0xd8625812]
  37 [-]: MOVE      R6 R4        ; R6 := R4
  38 [-]: CALL      R5 2 3       ; R5,R6 := R5(R6)
  39 [-]: TEST      R6 0         ; if not R6 then PC := 46
@@ -2498,7 +2498,7 @@
  25 [-]: GETTABLE  R5 R5 R6     ; R5 := R5[R6]
  26 [-]: TEST      R5 0         ; if not R5 then PC := 44
  27 [-]: JMP       44           ; PC := 44
- 28 [-]: GETTABLE  R5 R0 K12    ; R82 := R5[0x67d4920e]
+ 28 [-]: GETTABLE  R5 R0 K12    ; R5 := R0[0x67d4920e]
  29 [-]: MOVE      R6 R4        ; R6 := R4
  30 [-]: CALL      R5 2 3       ; R5,R6 := R5(R6)
  31 [-]: TEST      R6 0         ; if not R6 then PC := 44
@@ -2567,7 +2567,7 @@
  19 [-]: SELF      R5 R3 K8     ; R6 := R3; R5 := R3[0xf33c42c5]
  20 [-]: CALL      R5 2 1       ; R5(R6)
  21 [-]: JMP       41           ; PC := 41
- 22 [-]: GETTABLE  R5 R0 K9     ; R82 := R5[0x4099a2e1]
+ 22 [-]: GETTABLE  R5 R0 K9     ; R5 := R0[0x4099a2e1]
  23 [-]: MOVE      R6 R4        ; R6 := R4
  24 [-]: LOADBOOL  R7 0 0       ; R7 := false
  25 [-]: CALL      R5 3 1       ; R5(R6,R7)
@@ -2687,15 +2687,15 @@
  15 [-]: SETTABLE  R7 K5 R5     ; R7["mCreateEntity"] := R5
  16 [-]: SETTABLE  R7 K6 R6     ; R7["mValidateEntity"] := R6
  17 [-]: GETUPVAL  R8 U2        ; R8 := U2
- 18 [-]: GETTABLE  R8 R8 K8     ; R82 := R8[0x7d4d5d68]
+ 18 [-]: GETTABLE  R8 R8 K8     ; R8 := R8[0x7d4d5d68]
  19 [-]: CALL      R8 1 2       ; R8 := R8()
  20 [-]: SETTABLE  R7 K7 R8     ; R7["mValidationQueue"] := R8
  21 [-]: GETUPVAL  R8 U2        ; R8 := U2
- 22 [-]: GETTABLE  R8 R8 K8     ; R82 := R8[0x7d4d5d68]
+ 22 [-]: GETTABLE  R8 R8 K8     ; R8 := R8[0x7d4d5d68]
  23 [-]: CALL      R8 1 2       ; R8 := R8()
  24 [-]: SETTABLE  R7 K9 R8     ; R7["mCreationQueue"] := R8
  25 [-]: GETUPVAL  R8 U2        ; R8 := U2
- 26 [-]: GETTABLE  R8 R8 K8     ; R82 := R8[0x7d4d5d68]
+ 26 [-]: GETTABLE  R8 R8 K8     ; R8 := R8[0x7d4d5d68]
  27 [-]: CALL      R8 1 2       ; R8 := R8()
  28 [-]: SETTABLE  R7 K10 R8    ; R7["mDeletionQueue"] := R8
  29 [-]: GETGLOBAL R8 K12       ; R8 := 0x910f4761

@@ -66,7 +66,7 @@
  35 [-]: CALL      R4 2 4       ; R4,R5,R6 := R4(R5)
  36 [-]: JMP       60           ; PC := 60
  37 [-]: GETGLOBAL R9 K11       ; R9 := cjson
- 38 [-]: GETTABLE  R9 R9 K12    ; R82 := R9[0x7ab914d8]
+ 38 [-]: GETTABLE  R9 R9 K12    ; R9 := R9[0x7ab914d8]
  39 [-]: GETTABLE  R10 R8 K13   ; R10 := R8["loadout"]
  40 [-]: CALL      R9 2 2       ; R9 := R9(R10)
  41 [-]: TEST      R9 0         ; if not R9 then PC := 60
@@ -75,13 +75,13 @@
  44 [-]: TEST      R10 0        ; if not R10 then PC := 60
  45 [-]: JMP       60           ; PC := 60
  46 [-]: GETUPVAL  R10 U0       ; R10 := U0
- 47 [-]: GETTABLE  R10 R10 K15  ; R82 := R10[0xeab95b40]
+ 47 [-]: GETTABLE  R10 R10 K15  ; R10 := R10[0xeab95b40]
  48 [-]: GETTABLE  R11 R9 K14   ; R11 := R9["Nemesis"]
  49 [-]: CALL      R10 2 2      ; R10 := R10(R11)
  50 [-]: TEST      R10 0        ; if not R10 then PC := 60
  51 [-]: JMP       60           ; PC := 60
  52 [-]: GETGLOBAL R11 K16      ; R11 := 0x33bdd652
- 53 [-]: GETTABLE  R11 R11 K17  ; R82 := R11[0x23d5322f]
+ 53 [-]: GETTABLE  R11 R11 K17  ; R11 := R11[0x23d5322f]
  54 [-]: MOVE      R12 R2       ; R12 := R2
  55 [-]: NEWTABLE  R13 0 2      ; R13 := {}
  56 [-]: GETTABLE  R14 R8 K19   ; R14 := R8["name"]
@@ -95,7 +95,7 @@
  64 [-]: LT        0 K21 R12    ; if 0.000000 >= R12 then PC := 107
  65 [-]: JMP       107          ; PC := 107
  66 [-]: GETGLOBAL R12 K16      ; R12 := 0x33bdd652
- 67 [-]: GETTABLE  R12 R12 K22  ; R82 := R12[0xf21b1d8e]
+ 67 [-]: GETTABLE  R12 R12 K22  ; R12 := R12[0xf21b1d8e]
  68 [-]: MOVE      R13 R2       ; R13 := R2
  69 [-]: CLOSURE   R14 0        ; R14 := closure(Function #1.1)
  70 [-]: CALL      R12 3 1      ; R12(R13,R14)
@@ -116,7 +116,7 @@
  85 [-]: LOADK     R18 K27      ; R18 := "/Lotus/Language/Kingpins/GrineerHenchmanName"
  86 [-]: NEWTABLE  R19 0 1      ; R19 := {}
  87 [-]: GETGLOBAL R20 K29      ; R20 := 0x7f5022cf
- 88 [-]: GETTABLE  R20 R20 K30  ; R82 := R20[0x3f3e4d12]
+ 88 [-]: GETTABLE  R20 R20 K30  ; R20 := R20[0x3f3e4d12]
  89 [-]: GETTABLE  R21 R14 K31  ; R21 := R14["mName"]
  90 [-]: CALL      R20 2 2      ; R20 := R20(R21)
  91 [-]: SETTABLE  R19 K28 R20  ; R19["LICH_NAME"] := R20
@@ -145,7 +145,7 @@
 114 [-]: TEST      R16 0        ; if not R16 then PC := 120
 115 [-]: JMP       120          ; PC := 120
 116 [-]: GETGLOBAL R16 K38      ; R16 := _T
-117 [-]: GETTABLE  R16 R16 K40  ; R82 := R16[0xec5df718]
+117 [-]: GETTABLE  R16 R16 K40  ; R16 := R16[0xec5df718]
 118 [-]: MOVE      R17 R1       ; R17 := R1
 119 [-]: CALL      R16 2 1      ; R16(R17)
 120 [-]: SELF      R16 R1 K41   ; R17 := R1; R16 := R1[0x22c4e9dd]

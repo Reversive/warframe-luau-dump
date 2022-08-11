@@ -139,10 +139,10 @@
  59 [-]: SUB       R8 R8 R9     ; R8 := R8 - R9
  60 [-]: SETTABLE  R7 K19 R8    ; R7["heading"] := R8
  61 [-]: GETGLOBAL R8 K22       ; R8 := 0x5bced4c4
- 62 [-]: GETTABLE  R8 R8 K23    ; R82 := R8[0xb62ecfe0]
+ 62 [-]: GETTABLE  R8 R8 K23    ; R8 := R8[0xb62ecfe0]
  63 [-]: GETGLOBAL R9 K24       ; R9 := 0x0b00f8d9
  64 [-]: GETGLOBAL R10 K22      ; R10 := 0x5bced4c4
- 65 [-]: GETTABLE  R10 R10 K23  ; R82 := R10[0xb62ecfe0]
+ 65 [-]: GETTABLE  R10 R10 K23  ; R10 := R10[0xb62ecfe0]
  66 [-]: GETGLOBAL R11 K25      ; R11 := 0x2b210072
  67 [-]: LOADK     R12 1        ; R12 := 1.000000
  68 [-]: CALL      R10 3 2      ; R10 := R10(R11,R12)

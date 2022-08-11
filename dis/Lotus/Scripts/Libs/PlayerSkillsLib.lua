@@ -629,7 +629,7 @@
  11 [-]: LOADNIL   R1 R1        ; R1 := nil
  12 [-]: RETURN    R1 2         ; return R1
  13 [-]: GETGLOBAL R1 K2        ; R1 := 0xaf6ac8d4
- 14 [-]: GETTABLE  R1 R1 K3     ; R82 := R1[0x449a507e]
+ 14 [-]: GETTABLE  R1 R1 K3     ; R1 := R1[0x449a507e]
  15 [-]: CALL      R1 1 2       ; R1 := R1()
  16 [-]: SELF      R2 R1 K4     ; R3 := R1; R2 := R1[0x14894de6]
  17 [-]: GETTABLE  R4 R0 K1     ; R4 := R0["upgradeType"]
@@ -783,7 +783,7 @@
  75 [-]: TEST      R18 1        ; if R18 then PC := 82
  76 [-]: JMP       82           ; PC := 82
  77 [-]: GETGLOBAL R18 K9       ; R18 := 0x33bdd652
- 78 [-]: GETTABLE  R18 R18 K10  ; R82 := R18[0x23d5322f]
+ 78 [-]: GETTABLE  R18 R18 K10  ; R18 := R18[0x23d5322f]
  79 [-]: MOVE      R19 R5       ; R19 := R5
  80 [-]: MOVE      R20 R17      ; R20 := R17
  81 [-]: CALL      R18 3 1      ; R18(R19,R20)

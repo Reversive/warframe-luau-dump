@@ -176,13 +176,13 @@
   4 [-]: JMP       6            ; PC := 6
   5 [-]: RETURN    R0 1         ; return 
   6 [-]: GETUPVAL  R2 U0        ; R2 := U0
-  7 [-]: GETTABLE  R2 R2 K1     ; R82 := R2[0xc14d48af]
+  7 [-]: GETTABLE  R2 R2 K1     ; R2 := R2[0xc14d48af]
   8 [-]: CALL      R2 1 2       ; R2 := R2()
   9 [-]: TEST      R2 1         ; if R2 then PC := 12
  10 [-]: JMP       12           ; PC := 12
  11 [-]: RETURN    R0 1         ; return 
  12 [-]: GETUPVAL  R2 U0        ; R2 := U0
- 13 [-]: GETTABLE  R2 R2 K2     ; R82 := R2[0x8e7c3b5e]
+ 13 [-]: GETTABLE  R2 R2 K2     ; R2 := R2[0x8e7c3b5e]
  14 [-]: GETGLOBAL R3 K3        ; R3 := 0x25d99d89
  15 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  16 [-]: GETGLOBAL R3 K4        ; R3 := 0x7b998233
@@ -191,7 +191,7 @@
  19 [-]: TEST      R3 1         ; if R3 then PC := 27
  20 [-]: JMP       27           ; PC := 27
  21 [-]: GETUPVAL  R3 U0        ; R3 := U0
- 22 [-]: GETTABLE  R3 R3 K5     ; R82 := R3[0x536ca856]
+ 22 [-]: GETTABLE  R3 R3 K5     ; R3 := R3[0x536ca856]
  23 [-]: MOVE      R4 R2        ; R4 := R2
  24 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  25 [-]: TEST      R3 1         ; if R3 then PC := 39
@@ -203,7 +203,7 @@
  31 [-]: TEST      R3 1         ; if R3 then PC := 37
  32 [-]: JMP       37           ; PC := 37
  33 [-]: GETGLOBAL R3 K6        ; R3 := _T
- 34 [-]: GETTABLE  R3 R3 K8     ; R82 := R3[0x67f7bf32]
+ 34 [-]: GETTABLE  R3 R3 K8     ; R3 := R3[0x67f7bf32]
  35 [-]: LOADK     R4 K9        ; R4 := "LotusLoadOut"
  36 [-]: CALL      R3 2 1       ; R3(R4)
  37 [-]: SELF      R3 R0 K10    ; R4 := R0; R3 := R0[0x383d2e7d]

@@ -48,7 +48,7 @@
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0xe15169d2
   2 [-]: GETGLOBAL R2 K1        ; R2 := 0x5bced4c4
-  3 [-]: GETTABLE  R2 R2 K2     ; R82 := R2[0xac1b386a]
+  3 [-]: GETTABLE  R2 R2 K2     ; R2 := R2[0xac1b386a]
   4 [-]: MOVE      R3 R0        ; R3 := R0
   5 [-]: GETGLOBAL R4 K0        ; R4 := 0xe15169d2
   6 [-]: LEN       R4 R4        ; R4 := # R4
@@ -69,7 +69,7 @@
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0x0cfc694b
   2 [-]: GETGLOBAL R2 K1        ; R2 := 0x5bced4c4
-  3 [-]: GETTABLE  R2 R2 K2     ; R82 := R2[0xac1b386a]
+  3 [-]: GETTABLE  R2 R2 K2     ; R2 := R2[0xac1b386a]
   4 [-]: MOVE      R3 R0        ; R3 := R0
   5 [-]: GETGLOBAL R4 K0        ; R4 := 0x0cfc694b
   6 [-]: LEN       R4 R4        ; R4 := # R4
@@ -103,7 +103,7 @@
  13 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  14 [-]: SETTABLE  R1 K2 R2     ; R1["AMOUNT"] := R2
  15 [-]: GETGLOBAL R2 K4        ; R2 := cjson
- 16 [-]: GETTABLE  R2 R2 K5     ; R82 := R2[0xb139d7bc]
+ 16 [-]: GETTABLE  R2 R2 K5     ; R2 := R2[0xb139d7bc]
  17 [-]: MOVE      R3 R1        ; R3 := R1
  18 [-]: TAILCALL  R2 2 0       ; R2,... := R2(R3)
  19 [-]: RETURN    R2 0         ; return R2,...
@@ -407,7 +407,7 @@
  66 [-]: UNM       R16 R16      ; R16 := ^ R16
  67 [-]: CALL      R10 7 1      ; R10(R11,R12,R13,R14,R15,R16)
  68 [-]: GETGLOBAL R10 K15      ; R10 := 0x6c97a788
- 69 [-]: GETTABLE  R10 R10 K16  ; R82 := R10[0x608bc054]
+ 69 [-]: GETTABLE  R10 R10 K16  ; R10 := R10[0x608bc054]
  70 [-]: CALL      R10 1 2      ; R10 := R10()
  71 [-]: MOVE      R9 R10       ; R9 := R10
  72 [-]: NEWTABLE  R10 1 0      ; R10 := {}

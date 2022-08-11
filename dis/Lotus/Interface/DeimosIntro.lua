@@ -95,7 +95,7 @@
  41 [-]: CLOSURE   R8 0         ; R8 := closure(Function #2.1)
  42 [-]: CALL      R0 9 1       ; R0(R1,R2,R3,R4,R5,R6,R7,R8)
  43 [-]: GETUPVAL  R0 U0        ; R0 := U0
- 44 [-]: GETTABLE  R0 R0 K12    ; R82 := R0[0x659d451f]
+ 44 [-]: GETTABLE  R0 R0 K12    ; R0 := R0[0x659d451f]
  45 [-]: GETGLOBAL R1 K13       ; R1 := 0xabf479f7
  46 [-]: CALL      R0 2 1       ; R0(R1)
  47 [-]: RETURN    R0 1         ; return 

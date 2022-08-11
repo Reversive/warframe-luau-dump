@@ -106,12 +106,12 @@
  18 [-]: CALL      R0 2 2       ; R0 := R0(R1)
  19 [-]: SELF      R0 R0 K8     ; R1 := R0; R0 := R0[0x66905cb0]
  20 [-]: CALL      R0 2 2       ; R0 := R0(R1)
- 21 [-]: SETUPVAL  R0 U0        ; U82 := 
+ 21 [-]: SETUPVAL  R0 U0        ; U82 := R0
  22 [-]: GETGLOBAL R0 K6        ; R0 := 0x89326c93
  23 [-]: SELF      R0 R0 K9     ; R1 := R0; R0 := R0[0x78298275]
  24 [-]: CALL      R0 2 2       ; R0 := R0(R1)
  25 [-]: GETUPVAL  R1 U1        ; R1 := U1
- 26 [-]: GETTABLE  R1 R1 K10    ; R82 := R1[0xa1df01d6]
+ 26 [-]: GETTABLE  R1 R1 K10    ; R1 := R1[0xa1df01d6]
  27 [-]: LOADK     R2 K11       ; R2 := "/Lotus/Language/Quests/KubrowQuestObjective1"
  28 [-]: CALL      R1 2 1       ; R1(R2)
  29 [-]: GETGLOBAL R1 K1        ; R1 := _T
@@ -144,7 +144,7 @@
  56 [-]: GETGLOBAL R11 K23      ; R11 := EMPTY_SYMBOL
  57 [-]: GETGLOBAL R12 K24      ; R12 := ZERO_VECTOR
  58 [-]: CALL      R8 5 2       ; R8 := R8(R9,R10,R11,R12)
- 59 [-]: SETUPVAL  R8 U2        ; U82 := 
+ 59 [-]: SETUPVAL  R8 U2        ; U82 := R2
  60 [-]: GETUPVAL  R8 U0        ; R8 := U0
  61 [-]: SELF      R8 R8 K25    ; R9 := R8; R8 := R8[0xe2871589]
  62 [-]: GETUPVAL  R10 U2       ; R10 := U2
@@ -176,19 +176,19 @@
 ; Max Stack Size:  2
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0xbe190284
-  2 [-]: SETUPVAL  R0 U0        ; U82 := 
+  2 [-]: SETUPVAL  R0 U0        ; U82 := R0
   3 [-]: GETGLOBAL R0 K1        ; R0 := 0x89326c93
   4 [-]: SELF      R0 R0 K2     ; R1 := R0; R0 := R0[0xfb64e76c]
   5 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  6 [-]: SETUPVAL  R0 U1        ; U82 := 
+  6 [-]: SETUPVAL  R0 U1        ; U82 := R1
   7 [-]: GETUPVAL  R0 U0        ; R0 := U0
   8 [-]: SELF      R0 R0 K3     ; R1 := R0; R0 := R0[0x33307f92]
   9 [-]: CALL      R0 2 2       ; R0 := R0(R1)
- 10 [-]: SETUPVAL  R0 U2        ; U82 := 
+ 10 [-]: SETUPVAL  R0 U2        ; U82 := R2
  11 [-]: GETUPVAL  R0 U4        ; R0 := U4
- 12 [-]: GETTABLE  R0 R0 K4     ; R82 := R0[0xde474187]
+ 12 [-]: GETTABLE  R0 R0 K4     ; R0 := R0[0xde474187]
  13 [-]: CALL      R0 1 2       ; R0 := R0()
- 14 [-]: SETUPVAL  R0 U3        ; U82 := 
+ 14 [-]: SETUPVAL  R0 U3        ; U82 := R3
  15 [-]: RETURN    R0 1         ; return 
 
 
@@ -325,10 +325,10 @@
 ; Max Stack Size:  4
 
   1 [-]: GETUPVAL  R0 U1        ; R0 := U1
-  2 [-]: GETTABLE  R0 R0 K0     ; R82 := R0[0xc9013731]
+  2 [-]: GETTABLE  R0 R0 K0     ; R0 := R0[0xc9013731]
   3 [-]: GETUPVAL  R1 U2        ; R1 := U2
   4 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  5 [-]: SETUPVAL  R0 U0        ; U82 := 
+  5 [-]: SETUPVAL  R0 U0        ; U82 := R0
   6 [-]: GETGLOBAL R0 K1        ; R0 := 0x89326c93
   7 [-]: SELF      R0 R0 K2     ; R1 := R0; R0 := R0[0x18d05d30]
   8 [-]: CALL      R0 2 2       ; R0 := R0(R1)
@@ -351,7 +351,7 @@
  25 [-]: LOADK     R2 0         ; R2 := 0.000000
  26 [-]: CALL      R1 2 1       ; R1(R2)
  27 [-]: GETGLOBAL R1 K5        ; R1 := 0xbe190284
- 28 [-]: SETUPVAL  R1 U5        ; U82 := 
+ 28 [-]: SETUPVAL  R1 U5        ; U82 := R5
  29 [-]: GETGLOBAL R1 K4        ; R1 := 0x7b998233
  30 [-]: GETUPVAL  R2 U5        ; R2 := U5
  31 [-]: CALL      R1 2 2       ; R1 := R1(R2)
@@ -382,7 +382,7 @@
  56 [-]: SELF      R1 R1 K8     ; R2 := R1; R1 := R1[0x209398c2]
  57 [-]: GETUPVAL  R3 U6        ; R3 := U6
  58 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
- 59 [-]: SETUPVAL  R1 U6        ; U82 := 
+ 59 [-]: SETUPVAL  R1 U6        ; U82 := R6
  60 [-]: GETGLOBAL R1 K1        ; R1 := 0x89326c93
  61 [-]: SELF      R1 R1 K2     ; R2 := R1; R1 := R1[0x18d05d30]
  62 [-]: CALL      R1 2 2       ; R1 := R1(R2)
@@ -418,7 +418,7 @@
   7 [-]: TEST      R1 1         ; if R1 then PC := 21
   8 [-]: JMP       21           ; PC := 21
   9 [-]: GETUPVAL  R1 U0        ; R1 := U0
- 10 [-]: GETTABLE  R1 R1 K3     ; R82 := R1[0xa1df01d6]
+ 10 [-]: GETTABLE  R1 R1 K3     ; R1 := R1[0xa1df01d6]
  11 [-]: LOADK     R2 K4        ; R2 := "/Lotus/Language/Quests/KubrowQuestObjective1"
  12 [-]: CALL      R1 2 1       ; R1(R2)
  13 [-]: GETGLOBAL R1 K5        ; R1 := 0xcbd666e1
@@ -453,7 +453,7 @@
  10 [-]: SELF      R0 R0 K3     ; R1 := R0; R0 := R0[0xcc85ce3a]
  11 [-]: CALL      R0 2 1       ; R0(R1)
  12 [-]: GETUPVAL  R0 U1        ; R0 := U1
- 13 [-]: GETTABLE  R0 R0 K4     ; R82 := R0[0xa1df01d6]
+ 13 [-]: GETTABLE  R0 R0 K4     ; R0 := R0[0xa1df01d6]
  14 [-]: LOADK     R1 K5        ; R1 := "/Lotus/Language/DeadlockProtocol/ProteaQuestGetToExtraction"
  15 [-]: CALL      R0 2 1       ; R0(R1)
  16 [-]: GETGLOBAL R0 K6        ; R0 := 0x89326c93

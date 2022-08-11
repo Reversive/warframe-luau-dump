@@ -83,13 +83,13 @@
  24 [-]: ADD       R12 R3 K1    ; R12 := R3 + 1.000000
  25 [-]: GETTABLE  R11 R11 R12  ; R11 := R11[R12]
  26 [-]: GETGLOBAL R12 K3       ; R12 := 0x5bced4c4
- 27 [-]: GETTABLE  R12 R12 K4   ; R82 := R12[0xac1b386a]
+ 27 [-]: GETTABLE  R12 R12 K4   ; R12 := R12[0xac1b386a]
  28 [-]: MOVE      R13 R3       ; R13 := R3
  29 [-]: LEN       R14 R1       ; R14 := # R1
  30 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
  31 [-]: GETTABLE  R12 R1 R12   ; R12 := R1[R12]
  32 [-]: GETGLOBAL R13 K3       ; R13 := 0x5bced4c4
- 33 [-]: GETTABLE  R13 R13 K4   ; R82 := R13[0xac1b386a]
+ 33 [-]: GETTABLE  R13 R13 K4   ; R13 := R13[0xac1b386a]
  34 [-]: ADD       R14 R3 K1    ; R14 := R3 + 1.000000
  35 [-]: LEN       R15 R1       ; R15 := # R1
  36 [-]: CALL      R13 3 2      ; R13 := R13(R14,R15)
@@ -246,7 +246,7 @@
 123 [-]: JMP       131          ; PC := 131
 124 [-]: SELF      R16 R1 K32   ; R17 := R1; R16 := R1[0x583c2ed7]
 125 [-]: GETGLOBAL R18 K33      ; R18 := 0x5bced4c4
-126 [-]: GETTABLE  R18 R18 K34  ; R82 := R18[0xb62ecfe0]
+126 [-]: GETTABLE  R18 R18 K34  ; R18 := R18[0xb62ecfe0]
 127 [-]: MOVE      R19 R15      ; R19 := R15
 128 [-]: MOVE      R20 R11      ; R20 := R11
 129 [-]: CALL      R18 3 0      ; R18,... := R18(R19,R20)
@@ -272,7 +272,7 @@
 149 [-]: EQ        0 R17 K12    ; if R17 ~= 0.000000 then PC := 159
 150 [-]: JMP       159          ; PC := 159
 151 [-]: GETUPVAL  R17 U2       ; R17 := U2
-152 [-]: GETTABLE  R17 R17 K41  ; R82 := R17[0x9742b85b]
+152 [-]: GETTABLE  R17 R17 K41  ; R17 := R17[0x9742b85b]
 153 [-]: GETGLOBAL R18 K42      ; R18 := _T
 154 [-]: GETTABLE  R18 R18 K43  ; R18 := R18["AmbientMissionTransmissionSet"]
 155 [-]: GETGLOBAL R19 K39      ; R19 := 0x0469f296

@@ -64,7 +64,7 @@
  18 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  19 [-]: SETGLOBAL R3 K5        ; (0x5a5ba3e8) := R3
  20 [-]: LOADBOOL  R3 1 0       ; R3 := true
- 21 [-]: SETUPVAL  R3 U0        ; U82 := 
+ 21 [-]: SETUPVAL  R3 U0        ; U82 := R0
  22 [-]: SELF      R3 R2 K4     ; R4 := R2; R3 := R2[0x697019d0]
  23 [-]: LOADK     R5 7         ; R5 := 7.000000
  24 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
@@ -87,7 +87,7 @@
  41 [-]: LOADBOOL  R6 1 0       ; R6 := true
  42 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
  43 [-]: LOADBOOL  R3 1 0       ; R3 := true
- 44 [-]: SETUPVAL  R3 U0        ; U82 := 
+ 44 [-]: SETUPVAL  R3 U0        ; U82 := R0
  45 [-]: RETURN    R0 1         ; return 
 
 
@@ -191,17 +191,17 @@
  89 [-]: SELF      R4 R0 K13    ; R5 := R0; R4 := R0[0x986d2ab8]
  90 [-]: GETUPVAL  R6 U4        ; R6 := U4
  91 [-]: GETUPVAL  R7 U5        ; R7 := U5
- 92 [-]: GETTABLE  R7 R7 K20    ; R82 := R7[0x021dc4be]
+ 92 [-]: GETTABLE  R7 R7 K20    ; R7 := R7[0x021dc4be]
  93 [-]: GETUPVAL  R8 U3        ; R8 := U3
  94 [-]: GETTABLE  R8 R8 K14    ; R8 := R8["red"]
  95 [-]: CALL      R7 2 2       ; R7 := R7(R8)
  96 [-]: GETUPVAL  R8 U5        ; R8 := U5
- 97 [-]: GETTABLE  R8 R8 K20    ; R82 := R8[0x021dc4be]
+ 97 [-]: GETTABLE  R8 R8 K20    ; R8 := R8[0x021dc4be]
  98 [-]: GETUPVAL  R9 U3        ; R9 := U3
  99 [-]: GETTABLE  R9 R9 K18    ; R9 := R9["green"]
 100 [-]: CALL      R8 2 2       ; R8 := R8(R9)
 101 [-]: GETUPVAL  R9 U5        ; R9 := U5
-102 [-]: GETTABLE  R9 R9 K20    ; R82 := R9[0x021dc4be]
+102 [-]: GETTABLE  R9 R9 K20    ; R9 := R9[0x021dc4be]
 103 [-]: GETUPVAL  R10 U3       ; R10 := U3
 104 [-]: GETTABLE  R10 R10 K19  ; R10 := R10["blue"]
 105 [-]: CALL      R9 2 0       ; R9,... := R9(R10)

@@ -162,7 +162,7 @@
 133 [-]: LOADK     R9 0         ; R9 := 0.000000
 134 [-]: CALL      R8 2 1       ; R8(R9)
 135 [-]: GETGLOBAL R8 K37       ; R8 := 0x5bced4c4
-136 [-]: GETTABLE  R8 R8 K38    ; R82 := R8[0xac1b386a]
+136 [-]: GETTABLE  R8 R8 K38    ; R8 := R8[0xac1b386a]
 137 [-]: GETGLOBAL R9 K39       ; R9 := 0x67652851
 138 [-]: CALL      R9 1 2       ; R9 := R9()
 139 [-]: ADD       R9 R5 R9     ; R9 := R5 + R9
@@ -287,7 +287,7 @@
  27 [-]: LOADK     R6 0         ; R6 := 0.000000
  28 [-]: CALL      R5 2 1       ; R5(R6)
  29 [-]: GETGLOBAL R5 K9        ; R5 := 0x5bced4c4
- 30 [-]: GETTABLE  R5 R5 K10    ; R82 := R5[0xac1b386a]
+ 30 [-]: GETTABLE  R5 R5 K10    ; R5 := R5[0xac1b386a]
  31 [-]: GETGLOBAL R6 K11       ; R6 := 0x67652851
  32 [-]: CALL      R6 1 2       ; R6 := R6()
  33 [-]: ADD       R6 R2 R6     ; R6 := R2 + R6

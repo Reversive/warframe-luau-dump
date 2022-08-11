@@ -64,7 +64,7 @@
 ; Max Stack Size:  5
 
   1 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  2 [-]: GETTABLE  R1 R1 K0     ; R82 := R1[0x088839fd]
+  2 [-]: GETTABLE  R1 R1 K0     ; R1 := R1[0x088839fd]
   3 [-]: MOVE      R2 R0        ; R2 := R0
   4 [-]: GETGLOBAL R3 K1        ; R3 := 0xae91e43b
   5 [-]: LOADBOOL  R4 1 0       ; R4 := true
@@ -82,7 +82,7 @@
 ; Max Stack Size:  4
 
   1 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  2 [-]: GETTABLE  R1 R1 K0     ; R82 := R1[0x2e84930f]
+  2 [-]: GETTABLE  R1 R1 K0     ; R1 := R1[0x2e84930f]
   3 [-]: MOVE      R2 R0        ; R2 := R0
   4 [-]: GETGLOBAL R3 K1        ; R3 := 0xae91e43b
   5 [-]: CALL      R1 3 1       ; R1(R2,R3)
@@ -99,7 +99,7 @@
 ; Max Stack Size:  4
 
   1 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  2 [-]: GETTABLE  R1 R1 K0     ; R82 := R1[0xfc6541b2]
+  2 [-]: GETTABLE  R1 R1 K0     ; R1 := R1[0xfc6541b2]
   3 [-]: MOVE      R2 R0        ; R2 := R0
   4 [-]: GETGLOBAL R3 K1        ; R3 := 0xae91e43b
   5 [-]: CALL      R1 3 1       ; R1(R2,R3)
@@ -116,7 +116,7 @@
 ; Max Stack Size:  4
 
   1 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  2 [-]: GETTABLE  R1 R1 K0     ; R82 := R1[0xadd16fb0]
+  2 [-]: GETTABLE  R1 R1 K0     ; R1 := R1[0xadd16fb0]
   3 [-]: MOVE      R2 R0        ; R2 := R0
   4 [-]: GETGLOBAL R3 K1        ; R3 := 0xae91e43b
   5 [-]: CALL      R1 3 1       ; R1(R2,R3)
@@ -133,7 +133,7 @@
 ; Max Stack Size:  2
 
   1 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  2 [-]: GETTABLE  R0 R0 K0     ; R82 := R0[0x638926f7]
+  2 [-]: GETTABLE  R0 R0 K0     ; R0 := R0[0x638926f7]
   3 [-]: GETGLOBAL R1 K1        ; R1 := 0xae91e43b
   4 [-]: CALL      R0 2 1       ; R0(R1)
   5 [-]: RETURN    R0 1         ; return 
@@ -149,7 +149,7 @@
 ; Max Stack Size:  2
 
   1 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  2 [-]: GETTABLE  R0 R0 K0     ; R82 := R0[0xc074491b]
+  2 [-]: GETTABLE  R0 R0 K0     ; R0 := R0[0xc074491b]
   3 [-]: GETGLOBAL R1 K1        ; R1 := 0xae91e43b
   4 [-]: CALL      R0 2 1       ; R0(R1)
   5 [-]: RETURN    R0 1         ; return 
@@ -165,7 +165,7 @@
 ; Max Stack Size:  3
 
   1 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  2 [-]: GETTABLE  R0 R0 K0     ; R82 := R0[0x687ae094]
+  2 [-]: GETTABLE  R0 R0 K0     ; R0 := R0[0x687ae094]
   3 [-]: GETGLOBAL R1 K1        ; R1 := 0xae91e43b
   4 [-]: CALL      R0 2 1       ; R0(R1)
   5 [-]: GETGLOBAL R0 K2        ; R0 := 0x9ba7909f
@@ -231,10 +231,10 @@
   6 [-]: GETGLOBAL R0 K1        ; R0 := 0x9ba7909f
   7 [-]: SELF      R0 R0 K2     ; R1 := R0; R0 := R0[0xbcfb64ab]
   8 [-]: GETUPVAL  R2 U1        ; R2 := U1
-  9 [-]: GETTABLE  R2 R2 K3     ; R82 := R2[0xc472e470]
+  9 [-]: GETTABLE  R2 R2 K3     ; R2 := R2[0xc472e470]
  10 [-]: CALL      R2 1 0       ; R2,... := R2()
  11 [-]: CALL      R0 0 2       ; R0 := R0(R1,...)
- 12 [-]: SETUPVAL  R0 U0        ; U82 := 
+ 12 [-]: SETUPVAL  R0 U0        ; U82 := R0
  13 [-]: GETGLOBAL R0 K0        ; R0 := 0x7b998233
  14 [-]: GETUPVAL  R1 U0        ; R1 := U0
  15 [-]: CALL      R0 2 2       ; R0 := R0(R1)
@@ -268,7 +268,7 @@
  43 [-]: TEST      R0 0         ; if not R0 then PC := 48
  44 [-]: JMP       48           ; PC := 48
  45 [-]: GETUPVAL  R0 U2        ; R0 := U2
- 46 [-]: GETTABLE  R0 R0 K10    ; R82 := R0[0xfaa69527]
+ 46 [-]: GETTABLE  R0 R0 K10    ; R0 := R0[0xfaa69527]
  47 [-]: CALL      R0 1 1       ; R0()
  48 [-]: RETURN    R0 1         ; return 
 
@@ -283,11 +283,11 @@
 ; Max Stack Size:  4
 
   1 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  2 [-]: GETTABLE  R1 R1 K0     ; R82 := R1[0x89508c90]
+  2 [-]: GETTABLE  R1 R1 K0     ; R1 := R1[0x89508c90]
   3 [-]: MOVE      R2 R0        ; R2 := R0
   4 [-]: CALL      R1 2 1       ; R1(R2)
   5 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  6 [-]: GETTABLE  R1 R1 K1     ; R82 := R1[0x2e84930f]
+  6 [-]: GETTABLE  R1 R1 K1     ; R1 := R1[0x2e84930f]
   7 [-]: MOVE      R2 R0        ; R2 := R0
   8 [-]: GETGLOBAL R3 K2        ; R3 := 0xae91e43b
   9 [-]: CALL      R1 3 1       ; R1(R2,R3)
@@ -304,7 +304,7 @@
 ; Max Stack Size:  3
 
   1 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  2 [-]: GETTABLE  R1 R1 K0     ; R82 := R1[0xe00236bf]
+  2 [-]: GETTABLE  R1 R1 K0     ; R1 := R1[0xe00236bf]
   3 [-]: MOVE      R2 R0        ; R2 := R0
   4 [-]: CALL      R1 2 1       ; R1(R2)
   5 [-]: RETURN    R0 1         ; return 
@@ -320,12 +320,12 @@
 ; Max Stack Size:  4
 
   1 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  2 [-]: GETTABLE  R1 R1 K0     ; R82 := R1[0x2e84930f]
+  2 [-]: GETTABLE  R1 R1 K0     ; R1 := R1[0x2e84930f]
   3 [-]: MOVE      R2 R0        ; R2 := R0
   4 [-]: GETGLOBAL R3 K1        ; R3 := 0xae91e43b
   5 [-]: CALL      R1 3 1       ; R1(R2,R3)
   6 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  7 [-]: GETTABLE  R1 R1 K2     ; R82 := R1[0xb94d1829]
+  7 [-]: GETTABLE  R1 R1 K2     ; R1 := R1[0xb94d1829]
   8 [-]: MOVE      R2 R0        ; R2 := R0
   9 [-]: GETGLOBAL R3 K1        ; R3 := 0xae91e43b
  10 [-]: CALL      R1 3 1       ; R1(R2,R3)

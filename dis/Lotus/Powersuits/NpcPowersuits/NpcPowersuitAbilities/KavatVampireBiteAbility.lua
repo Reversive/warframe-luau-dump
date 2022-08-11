@@ -235,7 +235,7 @@
  87 [-]: TEST      R8 1         ; if R8 then PC := 98
  88 [-]: JMP       98           ; PC := 98
  89 [-]: GETGLOBAL R8 K21       ; R8 := 0x5bced4c4
- 90 [-]: GETTABLE  R8 R8 K22    ; R82 := R8[0x3630e649]
+ 90 [-]: GETTABLE  R8 R8 K22    ; R8 := R8[0x3630e649]
  91 [-]: CALL      R8 1 2       ; R8 := R8()
  92 [-]: GETGLOBAL R9 K23       ; R9 := 0x3ea7c563
  93 [-]: LE        0 R8 R9      ; if R8 > R9 then PC := 98
@@ -363,7 +363,7 @@
 106 [-]: TEST      R8 0         ; if not R8 then PC := 147
 107 [-]: JMP       147          ; PC := 147
 108 [-]: GETGLOBAL R8 K18       ; R8 := 0x34291f5c
-109 [-]: GETTABLE  R8 R8 K23    ; R82 := R8[0x35c16153]
+109 [-]: GETTABLE  R8 R8 K23    ; R8 := R8[0x35c16153]
 110 [-]: CALL      R8 1 2       ; R8 := R8()
 111 [-]: GETGLOBAL R9 K25       ; R9 := 0x91d85e5f
 112 [-]: SETTABLE  R8 K24 R9    ; R8["baseAmount"] := R9

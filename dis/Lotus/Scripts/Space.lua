@@ -296,13 +296,13 @@
  25 [-]: MUL       R6 R3 R6     ; R6 := R3 * R6
  26 [-]: CALL      R4 3 1       ; R4(R5,R6)
  27 [-]: GETGLOBAL R4 K10       ; R4 := 0x5bced4c4
- 28 [-]: GETTABLE  R4 R4 K11    ; R82 := R4[0xac1b386a]
+ 28 [-]: GETTABLE  R4 R4 K11    ; R4 := R4[0xac1b386a]
  29 [-]: MUL       R5 R3 K12    ; R5 := R3 * 0.300000
  30 [-]: SUB       R5 K13 R5    ; R5 := 1.500000 - R5
  31 [-]: LOADK     R6 1         ; R6 := 1.000000
  32 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
  33 [-]: GETGLOBAL R5 K10       ; R5 := 0x5bced4c4
- 34 [-]: GETTABLE  R5 R5 K14    ; R82 := R5[0xb62ecfe0]
+ 34 [-]: GETTABLE  R5 R5 K14    ; R5 := R5[0xb62ecfe0]
  35 [-]: LOADK     R6 0         ; R6 := 0.500000
  36 [-]: MOVE      R7 R4        ; R7 := R4
  37 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
@@ -366,17 +366,17 @@
   7 [-]: JMP       77           ; PC := 77
   8 [-]: GETGLOBAL R2 K2        ; R2 := 0x00046924
   9 [-]: GETGLOBAL R3 K3        ; R3 := 0x5bced4c4
- 10 [-]: GETTABLE  R3 R3 K4     ; R82 := R3[0x3630e649]
+ 10 [-]: GETTABLE  R3 R3 K4     ; R3 := R3[0x3630e649]
  11 [-]: LOADK     R4 -180      ; R4 := -180.000000
  12 [-]: LOADK     R5 180       ; R5 := 180.000000
  13 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
  14 [-]: GETGLOBAL R4 K3        ; R4 := 0x5bced4c4
- 15 [-]: GETTABLE  R4 R4 K4     ; R82 := R4[0x3630e649]
+ 15 [-]: GETTABLE  R4 R4 K4     ; R4 := R4[0x3630e649]
  16 [-]: LOADK     R5 -180      ; R5 := -180.000000
  17 [-]: LOADK     R6 180       ; R6 := 180.000000
  18 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
  19 [-]: GETGLOBAL R5 K3        ; R5 := 0x5bced4c4
- 20 [-]: GETTABLE  R5 R5 K4     ; R82 := R5[0x3630e649]
+ 20 [-]: GETTABLE  R5 R5 K4     ; R5 := R5[0x3630e649]
  21 [-]: LOADK     R6 -180      ; R6 := -180.000000
  22 [-]: LOADK     R7 180       ; R7 := 180.000000
  23 [-]: CALL      R5 3 0       ; R5,... := R5(R6,R7)
@@ -400,13 +400,13 @@
  41 [-]: MUL       R7 R4 R7     ; R7 := R4 * R7
  42 [-]: CALL      R5 3 1       ; R5(R6,R7)
  43 [-]: GETGLOBAL R5 K3        ; R5 := 0x5bced4c4
- 44 [-]: GETTABLE  R5 R5 K12    ; R82 := R5[0xac1b386a]
+ 44 [-]: GETTABLE  R5 R5 K12    ; R5 := R5[0xac1b386a]
  45 [-]: MUL       R6 R4 K13    ; R6 := R4 * 0.300000
  46 [-]: SUB       R6 K14 R6    ; R6 := 1.500000 - R6
  47 [-]: LOADK     R7 1         ; R7 := 1.000000
  48 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
  49 [-]: GETGLOBAL R6 K3        ; R6 := 0x5bced4c4
- 50 [-]: GETTABLE  R6 R6 K15    ; R82 := R6[0xb62ecfe0]
+ 50 [-]: GETTABLE  R6 R6 K15    ; R6 := R6[0xb62ecfe0]
  51 [-]: LOADK     R7 0         ; R7 := 0.500000
  52 [-]: MOVE      R8 R5        ; R8 := R5
  53 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)

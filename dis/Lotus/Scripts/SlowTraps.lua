@@ -283,7 +283,7 @@
  23 [-]: TEST      R3 0         ; if not R3 then PC := 26
  24 [-]: JMP       26           ; PC := 26
  25 [-]: RETURN    R0 1         ; return 
- 26 [-]: SETUPVAL  R0 U0        ; U82 := 
+ 26 [-]: SETUPVAL  R0 U0        ; U82 := R0
  27 [-]: SELF      R3 R1 K6     ; R4 := R1; R3 := R1[0xd5f7912b]
  28 [-]: GETGLOBAL R5 K7        ; R5 := 0x0469f296
  29 [-]: LOADK     R6 K8        ; R6 := "DoSlow"

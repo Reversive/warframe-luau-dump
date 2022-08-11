@@ -569,7 +569,7 @@
  27 [-]: LT        0 R5 R6      ; if R5 >= R6 then PC := 40
  28 [-]: JMP       40           ; PC := 40
  29 [-]: GETGLOBAL R9 K8        ; R9 := 0x5bced4c4
- 30 [-]: GETTABLE  R9 R9 K9     ; R82 := R9[0xac1b386a]
+ 30 [-]: GETTABLE  R9 R9 K9     ; R9 := R9[0xac1b386a]
  31 [-]: DIV       R10 R5 R4    ; R10 := R5 / R4
  32 [-]: SUB       R10 K10 R10  ; R10 := 1.000000 - R10
  33 [-]: LOADK     R11 1        ; R11 := 1.000000
@@ -774,7 +774,7 @@
  41 [-]: LOADK     R13 0        ; R13 := 0.000000
  42 [-]: CALL      R11 3 2      ; R11 := R11(R12,R13)
  43 [-]: GETGLOBAL R12 K12      ; R12 := 0x33bdd652
- 44 [-]: GETTABLE  R12 R12 K13  ; R82 := R12[0x23d5322f]
+ 44 [-]: GETTABLE  R12 R12 K13  ; R12 := R12[0x23d5322f]
  45 [-]: MOVE      R13 R4       ; R13 := R4
  46 [-]: SELF      R14 R11 K14  ; R15 := R11; R14 := R11[0xae79653b]
  47 [-]: GETGLOBAL R16 K15      ; R16 := 0x6c97a788

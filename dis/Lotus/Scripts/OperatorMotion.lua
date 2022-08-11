@@ -543,7 +543,7 @@
 ; Max Stack Size:  6
 
   1 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  2 [-]: GETTABLE  R1 R1 K0     ; R82 := R1[0x8d2ea4d9]
+  2 [-]: GETTABLE  R1 R1 K0     ; R1 := R1[0x8d2ea4d9]
   3 [-]: MOVE      R2 R0        ; R2 := R0
   4 [-]: CALL      R1 2 1       ; R1(R2)
   5 [-]: SELF      R1 R0 K1     ; R2 := R0; R1 := R0[0x20833f15]
@@ -597,7 +597,7 @@
  29 [-]: SELF      R4 R0 K7     ; R5 := R0; R4 := R0[0x986d2ab8]
  30 [-]: GETUPVAL  R6 U0        ; R6 := U0
  31 [-]: GETGLOBAL R7 K8        ; R7 := 0x5bced4c4
- 32 [-]: GETTABLE  R7 R7 K9     ; R82 := R7[0xac1b386a]
+ 32 [-]: GETTABLE  R7 R7 K9     ; R7 := R7[0xac1b386a]
  33 [-]: LOADK     R8 1         ; R8 := 1.000000
  34 [-]: DIV       R9 R3 K10    ; R9 := R3 / 150.000000
  35 [-]: CALL      R7 3 0       ; R7,... := R7(R8,R9)

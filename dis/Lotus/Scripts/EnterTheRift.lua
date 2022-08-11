@@ -129,7 +129,7 @@
  94 [-]: TEST      R8 0         ; if not R8 then PC := 211
  95 [-]: JMP       211          ; PC := 211
  96 [-]: GETUPVAL  R8 U0        ; R8 := U0
- 97 [-]: GETTABLE  R8 R8 K24    ; R82 := R8[0x32316a21]
+ 97 [-]: GETTABLE  R8 R8 K24    ; R8 := R8[0x32316a21]
  98 [-]: CALL      R8 1 2       ; R8 := R8()
  99 [-]: TEST      R8 0         ; if not R8 then PC := 211
 100 [-]: JMP       211          ; PC := 211
@@ -211,7 +211,7 @@
 176 [-]: TEST      R10 0        ; if not R10 then PC := 211
 177 [-]: JMP       211          ; PC := 211
 178 [-]: GETUPVAL  R10 U0       ; R10 := U0
-179 [-]: GETTABLE  R10 R10 K24  ; R82 := R10[0x32316a21]
+179 [-]: GETTABLE  R10 R10 K24  ; R10 := R10[0x32316a21]
 180 [-]: CALL      R10 1 2      ; R10 := R10()
 181 [-]: TEST      R10 0        ; if not R10 then PC := 211
 182 [-]: JMP       211          ; PC := 211
@@ -257,7 +257,7 @@
 222 [-]: GETTABLE  R12 R12 R10  ; R12 := R12[R10]
 223 [-]: CALL      R11 2 4      ; R11,R12,R13 := R11(R12)
 224 [-]: JMP       230          ; PC := 230
-225 [-]: GETTABLE  R16 R15 K44  ; R82 := R16[0xe24d5de3]
+225 [-]: GETTABLE  R16 R15 K44  ; R16 := R15[0xe24d5de3]
 226 [-]: MOVE      R17 R0       ; R17 := R0
 227 [-]: MOVE      R18 R1       ; R18 := R1
 228 [-]: GETTABLE  R19 R15 K45  ; R19 := R15["args"]
@@ -317,7 +317,7 @@
  39 [-]: TEST      R4 0         ; if not R4 then PC := 85
  40 [-]: JMP       85           ; PC := 85
  41 [-]: GETUPVAL  R4 U0        ; R4 := U0
- 42 [-]: GETTABLE  R4 R4 K9     ; R82 := R4[0xe00cc5f0]
+ 42 [-]: GETTABLE  R4 R4 K9     ; R4 := R4[0xe00cc5f0]
  43 [-]: MOVE      R5 R0        ; R5 := R0
  44 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  45 [-]: TEST      R4 1         ; if R4 then PC := 67

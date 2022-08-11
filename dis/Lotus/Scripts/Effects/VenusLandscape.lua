@@ -31,21 +31,21 @@
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0x00046924
   2 [-]: GETGLOBAL R2 K1        ; R2 := 0x5bced4c4
-  3 [-]: GETTABLE  R2 R2 K2     ; R82 := R2[0x3630e649]
+  3 [-]: GETTABLE  R2 R2 K2     ; R2 := R2[0x3630e649]
   4 [-]: GETGLOBAL R3 K3        ; R3 := 0x0f6d070b
   5 [-]: GETTABLE  R3 R3 K4     ; R3 := R3["y"]
   6 [-]: GETGLOBAL R4 K5        ; R4 := 0xb84d8167
   7 [-]: GETTABLE  R4 R4 K4     ; R4 := R4["y"]
   8 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
   9 [-]: GETGLOBAL R3 K1        ; R3 := 0x5bced4c4
- 10 [-]: GETTABLE  R3 R3 K2     ; R82 := R3[0x3630e649]
+ 10 [-]: GETTABLE  R3 R3 K2     ; R3 := R3[0x3630e649]
  11 [-]: GETGLOBAL R4 K3        ; R4 := 0x0f6d070b
  12 [-]: GETTABLE  R4 R4 K6     ; R4 := R4["x"]
  13 [-]: GETGLOBAL R5 K5        ; R5 := 0xb84d8167
  14 [-]: GETTABLE  R5 R5 K6     ; R5 := R5["x"]
  15 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
  16 [-]: GETGLOBAL R4 K1        ; R4 := 0x5bced4c4
- 17 [-]: GETTABLE  R4 R4 K2     ; R82 := R4[0x3630e649]
+ 17 [-]: GETTABLE  R4 R4 K2     ; R4 := R4[0x3630e649]
  18 [-]: GETGLOBAL R5 K3        ; R5 := 0x0f6d070b
  19 [-]: GETTABLE  R5 R5 K7     ; R5 := R5["z"]
  20 [-]: GETGLOBAL R6 K5        ; R6 := 0xb84d8167
@@ -86,7 +86,7 @@
  11 [-]: GETGLOBAL R1 K1        ; R1 := 0xe795e87d
  12 [-]: LEN       R1 R1        ; R1 := # R1
  13 [-]: GETGLOBAL R2 K2        ; R2 := 0x5bced4c4
- 14 [-]: GETTABLE  R2 R2 K3     ; R82 := R2[0x3630e649]
+ 14 [-]: GETTABLE  R2 R2 K3     ; R2 := R2[0x3630e649]
  15 [-]: LOADK     R3 1         ; R3 := 1.000000
  16 [-]: MOVE      R4 R1        ; R4 := R1
  17 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
@@ -114,7 +114,7 @@
   4 [-]: TEST      R1 1         ; if R1 then PC := 27
   5 [-]: JMP       27           ; PC := 27
   6 [-]: GETGLOBAL R1 K1        ; R1 := 0x5bced4c4
-  7 [-]: GETTABLE  R1 R1 K2     ; R82 := R1[0x3630e649]
+  7 [-]: GETTABLE  R1 R1 K2     ; R1 := R1[0x3630e649]
   8 [-]: LOADK     R2 0         ; R2 := 0.000000
   9 [-]: LOADK     R3 100       ; R3 := 100.000000
  10 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)

@@ -327,7 +327,7 @@
  24 [-]: LOADK     R7 100       ; R7 := 100.000000
  25 [-]: CALL      R3 5 2       ; R3 := R3(R4,R5,R6,R7)
  26 [-]: GETGLOBAL R4 K10       ; R4 := 0x33bdd652
- 27 [-]: GETTABLE  R4 R4 K11    ; R82 := R4[0x23d5322f]
+ 27 [-]: GETTABLE  R4 R4 K11    ; R4 := R4[0x23d5322f]
  28 [-]: MOVE      R5 R0        ; R5 := R0
  29 [-]: MOVE      R6 R3        ; R6 := R3
  30 [-]: CALL      R4 3 1       ; R4(R5,R6)
@@ -1515,7 +1515,7 @@
 265 [-]: TEST      R19 1        ; if R19 then PC := 484
 266 [-]: JMP       484          ; PC := 484
 267 [-]: GETUPVAL  R19 U6       ; R19 := U6
-268 [-]: GETTABLE  R19 R19 K39  ; R82 := R19[0xf0090084]
+268 [-]: GETTABLE  R19 R19 K39  ; R19 := R19[0xf0090084]
 269 [-]: CALL      R19 1 2      ; R19 := R19()
 270 [-]: TEST      R19 0        ; if not R19 then PC := 419
 271 [-]: JMP       419          ; PC := 419
@@ -1749,7 +1749,7 @@
   4 [-]: TEST      R1 0         ; if not R1 then PC := 14
   5 [-]: JMP       14           ; PC := 14
   6 [-]: GETUPVAL  R1 U1        ; R1 := U1
-  7 [-]: GETTABLE  R1 R1 K0     ; R82 := R1[0xf22cfc77]
+  7 [-]: GETTABLE  R1 R1 K0     ; R1 := R1[0xf22cfc77]
   8 [-]: GETUPVAL  R2 U2        ; R2 := U2
   9 [-]: GETGLOBAL R3 K1        ; R3 := 0x0469f296
  10 [-]: LOADK     R4 K2        ; R4 := "TeraSpawn"
@@ -1774,7 +1774,7 @@
   4 [-]: TEST      R1 0         ; if not R1 then PC := 14
   5 [-]: JMP       14           ; PC := 14
   6 [-]: GETUPVAL  R1 U1        ; R1 := U1
-  7 [-]: GETTABLE  R1 R1 K0     ; R82 := R1[0xf22cfc77]
+  7 [-]: GETTABLE  R1 R1 K0     ; R1 := R1[0xf22cfc77]
   8 [-]: GETUPVAL  R2 U2        ; R2 := U2
   9 [-]: GETGLOBAL R3 K1        ; R3 := 0x0469f296
  10 [-]: LOADK     R4 K2        ; R4 := "TeraDaytime"
@@ -1805,7 +1805,7 @@
  10 [-]: SELF      R3 R3 K4     ; R4 := R3; R3 := R3[0x751f061d]
  11 [-]: GETUPVAL  R5 U0        ; R5 := U0
  12 [-]: GETGLOBAL R6 K5        ; R6 := 0x5bced4c4
- 13 [-]: GETTABLE  R6 R6 K6     ; R82 := R6[0xac1b386a]
+ 13 [-]: GETTABLE  R6 R6 K6     ; R6 := R6[0xac1b386a]
  14 [-]: MOVE      R7 R2        ; R7 := R2
  15 [-]: GETGLOBAL R8 K3        ; R8 := 0xbe190284
  16 [-]: SELF      R8 R8 K7     ; R9 := R8; R8 := R8[0x0eb34c69]
@@ -1859,7 +1859,7 @@
   7 [-]: SELF      R2 R2 K3     ; R3 := R2; R2 := R2[0x751f061d]
   8 [-]: GETUPVAL  R4 U0        ; R4 := U0
   9 [-]: GETGLOBAL R5 K4        ; R5 := 0x5bced4c4
- 10 [-]: GETTABLE  R5 R5 K5     ; R82 := R5[0xb62ecfe0]
+ 10 [-]: GETTABLE  R5 R5 K5     ; R5 := R5[0xb62ecfe0]
  11 [-]: LOADK     R6 0         ; R6 := 0.000000
  12 [-]: GETGLOBAL R7 K2        ; R7 := 0xbe190284
  13 [-]: SELF      R7 R7 K6     ; R8 := R7; R7 := R7[0x0eb34c69]
@@ -1988,7 +1988,7 @@
  82 [-]: EQ        0 R3 R13     ; if R3 ~= R13 then PC := 91
  83 [-]: JMP       91           ; PC := 91
  84 [-]: GETGLOBAL R13 K14      ; R13 := 0x33bdd652
- 85 [-]: GETTABLE  R13 R13 K15  ; R82 := R13[0x9c1f3b5a]
+ 85 [-]: GETTABLE  R13 R13 K15  ; R13 := R13[0x9c1f3b5a]
  86 [-]: GETGLOBAL R14 K8       ; R14 := _T
  87 [-]: GETTABLE  R14 R14 K9   ; R14 := R14["ShardSacrificeList"]
  88 [-]: MOVE      R15 R12      ; R15 := R12
@@ -2001,7 +2001,7 @@
  95 [-]: MOVE      R15 R1       ; R15 := R1
  96 [-]: CALL      R13 3 1      ; R13(R14,R15)
  97 [-]: GETGLOBAL R13 K14      ; R13 := 0x33bdd652
- 98 [-]: GETTABLE  R13 R13 K16  ; R82 := R13[0x23d5322f]
+ 98 [-]: GETTABLE  R13 R13 K16  ; R13 := R13[0x23d5322f]
  99 [-]: GETGLOBAL R14 K8       ; R14 := _T
 100 [-]: GETTABLE  R14 R14 K9   ; R14 := R14["ShardSacrificeList"]
 101 [-]: MOVE      R15 R3       ; R15 := R3
@@ -2016,7 +2016,7 @@
 110 [-]: EQ        0 R13 K19    ; if R13 ~= 0.000000 then PC := 120
 111 [-]: JMP       120          ; PC := 120
 112 [-]: GETUPVAL  R13 U3       ; R13 := U3
-113 [-]: GETTABLE  R13 R13 K20  ; R82 := R13[0xf0090084]
+113 [-]: GETTABLE  R13 R13 K20  ; R13 := R13[0xf0090084]
 114 [-]: CALL      R13 1 2      ; R13 := R13()
 115 [-]: TEST      R13 0        ; if not R13 then PC := 120
 116 [-]: JMP       120          ; PC := 120
@@ -2175,7 +2175,7 @@
 121 [-]: SELF      R13 R13 K29  ; R14 := R13; R13 := R13[0xf4e253b6]
 122 [-]: CALL      R13 2 1      ; R13(R14)
 123 [-]: GETUPVAL  R13 U1       ; R13 := U1
-124 [-]: GETTABLE  R13 R13 K30  ; R82 := R13[0xf0090084]
+124 [-]: GETTABLE  R13 R13 K30  ; R13 := R13[0xf0090084]
 125 [-]: CALL      R13 1 2      ; R13 := R13()
 126 [-]: TEST      R13 0        ; if not R13 then PC := 137
 127 [-]: JMP       137          ; PC := 137

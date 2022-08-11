@@ -101,7 +101,7 @@
 ; Max Stack Size:  9
 
   1 [-]: LOADBOOL  R0 1 0       ; R0 := true
-  2 [-]: SETUPVAL  R0 U0        ; U82 := 
+  2 [-]: SETUPVAL  R0 U0        ; U82 := R0
   3 [-]: GETGLOBAL R0 K0        ; R0 := 0x25312c9b
   4 [-]: GETGLOBAL R1 K1        ; R1 := 0xae91e43b
   5 [-]: LOADK     R2 K2        ; R2 := "ImageSlideShow"
@@ -130,7 +130,7 @@
 
   1 [-]: NEWTABLE  R0 0 0       ; R0 := {}
   2 [-]: GETGLOBAL R1 K0        ; R1 := 0x33bdd652
-  3 [-]: GETTABLE  R1 R1 K1     ; R82 := R1[0x23d5322f]
+  3 [-]: GETTABLE  R1 R1 K1     ; R1 := R1[0x23d5322f]
   4 [-]: MOVE      R2 R0        ; R2 := R0
   5 [-]: NEWTABLE  R3 0 3       ; R3 := {}
   6 [-]: SETTABLE  R3 K2 K3     ; R3["Label"] := "/Lotus/Language/Menu/Back"
@@ -145,7 +145,7 @@
  15 [-]: TEST      R1 1         ; if R1 then PC := 25
  16 [-]: JMP       25           ; PC := 25
  17 [-]: GETGLOBAL R1 K8        ; R1 := _T
- 18 [-]: GETTABLE  R1 R1 K10    ; R82 := R1[0x1c5b546f]
+ 18 [-]: GETTABLE  R1 R1 K10    ; R1 := R1[0x1c5b546f]
  19 [-]: GETGLOBAL R2 K11       ; R2 := 0xae91e43b
  20 [-]: MOVE      R3 R0        ; R3 := R0
  21 [-]: GETGLOBAL R4 K12       ; R4 := 0xcd0165a3
@@ -171,7 +171,7 @@
   5 [-]: TEST      R0 1         ; if R0 then PC := 10
   6 [-]: JMP       10           ; PC := 10
   7 [-]: GETGLOBAL R0 K1        ; R0 := _T
-  8 [-]: GETTABLE  R0 R0 K3     ; R82 := R0[0xdf29a9d6]
+  8 [-]: GETTABLE  R0 R0 K3     ; R0 := R0[0xdf29a9d6]
   9 [-]: CALL      R0 1 1       ; R0()
  10 [-]: RETURN    R0 1         ; return 
 
@@ -188,25 +188,25 @@
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x2d0fad09
   2 [-]: LOADK     R1 K1        ; R1 := "Lotus.Interface.Components.ResourceLoaderQueue"
   3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: GETTABLE  R1 R0 K2     ; R82 := R1[0x133f6ea0]
+  4 [-]: GETTABLE  R1 R0 K2     ; R1 := R0[0x133f6ea0]
   5 [-]: GETGLOBAL R2 K3        ; R2 := 0xae91e43b
   6 [-]: LOADK     R3 K4        ; R3 := "OnResourceLoaded"
   7 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
-  8 [-]: SETUPVAL  R1 U0        ; U82 := 
+  8 [-]: SETUPVAL  R1 U0        ; U82 := R0
   9 [-]: GETGLOBAL R1 K0        ; R1 := 0x2d0fad09
  10 [-]: LOADK     R2 K5        ; R2 := "Lotus.Interface.Libs.TimerMgr"
  11 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 12 [-]: GETTABLE  R2 R1 K6     ; R82 := R2[0xde474187]
+ 12 [-]: GETTABLE  R2 R1 K6     ; R2 := R1[0xde474187]
  13 [-]: CALL      R2 1 2       ; R2 := R2()
- 14 [-]: SETUPVAL  R2 U1        ; U82 := 
+ 14 [-]: SETUPVAL  R2 U1        ; U82 := R1
  15 [-]: GETGLOBAL R2 K0        ; R2 := 0x2d0fad09
  16 [-]: LOADK     R3 K7        ; R3 := "Lotus.Interface.Components.ThemedSpinner"
  17 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 18 [-]: GETTABLE  R3 R2 K8     ; R82 := R3[0xae6791ba]
+ 18 [-]: GETTABLE  R3 R2 K8     ; R3 := R2[0xae6791ba]
  19 [-]: GETGLOBAL R4 K3        ; R4 := 0xae91e43b
  20 [-]: LOADK     R5 K9        ; R5 := "Spinner"
  21 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
- 22 [-]: SETUPVAL  R3 U2        ; U82 := 
+ 22 [-]: SETUPVAL  R3 U2        ; U82 := R2
  23 [-]: GETUPVAL  R3 U2        ; R3 := U2
  24 [-]: SELF      R3 R3 K10    ; R4 := R3; R3 := R3[0x46610c50]
  25 [-]: LOADBOOL  R5 0 0       ; R5 := false
@@ -214,12 +214,12 @@
  27 [-]: GETGLOBAL R3 K0        ; R3 := 0x2d0fad09
  28 [-]: LOADK     R4 K11       ; R4 := "EE.Interface.Components.ImageSlideShow"
  29 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 30 [-]: GETTABLE  R4 R3 K12    ; R82 := R4[0xcaf96f49]
+ 30 [-]: GETTABLE  R4 R3 K12    ; R4 := R3[0xcaf96f49]
  31 [-]: GETGLOBAL R5 K3        ; R5 := 0xae91e43b
  32 [-]: LOADK     R6 K13       ; R6 := "ImageSlideShow.Image"
  33 [-]: LOADK     R7 K14       ; R7 := "ImageSlideShow.Controls"
  34 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
- 35 [-]: SETUPVAL  R4 U3        ; U82 := 
+ 35 [-]: SETUPVAL  R4 U3        ; U82 := R3
  36 [-]: GETUPVAL  R4 U3        ; R4 := U3
  37 [-]: SELF      R4 R4 K15    ; R5 := R4; R4 := R4[0x687ae094]
  38 [-]: CALL      R4 2 1       ; R4(R5)
@@ -304,7 +304,7 @@
   9 [-]: TEST      R1 1         ; if R1 then PC := 15
  10 [-]: JMP       15           ; PC := 15
  11 [-]: GETGLOBAL R1 K2        ; R1 := _T
- 12 [-]: GETTABLE  R1 R1 K4     ; R82 := R1[0xdf29a9d6]
+ 12 [-]: GETTABLE  R1 R1 K4     ; R1 := R1[0xdf29a9d6]
  13 [-]: LOADK     R2 K5        ; R2 := ""
  14 [-]: CALL      R1 2 1       ; R1(R2)
  15 [-]: GETUPVAL  R1 U0        ; R1 := U0
@@ -353,7 +353,7 @@
   4 [-]: TEST      R1 1         ; if R1 then PC := 25
   5 [-]: JMP       25           ; PC := 25
   6 [-]: GETGLOBAL R1 K1        ; R1 := 0x33bdd652
-  7 [-]: GETTABLE  R1 R1 K2     ; R82 := R1[0x23d5322f]
+  7 [-]: GETTABLE  R1 R1 K2     ; R1 := R1[0x23d5322f]
   8 [-]: GETUPVAL  R2 U0        ; R2 := U0
   9 [-]: MOVE      R3 R0        ; R3 := R0
  10 [-]: CALL      R1 3 1       ; R1(R2,R3)
@@ -363,7 +363,7 @@
  14 [-]: LE        0 R2 R1      ; if R2 > R1 then PC := 25
  15 [-]: JMP       25           ; PC := 25
  16 [-]: LOADBOOL  R1 0 0       ; R1 := false
- 17 [-]: SETUPVAL  R1 U2        ; U82 := 
+ 17 [-]: SETUPVAL  R1 U2        ; U82 := R2
  18 [-]: GETUPVAL  R1 U3        ; R1 := U3
  19 [-]: SELF      R1 R1 K3     ; R2 := R1; R1 := R1[0x46610c50]
  20 [-]: LOADBOOL  R3 0 0       ; R3 := false
@@ -419,15 +419,15 @@
 ; Max Stack Size:  11
 
   1 [-]: NEWTABLE  R1 0 0       ; R1 := {}
-  2 [-]: SETUPVAL  R1 U0        ; U82 := 
+  2 [-]: SETUPVAL  R1 U0        ; U82 := R0
   3 [-]: LOADBOOL  R1 1 0       ; R1 := true
-  4 [-]: SETUPVAL  R1 U1        ; U82 := 
+  4 [-]: SETUPVAL  R1 U1        ; U82 := R1
   5 [-]: GETGLOBAL R1 K0        ; R1 := 0x015284cd
   6 [-]: LOADK     R2 K1        ; R2 := "|"
   7 [-]: MOVE      R3 R0        ; R3 := R0
   8 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
   9 [-]: LEN       R2 R1        ; R2 := # R1
- 10 [-]: SETUPVAL  R2 U2        ; U82 := 
+ 10 [-]: SETUPVAL  R2 U2        ; U82 := R2
  11 [-]: GETUPVAL  R2 U3        ; R2 := U3
  12 [-]: SELF      R2 R2 K2     ; R3 := R2; R2 := R2[0x46610c50]
  13 [-]: LOADBOOL  R4 1 0       ; R4 := true

@@ -60,7 +60,7 @@
 ; Max Stack Size:  12
 
   1 [-]: GETGLOBAL R2 K0        ; R2 := 0x6c97a788
-  2 [-]: GETTABLE  R2 R2 K1     ; R82 := R2[0x6d1a47e5]
+  2 [-]: GETTABLE  R2 R2 K1     ; R2 := R2[0x6d1a47e5]
   3 [-]: CALL      R2 1 2       ; R2 := R2()
   4 [-]: GETGLOBAL R3 K2        ; R3 := 0x7b998233
   5 [-]: GETGLOBAL R4 K3        ; R4 := 0x25d99d89
@@ -333,7 +333,7 @@
  34 [-]: CALL      R9 2 0       ; R9,... := R9(R10)
  35 [-]: CALL      R7 0 2       ; R7 := R7(R8,...)
  36 [-]: GETGLOBAL R8 K10       ; R8 := 0x33bdd652
- 37 [-]: GETTABLE  R8 R8 K11    ; R82 := R8[0x23d5322f]
+ 37 [-]: GETTABLE  R8 R8 K11    ; R8 := R8[0x23d5322f]
  38 [-]: MOVE      R9 R6        ; R9 := R6
  39 [-]: GETGLOBAL R10 K0       ; R10 := 0x89326c93
  40 [-]: SELF      R10 R10 K12  ; R11 := R10; R10 := R10[0x46a0ebf5]
@@ -343,7 +343,7 @@
  44 [-]: CALL      R10 0 0      ; R10,... := R10(R11,...)
  45 [-]: CALL      R8 0 1       ; R8(R9,...)
  46 [-]: GETGLOBAL R8 K10       ; R8 := 0x33bdd652
- 47 [-]: GETTABLE  R8 R8 K11    ; R82 := R8[0x23d5322f]
+ 47 [-]: GETTABLE  R8 R8 K11    ; R8 := R8[0x23d5322f]
  48 [-]: MOVE      R9 R6        ; R9 := R6
  49 [-]: GETGLOBAL R10 K0       ; R10 := 0x89326c93
  50 [-]: SELF      R10 R10 K12  ; R11 := R10; R10 := R10[0x46a0ebf5]
@@ -353,7 +353,7 @@
  54 [-]: CALL      R10 0 0      ; R10,... := R10(R11,...)
  55 [-]: CALL      R8 0 1       ; R8(R9,...)
  56 [-]: GETGLOBAL R8 K10       ; R8 := 0x33bdd652
- 57 [-]: GETTABLE  R8 R8 K11    ; R82 := R8[0x23d5322f]
+ 57 [-]: GETTABLE  R8 R8 K11    ; R8 := R8[0x23d5322f]
  58 [-]: MOVE      R9 R6        ; R9 := R6
  59 [-]: GETGLOBAL R10 K0       ; R10 := 0x89326c93
  60 [-]: SELF      R10 R10 K12  ; R11 := R10; R10 := R10[0x46a0ebf5]
@@ -363,7 +363,7 @@
  64 [-]: CALL      R10 0 0      ; R10,... := R10(R11,...)
  65 [-]: CALL      R8 0 1       ; R8(R9,...)
  66 [-]: GETGLOBAL R8 K10       ; R8 := 0x33bdd652
- 67 [-]: GETTABLE  R8 R8 K11    ; R82 := R8[0x23d5322f]
+ 67 [-]: GETTABLE  R8 R8 K11    ; R8 := R8[0x23d5322f]
  68 [-]: MOVE      R9 R7        ; R9 := R7
  69 [-]: GETGLOBAL R10 K0       ; R10 := 0x89326c93
  70 [-]: SELF      R10 R10 K12  ; R11 := R10; R10 := R10[0x46a0ebf5]
@@ -483,17 +483,17 @@
  14 [-]: CALL      R0 2 2       ; R0 := R0(R1)
  15 [-]: GETTABLE  R1 R0 K5     ; R1 := R0["postProcess"]
  16 [-]: GETTABLE  R2 R1 K6     ; R2 := R1["lightMapBoost"]
- 17 [-]: SETUPVAL  R2 U0        ; U82 := 
+ 17 [-]: SETUPVAL  R2 U0        ; U82 := R0
  18 [-]: GETTABLE  R2 R1 K7     ; R2 := R1["distanceFogDensity"]
- 19 [-]: SETUPVAL  R2 U1        ; U82 := 
+ 19 [-]: SETUPVAL  R2 U1        ; U82 := R1
  20 [-]: GETGLOBAL R2 K1        ; R2 := 0x89326c93
  21 [-]: SELF      R2 R2 K8     ; R3 := R2; R2 := R2[0xfb669000]
  22 [-]: GETGLOBAL R4 K9        ; R4 := gLisetDecorationType
  23 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
- 24 [-]: SETUPVAL  R2 U2        ; U82 := 
+ 24 [-]: SETUPVAL  R2 U2        ; U82 := R2
  25 [-]: GETUPVAL  R2 U2        ; R2 := U2
  26 [-]: LEN       R2 R2        ; R2 := # R2
- 27 [-]: SETUPVAL  R2 U3        ; U82 := 
+ 27 [-]: SETUPVAL  R2 U3        ; U82 := R3
  28 [-]: GETGLOBAL R2 K1        ; R2 := 0x89326c93
  29 [-]: SELF      R2 R2 K8     ; R3 := R2; R2 := R2[0xfb669000]
  30 [-]: GETGLOBAL R4 K10       ; R4 := gLightType
@@ -512,7 +512,7 @@
  43 [-]: TEST      R8 1         ; if R8 then PC := 64
  44 [-]: JMP       64           ; PC := 64
  45 [-]: GETUPVAL  R8 U4        ; R8 := U4
- 46 [-]: GETTABLE  R8 R8 K13    ; R82 := R8[0xcf49d84c]
+ 46 [-]: GETTABLE  R8 R8 K13    ; R8 := R8[0xcf49d84c]
  47 [-]: GETGLOBAL R9 K14       ; R9 := 0xb3b19b59
  48 [-]: SELF      R10 R7 K15   ; R11 := R7; R10 := R7[0x22da1852]
  49 [-]: CALL      R10 2 0      ; R10,... := R10(R11)
@@ -520,12 +520,12 @@
  51 [-]: TEST      R8 1         ; if R8 then PC := 64
  52 [-]: JMP       64           ; PC := 64
  53 [-]: GETGLOBAL R8 K16       ; R8 := 0x33bdd652
- 54 [-]: GETTABLE  R8 R8 K17    ; R82 := R8[0x23d5322f]
+ 54 [-]: GETTABLE  R8 R8 K17    ; R8 := R8[0x23d5322f]
  55 [-]: GETUPVAL  R9 U5        ; R9 := U5
  56 [-]: MOVE      R10 R7       ; R10 := R7
  57 [-]: CALL      R8 3 1       ; R8(R9,R10)
  58 [-]: GETGLOBAL R8 K16       ; R8 := 0x33bdd652
- 59 [-]: GETTABLE  R8 R8 K17    ; R82 := R8[0x23d5322f]
+ 59 [-]: GETTABLE  R8 R8 K17    ; R8 := R8[0x23d5322f]
  60 [-]: GETUPVAL  R9 U6        ; R9 := U6
  61 [-]: SELF      R10 R7 K18   ; R11 := R7; R10 := R7[0x4ec9bce1]
  62 [-]: CALL      R10 2 0      ; R10,... := R10(R11)
@@ -533,7 +533,7 @@
  64 [-]: FORLOOP   R3 36        ; R3 += R5; if R3 <= R4 then begin PC := 36; R6 := R3 end
  65 [-]: GETUPVAL  R8 U5        ; R8 := U5
  66 [-]: LEN       R8 R8        ; R8 := # R8
- 67 [-]: SETUPVAL  R8 U7        ; U82 := 
+ 67 [-]: SETUPVAL  R8 U7        ; U82 := R7
  68 [-]: GETGLOBAL R8 K19       ; R8 := _T
  69 [-]: GETUPVAL  R9 U8        ; R9 := U8
  70 [-]: SETTABLE  R8 K20 R9    ; R8["SetPlayerShipLights"] := R9
@@ -553,11 +553,11 @@
  84 [-]: CALL      R8 2 1       ; R8(R9)
  85 [-]: JMP       73           ; PC := 73
  86 [-]: GETUPVAL  R8 U9        ; R8 := U9
- 87 [-]: GETTABLE  R8 R8 K25    ; R82 := R8[0x8e7c3b5e]
+ 87 [-]: GETTABLE  R8 R8 K25    ; R8 := R8[0x8e7c3b5e]
  88 [-]: GETGLOBAL R9 K23       ; R9 := 0x25d99d89
  89 [-]: CALL      R8 2 2       ; R8 := R8(R9)
  90 [-]: GETUPVAL  R9 U9        ; R9 := U9
- 91 [-]: GETTABLE  R9 R9 K26    ; R82 := R9[0xf47b8ec3]
+ 91 [-]: GETTABLE  R9 R9 K26    ; R9 := R9[0xf47b8ec3]
  92 [-]: CALL      R9 1 2       ; R9 := R9()
  93 [-]: TEST      R9 0         ; if not R9 then PC := 107
  94 [-]: JMP       107          ; PC := 107

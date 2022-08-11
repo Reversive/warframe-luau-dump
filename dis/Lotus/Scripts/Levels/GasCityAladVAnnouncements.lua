@@ -140,7 +140,7 @@
  54 [-]: NEWTABLE  R9 0 0       ; R9 := {}
  55 [-]: SETTABLE  R8 K11 R9    ; R8["InWorldTransmissionQueue"] := R9
  56 [-]: GETGLOBAL R8 K12       ; R8 := 0x33bdd652
- 57 [-]: GETTABLE  R8 R8 K13    ; R82 := R8[0x23d5322f]
+ 57 [-]: GETTABLE  R8 R8 K13    ; R8 := R8[0x23d5322f]
  58 [-]: GETGLOBAL R9 K0        ; R9 := _T
  59 [-]: GETTABLE  R9 R9 K11    ; R9 := R9["InWorldTransmissionQueue"]
  60 [-]: GETUPVAL  R10 U3       ; R10 := U3

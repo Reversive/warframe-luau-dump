@@ -191,7 +191,7 @@
  33 [-]: SELF      R3 R0 K6     ; R4 := R0; R3 := R0[0x986d2ab8]
  34 [-]: GETUPVAL  R5 U1        ; R5 := U1
  35 [-]: GETGLOBAL R6 K7        ; R6 := 0x5bced4c4
- 36 [-]: GETTABLE  R6 R6 K8     ; R82 := R6[0xb62ecfe0]
+ 36 [-]: GETTABLE  R6 R6 K8     ; R6 := R6[0xb62ecfe0]
  37 [-]: LOADK     R7 0         ; R7 := 0.000000
  38 [-]: GETGLOBAL R8 K3        ; R8 := 0x57b7de4c
  39 [-]: DIV       R8 R2 R8     ; R8 := R2 / R8

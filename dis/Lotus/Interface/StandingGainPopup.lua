@@ -102,7 +102,7 @@
  41 [-]: LOADK     R7 K15       ; R7 := "/Lotus/Language/Challenges/Challenge_CompletedRep"
  42 [-]: NEWTABLE  R8 0 1       ; R8 := {}
  43 [-]: GETUPVAL  R9 U0        ; R9 := U0
- 44 [-]: GETTABLE  R9 R9 K17    ; R82 := R9[0x1142c7a8]
+ 44 [-]: GETTABLE  R9 R9 K17    ; R9 := R9[0x1142c7a8]
  45 [-]: MOVE      R10 R0       ; R10 := R0
  46 [-]: LOADK     R11 0        ; R11 := 0.000000
  47 [-]: CALL      R9 3 2       ; R9 := R9(R10,R11)
@@ -167,22 +167,22 @@
 ; Max Stack Size:  9
 
   1 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  2 [-]: GETTABLE  R0 R0 K0     ; R82 := R0[0x5d10207d]
+  2 [-]: GETTABLE  R0 R0 K0     ; R0 := R0[0x5d10207d]
   3 [-]: LOADK     R1 2         ; R1 := 2.000000
   4 [-]: LOADBOOL  R2 1 0       ; R2 := true
   5 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
   6 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  7 [-]: GETTABLE  R1 R1 K0     ; R82 := R1[0x5d10207d]
+  7 [-]: GETTABLE  R1 R1 K0     ; R1 := R1[0x5d10207d]
   8 [-]: LOADK     R2 6         ; R2 := 6.000000
   9 [-]: LOADBOOL  R3 1 0       ; R3 := true
  10 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
  11 [-]: GETUPVAL  R2 U0        ; R2 := U0
- 12 [-]: GETTABLE  R2 R2 K0     ; R82 := R2[0x5d10207d]
+ 12 [-]: GETTABLE  R2 R2 K0     ; R2 := R2[0x5d10207d]
  13 [-]: LOADK     R3 9         ; R3 := 9.000000
  14 [-]: LOADBOOL  R4 1 0       ; R4 := true
  15 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
  16 [-]: GETUPVAL  R3 U0        ; R3 := U0
- 17 [-]: GETTABLE  R3 R3 K0     ; R82 := R3[0x5d10207d]
+ 17 [-]: GETTABLE  R3 R3 K0     ; R3 := R3[0x5d10207d]
  18 [-]: LOADK     R4 10        ; R4 := 10.000000
  19 [-]: LOADBOOL  R5 1 0       ; R5 := true
  20 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
@@ -286,12 +286,12 @@
 ; Max Stack Size:  6
 
   1 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  2 [-]: GETTABLE  R0 R0 K0     ; R82 := R0[0xd718f59b]
+  2 [-]: GETTABLE  R0 R0 K0     ; R0 := R0[0xd718f59b]
   3 [-]: GETGLOBAL R1 K1        ; R1 := 0xae91e43b
   4 [-]: LOADK     R2 150       ; R2 := 150.000000
   5 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
   6 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  7 [-]: GETTABLE  R1 R1 K2     ; R82 := R1[0x0db7934d]
+  7 [-]: GETTABLE  R1 R1 K2     ; R1 := R1[0x0db7934d]
   8 [-]: GETGLOBAL R2 K1        ; R2 := 0xae91e43b
   9 [-]: LOADK     R3 100       ; R3 := 100.000000
  10 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
@@ -336,10 +336,10 @@
   3 [-]: GETGLOBAL R0 K0        ; R0 := 0x2d0fad09
   4 [-]: LOADK     R1 K1        ; R1 := "EE.Interface.AnchorMgr"
   5 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  6 [-]: GETTABLE  R1 R0 K2     ; R82 := R1[0xae6791ba]
+  6 [-]: GETTABLE  R1 R0 K2     ; R1 := R0[0xae6791ba]
   7 [-]: GETGLOBAL R2 K3        ; R2 := 0xae91e43b
   8 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  9 [-]: SETUPVAL  R1 U1        ; U82 := 
+  9 [-]: SETUPVAL  R1 U1        ; U82 := R1
  10 [-]: GETUPVAL  R1 U1        ; R1 := U1
  11 [-]: SELF      R1 R1 K4     ; R2 := R1; R1 := R1[0x20ff29f7]
  12 [-]: GETGLOBAL R3 K3        ; R3 := 0xae91e43b
@@ -371,9 +371,9 @@
  38 [-]: GETGLOBAL R1 K0        ; R1 := 0x2d0fad09
  39 [-]: LOADK     R2 K13       ; R2 := "Lotus.Interface.Libs.TimerMgr"
  40 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 41 [-]: GETTABLE  R2 R1 K14    ; R82 := R2[0xde474187]
+ 41 [-]: GETTABLE  R2 R1 K14    ; R2 := R1[0xde474187]
  42 [-]: CALL      R2 1 2       ; R2 := R2()
- 43 [-]: SETUPVAL  R2 U3        ; U82 := 
+ 43 [-]: SETUPVAL  R2 U3        ; U82 := R3
  44 [-]: LOADBOOL  R2 0 0       ; R2 := false
  45 [-]: GETGLOBAL R3 K15       ; R3 := _T
  46 [-]: GETTABLE  R3 R3 K16    ; R3 := R3["StandingSyndicateRewarded"]
@@ -448,11 +448,11 @@
  17 [-]: LOADK     R6 0         ; R6 := 0.250000
  18 [-]: CALL      R0 7 1       ; R0(R1,R2,R3,R4,R5,R6)
  19 [-]: GETUPVAL  R0 U0        ; R0 := U0
- 20 [-]: GETTABLE  R0 R0 K5     ; R82 := R0[0x659d451f]
+ 20 [-]: GETTABLE  R0 R0 K5     ; R0 := R0[0x659d451f]
  21 [-]: GETGLOBAL R1 K6        ; R1 := 0x0856e17d
  22 [-]: CALL      R0 2 1       ; R0(R1)
  23 [-]: GETUPVAL  R0 U0        ; R0 := U0
- 24 [-]: GETTABLE  R0 R0 K7     ; R82 := R0[0xf76783e5]
+ 24 [-]: GETTABLE  R0 R0 K7     ; R0 := R0[0xf76783e5]
  25 [-]: GETGLOBAL R1 K0        ; R1 := 0xae91e43b
  26 [-]: LOADK     R2 K8        ; R2 := "Title"
  27 [-]: GETGLOBAL R3 K9        ; R3 := 0x9e9a4c10

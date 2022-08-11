@@ -67,7 +67,7 @@
   7 [-]: LT        0 K3 R1      ; if 0.000000 >= R1 then PC := 33
   8 [-]: JMP       33           ; PC := 33
   9 [-]: GETGLOBAL R1 K4        ; R1 := 0x5bced4c4
- 10 [-]: GETTABLE  R1 R1 K5     ; R82 := R1[0xb62ecfe0]
+ 10 [-]: GETTABLE  R1 R1 K5     ; R1 := R1[0xb62ecfe0]
  11 [-]: LOADK     R2 0         ; R2 := 0.000000
  12 [-]: GETGLOBAL R3 K0        ; R3 := 0x89326c93
  13 [-]: SELF      R3 R3 K6     ; R4 := R3; R3 := R3[0x61be252a]
@@ -282,7 +282,7 @@
  11 [-]: SELF      R4 R3 K6     ; R5 := R3; R4 := R3[0x5c390f04]
  12 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  13 [-]: GETUPVAL  R5 U0        ; R5 := U0
- 14 [-]: GETTABLE  R5 R5 K7     ; R82 := R5[0x8d66ec64]
+ 14 [-]: GETTABLE  R5 R5 K7     ; R5 := R5[0x8d66ec64]
  15 [-]: LOADK     R6 K8        ; R6 := "wgsc"
  16 [-]: LOADK     R7 0         ; R7 := 0.000000
  17 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
@@ -673,10 +673,10 @@
  36 [-]: GETTABLE  R4 R4 K5     ; R4 := R4["CapturedConvictAvatars"]
  37 [-]: SETTABLE  R4 R3 R2     ; R4[R3] := R2
  38 [-]: GETGLOBAL R4 K4        ; R4 := _T
- 39 [-]: SETTABLE  R4 K8 R3     ; R4["CapturedConvictInstance"] := R3
+ 39 [-]: SETTABLE  R4 K8 R3     ; R4[0x818ec626] := R3
  40 [-]: SELF      R4 R0 K9     ; R5 := R0; R4 := R0[0xf4e253b6]
  41 [-]: CALL      R4 2 1       ; R4(R5)
- 42 [-]: SETUPVAL  R0 U1        ; U82 := 
+ 42 [-]: SETUPVAL  R0 U1        ; U82 := 
  43 [-]: SELF      R4 R1 K10    ; R5 := R1; R4 := R1[0xd5f7912b]
  44 [-]: GETGLOBAL R6 K11       ; R6 := 0x0469f296
  45 [-]: LOADK     R7 K12       ; R7 := "PlayCaptureAnimation"
@@ -821,7 +821,7 @@
 124 [-]: SELF      R8 R8 K24    ; R9 := R8; R8 := R8[0x383d2e7d]
 125 [-]: CALL      R8 2 1       ; R8(R9)
 126 [-]: LOADNIL   R8 R8        ; R8 := nil
-127 [-]: SETUPVAL  R8 U0        ; U82 := 
+127 [-]: SETUPVAL  R8 U0        ; U82 := 
 128 [-]: GETGLOBAL R8 K0        ; R8 := 0x7b998233
 129 [-]: MOVE      R9 R2        ; R9 := R2
 130 [-]: CALL      R8 2 2       ; R8 := R8(R9)
@@ -957,7 +957,7 @@
 260 [-]: TEST      R8 1         ; if R8 then PC := 266
 261 [-]: JMP       266          ; PC := 266
 262 [-]: GETGLOBAL R8 K1        ; R8 := _T
-263 [-]: GETTABLE  R8 R8 K39    ; R82 := R8[0xc20648b3]
+263 [-]: GETTABLE  R8 R8 K39    ; R8 := R8[0xc20648b3]
 264 [-]: LOADBOOL  R9 1 0       ; R9 := true
 265 [-]: CALL      R8 2 1       ; R8(R9)
 266 [-]: RETURN    R0 1         ; return 
@@ -979,7 +979,7 @@
   5 [-]: TEST      R1 1         ; if R1 then PC := 11
   6 [-]: JMP       11           ; PC := 11
   7 [-]: GETGLOBAL R1 K1        ; R1 := _T
-  8 [-]: GETTABLE  R1 R1 K3     ; R82 := R1[0xc20648b3]
+  8 [-]: GETTABLE  R1 R1 K3     ; R1 := R1[0xc20648b3]
   9 [-]: LOADBOOL  R2 0 0       ; R2 := false
  10 [-]: CALL      R1 2 1       ; R1(R2)
  11 [-]: RETURN    R0 1         ; return 

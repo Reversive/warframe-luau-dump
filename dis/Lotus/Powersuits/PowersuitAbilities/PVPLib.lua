@@ -449,7 +449,7 @@
  39 [-]: MOVE      R20 R1       ; R20 := R1
  40 [-]: CALL      R13 8 1      ; R13(R14,R15,R16,R17,R18,R19,R20)
  41 [-]: GETGLOBAL R13 K5       ; R13 := 0x33bdd652
- 42 [-]: GETTABLE  R13 R13 K6   ; R82 := R13[0x23d5322f]
+ 42 [-]: GETTABLE  R13 R13 K6   ; R13 := R13[0x23d5322f]
  43 [-]: MOVE      R14 R4       ; R14 := R4
  44 [-]: GETTABLE  R15 R3 R8    ; R15 := R3[R8]
  45 [-]: CALL      R13 3 1      ; R13(R14,R15)
@@ -611,7 +611,7 @@
   8 [-]: JMP       10           ; PC := 10
   9 [-]: LOADK     R6 17        ; R6 := 17.000000
  10 [-]: GETGLOBAL R9 K3        ; R9 := 0x34291f5c
- 11 [-]: GETTABLE  R9 R9 K4     ; R82 := R9[0x35c16153]
+ 11 [-]: GETTABLE  R9 R9 K4     ; R9 := R9[0x35c16153]
  12 [-]: CALL      R9 1 2       ; R9 := R9()
  13 [-]: SETTABLE  R9 K5 R3     ; R9["baseAmount"] := R3
  14 [-]: SELF      R10 R9 K6    ; R11 := R9; R10 := R9[0x1586e35e]
@@ -642,7 +642,7 @@
  39 [-]: TEST      R11 1        ; if R11 then PC := 59
  40 [-]: JMP       59           ; PC := 59
  41 [-]: GETGLOBAL R11 K12      ; R11 := 0x6c97a788
- 42 [-]: GETTABLE  R11 R11 K13  ; R82 := R11[0x608bc054]
+ 42 [-]: GETTABLE  R11 R11 K13  ; R11 := R11[0x608bc054]
  43 [-]: CALL      R11 1 2      ; R11 := R11()
  44 [-]: SETTABLE  R11 K14 R1   ; R11["instigator"] := R1
  45 [-]: NEWTABLE  R12 1 0      ; R12 := {}

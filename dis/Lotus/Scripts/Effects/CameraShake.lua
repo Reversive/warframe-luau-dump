@@ -60,7 +60,7 @@
  29 [-]: TEST      R4 0         ; if not R4 then PC := 50
  30 [-]: JMP       50           ; PC := 50
  31 [-]: GETGLOBAL R4 K10       ; R4 := 0x34291f5c
- 32 [-]: GETTABLE  R4 R4 K11    ; R82 := R4[0x35c16153]
+ 32 [-]: GETTABLE  R4 R4 K11    ; R4 := R4[0x35c16153]
  33 [-]: CALL      R4 1 2       ; R4 := R4()
  34 [-]: GETGLOBAL R5 K13       ; R5 := 0x91d85e5f
  35 [-]: SETTABLE  R4 K12 R5    ; R4[0xac41a98c] := R5
@@ -231,7 +231,7 @@
  31 [-]: GETTABLE  R4 R2 K10    ; R4 := R2["postProcess"]
  32 [-]: SELF      R4 R4 K11    ; R5 := R4; R4 := R4[0xc7bdb630]
  33 [-]: GETUPVAL  R6 U0        ; R6 := U0
- 34 [-]: GETTABLE  R6 R6 K12    ; R82 := R6[0xbf133004]
+ 34 [-]: GETTABLE  R6 R6 K12    ; R6 := R6[0xbf133004]
  35 [-]: MOVE      R7 R1        ; R7 := R1
  36 [-]: GETGLOBAL R8 K13       ; R8 := 0x5f74302f
  37 [-]: GETGLOBAL R9 K13       ; R9 := 0x5f74302f

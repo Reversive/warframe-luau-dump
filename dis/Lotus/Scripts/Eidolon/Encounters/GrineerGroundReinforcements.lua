@@ -42,15 +42,15 @@
   3 [-]: CALL      R1 2 2       ; R1 := R1(R2)
   4 [-]: SELF      R1 R1 K2     ; R2 := R1; R1 := R1[0x66905cb0]
   5 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  6 [-]: SETUPVAL  R1 U0        ; U82 := 
+  6 [-]: SETUPVAL  R1 U0        ; U82 := 
   7 [-]: GETGLOBAL R1 K3        ; R1 := 0xbe190284
   8 [-]: SETUPVAL  R1 U1        ; U82 := 
   9 [-]: SELF      R1 R0 K4     ; R2 := R0; R1 := R0[0xd1586535]
  10 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 11 [-]: SETUPVAL  R1 U2        ; U82 := 
+ 11 [-]: SETUPVAL  R1 U2        ; U82 := 
  12 [-]: SELF      R1 R0 K5     ; R2 := R0; R1 := R0[0x891629fa]
  13 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 14 [-]: SETUPVAL  R1 U3        ; U82 := 
+ 14 [-]: SETUPVAL  R1 U3        ; U82 := 
  15 [-]: GETUPVAL  R1 U0        ; R1 := U0
  16 [-]: SELF      R1 R1 K6     ; R2 := R1; R1 := R1[0x1677897a]
  17 [-]: GETUPVAL  R3 U0        ; R3 := U0
@@ -58,7 +58,7 @@
  19 [-]: GETUPVAL  R5 U2        ; R5 := U2
  20 [-]: CALL      R3 3 0       ; R3,... := R3(R4,R5)
  21 [-]: CALL      R1 0 2       ; R1 := R1(R2,...)
- 22 [-]: SETUPVAL  R1 U4        ; U82 := 
+ 22 [-]: SETUPVAL  R1 U4        ; U82 := 
  23 [-]: GETGLOBAL R1 K8        ; R1 := 0x3d106989
  24 [-]: LOADK     R2 K9        ; R2 := "Spawning ground reinforcements at Tier "
  25 [-]: GETUPVAL  R3 U4        ; R3 := U4
@@ -123,7 +123,7 @@
  84 [-]: CALL      R12 2 2      ; R12 := R12(R13)
  85 [-]: SETTABLE  R3 R12 K21   ; R3[R12] := 1.000000
  86 [-]: GETUPVAL  R12 U5       ; R12 := U5
- 87 [-]: GETTABLE  R12 R12 K22  ; R82 := R12[0x06d055f9]
+ 87 [-]: GETTABLE  R12 R12 K22  ; R12 := R12[0x06d055f9]
  88 [-]: LT        1 K23 R1     ; if 0.000000 < R1 then PC := 91
  89 [-]: JMP       91           ; PC := 91
  90 [-]: LOADBOOL  R13 0 1      ; R13 := false; PC := 91
@@ -147,7 +147,7 @@
 108 [-]: TEST      R14 1        ; if R14 then PC := 137
 109 [-]: JMP       137          ; PC := 137
 110 [-]: GETGLOBAL R14 K26      ; R14 := 0x33bdd652
-111 [-]: GETTABLE  R14 R14 K27  ; R82 := R14[0x23d5322f]
+111 [-]: GETTABLE  R14 R14 K27  ; R14 := R14[0x23d5322f]
 112 [-]: MOVE      R15 R2       ; R15 := R2
 113 [-]: MOVE      R16 R13      ; R16 := R13
 114 [-]: CALL      R14 3 1      ; R14(R15,R16)

@@ -111,7 +111,7 @@
  42 [-]: LOADK     R6 1         ; R6 := 1.000000
  43 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
  44 [-]: GETGLOBAL R5 K14       ; R5 := 0x5bced4c4
- 45 [-]: GETTABLE  R5 R5 K15    ; R82 := R5[0xb62ecfe0]
+ 45 [-]: GETTABLE  R5 R5 K15    ; R5 := R5[0xb62ecfe0]
  46 [-]: SELF      R6 R1 K16    ; R7 := R1; R6 := R1[0xebfba9e4]
  47 [-]: CALL      R6 2 2       ; R6 := R6(R7)
  48 [-]: GETTABLE  R6 R6 K17    ; R6 := R6["y"]
@@ -189,9 +189,9 @@
 120 [-]: JMP       122          ; PC := 122
 121 [-]: MUL       R10 R7 K24   ; R10 := R7 * 0.500000
 122 [-]: GETGLOBAL R11 K14      ; R11 := 0x5bced4c4
-123 [-]: GETTABLE  R11 R11 K40  ; R82 := R11[0xe4a5b3ca]
+123 [-]: GETTABLE  R11 R11 K40  ; R11 := R11[0xe4a5b3ca]
 124 [-]: GETGLOBAL R12 K14      ; R12 := 0x5bced4c4
-125 [-]: GETTABLE  R12 R12 K41  ; R82 := R12[0x3eda26fc]
+125 [-]: GETTABLE  R12 R12 K41  ; R12 := R12[0x3eda26fc]
 126 [-]: MUL       R13 R10 K42  ; R13 := R10 * 2.000000
 127 [-]: MUL       R13 R13 K43  ; R13 := R13 * 3.141593
 128 [-]: CALL      R12 2 0      ; R12,... := R12(R13)

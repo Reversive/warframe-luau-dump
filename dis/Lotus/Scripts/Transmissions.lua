@@ -623,7 +623,7 @@
  21 [-]: CALL      R6 3 1       ; R6(R7,R8)
  22 [-]: FORLOOP   R1 13        ; R1 += R3; if R1 <= R2 then begin PC := 13; R4 := R1 end
  23 [-]: GETUPVAL  R6 U1        ; R6 := U1
- 24 [-]: GETTABLE  R6 R6 K7     ; R82 := R6[0xcc85ce3a]
+ 24 [-]: GETTABLE  R6 R6 K7     ; R6 := R6[0xcc85ce3a]
  25 [-]: CALL      R6 1 1       ; R6()
  26 [-]: RETURN    R0 1         ; return 
 

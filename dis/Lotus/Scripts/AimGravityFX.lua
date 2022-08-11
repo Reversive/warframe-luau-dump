@@ -168,7 +168,7 @@
  94 [-]: GETGLOBAL R8 K22       ; R8 := 0x6c97a788
  95 [-]: GETTABLE  R8 R8 K23    ; R8 := R8["ALPHA_ATTEN"]
  96 [-]: GETGLOBAL R9 K24       ; R9 := 0x5bced4c4
- 97 [-]: GETTABLE  R9 R9 K25    ; R82 := R9[0xa40531d8]
+ 97 [-]: GETTABLE  R9 R9 K25    ; R9 := R9[0xa40531d8]
  98 [-]: GETGLOBAL R10 K26      ; R10 := 0x42dcc9f5
  99 [-]: MUL       R11 R5 K27   ; R11 := R5 * 2.000000
 100 [-]: LOADK     R12 0        ; R12 := 0.000000

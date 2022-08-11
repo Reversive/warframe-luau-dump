@@ -260,7 +260,7 @@
  19 [-]: MUL       R2 R1 R2     ; R2 := R1 * R2
  20 [-]: MOD       R2 R0 R2     ; R2 := R0 % R2
  21 [-]: GETGLOBAL R3 K6        ; R3 := 0x5bced4c4
- 22 [-]: GETTABLE  R3 R3 K7     ; R82 := R3[0x55f27c30]
+ 22 [-]: GETTABLE  R3 R3 K7     ; R3 := R3[0x55f27c30]
  23 [-]: DIV       R4 R2 R1     ; R4 := R2 / R1
  24 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  25 [-]: ADD       R3 K4 R3     ; R3 := 1.000000 + R3

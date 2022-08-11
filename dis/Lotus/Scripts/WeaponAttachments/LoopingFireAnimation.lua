@@ -119,7 +119,7 @@
  80 [-]: LOADBOOL  R18 1 0      ; R18 := true
  81 [-]: LOADBOOL  R19 1 0      ; R19 := true
  82 [-]: GETGLOBAL R20 K18      ; R20 := 0x5bced4c4
- 83 [-]: GETTABLE  R20 R20 K19  ; R82 := R20[0xac1b386a]
+ 83 [-]: GETTABLE  R20 R20 K19  ; R20 := R20[0xac1b386a]
  84 [-]: LOADK     R21 1        ; R21 := 1.000000
  85 [-]: GETGLOBAL R22 K15      ; R22 := _T
  86 [-]: GETTABLE  R22 R22 K16  ; R22 := R22["loopingFireAnimation"]
@@ -168,7 +168,7 @@
 129 [-]: CALL      R24 1 2      ; R24 := R24()
 130 [-]: MUL       R22 R23 R24  ; R22 := R23 * R24
 131 [-]: GETGLOBAL R23 K18      ; R23 := 0x5bced4c4
-132 [-]: GETTABLE  R23 R23 K25  ; R82 := R23[0xb62ecfe0]
+132 [-]: GETTABLE  R23 R23 K25  ; R23 := R23[0xb62ecfe0]
 133 [-]: GETUPVAL  R24 U4       ; R24 := U4
 134 [-]: GETGLOBAL R25 K24      ; R25 := 0x67652851
 135 [-]: CALL      R25 1 2      ; R25 := R25()
@@ -184,7 +184,7 @@
 145 [-]: GETGLOBAL R23 K15      ; R23 := _T
 146 [-]: GETTABLE  R23 R23 K16  ; R23 := R23["loopingFireAnimation"]
 147 [-]: GETGLOBAL R24 K18      ; R24 := 0x5bced4c4
-148 [-]: GETTABLE  R24 R24 K25  ; R82 := R24[0xb62ecfe0]
+148 [-]: GETTABLE  R24 R24 K25  ; R24 := R24[0xb62ecfe0]
 149 [-]: LOADK     R25 0        ; R25 := 0.000000
 150 [-]: GETGLOBAL R26 K15      ; R26 := _T
 151 [-]: GETTABLE  R26 R26 K16  ; R26 := R26["loopingFireAnimation"]
@@ -232,7 +232,7 @@
  25 [-]: GETGLOBAL R4 K3        ; R4 := _T
  26 [-]: GETTABLE  R4 R4 K4     ; R4 := R4["loopingFireAnimation"]
  27 [-]: GETGLOBAL R5 K8        ; R5 := 0x5bced4c4
- 28 [-]: GETTABLE  R5 R5 K9     ; R82 := R5[0xac1b386a]
+ 28 [-]: GETTABLE  R5 R5 K9     ; R5 := R5[0xac1b386a]
  29 [-]: GETUPVAL  R6 U0        ; R6 := U0
  30 [-]: GETGLOBAL R7 K3        ; R7 := _T
  31 [-]: GETTABLE  R7 R7 K4     ; R7 := R7["loopingFireAnimation"]

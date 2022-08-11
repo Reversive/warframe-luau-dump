@@ -38,7 +38,7 @@
  10 [-]: EQ        0 R2 K4      ; if R2 ~= nil then PC := 13
  11 [-]: JMP       13           ; PC := 13
  12 [-]: LOADBOOL  R2 1 0       ; R2 := true
- 13 [-]: GETTABLE  R6 R5 K5     ; R82 := R6[0xae6791ba]
+ 13 [-]: GETTABLE  R6 R5 K5     ; R6 := R5[0xae6791ba]
  14 [-]: MOVE      R7 R0        ; R7 := R0
  15 [-]: MOVE      R8 R1        ; R8 := R1
  16 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
@@ -97,7 +97,7 @@
   5 [-]: GETTABLE  R6 R0 K3     ; R6 := R0["mIconOnClipName"]
   6 [-]: LOADK     R7 10        ; R7 := 10.000000
   7 [-]: GETUPVAL  R8 U0        ; R8 := U0
-  8 [-]: GETTABLE  R8 R8 K4     ; R82 := R8[0x06d055f9]
+  8 [-]: GETTABLE  R8 R8 K4     ; R8 := R8[0x06d055f9]
   9 [-]: GETTABLE  R9 R0 K5     ; R9 := R0["mChecked"]
  10 [-]: LOADK     R10 100      ; R10 := 100.000000
  11 [-]: LOADK     R11 60       ; R11 := 60.000000
@@ -108,7 +108,7 @@
  16 [-]: GETTABLE  R6 R0 K6     ; R6 := R0["mIconOffClipName"]
  17 [-]: LOADK     R7 10        ; R7 := 10.000000
  18 [-]: GETUPVAL  R8 U0        ; R8 := U0
- 19 [-]: GETTABLE  R8 R8 K4     ; R82 := R8[0x06d055f9]
+ 19 [-]: GETTABLE  R8 R8 K4     ; R8 := R8[0x06d055f9]
  20 [-]: GETTABLE  R9 R0 K5     ; R9 := R0["mChecked"]
  21 [-]: LOADK     R10 60       ; R10 := 60.000000
  22 [-]: LOADK     R11 100      ; R11 := 100.000000
@@ -332,13 +332,13 @@
   2 [-]: CALL      R1 2 1       ; R1(R2)
   3 [-]: GETTABLE  R1 R0 K1     ; R1 := R0["mApplyThemes"]
   4 [-]: GETUPVAL  R2 U0        ; R2 := U0
-  5 [-]: GETTABLE  R2 R2 K2     ; R82 := R2[0x5d10207d]
+  5 [-]: GETTABLE  R2 R2 K2     ; R2 := R2[0x5d10207d]
   6 [-]: LOADK     R3 9         ; R3 := 9.000000
   7 [-]: LOADBOOL  R4 1 0       ; R4 := true
   8 [-]: MOVE      R5 R1        ; R5 := R1
   9 [-]: CALL      R2 4 2       ; R2 := R2(R3,R4,R5)
  10 [-]: GETUPVAL  R3 U0        ; R3 := U0
- 11 [-]: GETTABLE  R3 R3 K2     ; R82 := R3[0x5d10207d]
+ 11 [-]: GETTABLE  R3 R3 K2     ; R3 := R3[0x5d10207d]
  12 [-]: LOADK     R4 10        ; R4 := 10.000000
  13 [-]: LOADBOOL  R5 1 0       ; R5 := true
  14 [-]: MOVE      R6 R1        ; R6 := R1
@@ -349,7 +349,7 @@
  19 [-]: GETTABLE  R7 R0 K7     ; R7 := R0["mIconOnClipName"]
  20 [-]: LOADK     R8 9         ; R8 := 9.000000
  21 [-]: GETUPVAL  R9 U1        ; R9 := U1
- 22 [-]: GETTABLE  R9 R9 K8     ; R82 := R9[0x06d055f9]
+ 22 [-]: GETTABLE  R9 R9 K8     ; R9 := R9[0x06d055f9]
  23 [-]: GETTABLE  R10 R0 K9    ; R10 := R0["mFocused"]
  24 [-]: TEST      R10 0        ; if not R10 then PC := 27
  25 [-]: JMP       27           ; PC := 27
@@ -364,7 +364,7 @@
  34 [-]: GETTABLE  R7 R0 K11    ; R7 := R0["mIconOffClipName"]
  35 [-]: LOADK     R8 9         ; R8 := 9.000000
  36 [-]: GETUPVAL  R9 U1        ; R9 := U1
- 37 [-]: GETTABLE  R9 R9 K8     ; R82 := R9[0x06d055f9]
+ 37 [-]: GETTABLE  R9 R9 K8     ; R9 := R9[0x06d055f9]
  38 [-]: GETTABLE  R10 R0 K9    ; R10 := R0["mFocused"]
  39 [-]: TEST      R10 0        ; if not R10 then PC := 43
  40 [-]: JMP       43           ; PC := 43

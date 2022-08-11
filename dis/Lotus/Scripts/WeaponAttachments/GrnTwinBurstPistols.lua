@@ -150,9 +150,9 @@
 116 [-]: LT        0 R6 R5      ; if R6 >= R5 then PC := 141
 117 [-]: JMP       141          ; PC := 141
 118 [-]: GETGLOBAL R9 K21       ; R9 := 0x5bced4c4
-119 [-]: GETTABLE  R9 R9 K22    ; R82 := R9[0xac1b386a]
+119 [-]: GETTABLE  R9 R9 K22    ; R9 := R9[0xac1b386a]
 120 [-]: GETGLOBAL R10 K21      ; R10 := 0x5bced4c4
-121 [-]: GETTABLE  R10 R10 K22  ; R82 := R10[0xac1b386a]
+121 [-]: GETTABLE  R10 R10 K22  ; R10 := R10[0xac1b386a]
 122 [-]: GETGLOBAL R11 K23      ; R11 := 0x67652851
 123 [-]: CALL      R11 1 2      ; R11 := R11()
 124 [-]: MUL       R11 R11 R4   ; R11 := R11 * R4
@@ -192,9 +192,9 @@
 158 [-]: LT        0 R6 R5      ; if R6 >= R5 then PC := 183
 159 [-]: JMP       183          ; PC := 183
 160 [-]: GETGLOBAL R9 K21       ; R9 := 0x5bced4c4
-161 [-]: GETTABLE  R9 R9 K22    ; R82 := R9[0xac1b386a]
+161 [-]: GETTABLE  R9 R9 K22    ; R9 := R9[0xac1b386a]
 162 [-]: GETGLOBAL R10 K21      ; R10 := 0x5bced4c4
-163 [-]: GETTABLE  R10 R10 K22  ; R82 := R10[0xac1b386a]
+163 [-]: GETTABLE  R10 R10 K22  ; R10 := R10[0xac1b386a]
 164 [-]: GETGLOBAL R11 K23      ; R11 := 0x67652851
 165 [-]: CALL      R11 1 2      ; R11 := R11()
 166 [-]: MUL       R11 R11 R4   ; R11 := R11 * R4
@@ -359,7 +359,7 @@
  65 [-]: GETTABLE  R4 R4 K5     ; R4 := R4["avatarId"]
  66 [-]: GETTABLE  R4 R4 K6     ; R4 := R4["mainHand"]
  67 [-]: GETGLOBAL R5 K13       ; R5 := 0x5bced4c4
- 68 [-]: GETTABLE  R5 R5 K14    ; R82 := R5[0xac1b386a]
+ 68 [-]: GETTABLE  R5 R5 K14    ; R5 := R5[0xac1b386a]
  69 [-]: LOADK     R6 2         ; R6 := 2.000000
  70 [-]: MOVE      R7 R2        ; R7 := R2
  71 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
@@ -390,7 +390,7 @@
  96 [-]: GETTABLE  R4 R4 K5     ; R4 := R4["avatarId"]
  97 [-]: GETTABLE  R4 R4 K6     ; R4 := R4["mainHand"]
  98 [-]: GETGLOBAL R5 K13       ; R5 := 0x5bced4c4
- 99 [-]: GETTABLE  R5 R5 K14    ; R82 := R5[0xac1b386a]
+ 99 [-]: GETTABLE  R5 R5 K14    ; R5 := R5[0xac1b386a]
 100 [-]: GETGLOBAL R6 K12       ; R6 := 0xbcc6fe94
 101 [-]: GETTABLE  R6 R6 R3     ; R6 := R6[R3]
 102 [-]: LOADK     R7 1         ; R7 := 1.000000
@@ -484,7 +484,7 @@
  65 [-]: GETTABLE  R4 R4 K5     ; R4 := R4["avatarId"]
  66 [-]: GETTABLE  R4 R4 K6     ; R4 := R4["offHand"]
  67 [-]: GETGLOBAL R5 K13       ; R5 := 0x5bced4c4
- 68 [-]: GETTABLE  R5 R5 K14    ; R82 := R5[0xac1b386a]
+ 68 [-]: GETTABLE  R5 R5 K14    ; R5 := R5[0xac1b386a]
  69 [-]: LOADK     R6 2         ; R6 := 2.000000
  70 [-]: MOVE      R7 R2        ; R7 := R2
  71 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
@@ -515,7 +515,7 @@
  96 [-]: GETTABLE  R4 R4 K5     ; R4 := R4["avatarId"]
  97 [-]: GETTABLE  R4 R4 K6     ; R4 := R4["offHand"]
  98 [-]: GETGLOBAL R5 K13       ; R5 := 0x5bced4c4
- 99 [-]: GETTABLE  R5 R5 K14    ; R82 := R5[0xac1b386a]
+ 99 [-]: GETTABLE  R5 R5 K14    ; R5 := R5[0xac1b386a]
 100 [-]: GETGLOBAL R6 K12       ; R6 := 0xbcc6fe94
 101 [-]: GETTABLE  R6 R6 R3     ; R6 := R6[R3]
 102 [-]: LOADK     R7 1         ; R7 := 1.000000

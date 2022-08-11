@@ -48,7 +48,7 @@
  23 [-]: MOVE      R9 R2        ; R9 := R2
  24 [-]: CALL      R8 2 2       ; R8 := R8(R9)
  25 [-]: GETGLOBAL R9 K5        ; R9 := 0x33bdd652
- 26 [-]: GETTABLE  R9 R9 K6     ; R82 := R9[0x23d5322f]
+ 26 [-]: GETTABLE  R9 R9 K6     ; R9 := R9[0x23d5322f]
  27 [-]: MOVE      R10 R1       ; R10 := R1
  28 [-]: MOVE      R11 R8       ; R11 := R8
  29 [-]: CALL      R9 3 1       ; R9(R10,R11)

@@ -3299,7 +3299,7 @@
  88 [-]: GETTABLE  R10 R4 K21   ; R10 := R4["Alpha"]
  89 [-]: EQ        1 R10 R9     ; if R10 == R9 then PC := 97
  90 [-]: JMP       97           ; PC := 97
- 91 [-]: SETTABLE  R4 K21 R9    ; R4[0x7b998233] := R9
+ 91 [-]: SETTABLE  R4 K21 R9    ; R4["Alpha"] := R9
  92 [-]: SELF      R10 R0 K22   ; R11 := R0; R10 := R0[0x67bc869f]
  93 [-]: GETTABLE  R12 R4 K17   ; R12 := R4["mClipName"]
  94 [-]: LOADK     R13 10       ; R13 := 10.000000
@@ -3316,9 +3316,9 @@
 105 [-]: GETTABLE  R11 R6 K21   ; R11 := R6["Alpha"]
 106 [-]: EQ        1 R11 R10    ; if R11 == R10 then PC := 121
 107 [-]: JMP       121          ; PC := 121
-108 [-]: SETTABLE  R6 K21 R10   ; R6[0x7b998233] := R10
+108 [-]: SETTABLE  R6 K21 R10   ; R6["Alpha"] := R10
 109 [-]: DIV       R11 R10 K23  ; R11 := R10 / 1.500000
-110 [-]: SETTABLE  R5 K21 R11   ; R5[0x7b998233] := R11
+110 [-]: SETTABLE  R5 K21 R11   ; R5["Alpha"] := R11
 111 [-]: SELF      R11 R0 K22   ; R12 := R0; R11 := R0[0x67bc869f]
 112 [-]: GETTABLE  R13 R6 K17   ; R13 := R6["mClipName"]
 113 [-]: LOADK     R14 10       ; R14 := 10.000000
@@ -3406,8 +3406,8 @@
 195 [-]: CALL      R16 3 0      ; R16,... := R16(R17,R18)
 196 [-]: CALL      R13 0 2      ; R13 := R13(R14,...)
 197 [-]: MOVE      R11 R13      ; R11 := R13
-198 [-]: SETTABLE  R7 K21 R11   ; R7[0x7b998233] := R11
-199 [-]: SETTABLE  R8 K21 R11   ; R8[0x7b998233] := R11
+198 [-]: SETTABLE  R7 K21 R11   ; R7["Alpha"] := R11
+199 [-]: SETTABLE  R8 K21 R11   ; R8["Alpha"] := R11
 200 [-]: SELF      R13 R0 K22   ; R14 := R0; R13 := R0[0x67bc869f]
 201 [-]: GETTABLE  R15 R7 K17   ; R15 := R7["mClipName"]
 202 [-]: LOADK     R16 10       ; R16 := 10.000000
@@ -3436,8 +3436,8 @@
 225 [-]: CALL      R18 3 0      ; R18,... := R18(R19,R20)
 226 [-]: CALL      R15 0 2      ; R15 := R15(R16,...)
 227 [-]: MOVE      R13 R15      ; R13 := R15
-228 [-]: SETTABLE  R7 K21 R13   ; R7[0x7b998233] := R13
-229 [-]: SETTABLE  R8 K21 R13   ; R8[0x7b998233] := R13
+228 [-]: SETTABLE  R7 K21 R13   ; R7["Alpha"] := R13
+229 [-]: SETTABLE  R8 K21 R13   ; R8["Alpha"] := R13
 230 [-]: SELF      R15 R0 K22   ; R16 := R0; R15 := R0[0x67bc869f]
 231 [-]: GETTABLE  R17 R7 K17   ; R17 := R7["mClipName"]
 232 [-]: LOADK     R18 10       ; R18 := 10.000000

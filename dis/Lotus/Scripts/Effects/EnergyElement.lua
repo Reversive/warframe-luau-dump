@@ -40,19 +40,19 @@
 ; Max Stack Size:  7
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0x5bced4c4
-  2 [-]: GETTABLE  R1 R1 K1     ; R82 := R1[0xb62ecfe0]
+  2 [-]: GETTABLE  R1 R1 K1     ; R1 := R1[0xb62ecfe0]
   3 [-]: GETTABLE  R2 R0 K2     ; R2 := R0["red"]
   4 [-]: GETGLOBAL R3 K0        ; R3 := 0x5bced4c4
-  5 [-]: GETTABLE  R3 R3 K1     ; R82 := R3[0xb62ecfe0]
+  5 [-]: GETTABLE  R3 R3 K1     ; R3 := R3[0xb62ecfe0]
   6 [-]: GETTABLE  R4 R0 K3     ; R4 := R0["green"]
   7 [-]: GETTABLE  R5 R0 K4     ; R5 := R0["blue"]
   8 [-]: CALL      R3 3 0       ; R3,... := R3(R4,R5)
   9 [-]: CALL      R1 0 2       ; R1 := R1(R2,...)
  10 [-]: GETGLOBAL R2 K0        ; R2 := 0x5bced4c4
- 11 [-]: GETTABLE  R2 R2 K5     ; R82 := R2[0xac1b386a]
+ 11 [-]: GETTABLE  R2 R2 K5     ; R2 := R2[0xac1b386a]
  12 [-]: GETTABLE  R3 R0 K2     ; R3 := R0["red"]
  13 [-]: GETGLOBAL R4 K0        ; R4 := 0x5bced4c4
- 14 [-]: GETTABLE  R4 R4 K5     ; R82 := R4[0xac1b386a]
+ 14 [-]: GETTABLE  R4 R4 K5     ; R4 := R4[0xac1b386a]
  15 [-]: GETTABLE  R5 R0 K3     ; R5 := R0["green"]
  16 [-]: GETTABLE  R6 R0 K4     ; R6 := R0["blue"]
  17 [-]: CALL      R4 3 0       ; R4,... := R4(R5,R6)

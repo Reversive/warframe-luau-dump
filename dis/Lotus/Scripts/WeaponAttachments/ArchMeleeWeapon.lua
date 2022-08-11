@@ -50,7 +50,7 @@
  25 [-]: JMP       27           ; PC := 27
  26 [-]: RETURN    R0 1         ; return 
  27 [-]: GETGLOBAL R3 K6        ; R3 := 0xaf6ac8d4
- 28 [-]: GETTABLE  R3 R3 K7     ; R82 := R3[0x449a507e]
+ 28 [-]: GETTABLE  R3 R3 K7     ; R3 := R3[0x449a507e]
  29 [-]: CALL      R3 1 2       ; R3 := R3()
  30 [-]: SELF      R4 R3 K8     ; R5 := R3; R4 := R3[0xc670d7f3]
  31 [-]: LOADK     R6 0         ; R6 := 0.000000

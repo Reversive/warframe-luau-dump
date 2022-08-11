@@ -93,7 +93,7 @@
   3 [-]: LOADK     R4 1000      ; R4 := 1000.000000
   4 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
   5 [-]: GETUPVAL  R3 U0        ; R3 := U0
-  6 [-]: GETTABLE  R3 R3 K1     ; R82 := R3[0xc7766ea9]
+  6 [-]: GETTABLE  R3 R3 K1     ; R3 := R3[0xc7766ea9]
   7 [-]: GETUPVAL  R4 U1        ; R4 := U1
   8 [-]: CALL      R3 2 1       ; R3(R4)
   9 [-]: LOADK     R3 1         ; R3 := 1.000000
@@ -147,11 +147,11 @@
   3 [-]: LOADK     R4 1000      ; R4 := 1000.000000
   4 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
   5 [-]: GETUPVAL  R3 U0        ; R3 := U0
-  6 [-]: GETTABLE  R3 R3 K1     ; R82 := R3[0xc7766ea9]
+  6 [-]: GETTABLE  R3 R3 K1     ; R3 := R3[0xc7766ea9]
   7 [-]: GETUPVAL  R4 U1        ; R4 := U1
   8 [-]: CALL      R3 2 1       ; R3(R4)
   9 [-]: GETUPVAL  R3 U0        ; R3 := U0
- 10 [-]: GETTABLE  R3 R3 K1     ; R82 := R3[0xc7766ea9]
+ 10 [-]: GETTABLE  R3 R3 K1     ; R3 := R3[0xc7766ea9]
  11 [-]: GETUPVAL  R4 U2        ; R4 := U2
  12 [-]: CALL      R3 2 1       ; R3(R4)
  13 [-]: LOADK     R3 1         ; R3 := 1.000000
@@ -241,17 +241,17 @@
  13 [-]: SELF      R1 R1 K3     ; R2 := R1; R1 := R1[0xc7fcada9]
  14 [-]: GETUPVAL  R3 U3        ; R3 := U3
  15 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
- 16 [-]: SETUPVAL  R1 U2        ; U82 := 
+ 16 [-]: SETUPVAL  R1 U2        ; U82 := 
  17 [-]: GETGLOBAL R1 K0        ; R1 := 0x89326c93
  18 [-]: SELF      R1 R1 K3     ; R2 := R1; R1 := R1[0xc7fcada9]
  19 [-]: GETUPVAL  R3 U5        ; R3 := U5
  20 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
- 21 [-]: SETUPVAL  R1 U4        ; U82 := 
+ 21 [-]: SETUPVAL  R1 U4        ; U82 := 
  22 [-]: GETGLOBAL R1 K0        ; R1 := 0x89326c93
  23 [-]: SELF      R1 R1 K3     ; R2 := R1; R1 := R1[0xc7fcada9]
  24 [-]: GETUPVAL  R3 U7        ; R3 := U7
  25 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
- 26 [-]: SETUPVAL  R1 U6        ; U82 := 
+ 26 [-]: SETUPVAL  R1 U6        ; U82 := 
  27 [-]: GETUPVAL  R1 U8        ; R1 := U8
  28 [-]: CALL      R1 1 2       ; R1 := R1()
  29 [-]: NOT       R1 R1        ; R1 := not R1

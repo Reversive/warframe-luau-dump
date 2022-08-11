@@ -86,7 +86,7 @@
  47 [-]: JMP       49           ; PC := 49
  48 [-]: LOADK     R3 1         ; R3 := 1.000000
  49 [-]: GETGLOBAL R5 K12       ; R5 := 0x34291f5c
- 50 [-]: GETTABLE  R5 R5 K13    ; R82 := R5[0xe82b9b03]
+ 50 [-]: GETTABLE  R5 R5 K13    ; R5 := R5[0xe82b9b03]
  51 [-]: MOVE      R6 R0        ; R6 := R0
  52 [-]: CALL      R5 2 1       ; R5(R6)
  53 [-]: GETGLOBAL R5 K3        ; R5 := 0x7b998233

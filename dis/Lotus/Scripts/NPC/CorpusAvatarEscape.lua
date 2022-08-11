@@ -438,7 +438,7 @@
  73 [-]: SELF      R4 R4 K17    ; R5 := R4; R4 := R4[0x751f061d]
  74 [-]: GETTABLE  R6 R0 K5     ; R6 := R0["mNetValueDespawnTimerSymbol"]
  75 [-]: GETGLOBAL R7 K18       ; R7 := 0x5bced4c4
- 76 [-]: GETTABLE  R7 R7 K19    ; R82 := R7[0x55f27c30]
+ 76 [-]: GETTABLE  R7 R7 K19    ; R7 := R7[0x55f27c30]
  77 [-]: MOVE      R8 R3        ; R8 := R3
  78 [-]: CALL      R7 2 0       ; R7,... := R7(R8)
  79 [-]: CALL      R4 0 1       ; R4(R5,...)
@@ -649,7 +649,7 @@
 
   1 [-]: SETTABLE  R0 K0 K1     ; R0["mEarlyDespawnTimer"] := 0.000000
   2 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  3 [-]: SETTABLE  R0 K2 R1     ; R0["RunDespawn"] := R1
+  3 [-]: SETTABLE  R0 K2 R1     ; R0[0x7b998233] := R1
   4 [-]: RETURN    R0 2         ; return R0
   5 [-]: RETURN    R0 1         ; return 
 

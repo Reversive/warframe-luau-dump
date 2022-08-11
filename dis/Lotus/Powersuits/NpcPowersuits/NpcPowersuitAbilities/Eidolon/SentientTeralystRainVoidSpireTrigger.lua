@@ -92,7 +92,7 @@
  37 [-]: TEST      R6 1         ; if R6 then PC := 105
  38 [-]: JMP       105          ; PC := 105
  39 [-]: GETGLOBAL R12 K2       ; R12 := 0x33bdd652
- 40 [-]: GETTABLE  R12 R12 K3   ; R82 := R12[0x23d5322f]
+ 40 [-]: GETTABLE  R12 R12 K3   ; R12 := R12[0x23d5322f]
  41 [-]: GETUPVAL  R13 U1       ; R13 := U1
  42 [-]: MOVE      R14 R7       ; R14 := R7
  43 [-]: CALL      R12 3 1      ; R12(R13,R14)
@@ -262,7 +262,7 @@
  90 [-]: SELF      R16 R15 K13  ; R17 := R15; R16 := R15[0xa2880940]
  91 [-]: CALL      R16 2 1      ; R16(R17)
  92 [-]: GETGLOBAL R16 K14      ; R16 := 0x33bdd652
- 93 [-]: GETTABLE  R16 R16 K15  ; R82 := R16[0x9c1f3b5a]
+ 93 [-]: GETTABLE  R16 R16 K15  ; R16 := R16[0x9c1f3b5a]
  94 [-]: GETUPVAL  R17 U1       ; R17 := U1
  95 [-]: MOVE      R18 R5       ; R18 := R5
  96 [-]: CALL      R16 3 1      ; R16(R17,R18)
@@ -368,7 +368,7 @@
   5 [-]: JMP       9            ; PC := 9
   6 [-]: SELF      R1 R0 K1     ; R2 := R0; R1 := R0[0x2b54251b]
   7 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  8 [-]: SETUPVAL  R1 U0        ; U82 := 
+  8 [-]: SETUPVAL  R1 U0        ; U82 := 
   9 [-]: GETGLOBAL R1 K2        ; R1 := 0x11a19c5e
  10 [-]: MOVE      R2 R0        ; R2 := R0
  11 [-]: LOADK     R3 K3        ; R3 := "OnTouched"

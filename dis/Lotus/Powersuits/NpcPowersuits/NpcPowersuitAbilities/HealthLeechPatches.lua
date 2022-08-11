@@ -165,7 +165,7 @@
  91 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  92 [-]: MUL       R5 R5 R4     ; R5 := R5 * R4
  93 [-]: GETGLOBAL R6 K20       ; R6 := 0x34291f5c
- 94 [-]: GETTABLE  R6 R6 K21    ; R82 := R6[0x35c16153]
+ 94 [-]: GETTABLE  R6 R6 K21    ; R6 := R6[0x35c16153]
  95 [-]: CALL      R6 1 2       ; R6 := R6()
  96 [-]: SETTABLE  R6 K22 R5    ; R6["baseAmount"] := R5
  97 [-]: SELF      R7 R6 K23    ; R8 := R6; R7 := R6[0xca73dd2a]
@@ -247,7 +247,7 @@
 173 [-]: TEST      R13 0        ; if not R13 then PC := 189
 174 [-]: JMP       189          ; PC := 189
 175 [-]: GETGLOBAL R13 K41      ; R13 := 0x5bced4c4
-176 [-]: GETTABLE  R13 R13 K42  ; R82 := R13[0xac1b386a]
+176 [-]: GETTABLE  R13 R13 K42  ; R13 := R13[0xac1b386a]
 177 [-]: SELF      R14 R12 K19  ; R15 := R12; R14 := R12[0xb40c191a]
 178 [-]: CALL      R14 2 2      ; R14 := R14(R15)
 179 [-]: SELF      R15 R12 K43  ; R16 := R12; R15 := R12[0xd2715720]
@@ -365,7 +365,7 @@
  73 [-]: EQ        0 R0 R7      ; if R0 ~= R7 then PC := 81
  74 [-]: JMP       81           ; PC := 81
  75 [-]: GETGLOBAL R8 K16       ; R8 := 0x33bdd652
- 76 [-]: GETTABLE  R8 R8 K17    ; R82 := R8[0x9c1f3b5a]
+ 76 [-]: GETTABLE  R8 R8 K17    ; R8 := R8[0x9c1f3b5a]
  77 [-]: GETGLOBAL R9 K14       ; R9 := _T
  78 [-]: GETTABLE  R9 R9 K15    ; R9 := R9["HealthLeechEximusPatches"]
  79 [-]: MOVE      R10 R6       ; R10 := R6
@@ -397,7 +397,7 @@
   9 [-]: TEST      R6 0         ; if not R6 then PC := 17
  10 [-]: JMP       17           ; PC := 17
  11 [-]: GETGLOBAL R6 K4        ; R6 := 0x33bdd652
- 12 [-]: GETTABLE  R6 R6 K5     ; R82 := R6[0x9c1f3b5a]
+ 12 [-]: GETTABLE  R6 R6 K5     ; R6 := R6[0x9c1f3b5a]
  13 [-]: GETGLOBAL R7 K1        ; R7 := _T
  14 [-]: GETTABLE  R7 R7 K2     ; R7 := R7["HealthLeechEximusPatches"]
  15 [-]: CALL      R6 2 1       ; R6(R7)
@@ -518,7 +518,7 @@
  91 [-]: TEST      R16 0        ; if not R16 then PC := 98
  92 [-]: JMP       98           ; PC := 98
  93 [-]: GETGLOBAL R16 K25      ; R16 := 0x33bdd652
- 94 [-]: GETTABLE  R16 R16 K26  ; R82 := R16[0x9c1f3b5a]
+ 94 [-]: GETTABLE  R16 R16 K26  ; R16 := R16[0x9c1f3b5a]
  95 [-]: MOVE      R17 R10      ; R17 := R10
  96 [-]: MOVE      R18 R14      ; R18 := R14
  97 [-]: CALL      R16 3 1      ; R16(R17,R18)
@@ -606,7 +606,7 @@
 179 [-]: MOVE      R24 R17      ; R24 := R17
 180 [-]: CALL      R18 7 1      ; R18(R19,R20,R21,R22,R23,R24)
 181 [-]: GETGLOBAL R18 K25      ; R18 := 0x33bdd652
-182 [-]: GETTABLE  R18 R18 K41  ; R82 := R18[0x23d5322f]
+182 [-]: GETTABLE  R18 R18 K41  ; R18 := R18[0x23d5322f]
 183 [-]: GETGLOBAL R19 K0       ; R19 := _T
 184 [-]: GETTABLE  R19 R19 K1   ; R19 := R19["HealthLeechEximusPatches"]
 185 [-]: MOVE      R20 R17      ; R20 := R17
@@ -716,7 +716,7 @@
  36 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  37 [-]: SELF      R4 R4 K12    ; R5 := R4; R4 := R4[0x66905cb0]
  38 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 39 [-]: SETUPVAL  R4 U0        ; U82 := 
+ 39 [-]: SETUPVAL  R4 U0        ; U82 := R0
  40 [-]: GETGLOBAL R4 K0        ; R4 := 0x7b998233
  41 [-]: GETUPVAL  R5 U0        ; R5 := U0
  42 [-]: CALL      R4 2 2       ; R4 := R4(R5)
@@ -889,7 +889,7 @@
 209 [-]: TEST      R20 1        ; if R20 then PC := 229
 210 [-]: JMP       229          ; PC := 229
 211 [-]: GETGLOBAL R20 K34      ; R20 := 0x5bced4c4
-212 [-]: GETTABLE  R20 R20 K35  ; R82 := R20[0x3630e649]
+212 [-]: GETTABLE  R20 R20 K35  ; R20 := R20[0x3630e649]
 213 [-]: CALL      R20 1 2      ; R20 := R20()
 214 [-]: LT        0 K36 R20    ; if 0.600000 >= R20 then PC := 229
 215 [-]: JMP       229          ; PC := 229

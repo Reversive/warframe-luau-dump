@@ -100,7 +100,7 @@
  44 [-]: GETGLOBAL R8 K0        ; R8 := 0x2d0fad09
  45 [-]: LOADK     R9 K19       ; R9 := "Lotus.Interface.Components.CategorizedGrid"
  46 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 47 [-]: GETTABLE  R9 R8 K21    ; R82 := R9[0x67d7b715]
+ 47 [-]: GETTABLE  R9 R8 K21    ; R9 := R8[0x67d7b715]
  48 [-]: GETTABLE  R10 R7 K5    ; R10 := R7["mMovie"]
  49 [-]: MOVE      R11 R1       ; R11 := R1
  50 [-]: LOADK     R12 K22      ; R12 := ".Item"
@@ -376,13 +376,13 @@
 ; Max Stack Size:  7
 
   1 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  2 [-]: GETTABLE  R0 R0 K0     ; R82 := R0[0x659d451f]
+  2 [-]: GETTABLE  R0 R0 K0     ; R0 := R0[0x659d451f]
   3 [-]: GETGLOBAL R1 K1        ; R1 := 0x0032441c
   4 [-]: GETTABLE  R1 R1 K2     ; R1 := R1["UISound_Select"]
   5 [-]: CALL      R0 2 1       ; R0(R1)
   6 [-]: GETUPVAL  R0 U1        ; R0 := U1
   7 [-]: GETGLOBAL R1 K4        ; R1 := 0x5bced4c4
-  8 [-]: GETTABLE  R1 R1 K5     ; R82 := R1[0xac1b386a]
+  8 [-]: GETTABLE  R1 R1 K5     ; R1 := R1[0xac1b386a]
   9 [-]: GETUPVAL  R2 U1        ; R2 := U1
  10 [-]: GETTABLE  R2 R2 K3     ; R2 := R2["mCurrentCompatibleIndex"]
  11 [-]: ADD       R2 R2 K6     ; R2 := R2 + 1.000000
@@ -501,13 +501,13 @@
 ; Max Stack Size:  7
 
   1 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  2 [-]: GETTABLE  R0 R0 K0     ; R82 := R0[0x659d451f]
+  2 [-]: GETTABLE  R0 R0 K0     ; R0 := R0[0x659d451f]
   3 [-]: GETGLOBAL R1 K1        ; R1 := 0x0032441c
   4 [-]: GETTABLE  R1 R1 K2     ; R1 := R1["UISound_Select"]
   5 [-]: CALL      R0 2 1       ; R0(R1)
   6 [-]: GETUPVAL  R0 U1        ; R0 := U1
   7 [-]: GETGLOBAL R1 K4        ; R1 := 0x5bced4c4
-  8 [-]: GETTABLE  R1 R1 K5     ; R82 := R1[0xb62ecfe0]
+  8 [-]: GETTABLE  R1 R1 K5     ; R1 := R1[0xb62ecfe0]
   9 [-]: GETUPVAL  R2 U1        ; R2 := U1
  10 [-]: GETTABLE  R2 R2 K3     ; R2 := R2["mCurrentCompatibleIndex"]
  11 [-]: SUB       R2 R2 K6     ; R2 := R2 - 1.000000
@@ -593,13 +593,13 @@
 ; Max Stack Size:  7
 
   1 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  2 [-]: GETTABLE  R1 R1 K1     ; R82 := R1[0x5d10207d]
+  2 [-]: GETTABLE  R1 R1 K1     ; R1 := R1[0x5d10207d]
   3 [-]: LOADK     R2 9         ; R2 := 9.000000
   4 [-]: LOADBOOL  R3 1 0       ; R3 := true
   5 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
   6 [-]: SETTABLE  R0 K0 R1     ; R0["mFloatingContent"] := R1
   7 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  8 [-]: GETTABLE  R1 R1 K1     ; R82 := R1[0x5d10207d]
+  8 [-]: GETTABLE  R1 R1 K1     ; R1 := R1[0x5d10207d]
   9 [-]: LOADK     R2 10        ; R2 := 10.000000
  10 [-]: LOADBOOL  R3 1 0       ; R3 := true
  11 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
@@ -706,7 +706,7 @@
  67 [-]: CALL      R8 2 4       ; R8,R9,R10 := R8(R9)
  68 [-]: JMP       74           ; PC := 74
  69 [-]: GETGLOBAL R13 K12      ; R13 := 0x33bdd652
- 70 [-]: GETTABLE  R13 R13 K13  ; R82 := R13[0x23d5322f]
+ 70 [-]: GETTABLE  R13 R13 K13  ; R13 := R13[0x23d5322f]
  71 [-]: MOVE      R14 R6       ; R14 := R6
  72 [-]: MOVE      R15 R12      ; R15 := R12
  73 [-]: CALL      R13 3 1      ; R13(R14,R15)
@@ -753,7 +753,7 @@
 114 [-]: TEST      R26 1        ; if R26 then PC := 137
 115 [-]: JMP       137          ; PC := 137
 116 [-]: GETUPVAL  R26 U2       ; R26 := U2
-117 [-]: GETTABLE  R26 R26 K19  ; R82 := R26[0x08681f50]
+117 [-]: GETTABLE  R26 R26 K19  ; R26 := R26[0x08681f50]
 118 [-]: GETTABLE  R27 R0 K20   ; R27 := R0["mMovie"]
 119 [-]: MOVE      R28 R25      ; R28 := R25
 120 [-]: NEWTABLE  R29 0 2      ; R29 := {}
@@ -768,7 +768,7 @@
 129 [-]: SETTABLE  R26 K25 K26  ; R26["ShowDisposition"] := true
 130 [-]: SETTABLE  R26 K27 R4   ; R26["ModularTip"] := R4
 131 [-]: GETGLOBAL R27 K12      ; R27 := 0x33bdd652
-132 [-]: GETTABLE  R27 R27 K13  ; R82 := R27[0x23d5322f]
+132 [-]: GETTABLE  R27 R27 K13  ; R27 := R27[0x23d5322f]
 133 [-]: GETTABLE  R28 R0 K5    ; R28 := R0["mCompatibleItems"]
 134 [-]: MOVE      R29 R26      ; R29 := R26
 135 [-]: CALL      R27 3 1      ; R27(R28,R29)
@@ -790,7 +790,7 @@
 151 [-]: TEST      R28 1        ; if R28 then PC := 305
 152 [-]: JMP       305          ; PC := 305
 153 [-]: GETUPVAL  R28 U2       ; R28 := U2
-154 [-]: GETTABLE  R28 R28 K19  ; R82 := R28[0x08681f50]
+154 [-]: GETTABLE  R28 R28 K19  ; R28 := R28[0x08681f50]
 155 [-]: GETTABLE  R29 R0 K20   ; R29 := R0["mMovie"]
 156 [-]: MOVE      R30 R27      ; R30 := R27
 157 [-]: NEWTABLE  R31 0 1      ; R31 := {}
@@ -803,7 +803,7 @@
 164 [-]: SETTABLE  R28 K23 K24  ; R28["DefaultItemInfoTab"] := 2.000000
 165 [-]: SETTABLE  R28 K25 K26  ; R28["ShowDisposition"] := true
 166 [-]: GETGLOBAL R29 K12      ; R29 := 0x33bdd652
-167 [-]: GETTABLE  R29 R29 K13  ; R82 := R29[0x23d5322f]
+167 [-]: GETTABLE  R29 R29 K13  ; R29 := R29[0x23d5322f]
 168 [-]: GETTABLE  R30 R0 K5    ; R30 := R0["mCompatibleItems"]
 169 [-]: MOVE      R31 R28      ; R31 := R28
 170 [-]: CALL      R29 3 1      ; R29(R30,R31)
@@ -892,7 +892,7 @@
 253 [-]: TEST      R48 1        ; if R48 then PC := 273
 254 [-]: JMP       273          ; PC := 273
 255 [-]: GETUPVAL  R48 U2       ; R48 := U2
-256 [-]: GETTABLE  R48 R48 K19  ; R82 := R48[0x08681f50]
+256 [-]: GETTABLE  R48 R48 K19  ; R48 := R48[0x08681f50]
 257 [-]: GETTABLE  R49 R0 K20   ; R49 := R0["mMovie"]
 258 [-]: MOVE      R50 R47      ; R50 := R47
 259 [-]: NEWTABLE  R51 0 1      ; R51 := {}
@@ -905,7 +905,7 @@
 266 [-]: SETTABLE  R48 K23 K24  ; R48["DefaultItemInfoTab"] := 2.000000
 267 [-]: SETTABLE  R48 K25 K26  ; R48["ShowDisposition"] := true
 268 [-]: GETGLOBAL R49 K12      ; R49 := 0x33bdd652
-269 [-]: GETTABLE  R49 R49 K13  ; R82 := R49[0x23d5322f]
+269 [-]: GETTABLE  R49 R49 K13  ; R49 := R49[0x23d5322f]
 270 [-]: GETTABLE  R50 R0 K5    ; R50 := R0["mCompatibleItems"]
 271 [-]: MOVE      R51 R48      ; R51 := R48
 272 [-]: CALL      R49 3 1      ; R49(R50,R51)
@@ -924,7 +924,7 @@
 285 [-]: TEST      R50 1        ; if R50 then PC := 305
 286 [-]: JMP       305          ; PC := 305
 287 [-]: GETUPVAL  R50 U2       ; R50 := U2
-288 [-]: GETTABLE  R50 R50 K19  ; R82 := R50[0x08681f50]
+288 [-]: GETTABLE  R50 R50 K19  ; R50 := R50[0x08681f50]
 289 [-]: GETTABLE  R51 R0 K20   ; R51 := R0["mMovie"]
 290 [-]: MOVE      R52 R49      ; R52 := R49
 291 [-]: NEWTABLE  R53 0 1      ; R53 := {}
@@ -937,7 +937,7 @@
 298 [-]: SETTABLE  R50 K23 K24  ; R50["DefaultItemInfoTab"] := 2.000000
 299 [-]: SETTABLE  R50 K25 K26  ; R50["ShowDisposition"] := true
 300 [-]: GETGLOBAL R51 K12      ; R51 := 0x33bdd652
-301 [-]: GETTABLE  R51 R51 K13  ; R82 := R51[0x23d5322f]
+301 [-]: GETTABLE  R51 R51 K13  ; R51 := R51[0x23d5322f]
 302 [-]: GETTABLE  R52 R0 K5    ; R52 := R0["mCompatibleItems"]
 303 [-]: MOVE      R53 R50      ; R53 := R50
 304 [-]: CALL      R51 3 1      ; R51(R52,R53)
@@ -1020,7 +1020,7 @@
   3 [-]: JMP       5            ; PC := 5
   4 [-]: RETURN    R0 1         ; return 
   5 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  6 [-]: GETTABLE  R1 R1 K2     ; R82 := R1[0xb496de90]
+  6 [-]: GETTABLE  R1 R1 K2     ; R1 := R1[0xb496de90]
   7 [-]: GETUPVAL  R2 U1        ; R2 := U1
   8 [-]: GETTABLE  R2 R2 K3     ; R2 := R2["mMovie"]
   9 [-]: GETUPVAL  R3 U1        ; R3 := U1
@@ -1048,7 +1048,7 @@
   3 [-]: JMP       5            ; PC := 5
   4 [-]: RETURN    R0 1         ; return 
   5 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  6 [-]: GETTABLE  R1 R1 K2     ; R82 := R1[0xb496de90]
+  6 [-]: GETTABLE  R1 R1 K2     ; R1 := R1[0xb496de90]
   7 [-]: GETUPVAL  R2 U1        ; R2 := U1
   8 [-]: GETTABLE  R2 R2 K3     ; R2 := R2["mMovie"]
   9 [-]: GETUPVAL  R3 U1        ; R3 := U1
@@ -1071,7 +1071,7 @@
 ; Max Stack Size:  6
 
   1 [-]: GETUPVAL  R2 U0        ; R2 := U0
-  2 [-]: GETTABLE  R2 R2 K0     ; R82 := R2[0xbf9f30a4]
+  2 [-]: GETTABLE  R2 R2 K0     ; R2 := R2[0xbf9f30a4]
   3 [-]: GETUPVAL  R3 U1        ; R3 := U1
   4 [-]: GETTABLE  R3 R3 K1     ; R3 := R3["mMovie"]
   5 [-]: GETUPVAL  R4 U1        ; R4 := U1
@@ -1117,7 +1117,7 @@
  25 [-]: SETTABLE  R2 K11 R1    ; R2["IsFocused"] := R1
  26 [-]: SETTABLE  R2 K12 K7    ; R2["IgnoreCount"] := true
  27 [-]: GETUPVAL  R3 U1        ; R3 := U1
- 28 [-]: GETTABLE  R3 R3 K13    ; R82 := R3[0xc339daf7]
+ 28 [-]: GETTABLE  R3 R3 K13    ; R3 := R3[0xc339daf7]
  29 [-]: GETUPVAL  R4 U0        ; R4 := U0
  30 [-]: GETTABLE  R4 R4 K14    ; R4 := R4["mMovie"]
  31 [-]: GETUPVAL  R5 U0        ; R5 := U0
@@ -1132,7 +1132,7 @@
  40 [-]: TEST      R3 1         ; if R3 then PC := 47
  41 [-]: JMP       47           ; PC := 47
  42 [-]: GETUPVAL  R3 U0        ; R3 := U0
- 43 [-]: GETTABLE  R3 R3 K16    ; R82 := R3[0x83bfe66c]
+ 43 [-]: GETTABLE  R3 R3 K16    ; R3 := R3[0x83bfe66c]
  44 [-]: GETTABLE  R4 R0 K17    ; R4 := R0["Type"]
  45 [-]: GETTABLE  R5 R0 K18    ; R5 := R0["ModularTip"]
  46 [-]: CALL      R3 3 1       ; R3(R4,R5)

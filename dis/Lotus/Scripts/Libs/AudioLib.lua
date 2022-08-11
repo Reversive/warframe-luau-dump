@@ -470,7 +470,7 @@
  54 [-]: SETTABLE  R11 K12 R3   ; R11["soundInstance"] := R3
  55 [-]: SETTABLE  R11 K13 R1   ; R11["shakeFactor"] := R1
  56 [-]: GETGLOBAL R12 K14      ; R12 := 0x33bdd652
- 57 [-]: GETTABLE  R12 R12 K15  ; R82 := R12[0x23d5322f]
+ 57 [-]: GETTABLE  R12 R12 K15  ; R12 := R12[0x23d5322f]
  58 [-]: GETGLOBAL R13 K3       ; R13 := _T
  59 [-]: GETTABLE  R13 R13 K4   ; R13 := R13["ShakeSounds"]
  60 [-]: MOVE      R14 R11      ; R14 := R11

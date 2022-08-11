@@ -447,15 +447,15 @@
  41 [-]: GETGLOBAL R4 K1        ; R4 := 0xf59dc595
  42 [-]: SELF      R4 R4 K11    ; R5 := R4; R4 := R4[0xcb3851b8]
  43 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 44 [-]: SETUPVAL  R4 U0        ; U82 := 
+ 44 [-]: SETUPVAL  R4 U0        ; U82 := R0
  45 [-]: GETGLOBAL R5 K12       ; R5 := 0x5bced4c4
- 46 [-]: GETTABLE  R5 R5 K13    ; R82 := R5[0xe4a5b3ca]
+ 46 [-]: GETTABLE  R5 R5 K13    ; R5 := R5[0xe4a5b3ca]
  47 [-]: GETTABLE  R6 R4 K14    ; R6 := R4["heading"]
  48 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  49 [-]: GETGLOBAL R6 K15       ; R6 := 0x6d0d70ad
  50 [-]: ADD       R5 R5 R6     ; R5 := R5 + R6
  51 [-]: GETGLOBAL R6 K12       ; R6 := 0x5bced4c4
- 52 [-]: GETTABLE  R6 R6 K13    ; R82 := R6[0xe4a5b3ca]
+ 52 [-]: GETTABLE  R6 R6 K13    ; R6 := R6[0xe4a5b3ca]
  53 [-]: GETTABLE  R7 R4 K14    ; R7 := R4["heading"]
  54 [-]: CALL      R6 2 2       ; R6 := R6(R7)
  55 [-]: GETGLOBAL R7 K15       ; R7 := 0x6d0d70ad
@@ -571,7 +571,7 @@
 165 [-]: LT        0 K24 R11    ; if 0.000000 >= R11 then PC := 192
 166 [-]: JMP       192          ; PC := 192
 167 [-]: GETGLOBAL R11 K12      ; R11 := 0x5bced4c4
-168 [-]: GETTABLE  R11 R11 K13  ; R82 := R11[0xe4a5b3ca]
+168 [-]: GETTABLE  R11 R11 K13  ; R11 := R11[0xe4a5b3ca]
 169 [-]: GETGLOBAL R12 K1       ; R12 := 0xf59dc595
 170 [-]: SELF      R12 R12 K11  ; R13 := R12; R12 := R12[0xcb3851b8]
 171 [-]: CALL      R12 2 2      ; R12 := R12(R13)

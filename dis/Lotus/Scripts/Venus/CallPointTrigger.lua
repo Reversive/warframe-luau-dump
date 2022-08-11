@@ -43,7 +43,7 @@
  14 [-]: GETTABLE  R3 R3 K3     ; R3 := R3["gHunting"]
  15 [-]: SETTABLE  R3 K4 K5     ; R3["isLocalAvatarInCallPoint"] := true
  16 [-]: GETUPVAL  R3 U0        ; R3 := U0
- 17 [-]: GETTABLE  R3 R3 K6     ; R82 := R3[0x1c2f80f8]
+ 17 [-]: GETTABLE  R3 R3 K6     ; R3 := R3[0x1c2f80f8]
  18 [-]: SELF      R4 R0 K7     ; R5 := R0; R4 := R0[0x2b54251b]
  19 [-]: CALL      R4 2 0       ; R4,... := R4(R5)
  20 [-]: CALL      R3 0 1       ; R3(R4,...)

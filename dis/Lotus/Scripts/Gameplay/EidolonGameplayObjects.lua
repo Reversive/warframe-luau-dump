@@ -45,20 +45,20 @@
   4 [-]: TEST      R1 0         ; if not R1 then PC := 33
   5 [-]: JMP       33           ; PC := 33
   6 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  7 [-]: GETTABLE  R1 R1 K2     ; R82 := R1[0xd16e8ece]
+  7 [-]: GETTABLE  R1 R1 K2     ; R1 := R1[0xd16e8ece]
   8 [-]: GETUPVAL  R2 U1        ; R2 := U1
   9 [-]: MOVE      R3 R0        ; R3 := R0
  10 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
  11 [-]: LE        0 R1 K3      ; if R1 > 0.000000 then PC := 33
  12 [-]: JMP       33           ; PC := 33
  13 [-]: GETGLOBAL R1 K4        ; R1 := 0x33bdd652
- 14 [-]: GETTABLE  R1 R1 K5     ; R82 := R1[0x23d5322f]
+ 14 [-]: GETTABLE  R1 R1 K5     ; R1 := R1[0x23d5322f]
  15 [-]: GETUPVAL  R2 U1        ; R2 := U1
  16 [-]: MOVE      R3 R0        ; R3 := R0
  17 [-]: CALL      R1 3 1       ; R1(R2,R3)
  18 [-]: GETUPVAL  R1 U2        ; R1 := U2
  19 [-]: ADD       R1 R1 K6     ; R1 := R1 + 1.000000
- 20 [-]: SETUPVAL  R1 U2        ; U82 := 
+ 20 [-]: SETUPVAL  R1 U2        ; U82 := 
  21 [-]: SELF      R1 R0 K7     ; R2 := R0; R1 := R0[0x2b54251b]
  22 [-]: CALL      R1 2 2       ; R1 := R1(R2)
  23 [-]: GETGLOBAL R2 K8        ; R2 := 0x7b998233
@@ -109,7 +109,7 @@
  24 [-]: LT        0 K6 R8      ; if 0.000000 >= R8 then PC := 31
  25 [-]: JMP       31           ; PC := 31
  26 [-]: GETGLOBAL R8 K7        ; R8 := 0x33bdd652
- 27 [-]: GETTABLE  R8 R8 K8     ; R82 := R8[0x23d5322f]
+ 27 [-]: GETTABLE  R8 R8 K8     ; R8 := R8[0x23d5322f]
  28 [-]: MOVE      R9 R2        ; R9 := R2
  29 [-]: MOVE      R10 R7       ; R10 := R7
  30 [-]: CALL      R8 3 1       ; R8(R9,R10)
@@ -200,7 +200,7 @@
  38 [-]: LOADBOOL  R5 0 0       ; R5 := false
  39 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
  40 [-]: GETGLOBAL R4 K11       ; R4 := 0x2d5c5020
- 41 [-]: GETTABLE  R4 R4 K12    ; R82 := R4[0x4a2c3a0f]
+ 41 [-]: GETTABLE  R4 R4 K12    ; R4 := R4[0x4a2c3a0f]
  42 [-]: GETUPVAL  R5 U0        ; R5 := U0
  43 [-]: GETGLOBAL R6 K13       ; R6 := gParticleSysType
  44 [-]: LOADBOOL  R7 0 0       ; R7 := false
@@ -224,7 +224,7 @@
  62 [-]: TEST      R4 0         ; if not R4 then PC := 49
  63 [-]: JMP       49           ; PC := 49
  64 [-]: GETGLOBAL R4 K11       ; R4 := 0x2d5c5020
- 65 [-]: GETTABLE  R4 R4 K12    ; R82 := R4[0x4a2c3a0f]
+ 65 [-]: GETTABLE  R4 R4 K12    ; R4 := R4[0x4a2c3a0f]
  66 [-]: GETUPVAL  R5 U0        ; R5 := U0
  67 [-]: GETGLOBAL R6 K13       ; R6 := gParticleSysType
  68 [-]: LOADBOOL  R7 1 0       ; R7 := true

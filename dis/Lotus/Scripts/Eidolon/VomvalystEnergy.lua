@@ -355,7 +355,7 @@
  51 [-]: MOVE      R11 R2       ; R11 := R2
  52 [-]: CALL      R6 6 1       ; R6(R7,R8,R9,R10,R11)
  53 [-]: GETGLOBAL R6 K13       ; R6 := 0x5bced4c4
- 54 [-]: GETTABLE  R6 R6 K14    ; R82 := R6[0xac1b386a]
+ 54 [-]: GETTABLE  R6 R6 K14    ; R6 := R6[0xac1b386a]
  55 [-]: GETUPVAL  R7 U1        ; R7 := U1
  56 [-]: ADD       R8 R4 K15    ; R8 := R4 + 1.000000
  57 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)

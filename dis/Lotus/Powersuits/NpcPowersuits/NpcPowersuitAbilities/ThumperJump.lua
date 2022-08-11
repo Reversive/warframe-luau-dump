@@ -187,7 +187,7 @@
 135 [-]: JMP       137          ; PC := 137
 136 [-]: SUB       R14 R14 K42  ; R14 := R14 - 360.000000
 137 [-]: GETGLOBAL R15 K43      ; R15 := 0x6c97a788
-138 [-]: GETTABLE  R15 R15 K44  ; R82 := R15[0x733fc736]
+138 [-]: GETTABLE  R15 R15 K44  ; R15 := R15[0x733fc736]
 139 [-]: LOADBOOL  R16 1 0      ; R16 := true
 140 [-]: CALL      R15 2 2      ; R15 := R15(R16)
 141 [-]: SELF      R16 R15 K45  ; R17 := R15; R16 := R15[0xdae055ba]

@@ -47,7 +47,7 @@
   3 [-]: TEST      R1 0         ; if not R1 then PC := 13
   4 [-]: JMP       13           ; PC := 13
   5 [-]: GETGLOBAL R1 K0        ; R1 := _T
-  6 [-]: GETTABLE  R1 R1 K2     ; R82 := R1[0x659270d0]
+  6 [-]: GETTABLE  R1 R1 K2     ; R1 := R1[0x659270d0]
   7 [-]: MOVE      R2 R0        ; R2 := R0
   8 [-]: LOADK     R3 3         ; R3 := 3.000000
   9 [-]: LOADBOOL  R4 1 0       ; R4 := true
@@ -344,11 +344,11 @@
  52 [-]: JMP       54           ; PC := 54
  53 [-]: FORLOOP   R8 47        ; R8 += R10; if R8 <= R9 then begin PC := 47; R11 := R8 end
  54 [-]: GETGLOBAL R12 K8       ; R12 := _T
- 55 [-]: GETTABLE  R12 R12 K9   ; R82 := R12[0x67f7bf32]
+ 55 [-]: GETTABLE  R12 R12 K9   ; R12 := R12[0x67f7bf32]
  56 [-]: LOADK     R13 K10      ; R13 := "GenericSettings"
  57 [-]: CALL      R12 2 2      ; R12 := R12(R13)
  58 [-]: GETUPVAL  R13 U0       ; R13 := U0
- 59 [-]: GETTABLE  R13 R13 K11  ; R82 := R13[0x659d451f]
+ 59 [-]: GETTABLE  R13 R13 K11  ; R13 := R13[0x659d451f]
  60 [-]: GETGLOBAL R14 K12      ; R14 := 0x0032441c
  61 [-]: GETTABLE  R14 R14 K13  ; R14 := R14["UISound_Select"]
  62 [-]: CALL      R13 2 1      ; R13(R14)
@@ -369,10 +369,10 @@
  77 [-]: LOADK     R16 K18      ; R16 := "EditCustomMarkerSettingsDone"
  78 [-]: CALL      R13 4 1      ; R13(R14,R15,R16)
  79 [-]: GETGLOBAL R13 K20      ; R13 := 0x5bced4c4
- 80 [-]: GETTABLE  R13 R13 K21  ; R82 := R13[0xb62ecfe0]
+ 80 [-]: GETTABLE  R13 R13 K21  ; R13 := R13[0xb62ecfe0]
  81 [-]: LOADK     R14 1        ; R14 := 1.000000
  82 [-]: GETGLOBAL R15 K20      ; R15 := 0x5bced4c4
- 83 [-]: GETTABLE  R15 R15 K22  ; R82 := R15[0x99675e23]
+ 83 [-]: GETTABLE  R15 R15 K22  ; R15 := R15[0x99675e23]
  84 [-]: GETGLOBAL R16 K7       ; R16 := 0xaacb7729
  85 [-]: LEN       R16 R16      ; R16 := # R16
  86 [-]: DIV       R16 R16 K23  ; R16 := R16 / 12.000000
@@ -564,7 +564,7 @@
  57 [-]: SETTABLE  R1 K7 K8     ; R1["mWidth"] := 500.000000
  58 [-]: SETTABLE  R1 K17 K18   ; R1["mButtonWidth"] := 520.000000
  59 [-]: GETUPVAL  R2 U4        ; R2 := U4
- 60 [-]: GETTABLE  R2 R2 K38    ; R82 := R2[0x9f57dd7d]
+ 60 [-]: GETTABLE  R2 R2 K38    ; R2 := R2[0x9f57dd7d]
  61 [-]: GETUPVAL  R3 U1        ; R3 := U1
  62 [-]: SELF      R3 R3 K39    ; R4 := R3; R3 := R3[0x27665c68]
  63 [-]: CALL      R3 2 0       ; R3,... := R3(R4)
@@ -797,7 +797,7 @@
  10 [-]: JMP       12           ; PC := 12
  11 [-]: RETURN    R0 1         ; return 
  12 [-]: GETUPVAL  R1 U0        ; R1 := U0
- 13 [-]: GETTABLE  R1 R1 K2     ; R82 := R1[0x293ec9c4]
+ 13 [-]: GETTABLE  R1 R1 K2     ; R1 := R1[0x293ec9c4]
  14 [-]: GETGLOBAL R2 K1        ; R2 := 0x25d99d89
  15 [-]: CALL      R1 2 2       ; R1 := R1(R2)
  16 [-]: TEST      R1 0         ; if not R1 then PC := 20

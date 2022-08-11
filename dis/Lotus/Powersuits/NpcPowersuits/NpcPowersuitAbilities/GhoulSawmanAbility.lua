@@ -498,7 +498,7 @@
  56 [-]: LT        0 R6 R7      ; if R6 >= R7 then PC := 93
  57 [-]: JMP       93           ; PC := 93
  58 [-]: GETGLOBAL R6 K9        ; R6 := 0x34291f5c
- 59 [-]: GETTABLE  R6 R6 K19    ; R82 := R6[0x35c16153]
+ 59 [-]: GETTABLE  R6 R6 K19    ; R6 := R6[0x35c16153]
  60 [-]: CALL      R6 1 2       ; R6 := R6()
  61 [-]: SETTABLE  R6 K20 R5    ; R6["baseAmount"] := R5
  62 [-]: SELF      R7 R6 K21    ; R8 := R6; R7 := R6[0x1586e35e]

@@ -188,7 +188,7 @@
 ; Max Stack Size:  5
 
   1 [-]: GETGLOBAL R2 K0        ; R2 := 0x5bced4c4
-  2 [-]: GETTABLE  R2 R2 K1     ; R82 := R2[0xac1b386a]
+  2 [-]: GETTABLE  R2 R2 K1     ; R2 := R2[0xac1b386a]
   3 [-]: MOVE      R3 R1        ; R3 := R1
   4 [-]: LEN       R4 R0        ; R4 := # R0
   5 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
@@ -216,7 +216,7 @@
   8 [-]: JMP       21           ; PC := 21
   9 [-]: NEWTABLE  R5 0 1       ; R5 := {}
  10 [-]: GETGLOBAL R6 K3        ; R6 := 0x5bced4c4
- 11 [-]: GETTABLE  R6 R6 K4     ; R82 := R6[0x55f27c30]
+ 11 [-]: GETTABLE  R6 R6 K4     ; R6 := R6[0x55f27c30]
  12 [-]: GETUPVAL  R7 U1        ; R7 := U1
  13 [-]: GETUPVAL  R8 U0        ; R8 := U0
  14 [-]: GETTABLE  R8 R8 K5     ; R8 := R8["scale"]
@@ -227,7 +227,7 @@
  19 [-]: SETTABLE  R5 K2 R6     ; R5["PERCENT"] := R6
  20 [-]: MOVE      R3 R5        ; R3 := R5
  21 [-]: GETGLOBAL R5 K7        ; R5 := cjson
- 22 [-]: GETTABLE  R5 R5 K8     ; R82 := R5[0xb139d7bc]
+ 22 [-]: GETTABLE  R5 R5 K8     ; R5 := R5[0xb139d7bc]
  23 [-]: MOVE      R6 R3        ; R6 := R3
  24 [-]: TAILCALL  R5 2 0       ; R5,... := R5(R6)
  25 [-]: RETURN    R5 0         ; return R5,...
@@ -519,7 +519,7 @@
 ; Max Stack Size:  9
 
   1 [-]: GETUPVAL  R4 U0        ; R4 := U0
-  2 [-]: GETTABLE  R4 R4 K0     ; R82 := R4[0x4c2a051e]
+  2 [-]: GETTABLE  R4 R4 K0     ; R4 := R4[0x4c2a051e]
   3 [-]: MOVE      R5 R1        ; R5 := R1
   4 [-]: CALL      R4 2 2       ; R4 := R4(R5)
   5 [-]: SELF      R5 R1 K1     ; R6 := R1; R5 := R1[0xee0bc178]
@@ -626,7 +626,7 @@
  74 [-]: GETUPVAL  R7 U0        ; R7 := U0
  75 [-]: GETTABLE  R7 R7 K20    ; R7 := R7["maxHealthAsDamage"]
  76 [-]: GETGLOBAL R8 K21       ; R8 := 0x5bced4c4
- 77 [-]: GETTABLE  R8 R8 K22    ; R82 := R8[0xac1b386a]
+ 77 [-]: GETTABLE  R8 R8 K22    ; R8 := R8[0xac1b386a]
  78 [-]: GETUPVAL  R9 U0        ; R9 := U0
  79 [-]: GETTABLE  R9 R9 K20    ; R9 := R9["maxHealthAsDamage"]
  80 [-]: LEN       R9 R9        ; R9 := # R9
@@ -636,7 +636,7 @@
  84 [-]: GETUPVAL  R8 U0        ; R8 := U0
  85 [-]: GETTABLE  R8 R8 K23    ; R8 := R8["damageRange"]
  86 [-]: GETGLOBAL R9 K21       ; R9 := 0x5bced4c4
- 87 [-]: GETTABLE  R9 R9 K22    ; R82 := R9[0xac1b386a]
+ 87 [-]: GETTABLE  R9 R9 K22    ; R9 := R9[0xac1b386a]
  88 [-]: GETUPVAL  R10 U0       ; R10 := U0
  89 [-]: GETTABLE  R10 R10 K23  ; R10 := R10["damageRange"]
  90 [-]: LEN       R10 R10      ; R10 := # R10
@@ -644,7 +644,7 @@
  92 [-]: CALL      R9 3 2       ; R9 := R9(R10,R11)
  93 [-]: GETTABLE  R8 R8 R9     ; R8 := R8[R9]
  94 [-]: GETGLOBAL R9 K24       ; R9 := 0x34291f5c
- 95 [-]: GETTABLE  R9 R9 K25    ; R82 := R9[0x35c16153]
+ 95 [-]: GETTABLE  R9 R9 K25    ; R9 := R9[0x35c16153]
  96 [-]: CALL      R9 1 2       ; R9 := R9()
  97 [-]: SELF      R10 R0 K27   ; R11 := R0; R10 := R0[0xb40c191a]
  98 [-]: CALL      R10 2 2      ; R10 := R10(R11)
@@ -873,7 +873,7 @@
  29 [-]: SETTABLE  R9 K5 R10    ; R9["instance"] := R10
  30 [-]: SETTABLE  R9 K6 R8     ; R9["range"] := R8
  31 [-]: GETGLOBAL R10 K10      ; R10 := 0x33bdd652
- 32 [-]: GETTABLE  R10 R10 K11  ; R82 := R10[0x23d5322f]
+ 32 [-]: GETTABLE  R10 R10 K11  ; R10 := R10[0x23d5322f]
  33 [-]: MOVE      R11 R2       ; R11 := R2
  34 [-]: MOVE      R12 R9       ; R12 := R9
  35 [-]: CALL      R10 3 1      ; R10(R11,R12)
@@ -1043,7 +1043,7 @@
  74 [-]: GETUPVAL  R12 U0       ; R12 := U0
  75 [-]: GETTABLE  R12 R12 K13  ; R12 := R12["extraDamageTaken"]
  76 [-]: GETGLOBAL R13 K14      ; R13 := 0x5bced4c4
- 77 [-]: GETTABLE  R13 R13 K15  ; R82 := R13[0xac1b386a]
+ 77 [-]: GETTABLE  R13 R13 K15  ; R13 := R13[0xac1b386a]
  78 [-]: GETUPVAL  R14 U0       ; R14 := U0
  79 [-]: GETTABLE  R14 R14 K13  ; R14 := R14["extraDamageTaken"]
  80 [-]: LEN       R14 R14      ; R14 := # R14
@@ -1064,7 +1064,7 @@
  95 [-]: GETUPVAL  R13 U1       ; R13 := U1
  96 [-]: GETTABLE  R13 R13 K13  ; R13 := R13["extraDamageTaken"]
  97 [-]: GETGLOBAL R14 K14      ; R14 := 0x5bced4c4
- 98 [-]: GETTABLE  R14 R14 K15  ; R82 := R14[0xac1b386a]
+ 98 [-]: GETTABLE  R14 R14 K15  ; R14 := R14[0xac1b386a]
  99 [-]: GETUPVAL  R15 U1       ; R15 := U1
 100 [-]: GETTABLE  R15 R15 K13  ; R15 := R15["extraDamageTaken"]
 101 [-]: LEN       R15 R15      ; R15 := # R15
@@ -1121,12 +1121,12 @@
 152 [-]: TEST      R17 0        ; if not R17 then PC := 186
 153 [-]: JMP       186          ; PC := 186
 154 [-]: GETGLOBAL R17 K18      ; R17 := 0x34291f5c
-155 [-]: GETTABLE  R17 R17 K27  ; R82 := R17[0x35c16153]
+155 [-]: GETTABLE  R17 R17 K27  ; R17 := R17[0x35c16153]
 156 [-]: CALL      R17 1 2      ; R17 := R17()
 157 [-]: GETUPVAL  R18 U2       ; R18 := U2
 158 [-]: GETTABLE  R18 R18 K28  ; R18 := R18["maxHealthAsDamage"]
 159 [-]: GETGLOBAL R19 K14      ; R19 := 0x5bced4c4
-160 [-]: GETTABLE  R19 R19 K15  ; R82 := R19[0xac1b386a]
+160 [-]: GETTABLE  R19 R19 K15  ; R19 := R19[0xac1b386a]
 161 [-]: GETUPVAL  R20 U2       ; R20 := U2
 162 [-]: GETTABLE  R20 R20 K28  ; R20 := R20["maxHealthAsDamage"]
 163 [-]: LEN       R20 R20      ; R20 := # R20
@@ -1259,7 +1259,7 @@
  38 [-]: TEST      R9 1         ; if R9 then PC := 74
  39 [-]: JMP       74           ; PC := 74
  40 [-]: GETUPVAL  R9 U0        ; R9 := U0
- 41 [-]: GETTABLE  R9 R9 K11    ; R82 := R9[0xcf49d84c]
+ 41 [-]: GETTABLE  R9 R9 K11    ; R9 := R9[0xcf49d84c]
  42 [-]: GETGLOBAL R10 K6       ; R10 := _T
  43 [-]: GETTABLE  R10 R10 K7   ; R10 := R10["DashHitEnemies"]
  44 [-]: GETTABLE  R10 R10 R3   ; R10 := R10[R3]
@@ -1282,7 +1282,7 @@
  61 [-]: LT        0 R9 R10     ; if R9 >= R10 then PC := 74
  62 [-]: JMP       74           ; PC := 74
  63 [-]: GETGLOBAL R9 K15       ; R9 := 0x33bdd652
- 64 [-]: GETTABLE  R9 R9 K16    ; R82 := R9[0x23d5322f]
+ 64 [-]: GETTABLE  R9 R9 K16    ; R9 := R9[0x23d5322f]
  65 [-]: GETGLOBAL R10 K6       ; R10 := _T
  66 [-]: GETTABLE  R10 R10 K7   ; R10 := R10["DashHitEnemies"]
  67 [-]: GETTABLE  R10 R10 R3   ; R10 := R10[R3]
@@ -1328,17 +1328,17 @@
  13 [-]: GETGLOBAL R4 K3        ; R4 := 0x7a6891f2
  14 [-]: CALL      R2 3 1       ; R2(R3,R4)
  15 [-]: GETUPVAL  R2 U1        ; R2 := U1
- 16 [-]: GETTABLE  R2 R2 K4     ; R82 := R2[0xc8ae8a12]
+ 16 [-]: GETTABLE  R2 R2 K4     ; R2 := R2[0xc8ae8a12]
  17 [-]: MOVE      R3 R1        ; R3 := R1
  18 [-]: CALL      R2 2 1       ; R2(R3)
  19 [-]: GETUPVAL  R2 U2        ; R2 := U2
- 20 [-]: GETTABLE  R2 R2 K5     ; R82 := R2[0x4c2a051e]
+ 20 [-]: GETTABLE  R2 R2 K5     ; R2 := R2[0x4c2a051e]
  21 [-]: MOVE      R3 R1        ; R3 := R1
  22 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  23 [-]: EQ        0 R2 K7      ; if R2 ~= 7.000000 then PC := 48
  24 [-]: JMP       48           ; PC := 48
  25 [-]: GETUPVAL  R3 U2        ; R3 := U2
- 26 [-]: GETTABLE  R3 R3 K8     ; R82 := R3[0x7788c940]
+ 26 [-]: GETTABLE  R3 R3 K8     ; R3 := R3[0x7788c940]
  27 [-]: MOVE      R4 R1        ; R4 := R1
  28 [-]: GETUPVAL  R5 U3        ; R5 := U3
  29 [-]: GETTABLE  R5 R5 K9     ; R5 := R5["tag"]
@@ -1392,7 +1392,7 @@
  12 [-]: SELF      R2 R1 K2     ; R3 := R1; R2 := R1[0xfff719e4]
  13 [-]: CALL      R2 2 1       ; R2(R3)
  14 [-]: GETUPVAL  R2 U1        ; R2 := U1
- 15 [-]: GETTABLE  R2 R2 K3     ; R82 := R2[0x21476c5e]
+ 15 [-]: GETTABLE  R2 R2 K3     ; R2 := R2[0x21476c5e]
  16 [-]: MOVE      R3 R1        ; R3 := R1
  17 [-]: CALL      R2 2 1       ; R2(R3)
  18 [-]: GETUPVAL  R2 U2        ; R2 := U2
@@ -1967,9 +1967,9 @@
   3 [-]: GETGLOBAL R3 K1        ; R3 := 0xa508bfde
   4 [-]: MOVE      R4 R0        ; R4 := R0
   5 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
-  6 [-]: SETTABLE  R1 K0 R2     ; R1[0x9ba17154] := R2
+  6 [-]: SETTABLE  R1 K0 R2     ; R1["RADIUS"] := R2
   7 [-]: GETGLOBAL R2 K3        ; R2 := 0x5bced4c4
-  8 [-]: GETTABLE  R2 R2 K4     ; R82 := R2[0x55f27c30]
+  8 [-]: GETTABLE  R2 R2 K4     ; R2 := R2[0x55f27c30]
   9 [-]: GETUPVAL  R3 U0        ; R3 := U0
  10 [-]: GETGLOBAL R4 K5        ; R4 := 0xe8e7deb4
  11 [-]: MOVE      R5 R0        ; R5 := R0
@@ -1981,14 +1981,14 @@
  17 [-]: GETGLOBAL R3 K8        ; R3 := 0xa031f71c
  18 [-]: MOVE      R4 R0        ; R4 := R0
  19 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
- 20 [-]: SETTABLE  R1 K7 R2     ; R1[0xef23c099] := R2
+ 20 [-]: SETTABLE  R1 K7 R2     ; R1["ENERGY"] := R2
  21 [-]: GETUPVAL  R2 U0        ; R2 := U0
  22 [-]: GETGLOBAL R3 K10       ; R3 := 0x2bf4b101
  23 [-]: MOVE      R4 R0        ; R4 := R0
  24 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
- 25 [-]: SETTABLE  R1 K9 R2     ; R1[0xcbd666e1] := R2
+ 25 [-]: SETTABLE  R1 K9 R2     ; R1["COST"] := R2
  26 [-]: GETGLOBAL R2 K11       ; R2 := cjson
- 27 [-]: GETTABLE  R2 R2 K12    ; R82 := R2[0xb139d7bc]
+ 27 [-]: GETTABLE  R2 R2 K12    ; R2 := R2[0xb139d7bc]
  28 [-]: MOVE      R3 R1        ; R3 := R1
  29 [-]: TAILCALL  R2 2 0       ; R2,... := R2(R3)
  30 [-]: RETURN    R2 0         ; return R2,...

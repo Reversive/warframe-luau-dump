@@ -227,7 +227,7 @@
 170 [-]: SELF      R23 R22 K29  ; R24 := R22; R23 := R22[0x6d7bfacb]
 171 [-]: LOADBOOL  R25 0 0      ; R25 := false
 172 [-]: CALL      R23 3 2      ; R23 := R23(R24,R25)
-173 [-]: SETUPVAL  R23 U0       ; U82 := 
+173 [-]: SETUPVAL  R23 U0       ; U82 := R0
 174 [-]: GETGLOBAL R23 K5       ; R23 := 0x7b998233
 175 [-]: GETUPVAL  R24 U0       ; R24 := U0
 176 [-]: CALL      R23 2 2      ; R23 := R23(R24)
@@ -255,7 +255,7 @@
 ; Max Stack Size:  9
 
   1 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  2 [-]: GETTABLE  R1 R1 K0     ; R82 := R1[0x11e86806]
+  2 [-]: GETTABLE  R1 R1 K0     ; R1 := R1[0x11e86806]
   3 [-]: MOVE      R2 R0        ; R2 := R0
   4 [-]: NEWTABLE  R3 0 0       ; R3 := {}
   5 [-]: GETGLOBAL R4 K1        ; R4 := 0xedb2fe65
@@ -482,7 +482,7 @@
  68 [-]: LOADBOOL  R7 0 0       ; R7 := false
  69 [-]: CALL      R5 3 1       ; R5(R6,R7)
  70 [-]: GETGLOBAL R5 K25       ; R5 := _T
- 71 [-]: GETTABLE  R5 R5 K26    ; R82 := R5[0x13c5405b]
+ 71 [-]: GETTABLE  R5 R5 K26    ; R5 := R5[0x13c5405b]
  72 [-]: MOVE      R6 R2        ; R6 := R2
  73 [-]: CALL      R5 2 1       ; R5(R6)
  74 [-]: RETURN    R0 1         ; return 
@@ -680,7 +680,7 @@
  28 [-]: MOVE      R7 R2        ; R7 := R2
  29 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
  30 [-]: GETUPVAL  R4 U1        ; R4 := U1
- 31 [-]: GETTABLE  R4 R4 K11    ; R82 := R4[0x1f60d532]
+ 31 [-]: GETTABLE  R4 R4 K11    ; R4 := R4[0x1f60d532]
  32 [-]: GETGLOBAL R5 K12       ; R5 := 0x86693b80
  33 [-]: CALL      R4 2 1       ; R4(R5)
  34 [-]: GETGLOBAL R4 K13       ; R4 := 0x7b998233

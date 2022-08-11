@@ -243,7 +243,7 @@
 166 [-]: LT        0 R28 R27    ; if R28 >= R27 then PC := 177
 167 [-]: JMP       177          ; PC := 177
 168 [-]: GETGLOBAL R27 K22      ; R27 := 0x34291f5c
-169 [-]: GETTABLE  R27 R27 K41  ; R82 := R27[0xd96dcc3b]
+169 [-]: GETTABLE  R27 R27 K41  ; R27 := R27[0xd96dcc3b]
 170 [-]: MOVE      R28 R6       ; R28 := R6
 171 [-]: MOVE      R29 R26      ; R29 := R26
 172 [-]: MOVE      R30 R9       ; R30 := R9
@@ -252,7 +252,7 @@
 175 [-]: MOVE      R7 R27       ; R7 := R27
 176 [-]: JMP       185          ; PC := 185
 177 [-]: GETGLOBAL R27 K22      ; R27 := 0x34291f5c
-178 [-]: GETTABLE  R27 R27 K41  ; R82 := R27[0xd96dcc3b]
+178 [-]: GETTABLE  R27 R27 K41  ; R27 := R27[0xd96dcc3b]
 179 [-]: MOVE      R28 R6       ; R28 := R6
 180 [-]: MOVE      R29 R26      ; R29 := R26
 181 [-]: MOVE      R30 R9       ; R30 := R9
@@ -286,7 +286,7 @@
 209 [-]: LT        0 R29 R28    ; if R29 >= R28 then PC := 220
 210 [-]: JMP       220          ; PC := 220
 211 [-]: GETGLOBAL R28 K22      ; R28 := 0x34291f5c
-212 [-]: GETTABLE  R28 R28 K41  ; R82 := R28[0xd96dcc3b]
+212 [-]: GETTABLE  R28 R28 K41  ; R28 := R28[0xd96dcc3b]
 213 [-]: MOVE      R29 R6       ; R29 := R6
 214 [-]: MOVE      R30 R24      ; R30 := R24
 215 [-]: MOVE      R31 R9       ; R31 := R9
@@ -295,7 +295,7 @@
 218 [-]: MOVE      R7 R28       ; R7 := R28
 219 [-]: JMP       228          ; PC := 228
 220 [-]: GETGLOBAL R28 K22      ; R28 := 0x34291f5c
-221 [-]: GETTABLE  R28 R28 K41  ; R82 := R28[0xd96dcc3b]
+221 [-]: GETTABLE  R28 R28 K41  ; R28 := R28[0xd96dcc3b]
 222 [-]: MOVE      R29 R6       ; R29 := R6
 223 [-]: MOVE      R30 R24      ; R30 := R24
 224 [-]: MOVE      R31 R9       ; R31 := R9

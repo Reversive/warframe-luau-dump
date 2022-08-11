@@ -44,7 +44,7 @@
  18 [-]: LOADK     R9 0         ; R9 := 0.000000
  19 [-]: CALL      R6 4 0       ; R6,... := R6(R7,R8,R9)
  20 [-]: CALL      R2 0 2       ; R2 := R2(R3,...)
- 21 [-]: SETUPVAL  R2 U0        ; U82 := 
+ 21 [-]: SETUPVAL  R2 U0        ; U82 := R0
  22 [-]: GETGLOBAL R2 K1        ; R2 := 0x7b998233
  23 [-]: GETUPVAL  R3 U0        ; R3 := U0
  24 [-]: CALL      R2 2 2       ; R2 := R2(R3)

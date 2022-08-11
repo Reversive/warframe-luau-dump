@@ -41,7 +41,7 @@
  10 [-]: TEST      R3 0         ; if not R3 then PC := 16
  11 [-]: JMP       16           ; PC := 16
  12 [-]: GETUPVAL  R3 U0        ; R3 := U0
- 13 [-]: GETTABLE  R3 R3 K3     ; R82 := R3[0xbca6d20c]
+ 13 [-]: GETTABLE  R3 R3 K3     ; R3 := R3[0xbca6d20c]
  14 [-]: MOVE      R4 R2        ; R4 := R2
  15 [-]: CALL      R3 2 1       ; R3(R4)
  16 [-]: GETGLOBAL R3 K4        ; R3 := 0x89326c93
@@ -70,11 +70,11 @@
  39 [-]: LOADK     R6 0         ; R6 := 0.000000
  40 [-]: CALL      R5 2 1       ; R5(R6)
  41 [-]: JMP       34           ; PC := 34
- 42 [-]: GETTABLE  R5 R4 K12    ; R82 := R5[0x659d451f]
+ 42 [-]: GETTABLE  R5 R4 K12    ; R5 := R4[0x659d451f]
  43 [-]: GETGLOBAL R6 K13       ; R6 := 0x0032441c
  44 [-]: GETTABLE  R6 R6 K14    ; R6 := R6["UISound_ButtonSelect"]
  45 [-]: CALL      R5 2 1       ; R5(R6)
- 46 [-]: GETTABLE  R5 R4 K12    ; R82 := R5[0x659d451f]
+ 46 [-]: GETTABLE  R5 R4 K12    ; R5 := R4[0x659d451f]
  47 [-]: GETGLOBAL R6 K13       ; R6 := 0x0032441c
  48 [-]: GETTABLE  R6 R6 K15    ; R6 := R6["UISound_GridOpen"]
  49 [-]: CALL      R5 2 1       ; R5(R6)
@@ -167,7 +167,7 @@
 136 [-]: TEST      R13 1        ; if R13 then PC := 147
 137 [-]: JMP       147          ; PC := 147
 138 [-]: GETUPVAL  R13 U1       ; R13 := U1
-139 [-]: GETTABLE  R13 R13 K37  ; R82 := R13[0xf22cfc77]
+139 [-]: GETTABLE  R13 R13 K37  ; R13 := R13[0xf22cfc77]
 140 [-]: GETGLOBAL R14 K35      ; R14 := _T
 141 [-]: GETTABLE  R14 R14 K36  ; R14 := R14["gHuntingTransmissionSet"]
 142 [-]: GETGLOBAL R15 K38      ; R15 := 0x0469f296

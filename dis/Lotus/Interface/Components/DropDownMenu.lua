@@ -41,7 +41,7 @@
  13 [-]: EQ        0 R4 K5      ; if R4 ~= nil then PC := 16
  14 [-]: JMP       16           ; PC := 16
  15 [-]: LOADK     R4 K6        ; R4 := "<MENU_GENERIC2>"
- 16 [-]: GETTABLE  R12 R11 K7   ; R82 := R12[0x9383bc56]
+ 16 [-]: GETTABLE  R12 R11 K7   ; R12 := R11[0x9383bc56]
  17 [-]: MOVE      R13 R0       ; R13 := R0
  18 [-]: MOVE      R14 R1       ; R14 := R1
  19 [-]: LOADK     R15 K8       ; R15 := ".Buttons.Button"
@@ -51,7 +51,7 @@
  23 [-]: MOVE      R13 R1       ; R13 := R1
  24 [-]: LOADK     R14 K11      ; R14 := ".Backer"
  25 [-]: CONCAT    R13 R13 R14  ; R13 := R13 .. R14
- 26 [-]: SETTABLE  R12 K10 R13  ; R12[0x0000000a] := R13
+ 26 [-]: SETTABLE  R12 K10 R13  ; R12["mHitboxClipName"] := R13
  27 [-]: SELF      R13 R0 K13   ; R14 := R0; R13 := R0[0xe4162eed]
  28 [-]: LOADK     R15 K14      ; R15 := "SupportsThemes"
  29 [-]: LOADK     R16 K15      ; R16 := ""
@@ -63,7 +63,7 @@
  35 [-]: SETTABLE  R12 K22 K5   ; R12["mSelectedElement"] := nil
  36 [-]: SETTABLE  R12 K23 K5   ; R12["mCustomizeButtonCallback"] := nil
  37 [-]: SETTABLE  R12 K24 K25  ; R12["mSelectedIconOnly"] := true
- 38 [-]: GETTABLE  R13 R10 K26  ; R82 := R13[0xae6791ba]
+ 38 [-]: GETTABLE  R13 R10 K26  ; R13 := R10[0xae6791ba]
  39 [-]: MOVE      R14 R0       ; R14 := R0
  40 [-]: MOVE      R15 R1       ; R15 := R1
  41 [-]: LOADK     R16 K27      ; R16 := ".MainButton"
@@ -283,13 +283,13 @@
 ; Max Stack Size:  11
 
   1 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  2 [-]: GETTABLE  R1 R1 K0     ; R82 := R1[0x5d10207d]
+  2 [-]: GETTABLE  R1 R1 K0     ; R1 := R1[0x5d10207d]
   3 [-]: LOADK     R2 2         ; R2 := 2.000000
   4 [-]: LOADBOOL  R3 1 0       ; R3 := true
   5 [-]: GETTABLE  R4 R0 K2     ; R4 := R0["mApplyThemes"]
   6 [-]: CALL      R1 4 2       ; R1 := R1(R2,R3,R4)
   7 [-]: GETUPVAL  R2 U1        ; R2 := U1
-  8 [-]: GETTABLE  R2 R2 K3     ; R82 := R2[0x8bcd12b6]
+  8 [-]: GETTABLE  R2 R2 K3     ; R2 := R2[0x8bcd12b6]
   9 [-]: MOVE      R3 R1        ; R3 := R1
  10 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  11 [-]: GETTABLE  R3 R0 K4     ; R3 := R0["mMovie"]
@@ -385,7 +385,7 @@
 
   1 [-]: SETTABLE  R0 K0 R1     ; R0["mExpanded"] := R1
   2 [-]: GETTABLE  R3 R0 K1     ; R3 := R0["UTIL"]
-  3 [-]: GETTABLE  R3 R3 K2     ; R82 := R3[0x06d055f9]
+  3 [-]: GETTABLE  R3 R3 K2     ; R3 := R3[0x06d055f9]
   4 [-]: MOVE      R4 R1        ; R4 := R1
   5 [-]: GETTABLE  R5 R0 K3     ; R5 := R0["OnExpandCallback"]
   6 [-]: GETTABLE  R6 R0 K4     ; R6 := R0["OnCollapseCallback"]
@@ -426,7 +426,7 @@
  41 [-]: LOADK     R7 K15       ; R7 := "MainButton.Icon"
  42 [-]: LOADK     R8 14        ; R8 := 14.000000
  43 [-]: GETTABLE  R9 R0 K1     ; R9 := R0["UTIL"]
- 44 [-]: GETTABLE  R9 R9 K2     ; R82 := R9[0x06d055f9]
+ 44 [-]: GETTABLE  R9 R9 K2     ; R9 := R9[0x06d055f9]
  45 [-]: GETTABLE  R10 R0 K16   ; R10 := R0["mMainButton"]
  46 [-]: GETTABLE  R10 R10 K17  ; R10 := R10["mFlipExpandedIcon"]
  47 [-]: TEST      R10 0        ; if not R10 then PC := 50
@@ -535,7 +535,7 @@
  12 [-]: JMP       14           ; PC := 14
  13 [-]: RETURN    R0 1         ; return 
  14 [-]: GETUPVAL  R3 U0        ; R3 := U0
- 15 [-]: GETTABLE  R3 R3 K4     ; R82 := R3[0xae6791ba]
+ 15 [-]: GETTABLE  R3 R3 K4     ; R3 := R3[0xae6791ba]
  16 [-]: GETTABLE  R4 R0 K5     ; R4 := R0["mMovie"]
  17 [-]: GETTABLE  R5 R1 K2     ; R5 := R1["mClipName"]
  18 [-]: GETTABLE  R6 R1 K6     ; R6 := R1["Name"]
@@ -566,7 +566,7 @@
  43 [-]: EQ        1 R4 K3      ; if R4 == nil then PC := 49
  44 [-]: JMP       49           ; PC := 49
  45 [-]: GETUPVAL  R4 U1        ; R4 := U1
- 46 [-]: GETTABLE  R4 R4 K24    ; R82 := R4[0xee12d363]
+ 46 [-]: GETTABLE  R4 R4 K24    ; R4 := R4[0xee12d363]
  47 [-]: MOVE      R5 R1        ; R5 := R1
  48 [-]: CALL      R4 2 1       ; R4(R5)
  49 [-]: SELF      R4 R3 K25    ; R5 := R3; R4 := R3[0x0b6eac57]

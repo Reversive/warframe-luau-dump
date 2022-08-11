@@ -87,13 +87,13 @@
   7 [-]: LOADNIL   R3 R3        ; R3 := nil
   8 [-]: RETURN    R3 2         ; return R3
   9 [-]: GETUPVAL  R3 U1        ; R3 := U1
- 10 [-]: GETTABLE  R3 R3 K1     ; R82 := R3[0xbdd1058d]
+ 10 [-]: GETTABLE  R3 R3 K1     ; R3 := R3[0xbdd1058d]
  11 [-]: MOVE      R4 R0        ; R4 := R0
  12 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  13 [-]: EQ        0 R3 K2      ; if R3 ~= nil then PC := 24
  14 [-]: JMP       24           ; PC := 24
  15 [-]: GETUPVAL  R4 U1        ; R4 := U1
- 16 [-]: GETTABLE  R4 R4 K3     ; R82 := R4[0x15d13e3d]
+ 16 [-]: GETTABLE  R4 R4 K3     ; R4 := R4[0x15d13e3d]
  17 [-]: MOVE      R5 R0        ; R5 := R0
  18 [-]: NEWTABLE  R6 0 1       ; R6 := {}
  19 [-]: NEWTABLE  R7 0 0       ; R7 := {}

@@ -70,7 +70,7 @@
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x89326c93
   2 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0x78298275]
   3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: SETUPVAL  R0 U0        ; U82 := 
+  4 [-]: SETUPVAL  R0 U0        ; U82 := R0
   5 [-]: GETGLOBAL R0 K2        ; R0 := 0x7b998233
   6 [-]: GETUPVAL  R1 U0        ; R1 := U0
   7 [-]: CALL      R0 2 2       ; R0 := R0(R1)
@@ -84,7 +84,7 @@
  15 [-]: GETGLOBAL R0 K0        ; R0 := 0x89326c93
  16 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0x78298275]
  17 [-]: CALL      R0 2 2       ; R0 := R0(R1)
- 18 [-]: SETUPVAL  R0 U0        ; U82 := 
+ 18 [-]: SETUPVAL  R0 U0        ; U82 := R0
  19 [-]: GETGLOBAL R0 K4        ; R0 := 0xcbd666e1
  20 [-]: LOADK     R1 0         ; R1 := 0.000000
  21 [-]: CALL      R0 2 1       ; R0(R1)
@@ -296,7 +296,7 @@
  18 [-]: CALL      R1 2 1       ; R1(R2)
  19 [-]: JMP       4            ; PC := 4
  20 [-]: GETUPVAL  R1 U0        ; R1 := U0
- 21 [-]: GETTABLE  R1 R1 K7     ; R82 := R1[0x18bf5a86]
+ 21 [-]: GETTABLE  R1 R1 K7     ; R1 := R1[0x18bf5a86]
  22 [-]: LOADBOOL  R2 0 0       ; R2 := false
  23 [-]: CALL      R1 2 1       ; R1(R2)
  24 [-]: GETGLOBAL R1 K8        ; R1 := _T
@@ -318,11 +318,11 @@
  40 [-]: CALL      R1 2 2       ; R1 := R1(R2)
  41 [-]: SELF      R1 R1 K19    ; R2 := R1; R1 := R1[0x66905cb0]
  42 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 43 [-]: SETUPVAL  R1 U2        ; U82 := 
+ 43 [-]: SETUPVAL  R1 U2        ; U82 := R2
  44 [-]: GETGLOBAL R1 K3        ; R1 := 0xbe190284
- 45 [-]: SETUPVAL  R1 U3        ; U82 := 
+ 45 [-]: SETUPVAL  R1 U3        ; U82 := R3
  46 [-]: GETUPVAL  R1 U4        ; R1 := U4
- 47 [-]: GETTABLE  R1 R1 K20    ; R82 := R1[0x59f914cd]
+ 47 [-]: GETTABLE  R1 R1 K20    ; R1 := R1[0x59f914cd]
  48 [-]: GETGLOBAL R2 K21       ; R2 := 0xe91d7466
  49 [-]: CALL      R1 2 1       ; R1(R2)
  50 [-]: GETUPVAL  R1 U2        ; R1 := U2
@@ -334,7 +334,7 @@
  56 [-]: GETUPVAL  R3 U5        ; R3 := U5
  57 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
  58 [-]: GETUPVAL  R2 U6        ; R2 := U6
- 59 [-]: GETTABLE  R2 R2 K24    ; R82 := R2[0x28ee34e8]
+ 59 [-]: GETTABLE  R2 R2 K24    ; R2 := R2[0x28ee34e8]
  60 [-]: GETGLOBAL R3 K0        ; R3 := 0x0469f296
  61 [-]: LOADK     R4 K25       ; R4 := "Dead-End"
  62 [-]: CALL      R3 2 2       ; R3 := R3(R4)
@@ -391,7 +391,7 @@
 113 [-]: CALL      R11 2 2      ; R11 := R11(R12)
 114 [-]: GETGLOBAL R12 K52      ; R12 := ZERO_ROTATION
 115 [-]: CALL      R8 5 2       ; R8 := R8(R9,R10,R11,R12)
-116 [-]: SETUPVAL  R8 U7        ; U82 := 
+116 [-]: SETUPVAL  R8 U7        ; U82 := R7
 117 [-]: GETUPVAL  R8 U2        ; R8 := U2
 118 [-]: SELF      R8 R8 K53    ; R9 := R8; R8 := R8[0xe2871589]
 119 [-]: MOVE      R10 R7       ; R10 := R7
@@ -421,11 +421,11 @@
 143 [-]: TFORLOOP  R10 2        ; R13,R14 :=  R10(R11,R12); if R13 ~= nil then begin PC = 140; R12 := R13 end
 144 [-]: JMP       140          ; PC := 140
 145 [-]: GETUPVAL  R15 U8       ; R15 := U8
-146 [-]: GETTABLE  R15 R15 K59  ; R82 := R15[0xa1df01d6]
+146 [-]: GETTABLE  R15 R15 K59  ; R15 := R15[0xa1df01d6]
 147 [-]: LOADK     R16 K60      ; R16 := "/Lotus/Language/DeadlockProtocol/ProteaQuestM3SearchArea"
 148 [-]: CALL      R15 2 1      ; R15(R16)
 149 [-]: GETUPVAL  R15 U4       ; R15 := U4
-150 [-]: GETTABLE  R15 R15 K61  ; R82 := R15[0x9742b85b]
+150 [-]: GETTABLE  R15 R15 K61  ; R15 := R15[0x9742b85b]
 151 [-]: GETGLOBAL R16 K8       ; R16 := _T
 152 [-]: GETTABLE  R16 R16 K62  ; R16 := R16["MissionTransmissionSet"]
 153 [-]: GETGLOBAL R17 K0       ; R17 := 0x0469f296
@@ -444,17 +444,17 @@
 166 [-]: SELF      R15 R15 K66  ; R16 := R15; R15 := R15[0x9435eb6d]
 167 [-]: CALL      R15 2 2      ; R15 := R15(R16)
 168 [-]: GETUPVAL  R16 U0       ; R16 := U0
-169 [-]: GETTABLE  R16 R16 K67  ; R82 := R16[0xba252911]
+169 [-]: GETTABLE  R16 R16 K67  ; R16 := R16[0xba252911]
 170 [-]: MOVE      R17 R15      ; R17 := R15
 171 [-]: CALL      R16 2 1      ; R16(R17)
 172 [-]: GETUPVAL  R16 U7       ; R16 := U7
 173 [-]: SELF      R16 R16 K68  ; R17 := R16; R16 := R16[0xa2880940]
 174 [-]: CALL      R16 2 1      ; R16(R17)
 175 [-]: GETUPVAL  R16 U8       ; R16 := U8
-176 [-]: GETTABLE  R16 R16 K69  ; R82 := R16[0xdc3b2033]
+176 [-]: GETTABLE  R16 R16 K69  ; R16 := R16[0xdc3b2033]
 177 [-]: CALL      R16 1 1      ; R16()
 178 [-]: GETUPVAL  R16 U4       ; R16 := U4
-179 [-]: GETTABLE  R16 R16 K70  ; R82 := R16[0x374aec88]
+179 [-]: GETTABLE  R16 R16 K70  ; R16 := R16[0x374aec88]
 180 [-]: GETGLOBAL R17 K8       ; R17 := _T
 181 [-]: GETTABLE  R17 R17 K62  ; R17 := R17["MissionTransmissionSet"]
 182 [-]: GETGLOBAL R18 K0       ; R18 := 0x0469f296
@@ -464,7 +464,7 @@
 186 [-]: GETGLOBAL R20 K73      ; R20 := 0x0769b855
 187 [-]: CALL      R16 5 1      ; R16(R17,R18,R19,R20)
 188 [-]: GETUPVAL  R16 U4       ; R16 := U4
-189 [-]: GETTABLE  R16 R16 K74  ; R82 := R16[0xba294cc0]
+189 [-]: GETTABLE  R16 R16 K74  ; R16 := R16[0xba294cc0]
 190 [-]: CALL      R16 1 1      ; R16()
 191 [-]: GETGLOBAL R16 K6       ; R16 := 0xcbd666e1
 192 [-]: LOADK     R17 1        ; R17 := 1.000000
@@ -474,7 +474,7 @@
 196 [-]: LOADBOOL  R18 1 0      ; R18 := true
 197 [-]: CALL      R16 3 1      ; R16(R17,R18)
 198 [-]: GETUPVAL  R16 U4       ; R16 := U4
-199 [-]: GETTABLE  R16 R16 K61  ; R82 := R16[0x9742b85b]
+199 [-]: GETTABLE  R16 R16 K61  ; R16 := R16[0x9742b85b]
 200 [-]: GETGLOBAL R17 K8       ; R17 := _T
 201 [-]: GETTABLE  R17 R17 K62  ; R17 := R17["MissionTransmissionSet"]
 202 [-]: GETGLOBAL R18 K0       ; R18 := 0x0469f296
@@ -482,14 +482,14 @@
 204 [-]: CALL      R18 2 0      ; R18,... := R18(R19)
 205 [-]: CALL      R16 0 1      ; R16(R17,...)
 206 [-]: GETUPVAL  R16 U4       ; R16 := U4
-207 [-]: GETTABLE  R16 R16 K76  ; R82 := R16[0xfc87a231]
+207 [-]: GETTABLE  R16 R16 K76  ; R16 := R16[0xfc87a231]
 208 [-]: CALL      R16 1 1      ; R16()
 209 [-]: GETUPVAL  R16 U0       ; R16 := U0
-210 [-]: GETTABLE  R16 R16 K77  ; R82 := R16[0x8f8f79eb]
+210 [-]: GETTABLE  R16 R16 K77  ; R16 := R16[0x8f8f79eb]
 211 [-]: MOVE      R17 R6       ; R17 := R6
 212 [-]: CALL      R16 2 1      ; R16(R17)
 213 [-]: GETUPVAL  R16 U4       ; R16 := U4
-214 [-]: GETTABLE  R16 R16 K70  ; R82 := R16[0x374aec88]
+214 [-]: GETTABLE  R16 R16 K70  ; R16 := R16[0x374aec88]
 215 [-]: GETGLOBAL R17 K8       ; R17 := _T
 216 [-]: GETTABLE  R17 R17 K62  ; R17 := R17["MissionTransmissionSet"]
 217 [-]: GETGLOBAL R18 K0       ; R18 := 0x0469f296
@@ -511,7 +511,7 @@
 233 [-]: MOVE      R19 R16      ; R19 := R16
 234 [-]: CALL      R17 3 1      ; R17(R18,R19)
 235 [-]: GETUPVAL  R17 U0       ; R17 := U0
-236 [-]: GETTABLE  R17 R17 K81  ; R82 := R17[0xa6eb017f]
+236 [-]: GETTABLE  R17 R17 K81  ; R17 := R17[0xa6eb017f]
 237 [-]: MOVE      R18 R6       ; R18 := R6
 238 [-]: CALL      R17 2 1      ; R17(R18)
 239 [-]: GETGLOBAL R17 K17      ; R17 := 0x89326c93
@@ -594,7 +594,7 @@
 316 [-]: GETGLOBAL R23 K17      ; R23 := 0x89326c93
 317 [-]: SELF      R23 R23 K93  ; R24 := R23; R23 := R23[0x78298275]
 318 [-]: CALL      R23 2 2      ; R23 := R23(R24)
-319 [-]: SETUPVAL  R23 U9       ; U82 := 
+319 [-]: SETUPVAL  R23 U9       ; U82 := R9
 320 [-]: GETGLOBAL R23 K2       ; R23 := 0x7b998233
 321 [-]: GETUPVAL  R24 U9       ; R24 := U9
 322 [-]: CALL      R23 2 2      ; R23 := R23(R24)
@@ -605,13 +605,13 @@
 327 [-]: GETGLOBAL R25 K95      ; R25 := 0x02811957
 328 [-]: CALL      R23 3 1      ; R23(R24,R25)
 329 [-]: GETUPVAL  R23 U8       ; R23 := U8
-330 [-]: GETTABLE  R23 R23 K69  ; R82 := R23[0xdc3b2033]
+330 [-]: GETTABLE  R23 R23 K69  ; R23 := R23[0xdc3b2033]
 331 [-]: CALL      R23 1 1      ; R23()
 332 [-]: GETGLOBAL R23 K6       ; R23 := 0xcbd666e1
 333 [-]: LOADK     R24 5        ; R24 := 5.000000
 334 [-]: CALL      R23 2 1      ; R23(R24)
 335 [-]: GETUPVAL  R23 U4       ; R23 := U4
-336 [-]: GETTABLE  R23 R23 K61  ; R82 := R23[0x9742b85b]
+336 [-]: GETTABLE  R23 R23 K61  ; R23 := R23[0x9742b85b]
 337 [-]: GETGLOBAL R24 K8       ; R24 := _T
 338 [-]: GETTABLE  R24 R24 K62  ; R24 := R24["MissionTransmissionSet"]
 339 [-]: GETGLOBAL R25 K0       ; R25 := 0x0469f296
@@ -619,7 +619,7 @@
 341 [-]: CALL      R25 2 0      ; R25,... := R25(R26)
 342 [-]: CALL      R23 0 1      ; R23(R24,...)
 343 [-]: GETUPVAL  R23 U4       ; R23 := U4
-344 [-]: GETTABLE  R23 R23 K76  ; R82 := R23[0xfc87a231]
+344 [-]: GETTABLE  R23 R23 K76  ; R23 := R23[0xfc87a231]
 345 [-]: CALL      R23 1 1      ; R23()
 346 [-]: GETGLOBAL R23 K17      ; R23 := 0x89326c93
 347 [-]: SELF      R23 R23 K50  ; R24 := R23; R23 := R23[0x05909209]
@@ -628,7 +628,7 @@
 350 [-]: CALL      R26 2 2      ; R26 := R26(R27)
 351 [-]: GETGLOBAL R27 K52      ; R27 := ZERO_ROTATION
 352 [-]: CALL      R23 5 2      ; R23 := R23(R24,R25,R26,R27)
-353 [-]: SETUPVAL  R23 U7       ; U82 := 
+353 [-]: SETUPVAL  R23 U7       ; U82 := R7
 354 [-]: SELF      R23 R4 K55   ; R24 := R4; R23 := R4[0x8eb2112d]
 355 [-]: LOADK     R25 K97      ; R25 := "Deactivate"
 356 [-]: CALL      R23 3 1      ; R23(R24,R25)
@@ -645,7 +645,7 @@
 367 [-]: GETGLOBAL R25 K95      ; R25 := 0x02811957
 368 [-]: CALL      R23 3 1      ; R23(R24,R25)
 369 [-]: GETUPVAL  R23 U0       ; R23 := U0
-370 [-]: GETTABLE  R23 R23 K99  ; R82 := R23[0xc367cf9e]
+370 [-]: GETTABLE  R23 R23 K99  ; R23 := R23[0xc367cf9e]
 371 [-]: MOVE      R24 R16      ; R24 := R16
 372 [-]: CALL      R23 2 1      ; R23(R24)
 373 [-]: GETUPVAL  R23 U7       ; R23 := U7
@@ -685,7 +685,7 @@
 407 [-]: LOADBOOL  R27 1 0      ; R27 := true
 408 [-]: CALL      R24 4 1      ; R24(R25,R26,R27)
 409 [-]: GETUPVAL  R24 U4       ; R24 := U4
-410 [-]: GETTABLE  R24 R24 K61  ; R82 := R24[0x9742b85b]
+410 [-]: GETTABLE  R24 R24 K61  ; R24 := R24[0x9742b85b]
 411 [-]: GETGLOBAL R25 K8       ; R25 := _T
 412 [-]: GETTABLE  R25 R25 K62  ; R25 := R25["MissionTransmissionSet"]
 413 [-]: GETGLOBAL R26 K0       ; R26 := 0x0469f296
@@ -693,12 +693,12 @@
 415 [-]: CALL      R26 2 0      ; R26,... := R26(R27)
 416 [-]: CALL      R24 0 1      ; R24(R25,...)
 417 [-]: GETUPVAL  R24 U4       ; R24 := U4
-418 [-]: GETTABLE  R24 R24 K76  ; R82 := R24[0xfc87a231]
+418 [-]: GETTABLE  R24 R24 K76  ; R24 := R24[0xfc87a231]
 419 [-]: CALL      R24 1 1      ; R24()
 420 [-]: GETGLOBAL R24 K8       ; R24 := _T
 421 [-]: SETTABLE  R24 K9 K12   ; R24["ProteaQuestReady"] := true
 422 [-]: GETUPVAL  R24 U4       ; R24 := U4
-423 [-]: GETTABLE  R24 R24 K61  ; R82 := R24[0x9742b85b]
+423 [-]: GETTABLE  R24 R24 K61  ; R24 := R24[0x9742b85b]
 424 [-]: GETGLOBAL R25 K8       ; R25 := _T
 425 [-]: GETTABLE  R25 R25 K62  ; R25 := R25["MissionTransmissionSet"]
 426 [-]: GETGLOBAL R26 K0       ; R26 := 0x0469f296
@@ -706,10 +706,10 @@
 428 [-]: CALL      R26 2 0      ; R26,... := R26(R27)
 429 [-]: CALL      R24 0 1      ; R24(R25,...)
 430 [-]: GETUPVAL  R24 U4       ; R24 := U4
-431 [-]: GETTABLE  R24 R24 K76  ; R82 := R24[0xfc87a231]
+431 [-]: GETTABLE  R24 R24 K76  ; R24 := R24[0xfc87a231]
 432 [-]: CALL      R24 1 1      ; R24()
 433 [-]: GETUPVAL  R24 U4       ; R24 := U4
-434 [-]: GETTABLE  R24 R24 K61  ; R82 := R24[0x9742b85b]
+434 [-]: GETTABLE  R24 R24 K61  ; R24 := R24[0x9742b85b]
 435 [-]: GETGLOBAL R25 K8       ; R25 := _T
 436 [-]: GETTABLE  R25 R25 K62  ; R25 := R25["MissionTransmissionSet"]
 437 [-]: GETGLOBAL R26 K0       ; R26 := 0x0469f296
@@ -719,14 +719,14 @@
 441 [-]: GETGLOBAL R24 K8       ; R24 := _T
 442 [-]: SETTABLE  R24 K13 K12  ; R24["ProteaQuestLowerSpawns"] := true
 443 [-]: GETUPVAL  R24 U4       ; R24 := U4
-444 [-]: GETTABLE  R24 R24 K76  ; R82 := R24[0xfc87a231]
+444 [-]: GETTABLE  R24 R24 K76  ; R24 := R24[0xfc87a231]
 445 [-]: CALL      R24 1 1      ; R24()
 446 [-]: GETGLOBAL R24 K8       ; R24 := _T
 447 [-]: SETTABLE  R24 K13 K12  ; R24["ProteaQuestLowerSpawns"] := true
 448 [-]: GETGLOBAL R24 K8       ; R24 := _T
 449 [-]: SETTABLE  R24 K16 K12  ; R24["M3ExitPurgatory"] := true
 450 [-]: GETUPVAL  R24 U4       ; R24 := U4
-451 [-]: GETTABLE  R24 R24 K61  ; R82 := R24[0x9742b85b]
+451 [-]: GETTABLE  R24 R24 K61  ; R24 := R24[0x9742b85b]
 452 [-]: GETGLOBAL R25 K8       ; R25 := _T
 453 [-]: GETTABLE  R25 R25 K62  ; R25 := R25["MissionTransmissionSet"]
 454 [-]: GETGLOBAL R26 K0       ; R26 := 0x0469f296
@@ -734,10 +734,10 @@
 456 [-]: CALL      R26 2 0      ; R26,... := R26(R27)
 457 [-]: CALL      R24 0 1      ; R24(R25,...)
 458 [-]: GETUPVAL  R24 U4       ; R24 := U4
-459 [-]: GETTABLE  R24 R24 K76  ; R82 := R24[0xfc87a231]
+459 [-]: GETTABLE  R24 R24 K76  ; R24 := R24[0xfc87a231]
 460 [-]: CALL      R24 1 1      ; R24()
 461 [-]: GETUPVAL  R24 U4       ; R24 := U4
-462 [-]: GETTABLE  R24 R24 K61  ; R82 := R24[0x9742b85b]
+462 [-]: GETTABLE  R24 R24 K61  ; R24 := R24[0x9742b85b]
 463 [-]: GETGLOBAL R25 K8       ; R25 := _T
 464 [-]: GETTABLE  R25 R25 K62  ; R25 := R25["MissionTransmissionSet"]
 465 [-]: GETGLOBAL R26 K0       ; R26 := 0x0469f296
@@ -745,7 +745,7 @@
 467 [-]: CALL      R26 2 0      ; R26,... := R26(R27)
 468 [-]: CALL      R24 0 1      ; R24(R25,...)
 469 [-]: GETUPVAL  R24 U4       ; R24 := U4
-470 [-]: GETTABLE  R24 R24 K76  ; R82 := R24[0xfc87a231]
+470 [-]: GETTABLE  R24 R24 K76  ; R24 := R24[0xfc87a231]
 471 [-]: CALL      R24 1 1      ; R24()
 472 [-]: GETGLOBAL R24 K8       ; R24 := _T
 473 [-]: SETTABLE  R24 K9 K10   ; R24["ProteaQuestReady"] := false
@@ -775,7 +775,7 @@
 497 [-]: LOADBOOL  R27 0 0      ; R27 := false
 498 [-]: CALL      R25 3 1      ; R25(R26,R27)
 499 [-]: GETUPVAL  R25 U6       ; R25 := U6
-500 [-]: GETTABLE  R25 R25 K112 ; R82 := R25[0xccbae15c]
+500 [-]: GETTABLE  R25 R25 K112 ; R25 := R25[0xccbae15c]
 501 [-]: LOADBOOL  R26 1 0      ; R26 := true
 502 [-]: CALL      R25 2 1      ; R25(R26)
 503 [-]: GETGLOBAL R25 K6       ; R25 := 0xcbd666e1
@@ -784,7 +784,7 @@
 506 [-]: GETGLOBAL R25 K8       ; R25 := _T
 507 [-]: SETTABLE  R25 K14 K12  ; R25["QuestPurgatoryComplete"] := true
 508 [-]: GETUPVAL  R25 U4       ; R25 := U4
-509 [-]: GETTABLE  R25 R25 K61  ; R82 := R25[0x9742b85b]
+509 [-]: GETTABLE  R25 R25 K61  ; R25 := R25[0x9742b85b]
 510 [-]: GETGLOBAL R26 K8       ; R26 := _T
 511 [-]: GETTABLE  R26 R26 K62  ; R26 := R26["MissionTransmissionSet"]
 512 [-]: GETGLOBAL R27 K0       ; R27 := 0x0469f296
@@ -792,10 +792,10 @@
 514 [-]: CALL      R27 2 0      ; R27,... := R27(R28)
 515 [-]: CALL      R25 0 1      ; R25(R26,...)
 516 [-]: GETUPVAL  R25 U4       ; R25 := U4
-517 [-]: GETTABLE  R25 R25 K76  ; R82 := R25[0xfc87a231]
+517 [-]: GETTABLE  R25 R25 K76  ; R25 := R25[0xfc87a231]
 518 [-]: CALL      R25 1 1      ; R25()
 519 [-]: GETUPVAL  R25 U6       ; R25 := U6
-520 [-]: GETTABLE  R25 R25 K112 ; R82 := R25[0xccbae15c]
+520 [-]: GETTABLE  R25 R25 K112 ; R25 := R25[0xccbae15c]
 521 [-]: LOADBOOL  R26 0 0      ; R26 := false
 522 [-]: CALL      R25 2 1      ; R25(R26)
 523 [-]: GETGLOBAL R25 K8       ; R25 := _T
@@ -815,14 +815,14 @@
 537 [-]: LOADK     R27 90       ; R27 := 90.000000
 538 [-]: CALL      R25 3 1      ; R25(R26,R27)
 539 [-]: GETUPVAL  R25 U6       ; R25 := U6
-540 [-]: GETTABLE  R25 R25 K116 ; R82 := R25[0x7e1c98b2]
+540 [-]: GETTABLE  R25 R25 K116 ; R25 := R25[0x7e1c98b2]
 541 [-]: CALL      R25 1 2      ; R25 := R25()
 542 [-]: GETUPVAL  R26 U2       ; R26 := U2
 543 [-]: SELF      R26 R26 K53  ; R27 := R26; R26 := R26[0xe2871589]
 544 [-]: MOVE      R28 R25      ; R28 := R25
 545 [-]: CALL      R26 3 1      ; R26(R27,R28)
 546 [-]: GETUPVAL  R26 U4       ; R26 := U4
-547 [-]: GETTABLE  R26 R26 K61  ; R82 := R26[0x9742b85b]
+547 [-]: GETTABLE  R26 R26 K61  ; R26 := R26[0x9742b85b]
 548 [-]: GETGLOBAL R27 K8       ; R27 := _T
 549 [-]: GETTABLE  R27 R27 K62  ; R27 := R27["MissionTransmissionSet"]
 550 [-]: GETGLOBAL R28 K0       ; R28 := 0x0469f296
@@ -830,13 +830,13 @@
 552 [-]: CALL      R28 2 0      ; R28,... := R28(R29)
 553 [-]: CALL      R26 0 1      ; R26(R27,...)
 554 [-]: GETUPVAL  R26 U4       ; R26 := U4
-555 [-]: GETTABLE  R26 R26 K76  ; R82 := R26[0xfc87a231]
+555 [-]: GETTABLE  R26 R26 K76  ; R26 := R26[0xfc87a231]
 556 [-]: CALL      R26 1 1      ; R26()
 557 [-]: GETUPVAL  R26 U6       ; R26 := U6
-558 [-]: GETTABLE  R26 R26 K118 ; R82 := R26[0xcc85ce3a]
+558 [-]: GETTABLE  R26 R26 K118 ; R26 := R26[0xcc85ce3a]
 559 [-]: CALL      R26 1 1      ; R26()
 560 [-]: GETUPVAL  R26 U4       ; R26 := U4
-561 [-]: GETTABLE  R26 R26 K70  ; R82 := R26[0x374aec88]
+561 [-]: GETTABLE  R26 R26 K70  ; R26 := R26[0x374aec88]
 562 [-]: GETGLOBAL R27 K8       ; R27 := _T
 563 [-]: GETTABLE  R27 R27 K62  ; R27 := R27["MissionTransmissionSet"]
 564 [-]: GETGLOBAL R28 K0       ; R28 := 0x0469f296
@@ -846,10 +846,10 @@
 568 [-]: GETGLOBAL R30 K73      ; R30 := 0x0769b855
 569 [-]: CALL      R26 5 1      ; R26(R27,R28,R29,R30)
 570 [-]: GETUPVAL  R26 U4       ; R26 := U4
-571 [-]: GETTABLE  R26 R26 K74  ; R82 := R26[0xba294cc0]
+571 [-]: GETTABLE  R26 R26 K74  ; R26 := R26[0xba294cc0]
 572 [-]: CALL      R26 1 1      ; R26()
 573 [-]: GETUPVAL  R26 U4       ; R26 := U4
-574 [-]: GETTABLE  R26 R26 K70  ; R82 := R26[0x374aec88]
+574 [-]: GETTABLE  R26 R26 K70  ; R26 := R26[0x374aec88]
 575 [-]: GETGLOBAL R27 K8       ; R27 := _T
 576 [-]: GETTABLE  R27 R27 K62  ; R27 := R27["MissionTransmissionSet"]
 577 [-]: GETGLOBAL R28 K0       ; R28 := 0x0469f296

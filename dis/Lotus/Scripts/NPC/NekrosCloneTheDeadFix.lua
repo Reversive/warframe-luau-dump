@@ -263,7 +263,7 @@
  42 [-]: TEST      R3 1         ; if R3 then PC := 70
  43 [-]: JMP       70           ; PC := 70
  44 [-]: GETUPVAL  R3 U1        ; R3 := U1
- 45 [-]: GETTABLE  R3 R3 K7     ; R82 := R3[0x70f835f7]
+ 45 [-]: GETTABLE  R3 R3 K7     ; R3 := R3[0x70f835f7]
  46 [-]: MOVE      R4 R1        ; R4 := R1
  47 [-]: LOADBOOL  R5 0 0       ; R5 := false
  48 [-]: CALL      R3 3 1       ; R3(R4,R5)
@@ -277,7 +277,7 @@
  56 [-]: MOVE      R9 R0        ; R9 := R0
  57 [-]: CALL      R3 7 1       ; R3(R4,R5,R6,R7,R8,R9)
  58 [-]: GETGLOBAL R3 K13       ; R3 := 0x33bdd652
- 59 [-]: GETTABLE  R3 R3 K14    ; R82 := R3[0x23d5322f]
+ 59 [-]: GETTABLE  R3 R3 K14    ; R3 := R3[0x23d5322f]
  60 [-]: GETGLOBAL R4 K15       ; R4 := _T
  61 [-]: GETTABLE  R4 R4 K16    ; R4 := R4["cloneTheDeadAbility"]
  62 [-]: SELF      R5 R2 K17    ; R6 := R2; R5 := R2[0x388577d5]

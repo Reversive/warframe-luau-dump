@@ -899,7 +899,7 @@
  33 [-]: SELF      R4 R2 K6     ; R5 := R2; R4 := R2[0x388577d5]
  34 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  35 [-]: GETGLOBAL R5 K8        ; R5 := 0x5bced4c4
- 36 [-]: GETTABLE  R5 R5 K9     ; R82 := R5[0xac1b386a]
+ 36 [-]: GETTABLE  R5 R5 K9     ; R5 := R5[0xac1b386a]
  37 [-]: GETGLOBAL R6 K10       ; R6 := 0x767adcac
  38 [-]: GETGLOBAL R7 K3        ; R7 := _T
  39 [-]: GETGLOBAL R8 K4        ; R8 := 0x831ae816
@@ -1066,7 +1066,7 @@
 108 [-]: LT        0 R12 K13    ; if R12 >= 0.000000 then PC := 136
 109 [-]: JMP       136          ; PC := 136
 110 [-]: GETGLOBAL R12 K24      ; R12 := 0x5bced4c4
-111 [-]: GETTABLE  R12 R12 K25  ; R82 := R12[0xac1b386a]
+111 [-]: GETTABLE  R12 R12 K25  ; R12 := R12[0xac1b386a]
 112 [-]: GETTABLE  R13 R7 K17   ; R13 := R7["x"]
 113 [-]: GETGLOBAL R14 K26      ; R14 := 0xab6459d1
 114 [-]: GETTABLE  R14 R14 K17  ; R14 := R14["x"]
@@ -1074,7 +1074,7 @@
 116 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
 117 [-]: SETTABLE  R9 K17 R12   ; R9["x"] := R12
 118 [-]: GETGLOBAL R12 K24      ; R12 := 0x5bced4c4
-119 [-]: GETTABLE  R12 R12 K27  ; R82 := R12[0xb62ecfe0]
+119 [-]: GETTABLE  R12 R12 K27  ; R12 := R12[0xb62ecfe0]
 120 [-]: GETTABLE  R13 R9 K17   ; R13 := R9["x"]
 121 [-]: GETGLOBAL R14 K28      ; R14 := 0xe5156633
 122 [-]: GETTABLE  R14 R14 K17  ; R14 := R14["x"]
@@ -1085,21 +1085,21 @@
 127 [-]: MUL       R12 R12 R13  ; R12 := R12 * R13
 128 [-]: SETTABLE  R9 K17 R12   ; R9["x"] := R12
 129 [-]: GETGLOBAL R12 K24      ; R12 := 0x5bced4c4
-130 [-]: GETTABLE  R12 R12 K27  ; R82 := R12[0xb62ecfe0]
+130 [-]: GETTABLE  R12 R12 K27  ; R12 := R12[0xb62ecfe0]
 131 [-]: GETTABLE  R13 R6 K17   ; R13 := R6["x"]
 132 [-]: GETTABLE  R14 R9 K17   ; R14 := R9["x"]
 133 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
 134 [-]: SETTABLE  R9 K17 R12   ; R9["x"] := R12
 135 [-]: JMP       159          ; PC := 159
 136 [-]: GETGLOBAL R12 K24      ; R12 := 0x5bced4c4
-137 [-]: GETTABLE  R12 R12 K27  ; R82 := R12[0xb62ecfe0]
+137 [-]: GETTABLE  R12 R12 K27  ; R12 := R12[0xb62ecfe0]
 138 [-]: GETTABLE  R13 R7 K17   ; R13 := R7["x"]
 139 [-]: GETGLOBAL R14 K26      ; R14 := 0xab6459d1
 140 [-]: GETTABLE  R14 R14 K17  ; R14 := R14["x"]
 141 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
 142 [-]: SETTABLE  R9 K17 R12   ; R9["x"] := R12
 143 [-]: GETGLOBAL R12 K24      ; R12 := 0x5bced4c4
-144 [-]: GETTABLE  R12 R12 K25  ; R82 := R12[0xac1b386a]
+144 [-]: GETTABLE  R12 R12 K25  ; R12 := R12[0xac1b386a]
 145 [-]: GETTABLE  R13 R9 K17   ; R13 := R9["x"]
 146 [-]: GETGLOBAL R14 K28      ; R14 := 0xe5156633
 147 [-]: GETTABLE  R14 R14 K17  ; R14 := R14["x"]
@@ -1109,7 +1109,7 @@
 151 [-]: MUL       R12 R12 R13  ; R12 := R12 * R13
 152 [-]: SETTABLE  R9 K17 R12   ; R9["x"] := R12
 153 [-]: GETGLOBAL R12 K24      ; R12 := 0x5bced4c4
-154 [-]: GETTABLE  R12 R12 K25  ; R82 := R12[0xac1b386a]
+154 [-]: GETTABLE  R12 R12 K25  ; R12 := R12[0xac1b386a]
 155 [-]: GETTABLE  R13 R6 K17   ; R13 := R6["x"]
 156 [-]: GETTABLE  R14 R9 K17   ; R14 := R9["x"]
 157 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
@@ -1118,7 +1118,7 @@
 160 [-]: LT        0 R12 K13    ; if R12 >= 0.000000 then PC := 188
 161 [-]: JMP       188          ; PC := 188
 162 [-]: GETGLOBAL R12 K24      ; R12 := 0x5bced4c4
-163 [-]: GETTABLE  R12 R12 K25  ; R82 := R12[0xac1b386a]
+163 [-]: GETTABLE  R12 R12 K25  ; R12 := R12[0xac1b386a]
 164 [-]: GETTABLE  R13 R7 K19   ; R13 := R7["y"]
 165 [-]: GETGLOBAL R14 K26      ; R14 := 0xab6459d1
 166 [-]: GETTABLE  R14 R14 K19  ; R14 := R14["y"]
@@ -1126,7 +1126,7 @@
 168 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
 169 [-]: SETTABLE  R9 K19 R12   ; R9["y"] := R12
 170 [-]: GETGLOBAL R12 K24      ; R12 := 0x5bced4c4
-171 [-]: GETTABLE  R12 R12 K27  ; R82 := R12[0xb62ecfe0]
+171 [-]: GETTABLE  R12 R12 K27  ; R12 := R12[0xb62ecfe0]
 172 [-]: GETTABLE  R13 R9 K19   ; R13 := R9["y"]
 173 [-]: GETGLOBAL R14 K28      ; R14 := 0xe5156633
 174 [-]: GETTABLE  R14 R14 K19  ; R14 := R14["y"]
@@ -1137,21 +1137,21 @@
 179 [-]: MUL       R12 R12 R13  ; R12 := R12 * R13
 180 [-]: SETTABLE  R9 K19 R12   ; R9["y"] := R12
 181 [-]: GETGLOBAL R12 K24      ; R12 := 0x5bced4c4
-182 [-]: GETTABLE  R12 R12 K27  ; R82 := R12[0xb62ecfe0]
+182 [-]: GETTABLE  R12 R12 K27  ; R12 := R12[0xb62ecfe0]
 183 [-]: GETTABLE  R13 R6 K19   ; R13 := R6["y"]
 184 [-]: GETTABLE  R14 R9 K19   ; R14 := R9["y"]
 185 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
 186 [-]: SETTABLE  R9 K19 R12   ; R9["y"] := R12
 187 [-]: JMP       211          ; PC := 211
 188 [-]: GETGLOBAL R12 K24      ; R12 := 0x5bced4c4
-189 [-]: GETTABLE  R12 R12 K27  ; R82 := R12[0xb62ecfe0]
+189 [-]: GETTABLE  R12 R12 K27  ; R12 := R12[0xb62ecfe0]
 190 [-]: GETTABLE  R13 R7 K19   ; R13 := R7["y"]
 191 [-]: GETGLOBAL R14 K26      ; R14 := 0xab6459d1
 192 [-]: GETTABLE  R14 R14 K19  ; R14 := R14["y"]
 193 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
 194 [-]: SETTABLE  R9 K19 R12   ; R9["y"] := R12
 195 [-]: GETGLOBAL R12 K24      ; R12 := 0x5bced4c4
-196 [-]: GETTABLE  R12 R12 K25  ; R82 := R12[0xac1b386a]
+196 [-]: GETTABLE  R12 R12 K25  ; R12 := R12[0xac1b386a]
 197 [-]: GETTABLE  R13 R9 K19   ; R13 := R9["y"]
 198 [-]: GETGLOBAL R14 K28      ; R14 := 0xe5156633
 199 [-]: GETTABLE  R14 R14 K19  ; R14 := R14["y"]
@@ -1161,7 +1161,7 @@
 203 [-]: MUL       R12 R12 R13  ; R12 := R12 * R13
 204 [-]: SETTABLE  R9 K19 R12   ; R9["y"] := R12
 205 [-]: GETGLOBAL R12 K24      ; R12 := 0x5bced4c4
-206 [-]: GETTABLE  R12 R12 K25  ; R82 := R12[0xac1b386a]
+206 [-]: GETTABLE  R12 R12 K25  ; R12 := R12[0xac1b386a]
 207 [-]: GETTABLE  R13 R6 K19   ; R13 := R6["y"]
 208 [-]: GETTABLE  R14 R9 K19   ; R14 := R9["y"]
 209 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
@@ -1170,7 +1170,7 @@
 212 [-]: LT        0 R12 K13    ; if R12 >= 0.000000 then PC := 240
 213 [-]: JMP       240          ; PC := 240
 214 [-]: GETGLOBAL R12 K24      ; R12 := 0x5bced4c4
-215 [-]: GETTABLE  R12 R12 K25  ; R82 := R12[0xac1b386a]
+215 [-]: GETTABLE  R12 R12 K25  ; R12 := R12[0xac1b386a]
 216 [-]: GETTABLE  R13 R7 K21   ; R13 := R7["z"]
 217 [-]: GETGLOBAL R14 K26      ; R14 := 0xab6459d1
 218 [-]: GETTABLE  R14 R14 K21  ; R14 := R14["z"]
@@ -1178,7 +1178,7 @@
 220 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
 221 [-]: SETTABLE  R9 K21 R12   ; R9["z"] := R12
 222 [-]: GETGLOBAL R12 K24      ; R12 := 0x5bced4c4
-223 [-]: GETTABLE  R12 R12 K27  ; R82 := R12[0xb62ecfe0]
+223 [-]: GETTABLE  R12 R12 K27  ; R12 := R12[0xb62ecfe0]
 224 [-]: GETTABLE  R13 R9 K21   ; R13 := R9["z"]
 225 [-]: GETGLOBAL R14 K28      ; R14 := 0xe5156633
 226 [-]: GETTABLE  R14 R14 K21  ; R14 := R14["z"]
@@ -1189,21 +1189,21 @@
 231 [-]: MUL       R12 R12 R13  ; R12 := R12 * R13
 232 [-]: SETTABLE  R9 K21 R12   ; R9["z"] := R12
 233 [-]: GETGLOBAL R12 K24      ; R12 := 0x5bced4c4
-234 [-]: GETTABLE  R12 R12 K27  ; R82 := R12[0xb62ecfe0]
+234 [-]: GETTABLE  R12 R12 K27  ; R12 := R12[0xb62ecfe0]
 235 [-]: GETTABLE  R13 R6 K21   ; R13 := R6["z"]
 236 [-]: GETTABLE  R14 R9 K21   ; R14 := R9["z"]
 237 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
 238 [-]: SETTABLE  R9 K21 R12   ; R9["z"] := R12
 239 [-]: JMP       263          ; PC := 263
 240 [-]: GETGLOBAL R12 K24      ; R12 := 0x5bced4c4
-241 [-]: GETTABLE  R12 R12 K27  ; R82 := R12[0xb62ecfe0]
+241 [-]: GETTABLE  R12 R12 K27  ; R12 := R12[0xb62ecfe0]
 242 [-]: GETTABLE  R13 R7 K21   ; R13 := R7["z"]
 243 [-]: GETGLOBAL R14 K26      ; R14 := 0xab6459d1
 244 [-]: GETTABLE  R14 R14 K21  ; R14 := R14["z"]
 245 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
 246 [-]: SETTABLE  R9 K21 R12   ; R9["z"] := R12
 247 [-]: GETGLOBAL R12 K24      ; R12 := 0x5bced4c4
-248 [-]: GETTABLE  R12 R12 K25  ; R82 := R12[0xac1b386a]
+248 [-]: GETTABLE  R12 R12 K25  ; R12 := R12[0xac1b386a]
 249 [-]: GETTABLE  R13 R9 K21   ; R13 := R9["z"]
 250 [-]: GETGLOBAL R14 K28      ; R14 := 0xe5156633
 251 [-]: GETTABLE  R14 R14 K21  ; R14 := R14["z"]
@@ -1213,7 +1213,7 @@
 255 [-]: MUL       R12 R12 R13  ; R12 := R12 * R13
 256 [-]: SETTABLE  R9 K21 R12   ; R9["z"] := R12
 257 [-]: GETGLOBAL R12 K24      ; R12 := 0x5bced4c4
-258 [-]: GETTABLE  R12 R12 K25  ; R82 := R12[0xac1b386a]
+258 [-]: GETTABLE  R12 R12 K25  ; R12 := R12[0xac1b386a]
 259 [-]: GETTABLE  R13 R6 K21   ; R13 := R6["z"]
 260 [-]: GETTABLE  R14 R9 K21   ; R14 := R9["z"]
 261 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
@@ -1295,7 +1295,7 @@
 337 [-]: SELF      R13 R3 K12   ; R14 := R3; R13 := R3[0x388577d5]
 338 [-]: CALL      R13 2 2      ; R13 := R13(R14)
 339 [-]: GETGLOBAL R14 K24      ; R14 := 0x5bced4c4
-340 [-]: GETTABLE  R14 R14 K27  ; R82 := R14[0xb62ecfe0]
+340 [-]: GETTABLE  R14 R14 K27  ; R14 := R14[0xb62ecfe0]
 341 [-]: LOADK     R15 0        ; R15 := 0.000000
 342 [-]: GETGLOBAL R16 K9       ; R16 := _T
 343 [-]: GETGLOBAL R17 K10      ; R17 := 0x323a6958
@@ -1316,7 +1316,7 @@
 358 [-]: SELF      R13 R3 K12   ; R14 := R3; R13 := R3[0x388577d5]
 359 [-]: CALL      R13 2 2      ; R13 := R13(R14)
 360 [-]: GETGLOBAL R14 K24      ; R14 := 0x5bced4c4
-361 [-]: GETTABLE  R14 R14 K25  ; R82 := R14[0xac1b386a]
+361 [-]: GETTABLE  R14 R14 K25  ; R14 := R14[0xac1b386a]
 362 [-]: LOADK     R15 1        ; R15 := 1.000000
 363 [-]: GETGLOBAL R16 K9       ; R16 := _T
 364 [-]: GETGLOBAL R17 K10      ; R17 := 0x323a6958

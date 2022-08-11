@@ -106,7 +106,7 @@
  20 [-]: JMP       22           ; PC := 22
  21 [-]: RETURN    R0 1         ; return 
  22 [-]: GETGLOBAL R2 K3        ; R2 := 0x6c97a788
- 23 [-]: GETTABLE  R2 R2 K4     ; R82 := R2[0x733fc736]
+ 23 [-]: GETTABLE  R2 R2 K4     ; R2 := R2[0x733fc736]
  24 [-]: LOADBOOL  R3 1 0       ; R3 := true
  25 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  26 [-]: SELF      R3 R2 K5     ; R4 := R2; R3 := R2[0x80925b98]
@@ -404,7 +404,7 @@
 269 [-]: TEST      R26 0        ; if not R26 then PC := 277
 270 [-]: JMP       277          ; PC := 277
 271 [-]: GETGLOBAL R26 K37      ; R26 := 0x33bdd652
-272 [-]: GETTABLE  R26 R26 K38  ; R82 := R26[0x9c1f3b5a]
+272 [-]: GETTABLE  R26 R26 K38  ; R26 := R26[0x9c1f3b5a]
 273 [-]: MOVE      R27 R14      ; R27 := R14
 274 [-]: MOVE      R28 R24      ; R28 := R24
 275 [-]: CALL      R26 3 1      ; R26(R27,R28)
@@ -428,7 +428,7 @@
 293 [-]: EQ        1 R27 R28    ; if R27 == R28 then PC := 301
 294 [-]: JMP       301          ; PC := 301
 295 [-]: GETGLOBAL R27 K37      ; R27 := 0x33bdd652
-296 [-]: GETTABLE  R27 R27 K38  ; R82 := R27[0x9c1f3b5a]
+296 [-]: GETTABLE  R27 R27 K38  ; R27 := R27[0x9c1f3b5a]
 297 [-]: MOVE      R28 R14      ; R28 := R14
 298 [-]: MOVE      R29 R24      ; R29 := R24
 299 [-]: CALL      R27 3 1      ; R27(R28,R29)
@@ -445,7 +445,7 @@
 310 [-]: EQ        0 R15 K42    ; if R15 ~= nil then PC := 346
 311 [-]: JMP       346          ; PC := 346
 312 [-]: GETGLOBAL R27 K3       ; R27 := 0x34291f5c
-313 [-]: GETTABLE  R27 R27 K43  ; R82 := R27[0x35c16153]
+313 [-]: GETTABLE  R27 R27 K43  ; R27 := R27[0x35c16153]
 314 [-]: CALL      R27 1 2      ; R27 := R27()
 315 [-]: MOVE      R15 R27      ; R15 := R27
 316 [-]: GETGLOBAL R27 K45      ; R27 := 0xbe190284
@@ -497,7 +497,7 @@
 362 [-]: CALL      R27 6 1      ; R27(R28,R29,R30,R31,R32)
 363 [-]: LOADBOOL  R17 1 0      ; R17 := true
 364 [-]: GETGLOBAL R27 K37      ; R27 := 0x33bdd652
-365 [-]: GETTABLE  R27 R27 K38  ; R82 := R27[0x9c1f3b5a]
+365 [-]: GETTABLE  R27 R27 K38  ; R27 := R27[0x9c1f3b5a]
 366 [-]: MOVE      R28 R14      ; R28 := R14
 367 [-]: MOVE      R29 R24      ; R29 := R24
 368 [-]: CALL      R27 3 1      ; R27(R28,R29)

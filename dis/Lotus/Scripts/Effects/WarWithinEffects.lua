@@ -1131,7 +1131,7 @@
  11 [-]: JMP       41           ; PC := 41
  12 [-]: GETTABLE  R3 R1 K3     ; R3 := R1["heading"]
  13 [-]: GETGLOBAL R4 K4        ; R4 := 0x5bced4c4
- 14 [-]: GETTABLE  R4 R4 K5     ; R82 := R4[0x3630e649]
+ 14 [-]: GETTABLE  R4 R4 K5     ; R4 := R4[0x3630e649]
  15 [-]: LOADK     R5 -1        ; R5 := -1.000000
  16 [-]: LOADK     R6 1         ; R6 := 1.000000
  17 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
@@ -1140,7 +1140,7 @@
  20 [-]: SETTABLE  R2 K3 R3     ; R2["heading"] := R3
  21 [-]: GETTABLE  R3 R1 K7     ; R3 := R1["pitch"]
  22 [-]: GETGLOBAL R4 K4        ; R4 := 0x5bced4c4
- 23 [-]: GETTABLE  R4 R4 K5     ; R82 := R4[0x3630e649]
+ 23 [-]: GETTABLE  R4 R4 K5     ; R4 := R4[0x3630e649]
  24 [-]: LOADK     R5 -1        ; R5 := -1.000000
  25 [-]: LOADK     R6 1         ; R6 := 1.000000
  26 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
@@ -1152,7 +1152,7 @@
  32 [-]: CALL      R3 3 1       ; R3(R4,R5)
  33 [-]: GETGLOBAL R3 K0        ; R3 := 0xcbd666e1
  34 [-]: GETGLOBAL R4 K4        ; R4 := 0x5bced4c4
- 35 [-]: GETTABLE  R4 R4 K5     ; R82 := R4[0x3630e649]
+ 35 [-]: GETTABLE  R4 R4 K5     ; R4 := R4[0x3630e649]
  36 [-]: LOADK     R5 0         ; R5 := 0.250000
  37 [-]: LOADK     R6 1         ; R6 := 1.500000
  38 [-]: CALL      R4 3 0       ; R4,... := R4(R5,R6)

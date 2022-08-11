@@ -29,7 +29,7 @@
   1 [-]: GETGLOBAL R10 K0       ; R10 := 0x2d0fad09
   2 [-]: LOADK     R11 K1       ; R11 := "Lotus.Interface.Components.CategorizedGrid"
   3 [-]: CALL      R10 2 2      ; R10 := R10(R11)
-  4 [-]: GETTABLE  R11 R10 K2   ; R82 := R11[0x67d7b715]
+  4 [-]: GETTABLE  R11 R10 K2   ; R11 := R10[0x67d7b715]
   5 [-]: MOVE      R12 R0       ; R12 := R0
   6 [-]: MOVE      R13 R1       ; R13 := R1
   7 [-]: MOVE      R14 R2       ; R14 := R2
@@ -222,7 +222,7 @@
  25 [-]: JMP       41           ; PC := 41
  26 [-]: LOADK     R4 K6        ; R4 := "y"
  27 [-]: GETTABLE  R7 R0 K9     ; R7 := R0["UTIL"]
- 28 [-]: GETTABLE  R7 R7 K10    ; R82 := R7[0x06d055f9]
+ 28 [-]: GETTABLE  R7 R7 K10    ; R7 := R7[0x06d055f9]
  29 [-]: GETTABLE  R8 R0 K7     ; R8 := R0["UP"]
  30 [-]: EQ        1 R1 R8      ; if R1 == R8 then PC := 33
  31 [-]: JMP       33           ; PC := 33
@@ -237,7 +237,7 @@
  40 [-]: JMP       55           ; PC := 55
  41 [-]: LOADK     R4 K4        ; R4 := "x"
  42 [-]: GETTABLE  R7 R0 K9     ; R7 := R0["UTIL"]
- 43 [-]: GETTABLE  R7 R7 K10    ; R82 := R7[0x06d055f9]
+ 43 [-]: GETTABLE  R7 R7 K10    ; R7 := R7[0x06d055f9]
  44 [-]: GETTABLE  R8 R0 K13    ; R8 := R0["LEFT"]
  45 [-]: EQ        1 R1 R8      ; if R1 == R8 then PC := 48
  46 [-]: JMP       48           ; PC := 48
@@ -315,7 +315,7 @@
  22 [-]: DIV       R4 R4 K7     ; R4 := R4 / 2.000000
  23 [-]: ADD       R2 R2 R4     ; R2 := R2 + R4
  24 [-]: GETTABLE  R4 R0 K8     ; R4 := R0["UTIL"]
- 25 [-]: GETTABLE  R4 R4 K9     ; R82 := R4[0x74a11ec6]
+ 25 [-]: GETTABLE  R4 R4 K9     ; R4 := R4[0x74a11ec6]
  26 [-]: MOVE      R5 R2        ; R5 := R2
  27 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  28 [-]: RETURN    R4 2         ; return R4
@@ -360,7 +360,7 @@
  22 [-]: DIV       R4 R4 K7     ; R4 := R4 / 2.000000
  23 [-]: ADD       R2 R2 R4     ; R2 := R2 + R4
  24 [-]: GETTABLE  R4 R0 K8     ; R4 := R0["UTIL"]
- 25 [-]: GETTABLE  R4 R4 K9     ; R82 := R4[0x74a11ec6]
+ 25 [-]: GETTABLE  R4 R4 K9     ; R4 := R4[0x74a11ec6]
  26 [-]: MOVE      R5 R2        ; R5 := R2
  27 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  28 [-]: RETURN    R4 2         ; return R4
@@ -384,7 +384,7 @@
   1 [-]: NEWTABLE  R1 0 0       ; R1 := {}
   2 [-]: SETTABLE  R0 K0 R1     ; R0["mItemGrid"] := R1
   3 [-]: GETGLOBAL R1 K1        ; R1 := 0x5bced4c4
-  4 [-]: GETTABLE  R1 R1 K2     ; R82 := R1[0x99675e23]
+  4 [-]: GETTABLE  R1 R1 K2     ; R1 := R1[0x99675e23]
   5 [-]: GETTABLE  R2 R0 K3     ; R2 := R0["mElements"]
   6 [-]: LEN       R2 R2        ; R2 := # R2
   7 [-]: SUB       R2 R2 K4     ; R2 := R2 - 1.000000
@@ -394,7 +394,7 @@
  11 [-]: ADD       R1 R1 K4     ; R1 := R1 + 1.000000
  12 [-]: LOADK     R2 1         ; R2 := 1.000000
  13 [-]: GETGLOBAL R3 K1        ; R3 := 0x5bced4c4
- 14 [-]: GETTABLE  R3 R3 K6     ; R82 := R3[0xb62ecfe0]
+ 14 [-]: GETTABLE  R3 R3 K6     ; R3 := R3[0xb62ecfe0]
  15 [-]: GETTABLE  R4 R0 K7     ; R4 := R0["mRows"]
  16 [-]: MOVE      R5 R1        ; R5 := R1
  17 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)

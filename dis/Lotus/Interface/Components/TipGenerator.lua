@@ -106,7 +106,7 @@
   2 [-]: JMP       4            ; PC := 4
   3 [-]: GETTABLE  R2 R0 K1     ; R2 := R0["COMMON"]
   4 [-]: GETGLOBAL R3 K2        ; R3 := 0x33bdd652
-  5 [-]: GETTABLE  R3 R3 K3     ; R82 := R3[0x23d5322f]
+  5 [-]: GETTABLE  R3 R3 K3     ; R3 := R3[0x23d5322f]
   6 [-]: GETTABLE  R4 R0 K4     ; R4 := R0["mTips"]
   7 [-]: NEWTABLE  R5 0 3       ; R5 := {}
   8 [-]: SETTABLE  R5 K5 R1     ; R5["Tip"] := R1
@@ -203,7 +203,7 @@
  23 [-]: EQ        1 R2 K2      ; if R2 == nil then PC := 34
  24 [-]: JMP       34           ; PC := 34
  25 [-]: GETUPVAL  R2 U0        ; R2 := U0
- 26 [-]: GETTABLE  R2 R2 K9     ; R82 := R2[0x9f8ece2b]
+ 26 [-]: GETTABLE  R2 R2 K9     ; R2 := R2[0x9f8ece2b]
  27 [-]: GETTABLE  R3 R0 K3     ; R3 := R0["mMovie"]
  28 [-]: GETUPVAL  R4 U1        ; R4 := U1
  29 [-]: GETTABLE  R5 R0 K8     ; R5 := R0["MaxLines"]
@@ -320,7 +320,7 @@
  89 [-]: CALL      R9 3 1       ; R9(R10,R11)
  90 [-]: JMP       100          ; PC := 100
  91 [-]: GETUPVAL  R9 U0        ; R9 := U0
- 92 [-]: GETTABLE  R9 R9 K18    ; R82 := R9[0x38a41ce7]
+ 92 [-]: GETTABLE  R9 R9 K18    ; R9 := R9[0x38a41ce7]
  93 [-]: GETUPVAL  R10 U1       ; R10 := U1
  94 [-]: GETTABLE  R10 R10 K3   ; R10 := R10["TipIndex"]
  95 [-]: LOADK     R11 1        ; R11 := 1.000000

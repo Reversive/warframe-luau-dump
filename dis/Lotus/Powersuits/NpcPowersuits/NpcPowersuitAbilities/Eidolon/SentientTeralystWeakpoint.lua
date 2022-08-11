@@ -64,7 +64,7 @@
  27 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  28 [-]: GETGLOBAL R3 K7        ; R3 := 0xd14173b7
  29 [-]: GETGLOBAL R4 K8        ; R4 := 0x34291f5c
- 30 [-]: GETTABLE  R4 R4 K9     ; R82 := R4[0x056bfe8b]
+ 30 [-]: GETTABLE  R4 R4 K9     ; R4 := R4[0x056bfe8b]
  31 [-]: CALL      R4 1 2       ; R4 := R4()
  32 [-]: TEST      R4 0         ; if not R4 then PC := 36
  33 [-]: JMP       36           ; PC := 36
@@ -98,11 +98,11 @@
  61 [-]: CALL      R8 2 2       ; R8 := R8(R9)
  62 [-]: GETGLOBAL R9 K17       ; R9 := 0x00046924
  63 [-]: GETGLOBAL R10 K18      ; R10 := 0x5bced4c4
- 64 [-]: GETTABLE  R10 R10 K19  ; R82 := R10[0x3630e649]
+ 64 [-]: GETTABLE  R10 R10 K19  ; R10 := R10[0x3630e649]
  65 [-]: LOADK     R11 360      ; R11 := 360.000000
  66 [-]: CALL      R10 2 2      ; R10 := R10(R11)
  67 [-]: GETGLOBAL R11 K18      ; R11 := 0x5bced4c4
- 68 [-]: GETTABLE  R11 R11 K19  ; R82 := R11[0x3630e649]
+ 68 [-]: GETTABLE  R11 R11 K19  ; R11 := R11[0x3630e649]
  69 [-]: LOADK     R12 360      ; R12 := 360.000000
  70 [-]: CALL      R11 2 2      ; R11 := R11(R12)
  71 [-]: LOADK     R12 0        ; R12 := 0.000000
@@ -164,7 +164,7 @@
  24 [-]: MOVE      R4 R5        ; R4 := R5
  25 [-]: GETGLOBAL R6 K9        ; R6 := 0x00046924
  26 [-]: GETGLOBAL R7 K10       ; R7 := 0x5bced4c4
- 27 [-]: GETTABLE  R7 R7 K11    ; R82 := R7[0x3630e649]
+ 27 [-]: GETTABLE  R7 R7 K11    ; R7 := R7[0x3630e649]
  28 [-]: CALL      R7 1 2       ; R7 := R7()
  29 [-]: MUL       R7 R7 K12    ; R7 := R7 * 360.000000
  30 [-]: LOADK     R8 90        ; R8 := 90.000000
@@ -215,7 +215,7 @@
   1 [-]: SELF      R1 R0 K0     ; R2 := R0; R1 := R0[0x70b8836c]
   2 [-]: GETGLOBAL R3 K1        ; R3 := 0x00046924
   3 [-]: GETGLOBAL R4 K2        ; R4 := 0x5bced4c4
-  4 [-]: GETTABLE  R4 R4 K3     ; R82 := R4[0x3630e649]
+  4 [-]: GETTABLE  R4 R4 K3     ; R4 := R4[0x3630e649]
   5 [-]: CALL      R4 1 2       ; R4 := R4()
   6 [-]: MUL       R4 R4 K4     ; R4 := R4 * 360.000000
   7 [-]: LOADK     R5 90        ; R5 := 90.000000
@@ -262,7 +262,7 @@
  48 [-]: CALL      R3 5 2       ; R3 := R3(R4,R5,R6,R7)
  49 [-]: MOVE      R2 R3        ; R2 := R3
  50 [-]: GETGLOBAL R3 K14       ; R3 := 0x34291f5c
- 51 [-]: GETTABLE  R3 R3 K15    ; R82 := R3[0x056bfe8b]
+ 51 [-]: GETTABLE  R3 R3 K15    ; R3 := R3[0x056bfe8b]
  52 [-]: CALL      R3 1 2       ; R3 := R3()
  53 [-]: TEST      R3 0         ; if not R3 then PC := 59
  54 [-]: JMP       59           ; PC := 59
@@ -391,13 +391,13 @@
  95 [-]: TEST      R15 0        ; if not R15 then PC := 103
  96 [-]: JMP       103          ; PC := 103
  97 [-]: GETGLOBAL R15 K18      ; R15 := 0x33bdd652
- 98 [-]: GETTABLE  R15 R15 K19  ; R82 := R15[0x23d5322f]
+ 98 [-]: GETTABLE  R15 R15 K19  ; R15 := R15[0x23d5322f]
  99 [-]: MOVE      R16 R7       ; R16 := R7
 100 [-]: GETTABLE  R17 R6 R13   ; R17 := R6[R13]
 101 [-]: CALL      R15 3 1      ; R15(R16,R17)
 102 [-]: JMP       120          ; PC := 120
 103 [-]: GETGLOBAL R15 K18      ; R15 := 0x33bdd652
-104 [-]: GETTABLE  R15 R15 K19  ; R82 := R15[0x23d5322f]
+104 [-]: GETTABLE  R15 R15 K19  ; R15 := R15[0x23d5322f]
 105 [-]: MOVE      R16 R8       ; R16 := R8
 106 [-]: GETTABLE  R17 R6 R13   ; R17 := R6[R13]
 107 [-]: CALL      R15 3 1      ; R15(R16,R17)
@@ -409,7 +409,7 @@
 113 [-]: EQ        1 R15 R16    ; if R15 == R16 then PC := 120
 114 [-]: JMP       120          ; PC := 120
 115 [-]: GETGLOBAL R15 K18      ; R15 := 0x33bdd652
-116 [-]: GETTABLE  R15 R15 K19  ; R82 := R15[0x23d5322f]
+116 [-]: GETTABLE  R15 R15 K19  ; R15 := R15[0x23d5322f]
 117 [-]: MOVE      R16 R9       ; R16 := R9
 118 [-]: GETTABLE  R17 R6 R13   ; R17 := R6[R13]
 119 [-]: CALL      R15 3 1      ; R15(R16,R17)
@@ -571,7 +571,7 @@
  25 [-]: JMP       14           ; PC := 14
  26 [-]: GETGLOBAL R3 K6        ; R3 := 0xd14173b7
  27 [-]: GETGLOBAL R4 K7        ; R4 := 0x34291f5c
- 28 [-]: GETTABLE  R4 R4 K8     ; R82 := R4[0x056bfe8b]
+ 28 [-]: GETTABLE  R4 R4 K8     ; R4 := R4[0x056bfe8b]
  29 [-]: CALL      R4 1 2       ; R4 := R4()
  30 [-]: TEST      R4 0         ; if not R4 then PC := 34
  31 [-]: JMP       34           ; PC := 34

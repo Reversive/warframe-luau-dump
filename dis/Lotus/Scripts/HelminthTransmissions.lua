@@ -85,7 +85,7 @@
  26 [-]: TEST      R5 1         ; if R5 then PC := 32
  27 [-]: JMP       32           ; PC := 32
  28 [-]: GETGLOBAL R5 K8        ; R5 := 0x34291f5c
- 29 [-]: GETTABLE  R5 R5 K9     ; R82 := R5[0xe82b9b03]
+ 29 [-]: GETTABLE  R5 R5 K9     ; R5 := R5[0xe82b9b03]
  30 [-]: GETTABLE  R6 R0 K7     ; R6 := R0[1.000000]
  31 [-]: CALL      R5 2 1       ; R5(R6)
  32 [-]: GETGLOBAL R5 K0        ; R5 := _T
@@ -210,7 +210,7 @@
  43 [-]: ADD       R1 R1 K12    ; R1 := R1 + 0.100000
  44 [-]: JMP       9            ; PC := 9
  45 [-]: GETUPVAL  R9 U1        ; R9 := U1
- 46 [-]: GETTABLE  R9 R9 K13    ; R82 := R9[0x1f60d532]
+ 46 [-]: GETTABLE  R9 R9 K13    ; R9 := R9[0x1f60d532]
  47 [-]: GETGLOBAL R10 K14      ; R10 := 0x2ab7a74c
  48 [-]: GETTABLE  R10 R10 K15  ; R10 := R10[2.000000]
  49 [-]: CALL      R9 2 1       ; R9(R10)
@@ -304,15 +304,15 @@
  72 [-]: EQ        1 R7 K2      ; if R7 == nil then PC := 79
  73 [-]: JMP       79           ; PC := 79
  74 [-]: GETUPVAL  R7 U4        ; R7 := U4
- 75 [-]: GETTABLE  R7 R7 K21    ; R82 := R7[0x1f60d532]
+ 75 [-]: GETTABLE  R7 R7 K21    ; R7 := R7[0x1f60d532]
  76 [-]: GETTABLE  R8 R4 K22    ; R8 := R4[2.000000]
  77 [-]: CALL      R7 2 1       ; R7(R8)
  78 [-]: JMP       99           ; PC := 99
  79 [-]: GETUPVAL  R7 U4        ; R7 := U4
- 80 [-]: GETTABLE  R7 R7 K21    ; R82 := R7[0x1f60d532]
+ 80 [-]: GETTABLE  R7 R7 K21    ; R7 := R7[0x1f60d532]
  81 [-]: GETTABLE  R8 R4 K23    ; R8 := R4[1.000000]
  82 [-]: CALL      R7 2 1       ; R7(R8)
- 83 [-]: SETUPVAL  R0 U5        ; U82 := 
+ 83 [-]: SETUPVAL  R0 U5        ; U82 := R5
  84 [-]: SELF      R7 R0 K24    ; R8 := R0; R7 := R0[0xd5f7912b]
  85 [-]: GETGLOBAL R9 K25       ; R9 := 0x0469f296
  86 [-]: LOADK     R10 K26      ; R10 := "OrdisIdleTransmissions"
@@ -321,7 +321,7 @@
  89 [-]: CALL      R7 4 1       ; R7(R8,R9,R10)
  90 [-]: JMP       99           ; PC := 99
  91 [-]: GETUPVAL  R7 U4        ; R7 := U4
- 92 [-]: GETTABLE  R7 R7 K21    ; R82 := R7[0x1f60d532]
+ 92 [-]: GETTABLE  R7 R7 K21    ; R7 := R7[0x1f60d532]
  93 [-]: GETGLOBAL R8 K27       ; R8 := 0x55730e1a
  94 [-]: LOADK     R9 1         ; R9 := 1.000000
  95 [-]: LEN       R10 R4       ; R10 := # R4
@@ -365,7 +365,7 @@
  19 [-]: JMP       30           ; PC := 30
  20 [-]: GETGLOBAL R2 K0        ; R2 := _T
  21 [-]: GETGLOBAL R3 K7        ; R3 := 0x5bced4c4
- 22 [-]: GETTABLE  R3 R3 K8     ; R82 := R3[0xac1b386a]
+ 22 [-]: GETTABLE  R3 R3 K8     ; R3 := R3[0xac1b386a]
  23 [-]: LOADK     R4 1         ; R4 := 1.000000
  24 [-]: SELF      R5 R1 K9     ; R6 := R1; R5 := R1[0xdae5bcb5]
  25 [-]: CALL      R5 2 2       ; R5 := R5(R6)

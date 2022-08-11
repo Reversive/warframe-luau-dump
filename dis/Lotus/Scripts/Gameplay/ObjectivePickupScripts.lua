@@ -105,7 +105,7 @@
  82 [-]: EQ        1 R16 R17    ; if R16 == R17 then PC := 89
  83 [-]: JMP       89           ; PC := 89
  84 [-]: GETGLOBAL R16 K23      ; R16 := 0x33bdd652
- 85 [-]: GETTABLE  R16 R16 K24  ; R82 := R16[0x9c1f3b5a]
+ 85 [-]: GETTABLE  R16 R16 K24  ; R16 := R16[0x9c1f3b5a]
  86 [-]: MOVE      R17 R10      ; R17 := R10
  87 [-]: MOVE      R18 R14      ; R18 := R14
  88 [-]: CALL      R16 3 1      ; R16(R17,R18)

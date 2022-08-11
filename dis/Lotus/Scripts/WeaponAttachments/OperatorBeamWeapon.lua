@@ -101,7 +101,7 @@
  72 [-]: TEST      R16 1        ; if R16 then PC := 79
  73 [-]: JMP       79           ; PC := 79
  74 [-]: GETGLOBAL R16 K24      ; R16 := 0x33bdd652
- 75 [-]: GETTABLE  R16 R16 K25  ; R82 := R16[0x23d5322f]
+ 75 [-]: GETTABLE  R16 R16 K25  ; R16 := R16[0x23d5322f]
  76 [-]: MOVE      R17 R10      ; R17 := R10
  77 [-]: MOVE      R18 R15      ; R18 := R15
  78 [-]: CALL      R16 3 1      ; R16(R17,R18)

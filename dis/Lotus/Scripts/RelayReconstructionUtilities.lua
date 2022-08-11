@@ -54,7 +54,7 @@
  29 [-]: TEST      R12 0        ; if not R12 then PC := 94
  30 [-]: JMP       94           ; PC := 94
  31 [-]: GETGLOBAL R12 K10      ; R12 := 0x34291f5c
- 32 [-]: GETTABLE  R12 R12 K11  ; R82 := R12[0x397b920f]
+ 32 [-]: GETTABLE  R12 R12 K11  ; R12 := R12[0x397b920f]
  33 [-]: GETTABLE  R13 R11 K12  ; R13 := R11["mActivation"]
  34 [-]: CALL      R12 2 2      ; R12 := R12(R13)
  35 [-]: LE        0 R12 K13    ; if R12 > 0.000000 then PC := 94
@@ -111,7 +111,7 @@
  86 [-]: TFORLOOP  R20 2        ; R23,R24 :=  R20(R21,R22); if R23 ~= nil then begin PC = 75; R22 := R23 end
  87 [-]: JMP       75           ; PC := 75
  88 [-]: GETGLOBAL R25 K30      ; R25 := 0x33bdd652
- 89 [-]: GETTABLE  R25 R25 K31  ; R82 := R25[0x23d5322f]
+ 89 [-]: GETTABLE  R25 R25 K31  ; R25 := R25[0x23d5322f]
  90 [-]: MOVE      R26 R1       ; R26 := R1
  91 [-]: MOVE      R27 R18      ; R27 := R18
  92 [-]: CALL      R25 3 1      ; R25(R26,R27)

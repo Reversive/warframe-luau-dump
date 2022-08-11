@@ -100,12 +100,12 @@
  67 [-]: EQ        0 R3 R5      ; if R3 ~= R5 then PC := 107
  68 [-]: JMP       107          ; PC := 107
  69 [-]: GETGLOBAL R6 K10       ; R6 := 0x34291f5c
- 70 [-]: GETTABLE  R6 R6 K11    ; R82 := R6[0x9ad21ae9]
+ 70 [-]: GETTABLE  R6 R6 K11    ; R6 := R6[0x9ad21ae9]
  71 [-]: CALL      R6 1 2       ; R6 := R6()
  72 [-]: TEST      R6 1         ; if R6 then PC := 81
  73 [-]: JMP       81           ; PC := 81
  74 [-]: GETUPVAL  R6 U1        ; R6 := U1
- 75 [-]: GETTABLE  R6 R6 K12    ; R82 := R6[0x7baa66e1]
+ 75 [-]: GETTABLE  R6 R6 K12    ; R6 := R6[0x7baa66e1]
  76 [-]: CALL      R6 1 2       ; R6 := R6()
  77 [-]: LT        1 R6 K13     ; if R6 < 1.000000 then PC := 80
  78 [-]: JMP       80           ; PC := 80

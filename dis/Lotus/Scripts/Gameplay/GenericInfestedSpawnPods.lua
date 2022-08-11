@@ -535,7 +535,7 @@
 171 [-]: JMP       175          ; PC := 175
 172 [-]: GETGLOBAL R23 K3       ; R23 := _T
 173 [-]: NEWTABLE  R24 0 0      ; R24 := {}
-174 [-]: SETTABLE  R23 K44 R24  ; R23[0x1595e100] := R24
+174 [-]: SETTABLE  R23 K44 R24  ; R23["TrackedSpawnPodAgents"] := R24
 175 [-]: GETGLOBAL R23 K45      ; R23 := 0x33bdd652
 176 [-]: GETTABLE  R23 R23 K46  ; R82 := R23[0x23d5322f]
 177 [-]: GETGLOBAL R24 K3       ; R24 := _T
@@ -734,7 +734,7 @@
 131 [-]: JMP       135          ; PC := 135
 132 [-]: GETGLOBAL R17 K6       ; R17 := _T
 133 [-]: NEWTABLE  R18 0 0      ; R18 := {}
-134 [-]: SETTABLE  R17 K33 R18  ; R17["TrackedSpawnPodAgents"] := R18
+134 [-]: SETTABLE  R17 K33 R18  ; R17[0xd1586535] := R18
 135 [-]: GETGLOBAL R17 K34      ; R17 := 0x33bdd652
 136 [-]: GETTABLE  R17 R17 K35  ; R82 := R17[0x23d5322f]
 137 [-]: GETGLOBAL R18 K6       ; R18 := _T

@@ -41,7 +41,7 @@
   9 [-]: MOVE      R1 R3        ; R1 := R3
  10 [-]: LOADK     R3 1         ; R3 := 1.000000
  11 [-]: GETGLOBAL R4 K4        ; R4 := 0x5bced4c4
- 12 [-]: GETTABLE  R4 R4 K5     ; R82 := R4[0xac1b386a]
+ 12 [-]: GETTABLE  R4 R4 K5     ; R4 := R4[0xac1b386a]
  13 [-]: LEN       R5 R1        ; R5 := # R1
  14 [-]: LEN       R6 R2        ; R6 := # R2
  15 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
@@ -137,7 +137,7 @@
  12 [-]: LOADK     R2 1         ; R2 := 1.000000
  13 [-]: FORPREP   R0 25        ; R0 -= R2; PC := 25
  14 [-]: GETUPVAL  R4 U1        ; R4 := U1
- 15 [-]: GETTABLE  R4 R4 K2     ; R82 := R4[0x52fb05b3]
+ 15 [-]: GETTABLE  R4 R4 K2     ; R4 := R4[0x52fb05b3]
  16 [-]: GETGLOBAL R5 K0        ; R5 := 0xb1b375b1
  17 [-]: GETTABLE  R5 R5 R3     ; R5 := R5[R3]
  18 [-]: CALL      R4 2 2       ; R4 := R4(R5)

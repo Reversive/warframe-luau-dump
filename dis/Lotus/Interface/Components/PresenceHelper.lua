@@ -42,7 +42,7 @@
  10 [-]: CLOSURE   R1 3         ; R1 := closure(Function #1.4)
  11 [-]: SETTABLE  R0 K4 R1     ; R0["ResyncLitePresence"] := R1
  12 [-]: CLOSURE   R1 4         ; R1 := closure(Function #1.5)
- 13 [-]: SETTABLE  R0 K5 R1     ; R0["Update"] := R1
+ 13 [-]: SETTABLE  R0 K5 R1     ; R0[0x00000061] := R1
  14 [-]: RETURN    R0 2         ; return R0
  15 [-]: RETURN    R0 1         ; return 
 

@@ -71,7 +71,7 @@
  48 [-]: SETTABLE  R10 R15 K10  ; R10[R15] := 0.000000
  49 [-]: FORLOOP   R12 38       ; R12 += R14; if R12 <= R13 then begin PC := 38; R15 := R12 end
  50 [-]: GETGLOBAL R16 K11      ; R16 := 0x33bdd652
- 51 [-]: GETTABLE  R16 R16 K12  ; R82 := R16[0x23d5322f]
+ 51 [-]: GETTABLE  R16 R16 K12  ; R16 := R16[0x23d5322f]
  52 [-]: MOVE      R17 R4       ; R17 := R4
  53 [-]: NEWTABLE  R18 0 18     ; R18 := {}
  54 [-]: SELF      R19 R3 K14   ; R20 := R3; R19 := R3[0xed4e0128]
@@ -102,7 +102,7 @@
  79 [-]: GETGLOBAL R20 K9       ; R20 := 0x55730e1a
  80 [-]: LOADK     R21 0        ; R21 := 0.000000
  81 [-]: GETGLOBAL R22 K28      ; R22 := 0x5bced4c4
- 82 [-]: GETTABLE  R22 R22 K29  ; R82 := R22[0xa40531d8]
+ 82 [-]: GETTABLE  R22 R22 K29  ; R22 := R22[0xa40531d8]
  83 [-]: LOADK     R23 2        ; R23 := 2.000000
  84 [-]: LOADK     R24 30       ; R24 := 30.000000
  85 [-]: CALL      R22 3 0      ; R22,... := R22(R23,R24)

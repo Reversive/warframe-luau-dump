@@ -192,7 +192,7 @@
 125 [-]: CALL      R17 2 2      ; R17 := R17(R18)
 126 [-]: LOADK     R18 1        ; R18 := 1.000000
 127 [-]: GETGLOBAL R19 K36      ; R19 := 0x5bced4c4
-128 [-]: GETTABLE  R19 R19 K37  ; R82 := R19[0x99675e23]
+128 [-]: GETTABLE  R19 R19 K37  ; R19 := R19[0x99675e23]
 129 [-]: GETUPVAL  R20 U3       ; R20 := U3
 130 [-]: LEN       R20 R20      ; R20 := # R20
 131 [-]: MUL       R20 R20 R17  ; R20 := R20 * R17
@@ -241,7 +241,7 @@
 174 [-]: CALL      R27 3 0      ; R27,... := R27(R28,R29)
 175 [-]: CALL      R24 0 1      ; R24(R25,...)
 176 [-]: GETGLOBAL R24 K40      ; R24 := 0x33bdd652
-177 [-]: GETTABLE  R24 R24 K41  ; R82 := R24[0x23d5322f]
+177 [-]: GETTABLE  R24 R24 K41  ; R24 := R24[0x23d5322f]
 178 [-]: MOVE      R25 R16      ; R25 := R16
 179 [-]: MOVE      R26 R22      ; R26 := R22
 180 [-]: CALL      R24 3 1      ; R24(R25,R26)
@@ -335,7 +335,7 @@
 268 [-]: JMP       278          ; PC := 278
 269 [-]: GETTABLE  R30 R16 R29  ; R30 := R16[R29]
 270 [-]: GETGLOBAL R31 K40      ; R31 := 0x33bdd652
-271 [-]: GETTABLE  R31 R31 K54  ; R82 := R31[0x9c1f3b5a]
+271 [-]: GETTABLE  R31 R31 K54  ; R31 := R31[0x9c1f3b5a]
 272 [-]: MOVE      R32 R16      ; R32 := R16
 273 [-]: MOVE      R33 R29      ; R33 := R29
 274 [-]: CALL      R31 3 1      ; R31(R32,R33)
@@ -399,7 +399,7 @@
 332 [-]: TEST      R4 1         ; if R4 then PC := 346
 333 [-]: JMP       346          ; PC := 346
 334 [-]: GETGLOBAL R35 K36      ; R35 := 0x5bced4c4
-335 [-]: GETTABLE  R35 R35 K67  ; R82 := R35[0xa40531d8]
+335 [-]: GETTABLE  R35 R35 K67  ; R35 := R35[0xa40531d8]
 336 [-]: MOVE      R36 R17      ; R36 := R17
 337 [-]: LOADK     R37 0        ; R37 := 0.500000
 338 [-]: CALL      R35 3 2      ; R35 := R35(R36,R37)
@@ -417,7 +417,7 @@
 350 [-]: JMP       358          ; PC := 358
 351 [-]: SELF      R36 R24 K70  ; R37 := R24; R36 := R24[0xc7bdb630]
 352 [-]: GETGLOBAL R38 K36      ; R38 := 0x5bced4c4
-353 [-]: GETTABLE  R38 R38 K71  ; R82 := R38[0xb62ecfe0]
+353 [-]: GETTABLE  R38 R38 K71  ; R38 := R38[0xb62ecfe0]
 354 [-]: LOADK     R39 0        ; R39 := 0.000000
 355 [-]: MUL       R40 R25 K72  ; R40 := R25 * 5.000000
 356 [-]: CALL      R38 3 0      ; R38,... := R38(R39,R40)

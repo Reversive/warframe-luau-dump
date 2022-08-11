@@ -229,7 +229,7 @@
  46 [-]: LOADBOOL  R4 0 0       ; R4 := false
  47 [-]: RETURN    R4 2         ; return R4
  48 [-]: GETUPVAL  R4 U0        ; R4 := U0
- 49 [-]: GETTABLE  R4 R4 K8     ; R82 := R4[0x5e35d4d6]
+ 49 [-]: GETTABLE  R4 R4 K8     ; R4 := R4[0x5e35d4d6]
  50 [-]: CALL      R4 1 2       ; R4 := R4()
  51 [-]: SELF      R5 R4 K9     ; R6 := R4; R5 := R4[0x5484bf3c]
  52 [-]: MOVE      R7 R3        ; R7 := R3
@@ -249,13 +249,13 @@
  66 [-]: EQ        0 R13 R14    ; if R13 ~= R14 then PC := 90
  67 [-]: JMP       90           ; PC := 90
  68 [-]: GETGLOBAL R13 K17      ; R13 := 0x34291f5c
- 69 [-]: GETTABLE  R13 R13 K18  ; R82 := R13[0x397b920f]
+ 69 [-]: GETTABLE  R13 R13 K18  ; R13 := R13[0x397b920f]
  70 [-]: GETTABLE  R14 R12 K19  ; R14 := R12["mActivation"]
  71 [-]: CALL      R13 2 2      ; R13 := R13(R14)
  72 [-]: LT        0 R13 K20    ; if R13 >= 0.000000 then PC := 90
  73 [-]: JMP       90           ; PC := 90
  74 [-]: GETGLOBAL R13 K17      ; R13 := 0x34291f5c
- 75 [-]: GETTABLE  R13 R13 K18  ; R82 := R13[0x397b920f]
+ 75 [-]: GETTABLE  R13 R13 K18  ; R13 := R13[0x397b920f]
  76 [-]: GETTABLE  R14 R12 K21  ; R14 := R12["mExpiry"]
  77 [-]: CALL      R13 2 2      ; R13 := R13(R14)
  78 [-]: LT        0 K20 R13    ; if 0.000000 >= R13 then PC := 90
@@ -330,7 +330,7 @@
  42 [-]: JMP       44           ; PC := 44
  43 [-]: RETURN    R0 1         ; return 
  44 [-]: GETUPVAL  R5 U0        ; R5 := U0
- 45 [-]: GETTABLE  R5 R5 K8     ; R82 := R5[0x5e35d4d6]
+ 45 [-]: GETTABLE  R5 R5 K8     ; R5 := R5[0x5e35d4d6]
  46 [-]: CALL      R5 1 2       ; R5 := R5()
  47 [-]: SELF      R6 R5 K9     ; R7 := R5; R6 := R5[0x5484bf3c]
  48 [-]: MOVE      R8 R4        ; R8 := R4
@@ -351,13 +351,13 @@
  63 [-]: CALL      R11 2 4      ; R11,R12,R13 := R11(R12)
  64 [-]: JMP       153          ; PC := 153
  65 [-]: GETGLOBAL R16 K15      ; R16 := 0x34291f5c
- 66 [-]: GETTABLE  R16 R16 K16  ; R82 := R16[0x397b920f]
+ 66 [-]: GETTABLE  R16 R16 K16  ; R16 := R16[0x397b920f]
  67 [-]: GETTABLE  R17 R15 K17  ; R17 := R15["mActivation"]
  68 [-]: CALL      R16 2 2      ; R16 := R16(R17)
  69 [-]: LT        0 R16 K18    ; if R16 >= 0.000000 then PC := 153
  70 [-]: JMP       153          ; PC := 153
  71 [-]: GETGLOBAL R16 K15      ; R16 := 0x34291f5c
- 72 [-]: GETTABLE  R16 R16 K16  ; R82 := R16[0x397b920f]
+ 72 [-]: GETTABLE  R16 R16 K16  ; R16 := R16[0x397b920f]
  73 [-]: GETTABLE  R17 R15 K19  ; R17 := R15["mExpiry"]
  74 [-]: CALL      R16 2 2      ; R16 := R16(R17)
  75 [-]: LT        0 K18 R16    ; if 0.000000 >= R16 then PC := 153
@@ -490,7 +490,7 @@
  36 [-]: JMP       38           ; PC := 38
  37 [-]: RETURN    R0 1         ; return 
  38 [-]: GETGLOBAL R5 K8        ; R5 := 0x7f5022cf
- 39 [-]: GETTABLE  R5 R5 K9     ; R82 := R5[0xa5c556b9]
+ 39 [-]: GETTABLE  R5 R5 K9     ; R5 := R5[0xa5c556b9]
  40 [-]: MOVE      R6 R4        ; R6 := R4
  41 [-]: LOADK     R7 K10       ; R7 := "_"
  42 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
@@ -499,7 +499,7 @@
  45 [-]: SELF      R6 R3 K12    ; R7 := R3; R6 := R3[0x69727e0b]
  46 [-]: CALL      R6 2 2       ; R6 := R6(R7)
  47 [-]: GETGLOBAL R7 K8        ; R7 := 0x7f5022cf
- 48 [-]: GETTABLE  R7 R7 K13    ; R82 := R7[0x1a94c9cc]
+ 48 [-]: GETTABLE  R7 R7 K13    ; R7 := R7[0x1a94c9cc]
  49 [-]: MOVE      R8 R4        ; R8 := R4
  50 [-]: ADD       R9 R5 K14    ; R9 := R5 + 1.000000
  51 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
@@ -508,7 +508,7 @@
  54 [-]: CALL      R8 2 4       ; R8,R9,R10 := R8(R9)
  55 [-]: JMP       91           ; PC := 91
  56 [-]: GETGLOBAL R13 K17      ; R13 := 0x34291f5c
- 57 [-]: GETTABLE  R13 R13 K18  ; R82 := R13[0x397b920f]
+ 57 [-]: GETTABLE  R13 R13 K18  ; R13 := R13[0x397b920f]
  58 [-]: GETTABLE  R14 R12 K19  ; R14 := R12["mExpiry"]
  59 [-]: CALL      R13 2 2      ; R13 := R13(R14)
  60 [-]: LT        0 K20 R13    ; if 0.000000 >= R13 then PC := 91

@@ -287,7 +287,7 @@
  69 [-]: TEST      R10 1        ; if R10 then PC := 76
  70 [-]: JMP       76           ; PC := 76
  71 [-]: GETGLOBAL R10 K5       ; R10 := _T
- 72 [-]: GETTABLE  R10 R10 K25  ; R82 := R10[0xc74e207c]
+ 72 [-]: GETTABLE  R10 R10 K25  ; R10 := R10[0xc74e207c]
  73 [-]: CALL      R10 1 1      ; R10()
  74 [-]: GETGLOBAL R10 K5       ; R10 := _T
  75 [-]: SETTABLE  R10 K24 K7   ; R10["OnDroppedGameplayObject"] := nil

@@ -32,7 +32,7 @@
 ; Max Stack Size:  5
 
   1 [-]: GETGLOBAL R2 K0        ; R2 := 0x5bced4c4
-  2 [-]: GETTABLE  R2 R2 K1     ; R82 := R2[0xac1b386a]
+  2 [-]: GETTABLE  R2 R2 K1     ; R2 := R2[0xac1b386a]
   3 [-]: MOVE      R3 R1        ; R3 := R1
   4 [-]: LEN       R4 R0        ; R4 := # R0
   5 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
@@ -63,7 +63,7 @@
  11 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  12 [-]: NEWTABLE  R6 0 1       ; R6 := {}
  13 [-]: GETGLOBAL R7 K4        ; R7 := 0x5bced4c4
- 14 [-]: GETTABLE  R7 R7 K5     ; R82 := R7[0x55f27c30]
+ 14 [-]: GETTABLE  R7 R7 K5     ; R7 := R7[0x55f27c30]
  15 [-]: GETUPVAL  R8 U0        ; R8 := U0
  16 [-]: GETTABLE  R9 R5 K6     ; R9 := R5[1.000000]
  17 [-]: GETTABLE  R9 R9 K7     ; R9 := R9["mValues"]
@@ -81,7 +81,7 @@
  29 [-]: JMP       50           ; PC := 50
  30 [-]: NEWTABLE  R6 0 3       ; R6 := {}
  31 [-]: GETGLOBAL R7 K4        ; R7 := 0x5bced4c4
- 32 [-]: GETTABLE  R7 R7 K5     ; R82 := R7[0x55f27c30]
+ 32 [-]: GETTABLE  R7 R7 K5     ; R7 := R7[0x55f27c30]
  33 [-]: SELF      R8 R2 K10    ; R9 := R2; R8 := R2[0xfef27732]
  34 [-]: LOADK     R10 0        ; R10 := 0.000000
  35 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
@@ -100,7 +100,7 @@
  48 [-]: SETTABLE  R6 K14 R7    ; R6["STACKS"] := R7
  49 [-]: MOVE      R3 R6        ; R3 := R6
  50 [-]: GETGLOBAL R6 K16       ; R6 := cjson
- 51 [-]: GETTABLE  R6 R6 K17    ; R82 := R6[0xb139d7bc]
+ 51 [-]: GETTABLE  R6 R6 K17    ; R6 := R6[0xb139d7bc]
  52 [-]: MOVE      R7 R3        ; R7 := R3
  53 [-]: TAILCALL  R6 2 0       ; R6,... := R6(R7)
  54 [-]: RETURN    R6 0         ; return R6,...
@@ -152,7 +152,7 @@
  34 [-]: EQ        0 R2 K9      ; if R2 ~= 1.000000 then PC := 43
  35 [-]: JMP       43           ; PC := 43
  36 [-]: GETUPVAL  R3 U0        ; R3 := U0
- 37 [-]: GETTABLE  R3 R3 K10    ; R82 := R3[0x47df6d5f]
+ 37 [-]: GETTABLE  R3 R3 K10    ; R3 := R3[0x47df6d5f]
  38 [-]: MOVE      R4 R0        ; R4 := R0
  39 [-]: GETGLOBAL R5 K11       ; R5 := 0xa62eb8a5
  40 [-]: GETGLOBAL R6 K12       ; R6 := 0x24969f7c

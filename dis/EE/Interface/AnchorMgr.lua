@@ -83,7 +83,7 @@
  55 [-]: CLOSURE   R4 9         ; R4 := closure(Function #1.10)
  56 [-]: SETTABLE  R2 K34 R4    ; R2["ChangeAnchorPoints"] := R4
  57 [-]: GETGLOBAL R4 K35       ; R4 := 0x34291f5c
- 58 [-]: GETTABLE  R4 R4 K36    ; R82 := R4[0xe6b41adb]
+ 58 [-]: GETTABLE  R4 R4 K36    ; R4 := R4[0xe6b41adb]
  59 [-]: CALL      R4 1 2       ; R4 := R4()
  60 [-]: TEST      R4 0         ; if not R4 then PC := 65
  61 [-]: JMP       65           ; PC := 65
@@ -187,7 +187,7 @@
  46 [-]: SETTABLE  R6 K6 R11    ; R6["alignHorizontal"] := R11
  47 [-]: JMP       58           ; PC := 58
  48 [-]: GETGLOBAL R12 K15      ; R12 := 0x7f5022cf
- 49 [-]: GETTABLE  R12 R12 K16  ; R82 := R12[0xa5c556b9]
+ 49 [-]: GETTABLE  R12 R12 K16  ; R12 := R12[0xa5c556b9]
  50 [-]: GETGLOBAL R13 K17      ; R13 := 0x64fb1586
  51 [-]: MOVE      R14 R11      ; R14 := R11
  52 [-]: CALL      R13 2 2      ; R13 := R13(R14)
@@ -231,7 +231,7 @@
  15 [-]: EQ        0 R8 R2      ; if R8 ~= R2 then PC := 23
  16 [-]: JMP       23           ; PC := 23
  17 [-]: GETGLOBAL R8 K3        ; R8 := 0x33bdd652
- 18 [-]: GETTABLE  R8 R8 K4     ; R82 := R8[0x9c1f3b5a]
+ 18 [-]: GETTABLE  R8 R8 K4     ; R8 := R8[0x9c1f3b5a]
  19 [-]: GETTABLE  R9 R0 K0     ; R9 := R0["list"]
  20 [-]: MOVE      R10 R7       ; R10 := R7
  21 [-]: CALL      R8 3 1       ; R8(R9,R10)
@@ -322,14 +322,14 @@
  71 [-]: CALL      R10 4 2      ; R10 := R10(R11,R12,R13)
  72 [-]: DIV       R10 R10 K18  ; R10 := R10 / 100.000000
  73 [-]: GETGLOBAL R11 K19      ; R11 := 0x5bced4c4
- 74 [-]: GETTABLE  R11 R11 K20  ; R82 := R11[0x55f27c30]
+ 74 [-]: GETTABLE  R11 R11 K20  ; R11 := R11[0x55f27c30]
  75 [-]: SELF      R12 R8 K21   ; R13 := R8; R12 := R8[0xffb01064]
  76 [-]: CALL      R12 2 2      ; R12 := R12(R13)
  77 [-]: MUL       R12 R1 R12   ; R12 := R1 * R12
  78 [-]: DIV       R12 R12 R9   ; R12 := R12 / R9
  79 [-]: CALL      R11 2 2      ; R11 := R11(R12)
  80 [-]: GETGLOBAL R12 K19      ; R12 := 0x5bced4c4
- 81 [-]: GETTABLE  R12 R12 K20  ; R82 := R12[0x55f27c30]
+ 81 [-]: GETTABLE  R12 R12 K20  ; R12 := R12[0x55f27c30]
  82 [-]: SELF      R13 R8 K22   ; R14 := R8; R13 := R8[0x3c759bf2]
  83 [-]: CALL      R13 2 2      ; R13 := R13(R14)
  84 [-]: MUL       R13 R2 R13   ; R13 := R2 * R13
@@ -494,7 +494,7 @@
 243 [-]: DIV       R26 R25 K26  ; R26 := R25 / 2.000000
 244 [-]: SUB       R24 R24 R26  ; R24 := R24 - R26
 245 [-]: GETUPVAL  R26 U1       ; R26 := U1
-246 [-]: GETTABLE  R26 R26 K44  ; R82 := R26[0x74a11ec6]
+246 [-]: GETTABLE  R26 R26 K44  ; R26 := R26[0x74a11ec6]
 247 [-]: MOVE      R27 R24      ; R27 := R24
 248 [-]: CALL      R26 2 2      ; R26 := R26(R27)
 249 [-]: SETTABLE  R23 K43 R26  ; R23["NewX"] := R26
@@ -599,7 +599,7 @@
 348 [-]: DIV       R28 R27 K26  ; R28 := R27 / 2.000000
 349 [-]: SUB       R26 R26 R28  ; R26 := R26 - R28
 350 [-]: GETUPVAL  R28 U1       ; R28 := U1
-351 [-]: GETTABLE  R28 R28 K44  ; R82 := R28[0x74a11ec6]
+351 [-]: GETTABLE  R28 R28 K44  ; R28 := R28[0x74a11ec6]
 352 [-]: MOVE      R29 R26      ; R29 := R26
 353 [-]: CALL      R28 2 2      ; R28 := R28(R29)
 354 [-]: SETTABLE  R23 K52 R28  ; R23["NewY"] := R28
@@ -612,7 +612,7 @@
 361 [-]: GETTABLE  R28 R23 K53  ; R28 := R23["callback"]
 362 [-]: EQ        1 R28 K32    ; if R28 == nil then PC := 366
 363 [-]: JMP       366          ; PC := 366
-364 [-]: GETTABLE  R28 R23 K54  ; R82 := R28[0x56348e81]
+364 [-]: GETTABLE  R28 R23 K54  ; R28 := R23[0x56348e81]
 365 [-]: CALL      R28 1 1      ; R28()
 366 [-]: FORLOOP   R19 144      ; R19 += R21; if R19 <= R20 then begin PC := 144; R22 := R19 end
 367 [-]: RETURN    R0 1         ; return 
@@ -925,7 +925,7 @@
 172 [-]: UNM       R21 R21      ; R21 := ^ R21
 173 [-]: SUB       R19 R19 R21  ; R19 := R19 - R21
 174 [-]: GETUPVAL  R21 U0       ; R21 := U0
-175 [-]: GETTABLE  R21 R21 K30  ; R82 := R21[0x74a11ec6]
+175 [-]: GETTABLE  R21 R21 K30  ; R21 := R21[0x74a11ec6]
 176 [-]: MOVE      R22 R19      ; R22 := R19
 177 [-]: CALL      R21 2 2      ; R21 := R21(R22)
 178 [-]: SETTABLE  R18 K29 R21  ; R18["originalX"] := R21
@@ -1028,7 +1028,7 @@
 275 [-]: UNM       R23 R23      ; R23 := ^ R23
 276 [-]: SUB       R21 R21 R23  ; R21 := R21 - R23
 277 [-]: GETUPVAL  R23 U0       ; R23 := U0
-278 [-]: GETTABLE  R23 R23 K30  ; R82 := R23[0x74a11ec6]
+278 [-]: GETTABLE  R23 R23 K30  ; R23 := R23[0x74a11ec6]
 279 [-]: MOVE      R24 R21      ; R24 := R21
 280 [-]: CALL      R23 2 2      ; R23 := R23(R24)
 281 [-]: SETTABLE  R18 K36 R23  ; R18["originalY"] := R23

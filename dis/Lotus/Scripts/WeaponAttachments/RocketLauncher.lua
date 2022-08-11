@@ -106,9 +106,9 @@
  46 [-]: CALL      R12 2 2      ; R12 := R12(R13)
  47 [-]: MOVE      R10 R12      ; R10 := R12
  48 [-]: GETGLOBAL R12 K13      ; R12 := 0x5bced4c4
- 49 [-]: GETTABLE  R12 R12 K14  ; R82 := R12[0xac1b386a]
+ 49 [-]: GETTABLE  R12 R12 K14  ; R12 := R12[0xac1b386a]
  50 [-]: GETGLOBAL R13 K13      ; R13 := 0x5bced4c4
- 51 [-]: GETTABLE  R13 R13 K15  ; R82 := R13[0x55f27c30]
+ 51 [-]: GETTABLE  R13 R13 K15  ; R13 := R13[0x55f27c30]
  52 [-]: GETGLOBAL R14 K8       ; R14 := 0x777869a0
  53 [-]: LEN       R14 R14      ; R14 := # R14
  54 [-]: MUL       R14 R10 R14  ; R14 := R10 * R14

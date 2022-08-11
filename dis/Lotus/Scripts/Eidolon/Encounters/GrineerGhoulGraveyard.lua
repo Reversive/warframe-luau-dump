@@ -181,7 +181,7 @@
  18 [-]: LOADK     R3 K7        ; R3 := "GRAVEYARD: Migration done"
  19 [-]: CALL      R2 2 1       ; R2(R3)
  20 [-]: GETUPVAL  R2 U0        ; R2 := U0
- 21 [-]: GETTABLE  R2 R2 K8     ; R82 := R2[0xf0090084]
+ 21 [-]: GETTABLE  R2 R2 K8     ; R2 := R2[0xf0090084]
  22 [-]: CALL      R2 1 2       ; R2 := R2()
  23 [-]: SELF      R3 R0 K9     ; R4 := R0; R3 := R0[0x4c976eda]
  24 [-]: CALL      R3 2 2       ; R3 := R3(R4)
@@ -201,7 +201,7 @@
  38 [-]: GETGLOBAL R10 K18      ; R10 := 0x979453ac
  39 [-]: DIV       R10 R10 R8   ; R10 := R10 / R8
  40 [-]: GETGLOBAL R11 K14      ; R11 := 0x5bced4c4
- 41 [-]: GETTABLE  R11 R11 K19  ; R82 := R11[0x99675e23]
+ 41 [-]: GETTABLE  R11 R11 K19  ; R11 := R11[0x99675e23]
  42 [-]: MUL       R12 R9 R10   ; R12 := R9 * R10
  43 [-]: CALL      R11 2 2      ; R11 := R11(R12)
  44 [-]: MUL       R12 R7 K20   ; R12 := R7 * 0.750000
@@ -220,7 +220,7 @@
  57 [-]: TEST      R15 1        ; if R15 then PC := 64
  58 [-]: JMP       64           ; PC := 64
  59 [-]: GETGLOBAL R15 K14      ; R15 := 0x5bced4c4
- 60 [-]: GETTABLE  R15 R15 K19  ; R82 := R15[0x99675e23]
+ 60 [-]: GETTABLE  R15 R15 K19  ; R15 := R15[0x99675e23]
  61 [-]: MUL       R16 R11 K27  ; R16 := R11 * 0.650000
  62 [-]: CALL      R15 2 2      ; R15 := R15(R16)
  63 [-]: MOVE      R11 R15      ; R11 := R15
@@ -234,7 +234,7 @@
  71 [-]: LOADK     R19 K30      ; R19 := "GRAVEYARD: Spawned graves"
  72 [-]: CALL      R18 2 1      ; R18(R19)
  73 [-]: GETUPVAL  R18 U3       ; R18 := U3
- 74 [-]: GETTABLE  R18 R18 K31  ; R82 := R18[0x9bd99ed0]
+ 74 [-]: GETTABLE  R18 R18 K31  ; R18 := R18[0x9bd99ed0]
  75 [-]: GETGLOBAL R19 K32      ; R19 := 0x4302de9f
  76 [-]: LOADK     R20 4        ; R20 := 4.000000
  77 [-]: MOVE      R21 R11      ; R21 := R11
@@ -258,7 +258,7 @@
  95 [-]: LE        0 R18 R19    ; if R18 > R19 then PC := 105
  96 [-]: JMP       105          ; PC := 105
  97 [-]: GETUPVAL  R18 U5       ; R18 := U5
- 98 [-]: GETTABLE  R18 R18 K34  ; R82 := R18[0x9742b85b]
+ 98 [-]: GETTABLE  R18 R18 K34  ; R18 := R18[0x9742b85b]
  99 [-]: MOVE      R19 R4       ; R19 := R4
 100 [-]: GETGLOBAL R20 K35      ; R20 := 0x0469f296
 101 [-]: LOADK     R21 K36      ; R21 := "GraveyardWarning"
@@ -372,7 +372,7 @@
 209 [-]: LE        0 R34 R35    ; if R34 > R35 then PC := 218
 210 [-]: JMP       218          ; PC := 218
 211 [-]: GETUPVAL  R34 U5       ; R34 := U5
-212 [-]: GETTABLE  R34 R34 K34  ; R82 := R34[0x9742b85b]
+212 [-]: GETTABLE  R34 R34 K34  ; R34 := R34[0x9742b85b]
 213 [-]: MOVE      R35 R4       ; R35 := R4
 214 [-]: GETGLOBAL R36 K35      ; R36 := 0x0469f296
 215 [-]: LOADK     R37 K52      ; R37 := "GraveyardAttack"
@@ -410,7 +410,7 @@
 247 [-]: SELF      R42 R5 K57   ; R43 := R5; R42 := R5[0x39e33d94]
 248 [-]: CALL      R42 2 2      ; R42 := R42(R43)
 249 [-]: GETGLOBAL R43 K14      ; R43 := 0x5bced4c4
-250 [-]: GETTABLE  R43 R43 K58  ; R82 := R43[0xb62ecfe0]
+250 [-]: GETTABLE  R43 R43 K58  ; R43 := R43[0xb62ecfe0]
 251 [-]: MOVE      R44 R38      ; R44 := R38
 252 [-]: MOVE      R45 R42      ; R45 := R42
 253 [-]: CALL      R43 3 2      ; R43 := R43(R44,R45)
@@ -483,7 +483,7 @@
 320 [-]: LE        0 R53 R34    ; if R53 > R34 then PC := 327
 321 [-]: JMP       327          ; PC := 327
 322 [-]: GETGLOBAL R54 K67      ; R54 := 0x33bdd652
-323 [-]: GETTABLE  R54 R54 K68  ; R82 := R54[0x23d5322f]
+323 [-]: GETTABLE  R54 R54 K68  ; R54 := R54[0x23d5322f]
 324 [-]: MOVE      R55 R43      ; R55 := R43
 325 [-]: GETTABLE  R56 R52 R51  ; R56 := R52[R51]
 326 [-]: CALL      R54 3 1      ; R54(R55,R56)
@@ -495,13 +495,13 @@
 332 [-]: SETTABLE  R44 K61 R53  ; R44["distance"] := R53
 333 [-]: JMP       345          ; PC := 345
 334 [-]: GETGLOBAL R54 K67      ; R54 := 0x33bdd652
-335 [-]: GETTABLE  R54 R54 K69  ; R82 := R54[0x9c1f3b5a]
+335 [-]: GETTABLE  R54 R54 K69  ; R54 := R54[0x9c1f3b5a]
 336 [-]: MOVE      R55 R15      ; R55 := R15
 337 [-]: MOVE      R56 R51      ; R56 := R51
 338 [-]: CALL      R54 3 1      ; R54(R55,R56)
 339 [-]: JMP       345          ; PC := 345
 340 [-]: GETGLOBAL R54 K67      ; R54 := 0x33bdd652
-341 [-]: GETTABLE  R54 R54 K69  ; R82 := R54[0x9c1f3b5a]
+341 [-]: GETTABLE  R54 R54 K69  ; R54 := R54[0x9c1f3b5a]
 342 [-]: MOVE      R55 R15      ; R55 := R15
 343 [-]: MOVE      R56 R51      ; R56 := R51
 344 [-]: CALL      R54 3 1      ; R54(R55,R56)
@@ -604,7 +604,7 @@
   1 [-]: SELF      R1 R0 K0     ; R2 := R0; R1 := R0[0xd1586535]
   2 [-]: CALL      R1 2 2       ; R1 := R1(R2)
   3 [-]: GETUPVAL  R2 U0        ; R2 := U0
-  4 [-]: GETTABLE  R2 R2 K1     ; R82 := R2[0x9bd99ed0]
+  4 [-]: GETTABLE  R2 R2 K1     ; R2 := R2[0x9bd99ed0]
   5 [-]: GETGLOBAL R3 K2        ; R3 := 0x4302de9f
   6 [-]: LOADK     R4 4         ; R4 := 4.000000
   7 [-]: GETGLOBAL R5 K3        ; R5 := 0x979453ac
@@ -674,7 +674,7 @@
 ; Max Stack Size:  43
 
   1 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  2 [-]: GETTABLE  R1 R1 K0     ; R82 := R1[0xf0090084]
+  2 [-]: GETTABLE  R1 R1 K0     ; R1 := R1[0xf0090084]
   3 [-]: CALL      R1 1 2       ; R1 := R1()
   4 [-]: SELF      R2 R0 K1     ; R3 := R0; R2 := R0[0x4c976eda]
   5 [-]: CALL      R2 2 2       ; R2 := R2(R3)
@@ -694,7 +694,7 @@
  19 [-]: GETGLOBAL R9 K10       ; R9 := 0x979453ac
  20 [-]: DIV       R9 R9 R7     ; R9 := R9 / R7
  21 [-]: GETGLOBAL R10 K6       ; R10 := 0x5bced4c4
- 22 [-]: GETTABLE  R10 R10 K11  ; R82 := R10[0x99675e23]
+ 22 [-]: GETTABLE  R10 R10 K11  ; R10 := R10[0x99675e23]
  23 [-]: MUL       R11 R8 R9    ; R11 := R8 * R9
  24 [-]: CALL      R10 2 2      ; R10 := R10(R11)
  25 [-]: MUL       R11 R6 K12   ; R11 := R6 * 0.700000
@@ -704,7 +704,7 @@
  29 [-]: JMP       31           ; PC := 31
  30 [-]: MOVE      R10 R12      ; R10 := R12
  31 [-]: GETUPVAL  R13 U1       ; R13 := U1
- 32 [-]: GETTABLE  R13 R13 K16  ; R82 := R13[0x9bd99ed0]
+ 32 [-]: GETTABLE  R13 R13 K16  ; R13 := R13[0x9bd99ed0]
  33 [-]: GETGLOBAL R14 K17      ; R14 := 0x4302de9f
  34 [-]: LOADK     R15 4        ; R15 := 4.000000
  35 [-]: MOVE      R16 R10      ; R16 := R10
@@ -736,7 +736,7 @@
  61 [-]: LE        0 R19 R20    ; if R19 > R20 then PC := 70
  62 [-]: JMP       70           ; PC := 70
  63 [-]: GETUPVAL  R19 U3       ; R19 := U3
- 64 [-]: GETTABLE  R19 R19 K22  ; R82 := R19[0x9742b85b]
+ 64 [-]: GETTABLE  R19 R19 K22  ; R19 := R19[0x9742b85b]
  65 [-]: MOVE      R20 R3       ; R20 := R3
  66 [-]: GETGLOBAL R21 K23      ; R21 := 0x0469f296
  67 [-]: LOADK     R22 K24      ; R22 := "GraveyardAttack"
@@ -839,13 +839,13 @@
 164 [-]: SETTABLE  R29 K34 R38  ; R29["distance"] := R38
 165 [-]: JMP       177          ; PC := 177
 166 [-]: GETGLOBAL R39 K41      ; R39 := 0x33bdd652
-167 [-]: GETTABLE  R39 R39 K42  ; R82 := R39[0x9c1f3b5a]
+167 [-]: GETTABLE  R39 R39 K42  ; R39 := R39[0x9c1f3b5a]
 168 [-]: MOVE      R40 R13      ; R40 := R13
 169 [-]: MOVE      R41 R36      ; R41 := R36
 170 [-]: CALL      R39 3 1      ; R39(R40,R41)
 171 [-]: JMP       177          ; PC := 177
 172 [-]: GETGLOBAL R39 K41      ; R39 := 0x33bdd652
-173 [-]: GETTABLE  R39 R39 K42  ; R82 := R39[0x9c1f3b5a]
+173 [-]: GETTABLE  R39 R39 K42  ; R39 := R39[0x9c1f3b5a]
 174 [-]: MOVE      R40 R13      ; R40 := R13
 175 [-]: MOVE      R41 R36      ; R41 := R36
 176 [-]: CALL      R39 3 1      ; R39(R40,R41)
