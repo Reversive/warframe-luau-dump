@@ -653,19 +653,19 @@
  33 [-]: GETUPVAL  R0 U0        ; R0 := U0
  34 [-]: GETUPVAL  R0 U1        ; R0 := U1
  35 [-]: MOVE      R0 R2        ; R0 := R2
- 36 [-]: SETTABLE  R8 K13 R9    ; R8[0x1cb415c1] := R9
+ 36 [-]: SETTABLE  R8 K13 R9    ; R8["mElementDrawCallback"] := R9
  37 [-]: LOADK     R9 1         ; R9 := 1.000000
  38 [-]: GETUPVAL  R10 U1       ; R10 := U1
  39 [-]: LOADK     R11 1        ; R11 := 1.000000
  40 [-]: FORPREP   R9 51        ; R9 -= R11; PC := 51
  41 [-]: SELF      R13 R8 K14   ; R14 := R8; R13 := R8[0xbad4316f]
  42 [-]: NEWTABLE  R15 0 2      ; R15 := {}
- 43 [-]: SETTABLE  R15 K15 R12  ; R15[0x74c5e454] := R12
+ 43 [-]: SETTABLE  R15 K15 R12  ; R15["Num"] := R12
  44 [-]: LE        1 R12 R1     ; if R12 <= R1 then PC := 47
  45 [-]: JMP       47           ; PC := 47
  46 [-]: LOADBOOL  R16 0 1      ; R16 := false; PC := 47
  47 [-]: LOADBOOL  R16 1 0      ; R16 := true
- 48 [-]: SETTABLE  R15 K16 R16  ; R15[0x67bc869f] := R16
+ 48 [-]: SETTABLE  R15 K16 R16  ; R15["Completed"] := R16
  49 [-]: LOADBOOL  R16 1 0      ; R16 := true
  50 [-]: CALL      R13 4 1      ; R13(R14,R15,R16)
  51 [-]: FORLOOP   R9 41        ; R9 += R11; if R9 <= R10 then begin PC := 41; R12 := R9 end
@@ -788,7 +788,7 @@
 168 [-]: JMP       170          ; PC := 170
 169 [-]: LOADBOOL  R16 0 1      ; R16 := false; PC := 170
 170 [-]: LOADBOOL  R16 1 0      ; R16 := true
-171 [-]: SETTABLE  R15 K16 R16  ; R15[0x67bc869f] := R16
+171 [-]: SETTABLE  R15 K16 R16  ; R15["Completed"] := R16
 172 [-]: GETUPVAL  R16 U0       ; R16 := U0
 173 [-]: GETTABLE  R16 R16 K0   ; R16 := R16[0x06d055f9]
 174 [-]: GETTABLE  R17 R15 K16  ; R17 := R15["Completed"]
@@ -1828,7 +1828,7 @@
  14 [-]: GETGLOBAL R5 K3        ; R5 := 0xae91e43b
  15 [-]: LOADK     R6 K8        ; R6 := "/Lotus/Language/WarframeHints/Invasion_"
  16 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
- 17 [-]: SETTABLE  R3 K6 R4     ; R3[0x3f3e4d12] := R4
+ 17 [-]: SETTABLE  R3 K6 R4     ; R3[0x494b60da] := R4
  18 [-]: SETTABLE  R3 K9 K10    ; R3["Padding"] := -10.000000
  19 [-]: CALL      R1 3 1       ; R1(R2,R3)
  20 [-]: GETGLOBAL R1 K0        ; R1 := 0x33bdd652

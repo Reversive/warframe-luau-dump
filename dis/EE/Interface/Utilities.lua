@@ -3637,7 +3637,7 @@
  23 [-]: GETGLOBAL R5 K7        ; R5 := ZERO_VECTOR
  24 [-]: GETGLOBAL R6 K8        ; R6 := ZERO_ROTATION
  25 [-]: CALL      R2 5 2       ; R2 := R2(R3,R4,R5,R6)
- 26 [-]: SETTABLE  R0 K1 R2     ; R0["mInstance"] := R2
+ 26 [-]: SETTABLE  R0 K1 R2     ; R0[0x5bced4c4] := R2
  27 [-]: RETURN    R0 1         ; return 
 
 
@@ -3864,7 +3864,7 @@
  42 [-]: TESTSET   R8 R2 1      ; if R2 then PC := 45 else R8 := R2
  43 [-]: JMP       45           ; PC := 45
  44 [-]: LOADK     R8 0         ; R8 := 0.000000
- 45 [-]: SETTABLE  R7 K9 R8     ; R7["dialogType"] := R8
+ 45 [-]: SETTABLE  R7 K9 R8     ; R7[0x91a24e4b] := R8
  46 [-]: SETTABLE  R7 K10 R6    ; R7["locString"] := R6
  47 [-]: GETGLOBAL R8 K0        ; R8 := 0x7b998233
  48 [-]: MOVE      R9 R5        ; R9 := R5

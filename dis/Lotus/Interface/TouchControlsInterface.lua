@@ -6121,7 +6121,7 @@
  20 [-]: MUL       R3 R3 R4     ; R3 := R3 * R4
  21 [-]: DIV       R3 R3 K5     ; R3 := R3 / 100.000000
  22 [-]: ADD       R2 R2 R3     ; R2 := R2 + R3
- 23 [-]: SETTABLE  R1 K1 R2     ; R1["x"] := R2
+ 23 [-]: SETTABLE  R1 K1 R2     ; R1[0xae91e43b] := R2
  24 [-]: GETGLOBAL R2 K2        ; R2 := 0xae91e43b
  25 [-]: SELF      R2 R2 K3     ; R3 := R2; R2 := R2[0x91a24e4b]
  26 [-]: MOVE      R4 R0        ; R4 := R0

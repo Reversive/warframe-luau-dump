@@ -1604,7 +1604,7 @@
  38 [-]: GETUPVAL  R0 U2        ; R0 := U2
  39 [-]: GETUPVAL  R0 U3        ; R0 := U3
  40 [-]: GETUPVAL  R0 U4        ; R0 := U4
- 41 [-]: SETTABLE  R1 K21 R2    ; R1[0xc0a3774b] := R2
+ 41 [-]: SETTABLE  R1 K21 R2    ; R1["mOnFocusedCallback"] := R2
  42 [-]: GETUPVAL  R1 U0        ; R1 := U0
  43 [-]: CLOSURE   R2 2         ; R2 := closure(Function #15.3)
  44 [-]: GETUPVAL  R0 U2        ; R0 := U2
@@ -1615,7 +1615,7 @@
  49 [-]: GETUPVAL  R0 U2        ; R0 := U2
  50 [-]: GETUPVAL  R0 U5        ; R0 := U5
  51 [-]: GETUPVAL  R0 U0        ; R0 := U0
- 52 [-]: SETTABLE  R1 K23 R2    ; R1[0x34291f5c] := R2
+ 52 [-]: SETTABLE  R1 K23 R2    ; R1["mOnSelectedCallback"] := R2
  53 [-]: GETUPVAL  R1 U0        ; R1 := U0
  54 [-]: CLOSURE   R2 4         ; R2 := closure(Function #15.5)
  55 [-]: GETUPVAL  R0 U2        ; R0 := U2
@@ -1629,13 +1629,13 @@
  63 [-]: GETUPVAL  R0 U1        ; R0 := U1
  64 [-]: GETUPVAL  R0 U4        ; R0 := U4
  65 [-]: GETUPVAL  R0 U10       ; R0 := U10
- 66 [-]: SETTABLE  R1 K24 R2    ; R1[0x1467d5f4] := R2
+ 66 [-]: SETTABLE  R1 K24 R2    ; R1["mElementDrawCallback"] := R2
  67 [-]: GETUPVAL  R1 U0        ; R1 := U0
  68 [-]: CLOSURE   R2 5         ; R2 := closure(Function #15.6)
  69 [-]: GETUPVAL  R0 U2        ; R0 := U2
  70 [-]: GETUPVAL  R0 U3        ; R0 := U3
  71 [-]: GETUPVAL  R0 U11       ; R0 := U11
- 72 [-]: SETTABLE  R1 K25 R2    ; R1[0x20b98db3] := R2
+ 72 [-]: SETTABLE  R1 K25 R2    ; R1["CalculateHeight"] := R2
  73 [-]: GETUPVAL  R1 U0        ; R1 := U0
  74 [-]: CLOSURE   R2 6         ; R2 := closure(Function #15.7)
  75 [-]: GETUPVAL  R0 U6        ; R0 := U6

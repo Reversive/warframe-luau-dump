@@ -11909,7 +11909,7 @@
 164 [-]: GETTABLE  R14 R14 K38  ; R14 := R14[0x1142c7a8]
 165 [-]: GETTABLE  R15 R0 K34   ; R15 := R0["ReqCount"]
 166 [-]: CALL      R14 2 2      ; R14 := R14(R15)
-167 [-]: SETTABLE  R13 K44 R14  ; R13["COUNT"] := R14
+167 [-]: SETTABLE  R13 K44 R14  ; R13[0x55f27c30] := R14
 168 [-]: CALL      R9 5 2       ; R9 := R9(R10,R11,R12,R13)
 169 [-]: MOVE      R8 R9        ; R8 := R9
 170 [-]: JMP       177          ; PC := 177
@@ -11940,7 +11940,7 @@
 195 [-]: LOADNIL   R16 R17      ; R16 := R17 := nil
 196 [-]: LOADBOOL  R18 1 0      ; R18 := true
 197 [-]: CALL      R10 9 2      ; R10 := R10(R11,R12,R13,R14,R15,R16,R17,R18)
-198 [-]: SETTABLE  R0 K49 R10   ; R0["CollectBtn"] := R10
+198 [-]: SETTABLE  R0 K49 R10   ; R0[0xe261aa96] := R10
 199 [-]: GETTABLE  R10 R0 K49   ; R10 := R0["CollectBtn"]
 200 [-]: SELF      R10 R10 K54  ; R11 := R10; R10 := R10[0x1403231b]
 201 [-]: GETTABLE  R12 R0 K4    ; R12 := R0["Id"]
@@ -11982,7 +11982,7 @@
 237 [-]: LOADK     R14 13       ; R14 := 13.000000
 238 [-]: MOVE      R15 R1       ; R15 := R1
 239 [-]: CALL      R10 6 1      ; R10(R11,R12,R13,R14,R15)
-240 [-]: SETTABLE  R0 K65 R1    ; R0["TotalHeight"] := R1
+240 [-]: SETTABLE  R0 K65 R1    ; R0[0x74a11ec6] := R1
 241 [-]: RETURN    R0 1         ; return 
 
 
@@ -16096,7 +16096,7 @@
 205 [-]: GETUPVAL  R20 U5       ; R20 := U5
 206 [-]: GETTABLE  R20 R20 K48  ; R20 := R20["NumCompleted"]
 207 [-]: CALL      R19 2 2      ; R19 := R19(R20)
-208 [-]: SETTABLE  R18 K46 R19  ; R18[0x070daa5a] := R19
+208 [-]: SETTABLE  R18 K46 R19  ; R18["COMPLETE"] := R19
 209 [-]: GETUPVAL  R19 U2       ; R19 := U2
 210 [-]: GETTABLE  R19 R19 K47  ; R19 := R19[0x1142c7a8]
 211 [-]: GETUPVAL  R20 U5       ; R20 := U5
@@ -17349,7 +17349,7 @@
 716 [-]: NEWTABLE  R39 0 1      ; R39 := {}
 717 [-]: GETTABLE  R40 R0 K163  ; R40 := R0["mMissionNumber"]
 718 [-]: SUB       R40 R40 K12  ; R40 := R40 - 1.000000
-719 [-]: SETTABLE  R39 K162 R40 ; R39["PREREQ"] := R40
+719 [-]: SETTABLE  R39 K162 R40 ; R39[0xae91e43b] := R40
 720 [-]: CALL      R35 5 0      ; R35,... := R35(R36,R37,R38,R39)
 721 [-]: CALL      R34 0 1      ; R34(R35,...)
 722 [-]: RETURN    R0 1         ; return 
@@ -17628,7 +17628,7 @@
 995 [-]: LOADBOOL  R56 0 0      ; R56 := false
 996 [-]: NEWTABLE  R57 0 1      ; R57 := {}
 997 [-]: GETTABLE  R58 R0 K192  ; R58 := R0["mPrereqDesc"]
-998 [-]: SETTABLE  R57 K162 R58 ; R57["PREREQ"] := R58
+998 [-]: SETTABLE  R57 K162 R58 ; R57[0xae91e43b] := R58
 999 [-]: CALL      R53 5 0      ; R53,... := R53(R54,R55,R56,R57)
 1000 [-]: CALL      R52 0 1      ; R52(R53,...)
 1001 [-]: RETURN    R0 1         ; return 
@@ -20573,7 +20573,7 @@
  12 [-]: GETUPVAL  R1 U1        ; R1 := U1
  13 [-]: GETUPVAL  R2 U0        ; R2 := U0
  14 [-]: GETTABLE  R1 R1 R2     ; R1 := R1[R2]
- 15 [-]: SETTABLE  R1 K1 R0     ; R1["Quest"] := R0
+ 15 [-]: SETTABLE  R1 K1 R0     ; R1[0x0000004c] := R0
  16 [-]: GETUPVAL  R1 U2        ; R1 := U2
  17 [-]: MOVE      R2 R0        ; R2 := R0
  18 [-]: GETUPVAL  R3 U0        ; R3 := U0

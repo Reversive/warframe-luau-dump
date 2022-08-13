@@ -162,7 +162,7 @@
  15 [-]: GETUPVAL  R5 U0        ; R5 := U0
  16 [-]: LOADK     R6 1         ; R6 := 1.000000
  17 [-]: CALL      R3 4 2       ; R3 := R3(R4,R5,R6)
- 18 [-]: SETTABLE  R2 K4 R3     ; R2[0xe134ac06] := R3
+ 18 [-]: SETTABLE  R2 K4 R3     ; R2["x"] := R3
  19 [-]: SELF      R3 R1 K5     ; R4 := R1; R3 := R1[0xae79653b]
  20 [-]: GETUPVAL  R5 U0        ; R5 := U0
  21 [-]: LOADK     R6 2         ; R6 := 2.000000
@@ -172,7 +172,7 @@
  25 [-]: GETUPVAL  R5 U0        ; R5 := U0
  26 [-]: LOADK     R6 3         ; R6 := 3.000000
  27 [-]: CALL      R3 4 2       ; R3 := R3(R4,R5,R6)
- 28 [-]: SETTABLE  R2 K7 R3     ; R2[0xcbd666e1] := R3
+ 28 [-]: SETTABLE  R2 K7 R3     ; R2["z"] := R3
  29 [-]: GETTABLE  R3 R2 K4     ; R3 := R2["x"]
  30 [-]: LT        0 K8 R3      ; if 10.000000 >= R3 then PC := 47
  31 [-]: JMP       47           ; PC := 47
@@ -180,7 +180,7 @@
  33 [-]: GETUPVAL  R5 U1        ; R5 := U1
  34 [-]: LOADK     R6 1         ; R6 := 1.000000
  35 [-]: CALL      R3 4 2       ; R3 := R3(R4,R5,R6)
- 36 [-]: SETTABLE  R2 K4 R3     ; R2[0xe134ac06] := R3
+ 36 [-]: SETTABLE  R2 K4 R3     ; R2["x"] := R3
  37 [-]: SELF      R3 R1 K5     ; R4 := R1; R3 := R1[0xae79653b]
  38 [-]: GETUPVAL  R5 U1        ; R5 := U1
  39 [-]: LOADK     R6 2         ; R6 := 2.000000
@@ -190,7 +190,7 @@
  43 [-]: GETUPVAL  R5 U1        ; R5 := U1
  44 [-]: LOADK     R6 3         ; R6 := 3.000000
  45 [-]: CALL      R3 4 2       ; R3 := R3(R4,R5,R6)
- 46 [-]: SETTABLE  R2 K7 R3     ; R2[0xcbd666e1] := R3
+ 46 [-]: SETTABLE  R2 K7 R3     ; R2["z"] := R3
  47 [-]: GETTABLE  R3 R2 K4     ; R3 := R2["x"]
  48 [-]: LT        0 K8 R3      ; if 10.000000 >= R3 then PC := 65
  49 [-]: JMP       65           ; PC := 65
@@ -198,7 +198,7 @@
  51 [-]: GETUPVAL  R5 U2        ; R5 := U2
  52 [-]: LOADK     R6 1         ; R6 := 1.000000
  53 [-]: CALL      R3 4 2       ; R3 := R3(R4,R5,R6)
- 54 [-]: SETTABLE  R2 K4 R3     ; R2[0xe134ac06] := R3
+ 54 [-]: SETTABLE  R2 K4 R3     ; R2["x"] := R3
  55 [-]: SELF      R3 R1 K5     ; R4 := R1; R3 := R1[0xae79653b]
  56 [-]: GETUPVAL  R5 U2        ; R5 := U2
  57 [-]: LOADK     R6 2         ; R6 := 2.000000
@@ -208,7 +208,7 @@
  61 [-]: GETUPVAL  R5 U2        ; R5 := U2
  62 [-]: LOADK     R6 3         ; R6 := 3.000000
  63 [-]: CALL      R3 4 2       ; R3 := R3(R4,R5,R6)
- 64 [-]: SETTABLE  R2 K7 R3     ; R2[0xcbd666e1] := R3
+ 64 [-]: SETTABLE  R2 K7 R3     ; R2["z"] := R3
  65 [-]: GETTABLE  R3 R2 K4     ; R3 := R2["x"]
  66 [-]: LT        0 K9 R3      ; if 5.000000 >= R3 then PC := 74
  67 [-]: JMP       74           ; PC := 74

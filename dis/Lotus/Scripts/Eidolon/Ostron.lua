@@ -296,9 +296,9 @@
  13 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
  14 [-]: GETTABLE  R4 R4 R5     ; R4 := R4[R5]
  15 [-]: LOADBOOL  R5 0 0       ; R5 := false
- 16 [-]: SETUPVAL  R5 U0        ; U82 := 
+ 16 [-]: SETUPVAL  R5 U0        ; U82 := R0
  17 [-]: LOADK     R5 0         ; R5 := 0.000000
- 18 [-]: SETUPVAL  R5 U1        ; U82 := 
+ 18 [-]: SETUPVAL  R5 U1        ; U82 := R1
  19 [-]: GETGLOBAL R5 K3        ; R5 := 0x7b998233
  20 [-]: MOVE      R6 R0        ; R6 := R0
  21 [-]: CALL      R5 2 2       ; R5 := R5(R6)
@@ -343,7 +343,7 @@
   3 [-]: JMP       5            ; PC := 5
   4 [-]: RETURN    R0 1         ; return 
   5 [-]: LOADK     R3 0         ; R3 := 0.000000
-  6 [-]: SETUPVAL  R3 U1        ; U82 := 
+  6 [-]: SETUPVAL  R3 U1        ; U82 := R1
   7 [-]: GETGLOBAL R3 K0        ; R3 := 0x8393bfab
   8 [-]: GETGLOBAL R4 K1        ; R4 := 0x55730e1a
   9 [-]: LOADK     R5 1         ; R5 := 1.000000
@@ -387,7 +387,7 @@
  47 [-]: LOADBOOL  R8 0 0       ; R8 := false
  48 [-]: CALL      R5 4 1       ; R5(R6,R7,R8)
  49 [-]: LOADBOOL  R5 1 0       ; R5 := true
- 50 [-]: SETUPVAL  R5 U0        ; U82 := 
+ 50 [-]: SETUPVAL  R5 U0        ; U82 := R0
  51 [-]: RETURN    R0 1         ; return 
 
 
@@ -408,7 +408,7 @@
   6 [-]: GETGLOBAL R3 K3        ; R3 := 0xd8f1f6ba
   7 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
   8 [-]: MOVE      R2 R0        ; R2 := R0
-  9 [-]: SETUPVAL  R0 U0        ; U82 := 
+  9 [-]: SETUPVAL  R0 U0        ; U82 := R0
  10 [-]: GETGLOBAL R3 K4        ; R3 := 0x89326c93
  11 [-]: SELF      R3 R3 K5     ; R4 := R3; R3 := R3[0x78298275]
  12 [-]: CALL      R3 2 2       ; R3 := R3(R4)
@@ -453,7 +453,7 @@
  51 [-]: GETGLOBAL R8 K21       ; R8 := 0x67652851
  52 [-]: CALL      R8 1 2       ; R8 := R8()
  53 [-]: ADD       R7 R7 R8     ; R7 := R7 + R8
- 54 [-]: SETUPVAL  R7 U2        ; U82 := 
+ 54 [-]: SETUPVAL  R7 U2        ; U82 := R2
  55 [-]: GETGLOBAL R7 K4        ; R7 := 0x89326c93
  56 [-]: SELF      R7 R7 K5     ; R8 := R7; R7 := R7[0x78298275]
  57 [-]: CALL      R7 2 2       ; R7 := R7(R8)

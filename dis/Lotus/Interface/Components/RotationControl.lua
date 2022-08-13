@@ -55,7 +55,7 @@
  27 [-]: CLOSURE   R2 4         ; R2 := closure(Function #1.5)
  28 [-]: SETTABLE  R1 K17 R2    ; R1["SetRightStickDeadZone"] := R2
  29 [-]: CLOSURE   R2 5         ; R2 := closure(Function #1.6)
- 30 [-]: SETTABLE  R1 K18 R2    ; R1[0x00000098] := R2
+ 30 [-]: SETTABLE  R1 K18 R2    ; R1["GetMouseDelta"] := R2
  31 [-]: CLOSURE   R2 6         ; R2 := closure(Function #1.7)
  32 [-]: SETTABLE  R1 K19 R2    ; R1["GetControllerDelta"] := R2
  33 [-]: CLOSURE   R2 7         ; R2 := closure(Function #1.8)

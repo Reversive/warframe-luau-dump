@@ -1270,12 +1270,12 @@
  11 [-]: SETTABLE  R1 K5 K6     ; R1["Title"] := "/Lotus/Language/Menu/MainMenu_News"
  12 [-]: GETUPVAL  R2 U1        ; R2 := U1
  13 [-]: GETTABLE  R2 R2 K8     ; R2 := R2["NEWS"]
- 14 [-]: SETTABLE  R1 K7 R2     ; R1[0x06d055f9] := R2
+ 14 [-]: SETTABLE  R1 K7 R2     ; R1["TabId"] := R2
  15 [-]: NEWTABLE  R2 0 2       ; R2 := {}
  16 [-]: SETTABLE  R2 K5 K9     ; R2["Title"] := "/Lotus/Language/Webpage/WP_MenuCommunity"
  17 [-]: GETUPVAL  R3 U1        ; R3 := U1
  18 [-]: GETTABLE  R3 R3 K10    ; R3 := R3["COMMUNITY"]
- 19 [-]: SETTABLE  R2 K7 R3     ; R2[0x06d055f9] := R3
+ 19 [-]: SETTABLE  R2 K7 R3     ; R2["TabId"] := R3
  20 [-]: SETLIST   R0 2 1       ; R0[(1-1)*FPF+i] := R(0+i), 1 <= i <= 2
  21 [-]: GETUPVAL  R1 U0        ; R1 := U0
  22 [-]: LEN       R2 R0        ; R2 := # R0

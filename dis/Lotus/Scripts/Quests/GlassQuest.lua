@@ -199,7 +199,7 @@
   4 [-]: TEST      R2 1         ; if R2 then PC := 7
   5 [-]: JMP       7            ; PC := 7
   6 [-]: NEWTABLE  R2 0 0       ; R2 := {}
-  7 [-]: SETTABLE  R1 K1 R2     ; R1["DioramaGlassShard"] := R2
+  7 [-]: SETTABLE  R1 K1 R2     ; R1[0xa533083a] := R2
   8 [-]: SELF      R1 R0 K2     ; R2 := R0; R1 := R0[0x66472bf5]
   9 [-]: LOADK     R3 1         ; R3 := 1.000000
  10 [-]: CALL      R1 3 1       ; R1(R2,R3)
@@ -1116,7 +1116,7 @@
  43 [-]: GETGLOBAL R9 K15       ; R9 := 0x7ed0a956
  44 [-]: MOVE      R10 R7       ; R10 := R7
  45 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 46 [-]: SETTABLE  R8 K16 R9    ; R8["levelKeyName"] := R9
+ 46 [-]: SETTABLE  R8 K16 R9    ; R8[0xe4162eed] := R9
  47 [-]: GETGLOBAL R9 K17       ; R9 := _T
  48 [-]: SETTABLE  R9 K18 K19   ; R9["StartingSoloMission"] := true
  49 [-]: GETUPVAL  R9 U1        ; R9 := U1
@@ -1222,10 +1222,10 @@
   1 [-]: TEST      R0 0         ; if not R0 then PC := 6
   2 [-]: JMP       6            ; PC := 6
   3 [-]: LOADBOOL  R2 1 0       ; R2 := true
-  4 [-]: SETUPVAL  R2 U0        ; U82 := 
+  4 [-]: SETUPVAL  R2 U0        ; U82 := R0
   5 [-]: JMP       12           ; PC := 12
   6 [-]: LOADBOOL  R2 1 0       ; R2 := true
-  7 [-]: SETUPVAL  R2 U1        ; U82 := 
+  7 [-]: SETUPVAL  R2 U1        ; U82 := R1
   8 [-]: GETGLOBAL R2 K0        ; R2 := 0x3d106989
   9 [-]: LOADK     R3 K1        ; R3 := "Failed to advance GlassQuest: "
  10 [-]: MOVE      R4 R1        ; R4 := R1
@@ -1245,10 +1245,10 @@
   1 [-]: TEST      R0 0         ; if not R0 then PC := 6
   2 [-]: JMP       6            ; PC := 6
   3 [-]: LOADBOOL  R2 1 0       ; R2 := true
-  4 [-]: SETUPVAL  R2 U0        ; U82 := 
+  4 [-]: SETUPVAL  R2 U0        ; U82 := R0
   5 [-]: JMP       12           ; PC := 12
   6 [-]: LOADBOOL  R2 1 0       ; R2 := true
-  7 [-]: SETUPVAL  R2 U1        ; U82 := 
+  7 [-]: SETUPVAL  R2 U1        ; U82 := R1
   8 [-]: GETGLOBAL R2 K0        ; R2 := 0x3d106989
   9 [-]: LOADK     R3 K1        ; R3 := "Failed to give triggered message for GlassQuest: "
  10 [-]: MOVE      R4 R1        ; R4 := R1
@@ -1284,9 +1284,9 @@
   5 [-]: JMP       7            ; PC := 7
   6 [-]: RETURN    R0 1         ; return 
   7 [-]: LOADBOOL  R2 0 0       ; R2 := false
-  8 [-]: SETUPVAL  R2 U0        ; U82 := 
+  8 [-]: SETUPVAL  R2 U0        ; U82 := R0
   9 [-]: LOADBOOL  R2 0 0       ; R2 := false
- 10 [-]: SETUPVAL  R2 U1        ; U82 := 
+ 10 [-]: SETUPVAL  R2 U1        ; U82 := R1
  11 [-]: SELF      R2 R0 K1     ; R3 := R0; R2 := R0[0x88cfae95]
  12 [-]: SUB       R4 R1 K2     ; R4 := R1 - 1.000000
  13 [-]: LOADK     R5 K3        ; R5 := "OnAdvanceQuest"
@@ -1322,9 +1322,9 @@
  43 [-]: JMP       33           ; PC := 33
  44 [-]: LOADK     R4 0         ; R4 := 0.000000
  45 [-]: LOADBOOL  R5 0 0       ; R5 := false
- 46 [-]: SETUPVAL  R5 U0        ; U82 := 
+ 46 [-]: SETUPVAL  R5 U0        ; U82 := R0
  47 [-]: LOADBOOL  R5 0 0       ; R5 := false
- 48 [-]: SETUPVAL  R5 U1        ; U82 := 
+ 48 [-]: SETUPVAL  R5 U1        ; U82 := R1
  49 [-]: GETGLOBAL R5 K0        ; R5 := 0x7b998233
  50 [-]: MOVE      R6 R0        ; R6 := R0
  51 [-]: CALL      R5 2 2       ; R5 := R5(R6)
@@ -1559,9 +1559,9 @@
 192 [-]: TEST      R8 1         ; if R8 then PC := 270
 193 [-]: JMP       270          ; PC := 270
 194 [-]: LOADBOOL  R8 0 0       ; R8 := false
-195 [-]: SETUPVAL  R8 U2        ; U82 := 
+195 [-]: SETUPVAL  R8 U2        ; U82 := R2
 196 [-]: LOADBOOL  R8 0 0       ; R8 := false
-197 [-]: SETUPVAL  R8 U3        ; U82 := 
+197 [-]: SETUPVAL  R8 U3        ; U82 := R3
 198 [-]: SELF      R8 R1 K38    ; R9 := R1; R8 := R1[0xc106d418]
 199 [-]: MOVE      R10 R3       ; R10 := R3
 200 [-]: MOVE      R11 R4       ; R11 := R4
@@ -1598,9 +1598,9 @@
 231 [-]: JMP       221          ; PC := 221
 232 [-]: LOADK     R10 0        ; R10 := 0.000000
 233 [-]: LOADBOOL  R11 0 0      ; R11 := false
-234 [-]: SETUPVAL  R11 U2       ; U82 := 
+234 [-]: SETUPVAL  R11 U2       ; U82 := R2
 235 [-]: LOADBOOL  R11 0 0      ; R11 := false
-236 [-]: SETUPVAL  R11 U3       ; U82 := 
+236 [-]: SETUPVAL  R11 U3       ; U82 := R3
 237 [-]: GETGLOBAL R11 K0       ; R11 := 0x7b998233
 238 [-]: MOVE      R12 R1       ; R12 := R1
 239 [-]: CALL      R11 2 2      ; R11 := R11(R12)

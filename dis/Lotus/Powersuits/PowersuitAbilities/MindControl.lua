@@ -2083,12 +2083,12 @@
  21 [-]: NEWTABLE  R3 0 2       ; R3 := {}
  22 [-]: GETGLOBAL R4 K7        ; R4 := 0x4da5c118
  23 [-]: DIV       R4 R4 K11    ; R4 := R4 / 2.000000
- 24 [-]: SETTABLE  R3 K10 R4    ; R3[0xd1586535] := R4
+ 24 [-]: SETTABLE  R3 K10 R4    ; R3[0xa533083a] := R4
  25 [-]: SELF      R4 R0 K13    ; R5 := R0; R4 := R0[0x7e627183]
  26 [-]: LOADBOOL  R6 1 0       ; R6 := true
  27 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
- 28 [-]: SETTABLE  R3 K12 R4    ; R3[0xc163f229] := R4
- 29 [-]: SETTABLE  R2 K9 R3     ; R2[0x5163741e] := R3
+ 28 [-]: SETTABLE  R3 K12 R4    ; R3[0xe4a5b3ca] := R4
+ 29 [-]: SETTABLE  R2 K9 R3     ; R2[0x5db3ce80] := R3
  30 [-]: RETURN    R0 1         ; return 
 
 

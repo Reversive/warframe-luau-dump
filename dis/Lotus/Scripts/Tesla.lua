@@ -31,7 +31,7 @@
   2 [-]: GETGLOBAL R2 K1        ; R2 := 0x476080cb
   3 [-]: ADD       R1 R1 R2     ; R1 := R1 + R2
   4 [-]: GETGLOBAL R2 K2        ; R2 := 0x5bced4c4
-  5 [-]: GETTABLE  R2 R2 K3     ; R82 := R2[0xb62ecfe0]
+  5 [-]: GETTABLE  R2 R2 K3     ; R2 := R2[0xb62ecfe0]
   6 [-]: LOADK     R3 0         ; R3 := 0.000000
   7 [-]: GETGLOBAL R4 K4        ; R4 := 0xbe190284
   8 [-]: SELF      R4 R4 K5     ; R5 := R4; R4 := R4[0x513cc620]
@@ -39,7 +39,7 @@
  10 [-]: UNM       R4 R4        ; R4 := ^ R4
  11 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
  12 [-]: GETGLOBAL R3 K2        ; R3 := 0x5bced4c4
- 13 [-]: GETTABLE  R3 R3 K6     ; R82 := R3[0xc62a6be2]
+ 13 [-]: GETTABLE  R3 R3 K6     ; R3 := R3[0xc62a6be2]
  14 [-]: ADD       R4 R0 R2     ; R4 := R0 + R2
  15 [-]: GETGLOBAL R5 K7        ; R5 := 0xfa1b5621
  16 [-]: ADD       R5 R1 R5     ; R5 := R1 + R5
@@ -124,7 +124,7 @@
  50 [-]: LT        0 K11 R6     ; if 0.000000 >= R6 then PC := 92
  51 [-]: JMP       92           ; PC := 92
  52 [-]: GETGLOBAL R7 K12       ; R7 := 0x34291f5c
- 53 [-]: GETTABLE  R7 R7 K13    ; R82 := R7[0x35c16153]
+ 53 [-]: GETTABLE  R7 R7 K13    ; R7 := R7[0x35c16153]
  54 [-]: CALL      R7 1 2       ; R7 := R7()
  55 [-]: SETTABLE  R7 K14 R6    ; R7["baseAmount"] := R6
  56 [-]: SELF      R8 R7 K15    ; R9 := R7; R8 := R7[0x1586e35e]
@@ -205,7 +205,7 @@
  21 [-]: TEST      R7 1         ; if R7 then PC := 28
  22 [-]: JMP       28           ; PC := 28
  23 [-]: GETGLOBAL R7 K8        ; R7 := 0x33bdd652
- 24 [-]: GETTABLE  R7 R7 K9     ; R82 := R7[0x23d5322f]
+ 24 [-]: GETTABLE  R7 R7 K9     ; R7 := R7[0x23d5322f]
  25 [-]: MOVE      R8 R6        ; R8 := R6
  26 [-]: MOVE      R9 R1        ; R9 := R1
  27 [-]: CALL      R7 3 1       ; R7(R8,R9)
@@ -250,7 +250,7 @@
  27 [-]: EQ        0 R11 R1     ; if R11 ~= R1 then PC := 35
  28 [-]: JMP       35           ; PC := 35
  29 [-]: GETGLOBAL R12 K8       ; R12 := 0x33bdd652
- 30 [-]: GETTABLE  R12 R12 K9   ; R82 := R12[0x9c1f3b5a]
+ 30 [-]: GETTABLE  R12 R12 K9   ; R12 := R12[0x9c1f3b5a]
  31 [-]: MOVE      R13 R6       ; R13 := R6
  32 [-]: MOVE      R14 R10      ; R14 := R10
  33 [-]: CALL      R12 3 1      ; R12(R13,R14)

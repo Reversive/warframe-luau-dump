@@ -2889,7 +2889,7 @@
  67 [-]: GETGLOBAL R6 K19       ; R6 := mVoteInfoText
  68 [-]: SETTABLE  R6 K20 R0    ; R6["Title"] := R0
  69 [-]: GETGLOBAL R6 K19       ; R6 := mVoteInfoText
- 70 [-]: SETTABLE  R6 K21 R1    ; R6[0x59fd07dd] := R1
+ 70 [-]: SETTABLE  R6 K21 R1    ; R6[0xe7f2b02f] := R1
  71 [-]: RETURN    R0 1         ; return 
 
 
@@ -4753,7 +4753,7 @@
 ; Max Stack Size:  2
 
   1 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  2 [-]: SETTABLE  R0 K0 R1     ; R0[0x67bc869f] := R1
+  2 [-]: SETTABLE  R0 K0 R1     ; R0["gameModeId"] := R1
   3 [-]: GETUPVAL  R1 U1        ; R1 := U1
   4 [-]: SETTABLE  R0 K1 R1     ; R0["gameModeIdMax"] := R1
   5 [-]: SETTABLE  R0 K2 K3     ; R0["allowJoinInProgress"] := true
@@ -6305,7 +6305,7 @@
 347 [-]: CALL      R13 4 1      ; R13(R14,R15,R16)
 348 [-]: JMP       364          ; PC := 364
 349 [-]: GETGLOBAL R13 K1       ; R13 := _T
-350 [-]: SETTABLE  R13 K2 R11   ; R13["UserInvitePending"] := R11
+350 [-]: SETTABLE  R13 K2 R11   ; R13[0x3d106989] := R11
 351 [-]: JMP       364          ; PC := 364
 352 [-]: GETUPVAL  R13 U5       ; R13 := U5
 353 [-]: LOADBOOL  R14 0 0      ; R14 := false
@@ -6859,8 +6859,8 @@
   4 [-]: JMP       11           ; PC := 11
   5 [-]: GETUPVAL  R2 U0        ; R2 := U0
   6 [-]: NEWTABLE  R3 0 2       ; R3 := {}
-  7 [-]: SETTABLE  R3 K0 R1     ; R3[0xd8140b94] := R1
-  8 [-]: SETTABLE  R3 K1 R1     ; R3[0x52f40f14] := R1
+  7 [-]: SETTABLE  R3 K0 R1     ; R3["low"] := R1
+  8 [-]: SETTABLE  R3 K1 R1     ; R3["high"] := R1
   9 [-]: SETTABLE  R2 R0 R3     ; R2[R0] := R3
  10 [-]: JMP       27           ; PC := 27
  11 [-]: GETUPVAL  R2 U0        ; R2 := U0
@@ -6870,7 +6870,7 @@
  15 [-]: JMP       19           ; PC := 19
  16 [-]: GETUPVAL  R2 U0        ; R2 := U0
  17 [-]: GETTABLE  R2 R2 R0     ; R2 := R2[R0]
- 18 [-]: SETTABLE  R2 K0 R1     ; R2[0xd8140b94] := R1
+ 18 [-]: SETTABLE  R2 K0 R1     ; R2["low"] := R1
  19 [-]: GETUPVAL  R2 U0        ; R2 := U0
  20 [-]: GETTABLE  R2 R2 R0     ; R2 := R2[R0]
  21 [-]: GETTABLE  R2 R2 K1     ; R2 := R2["high"]
@@ -6878,7 +6878,7 @@
  23 [-]: JMP       27           ; PC := 27
  24 [-]: GETUPVAL  R2 U0        ; R2 := U0
  25 [-]: GETTABLE  R2 R2 R0     ; R2 := R2[R0]
- 26 [-]: SETTABLE  R2 K1 R1     ; R2[0x52f40f14] := R1
+ 26 [-]: SETTABLE  R2 K1 R1     ; R2["high"] := R1
  27 [-]: RETURN    R0 1         ; return 
 
 
@@ -9295,7 +9295,7 @@
  26 [-]: GETGLOBAL R4 K8        ; R4 := 0x0032441c
  27 [-]: SELF      R5 R3 K13    ; R6 := R3; R5 := R3[0x2b345b34]
  28 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 29 [-]: SETTABLE  R4 K12 R5    ; R4["PendingDuelComponentJson"] := R5
+ 29 [-]: SETTABLE  R4 K12 R5    ; R4[0x34291f5c] := R5
  30 [-]: RETURN    R0 1         ; return 
 
 
@@ -10457,7 +10457,7 @@
  99 [-]: GETGLOBAL R1 K18       ; R1 := _T
 100 [-]: GETUPVAL  R2 U6        ; R2 := U6
 101 [-]: GETTABLE  R2 R2 K20    ; R2 := R2["NONE"]
-102 [-]: SETTABLE  R1 K19 R2    ; R1[0x3d106989] := R2
+102 [-]: SETTABLE  R1 K19 R2    ; R1["SquadCountdownTimer"] := R2
 103 [-]: GETUPVAL  R1 U2        ; R1 := U2
 104 [-]: GETUPVAL  R2 U7        ; R2 := U7
 105 [-]: EQ        1 R1 R2      ; if R1 == R2 then PC := 158
@@ -13699,7 +13699,7 @@
 139 [-]: SELF      R17 R17 K36  ; R18 := R17; R17 := R17[0x776913bc]
 140 [-]: CALL      R17 2 0      ; R17,... := R17(R18)
 141 [-]: CALL      R16 0 2      ; R16 := R16(R17,...)
-142 [-]: SETTABLE  R15 K34 R16  ; R15[0x74a6df5d] := R16
+142 [-]: SETTABLE  R15 K34 R16  ; R15["scenarioLocation"] := R16
 143 [-]: GETGLOBAL R16 K1       ; R16 := 0xe7f2b02f
 144 [-]: SELF      R16 R16 K38  ; R17 := R16; R16 := R16[0xb6b65f09]
 145 [-]: CALL      R16 2 2      ; R16 := R16(R17)
@@ -14723,7 +14723,7 @@
   7 [-]: LOADK     R5 K3        ; R5 := "\""
   8 [-]: LOADK     R6 K4        ; R6 := ""
   9 [-]: CALL      R3 4 2       ; R3 := R3(R4,R5,R6)
- 10 [-]: SETTABLE  R2 K0 R3     ; R2[0xa102c205] := R3
+ 10 [-]: SETTABLE  R2 K0 R3     ; R2["ContentUrlResponse"] := R3
  11 [-]: JMP       14           ; PC := 14
  12 [-]: GETUPVAL  R2 U0        ; R2 := U0
  13 [-]: SETTABLE  R2 K0 K4     ; R2["ContentUrlResponse"] := ""
@@ -15859,7 +15859,7 @@
 1045 [-]: CALL      R43 2 0      ; R43,... := R43(R44)
 1046 [-]: CALL      R42 0 0      ; R42,... := R42(R43,...)
 1047 [-]: CALL      R41 0 2      ; R41 := R41(R42,...)
-1048 [-]: SETTABLE  R8 K133 R41  ; R8["location"] := R41
+1048 [-]: SETTABLE  R8 K133 R41  ; R8[0x0032441c] := R41
 1049 [-]: GETGLOBAL R41 K0       ; R41 := 0x7b998233
 1050 [-]: GETTABLE  R42 R8 K146  ; R42 := R8["gameRules"]
 1051 [-]: CALL      R41 2 2      ; R41 := R41(R42)

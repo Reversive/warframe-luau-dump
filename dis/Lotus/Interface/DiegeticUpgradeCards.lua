@@ -3691,7 +3691,7 @@
  86 [-]: NEWTABLE  R27 0 10     ; R27 := {}
  87 [-]: SETTABLE  R27 K19 R16  ; R27["mCardIndex"] := R16
  88 [-]: SETTABLE  R27 K23 K22  ; R27["Count"] := 1.000000
- 89 [-]: SETTABLE  R27 K24 R22  ; R27[0xb15e6aca] := R22
+ 89 [-]: SETTABLE  R27 K24 R22  ; R27["Categories"] := R22
  90 [-]: SETTABLE  R27 K25 R1   ; R27["mSelectionText"] := R1
  91 [-]: GETTABLE  R28 R17 K26  ; R28 := R17["mName"]
  92 [-]: SETTABLE  R27 K26 R28  ; R27["mName"] := R28
@@ -3776,7 +3776,7 @@
 171 [-]: SETTABLE  R38 K31 K47  ; R38["SearchCache"] := ""
 172 [-]: SETTABLE  R38 K19 K48  ; R38["mCardIndex"] := -1.000000
 173 [-]: GETGLOBAL R39 K49      ; R39 := mFillerCategories
-174 [-]: SETTABLE  R38 K24 R39  ; R38[0xb15e6aca] := R39
+174 [-]: SETTABLE  R38 K24 R39  ; R38["Categories"] := R39
 175 [-]: SETTABLE  R38 K25 R1   ; R38["mSelectionText"] := R1
 176 [-]: LOADBOOL  R39 1 0      ; R39 := true
 177 [-]: CALL      R36 4 1      ; R36(R37,R38,R39)
@@ -6766,7 +6766,7 @@
  63 [-]: GETTABLE  R4 R4 K14    ; R4 := R4["GRID_SEP_X"]
  64 [-]: MUL       R4 R4 K26    ; R4 := R4 * -0.200000
  65 [-]: ADD       R3 R3 R4     ; R3 := R3 + R4
- 66 [-]: SETTABLE  R2 K22 R3    ; R2["mInitialX"] := R3
+ 66 [-]: SETTABLE  R2 K22 R3    ; R2[0xd3f3ad63] := R3
  67 [-]: JMP       116          ; PC := 116
  68 [-]: GETGLOBAL R2 K27       ; R2 := mArcaneInfo
  69 [-]: GETTABLE  R2 R2 K28    ; R2 := R2["Slots"]
@@ -6790,7 +6790,7 @@
  87 [-]: GETTABLE  R4 R4 K14    ; R4 := R4["GRID_SEP_X"]
  88 [-]: MUL       R4 R4 K33    ; R4 := R4 * 0.500000
  89 [-]: ADD       R3 R3 R4     ; R3 := R3 + R4
- 90 [-]: SETTABLE  R2 K22 R3    ; R2["mInitialX"] := R3
+ 90 [-]: SETTABLE  R2 K22 R3    ; R2[0xd3f3ad63] := R3
  91 [-]: JMP       116          ; PC := 116
  92 [-]: SELF      R2 R1 K34    ; R3 := R1; R2 := R1[0xf2deaf69]
  93 [-]: GETGLOBAL R4 K35       ; R4 := gSentinelPowerSuitType
@@ -6803,7 +6803,7 @@
 100 [-]: GETTABLE  R4 R4 K14    ; R4 := R4["GRID_SEP_X"]
 101 [-]: MUL       R4 R4 K36    ; R4 := R4 * -0.500000
 102 [-]: ADD       R3 R3 R4     ; R3 := R3 + R4
-103 [-]: SETTABLE  R2 K22 R3    ; R2["mInitialX"] := R3
+103 [-]: SETTABLE  R2 K22 R3    ; R2[0xd3f3ad63] := R3
 104 [-]: JMP       116          ; PC := 116
 105 [-]: GETUPVAL  R2 U3        ; R2 := U3
 106 [-]: CALL      R2 1 2       ; R2 := R2()
@@ -6815,7 +6815,7 @@
 112 [-]: GETTABLE  R4 R4 K14    ; R4 := R4["GRID_SEP_X"]
 113 [-]: MUL       R4 R4 K33    ; R4 := R4 * 0.500000
 114 [-]: ADD       R3 R3 R4     ; R3 := R3 + R4
-115 [-]: SETTABLE  R2 K22 R3    ; R2["mInitialX"] := R3
+115 [-]: SETTABLE  R2 K22 R3    ; R2[0xd3f3ad63] := R3
 116 [-]: SELF      R2 R1 K34    ; R3 := R1; R2 := R1[0xf2deaf69]
 117 [-]: GETGLOBAL R4 K35       ; R4 := gSentinelPowerSuitType
 118 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
@@ -7216,7 +7216,7 @@
 126 [-]: NEWTABLE  R8 0 3       ; R8 := {}
 127 [-]: SETTABLE  R8 K33 R1    ; R8["item"] := R1
 128 [-]: GETGLOBAL R9 K3        ; R9 := mInstalledGrid
-129 [-]: SETTABLE  R8 K34 R9    ; R8["grid"] := R9
+129 [-]: SETTABLE  R8 K34 R9    ; R8[0xcbcefa26] := R9
 130 [-]: SETTABLE  R8 K35 R0    ; R8["element"] := R0
 131 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
 132 [-]: GETGLOBAL R4 K36       ; R4 := _T
@@ -11029,7 +11029,7 @@
  68 [-]: LOADK     R6 K20       ; R6 := "/Lotus/Language/Menu/Loadout_UpgradeSystemTitleNoRank"
  69 [-]: LOADBOOL  R7 0 0       ; R7 := false
  70 [-]: NEWTABLE  R8 0 1       ; R8 := {}
- 71 [-]: SETTABLE  R8 K21 R1    ; R8["ITEM"] := R1
+ 71 [-]: SETTABLE  R8 K21 R1    ; R8[0xcc5f3150] := R1
  72 [-]: CALL      R4 5 2       ; R4 := R4(R5,R6,R7,R8)
  73 [-]: MOVE      R0 R4        ; R0 := R4
  74 [-]: JMP       149          ; PC := 149
@@ -11045,7 +11045,7 @@
  84 [-]: LOADK     R7 K24       ; R7 := "/Lotus/Language/Menu/Loadout_UpgradeSystemTitleUnranked"
  85 [-]: LOADBOOL  R8 0 0       ; R8 := false
  86 [-]: NEWTABLE  R9 0 2       ; R9 := {}
- 87 [-]: SETTABLE  R9 K21 R1    ; R9["ITEM"] := R1
+ 87 [-]: SETTABLE  R9 K21 R1    ; R9[0xcc5f3150] := R1
  88 [-]: SETTABLE  R9 K25 R4    ; R9["RANK"] := R4
  89 [-]: CALL      R5 5 2       ; R5 := R5(R6,R7,R8,R9)
  90 [-]: MOVE      R0 R5        ; R0 := R5
@@ -11103,7 +11103,7 @@
 142 [-]: LOADK     R9 K2        ; R9 := "/Lotus/Language/Menu/Loadout_UpgradeSystemTitleRanked"
 143 [-]: LOADBOOL  R10 0 0      ; R10 := false
 144 [-]: NEWTABLE  R11 0 2      ; R11 := {}
-145 [-]: SETTABLE  R11 K21 R1   ; R11["ITEM"] := R1
+145 [-]: SETTABLE  R11 K21 R1   ; R11[0xcc5f3150] := R1
 146 [-]: SETTABLE  R11 K25 R5   ; R11["RANK"] := R5
 147 [-]: CALL      R7 5 2       ; R7 := R7(R8,R9,R10,R11)
 148 [-]: MOVE      R0 R7        ; R0 := R7
@@ -12060,7 +12060,7 @@
  12 [-]: CALL      R2 2 1       ; R2(R3)
  13 [-]: JMP       21           ; PC := 21
  14 [-]: GETGLOBAL R2 K2        ; R2 := _T
- 15 [-]: SETTABLE  R2 K3 R0     ; R2["skipRemoveStatUpdate"] := R0
+ 15 [-]: SETTABLE  R2 K3 R0     ; R2[0xf64b7262] := R0
  16 [-]: GETUPVAL  R2 U2        ; R2 := U2
  17 [-]: GETTABLE  R2 R2 K4     ; R2 := R2[0xf616a184]
  18 [-]: LOADK     R3 K5        ; R3 := "/Lotus/Language/SystemMessages/ConfirmRemoveUpgrades"
@@ -16484,7 +16484,7 @@
 ; Max Stack Size:  5
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := _T
-  2 [-]: SETTABLE  R1 K1 R0     ; R1[0x03f57322] := R0
+  2 [-]: SETTABLE  R1 K1 R0     ; R1[0xae91e43b] := R0
   3 [-]: GETUPVAL  R1 U0        ; R1 := U0
   4 [-]: GETTABLE  R1 R1 K2     ; R1 := R1[0x2a1108a9]
   5 [-]: GETGLOBAL R2 K3        ; R2 := mArsenalConsoleTag
@@ -18533,7 +18533,7 @@
   4 [-]: GETTABLE  R1 R1 K2     ; R1 := R1[0x1467d5f4]
   5 [-]: CALL      R1 1 2       ; R1 := R1()
   6 [-]: NOT       R1 R1        ; R1 := not R1
-  7 [-]: SETTABLE  R0 K3 R1     ; R0["mAltButtonVisible"] := R1
+  7 [-]: SETTABLE  R0 K3 R1     ; R0[0x30456f58] := R1
   8 [-]: GETGLOBAL R2 K4        ; R2 := 0xae91e43b
   9 [-]: SELF      R2 R2 K5     ; R3 := R2; R2 := R2[0xc0a3774b]
  10 [-]: GETTABLE  R4 R0 K6     ; R4 := R0["mClipName"]
@@ -21547,4 +21547,4 @@
 1287 [-]: SELF      R31 R31 K53  ; R32 := R31; R31 := R31[0xaade900e]
 1288 [-]: LOADK     R33 K261     ; R33 := "Blurer"
 1289 [-]: LOADK     R34 11       ; R34 := 11.000000
-1290 [-]: GETGLOBAL R35 K96      ; 
+1290 [-]: GETGLOBAL R35 K96      ; R35 :

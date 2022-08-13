@@ -41,17 +41,17 @@
 ; Max Stack Size:  5
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0xbe190284
-  2 [-]: SETUPVAL  R1 U0        ; U82 := 
+  2 [-]: SETUPVAL  R1 U0        ; U82 := R0
   3 [-]: SELF      R1 R0 K1     ; R2 := R0; R1 := R0[0x891629fa]
   4 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  5 [-]: SETUPVAL  R1 U1        ; U82 := 
-  6 [-]: SETUPVAL  R0 U2        ; U82 := 
+  5 [-]: SETUPVAL  R1 U1        ; U82 := R1
+  6 [-]: SETUPVAL  R0 U2        ; U82 := R2
   7 [-]: GETUPVAL  R1 U1        ; R1 := U1
   8 [-]: SELF      R1 R1 K2     ; R2 := R1; R1 := R1[0xe86a236e]
   9 [-]: CALL      R1 2 2       ; R1 := R1(R2)
  10 [-]: SELF      R2 R1 K3     ; R3 := R1; R2 := R1[0xe4c355e2]
  11 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 12 [-]: SETUPVAL  R2 U3        ; U82 := 
+ 12 [-]: SETUPVAL  R2 U3        ; U82 := R3
  13 [-]: SELF      R2 R0 K4     ; R3 := R0; R2 := R0[0xfe9dc265]
  14 [-]: LOADK     R4 3         ; R4 := 3.000000
  15 [-]: CALL      R2 3 1       ; R2(R3,R4)

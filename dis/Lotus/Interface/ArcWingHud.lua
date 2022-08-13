@@ -188,7 +188,7 @@
   4 [-]: JMP       6            ; PC := 6
   5 [-]: NEWTABLE  R0 0 0       ; R0 := {}
   6 [-]: GETGLOBAL R1 K0        ; R1 := _T
-  7 [-]: SETTABLE  R1 K1 R0     ; R1[0xb62ecfe0] := R0
+  7 [-]: SETTABLE  R1 K1 R0     ; R1["FriendlyCrewShipMarkers"] := R0
   8 [-]: GETGLOBAL R1 K2        ; R1 := 0x89326c93
   9 [-]: SELF      R1 R1 K3     ; R2 := R1; R1 := R1[0xfb669000]
  10 [-]: GETGLOBAL R3 K4        ; R3 := gCrewShipAvatarType

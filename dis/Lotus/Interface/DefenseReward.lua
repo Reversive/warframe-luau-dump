@@ -919,7 +919,7 @@
  25 [-]: GETUPVAL  R5 U0        ; R5 := U0
  26 [-]: MOVE      R6 R0        ; R6 := R0
  27 [-]: NEWTABLE  R7 0 3       ; R7 := {}
- 28 [-]: SETTABLE  R7 K7 R1     ; R7["IsSelected"] := R1
+ 28 [-]: SETTABLE  R7 K7 R1     ; R7[0x67bc869f] := R1
  29 [-]: SETTABLE  R7 K8 K9     ; R7["IsFocused"] := false
  30 [-]: SETTABLE  R7 K10 K11   ; R7["ShowInfoPopup"] := true
  31 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)

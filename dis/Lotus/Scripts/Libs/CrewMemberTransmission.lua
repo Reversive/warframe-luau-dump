@@ -176,7 +176,7 @@
  46 [-]: GETTABLE  R10 R2 K15   ; R10 := R2["Avatar"]
  47 [-]: SETTABLE  R9 K14 R10   ; R9["EntityToPlayOn"] := R10
  48 [-]: GETTABLE  R10 R8 K17   ; R10 := R8["mVoiceBoxDspEffectRes"]
- 49 [-]: SETTABLE  R9 K16 R10   ; R9[0x00000001] := R10
+ 49 [-]: SETTABLE  R9 K16 R10   ; R9["DspOverride"] := R10
  50 [-]: GETGLOBAL R10 K3       ; R10 := 0x7b998233
  51 [-]: GETGLOBAL R11 K18      ; R11 := 0x74acbbe0
  52 [-]: CALL      R10 2 2      ; R10 := R10(R11)

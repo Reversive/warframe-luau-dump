@@ -2947,7 +2947,7 @@
   6 [-]: JMP       10           ; PC := 10
   7 [-]: GETGLOBAL R0 K1        ; R0 := _T
   8 [-]: NEWTABLE  R1 0 0       ; R1 := {}
-  9 [-]: SETTABLE  R0 K2 R1     ; R0[0xb7ae3621] := R1
+  9 [-]: SETTABLE  R0 K2 R1     ; R0["Purgatory"] := R1
  10 [-]: GETUPVAL  R0 U0        ; R0 := U0
  11 [-]: CALL      R0 1 2       ; R0 := R0()
  12 [-]: TEST      R0 0         ; if not R0 then PC := 18
@@ -2959,7 +2959,7 @@
  18 [-]: GETGLOBAL R0 K1        ; R0 := _T
  19 [-]: GETTABLE  R0 R0 K2     ; R0 := R0["Purgatory"]
  20 [-]: GETUPVAL  R1 U1        ; R1 := U1
- 21 [-]: SETTABLE  R0 K3 R1     ; R0["timeRemaining"] := R1
+ 21 [-]: SETTABLE  R0 K3 R1     ; R0[0x4f5a2d3b] := R1
  22 [-]: GETGLOBAL R0 K1        ; R0 := _T
  23 [-]: GETTABLE  R0 R0 K2     ; R0 := R0["Purgatory"]
  24 [-]: SETTABLE  R0 K5 K6     ; R0["earlyOutTimer"] := nil

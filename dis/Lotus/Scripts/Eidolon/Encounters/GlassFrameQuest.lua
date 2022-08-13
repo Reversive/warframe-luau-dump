@@ -227,7 +227,7 @@
  19 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
  20 [-]: GETUPVAL  R2 U0        ; R2 := U0
  21 [-]: ADD       R2 R2 K6     ; R2 := R2 + 1.000000
- 22 [-]: SETUPVAL  R2 U0        ; U82 := 
+ 22 [-]: SETUPVAL  R2 U0        ; U82 := R0
  23 [-]: RETURN    R0 1         ; return 
 
 
@@ -295,10 +295,10 @@
  53 [-]: CALL      R7 5 1       ; R7(R8,R9,R10,R11)
  54 [-]: GETUPVAL  R7 U0        ; R7 := U0
  55 [-]: SUB       R7 R7 K8     ; R7 := R7 - 1.000000
- 56 [-]: SETUPVAL  R7 U0        ; U82 := 
+ 56 [-]: SETUPVAL  R7 U0        ; U82 := R0
  57 [-]: JMP       40           ; PC := 40
  58 [-]: LOADK     R7 0         ; R7 := 0.000000
- 59 [-]: SETUPVAL  R7 U0        ; U82 := 
+ 59 [-]: SETUPVAL  R7 U0        ; U82 := R0
  60 [-]: RETURN    R0 1         ; return 
  61 [-]: FORLOOP   R2 26        ; R2 += R4; if R2 <= R3 then begin PC := 26; R5 := R2 end
  62 [-]: RETURN    R0 1         ; return 

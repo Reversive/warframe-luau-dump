@@ -50,7 +50,7 @@
  22 [-]: TESTSET   R13 R4 1     ; if R4 then PC := 25 else R13 := R4
  23 [-]: JMP       25           ; PC := 25
  24 [-]: LOADK     R13 K7       ; R13 := ""
- 25 [-]: SETTABLE  R12 K6 R13   ; R12[0x00000093] := R13
+ 25 [-]: SETTABLE  R12 K6 R13   ; R12["mTopRightText"] := R13
  26 [-]: LEN       R13 R4       ; R13 := # R4
  27 [-]: LT        0 K8 R13     ; if 0.000000 >= R13 then PC := 34
  28 [-]: JMP       34           ; PC := 34
@@ -58,7 +58,7 @@
  30 [-]: MOVE      R14 R4       ; R14 := R4
  31 [-]: NEWTABLE  R15 0 0      ; R15 := {}
  32 [-]: CALL      R13 3 2      ; R13 := R13(R14,R15)
- 33 [-]: SETTABLE  R12 K6 R13   ; R12[0x00000093] := R13
+ 33 [-]: SETTABLE  R12 K6 R13   ; R12["mTopRightText"] := R13
  34 [-]: TESTSET   R13 R5 1     ; if R5 then PC := 37 else R13 := R5
  35 [-]: JMP       37           ; PC := 37
  36 [-]: LOADK     R13 K7       ; R13 := ""

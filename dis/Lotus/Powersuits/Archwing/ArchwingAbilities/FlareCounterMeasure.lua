@@ -197,7 +197,7 @@
  48 [-]: GETTABLE  R2 R2 K5     ; R2 := R2["Modded"]
  49 [-]: SETTABLE  R1 K5 R2     ; R1["Modded"] := R2
  50 [-]: GETGLOBAL R2 K1        ; R2 := _T
- 51 [-]: SETTABLE  R2 K14 R1    ; R2[0x30cc8f5c] := R1
+ 51 [-]: SETTABLE  R2 K14 R1    ; R2["AbilityUpgradeLevelInfo"] := R1
  52 [-]: RETURN    R0 1         ; return 
 
 

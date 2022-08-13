@@ -680,7 +680,7 @@
   3 [-]: SETTABLE  R0 K1 R1     ; R0["ShowWeaponPanel"] := R1
   4 [-]: GETGLOBAL R0 K0        ; R0 := _T
   5 [-]: CLOSURE   R1 1         ; R1 := closure(Function #9.2)
-  6 [-]: SETTABLE  R0 K2 R1     ; R0["HideWeaponPanel"] := R1
+  6 [-]: SETTABLE  R0 K2 R1     ; R0[0x00000000] := R1
   7 [-]: GETGLOBAL R0 K0        ; R0 := _T
   8 [-]: CLOSURE   R1 2         ; R1 := closure(Function #9.3)
   9 [-]: SETTABLE  R0 K3 R1     ; R0["ShowAbilityPanel"] := R1
@@ -695,7 +695,7 @@
  18 [-]: SETTABLE  R0 K6 R1     ; R0["AddAbilityTimer"] := R1
  19 [-]: GETGLOBAL R0 K0        ; R0 := _T
  20 [-]: CLOSURE   R1 6         ; R1 := closure(Function #9.7)
- 21 [-]: SETTABLE  R0 K7 R1     ; R0[0x00000000] := R1
+ 21 [-]: SETTABLE  R0 K7 R1     ; R0["SetFocusTimer"] := R1
  22 [-]: GETGLOBAL R0 K0        ; R0 := _T
  23 [-]: CLOSURE   R1 7         ; R1 := closure(Function #9.8)
  24 [-]: SETTABLE  R0 K8 R1     ; R0["AddLogMessage"] := R1

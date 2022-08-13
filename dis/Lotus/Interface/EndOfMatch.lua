@@ -2746,7 +2746,7 @@
 129 [-]: EQ        1 R7 K34     ; if R7 == "" then PC := 134
 130 [-]: JMP       134          ; PC := 134
 131 [-]: GETGLOBAL R8 K0        ; R8 := _T
-132 [-]: SETTABLE  R8 K35 R7    ; R8[0x7b998233] := R7
+132 [-]: SETTABLE  R8 K35 R7    ; R8["MissionToSkipTo"] := R7
 133 [-]: JMP       136          ; PC := 136
 134 [-]: GETGLOBAL R8 K0        ; R8 := _T
 135 [-]: SETTABLE  R8 K35 K2    ; R8["MissionToSkipTo"] := nil
@@ -6596,25 +6596,25 @@
 200 [-]: LOADK     R41 K53      ; R41 := "\r"
 201 [-]: CONCAT    R30 R30 R41  ; R30 := R30 .. R31 .. R32 .. R33 .. R34 .. R35 .. R36 .. R37 .. R38 .. R39 .. R40 .. R41
 202 [-]: NEWTABLE  R31 0 9      ; R31 := {}
-203 [-]: SETTABLE  R31 K56 R9   ; R31[0x7b998233] := R9
+203 [-]: SETTABLE  R31 K56 R9   ; R31["Type"] := R9
 204 [-]: SETTABLE  R31 K57 K58  ; R31["Onslaught"] := true
 205 [-]: GETUPVAL  R32 U2       ; R32 := U2
 206 [-]: GETTABLE  R32 R32 K52  ; R32 := R32[0x1142c7a8]
 207 [-]: MOVE      R33 R15      ; R33 := R15
 208 [-]: CALL      R32 2 2      ; R32 := R32(R33)
 209 [-]: SETTABLE  R31 K15 R32  ; R31["Score"] := R32
-210 [-]: SETTABLE  R31 K59 R10  ; R31[0x67652851] := R10
+210 [-]: SETTABLE  R31 K59 R10  ; R31["Icon"] := R10
 211 [-]: SETTABLE  R31 K60 K58  ; R31["Themed"] := true
 212 [-]: GETGLOBAL R32 K62      ; R32 := 0x7f5022cf
 213 [-]: GETTABLE  R32 R32 K63  ; R32 := R32[0x3f3e4d12]
 214 [-]: MOVE      R33 R30      ; R33 := R30
 215 [-]: CALL      R32 2 2      ; R32 := R32(R33)
-216 [-]: SETTABLE  R31 K61 R32  ; R31[0xacea6d71] := R32
+216 [-]: SETTABLE  R31 K61 R32  ; R31["Name"] := R32
 217 [-]: LOADK     R32 K65      ; R32 := "<font color=\"#FloatingContentHighlight\" size=\"50\"><b>"
 218 [-]: MOVE      R33 R29      ; R33 := R29
 219 [-]: LOADK     R34 K66      ; R34 := "</b> </font>"
 220 [-]: CONCAT    R32 R32 R34  ; R32 := R32 .. R33 .. R34
-221 [-]: SETTABLE  R31 K64 R32  ; R31[0xcbd666e1] := R32
+221 [-]: SETTABLE  R31 K64 R32  ; R31["FinalRank"] := R32
 222 [-]: SETTABLE  R31 K67 K68  ; R31["IconColor"] := "0xFFFFFF"
 223 [-]: GETUPVAL  R32 U3       ; R32 := U3
 224 [-]: MOVE      R33 R9       ; R33 := R9
@@ -6826,7 +6826,7 @@
 185 [-]: SETTABLE  R18 K47 R19  ; R18["Icon2"] := R19
 186 [-]: SETTABLE  R18 K49 K42  ; R18["Themed"] := true
 187 [-]: SETTABLE  R18 K50 R17  ; R18["Name"] := R17
-188 [-]: SETTABLE  R18 K51 R14  ; R18["CompletionFaction"] := R14
+188 [-]: SETTABLE  R18 K51 R14  ; R18[0x3d106989] := R14
 189 [-]: GETGLOBAL R19 K52      ; R19 := mAffinityGrid
 190 [-]: SELF      R19 R19 K53  ; R20 := R19; R19 := R19[0xbad4316f]
 191 [-]: MOVE      R21 R18      ; R21 := R18

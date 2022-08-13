@@ -405,7 +405,7 @@
  34 [-]: GETUPVAL  R1 U0        ; R1 := U0
  35 [-]: CLOSURE   R2 0         ; R2 := closure(Function #8.1)
  36 [-]: GETUPVAL  R0 U1        ; R0 := U1
- 37 [-]: SETTABLE  R1 K20 R2    ; R1[0x00000001] := R2
+ 37 [-]: SETTABLE  R1 K20 R2    ; R1["mClipCreatedCallback"] := R2
  38 [-]: GETUPVAL  R1 U0        ; R1 := U0
  39 [-]: CLOSURE   R2 1         ; R2 := closure(Function #8.2)
  40 [-]: GETUPVAL  R0 U1        ; R0 := U1

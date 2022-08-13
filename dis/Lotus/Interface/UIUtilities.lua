@@ -1387,7 +1387,7 @@
  18 [-]: SETTABLE  R4 K5 R5     ; R4["Layer"] := R5
  19 [-]: SETTABLE  R4 K8 K9     ; R4["IsStreaming"] := false
  20 [-]: SETTABLE  R4 K10 K9    ; R4["RemovingOld"] := false
- 21 [-]: SETTABLE  R3 K2 R4     ; R3[0xaade900e] := R4
+ 21 [-]: SETTABLE  R3 K2 R4     ; R3["QuartersVignette"] := R4
  22 [-]: GETGLOBAL R3 K1        ; R3 := _T
  23 [-]: GETTABLE  R3 R3 K2     ; R3 := R3["QuartersVignette"]
  24 [-]: GETTABLE  R3 R3 K5     ; R3 := R3["Layer"]
@@ -1414,7 +1414,7 @@
  45 [-]: CALL      R6 2 2       ; R6 := R6(R7)
  46 [-]: TEST      R6 1         ; if R6 then PC := 71
  47 [-]: JMP       71           ; PC := 71
- 48 [-]: SETTABLE  R5 K19 R1    ; R5[0xa421af95] := R1
+ 48 [-]: SETTABLE  R5 K19 R1    ; R5["level"] := R1
  49 [-]: ADD       R6 R3 K7     ; R6 := R3 + 1.000000
  50 [-]: SETTABLE  R5 K20 R6    ; R5["streamingLayer"] := R6
  51 [-]: GETTABLE  R6 R5 K20    ; R6 := R5["streamingLayer"]
@@ -1446,7 +1446,7 @@
  77 [-]: LOADBOOL  R6 1 0       ; R6 := true
  78 [-]: GETGLOBAL R7 K1        ; R7 := _T
  79 [-]: GETTABLE  R7 R7 K2     ; R7 := R7["QuartersVignette"]
- 80 [-]: SETTABLE  R7 K10 R6    ; R7[0x7b998233] := R6
+ 80 [-]: SETTABLE  R7 K10 R6    ; R7["RemovingOld"] := R6
  81 [-]: TEST      R6 0         ; if not R6 then PC := 99
  82 [-]: JMP       99           ; PC := 99
  83 [-]: GETGLOBAL R7 K17       ; R7 := 0x34291f5c
@@ -1455,7 +1455,7 @@
  86 [-]: GETGLOBAL R8 K1        ; R8 := _T
  87 [-]: GETTABLE  R8 R8 K2     ; R8 := R8["QuartersVignette"]
  88 [-]: GETTABLE  R8 R8 K3     ; R8 := R8["Level"]
- 89 [-]: SETTABLE  R7 K19 R8    ; R7[0xa421af95] := R8
+ 89 [-]: SETTABLE  R7 K19 R8    ; R7["level"] := R8
  90 [-]: SETTABLE  R7 K20 R3    ; R7["streamingLayer"] := R3
  91 [-]: SETTABLE  R7 K22 K7    ; R7["streamingMode"] := 1.000000
  92 [-]: SELF      R8 R7 K24    ; R9 := R7; R8 := R7[0x30e5d39d]
@@ -6920,4 +6920,4 @@
 1689 [-]: JMP       1742         ; PC := 1742
 1690 [-]: GETGLOBAL R122 K0      ; R122 := 0x7b998233
 1691 [-]: GETTABLE  R123 R2 K242 ; R123 := R2["Type"]
-1692 [-]: CALL      R122 2 2     ; R122 := R122(R123)
+1692 [-]: CALL      R122 2 2     ; R122 := R122(

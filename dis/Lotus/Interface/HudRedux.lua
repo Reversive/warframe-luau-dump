@@ -1724,7 +1724,7 @@
   1 [-]: GETUPVAL  R0 U0        ; R0 := U0
   2 [-]: GETGLOBAL R1 K1        ; R1 := 0x0469f296
   3 [-]: CALL      R1 1 2       ; R1 := R1()
-  4 [-]: SETTABLE  R0 K0 R1     ; R0["mTimerName"] := R1
+  4 [-]: SETTABLE  R0 K0 R1     ; R0[0x55f27c30] := R1
   5 [-]: GETUPVAL  R0 U0        ; R0 := U0
   6 [-]: CLOSURE   R1 0         ; R1 := closure(Function #15.1)
   7 [-]: GETUPVAL  R0 U1        ; R0 := U1
@@ -1742,7 +1742,7 @@
  19 [-]: GETUPVAL  R0 U2        ; R0 := U2
  20 [-]: GETUPVAL  R0 U0        ; R0 := U0
  21 [-]: GETUPVAL  R0 U4        ; R0 := U4
- 22 [-]: SETTABLE  R0 K4 R1     ; R0["Hide"] := R1
+ 22 [-]: SETTABLE  R0 K4 R1     ; R0[0xe8072ded] := R1
  23 [-]: GETUPVAL  R0 U0        ; R0 := U0
  24 [-]: GETUPVAL  R1 U1        ; R1 := U1
  25 [-]: GETTABLE  R1 R1 K6     ; R1 := R1[0x4c3dfdb3]
@@ -5099,7 +5099,7 @@
  28 [-]: GETUPVAL  R3 U2        ; R3 := U2
  29 [-]: GETTABLE  R3 R3 K3     ; R3 := R3["effectCheckRetry"]
  30 [-]: SUB       R3 R3 R1     ; R3 := R3 - R1
- 31 [-]: SETTABLE  R2 K3 R3     ; R2["effectCheckRetry"] := R3
+ 31 [-]: SETTABLE  R2 K3 R3     ; R2[0xbd496aa1] := R3
  32 [-]: GETUPVAL  R2 U2        ; R2 := U2
  33 [-]: GETTABLE  R2 R2 K3     ; R2 := R2["effectCheckRetry"]
  34 [-]: LT        0 R2 K4      ; if R2 >= 0.000000 then PC := 38
@@ -7331,7 +7331,7 @@
  89 [-]: GETTABLE  R4 R4 K2     ; R4 := R4["avatar"]
  90 [-]: SELF      R4 R4 K22    ; R5 := R4; R4 := R4[0xdff9d2a7]
  91 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 92 [-]: SETTABLE  R3 K21 R4    ; R3["name"] := R4
+ 92 [-]: SETTABLE  R3 K21 R4    ; R3[0x7b998233] := R4
  93 [-]: GETUPVAL  R3 U1        ; R3 := U1
  94 [-]: GETUPVAL  R4 U1        ; R4 := U1
  95 [-]: GETTABLE  R4 R4 K2     ; R4 := R4["avatar"]
@@ -7339,7 +7339,7 @@
  97 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  98 [-]: SELF      R4 R4 K25    ; R5 := R4; R4 := R4[0x6d604ba7]
  99 [-]: CALL      R4 2 2       ; R4 := R4(R5)
-100 [-]: SETTABLE  R3 K23 R4    ; R3["desc"] := R4
+100 [-]: SETTABLE  R3 K23 R4    ; R3[0xcd73323e] := R4
 101 [-]: GETGLOBAL R3 K26       ; R3 := 0x7f5022cf
 102 [-]: GETTABLE  R3 R3 K27    ; R3 := R3[0x41e2ae25]
 103 [-]: GETUPVAL  R4 U1        ; R4 := U1
@@ -7354,7 +7354,7 @@
 112 [-]: GETTABLE  R6 R6 K23    ; R6 := R6["desc"]
 113 [-]: LOADBOOL  R7 1 0       ; R7 := true
 114 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
-115 [-]: SETTABLE  R3 K23 R4    ; R3["desc"] := R4
+115 [-]: SETTABLE  R3 K23 R4    ; R3[0xcd73323e] := R4
 116 [-]: JMP       186          ; PC := 186
 117 [-]: GETUPVAL  R3 U1        ; R3 := U1
 118 [-]: GETTABLE  R3 R3 K21    ; R3 := R3["name"]
@@ -7399,14 +7399,14 @@
 157 [-]: LOADK     R7 K34       ; R7 := "/Lotus/Language/Menu/InspectPlayer"
 158 [-]: LOADBOOL  R8 1 0       ; R8 := true
 159 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
-160 [-]: SETTABLE  R4 K23 R5    ; R4["desc"] := R5
+160 [-]: SETTABLE  R4 K23 R5    ; R4[0xcd73323e] := R5
 161 [-]: JMP       186          ; PC := 186
 162 [-]: GETUPVAL  R4 U1        ; R4 := U1
 163 [-]: GETUPVAL  R5 U8        ; R5 := U8
 164 [-]: GETUPVAL  R6 U1        ; R6 := U1
 165 [-]: GETTABLE  R6 R6 K10    ; R6 := R6["player"]
 166 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-167 [-]: SETTABLE  R4 K21 R5    ; R4["name"] := R5
+167 [-]: SETTABLE  R4 K21 R5    ; R4[0x7b998233] := R5
 168 [-]: GETUPVAL  R4 U1        ; R4 := U1
 169 [-]: SETTABLE  R4 K35 K9    ; R4["sameFaction"] := true
 170 [-]: TEST      R2 0         ; if not R2 then PC := 186
@@ -7417,7 +7417,7 @@
 175 [-]: LOADK     R7 K34       ; R7 := "/Lotus/Language/Menu/InspectPlayer"
 176 [-]: LOADBOOL  R8 1 0       ; R8 := true
 177 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
-178 [-]: SETTABLE  R4 K23 R5    ; R4["desc"] := R5
+178 [-]: SETTABLE  R4 K23 R5    ; R4[0xcd73323e] := R5
 179 [-]: JMP       186          ; PC := 186
 180 [-]: GETUPVAL  R4 U1        ; R4 := U1
 181 [-]: SETTABLE  R4 K10 K19   ; R4["player"] := nil
@@ -12741,7 +12741,7 @@
  10 [-]: JMP       12           ; PC := 12
  11 [-]: RETURN    R0 1         ; return 
  12 [-]: NEWTABLE  R12 0 3      ; R12 := {}
- 13 [-]: SETTABLE  R12 K2 R0    ; R12["Message"] := R0
+ 13 [-]: SETTABLE  R12 K2 R0    ; R12[0x0000001a] := R0
  14 [-]: TESTSET   R13 R5 1     ; if R5 then PC := 17 else R13 := R5
  15 [-]: JMP       17           ; PC := 17
  16 [-]: NEWTABLE  R13 0 0      ; R13 := {}
@@ -15378,7 +15378,7 @@
 ; Max Stack Size:  2
 
   1 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  2 [-]: SETTABLE  R1 K0 R0     ; R1["Enabled"] := R0
+  2 [-]: SETTABLE  R1 K0 R0     ; R1[0x42dcc9f5] := R0
   3 [-]: RETURN    R0 1         ; return 
 
 
@@ -18527,4 +18527,4 @@
 1308 [-]: GETGLOBAL R31 K0       ; R31 := 0xae91e43b
 1309 [-]: SELF      R31 R31 K194 ; R32 := R31; R31 := R31[0x5f56eeab]
 1310 [-]: LOADK     R33 K238     ; R33 := "HealthAndShield.SentinelHealth"
-1311 [-]: LOADK     R34 29       ; R34 :=
+1311 [-]: LOADK     R

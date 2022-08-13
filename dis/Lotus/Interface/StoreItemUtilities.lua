@@ -1532,7 +1532,7 @@
 311 [-]: CALL      R18 5 1      ; R18(R19,R20,R21,R22)
 312 [-]: GETGLOBAL R18 K20      ; R18 := 0x0032441c
 313 [-]: GETTABLE  R18 R18 K59  ; R18 := R18["UITexture_Salvage"]
-314 [-]: SETTABLE  R1 K58 R18   ; R1["Background"] := R18
+314 [-]: SETTABLE  R1 K58 R18   ; R1[0x7b998233] := R18
 315 [-]: LOADBOOL  R7 1 0       ; R7 := true
 316 [-]: TEST      R7 0         ; if not R7 then PC := 351
 317 [-]: JMP       351          ; PC := 351
@@ -1598,10 +1598,10 @@
 377 [-]: GETGLOBAL R19 K15      ; R19 := 0x64fb1586
 378 [-]: MOVE      R20 R18      ; R20 := R18
 379 [-]: CALL      R19 2 2      ; R19 := R19(R20)
-380 [-]: SETTABLE  R1 K62 R19   ; R1["ToolTip"] := R19
+380 [-]: SETTABLE  R1 K62 R19   ; R1[0x2c626e13] := R19
 381 [-]: JMP       384          ; PC := 384
 382 [-]: GETTABLE  R19 R1 K10   ; R19 := R1["Name"]
-383 [-]: SETTABLE  R1 K62 R19   ; R1["ToolTip"] := R19
+383 [-]: SETTABLE  R1 K62 R19   ; R1[0x2c626e13] := R19
 384 [-]: RETURN    R7 2         ; return R7
 385 [-]: RETURN    R0 1         ; return 
 

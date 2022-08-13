@@ -281,7 +281,7 @@
   4 [-]: TEST      R7 0         ; if not R7 then PC := 8
   5 [-]: JMP       8            ; PC := 8
   6 [-]: LOADBOOL  R7 0 0       ; R7 := false
-  7 [-]: SETUPVAL  R7 U0        ; U82 := 
+  7 [-]: SETUPVAL  R7 U0        ; U82 := R0
   8 [-]: GETGLOBAL R7 K0        ; R7 := 0x7b998233
   9 [-]: MOVE      R8 R3        ; R8 := R3
  10 [-]: CALL      R7 2 2       ; R7 := R7(R8)

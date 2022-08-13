@@ -2209,7 +2209,7 @@
   6 [-]: CALL      R1 2 2       ; R1 := R1(R2)
   7 [-]: GETTABLE  R2 R1 K4     ; R2 := R1["mGoals"]
   8 [-]: LOADNIL   R3 R3        ; R3 := nil
-  9 [-]: SETUPVAL  R3 U0        ; U82 := 
+  9 [-]: SETUPVAL  R3 U0        ; U82 := R0
  10 [-]: GETGLOBAL R3 K5        ; R3 := 0xcfc01047
  11 [-]: MOVE      R4 R2        ; R4 := R2
  12 [-]: CALL      R3 2 4       ; R3,R4,R5 := R3(R4)
@@ -2219,7 +2219,7 @@
  16 [-]: JMP       78           ; PC := 78
  17 [-]: SELF      R8 R7 K7     ; R9 := R7; R8 := R7[0x8f89d633]
  18 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 19 [-]: SETUPVAL  R8 U0        ; U82 := 
+ 19 [-]: SETUPVAL  R8 U0        ; U82 := R0
  20 [-]: GETUPVAL  R8 U0        ; R8 := U0
  21 [-]: GETTABLE  R8 R8 K8     ; R8 := R8["mMetadata"]
  22 [-]: EQ        1 R8 K9      ; if R8 == "" then PC := 80
@@ -2481,7 +2481,7 @@
 131 [-]: GETUPVAL  R3 U10       ; R3 := U10
 132 [-]: SETTABLE  R2 K30 R3    ; R2["WaveFail"] := R3
 133 [-]: LOADBOOL  R2 1 0       ; R2 := true
-134 [-]: SETUPVAL  R2 U8        ; U82 := 
+134 [-]: SETUPVAL  R2 U8        ; U82 := R8
 135 [-]: JMP       146          ; PC := 146
 136 [-]: GETGLOBAL R2 K1        ; R2 := 0xbe190284
 137 [-]: SELF      R2 R2 K27    ; R3 := R2; R2 := R2[0xffe25891]
@@ -2492,7 +2492,7 @@
 142 [-]: TEST      R2 0         ; if not R2 then PC := 146
 143 [-]: JMP       146          ; PC := 146
 144 [-]: LOADBOOL  R2 0 0       ; R2 := false
-145 [-]: SETUPVAL  R2 U8        ; U82 := 
+145 [-]: SETUPVAL  R2 U8        ; U82 := R8
 146 [-]: GETGLOBAL R2 K2        ; R2 := 0xcbd666e1
 147 [-]: LOADK     R3 0         ; R3 := 0.000000
 148 [-]: CALL      R2 2 1       ; R2(R3)
@@ -3705,7 +3705,7 @@
   6 [-]: LOADBOOL  R3 0 0       ; R3 := false
   7 [-]: LOADBOOL  R4 1 0       ; R4 := true
   8 [-]: CALL      R1 4 2       ; R1 := R1(R2,R3,R4)
-  9 [-]: SETTABLE  R0 K1 R1     ; R0["ScenarioSpamTest"] := R1
+  9 [-]: SETTABLE  R0 K1 R1     ; R0[0xd644c2f1] := R1
  10 [-]: LOADK     R0 0         ; R0 := 0.000000
  11 [-]: GETGLOBAL R1 K0        ; R1 := _T
  12 [-]: GETTABLE  R1 R1 K1     ; R1 := R1["ScenarioSpamTest"]

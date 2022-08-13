@@ -1400,10 +1400,10 @@
 117 [-]: CALL      R16 2 2      ; R16 := R16(R17)
 118 [-]: SETTABLE  R14 K28 R16  ; R14["DisplayValue"] := R16
 119 [-]: SETLIST   R14 1 1      ; R14[(1-1)*FPF+i] := R(14+i), 1 <= i <= 1
-120 [-]: SETTABLE  R13 K23 R14  ; R13[0x00000086] := R14
+120 [-]: SETTABLE  R13 K23 R14  ; R13["Current"] := R14
 121 [-]: JMP       124          ; PC := 124
 122 [-]: GETTABLE  R14 R13 K25  ; R14 := R13["Previous"]
-123 [-]: SETTABLE  R13 K23 R14  ; R13[0x00000086] := R14
+123 [-]: SETTABLE  R13 K23 R14  ; R13["Current"] := R14
 124 [-]: GETGLOBAL R14 K30      ; R14 := 0x33bdd652
 125 [-]: GETTABLE  R14 R14 K31  ; R14 := R14[0x23d5322f]
 126 [-]: MOVE      R15 R1       ; R15 := R1
@@ -2576,7 +2576,7 @@
  77 [-]: GETTABLE  R25 R25 K8   ; R25 := R25[0x1142c7a8]
  78 [-]: GETTABLE  R26 R19 K9   ; R26 := R19["mFusionPoints"]
  79 [-]: CALL      R25 2 2      ; R25 := R25(R26)
- 80 [-]: SETTABLE  R24 K7 R25   ; R24["FUSION_POINTS"] := R25
+ 80 [-]: SETTABLE  R24 K7 R25   ; R24[0x133f4d77] := R25
  81 [-]: CALL      R20 5 2      ; R20 := R20(R21,R22,R23,R24)
  82 [-]: TEST      R16 0        ; if not R16 then PC := 140
  83 [-]: JMP       140          ; PC := 140
@@ -12502,7 +12502,7 @@
  64 [-]: EQ        1 R12 K2     ; if R12 == nil then PC := 82
  65 [-]: JMP       82           ; PC := 82
  66 [-]: GETTABLE  R12 R11 K15  ; R12 := R11["mId"]
- 67 [-]: SETTABLE  R12 K15 R1   ; R12["mId"] := R1
+ 67 [-]: SETTABLE  R12 K15 R1   ; R12[0x00000001] := R1
  68 [-]: GETUPVAL  R12 U0       ; R12 := U0
  69 [-]: GETTABLE  R12 R12 K12  ; R12 := R12["info"]
  70 [-]: SELF      R12 R12 K21  ; R13 := R12; R12 := R12[0x835d4c57]
@@ -12965,7 +12965,7 @@
  85 [-]: GETTABLE  R11 R11 K24  ; R11 := R11[0x1142c7a8]
  86 [-]: MOVE      R12 R0       ; R12 := R0
  87 [-]: CALL      R11 2 2      ; R11 := R11(R12)
- 88 [-]: SETTABLE  R10 K25 R11  ; R10[0x34291f5c] := R11
+ 88 [-]: SETTABLE  R10 K25 R11  ; R10["CREDITS"] := R11
  89 [-]: CALL      R6 5 2       ; R6 := R6(R7,R8,R9,R10)
  90 [-]: MOVE      R4 R6        ; R4 := R6
  91 [-]: JMP       98           ; PC := 98

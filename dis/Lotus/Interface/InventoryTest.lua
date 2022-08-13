@@ -4604,7 +4604,7 @@
 157 [-]: SETTABLE  R6 K61 R7    ; R6["mOnPressedCallback"] := R7
 158 [-]: SELF      R7 R6 K62    ; R8 := R6; R7 := R6[0x71e9ac81]
 159 [-]: CALL      R7 2 1       ; R7(R8)
-160 [-]: SETTABLE  R0 K63 R6    ; R0["mButton"] := R6
+160 [-]: SETTABLE  R0 K63 R6    ; R0[0xea061e98] := R6
 161 [-]: GETGLOBAL R7 K4        ; R7 := 0xae91e43b
 162 [-]: SELF      R7 R7 K35    ; R8 := R7; R7 := R7[0xc0a3774b]
 163 [-]: GETTABLE  R9 R0 K0     ; R9 := R0["mClipName"]
@@ -6140,7 +6140,7 @@
  84 [-]: GETGLOBAL R2 K12       ; R2 := _T
  85 [-]: CLOSURE   R3 2         ; R3 := closure(Function #38.1.3)
  86 [-]: GETUPVAL  R0 U1        ; R0 := U1
- 87 [-]: SETTABLE  R2 K22 R3    ; R2[0xed4e0128] := R3
+ 87 [-]: SETTABLE  R2 K22 R3    ; R2["OnNemesisClosed"] := R3
  88 [-]: GETGLOBAL R2 K2        ; R2 := 0xae91e43b
  89 [-]: SELF      R2 R2 K7     ; R3 := R2; R2 := R2[0x1fd6abd0]
  90 [-]: GETGLOBAL R4 K23       ; R4 := 0x96540e3a
@@ -7296,7 +7296,7 @@
  13 [-]: GETTABLE  R2 R2 K1     ; R2 := R2["mItemId"]
  14 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["mId"]
  15 [-]: GETTABLE  R1 R1 R2     ; R1 := R1[R2]
- 16 [-]: SETTABLE  R0 K5 R1     ; R0[0x0000052f] := R1
+ 16 [-]: SETTABLE  R0 K5 R1     ; R0["mInstalled"] := R1
  17 [-]: JMP       27           ; PC := 27
  18 [-]: GETGLOBAL R1 K6        ; R1 := 0x64fb1586
  19 [-]: GETTABLE  R2 R0 K0     ; R2 := R0["mUpgrade"]
@@ -7306,7 +7306,7 @@
  23 [-]: CALL      R1 0 2       ; R1 := R1(R2,...)
  24 [-]: GETUPVAL  R2 U0        ; R2 := U0
  25 [-]: GETTABLE  R2 R2 R1     ; R2 := R2[R1]
- 26 [-]: SETTABLE  R0 K5 R2     ; R0[0x0000052f] := R2
+ 26 [-]: SETTABLE  R0 K5 R2     ; R0["mInstalled"] := R2
  27 [-]: RETURN    R0 1         ; return 
 
 
@@ -8069,12 +8069,12 @@
 136 [-]: LOADBOOL  R10 1 0      ; R10 := true
 137 [-]: SETTABLE  R9 K22 R10   ; R9["SalvageRepaired"] := R10
 138 [-]: SETTABLE  R9 K24 K25   ; R9["GetVisibilityMaterial"] := true
-139 [-]: SETTABLE  R9 K26 R2    ; R9["ItemInfo"] := R2
+139 [-]: SETTABLE  R9 K26 R2    ; R9[0x9b71e815] := R2
 140 [-]: GETUPVAL  R10 U2       ; R10 := U2
 141 [-]: GETTABLE  R10 R10 K3   ; R10 := R10["Category"]
 142 [-]: SETTABLE  R9 K3 R10    ; R9["Category"] := R10
 143 [-]: GETUPVAL  R10 U10      ; R10 := U10
-144 [-]: SETTABLE  R9 K27 R10   ; R9["GameData"] := R10
+144 [-]: SETTABLE  R9 K27 R10   ; R9[0xe223e2b1] := R10
 145 [-]: SETTABLE  R9 K28 K25   ; R9["HideRecipesInUse"] := true
 146 [-]: SETTABLE  R9 K29 K25   ; R9["CheckTimeLimited"] := true
 147 [-]: SETTABLE  R9 K30 K25   ; R9["CheckKeyChain"] := true
@@ -8267,7 +8267,7 @@
 334 [-]: CALL      R16 2 2      ; R16 := R16(R17)
 335 [-]: TEST      R16 1        ; if R16 then PC := 339
 336 [-]: JMP       339          ; PC := 339
-337 [-]: SETTABLE  R5 K67 R14   ; R5[0xe223e2b1] := R14
+337 [-]: SETTABLE  R5 K67 R14   ; R5["Icon"] := R14
 338 [-]: SETTABLE  R5 K68 R15   ; R5["Themed"] := R15
 339 [-]: GETUPVAL  R16 U6       ; R16 := U6
 340 [-]: CALL      R16 1 2      ; R16 := R16()
@@ -9009,7 +9009,7 @@
 1076 [-]: GETUPVAL  R50 U29      ; R50 := U29
 1077 [-]: GETTABLE  R50 R50 K169 ; R50 := R50["PurchasedItems"]
 1078 [-]: CALL      R46 5 2      ; R46 := R46(R47,R48,R49,R50)
-1079 [-]: SETTABLE  R45 K56 R46  ; R45["Count"] := R46
+1079 [-]: SETTABLE  R45 K56 R46  ; R45[0x00000000] := R46
 1080 [-]: GETGLOBAL R46 K8       ; R46 := 0x7b998233
 1081 [-]: GETTABLE  R47 R45 K77  ; R47 := R45["Type"]
 1082 [-]: CALL      R46 2 2      ; R46 := R46(R47)
@@ -10670,7 +10670,7 @@
  19 [-]: SETUPVAL  R2 U0        ; U82 := R0
  20 [-]: GETGLOBAL R2 K4        ; R2 := _T
  21 [-]: GETUPVAL  R3 U0        ; R3 := U0
- 22 [-]: SETTABLE  R2 K5 R3     ; R2["SelectedEnemyLevel"] := R3
+ 22 [-]: SETTABLE  R2 K5 R3     ; R2[0x0000001f] := R3
  23 [-]: GETGLOBAL R2 K0        ; R2 := 0x7b998233
  24 [-]: GETUPVAL  R3 U1        ; R3 := U1
  25 [-]: CALL      R2 2 2       ; R2 := R2(R3)
@@ -13488,4 +13488,4 @@
 1219 [-]: GETGLOBAL R30 K1       ; R30 := _T
 1220 [-]: LOADK     R31 K259     ; R31 := "ShowPrimeBucks"
 1221 [-]: LOADNIL   R32 R32      ; R32 := nil
-1222 [-]: SETTABLE  R30 R31 R32  ; R30[R31] := 
+1222 [-]: SETTABLE  R30 R31 R32  ; R30[R31] :=

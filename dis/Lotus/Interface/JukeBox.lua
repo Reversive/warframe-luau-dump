@@ -1099,7 +1099,7 @@
  79 [-]: GETUPVAL  R0 U0        ; R0 := U0
  80 [-]: GETUPVAL  R0 U7        ; R0 := U7
  81 [-]: GETUPVAL  R0 U1        ; R0 := U1
- 82 [-]: SETTABLE  R1 K34 R2    ; R1[0x0000000d] := R2
+ 82 [-]: SETTABLE  R1 K34 R2    ; R1["mOnFocusedCallback"] := R2
  83 [-]: GETUPVAL  R1 U0        ; R1 := U0
  84 [-]: CLOSURE   R2 6         ; R2 := closure(Function #8.7)
  85 [-]: GETUPVAL  R0 U2        ; R0 := U2
@@ -2166,7 +2166,7 @@
  17 [-]: NEWTABLE  R3 0 3       ; R3 := {}
  18 [-]: SETTABLE  R3 K4 K8     ; R3["Label"] := "/Lotus/Language/Menu/Exit"
  19 [-]: GETUPVAL  R4 U0        ; R4 := U0
- 20 [-]: SETTABLE  R3 K9 R4     ; R3["CallBack"] := R4
+ 20 [-]: SETTABLE  R3 K9 R4     ; R3[0x67bc869f] := R4
  21 [-]: SETTABLE  R3 K6 K10    ; R3["CallOut"] := "MENU_CANCEL"
  22 [-]: CALL      R1 3 1       ; R1(R2,R3)
  23 [-]: LOADBOOL  R1 0 0       ; R1 := false
@@ -2178,7 +2178,7 @@
  29 [-]: NEWTABLE  R3 0 2       ; R3 := {}
  30 [-]: SETTABLE  R3 K4 K11    ; R3["Label"] := "[DEV] End Playing Song"
  31 [-]: GETUPVAL  R4 U1        ; R4 := U1
- 32 [-]: SETTABLE  R3 K9 R4     ; R3["CallBack"] := R4
+ 32 [-]: SETTABLE  R3 K9 R4     ; R3[0x67bc869f] := R4
  33 [-]: CALL      R1 3 1       ; R1(R2,R3)
  34 [-]: GETGLOBAL R1 K12       ; R1 := _T
  35 [-]: GETTABLE  R1 R1 K13    ; R1 := R1[0x1c5b546f]

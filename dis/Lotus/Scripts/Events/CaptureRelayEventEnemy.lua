@@ -47,11 +47,11 @@
  18 [-]: GETGLOBAL R2 K2        ; R2 := _T
  19 [-]: SELF      R3 R0 K5     ; R4 := R0; R3 := R0[0x2b54251b]
  20 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 21 [-]: SETTABLE  R2 K3 R3     ; R2["LocalRelayEventCapturedEnemy"] := R3
+ 21 [-]: SETTABLE  R2 K3 R3     ; R2[0xa534c3ac] := R3
  22 [-]: GETGLOBAL R2 K2        ; R2 := _T
  23 [-]: SELF      R3 R0 K5     ; R4 := R0; R3 := R0[0x2b54251b]
  24 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 25 [-]: SETTABLE  R2 K6 R3     ; R2["RelayEventCapturedEnemy"] := R3
+ 25 [-]: SETTABLE  R2 K6 R3     ; R2[0xf4045b7e] := R3
  26 [-]: SELF      R2 R1 K7     ; R3 := R1; R2 := R1[0xd5f7912b]
  27 [-]: GETGLOBAL R4 K8        ; R4 := 0x0469f296
  28 [-]: LOADK     R5 K9        ; R5 := "PlayCaptureAnimation"

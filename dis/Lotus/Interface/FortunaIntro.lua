@@ -255,7 +255,7 @@
 ; Max Stack Size:  28
 
   1 [-]: NEWTABLE  R0 0 0       ; R0 := {}
-  2 [-]: SETUPVAL  R0 U0        ; U82 := 
+  2 [-]: SETUPVAL  R0 U0        ; U82 := R0
   3 [-]: GETGLOBAL R0 K0        ; R0 := 0x33bdd652
   4 [-]: GETTABLE  R0 R0 K1     ; R0 := R0[0x23d5322f]
   5 [-]: GETUPVAL  R1 U0        ; R1 := U0
@@ -349,7 +349,7 @@
  93 [-]: LOADK     R13 K33      ; R13 := "Ticker.Backer"
  94 [-]: LOADK     R14 K35      ; R14 := "Ticker.Blurer"
  95 [-]: SETLIST   R12 2 1      ; R12[(1-1)*FPF+i] := R(12+i), 1 <= i <= 2
- 96 [-]: SETUPVAL  R12 U2       ; U82 := 
+ 96 [-]: SETUPVAL  R12 U2       ; U82 := R2
  97 [-]: LOADK     R12 0        ; R12 := 0.000000
  98 [-]: LOADK     R13 1        ; R13 := 1.000000
  99 [-]: GETUPVAL  R14 U0       ; R14 := U0
@@ -511,7 +511,7 @@
 255 [-]: GETTABLE  R22 R22 R16  ; R22 := R22[R16]
 256 [-]: SETTABLE  R22 K56 R19  ; R22["Width"] := R19
 257 [-]: FORLOOP   R13 103      ; R13 += R15; if R13 <= R14 then begin PC := 103; R16 := R13 end
-258 [-]: SETUPVAL  R12 U4       ; U82 := 
+258 [-]: SETUPVAL  R12 U4       ; U82 := R4
 259 [-]: LOADK     R22 1        ; R22 := 1.000000
 260 [-]: GETUPVAL  R23 U0       ; R23 := U0
 261 [-]: LEN       R23 R23      ; R23 := # R23
@@ -643,7 +643,7 @@
   3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
   4 [-]: GETTABLE  R1 R0 K2     ; R1 := R0[0xde474187]
   5 [-]: CALL      R1 1 2       ; R1 := R1()
-  6 [-]: SETUPVAL  R1 U0        ; U82 := 
+  6 [-]: SETUPVAL  R1 U0        ; U82 := R0
   7 [-]: CLOSURE   R1 0         ; R1 := closure(Function #8.1)
   8 [-]: GETGLOBAL R2 K3        ; R2 := 0xae91e43b
   9 [-]: SELF      R2 R2 K4     ; R3 := R2; R2 := R2[0xd5181643]

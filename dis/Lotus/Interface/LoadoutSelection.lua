@@ -1887,7 +1887,7 @@
   6 [-]: JMP       8            ; PC := 8
   7 [-]: LOADBOOL  R2 0 1       ; R2 := false; PC := 8
   8 [-]: LOADBOOL  R2 1 0       ; R2 := true
-  9 [-]: SETTABLE  R1 K1 R2     ; R1["mUnfocusOnSelect"] := R2
+  9 [-]: SETTABLE  R1 K1 R2     ; R1[0x7b998233] := R2
  10 [-]: RETURN    R0 1         ; return 
 
 

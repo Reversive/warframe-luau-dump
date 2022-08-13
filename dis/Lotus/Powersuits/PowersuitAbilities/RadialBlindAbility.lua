@@ -238,40 +238,40 @@
   3 [-]: EQ        0 R0 K1      ; if R0 ~= 1.000000 then PC := 8
   4 [-]: JMP       8            ; PC := 8
   5 [-]: LOADK     R2 1         ; R2 := 1.500000
-  6 [-]: SETUPVAL  R2 U0        ; U82 := 
+  6 [-]: SETUPVAL  R2 U0        ; U82 := R0
   7 [-]: JMP       40           ; PC := 40
   8 [-]: EQ        0 R0 K2      ; if R0 ~= 2.000000 then PC := 13
   9 [-]: JMP       13           ; PC := 13
  10 [-]: LOADK     R2 2         ; R2 := 2.000000
- 11 [-]: SETUPVAL  R2 U0        ; U82 := 
+ 11 [-]: SETUPVAL  R2 U0        ; U82 := R0
  12 [-]: JMP       40           ; PC := 40
  13 [-]: EQ        0 R0 K3      ; if R0 ~= 3.000000 then PC := 18
  14 [-]: JMP       18           ; PC := 18
  15 [-]: LOADK     R2 2         ; R2 := 2.500000
- 16 [-]: SETUPVAL  R2 U0        ; U82 := 
+ 16 [-]: SETUPVAL  R2 U0        ; U82 := R0
  17 [-]: JMP       40           ; PC := 40
  18 [-]: LOADK     R2 3         ; R2 := 3.000000
- 19 [-]: SETUPVAL  R2 U0        ; U82 := 
+ 19 [-]: SETUPVAL  R2 U0        ; U82 := R0
  20 [-]: JMP       40           ; PC := 40
  21 [-]: EQ        0 R1 K4      ; if R1 ~= 4.000000 then PC := 40
  22 [-]: JMP       40           ; PC := 40
  23 [-]: EQ        0 R0 K1      ; if R0 ~= 1.000000 then PC := 28
  24 [-]: JMP       28           ; PC := 28
  25 [-]: LOADK     R2 3         ; R2 := 3.000000
- 26 [-]: SETUPVAL  R2 U1        ; U82 := 
+ 26 [-]: SETUPVAL  R2 U1        ; U82 := R1
  27 [-]: JMP       40           ; PC := 40
  28 [-]: EQ        0 R0 K2      ; if R0 ~= 2.000000 then PC := 33
  29 [-]: JMP       33           ; PC := 33
  30 [-]: LOADK     R2 6         ; R2 := 6.000000
- 31 [-]: SETUPVAL  R2 U1        ; U82 := 
+ 31 [-]: SETUPVAL  R2 U1        ; U82 := R1
  32 [-]: JMP       40           ; PC := 40
  33 [-]: EQ        0 R0 K3      ; if R0 ~= 3.000000 then PC := 38
  34 [-]: JMP       38           ; PC := 38
  35 [-]: LOADK     R2 9         ; R2 := 9.000000
- 36 [-]: SETUPVAL  R2 U1        ; U82 := 
+ 36 [-]: SETUPVAL  R2 U1        ; U82 := R1
  37 [-]: JMP       40           ; PC := 40
  38 [-]: LOADK     R2 12        ; R2 := 12.000000
- 39 [-]: SETUPVAL  R2 U1        ; U82 := 
+ 39 [-]: SETUPVAL  R2 U1        ; U82 := R1
  40 [-]: RETURN    R0 1         ; return 
 
 
@@ -376,7 +376,7 @@
  51 [-]: MOVE      R8 R1        ; R8 := R1
  52 [-]: MOVE      R9 R6        ; R9 := R6
  53 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
- 54 [-]: SETUPVAL  R7 U1        ; U82 := 
+ 54 [-]: SETUPVAL  R7 U1        ; U82 := R1
  55 [-]: GETGLOBAL R7 K15       ; R7 := 0x33bdd652
  56 [-]: GETTABLE  R7 R7 K16    ; R7 := R7[0x23d5322f]
  57 [-]: MOVE      R8 R0        ; R8 := R0
@@ -394,7 +394,7 @@
  69 [-]: GETUPVAL  R11 U1       ; R11 := U1
  70 [-]: MUL       R11 R11 K25  ; R11 := R11 * 100.000000
  71 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 72 [-]: SETTABLE  R9 K22 R10   ; R9["Value"] := R10
+ 72 [-]: SETTABLE  R9 K22 R10   ; R9[0x00000001] := R10
  73 [-]: SETTABLE  R9 K26 K27   ; R9["ValueUnit"] := "/Lotus/Language/Game/UNIT_PERCENT"
  74 [-]: CALL      R7 3 1       ; R7(R8,R9)
  75 [-]: JMP       104          ; PC := 104
@@ -409,7 +409,7 @@
  84 [-]: MOVE      R8 R1        ; R8 := R1
  85 [-]: MOVE      R9 R6        ; R9 := R6
  86 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
- 87 [-]: SETUPVAL  R7 U3        ; U82 := 
+ 87 [-]: SETUPVAL  R7 U3        ; U82 := R3
  88 [-]: GETGLOBAL R7 K15       ; R7 := 0x33bdd652
  89 [-]: GETTABLE  R7 R7 K16    ; R7 := R7[0x23d5322f]
  90 [-]: MOVE      R8 R0        ; R8 := R0
@@ -423,7 +423,7 @@
  98 [-]: NEWTABLE  R9 0 3       ; R9 := {}
  99 [-]: SETTABLE  R9 K17 K30   ; R9["Label"] := "/Lotus/Language/Game/POWER_DURATION"
 100 [-]: GETUPVAL  R10 U3       ; R10 := U3
-101 [-]: SETTABLE  R9 K22 R10   ; R9["Value"] := R10
+101 [-]: SETTABLE  R9 K22 R10   ; R9[0x00000001] := R10
 102 [-]: SETTABLE  R9 K26 K31   ; R9["ValueUnit"] := "/Lotus/Language/Game/UNIT_SECOND"
 103 [-]: CALL      R7 3 1       ; R7(R8,R9)
 104 [-]: RETURN    R0 1         ; return 
@@ -480,7 +480,7 @@
  40 [-]: GETGLOBAL R1 K0        ; R1 := _T
  41 [-]: GETTABLE  R1 R1 K1     ; R1 := R1["AbilityLevelQueryParms"]
  42 [-]: GETTABLE  R1 R1 K3     ; R1 := R1["Modded"]
- 43 [-]: SETTABLE  R0 K3 R1     ; R0[0xe11a16c7] := R1
+ 43 [-]: SETTABLE  R0 K3 R1     ; R0["Modded"] := R1
  44 [-]: GETGLOBAL R1 K0        ; R1 := _T
  45 [-]: SETTABLE  R1 K17 R0    ; R1["AbilityUpgradeLevelInfo"] := R0
  46 [-]: RETURN    R0 1         ; return 
@@ -508,14 +508,14 @@
  11 [-]: GETUPVAL  R5 U1        ; R5 := U1
  12 [-]: MUL       R5 R5 K5     ; R5 := R5 * 100.000000
  13 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 14 [-]: SETTABLE  R3 K2 R4     ; R3[0xa55b216f] := R4
+ 14 [-]: SETTABLE  R3 K2 R4     ; R3[0x62c81b76] := R4
  15 [-]: MOVE      R2 R3        ; R2 := R3
  16 [-]: JMP       23           ; PC := 23
  17 [-]: EQ        0 R1 K6      ; if R1 ~= 4.000000 then PC := 23
  18 [-]: JMP       23           ; PC := 23
  19 [-]: NEWTABLE  R3 0 1       ; R3 := {}
  20 [-]: GETUPVAL  R4 U2        ; R4 := U2
- 21 [-]: SETTABLE  R3 K7 R4     ; R3[0x6df09e59] := R4
+ 21 [-]: SETTABLE  R3 K7 R4     ; R3["DURATION"] := R4
  22 [-]: MOVE      R2 R3        ; R2 := R3
  23 [-]: GETGLOBAL R3 K8        ; R3 := cjson
  24 [-]: GETTABLE  R3 R3 K9     ; R3 := R3[0xb139d7bc]
@@ -1534,7 +1534,7 @@
  64 [-]: CALL      R11 3 1      ; R11(R12,R13)
  65 [-]: GETUPVAL  R11 U4       ; R11 := U4
  66 [-]: ADD       R11 K16 R11  ; R11 := 1.000000 + R11
- 67 [-]: SETUPVAL  R11 U3       ; U82 := 
+ 67 [-]: SETUPVAL  R11 U3       ; U82 := R3
  68 [-]: EQ        0 R10 K16    ; if R10 ~= 1.000000 then PC := 79
  69 [-]: JMP       79           ; PC := 79
  70 [-]: GETGLOBAL R11 K9       ; R11 := 0x7b998233
@@ -1543,7 +1543,7 @@
  73 [-]: TEST      R11 1        ; if R11 then PC := 77
  74 [-]: JMP       77           ; PC := 77
  75 [-]: GETTABLE  R11 R6 K17   ; R11 := R6["stunDamageDebuff"]
- 76 [-]: SETUPVAL  R11 U3       ; U82 := 
+ 76 [-]: SETUPVAL  R11 U3       ; U82 := R3
  77 [-]: LOADK     R7 1         ; R7 := 1.000000
  78 [-]: JMP       89           ; PC := 89
  79 [-]: EQ        0 R10 K18    ; if R10 ~= 4.000000 then PC := 89
@@ -1554,7 +1554,7 @@
  84 [-]: TEST      R11 1        ; if R11 then PC := 88
  85 [-]: JMP       88           ; PC := 88
  86 [-]: GETTABLE  R11 R6 K19   ; R11 := R6["augmentPvPDuration"]
- 87 [-]: SETUPVAL  R11 U5       ; U82 := 
+ 87 [-]: SETUPVAL  R11 U5       ; U82 := R5
  88 [-]: LOADK     R7 4         ; R7 := 4.000000
  89 [-]: GETGLOBAL R11 K20      ; R11 := 0x0469f296
  90 [-]: LOADK     R12 K21      ; R12 := "FadeWithoutBlocking"

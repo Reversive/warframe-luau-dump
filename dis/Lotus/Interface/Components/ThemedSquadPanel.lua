@@ -189,7 +189,7 @@
 118 [-]: SETTABLE  R4 K77 R5    ; R4["CalculateBgWidth"] := R5
 119 [-]: CLOSURE   R5 6         ; R5 := closure(Function #1.7)
 120 [-]: GETUPVAL  R0 U2        ; R0 := U2
-121 [-]: SETTABLE  R4 K78 R5    ; R4[0xcd0165a3] := R5
+121 [-]: SETTABLE  R4 K78 R5    ; R4["CalculateBgHeight"] := R5
 122 [-]: CLOSURE   R5 7         ; R5 := closure(Function #1.8)
 123 [-]: SETTABLE  R4 K79 R5    ; R4["CanEnablePlayerBtn"] := R5
 124 [-]: CLOSURE   R5 8         ; R5 := closure(Function #1.9)

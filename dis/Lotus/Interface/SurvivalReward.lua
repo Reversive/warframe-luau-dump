@@ -781,7 +781,7 @@
 148 [-]: LOADBOOL  R13 1 0      ; R13 := true
 149 [-]: CALL      R11 3 3      ; R11,R12 := R11(R12,R13)
 150 [-]: SETTABLE  R1 K42 R12   ; R1["Themed"] := R12
-151 [-]: SETTABLE  R1 K41 R11   ; R1["Icon"] := R11
+151 [-]: SETTABLE  R1 K41 R11   ; R1[0xb009bbc6] := R11
 152 [-]: GETUPVAL  R11 U4       ; R11 := U4
 153 [-]: GETTABLE  R11 R11 K44  ; R11 := R11[0x4ffc42f7]
 154 [-]: GETGLOBAL R12 K3       ; R12 := 0xae91e43b
@@ -971,7 +971,7 @@
 338 [-]: SETTABLE  R1 K36 R17   ; R1["Name"] := R17
 339 [-]: TEST      R3 0         ; if not R3 then PC := 343
 340 [-]: JMP       343          ; PC := 343
-341 [-]: SETTABLE  R1 K41 R3    ; R1["Icon"] := R3
+341 [-]: SETTABLE  R1 K41 R3    ; R1[0xb009bbc6] := R3
 342 [-]: SETTABLE  R1 K42 K57   ; R1["Themed"] := false
 343 [-]: GETGLOBAL R17 K2       ; R17 := 0x7b998233
 344 [-]: GETTABLE  R18 R1 K41   ; R18 := R1["Icon"]
@@ -979,7 +979,7 @@
 346 [-]: TEST      R17 0        ; if not R17 then PC := 351
 347 [-]: JMP       351          ; PC := 351
 348 [-]: GETGLOBAL R17 K80      ; R17 := 0xeb4576f0
-349 [-]: SETTABLE  R1 K41 R17   ; R1["Icon"] := R17
+349 [-]: SETTABLE  R1 K41 R17   ; R1[0xb009bbc6] := R17
 350 [-]: SETTABLE  R1 K64 K18   ; R1["Background"] := nil
 351 [-]: GETUPVAL  R17 U4       ; R17 := U4
 352 [-]: GETTABLE  R17 R17 K44  ; R17 := R17[0x4ffc42f7]

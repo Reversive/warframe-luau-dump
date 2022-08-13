@@ -11358,7 +11358,7 @@
   1 [-]: GETUPVAL  R2 U0        ; R2 := U0
   2 [-]: SETTABLE  R2 K0 R0     ; R2["Avatar"] := R0
   3 [-]: GETUPVAL  R2 U0        ; R2 := U0
-  4 [-]: SETTABLE  R2 K1 R1     ; R2[0x00000043] := R1
+  4 [-]: SETTABLE  R2 K1 R1     ; R2["TargetPos"] := R1
   5 [-]: RETURN    R0 1         ; return 
 
 
@@ -17839,7 +17839,7 @@
  15 [-]: EQ        0 R2 K4      ; if R2 ~= nil then PC := 22
  16 [-]: JMP       22           ; PC := 22
  17 [-]: NEWTABLE  R2 0 1       ; R2 := {}
- 18 [-]: SETTABLE  R2 K5 R0     ; R2["skip"] := R0
+ 18 [-]: SETTABLE  R2 K5 R0     ; R2[0x00000001] := R0
  19 [-]: SETGLOBAL R2 K3        ; mQueuedGoToPreviousScreen := R2
  20 [-]: GETUPVAL  R2 U1        ; R2 := U1
  21 [-]: CALL      R2 1 1       ; R2()

@@ -1007,7 +1007,7 @@
  15 [-]: GETUPVAL  R1 U0        ; R1 := U0
  16 [-]: GETUPVAL  R2 U0        ; R2 := U0
  17 [-]: GETTABLE  R2 R2 K12    ; R2 := R2["CalculateX"]
- 18 [-]: SETTABLE  R1 K11 R2    ; R1[0xbd496aa1] := R2
+ 18 [-]: SETTABLE  R1 K11 R2    ; R1["_FeaturedButtonList_CalculateX"] := R2
  19 [-]: GETUPVAL  R1 U0        ; R1 := U0
  20 [-]: CLOSURE   R2 0         ; R2 := closure(Function #5.1)
  21 [-]: GETUPVAL  R0 U1        ; R0 := U1

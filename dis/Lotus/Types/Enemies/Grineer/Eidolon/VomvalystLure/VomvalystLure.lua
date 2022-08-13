@@ -417,7 +417,7 @@
  22 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  23 [-]: LOADK     R6 1000      ; R6 := 1000.000000
  24 [-]: CALL      R2 5 2       ; R2 := R2(R3,R4,R5,R6)
- 25 [-]: SETUPVAL  R2 U1        ; U82 := 
+ 25 [-]: SETUPVAL  R2 U1        ; U82 := R1
  26 [-]: GETGLOBAL R2 K4        ; R2 := 0x7b998233
  27 [-]: GETUPVAL  R3 U1        ; R3 := U1
  28 [-]: CALL      R2 2 2       ; R2 := R2(R3)

@@ -674,7 +674,7 @@
  10 [-]: SETTABLE  R1 K2 R0     ; R1["challenge"] := R0
  11 [-]: GETGLOBAL R1 K0        ; R1 := _T
  12 [-]: GETUPVAL  R2 U0        ; R2 := U0
- 13 [-]: SETTABLE  R1 K3 R2     ; R1[0x91166d9b] := R2
+ 13 [-]: SETTABLE  R1 K3 R2     ; R1["TrackActiveChallenge"] := R2
  14 [-]: RETURN    R0 1         ; return 
 
 

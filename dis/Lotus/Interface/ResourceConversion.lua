@@ -1397,7 +1397,7 @@
 103 [-]: SETTABLE  R28 K30 R15  ; R28["Deco"] := R15
 104 [-]: SETTABLE  R28 K31 K32  ; R28["AnimTime"] := 0.000000
 105 [-]: SETTABLE  R28 K33 K34  ; R28["Garbage"] := false
-106 [-]: SETTABLE  R28 K35 R11  ; R28["SpinSpeed"] := R11
+106 [-]: SETTABLE  R28 K35 R11  ; R28[0x7b998233] := R11
 107 [-]: SETTABLE  R28 K36 R7   ; R28["StartPos"] := R7
 108 [-]: SETTABLE  R28 K37 K32  ; R28["ElapsedFrames"] := 0.000000
 109 [-]: CALL      R26 3 1      ; R26(R27,R28)
@@ -1823,7 +1823,7 @@
  26 [-]: CALL      R3 4 2       ; R3 := R3(R4,R5,R6)
  27 [-]: SETTABLE  R2 K9 R3     ; R2["TIP"] := R3
  28 [-]: SETTABLE  R2 K11 K12   ; R2["CONFIRM_LABEL"] := "/Lotus/Language/Alchemy/ConversionFeed"
- 29 [-]: SETTABLE  R2 K13 R0    ; R2["mITEMS"] := R0
+ 29 [-]: SETTABLE  R2 K13 R0    ; R2[0x7b998233] := R0
  30 [-]: SETTABLE  R1 K4 R2     ; R1["Manifest"] := R2
  31 [-]: GETGLOBAL R1 K6        ; R1 := 0xae91e43b
  32 [-]: SELF      R1 R1 K14    ; R2 := R1; R1 := R1[0x1fd6abd0]
@@ -4310,7 +4310,7 @@
 120 [-]: GETTABLE  R15 R15 K40  ; R15 := R15[0x1142c7a8]
 121 [-]: MOVE      R16 R6       ; R16 := R6
 122 [-]: CALL      R15 2 2      ; R15 := R15(R16)
-123 [-]: SETTABLE  R14 K39 R15  ; R14["COUNT"] := R15
+123 [-]: SETTABLE  R14 K39 R15  ; R14[0x00000069] := R15
 124 [-]: CALL      R10 5 2      ; R10 := R10(R11,R12,R13,R14)
 125 [-]: GETUPVAL  R11 U6       ; R11 := U6
 126 [-]: GETTABLE  R11 R11 K41  ; R11 := R11[0x0f164e09]
@@ -4410,7 +4410,7 @@
 220 [-]: GETTABLE  R22 R22 K40  ; R22 := R22[0x1142c7a8]
 221 [-]: MOVE      R23 R6       ; R23 := R6
 222 [-]: CALL      R22 2 2      ; R22 := R22(R23)
-223 [-]: SETTABLE  R21 K39 R22  ; R21["COUNT"] := R22
+223 [-]: SETTABLE  R21 K39 R22  ; R21[0x00000069] := R22
 224 [-]: CALL      R17 5 2      ; R17 := R17(R18,R19,R20,R21)
 225 [-]: GETUPVAL  R18 U6       ; R18 := U6
 226 [-]: GETTABLE  R18 R18 K41  ; R18 := R18[0x0f164e09]
@@ -4673,13 +4673,13 @@
 483 [-]: LOADK     R37 K112     ; R37 := "/Lotus/Language/Alchemy/ExtractWarningTitle"
 484 [-]: LOADBOOL  R38 0 0      ; R38 := false
 485 [-]: CALL      R35 4 2      ; R35 := R35(R36,R37,R38)
-486 [-]: SETTABLE  R34 K111 R35 ; R34["Title"] := R35
+486 [-]: SETTABLE  R34 K111 R35 ; R34[0x00000044] := R35
 487 [-]: GETGLOBAL R35 K11      ; R35 := 0xae91e43b
 488 [-]: SELF      R35 R35 K38  ; R36 := R35; R35 := R35[0x42b04007]
 489 [-]: LOADK     R37 K114     ; R37 := "/Lotus/Language/Alchemy/ExtractWarningDesc"
 490 [-]: LOADBOOL  R38 0 0      ; R38 := false
 491 [-]: CALL      R35 4 2      ; R35 := R35(R36,R37,R38)
-492 [-]: SETTABLE  R34 K113 R35 ; R34[0x67bc869f] := R35
+492 [-]: SETTABLE  R34 K113 R35 ; R34["Desc"] := R35
 493 [-]: SETTABLE  R33 K108 R34 ; R33["ExtraDesc"] := R34
 494 [-]: GETGLOBAL R34 K6       ; R34 := 0x7b998233
 495 [-]: GETUPVAL  R35 U14      ; R35 := U14
@@ -4697,7 +4697,7 @@
 507 [-]: LOADK     R37 K116     ; R37 := "/Lotus/Language/Alchemy/ExtractWarningPrimeDesc"
 508 [-]: LOADBOOL  R38 0 0      ; R38 := false
 509 [-]: CALL      R35 4 2      ; R35 := R35(R36,R37,R38)
-510 [-]: SETTABLE  R34 K113 R35 ; R34[0x67bc869f] := R35
+510 [-]: SETTABLE  R34 K113 R35 ; R34["Desc"] := R35
 511 [-]: GETUPVAL  R34 U6       ; R34 := U6
 512 [-]: GETTABLE  R34 R34 K82  ; R34 := R34[0xfc3fed1f]
 513 [-]: GETGLOBAL R35 K11      ; R35 := 0xae91e43b
@@ -5660,7 +5660,7 @@
  90 [-]: LT        0 R3 R5      ; if R3 >= R5 then PC := 114
  91 [-]: JMP       114          ; PC := 114
  92 [-]: GETUPVAL  R5 U7        ; R5 := U7
- 93 [-]: SETTABLE  R5 K23 R2    ; R5["Xp"] := R2
+ 93 [-]: SETTABLE  R5 K23 R2    ; R5[0x91e13703] := R2
  94 [-]: GETUPVAL  R5 U7        ; R5 := U7
  95 [-]: SETTABLE  R5 K24 R3    ; R5["Rank"] := R3
  96 [-]: GETUPVAL  R5 U7        ; R5 := U7
@@ -8978,7 +8978,7 @@
 115 [-]: SETTABLE  R6 K40 R7    ; R6["Suit"] := R7
 116 [-]: SETTABLE  R6 K41 K42   ; R6["AbilityIndex"] := 1.000000
 117 [-]: GETTABLE  R7 R4 K44    ; R7 := R4["Resource"]
-118 [-]: SETTABLE  R6 K43 R7    ; R6[0xdeb76430] := R7
+118 [-]: SETTABLE  R6 K43 R7    ; R6["Ability"] := R7
 119 [-]: SETTABLE  R5 K39 R6    ; R5["AbilityExtractInfo"] := R6
 120 [-]: GETGLOBAL R5 K26       ; R5 := 0xae91e43b
 121 [-]: SELF      R5 R5 K45    ; R6 := R5; R5 := R5[0x1fd6abd0]
@@ -9080,7 +9080,7 @@
 217 [-]: SETTABLE  R15 K40 R16  ; R15["Suit"] := R16
 218 [-]: SETTABLE  R15 K41 K42  ; R15["AbilityIndex"] := 1.000000
 219 [-]: GETTABLE  R16 R4 K44   ; R16 := R4["Resource"]
-220 [-]: SETTABLE  R15 K43 R16  ; R15[0xdeb76430] := R16
+220 [-]: SETTABLE  R15 K43 R16  ; R15["Ability"] := R16
 221 [-]: SETTABLE  R14 K39 R15  ; R14["AbilityExtractInfo"] := R15
 222 [-]: GETGLOBAL R14 K26      ; R14 := 0xae91e43b
 223 [-]: SELF      R14 R14 K45  ; R15 := R14; R14 := R14[0x1fd6abd0]
@@ -9094,7 +9094,7 @@
 231 [-]: GETGLOBAL R14 K38      ; R14 := _T
 232 [-]: NEWTABLE  R15 0 3      ; R15 := {}
 233 [-]: GETTABLE  R16 R4 K44   ; R16 := R4["Resource"]
-234 [-]: SETTABLE  R15 K43 R16  ; R15[0xdeb76430] := R16
+234 [-]: SETTABLE  R15 K43 R16  ; R15["Ability"] := R16
 235 [-]: GETUPVAL  R16 U3       ; R16 := U3
 236 [-]: SETTABLE  R15 K40 R16  ; R15["Suit"] := R16
 237 [-]: SETTABLE  R15 K68 K66  ; R15["Callback"] := "AbilitySelected"
@@ -13275,7 +13275,7 @@
  22 [-]: LOADK     R5 K10       ; R5 := "/Lotus/Language/Alchemy/RankExtractDesc"
  23 [-]: LOADBOOL  R6 0 0       ; R6 := false
  24 [-]: CALL      R3 4 2       ; R3 := R3(R4,R5,R6)
- 25 [-]: SETTABLE  R1 K9 R3     ; R1[0x25312c9b] := R3
+ 25 [-]: SETTABLE  R1 K9 R3     ; R1["LocalizedDesc"] := R3
  26 [-]: JMP       114          ; PC := 114
  27 [-]: GETTABLE  R3 R2 K3     ; R3 := R2["Type"]
  28 [-]: GETUPVAL  R4 U1        ; R4 := U1
@@ -13296,7 +13296,7 @@
  43 [-]: LOADK     R5 K15       ; R5 := "/Lotus/Language/Alchemy/RankSlotInfDesc"
  44 [-]: LOADBOOL  R6 0 0       ; R6 := false
  45 [-]: CALL      R3 4 2       ; R3 := R3(R4,R5,R6)
- 46 [-]: SETTABLE  R1 K9 R3     ; R1[0x25312c9b] := R3
+ 46 [-]: SETTABLE  R1 K9 R3     ; R1["LocalizedDesc"] := R3
  47 [-]: JMP       114          ; PC := 114
  48 [-]: GETGLOBAL R3 K6        ; R3 := 0xae91e43b
  49 [-]: SELF      R3 R3 K7     ; R4 := R3; R3 := R3[0x42b04007]
@@ -13315,7 +13315,7 @@
  62 [-]: LOADK     R5 K19       ; R5 := "/Lotus/Language/Alchemy/RankSlotDesc"
  63 [-]: LOADBOOL  R6 0 0       ; R6 := false
  64 [-]: CALL      R3 4 2       ; R3 := R3(R4,R5,R6)
- 65 [-]: SETTABLE  R1 K9 R3     ; R1[0x25312c9b] := R3
+ 65 [-]: SETTABLE  R1 K9 R3     ; R1["LocalizedDesc"] := R3
  66 [-]: JMP       114          ; PC := 114
  67 [-]: GETTABLE  R3 R2 K3     ; R3 := R2["Type"]
  68 [-]: GETUPVAL  R4 U1        ; R4 := U1
@@ -13333,7 +13333,7 @@
  80 [-]: LOADK     R5 K22       ; R5 := "/Lotus/Language/Alchemy/RankDigestivesDesc"
  81 [-]: LOADBOOL  R6 0 0       ; R6 := false
  82 [-]: CALL      R3 4 2       ; R3 := R3(R4,R5,R6)
- 83 [-]: SETTABLE  R1 K9 R3     ; R1[0x25312c9b] := R3
+ 83 [-]: SETTABLE  R1 K9 R3     ; R1["LocalizedDesc"] := R3
  84 [-]: JMP       114          ; PC := 114
  85 [-]: GETUPVAL  R3 U3        ; R3 := U3
  86 [-]: GETTABLE  R3 R3 K23    ; R3 := R3[0xdb22ecd5]

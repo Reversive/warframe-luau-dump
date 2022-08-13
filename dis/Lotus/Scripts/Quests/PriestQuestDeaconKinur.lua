@@ -71,7 +71,7 @@
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x89326c93
   2 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0x7d108ddb]
   3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: SETUPVAL  R0 U0        ; U82 := 
+  4 [-]: SETUPVAL  R0 U0        ; U82 := R0
   5 [-]: RETURN    R0 1         ; return 
 
 
@@ -455,7 +455,7 @@
 167 [-]: GETGLOBAL R9 K13       ; R9 := 0x89326c93
 168 [-]: SELF      R9 R9 K40    ; R10 := R9; R9 := R9[0x7d108ddb]
 169 [-]: CALL      R9 2 2       ; R9 := R9(R10)
-170 [-]: SETUPVAL  R9 U2        ; U82 := 
+170 [-]: SETUPVAL  R9 U2        ; U82 := R2
 171 [-]: GETGLOBAL R9 K41       ; R9 := 0xc8802016
 172 [-]: GETUPVAL  R10 U2       ; R10 := U2
 173 [-]: CALL      R9 2 4       ; R9,R10,R11 := R9(R10)
@@ -649,7 +649,7 @@
  97 [-]: GETGLOBAL R15 K0       ; R15 := 0x89326c93
  98 [-]: SELF      R15 R15 K26  ; R16 := R15; R15 := R15[0x7d108ddb]
  99 [-]: CALL      R15 2 2      ; R15 := R15(R16)
-100 [-]: SETUPVAL  R15 U3       ; U82 := 
+100 [-]: SETUPVAL  R15 U3       ; U82 := R3
 101 [-]: GETGLOBAL R15 K27      ; R15 := 0xc8802016
 102 [-]: GETUPVAL  R16 U3       ; R16 := U3
 103 [-]: CALL      R15 2 4      ; R15,R16,R17 := R15(R16)
@@ -733,7 +733,7 @@
  10 [-]: GETGLOBAL R2 K0        ; R2 := 0x89326c93
  11 [-]: SELF      R2 R2 K5     ; R3 := R2; R2 := R2[0x7d108ddb]
  12 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 13 [-]: SETUPVAL  R2 U1        ; U82 := 
+ 13 [-]: SETUPVAL  R2 U1        ; U82 := R1
  14 [-]: GETGLOBAL R2 K0        ; R2 := 0x89326c93
  15 [-]: SELF      R2 R2 K6     ; R3 := R2; R2 := R2[0xb7d33840]
  16 [-]: LOADK     R4 K7        ; R4 := "OnPlayersChanged"

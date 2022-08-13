@@ -3149,7 +3149,7 @@
  59 [-]: GETUPVAL  R11 U0       ; R11 := U0
  60 [-]: GETTABLE  R11 R11 K7   ; R11 := R11["mItemList"]
  61 [-]: GETTABLE  R11 R11 R4   ; R11 := R11[R4]
- 62 [-]: SETTABLE  R10 K13 R11  ; R10[0x44537adf] := R11
+ 62 [-]: SETTABLE  R10 K13 R11  ; R10[0x5fbddc1a] := R11
  63 [-]: SETTABLE  R10 K14 K15  ; R10["GetVisibilityMaterial"] := true
  64 [-]: LOADNIL   R11 R12      ; R11 := R12 := nil
  65 [-]: LOADBOOL  R13 1 0      ; R13 := true
@@ -3206,7 +3206,7 @@
 116 [-]: JMP       118          ; PC := 118
 117 [-]: LOADBOOL  R9 0 1       ; R9 := false; PC := 118
 118 [-]: LOADBOOL  R9 1 0       ; R9 := true
-119 [-]: SETTABLE  R8 K19 R9    ; R8[0x27658fab] := R9
+119 [-]: SETTABLE  R8 K19 R9    ; R8["DescOverridden"] := R9
 120 [-]: GETGLOBAL R8 K1        ; R8 := 0x7b998233
 121 [-]: GETUPVAL  R9 U0        ; R9 := U0
 122 [-]: GETTABLE  R9 R9 K7     ; R9 := R9["mItemList"]
@@ -3503,7 +3503,7 @@
 179 [-]: GETTABLE  R37 R37 K38  ; R37 := R37["Height"]
 180 [-]: DIV       R37 R37 K15  ; R37 := R37 / 2.000000
 181 [-]: ADD       R36 R36 R37  ; R36 := R36 + R37
-182 [-]: SETTABLE  R35 K41 R36  ; R35[0x5fbddc1a] := R36
+182 [-]: SETTABLE  R35 K41 R36  ; R35["YPos"] := R36
 183 [-]: GETUPVAL  R35 U0       ; R35 := U0
 184 [-]: GETTABLE  R35 R35 K44  ; R35 := R35[0xe5e5a417]
 185 [-]: GETGLOBAL R36 K1       ; R36 := 0xae91e43b

@@ -863,7 +863,7 @@
  65 [-]: GETTABLE  R4 R4 K10    ; R4 := R4[0x42645da3]
  66 [-]: MOVE      R5 R2        ; R5 := R2
  67 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 68 [-]: SETTABLE  R3 K8 R4     ; R3["Loader"] := R4
+ 68 [-]: SETTABLE  R3 K8 R4     ; R3[0xafcbe068] := R4
  69 [-]: GETUPVAL  R3 U1        ; R3 := U1
  70 [-]: SETTABLE  R3 K11 K12   ; R3["IsLoading"] := true
  71 [-]: GETUPVAL  R3 U1        ; R3 := U1

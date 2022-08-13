@@ -321,14 +321,14 @@
 223 [-]: SUB       R13 R13 R14  ; R13 := R13 - R14
 224 [-]: LOADK     R14 0        ; R14 := 0.000000
 225 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
-226 [-]: SETUPVAL  R12 U2       ; U82 := 
+226 [-]: SETUPVAL  R12 U2       ; U82 := R2
 227 [-]: JMP       261          ; PC := 261
 228 [-]: GETGLOBAL R12 K34      ; R12 := 0x9bafffe3
 229 [-]: GETGLOBAL R13 K41      ; R13 := 0x847a8534
 230 [-]: GETGLOBAL R14 K42      ; R14 := 0x7d8f15f6
 231 [-]: MOVE      R15 R9       ; R15 := R9
 232 [-]: CALL      R12 4 2      ; R12 := R12(R13,R14,R15)
-233 [-]: SETUPVAL  R12 U2       ; U82 := 
+233 [-]: SETUPVAL  R12 U2       ; U82 := R2
 234 [-]: SELF      R12 R0 K43   ; R13 := R0; R12 := R0[0x659d451f]
 235 [-]: GETGLOBAL R14 K44      ; R14 := 0x563bcfbd
 236 [-]: LOADBOOL  R15 0 0      ; R15 := false

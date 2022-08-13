@@ -3328,7 +3328,7 @@
  21 [-]: SUB       R9 R9 R1     ; R9 := R9 - R1
  22 [-]: LOADK     R10 0        ; R10 := 0.000000
  23 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
- 24 [-]: SETTABLE  R7 K4 R8     ; R7["ExpireTime"] := R8
+ 24 [-]: SETTABLE  R7 K4 R8     ; R7[0x3bc79f4f] := R8
  25 [-]: GETTABLE  R8 R7 K8     ; R8 := R7["mClipName"]
  26 [-]: TEST      R8 0         ; if not R8 then PC := 40
  27 [-]: JMP       40           ; PC := 40
@@ -3977,7 +3977,7 @@
  16 [-]: SETTABLE  R5 K9 K7     ; R5["ShowInfoPopup"] := true
  17 [-]: GETTABLE  R6 R0 K11    ; R6 := R0["ShowLockIcon"]
  18 [-]: NOT       R6 R6        ; R6 := not R6
- 19 [-]: SETTABLE  R5 K10 R6    ; R5["DisableSaturation"] := R6
+ 19 [-]: SETTABLE  R5 K10 R6    ; R5[0x5f56eeab] := R6
  20 [-]: CALL      R1 5 1       ; R1(R2,R3,R4,R5)
  21 [-]: RETURN    R0 1         ; return 
 
@@ -4394,7 +4394,7 @@
  44 [-]: GETUPVAL  R0 U0        ; R0 := U0
  45 [-]: GETUPVAL  R0 U2        ; R0 := U2
  46 [-]: GETUPVAL  R0 U3        ; R0 := U3
- 47 [-]: SETTABLE  R1 K24 R2    ; R1[0x20b98db3] := R2
+ 47 [-]: SETTABLE  R1 K24 R2    ; R1["mClipCreatedCallback"] := R2
  48 [-]: GETUPVAL  R1 U0        ; R1 := U0
  49 [-]: CLOSURE   R2 1         ; R2 := closure(Function #15.2)
  50 [-]: GETUPVAL  R0 U1        ; R0 := U1
@@ -7305,7 +7305,7 @@
  25 [-]: GETUPVAL  R1 U0        ; R1 := U0
  26 [-]: CLOSURE   R2 0         ; R2 := closure(Function #28.1)
  27 [-]: GETUPVAL  R0 U1        ; R0 := U1
- 28 [-]: SETTABLE  R1 K15 R2    ; R1[0xbce5a201] := R2
+ 28 [-]: SETTABLE  R1 K15 R2    ; R1[0xdf42446e] := R2
  29 [-]: GETUPVAL  R1 U0        ; R1 := U0
  30 [-]: CLOSURE   R2 1         ; R2 := closure(Function #28.2)
  31 [-]: SETTABLE  R1 K16 R2    ; R1[0x03f57322] := R2

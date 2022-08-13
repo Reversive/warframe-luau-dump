@@ -3949,7 +3949,7 @@
 ; Max Stack Size:  4
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := _T
-  2 [-]: SETTABLE  R1 K1 R0     ; R1["ShowShipDecos"] := R0
+  2 [-]: SETTABLE  R1 K1 R0     ; R1[0x1fd6abd0] := R0
   3 [-]: GETGLOBAL R1 K2        ; R1 := 0x89326c93
   4 [-]: SELF      R1 R1 K3     ; R2 := R1; R1 := R1[0x78298275]
   5 [-]: CALL      R1 2 2       ; R1 := R1(R2)
@@ -4873,8 +4873,8 @@
 110 [-]: LT        0 K26 R8     ; if 1.000000 >= R8 then PC := 161
 111 [-]: JMP       161          ; PC := 161
 112 [-]: NEWTABLE  R11 0 5      ; R11 := {}
-113 [-]: SETTABLE  R11 K31 R1   ; R11["GIFT_TYPE"] := R1
-114 [-]: SETTABLE  R11 K32 R8   ; R11["QUANTITY"] := R8
+113 [-]: SETTABLE  R11 K31 R1   ; R11[0xde321e6f] := R1
+114 [-]: SETTABLE  R11 K32 R8   ; R11[0x33c6e9d3] := R8
 115 [-]: SETTABLE  R11 K33 R3   ; R11["PRICE"] := R3
 116 [-]: GETGLOBAL R12 K9       ; R12 := _T
 117 [-]: GETTABLE  R12 R12 K10  ; R12 := R12["GiftParams"]
@@ -4927,7 +4927,7 @@
 164 [-]: EQ        1 R12 K30    ; if R12 == "" then PC := 186
 165 [-]: JMP       186          ; PC := 186
 166 [-]: NEWTABLE  R12 0 4      ; R12 := {}
-167 [-]: SETTABLE  R12 K31 R1   ; R12["GIFT_TYPE"] := R1
+167 [-]: SETTABLE  R12 K31 R1   ; R12[0xde321e6f] := R1
 168 [-]: GETGLOBAL R13 K9       ; R13 := _T
 169 [-]: GETTABLE  R13 R13 K10  ; R13 := R13["GiftParams"]
 170 [-]: GETTABLE  R13 R13 K35  ; R13 := R13["Recipient"]
@@ -4947,7 +4947,7 @@
 184 [-]: MOVE      R9 R12       ; R9 := R12
 185 [-]: JMP       201          ; PC := 201
 186 [-]: NEWTABLE  R12 0 3      ; R12 := {}
-187 [-]: SETTABLE  R12 K31 R1   ; R12["GIFT_TYPE"] := R1
+187 [-]: SETTABLE  R12 K31 R1   ; R12[0xde321e6f] := R1
 188 [-]: GETGLOBAL R13 K9       ; R13 := _T
 189 [-]: GETTABLE  R13 R13 K10  ; R13 := R13["GiftParams"]
 190 [-]: GETTABLE  R13 R13 K35  ; R13 := R13["Recipient"]
@@ -12615,7 +12615,7 @@
  61 [-]: DIV       R7 R3 K1     ; R7 := R3 / 100.000000
  62 [-]: MUL       R7 K14 R7    ; R7 := 10.000000 * R7
  63 [-]: ADD       R6 R6 R7     ; R6 := R6 + R7
- 64 [-]: SETTABLE  R5 K16 R6    ; R5[0x830eea67] := R6
+ 64 [-]: SETTABLE  R5 K16 R6    ; R5["mForcedVerticalSeparation"] := R6
  65 [-]: GETUPVAL  R5 U4        ; R5 := U4
  66 [-]: SETTABLE  R5 K17 K18   ; R5["mTransitionInDeltaY"] := 0.000000
  67 [-]: GETUPVAL  R5 U4        ; R5 := U4
@@ -12681,7 +12681,7 @@
 127 [-]: SETTABLE  R5 K36 R6    ; R5["CalculateY"] := R6
 128 [-]: GETUPVAL  R5 U4        ; R5 := U4
 129 [-]: CLOSURE   R6 8         ; R6 := closure(Function #112.9)
-130 [-]: SETTABLE  R5 K37 R6    ; R5[0x14e3a848] := R6
+130 [-]: SETTABLE  R5 K37 R6    ; R5["OnElementTransitionStarted"] := R6
 131 [-]: RETURN    R0 1         ; return 
 
 

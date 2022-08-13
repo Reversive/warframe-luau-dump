@@ -73,7 +73,7 @@
  25 [-]: SELF      R3 R3 K14    ; R4 := R3; R3 := R3[0xc97b7a44]
  26 [-]: MOVE      R5 R0        ; R5 := R0
  27 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
- 28 [-]: SETTABLE  R2 K13 R3    ; R2[0x01145f7a] := R3
+ 28 [-]: SETTABLE  R2 K13 R3    ; R2["challengeUserState"] := R3
  29 [-]: GETGLOBAL R3 K12       ; R3 := 0x7b998233
  30 [-]: GETTABLE  R4 R2 K13    ; R4 := R2["challengeUserState"]
  31 [-]: CALL      R3 2 2       ; R3 := R3(R4)

@@ -552,7 +552,7 @@
 109 [-]: TEST      R6 0         ; if not R6 then PC := 113
 110 [-]: JMP       113          ; PC := 113
 111 [-]: LOADK     R6 10        ; R6 := 10.000000
-112 [-]: SETUPVAL  R6 U2        ; U82 := 
+112 [-]: SETUPVAL  R6 U2        ; U82 := R2
 113 [-]: SELF      R6 R0 K19    ; R7 := R0; R6 := R0[0x0eb34c69]
 114 [-]: GETUPVAL  R8 U7        ; R8 := U7
 115 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)

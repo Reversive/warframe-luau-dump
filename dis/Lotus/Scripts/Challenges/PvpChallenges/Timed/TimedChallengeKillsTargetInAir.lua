@@ -32,11 +32,11 @@
 ; Max Stack Size:  3
 
   1 [-]: GETUPVAL  R0 U1        ; R0 := U1
-  2 [-]: GETTABLE  R0 R0 K0     ; R82 := R0[0xb8ae375d]
+  2 [-]: GETTABLE  R0 R0 K0     ; R0 := R0[0xb8ae375d]
   3 [-]: GETGLOBAL R1 K1        ; R1 := 0x83062d09
   4 [-]: GETGLOBAL R2 K2        ; R2 := 0x5bf84945
   5 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
-  6 [-]: SETUPVAL  R0 U0        ; U82 := 
+  6 [-]: SETUPVAL  R0 U0        ; U82 := R0
   7 [-]: GETUPVAL  R0 U0        ; R0 := U0
   8 [-]: NEWTABLE  R1 0 0       ; R1 := {}
   9 [-]: SETTABLE  R0 K3 R1     ; R0["lastHitWasFalling"] := R1
@@ -74,7 +74,7 @@
  11 [-]: TEST      R5 0         ; if not R5 then PC := 17
  12 [-]: JMP       17           ; PC := 17
  13 [-]: GETUPVAL  R5 U1        ; R5 := U1
- 14 [-]: GETTABLE  R5 R5 K3     ; R82 := R5[0x098c2676]
+ 14 [-]: GETTABLE  R5 R5 K3     ; R5 := R5[0x098c2676]
  15 [-]: GETUPVAL  R6 U0        ; R6 := U0
  16 [-]: CALL      R5 2 1       ; R5(R6)
  17 [-]: RETURN    R0 1         ; return 
@@ -129,7 +129,7 @@
   2 [-]: TEST      R3 0         ; if not R3 then PC := 11
   3 [-]: JMP       11           ; PC := 11
   4 [-]: GETUPVAL  R3 U1        ; R3 := U1
-  5 [-]: GETTABLE  R3 R3 K0     ; R82 := R3[0xb35033fd]
+  5 [-]: GETTABLE  R3 R3 K0     ; R3 := R3[0xb35033fd]
   6 [-]: GETUPVAL  R4 U0        ; R4 := U0
   7 [-]: MOVE      R5 R0        ; R5 := R0
   8 [-]: MOVE      R6 R1        ; R6 := R1

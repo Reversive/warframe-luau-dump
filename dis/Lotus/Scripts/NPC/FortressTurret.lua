@@ -37,7 +37,7 @@
  12 [-]: EQ        0 R1 K6      ; if R1 ~= 8.000000 then PC := 16
  13 [-]: JMP       16           ; PC := 16
  14 [-]: LOADK     R2 1         ; R2 := 1.000000
- 15 [-]: SETUPVAL  R2 U0        ; U82 := 
+ 15 [-]: SETUPVAL  R2 U0        ; U82 := R0
  16 [-]: LOADNIL   R2 R2        ; R2 := nil
  17 [-]: GETGLOBAL R3 K0        ; R3 := 0x7b998233
  18 [-]: MOVE      R4 R2        ; R4 := R2

@@ -28,7 +28,7 @@
  19 [-]: GETGLOBAL R5 K9        ; R5 := 0x0469f296
  20 [-]: LOADK     R6 K10       ; R6 := "DoorHint"
  21 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 22 [-]: SETTABLE  R4 K8 R5     ; R4["procDoorHint"] := R5
+ 22 [-]: SETTABLE  R4 K8 R5     ; R4[0xcbd666e1] := R5
  23 [-]: GETGLOBAL R5 K9        ; R5 := 0x0469f296
  24 [-]: LOADK     R6 K12       ; R6 := "TENNO"
  25 [-]: CALL      R5 2 2       ; R5 := R5(R6)
@@ -2171,7 +2171,7 @@
  43 [-]: TESTSET   R9 R3 1      ; if R3 then PC := 46 else R9 := R3
  44 [-]: JMP       46           ; PC := 46
  45 [-]: LOADNIL   R9 R9        ; R9 := nil
- 46 [-]: SETTABLE  R8 K11 R9    ; R8[0x89326c93] := R9
+ 46 [-]: SETTABLE  R8 K11 R9    ; R8["questHidePets"] := R9
  47 [-]: RETURN    R0 1         ; return 
 
 

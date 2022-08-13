@@ -3440,7 +3440,7 @@
  20 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  21 [-]: NEWTABLE  R4 0 3       ; R4 := {}
  22 [-]: SETTABLE  R4 K9 K10    ; R4["difficulty"] := 0.500000
- 23 [-]: SETTABLE  R4 K11 R3    ; R4[0x397b920f] := R3
+ 23 [-]: SETTABLE  R4 K11 R3    ; R4["baseNodeName"] := R3
  24 [-]: MOVE      R5 R3        ; R5 := R3
  25 [-]: LOADK     R6 K13       ; R6 := "_HUB"
  26 [-]: CONCAT    R5 R5 R6     ; R5 := R5 .. R6
@@ -5889,7 +5889,7 @@
   1 [-]: GETGLOBAL R1 K0        ; R1 := _T
   2 [-]: GETUPVAL  R2 U0        ; R2 := U0
   3 [-]: GETTABLE  R2 R2 R0     ; R2 := R2[R0]
-  4 [-]: SETTABLE  R1 K1 R2     ; R1["gToolTip"] := R2
+  4 [-]: SETTABLE  R1 K1 R2     ; R1[0x256548bf] := R2
   5 [-]: RETURN    R0 1         ; return 
 
 

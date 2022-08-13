@@ -156,7 +156,7 @@
 127 [-]: LT        0 R6 R4      ; if R6 >= R4 then PC := 149
 128 [-]: JMP       149          ; PC := 149
 129 [-]: GETGLOBAL R6 K21       ; R6 := 0x5bced4c4
-130 [-]: GETTABLE  R6 R6 K22    ; R82 := R6[0xb62ecfe0]
+130 [-]: GETTABLE  R6 R6 K22    ; R6 := R6[0xb62ecfe0]
 131 [-]: GETGLOBAL R7 K23       ; R7 := 0x67652851
 132 [-]: CALL      R7 1 2       ; R7 := R7()
 133 [-]: MUL       R7 R5 R7     ; R7 := R5 * R7
@@ -170,7 +170,7 @@
 141 [-]: SELF      R7 R3 K16    ; R8 := R3; R7 := R3[0x388577d5]
 142 [-]: CALL      R7 2 2       ; R7 := R7(R8)
 143 [-]: GETTABLE  R6 R6 R7     ; R6 := R6[R7]
-144 [-]: SETTABLE  R6 K17 R4    ; R6["curRate"] := R4
+144 [-]: SETTABLE  R6 K17 R4    ; R6[0x5163741e] := R4
 145 [-]: SELF      R6 R0 K24    ; R7 := R0; R6 := R0[0xe7fe0b05]
 146 [-]: LOADK     R8 0         ; R8 := 0.000000
 147 [-]: MOVE      R9 R4        ; R9 := R4
@@ -229,7 +229,7 @@
  36 [-]: GETTABLE  R3 R3 R4     ; R3 := R3[R4]
  37 [-]: GETTABLE  R3 R3 K7     ; R3 := R3["curRate"]
  38 [-]: GETGLOBAL R4 K8        ; R4 := 0x5bced4c4
- 39 [-]: GETTABLE  R4 R4 K9     ; R82 := R4[0xac1b386a]
+ 39 [-]: GETTABLE  R4 R4 K9     ; R4 := R4[0xac1b386a]
  40 [-]: GETGLOBAL R5 K10       ; R5 := 0x3c13dc90
  41 [-]: ADD       R5 R3 R5     ; R5 := R3 + R5
  42 [-]: GETGLOBAL R6 K11       ; R6 := 0x366ed9c2

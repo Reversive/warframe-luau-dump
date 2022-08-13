@@ -66,7 +66,7 @@
  57 [-]: GETGLOBAL R12 K10      ; R12 := 0x7ed0a956
  58 [-]: LOADK     R13 K26      ; R13 := "/Lotus/Types/Friendly/Rescue/RescueAgentGrineer"
  59 [-]: CALL      R12 2 2      ; R12 := R12(R13)
- 60 [-]: SETTABLE  R11 K16 R12  ; R11[0x00000041] := R12
+ 60 [-]: SETTABLE  R11 K16 R12  ; R11["vipAgent"] := R12
  61 [-]: NEWTABLE  R12 0 4      ; R12 := {}
  62 [-]: GETGLOBAL R13 K10      ; R13 := 0x7ed0a956
  63 [-]: LOADK     R14 K27      ; R14 := "/Lotus/Levels/Proc/Transitional/GrineerToCorpusSabotage"
@@ -118,7 +118,7 @@
 109 [-]: GETGLOBAL R12 K10      ; R12 := 0x7ed0a956
 110 [-]: LOADK     R13 K35      ; R13 := "/Lotus/Types/Friendly/Rescue/RescueAgentCorpus"
 111 [-]: CALL      R12 2 2      ; R12 := R12(R13)
-112 [-]: SETTABLE  R11 K16 R12  ; R11[0x00000041] := R12
+112 [-]: SETTABLE  R11 K16 R12  ; R11["vipAgent"] := R12
 113 [-]: NEWTABLE  R12 0 4      ; R12 := {}
 114 [-]: GETGLOBAL R13 K10      ; R13 := 0x7ed0a956
 115 [-]: LOADK     R14 K36      ; R14 := "/Lotus/Levels/Proc/Transitional/CorpusToGrineerSabotage"
@@ -356,7 +356,7 @@
 347 [-]: GETGLOBAL R12 K10      ; R12 := 0x7ed0a956
 348 [-]: LOADK     R13 K72      ; R13 := "/Lotus/Types/Enemies/Infested/Vip/QuadrupedVIP"
 349 [-]: CALL      R12 2 2      ; R12 := R12(R13)
-350 [-]: SETTABLE  R11 K16 R12  ; R11[0x00000041] := R12
+350 [-]: SETTABLE  R11 K16 R12  ; R11["vipAgent"] := R12
 351 [-]: SETTABLE  R11 K73 K74  ; R11["uniqueName"] := "/Lotus/Language/Bosses/BossPhorid"
 352 [-]: NEWTABLE  R12 0 0      ; R12 := {}
 353 [-]: GETGLOBAL R13 K7       ; R13 := 0x6c97a788

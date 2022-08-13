@@ -101,13 +101,13 @@
  31 [-]: CALL      R2 2 4       ; R2,R3,R4 := R2(R3)
  32 [-]: JMP       54           ; PC := 54
  33 [-]: GETGLOBAL R7 K10       ; R7 := 0x34291f5c
- 34 [-]: GETTABLE  R7 R7 K11    ; R82 := R7[0x397b920f]
+ 34 [-]: GETTABLE  R7 R7 K11    ; R7 := R7[0x397b920f]
  35 [-]: GETTABLE  R8 R6 K12    ; R8 := R6["mActivation"]
  36 [-]: CALL      R7 2 2       ; R7 := R7(R8)
  37 [-]: LT        0 R7 K13     ; if R7 >= 0.000000 then PC := 54
  38 [-]: JMP       54           ; PC := 54
  39 [-]: GETGLOBAL R7 K10       ; R7 := 0x34291f5c
- 40 [-]: GETTABLE  R7 R7 K11    ; R82 := R7[0x397b920f]
+ 40 [-]: GETTABLE  R7 R7 K11    ; R7 := R7[0x397b920f]
  41 [-]: GETTABLE  R8 R6 K14    ; R8 := R6["mExpiry"]
  42 [-]: CALL      R7 2 2       ; R7 := R7(R8)
  43 [-]: LT        0 K13 R7     ; if 0.000000 >= R7 then PC := 54
@@ -173,7 +173,7 @@
  31 [-]: JMP       33           ; PC := 33
  32 [-]: RETURN    R0 1         ; return 
  33 [-]: GETGLOBAL R4 K6        ; R4 := 0x34291f5c
- 34 [-]: GETTABLE  R4 R4 K7     ; R82 := R4[0x35c16153]
+ 34 [-]: GETTABLE  R4 R4 K7     ; R4 := R4[0x35c16153]
  35 [-]: CALL      R4 1 2       ; R4 := R4()
  36 [-]: GETGLOBAL R5 K9        ; R5 := 0x463056e6
  37 [-]: SETTABLE  R4 K8 R5     ; R4["baseAmount"] := R5
@@ -378,7 +378,7 @@
  12 [-]: JMP       14           ; PC := 14
  13 [-]: RETURN    R0 1         ; return 
  14 [-]: GETGLOBAL R3 K3        ; R3 := 0x34291f5c
- 15 [-]: GETTABLE  R3 R3 K4     ; R82 := R3[0x35c16153]
+ 15 [-]: GETTABLE  R3 R3 K4     ; R3 := R3[0x35c16153]
  16 [-]: CALL      R3 1 2       ; R3 := R3()
  17 [-]: GETGLOBAL R4 K6        ; R4 := 0x463056e6
  18 [-]: SETTABLE  R3 K5 R4     ; R3["baseAmount"] := R4
@@ -527,7 +527,7 @@
 116 [-]: LOADBOOL  R8 0 0       ; R8 := false
 117 [-]: CALL      R6 3 1       ; R6(R7,R8)
 118 [-]: GETGLOBAL R6 K29       ; R6 := _T
-119 [-]: GETTABLE  R6 R6 K35    ; R82 := R6[0x659270d0]
+119 [-]: GETTABLE  R6 R6 K35    ; R6 := R6[0x659270d0]
 120 [-]: GETGLOBAL R7 K36       ; R7 := 0x374db378
 121 [-]: LOADK     R8 3         ; R8 := 3.000000
 122 [-]: LOADNIL   R9 R10       ; R9 := R10 := nil
@@ -572,7 +572,7 @@
 161 [-]: TEST      R7 0         ; if not R7 then PC := 170
 162 [-]: JMP       170          ; PC := 170
 163 [-]: GETGLOBAL R7 K29       ; R7 := _T
-164 [-]: GETTABLE  R7 R7 K35    ; R82 := R7[0x659270d0]
+164 [-]: GETTABLE  R7 R7 K35    ; R7 := R7[0x659270d0]
 165 [-]: GETGLOBAL R8 K36       ; R8 := 0x374db378
 166 [-]: LOADK     R9 3         ; R9 := 3.000000
 167 [-]: LOADNIL   R10 R11      ; R10 := R11 := nil
@@ -954,7 +954,7 @@
 164 [-]: LOADNIL   R17 R17      ; R17 := nil
 165 [-]: CALL      R15 3 2      ; R15 := R15(R16,R17)
 166 [-]: GETGLOBAL R16 K35      ; R16 := _T
-167 [-]: GETTABLE  R16 R16 K36  ; R82 := R16[0x659270d0]
+167 [-]: GETTABLE  R16 R16 K36  ; R16 := R16[0x659270d0]
 168 [-]: MOVE      R17 R15      ; R17 := R15
 169 [-]: LOADK     R18 6        ; R18 := 6.000000
 170 [-]: LOADNIL   R19 R20      ; R19 := R20 := nil
@@ -989,7 +989,7 @@
 199 [-]: TEST      R16 1        ; if R16 then PC := 257
 200 [-]: JMP       257          ; PC := 257
 201 [-]: GETUPVAL  R16 U3       ; R16 := U3
-202 [-]: GETTABLE  R16 R16 K39  ; R82 := R16[0x0deacd54]
+202 [-]: GETTABLE  R16 R16 K39  ; R16 := R16[0x0deacd54]
 203 [-]: CALL      R16 1 2      ; R16 := R16()
 204 [-]: TEST      R16 1        ; if R16 then PC := 257
 205 [-]: JMP       257          ; PC := 257
@@ -1012,7 +1012,7 @@
 222 [-]: GETGLOBAL R19 K38      ; R19 := 0x1fe40f97
 223 [-]: CALL      R18 2 2      ; R18 := R18(R19)
 224 [-]: GETUPVAL  R19 U4       ; R19 := U4
-225 [-]: GETTABLE  R19 R19 K44  ; R82 := R19[0xc9890f54]
+225 [-]: GETTABLE  R19 R19 K44  ; R19 := R19[0xc9890f54]
 226 [-]: MOVE      R20 R18      ; R20 := R18
 227 [-]: GETGLOBAL R21 K40      ; R21 := 0x0469f296
 228 [-]: LOADK     R22 K45      ; R22 := "AmbulasBossHacked"
@@ -1034,7 +1034,7 @@
 244 [-]: GETGLOBAL R21 K38      ; R21 := 0x1fe40f97
 245 [-]: CALL      R20 2 2      ; R20 := R20(R21)
 246 [-]: GETUPVAL  R21 U4       ; R21 := U4
-247 [-]: GETTABLE  R21 R21 K44  ; R82 := R21[0xc9890f54]
+247 [-]: GETTABLE  R21 R21 K44  ; R21 := R21[0xc9890f54]
 248 [-]: MOVE      R22 R20      ; R22 := R20
 249 [-]: GETGLOBAL R23 K40      ; R23 := 0x0469f296
 250 [-]: LOADK     R24 K45      ; R24 := "AmbulasBossHacked"
@@ -1124,7 +1124,7 @@
 334 [-]: LOADBOOL  R26 0 0      ; R26 := false
 335 [-]: CALL      R24 3 1      ; R24(R25,R26)
 336 [-]: GETGLOBAL R24 K35      ; R24 := _T
-337 [-]: GETTABLE  R24 R24 K36  ; R82 := R24[0x659270d0]
+337 [-]: GETTABLE  R24 R24 K36  ; R24 := R24[0x659270d0]
 338 [-]: GETGLOBAL R25 K62      ; R25 := 0x374db378
 339 [-]: LOADK     R26 3        ; R26 := 3.000000
 340 [-]: LOADNIL   R27 R28      ; R27 := R28 := nil
@@ -1173,7 +1173,7 @@
 383 [-]: GETGLOBAL R25 K38      ; R25 := 0x1fe40f97
 384 [-]: CALL      R24 2 2      ; R24 := R24(R25)
 385 [-]: GETUPVAL  R25 U4       ; R25 := U4
-386 [-]: GETTABLE  R25 R25 K44  ; R82 := R25[0xc9890f54]
+386 [-]: GETTABLE  R25 R25 K44  ; R25 := R25[0xc9890f54]
 387 [-]: MOVE      R26 R24      ; R26 := R24
 388 [-]: GETGLOBAL R27 K40      ; R27 := 0x0469f296
 389 [-]: LOADK     R28 K70      ; R28 := "AmbulasHacked"
@@ -1213,7 +1213,7 @@
 423 [-]: TEST      R26 0        ; if not R26 then PC := 432
 424 [-]: JMP       432          ; PC := 432
 425 [-]: GETGLOBAL R26 K35      ; R26 := _T
-426 [-]: GETTABLE  R26 R26 K36  ; R82 := R26[0x659270d0]
+426 [-]: GETTABLE  R26 R26 K36  ; R26 := R26[0x659270d0]
 427 [-]: GETGLOBAL R27 K62      ; R27 := 0x374db378
 428 [-]: LOADK     R28 3        ; R28 := 3.000000
 429 [-]: LOADNIL   R29 R30      ; R29 := R30 := nil

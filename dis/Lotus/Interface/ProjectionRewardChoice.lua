@@ -773,7 +773,7 @@
  35 [-]: GETTABLE  R8 R3 K5     ; R8 := R3["Index"]
  36 [-]: SETTABLE  R2 K4 R8     ; R2["RewardIndex"] := R8
  37 [-]: GETTABLE  R8 R3 K7     ; R8 := R3["LoadOutVoidProjection"]
- 38 [-]: SETTABLE  R2 K6 R8     ; R2[0xb496de90] := R8
+ 38 [-]: SETTABLE  R2 K6 R8     ; R2["RewardVoidProjection"] := R8
  39 [-]: GETUPVAL  R8 U1        ; R8 := U1
  40 [-]: CALL      R8 1 1       ; R8()
  41 [-]: RETURN    R0 1         ; return 
@@ -2551,7 +2551,7 @@
  19 [-]: GETGLOBAL R1 K0        ; R1 := _T
  20 [-]: GETTABLE  R1 R1 K7     ; R1 := R1["HideHud"]
  21 [-]: SUB       R1 R1 K8     ; R1 := R1 - 1.000000
- 22 [-]: SETTABLE  R0 K7 R1     ; R0["HideHud"] := R1
+ 22 [-]: SETTABLE  R0 K7 R1     ; R0[0xa5c556b9] := R1
  23 [-]: GETGLOBAL R0 K9        ; R0 := 0x7b998233
  24 [-]: GETGLOBAL R1 K0        ; R1 := _T
  25 [-]: GETTABLE  R1 R1 K10    ; R1 := R1["SetSquadOverlayTitle"]

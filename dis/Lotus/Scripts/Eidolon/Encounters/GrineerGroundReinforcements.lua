@@ -42,15 +42,15 @@
   3 [-]: CALL      R1 2 2       ; R1 := R1(R2)
   4 [-]: SELF      R1 R1 K2     ; R2 := R1; R1 := R1[0x66905cb0]
   5 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  6 [-]: SETUPVAL  R1 U0        ; U82 := 
+  6 [-]: SETUPVAL  R1 U0        ; U82 := R0
   7 [-]: GETGLOBAL R1 K3        ; R1 := 0xbe190284
-  8 [-]: SETUPVAL  R1 U1        ; U82 := 
+  8 [-]: SETUPVAL  R1 U1        ; U82 := R1
   9 [-]: SELF      R1 R0 K4     ; R2 := R0; R1 := R0[0xd1586535]
  10 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 11 [-]: SETUPVAL  R1 U2        ; U82 := 
+ 11 [-]: SETUPVAL  R1 U2        ; U82 := R2
  12 [-]: SELF      R1 R0 K5     ; R2 := R0; R1 := R0[0x891629fa]
  13 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 14 [-]: SETUPVAL  R1 U3        ; U82 := 
+ 14 [-]: SETUPVAL  R1 U3        ; U82 := R3
  15 [-]: GETUPVAL  R1 U0        ; R1 := U0
  16 [-]: SELF      R1 R1 K6     ; R2 := R1; R1 := R1[0x1677897a]
  17 [-]: GETUPVAL  R3 U0        ; R3 := U0
@@ -58,7 +58,7 @@
  19 [-]: GETUPVAL  R5 U2        ; R5 := U2
  20 [-]: CALL      R3 3 0       ; R3,... := R3(R4,R5)
  21 [-]: CALL      R1 0 2       ; R1 := R1(R2,...)
- 22 [-]: SETUPVAL  R1 U4        ; U82 := 
+ 22 [-]: SETUPVAL  R1 U4        ; U82 := R4
  23 [-]: GETGLOBAL R1 K8        ; R1 := 0x3d106989
  24 [-]: LOADK     R2 K9        ; R2 := "Spawning ground reinforcements at Tier "
  25 [-]: GETUPVAL  R3 U4        ; R3 := U4

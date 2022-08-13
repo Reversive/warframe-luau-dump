@@ -640,7 +640,7 @@
  23 [-]: CALL      R0 2 2       ; R0 := R0(R1)
  24 [-]: SELF      R0 R0 K9     ; R1 := R0; R0 := R0[0x66905cb0]
  25 [-]: CALL      R0 2 2       ; R0 := R0(R1)
- 26 [-]: SETUPVAL  R0 U1        ; U82 := 
+ 26 [-]: SETUPVAL  R0 U1        ; U82 := R1
  27 [-]: GETUPVAL  R0 U1        ; R0 := U1
  28 [-]: SELF      R0 R0 K10    ; R1 := R0; R0 := R0[0xa2d83ed4]
  29 [-]: CALL      R0 2 2       ; R0 := R0(R1)

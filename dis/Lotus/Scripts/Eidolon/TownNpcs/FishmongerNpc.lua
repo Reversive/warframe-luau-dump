@@ -190,7 +190,7 @@
  22 [-]: SELF      R1 R1 K9     ; R2 := R1; R1 := R1[0xcfba257f]
  23 [-]: MOVE      R3 R0        ; R3 := R0
  24 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
- 25 [-]: SETUPVAL  R1 U0        ; U82 := 
+ 25 [-]: SETUPVAL  R1 U0        ; U82 := R0
  26 [-]: GETGLOBAL R1 K3        ; R1 := _T
  27 [-]: CLOSURE   R2 0         ; R2 := closure(Function #2.1)
  28 [-]: GETUPVAL  R0 U1        ; R0 := U1
@@ -732,7 +732,7 @@
   1 [-]: LOADK     R1 0         ; R1 := 0.000000
   2 [-]: NEWTABLE  R2 0 0       ; R2 := {}
   3 [-]: NEWTABLE  R3 0 0       ; R3 := {}
-  4 [-]: SETUPVAL  R3 U0        ; U82 := 
+  4 [-]: SETUPVAL  R3 U0        ; U82 := R0
   5 [-]: GETGLOBAL R3 K0        ; R3 := 0xcfc01047
   6 [-]: MOVE      R4 R0        ; R4 := R0
   7 [-]: CALL      R3 2 4       ; R3,R4,R5 := R3(R4)
@@ -1221,7 +1221,7 @@
  11 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  12 [-]: MOVE      R3 R4        ; R3 := R4
  13 [-]: NEWTABLE  R4 0 0       ; R4 := {}
- 14 [-]: SETUPVAL  R4 U0        ; U82 := 
+ 14 [-]: SETUPVAL  R4 U0        ; U82 := R0
  15 [-]: GETGLOBAL R4 K3        ; R4 := 0xcfc01047
  16 [-]: MOVE      R5 R0        ; R5 := R0
  17 [-]: CALL      R4 2 4       ; R4,R5,R6 := R4(R5)
@@ -1320,7 +1320,7 @@
 110 [-]: SELF      R19 R19 K36  ; R20 := R19; R19 := R19[0xcfba257f]
 111 [-]: GETGLOBAL R21 K37      ; R21 := 0x0e7e9601
 112 [-]: CALL      R19 3 2      ; R19 := R19(R20,R21)
-113 [-]: SETUPVAL  R19 U7       ; U82 := 
+113 [-]: SETUPVAL  R19 U7       ; U82 := R7
 114 [-]: GETGLOBAL R19 K0       ; R19 := 0x7b998233
 115 [-]: GETUPVAL  R20 U7       ; R20 := U7
 116 [-]: CALL      R19 2 2      ; R19 := R19(R20)

@@ -1661,10 +1661,10 @@
   1 [-]: TEST      R0 0         ; if not R0 then PC := 6
   2 [-]: JMP       6            ; PC := 6
   3 [-]: LOADBOOL  R2 1 0       ; R2 := true
-  4 [-]: SETUPVAL  R2 U0        ; U82 := 
+  4 [-]: SETUPVAL  R2 U0        ; U82 := R0
   5 [-]: JMP       11           ; PC := 11
   6 [-]: LOADBOOL  R2 1 0       ; R2 := true
-  7 [-]: SETUPVAL  R2 U1        ; U82 := 
+  7 [-]: SETUPVAL  R2 U1        ; U82 := R1
   8 [-]: GETGLOBAL R2 K0        ; R2 := 0x3d106989
   9 [-]: LOADK     R3 K1        ; R3 := "Failed to give extra quest reward mail"
  10 [-]: CALL      R2 2 1       ; R2(R3)
@@ -1683,10 +1683,10 @@
   1 [-]: TEST      R0 0         ; if not R0 then PC := 6
   2 [-]: JMP       6            ; PC := 6
   3 [-]: LOADBOOL  R2 1 0       ; R2 := true
-  4 [-]: SETUPVAL  R2 U0        ; U82 := 
+  4 [-]: SETUPVAL  R2 U0        ; U82 := R0
   5 [-]: JMP       11           ; PC := 11
   6 [-]: LOADBOOL  R2 1 0       ; R2 := true
-  7 [-]: SETUPVAL  R2 U1        ; U82 := 
+  7 [-]: SETUPVAL  R2 U1        ; U82 := R1
   8 [-]: GETGLOBAL R2 K0        ; R2 := 0x3d106989
   9 [-]: LOADK     R3 K1        ; R3 := "Failed to advance quest"
  10 [-]: CALL      R2 2 1       ; R2(R3)
@@ -1771,9 +1771,9 @@
  67 [-]: LOADK     R9 K15       ; R9 := "Triggering quest complete mail"
  68 [-]: CALL      R8 2 1       ; R8(R9)
  69 [-]: LOADBOOL  R8 0 0       ; R8 := false
- 70 [-]: SETUPVAL  R8 U3        ; U82 := 
+ 70 [-]: SETUPVAL  R8 U3        ; U82 := R3
  71 [-]: LOADBOOL  R8 0 0       ; R8 := false
- 72 [-]: SETUPVAL  R8 U4        ; U82 := 
+ 72 [-]: SETUPVAL  R8 U4        ; U82 := R4
  73 [-]: SELF      R8 R4 K16    ; R9 := R4; R8 := R4[0xc106d418]
  74 [-]: MOVE      R10 R5       ; R10 := R5
  75 [-]: GETUPVAL  R11 U2       ; R11 := U2
@@ -1790,7 +1790,7 @@
  86 [-]: LT        0 R8 R9      ; if R8 >= R9 then PC := 111
  87 [-]: JMP       111          ; PC := 111
  88 [-]: LOADBOOL  R10 0 0      ; R10 := false
- 89 [-]: SETUPVAL  R10 U3       ; U82 := 
+ 89 [-]: SETUPVAL  R10 U3       ; U82 := R3
  90 [-]: LOADK     R9 0         ; R9 := 0.000000
  91 [-]: GETGLOBAL R10 K14      ; R10 := 0x3d106989
  92 [-]: LOADK     R11 K18      ; R11 := "Retrying trigger message"
@@ -1844,7 +1844,7 @@
   5 [-]: GETGLOBAL R1 K1        ; R1 := 0xb693b6c1
   6 [-]: CALL      R1 1 2       ; R1 := R1()
   7 [-]: ADD       R0 R0 R1     ; R0 := R0 + R1
-  8 [-]: SETUPVAL  R0 U0        ; U82 := 
+  8 [-]: SETUPVAL  R0 U0        ; U82 := R0
   9 [-]: GETUPVAL  R0 U0        ; R0 := U0
  10 [-]: GETUPVAL  R1 U1        ; R1 := U1
  11 [-]: LT        0 R1 R0      ; if R1 >= R0 then PC := 19
@@ -1957,9 +1957,9 @@
  88 [-]: LOADK     R10 K17      ; R10 := "Eligible for PriestQuest extra reward, triggering mail"
  89 [-]: CALL      R9 2 1       ; R9(R10)
  90 [-]: LOADBOOL  R9 0 0       ; R9 := false
- 91 [-]: SETUPVAL  R9 U4        ; U82 := 
+ 91 [-]: SETUPVAL  R9 U4        ; U82 := R4
  92 [-]: LOADBOOL  R9 0 0       ; R9 := false
- 93 [-]: SETUPVAL  R9 U5        ; U82 := 
+ 93 [-]: SETUPVAL  R9 U5        ; U82 := R5
  94 [-]: SELF      R9 R4 K18    ; R10 := R4; R9 := R4[0xc106d418]
  95 [-]: MOVE      R11 R6       ; R11 := R6
  96 [-]: GETUPVAL  R12 U3       ; R12 := U3
@@ -1976,7 +1976,7 @@
 107 [-]: LT        0 R9 R10     ; if R9 >= R10 then PC := 132
 108 [-]: JMP       132          ; PC := 132
 109 [-]: LOADBOOL  R11 0 0      ; R11 := false
-110 [-]: SETUPVAL  R11 U4       ; U82 := 
+110 [-]: SETUPVAL  R11 U4       ; U82 := R4
 111 [-]: LOADK     R10 0        ; R10 := 0.000000
 112 [-]: GETGLOBAL R11 K16      ; R11 := 0x3d106989
 113 [-]: LOADK     R12 K20      ; R12 := "Retrying trigger message"
@@ -2030,7 +2030,7 @@
   5 [-]: GETGLOBAL R1 K1        ; R1 := 0xb693b6c1
   6 [-]: CALL      R1 1 2       ; R1 := R1()
   7 [-]: ADD       R0 R0 R1     ; R0 := R0 + R1
-  8 [-]: SETUPVAL  R0 U0        ; U82 := 
+  8 [-]: SETUPVAL  R0 U0        ; U82 := R0
   9 [-]: GETUPVAL  R0 U0        ; R0 := U0
  10 [-]: GETUPVAL  R1 U1        ; R1 := U1
  11 [-]: LT        0 R1 R0      ; if R1 >= R0 then PC := 19
@@ -2111,7 +2111,7 @@
  56 [-]: LOADK     R7 0         ; R7 := 0.000000
  57 [-]: CALL      R6 2 1       ; R6(R7)
  58 [-]: LOADBOOL  R6 0 0       ; R6 := false
- 59 [-]: SETUPVAL  R6 U2        ; U82 := 
+ 59 [-]: SETUPVAL  R6 U2        ; U82 := R2
  60 [-]: LOADK     R0 0         ; R0 := 0.000000
  61 [-]: GETGLOBAL R6 K7        ; R6 := 0x3d106989
  62 [-]: LOADK     R7 K8        ; R7 := "Retrying CompleteQuestStage..."
@@ -2164,7 +2164,7 @@
   5 [-]: GETGLOBAL R1 K1        ; R1 := 0xb693b6c1
   6 [-]: CALL      R1 1 2       ; R1 := R1()
   7 [-]: ADD       R0 R0 R1     ; R0 := R0 + R1
-  8 [-]: SETUPVAL  R0 U0        ; U82 := 
+  8 [-]: SETUPVAL  R0 U0        ; U82 := R0
   9 [-]: GETUPVAL  R0 U0        ; R0 := U0
  10 [-]: GETUPVAL  R1 U1        ; R1 := U1
  11 [-]: LT        0 R1 R0      ; if R1 >= R0 then PC := 19

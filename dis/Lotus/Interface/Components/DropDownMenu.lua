@@ -51,7 +51,7 @@
  23 [-]: MOVE      R13 R1       ; R13 := R1
  24 [-]: LOADK     R14 K11      ; R14 := ".Backer"
  25 [-]: CONCAT    R13 R13 R14  ; R13 := R13 .. R14
- 26 [-]: SETTABLE  R12 K10 R13  ; R12["mHitboxClipName"] := R13
+ 26 [-]: SETTABLE  R12 K10 R13  ; R12[0x0000000a] := R13
  27 [-]: SELF      R13 R0 K13   ; R14 := R0; R13 := R0[0xe4162eed]
  28 [-]: LOADK     R15 K14      ; R15 := "SupportsThemes"
  29 [-]: LOADK     R16 K15      ; R16 := ""

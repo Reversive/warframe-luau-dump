@@ -127,7 +127,7 @@
  15 [-]: LOADK     R7 0         ; R7 := 0.000000
  16 [-]: CALL      R4 4 0       ; R4,... := R4(R5,R6,R7)
  17 [-]: CALL      R0 0 2       ; R0 := R0(R1,...)
- 18 [-]: SETUPVAL  R0 U1        ; U82 := 
+ 18 [-]: SETUPVAL  R0 U1        ; U82 := R1
  19 [-]: RETURN    R0 1         ; return 
 
 
@@ -256,7 +256,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
-  1 [-]: SETUPVAL  R0 U0        ; U82 := 
+  1 [-]: SETUPVAL  R0 U0        ; U82 := R0
   2 [-]: RETURN    R0 1         ; return 
 
 
@@ -615,7 +615,7 @@
   7 [-]: SELF      R2 R2 K2     ; R3 := R2; R2 := R2[0xcfba257f]
   8 [-]: GETGLOBAL R4 K3        ; R4 := 0xaf77f814
   9 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
- 10 [-]: SETUPVAL  R2 U0        ; U82 := 
+ 10 [-]: SETUPVAL  R2 U0        ; U82 := R0
  11 [-]: GETGLOBAL R2 K0        ; R2 := 0x7b998233
  12 [-]: GETUPVAL  R3 U0        ; R3 := U0
  13 [-]: CALL      R2 2 2       ; R2 := R2(R3)
@@ -945,9 +945,9 @@
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
-  1 [-]: SETUPVAL  R0 U0        ; U82 := 
+  1 [-]: SETUPVAL  R0 U0        ; U82 := R0
   2 [-]: LOADK     R1 0         ; R1 := 0.000000
-  3 [-]: SETUPVAL  R1 U1        ; U82 := 
+  3 [-]: SETUPVAL  R1 U1        ; U82 := R1
   4 [-]: RETURN    R0 1         ; return 
 
 

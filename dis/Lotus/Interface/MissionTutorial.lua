@@ -477,7 +477,7 @@
  43 [-]: GETUPVAL  R5 U1        ; R5 := U1
  44 [-]: SELF      R5 R5 K14    ; R6 := R5; R5 := R5[0xbad4316f]
  45 [-]: NEWTABLE  R7 0 2       ; R7 := {}
- 46 [-]: SETTABLE  R7 K15 R4    ; R7["PipIndex"] := R4
+ 46 [-]: SETTABLE  R7 K15 R4    ; R7[0xae91e43b] := R4
  47 [-]: GETUPVAL  R8 U0        ; R8 := U0
  48 [-]: GETTABLE  R8 R8 K13    ; R8 := R8["Pages"]
  49 [-]: LEN       R8 R8        ; R8 := # R8
@@ -485,7 +485,7 @@
  51 [-]: JMP       53           ; PC := 53
  52 [-]: LOADBOOL  R8 0 1       ; R8 := false; PC := 53
  53 [-]: LOADBOOL  R8 1 0       ; R8 := true
- 54 [-]: SETTABLE  R7 K16 R8    ; R7["ShowConnector"] := R8
+ 54 [-]: SETTABLE  R7 K16 R8    ; R7[0xd5181643] := R8
  55 [-]: LOADBOOL  R8 1 0       ; R8 := true
  56 [-]: CALL      R5 4 1       ; R5(R6,R7,R8)
  57 [-]: FORLOOP   R1 43        ; R1 += R3; if R1 <= R2 then begin PC := 43; R4 := R1 end

@@ -165,10 +165,10 @@
  50 [-]: GETGLOBAL R16 K16      ; R16 := 0x8b08f162
  51 [-]: CALL      R10 7 1      ; R10(R11,R12,R13,R14,R15,R16)
  52 [-]: GETGLOBAL R10 K17      ; R10 := 0x5bced4c4
- 53 [-]: GETTABLE  R10 R10 K18  ; R82 := R10[0xb62ecfe0]
+ 53 [-]: GETTABLE  R10 R10 K18  ; R10 := R10[0xb62ecfe0]
  54 [-]: GETGLOBAL R11 K19      ; R11 := 0x0b00f8d9
  55 [-]: GETGLOBAL R12 K17      ; R12 := 0x5bced4c4
- 56 [-]: GETTABLE  R12 R12 K18  ; R82 := R12[0xb62ecfe0]
+ 56 [-]: GETTABLE  R12 R12 K18  ; R12 := R12[0xb62ecfe0]
  57 [-]: GETGLOBAL R13 K20      ; R13 := 0x2b210072
  58 [-]: LOADK     R14 1        ; R14 := 1.000000
  59 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)

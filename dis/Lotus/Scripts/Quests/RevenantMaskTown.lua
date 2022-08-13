@@ -505,7 +505,7 @@
  62 [-]: CALL      R8 0 0       ; R8,... := R8(R9,...)
  63 [-]: CALL      R6 0 1       ; R6(R7,...)
  64 [-]: LOADNIL   R6 R6        ; R6 := nil
- 65 [-]: SETUPVAL  R6 U5        ; U82 := 
+ 65 [-]: SETUPVAL  R6 U5        ; U82 := R5
  66 [-]: RETURN    R0 1         ; return 
 
 

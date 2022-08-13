@@ -2260,8 +2260,8 @@
  20 [-]: CALL      R9 3 2       ; R9 := R9(R10,R11)
  21 [-]: MOVE      R8 R9        ; R8 := R9
  22 [-]: NEWTABLE  R9 0 2       ; R9 := {}
- 23 [-]: SETTABLE  R9 K3 R7     ; R9["s"] := R7
- 24 [-]: SETTABLE  R9 K4 R8     ; R9["t"] := R8
+ 23 [-]: SETTABLE  R9 K3 R7     ; R9[0x9e21e394] := R7
+ 24 [-]: SETTABLE  R9 K4 R8     ; R9[0x757b6b81] := R8
  25 [-]: SETTABLE  R2 R6 R9     ; R2[R6] := R9
  26 [-]: FORLOOP   R3 10        ; R3 += R5; if R3 <= R4 then begin PC := 10; R6 := R3 end
  27 [-]: GETUPVAL  R9 U3        ; R9 := U3

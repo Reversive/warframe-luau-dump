@@ -1022,7 +1022,7 @@
 141 [-]: GETTABLE  R13 R13 K39  ; R13 := R13["TaggedButtonsFunc"]
 142 [-]: GETGLOBAL R14 K37      ; R14 := 0x18b7f77e
 143 [-]: GETTABLE  R13 R13 R14  ; R13 := R13[R14]
-144 [-]: SETTABLE  R12 K40 R13  ; R12["DialogGetButtonsFunc"] := R13
+144 [-]: SETTABLE  R12 K40 R13  ; R12[0x8e7c3b5e] := R13
 145 [-]: SELF      R12 R8 K13   ; R13 := R8; R12 := R8[0xe4162eed]
 146 [-]: LOADK     R14 K41      ; R14 := "SetGetButtonsFunction"
 147 [-]: LOADK     R15 K40      ; R15 := "DialogGetButtonsFunc"
@@ -1042,7 +1042,7 @@
 161 [-]: GETGLOBAL R12 K5       ; R12 := _T
 162 [-]: CLOSURE   R13 3        ; R13 := closure(Function #11.4)
 163 [-]: MOVE      R0 R6        ; R0 := R6
-164 [-]: SETTABLE  R12 K44 R13  ; R12["MenuOnUnfocusedCallback"] := R13
+164 [-]: SETTABLE  R12 K44 R13  ; R12[0x81b320a8] := R13
 165 [-]: SELF      R12 R8 K13   ; R13 := R8; R12 := R8[0xe4162eed]
 166 [-]: LOADK     R14 K45      ; R14 := "SetOnUnfocusedCallback"
 167 [-]: LOADK     R15 K44      ; R15 := "MenuOnUnfocusedCallback"

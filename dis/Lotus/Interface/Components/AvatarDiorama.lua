@@ -78,7 +78,7 @@
  69 [-]: GETGLOBAL R8 K18       ; R8 := 0x7ed0a956
  70 [-]: LOADK     R9 K31       ; R9 := "/Lotus/Powersuits/Yareli/BoardArsenalAvatar"
  71 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 72 [-]: SETTABLE  R7 K30 R8    ; R7[0x34291f5c] := R8
+ 72 [-]: SETTABLE  R7 K30 R8    ; R7["YareliBoard"] := R8
  73 [-]: GETGLOBAL R8 K32       ; R8 := 0xb009bbc6
  74 [-]: LOADK     R9 K33       ; R9 := "/Lotus/Types/Lore/FusionMoaLore"
  75 [-]: CALL      R8 2 2       ; R8 := R8(R9)
@@ -1635,7 +1635,7 @@
 115 [-]: MOVE      R0 R47       ; R0 := R47
 116 [-]: GETUPVAL  R0 U6        ; R0 := U6
 117 [-]: MOVE      R0 R40       ; R0 := R40
-118 [-]: SETTABLE  R57 K39 R58  ; R57[0x6c97a788] := R58
+118 [-]: SETTABLE  R57 K39 R58  ; R57["SetupAutoSpin"] := R58
 119 [-]: CLOSURE   R58 9        ; R58 := closure(Function #17.10)
 120 [-]: SETTABLE  R57 K40 R58  ; R57["SetupFocusCamera"] := R58
 121 [-]: CLOSURE   R58 10       ; R58 := closure(Function #17.11)
@@ -5241,7 +5241,7 @@
 717 [-]: GETTABLE  R87 R85 K88  ; R87 := R85["y"]
 718 [-]: SUB       R87 R87 R84  ; R87 := R87 - R84
 719 [-]: ADD       R86 R86 R87  ; R86 := R86 + R87
-720 [-]: SETTABLE  R85 K88 R86  ; R85[0x7b998233] := R86
+720 [-]: SETTABLE  R85 K88 R86  ; R85["y"] := R86
 721 [-]: SELF      R86 R59 K22  ; R87 := R59; R86 := R59[0x9307aa51]
 722 [-]: MOVE      R88 R85      ; R88 := R85
 723 [-]: CALL      R86 3 1      ; R86(R87,R88)
@@ -6941,7 +6941,7 @@
 349 [-]: GETUPVAL  R0 U11       ; R0 := U11
 350 [-]: GETUPVAL  R0 U12       ; R0 := U12
 351 [-]: MOVE      R0 R0        ; R0 := R0
-352 [-]: SETTABLE  R0 K37 R28   ; R0[0xc89bae6f] := R28
+352 [-]: SETTABLE  R0 K37 R28   ; R0["mOnFinishedLoadingCallback"] := R28
 353 [-]: RETURN    R0 1         ; return 
 
 

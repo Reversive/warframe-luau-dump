@@ -426,14 +426,14 @@
  55 [-]: CALL      R6 5 1       ; R6(R7,R8,R9,R10)
  56 [-]: GETUPVAL  R6 U2        ; R6 := U2
  57 [-]: ADD       R6 R6 K2     ; R6 := R6 + 1.000000
- 58 [-]: SETUPVAL  R6 U2        ; U82 := 
+ 58 [-]: SETUPVAL  R6 U2        ; U82 := R2
  59 [-]: GETUPVAL  R6 U2        ; R6 := U2
  60 [-]: GETUPVAL  R7 U3        ; R7 := U3
  61 [-]: LEN       R7 R7        ; R7 := # R7
  62 [-]: LE        0 R7 R6      ; if R7 > R6 then PC := 66
  63 [-]: JMP       66           ; PC := 66
  64 [-]: LOADK     R6 -1        ; R6 := -1.000000
- 65 [-]: SETUPVAL  R6 U2        ; U82 := 
+ 65 [-]: SETUPVAL  R6 U2        ; U82 := R2
  66 [-]: GETUPVAL  R6 U4        ; R6 := U4
  67 [-]: GETUPVAL  R7 U0        ; R7 := U0
  68 [-]: GETTABLE  R7 R7 R4     ; R7 := R7[R4]
@@ -444,7 +444,7 @@
  73 [-]: JMP       82           ; PC := 82
  74 [-]: GETUPVAL  R6 U5        ; R6 := U5
  75 [-]: SUB       R6 R6 R0     ; R6 := R6 - R0
- 76 [-]: SETUPVAL  R6 U5        ; U82 := 
+ 76 [-]: SETUPVAL  R6 U5        ; U82 := R5
  77 [-]: GETUPVAL  R6 U5        ; R6 := U5
  78 [-]: LE        0 R6 K9      ; if R6 > 0.000000 then PC := 82
  79 [-]: JMP       82           ; PC := 82

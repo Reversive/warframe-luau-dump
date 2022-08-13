@@ -61,7 +61,7 @@
   3 [-]: TEST      R9 0         ; if not R9 then PC := 13
   4 [-]: JMP       13           ; PC := 13
   5 [-]: GETGLOBAL R9 K1        ; R9 := 0x5bced4c4
-  6 [-]: GETTABLE  R9 R9 K2     ; R82 := R9[0x3630e649]
+  6 [-]: GETTABLE  R9 R9 K2     ; R9 := R9[0x3630e649]
   7 [-]: LOADK     R10 -1       ; R10 := -1.000000
   8 [-]: LOADK     R11 1        ; R11 := 1.000000
   9 [-]: CALL      R9 3 2       ; R9 := R9(R10,R11)
@@ -90,7 +90,7 @@
  32 [-]: LT        0 K7 R11     ; if 0.000000 >= R11 then PC := 67
  33 [-]: JMP       67           ; PC := 67
  34 [-]: GETGLOBAL R12 K1       ; R12 := 0x5bced4c4
- 35 [-]: GETTABLE  R12 R12 K8   ; R82 := R12[0xb62ecfe0]
+ 35 [-]: GETTABLE  R12 R12 K8   ; R12 := R12[0xb62ecfe0]
  36 [-]: GETGLOBAL R13 K9       ; R13 := 0x67652851
  37 [-]: CALL      R13 1 2      ; R13 := R13()
  38 [-]: SUB       R13 R11 R13  ; R13 := R11 - R13
@@ -183,7 +183,7 @@
  16 [-]: LT        1 R3 R4      ; if R3 < R4 then PC := 24
  17 [-]: JMP       24           ; PC := 24
  18 [-]: GETGLOBAL R4 K8        ; R4 := 0x5bced4c4
- 19 [-]: GETTABLE  R4 R4 K9     ; R82 := R4[0x3630e649]
+ 19 [-]: GETTABLE  R4 R4 K9     ; R4 := R4[0x3630e649]
  20 [-]: CALL      R4 1 2       ; R4 := R4()
  21 [-]: GETGLOBAL R5 K10       ; R5 := 0x1e6bab36
  22 [-]: LT        0 R5 R4      ; if R5 >= R4 then PC := 25
@@ -285,7 +285,7 @@
  48 [-]: CALL      R8 2 2       ; R8 := R8(R9)
  49 [-]: MOVE      R4 R8        ; R4 := R8
  50 [-]: GETGLOBAL R8 K18       ; R8 := 0x5bced4c4
- 51 [-]: GETTABLE  R8 R8 K19    ; R82 := R8[0x3630e649]
+ 51 [-]: GETTABLE  R8 R8 K19    ; R8 := R8[0x3630e649]
  52 [-]: CALL      R8 1 2       ; R8 := R8()
  53 [-]: GETGLOBAL R9 K20       ; R9 := 0x66422852
  54 [-]: LE        0 R9 R4      ; if R9 > R4 then PC := 69
@@ -324,7 +324,7 @@
  87 [-]: MOVE      R16 R4       ; R16 := R4
  88 [-]: GETGLOBAL R17 K27      ; R17 := 0x526b5db8
  89 [-]: GETUPVAL  R18 U1       ; R18 := U1
- 90 [-]: GETTABLE  R18 R18 K28  ; R82 := R18[0x06d055f9]
+ 90 [-]: GETTABLE  R18 R18 K28  ; R18 := R18[0x06d055f9]
  91 [-]: GETGLOBAL R19 K22      ; R19 := 0x5d172da9
  92 [-]: LOADK     R20 1        ; R20 := 1.000000
  93 [-]: LOADK     R21 0        ; R21 := 0.000000
@@ -423,7 +423,7 @@
  59 [-]: SUB       R14 R14 R15  ; R14 := R14 - R15
  60 [-]: DIV       R13 R13 R14  ; R13 := R13 / R14
  61 [-]: GETUPVAL  R14 U0       ; R14 := U0
- 62 [-]: GETTABLE  R14 R14 K21  ; R82 := R14[0x74a11ec6]
+ 62 [-]: GETTABLE  R14 R14 K21  ; R14 := R14[0x74a11ec6]
  63 [-]: GETGLOBAL R15 K22      ; R15 := 0x9bafffe3
  64 [-]: GETGLOBAL R16 K23      ; R16 := 0xeab74988
  65 [-]: GETGLOBAL R17 K24      ; R17 := 0x866ef976
@@ -448,7 +448,7 @@
  84 [-]: JMP       113          ; PC := 113
  85 [-]: SUB       R15 R6 R14   ; R15 := R6 - R14
  86 [-]: GETGLOBAL R16 K26      ; R16 := 0x5bced4c4
- 87 [-]: GETTABLE  R16 R16 K27  ; R82 := R16[0xac1b386a]
+ 87 [-]: GETTABLE  R16 R16 K27  ; R16 := R16[0xac1b386a]
  88 [-]: MOVE      R17 R15      ; R17 := R15
  89 [-]: MOVE      R18 R8       ; R18 := R8
  90 [-]: CALL      R16 3 2      ; R16 := R16(R17,R18)
@@ -475,7 +475,7 @@
 111 [-]: JMP       113          ; PC := 113
 112 [-]: RETURN    R0 1         ; return 
 113 [-]: GETGLOBAL R16 K26      ; R16 := 0x5bced4c4
-114 [-]: GETTABLE  R16 R16 K32  ; R82 := R16[0x3630e649]
+114 [-]: GETTABLE  R16 R16 K32  ; R16 := R16[0x3630e649]
 115 [-]: CALL      R16 1 2      ; R16 := R16()
 116 [-]: GETGLOBAL R17 K33      ; R17 := 0x66422852
 117 [-]: LE        0 R17 R2     ; if R17 > R2 then PC := 133
@@ -511,7 +511,7 @@
 147 [-]: MOVE      R28 R2       ; R28 := R2
 148 [-]: GETGLOBAL R29 K18      ; R29 := 0x526b5db8
 149 [-]: GETUPVAL  R30 U0       ; R30 := U0
-150 [-]: GETTABLE  R30 R30 K40  ; R82 := R30[0x06d055f9]
+150 [-]: GETTABLE  R30 R30 K40  ; R30 := R30[0x06d055f9]
 151 [-]: GETGLOBAL R31 K35      ; R31 := 0x5d172da9
 152 [-]: LOADK     R32 1        ; R32 := 1.000000
 153 [-]: LOADK     R33 0        ; R33 := 0.000000
@@ -537,7 +537,7 @@
 173 [-]: NEWTABLE  R24 0 0      ; R24 := {}
 174 [-]: SETTABLE  R23 K44 R24  ; R23["TrackedSpawnPodAgents"] := R24
 175 [-]: GETGLOBAL R23 K45      ; R23 := 0x33bdd652
-176 [-]: GETTABLE  R23 R23 K46  ; R82 := R23[0x23d5322f]
+176 [-]: GETTABLE  R23 R23 K46  ; R23 := R23[0x23d5322f]
 177 [-]: GETGLOBAL R24 K3       ; R24 := _T
 178 [-]: GETTABLE  R24 R24 K44  ; R24 := R24["TrackedSpawnPodAgents"]
 179 [-]: MOVE      R25 R22      ; R25 := R22
@@ -569,7 +569,7 @@
  10 [-]: SELF      R0 R0 K5     ; R1 := R0; R0 := R0[0x66905cb0]
  11 [-]: CALL      R0 2 2       ; R0 := R0(R1)
  12 [-]: GETGLOBAL R1 K6        ; R1 := 0x5bced4c4
- 13 [-]: GETTABLE  R1 R1 K7     ; R82 := R1[0xac1b386a]
+ 13 [-]: GETTABLE  R1 R1 K7     ; R1 := R1[0xac1b386a]
  14 [-]: SELF      R2 R0 K8     ; R3 := R0; R2 := R0[0x9a49d00c]
  15 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  16 [-]: GETGLOBAL R3 K1        ; R3 := _T
@@ -649,7 +649,7 @@
  46 [-]: SUB       R9 R9 R10    ; R9 := R9 - R10
  47 [-]: DIV       R8 R8 R9     ; R8 := R8 / R9
  48 [-]: GETUPVAL  R9 U1        ; R9 := U1
- 49 [-]: GETTABLE  R9 R9 K15    ; R82 := R9[0x74a11ec6]
+ 49 [-]: GETTABLE  R9 R9 K15    ; R9 := R9[0x74a11ec6]
  50 [-]: GETGLOBAL R10 K16      ; R10 := 0x9bafffe3
  51 [-]: GETGLOBAL R11 K17      ; R11 := 0xeab74988
  52 [-]: GETGLOBAL R12 K18      ; R12 := 0x866ef976
@@ -669,7 +669,7 @@
  66 [-]: LOADBOOL  R16 1 0      ; R16 := true
  67 [-]: CALL      R9 8 2       ; R9 := R9(R10,R11,R12,R13,R14,R15,R16)
  68 [-]: GETGLOBAL R10 K22      ; R10 := 0x5bced4c4
- 69 [-]: GETTABLE  R10 R10 K23  ; R82 := R10[0x3630e649]
+ 69 [-]: GETTABLE  R10 R10 K23  ; R10 := R10[0x3630e649]
  70 [-]: CALL      R10 1 2      ; R10 := R10()
  71 [-]: GETGLOBAL R11 K6       ; R11 := _T
  72 [-]: GETTABLE  R11 R11 K7   ; R11 := R11["EndlessModeEnemyLevel"]
@@ -710,7 +710,7 @@
 107 [-]: GETTABLE  R22 R22 K7   ; R22 := R22["EndlessModeEnemyLevel"]
 108 [-]: GETGLOBAL R23 K12      ; R23 := 0x526b5db8
 109 [-]: GETUPVAL  R24 U1       ; R24 := U1
-110 [-]: GETTABLE  R24 R24 K29  ; R82 := R24[0x06d055f9]
+110 [-]: GETTABLE  R24 R24 K29  ; R24 := R24[0x06d055f9]
 111 [-]: GETGLOBAL R25 K26      ; R25 := 0x5d172da9
 112 [-]: LOADK     R26 1        ; R26 := 1.000000
 113 [-]: LOADK     R27 0        ; R27 := 0.000000
@@ -736,7 +736,7 @@
 133 [-]: NEWTABLE  R18 0 0      ; R18 := {}
 134 [-]: SETTABLE  R17 K33 R18  ; R17[0xd1586535] := R18
 135 [-]: GETGLOBAL R17 K34      ; R17 := 0x33bdd652
-136 [-]: GETTABLE  R17 R17 K35  ; R82 := R17[0x23d5322f]
+136 [-]: GETTABLE  R17 R17 K35  ; R17 := R17[0x23d5322f]
 137 [-]: GETGLOBAL R18 K6       ; R18 := _T
 138 [-]: GETTABLE  R18 R18 K33  ; R18 := R18["TrackedSpawnPodAgents"]
 139 [-]: MOVE      R19 R16      ; R19 := R16
@@ -824,7 +824,7 @@
  14 [-]: TEST      R6 0         ; if not R6 then PC := 104
  15 [-]: JMP       104          ; PC := 104
  16 [-]: GETGLOBAL R6 K6        ; R6 := 0x5bced4c4
- 17 [-]: GETTABLE  R6 R6 K7     ; R82 := R6[0x3630e649]
+ 17 [-]: GETTABLE  R6 R6 K7     ; R6 := R6[0x3630e649]
  18 [-]: CALL      R6 1 2       ; R6 := R6()
  19 [-]: GETGLOBAL R7 K8        ; R7 := 0x643bf559
  20 [-]: LE        0 R6 R7      ; if R6 > R7 then PC := 104
@@ -879,7 +879,7 @@
  69 [-]: MOVE      R16 R8       ; R16 := R8
  70 [-]: GETGLOBAL R17 K20      ; R17 := 0x526b5db8
  71 [-]: GETUPVAL  R18 U1       ; R18 := U1
- 72 [-]: GETTABLE  R18 R18 K21  ; R82 := R18[0x06d055f9]
+ 72 [-]: GETTABLE  R18 R18 K21  ; R18 := R18[0x06d055f9]
  73 [-]: GETGLOBAL R19 K22      ; R19 := 0x5d172da9
  74 [-]: LOADK     R20 1        ; R20 := 1.000000
  75 [-]: LOADK     R21 0        ; R21 := 0.000000
@@ -906,7 +906,7 @@
  96 [-]: NEWTABLE  R11 0 0      ; R11 := {}
  97 [-]: SETTABLE  R10 K26 R11  ; R10["TrackedSpawnPodAgents"] := R11
  98 [-]: GETGLOBAL R10 K27      ; R10 := 0x33bdd652
- 99 [-]: GETTABLE  R10 R10 K28  ; R82 := R10[0x23d5322f]
+ 99 [-]: GETTABLE  R10 R10 K28  ; R10 := R10[0x23d5322f]
 100 [-]: GETGLOBAL R11 K10      ; R11 := _T
 101 [-]: GETTABLE  R11 R11 K26  ; R11 := R11["TrackedSpawnPodAgents"]
 102 [-]: MOVE      R12 R5       ; R12 := R5

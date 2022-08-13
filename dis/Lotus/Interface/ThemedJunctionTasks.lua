@@ -566,7 +566,7 @@
 117 [-]: CALL      R4 3 1       ; R4(R5,R6)
 118 [-]: GETUPVAL  R4 U5        ; R4 := U5
 119 [-]: CLOSURE   R5 4         ; R5 := closure(Function #5.5)
-120 [-]: SETTABLE  R4 K50 R5    ; R4[0xae91e43b] := R5
+120 [-]: SETTABLE  R4 K50 R5    ; R4["CalculateX"] := R5
 121 [-]: GETUPVAL  R4 U5        ; R4 := U5
 122 [-]: CLOSURE   R5 5         ; R5 := closure(Function #5.6)
 123 [-]: SETTABLE  R4 K14 R5    ; R4["CalculateY"] := R5

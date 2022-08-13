@@ -91,7 +91,7 @@
 ; Max Stack Size:  4
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0x5bced4c4
-  2 [-]: GETTABLE  R1 R1 K1     ; R82 := R1[0x3630e649]
+  2 [-]: GETTABLE  R1 R1 K1     ; R1 := R1[0x3630e649]
   3 [-]: UNM       R2 R0        ; R2 := ^ R0
   4 [-]: MOVE      R3 R0        ; R3 := R0
   5 [-]: TAILCALL  R1 3 0       ; R1,... := R1(R2,R3)
@@ -167,7 +167,7 @@
  57 [-]: LT        0 R14 K10    ; if R14 >= 1.000000 then PC := 64
  58 [-]: JMP       64           ; PC := 64
  59 [-]: GETGLOBAL R14 K13      ; R14 := 0x33bdd652
- 60 [-]: GETTABLE  R14 R14 K14  ; R82 := R14[0x23d5322f]
+ 60 [-]: GETTABLE  R14 R14 K14  ; R14 := R14[0x23d5322f]
  61 [-]: MOVE      R15 R9       ; R15 := R9
  62 [-]: GETTABLE  R16 R8 R13   ; R16 := R8[R13]
  63 [-]: CALL      R14 3 1      ; R14(R15,R16)

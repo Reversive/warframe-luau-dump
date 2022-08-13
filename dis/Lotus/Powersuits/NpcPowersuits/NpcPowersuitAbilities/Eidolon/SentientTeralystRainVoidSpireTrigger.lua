@@ -368,7 +368,7 @@
   5 [-]: JMP       9            ; PC := 9
   6 [-]: SELF      R1 R0 K1     ; R2 := R0; R1 := R0[0x2b54251b]
   7 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  8 [-]: SETUPVAL  R1 U0        ; U82 := 
+  8 [-]: SETUPVAL  R1 U0        ; U82 := R0
   9 [-]: GETGLOBAL R1 K2        ; R1 := 0x11a19c5e
  10 [-]: MOVE      R2 R0        ; R2 := R0
  11 [-]: LOADK     R3 K3        ; R3 := "OnTouched"

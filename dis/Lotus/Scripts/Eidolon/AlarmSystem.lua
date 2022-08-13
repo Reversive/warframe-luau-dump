@@ -130,7 +130,7 @@
   9 [-]: JMP       13           ; PC := 13
  10 [-]: GETUPVAL  R1 U0        ; R1 := U0
  11 [-]: ADD       R1 R1 K0     ; R1 := R1 + 1.000000
- 12 [-]: SETUPVAL  R1 U0        ; U82 := 
+ 12 [-]: SETUPVAL  R1 U0        ; U82 := R0
  13 [-]: LOADNIL   R1 R2        ; R1 := R2 := nil
  14 [-]: GETUPVAL  R3 U0        ; R3 := U0
  15 [-]: LE        0 K1 R3      ; if 4.000000 > R3 then PC := 21
@@ -258,12 +258,12 @@
   6 [-]: CALL      R1 2 2       ; R1 := R1(R2)
   7 [-]: SELF      R1 R1 K3     ; R2 := R1; R1 := R1[0x66905cb0]
   8 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  9 [-]: SETUPVAL  R1 U0        ; U82 := 
- 10 [-]: SETUPVAL  R0 U1        ; U82 := 
+  9 [-]: SETUPVAL  R1 U0        ; U82 := R0
+ 10 [-]: SETUPVAL  R0 U1        ; U82 := R1
  11 [-]: SELF      R1 R0 K4     ; R2 := R0; R1 := R0[0xc9f6a7d7]
  12 [-]: GETUPVAL  R3 U3        ; R3 := U3
  13 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
- 14 [-]: SETUPVAL  R1 U2        ; U82 := 
+ 14 [-]: SETUPVAL  R1 U2        ; U82 := R2
  15 [-]: GETGLOBAL R1 K5        ; R1 := 0x7b998233
  16 [-]: GETUPVAL  R2 U2        ; R2 := U2
  17 [-]: CALL      R1 2 2       ; R1 := R1(R2)
@@ -286,7 +286,7 @@
  34 [-]: SELF      R1 R0 K4     ; R2 := R0; R1 := R0[0xc9f6a7d7]
  35 [-]: GETUPVAL  R3 U3        ; R3 := U3
  36 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
- 37 [-]: SETUPVAL  R1 U2        ; U82 := 
+ 37 [-]: SETUPVAL  R1 U2        ; U82 := R2
  38 [-]: JMP       15           ; PC := 15
  39 [-]: GETUPVAL  R1 U2        ; R1 := U2
  40 [-]: SELF      R1 R1 K8     ; R2 := R1; R1 := R1[0x383d2e7d]

@@ -1900,7 +1900,7 @@
 478 [-]: JMP       483          ; PC := 483
 479 [-]: GETTABLE  R50 R19 K60  ; R50 := R19["z"]
 480 [-]: SUB       R50 R50 R30  ; R50 := R50 - R30
-481 [-]: SETTABLE  R19 K60 R50  ; R19[0xc0a3774b] := R50
+481 [-]: SETTABLE  R19 K60 R50  ; R19["z"] := R50
 482 [-]: JMP       494          ; PC := 494
 483 [-]: SELF      R50 R0 K29   ; R51 := R0; R50 := R0[0xd1586535]
 484 [-]: CALL      R50 2 2      ; R50 := R50(R51)
@@ -1912,7 +1912,7 @@
 490 [-]: GETTABLE  R51 R19 K60  ; R51 := R19["z"]
 491 [-]: GETTABLE  R52 R50 K60  ; R52 := R50["z"]
 492 [-]: ADD       R51 R51 R52  ; R51 := R51 + R52
-493 [-]: SETTABLE  R19 K60 R51  ; R19[0xc0a3774b] := R51
+493 [-]: SETTABLE  R19 K60 R51  ; R19["z"] := R51
 494 [-]: SELF      R51 R0 K77   ; R52 := R0; R51 := R0[0x9307aa51]
 495 [-]: MOVE      R53 R19      ; R53 := R19
 496 [-]: CALL      R51 3 1      ; R51(R52,R53)
@@ -4373,7 +4373,7 @@
  39 [-]: SETTABLE  R5 K5 K2     ; R5["gSpectreLoadoutWeaponIDs"] := nil
  40 [-]: GETGLOBAL R5 K10       ; R5 := 0x6c97a788
  41 [-]: GETTABLE  R5 R5 K11    ; R5 := R5["InvalidItemID"]
- 42 [-]: SETTABLE  R4 K9 R5     ; R4["UID"] := R5
+ 42 [-]: SETTABLE  R4 K9 R5     ; R4[0xa5c556b9] := R5
  43 [-]: JMP       61           ; PC := 61
  44 [-]: GETUPVAL  R5 U2        ; R5 := U2
  45 [-]: GETTABLE  R6 R4 K12    ; R6 := R4["category"]
@@ -4387,7 +4387,7 @@
  53 [-]: CALL      R7 4 2       ; R7 := R7(R8,R9,R10)
  54 [-]: GETTABLE  R7 R7 K15    ; R7 := R7["mItemId"]
  55 [-]: GETTABLE  R7 R7 K16    ; R7 := R7["mId"]
- 56 [-]: SETTABLE  R4 K9 R7     ; R4["UID"] := R7
+ 56 [-]: SETTABLE  R4 K9 R7     ; R4[0xa5c556b9] := R7
  57 [-]: GETGLOBAL R7 K0        ; R7 := _T
  58 [-]: GETTABLE  R7 R7 K5     ; R7 := R7["gSpectreLoadoutWeaponIDs"]
  59 [-]: GETTABLE  R8 R4 K9     ; R8 := R4["UID"]
@@ -5450,11 +5450,11 @@
  94 [-]: GETTABLE  R15 R10 K20  ; R15 := R10["mItemCount"]
  95 [-]: SETTABLE  R14 K19 R15  ; R14["Count"] := R15
  96 [-]: GETTABLE  R15 R11 K21  ; R15 := R11["Icon"]
- 97 [-]: SETTABLE  R14 K21 R15  ; R14["Icon"] := R15
+ 97 [-]: SETTABLE  R14 K21 R15  ; R14[0xe6ccc5b9] := R15
  98 [-]: GETTABLE  R15 R11 K22  ; R15 := R11["Themed"]
  99 [-]: SETTABLE  R14 K22 R15  ; R14["Themed"] := R15
 100 [-]: GETTABLE  R15 R11 K23  ; R15 := R11["LocalizedDesc"]
-101 [-]: SETTABLE  R14 K23 R15  ; R14["LocalizedDesc"] := R15
+101 [-]: SETTABLE  R14 K23 R15  ; R14[0xe99b84e7] := R15
 102 [-]: CALL      R12 3 1      ; R12(R13,R14)
 103 [-]: FORLOOP   R6 60        ; R6 += R8; if R6 <= R7 then begin PC := 60; R9 := R6 end
 104 [-]: GETUPVAL  R12 U2       ; R12 := U2
@@ -5478,7 +5478,7 @@
 122 [-]: GETGLOBAL R15 K28      ; R15 := 0xb009bbc6
 123 [-]: LOADK     R16 K29      ; R16 := "/Lotus/Interface/Icons/StoreIcons/Currency/CreditsLarge.png"
 124 [-]: CALL      R15 2 2      ; R15 := R15(R16)
-125 [-]: SETTABLE  R14 K21 R15  ; R14["Icon"] := R15
+125 [-]: SETTABLE  R14 K21 R15  ; R14[0xe6ccc5b9] := R15
 126 [-]: CALL      R12 3 1      ; R12(R13,R14)
 127 [-]: GETGLOBAL R12 K30      ; R12 := _T
 128 [-]: NEWTABLE  R13 0 4      ; R13 := {}
@@ -7446,7 +7446,7 @@
 1010 [-]: LOADBOOL  R54 1 0      ; R54 := true
 1011 [-]: NEWTABLE  R55 0 1      ; R55 := {}
 1012 [-]: GETTABLE  R56 R0 K182  ; R56 := R0["RecipeCount"]
-1013 [-]: SETTABLE  R55 K186 R56 ; R55["COUNT"] := R56
+1013 [-]: SETTABLE  R55 K186 R56 ; R55[0xae91e43b] := R56
 1014 [-]: CALL      R51 5 0      ; R51,... := R51(R52,R53,R54,R55)
 1015 [-]: CALL      R50 0 0      ; R50,... := R50(R51,...)
 1016 [-]: CALL      R45 0 1      ; R45(R46,...)
@@ -9178,7 +9178,7 @@
 250 [-]: CALL      R7 4 2       ; R7 := R7(R8,R9,R10)
 251 [-]: GETUPVAL  R8 U18       ; R8 := U18
 252 [-]: GETTABLE  R8 R8 R2     ; R8 := R8[R2]
-253 [-]: SETTABLE  R8 K41 R6    ; R8[0x7b998233] := R6
+253 [-]: SETTABLE  R8 K41 R6    ; R8["SkipBuildTimePrice"] := R6
 254 [-]: GETGLOBAL R8 K1        ; R8 := 0xae91e43b
 255 [-]: SELF      R8 R8 K32    ; R9 := R8; R8 := R8[0x5f56eeab]
 256 [-]: GETUPVAL  R10 U18      ; R10 := U18

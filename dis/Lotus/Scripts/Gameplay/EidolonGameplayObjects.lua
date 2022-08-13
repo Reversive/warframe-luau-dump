@@ -58,7 +58,7 @@
  17 [-]: CALL      R1 3 1       ; R1(R2,R3)
  18 [-]: GETUPVAL  R1 U2        ; R1 := U2
  19 [-]: ADD       R1 R1 K6     ; R1 := R1 + 1.000000
- 20 [-]: SETUPVAL  R1 U2        ; U82 := 
+ 20 [-]: SETUPVAL  R1 U2        ; U82 := R2
  21 [-]: SELF      R1 R0 K7     ; R2 := R0; R1 := R0[0x2b54251b]
  22 [-]: CALL      R1 2 2       ; R1 := R1(R2)
  23 [-]: GETGLOBAL R2 K8        ; R2 := 0x7b998233
@@ -160,7 +160,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  9
 
-  1 [-]: SETUPVAL  R0 U0        ; U82 := 
+  1 [-]: SETUPVAL  R0 U0        ; U82 := R0
   2 [-]: LOADNIL   R1 R1        ; R1 := nil
   3 [-]: GETGLOBAL R2 K0        ; R2 := 0x7b998233
   4 [-]: MOVE      R3 R1        ; R3 := R1

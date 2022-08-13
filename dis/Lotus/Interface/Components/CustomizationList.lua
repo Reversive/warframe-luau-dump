@@ -1127,7 +1127,7 @@
  45 [-]: GETTABLE  R10 R2 K13   ; R10 := R2["mChildren"]
  46 [-]: MOVE      R11 R1       ; R11 := R1
  47 [-]: CALL      R9 3 1       ; R9(R10,R11)
- 48 [-]: SETTABLE  R1 K16 R2    ; R1[0x0032441c] := R2
+ 48 [-]: SETTABLE  R1 K16 R2    ; R1["mParent"] := R2
  49 [-]: GETGLOBAL R9 K14       ; R9 := 0x33bdd652
  50 [-]: GETTABLE  R9 R9 K15    ; R9 := R9[0x23d5322f]
  51 [-]: GETTABLE  R10 R0 K8    ; R10 := R0["mUnfilteredElements"]
@@ -2841,7 +2841,7 @@
   5 [-]: JMP       18           ; PC := 18
   6 [-]: SELF      R3 R0 K2     ; R4 := R0; R3 := R0[0x68e36b8d]
   7 [-]: NEWTABLE  R5 0 1       ; R5 := {}
-  8 [-]: SETTABLE  R5 K3 R2     ; R5["mIndex"] := R2
+  8 [-]: SETTABLE  R5 K3 R2     ; R5[0xb55952db] := R2
   9 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
  10 [-]: MOVE      R1 R3        ; R1 := R3
  11 [-]: GETTABLE  R3 R0 K4     ; R3 := R0[0xfa984a8e]
@@ -4973,7 +4973,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  12
 
-  1 [-]: SETTABLE  R1 K0 R2     ; R1[0x91a24e4b] := R2
+  1 [-]: SETTABLE  R1 K0 R2     ; R1["mExpanded"] := R2
   2 [-]: TEST      R2 1         ; if R2 then PC := 17
   3 [-]: JMP       17           ; PC := 17
   4 [-]: GETTABLE  R3 R1 K1     ; R3 := R1["mChildren"]
@@ -5257,7 +5257,7 @@
 169 [-]: GETTABLE  R23 R23 K35  ; R23 := R23["Id"]
 170 [-]: CALL      R21 3 2      ; R21 := R21(R22,R23)
 171 [-]: NOT       R21 R21      ; R21 := not R21
-172 [-]: SETTABLE  R20 K32 R21  ; R20[0xae6791ba] := R21
+172 [-]: SETTABLE  R20 K32 R21  ; R20["mInterpolate"] := R21
 173 [-]: FORLOOP   R16 141      ; R16 += R18; if R16 <= R17 then begin PC := 141; R19 := R16 end
 174 [-]: CLOSE     R9           ; SAVE R9,...
 175 [-]: SELF      R9 R0 K36    ; R10 := R0; R9 := R0[0xc13d088c]
@@ -5343,7 +5343,7 @@
 255 [-]: CALL      R14 3 1      ; R14(R15,R16)
 256 [-]: GETUPVAL  R14 U0       ; R14 := U0
 257 [-]: GETTABLE  R14 R14 K43  ; R14 := R14["CustListScrollBar"]
-258 [-]: SETTABLE  R14 K46 R9   ; R14[0xaade900e] := R9
+258 [-]: SETTABLE  R14 K46 R9   ; R14["mTotalHeight"] := R9
 259 [-]: GETUPVAL  R14 U0       ; R14 := U0
 260 [-]: GETTABLE  R14 R14 K43  ; R14 := R14["CustListScrollBar"]
 261 [-]: CLOSURE   R15 1        ; R15 := closure(Function #3.40.2)
@@ -8014,7 +8014,7 @@
  22 [-]: LOADBOOL  R7 0 1       ; R7 := false; PC := 23
  23 [-]: LOADBOOL  R7 1 0       ; R7 := true
  24 [-]: CALL      R2 6 1       ; R2(R3,R4,R5,R6,R7)
- 25 [-]: SETTABLE  R0 K8 R1     ; R0[0x8606033a] := R1
+ 25 [-]: SETTABLE  R0 K8 R1     ; R0["mState"] := R1
  26 [-]: GETTABLE  R2 R0 K4     ; R2 := R0["State"]
  27 [-]: GETTABLE  R2 R2 K5     ; R2 := R2["CUSTOMIZATION"]
  28 [-]: EQ        0 R1 R2      ; if R1 ~= R2 then PC := 46

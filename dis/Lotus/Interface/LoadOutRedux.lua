@@ -8424,14 +8424,14 @@
  13 [-]: GETTABLE  R4 R0 K0     ; R4 := R0["Attribute"]
  14 [-]: GETTABLE  R5 R0 K10    ; R5 := R0["PetTrait"]
  15 [-]: CALL      R2 4 3       ; R2,R3 := R2(R3,R4,R5)
- 16 [-]: SETTABLE  R0 K9 R3     ; R0["ColorInitialized"] := R3
- 17 [-]: SETTABLE  R0 K8 R2     ; R0["Color"] := R2
+ 16 [-]: SETTABLE  R0 K9 R3     ; R0[0x1db57c6b] := R3
+ 17 [-]: SETTABLE  R0 K8 R2     ; R0[0x0a33ea4a] := R2
  18 [-]: GETUPVAL  R2 U1        ; R2 := U1
  19 [-]: MOVE      R3 R1        ; R3 := R1
  20 [-]: GETTABLE  R4 R0 K13    ; R4 := R0["Attribute2"]
  21 [-]: GETTABLE  R5 R0 K10    ; R5 := R0["PetTrait"]
  22 [-]: CALL      R2 4 3       ; R2,R3 := R2(R3,R4,R5)
- 23 [-]: SETTABLE  R0 K12 R3    ; R0["ColorInitialized2"] := R3
+ 23 [-]: SETTABLE  R0 K12 R3    ; R0[0xf2deaf69] := R3
  24 [-]: SETTABLE  R0 K11 R2    ; R0["Color2"] := R2
  25 [-]: RETURN    R0 1         ; return 
 
@@ -8753,7 +8753,7 @@
   6 [-]: GETGLOBAL R1 K4        ; R1 := 0x60130201
   7 [-]: GETUPVAL  R2 U1        ; R2 := U1
   8 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  9 [-]: SETTABLE  R0 K3 R1     ; R0[0x34291f5c] := R1
+  9 [-]: SETTABLE  R0 K3 R1     ; R0["Color"] := R1
  10 [-]: SETTABLE  R0 K5 K2     ; R0["ColorInitialized"] := true
  11 [-]: JMP       25           ; PC := 25
  12 [-]: GETTABLE  R1 R0 K6     ; R1 := R0["Attribute2"]
@@ -15057,10 +15057,10 @@
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := _T
   2 [-]: GETTABLE  R2 R0 K2     ; R2 := R0["LoadOutType"]
-  3 [-]: SETTABLE  R1 K1 R2     ; R1["upgradeItemLot"] := R2
+  3 [-]: SETTABLE  R1 K1 R2     ; R1[0x7f5022cf] := R2
   4 [-]: GETGLOBAL R1 K0        ; R1 := _T
   5 [-]: GETTABLE  R2 R0 K4     ; R2 := R0["LoadOutId"]
-  6 [-]: SETTABLE  R1 K3 R2     ; R1["upgradeItemSlot"] := R2
+  6 [-]: SETTABLE  R1 K3 R2     ; R1[0x1a94c9cc] := R2
   7 [-]: GETUPVAL  R1 U0        ; R1 := U0
   8 [-]: GETTABLE  R1 R1 K5     ; R1 := R1[0xb2cd8e7b]
   9 [-]: LOADBOOL  R2 0 0       ; R2 := false
@@ -18911,7 +18911,7 @@
  54 [-]: SUB       R9 R6 R7     ; R9 := R6 - R7
  55 [-]: SUB       R10 R8 R7    ; R10 := R8 - R7
  56 [-]: DIV       R9 R9 R10    ; R9 := R9 / R10
- 57 [-]: SETTABLE  R0 K20 R9    ; R0["XpRatio"] := R9
+ 57 [-]: SETTABLE  R0 K20 R9    ; R0[0xf64b7262] := R9
  58 [-]: GETGLOBAL R10 K9       ; R10 := 0xa94df70b
  59 [-]: SELF      R10 R10 K21  ; R11 := R10; R10 := R10[0x84fb4327]
  60 [-]: GETTABLE  R12 R0 K6    ; R12 := R0["Type"]
@@ -28541,7 +28541,7 @@
 133 [-]: GETUPVAL  R0 U2        ; R0 := U2
 134 [-]: GETUPVAL  R0 U9        ; R0 := U9
 135 [-]: GETUPVAL  R0 U3        ; R0 := U3
-136 [-]: SETTABLE  R1 K53 R2    ; R1[0x6c97a788] := R2
+136 [-]: SETTABLE  R1 K53 R2    ; R1["mElementDrawCallback"] := R2
 137 [-]: GETGLOBAL R1 K2        ; R1 := mItemsGrid
 138 [-]: GETGLOBAL R2 K2        ; R2 := mItemsGrid
 139 [-]: GETTABLE  R2 R2 K55    ; R2 := R2["FocusElementInDirection"]
@@ -28552,7 +28552,7 @@
 144 [-]: GETGLOBAL R1 K2        ; R1 := mItemsGrid
 145 [-]: CLOSURE   R2 7         ; R2 := closure(Function #133.8)
 146 [-]: GETUPVAL  R0 U10       ; R0 := U10
-147 [-]: SETTABLE  R1 K56 R2    ; R1[0xf2deaf69] := R2
+147 [-]: SETTABLE  R1 K56 R2    ; R1["AdditionalFilterFunction"] := R2
 148 [-]: GETGLOBAL R1 K57       ; R1 := mTimerTable
 149 [-]: GETTABLE  R1 R1 K58    ; R1 := R1["mRedrawItemsGridTimerId"]
 150 [-]: EQ        1 R1 K39     ; if R1 == nil then PC := 158
@@ -28578,7 +28578,7 @@
 170 [-]: SETTABLE  R4 K65 K66   ; R4["SortId"] := "NAME"
 171 [-]: CLOSURE   R5 9         ; R5 := closure(Function #133.10)
 172 [-]: MOVE      R0 R1        ; R0 := R1
-173 [-]: SETTABLE  R4 K67 R5    ; R4["Attribute"] := R5
+173 [-]: SETTABLE  R4 K67 R5    ; R4[0x03f57322] := R5
 174 [-]: CALL      R2 3 1       ; R2(R3,R4)
 175 [-]: GETGLOBAL R2 K2        ; R2 := mItemsGrid
 176 [-]: SELF      R2 R2 K61    ; R3 := R2; R2 := R2[0xb029c588]
@@ -28592,7 +28592,7 @@
 184 [-]: SETTABLE  R4 K65 K69   ; R4["SortId"] := "RANK"
 185 [-]: CLOSURE   R5 10        ; R5 := closure(Function #133.11)
 186 [-]: MOVE      R0 R1        ; R0 := R1
-187 [-]: SETTABLE  R4 K67 R5    ; R4["Attribute"] := R5
+187 [-]: SETTABLE  R4 K67 R5    ; R4[0x03f57322] := R5
 188 [-]: CALL      R2 3 1       ; R2(R3,R4)
 189 [-]: GETGLOBAL R2 K2        ; R2 := mItemsGrid
 190 [-]: SELF      R2 R2 K61    ; R3 := R2; R2 := R2[0xb029c588]
@@ -28606,7 +28606,7 @@
 198 [-]: SETTABLE  R4 K65 K71   ; R4["SortId"] := "FORMA"
 199 [-]: CLOSURE   R5 11        ; R5 := closure(Function #133.12)
 200 [-]: MOVE      R0 R1        ; R0 := R1
-201 [-]: SETTABLE  R4 K67 R5    ; R4["Attribute"] := R5
+201 [-]: SETTABLE  R4 K67 R5    ; R4[0x03f57322] := R5
 202 [-]: CALL      R2 3 1       ; R2(R3,R4)
 203 [-]: GETGLOBAL R2 K2        ; R2 := mItemsGrid
 204 [-]: SELF      R2 R2 K61    ; R3 := R2; R2 := R2[0xb029c588]
@@ -28620,7 +28620,7 @@
 212 [-]: SETTABLE  R4 K65 K73   ; R4["SortId"] := "USAGE"
 213 [-]: CLOSURE   R5 12        ; R5 := closure(Function #133.13)
 214 [-]: MOVE      R0 R1        ; R0 := R1
-215 [-]: SETTABLE  R4 K67 R5    ; R4["Attribute"] := R5
+215 [-]: SETTABLE  R4 K67 R5    ; R4[0x03f57322] := R5
 216 [-]: CALL      R2 3 1       ; R2(R3,R4)
 217 [-]: GETGLOBAL R2 K2        ; R2 := mItemsGrid
 218 [-]: SELF      R2 R2 K61    ; R3 := R2; R2 := R2[0xb029c588]
@@ -28634,7 +28634,7 @@
 226 [-]: SETTABLE  R4 K65 K75   ; R4["SortId"] := "LENS"
 227 [-]: CLOSURE   R5 13        ; R5 := closure(Function #133.14)
 228 [-]: MOVE      R0 R1        ; R0 := R1
-229 [-]: SETTABLE  R4 K67 R5    ; R4["Attribute"] := R5
+229 [-]: SETTABLE  R4 K67 R5    ; R4[0x03f57322] := R5
 230 [-]: CALL      R2 3 1       ; R2(R3,R4)
 231 [-]: GETGLOBAL R2 K4        ; R2 := 0xae91e43b
 232 [-]: SELF      R2 R2 K76    ; R3 := R2; R2 := R2[0x492f9da2]
@@ -38153,7 +38153,7 @@
  20 [-]: GETTABLE  R2 R2 K10    ; R2 := R2["mId"]
  21 [-]: SETTABLE  R0 K8 R2     ; R0["UID"] := R2
  22 [-]: GETTABLE  R2 R1 K11    ; R2 := R1["mModSlot"]
- 23 [-]: SETTABLE  R0 K11 R2    ; R0["mModSlot"] := R2
+ 23 [-]: SETTABLE  R0 K11 R2    ; R0[0x7b998233] := R2
  24 [-]: GETTABLE  R2 R1 K12    ; R2 := R1["mCustSlot"]
  25 [-]: SETTABLE  R0 K12 R2    ; R0["mCustSlot"] := R2
  26 [-]: GETUPVAL  R2 U1        ; R2 := U1
@@ -39453,7 +39453,7 @@
 ; Max Stack Size:  11
 
   1 [-]: NEWTABLE  R4 0 4       ; R4 := {}
-  2 [-]: SETTABLE  R4 K0 R0     ; R4[0x000b002a] := R0
+  2 [-]: SETTABLE  R4 K0 R0     ; R4["Default"] := R0
   3 [-]: SETTABLE  R4 K1 R1     ; R4["Level"] := R1
   4 [-]: SETTABLE  R4 K2 R2     ; R4["TopTitle"] := R2
   5 [-]: SETTABLE  R4 K3 R3     ; R4["Id"] := R3
@@ -41741,7 +41741,7 @@
 2090 [-]: SELF      R174 R174 K140; R175 := R174; R174 := R174[0xbad4316f]
 2091 [-]: NEWTABLE  R176 0 12    ; R176 := {}
 2092 [-]: SETTABLE  R176 K39 R158; R176["Attribute"] := R158
-2093 [-]: SETTABLE  R176 K28 R173; R176["Title"] := R173
+2093 [-]: SETTABLE  R176 K28 R173; R176[0x5465f8f3] := R173
 2094 [-]: SETTABLE  R176 K219 K113; R176["AttachPart"] := true
 2095 [-]: GETGLOBAL R177 K31     ; R177 := mLists
 2096 [-]: GETTABLE  R177 R177 K32; R177 := R177["mCosmeticsList"]
@@ -46966,7 +46966,7 @@
  41 [-]: GETTABLE  R5 R5 K12    ; R5 := R5["Element"]
  42 [-]: GETTABLE  R5 R5 K17    ; R5 := R5["LoadOutId"]
  43 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
- 44 [-]: SETTABLE  R2 K14 R3    ; R2[0x6af348d2] := R3
+ 44 [-]: SETTABLE  R2 K14 R3    ; R2["OwnedItems"] := R3
  45 [-]: GETUPVAL  R2 U3        ; R2 := U3
  46 [-]: GETGLOBAL R3 K11       ; R3 := mSelected
  47 [-]: GETTABLE  R3 R3 K12    ; R3 := R3["Element"]
@@ -49052,3 +49052,4 @@
 1081 [-]: JMP       1089         ; PC := 1089
 1082 [-]: GETGLOBAL R18 K50      ; R18 := _T
 1083 [-]: LOADK     R19 K279     ; R19 := "domeState"
+10

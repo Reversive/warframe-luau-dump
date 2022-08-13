@@ -3909,12 +3909,12 @@
 244 [-]: GETTABLE  R9 R0 K76    ; R9 := R0["mEmoteGrid"]
 245 [-]: GETTABLE  R10 R0 K76   ; R10 := R0["mEmoteGrid"]
 246 [-]: GETTABLE  R10 R10 K86  ; R10 := R10["RedrawScrollBar"]
-247 [-]: SETTABLE  R9 K85 R10   ; R9["_RedrawScrollBar"] := R10
+247 [-]: SETTABLE  R9 K85 R10   ; R9[0x4c4f8717] := R10
 248 [-]: GETTABLE  R9 R0 K76    ; R9 := R0["mEmoteGrid"]
 249 [-]: CLOSURE   R10 17       ; R10 := closure(Function #51.1.18)
 250 [-]: MOVE      R0 R0        ; R0 := R0
 251 [-]: GETUPVAL  R0 U2        ; R0 := U2
-252 [-]: SETTABLE  R9 K86 R10   ; R9["RedrawScrollBar"] := R10
+252 [-]: SETTABLE  R9 K86 R10   ; R9[0x7c09c373] := R10
 253 [-]: GETTABLE  R9 R0 K76    ; R9 := R0["mEmoteGrid"]
 254 [-]: CLOSURE   R10 18       ; R10 := closure(Function #51.1.19)
 255 [-]: SETTABLE  R9 K28 R10   ; R9["OnElementTransitionStarted"] := R10
@@ -7143,7 +7143,7 @@
 ; Max Stack Size:  7
 
   1 [-]: NEWTABLE  R2 0 0       ; R2 := {}
-  2 [-]: SETTABLE  R2 K0 R0     ; R2[0x1e5b5cfe] := R0
+  2 [-]: SETTABLE  R2 K0 R0     ; R2["mParent"] := R0
   3 [-]: NEWTABLE  R3 0 0       ; R3 := {}
   4 [-]: SETTABLE  R2 K1 R3     ; R2["mWindow"] := R3
   5 [-]: SETTABLE  R2 K2 R1     ; R2["mClipName"] := R1
@@ -7173,7 +7173,7 @@
  29 [-]: LOADK     R5 K21       ; R5 := "<WARNING>"
  30 [-]: LOADBOOL  R6 1 0       ; R6 := true
  31 [-]: CALL      R3 4 2       ; R3 := R3(R4,R5,R6)
- 32 [-]: SETTABLE  R2 K19 R3    ; R2[0x45afe089] := R3
+ 32 [-]: SETTABLE  R2 K19 R3    ; R2["CharLimitWarning"] := R3
  33 [-]: GETGLOBAL R3 K16       ; R3 := 0xae91e43b
  34 [-]: SELF      R3 R3 K20    ; R4 := R3; R3 := R3[0x42b04007]
  35 [-]: LOADK     R5 K23       ; R5 := "<PROBLEM>"
@@ -7193,10 +7193,10 @@
  49 [-]: GETUPVAL  R0 U2        ; R0 := U2
  50 [-]: GETUPVAL  R0 U3        ; R0 := U3
  51 [-]: GETUPVAL  R0 U4        ; R0 := U4
- 52 [-]: SETTABLE  R2 K28 R3    ; R2[0x34291f5c] := R3
+ 52 [-]: SETTABLE  R2 K28 R3    ; R2["Initialize"] := R3
  53 [-]: CLOSURE   R3 1         ; R3 := closure(Function #52.2)
  54 [-]: GETUPVAL  R0 U0        ; R0 := U0
- 55 [-]: SETTABLE  R2 K29 R3    ; R2[0x1467d5f4] := R3
+ 55 [-]: SETTABLE  R2 K29 R3    ; R2["SetSize"] := R3
  56 [-]: CLOSURE   R3 2         ; R3 := closure(Function #52.3)
  57 [-]: SETTABLE  R2 K30 R3    ; R2["SetFocus"] := R3
  58 [-]: CLOSURE   R3 3         ; R3 := closure(Function #52.4)
@@ -14453,4 +14453,4 @@
 2421 [-]: SETTABLE  R56 R57 R58  ; R56[R57] := R58
 2422 [-]: CALL      R52 5 2      ; R52 := R52(R53,R54,R55,R56)
 2423 [-]: GETGLOBAL R53 K180     ; R53 := mWindow
-2424 [-]
+2424 [-]: SELF 

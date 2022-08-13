@@ -705,7 +705,7 @@
  10 [-]: JMP       17           ; PC := 17
  11 [-]: EQ        1 R2 K2      ; if R2 == nil then PC := 14
  12 [-]: JMP       14           ; PC := 14
- 13 [-]: SETTABLE  R8 K3 R2     ; R8["originalX"] := R2
+ 13 [-]: SETTABLE  R8 K3 R2     ; R8[0x91a24e4b] := R2
  14 [-]: EQ        1 R3 K2      ; if R3 == nil then PC := 17
  15 [-]: JMP       17           ; PC := 17
  16 [-]: SETTABLE  R8 K4 R3     ; R8["originalY"] := R3

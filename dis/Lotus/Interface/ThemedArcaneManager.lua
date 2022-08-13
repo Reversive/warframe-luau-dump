@@ -3898,7 +3898,7 @@
  73 [-]: SETTABLE  R1 K46 R2    ; R1["VisibleRangeMaterial"] := R2
  74 [-]: GETUPVAL  R1 U0        ; R1 := U0
  75 [-]: GETGLOBAL R2 K49       ; R2 := 0x09b6dacc
- 76 [-]: SETTABLE  R1 K48 R2    ; R1["TextVisibleRangeMaterial"] := R2
+ 76 [-]: SETTABLE  R1 K48 R2    ; R1[0xae91e43b] := R2
  77 [-]: GETUPVAL  R1 U0        ; R1 := U0
  78 [-]: GETTABLE  R1 R1 K50    ; R1 := R1["mCategoryMenu"]
  79 [-]: GETUPVAL  R2 U1        ; R2 := U1

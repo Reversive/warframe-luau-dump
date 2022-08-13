@@ -1010,7 +1010,7 @@
 ; Max Stack Size:  4
 
   1 [-]: NEWTABLE  R2 0 17      ; R2 := {}
-  2 [-]: SETTABLE  R2 K0 R0     ; R2["mMovie"] := R0
+  2 [-]: SETTABLE  R2 K0 R0     ; R2[0x23d5322f] := R0
   3 [-]: SETTABLE  R2 K1 K2     ; R2["mLevelLoader"] := nil
   4 [-]: SETTABLE  R2 K3 K2     ; R2["mLevel"] := nil
   5 [-]: SETTABLE  R2 K4 K2     ; R2["mPortrait"] := nil

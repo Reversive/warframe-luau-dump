@@ -1201,7 +1201,7 @@
  14 [-]: GETUPVAL  R2 U0        ; R2 := U0
  15 [-]: GETTABLE  R3 R0 K8     ; R3 := R0["mVisitedCells"]
  16 [-]: CALL      R2 2 1       ; R2(R3)
- 17 [-]: SETTABLE  R0 K9 R1     ; R0[0x2296a8fd] := R1
+ 17 [-]: SETTABLE  R0 K9 R1     ; R0[0x00000001] := R1
  18 [-]: RETURN    R0 1         ; return 
 
 
@@ -2086,10 +2086,10 @@
   6 [-]: CLOSURE   R2 0         ; R2 := closure(Function #39.1)
   7 [-]: SETTABLE  R1 K3 R2     ; R1["IncrementActive"] := R2
   8 [-]: CLOSURE   R2 1         ; R2 := closure(Function #39.2)
-  9 [-]: SETTABLE  R1 K4 R2     ; R1["DecrementActive"] := R2
+  9 [-]: SETTABLE  R1 K4 R2     ; R1[0x89326c93] := R2
  10 [-]: SETTABLE  R0 K0 R1     ; R0["mActiveCellTable"] := R1
  11 [-]: NEWTABLE  R1 0 0       ; R1 := {}
- 12 [-]: SETTABLE  R0 K5 R1     ; R0["mActiveCellQueryWorkers"] := R1
+ 12 [-]: SETTABLE  R0 K5 R1     ; R0[0x9ed3b54e] := R1
  13 [-]: LOADK     R1 1         ; R1 := 1.000000
  14 [-]: LOADK     R2 4         ; R2 := 4.000000
  15 [-]: LOADK     R3 1         ; R3 := 1.000000

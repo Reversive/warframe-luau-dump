@@ -1234,7 +1234,7 @@
   6 [-]: JMP       10           ; PC := 10
   7 [-]: GETGLOBAL R0 K1        ; R0 := _T
   8 [-]: NEWTABLE  R1 0 0       ; R1 := {}
-  9 [-]: SETTABLE  R0 K2 R1     ; R0[0xd1586535] := R1
+  9 [-]: SETTABLE  R0 K2 R1     ; R0["TaggedDialog"] := R1
  10 [-]: GETUPVAL  R0 U0        ; R0 := U0
  11 [-]: LOADK     R1 K3        ; R1 := "HelminthDialogA"
  12 [-]: LOADK     R2 K4        ; R2 := "/Lotus/Language/Alchemy/HelminthEvolvedChoiceA"
@@ -1435,7 +1435,7 @@
 110 [-]: SELF      R8 R8 K30    ; R9 := R8; R8 := R8[0xcfba257f]
 111 [-]: GETGLOBAL R10 K31      ; R10 := 0xdb9008d6
 112 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
-113 [-]: SETTABLE  R7 K28 R8    ; R7["ResourceConversionMovie"] := R8
+113 [-]: SETTABLE  R7 K28 R8    ; R7[0xd413b333] := R8
 114 [-]: GETGLOBAL R7 K0        ; R7 := _T
 115 [-]: GETTABLE  R7 R7 K28    ; R7 := R7["ResourceConversionMovie"]
 116 [-]: SELF      R7 R7 K32    ; R8 := R7; R7 := R7[0xe4162eed]
@@ -2728,7 +2728,7 @@
  38 [-]: GETGLOBAL R2 K0        ; R2 := _T
  39 [-]: GETGLOBAL R3 K16       ; R3 := 0x9f1d6046
  40 [-]: GETTABLE  R3 R3 K12    ; R3 := R3[2.000000]
- 41 [-]: SETTABLE  R2 K10 R3    ; R2["lastHelmnthCatAnimation"] := R3
+ 41 [-]: SETTABLE  R2 K10 R3    ; R2[0x25d99d89] := R3
  42 [-]: JMP       79           ; PC := 79
  43 [-]: GETGLOBAL R2 K0        ; R2 := _T
  44 [-]: GETTABLE  R2 R2 K10    ; R2 := R2["lastHelmnthCatAnimation"]
@@ -2752,7 +2752,7 @@
  62 [-]: GETGLOBAL R2 K0        ; R2 := _T
  63 [-]: GETGLOBAL R3 K11       ; R3 := 0x24612dbe
  64 [-]: GETTABLE  R3 R3 K12    ; R3 := R3[2.000000]
- 65 [-]: SETTABLE  R2 K10 R3    ; R2["lastHelmnthCatAnimation"] := R3
+ 65 [-]: SETTABLE  R2 K10 R3    ; R2[0x25d99d89] := R3
  66 [-]: JMP       79           ; PC := 79
  67 [-]: SELF      R2 R0 K6     ; R3 := R0; R2 := R0[0x6eace7a7]
  68 [-]: CALL      R2 2 2       ; R2 := R2(R3)

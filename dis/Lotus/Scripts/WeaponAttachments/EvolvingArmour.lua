@@ -395,7 +395,7 @@
  55 [-]: JMP       57           ; PC := 57
  56 [-]: RETURN    R0 1         ; return 
  57 [-]: GETUPVAL  R3 U1        ; R3 := U1
- 58 [-]: GETTABLE  R3 R3 K13    ; R82 := R3[0xcdc34211]
+ 58 [-]: GETTABLE  R3 R3 K13    ; R3 := R3[0xcdc34211]
  59 [-]: CALL      R3 1 2       ; R3 := R3()
  60 [-]: TEST      R3 0         ; if not R3 then PC := 122
  61 [-]: JMP       122          ; PC := 122
@@ -467,7 +467,7 @@
 127 [-]: EQ        1 R10 K21    ; if R10 == nil then PC := 211
 128 [-]: JMP       211          ; PC := 211
 129 [-]: GETGLOBAL R10 K19      ; R10 := _T
-130 [-]: GETTABLE  R10 R10 K31  ; R82 := R10[0x14e3a848]
+130 [-]: GETTABLE  R10 R10 K31  ; R10 := R10[0x14e3a848]
 131 [-]: LOADK     R11 K32      ; R11 := "LoadOut"
 132 [-]: CALL      R10 2 2      ; R10 := R10(R11)
 133 [-]: GETGLOBAL R11 K33      ; R11 := 0x9ba7909f
@@ -481,7 +481,7 @@
 141 [-]: TEST      R11 0        ; if not R11 then PC := 153
 142 [-]: JMP       153          ; PC := 153
 143 [-]: GETGLOBAL R11 K19      ; R11 := _T
-144 [-]: GETTABLE  R11 R11 K31  ; R82 := R11[0x14e3a848]
+144 [-]: GETTABLE  R11 R11 K31  ; R11 := R11[0x14e3a848]
 145 [-]: LOADK     R12 K35      ; R12 := "CustomizeTenno"
 146 [-]: CALL      R11 2 2      ; R11 := R11(R12)
 147 [-]: MOVE      R10 R11      ; R10 := R11

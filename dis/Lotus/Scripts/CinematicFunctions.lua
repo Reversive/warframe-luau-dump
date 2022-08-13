@@ -1924,7 +1924,7 @@
  29 [-]: SUB       R6 R6 K6     ; R6 := R6 - 1.000000
  30 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  31 [-]: SUB       R6 K6 R5     ; R6 := 1.000000 - R5
- 32 [-]: SETTABLE  R2 K5 R6     ; R2["radialBlurStrength"] := R6
+ 32 [-]: SETTABLE  R2 K5 R6     ; R2[0x34291f5c] := R6
  33 [-]: GETGLOBAL R6 K13       ; R6 := 0xcbd666e1
  34 [-]: LOADK     R7 0         ; R7 := 0.000000
  35 [-]: CALL      R6 2 1       ; R6(R7)

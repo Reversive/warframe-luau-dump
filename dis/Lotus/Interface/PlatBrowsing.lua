@@ -1407,7 +1407,7 @@
 110 [-]: GETUPVAL  R0 U4        ; R0 := U4
 111 [-]: GETUPVAL  R0 U2        ; R0 := U2
 112 [-]: GETUPVAL  R0 U1        ; R0 := U1
-113 [-]: SETTABLE  R1 K56 R2    ; R1[0xae91e43b] := R2
+113 [-]: SETTABLE  R1 K56 R2    ; R1["mOnUnfocusedCallback"] := R2
 114 [-]: GETUPVAL  R1 U1        ; R1 := U1
 115 [-]: CLOSURE   R2 3         ; R2 := closure(Function #18.4)
 116 [-]: GETUPVAL  R0 U6        ; R0 := U6
@@ -1420,7 +1420,7 @@
 123 [-]: GETUPVAL  R0 U12       ; R0 := U12
 124 [-]: GETUPVAL  R0 U13       ; R0 := U13
 125 [-]: GETUPVAL  R0 U14       ; R0 := U14
-126 [-]: SETTABLE  R1 K57 R2    ; R1[0xe4162eed] := R2
+126 [-]: SETTABLE  R1 K57 R2    ; R1["mOnSelectedCallback"] := R2
 127 [-]: GETUPVAL  R1 U1        ; R1 := U1
 128 [-]: CLOSURE   R2 4         ; R2 := closure(Function #18.5)
 129 [-]: GETUPVAL  R0 U1        ; R0 := U1
@@ -2015,7 +2015,7 @@
  91 [-]: LOADK     R18 K16      ; R18 := "/Lotus/Language/Menu/SortBy_Name"
  92 [-]: LOADBOOL  R19 0 0      ; R19 := false
  93 [-]: CALL      R16 4 2      ; R16 := R16(R17,R18,R19)
- 94 [-]: SETTABLE  R15 K13 R16  ; R15["Name"] := R16
+ 94 [-]: SETTABLE  R15 K13 R16  ; R15[0x0032441c] := R16
  95 [-]: SETTABLE  R15 K17 K13  ; R15["Attribute"] := "Name"
  96 [-]: CALL      R13 3 1      ; R13(R14,R15)
  97 [-]: LOADK     R7 K13       ; R7 := "Name"
@@ -2102,7 +2102,7 @@
 178 [-]: GETUPVAL  R26 U13      ; R26 := U13
 179 [-]: SETTABLE  R25 K34 R26  ; R25["GameData"] := R26
 180 [-]: GETTABLE  R26 R14 R20  ; R26 := R14[R20]
-181 [-]: SETTABLE  R25 K35 R26  ; R25[0x30456f58] := R26
+181 [-]: SETTABLE  R25 K35 R26  ; R25["AppendInfo"] := R26
 182 [-]: SETTABLE  R25 K36 K37  ; R25["OverrideExisting"] := false
 183 [-]: GETTABLE  R26 R14 R20  ; R26 := R14[R20]
 184 [-]: GETTABLE  R26 R26 K38  ; R26 := R26["ItemInfo"]
@@ -2124,7 +2124,7 @@
 200 [-]: GETUPVAL  R27 U13      ; R27 := U13
 201 [-]: SETTABLE  R26 K34 R27  ; R26["GameData"] := R27
 202 [-]: GETTABLE  R27 R14 R20  ; R27 := R14[R20]
-203 [-]: SETTABLE  R26 K35 R27  ; R26[0x30456f58] := R27
+203 [-]: SETTABLE  R26 K35 R27  ; R26["AppendInfo"] := R27
 204 [-]: SETTABLE  R26 K36 K37  ; R26["OverrideExisting"] := false
 205 [-]: CALL      R22 5 2      ; R22 := R22(R23,R24,R25,R26)
 206 [-]: MOVE      R21 R22      ; R21 := R22

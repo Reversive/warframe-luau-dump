@@ -3190,7 +3190,7 @@
  78 [-]: SETTABLE  R6 K26 K8    ; R6["mMaxValue"] := 100.000000
  79 [-]: SETTABLE  R6 K27 K29   ; R6["NoteType"] := 2.000000
  80 [-]: GETUPVAL  R7 U4        ; R7 := U4
- 81 [-]: SETTABLE  R6 K30 R7    ; R6[0x00000000] := R7
+ 81 [-]: SETTABLE  R6 K30 R7    ; R6["mValueChangedCallback"] := R7
  82 [-]: SETTABLE  R6 K7 K8     ; R6["BackerAlphaOverride"] := 100.000000
  83 [-]: NEWTABLE  R7 0 9       ; R7 := {}
  84 [-]: GETUPVAL  R8 U0        ; R8 := U0
@@ -3204,7 +3204,7 @@
  92 [-]: SETTABLE  R7 K26 K8    ; R7["mMaxValue"] := 100.000000
  93 [-]: SETTABLE  R7 K27 K31   ; R7["NoteType"] := 1.000000
  94 [-]: GETUPVAL  R8 U5        ; R8 := U5
- 95 [-]: SETTABLE  R7 K30 R8    ; R7[0x00000000] := R8
+ 95 [-]: SETTABLE  R7 K30 R8    ; R7["mValueChangedCallback"] := R8
  96 [-]: SETTABLE  R7 K7 K8     ; R7["BackerAlphaOverride"] := 100.000000
  97 [-]: NEWTABLE  R8 0 9       ; R8 := {}
  98 [-]: GETUPVAL  R9 U0        ; R9 := U0
@@ -3218,7 +3218,7 @@
 106 [-]: SETTABLE  R8 K26 K8    ; R8["mMaxValue"] := 100.000000
 107 [-]: SETTABLE  R8 K27 K24   ; R8["NoteType"] := 0.000000
 108 [-]: GETUPVAL  R9 U6        ; R9 := U6
-109 [-]: SETTABLE  R8 K30 R9    ; R8[0x00000000] := R9
+109 [-]: SETTABLE  R8 K30 R9    ; R8["mValueChangedCallback"] := R9
 110 [-]: SETTABLE  R8 K7 K8     ; R8["BackerAlphaOverride"] := 100.000000
 111 [-]: NEWTABLE  R9 0 4       ; R9 := {}
 112 [-]: GETUPVAL  R10 U0       ; R10 := U0
@@ -3238,7 +3238,7 @@
 126 [-]: SETTABLE  R10 K34 K6   ; R10["mInitialValue"] := true
 127 [-]: SETTABLE  R10 K27 K29  ; R10["NoteType"] := 2.000000
 128 [-]: GETUPVAL  R11 U7       ; R11 := U7
-129 [-]: SETTABLE  R10 K30 R11  ; R10[0x00000000] := R11
+129 [-]: SETTABLE  R10 K30 R11  ; R10["mValueChangedCallback"] := R11
 130 [-]: SETTABLE  R10 K7 K8    ; R10["BackerAlphaOverride"] := 100.000000
 131 [-]: NEWTABLE  R11 0 7      ; R11 := {}
 132 [-]: GETUPVAL  R12 U0       ; R12 := U0
@@ -3250,7 +3250,7 @@
 138 [-]: SETTABLE  R11 K34 K6   ; R11["mInitialValue"] := true
 139 [-]: SETTABLE  R11 K27 K31  ; R11["NoteType"] := 1.000000
 140 [-]: GETUPVAL  R12 U8       ; R12 := U8
-141 [-]: SETTABLE  R11 K30 R12  ; R11[0x00000000] := R12
+141 [-]: SETTABLE  R11 K30 R12  ; R11["mValueChangedCallback"] := R12
 142 [-]: SETTABLE  R11 K7 K8    ; R11["BackerAlphaOverride"] := 100.000000
 143 [-]: NEWTABLE  R12 0 7      ; R12 := {}
 144 [-]: GETUPVAL  R13 U0       ; R13 := U0
@@ -3262,7 +3262,7 @@
 150 [-]: SETTABLE  R12 K34 K6   ; R12["mInitialValue"] := true
 151 [-]: SETTABLE  R12 K27 K24  ; R12["NoteType"] := 0.000000
 152 [-]: GETUPVAL  R13 U9       ; R13 := U9
-153 [-]: SETTABLE  R12 K30 R13  ; R12[0x00000000] := R13
+153 [-]: SETTABLE  R12 K30 R13  ; R12["mValueChangedCallback"] := R13
 154 [-]: SETTABLE  R12 K7 K8    ; R12["BackerAlphaOverride"] := 100.000000
 155 [-]: NEWTABLE  R13 0 4      ; R13 := {}
 156 [-]: GETUPVAL  R14 U0       ; R14 := U0
@@ -3283,7 +3283,7 @@
 171 [-]: SETTABLE  R14 K37 R15  ; R14["mOptions"] := R15
 172 [-]: SETTABLE  R14 K23 K31  ; R14["mDefaultValue"] := 1.000000
 173 [-]: GETUPVAL  R15 U11      ; R15 := U11
-174 [-]: SETTABLE  R14 K30 R15  ; R14[0x00000000] := R15
+174 [-]: SETTABLE  R14 K30 R15  ; R14["mValueChangedCallback"] := R15
 175 [-]: SETTABLE  R14 K7 K8    ; R14["BackerAlphaOverride"] := 100.000000
 176 [-]: NEWTABLE  R15 0 5      ; R15 := {}
 177 [-]: GETUPVAL  R16 U0       ; R16 := U0
@@ -3485,12 +3485,12 @@
  36 [-]: GETGLOBAL R4 K3        ; R4 := 0xae91e43b
  37 [-]: LOADK     R5 K23       ; R5 := "AreaPicker.CustomizationPanel.List"
  38 [-]: CALL      R3 3 3       ; R3,R4 := R3(R4,R5)
- 39 [-]: SETTABLE  R2 K21 R4    ; R2["y"] := R4
+ 39 [-]: SETTABLE  R2 K21 R4    ; R2[0x9ba7909f] := R4
  40 [-]: SETTABLE  R1 K20 R3    ; R1["x"] := R3
  41 [-]: GETUPVAL  R1 U0        ; R1 := U0
  42 [-]: GETTABLE  R1 R1 K7     ; R1 := R1["CustomizationList"]
  43 [-]: GETGLOBAL R2 K25       ; R2 := 0x5c4aee66
- 44 [-]: SETTABLE  R1 K24 R2    ; R1["VisibleRangeMaterial"] := R2
+ 44 [-]: SETTABLE  R1 K24 R2    ; R1[0x7b998233] := R2
  45 [-]: GETUPVAL  R1 U0        ; R1 := U0
  46 [-]: GETTABLE  R1 R1 K7     ; R1 := R1["CustomizationList"]
  47 [-]: GETGLOBAL R2 K27       ; R2 := 0xde244639
@@ -3895,7 +3895,7 @@
   9 [-]: SELF      R1 R1 K2     ; R2 := R1; R1 := R1[0x5e81fe30]
  10 [-]: CALL      R1 2 2       ; R1 := R1(R2)
  11 [-]: NOT       R1 R1        ; R1 := not R1
- 12 [-]: SETTABLE  R0 K1 R1     ; R0[0xb15e6aca] := R1
+ 12 [-]: SETTABLE  R0 K1 R1     ; R0[0x4d7a0caf] := R1
  13 [-]: GETUPVAL  R0 U0        ; R0 := U0
  14 [-]: SELF      R0 R0 K3     ; R1 := R0; R0 := R0[0x55e9211c]
  15 [-]: GETUPVAL  R2 U1        ; R2 := U1

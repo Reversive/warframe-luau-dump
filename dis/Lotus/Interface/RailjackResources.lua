@@ -993,21 +993,21 @@
  16 [-]: GETUPVAL  R1 U0        ; R1 := U0
  17 [-]: CLOSURE   R2 0         ; R2 := closure(Function #14.1)
  18 [-]: GETUPVAL  R0 U1        ; R0 := U1
- 19 [-]: SETTABLE  R1 K10 R2    ; R1["mClipCreatedCallback"] := R2
+ 19 [-]: SETTABLE  R1 K10 R2    ; R1[0x23d5322f] := R2
  20 [-]: GETUPVAL  R1 U0        ; R1 := U0
  21 [-]: CLOSURE   R2 1         ; R2 := closure(Function #14.2)
  22 [-]: GETUPVAL  R0 U0        ; R0 := U0
- 23 [-]: SETTABLE  R1 K11 R2    ; R1["mElementDrawCallback"] := R2
+ 23 [-]: SETTABLE  R1 K11 R2    ; R1[0xf21b1d8e] := R2
  24 [-]: GETUPVAL  R1 U0        ; R1 := U0
  25 [-]: CLOSURE   R2 2         ; R2 := closure(Function #14.3)
  26 [-]: GETUPVAL  R0 U2        ; R0 := U2
- 27 [-]: SETTABLE  R1 K12 R2    ; R1["UpdateAmount"] := R2
+ 27 [-]: SETTABLE  R1 K12 R2    ; R1[0xc8802016] := R2
  28 [-]: GETUPVAL  R1 U0        ; R1 := U0
  29 [-]: CLOSURE   R2 3         ; R2 := closure(Function #14.4)
  30 [-]: SETTABLE  R1 K13 R2    ; R1["mOnFocusedCallback"] := R2
  31 [-]: GETUPVAL  R1 U0        ; R1 := U0
  32 [-]: CLOSURE   R2 4         ; R2 := closure(Function #14.5)
- 33 [-]: SETTABLE  R1 K14 R2    ; R1["mOnUnfocusedCallback"] := R2
+ 33 [-]: SETTABLE  R1 K14 R2    ; R1[0xbad4316f] := R2
  34 [-]: RETURN    R0 1         ; return 
 
 
@@ -1668,12 +1668,12 @@
  58 [-]: GETUPVAL  R0 U14       ; R0 := U14
  59 [-]: GETUPVAL  R0 U0        ; R0 := U0
  60 [-]: GETUPVAL  R0 U15       ; R0 := U15
- 61 [-]: SETTABLE  R1 K20 R2    ; R1["mOnFocusedCallback"] := R2
+ 61 [-]: SETTABLE  R1 K20 R2    ; R1[0xdf42446e] := R2
  62 [-]: GETUPVAL  R1 U0        ; R1 := U0
  63 [-]: CLOSURE   R2 5         ; R2 := closure(Function #19.6)
  64 [-]: GETUPVAL  R0 U0        ; R0 := U0
  65 [-]: GETUPVAL  R0 U13       ; R0 := U13
- 66 [-]: SETTABLE  R1 K21 R2    ; R1["mOnUnfocusedCallback"] := R2
+ 66 [-]: SETTABLE  R1 K21 R2    ; R1[0x03f57322] := R2
  67 [-]: GETUPVAL  R1 U0        ; R1 := U0
  68 [-]: CLOSURE   R2 6         ; R2 := closure(Function #19.7)
  69 [-]: GETUPVAL  R0 U16       ; R0 := U16
@@ -1878,7 +1878,7 @@
   6 [-]: LOADK     R4 K4        ; R4 := "/Lotus/Language/Intrinsics/NextRankCost"
   7 [-]: NEWTABLE  R5 0 1       ; R5 := {}
   8 [-]: GETTABLE  R6 R0 K6     ; R6 := R0["mNextRankCost"]
-  9 [-]: SETTABLE  R5 K5 R6     ; R5["COST"] := R6
+  9 [-]: SETTABLE  R5 K5 R6     ; R5[0xae91e43b] := R6
  10 [-]: CALL      R1 5 1       ; R1(R2,R3,R4,R5)
  11 [-]: RETURN    R0 1         ; return 
 

@@ -1577,7 +1577,7 @@
  11 [-]: GETTABLE  R2 R2 K5     ; R2 := R2[0xe27b35bb]
  12 [-]: CALL      R2 1 2       ; R2 := R2()
  13 [-]: SETTABLE  R2 K6 K7     ; R2["dialogType"] := 5.000000
- 14 [-]: SETTABLE  R2 K8 R1     ; R2["locString"] := R1
+ 14 [-]: SETTABLE  R2 K8 R1     ; R2[0xae91e43b] := R1
  15 [-]: SETTABLE  R2 K9 K10    ; R2["firstString"] := "/Menu/Confirm_Item_Yes"
  16 [-]: SETTABLE  R2 K11 K12   ; R2["secondString"] := "/Menu/Confirm_Item_No"
  17 [-]: SETTABLE  R2 K13 K14   ; R2["thirdString"] := "/Lotus/Language/Menu/Loadout_Cancel"
@@ -1826,7 +1826,7 @@
  79 [-]: GETUPVAL  R0 U10       ; R0 := U10
  80 [-]: GETUPVAL  R0 U11       ; R0 := U11
  81 [-]: GETUPVAL  R0 U2        ; R0 := U2
- 82 [-]: SETTABLE  R2 K25 R3    ; R2[0x7b998233] := R3
+ 82 [-]: SETTABLE  R2 K25 R3    ; R2["TennoWay_UpdateInfoPanel"] := R3
  83 [-]: GETUPVAL  R2 U1        ; R2 := U1
  84 [-]: SELF      R2 R2 K17    ; R3 := R2; R2 := R2[0xe4162eed]
  85 [-]: LOADK     R4 K26       ; R4 := "SetInfoPanelUpdateFunction"
@@ -3178,7 +3178,7 @@
  28 [-]: SETTABLE  R0 K0 R3     ; R0["mCard"] := R3
  29 [-]: GETTABLE  R3 R0 K0     ; R3 := R0["mCard"]
  30 [-]: GETTABLE  R3 R3 K11    ; R3 := R3["mDesc"]
- 31 [-]: SETTABLE  R0 K10 R3    ; R0["mDescription"] := R3
+ 31 [-]: SETTABLE  R0 K10 R3    ; R0[0x5bced4c4] := R3
  32 [-]: GETTABLE  R3 R0 K0     ; R3 := R0["mCard"]
  33 [-]: GETTABLE  R3 R3 K12    ; R3 := R3["mNextLvlDesc"]
  34 [-]: SETTABLE  R0 K12 R3    ; R0["mNextLvlDesc"] := R3
@@ -3465,7 +3465,7 @@
  38 [-]: LOADK     R6 85        ; R6 := 85.000000
  39 [-]: LOADK     R7 0         ; R7 := 0.000000
  40 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
- 41 [-]: SETTABLE  R3 K15 R4    ; R3["mForcedVerticalSeparation"] := R4
+ 41 [-]: SETTABLE  R3 K15 R4    ; R3[0x06d055f9] := R4
  42 [-]: SETTABLE  R3 K17 K18   ; R3["mForcedHorizontalSeparation"] := 0.000000
  43 [-]: SETTABLE  R3 K19 K18   ; R3["mElementTransitionTime"] := 0.000000
  44 [-]: SETTABLE  R3 K20 K21   ; R3["mInitialDepth"] := 5000.000000
@@ -3519,9 +3519,9 @@
  92 [-]: CLOSURE   R4 8         ; R4 := closure(Function #32.9)
  93 [-]: SETTABLE  R3 K33 R4    ; R3["CalculateX"] := R4
  94 [-]: CLOSURE   R4 9         ; R4 := closure(Function #32.10)
- 95 [-]: SETTABLE  R3 K34 R4    ; R3["CalculateY"] := R4
+ 95 [-]: SETTABLE  R3 K34 R4    ; R3[0x67bc869f] := R4
  96 [-]: CLOSURE   R4 10        ; R4 := closure(Function #32.11)
- 97 [-]: SETTABLE  R3 K35 R4    ; R3[0x06d055f9] := R4
+ 97 [-]: SETTABLE  R3 K35 R4    ; R3["SetupPreInterpolationValues"] := R4
  98 [-]: CLOSURE   R4 11        ; R4 := closure(Function #32.12)
  99 [-]: GETUPVAL  R0 U1        ; R0 := U1
 100 [-]: SETTABLE  R3 K36 R4    ; R3["SetFocusNode"] := R4
@@ -3542,12 +3542,12 @@
 115 [-]: GETUPVAL  R0 U0        ; R0 := U0
 116 [-]: GETUPVAL  R0 U2        ; R0 := U2
 117 [-]: GETUPVAL  R0 U1        ; R0 := U1
-118 [-]: SETTABLE  R3 K39 R4    ; R3[0xae91e43b] := R4
+118 [-]: SETTABLE  R3 K39 R4    ; R3["ShowNode"] := R4
 119 [-]: CLOSURE   R4 15        ; R4 := closure(Function #32.16)
 120 [-]: GETUPVAL  R0 U2        ; R0 := U2
 121 [-]: GETUPVAL  R0 U0        ; R0 := U0
 122 [-]: MOVE      R0 R1        ; R0 := R1
-123 [-]: SETTABLE  R3 K40 R4    ; R3[0xf64b7262] := R4
+123 [-]: SETTABLE  R3 K40 R4    ; R3["HideNode"] := R4
 124 [-]: CLOSURE   R4 16        ; R4 := closure(Function #32.17)
 125 [-]: MOVE      R0 R3        ; R0 := R3
 126 [-]: SETTABLE  R3 K41 R4    ; R3["SelectNode"] := R4
@@ -5534,17 +5534,17 @@
 132 [-]: GETTABLE  R11 R10 K34  ; R11 := R10["mUniversal"]
 133 [-]: NOT       R11 R11      ; R11 := not R11
 134 [-]: SETTABLE  R10 K18 R11  ; R10["mLocked"] := R11
-135 [-]: SETTABLE  R10 K49 R7   ; R10["mPolarity"] := R7
-136 [-]: SETTABLE  R10 K50 R2   ; R10["mGraphVisX"] := R2
+135 [-]: SETTABLE  R10 K49 R7   ; R10[0xa7ec3e8a] := R7
+136 [-]: SETTABLE  R10 K50 R2   ; R10[0x015284cd] := R2
 137 [-]: SETTABLE  R10 K51 R3   ; R10["mGraphVisY"] := R3
 138 [-]: GETTABLE  R11 R10 K50  ; R11 := R10["mGraphVisX"]
 139 [-]: GETUPVAL  R12 U4       ; R12 := U4
 140 [-]: MUL       R11 R11 R12  ; R11 := R11 * R12
-141 [-]: SETTABLE  R10 K52 R11  ; R10["mLocalX"] := R11
+141 [-]: SETTABLE  R10 K52 R11  ; R10[0x38f10e85] := R11
 142 [-]: GETTABLE  R11 R10 K51  ; R11 := R10["mGraphVisY"]
 143 [-]: GETUPVAL  R12 U5       ; R12 := U5
 144 [-]: MUL       R11 R11 R12  ; R11 := R11 * R12
-145 [-]: SETTABLE  R10 K53 R11  ; R10[0x7b998233] := R11
+145 [-]: SETTABLE  R10 K53 R11  ; R10["mLocalY"] := R11
 146 [-]: GETUPVAL  R11 U6       ; R11 := U6
 147 [-]: EQ        0 R11 K54    ; if R11 ~= nil then PC := 151
 148 [-]: JMP       151          ; PC := 151
@@ -5590,7 +5590,7 @@
 188 [-]: EQ        0 R11 R12    ; if R11 ~= R12 then PC := 193
 189 [-]: JMP       193          ; PC := 193
 190 [-]: GETTABLE  R11 R10 K57  ; R11 := R10["mNextRankTarget"]
-191 [-]: SETTABLE  R10 K58 R11  ; R10["mNextRankCurrent"] := R11
+191 [-]: SETTABLE  R10 K58 R11  ; R10[0xd4ea5665] := R11
 192 [-]: JMP       214          ; PC := 214
 193 [-]: GETUPVAL  R11 U0       ; R11 := U0
 194 [-]: GETTABLE  R11 R11 K8   ; R11 := R11[0x06d055f9]
@@ -5612,20 +5612,20 @@
 210 [-]: CALL      R11 0 2      ; R11 := R11(R12,...)
 211 [-]: GETTABLE  R12 R10 K57  ; R12 := R10["mNextRankTarget"]
 212 [-]: MUL       R12 R11 R12  ; R12 := R11 * R12
-213 [-]: SETTABLE  R10 K58 R12  ; R10["mNextRankCurrent"] := R12
+213 [-]: SETTABLE  R10 K58 R12  ; R10[0xd4ea5665] := R12
 214 [-]: SETTABLE  R10 K61 K54  ; R10["mParent"] := nil
 215 [-]: NEWTABLE  R12 0 0      ; R12 := {}
 216 [-]: SETTABLE  R10 K62 R12  ; R10["mChildren"] := R12
-217 [-]: SETTABLE  R10 K50 R2   ; R10["mGraphVisX"] := R2
+217 [-]: SETTABLE  R10 K50 R2   ; R10[0x015284cd] := R2
 218 [-]: SETTABLE  R10 K51 R3   ; R10["mGraphVisY"] := R3
 219 [-]: GETTABLE  R12 R10 K50  ; R12 := R10["mGraphVisX"]
 220 [-]: GETUPVAL  R13 U4       ; R13 := U4
 221 [-]: MUL       R12 R12 R13  ; R12 := R12 * R13
-222 [-]: SETTABLE  R10 K52 R12  ; R10["mLocalX"] := R12
+222 [-]: SETTABLE  R10 K52 R12  ; R10[0x38f10e85] := R12
 223 [-]: GETTABLE  R12 R10 K51  ; R12 := R10["mGraphVisY"]
 224 [-]: GETUPVAL  R13 U5       ; R13 := U5
 225 [-]: MUL       R12 R12 R13  ; R12 := R12 * R13
-226 [-]: SETTABLE  R10 K53 R12  ; R10[0x7b998233] := R12
+226 [-]: SETTABLE  R10 K53 R12  ; R10["mLocalY"] := R12
 227 [-]: GETGLOBAL R12 K55      ; R12 := 0x33bdd652
 228 [-]: GETTABLE  R12 R12 K56  ; R12 := R12[0x23d5322f]
 229 [-]: GETUPVAL  R13 U1       ; R13 := U1

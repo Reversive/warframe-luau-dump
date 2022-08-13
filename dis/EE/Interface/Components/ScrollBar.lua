@@ -189,7 +189,7 @@
 151 [-]: GETUPVAL  R0 U1        ; R0 := U1
 152 [-]: SETTABLE  R5 K76 R6    ; R5["SetActive"] := R6
 153 [-]: CLOSURE   R6 29        ; R6 := closure(Function #1.30)
-154 [-]: SETTABLE  R5 K77 R6    ; R5["SetVisibleRangeMaterial"] := R6
+154 [-]: SETTABLE  R5 K77 R6    ; R5[0x44aa79ac] := R6
 155 [-]: CLOSURE   R6 30        ; R6 := closure(Function #1.31)
 156 [-]: GETUPVAL  R0 U1        ; R0 := U1
 157 [-]: SETTABLE  R5 K78 R6    ; R5["ApplyScale"] := R6

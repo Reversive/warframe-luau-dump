@@ -63,7 +63,7 @@
   2 [-]: LOADK     R1 30        ; R1 := 30.000000
   3 [-]: LOADK     R2 15        ; R2 := 15.000000
   4 [-]: GETUPVAL  R3 U0        ; R3 := U0
-  5 [-]: GETTABLE  R3 R3 K0     ; R82 := R3[0x32316a21]
+  5 [-]: GETTABLE  R3 R3 K0     ; R3 := R3[0x32316a21]
   6 [-]: CALL      R3 1 2       ; R3 := R3()
   7 [-]: TEST      R3 0         ; if not R3 then PC := 12
   8 [-]: JMP       12           ; PC := 12
@@ -108,7 +108,7 @@
 ; Max Stack Size:  15
 
   1 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  2 [-]: GETTABLE  R1 R1 K0     ; R82 := R1[0x3c912430]
+  2 [-]: GETTABLE  R1 R1 K0     ; R1 := R1[0x3c912430]
   3 [-]: MOVE      R2 R0        ; R2 := R0
   4 [-]: CALL      R1 2 2       ; R1 := R1(R2)
   5 [-]: TEST      R1 0         ; if not R1 then PC := 8
@@ -318,7 +318,7 @@
 ; Max Stack Size:  8
 
   1 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  2 [-]: GETTABLE  R1 R1 K0     ; R82 := R1[0x3c912430]
+  2 [-]: GETTABLE  R1 R1 K0     ; R1 := R1[0x3c912430]
   3 [-]: MOVE      R2 R0        ; R2 := R0
   4 [-]: CALL      R1 2 2       ; R1 := R1(R2)
   5 [-]: TEST      R1 0         ; if not R1 then PC := 8
@@ -432,7 +432,7 @@
  53 [-]: MOVE      R21 R5       ; R21 := R5
  54 [-]: CALL      R16 6 1      ; R16(R17,R18,R19,R20,R21)
  55 [-]: GETGLOBAL R16 K14      ; R16 := 0x33bdd652
- 56 [-]: GETTABLE  R16 R16 K15  ; R82 := R16[0x23d5322f]
+ 56 [-]: GETTABLE  R16 R16 K15  ; R16 := R16[0x23d5322f]
  57 [-]: MOVE      R17 R9       ; R17 := R9
  58 [-]: MOVE      R18 R15      ; R18 := R15
  59 [-]: CALL      R16 3 1      ; R16(R17,R18)
@@ -444,7 +444,7 @@
  65 [-]: LT        0 K16 R16    ; if 0.000000 >= R16 then PC := 81
  66 [-]: JMP       81           ; PC := 81
  67 [-]: GETGLOBAL R16 K17      ; R16 := 0x6c97a788
- 68 [-]: GETTABLE  R16 R16 K18  ; R82 := R16[0x608bc054]
+ 68 [-]: GETTABLE  R16 R16 K18  ; R16 := R16[0x608bc054]
  69 [-]: CALL      R16 1 2      ; R16 := R16()
  70 [-]: SETTABLE  R16 K19 R9   ; R16["affected"] := R9
  71 [-]: SETTABLE  R16 K20 K21  ; R16["buffType"] := 1.000000

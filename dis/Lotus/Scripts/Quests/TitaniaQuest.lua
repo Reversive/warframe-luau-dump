@@ -290,7 +290,7 @@
  65 [-]: TEST      R6 0         ; if not R6 then PC := 69
  66 [-]: JMP       69           ; PC := 69
  67 [-]: LOADK     R6 10        ; R6 := 10.000000
- 68 [-]: SETUPVAL  R6 U5        ; U82 := 
+ 68 [-]: SETUPVAL  R6 U5        ; U82 := R5
  69 [-]: GETUPVAL  R6 U0        ; R6 := U0
  70 [-]: GETTABLE  R6 R6 K22    ; R6 := R6[0xe8fa0e68]
  71 [-]: GETUPVAL  R7 U5        ; R7 := U5
@@ -313,7 +313,7 @@
  88 [-]: JMP       109          ; PC := 109
  89 [-]: SELF      R7 R6 K27    ; R8 := R6; R7 := R6[0xbb610e5b]
  90 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 91 [-]: SETUPVAL  R7 U6        ; U82 := 
+ 91 [-]: SETUPVAL  R7 U6        ; U82 := R6
  92 [-]: GETGLOBAL R7 K1        ; R7 := 0xbe190284
  93 [-]: SELF      R7 R7 K28    ; R8 := R7; R7 := R7[0x72715eec]
  94 [-]: GETUPVAL  R9 U6        ; R9 := U6
@@ -405,7 +405,7 @@
 180 [-]: CALL      R10 2 0      ; R10,... := R10(R11)
 181 [-]: CALL      R8 0 1       ; R8(R9,...)
 182 [-]: LOADBOOL  R8 1 0       ; R8 := true
-183 [-]: SETUPVAL  R8 U9        ; U82 := 	
+183 [-]: SETUPVAL  R8 U9        ; U82 := R9
 184 [-]: JMP       133          ; PC := 133
 185 [-]: GETGLOBAL R8 K26       ; R8 := 0x7b998233
 186 [-]: GETGLOBAL R9 K1        ; R9 := 0xbe190284
@@ -961,7 +961,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
-  1 [-]: SETUPVAL  R0 U0        ; U82 := 
+  1 [-]: SETUPVAL  R0 U0        ; U82 := R0
   2 [-]: RETURN    R0 1         ; return 
 
 
@@ -1063,7 +1063,7 @@
  45 [-]: TEST      R5 0         ; if not R5 then PC := 113
  46 [-]: JMP       113          ; PC := 113
  47 [-]: LOADNIL   R5 R5        ; R5 := nil
- 48 [-]: SETUPVAL  R5 U1        ; U82 := 
+ 48 [-]: SETUPVAL  R5 U1        ; U82 := R1
  49 [-]: GETGLOBAL R5 K13       ; R5 := 0xbe190284
  50 [-]: SELF      R5 R5 K14    ; R6 := R5; R5 := R5[0x6f58e60a]
  51 [-]: LOADK     R7 K15       ; R7 := "OnConsumableCommitted"

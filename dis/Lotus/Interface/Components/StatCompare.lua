@@ -211,7 +211,7 @@
  35 [-]: MOVE      R6 R1        ; R6 := R1
  36 [-]: LOADK     R7 13        ; R7 := 13.000000
  37 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
- 38 [-]: SETTABLE  R3 K26 R4    ; R3[0xc8802016] := R4
+ 38 [-]: SETTABLE  R3 K26 R4    ; R3["mOriginalElementHeight"] := R4
  39 [-]: SELF      R4 R3 K29    ; R5 := R3; R4 := R3[0x1e5b5cfe]
  40 [-]: LOADK     R6 K30       ; R6 := "StatSelected"
  41 [-]: LOADK     R7 K31       ; R7 := "StatFocused"

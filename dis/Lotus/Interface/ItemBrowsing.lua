@@ -3786,7 +3786,7 @@
  14 [-]: GETTABLE  R4 R0 K6     ; R4 := R0["mAltButtonicon"]
  15 [-]: EQ        1 R4 R3      ; if R4 == R3 then PC := 25
  16 [-]: JMP       25           ; PC := 25
- 17 [-]: SETTABLE  R0 K6 R3     ; R0[0x7b998233] := R3
+ 17 [-]: SETTABLE  R0 K6 R3     ; R0["mAltButtonicon"] := R3
  18 [-]: GETTABLE  R4 R0 K7     ; R4 := R0["mMovie"]
  19 [-]: SELF      R4 R4 K8     ; R5 := R4; R4 := R4[0x1cb415c1]
  20 [-]: GETTABLE  R6 R0 K9     ; R6 := R0["mClipName"]
@@ -4692,7 +4692,7 @@
 186 [-]: GETUPVAL  R39 U3       ; R39 := U3
 187 [-]: GETTABLE  R39 R39 K5   ; R39 := R39["ElementDimBuffer"]
 188 [-]: SUB       R38 R38 R39  ; R38 := R38 - R39
-189 [-]: SETTABLE  R37 K44 R38  ; R37["Height"] := R38
+189 [-]: SETTABLE  R37 K44 R38  ; R37[0x0032441c] := R38
 190 [-]: GETUPVAL  R37 U6       ; R37 := U6
 191 [-]: GETGLOBAL R38 K1       ; R38 := 0xae91e43b
 192 [-]: SELF      R38 R38 K18  ; R39 := R38; R38 := R38[0x91a24e4b]

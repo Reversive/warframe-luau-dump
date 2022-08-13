@@ -5883,13 +5883,13 @@
   9 [-]: GETUPVAL  R0 U4        ; R0 := U4
  10 [-]: GETUPVAL  R0 U5        ; R0 := U5
  11 [-]: GETUPVAL  R0 U6        ; R0 := U6
- 12 [-]: SETTABLE  R1 K2 R2     ; R1[0x338a8686] := R2
+ 12 [-]: SETTABLE  R1 K2 R2     ; R1["mCallback"] := R2
  13 [-]: NEWTABLE  R2 0 2       ; R2 := {}
  14 [-]: SETTABLE  R2 K0 K3     ; R2["mName"] := "/Lotus/Language/Game/PlayerDialog_RejectMission"
  15 [-]: CLOSURE   R3 1         ; R3 := closure(Function #56.6.1.2)
  16 [-]: GETUPVAL  R0 U0        ; R0 := U0
  17 [-]: GETUPVAL  R0 U1        ; R0 := U1
- 18 [-]: SETTABLE  R2 K2 R3     ; R2[0x338a8686] := R3
+ 18 [-]: SETTABLE  R2 K2 R3     ; R2["mCallback"] := R3
  19 [-]: SETLIST   R0 2 1       ; R0[(1-1)*FPF+i] := R(0+i), 1 <= i <= 2
  20 [-]: GETUPVAL  R1 U7        ; R1 := U7
  21 [-]: MOVE      R2 R0        ; R2 := R0
@@ -5940,7 +5940,7 @@
  10 [-]: GETUPVAL  R2 U3        ; R2 := U3
  11 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["KEY_TAG"]
  12 [-]: CONCAT    R1 R1 R2     ; R1 := R1 .. R2
- 13 [-]: SETTABLE  R0 K0 R1     ; R0[0x1c3568a5] := R1
+ 13 [-]: SETTABLE  R0 K0 R1     ; R0[0x0b4bcfb6] := R1
  14 [-]: SETTABLE  R0 K3 K4     ; R0["quest"] := ""
  15 [-]: SETTABLE  R0 K5 K6     ; R0["difficulty"] := nil
  16 [-]: GETGLOBAL R1 K7        ; R1 := cjson
@@ -10577,7 +10577,7 @@
 ; Max Stack Size:  3
 
   1 [-]: GETGLOBAL R2 K0        ; R2 := _T
-  2 [-]: SETTABLE  R2 K1 R0     ; R2["PerrinDataResult"] := R0
+  2 [-]: SETTABLE  R2 K1 R0     ; R2[0x00000050] := R0
   3 [-]: RETURN    R0 1         ; return 
 
 
@@ -11216,7 +11216,7 @@
  31 [-]: LOADK     R8 0         ; R8 := 0.000000
  32 [-]: CALL      R5 4 0       ; R5,... := R5(R6,R7,R8)
  33 [-]: CALL      R2 0 2       ; R2 := R2(R3,...)
- 34 [-]: SETTABLE  R1 K2 R2     ; R1["mAlignment"] := R2
+ 34 [-]: SETTABLE  R1 K2 R2     ; R1[0xf883faa6] := R2
  35 [-]: GETUPVAL  R2 U0        ; R2 := U0
  36 [-]: SELF      R2 R2 K8     ; R3 := R2; R2 := R2[0xe4162eed]
  37 [-]: LOADK     R4 K9        ; R4 := "SetAlignment"

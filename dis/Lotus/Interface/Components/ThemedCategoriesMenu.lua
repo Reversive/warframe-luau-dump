@@ -1393,7 +1393,7 @@
 ; Max Stack Size:  5
 
   1 [-]: NOT       R2 R1        ; R2 := not R1
-  2 [-]: SETTABLE  R0 K0 R2     ; R0[0x34291f5c] := R2
+  2 [-]: SETTABLE  R0 K0 R2     ; R0["mShowCallouts"] := R2
   3 [-]: SELF      R2 R0 K1     ; R3 := R0; R2 := R0[0x8edbf3cd]
   4 [-]: CALL      R2 2 1       ; R2(R3)
   5 [-]: SELF      R2 R0 K2     ; R3 := R0; R2 := R0[0x7d81f6e1]

@@ -728,7 +728,7 @@
  23 [-]: LOADK     R5 K8        ; R5 := "Orokin Sabotage: Debug: Fast console defend is on."
  24 [-]: CALL      R4 2 1       ; R4(R5)
  25 [-]: LOADK     R4 5         ; R4 := 5.000000
- 26 [-]: SETUPVAL  R4 U0        ; U82 := 
+ 26 [-]: SETUPVAL  R4 U0        ; U82 := R0
  27 [-]: LOADK     R4 0         ; R4 := 0.500000
  28 [-]: GETUPVAL  R5 U0        ; R5 := U0
  29 [-]: DIV       R5 K9 R5     ; R5 := 1.000000 / R5

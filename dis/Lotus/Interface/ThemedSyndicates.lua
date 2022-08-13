@@ -5854,7 +5854,7 @@
 155 [-]: SETTABLE  R12 K49 R13  ; R12["items"] := R13
 156 [-]: GETTABLE  R13 R9 K50   ; R13 := R9["sacrifice"]
 157 [-]: GETTABLE  R13 R13 K51  ; R13 := R13["credits"]
-158 [-]: SETTABLE  R12 K51 R13  ; R12[0x7e54412e] := R13
+158 [-]: SETTABLE  R12 K51 R13  ; R12["credits"] := R13
 159 [-]: SETTABLE  R1 K11 R12   ; R1["NextSacrifice"] := R12
 160 [-]: GETTABLE  R12 R9 K29   ; R12 := R9["level"]
 161 [-]: SETTABLE  R1 K12 R12   ; R1["SacrificeLevel"] := R12
@@ -10848,7 +10848,7 @@
 102 [-]: GETUPVAL  R0 U0        ; R0 := U0
 103 [-]: GETUPVAL  R0 U6        ; R0 := U6
 104 [-]: GETUPVAL  R0 U7        ; R0 := U7
-105 [-]: SETTABLE  R0 K38 R1    ; R0["UpdateAffiliations"] := R1
+105 [-]: SETTABLE  R0 K38 R1    ; R0[0x0032441c] := R1
 106 [-]: GETUPVAL  R0 U4        ; R0 := U4
 107 [-]: CLOSURE   R1 1         ; R1 := closure(Function #38.2)
 108 [-]: GETUPVAL  R0 U0        ; R0 := U0

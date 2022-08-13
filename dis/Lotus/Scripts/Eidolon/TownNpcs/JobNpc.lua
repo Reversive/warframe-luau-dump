@@ -161,12 +161,12 @@
   4 [-]: GETGLOBAL R2 K0        ; R2 := 0xb009bbc6
   5 [-]: MOVE      R3 R1        ; R3 := R1
   6 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  7 [-]: SETUPVAL  R2 U0        ; U82 := 
+  7 [-]: SETUPVAL  R2 U0        ; U82 := R0
   8 [-]: GETUPVAL  R2 U0        ; R2 := U0
   9 [-]: SELF      R2 R2 K1     ; R3 := R2; R2 := R2[0x10c9eef2]
  10 [-]: GETUPVAL  R4 U2        ; R4 := U2
  11 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
- 12 [-]: SETUPVAL  R2 U1        ; U82 := 
+ 12 [-]: SETUPVAL  R2 U1        ; U82 := R1
  13 [-]: GETGLOBAL R2 K2        ; R2 := 0x7b998233
  14 [-]: GETUPVAL  R3 U1        ; R3 := U1
  15 [-]: CALL      R2 2 2       ; R2 := R2(R3)
@@ -181,7 +181,7 @@
  24 [-]: SELF      R2 R2 K1     ; R3 := R2; R2 := R2[0x10c9eef2]
  25 [-]: GETUPVAL  R4 U3        ; R4 := U3
  26 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
- 27 [-]: SETUPVAL  R2 U1        ; U82 := 
+ 27 [-]: SETUPVAL  R2 U1        ; U82 := R1
  28 [-]: RETURN    R0 1         ; return 
 
 
@@ -827,9 +827,9 @@
  28 [-]: SELF      R8 R8 K14    ; R9 := R8; R8 := R8[0xb756d868]
  29 [-]: CALL      R8 2 2       ; R8 := R8(R9)
  30 [-]: NEWTABLE  R9 0 0       ; R9 := {}
- 31 [-]: SETUPVAL  R9 U0        ; U82 := 
+ 31 [-]: SETUPVAL  R9 U0        ; U82 := R0
  32 [-]: NEWTABLE  R9 0 0       ; R9 := {}
- 33 [-]: SETUPVAL  R9 U1        ; U82 := 
+ 33 [-]: SETUPVAL  R9 U1        ; U82 := R1
  34 [-]: NEWTABLE  R9 0 0       ; R9 := {}
  35 [-]: GETGLOBAL R10 K15      ; R10 := 0xc8802016
  36 [-]: GETTABLE  R11 R1 K16   ; R11 := R1["mSyndicateMissions"]
@@ -1010,7 +1010,7 @@
 211 [-]: EQ        0 R65 K55    ; if R65 ~= nil then PC := 215
 212 [-]: JMP       215          ; PC := 215
 213 [-]: NEWTABLE  R65 0 0      ; R65 := {}
-214 [-]: SETUPVAL  R65 U5       ; U82 := 
+214 [-]: SETUPVAL  R65 U5       ; U82 := R5
 215 [-]: GETGLOBAL R65 K33      ; R65 := 0x33bdd652
 216 [-]: GETTABLE  R65 R65 K34  ; R65 := R65[0x23d5322f]
 217 [-]: GETUPVAL  R66 U5       ; R66 := U5
@@ -1478,7 +1478,7 @@
 679 [-]: TFORLOOP  R131 2       ; R134,R135 :=  R131(R132,R133); if R134 ~= nil then begin PC = 668; R133 := R134 end
 680 [-]: JMP       668          ; PC := 668
 681 [-]: LOADNIL   R136 R136    ; R136 := nil
-682 [-]: SETUPVAL  R136 U1      ; U82 := 
+682 [-]: SETUPVAL  R136 U1      ; U82 := R1
 683 [-]: LEN       R136 R9      ; R136 := # R9
 684 [-]: EQ        0 R136 K21   ; if R136 ~= 0.000000 then PC := 687
 685 [-]: JMP       687          ; PC := 687
@@ -1569,7 +1569,7 @@
   2 [-]: GETTABLE  R1 R1 K1     ; R1 := R1["AddHudTracker"]
   3 [-]: EQ        0 R1 K2      ; if R1 ~= nil then PC := 7
   4 [-]: JMP       7            ; PC := 7
-  5 [-]: SETUPVAL  R0 U0        ; U82 := 
+  5 [-]: SETUPVAL  R0 U0        ; U82 := R0
   6 [-]: RETURN    R0 1         ; return 
   7 [-]: GETGLOBAL R1 K0        ; R1 := _T
   8 [-]: GETTABLE  R1 R1 K3     ; R1 := R1[0x8ee923fe]
@@ -1579,7 +1579,7 @@
  12 [-]: LOADNIL   R4 R5        ; R4 := R5 := nil
  13 [-]: LOADBOOL  R6 0 0       ; R6 := false
  14 [-]: CALL      R1 6 2       ; R1 := R1(R2,R3,R4,R5,R6)
- 15 [-]: SETUPVAL  R1 U1        ; U82 := 
+ 15 [-]: SETUPVAL  R1 U1        ; U82 := R1
  16 [-]: GETUPVAL  R1 U1        ; R1 := U1
  17 [-]: GETTABLE  R1 R1 K6     ; R1 := R1[0x3f8a850c]
  18 [-]: LOADK     R2 K7        ; R2 := "<p><font face=\"Noto Sans\"><b>"
@@ -1618,7 +1618,7 @@
  51 [-]: SELF      R2 R1 K20    ; R3 := R1; R2 := R1[0x383d2e7d]
  52 [-]: CALL      R2 2 1       ; R2(R3)
  53 [-]: LOADNIL   R2 R2        ; R2 := nil
- 54 [-]: SETUPVAL  R2 U0        ; U82 := 
+ 54 [-]: SETUPVAL  R2 U0        ; U82 := R0
  55 [-]: RETURN    R0 1         ; return 
 
 
@@ -1839,11 +1839,11 @@
 178 [-]: TEST      R19 0        ; if not R19 then PC := 183
 179 [-]: JMP       183          ; PC := 183
 180 [-]: LOADNIL   R19 R19      ; R19 := nil
-181 [-]: SETUPVAL  R19 U4       ; U82 := 
+181 [-]: SETUPVAL  R19 U4       ; U82 := R4
 182 [-]: JMP       186          ; PC := 186
 183 [-]: SELF      R19 R18 K49  ; R20 := R18; R19 := R18[0xed4e0128]
 184 [-]: CALL      R19 2 2      ; R19 := R19(R20)
-185 [-]: SETUPVAL  R19 U4       ; U82 := 
+185 [-]: SETUPVAL  R19 U4       ; U82 := R4
 186 [-]: RETURN    R0 1         ; return 
 
 
@@ -2526,7 +2526,7 @@
 155 [-]: SETTABLE  R8 K46 R9    ; R8["Recruiter_Storefront"] := R9
 156 [-]: GETGLOBAL R8 K0        ; R8 := _T
 157 [-]: GETUPVAL  R9 U4        ; R9 := U4
-158 [-]: SETTABLE  R8 K48 R9    ; R8["OpenJobBoard"] := R9
+158 [-]: SETTABLE  R8 K48 R9    ; R8[0x9fd57658] := R9
 159 [-]: GETGLOBAL R8 K19       ; R8 := 0x7b998233
 160 [-]: GETGLOBAL R9 K4        ; R9 := 0x89326c93
 161 [-]: SELF      R9 R9 K49    ; R10 := R9; R9 := R9[0xa277037f]
@@ -2587,7 +2587,7 @@
 216 [-]: GETGLOBAL R9 K0        ; R9 := _T
 217 [-]: GETUPVAL  R10 U6       ; R10 := U6
 218 [-]: CALL      R10 1 2      ; R10 := R10()
-219 [-]: SETTABLE  R9 K67 R10   ; R9["AvailableJobs"] := R10
+219 [-]: SETTABLE  R9 K67 R10   ; R9[0x00000001] := R10
 220 [-]: GETGLOBAL R9 K19       ; R9 := 0x7b998233
 221 [-]: GETGLOBAL R10 K0       ; R10 := _T
 222 [-]: GETTABLE  R10 R10 K68  ; R10 := R10["JobBoardMovieInstance"]
@@ -2758,7 +2758,7 @@
 387 [-]: TFORLOOP  R28 2        ; R31,R32 :=  R28(R29,R30); if R31 ~= nil then begin PC = 384; R30 := R31 end
 388 [-]: JMP       384          ; PC := 384
 389 [-]: LOADNIL   R33 R33      ; R33 := nil
-390 [-]: SETUPVAL  R33 U8       ; U82 := 
+390 [-]: SETUPVAL  R33 U8       ; U82 := R8
 391 [-]: GETUPVAL  R33 U10      ; R33 := U10
 392 [-]: TEST      R33 0        ; if not R33 then PC := 397
 393 [-]: JMP       397          ; PC := 397
@@ -2801,7 +2801,7 @@
 430 [-]: ADD       R35 R35 K99  ; R35 := R35 + 24.000000
 431 [-]: CALL      R34 2 1      ; R34(R35)
 432 [-]: LOADNIL   R34 R34      ; R34 := nil
-433 [-]: SETUPVAL  R34 U12      ; U82 := 
+433 [-]: SETUPVAL  R34 U12      ; U82 := R12
 434 [-]: GETUPVAL  R34 U13      ; R34 := U13
 435 [-]: TEST      R34 0        ; if not R34 then PC := 445
 436 [-]: JMP       445          ; PC := 445
@@ -2811,7 +2811,7 @@
 440 [-]: LOADK     R37 K101     ; R37 := "TransmissionSetLoaded"
 441 [-]: CALL      R34 4 1      ; R34(R35,R36,R37)
 442 [-]: LOADNIL   R34 R34      ; R34 := nil
-443 [-]: SETUPVAL  R34 U13      ; U82 := 
+443 [-]: SETUPVAL  R34 U13      ; U82 := R13
 444 [-]: JMP       479          ; PC := 479
 445 [-]: GETUPVAL  R34 U14      ; R34 := U14
 446 [-]: TEST      R34 0        ; if not R34 then PC := 479
@@ -2846,7 +2846,7 @@
 475 [-]: GETUPVAL  R36 U18      ; R36 := U18
 476 [-]: CALL      R34 3 1      ; R34(R35,R36)
 477 [-]: LOADNIL   R34 R34      ; R34 := nil
-478 [-]: SETUPVAL  R34 U14      ; U82 := 
+478 [-]: SETUPVAL  R34 U14      ; U82 := R14
 479 [-]: GETGLOBAL R34 K0       ; R34 := _T
 480 [-]: GETTABLE  R34 R34 K105 ; R34 := R34["WorldStateJobsExpiry"]
 481 [-]: TEST      R34 0        ; if not R34 then PC := 500
@@ -2875,7 +2875,7 @@
 504 [-]: GETGLOBAL R34 K0       ; R34 := _T
 505 [-]: GETUPVAL  R35 U6       ; R35 := U6
 506 [-]: CALL      R35 1 2      ; R35 := R35()
-507 [-]: SETTABLE  R34 K67 R35  ; R34["AvailableJobs"] := R35
+507 [-]: SETTABLE  R34 K67 R35  ; R34[0x00000001] := R35
 508 [-]: JMP       359          ; PC := 359
 509 [-]: JMP       206          ; PC := 206
 510 [-]: RETURN    R0 1         ; return 

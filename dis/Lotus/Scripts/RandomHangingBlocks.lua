@@ -76,7 +76,7 @@
  25 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  26 [-]: GETTABLE  R4 R3 K6     ; R4 := R3["bank"]
  27 [-]: ADD       R4 R4 K7     ; R4 := R4 + 160.000000
- 28 [-]: SETTABLE  R3 K6 R4     ; R3["bank"] := R4
+ 28 [-]: SETTABLE  R3 K6 R4     ; R3[0x00000001] := R4
  29 [-]: GETGLOBAL R4 K8        ; R4 := 0x55730e1a
  30 [-]: LOADK     R5 1         ; R5 := 1.000000
  31 [-]: GETGLOBAL R6 K9        ; R6 := 0x9d3c2f03
@@ -307,12 +307,12 @@
  10 [-]: GETUPVAL  R5 U1        ; R5 := U1
  11 [-]: SETTABLE  R5 R4 R4     ; R5[R4] := R4
  12 [-]: GETGLOBAL R5 K2        ; R5 := 0x33bdd652
- 13 [-]: GETTABLE  R5 R5 K3     ; R82 := R5[0x23d5322f]
+ 13 [-]: GETTABLE  R5 R5 K3     ; R5 := R5[0x23d5322f]
  14 [-]: GETUPVAL  R6 U2        ; R6 := U2
  15 [-]: MOVE      R7 R4        ; R7 := R4
  16 [-]: CALL      R5 3 1       ; R5(R6,R7)
  17 [-]: GETGLOBAL R5 K2        ; R5 := 0x33bdd652
- 18 [-]: GETTABLE  R5 R5 K3     ; R82 := R5[0x23d5322f]
+ 18 [-]: GETTABLE  R5 R5 K3     ; R5 := R5[0x23d5322f]
  19 [-]: GETUPVAL  R6 U3        ; R6 := U3
  20 [-]: NEWTABLE  R7 0 3       ; R7 := {}
  21 [-]: SETTABLE  R7 K4 R4     ; R7["mover"] := R4

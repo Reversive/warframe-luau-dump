@@ -352,7 +352,7 @@
  17 [-]: SETTABLE  R3 K7 R4     ; R3["RemoveElement"] := R4
  18 [-]: GETTABLE  R3 R0 K5     ; R3 := R0["List"]
  19 [-]: CLOSURE   R4 2         ; R4 := closure(Function #7.3)
- 20 [-]: SETTABLE  R3 K8 R4     ; R3["RemoveElements"] := R4
+ 20 [-]: SETTABLE  R3 K8 R4     ; R3[0x91a24e4b] := R4
  21 [-]: GETGLOBAL R3 K9        ; R3 := 0xcfc01047
  22 [-]: GETTABLE  R4 R0 K10    ; R4 := R0["InitFuncQueue"]
  23 [-]: CALL      R3 2 4       ; R3,R4,R5 := R3(R4)
@@ -3881,7 +3881,7 @@
   8 [-]: RETURN    R0 1         ; return 
   9 [-]: GETUPVAL  R2 U0        ; R2 := U0
  10 [-]: GETTABLE  R2 R2 K0     ; R2 := R2["Data"]
- 11 [-]: SETTABLE  R2 K1 R0     ; R2["FlareColorId"] := R0
+ 11 [-]: SETTABLE  R2 K1 R0     ; R2[0xf64b7262] := R0
  12 [-]: GETUPVAL  R2 U1        ; R2 := U1
  13 [-]: CALL      R2 1 1       ; R2()
  14 [-]: GETUPVAL  R2 U2        ; R2 := U2
@@ -4256,7 +4256,7 @@
   1 [-]: GETUPVAL  R3 U0        ; R3 := U0
   2 [-]: GETTABLE  R3 R3 K0     ; R3 := R3["Data"]
   3 [-]: GETTABLE  R4 R0 K1     ; R4 := R0["LocalizeLabels"]
-  4 [-]: SETTABLE  R3 K1 R4     ; R3[0xa3f052c2] := R4
+  4 [-]: SETTABLE  R3 K1 R4     ; R3["LocalizeLabels"] := R4
   5 [-]: GETGLOBAL R3 K2        ; R3 := 0x7b998233
   6 [-]: GETTABLE  R4 R0 K3     ; R4 := R0["Label"]
   7 [-]: CALL      R3 2 2       ; R3 := R3(R4)
@@ -8745,7 +8745,7 @@
  18 [-]: GETTABLE  R4 R4 K0     ; R4 := R4["Data"]
  19 [-]: GETTABLE  R4 R4 K1     ; R4 := R4["Nodes"]
  20 [-]: GETTABLE  R4 R4 R0     ; R4 := R4[R0]
- 21 [-]: SETTABLE  R4 K5 R3     ; R4[0x00000014] := R3
+ 21 [-]: SETTABLE  R4 K5 R3     ; R4["HasCap"] := R3
  22 [-]: JMP       39           ; PC := 39
  23 [-]: GETUPVAL  R4 U0        ; R4 := U0
  24 [-]: GETUPVAL  R5 U0        ; R5 := U0
@@ -8758,7 +8758,7 @@
  31 [-]: NEWTABLE  R5 0 4       ; R5 := {}
  32 [-]: SETTABLE  R5 K3 R1     ; R5["Value"] := R1
  33 [-]: SETTABLE  R5 K4 R2     ; R5["Label"] := R2
- 34 [-]: SETTABLE  R5 K5 R3     ; R5[0x00000014] := R3
+ 34 [-]: SETTABLE  R5 K5 R3     ; R5["HasCap"] := R3
  35 [-]: GETUPVAL  R6 U0        ; R6 := U0
  36 [-]: GETTABLE  R6 R6 K6     ; R6 := R6["NumNodes"]
  37 [-]: SETTABLE  R5 K8 R6     ; R5["Index"] := R6

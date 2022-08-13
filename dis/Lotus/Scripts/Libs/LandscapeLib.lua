@@ -1518,13 +1518,13 @@
   9 [-]: CLOSURE   R4 0         ; R4 := closure(Function #21.1)
  10 [-]: SETTABLE  R3 K5 R4     ; R3["ClearNetVars"] := R4
  11 [-]: CLOSURE   R4 1         ; R4 := closure(Function #21.2)
- 12 [-]: SETTABLE  R3 K6 R4     ; R3["SetModeState"] := R4
+ 12 [-]: SETTABLE  R3 K6 R4     ; R3[0xbe190284] := R4
  13 [-]: CLOSURE   R4 2         ; R4 := closure(Function #21.3)
- 14 [-]: SETTABLE  R3 K7 R4     ; R3["GetModeState"] := R4
+ 14 [-]: SETTABLE  R3 K7 R4     ; R3[0xf2deaf69] := R4
  15 [-]: CLOSURE   R4 3         ; R4 := closure(Function #21.4)
  16 [-]: SETTABLE  R3 K8 R4     ; R3["ShutDown"] := R4
  17 [-]: CLOSURE   R4 4         ; R4 := closure(Function #21.5)
- 18 [-]: SETTABLE  R3 K9 R4     ; R3["AddNetVar"] := R4
+ 18 [-]: SETTABLE  R3 K9 R4     ; R3[0x08f71971] := R4
  19 [-]: RETURN    R3 2         ; return R3
  20 [-]: RETURN    R0 1         ; return 
 
@@ -1564,7 +1564,7 @@
   2 [-]: EQ        1 R2 R1      ; if R2 == R1 then PC := 65
   3 [-]: JMP       65           ; PC := 65
   4 [-]: GETTABLE  R2 R0 K0     ; R2 := R0["mModeState"]
-  5 [-]: SETTABLE  R0 K0 R1     ; R0[0x4f88be0f] := R1
+  5 [-]: SETTABLE  R0 K0 R1     ; R0["mModeState"] := R1
   6 [-]: GETGLOBAL R3 K1        ; R3 := 0x7b998233
   7 [-]: GETTABLE  R4 R0 K2     ; R4 := R0["mHint"]
   8 [-]: CALL      R3 2 2       ; R3 := R3(R4)

@@ -157,102 +157,102 @@
   6 [-]: EQ        0 R0 K1      ; if R0 ~= 1.000000 then PC := 19
   7 [-]: JMP       19           ; PC := 19
   8 [-]: LOADK     R1 10        ; R1 := 10.000000
-  9 [-]: SETUPVAL  R1 U1        ; U82 := 
+  9 [-]: SETUPVAL  R1 U1        ; U82 := R1
  10 [-]: LOADK     R1 25        ; R1 := 25.000000
- 11 [-]: SETUPVAL  R1 U2        ; U82 := 
+ 11 [-]: SETUPVAL  R1 U2        ; U82 := R2
  12 [-]: LOADK     R1 K2        ; R1 := 0.050000
- 13 [-]: SETUPVAL  R1 U3        ; U82 := 
+ 13 [-]: SETUPVAL  R1 U3        ; U82 := R3
  14 [-]: LOADK     R1 8         ; R1 := 8.000000
- 15 [-]: SETUPVAL  R1 U4        ; U82 := 
+ 15 [-]: SETUPVAL  R1 U4        ; U82 := R4
  16 [-]: LOADK     R1 90        ; R1 := 90.000000
- 17 [-]: SETUPVAL  R1 U5        ; U82 := 
+ 17 [-]: SETUPVAL  R1 U5        ; U82 := R5
  18 [-]: JMP       105          ; PC := 105
  19 [-]: EQ        0 R0 K3      ; if R0 ~= 2.000000 then PC := 32
  20 [-]: JMP       32           ; PC := 32
  21 [-]: LOADK     R1 15        ; R1 := 15.000000
- 22 [-]: SETUPVAL  R1 U1        ; U82 := 
+ 22 [-]: SETUPVAL  R1 U1        ; U82 := R1
  23 [-]: LOADK     R1 50        ; R1 := 50.000000
- 24 [-]: SETUPVAL  R1 U2        ; U82 := 
+ 24 [-]: SETUPVAL  R1 U2        ; U82 := R2
  25 [-]: LOADK     R1 K4        ; R1 := 0.100000
- 26 [-]: SETUPVAL  R1 U3        ; U82 := 
+ 26 [-]: SETUPVAL  R1 U3        ; U82 := R3
  27 [-]: LOADK     R1 10        ; R1 := 10.000000
- 28 [-]: SETUPVAL  R1 U4        ; U82 := 
+ 28 [-]: SETUPVAL  R1 U4        ; U82 := R4
  29 [-]: LOADK     R1 100       ; R1 := 100.000000
- 30 [-]: SETUPVAL  R1 U5        ; U82 := 
+ 30 [-]: SETUPVAL  R1 U5        ; U82 := R5
  31 [-]: JMP       105          ; PC := 105
  32 [-]: EQ        0 R0 K5      ; if R0 ~= 3.000000 then PC := 45
  33 [-]: JMP       45           ; PC := 45
  34 [-]: LOADK     R1 17        ; R1 := 17.000000
- 35 [-]: SETUPVAL  R1 U1        ; U82 := 
+ 35 [-]: SETUPVAL  R1 U1        ; U82 := R1
  36 [-]: LOADK     R1 75        ; R1 := 75.000000
- 37 [-]: SETUPVAL  R1 U2        ; U82 := 
+ 37 [-]: SETUPVAL  R1 U2        ; U82 := R2
  38 [-]: LOADK     R1 K6        ; R1 := 0.120000
- 39 [-]: SETUPVAL  R1 U3        ; U82 := 
+ 39 [-]: SETUPVAL  R1 U3        ; U82 := R3
  40 [-]: LOADK     R1 12        ; R1 := 12.000000
- 41 [-]: SETUPVAL  R1 U4        ; U82 := 
+ 41 [-]: SETUPVAL  R1 U4        ; U82 := R4
  42 [-]: LOADK     R1 120       ; R1 := 120.000000
- 43 [-]: SETUPVAL  R1 U5        ; U82 := 
+ 43 [-]: SETUPVAL  R1 U5        ; U82 := R5
  44 [-]: JMP       105          ; PC := 105
  45 [-]: LOADK     R1 20        ; R1 := 20.000000
- 46 [-]: SETUPVAL  R1 U1        ; U82 := 
+ 46 [-]: SETUPVAL  R1 U1        ; U82 := R1
  47 [-]: LOADK     R1 100       ; R1 := 100.000000
- 48 [-]: SETUPVAL  R1 U2        ; U82 := 
+ 48 [-]: SETUPVAL  R1 U2        ; U82 := R2
  49 [-]: LOADK     R1 K7        ; R1 := 0.150000
- 50 [-]: SETUPVAL  R1 U3        ; U82 := 
+ 50 [-]: SETUPVAL  R1 U3        ; U82 := R3
  51 [-]: LOADK     R1 15        ; R1 := 15.000000
- 52 [-]: SETUPVAL  R1 U4        ; U82 := 
+ 52 [-]: SETUPVAL  R1 U4        ; U82 := R4
  53 [-]: LOADK     R1 180       ; R1 := 180.000000
- 54 [-]: SETUPVAL  R1 U5        ; U82 := 
+ 54 [-]: SETUPVAL  R1 U5        ; U82 := R5
  55 [-]: JMP       105          ; PC := 105
  56 [-]: EQ        0 R0 K1      ; if R0 ~= 1.000000 then PC := 69
  57 [-]: JMP       69           ; PC := 69
  58 [-]: LOADK     R1 14        ; R1 := 14.000000
- 59 [-]: SETUPVAL  R1 U1        ; U82 := 
+ 59 [-]: SETUPVAL  R1 U1        ; U82 := R1
  60 [-]: LOADK     R1 35        ; R1 := 35.000000
- 61 [-]: SETUPVAL  R1 U2        ; U82 := 
+ 61 [-]: SETUPVAL  R1 U2        ; U82 := R2
  62 [-]: LOADK     R1 K8        ; R1 := 0.020000
- 63 [-]: SETUPVAL  R1 U3        ; U82 := 
+ 63 [-]: SETUPVAL  R1 U3        ; U82 := R3
  64 [-]: LOADK     R1 7         ; R1 := 7.000000
- 65 [-]: SETUPVAL  R1 U4        ; U82 := 
+ 65 [-]: SETUPVAL  R1 U4        ; U82 := R4
  66 [-]: LOADK     R1 65        ; R1 := 65.000000
- 67 [-]: SETUPVAL  R1 U5        ; U82 := 
+ 67 [-]: SETUPVAL  R1 U5        ; U82 := R5
  68 [-]: JMP       105          ; PC := 105
  69 [-]: EQ        0 R0 K3      ; if R0 ~= 2.000000 then PC := 82
  70 [-]: JMP       82           ; PC := 82
  71 [-]: LOADK     R1 16        ; R1 := 16.000000
- 72 [-]: SETUPVAL  R1 U1        ; U82 := 
+ 72 [-]: SETUPVAL  R1 U1        ; U82 := R1
  73 [-]: LOADK     R1 40        ; R1 := 40.000000
- 74 [-]: SETUPVAL  R1 U2        ; U82 := 
+ 74 [-]: SETUPVAL  R1 U2        ; U82 := R2
  75 [-]: LOADK     R1 K9        ; R1 := 0.030000
- 76 [-]: SETUPVAL  R1 U3        ; U82 := 
+ 76 [-]: SETUPVAL  R1 U3        ; U82 := R3
  77 [-]: LOADK     R1 8         ; R1 := 8.000000
- 78 [-]: SETUPVAL  R1 U4        ; U82 := 
+ 78 [-]: SETUPVAL  R1 U4        ; U82 := R4
  79 [-]: LOADK     R1 70        ; R1 := 70.000000
- 80 [-]: SETUPVAL  R1 U5        ; U82 := 
+ 80 [-]: SETUPVAL  R1 U5        ; U82 := R5
  81 [-]: JMP       105          ; PC := 105
  82 [-]: EQ        0 R0 K5      ; if R0 ~= 3.000000 then PC := 95
  83 [-]: JMP       95           ; PC := 95
  84 [-]: LOADK     R1 18        ; R1 := 18.000000
- 85 [-]: SETUPVAL  R1 U1        ; U82 := 
+ 85 [-]: SETUPVAL  R1 U1        ; U82 := R1
  86 [-]: LOADK     R1 45        ; R1 := 45.000000
- 87 [-]: SETUPVAL  R1 U2        ; U82 := 
+ 87 [-]: SETUPVAL  R1 U2        ; U82 := R2
  88 [-]: LOADK     R1 K10       ; R1 := 0.040000
- 89 [-]: SETUPVAL  R1 U3        ; U82 := 
+ 89 [-]: SETUPVAL  R1 U3        ; U82 := R3
  90 [-]: LOADK     R1 9         ; R1 := 9.000000
- 91 [-]: SETUPVAL  R1 U4        ; U82 := 
+ 91 [-]: SETUPVAL  R1 U4        ; U82 := R4
  92 [-]: LOADK     R1 75        ; R1 := 75.000000
- 93 [-]: SETUPVAL  R1 U5        ; U82 := 
+ 93 [-]: SETUPVAL  R1 U5        ; U82 := R5
  94 [-]: JMP       105          ; PC := 105
  95 [-]: LOADK     R1 20        ; R1 := 20.000000
- 96 [-]: SETUPVAL  R1 U1        ; U82 := 
+ 96 [-]: SETUPVAL  R1 U1        ; U82 := R1
  97 [-]: LOADK     R1 50        ; R1 := 50.000000
- 98 [-]: SETUPVAL  R1 U2        ; U82 := 
+ 98 [-]: SETUPVAL  R1 U2        ; U82 := R2
  99 [-]: LOADK     R1 K2        ; R1 := 0.050000
-100 [-]: SETUPVAL  R1 U3        ; U82 := 
+100 [-]: SETUPVAL  R1 U3        ; U82 := R3
 101 [-]: LOADK     R1 10        ; R1 := 10.000000
-102 [-]: SETUPVAL  R1 U4        ; U82 := 
+102 [-]: SETUPVAL  R1 U4        ; U82 := R4
 103 [-]: LOADK     R1 80        ; R1 := 80.000000
-104 [-]: SETUPVAL  R1 U5        ; U82 := 
+104 [-]: SETUPVAL  R1 U5        ; U82 := R5
 105 [-]: RETURN    R0 1         ; return 
 
 
@@ -370,20 +370,20 @@
   3 [-]: EQ        0 R0 K1      ; if R0 ~= 1.000000 then PC := 8
   4 [-]: JMP       8            ; PC := 8
   5 [-]: LOADK     R2 0         ; R2 := 0.250000
-  6 [-]: SETUPVAL  R2 U0        ; U82 := 
+  6 [-]: SETUPVAL  R2 U0        ; U82 := R0
   7 [-]: JMP       20           ; PC := 20
   8 [-]: EQ        0 R0 K2      ; if R0 ~= 2.000000 then PC := 13
   9 [-]: JMP       13           ; PC := 13
  10 [-]: LOADK     R2 0         ; R2 := 0.500000
- 11 [-]: SETUPVAL  R2 U0        ; U82 := 
+ 11 [-]: SETUPVAL  R2 U0        ; U82 := R0
  12 [-]: JMP       20           ; PC := 20
  13 [-]: EQ        0 R0 K3      ; if R0 ~= 3.000000 then PC := 18
  14 [-]: JMP       18           ; PC := 18
  15 [-]: LOADK     R2 0         ; R2 := 0.750000
- 16 [-]: SETUPVAL  R2 U0        ; U82 := 
+ 16 [-]: SETUPVAL  R2 U0        ; U82 := R0
  17 [-]: JMP       20           ; PC := 20
  18 [-]: LOADK     R2 1         ; R2 := 1.000000
- 19 [-]: SETUPVAL  R2 U0        ; U82 := 
+ 19 [-]: SETUPVAL  R2 U0        ; U82 := R0
  20 [-]: RETURN    R0 1         ; return 
 
 
@@ -487,15 +487,15 @@
  13 [-]: GETTABLE  R1 R1 K1     ; R1 := R1["AbilityLevelQueryParms"]
  14 [-]: GETTABLE  R1 R1 K5     ; R1 := R1["Avatar"]
  15 [-]: CALL      R0 2 6       ; R0,R1,R2,R3,R4 := R0(R1)
- 16 [-]: SETUPVAL  R4 U5        ; U82 := 
- 17 [-]: SETUPVAL  R3 U4        ; U82 := 
- 18 [-]: SETUPVAL  R2 U3        ; U82 := 
- 19 [-]: SETUPVAL  R1 U2        ; U82 := 
- 20 [-]: SETUPVAL  R0 U1        ; U82 := 
+ 16 [-]: SETUPVAL  R4 U5        ; U82 := R5
+ 17 [-]: SETUPVAL  R3 U4        ; U82 := R4
+ 18 [-]: SETUPVAL  R2 U3        ; U82 := R3
+ 19 [-]: SETUPVAL  R1 U2        ; U82 := R2
+ 20 [-]: SETUPVAL  R0 U1        ; U82 := R1
  21 [-]: GETUPVAL  R0 U4        ; R0 := U4
  22 [-]: SELF      R0 R0 K6     ; R1 := R0; R0 := R0[0x838305de]
  23 [-]: CALL      R0 2 2       ; R0 := R0(R1)
- 24 [-]: SETUPVAL  R0 U4        ; U82 := 
+ 24 [-]: SETUPVAL  R0 U4        ; U82 := R4
  25 [-]: NEWTABLE  R0 0 0       ; R0 := {}
  26 [-]: GETGLOBAL R1 K7        ; R1 := 0x33bdd652
  27 [-]: GETTABLE  R1 R1 K8     ; R1 := R1[0x23d5322f]

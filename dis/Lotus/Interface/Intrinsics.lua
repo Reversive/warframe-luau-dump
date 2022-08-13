@@ -954,10 +954,10 @@
 103 [-]: CALL      R18 4 2      ; R18 := R18(R19,R20,R21)
 104 [-]: SETTABLE  R17 K30 R18  ; R17["mInitialContentY"] := R18
 105 [-]: GETTABLE  R17 R8 K25   ; R17 := R8["mScrollBar"]
-106 [-]: SETTABLE  R17 K33 R1   ; R17[0xe261aa96] := R1
+106 [-]: SETTABLE  R17 K33 R1   ; R17[0xd5181643] := R1
 107 [-]: GETTABLE  R17 R8 K25   ; R17 := R8["mScrollBar"]
 108 [-]: ADD       R18 R15 K35  ; R18 := R15 + 10.000000
-109 [-]: SETTABLE  R17 K34 R18  ; R17["mMaxHeight"] := R18
+109 [-]: SETTABLE  R17 K34 R18  ; R17[0x599c2e23] := R18
 110 [-]: GETTABLE  R17 R8 K25   ; R17 := R8["mScrollBar"]
 111 [-]: SELF      R17 R17 K36  ; R18 := R17; R17 := R17[0xe91c55ec]
 112 [-]: CALL      R17 2 1      ; R17(R18)
@@ -965,7 +965,7 @@
 114 [-]: CLOSURE   R18 2        ; R18 := closure(Function #13.3)
 115 [-]: MOVE      R0 R0        ; R0 := R0
 116 [-]: MOVE      R0 R8        ; R0 := R8
-117 [-]: SETTABLE  R17 K37 R18  ; R17["mScrollValueChangedCallback"] := R18
+117 [-]: SETTABLE  R17 K37 R18  ; R17[0x33bdd652] := R18
 118 [-]: GETTABLE  R17 R8 K25   ; R17 := R8["mScrollBar"]
 119 [-]: SELF      R17 R17 K38  ; R18 := R17; R17 := R17[0x687ae094]
 120 [-]: CALL      R17 2 1      ; R17(R18)
@@ -2855,7 +2855,7 @@
   7 [-]: MOVE      R5 R2        ; R5 := R2
   8 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
   9 [-]: GETUPVAL  R4 U0        ; R4 := U0
- 10 [-]: SETTABLE  R4 K2 R3     ; R4[0x307ce835] := R3
+ 10 [-]: SETTABLE  R4 K2 R3     ; R4["CurrentRank"] := R3
  11 [-]: GETUPVAL  R4 U2        ; R4 := U2
  12 [-]: GETTABLE  R4 R4 K3     ; R4 := R4[0xf76783e5]
  13 [-]: GETGLOBAL R5 K4        ; R5 := 0xae91e43b
@@ -3168,10 +3168,10 @@
  25 [-]: SELF      R4 R4 K15    ; R5 := R4; R4 := R4[0x659fead0]
  26 [-]: LOADK     R6 3         ; R6 := 3.000000
  27 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
- 28 [-]: SETTABLE  R3 K14 R4    ; R3["CurrentRank"] := R4
+ 28 [-]: SETTABLE  R3 K14 R4    ; R3[0x044b7be8] := R4
  29 [-]: SETTABLE  R3 K16 K17   ; R3["Progress"] := 0.000000
  30 [-]: GETTABLE  R4 R0 K19    ; R4 := R0[1.000000]
- 31 [-]: SETTABLE  R3 K18 R4    ; R3["Icon"] := R4
+ 31 [-]: SETTABLE  R3 K18 R4    ; R3[0x6c97a788] := R4
  32 [-]: LOADBOOL  R4 1 0       ; R4 := true
  33 [-]: CALL      R1 4 1       ; R1(R2,R3,R4)
  34 [-]: GETUPVAL  R1 U0        ; R1 := U0
@@ -3184,10 +3184,10 @@
  41 [-]: SELF      R4 R4 K15    ; R5 := R4; R4 := R4[0x659fead0]
  42 [-]: LOADK     R6 1         ; R6 := 1.000000
  43 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
- 44 [-]: SETTABLE  R3 K14 R4    ; R3["CurrentRank"] := R4
+ 44 [-]: SETTABLE  R3 K14 R4    ; R3[0x044b7be8] := R4
  45 [-]: SETTABLE  R3 K16 K17   ; R3["Progress"] := 0.000000
  46 [-]: GETTABLE  R4 R0 K22    ; R4 := R0[2.000000]
- 47 [-]: SETTABLE  R3 K18 R4    ; R3["Icon"] := R4
+ 47 [-]: SETTABLE  R3 K18 R4    ; R3[0x6c97a788] := R4
  48 [-]: LOADBOOL  R4 1 0       ; R4 := true
  49 [-]: CALL      R1 4 1       ; R1(R2,R3,R4)
  50 [-]: GETUPVAL  R1 U0        ; R1 := U0
@@ -3200,10 +3200,10 @@
  57 [-]: SELF      R4 R4 K15    ; R5 := R4; R4 := R4[0x659fead0]
  58 [-]: LOADK     R6 2         ; R6 := 2.000000
  59 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
- 60 [-]: SETTABLE  R3 K14 R4    ; R3["CurrentRank"] := R4
+ 60 [-]: SETTABLE  R3 K14 R4    ; R3[0x044b7be8] := R4
  61 [-]: SETTABLE  R3 K16 K17   ; R3["Progress"] := 0.000000
  62 [-]: GETTABLE  R4 R0 K11    ; R4 := R0[3.000000]
- 63 [-]: SETTABLE  R3 K18 R4    ; R3["Icon"] := R4
+ 63 [-]: SETTABLE  R3 K18 R4    ; R3[0x6c97a788] := R4
  64 [-]: LOADBOOL  R4 1 0       ; R4 := true
  65 [-]: CALL      R1 4 1       ; R1(R2,R3,R4)
  66 [-]: GETUPVAL  R1 U0        ; R1 := U0
@@ -3216,10 +3216,10 @@
  73 [-]: SELF      R4 R4 K15    ; R5 := R4; R4 := R4[0x659fead0]
  74 [-]: LOADK     R6 4         ; R6 := 4.000000
  75 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
- 76 [-]: SETTABLE  R3 K14 R4    ; R3["CurrentRank"] := R4
+ 76 [-]: SETTABLE  R3 K14 R4    ; R3[0x044b7be8] := R4
  77 [-]: SETTABLE  R3 K16 K17   ; R3["Progress"] := 0.000000
  78 [-]: GETTABLE  R4 R0 K26    ; R4 := R0[4.000000]
- 79 [-]: SETTABLE  R3 K18 R4    ; R3["Icon"] := R4
+ 79 [-]: SETTABLE  R3 K18 R4    ; R3[0x6c97a788] := R4
  80 [-]: LOADBOOL  R4 1 0       ; R4 := true
  81 [-]: CALL      R1 4 1       ; R1(R2,R3,R4)
  82 [-]: GETUPVAL  R1 U0        ; R1 := U0
@@ -3232,10 +3232,10 @@
  89 [-]: SELF      R4 R4 K15    ; R5 := R4; R4 := R4[0x659fead0]
  90 [-]: LOADK     R6 5         ; R6 := 5.000000
  91 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
- 92 [-]: SETTABLE  R3 K14 R4    ; R3["CurrentRank"] := R4
+ 92 [-]: SETTABLE  R3 K14 R4    ; R3[0x044b7be8] := R4
  93 [-]: SETTABLE  R3 K16 K17   ; R3["Progress"] := 0.000000
  94 [-]: GETTABLE  R4 R0 K29    ; R4 := R0[5.000000]
- 95 [-]: SETTABLE  R3 K18 R4    ; R3["Icon"] := R4
+ 95 [-]: SETTABLE  R3 K18 R4    ; R3[0x6c97a788] := R4
  96 [-]: LOADBOOL  R4 1 0       ; R4 := true
  97 [-]: CALL      R1 4 1       ; R1(R2,R3,R4)
  98 [-]: GETUPVAL  R1 U0        ; R1 := U0
@@ -3425,7 +3425,7 @@
 168 [-]: GETGLOBAL R7 K55       ; R7 := 0xa0850db3
 169 [-]: SELF      R7 R7 K57    ; R8 := R7; R7 := R7[0xed4e0128]
 170 [-]: CALL      R7 2 2       ; R7 := R7(R8)
-171 [-]: SETTABLE  R6 K56 R7    ; R6[0x25312c9b] := R7
+171 [-]: SETTABLE  R6 K56 R7    ; R6["icon"] := R7
 172 [-]: GETUPVAL  R7 U13       ; R7 := U13
 173 [-]: GETTABLE  R7 R7 K58    ; R7 := R7[0xe99b84e7]
 174 [-]: MOVE      R8 R6        ; R8 := R6

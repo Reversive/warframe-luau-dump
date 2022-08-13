@@ -2203,7 +2203,7 @@
 166 [-]: CALL      R19 3 1      ; R19(R20,R21)
 167 [-]: GETUPVAL  R19 U7       ; R19 := U7
 168 [-]: ADD       R19 R19 K9   ; R19 := R19 + 1.000000
-169 [-]: SETUPVAL  R19 U7       ; U82 := 
+169 [-]: SETUPVAL  R19 U7       ; U82 := R7
 170 [-]: GETUPVAL  R19 U7       ; R19 := U7
 171 [-]: GETUPVAL  R20 U8       ; R20 := U8
 172 [-]: EQ        0 R19 R20    ; if R19 ~= R20 then PC := 176
@@ -2339,7 +2339,7 @@
  91 [-]: TEST      R9 1         ; if R9 then PC := 94
  92 [-]: JMP       94           ; PC := 94
  93 [-]: ADD       R6 R6 K11    ; R6 := R6 + 1.000000
- 94 [-]: SETUPVAL  R6 U3        ; U82 := 
+ 94 [-]: SETUPVAL  R6 U3        ; U82 := R3
  95 [-]: GETUPVAL  R9 U4        ; R9 := U4
  96 [-]: GETTABLE  R9 R9 K26    ; R9 := R9[0x59f914cd]
  97 [-]: GETGLOBAL R10 K27      ; R10 := 0xe91d7466
@@ -2490,7 +2490,7 @@
   4 [-]: CALL      R2 2 1       ; R2(R3)
   5 [-]: SELF      R2 R0 K1     ; R3 := R0; R2 := R0[0xf4e253b6]
   6 [-]: CALL      R2 2 1       ; R2(R3)
-  7 [-]: SETUPVAL  R0 U1        ; U82 := 
+  7 [-]: SETUPVAL  R0 U1        ; U82 := R1
   8 [-]: GETUPVAL  R2 U2        ; R2 := U2
   9 [-]: MOVE      R3 R1        ; R3 := R1
  10 [-]: LOADBOOL  R4 0 0       ; R4 := false
@@ -2557,7 +2557,7 @@
  22 [-]: SELF      R1 R1 K4     ; R2 := R1; R1 := R1[0x383d2e7d]
  23 [-]: CALL      R1 2 1       ; R1(R2)
  24 [-]: LOADNIL   R1 R1        ; R1 := nil
- 25 [-]: SETUPVAL  R1 U0        ; U82 := 
+ 25 [-]: SETUPVAL  R1 U0        ; U82 := R0
  26 [-]: GETGLOBAL R1 K1        ; R1 := _T
  27 [-]: SETTABLE  R1 K5 K6     ; R1["CapturedAvatar"] := nil
  28 [-]: GETGLOBAL R1 K0        ; R1 := 0x7b998233
@@ -2730,7 +2730,7 @@
 131 [-]: LOADK     R12 0        ; R12 := 0.000000
 132 [-]: CALL      R10 3 1      ; R10(R11,R12)
 133 [-]: LOADNIL   R10 R10      ; R10 := nil
-134 [-]: SETUPVAL  R10 U0       ; U82 := 
+134 [-]: SETUPVAL  R10 U0       ; U82 := R0
 135 [-]: GETGLOBAL R10 K8       ; R10 := 0x7b998233
 136 [-]: MOVE      R11 R6       ; R11 := R6
 137 [-]: CALL      R10 2 2      ; R10 := R10(R11)
@@ -3867,7 +3867,7 @@
 118 [-]: LT        0 K18 R25    ; if 0.000000 >= R25 then PC := 122
 119 [-]: JMP       122          ; PC := 122
 120 [-]: LOADBOOL  R26 1 0      ; R26 := true
-121 [-]: SETUPVAL  R26 U4       ; U82 := 
+121 [-]: SETUPVAL  R26 U4       ; U82 := R4
 122 [-]: GETUPVAL  R26 U4       ; R26 := U4
 123 [-]: TEST      R26 0        ; if not R26 then PC := 181
 124 [-]: JMP       181          ; PC := 181

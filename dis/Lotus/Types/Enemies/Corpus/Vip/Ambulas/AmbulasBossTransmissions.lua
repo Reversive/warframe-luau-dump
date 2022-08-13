@@ -91,21 +91,21 @@
   8 [-]: SETTABLE  R3 K4 R4     ; R3["TransmissionSet"] := R4
   9 [-]: NEWTABLE  R3 0 0       ; R3 := {}
  10 [-]: GETGLOBAL R4 K6        ; R4 := 0x33bdd652
- 11 [-]: GETTABLE  R4 R4 K7     ; R82 := R4[0x23d5322f]
+ 11 [-]: GETTABLE  R4 R4 K7     ; R4 := R4[0x23d5322f]
  12 [-]: MOVE      R5 R3        ; R5 := R3
  13 [-]: GETGLOBAL R6 K8        ; R6 := 0x0469f296
  14 [-]: LOADK     R7 K9        ; R7 := "AmbulasBossIntro2"
  15 [-]: CALL      R6 2 0       ; R6,... := R6(R7)
  16 [-]: CALL      R4 0 1       ; R4(R5,...)
  17 [-]: GETGLOBAL R4 K6        ; R4 := 0x33bdd652
- 18 [-]: GETTABLE  R4 R4 K7     ; R82 := R4[0x23d5322f]
+ 18 [-]: GETTABLE  R4 R4 K7     ; R4 := R4[0x23d5322f]
  19 [-]: MOVE      R5 R3        ; R5 := R3
  20 [-]: GETGLOBAL R6 K8        ; R6 := 0x0469f296
  21 [-]: LOADK     R7 K10       ; R7 := "AmbulasBossIntro4"
  22 [-]: CALL      R6 2 0       ; R6,... := R6(R7)
  23 [-]: CALL      R4 0 1       ; R4(R5,...)
  24 [-]: GETGLOBAL R4 K6        ; R4 := 0x33bdd652
- 25 [-]: GETTABLE  R4 R4 K7     ; R82 := R4[0x23d5322f]
+ 25 [-]: GETTABLE  R4 R4 K7     ; R4 := R4[0x23d5322f]
  26 [-]: MOVE      R5 R3        ; R5 := R3
  27 [-]: GETGLOBAL R6 K8        ; R6 := 0x0469f296
  28 [-]: LOADK     R7 K11       ; R7 := "AmbulasBossIntro6"
@@ -145,7 +145,7 @@
  62 [-]: JMP       64           ; PC := 64
  63 [-]: RETURN    R0 1         ; return 
  64 [-]: GETUPVAL  R6 U0        ; R6 := U0
- 65 [-]: GETTABLE  R6 R6 K20    ; R82 := R6[0x9742b85b]
+ 65 [-]: GETTABLE  R6 R6 K20    ; R6 := R6[0x9742b85b]
  66 [-]: GETGLOBAL R7 K3        ; R7 := _T
  67 [-]: GETTABLE  R7 R7 K4     ; R7 := R7["TransmissionSet"]
  68 [-]: GETGLOBAL R8 K8        ; R8 := 0x0469f296
@@ -185,7 +185,7 @@
 102 [-]: CALL      R13 2 2      ; R13 := R13(R14)
 103 [-]: MOVE      R6 R13       ; R6 := R13
 104 [-]: GETUPVAL  R13 U2       ; R13 := U2
-105 [-]: GETTABLE  R13 R13 K28  ; R82 := R13[0x0deacd54]
+105 [-]: GETTABLE  R13 R13 K28  ; R13 := R13[0x0deacd54]
 106 [-]: CALL      R13 1 2      ; R13 := R13()
 107 [-]: TEST      R13 1        ; if R13 then PC := 94
 108 [-]: JMP       94           ; PC := 94
@@ -203,13 +203,13 @@
 120 [-]: TEST      R17 1        ; if R17 then PC := 133
 121 [-]: JMP       133          ; PC := 133
 122 [-]: GETUPVAL  R17 U0       ; R17 := U0
-123 [-]: GETTABLE  R17 R17 K20  ; R82 := R17[0x9742b85b]
+123 [-]: GETTABLE  R17 R17 K20  ; R17 := R17[0x9742b85b]
 124 [-]: GETGLOBAL R18 K3       ; R18 := _T
 125 [-]: GETTABLE  R18 R18 K4   ; R18 := R18["TransmissionSet"]
 126 [-]: GETTABLE  R19 R3 K17   ; R19 := R3[1.000000]
 127 [-]: CALL      R17 3 1      ; R17(R18,R19)
 128 [-]: GETGLOBAL R17 K6       ; R17 := 0x33bdd652
-129 [-]: GETTABLE  R17 R17 K29  ; R82 := R17[0x9c1f3b5a]
+129 [-]: GETTABLE  R17 R17 K29  ; R17 := R17[0x9c1f3b5a]
 130 [-]: MOVE      R18 R3       ; R18 := R3
 131 [-]: LOADK     R19 1        ; R19 := 1.000000
 132 [-]: CALL      R17 3 1      ; R17(R18,R19)

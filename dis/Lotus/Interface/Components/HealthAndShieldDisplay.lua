@@ -566,7 +566,7 @@
   9 [-]: JMP       13           ; PC := 13
  10 [-]: SELF      R2 R1 K4     ; R3 := R1; R2 := R1[0x32316a21]
  11 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 12 [-]: SETTABLE  R0 K0 R2     ; R0[0xf64b7262] := R2
+ 12 [-]: SETTABLE  R0 K0 R2     ; R0["mIsPvp"] := R2
  13 [-]: GETTABLE  R2 R0 K0     ; R2 := R0["mIsPvp"]
  14 [-]: EQ        1 R2 K5      ; if R2 == true then PC := 17
  15 [-]: JMP       17           ; PC := 17

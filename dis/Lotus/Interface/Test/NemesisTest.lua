@@ -1771,7 +1771,7 @@
  38 [-]: GETGLOBAL R3 K9        ; R3 := _T
  39 [-]: GETTABLE  R3 R3 K10    ; R3 := R3["gNemesis"]
  40 [-]: GETUPVAL  R4 U3        ; R4 := U3
- 41 [-]: SETTABLE  R3 K12 R4    ; R3[0xef25e404] := R4
+ 41 [-]: SETTABLE  R3 K12 R4    ; R3["properties"] := R4
  42 [-]: LOADBOOL  R3 1 0       ; R3 := true
  43 [-]: SETUPVAL  R3 U8        ; U82 := R8
  44 [-]: RETURN    R0 1         ; return 
@@ -4446,15 +4446,15 @@
  12 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  13 [-]: NEWTABLE  R4 0 3       ; R4 := {}
  14 [-]: GETTABLE  R5 R2 K6     ; R5 := R2["mName"]
- 15 [-]: SETTABLE  R4 K5 R5     ; R4[0xddd5b6eb] := R5
+ 15 [-]: SETTABLE  R4 K5 R5     ; R4["name"] := R5
  16 [-]: GETTABLE  R5 R1 K8     ; R5 := R1["mRank"]
  17 [-]: SETTABLE  R4 K7 R5     ; R4["rank"] := R5
  18 [-]: GETGLOBAL R5 K10       ; R5 := 0x5eb99e86
  19 [-]: GETTABLE  R5 R5 R3     ; R5 := R5[R3]
- 20 [-]: SETTABLE  R4 K9 R5     ; R4[0x553549e8] := R5
+ 20 [-]: SETTABLE  R4 K9 R5     ; R4["faction"] := R5
  21 [-]: NEWTABLE  R5 0 2       ; R5 := {}
  22 [-]: GETTABLE  R6 R1 K12    ; R6 := R1["mKillingSuit"]
- 23 [-]: SETTABLE  R5 K11 R6    ; R5[0x492c7f2a] := R6
+ 23 [-]: SETTABLE  R5 K11 R6    ; R5["killingPowersuitType"] := R6
  24 [-]: GETTABLE  R6 R1 K14    ; R6 := R1["mBirthNode"]
  25 [-]: SETTABLE  R5 K13 R6    ; R5["birthNode"] := R6
  26 [-]: GETUPVAL  R6 U1        ; R6 := U1

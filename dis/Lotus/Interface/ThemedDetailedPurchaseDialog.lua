@@ -4601,10 +4601,10 @@
  24 [-]: GETUPVAL  R1 U0        ; R1 := U0
  25 [-]: CLOSURE   R2 1         ; R2 := closure(Function #45.2)
  26 [-]: GETUPVAL  R0 U0        ; R0 := U0
- 27 [-]: SETTABLE  R1 K13 R2    ; R1[0xae91e43b] := R2
+ 27 [-]: SETTABLE  R1 K13 R2    ; R1["mClipCreatedCallback"] := R2
  28 [-]: GETUPVAL  R1 U0        ; R1 := U0
  29 [-]: CLOSURE   R2 2         ; R2 := closure(Function #45.3)
- 30 [-]: SETTABLE  R1 K14 R2    ; R1[0xc0a3774b] := R2
+ 30 [-]: SETTABLE  R1 K14 R2    ; R1["mOnFocusedCallback"] := R2
  31 [-]: GETUPVAL  R1 U0        ; R1 := U0
  32 [-]: CLOSURE   R2 3         ; R2 := closure(Function #45.4)
  33 [-]: SETTABLE  R1 K15 R2    ; R1["mOnUnfocusedCallback"] := R2
@@ -4954,7 +4954,7 @@
   8 [-]: SETUPVAL  R1 U0        ; U82 := R0
   9 [-]: GETUPVAL  R1 U0        ; R1 := U0
  10 [-]: GETGLOBAL R2 K6        ; R2 := 0xd8549545
- 11 [-]: SETTABLE  R1 K5 R2     ; R1["RectangleMaterial"] := R2
+ 11 [-]: SETTABLE  R1 K5 R2     ; R1[0x5bced4c4] := R2
  12 [-]: GETUPVAL  R1 U0        ; R1 := U0
  13 [-]: GETGLOBAL R2 K8        ; R2 := 0xde244639
  14 [-]: SETTABLE  R1 K7 R2     ; R1["TextMaterial"] := R2
@@ -5090,7 +5090,7 @@
  31 [-]: LOADNIL   R8 R9        ; R8 := R9 := nil
  32 [-]: LOADBOOL  R10 0 0      ; R10 := false
  33 [-]: CALL      R4 7 2       ; R4 := R4(R5,R6,R7,R8,R9,R10)
- 34 [-]: SETTABLE  R0 K10 R4    ; R0[0x27a28338] := R4
+ 34 [-]: SETTABLE  R0 K10 R4    ; R0["Button"] := R4
  35 [-]: GETTABLE  R4 R0 K10    ; R4 := R0["Button"]
  36 [-]: SETTABLE  R4 K14 K15   ; R4["mPostText"] := "..."
  37 [-]: GETTABLE  R4 R0 K10    ; R4 := R0["Button"]
@@ -5107,7 +5107,7 @@
  48 [-]: SETTABLE  R4 K17 R5    ; R4["mOnFocusedCallback"] := R5
  49 [-]: GETTABLE  R4 R0 K10    ; R4 := R0["Button"]
  50 [-]: CLOSURE   R5 2         ; R5 := closure(Function #47.2.3)
- 51 [-]: SETTABLE  R4 K18 R5    ; R4[0x06d36229] := R5
+ 51 [-]: SETTABLE  R4 K18 R5    ; R4["mOnUnfocusedCallback"] := R5
  52 [-]: GETTABLE  R4 R0 K10    ; R4 := R0["Button"]
  53 [-]: SELF      R4 R4 K19    ; R5 := R4; R4 := R4[0x6b2ab44e]
  54 [-]: LOADK     R6 K20       ; R6 := "left"
@@ -6783,7 +6783,7 @@
  58 [-]: CLOSURE   R3 0         ; R3 := closure(Function #54.1)
  59 [-]: GETUPVAL  R0 U1        ; R0 := U1
  60 [-]: GETUPVAL  R0 U2        ; R0 := U2
- 61 [-]: SETTABLE  R2 K19 R3    ; R2[0x90ca007f] := R3
+ 61 [-]: SETTABLE  R2 K19 R3    ; R2["InputFieldFocused"] := R3
  62 [-]: GETUPVAL  R2 U0        ; R2 := U0
  63 [-]: GETTABLE  R2 R2 K7     ; R2 := R2["mInputField"]
  64 [-]: SELF      R2 R2 K20    ; R3 := R2; R2 := R2[0x6b2ab44e]
@@ -8638,5 +8638,4 @@
 1577 [-]: CALL      R97 0 2      ; R97 := R97(R98,...)
 1578 [-]: SETTABLE  R96 K224 R97 ; R96["Price"] := R97
 1579 [-]: JMP       1628         ; PC := 1628
-1580 [-]: GETGLOBAL R96 K27      ; R96 := 0x34291f5c
-1581 [-]: LOAD
+1580 [-]: GETGLOBAL R96 K27      ; 

@@ -41,11 +41,11 @@
 ; Is_vararg:       0
 ; Max Stack Size:  31
 
-  1 [-]: SETUPVAL  R0 U0        ; U82 := 
+  1 [-]: SETUPVAL  R0 U0        ; U82 := R0
   2 [-]: SELF      R1 R0 K0     ; R2 := R0; R1 := R0[0xc9f6a7d7]
   3 [-]: GETGLOBAL R3 K1        ; R3 := gContextActionType
   4 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
-  5 [-]: SETUPVAL  R1 U1        ; U82 := 
+  5 [-]: SETUPVAL  R1 U1        ; U82 := R1
   6 [-]: GETGLOBAL R1 K2        ; R1 := 0x7b998233
   7 [-]: GETUPVAL  R2 U1        ; R2 := U1
   8 [-]: CALL      R1 2 2       ; R1 := R1(R2)
@@ -63,12 +63,12 @@
  20 [-]: SELF      R1 R0 K0     ; R2 := R0; R1 := R0[0xc9f6a7d7]
  21 [-]: GETGLOBAL R3 K1        ; R3 := gContextActionType
  22 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
- 23 [-]: SETUPVAL  R1 U1        ; U82 := 
+ 23 [-]: SETUPVAL  R1 U1        ; U82 := R1
  24 [-]: JMP       6            ; PC := 6
  25 [-]: SELF      R1 R0 K0     ; R2 := R0; R1 := R0[0xc9f6a7d7]
  26 [-]: GETGLOBAL R3 K7        ; R3 := 0xd9dd5c74
  27 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
- 28 [-]: SETUPVAL  R1 U2        ; U82 := 
+ 28 [-]: SETUPVAL  R1 U2        ; U82 := R2
  29 [-]: GETGLOBAL R1 K2        ; R1 := 0x7b998233
  30 [-]: GETUPVAL  R2 U2        ; R2 := U2
  31 [-]: CALL      R1 2 2       ; R1 := R1(R2)
@@ -86,7 +86,7 @@
  43 [-]: SELF      R1 R0 K0     ; R2 := R0; R1 := R0[0xc9f6a7d7]
  44 [-]: GETGLOBAL R3 K7        ; R3 := 0xd9dd5c74
  45 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
- 46 [-]: SETUPVAL  R1 U2        ; U82 := 
+ 46 [-]: SETUPVAL  R1 U2        ; U82 := R2
  47 [-]: JMP       29           ; PC := 29
  48 [-]: GETUPVAL  R1 U2        ; R1 := U2
  49 [-]: SELF      R1 R1 K8     ; R2 := R1; R1 := R1[0x768274d6]
@@ -96,7 +96,7 @@
  53 [-]: SELF      R1 R1 K9     ; R2 := R1; R1 := R1[0x819abd48]
  54 [-]: LOADK     R3 1         ; R3 := 1.000000
  55 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
- 56 [-]: SETUPVAL  R1 U3        ; U82 := 
+ 56 [-]: SETUPVAL  R1 U3        ; U82 := R3
  57 [-]: GETGLOBAL R1 K10       ; R1 := 0x11a19c5e
  58 [-]: GETUPVAL  R2 U0        ; R2 := U0
  59 [-]: LOADK     R3 K11       ; R3 := "OnActivated"
@@ -231,7 +231,7 @@
 188 [-]: CALL      R25 2 1      ; R25(R26)
 189 [-]: FORLOOP   R17 154      ; R17 += R19; if R17 <= R18 then begin PC := 154; R20 := R17 end
 190 [-]: LOADBOOL  R25 0 0      ; R25 := false
-191 [-]: SETUPVAL  R25 U4       ; U82 := 
+191 [-]: SETUPVAL  R25 U4       ; U82 := R4
 192 [-]: GETUPVAL  R25 U2       ; R25 := U2
 193 [-]: SELF      R25 R25 K37  ; R26 := R25; R25 := R25[0xcddc3abb]
 194 [-]: LOADK     R27 1        ; R27 := 1.000000
@@ -263,7 +263,7 @@
 ; Max Stack Size:  6
 
   1 [-]: LOADBOOL  R1 1 0       ; R1 := true
-  2 [-]: SETUPVAL  R1 U0        ; U82 := 
+  2 [-]: SETUPVAL  R1 U0        ; U82 := R0
   3 [-]: GETUPVAL  R1 U1        ; R1 := U1
   4 [-]: SELF      R1 R1 K0     ; R2 := R1; R1 := R1[0xcddc3abb]
   5 [-]: LOADK     R3 1         ; R3 := 1.000000
@@ -283,7 +283,7 @@
 ; Max Stack Size:  6
 
   1 [-]: LOADBOOL  R1 0 0       ; R1 := false
-  2 [-]: SETUPVAL  R1 U0        ; U82 := 
+  2 [-]: SETUPVAL  R1 U0        ; U82 := R0
   3 [-]: GETUPVAL  R1 U1        ; R1 := U1
   4 [-]: SELF      R1 R1 K0     ; R2 := R1; R1 := R1[0xcddc3abb]
   5 [-]: LOADK     R3 1         ; R3 := 1.000000

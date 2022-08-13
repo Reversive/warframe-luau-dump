@@ -5363,7 +5363,7 @@
  52 [-]: SETTABLE  R6 K17 K18   ; R6["IsFocused"] := false
  53 [-]: SETTABLE  R6 K19 K18   ; R6["IsSelected"] := false
  54 [-]: GETTABLE  R7 R0 K20    ; R7 := R0["ShowToolTip"]
- 55 [-]: SETTABLE  R6 K20 R7    ; R6["ShowToolTip"] := R7
+ 55 [-]: SETTABLE  R6 K20 R7    ; R6[0x7b998233] := R7
  56 [-]: GETUPVAL  R7 U1        ; R7 := U1
  57 [-]: GETTABLE  R7 R7 K6     ; R7 := R7["ItemSelectionGrid"]
  58 [-]: GETTABLE  R7 R7 K22    ; R7 := R7["mShowInfoPopup"]
@@ -5465,7 +5465,7 @@
 154 [-]: SETTABLE  R8 K17 R3    ; R8["IsFocused"] := R3
 155 [-]: SETTABLE  R8 K19 K2    ; R8["IsSelected"] := true
 156 [-]: GETTABLE  R9 R0 K20    ; R9 := R0["ShowToolTip"]
-157 [-]: SETTABLE  R8 K20 R9    ; R8["ShowToolTip"] := R9
+157 [-]: SETTABLE  R8 K20 R9    ; R8[0x7b998233] := R9
 158 [-]: GETUPVAL  R9 U1        ; R9 := U1
 159 [-]: GETTABLE  R9 R9 K6     ; R9 := R9["ItemSelectionGrid"]
 160 [-]: GETTABLE  R9 R9 K22    ; R9 := R9["mShowInfoPopup"]

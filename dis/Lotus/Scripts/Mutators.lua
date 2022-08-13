@@ -702,7 +702,7 @@
  16 [-]: JMP       20           ; PC := 20
  17 [-]: GETGLOBAL R6 K5        ; R6 := _T
  18 [-]: NEWTABLE  R7 0 0       ; R7 := {}
- 19 [-]: SETTABLE  R6 K6 R7     ; R6["gHealthRegen"] := R7
+ 19 [-]: SETTABLE  R6 K6 R7     ; R6[0x02020a9c] := R7
  20 [-]: GETGLOBAL R6 K4        ; R6 := 0x7b998233
  21 [-]: GETGLOBAL R7 K5        ; R7 := _T
  22 [-]: GETTABLE  R7 R7 K6     ; R7 := R7["gHealthRegen"]

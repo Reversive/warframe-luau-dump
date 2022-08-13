@@ -1184,7 +1184,7 @@
  94 [-]: LOADBOOL  R22 0 0      ; R22 := false
  95 [-]: CALL      R19 4 2      ; R19 := R19(R20,R21,R22)
  96 [-]: SETTABLE  R18 K21 R19  ; R18["Name"] := R19
- 97 [-]: SETTABLE  R18 K26 R11  ; R18["Count"] := R11
+ 97 [-]: SETTABLE  R18 K26 R11  ; R18[0x0032441c] := R11
  98 [-]: SETTABLE  R18 K27 R11  ; R18["ItemCount"] := R11
  99 [-]: GETGLOBAL R19 K28      ; R19 := 0x33bdd652
 100 [-]: GETTABLE  R19 R19 K29  ; R19 := R19[0x23d5322f]
@@ -1215,9 +1215,9 @@
   7 [-]: LOADK     R5 K3        ; R5 := "/Lotus/Language/Menu/SortName"
   8 [-]: LOADBOOL  R6 0 0       ; R6 := false
   9 [-]: CALL      R3 4 2       ; R3 := R3(R4,R5,R6)
- 10 [-]: SETTABLE  R2 K0 R3     ; R2[0xb6a7c46e] := R3
+ 10 [-]: SETTABLE  R2 K0 R3     ; R2["Name"] := R3
  11 [-]: SETTABLE  R2 K4 K5     ; R2["SortId"] := "NAME"
- 12 [-]: SETTABLE  R2 K6 R1     ; R2[0xf2deaf69] := R1
+ 12 [-]: SETTABLE  R2 K6 R1     ; R2["Attribute"] := R1
  13 [-]: CLOSURE   R3 2         ; R3 := closure(Function #13.2.3)
  14 [-]: MOVE      R0 R0        ; R0 := R0
  15 [-]: NEWTABLE  R4 0 3       ; R4 := {}
@@ -1226,9 +1226,9 @@
  18 [-]: LOADK     R7 K7        ; R7 := "/Lotus/Language/Menu/SortType"
  19 [-]: LOADBOOL  R8 0 0       ; R8 := false
  20 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
- 21 [-]: SETTABLE  R4 K0 R5     ; R4[0xb6a7c46e] := R5
+ 21 [-]: SETTABLE  R4 K0 R5     ; R4["Name"] := R5
  22 [-]: SETTABLE  R4 K4 K8     ; R4["SortId"] := "TYPE"
- 23 [-]: SETTABLE  R4 K6 R3     ; R4[0xf2deaf69] := R3
+ 23 [-]: SETTABLE  R4 K6 R3     ; R4["Attribute"] := R3
  24 [-]: NEWTABLE  R5 2 0       ; R5 := {}
  25 [-]: MOVE      R6 R2        ; R6 := R2
  26 [-]: MOVE      R7 R4        ; R7 := R4
@@ -2462,8 +2462,8 @@
  51 [-]: NEWTABLE  R6 0 2       ; R6 := {}
  52 [-]: SELF      R7 R1 K14    ; R8 := R1; R7 := R1[0x5ca33548]
  53 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 54 [-]: SETTABLE  R6 K13 R7    ; R6[0x6ca345bd] := R7
- 55 [-]: SETTABLE  R6 K15 R2    ; R6["transmission"] := R2
+ 54 [-]: SETTABLE  R6 K13 R7    ; R6["player"] := R7
+ 55 [-]: SETTABLE  R6 K15 R2    ; R6[0xbad4316f] := R2
  56 [-]: CALL      R5 2 0       ; R5,... := R5(R6)
  57 [-]: CALL      R3 0 1       ; R3(R4,...)
  58 [-]: GETGLOBAL R3 K1        ; R3 := 0x89326c93
@@ -2967,7 +2967,7 @@
  27 [-]: SETUPVAL  R1 U2        ; U82 := R2
  28 [-]: GETUPVAL  R1 U2        ; R1 := U2
  29 [-]: GETGLOBAL R2 K10       ; R2 := 0xffdde721
- 30 [-]: SETTABLE  R1 K9 R2     ; R1[0x42b04007] := R2
+ 30 [-]: SETTABLE  R1 K9 R2     ; R1[0xbd496aa1] := R2
  31 [-]: GETUPVAL  R1 U2        ; R1 := U2
  32 [-]: SETTABLE  R1 K11 K12   ; R1["mTypeLoc"] := "/Lotus/Language/Menu/Loadout_Emotes"
  33 [-]: GETUPVAL  R1 U2        ; R1 := U2

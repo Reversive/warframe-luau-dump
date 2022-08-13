@@ -640,10 +640,10 @@
   1 [-]: SETTABLE  R0 K0 R1     ; R0["mSelectElementCallback"] := R1
   2 [-]: SETTABLE  R0 K1 R2     ; R0["mRollOverElementCallback"] := R2
   3 [-]: SETTABLE  R0 K2 R3     ; R0["mRollOutElementCallback"] := R3
-  4 [-]: SETTABLE  R0 K3 R4     ; R0["mPressElementCallback"] := R4
-  5 [-]: SETTABLE  R0 K4 R5     ; R0["mDragOverElementCallback"] := R5
+  4 [-]: SETTABLE  R0 K3 R4     ; R0[0x33bdd652] := R4
+  5 [-]: SETTABLE  R0 K4 R5     ; R0[0x23d5322f] := R5
   6 [-]: SETTABLE  R0 K5 R6     ; R0["mDragOutElementCallback"] := R6
-  7 [-]: SETTABLE  R0 K6 R7     ; R0["mReleaseOutsideCallback"] := R7
+  7 [-]: SETTABLE  R0 K6 R7     ; R0[0xce225efa] := R7
   8 [-]: SELF      R8 R0 K7     ; R9 := R0; R8 := R0[0xc2a072c8]
   9 [-]: GETTABLE  R10 R0 K8    ; R10 := R0["mClipName"]
  10 [-]: CALL      R8 3 1       ; R8(R9,R10)

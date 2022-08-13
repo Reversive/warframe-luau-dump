@@ -162,7 +162,7 @@
  12 [-]: TEST      R5 0         ; if not R5 then PC := 17
  13 [-]: JMP       17           ; PC := 17
  14 [-]: LOADBOOL  R5 1 0       ; R5 := true
- 15 [-]: SETUPVAL  R5 U0        ; U82 := 
+ 15 [-]: SETUPVAL  R5 U0        ; U82 := R0
  16 [-]: LOADBOOL  R4 0 0       ; R4 := false
  17 [-]: SELF      R5 R0 K0     ; R6 := R0; R5 := R0[0x0e3d9621]
  18 [-]: CALL      R5 2 2       ; R5 := R5(R6)
@@ -389,7 +389,7 @@
  64 [-]: TEST      R14 0        ; if not R14 then PC := 69
  65 [-]: JMP       69           ; PC := 69
  66 [-]: LOADBOOL  R14 1 0      ; R14 := true
- 67 [-]: SETUPVAL  R14 U1       ; U82 := 
+ 67 [-]: SETUPVAL  R14 U1       ; U82 := R1
  68 [-]: JMP       70           ; PC := 70
  69 [-]: FORLOOP   R10 60       ; R10 += R12; if R10 <= R11 then begin PC := 60; R13 := R10 end
  70 [-]: GETUPVAL  R14 U2       ; R14 := U2

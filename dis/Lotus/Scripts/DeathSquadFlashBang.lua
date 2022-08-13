@@ -113,7 +113,7 @@
  84 [-]: EQ        0 R7 K24     ; if R7 ~= nil then PC := 97
  85 [-]: JMP       97           ; PC := 97
  86 [-]: GETGLOBAL R15 K25      ; R15 := 0x34291f5c
- 87 [-]: GETTABLE  R15 R15 K26  ; R82 := R15[0x35c16153]
+ 87 [-]: GETTABLE  R15 R15 K26  ; R15 := R15[0x35c16153]
  88 [-]: CALL      R15 1 2      ; R15 := R15()
  89 [-]: MOVE      R7 R15       ; R7 := R15
  90 [-]: SELF      R15 R7 K27   ; R16 := R7; R15 := R7[0xfc0e440a]
@@ -152,7 +152,7 @@
   4 [-]: SELF      R1 R0 K2     ; R2 := R0; R1 := R0[0x2b54251b]
   5 [-]: CALL      R1 2 2       ; R1 := R1(R2)
   6 [-]: GETUPVAL  R2 U0        ; R2 := U0
-  7 [-]: GETTABLE  R2 R2 K3     ; R82 := R2[0xb359ca91]
+  7 [-]: GETTABLE  R2 R2 K3     ; R2 := R2[0xb359ca91]
   8 [-]: MOVE      R3 R1        ; R3 := R1
   9 [-]: LOADK     R4 -1        ; R4 := -1.000000
  10 [-]: LOADK     R5 0         ; R5 := 0.000000

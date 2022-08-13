@@ -5010,7 +5010,7 @@
   4 [-]: SELF      R2 R2 K1     ; R3 := R2; R2 := R2[0x98f20ca5]
   5 [-]: CALL      R2 2 2       ; R2 := R2(R3)
   6 [-]: GETGLOBAL R3 K3        ; R3 := 0x502f30f9
-  7 [-]: SETTABLE  R2 K2 R3     ; R2[0xbe190284] := R3
+  7 [-]: SETTABLE  R2 K2 R3     ; R2["level"] := R3
   8 [-]: GETGLOBAL R3 K4        ; R3 := _T
   9 [-]: GETTABLE  R3 R3 K5     ; R3 := R3["DojoMgr"]
  10 [-]: GETTABLE  R3 R3 K6     ; R3 := R3["mDojo"]
@@ -8662,7 +8662,7 @@
  44 [-]: NEWTABLE  R5 0 2       ; R5 := {}
  45 [-]: SETTABLE  R5 K11 R0    ; R5["Transmission"] := R0
  46 [-]: GETUPVAL  R6 U2        ; R6 := U2
- 47 [-]: SETTABLE  R5 K12 R6    ; R5["Delay"] := R6
+ 47 [-]: SETTABLE  R5 K12 R6    ; R5[0xd2d3875a] := R6
  48 [-]: CALL      R3 3 1       ; R3(R4,R5)
  49 [-]: GETGLOBAL R3 K9        ; R3 := 0x33bdd652
  50 [-]: GETTABLE  R3 R3 K10    ; R3 := R3[0x23d5322f]
@@ -10205,9 +10205,9 @@
   1 [-]: RETURN    R0 1         ; return 
   2 [-]: NEWTABLE  R3 0 4       ; R3 := {}
   3 [-]: SETTABLE  R3 K0 K1     ; R3["broadcast"] := true
-  4 [-]: SETTABLE  R3 K2 R0     ; R3["p"] := R0
+  4 [-]: SETTABLE  R3 K2 R0     ; R3[0x7b998233] := R0
   5 [-]: SETTABLE  R3 K3 R1     ; R3["tag"] := R1
-  6 [-]: SETTABLE  R3 K4 R2     ; R3["value"] := R2
+  6 [-]: SETTABLE  R3 K4 R2     ; R3[0x25d99d89] := R2
   7 [-]: GETGLOBAL R4 K5        ; R4 := cjson
   8 [-]: GETTABLE  R4 R4 K6     ; R4 := R4[0xb139d7bc]
   9 [-]: MOVE      R5 R3        ; R5 := R3
@@ -11289,7 +11289,7 @@
 396 [-]: GETGLOBAL R24 K0       ; R24 := _T
 397 [-]: SELF      R25 R23 K70  ; R26 := R23; R25 := R23[0xd1586535]
 398 [-]: CALL      R25 2 2      ; R25 := R25(R26)
-399 [-]: SETTABLE  R24 K60 R25  ; R24[0x00000162] := R25
+399 [-]: SETTABLE  R24 K60 R25  ; R24["HubTeleportOldPos"] := R25
 400 [-]: GETGLOBAL R24 K0       ; R24 := _T
 401 [-]: SELF      R25 R23 K87  ; R26 := R23; R25 := R23[0xeea7f8c4]
 402 [-]: CALL      R25 2 2      ; R25 := R25(R26)
@@ -12936,4 +12936,4 @@
 2043 [-]: JMP       2126         ; PC := 2126
 2044 [-]: TEST      R5 1         ; if R5 then PC := 2050
 2045 [-]: JMP       2050         ; PC := 2050
-2046 [-]: GETUPVAL  R151 U4      ; R151 
+2046 [-]: GETUPVAL  R

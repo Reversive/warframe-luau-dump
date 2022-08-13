@@ -75,7 +75,7 @@
  66 [-]: LOADK     R36 K9       ; R36 := ""
  67 [-]: CALL      R34 3 2      ; R34 := R34(R35,R36)
  68 [-]: CONCAT    R33 R33 R34  ; R33 := R33 .. R34
- 69 [-]: SETTABLE  R32 K18 R33  ; R32[0xae91e43b] := R33
+ 69 [-]: SETTABLE  R32 K18 R33  ; R32["CalloutAlt"] := R33
  70 [-]: SETTABLE  R32 K34 K27  ; R32["InputField"] := true
  71 [-]: NEWTABLE  R33 0 7      ; R33 := {}
  72 [-]: SETTABLE  R33 K10 K35  ; R33["Name"] := "IncrButton"

@@ -157,7 +157,7 @@
 115 [-]: GETGLOBAL R15 K20      ; R15 := 0x34291f5c
 116 [-]: GETTABLE  R15 R15 K22  ; R15 := R15[0x35c16153]
 117 [-]: CALL      R15 1 2      ; R15 := R15()
-118 [-]: SETTABLE  R15 K23 R12  ; R15["baseAmount"] := R12
+118 [-]: SETTABLE  R15 K23 R12  ; R15[0xc163f229] := R12
 119 [-]: SELF      R16 R15 K24  ; R17 := R15; R16 := R15[0x1586e35e]
 120 [-]: MOVE      R18 R13      ; R18 := R13
 121 [-]: LOADK     R19 1        ; R19 := 1.000000
@@ -186,7 +186,7 @@
 144 [-]: CALL      R16 0 2      ; R16 := R16(R17,...)
 145 [-]: GETTABLE  R17 R16 K32  ; R17 := R16["heading"]
 146 [-]: ADD       R17 R17 K33  ; R17 := R17 + 80.000000
-147 [-]: SETTABLE  R16 K32 R17  ; R16["heading"] := R17
+147 [-]: SETTABLE  R16 K32 R17  ; R16[0x9307aa51] := R17
 148 [-]: SELF      R17 R3 K34   ; R18 := R3; R17 := R3[0x6cc17595]
 149 [-]: MOVE      R19 R16      ; R19 := R16
 150 [-]: CALL      R17 3 1      ; R17(R18,R19)

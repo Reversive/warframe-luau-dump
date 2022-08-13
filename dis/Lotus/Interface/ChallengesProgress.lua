@@ -1957,11 +1957,11 @@
  80 [-]: GETTABLE  R20 R16 K22  ; R20 := R16["Desc"]
  81 [-]: CONCAT    R18 R18 R20  ; R18 := R18 .. R19 .. R20
  82 [-]: CALL      R17 2 2      ; R17 := R17(R18)
- 83 [-]: SETTABLE  R16 K18 R17  ; R16[0x4ecbd3c5] := R17
+ 83 [-]: SETTABLE  R16 K18 R17  ; R16["SearchCache"] := R17
  84 [-]: GETTABLE  R17 R16 K24  ; R17 := R16["Progress"]
  85 [-]: GETTABLE  R18 R16 K25  ; R18 := R16["Required"]
  86 [-]: DIV       R17 R17 R18  ; R17 := R17 / R18
- 87 [-]: SETTABLE  R16 K23 R17  ; R16[0xba7dfcd2] := R17
+ 87 [-]: SETTABLE  R16 K23 R17  ; R16["Percent"] := R17
  88 [-]: GETTABLE  R17 R16 K26  ; R17 := R16["Completed"]
  89 [-]: TEST      R17 0        ; if not R17 then PC := 97
  90 [-]: JMP       97           ; PC := 97
@@ -2021,7 +2021,7 @@
 144 [-]: GETTABLE  R10 R6 K22   ; R10 := R6["Desc"]
 145 [-]: CONCAT    R8 R8 R10    ; R8 := R8 .. R9 .. R10
 146 [-]: CALL      R7 2 2       ; R7 := R7(R8)
-147 [-]: SETTABLE  R6 K18 R7    ; R6[0x4ecbd3c5] := R7
+147 [-]: SETTABLE  R6 K18 R7    ; R6["SearchCache"] := R7
 148 [-]: GETTABLE  R7 R6 K26    ; R7 := R6["Completed"]
 149 [-]: TEST      R7 0         ; if not R7 then PC := 157
 150 [-]: JMP       157          ; PC := 157
@@ -2034,14 +2034,14 @@
 157 [-]: NEWTABLE  R7 0 3       ; R7 := {}
 158 [-]: SETTABLE  R7 K38 K13   ; R7["CustomEntry"] := true
 159 [-]: GETTABLE  R8 R6 K20    ; R8 := R6["Name"]
-160 [-]: SETTABLE  R7 K20 R8    ; R7[0x2f5d21d2] := R8
+160 [-]: SETTABLE  R7 K20 R8    ; R7["Name"] := R8
 161 [-]: GETGLOBAL R8 K40       ; R8 := 0xae91e43b
 162 [-]: SELF      R8 R8 K41    ; R9 := R8; R8 := R8[0x42b04007]
 163 [-]: GETTABLE  R10 R6 K22   ; R10 := R6["Desc"]
 164 [-]: LOADBOOL  R11 0 0      ; R11 := false
 165 [-]: CALL      R8 4 2       ; R8 := R8(R9,R10,R11)
-166 [-]: SETTABLE  R7 K39 R8    ; R7["LocalizedDesc"] := R8
-167 [-]: SETTABLE  R6 K37 R7    ; R6[0x1142c7a8] := R7
+166 [-]: SETTABLE  R7 K39 R8    ; R7[0xea969abd] := R8
+167 [-]: SETTABLE  R6 K37 R7    ; R6[0x00000000] := R7
 168 [-]: GETUPVAL  R7 U0        ; R7 := U0
 169 [-]: SELF      R7 R7 K28    ; R8 := R7; R7 := R7[0xbad4316f]
 170 [-]: MOVE      R9 R6        ; R9 := R6
@@ -2201,7 +2201,7 @@
 324 [-]: SELF      R47 R43 K72  ; R48 := R43; R47 := R43[0xe223e2b1]
 325 [-]: CALL      R47 2 0      ; R47,... := R47(R48)
 326 [-]: CALL      R45 0 2      ; R45 := R45(R46,...)
-327 [-]: SETTABLE  R44 K20 R45  ; R44[0x2f5d21d2] := R45
+327 [-]: SETTABLE  R44 K20 R45  ; R44["Name"] := R45
 328 [-]: GETGLOBAL R45 K73      ; R45 := _T
 329 [-]: GETTABLE  R45 R45 K74  ; R45 := R45["EvoArmor_Icons"]
 330 [-]: EQ        1 R45 K35    ; if R45 == nil then PC := 345

@@ -3752,7 +3752,7 @@
   6 [-]: GETTABLE  R4 R4 K4     ; R4 := R4["KEY_TAG"]
   7 [-]: CONCAT    R3 R3 R4     ; R3 := R3 .. R4
   8 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  9 [-]: SETTABLE  R1 K1 R2     ; R1["RailJackNextMissionNode"] := R2
+  9 [-]: SETTABLE  R1 K1 R2     ; R1[0x864b7b71] := R2
  10 [-]: GETUPVAL  R1 U0        ; R1 := U0
  11 [-]: GETTABLE  R1 R1 K5     ; R1 := R1[0x5e35d4d6]
  12 [-]: CALL      R1 1 2       ; R1 := R1()

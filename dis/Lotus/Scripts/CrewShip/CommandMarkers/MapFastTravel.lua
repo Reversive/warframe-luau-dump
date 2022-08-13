@@ -47,7 +47,7 @@
   6 [-]: RETURN    R0 1         ; return 
   7 [-]: GETUPVAL  R1 U0        ; R1 := U0
   8 [-]: LOADNIL   R2 R2        ; R2 := nil
-  9 [-]: SETUPVAL  R2 U0        ; U82 := 
+  9 [-]: SETUPVAL  R2 U0        ; U82 := R0
  10 [-]: SELF      R2 R1 K1     ; R3 := R1; R2 := R1[0x5e651723]
  11 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  12 [-]: GETGLOBAL R3 K0        ; R3 := 0x7b998233
@@ -288,7 +288,7 @@
   1 [-]: TEST      R3 0         ; if not R3 then PC := 4
   2 [-]: JMP       4            ; PC := 4
   3 [-]: RETURN    R0 1         ; return 
-  4 [-]: SETUPVAL  R0 U0        ; U82 := 
+  4 [-]: SETUPVAL  R0 U0        ; U82 := R0
   5 [-]: SELF      R4 R2 K0     ; R5 := R2; R4 := R2[0xd5f7912b]
   6 [-]: GETGLOBAL R6 K1        ; R6 := 0x0469f296
   7 [-]: LOADK     R7 K2        ; R7 := "ClientStart"

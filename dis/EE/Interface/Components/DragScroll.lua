@@ -84,7 +84,7 @@
  52 [-]: SETTABLE  R7 K7 R8     ; R7["x"] := R8
  53 [-]: SUB       R8 R3 R5     ; R8 := R3 - R5
  54 [-]: SETTABLE  R7 K9 R8     ; R7["y"] := R8
- 55 [-]: SETTABLE  R6 K21 R7    ; R6[0x00000000] := R7
+ 55 [-]: SETTABLE  R6 K21 R7    ; R6["mScrollRange"] := R7
  56 [-]: SETTABLE  R6 K22 K23   ; R6["mDeselectRange"] := 10.000000
  57 [-]: CLOSURE   R7 0         ; R7 := closure(Function #1.1)
  58 [-]: GETUPVAL  R0 U0        ; R0 := U0

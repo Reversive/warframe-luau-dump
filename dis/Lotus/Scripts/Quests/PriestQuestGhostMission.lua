@@ -783,7 +783,7 @@
   6 [-]: GETGLOBAL R0 K1        ; R0 := 0x89326c93
   7 [-]: SELF      R0 R0 K2     ; R1 := R0; R0 := R0[0xfb64e76c]
   8 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  9 [-]: SETUPVAL  R0 U0        ; U82 := 
+  9 [-]: SETUPVAL  R0 U0        ; U82 := R0
  10 [-]: GETGLOBAL R0 K3        ; R0 := 0xcbd666e1
  11 [-]: LOADK     R1 0         ; R1 := 0.000000
  12 [-]: CALL      R0 2 1       ; R0(R1)
@@ -2350,7 +2350,7 @@
  22 [-]: SELF      R1 R1 K4     ; R2 := R1; R1 := R1[0x383d2e7d]
  23 [-]: CALL      R1 2 1       ; R1(R2)
  24 [-]: LOADNIL   R1 R1        ; R1 := nil
- 25 [-]: SETUPVAL  R1 U0        ; U82 := 
+ 25 [-]: SETUPVAL  R1 U0        ; U82 := R0
  26 [-]: GETGLOBAL R1 K1        ; R1 := _T
  27 [-]: SETTABLE  R1 K2 K5     ; R1["CapturingAvatar"] := nil
  28 [-]: SELF      R1 R0 K6     ; R2 := R0; R1 := R0[0x986d2ab8]
@@ -2379,7 +2379,7 @@
 
   1 [-]: SELF      R2 R0 K0     ; R3 := R0; R2 := R0[0xf4e253b6]
   2 [-]: CALL      R2 2 1       ; R2(R3)
-  3 [-]: SETUPVAL  R0 U0        ; U82 := 
+  3 [-]: SETUPVAL  R0 U0        ; U82 := R0
   4 [-]: GETGLOBAL R2 K1        ; R2 := _T
   5 [-]: SELF      R3 R0 K3     ; R4 := R0; R3 := R0[0x2b54251b]
   6 [-]: CALL      R3 2 2       ; R3 := R3(R4)
@@ -2514,7 +2514,7 @@
  94 [-]: LOADK     R8 0         ; R8 := 0.000000
  95 [-]: CALL      R6 3 1       ; R6(R7,R8)
  96 [-]: LOADNIL   R6 R6        ; R6 := nil
- 97 [-]: SETUPVAL  R6 U0        ; U82 := 
+ 97 [-]: SETUPVAL  R6 U0        ; U82 := R0
  98 [-]: RETURN    R0 1         ; return 
  99 [-]: GETGLOBAL R6 K8        ; R6 := 0x7b998233
 100 [-]: MOVE      R7 R2        ; R7 := R2

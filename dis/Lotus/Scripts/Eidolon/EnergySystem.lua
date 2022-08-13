@@ -209,7 +209,7 @@
  42 [-]: SELF      R2 R2 K10    ; R3 := R2; R2 := R2[0x6dd7aa66]
  43 [-]: GETGLOBAL R4 K1        ; R4 := 0x58075188
  44 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
- 45 [-]: SETUPVAL  R2 U0        ; U82 := 
+ 45 [-]: SETUPVAL  R2 U0        ; U82 := R0
  46 [-]: GETGLOBAL R2 K0        ; R2 := 0x7b998233
  47 [-]: GETUPVAL  R3 U0        ; R3 := U0
  48 [-]: CALL      R2 2 2       ; R2 := R2(R3)

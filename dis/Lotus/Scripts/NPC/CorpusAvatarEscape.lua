@@ -649,7 +649,7 @@
 
   1 [-]: SETTABLE  R0 K0 K1     ; R0["mEarlyDespawnTimer"] := 0.000000
   2 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  3 [-]: SETTABLE  R0 K2 R1     ; R0[0x7b998233] := R1
+  3 [-]: SETTABLE  R0 K2 R1     ; R0["RunDespawn"] := R1
   4 [-]: RETURN    R0 2         ; return R0
   5 [-]: RETURN    R0 1         ; return 
 

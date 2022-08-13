@@ -1941,7 +1941,7 @@
  77 [-]: ADD       R4 R10 R9    ; R4 := R10 + R9
  78 [-]: GETTABLE  R10 R4 K15   ; R10 := R4["y"]
  79 [-]: SUB       R10 R10 K17  ; R10 := R10 - 0.250000
- 80 [-]: SETTABLE  R4 K15 R10   ; R4[0xc69087f6] := R10
+ 80 [-]: SETTABLE  R4 K15 R10   ; R4["y"] := R10
  81 [-]: SELF      R10 R6 K10   ; R11 := R6; R10 := R6[0x5280b883]
  82 [-]: CALL      R10 2 2      ; R10 := R10(R11)
  83 [-]: MOVE      R5 R10       ; R5 := R10
@@ -8623,7 +8623,7 @@
  20 [-]: GETGLOBAL R2 K10       ; R2 := 0x52d433a4
  21 [-]: SETTABLE  R1 K8 R2     ; R1["abilityType"] := R2
  22 [-]: GETUPVAL  R2 U0        ; R2 := U0
- 23 [-]: SETTABLE  R1 K11 R2    ; R1["buffData"] := R2
+ 23 [-]: SETTABLE  R1 K11 R2    ; R1[0xbe190284] := R2
  24 [-]: SELF      R2 R0 K12    ; R3 := R0; R2 := R0[0x37e45fb5]
  25 [-]: MOVE      R4 R1        ; R4 := R1
  26 [-]: LOADBOOL  R5 1 0       ; R5 := true

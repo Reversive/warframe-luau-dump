@@ -961,8 +961,8 @@
   2 [-]: GETUPVAL  R7 U0        ; R7 := U0
   3 [-]: LEN       R7 R7        ; R7 := # R7
   4 [-]: ADD       R7 R7 K1     ; R7 := R7 + 1.000000
-  5 [-]: SETTABLE  R6 K0 R7     ; R6[0x25312c9b] := R7
-  6 [-]: SETTABLE  R6 K2 R0     ; R6[0xbd496aa1] := R0
+  5 [-]: SETTABLE  R6 K0 R7     ; R6[0xfc3fed1f] := R7
+  6 [-]: SETTABLE  R6 K2 R0     ; R6["mClipName"] := R0
   7 [-]: SETTABLE  R6 K3 R4     ; R6["Toggle"] := R4
   8 [-]: SETTABLE  R6 K4 R5     ; R6["IsActive"] := R5
   9 [-]: GETGLOBAL R7 K6        ; R7 := 0xae91e43b
@@ -3261,8 +3261,8 @@
 163 [-]: GETTABLE  R41 R28 R32  ; R41 := R28[R32]
 164 [-]: LOADBOOL  R42 0 0      ; R42 := false
 165 [-]: CALL      R39 4 2      ; R39 := R39(R40,R41,R42)
-166 [-]: SETTABLE  R38 K53 R39  ; R38[0x00000000] := R39
-167 [-]: SETTABLE  R38 K54 R33  ; R38[0xb15e6aca] := R33
+166 [-]: SETTABLE  R38 K53 R39  ; R38["ITEM"] := R39
+167 [-]: SETTABLE  R38 K54 R33  ; R38["NUM"] := R33
 168 [-]: CALL      R34 5 2      ; R34 := R34(R35,R36,R37,R38)
 169 [-]: MOVE      R2 R34       ; R2 := R34
 170 [-]: MOVE      R34 R1       ; R34 := R1
@@ -3323,8 +3323,8 @@
 225 [-]: LOADK     R48 K63      ; R48 := "/Lotus/Language/Labels/Module"
 226 [-]: LOADBOOL  R49 0 0      ; R49 := false
 227 [-]: CALL      R46 4 2      ; R46 := R46(R47,R48,R49)
-228 [-]: SETTABLE  R45 K53 R46  ; R45[0x00000000] := R46
-229 [-]: SETTABLE  R45 K54 R34  ; R45[0xb15e6aca] := R34
+228 [-]: SETTABLE  R45 K53 R46  ; R45["ITEM"] := R46
+229 [-]: SETTABLE  R45 K54 R34  ; R45["NUM"] := R34
 230 [-]: CALL      R41 5 2      ; R41 := R41(R42,R43,R44,R45)
 231 [-]: MOVE      R2 R41       ; R2 := R41
 232 [-]: MOVE      R41 R1       ; R41 := R1
@@ -3380,8 +3380,8 @@
 282 [-]: LOADK     R53 K67      ; R53 := "/Lotus/Language/Labels/ItemDurationDays"
 283 [-]: LOADBOOL  R54 0 0      ; R54 := false
 284 [-]: NEWTABLE  R55 0 2      ; R55 := {}
-285 [-]: SETTABLE  R55 K53 R50  ; R55[0x00000000] := R50
-286 [-]: SETTABLE  R55 K54 R43  ; R55[0xb15e6aca] := R43
+285 [-]: SETTABLE  R55 K53 R50  ; R55["ITEM"] := R50
+286 [-]: SETTABLE  R55 K54 R43  ; R55["NUM"] := R43
 287 [-]: CALL      R51 5 2      ; R51 := R51(R52,R53,R54,R55)
 288 [-]: MOVE      R2 R51       ; R2 := R51
 289 [-]: MOVE      R51 R1       ; R51 := R1
@@ -3424,8 +3424,8 @@
 326 [-]: LOADK     R61 K67      ; R61 := "/Lotus/Language/Labels/ItemDurationDays"
 327 [-]: LOADBOOL  R62 0 0      ; R62 := false
 328 [-]: NEWTABLE  R63 0 2      ; R63 := {}
-329 [-]: SETTABLE  R63 K53 R58  ; R63[0x00000000] := R58
-330 [-]: SETTABLE  R63 K54 R57  ; R63[0xb15e6aca] := R57
+329 [-]: SETTABLE  R63 K53 R58  ; R63["ITEM"] := R58
+330 [-]: SETTABLE  R63 K54 R57  ; R63["NUM"] := R57
 331 [-]: CALL      R59 5 2      ; R59 := R59(R60,R61,R62,R63)
 332 [-]: MOVE      R2 R59       ; R2 := R59
 333 [-]: MOVE      R59 R1       ; R59 := R1
@@ -4977,7 +4977,7 @@
  83 [-]: LOADBOOL  R7 0 0       ; R7 := false
  84 [-]: NEWTABLE  R8 0 1       ; R8 := {}
  85 [-]: GETUPVAL  R9 U3        ; R9 := U3
- 86 [-]: SETTABLE  R8 K30 R9    ; R8["PERCENT"] := R9
+ 86 [-]: SETTABLE  R8 K30 R9    ; R8[0x25312c9b] := R9
  87 [-]: CALL      R4 5 2       ; R4 := R4(R5,R6,R7,R8)
  88 [-]: MOVE      R5 R3        ; R5 := R3
  89 [-]: LOADK     R6 K31       ; R6 := "\r\n"
@@ -4989,7 +4989,7 @@
  95 [-]: MOVE      R8 R4        ; R8 := R4
  96 [-]: LOADK     R9 K33       ; R9 := "    "
  97 [-]: CONCAT    R5 R5 R9     ; R5 := R5 .. R6 .. R7 .. R8 .. R9
- 98 [-]: SETTABLE  R0 K26 R5    ; R0[0xae91e43b] := R5
+ 98 [-]: SETTABLE  R0 K26 R5    ; R0[0xf64b7262] := R5
  99 [-]: GETUPVAL  R5 U4        ; R5 := U4
 100 [-]: GETTABLE  R5 R5 K34    ; R5 := R5[0x817b1503]
 101 [-]: GETGLOBAL R6 K16       ; R6 := 0xae91e43b
@@ -7062,12 +7062,12 @@
 194 [-]: SETTABLE  R1 K76 R2    ; R1["mOnSelectedCallback"] := R2
 195 [-]: GETUPVAL  R1 U0        ; R1 := U0
 196 [-]: CLOSURE   R2 12        ; R2 := closure(Function #53.13)
-197 [-]: SETTABLE  R1 K77 R2    ; R1["RepositionButton"] := R2
+197 [-]: SETTABLE  R1 K77 R2    ; R1[0x70fc2d50] := R2
 198 [-]: GETUPVAL  R1 U0        ; R1 := U0
 199 [-]: CLOSURE   R2 13        ; R2 := closure(Function #53.14)
 200 [-]: GETUPVAL  R0 U12       ; R0 := U12
 201 [-]: GETUPVAL  R0 U0        ; R0 := U0
-202 [-]: SETTABLE  R1 K78 R2    ; R1["mClipCreatedCallback"] := R2
+202 [-]: SETTABLE  R1 K78 R2    ; R1[0x71e9ac81] := R2
 203 [-]: GETUPVAL  R1 U0        ; R1 := U0
 204 [-]: CLOSURE   R2 14        ; R2 := closure(Function #53.15)
 205 [-]: GETUPVAL  R0 U16       ; R0 := U16
@@ -7092,7 +7092,7 @@
 224 [-]: GETUPVAL  R0 U9        ; R0 := U9
 225 [-]: GETUPVAL  R0 U27       ; R0 := U27
 226 [-]: GETUPVAL  R0 U14       ; R0 := U14
-227 [-]: SETTABLE  R1 K80 R2    ; R1["AdditionalFilterFunction"] := R2
+227 [-]: SETTABLE  R1 K80 R2    ; R1[0x44aa79ac] := R2
 228 [-]: GETUPVAL  R1 U0        ; R1 := U0
 229 [-]: CLOSURE   R2 16        ; R2 := closure(Function #53.17)
 230 [-]: GETUPVAL  R0 U7        ; R0 := U7

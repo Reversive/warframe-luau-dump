@@ -2467,7 +2467,7 @@
   3 [-]: CALL      R7 2 2       ; R7 := R7(R8)
   4 [-]: TEST      R7 0         ; if not R7 then PC := 16
   5 [-]: JMP       16           ; PC := 16
-  6 [-]: SETTABLE  R0 K1 R5     ; R0[0x05b62db2] := R5
+  6 [-]: SETTABLE  R0 K1 R5     ; R0["mComponentOperationCallback"] := R5
   7 [-]: GETTABLE  R7 R0 K2     ; R7 := R0["mJsonProcLevelHelper"]
   8 [-]: SELF      R7 R7 K3     ; R8 := R7; R7 := R7[0x3a4c05a5]
   9 [-]: MOVE      R9 R1        ; R9 := R1
@@ -2561,7 +2561,7 @@
   3 [-]: CALL      R9 2 2       ; R9 := R9(R10)
   4 [-]: TEST      R9 0         ; if not R9 then PC := 18
   5 [-]: JMP       18           ; PC := 18
-  6 [-]: SETTABLE  R0 K1 R8     ; R0["mComponentOperationCallback"] := R8
+  6 [-]: SETTABLE  R0 K1 R8     ; R0[0x14459a1c] := R8
   7 [-]: GETTABLE  R9 R0 K2     ; R9 := R0["mJsonProcLevelHelper"]
   8 [-]: SELF      R9 R9 K3     ; R10 := R9; R9 := R9[0xfbac5251]
   9 [-]: MOVE      R11 R1       ; R11 := R1
@@ -2681,7 +2681,7 @@
   3 [-]: CALL      R4 2 2       ; R4 := R4(R5)
   4 [-]: TEST      R4 0         ; if not R4 then PC := 17
   5 [-]: JMP       17           ; PC := 17
-  6 [-]: SETTABLE  R0 K1 R3     ; R0["mComponentOperationCallback"] := R3
+  6 [-]: SETTABLE  R0 K1 R3     ; R0[0x43c3090e] := R3
   7 [-]: GETTABLE  R4 R0 K2     ; R4 := R0["mJsonProcLevelHelper"]
   8 [-]: SELF      R4 R4 K3     ; R5 := R4; R4 := R4[0xcbf579b6]
   9 [-]: MOVE      R6 R1        ; R6 := R1
@@ -3088,7 +3088,7 @@
   3 [-]: CALL      R4 2 2       ; R4 := R4(R5)
   4 [-]: TEST      R4 0         ; if not R4 then PC := 13
   5 [-]: JMP       13           ; PC := 13
-  6 [-]: SETTABLE  R0 K1 R3     ; R0[0x23d5322f] := R3
+  6 [-]: SETTABLE  R0 K1 R3     ; R0["mComponentOperationCallback"] := R3
   7 [-]: GETTABLE  R4 R0 K2     ; R4 := R0["mJsonProcLevelHelper"]
   8 [-]: SELF      R4 R4 K3     ; R5 := R4; R4 := R4[0xe9e57538]
   9 [-]: MOVE      R6 R1        ; R6 := R1

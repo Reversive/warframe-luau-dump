@@ -2511,7 +2511,7 @@
  71 [-]: LOADK     R5 K20       ; R5 := "/Lotus/Language/GeneticLab/ImprintCreatorNoBlanksError"
  72 [-]: LOADBOOL  R6 0 0       ; R6 := false
  73 [-]: NEWTABLE  R7 0 1       ; R7 := {}
- 74 [-]: SETTABLE  R7 K21 R1    ; R7["PRICE"] := R1
+ 74 [-]: SETTABLE  R7 K21 R1    ; R7[0xf64b7262] := R1
  75 [-]: CALL      R3 5 2       ; R3 := R3(R4,R5,R6,R7)
  76 [-]: LOADK     R4 K22       ; R4 := "ConfirmBuyBlankImprint"
  77 [-]: CALL      R2 3 1       ; R2(R3,R4)
@@ -3517,7 +3517,7 @@
  12 [-]: GETUPVAL  R5 U1        ; R5 := U1
  13 [-]: GETUPVAL  R6 U0        ; R6 := U0
  14 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 15 [-]: SETTABLE  R4 K4 R5     ; R4[0x41e2ae25] := R5
+ 15 [-]: SETTABLE  R4 K4 R5     ; R4["NAME"] := R5
  16 [-]: CALL      R0 5 2       ; R0 := R0(R1,R2,R3,R4)
  17 [-]: GETUPVAL  R1 U2        ; R1 := U2
  18 [-]: GETTABLE  R1 R1 K5     ; R1 := R1[0xdedfded7]

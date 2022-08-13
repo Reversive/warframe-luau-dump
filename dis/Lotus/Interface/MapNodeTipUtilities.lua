@@ -741,17 +741,17 @@
 305 [-]: CLOSURE   R17 0        ; R17 := closure(Function #2.1)
 306 [-]: MOVE      R0 R0        ; R0 := R0
 307 [-]: MOVE      R0 R9        ; R0 := R9
-308 [-]: SETTABLE  R16 K93 R17  ; R16[0x7c09c373] := R17
+308 [-]: SETTABLE  R16 K93 R17  ; R16["mClipCreatedCallback"] := R17
 309 [-]: CLOSURE   R17 1        ; R17 := closure(Function #2.2)
 310 [-]: GETUPVAL  R0 U2        ; R0 := U2
 311 [-]: MOVE      R0 R9        ; R0 := R9
-312 [-]: SETTABLE  R16 K94 R17  ; R16[0xbad4316f] := R17
+312 [-]: SETTABLE  R16 K94 R17  ; R16["GenerateDesc"] := R17
 313 [-]: CLOSURE   R17 2        ; R17 := closure(Function #2.3)
 314 [-]: GETUPVAL  R0 U2        ; R0 := U2
 315 [-]: MOVE      R0 R9        ; R0 := R9
 316 [-]: MOVE      R0 R0        ; R0 := R0
 317 [-]: MOVE      R0 R16       ; R0 := R16
-318 [-]: SETTABLE  R16 K95 R17  ; R16[0x71e9ac81] := R17
+318 [-]: SETTABLE  R16 K95 R17  ; R16["UpdateColors"] := R17
 319 [-]: CLOSURE   R17 3        ; R17 := closure(Function #2.4)
 320 [-]: MOVE      R0 R9        ; R0 := R9
 321 [-]: MOVE      R0 R0        ; R0 := R0
@@ -1305,7 +1305,7 @@
  10 [-]: GETTABLE  R6 R0 K8     ; R6 := R0["mMaxLevel"]
  11 [-]: SETTABLE  R5 K7 R6     ; R5["MAX_LEVEL"] := R6
  12 [-]: CALL      R1 5 2       ; R1 := R1(R2,R3,R4,R5)
- 13 [-]: SETTABLE  R0 K0 R1     ; R0["EnemyLabelString"] := R1
+ 13 [-]: SETTABLE  R0 K0 R1     ; R0[0x8a389d5f] := R1
  14 [-]: GETUPVAL  R1 U0        ; R1 := U0
  15 [-]: SELF      R1 R1 K9     ; R2 := R1; R1 := R1[0xe261aa96]
  16 [-]: GETTABLE  R3 R0 K10    ; R3 := R0["mClipName"]
@@ -2743,7 +2743,7 @@
 1093 [-]: LOADK     R73 1        ; R73 := 1.000000
 1094 [-]: FORPREP   R71 1119     ; R71 -= R73; PC := 1119
 1095 [-]: GETTABLE  R75 R18 R74  ; R75 := R18[R74]
-1096 [-]: SETTABLE  R75 K161 R1  ; R75[0xdef77cfa] := R1
+1096 [-]: SETTABLE  R75 K161 R1  ; R75["RadialSector"] := R1
 1097 [-]: GETTABLE  R75 R18 R74  ; R75 := R18[R74]
 1098 [-]: SETTABLE  R75 K162 R8  ; R75["BaseNodeName"] := R8
 1099 [-]: GETTABLE  R75 R18 R74  ; R75 := R18[R74]

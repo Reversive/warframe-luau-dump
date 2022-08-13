@@ -5258,11 +5258,11 @@
  17 [-]: LOADBOOL  R4 1 0       ; R4 := true
  18 [-]: SETTABLE  R3 K6 R4     ; R3["IsSelected"] := R4
  19 [-]: GETTABLE  R4 R0 K10    ; R4 := R0["Equipped"]
- 20 [-]: SETTABLE  R3 K9 R4     ; R3["Locked"] := R4
+ 20 [-]: SETTABLE  R3 K9 R4     ; R3[0x5b54ec72] := R4
  21 [-]: SETTABLE  R3 K11 K12   ; R3["LockedMsg"] := "/Lotus/Language/Menu/ItemSelection_Equipped"
  22 [-]: NEWTABLE  R4 0 1       ; R4 := {}
  23 [-]: SETTABLE  R4 K14 K15   ; R4["TagOverride"] := "/Lotus/Language/Menu/HowManyRequired"
- 24 [-]: SETTABLE  R3 K13 R4    ; R3["OwnedInfo"] := R4
+ 24 [-]: SETTABLE  R3 K13 R4    ; R3[0x09b6dacc] := R4
  25 [-]: TESTSET   R4 R1 0      ; if not R1 then PC := 35 else R4 := R1
  26 [-]: JMP       35           ; PC := 35
  27 [-]: GETTABLE  R4 R0 K9     ; R4 := R0["Locked"]

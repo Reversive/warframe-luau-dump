@@ -220,7 +220,7 @@
  84 [-]: GETGLOBAL R7 K17       ; R7 := 0x4243a037
  85 [-]: SUB       R7 R5 R7     ; R7 := R5 - R7
  86 [-]: GETGLOBAL R8 K21       ; R8 := 0x5bced4c4
- 87 [-]: GETTABLE  R8 R8 K22    ; R82 := R8[0xb62ecfe0]
+ 87 [-]: GETTABLE  R8 R8 K22    ; R8 := R8[0xb62ecfe0]
  88 [-]: LOADK     R9 1         ; R9 := 1.000000
  89 [-]: GETGLOBAL R10 K23      ; R10 := 0x86f495d5
  90 [-]: GETGLOBAL R11 K17      ; R11 := 0x4243a037

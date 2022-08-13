@@ -2095,7 +2095,7 @@
 176 [-]: SETTABLE  R17 K38 R4   ; R17["NameTag"] := R4
 177 [-]: SETTABLE  R17 K40 R2   ; R17["Enabled"] := R2
 178 [-]: GETUPVAL  R18 U8       ; R18 := U8
-179 [-]: SETTABLE  R17 K47 R18  ; R17[0x67bc869f] := R18
+179 [-]: SETTABLE  R17 K47 R18  ; R17["CallBack"] := R18
 180 [-]: CLOSURE   R18 1        ; R18 := closure(Function #11.2)
 181 [-]: MOVE      R0 R0        ; R0 := R0
 182 [-]: MOVE      R0 R1        ; R0 := R1
@@ -2116,7 +2116,7 @@
 197 [-]: SETTABLE  R18 K40 K43  ; R18["Enabled"] := true
 198 [-]: SETTABLE  R18 K48 K43  ; R18["TintLabelIcons"] := true
 199 [-]: GETUPVAL  R19 U9       ; R19 := U9
-200 [-]: SETTABLE  R18 K47 R19  ; R18[0x67bc869f] := R19
+200 [-]: SETTABLE  R18 K47 R19  ; R18["CallBack"] := R19
 201 [-]: CLOSURE   R19 2        ; R19 := closure(Function #11.3)
 202 [-]: MOVE      R0 R0        ; R0 := R0
 203 [-]: MOVE      R0 R1        ; R0 := R1
@@ -2363,7 +2363,7 @@
 444 [-]: SETTABLE  R28 K40 K43  ; R28["Enabled"] := true
 445 [-]: SETTABLE  R28 K48 K43  ; R28["TintLabelIcons"] := true
 446 [-]: GETUPVAL  R29 U14      ; R29 := U14
-447 [-]: SETTABLE  R28 K47 R29  ; R28[0x67bc869f] := R29
+447 [-]: SETTABLE  R28 K47 R29  ; R28["CallBack"] := R29
 448 [-]: CLOSURE   R29 12       ; R29 := closure(Function #11.13)
 449 [-]: MOVE      R0 R0        ; R0 := R0
 450 [-]: MOVE      R0 R1        ; R0 := R1
@@ -5718,7 +5718,7 @@
 330 [-]: CALL      R22 4 2      ; R22 := R22(R23,R24,R25)
 331 [-]: SETTABLE  R21 K107 R22 ; R21["ToggleVal"] := R22
 332 [-]: GETUPVAL  R22 U13      ; R22 := U13
-333 [-]: SETTABLE  R21 K108 R22 ; R21["CallBack"] := R22
+333 [-]: SETTABLE  R21 K108 R22 ; R21[0xae91e43b] := R22
 334 [-]: SETTABLE  R21 K96 K29  ; R21["HasBottomLine"] := true
 335 [-]: NEWTABLE  R22 0 6      ; R22 := {}
 336 [-]: SETTABLE  R22 K20 K109 ; R22["TopTitle"] := "/Lotus/Language/Menu/TennoCustomization_FacialMarking"
@@ -5912,7 +5912,7 @@
 524 [-]: SETTABLE  R32 K133 K93 ; R32["Slot"] := 1.000000
 525 [-]: SETTABLE  R32 K134 K29 ; R32["TintLabelIcons"] := true
 526 [-]: GETUPVAL  R33 U17      ; R33 := U17
-527 [-]: SETTABLE  R32 K108 R33 ; R32["CallBack"] := R33
+527 [-]: SETTABLE  R32 K108 R33 ; R32[0xae91e43b] := R33
 528 [-]: NEWTABLE  R33 0 7      ; R33 := {}
 529 [-]: GETUPVAL  R34 U0       ; R34 := U0
 530 [-]: GETTABLE  R34 R34 K1   ; R34 := R34["CustomizationList"]
@@ -5928,7 +5928,7 @@
 540 [-]: SETTABLE  R33 K133 K95 ; R33["Slot"] := 2.000000
 541 [-]: SETTABLE  R33 K134 K29 ; R33["TintLabelIcons"] := true
 542 [-]: GETUPVAL  R34 U17      ; R34 := U17
-543 [-]: SETTABLE  R33 K108 R34 ; R33["CallBack"] := R34
+543 [-]: SETTABLE  R33 K108 R34 ; R33[0xae91e43b] := R34
 544 [-]: SETTABLE  R33 K96 K29  ; R33["HasBottomLine"] := true
 545 [-]: NEWTABLE  R34 0 5      ; R34 := {}
 546 [-]: SETTABLE  R34 K20 K135 ; R34["TopTitle"] := "/Lotus/Language/Menu/TennoCustomization_FacialAccessory"
@@ -6070,7 +6070,7 @@
 682 [-]: SETTABLE  R40 K106 K93 ; R40["BitIndex"] := 1.000000
 683 [-]: SETTABLE  R40 K107 R3  ; R40["ToggleVal"] := R3
 684 [-]: GETUPVAL  R41 U13      ; R41 := U13
-685 [-]: SETTABLE  R40 K108 R41 ; R40["CallBack"] := R41
+685 [-]: SETTABLE  R40 K108 R41 ; R40[0xae91e43b] := R41
 686 [-]: NEWTABLE  R41 0 5      ; R41 := {}
 687 [-]: GETUPVAL  R42 U0       ; R42 := U0
 688 [-]: GETTABLE  R42 R42 K1   ; R42 := R42["CustomizationList"]
@@ -6500,7 +6500,7 @@
 1112 [-]: SETTABLE  R60 K18 R61  ; R60["Categories"] := R61
 1113 [-]: SETTABLE  R60 K22 K185 ; R60["NameTag"] := "/Lotus/Language/Menu/Cosmetics_ResetProperties"
 1114 [-]: GETUPVAL  R61 U30      ; R61 := U30
-1115 [-]: SETTABLE  R60 K108 R61 ; R60["CallBack"] := R61
+1115 [-]: SETTABLE  R60 K108 R61 ; R60[0xae91e43b] := R61
 1116 [-]: SETTABLE  R60 K43 K172 ; R60["ColorSlot"] := 20.000000
 1117 [-]: SETTABLE  R60 K186 K29 ; R60["IsDefault"] := true
 1118 [-]: SETTABLE  R60 K187 K29 ; R60["HasMiddleLine"] := true
@@ -6683,7 +6683,7 @@
 1295 [-]: GETUPVAL  R24 U5       ; R24 := U5
 1296 [-]: GETTABLE  R24 R24 K205 ; R24 := R24["mItemId"]
 1297 [-]: GETTABLE  R24 R24 K206 ; R24 := R24["mId"]
-1298 [-]: SETTABLE  R23 K193 R24 ; R23["UID"] := R24
+1298 [-]: SETTABLE  R23 K193 R24 ; R23[0xae91e43b] := R24
 1299 [-]: GETTABLE  R23 R21 K24  ; R23 := R21["ItemSelectionData"]
 1300 [-]: GETUPVAL  R24 U37      ; R24 := U37
 1301 [-]: GETUPVAL  R25 U5       ; R25 := U5

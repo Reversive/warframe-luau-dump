@@ -235,7 +235,7 @@
  16 [-]: MOVE      R6 R0        ; R6 := R0
  17 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
  18 [-]: GETTABLE  R3 R3 R4     ; R3 := R3[R4]
- 19 [-]: SETTABLE  R2 K2 R3     ; R2["radius"] := R3
+ 19 [-]: SETTABLE  R2 K2 R3     ; R2[0x5bced4c4] := R3
  20 [-]: GETUPVAL  R2 U0        ; R2 := U0
  21 [-]: GETUPVAL  R3 U0        ; R3 := U0
  22 [-]: GETTABLE  R3 R3 K5     ; R3 := R3["damagePct"]
@@ -247,7 +247,7 @@
  28 [-]: MOVE      R6 R0        ; R6 := R0
  29 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
  30 [-]: GETTABLE  R3 R3 R4     ; R3 := R3[R4]
- 31 [-]: SETTABLE  R2 K5 R3     ; R2[0x00000000] := R3
+ 31 [-]: SETTABLE  R2 K5 R3     ; R2["damagePct"] := R3
  32 [-]: GETUPVAL  R2 U0        ; R2 := U0
  33 [-]: GETUPVAL  R3 U0        ; R3 := U0
  34 [-]: GETTABLE  R3 R3 K6     ; R3 := R3["duration"]
@@ -360,7 +360,7 @@
  34 [-]: SELF      R8 R8 K8     ; R9 := R8; R8 := R8[0xed4e0128]
  35 [-]: CALL      R8 2 2       ; R8 := R8(R9)
  36 [-]: GETTABLE  R7 R7 R8     ; R7 := R7[R8]
- 37 [-]: SETUPVAL  R7 U0        ; U82 := 
+ 37 [-]: SETUPVAL  R7 U0        ; U82 := R0
  38 [-]: GETUPVAL  R7 U0        ; R7 := U0
  39 [-]: EQ        0 R7 K9      ; if R7 ~= nil then PC := 42
  40 [-]: JMP       42           ; PC := 42
@@ -489,7 +489,7 @@
   3 [-]: SELF      R8 R5 K0     ; R9 := R5; R8 := R5[0xed4e0128]
   4 [-]: CALL      R8 2 2       ; R8 := R8(R9)
   5 [-]: GETTABLE  R7 R7 R8     ; R7 := R7[R8]
-  6 [-]: SETUPVAL  R7 U0        ; U82 := 
+  6 [-]: SETUPVAL  R7 U0        ; U82 := R0
   7 [-]: GETUPVAL  R7 U0        ; R7 := U0
   8 [-]: EQ        1 R7 K1      ; if R7 == nil then PC := 33
   9 [-]: JMP       33           ; PC := 33
@@ -766,7 +766,7 @@
  69 [-]: DIV       R15 R12 R5   ; R15 := R12 / R5
  70 [-]: SUB       R15 R15 K21  ; R15 := R15 - 1.000000
  71 [-]: CALL      R13 3 2      ; R13 := R13(R14,R15)
- 72 [-]: SETUPVAL  R13 U0       ; U82 := 
+ 72 [-]: SETUPVAL  R13 U0       ; U82 := R0
  73 [-]: JMP       142          ; PC := 142
  74 [-]: LE        0 K22 R8     ; if 0.250000 > R8 then PC := 135
  75 [-]: JMP       135          ; PC := 135
@@ -779,7 +779,7 @@
  82 [-]: DIV       R16 R16 R9   ; R16 := R16 / R9
  83 [-]: ADD       R15 R15 R16  ; R15 := R15 + R16
  84 [-]: CALL      R13 3 2      ; R13 := R13(R14,R15)
- 85 [-]: SETUPVAL  R13 U0       ; U82 := 
+ 85 [-]: SETUPVAL  R13 U0       ; U82 := R0
  86 [-]: GETGLOBAL R13 K24      ; R13 := 0x9bafffe3
  87 [-]: LOADK     R14 1        ; R14 := 1.000000
  88 [-]: GETGLOBAL R15 K25      ; R15 := 0x0b6f9c0c
@@ -799,7 +799,7 @@
 102 [-]: JMP       106          ; PC := 106
 103 [-]: MOVE      R7 R12       ; R7 := R12
 104 [-]: DIV       R14 R7 R5    ; R14 := R7 / R5
-105 [-]: SETUPVAL  R14 U0       ; U82 := 
+105 [-]: SETUPVAL  R14 U0       ; U82 := R0
 106 [-]: TEST      R10 1        ; if R10 then PC := 119
 107 [-]: JMP       119          ; PC := 119
 108 [-]: SELF      R14 R2 K28   ; R15 := R2; R14 := R2[0x3cc932f9]
@@ -908,7 +908,7 @@
  29 [-]: SELF      R6 R6 K9     ; R7 := R6; R6 := R6[0xed4e0128]
  30 [-]: CALL      R6 2 2       ; R6 := R6(R7)
  31 [-]: GETTABLE  R5 R5 R6     ; R5 := R5[R6]
- 32 [-]: SETUPVAL  R5 U1        ; U82 := 
+ 32 [-]: SETUPVAL  R5 U1        ; U82 := R1
  33 [-]: GETGLOBAL R5 K10       ; R5 := 0x0f3d8ae5
  34 [-]: TEST      R5 0         ; if not R5 then PC := 43
  35 [-]: JMP       43           ; PC := 43
@@ -954,7 +954,7 @@
  75 [-]: LOADBOOL  R5 1 0       ; R5 := true
  76 [-]: RETURN    R5 2         ; return R5
  77 [-]: LOADK     R5 0         ; R5 := 0.000000
- 78 [-]: SETUPVAL  R5 U3        ; U82 := 
+ 78 [-]: SETUPVAL  R5 U3        ; U82 := R3
  79 [-]: GETGLOBAL R5 K22       ; R5 := 0x72db50a5
  80 [-]: TEST      R5 0         ; if not R5 then PC := 176
  81 [-]: JMP       176          ; PC := 176
@@ -1340,7 +1340,7 @@
  13 [-]: SELF      R10 R10 K4   ; R11 := R10; R10 := R10[0xed4e0128]
  14 [-]: CALL      R10 2 2      ; R10 := R10(R11)
  15 [-]: GETTABLE  R9 R9 R10    ; R9 := R9[R10]
- 16 [-]: SETUPVAL  R9 U1        ; U82 := 
+ 16 [-]: SETUPVAL  R9 U1        ; U82 := R1
  17 [-]: GETUPVAL  R9 U1        ; R9 := U1
  18 [-]: EQ        1 R9 K5      ; if R9 == nil then PC := 26
  19 [-]: JMP       26           ; PC := 26

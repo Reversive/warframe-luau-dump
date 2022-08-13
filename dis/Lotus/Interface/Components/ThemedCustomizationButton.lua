@@ -1802,7 +1802,7 @@
  10 [-]: GETUPVAL  R5 U0        ; R5 := U0
  11 [-]: GETTABLE  R5 R5 R4     ; R5 := R5[R4]
  12 [-]: GETTABLE  R6 R5 K4     ; R6 := R5["mInnerColor"]
- 13 [-]: SETTABLE  R5 K3 R6     ; R5[0xee6d3b33] := R6
+ 13 [-]: SETTABLE  R5 K3 R6     ; R5["mPreviousColor"] := R6
  14 [-]: GETUPVAL  R6 U1        ; R6 := U1
  15 [-]: SELF      R6 R6 K5     ; R7 := R6; R6 := R6[0xc4c92c09]
  16 [-]: MOVE      R8 R5        ; R8 := R5
@@ -2836,25 +2836,25 @@
  68 [-]: SETTABLE  R3 K29 K30   ; R3["mEdgeAlpha"] := 40.000000
  69 [-]: SETTABLE  R3 K31 K32   ; R3["mFocusedEdgeAlpha"] := 80.000000
  70 [-]: GETTABLE  R8 R0 K26    ; R8 := R0["mDisableSlider"]
- 71 [-]: SETTABLE  R3 K33 R8    ; R3["mHideArrows"] := R8
+ 71 [-]: SETTABLE  R3 K33 R8    ; R3[0x9c683672] := R8
  72 [-]: SETTABLE  R3 K34 K36   ; R3["mUnfocusedEdgeColor"] := 1.000000
  73 [-]: GETUPVAL  R8 U3        ; R8 := U3
  74 [-]: GETGLOBAL R9 K38       ; R9 := IconTypes
  75 [-]: GETTABLE  R9 R9 K39    ; R9 := R9["ARROW"]
  76 [-]: GETTABLE  R8 R8 R9     ; R8 := R8[R9]
- 77 [-]: SETTABLE  R3 K37 R8    ; R3["mArrowIcon"] := R8
+ 77 [-]: SETTABLE  R3 K37 R8    ; R3[0x46610c50] := R8
  78 [-]: GETTABLE  R8 R3 K41    ; R8 := R3["TrySetFocus"]
- 79 [-]: SETTABLE  R3 K40 R8    ; R3["ComponentTrySetFocus"] := R8
+ 79 [-]: SETTABLE  R3 K40 R8    ; R3[0x9307aa51] := R8
  80 [-]: CLOSURE   R8 0         ; R8 := closure(Function #1.28.1)
  81 [-]: MOVE      R0 R3        ; R0 := R3
  82 [-]: MOVE      R0 R0        ; R0 := R0
  83 [-]: SETTABLE  R3 K41 R8    ; R3["TrySetFocus"] := R8
  84 [-]: GETTABLE  R8 R3 K43    ; R8 := R3["TryPressed"]
- 85 [-]: SETTABLE  R3 K42 R8    ; R3["ComponentTryPressed"] := R8
+ 85 [-]: SETTABLE  R3 K42 R8    ; R3[0x71e9ac81] := R8
  86 [-]: CLOSURE   R8 1         ; R8 := closure(Function #1.28.2)
  87 [-]: MOVE      R0 R3        ; R0 := R3
  88 [-]: MOVE      R0 R0        ; R0 := R0
- 89 [-]: SETTABLE  R3 K43 R8    ; R3["TryPressed"] := R8
+ 89 [-]: SETTABLE  R3 K43 R8    ; R3[0xc0a3774b] := R8
  90 [-]: GETTABLE  R8 R3 K45    ; R8 := R3["InputFieldTrySetFocus"]
  91 [-]: SETTABLE  R3 K44 R8    ; R3["ComponentInputFieldTrySetFocus"] := R8
  92 [-]: CLOSURE   R8 2         ; R8 := closure(Function #1.28.3)
@@ -3068,7 +3068,7 @@
  50 [-]: CALL      R7 5 1       ; R7(R8,R9,R10,R11)
  51 [-]: SETTABLE  R3 K21 R5    ; R3["mHeight"] := R5
  52 [-]: SETTABLE  R3 K22 R6    ; R3["mMinSize"] := R6
- 53 [-]: SETTABLE  R3 K23 R6    ; R3[0xae6791ba] := R6
+ 53 [-]: SETTABLE  R3 K23 R6    ; R3["mMaxSize"] := R6
  54 [-]: SETTABLE  R3 K24 K25   ; R3["mEdgeAlpha"] := 40.000000
  55 [-]: SETTABLE  R3 K26 K27   ; R3["mFocusedEdgeAlpha"] := 80.000000
  56 [-]: SETTABLE  R3 K28 K30   ; R3["mUnfocusedEdgeColor"] := 1.000000
@@ -3094,7 +3094,7 @@
  76 [-]: MOVE      R0 R0        ; R0 := R0
  77 [-]: SETTABLE  R3 K39 R7    ; R3["TrySetFocus"] := R7
  78 [-]: GETTABLE  R7 R3 K41    ; R7 := R3["TryPressed"]
- 79 [-]: SETTABLE  R3 K40 R7    ; R3[0x6c97a788] := R7
+ 79 [-]: SETTABLE  R3 K40 R7    ; R3["ComponentTryPressed"] := R7
  80 [-]: CLOSURE   R7 1         ; R7 := closure(Function #1.29.2)
  81 [-]: MOVE      R0 R3        ; R0 := R3
  82 [-]: MOVE      R0 R0        ; R0 := R0

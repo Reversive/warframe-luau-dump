@@ -162,7 +162,7 @@
 
   1 [-]: GETGLOBAL R2 K1        ; R2 := _T
   2 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["UIInputEnabled"]
-  3 [-]: SETTABLE  R0 K0 R2     ; R0["mWasUIInputEnabled"] := R2
+  3 [-]: SETTABLE  R0 K0 R2     ; R0[0x00000000] := R2
   4 [-]: GETTABLE  R2 R0 K0     ; R2 := R0["mWasUIInputEnabled"]
   5 [-]: TEST      R2 1         ; if R2 then PC := 10
   6 [-]: JMP       10           ; PC := 10

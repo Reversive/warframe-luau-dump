@@ -1155,7 +1155,7 @@
  35 [-]: GETUPVAL  R10 U4       ; R10 := U4
  36 [-]: UNM       R10 R10      ; R10 := ^ R10
  37 [-]: MUL       R9 R9 R10    ; R9 := R9 * R10
- 38 [-]: SETTABLE  R8 K13 R9    ; R8["Angle"] := R9
+ 38 [-]: SETTABLE  R8 K13 R9    ; R8[0x5d10207d] := R9
  39 [-]: SETTABLE  R8 K14 K15   ; R8["Life"] := 0.000000
  40 [-]: SETTABLE  R8 K16 K17   ; R8["TravelTime"] := 1.200000
  41 [-]: GETUPVAL  R9 U1        ; R9 := U1
@@ -1676,7 +1676,7 @@
  47 [-]: MOVE      R10 R0       ; R10 := R0
  48 [-]: LOADK     R11 K15      ; R11 := ".Mod"
  49 [-]: CONCAT    R10 R10 R11  ; R10 := R10 .. R11
- 50 [-]: SETTABLE  R9 K14 R10   ; R9["mClipName"] := R10
+ 50 [-]: SETTABLE  R9 K14 R10   ; R9[0x0000009f] := R10
  51 [-]: SETTABLE  R9 K16 R7    ; R9["Card"] := R7
  52 [-]: CALL      R8 2 1       ; R8(R9)
  53 [-]: GETUPVAL  R8 U3        ; R8 := U3

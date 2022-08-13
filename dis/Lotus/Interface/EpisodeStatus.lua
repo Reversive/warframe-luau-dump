@@ -1317,7 +1317,7 @@
   9 [-]: CALL      R1 2 1       ; R1(R2)
  10 [-]: GETGLOBAL R1 K4        ; R1 := _T
  11 [-]: GETUPVAL  R2 U0        ; R2 := U0
- 12 [-]: SETTABLE  R1 K5 R2     ; R1[0xe4162eed] := R2
+ 12 [-]: SETTABLE  R1 K5 R2     ; R1["MissionTutorial_MissionType"] := R2
  13 [-]: GETGLOBAL R1 K6        ; R1 := 0xae91e43b
  14 [-]: SELF      R1 R1 K7     ; R2 := R1; R1 := R1[0x1fd6abd0]
  15 [-]: GETGLOBAL R3 K8        ; R3 := 0xd6ff7d0c

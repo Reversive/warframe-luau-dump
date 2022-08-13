@@ -2727,14 +2727,14 @@
 ; Max Stack Size:  4
 
   1 [-]: NEWTABLE  R1 0 6       ; R1 := {}
-  2 [-]: SETTABLE  R1 K0 R0     ; R1[0x7b998233] := R0
+  2 [-]: SETTABLE  R1 K0 R0     ; R1["OnStateChangedCallback"] := R0
   3 [-]: GETGLOBAL R2 K2        ; R2 := 0x0469f296
   4 [-]: LOADK     R3 K3        ; R3 := "ModeState"
   5 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  6 [-]: SETTABLE  R1 K1 R2     ; R1[0xc8802016] := R2
+  6 [-]: SETTABLE  R1 K1 R2     ; R1["NV_MODE_STATE"] := R2
   7 [-]: SETTABLE  R1 K4 K5     ; R1["mAllowStateRestart"] := false
   8 [-]: CLOSURE   R2 0         ; R2 := closure(Function #53.1)
-  9 [-]: SETTABLE  R1 K6 R2     ; R1[0x8eb2112d] := R2
+  9 [-]: SETTABLE  R1 K6 R2     ; R1["GetHumanReadableState"] := R2
  10 [-]: CLOSURE   R2 1         ; R2 := closure(Function #53.2)
  11 [-]: SETTABLE  R1 K7 R2     ; R1["SetModeState"] := R2
  12 [-]: CLOSURE   R2 2         ; R2 := closure(Function #53.3)

@@ -269,7 +269,7 @@
  93 [-]: JMP       97           ; PC := 97
  94 [-]: GETGLOBAL R9 K21       ; R9 := _T
  95 [-]: GETGLOBAL R10 K23      ; R10 := 0x55bc5390
- 96 [-]: SETTABLE  R9 K22 R10   ; R9[0xc163f229] := R10
+ 96 [-]: SETTABLE  R9 K22 R10   ; R9[0x67652851] := R10
  97 [-]: GETGLOBAL R9 K21       ; R9 := _T
  98 [-]: GETGLOBAL R10 K24      ; R10 := 0x5bced4c4
  99 [-]: GETTABLE  R10 R10 K25  ; R10 := R10[0xb62ecfe0]
@@ -278,7 +278,7 @@
 102 [-]: GETTABLE  R12 R12 K22  ; R12 := R12["ParasiteHealthOnRevive"]
 103 [-]: SUB       R12 R12 K27  ; R12 := R12 - 0.050000
 104 [-]: CALL      R10 3 2      ; R10 := R10(R11,R12)
-105 [-]: SETTABLE  R9 K22 R10   ; R9[0xc163f229] := R10
+105 [-]: SETTABLE  R9 K22 R10   ; R9[0x67652851] := R10
 106 [-]: SELF      R9 R0 K17    ; R10 := R0; R9 := R0[0x014db014]
 107 [-]: SELF      R11 R0 K28   ; R12 := R0; R11 := R0[0xb40c191a]
 108 [-]: CALL      R11 2 2      ; R11 := R11(R12)

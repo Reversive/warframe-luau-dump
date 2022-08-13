@@ -622,7 +622,7 @@
 142 [-]: CALL      R5 6 2       ; R5 := R5(R6,R7,R8,R9,R10)
 143 [-]: SETUPVAL  R5 U0        ; U82 := R0
 144 [-]: GETUPVAL  R5 U0        ; R5 := U0
-145 [-]: SETTABLE  R5 K25 R3    ; R5["mInitialX"] := R3
+145 [-]: SETTABLE  R5 K25 R3    ; R5[0xed1ab921] := R3
 146 [-]: GETUPVAL  R5 U0        ; R5 := U0
 147 [-]: SETTABLE  R5 K26 R4    ; R5["mInitialY"] := R4
 148 [-]: GETUPVAL  R5 U3        ; R5 := U3
@@ -694,14 +694,14 @@
 214 [-]: CLOSURE   R6 3         ; R6 := closure(Function #14.4)
 215 [-]: GETUPVAL  R0 U8        ; R0 := U8
 216 [-]: GETUPVAL  R0 U13       ; R0 := U13
-217 [-]: SETTABLE  R5 K44 R6    ; R5[0xae91e43b] := R6
+217 [-]: SETTABLE  R5 K44 R6    ; R5["mOnSelectedCallback"] := R6
 218 [-]: GETUPVAL  R5 U0        ; R5 := U0
 219 [-]: CLOSURE   R6 4         ; R6 := closure(Function #14.5)
 220 [-]: GETUPVAL  R0 U9        ; R0 := U9
 221 [-]: GETUPVAL  R0 U0        ; R0 := U0
 222 [-]: GETUPVAL  R0 U10       ; R0 := U10
 223 [-]: GETUPVAL  R0 U11       ; R0 := U11
-224 [-]: SETTABLE  R5 K45 R6    ; R5[0xe4162eed] := R6
+224 [-]: SETTABLE  R5 K45 R6    ; R5["mElementDrawCallback"] := R6
 225 [-]: RETURN    R0 1         ; return 
 
 

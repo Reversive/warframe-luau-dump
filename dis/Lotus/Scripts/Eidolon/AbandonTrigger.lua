@@ -49,13 +49,13 @@
 
   1 [-]: SELF      R1 R0 K0     ; R2 := R0; R1 := R0[0x2b54251b]
   2 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  3 [-]: SETUPVAL  R1 U0        ; U82 := 
+  3 [-]: SETUPVAL  R1 U0        ; U82 := R0
   4 [-]: GETUPVAL  R1 U0        ; R1 := U0
   5 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1[0x4c976eda]
   6 [-]: CALL      R1 2 2       ; R1 := R1(R2)
   7 [-]: SELF      R2 R1 K2     ; R3 := R1; R2 := R1[0xe4c355e2]
   8 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  9 [-]: SETUPVAL  R2 U1        ; U82 := 
+  9 [-]: SETUPVAL  R2 U1        ; U82 := R1
  10 [-]: SELF      R2 R0 K3     ; R3 := R0; R2 := R0[0x5004be24]
  11 [-]: GETUPVAL  R4 U0        ; R4 := U0
  12 [-]: SELF      R4 R4 K4     ; R5 := R4; R4 := R4[0x7c97b143]

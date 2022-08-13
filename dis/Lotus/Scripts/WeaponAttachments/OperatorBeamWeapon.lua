@@ -63,7 +63,7 @@
  34 [-]: LOADK     R9 -180      ; R9 := -180.000000
  35 [-]: LOADK     R10 180      ; R10 := 180.000000
  36 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
- 37 [-]: SETTABLE  R7 K12 R8    ; R7["bank"] := R8
+ 37 [-]: SETTABLE  R7 K12 R8    ; R7[0x2a217d6e] := R8
  38 [-]: LOADNIL   R8 R8        ; R8 := nil
  39 [-]: GETGLOBAL R9 K14       ; R9 := 0xae2294fa
  40 [-]: SUB       R10 R6 R5    ; R10 := R6 - R5

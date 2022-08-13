@@ -625,7 +625,7 @@
  77 [-]: SELF      R16 R1 K16   ; R17 := R1; R16 := R1[0x808b79e6]
  78 [-]: MOVE      R18 R14      ; R18 := R14
  79 [-]: CALL      R16 3 2      ; R16 := R16(R17,R18)
- 80 [-]: SETTABLE  R15 K17 R16  ; R15["faction"] := R16
+ 80 [-]: SETTABLE  R15 K17 R16  ; R15[0x66905cb0] := R16
  81 [-]: SELF      R15 R1 K18   ; R16 := R1; R15 := R1[0xe7c53f4e]
  82 [-]: GETGLOBAL R17 K6       ; R17 := _T
  83 [-]: GETTABLE  R17 R17 K17  ; R17 := R17["faction"]

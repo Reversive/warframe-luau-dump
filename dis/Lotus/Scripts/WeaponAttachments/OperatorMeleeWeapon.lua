@@ -45,7 +45,7 @@
  36 [-]: LOADK     R9 350       ; R9 := 350.000000
  37 [-]: LOADK     R10 400      ; R10 := 400.000000
  38 [-]: SETLIST   R4 6 1       ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 6
- 39 [-]: SETTABLE  R3 K13 R4    ; R3[0x00000061] := R4
+ 39 [-]: SETTABLE  R3 K13 R4    ; R3["absorbPerEnergy"] := R4
  40 [-]: NEWTABLE  R4 0 4       ; R4 := {}
  41 [-]: GETGLOBAL R5 K2        ; R5 := 0x0469f296
  42 [-]: LOADK     R6 K14       ; R6 := "BlastAllyShield"

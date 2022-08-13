@@ -1171,7 +1171,7 @@
  55 [-]: MOVE      R0 R2        ; R0 := R2
  56 [-]: MOVE      R0 R5        ; R0 := R5
  57 [-]: MOVE      R0 R0        ; R0 := R0
- 58 [-]: SETTABLE  R2 K9 R7     ; R2[0x00000000] := R7
+ 58 [-]: SETTABLE  R2 K9 R7     ; R2["OnGamepadTransition"] := R7
  59 [-]: RETURN    R0 1         ; return 
 
 

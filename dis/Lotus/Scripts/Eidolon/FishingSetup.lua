@@ -392,7 +392,7 @@
   2 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0xc7fcada9]
   3 [-]: GETGLOBAL R2 K2        ; R2 := 0xb7720ac7
   4 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
-  5 [-]: SETUPVAL  R0 U0        ; U82 := 
+  5 [-]: SETUPVAL  R0 U0        ; U82 := R0
   6 [-]: GETGLOBAL R0 K3        ; R0 := _T
   7 [-]: GETUPVAL  R1 U1        ; R1 := U1
   8 [-]: SETTABLE  R0 K4 R1     ; R0["extendHotSpotLife"] := R1

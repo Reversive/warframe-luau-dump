@@ -384,7 +384,7 @@
   2 [-]: GETGLOBAL R1 K0        ; R1 := 0x89326c93
   3 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1[0x7c1a0374]
   4 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  5 [-]: SETUPVAL  R1 U0        ; U82 := 
+  5 [-]: SETUPVAL  R1 U0        ; U82 := R0
   6 [-]: LOADBOOL  R0 0 0       ; R0 := false
   7 [-]: GETGLOBAL R1 K2        ; R1 := 0x7b998233
   8 [-]: GETGLOBAL R2 K3        ; R2 := 0x578d1e4a

@@ -1511,13 +1511,13 @@
  79 [-]: GETUPVAL  R8 U0        ; R8 := U0
  80 [-]: SELF      R8 R8 K27    ; R9 := R8; R8 := R8[0xbad4316f]
  81 [-]: NEWTABLE  R10 0 3      ; R10 := {}
- 82 [-]: SETTABLE  R10 K28 R7   ; R10[0xbe190284] := R7
+ 82 [-]: SETTABLE  R10 K28 R7   ; R10["Name"] := R7
  83 [-]: GETTABLE  R11 R2 R6    ; R11 := R2[R6]
- 84 [-]: SETTABLE  R10 K29 R11  ; R10[0x99f38c13] := R11
+ 84 [-]: SETTABLE  R10 K29 R11  ; R10["Player"] := R11
  85 [-]: GETTABLE  R11 R2 R6    ; R11 := R2[R6]
  86 [-]: SELF      R11 R11 K31  ; R12 := R11; R11 := R11[0xbb610e5b]
  87 [-]: CALL      R11 2 2      ; R11 := R11(R12)
- 88 [-]: SETTABLE  R10 K30 R11  ; R10[0x3d329ded] := R11
+ 88 [-]: SETTABLE  R10 K30 R11  ; R10["Avatar"] := R11
  89 [-]: LOADBOOL  R11 1 0      ; R11 := true
  90 [-]: CALL      R8 4 1       ; R8(R9,R10,R11)
  91 [-]: FORLOOP   R3 67        ; R3 += R5; if R3 <= R4 then begin PC := 67; R6 := R3 end
@@ -3299,7 +3299,7 @@
 229 [-]: GETTABLE  R12 R11 K37  ; R12 := R11["Player"]
 230 [-]: SELF      R12 R12 K38  ; R13 := R12; R12 := R12[0xbb610e5b]
 231 [-]: CALL      R12 2 2      ; R12 := R12(R13)
-232 [-]: SETTABLE  R11 K35 R12  ; R11[0x54f5d6ad] := R12
+232 [-]: SETTABLE  R11 K35 R12  ; R11["Avatar"] := R12
 233 [-]: GETTABLE  R12 R11 K35  ; R12 := R11["Avatar"]
 234 [-]: EQ        0 R12 R6     ; if R12 ~= R6 then PC := 238
 235 [-]: JMP       238          ; PC := 238

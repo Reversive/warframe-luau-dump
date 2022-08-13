@@ -58,7 +58,7 @@
 ; Max Stack Size:  8
 
   1 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  2 [-]: GETTABLE  R1 R1 K0     ; R82 := R1[0x3c912430]
+  2 [-]: GETTABLE  R1 R1 K0     ; R1 := R1[0x3c912430]
   3 [-]: MOVE      R2 R0        ; R2 := R0
   4 [-]: CALL      R1 2 2       ; R1 := R1(R2)
   5 [-]: TEST      R1 0         ; if not R1 then PC := 8
@@ -101,7 +101,7 @@
 ; Max Stack Size:  8
 
   1 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  2 [-]: GETTABLE  R1 R1 K0     ; R82 := R1[0x3c912430]
+  2 [-]: GETTABLE  R1 R1 K0     ; R1 := R1[0x3c912430]
   3 [-]: MOVE      R2 R0        ; R2 := R0
   4 [-]: CALL      R1 2 2       ; R1 := R1(R2)
   5 [-]: TEST      R1 0         ; if not R1 then PC := 8

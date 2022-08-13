@@ -862,7 +862,7 @@
  92 [-]: SETTABLE  R2 K37 R3    ; R2["GetHeight"] := R3
  93 [-]: GETUPVAL  R2 U0        ; R2 := U0
  94 [-]: CLOSURE   R3 3         ; R3 := closure(Function #10.4)
- 95 [-]: SETTABLE  R2 K38 R3    ; R2[0xae91e43b] := R3
+ 95 [-]: SETTABLE  R2 K38 R3    ; R2[0x89326c93] := R3
  96 [-]: GETGLOBAL R2 K0        ; R2 := 0xae91e43b
  97 [-]: SELF      R2 R2 K9     ; R3 := R2; R2 := R2[0x67bc869f]
  98 [-]: LOADK     R4 K39       ; R4 := "QuestInfo.MissionTasks.Mask"

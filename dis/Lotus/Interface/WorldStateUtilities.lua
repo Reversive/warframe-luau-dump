@@ -89,7 +89,7 @@
  28 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  29 [-]: GETTABLE  R4 R4 K7     ; R4 := R4["mSeasonInfo"]
  30 [-]: GETTABLE  R4 R4 K8     ; R4 := R4["mParams"]
- 31 [-]: SETTABLE  R3 K3 R4     ; R3[0x1a94c9cc] := R4
+ 31 [-]: SETTABLE  R3 K3 R4     ; R3["SeasonParamString"] := R4
  32 [-]: GETGLOBAL R3 K2        ; R3 := _T
  33 [-]: GETGLOBAL R4 K9        ; R4 := cjson
  34 [-]: GETTABLE  R4 R4 K10    ; R4 := R4[0x7ab914d8]

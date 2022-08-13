@@ -1378,7 +1378,7 @@
 308 [-]: GETTABLE  R7 R7 K7     ; R7 := R7[0xca312f51]
 309 [-]: LOADK     R8 K54       ; R8 := "SurvivalLSLabel"
 310 [-]: CALL      R7 2 2       ; R7 := R7(R8)
-311 [-]: SETTABLE  R6 K53 R7    ; R6["LifeSupportTracker"] := R7
+311 [-]: SETTABLE  R6 K53 R7    ; R6[0x7b998233] := R7
 312 [-]: GETGLOBAL R6 K5        ; R6 := 0x7b998233
 313 [-]: GETGLOBAL R7 K3        ; R7 := _T
 314 [-]: GETTABLE  R7 R7 K53    ; R7 := R7["LifeSupportTracker"]
@@ -1399,7 +1399,7 @@
 329 [-]: MOVE      R12 R6       ; R12 := R6
 330 [-]: LOADBOOL  R13 1 0      ; R13 := true
 331 [-]: CALL      R8 6 2       ; R8 := R8(R9,R10,R11,R12,R13)
-332 [-]: SETTABLE  R7 K53 R8    ; R7["LifeSupportTracker"] := R8
+332 [-]: SETTABLE  R7 K53 R8    ; R7[0x7b998233] := R8
 333 [-]: GETGLOBAL R7 K3        ; R7 := _T
 334 [-]: GETTABLE  R7 R7 K53    ; R7 := R7["LifeSupportTracker"]
 335 [-]: GETTABLE  R7 R7 K30    ; R7 := R7[0xb7ae3621]
@@ -2058,7 +2058,7 @@
  32 [-]: GETTABLE  R2 R2 K11    ; R2 := R2[0x99675e23]
  33 [-]: GETUPVAL  R3 U1        ; R3 := U1
  34 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 35 [-]: SETTABLE  R1 K10 R2    ; R1["lastDialogTime"] := R2
+ 35 [-]: SETTABLE  R1 K10 R2    ; R1[0x9bafffe3] := R2
  36 [-]: GETUPVAL  R1 U0        ; R1 := U0
  37 [-]: ADD       R1 R1 K12    ; R1 := R1 + 1.000000
  38 [-]: SETUPVAL  R1 U0        ; U82 := R0

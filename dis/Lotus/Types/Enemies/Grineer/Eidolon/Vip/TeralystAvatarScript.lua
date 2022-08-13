@@ -374,7 +374,7 @@
  43 [-]: CALL      R6 2 2       ; R6 := R6(R7)
  44 [-]: TEST      R6 1         ; if R6 then PC := 66
  45 [-]: JMP       66           ; PC := 66
- 46 [-]: SETUPVAL  R0 U0        ; U82 := 
+ 46 [-]: SETUPVAL  R0 U0        ; U82 := R0
  47 [-]: SELF      R6 R5 K15    ; R7 := R5; R6 := R5[0xbb610e5b]
  48 [-]: CALL      R6 2 2       ; R6 := R6(R7)
  49 [-]: GETGLOBAL R7 K14       ; R7 := 0x7b998233

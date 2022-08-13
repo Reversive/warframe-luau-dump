@@ -1244,7 +1244,7 @@
  12 [-]: GETTABLE  R6 R6 K2     ; R6 := R6[0x23d5322f]
  13 [-]: GETUPVAL  R7 U0        ; R7 := U0
  14 [-]: NEWTABLE  R8 0 4       ; R8 := {}
- 15 [-]: SETTABLE  R8 K3 R5     ; R8[0xae91e43b] := R5
+ 15 [-]: SETTABLE  R8 K3 R5     ; R8["Drone"] := R5
  16 [-]: GETTABLE  R9 R5 K5     ; R9 := R5["mResources"]
  17 [-]: GETTABLE  R9 R9 K6     ; R9 := R9[1.000000]
  18 [-]: GETTABLE  R9 R9 K7     ; R9 := R9["mStartTime"]
@@ -1300,7 +1300,7 @@
  26 [-]: GETTABLE  R1 R1 K7     ; R1 := R1[1.000000]
  27 [-]: GETTABLE  R1 R1 K8     ; R1 := R1["mStartTime"]
  28 [-]: GETTABLE  R1 R1 K9     ; R1 := R1["sec"]
- 29 [-]: SETTABLE  R0 K5 R1     ; R0["StartTime"] := R1
+ 29 [-]: SETTABLE  R0 K5 R1     ; R0[0xaade900e] := R1
  30 [-]: GETUPVAL  R0 U0        ; R0 := U0
  31 [-]: GETUPVAL  R1 U0        ; R1 := U0
  32 [-]: GETTABLE  R1 R1 K1     ; R1 := R1["Drone"]
@@ -1372,7 +1372,7 @@
  43 [-]: CALL      R2 5 2       ; R2 := R2(R3,R4,R5,R6)
  44 [-]: GETUPVAL  R3 U9        ; R3 := U9
  45 [-]: GETTABLE  R4 R2 K7     ; R4 := R2["Icon"]
- 46 [-]: SETTABLE  R3 K7 R4     ; R3["Icon"] := R4
+ 46 [-]: SETTABLE  R3 K7 R4     ; R3[0x5f56eeab] := R4
  47 [-]: GETUPVAL  R3 U9        ; R3 := U9
  48 [-]: GETTABLE  R4 R2 K8     ; R4 := R2["Themed"]
  49 [-]: SETTABLE  R3 K8 R4     ; R3["Themed"] := R4
@@ -1999,7 +1999,7 @@
  20 [-]: LOADBOOL  R3 0 0       ; R3 := false
  21 [-]: CALL      R0 4 2       ; R0 := R0(R1,R2,R3)
  22 [-]: GETUPVAL  R1 U4        ; R1 := U4
- 23 [-]: SETTABLE  R1 K11 R0    ; R1["mLabel"] := R0
+ 23 [-]: SETTABLE  R1 K11 R0    ; R1[0x33bdd652] := R0
  24 [-]: GETUPVAL  R1 U4        ; R1 := U4
  25 [-]: SELF      R1 R1 K12    ; R2 := R1; R1 := R1[0x71e9ac81]
  26 [-]: CALL      R1 2 1       ; R1(R2)
@@ -2268,7 +2268,7 @@
  61 [-]: MOVE      R14 R7       ; R14 := R7
  62 [-]: CALL      R13 2 3      ; R13,R14 := R13(R14)
  63 [-]: SETTABLE  R8 K17 R14   ; R8["Themed"] := R14
- 64 [-]: SETTABLE  R8 K16 R13   ; R8["Icon"] := R13
+ 64 [-]: SETTABLE  R8 K16 R13   ; R8[0x34291f5c] := R13
  65 [-]: GETGLOBAL R13 K9       ; R13 := 0xae91e43b
  66 [-]: SELF      R13 R13 K10  ; R14 := R13; R13 := R13[0x42b04007]
  67 [-]: GETGLOBAL R15 K14      ; R15 := 0x64fb1586

@@ -513,7 +513,7 @@
   3 [-]: SETTABLE  R0 K2 K3     ; R0["ActiveScenario"] := nil
   4 [-]: GETGLOBAL R0 K0        ; R0 := _T
   5 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  6 [-]: SETTABLE  R0 K4 R1     ; R0[0xf0631fa5] := R1
+  6 [-]: SETTABLE  R0 K4 R1     ; R0[0xbe190284] := R1
   7 [-]: GETUPVAL  R0 U1        ; R0 := U1
   8 [-]: CALL      R0 1 1       ; R0()
   9 [-]: GETUPVAL  R0 U2        ; R0 := U2

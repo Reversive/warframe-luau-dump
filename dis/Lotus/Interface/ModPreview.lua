@@ -2619,7 +2619,7 @@
  29 [-]: GETUPVAL  R0 U1        ; R0 := U1
  30 [-]: GETUPVAL  R0 U2        ; R0 := U2
  31 [-]: GETUPVAL  R0 U0        ; R0 := U0
- 32 [-]: SETTABLE  R1 K18 R2    ; R1[0x68e36b8d] := R2
+ 32 [-]: SETTABLE  R1 K18 R2    ; R1["mOnFocusedCallback"] := R2
  33 [-]: GETUPVAL  R1 U0        ; R1 := U0
  34 [-]: CLOSURE   R2 1         ; R2 := closure(Function #19.2)
  35 [-]: GETUPVAL  R0 U2        ; R0 := U2
@@ -2633,7 +2633,7 @@
  43 [-]: GETUPVAL  R0 U3        ; R0 := U3
  44 [-]: GETUPVAL  R0 U4        ; R0 := U4
  45 [-]: GETUPVAL  R0 U5        ; R0 := U5
- 46 [-]: SETTABLE  R1 K20 R2    ; R1[0x64fb1586] := R2
+ 46 [-]: SETTABLE  R1 K20 R2    ; R1["mElementDrawCallback"] := R2
  47 [-]: RETURN    R0 1         ; return 
 
 
@@ -3012,7 +3012,7 @@
  36 [-]: NEWTABLE  R6 0 2       ; R6 := {}
  37 [-]: GETUPVAL  R7 U3        ; R7 := U3
  38 [-]: GETTABLE  R7 R7 K13    ; R7 := R7["mItemType"]
- 39 [-]: SETTABLE  R6 K12 R7    ; R6[0x20b98db3] := R7
+ 39 [-]: SETTABLE  R6 K12 R7    ; R6["type"] := R7
  40 [-]: SETTABLE  R6 K14 K15   ; R6["item"] := ""
  41 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
  42 [-]: TEST      R4 0         ; if not R4 then PC := 47
@@ -3227,7 +3227,7 @@
 251 [-]: NEWTABLE  R25 0 2      ; R25 := {}
 252 [-]: GETUPVAL  R26 U3       ; R26 := U3
 253 [-]: GETTABLE  R26 R26 K13  ; R26 := R26["mItemType"]
-254 [-]: SETTABLE  R25 K12 R26  ; R25[0x20b98db3] := R26
+254 [-]: SETTABLE  R25 K12 R26  ; R25["type"] := R26
 255 [-]: SETTABLE  R25 K14 K55  ; R25["item"] := true
 256 [-]: LOADBOOL  R26 0 0      ; R26 := false
 257 [-]: CALL      R21 6 1      ; R21(R22,R23,R24,R25,R26)
@@ -3240,7 +3240,7 @@
 264 [-]: NEWTABLE  R25 0 2      ; R25 := {}
 265 [-]: GETUPVAL  R26 U3       ; R26 := U3
 266 [-]: GETTABLE  R26 R26 K13  ; R26 := R26["mItemType"]
-267 [-]: SETTABLE  R25 K12 R26  ; R25[0x20b98db3] := R26
+267 [-]: SETTABLE  R25 K12 R26  ; R25["type"] := R26
 268 [-]: SETTABLE  R25 K14 K55  ; R25["item"] := true
 269 [-]: LOADBOOL  R26 0 0      ; R26 := false
 270 [-]: CALL      R21 6 1      ; R21(R22,R23,R24,R25,R26)

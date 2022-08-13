@@ -262,7 +262,7 @@
  30 [-]: MOVE      R6 R3        ; R6 := R3
  31 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  32 [-]: MUL       R5 R5 R4     ; R5 := R5 * R4
- 33 [-]: SETTABLE  R0 K12 R5    ; R0[0x5bced4c4] := R5
+ 33 [-]: SETTABLE  R0 K12 R5    ; R0["mY"] := R5
  34 [-]: GETGLOBAL R5 K9        ; R5 := 0xae91e43b
  35 [-]: SELF      R5 R5 K10    ; R6 := R5; R5 := R5[0x67bc869f]
  36 [-]: GETTABLE  R7 R0 K11    ; R7 := R0["mClipName"]

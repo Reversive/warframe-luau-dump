@@ -168,7 +168,7 @@
  60 [-]: CALL      R4 2 1       ; R4(R5)
  61 [-]: GETGLOBAL R4 K1        ; R4 := 0x0032441c
  62 [-]: NEWTABLE  R5 0 5       ; R5 := {}
- 63 [-]: SETTABLE  R5 K15 R1    ; R5[0x7d63f19c] := R1
+ 63 [-]: SETTABLE  R5 K15 R1    ; R5["Style"] := R1
  64 [-]: SELF      R6 R1 K16    ; R7 := R1; R6 := R1[0x59ee06ef]
  65 [-]: CALL      R6 2 2       ; R6 := R6(R7)
  66 [-]: SETTABLE  R5 K3 R6     ; R5["Colors"] := R6
@@ -184,7 +184,7 @@
  76 [-]: SELF      R9 R1 K20    ; R10 := R1; R9 := R1[0x07b41cb8]
  77 [-]: CALL      R9 2 0       ; R9,... := R9(R10)
  78 [-]: CALL      R6 0 2       ; R6 := R6(R7,...)
- 79 [-]: SETTABLE  R5 K17 R6    ; R5[0x59ee06ef] := R6
+ 79 [-]: SETTABLE  R5 K17 R6    ; R5["ColorCorrection"] := R6
  80 [-]: SETTABLE  R5 K4 R2     ; R5["Background"] := R2
  81 [-]: SETTABLE  R5 K5 R3     ; R5["Sounds"] := R3
  82 [-]: SETTABLE  R4 K2 R5     ; R4["CurrStyle"] := R5

@@ -3300,7 +3300,7 @@
  95 [-]: GETTABLE  R11 R11 R10  ; R11 := R11[R10]
  96 [-]: GETUPVAL  R12 U6       ; R12 := U6
  97 [-]: GETTABLE  R12 R12 R10  ; R12 := R12[R10]
- 98 [-]: SETTABLE  R11 K21 R12  ; R11[0x1fcc5f94] := R12
+ 98 [-]: SETTABLE  R11 K21 R12  ; R11["mReward"] := R12
  99 [-]: GETUPVAL  R11 U7       ; R11 := U7
 100 [-]: GETUPVAL  R12 U1       ; R12 := U1
 101 [-]: GETTABLE  R12 R12 R10  ; R12 := R12[R10]

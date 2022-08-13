@@ -805,7 +805,7 @@
  12 [-]: LOADK     R6 0         ; R6 := 0.250000
  13 [-]: SETLIST   R4 2 1       ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 2
  14 [-]: SETLIST   R3 1 1       ; R3[(1-1)*FPF+i] := R(3+i), 1 <= i <= 1
- 15 [-]: SETTABLE  R2 K10 R3    ; R2["statRestores"] := R3
+ 15 [-]: SETTABLE  R2 K10 R3    ; R2[0xde57e817] := R3
  16 [-]: NEWTABLE  R3 1 0       ; R3 := {}
  17 [-]: NEWTABLE  R4 3 0       ; R4 := {}
  18 [-]: LOADK     R5 64        ; R5 := 64.000000

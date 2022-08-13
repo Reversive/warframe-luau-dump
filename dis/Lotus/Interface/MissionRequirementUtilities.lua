@@ -393,7 +393,7 @@
 157 [-]: CALL      R30 3 2      ; R30 := R30(R31,R32)
 158 [-]: SETTABLE  R29 K29 R30  ; R29["ITEM"] := R30
 159 [-]: GETTABLE  R30 R1 R8    ; R30 := R1[R8]
-160 [-]: SETTABLE  R29 K34 R30  ; R29["value"] := R30
+160 [-]: SETTABLE  R29 K34 R30  ; R29[0xd3a9d01f] := R30
 161 [-]: RETURN    R29 2        ; return R29
 162 [-]: TFORLOOP  R5 2         ; R8,R9 :=  R5(R6,R7); if R8 ~= nil then begin PC = 15; R7 := R8 end
 163 [-]: JMP       15           ; PC := 15

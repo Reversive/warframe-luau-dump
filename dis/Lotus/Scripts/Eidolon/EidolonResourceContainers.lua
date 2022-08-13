@@ -544,7 +544,7 @@
   6 [-]: JMP       11           ; PC := 11
   7 [-]: GETGLOBAL R0 K1        ; R0 := 0xcd23b6bf
   8 [-]: LEN       R0 R0        ; R0 := # R0
-  9 [-]: SETUPVAL  R0 U1        ; U82 := 
+  9 [-]: SETUPVAL  R0 U1        ; U82 := R1
  10 [-]: JMP       195          ; PC := 195
  11 [-]: GETUPVAL  R0 U2        ; R0 := U2
  12 [-]: GETUPVAL  R1 U1        ; R1 := U1
@@ -572,27 +572,27 @@
  34 [-]: SETTABLE  R0 R1 K6     ; R0[R1] := 1.000000
  35 [-]: GETUPVAL  R0 U1        ; R0 := U1
  36 [-]: SUB       R0 R0 K6     ; R0 := R0 - 1.000000
- 37 [-]: SETUPVAL  R0 U1        ; U82 := 
+ 37 [-]: SETUPVAL  R0 U1        ; U82 := R1
  38 [-]: GETUPVAL  R0 U1        ; R0 := U1
  39 [-]: EQ        0 R0 K0      ; if R0 ~= 0.000000 then PC := 195
  40 [-]: JMP       195          ; PC := 195
  41 [-]: LOADK     R0 1         ; R0 := 1.000000
- 42 [-]: SETUPVAL  R0 U0        ; U82 := 
+ 42 [-]: SETUPVAL  R0 U0        ; U82 := R0
  43 [-]: GETUPVAL  R0 U7        ; R0 := U7
  44 [-]: ADD       R0 R0 K5     ; R0 := R0 + 2.000000
- 45 [-]: SETUPVAL  R0 U7        ; U82 := 
+ 45 [-]: SETUPVAL  R0 U7        ; U82 := R7
  46 [-]: GETGLOBAL R0 K7        ; R0 := 0x95464ec1
  47 [-]: GETUPVAL  R1 U4        ; R1 := U4
  48 [-]: GETTABLE  R1 R1 K4     ; R1 := R1["mCellWidth"]
  49 [-]: DIV       R0 R0 R1     ; R0 := R0 / R1
  50 [-]: ADD       R0 R0 K6     ; R0 := R0 + 1.000000
- 51 [-]: SETUPVAL  R0 U8        ; U82 := 
+ 51 [-]: SETUPVAL  R0 U8        ; U82 := R8
  52 [-]: JMP       195          ; PC := 195
  53 [-]: GETUPVAL  R0 U0        ; R0 := U0
  54 [-]: EQ        0 R0 K6      ; if R0 ~= 1.000000 then PC := 81
  55 [-]: JMP       81           ; PC := 81
  56 [-]: GETUPVAL  R0 U10       ; R0 := U10
- 57 [-]: SETUPVAL  R0 U9        ; U82 := 	
+ 57 [-]: SETUPVAL  R0 U9        ; U82 := R9
  58 [-]: LOADBOOL  R0 0 0       ; R0 := false
  59 [-]: LOADK     R1 1         ; R1 := 1.000000
  60 [-]: GETGLOBAL R2 K1        ; R2 := 0xcd23b6bf
@@ -604,7 +604,7 @@
  66 [-]: GETUPVAL  R7 U9        ; R7 := U9
  67 [-]: GETUPVAL  R8 U12       ; R8 := U12
  68 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
- 69 [-]: SETUPVAL  R5 U9        ; U82 := 	
+ 69 [-]: SETUPVAL  R5 U9        ; U82 := R9
  70 [-]: GETUPVAL  R5 U2        ; R5 := U2
  71 [-]: GETTABLE  R5 R5 R4     ; R5 := R5[R4]
  72 [-]: TEST      R5 0         ; if not R5 then PC := 75
@@ -614,7 +614,7 @@
  76 [-]: TEST      R0 1         ; if R0 then PC := 195
  77 [-]: JMP       195          ; PC := 195
  78 [-]: LOADK     R5 2         ; R5 := 2.000000
- 79 [-]: SETUPVAL  R5 U0        ; U82 := 
+ 79 [-]: SETUPVAL  R5 U0        ; U82 := R0
  80 [-]: JMP       195          ; PC := 195
  81 [-]: GETUPVAL  R5 U0        ; R5 := U0
  82 [-]: EQ        0 R5 K5      ; if R5 ~= 2.000000 then PC := 145
@@ -624,7 +624,7 @@
  86 [-]: JMP       90           ; PC := 90
  87 [-]: GETGLOBAL R5 K1        ; R5 := 0xcd23b6bf
  88 [-]: LEN       R5 R5        ; R5 := # R5
- 89 [-]: SETUPVAL  R5 U1        ; U82 := 
+ 89 [-]: SETUPVAL  R5 U1        ; U82 := R1
  90 [-]: GETUPVAL  R5 U4        ; R5 := U4
  91 [-]: GETTABLE  R5 R5 K4     ; R5 := R5["mCellWidth"]
  92 [-]: GETUPVAL  R6 U7        ; R6 := U7
@@ -666,7 +666,7 @@
 128 [-]: SETTABLE  R7 R8 K6     ; R7[R8] := 1.000000
 129 [-]: GETUPVAL  R7 U1        ; R7 := U1
 130 [-]: SUB       R7 R7 K6     ; R7 := R7 - 1.000000
-131 [-]: SETUPVAL  R7 U1        ; U82 := 
+131 [-]: SETUPVAL  R7 U1        ; U82 := R1
 132 [-]: GETUPVAL  R7 U1        ; R7 := U1
 133 [-]: EQ        0 R7 K0      ; if R7 ~= 0.000000 then PC := 195
 134 [-]: JMP       195          ; PC := 195
@@ -675,16 +675,16 @@
 137 [-]: LT        0 R8 R7      ; if R8 >= R7 then PC := 142
 138 [-]: JMP       142          ; PC := 142
 139 [-]: LOADK     R7 4         ; R7 := 4.000000
-140 [-]: SETUPVAL  R7 U0        ; U82 := 
+140 [-]: SETUPVAL  R7 U0        ; U82 := R0
 141 [-]: JMP       195          ; PC := 195
 142 [-]: LOADK     R7 3         ; R7 := 3.000000
-143 [-]: SETUPVAL  R7 U0        ; U82 := 
+143 [-]: SETUPVAL  R7 U0        ; U82 := R0
 144 [-]: JMP       195          ; PC := 195
 145 [-]: GETUPVAL  R7 U0        ; R7 := U0
 146 [-]: EQ        0 R7 K11     ; if R7 ~= 3.000000 then PC := 187
 147 [-]: JMP       187          ; PC := 187
 148 [-]: GETUPVAL  R7 U10       ; R7 := U10
-149 [-]: SETUPVAL  R7 U9        ; U82 := 	
+149 [-]: SETUPVAL  R7 U9        ; U82 := R9
 150 [-]: GETUPVAL  R7 U4        ; R7 := U4
 151 [-]: SELF      R7 R7 K12    ; R8 := R7; R7 := R7[0xfaa69527]
 152 [-]: CALL      R7 2 1       ; R7(R8)
@@ -699,7 +699,7 @@
 161 [-]: GETUPVAL  R14 U9       ; R14 := U9
 162 [-]: GETUPVAL  R15 U12      ; R15 := U12
 163 [-]: CALL      R12 4 2      ; R12 := R12(R13,R14,R15)
-164 [-]: SETUPVAL  R12 U9       ; U82 := 	
+164 [-]: SETUPVAL  R12 U9       ; U82 := R9
 165 [-]: GETUPVAL  R12 U6       ; R12 := U6
 166 [-]: GETTABLE  R12 R12 R11  ; R12 := R12[R11]
 167 [-]: GETUPVAL  R13 U5       ; R13 := U5
@@ -711,7 +711,7 @@
 173 [-]: TEST      R7 1         ; if R7 then PC := 195
 174 [-]: JMP       195          ; PC := 195
 175 [-]: LOADK     R12 2        ; R12 := 2.000000
-176 [-]: SETUPVAL  R12 U0       ; U82 := 
+176 [-]: SETUPVAL  R12 U0       ; U82 := R0
 177 [-]: GETUPVAL  R12 U13      ; R12 := U13
 178 [-]: TEST      R12 0        ; if not R12 then PC := 183
 179 [-]: JMP       183          ; PC := 183
@@ -720,13 +720,13 @@
 182 [-]: CALL      R12 2 1      ; R12(R13)
 183 [-]: GETUPVAL  R12 U7       ; R12 := U7
 184 [-]: ADD       R12 R12 K6   ; R12 := R12 + 1.000000
-185 [-]: SETUPVAL  R12 U7       ; U82 := 
+185 [-]: SETUPVAL  R12 U7       ; U82 := R7
 186 [-]: JMP       195          ; PC := 195
 187 [-]: GETUPVAL  R12 U0       ; R12 := U0
 188 [-]: EQ        0 R12 K14    ; if R12 ~= 4.000000 then PC := 195
 189 [-]: JMP       195          ; PC := 195
 190 [-]: GETUPVAL  R12 U10      ; R12 := U10
-191 [-]: SETUPVAL  R12 U9       ; U82 := 	
+191 [-]: SETUPVAL  R12 U9       ; U82 := R9
 192 [-]: GETUPVAL  R12 U4       ; R12 := U4
 193 [-]: SELF      R12 R12 K12  ; R13 := R12; R12 := R12[0xfaa69527]
 194 [-]: CALL      R12 2 1      ; R12(R13)
@@ -769,15 +769,15 @@
   7 [-]: LOADK     R3 1         ; R3 := 1.000000
   8 [-]: LOADK     R4 100       ; R4 := 100.000000
   9 [-]: CALL      R1 4 2       ; R1 := R1(R2,R3,R4)
- 10 [-]: SETUPVAL  R1 U1        ; U82 := 
+ 10 [-]: SETUPVAL  R1 U1        ; U82 := R1
  11 [-]: GETGLOBAL R1 K1        ; R1 := _T
  12 [-]: GETTABLE  R1 R1 K2     ; R1 := R1["debugWaypointProcessing"]
  13 [-]: TEST      R1 1         ; if R1 then PC := 16
  14 [-]: JMP       16           ; PC := 16
  15 [-]: GETUPVAL  R1 U2        ; R1 := U2
- 16 [-]: SETUPVAL  R1 U2        ; U82 := 
+ 16 [-]: SETUPVAL  R1 U2        ; U82 := R2
  17 [-]: LOADBOOL  R1 1 0       ; R1 := true
- 18 [-]: SETUPVAL  R1 U3        ; U82 := 
+ 18 [-]: SETUPVAL  R1 U3        ; U82 := R3
  19 [-]: GETGLOBAL R1 K3        ; R1 := 0x89326c93
  20 [-]: SELF      R1 R1 K4     ; R2 := R1; R1 := R1[0x78298275]
  21 [-]: CALL      R1 2 2       ; R1 := R1(R2)
@@ -796,7 +796,7 @@
  34 [-]: JMP       22           ; PC := 22
  35 [-]: SELF      R2 R1 K7     ; R3 := R1; R2 := R1[0xd1586535]
  36 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 37 [-]: SETUPVAL  R2 U4        ; U82 := 
+ 37 [-]: SETUPVAL  R2 U4        ; U82 := R4
  38 [-]: GETUPVAL  R2 U5        ; R2 := U5
  39 [-]: CALL      R2 1 1       ; R2()
  40 [-]: GETUPVAL  R2 U7        ; R2 := U7
@@ -808,7 +808,7 @@
  46 [-]: GETUPVAL  R7 U10       ; R7 := U10
  47 [-]: GETUPVAL  R8 U11       ; R8 := U11
  48 [-]: CALL      R2 7 2       ; R2 := R2(R3,R4,R5,R6,R7,R8)
- 49 [-]: SETUPVAL  R2 U6        ; U82 := 
+ 49 [-]: SETUPVAL  R2 U6        ; U82 := R6
  50 [-]: GETUPVAL  R2 U6        ; R2 := U6
  51 [-]: SELF      R2 R2 K11    ; R3 := R2; R2 := R2[0x1cf73c6f]
  52 [-]: GETGLOBAL R4 K3        ; R4 := 0x89326c93
@@ -821,7 +821,7 @@
  59 [-]: CALL      R2 3 1       ; R2(R3,R4)
  60 [-]: GETGLOBAL R2 K14       ; R2 := 0x910f4761
  61 [-]: CALL      R2 1 2       ; R2 := R2()
- 62 [-]: SETUPVAL  R2 U12       ; U82 := 
+ 62 [-]: SETUPVAL  R2 U12       ; U82 := R12
  63 [-]: GETUPVAL  R2 U13       ; R2 := U13
  64 [-]: CALL      R2 1 1       ; R2()
  65 [-]: GETGLOBAL R2 K6        ; R2 := 0xcbd666e1

@@ -318,7 +318,7 @@
  11 [-]: GETUPVAL  R3 U1        ; R3 := U1
  12 [-]: GETTABLE  R3 R3 K5     ; R3 := R3["HUB_TAG"]
  13 [-]: CONCAT    R2 R2 R3     ; R2 := R2 .. R3
- 14 [-]: SETTABLE  R1 K3 R2     ; R1["name"] := R2
+ 14 [-]: SETTABLE  R1 K3 R2     ; R1[0x47cd8e63] := R2
  15 [-]: GETGLOBAL R2 K6        ; R2 := cjson
  16 [-]: GETTABLE  R2 R2 K7     ; R2 := R2[0xb139d7bc]
  17 [-]: MOVE      R3 R1        ; R3 := R1

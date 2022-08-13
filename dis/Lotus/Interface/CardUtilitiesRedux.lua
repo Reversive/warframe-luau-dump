@@ -3081,7 +3081,7 @@
 247 [-]: CONCAT    R46 R48 R50  ; R46 := R48 .. R49 .. R50
 248 [-]: NEWTABLE  R48 0 2      ; R48 := {}
 249 [-]: GETTABLE  R49 R1 K42   ; R49 := R1["mNumModSetEquipped"]
-250 [-]: SETTABLE  R48 K53 R49  ; R48[0x00000043] := R49
+250 [-]: SETTABLE  R48 K53 R49  ; R48["Equipped"] := R49
 251 [-]: GETTABLE  R49 R1 K39   ; R49 := R1["mMaxSetUpgrades"]
 252 [-]: SETTABLE  R48 K54 R49  ; R48["Max"] := R49
 253 [-]: SETTABLE  R1 K52 R48   ; R1["ModSetDescription"] := R48
@@ -3147,11 +3147,11 @@
 313 [-]: GETTABLE  R61 R1 K62   ; R61 := R1["mUpgradeType"]
 314 [-]: MOVE      R62 R55      ; R62 := R55
 315 [-]: CALL      R56 7 2      ; R56 := R56(R57,R58,R59,R60,R61,R62)
-316 [-]: SETTABLE  R1 K61 R56   ; R1[0x00000050] := R56
+316 [-]: SETTABLE  R1 K61 R56   ; R1["mDesc"] := R56
 317 [-]: SELF      R56 R2 K63   ; R57 := R2; R56 := R2[0xdca61cfa]
 318 [-]: GETTABLE  R58 R1 K61   ; R58 := R1["mDesc"]
 319 [-]: CALL      R56 3 2      ; R56 := R56(R57,R58)
-320 [-]: SETTABLE  R1 K61 R56   ; R1[0x00000050] := R56
+320 [-]: SETTABLE  R1 K61 R56   ; R1["mDesc"] := R56
 321 [-]: SELF      R56 R2 K63   ; R57 := R2; R56 := R2[0xdca61cfa]
 322 [-]: GETTABLE  R58 R1 K43   ; R58 := R1["mSetDesc"]
 323 [-]: CALL      R56 3 2      ; R56 := R56(R57,R58)
@@ -8695,7 +8695,7 @@
  62 [-]: GETTABLE  R18 R18 K20  ; R18 := R18[0x1142c7a8]
  63 [-]: MOVE      R19 R8       ; R19 := R8
  64 [-]: CALL      R18 2 2      ; R18 := R18(R19)
- 65 [-]: SETTABLE  R17 K19 R18  ; R17[0xa128fc07] := R18
+ 65 [-]: SETTABLE  R17 K19 R18  ; R17["COUNT"] := R18
  66 [-]: CALL      R13 5 0      ; R13,... := R13(R14,R15,R16,R17)
  67 [-]: CALL      R10 0 1      ; R10(R11,...)
  68 [-]: SELF      R10 R9 K21   ; R11 := R9; R10 := R9[0xf56f3887]

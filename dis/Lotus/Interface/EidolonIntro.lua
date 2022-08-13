@@ -99,7 +99,7 @@
   3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
   4 [-]: GETTABLE  R1 R0 K2     ; R1 := R0[0xde474187]
   5 [-]: CALL      R1 1 2       ; R1 := R1()
-  6 [-]: SETUPVAL  R1 U0        ; U82 := 
+  6 [-]: SETUPVAL  R1 U0        ; U82 := R0
   7 [-]: CLOSURE   R1 0         ; R1 := closure(Function #4.1)
   8 [-]: GETGLOBAL R2 K3        ; R2 := 0xae91e43b
   9 [-]: SELF      R2 R2 K4     ; R3 := R2; R2 := R2[0xef99134f]

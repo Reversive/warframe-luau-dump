@@ -34,7 +34,7 @@
   3 [-]: LOADK     R2 0         ; R2 := 0.000000
   4 [-]: POW       R2 K0 R2     ; R2 := 10.000000 ^ R2
   5 [-]: GETGLOBAL R3 K1        ; R3 := 0x5bced4c4
-  6 [-]: GETTABLE  R3 R3 K2     ; R82 := R3[0x55f27c30]
+  6 [-]: GETTABLE  R3 R3 K2     ; R3 := R3[0x55f27c30]
   7 [-]: MUL       R4 R0 R2     ; R4 := R0 * R2
   8 [-]: ADD       R4 R4 K3     ; R4 := R4 + 0.500000
   9 [-]: CALL      R3 2 2       ; R3 := R3(R4)

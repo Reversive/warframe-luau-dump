@@ -109,12 +109,12 @@
  34 [-]: GETUPVAL  R6 U1        ; R6 := U1
  35 [-]: SUB       R6 R6 K10    ; R6 := R6 - 1.000000
  36 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
- 37 [-]: SETUPVAL  R4 U1        ; U82 := 
+ 37 [-]: SETUPVAL  R4 U1        ; U82 := R1
  38 [-]: GETUPVAL  R4 U1        ; R4 := U1
  39 [-]: LE        0 K7 R4      ; if 0.000000 > R4 then PC := 95
  40 [-]: JMP       95           ; PC := 95
  41 [-]: LOADBOOL  R4 1 0       ; R4 := true
- 42 [-]: SETUPVAL  R4 U2        ; U82 := 
+ 42 [-]: SETUPVAL  R4 U2        ; U82 := R2
  43 [-]: JMP       95           ; PC := 95
  44 [-]: GETGLOBAL R4 K11       ; R4 := 0xc8802016
  45 [-]: GETTABLE  R5 R2 K12    ; R5 := R2["mWeapons"]
@@ -198,7 +198,7 @@
  17 [-]: LOADK     R3 K5        ; R3 := "OnGetSalesComplete"
  18 [-]: CALL      R0 4 1       ; R0(R1,R2,R3)
  19 [-]: LOADBOOL  R0 0 0       ; R0 := false
- 20 [-]: SETUPVAL  R0 U2        ; U82 := 
+ 20 [-]: SETUPVAL  R0 U2        ; U82 := R2
  21 [-]: GETGLOBAL R0 K2        ; R0 := 0xcbd666e1
  22 [-]: LOADK     R1 0         ; R1 := 0.500000
  23 [-]: CALL      R0 2 1       ; R0(R1)
@@ -251,7 +251,7 @@
  24 [-]: GETTABLE  R6 R6 K7     ; R6 := R6[0x42645da3]
  25 [-]: MOVE      R7 R0        ; R7 := R0
  26 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 27 [-]: SETUPVAL  R6 U1        ; U82 := 
+ 27 [-]: SETUPVAL  R6 U1        ; U82 := R1
  28 [-]: GETGLOBAL R6 K8        ; R6 := 0x7b998233
  29 [-]: GETUPVAL  R7 U1        ; R7 := U1
  30 [-]: CALL      R6 2 2       ; R6 := R6(R7)
@@ -407,7 +407,7 @@
  37 [-]: CONCAT    R4 R4 R5     ; R4 := R4 .. R5
  38 [-]: CALL      R3 2 1       ; R3(R4)
  39 [-]: RETURN    R0 1         ; return 
- 40 [-]: SETTABLE  R0 K0 R1     ; R0[0x89326c93] := R1
+ 40 [-]: SETTABLE  R0 K0 R1     ; R0["mAvatar"] := R1
  41 [-]: SELF      R3 R1 K15    ; R4 := R1; R3 := R1[0x26d544fc]
  42 [-]: GETGLOBAL R5 K16       ; R5 := EMPTY_SYMBOL
  43 [-]: CALL      R3 3 1       ; R3(R4,R5)
@@ -455,7 +455,7 @@
  85 [-]: LOADBOOL  R6 0 0       ; R6 := false
  86 [-]: CALL      R3 4 2       ; R3 := R3(R4,R5,R6)
  87 [-]: MOVE      R2 R3        ; R2 := R3
- 88 [-]: SETTABLE  R0 K1 R2     ; R0[0x59c96e77] := R2
+ 88 [-]: SETTABLE  R0 K1 R2     ; R0["mWeapon"] := R2
  89 [-]: SELF      R3 R2 K31    ; R4 := R2; R3 := R2[0xa6101f7e]
  90 [-]: GETTABLE  R5 R0 K4     ; R5 := R0["mSaleData"]
  91 [-]: GETTABLE  R5 R5 K32    ; R5 := R5["mParts"]
@@ -643,7 +643,7 @@
  47 [-]: RETURN    R0 1         ; return 
  48 [-]: SELF      R2 R1 K10    ; R3 := R1; R2 := R1[0x80563238]
  49 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 50 [-]: SETUPVAL  R2 U1        ; U82 := 
+ 50 [-]: SETUPVAL  R2 U1        ; U82 := R1
  51 [-]: GETGLOBAL R2 K3        ; R2 := 0x7b998233
  52 [-]: GETUPVAL  R3 U1        ; R3 := U1
  53 [-]: CALL      R2 2 2       ; R2 := R2(R3)
@@ -716,7 +716,7 @@
 120 [-]: GETUPVAL  R5 U0        ; R5 := U0
 121 [-]: SUB       R5 R5 K32    ; R5 := R5 - 1.000000
 122 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
-123 [-]: SETUPVAL  R3 U0        ; U82 := 
+123 [-]: SETUPVAL  R3 U0        ; U82 := R0
 124 [-]: JMP       21           ; PC := 21
 125 [-]: RETURN    R0 1         ; return 
 

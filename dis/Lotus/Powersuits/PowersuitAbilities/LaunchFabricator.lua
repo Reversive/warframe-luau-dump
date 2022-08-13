@@ -127,7 +127,7 @@
 102 [-]: LE        0 R20 K6     ; if R20 > 0.000000 then PC := 110
 103 [-]: JMP       110          ; PC := 110
 104 [-]: GETGLOBAL R20 K22      ; R20 := 0x33bdd652
-105 [-]: GETTABLE  R20 R20 K23  ; R82 := R20[0x9c1f3b5a]
+105 [-]: GETTABLE  R20 R20 K23  ; R20 := R20[0x9c1f3b5a]
 106 [-]: GETGLOBAL R21 K2       ; R21 := _T
 107 [-]: GETTABLE  R21 R21 K3   ; R21 := R21["fabricatorInstances"]
 108 [-]: MOVE      R22 R18      ; R22 := R18
@@ -172,7 +172,7 @@
 147 [-]: TEST      R9 0         ; if not R9 then PC := 157
 148 [-]: JMP       157          ; PC := 157
 149 [-]: GETGLOBAL R20 K22      ; R20 := 0x33bdd652
-150 [-]: GETTABLE  R20 R20 K30  ; R82 := R20[0x23d5322f]
+150 [-]: GETTABLE  R20 R20 K30  ; R20 := R20[0x23d5322f]
 151 [-]: GETGLOBAL R21 K2       ; R21 := _T
 152 [-]: GETTABLE  R21 R21 K3   ; R21 := R21["fabricatorInstances"]
 153 [-]: MOVE      R22 R1       ; R22 := R1

@@ -34,7 +34,7 @@
   6 [-]: LOADK     R6 1         ; R6 := 1.000000
   7 [-]: LOADK     R7 -7        ; R7 := -7.000000
   8 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
-  9 [-]: SETTABLE  R3 K1 R4     ; R3["mMainClipName"] := R4
+  9 [-]: SETTABLE  R3 K1 R4     ; R3[0x00000001] := R4
  10 [-]: SETTABLE  R3 K4 R1     ; R3["mClipName"] := R1
  11 [-]: MOVE      R4 R1        ; R4 := R1
  12 [-]: LOADK     R5 K6        ; R5 := "_too"
@@ -61,7 +61,7 @@
  33 [-]: GETGLOBAL R4 K11       ; R4 := 0x2d0fad09
  34 [-]: LOADK     R5 K18       ; R5 := "Lotus.Interface.UIUtilities"
  35 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 36 [-]: SETTABLE  R3 K17 R4    ; R3[0xea07b5ab] := R4
+ 36 [-]: SETTABLE  R3 K17 R4    ; R3["UI_UTIL"] := R4
  37 [-]: SETTABLE  R3 K19 K20   ; R3["mInitialized"] := false
  38 [-]: SETTABLE  R3 K21 K22   ; R3["mWrapAroundNavigation"] := true
  39 [-]: SETTABLE  R3 K23 K24   ; R3["mInitialDepth"] := 5000.000000
@@ -69,7 +69,7 @@
  41 [-]: MOVE      R6 R1        ; R6 := R1
  42 [-]: LOADK     R7 0         ; R7 := 0.000000
  43 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
- 44 [-]: SETTABLE  R3 K25 R4    ; R3["mInitialX"] := R4
+ 44 [-]: SETTABLE  R3 K25 R4    ; R3[0xb08fb8ee] := R4
  45 [-]: SELF      R4 R0 K9     ; R5 := R0; R4 := R0[0x91a24e4b]
  46 [-]: MOVE      R6 R1        ; R6 := R1
  47 [-]: LOADK     R7 1         ; R7 := 1.000000
@@ -93,7 +93,7 @@
  65 [-]: SETTABLE  R3 K34 K35   ; R3["mImageChangedCallback"] := nil
  66 [-]: NEWTABLE  R4 0 0       ; R4 := {}
  67 [-]: SETTABLE  R3 K36 R4    ; R3["mImages"] := R4
- 68 [-]: SETTABLE  R3 K37 R1    ; R3[0x06d055f9] := R1
+ 68 [-]: SETTABLE  R3 K37 R1    ; R3["mActiveClipName"] := R1
  69 [-]: SETTABLE  R3 K38 K35   ; R3["mCurrentImageIndex"] := nil
  70 [-]: SETTABLE  R3 K39 K40   ; R3["mImageTime"] := 5.000000
  71 [-]: SETTABLE  R3 K41 K42   ; R3["mElapsedImageTime"] := 0.000000

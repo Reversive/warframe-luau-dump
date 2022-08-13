@@ -218,7 +218,7 @@
  18 [-]: GETUPVAL  R6 U1        ; R6 := U1
  19 [-]: CALL      R4 3 1       ; R4(R5,R6)
  20 [-]: GETUPVAL  R4 U1        ; R4 := U1
- 21 [-]: SETTABLE  R0 K0 R4     ; R0[0x2a7d6c87] := R4
+ 21 [-]: SETTABLE  R0 K0 R4     ; R0["currentState"] := R4
  22 [-]: SELF      R4 R1 K3     ; R5 := R1; R4 := R1[0x5d985c7e]
  23 [-]: GETGLOBAL R6 K4        ; R6 := 0x2a7d6c87
  24 [-]: LOADBOOL  R7 0 0       ; R7 := false
@@ -227,7 +227,7 @@
  27 [-]: GETGLOBAL R10 K5       ; R10 := EMPTY_SYMBOL
  28 [-]: GETUPVAL  R11 U3       ; R11 := U3
  29 [-]: CALL      R4 8 2       ; R4 := R4(R5,R6,R7,R8,R9,R10,R11)
- 30 [-]: SETTABLE  R0 K2 R4     ; R0[0x0469f296] := R4
+ 30 [-]: SETTABLE  R0 K2 R4     ; R0["transitionTimer"] := R4
  31 [-]: GETGLOBAL R4 K6        ; R4 := 0x7b998233
  32 [-]: GETGLOBAL R5 K7        ; R5 := 0x157f7b67
  33 [-]: CALL      R4 2 2       ; R4 := R4(R5)
@@ -248,7 +248,7 @@
  48 [-]: GETUPVAL  R6 U0        ; R6 := U0
  49 [-]: CALL      R4 3 1       ; R4(R5,R6)
  50 [-]: GETUPVAL  R4 U0        ; R4 := U0
- 51 [-]: SETTABLE  R0 K0 R4     ; R0[0x2a7d6c87] := R4
+ 51 [-]: SETTABLE  R0 K0 R4     ; R0["currentState"] := R4
  52 [-]: SELF      R4 R1 K3     ; R5 := R1; R4 := R1[0x5d985c7e]
  53 [-]: GETGLOBAL R6 K10       ; R6 := 0xf291c23d
  54 [-]: LOADBOOL  R7 0 0       ; R7 := false

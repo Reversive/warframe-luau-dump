@@ -164,7 +164,7 @@
 
   1 [-]: GETUPVAL  R1 U0        ; R1 := U0
   2 [-]: SUB       R1 R1 K0     ; R1 := R1 - 1.000000
-  3 [-]: SETUPVAL  R1 U0        ; U82 := 
+  3 [-]: SETUPVAL  R1 U0        ; U82 := R0
   4 [-]: RETURN    R0 1         ; return 
 
 
@@ -376,7 +376,7 @@
 197 [-]: CALL      R19 2 1      ; R19(R20)
 198 [-]: GETUPVAL  R19 U1       ; R19 := U1
 199 [-]: ADD       R19 R19 K48  ; R19 := R19 + 1.000000
-200 [-]: SETUPVAL  R19 U1       ; U82 := 
+200 [-]: SETUPVAL  R19 U1       ; U82 := R1
 201 [-]: GETGLOBAL R19 K3       ; R19 := 0x7b998233
 202 [-]: MOVE      R20 R1       ; R20 := R1
 203 [-]: CALL      R19 2 2      ; R19 := R19(R20)

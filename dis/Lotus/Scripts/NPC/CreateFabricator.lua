@@ -127,7 +127,7 @@
  84 [-]: TEST      R9 1         ; if R9 then PC := 92
  85 [-]: JMP       92           ; PC := 92
  86 [-]: GETGLOBAL R15 K22      ; R15 := 0x33bdd652
- 87 [-]: GETTABLE  R15 R15 K23  ; R82 := R15[0x23d5322f]
+ 87 [-]: GETTABLE  R15 R15 K23  ; R15 := R15[0x23d5322f]
  88 [-]: GETGLOBAL R16 K18      ; R16 := _T
  89 [-]: GETTABLE  R16 R16 K19  ; R16 := R16["fabricatorInstances"]
  90 [-]: MOVE      R17 R8       ; R17 := R8
@@ -249,7 +249,7 @@
 103 [-]: SELF      R14 R10 K21  ; R15 := R10; R14 := R10[0x9e21e394]
 104 [-]: CALL      R14 2 1      ; R14(R15)
 105 [-]: GETUPVAL  R14 U1       ; R14 := U1
-106 [-]: GETTABLE  R14 R14 K22  ; R82 := R14[0x5c90d6b1]
+106 [-]: GETTABLE  R14 R14 K22  ; R14 := R14[0x5c90d6b1]
 107 [-]: MOVE      R15 R8       ; R15 := R8
 108 [-]: SELF      R16 R10 K11  ; R17 := R10; R16 := R10[0xbb610e5b]
 109 [-]: CALL      R16 2 0      ; R16,... := R16(R17)
@@ -299,7 +299,7 @@
  31 [-]: JMP       33           ; PC := 33
  32 [-]: MOVE      R6 R8        ; R6 := R8
  33 [-]: GETUPVAL  R9 U1        ; R9 := U1
- 34 [-]: GETTABLE  R9 R9 K8     ; R82 := R9[0x5c90d6b1]
+ 34 [-]: GETTABLE  R9 R9 K8     ; R9 := R9[0x5c90d6b1]
  35 [-]: MOVE      R10 R6       ; R10 := R6
  36 [-]: MOVE      R11 R0       ; R11 := R0
  37 [-]: CALL      R9 3 1       ; R9(R10,R11)
@@ -496,7 +496,7 @@
 228 [-]: EQ        0 R23 R0     ; if R23 ~= R0 then PC := 237
 229 [-]: JMP       237          ; PC := 237
 230 [-]: GETGLOBAL R23 K44      ; R23 := 0x33bdd652
-231 [-]: GETTABLE  R23 R23 K45  ; R82 := R23[0x9c1f3b5a]
+231 [-]: GETTABLE  R23 R23 K45  ; R23 := R23[0x9c1f3b5a]
 232 [-]: GETGLOBAL R24 K41      ; R24 := _T
 233 [-]: GETTABLE  R24 R24 K42  ; R24 := R24["fabricatorInstances"]
 234 [-]: MOVE      R25 R22      ; R25 := R22

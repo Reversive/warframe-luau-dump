@@ -3393,7 +3393,7 @@
   4 [-]: GETTABLE  R1 R1 K2     ; R1 := R1[0x1467d5f4]
   5 [-]: CALL      R1 1 2       ; R1 := R1()
   6 [-]: NOT       R1 R1        ; R1 := not R1
-  7 [-]: SETTABLE  R0 K3 R1     ; R0["mAltButtonVisible"] := R1
+  7 [-]: SETTABLE  R0 K3 R1     ; R0[0x1e5b5cfe] := R1
   8 [-]: GETGLOBAL R2 K4        ; R2 := 0xae91e43b
   9 [-]: SELF      R2 R2 K5     ; R3 := R2; R2 := R2[0xc0a3774b]
  10 [-]: GETTABLE  R4 R0 K6     ; R4 := R0["mClipName"]

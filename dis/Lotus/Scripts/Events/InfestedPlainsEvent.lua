@@ -87,7 +87,7 @@
  78 [-]: MOVE      R23 R11      ; R23 := R11
  79 [-]: SETLIST   R18 5 1      ; R18[(1-1)*FPF+i] := R(18+i), 1 <= i <= 5
  80 [-]: SETTABLE  R17 K18 R18  ; R17["active"] := R18
- 81 [-]: SETTABLE  R17 K22 R0   ; R17[0x8eb2112d] := R0
+ 81 [-]: SETTABLE  R17 K22 R0   ; R17["extraKonzuTransmissionSet"] := R0
  82 [-]: SETTABLE  R17 K23 K24  ; R17["addExtraTownDialog"] := true
  83 [-]: SETTABLE  R17 K25 K26  ; R17["weatherOverride"] := "infestation"
  84 [-]: NEWTABLE  R18 0 7      ; R18 := {}
@@ -109,7 +109,7 @@
 100 [-]: MOVE      R20 R7       ; R20 := R7
 101 [-]: SETLIST   R19 1 1      ; R19[(1-1)*FPF+i] := R(19+i), 1 <= i <= 1
 102 [-]: SETTABLE  R18 K27 R19  ; R18["complete"] := R19
-103 [-]: SETTABLE  R18 K22 R1   ; R18[0x8eb2112d] := R1
+103 [-]: SETTABLE  R18 K22 R1   ; R18["extraKonzuTransmissionSet"] := R1
 104 [-]: SETTABLE  R18 K23 K24  ; R18["addExtraTownDialog"] := true
 105 [-]: SETTABLE  R18 K25 K26  ; R18["weatherOverride"] := "infestation"
 106 [-]: CLOSURE   R19 0        ; R19 := closure(Function #1)
@@ -517,7 +517,7 @@
  83 [-]: CALL      R11 2 0      ; R11,... := R11(R12)
  84 [-]: SETLIST   R10 0 1      ; R10[(1-1)*FPF+i] := R(10+i), 1 <= i <= 0
  85 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 86 [-]: SETUPVAL  R9 U0        ; U82 := 
+ 86 [-]: SETUPVAL  R9 U0        ; U82 := R0
  87 [-]: LOADK     R9 1         ; R9 := 1.000000
  88 [-]: LEN       R10 R0       ; R10 := # R0
  89 [-]: LOADK     R11 1        ; R11 := 1.000000
@@ -750,7 +750,7 @@
  10 [-]: GETGLOBAL R1 K2        ; R1 := 0xb009bbc6
  11 [-]: GETGLOBAL R2 K3        ; R2 := 0xfc8bd7a1
  12 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 13 [-]: SETUPVAL  R1 U1        ; U82 := 
+ 13 [-]: SETUPVAL  R1 U1        ; U82 := R1
  14 [-]: SELF      R1 R0 K4     ; R2 := R0; R1 := R0[0x68d7cbe0]
  15 [-]: GETUPVAL  R3 U1        ; R3 := U1
  16 [-]: CALL      R1 3 1       ; R1(R2,R3)

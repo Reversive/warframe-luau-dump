@@ -620,7 +620,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  7
 
-  1 [-]: SETTABLE  R0 K0 R1     ; R0["mId"] := R1
+  1 [-]: SETTABLE  R0 K0 R1     ; R0[0x19ad3f57] := R1
   2 [-]: GETTABLE  R2 R0 K0     ; R2 := R0["mId"]
   3 [-]: EQ        1 R2 K1      ; if R2 == nil then PC := 13
   4 [-]: JMP       13           ; PC := 13
@@ -2385,7 +2385,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  12
 
-  1 [-]: SETTABLE  R0 K0 R1     ; R0[0x91a24e4b] := R1
+  1 [-]: SETTABLE  R0 K0 R1     ; R0["mIconOverride"] := R1
   2 [-]: EQ        0 R1 K1      ; if R1 ~= nil then PC := 8
   3 [-]: JMP       8            ; PC := 8
   4 [-]: SETTABLE  R0 K2 K1     ; R0["mShowIcon"] := nil
@@ -2398,7 +2398,7 @@
  11 [-]: TESTSET   R4 R2 1      ; if R2 then PC := 14 else R4 := R2
  12 [-]: JMP       14           ; PC := 14
  13 [-]: GETTABLE  R4 R0 K6     ; R4 := R0["mIconDefaultWidth"]
- 14 [-]: SETTABLE  R0 K5 R4     ; R0[0x67bc869f] := R4
+ 14 [-]: SETTABLE  R0 K5 R4     ; R0["mIconWidth"] := R4
  15 [-]: TESTSET   R4 R3 1      ; if R3 then PC := 20 else R4 := R3
  16 [-]: JMP       20           ; PC := 20
  17 [-]: TESTSET   R4 R2 1      ; if R2 then PC := 20 else R4 := R2

@@ -148,67 +148,67 @@
   4 [-]: LOADK     R4 K3        ; R4 := "HeistIntroCamera_Group"
   5 [-]: CALL      R3 2 0       ; R3,... := R3(R4)
   6 [-]: CALL      R1 0 2       ; R1 := R1(R2,...)
-  7 [-]: SETUPVAL  R1 U0        ; U82 := 
+  7 [-]: SETUPVAL  R1 U0        ; U82 := R0
   8 [-]: GETGLOBAL R1 K0        ; R1 := 0x89326c93
   9 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1[0x46a0ebf5]
  10 [-]: GETGLOBAL R3 K2        ; R3 := 0x0469f296
  11 [-]: LOADK     R4 K4        ; R4 := "HeistIntroCamera_TheBusiness"
  12 [-]: CALL      R3 2 0       ; R3,... := R3(R4)
  13 [-]: CALL      R1 0 2       ; R1 := R1(R2,...)
- 14 [-]: SETUPVAL  R1 U1        ; U82 := 
+ 14 [-]: SETUPVAL  R1 U1        ; U82 := R1
  15 [-]: GETGLOBAL R1 K0        ; R1 := 0x89326c93
  16 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1[0x46a0ebf5]
  17 [-]: GETGLOBAL R3 K2        ; R3 := 0x0469f296
  18 [-]: LOADK     R4 K5        ; R4 := "HubNpc_TheBusinessHeists"
  19 [-]: CALL      R3 2 0       ; R3,... := R3(R4)
  20 [-]: CALL      R1 0 2       ; R1 := R1(R2,...)
- 21 [-]: SETUPVAL  R1 U2        ; U82 := 
+ 21 [-]: SETUPVAL  R1 U2        ; U82 := R2
  22 [-]: GETGLOBAL R1 K0        ; R1 := 0x89326c93
  23 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1[0x46a0ebf5]
  24 [-]: GETGLOBAL R3 K2        ; R3 := 0x0469f296
  25 [-]: LOADK     R4 K6        ; R4 := "HeistIntroCamera_LittleDuck"
  26 [-]: CALL      R3 2 0       ; R3,... := R3(R4)
  27 [-]: CALL      R1 0 2       ; R1 := R1(R2,...)
- 28 [-]: SETUPVAL  R1 U3        ; U82 := 
+ 28 [-]: SETUPVAL  R1 U3        ; U82 := R3
  29 [-]: GETGLOBAL R1 K0        ; R1 := 0x89326c93
  30 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1[0x46a0ebf5]
  31 [-]: GETGLOBAL R3 K2        ; R3 := 0x0469f296
  32 [-]: LOADK     R4 K7        ; R4 := "HubNpc_LittleDuck"
  33 [-]: CALL      R3 2 0       ; R3,... := R3(R4)
  34 [-]: CALL      R1 0 2       ; R1 := R1(R2,...)
- 35 [-]: SETUPVAL  R1 U4        ; U82 := 
+ 35 [-]: SETUPVAL  R1 U4        ; U82 := R4
  36 [-]: GETGLOBAL R1 K0        ; R1 := 0x89326c93
  37 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1[0x46a0ebf5]
  38 [-]: GETGLOBAL R3 K2        ; R3 := 0x0469f296
  39 [-]: LOADK     R4 K8        ; R4 := "HubNpc_LittleDuckHeists"
  40 [-]: CALL      R3 2 0       ; R3,... := R3(R4)
  41 [-]: CALL      R1 0 2       ; R1 := R1(R2,...)
- 42 [-]: SETUPVAL  R1 U5        ; U82 := 
+ 42 [-]: SETUPVAL  R1 U5        ; U82 := R5
  43 [-]: GETGLOBAL R1 K0        ; R1 := 0x89326c93
  44 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1[0x46a0ebf5]
  45 [-]: GETGLOBAL R3 K2        ; R3 := 0x0469f296
  46 [-]: LOADK     R4 K9        ; R4 := "HeistIntroCamera_Eudico"
  47 [-]: CALL      R3 2 0       ; R3,... := R3(R4)
  48 [-]: CALL      R1 0 2       ; R1 := R1(R2,...)
- 49 [-]: SETUPVAL  R1 U6        ; U82 := 
+ 49 [-]: SETUPVAL  R1 U6        ; U82 := R6
  50 [-]: GETGLOBAL R1 K0        ; R1 := 0x89326c93
  51 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1[0x46a0ebf5]
  52 [-]: GETGLOBAL R3 K2        ; R3 := 0x0469f296
  53 [-]: LOADK     R4 K10       ; R4 := "HubNpc_EudicoHeists"
  54 [-]: CALL      R3 2 0       ; R3,... := R3(R4)
  55 [-]: CALL      R1 0 2       ; R1 := R1(R2,...)
- 56 [-]: SETUPVAL  R1 U7        ; U82 := 
+ 56 [-]: SETUPVAL  R1 U7        ; U82 := R7
  57 [-]: GETUPVAL  R1 U4        ; R1 := U4
  58 [-]: SELF      R1 R1 K11    ; R2 := R1; R1 := R1[0x9542d8e9]
  59 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 60 [-]: SETUPVAL  R1 U8        ; U82 := 
+ 60 [-]: SETUPVAL  R1 U8        ; U82 := R8
  61 [-]: GETUPVAL  R1 U4        ; R1 := U4
  62 [-]: SELF      R1 R1 K12    ; R2 := R1; R1 := R1[0xf5b1dc7c]
  63 [-]: CALL      R1 2 1       ; R1(R2)
  64 [-]: GETUPVAL  R1 U7        ; R1 := U7
  65 [-]: SELF      R1 R1 K11    ; R2 := R1; R1 := R1[0x9542d8e9]
  66 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 67 [-]: SETUPVAL  R1 U9        ; U82 := 	
+ 67 [-]: SETUPVAL  R1 U9        ; U82 := R9
  68 [-]: GETUPVAL  R1 U7        ; R1 := U7
  69 [-]: SELF      R1 R1 K12    ; R2 := R1; R1 := R1[0xf5b1dc7c]
  70 [-]: CALL      R1 2 1       ; R1(R2)
@@ -954,7 +954,7 @@
  40 [-]: TEST      R2 0         ; if not R2 then PC := 52
  41 [-]: JMP       52           ; PC := 52
  42 [-]: LOADBOOL  R2 0 0       ; R2 := false
- 43 [-]: SETUPVAL  R2 U3        ; U82 := 
+ 43 [-]: SETUPVAL  R2 U3        ; U82 := R3
  44 [-]: GETGLOBAL R2 K8        ; R2 := _T
  45 [-]: SETTABLE  R2 K9 K19    ; R2["ForceSquadOverlayMax"] := nil
  46 [-]: GETUPVAL  R2 U2        ; R2 := U2
@@ -1130,7 +1130,7 @@
 ; Max Stack Size:  2
 
   1 [-]: LOADBOOL  R0 1 0       ; R0 := true
-  2 [-]: SETUPVAL  R0 U0        ; U82 := 
+  2 [-]: SETUPVAL  R0 U0        ; U82 := R0
   3 [-]: RETURN    R0 1         ; return 
 
 
@@ -1157,7 +1157,7 @@
  12 [-]: RETURN    R0 1         ; return 
  13 [-]: FORLOOP   R2 8         ; R2 += R4; if R2 <= R3 then begin PC := 8; R5 := R2 end
  14 [-]: LOADBOOL  R6 1 0       ; R6 := true
- 15 [-]: SETUPVAL  R6 U0        ; U82 := 
+ 15 [-]: SETUPVAL  R6 U0        ; U82 := R0
  16 [-]: RETURN    R0 1         ; return 
 
 
@@ -1201,7 +1201,7 @@
  29 [-]: JMP       31           ; PC := 31
  30 [-]: NEWTABLE  R8 0 0       ; R8 := {}
  31 [-]: GETGLOBAL R9 K4        ; R9 := _T
- 32 [-]: SETTABLE  R9 K8 R8     ; R9["OnSquadMissionSelectedCallbacks"] := R8
+ 32 [-]: SETTABLE  R9 K8 R8     ; R9[0x0469f296] := R8
  33 [-]: GETGLOBAL R9 K6        ; R9 := 0x33bdd652
  34 [-]: GETTABLE  R9 R9 K7     ; R9 := R9[0x23d5322f]
  35 [-]: MOVE      R10 R8       ; R10 := R8
@@ -1307,7 +1307,7 @@
 135 [-]: JMP       170          ; PC := 170
 136 [-]: LOADBOOL  R10 0 0      ; R10 := false
 137 [-]: LOADBOOL  R18 0 0      ; R18 := false
-138 [-]: SETUPVAL  R18 U0       ; U82 := 
+138 [-]: SETUPVAL  R18 U0       ; U82 := R0
 139 [-]: LOADK     R6 K3        ; R6 := ""
 140 [-]: NEWTABLE  R18 0 0      ; R18 := {}
 141 [-]: MOVE      R4 R18       ; R4 := R18
@@ -1597,7 +1597,7 @@
  29 [-]: TEST      R4 0         ; if not R4 then PC := 57
  30 [-]: JMP       57           ; PC := 57
  31 [-]: NEWTABLE  R4 0 0       ; R4 := {}
- 32 [-]: SETUPVAL  R4 U3        ; U82 := 
+ 32 [-]: SETUPVAL  R4 U3        ; U82 := R3
  33 [-]: GETGLOBAL R4 K8        ; R4 := 0xe7f2b02f
  34 [-]: SELF      R4 R4 K9     ; R5 := R4; R4 := R4[0x6d0aa187]
  35 [-]: CALL      R4 2 2       ; R4 := R4(R5)
@@ -1626,7 +1626,7 @@
  58 [-]: JMP       72           ; PC := 72
  59 [-]: GETGLOBAL R10 K16      ; R10 := _T
  60 [-]: SETTABLE  R10 K17 K18  ; R10["SquadOverlay_NoCountdownAfterVoting"] := "HeistsDialog"
- 61 [-]: SETUPVAL  R1 U1        ; U82 := 
+ 61 [-]: SETUPVAL  R1 U1        ; U82 := R1
  62 [-]: GETGLOBAL R10 K11      ; R10 := 0x33bdd652
  63 [-]: GETTABLE  R10 R10 K12  ; R10 := R10[0x23d5322f]
  64 [-]: GETUPVAL  R11 U3       ; R11 := U3
@@ -1698,7 +1698,7 @@
  17 [-]: CLOSURE   R4 1         ; R4 := closure(Function #14.2)
  18 [-]: GETUPVAL  R0 U0        ; R0 := U0
  19 [-]: SETTABLE  R3 K8 R4     ; R3["mCallback"] := R4
- 20 [-]: SETTABLE  R2 K4 R3     ; R2["Recruiter_NoHeists"] := R3
+ 20 [-]: SETTABLE  R2 K4 R3     ; R2[0x5aa08846] := R3
  21 [-]: GETGLOBAL R2 K2        ; R2 := _T
  22 [-]: GETTABLE  R2 R2 K3     ; R2 := R2["TaggedDialog"]
  23 [-]: NEWTABLE  R3 0 3       ; R3 := {}

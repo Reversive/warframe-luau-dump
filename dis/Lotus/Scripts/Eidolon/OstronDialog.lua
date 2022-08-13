@@ -1151,7 +1151,7 @@
 252 [-]: MOVE      R0 R0        ; R0 := R0
 253 [-]: GETUPVAL  R0 U2        ; R0 := U2
 254 [-]: SETTABLE  R3 K7 R4     ; R3["mCallback"] := R4
-255 [-]: SETTABLE  R2 K50 R3    ; R2["Quills_AmpCrafting"] := R3
+255 [-]: SETTABLE  R2 K50 R3    ; R2[0x0469f296] := R3
 256 [-]: GETGLOBAL R2 K0        ; R2 := _T
 257 [-]: GETTABLE  R2 R2 K1     ; R2 := R2["TaggedDialog"]
 258 [-]: NEWTABLE  R3 0 2       ; R3 := {}
@@ -4301,10 +4301,10 @@
   6 [-]: JMP       11           ; PC := 11
   7 [-]: GETTABLE  R1 R0 K4     ; R1 := R0[1.000000]
   8 [-]: GETTABLE  R1 R1 K5     ; R1 := R1["EvoIndex"]
-  9 [-]: SETUPVAL  R1 U0        ; U82 := 
+  9 [-]: SETUPVAL  R1 U0        ; U82 := R0
  10 [-]: JMP       13           ; PC := 13
  11 [-]: LOADNIL   R1 R1        ; R1 := nil
- 12 [-]: SETUPVAL  R1 U0        ; U82 := 
+ 12 [-]: SETUPVAL  R1 U0        ; U82 := R0
  13 [-]: RETURN    R0 1         ; return 
 
 

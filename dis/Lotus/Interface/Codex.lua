@@ -2858,7 +2858,7 @@
  76 [-]: CALL      R9 0 2       ; R9 := R9(R10,...)
  77 [-]: NEWTABLE  R10 0 0      ; R10 := {}
  78 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
- 79 [-]: SETTABLE  R7 K20 R8    ; R7["QUEST"] := R8
+ 79 [-]: SETTABLE  R7 K20 R8    ; R7[0x7b998233] := R8
  80 [-]: CALL      R5 3 0       ; R5,... := R5(R6,R7)
  81 [-]: CALL      R4 0 1       ; R4(R5,...)
  82 [-]: JMP       206          ; PC := 206
@@ -2891,12 +2891,12 @@
 109 [-]: GETGLOBAL R6 K9        ; R6 := 0x603636ad
 110 [-]: LOADK     R7 K26       ; R7 := "/Lotus/Language/G1Quests/QuestCommitmentTitle"
 111 [-]: NEWTABLE  R8 0 1       ; R8 := {}
-112 [-]: SETTABLE  R8 K20 R4    ; R8["QUEST"] := R4
+112 [-]: SETTABLE  R8 K20 R4    ; R8[0x7b998233] := R4
 113 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
 114 [-]: GETGLOBAL R7 K9        ; R7 := 0x603636ad
 115 [-]: LOADK     R8 K27       ; R8 := "/Lotus/Language/G1Quests/QuestCommitmentDesc"
 116 [-]: NEWTABLE  R9 0 1       ; R9 := {}
-117 [-]: SETTABLE  R9 K20 R4    ; R9["QUEST"] := R4
+117 [-]: SETTABLE  R9 K20 R4    ; R9[0x7b998233] := R4
 118 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
 119 [-]: GETGLOBAL R8 K9        ; R8 := 0x603636ad
 120 [-]: LOADK     R9 K28       ; R9 := "/Lotus/Language/G1Quests/QuestCommitmentConfirm"
@@ -5128,7 +5128,7 @@
  16 [-]: JMP       18           ; PC := 18
  17 [-]: LOADBOOL  R2 0 1       ; R2 := false; PC := 18
  18 [-]: LOADBOOL  R2 1 0       ; R2 := true
- 19 [-]: SETTABLE  R1 K9 R2     ; R1["FullyScanned"] := R2
+ 19 [-]: SETTABLE  R1 K9 R2     ; R1[0x4706ff8f] := R2
  20 [-]: GETUPVAL  R1 U0        ; R1 := U0
  21 [-]: SETTABLE  R1 K12 R0    ; R1["Element"] := R0
  22 [-]: GETUPVAL  R1 U0        ; R1 := U0
@@ -6860,7 +6860,7 @@
  48 [-]: LOADBOOL  R9 0 0       ; R9 := false
  49 [-]: NEWTABLE  R10 0 1      ; R10 := {}
  50 [-]: GETTABLE  R11 R2 K15   ; R11 := R2["mName"]
- 51 [-]: SETTABLE  R10 K14 R11  ; R10[0x7f5022cf] := R11
+ 51 [-]: SETTABLE  R10 K14 R11  ; R10["NEMESIS"] := R11
  52 [-]: CALL      R6 5 2       ; R6 := R6(R7,R8,R9,R10)
  53 [-]: GETUPVAL  R7 U3        ; R7 := U3
  54 [-]: SELF      R7 R7 K16    ; R8 := R7; R7 := R7[0xbad4316f]
@@ -6874,7 +6874,7 @@
  62 [-]: SETTABLE  R9 K22 R6    ; R9["Label"] := R6
  63 [-]: GETGLOBAL R10 K24      ; R10 := 0xa8cb46da
  64 [-]: GETTABLE  R10 R10 R4   ; R10 := R10[R4]
- 65 [-]: SETTABLE  R9 K23 R10   ; R9["Icon"] := R10
+ 65 [-]: SETTABLE  R9 K23 R10   ; R9[0x1ac299fb] := R10
  66 [-]: SETTABLE  R9 K25 R5    ; R9["Tint"] := R5
  67 [-]: MOVE      R10 R0       ; R10 := R0
  68 [-]: MOVE      R11 R2       ; R11 := R2
@@ -6931,7 +6931,7 @@
 119 [-]: LOADBOOL  R22 0 0      ; R22 := false
 120 [-]: NEWTABLE  R23 0 1      ; R23 := {}
 121 [-]: GETTABLE  R24 R13 K15  ; R24 := R13["mName"]
-122 [-]: SETTABLE  R23 K14 R24  ; R23[0x7f5022cf] := R24
+122 [-]: SETTABLE  R23 K14 R24  ; R23["NEMESIS"] := R24
 123 [-]: CALL      R19 5 2      ; R19 := R19(R20,R21,R22,R23)
 124 [-]: MOVE      R17 R19      ; R17 := R19
 125 [-]: GETGLOBAL R19 K31      ; R19 := 0x33bdd652
@@ -6949,7 +6949,7 @@
 137 [-]: LOADBOOL  R22 0 0      ; R22 := false
 138 [-]: NEWTABLE  R23 0 1      ; R23 := {}
 139 [-]: GETTABLE  R24 R13 K15  ; R24 := R13["mName"]
-140 [-]: SETTABLE  R23 K14 R24  ; R23[0x7f5022cf] := R24
+140 [-]: SETTABLE  R23 K14 R24  ; R23["NEMESIS"] := R24
 141 [-]: CALL      R19 5 2      ; R19 := R19(R20,R21,R22,R23)
 142 [-]: MOVE      R17 R19      ; R17 := R19
 143 [-]: GETGLOBAL R19 K31      ; R19 := 0x33bdd652
@@ -6967,7 +6967,7 @@
 155 [-]: LOADBOOL  R22 0 0      ; R22 := false
 156 [-]: NEWTABLE  R23 0 1      ; R23 := {}
 157 [-]: GETTABLE  R24 R13 K15  ; R24 := R13["mName"]
-158 [-]: SETTABLE  R23 K14 R24  ; R23[0x7f5022cf] := R24
+158 [-]: SETTABLE  R23 K14 R24  ; R23["NEMESIS"] := R24
 159 [-]: CALL      R19 5 2      ; R19 := R19(R20,R21,R22,R23)
 160 [-]: MOVE      R17 R19      ; R17 := R19
 161 [-]: GETGLOBAL R19 K31      ; R19 := 0x33bdd652
@@ -6982,7 +6982,7 @@
 170 [-]: LOADBOOL  R22 0 0      ; R22 := false
 171 [-]: NEWTABLE  R23 0 1      ; R23 := {}
 172 [-]: GETTABLE  R24 R13 K15  ; R24 := R13["mName"]
-173 [-]: SETTABLE  R23 K14 R24  ; R23[0x7f5022cf] := R24
+173 [-]: SETTABLE  R23 K14 R24  ; R23["NEMESIS"] := R24
 174 [-]: CALL      R19 5 2      ; R19 := R19(R20,R21,R22,R23)
 175 [-]: MOVE      R17 R19      ; R17 := R19
 176 [-]: GETGLOBAL R19 K31      ; R19 := 0x33bdd652
@@ -6998,7 +6998,7 @@
 186 [-]: SETTABLE  R21 K22 R17  ; R21["Label"] := R17
 187 [-]: GETGLOBAL R22 K24      ; R22 := 0xa8cb46da
 188 [-]: GETTABLE  R22 R22 R15  ; R22 := R22[R15]
-189 [-]: SETTABLE  R21 K23 R22  ; R21["Icon"] := R22
+189 [-]: SETTABLE  R21 K23 R22  ; R21[0x1ac299fb] := R22
 190 [-]: SETTABLE  R21 K25 R16  ; R21["Tint"] := R16
 191 [-]: SETTABLE  R21 K42 R12  ; R21["Nemesis"] := R12
 192 [-]: MOVE      R22 R0       ; R22 := R0
@@ -7316,7 +7316,7 @@
 165 [-]: SETTABLE  R40 K31 R36  ; R40["Label"] := R36
 166 [-]: SETTABLE  R40 K35 R37  ; R40["Icon"] := R37
 167 [-]: GETTABLE  R41 R35 K51  ; R41 := R35["type"]
-168 [-]: SETTABLE  R40 K50 R41  ; R40[0x0032441c] := R41
+168 [-]: SETTABLE  R40 K50 R41  ; R40["Type"] := R41
 169 [-]: GETTABLE  R41 R35 K53  ; R41 := R35["regionBits"]
 170 [-]: SETTABLE  R40 K52 R41  ; R40["RegionBits"] := R41
 171 [-]: GETTABLE  R41 R35 K55  ; R41 := R35["equipType"]
@@ -7933,7 +7933,7 @@
 782 [-]: GETTABLE  R122 R92 K45 ; R122 := R92["icon"]
 783 [-]: SETTABLE  R121 K35 R122; R121["Icon"] := R122
 784 [-]: GETTABLE  R122 R92 K51 ; R122 := R92["type"]
-785 [-]: SETTABLE  R121 K50 R122; R121[0x0032441c] := R122
+785 [-]: SETTABLE  R121 K50 R122; R121["Type"] := R122
 786 [-]: GETTABLE  R122 R92 K53 ; R122 := R92["regionBits"]
 787 [-]: SETTABLE  R121 K52 R122; R121["RegionBits"] := R122
 788 [-]: GETTABLE  R122 R92 K55 ; R122 := R92["equipType"]
@@ -8052,7 +8052,7 @@
 901 [-]: GETTABLE  R126 R92 K45 ; R126 := R92["icon"]
 902 [-]: SETTABLE  R125 K35 R126; R125["Icon"] := R126
 903 [-]: GETTABLE  R126 R92 K51 ; R126 := R92["type"]
-904 [-]: SETTABLE  R125 K50 R126; R125[0x0032441c] := R126
+904 [-]: SETTABLE  R125 K50 R126; R125["Type"] := R126
 905 [-]: GETTABLE  R126 R92 K53 ; R126 := R92["regionBits"]
 906 [-]: SETTABLE  R125 K52 R126; R125["RegionBits"] := R126
 907 [-]: SETTABLE  R125 K154 R121; R125["RegionEnemyLevel"] := R121
@@ -8230,7 +8230,7 @@
  23 [-]: GETGLOBAL R5 K9        ; R5 := 0xa27a9428
  24 [-]: SETTABLE  R4 K8 R5     ; R4["CodexManifest"] := R5
  25 [-]: SETTABLE  R3 K6 R4     ; R3["ITEM"] := R4
- 26 [-]: SETTABLE  R2 K4 R3     ; R2["marketDetailedViewParms"] := R3
+ 26 [-]: SETTABLE  R2 K4 R3     ; R2[0x0000000b] := R3
  27 [-]: GETGLOBAL R2 K10       ; R2 := 0xae91e43b
  28 [-]: SELF      R2 R2 K11    ; R3 := R2; R2 := R2[0x1fd6abd0]
  29 [-]: GETGLOBAL R4 K12       ; R4 := 0x0032441c
@@ -8344,7 +8344,7 @@
  76 [-]: GETUPVAL  R0 U3        ; R0 := U3
  77 [-]: GETUPVAL  R0 U7        ; R0 := U7
  78 [-]: GETUPVAL  R0 U8        ; R0 := U8
- 79 [-]: SETTABLE  R1 K34 R2    ; R1["mOnFocusedCallback"] := R2
+ 79 [-]: SETTABLE  R1 K34 R2    ; R1[0x000000b2] := R2
  80 [-]: GETUPVAL  R1 U0        ; R1 := U0
  81 [-]: CLOSURE   R2 3         ; R2 := closure(Function #73.4)
  82 [-]: GETUPVAL  R0 U2        ; R0 := U2
@@ -10067,7 +10067,7 @@
 974 [-]: SELF      R49 R41 K147 ; R50 := R41; R49 := R41[0x9ed94a63]
 975 [-]: CALL      R49 2 0      ; R49,... := R49(R50)
 976 [-]: CALL      R48 0 2      ; R48 := R48(R49,...)
-977 [-]: SETTABLE  R47 K145 R48 ; R47[0x7f5022cf] := R48
+977 [-]: SETTABLE  R47 K145 R48 ; R47["RANK"] := R48
 978 [-]: CALL      R45 3 0      ; R45,... := R45(R46,R47)
 979 [-]: CALL      R44 0 2      ; R44 := R44(R45,...)
 980 [-]: GETUPVAL  R45 U5       ; R45 := U5
@@ -12526,14 +12526,14 @@
  55 [-]: SETTABLE  R1 K24 K25   ; R1["mForcedVerticalSeparation"] := 0.000000
  56 [-]: GETUPVAL  R1 U0        ; R1 := U0
  57 [-]: CLOSURE   R2 0         ; R2 := closure(Function #79.1)
- 58 [-]: SETTABLE  R1 K26 R2    ; R1["Print"] := R2
+ 58 [-]: SETTABLE  R1 K26 R2    ; R1[0xf2deaf69] := R2
  59 [-]: GETUPVAL  R1 U0        ; R1 := U0
  60 [-]: CLOSURE   R2 1         ; R2 := closure(Function #79.2)
- 61 [-]: SETTABLE  R1 K27 R2    ; R1["mElementDrawCallback"] := R2
+ 61 [-]: SETTABLE  R1 K27 R2    ; R1[0x33bdd652] := R2
  62 [-]: GETUPVAL  R1 U0        ; R1 := U0
  63 [-]: CLOSURE   R2 2         ; R2 := closure(Function #79.3)
  64 [-]: GETUPVAL  R0 U1        ; R0 := U1
- 65 [-]: SETTABLE  R1 K28 R2    ; R1["mOnFocusedCallback"] := R2
+ 65 [-]: SETTABLE  R1 K28 R2    ; R1[0x23d5322f] := R2
  66 [-]: GETUPVAL  R1 U0        ; R1 := U0
  67 [-]: CLOSURE   R2 3         ; R2 := closure(Function #79.4)
  68 [-]: GETUPVAL  R0 U0        ; R0 := U0
@@ -13150,10 +13150,10 @@
  91 [-]: SETTABLE  R2 K37 R3    ; R2["mElementDrawCallback"] := R3
  92 [-]: GETUPVAL  R2 U0        ; R2 := U0
  93 [-]: CLOSURE   R3 2         ; R3 := closure(Function #80.3)
- 94 [-]: SETTABLE  R2 K38 R3    ; R2["CalculateX"] := R3
+ 94 [-]: SETTABLE  R2 K38 R3    ; R2[0xae91e43b] := R3
  95 [-]: GETUPVAL  R2 U0        ; R2 := U0
  96 [-]: CLOSURE   R3 3         ; R3 := closure(Function #80.4)
- 97 [-]: SETTABLE  R2 K39 R3    ; R2["CalculateY"] := R3
+ 97 [-]: SETTABLE  R2 K39 R3    ; R2[0xaade900e] := R3
  98 [-]: RETURN    R0 1         ; return 
 
 
@@ -17269,10 +17269,10 @@
  17 [-]: CALL      R3 0 2       ; R3 := R3(R4,...)
  18 [-]: SETTABLE  R2 K3 R3     ; R2["bloom"] := R3
  19 [-]: GETTABLE  R2 R1 K2     ; R2 := R1["postProcess"]
- 20 [-]: SETTABLE  R2 K9 R0     ; R2["saturation"] := R0
+ 20 [-]: SETTABLE  R2 K9 R0     ; R2[0x7b998233] := R0
  21 [-]: GETTABLE  R2 R1 K2     ; R2 := R1["postProcess"]
  22 [-]: SUB       R3 K7 R0     ; R3 := 1.000000 - R0
- 23 [-]: SETTABLE  R2 K10 R3    ; R2["radialBlurStrength"] := R3
+ 23 [-]: SETTABLE  R2 K10 R3    ; R2[0x89326c93] := R3
  24 [-]: RETURN    R0 1         ; return 
 
 

@@ -912,7 +912,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  19
 
-  1 [-]: SETTABLE  R0 K0 R1     ; R0["mFilterType"] := R1
+  1 [-]: SETTABLE  R0 K0 R1     ; R0[0x5bced4c4] := R1
   2 [-]: GETTABLE  R2 R0 K1     ; R2 := R0["mElements"]
   3 [-]: LEN       R2 R2        ; R2 := # R2
   4 [-]: GETGLOBAL R3 K2        ; R3 := 0x7b998233
@@ -1162,7 +1162,7 @@
   9 [-]: JMP       15           ; PC := 15
  10 [-]: GETTABLE  R3 R0 K0     ; R3 := R0["mElements"]
  11 [-]: NEWTABLE  R4 0 1       ; R4 := {}
- 12 [-]: SETTABLE  R4 K6 R1     ; R4[0x9ae7e2d2] := R1
+ 12 [-]: SETTABLE  R4 K6 R1     ; R4["Id"] := R1
  13 [-]: SETTABLE  R3 R1 R4     ; R3[R1] := R4
  14 [-]: JMP       38           ; PC := 38
  15 [-]: GETTABLE  R3 R0 K0     ; R3 := R0["mElements"]
@@ -1178,7 +1178,7 @@
  25 [-]: SETTABLE  R2 R6 K2     ; R2[R6] := nil
  26 [-]: TFORLOOP  R3 2         ; R6,R7 :=  R3(R4,R5); if R6 ~= nil then begin PC = 25; R5 := R6 end
  27 [-]: JMP       25           ; PC := 25
- 28 [-]: SETTABLE  R2 K6 R1     ; R2[0x9ae7e2d2] := R1
+ 28 [-]: SETTABLE  R2 K6 R1     ; R2["Id"] := R1
  29 [-]: JMP       38           ; PC := 38
  30 [-]: GETGLOBAL R8 K8        ; R8 := 0x33bdd652
  31 [-]: GETTABLE  R8 R8 K9     ; R8 := R8[0x9c1f3b5a]

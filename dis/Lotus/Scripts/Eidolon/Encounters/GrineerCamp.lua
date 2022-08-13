@@ -128,7 +128,7 @@
  39 [-]: GETGLOBAL R7 K12       ; R7 := 0x89326c93
  40 [-]: SELF      R7 R7 K15    ; R8 := R7; R7 := R7[0x7d108ddb]
  41 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 42 [-]: SETUPVAL  R7 U0        ; U82 := 
+ 42 [-]: SETUPVAL  R7 U0        ; U82 := R0
  43 [-]: SELF      R7 R0 K16    ; R8 := R0; R7 := R0[0x659d451f]
  44 [-]: GETUPVAL  R9 U1        ; R9 := U1
  45 [-]: LOADBOOL  R10 0 0      ; R10 := false
@@ -1085,7 +1085,7 @@
  55 [-]: LOADK     R12 0        ; R12 := 0.000000
  56 [-]: MOVE      R13 R5       ; R13 := R5
  57 [-]: CALL      R8 6 2       ; R8 := R8(R9,R10,R11,R12,R13)
- 58 [-]: SETUPVAL  R8 U1        ; U82 := 
+ 58 [-]: SETUPVAL  R8 U1        ; U82 := R1
  59 [-]: GETUPVAL  R8 U1        ; R8 := U1
  60 [-]: LEN       R8 R8        ; R8 := # R8
  61 [-]: LT        0 K8 R8      ; if 0.000000 >= R8 then PC := 93
@@ -1271,7 +1271,7 @@
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x89326c93
   2 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0x7d108ddb]
   3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: SETUPVAL  R0 U0        ; U82 := 
+  4 [-]: SETUPVAL  R0 U0        ; U82 := R0
   5 [-]: RETURN    R0 1         ; return 
 
 

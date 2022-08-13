@@ -3635,16 +3635,16 @@
 100 [-]: GETTABLE  R13 R14 K28  ; R13 := R14["mSockets"]
 101 [-]: GETGLOBAL R14 K7       ; R14 := _T
 102 [-]: NEWTABLE  R15 0 4      ; R15 := {}
-103 [-]: SETTABLE  R15 K6 R7    ; R15["StoreItem"] := R7
+103 [-]: SETTABLE  R15 K6 R7    ; R15[0xd1964243] := R7
 104 [-]: GETTABLE  R16 R0 K30   ; R16 := R0["Count"]
 105 [-]: SETTABLE  R15 K30 R16  ; R15["Count"] := R16
 106 [-]: GETTABLE  R16 R0 K32   ; R16 := R0["VaultDeco"]
-107 [-]: SETTABLE  R15 K31 R16  ; R15["IsVault"] := R16
-108 [-]: SETTABLE  R15 K25 R13  ; R15[0x5c69b193] := R13
+107 [-]: SETTABLE  R15 K31 R16  ; R15[0x33bdd652] := R16
+108 [-]: SETTABLE  R15 K25 R13  ; R15["SocketInfo"] := R13
 109 [-]: SETTABLE  R14 K29 R15  ; R14["ShipDecoItemInfo"] := R15
 110 [-]: GETGLOBAL R14 K7       ; R14 := _T
 111 [-]: GETTABLE  R15 R0 K34   ; R15 := R0["Type"]
-112 [-]: SETTABLE  R14 K33 R15  ; R14[0x94bdf50f] := R15
+112 [-]: SETTABLE  R14 K33 R15  ; R14[0x59e42e1b] := R15
 113 [-]: GETGLOBAL R14 K7       ; R14 := _T
 114 [-]: GETTABLE  R15 R0 K36   ; R15 := R0["Name"]
 115 [-]: SETTABLE  R14 K35 R15  ; R14["PlacedDecoName"] := R15
@@ -3658,7 +3658,7 @@
 123 [-]: JMP       126          ; PC := 126
 124 [-]: LOADBOOL  R15 0 1      ; R15 := false; PC := 125
 125 [-]: LOADBOOL  R15 1 0      ; R15 := true
-126 [-]: SETTABLE  R14 K32 R15  ; R14[0xe0cba3ca] := R15
+126 [-]: SETTABLE  R14 K32 R15  ; R14[0x9c1f3b5a] := R15
 127 [-]: GETGLOBAL R14 K9       ; R14 := 0x89326c93
 128 [-]: SELF      R14 R14 K10  ; R15 := R14; R14 := R14[0x78298275]
 129 [-]: CALL      R14 2 2      ; R14 := R14(R15)
@@ -3853,7 +3853,7 @@
 125 [-]: JMP       128          ; PC := 128
 126 [-]: LOADBOOL  R12 0 1      ; R12 := false; PC := 127
 127 [-]: LOADBOOL  R12 1 0      ; R12 := true
-128 [-]: SETTABLE  R11 K30 R12  ; R11["VaultDeco"] := R12
+128 [-]: SETTABLE  R11 K30 R12  ; R11[0xf1b3fb6d] := R12
 129 [-]: GETGLOBAL R11 K10      ; R11 := 0x89326c93
 130 [-]: SELF      R11 R11 K11  ; R12 := R11; R11 := R11[0x78298275]
 131 [-]: CALL      R11 2 2      ; R11 := R11(R12)
@@ -5960,11 +5960,11 @@
 275 [-]: NEWTABLE  R43 0 2      ; R43 := {}
 276 [-]: GETTABLE  R44 R17 K23  ; R44 := R17["StoreItem"]
 277 [-]: SETTABLE  R43 K23 R44  ; R43["StoreItem"] := R44
-278 [-]: SETTABLE  R43 K51 R40  ; R43[0x89326c93] := R40
+278 [-]: SETTABLE  R43 K51 R40  ; R43[0x5c69b193] := R40
 279 [-]: SETTABLE  R42 K50 R43  ; R42["ITEM"] := R43
-280 [-]: SETTABLE  R42 K52 R39  ; R42[0x78298275] := R39
+280 [-]: SETTABLE  R42 K52 R39  ; R42[0xafd71df5] := R39
 281 [-]: SETTABLE  R42 K53 K54  ; R42["HIDE_ITEM_GRID"] := true
-282 [-]: SETTABLE  R41 K49 R42  ; R41["marketDetailedViewParms"] := R42
+282 [-]: SETTABLE  R41 K49 R42  ; R41[0xd1964243] := R42
 283 [-]: GETGLOBAL R41 K55      ; R41 := 0x9ba7909f
 284 [-]: SELF      R41 R41 K56  ; R42 := R41; R41 := R41[0xcfba257f]
 285 [-]: GETGLOBAL R43 K57      ; R43 := 0x0032441c

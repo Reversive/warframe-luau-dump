@@ -2086,7 +2086,7 @@
  62 [-]: GETGLOBAL R2 K27       ; R2 := 0x0469f296
  63 [-]: LOADK     R3 K28       ; R3 := "SolNode409"
  64 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 65 [-]: SETTABLE  R1 K26 R2    ; R1["RequiredNodeCompletion"] := R2
+ 65 [-]: SETTABLE  R1 K26 R2    ; R1[0x7b998233] := R2
  66 [-]: SETTABLE  R0 K25 R1    ; R0["PriestQuestKeyChain"] := R1
  67 [-]: GETUPVAL  R0 U0        ; R0 := U0
  68 [-]: NEWTABLE  R1 0 4       ; R1 := {}
@@ -4046,7 +4046,7 @@
  10 [-]: SETUPVAL  R0 U0        ; U82 := R0
  11 [-]: GETGLOBAL R0 K4        ; R0 := _T
  12 [-]: CLOSURE   R1 0         ; R1 := closure(Function #34.1)
- 13 [-]: SETTABLE  R0 K5 R1     ; R0["MasteryRankUpChoice"] := R1
+ 13 [-]: SETTABLE  R0 K5 R1     ; R0[0x492f9da2] := R1
  14 [-]: GETUPVAL  R0 U0        ; R0 := U0
  15 [-]: SELF      R0 R0 K6     ; R1 := R0; R0 := R0[0xe4162eed]
  16 [-]: LOADK     R2 K7        ; R2 := "SetCallBack"
@@ -5313,7 +5313,7 @@
 426 [-]: LOADK     R60 K83      ; R60 := "/Lotus/Language/SystemMessages/GuideMainQuestMasteryRequired"
 427 [-]: NEWTABLE  R61 0 1      ; R61 := {}
 428 [-]: GETTABLE  R62 R24 K82  ; R62 := R24["RequiredLevel"]
-429 [-]: SETTABLE  R61 K84 R62  ; R61[0x00000001] := R62
+429 [-]: SETTABLE  R61 K84 R62  ; R61["RANK"] := R62
 430 [-]: CALL      R59 3 2      ; R59 := R59(R60,R61)
 431 [-]: SETTABLE  R58 K56 R59  ; R58["RequiredStoryLabel"] := R59
 432 [-]: LOADBOOL  R23 0 0      ; R23 := false
@@ -5347,7 +5347,7 @@
 460 [-]: JMP       464          ; PC := 464
 461 [-]: GETUPVAL  R65 U2       ; R65 := U2
 462 [-]: GETTABLE  R66 R24 K85  ; R66 := R24["QuestMarkerTag"]
-463 [-]: SETTABLE  R65 K85 R66  ; R65["QuestMarkerTag"] := R66
+463 [-]: SETTABLE  R65 K85 R66  ; R65[0xae91e43b] := R66
 464 [-]: TEST      R23 0        ; if not R23 then PC := 500
 465 [-]: JMP       500          ; PC := 500
 466 [-]: GETUPVAL  R65 U2       ; R65 := U2
@@ -5486,7 +5486,7 @@
 599 [-]: LOADK     R33 K83      ; R33 := "/Lotus/Language/SystemMessages/GuideMainQuestMasteryRequired"
 600 [-]: NEWTABLE  R34 0 1      ; R34 := {}
 601 [-]: GETTABLE  R35 R29 K82  ; R35 := R29["RequiredLevel"]
-602 [-]: SETTABLE  R34 K84 R35  ; R34[0x00000001] := R35
+602 [-]: SETTABLE  R34 K84 R35  ; R34["RANK"] := R35
 603 [-]: CALL      R32 3 2      ; R32 := R32(R33,R34)
 604 [-]: SETTABLE  R31 K99 R32  ; R31["Label"] := R32
 605 [-]: SETTABLE  R30 K98 R31  ; R30["LowPriorityLabel"] := R31
@@ -6685,7 +6685,7 @@
   5 [-]: LOADK     R3 K5        ; R3 := "/Lotus/Language/Menu/Store_BuyWithCredits"
   6 [-]: LOADBOOL  R4 0 0       ; R4 := false
   7 [-]: CALL      R1 4 2       ; R1 := R1(R2,R3,R4)
-  8 [-]: SETTABLE  R0 K2 R1     ; R0["Name"] := R1
+  8 [-]: SETTABLE  R0 K2 R1     ; R0[0x7b998233] := R1
   9 [-]: GETGLOBAL R1 K3        ; R1 := 0xae91e43b
  10 [-]: SELF      R1 R1 K4     ; R2 := R1; R1 := R1[0x42b04007]
  11 [-]: LOADK     R3 K7        ; R3 := "/Lotus/Language/Currency/CreditsDesc"

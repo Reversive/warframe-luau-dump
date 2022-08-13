@@ -2422,7 +2422,7 @@
 344 [-]: LOADNIL   R19 R20      ; R19 := R20 := nil
 345 [-]: LOADBOOL  R21 1 0      ; R21 := true
 346 [-]: CALL      R13 9 2      ; R13 := R13(R14,R15,R16,R17,R18,R19,R20,R21)
-347 [-]: SETTABLE  R0 K47 R13   ; R0[0x80172c74] := R13
+347 [-]: SETTABLE  R0 K47 R13   ; R0["PracticeBtn"] := R13
 348 [-]: GETTABLE  R13 R0 K47   ; R13 := R0["PracticeBtn"]
 349 [-]: SETTABLE  R13 K91 R8   ; R13["mInitLabel"] := R8
 350 [-]: GETTABLE  R13 R0 K47   ; R13 := R0["PracticeBtn"]
