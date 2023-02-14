@@ -1,8 +1,5 @@
 # warframe-lua-dump
 
-dumped lua warframe scripts (2022.07.28.11.36)
+dumped lua warframe scripts (2023.01.18.11.58)
 
-Special thanks:
-
-- [@Gudov](https://github.com/Gudov)
-- [@Rogerxiii](https://github.com/rogerxiii)
+Special thanks to gudov and rogerxiii.
