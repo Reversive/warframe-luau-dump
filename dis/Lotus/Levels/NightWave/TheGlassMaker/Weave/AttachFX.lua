@@ -28,9 +28,9 @@
   5 [-]: GETGLOBAL R3 K3        ; R3 := 0xbb23ee62
   6 [-]: GETGLOBAL R4 K4        ; R4 := EMPTY_SYMBOL
   7 [-]: GETGLOBAL R5 K5        ; R5 := 0xa421af95
-  8 [-]: LOADK     R6 0         ; R6 := 0.000000
-  9 [-]: LOADK     R7 0         ; R7 := -0.500000
- 10 [-]: LOADK     R8 0         ; R8 := 0.000000
+  8 [-]: CONST     R6 0         ; R6 := 0.000000
+  9 [-]: CONST     R7 0         ; R7 := -0.500000
+ 10 [-]: CONST     R8 0         ; R8 := 0.000000
  11 [-]: CALL      R5 4 0       ; R5,... := R5(R6,R7,R8)
  12 [-]: CALL      R1 0 1       ; R1(R2,...)
  13 [-]: RETURN    R0 1         ; return 

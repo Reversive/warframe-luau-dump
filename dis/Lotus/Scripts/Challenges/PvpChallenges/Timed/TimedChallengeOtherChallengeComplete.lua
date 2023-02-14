@@ -54,7 +54,7 @@
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x76ea806b
   2 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0x3f3ae64c]
-  3 [-]: LOADK     R2 0         ; R2 := 0.000000
+  3 [-]: CONST     R2 0         ; R2 := 0.000000
   4 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
   5 [-]: LOADNIL   R1 R1        ; R1 := nil
   6 [-]: GETGLOBAL R2 K2        ; R2 := 0x7b998233

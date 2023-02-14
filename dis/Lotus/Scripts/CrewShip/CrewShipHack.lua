@@ -10,7 +10,7 @@
   1 [-]: CLOSURE   R1 0         ; R1 := closure(Function #1)
   2 [-]: MOVE      R0 R0        ; R0 := R0
   3 [-]: SETGLOBAL R1 K0        ; CheckForInstigator := R1
-  4 [-]: LOADK     R1 100       ; R1 := 100.000000
+  4 [-]: CONST     R1 100       ; R1 := 100.000000
   5 [-]: CLOSURE   R2 1         ; R2 := closure(Function #2)
   6 [-]: MOVE      R0 R1        ; R0 := R1
   7 [-]: SETGLOBAL R2 K1        ; OnEnterDoorKill := R2
@@ -53,8 +53,8 @@
  25 [-]: SELF      R3 R3 K6     ; R4 := R3; R3 := R3[0xde321e6f]
  26 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  27 [-]: SELF      R3 R3 K7     ; R4 := R3; R3 := R3[0x4d29b3a5]
- 28 [-]: LOADK     R5 0         ; R5 := 0.000000
- 29 [-]: LOADK     R6 0         ; R6 := 0.000000
+ 28 [-]: CONST     R5 0         ; R5 := 0.000000
+ 29 [-]: CONST     R6 0         ; R6 := 0.000000
  30 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
  31 [-]: LOADNIL   R3 R3        ; R3 := nil
  32 [-]: SETUPVAL  R3 U0        ; U82 := R0
@@ -80,8 +80,8 @@
  52 [-]: SELF      R4 R2 K6     ; R5 := R2; R4 := R2[0xde321e6f]
  53 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  54 [-]: SELF      R4 R4 K7     ; R5 := R4; R4 := R4[0x4d29b3a5]
- 55 [-]: LOADK     R6 0         ; R6 := 0.000000
- 56 [-]: LOADK     R7 2         ; R7 := 2.000000
+ 55 [-]: CONST     R6 0         ; R6 := 0.000000
+ 56 [-]: CONST     R7 2         ; R7 := 2.000000
  57 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
  58 [-]: SETUPVAL  R2 U0        ; U82 := R0
  59 [-]: GETGLOBAL R4 K4        ; R4 := 0x7b998233
@@ -114,7 +114,7 @@
  86 [-]: CALL      R7 2 0       ; R7,... := R7(R8)
  87 [-]: CALL      R5 0 1       ; R5(R6,...)
  88 [-]: GETGLOBAL R5 K16       ; R5 := 0xcbd666e1
- 89 [-]: LOADK     R6 0         ; R6 := 0.000000
+ 89 [-]: CONST     R6 0         ; R6 := 0.000000
  90 [-]: CALL      R5 2 1       ; R5(R6)
  91 [-]: JMP       8            ; PC := 8
  92 [-]: RETURN    R0 1         ; return 
@@ -161,8 +161,8 @@
  30 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
  31 [-]: SELF      R5 R2 K9     ; R6 := R2; R5 := R2[0xba350480]
  32 [-]: MOVE      R7 R4        ; R7 := R4
- 33 [-]: LOADBOOL  R8 1 0       ; R8 := true
- 34 [-]: LOADBOOL  R9 1 0       ; R9 := true
+ 33 [-]: LOADKB    R8 1 0       ; R8 := true
+ 34 [-]: LOADKB    R9 1 0       ; R9 := true
  35 [-]: CALL      R5 5 1       ; R5(R6,R7,R8,R9)
  36 [-]: SELF      R5 R0 K0     ; R6 := R0; R5 := R0[0x7df2210d]
  37 [-]: CALL      R5 2 2       ; R5 := R5(R6)

@@ -10,7 +10,7 @@
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x0469f296
   2 [-]: LOADK     R1 K1        ; R1 := "GAME_C1_ROOT"
   3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: LOADK     R1 5         ; R1 := 5.000000
+  4 [-]: CONST     R1 5         ; R1 := 5.000000
   5 [-]: CLOSURE   R2 0         ; R2 := closure(Function #1)
   6 [-]: SETGLOBAL R2 K2        ; NpcEvaluateAbility := R2
   7 [-]: CLOSURE   R2 1         ; R2 := closure(Function #2)
@@ -32,7 +32,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  3
 
-  1 [-]: LOADK     R2 0         ; R2 := 0.000000
+  1 [-]: CONST     R2 0         ; R2 := 0.000000
   2 [-]: RETURN    R2 2         ; return R2
   3 [-]: RETURN    R0 1         ; return 
 
@@ -66,7 +66,7 @@
  18 [-]: CALL      R4 7 1       ; R4(R5,R6,R7,R8,R9,R10)
  19 [-]: SELF      R4 R1 K10    ; R5 := R1; R4 := R1[0xe43b7b6b]
  20 [-]: CALL      R4 2 1       ; R4(R5)
- 21 [-]: LOADK     R4 0         ; R4 := 0.000000
+ 21 [-]: CONST     R4 0         ; R4 := 0.000000
  22 [-]: GETUPVAL  R5 U1        ; R5 := U1
  23 [-]: LT        0 R4 R5      ; if R4 >= R5 then PC := 32
  24 [-]: JMP       32           ; PC := 32
@@ -74,7 +74,7 @@
  26 [-]: CALL      R5 1 2       ; R5 := R5()
  27 [-]: ADD       R4 R4 R5     ; R4 := R4 + R5
  28 [-]: GETGLOBAL R5 K12       ; R5 := 0xcbd666e1
- 29 [-]: LOADK     R6 0         ; R6 := 0.000000
+ 29 [-]: CONST     R6 0         ; R6 := 0.000000
  30 [-]: CALL      R5 2 1       ; R5(R6)
  31 [-]: JMP       22           ; PC := 22
  32 [-]: RETURN    R0 1         ; return 

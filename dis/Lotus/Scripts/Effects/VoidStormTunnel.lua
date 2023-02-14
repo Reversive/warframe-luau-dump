@@ -26,11 +26,11 @@
 ; Max Stack Size:  7
 
   1 [-]: SELF      R1 R0 K0     ; R2 := R0; R1 := R0[0x768274d6]
-  2 [-]: LOADBOOL  R3 1 0       ; R3 := true
-  3 [-]: LOADBOOL  R4 1 0       ; R4 := true
+  2 [-]: LOADKB    R3 1 0       ; R3 := true
+  3 [-]: LOADKB    R4 1 0       ; R4 := true
   4 [-]: CALL      R1 4 1       ; R1(R2,R3,R4)
-  5 [-]: LOADK     R1 0         ; R1 := 0.000000
-  6 [-]: LOADK     R2 2         ; R2 := 2.000000
+  5 [-]: CONST     R1 0         ; R1 := 0.000000
+  6 [-]: CONST     R2 2         ; R2 := 2.000000
   7 [-]: LT        0 R1 R2      ; if R1 >= R2 then PC := 18
   8 [-]: JMP       18           ; PC := 18
   9 [-]: GETGLOBAL R3 K1        ; R3 := 0xfff641af
@@ -45,7 +45,7 @@
  18 [-]: SELF      R3 R0 K2     ; R4 := R0; R3 := R0[0x986d2ab8]
  19 [-]: GETGLOBAL R5 K3        ; R5 := 0x6c97a788
  20 [-]: GETTABLE  R5 R5 K4     ; R5 := R5["UNLIT_ATTEN"]
- 21 [-]: LOADK     R6 1         ; R6 := 1.000000
+ 21 [-]: CONST     R6 1         ; R6 := 1.000000
  22 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
  23 [-]: RETURN    R0 1         ; return 
 
@@ -73,7 +73,7 @@
  12 [-]: GETGLOBAL R8 K2        ; R8 := 0x0469f296
  13 [-]: LOADK     R9 K6        ; R9 := "LerpUnlitAtten"
  14 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 15 [-]: LOADBOOL  R9 0 0       ; R9 := false
+ 15 [-]: LOADKB    R9 0 0       ; R9 := false
  16 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
  17 [-]: TFORLOOP  R1 2         ; R4,R5 :=  R1(R2,R3); if R4 ~= nil then begin PC = 11; R3 := R4 end
  18 [-]: JMP       11           ; PC := 11
@@ -85,7 +85,7 @@
  24 [-]: GETGLOBAL R7 K2        ; R7 := 0x0469f296
  25 [-]: LOADK     R8 K10       ; R8 := "VoidStormMisc"
  26 [-]: GETGLOBAL R9 K11       ; R9 := 0x55730e1a
- 27 [-]: LOADK     R10 1        ; R10 := 1.000000
+ 27 [-]: CONST     R10 1        ; R10 := 1.000000
  28 [-]: LEN       R11 R6       ; R11 := # R6
  29 [-]: CALL      R9 3 2       ; R9 := R9(R10,R11)
  30 [-]: GETTABLE  R9 R6 R9     ; R9 := R6[R9]
@@ -103,7 +103,7 @@
  42 [-]: GETGLOBAL R16 K2       ; R16 := 0x0469f296
  43 [-]: LOADK     R17 K6       ; R17 := "LerpUnlitAtten"
  44 [-]: CALL      R16 2 2      ; R16 := R16(R17)
- 45 [-]: LOADBOOL  R17 0 0      ; R17 := false
+ 45 [-]: LOADKB    R17 0 0      ; R17 := false
  46 [-]: CALL      R14 4 1      ; R14(R15,R16,R17)
  47 [-]: TFORLOOP  R9 2         ; R12,R13 :=  R9(R10,R11); if R12 ~= nil then begin PC = 41; R11 := R12 end
  48 [-]: JMP       41           ; PC := 41
@@ -125,7 +125,7 @@
   4 [-]: TEST      R0 0         ; if not R0 then PC := 10
   5 [-]: JMP       10           ; PC := 10
   6 [-]: GETGLOBAL R0 K2        ; R0 := 0xcbd666e1
-  7 [-]: LOADK     R1 0         ; R1 := 0.000000
+  7 [-]: CONST     R1 0         ; R1 := 0.000000
   8 [-]: CALL      R0 2 1       ; R0(R1)
   9 [-]: JMP       1            ; PC := 1
  10 [-]: GETGLOBAL R0 K1        ; R0 := 0xbe190284
@@ -144,7 +144,7 @@
  23 [-]: TEST      R1 0         ; if not R1 then PC := 33
  24 [-]: JMP       33           ; PC := 33
  25 [-]: GETGLOBAL R1 K2        ; R1 := 0xcbd666e1
- 26 [-]: LOADK     R2 0         ; R2 := 0.000000
+ 26 [-]: CONST     R2 0         ; R2 := 0.000000
  27 [-]: CALL      R1 2 1       ; R1(R2)
  28 [-]: GETGLOBAL R1 K1        ; R1 := 0xbe190284
  29 [-]: SELF      R1 R1 K5     ; R2 := R1; R1 := R1[0xd7d79b74]

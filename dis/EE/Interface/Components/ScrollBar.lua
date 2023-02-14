@@ -12,7 +12,7 @@
   3 [-]: GETGLOBAL R2 K1        ; R2 := package
   4 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["seeall"]
   5 [-]: CALL      R0 3 1       ; R0(R1,R2)
-  6 [-]: LOADK     R0 30        ; R0 := 30.000000
+  6 [-]: CONST     R0 30        ; R0 := 30.000000
   7 [-]: GETGLOBAL R1 K3        ; R1 := 0x2d0fad09
   8 [-]: LOADK     R2 K4        ; R2 := "EE.Interface.Utilities"
   9 [-]: CALL      R1 2 2       ; R1 := R1(R2)
@@ -51,7 +51,7 @@
  13 [-]: CONCAT    R6 R6 R8     ; R6 := R6 .. R7 .. R8
  14 [-]: CALL      R5 2 1       ; R5(R6)
  15 [-]: GETGLOBAL R5 K4        ; R5 := 0x60cce7b4
- 16 [-]: LOADBOOL  R6 0 0       ; R6 := false
+ 16 [-]: LOADKB    R6 0 0       ; R6 := false
  17 [-]: CALL      R5 2 1       ; R5(R6)
  18 [-]: GETGLOBAL R5 K0        ; R5 := 0x7b998233
  19 [-]: MOVE      R6 R3        ; R6 := R3
@@ -64,9 +64,9 @@
  26 [-]: LOADK     R6 K6        ; R6 := "The visible proportion is a number (> 0 and < 1)"
  27 [-]: CALL      R5 2 1       ; R5(R6)
  28 [-]: GETGLOBAL R5 K4        ; R5 := 0x60cce7b4
- 29 [-]: LOADBOOL  R6 0 0       ; R6 := false
+ 29 [-]: LOADKB    R6 0 0       ; R6 := false
  30 [-]: CALL      R5 2 1       ; R5(R6)
- 31 [-]: NEWTABLE  R5 0 31      ; R5 := {}
+ 31 [-]: NEWTABLE  R5 0 30      ; R5 := {}
  32 [-]: SETTABLE  R5 K7 R0     ; R5["mMovie"] := R0
  33 [-]: SETTABLE  R5 K8 R1     ; R5["mClipName"] := R1
  34 [-]: SETTABLE  R5 K9 K10    ; R5["mInitialized"] := false
@@ -76,30 +76,30 @@
  38 [-]: SETTABLE  R5 K15 K16   ; R5["mActive"] := nil
  39 [-]: SETTABLE  R5 K17 K10   ; R5["mEnableSmoothScroll"] := false
  40 [-]: GETGLOBAL R6 K19       ; R6 := 0x78ca68a2
- 41 [-]: LOADK     R7 0         ; R7 := 0.000000
- 42 [-]: LOADK     R8 0         ; R8 := 0.125000
+ 41 [-]: CONST     R7 0         ; R7 := 0.000000
+ 42 [-]: CONST     R8 0         ; R8 := 0.125000
  43 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
  44 [-]: SETTABLE  R5 K18 R6    ; R5["mSmoothScroll"] := R6
  45 [-]: SELF      R6 R0 K21    ; R7 := R0; R6 := R0[0x91a24e4b]
  46 [-]: MOVE      R8 R1        ; R8 := R1
- 47 [-]: LOADK     R9 0         ; R9 := 0.000000
+ 47 [-]: CONST     R9 0         ; R9 := 0.000000
  48 [-]: CALL      R6 4 2       ; R6 := R6(R7,R8,R9)
  49 [-]: SETTABLE  R5 K20 R6    ; R5["mInitialRootX"] := R6
  50 [-]: SELF      R6 R0 K23    ; R7 := R0; R6 := R0[0x2ce15376]
  51 [-]: MOVE      R8 R1        ; R8 := R1
  52 [-]: LOADK     R9 K24       ; R9 := "Scrub"
- 53 [-]: LOADK     R10 1        ; R10 := 1.000000
+ 53 [-]: CONST     R10 1        ; R10 := 1.000000
  54 [-]: CALL      R6 5 2       ; R6 := R6(R7,R8,R9,R10)
  55 [-]: SETTABLE  R5 K22 R6    ; R5["mInitialY"] := R6
  56 [-]: SELF      R6 R0 K21    ; R7 := R0; R6 := R0[0x91a24e4b]
  57 [-]: MOVE      R8 R1        ; R8 := R1
  58 [-]: LOADK     R9 K26       ; R9 := ".HitZone"
  59 [-]: CONCAT    R8 R8 R9     ; R8 := R8 .. R9
- 60 [-]: LOADK     R9 5         ; R9 := 5.000000
+ 60 [-]: CONST     R9 5         ; R9 := 5.000000
  61 [-]: CALL      R6 4 2       ; R6 := R6(R7,R8,R9)
  62 [-]: TEST      R6 1         ; if R6 then PC := 65
  63 [-]: JMP       65           ; PC := 65
- 64 [-]: LOADK     R6 1         ; R6 := 1.000000
+ 64 [-]: CONST     R6 1         ; R6 := 1.000000
  65 [-]: SETTABLE  R5 K25 R6    ; R5["mInitialHitzoneScaleX"] := R6
  66 [-]: SETTABLE  R5 K27 R2    ; R5["mHeight"] := R2
  67 [-]: SETTABLE  R5 K28 K29   ; R5["mExpandedScale"] := 100.000000
@@ -134,86 +134,84 @@
  96 [-]: CLOSURE   R6 4         ; R6 := closure(Function #1.5)
  97 [-]: SETTABLE  R5 K53 R6    ; R5["SetHeight"] := R6
  98 [-]: CLOSURE   R6 5         ; R6 := closure(Function #1.6)
- 99 [-]: SETTABLE  R5 K50 R6    ; R5["GetScrollValue"] := R6
+ 99 [-]: SETTABLE  R5 K54 R6    ; R5["Initialize"] := R6
 100 [-]: CLOSURE   R6 6         ; R6 := closure(Function #1.7)
-101 [-]: SETTABLE  R5 K54 R6    ; R5["Initialize"] := R6
+101 [-]: SETTABLE  R5 K55 R6    ; R5["UpdateScrollPos"] := R6
 102 [-]: CLOSURE   R6 7         ; R6 := closure(Function #1.8)
-103 [-]: SETTABLE  R5 K55 R6    ; R5["UpdateScrollPos"] := R6
+103 [-]: SETTABLE  R5 K56 R6    ; R5["Update"] := R6
 104 [-]: CLOSURE   R6 8         ; R6 := closure(Function #1.9)
-105 [-]: SETTABLE  R5 K56 R6    ; R5["Update"] := R6
-106 [-]: CLOSURE   R6 9         ; R6 := closure(Function #1.10)
-107 [-]: GETUPVAL  R0 U1        ; R0 := U1
-108 [-]: GETUPVAL  R0 U0        ; R0 := U0
-109 [-]: SETTABLE  R5 K57 R6    ; R5["GetScrubHeight"] := R6
-110 [-]: CLOSURE   R6 10        ; R6 := closure(Function #1.11)
-111 [-]: GETUPVAL  R0 U2        ; R0 := U2
-112 [-]: SETTABLE  R5 K58 R6    ; R5["UpdateColors"] := R6
-113 [-]: CLOSURE   R6 11        ; R6 := closure(Function #1.12)
-114 [-]: GETUPVAL  R0 U1        ; R0 := U1
-115 [-]: SETTABLE  R5 K59 R6    ; R5["RedrawScrollBar"] := R6
+105 [-]: GETUPVAL  R0 U1        ; R0 := U1
+106 [-]: GETUPVAL  R0 U0        ; R0 := U0
+107 [-]: SETTABLE  R5 K57 R6    ; R5["GetScrubHeight"] := R6
+108 [-]: CLOSURE   R6 9         ; R6 := closure(Function #1.10)
+109 [-]: GETUPVAL  R0 U2        ; R0 := U2
+110 [-]: SETTABLE  R5 K58 R6    ; R5["UpdateColors"] := R6
+111 [-]: CLOSURE   R6 10        ; R6 := closure(Function #1.11)
+112 [-]: GETUPVAL  R0 U1        ; R0 := U1
+113 [-]: SETTABLE  R5 K59 R6    ; R5["RedrawScrollBar"] := R6
+114 [-]: CLOSURE   R6 11        ; R6 := closure(Function #1.12)
+115 [-]: SETTABLE  R5 K60 R6    ; R5["GetDragRange"] := R6
 116 [-]: CLOSURE   R6 12        ; R6 := closure(Function #1.13)
-117 [-]: SETTABLE  R5 K60 R6    ; R5["GetDragRange"] := R6
+117 [-]: SETTABLE  R5 K61 R6    ; R5["StartDrag"] := R6
 118 [-]: CLOSURE   R6 13        ; R6 := closure(Function #1.14)
-119 [-]: SETTABLE  R5 K61 R6    ; R5["StartDrag"] := R6
+119 [-]: SETTABLE  R5 K62 R6    ; R5["StopDrag"] := R6
 120 [-]: CLOSURE   R6 14        ; R6 := closure(Function #1.15)
-121 [-]: SETTABLE  R5 K62 R6    ; R5["StopDrag"] := R6
+121 [-]: SETTABLE  R5 K63 R6    ; R5["ScrubRollOver"] := R6
 122 [-]: CLOSURE   R6 15        ; R6 := closure(Function #1.16)
-123 [-]: SETTABLE  R5 K63 R6    ; R5["ScrubRollOver"] := R6
+123 [-]: SETTABLE  R5 K64 R6    ; R5["ScrubRollOut"] := R6
 124 [-]: CLOSURE   R6 16        ; R6 := closure(Function #1.17)
-125 [-]: SETTABLE  R5 K64 R6    ; R5["ScrubRollOut"] := R6
+125 [-]: SETTABLE  R5 K65 R6    ; R5["ScrollBarRollOver"] := R6
 126 [-]: CLOSURE   R6 17        ; R6 := closure(Function #1.18)
-127 [-]: SETTABLE  R5 K65 R6    ; R5["ScrollBarRollOver"] := R6
+127 [-]: SETTABLE  R5 K66 R6    ; R5["ScrollBarRollOut"] := R6
 128 [-]: CLOSURE   R6 18        ; R6 := closure(Function #1.19)
-129 [-]: SETTABLE  R5 K66 R6    ; R5["ScrollBarRollOut"] := R6
-130 [-]: CLOSURE   R6 19        ; R6 := closure(Function #1.20)
-131 [-]: GETUPVAL  R0 U1        ; R0 := U1
-132 [-]: SETTABLE  R5 K67 R6    ; R5["ClickScrollBar"] := R6
+129 [-]: GETUPVAL  R0 U1        ; R0 := U1
+130 [-]: SETTABLE  R5 K67 R6    ; R5["ClickScrollBar"] := R6
+131 [-]: CLOSURE   R6 19        ; R6 := closure(Function #1.20)
+132 [-]: SETTABLE  R5 K68 R6    ; R5["SetVisibleProp"] := R6
 133 [-]: CLOSURE   R6 20        ; R6 := closure(Function #1.21)
-134 [-]: SETTABLE  R5 K68 R6    ; R5["SetVisibleProp"] := R6
+134 [-]: SETTABLE  R5 K69 R6    ; R5["ScrollBy"] := R6
 135 [-]: CLOSURE   R6 21        ; R6 := closure(Function #1.22)
-136 [-]: SETTABLE  R5 K69 R6    ; R5["ScrollBy"] := R6
+136 [-]: SETTABLE  R5 K70 R6    ; R5["ScrollByStep"] := R6
 137 [-]: CLOSURE   R6 22        ; R6 := closure(Function #1.23)
-138 [-]: SETTABLE  R5 K70 R6    ; R5["ScrollByStep"] := R6
+138 [-]: SETTABLE  R5 K71 R6    ; R5["ScrollUp"] := R6
 139 [-]: CLOSURE   R6 23        ; R6 := closure(Function #1.24)
-140 [-]: SETTABLE  R5 K71 R6    ; R5["ScrollUp"] := R6
+140 [-]: SETTABLE  R5 K72 R6    ; R5["ScrollDown"] := R6
 141 [-]: CLOSURE   R6 24        ; R6 := closure(Function #1.25)
-142 [-]: SETTABLE  R5 K72 R6    ; R5["ScrollDown"] := R6
-143 [-]: CLOSURE   R6 25        ; R6 := closure(Function #1.26)
-144 [-]: GETUPVAL  R0 U1        ; R0 := U1
-145 [-]: SETTABLE  R5 K73 R6    ; R5["OnGamepadTransition"] := R6
+142 [-]: GETUPVAL  R0 U1        ; R0 := U1
+143 [-]: SETTABLE  R5 K73 R6    ; R5["OnGamepadTransition"] := R6
+144 [-]: CLOSURE   R6 25        ; R6 := closure(Function #1.26)
+145 [-]: SETTABLE  R5 K74 R6    ; R5["HookUpCallbacks"] := R6
 146 [-]: CLOSURE   R6 26        ; R6 := closure(Function #1.27)
-147 [-]: SETTABLE  R5 K74 R6    ; R5["HookUpCallbacks"] := R6
+147 [-]: SETTABLE  R5 K75 R6    ; R5["SetEnabled"] := R6
 148 [-]: CLOSURE   R6 27        ; R6 := closure(Function #1.28)
-149 [-]: SETTABLE  R5 K75 R6    ; R5["SetEnabled"] := R6
-150 [-]: CLOSURE   R6 28        ; R6 := closure(Function #1.29)
-151 [-]: GETUPVAL  R0 U1        ; R0 := U1
-152 [-]: SETTABLE  R5 K76 R6    ; R5["SetActive"] := R6
+149 [-]: GETUPVAL  R0 U1        ; R0 := U1
+150 [-]: SETTABLE  R5 K76 R6    ; R5["SetActive"] := R6
+151 [-]: CLOSURE   R6 28        ; R6 := closure(Function #1.29)
+152 [-]: SETTABLE  R5 K77 R6    ; R5["SetVisibleRangeMaterial"] := R6
 153 [-]: CLOSURE   R6 29        ; R6 := closure(Function #1.30)
-154 [-]: SETTABLE  R5 K77 R6    ; R5[0x44aa79ac] := R6
-155 [-]: CLOSURE   R6 30        ; R6 := closure(Function #1.31)
-156 [-]: GETUPVAL  R0 U1        ; R0 := U1
-157 [-]: SETTABLE  R5 K78 R6    ; R5["ApplyScale"] := R6
-158 [-]: GETGLOBAL R6 K79       ; R6 := 0x34291f5c
-159 [-]: GETTABLE  R6 R6 K80    ; R6 := R6[0xe6b41adb]
-160 [-]: CALL      R6 1 2       ; R6 := R6()
-161 [-]: TEST      R6 0         ; if not R6 then PC := 169
-162 [-]: JMP       169          ; PC := 169
-163 [-]: GETTABLE  R6 R5 K46    ; R6 := R5["mScale"]
-164 [-]: MUL       R6 R6 K81    ; R6 := R6 * 2.000000
-165 [-]: SETTABLE  R5 K46 R6    ; R5["mScale"] := R6
-166 [-]: GETTABLE  R6 R5 K47    ; R6 := R5["mThemedScale"]
-167 [-]: MUL       R6 R6 K81    ; R6 := R6 * 2.000000
-168 [-]: SETTABLE  R5 K47 R6    ; R5["mThemedScale"] := R6
-169 [-]: SELF      R6 R5 K82    ; R7 := R5; R6 := R5[0x075502a4]
-170 [-]: CALL      R6 2 1       ; R6(R7)
-171 [-]: SELF      R6 R5 K83    ; R7 := R5; R6 := R5[0x557b7601]
-172 [-]: GETGLOBAL R8 K79       ; R8 := 0x34291f5c
-173 [-]: GETTABLE  R8 R8 K84    ; R8 := R8[0x1467d5f4]
-174 [-]: CALL      R8 1 2       ; R8 := R8()
-175 [-]: NOT       R8 R8        ; R8 := not R8
-176 [-]: CALL      R6 3 1       ; R6(R7,R8)
-177 [-]: RETURN    R5 2         ; return R5
-178 [-]: RETURN    R0 1         ; return 
+154 [-]: GETUPVAL  R0 U1        ; R0 := U1
+155 [-]: SETTABLE  R5 K78 R6    ; R5["ApplyScale"] := R6
+156 [-]: GETGLOBAL R6 K79       ; R6 := 0x34291f5c
+157 [-]: GETTABLE  R6 R6 K80    ; R6 := R6[0xe6b41adb]
+158 [-]: CALL      R6 1 2       ; R6 := R6()
+159 [-]: TEST      R6 0         ; if not R6 then PC := 167
+160 [-]: JMP       167          ; PC := 167
+161 [-]: GETTABLE  R6 R5 K46    ; R6 := R5["mScale"]
+162 [-]: MUL       R6 R6 K81    ; R6 := R6 * 2.000000
+163 [-]: SETTABLE  R5 K46 R6    ; R5["mScale"] := R6
+164 [-]: GETTABLE  R6 R5 K47    ; R6 := R5["mThemedScale"]
+165 [-]: MUL       R6 R6 K81    ; R6 := R6 * 2.000000
+166 [-]: SETTABLE  R5 K47 R6    ; R5["mThemedScale"] := R6
+167 [-]: SELF      R6 R5 K82    ; R7 := R5; R6 := R5[0x075502a4]
+168 [-]: CALL      R6 2 1       ; R6(R7)
+169 [-]: SELF      R6 R5 K83    ; R7 := R5; R6 := R5[0x557b7601]
+170 [-]: GETGLOBAL R8 K79       ; R8 := 0x34291f5c
+171 [-]: GETTABLE  R8 R8 K84    ; R8 := R8[0x1467d5f4]
+172 [-]: CALL      R8 1 2       ; R8 := R8()
+173 [-]: NOT       R8 R8        ; R8 :=  R8
+174 [-]: CALL      R6 3 1       ; R6(R7,R8)
+175 [-]: RETURN    R5 2         ; return R5
+176 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1.1:
@@ -230,7 +228,7 @@
   3 [-]: JMP       6            ; PC := 6
   4 [-]: GETTABLE  R1 R0 K0     ; R1 := R0["mParentEnv"]
   5 [-]: RETURN    R1 2         ; return R1
-  6 [-]: LOADK     R1 1         ; R1 := 1.000000
+  6 [-]: CONST     R1 1         ; R1 := 1.000000
   7 [-]: LOADNIL   R2 R2        ; R2 := nil
   8 [-]: GETGLOBAL R3 K2        ; R3 := 0xcd0165a3
   9 [-]: MOVE      R4 R1        ; R4 := R1
@@ -298,8 +296,8 @@
   7 [-]: RETURN    R0 1         ; return 
   8 [-]: GETGLOBAL R4 K2        ; R4 := 0x42dcc9f5
   9 [-]: MOVE      R5 R1        ; R5 := R1
- 10 [-]: LOADK     R6 0         ; R6 := 0.000000
- 11 [-]: LOADK     R7 1         ; R7 := 1.000000
+ 10 [-]: CONST     R6 0         ; R6 := 0.000000
+ 11 [-]: CONST     R7 1         ; R7 := 1.000000
  12 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
  13 [-]: MOVE      R1 R4        ; R1 := R4
  14 [-]: SELF      R4 R0 K3     ; R5 := R0; R4 := R0[0xb0913829]
@@ -311,14 +309,14 @@
  20 [-]: SELF      R8 R8 K5     ; R9 := R8; R8 := R8[0xf64b7262]
  21 [-]: GETTABLE  R10 R0 K6    ; R10 := R0["mClipName"]
  22 [-]: LOADK     R11 K7       ; R11 := "Scrub"
- 23 [-]: LOADK     R12 1        ; R12 := 1.000000
+ 23 [-]: CONST     R12 1        ; R12 := 1.000000
  24 [-]: MOVE      R13 R7       ; R13 := R7
  25 [-]: CALL      R8 6 1       ; R8(R9,R10,R11,R12,R13)
  26 [-]: GETTABLE  R8 R0 K8     ; R8 := R0["mCurrentScroll"]
  27 [-]: GETGLOBAL R9 K2        ; R9 := 0x42dcc9f5
  28 [-]: MOVE      R10 R1       ; R10 := R1
- 29 [-]: LOADK     R11 0        ; R11 := 0.000000
- 30 [-]: LOADK     R12 1        ; R12 := 1.000000
+ 29 [-]: CONST     R11 0        ; R11 := 0.000000
+ 30 [-]: CONST     R12 1        ; R12 := 1.000000
  31 [-]: CALL      R9 4 2       ; R9 := R9(R10,R11,R12)
  32 [-]: GETTABLE  R10 R0 K9    ; R10 := R0["mEnableSmoothScroll"]
  33 [-]: TEST      R10 0        ; if not R10 then PC := 73
@@ -411,20 +409,6 @@
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  2
-
-  1 [-]: GETTABLE  R1 R0 K0     ; R1 := R0["mCurrentScroll"]
-  2 [-]: RETURN    R1 2         ; return R1
-  3 [-]: RETURN    R0 1         ; return 
-
-
-; Function #1.7:
-;
-; Name:            
-; Defined at line: 134
-; #Upvalues:       0
-; #Parameters:     1
-; Is_vararg:       0
 ; Max Stack Size:  7
 
   1 [-]: GETTABLE  R1 R0 K0     ; R1 := R0["mMovie"]
@@ -432,14 +416,14 @@
   3 [-]: GETTABLE  R3 R0 K2     ; R3 := R0["mClipName"]
   4 [-]: LOADK     R4 K3        ; R4 := "HitZone"
   5 [-]: LOADK     R5 K4        ; R5 := "noMenuSelection"
-  6 [-]: LOADBOOL  R6 1 0       ; R6 := true
+  6 [-]: LOADKB    R6 1 0       ; R6 := true
   7 [-]: CALL      R1 6 1       ; R1(R2,R3,R4,R5,R6)
   8 [-]: GETTABLE  R1 R0 K0     ; R1 := R0["mMovie"]
   9 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1[0x19ad3f57]
  10 [-]: GETTABLE  R3 R0 K2     ; R3 := R0["mClipName"]
  11 [-]: LOADK     R4 K5        ; R4 := "Scrub.HitZone"
  12 [-]: LOADK     R5 K4        ; R5 := "noMenuSelection"
- 13 [-]: LOADBOOL  R6 1 0       ; R6 := true
+ 13 [-]: LOADKB    R6 1 0       ; R6 := true
  14 [-]: CALL      R1 6 1       ; R1(R2,R3,R4,R5,R6)
  15 [-]: SELF      R1 R0 K6     ; R2 := R0; R1 := R0[0xa8854625]
  16 [-]: CALL      R1 2 1       ; R1(R2)
@@ -447,10 +431,10 @@
  18 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.8:
+; Function #1.7:
 ;
 ; Name:            
-; Defined at line: 143
+; Defined at line: 138
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -461,7 +445,7 @@
   3 [-]: SELF      R2 R2 K2     ; R3 := R2; R2 := R2[0x2ce15376]
   4 [-]: GETTABLE  R4 R0 K3     ; R4 := R0["mClipName"]
   5 [-]: LOADK     R5 K4        ; R5 := "Scrub"
-  6 [-]: LOADK     R6 1         ; R6 := 1.000000
+  6 [-]: CONST     R6 1         ; R6 := 1.000000
   7 [-]: CALL      R2 5 2       ; R2 := R2(R3,R4,R5,R6)
   8 [-]: EQ        1 R2 K5      ; if R2 == nil then PC := 52
   9 [-]: JMP       52           ; PC := 52
@@ -471,8 +455,8 @@
  13 [-]: GETGLOBAL R6 K7        ; R6 := 0x42dcc9f5
  14 [-]: SUB       R7 R2 R3     ; R7 := R2 - R3
  15 [-]: DIV       R7 R7 R5     ; R7 := R7 / R5
- 16 [-]: LOADK     R8 0         ; R8 := 0.000000
- 17 [-]: LOADK     R9 1         ; R9 := 1.000000
+ 16 [-]: CONST     R8 0         ; R8 := 0.000000
+ 17 [-]: CONST     R9 1         ; R9 := 1.000000
  18 [-]: CALL      R6 4 2       ; R6 := R6(R7,R8,R9)
  19 [-]: GETTABLE  R7 R0 K8     ; R7 := R0["mEnableSmoothScroll"]
  20 [-]: TEST      R7 0         ; if not R7 then PC := 40
@@ -510,10 +494,10 @@
  52 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.9:
+; Function #1.8:
 ;
 ; Name:            
-; Defined at line: 167
+; Defined at line: 162
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -530,10 +514,10 @@
   9 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.10:
+; Function #1.9:
 ;
 ; Name:            
-; Defined at line: 174
+; Defined at line: 169
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -553,10 +537,10 @@
  12 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.11:
+; Function #1.10:
 ;
 ; Name:            
-; Defined at line: 179
+; Defined at line: 174
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -565,31 +549,31 @@
   1 [-]: GETTABLE  R1 R0 K0     ; R1 := R0["mApplyThemes"]
   2 [-]: GETUPVAL  R2 U0        ; R2 := U0
   3 [-]: GETTABLE  R2 R2 K1     ; R2 := R2[0x5d10207d]
-  4 [-]: LOADK     R3 9         ; R3 := 9.000000
-  5 [-]: LOADBOOL  R4 1 0       ; R4 := true
+  4 [-]: CONST     R3 9         ; R3 := 9.000000
+  5 [-]: LOADKB    R4 1 0       ; R4 := true
   6 [-]: MOVE      R5 R1        ; R5 := R1
   7 [-]: CALL      R2 4 2       ; R2 := R2(R3,R4,R5)
   8 [-]: GETTABLE  R3 R0 K3     ; R3 := R0["mMovie"]
   9 [-]: SELF      R3 R3 K4     ; R4 := R3; R3 := R3[0xf64b7262]
  10 [-]: GETTABLE  R5 R0 K5     ; R5 := R0["mClipName"]
  11 [-]: LOADK     R6 K6        ; R6 := "Scrub.ScrubMiddle"
- 12 [-]: LOADK     R7 9         ; R7 := 9.000000
+ 12 [-]: CONST     R7 9         ; R7 := 9.000000
  13 [-]: MOVE      R8 R2        ; R8 := R2
  14 [-]: CALL      R3 6 1       ; R3(R4,R5,R6,R7,R8)
  15 [-]: GETTABLE  R3 R0 K3     ; R3 := R0["mMovie"]
  16 [-]: SELF      R3 R3 K4     ; R4 := R3; R3 := R3[0xf64b7262]
  17 [-]: GETTABLE  R5 R0 K5     ; R5 := R0["mClipName"]
  18 [-]: LOADK     R6 K7        ; R6 := "Bg"
- 19 [-]: LOADK     R7 9         ; R7 := 9.000000
+ 19 [-]: CONST     R7 9         ; R7 := 9.000000
  20 [-]: MOVE      R8 R2        ; R8 := R2
  21 [-]: CALL      R3 6 1       ; R3(R4,R5,R6,R7,R8)
  22 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.12:
+; Function #1.11:
 ;
 ; Name:            
-; Defined at line: 187
+; Defined at line: 182
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -601,7 +585,7 @@
   4 [-]: SELF      R2 R2 K2     ; R3 := R2; R2 := R2[0xf64b7262]
   5 [-]: GETTABLE  R4 R0 K3     ; R4 := R0["mClipName"]
   6 [-]: LOADK     R5 K4        ; R5 := "BottomCap"
-  7 [-]: LOADK     R6 1         ; R6 := 1.000000
+  7 [-]: CONST     R6 1         ; R6 := 1.000000
   8 [-]: GETTABLE  R7 R0 K5     ; R7 := R0["mHeight"]
   9 [-]: SUB       R7 R7 K6     ; R7 := R7 - 8.000000
  10 [-]: CALL      R2 6 1       ; R2(R3,R4,R5,R6,R7)
@@ -609,7 +593,7 @@
  12 [-]: SELF      R2 R2 K2     ; R3 := R2; R2 := R2[0xf64b7262]
  13 [-]: GETTABLE  R4 R0 K3     ; R4 := R0["mClipName"]
  14 [-]: LOADK     R5 K7        ; R5 := "Bg"
- 15 [-]: LOADK     R6 13        ; R6 := 13.000000
+ 15 [-]: CONST     R6 13        ; R6 := 13.000000
  16 [-]: GETTABLE  R7 R0 K5     ; R7 := R0["mHeight"]
  17 [-]: SUB       R7 R7 K8     ; R7 := R7 - 4.000000
  18 [-]: CALL      R2 6 1       ; R2(R3,R4,R5,R6,R7)
@@ -617,7 +601,7 @@
  20 [-]: SELF      R2 R2 K2     ; R3 := R2; R2 := R2[0xf64b7262]
  21 [-]: GETTABLE  R4 R0 K3     ; R4 := R0["mClipName"]
  22 [-]: LOADK     R5 K9        ; R5 := "Blurer"
- 23 [-]: LOADK     R6 13        ; R6 := 13.000000
+ 23 [-]: CONST     R6 13        ; R6 := 13.000000
  24 [-]: GETTABLE  R7 R0 K5     ; R7 := R0["mHeight"]
  25 [-]: SUB       R7 R7 K8     ; R7 := R7 - 4.000000
  26 [-]: CALL      R2 6 1       ; R2(R3,R4,R5,R6,R7)
@@ -625,28 +609,28 @@
  28 [-]: SELF      R2 R2 K2     ; R3 := R2; R2 := R2[0xf64b7262]
  29 [-]: GETTABLE  R4 R0 K3     ; R4 := R0["mClipName"]
  30 [-]: LOADK     R5 K10       ; R5 := "HitZone"
- 31 [-]: LOADK     R6 13        ; R6 := 13.000000
+ 31 [-]: CONST     R6 13        ; R6 := 13.000000
  32 [-]: GETTABLE  R7 R0 K5     ; R7 := R0["mHeight"]
  33 [-]: CALL      R2 6 1       ; R2(R3,R4,R5,R6,R7)
  34 [-]: GETTABLE  R2 R0 K1     ; R2 := R0["mMovie"]
  35 [-]: SELF      R2 R2 K2     ; R3 := R2; R2 := R2[0xf64b7262]
  36 [-]: GETTABLE  R4 R0 K3     ; R4 := R0["mClipName"]
  37 [-]: LOADK     R5 K11       ; R5 := "Scrub.ScrubMiddle"
- 38 [-]: LOADK     R6 13        ; R6 := 13.000000
+ 38 [-]: CONST     R6 13        ; R6 := 13.000000
  39 [-]: MOVE      R7 R1        ; R7 := R1
  40 [-]: CALL      R2 6 1       ; R2(R3,R4,R5,R6,R7)
  41 [-]: GETTABLE  R2 R0 K1     ; R2 := R0["mMovie"]
  42 [-]: SELF      R2 R2 K2     ; R3 := R2; R2 := R2[0xf64b7262]
  43 [-]: GETTABLE  R4 R0 K3     ; R4 := R0["mClipName"]
  44 [-]: LOADK     R5 K12       ; R5 := "Scrub.HitZone"
- 45 [-]: LOADK     R6 13        ; R6 := 13.000000
+ 45 [-]: CONST     R6 13        ; R6 := 13.000000
  46 [-]: MOVE      R7 R1        ; R7 := R1
  47 [-]: CALL      R2 6 1       ; R2(R3,R4,R5,R6,R7)
  48 [-]: GETTABLE  R2 R0 K1     ; R2 := R0["mMovie"]
  49 [-]: SELF      R2 R2 K2     ; R3 := R2; R2 := R2[0xf64b7262]
  50 [-]: GETTABLE  R4 R0 K3     ; R4 := R0["mClipName"]
  51 [-]: LOADK     R5 K13       ; R5 := "Scrub.ScrubHandle"
- 52 [-]: LOADK     R6 1         ; R6 := 1.000000
+ 52 [-]: CONST     R6 1         ; R6 := 1.000000
  53 [-]: GETUPVAL  R7 U0        ; R7 := U0
  54 [-]: GETTABLE  R7 R7 K14    ; R7 := R7[0x74a11ec6]
  55 [-]: DIV       R8 R1 K15    ; R8 := R1 / 2.000000
@@ -657,10 +641,10 @@
  60 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.13:
+; Function #1.12:
 ;
 ; Name:            
-; Defined at line: 203
+; Defined at line: 198
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -678,10 +662,10 @@
  10 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.14:
+; Function #1.13:
 ;
 ; Name:            
-; Defined at line: 209
+; Defined at line: 204
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -709,7 +693,7 @@
  20 [-]: GETTABLE  R6 R0 K6     ; R6 := R0["mClipName"]
  21 [-]: LOADK     R7 K10       ; R7 := ".Scrub.startDrag"
  22 [-]: CONCAT    R6 R6 R7     ; R6 := R6 .. R7
- 23 [-]: LOADBOOL  R7 0 0       ; R7 := false
+ 23 [-]: LOADKB    R7 0 0       ; R7 := false
  24 [-]: MOVE      R8 R1        ; R8 := R1
  25 [-]: MOVE      R9 R2        ; R9 := R2
  26 [-]: MOVE      R10 R1       ; R10 := R1
@@ -725,10 +709,10 @@
  36 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.15:
+; Function #1.14:
 ;
 ; Name:            
-; Defined at line: 223
+; Defined at line: 218
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -756,10 +740,10 @@
  20 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.16:
+; Function #1.15:
 ;
 ; Name:            
-; Defined at line: 236
+; Defined at line: 231
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -773,9 +757,9 @@
   6 [-]: GETTABLE  R3 R0 K3     ; R3 := R0["mClipName"]
   7 [-]: LOADK     R4 K4        ; R4 := ".Scrub.ScrubMiddle"
   8 [-]: CONCAT    R3 R3 R4     ; R3 := R3 .. R4
-  9 [-]: LOADK     R4 2         ; R4 := 2.000000
+  9 [-]: CONST     R4 2         ; R4 := 2.000000
  10 [-]: NEWTABLE  R5 1 0       ; R5 := {}
- 11 [-]: LOADK     R6 5         ; R6 := 5.000000
+ 11 [-]: CONST     R6 5         ; R6 := 5.000000
  12 [-]: SETLIST   R5 1 1       ; R5[(1-1)*FPF+i] := R(5+i), 1 <= i <= 1
  13 [-]: NEWTABLE  R6 1 0       ; R6 := {}
  14 [-]: GETTABLE  R7 R0 K6     ; R7 := R0["mExpandedScale"]
@@ -792,10 +776,10 @@
  25 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.17:
+; Function #1.16:
 ;
 ; Name:            
-; Defined at line: 246
+; Defined at line: 241
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -809,12 +793,12 @@
   6 [-]: GETTABLE  R3 R0 K3     ; R3 := R0["mClipName"]
   7 [-]: LOADK     R4 K4        ; R4 := ".Scrub.ScrubMiddle"
   8 [-]: CONCAT    R3 R3 R4     ; R3 := R3 .. R4
-  9 [-]: LOADK     R4 2         ; R4 := 2.000000
+  9 [-]: CONST     R4 2         ; R4 := 2.000000
  10 [-]: NEWTABLE  R5 1 0       ; R5 := {}
- 11 [-]: LOADK     R6 5         ; R6 := 5.000000
+ 11 [-]: CONST     R6 5         ; R6 := 5.000000
  12 [-]: SETLIST   R5 1 1       ; R5[(1-1)*FPF+i] := R(5+i), 1 <= i <= 1
  13 [-]: NEWTABLE  R6 1 0       ; R6 := {}
- 14 [-]: LOADK     R7 70        ; R7 := 70.000000
+ 14 [-]: CONST     R7 70        ; R7 := 70.000000
  15 [-]: SETLIST   R6 1 1       ; R6[(1-1)*FPF+i] := R(6+i), 1 <= i <= 1
  16 [-]: LOADK     R7 K6        ; R7 := 0.150000
  17 [-]: CALL      R1 7 1       ; R1(R2,R3,R4,R5,R6,R7)
@@ -828,10 +812,10 @@
  25 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.18:
+; Function #1.17:
 ;
 ; Name:            
-; Defined at line: 256
+; Defined at line: 251
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -847,10 +831,10 @@
   8 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.19:
+; Function #1.18:
 ;
 ; Name:            
-; Defined at line: 263
+; Defined at line: 258
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -866,10 +850,10 @@
   8 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.20:
+; Function #1.19:
 ;
 ; Name:            
-; Defined at line: 270
+; Defined at line: 265
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -885,7 +869,7 @@
   8 [-]: GETTABLE  R4 R0 K3     ; R4 := R0["mMovie"]
   9 [-]: SELF      R4 R4 K4     ; R5 := R4; R4 := R4[0x91a24e4b]
  10 [-]: GETTABLE  R6 R0 K5     ; R6 := R0["mClipName"]
- 11 [-]: LOADK     R7 26        ; R7 := 26.000000
+ 11 [-]: CONST     R7 26        ; R7 := 26.000000
  12 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
  13 [-]: DIV       R5 R3 K6     ; R5 := R3 / 2.000000
  14 [-]: SUB       R4 R4 R5     ; R4 := R4 - R5
@@ -903,7 +887,7 @@
  26 [-]: SELF      R5 R5 K9     ; R6 := R5; R5 := R5[0xf64b7262]
  27 [-]: GETTABLE  R7 R0 K5     ; R7 := R0["mClipName"]
  28 [-]: LOADK     R8 K10       ; R8 := "Scrub"
- 29 [-]: LOADK     R9 1         ; R9 := 1.000000
+ 29 [-]: CONST     R9 1         ; R9 := 1.000000
  30 [-]: MOVE      R10 R4       ; R10 := R4
  31 [-]: CALL      R5 6 1       ; R5(R6,R7,R8,R9,R10)
  32 [-]: SELF      R5 R0 K11    ; R6 := R0; R5 := R0[0x0e1386dc]
@@ -911,10 +895,10 @@
  34 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.21:
+; Function #1.20:
 ;
 ; Name:            
-; Defined at line: 283
+; Defined at line: 278
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -934,15 +918,15 @@
  12 [-]: SELF      R5 R0 K4     ; R6 := R0; R5 := R0[0x70fc2d50]
  13 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  14 [-]: MOVE      R6 R2        ; R6 := R2
- 15 [-]: LOADBOOL  R7 1 0       ; R7 := true
+ 15 [-]: LOADKB    R7 1 0       ; R7 := true
  16 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
  17 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.22:
+; Function #1.21:
 ;
 ; Name:            
-; Defined at line: 294
+; Defined at line: 289
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -967,10 +951,10 @@
  17 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.23:
+; Function #1.22:
 ;
 ; Name:            
-; Defined at line: 304
+; Defined at line: 299
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -998,10 +982,10 @@
  20 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.24:
+; Function #1.23:
 ;
 ; Name:            
-; Defined at line: 312
+; Defined at line: 307
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1009,16 +993,16 @@
 
   1 [-]: SELF      R2 R0 K0     ; R3 := R0; R2 := R0[0xd2c6305a]
   2 [-]: GETTABLE  R4 R0 K1     ; R4 := R0["mScrollStep"]
-  3 [-]: UNM       R4 R4        ; R4 := ^ R4
+  3 [-]: UNM       R4 R4        ; R4 :=  R4
   4 [-]: MOVE      R5 R1        ; R5 := R1
   5 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
   6 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.25:
+; Function #1.24:
 ;
 ; Name:            
-; Defined at line: 318
+; Defined at line: 313
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1031,10 +1015,10 @@
   5 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.26:
+; Function #1.25:
 ;
 ; Name:            
-; Defined at line: 324
+; Defined at line: 319
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1043,15 +1027,15 @@
   1 [-]: GETUPVAL  R2 U0        ; R2 := U0
   2 [-]: GETTABLE  R2 R2 K1     ; R2 := R2[0x06d055f9]
   3 [-]: MOVE      R3 R1        ; R3 := R1
-  4 [-]: LOADK     R4 100       ; R4 := 100.000000
-  5 [-]: LOADK     R5 130       ; R5 := 130.000000
+  4 [-]: CONST     R4 100       ; R4 := 100.000000
+  5 [-]: CONST     R5 130       ; R5 := 130.000000
   6 [-]: CALL      R2 4 2       ; R2 := R2(R3,R4,R5)
   7 [-]: SETTABLE  R0 K0 R2     ; R0["mExpandedScale"] := R2
   8 [-]: GETTABLE  R2 R0 K2     ; R2 := R0["mMovie"]
   9 [-]: SELF      R2 R2 K3     ; R3 := R2; R2 := R2[0xf64b7262]
  10 [-]: GETTABLE  R4 R0 K4     ; R4 := R0["mClipName"]
  11 [-]: LOADK     R5 K5        ; R5 := "HitZone"
- 12 [-]: LOADK     R6 5         ; R6 := 5.000000
+ 12 [-]: CONST     R6 5         ; R6 := 5.000000
  13 [-]: GETTABLE  R7 R0 K6     ; R7 := R0["mInitialHitzoneScaleX"]
  14 [-]: GETTABLE  R8 R0 K0     ; R8 := R0["mExpandedScale"]
  15 [-]: DIV       R8 R8 K7     ; R8 := R8 / 100.000000
@@ -1061,7 +1045,7 @@
  19 [-]: SELF      R2 R2 K3     ; R3 := R2; R2 := R2[0xf64b7262]
  20 [-]: GETTABLE  R4 R0 K4     ; R4 := R0["mClipName"]
  21 [-]: LOADK     R5 K8        ; R5 := "Scrub.HitZone"
- 22 [-]: LOADK     R6 5         ; R6 := 5.000000
+ 22 [-]: CONST     R6 5         ; R6 := 5.000000
  23 [-]: GETTABLE  R7 R0 K6     ; R7 := R0["mInitialHitzoneScaleX"]
  24 [-]: GETTABLE  R8 R0 K0     ; R8 := R0["mExpandedScale"]
  25 [-]: DIV       R8 R8 K7     ; R8 := R8 / 100.000000
@@ -1070,10 +1054,10 @@
  28 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.27:
+; Function #1.26:
 ;
 ; Name:            
-; Defined at line: 331
+; Defined at line: 326
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1081,7 +1065,7 @@
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0x60cce7b4
   2 [-]: GETTABLE  R2 R0 K1     ; R2 := R0["mHookedUpCallbacks"]
-  3 [-]: NOT       R2 R2        ; R2 := not R2
+  3 [-]: NOT       R2 R2        ; R2 :=  R2
   4 [-]: CALL      R1 2 1       ; R1(R2)
   5 [-]: SETTABLE  R0 K1 K2     ; R0["mHookedUpCallbacks"] := true
   6 [-]: LOADK     R1 K3        ; R1 := "Update"
@@ -1102,7 +1086,7 @@
  21 [-]: CONCAT    R3 R3 R4     ; R3 := R3 .. R4
  22 [-]: GETTABLE  R4 R2 K3     ; R4 := R2["Update"]
  23 [-]: SETTABLE  R2 R3 R4     ; R2[R3] := R4
- 24 [-]: CLOSURE   R3 0         ; R3 := closure(Function #1.27.1)
+ 24 [-]: CLOSURE   R3 0         ; R3 := closure(Function #1.26.1)
  25 [-]: MOVE      R0 R2        ; R0 := R2
  26 [-]: MOVE      R0 R1        ; R0 := R1
  27 [-]: MOVE      R0 R0        ; R0 := R0
@@ -1121,49 +1105,49 @@
  40 [-]: MOVE      R5 R4        ; R5 := R4
  41 [-]: LOADK     R6 K13       ; R6 := "StartDrag"
  42 [-]: CONCAT    R5 R5 R6     ; R5 := R5 .. R6
- 43 [-]: CLOSURE   R6 1         ; R6 := closure(Function #1.27.2)
+ 43 [-]: CLOSURE   R6 1         ; R6 := closure(Function #1.26.2)
  44 [-]: MOVE      R0 R0        ; R0 := R0
  45 [-]: SETTABLE  R2 R5 R6     ; R2[R5] := R6
  46 [-]: MOVE      R5 R4        ; R5 := R4
  47 [-]: LOADK     R6 K14       ; R6 := "StopDrag"
  48 [-]: CONCAT    R5 R5 R6     ; R5 := R5 .. R6
- 49 [-]: CLOSURE   R6 2         ; R6 := closure(Function #1.27.3)
+ 49 [-]: CLOSURE   R6 2         ; R6 := closure(Function #1.26.3)
  50 [-]: MOVE      R0 R0        ; R0 := R0
  51 [-]: SETTABLE  R2 R5 R6     ; R2[R5] := R6
  52 [-]: MOVE      R5 R4        ; R5 := R4
  53 [-]: LOADK     R6 K15       ; R6 := "ScrubRollOver"
  54 [-]: CONCAT    R5 R5 R6     ; R5 := R5 .. R6
- 55 [-]: CLOSURE   R6 3         ; R6 := closure(Function #1.27.4)
+ 55 [-]: CLOSURE   R6 3         ; R6 := closure(Function #1.26.4)
  56 [-]: MOVE      R0 R0        ; R0 := R0
  57 [-]: SETTABLE  R2 R5 R6     ; R2[R5] := R6
  58 [-]: MOVE      R5 R4        ; R5 := R4
  59 [-]: LOADK     R6 K16       ; R6 := "ScrubRollOut"
  60 [-]: CONCAT    R5 R5 R6     ; R5 := R5 .. R6
- 61 [-]: CLOSURE   R6 4         ; R6 := closure(Function #1.27.5)
+ 61 [-]: CLOSURE   R6 4         ; R6 := closure(Function #1.26.5)
  62 [-]: MOVE      R0 R0        ; R0 := R0
  63 [-]: SETTABLE  R2 R5 R6     ; R2[R5] := R6
  64 [-]: MOVE      R5 R4        ; R5 := R4
  65 [-]: LOADK     R6 K17       ; R6 := "ScrubReleaseOutside"
  66 [-]: CONCAT    R5 R5 R6     ; R5 := R5 .. R6
- 67 [-]: CLOSURE   R6 5         ; R6 := closure(Function #1.27.6)
+ 67 [-]: CLOSURE   R6 5         ; R6 := closure(Function #1.26.6)
  68 [-]: MOVE      R0 R0        ; R0 := R0
  69 [-]: SETTABLE  R2 R5 R6     ; R2[R5] := R6
  70 [-]: MOVE      R5 R4        ; R5 := R4
  71 [-]: LOADK     R6 K18       ; R6 := "BarClick"
  72 [-]: CONCAT    R5 R5 R6     ; R5 := R5 .. R6
- 73 [-]: CLOSURE   R6 6         ; R6 := closure(Function #1.27.7)
+ 73 [-]: CLOSURE   R6 6         ; R6 := closure(Function #1.26.7)
  74 [-]: MOVE      R0 R0        ; R0 := R0
  75 [-]: SETTABLE  R2 R5 R6     ; R2[R5] := R6
  76 [-]: MOVE      R5 R4        ; R5 := R4
  77 [-]: LOADK     R6 K19       ; R6 := "BarRollOver"
  78 [-]: CONCAT    R5 R5 R6     ; R5 := R5 .. R6
- 79 [-]: CLOSURE   R6 7         ; R6 := closure(Function #1.27.8)
+ 79 [-]: CLOSURE   R6 7         ; R6 := closure(Function #1.26.8)
  80 [-]: MOVE      R0 R0        ; R0 := R0
  81 [-]: SETTABLE  R2 R5 R6     ; R2[R5] := R6
  82 [-]: MOVE      R5 R4        ; R5 := R4
  83 [-]: LOADK     R6 K20       ; R6 := "BarRollOut"
  84 [-]: CONCAT    R5 R5 R6     ; R5 := R5 .. R6
- 85 [-]: CLOSURE   R6 8         ; R6 := closure(Function #1.27.9)
+ 85 [-]: CLOSURE   R6 8         ; R6 := closure(Function #1.26.9)
  86 [-]: MOVE      R0 R0        ; R0 := R0
  87 [-]: SETTABLE  R2 R5 R6     ; R2[R5] := R6
  88 [-]: GETTABLE  R5 R0 K21    ; R5 := R0["mMovie"]
@@ -1225,15 +1209,15 @@
 144 [-]: CONCAT    R6 R6 R7     ; R6 := R6 .. R7
 145 [-]: GETTABLE  R7 R2 K26    ; R7 := R2["OnGamepadTransition"]
 146 [-]: SETTABLE  R2 R6 R7     ; R2[R6] := R7
-147 [-]: LOADBOOL  R6 0 0       ; R6 := false
+147 [-]: LOADKB    R6 0 0       ; R6 := false
 148 [-]: LOADK     R7 K5        ; R7 := "Prev_"
 149 [-]: MOVE      R8 R5        ; R8 := R5
 150 [-]: CONCAT    R7 R7 R8     ; R7 := R7 .. R8
 151 [-]: GETTABLE  R7 R2 R7     ; R7 := R2[R7]
 152 [-]: EQ        1 R7 K6      ; if R7 == nil then PC := 155
 153 [-]: JMP       155          ; PC := 155
-154 [-]: LOADBOOL  R6 1 0       ; R6 := true
-155 [-]: CLOSURE   R7 9         ; R7 := closure(Function #1.27.10)
+154 [-]: LOADKB    R6 1 0       ; R6 := true
+155 [-]: CLOSURE   R7 9         ; R7 := closure(Function #1.26.10)
 156 [-]: MOVE      R0 R6        ; R0 := R6
 157 [-]: MOVE      R0 R2        ; R0 := R2
 158 [-]: MOVE      R0 R5        ; R0 := R5
@@ -1242,10 +1226,10 @@
 161 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.27.1:
+; Function #1.26.1:
 ;
 ; Name:            
-; Defined at line: 342
+; Defined at line: 337
 ; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1265,10 +1249,10 @@
  12 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.27.2:
+; Function #1.26.2:
 ;
 ; Name:            
-; Defined at line: 353
+; Defined at line: 348
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1280,10 +1264,10 @@
   4 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.27.3:
+; Function #1.26.3:
 ;
 ; Name:            
-; Defined at line: 357
+; Defined at line: 352
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1295,10 +1279,10 @@
   4 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.27.4:
+; Function #1.26.4:
 ;
 ; Name:            
-; Defined at line: 361
+; Defined at line: 356
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1310,10 +1294,10 @@
   4 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.27.5:
+; Function #1.26.5:
 ;
 ; Name:            
-; Defined at line: 365
+; Defined at line: 360
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1325,10 +1309,10 @@
   4 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.27.6:
+; Function #1.26.6:
 ;
 ; Name:            
-; Defined at line: 369
+; Defined at line: 364
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1343,10 +1327,10 @@
   7 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.27.7:
+; Function #1.26.7:
 ;
 ; Name:            
-; Defined at line: 374
+; Defined at line: 369
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1358,10 +1342,10 @@
   4 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.27.8:
+; Function #1.26.8:
 ;
 ; Name:            
-; Defined at line: 378
+; Defined at line: 373
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1373,10 +1357,10 @@
   4 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.27.9:
+; Function #1.26.9:
 ;
 ; Name:            
-; Defined at line: 382
+; Defined at line: 377
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1388,10 +1372,10 @@
   4 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.27.10:
+; Function #1.26.10:
 ;
 ; Name:            
-; Defined at line: 400
+; Defined at line: 395
 ; #Upvalues:       4
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1411,16 +1395,16 @@
  12 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1[0x557b7601]
  13 [-]: EQ        1 R0 K2      ; if R0 == "true" then PC := 16
  14 [-]: JMP       16           ; PC := 16
- 15 [-]: LOADBOOL  R3 0 1       ; R3 := false; PC := 16
- 16 [-]: LOADBOOL  R3 1 0       ; R3 := true
+ 15 [-]: LOADKB    R3 0 1       ; R3 := false; PC := 16
+ 16 [-]: LOADKB    R3 1 0       ; R3 := true
  17 [-]: CALL      R1 3 1       ; R1(R2,R3)
  18 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.28:
+; Function #1.27:
 ;
 ; Name:            
-; Defined at line: 409
+; Defined at line: 404
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1428,8 +1412,8 @@
 
   1 [-]: EQ        1 R1 K0      ; if R1 == true then PC := 4
   2 [-]: JMP       4            ; PC := 4
-  3 [-]: LOADBOOL  R1 0 1       ; R1 := false; PC := 4
-  4 [-]: LOADBOOL  R1 1 0       ; R1 := true
+  3 [-]: LOADKB    R1 0 1       ; R1 := false; PC := 4
+  4 [-]: LOADKB    R1 1 0       ; R1 := true
   5 [-]: SETTABLE  R0 K1 R1     ; R0["mEnabled"] := R1
   6 [-]: GETTABLE  R2 R0 K2     ; R2 := R0["mDragging"]
   7 [-]: TEST      R2 0         ; if not R2 then PC := 11
@@ -1440,14 +1424,14 @@
  12 [-]: SELF      R2 R2 K5     ; R3 := R2; R2 := R2[0xc0a3774b]
  13 [-]: GETTABLE  R4 R0 K6     ; R4 := R0["mClipName"]
  14 [-]: LOADK     R5 K7        ; R5 := "HitZone"
- 15 [-]: LOADK     R6 59        ; R6 := 59.000000
+ 15 [-]: CONST     R6 59        ; R6 := 59.000000
  16 [-]: MOVE      R7 R1        ; R7 := R1
  17 [-]: CALL      R2 6 1       ; R2(R3,R4,R5,R6,R7)
  18 [-]: GETTABLE  R2 R0 K4     ; R2 := R0["mMovie"]
  19 [-]: SELF      R2 R2 K5     ; R3 := R2; R2 := R2[0xc0a3774b]
  20 [-]: GETTABLE  R4 R0 K6     ; R4 := R0["mClipName"]
  21 [-]: LOADK     R5 K8        ; R5 := "Scrub.HitZone"
- 22 [-]: LOADK     R6 59        ; R6 := 59.000000
+ 22 [-]: CONST     R6 59        ; R6 := 59.000000
  23 [-]: MOVE      R7 R1        ; R7 := R1
  24 [-]: CALL      R2 6 1       ; R2(R3,R4,R5,R6,R7)
  25 [-]: GETTABLE  R2 R0 K9     ; R2 := R0["mCondensedScrub"]
@@ -1457,16 +1441,16 @@
  29 [-]: SELF      R2 R2 K10    ; R3 := R2; R2 := R2[0xf64b7262]
  30 [-]: GETTABLE  R4 R0 K6     ; R4 := R0["mClipName"]
  31 [-]: LOADK     R5 K11       ; R5 := "Scrub.ScrubMiddle"
- 32 [-]: LOADK     R6 5         ; R6 := 5.000000
- 33 [-]: LOADK     R7 70        ; R7 := 70.000000
+ 32 [-]: CONST     R6 5         ; R6 := 5.000000
+ 33 [-]: CONST     R7 70        ; R7 := 70.000000
  34 [-]: CALL      R2 6 1       ; R2(R3,R4,R5,R6,R7)
  35 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.29:
+; Function #1.28:
 ;
 ; Name:            
-; Defined at line: 424
+; Defined at line: 419
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1478,16 +1462,16 @@
   4 [-]: GETTABLE  R4 R0 K1     ; R4 := R0["mActive"]
   5 [-]: EQ        1 R4 K2      ; if R4 == nil then PC := 8
   6 [-]: JMP       8            ; PC := 8
-  7 [-]: LOADBOOL  R4 0 1       ; R4 := false; PC := 8
-  8 [-]: LOADBOOL  R4 1 0       ; R4 := true
-  9 [-]: LOADK     R5 0         ; R5 := 0.000000
+  7 [-]: LOADKB    R4 0 1       ; R4 := false; PC := 8
+  8 [-]: LOADKB    R4 1 0       ; R4 := true
+  9 [-]: CONST     R5 0         ; R5 := 0.000000
  10 [-]: LOADK     R6 K3        ; R6 := 0.200000
  11 [-]: CALL      R3 4 2       ; R3 := R3(R4,R5,R6)
  12 [-]: SETTABLE  R0 K1 R1     ; R0["mActive"] := R1
  13 [-]: MOVE      R4 R2        ; R4 := R2
  14 [-]: GETTABLE  R5 R0 K1     ; R5 := R0["mActive"]
- 15 [-]: LOADK     R6 100       ; R6 := 100.000000
- 16 [-]: LOADK     R7 50        ; R7 := 50.000000
+ 15 [-]: CONST     R6 100       ; R6 := 100.000000
+ 16 [-]: CONST     R7 50        ; R7 := 50.000000
  17 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
  18 [-]: MOVE      R5 R2        ; R5 := R2
  19 [-]: GETTABLE  R6 R0 K4     ; R6 := R0["mApplyThemes"]
@@ -1497,7 +1481,7 @@
  23 [-]: MOVE      R6 R2        ; R6 := R2
  24 [-]: GETTABLE  R7 R0 K1     ; R7 := R0["mActive"]
  25 [-]: MOVE      R8 R5        ; R8 := R5
- 26 [-]: LOADK     R9 30        ; R9 := 30.000000
+ 26 [-]: CONST     R9 30        ; R9 := 30.000000
  27 [-]: CALL      R6 4 2       ; R6 := R6(R7,R8,R9)
  28 [-]: MOVE      R5 R6        ; R5 := R6
  29 [-]: GETUPVAL  R6 U0        ; R6 := U0
@@ -1529,7 +1513,7 @@
  55 [-]: GETUPVAL  R12 U0       ; R12 := U0
  56 [-]: GETTABLE  R12 R12 K7   ; R12 := R12[0x06d055f9]
  57 [-]: GETTABLE  R13 R0 K1    ; R13 := R0["mActive"]
- 58 [-]: LOADK     R14 0        ; R14 := 0.000000
+ 58 [-]: CONST     R14 0        ; R14 := 0.000000
  59 [-]: GETTABLE  R15 R0 K12   ; R15 := R0["mInactiveXOffset"]
  60 [-]: CALL      R12 4 2      ; R12 := R12(R13,R14,R15)
  61 [-]: ADD       R11 R11 R12  ; R11 := R11 + R12
@@ -1537,7 +1521,7 @@
  63 [-]: GETGLOBAL R9 K17       ; R9 := 0x25312c9b
  64 [-]: GETTABLE  R10 R0 K18   ; R10 := R0["mMovie"]
  65 [-]: GETTABLE  R11 R0 K19   ; R11 := R0["mClipName"]
- 66 [-]: LOADK     R12 8        ; R12 := 8.000000
+ 66 [-]: CONST     R12 8        ; R12 := 8.000000
  67 [-]: MOVE      R13 R7       ; R13 := R7
  68 [-]: MOVE      R14 R8       ; R14 := R8
  69 [-]: MOVE      R15 R3       ; R15 := R3
@@ -1545,10 +1529,10 @@
  71 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.30:
+; Function #1.29:
 ;
 ; Name:            
-; Defined at line: 443
+; Defined at line: 438
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1561,9 +1545,9 @@
   5 [-]: LOADK     R6 K3        ; R6 := "Scrub.ScrubMiddle"
   6 [-]: LOADK     R7 K4        ; R7 := "Scrub.ScrubHandle"
   7 [-]: SETLIST   R2 5 1       ; R2[(1-1)*FPF+i] := R(2+i), 1 <= i <= 5
-  8 [-]: LOADK     R3 1         ; R3 := 1.000000
+  8 [-]: CONST     R3 1         ; R3 := 1.000000
   9 [-]: LEN       R4 R2        ; R4 := # R2
- 10 [-]: LOADK     R5 1         ; R5 := 1.000000
+ 10 [-]: CONST     R5 1         ; R5 := 1.000000
  11 [-]: FORPREP   R3 20        ; R3 -= R5; PC := 20
  12 [-]: GETTABLE  R7 R0 K5     ; R7 := R0["mMovie"]
  13 [-]: SELF      R7 R7 K6     ; R8 := R7; R7 := R7[0xd5181643]
@@ -1577,10 +1561,10 @@
  21 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.31:
+; Function #1.30:
 ;
 ; Name:            
-; Defined at line: 451
+; Defined at line: 446
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1592,7 +1576,7 @@
   4 [-]: GETTABLE  R1 R0 K1     ; R1 := R0["mMovie"]
   5 [-]: SELF      R1 R1 K2     ; R2 := R1; R1 := R1[0x67bc869f]
   6 [-]: GETTABLE  R3 R0 K3     ; R3 := R0["mClipName"]
-  7 [-]: LOADK     R4 6         ; R4 := 6.000000
+  7 [-]: CONST     R4 6         ; R4 := 6.000000
   8 [-]: GETUPVAL  R5 U0        ; R5 := U0
   9 [-]: GETTABLE  R5 R5 K4     ; R5 := R5[0x06d055f9]
  10 [-]: GETTABLE  R6 R0 K5     ; R6 := R0["mApplyThemes"]
@@ -1604,7 +1588,7 @@
  16 [-]: GETTABLE  R1 R0 K1     ; R1 := R0["mMovie"]
  17 [-]: SELF      R1 R1 K2     ; R2 := R1; R1 := R1[0x67bc869f]
  18 [-]: GETTABLE  R3 R0 K3     ; R3 := R0["mClipName"]
- 19 [-]: LOADK     R4 5         ; R4 := 5.000000
+ 19 [-]: CONST     R4 5         ; R4 := 5.000000
  20 [-]: GETUPVAL  R5 U0        ; R5 := U0
  21 [-]: GETTABLE  R5 R5 K4     ; R5 := R5[0x06d055f9]
  22 [-]: GETTABLE  R6 R0 K5     ; R6 := R0["mApplyThemes"]

@@ -11,19 +11,21 @@
   2 [-]: SETGLOBAL R0 K0        ; FadeEmissive := R0
   3 [-]: CLOSURE   R0 1         ; R0 := closure(Function #2)
   4 [-]: SETGLOBAL R0 K1        ; SwapMaterialColorTargetted := R0
-  5 [-]: RETURN    R0 1         ; return 
+  5 [-]: CLOSURE   R0 2         ; R0 := closure(Function #3)
+  6 [-]: SETGLOBAL R0 K2        ; SwapMaterial := R0
+  7 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
 ;
 ; Name:            
-; Defined at line: 7
+; Defined at line: 8
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
 ; Max Stack Size:  7
 
-  1 [-]: LOADK     R1 0         ; R1 := 0.000000
+  1 [-]: CONST     R1 0         ; R1 := 0.000000
   2 [-]: GETGLOBAL R2 K0        ; R2 := 0x19ca208e
   3 [-]: GETGLOBAL R3 K1        ; R3 := 0xe9449414
   4 [-]: LT        0 R1 R3      ; if R1 >= R3 then PC := 23
@@ -42,7 +44,7 @@
  17 [-]: CALL      R3 1 2       ; R3 := R3()
  18 [-]: ADD       R1 R1 R3     ; R1 := R1 + R3
  19 [-]: GETGLOBAL R3 K7        ; R3 := 0xcbd666e1
- 20 [-]: LOADK     R4 0         ; R4 := 0.000000
+ 20 [-]: CONST     R4 0         ; R4 := 0.000000
  21 [-]: CALL      R3 2 1       ; R3(R4)
  22 [-]: JMP       3            ; PC := 3
  23 [-]: RETURN    R0 1         ; return 
@@ -51,7 +53,7 @@
 ; Function #2:
 ;
 ; Name:            
-; Defined at line: 18
+; Defined at line: 19
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -79,5 +81,32 @@
  20 [-]: DIV       R6 R6 K6     ; R6 := R6 / 255.000000
  21 [-]: CALL      R0 7 1       ; R0(R1,R2,R3,R4,R5,R6)
  22 [-]: RETURN    R0 1         ; return 
+
+
+; Function #3:
+;
+; Name:            
+; Defined at line: 25
+; #Upvalues:       0
+; #Parameters:     0
+; Is_vararg:       0
+; Max Stack Size:  4
+
+  1 [-]: GETGLOBAL R0 K0        ; R0 := 0x7b998233
+  2 [-]: GETGLOBAL R1 K1        ; R1 := 0x1e415306
+  3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
+  4 [-]: TEST      R0 1         ; if R0 then PC := 16
+  5 [-]: JMP       16           ; PC := 16
+  6 [-]: GETGLOBAL R0 K0        ; R0 := 0x7b998233
+  7 [-]: GETGLOBAL R1 K2        ; R1 := 0xb47d34f1
+  8 [-]: CALL      R0 2 2       ; R0 := R0(R1)
+  9 [-]: TEST      R0 1         ; if R0 then PC := 16
+ 10 [-]: JMP       16           ; PC := 16
+ 11 [-]: GETGLOBAL R0 K1        ; R0 := 0x1e415306
+ 12 [-]: SELF      R0 R0 K3     ; R1 := R0; R0 := R0[0x01883505]
+ 13 [-]: GETGLOBAL R2 K2        ; R2 := 0xb47d34f1
+ 14 [-]: LOADKB    R3 0 0       ; R3 := false
+ 15 [-]: CALL      R0 4 1       ; R0(R1,R2,R3)
+ 16 [-]: RETURN    R0 1         ; return 
 
 

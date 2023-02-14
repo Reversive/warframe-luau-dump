@@ -32,7 +32,7 @@
   9 [-]: SELF      R3 R0 K2     ; R4 := R0; R3 := R0[0xde321e6f]
  10 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  11 [-]: SELF      R3 R3 K3     ; R4 := R3; R3 := R3[0xe85a2361]
- 12 [-]: LOADK     R5 0         ; R5 := 0.000000
+ 12 [-]: CONST     R5 0         ; R5 := 0.000000
  13 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
  14 [-]: GETGLOBAL R4 K1        ; R4 := 0x7b998233
  15 [-]: MOVE      R5 R3        ; R5 := R3

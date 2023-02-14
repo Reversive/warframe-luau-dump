@@ -8,12 +8,12 @@
 ; Max Stack Size:  7
 
   1 [-]: NEWTABLE  R0 6 0       ; R0 := {}
-  2 [-]: LOADK     R1 3500      ; R1 := 3500.000000
-  3 [-]: LOADK     R2 4000      ; R2 := 4000.000000
+  2 [-]: CONST     R1 3500      ; R1 := 3500.000000
+  3 [-]: CONST     R2 4000      ; R2 := 4000.000000
   4 [-]: LOADK     R3 K0        ; R3 := 4500.000000
-  5 [-]: LOADK     R4 5000      ; R4 := 5000.000000
+  5 [-]: CONST     R4 5000      ; R4 := 5000.000000
   6 [-]: LOADK     R5 K1        ; R5 := 5500.000000
-  7 [-]: LOADK     R6 6000      ; R6 := 6000.000000
+  7 [-]: CONST     R6 6000      ; R6 := 6000.000000
   8 [-]: SETLIST   R0 6 1       ; R0[(1-1)*FPF+i] := R(0+i), 1 <= i <= 6
   9 [-]: CLOSURE   R1 0         ; R1 := closure(Function #1)
  10 [-]: MOVE      R0 R0        ; R0 := R0
@@ -37,7 +37,7 @@
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0x42dcc9f5
   2 [-]: MOVE      R2 R0        ; R2 := R0
-  3 [-]: LOADK     R3 1         ; R3 := 1.000000
+  3 [-]: CONST     R3 1         ; R3 := 1.000000
   4 [-]: GETUPVAL  R4 U0        ; R4 := U0
   5 [-]: LEN       R4 R4        ; R4 := # R4
   6 [-]: CALL      R1 4 2       ; R1 := R1(R2,R3,R4)
@@ -91,7 +91,7 @@
  10 [-]: JMP       45           ; PC := 45
  11 [-]: SELF      R4 R0 K3     ; R5 := R0; R4 := R0[0xecec3575]
  12 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 13 [-]: LOADK     R5 10        ; R5 := 10.000000
+ 13 [-]: CONST     R5 10        ; R5 := 10.000000
  14 [-]: LT        0 K4 R5      ; if 0.000000 >= R5 then PC := 34
  15 [-]: JMP       34           ; PC := 34
  16 [-]: GETGLOBAL R6 K0        ; R6 := 0x7b998233
@@ -105,7 +105,7 @@
  24 [-]: TEST      R6 1         ; if R6 then PC := 34
  25 [-]: JMP       34           ; PC := 34
  26 [-]: GETGLOBAL R6 K5        ; R6 := 0xcbd666e1
- 27 [-]: LOADK     R7 0         ; R7 := 0.000000
+ 27 [-]: CONST     R7 0         ; R7 := 0.000000
  28 [-]: CALL      R6 2 1       ; R6(R7)
  29 [-]: SELF      R6 R0 K3     ; R7 := R0; R6 := R0[0xecec3575]
  30 [-]: CALL      R6 2 2       ; R6 := R6(R7)

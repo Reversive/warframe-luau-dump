@@ -32,11 +32,11 @@
   5 [-]: CALL      R6 2 2       ; R6 := R6(R7)
   6 [-]: EQ        0 R6 K2      ; if R6 ~= nil then PC := 10
   7 [-]: JMP       10           ; PC := 10
-  8 [-]: LOADBOOL  R7 0 0       ; R7 := false
+  8 [-]: LOADKB    R7 0 0       ; R7 := false
   9 [-]: RETURN    R7 2         ; return R7
  10 [-]: SELF      R7 R0 K3     ; R8 := R0; R7 := R0[0xbe524b27]
  11 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 12 [-]: LOADK     R8 0         ; R8 := 0.000000
+ 12 [-]: CONST     R8 0         ; R8 := 0.000000
  13 [-]: GETGLOBAL R9 K4        ; R9 := 0x7b998233
  14 [-]: MOVE      R10 R7       ; R10 := R7
  15 [-]: CALL      R9 2 2       ; R9 := R9(R10)
@@ -52,12 +52,12 @@
  25 [-]: CALL      R9 3 2       ; R9 := R9(R10,R11)
  26 [-]: MOVE      R8 R9        ; R8 := R9
  27 [-]: JMP       30           ; PC := 30
- 28 [-]: LOADBOOL  R9 0 0       ; R9 := false
+ 28 [-]: LOADKB    R9 0 0       ; R9 := false
  29 [-]: RETURN    R9 2         ; return R9
- 30 [-]: LOADK     R9 0         ; R9 := 0.000000
- 31 [-]: LOADK     R10 1        ; R10 := 1.000000
+ 30 [-]: CONST     R9 0         ; R9 := 0.000000
+ 31 [-]: CONST     R10 1        ; R10 := 1.000000
  32 [-]: LEN       R11 R6       ; R11 := # R6
- 33 [-]: LOADK     R12 1        ; R12 := 1.000000
+ 33 [-]: CONST     R12 1        ; R12 := 1.000000
  34 [-]: FORPREP   R10 51       ; R10 -= R12; PC := 51
  35 [-]: GETTABLE  R14 R6 R13   ; R14 := R6[R13]
  36 [-]: GETTABLE  R15 R14 K7   ; R15 := R14["mission"]
@@ -78,8 +78,8 @@
  51 [-]: FORLOOP   R10 35       ; R10 += R12; if R10 <= R11 then begin PC := 35; R13 := R10 end
  52 [-]: LT        1 R8 R9      ; if R8 < R9 then PC := 55
  53 [-]: JMP       55           ; PC := 55
- 54 [-]: LOADBOOL  R18 0 1      ; R18 := false; PC := 55
- 55 [-]: LOADBOOL  R18 1 0      ; R18 := true
+ 54 [-]: LOADKB    R18 0 1      ; R18 := false; PC := 55
+ 55 [-]: LOADKB    R18 1 0      ; R18 := true
  56 [-]: RETURN    R18 2        ; return R18
  57 [-]: RETURN    R0 1         ; return 
 

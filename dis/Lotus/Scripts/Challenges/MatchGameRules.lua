@@ -39,8 +39,8 @@
   8 [-]: GETGLOBAL R2 K3        ; R2 := 0xc8d47b3b
   9 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
  10 [-]: JMP       13           ; PC := 13
- 11 [-]: LOADBOOL  R0 0 1       ; R0 := false; PC := 12
- 12 [-]: LOADBOOL  R0 1 0       ; R0 := true
+ 11 [-]: LOADKB    R0 0 1       ; R0 := false; PC := 12
+ 12 [-]: LOADKB    R0 1 0       ; R0 := true
  13 [-]: RETURN    R0 2         ; return R0
  14 [-]: RETURN    R0 1         ; return 
 

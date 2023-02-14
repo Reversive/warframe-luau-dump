@@ -53,9 +53,9 @@
  30 [-]: GETGLOBAL R5 K4        ; R5 := _T
  31 [-]: GETTABLE  R5 R5 K5     ; R5 := R5["gPaybackChallengeData"]
  32 [-]: SETTABLE  R5 R2 K6     ; R5[R2] := nil
- 33 [-]: LOADBOOL  R5 1 0       ; R5 := true
+ 33 [-]: LOADKB    R5 1 0       ; R5 := true
  34 [-]: RETURN    R5 2         ; return R5
- 35 [-]: LOADBOOL  R5 0 0       ; R5 := false
+ 35 [-]: LOADKB    R5 0 0       ; R5 := false
  36 [-]: RETURN    R5 2         ; return R5
  37 [-]: RETURN    R0 1         ; return 
 

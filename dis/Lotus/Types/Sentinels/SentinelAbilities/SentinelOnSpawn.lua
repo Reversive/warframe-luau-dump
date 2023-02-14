@@ -36,11 +36,11 @@
  12 [-]: SETTABLE  R1 K4 K5     ; R1["sentinelRegens"] := nil
  13 [-]: SELF      R1 R0 K6     ; R2 := R0; R1 := R0[0x659d451f]
  14 [-]: GETGLOBAL R3 K7        ; R3 := 0xed1834ff
- 15 [-]: LOADBOOL  R4 0 0       ; R4 := false
+ 15 [-]: LOADKB    R4 0 0       ; R4 := false
  16 [-]: CALL      R1 4 2       ; R1 := R1(R2,R3,R4)
  17 [-]: SETUPVAL  R1 U0        ; U82 := R0
- 18 [-]: LOADK     R1 1         ; R1 := 1.000000
- 19 [-]: LOADK     R2 1         ; R2 := 1.000000
+ 18 [-]: CONST     R1 1         ; R1 := 1.000000
+ 19 [-]: CONST     R2 1         ; R2 := 1.000000
  20 [-]: GETGLOBAL R3 K0        ; R3 := 0x7b998233
  21 [-]: GETUPVAL  R4 U0        ; R4 := U0
  22 [-]: CALL      R3 2 2       ; R3 := R3(R4)
@@ -56,7 +56,7 @@
  32 [-]: GETGLOBAL R4 K10       ; R4 := 0x5bced4c4
  33 [-]: GETTABLE  R4 R4 K11    ; R4 := R4[0xb62ecfe0]
  34 [-]: GETTABLE  R5 R3 K9     ; R5 := R3["y"]
- 35 [-]: LOADK     R6 0         ; R6 := 0.000000
+ 35 [-]: CONST     R6 0         ; R6 := 0.000000
  36 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
  37 [-]: SETTABLE  R3 K9 R4     ; R3["y"] := R4
  38 [-]: GETGLOBAL R4 K12       ; R4 := 0xae2294fa
@@ -65,8 +65,8 @@
  41 [-]: MUL       R4 R4 K13    ; R4 := R4 * 2.000000
  42 [-]: GETGLOBAL R5 K14       ; R5 := 0x42dcc9f5
  43 [-]: MOVE      R6 R4        ; R6 := R4
- 44 [-]: LOADK     R7 0         ; R7 := 0.000000
- 45 [-]: LOADK     R8 1         ; R8 := 1.000000
+ 44 [-]: CONST     R7 0         ; R7 := 0.000000
+ 45 [-]: CONST     R8 1         ; R8 := 1.000000
  46 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
  47 [-]: GETGLOBAL R6 K15       ; R6 := 0x9bafffe3
  48 [-]: GETGLOBAL R7 K16       ; R7 := 0xd5f1a190
@@ -86,7 +86,7 @@
  62 [-]: MOVE      R8 R2        ; R8 := R2
  63 [-]: CALL      R6 3 1       ; R6(R7,R8)
  64 [-]: GETGLOBAL R6 K20       ; R6 := 0xcbd666e1
- 65 [-]: LOADK     R7 0         ; R7 := 0.000000
+ 65 [-]: CONST     R7 0         ; R7 := 0.000000
  66 [-]: CALL      R6 2 1       ; R6(R7)
  67 [-]: JMP       20           ; PC := 20
  68 [-]: GETGLOBAL R6 K0        ; R6 := 0x7b998233
@@ -96,7 +96,7 @@
  72 [-]: JMP       77           ; PC := 77
  73 [-]: GETUPVAL  R6 U0        ; R6 := U0
  74 [-]: SELF      R6 R6 K21    ; R7 := R6; R6 := R6[0x6cf1e476]
- 75 [-]: LOADBOOL  R8 0 0       ; R8 := false
+ 75 [-]: LOADKB    R8 0 0       ; R8 := false
  76 [-]: CALL      R6 3 1       ; R6(R7,R8)
  77 [-]: RETURN    R0 1         ; return 
 

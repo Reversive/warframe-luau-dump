@@ -43,17 +43,17 @@
  20 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
  21 [-]: TEST      R4 1         ; if R4 then PC := 107
  22 [-]: JMP       107          ; PC := 107
- 23 [-]: LOADBOOL  R4 0 0       ; R4 := false
+ 23 [-]: LOADKB    R4 0 0       ; R4 := false
  24 [-]: TEST      R3 0         ; if not R3 then PC := 28
  25 [-]: JMP       28           ; PC := 28
- 26 [-]: LOADBOOL  R4 1 0       ; R4 := true
+ 26 [-]: LOADKB    R4 1 0       ; R4 := true
  27 [-]: JMP       83           ; PC := 83
  28 [-]: LOADNIL   R5 R5        ; R5 := nil
  29 [-]: GETTABLE  R6 R2 K2     ; R6 := R2["levelData"]
  30 [-]: GETTABLE  R6 R6 K7     ; R6 := R6["fishInfo"]
- 31 [-]: LOADK     R7 1         ; R7 := 1.000000
+ 31 [-]: CONST     R7 1         ; R7 := 1.000000
  32 [-]: LEN       R8 R6        ; R8 := # R6
- 33 [-]: LOADK     R9 1         ; R9 := 1.000000
+ 33 [-]: CONST     R9 1         ; R9 := 1.000000
  34 [-]: FORPREP   R7 41        ; R7 -= R9; PC := 41
  35 [-]: GETTABLE  R11 R6 R10   ; R11 := R6[R10]
  36 [-]: GETTABLE  R11 R11 K8   ; R11 := R11["deco"]
@@ -64,18 +64,18 @@
  41 [-]: FORLOOP   R7 35        ; R7 += R9; if R7 <= R8 then begin PC := 35; R10 := R7 end
  42 [-]: TEST      R5 0         ; if not R5 then PC := 83
  43 [-]: JMP       83           ; PC := 83
- 44 [-]: LOADBOOL  R4 1 0       ; R4 := true
+ 44 [-]: LOADKB    R4 1 0       ; R4 := true
  45 [-]: GETGLOBAL R11 K9       ; R11 := 0xf223eb68
  46 [-]: TEST      R11 0        ; if not R11 then PC := 83
  47 [-]: JMP       83           ; PC := 83
- 48 [-]: LOADBOOL  R4 0 0       ; R4 := false
+ 48 [-]: LOADKB    R4 0 0       ; R4 := false
  49 [-]: GETTABLE  R11 R2 K2    ; R11 := R2["levelData"]
  50 [-]: GETTABLE  R11 R11 K10  ; R11 := R11["activeBait"]
  51 [-]: SELF      R12 R0 K11   ; R13 := R0; R12 := R0[0x2b54251b]
  52 [-]: CALL      R12 2 2      ; R12 := R12(R13)
- 53 [-]: LOADK     R13 1        ; R13 := 1.000000
+ 53 [-]: CONST     R13 1        ; R13 := 1.000000
  54 [-]: LEN       R14 R11      ; R14 := # R11
- 55 [-]: LOADK     R15 1        ; R15 := 1.000000
+ 55 [-]: CONST     R15 1        ; R15 := 1.000000
  56 [-]: FORPREP   R13 82       ; R13 -= R15; PC := 82
  57 [-]: GETTABLE  R17 R11 R16  ; R17 := R11[R16]
  58 [-]: GETTABLE  R18 R17 K12  ; R18 := R17["bait"]
@@ -99,8 +99,8 @@
  76 [-]: GETTABLE  R19 R5 K15   ; R19 := R5["waterDeco"]
  77 [-]: EQ        1 R18 R19    ; if R18 == R19 then PC := 80
  78 [-]: JMP       80           ; PC := 80
- 79 [-]: LOADBOOL  R4 0 1       ; R4 := false; PC := 80
- 80 [-]: LOADBOOL  R4 1 0       ; R4 := true
+ 79 [-]: LOADKB    R4 0 1       ; R4 := false; PC := 80
+ 80 [-]: LOADKB    R4 1 0       ; R4 := true
  81 [-]: JMP       83           ; PC := 83
  82 [-]: FORLOOP   R13 57       ; R13 += R15; if R13 <= R14 then begin PC := 57; R16 := R13 end
  83 [-]: TEST      R4 0         ; if not R4 then PC := 107

@@ -53,7 +53,7 @@
  30 [-]: CALL      R6 2 2       ; R6 := R6(R7)
  31 [-]: SELF      R7 R4 K7     ; R8 := R4; R7 := R4[0x388577d5]
  32 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 33 [-]: LOADBOOL  R8 1 0       ; R8 := true
+ 33 [-]: LOADKB    R8 1 0       ; R8 := true
  34 [-]: GETGLOBAL R9 K0        ; R9 := 0x7b998233
  35 [-]: MOVE      R10 R1       ; R10 := R1
  36 [-]: CALL      R9 2 2       ; R9 := R9(R10)
@@ -70,16 +70,16 @@
  47 [-]: TEST      R9 1         ; if R9 then PC := 93
  48 [-]: JMP       93           ; PC := 93
  49 [-]: SELF      R9 R5 K8     ; R10 := R5; R9 := R5[0xc4bae1d8]
- 50 [-]: LOADK     R11 0        ; R11 := 0.000000
+ 50 [-]: CONST     R11 0        ; R11 := 0.000000
  51 [-]: MOVE      R12 R1       ; R12 := R1
  52 [-]: CALL      R9 4 2       ; R9 := R9(R10,R11,R12)
  53 [-]: EQ        1 R8 R9      ; if R8 == R9 then PC := 89
  54 [-]: JMP       89           ; PC := 89
  55 [-]: TEST      R9 0         ; if not R9 then PC := 73
  56 [-]: JMP       73           ; PC := 73
- 57 [-]: LOADK     R10 1        ; R10 := 1.000000
+ 57 [-]: CONST     R10 1        ; R10 := 1.000000
  58 [-]: MOVE      R11 R6       ; R11 := R6
- 59 [-]: LOADK     R12 1        ; R12 := 1.000000
+ 59 [-]: CONST     R12 1        ; R12 := 1.000000
  60 [-]: FORPREP   R10 71       ; R10 -= R12; PC := 71
  61 [-]: SELF      R14 R4 K10   ; R15 := R4; R14 := R4[0xfef27732]
  62 [-]: SUB       R16 R13 K11  ; R16 := R13 - 1.000000
@@ -93,9 +93,9 @@
  70 [-]: CALL      R15 3 1      ; R15(R16,R17)
  71 [-]: FORLOOP   R10 61       ; R10 += R12; if R10 <= R11 then begin PC := 61; R13 := R10 end
  72 [-]: JMP       88           ; PC := 88
- 73 [-]: LOADK     R15 1        ; R15 := 1.000000
+ 73 [-]: CONST     R15 1        ; R15 := 1.000000
  74 [-]: MOVE      R16 R6       ; R16 := R6
- 75 [-]: LOADK     R17 1        ; R17 := 1.000000
+ 75 [-]: CONST     R17 1        ; R17 := 1.000000
  76 [-]: FORPREP   R15 87       ; R15 -= R17; PC := 87
  77 [-]: SELF      R19 R4 K10   ; R20 := R4; R19 := R4[0xfef27732]
  78 [-]: SUB       R21 R18 K11  ; R21 := R18 - 1.000000
@@ -110,7 +110,7 @@
  87 [-]: FORLOOP   R15 77       ; R15 += R17; if R15 <= R16 then begin PC := 77; R18 := R15 end
  88 [-]: MOVE      R8 R9        ; R8 := R9
  89 [-]: GETGLOBAL R20 K15      ; R20 := 0xcbd666e1
- 90 [-]: LOADK     R21 0        ; R21 := 0.000000
+ 90 [-]: CONST     R21 0        ; R21 := 0.000000
  91 [-]: CALL      R20 2 1      ; R20(R21)
  92 [-]: JMP       34           ; PC := 34
  93 [-]: RETURN    R0 1         ; return 

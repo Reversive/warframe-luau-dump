@@ -52,8 +52,8 @@
  29 [-]: CALL      R12 1 2      ; R12 := R12()
  30 [-]: SETTABLE  R12 K10 K11  ; R12["baseAmount"] := 0.000000
  31 [-]: SELF      R13 R12 K12  ; R14 := R12; R13 := R12[0xfc0e440a]
- 32 [-]: LOADK     R15 19       ; R15 := 19.000000
- 33 [-]: LOADBOOL  R16 1 0      ; R16 := true
+ 32 [-]: CONST     R15 19       ; R15 := 19.000000
+ 33 [-]: LOADKB    R16 1 0      ; R16 := true
  34 [-]: CALL      R13 4 1      ; R13(R14,R15,R16)
  35 [-]: SELF      R13 R12 K13  ; R14 := R12; R13 := R12[0x86cd00cb]
  36 [-]: MOVE      R15 R0       ; R15 := R0

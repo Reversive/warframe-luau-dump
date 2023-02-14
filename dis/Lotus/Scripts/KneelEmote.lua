@@ -55,10 +55,10 @@
  24 [-]: GETTABLE  R4 R6 R1     ; R4 := R6[R1]
  25 [-]: SELF      R6 R0 K5     ; R7 := R0; R6 := R0[0x7027c544]
  26 [-]: MOVE      R8 R4        ; R8 := R4
- 27 [-]: LOADBOOL  R9 0 0       ; R9 := false
- 28 [-]: LOADK     R10 4        ; R10 := 4.000000
+ 27 [-]: LOADKB    R9 0 0       ; R9 := false
+ 28 [-]: CONST     R10 4        ; R10 := 4.000000
  29 [-]: MOVE      R11 R3       ; R11 := R3
- 30 [-]: LOADBOOL  R12 1 0      ; R12 := true
+ 30 [-]: LOADKB    R12 1 0      ; R12 := true
  31 [-]: CALL      R6 7 1       ; R6(R7,R8,R9,R10,R11,R12)
  32 [-]: RETURN    R0 1         ; return 
 
@@ -74,11 +74,11 @@
 
   1 [-]: GETUPVAL  R1 U0        ; R1 := U0
   2 [-]: MOVE      R2 R0        ; R2 := R0
-  3 [-]: LOADK     R3 1         ; R3 := 1.000000
+  3 [-]: CONST     R3 1         ; R3 := 1.000000
   4 [-]: GETGLOBAL R4 K0        ; R4 := 0x0469f296
   5 [-]: LOADK     R5 K1        ; R5 := "StandToKneel"
   6 [-]: CALL      R4 2 2       ; R4 := R4(R5)
-  7 [-]: LOADK     R5 3         ; R5 := 3.000000
+  7 [-]: CONST     R5 3         ; R5 := 3.000000
   8 [-]: CALL      R1 5 1       ; R1(R2,R3,R4,R5)
   9 [-]: RETURN    R0 1         ; return 
 
@@ -94,11 +94,11 @@
 
   1 [-]: GETUPVAL  R2 U0        ; R2 := U0
   2 [-]: MOVE      R3 R0        ; R3 := R0
-  3 [-]: LOADK     R4 2         ; R4 := 2.000000
+  3 [-]: CONST     R4 2         ; R4 := 2.000000
   4 [-]: GETGLOBAL R5 K0        ; R5 := 0x0469f296
   5 [-]: LOADK     R6 K1        ; R6 := "KneelIdle"
   6 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-  7 [-]: LOADK     R6 2         ; R6 := 2.000000
+  7 [-]: CONST     R6 2         ; R6 := 2.000000
   8 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
   9 [-]: RETURN    R0 1         ; return 
 
@@ -114,11 +114,11 @@
 
   1 [-]: GETUPVAL  R1 U0        ; R1 := U0
   2 [-]: MOVE      R2 R0        ; R2 := R0
-  3 [-]: LOADK     R3 3         ; R3 := 3.000000
+  3 [-]: CONST     R3 3         ; R3 := 3.000000
   4 [-]: GETGLOBAL R4 K0        ; R4 := 0x0469f296
   5 [-]: LOADK     R5 K1        ; R5 := "KneelToStand"
   6 [-]: CALL      R4 2 2       ; R4 := R4(R5)
-  7 [-]: LOADK     R5 1         ; R5 := 1.000000
+  7 [-]: CONST     R5 1         ; R5 := 1.000000
   8 [-]: CALL      R1 5 1       ; R1(R2,R3,R4,R5)
   9 [-]: RETURN    R0 1         ; return 
 

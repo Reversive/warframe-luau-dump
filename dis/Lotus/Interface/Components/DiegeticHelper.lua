@@ -44,12 +44,12 @@
  12 [-]: DIV       R2 R2 K7     ; R2 := R2 / 2.000000
  13 [-]: SETTABLE  R1 K8 R2     ; R1["mHalfHeight"] := R2
  14 [-]: GETGLOBAL R2 K11       ; R2 := 0x78ca68a2
- 15 [-]: LOADK     R3 0         ; R3 := 0.000000
+ 15 [-]: CONST     R3 0         ; R3 := 0.000000
  16 [-]: LOADK     R4 K12       ; R4 := 0.150000
  17 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
  18 [-]: SETTABLE  R1 K10 R2    ; R1["mSmoothCursorX"] := R2
  19 [-]: GETGLOBAL R2 K11       ; R2 := 0x78ca68a2
- 20 [-]: LOADK     R3 0         ; R3 := 0.000000
+ 20 [-]: CONST     R3 0         ; R3 := 0.000000
  21 [-]: LOADK     R4 K12       ; R4 := 0.150000
  22 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
  23 [-]: SETTABLE  R1 K13 R2    ; R1["mSmoothCursorY"] := R2
@@ -117,7 +117,7 @@
   3 [-]: JMP       6            ; PC := 6
   4 [-]: GETTABLE  R1 R0 K0     ; R1 := R0["mParentEnv"]
   5 [-]: RETURN    R1 2         ; return R1
-  6 [-]: LOADK     R1 1         ; R1 := 1.000000
+  6 [-]: CONST     R1 1         ; R1 := 1.000000
   7 [-]: LOADNIL   R2 R2        ; R2 := nil
   8 [-]: GETGLOBAL R3 K2        ; R3 := 0xcd0165a3
   9 [-]: MOVE      R4 R1        ; R4 := R1
@@ -162,7 +162,7 @@
 
   1 [-]: GETGLOBAL R2 K1        ; R2 := _T
   2 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["UIInputEnabled"]
-  3 [-]: SETTABLE  R0 K0 R2     ; R0[0x00000000] := R2
+  3 [-]: SETTABLE  R0 K0 R2     ; R0["mWasUIInputEnabled"] := R2
   4 [-]: GETTABLE  R2 R0 K0     ; R2 := R0["mWasUIInputEnabled"]
   5 [-]: TEST      R2 1         ; if R2 then PC := 10
   6 [-]: JMP       10           ; PC := 10
@@ -176,15 +176,15 @@
  14 [-]: GETGLOBAL R3 K7        ; R3 := 0x25312c9b
  15 [-]: GETTABLE  R4 R0 K8     ; R4 := R0["mMovie"]
  16 [-]: LOADK     R5 K9        ; R5 := "_root"
- 17 [-]: LOADK     R6 4         ; R6 := 4.000000
+ 17 [-]: CONST     R6 4         ; R6 := 4.000000
  18 [-]: NEWTABLE  R7 1 0       ; R7 := {}
  19 [-]: MOVE      R8 R2        ; R8 := R2
  20 [-]: SETLIST   R7 1 1       ; R7[(1-1)*FPF+i] := R(7+i), 1 <= i <= 1
  21 [-]: NEWTABLE  R8 1 0       ; R8 := {}
- 22 [-]: LOADK     R9 1         ; R9 := 1.000000
+ 22 [-]: CONST     R9 1         ; R9 := 1.000000
  23 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
- 24 [-]: LOADK     R9 1         ; R9 := 1.000000
- 25 [-]: LOADK     R10 0        ; R10 := 0.000000
+ 24 [-]: CONST     R9 1         ; R9 := 1.000000
+ 25 [-]: CONST     R10 0        ; R10 := 0.000000
  26 [-]: CLOSURE   R11 1        ; R11 := closure(Function #1.3.2)
  27 [-]: MOVE      R0 R0        ; R0 := R0
  28 [-]: CALL      R3 9 1       ; R3(R4,R5,R6,R7,R8,R9,R10,R11)
@@ -211,17 +211,17 @@
   9 [-]: GETTABLE  R2 R2 K3     ; R2 := R2["mMovie"]
  10 [-]: SELF      R2 R2 K4     ; R3 := R2; R2 := R2[0x67bc869f]
  11 [-]: LOADK     R4 K5        ; R4 := "_root"
- 12 [-]: LOADK     R5 6         ; R5 := 6.000000
+ 12 [-]: CONST     R5 6         ; R5 := 6.000000
  13 [-]: MUL       R6 R1 K6     ; R6 := R1 * 100.000000
  14 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
  15 [-]: GETUPVAL  R2 U0        ; R2 := U0
  16 [-]: GETTABLE  R2 R2 K3     ; R2 := R2["mMovie"]
  17 [-]: SELF      R2 R2 K4     ; R3 := R2; R2 := R2[0x67bc869f]
  18 [-]: LOADK     R4 K5        ; R4 := "_root"
- 19 [-]: LOADK     R5 5         ; R5 := 5.000000
+ 19 [-]: CONST     R5 5         ; R5 := 5.000000
  20 [-]: GETGLOBAL R6 K7        ; R6 := 0x9bafffe3
- 21 [-]: LOADK     R7 90        ; R7 := 90.000000
- 22 [-]: LOADK     R8 100       ; R8 := 100.000000
+ 21 [-]: CONST     R7 90        ; R7 := 90.000000
+ 22 [-]: CONST     R8 100       ; R8 := 100.000000
  23 [-]: MOVE      R9 R1        ; R9 := R1
  24 [-]: CALL      R6 4 0       ; R6,... := R6(R7,R8,R9)
  25 [-]: CALL      R2 0 1       ; R2(R3,...)
@@ -229,17 +229,17 @@
  27 [-]: GETTABLE  R2 R2 K3     ; R2 := R2["mMovie"]
  28 [-]: SELF      R2 R2 K4     ; R3 := R2; R2 := R2[0x67bc869f]
  29 [-]: LOADK     R4 K5        ; R4 := "_root"
- 30 [-]: LOADK     R5 1         ; R5 := 1.000000
+ 30 [-]: CONST     R5 1         ; R5 := 1.000000
  31 [-]: SUB       R6 K8 R1     ; R6 := 1.000000 - R1
  32 [-]: MUL       R6 R6 K9     ; R6 := R6 * 320.000000
  33 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
  34 [-]: GETGLOBAL R2 K10       ; R2 := 0xdef8aeae
- 35 [-]: LOADK     R3 4         ; R3 := 4.000000
- 36 [-]: LOADK     R4 1         ; R4 := 1.000000
+ 35 [-]: CONST     R3 4         ; R3 := 4.000000
+ 36 [-]: CONST     R4 1         ; R4 := 1.000000
  37 [-]: GETGLOBAL R5 K11       ; R5 := 0x55156ff7
  38 [-]: CALL      R5 1 2       ; R5 := R5()
  39 [-]: MUL       R5 R5 K12    ; R5 := R5 * 0.200000
- 40 [-]: LOADK     R6 0         ; R6 := 0.500000
+ 40 [-]: CONST     R6 0         ; R6 := 0.500000
  41 [-]: CALL      R2 5 2       ; R2 := R2(R3,R4,R5,R6)
  42 [-]: GETGLOBAL R3 K0        ; R3 := 0x5bced4c4
  43 [-]: GETTABLE  R3 R3 K13    ; R3 := R3[0xe4a5b3ca]
@@ -258,13 +258,13 @@
  56 [-]: GETGLOBAL R5 K18       ; R5 := 0x0469f296
  57 [-]: LOADK     R6 K19       ; R6 := "PixelateBias"
  58 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 59 [-]: LOADK     R6 1         ; R6 := 1.000000
+ 59 [-]: CONST     R6 1         ; R6 := 1.000000
  60 [-]: GETGLOBAL R7 K0        ; R7 := 0x5bced4c4
  61 [-]: GETTABLE  R7 R7 K20    ; R7 := R7[0xa40531d8]
  62 [-]: MOVE      R8 R0        ; R8 := R0
- 63 [-]: LOADK     R9 0         ; R9 := 0.500000
+ 63 [-]: CONST     R9 0         ; R9 := 0.500000
  64 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
- 65 [-]: LOADK     R8 1         ; R8 := 1.000000
+ 65 [-]: CONST     R8 1         ; R8 := 1.000000
  66 [-]: MUL       R9 R2 K21    ; R9 := R2 * 0.100000
  67 [-]: CALL      R3 7 1       ; R3(R4,R5,R6,R7,R8,R9)
  68 [-]: GETGLOBAL R3 K14       ; R3 := 0x7b998233
@@ -279,13 +279,13 @@
  77 [-]: GETGLOBAL R5 K18       ; R5 := 0x0469f296
  78 [-]: LOADK     R6 K19       ; R6 := "PixelateBias"
  79 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 80 [-]: LOADK     R6 1         ; R6 := 1.000000
+ 80 [-]: CONST     R6 1         ; R6 := 1.000000
  81 [-]: GETGLOBAL R7 K0        ; R7 := 0x5bced4c4
  82 [-]: GETTABLE  R7 R7 K20    ; R7 := R7[0xa40531d8]
  83 [-]: MOVE      R8 R0        ; R8 := R0
- 84 [-]: LOADK     R9 0         ; R9 := 0.500000
+ 84 [-]: CONST     R9 0         ; R9 := 0.500000
  85 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
- 86 [-]: LOADK     R8 1         ; R8 := 1.000000
+ 86 [-]: CONST     R8 1         ; R8 := 1.000000
  87 [-]: MUL       R9 R2 K21    ; R9 := R2 * 0.100000
  88 [-]: CALL      R3 7 1       ; R3(R4,R5,R6,R7,R8,R9)
  89 [-]: GETUPVAL  R3 U0        ; R3 := U0
@@ -300,8 +300,8 @@
  98 [-]: GETGLOBAL R5 K29       ; R5 := 0x42dcc9f5
  99 [-]: SUB       R6 K8 R0     ; R6 := 1.000000 - R0
 100 [-]: MUL       R6 R6 K30    ; R6 := R6 * 255.000000
-101 [-]: LOADK     R7 0         ; R7 := 0.000000
-102 [-]: LOADK     R8 255       ; R8 := 255.000000
+101 [-]: CONST     R7 0         ; R7 := 0.000000
+102 [-]: CONST     R8 255       ; R8 := 255.000000
 103 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
 104 [-]: SETTABLE  R4 K28 R5    ; R4["alpha"] := R5
 105 [-]: RETURN    R0 1         ; return 
@@ -358,7 +358,7 @@
 
   1 [-]: EQ        0 R2 K0      ; if R2 ~= nil then PC := 4
   2 [-]: JMP       4            ; PC := 4
-  3 [-]: LOADBOOL  R2 0 0       ; R2 := false
+  3 [-]: LOADKB    R2 0 0       ; R2 := false
   4 [-]: SETTABLE  R0 K1 K2     ; R0["mClosing"] := true
   5 [-]: SETTABLE  R0 K3 R1     ; R0["mTransitionOutCallback"] := R1
   6 [-]: SETTABLE  R0 K4 K2     ; R0["mTransitioning"] := true
@@ -371,17 +371,17 @@
  13 [-]: GETGLOBAL R4 K7        ; R4 := 0x25312c9b
  14 [-]: GETTABLE  R5 R0 K8     ; R5 := R0["mMovie"]
  15 [-]: LOADK     R6 K9        ; R6 := "_root"
- 16 [-]: LOADK     R7 2         ; R7 := 2.000000
+ 16 [-]: CONST     R7 2         ; R7 := 2.000000
  17 [-]: NEWTABLE  R8 2 0       ; R8 := {}
  18 [-]: MOVE      R9 R3        ; R9 := R3
- 19 [-]: LOADK     R10 10       ; R10 := 10.000000
+ 19 [-]: CONST     R10 10       ; R10 := 10.000000
  20 [-]: SETLIST   R8 2 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 2
  21 [-]: NEWTABLE  R9 2 0       ; R9 := {}
- 22 [-]: LOADK     R10 1        ; R10 := 1.000000
- 23 [-]: LOADK     R11 0        ; R11 := 0.000000
+ 22 [-]: CONST     R10 1        ; R10 := 1.000000
+ 23 [-]: CONST     R11 0        ; R11 := 0.000000
  24 [-]: SETLIST   R9 2 1       ; R9[(1-1)*FPF+i] := R(9+i), 1 <= i <= 2
  25 [-]: LOADK     R10 K11      ; R10 := 0.350000
- 26 [-]: LOADK     R11 0        ; R11 := 0.000000
+ 26 [-]: CONST     R11 0        ; R11 := 0.000000
  27 [-]: CLOSURE   R12 1        ; R12 := closure(Function #1.5.2)
  28 [-]: MOVE      R0 R0        ; R0 := R0
  29 [-]: CALL      R4 9 1       ; R4(R5,R6,R7,R8,R9,R10,R11,R12)
@@ -417,7 +417,7 @@
   6 [-]: GETGLOBAL R3 K3        ; R3 := 0x9bafffe3
   7 [-]: GETUPVAL  R4 U0        ; R4 := U0
   8 [-]: GETTABLE  R4 R4 K4     ; R4 := R4["mHeadingOffset"]
-  9 [-]: LOADK     R5 0         ; R5 := 0.000000
+  9 [-]: CONST     R5 0         ; R5 := 0.000000
  10 [-]: MOVE      R6 R0        ; R6 := R0
  11 [-]: CALL      R3 4 2       ; R3 := R3(R4,R5,R6)
  12 [-]: ADD       R2 R2 R3     ; R2 := R2 + R3
@@ -428,7 +428,7 @@
  17 [-]: GETGLOBAL R3 K3        ; R3 := 0x9bafffe3
  18 [-]: GETUPVAL  R4 U0        ; R4 := U0
  19 [-]: GETTABLE  R4 R4 K6     ; R4 := R4["mPitchOffset"]
- 20 [-]: LOADK     R5 0         ; R5 := 0.000000
+ 20 [-]: CONST     R5 0         ; R5 := 0.000000
  21 [-]: MOVE      R6 R0        ; R6 := R0
  22 [-]: CALL      R3 4 2       ; R3 := R3(R4,R5,R6)
  23 [-]: ADD       R2 R2 R3     ; R2 := R2 + R3
@@ -497,8 +497,8 @@
  86 [-]: GETTABLE  R4 R3 K24    ; R4 := R3["focalTint"]
  87 [-]: GETGLOBAL R5 K26       ; R5 := 0x42dcc9f5
  88 [-]: MUL       R6 R0 K27    ; R6 := R0 * 255.000000
- 89 [-]: LOADK     R7 0         ; R7 := 0.000000
- 90 [-]: LOADK     R8 255       ; R8 := 255.000000
+ 89 [-]: CONST     R7 0         ; R7 := 0.000000
+ 90 [-]: CONST     R8 255       ; R8 := 255.000000
  91 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
  92 [-]: SETTABLE  R4 K25 R5    ; R4["alpha"] := R5
  93 [-]: RETURN    R0 1         ; return 
@@ -533,12 +533,12 @@
   3 [-]: JMP       5            ; PC := 5
   4 [-]: RETURN    R0 1         ; return 
   5 [-]: GETGLOBAL R1 K1        ; R1 := 0xdef8aeae
-  6 [-]: LOADK     R2 4         ; R2 := 4.000000
-  7 [-]: LOADK     R3 1         ; R3 := 1.000000
+  6 [-]: CONST     R2 4         ; R2 := 4.000000
+  7 [-]: CONST     R3 1         ; R3 := 1.000000
   8 [-]: GETGLOBAL R4 K2        ; R4 := 0x55156ff7
   9 [-]: CALL      R4 1 2       ; R4 := R4()
  10 [-]: MUL       R4 R4 K3     ; R4 := R4 * 0.200000
- 11 [-]: LOADK     R5 0         ; R5 := 0.500000
+ 11 [-]: CONST     R5 0         ; R5 := 0.500000
  12 [-]: CALL      R1 5 2       ; R1 := R1(R2,R3,R4,R5)
  13 [-]: GETGLOBAL R2 K4        ; R2 := 0x5bced4c4
  14 [-]: GETTABLE  R2 R2 K5     ; R2 := R2[0xe4a5b3ca]
@@ -559,7 +559,7 @@
  29 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  30 [-]: MUL       R2 R2 K8     ; R2 := R2 * 0.100000
  31 [-]: ADD       R1 R1 R2     ; R1 := R1 + R2
- 32 [-]: LOADK     R1 0         ; R1 := 0.000000
+ 32 [-]: CONST     R1 0         ; R1 := 0.000000
  33 [-]: GETGLOBAL R2 K10       ; R2 := 0x7b998233
  34 [-]: GETGLOBAL R3 K11       ; R3 := 0x0032441c
  35 [-]: GETTABLE  R3 R3 K12    ; R3 := R3["UIMaterial_Diegetic"]
@@ -572,9 +572,9 @@
  42 [-]: GETGLOBAL R4 K14       ; R4 := 0x0469f296
  43 [-]: LOADK     R5 K15       ; R5 := "PixelateBias"
  44 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 45 [-]: LOADK     R5 1         ; R5 := 1.000000
- 46 [-]: LOADK     R6 1         ; R6 := 1.000000
- 47 [-]: LOADK     R7 1         ; R7 := 1.000000
+ 45 [-]: CONST     R5 1         ; R5 := 1.000000
+ 46 [-]: CONST     R6 1         ; R6 := 1.000000
+ 47 [-]: CONST     R7 1         ; R7 := 1.000000
  48 [-]: MUL       R8 R1 K8     ; R8 := R1 * 0.100000
  49 [-]: CALL      R2 7 1       ; R2(R3,R4,R5,R6,R7,R8)
  50 [-]: GETGLOBAL R2 K10       ; R2 := 0x7b998233
@@ -589,9 +589,9 @@
  59 [-]: GETGLOBAL R4 K14       ; R4 := 0x0469f296
  60 [-]: LOADK     R5 K15       ; R5 := "PixelateBias"
  61 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 62 [-]: LOADK     R5 1         ; R5 := 1.000000
- 63 [-]: LOADK     R6 1         ; R6 := 1.000000
- 64 [-]: LOADK     R7 1         ; R7 := 1.000000
+ 62 [-]: CONST     R5 1         ; R5 := 1.000000
+ 63 [-]: CONST     R6 1         ; R6 := 1.000000
+ 64 [-]: CONST     R7 1         ; R7 := 1.000000
  65 [-]: MUL       R8 R1 K8     ; R8 := R1 * 0.100000
  66 [-]: CALL      R2 7 1       ; R2(R3,R4,R5,R6,R7,R8)
  67 [-]: RETURN    R0 1         ; return 
@@ -736,14 +736,14 @@
 109 [-]: DIV       R2 R7 R8     ; R2 := R7 / R8
 110 [-]: GETGLOBAL R7 K27       ; R7 := 0x42dcc9f5
 111 [-]: MOVE      R8 R1        ; R8 := R1
-112 [-]: LOADK     R9 -1        ; R9 := -1.000000
-113 [-]: LOADK     R10 1        ; R10 := 1.000000
+112 [-]: CONST     R9 -1        ; R9 := -1.000000
+113 [-]: CONST     R10 1        ; R10 := 1.000000
 114 [-]: CALL      R7 4 2       ; R7 := R7(R8,R9,R10)
 115 [-]: MOVE      R1 R7        ; R1 := R7
 116 [-]: GETGLOBAL R7 K27       ; R7 := 0x42dcc9f5
 117 [-]: MOVE      R8 R2        ; R8 := R2
-118 [-]: LOADK     R9 -1        ; R9 := -1.000000
-119 [-]: LOADK     R10 1        ; R10 := 1.000000
+118 [-]: CONST     R9 -1        ; R9 := -1.000000
+119 [-]: CONST     R10 1        ; R10 := 1.000000
 120 [-]: CALL      R7 4 2       ; R7 := R7(R8,R9,R10)
 121 [-]: MOVE      R2 R7        ; R2 := R7
 122 [-]: GETTABLE  R7 R0 K1     ; R7 := R0["mMovie"]
@@ -819,7 +819,7 @@
 192 [-]: GETTABLE  R8 R0 K1     ; R8 := R0["mMovie"]
 193 [-]: SELF      R8 R8 K49    ; R9 := R8; R8 := R8[0x67bc869f]
 194 [-]: LOADK     R10 K50      ; R10 := "_root"
-195 [-]: LOADK     R11 0        ; R11 := 0.000000
+195 [-]: CONST     R11 0        ; R11 := 0.000000
 196 [-]: GETTABLE  R12 R0 K42   ; R12 := R0["mShiftX"]
 197 [-]: CALL      R8 5 1       ; R8(R9,R10,R11,R12)
 198 [-]: GETGLOBAL R8 K43       ; R8 := 0x9bafffe3

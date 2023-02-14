@@ -122,7 +122,7 @@
  31 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
  32 [-]: TEST      R12 0        ; if not R12 then PC := 89
  33 [-]: JMP       89           ; PC := 89
- 34 [-]: LOADK     R12 0        ; R12 := 0.000000
+ 34 [-]: CONST     R12 0        ; R12 := 0.000000
  35 [-]: GETGLOBAL R13 K9       ; R13 := 0x5dc164da
  36 [-]: TEST      R13 0        ; if not R13 then PC := 64
  37 [-]: JMP       64           ; PC := 64

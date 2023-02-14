@@ -29,8 +29,8 @@
   6 [-]: LOADK     R5 K4        ; R5 := "DoorFrameTag"
   7 [-]: CALL      R4 2 2       ; R4 := R4(R5)
   8 [-]: MOVE      R5 R1        ; R5 := R1
-  9 [-]: LOADK     R6 0         ; R6 := 0.000000
- 10 [-]: LOADK     R7 5         ; R7 := 5.000000
+  9 [-]: CONST     R6 0         ; R6 := 0.000000
+ 10 [-]: CONST     R7 5         ; R7 := 5.000000
  11 [-]: CALL      R2 6 2       ; R2 := R2(R3,R4,R5,R6,R7)
  12 [-]: GETGLOBAL R3 K5        ; R3 := 0x7b998233
  13 [-]: MOVE      R4 R2        ; R4 := R2
@@ -38,7 +38,7 @@
  15 [-]: TEST      R3 1         ; if R3 then PC := 20
  16 [-]: JMP       20           ; PC := 20
  17 [-]: SELF      R3 R2 K6     ; R4 := R2; R3 := R2[0x768274d6]
- 18 [-]: LOADBOOL  R5 0 0       ; R5 := false
+ 18 [-]: LOADKB    R5 0 0       ; R5 := false
  19 [-]: CALL      R3 3 1       ; R3(R4,R5)
  20 [-]: RETURN    R0 1         ; return 
 

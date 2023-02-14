@@ -7,10 +7,10 @@
 ; Is_vararg:       2
 ; Max Stack Size:  6
 
-  1 [-]: LOADK     R0 3         ; R0 := 3.000000
-  2 [-]: LOADK     R1 1         ; R1 := 1.000000
-  3 [-]: LOADK     R2 2         ; R2 := 2.000000
-  4 [-]: LOADK     R3 0         ; R3 := 0.500000
+  1 [-]: CONST     R0 3         ; R0 := 3.000000
+  2 [-]: CONST     R1 1         ; R1 := 1.000000
+  3 [-]: CONST     R2 2         ; R2 := 2.000000
+  4 [-]: CONST     R3 0         ; R3 := 0.500000
   5 [-]: CLOSURE   R4 0         ; R4 := closure(Function #1)
   6 [-]: MOVE      R0 R0        ; R0 := R0
   7 [-]: MOVE      R0 R1        ; R0 := R1
@@ -84,12 +84,12 @@
  17 [-]: SELF      R4 R3 K4     ; R5 := R3; R4 := R3[0xde321e6f]
  18 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  19 [-]: SELF      R4 R4 K5     ; R5 := R4; R4 := R4[0xe9f54086]
- 20 [-]: LOADK     R6 0         ; R6 := 0.000000
- 21 [-]: LOADK     R7 193       ; R7 := 193.000000
+ 20 [-]: CONST     R6 0         ; R6 := 0.000000
+ 21 [-]: CONST     R7 199       ; R7 := 199.000000
  22 [-]: SELF      R8 R2 K7     ; R9 := R2; R8 := R2[0xcde10c4a]
  23 [-]: CALL      R8 2 2       ; R8 := R8(R9)
  24 [-]: MOVE      R9 R2        ; R9 := R2
- 25 [-]: LOADK     R10 25       ; R10 := 25.000000
+ 25 [-]: CONST     R10 25       ; R10 := 25.000000
  26 [-]: GETGLOBAL R11 K9       ; R11 := 0x0469f296
  27 [-]: LOADK     R12 K10      ; R12 := "TetherMine"
  28 [-]: CALL      R11 2 0      ; R11,... := R11(R12)

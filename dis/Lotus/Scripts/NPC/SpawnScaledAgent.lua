@@ -42,7 +42,7 @@
  12 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  13 [-]: EQ        0 R5 K7      ; if R5 ~= 9999.000000 then PC := 16
  14 [-]: JMP       16           ; PC := 16
- 15 [-]: LOADK     R5 1         ; R5 := 1.000000
+ 15 [-]: CONST     R5 1         ; R5 := 1.000000
  16 [-]: GETGLOBAL R6 K8        ; R6 := 0x55730e1a
  17 [-]: MOVE      R7 R4        ; R7 := R4
  18 [-]: MOVE      R8 R5        ; R8 := R5
@@ -51,11 +51,11 @@
  21 [-]: TEST      R7 0         ; if not R7 then PC := 24
  22 [-]: JMP       24           ; PC := 24
  23 [-]: MOVE      R6 R5        ; R6 := R5
- 24 [-]: LOADK     R7 0         ; R7 := 0.000000
+ 24 [-]: CONST     R7 0         ; R7 := 0.000000
  25 [-]: GETGLOBAL R8 K11       ; R8 := 0x5d172da9
  26 [-]: TEST      R8 0         ; if not R8 then PC := 29
  27 [-]: JMP       29           ; PC := 29
- 28 [-]: LOADK     R7 1         ; R7 := 1.000000
+ 28 [-]: CONST     R7 1         ; R7 := 1.000000
  29 [-]: LOADNIL   R8 R8        ; R8 := nil
  30 [-]: GETGLOBAL R9 K12       ; R9 := 0x7b998233
  31 [-]: GETGLOBAL R10 K13      ; R10 := 0x526b5db8
@@ -152,7 +152,7 @@
 ; Max Stack Size:  2
 
   1 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  2 [-]: LOADBOOL  R1 0 0       ; R1 := false
+  2 [-]: LOADKB    R1 0 0       ; R1 := false
   3 [-]: CALL      R0 2 1       ; R0(R1)
   4 [-]: RETURN    R0 1         ; return 
 
@@ -167,7 +167,7 @@
 ; Max Stack Size:  2
 
   1 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  2 [-]: LOADBOOL  R1 1 0       ; R1 := true
+  2 [-]: LOADKB    R1 1 0       ; R1 := true
   3 [-]: CALL      R0 2 1       ; R0(R1)
   4 [-]: RETURN    R0 1         ; return 
 

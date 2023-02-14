@@ -58,28 +58,28 @@
  17 [-]: CALL      R4 3 0       ; R4,... := R4(R5,R6)
  18 [-]: CALL      R2 0 2       ; R2 := R2(R3,...)
  19 [-]: SUB       R3 R1 R2     ; R3 := R1 - R2
- 20 [-]: LOADK     R4 0         ; R4 := 0.000000
+ 20 [-]: CONST     R4 0         ; R4 := 0.000000
  21 [-]: LT        0 K6 R1      ; if 0.000000 >= R1 then PC := 24
  22 [-]: JMP       24           ; PC := 24
  23 [-]: DIV       R4 R3 R1     ; R4 := R3 / R1
  24 [-]: LT        0 R4 K7      ; if R4 >= 0.200000 then PC := 29
  25 [-]: JMP       29           ; PC := 29
- 26 [-]: LOADK     R5 4         ; R5 := 4.000000
+ 26 [-]: CONST     R5 4         ; R5 := 4.000000
  27 [-]: RETURN    R5 2         ; return R5
  28 [-]: JMP       43           ; PC := 43
  29 [-]: GETTABLE  R5 R0 K2     ; R5 := R0["red"]
  30 [-]: EQ        0 R1 R5      ; if R1 ~= R5 then PC := 35
  31 [-]: JMP       35           ; PC := 35
- 32 [-]: LOADK     R5 3         ; R5 := 3.000000
+ 32 [-]: CONST     R5 3         ; R5 := 3.000000
  33 [-]: RETURN    R5 2         ; return R5
  34 [-]: JMP       43           ; PC := 43
  35 [-]: GETTABLE  R5 R0 K3     ; R5 := R0["green"]
  36 [-]: EQ        0 R1 R5      ; if R1 ~= R5 then PC := 41
  37 [-]: JMP       41           ; PC := 41
- 38 [-]: LOADK     R5 6         ; R5 := 6.000000
+ 38 [-]: CONST     R5 6         ; R5 := 6.000000
  39 [-]: RETURN    R5 2         ; return R5
  40 [-]: JMP       43           ; PC := 43
- 41 [-]: LOADK     R5 5         ; R5 := 5.000000
+ 41 [-]: CONST     R5 5         ; R5 := 5.000000
  42 [-]: RETURN    R5 2         ; return R5
  43 [-]: RETURN    R0 1         ; return 
 
@@ -109,7 +109,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
-  1 [-]: LOADK     R0 3         ; R0 := 3.000000
+  1 [-]: CONST     R0 3         ; R0 := 3.000000
   2 [-]: RETURN    R0 2         ; return R0
   3 [-]: RETURN    R0 1         ; return 
 
@@ -123,7 +123,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  9
 
-  1 [-]: LOADK     R2 3         ; R2 := 3.000000
+  1 [-]: CONST     R2 3         ; R2 := 3.000000
   2 [-]: EQ        1 R1 K1      ; if R1 == nil then PC := 5
   3 [-]: JMP       5            ; PC := 5
   4 [-]: MOVE      R2 R1        ; R2 := R1
@@ -135,10 +135,10 @@
  10 [-]: SELF      R3 R0 K3     ; R4 := R0; R3 := R0[0x68d708a7]
  11 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  12 [-]: SELF      R4 R3 K4     ; R5 := R3; R4 := R3[0x8e62760a]
- 13 [-]: LOADK     R6 0         ; R6 := 0.000000
+ 13 [-]: CONST     R6 0         ; R6 := 0.000000
  14 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
  15 [-]: SELF      R5 R4 K6     ; R6 := R4; R5 := R4[0x697019d0]
- 16 [-]: LOADK     R7 4         ; R7 := 4.000000
+ 16 [-]: CONST     R7 4         ; R7 := 4.000000
  17 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
  18 [-]: TEST      R5 0         ; if not R5 then PC := 45
  19 [-]: JMP       45           ; PC := 45
@@ -182,19 +182,19 @@
 
   1 [-]: EQ        0 R0 K1      ; if R0 ~= 6.000000 then PC := 6
   2 [-]: JMP       6            ; PC := 6
-  3 [-]: LOADK     R1 2         ; R1 := 2.000000
+  3 [-]: CONST     R1 2         ; R1 := 2.000000
   4 [-]: RETURN    R1 2         ; return R1
   5 [-]: JMP       15           ; PC := 15
   6 [-]: EQ        0 R0 K2      ; if R0 ~= 4.000000 then PC := 11
   7 [-]: JMP       11           ; PC := 11
-  8 [-]: LOADK     R1 3         ; R1 := 3.000000
+  8 [-]: CONST     R1 3         ; R1 := 3.000000
   9 [-]: RETURN    R1 2         ; return R1
  10 [-]: JMP       15           ; PC := 15
  11 [-]: EQ        0 R0 K3      ; if R0 ~= 5.000000 then PC := 15
  12 [-]: JMP       15           ; PC := 15
- 13 [-]: LOADK     R1 4         ; R1 := 4.000000
+ 13 [-]: CONST     R1 4         ; R1 := 4.000000
  14 [-]: RETURN    R1 2         ; return R1
- 15 [-]: LOADK     R1 1         ; R1 := 1.000000
+ 15 [-]: CONST     R1 1         ; R1 := 1.000000
  16 [-]: RETURN    R1 2         ; return R1
  17 [-]: RETURN    R0 1         ; return 
 

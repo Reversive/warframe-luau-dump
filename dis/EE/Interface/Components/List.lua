@@ -28,8 +28,8 @@
 
   1 [-]: SELF      R3 R0 K0     ; R4 := R0; R3 := R0[0x67bc869f]
   2 [-]: MOVE      R5 R1        ; R5 := R1
-  3 [-]: LOADK     R6 10        ; R6 := 10.000000
-  4 [-]: LOADK     R7 0         ; R7 := 0.000000
+  3 [-]: CONST     R6 10        ; R6 := 10.000000
+  4 [-]: CONST     R7 0         ; R7 := 0.000000
   5 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
   6 [-]: NEWTABLE  R3 1 40      ; R3 := {}
   7 [-]: SETTABLE  R3 K1 R0     ; R3["mMovie"] := R0
@@ -71,12 +71,12 @@
  43 [-]: SETTABLE  R3 K41 K5    ; R3["mWrapAroundNavigation"] := true
  44 [-]: SELF      R4 R0 K43    ; R5 := R0; R4 := R0[0x91a24e4b]
  45 [-]: MOVE      R6 R1        ; R6 := R1
- 46 [-]: LOADK     R7 0         ; R7 := 0.000000
+ 46 [-]: CONST     R7 0         ; R7 := 0.000000
  47 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
  48 [-]: SETTABLE  R3 K42 R4    ; R3["mInitialX"] := R4
  49 [-]: SELF      R4 R0 K43    ; R5 := R0; R4 := R0[0x91a24e4b]
  50 [-]: MOVE      R6 R1        ; R6 := R1
- 51 [-]: LOADK     R7 1         ; R7 := 1.000000
+ 51 [-]: CONST     R7 1         ; R7 := 1.000000
  52 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
  53 [-]: SETTABLE  R3 K44 R4    ; R3["mInitialY"] := R4
  54 [-]: SETTABLE  R3 K45 R2    ; R3["mVisibleElements"] := R2
@@ -89,7 +89,7 @@
  61 [-]: MOVE      R6 R1        ; R6 := R1
  62 [-]: LOADK     R7 K52       ; R7 := ".Btn"
  63 [-]: CONCAT    R6 R6 R7     ; R6 := R6 .. R7
- 64 [-]: LOADK     R7 13        ; R7 := 13.000000
+ 64 [-]: CONST     R7 13        ; R7 := 13.000000
  65 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
  66 [-]: SETTABLE  R3 K51 R4    ; R3["mOriginalButtonHeight"] := R4
  67 [-]: LOADK     R4 K54       ; R4 := "List("
@@ -111,17 +111,17 @@
  83 [-]: SETTABLE  R3 K70 K71   ; R3["LEFT"] := 4.000000
  84 [-]: SELF      R4 R0 K72    ; R5 := R0; R4 := R0[0xaade900e]
  85 [-]: MOVE      R6 R1        ; R6 := R1
- 86 [-]: LOADK     R7 59        ; R7 := 59.000000
- 87 [-]: LOADBOOL  R8 0 0       ; R8 := false
+ 86 [-]: CONST     R7 59        ; R7 := 59.000000
+ 87 [-]: LOADKB    R8 0 0       ; R8 := false
  88 [-]: CALL      R4 5 2       ; R4 := R4(R5,R6,R7,R8)
  89 [-]: NEWTABLE  R5 2 0       ; R5 := {}
- 90 [-]: LOADK     R6 10        ; R6 := 10.000000
- 91 [-]: LOADK     R7 1         ; R7 := 1.000000
+ 90 [-]: CONST     R6 10        ; R6 := 10.000000
+ 91 [-]: CONST     R7 1         ; R7 := 1.000000
  92 [-]: SETLIST   R5 2 1       ; R5[(1-1)*FPF+i] := R(5+i), 1 <= i <= 2
  93 [-]: SETTABLE  R3 K73 R5    ; R3["mInterpolationProps"] := R5
  94 [-]: NEWTABLE  R5 2 0       ; R5 := {}
- 95 [-]: LOADK     R6 100       ; R6 := 100.000000
- 96 [-]: LOADK     R7 0         ; R7 := 0.000000
+ 95 [-]: CONST     R6 100       ; R6 := 100.000000
+ 96 [-]: CONST     R7 0         ; R7 := 0.000000
  97 [-]: SETLIST   R5 2 1       ; R5[(1-1)*FPF+i] := R(5+i), 1 <= i <= 2
  98 [-]: SETTABLE  R3 K74 R5    ; R3["mInterpolationValues"] := R5
  99 [-]: CLOSURE   R5 0         ; R5 := closure(Function #1.1)
@@ -219,11 +219,11 @@
 191 [-]: CLOSURE   R5 46        ; R5 := closure(Function #1.47)
 192 [-]: SETTABLE  R3 K121 R5   ; R3["GetInterpolationProperties"] := R5
 193 [-]: NEWTABLE  R5 1 0       ; R5 := {}
-194 [-]: LOADK     R6 10        ; R6 := 10.000000
+194 [-]: CONST     R6 10        ; R6 := 10.000000
 195 [-]: SETLIST   R5 1 1       ; R5[(1-1)*FPF+i] := R(5+i), 1 <= i <= 1
 196 [-]: SETTABLE  R3 K122 R5   ; R3["_DefaultAlphaInterpolationVars"] := R5
 197 [-]: NEWTABLE  R5 1 0       ; R5 := {}
-198 [-]: LOADK     R6 100       ; R6 := 100.000000
+198 [-]: CONST     R6 100       ; R6 := 100.000000
 199 [-]: SETLIST   R5 1 1       ; R5[(1-1)*FPF+i] := R(5+i), 1 <= i <= 1
 200 [-]: SETTABLE  R3 K123 R5   ; R3["_DefaultAlphaInterpolationValues"] := R5
 201 [-]: CLOSURE   R5 47        ; R5 := closure(Function #1.48)
@@ -321,8 +321,8 @@
   3 [-]: GETTABLE  R2 R0 K2     ; R2 := R0["mVisibleElements"]
   4 [-]: EQ        1 R2 K3      ; if R2 == nil then PC := 7
   5 [-]: JMP       7            ; PC := 7
-  6 [-]: LOADBOOL  R2 0 1       ; R2 := false; PC := 7
-  7 [-]: LOADBOOL  R2 1 0       ; R2 := true
+  6 [-]: LOADKB    R2 0 1       ; R2 := false; PC := 7
+  7 [-]: LOADKB    R2 1 0       ; R2 := true
   8 [-]: GETTABLE  R3 R0 K4     ; R3 := R0["mElements"]
   9 [-]: LEN       R3 R3        ; R3 := # R3
  10 [-]: GETTABLE  R4 R0 K2     ; R4 := R0["mVisibleElements"]
@@ -392,10 +392,10 @@
 ; Is_vararg:       0
 ; Max Stack Size:  7
 
-  1 [-]: LOADK     R2 1         ; R2 := 1.000000
+  1 [-]: CONST     R2 1         ; R2 := 1.000000
   2 [-]: GETTABLE  R3 R0 K0     ; R3 := R0["mElements"]
   3 [-]: LEN       R3 R3        ; R3 := # R3
-  4 [-]: LOADK     R4 1         ; R4 := 1.000000
+  4 [-]: CONST     R4 1         ; R4 := 1.000000
   5 [-]: FORPREP   R2 12        ; R2 -= R4; PC := 12
   6 [-]: GETTABLE  R6 R0 K0     ; R6 := R0["mElements"]
   7 [-]: GETTABLE  R6 R6 R5     ; R6 := R6[R5]
@@ -428,7 +428,7 @@
   8 [-]: JMP       13           ; PC := 13
   9 [-]: SELF      R4 R0 K2     ; R5 := R0; R4 := R0[0x71e9ac81]
  10 [-]: LOADNIL   R6 R6        ; R6 := nil
- 11 [-]: LOADBOOL  R7 1 0       ; R7 := true
+ 11 [-]: LOADKB    R7 1 0       ; R7 := true
  12 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
  13 [-]: RETURN    R0 1         ; return 
 
@@ -548,7 +548,7 @@
  20 [-]: GETTABLE  R3 R0 K6     ; R3 := R0["mScroll"]
  21 [-]: SUB       R3 R2 R3     ; R3 := R2 - R3
  22 [-]: ADD       R2 R3 K7     ; R2 := R3 + 1.000000
- 23 [-]: LOADK     R3 0         ; R3 := 0.000000
+ 23 [-]: CONST     R3 0         ; R3 := 0.000000
  24 [-]: GETGLOBAL R4 K4        ; R4 := 0x7b998233
  25 [-]: GETTABLE  R5 R0 K8     ; R5 := R0["mForcedHorizontalSeparation"]
  26 [-]: CALL      R4 2 2       ; R4 := R4(R5)
@@ -608,10 +608,10 @@
  31 [-]: GETTABLE  R4 R0 K9     ; R4 := R0["mMovie"]
  32 [-]: SELF      R4 R4 K10    ; R5 := R4; R4 := R4[0x91a24e4b]
  33 [-]: GETTABLE  R6 R0 K11    ; R6 := R0["mClipName"]
- 34 [-]: LOADK     R7 13        ; R7 := 13.000000
+ 34 [-]: CONST     R7 13        ; R7 := 13.000000
  35 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
  36 [-]: MOVE      R3 R4        ; R3 := R4
- 37 [-]: LOADK     R4 0         ; R4 := 0.000000
+ 37 [-]: CONST     R4 0         ; R4 := 0.000000
  38 [-]: GETTABLE  R5 R1 K12    ; R5 := R1["listExtraY"]
  39 [-]: TEST      R5 0         ; if not R5 then PC := 42
  40 [-]: JMP       42           ; PC := 42
@@ -817,7 +817,7 @@
 
   1 [-]: EQ        0 R1 K0      ; if R1 ~= nil then PC := 4
   2 [-]: JMP       4            ; PC := 4
-  3 [-]: LOADK     R1 0         ; R1 := 0.000000
+  3 [-]: CONST     R1 0         ; R1 := 0.000000
   4 [-]: SELF      R5 R0 K1     ; R6 := R0; R5 := R0[0x5fbddc1a]
   5 [-]: CALL      R5 2 2       ; R5 := R5(R6)
   6 [-]: LT        0 K2 R5      ; if 0.000000 >= R5 then PC := 17
@@ -831,7 +831,7 @@
  14 [-]: JMP       17           ; PC := 17
  15 [-]: SUB       R1 R1 R5     ; R1 := R1 - R5
  16 [-]: JMP       12           ; PC := 12
- 17 [-]: LOADBOOL  R6 0 0       ; R6 := false
+ 17 [-]: LOADKB    R6 0 0       ; R6 := false
  18 [-]: EQ        1 R1 K2      ; if R1 == 0.000000 then PC := 22
  19 [-]: JMP       22           ; PC := 22
  20 [-]: EQ        0 R5 K2      ; if R5 ~= 0.000000 then PC := 24
@@ -840,7 +840,7 @@
  23 [-]: JMP       27           ; PC := 27
  24 [-]: LE        0 R1 R5      ; if R1 > R5 then PC := 27
  25 [-]: JMP       27           ; PC := 27
- 26 [-]: LOADBOOL  R6 1 0       ; R6 := true
+ 26 [-]: LOADKB    R6 1 0       ; R6 := true
  27 [-]: GETGLOBAL R7 K4        ; R7 := 0x7b998233
  28 [-]: GETTABLE  R8 R2 K5     ; R8 := R2["Id"]
  29 [-]: CALL      R7 2 2       ; R7 := R7(R8)
@@ -871,11 +871,11 @@
  54 [-]: CALL      R8 2 2       ; R8 := R8(R9)
  55 [-]: MOVE      R5 R8        ; R5 := R8
  56 [-]: GETGLOBAL R8 K17       ; R8 := 0xce225efa
- 57 [-]: LOADK     R9 0         ; R9 := 0.000000
+ 57 [-]: CONST     R9 0         ; R9 := 0.000000
  58 [-]: CALL      R8 2 1       ; R8(R9)
- 59 [-]: LOADK     R8 1         ; R8 := 1.000000
+ 59 [-]: CONST     R8 1         ; R8 := 1.000000
  60 [-]: MOVE      R9 R5        ; R9 := R5
- 61 [-]: LOADK     R10 1        ; R10 := 1.000000
+ 61 [-]: CONST     R10 1        ; R10 := 1.000000
  62 [-]: FORPREP   R8 66        ; R8 -= R10; PC := 66
  63 [-]: GETTABLE  R12 R0 K16   ; R12 := R0["mElements"]
  64 [-]: GETTABLE  R12 R12 R11  ; R12 := R12[R11]
@@ -929,7 +929,7 @@
 
   1 [-]: EQ        0 R3 K0      ; if R3 ~= nil then PC := 4
   2 [-]: JMP       4            ; PC := 4
-  3 [-]: LOADBOOL  R3 0 0       ; R3 := false
+  3 [-]: LOADKB    R3 0 0       ; R3 := false
   4 [-]: GETGLOBAL R7 K1        ; R7 := 0x7b998233
   5 [-]: GETTABLE  R8 R0 K2     ; R8 := R0["mElements"]
   6 [-]: GETTABLE  R8 R8 R1     ; R8 := R8[R1]
@@ -937,7 +937,7 @@
   8 [-]: TEST      R7 1         ; if R7 then PC := 174
   9 [-]: JMP       174          ; PC := 174
  10 [-]: GETGLOBAL R7 K3        ; R7 := 0xce225efa
- 11 [-]: LOADK     R8 0         ; R8 := 0.000000
+ 11 [-]: CONST     R8 0         ; R8 := 0.000000
  12 [-]: CALL      R7 2 1       ; R7(R8)
  13 [-]: SELF      R7 R0 K4     ; R8 := R0; R7 := R0[0x5fbddc1a]
  14 [-]: CALL      R7 2 2       ; R7 := R7(R8)
@@ -949,8 +949,8 @@
  20 [-]: GETTABLE  R9 R9 K6     ; R9 := R9["mOverrideClipName"]
  21 [-]: EQ        0 R9 K0      ; if R9 ~= nil then PC := 24
  22 [-]: JMP       24           ; PC := 24
- 23 [-]: LOADBOOL  R9 0 1       ; R9 := false; PC := 24
- 24 [-]: LOADBOOL  R9 1 0       ; R9 := true
+ 23 [-]: LOADKB    R9 0 1       ; R9 := false; PC := 24
+ 24 [-]: LOADKB    R9 1 0       ; R9 := true
  25 [-]: SELF      R10 R0 K7    ; R11 := R0; R10 := R0[0xc419c8f6]
  26 [-]: CALL      R10 2 2      ; R10 := R10(R11)
  27 [-]: GETGLOBAL R11 K1       ; R11 := 0x7b998233
@@ -982,11 +982,11 @@
  53 [-]: MOVE      R14 R8       ; R14 := R8
  54 [-]: GETTABLE  R15 R0 K11   ; R15 := R0["mEasing"]
  55 [-]: NEWTABLE  R16 2 0      ; R16 := {}
- 56 [-]: LOADK     R17 10       ; R17 := 10.000000
- 57 [-]: LOADK     R18 1        ; R18 := 1.000000
+ 56 [-]: CONST     R17 10       ; R17 := 10.000000
+ 57 [-]: CONST     R18 1        ; R18 := 1.000000
  58 [-]: SETLIST   R16 2 1      ; R16[(1-1)*FPF+i] := R(16+i), 1 <= i <= 2
  59 [-]: NEWTABLE  R17 2 0      ; R17 := {}
- 60 [-]: LOADK     R18 0        ; R18 := 0.000000
+ 60 [-]: CONST     R18 0        ; R18 := 0.000000
  61 [-]: SELF      R19 R0 K12   ; R20 := R0; R19 := R0[0x68e36b8d]
  62 [-]: GETTABLE  R21 R0 K2    ; R21 := R0["mElements"]
  63 [-]: GETTABLE  R21 R21 R1   ; R21 := R21[R1]
@@ -994,7 +994,7 @@
  65 [-]: SUB       R19 R19 K13  ; R19 := R19 - 40.000000
  66 [-]: SETLIST   R17 2 1      ; R17[(1-1)*FPF+i] := R(17+i), 1 <= i <= 2
  67 [-]: GETTABLE  R18 R0 K14   ; R18 := R0["mElementTransitionTime"]
- 68 [-]: LOADK     R19 0        ; R19 := 0.000000
+ 68 [-]: CONST     R19 0        ; R19 := 0.000000
  69 [-]: MOVE      R20 R11      ; R20 := R11
  70 [-]: CALL      R12 9 1      ; R12(R13,R14,R15,R16,R17,R18,R19,R20)
  71 [-]: GETTABLE  R12 R0 K15   ; R12 := R0["mVisibleElements"]
@@ -1023,8 +1023,8 @@
  94 [-]: GETTABLE  R12 R0 K8    ; R12 := R0["mMovie"]
  95 [-]: SELF      R12 R12 K20  ; R13 := R12; R12 := R12[0x67bc869f]
  96 [-]: MOVE      R14 R8       ; R14 := R8
- 97 [-]: LOADK     R15 10       ; R15 := 10.000000
- 98 [-]: LOADK     R16 0        ; R16 := 0.000000
+ 97 [-]: CONST     R15 10       ; R15 := 10.000000
+ 98 [-]: CONST     R16 0        ; R16 := 0.000000
  99 [-]: CALL      R12 5 1      ; R12(R13,R14,R15,R16)
 100 [-]: GETTABLE  R12 R0 K5    ; R12 := R0["mClipName"]
 101 [-]: EQ        1 R8 R12     ; if R8 == R12 then PC := 109
@@ -1032,11 +1032,11 @@
 103 [-]: GETTABLE  R12 R0 K8    ; R12 := R0["mMovie"]
 104 [-]: SELF      R12 R12 K21  ; R13 := R12; R12 := R12[0xaade900e]
 105 [-]: MOVE      R14 R8       ; R14 := R8
-106 [-]: LOADK     R15 59       ; R15 := 59.000000
-107 [-]: LOADBOOL  R16 0 0      ; R16 := false
+106 [-]: CONST     R15 59       ; R15 := 59.000000
+107 [-]: LOADKB    R16 0 0      ; R16 := false
 108 [-]: CALL      R12 5 1      ; R12(R13,R14,R15,R16)
 109 [-]: GETGLOBAL R12 K3       ; R12 := 0xce225efa
-110 [-]: LOADK     R13 0        ; R13 := 0.000000
+110 [-]: CONST     R13 0        ; R13 := 0.000000
 111 [-]: CALL      R12 2 1      ; R12(R13)
 112 [-]: GETGLOBAL R12 K1       ; R12 := 0x7b998233
 113 [-]: GETTABLE  R13 R0 K22   ; R13 := R0["mSelectedElement"]
@@ -1069,13 +1069,13 @@
 140 [-]: JMP       161          ; PC := 161
 141 [-]: SELF      R13 R0 K4    ; R14 := R0; R13 := R0[0x5fbddc1a]
 142 [-]: CALL      R13 2 2      ; R13 := R13(R14)
-143 [-]: LOADK     R14 0        ; R14 := 0.000000
+143 [-]: CONST     R14 0        ; R14 := 0.000000
 144 [-]: GETGLOBAL R15 K3       ; R15 := 0xce225efa
-145 [-]: LOADK     R16 0        ; R16 := 0.000000
+145 [-]: CONST     R16 0        ; R16 := 0.000000
 146 [-]: CALL      R15 2 1      ; R15(R16)
-147 [-]: LOADK     R15 1        ; R15 := 1.000000
+147 [-]: CONST     R15 1        ; R15 := 1.000000
 148 [-]: MOVE      R16 R13      ; R16 := R13
-149 [-]: LOADK     R17 1        ; R17 := 1.000000
+149 [-]: CONST     R17 1        ; R17 := 1.000000
 150 [-]: FORPREP   R15 159      ; R15 -= R17; PC := 159
 151 [-]: GETTABLE  R19 R0 K2    ; R19 := R0["mElements"]
 152 [-]: GETTABLE  R19 R19 R18  ; R19 := R19[R18]
@@ -1091,9 +1091,9 @@
 162 [-]: JMP       173          ; PC := 173
 163 [-]: SELF      R19 R0 K4    ; R20 := R0; R19 := R0[0x5fbddc1a]
 164 [-]: CALL      R19 2 2      ; R19 := R19(R20)
-165 [-]: LOADK     R20 1        ; R20 := 1.000000
+165 [-]: CONST     R20 1        ; R20 := 1.000000
 166 [-]: MOVE      R21 R19      ; R21 := R19
-167 [-]: LOADK     R22 1        ; R22 := 1.000000
+167 [-]: CONST     R22 1        ; R22 := 1.000000
 168 [-]: FORPREP   R20 172      ; R20 -= R22; PC := 172
 169 [-]: GETTABLE  R24 R0 K2    ; R24 := R0["mElements"]
 170 [-]: GETTABLE  R24 R24 R23  ; R24 := R24[R23]
@@ -1146,15 +1146,15 @@
  32 [-]: GETTABLE  R0 R0 K4     ; R0 := R0["mMovie"]
  33 [-]: SELF      R0 R0 K6     ; R1 := R0; R0 := R0[0x67bc869f]
  34 [-]: GETUPVAL  R2 U6        ; R2 := U6
- 35 [-]: LOADK     R3 10        ; R3 := 10.000000
- 36 [-]: LOADK     R4 0         ; R4 := 0.000000
+ 35 [-]: CONST     R3 10        ; R3 := 10.000000
+ 36 [-]: CONST     R4 0         ; R4 := 0.000000
  37 [-]: CALL      R0 5 1       ; R0(R1,R2,R3,R4)
  38 [-]: GETUPVAL  R0 U1        ; R0 := U1
  39 [-]: GETTABLE  R0 R0 K4     ; R0 := R0["mMovie"]
  40 [-]: SELF      R0 R0 K7     ; R1 := R0; R0 := R0[0xaade900e]
  41 [-]: GETUPVAL  R2 U6        ; R2 := U6
- 42 [-]: LOADK     R3 59        ; R3 := 59.000000
- 43 [-]: LOADBOOL  R4 0 0       ; R4 := false
+ 42 [-]: CONST     R3 59        ; R3 := 59.000000
+ 43 [-]: LOADKB    R4 0 0       ; R4 := false
  44 [-]: CALL      R0 5 1       ; R0(R1,R2,R3,R4)
  45 [-]: GETUPVAL  R0 U7        ; R0 := U7
  46 [-]: TEST      R0 1         ; if R0 then PC := 54
@@ -1162,7 +1162,7 @@
  48 [-]: GETUPVAL  R0 U1        ; R0 := U1
  49 [-]: SELF      R0 R0 K8     ; R1 := R0; R0 := R0[0x71e9ac81]
  50 [-]: LOADNIL   R2 R2        ; R2 := nil
- 51 [-]: LOADBOOL  R3 1 0       ; R3 := true
+ 51 [-]: LOADKB    R3 1 0       ; R3 := true
  52 [-]: GETUPVAL  R4 U8        ; R4 := U8
  53 [-]: CALL      R0 5 1       ; R0(R1,R2,R3,R4)
  54 [-]: RETURN    R0 1         ; return 
@@ -1207,17 +1207,17 @@
   9 [-]: GETTABLE  R3 R0 K3     ; R3 := R0["mElements"]
  10 [-]: LEN       R3 R3        ; R3 := # R3
  11 [-]: SETTABLE  R0 K4 K5     ; R0["mTopId"] := 0.000000
- 12 [-]: LOADK     R4 0         ; R4 := 0.000000
+ 12 [-]: CONST     R4 0         ; R4 := 0.000000
  13 [-]: SUB       R5 R3 K6     ; R5 := R3 - 1.000000
- 14 [-]: LOADK     R6 1         ; R6 := 1.000000
+ 14 [-]: CONST     R6 1         ; R6 := 1.000000
  15 [-]: FORPREP   R4 24        ; R4 -= R6; PC := 24
  16 [-]: SELF      R8 R0 K7     ; R9 := R0; R8 := R0[0x9ae7e2d2]
  17 [-]: SUB       R10 R3 R7    ; R10 := R3 - R7
  18 [-]: MOVE      R11 R1       ; R11 := R1
  19 [-]: MOVE      R12 R2       ; R12 := R2
- 20 [-]: LOADBOOL  R13 1 0      ; R13 := true
+ 20 [-]: LOADKB    R13 1 0      ; R13 := true
  21 [-]: GETTABLE  R14 R0 K8    ; R14 := R0["mPreserveClips"]
- 22 [-]: LOADBOOL  R15 1 0      ; R15 := true
+ 22 [-]: LOADKB    R15 1 0      ; R15 := true
  23 [-]: CALL      R8 8 1       ; R8(R9,R10,R11,R12,R13,R14,R15)
  24 [-]: FORLOOP   R4 16        ; R4 += R6; if R4 <= R5 then begin PC := 16; R7 := R4 end
  25 [-]: GETGLOBAL R8 K0        ; R8 := 0x7b998233
@@ -1226,8 +1226,8 @@
  28 [-]: TEST      R8 1         ; if R8 then PC := 34
  29 [-]: JMP       34           ; PC := 34
  30 [-]: SELF      R8 R0 K10    ; R9 := R0; R8 := R0[0x4c4f8717]
- 31 [-]: LOADK     R10 1        ; R10 := 1.000000
- 32 [-]: LOADBOOL  R11 1 0      ; R11 := true
+ 31 [-]: CONST     R10 1        ; R10 := 1.000000
+ 32 [-]: LOADKB    R11 1 0      ; R11 := true
  33 [-]: CALL      R8 4 1       ; R8(R9,R10,R11)
  34 [-]: SETTABLE  R0 K11 K5    ; R0["mTopClipIndexUsed"] := 0.000000
  35 [-]: GETTABLE  R8 R0 K8     ; R8 := R0["mPreserveClips"]
@@ -1250,8 +1250,8 @@
  52 [-]: GETTABLE  R13 R0 K16   ; R13 := R0["mMovie"]
  53 [-]: SELF      R13 R13 K18  ; R14 := R13; R13 := R13[0x67bc869f]
  54 [-]: MOVE      R15 R11      ; R15 := R11
- 55 [-]: LOADK     R16 10       ; R16 := 10.000000
- 56 [-]: LOADK     R17 0        ; R17 := 0.000000
+ 55 [-]: CONST     R16 10       ; R16 := 10.000000
+ 56 [-]: CONST     R17 0        ; R17 := 0.000000
  57 [-]: CALL      R13 5 1      ; R13(R14,R15,R16,R17)
  58 [-]: GETTABLE  R13 R0 K13   ; R13 := R0["mClips"]
  59 [-]: SETTABLE  R13 R11 K19  ; R13[R11] := nil
@@ -1261,8 +1261,8 @@
  63 [-]: GETTABLE  R13 R0 K16   ; R13 := R0["mMovie"]
  64 [-]: SELF      R13 R13 K21  ; R14 := R13; R13 := R13[0xaade900e]
  65 [-]: GETTABLE  R15 R0 K14   ; R15 := R0["mClipName"]
- 66 [-]: LOADK     R16 59       ; R16 := 59.000000
- 67 [-]: LOADBOOL  R17 0 0      ; R17 := false
+ 66 [-]: CONST     R16 59       ; R16 := 59.000000
+ 67 [-]: LOADKB    R17 0 0      ; R17 := false
  68 [-]: CALL      R13 5 1      ; R13(R14,R15,R16,R17)
  69 [-]: RETURN    R0 1         ; return 
 
@@ -1439,12 +1439,12 @@
  52 [-]: JMP       62           ; PC := 62
  53 [-]: SELF      R5 R0 K8     ; R6 := R0; R5 := R0[0x4c4f8717]
  54 [-]: MOVE      R7 R3        ; R7 := R3
- 55 [-]: LOADBOOL  R8 1 0       ; R8 := true
+ 55 [-]: LOADKB    R8 1 0       ; R8 := true
  56 [-]: CALL      R5 4 1       ; R5(R6,R7,R8)
  57 [-]: SELF      R5 R0 K9     ; R6 := R0; R5 := R0[0x71e9ac81]
  58 [-]: LOADNIL   R7 R7        ; R7 := nil
- 59 [-]: LOADBOOL  R8 0 0       ; R8 := false
- 60 [-]: LOADBOOL  R9 1 0       ; R9 := true
+ 59 [-]: LOADKB    R8 0 0       ; R8 := false
+ 60 [-]: LOADKB    R9 1 0       ; R9 := true
  61 [-]: CALL      R5 5 1       ; R5(R6,R7,R8,R9)
  62 [-]: SETTABLE  R0 K0 R1     ; R0["mCurrentElementIndex"] := R1
  63 [-]: SELF      R5 R0 K10    ; R6 := R0; R5 := R0[0x715a5db0]
@@ -1487,7 +1487,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  10
 
-  1 [-]: LOADK     R3 0         ; R3 := 0.000000
+  1 [-]: CONST     R3 0         ; R3 := 0.000000
   2 [-]: GETGLOBAL R4 K0        ; R4 := 0x7b998233
   3 [-]: GETTABLE  R5 R0 K1     ; R5 := R0["mScroll"]
   4 [-]: CALL      R4 2 2       ; R4 := R4(R5)
@@ -1553,7 +1553,7 @@
  64 [-]: GETTABLE  R4 R4 K17    ; R4 := R4[0x38a41ce7]
  65 [-]: MOVE      R5 R3        ; R5 := R3
  66 [-]: MOVE      R6 R1        ; R6 := R1
- 67 [-]: LOADK     R7 1         ; R7 := 1.000000
+ 67 [-]: CONST     R7 1         ; R7 := 1.000000
  68 [-]: SELF      R8 R0 K18    ; R9 := R0; R8 := R0[0x5fbddc1a]
  69 [-]: CALL      R8 2 0       ; R8,... := R8(R9)
  70 [-]: CALL      R4 0 2       ; R4 := R4(R5,...)
@@ -1561,7 +1561,7 @@
  72 [-]: JMP       80           ; PC := 80
  73 [-]: GETGLOBAL R4 K19       ; R4 := 0x42dcc9f5
  74 [-]: ADD       R5 R3 R1     ; R5 := R3 + R1
- 75 [-]: LOADK     R6 1         ; R6 := 1.000000
+ 75 [-]: CONST     R6 1         ; R6 := 1.000000
  76 [-]: SELF      R7 R0 K18    ; R8 := R0; R7 := R0[0x5fbddc1a]
  77 [-]: CALL      R7 2 0       ; R7,... := R7(R8)
  78 [-]: CALL      R4 0 2       ; R4 := R4(R5,...)
@@ -1680,14 +1680,14 @@
  34 [-]: GETTABLE  R5 R0 K12    ; R5 := R0["mMovie"]
  35 [-]: SELF      R5 R5 K13    ; R6 := R5; R5 := R5[0x91a24e4b]
  36 [-]: LOADK     R7 K14       ; R7 := "_root"
- 37 [-]: LOADK     R8 25        ; R8 := 25.000000
+ 37 [-]: CONST     R8 25        ; R8 := 25.000000
  38 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
  39 [-]: GETTABLE  R6 R0 K12    ; R6 := R0["mMovie"]
  40 [-]: SELF      R6 R6 K13    ; R7 := R6; R6 := R6[0x91a24e4b]
  41 [-]: LOADK     R8 K14       ; R8 := "_root"
- 42 [-]: LOADK     R9 26        ; R9 := 26.000000
+ 42 [-]: CONST     R9 26        ; R9 := 26.000000
  43 [-]: CALL      R6 4 2       ; R6 := R6(R7,R8,R9)
- 44 [-]: LOADK     R7 0         ; R7 := 0.000000
+ 44 [-]: CONST     R7 0         ; R7 := 0.000000
  45 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
  46 [-]: SETTABLE  R3 K10 R4    ; R3["InitDownPos"] := R4
  47 [-]: SELF      R3 R0 K15    ; R4 := R0; R3 := R0[0x44d530fd]
@@ -1778,7 +1778,7 @@
  34 [-]: GETTABLE  R4 R4 K7     ; R4 := R4["DragId"]
  35 [-]: EQ        1 R4 K8      ; if R4 == nil then PC := 72
  36 [-]: JMP       72           ; PC := 72
- 37 [-]: LOADBOOL  R4 1 0       ; R4 := true
+ 37 [-]: LOADKB    R4 1 0       ; R4 := true
  38 [-]: GETTABLE  R5 R0 K6     ; R5 := R0["mClickDrag"]
  39 [-]: SETTABLE  R5 K7 K8     ; R5["DragId"] := nil
  40 [-]: GETTABLE  R5 R0 K6     ; R5 := R0["mClickDrag"]
@@ -1807,7 +1807,7 @@
  63 [-]: JMP       66           ; PC := 66
  64 [-]: GETTABLE  R5 R0 K18    ; R5 := R0[0x64fa5be5]
  65 [-]: CALL      R5 1 1       ; R5()
- 66 [-]: LOADBOOL  R4 0 0       ; R4 := false
+ 66 [-]: LOADKB    R4 0 0       ; R4 := false
  67 [-]: SELF      R5 R0 K19    ; R6 := R0; R5 := R0[0xb31346eb]
  68 [-]: CALL      R5 2 1       ; R5(R6)
  69 [-]: TEST      R4 1         ; if R4 then PC := 72
@@ -1832,8 +1832,8 @@
  88 [-]: SUB       R5 R5 R6     ; R5 := R5 - R6
  89 [-]: LT        1 R5 K26     ; if R5 < 0.500000 then PC := 92
  90 [-]: JMP       92           ; PC := 92
- 91 [-]: LOADBOOL  R5 0 1       ; R5 := false; PC := 92
- 92 [-]: LOADBOOL  R5 1 0       ; R5 := true
+ 91 [-]: LOADKB    R5 0 1       ; R5 := false; PC := 92
+ 92 [-]: LOADKB    R5 1 0       ; R5 := true
  93 [-]: GETGLOBAL R6 K24       ; R6 := 0x55156ff7
  94 [-]: CALL      R6 1 2       ; R6 := R6()
  95 [-]: SETTABLE  R0 K25 R6    ; R0["mLastPressTime"] := R6
@@ -1941,7 +1941,7 @@
 
   1 [-]: SELF      R3 R0 K0     ; R4 := R0; R3 := R0[0x20402736]
   2 [-]: MOVE      R5 R1        ; R5 := R1
-  3 [-]: LOADBOOL  R6 1 0       ; R6 := true
+  3 [-]: LOADKB    R6 1 0       ; R6 := true
   4 [-]: CALL      R3 4 2       ; R3 := R3(R4,R5,R6)
   5 [-]: SELF      R4 R0 K1     ; R5 := R0; R4 := R0[0xca30dfb6]
   6 [-]: MOVE      R6 R3        ; R6 := R3
@@ -1995,7 +1995,7 @@
  19 [-]: GETTABLE  R6 R0 K6     ; R6 := R0["mForcedVerticalSeparation"]
  20 [-]: MUL       R2 R5 R6     ; R2 := R5 * R6
  21 [-]: GETTABLE  R5 R0 K6     ; R5 := R0["mForcedVerticalSeparation"]
- 22 [-]: UNM       R5 R5        ; R5 := ^ R5
+ 22 [-]: UNM       R5 R5        ; R5 :=  R5
  23 [-]: ADD       R5 R5 R2     ; R5 := R5 + R2
  24 [-]: DIV       R3 R5 K7     ; R3 := R5 / 2.000000
  25 [-]: JMP       42           ; PC := 42
@@ -2014,14 +2014,14 @@
  38 [-]: DIV       R3 R5 K7     ; R3 := R5 / 2.000000
  39 [-]: JMP       42           ; PC := 42
  40 [-]: GETTABLE  R2 R0 K2     ; R2 := R0["mOriginalButtonHeight"]
- 41 [-]: LOADK     R3 0         ; R3 := 0.000000
+ 41 [-]: CONST     R3 0         ; R3 := 0.000000
  42 [-]: EQ        1 R2 K1      ; if R2 == nil then PC := 62
  43 [-]: JMP       62           ; PC := 62
  44 [-]: GETTABLE  R5 R0 K8     ; R5 := R0["mMovie"]
  45 [-]: SELF      R5 R5 K9     ; R6 := R5; R5 := R5[0xf64b7262]
  46 [-]: GETTABLE  R7 R1 K10    ; R7 := R1["mClipName"]
  47 [-]: LOADK     R8 K11       ; R8 := "Btn"
- 48 [-]: LOADK     R9 13        ; R9 := 13.000000
+ 48 [-]: CONST     R9 13        ; R9 := 13.000000
  49 [-]: GETGLOBAL R10 K12      ; R10 := 0x5bced4c4
  50 [-]: GETTABLE  R10 R10 K13  ; R10 := R10[0xb62ecfe0]
  51 [-]: MOVE      R11 R2       ; R11 := R2
@@ -2032,7 +2032,7 @@
  56 [-]: SELF      R5 R5 K9     ; R6 := R5; R5 := R5[0xf64b7262]
  57 [-]: GETTABLE  R7 R1 K10    ; R7 := R1["mClipName"]
  58 [-]: LOADK     R8 K11       ; R8 := "Btn"
- 59 [-]: LOADK     R9 1         ; R9 := 1.000000
+ 59 [-]: CONST     R9 1         ; R9 := 1.000000
  60 [-]: MOVE      R10 R3       ; R10 := R3
  61 [-]: CALL      R5 6 1       ; R5(R6,R7,R8,R9,R10)
  62 [-]: RETURN    R0 1         ; return 
@@ -2060,7 +2060,7 @@
  11 [-]: CALL      R3 2 1       ; R3(R4)
  12 [-]: GETGLOBAL R3 K5        ; R3 := 0xab19f327
  13 [-]: CALL      R3 1 1       ; R3()
- 14 [-]: LOADBOOL  R2 1 0       ; R2 := true
+ 14 [-]: LOADKB    R2 1 0       ; R2 := true
  15 [-]: GETGLOBAL R3 K6        ; R3 := 0x7b998233
  16 [-]: GETTABLE  R4 R0 K7     ; R4 := R0["mElementDrawCallback"]
  17 [-]: CALL      R3 2 2       ; R3 := R3(R4)
@@ -2113,7 +2113,7 @@
   4 [-]: GETTABLE  R3 R0 K1     ; R3 := R0["mMovie"]
   5 [-]: SELF      R3 R3 K2     ; R4 := R3; R3 := R3[0x67bc869f]
   6 [-]: GETTABLE  R5 R1 K3     ; R5 := R1["mClipName"]
-  7 [-]: LOADK     R6 1         ; R6 := 1.000000
+  7 [-]: CONST     R6 1         ; R6 := 1.000000
   8 [-]: SUB       R7 R2 K4     ; R7 := R2 - 20.000000
   9 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
  10 [-]: RETURN    R0 1         ; return 
@@ -2167,7 +2167,7 @@
   2 [-]: CALL      R1 2 2       ; R1 := R1(R2)
   3 [-]: SELF      R2 R0 K1     ; R3 := R0; R2 := R0[0xc419c8f6]
   4 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  5 [-]: LOADK     R3 1         ; R3 := 1.000000
+  5 [-]: CONST     R3 1         ; R3 := 1.000000
   6 [-]: MOVE      R4 R1        ; R4 := R1
   7 [-]: GETTABLE  R5 R0 K2     ; R5 := R0["mScroll"]
   8 [-]: EQ        1 R5 K3      ; if R5 == nil then PC := 36
@@ -2177,7 +2177,7 @@
  12 [-]: JMP       33           ; PC := 33
  13 [-]: GETGLOBAL R6 K5        ; R6 := 0x5bced4c4
  14 [-]: GETTABLE  R6 R6 K6     ; R6 := R6[0xb62ecfe0]
- 15 [-]: LOADK     R7 1         ; R7 := 1.000000
+ 15 [-]: CONST     R7 1         ; R7 := 1.000000
  16 [-]: GETGLOBAL R8 K5        ; R8 := 0x5bced4c4
  17 [-]: GETTABLE  R8 R8 K7     ; R8 := R8[0x55f27c30]
  18 [-]: MOVE      R9 R5        ; R9 := R5
@@ -2252,13 +2252,13 @@
  17 [-]: SELF      R4 R0 K6     ; R5 := R0; R4 := R0[0x5fbddc1a]
  18 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  19 [-]: LOADNIL   R5 R5        ; R5 := nil
- 20 [-]: LOADK     R6 0         ; R6 := 0.000000
- 21 [-]: LOADBOOL  R7 1 0       ; R7 := true
+ 20 [-]: CONST     R6 0         ; R6 := 0.000000
+ 21 [-]: LOADKB    R7 1 0       ; R7 := true
  22 [-]: GETTABLE  R8 R0 K7     ; R8 := R0["mElementTransitionTime"]
  23 [-]: TEST      R3 0         ; if not R3 then PC := 27
  24 [-]: JMP       27           ; PC := 27
- 25 [-]: LOADK     R6 0         ; R6 := 0.000000
- 26 [-]: LOADK     R8 0         ; R8 := 0.000000
+ 25 [-]: CONST     R6 0         ; R6 := 0.000000
+ 26 [-]: CONST     R8 0         ; R8 := 0.000000
  27 [-]: EQ        0 R4 K8      ; if R4 ~= 0.000000 then PC := 36
  28 [-]: JMP       36           ; PC := 36
  29 [-]: GETGLOBAL R9 K0        ; R9 := 0x7b998233
@@ -2271,13 +2271,13 @@
  36 [-]: SELF      R9 R0 K9     ; R10 := R0; R9 := R0[0x9546cd1b]
  37 [-]: CALL      R9 2 3       ; R9,R10 := R9(R10)
  38 [-]: GETTABLE  R11 R0 K10   ; R11 := R0["mScroll"]
- 39 [-]: LOADBOOL  R12 1 0      ; R12 := true
- 40 [-]: LOADK     R13 1        ; R13 := 1.000000
+ 39 [-]: LOADKB    R12 1 0      ; R12 := true
+ 40 [-]: CONST     R13 1        ; R13 := 1.000000
  41 [-]: MOVE      R14 R4       ; R14 := R4
- 42 [-]: LOADK     R15 1        ; R15 := 1.000000
- 43 [-]: FORPREP   R13 355      ; R13 -= R15; PC := 355
+ 42 [-]: CONST     R15 1        ; R15 := 1.000000
+ 43 [-]: FORPREP   R13 359      ; R13 -= R15; PC := 359
  44 [-]: GETGLOBAL R17 K11      ; R17 := 0xce225efa
- 45 [-]: LOADK     R18 0        ; R18 := 0.000000
+ 45 [-]: CONST     R18 0        ; R18 := 0.000000
  46 [-]: CALL      R17 2 1      ; R17(R18)
  47 [-]: GETTABLE  R17 R0 K12   ; R17 := R0["mElements"]
  48 [-]: GETTABLE  R17 R17 R16  ; R17 := R17[R16]
@@ -2286,8 +2286,8 @@
  51 [-]: JMP       54           ; PC := 54
  52 [-]: LE        1 R16 R10    ; if R16 <= R10 then PC := 55
  53 [-]: JMP       55           ; PC := 55
- 54 [-]: LOADBOOL  R18 0 1      ; R18 := false; PC := 55
- 55 [-]: LOADBOOL  R18 1 0      ; R18 := true
+ 54 [-]: LOADKB    R18 0 1      ; R18 := false; PC := 55
+ 55 [-]: LOADKB    R18 1 0      ; R18 := true
  56 [-]: TEST      R18 0        ; if not R18 then PC := 113
  57 [-]: JMP       113          ; PC := 113
  58 [-]: GETTABLE  R19 R17 K13  ; R19 := R17["mClipName"]
@@ -2341,8 +2341,8 @@
 106 [-]: GETTABLE  R24 R0 K1    ; R24 := R0["mMovie"]
 107 [-]: SELF      R24 R24 K22  ; R25 := R24; R24 := R24[0xaade900e]
 108 [-]: MOVE      R26 R5       ; R26 := R5
-109 [-]: LOADK     R27 11       ; R27 := 11.000000
-110 [-]: LOADBOOL  R28 1 0      ; R28 := true
+109 [-]: CONST     R27 11       ; R27 := 11.000000
+110 [-]: LOADKB    R28 1 0      ; R28 := true
 111 [-]: CALL      R24 5 1      ; R24(R25,R26,R27,R28)
 112 [-]: JMP       130          ; PC := 130
 113 [-]: GETTABLE  R24 R17 K13  ; R24 := R17["mClipName"]
@@ -2359,8 +2359,8 @@
 124 [-]: GETTABLE  R24 R0 K1    ; R24 := R0["mMovie"]
 125 [-]: SELF      R24 R24 K22  ; R25 := R24; R24 := R24[0xaade900e]
 126 [-]: GETTABLE  R26 R17 K13  ; R26 := R17["mClipName"]
-127 [-]: LOADK     R27 11       ; R27 := 11.000000
-128 [-]: LOADBOOL  R28 0 0      ; R28 := false
+127 [-]: CONST     R27 11       ; R27 := 11.000000
+128 [-]: LOADKB    R28 0 0      ; R28 := false
 129 [-]: CALL      R24 5 1      ; R24(R25,R26,R27,R28)
 130 [-]: GETTABLE  R24 R17 K23  ; R24 := R17["mForceRedraw"]
 131 [-]: TEST      R24 1        ; if R24 then PC := 141
@@ -2371,8 +2371,8 @@
 136 [-]: TEST      R2 1         ; if R2 then PC := 141
 137 [-]: JMP       141          ; PC := 141
 138 [-]: GETTABLE  R24 R17 K15  ; R24 := R17["mOverrideClipName"]
-139 [-]: EQ        1 R24 K16    ; if R24 == nil then PC := 335
-140 [-]: JMP       335          ; PC := 335
+139 [-]: EQ        1 R24 K16    ; if R24 == nil then PC := 339
+140 [-]: JMP       339          ; PC := 339
 141 [-]: GETTABLE  R24 R17 K13  ; R24 := R17["mClipName"]
 142 [-]: EQ        0 R24 R5     ; if R24 ~= R5 then PC := 152
 143 [-]: JMP       152          ; PC := 152
@@ -2383,225 +2383,229 @@
 148 [-]: JMP       153          ; PC := 153
 149 [-]: EQ        1 R11 K16    ; if R11 == nil then PC := 152
 150 [-]: JMP       152          ; PC := 152
-151 [-]: LOADBOOL  R12 0 1      ; R12 := false; PC := 152
-152 [-]: LOADBOOL  R12 1 0      ; R12 := true
+151 [-]: LOADKB    R12 0 1      ; R12 := false; PC := 152
+152 [-]: LOADKB    R12 1 0      ; R12 := true
 153 [-]: GETTABLE  R24 R17 K13  ; R24 := R17["mClipName"]
-154 [-]: TEST      R24 0        ; if not R24 then PC := 177
-155 [-]: JMP       177          ; PC := 177
+154 [-]: TEST      R24 0        ; if not R24 then PC := 181
+155 [-]: JMP       181          ; PC := 181
 156 [-]: GETTABLE  R24 R17 K13  ; R24 := R17["mClipName"]
-157 [-]: EQ        1 R5 R24     ; if R5 == R24 then PC := 177
-158 [-]: JMP       177          ; PC := 177
+157 [-]: EQ        1 R5 R24     ; if R5 == R24 then PC := 181
+158 [-]: JMP       181          ; PC := 181
 159 [-]: GETTABLE  R24 R0 K14   ; R24 := R0["mClips"]
 160 [-]: GETTABLE  R25 R17 K13  ; R25 := R17["mClipName"]
 161 [-]: SETTABLE  R24 R25 K24  ; R24[R25] := false
-162 [-]: EQ        0 R5 K16     ; if R5 ~= nil then PC := 177
-163 [-]: JMP       177          ; PC := 177
+162 [-]: EQ        0 R5 K16     ; if R5 ~= nil then PC := 181
+163 [-]: JMP       181          ; PC := 181
 164 [-]: GETTABLE  R24 R0 K1    ; R24 := R0["mMovie"]
-165 [-]: SELF      R24 R24 K25  ; R25 := R24; R24 := R24[0x67bc869f]
+165 [-]: SELF      R24 R24 K25  ; R25 := R24; R24 := R24[0xaf5300dc]
 166 [-]: GETTABLE  R26 R17 K13  ; R26 := R17["mClipName"]
-167 [-]: LOADK     R27 10       ; R27 := 10.000000
-168 [-]: LOADK     R28 0        ; R28 := 0.000000
-169 [-]: CALL      R24 5 1      ; R24(R25,R26,R27,R28)
-170 [-]: GETTABLE  R24 R0 K1    ; R24 := R0["mMovie"]
-171 [-]: SELF      R24 R24 K22  ; R25 := R24; R24 := R24[0xaade900e]
-172 [-]: GETTABLE  R26 R17 K13  ; R26 := R17["mClipName"]
-173 [-]: LOADK     R27 59       ; R27 := 59.000000
-174 [-]: LOADBOOL  R28 0 0      ; R28 := false
-175 [-]: CALL      R24 5 1      ; R24(R25,R26,R27,R28)
-176 [-]: SETTABLE  R17 K26 K24  ; R17["mClipEnabled"] := false
-177 [-]: SETTABLE  R17 K13 R5   ; R17["mClipName"] := R5
-178 [-]: SETTABLE  R17 K23 K24  ; R17["mForceRedraw"] := false
-179 [-]: GETGLOBAL R24 K0       ; R24 := 0x7b998233
-180 [-]: MOVE      R25 R5       ; R25 := R5
-181 [-]: CALL      R24 2 2      ; R24 := R24(R25)
-182 [-]: TEST      R24 1        ; if R24 then PC := 353
-183 [-]: JMP       353          ; PC := 353
-184 [-]: GETTABLE  R24 R0 K1    ; R24 := R0["mMovie"]
-185 [-]: SELF      R24 R24 K27  ; R25 := R24; R24 := R24[0xa7ec3e8a]
-186 [-]: MOVE      R26 R5       ; R26 := R5
-187 [-]: CALL      R24 3 2      ; R24 := R24(R25,R26)
-188 [-]: TEST      R24 1        ; if R24 then PC := 219
-189 [-]: JMP       219          ; PC := 219
-190 [-]: GETGLOBAL R24 K28      ; R24 := 0x015284cd
-191 [-]: LOADK     R25 K29      ; R25 := "."
-192 [-]: MOVE      R26 R5       ; R26 := R5
-193 [-]: CALL      R24 3 2      ; R24 := R24(R25,R26)
-194 [-]: GETGLOBAL R25 K30      ; R25 := 0x38f10e85
-195 [-]: GETTABLE  R26 R0 K1    ; R26 := R0["mMovie"]
-196 [-]: GETTABLE  R27 R0 K13   ; R27 := R0["mClipName"]
-197 [-]: LOADK     R28 K31      ; R28 := ".duplicateMovieClip"
-198 [-]: CONCAT    R27 R27 R28  ; R27 := R27 .. R28
-199 [-]: LEN       R28 R24      ; R28 := # R24
-200 [-]: GETTABLE  R28 R24 R28  ; R28 := R24[R28]
-201 [-]: GETTABLE  R29 R0 K32   ; R29 := R0["mInitialDepth"]
-202 [-]: GETTABLE  R30 R0 K18   ; R30 := R0["mTopClipIndexUsed"]
-203 [-]: GETTABLE  R31 R0 K33   ; R31 := R0["mDepthDirection"]
-204 [-]: MUL       R30 R30 R31  ; R30 := R30 * R31
-205 [-]: ADD       R29 R29 R30  ; R29 := R29 + R30
-206 [-]: CALL      R25 5 1      ; R25(R26,R27,R28,R29)
-207 [-]: GETTABLE  R25 R0 K34   ; R25 := R0["mClipCreatedCallback"]
-208 [-]: EQ        1 R25 K16    ; if R25 == nil then PC := 214
-209 [-]: JMP       214          ; PC := 214
-210 [-]: GETTABLE  R25 R0 K35   ; R25 := R0[0x1eed44f2]
-211 [-]: MOVE      R26 R5       ; R26 := R5
-212 [-]: MOVE      R27 R17      ; R27 := R17
-213 [-]: CALL      R25 3 1      ; R25(R26,R27)
-214 [-]: TEST      R2 1         ; if R2 then PC := 219
-215 [-]: JMP       219          ; PC := 219
-216 [-]: SELF      R25 R0 K36   ; R26 := R0; R25 := R0[0xc2a072c8]
-217 [-]: MOVE      R27 R5       ; R27 := R5
-218 [-]: CALL      R25 3 1      ; R25(R26,R27)
-219 [-]: TEST      R2 0         ; if not R2 then PC := 224
-220 [-]: JMP       224          ; PC := 224
-221 [-]: SELF      R25 R0 K36   ; R26 := R0; R25 := R0[0xc2a072c8]
-222 [-]: MOVE      R27 R5       ; R27 := R5
-223 [-]: CALL      R25 3 1      ; R25(R26,R27)
-224 [-]: GETTABLE  R25 R17 K26  ; R25 := R17["mClipEnabled"]
-225 [-]: TEST      R25 1        ; if R25 then PC := 234
-226 [-]: JMP       234          ; PC := 234
-227 [-]: GETTABLE  R25 R0 K1    ; R25 := R0["mMovie"]
-228 [-]: SELF      R25 R25 K22  ; R26 := R25; R25 := R25[0xaade900e]
-229 [-]: GETTABLE  R27 R17 K13  ; R27 := R17["mClipName"]
-230 [-]: LOADK     R28 59       ; R28 := 59.000000
-231 [-]: LOADBOOL  R29 1 0      ; R29 := true
-232 [-]: CALL      R25 5 1      ; R25(R26,R27,R28,R29)
-233 [-]: SETTABLE  R17 K26 K5   ; R17["mClipEnabled"] := true
-234 [-]: GETTABLE  R25 R0 K1    ; R25 := R0["mMovie"]
-235 [-]: SELF      R25 R25 K37  ; R26 := R25; R25 := R25[0x0c33ebb2]
-236 [-]: MOVE      R27 R5       ; R27 := R5
-237 [-]: LOADK     R28 K38      ; R28 := "Id"
-238 [-]: GETTABLE  R29 R17 K38  ; R29 := R17["Id"]
-239 [-]: CALL      R25 5 1      ; R25(R26,R27,R28,R29)
-240 [-]: GETTABLE  R25 R0 K1    ; R25 := R0["mMovie"]
-241 [-]: SELF      R25 R25 K25  ; R26 := R25; R25 := R25[0x67bc869f]
-242 [-]: MOVE      R27 R5       ; R27 := R5
-243 [-]: LOADK     R28 K39      ; R28 := ".Btn"
-244 [-]: CONCAT    R27 R27 R28  ; R27 := R27 .. R28
-245 [-]: LOADK     R28 85       ; R28 := 85.000000
-246 [-]: GETTABLE  R29 R17 K38  ; R29 := R17["Id"]
-247 [-]: CALL      R25 5 1      ; R25(R26,R27,R28,R29)
-248 [-]: GETTABLE  R25 R0 K1    ; R25 := R0["mMovie"]
-249 [-]: SELF      R25 R25 K25  ; R26 := R25; R25 := R25[0x67bc869f]
-250 [-]: MOVE      R27 R5       ; R27 := R5
-251 [-]: LOADK     R28 0        ; R28 := 0.000000
-252 [-]: SELF      R29 R0 K40   ; R30 := R0; R29 := R0[0x67e369fa]
-253 [-]: MOVE      R31 R17      ; R31 := R17
-254 [-]: CALL      R29 3 0      ; R29,... := R29(R30,R31)
-255 [-]: CALL      R25 0 1      ; R25(R26,...)
-256 [-]: GETTABLE  R25 R0 K1    ; R25 := R0["mMovie"]
-257 [-]: SELF      R25 R25 K25  ; R26 := R25; R25 := R25[0x67bc869f]
-258 [-]: MOVE      R27 R5       ; R27 := R5
-259 [-]: LOADK     R28 1        ; R28 := 1.000000
-260 [-]: SELF      R29 R0 K41   ; R30 := R0; R29 := R0[0x68e36b8d]
-261 [-]: MOVE      R31 R17      ; R31 := R17
-262 [-]: CALL      R29 3 0      ; R29,... := R29(R30,R31)
-263 [-]: CALL      R25 0 1      ; R25(R26,...)
-264 [-]: GETTABLE  R25 R17 K42  ; R25 := R17["mInitialized"]
-265 [-]: TEST      R25 1        ; if R25 then PC := 276
-266 [-]: JMP       276          ; PC := 276
-267 [-]: GETTABLE  R25 R0 K1    ; R25 := R0["mMovie"]
-268 [-]: SELF      R25 R25 K25  ; R26 := R25; R25 := R25[0x67bc869f]
-269 [-]: MOVE      R27 R5       ; R27 := R5
-270 [-]: LOADK     R28 10       ; R28 := 10.000000
-271 [-]: LOADK     R29 0        ; R29 := 0.000000
-272 [-]: CALL      R25 5 1      ; R25(R26,R27,R28,R29)
-273 [-]: SELF      R25 R0 K43   ; R26 := R0; R25 := R0[0x470967b8]
-274 [-]: MOVE      R27 R17      ; R27 := R17
-275 [-]: CALL      R25 3 1      ; R25(R26,R27)
-276 [-]: GETTABLE  R25 R0 K44   ; R25 := R0["mElementDelayTime"]
-277 [-]: ADD       R6 R6 R25    ; R6 := R6 + R25
-278 [-]: GETTABLE  R25 R0 K45   ; R25 := R0["UTIL"]
-279 [-]: GETTABLE  R25 R25 K46  ; R25 := R25[0x06d055f9]
-280 [-]: MOVE      R26 R7       ; R26 := R7
-281 [-]: MOVE      R27 R1       ; R27 := R1
-282 [-]: LOADNIL   R28 R28      ; R28 := nil
-283 [-]: CALL      R25 4 2      ; R25 := R25(R26,R27,R28)
-284 [-]: SELF      R26 R0 K47   ; R27 := R0; R26 := R0[0x8e19c6fd]
-285 [-]: MOVE      R28 R17      ; R28 := R17
-286 [-]: CALL      R26 3 3      ; R26,R27 := R26(R27,R28)
-287 [-]: SELF      R28 R0 K48   ; R29 := R0; R28 := R0[0xac8bc0ef]
-288 [-]: MOVE      R30 R17      ; R30 := R17
-289 [-]: CALL      R28 3 1      ; R28(R29,R30)
-290 [-]: TEST      R3 1         ; if R3 then PC := 307
-291 [-]: JMP       307          ; PC := 307
-292 [-]: CLOSURE   R28 0        ; R28 := closure(Function #1.51.1)
-293 [-]: MOVE      R0 R0        ; R0 := R0
-294 [-]: MOVE      R0 R17       ; R0 := R17
-295 [-]: MOVE      R0 R25       ; R0 := R25
-296 [-]: GETGLOBAL R29 K49      ; R29 := 0x25312c9b
-297 [-]: GETTABLE  R30 R0 K1    ; R30 := R0["mMovie"]
-298 [-]: MOVE      R31 R5       ; R31 := R5
-299 [-]: GETTABLE  R32 R0 K50   ; R32 := R0["mEasing"]
-300 [-]: MOVE      R33 R26      ; R33 := R26
-301 [-]: MOVE      R34 R27      ; R34 := R27
-302 [-]: MOVE      R35 R8       ; R35 := R8
-303 [-]: MOVE      R36 R6       ; R36 := R6
-304 [-]: MOVE      R37 R28      ; R37 := R28
-305 [-]: CALL      R29 9 1      ; R29(R30,R31,R32,R33,R34,R35,R36,R37)
-306 [-]: JMP       328          ; PC := 328
-307 [-]: LOADK     R29 1        ; R29 := 1.000000
-308 [-]: LEN       R30 R26      ; R30 := # R26
-309 [-]: LOADK     R31 1        ; R31 := 1.000000
-310 [-]: FORPREP   R29 317      ; R29 -= R31; PC := 317
-311 [-]: GETTABLE  R33 R0 K1    ; R33 := R0["mMovie"]
-312 [-]: SELF      R33 R33 K25  ; R34 := R33; R33 := R33[0x67bc869f]
-313 [-]: MOVE      R35 R5       ; R35 := R5
-314 [-]: GETTABLE  R36 R26 R32  ; R36 := R26[R32]
-315 [-]: GETTABLE  R37 R27 R32  ; R37 := R27[R32]
-316 [-]: CALL      R33 5 1      ; R33(R34,R35,R36,R37)
-317 [-]: FORLOOP   R29 311      ; R29 += R31; if R29 <= R30 then begin PC := 311; R32 := R29 end
-318 [-]: SELF      R33 R0 K51   ; R34 := R0; R33 := R0[0x002b067a]
-319 [-]: MOVE      R35 R17      ; R35 := R17
-320 [-]: CALL      R33 3 1      ; R33(R34,R35)
-321 [-]: GETGLOBAL R33 K0       ; R33 := 0x7b998233
-322 [-]: MOVE      R34 R25      ; R34 := R25
-323 [-]: CALL      R33 2 2      ; R33 := R33(R34)
-324 [-]: TEST      R33 1        ; if R33 then PC := 328
-325 [-]: JMP       328          ; PC := 328
-326 [-]: MOVE      R33 R25      ; R33 := R25
-327 [-]: CALL      R33 1 1      ; R33()
-328 [-]: SELF      R33 R0 K52   ; R34 := R0; R33 := R0[0x434f6055]
-329 [-]: MOVE      R35 R17      ; R35 := R17
-330 [-]: MOVE      R36 R12      ; R36 := R12
-331 [-]: CALL      R33 4 1      ; R33(R34,R35,R36)
-332 [-]: LOADBOOL  R7 0 0       ; R7 := false
-333 [-]: CLOSE     R24          ; SAVE R24,...
-334 [-]: JMP       353          ; PC := 353
-335 [-]: EQ        1 R5 K16     ; if R5 == nil then PC := 353
-336 [-]: JMP       353          ; PC := 353
-337 [-]: GETTABLE  R24 R0 K1    ; R24 := R0["mMovie"]
-338 [-]: SELF      R24 R24 K25  ; R25 := R24; R24 := R24[0x67bc869f]
-339 [-]: MOVE      R26 R5       ; R26 := R5
-340 [-]: LOADK     R27 0        ; R27 := 0.000000
-341 [-]: SELF      R28 R0 K40   ; R29 := R0; R28 := R0[0x67e369fa]
-342 [-]: MOVE      R30 R17      ; R30 := R17
-343 [-]: CALL      R28 3 0      ; R28,... := R28(R29,R30)
-344 [-]: CALL      R24 0 1      ; R24(R25,...)
-345 [-]: GETTABLE  R24 R0 K1    ; R24 := R0["mMovie"]
-346 [-]: SELF      R24 R24 K25  ; R25 := R24; R24 := R24[0x67bc869f]
-347 [-]: MOVE      R26 R5       ; R26 := R5
-348 [-]: LOADK     R27 1        ; R27 := 1.000000
-349 [-]: SELF      R28 R0 K41   ; R29 := R0; R28 := R0[0x68e36b8d]
-350 [-]: MOVE      R30 R17      ; R30 := R17
-351 [-]: CALL      R28 3 0      ; R28,... := R28(R29,R30)
-352 [-]: CALL      R24 0 1      ; R24(R25,...)
-353 [-]: SETTABLE  R17 K42 K5   ; R17["mInitialized"] := true
-354 [-]: CLOSE     R17          ; SAVE R17,...
-355 [-]: FORLOOP   R13 44       ; R13 += R15; if R13 <= R14 then begin PC := 44; R16 := R13 end
-356 [-]: GETTABLE  R17 R0 K53   ; R17 := R0["mRedrawFromScrollBar"]
-357 [-]: TEST      R17 0        ; if not R17 then PC := 361
-358 [-]: JMP       361          ; PC := 361
-359 [-]: SETTABLE  R0 K53 K24   ; R0["mRedrawFromScrollBar"] := false
-360 [-]: JMP       363          ; PC := 363
-361 [-]: SELF      R17 R0 K54   ; R18 := R0; R17 := R0[0xa8854625]
-362 [-]: CALL      R17 2 1      ; R17(R18)
-363 [-]: RETURN    R0 1         ; return 
+167 [-]: CALL      R24 3 1      ; R24(R25,R26)
+168 [-]: GETTABLE  R24 R0 K1    ; R24 := R0["mMovie"]
+169 [-]: SELF      R24 R24 K26  ; R25 := R24; R24 := R24[0x67bc869f]
+170 [-]: GETTABLE  R26 R17 K13  ; R26 := R17["mClipName"]
+171 [-]: CONST     R27 10       ; R27 := 10.000000
+172 [-]: CONST     R28 0        ; R28 := 0.000000
+173 [-]: CALL      R24 5 1      ; R24(R25,R26,R27,R28)
+174 [-]: GETTABLE  R24 R0 K1    ; R24 := R0["mMovie"]
+175 [-]: SELF      R24 R24 K22  ; R25 := R24; R24 := R24[0xaade900e]
+176 [-]: GETTABLE  R26 R17 K13  ; R26 := R17["mClipName"]
+177 [-]: CONST     R27 59       ; R27 := 59.000000
+178 [-]: LOADKB    R28 0 0      ; R28 := false
+179 [-]: CALL      R24 5 1      ; R24(R25,R26,R27,R28)
+180 [-]: SETTABLE  R17 K27 K24  ; R17["mClipEnabled"] := false
+181 [-]: SETTABLE  R17 K13 R5   ; R17["mClipName"] := R5
+182 [-]: SETTABLE  R17 K23 K24  ; R17["mForceRedraw"] := false
+183 [-]: GETGLOBAL R24 K0       ; R24 := 0x7b998233
+184 [-]: MOVE      R25 R5       ; R25 := R5
+185 [-]: CALL      R24 2 2      ; R24 := R24(R25)
+186 [-]: TEST      R24 1        ; if R24 then PC := 357
+187 [-]: JMP       357          ; PC := 357
+188 [-]: GETTABLE  R24 R0 K1    ; R24 := R0["mMovie"]
+189 [-]: SELF      R24 R24 K28  ; R25 := R24; R24 := R24[0xa7ec3e8a]
+190 [-]: MOVE      R26 R5       ; R26 := R5
+191 [-]: CALL      R24 3 2      ; R24 := R24(R25,R26)
+192 [-]: TEST      R24 1        ; if R24 then PC := 223
+193 [-]: JMP       223          ; PC := 223
+194 [-]: GETGLOBAL R24 K29      ; R24 := 0x015284cd
+195 [-]: LOADK     R25 K30      ; R25 := "."
+196 [-]: MOVE      R26 R5       ; R26 := R5
+197 [-]: CALL      R24 3 2      ; R24 := R24(R25,R26)
+198 [-]: GETGLOBAL R25 K31      ; R25 := 0x38f10e85
+199 [-]: GETTABLE  R26 R0 K1    ; R26 := R0["mMovie"]
+200 [-]: GETTABLE  R27 R0 K13   ; R27 := R0["mClipName"]
+201 [-]: LOADK     R28 K32      ; R28 := ".duplicateMovieClip"
+202 [-]: CONCAT    R27 R27 R28  ; R27 := R27 .. R28
+203 [-]: LEN       R28 R24      ; R28 := # R24
+204 [-]: GETTABLE  R28 R24 R28  ; R28 := R24[R28]
+205 [-]: GETTABLE  R29 R0 K33   ; R29 := R0["mInitialDepth"]
+206 [-]: GETTABLE  R30 R0 K18   ; R30 := R0["mTopClipIndexUsed"]
+207 [-]: GETTABLE  R31 R0 K34   ; R31 := R0["mDepthDirection"]
+208 [-]: MUL       R30 R30 R31  ; R30 := R30 * R31
+209 [-]: ADD       R29 R29 R30  ; R29 := R29 + R30
+210 [-]: CALL      R25 5 1      ; R25(R26,R27,R28,R29)
+211 [-]: GETTABLE  R25 R0 K35   ; R25 := R0["mClipCreatedCallback"]
+212 [-]: EQ        1 R25 K16    ; if R25 == nil then PC := 218
+213 [-]: JMP       218          ; PC := 218
+214 [-]: GETTABLE  R25 R0 K36   ; R25 := R0[0x1eed44f2]
+215 [-]: MOVE      R26 R5       ; R26 := R5
+216 [-]: MOVE      R27 R17      ; R27 := R17
+217 [-]: CALL      R25 3 1      ; R25(R26,R27)
+218 [-]: TEST      R2 1         ; if R2 then PC := 223
+219 [-]: JMP       223          ; PC := 223
+220 [-]: SELF      R25 R0 K37   ; R26 := R0; R25 := R0[0xc2a072c8]
+221 [-]: MOVE      R27 R5       ; R27 := R5
+222 [-]: CALL      R25 3 1      ; R25(R26,R27)
+223 [-]: TEST      R2 0         ; if not R2 then PC := 228
+224 [-]: JMP       228          ; PC := 228
+225 [-]: SELF      R25 R0 K37   ; R26 := R0; R25 := R0[0xc2a072c8]
+226 [-]: MOVE      R27 R5       ; R27 := R5
+227 [-]: CALL      R25 3 1      ; R25(R26,R27)
+228 [-]: GETTABLE  R25 R17 K27  ; R25 := R17["mClipEnabled"]
+229 [-]: TEST      R25 1        ; if R25 then PC := 238
+230 [-]: JMP       238          ; PC := 238
+231 [-]: GETTABLE  R25 R0 K1    ; R25 := R0["mMovie"]
+232 [-]: SELF      R25 R25 K22  ; R26 := R25; R25 := R25[0xaade900e]
+233 [-]: GETTABLE  R27 R17 K13  ; R27 := R17["mClipName"]
+234 [-]: CONST     R28 59       ; R28 := 59.000000
+235 [-]: LOADKB    R29 1 0      ; R29 := true
+236 [-]: CALL      R25 5 1      ; R25(R26,R27,R28,R29)
+237 [-]: SETTABLE  R17 K27 K5   ; R17["mClipEnabled"] := true
+238 [-]: GETTABLE  R25 R0 K1    ; R25 := R0["mMovie"]
+239 [-]: SELF      R25 R25 K38  ; R26 := R25; R25 := R25[0x0c33ebb2]
+240 [-]: MOVE      R27 R5       ; R27 := R5
+241 [-]: LOADK     R28 K39      ; R28 := "Id"
+242 [-]: GETTABLE  R29 R17 K39  ; R29 := R17["Id"]
+243 [-]: CALL      R25 5 1      ; R25(R26,R27,R28,R29)
+244 [-]: GETTABLE  R25 R0 K1    ; R25 := R0["mMovie"]
+245 [-]: SELF      R25 R25 K26  ; R26 := R25; R25 := R25[0x67bc869f]
+246 [-]: MOVE      R27 R5       ; R27 := R5
+247 [-]: LOADK     R28 K40      ; R28 := ".Btn"
+248 [-]: CONCAT    R27 R27 R28  ; R27 := R27 .. R28
+249 [-]: CONST     R28 85       ; R28 := 85.000000
+250 [-]: GETTABLE  R29 R17 K39  ; R29 := R17["Id"]
+251 [-]: CALL      R25 5 1      ; R25(R26,R27,R28,R29)
+252 [-]: GETTABLE  R25 R0 K1    ; R25 := R0["mMovie"]
+253 [-]: SELF      R25 R25 K26  ; R26 := R25; R25 := R25[0x67bc869f]
+254 [-]: MOVE      R27 R5       ; R27 := R5
+255 [-]: CONST     R28 0        ; R28 := 0.000000
+256 [-]: SELF      R29 R0 K41   ; R30 := R0; R29 := R0[0x67e369fa]
+257 [-]: MOVE      R31 R17      ; R31 := R17
+258 [-]: CALL      R29 3 0      ; R29,... := R29(R30,R31)
+259 [-]: CALL      R25 0 1      ; R25(R26,...)
+260 [-]: GETTABLE  R25 R0 K1    ; R25 := R0["mMovie"]
+261 [-]: SELF      R25 R25 K26  ; R26 := R25; R25 := R25[0x67bc869f]
+262 [-]: MOVE      R27 R5       ; R27 := R5
+263 [-]: CONST     R28 1        ; R28 := 1.000000
+264 [-]: SELF      R29 R0 K42   ; R30 := R0; R29 := R0[0x68e36b8d]
+265 [-]: MOVE      R31 R17      ; R31 := R17
+266 [-]: CALL      R29 3 0      ; R29,... := R29(R30,R31)
+267 [-]: CALL      R25 0 1      ; R25(R26,...)
+268 [-]: GETTABLE  R25 R17 K43  ; R25 := R17["mInitialized"]
+269 [-]: TEST      R25 1        ; if R25 then PC := 280
+270 [-]: JMP       280          ; PC := 280
+271 [-]: GETTABLE  R25 R0 K1    ; R25 := R0["mMovie"]
+272 [-]: SELF      R25 R25 K26  ; R26 := R25; R25 := R25[0x67bc869f]
+273 [-]: MOVE      R27 R5       ; R27 := R5
+274 [-]: CONST     R28 10       ; R28 := 10.000000
+275 [-]: CONST     R29 0        ; R29 := 0.000000
+276 [-]: CALL      R25 5 1      ; R25(R26,R27,R28,R29)
+277 [-]: SELF      R25 R0 K44   ; R26 := R0; R25 := R0[0x470967b8]
+278 [-]: MOVE      R27 R17      ; R27 := R17
+279 [-]: CALL      R25 3 1      ; R25(R26,R27)
+280 [-]: GETTABLE  R25 R0 K45   ; R25 := R0["mElementDelayTime"]
+281 [-]: ADD       R6 R6 R25    ; R6 := R6 + R25
+282 [-]: GETTABLE  R25 R0 K46   ; R25 := R0["UTIL"]
+283 [-]: GETTABLE  R25 R25 K47  ; R25 := R25[0x06d055f9]
+284 [-]: MOVE      R26 R7       ; R26 := R7
+285 [-]: MOVE      R27 R1       ; R27 := R1
+286 [-]: LOADNIL   R28 R28      ; R28 := nil
+287 [-]: CALL      R25 4 2      ; R25 := R25(R26,R27,R28)
+288 [-]: SELF      R26 R0 K48   ; R27 := R0; R26 := R0[0x8e19c6fd]
+289 [-]: MOVE      R28 R17      ; R28 := R17
+290 [-]: CALL      R26 3 3      ; R26,R27 := R26(R27,R28)
+291 [-]: SELF      R28 R0 K49   ; R29 := R0; R28 := R0[0xac8bc0ef]
+292 [-]: MOVE      R30 R17      ; R30 := R17
+293 [-]: CALL      R28 3 1      ; R28(R29,R30)
+294 [-]: TEST      R3 1         ; if R3 then PC := 311
+295 [-]: JMP       311          ; PC := 311
+296 [-]: CLOSURE   R28 0        ; R28 := closure(Function #1.51.1)
+297 [-]: MOVE      R0 R0        ; R0 := R0
+298 [-]: MOVE      R0 R17       ; R0 := R17
+299 [-]: MOVE      R0 R25       ; R0 := R25
+300 [-]: GETGLOBAL R29 K50      ; R29 := 0x25312c9b
+301 [-]: GETTABLE  R30 R0 K1    ; R30 := R0["mMovie"]
+302 [-]: MOVE      R31 R5       ; R31 := R5
+303 [-]: GETTABLE  R32 R0 K51   ; R32 := R0["mEasing"]
+304 [-]: MOVE      R33 R26      ; R33 := R26
+305 [-]: MOVE      R34 R27      ; R34 := R27
+306 [-]: MOVE      R35 R8       ; R35 := R8
+307 [-]: MOVE      R36 R6       ; R36 := R6
+308 [-]: MOVE      R37 R28      ; R37 := R28
+309 [-]: CALL      R29 9 1      ; R29(R30,R31,R32,R33,R34,R35,R36,R37)
+310 [-]: JMP       332          ; PC := 332
+311 [-]: CONST     R29 1        ; R29 := 1.000000
+312 [-]: LEN       R30 R26      ; R30 := # R26
+313 [-]: CONST     R31 1        ; R31 := 1.000000
+314 [-]: FORPREP   R29 321      ; R29 -= R31; PC := 321
+315 [-]: GETTABLE  R33 R0 K1    ; R33 := R0["mMovie"]
+316 [-]: SELF      R33 R33 K26  ; R34 := R33; R33 := R33[0x67bc869f]
+317 [-]: MOVE      R35 R5       ; R35 := R5
+318 [-]: GETTABLE  R36 R26 R32  ; R36 := R26[R32]
+319 [-]: GETTABLE  R37 R27 R32  ; R37 := R27[R32]
+320 [-]: CALL      R33 5 1      ; R33(R34,R35,R36,R37)
+321 [-]: FORLOOP   R29 315      ; R29 += R31; if R29 <= R30 then begin PC := 315; R32 := R29 end
+322 [-]: SELF      R33 R0 K52   ; R34 := R0; R33 := R0[0x002b067a]
+323 [-]: MOVE      R35 R17      ; R35 := R17
+324 [-]: CALL      R33 3 1      ; R33(R34,R35)
+325 [-]: GETGLOBAL R33 K0       ; R33 := 0x7b998233
+326 [-]: MOVE      R34 R25      ; R34 := R25
+327 [-]: CALL      R33 2 2      ; R33 := R33(R34)
+328 [-]: TEST      R33 1        ; if R33 then PC := 332
+329 [-]: JMP       332          ; PC := 332
+330 [-]: MOVE      R33 R25      ; R33 := R25
+331 [-]: CALL      R33 1 1      ; R33()
+332 [-]: SELF      R33 R0 K53   ; R34 := R0; R33 := R0[0x434f6055]
+333 [-]: MOVE      R35 R17      ; R35 := R17
+334 [-]: MOVE      R36 R12      ; R36 := R12
+335 [-]: CALL      R33 4 1      ; R33(R34,R35,R36)
+336 [-]: LOADKB    R7 0 0       ; R7 := false
+337 [-]: CLOSE     R24          ; SAVE R24,...
+338 [-]: JMP       357          ; PC := 357
+339 [-]: EQ        1 R5 K16     ; if R5 == nil then PC := 357
+340 [-]: JMP       357          ; PC := 357
+341 [-]: GETTABLE  R24 R0 K1    ; R24 := R0["mMovie"]
+342 [-]: SELF      R24 R24 K26  ; R25 := R24; R24 := R24[0x67bc869f]
+343 [-]: MOVE      R26 R5       ; R26 := R5
+344 [-]: CONST     R27 0        ; R27 := 0.000000
+345 [-]: SELF      R28 R0 K41   ; R29 := R0; R28 := R0[0x67e369fa]
+346 [-]: MOVE      R30 R17      ; R30 := R17
+347 [-]: CALL      R28 3 0      ; R28,... := R28(R29,R30)
+348 [-]: CALL      R24 0 1      ; R24(R25,...)
+349 [-]: GETTABLE  R24 R0 K1    ; R24 := R0["mMovie"]
+350 [-]: SELF      R24 R24 K26  ; R25 := R24; R24 := R24[0x67bc869f]
+351 [-]: MOVE      R26 R5       ; R26 := R5
+352 [-]: CONST     R27 1        ; R27 := 1.000000
+353 [-]: SELF      R28 R0 K42   ; R29 := R0; R28 := R0[0x68e36b8d]
+354 [-]: MOVE      R30 R17      ; R30 := R17
+355 [-]: CALL      R28 3 0      ; R28,... := R28(R29,R30)
+356 [-]: CALL      R24 0 1      ; R24(R25,...)
+357 [-]: SETTABLE  R17 K43 K5   ; R17["mInitialized"] := true
+358 [-]: CLOSE     R17          ; SAVE R17,...
+359 [-]: FORLOOP   R13 44       ; R13 += R15; if R13 <= R14 then begin PC := 44; R16 := R13 end
+360 [-]: GETTABLE  R17 R0 K54   ; R17 := R0["mRedrawFromScrollBar"]
+361 [-]: TEST      R17 0        ; if not R17 then PC := 365
+362 [-]: JMP       365          ; PC := 365
+363 [-]: SETTABLE  R0 K54 K24   ; R0["mRedrawFromScrollBar"] := false
+364 [-]: JMP       367          ; PC := 367
+365 [-]: SELF      R17 R0 K55   ; R18 := R0; R17 := R0[0xa8854625]
+366 [-]: CALL      R17 2 1      ; R17(R18)
+367 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1.51.1:
 ;
 ; Name:            
-; Defined at line: 884
+; Defined at line: 885
 ; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2624,7 +2628,7 @@
 ; Function #1.52:
 ;
 ; Name:            
-; Defined at line: 920
+; Defined at line: 921
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -2632,15 +2636,15 @@
 
   1 [-]: GETGLOBAL R3 K1        ; R3 := 0x42dcc9f5
   2 [-]: MOVE      R4 R1        ; R4 := R1
-  3 [-]: LOADK     R5 1         ; R5 := 1.000000
+  3 [-]: CONST     R5 1         ; R5 := 1.000000
   4 [-]: GETGLOBAL R6 K2        ; R6 := 0x5bced4c4
   5 [-]: GETTABLE  R6 R6 K3     ; R6 := R6[0xb62ecfe0]
   6 [-]: GETTABLE  R7 R0 K4     ; R7 := R0["mElements"]
   7 [-]: LEN       R7 R7        ; R7 := # R7
-  8 [-]: LOADK     R8 1         ; R8 := 1.000000
+  8 [-]: CONST     R8 1         ; R8 := 1.000000
   9 [-]: CALL      R6 3 0       ; R6,... := R6(R7,R8)
  10 [-]: CALL      R3 0 2       ; R3 := R3(R4,...)
- 11 [-]: SETTABLE  R0 K0 R3     ; R0["mScroll"] := R3
+ 11 [-]: SETTABLE  R0 K0 R3     ; R0[0x77de11fe] := R3
  12 [-]: TEST      R2 1         ; if R2 then PC := 16
  13 [-]: JMP       16           ; PC := 16
  14 [-]: SELF      R3 R0 K5     ; R4 := R0; R3 := R0[0x71e9ac81]
@@ -2651,7 +2655,7 @@
 ; Function #1.53:
 ;
 ; Name:            
-; Defined at line: 929
+; Defined at line: 930
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -2662,13 +2666,13 @@
   3 [-]: CALL      R2 2 2       ; R2 := R2(R3)
   4 [-]: TEST      R2 1         ; if R2 then PC := 19
   5 [-]: JMP       19           ; PC := 19
-  6 [-]: LOADK     R2 1         ; R2 := 1.000000
+  6 [-]: CONST     R2 1         ; R2 := 1.000000
   7 [-]: GETTABLE  R3 R0 K1     ; R3 := R0["mElements"]
   8 [-]: LEN       R3 R3        ; R3 := # R3
-  9 [-]: LOADK     R4 1         ; R4 := 1.000000
+  9 [-]: CONST     R4 1         ; R4 := 1.000000
  10 [-]: FORPREP   R2 18        ; R2 -= R4; PC := 18
  11 [-]: GETGLOBAL R6 K2        ; R6 := 0xce225efa
- 12 [-]: LOADK     R7 0         ; R7 := 0.000000
+ 12 [-]: CONST     R7 0         ; R7 := 0.000000
  13 [-]: CALL      R6 2 1       ; R6(R7)
  14 [-]: MOVE      R6 R1        ; R6 := R1
  15 [-]: GETTABLE  R7 R0 K1     ; R7 := R0["mElements"]
@@ -2681,13 +2685,13 @@
 ; Function #1.54:
 ;
 ; Name:            
-; Defined at line: 939
+; Defined at line: 940
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
 ; Max Stack Size:  12
 
-  1 [-]: LOADK     R3 1         ; R3 := 1.000000
+  1 [-]: CONST     R3 1         ; R3 := 1.000000
   2 [-]: LOADNIL   R4 R4        ; R4 := nil
   3 [-]: TEST      R2 0         ; if not R2 then PC := 17
   4 [-]: JMP       17           ; PC := 17
@@ -2707,7 +2711,7 @@
  18 [-]: LEN       R4 R5        ; R4 := # R5
  19 [-]: MOVE      R5 R3        ; R5 := R3
  20 [-]: MOVE      R6 R4        ; R6 := R4
- 21 [-]: LOADK     R7 1         ; R7 := 1.000000
+ 21 [-]: CONST     R7 1         ; R7 := 1.000000
  22 [-]: FORPREP   R5 34        ; R5 -= R7; PC := 34
  23 [-]: GETTABLE  R9 R0 K3     ; R9 := R0["mElements"]
  24 [-]: GETTABLE  R9 R9 R8     ; R9 := R9[R8]
@@ -2715,7 +2719,7 @@
  26 [-]: EQ        1 R10 K5     ; if R10 == nil then PC := 34
  27 [-]: JMP       34           ; PC := 34
  28 [-]: GETGLOBAL R10 K6       ; R10 := 0xce225efa
- 29 [-]: LOADK     R11 0        ; R11 := 0.000000
+ 29 [-]: CONST     R11 0        ; R11 := 0.000000
  30 [-]: CALL      R10 2 1      ; R10(R11)
  31 [-]: MOVE      R10 R1       ; R10 := R1
  32 [-]: MOVE      R11 R9       ; R11 := R9
@@ -2727,7 +2731,7 @@
 ; Function #1.55:
 ;
 ; Name:            
-; Defined at line: 958
+; Defined at line: 959
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -2757,7 +2761,7 @@
 ; Function #1.56:
 ;
 ; Name:            
-; Defined at line: 967
+; Defined at line: 968
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -2765,7 +2769,7 @@
 
   1 [-]: TEST      R1 1         ; if R1 then PC := 4
   2 [-]: JMP       4            ; PC := 4
-  3 [-]: LOADK     R1 0         ; R1 := 0.000000
+  3 [-]: CONST     R1 0         ; R1 := 0.000000
   4 [-]: GETTABLE  R2 R0 K0     ; R2 := R0["mVisibleElements"]
   5 [-]: GETTABLE  R3 R0 K1     ; R3 := R0["mForcedVerticalSeparation"]
   6 [-]: MUL       R2 R2 R3     ; R2 := R2 * R3
@@ -2777,7 +2781,7 @@
 ; Function #1.57:
 ;
 ; Name:            
-; Defined at line: 975
+; Defined at line: 976
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -2795,7 +2799,7 @@
  10 [-]: GETTABLE  R5 R5 K5     ; R5 := R5[0x74a11ec6]
  11 [-]: MUL       R6 R3 R1     ; R6 := R3 * R1
  12 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 13 [-]: LOADK     R6 0         ; R6 := 0.000000
+ 13 [-]: CONST     R6 0         ; R6 := 0.000000
  14 [-]: MOVE      R7 R3        ; R7 := R3
  15 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
  16 [-]: ADD       R4 R4 K6     ; R4 := R4 + 1.000000
@@ -2804,13 +2808,13 @@
  19 [-]: JMP       71           ; PC := 71
  20 [-]: SELF      R5 R0 K8     ; R6 := R0; R5 := R0[0x4c4f8717]
  21 [-]: MOVE      R7 R4        ; R7 := R4
- 22 [-]: LOADBOOL  R8 1 0       ; R8 := true
+ 22 [-]: LOADKB    R8 1 0       ; R8 := true
  23 [-]: CALL      R5 4 1       ; R5(R6,R7,R8)
  24 [-]: SETTABLE  R0 K9 K10    ; R0["mRedrawFromScrollBar"] := true
  25 [-]: SELF      R5 R0 K11    ; R6 := R0; R5 := R0[0x71e9ac81]
  26 [-]: LOADNIL   R7 R7        ; R7 := nil
- 27 [-]: LOADBOOL  R8 0 0       ; R8 := false
- 28 [-]: LOADBOOL  R9 1 0       ; R9 := true
+ 27 [-]: LOADKB    R8 0 0       ; R8 := false
+ 28 [-]: LOADKB    R9 1 0       ; R9 := true
  29 [-]: CALL      R5 5 1       ; R5(R6,R7,R8,R9)
  30 [-]: SELF      R5 R0 K12    ; R6 := R0; R5 := R0[0x741d078c]
  31 [-]: CLOSURE   R7 0         ; R7 := closure(Function #1.57.1)
@@ -2819,7 +2823,7 @@
  34 [-]: JMP       71           ; PC := 71
  35 [-]: GETGLOBAL R5 K3        ; R5 := 0x42dcc9f5
  36 [-]: MUL       R6 R3 R1     ; R6 := R3 * R1
- 37 [-]: LOADK     R7 0         ; R7 := 0.000000
+ 37 [-]: CONST     R7 0         ; R7 := 0.000000
  38 [-]: MOVE      R8 R3        ; R8 := R3
  39 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
  40 [-]: ADD       R5 R5 K6     ; R5 := R5 + 1.000000
@@ -2837,7 +2841,7 @@
  52 [-]: SUB       R6 R6 R7     ; R6 := R6 - R7
  53 [-]: SELF      R7 R0 K8     ; R8 := R0; R7 := R0[0x4c4f8717]
  54 [-]: MOVE      R9 R5        ; R9 := R5
- 55 [-]: LOADBOOL  R10 1 0      ; R10 := true
+ 55 [-]: LOADKB    R10 1 0      ; R10 := true
  56 [-]: CALL      R7 4 1       ; R7(R8,R9,R10)
  57 [-]: LE        1 K6 R6      ; if 1.000000 <= R6 then PC := 61
  58 [-]: JMP       61           ; PC := 61
@@ -2846,8 +2850,8 @@
  61 [-]: SETTABLE  R0 K9 K10    ; R0["mRedrawFromScrollBar"] := true
  62 [-]: SELF      R7 R0 K11    ; R8 := R0; R7 := R0[0x71e9ac81]
  63 [-]: LOADNIL   R9 R9        ; R9 := nil
- 64 [-]: LOADBOOL  R10 0 0      ; R10 := false
- 65 [-]: LOADBOOL  R11 1 0      ; R11 := true
+ 64 [-]: LOADKB    R10 0 0      ; R10 := false
+ 65 [-]: LOADKB    R11 1 0      ; R11 := true
  66 [-]: CALL      R7 5 1       ; R7(R8,R9,R10,R11)
  67 [-]: SELF      R7 R0 K12    ; R8 := R0; R7 := R0[0x741d078c]
  68 [-]: CLOSURE   R9 1         ; R9 := closure(Function #1.57.2)
@@ -2859,7 +2863,7 @@
 ; Function #1.57.1:
 ;
 ; Name:            
-; Defined at line: 985
+; Defined at line: 986
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2869,7 +2873,7 @@
   2 [-]: GETTABLE  R1 R1 K0     ; R1 := R1["mMovie"]
   3 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1[0x67bc869f]
   4 [-]: GETTABLE  R3 R0 K2     ; R3 := R0["mClipName"]
-  5 [-]: LOADK     R4 1         ; R4 := 1.000000
+  5 [-]: CONST     R4 1         ; R4 := 1.000000
   6 [-]: GETUPVAL  R5 U0        ; R5 := U0
   7 [-]: SELF      R5 R5 K3     ; R6 := R5; R5 := R5[0x68e36b8d]
   8 [-]: MOVE      R7 R0        ; R7 := R0
@@ -2885,7 +2889,7 @@
 ; Function #1.57.2:
 ;
 ; Name:            
-; Defined at line: 1000
+; Defined at line: 1001
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2895,7 +2899,7 @@
   2 [-]: GETTABLE  R1 R1 K0     ; R1 := R1["mMovie"]
   3 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1[0x67bc869f]
   4 [-]: GETTABLE  R3 R0 K2     ; R3 := R0["mClipName"]
-  5 [-]: LOADK     R4 1         ; R4 := 1.000000
+  5 [-]: CONST     R4 1         ; R4 := 1.000000
   6 [-]: GETUPVAL  R5 U0        ; R5 := U0
   7 [-]: SELF      R5 R5 K3     ; R6 := R5; R5 := R5[0x68e36b8d]
   8 [-]: MOVE      R7 R0        ; R7 := R0
@@ -2911,13 +2915,13 @@
 ; Function #1.58:
 ;
 ; Name:            
-; Defined at line: 1009
+; Defined at line: 1010
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
-  1 [-]: LOADBOOL  R1 1 0       ; R1 := true
+  1 [-]: LOADKB    R1 1 0       ; R1 := true
   2 [-]: RETURN    R1 2         ; return R1
   3 [-]: RETURN    R0 1         ; return 
 
@@ -2925,7 +2929,7 @@
 ; Function #1.59:
 ;
 ; Name:            
-; Defined at line: 1014
+; Defined at line: 1015
 ; #Upvalues:       0
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -2936,12 +2940,12 @@
   3 [-]: EQ        1 R4 K1      ; if R4 == nil then PC := 44
   4 [-]: JMP       44           ; PC := 44
   5 [-]: SELF      R4 R0 K2     ; R5 := R0; R4 := R0[0x4c4f8717]
-  6 [-]: LOADK     R6 1         ; R6 := 1.000000
-  7 [-]: LOADBOOL  R7 1 0       ; R7 := true
+  6 [-]: CONST     R6 1         ; R6 := 1.000000
+  7 [-]: LOADKB    R7 1 0       ; R7 := true
   8 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
   9 [-]: TEST      R2 1         ; if R2 then PC := 12
  10 [-]: JMP       12           ; PC := 12
- 11 [-]: LOADK     R2 0         ; R2 := 0.000000
+ 11 [-]: CONST     R2 0         ; R2 := 0.000000
  12 [-]: GETGLOBAL R4 K3        ; R4 := 0x2d0fad09
  13 [-]: LOADK     R5 K4        ; R5 := "EE.Interface.Components.ScrollBar"
  14 [-]: CALL      R4 2 2       ; R4 := R4(R5)
@@ -2951,15 +2955,15 @@
  18 [-]: SELF      R8 R0 K8     ; R9 := R0; R8 := R0[0x1facc513]
  19 [-]: MOVE      R10 R2       ; R10 := R2
  20 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
- 21 [-]: LOADK     R9 0         ; R9 := 0.500000
+ 21 [-]: CONST     R9 0         ; R9 := 0.500000
  22 [-]: MOVE      R10 R3       ; R10 := R3
  23 [-]: CALL      R5 6 2       ; R5 := R5(R6,R7,R8,R9,R10)
  24 [-]: SETTABLE  R0 K5 R5     ; R0["mScrollBar"] := R5
  25 [-]: GETTABLE  R5 R0 K7     ; R5 := R0["mMovie"]
  26 [-]: SELF      R5 R5 K9     ; R6 := R5; R5 := R5[0xaade900e]
  27 [-]: GETTABLE  R7 R0 K0     ; R7 := R0["mScrollBarClipName"]
- 28 [-]: LOADK     R8 11        ; R8 := 11.000000
- 29 [-]: LOADBOOL  R9 0 0       ; R9 := false
+ 28 [-]: CONST     R8 11        ; R8 := 11.000000
+ 29 [-]: LOADKB    R9 0 0       ; R9 := false
  30 [-]: CALL      R5 5 1       ; R5(R6,R7,R8,R9)
  31 [-]: GETTABLE  R5 R0 K5     ; R5 := R0["mScrollBar"]
  32 [-]: CLOSURE   R6 0         ; R6 := closure(Function #1.59.1)
@@ -2980,7 +2984,7 @@
 ; Function #1.59.1:
 ;
 ; Name:            
-; Defined at line: 1025
+; Defined at line: 1026
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -2997,7 +3001,7 @@
 ; Function #1.60:
 ;
 ; Name:            
-; Defined at line: 1035
+; Defined at line: 1036
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3022,12 +3026,12 @@
  17 [-]: SELF      R3 R0 K6     ; R4 := R0; R3 := R0[0xb4c60d07]
  18 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  19 [-]: JMP       22           ; PC := 22
- 20 [-]: LOADBOOL  R3 0 1       ; R3 := false; PC := 21
- 21 [-]: LOADBOOL  R3 1 0       ; R3 := true
+ 20 [-]: LOADKB    R3 0 1       ; R3 := false; PC := 21
+ 21 [-]: LOADKB    R3 1 0       ; R3 := true
  22 [-]: GETTABLE  R4 R0 K7     ; R4 := R0["mMovie"]
  23 [-]: SELF      R4 R4 K8     ; R5 := R4; R4 := R4[0xaade900e]
  24 [-]: GETTABLE  R6 R0 K0     ; R6 := R0["mScrollBarClipName"]
- 25 [-]: LOADK     R7 11        ; R7 := 11.000000
+ 25 [-]: CONST     R7 11        ; R7 := 11.000000
  26 [-]: GETTABLE  R8 R0 K9     ; R8 := R0["mScrollAlwaysVisible"]
  27 [-]: TEST      R8 1         ; if R8 then PC := 30
  28 [-]: JMP       30           ; PC := 30
@@ -3037,7 +3041,7 @@
  32 [-]: SELF      R4 R4 K10    ; R5 := R4; R4 := R4[0xc0a3774b]
  33 [-]: GETTABLE  R6 R0 K0     ; R6 := R0["mScrollBarClipName"]
  34 [-]: LOADK     R7 K11       ; R7 := "Scrub"
- 35 [-]: LOADK     R8 11        ; R8 := 11.000000
+ 35 [-]: CONST     R8 11        ; R8 := 11.000000
  36 [-]: MOVE      R9 R3        ; R9 := R3
  37 [-]: CALL      R4 6 1       ; R4(R5,R6,R7,R8,R9)
  38 [-]: GETTABLE  R4 R0 K2     ; R4 := R0["mScrollBar"]
@@ -3059,7 +3063,7 @@
  54 [-]: GETTABLE  R7 R0 K16    ; R7 := R0["mScroll"]
  55 [-]: SUB       R7 R7 K17    ; R7 := R7 - 1.000000
  56 [-]: DIV       R7 R7 R4     ; R7 := R7 / R4
- 57 [-]: LOADBOOL  R8 1 0       ; R8 := true
+ 57 [-]: LOADKB    R8 1 0       ; R8 := true
  58 [-]: CALL      R5 4 1       ; R5(R6,R7,R8)
  59 [-]: GETTABLE  R5 R0 K2     ; R5 := R0["mScrollBar"]
  60 [-]: SELF      R5 R5 K18    ; R6 := R5; R5 := R5[0xa8854625]
@@ -3075,7 +3079,7 @@
 ; Function #1.61:
 ;
 ; Name:            
-; Defined at line: 1054
+; Defined at line: 1055
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3091,7 +3095,7 @@
   8 [-]: LOADK     R2 K4        ; R2 := "Error: Smooth scroll dependencies failed!"
   9 [-]: CALL      R1 2 1       ; R1(R2)
  10 [-]: GETGLOBAL R1 K5        ; R1 := 0x60cce7b4
- 11 [-]: LOADBOOL  R2 0 0       ; R2 := false
+ 11 [-]: LOADKB    R2 0 0       ; R2 := false
  12 [-]: CALL      R1 2 1       ; R1(R2)
  13 [-]: JMP       17           ; PC := 17
  14 [-]: SETTABLE  R0 K6 K7     ; R0["mSmoothScroll"] := true
@@ -3103,7 +3107,7 @@
 ; Function #1.62:
 ;
 ; Name:            
-; Defined at line: 1064
+; Defined at line: 1065
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3115,8 +3119,8 @@
   4 [-]: SELF      R1 R1 K4     ; R2 := R1; R1 := R1[0xaade900e]
   5 [-]: GETTABLE  R3 R0 K0     ; R3 := R0["mClickDrag"]
   6 [-]: GETTABLE  R3 R3 K5     ; R3 := R3["DragClipName"]
-  7 [-]: LOADK     R4 11        ; R4 := 11.000000
-  8 [-]: LOADBOOL  R5 0 0       ; R5 := false
+  7 [-]: CONST     R4 11        ; R4 := 11.000000
+  8 [-]: LOADKB    R5 0 0       ; R5 := false
   9 [-]: CALL      R1 5 1       ; R1(R2,R3,R4,R5)
  10 [-]: GETTABLE  R1 R0 K0     ; R1 := R0["mClickDrag"]
  11 [-]: SETTABLE  R1 K6 K7     ; R1["Dragging"] := false
@@ -3137,7 +3141,7 @@
 ; Function #1.63:
 ;
 ; Name:            
-; Defined at line: 1076
+; Defined at line: 1077
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3159,9 +3163,9 @@
  14 [-]: JMP       36           ; PC := 36
  15 [-]: LEN       R2 R1        ; R2 := # R1
  16 [-]: SUB       R2 R2 K12    ; R2 := R2 - 1.000000
- 17 [-]: LOADK     R3 1         ; R3 := 1.000000
+ 17 [-]: CONST     R3 1         ; R3 := 1.000000
  18 [-]: MOVE      R4 R2        ; R4 := R2
- 19 [-]: LOADK     R5 1         ; R5 := 1.000000
+ 19 [-]: CONST     R5 1         ; R5 := 1.000000
  20 [-]: FORPREP   R3 35        ; R3 -= R5; PC := 35
  21 [-]: GETTABLE  R7 R0 K0     ; R7 := R0["mClickDrag"]
  22 [-]: GETTABLE  R8 R0 K0     ; R8 := R0["mClickDrag"]
@@ -3189,7 +3193,7 @@
 ; Function #1.64:
 ;
 ; Name:            
-; Defined at line: 1098
+; Defined at line: 1099
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3245,15 +3249,15 @@
  48 [-]: SELF      R4 R4 K19    ; R5 := R4; R4 := R4[0xaade900e]
  49 [-]: GETTABLE  R6 R0 K2     ; R6 := R0["mClickDrag"]
  50 [-]: GETTABLE  R6 R6 K3     ; R6 := R6["DragClipName"]
- 51 [-]: LOADK     R7 11        ; R7 := 11.000000
- 52 [-]: LOADBOOL  R8 1 0       ; R8 := true
+ 51 [-]: CONST     R7 11        ; R7 := 11.000000
+ 52 [-]: LOADKB    R8 1 0       ; R8 := true
  53 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
  54 [-]: GETTABLE  R4 R0 K0     ; R4 := R0["mMovie"]
  55 [-]: SELF      R4 R4 K20    ; R5 := R4; R4 := R4[0x67bc869f]
  56 [-]: GETTABLE  R6 R0 K2     ; R6 := R0["mClickDrag"]
  57 [-]: GETTABLE  R6 R6 K3     ; R6 := R6["DragClipName"]
- 58 [-]: LOADK     R7 10        ; R7 := 10.000000
- 59 [-]: LOADK     R8 60        ; R8 := 60.000000
+ 58 [-]: CONST     R7 10        ; R7 := 10.000000
+ 59 [-]: CONST     R8 60        ; R8 := 60.000000
  60 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
  61 [-]: GETTABLE  R4 R0 K0     ; R4 := R0["mMovie"]
  62 [-]: SELF      R4 R4 K19    ; R5 := R4; R4 := R4[0xaade900e]
@@ -3261,8 +3265,8 @@
  64 [-]: GETTABLE  R6 R6 K3     ; R6 := R6["DragClipName"]
  65 [-]: LOADK     R7 K21       ; R7 := "Btn"
  66 [-]: CONCAT    R6 R6 R7     ; R6 := R6 .. R7
- 67 [-]: LOADK     R7 59        ; R7 := 59.000000
- 68 [-]: LOADBOOL  R8 0 0       ; R8 := false
+ 67 [-]: CONST     R7 59        ; R7 := 59.000000
+ 68 [-]: LOADKB    R8 0 0       ; R8 := false
  69 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
  70 [-]: GETTABLE  R4 R0 K2     ; R4 := R0["mClickDrag"]
  71 [-]: SETTABLE  R4 K22 K23   ; R4["Dragging"] := true
@@ -3277,7 +3281,7 @@
 ; Function #1.65:
 ;
 ; Name:            
-; Defined at line: 1124
+; Defined at line: 1125
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -3309,13 +3313,13 @@
 ; Function #1.65.1:
 ;
 ; Name:            
-; Defined at line: 1140
+; Defined at line: 1141
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
-  1 [-]: LOADK     R1 1         ; R1 := 1.000000
+  1 [-]: CONST     R1 1         ; R1 := 1.000000
   2 [-]: RETURN    R1 2         ; return R1
   3 [-]: RETURN    R0 1         ; return 
 
@@ -3323,13 +3327,13 @@
 ; Function #1.65.2:
 ;
 ; Name:            
-; Defined at line: 1144
+; Defined at line: 1145
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
 ; Max Stack Size:  6
 
-  1 [-]: LOADK     R1 0         ; R1 := 0.000000
+  1 [-]: CONST     R1 0         ; R1 := 0.000000
   2 [-]: GETGLOBAL R2 K0        ; R2 := 0x7b998233
   3 [-]: GETTABLE  R3 R0 K1     ; R3 := R0["mForcedVerticalSeparation"]
   4 [-]: CALL      R2 2 2       ; R2 := R2(R3)
@@ -3340,7 +3344,7 @@
   9 [-]: GETTABLE  R2 R0 K2     ; R2 := R0["mMovie"]
  10 [-]: SELF      R2 R2 K3     ; R3 := R2; R2 := R2[0x91a24e4b]
  11 [-]: GETTABLE  R4 R0 K4     ; R4 := R0["mClipName"]
- 12 [-]: LOADK     R5 13        ; R5 := 13.000000
+ 12 [-]: CONST     R5 13        ; R5 := 13.000000
  13 [-]: CALL      R2 4 2       ; R2 := R2(R3,R4,R5)
  14 [-]: MOVE      R1 R2        ; R1 := R2
  15 [-]: RETURN    R1 2         ; return R1
@@ -3350,13 +3354,13 @@
 ; Function #1.66:
 ;
 ; Name:            
-; Defined at line: 1155
+; Defined at line: 1156
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
 ; Max Stack Size:  17
 
-  1 [-]: LOADBOOL  R3 0 0       ; R3 := false
+  1 [-]: LOADKB    R3 0 0       ; R3 := false
   2 [-]: GETTABLE  R4 R0 K0     ; R4 := R0["mScrollDrag"]
   3 [-]: GETTABLE  R4 R4 K1     ; R4 := R4["Enabled"]
   4 [-]: TEST      R4 0         ; if not R4 then PC := 11
@@ -3378,14 +3382,14 @@
  20 [-]: GETTABLE  R5 R0 K7     ; R5 := R0["mMovie"]
  21 [-]: SELF      R5 R5 K8     ; R6 := R5; R5 := R5[0x91a24e4b]
  22 [-]: LOADK     R7 K9        ; R7 := "_root"
- 23 [-]: LOADK     R8 25        ; R8 := 25.000000
+ 23 [-]: CONST     R8 25        ; R8 := 25.000000
  24 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
  25 [-]: GETTABLE  R6 R0 K7     ; R6 := R0["mMovie"]
  26 [-]: SELF      R6 R6 K8     ; R7 := R6; R6 := R6[0x91a24e4b]
  27 [-]: LOADK     R8 K9        ; R8 := "_root"
- 28 [-]: LOADK     R9 26        ; R9 := 26.000000
+ 28 [-]: CONST     R9 26        ; R9 := 26.000000
  29 [-]: CALL      R6 4 2       ; R6 := R6(R7,R8,R9)
- 30 [-]: LOADK     R7 0         ; R7 := 0.000000
+ 30 [-]: CONST     R7 0         ; R7 := 0.000000
  31 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
  32 [-]: GETTABLE  R5 R0 K3     ; R5 := R0["mClickDrag"]
  33 [-]: GETTABLE  R5 R5 K10    ; R5 := R5["Dragging"]
@@ -3442,23 +3446,23 @@
  84 [-]: SELF      R10 R10 K26  ; R11 := R10; R10 := R10[0x67bc869f]
  85 [-]: GETTABLE  R12 R0 K3    ; R12 := R0["mClickDrag"]
  86 [-]: GETTABLE  R12 R12 K27  ; R12 := R12["DragClipName"]
- 87 [-]: LOADK     R13 0        ; R13 := 0.000000
+ 87 [-]: CONST     R13 0        ; R13 := 0.000000
  88 [-]: MOVE      R14 R6       ; R14 := R6
  89 [-]: CALL      R10 5 1      ; R10(R11,R12,R13,R14)
  90 [-]: GETTABLE  R10 R0 K7    ; R10 := R0["mMovie"]
  91 [-]: SELF      R10 R10 K26  ; R11 := R10; R10 := R10[0x67bc869f]
  92 [-]: GETTABLE  R12 R0 K3    ; R12 := R0["mClickDrag"]
  93 [-]: GETTABLE  R12 R12 K27  ; R12 := R12["DragClipName"]
- 94 [-]: LOADK     R13 1        ; R13 := 1.000000
+ 94 [-]: CONST     R13 1        ; R13 := 1.000000
  95 [-]: MOVE      R14 R7       ; R14 := R7
  96 [-]: CALL      R10 5 1      ; R10(R11,R12,R13,R14)
  97 [-]: GETGLOBAL R10 K6       ; R10 := 0xa421af95
  98 [-]: MOVE      R11 R6       ; R11 := R6
  99 [-]: MOVE      R12 R7       ; R12 := R7
-100 [-]: LOADK     R13 0        ; R13 := 0.000000
+100 [-]: CONST     R13 0        ; R13 := 0.000000
 101 [-]: CALL      R10 4 2      ; R10 := R10(R11,R12,R13)
 102 [-]: LOADNIL   R11 R11      ; R11 := nil
-103 [-]: LOADK     R12 0        ; R12 := 0.000000
+103 [-]: CONST     R12 0        ; R12 := 0.000000
 104 [-]: SELF      R13 R0 K28   ; R14 := R0; R13 := R0[0x741d078c]
 105 [-]: CLOSURE   R15 0        ; R15 := closure(Function #1.66.1)
 106 [-]: MOVE      R0 R0        ; R0 := R0
@@ -3515,14 +3519,14 @@
 ; Function #1.66.1:
 ;
 ; Name:            
-; Defined at line: 1194
+; Defined at line: 1195
 ; #Upvalues:       4
 ; #Parameters:     1
 ; Is_vararg:       0
 ; Max Stack Size:  8
 
-  1 [-]: LOADK     R1 0         ; R1 := 0.000000
-  2 [-]: LOADK     R2 0         ; R2 := 0.000000
+  1 [-]: CONST     R1 0         ; R1 := 0.000000
+  2 [-]: CONST     R2 0         ; R2 := 0.000000
   3 [-]: GETUPVAL  R3 U0        ; R3 := U0
   4 [-]: GETTABLE  R3 R3 K0     ; R3 := R3["mGetElementCenter"]
   5 [-]: EQ        1 R3 K1      ; if R3 == nil then PC := 14
@@ -3538,21 +3542,21 @@
  15 [-]: GETTABLE  R3 R3 K3     ; R3 := R3["mMovie"]
  16 [-]: SELF      R3 R3 K4     ; R4 := R3; R3 := R3[0x91a24e4b]
  17 [-]: GETTABLE  R5 R0 K5     ; R5 := R0["mClipName"]
- 18 [-]: LOADK     R6 0         ; R6 := 0.000000
+ 18 [-]: CONST     R6 0         ; R6 := 0.000000
  19 [-]: CALL      R3 4 2       ; R3 := R3(R4,R5,R6)
  20 [-]: MOVE      R1 R3        ; R1 := R3
  21 [-]: GETUPVAL  R3 U0        ; R3 := U0
  22 [-]: GETTABLE  R3 R3 K3     ; R3 := R3["mMovie"]
  23 [-]: SELF      R3 R3 K4     ; R4 := R3; R3 := R3[0x91a24e4b]
  24 [-]: GETTABLE  R5 R0 K5     ; R5 := R0["mClipName"]
- 25 [-]: LOADK     R6 1         ; R6 := 1.000000
+ 25 [-]: CONST     R6 1         ; R6 := 1.000000
  26 [-]: CALL      R3 4 2       ; R3 := R3(R4,R5,R6)
  27 [-]: MOVE      R2 R3        ; R2 := R3
  28 [-]: GETGLOBAL R3 K6        ; R3 := 0x03ea2485
  29 [-]: GETGLOBAL R4 K7        ; R4 := 0xa421af95
  30 [-]: MOVE      R5 R1        ; R5 := R1
  31 [-]: MOVE      R6 R2        ; R6 := R2
- 32 [-]: LOADK     R7 0         ; R7 := 0.000000
+ 32 [-]: CONST     R7 0         ; R7 := 0.000000
  33 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
  34 [-]: GETUPVAL  R5 U1        ; R5 := U1
  35 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
@@ -3571,7 +3575,7 @@
 ; Function #1.67:
 ;
 ; Name:            
-; Defined at line: 1235
+; Defined at line: 1236
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -3589,7 +3593,7 @@
  10 [-]: GETTABLE  R4 R0 K4     ; R4 := R0["mMovie"]
  11 [-]: SELF      R4 R4 K5     ; R5 := R4; R4 := R4[0x54a95d6f]
  12 [-]: GETTABLE  R6 R3 K6     ; R6 := R3["mClipName"]
- 13 [-]: LOADK     R7 19        ; R7 := 19.000000
+ 13 [-]: CONST     R7 19        ; R7 := 19.000000
  14 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
  15 [-]: MOVE      R2 R4        ; R2 := R4
  16 [-]: EQ        1 R1 K2      ; if R1 == nil then PC := 25
@@ -3610,14 +3614,14 @@
  31 [-]: GETTABLE  R6 R0 K4     ; R6 := R0["mMovie"]
  32 [-]: SELF      R6 R6 K15    ; R7 := R6; R6 := R6[0x91a24e4b]
  33 [-]: LOADK     R8 K16       ; R8 := "_root"
- 34 [-]: LOADK     R9 25        ; R9 := 25.000000
+ 34 [-]: CONST     R9 25        ; R9 := 25.000000
  35 [-]: CALL      R6 4 2       ; R6 := R6(R7,R8,R9)
  36 [-]: GETTABLE  R7 R0 K4     ; R7 := R0["mMovie"]
  37 [-]: SELF      R7 R7 K15    ; R8 := R7; R7 := R7[0x91a24e4b]
  38 [-]: LOADK     R9 K16       ; R9 := "_root"
- 39 [-]: LOADK     R10 26       ; R10 := 26.000000
+ 39 [-]: CONST     R10 26       ; R10 := 26.000000
  40 [-]: CALL      R7 4 2       ; R7 := R7(R8,R9,R10)
- 41 [-]: LOADK     R8 0         ; R8 := 0.000000
+ 41 [-]: CONST     R8 0         ; R8 := 0.000000
  42 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
  43 [-]: SETTABLE  R4 K13 R5    ; R4["InitDownPos"] := R5
  44 [-]: RETURN    R0 1         ; return 
@@ -3626,7 +3630,7 @@
 ; Function #1.68:
 ;
 ; Name:            
-; Defined at line: 1254
+; Defined at line: 1255
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3654,7 +3658,7 @@
 ; Function #1.69:
 ;
 ; Name:            
-; Defined at line: 1263
+; Defined at line: 1264
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -3672,14 +3676,14 @@
  10 [-]: GETTABLE  R3 R0 K4     ; R3 := R0["mMovie"]
  11 [-]: SELF      R3 R3 K5     ; R4 := R3; R3 := R3[0x91a24e4b]
  12 [-]: LOADK     R5 K6        ; R5 := "_root"
- 13 [-]: LOADK     R6 25        ; R6 := 25.000000
+ 13 [-]: CONST     R6 25        ; R6 := 25.000000
  14 [-]: CALL      R3 4 2       ; R3 := R3(R4,R5,R6)
  15 [-]: GETTABLE  R4 R0 K4     ; R4 := R0["mMovie"]
  16 [-]: SELF      R4 R4 K5     ; R5 := R4; R4 := R4[0x91a24e4b]
  17 [-]: LOADK     R6 K6        ; R6 := "_root"
- 18 [-]: LOADK     R7 26        ; R7 := 26.000000
+ 18 [-]: CONST     R7 26        ; R7 := 26.000000
  19 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
- 20 [-]: LOADK     R5 0         ; R5 := 0.000000
+ 20 [-]: CONST     R5 0         ; R5 := 0.000000
  21 [-]: CALL      R2 4 2       ; R2 := R2(R3,R4,R5)
  22 [-]: GETTABLE  R3 R0 K0     ; R3 := R0["mScrollDrag"]
  23 [-]: GETTABLE  R3 R3 K7     ; R3 := R3["isDragging"]
@@ -3694,7 +3698,7 @@
  32 [-]: GETGLOBAL R4 K11       ; R4 := 0x7b998233
  33 [-]: GETTABLE  R5 R0 K12    ; R5 := R0["mScrollBar"]
  34 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 35 [-]: NOT       R4 R4        ; R4 := not R4
+ 35 [-]: NOT       R4 R4        ; R4 :=  R4
  36 [-]: GETTABLE  R5 R0 K12    ; R5 := R0["mScrollBar"]
  37 [-]: MOVE      R6 R1        ; R6 := R1
  38 [-]: CALL      R3 4 2       ; R3 := R3(R4,R5,R6)
@@ -3704,14 +3708,14 @@
  42 [-]: GETTABLE  R5 R0 K4     ; R5 := R0["mMovie"]
  43 [-]: SELF      R5 R5 K5     ; R6 := R5; R5 := R5[0x91a24e4b]
  44 [-]: LOADK     R7 K6        ; R7 := "_root"
- 45 [-]: LOADK     R8 25        ; R8 := 25.000000
+ 45 [-]: CONST     R8 25        ; R8 := 25.000000
  46 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
  47 [-]: GETTABLE  R6 R0 K4     ; R6 := R0["mMovie"]
  48 [-]: SELF      R6 R6 K5     ; R7 := R6; R6 := R6[0x91a24e4b]
  49 [-]: LOADK     R8 K6        ; R8 := "_root"
- 50 [-]: LOADK     R9 26        ; R9 := 26.000000
+ 50 [-]: CONST     R9 26        ; R9 := 26.000000
  51 [-]: CALL      R6 4 2       ; R6 := R6(R7,R8,R9)
- 52 [-]: LOADK     R7 0         ; R7 := 0.000000
+ 52 [-]: CONST     R7 0         ; R7 := 0.000000
  53 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
  54 [-]: GETTABLE  R5 R4 K13    ; R5 := R4["y"]
  55 [-]: GETTABLE  R6 R0 K0     ; R6 := R0["mScrollDrag"]
@@ -3728,7 +3732,7 @@
  66 [-]: LT        0 K17 R5     ; if 0.000000 >= R5 then PC := 180
  67 [-]: JMP       180          ; PC := 180
  68 [-]: SUB       R7 R5 R6     ; R7 := R5 - R6
- 69 [-]: UNM       R7 R7        ; R7 := ^ R7
+ 69 [-]: UNM       R7 R7        ; R7 :=  R7
  70 [-]: GETTABLE  R8 R0 K0     ; R8 := R0["mScrollDrag"]
  71 [-]: GETTABLE  R8 R8 K18    ; R8 := R8["Sensitivity"]
  72 [-]: MUL       R7 R7 R8     ; R7 := R7 * R8
@@ -3812,7 +3816,7 @@
 150 [-]: JMP       162          ; PC := 162
 151 [-]: GETGLOBAL R15 K29      ; R15 := 0x42dcc9f5
 152 [-]: MOVE      R16 R14      ; R16 := R14
-153 [-]: LOADK     R17 1        ; R17 := 1.000000
+153 [-]: CONST     R17 1        ; R17 := 1.000000
 154 [-]: SELF      R18 R0 K30   ; R19 := R0; R18 := R0[0x5fbddc1a]
 155 [-]: CALL      R18 2 2      ; R18 := R18(R19)
 156 [-]: SELF      R19 R0 K31   ; R20 := R0; R19 := R0[0xc419c8f6]
@@ -3823,9 +3827,9 @@
 161 [-]: MOVE      R14 R15      ; R14 := R15
 162 [-]: SELF      R15 R0 K33   ; R16 := R0; R15 := R0[0x4c4f8717]
 163 [-]: MOVE      R17 R14      ; R17 := R14
-164 [-]: LOADBOOL  R18 1 0      ; R18 := true
+164 [-]: LOADKB    R18 1 0      ; R18 := true
 165 [-]: CALL      R15 4 1      ; R15(R16,R17,R18)
-166 [-]: LOADBOOL  R15 1 0      ; R15 := true
+166 [-]: LOADKB    R15 1 0      ; R15 := true
 167 [-]: RETURN    R15 2        ; return R15
 168 [-]: JMP       180          ; PC := 180
 169 [-]: GETGLOBAL R15 K34      ; R15 := 0x03ea2485

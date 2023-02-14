@@ -31,7 +31,7 @@
   4 [-]: TEST      R0 0         ; if not R0 then PC := 10
   5 [-]: JMP       10           ; PC := 10
   6 [-]: GETGLOBAL R0 K2        ; R0 := 0xcbd666e1
-  7 [-]: LOADK     R1 0         ; R1 := 0.000000
+  7 [-]: CONST     R1 0         ; R1 := 0.000000
   8 [-]: CALL      R0 2 1       ; R0(R1)
   9 [-]: JMP       1            ; PC := 1
  10 [-]: GETGLOBAL R0 K1        ; R0 := 0xbe190284
@@ -41,7 +41,7 @@
  14 [-]: GETGLOBAL R1 K5        ; R1 := 0x4ec73e73
  15 [-]: GETGLOBAL R2 K6        ; R2 := 0xf251d0e4
  16 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 17 [-]: NOT       R1 R1        ; R1 := not R1
+ 17 [-]: NOT       R1 R1        ; R1 :=  R1
  18 [-]: TEST      R1 1         ; if R1 then PC := 33
  19 [-]: JMP       33           ; PC := 33
  20 [-]: GETGLOBAL R2 K7        ; R2 := 0xc8802016
@@ -50,7 +50,7 @@
  23 [-]: JMP       28           ; PC := 28
  24 [-]: EQ        0 R0 R6      ; if R0 ~= R6 then PC := 28
  25 [-]: JMP       28           ; PC := 28
- 26 [-]: LOADBOOL  R1 1 0       ; R1 := true
+ 26 [-]: LOADKB    R1 1 0       ; R1 := true
  27 [-]: JMP       30           ; PC := 30
  28 [-]: TFORLOOP  R2 2         ; R5,R6 :=  R2(R3,R4); if R5 ~= nil then begin PC = 24; R4 := R5 end
  29 [-]: JMP       24           ; PC := 24

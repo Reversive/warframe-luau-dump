@@ -36,7 +36,7 @@
  13 [-]: TEST      R2 0         ; if not R2 then PC := 22
  14 [-]: JMP       22           ; PC := 22
  15 [-]: GETGLOBAL R2 K3        ; R2 := 0xcbd666e1
- 16 [-]: LOADK     R3 1         ; R3 := 1.000000
+ 16 [-]: CONST     R3 1         ; R3 := 1.000000
  17 [-]: CALL      R2 2 1       ; R2(R3)
  18 [-]: SELF      R2 R0 K2     ; R3 := R0; R2 := R0[0xabf50b1c]
  19 [-]: CALL      R2 2 2       ; R2 := R2(R3)
@@ -47,7 +47,7 @@
  24 [-]: LEN       R3 R3        ; R3 := # R3
  25 [-]: LT        0 K5 R3      ; if 0.000000 >= R3 then PC := 75
  26 [-]: JMP       75           ; PC := 75
- 27 [-]: LOADK     R3 0         ; R3 := 0.000000
+ 27 [-]: CONST     R3 0         ; R3 := 0.000000
  28 [-]: GETGLOBAL R4 K1        ; R4 := 0x7b998233
  29 [-]: GETGLOBAL R5 K6        ; R5 := 0xe7f2b02f
  30 [-]: CALL      R4 2 2       ; R4 := R4(R5)
@@ -56,7 +56,7 @@
  33 [-]: LT        0 R3 K7      ; if R3 >= 5.000000 then PC := 42
  34 [-]: JMP       42           ; PC := 42
  35 [-]: GETGLOBAL R4 K3        ; R4 := 0xcbd666e1
- 36 [-]: LOADK     R5 0         ; R5 := 0.000000
+ 36 [-]: CONST     R5 0         ; R5 := 0.000000
  37 [-]: CALL      R4 2 1       ; R4(R5)
  38 [-]: GETGLOBAL R4 K8        ; R4 := 0x67652851
  39 [-]: CALL      R4 1 2       ; R4 := R4()
@@ -99,7 +99,7 @@
  76 [-]: JMP       84           ; PC := 84
  77 [-]: GETGLOBAL R11 K17      ; R11 := 0x09ee0a27
  78 [-]: GETGLOBAL R12 K18      ; R12 := 0x55730e1a
- 79 [-]: LOADK     R13 1        ; R13 := 1.000000
+ 79 [-]: CONST     R13 1        ; R13 := 1.000000
  80 [-]: GETGLOBAL R14 K17      ; R14 := 0x09ee0a27
  81 [-]: LEN       R14 R14      ; R14 := # R14
  82 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
@@ -108,7 +108,7 @@
  85 [-]: MOVE      R13 R2       ; R13 := R2
  86 [-]: CALL      R11 3 1      ; R11(R12,R13)
  87 [-]: SELF      R11 R1 K20   ; R12 := R1; R11 := R1[0x543a0b5e]
- 88 [-]: LOADBOOL  R13 1 0      ; R13 := true
+ 88 [-]: LOADKB    R13 1 0      ; R13 := true
  89 [-]: CALL      R11 3 1      ; R11(R12,R13)
  90 [-]: GETGLOBAL R11 K21      ; R11 := 0xd644c2f1
  91 [-]: LOADK     R12 K22      ; R12 := "Playing music sequencer "

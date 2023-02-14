@@ -66,7 +66,7 @@
  30 [-]: GETTABLE  R5 R3 K9     ; R5 := R3["z"]
  31 [-]: GETTABLE  R6 R3 K7     ; R6 := R3["x"]
  32 [-]: DIV       R5 R5 R6     ; R5 := R5 / R6
- 33 [-]: LOADBOOL  R6 1 0       ; R6 := true
+ 33 [-]: LOADKB    R6 1 0       ; R6 := true
  34 [-]: TEST      R6 0         ; if not R6 then PC := 45
  35 [-]: JMP       45           ; PC := 45
  36 [-]: LOADK     R7 K10       ; R7 := 0.096000
@@ -74,7 +74,7 @@
  38 [-]: MUL       R4 R4 R8     ; R4 := R4 * R8
  39 [-]: GETGLOBAL R8 K12       ; R8 := 0xa421af95
  40 [-]: MUL       R9 K13 R7    ; R9 := 4.000000 * R7
- 41 [-]: LOADK     R10 0        ; R10 := 0.000000
+ 41 [-]: CONST     R10 0        ; R10 := 0.000000
  42 [-]: MUL       R11 K13 R7   ; R11 := 4.000000 * R7
  43 [-]: CALL      R8 4 2       ; R8 := R8(R9,R10,R11)
  44 [-]: ADD       R3 R3 R8     ; R3 := R3 + R8
@@ -134,7 +134,7 @@
 ; Max Stack Size:  3
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0xcbd666e1
-  2 [-]: LOADK     R2 0         ; R2 := 0.000000
+  2 [-]: CONST     R2 0         ; R2 := 0.000000
   3 [-]: CALL      R1 2 1       ; R1(R2)
   4 [-]: GETUPVAL  R1 U0        ; R1 := U0
   5 [-]: MOVE      R2 R0        ; R2 := R0

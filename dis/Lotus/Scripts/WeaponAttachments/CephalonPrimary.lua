@@ -40,8 +40,8 @@
  15 [-]: TEST      R3 1         ; if R3 then PC := 23
  16 [-]: JMP       23           ; PC := 23
  17 [-]: SELF      R3 R2 K4     ; R4 := R2; R3 := R2[0xe7fe0b05]
- 18 [-]: LOADK     R5 0         ; R5 := 0.000000
- 19 [-]: LOADK     R6 2         ; R6 := 2.000000
+ 18 [-]: CONST     R5 0         ; R5 := 0.000000
+ 19 [-]: CONST     R6 2         ; R6 := 2.000000
  20 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
  21 [-]: SELF      R3 R2 K5     ; R4 := R2; R3 := R2[0x1db57c6b]
  22 [-]: CALL      R3 2 1       ; R3(R4)

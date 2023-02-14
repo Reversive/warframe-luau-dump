@@ -25,7 +25,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  10
 
-  1 [-]: LOADK     R3 5         ; R3 := 5.000000
+  1 [-]: CONST     R3 5         ; R3 := 5.000000
   2 [-]: NEWTABLE  R4 0 3       ; R4 := {}
   3 [-]: SELF      R5 R2 K1     ; R6 := R2; R5 := R2[0x3e242157]
   4 [-]: CALL      R5 2 2       ; R5 := R5(R6)
@@ -104,15 +104,15 @@
  28 [-]: SELF      R6 R1 K0     ; R7 := R1; R6 := R1[0xde321e6f]
  29 [-]: CALL      R6 2 2       ; R6 := R6(R7)
  30 [-]: SELF      R6 R6 K7     ; R7 := R6; R6 := R6[0x5e6704ff]
- 31 [-]: LOADK     R8 79        ; R8 := 79.000000
- 32 [-]: LOADK     R9 2         ; R9 := 2.000000
+ 31 [-]: CONST     R8 80        ; R8 := 80.000000
+ 32 [-]: CONST     R9 3         ; R9 := 3.000000
  33 [-]: MOVE      R10 R4       ; R10 := R4
  34 [-]: CALL      R6 5 1       ; R6(R7,R8,R9,R10)
  35 [-]: SELF      R6 R1 K0     ; R7 := R1; R6 := R1[0xde321e6f]
  36 [-]: CALL      R6 2 2       ; R6 := R6(R7)
  37 [-]: SELF      R6 R6 K7     ; R7 := R6; R6 := R6[0x5e6704ff]
- 38 [-]: LOADK     R8 216       ; R8 := 216.000000
- 39 [-]: LOADK     R9 2         ; R9 := 2.000000
+ 38 [-]: CONST     R8 223       ; R8 := 223.000000
+ 39 [-]: CONST     R9 3         ; R9 := 3.000000
  40 [-]: MOVE      R10 R5       ; R10 := R5
  41 [-]: CALL      R6 5 1       ; R6(R7,R8,R9,R10)
  42 [-]: RETURN    R0 1         ; return 
@@ -157,15 +157,15 @@
  28 [-]: SELF      R6 R1 K0     ; R7 := R1; R6 := R1[0xde321e6f]
  29 [-]: CALL      R6 2 2       ; R6 := R6(R7)
  30 [-]: SELF      R6 R6 K7     ; R7 := R6; R6 := R6[0x12dd9da2]
- 31 [-]: LOADK     R8 79        ; R8 := 79.000000
- 32 [-]: LOADK     R9 2         ; R9 := 2.000000
+ 31 [-]: CONST     R8 80        ; R8 := 80.000000
+ 32 [-]: CONST     R9 3         ; R9 := 3.000000
  33 [-]: MOVE      R10 R4       ; R10 := R4
  34 [-]: CALL      R6 5 1       ; R6(R7,R8,R9,R10)
  35 [-]: SELF      R6 R1 K0     ; R7 := R1; R6 := R1[0xde321e6f]
  36 [-]: CALL      R6 2 2       ; R6 := R6(R7)
  37 [-]: SELF      R6 R6 K7     ; R7 := R6; R6 := R6[0x12dd9da2]
- 38 [-]: LOADK     R8 216       ; R8 := 216.000000
- 39 [-]: LOADK     R9 2         ; R9 := 2.000000
+ 38 [-]: CONST     R8 223       ; R8 := 223.000000
+ 39 [-]: CONST     R9 3         ; R9 := 3.000000
  40 [-]: MOVE      R10 R5       ; R10 := R5
  41 [-]: CALL      R6 5 1       ; R6(R7,R8,R9,R10)
  42 [-]: RETURN    R0 1         ; return 

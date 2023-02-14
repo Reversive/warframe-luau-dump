@@ -36,7 +36,7 @@
  13 [-]: SELF      R2 R1 K2     ; R3 := R1; R2 := R1[0x72d56f6b]
  14 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  15 [-]: SELF      R2 R2 K3     ; R3 := R2; R2 := R2[0x2d90ee66]
- 16 [-]: LOADK     R4 18        ; R4 := 18.000000
+ 16 [-]: CONST     R4 18        ; R4 := 18.000000
  17 [-]: CALL      R2 3 1       ; R2(R3,R4)
  18 [-]: RETURN    R0 1         ; return 
 

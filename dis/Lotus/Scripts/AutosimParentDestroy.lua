@@ -67,8 +67,8 @@
  13 [-]: GETTABLE  R5 R5 K6     ; R5 := R5["blue"]
  14 [-]: GETGLOBAL R6 K4        ; R6 := 0x82bf2571
  15 [-]: GETTABLE  R6 R6 K7     ; R6 := R6["green"]
- 16 [-]: LOADK     R7 0         ; R7 := 0.500000
- 17 [-]: LOADBOOL  R8 1 0       ; R8 := true
+ 16 [-]: CONST     R7 0         ; R7 := 0.500000
+ 17 [-]: LOADKB    R8 1 0       ; R8 := true
  18 [-]: CALL      R1 8 1       ; R1(R2,R3,R4,R5,R6,R7,R8)
  19 [-]: RETURN    R0 1         ; return 
 
@@ -129,7 +129,7 @@
  23 [-]: GETGLOBAL R7 K5        ; R7 := 0x82bf2571
  24 [-]: GETTABLE  R7 R7 K10    ; R7 := R7["alpha"]
  25 [-]: DIV       R7 R7 K7     ; R7 := R7 / 255.000000
- 26 [-]: LOADBOOL  R8 1 0       ; R8 := true
+ 26 [-]: LOADKB    R8 1 0       ; R8 := true
  27 [-]: CALL      R1 8 1       ; R1(R2,R3,R4,R5,R6,R7,R8)
  28 [-]: RETURN    R0 1         ; return 
 
@@ -159,13 +159,13 @@
  14 [-]: SELF      R6 R0 K4     ; R7 := R0; R6 := R0[0xcddc3abb]
  15 [-]: SUB       R8 R4 K5     ; R8 := R4 - 1.000000
  16 [-]: MOVE      R9 R5        ; R9 := R5
- 17 [-]: LOADBOOL  R10 0 0      ; R10 := false
+ 17 [-]: LOADKB    R10 0 0      ; R10 := false
  18 [-]: CALL      R6 5 1       ; R6(R7,R8,R9,R10)
  19 [-]: TFORLOOP  R1 2         ; R4,R5 :=  R1(R2,R3); if R4 ~= nil then begin PC = 14; R3 := R4 end
  20 [-]: JMP       14           ; PC := 14
  21 [-]: JMP       25           ; PC := 25
  22 [-]: SELF      R6 R0 K6     ; R7 := R0; R6 := R0[0x043dad9d]
- 23 [-]: LOADBOOL  R8 0 0       ; R8 := false
+ 23 [-]: LOADKB    R8 0 0       ; R8 := false
  24 [-]: CALL      R6 3 1       ; R6(R7,R8)
  25 [-]: RETURN    R0 1         ; return 
 

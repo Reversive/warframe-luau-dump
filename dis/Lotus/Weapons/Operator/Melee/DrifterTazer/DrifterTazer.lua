@@ -29,7 +29,7 @@
   6 [-]: TEST      R2 1         ; if R2 then PC := 14
   7 [-]: JMP       14           ; PC := 14
   8 [-]: SELF      R2 R1 K2     ; R3 := R1; R2 := R1[0xe1dbaaca]
-  9 [-]: LOADK     R4 0         ; R4 := 0.000000
+  9 [-]: CONST     R4 0         ; R4 := 0.000000
  10 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
  11 [-]: SELF      R3 R2 K3     ; R4 := R2; R3 := R2[0xac6b7a89]
  12 [-]: GETGLOBAL R5 K4        ; R5 := 0xfe3910fb

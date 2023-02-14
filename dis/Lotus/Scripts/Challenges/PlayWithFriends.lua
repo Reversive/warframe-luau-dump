@@ -49,7 +49,7 @@
  21 [-]: CALL      R7 0 2       ; R7 := R7(R8,...)
  22 [-]: TEST      R7 0         ; if not R7 then PC := 27
  23 [-]: JMP       27           ; PC := 27
- 24 [-]: LOADBOOL  R7 1 0       ; R7 := true
+ 24 [-]: LOADKB    R7 1 0       ; R7 := true
  25 [-]: RETURN    R7 2         ; return R7
  26 [-]: JMP       39           ; PC := 39
  27 [-]: SELF      R7 R6 K2     ; R8 := R6; R7 := R6[0xf0631fa5]
@@ -62,11 +62,11 @@
  34 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
  35 [-]: TEST      R8 0         ; if not R8 then PC := 39
  36 [-]: JMP       39           ; PC := 39
- 37 [-]: LOADBOOL  R8 1 0       ; R8 := true
+ 37 [-]: LOADKB    R8 1 0       ; R8 := true
  38 [-]: RETURN    R8 2         ; return R8
  39 [-]: TFORLOOP  R2 2         ; R5,R6 :=  R2(R3,R4); if R5 ~= nil then begin PC = 13; R4 := R5 end
  40 [-]: JMP       13           ; PC := 13
- 41 [-]: LOADBOOL  R8 0 0       ; R8 := false
+ 41 [-]: LOADKB    R8 0 0       ; R8 := false
  42 [-]: RETURN    R8 2         ; return R8
  43 [-]: RETURN    R0 1         ; return 
 
@@ -98,8 +98,8 @@
  16 [-]: GETGLOBAL R4 K6        ; R4 := 0x64fb1586
  17 [-]: GETGLOBAL R5 K2        ; R5 := 0x850acbc1
  18 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 19 [-]: LOADK     R5 1         ; R5 := 1.000000
- 20 [-]: LOADBOOL  R6 1 0       ; R6 := true
+ 19 [-]: CONST     R5 1         ; R5 := 1.000000
+ 20 [-]: LOADKB    R6 1 0       ; R6 := true
  21 [-]: CALL      R2 5 2       ; R2 := R2(R3,R4,R5,R6)
  22 [-]: EQ        0 R2 K7      ; if R2 ~= 1.000000 then PC := 30
  23 [-]: JMP       30           ; PC := 30
@@ -109,7 +109,7 @@
  27 [-]: GETUPVAL  R2 U0        ; R2 := U0
  28 [-]: CALL      R2 1 2       ; R2 := R2()
  29 [-]: RETURN    R2 2         ; return R2
- 30 [-]: LOADBOOL  R2 0 0       ; R2 := false
+ 30 [-]: LOADKB    R2 0 0       ; R2 := false
  31 [-]: RETURN    R2 2         ; return R2
  32 [-]: RETURN    R0 1         ; return 
 

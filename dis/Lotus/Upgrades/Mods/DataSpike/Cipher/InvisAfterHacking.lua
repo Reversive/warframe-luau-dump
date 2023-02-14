@@ -82,7 +82,7 @@
  23 [-]: SUB       R4 R4 R5     ; R4 := R4 - R5
  24 [-]: SETTABLE  R3 R2 R4     ; R3[R2] := R4
  25 [-]: GETGLOBAL R3 K7        ; R3 := 0xcbd666e1
- 26 [-]: LOADK     R4 0         ; R4 := 0.000000
+ 26 [-]: CONST     R4 0         ; R4 := 0.000000
  27 [-]: CALL      R3 2 1       ; R3(R4)
  28 [-]: JMP       11           ; PC := 11
  29 [-]: SELF      R3 R0 K8     ; R4 := R0; R3 := R0[0xa5e492d4]
@@ -91,9 +91,9 @@
  32 [-]: JMP       39           ; PC := 39
  33 [-]: SELF      R3 R0 K9     ; R4 := R0; R3 := R0[0x659d451f]
  34 [-]: GETGLOBAL R5 K10       ; R5 := 0xc537e3c9
- 35 [-]: LOADBOOL  R6 0 0       ; R6 := false
- 36 [-]: LOADK     R7 0         ; R7 := 0.000000
- 37 [-]: LOADBOOL  R8 0 0       ; R8 := false
+ 35 [-]: LOADKB    R6 0 0       ; R6 := false
+ 36 [-]: CONST     R7 0         ; R7 := 0.000000
+ 37 [-]: LOADKB    R8 0 0       ; R8 := false
  38 [-]: CALL      R3 6 1       ; R3(R4,R5,R6,R7,R8)
  39 [-]: GETUPVAL  R3 U0        ; R3 := U0
  40 [-]: GETTABLE  R3 R3 K11    ; R3 := R3[0x21476c5e]
@@ -144,9 +144,9 @@
  28 [-]: JMP       35           ; PC := 35
  29 [-]: SELF      R8 R0 K6     ; R9 := R0; R8 := R0[0x659d451f]
  30 [-]: GETGLOBAL R10 K7       ; R10 := 0x5113cbdd
- 31 [-]: LOADBOOL  R11 0 0      ; R11 := false
- 32 [-]: LOADK     R12 0        ; R12 := 0.000000
- 33 [-]: LOADBOOL  R13 0 0      ; R13 := false
+ 31 [-]: LOADKB    R11 0 0      ; R11 := false
+ 32 [-]: CONST     R12 0        ; R12 := 0.000000
+ 33 [-]: LOADKB    R13 0 0      ; R13 := false
  34 [-]: CALL      R8 6 1       ; R8(R9,R10,R11,R12,R13)
  35 [-]: GETGLOBAL R8 K8        ; R8 := 0x89326c93
  36 [-]: SELF      R8 R8 K9     ; R9 := R8; R8 := R8[0x05909209]
@@ -183,8 +183,8 @@
  67 [-]: SETTABLE  R9 K24 R8    ; R9["buffData"] := R8
  68 [-]: SELF      R10 R0 K25   ; R11 := R0; R10 := R0[0x37e45fb5]
  69 [-]: MOVE      R12 R9       ; R12 := R9
- 70 [-]: LOADBOOL  R13 1 0      ; R13 := true
- 71 [-]: LOADBOOL  R14 0 0      ; R14 := false
+ 70 [-]: LOADKB    R13 1 0      ; R13 := true
+ 71 [-]: LOADKB    R14 0 0      ; R14 := false
  72 [-]: CALL      R10 5 1      ; R10(R11,R12,R13,R14)
  73 [-]: GETGLOBAL R10 K2       ; R10 := _T
  74 [-]: GETTABLE  R10 R10 K3   ; R10 := R10["invisAfterHacking"]
@@ -195,7 +195,7 @@
  79 [-]: GETGLOBAL R12 K27      ; R12 := 0x0469f296
  80 [-]: LOADK     R13 K28      ; R13 := "TimedInvis"
  81 [-]: CALL      R12 2 2      ; R12 := R12(R13)
- 82 [-]: LOADBOOL  R13 0 0      ; R13 := false
+ 82 [-]: LOADKB    R13 0 0      ; R13 := false
  83 [-]: CALL      R10 4 1      ; R10(R11,R12,R13)
  84 [-]: RETURN    R0 1         ; return 
 

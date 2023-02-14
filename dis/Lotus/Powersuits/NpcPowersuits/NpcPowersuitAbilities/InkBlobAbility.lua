@@ -31,11 +31,11 @@
   4 [-]: CALL      R2 2 2       ; R2 := R2(R3)
   5 [-]: LT        1 R2 K2      ; if R2 < 1.000000 then PC := 8
   6 [-]: JMP       8            ; PC := 8
-  7 [-]: LOADBOOL  R2 0 1       ; R2 := false; PC := 8
-  8 [-]: LOADBOOL  R2 1 0       ; R2 := true
+  7 [-]: LOADKB    R2 0 1       ; R2 := false; PC := 8
+  8 [-]: LOADKB    R2 1 0       ; R2 := true
   9 [-]: EQ        0 R2 K3      ; if R2 ~= true then PC := 13
  10 [-]: JMP       13           ; PC := 13
- 11 [-]: LOADK     R3 1         ; R3 := 1.000000
+ 11 [-]: CONST     R3 1         ; R3 := 1.000000
  12 [-]: RETURN    R3 2         ; return R3
  13 [-]: SELF      R3 R1 K0     ; R4 := R1; R3 := R1[0xfa9e477f]
  14 [-]: CALL      R3 2 2       ; R3 := R3(R4)
@@ -58,9 +58,9 @@
  31 [-]: SELF      R4 R0 K9     ; R5 := R0; R4 := R0[0x48d05257]
  32 [-]: GETTABLE  R6 R3 K6     ; R6 := R3["entity"]
  33 [-]: CALL      R4 3 1       ; R4(R5,R6)
- 34 [-]: LOADK     R4 1         ; R4 := 1.000000
+ 34 [-]: CONST     R4 1         ; R4 := 1.000000
  35 [-]: RETURN    R4 2         ; return R4
- 36 [-]: LOADK     R4 0         ; R4 := 0.000000
+ 36 [-]: CONST     R4 0         ; R4 := 0.000000
  37 [-]: RETURN    R4 2         ; return R4
  38 [-]: RETURN    R0 1         ; return 
 
@@ -101,9 +101,9 @@
  25 [-]: SELF      R6 R5 K8     ; R7 := R5; R6 := R5[0xc1595bd5]
  26 [-]: GETGLOBAL R8 K9        ; R8 := gEntityType
  27 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
- 28 [-]: LOADK     R7 1         ; R7 := 1.000000
+ 28 [-]: CONST     R7 1         ; R7 := 1.000000
  29 [-]: LEN       R8 R6        ; R8 := # R6
- 30 [-]: LOADK     R9 1         ; R9 := 1.000000
+ 30 [-]: CONST     R9 1         ; R9 := 1.000000
  31 [-]: FORPREP   R7 41        ; R7 -= R9; PC := 41
  32 [-]: GETGLOBAL R11 K6       ; R11 := 0x7b998233
  33 [-]: GETTABLE  R12 R6 R10   ; R12 := R6[R10]

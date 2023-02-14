@@ -19,10 +19,10 @@
  10 [-]: GETGLOBAL R3 K4        ; R3 := 0x0469f296
  11 [-]: LOADK     R4 K5        ; R4 := "CAPITAL_SHIP_STATE"
  12 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 13 [-]: LOADK     R4 1         ; R4 := 1.000000
- 14 [-]: LOADK     R5 2         ; R5 := 2.000000
- 15 [-]: LOADK     R6 3         ; R6 := 3.000000
- 16 [-]: LOADK     R7 4         ; R7 := 4.000000
+ 13 [-]: CONST     R4 1         ; R4 := 1.000000
+ 14 [-]: CONST     R5 2         ; R5 := 2.000000
+ 15 [-]: CONST     R6 3         ; R6 := 3.000000
+ 16 [-]: CONST     R7 4         ; R7 := 4.000000
  17 [-]: GETGLOBAL R8 K6        ; R8 := INVALID
  18 [-]: LOADNIL   R9 R9        ; R9 := nil
  19 [-]: LOADK     R10 K7       ; R10 := 0.100000
@@ -157,9 +157,9 @@
   2 [-]: GETUPVAL  R1 U1        ; R1 := U1
   3 [-]: EQ        0 R0 R1      ; if R0 ~= R1 then PC := 7
   4 [-]: JMP       7            ; PC := 7
-  5 [-]: LOADBOOL  R0 1 0       ; R0 := true
+  5 [-]: LOADKB    R0 1 0       ; R0 := true
   6 [-]: RETURN    R0 2         ; return R0
-  7 [-]: LOADBOOL  R0 0 0       ; R0 := false
+  7 [-]: LOADKB    R0 0 0       ; R0 := false
   8 [-]: RETURN    R0 2         ; return R0
   9 [-]: RETURN    R0 1         ; return 
 
@@ -176,7 +176,7 @@
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0xbe190284
   2 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1[0x751f061d]
   3 [-]: GETUPVAL  R3 U0        ; R3 := U0
-  4 [-]: LOADK     R4 1         ; R4 := 1.000000
+  4 [-]: CONST     R4 1         ; R4 := 1.000000
   5 [-]: CALL      R1 4 1       ; R1(R2,R3,R4)
   6 [-]: RETURN    R0 1         ; return 
 
@@ -206,9 +206,9 @@
  14 [-]: GETGLOBAL R1 K2        ; R1 := 0x89326c93
  15 [-]: SELF      R1 R1 K3     ; R2 := R1; R1 := R1[0x8b5b1f58]
  16 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 17 [-]: LOADK     R2 1         ; R2 := 1.000000
+ 17 [-]: CONST     R2 1         ; R2 := 1.000000
  18 [-]: LEN       R3 R1        ; R3 := # R1
- 19 [-]: LOADK     R4 1         ; R4 := 1.000000
+ 19 [-]: CONST     R4 1         ; R4 := 1.000000
  20 [-]: FORPREP   R2 35        ; R2 -= R4; PC := 35
  21 [-]: GETTABLE  R6 R1 R5     ; R6 := R1[R5]
  22 [-]: GETGLOBAL R7 K4        ; R7 := 0x7b998233
@@ -227,25 +227,25 @@
  35 [-]: FORLOOP   R2 21        ; R2 += R4; if R2 <= R3 then begin PC := 21; R5 := R2 end
  36 [-]: GETUPVAL  R7 U4        ; R7 := U4
  37 [-]: SELF      R7 R7 K6     ; R8 := R7; R7 := R7[0x2faead12]
- 38 [-]: LOADBOOL  R9 1 0       ; R9 := true
+ 38 [-]: LOADKB    R9 1 0       ; R9 := true
  39 [-]: MOVE      R10 R0       ; R10 := R0
  40 [-]: CALL      R7 4 1       ; R7(R8,R9,R10)
  41 [-]: GETUPVAL  R7 U4        ; R7 := U4
  42 [-]: SELF      R7 R7 K7     ; R8 := R7; R7 := R7[0xd5bf651f]
  43 [-]: GETGLOBAL R9 K8        ; R9 := 0x4c1bf5be
- 44 [-]: LOADBOOL  R10 0 0      ; R10 := false
+ 44 [-]: LOADKB    R10 0 0      ; R10 := false
  45 [-]: CALL      R7 4 1       ; R7(R8,R9,R10)
  46 [-]: GETUPVAL  R7 U4        ; R7 := U4
  47 [-]: SELF      R7 R7 K9     ; R8 := R7; R7 := R7[0x383d2e7d]
- 48 [-]: LOADBOOL  R9 1 0       ; R9 := true
+ 48 [-]: LOADKB    R9 1 0       ; R9 := true
  49 [-]: CALL      R7 3 1       ; R7(R8,R9)
  50 [-]: GETUPVAL  R7 U4        ; R7 := U4
  51 [-]: SELF      R7 R7 K10    ; R8 := R7; R7 := R7[0x37ca85c8]
- 52 [-]: LOADK     R9 60        ; R9 := 60.000000
+ 52 [-]: CONST     R9 60        ; R9 := 60.000000
  53 [-]: CALL      R7 3 1       ; R7(R8,R9)
  54 [-]: GETUPVAL  R7 U4        ; R7 := U4
  55 [-]: SELF      R7 R7 K11    ; R8 := R7; R7 := R7[0xe603bab2]
- 56 [-]: LOADBOOL  R9 1 0       ; R9 := true
+ 56 [-]: LOADKB    R9 1 0       ; R9 := true
  57 [-]: CALL      R7 3 1       ; R7(R8,R9)
  58 [-]: JMP       63           ; PC := 63
  59 [-]: GETUPVAL  R7 U0        ; R7 := U0
@@ -288,7 +288,7 @@
  10 [-]: TEST      R1 1         ; if R1 then PC := 16
  11 [-]: JMP       16           ; PC := 16
  12 [-]: GETGLOBAL R1 K4        ; R1 := 0xcbd666e1
- 13 [-]: LOADK     R2 0         ; R2 := 0.000000
+ 13 [-]: CONST     R2 0         ; R2 := 0.000000
  14 [-]: CALL      R1 2 1       ; R1(R2)
  15 [-]: JMP       7            ; PC := 7
  16 [-]: GETGLOBAL R1 K5        ; R1 := 0x7b998233

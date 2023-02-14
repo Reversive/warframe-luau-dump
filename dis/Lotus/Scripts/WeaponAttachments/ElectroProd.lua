@@ -30,7 +30,7 @@
   7 [-]: CALL      R2 2 2       ; R2 := R2(R3)
   8 [-]: MOVE      R1 R2        ; R1 := R2
   9 [-]: GETGLOBAL R2 K2        ; R2 := 0xcbd666e1
- 10 [-]: LOADK     R3 0         ; R3 := 0.000000
+ 10 [-]: CONST     R3 0         ; R3 := 0.000000
  11 [-]: CALL      R2 2 1       ; R2(R3)
  12 [-]: JMP       1            ; PC := 1
  13 [-]: LOADNIL   R2 R2        ; R2 := nil
@@ -43,7 +43,7 @@
  20 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  21 [-]: MOVE      R2 R3        ; R2 := R3
  22 [-]: GETGLOBAL R3 K2        ; R3 := 0xcbd666e1
- 23 [-]: LOADK     R4 0         ; R4 := 0.000000
+ 23 [-]: CONST     R4 0         ; R4 := 0.000000
  24 [-]: CALL      R3 2 1       ; R3(R4)
  25 [-]: JMP       14           ; PC := 14
  26 [-]: GETGLOBAL R3 K4        ; R3 := 0xbe190284
@@ -54,7 +54,7 @@
  31 [-]: JMP       33           ; PC := 33
  32 [-]: RETURN    R0 1         ; return 
  33 [-]: LOADNIL   R3 R3        ; R3 := nil
- 34 [-]: LOADK     R4 1         ; R4 := 1.000000
+ 34 [-]: CONST     R4 1         ; R4 := 1.000000
  35 [-]: GETGLOBAL R5 K0        ; R5 := 0x7b998233
  36 [-]: MOVE      R6 R0        ; R6 := R0
  37 [-]: CALL      R5 2 2       ; R5 := R5(R6)

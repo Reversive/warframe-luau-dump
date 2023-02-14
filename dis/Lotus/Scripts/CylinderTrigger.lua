@@ -33,8 +33,8 @@
  10 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  11 [-]: LE        1 R2 R3      ; if R2 <= R3 then PC := 14
  12 [-]: JMP       14           ; PC := 14
- 13 [-]: LOADBOOL  R2 0 1       ; R2 := false; PC := 14
- 14 [-]: LOADBOOL  R2 1 0       ; R2 := true
+ 13 [-]: LOADKB    R2 0 1       ; R2 := false; PC := 14
+ 14 [-]: LOADKB    R2 1 0       ; R2 := true
  15 [-]: RETURN    R2 2         ; return R2
  16 [-]: RETURN    R0 1         ; return 
 

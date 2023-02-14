@@ -7,7 +7,7 @@
 ; Is_vararg:       2
 ; Max Stack Size:  4
 
-  1 [-]: LOADK     R0 0         ; R0 := 0.500000
+  1 [-]: CONST     R0 0         ; R0 := 0.500000
   2 [-]: CLOSURE   R1 0         ; R1 := closure(Function #1)
   3 [-]: CLOSURE   R2 1         ; R2 := closure(Function #2)
   4 [-]: MOVE      R0 R1        ; R0 := R1
@@ -138,7 +138,7 @@
   3 [-]: GETGLOBAL R5 K2        ; R5 := 0x0469f296
   4 [-]: LOADK     R6 K3        ; R6 := "CrpAirlockFull"
   5 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-  6 [-]: LOADK     R6 0         ; R6 := 0.000000
+  6 [-]: CONST     R6 0         ; R6 := 0.000000
   7 [-]: CALL      R3 4 2       ; R3 := R3(R4,R5,R6)
   8 [-]: LT        0 K4 R3      ; if 0.000000 >= R3 then PC := 33
   9 [-]: JMP       33           ; PC := 33
@@ -163,7 +163,7 @@
  28 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
  29 [-]: GETGLOBAL R4 K6        ; R4 := _T
  30 [-]: SETTABLE  R4 K13 K14   ; R4["ActiveTacticalMarker"] := nil
- 31 [-]: LOADBOOL  R4 0 0       ; R4 := false
+ 31 [-]: LOADKB    R4 0 0       ; R4 := false
  32 [-]: RETURN    R4 2         ; return R4
  33 [-]: GETGLOBAL R4 K5        ; R4 := 0x7b998233
  34 [-]: MOVE      R5 R0        ; R5 := R0
@@ -172,9 +172,9 @@
  37 [-]: JMP       44           ; PC := 44
  38 [-]: SELF      R4 R0 K15    ; R5 := R0; R4 := R0[0x659d451f]
  39 [-]: GETGLOBAL R6 K16       ; R6 := 0xd30ffd8d
- 40 [-]: LOADBOOL  R7 0 0       ; R7 := false
- 41 [-]: LOADK     R8 0         ; R8 := 0.000000
- 42 [-]: LOADBOOL  R9 0 0       ; R9 := false
+ 40 [-]: LOADKB    R7 0 0       ; R7 := false
+ 41 [-]: CONST     R8 0         ; R8 := 0.000000
+ 42 [-]: LOADKB    R9 0 0       ; R9 := false
  43 [-]: CALL      R4 6 1       ; R4(R5,R6,R7,R8,R9)
  44 [-]: GETGLOBAL R4 K17       ; R4 := 0x89326c93
  45 [-]: SELF      R4 R4 K18    ; R5 := R4; R4 := R4[0x7c1a0374]
@@ -203,9 +203,9 @@
  68 [-]: SELF      R8 R5 K24    ; R9 := R5; R8 := R5[0xb1c85409]
  69 [-]: SELF      R10 R0 K25   ; R11 := R0; R10 := R0[0xebfba9e4]
  70 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 71 [-]: LOADK     R11 -1       ; R11 := -1.000000
+ 71 [-]: CONST     R11 -1       ; R11 := -1.000000
  72 [-]: MUL       R12 K26 R7   ; R12 := 2.000000 * R7
- 73 [-]: LOADK     R13 0        ; R13 := 0.000000
+ 73 [-]: CONST     R13 0        ; R13 := 0.000000
  74 [-]: CALL      R8 6 1       ; R8(R9,R10,R11,R12,R13)
  75 [-]: LE        0 R6 K27     ; if R6 > 0.250000 then PC := 95
  76 [-]: JMP       95           ; PC := 95
@@ -228,7 +228,7 @@
  93 [-]: MOVE      R10 R7       ; R10 := R7
  94 [-]: CALL      R8 3 1       ; R8(R9,R10)
  95 [-]: GETGLOBAL R8 K31       ; R8 := 0xcbd666e1
- 96 [-]: LOADK     R9 0         ; R9 := 0.000000
+ 96 [-]: CONST     R9 0         ; R9 := 0.000000
  97 [-]: CALL      R8 2 1       ; R8(R9)
  98 [-]: JMP       50           ; PC := 50
  99 [-]: GETGLOBAL R8 K5        ; R8 := 0x7b998233
@@ -237,7 +237,7 @@
 102 [-]: TEST      R8 1         ; if R8 then PC := 115
 103 [-]: JMP       115          ; PC := 115
 104 [-]: SELF      R8 R5 K23    ; R9 := R5; R8 := R5[0x47de28d6]
-105 [-]: LOADK     R10 1        ; R10 := 1.000000
+105 [-]: CONST     R10 1        ; R10 := 1.000000
 106 [-]: CALL      R8 3 1       ; R8(R9,R10)
 107 [-]: GETGLOBAL R8 K5        ; R8 := 0x7b998233
 108 [-]: MOVE      R9 R4        ; R9 := R4
@@ -245,7 +245,7 @@
 110 [-]: TEST      R8 1         ; if R8 then PC := 115
 111 [-]: JMP       115          ; PC := 115
 112 [-]: SELF      R8 R4 K30    ; R9 := R4; R8 := R4[0xb6df3e50]
-113 [-]: LOADK     R10 0        ; R10 := 0.000000
+113 [-]: CONST     R10 0        ; R10 := 0.000000
 114 [-]: CALL      R8 3 1       ; R8(R9,R10)
 115 [-]: GETGLOBAL R8 K5        ; R8 := 0x7b998233
 116 [-]: GETGLOBAL R9 K6        ; R9 := _T
@@ -259,9 +259,9 @@
 124 [-]: CALL      R8 2 1       ; R8(R9)
 125 [-]: GETUPVAL  R8 U1        ; R8 := U1
 126 [-]: LOADNIL   R9 R11       ; R9 := R10 := R11 := nil
-127 [-]: LOADBOOL  R12 1 0      ; R12 := true
+127 [-]: LOADKB    R12 1 0      ; R12 := true
 128 [-]: CALL      R8 5 1       ; R8(R9,R10,R11,R12)
-129 [-]: LOADBOOL  R8 1 0       ; R8 := true
+129 [-]: LOADKB    R8 1 0       ; R8 := true
 130 [-]: RETURN    R8 2         ; return R8
 131 [-]: RETURN    R0 1         ; return 
 

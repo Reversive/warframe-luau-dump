@@ -30,7 +30,7 @@
   5 [-]: GETGLOBAL R6 K3        ; R6 := 0x0469f296
   6 [-]: LOADK     R7 K4        ; R7 := "ChangeWeaponBehavior"
   7 [-]: CALL      R6 2 2       ; R6 := R6(R7)
-  8 [-]: LOADBOOL  R7 0 0       ; R7 := false
+  8 [-]: LOADKB    R7 0 0       ; R7 := false
   9 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
  10 [-]: RETURN    R0 1         ; return 
 
@@ -47,7 +47,7 @@
   1 [-]: SELF      R1 R0 K0     ; R2 := R0; R1 := R0[0xde321e6f]
   2 [-]: CALL      R1 2 2       ; R1 := R1(R2)
   3 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1[0x881b6b90]
-  4 [-]: LOADK     R3 0         ; R3 := 0.000000
+  4 [-]: CONST     R3 0         ; R3 := 0.000000
   5 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
   6 [-]: GETGLOBAL R2 K3        ; R2 := 0x7b998233
   7 [-]: MOVE      R3 R1        ; R3 := R1
@@ -55,7 +55,7 @@
   9 [-]: TEST      R2 1         ; if R2 then PC := 14
  10 [-]: JMP       14           ; PC := 14
  11 [-]: SELF      R2 R1 K4     ; R3 := R1; R2 := R1[0x7c68db20]
- 12 [-]: LOADK     R4 1         ; R4 := 1.000000
+ 12 [-]: CONST     R4 1         ; R4 := 1.000000
  13 [-]: CALL      R2 3 1       ; R2(R3,R4)
  14 [-]: GETGLOBAL R2 K5        ; R2 := 0xcbd666e1
  15 [-]: GETGLOBAL R3 K6        ; R3 := 0x6dca1a37
@@ -75,7 +75,7 @@
  29 [-]: TEST      R2 1         ; if R2 then PC := 34
  30 [-]: JMP       34           ; PC := 34
  31 [-]: SELF      R2 R1 K4     ; R3 := R1; R2 := R1[0x7c68db20]
- 32 [-]: LOADK     R4 0         ; R4 := 0.000000
+ 32 [-]: CONST     R4 0         ; R4 := 0.000000
  33 [-]: CALL      R2 3 1       ; R2(R3,R4)
  34 [-]: RETURN    R0 1         ; return 
 

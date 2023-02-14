@@ -35,10 +35,10 @@
  10 [-]: CALL      R3 0 2       ; R3 := R3(R4,...)
  11 [-]: TEST      R3 1         ; if R3 then PC := 14
  12 [-]: JMP       14           ; PC := 14
- 13 [-]: LOADK     R1 1         ; R1 := 1.000000
+ 13 [-]: CONST     R1 1         ; R1 := 1.000000
  14 [-]: EQ        0 R1 K2      ; if R1 ~= nil then PC := 17
  15 [-]: JMP       17           ; PC := 17
- 16 [-]: LOADK     R1 1         ; R1 := 1.000000
+ 16 [-]: CONST     R1 1         ; R1 := 1.000000
  17 [-]: SELF      R3 R2 K3     ; R4 := R2; R3 := R2[0x2b54251b]
  18 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  19 [-]: SELF      R4 R2 K4     ; R5 := R2; R4 := R2[0x28e744cf]
@@ -73,9 +73,9 @@
  48 [-]: GETGLOBAL R6 K10       ; R6 := 0x89326c93
  49 [-]: SELF      R6 R6 K11    ; R7 := R6; R6 := R6[0x7d108ddb]
  50 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 51 [-]: LOADK     R7 1         ; R7 := 1.000000
+ 51 [-]: CONST     R7 1         ; R7 := 1.000000
  52 [-]: LEN       R8 R6        ; R8 := # R6
- 53 [-]: LOADK     R9 1         ; R9 := 1.000000
+ 53 [-]: CONST     R9 1         ; R9 := 1.000000
  54 [-]: FORPREP   R7 152       ; R7 -= R9; PC := 152
  55 [-]: GETTABLE  R11 R6 R10   ; R11 := R6[R10]
  56 [-]: SELF      R11 R11 K12  ; R12 := R11; R11 := R11[0x8b72b36e]
@@ -87,16 +87,16 @@
  62 [-]: CALL      R12 2 2      ; R12 := R12(R13)
  63 [-]: TEST      R12 1        ; if R12 then PC := 152
  64 [-]: JMP       152          ; PC := 152
- 65 [-]: LOADK     R12 1        ; R12 := 1.000000
+ 65 [-]: CONST     R12 1        ; R12 := 1.000000
  66 [-]: LEN       R13 R5       ; R13 := # R5
- 67 [-]: LOADK     R14 1        ; R14 := 1.000000
+ 67 [-]: CONST     R14 1        ; R14 := 1.000000
  68 [-]: FORPREP   R12 151      ; R12 -= R14; PC := 151
  69 [-]: GETGLOBAL R16 K6       ; R16 := _T
  70 [-]: GETTABLE  R16 R16 K7   ; R16 := R16["harlequinObjectChange"]
  71 [-]: GETTABLE  R16 R16 R11  ; R16 := R16[R11]
- 72 [-]: LOADK     R17 1        ; R17 := 1.000000
+ 72 [-]: CONST     R17 1        ; R17 := 1.000000
  73 [-]: LEN       R18 R16      ; R18 := # R16
- 74 [-]: LOADK     R19 1        ; R19 := 1.000000
+ 74 [-]: CONST     R19 1        ; R19 := 1.000000
  75 [-]: FORPREP   R17 150      ; R17 -= R19; PC := 150
  76 [-]: GETTABLE  R21 R5 R15   ; R21 := R5[R15]
  77 [-]: GETTABLE  R22 R16 R20  ; R22 := R16[R20]
@@ -160,16 +160,16 @@
 135 [-]: GETTABLE  R27 R16 R20  ; R27 := R16[R20]
 136 [-]: GETTABLE  R27 R27 K15  ; R27 := R27["params"]
 137 [-]: GETTABLE  R27 R27 K26  ; R27 := R27["consoleRange"]
-138 [-]: LOADK     R28 500      ; R28 := 500.000000
-139 [-]: LOADK     R29 7        ; R29 := 7.000000
+138 [-]: CONST     R28 500      ; R28 := 500.000000
+139 [-]: CONST     R29 7        ; R29 := 7.000000
 140 [-]: GETTABLE  R30 R5 R15   ; R30 := R5[R15]
 141 [-]: MOVE      R31 R21      ; R31 := R21
-142 [-]: LOADK     R32 19       ; R32 := 19.000000
-143 [-]: LOADBOOL  R33 1 0      ; R33 := true
-144 [-]: LOADBOOL  R34 1 0      ; R34 := true
-145 [-]: LOADBOOL  R35 0 0      ; R35 := false
-146 [-]: LOADK     R36 1        ; R36 := 1.000000
-147 [-]: LOADBOOL  R37 1 0      ; R37 := true
+142 [-]: CONST     R32 19       ; R32 := 19.000000
+143 [-]: LOADKB    R33 1 0      ; R33 := true
+144 [-]: LOADKB    R34 1 0      ; R34 := true
+145 [-]: LOADKB    R35 0 0      ; R35 := false
+146 [-]: CONST     R36 1        ; R36 := 1.000000
+147 [-]: LOADKB    R37 1 0      ; R37 := true
 148 [-]: CALL      R22 16 1     ; R22(R23,R24,R25,R26,R27,R28,R29,R30,R31,R32,R33,R34,R35,R36,R37)
 149 [-]: RETURN    R0 1         ; return 
 150 [-]: FORLOOP   R17 76       ; R17 += R19; if R17 <= R18 then begin PC := 76; R20 := R17 end
@@ -178,7 +178,7 @@
 153 [-]: SELF      R22 R0 K20   ; R23 := R0; R22 := R0[0xde321e6f]
 154 [-]: CALL      R22 2 2      ; R22 := R22(R23)
 155 [-]: SELF      R22 R22 K28  ; R23 := R22; R22 := R22[0x8db2624f]
-156 [-]: LOADK     R24 50       ; R24 := 50.000000
+156 [-]: CONST     R24 50       ; R24 := 50.000000
 157 [-]: MOVE      R25 R0       ; R25 := R0
 158 [-]: GETGLOBAL R26 K29      ; R26 := 0x0469f296
 159 [-]: LOADK     R27 K30      ; R27 := "/Lotus/Language/Actions/HackXP"
@@ -243,7 +243,7 @@
  14 [-]: TEST      R2 0         ; if not R2 then PC := 20
  15 [-]: JMP       20           ; PC := 20
  16 [-]: GETGLOBAL R2 K5        ; R2 := 0xcbd666e1
- 17 [-]: LOADK     R3 0         ; R3 := 0.000000
+ 17 [-]: CONST     R3 0         ; R3 := 0.000000
  18 [-]: CALL      R2 2 1       ; R2(R3)
  19 [-]: JMP       12           ; PC := 12
  20 [-]: SELF      R2 R1 K6     ; R3 := R1; R2 := R1[0xf4e253b6]

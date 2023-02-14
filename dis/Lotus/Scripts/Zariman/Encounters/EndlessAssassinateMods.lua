@@ -8,7 +8,7 @@
 ; Max Stack Size:  2
 
   1 [-]: CLOSURE   R0 0         ; R0 := closure(Function #1)
-  2 [-]: SETGLOBAL R0 K0        ; GiveProtection := R0
+  2 [-]: SETGLOBAL R0 K0        ; GiveOverguard := R0
   3 [-]: RETURN    R0 1         ; return 
 
 
@@ -35,20 +35,20 @@
  12 [-]: TEST      R3 0         ; if not R3 then PC := 15
  13 [-]: JMP       15           ; PC := 15
  14 [-]: RETURN    R0 1         ; return 
- 15 [-]: SELF      R3 R2 K2     ; R4 := R2; R3 := R2[0xee409b3d]
+ 15 [-]: SELF      R3 R2 K2     ; R4 := R2; R3 := R2[0x4514b1e1]
  16 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  17 [-]: LE        0 R3 K3      ; if R3 > 0.000000 then PC := 31
  18 [-]: JMP       31           ; PC := 31
  19 [-]: GETGLOBAL R3 K4        ; R3 := 0xbe190284
  20 [-]: SELF      R3 R3 K5     ; R4 := R3; R3 := R3[0x0d10e037]
- 21 [-]: GETGLOBAL R5 K6        ; R5 := 0x810fcc70
- 22 [-]: LOADK     R6 5         ; R6 := 5.000000
+ 21 [-]: GETGLOBAL R5 K6        ; R5 := 0x724f5034
+ 22 [-]: CONST     R6 5         ; R6 := 5.000000
  23 [-]: MOVE      R7 R1        ; R7 := R1
  24 [-]: CALL      R3 5 2       ; R3 := R3(R4,R5,R6,R7)
- 25 [-]: SELF      R4 R2 K8     ; R5 := R2; R4 := R2[0xd61b73d9]
+ 25 [-]: SELF      R4 R2 K8     ; R5 := R2; R4 := R2[0x6466a515]
  26 [-]: MOVE      R6 R3        ; R6 := R3
  27 [-]: CALL      R4 3 1       ; R4(R5,R6)
- 28 [-]: SELF      R4 R2 K9     ; R5 := R2; R4 := R2[0xa963ee09]
+ 28 [-]: SELF      R4 R2 K9     ; R5 := R2; R4 := R2[0xd687233d]
  29 [-]: MOVE      R6 R3        ; R6 := R3
  30 [-]: CALL      R4 3 1       ; R4(R5,R6)
  31 [-]: RETURN    R0 1         ; return 

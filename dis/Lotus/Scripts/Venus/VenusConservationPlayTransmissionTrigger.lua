@@ -48,7 +48,7 @@
  21 [-]: CALL      R2 2 1       ; R2(R3)
  22 [-]: RETURN    R0 1         ; return 
  23 [-]: GETGLOBAL R2 K8        ; R2 := 0xcbd666e1
- 24 [-]: LOADK     R3 0         ; R3 := 0.500000
+ 24 [-]: CONST     R3 0         ; R3 := 0.500000
  25 [-]: CALL      R2 2 1       ; R2(R3)
  26 [-]: JMP       4            ; PC := 4
  27 [-]: RETURN    R0 1         ; return 

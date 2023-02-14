@@ -28,17 +28,17 @@
  19 [-]: GETGLOBAL R6 K5        ; R6 := 0x0469f296
  20 [-]: LOADK     R7 K8        ; R7 := "RJ_DS_NUM_DATA_TO_STEAL"
  21 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 22 [-]: LOADK     R7 1         ; R7 := 1.000000
- 23 [-]: LOADK     R8 2         ; R8 := 2.000000
- 24 [-]: LOADK     R9 3         ; R9 := 3.000000
- 25 [-]: LOADK     R10 4        ; R10 := 4.000000
- 26 [-]: LOADK     R11 5        ; R11 := 5.000000
- 27 [-]: LOADK     R12 6        ; R12 := 6.000000
+ 22 [-]: CONST     R7 1         ; R7 := 1.000000
+ 23 [-]: CONST     R8 2         ; R8 := 2.000000
+ 24 [-]: CONST     R9 3         ; R9 := 3.000000
+ 25 [-]: CONST     R10 4        ; R10 := 4.000000
+ 26 [-]: CONST     R11 5        ; R11 := 5.000000
+ 27 [-]: CONST     R12 6        ; R12 := 6.000000
  28 [-]: GETGLOBAL R13 K9       ; R13 := INVALID
  29 [-]: LOADNIL   R14 R14      ; R14 := nil
  30 [-]: LOADK     R15 K10      ; R15 := 0.100000
  31 [-]: LOADNIL   R16 R23      ; R16 := R17 := R18 := R19 := R20 := R21 := R22 := R23 := nil
- 32 [-]: LOADK     R24 0        ; R24 := 0.000000
+ 32 [-]: CONST     R24 0        ; R24 := 0.000000
  33 [-]: GETGLOBAL R25 K5       ; R25 := 0x0469f296
  34 [-]: LOADK     R26 K11      ; R26 := "RJSpaceConsoleObjectiveMarker"
  35 [-]: CALL      R25 2 2      ; R25 := R25(R26)
@@ -313,9 +313,9 @@
   2 [-]: GETUPVAL  R1 U1        ; R1 := U1
   3 [-]: EQ        0 R0 R1      ; if R0 ~= R1 then PC := 7
   4 [-]: JMP       7            ; PC := 7
-  5 [-]: LOADBOOL  R0 1 0       ; R0 := true
+  5 [-]: LOADKB    R0 1 0       ; R0 := true
   6 [-]: RETURN    R0 2         ; return R0
-  7 [-]: LOADBOOL  R0 0 0       ; R0 := false
+  7 [-]: LOADKB    R0 0 0       ; R0 := false
   8 [-]: RETURN    R0 2         ; return R0
   9 [-]: RETURN    R0 1         ; return 
 
@@ -333,9 +333,9 @@
   2 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0x8b5b1f58]
   3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
   4 [-]: NEWTABLE  R1 0 0       ; R1 := {}
-  5 [-]: LOADK     R2 1         ; R2 := 1.000000
+  5 [-]: CONST     R2 1         ; R2 := 1.000000
   6 [-]: LEN       R3 R0        ; R3 := # R0
-  7 [-]: LOADK     R4 1         ; R4 := 1.000000
+  7 [-]: CONST     R4 1         ; R4 := 1.000000
   8 [-]: FORPREP   R2 32        ; R2 -= R4; PC := 32
   9 [-]: GETTABLE  R6 R0 R5     ; R6 := R0[R5]
  10 [-]: GETGLOBAL R7 K2        ; R7 := 0x7b998233
@@ -381,7 +381,7 @@
   5 [-]: LT        0 K1 R1      ; if 0.000000 >= R1 then PC := 46
   6 [-]: JMP       46           ; PC := 46
   7 [-]: GETGLOBAL R1 K2        ; R1 := 0x55730e1a
-  8 [-]: LOADK     R2 1         ; R2 := 1.000000
+  8 [-]: CONST     R2 1         ; R2 := 1.000000
   9 [-]: GETUPVAL  R3 U0        ; R3 := U0
  10 [-]: LEN       R3 R3        ; R3 := # R3
  11 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
@@ -436,13 +436,13 @@
  60 [-]: MOVE      R6 R4        ; R6 := R4
  61 [-]: LOADK     R7 K11       ; R7 := "OnActivated"
  62 [-]: CALL      R5 3 1       ; R5(R6,R7)
- 63 [-]: LOADBOOL  R5 1 0       ; R5 := true
+ 63 [-]: LOADKB    R5 1 0       ; R5 := true
  64 [-]: RETURN    R5 2         ; return R5
  65 [-]: JMP       71           ; PC := 71
  66 [-]: GETGLOBAL R5 K12       ; R5 := 0xd644c2f1
  67 [-]: LOADK     R6 K13       ; R6 := "StealDataObjective.lua -- Couldn't find new terminal to set as mActiveObjectiveMarker"
  68 [-]: CALL      R5 2 1       ; R5(R6)
- 69 [-]: LOADBOOL  R5 0 0       ; R5 := false
+ 69 [-]: LOADKB    R5 0 0       ; R5 := false
  70 [-]: RETURN    R5 2         ; return R5
  71 [-]: RETURN    R0 1         ; return 
 
@@ -458,12 +458,12 @@
 
   1 [-]: GETUPVAL  R1 U0        ; R1 := U0
   2 [-]: SELF      R1 R1 K0     ; R2 := R1; R1 := R1[0x2faead12]
-  3 [-]: LOADBOOL  R3 0 0       ; R3 := false
+  3 [-]: LOADKB    R3 0 0       ; R3 := false
   4 [-]: CALL      R1 3 1       ; R1(R2,R3)
   5 [-]: GETGLOBAL R1 K1        ; R1 := 0xbe190284
   6 [-]: SELF      R1 R1 K2     ; R2 := R1; R1 := R1[0x751f061d]
   7 [-]: GETUPVAL  R3 U1        ; R3 := U1
-  8 [-]: LOADK     R4 1         ; R4 := 1.000000
+  8 [-]: CONST     R4 1         ; R4 := 1.000000
   9 [-]: CALL      R1 4 1       ; R1(R2,R3,R4)
  10 [-]: RETURN    R0 1         ; return 
 
@@ -572,11 +572,11 @@
  17 [-]: GETUPVAL  R0 U6        ; R0 := U6
  18 [-]: GETTABLE  R0 R0 K1     ; R0 := R0[0xa1df01d6]
  19 [-]: LOADK     R1 K2        ; R1 := "/Lotus/Language/Railjack/FindDataTerminal"
- 20 [-]: LOADK     R2 1         ; R2 := 1.000000
+ 20 [-]: CONST     R2 1         ; R2 := 1.000000
  21 [-]: CALL      R0 3 1       ; R0(R1,R2)
  22 [-]: GETUPVAL  R0 U7        ; R0 := U7
  23 [-]: SELF      R0 R0 K3     ; R1 := R0; R0 := R0[0x3e9890f4]
- 24 [-]: LOADBOOL  R2 0 0       ; R2 := false
+ 24 [-]: LOADKB    R2 0 0       ; R2 := false
  25 [-]: CALL      R0 3 1       ; R0(R1,R2)
  26 [-]: JMP       76           ; PC := 76
  27 [-]: GETUPVAL  R0 U8        ; R0 := U8
@@ -657,13 +657,13 @@
  15 [-]: GETGLOBAL R1 K4        ; R1 := 0xbe190284
  16 [-]: SELF      R1 R1 K5     ; R2 := R1; R1 := R1[0x0eb34c69]
  17 [-]: GETUPVAL  R3 U6        ; R3 := U6
- 18 [-]: LOADK     R4 0         ; R4 := 0.000000
+ 18 [-]: CONST     R4 0         ; R4 := 0.000000
  19 [-]: CALL      R1 4 2       ; R1 := R1(R2,R3,R4)
  20 [-]: SETUPVAL  R1 U5        ; U82 := R5
  21 [-]: GETGLOBAL R1 K4        ; R1 := 0xbe190284
  22 [-]: SELF      R1 R1 K5     ; R2 := R1; R1 := R1[0x0eb34c69]
  23 [-]: GETUPVAL  R3 U8        ; R3 := U8
- 24 [-]: LOADK     R4 0         ; R4 := 0.000000
+ 24 [-]: CONST     R4 0         ; R4 := 0.000000
  25 [-]: CALL      R1 4 2       ; R1 := R1(R2,R3,R4)
  26 [-]: SETUPVAL  R1 U7        ; U82 := R7
  27 [-]: GETUPVAL  R1 U5        ; R1 := U5
@@ -691,7 +691,7 @@
  49 [-]: TEST      R1 1         ; if R1 then PC := 55
  50 [-]: JMP       55           ; PC := 55
  51 [-]: GETGLOBAL R1 K14       ; R1 := 0xcbd666e1
- 52 [-]: LOADK     R2 0         ; R2 := 0.000000
+ 52 [-]: CONST     R2 0         ; R2 := 0.000000
  53 [-]: CALL      R1 2 1       ; R1(R2)
  54 [-]: JMP       46           ; PC := 46
  55 [-]: GETGLOBAL R1 K15       ; R1 := 0x7b998233
@@ -756,10 +756,10 @@
 114 [-]: GETUPVAL  R4 U16       ; R4 := U16
 115 [-]: LE        0 R4 R3      ; if R4 > R3 then PC := 135
 116 [-]: JMP       135          ; PC := 135
-117 [-]: LOADK     R3 1         ; R3 := 1.000000
+117 [-]: CONST     R3 1         ; R3 := 1.000000
 118 [-]: GETUPVAL  R4 U3        ; R4 := U3
 119 [-]: LEN       R4 R4        ; R4 := # R4
-120 [-]: LOADK     R5 1         ; R5 := 1.000000
+120 [-]: CONST     R5 1         ; R5 := 1.000000
 121 [-]: FORPREP   R3 134       ; R3 -= R5; PC := 134
 122 [-]: GETUPVAL  R7 U3        ; R7 := U3
 123 [-]: GETTABLE  R7 R7 R6     ; R7 := R7[R6]
@@ -883,7 +883,7 @@
  11 [-]: GETGLOBAL R2 K3        ; R2 := 0x2e615bb0
  12 [-]: LE        0 R2 R1      ; if R2 > R1 then PC := 17
  13 [-]: JMP       17           ; PC := 17
- 14 [-]: LOADK     R1 1         ; R1 := 1.000000
+ 14 [-]: CONST     R1 1         ; R1 := 1.000000
  15 [-]: RETURN    R1 2         ; return R1
  16 [-]: JMP       31           ; PC := 31
  17 [-]: GETGLOBAL R1 K2        ; R1 := 0x7b998233
@@ -898,12 +898,12 @@
  26 [-]: GETGLOBAL R1 K4        ; R1 := 0x3d106989
  27 [-]: LOADK     R2 K5        ; R2 := "StealDataObjective.lua::CanActivate - not enough terminals to setup mission"
  28 [-]: CALL      R1 2 1       ; R1(R2)
- 29 [-]: LOADK     R1 0         ; R1 := 0.000000
+ 29 [-]: CONST     R1 0         ; R1 := 0.000000
  30 [-]: RETURN    R1 2         ; return R1
  31 [-]: GETGLOBAL R1 K4        ; R1 := 0x3d106989
  32 [-]: LOADK     R2 K6        ; R2 := "StealDataObjective.lua::CanActivate - couldn't find any terminals in the level"
  33 [-]: CALL      R1 2 1       ; R1(R2)
- 34 [-]: LOADK     R1 0         ; R1 := 0.000000
+ 34 [-]: CONST     R1 0         ; R1 := 0.000000
  35 [-]: RETURN    R1 2         ; return R1
  36 [-]: RETURN    R0 1         ; return 
 

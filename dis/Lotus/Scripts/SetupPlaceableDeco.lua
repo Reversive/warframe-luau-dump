@@ -65,16 +65,16 @@
  14 [-]: GETTABLE  R2 R2 K5     ; R2 := R2[0xbb2a94b9]
  15 [-]: CALL      R2 1 2       ; R2 := R2()
  16 [-]: GETGLOBAL R3 K7        ; R3 := 0x60130201
- 17 [-]: LOADK     R4 239       ; R4 := 239.000000
- 18 [-]: LOADK     R5 239       ; R5 := 239.000000
- 19 [-]: LOADK     R6 239       ; R6 := 239.000000
+ 17 [-]: CONST     R4 239       ; R4 := 239.000000
+ 18 [-]: CONST     R5 239       ; R5 := 239.000000
+ 19 [-]: CONST     R6 239       ; R6 := 239.000000
  20 [-]: CALL      R3 4 2       ; R3 := R3(R4,R5,R6)
  21 [-]: SELF      R3 R3 K8     ; R4 := R3; R3 := R3[0xa5d5c8f6]
  22 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  23 [-]: SETTABLE  R2 K6 R3     ; R2["mColorCorrection"] := R3
  24 [-]: SELF      R3 R1 K9     ; R4 := R1; R3 := R1[0xca17a6f2]
  25 [-]: MOVE      R5 R2        ; R5 := R2
- 26 [-]: LOADBOOL  R6 1 0       ; R6 := true
+ 26 [-]: LOADKB    R6 1 0       ; R6 := true
  27 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
  28 [-]: SELF      R3 R1 K2     ; R4 := R1; R3 := R1[0xf2deaf69]
  29 [-]: GETGLOBAL R5 K10       ; R5 := 0x5d855734
@@ -89,10 +89,10 @@
  38 [-]: TEST      R4 1         ; if R4 then PC := 193
  39 [-]: JMP       193          ; PC := 193
  40 [-]: SELF      R4 R3 K12    ; R5 := R3; R4 := R3[0xecfaed95]
- 41 [-]: LOADK     R6 200       ; R6 := 200.000000
+ 41 [-]: CONST     R6 200       ; R6 := 200.000000
  42 [-]: CALL      R4 3 1       ; R4(R5,R6)
  43 [-]: SELF      R4 R3 K13    ; R5 := R3; R4 := R3[0xaa503602]
- 44 [-]: LOADBOOL  R6 0 0       ; R6 := false
+ 44 [-]: LOADKB    R6 0 0       ; R6 := false
  45 [-]: CALL      R4 3 1       ; R4(R5,R6)
  46 [-]: SELF      R4 R3 K14    ; R5 := R3; R4 := R3[0xe4162eed]
  47 [-]: LOADK     R6 K15       ; R6 := "HideBg"

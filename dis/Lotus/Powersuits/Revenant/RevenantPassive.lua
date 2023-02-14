@@ -10,8 +10,8 @@
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x2d0fad09
   2 [-]: LOADK     R1 K1        ; R1 := "Lotus.Scripts.Libs.AbilitiesLib"
   3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: LOADK     R1 7         ; R1 := 7.500000
-  5 [-]: LOADK     R2 100       ; R2 := 100.000000
+  4 [-]: CONST     R1 7         ; R1 := 7.500000
+  5 [-]: CONST     R2 100       ; R2 := 100.000000
   6 [-]: CLOSURE   R3 0         ; R3 := closure(Function #1)
   7 [-]: MOVE      R0 R1        ; R0 := R1
   8 [-]: MOVE      R0 R2        ; R0 := R2
@@ -91,12 +91,12 @@
  32 [-]: SETTABLE  R2 K10 R3    ; R2["radius"] := R3
  33 [-]: SETTABLE  R2 K11 K12   ; R2["staticCoverOnly"] := true
  34 [-]: SELF      R3 R2 K13    ; R4 := R2; R3 := R2[0x1586e35e]
- 35 [-]: LOADK     R5 7         ; R5 := 7.000000
- 36 [-]: LOADK     R6 1         ; R6 := 1.000000
+ 35 [-]: CONST     R5 7         ; R5 := 7.000000
+ 36 [-]: CONST     R6 1         ; R6 := 1.000000
  37 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
  38 [-]: SELF      R3 R2 K14    ; R4 := R2; R3 := R2[0xfc0e440a]
- 39 [-]: LOADK     R5 19        ; R5 := 19.000000
- 40 [-]: LOADBOOL  R6 1 0       ; R6 := true
+ 39 [-]: CONST     R5 19        ; R5 := 19.000000
+ 40 [-]: LOADKB    R6 1 0       ; R6 := true
  41 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
  42 [-]: SELF      R3 R2 K15    ; R4 := R2; R3 := R2[0x86cd00cb]
  43 [-]: MOVE      R5 R1        ; R5 := R1
@@ -144,7 +144,7 @@
  85 [-]: CALL      R7 6 1       ; R7(R8,R9,R10,R11,R12)
  86 [-]: MOVE      R4 R6        ; R4 := R6
  87 [-]: GETGLOBAL R7 K29       ; R7 := 0xcbd666e1
- 88 [-]: LOADK     R8 0         ; R8 := 0.000000
+ 88 [-]: CONST     R8 0         ; R8 := 0.000000
  89 [-]: CALL      R7 2 1       ; R7(R8)
  90 [-]: JMP       54           ; PC := 54
  91 [-]: RETURN    R0 1         ; return 
@@ -192,7 +192,7 @@
 ; Max Stack Size:  17
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0xcbd666e1
-  2 [-]: LOADK     R2 0         ; R2 := 0.000000
+  2 [-]: CONST     R2 0         ; R2 := 0.000000
   3 [-]: CALL      R1 2 1       ; R1(R2)
   4 [-]: SELF      R1 R0 K1     ; R2 := R0; R1 := R0[0x647915f6]
   5 [-]: CALL      R1 2 2       ; R1 := R1(R2)
@@ -226,7 +226,7 @@
  33 [-]: GETGLOBAL R11 K3       ; R11 := 0x0469f296
  34 [-]: LOADK     R12 K10      ; R12 := "UnlitAtten"
  35 [-]: CALL      R11 2 2      ; R11 := R11(R12)
- 36 [-]: LOADK     R12 0        ; R12 := 0.000000
+ 36 [-]: CONST     R12 0        ; R12 := 0.000000
  37 [-]: CALL      R9 4 1       ; R9(R10,R11,R12)
  38 [-]: TFORLOOP  R4 2         ; R7,R8 :=  R4(R5,R6); if R7 ~= nil then begin PC = 22; R6 := R7 end
  39 [-]: JMP       22           ; PC := 22

@@ -64,7 +64,7 @@
  41 [-]: SETTABLE  R7 K9 K8     ; R7["Total"] := 0.000000
  42 [-]: SETTABLE  R6 R5 R7     ; R6[R5] := R7
  43 [-]: SELF      R6 R0 K10    ; R7 := R0; R6 := R0[0x56b2aae2]
- 44 [-]: LOADK     R8 19        ; R8 := 19.000000
+ 44 [-]: CONST     R8 19        ; R8 := 19.000000
  45 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
  46 [-]: LT        0 K8 R6      ; if 0.000000 >= R6 then PC := 62
  47 [-]: JMP       62           ; PC := 62
@@ -95,7 +95,7 @@
  72 [-]: GETTABLE  R7 R7 K9     ; R7 := R7["Total"]
  73 [-]: ADD       R7 R7 K14    ; R7 := R7 + 1.000000
  74 [-]: SETTABLE  R6 K9 R7     ; R6["Total"] := R7
- 75 [-]: LOADBOOL  R6 0 0       ; R6 := false
+ 75 [-]: LOADKB    R6 0 0       ; R6 := false
  76 [-]: RETURN    R6 2         ; return R6
  77 [-]: RETURN    R0 1         ; return 
 

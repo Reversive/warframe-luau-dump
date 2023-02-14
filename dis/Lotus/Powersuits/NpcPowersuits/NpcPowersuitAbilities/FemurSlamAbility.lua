@@ -23,14 +23,14 @@
 ; Is_vararg:       0
 ; Max Stack Size:  11
 
-  1 [-]: LOADK     R2 0         ; R2 := 0.000000
+  1 [-]: CONST     R2 0         ; R2 := 0.000000
   2 [-]: SELF      R3 R1 K0     ; R4 := R1; R3 := R1[0xfa9e477f]
   3 [-]: CALL      R3 2 2       ; R3 := R3(R4)
   4 [-]: SELF      R3 R3 K1     ; R4 := R3; R3 := R3[0xc0e06c5c]
   5 [-]: CALL      R3 2 2       ; R3 := R3(R4)
-  6 [-]: LOADK     R4 1         ; R4 := 1.000000
+  6 [-]: CONST     R4 1         ; R4 := 1.000000
   7 [-]: LEN       R5 R3        ; R5 := # R3
-  8 [-]: LOADK     R6 1         ; R6 := 1.000000
+  8 [-]: CONST     R6 1         ; R6 := 1.000000
   9 [-]: FORPREP   R4 26        ; R4 -= R6; PC := 26
  10 [-]: GETTABLE  R8 R3 R7     ; R8 := R3[R7]
  11 [-]: SELF      R8 R8 K2     ; R9 := R8; R8 := R8[0x37e4785a]
@@ -85,14 +85,14 @@
  21 [-]: SELF      R7 R1 K2     ; R8 := R1; R7 := R1[0xd1586535]
  22 [-]: CALL      R7 2 2       ; R7 := R7(R8)
  23 [-]: MOVE      R8 R4        ; R8 := R4
- 24 [-]: LOADBOOL  R9 1 0       ; R9 := true
+ 24 [-]: LOADKB    R9 1 0       ; R9 := true
  25 [-]: CALL      R5 5 1       ; R5(R6,R7,R8,R9)
  26 [-]: SELF      R5 R1 K7     ; R6 := R1; R5 := R1[0x5d985c7e]
  27 [-]: GETGLOBAL R7 K8        ; R7 := 0x0ed8b456
- 28 [-]: LOADBOOL  R8 0 0       ; R8 := false
- 29 [-]: LOADK     R9 3         ; R9 := 3.000000
- 30 [-]: LOADK     R10 1        ; R10 := 1.000000
- 31 [-]: LOADBOOL  R11 1 0      ; R11 := true
+ 28 [-]: LOADKB    R8 0 0       ; R8 := false
+ 29 [-]: CONST     R9 3         ; R9 := 3.000000
+ 30 [-]: CONST     R10 1        ; R10 := 1.000000
+ 31 [-]: LOADKB    R11 1 0      ; R11 := true
  32 [-]: CALL      R5 7 2       ; R5 := R5(R6,R7,R8,R9,R10,R11)
  33 [-]: SELF      R6 R1 K10    ; R7 := R1; R6 := R1[0x21b4c60e]
  34 [-]: LOADK     R8 K11       ; R8 := "Slam"

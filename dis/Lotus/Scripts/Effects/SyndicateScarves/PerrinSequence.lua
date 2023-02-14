@@ -83,7 +83,7 @@
  60 [-]: GETTABLE  R7 R7 K9     ; R7 := R7["Total"]
  61 [-]: ADD       R7 R7 R2     ; R7 := R7 + R2
  62 [-]: SETTABLE  R6 K9 R7     ; R6["Total"] := R7
- 63 [-]: LOADBOOL  R6 0 0       ; R6 := false
+ 63 [-]: LOADKB    R6 0 0       ; R6 := false
  64 [-]: RETURN    R6 2         ; return R6
  65 [-]: RETURN    R0 1         ; return 
 

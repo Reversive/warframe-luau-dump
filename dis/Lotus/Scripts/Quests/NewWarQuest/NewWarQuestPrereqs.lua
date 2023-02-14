@@ -41,7 +41,7 @@
  10 [-]: GETTABLE  R0 R0 K4     ; R0 := R0[0xe0cba3ca]
  11 [-]: LOADK     R1 K5        ; R1 := "/Lotus/Language/NewWar/PrereqMissingNodeIntro"
  12 [-]: CALL      R0 2 1       ; R0(R1)
- 13 [-]: LOADBOOL  R0 0 0       ; R0 := false
+ 13 [-]: LOADKB    R0 0 0       ; R0 := false
  14 [-]: RETURN    R0 2         ; return R0
  15 [-]: GETGLOBAL R0 K0        ; R0 := 0x25d99d89
  16 [-]: SELF      R0 R0 K6     ; R1 := R0; R0 := R0[0x4ae54c32]
@@ -61,7 +61,7 @@
  30 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
  31 [-]: LT        0 K12 R2     ; if 0.000000 >= R2 then PC := 34
  32 [-]: JMP       34           ; PC := 34
- 33 [-]: LOADBOOL  R0 1 0       ; R0 := true
+ 33 [-]: LOADKB    R0 1 0       ; R0 := true
  34 [-]: GETGLOBAL R2 K0        ; R2 := 0x25d99d89
  35 [-]: SELF      R2 R2 K10    ; R3 := R2; R2 := R2[0x25a6e75e]
  36 [-]: CALL      R2 2 2       ; R2 := R2(R3)
@@ -70,8 +70,8 @@
  39 [-]: LEN       R2 R2        ; R2 := # R2
  40 [-]: LT        1 K12 R2     ; if 0.000000 < R2 then PC := 43
  41 [-]: JMP       43           ; PC := 43
- 42 [-]: LOADBOOL  R2 0 1       ; R2 := false; PC := 43
- 43 [-]: LOADBOOL  R2 1 0       ; R2 := true
+ 42 [-]: LOADKB    R2 0 1       ; R2 := false; PC := 43
+ 43 [-]: LOADKB    R2 1 0       ; R2 := true
  44 [-]: TEST      R0 1         ; if R0 then PC := 54
  45 [-]: JMP       54           ; PC := 54
  46 [-]: TEST      R2 1         ; if R2 then PC := 54
@@ -80,7 +80,7 @@
  49 [-]: GETTABLE  R3 R3 K4     ; R3 := R3[0xe0cba3ca]
  50 [-]: LOADK     R4 K14       ; R4 := "/Lotus/Language/NewWar/PrereqMissingMechAndRailjack"
  51 [-]: CALL      R3 2 1       ; R3(R4)
- 52 [-]: LOADBOOL  R3 0 0       ; R3 := false
+ 52 [-]: LOADKB    R3 0 0       ; R3 := false
  53 [-]: RETURN    R3 2         ; return R3
  54 [-]: TEST      R0 1         ; if R0 then PC := 62
  55 [-]: JMP       62           ; PC := 62
@@ -88,7 +88,7 @@
  57 [-]: GETTABLE  R3 R3 K4     ; R3 := R3[0xe0cba3ca]
  58 [-]: LOADK     R4 K15       ; R4 := "/Lotus/Language/NewWar/PrereqMissingRailjack"
  59 [-]: CALL      R3 2 1       ; R3(R4)
- 60 [-]: LOADBOOL  R3 0 0       ; R3 := false
+ 60 [-]: LOADKB    R3 0 0       ; R3 := false
  61 [-]: RETURN    R3 2         ; return R3
  62 [-]: TEST      R2 1         ; if R2 then PC := 70
  63 [-]: JMP       70           ; PC := 70
@@ -96,9 +96,9 @@
  65 [-]: GETTABLE  R3 R3 K4     ; R3 := R3[0xe0cba3ca]
  66 [-]: LOADK     R4 K16       ; R4 := "/Lotus/Language/NewWar/PrereqMissingMech"
  67 [-]: CALL      R3 2 1       ; R3(R4)
- 68 [-]: LOADBOOL  R3 0 0       ; R3 := false
+ 68 [-]: LOADKB    R3 0 0       ; R3 := false
  69 [-]: RETURN    R3 2         ; return R3
- 70 [-]: LOADBOOL  R3 1 0       ; R3 := true
+ 70 [-]: LOADKB    R3 1 0       ; R3 := true
  71 [-]: RETURN    R3 2         ; return R3
  72 [-]: RETURN    R0 1         ; return 
 

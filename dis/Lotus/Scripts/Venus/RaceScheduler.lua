@@ -35,7 +35,7 @@
   4 [-]: TEST      R0 1         ; if R0 then PC := 10
   5 [-]: JMP       10           ; PC := 10
   6 [-]: GETGLOBAL R0 K2        ; R0 := 0xcbd666e1
-  7 [-]: LOADK     R1 0         ; R1 := 0.000000
+  7 [-]: CONST     R1 0         ; R1 := 0.000000
   8 [-]: CALL      R0 2 1       ; R0(R1)
   9 [-]: JMP       1            ; PC := 1
  10 [-]: GETGLOBAL R0 K3        ; R0 := 0x14459a1c
@@ -51,7 +51,7 @@
  20 [-]: GETGLOBAL R1 K0        ; R1 := 0xbe190284
  21 [-]: SELF      R1 R1 K8     ; R2 := R1; R1 := R1[0xbe9c4719]
  22 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 23 [-]: LOADK     R2 86400     ; R2 := 86400.000000
+ 23 [-]: CONST     R2 86400     ; R2 := 86400.000000
  24 [-]: GETGLOBAL R3 K9        ; R3 := 0x5bced4c4
  25 [-]: GETTABLE  R3 R3 K10    ; R3 := R3[0x55f27c30]
  26 [-]: DIV       R4 R1 R2     ; R4 := R1 / R2
@@ -67,7 +67,7 @@
  36 [-]: GETTABLE  R5 R5 K14    ; R5 := R5[0xb8f73de1]
  37 [-]: MOVE      R6 R0        ; R6 := R0
  38 [-]: CALL      R5 2 1       ; R5(R6)
- 39 [-]: LOADK     R5 6         ; R5 := 6.000000
+ 39 [-]: CONST     R5 6         ; R5 := 6.000000
  40 [-]: GETUPVAL  R6 U1        ; R6 := U1
  41 [-]: GETTABLE  R6 R6 K15    ; R6 := R6[0x200054f6]
  42 [-]: GETGLOBAL R7 K16       ; R7 := 0x6fed6096
@@ -94,7 +94,7 @@
  63 [-]: TEST      R11 0        ; if not R11 then PC := 69
  64 [-]: JMP       69           ; PC := 69
  65 [-]: GETGLOBAL R11 K2       ; R11 := 0xcbd666e1
- 66 [-]: LOADK     R12 0        ; R12 := 0.000000
+ 66 [-]: CONST     R12 0        ; R12 := 0.000000
  67 [-]: CALL      R11 2 1      ; R11(R12)
  68 [-]: JMP       59           ; PC := 59
  69 [-]: GETGLOBAL R11 K17      ; R11 := _T
@@ -103,7 +103,7 @@
  72 [-]: JMP       82           ; PC := 82
  73 [-]: MOVE      R11 R5       ; R11 := R5
  74 [-]: LEN       R12 R0       ; R12 := # R0
- 75 [-]: LOADK     R13 1        ; R13 := 1.000000
+ 75 [-]: CONST     R13 1        ; R13 := 1.000000
  76 [-]: FORPREP   R11 81       ; R11 -= R13; PC := 81
  77 [-]: GETTABLE  R15 R0 R14   ; R15 := R0[R14]
  78 [-]: SELF      R15 R15 K20  ; R16 := R15; R15 := R15[0x8eb2112d]

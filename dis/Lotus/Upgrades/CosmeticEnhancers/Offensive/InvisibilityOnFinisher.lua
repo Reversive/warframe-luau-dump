@@ -86,15 +86,15 @@
  56 [-]: LOADK     R13 K12      ; R13 := 1.800000
  57 [-]: LOADK     R14 K13      ; R14 := 1.100000
  58 [-]: LOADK     R15 K13      ; R15 := 1.100000
- 59 [-]: LOADK     R16 3        ; R16 := 3.000000
+ 59 [-]: CONST     R16 3        ; R16 := 3.000000
  60 [-]: CALL      R11 6 1      ; R11(R12,R13,R14,R15,R16)
  61 [-]: SELF      R11 R0 K9    ; R12 := R0; R11 := R0[0x0b4bcfb6]
  62 [-]: CALL      R11 2 2      ; R11 := R11(R12)
  63 [-]: SELF      R11 R11 K14  ; R12 := R11; R11 := R11[0x758c046d]
  64 [-]: GETGLOBAL R13 K15      ; R13 := 0x0b1ccdb5
- 65 [-]: LOADK     R14 1        ; R14 := 1.000000
- 66 [-]: LOADK     R15 -1       ; R15 := -1.000000
- 67 [-]: LOADK     R16 1        ; R16 := 1.000000
+ 65 [-]: CONST     R14 1        ; R14 := 1.000000
+ 66 [-]: CONST     R15 -1       ; R15 := -1.000000
+ 67 [-]: CONST     R16 1        ; R16 := 1.000000
  68 [-]: CALL      R11 6 1      ; R11(R12,R13,R14,R15,R16)
  69 [-]: RETURN    R0 1         ; return 
 
@@ -110,7 +110,7 @@
 
   1 [-]: SELF      R5 R0 K0     ; R6 := R0; R5 := R0[0x388577d5]
   2 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-  3 [-]: LOADBOOL  R6 0 0       ; R6 := false
+  3 [-]: LOADKB    R6 0 0       ; R6 := false
   4 [-]: GETGLOBAL R7 K1        ; R7 := 0x7b998233
   5 [-]: GETGLOBAL R8 K2        ; R8 := _T
   6 [-]: GETTABLE  R8 R8 K3     ; R8 := R8["invisOnFinisher"]
@@ -141,7 +141,7 @@
  31 [-]: GETGLOBAL R12 K2       ; R12 := _T
  32 [-]: GETTABLE  R12 R12 K3   ; R12 := R12["invisOnFinisher"]
  33 [-]: SETTABLE  R12 R5 K8    ; R12[R5] := nil
- 34 [-]: LOADBOOL  R6 1 0       ; R6 := true
+ 34 [-]: LOADKB    R6 1 0       ; R6 := true
  35 [-]: JMP       38           ; PC := 38
  36 [-]: TFORLOOP  R7 2         ; R10,R11 :=  R7(R8,R9); if R10 ~= nil then begin PC = 16; R9 := R10 end
  37 [-]: JMP       16           ; PC := 16

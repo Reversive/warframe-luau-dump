@@ -42,9 +42,9 @@
   2 [-]: SELF      R2 R2 K1     ; R3 := R2; R2 := R2[0xc7fcada9]
   3 [-]: MOVE      R4 R0        ; R4 := R0
   4 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
-  5 [-]: LOADK     R3 1         ; R3 := 1.000000
+  5 [-]: CONST     R3 1         ; R3 := 1.000000
   6 [-]: LEN       R4 R2        ; R4 := # R2
-  7 [-]: LOADK     R5 1         ; R5 := 1.000000
+  7 [-]: CONST     R5 1         ; R5 := 1.000000
   8 [-]: FORPREP   R3 24        ; R3 -= R5; PC := 24
   9 [-]: GETGLOBAL R7 K2        ; R7 := 0x7b998233
  10 [-]: GETTABLE  R8 R2 R6     ; R8 := R2[R6]
@@ -75,7 +75,7 @@
 ; Max Stack Size:  8
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0xcbd666e1
-  2 [-]: LOADK     R1 0         ; R1 := 0.000000
+  2 [-]: CONST     R1 0         ; R1 := 0.000000
   3 [-]: CALL      R0 2 1       ; R0(R1)
   4 [-]: GETGLOBAL R0 K1        ; R0 := 0xbe190284
   5 [-]: GETGLOBAL R1 K2        ; R1 := 0x89326c93
@@ -85,20 +85,20 @@
   9 [-]: CALL      R1 2 2       ; R1 := R1(R2)
  10 [-]: SELF      R2 R0 K5     ; R3 := R0; R2 := R0[0x0eb34c69]
  11 [-]: GETUPVAL  R4 U0        ; R4 := U0
- 12 [-]: LOADK     R5 4         ; R5 := 4.000000
+ 12 [-]: CONST     R5 4         ; R5 := 4.000000
  13 [-]: CALL      R2 4 2       ; R2 := R2(R3,R4,R5)
  14 [-]: SELF      R3 R0 K5     ; R4 := R0; R3 := R0[0x0eb34c69]
  15 [-]: GETUPVAL  R5 U1        ; R5 := U1
- 16 [-]: LOADK     R6 4         ; R6 := 4.000000
+ 16 [-]: CONST     R6 4         ; R6 := 4.000000
  17 [-]: CALL      R3 4 2       ; R3 := R3(R4,R5,R6)
  18 [-]: LT        0 K6 R2      ; if 2.000000 >= R2 then PC := 29
  19 [-]: JMP       29           ; PC := 29
  20 [-]: GETGLOBAL R4 K0        ; R4 := 0xcbd666e1
- 21 [-]: LOADK     R5 1         ; R5 := 1.000000
+ 21 [-]: CONST     R5 1         ; R5 := 1.000000
  22 [-]: CALL      R4 2 1       ; R4(R5)
  23 [-]: SELF      R4 R0 K5     ; R5 := R0; R4 := R0[0x0eb34c69]
  24 [-]: GETUPVAL  R6 U0        ; R6 := U0
- 25 [-]: LOADK     R7 4         ; R7 := 4.000000
+ 25 [-]: CONST     R7 4         ; R7 := 4.000000
  26 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
  27 [-]: MOVE      R2 R4        ; R2 := R4
  28 [-]: JMP       18           ; PC := 18
@@ -108,28 +108,28 @@
  32 [-]: GETGLOBAL R6 K8        ; R6 := 0x0469f296
  33 [-]: LOADK     R7 K9        ; R7 := "Grineer"
  34 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 35 [-]: LOADK     R7 0         ; R7 := 0.500000
+ 35 [-]: CONST     R7 0         ; R7 := 0.500000
  36 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
  37 [-]: SELF      R4 R1 K7     ; R5 := R1; R4 := R1[0xe7c53f4e]
  38 [-]: GETGLOBAL R6 K8        ; R6 := 0x0469f296
  39 [-]: LOADK     R7 K10       ; R7 := "Infested"
  40 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 41 [-]: LOADK     R7 0         ; R7 := 0.500000
+ 41 [-]: CONST     R7 0         ; R7 := 0.500000
  42 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
  43 [-]: GETUPVAL  R4 U2        ; R4 := U2
  44 [-]: GETGLOBAL R5 K8        ; R5 := 0x0469f296
  45 [-]: LOADK     R6 K11       ; R6 := "InfestedQuestIntelOne"
  46 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 47 [-]: LOADBOOL  R6 1 0       ; R6 := true
+ 47 [-]: LOADKB    R6 1 0       ; R6 := true
  48 [-]: CALL      R4 3 1       ; R4(R5,R6)
  49 [-]: LT        0 K12 R2     ; if 1.000000 >= R2 then PC := 60
  50 [-]: JMP       60           ; PC := 60
  51 [-]: GETGLOBAL R4 K0        ; R4 := 0xcbd666e1
- 52 [-]: LOADK     R5 1         ; R5 := 1.000000
+ 52 [-]: CONST     R5 1         ; R5 := 1.000000
  53 [-]: CALL      R4 2 1       ; R4(R5)
  54 [-]: SELF      R4 R0 K5     ; R5 := R0; R4 := R0[0x0eb34c69]
  55 [-]: GETUPVAL  R6 U0        ; R6 := U0
- 56 [-]: LOADK     R7 4         ; R7 := 4.000000
+ 56 [-]: CONST     R7 4         ; R7 := 4.000000
  57 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
  58 [-]: MOVE      R2 R4        ; R2 := R4
  59 [-]: JMP       49           ; PC := 49
@@ -139,18 +139,18 @@
  63 [-]: GETGLOBAL R6 K8        ; R6 := 0x0469f296
  64 [-]: LOADK     R7 K9        ; R7 := "Grineer"
  65 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 66 [-]: LOADK     R7 0         ; R7 := 0.250000
+ 66 [-]: CONST     R7 0         ; R7 := 0.250000
  67 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
  68 [-]: SELF      R4 R1 K7     ; R5 := R1; R4 := R1[0xe7c53f4e]
  69 [-]: GETGLOBAL R6 K8        ; R6 := 0x0469f296
  70 [-]: LOADK     R7 K10       ; R7 := "Infested"
  71 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 72 [-]: LOADK     R7 0         ; R7 := 0.750000
+ 72 [-]: CONST     R7 0         ; R7 := 0.750000
  73 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
  74 [-]: LT        0 K13 R2     ; if 0.000000 >= R2 then PC := 84
  75 [-]: JMP       84           ; PC := 84
  76 [-]: GETGLOBAL R4 K0        ; R4 := 0xcbd666e1
- 77 [-]: LOADK     R5 1         ; R5 := 1.000000
+ 77 [-]: CONST     R5 1         ; R5 := 1.000000
  78 [-]: CALL      R4 2 1       ; R4(R5)
  79 [-]: SELF      R4 R0 K5     ; R5 := R0; R4 := R0[0x0eb34c69]
  80 [-]: GETUPVAL  R6 U0        ; R6 := U0
@@ -163,19 +163,19 @@
  87 [-]: GETGLOBAL R6 K8        ; R6 := 0x0469f296
  88 [-]: LOADK     R7 K9        ; R7 := "Grineer"
  89 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 90 [-]: LOADK     R7 0         ; R7 := 0.000000
+ 90 [-]: CONST     R7 0         ; R7 := 0.000000
  91 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
  92 [-]: SELF      R4 R1 K7     ; R5 := R1; R4 := R1[0xe7c53f4e]
  93 [-]: GETGLOBAL R6 K8        ; R6 := 0x0469f296
  94 [-]: LOADK     R7 K10       ; R7 := "Infested"
  95 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 96 [-]: LOADK     R7 1         ; R7 := 1.000000
+ 96 [-]: CONST     R7 1         ; R7 := 1.000000
  97 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
  98 [-]: GETUPVAL  R4 U2        ; R4 := U2
  99 [-]: GETGLOBAL R5 K8        ; R5 := 0x0469f296
 100 [-]: LOADK     R6 K14       ; R6 := "InfestedQuestIntelTwo"
 101 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-102 [-]: LOADBOOL  R6 1 0       ; R6 := true
+102 [-]: LOADKB    R6 1 0       ; R6 := true
 103 [-]: CALL      R4 3 1       ; R4(R5,R6)
 104 [-]: RETURN    R0 1         ; return 
 
@@ -190,7 +190,7 @@
 ; Max Stack Size:  8
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0xcbd666e1
-  2 [-]: LOADK     R1 0         ; R1 := 0.000000
+  2 [-]: CONST     R1 0         ; R1 := 0.000000
   3 [-]: CALL      R0 2 1       ; R0(R1)
   4 [-]: GETGLOBAL R0 K1        ; R0 := 0xbe190284
   5 [-]: GETGLOBAL R1 K2        ; R1 := 0x89326c93
@@ -200,20 +200,20 @@
   9 [-]: CALL      R1 2 2       ; R1 := R1(R2)
  10 [-]: SELF      R2 R0 K5     ; R3 := R0; R2 := R0[0x0eb34c69]
  11 [-]: GETUPVAL  R4 U0        ; R4 := U0
- 12 [-]: LOADK     R5 4         ; R5 := 4.000000
+ 12 [-]: CONST     R5 4         ; R5 := 4.000000
  13 [-]: CALL      R2 4 2       ; R2 := R2(R3,R4,R5)
  14 [-]: SELF      R3 R0 K5     ; R4 := R0; R3 := R0[0x0eb34c69]
  15 [-]: GETUPVAL  R5 U1        ; R5 := U1
- 16 [-]: LOADK     R6 4         ; R6 := 4.000000
+ 16 [-]: CONST     R6 4         ; R6 := 4.000000
  17 [-]: CALL      R3 4 2       ; R3 := R3(R4,R5,R6)
  18 [-]: LT        0 K6 R2      ; if 2.000000 >= R2 then PC := 29
  19 [-]: JMP       29           ; PC := 29
  20 [-]: GETGLOBAL R4 K0        ; R4 := 0xcbd666e1
- 21 [-]: LOADK     R5 1         ; R5 := 1.000000
+ 21 [-]: CONST     R5 1         ; R5 := 1.000000
  22 [-]: CALL      R4 2 1       ; R4(R5)
  23 [-]: SELF      R4 R0 K5     ; R5 := R0; R4 := R0[0x0eb34c69]
  24 [-]: GETUPVAL  R6 U0        ; R6 := U0
- 25 [-]: LOADK     R7 4         ; R7 := 4.000000
+ 25 [-]: CONST     R7 4         ; R7 := 4.000000
  26 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
  27 [-]: MOVE      R2 R4        ; R2 := R4
  28 [-]: JMP       18           ; PC := 18
@@ -223,28 +223,28 @@
  32 [-]: GETGLOBAL R6 K8        ; R6 := 0x0469f296
  33 [-]: LOADK     R7 K9        ; R7 := "Corpus"
  34 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 35 [-]: LOADK     R7 0         ; R7 := 0.500000
+ 35 [-]: CONST     R7 0         ; R7 := 0.500000
  36 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
  37 [-]: SELF      R4 R1 K7     ; R5 := R1; R4 := R1[0xe7c53f4e]
  38 [-]: GETGLOBAL R6 K8        ; R6 := 0x0469f296
  39 [-]: LOADK     R7 K10       ; R7 := "Infested"
  40 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 41 [-]: LOADK     R7 0         ; R7 := 0.500000
+ 41 [-]: CONST     R7 0         ; R7 := 0.500000
  42 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
  43 [-]: GETUPVAL  R4 U2        ; R4 := U2
  44 [-]: GETGLOBAL R5 K8        ; R5 := 0x0469f296
  45 [-]: LOADK     R6 K11       ; R6 := "CorpusInfestedQuestOne"
  46 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 47 [-]: LOADBOOL  R6 1 0       ; R6 := true
+ 47 [-]: LOADKB    R6 1 0       ; R6 := true
  48 [-]: CALL      R4 3 1       ; R4(R5,R6)
  49 [-]: LT        0 K12 R2     ; if 1.000000 >= R2 then PC := 60
  50 [-]: JMP       60           ; PC := 60
  51 [-]: GETGLOBAL R4 K0        ; R4 := 0xcbd666e1
- 52 [-]: LOADK     R5 1         ; R5 := 1.000000
+ 52 [-]: CONST     R5 1         ; R5 := 1.000000
  53 [-]: CALL      R4 2 1       ; R4(R5)
  54 [-]: SELF      R4 R0 K5     ; R5 := R0; R4 := R0[0x0eb34c69]
  55 [-]: GETUPVAL  R6 U0        ; R6 := U0
- 56 [-]: LOADK     R7 1         ; R7 := 1.000000
+ 56 [-]: CONST     R7 1         ; R7 := 1.000000
  57 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
  58 [-]: MOVE      R2 R4        ; R2 := R4
  59 [-]: JMP       49           ; PC := 49
@@ -254,22 +254,22 @@
  63 [-]: GETGLOBAL R6 K8        ; R6 := 0x0469f296
  64 [-]: LOADK     R7 K9        ; R7 := "Corpus"
  65 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 66 [-]: LOADK     R7 0         ; R7 := 0.250000
+ 66 [-]: CONST     R7 0         ; R7 := 0.250000
  67 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
  68 [-]: SELF      R4 R1 K7     ; R5 := R1; R4 := R1[0xe7c53f4e]
  69 [-]: GETGLOBAL R6 K8        ; R6 := 0x0469f296
  70 [-]: LOADK     R7 K10       ; R7 := "Infested"
  71 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 72 [-]: LOADK     R7 0         ; R7 := 0.750000
+ 72 [-]: CONST     R7 0         ; R7 := 0.750000
  73 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
  74 [-]: LT        0 K13 R2     ; if 0.000000 >= R2 then PC := 88
  75 [-]: JMP       88           ; PC := 88
  76 [-]: GETGLOBAL R4 K0        ; R4 := 0xcbd666e1
- 77 [-]: LOADK     R5 1         ; R5 := 1.000000
+ 77 [-]: CONST     R5 1         ; R5 := 1.000000
  78 [-]: CALL      R4 2 1       ; R4(R5)
  79 [-]: SELF      R4 R0 K5     ; R5 := R0; R4 := R0[0x0eb34c69]
  80 [-]: GETUPVAL  R6 U0        ; R6 := U0
- 81 [-]: LOADK     R7 0         ; R7 := 0.000000
+ 81 [-]: CONST     R7 0         ; R7 := 0.000000
  82 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
  83 [-]: MOVE      R2 R4        ; R2 := R4
  84 [-]: EQ        0 R2 K14     ; if R2 ~= 255.000000 then PC := 74
@@ -284,19 +284,19 @@
  93 [-]: GETGLOBAL R6 K8        ; R6 := 0x0469f296
  94 [-]: LOADK     R7 K9        ; R7 := "Corpus"
  95 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 96 [-]: LOADK     R7 0         ; R7 := 0.000000
+ 96 [-]: CONST     R7 0         ; R7 := 0.000000
  97 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
  98 [-]: SELF      R4 R1 K7     ; R5 := R1; R4 := R1[0xe7c53f4e]
  99 [-]: GETGLOBAL R6 K8        ; R6 := 0x0469f296
 100 [-]: LOADK     R7 K10       ; R7 := "Infested"
 101 [-]: CALL      R6 2 2       ; R6 := R6(R7)
-102 [-]: LOADK     R7 1         ; R7 := 1.000000
+102 [-]: CONST     R7 1         ; R7 := 1.000000
 103 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
 104 [-]: GETUPVAL  R4 U2        ; R4 := U2
 105 [-]: GETGLOBAL R5 K8        ; R5 := 0x0469f296
 106 [-]: LOADK     R6 K15       ; R6 := "CorpusInfestedQuestTwo"
 107 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-108 [-]: LOADBOOL  R6 1 0       ; R6 := true
+108 [-]: LOADKB    R6 1 0       ; R6 := true
 109 [-]: CALL      R4 3 1       ; R4(R5,R6)
 110 [-]: RETURN    R0 1         ; return 
 

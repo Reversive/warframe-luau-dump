@@ -24,10 +24,10 @@
 ; Max Stack Size:  15
 
   1 [-]: NEWTABLE  R0 0 0       ; R0 := {}
-  2 [-]: LOADK     R1 1         ; R1 := 1.000000
+  2 [-]: CONST     R1 1         ; R1 := 1.000000
   3 [-]: GETGLOBAL R2 K0        ; R2 := 0x2b706f4f
   4 [-]: LEN       R2 R2        ; R2 := # R2
-  5 [-]: LOADK     R3 1         ; R3 := 1.000000
+  5 [-]: CONST     R3 1         ; R3 := 1.000000
   6 [-]: FORPREP   R1 19        ; R1 -= R3; PC := 19
   7 [-]: GETGLOBAL R5 K1        ; R5 := 0x7b998233
   8 [-]: GETGLOBAL R6 K0        ; R6 := 0x2b706f4f
@@ -56,12 +56,12 @@
  31 [-]: LEN       R8 R0        ; R8 := # R0
  32 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
  33 [-]: MOVE      R5 R6        ; R5 := R6
- 34 [-]: LOADK     R6 1         ; R6 := 1.000000
+ 34 [-]: CONST     R6 1         ; R6 := 1.000000
  35 [-]: MOVE      R7 R5        ; R7 := R5
- 36 [-]: LOADK     R8 1         ; R8 := 1.000000
+ 36 [-]: CONST     R8 1         ; R8 := 1.000000
  37 [-]: FORPREP   R6 59        ; R6 -= R8; PC := 59
  38 [-]: GETGLOBAL R10 K5       ; R10 := 0x55730e1a
- 39 [-]: LOADK     R11 1        ; R11 := 1.000000
+ 39 [-]: CONST     R11 1        ; R11 := 1.000000
  40 [-]: LEN       R12 R0       ; R12 := # R0
  41 [-]: CALL      R10 3 2      ; R10 := R10(R11,R12)
  42 [-]: GETGLOBAL R11 K8       ; R11 := 0x5bced4c4
@@ -103,12 +103,12 @@
 ; Is_vararg:       0
 ; Max Stack Size:  16
 
-  1 [-]: LOADK     R0 0         ; R0 := 0.000000
+  1 [-]: CONST     R0 0         ; R0 := 0.000000
   2 [-]: NEWTABLE  R1 0 0       ; R1 := {}
-  3 [-]: LOADK     R2 1         ; R2 := 1.000000
+  3 [-]: CONST     R2 1         ; R2 := 1.000000
   4 [-]: GETGLOBAL R3 K0        ; R3 := 0x2b706f4f
   5 [-]: LEN       R3 R3        ; R3 := # R3
-  6 [-]: LOADK     R4 1         ; R4 := 1.000000
+  6 [-]: CONST     R4 1         ; R4 := 1.000000
   7 [-]: FORPREP   R2 28        ; R2 -= R4; PC := 28
   8 [-]: GETGLOBAL R6 K0        ; R6 := 0x2b706f4f
   9 [-]: GETTABLE  R6 R6 R5     ; R6 := R6[R5]
@@ -147,12 +147,12 @@
  42 [-]: LEN       R9 R1        ; R9 := # R1
  43 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
  44 [-]: MOVE      R6 R7        ; R6 := R7
- 45 [-]: LOADK     R7 1         ; R7 := 1.000000
+ 45 [-]: CONST     R7 1         ; R7 := 1.000000
  46 [-]: MOVE      R8 R6        ; R8 := R6
- 47 [-]: LOADK     R9 1         ; R9 := 1.000000
+ 47 [-]: CONST     R9 1         ; R9 := 1.000000
  48 [-]: FORPREP   R7 70        ; R7 -= R9; PC := 70
  49 [-]: GETGLOBAL R11 K9       ; R11 := 0x55730e1a
- 50 [-]: LOADK     R12 1        ; R12 := 1.000000
+ 50 [-]: CONST     R12 1        ; R12 := 1.000000
  51 [-]: LEN       R13 R1       ; R13 := # R1
  52 [-]: CALL      R11 3 2      ; R11 := R11(R12,R13)
  53 [-]: GETGLOBAL R12 K11      ; R12 := 0x5bced4c4

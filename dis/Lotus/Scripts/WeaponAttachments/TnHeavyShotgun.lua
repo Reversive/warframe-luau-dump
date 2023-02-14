@@ -118,8 +118,8 @@
  19 [-]: TEST      R8 0         ; if not R8 then PC := 25
  20 [-]: JMP       25           ; PC := 25
  21 [-]: SELF      R8 R7 K6     ; R9 := R7; R8 := R7[0x768274d6]
- 22 [-]: LOADBOOL  R10 0 0      ; R10 := false
- 23 [-]: LOADBOOL  R11 0 0      ; R11 := false
+ 22 [-]: LOADKB    R10 0 0      ; R10 := false
+ 23 [-]: LOADKB    R11 0 0      ; R11 := false
  24 [-]: CALL      R8 4 1       ; R8(R9,R10,R11)
  25 [-]: TFORLOOP  R3 2         ; R6,R7 :=  R3(R4,R5); if R6 ~= nil then begin PC = 16; R5 := R6 end
  26 [-]: JMP       16           ; PC := 16
@@ -156,8 +156,8 @@
  19 [-]: TEST      R8 0         ; if not R8 then PC := 25
  20 [-]: JMP       25           ; PC := 25
  21 [-]: SELF      R8 R7 K6     ; R9 := R7; R8 := R7[0x768274d6]
- 22 [-]: LOADBOOL  R10 1 0      ; R10 := true
- 23 [-]: LOADBOOL  R11 0 0      ; R11 := false
+ 22 [-]: LOADKB    R10 1 0      ; R10 := true
+ 23 [-]: LOADKB    R11 0 0      ; R11 := false
  24 [-]: CALL      R8 4 1       ; R8(R9,R10,R11)
  25 [-]: TFORLOOP  R3 2         ; R6,R7 :=  R3(R4,R5); if R6 ~= nil then begin PC = 16; R5 := R6 end
  26 [-]: JMP       16           ; PC := 16
@@ -225,8 +225,8 @@
  50 [-]: GETGLOBAL R8 K8        ; R8 := 0x7ed49e49
  51 [-]: CALL      R5 4 1       ; R5(R6,R7,R8)
  52 [-]: SELF      R5 R4 K12    ; R6 := R4; R5 := R4[0x768274d6]
- 53 [-]: LOADBOOL  R7 1 0       ; R7 := true
- 54 [-]: LOADBOOL  R8 0 0       ; R8 := false
+ 53 [-]: LOADKB    R7 1 0       ; R7 := true
+ 54 [-]: LOADKB    R8 0 0       ; R8 := false
  55 [-]: CALL      R5 4 1       ; R5(R6,R7,R8)
  56 [-]: RETURN    R0 1         ; return 
 
@@ -275,8 +275,8 @@
  33 [-]: TEST      R5 1         ; if R5 then PC := 39
  34 [-]: JMP       39           ; PC := 39
  35 [-]: SELF      R5 R4 K5     ; R6 := R4; R5 := R4[0x768274d6]
- 36 [-]: LOADBOOL  R7 0 0       ; R7 := false
- 37 [-]: LOADBOOL  R8 0 0       ; R8 := false
+ 36 [-]: LOADKB    R7 0 0       ; R7 := false
+ 37 [-]: LOADKB    R8 0 0       ; R8 := false
  38 [-]: CALL      R5 4 1       ; R5(R6,R7,R8)
  39 [-]: RETURN    R0 1         ; return 
 

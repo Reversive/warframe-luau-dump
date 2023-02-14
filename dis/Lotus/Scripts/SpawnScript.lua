@@ -29,7 +29,7 @@
   6 [-]: LOADK     R3 K4        ; R3 := "PlayTriggeredAnim"
   7 [-]: CALL      R1 3 1       ; R1(R2,R3)
   8 [-]: GETGLOBAL R1 K5        ; R1 := 0xcbd666e1
-  9 [-]: LOADK     R2 1         ; R2 := 1.500000
+  9 [-]: CONST     R2 1         ; R2 := 1.500000
  10 [-]: CALL      R1 2 1       ; R1(R2)
  11 [-]: SELF      R1 R0 K6     ; R2 := R0; R1 := R0[0x33fc842f]
  12 [-]: GETGLOBAL R3 K7        ; R3 := 0x9b633954
@@ -47,7 +47,7 @@
  24 [-]: LOADK     R4 K14       ; R4 := "Hide"
  25 [-]: CALL      R2 3 1       ; R2(R3,R4)
  26 [-]: GETGLOBAL R2 K5        ; R2 := 0xcbd666e1
- 27 [-]: LOADK     R3 5         ; R3 := 5.000000
+ 27 [-]: CONST     R3 5         ; R3 := 5.000000
  28 [-]: CALL      R2 2 1       ; R2(R3)
  29 [-]: GETGLOBAL R2 K13       ; R2 := 0xb9b9a044
  30 [-]: SELF      R2 R2 K3     ; R3 := R2; R2 := R2[0x8eb2112d]

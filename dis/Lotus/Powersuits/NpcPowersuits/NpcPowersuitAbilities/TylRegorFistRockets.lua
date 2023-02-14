@@ -55,9 +55,9 @@
  26 [-]: SELF      R3 R0 K9     ; R4 := R0; R3 := R0[0x48d05257]
  27 [-]: GETTABLE  R5 R2 K3     ; R5 := R2["avatar"]
  28 [-]: CALL      R3 3 1       ; R3(R4,R5)
- 29 [-]: LOADK     R3 1         ; R3 := 1.000000
+ 29 [-]: CONST     R3 1         ; R3 := 1.000000
  30 [-]: RETURN    R3 2         ; return R3
- 31 [-]: LOADK     R3 0         ; R3 := 0.000000
+ 31 [-]: CONST     R3 0         ; R3 := 0.000000
  32 [-]: RETURN    R3 2         ; return R3
  33 [-]: RETURN    R0 1         ; return 
 
@@ -151,7 +151,7 @@
  35 [-]: TEST      R7 0         ; if not R7 then PC := 40
  36 [-]: JMP       40           ; PC := 40
  37 [-]: SELF      R8 R7 K9     ; R9 := R7; R8 := R7[0x31a3964d]
- 38 [-]: LOADK     R10 17       ; R10 := 17.000000
+ 38 [-]: CONST     R10 17       ; R10 := 17.000000
  39 [-]: CALL      R8 3 1       ; R8(R9,R10)
  40 [-]: GETGLOBAL R8 K10       ; R8 := 0x55156ff7
  41 [-]: CALL      R8 1 2       ; R8 := R8()
@@ -160,7 +160,7 @@
  44 [-]: CALL      R9 3 1       ; R9(R10,R11)
  45 [-]: SELF      R9 R1 K13    ; R10 := R1; R9 := R1[0x21b4c60e]
  46 [-]: GETGLOBAL R11 K14      ; R11 := 0xcc79ff20
- 47 [-]: LOADK     R12 10       ; R12 := 10.000000
+ 47 [-]: CONST     R12 10       ; R12 := 10.000000
  48 [-]: CALL      R9 4 1       ; R9(R10,R11,R12)
  49 [-]: GETGLOBAL R9 K10       ; R9 := 0x55156ff7
  50 [-]: CALL      R9 1 2       ; R9 := R9()
@@ -183,11 +183,11 @@
  67 [-]: LEN       R11 R10      ; R11 := # R10
  68 [-]: LT        0 K20 R11    ; if 1.000000 >= R11 then PC := 111
  69 [-]: JMP       111          ; PC := 111
- 70 [-]: LOADK     R11 0        ; R11 := 0.000000
+ 70 [-]: CONST     R11 0        ; R11 := 0.000000
  71 [-]: LOADNIL   R12 R12      ; R12 := nil
- 72 [-]: LOADK     R13 1        ; R13 := 1.000000
+ 72 [-]: CONST     R13 1        ; R13 := 1.000000
  73 [-]: LEN       R14 R10      ; R14 := # R10
- 74 [-]: LOADK     R15 1        ; R15 := 1.000000
+ 74 [-]: CONST     R15 1        ; R15 := 1.000000
  75 [-]: FORPREP   R13 107      ; R13 -= R15; PC := 107
  76 [-]: GETTABLE  R17 R10 R16  ; R17 := R10[R16]
  77 [-]: GETTABLE  R17 R17 K3   ; R17 := R17["visible"]
@@ -232,7 +232,7 @@
 116 [-]: CALL      R18 5 1      ; R18(R19,R20,R21,R22)
 117 [-]: SELF      R18 R1 K29   ; R19 := R1; R18 := R1[0x659d451f]
 118 [-]: GETGLOBAL R20 K30      ; R20 := 0xaec1ada0
-119 [-]: LOADBOOL  R21 0 0      ; R21 := false
+119 [-]: LOADKB    R21 0 0      ; R21 := false
 120 [-]: CALL      R18 4 1      ; R18(R19,R20,R21)
 121 [-]: GETGLOBAL R18 K31      ; R18 := 0xcbd666e1
 122 [-]: GETGLOBAL R19 K32      ; R19 := 0x62f98469

@@ -7,10 +7,10 @@
 ; Is_vararg:       2
 ; Max Stack Size:  6
 
-  1 [-]: LOADK     R0 0         ; R0 := 0.250000
+  1 [-]: CONST     R0 0         ; R0 := 0.250000
   2 [-]: NEWTABLE  R1 0 0       ; R1 := {}
   3 [-]: NEWTABLE  R2 0 0       ; R2 := {}
-  4 [-]: LOADBOOL  R3 0 0       ; R3 := false
+  4 [-]: LOADKB    R3 0 0       ; R3 := false
   5 [-]: CLOSURE   R4 0         ; R4 := closure(Function #1)
   6 [-]: MOVE      R0 R3        ; R0 := R3
   7 [-]: MOVE      R0 R2        ; R0 := R2
@@ -37,7 +37,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
-  1 [-]: LOADBOOL  R0 0 0       ; R0 := false
+  1 [-]: LOADKB    R0 0 0       ; R0 := false
   2 [-]: SETUPVAL  R0 U0        ; U82 := R0
   3 [-]: NEWTABLE  R0 0 0       ; R0 := {}
   4 [-]: SETUPVAL  R0 U1        ; U82 := R1
@@ -67,14 +67,14 @@
  10 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  11 [-]: EQ        1 R2 R3      ; if R2 == R3 then PC := 15
  12 [-]: JMP       15           ; PC := 15
- 13 [-]: LOADBOOL  R2 0 0       ; R2 := false
+ 13 [-]: LOADKB    R2 0 0       ; R2 := false
  14 [-]: RETURN    R2 2         ; return R2
  15 [-]: SELF      R2 R1 K3     ; R3 := R1; R2 := R1[0x420402a9]
  16 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  17 [-]: TEST      R2 1         ; if R2 then PC := 20
  18 [-]: JMP       20           ; PC := 20
  19 [-]: RETURN    R0 1         ; return 
- 20 [-]: LOADBOOL  R2 0 0       ; R2 := false
+ 20 [-]: LOADKB    R2 0 0       ; R2 := false
  21 [-]: SELF      R3 R0 K4     ; R4 := R0; R3 := R0[0x14a55974]
  22 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  23 [-]: GETGLOBAL R4 K0        ; R4 := 0x7b998233
@@ -138,9 +138,9 @@
  81 [-]: CALL      R10 2 2      ; R10 := R10(R11)
  82 [-]: MOVE      R2 R10       ; R2 := R10
  83 [-]: JMP       86           ; PC := 86
- 84 [-]: LOADBOOL  R2 0 1       ; R2 := false; PC := 85
- 85 [-]: LOADBOOL  R2 1 0       ; R2 := true
- 86 [-]: LOADBOOL  R10 1 0      ; R10 := true
+ 84 [-]: LOADKB    R2 0 1       ; R2 := false; PC := 85
+ 85 [-]: LOADKB    R2 1 0       ; R2 := true
+ 86 [-]: LOADKB    R10 1 0      ; R10 := true
  87 [-]: SETUPVAL  R10 U3       ; U82 := R3
  88 [-]: JMP       110          ; PC := 110
  89 [-]: GETUPVAL  R10 U3       ; R10 := U3
@@ -162,8 +162,8 @@
 105 [-]: CALL      R10 2 2      ; R10 := R10(R11)
 106 [-]: MOVE      R2 R10       ; R2 := R10
 107 [-]: JMP       110          ; PC := 110
-108 [-]: LOADBOOL  R2 0 1       ; R2 := false; PC := 109
-109 [-]: LOADBOOL  R2 1 0       ; R2 := true
+108 [-]: LOADKB    R2 0 1       ; R2 := false; PC := 109
+109 [-]: LOADKB    R2 1 0       ; R2 := true
 110 [-]: TEST      R2 0         ; if not R2 then PC := 114
 111 [-]: JMP       114          ; PC := 114
 112 [-]: GETUPVAL  R10 U4       ; R10 := U4
@@ -188,7 +188,7 @@
   5 [-]: JMP       8            ; PC := 8
   6 [-]: GETUPVAL  R2 U0        ; R2 := U0
   7 [-]: CALL      R2 1 1       ; R2()
-  8 [-]: LOADBOOL  R2 0 0       ; R2 := false
+  8 [-]: LOADKB    R2 0 0       ; R2 := false
   9 [-]: RETURN    R2 2         ; return R2
  10 [-]: RETURN    R0 1         ; return 
 

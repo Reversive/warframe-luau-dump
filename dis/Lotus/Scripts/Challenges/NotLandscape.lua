@@ -27,8 +27,8 @@
   4 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["missionType"]
   5 [-]: EQ        0 R2 K4      ; if R2 ~= 28.000000 then PC := 8
   6 [-]: JMP       8            ; PC := 8
-  7 [-]: LOADBOOL  R2 0 1       ; R2 := false; PC := 8
-  8 [-]: LOADBOOL  R2 1 0       ; R2 := true
+  7 [-]: LOADKB    R2 0 1       ; R2 := false; PC := 8
+  8 [-]: LOADKB    R2 1 0       ; R2 := true
   9 [-]: RETURN    R2 2         ; return R2
  10 [-]: RETURN    R0 1         ; return 
 

@@ -43,7 +43,7 @@
  20 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  21 [-]: SELF      R4 R4 K6     ; R5 := R4; R4 := R4[0xe9f54086]
  22 [-]: GETGLOBAL R6 K4        ; R6 := 0x348f767c
- 23 [-]: LOADK     R7 233       ; R7 := 233.000000
+ 23 [-]: CONST     R7 240       ; R7 := 240.000000
  24 [-]: SELF      R8 R1 K8     ; R9 := R1; R8 := R1[0xcde10c4a]
  25 [-]: CALL      R8 2 2       ; R8 := R8(R9)
  26 [-]: MOVE      R9 R1        ; R9 := R1
@@ -53,9 +53,9 @@
  30 [-]: JMP       46           ; PC := 46
  31 [-]: SELF      R4 R0 K10    ; R5 := R0; R4 := R0[0x5d985c7e]
  32 [-]: GETGLOBAL R6 K11       ; R6 := 0xdf496a57
- 33 [-]: LOADBOOL  R7 0 0       ; R7 := false
- 34 [-]: LOADBOOL  R8 0 0       ; R8 := false
- 35 [-]: LOADK     R9 0         ; R9 := 0.000000
+ 33 [-]: LOADKB    R7 0 0       ; R7 := false
+ 34 [-]: LOADKB    R8 0 0       ; R8 := false
+ 35 [-]: CONST     R9 0         ; R9 := 0.000000
  36 [-]: GETGLOBAL R10 K12      ; R10 := 0x0469f296
  37 [-]: CALL      R10 1 2      ; R10 := R10()
  38 [-]: GETGLOBAL R11 K4       ; R11 := 0x348f767c
@@ -63,14 +63,14 @@
  40 [-]: SELF      R12 R12 K13  ; R13 := R12; R12 := R12[0xf0267db4]
  41 [-]: CALL      R12 2 2      ; R12 := R12(R13)
  42 [-]: DIV       R11 R11 R12  ; R11 := R11 / R12
- 43 [-]: LOADBOOL  R12 1 0      ; R12 := true
+ 43 [-]: LOADKB    R12 1 0      ; R12 := true
  44 [-]: CALL      R4 9 1       ; R4(R5,R6,R7,R8,R9,R10,R11,R12)
  45 [-]: JMP       60           ; PC := 60
  46 [-]: SELF      R4 R0 K10    ; R5 := R0; R4 := R0[0x5d985c7e]
  47 [-]: GETGLOBAL R6 K14       ; R6 := 0xe0496bea
- 48 [-]: LOADBOOL  R7 0 0       ; R7 := false
- 49 [-]: LOADBOOL  R8 0 0       ; R8 := false
- 50 [-]: LOADK     R9 1         ; R9 := 1.000000
+ 48 [-]: LOADKB    R7 0 0       ; R7 := false
+ 49 [-]: LOADKB    R8 0 0       ; R8 := false
+ 50 [-]: CONST     R9 1         ; R9 := 1.000000
  51 [-]: GETGLOBAL R10 K12      ; R10 := 0x0469f296
  52 [-]: CALL      R10 1 2      ; R10 := R10()
  53 [-]: GETGLOBAL R11 K4       ; R11 := 0x348f767c
@@ -78,7 +78,7 @@
  55 [-]: SELF      R12 R12 K13  ; R13 := R12; R12 := R12[0xf0267db4]
  56 [-]: CALL      R12 2 2      ; R12 := R12(R13)
  57 [-]: DIV       R11 R11 R12  ; R11 := R11 / R12
- 58 [-]: LOADBOOL  R12 1 0      ; R12 := true
+ 58 [-]: LOADKB    R12 1 0      ; R12 := true
  59 [-]: CALL      R4 9 1       ; R4(R5,R6,R7,R8,R9,R10,R11,R12)
  60 [-]: RETURN    R0 1         ; return 
 

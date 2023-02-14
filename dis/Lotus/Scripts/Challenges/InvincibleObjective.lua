@@ -54,7 +54,7 @@
   6 [-]: JMP       9            ; PC := 9
   7 [-]: GETGLOBAL R3 K0        ; R3 := _T
   8 [-]: SETTABLE  R3 R2 K2     ; R3[R2] := nil
-  9 [-]: LOADBOOL  R3 0 0       ; R3 := false
+  9 [-]: LOADKB    R3 0 0       ; R3 := false
  10 [-]: RETURN    R3 2         ; return R3
  11 [-]: RETURN    R0 1         ; return 
 
@@ -91,11 +91,11 @@
  21 [-]: JMP       26           ; PC := 26
  22 [-]: GETGLOBAL R4 K2        ; R4 := _T
  23 [-]: SETTABLE  R4 R3 K5     ; R4[R3] := nil
- 24 [-]: LOADBOOL  R4 1 0       ; R4 := true
+ 24 [-]: LOADKB    R4 1 0       ; R4 := true
  25 [-]: RETURN    R4 2         ; return R4
  26 [-]: GETGLOBAL R4 K2        ; R4 := _T
  27 [-]: SETTABLE  R4 R3 K5     ; R4[R3] := nil
- 28 [-]: LOADBOOL  R4 0 0       ; R4 := false
+ 28 [-]: LOADKB    R4 0 0       ; R4 := false
  29 [-]: RETURN    R4 2         ; return R4
  30 [-]: RETURN    R0 1         ; return 
 

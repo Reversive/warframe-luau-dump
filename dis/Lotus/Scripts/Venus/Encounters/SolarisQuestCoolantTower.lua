@@ -68,7 +68,7 @@
  13 [-]: TEST      R1 1         ; if R1 then PC := 19
  14 [-]: JMP       19           ; PC := 19
  15 [-]: GETGLOBAL R1 K6        ; R1 := 0xcbd666e1
- 16 [-]: LOADK     R2 0         ; R2 := 0.000000
+ 16 [-]: CONST     R2 0         ; R2 := 0.000000
  17 [-]: CALL      R1 2 1       ; R1(R2)
  18 [-]: JMP       10           ; PC := 10
  19 [-]: SETUPVAL  R0 U1        ; U82 := R1
@@ -106,14 +106,14 @@
  51 [-]: JMP       56           ; PC := 56
  52 [-]: GETUPVAL  R2 U2        ; R2 := U2
  53 [-]: SELF      R2 R2 K17    ; R3 := R2; R2 := R2[0x5b18bb5d]
- 54 [-]: LOADK     R4 1         ; R4 := 1.000000
+ 54 [-]: CONST     R4 1         ; R4 := 1.000000
  55 [-]: CALL      R2 3 1       ; R2(R3,R4)
  56 [-]: SELF      R2 R0 K18    ; R3 := R0; R2 := R0[0xefe6cad1]
  57 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  58 [-]: EQ        0 R2 K20     ; if R2 ~= 1.000000 then PC := 63
  59 [-]: JMP       63           ; PC := 63
  60 [-]: SELF      R2 R0 K21    ; R3 := R0; R2 := R0[0xfe9dc265]
- 61 [-]: LOADK     R4 2         ; R4 := 2.000000
+ 61 [-]: CONST     R4 2         ; R4 := 2.000000
  62 [-]: CALL      R2 3 1       ; R2(R3,R4)
  63 [-]: GETGLOBAL R2 K0        ; R2 := 0x3d106989
  64 [-]: LOADK     R3 K22       ; R3 := "Encounter: SolarisQuest Coolant Towers:  complete"
@@ -245,7 +245,7 @@
  71 [-]: SELF      R4 R2 K7     ; R5 := R2; R4 := R2[0x383d2e7d]
  72 [-]: CALL      R4 2 1       ; R4(R5)
  73 [-]: GETGLOBAL R4 K17       ; R4 := 0xcbd666e1
- 74 [-]: LOADK     R5 3         ; R5 := 3.000000
+ 74 [-]: CONST     R5 3         ; R5 := 3.000000
  75 [-]: CALL      R4 2 1       ; R4(R5)
  76 [-]: GETUPVAL  R4 U6        ; R4 := U6
  77 [-]: GETTABLE  R4 R4 K9     ; R4 := R4[0x9742b85b]
@@ -272,7 +272,7 @@
  98 [-]: LOADK     R5 K23       ; R5 := "Encounter: Coolant Tower: Success!"
  99 [-]: CALL      R4 2 1       ; R4(R5)
 100 [-]: SELF      R4 R0 K24    ; R5 := R0; R4 := R0[0xfe9dc265]
-101 [-]: LOADK     R6 4         ; R6 := 4.000000
+101 [-]: CONST     R6 4         ; R6 := 4.000000
 102 [-]: CALL      R4 3 1       ; R4(R5,R6)
 103 [-]: GETGLOBAL R4 K22       ; R4 := 0x3d106989
 104 [-]: LOADK     R5 K26       ; R5 := "Encounter: Coolant Tower: Encounter ended"

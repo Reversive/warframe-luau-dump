@@ -165,10 +165,10 @@
  43 [-]: GETTABLE  R2 R2 K1     ; R2 := R2["gFishing"]
  44 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["levelData"]
  45 [-]: GETTABLE  R2 R2 K10    ; R2 := R2["avatarsInWater"]
- 46 [-]: LOADBOOL  R3 0 0       ; R3 := false
- 47 [-]: LOADK     R4 1         ; R4 := 1.000000
+ 46 [-]: LOADKB    R3 0 0       ; R3 := false
+ 47 [-]: CONST     R4 1         ; R4 := 1.000000
  48 [-]: LEN       R5 R2        ; R5 := # R2
- 49 [-]: LOADK     R6 1         ; R6 := 1.000000
+ 49 [-]: CONST     R6 1         ; R6 := 1.000000
  50 [-]: FORPREP   R4 59        ; R4 -= R6; PC := 59
  51 [-]: GETTABLE  R8 R2 R7     ; R8 := R2[R7]
  52 [-]: GETTABLE  R8 R8 K11    ; R8 := R8["avtatar"]
@@ -176,7 +176,7 @@
  54 [-]: JMP       59           ; PC := 59
  55 [-]: GETTABLE  R8 R2 R7     ; R8 := R2[R7]
  56 [-]: SETTABLE  R8 K12 R1    ; R8["lastPos"] := R1
- 57 [-]: LOADBOOL  R3 1 0       ; R3 := true
+ 57 [-]: LOADKB    R3 1 0       ; R3 := true
  58 [-]: JMP       60           ; PC := 60
  59 [-]: FORLOOP   R4 51        ; R4 += R6; if R4 <= R5 then begin PC := 51; R7 := R4 end
  60 [-]: TEST      R3 1         ; if R3 then PC := 76
@@ -237,7 +237,7 @@
  28 [-]: GETGLOBAL R4 K7        ; R4 := 0x89326c93
  29 [-]: SELF      R4 R4 K8     ; R5 := R4; R4 := R4[0x62f9d8d2]
  30 [-]: MOVE      R6 R2        ; R6 := R2
- 31 [-]: LOADBOOL  R7 0 0       ; R7 := false
+ 31 [-]: LOADKB    R7 0 0       ; R7 := false
  32 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
  33 [-]: TEST      R4 0         ; if not R4 then PC := 51
  34 [-]: JMP       51           ; PC := 51
@@ -356,9 +356,9 @@
  23 [-]: GETTABLE  R2 R2 K1     ; R2 := R2["gFishing"]
  24 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["levelData"]
  25 [-]: GETTABLE  R2 R2 K3     ; R2 := R2["avatarsInWater"]
- 26 [-]: LOADK     R3 1         ; R3 := 1.000000
+ 26 [-]: CONST     R3 1         ; R3 := 1.000000
  27 [-]: LEN       R4 R2        ; R4 := # R2
- 28 [-]: LOADK     R5 1         ; R5 := 1.000000
+ 28 [-]: CONST     R5 1         ; R5 := 1.000000
  29 [-]: FORPREP   R3 40        ; R3 -= R5; PC := 40
  30 [-]: GETTABLE  R7 R2 R6     ; R7 := R2[R6]
  31 [-]: GETTABLE  R7 R7 K6     ; R7 := R7["avatar"]

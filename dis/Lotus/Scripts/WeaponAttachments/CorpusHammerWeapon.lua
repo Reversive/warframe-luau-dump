@@ -7,7 +7,7 @@
 ; Is_vararg:       2
 ; Max Stack Size:  5
 
-  1 [-]: LOADK     R0 10        ; R0 := 10.000000
+  1 [-]: CONST     R0 10        ; R0 := 10.000000
   2 [-]: GETGLOBAL R1 K0        ; R1 := 0x0469f296
   3 [-]: LOADK     R2 K1        ; R2 := "UnlitAtten"
   4 [-]: CALL      R1 2 2       ; R1 := R1(R2)
@@ -164,9 +164,9 @@
  16 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  17 [-]: TEST      R4 0         ; if not R4 then PC := 21
  18 [-]: JMP       21           ; PC := 21
- 19 [-]: LOADBOOL  R4 0 0       ; R4 := false
+ 19 [-]: LOADKB    R4 0 0       ; R4 := false
  20 [-]: RETURN    R4 2         ; return R4
- 21 [-]: LOADBOOL  R4 1 0       ; R4 := true
+ 21 [-]: LOADKB    R4 1 0       ; R4 := true
  22 [-]: RETURN    R4 2         ; return R4
  23 [-]: RETURN    R0 1         ; return 
 
@@ -214,8 +214,8 @@
  17 [-]: LT        0 K5 R5      ; if 0.000000 >= R5 then PC := 76
  18 [-]: JMP       76           ; PC := 76
  19 [-]: SELF      R5 R0 K6     ; R6 := R0; R5 := R0[0x92c56c50]
- 20 [-]: LOADK     R7 1         ; R7 := 1.000000
- 21 [-]: LOADK     R8 0         ; R8 := 0.000000
+ 20 [-]: CONST     R7 1         ; R7 := 1.000000
+ 21 [-]: CONST     R8 0         ; R8 := 0.000000
  22 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
  23 [-]: GETGLOBAL R6 K8        ; R6 := 0x7b998233
  24 [-]: MOVE      R7 R5        ; R7 := R5
@@ -271,11 +271,11 @@
  74 [-]: GETTABLE  R7 R7 K3     ; R7 := R7["crpHammer"]
  75 [-]: SETTABLE  R7 R4 K5     ; R7[R4] := 0.000000
  76 [-]: SELF      R7 R0 K6     ; R8 := R0; R7 := R0[0x92c56c50]
- 77 [-]: LOADK     R9 1         ; R9 := 1.000000
- 78 [-]: LOADK     R10 0        ; R10 := 0.000000
+ 77 [-]: CONST     R9 1         ; R9 := 1.000000
+ 78 [-]: CONST     R10 0        ; R10 := 0.000000
  79 [-]: CALL      R7 4 2       ; R7 := R7(R8,R9,R10)
  80 [-]: GETGLOBAL R8 K21       ; R8 := 0xcbd666e1
- 81 [-]: LOADK     R9 0         ; R9 := 0.000000
+ 81 [-]: CONST     R9 0         ; R9 := 0.000000
  82 [-]: CALL      R8 2 1       ; R8(R9)
  83 [-]: GETGLOBAL R8 K8        ; R8 := 0x7b998233
  84 [-]: MOVE      R9 R7        ; R9 := R7
@@ -298,7 +298,7 @@
 ; Max Stack Size:  23
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0xcbd666e1
-  2 [-]: LOADK     R2 0         ; R2 := 0.000000
+  2 [-]: CONST     R2 0         ; R2 := 0.000000
   3 [-]: CALL      R1 2 1       ; R1(R2)
   4 [-]: SELF      R1 R0 K1     ; R2 := R0; R1 := R0[0x73a8846a]
   5 [-]: CALL      R1 2 2       ; R1 := R1(R2)
@@ -350,7 +350,7 @@
  51 [-]: TEST      R5 0         ; if not R5 then PC := 57
  52 [-]: JMP       57           ; PC := 57
  53 [-]: GETGLOBAL R5 K0        ; R5 := 0xcbd666e1
- 54 [-]: LOADK     R6 0         ; R6 := 0.000000
+ 54 [-]: CONST     R6 0         ; R6 := 0.000000
  55 [-]: CALL      R5 2 1       ; R5(R6)
  56 [-]: JMP       48           ; PC := 48
  57 [-]: GETGLOBAL R5 K12       ; R5 := 0xbe190284
@@ -366,10 +366,10 @@
  67 [-]: SELF      R6 R6 K13    ; R7 := R6; R6 := R6[0xf2deaf69]
  68 [-]: GETGLOBAL R8 K16       ; R8 := gLotusAttractModeGameRulesType
  69 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
- 70 [-]: LOADK     R7 0         ; R7 := 0.000000
- 71 [-]: LOADK     R8 2         ; R8 := 2.000000
+ 70 [-]: CONST     R7 0         ; R7 := 0.000000
+ 71 [-]: CONST     R8 2         ; R8 := 2.000000
  72 [-]: SELF      R9 R5 K17    ; R10 := R5; R9 := R5[0xc4bae1d8]
- 73 [-]: LOADK     R11 0        ; R11 := 0.000000
+ 73 [-]: CONST     R11 0        ; R11 := 0.000000
  74 [-]: MOVE      R12 R1       ; R12 := R1
  75 [-]: CALL      R9 4 2       ; R9 := R9(R10,R11,R12)
  76 [-]: GETGLOBAL R10 K2       ; R10 := 0x7b998233
@@ -386,7 +386,7 @@
  87 [-]: GETTABLE  R10 R10 K6   ; R10 := R10["crpHammer"]
  88 [-]: GETTABLE  R10 R10 R3   ; R10 := R10[R3]
  89 [-]: SELF      R11 R5 K17   ; R12 := R5; R11 := R5[0xc4bae1d8]
- 90 [-]: LOADK     R13 0        ; R13 := 0.000000
+ 90 [-]: CONST     R13 0        ; R13 := 0.000000
  91 [-]: MOVE      R14 R1       ; R14 := R1
  92 [-]: CALL      R11 4 2      ; R11 := R11(R12,R13,R14)
  93 [-]: GETGLOBAL R12 K19      ; R12 := 0x5bced4c4
@@ -405,7 +405,7 @@
 106 [-]: MOVE      R12 R10      ; R12 := R10
 107 [-]: TEST      R11 1        ; if R11 then PC := 110
 108 [-]: JMP       110          ; PC := 110
-109 [-]: LOADK     R12 0        ; R12 := 0.000000
+109 [-]: CONST     R12 0        ; R12 := 0.000000
 110 [-]: SELF      R13 R4 K22   ; R14 := R4; R13 := R4[0x986d2ab8]
 111 [-]: GETUPVAL  R15 U0       ; R15 := U0
 112 [-]: MOVE      R16 R12      ; R16 := R12
@@ -459,7 +459,7 @@
 160 [-]: CALL      R13 1 2      ; R13 := R13()
 161 [-]: SUB       R8 R8 R13    ; R8 := R8 - R13
 162 [-]: GETGLOBAL R13 K0       ; R13 := 0xcbd666e1
-163 [-]: LOADK     R14 0        ; R14 := 0.000000
+163 [-]: CONST     R14 0        ; R14 := 0.000000
 164 [-]: CALL      R13 2 1      ; R13(R14)
 165 [-]: JMP       76           ; PC := 76
 166 [-]: RETURN    R0 1         ; return 
@@ -537,7 +537,7 @@
  20 [-]: GETTABLE  R3 R3 K2     ; R3 := R3["crpHammer"]
  21 [-]: GETGLOBAL R4 K5        ; R4 := 0x5bced4c4
  22 [-]: GETTABLE  R4 R4 K6     ; R4 := R4[0xb62ecfe0]
- 23 [-]: LOADK     R5 0         ; R5 := 0.000000
+ 23 [-]: CONST     R5 0         ; R5 := 0.000000
  24 [-]: GETGLOBAL R6 K1        ; R6 := _T
  25 [-]: GETTABLE  R6 R6 K2     ; R6 := R6["crpHammer"]
  26 [-]: GETTABLE  R6 R6 R2     ; R6 := R6[R2]

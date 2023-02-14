@@ -9,13 +9,13 @@
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x89326c93
   2 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0xe3a0bbca]
-  3 [-]: LOADK     R2 0         ; R2 := 0.000000
+  3 [-]: CONST     R2 0         ; R2 := 0.000000
   4 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
   5 [-]: GETGLOBAL R1 K2        ; R1 := 0xbe190284
   6 [-]: GETGLOBAL R2 K3        ; R2 := 0x0469f296
   7 [-]: LOADK     R3 K4        ; R3 := "Timer"
   8 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  9 [-]: LOADK     R3 5         ; R3 := 5.000000
+  9 [-]: CONST     R3 5         ; R3 := 5.000000
  10 [-]: LOADK     R4 K5        ; R4 := "/Lotus/Language/Dojo/RaceIncreaseSeconds"
  11 [-]: LOADK     R5 K6        ; R5 := "/Lotus/Language/Dojo/RaceIntroMessage"
  12 [-]: CLOSURE   R6 0         ; R6 := closure(Function #1)
@@ -60,8 +60,8 @@
   3 [-]: CALL      R0 2 4       ; R0,R1,R2 := R0(R1)
   4 [-]: JMP       17           ; PC := 17
   5 [-]: SELF      R5 R4 K2     ; R6 := R4; R5 := R4[0x768274d6]
-  6 [-]: LOADBOOL  R7 1 0       ; R7 := true
-  7 [-]: LOADBOOL  R8 1 0       ; R8 := true
+  6 [-]: LOADKB    R7 1 0       ; R7 := true
+  7 [-]: LOADKB    R8 1 0       ; R8 := true
   8 [-]: CALL      R5 4 1       ; R5(R6,R7,R8)
   9 [-]: SELF      R5 R4 K3     ; R6 := R4; R5 := R4[0xf2deaf69]
  10 [-]: GETGLOBAL R7 K4        ; R7 := 0xbc3cef03
@@ -98,16 +98,16 @@
  11 [-]: LOADK     R6 K3        ; R6 := "Time Added"
  12 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  13 [-]: MOVE      R6 R1        ; R6 := R1
- 14 [-]: LOADBOOL  R7 1 0       ; R7 := true
- 15 [-]: LOADBOOL  R8 1 0       ; R8 := true
+ 14 [-]: LOADKB    R7 1 0       ; R7 := true
+ 15 [-]: LOADKB    R8 1 0       ; R8 := true
  16 [-]: CALL      R2 7 1       ; R2(R3,R4,R5,R6,R7,R8)
  17 [-]: GETGLOBAL R2 K4        ; R2 := _T
  18 [-]: GETTABLE  R2 R2 K5     ; R2 := R2[0x659270d0]
  19 [-]: GETUPVAL  R3 U3        ; R3 := U3
- 20 [-]: LOADK     R4 1         ; R4 := 1.000000
- 21 [-]: LOADBOOL  R5 1 0       ; R5 := true
+ 20 [-]: CONST     R4 1         ; R4 := 1.000000
+ 21 [-]: LOADKB    R5 1 0       ; R5 := true
  22 [-]: LOADNIL   R6 R6        ; R6 := nil
- 23 [-]: LOADBOOL  R7 0 0       ; R7 := false
+ 23 [-]: LOADKB    R7 0 0       ; R7 := false
  24 [-]: NEWTABLE  R8 0 1       ; R8 := {}
  25 [-]: GETUPVAL  R9 U2        ; R9 := U2
  26 [-]: SETTABLE  R8 K6 R9     ; R8["SECONDS"] := R9
@@ -125,12 +125,12 @@
 ; Max Stack Size:  4
 
   1 [-]: SELF      R1 R0 K0     ; R2 := R0; R1 := R0[0x0e46e45b]
-  2 [-]: LOADK     R3 15        ; R3 := 15.000000
+  2 [-]: CONST     R3 15        ; R3 := 15.000000
   3 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
   4 [-]: TEST      R1 0         ; if not R1 then PC := 10
   5 [-]: JMP       10           ; PC := 10
   6 [-]: GETGLOBAL R1 K2        ; R1 := 0xcbd666e1
-  7 [-]: LOADK     R2 0         ; R2 := 0.000000
+  7 [-]: CONST     R2 0         ; R2 := 0.000000
   8 [-]: CALL      R1 2 1       ; R1(R2)
   9 [-]: JMP       1            ; PC := 1
  10 [-]: GETGLOBAL R1 K3        ; R1 := 0x6d2e45e6
@@ -162,7 +162,7 @@
   7 [-]: SETTABLE  R0 K5 K6     ; R0["gTimeIncrease"] := 0.000000
   8 [-]: GETUPVAL  R0 U0        ; R0 := U0
   9 [-]: SELF      R0 R0 K7     ; R1 := R0; R0 := R0[0x416d7dcf]
- 10 [-]: LOADBOOL  R2 1 0       ; R2 := true
+ 10 [-]: LOADKB    R2 1 0       ; R2 := true
  11 [-]: CALL      R0 3 1       ; R0(R1,R2)
  12 [-]: GETGLOBAL R0 K8        ; R0 := 0x89326c93
  13 [-]: SELF      R0 R0 K9     ; R1 := R0; R0 := R0[0xfb669000]
@@ -193,7 +193,7 @@
  38 [-]: SELF      R7 R7 K17    ; R8 := R7; R7 := R7[0xf7d48ee0]
  39 [-]: CALL      R7 2 2       ; R7 := R7(R8)
  40 [-]: SELF      R7 R7 K18    ; R8 := R7; R7 := R7[0x1bf26251]
- 41 [-]: LOADBOOL  R9 0 0       ; R9 := false
+ 41 [-]: LOADKB    R9 0 0       ; R9 := false
  42 [-]: CALL      R7 3 1       ; R7(R8,R9)
  43 [-]: GETUPVAL  R7 U1        ; R7 := U1
  44 [-]: SELF      R7 R7 K19    ; R8 := R7; R7 := R7[0x5e651723]
@@ -208,8 +208,8 @@
  53 [-]: GETUPVAL  R11 U3       ; R11 := U3
  54 [-]: CALL      R10 2 2      ; R10 := R10(R11)
  55 [-]: GETGLOBAL R11 K23      ; R11 := 0xdaf34e92
- 56 [-]: LOADBOOL  R12 1 0      ; R12 := true
- 57 [-]: LOADBOOL  R13 1 0      ; R13 := true
+ 56 [-]: LOADKB    R12 1 0      ; R12 := true
+ 57 [-]: LOADKB    R13 1 0      ; R13 := true
  58 [-]: CALL      R7 7 1       ; R7(R8,R9,R10,R11,R12,R13)
  59 [-]: GETUPVAL  R7 U0        ; R7 := U0
  60 [-]: SELF      R7 R7 K24    ; R8 := R7; R7 := R7[0xffddf768]
@@ -222,7 +222,7 @@
  67 [-]: TEST      R7 1         ; if R7 then PC := 73
  68 [-]: JMP       73           ; PC := 73
  69 [-]: GETGLOBAL R7 K3        ; R7 := 0xcbd666e1
- 70 [-]: LOADK     R8 0         ; R8 := 0.000000
+ 70 [-]: CONST     R8 0         ; R8 := 0.000000
  71 [-]: CALL      R7 2 1       ; R7(R8)
  72 [-]: JMP       59           ; PC := 59
  73 [-]: GETGLOBAL R7 K0        ; R7 := _T
@@ -235,9 +235,9 @@
  80 [-]: GETGLOBAL R10 K22      ; R10 := 0x0469f296
  81 [-]: GETUPVAL  R11 U3       ; R11 := U3
  82 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 83 [-]: LOADK     R11 0        ; R11 := 0.000000
- 84 [-]: LOADBOOL  R12 0 0      ; R12 := false
- 85 [-]: LOADBOOL  R13 1 0      ; R13 := true
+ 83 [-]: CONST     R11 0        ; R11 := 0.000000
+ 84 [-]: LOADKB    R12 0 0      ; R12 := false
+ 85 [-]: LOADKB    R13 1 0      ; R13 := true
  86 [-]: CALL      R7 7 1       ; R7(R8,R9,R10,R11,R12,R13)
  87 [-]: GETGLOBAL R7 K25       ; R7 := 0x2d0fad09
  88 [-]: LOADK     R8 K26       ; R8 := "Lotus.Interface.LotusUtilities"

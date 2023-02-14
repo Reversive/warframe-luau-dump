@@ -63,11 +63,11 @@
  38 [-]: GETGLOBAL R6 K9        ; R6 := 0x0469f296
  39 [-]: LOADK     R7 K10       ; R7 := "ELECTRIFIED_LOOP"
  40 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 41 [-]: LOADBOOL  R7 0 0       ; R7 := false
- 42 [-]: LOADK     R8 2         ; R8 := 2.000000
- 43 [-]: LOADK     R9 2         ; R9 := 2.000000
- 44 [-]: LOADBOOL  R10 1 0      ; R10 := true
- 45 [-]: LOADK     R11 1        ; R11 := 1.000000
+ 41 [-]: LOADKB    R7 0 0       ; R7 := false
+ 42 [-]: CONST     R8 2         ; R8 := 2.000000
+ 43 [-]: CONST     R9 2         ; R9 := 2.000000
+ 44 [-]: LOADKB    R10 1 0      ; R10 := true
+ 45 [-]: CONST     R11 1        ; R11 := 1.000000
  46 [-]: CALL      R4 8 1       ; R4(R5,R6,R7,R8,R9,R10,R11)
  47 [-]: GETGLOBAL R4 K1        ; R4 := 0x7b998233
  48 [-]: GETGLOBAL R5 K12       ; R5 := 0xb992d2ad
@@ -129,7 +129,7 @@
  23 [-]: GETGLOBAL R4 K8        ; R4 := 0x0469f296
  24 [-]: LOADK     R5 K9        ; R5 := "ELECTRIFIED_LOOP"
  25 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 26 [-]: LOADBOOL  R5 0 0       ; R5 := false
+ 26 [-]: LOADKB    R5 0 0       ; R5 := false
  27 [-]: CALL      R2 4 2       ; R2 := R2(R3,R4,R5)
  28 [-]: TEST      R2 0         ; if not R2 then PC := 48
  29 [-]: JMP       48           ; PC := 48
@@ -145,11 +145,11 @@
  39 [-]: GETGLOBAL R5 K8        ; R5 := 0x0469f296
  40 [-]: LOADK     R6 K14       ; R6 := "ELECTRIFIED_END"
  41 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 42 [-]: LOADBOOL  R6 0 0       ; R6 := false
- 43 [-]: LOADK     R7 2         ; R7 := 2.000000
- 44 [-]: LOADK     R8 1         ; R8 := 1.000000
- 45 [-]: LOADBOOL  R9 1 0       ; R9 := true
- 46 [-]: LOADK     R10 1        ; R10 := 1.000000
+ 42 [-]: LOADKB    R6 0 0       ; R6 := false
+ 43 [-]: CONST     R7 2         ; R7 := 2.000000
+ 44 [-]: CONST     R8 1         ; R8 := 1.000000
+ 45 [-]: LOADKB    R9 1 0       ; R9 := true
+ 46 [-]: CONST     R10 1        ; R10 := 1.000000
  47 [-]: CALL      R3 8 1       ; R3(R4,R5,R6,R7,R8,R9,R10)
  48 [-]: RETURN    R0 1         ; return 
 

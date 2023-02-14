@@ -56,8 +56,8 @@
   3 [-]: CALL      R0 2 4       ; R0,R1,R2 := R0(R1)
   4 [-]: JMP       80           ; PC := 80
   5 [-]: GETGLOBAL R5 K2        ; R5 := 0xc163f229
-  6 [-]: LOADK     R6 0         ; R6 := 0.000000
-  7 [-]: LOADK     R7 1         ; R7 := 1.000000
+  6 [-]: CONST     R6 0         ; R6 := 0.000000
+  7 [-]: CONST     R7 1         ; R7 := 1.000000
   8 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
   9 [-]: EQ        0 R3 K3      ; if R3 ~= 1.000000 then PC := 18
  10 [-]: JMP       18           ; PC := 18
@@ -127,7 +127,7 @@
  74 [-]: GETUPVAL  R6 U0        ; R6 := U0
  75 [-]: GETGLOBAL R7 K1        ; R7 := 0x60a0f82c
  76 [-]: MOVE      R8 R3        ; R8 := R3
- 77 [-]: LOADK     R9 0         ; R9 := 0.500000
+ 77 [-]: CONST     R9 0         ; R9 := 0.500000
  78 [-]: MOVE      R10 R5       ; R10 := R5
  79 [-]: CALL      R6 5 1       ; R6(R7,R8,R9,R10)
  80 [-]: TFORLOOP  R0 2         ; R3,R4 :=  R0(R1,R2); if R3 ~= nil then begin PC = 5; R2 := R3 end
@@ -159,7 +159,7 @@
 ; Max Stack Size:  2
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0xcbd666e1
-  2 [-]: LOADK     R1 5         ; R1 := 5.000000
+  2 [-]: CONST     R1 5         ; R1 := 5.000000
   3 [-]: CALL      R0 2 1       ; R0(R1)
   4 [-]: GETUPVAL  R0 U0        ; R0 := U0
   5 [-]: CALL      R0 1 1       ; R0()

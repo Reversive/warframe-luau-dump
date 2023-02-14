@@ -29,7 +29,7 @@
   6 [-]: MOVE      R2 R0        ; R2 := R0
   7 [-]: LOADK     R3 K4        ; R3 := "hubMission"
   8 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
-  9 [-]: NOT       R1 R1        ; R1 := not R1
+  9 [-]: NOT       R1 R1        ; R1 :=  R1
  10 [-]: RETURN    R1 2         ; return R1
  11 [-]: RETURN    R0 1         ; return 
 

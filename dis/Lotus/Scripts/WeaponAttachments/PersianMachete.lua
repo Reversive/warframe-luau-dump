@@ -45,7 +45,7 @@
  22 [-]: SELF      R5 R4 K3     ; R6 := R4; R5 := R4[0xde321e6f]
  23 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  24 [-]: SELF      R5 R5 K5     ; R6 := R5; R5 := R5[0xe85a2361]
- 25 [-]: LOADK     R7 3         ; R7 := 3.000000
+ 25 [-]: CONST     R7 3         ; R7 := 3.000000
  26 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
  27 [-]: GETGLOBAL R6 K0        ; R6 := 0x7b998233
  28 [-]: MOVE      R7 R5        ; R7 := R5

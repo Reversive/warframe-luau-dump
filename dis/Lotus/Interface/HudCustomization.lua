@@ -23,70 +23,70 @@
  14 [-]: LOADK     R5 K5        ; R5 := "Lotus.Interface.Components.ThemedButton"
  15 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  16 [-]: LOADNIL   R5 R6        ; R5 := R6 := nil
- 17 [-]: LOADBOOL  R7 0 0       ; R7 := false
- 18 [-]: LOADBOOL  R8 0 0       ; R8 := false
+ 17 [-]: LOADKB    R7 0 0       ; R7 := false
+ 18 [-]: LOADKB    R8 0 0       ; R8 := false
  19 [-]: LOADNIL   R9 R14       ; R9 := R10 := R11 := R12 := R13 := R14 := nil
- 20 [-]: LOADBOOL  R15 0 0      ; R15 := false
+ 20 [-]: LOADKB    R15 0 0      ; R15 := false
  21 [-]: NEWTABLE  R16 0 0      ; R16 := {}
  22 [-]: NEWTABLE  R17 0 0      ; R17 := {}
  23 [-]: LOADNIL   R18 R18      ; R18 := nil
  24 [-]: NEWTABLE  R19 0 0      ; R19 := {}
  25 [-]: LOADNIL   R20 R21      ; R20 := R21 := nil
- 26 [-]: LOADK     R22 0        ; R22 := 0.000000
- 27 [-]: LOADK     R23 2        ; R23 := 2.000000
+ 26 [-]: CONST     R22 0        ; R22 := 0.000000
+ 27 [-]: CONST     R23 2        ; R23 := 2.000000
  28 [-]: NEWTABLE  R24 29 0     ; R24 := {}
- 29 [-]: LOADK     R25 19       ; R25 := 19.000000
- 30 [-]: LOADK     R26 48       ; R26 := 48.000000
- 31 [-]: LOADK     R27 38       ; R27 := 38.000000
- 32 [-]: LOADK     R28 0        ; R28 := 0.000000
- 33 [-]: LOADK     R29 24       ; R29 := 24.000000
- 34 [-]: LOADK     R30 25       ; R30 := 25.000000
- 35 [-]: LOADK     R31 34       ; R31 := 34.000000
- 36 [-]: LOADK     R32 46       ; R32 := 46.000000
- 37 [-]: LOADK     R33 52       ; R33 := 52.000000
- 38 [-]: LOADK     R34 44       ; R34 := 44.000000
- 39 [-]: LOADK     R35 15       ; R35 := 15.000000
- 40 [-]: LOADK     R36 11       ; R36 := 11.000000
- 41 [-]: LOADK     R37 12       ; R37 := 12.000000
- 42 [-]: LOADK     R38 17       ; R38 := 17.000000
- 43 [-]: LOADK     R39 33       ; R39 := 33.000000
- 44 [-]: LOADK     R40 3        ; R40 := 3.000000
- 45 [-]: LOADK     R41 8        ; R41 := 8.000000
- 46 [-]: LOADK     R42 47       ; R42 := 47.000000
- 47 [-]: LOADK     R43 7        ; R43 := 7.000000
- 48 [-]: LOADK     R44 49       ; R44 := 49.000000
- 49 [-]: LOADK     R45 50       ; R45 := 50.000000
- 50 [-]: LOADK     R46 21       ; R46 := 21.000000
- 51 [-]: LOADK     R47 18       ; R47 := 18.000000
- 52 [-]: LOADK     R48 37       ; R48 := 37.000000
- 53 [-]: LOADK     R49 36       ; R49 := 36.000000
- 54 [-]: LOADK     R50 9        ; R50 := 9.000000
- 55 [-]: LOADK     R51 23       ; R51 := 23.000000
- 56 [-]: LOADK     R52 26       ; R52 := 26.000000
- 57 [-]: LOADK     R53 16       ; R53 := 16.000000
- 58 [-]: LOADK     R54 28       ; R54 := 28.000000
- 59 [-]: LOADK     R55 40       ; R55 := 40.000000
- 60 [-]: LOADK     R56 35       ; R56 := 35.000000
- 61 [-]: LOADK     R57 1        ; R57 := 1.000000
- 62 [-]: LOADK     R58 13       ; R58 := 13.000000
- 63 [-]: LOADK     R59 27       ; R59 := 27.000000
- 64 [-]: LOADK     R60 10       ; R60 := 10.000000
- 65 [-]: LOADK     R61 2        ; R61 := 2.000000
- 66 [-]: LOADK     R62 45       ; R62 := 45.000000
- 67 [-]: LOADK     R63 42       ; R63 := 42.000000
- 68 [-]: LOADK     R64 4        ; R64 := 4.000000
- 69 [-]: LOADK     R65 14       ; R65 := 14.000000
- 70 [-]: LOADK     R66 43       ; R66 := 43.000000
- 71 [-]: LOADK     R67 22       ; R67 := 22.000000
- 72 [-]: LOADK     R68 53       ; R68 := 53.000000
- 73 [-]: LOADK     R69 51       ; R69 := 51.000000
- 74 [-]: LOADK     R70 41       ; R70 := 41.000000
- 75 [-]: LOADK     R71 29       ; R71 := 29.000000
- 76 [-]: LOADK     R72 30       ; R72 := 30.000000
- 77 [-]: LOADK     R73 31       ; R73 := 31.000000
- 78 [-]: LOADK     R74 32       ; R74 := 32.000000
+ 29 [-]: CONST     R25 19       ; R25 := 19.000000
+ 30 [-]: CONST     R26 48       ; R26 := 48.000000
+ 31 [-]: CONST     R27 38       ; R27 := 38.000000
+ 32 [-]: CONST     R28 0        ; R28 := 0.000000
+ 33 [-]: CONST     R29 24       ; R29 := 24.000000
+ 34 [-]: CONST     R30 25       ; R30 := 25.000000
+ 35 [-]: CONST     R31 34       ; R31 := 34.000000
+ 36 [-]: CONST     R32 46       ; R32 := 46.000000
+ 37 [-]: CONST     R33 52       ; R33 := 52.000000
+ 38 [-]: CONST     R34 44       ; R34 := 44.000000
+ 39 [-]: CONST     R35 15       ; R35 := 15.000000
+ 40 [-]: CONST     R36 11       ; R36 := 11.000000
+ 41 [-]: CONST     R37 12       ; R37 := 12.000000
+ 42 [-]: CONST     R38 17       ; R38 := 17.000000
+ 43 [-]: CONST     R39 33       ; R39 := 33.000000
+ 44 [-]: CONST     R40 3        ; R40 := 3.000000
+ 45 [-]: CONST     R41 8        ; R41 := 8.000000
+ 46 [-]: CONST     R42 47       ; R42 := 47.000000
+ 47 [-]: CONST     R43 7        ; R43 := 7.000000
+ 48 [-]: CONST     R44 49       ; R44 := 49.000000
+ 49 [-]: CONST     R45 50       ; R45 := 50.000000
+ 50 [-]: CONST     R46 21       ; R46 := 21.000000
+ 51 [-]: CONST     R47 18       ; R47 := 18.000000
+ 52 [-]: CONST     R48 37       ; R48 := 37.000000
+ 53 [-]: CONST     R49 36       ; R49 := 36.000000
+ 54 [-]: CONST     R50 9        ; R50 := 9.000000
+ 55 [-]: CONST     R51 23       ; R51 := 23.000000
+ 56 [-]: CONST     R52 26       ; R52 := 26.000000
+ 57 [-]: CONST     R53 16       ; R53 := 16.000000
+ 58 [-]: CONST     R54 28       ; R54 := 28.000000
+ 59 [-]: CONST     R55 40       ; R55 := 40.000000
+ 60 [-]: CONST     R56 35       ; R56 := 35.000000
+ 61 [-]: CONST     R57 1        ; R57 := 1.000000
+ 62 [-]: CONST     R58 13       ; R58 := 13.000000
+ 63 [-]: CONST     R59 27       ; R59 := 27.000000
+ 64 [-]: CONST     R60 10       ; R60 := 10.000000
+ 65 [-]: CONST     R61 2        ; R61 := 2.000000
+ 66 [-]: CONST     R62 45       ; R62 := 45.000000
+ 67 [-]: CONST     R63 42       ; R63 := 42.000000
+ 68 [-]: CONST     R64 4        ; R64 := 4.000000
+ 69 [-]: CONST     R65 14       ; R65 := 14.000000
+ 70 [-]: CONST     R66 43       ; R66 := 43.000000
+ 71 [-]: CONST     R67 22       ; R67 := 22.000000
+ 72 [-]: CONST     R68 53       ; R68 := 53.000000
+ 73 [-]: CONST     R69 51       ; R69 := 51.000000
+ 74 [-]: CONST     R70 41       ; R70 := 41.000000
+ 75 [-]: CONST     R71 29       ; R71 := 29.000000
+ 76 [-]: CONST     R72 30       ; R72 := 30.000000
+ 77 [-]: CONST     R73 31       ; R73 := 31.000000
+ 78 [-]: CONST     R74 32       ; R74 := 32.000000
  79 [-]: SETLIST   R24 50 1     ; R24[(1-1)*FPF+i] := R(24+i), 1 <= i <= 50
- 80 [-]: LOADK     R25 39       ; R25 := 39.000000
+ 80 [-]: CONST     R25 39       ; R25 := 39.000000
  81 [-]: SETLIST   R24 1 2      ; R24[(2-1)*FPF+i] := R(24+i), 1 <= i <= 1
  82 [-]: LOADK     R25 K7       ; R25 := "/Lotus/Language/Menu/Composition_Default"
  83 [-]: LOADK     R26 K8       ; R26 := "/Lotus/Language/Menu/Options_DisplayCustomize_Custom"
@@ -226,7 +226,7 @@
   5 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1[0x32302b4a]
   6 [-]: CALL      R1 2 1       ; R1(R2)
   7 [-]: JMP       10           ; PC := 10
-  8 [-]: LOADBOOL  R1 0 0       ; R1 := false
+  8 [-]: LOADKB    R1 0 0       ; R1 := false
   9 [-]: SETUPVAL  R1 U1        ; U82 := R1
  10 [-]: RETURN    R0 1         ; return 
 
@@ -252,7 +252,7 @@
  10 [-]: SELF      R0 R0 K3     ; R1 := R0; R0 := R0[0x32302b4a]
  11 [-]: CALL      R0 2 1       ; R0(R1)
  12 [-]: RETURN    R0 1         ; return 
- 13 [-]: LOADBOOL  R0 1 0       ; R0 := true
+ 13 [-]: LOADKB    R0 1 0       ; R0 := true
  14 [-]: SETUPVAL  R0 U2        ; U82 := R2
  15 [-]: GETGLOBAL R0 K4        ; R0 := 0x7b998233
  16 [-]: GETUPVAL  R1 U3        ; R1 := U3
@@ -332,7 +332,7 @@
  90 [-]: CALL      R14 3 1      ; R14(R15,R16)
  91 [-]: GETGLOBAL R14 K26      ; R14 := 0x76ea806b
  92 [-]: SELF      R14 R14 K27  ; R15 := R14; R14 := R14[0xe70a580a]
- 93 [-]: LOADK     R16 0        ; R16 := 0.000000
+ 93 [-]: CONST     R16 0        ; R16 := 0.000000
  94 [-]: LOADK     R17 K25      ; R17 := "OnProfileSaved"
  95 [-]: CALL      R14 4 1      ; R14(R15,R16,R17)
  96 [-]: RETURN    R0 1         ; return 
@@ -371,7 +371,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  3
 
-  1 [-]: LOADBOOL  R0 1 0       ; R0 := true
+  1 [-]: LOADKB    R0 1 0       ; R0 := true
   2 [-]: SETUPVAL  R0 U0        ; U82 := R0
   3 [-]: NEWTABLE  R0 0 0       ; R0 := {}
   4 [-]: SETUPVAL  R0 U1        ; U82 := R1
@@ -466,7 +466,7 @@
  27 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
  28 [-]: GETUPVAL  R4 U6        ; R4 := U6
  29 [-]: SELF      R4 R4 K8     ; R5 := R4; R4 := R4[0x46610c50]
- 30 [-]: LOADBOOL  R6 1 0       ; R6 := true
+ 30 [-]: LOADKB    R6 1 0       ; R6 := true
  31 [-]: CALL      R4 3 1       ; R4(R5,R6)
  32 [-]: RETURN    R0 1         ; return 
 
@@ -490,8 +490,8 @@
   8 [-]: GETUPVAL  R7 U1        ; R7 := U1
   9 [-]: MOVE      R8 R5        ; R8 := R5
  10 [-]: MOVE      R9 R6        ; R9 := R6
- 11 [-]: LOADBOOL  R10 1 0      ; R10 := true
- 12 [-]: LOADBOOL  R11 1 0      ; R11 := true
+ 11 [-]: LOADKB    R10 1 0      ; R10 := true
+ 12 [-]: LOADKB    R11 1 0      ; R11 := true
  13 [-]: CALL      R7 5 1       ; R7(R8,R9,R10,R11)
  14 [-]: TFORLOOP  R1 2         ; R4,R5 :=  R1(R2,R3); if R4 ~= nil then begin PC = 5; R3 := R4 end
  15 [-]: JMP       5            ; PC := 5
@@ -528,7 +528,7 @@
  10 [-]: GETGLOBAL R2 K4        ; R2 := 0xae91e43b
  11 [-]: MOVE      R3 R0        ; R3 := R0
  12 [-]: GETGLOBAL R4 K5        ; R4 := 0xcd0165a3
- 13 [-]: LOADK     R5 1         ; R5 := 1.000000
+ 13 [-]: CONST     R5 1         ; R5 := 1.000000
  14 [-]: CALL      R4 2 0       ; R4,... := R4(R5)
  15 [-]: CALL      R1 0 1       ; R1(R2,...)
  16 [-]: RETURN    R0 1         ; return 
@@ -616,10 +616,10 @@
 ; Max Stack Size:  10
 
   1 [-]: NEWTABLE  R0 0 0       ; R0 := {}
-  2 [-]: LOADK     R1 1         ; R1 := 1.000000
+  2 [-]: CONST     R1 1         ; R1 := 1.000000
   3 [-]: GETGLOBAL R2 K0        ; R2 := 0x065a9e7a
   4 [-]: LEN       R2 R2        ; R2 := # R2
-  5 [-]: LOADK     R3 1         ; R3 := 1.000000
+  5 [-]: CONST     R3 1         ; R3 := 1.000000
   6 [-]: FORPREP   R1 22        ; R1 -= R3; PC := 22
   7 [-]: GETGLOBAL R5 K1        ; R5 := 0x33bdd652
   8 [-]: GETTABLE  R5 R5 K2     ; R5 := R5[0x23d5322f]
@@ -669,28 +669,28 @@
 
   1 [-]: GETUPVAL  R0 U0        ; R0 := U0
   2 [-]: GETTABLE  R0 R0 K0     ; R0 := R0[0x5d10207d]
-  3 [-]: LOADK     R1 6         ; R1 := 6.000000
-  4 [-]: LOADBOOL  R2 1 0       ; R2 := true
+  3 [-]: CONST     R1 6         ; R1 := 6.000000
+  4 [-]: LOADKB    R2 1 0       ; R2 := true
   5 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
   6 [-]: GETUPVAL  R1 U0        ; R1 := U0
   7 [-]: GETTABLE  R1 R1 K0     ; R1 := R1[0x5d10207d]
-  8 [-]: LOADK     R2 9         ; R2 := 9.000000
-  9 [-]: LOADBOOL  R3 1 0       ; R3 := true
+  8 [-]: CONST     R2 9         ; R2 := 9.000000
+  9 [-]: LOADKB    R3 1 0       ; R3 := true
  10 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
  11 [-]: GETUPVAL  R2 U0        ; R2 := U0
  12 [-]: GETTABLE  R2 R2 K0     ; R2 := R2[0x5d10207d]
- 13 [-]: LOADK     R3 10        ; R3 := 10.000000
- 14 [-]: LOADBOOL  R4 1 0       ; R4 := true
+ 13 [-]: CONST     R3 10        ; R3 := 10.000000
+ 14 [-]: LOADKB    R4 1 0       ; R4 := true
  15 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
  16 [-]: GETUPVAL  R3 U0        ; R3 := U0
  17 [-]: GETTABLE  R3 R3 K0     ; R3 := R3[0x5d10207d]
- 18 [-]: LOADK     R4 2         ; R4 := 2.000000
- 19 [-]: LOADBOOL  R5 0 0       ; R5 := false
+ 18 [-]: CONST     R4 2         ; R4 := 2.000000
+ 19 [-]: LOADKB    R5 0 0       ; R5 := false
  20 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
  21 [-]: GETUPVAL  R4 U0        ; R4 := U0
  22 [-]: GETTABLE  R4 R4 K0     ; R4 := R4[0x5d10207d]
- 23 [-]: LOADK     R5 9         ; R5 := 9.000000
- 24 [-]: LOADBOOL  R6 0 0       ; R6 := false
+ 23 [-]: CONST     R5 9         ; R5 := 9.000000
+ 24 [-]: LOADKB    R6 0 0       ; R6 := false
  25 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
  26 [-]: GETGLOBAL R5 K2        ; R5 := 0xae91e43b
  27 [-]: SELF      R5 R5 K3     ; R6 := R5; R5 := R5[0xd5181643]
@@ -755,26 +755,26 @@
  86 [-]: GETGLOBAL R5 K2        ; R5 := 0xae91e43b
  87 [-]: SELF      R5 R5 K18    ; R6 := R5; R5 := R5[0x67bc869f]
  88 [-]: LOADK     R7 K19       ; R7 := "ColorMenu.HintHeader"
- 89 [-]: LOADK     R8 36        ; R8 := 36.000000
+ 89 [-]: CONST     R8 36        ; R8 := 36.000000
  90 [-]: MOVE      R9 R2        ; R9 := R2
  91 [-]: CALL      R5 5 1       ; R5(R6,R7,R8,R9)
  92 [-]: GETGLOBAL R5 K2        ; R5 := 0xae91e43b
  93 [-]: SELF      R5 R5 K18    ; R6 := R5; R5 := R5[0x67bc869f]
  94 [-]: LOADK     R7 K20       ; R7 := "ColorMenu.Hint"
- 95 [-]: LOADK     R8 36        ; R8 := 36.000000
+ 95 [-]: CONST     R8 36        ; R8 := 36.000000
  96 [-]: MOVE      R9 R0        ; R9 := R0
  97 [-]: CALL      R5 5 1       ; R5(R6,R7,R8,R9)
  98 [-]: GETGLOBAL R5 K2        ; R5 := 0xae91e43b
  99 [-]: SELF      R5 R5 K18    ; R6 := R5; R5 := R5[0x67bc869f]
 100 [-]: LOADK     R7 K21       ; R7 := "Preview.Divider"
-101 [-]: LOADK     R8 9         ; R8 := 9.000000
+101 [-]: CONST     R8 9         ; R8 := 9.000000
 102 [-]: MOVE      R9 R1        ; R9 := R1
 103 [-]: CALL      R5 5 1       ; R5(R6,R7,R8,R9)
 104 [-]: GETGLOBAL R5 K2        ; R5 := 0xae91e43b
 105 [-]: SELF      R5 R5 K18    ; R6 := R5; R5 := R5[0x67bc869f]
 106 [-]: LOADK     R7 K21       ; R7 := "Preview.Divider"
-107 [-]: LOADK     R8 10        ; R8 := 10.000000
-108 [-]: LOADK     R9 20        ; R9 := 20.000000
+107 [-]: CONST     R8 10        ; R8 := 10.000000
+108 [-]: CONST     R9 20        ; R9 := 20.000000
 109 [-]: CALL      R5 5 1       ; R5(R6,R7,R8,R9)
 110 [-]: LOADK     R5 K22       ; R5 := "<p><font color=\"#"
 111 [-]: GETGLOBAL R6 K23       ; R6 := 0x7f5022cf
@@ -786,7 +786,7 @@
 117 [-]: GETGLOBAL R8 K2        ; R8 := 0xae91e43b
 118 [-]: SELF      R8 R8 K27    ; R9 := R8; R8 := R8[0x42b04007]
 119 [-]: LOADK     R10 K28      ; R10 := "/Lotus/Language/Menu/SettingsHud"
-120 [-]: LOADBOOL  R11 0 0      ; R11 := false
+120 [-]: LOADKB    R11 0 0      ; R11 := false
 121 [-]: CALL      R8 4 2       ; R8 := R8(R9,R10,R11)
 122 [-]: LOADK     R9 K29       ; R9 := "/</font>"
 123 [-]: LOADK     R10 K30      ; R10 := "<font color=\"#"
@@ -799,14 +799,14 @@
 130 [-]: GETGLOBAL R13 K2       ; R13 := 0xae91e43b
 131 [-]: SELF      R13 R13 K27  ; R14 := R13; R13 := R13[0x42b04007]
 132 [-]: LOADK     R15 K31      ; R15 := "/Lotus/Language/Settings/Loadout_ColorsTip"
-133 [-]: LOADBOOL  R16 0 0      ; R16 := false
+133 [-]: LOADKB    R16 0 0      ; R16 := false
 134 [-]: CALL      R13 4 2      ; R13 := R13(R14,R15,R16)
 135 [-]: LOADK     R14 K32      ; R14 := "</font></p>"
 136 [-]: CONCAT    R5 R5 R14    ; R5 := R5 .. R6 .. R7 .. R8 .. R9 .. R10 .. R11 .. R12 .. R13 .. R14
 137 [-]: GETGLOBAL R6 K2        ; R6 := 0xae91e43b
 138 [-]: SELF      R6 R6 K33    ; R7 := R6; R6 := R6[0x5f56eeab]
 139 [-]: LOADK     R8 K34       ; R8 := "ColorMenu.Title"
-140 [-]: LOADK     R9 29        ; R9 := 29.000000
+140 [-]: CONST     R9 29        ; R9 := 29.000000
 141 [-]: MOVE      R10 R5       ; R10 := R5
 142 [-]: CALL      R6 5 1       ; R6(R7,R8,R9,R10)
 143 [-]: GETGLOBAL R6 K35       ; R6 := 0xcfc01047
@@ -819,7 +819,7 @@
 150 [-]: MOVE      R14 R9       ; R14 := R9
 151 [-]: LOADK     R15 K38      ; R15 := ".Label"
 152 [-]: CONCAT    R14 R14 R15  ; R14 := R14 .. R15
-153 [-]: LOADK     R15 36       ; R15 := 36.000000
+153 [-]: CONST     R15 36       ; R15 := 36.000000
 154 [-]: MOVE      R16 R0       ; R16 := R0
 155 [-]: CALL      R11 6 1      ; R11(R12,R13,R14,R15,R16)
 156 [-]: TFORLOOP  R6 2         ; R9,R10 :=  R6(R7,R8); if R9 ~= nil then begin PC = 147; R8 := R9 end
@@ -827,25 +827,25 @@
 158 [-]: GETGLOBAL R11 K2       ; R11 := 0xae91e43b
 159 [-]: SELF      R11 R11 K18  ; R12 := R11; R11 := R11[0x67bc869f]
 160 [-]: LOADK     R13 K39      ; R13 := "Preview.Invulnerable.Label"
-161 [-]: LOADK     R14 36       ; R14 := 36.000000
+161 [-]: CONST     R14 36       ; R14 := 36.000000
 162 [-]: MOVE      R15 R0       ; R15 := R0
 163 [-]: CALL      R11 5 1      ; R11(R12,R13,R14,R15)
 164 [-]: GETGLOBAL R11 K2       ; R11 := 0xae91e43b
 165 [-]: SELF      R11 R11 K18  ; R12 := R11; R11 := R11[0x67bc869f]
 166 [-]: LOADK     R13 K40      ; R13 := "Preview.Overshield.Label"
-167 [-]: LOADK     R14 36       ; R14 := 36.000000
+167 [-]: CONST     R14 36       ; R14 := 36.000000
 168 [-]: MOVE      R15 R0       ; R15 := R0
 169 [-]: CALL      R11 5 1      ; R11(R12,R13,R14,R15)
 170 [-]: GETGLOBAL R11 K2       ; R11 := 0xae91e43b
 171 [-]: SELF      R11 R11 K18  ; R12 := R11; R11 := R11[0x67bc869f]
 172 [-]: LOADK     R13 K41      ; R13 := "Preview.Buff.Label"
-173 [-]: LOADK     R14 36       ; R14 := 36.000000
+173 [-]: CONST     R14 36       ; R14 := 36.000000
 174 [-]: MOVE      R15 R0       ; R15 := R0
 175 [-]: CALL      R11 5 1      ; R11(R12,R13,R14,R15)
 176 [-]: GETGLOBAL R11 K2       ; R11 := 0xae91e43b
 177 [-]: SELF      R11 R11 K18  ; R12 := R11; R11 := R11[0x67bc869f]
 178 [-]: LOADK     R13 K42      ; R13 := "Preview.Debuff.Label"
-179 [-]: LOADK     R14 36       ; R14 := 36.000000
+179 [-]: CONST     R14 36       ; R14 := 36.000000
 180 [-]: MOVE      R15 R0       ; R15 := R0
 181 [-]: CALL      R11 5 1      ; R11(R12,R13,R14,R15)
 182 [-]: RETURN    R0 1         ; return 
@@ -863,7 +863,7 @@
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0xae91e43b
   2 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0x91a24e4b]
   3 [-]: LOADK     R2 K2        ; R2 := "ColorMenu.CustomizationPanel"
-  4 [-]: LOADK     R3 1         ; R3 := 1.000000
+  4 [-]: CONST     R3 1         ; R3 := 1.000000
   5 [-]: CALL      R0 4 2       ; R0 := R0(R1,R2,R3)
   6 [-]: GETUPVAL  R1 U0        ; R1 := U0
   7 [-]: GETTABLE  R1 R1 K3     ; R1 := R1[0x44537adf]
@@ -872,13 +872,13 @@
  10 [-]: GETGLOBAL R3 K0        ; R3 := 0xae91e43b
  11 [-]: SELF      R3 R3 K4     ; R4 := R3; R3 := R3[0x67bc869f]
  12 [-]: LOADK     R5 K5        ; R5 := "ColorMenu.MouseCatcherTop"
- 13 [-]: LOADK     R6 1         ; R6 := 1.000000
+ 13 [-]: CONST     R6 1         ; R6 := 1.000000
  14 [-]: MOVE      R7 R0        ; R7 := R0
  15 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
  16 [-]: GETGLOBAL R3 K0        ; R3 := 0xae91e43b
  17 [-]: SELF      R3 R3 K4     ; R4 := R3; R3 := R3[0x67bc869f]
  18 [-]: LOADK     R5 K6        ; R5 := "ColorMenu.MouseCatcherBottom"
- 19 [-]: LOADK     R6 1         ; R6 := 1.000000
+ 19 [-]: CONST     R6 1         ; R6 := 1.000000
  20 [-]: GETUPVAL  R7 U1        ; R7 := U1
  21 [-]: GETTABLE  R7 R7 K7     ; R7 := R7["CustomizationList"]
  22 [-]: GETTABLE  R7 R7 K8     ; R7 := R7["mMaxVisibleHeight"]
@@ -887,13 +887,13 @@
  25 [-]: GETGLOBAL R3 K0        ; R3 := 0xae91e43b
  26 [-]: SELF      R3 R3 K4     ; R4 := R3; R3 := R3[0x67bc869f]
  27 [-]: LOADK     R5 K5        ; R5 := "ColorMenu.MouseCatcherTop"
- 28 [-]: LOADK     R6 13        ; R6 := 13.000000
+ 28 [-]: CONST     R6 13        ; R6 := 13.000000
  29 [-]: MOVE      R7 R2        ; R7 := R2
  30 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
  31 [-]: GETGLOBAL R3 K0        ; R3 := 0xae91e43b
  32 [-]: SELF      R3 R3 K4     ; R4 := R3; R3 := R3[0x67bc869f]
  33 [-]: LOADK     R5 K6        ; R5 := "ColorMenu.MouseCatcherBottom"
- 34 [-]: LOADK     R6 13        ; R6 := 13.000000
+ 34 [-]: CONST     R6 13        ; R6 := 13.000000
  35 [-]: MOVE      R7 R2        ; R7 := R2
  36 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
  37 [-]: RETURN    R0 1         ; return 
@@ -1016,238 +1016,238 @@
 106 [-]: SETTABLE  R14 K41 R15  ; R14["CallBack"] := R15
 107 [-]: GETGLOBAL R15 K43      ; R15 := 0xfa63deeb
 108 [-]: SETTABLE  R14 K42 R15  ; R14["DefaultIcon"] := R15
-109 [-]: LOADBOOL  R15 1 0      ; R15 := true
+109 [-]: LOADKB    R15 1 0      ; R15 := true
 110 [-]: CALL      R12 4 1      ; R12(R13,R14,R15)
 111 [-]: MOVE      R12 R9       ; R12 := R9
 112 [-]: LOADK     R13 K44      ; R13 := "/Lotus/Language/Labels/HUD_COLOR_SECTION_STATUS"
 113 [-]: CALL      R12 2 1      ; R12(R13)
 114 [-]: MOVE      R12 R10      ; R12 := R10
-115 [-]: LOADK     R13 19       ; R13 := 19.000000
+115 [-]: CONST     R13 19       ; R13 := 19.000000
 116 [-]: LOADK     R14 K46      ; R14 := "/Lotus/Language/Labels/HUD_COLOR_HEALTH"
 117 [-]: CALL      R12 3 1      ; R12(R13,R14)
 118 [-]: MOVE      R12 R10      ; R12 := R10
-119 [-]: LOADK     R13 48       ; R13 := 48.000000
+119 [-]: CONST     R13 48       ; R13 := 48.000000
 120 [-]: LOADK     R14 K47      ; R14 := "/Lotus/Language/Labels/HUD_COLOR_SHIELD"
 121 [-]: CALL      R12 3 1      ; R12(R13,R14)
 122 [-]: MOVE      R12 R10      ; R12 := R10
-123 [-]: LOADK     R13 38       ; R13 := 38.000000
+123 [-]: CONST     R13 38       ; R13 := 38.000000
 124 [-]: LOADK     R14 K48      ; R14 := "/Lotus/Language/Labels/HUD_COLOR_OVERSHIELD"
 125 [-]: CALL      R12 3 1      ; R12(R13,R14)
 126 [-]: MOVE      R12 R10      ; R12 := R10
-127 [-]: LOADK     R13 0        ; R13 := 0.000000
+127 [-]: CONST     R13 0        ; R13 := 0.000000
 128 [-]: LOADK     R14 K49      ; R14 := "/Lotus/Language/Labels/HUD_COLOR_ARMOR"
 129 [-]: CALL      R12 3 1      ; R12(R13,R14)
 130 [-]: MOVE      R12 R10      ; R12 := R10
-131 [-]: LOADK     R13 24       ; R13 := 24.000000
+131 [-]: CONST     R13 24       ; R13 := 24.000000
 132 [-]: LOADK     R14 K50      ; R14 := "/Lotus/Language/Labels/HUD_COLOR_INVULNERABLE_HEALTH"
 133 [-]: CALL      R12 3 1      ; R12(R13,R14)
 134 [-]: MOVE      R12 R10      ; R12 := R10
-135 [-]: LOADK     R13 25       ; R13 := 25.000000
+135 [-]: CONST     R13 25       ; R13 := 25.000000
 136 [-]: LOADK     R14 K51      ; R14 := "/Lotus/Language/Labels/HUD_COLOR_INVULNERABLE_SHIELD"
 137 [-]: CALL      R12 3 1      ; R12(R13,R14)
 138 [-]: MOVE      R12 R10      ; R12 := R10
-139 [-]: LOADK     R13 34       ; R13 := 34.000000
+139 [-]: CONST     R13 34       ; R13 := 34.000000
 140 [-]: LOADK     R14 K52      ; R14 := "/Lotus/Language/Labels/HUD_COLOR_OBJECT"
 141 [-]: CALL      R12 3 1      ; R12(R13,R14)
 142 [-]: MOVE      R12 R10      ; R12 := R10
-143 [-]: LOADK     R13 3        ; R13 := 3.000000
+143 [-]: CONST     R13 3        ; R13 := 3.000000
 144 [-]: LOADK     R14 K53      ; R14 := "/Lotus/Language/Labels/HUD_COLOR_BUFF"
 145 [-]: CALL      R12 3 1      ; R12(R13,R14)
 146 [-]: MOVE      R12 R10      ; R12 := R10
-147 [-]: LOADK     R13 8        ; R13 := 8.000000
+147 [-]: CONST     R13 8        ; R13 := 8.000000
 148 [-]: LOADK     R14 K54      ; R14 := "/Lotus/Language/Labels/HUD_COLOR_DEBUFF"
 149 [-]: CALL      R12 3 1      ; R12(R13,R14)
 150 [-]: MOVE      R12 R10      ; R12 := R10
-151 [-]: LOADK     R13 39       ; R13 := 39.000000
+151 [-]: CONST     R13 39       ; R13 := 39.000000
 152 [-]: LOADK     R14 K55      ; R14 := "/Lotus/Language/Labels/HUD_COLOR_PARAZON_RANGE"
 153 [-]: CALL      R12 3 1      ; R12(R13,R14)
 154 [-]: MOVE      R12 R10      ; R12 := R10
-155 [-]: LOADK     R13 12       ; R13 := 12.000000
+155 [-]: CONST     R13 12       ; R13 := 12.000000
 156 [-]: LOADK     R14 K56      ; R14 := "/Lotus/Language/Labels/HUD_COLOR_ENERGY"
 157 [-]: CALL      R12 3 1      ; R12(R13,R14)
 158 [-]: MOVE      R12 R10      ; R12 := R10
-159 [-]: LOADK     R13 41       ; R13 := 41.000000
+159 [-]: CONST     R13 41       ; R13 := 41.000000
 160 [-]: LOADK     R14 K57      ; R14 := "/Lotus/Language/Labels/HUD_COLOR_PROTECTED_HEALTH"
 161 [-]: CALL      R12 3 1      ; R12(R13,R14)
 162 [-]: MOVE      R12 R9       ; R12 := R9
 163 [-]: LOADK     R13 K58      ; R13 := "/Lotus/Language/Labels/HUD_COLOR_SECTION_ABILITY_COMPONENT"
 164 [-]: CALL      R12 2 1      ; R12(R13)
 165 [-]: MOVE      R12 R10      ; R12 := R10
-166 [-]: LOADK     R13 46       ; R13 := 46.000000
+166 [-]: CONST     R13 46       ; R13 := 46.000000
 167 [-]: LOADK     R14 K59      ; R14 := "/Lotus/Language/Labels/HUD_COLOR_SELECTED_ABILITY"
 168 [-]: CALL      R12 3 1      ; R12(R13,R14)
 169 [-]: MOVE      R12 R10      ; R12 := R10
-170 [-]: LOADK     R13 52       ; R13 := 52.000000
+170 [-]: CONST     R13 52       ; R13 := 52.000000
 171 [-]: LOADK     R14 K60      ; R14 := "/Lotus/Language/Labels/HUD_COLOR_UNSELECTED_ABILITY"
 172 [-]: CALL      R12 3 1      ; R12(R13,R14)
 173 [-]: MOVE      R12 R9       ; R12 := R9
 174 [-]: LOADK     R13 K61      ; R13 := "/Lotus/Language/Labels/HUD_COLOR_SECTION_COMBAT"
 175 [-]: CALL      R12 2 1      ; R12(R13)
 176 [-]: MOVE      R12 R10      ; R12 := R10
-177 [-]: LOADK     R13 44       ; R13 := 44.000000
+177 [-]: CONST     R13 44       ; R13 := 44.000000
 178 [-]: LOADK     R14 K62      ; R14 := "/Lotus/Language/Labels/HUD_COLOR_RETICLE"
 179 [-]: CALL      R12 3 1      ; R12(R13,R14)
 180 [-]: MOVE      R12 R10      ; R12 := R10
-181 [-]: LOADK     R13 21       ; R13 := 21.000000
+181 [-]: CONST     R13 21       ; R13 := 21.000000
 182 [-]: LOADK     R14 K63      ; R14 := "/Lotus/Language/Labels/HUD_COLOR_HIT_INDICATOR"
 183 [-]: CALL      R12 3 1      ; R12(R13,R14)
 184 [-]: MOVE      R12 R10      ; R12 := R10
-185 [-]: LOADK     R13 18       ; R13 := 18.000000
+185 [-]: CONST     R13 18       ; R13 := 18.000000
 186 [-]: LOADK     R14 K64      ; R14 := "/Lotus/Language/Labels/HUD_COLOR_HEADSHOT_INDICATOR"
 187 [-]: CALL      R12 3 1      ; R12(R13,R14)
 188 [-]: MOVE      R12 R10      ; R12 := R10
-189 [-]: LOADK     R13 7        ; R13 := 7.000000
+189 [-]: CONST     R13 7        ; R13 := 7.000000
 190 [-]: LOADK     R14 K65      ; R14 := "/Lotus/Language/Labels/HUD_COLOR_CRITICAL"
 191 [-]: CALL      R12 3 1      ; R12(R13,R14)
 192 [-]: MOVE      R12 R10      ; R12 := R10
-193 [-]: LOADK     R13 49       ; R13 := 49.000000
+193 [-]: CONST     R13 49       ; R13 := 49.000000
 194 [-]: LOADK     R14 K66      ; R14 := "/Lotus/Language/Labels/HUD_COLOR_STRONG_CRITICAL"
 195 [-]: CALL      R12 3 1      ; R12(R13,R14)
 196 [-]: MOVE      R12 R10      ; R12 := R10
-197 [-]: LOADK     R13 50       ; R13 := 50.000000
+197 [-]: CONST     R13 50       ; R13 := 50.000000
 198 [-]: LOADK     R14 K67      ; R14 := "/Lotus/Language/Labels/HUD_COLOR_STRONGEST_CRITICAL"
 199 [-]: CALL      R12 3 1      ; R12(R13,R14)
 200 [-]: MOVE      R12 R9       ; R12 := R9
 201 [-]: LOADK     R13 K68      ; R13 := "/Lotus/Language/Menu/MiniMap"
 202 [-]: CALL      R12 2 1      ; R12(R13)
 203 [-]: MOVE      R12 R10      ; R12 := R10
-204 [-]: LOADK     R13 29       ; R13 := 29.000000
+204 [-]: CONST     R13 29       ; R13 := 29.000000
 205 [-]: LOADK     R14 K69      ; R14 := "/Lotus/Language/Labels/HUD_COLOR_MINIMAP_PATHABLE"
 206 [-]: CALL      R12 3 1      ; R12(R13,R14)
 207 [-]: MOVE      R12 R10      ; R12 := R10
-208 [-]: LOADK     R13 30       ; R13 := 30.000000
+208 [-]: CONST     R13 30       ; R13 := 30.000000
 209 [-]: LOADK     R14 K70      ; R14 := "/Lotus/Language/Labels/HUD_COLOR_MINIMAP_OUTLINE"
 210 [-]: CALL      R12 3 1      ; R12(R13,R14)
 211 [-]: MOVE      R12 R10      ; R12 := R10
-212 [-]: LOADK     R13 31       ; R13 := 31.000000
+212 [-]: CONST     R13 31       ; R13 := 31.000000
 213 [-]: LOADK     R14 K71      ; R14 := "/Lotus/Language/Labels/HUD_COLOR_MINIMAP_OUTLINE_ABOVE"
 214 [-]: CALL      R12 3 1      ; R12(R13,R14)
 215 [-]: MOVE      R12 R10      ; R12 := R10
-216 [-]: LOADK     R13 32       ; R13 := 32.000000
+216 [-]: CONST     R13 32       ; R13 := 32.000000
 217 [-]: LOADK     R14 K72      ; R14 := "/Lotus/Language/Labels/HUD_COLOR_MINIMAP_OUTLINE_BELOW"
 218 [-]: CALL      R12 3 1      ; R12(R13,R14)
 219 [-]: MOVE      R12 R9       ; R12 := R9
 220 [-]: LOADK     R13 K73      ; R13 := "/Lotus/Language/Labels/HUD_COLOR_SECTION_MARKERS"
 221 [-]: CALL      R12 2 1      ; R12(R13)
 222 [-]: MOVE      R12 R10      ; R12 := R10
-223 [-]: LOADK     R13 16       ; R13 := 16.000000
+223 [-]: CONST     R13 16       ; R13 := 16.000000
 224 [-]: LOADK     R14 K74      ; R14 := "/Lotus/Language/Labels/HUD_COLOR_GENERAL_MARKER"
 225 [-]: CALL      R12 3 1      ; R12(R13,R14)
 226 [-]: MOVE      R12 R10      ; R12 := R10
-227 [-]: LOADK     R13 15       ; R13 := 15.000000
+227 [-]: CONST     R13 15       ; R13 := 15.000000
 228 [-]: LOADK     R14 K75      ; R14 := "/Lotus/Language/Labels/HUD_COLOR_FRIENDLY"
 229 [-]: CALL      R12 3 1      ; R12(R13,R14)
 230 [-]: MOVE      R12 R10      ; R12 := R10
-231 [-]: LOADK     R13 11       ; R13 := 11.000000
+231 [-]: CONST     R13 11       ; R13 := 11.000000
 232 [-]: LOADK     R14 K76      ; R14 := "/Lotus/Language/Labels/HUD_COLOR_ENEMY"
 233 [-]: CALL      R12 3 1      ; R12(R13,R14)
 234 [-]: MOVE      R12 R10      ; R12 := R10
-235 [-]: LOADK     R13 28       ; R13 := 28.000000
+235 [-]: CONST     R13 28       ; R13 := 28.000000
 236 [-]: LOADK     R14 K77      ; R14 := "/Lotus/Language/Labels/HUD_COLOR_LOOT"
 237 [-]: CALL      R12 3 1      ; R12(R13,R14)
 238 [-]: MOVE      R12 R10      ; R12 := R10
-239 [-]: LOADK     R13 40       ; R13 := 40.000000
+239 [-]: CONST     R13 40       ; R13 := 40.000000
 240 [-]: LOADK     R14 K78      ; R14 := "/Lotus/Language/Labels/HUD_COLOR_PREDEATH"
 241 [-]: CALL      R12 3 1      ; R12(R13,R14)
 242 [-]: MOVE      R12 R10      ; R12 := R10
-243 [-]: LOADK     R13 35       ; R13 := 35.000000
+243 [-]: CONST     R13 35       ; R13 := 35.000000
 244 [-]: LOADK     R14 K79      ; R14 := "/Lotus/Language/Labels/HUD_COLOR_OBJECTIVE"
 245 [-]: CALL      R12 3 1      ; R12(R13,R14)
 246 [-]: MOVE      R12 R10      ; R12 := R10
-247 [-]: LOADK     R13 1        ; R13 := 1.000000
+247 [-]: CONST     R13 1        ; R13 := 1.000000
 248 [-]: LOADK     R14 K80      ; R14 := "/Lotus/Language/Labels/HUD_COLOR_ATTACK"
 249 [-]: CALL      R12 3 1      ; R12(R13,R14)
 250 [-]: MOVE      R12 R10      ; R12 := R10
-251 [-]: LOADK     R13 13       ; R13 := 13.000000
+251 [-]: CONST     R13 13       ; R13 := 13.000000
 252 [-]: LOADK     R14 K81      ; R14 := "/Lotus/Language/Labels/HUD_COLOR_EXTRACTION"
 253 [-]: CALL      R12 3 1      ; R12(R13,R14)
 254 [-]: MOVE      R12 R10      ; R12 := R10
-255 [-]: LOADK     R13 20       ; R13 := 20.000000
+255 [-]: CONST     R13 20       ; R13 := 20.000000
 256 [-]: LOADK     R14 K82      ; R14 := "/Lotus/Language/Labels/HUD_COLOR_HIGHLIGHT"
 257 [-]: CALL      R12 3 1      ; R12(R13,R14)
 258 [-]: MOVE      R12 R10      ; R12 := R10
-259 [-]: LOADK     R13 14       ; R13 := 14.000000
+259 [-]: CONST     R13 14       ; R13 := 14.000000
 260 [-]: LOADK     R14 K83      ; R14 := "/Lotus/Language/Labels/HUD_COLOR_FOCUS"
 261 [-]: CALL      R12 3 1      ; R12(R13,R14)
 262 [-]: MOVE      R12 R10      ; R12 := R10
-263 [-]: LOADK     R13 27       ; R13 := 27.000000
+263 [-]: CONST     R13 27       ; R13 := 27.000000
 264 [-]: LOADK     R14 K84      ; R14 := "/Lotus/Language/Labels/HUD_COLOR_LIFE_MODULE"
 265 [-]: CALL      R12 3 1      ; R12(R13,R14)
 266 [-]: MOVE      R12 R10      ; R12 := R10
-267 [-]: LOADK     R13 10       ; R13 := 10.000000
+267 [-]: CONST     R13 10       ; R13 := 10.000000
 268 [-]: LOADK     R14 K85      ; R14 := "/Lotus/Language/Labels/HUD_COLOR_DOJO_ROOM"
 269 [-]: CALL      R12 3 1      ; R12(R13,R14)
 270 [-]: MOVE      R12 R10      ; R12 := R10
-271 [-]: LOADK     R13 22       ; R13 := 22.000000
+271 [-]: CONST     R13 22       ; R13 := 22.000000
 272 [-]: LOADK     R14 K86      ; R14 := "/Lotus/Language/Labels/HUD_COLOR_HUB"
 273 [-]: CALL      R12 3 1      ; R12(R13,R14)
 274 [-]: MOVE      R12 R10      ; R12 := R10
-275 [-]: LOADK     R13 51       ; R13 := 51.000000
+275 [-]: CONST     R13 51       ; R13 := 51.000000
 276 [-]: LOADK     R14 K87      ; R14 := "/Lotus/Language/Labels/HUD_COLOR_TOWN"
 277 [-]: CALL      R12 3 1      ; R12(R13,R14)
 278 [-]: MOVE      R12 R10      ; R12 := R10
-279 [-]: LOADK     R13 2        ; R13 := 2.000000
+279 [-]: CONST     R13 2        ; R13 := 2.000000
 280 [-]: LOADK     R14 K88      ; R14 := "/Lotus/Language/Labels/HUD_COLOR_AVIONIC"
 281 [-]: CALL      R12 3 1      ; R12(R13,R14)
 282 [-]: MOVE      R12 R10      ; R12 := R10
-283 [-]: LOADK     R13 45       ; R13 := 45.000000
+283 [-]: CONST     R13 45       ; R13 := 45.000000
 284 [-]: LOADK     R14 K89      ; R14 := "/Lotus/Language/Labels/HUD_COLOR_SALVAGE"
 285 [-]: CALL      R12 3 1      ; R12(R13,R14)
 286 [-]: MOVE      R12 R10      ; R12 := R10
-287 [-]: LOADK     R13 42       ; R13 := 42.000000
+287 [-]: CONST     R13 42       ; R13 := 42.000000
 288 [-]: LOADK     R14 K90      ; R14 := "/Lotus/Language/Labels/HUD_COLOR_PVP_ENERGY"
 289 [-]: CALL      R12 3 1      ; R12(R13,R14)
 290 [-]: MOVE      R12 R10      ; R12 := R10
-291 [-]: LOADK     R13 4        ; R13 := 4.000000
+291 [-]: CONST     R13 4        ; R13 := 4.000000
 292 [-]: LOADK     R14 K91      ; R14 := "/Lotus/Language/Labels/HUD_COLOR_COLLECTOR_TARGET"
 293 [-]: CALL      R12 3 1      ; R12(R13,R14)
 294 [-]: MOVE      R12 R10      ; R12 := R10
-295 [-]: LOADK     R13 43       ; R13 := 43.000000
+295 [-]: CONST     R13 43       ; R13 := 43.000000
 296 [-]: LOADK     R14 K92      ; R14 := "/Lotus/Language/Labels/HUD_COLOR_RACE"
 297 [-]: CALL      R12 3 1      ; R12(R13,R14)
 298 [-]: MOVE      R12 R10      ; R12 := R10
-299 [-]: LOADK     R13 53       ; R13 := 53.000000
+299 [-]: CONST     R13 53       ; R13 := 53.000000
 300 [-]: LOADK     R14 K93      ; R14 := "/Lotus/Language/Labels/HUD_COLOR_VIP"
 301 [-]: CALL      R12 3 1      ; R12(R13,R14)
 302 [-]: MOVE      R12 R9       ; R12 := R9
 303 [-]: LOADK     R13 K94      ; R13 := "/Lotus/Language/Labels/HUD_COLOR_SECTION_MISSION"
 304 [-]: CALL      R12 2 1      ; R12(R13)
 305 [-]: MOVE      R12 R10      ; R12 := R10
-306 [-]: LOADK     R13 23       ; R13 := 23.000000
+306 [-]: CONST     R13 23       ; R13 := 23.000000
 307 [-]: LOADK     R14 K95      ; R14 := "/Lotus/Language/Labels/HUD_COLOR_INCOMING_LIFE_SUPPORT"
 308 [-]: CALL      R12 3 1      ; R12(R13,R14)
 309 [-]: MOVE      R12 R10      ; R12 := R10
-310 [-]: LOADK     R13 26       ; R13 := 26.000000
+310 [-]: CONST     R13 26       ; R13 := 26.000000
 311 [-]: LOADK     R14 K96      ; R14 := "/Lotus/Language/Labels/HUD_COLOR_KUVA_HARVESTER"
 312 [-]: CALL      R12 3 1      ; R12(R13,R14)
 313 [-]: MOVE      R12 R9       ; R12 := R9
 314 [-]: LOADK     R13 K97      ; R13 := "/Lotus/Language/Labels/HUD_COLOR_SECTION_TEXT"
 315 [-]: CALL      R12 2 1      ; R12(R13)
 316 [-]: MOVE      R12 R10      ; R12 := R10
-317 [-]: LOADK     R13 17       ; R13 := 17.000000
+317 [-]: CONST     R13 17       ; R13 := 17.000000
 318 [-]: LOADK     R14 K98      ; R14 := "/Lotus/Language/Labels/HUD_COLOR_GENERIC_TEXT"
 319 [-]: CALL      R12 3 1      ; R12(R13,R14)
 320 [-]: MOVE      R12 R10      ; R12 := R10
-321 [-]: LOADK     R13 9        ; R13 := 9.000000
+321 [-]: CONST     R13 9        ; R13 := 9.000000
 322 [-]: LOADK     R14 K99      ; R14 := "/Lotus/Language/Labels/HUD_COLOR_DISABLED_TEXT"
 323 [-]: CALL      R12 3 1      ; R12(R13,R14)
 324 [-]: MOVE      R12 R10      ; R12 := R10
-325 [-]: LOADK     R13 33       ; R13 := 33.000000
+325 [-]: CONST     R13 33       ; R13 := 33.000000
 326 [-]: LOADK     R14 K100     ; R14 := "/Lotus/Language/Labels/HUD_COLOR_NEGATIVE_TEXT"
 327 [-]: CALL      R12 3 1      ; R12(R13,R14)
 328 [-]: MOVE      R12 R10      ; R12 := R10
-329 [-]: LOADK     R13 47       ; R13 := 47.000000
+329 [-]: CONST     R13 47       ; R13 := 47.000000
 330 [-]: LOADK     R14 K101     ; R14 := "/Lotus/Language/Labels/HUD_COLOR_SHADOW"
 331 [-]: CALL      R12 3 1      ; R12(R13,R14)
 332 [-]: MOVE      R12 R9       ; R12 := R9
 333 [-]: LOADK     R13 K102     ; R13 := "/Lotus/Language/Labels/HUD_COLOR_SECTION_OBJECTIVE"
 334 [-]: CALL      R12 2 1      ; R12(R13)
 335 [-]: MOVE      R12 R10      ; R12 := R10
-336 [-]: LOADK     R13 37       ; R13 := 37.000000
+336 [-]: CONST     R13 37       ; R13 := 37.000000
 337 [-]: LOADK     R14 K103     ; R14 := "/Lotus/Language/Labels/HUD_COLOR_OBJECTIVE_PROGRESS"
 338 [-]: CALL      R12 3 1      ; R12(R13,R14)
 339 [-]: MOVE      R12 R10      ; R12 := R10
-340 [-]: LOADK     R13 36       ; R13 := 36.000000
+340 [-]: CONST     R13 36       ; R13 := 36.000000
 341 [-]: LOADK     R14 K104     ; R14 := "/Lotus/Language/Labels/HUD_COLOR_OBJECTIVE_FLARE"
 342 [-]: CALL      R12 3 1      ; R12(R13,R14)
 343 [-]: GETUPVAL  R12 U1       ; R12 := U1
@@ -1290,7 +1290,7 @@
   3 [-]: GETGLOBAL R2 K2        ; R2 := 0xae91e43b
   4 [-]: SELF      R2 R2 K3     ; R3 := R2; R2 := R2[0x42b04007]
   5 [-]: MOVE      R4 R0        ; R4 := R0
-  6 [-]: LOADBOOL  R5 1 0       ; R5 := true
+  6 [-]: LOADKB    R5 1 0       ; R5 := true
   7 [-]: CALL      R2 4 0       ; R2,... := R2(R3,R4,R5)
   8 [-]: CALL      R1 0 2       ; R1 := R1(R2,...)
   9 [-]: MOVE      R0 R1        ; R0 := R1
@@ -1303,7 +1303,7 @@
  16 [-]: GETTABLE  R4 R4 K8     ; R4 := R4["TITLE"]
  17 [-]: SETTABLE  R3 K6 R4     ; R3["Type"] := R4
  18 [-]: SETTABLE  R3 K9 R0     ; R3["NameTag"] := R0
- 19 [-]: LOADBOOL  R4 1 0       ; R4 := true
+ 19 [-]: LOADKB    R4 1 0       ; R4 := true
  20 [-]: CALL      R1 4 1       ; R1(R2,R3,R4)
  21 [-]: RETURN    R0 1         ; return 
 
@@ -1333,10 +1333,10 @@
  14 [-]: GETUPVAL  R5 U2        ; R5 := U2
  15 [-]: SELF      R5 R5 K8     ; R6 := R5; R5 := R5[0xef9a3ee6]
  16 [-]: MOVE      R7 R0        ; R7 := R0
- 17 [-]: LOADBOOL  R8 1 0       ; R8 := true
+ 17 [-]: LOADKB    R8 1 0       ; R8 := true
  18 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
- 19 [-]: SETTABLE  R4 K7 R5     ; R4["mDefaultColor"] := R5
- 20 [-]: LOADBOOL  R5 1 0       ; R5 := true
+ 19 [-]: SETTABLE  R4 K7 R5     ; R4[0x5f56eeab] := R5
+ 20 [-]: LOADKB    R5 1 0       ; R5 := true
  21 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
  22 [-]: RETURN    R0 1         ; return 
 
@@ -1426,10 +1426,10 @@
  74 [-]: SETTABLE  R2 K16 K53   ; R2["MarkerAvionic"] := 2.000000
  75 [-]: GETUPVAL  R2 U0        ; R2 := U0
  76 [-]: SETTABLE  R2 K17 K54   ; R2["MarkerSalvage"] := 45.000000
- 77 [-]: LOADK     R2 1         ; R2 := 1.000000
+ 77 [-]: CONST     R2 1         ; R2 := 1.000000
  78 [-]: GETGLOBAL R3 K55       ; R3 := 0x9e6dfc1e
  79 [-]: LEN       R3 R3        ; R3 := # R3
- 80 [-]: LOADK     R4 1         ; R4 := 1.000000
+ 80 [-]: CONST     R4 1         ; R4 := 1.000000
  81 [-]: FORPREP   R2 142       ; R2 -= R4; PC := 142
  82 [-]: LEN       R6 R0        ; R6 := # R0
  83 [-]: LE        0 R5 R6      ; if R5 > R6 then PC := 142
@@ -1448,7 +1448,7 @@
  96 [-]: GETGLOBAL R8 K56       ; R8 := 0xae91e43b
  97 [-]: SELF      R8 R8 K61    ; R9 := R8; R8 := R8[0x42b04007]
  98 [-]: GETTABLE  R10 R1 R5    ; R10 := R1[R5]
- 99 [-]: LOADBOOL  R11 1 0      ; R11 := true
+ 99 [-]: LOADKB    R11 1 0      ; R11 := true
 100 [-]: CALL      R8 4 0       ; R8,... := R8(R9,R10,R11)
 101 [-]: CALL      R7 0 2       ; R7 := R7(R8,...)
 102 [-]: GETGLOBAL R8 K56       ; R8 := 0xae91e43b
@@ -1457,8 +1457,8 @@
 105 [-]: MOVE      R11 R6       ; R11 := R6
 106 [-]: LOADK     R12 K64      ; R12 := ".Label"
 107 [-]: CONCAT    R11 R11 R12  ; R11 := R11 .. R12
-108 [-]: LOADK     R12 46       ; R12 := 46.000000
-109 [-]: LOADBOOL  R13 1 0      ; R13 := true
+108 [-]: CONST     R12 46       ; R12 := 46.000000
+109 [-]: LOADKB    R13 1 0      ; R13 := true
 110 [-]: CALL      R8 6 1       ; R8(R9,R10,R11,R12,R13)
 111 [-]: GETGLOBAL R8 K56       ; R8 := 0xae91e43b
 112 [-]: SELF      R8 R8 K65    ; R9 := R8; R8 := R8[0xe261aa96]
@@ -1466,7 +1466,7 @@
 114 [-]: MOVE      R11 R6       ; R11 := R6
 115 [-]: LOADK     R12 K64      ; R12 := ".Label"
 116 [-]: CONCAT    R11 R11 R12  ; R11 := R11 .. R12
-117 [-]: LOADK     R12 29       ; R12 := 29.000000
+117 [-]: CONST     R12 29       ; R12 := 29.000000
 118 [-]: MOVE      R13 R7       ; R13 := R7
 119 [-]: CALL      R8 6 1       ; R8(R9,R10,R11,R12,R13)
 120 [-]: EQ        1 R6 K16     ; if R6 == "MarkerAvionic" then PC := 124
@@ -1479,8 +1479,8 @@
 127 [-]: MOVE      R11 R6       ; R11 := R6
 128 [-]: LOADK     R12 K59      ; R12 := ".Icon"
 129 [-]: CONCAT    R11 R11 R12  ; R11 := R11 .. R12
-130 [-]: LOADK     R12 5        ; R12 := 5.000000
-131 [-]: LOADK     R13 200      ; R13 := 200.000000
+130 [-]: CONST     R12 5        ; R12 := 5.000000
+131 [-]: CONST     R13 200      ; R13 := 200.000000
 132 [-]: CALL      R8 6 1       ; R8(R9,R10,R11,R12,R13)
 133 [-]: GETGLOBAL R8 K56       ; R8 := 0xae91e43b
 134 [-]: SELF      R8 R8 K66    ; R9 := R8; R8 := R8[0xf64b7262]
@@ -1488,21 +1488,21 @@
 136 [-]: MOVE      R11 R6       ; R11 := R6
 137 [-]: LOADK     R12 K59      ; R12 := ".Icon"
 138 [-]: CONCAT    R11 R11 R12  ; R11 := R11 .. R12
-139 [-]: LOADK     R12 6        ; R12 := 6.000000
-140 [-]: LOADK     R13 200      ; R13 := 200.000000
+139 [-]: CONST     R12 6        ; R12 := 6.000000
+140 [-]: CONST     R13 200      ; R13 := 200.000000
 141 [-]: CALL      R8 6 1       ; R8(R9,R10,R11,R12,R13)
 142 [-]: FORLOOP   R2 82        ; R2 += R4; if R2 <= R3 then begin PC := 82; R5 := R2 end
 143 [-]: GETGLOBAL R8 K56       ; R8 := 0xae91e43b
 144 [-]: SELF      R8 R8 K67    ; R9 := R8; R8 := R8[0xaade900e]
 145 [-]: LOADK     R10 K68      ; R10 := "Preview.Overshield.InvulnerableBadge"
-146 [-]: LOADK     R11 11       ; R11 := 11.000000
-147 [-]: LOADBOOL  R12 0 0      ; R12 := false
+146 [-]: CONST     R11 11       ; R11 := 11.000000
+147 [-]: LOADKB    R12 0 0      ; R12 := false
 148 [-]: CALL      R8 5 1       ; R8(R9,R10,R11,R12)
 149 [-]: GETGLOBAL R8 K56       ; R8 := 0xae91e43b
 150 [-]: SELF      R8 R8 K67    ; R9 := R8; R8 := R8[0xaade900e]
 151 [-]: LOADK     R10 K69      ; R10 := "Preview.Invulnerable.GloryKillThreshold"
-152 [-]: LOADK     R11 11       ; R11 := 11.000000
-153 [-]: LOADBOOL  R12 0 0      ; R12 := false
+152 [-]: CONST     R11 11       ; R11 := 11.000000
+153 [-]: LOADKB    R12 0 0      ; R12 := false
 154 [-]: CALL      R8 5 1       ; R8(R9,R10,R11,R12)
 155 [-]: GETGLOBAL R8 K56       ; R8 := 0xae91e43b
 156 [-]: SELF      R8 R8 K70    ; R9 := R8; R8 := R8[0xd5181643]
@@ -1547,13 +1547,13 @@
 195 [-]: GETGLOBAL R8 K56       ; R8 := 0xae91e43b
 196 [-]: SELF      R8 R8 K86    ; R9 := R8; R8 := R8[0x5f56eeab]
 197 [-]: LOADK     R10 K87      ; R10 := "Preview.Buff.Data2.Desc"
-198 [-]: LOADK     R11 29       ; R11 := 29.000000
+198 [-]: CONST     R11 29       ; R11 := 29.000000
 199 [-]: LOADK     R12 K88      ; R12 := "10"
 200 [-]: CALL      R8 5 1       ; R8(R9,R10,R11,R12)
 201 [-]: GETGLOBAL R8 K56       ; R8 := 0xae91e43b
 202 [-]: SELF      R8 R8 K86    ; R9 := R8; R8 := R8[0x5f56eeab]
 203 [-]: LOADK     R10 K89      ; R10 := "Preview.Debuff.Data2.Desc"
-204 [-]: LOADK     R11 29       ; R11 := 29.000000
+204 [-]: CONST     R11 29       ; R11 := 29.000000
 205 [-]: LOADK     R12 K88      ; R12 := "10"
 206 [-]: CALL      R8 5 1       ; R8(R9,R10,R11,R12)
 207 [-]: GETGLOBAL R8 K56       ; R8 := 0xae91e43b
@@ -1593,100 +1593,100 @@
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0xae91e43b
   2 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0x67bc869f]
   3 [-]: LOADK     R2 K2        ; R2 := "Preview.Overshield.Health"
-  4 [-]: LOADK     R3 9         ; R3 := 9.000000
+  4 [-]: CONST     R3 9         ; R3 := 9.000000
   5 [-]: GETUPVAL  R4 U0        ; R4 := U0
   6 [-]: SELF      R4 R4 K3     ; R5 := R4; R4 := R4[0xef9a3ee6]
-  7 [-]: LOADK     R6 19        ; R6 := 19.000000
+  7 [-]: CONST     R6 19        ; R6 := 19.000000
   8 [-]: CALL      R4 3 0       ; R4,... := R4(R5,R6)
   9 [-]: CALL      R0 0 1       ; R0(R1,...)
  10 [-]: GETGLOBAL R0 K0        ; R0 := 0xae91e43b
  11 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0x67bc869f]
  12 [-]: LOADK     R2 K5        ; R2 := "Preview.Overshield.Shield"
- 13 [-]: LOADK     R3 9         ; R3 := 9.000000
+ 13 [-]: CONST     R3 9         ; R3 := 9.000000
  14 [-]: GETUPVAL  R4 U0        ; R4 := U0
  15 [-]: SELF      R4 R4 K3     ; R5 := R4; R4 := R4[0xef9a3ee6]
- 16 [-]: LOADK     R6 38        ; R6 := 38.000000
+ 16 [-]: CONST     R6 38        ; R6 := 38.000000
  17 [-]: CALL      R4 3 0       ; R4,... := R4(R5,R6)
  18 [-]: CALL      R0 0 1       ; R0(R1,...)
  19 [-]: GETGLOBAL R0 K0        ; R0 := 0xae91e43b
  20 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0x67bc869f]
  21 [-]: LOADK     R2 K6        ; R2 := "Preview.Overshield.GloryKillThreshold"
- 22 [-]: LOADK     R3 9         ; R3 := 9.000000
+ 22 [-]: CONST     R3 9         ; R3 := 9.000000
  23 [-]: GETUPVAL  R4 U0        ; R4 := U0
  24 [-]: SELF      R4 R4 K3     ; R5 := R4; R4 := R4[0xef9a3ee6]
- 25 [-]: LOADK     R6 39        ; R6 := 39.000000
+ 25 [-]: CONST     R6 39        ; R6 := 39.000000
  26 [-]: CALL      R4 3 0       ; R4,... := R4(R5,R6)
  27 [-]: CALL      R0 0 1       ; R0(R1,...)
  28 [-]: GETGLOBAL R0 K0        ; R0 := 0xae91e43b
  29 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0x67bc869f]
  30 [-]: LOADK     R2 K7        ; R2 := "Preview.Invulnerable.Health"
- 31 [-]: LOADK     R3 9         ; R3 := 9.000000
+ 31 [-]: CONST     R3 9         ; R3 := 9.000000
  32 [-]: GETUPVAL  R4 U0        ; R4 := U0
  33 [-]: SELF      R4 R4 K3     ; R5 := R4; R4 := R4[0xef9a3ee6]
- 34 [-]: LOADK     R6 24        ; R6 := 24.000000
+ 34 [-]: CONST     R6 24        ; R6 := 24.000000
  35 [-]: CALL      R4 3 0       ; R4,... := R4(R5,R6)
  36 [-]: CALL      R0 0 1       ; R0(R1,...)
  37 [-]: GETGLOBAL R0 K0        ; R0 := 0xae91e43b
  38 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0x67bc869f]
  39 [-]: LOADK     R2 K8        ; R2 := "Preview.Invulnerable.Shield"
- 40 [-]: LOADK     R3 9         ; R3 := 9.000000
+ 40 [-]: CONST     R3 9         ; R3 := 9.000000
  41 [-]: GETUPVAL  R4 U0        ; R4 := U0
  42 [-]: SELF      R4 R4 K3     ; R5 := R4; R4 := R4[0xef9a3ee6]
- 43 [-]: LOADK     R6 25        ; R6 := 25.000000
+ 43 [-]: CONST     R6 25        ; R6 := 25.000000
  44 [-]: CALL      R4 3 0       ; R4,... := R4(R5,R6)
  45 [-]: CALL      R0 0 1       ; R0(R1,...)
  46 [-]: GETGLOBAL R0 K0        ; R0 := 0xae91e43b
  47 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0x67bc869f]
  48 [-]: LOADK     R2 K9        ; R2 := "Preview.Buff.Icon"
- 49 [-]: LOADK     R3 9         ; R3 := 9.000000
+ 49 [-]: CONST     R3 9         ; R3 := 9.000000
  50 [-]: GETUPVAL  R4 U0        ; R4 := U0
  51 [-]: SELF      R4 R4 K3     ; R5 := R4; R4 := R4[0xef9a3ee6]
- 52 [-]: LOADK     R6 3         ; R6 := 3.000000
+ 52 [-]: CONST     R6 3         ; R6 := 3.000000
  53 [-]: CALL      R4 3 0       ; R4,... := R4(R5,R6)
  54 [-]: CALL      R0 0 1       ; R0(R1,...)
  55 [-]: GETGLOBAL R0 K0        ; R0 := 0xae91e43b
  56 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0x67bc869f]
  57 [-]: LOADK     R2 K10       ; R2 := "Preview.Debuff.Icon"
- 58 [-]: LOADK     R3 9         ; R3 := 9.000000
+ 58 [-]: CONST     R3 9         ; R3 := 9.000000
  59 [-]: GETUPVAL  R4 U0        ; R4 := U0
  60 [-]: SELF      R4 R4 K3     ; R5 := R4; R4 := R4[0xef9a3ee6]
- 61 [-]: LOADK     R6 8         ; R6 := 8.000000
+ 61 [-]: CONST     R6 8         ; R6 := 8.000000
  62 [-]: CALL      R4 3 0       ; R4,... := R4(R5,R6)
  63 [-]: CALL      R0 0 1       ; R0(R1,...)
  64 [-]: GETGLOBAL R0 K0        ; R0 := 0xae91e43b
  65 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0x67bc869f]
  66 [-]: LOADK     R2 K11       ; R2 := "Preview.Buff.Data2.Bg"
- 67 [-]: LOADK     R3 9         ; R3 := 9.000000
+ 67 [-]: CONST     R3 9         ; R3 := 9.000000
  68 [-]: GETUPVAL  R4 U0        ; R4 := U0
  69 [-]: SELF      R4 R4 K3     ; R5 := R4; R4 := R4[0xef9a3ee6]
- 70 [-]: LOADK     R6 47        ; R6 := 47.000000
+ 70 [-]: CONST     R6 47        ; R6 := 47.000000
  71 [-]: CALL      R4 3 0       ; R4,... := R4(R5,R6)
  72 [-]: CALL      R0 0 1       ; R0(R1,...)
  73 [-]: GETGLOBAL R0 K0        ; R0 := 0xae91e43b
  74 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0x67bc869f]
  75 [-]: LOADK     R2 K12       ; R2 := "Preview.Debuff.Data2.Bg"
- 76 [-]: LOADK     R3 9         ; R3 := 9.000000
+ 76 [-]: CONST     R3 9         ; R3 := 9.000000
  77 [-]: GETUPVAL  R4 U0        ; R4 := U0
  78 [-]: SELF      R4 R4 K3     ; R5 := R4; R4 := R4[0xef9a3ee6]
- 79 [-]: LOADK     R6 47        ; R6 := 47.000000
+ 79 [-]: CONST     R6 47        ; R6 := 47.000000
  80 [-]: CALL      R4 3 0       ; R4,... := R4(R5,R6)
  81 [-]: CALL      R0 0 1       ; R0(R1,...)
  82 [-]: GETGLOBAL R0 K0        ; R0 := 0xae91e43b
  83 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0x67bc869f]
  84 [-]: LOADK     R2 K13       ; R2 := "Preview.Buff.Data2.Desc"
- 85 [-]: LOADK     R3 36        ; R3 := 36.000000
+ 85 [-]: CONST     R3 36        ; R3 := 36.000000
  86 [-]: GETUPVAL  R4 U0        ; R4 := U0
  87 [-]: SELF      R4 R4 K3     ; R5 := R4; R4 := R4[0xef9a3ee6]
- 88 [-]: LOADK     R6 17        ; R6 := 17.000000
+ 88 [-]: CONST     R6 17        ; R6 := 17.000000
  89 [-]: CALL      R4 3 0       ; R4,... := R4(R5,R6)
  90 [-]: CALL      R0 0 1       ; R0(R1,...)
  91 [-]: GETGLOBAL R0 K0        ; R0 := 0xae91e43b
  92 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0x67bc869f]
  93 [-]: LOADK     R2 K14       ; R2 := "Preview.Debuff.Data2.Desc"
- 94 [-]: LOADK     R3 36        ; R3 := 36.000000
+ 94 [-]: CONST     R3 36        ; R3 := 36.000000
  95 [-]: GETUPVAL  R4 U0        ; R4 := U0
  96 [-]: SELF      R4 R4 K3     ; R5 := R4; R4 := R4[0xef9a3ee6]
- 97 [-]: LOADK     R6 17        ; R6 := 17.000000
+ 97 [-]: CONST     R6 17        ; R6 := 17.000000
  98 [-]: CALL      R4 3 0       ; R4,... := R4(R5,R6)
  99 [-]: CALL      R0 0 1       ; R0(R1,...)
 100 [-]: LOADK     R0 K15       ; R0 := "<p><font color=\"#"
@@ -1695,7 +1695,7 @@
 103 [-]: LOADK     R2 K18       ; R2 := "%X"
 104 [-]: GETUPVAL  R3 U0        ; R3 := U0
 105 [-]: SELF      R3 R3 K3     ; R4 := R3; R3 := R3[0xef9a3ee6]
-106 [-]: LOADK     R5 38        ; R5 := 38.000000
+106 [-]: CONST     R5 38        ; R5 := 38.000000
 107 [-]: CALL      R3 3 0       ; R3,... := R3(R4,R5)
 108 [-]: CALL      R1 0 2       ; R1 := R1(R2,...)
 109 [-]: LOADK     R2 K19       ; R2 := "\">300</font><font color=\"#"
@@ -1704,7 +1704,7 @@
 112 [-]: LOADK     R4 K18       ; R4 := "%X"
 113 [-]: GETUPVAL  R5 U0        ; R5 := U0
 114 [-]: SELF      R5 R5 K3     ; R6 := R5; R5 := R5[0xef9a3ee6]
-115 [-]: LOADK     R7 19        ; R7 := 19.000000
+115 [-]: CONST     R7 19        ; R7 := 19.000000
 116 [-]: CALL      R5 3 0       ; R5,... := R5(R6,R7)
 117 [-]: CALL      R3 0 2       ; R3 := R3(R4,...)
 118 [-]: LOADK     R4 K20       ; R4 := "\">300</font></p>"
@@ -1712,7 +1712,7 @@
 120 [-]: GETGLOBAL R1 K0        ; R1 := 0xae91e43b
 121 [-]: SELF      R1 R1 K21    ; R2 := R1; R1 := R1[0x5f56eeab]
 122 [-]: LOADK     R3 K22       ; R3 := "Preview.Overshield.PlayerHealth"
-123 [-]: LOADK     R4 29        ; R4 := 29.000000
+123 [-]: CONST     R4 29        ; R4 := 29.000000
 124 [-]: MOVE      R5 R0        ; R5 := R0
 125 [-]: CALL      R1 5 1       ; R1(R2,R3,R4,R5)
 126 [-]: LOADK     R1 K15       ; R1 := "<p><font color=\"#"
@@ -1721,7 +1721,7 @@
 129 [-]: LOADK     R3 K18       ; R3 := "%X"
 130 [-]: GETUPVAL  R4 U0        ; R4 := U0
 131 [-]: SELF      R4 R4 K3     ; R5 := R4; R4 := R4[0xef9a3ee6]
-132 [-]: LOADK     R6 25        ; R6 := 25.000000
+132 [-]: CONST     R6 25        ; R6 := 25.000000
 133 [-]: CALL      R4 3 0       ; R4,... := R4(R5,R6)
 134 [-]: CALL      R2 0 2       ; R2 := R2(R3,...)
 135 [-]: LOADK     R3 K19       ; R3 := "\">300</font><font color=\"#"
@@ -1730,7 +1730,7 @@
 138 [-]: LOADK     R5 K18       ; R5 := "%X"
 139 [-]: GETUPVAL  R6 U0        ; R6 := U0
 140 [-]: SELF      R6 R6 K3     ; R7 := R6; R6 := R6[0xef9a3ee6]
-141 [-]: LOADK     R8 24        ; R8 := 24.000000
+141 [-]: CONST     R8 24        ; R8 := 24.000000
 142 [-]: CALL      R6 3 0       ; R6,... := R6(R7,R8)
 143 [-]: CALL      R4 0 2       ; R4 := R4(R5,...)
 144 [-]: LOADK     R5 K20       ; R5 := "\">300</font></p>"
@@ -1738,7 +1738,7 @@
 146 [-]: GETGLOBAL R2 K0        ; R2 := 0xae91e43b
 147 [-]: SELF      R2 R2 K21    ; R3 := R2; R2 := R2[0x5f56eeab]
 148 [-]: LOADK     R4 K23       ; R4 := "Preview.Invulnerable.PlayerHealth"
-149 [-]: LOADK     R5 29        ; R5 := 29.000000
+149 [-]: CONST     R5 29        ; R5 := 29.000000
 150 [-]: MOVE      R6 R1        ; R6 := R1
 151 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
 152 [-]: GETGLOBAL R2 K24       ; R2 := 0xcfc01047
@@ -1751,7 +1751,7 @@
 159 [-]: MOVE      R10 R5       ; R10 := R5
 160 [-]: LOADK     R11 K27      ; R11 := ".Icon"
 161 [-]: CONCAT    R10 R10 R11  ; R10 := R10 .. R11
-162 [-]: LOADK     R11 9        ; R11 := 9.000000
+162 [-]: CONST     R11 9        ; R11 := 9.000000
 163 [-]: GETUPVAL  R12 U0       ; R12 := U0
 164 [-]: SELF      R12 R12 K3   ; R13 := R12; R12 := R12[0xef9a3ee6]
 165 [-]: MOVE      R14 R6       ; R14 := R6
@@ -1763,7 +1763,7 @@
 171 [-]: MOVE      R10 R5       ; R10 := R5
 172 [-]: LOADK     R11 K28      ; R11 := ".Backer"
 173 [-]: CONCAT    R10 R10 R11  ; R10 := R10 .. R11
-174 [-]: LOADK     R11 9        ; R11 := 9.000000
+174 [-]: CONST     R11 9        ; R11 := 9.000000
 175 [-]: GETUPVAL  R12 U0       ; R12 := U0
 176 [-]: SELF      R12 R12 K3   ; R13 := R12; R12 := R12[0xef9a3ee6]
 177 [-]: MOVE      R14 R6       ; R14 := R6
@@ -1797,7 +1797,7 @@
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x76ea806b
   2 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0x3f3ae64c]
-  3 [-]: LOADK     R2 0         ; R2 := 0.000000
+  3 [-]: CONST     R2 0         ; R2 := 0.000000
   4 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
   5 [-]: SELF      R1 R0 K2     ; R2 := R0; R1 := R0[0x40e9c32b]
   6 [-]: CALL      R1 2 2       ; R1 := R1(R2)
@@ -1849,20 +1849,20 @@
  52 [-]: GETGLOBAL R2 K19       ; R2 := 0xae91e43b
  53 [-]: SELF      R2 R2 K20    ; R3 := R2; R2 := R2[0x67bc869f]
  54 [-]: LOADK     R4 K21       ; R4 := "ColorMenu.MouseCatcherTop"
- 55 [-]: LOADK     R5 10        ; R5 := 10.000000
- 56 [-]: LOADK     R6 0         ; R6 := 0.000000
+ 55 [-]: CONST     R5 10        ; R5 := 10.000000
+ 56 [-]: CONST     R6 0         ; R6 := 0.000000
  57 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
  58 [-]: GETGLOBAL R2 K19       ; R2 := 0xae91e43b
  59 [-]: SELF      R2 R2 K20    ; R3 := R2; R2 := R2[0x67bc869f]
  60 [-]: LOADK     R4 K22       ; R4 := "ColorMenu.MouseCatcherBottom"
- 61 [-]: LOADK     R5 10        ; R5 := 10.000000
- 62 [-]: LOADK     R6 0         ; R6 := 0.000000
+ 61 [-]: CONST     R5 10        ; R5 := 10.000000
+ 62 [-]: CONST     R6 0         ; R6 := 0.000000
  63 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
  64 [-]: GETGLOBAL R2 K19       ; R2 := 0xae91e43b
  65 [-]: SELF      R2 R2 K23    ; R3 := R2; R2 := R2[0xaade900e]
  66 [-]: LOADK     R4 K24       ; R4 := "ColorMenu.Title"
- 67 [-]: LOADK     R5 46        ; R5 := 46.000000
- 68 [-]: LOADBOOL  R6 1 0       ; R6 := true
+ 67 [-]: CONST     R5 46        ; R5 := 46.000000
+ 68 [-]: LOADKB    R6 1 0       ; R6 := true
  69 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
  70 [-]: GETGLOBAL R2 K19       ; R2 := 0xae91e43b
  71 [-]: SELF      R2 R2 K25    ; R3 := R2; R2 := R2[0x20b98db3]
@@ -1924,11 +1924,11 @@
 127 [-]: CALL      R2 2 1       ; R2(R3)
 128 [-]: GETUPVAL  R2 U6        ; R2 := U6
 129 [-]: SELF      R2 R2 K44    ; R3 := R2; R2 := R2[0x8d77b2b2]
-130 [-]: LOADK     R4 280       ; R4 := 280.000000
+130 [-]: CONST     R4 280       ; R4 := 280.000000
 131 [-]: CALL      R2 3 1       ; R2(R3,R4)
 132 [-]: GETUPVAL  R2 U6        ; R2 := U6
 133 [-]: SELF      R2 R2 K45    ; R3 := R2; R2 := R2[0x46610c50]
-134 [-]: LOADBOOL  R4 0 0       ; R4 := false
+134 [-]: LOADKB    R4 0 0       ; R4 := false
 135 [-]: CALL      R2 3 1       ; R2(R3,R4)
 136 [-]: GETUPVAL  R2 U6        ; R2 := U6
 137 [-]: SELF      R2 R2 K46    ; R3 := R2; R2 := R2[0x71e9ac81]
@@ -1944,11 +1944,11 @@
 147 [-]: SETUPVAL  R2 U8        ; U82 := R8
 148 [-]: GETUPVAL  R2 U8        ; R2 := U8
 149 [-]: SELF      R2 R2 K44    ; R3 := R2; R2 := R2[0x8d77b2b2]
-150 [-]: LOADK     R4 115       ; R4 := 115.000000
+150 [-]: CONST     R4 115       ; R4 := 115.000000
 151 [-]: CALL      R2 3 1       ; R2(R3,R4)
 152 [-]: GETUPVAL  R2 U8        ; R2 := U8
 153 [-]: SELF      R2 R2 K45    ; R3 := R2; R2 := R2[0x46610c50]
-154 [-]: LOADBOOL  R4 1 0       ; R4 := true
+154 [-]: LOADKB    R4 1 0       ; R4 := true
 155 [-]: CALL      R2 3 1       ; R2(R3,R4)
 156 [-]: GETUPVAL  R2 U8        ; R2 := U8
 157 [-]: SELF      R2 R2 K46    ; R3 := R2; R2 := R2[0x71e9ac81]
@@ -1983,7 +1983,7 @@
 186 [-]: GETGLOBAL R3 K59       ; R3 := 0x11a19c5e
 187 [-]: GETGLOBAL R4 K0        ; R4 := 0x76ea806b
 188 [-]: SELF      R4 R4 K1     ; R5 := R4; R4 := R4[0x3f3ae64c]
-189 [-]: LOADK     R6 0         ; R6 := 0.000000
+189 [-]: CONST     R6 0         ; R6 := 0.000000
 190 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
 191 [-]: SELF      R4 R4 K60    ; R5 := R4; R4 := R4[0x80563238]
 192 [-]: CALL      R4 2 2       ; R4 := R4(R5)
@@ -2120,7 +2120,7 @@
  20 [-]: JMP       25           ; PC := 25
  21 [-]: GETGLOBAL R0 K3        ; R0 := _T
  22 [-]: GETTABLE  R0 R0 K5     ; R0 := R0[0xa460d8df]
- 23 [-]: LOADK     R1 0         ; R1 := 0.250000
+ 23 [-]: CONST     R1 0         ; R1 := 0.250000
  24 [-]: CALL      R0 2 1       ; R0(R1)
  25 [-]: GETUPVAL  R0 U3        ; R0 := U3
  26 [-]: EQ        1 R0 K6      ; if R0 == nil then PC := 35
@@ -2198,7 +2198,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
-  1 [-]: LOADBOOL  R0 1 0       ; R0 := true
+  1 [-]: LOADKB    R0 1 0       ; R0 := true
   2 [-]: RETURN    R0 2         ; return R0
   3 [-]: RETURN    R0 1         ; return 
 
@@ -2217,29 +2217,29 @@
   3 [-]: GETGLOBAL R1 K1        ; R1 := 0x25312c9b
   4 [-]: GETGLOBAL R2 K2        ; R2 := 0xae91e43b
   5 [-]: LOADK     R3 K3        ; R3 := "_root"
-  6 [-]: LOADK     R4 0         ; R4 := 0.000000
+  6 [-]: CONST     R4 0         ; R4 := 0.000000
   7 [-]: NEWTABLE  R5 1 0       ; R5 := {}
-  8 [-]: LOADK     R6 10        ; R6 := 10.000000
+  8 [-]: CONST     R6 10        ; R6 := 10.000000
   9 [-]: SETLIST   R5 1 1       ; R5[(1-1)*FPF+i] := R(5+i), 1 <= i <= 1
  10 [-]: NEWTABLE  R6 1 0       ; R6 := {}
- 11 [-]: LOADK     R7 0         ; R7 := 0.000000
+ 11 [-]: CONST     R7 0         ; R7 := 0.000000
  12 [-]: SETLIST   R6 1 1       ; R6[(1-1)*FPF+i] := R(6+i), 1 <= i <= 1
  13 [-]: LOADK     R7 K5        ; R7 := 0.150000
- 14 [-]: LOADK     R8 0         ; R8 := 0.000000
+ 14 [-]: CONST     R8 0         ; R8 := 0.000000
  15 [-]: CALL      R1 8 1       ; R1(R2,R3,R4,R5,R6,R7,R8)
  16 [-]: JMP       30           ; PC := 30
  17 [-]: GETGLOBAL R1 K1        ; R1 := 0x25312c9b
  18 [-]: GETGLOBAL R2 K2        ; R2 := 0xae91e43b
  19 [-]: LOADK     R3 K3        ; R3 := "_root"
- 20 [-]: LOADK     R4 2         ; R4 := 2.000000
+ 20 [-]: CONST     R4 2         ; R4 := 2.000000
  21 [-]: NEWTABLE  R5 1 0       ; R5 := {}
- 22 [-]: LOADK     R6 10        ; R6 := 10.000000
+ 22 [-]: CONST     R6 10        ; R6 := 10.000000
  23 [-]: SETLIST   R5 1 1       ; R5[(1-1)*FPF+i] := R(5+i), 1 <= i <= 1
  24 [-]: NEWTABLE  R6 1 0       ; R6 := {}
- 25 [-]: LOADK     R7 100       ; R7 := 100.000000
+ 25 [-]: CONST     R7 100       ; R7 := 100.000000
  26 [-]: SETLIST   R6 1 1       ; R6[(1-1)*FPF+i] := R(6+i), 1 <= i <= 1
  27 [-]: LOADK     R7 K5        ; R7 := 0.150000
- 28 [-]: LOADK     R8 0         ; R8 := 0.000000
+ 28 [-]: CONST     R8 0         ; R8 := 0.000000
  29 [-]: CALL      R1 8 1       ; R1(R2,R3,R4,R5,R6,R7,R8)
  30 [-]: RETURN    R0 1         ; return 
 

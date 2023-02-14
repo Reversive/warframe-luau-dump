@@ -39,15 +39,15 @@
  10 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
  11 [-]: TEST      R1 1         ; if R1 then PC := 15
  12 [-]: JMP       15           ; PC := 15
- 13 [-]: LOADBOOL  R1 0 0       ; R1 := false
+ 13 [-]: LOADKB    R1 0 0       ; R1 := false
  14 [-]: RETURN    R1 2         ; return R1
  15 [-]: SELF      R1 R0 K4     ; R2 := R0; R1 := R0[0xc1595bd5]
  16 [-]: GETGLOBAL R3 K5        ; R3 := gDecorationType
  17 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
- 18 [-]: LOADK     R2 1         ; R2 := 1.000000
+ 18 [-]: CONST     R2 1         ; R2 := 1.000000
  19 [-]: GETGLOBAL R3 K6        ; R3 := 0x03110559
  20 [-]: LEN       R3 R3        ; R3 := # R3
- 21 [-]: LOADK     R4 1         ; R4 := 1.000000
+ 21 [-]: CONST     R4 1         ; R4 := 1.000000
  22 [-]: FORPREP   R2 43        ; R2 -= R4; PC := 43
  23 [-]: GETGLOBAL R6 K0        ; R6 := 0x7b998233
  24 [-]: GETGLOBAL R7 K6        ; R7 := 0x03110559
@@ -55,9 +55,9 @@
  26 [-]: CALL      R6 2 2       ; R6 := R6(R7)
  27 [-]: TEST      R6 1         ; if R6 then PC := 43
  28 [-]: JMP       43           ; PC := 43
- 29 [-]: LOADK     R6 1         ; R6 := 1.000000
+ 29 [-]: CONST     R6 1         ; R6 := 1.000000
  30 [-]: LEN       R7 R1        ; R7 := # R1
- 31 [-]: LOADK     R8 1         ; R8 := 1.000000
+ 31 [-]: CONST     R8 1         ; R8 := 1.000000
  32 [-]: FORPREP   R6 42        ; R6 -= R8; PC := 42
  33 [-]: GETTABLE  R10 R1 R9    ; R10 := R1[R9]
  34 [-]: SELF      R10 R10 K2   ; R11 := R10; R10 := R10[0xf2deaf69]
@@ -66,11 +66,11 @@
  37 [-]: CALL      R10 3 2      ; R10 := R10(R11,R12)
  38 [-]: TEST      R10 0        ; if not R10 then PC := 42
  39 [-]: JMP       42           ; PC := 42
- 40 [-]: LOADBOOL  R10 1 0      ; R10 := true
+ 40 [-]: LOADKB    R10 1 0      ; R10 := true
  41 [-]: RETURN    R10 2        ; return R10
  42 [-]: FORLOOP   R6 33        ; R6 += R8; if R6 <= R7 then begin PC := 33; R9 := R6 end
  43 [-]: FORLOOP   R2 23        ; R2 += R4; if R2 <= R3 then begin PC := 23; R5 := R2 end
- 44 [-]: LOADBOOL  R10 0 0      ; R10 := false
+ 44 [-]: LOADKB    R10 0 0      ; R10 := false
  45 [-]: RETURN    R10 2        ; return R10
  46 [-]: RETURN    R0 1         ; return 
 
@@ -105,7 +105,7 @@
  19 [-]: SELF      R2 R1 K3     ; R3 := R1; R2 := R1[0x1ac1655c]
  20 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  21 [-]: SELF      R2 R2 K6     ; R3 := R2; R2 := R2[0x281fe338]
- 22 [-]: LOADK     R4 120       ; R4 := 120.000000
+ 22 [-]: CONST     R4 120       ; R4 := 120.000000
  23 [-]: CALL      R2 3 1       ; R2(R3,R4)
  24 [-]: GETGLOBAL R2 K7        ; R2 := 0x33bdd652
  25 [-]: GETTABLE  R2 R2 K8     ; R2 := R2[0x23d5322f]
@@ -132,11 +132,11 @@
   5 [-]: GETGLOBAL R2 K0        ; R2 := _T
   6 [-]: NEWTABLE  R3 0 0       ; R3 := {}
   7 [-]: SETTABLE  R2 K1 R3     ; R2["ArchonReviveTargets"] := R3
-  8 [-]: LOADK     R2 1         ; R2 := 1.000000
+  8 [-]: CONST     R2 1         ; R2 := 1.000000
   9 [-]: GETGLOBAL R3 K0        ; R3 := _T
  10 [-]: GETTABLE  R3 R3 K1     ; R3 := R3["ArchonReviveTargets"]
  11 [-]: LEN       R3 R3        ; R3 := # R3
- 12 [-]: LOADK     R4 1         ; R4 := 1.000000
+ 12 [-]: CONST     R4 1         ; R4 := 1.000000
  13 [-]: FORPREP   R2 43        ; R2 -= R4; PC := 43
  14 [-]: GETGLOBAL R6 K0        ; R6 := _T
  15 [-]: GETTABLE  R6 R6 K1     ; R6 := R6["ArchonReviveTargets"]
@@ -199,7 +199,7 @@
  17 [-]: SELF      R5 R4 K7     ; R6 := R4; R5 := R4[0x6cd833c5]
  18 [-]: GETGLOBAL R7 K8        ; R7 := 0x3765f417
  19 [-]: GETGLOBAL R8 K9        ; R8 := 0x55730e1a
- 20 [-]: LOADK     R9 1         ; R9 := 1.000000
+ 20 [-]: CONST     R9 1         ; R9 := 1.000000
  21 [-]: GETGLOBAL R10 K8       ; R10 := 0x3765f417
  22 [-]: LEN       R10 R10      ; R10 := # R10
  23 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
@@ -213,7 +213,7 @@
  31 [-]: SELF      R11 R2 K13   ; R12 := R2; R11 := R2[0xc45c884b]
  32 [-]: CALL      R11 2 2      ; R11 := R11(R12)
  33 [-]: LOADNIL   R12 R12      ; R12 := nil
- 34 [-]: LOADK     R13 0        ; R13 := 0.000000
+ 34 [-]: CONST     R13 0        ; R13 := 0.000000
  35 [-]: CALL      R5 9 1       ; R5(R6,R7,R8,R9,R10,R11,R12,R13)
  36 [-]: RETURN    R0 1         ; return 
 

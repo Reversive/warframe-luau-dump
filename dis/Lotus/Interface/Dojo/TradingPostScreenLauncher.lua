@@ -39,7 +39,7 @@
   3 [-]: CALL      R1 2 2       ; R1 := R1(R2)
   4 [-]: EQ        0 R0 R1      ; if R0 ~= R1 then PC := 9
   5 [-]: JMP       9            ; PC := 9
-  6 [-]: LOADK     R1 1         ; R1 := 1.000000
+  6 [-]: CONST     R1 1         ; R1 := 1.000000
   7 [-]: RETURN    R1 2         ; return R1
   8 [-]: JMP       27           ; PC := 27
   9 [-]: GETGLOBAL R1 K0        ; R1 := 0x0469f296
@@ -47,7 +47,7 @@
  11 [-]: CALL      R1 2 2       ; R1 := R1(R2)
  12 [-]: EQ        0 R0 R1      ; if R0 ~= R1 then PC := 17
  13 [-]: JMP       17           ; PC := 17
- 14 [-]: LOADK     R1 2         ; R1 := 2.000000
+ 14 [-]: CONST     R1 2         ; R1 := 2.000000
  15 [-]: RETURN    R1 2         ; return R1
  16 [-]: JMP       27           ; PC := 27
  17 [-]: GETGLOBAL R1 K0        ; R1 := 0x0469f296
@@ -55,10 +55,10 @@
  19 [-]: CALL      R1 2 2       ; R1 := R1(R2)
  20 [-]: EQ        0 R0 R1      ; if R0 ~= R1 then PC := 25
  21 [-]: JMP       25           ; PC := 25
- 22 [-]: LOADK     R1 3         ; R1 := 3.000000
+ 22 [-]: CONST     R1 3         ; R1 := 3.000000
  23 [-]: RETURN    R1 2         ; return R1
  24 [-]: JMP       27           ; PC := 27
- 25 [-]: LOADK     R1 4         ; R1 := 4.000000
+ 25 [-]: CONST     R1 4         ; R1 := 4.000000
  26 [-]: RETURN    R1 2         ; return R1
  27 [-]: RETURN    R0 1         ; return 
 

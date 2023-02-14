@@ -34,13 +34,13 @@
  11 [-]: GETGLOBAL R4 K4        ; R4 := 0x64fb1586
  12 [-]: GETGLOBAL R5 K0        ; R5 := 0x722c04d2
  13 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 14 [-]: LOADK     R5 1         ; R5 := 1.000000
- 15 [-]: LOADBOOL  R6 1 0       ; R6 := true
+ 14 [-]: CONST     R5 1         ; R5 := 1.000000
+ 15 [-]: LOADKB    R6 1 0       ; R6 := true
  16 [-]: CALL      R2 5 2       ; R2 := R2(R3,R4,R5,R6)
  17 [-]: EQ        1 R2 K5      ; if R2 == 1.000000 then PC := 20
  18 [-]: JMP       20           ; PC := 20
- 19 [-]: LOADBOOL  R2 0 1       ; R2 := false; PC := 20
- 20 [-]: LOADBOOL  R2 1 0       ; R2 := true
+ 19 [-]: LOADKB    R2 0 1       ; R2 := false; PC := 20
+ 20 [-]: LOADKB    R2 1 0       ; R2 := true
  21 [-]: RETURN    R2 2         ; return R2
  22 [-]: RETURN    R0 1         ; return 
 

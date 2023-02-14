@@ -54,13 +54,13 @@
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0xae91e43b
   2 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0xbed40e9c]
-  3 [-]: LOADBOOL  R2 1 0       ; R2 := true
+  3 [-]: LOADKB    R2 1 0       ; R2 := true
   4 [-]: CALL      R0 3 1       ; R0(R1,R2)
   5 [-]: GETGLOBAL R0 K0        ; R0 := 0xae91e43b
   6 [-]: SELF      R0 R0 K2     ; R1 := R0; R0 := R0[0x67bc869f]
   7 [-]: LOADK     R2 K3        ; R2 := "SubtitleText"
-  8 [-]: LOADK     R3 10        ; R3 := 10.000000
-  9 [-]: LOADK     R4 0         ; R4 := 0.000000
+  8 [-]: CONST     R3 10        ; R3 := 10.000000
+  9 [-]: CONST     R4 0         ; R4 := 0.000000
  10 [-]: CALL      R0 5 1       ; R0(R1,R2,R3,R4)
  11 [-]: GETGLOBAL R0 K0        ; R0 := 0xae91e43b
  12 [-]: SELF      R0 R0 K4     ; R1 := R0; R0 := R0[0x20b98db3]
@@ -70,12 +70,12 @@
  16 [-]: GETGLOBAL R0 K7        ; R0 := 0x25312c9b
  17 [-]: GETGLOBAL R1 K0        ; R1 := 0xae91e43b
  18 [-]: LOADK     R2 K3        ; R2 := "SubtitleText"
- 19 [-]: LOADK     R3 0         ; R3 := 0.000000
+ 19 [-]: CONST     R3 0         ; R3 := 0.000000
  20 [-]: NEWTABLE  R4 1 0       ; R4 := {}
- 21 [-]: LOADK     R5 10        ; R5 := 10.000000
+ 21 [-]: CONST     R5 10        ; R5 := 10.000000
  22 [-]: SETLIST   R4 1 1       ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 1
  23 [-]: NEWTABLE  R5 1 0       ; R5 := {}
- 24 [-]: LOADK     R6 100       ; R6 := 100.000000
+ 24 [-]: CONST     R6 100       ; R6 := 100.000000
  25 [-]: SETLIST   R5 1 1       ; R5[(1-1)*FPF+i] := R(5+i), 1 <= i <= 1
  26 [-]: LOADK     R6 K9        ; R6 := 0.700000
  27 [-]: LOADK     R7 K10       ; R7 := 1.300000
@@ -83,15 +83,15 @@
  29 [-]: GETGLOBAL R0 K7        ; R0 := 0x25312c9b
  30 [-]: GETGLOBAL R1 K0        ; R1 := 0xae91e43b
  31 [-]: LOADK     R2 K11       ; R2 := "_root"
- 32 [-]: LOADK     R3 1         ; R3 := 1.000000
+ 32 [-]: CONST     R3 1         ; R3 := 1.000000
  33 [-]: NEWTABLE  R4 1 0       ; R4 := {}
- 34 [-]: LOADK     R5 10        ; R5 := 10.000000
+ 34 [-]: CONST     R5 10        ; R5 := 10.000000
  35 [-]: SETLIST   R4 1 1       ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 1
  36 [-]: NEWTABLE  R5 1 0       ; R5 := {}
- 37 [-]: LOADK     R6 0         ; R6 := 0.000000
+ 37 [-]: CONST     R6 0         ; R6 := 0.000000
  38 [-]: SETLIST   R5 1 1       ; R5[(1-1)*FPF+i] := R(5+i), 1 <= i <= 1
- 39 [-]: LOADK     R6 4         ; R6 := 4.000000
- 40 [-]: LOADK     R7 3         ; R7 := 3.000000
+ 39 [-]: CONST     R6 4         ; R6 := 4.000000
+ 40 [-]: CONST     R7 3         ; R7 := 3.000000
  41 [-]: CLOSURE   R8 0         ; R8 := closure(Function #2.1)
  42 [-]: CALL      R0 9 1       ; R0(R1,R2,R3,R4,R5,R6,R7,R8)
  43 [-]: GETUPVAL  R0 U0        ; R0 := U0

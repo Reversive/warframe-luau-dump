@@ -32,7 +32,7 @@
   1 [-]: SUB       R1 R0 K0     ; R1 := R0 - 1.000000
   2 [-]: MUL       R1 K1 R1     ; R1 := 0.050000 * R1
   3 [-]: SUB       R1 K2 R1     ; R1 := 0.900000 - R1
-  4 [-]: UNM       R1 R1        ; R1 := ^ R1
+  4 [-]: UNM       R1 R1        ; R1 :=  R1
   5 [-]: RETURN    R1 2         ; return R1
   6 [-]: RETURN    R0 1         ; return 
 
@@ -86,8 +86,8 @@
  12 [-]: SELF      R5 R0 K3     ; R6 := R0; R5 := R0[0xde321e6f]
  13 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  14 [-]: SELF      R5 R5 K4     ; R6 := R5; R5 := R5[0x5e6704ff]
- 15 [-]: LOADK     R7 298       ; R7 := 298.000000
- 16 [-]: LOADK     R8 2         ; R8 := 2.000000
+ 15 [-]: CONST     R7 304       ; R7 := 304.000000
+ 16 [-]: CONST     R8 3         ; R8 := 3.000000
  17 [-]: GETUPVAL  R9 U0        ; R9 := U0
  18 [-]: MOVE      R10 R2       ; R10 := R2
  19 [-]: CALL      R9 2 2       ; R9 := R9(R10)
@@ -121,8 +121,8 @@
  12 [-]: SELF      R5 R0 K3     ; R6 := R0; R5 := R0[0xde321e6f]
  13 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  14 [-]: SELF      R5 R5 K4     ; R6 := R5; R5 := R5[0x12dd9da2]
- 15 [-]: LOADK     R7 298       ; R7 := 298.000000
- 16 [-]: LOADK     R8 2         ; R8 := 2.000000
+ 15 [-]: CONST     R7 304       ; R7 := 304.000000
+ 16 [-]: CONST     R8 3         ; R8 := 3.000000
  17 [-]: GETUPVAL  R9 U0        ; R9 := U0
  18 [-]: MOVE      R10 R2       ; R10 := R2
  19 [-]: CALL      R9 2 2       ; R9 := R9(R10)

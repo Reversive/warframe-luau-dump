@@ -47,7 +47,7 @@
  24 [-]: LT        0 K10 R7     ; if 1.000000 >= R7 then PC := 30
  25 [-]: JMP       30           ; PC := 30
  26 [-]: SELF      R7 R5 K11    ; R8 := R5; R7 := R5[0xfe9dc265]
- 27 [-]: LOADK     R9 4         ; R9 := 4.000000
+ 27 [-]: CONST     R9 4         ; R9 := 4.000000
  28 [-]: CALL      R7 3 1       ; R7(R8,R9)
  29 [-]: JMP       44           ; PC := 44
  30 [-]: SELF      R7 R6 K6     ; R8 := R6; R7 := R6[0xbc030719]
@@ -62,7 +62,7 @@
  39 [-]: LT        0 K10 R7     ; if 1.000000 >= R7 then PC := 44
  40 [-]: JMP       44           ; PC := 44
  41 [-]: SELF      R7 R5 K11    ; R8 := R5; R7 := R5[0xfe9dc265]
- 42 [-]: LOADK     R9 4         ; R9 := 4.000000
+ 42 [-]: CONST     R9 4         ; R9 := 4.000000
  43 [-]: CALL      R7 3 1       ; R7(R8,R9)
  44 [-]: TFORLOOP  R1 2         ; R4,R5 :=  R1(R2,R3); if R4 ~= nil then begin PC = 9; R3 := R4 end
  45 [-]: JMP       9            ; PC := 9

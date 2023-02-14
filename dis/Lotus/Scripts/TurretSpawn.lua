@@ -105,7 +105,7 @@
   3 [-]: LT        0 K0 R2      ; if 0.000000 >= R2 then PC := 20
   4 [-]: JMP       20           ; PC := 20
   5 [-]: GETGLOBAL R2 K1        ; R2 := 0x55730e1a
-  6 [-]: LOADK     R3 1         ; R3 := 1.000000
+  6 [-]: CONST     R3 1         ; R3 := 1.000000
   7 [-]: LEN       R4 R0        ; R4 := # R0
   8 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
   9 [-]: GETGLOBAL R3 K2        ; R3 := 0x33bdd652
@@ -190,7 +190,7 @@
  20 [-]: TEST      R4 1         ; if R4 then PC := 27
  21 [-]: JMP       27           ; PC := 27
  22 [-]: GETGLOBAL R4 K4        ; R4 := 0x55730e1a
- 23 [-]: LOADK     R5 1         ; R5 := 1.000000
+ 23 [-]: CONST     R5 1         ; R5 := 1.000000
  24 [-]: LEN       R6 R2        ; R6 := # R2
  25 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
  26 [-]: GETTABLE  R3 R2 R4     ; R3 := R2[R4]
@@ -271,8 +271,8 @@
  62 [-]: RETURN    R0 1         ; return 
  63 [-]: EQ        1 R0 K23     ; if R0 == 32.000000 then PC := 66
  64 [-]: JMP       66           ; PC := 66
- 65 [-]: LOADBOOL  R4 0 1       ; R4 := false; PC := 66
- 66 [-]: LOADBOOL  R4 1 0       ; R4 := true
+ 65 [-]: LOADKB    R4 0 1       ; R4 := false; PC := 66
+ 66 [-]: LOADKB    R4 1 0       ; R4 := true
  67 [-]: GETGLOBAL R5 K24       ; R5 := 0x89326c93
  68 [-]: SELF      R5 R5 K25    ; R6 := R5; R5 := R5[0x29ef273d]
  69 [-]: CALL      R5 2 2       ; R5 := R5(R6)
@@ -294,9 +294,9 @@
  85 [-]: LOADK     R11 K31      ; R11 := "FixedCameraSpawn"
  86 [-]: CALL      R10 2 0      ; R10,... := R10(R11)
  87 [-]: CALL      R8 0 2       ; R8 := R8(R9,...)
- 88 [-]: LOADK     R9 1         ; R9 := 1.000000
+ 88 [-]: CONST     R9 1         ; R9 := 1.000000
  89 [-]: LEN       R10 R8       ; R10 := # R8
- 90 [-]: LOADK     R11 1        ; R11 := 1.000000
+ 90 [-]: CONST     R11 1        ; R11 := 1.000000
  91 [-]: FORPREP   R9 102       ; R9 -= R11; PC := 102
  92 [-]: GETUPVAL  R13 U0       ; R13 := U0
  93 [-]: GETTABLE  R14 R8 R12   ; R14 := R8[R12]
@@ -315,9 +315,9 @@
 106 [-]: LOADK     R17 K35      ; R17 := "FixedNarrowCameraSpawn"
 107 [-]: CALL      R16 2 0      ; R16,... := R16(R17)
 108 [-]: CALL      R14 0 2      ; R14 := R14(R15,...)
-109 [-]: LOADK     R15 1        ; R15 := 1.000000
+109 [-]: CONST     R15 1        ; R15 := 1.000000
 110 [-]: LEN       R16 R14      ; R16 := # R14
-111 [-]: LOADK     R17 1        ; R17 := 1.000000
+111 [-]: CONST     R17 1        ; R17 := 1.000000
 112 [-]: FORPREP   R15 118      ; R15 -= R17; PC := 118
 113 [-]: SELF      R19 R6 K34   ; R20 := R6; R19 := R6[0x71fd119c]
 114 [-]: GETGLOBAL R21 K36      ; R21 := 0x67662072
@@ -331,9 +331,9 @@
 122 [-]: LOADK     R22 K37      ; R22 := "FixedTurretSpawn"
 123 [-]: CALL      R21 2 0      ; R21,... := R21(R22)
 124 [-]: CALL      R19 0 2      ; R19 := R19(R20,...)
-125 [-]: LOADK     R20 1        ; R20 := 1.000000
+125 [-]: CONST     R20 1        ; R20 := 1.000000
 126 [-]: LEN       R21 R19      ; R21 := # R19
-127 [-]: LOADK     R22 1        ; R22 := 1.000000
+127 [-]: CONST     R22 1        ; R22 := 1.000000
 128 [-]: FORPREP   R20 141      ; R20 -= R22; PC := 141
 129 [-]: GETUPVAL  R24 U0       ; R24 := U0
 130 [-]: GETTABLE  R25 R19 R23  ; R25 := R19[R23]
@@ -377,9 +377,9 @@
 168 [-]: GETGLOBAL R27 K44      ; R27 := 0x14459a1c
 169 [-]: TEST      R27 0        ; if not R27 then PC := 274
 170 [-]: JMP       274          ; PC := 274
-171 [-]: LOADK     R27 1        ; R27 := 1.000000
+171 [-]: CONST     R27 1        ; R27 := 1.000000
 172 [-]: LEN       R28 R25      ; R28 := # R25
-173 [-]: LOADK     R29 1        ; R29 := 1.000000
+173 [-]: CONST     R29 1        ; R29 := 1.000000
 174 [-]: FORPREP   R27 192      ; R27 -= R29; PC := 192
 175 [-]: GETTABLE  R31 R25 R30  ; R31 := R25[R30]
 176 [-]: SELF      R31 R31 K45  ; R32 := R31; R31 := R31[0xf37943ff]
@@ -401,9 +401,9 @@
 192 [-]: FORLOOP   R27 175      ; R27 += R29; if R27 <= R28 then begin PC := 175; R30 := R27 end
 193 [-]: TEST      R4 1         ; if R4 then PC := 217
 194 [-]: JMP       217          ; PC := 217
-195 [-]: LOADK     R32 1        ; R32 := 1.000000
+195 [-]: CONST     R32 1        ; R32 := 1.000000
 196 [-]: LEN       R33 R26      ; R33 := # R26
-197 [-]: LOADK     R34 1        ; R34 := 1.000000
+197 [-]: CONST     R34 1        ; R34 := 1.000000
 198 [-]: FORPREP   R32 216      ; R32 -= R34; PC := 216
 199 [-]: GETTABLE  R36 R26 R35  ; R36 := R26[R35]
 200 [-]: SELF      R36 R36 K45  ; R37 := R36; R36 := R36[0xf37943ff]
@@ -430,9 +430,9 @@
 221 [-]: CALL      R39 2 0      ; R39,... := R39(R40)
 222 [-]: CALL      R37 0 2      ; R37 := R37(R38,...)
 223 [-]: MOVE      R8 R37       ; R8 := R37
-224 [-]: LOADK     R37 1        ; R37 := 1.000000
+224 [-]: CONST     R37 1        ; R37 := 1.000000
 225 [-]: LEN       R38 R8       ; R38 := # R8
-226 [-]: LOADK     R39 1        ; R39 := 1.000000
+226 [-]: CONST     R39 1        ; R39 := 1.000000
 227 [-]: FORPREP   R37 240      ; R37 -= R39; PC := 240
 228 [-]: GETUPVAL  R41 U0       ; R41 := U0
 229 [-]: GETTABLE  R42 R8 R40   ; R42 := R8[R40]
@@ -454,9 +454,9 @@
 245 [-]: CALL      R44 2 0      ; R44,... := R44(R45)
 246 [-]: CALL      R42 0 2      ; R42 := R42(R43,...)
 247 [-]: MOVE      R19 R42      ; R19 := R42
-248 [-]: LOADK     R42 1        ; R42 := 1.000000
+248 [-]: CONST     R42 1        ; R42 := 1.000000
 249 [-]: LEN       R43 R19      ; R43 := # R19
-250 [-]: LOADK     R44 1        ; R44 := 1.000000
+250 [-]: CONST     R44 1        ; R44 := 1.000000
 251 [-]: FORPREP   R42 264      ; R42 -= R44; PC := 264
 252 [-]: GETUPVAL  R46 U0       ; R46 := U0
 253 [-]: GETTABLE  R47 R19 R45  ; R47 := R19[R45]
@@ -488,12 +488,12 @@
 279 [-]: DIV       R48 R48 K51  ; R48 := R48 / 3.000000
 280 [-]: LEN       R49 R25      ; R49 := # R25
 281 [-]: CALL      R47 3 2      ; R47 := R47(R48,R49)
-282 [-]: LOADK     R48 1        ; R48 := 1.000000
+282 [-]: CONST     R48 1        ; R48 := 1.000000
 283 [-]: MOVE      R49 R47      ; R49 := R47
-284 [-]: LOADK     R50 1        ; R50 := 1.000000
+284 [-]: CONST     R50 1        ; R50 := 1.000000
 285 [-]: FORPREP   R48 308      ; R48 -= R50; PC := 308
 286 [-]: GETGLOBAL R52 K50      ; R52 := 0x55730e1a
-287 [-]: LOADK     R53 1        ; R53 := 1.000000
+287 [-]: CONST     R53 1        ; R53 := 1.000000
 288 [-]: LEN       R54 R25      ; R54 := # R25
 289 [-]: CALL      R52 3 2      ; R52 := R52(R53,R54)
 290 [-]: GETTABLE  R53 R25 R52  ; R53 := R25[R52]
@@ -515,9 +515,9 @@
 306 [-]: CALL      R59 2 0      ; R59,... := R59(R60)
 307 [-]: CALL      R55 0 1      ; R55(R56,...)
 308 [-]: FORLOOP   R48 286      ; R48 += R50; if R48 <= R49 then begin PC := 286; R51 := R48 end
-309 [-]: LOADK     R55 1        ; R55 := 1.000000
+309 [-]: CONST     R55 1        ; R55 := 1.000000
 310 [-]: LEN       R56 R25      ; R56 := # R25
-311 [-]: LOADK     R57 1        ; R57 := 1.000000
+311 [-]: CONST     R57 1        ; R57 := 1.000000
 312 [-]: FORPREP   R55 321      ; R55 -= R57; PC := 321
 313 [-]: GETGLOBAL R59 K19      ; R59 := 0x7b998233
 314 [-]: GETTABLE  R60 R25 R58  ; R60 := R25[R58]
@@ -627,12 +627,12 @@
 418 [-]: LEN       R83 R83      ; R83 := # R83
 419 [-]: CALL      R81 3 2      ; R81 := R81(R82,R83)
 420 [-]: SETTABLE  R80 K59 R81  ; R80["maxSpawns"] := R81
-421 [-]: LOADK     R81 1        ; R81 := 1.000000
+421 [-]: CONST     R81 1        ; R81 := 1.000000
 422 [-]: GETTABLE  R82 R80 K59  ; R82 := R80["maxSpawns"]
-423 [-]: LOADK     R83 1        ; R83 := 1.000000
+423 [-]: CONST     R83 1        ; R83 := 1.000000
 424 [-]: FORPREP   R81 449      ; R81 -= R83; PC := 449
 425 [-]: GETGLOBAL R85 K50      ; R85 := 0x55730e1a
-426 [-]: LOADK     R86 1        ; R86 := 1.000000
+426 [-]: CONST     R86 1        ; R86 := 1.000000
 427 [-]: GETTABLE  R87 R80 K60  ; R87 := R80["cameraSpawns"]
 428 [-]: LEN       R87 R87      ; R87 := # R87
 429 [-]: CALL      R85 3 2      ; R85 := R85(R86,R87)
@@ -658,8 +658,8 @@
 449 [-]: FORLOOP   R81 425      ; R81 += R83; if R81 <= R82 then begin PC := 425; R84 := R81 end
 450 [-]: GETTABLE  R88 R80 K60  ; R88 := R80["cameraSpawns"]
 451 [-]: LEN       R88 R88      ; R88 := # R88
-452 [-]: LOADK     R89 1        ; R89 := 1.000000
-453 [-]: LOADK     R90 -1       ; R90 := -1.000000
+452 [-]: CONST     R89 1        ; R89 := 1.000000
+453 [-]: CONST     R90 -1       ; R90 := -1.000000
 454 [-]: FORPREP   R88 459      ; R88 -= R90; PC := 459
 455 [-]: GETTABLE  R92 R80 K60  ; R92 := R80["cameraSpawns"]
 456 [-]: GETTABLE  R92 R92 R91  ; R92 := R92[R91]
@@ -678,12 +678,12 @@
 469 [-]: DIV       R95 R95 K74  ; R95 := R95 / 1.250000
 470 [-]: CALL      R93 3 0      ; R93,... := R93(R94,R95)
 471 [-]: CALL      R92 0 2      ; R92 := R92(R93,...)
-472 [-]: LOADK     R93 1        ; R93 := 1.000000
+472 [-]: CONST     R93 1        ; R93 := 1.000000
 473 [-]: MOVE      R94 R92      ; R94 := R92
-474 [-]: LOADK     R95 1        ; R95 := 1.000000
+474 [-]: CONST     R95 1        ; R95 := 1.000000
 475 [-]: FORPREP   R93 498      ; R93 -= R95; PC := 498
 476 [-]: GETGLOBAL R97 K50      ; R97 := 0x55730e1a
-477 [-]: LOADK     R98 1        ; R98 := 1.000000
+477 [-]: CONST     R98 1        ; R98 := 1.000000
 478 [-]: LEN       R99 R26      ; R99 := # R26
 479 [-]: CALL      R97 3 2      ; R97 := R97(R98,R99)
 480 [-]: GETTABLE  R98 R26 R97  ; R98 := R26[R97]
@@ -705,9 +705,9 @@
 496 [-]: CALL      R104 2 0     ; R104,... := R104(R105)
 497 [-]: CALL      R100 0 1     ; R100(R101,...)
 498 [-]: FORLOOP   R93 476      ; R93 += R95; if R93 <= R94 then begin PC := 476; R96 := R93 end
-499 [-]: LOADK     R100 1       ; R100 := 1.000000
+499 [-]: CONST     R100 1       ; R100 := 1.000000
 500 [-]: LEN       R101 R26     ; R101 := # R26
-501 [-]: LOADK     R102 1       ; R102 := 1.000000
+501 [-]: CONST     R102 1       ; R102 := 1.000000
 502 [-]: FORPREP   R100 511     ; R100 -= R102; PC := 511
 503 [-]: GETGLOBAL R104 K19     ; R104 := 0x7b998233
 504 [-]: GETTABLE  R105 R26 R103; R105 := R26[R103]
@@ -858,12 +858,12 @@
  40 [-]: DIV       R3 R3 K13    ; R3 := R3 / 3.000000
  41 [-]: LEN       R4 R0        ; R4 := # R0
  42 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
- 43 [-]: LOADK     R3 1         ; R3 := 1.000000
+ 43 [-]: CONST     R3 1         ; R3 := 1.000000
  44 [-]: MOVE      R4 R2        ; R4 := R2
- 45 [-]: LOADK     R5 1         ; R5 := 1.000000
+ 45 [-]: CONST     R5 1         ; R5 := 1.000000
  46 [-]: FORPREP   R3 82        ; R3 -= R5; PC := 82
  47 [-]: GETGLOBAL R7 K12       ; R7 := 0x55730e1a
- 48 [-]: LOADK     R8 1         ; R8 := 1.000000
+ 48 [-]: CONST     R8 1         ; R8 := 1.000000
  49 [-]: LEN       R9 R0        ; R9 := # R0
  50 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
  51 [-]: GETTABLE  R8 R0 R7     ; R8 := R0[R7]
@@ -874,7 +874,7 @@
  56 [-]: CALL      R9 3 1       ; R9(R10,R11)
  57 [-]: GETGLOBAL R9 K16       ; R9 := 0x62797539
  58 [-]: GETGLOBAL R10 K12      ; R10 := 0x55730e1a
- 59 [-]: LOADK     R11 1        ; R11 := 1.000000
+ 59 [-]: CONST     R11 1        ; R11 := 1.000000
  60 [-]: GETGLOBAL R12 K16      ; R12 := 0x62797539
  61 [-]: LEN       R12 R12      ; R12 := # R12
  62 [-]: CALL      R10 3 2      ; R10 := R10(R11,R12)
@@ -934,12 +934,12 @@
  17 [-]: DIV       R4 R4 K8     ; R4 := R4 / 3.000000
  18 [-]: LEN       R5 R0        ; R5 := # R0
  19 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
- 20 [-]: LOADK     R4 1         ; R4 := 1.000000
+ 20 [-]: CONST     R4 1         ; R4 := 1.000000
  21 [-]: MOVE      R5 R3        ; R5 := R3
- 22 [-]: LOADK     R6 1         ; R6 := 1.000000
+ 22 [-]: CONST     R6 1         ; R6 := 1.000000
  23 [-]: FORPREP   R4 52        ; R4 -= R6; PC := 52
  24 [-]: GETGLOBAL R8 K7        ; R8 := 0x55730e1a
- 25 [-]: LOADK     R9 1         ; R9 := 1.000000
+ 25 [-]: CONST     R9 1         ; R9 := 1.000000
  26 [-]: LEN       R10 R0       ; R10 := # R0
  27 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
  28 [-]: GETTABLE  R9 R0 R8     ; R9 := R0[R8]
@@ -950,7 +950,7 @@
  33 [-]: CALL      R10 3 1      ; R10(R11,R12)
  34 [-]: GETGLOBAL R10 K11      ; R10 := 0x62797539
  35 [-]: GETGLOBAL R11 K7       ; R11 := 0x55730e1a
- 36 [-]: LOADK     R12 1        ; R12 := 1.000000
+ 36 [-]: CONST     R12 1        ; R12 := 1.000000
  37 [-]: GETGLOBAL R13 K11      ; R13 := 0x62797539
  38 [-]: LEN       R13 R13      ; R13 := # R13
  39 [-]: CALL      R11 3 2      ; R11 := R11(R12,R13)
@@ -1006,13 +1006,13 @@
  25 [-]: GETGLOBAL R4 K11       ; R4 := 0x4923259f
  26 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  27 [-]: SETGLOBAL R3 K11       ; (0x4923259f) := R3
- 28 [-]: LOADK     R3 1         ; R3 := 1.000000
+ 28 [-]: CONST     R3 1         ; R3 := 1.000000
  29 [-]: MOVE      R4 R2        ; R4 := R2
- 30 [-]: LOADK     R5 1         ; R5 := 1.000000
+ 30 [-]: CONST     R5 1         ; R5 := 1.000000
  31 [-]: FORPREP   R3 47        ; R3 -= R5; PC := 47
  32 [-]: GETGLOBAL R7 K13       ; R7 := 0x3e3d3162
  33 [-]: GETGLOBAL R8 K14       ; R8 := 0x55730e1a
- 34 [-]: LOADK     R9 1         ; R9 := 1.000000
+ 34 [-]: CONST     R9 1         ; R9 := 1.000000
  35 [-]: GETGLOBAL R10 K13      ; R10 := 0x3e3d3162
  36 [-]: LEN       R10 R10      ; R10 := # R10
  37 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
@@ -1071,13 +1071,13 @@
   4 [-]: LOADK     R3 K3        ; R3 := "TurretSpawn"
   5 [-]: CALL      R2 2 0       ; R2,... := R2(R3)
   6 [-]: CALL      R0 0 2       ; R0 := R0(R1,...)
-  7 [-]: LOADK     R1 1         ; R1 := 1.000000
+  7 [-]: CONST     R1 1         ; R1 := 1.000000
   8 [-]: LEN       R2 R0        ; R2 := # R0
-  9 [-]: LOADK     R3 1         ; R3 := 1.000000
+  9 [-]: CONST     R3 1         ; R3 := 1.000000
  10 [-]: FORPREP   R1 47        ; R1 -= R3; PC := 47
  11 [-]: GETGLOBAL R5 K4        ; R5 := 0x62797539
  12 [-]: GETGLOBAL R6 K5        ; R6 := 0x55730e1a
- 13 [-]: LOADK     R7 1         ; R7 := 1.000000
+ 13 [-]: CONST     R7 1         ; R7 := 1.000000
  14 [-]: GETGLOBAL R8 K4        ; R8 := 0x62797539
  15 [-]: LEN       R8 R8        ; R8 := # R8
  16 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)

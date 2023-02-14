@@ -25,7 +25,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  7
 
-  1 [-]: LOADK     R3 5         ; R3 := 5.000000
+  1 [-]: CONST     R3 5         ; R3 := 5.000000
   2 [-]: NEWTABLE  R4 0 2       ; R4 := {}
   3 [-]: SELF      R5 R2 K1     ; R6 := R2; R5 := R2[0x3e242157]
   4 [-]: CALL      R5 2 2       ; R5 := R5(R6)
@@ -68,11 +68,11 @@
  11 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  12 [-]: SELF      R3 R3 K2     ; R4 := R3; R3 := R3[0x5e6704ff]
  13 [-]: GETGLOBAL R5 K3        ; R5 := 0xcb3b251e
- 14 [-]: LOADK     R6 2         ; R6 := 2.000000
+ 14 [-]: CONST     R6 3         ; R6 := 3.000000
  15 [-]: GETGLOBAL R7 K5        ; R7 := 0x691b03ff
  16 [-]: MUL       R7 R7 R2     ; R7 := R7 * R2
  17 [-]: LOADNIL   R8 R9        ; R8 := R9 := nil
- 18 [-]: LOADK     R10 25       ; R10 := 25.000000
+ 18 [-]: CONST     R10 25       ; R10 := 25.000000
  19 [-]: GETGLOBAL R11 K6       ; R11 := 0x39655477
  20 [-]: CALL      R3 9 1       ; R3(R4,R5,R6,R7,R8,R9,R10,R11)
  21 [-]: RETURN    R0 1         ; return 
@@ -94,11 +94,11 @@
   5 [-]: CALL      R3 2 2       ; R3 := R3(R4)
   6 [-]: SELF      R3 R3 K1     ; R4 := R3; R3 := R3[0x12dd9da2]
   7 [-]: GETGLOBAL R5 K2        ; R5 := 0xcb3b251e
-  8 [-]: LOADK     R6 2         ; R6 := 2.000000
+  8 [-]: CONST     R6 3         ; R6 := 3.000000
   9 [-]: GETGLOBAL R7 K4        ; R7 := 0x691b03ff
  10 [-]: MUL       R7 R7 R2     ; R7 := R7 * R2
  11 [-]: LOADNIL   R8 R9        ; R8 := R9 := nil
- 12 [-]: LOADK     R10 25       ; R10 := 25.000000
+ 12 [-]: CONST     R10 25       ; R10 := 25.000000
  13 [-]: GETGLOBAL R11 K5       ; R11 := 0x39655477
  14 [-]: CALL      R3 9 1       ; R3(R4,R5,R6,R7,R8,R9,R10,R11)
  15 [-]: RETURN    R0 1         ; return 

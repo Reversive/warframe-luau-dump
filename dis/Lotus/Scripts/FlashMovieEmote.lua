@@ -56,7 +56,7 @@
  23 [-]: GETGLOBAL R7 K12       ; R7 := ZERO_VECTOR
  24 [-]: GETGLOBAL R8 K13       ; R8 := ZERO_ROTATION
  25 [-]: MOVE      R9 R0        ; R9 := R0
- 26 [-]: LOADK     R10 1        ; R10 := 1.000000
+ 26 [-]: CONST     R10 1        ; R10 := 1.000000
  27 [-]: CALL      R3 8 1       ; R3(R4,R5,R6,R7,R8,R9,R10)
  28 [-]: SELF      R3 R0 K14    ; R4 := R0; R3 := R0[0xa5e492d4]
  29 [-]: CALL      R3 2 2       ; R3 := R3(R4)
@@ -162,7 +162,7 @@
  23 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
  24 [-]: GETUPVAL  R2 U1        ; R2 := U1
  25 [-]: SELF      R2 R2 K7     ; R3 := R2; R2 := R2[0x1db57c6b]
- 26 [-]: LOADBOOL  R4 0 0       ; R4 := false
+ 26 [-]: LOADKB    R4 0 0       ; R4 := false
  27 [-]: CALL      R2 3 1       ; R2(R3,R4)
  28 [-]: GETGLOBAL R2 K8        ; R2 := 0x89326c93
  29 [-]: SELF      R2 R2 K9     ; R3 := R2; R2 := R2[0x18d05d30]

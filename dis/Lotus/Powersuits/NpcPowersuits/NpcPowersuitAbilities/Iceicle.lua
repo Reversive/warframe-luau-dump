@@ -96,7 +96,7 @@
  17 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  18 [-]: GETGLOBAL R5 K6        ; R5 := 0x6c97a788
  19 [-]: GETTABLE  R5 R5 K7     ; R5 := R5[0x733fc736]
- 20 [-]: LOADBOOL  R6 1 0       ; R6 := true
+ 20 [-]: LOADKB    R6 1 0       ; R6 := true
  21 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  22 [-]: SELF      R6 R5 K8     ; R7 := R5; R6 := R5[0x277bf617]
  23 [-]: MOVE      R8 R1        ; R8 := R1

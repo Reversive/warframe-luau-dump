@@ -13,8 +13,8 @@
   4 [-]: GETGLOBAL R1 K0        ; R1 := 0x2d0fad09
   5 [-]: LOADK     R2 K2        ; R2 := "Lotus.Types.Vehicles.Hoverboard.HoverboardAbility.HoverboardAbilityUtil"
   6 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  7 [-]: LOADK     R2 1         ; R2 := 1.000000
-  8 [-]: LOADK     R3 0         ; R3 := 0.000000
+  7 [-]: CONST     R2 1         ; R2 := 1.000000
+  8 [-]: CONST     R3 0         ; R3 := 0.000000
   9 [-]: CLOSURE   R4 0         ; R4 := closure(Function #1)
  10 [-]: CLOSURE   R5 1         ; R5 := closure(Function #2)
  11 [-]: CLOSURE   R6 2         ; R6 := closure(Function #3)
@@ -59,7 +59,7 @@
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0x42dcc9f5
   2 [-]: MOVE      R2 R0        ; R2 := R0
-  3 [-]: LOADK     R3 1         ; R3 := 1.000000
+  3 [-]: CONST     R3 1         ; R3 := 1.000000
   4 [-]: GETGLOBAL R4 K1        ; R4 := 0x69677458
   5 [-]: LEN       R4 R4        ; R4 := # R4
   6 [-]: CALL      R1 4 2       ; R1 := R1(R2,R3,R4)
@@ -81,7 +81,7 @@
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0x42dcc9f5
   2 [-]: MOVE      R2 R0        ; R2 := R0
-  3 [-]: LOADK     R3 1         ; R3 := 1.000000
+  3 [-]: CONST     R3 1         ; R3 := 1.000000
   4 [-]: GETGLOBAL R4 K1        ; R4 := 0x0d639913
   5 [-]: LEN       R4 R4        ; R4 := # R4
   6 [-]: CALL      R1 4 2       ; R1 := R1(R2,R3,R4)
@@ -211,7 +211,7 @@
   4 [-]: CALL      R1 2 2       ; R1 := R1(R2)
   5 [-]: TEST      R1 0         ; if not R1 then PC := 9
   6 [-]: JMP       9            ; PC := 9
-  7 [-]: LOADBOOL  R1 0 0       ; R1 := false
+  7 [-]: LOADKB    R1 0 0       ; R1 := false
   8 [-]: RETURN    R1 2         ; return R1
   9 [-]: GETGLOBAL R1 K3        ; R1 := 0xc8802016
  10 [-]: GETGLOBAL R2 K1        ; R2 := _T
@@ -220,11 +220,11 @@
  13 [-]: JMP       18           ; PC := 18
  14 [-]: EQ        0 R5 R0      ; if R5 ~= R0 then PC := 18
  15 [-]: JMP       18           ; PC := 18
- 16 [-]: LOADBOOL  R6 1 0       ; R6 := true
+ 16 [-]: LOADKB    R6 1 0       ; R6 := true
  17 [-]: RETURN    R6 2         ; return R6
  18 [-]: TFORLOOP  R1 2         ; R4,R5 :=  R1(R2,R3); if R4 ~= nil then begin PC = 14; R3 := R4 end
  19 [-]: JMP       14           ; PC := 14
- 20 [-]: LOADBOOL  R6 0 0       ; R6 := false
+ 20 [-]: LOADKB    R6 0 0       ; R6 := false
  21 [-]: RETURN    R6 2         ; return R6
  22 [-]: RETURN    R0 1         ; return 
 
@@ -278,7 +278,7 @@
  19 [-]: SELF      R4 R0 K3     ; R5 := R0; R4 := R0[0x388577d5]
  20 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  21 [-]: GETGLOBAL R5 K4        ; R5 := 0xcbd666e1
- 22 [-]: LOADK     R6 0         ; R6 := 0.000000
+ 22 [-]: CONST     R6 0         ; R6 := 0.000000
  23 [-]: CALL      R5 2 1       ; R5(R6)
  24 [-]: GETUPVAL  R5 U5        ; R5 := U5
  25 [-]: MOVE      R6 R4        ; R6 := R4
@@ -303,18 +303,18 @@
  44 [-]: GETUPVAL  R11 U8       ; R11 := U8
  45 [-]: GETUPVAL  R12 U4       ; R12 := U4
  46 [-]: CALL      R11 2 2      ; R11 := R11(R12)
- 47 [-]: LOADK     R12 100      ; R12 := 100.000000
- 48 [-]: LOADK     R13 7        ; R13 := 7.000000
+ 47 [-]: CONST     R12 100      ; R12 := 100.000000
+ 48 [-]: CONST     R13 7        ; R13 := 7.000000
  49 [-]: LOADNIL   R14 R14      ; R14 := nil
  50 [-]: MOVE      R15 R5       ; R15 := R5
- 51 [-]: LOADK     R16 19       ; R16 := 19.000000
- 52 [-]: LOADBOOL  R17 1 0      ; R17 := true
- 53 [-]: LOADBOOL  R18 1 0      ; R18 := true
- 54 [-]: LOADBOOL  R19 0 0      ; R19 := false
- 55 [-]: LOADK     R20 1        ; R20 := 1.000000
- 56 [-]: LOADBOOL  R21 0 0      ; R21 := false
+ 51 [-]: CONST     R16 19       ; R16 := 19.000000
+ 52 [-]: LOADKB    R17 1 0      ; R17 := true
+ 53 [-]: LOADKB    R18 1 0      ; R18 := true
+ 54 [-]: LOADKB    R19 0 0      ; R19 := false
+ 55 [-]: CONST     R20 1        ; R20 := 1.000000
+ 56 [-]: LOADKB    R21 0 0      ; R21 := false
  57 [-]: LOADNIL   R22 R22      ; R22 := nil
- 58 [-]: LOADK     R23 0        ; R23 := 0.000000
+ 58 [-]: CONST     R23 0        ; R23 := 0.000000
  59 [-]: CALL      R6 18 1      ; R6(R7,R8,R9,R10,R11,R12,R13,R14,R15,R16,R17,R18,R19,R20,R21,R22,R23)
  60 [-]: GETGLOBAL R6 K12       ; R6 := 0x7b998233
  61 [-]: GETGLOBAL R7 K13       ; R7 := 0x3ac473f7

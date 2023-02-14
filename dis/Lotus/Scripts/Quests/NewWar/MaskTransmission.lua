@@ -44,7 +44,7 @@
  21 [-]: TEST      R3 0         ; if not R3 then PC := 27
  22 [-]: JMP       27           ; PC := 27
  23 [-]: GETGLOBAL R3 K10       ; R3 := 0xcbd666e1
- 24 [-]: LOADK     R4 0         ; R4 := 0.000000
+ 24 [-]: CONST     R4 0         ; R4 := 0.000000
  25 [-]: CALL      R3 2 1       ; R3(R4)
  26 [-]: JMP       11           ; PC := 11
  27 [-]: GETGLOBAL R3 K6        ; R3 := 0x7b998233
@@ -77,19 +77,19 @@
  54 [-]: MUL       R6 R6 K21    ; R6 := R6 * 5.000000
  55 [-]: CALL      R4 3 1       ; R4(R5,R6)
  56 [-]: GETGLOBAL R4 K10       ; R4 := 0xcbd666e1
- 57 [-]: LOADK     R5 0         ; R5 := 0.000000
+ 57 [-]: CONST     R5 0         ; R5 := 0.000000
  58 [-]: CALL      R4 2 1       ; R4(R5)
  59 [-]: JMP       27           ; PC := 27
  60 [-]: GETTABLE  R4 R2 K14    ; R4 := R2["postProcessBias"]
  61 [-]: SETTABLE  R4 K15 K22   ; R4["radialBlurStrength"] := 0.000000
  62 [-]: GETTABLE  R4 R2 K17    ; R4 := R2["postProcess"]
  63 [-]: SELF      R4 R4 K18    ; R5 := R4; R4 := R4[0xc7bdb630]
- 64 [-]: LOADK     R6 0         ; R6 := 0.000000
+ 64 [-]: CONST     R6 0         ; R6 := 0.000000
  65 [-]: CALL      R4 3 1       ; R4(R5,R6)
  66 [-]: SELF      R4 R1 K23    ; R5 := R1; R4 := R1[0x052a3a7c]
- 67 [-]: LOADK     R6 0         ; R6 := 0.000000
- 68 [-]: LOADK     R7 0         ; R7 := 0.000000
- 69 [-]: LOADBOOL  R8 0 0       ; R8 := false
+ 67 [-]: CONST     R6 0         ; R6 := 0.000000
+ 68 [-]: CONST     R7 0         ; R7 := 0.000000
+ 69 [-]: LOADKB    R8 0 0       ; R8 := false
  70 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
  71 [-]: RETURN    R0 1         ; return 
 

@@ -40,7 +40,7 @@
  17 [-]: CALL      R3 7 1       ; R3(R4,R5,R6,R7,R8,R9)
  18 [-]: JMP       31           ; PC := 31
  19 [-]: GETGLOBAL R3 K5        ; R3 := 0xcbd666e1
- 20 [-]: LOADK     R4 0         ; R4 := 0.000000
+ 20 [-]: CONST     R4 0         ; R4 := 0.000000
  21 [-]: CALL      R3 2 1       ; R3(R4)
  22 [-]: GETGLOBAL R3 K1        ; R3 := 0x89326c93
  23 [-]: SELF      R3 R3 K2     ; R4 := R3; R3 := R3[0x05909209]

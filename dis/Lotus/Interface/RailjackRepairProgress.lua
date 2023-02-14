@@ -10,9 +10,9 @@
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x2d0fad09
   2 [-]: LOADK     R1 K1        ; R1 := "Lotus.Interface.LotusUtilities"
   3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: LOADBOOL  R1 0 0       ; R1 := false
-  5 [-]: LOADK     R2 0         ; R2 := 0.000000
-  6 [-]: LOADK     R3 0         ; R3 := 0.000000
+  4 [-]: LOADKB    R1 0 0       ; R1 := false
+  5 [-]: CONST     R2 0         ; R2 := 0.000000
+  6 [-]: CONST     R3 0         ; R3 := 0.000000
   7 [-]: CLOSURE   R4 0         ; R4 := closure(Function #1)
   8 [-]: SETGLOBAL R4 K2        ; Shutdown := R4
   9 [-]: CLOSURE   R4 1         ; R4 := closure(Function #2)
@@ -59,14 +59,14 @@
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0xae91e43b
   2 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0x67bc869f]
   3 [-]: LOADK     R2 K2        ; R2 := "Panel.Bg"
-  4 [-]: LOADK     R3 13        ; R3 := 13.000000
-  5 [-]: LOADK     R4 320       ; R4 := 320.000000
+  4 [-]: CONST     R3 13        ; R3 := 13.000000
+  5 [-]: CONST     R4 320       ; R4 := 320.000000
   6 [-]: CALL      R0 5 1       ; R0(R1,R2,R3,R4)
   7 [-]: GETGLOBAL R0 K3        ; R0 := 0x7b998233
   8 [-]: GETGLOBAL R1 K4        ; R1 := 0x0032441c
   9 [-]: GETTABLE  R1 R1 K5     ; R1 := R1["UIColor_DarkGrey"]
  10 [-]: CALL      R0 2 2       ; R0 := R0(R1)
- 11 [-]: NOT       R0 R0        ; R0 := not R0
+ 11 [-]: NOT       R0 R0        ; R0 :=  R0
  12 [-]: SETUPVAL  R0 U0        ; U82 := R0
  13 [-]: GETUPVAL  R0 U0        ; R0 := U0
  14 [-]: TEST      R0 0         ; if not R0 then PC := 21
@@ -84,8 +84,8 @@
  26 [-]: GETGLOBAL R0 K0        ; R0 := 0xae91e43b
  27 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0x67bc869f]
  28 [-]: LOADK     R2 K10       ; R2 := "Panel.ProgressShadow"
- 29 [-]: LOADK     R3 4         ; R3 := 4.000000
- 30 [-]: LOADK     R4 200       ; R4 := 200.000000
+ 29 [-]: CONST     R3 4         ; R3 := 4.000000
+ 30 [-]: CONST     R4 200       ; R4 := 200.000000
  31 [-]: CALL      R0 5 1       ; R0(R1,R2,R3,R4)
  32 [-]: GETGLOBAL R0 K3        ; R0 := 0x7b998233
  33 [-]: GETGLOBAL R1 K11       ; R1 := _T
@@ -113,7 +113,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  3
 
-  1 [-]: LOADBOOL  R0 1 0       ; R0 := true
+  1 [-]: LOADKB    R0 1 0       ; R0 := true
   2 [-]: SETUPVAL  R0 U0        ; U82 := R0
   3 [-]: GETUPVAL  R0 U1        ; R0 := U1
   4 [-]: GETTABLE  R0 R0 K0     ; R0 := R0[0x2a28b53a]
@@ -135,7 +135,7 @@
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0xae91e43b
   2 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1[0x5f56eeab]
   3 [-]: LOADK     R3 K2        ; R3 := "Panel.Progress.Label.Tf"
-  4 [-]: LOADK     R4 29        ; R4 := 29.000000
+  4 [-]: CONST     R4 29        ; R4 := 29.000000
   5 [-]: GETGLOBAL R5 K3        ; R5 := 0x5bced4c4
   6 [-]: GETTABLE  R5 R5 K4     ; R5 := R5[0x55f27c30]
   7 [-]: MUL       R6 R0 K5     ; R6 := R0 * 100.000000
@@ -146,7 +146,7 @@
  12 [-]: GETGLOBAL R1 K0        ; R1 := 0xae91e43b
  13 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1[0x5f56eeab]
  14 [-]: LOADK     R3 K7        ; R3 := "Panel.ProgressShadow.Label.Tf"
- 15 [-]: LOADK     R4 29        ; R4 := 29.000000
+ 15 [-]: CONST     R4 29        ; R4 := 29.000000
  16 [-]: GETGLOBAL R5 K3        ; R5 := 0x5bced4c4
  17 [-]: GETTABLE  R5 R5 K4     ; R5 := R5[0x55f27c30]
  18 [-]: MUL       R6 R0 K5     ; R6 := R0 * 100.000000
@@ -159,9 +159,9 @@
  25 [-]: LOADK     R3 K9        ; R3 := "Panel.Progress.Fill"
  26 [-]: LOADK     R4 K10       ; R4 := "AlphaTestThreshold"
  27 [-]: MOVE      R5 R0        ; R5 := R0
- 28 [-]: LOADK     R6 0         ; R6 := 0.000000
- 29 [-]: LOADK     R7 0         ; R7 := 0.000000
- 30 [-]: LOADK     R8 0         ; R8 := 0.000000
+ 28 [-]: CONST     R6 0         ; R6 := 0.000000
+ 29 [-]: CONST     R7 0         ; R7 := 0.000000
+ 30 [-]: CONST     R8 0         ; R8 := 0.000000
  31 [-]: CALL      R1 8 1       ; R1(R2,R3,R4,R5,R6,R7,R8)
  32 [-]: RETURN    R0 1         ; return 
 
@@ -180,7 +180,7 @@
   3 [-]: GETGLOBAL R1 K1        ; R1 := 0x42dcc9f5
   4 [-]: GETUPVAL  R2 U0        ; R2 := U0
   5 [-]: SUB       R2 R2 R0     ; R2 := R2 - R0
-  6 [-]: LOADK     R3 0         ; R3 := 0.000000
+  6 [-]: CONST     R3 0         ; R3 := 0.000000
   7 [-]: GETUPVAL  R4 U1        ; R4 := U1
   8 [-]: CALL      R1 4 2       ; R1 := R1(R2,R3,R4)
   9 [-]: SETUPVAL  R1 U0        ; U82 := R0
@@ -199,20 +199,20 @@
  22 [-]: GETUPVAL  R6 U3        ; R6 := U3
  23 [-]: GETTABLE  R6 R6 K7     ; R6 := R6[0xcfe63447]
  24 [-]: GETUPVAL  R7 U0        ; R7 := U0
- 25 [-]: LOADBOOL  R8 0 0       ; R8 := false
- 26 [-]: LOADBOOL  R9 1 0       ; R9 := true
+ 25 [-]: LOADKB    R8 0 0       ; R8 := false
+ 26 [-]: LOADKB    R9 1 0       ; R9 := true
  27 [-]: CALL      R6 4 2       ; R6 := R6(R7,R8,R9)
  28 [-]: SETTABLE  R5 K6 R6     ; R5["TIME"] := R6
  29 [-]: CALL      R1 5 1       ; R1(R2,R3,R4,R5)
  30 [-]: GETGLOBAL R1 K2        ; R1 := 0xae91e43b
  31 [-]: SELF      R1 R1 K8     ; R2 := R1; R1 := R1[0x91a24e4b]
  32 [-]: LOADK     R3 K9        ; R3 := "Panel.TimeLeft"
- 33 [-]: LOADK     R4 34        ; R4 := 34.000000
+ 33 [-]: CONST     R4 34        ; R4 := 34.000000
  34 [-]: CALL      R1 4 2       ; R1 := R1(R2,R3,R4)
  35 [-]: GETGLOBAL R2 K2        ; R2 := 0xae91e43b
  36 [-]: SELF      R2 R2 K10    ; R3 := R2; R2 := R2[0x67bc869f]
  37 [-]: LOADK     R4 K11       ; R4 := "Panel.Bg"
- 38 [-]: LOADK     R5 13        ; R5 := 13.000000
+ 38 [-]: CONST     R5 13        ; R5 := 13.000000
  39 [-]: ADD       R6 K12 R1    ; R6 := 250.000000 + R1
  40 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
  41 [-]: RETURN    R0 1         ; return 

@@ -41,8 +41,8 @@
  18 [-]: TEST      R2 1         ; if R2 then PC := 25
  19 [-]: JMP       25           ; PC := 25
  20 [-]: SELF      R2 R1 K2     ; R3 := R1; R2 := R1[0xb30aed65]
- 21 [-]: LOADK     R4 1         ; R4 := 1.000000
- 22 [-]: LOADK     R5 1         ; R5 := 1.000000
+ 21 [-]: CONST     R4 1         ; R4 := 1.000000
+ 22 [-]: CONST     R5 1         ; R5 := 1.000000
  23 [-]: GETGLOBAL R6 K4        ; R6 := 0x44374feb
  24 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
  25 [-]: RETURN    R0 1         ; return 

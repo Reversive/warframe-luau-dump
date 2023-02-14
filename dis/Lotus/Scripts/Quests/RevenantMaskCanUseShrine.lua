@@ -40,7 +40,7 @@
  13 [-]: GETTABLE  R3 R3 K5     ; R3 := R3["RevenantMask_Stage"]
  14 [-]: TEST      R3 1         ; if R3 then PC := 17
  15 [-]: JMP       17           ; PC := 17
- 16 [-]: LOADK     R3 0         ; R3 := 0.000000
+ 16 [-]: CONST     R3 0         ; R3 := 0.000000
  17 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  18 [-]: GETGLOBAL R3 K6        ; R3 := 0x1e9e5bc8
  19 [-]: EQ        0 R2 R3      ; if R2 ~= R3 then PC := 29
@@ -53,8 +53,8 @@
  26 [-]: GETTABLE  R2 R2 K8     ; R2 := R2[0xf0090084]
  27 [-]: CALL      R2 1 2       ; R2 := R2()
  28 [-]: JMP       31           ; PC := 31
- 29 [-]: LOADBOOL  R2 0 1       ; R2 := false; PC := 30
- 30 [-]: LOADBOOL  R2 1 0       ; R2 := true
+ 29 [-]: LOADKB    R2 0 1       ; R2 := false; PC := 30
+ 30 [-]: LOADKB    R2 1 0       ; R2 := true
  31 [-]: RETURN    R2 2         ; return R2
  32 [-]: RETURN    R0 1         ; return 
 

@@ -10,7 +10,7 @@
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x2d0fad09
   2 [-]: LOADK     R1 K1        ; R1 := "Lotus.Interface.UIStyleUtilities"
   3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: LOADBOOL  R1 0 0       ; R1 := false
+  4 [-]: LOADKB    R1 0 0       ; R1 := false
   5 [-]: LOADNIL   R2 R2        ; R2 := nil
   6 [-]: CLOSURE   R3 0         ; R3 := closure(Function #1)
   7 [-]: CLOSURE   R4 1         ; R4 := closure(Function #2)
@@ -48,12 +48,12 @@
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x25312c9b
   2 [-]: GETGLOBAL R1 K1        ; R1 := 0xae91e43b
   3 [-]: LOADK     R2 K2        ; R2 := "_root"
-  4 [-]: LOADK     R3 0         ; R3 := 0.000000
+  4 [-]: CONST     R3 0         ; R3 := 0.000000
   5 [-]: NEWTABLE  R4 1 0       ; R4 := {}
-  6 [-]: LOADK     R5 10        ; R5 := 10.000000
+  6 [-]: CONST     R5 10        ; R5 := 10.000000
   7 [-]: SETLIST   R4 1 1       ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 1
   8 [-]: NEWTABLE  R5 1 0       ; R5 := {}
-  9 [-]: LOADK     R6 0         ; R6 := 0.000000
+  9 [-]: CONST     R6 0         ; R6 := 0.000000
  10 [-]: SETLIST   R5 1 1       ; R5[(1-1)*FPF+i] := R(5+i), 1 <= i <= 1
  11 [-]: LOADK     R6 K4        ; R6 := 0.300000
  12 [-]: LOADK     R7 K5        ; R7 := 0.200000
@@ -94,7 +94,7 @@
   6 [-]: GETGLOBAL R2 K1        ; R2 := 0x38f10e85
   7 [-]: GETGLOBAL R3 K2        ; R3 := 0xae91e43b
   8 [-]: LOADK     R4 K3        ; R4 := "Spinner.gotoAndPlay"
-  9 [-]: LOADK     R5 1         ; R5 := 1.000000
+  9 [-]: CONST     R5 1         ; R5 := 1.000000
  10 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
  11 [-]: JMP       32           ; PC := 32
  12 [-]: EQ        0 R1 K4      ; if R1 ~= "ShowLabel" then PC := 28
@@ -102,15 +102,15 @@
  14 [-]: GETGLOBAL R2 K5        ; R2 := 0x25312c9b
  15 [-]: GETGLOBAL R3 K2        ; R3 := 0xae91e43b
  16 [-]: LOADK     R4 K6        ; R4 := "SpinnerLabel"
- 17 [-]: LOADK     R5 2         ; R5 := 2.000000
+ 17 [-]: CONST     R5 2         ; R5 := 2.000000
  18 [-]: NEWTABLE  R6 1 0       ; R6 := {}
- 19 [-]: LOADK     R7 10        ; R7 := 10.000000
+ 19 [-]: CONST     R7 10        ; R7 := 10.000000
  20 [-]: SETLIST   R6 1 1       ; R6[(1-1)*FPF+i] := R(6+i), 1 <= i <= 1
  21 [-]: NEWTABLE  R7 1 0       ; R7 := {}
- 22 [-]: LOADK     R8 100       ; R8 := 100.000000
+ 22 [-]: CONST     R8 100       ; R8 := 100.000000
  23 [-]: SETLIST   R7 1 1       ; R7[(1-1)*FPF+i] := R(7+i), 1 <= i <= 1
  24 [-]: LOADK     R8 K8        ; R8 := 0.350000
- 25 [-]: LOADK     R9 0         ; R9 := 0.000000
+ 25 [-]: CONST     R9 0         ; R9 := 0.000000
  26 [-]: CALL      R2 8 1       ; R2(R3,R4,R5,R6,R7,R8,R9)
  27 [-]: JMP       32           ; PC := 32
  28 [-]: EQ        0 R1 K9      ; if R1 ~= "StopComplete" then PC := 32
@@ -137,52 +137,52 @@
   6 [-]: SETUPVAL  R1 U0        ; U82 := R0
   7 [-]: GETUPVAL  R1 U0        ; R1 := U0
   8 [-]: SELF      R1 R1 K3     ; R2 := R1; R1 := R1[0xbd2e96ea]
-  9 [-]: LOADK     R3 10        ; R3 := 10.000000
+  9 [-]: CONST     R3 10        ; R3 := 10.000000
  10 [-]: CLOSURE   R4 0         ; R4 := closure(Function #3.1)
  11 [-]: GETUPVAL  R0 U1        ; R0 := U1
  12 [-]: CALL      R1 4 1       ; R1(R2,R3,R4)
  13 [-]: GETGLOBAL R1 K4        ; R1 := 0xae91e43b
  14 [-]: SELF      R1 R1 K5     ; R2 := R1; R1 := R1[0x78f32995]
- 15 [-]: LOADBOOL  R3 1 0       ; R3 := true
+ 15 [-]: LOADKB    R3 1 0       ; R3 := true
  16 [-]: CALL      R1 3 1       ; R1(R2,R3)
  17 [-]: GETUPVAL  R1 U2        ; R1 := U2
  18 [-]: GETTABLE  R1 R1 K6     ; R1 := R1[0x5d10207d]
- 19 [-]: LOADK     R2 2         ; R2 := 2.000000
- 20 [-]: LOADBOOL  R3 1 0       ; R3 := true
+ 19 [-]: CONST     R2 2         ; R2 := 2.000000
+ 20 [-]: LOADKB    R3 1 0       ; R3 := true
  21 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
  22 [-]: GETUPVAL  R2 U2        ; R2 := U2
  23 [-]: GETTABLE  R2 R2 K6     ; R2 := R2[0x5d10207d]
- 24 [-]: LOADK     R3 10        ; R3 := 10.000000
- 25 [-]: LOADBOOL  R4 1 0       ; R4 := true
+ 24 [-]: CONST     R3 10        ; R3 := 10.000000
+ 25 [-]: LOADKB    R4 1 0       ; R4 := true
  26 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
  27 [-]: GETGLOBAL R3 K4        ; R3 := 0xae91e43b
  28 [-]: SELF      R3 R3 K8     ; R4 := R3; R3 := R3[0x67bc869f]
  29 [-]: LOADK     R5 K9        ; R5 := "SpinnerLabel"
- 30 [-]: LOADK     R6 10        ; R6 := 10.000000
- 31 [-]: LOADK     R7 0         ; R7 := 0.000000
+ 30 [-]: CONST     R6 10        ; R6 := 10.000000
+ 31 [-]: CONST     R7 0         ; R7 := 0.000000
  32 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
  33 [-]: GETGLOBAL R3 K4        ; R3 := 0xae91e43b
  34 [-]: SELF      R3 R3 K8     ; R4 := R3; R3 := R3[0x67bc869f]
  35 [-]: LOADK     R5 K10       ; R5 := "Spinner"
- 36 [-]: LOADK     R6 9         ; R6 := 9.000000
+ 36 [-]: CONST     R6 9         ; R6 := 9.000000
  37 [-]: MOVE      R7 R2        ; R7 := R2
  38 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
  39 [-]: GETGLOBAL R3 K4        ; R3 := 0xae91e43b
  40 [-]: SELF      R3 R3 K8     ; R4 := R3; R3 := R3[0x67bc869f]
  41 [-]: LOADK     R5 K11       ; R5 := "Backer"
- 42 [-]: LOADK     R6 9         ; R6 := 9.000000
+ 42 [-]: CONST     R6 9         ; R6 := 9.000000
  43 [-]: MOVE      R7 R1        ; R7 := R1
  44 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
  45 [-]: GETGLOBAL R3 K4        ; R3 := 0xae91e43b
  46 [-]: SELF      R3 R3 K8     ; R4 := R3; R3 := R3[0x67bc869f]
  47 [-]: LOADK     R5 K12       ; R5 := "SpinnerLabel.Label"
- 48 [-]: LOADK     R6 36        ; R6 := 36.000000
+ 48 [-]: CONST     R6 36        ; R6 := 36.000000
  49 [-]: MOVE      R7 R2        ; R7 := R2
  50 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
  51 [-]: GETGLOBAL R3 K4        ; R3 := 0xae91e43b
  52 [-]: SELF      R3 R3 K8     ; R4 := R3; R3 := R3[0x67bc869f]
  53 [-]: LOADK     R5 K13       ; R5 := "SpinnerLabel.TextBacker"
- 54 [-]: LOADK     R6 9         ; R6 := 9.000000
+ 54 [-]: CONST     R6 9         ; R6 := 9.000000
  55 [-]: MOVE      R7 R1        ; R7 := R1
  56 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
  57 [-]: GETGLOBAL R3 K4        ; R3 := 0xae91e43b
@@ -207,7 +207,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
-  1 [-]: LOADBOOL  R0 1 0       ; R0 := true
+  1 [-]: LOADKB    R0 1 0       ; R0 := true
   2 [-]: SETUPVAL  R0 U0        ; U82 := R0
   3 [-]: RETURN    R0 1         ; return 
 
@@ -256,7 +256,7 @@
   6 [-]: GETUPVAL  R0 U0        ; R0 := U0
   7 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0x7076b095]
   8 [-]: CALL      R0 2 1       ; R0(R1)
-  9 [-]: LOADBOOL  R0 1 0       ; R0 := true
+  9 [-]: LOADKB    R0 1 0       ; R0 := true
  10 [-]: SETUPVAL  R0 U1        ; U82 := R1
  11 [-]: RETURN    R0 1         ; return 
 
@@ -282,7 +282,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
-  1 [-]: LOADBOOL  R0 1 0       ; R0 := true
+  1 [-]: LOADKB    R0 1 0       ; R0 := true
   2 [-]: RETURN    R0 2         ; return R0
   3 [-]: RETURN    R0 1         ; return 
 

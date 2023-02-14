@@ -48,7 +48,7 @@
  25 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  26 [-]: MOVE      R2 R3        ; R2 := R3
  27 [-]: GETGLOBAL R3 K6        ; R3 := 0xcbd666e1
- 28 [-]: LOADK     R4 0         ; R4 := 0.000000
+ 28 [-]: CONST     R4 0         ; R4 := 0.000000
  29 [-]: CALL      R3 2 1       ; R3(R4)
  30 [-]: JMP       17           ; PC := 17
  31 [-]: SELF      R3 R2 K7     ; R4 := R2; R3 := R2[0x1ba58c7f]
@@ -80,7 +80,7 @@
  57 [-]: TEST      R9 1         ; if R9 then PC := 62
  58 [-]: JMP       62           ; PC := 62
  59 [-]: SELF      R9 R8 K12    ; R10 := R8; R9 := R8[0x0077d753]
- 60 [-]: LOADBOOL  R11 0 0      ; R11 := false
+ 60 [-]: LOADKB    R11 0 0      ; R11 := false
  61 [-]: CALL      R9 3 1       ; R9(R10,R11)
  62 [-]: TFORLOOP  R4 2         ; R7,R8 :=  R4(R5,R6); if R7 ~= nil then begin PC = 50; R6 := R7 end
  63 [-]: JMP       50           ; PC := 50

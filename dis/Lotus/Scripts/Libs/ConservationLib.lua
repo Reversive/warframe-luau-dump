@@ -18,8 +18,8 @@
   9 [-]: SETTABLE  R0 K14 K15   ; R0["SPAWNED"] := 26.000000
  10 [-]: SETTABLE  R0 K16 K17   ; R0["SLEPT"] := 27.000000
  11 [-]: SETTABLE  R0 K18 K19   ; R0["ESCAPED"] := 28.000000
- 12 [-]: LOADK     R1 0         ; R1 := 0.000000
- 13 [-]: LOADK     R2 20        ; R2 := 20.000000
+ 12 [-]: CONST     R1 0         ; R1 := 0.000000
+ 13 [-]: CONST     R2 20        ; R2 := 20.000000
  14 [-]: CLOSURE   R3 0         ; R3 := closure(Function #1)
  15 [-]: MOVE      R0 R0        ; R0 := R0
  16 [-]: CLOSURE   R4 1         ; R4 := closure(Function #2)
@@ -132,7 +132,7 @@
   3 [-]: CALL      R1 2 2       ; R1 := R1(R2)
   4 [-]: TEST      R1 0         ; if not R1 then PC := 8
   5 [-]: JMP       8            ; PC := 8
-  6 [-]: LOADK     R1 0         ; R1 := 0.000000
+  6 [-]: CONST     R1 0         ; R1 := 0.000000
   7 [-]: RETURN    R1 2         ; return R1
   8 [-]: GETTABLE  R1 R0 K1     ; R1 := R0["huntingState"]
   9 [-]: SELF      R1 R1 K2     ; R2 := R1; R1 := R1[0x53c3399f]
@@ -240,8 +240,8 @@
   6 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["SPAWNED"]
   7 [-]: LE        1 R2 R1      ; if R2 <= R1 then PC := 10
   8 [-]: JMP       10           ; PC := 10
-  9 [-]: LOADBOOL  R2 0 1       ; R2 := false; PC := 10
- 10 [-]: LOADBOOL  R2 1 0       ; R2 := true
+  9 [-]: LOADKB    R2 0 1       ; R2 := false; PC := 10
+ 10 [-]: LOADKB    R2 1 0       ; R2 := true
  11 [-]: RETURN    R2 2         ; return R2
  12 [-]: RETURN    R0 1         ; return 
 
@@ -267,8 +267,8 @@
  10 [-]: MOVE      R5 R1        ; R5 := R1
  11 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
  12 [-]: JMP       15           ; PC := 15
- 13 [-]: LOADBOOL  R3 0 1       ; R3 := false; PC := 14
- 14 [-]: LOADBOOL  R3 1 0       ; R3 := true
+ 13 [-]: LOADKB    R3 0 1       ; R3 := false; PC := 14
+ 14 [-]: LOADKB    R3 1 0       ; R3 := true
  15 [-]: RETURN    R3 2         ; return R3
  16 [-]: RETURN    R0 1         ; return 
 
@@ -295,8 +295,8 @@
  11 [-]: GETGLOBAL R1 K0        ; R1 := _T
  12 [-]: GETTABLE  R1 R1 K4     ; R1 := R1["activeConservationEncounters"]
  13 [-]: LEN       R2 R1        ; R2 := # R1
- 14 [-]: LOADK     R3 1         ; R3 := 1.000000
- 15 [-]: LOADK     R4 -1        ; R4 := -1.000000
+ 14 [-]: CONST     R3 1         ; R3 := 1.000000
+ 15 [-]: CONST     R4 -1        ; R4 := -1.000000
  16 [-]: FORPREP   R2 28        ; R2 -= R4; PC := 28
  17 [-]: GETTABLE  R6 R1 R5     ; R6 := R1[R5]
  18 [-]: GETGLOBAL R7 K2        ; R7 := 0x7b998233
@@ -356,7 +356,7 @@
  28 [-]: TEST      R3 0         ; if not R3 then PC := 37
  29 [-]: JMP       37           ; PC := 37
  30 [-]: GETGLOBAL R3 K7        ; R3 := 0xcbd666e1
- 31 [-]: LOADK     R4 0         ; R4 := 0.000000
+ 31 [-]: CONST     R4 0         ; R4 := 0.000000
  32 [-]: CALL      R3 2 1       ; R3(R4)
  33 [-]: SELF      R3 R0 K6     ; R4 := R0; R3 := R0[0x2b54251b]
  34 [-]: CALL      R3 2 2       ; R3 := R3(R4)
@@ -401,9 +401,9 @@
  10 [-]: SETTABLE  R2 K1 K3     ; R2["currentConservationEncounter"] := nil
  11 [-]: GETGLOBAL R2 K0        ; R2 := _T
  12 [-]: GETTABLE  R2 R2 K4     ; R2 := R2["activeConservationEncounters"]
- 13 [-]: LOADK     R3 1         ; R3 := 1.000000
+ 13 [-]: CONST     R3 1         ; R3 := 1.000000
  14 [-]: LEN       R4 R2        ; R4 := # R2
- 15 [-]: LOADK     R5 1         ; R5 := 1.000000
+ 15 [-]: CONST     R5 1         ; R5 := 1.000000
  16 [-]: FORPREP   R3 28        ; R3 -= R5; PC := 28
  17 [-]: GETTABLE  R7 R2 R6     ; R7 := R2[R6]
  18 [-]: GETTABLE  R8 R7 K2     ; R8 := R7["huntingState"]
@@ -436,7 +436,7 @@
   2 [-]: CALL      R0 1 2       ; R0 := R0()
   3 [-]: TEST      R0 1         ; if R0 then PC := 7
   4 [-]: JMP       7            ; PC := 7
-  5 [-]: LOADK     R1 0         ; R1 := 0.000000
+  5 [-]: CONST     R1 0         ; R1 := 0.000000
   6 [-]: RETURN    R1 2         ; return R1
   7 [-]: GETTABLE  R1 R0 K0     ; R1 := R0["huntingState"]
   8 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1[0x53c3399f]
@@ -457,8 +457,8 @@
   1 [-]: GETGLOBAL R1 K0        ; R1 := _T
   2 [-]: GETTABLE  R1 R1 K1     ; R1 := R1["activeConservationEncounters"]
   3 [-]: LEN       R1 R1        ; R1 := # R1
-  4 [-]: LOADK     R2 1         ; R2 := 1.000000
-  5 [-]: LOADK     R3 -1        ; R3 := -1.000000
+  4 [-]: CONST     R2 1         ; R2 := 1.000000
+  5 [-]: CONST     R3 -1        ; R3 := -1.000000
   6 [-]: FORPREP   R1 42        ; R1 -= R3; PC := 42
   7 [-]: GETGLOBAL R5 K0        ; R5 := _T
   8 [-]: GETTABLE  R5 R5 K1     ; R5 := R5["activeConservationEncounters"]
@@ -484,7 +484,7 @@
  28 [-]: TEST      R8 0         ; if not R8 then PC := 37
  29 [-]: JMP       37           ; PC := 37
  30 [-]: GETGLOBAL R8 K7        ; R8 := 0xcbd666e1
- 31 [-]: LOADK     R9 0         ; R9 := 0.000000
+ 31 [-]: CONST     R9 0         ; R9 := 0.000000
  32 [-]: CALL      R8 2 1       ; R8(R9)
  33 [-]: SELF      R8 R6 K6     ; R9 := R6; R8 := R6[0x2b54251b]
  34 [-]: CALL      R8 2 2       ; R8 := R8(R9)
@@ -513,8 +513,8 @@
   1 [-]: GETGLOBAL R1 K0        ; R1 := _T
   2 [-]: GETTABLE  R1 R1 K1     ; R1 := R1["activeConservationEncounters"]
   3 [-]: LEN       R1 R1        ; R1 := # R1
-  4 [-]: LOADK     R2 1         ; R2 := 1.000000
-  5 [-]: LOADK     R3 -1        ; R3 := -1.000000
+  4 [-]: CONST     R2 1         ; R2 := 1.000000
+  5 [-]: CONST     R3 -1        ; R3 := -1.000000
   6 [-]: FORPREP   R1 31        ; R1 -= R3; PC := 31
   7 [-]: GETGLOBAL R5 K0        ; R5 := _T
   8 [-]: GETTABLE  R5 R5 K1     ; R5 := R5["activeConservationEncounters"]
@@ -556,8 +556,8 @@
   1 [-]: GETGLOBAL R1 K0        ; R1 := _T
   2 [-]: GETTABLE  R1 R1 K1     ; R1 := R1["activeConservationEncounters"]
   3 [-]: LEN       R1 R1        ; R1 := # R1
-  4 [-]: LOADK     R2 1         ; R2 := 1.000000
-  5 [-]: LOADK     R3 -1        ; R3 := -1.000000
+  4 [-]: CONST     R2 1         ; R2 := 1.000000
+  5 [-]: CONST     R3 -1        ; R3 := -1.000000
   6 [-]: FORPREP   R1 29        ; R1 -= R3; PC := 29
   7 [-]: GETGLOBAL R5 K0        ; R5 := _T
   8 [-]: GETTABLE  R5 R5 K1     ; R5 := R5["activeConservationEncounters"]
@@ -596,9 +596,9 @@
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := _T
   2 [-]: GETTABLE  R1 R1 K1     ; R1 := R1["activeConservationEncounters"]
-  3 [-]: LOADK     R2 1         ; R2 := 1.000000
+  3 [-]: CONST     R2 1         ; R2 := 1.000000
   4 [-]: LEN       R3 R1        ; R3 := # R1
-  5 [-]: LOADK     R4 1         ; R4 := 1.000000
+  5 [-]: CONST     R4 1         ; R4 := 1.000000
   6 [-]: FORPREP   R2 13        ; R2 -= R4; PC := 13
   7 [-]: GETTABLE  R6 R1 R5     ; R6 := R1[R5]
   8 [-]: GETTABLE  R6 R6 K2     ; R6 := R6["huntingState"]
@@ -621,9 +621,9 @@
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := _T
   2 [-]: GETTABLE  R1 R1 K1     ; R1 := R1["activeConservationEncounters"]
-  3 [-]: LOADK     R2 1         ; R2 := 1.000000
+  3 [-]: CONST     R2 1         ; R2 := 1.000000
   4 [-]: LEN       R3 R1        ; R3 := # R1
-  5 [-]: LOADK     R4 1         ; R4 := 1.000000
+  5 [-]: CONST     R4 1         ; R4 := 1.000000
   6 [-]: FORPREP   R2 13        ; R2 -= R4; PC := 13
   7 [-]: GETTABLE  R6 R1 R5     ; R6 := R1[R5]
   8 [-]: GETTABLE  R6 R6 K2     ; R6 := R6["hint"]
@@ -690,7 +690,7 @@
   2 [-]: CALL      R1 1 2       ; R1 := R1()
   3 [-]: TEST      R1 1         ; if R1 then PC := 7
   4 [-]: JMP       7            ; PC := 7
-  5 [-]: LOADK     R2 0         ; R2 := 0.000000
+  5 [-]: CONST     R2 0         ; R2 := 0.000000
   6 [-]: RETURN    R2 2         ; return R2
   7 [-]: SELF      R2 R1 K0     ; R3 := R1; R2 := R1[0x9e51979c]
   8 [-]: MOVE      R4 R0        ; R4 := R0
@@ -716,7 +716,7 @@
   6 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1[0xc1908a7a]
   7 [-]: TAILCALL  R1 2 0       ; R1,... := R1(R2)
   8 [-]: RETURN    R1 0         ; return R1,...
-  9 [-]: LOADK     R1 0         ; R1 := 0.000000
+  9 [-]: CONST     R1 0         ; R1 := 0.000000
  10 [-]: RETURN    R1 2         ; return R1
  11 [-]: RETURN    R0 1         ; return 
 

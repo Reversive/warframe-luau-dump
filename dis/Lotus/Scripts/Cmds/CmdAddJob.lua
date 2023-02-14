@@ -40,9 +40,9 @@
  17 [-]: NEWTABLE  R4 0 0       ; R4 := {}
  18 [-]: GETGLOBAL R5 K4        ; R5 := _T
  19 [-]: SETTABLE  R5 K5 R4     ; R5["DEBUG_JOBS"] := R4
- 20 [-]: LOADK     R5 1         ; R5 := 1.000000
+ 20 [-]: CONST     R5 1         ; R5 := 1.000000
  21 [-]: LEN       R6 R4        ; R6 := # R4
- 22 [-]: LOADK     R7 1         ; R7 := 1.000000
+ 22 [-]: CONST     R7 1         ; R7 := 1.000000
  23 [-]: FORPREP   R5 29        ; R5 -= R7; PC := 29
  24 [-]: GETTABLE  R9 R4 R8     ; R9 := R4[R8]
  25 [-]: GETTABLE  R9 R9 K6     ; R9 := R9["jobType"]
@@ -54,14 +54,14 @@
  31 [-]: NEWTABLE  R10 0 0      ; R10 := {}
  32 [-]: SELF      R11 R3 K7    ; R12 := R3; R11 := R3[0xce0d5e55]
  33 [-]: CALL      R11 2 2      ; R11 := R11(R12)
- 34 [-]: LOADK     R12 1        ; R12 := 1.000000
+ 34 [-]: CONST     R12 1        ; R12 := 1.000000
  35 [-]: LEN       R13 R11      ; R13 := # R11
- 36 [-]: LOADK     R14 1        ; R14 := 1.000000
+ 36 [-]: CONST     R14 1        ; R14 := 1.000000
  37 [-]: FORPREP   R12 49       ; R12 -= R14; PC := 49
  38 [-]: GETTABLE  R16 R11 R15  ; R16 := R11[R15]
  39 [-]: GETTABLE  R16 R16 K8   ; R16 := R16["encounterChoices"]
  40 [-]: GETGLOBAL R17 K9       ; R17 := 0x55730e1a
- 41 [-]: LOADK     R18 1        ; R18 := 1.000000
+ 41 [-]: CONST     R18 1        ; R18 := 1.000000
  42 [-]: GETTABLE  R19 R11 R15  ; R19 := R11[R15]
  43 [-]: GETTABLE  R19 R19 K8   ; R19 := R19["encounterChoices"]
  44 [-]: LEN       R19 R19      ; R19 := # R19
@@ -100,11 +100,11 @@
  77 [-]: SETTABLE  R18 K24 K25  ; R18["reward"] := nil
  78 [-]: GETGLOBAL R19 K27      ; R19 := 0x0997dbe6
  79 [-]: GETGLOBAL R20 K9       ; R20 := 0x55730e1a
- 80 [-]: LOADK     R21 0        ; R21 := 0.000000
+ 80 [-]: CONST     R21 0        ; R21 := 0.000000
  81 [-]: GETGLOBAL R22 K28      ; R22 := 0x5bced4c4
  82 [-]: GETTABLE  R22 R22 K29  ; R22 := R22[0xa40531d8]
- 83 [-]: LOADK     R23 2        ; R23 := 2.000000
- 84 [-]: LOADK     R24 30       ; R24 := 30.000000
+ 83 [-]: CONST     R23 2        ; R23 := 2.000000
+ 84 [-]: CONST     R24 30       ; R24 := 30.000000
  85 [-]: CALL      R22 3 0      ; R22,... := R22(R23,R24)
  86 [-]: CALL      R20 0 0      ; R20,... := R20(R21,...)
  87 [-]: CALL      R19 0 2      ; R19 := R19(R20,...)
@@ -119,14 +119,14 @@
  96 [-]: CALL      R19 2 2      ; R19 := R19(R20)
  97 [-]: TEST      R19 1        ; if R19 then PC := 100
  98 [-]: JMP       100          ; PC := 100
- 99 [-]: LOADK     R19 15       ; R19 := 15.000000
+ 99 [-]: CONST     R19 15       ; R19 := 15.000000
 100 [-]: SETTABLE  R18 K32 R19  ; R18["minEnemyLevel"] := R19
 101 [-]: GETGLOBAL R19 K33      ; R19 := 0x03f57322
 102 [-]: MOVE      R20 R2       ; R20 := R2
 103 [-]: CALL      R19 2 2      ; R19 := R19(R20)
 104 [-]: TEST      R19 1        ; if R19 then PC := 107
 105 [-]: JMP       107          ; PC := 107
-106 [-]: LOADK     R19 20       ; R19 := 20.000000
+106 [-]: CONST     R19 20       ; R19 := 20.000000
 107 [-]: SETTABLE  R18 K34 R19  ; R18["maxEnemyLevel"] := R19
 108 [-]: SETTABLE  R18 K35 R10  ; R18["xpAmounts"] := R10
 109 [-]: GETGLOBAL R19 K37      ; R19 := EMPTY_SYMBOL

@@ -10,8 +10,8 @@
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x7ed0a956
   2 [-]: LOADK     R1 K1        ; R1 := "/Lotus/Objects/Gameplay/SurvivalObjects/ZarimanSurvivalAntiWarframeArea"
   3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: LOADK     R1 18        ; R1 := 18.750000
-  5 [-]: LOADK     R2 1         ; R2 := 1.750000
+  4 [-]: CONST     R1 18        ; R1 := 18.750000
+  5 [-]: CONST     R2 1         ; R2 := 1.750000
   6 [-]: GETGLOBAL R3 K2        ; R3 := 0x0469f296
   7 [-]: LOADK     R4 K3        ; R4 := "TENNO"
   8 [-]: CALL      R3 2 2       ; R3 := R3(R4)
@@ -51,7 +51,7 @@
  11 [-]: MOVE      R4 R1        ; R4 := R1
  12 [-]: CONCAT    R3 R3 R4     ; R3 := R3 .. R4
  13 [-]: CALL      R2 2 1       ; R2(R3)
- 14 [-]: LOADK     R2 3         ; R2 := 3.000000
+ 14 [-]: CONST     R2 3         ; R2 := 3.000000
  15 [-]: GETGLOBAL R3 K4        ; R3 := 0x89326c93
  16 [-]: SELF      R3 R3 K5     ; R4 := R3; R3 := R3[0xfb64e76c]
  17 [-]: CALL      R3 2 2       ; R3 := R3(R4)
@@ -66,7 +66,7 @@
  26 [-]: LOADK     R5 K7        ; R5 := "Local player is null. Waiting..."
  27 [-]: CALL      R4 2 1       ; R4(R5)
  28 [-]: GETGLOBAL R4 K8        ; R4 := 0xcbd666e1
- 29 [-]: LOADK     R5 0         ; R5 := 0.000000
+ 29 [-]: CONST     R5 0         ; R5 := 0.000000
  30 [-]: CALL      R4 2 1       ; R4(R5)
  31 [-]: GETGLOBAL R4 K4        ; R4 := 0x89326c93
  32 [-]: SELF      R4 R4 K5     ; R5 := R4; R4 := R4[0xfb64e76c]
@@ -96,7 +96,7 @@
  56 [-]: JMP       58           ; PC := 58
  57 [-]: RETURN    R0 1         ; return 
  58 [-]: GETGLOBAL R5 K8        ; R5 := 0xcbd666e1
- 59 [-]: LOADK     R6 1         ; R6 := 1.000000
+ 59 [-]: CONST     R6 1         ; R6 := 1.000000
  60 [-]: CALL      R5 2 1       ; R5(R6)
  61 [-]: GETGLOBAL R5 K0        ; R5 := 0x7b998233
  62 [-]: MOVE      R6 R0        ; R6 := R0
@@ -112,7 +112,7 @@
  72 [-]: TEST      R5 0         ; if not R5 then PC := 78
  73 [-]: JMP       78           ; PC := 78
  74 [-]: GETGLOBAL R5 K8        ; R5 := 0xcbd666e1
- 75 [-]: LOADK     R6 0         ; R6 := 0.000000
+ 75 [-]: CONST     R6 0         ; R6 := 0.000000
  76 [-]: CALL      R5 2 1       ; R5(R6)
  77 [-]: JMP       61           ; PC := 61
  78 [-]: GETGLOBAL R5 K0        ; R5 := 0x7b998233
@@ -200,11 +200,11 @@
 160 [-]: ADD       R9 R7 R9     ; R9 := R7 + R9
 161 [-]: SELF      R10 R6 K25   ; R11 := R6; R10 := R6[0xacfab10e]
 162 [-]: MOVE      R12 R9       ; R12 := R9
-163 [-]: LOADK     R13 0        ; R13 := 0.250000
-164 [-]: LOADBOOL  R14 1 0      ; R14 := true
-165 [-]: LOADK     R15 0        ; R15 := 0.250000
+163 [-]: CONST     R13 0        ; R13 := 0.250000
+164 [-]: LOADKB    R14 1 0      ; R14 := true
+165 [-]: CONST     R15 0        ; R15 := 0.250000
 166 [-]: CALL      R10 6 2      ; R10 := R10(R11,R12,R13,R14,R15)
-167 [-]: LOADK     R11 15       ; R11 := 15.000000
+167 [-]: CONST     R11 15       ; R11 := 15.000000
 168 [-]: MOVE      R12 R11      ; R12 := R11
 169 [-]: GETUPVAL  R13 U0       ; R13 := U0
 170 [-]: SELF      R13 R13 K26  ; R14 := R13; R13 := R13[0x1f420a3a]
@@ -225,8 +225,8 @@
 185 [-]: MOVE      R14 R9       ; R14 := R9
 186 [-]: GETGLOBAL R15 K30      ; R15 := 0x00046924
 187 [-]: MOVE      R16 R12      ; R16 := R12
-188 [-]: LOADK     R17 0        ; R17 := 0.000000
-189 [-]: LOADK     R18 0        ; R18 := 0.000000
+188 [-]: CONST     R17 0        ; R17 := 0.000000
+189 [-]: CONST     R18 0        ; R18 := 0.000000
 190 [-]: CALL      R15 4 0      ; R15,... := R15(R16,R17,R18)
 191 [-]: CALL      R13 0 2      ; R13 := R13(R14,...)
 192 [-]: GETGLOBAL R14 K24      ; R14 := 0xc2892f65
@@ -238,9 +238,9 @@
 198 [-]: ADD       R9 R7 R14    ; R9 := R7 + R14
 199 [-]: SELF      R14 R6 K25   ; R15 := R6; R14 := R6[0xacfab10e]
 200 [-]: MOVE      R16 R9       ; R16 := R9
-201 [-]: LOADK     R17 0        ; R17 := 0.250000
-202 [-]: LOADBOOL  R18 1 0      ; R18 := true
-203 [-]: LOADK     R19 0        ; R19 := 0.250000
+201 [-]: CONST     R17 0        ; R17 := 0.250000
+202 [-]: LOADKB    R18 1 0      ; R18 := true
+203 [-]: CONST     R19 0        ; R19 := 0.250000
 204 [-]: CALL      R14 6 2      ; R14 := R14(R15,R16,R17,R18,R19)
 205 [-]: MOVE      R10 R14      ; R10 := R14
 206 [-]: ADD       R12 R12 R11  ; R12 := R12 + R11
@@ -279,7 +279,7 @@
  15 [-]: GETGLOBAL R4 K4        ; R4 := 0x0469f296
  16 [-]: LOADK     R5 K5        ; R5 := "_TeleportWarframesOut"
  17 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 18 [-]: LOADBOOL  R5 0 0       ; R5 := false
+ 18 [-]: LOADKB    R5 0 0       ; R5 := false
  19 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
  20 [-]: RETURN    R0 1         ; return 
 

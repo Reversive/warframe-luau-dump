@@ -182,7 +182,7 @@
   3 [-]: CALL      R1 2 2       ; R1 := R1(R2)
   4 [-]: SELF      R1 R1 K2     ; R2 := R1; R1 := R1[0x66905cb0]
   5 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  6 [-]: LOADK     R2 0         ; R2 := 0.000000
+  6 [-]: CONST     R2 0         ; R2 := 0.000000
   7 [-]: LOADNIL   R3 R3        ; R3 := nil
   8 [-]: GETGLOBAL R4 K0        ; R4 := 0x89326c93
   9 [-]: SELF      R4 R4 K3     ; R5 := R4; R4 := R4[0x8b5b1f58]
@@ -263,8 +263,8 @@
  35 [-]: GETTABLE  R4 R4 K13    ; R4 := R4["ZarChallengeState"]
  36 [-]: EQ        1 R4 K14     ; if R4 == 0.000000 then PC := 39
  37 [-]: JMP       39           ; PC := 39
- 38 [-]: LOADBOOL  R4 0 1       ; R4 := false; PC := 39
- 39 [-]: LOADBOOL  R4 1 0       ; R4 := true
+ 38 [-]: LOADKB    R4 0 1       ; R4 := false; PC := 39
+ 39 [-]: LOADKB    R4 1 0       ; R4 := true
  40 [-]: EQ        1 R3 K16     ; if R3 == 1.000000 then PC := 44
  41 [-]: JMP       44           ; PC := 44
  42 [-]: EQ        0 R3 K17     ; if R3 ~= 9.000000 then PC := 78
@@ -272,7 +272,7 @@
  44 [-]: GETGLOBAL R5 K9        ; R5 := 0xbe190284
  45 [-]: SELF      R5 R5 K18    ; R6 := R5; R5 := R5[0x0eb34c69]
  46 [-]: GETUPVAL  R7 U0        ; R7 := U0
- 47 [-]: LOADK     R8 0         ; R8 := 0.000000
+ 47 [-]: CONST     R8 0         ; R8 := 0.000000
  48 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
  49 [-]: EQ        1 R5 K14     ; if R5 == 0.000000 then PC := 53
  50 [-]: JMP       53           ; PC := 53
@@ -288,8 +288,8 @@
  60 [-]: GETTABLE  R5 R5 K13    ; R5 := R5["ZarChallengeState"]
  61 [-]: EQ        1 R5 K14     ; if R5 == 0.000000 then PC := 64
  62 [-]: JMP       64           ; PC := 64
- 63 [-]: LOADBOOL  R4 0 1       ; R4 := false; PC := 64
- 64 [-]: LOADBOOL  R4 1 0       ; R4 := true
+ 63 [-]: LOADKB    R4 0 1       ; R4 := false; PC := 64
+ 64 [-]: LOADKB    R4 1 0       ; R4 := true
  65 [-]: GETGLOBAL R5 K11       ; R5 := _T
  66 [-]: GETTABLE  R5 R5 K19    ; R5 := R5["isStreamingLevel"]
  67 [-]: TEST      R5 0         ; if not R5 then PC := 73
@@ -299,7 +299,7 @@
  71 [-]: CALL      R5 2 1       ; R5(R6)
  72 [-]: RETURN    R0 1         ; return 
  73 [-]: GETGLOBAL R5 K20       ; R5 := 0xcbd666e1
- 74 [-]: LOADK     R6 0         ; R6 := 0.000000
+ 74 [-]: CONST     R6 0         ; R6 := 0.000000
  75 [-]: CALL      R5 2 1       ; R5(R6)
  76 [-]: JMP       44           ; PC := 44
  77 [-]: JMP       79           ; PC := 79
@@ -356,7 +356,7 @@
 128 [-]: LOADK     R22 K32      ; R22 := "Enable"
 129 [-]: CALL      R20 3 1      ; R20(R21,R22)
 130 [-]: SELF      R20 R19 K33  ; R21 := R19; R20 := R19[0xbf4030d2]
-131 [-]: LOADK     R22 0        ; R22 := 0.000000
+131 [-]: CONST     R22 0        ; R22 := 0.000000
 132 [-]: CALL      R20 3 1      ; R20(R21,R22)
 133 [-]: JMP       137          ; PC := 137
 134 [-]: SELF      R20 R19 K31  ; R21 := R19; R20 := R19[0x8eb2112d]
@@ -378,7 +378,7 @@
 150 [-]: CALL      R21 2 2      ; R21 := R21(R22)
 151 [-]: MOVE      R20 R21      ; R20 := R21
 152 [-]: GETGLOBAL R21 K20      ; R21 := 0xcbd666e1
-153 [-]: LOADK     R22 0        ; R22 := 0.000000
+153 [-]: CONST     R22 0        ; R22 := 0.000000
 154 [-]: CALL      R21 2 1      ; R21(R22)
 155 [-]: JMP       143          ; PC := 143
 156 [-]: GETGLOBAL R21 K6       ; R21 := 0x89326c93
@@ -396,13 +396,13 @@
 168 [-]: LOADK     R23 K38      ; R23 := "ActivateTeleportHomePortal: no waypoint for portal!"
 169 [-]: CALL      R22 2 1      ; R22(R23)
 170 [-]: RETURN    R0 1         ; return 
-171 [-]: LOADK     R22 3        ; R22 := 3.000000
+171 [-]: CONST     R22 3        ; R22 := 3.000000
 172 [-]: GETGLOBAL R23 K6       ; R23 := 0x89326c93
 173 [-]: SELF      R23 R23 K40  ; R24 := R23; R23 := R23[0x18d05d30]
 174 [-]: CALL      R23 2 2      ; R23 := R23(R24)
 175 [-]: TEST      R23 1        ; if R23 then PC := 178
 176 [-]: JMP       178          ; PC := 178
-177 [-]: LOADK     R22 4        ; R22 := 4.000000
+177 [-]: CONST     R22 4        ; R22 := 4.000000
 178 [-]: SELF      R23 R21 K30  ; R24 := R21; R23 := R21[0xd1586535]
 179 [-]: CALL      R23 2 2      ; R23 := R23(R24)
 180 [-]: GETGLOBAL R24 K41      ; R24 := 0x6f46d689
@@ -496,7 +496,7 @@
 268 [-]: CALL      R31 2 1      ; R31(R32)
 269 [-]: RETURN    R0 1         ; return 
 270 [-]: GETGLOBAL R31 K20      ; R31 := 0xcbd666e1
-271 [-]: LOADK     R32 0        ; R32 := 0.000000
+271 [-]: CONST     R32 0        ; R32 := 0.000000
 272 [-]: CALL      R31 2 1      ; R31(R32)
 273 [-]: JMP       210          ; PC := 210
 274 [-]: RETURN    R0 1         ; return 

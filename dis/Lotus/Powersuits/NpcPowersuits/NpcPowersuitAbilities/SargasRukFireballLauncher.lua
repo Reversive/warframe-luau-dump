@@ -51,9 +51,9 @@
  26 [-]: SELF      R3 R0 K9     ; R4 := R0; R3 := R0[0x48d05257]
  27 [-]: GETTABLE  R5 R2 K4     ; R5 := R2["avatar"]
  28 [-]: CALL      R3 3 1       ; R3(R4,R5)
- 29 [-]: LOADK     R3 1         ; R3 := 1.000000
+ 29 [-]: CONST     R3 1         ; R3 := 1.000000
  30 [-]: RETURN    R3 2         ; return R3
- 31 [-]: LOADK     R3 0         ; R3 := 0.000000
+ 31 [-]: CONST     R3 0         ; R3 := 0.000000
  32 [-]: RETURN    R3 2         ; return R3
  33 [-]: RETURN    R0 1         ; return 
 
@@ -90,16 +90,16 @@
  21 [-]: TEST      R6 0         ; if not R6 then PC := 26
  22 [-]: JMP       26           ; PC := 26
  23 [-]: SELF      R7 R6 K7     ; R8 := R6; R7 := R6[0x31a3964d]
- 24 [-]: LOADK     R9 17        ; R9 := 17.000000
+ 24 [-]: CONST     R9 17        ; R9 := 17.000000
  25 [-]: CALL      R7 3 1       ; R7(R8,R9)
  26 [-]: SELF      R7 R1 K8     ; R8 := R1; R7 := R1[0x21b4c60e]
  27 [-]: GETGLOBAL R9 K9        ; R9 := 0xcc79ff20
  28 [-]: SELF      R10 R1 K10   ; R11 := R1; R10 := R1[0x7027c544]
  29 [-]: GETGLOBAL R12 K11      ; R12 := 0x0ed8b456
- 30 [-]: LOADBOOL  R13 0 0      ; R13 := false
- 31 [-]: LOADK     R14 2        ; R14 := 2.000000
- 32 [-]: LOADK     R15 1        ; R15 := 1.000000
- 33 [-]: LOADBOOL  R16 1 0      ; R16 := true
+ 30 [-]: LOADKB    R13 0 0      ; R13 := false
+ 31 [-]: CONST     R14 2        ; R14 := 2.000000
+ 32 [-]: CONST     R15 1        ; R15 := 1.000000
+ 33 [-]: LOADKB    R16 1 0      ; R16 := true
  34 [-]: CALL      R10 7 0      ; R10,... := R10(R11,R12,R13,R14,R15,R16)
  35 [-]: CALL      R7 0 1       ; R7(R8,...)
  36 [-]: SELF      R7 R1 K13    ; R8 := R1; R7 := R1[0x003c792f]
@@ -110,7 +110,7 @@
  41 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
  42 [-]: SELF      R9 R1 K16    ; R10 := R1; R9 := R1[0x659d451f]
  43 [-]: GETGLOBAL R11 K17      ; R11 := 0xaec1ada0
- 44 [-]: LOADBOOL  R12 0 0      ; R12 := false
+ 44 [-]: LOADKB    R12 0 0      ; R12 := false
  45 [-]: CALL      R9 4 1       ; R9(R10,R11,R12)
  46 [-]: GETGLOBAL R9 K18       ; R9 := 0x89326c93
  47 [-]: SELF      R9 R9 K19    ; R10 := R9; R9 := R9[0x05909209]

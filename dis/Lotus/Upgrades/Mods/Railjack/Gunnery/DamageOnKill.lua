@@ -57,7 +57,7 @@
 
   1 [-]: NEWTABLE  R1 0 3       ; R1 := {}
   2 [-]: GETUPVAL  R2 U0        ; R2 := U0
-  3 [-]: LOADK     R3 1         ; R3 := 1.000000
+  3 [-]: CONST     R3 1         ; R3 := 1.000000
   4 [-]: MOVE      R4 R0        ; R4 := R0
   5 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
   6 [-]: SETTABLE  R1 K0 R2     ; R1["VAL"] := R2
@@ -88,11 +88,11 @@
   4 [-]: CALL      R1 2 2       ; R1 := R1(R2)
   5 [-]: TEST      R1 1         ; if R1 then PC := 28
   6 [-]: JMP       28           ; PC := 28
-  7 [-]: LOADK     R1 1         ; R1 := 1.000000
+  7 [-]: CONST     R1 1         ; R1 := 1.000000
   8 [-]: GETGLOBAL R2 K1        ; R2 := _T
   9 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["RJDamageOnKill"]
  10 [-]: LEN       R2 R2        ; R2 := # R2
- 11 [-]: LOADK     R3 1         ; R3 := 1.000000
+ 11 [-]: CONST     R3 1         ; R3 := 1.000000
  12 [-]: FORPREP   R1 27        ; R1 -= R3; PC := 27
  13 [-]: GETGLOBAL R5 K0        ; R5 := 0x7b998233
  14 [-]: GETGLOBAL R6 K1        ; R6 := _T
@@ -145,8 +145,8 @@
  20 [-]: SELF      R5 R0 K4     ; R6 := R0; R5 := R0[0xde321e6f]
  21 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  22 [-]: SELF      R5 R5 K5     ; R6 := R5; R5 := R5[0x12dd9da2]
- 23 [-]: LOADK     R7 216       ; R7 := 216.000000
- 24 [-]: LOADK     R8 2         ; R8 := 2.000000
+ 23 [-]: CONST     R7 223       ; R7 := 223.000000
+ 24 [-]: CONST     R8 3         ; R8 := 3.000000
  25 [-]: MUL       R9 R4 K8     ; R9 := R4 * 0.010000
  26 [-]: GETGLOBAL R10 K9       ; R10 := 0x5f533d2e
  27 [-]: CALL      R5 6 1       ; R5(R6,R7,R8,R9,R10)
@@ -164,8 +164,8 @@
  39 [-]: SELF      R6 R0 K4     ; R7 := R0; R6 := R0[0xde321e6f]
  40 [-]: CALL      R6 2 2       ; R6 := R6(R7)
  41 [-]: SELF      R6 R6 K10    ; R7 := R6; R6 := R6[0x5e6704ff]
- 42 [-]: LOADK     R8 216       ; R8 := 216.000000
- 43 [-]: LOADK     R9 2         ; R9 := 2.000000
+ 42 [-]: CONST     R8 223       ; R8 := 223.000000
+ 43 [-]: CONST     R9 3         ; R9 := 3.000000
  44 [-]: MUL       R10 R5 K8    ; R10 := R5 * 0.010000
  45 [-]: GETGLOBAL R11 K9       ; R11 := 0x5f533d2e
  46 [-]: CALL      R6 6 1       ; R6(R7,R8,R9,R10,R11)
@@ -222,10 +222,10 @@
  39 [-]: TEST      R4 0         ; if not R4 then PC := 42
  40 [-]: JMP       42           ; PC := 42
  41 [-]: RETURN    R0 1         ; return 
- 42 [-]: LOADK     R4 1         ; R4 := 1.000000
+ 42 [-]: CONST     R4 1         ; R4 := 1.000000
  43 [-]: GETGLOBAL R5 K7        ; R5 := 0xbcb4b3b6
  44 [-]: LEN       R5 R5        ; R5 := # R5
- 45 [-]: LOADK     R6 1         ; R6 := 1.000000
+ 45 [-]: CONST     R6 1         ; R6 := 1.000000
  46 [-]: FORPREP   R4 60        ; R4 -= R6; PC := 60
  47 [-]: GETGLOBAL R8 K0        ; R8 := 0x7b998233
  48 [-]: GETGLOBAL R9 K7        ; R9 := 0xbcb4b3b6
@@ -367,7 +367,7 @@
  86 [-]: GETUPVAL  R9 U1        ; R9 := U1
  87 [-]: MOVE      R10 R4       ; R10 := R4
  88 [-]: MOVE      R11 R7       ; R11 := R7
- 89 [-]: LOADK     R12 0        ; R12 := 0.000000
+ 89 [-]: CONST     R12 0        ; R12 := 0.000000
  90 [-]: GETGLOBAL R13 K6       ; R13 := _T
  91 [-]: GETTABLE  R13 R13 K7   ; R13 := R13["RJDamageOnKill"]
  92 [-]: GETTABLE  R13 R13 R5   ; R13 := R13[R5]
@@ -408,7 +408,7 @@
 127 [-]: GETTABLE  R9 R9 R5     ; R9 := R9[R5]
 128 [-]: SETTABLE  R9 K12 R8    ; R9["duration"] := R8
 129 [-]: GETGLOBAL R9 K18       ; R9 := 0xcbd666e1
-130 [-]: LOADK     R10 0        ; R10 := 0.000000
+130 [-]: CONST     R10 0        ; R10 := 0.000000
 131 [-]: CALL      R9 2 1       ; R9(R10)
 132 [-]: JMP       28           ; PC := 28
 133 [-]: RETURN    R0 1         ; return 
@@ -499,7 +499,7 @@
  74 [-]: GETGLOBAL R12 K10      ; R12 := 0x0469f296
  75 [-]: LOADK     R13 K23      ; R13 := "CheckUpgradeStacks"
  76 [-]: CALL      R12 2 2      ; R12 := R12(R13)
- 77 [-]: LOADBOOL  R13 0 0      ; R13 := false
+ 77 [-]: LOADKB    R13 0 0      ; R13 := false
  78 [-]: CALL      R10 4 1      ; R10(R11,R12,R13)
  79 [-]: JMP       84           ; PC := 84
  80 [-]: GETGLOBAL R10 K6       ; R10 := _T

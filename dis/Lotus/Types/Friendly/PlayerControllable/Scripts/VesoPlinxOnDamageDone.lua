@@ -57,11 +57,11 @@
  34 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  35 [-]: TEST      R4 0         ; if not R4 then PC := 66
  36 [-]: JMP       66           ; PC := 66
- 37 [-]: LOADK     R4 1         ; R4 := 1.000000
+ 37 [-]: CONST     R4 1         ; R4 := 1.000000
  38 [-]: GETGLOBAL R5 K1        ; R5 := _T
  39 [-]: GETTABLE  R5 R5 K2     ; R5 := R5["VesoMoas"]
  40 [-]: LEN       R5 R5        ; R5 := # R5
- 41 [-]: LOADK     R6 1         ; R6 := 1.000000
+ 41 [-]: CONST     R6 1         ; R6 := 1.000000
  42 [-]: FORPREP   R4 65        ; R4 -= R6; PC := 65
  43 [-]: GETGLOBAL R8 K1        ; R8 := _T
  44 [-]: GETTABLE  R8 R8 K2     ; R8 := R8["VesoMoas"]
@@ -76,7 +76,7 @@
  53 [-]: SELF      R8 R2 K13    ; R9 := R2; R8 := R2[0x1ac1655c]
  54 [-]: CALL      R8 2 2       ; R8 := R8(R9)
  55 [-]: SELF      R8 R8 K14    ; R9 := R8; R8 := R8[0xe6f43518]
- 56 [-]: LOADK     R10 5        ; R10 := 5.000000
+ 56 [-]: CONST     R10 5        ; R10 := 5.000000
  57 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
  58 [-]: TEST      R8 1         ; if R8 then PC := 64
  59 [-]: JMP       64           ; PC := 64

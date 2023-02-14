@@ -62,11 +62,11 @@
  22 [-]: GETGLOBAL R8 K9        ; R8 := gZoneAttribsType
  23 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
  24 [-]: SETTABLE  R5 K5 R6     ; R5["VideoWallZoneAttribs"] := R6
- 25 [-]: LOADK     R5 1         ; R5 := 1.000000
+ 25 [-]: CONST     R5 1         ; R5 := 1.000000
  26 [-]: GETGLOBAL R6 K4        ; R6 := _T
  27 [-]: GETTABLE  R6 R6 K5     ; R6 := R6["VideoWallZoneAttribs"]
  28 [-]: LEN       R6 R6        ; R6 := # R6
- 29 [-]: LOADK     R7 1         ; R7 := 1.000000
+ 29 [-]: CONST     R7 1         ; R7 := 1.000000
  30 [-]: FORPREP   R5 50        ; R5 -= R7; PC := 50
  31 [-]: GETGLOBAL R9 K4        ; R9 := _T
  32 [-]: GETTABLE  R9 R9 K5     ; R9 := R9["VideoWallZoneAttribs"]

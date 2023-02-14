@@ -33,7 +33,7 @@
   8 [-]: GETGLOBAL R3 K4        ; R3 := 0x0469f296
   9 [-]: LOADK     R4 K5        ; R4 := "PvpSuperEnergyMode"
  10 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 11 [-]: LOADK     R4 1         ; R4 := 1.000000
+ 11 [-]: CONST     R4 1         ; R4 := 1.000000
  12 [-]: CALL      R1 4 1       ; R1(R2,R3,R4)
  13 [-]: RETURN    R0 1         ; return 
 
@@ -62,25 +62,25 @@
  13 [-]: TEST      R3 1         ; if R3 then PC := 36
  14 [-]: JMP       36           ; PC := 36
  15 [-]: SELF      R3 R2 K3     ; R4 := R2; R3 := R2[0x5e6704ff]
- 16 [-]: LOADK     R5 276       ; R5 := 276.000000
- 17 [-]: LOADK     R6 2         ; R6 := 2.000000
- 18 [-]: LOADK     R7 1         ; R7 := 1.000000
+ 16 [-]: CONST     R5 282       ; R5 := 282.000000
+ 17 [-]: CONST     R6 3         ; R6 := 3.000000
+ 18 [-]: CONST     R7 1         ; R7 := 1.000000
  19 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
  20 [-]: SELF      R3 R2 K3     ; R4 := R2; R3 := R2[0x5e6704ff]
- 21 [-]: LOADK     R5 216       ; R5 := 216.000000
- 22 [-]: LOADK     R6 2         ; R6 := 2.000000
- 23 [-]: LOADK     R7 1         ; R7 := 1.000000
+ 21 [-]: CONST     R5 223       ; R5 := 223.000000
+ 22 [-]: CONST     R6 3         ; R6 := 3.000000
+ 23 [-]: CONST     R7 1         ; R7 := 1.000000
  24 [-]: GETGLOBAL R8 K6        ; R8 := gLotusPistolType
  25 [-]: CALL      R3 6 1       ; R3(R4,R5,R6,R7,R8)
  26 [-]: SELF      R3 R2 K3     ; R4 := R2; R3 := R2[0x5e6704ff]
- 27 [-]: LOADK     R5 10        ; R5 := 10.000000
- 28 [-]: LOADK     R6 2         ; R6 := 2.000000
- 29 [-]: LOADK     R7 1         ; R7 := 1.000000
+ 27 [-]: CONST     R5 10        ; R5 := 10.000000
+ 28 [-]: CONST     R6 3         ; R6 := 3.000000
+ 29 [-]: CONST     R7 1         ; R7 := 1.000000
  30 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
  31 [-]: SELF      R3 R2 K3     ; R4 := R2; R3 := R2[0x5e6704ff]
- 32 [-]: LOADK     R5 88        ; R5 := 88.000000
- 33 [-]: LOADK     R6 0         ; R6 := 0.000000
- 34 [-]: LOADK     R7 0         ; R7 := 0.750000
+ 32 [-]: CONST     R5 89        ; R5 := 89.000000
+ 33 [-]: CONST     R6 0         ; R6 := 0.000000
+ 34 [-]: CONST     R7 0         ; R7 := 0.750000
  35 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
  36 [-]: RETURN    R0 1         ; return 
 

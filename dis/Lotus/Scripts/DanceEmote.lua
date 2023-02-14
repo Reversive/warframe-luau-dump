@@ -84,7 +84,7 @@
  34 [-]: JMP       59           ; PC := 59
  35 [-]: SELF      R3 R0 K7     ; R4 := R0; R3 := R0[0xd1586535]
  36 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 37 [-]: LOADBOOL  R4 0 0       ; R4 := false
+ 37 [-]: LOADKB    R4 0 0       ; R4 := false
  38 [-]: GETGLOBAL R5 K8        ; R5 := 0x89326c93
  39 [-]: SELF      R5 R5 K9     ; R6 := R5; R5 := R5[0xfb669000]
  40 [-]: GETUPVAL  R7 U2        ; R7 := U2
@@ -98,7 +98,7 @@
  48 [-]: CALL      R11 3 2      ; R11 := R11(R12,R13)
  49 [-]: TEST      R11 0        ; if not R11 then PC := 53
  50 [-]: JMP       53           ; PC := 53
- 51 [-]: LOADBOOL  R4 1 0       ; R4 := true
+ 51 [-]: LOADKB    R4 1 0       ; R4 := true
  52 [-]: JMP       55           ; PC := 55
  53 [-]: TFORLOOP  R6 2         ; R9,R10 :=  R6(R7,R8); if R9 ~= nil then begin PC = 46; R8 := R9 end
  54 [-]: JMP       46           ; PC := 46
@@ -129,11 +129,11 @@
  79 [-]: SELF      R11 R1 K15   ; R12 := R1; R11 := R1[0x68d708a7]
  80 [-]: CALL      R11 2 2      ; R11 := R11(R12)
  81 [-]: SELF      R11 R11 K16  ; R12 := R11; R11 := R11[0xce6f9f03]
- 82 [-]: LOADK     R13 0        ; R13 := 0.000000
+ 82 [-]: CONST     R13 0        ; R13 := 0.000000
  83 [-]: CALL      R11 3 2      ; R11 := R11(R12,R13)
- 84 [-]: LOADK     R12 0        ; R12 := 0.000000
- 85 [-]: LOADK     R13 3        ; R13 := 3.000000
- 86 [-]: LOADK     R14 1        ; R14 := 1.000000
+ 84 [-]: CONST     R12 0        ; R12 := 0.000000
+ 85 [-]: CONST     R13 3        ; R13 := 3.000000
+ 86 [-]: CONST     R14 1        ; R14 := 1.000000
  87 [-]: FORPREP   R12 102      ; R12 -= R14; PC := 102
  88 [-]: SELF      R16 R11 K18  ; R17 := R11; R16 := R11[0x017b5873]
  89 [-]: MOVE      R18 R15      ; R18 := R15
@@ -239,7 +239,7 @@
  24 [-]: CALL      R3 2 1       ; R3(R4)
  25 [-]: JMP       30           ; PC := 30
  26 [-]: GETGLOBAL R3 K6        ; R3 := 0xcbd666e1
- 27 [-]: LOADK     R4 0         ; R4 := 0.250000
+ 27 [-]: CONST     R4 0         ; R4 := 0.250000
  28 [-]: CALL      R3 2 1       ; R3(R4)
  29 [-]: JMP       3            ; PC := 3
  30 [-]: RETURN    R0 1         ; return 

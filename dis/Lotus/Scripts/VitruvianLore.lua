@@ -32,20 +32,20 @@
   2 [-]: JMP       12           ; PC := 12
   3 [-]: GETUPVAL  R1 U0        ; R1 := U0
   4 [-]: GETTABLE  R1 R1 K0     ; R1 := R1[0x56d89411]
-  5 [-]: LOADBOOL  R2 1 0       ; R2 := true
+  5 [-]: LOADKB    R2 1 0       ; R2 := true
   6 [-]: CALL      R1 2 1       ; R1(R2)
   7 [-]: GETUPVAL  R1 U0        ; R1 := U0
   8 [-]: GETTABLE  R1 R1 K1     ; R1 := R1[0x15deabb1]
-  9 [-]: LOADBOOL  R2 1 0       ; R2 := true
+  9 [-]: LOADKB    R2 1 0       ; R2 := true
  10 [-]: CALL      R1 2 1       ; R1(R2)
  11 [-]: JMP       20           ; PC := 20
  12 [-]: GETUPVAL  R1 U0        ; R1 := U0
  13 [-]: GETTABLE  R1 R1 K0     ; R1 := R1[0x56d89411]
- 14 [-]: LOADBOOL  R2 0 0       ; R2 := false
+ 14 [-]: LOADKB    R2 0 0       ; R2 := false
  15 [-]: CALL      R1 2 1       ; R1(R2)
  16 [-]: GETUPVAL  R1 U0        ; R1 := U0
  17 [-]: GETTABLE  R1 R1 K1     ; R1 := R1[0x15deabb1]
- 18 [-]: LOADBOOL  R2 0 0       ; R2 := false
+ 18 [-]: LOADKB    R2 0 0       ; R2 := false
  19 [-]: CALL      R1 2 1       ; R1(R2)
  20 [-]: RETURN    R0 1         ; return 
 
@@ -60,7 +60,7 @@
 ; Max Stack Size:  3
 
   1 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  2 [-]: LOADBOOL  R1 1 0       ; R1 := true
+  2 [-]: LOADKB    R1 1 0       ; R1 := true
   3 [-]: CALL      R0 2 1       ; R0(R1)
   4 [-]: GETGLOBAL R0 K0        ; R0 := _T
   5 [-]: GETGLOBAL R1 K2        ; R1 := 0x1e9e5bc8
@@ -75,7 +75,7 @@
  14 [-]: TEST      R1 1         ; if R1 then PC := 20
  15 [-]: JMP       20           ; PC := 20
  16 [-]: GETGLOBAL R1 K7        ; R1 := 0xcbd666e1
- 17 [-]: LOADK     R2 0         ; R2 := 0.000000
+ 17 [-]: CONST     R2 0         ; R2 := 0.000000
  18 [-]: CALL      R1 2 1       ; R1(R2)
  19 [-]: JMP       11           ; PC := 11
  20 [-]: GETUPVAL  R1 U1        ; R1 := U1
@@ -85,7 +85,7 @@
  24 [-]: GETTABLE  R1 R1 K9     ; R1 := R1[0xfe0d9469]
  25 [-]: CALL      R1 1 1       ; R1()
  26 [-]: GETUPVAL  R1 U0        ; R1 := U0
- 27 [-]: LOADBOOL  R2 0 0       ; R2 := false
+ 27 [-]: LOADKB    R2 0 0       ; R2 := false
  28 [-]: CALL      R1 2 1       ; R1(R2)
  29 [-]: RETURN    R0 1         ; return 
 

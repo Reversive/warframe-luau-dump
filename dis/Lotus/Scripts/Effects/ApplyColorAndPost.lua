@@ -106,34 +106,6 @@
  14 [-]: GETTABLE  R3 R2 K5     ; R3 := R2["bloom"]
  15 [-]: JMP       17           ; PC := 17
  16 [-]: GETGLOBAL R3 K6        ; R3 := 0x949a03c3
- 17 [-]: LOADK     R4 0         ; R4 := 0.000000
+ 17 [-]: CONST     R4 0         ; R4 := 0.000000
  18 [-]: GETGLOBAL R5 K7        ; R5 := 0x1641bbc7
- 19 [-]: LE        0 R4 R5      ; if R4 > R5 then PC := 35
- 20 [-]: JMP       35           ; PC := 35
- 21 [-]: GETGLOBAL R5 K8        ; R5 := 0x9bafffe3
- 22 [-]: MOVE      R6 R3        ; R6 := R3
- 23 [-]: GETGLOBAL R7 K9        ; R7 := 0xeaedc887
- 24 [-]: GETGLOBAL R8 K7        ; R8 := 0x1641bbc7
- 25 [-]: DIV       R8 R4 R8     ; R8 := R4 / R8
- 26 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
- 27 [-]: SETTABLE  R2 K5 R5     ; R2["bloom"] := R5
- 28 [-]: GETGLOBAL R5 K10       ; R5 := 0x67652851
- 29 [-]: CALL      R5 1 2       ; R5 := R5()
- 30 [-]: ADD       R4 R4 R5     ; R4 := R4 + R5
- 31 [-]: GETGLOBAL R5 K11       ; R5 := 0xcbd666e1
- 32 [-]: LOADK     R6 0         ; R6 := 0.000000
- 33 [-]: CALL      R5 2 1       ; R5(R6)
- 34 [-]: JMP       18           ; PC := 18
- 35 [-]: SELF      R5 R0 K12    ; R6 := R0; R5 := R0[0x13d5d3fb]
- 36 [-]: MOVE      R7 R1        ; R7 := R1
- 37 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
- 38 [-]: TEST      R5 0         ; if not R5 then PC := 44
- 39 [-]: JMP       44           ; PC := 44
- 40 [-]: GETGLOBAL R5 K11       ; R5 := 0xcbd666e1
- 41 [-]: LOADK     R6 0         ; R6 := 0.500000
- 42 [-]: CALL      R5 2 1       ; R5(R6)
- 43 [-]: JMP       35           ; PC := 35
- 44 [-]: SETTABLE  R2 K5 R3     ; R2["bloom"] := R3
- 45 [-]: RETURN    R0 1         ; return 
-
-
+ 19 [-]: LE        0 R4 R5      ; i

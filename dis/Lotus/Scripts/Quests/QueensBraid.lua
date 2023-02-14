@@ -36,9 +36,9 @@
 ; Max Stack Size:  15
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0xcbd666e1
-  2 [-]: LOADK     R2 0         ; R2 := 0.000000
+  2 [-]: CONST     R2 0         ; R2 := 0.000000
   3 [-]: CALL      R1 2 1       ; R1(R2)
-  4 [-]: LOADK     R1 0         ; R1 := 0.000000
+  4 [-]: CONST     R1 0         ; R1 := 0.000000
   5 [-]: SELF      R2 R0 K1     ; R3 := R0; R2 := R0[0xd2715720]
   6 [-]: CALL      R2 2 2       ; R2 := R2(R3)
   7 [-]: SELF      R3 R0 K2     ; R4 := R0; R3 := R0[0x8fc72941]
@@ -110,7 +110,7 @@
  73 [-]: GETGLOBAL R11 K19      ; R11 := 0x0469f296
  74 [-]: LOADK     R12 K20      ; R12 := "UnlitAtten"
  75 [-]: CALL      R11 2 2      ; R11 := R11(R12)
- 76 [-]: LOADK     R12 0        ; R12 := 0.000000
+ 76 [-]: CONST     R12 0        ; R12 := 0.000000
  77 [-]: CALL      R9 4 1       ; R9(R10,R11,R12)
  78 [-]: SELF      R9 R0 K1     ; R10 := R0; R9 := R0[0xd2715720]
  79 [-]: CALL      R9 2 2       ; R9 := R9(R10)
@@ -134,7 +134,7 @@
  97 [-]: ADD       R2 R2 R9     ; R2 := R2 + R9
  98 [-]: SELF      R9 R0 K28    ; R10 := R0; R9 := R0[0x014db014]
  99 [-]: MOVE      R11 R2       ; R11 := R2
-100 [-]: LOADBOOL  R12 0 0      ; R12 := false
+100 [-]: LOADKB    R12 0 0      ; R12 := false
 101 [-]: CALL      R9 4 1       ; R9(R10,R11,R12)
 102 [-]: GETGLOBAL R9 K8        ; R9 := 0x7b998233
 103 [-]: MOVE      R10 R6       ; R10 := R6
@@ -155,7 +155,7 @@
 118 [-]: CALL      R9 2 2       ; R9 := R9(R10)
 119 [-]: MOVE      R4 R9        ; R4 := R9
 120 [-]: GETGLOBAL R9 K0        ; R9 := 0xcbd666e1
-121 [-]: LOADK     R10 0        ; R10 := 0.000000
+121 [-]: CONST     R10 0        ; R10 := 0.000000
 122 [-]: CALL      R9 2 1       ; R9(R10)
 123 [-]: JMP       35           ; PC := 35
 124 [-]: GETGLOBAL R9 K9        ; R9 := _T
@@ -175,12 +175,12 @@
 138 [-]: JMP       149          ; PC := 149
 139 [-]: GETUPVAL  R10 U0       ; R10 := U0
 140 [-]: GETTABLE  R10 R10 K33  ; R10 := R10[0xb5c6bbaf]
-141 [-]: LOADBOOL  R11 1 0      ; R11 := true
+141 [-]: LOADKB    R11 1 0      ; R11 := true
 142 [-]: CALL      R10 2 1      ; R10(R11)
 143 [-]: SELF      R10 R9 K34   ; R11 := R9; R10 := R9[0x659d451f]
 144 [-]: GETUPVAL  R12 U1       ; R12 := U1
-145 [-]: LOADBOOL  R13 0 0      ; R13 := false
-146 [-]: LOADK     R14 1        ; R14 := 1.000000
+145 [-]: LOADKB    R13 0 0      ; R13 := false
+146 [-]: CONST     R14 1        ; R14 := 1.000000
 147 [-]: CALL      R10 5 1      ; R10(R11,R12,R13,R14)
 148 [-]: JMP       164          ; PC := 164
 149 [-]: GETGLOBAL R10 K8       ; R10 := 0x7b998233
@@ -192,7 +192,7 @@
 155 [-]: GETGLOBAL R10 K9       ; R10 := _T
 156 [-]: GETTABLE  R10 R10 K35  ; R10 := R10["QueenSound"]
 157 [-]: SELF      R10 R10 K36  ; R11 := R10; R10 := R10[0x6cf1e476]
-158 [-]: LOADBOOL  R12 1 0      ; R12 := true
+158 [-]: LOADKB    R12 1 0      ; R12 := true
 159 [-]: CALL      R10 3 1      ; R10(R11,R12)
 160 [-]: GETUPVAL  R10 U2       ; R10 := U2
 161 [-]: SELF      R10 R10 K37  ; R11 := R10; R10 := R10[0xc19d05d7]

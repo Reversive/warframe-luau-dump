@@ -10,7 +10,7 @@
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x0469f296
   2 [-]: LOADK     R1 K1        ; R1 := "QuillsSyndicate"
   3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: LOADK     R1 2         ; R1 := 2.000000
+  4 [-]: CONST     R1 2         ; R1 := 2.000000
   5 [-]: CLOSURE   R2 0         ; R2 := closure(Function #1)
   6 [-]: MOVE      R0 R0        ; R0 := R0
   7 [-]: MOVE      R0 R1        ; R0 := R1
@@ -96,7 +96,7 @@
  67 [-]: TEST      R18 0        ; if not R18 then PC := 77
  68 [-]: JMP       77           ; PC := 77
  69 [-]: GETGLOBAL R18 K18      ; R18 := 0xcbd666e1
- 70 [-]: LOADK     R19 0        ; R19 := 0.000000
+ 70 [-]: CONST     R19 0        ; R19 := 0.000000
  71 [-]: CALL      R18 2 1      ; R18(R19)
  72 [-]: GETGLOBAL R18 K16      ; R18 := 0x89326c93
  73 [-]: SELF      R18 R18 K17  ; R19 := R18; R18 := R18[0xfb64e76c]
@@ -116,7 +116,7 @@
  87 [-]: GETGLOBAL R19 K2       ; R19 := _T
  88 [-]: GETTABLE  R19 R19 K21  ; R19 := R19["PreventPurchasingItems"]
  89 [-]: SETTABLE  R19 R18 K22  ; R19[R18] := true
- 90 [-]: LOADBOOL  R19 0 0      ; R19 := false
+ 90 [-]: LOADKB    R19 0 0      ; R19 := false
  91 [-]: GETGLOBAL R20 K5       ; R20 := 0xc8802016
  92 [-]: GETGLOBAL R21 K1       ; R21 := 0x25d99d89
  93 [-]: SELF      R21 R21 K23  ; R22 := R21; R21 := R21[0x25a6e75e]
@@ -141,7 +141,7 @@
 112 [-]: GETTABLE  R25 R24 K27  ; R25 := R24["mItemCount"]
 113 [-]: LT        0 K28 R25    ; if 0.000000 >= R25 then PC := 116
 114 [-]: JMP       116          ; PC := 116
-115 [-]: LOADBOOL  R19 1 0      ; R19 := true
+115 [-]: LOADKB    R19 1 0      ; R19 := true
 116 [-]: TFORLOOP  R20 2        ; R23,R24 :=  R20(R21,R22); if R23 ~= nil then begin PC = 99; R22 := R23 end
 117 [-]: JMP       99           ; PC := 99
 118 [-]: GETGLOBAL R25 K16      ; R25 := 0x89326c93
@@ -156,8 +156,8 @@
 127 [-]: TEST      R26 1        ; if R26 then PC := 133
 128 [-]: JMP       133          ; PC := 133
 129 [-]: SELF      R26 R25 K33  ; R27 := R25; R26 := R25[0x768274d6]
-130 [-]: LOADBOOL  R28 0 0      ; R28 := false
-131 [-]: LOADBOOL  R29 1 0      ; R29 := true
+130 [-]: LOADKB    R28 0 0      ; R28 := false
+131 [-]: LOADKB    R29 1 0      ; R29 := true
 132 [-]: CALL      R26 4 1      ; R26(R27,R28,R29)
 133 [-]: GETGLOBAL R26 K1       ; R26 := 0x25d99d89
 134 [-]: SELF      R26 R26 K34  ; R27 := R26; R26 := R26[0xa4d581dc]
@@ -173,7 +173,7 @@
 144 [-]: LT        0 R27 R28    ; if R27 >= R28 then PC := 161
 145 [-]: JMP       161          ; PC := 161
 146 [-]: GETGLOBAL R27 K18      ; R27 := 0xcbd666e1
-147 [-]: LOADK     R28 3        ; R28 := 3.000000
+147 [-]: CONST     R28 3        ; R28 := 3.000000
 148 [-]: CALL      R27 2 1      ; R27(R28)
 149 [-]: GETGLOBAL R27 K0       ; R27 := 0x7b998233
 150 [-]: GETGLOBAL R28 K1       ; R28 := 0x25d99d89
@@ -195,14 +195,14 @@
 166 [-]: SELF      R30 R30 K20  ; R31 := R30; R30 := R30[0xed4e0128]
 167 [-]: CALL      R30 2 0      ; R30,... := R30(R31)
 168 [-]: SETLIST   R28 0 1      ; R28[(1-1)*FPF+i] := R(28+i), 1 <= i <= 0
-169 [-]: LOADBOOL  R29 1 0      ; R29 := true
+169 [-]: LOADKB    R29 1 0      ; R29 := true
 170 [-]: CALL      R27 3 2      ; R27 := R27(R28,R29)
 171 [-]: SELF      R28 R27 K39  ; R29 := R27; R28 := R27[0xd2d3875a]
 172 [-]: CALL      R28 2 2      ; R28 := R28(R29)
 173 [-]: TEST      R28 1        ; if R28 then PC := 179
 174 [-]: JMP       179          ; PC := 179
 175 [-]: GETGLOBAL R28 K18      ; R28 := 0xcbd666e1
-176 [-]: LOADK     R29 0        ; R29 := 0.000000
+176 [-]: CONST     R29 0        ; R29 := 0.000000
 177 [-]: CALL      R28 2 1      ; R28(R29)
 178 [-]: JMP       171          ; PC := 171
 179 [-]: GETGLOBAL R28 K40      ; R28 := 0xb009bbc6
@@ -213,7 +213,7 @@
 184 [-]: GETGLOBAL R29 K38      ; R29 := 0x6fed6096
 185 [-]: CALL      R28 2 2      ; R28 := R28(R29)
 186 [-]: SETGLOBAL R28 K38      ; (0x6fed6096) := R28
-187 [-]: LOADBOOL  R28 1 0      ; R28 := true
+187 [-]: LOADKB    R28 1 0      ; R28 := true
 188 [-]: GETGLOBAL R29 K19      ; R29 := 0xc65f006d
 189 [-]: SELF      R29 R29 K41  ; R30 := R29; R29 := R29[0xf278f8a1]
 190 [-]: CALL      R29 2 2      ; R29 := R29(R30)
@@ -232,7 +232,7 @@
 203 [-]: GETGLOBAL R36 K2       ; R36 := _T
 204 [-]: GETTABLE  R36 R36 K21  ; R36 := R36["PreventPurchasingItems"]
 205 [-]: SETTABLE  R36 R18 K10  ; R36[R18] := nil
-206 [-]: LOADBOOL  R28 0 0      ; R28 := false
+206 [-]: LOADKB    R28 0 0      ; R28 := false
 207 [-]: JMP       210          ; PC := 210
 208 [-]: TFORLOOP  R31 2        ; R34,R35 :=  R31(R32,R33); if R34 ~= nil then begin PC = 200; R33 := R34 end
 209 [-]: JMP       200          ; PC := 200
@@ -241,7 +241,7 @@
 212 [-]: CALL      R36 2 2      ; R36 := R36(R37)
 213 [-]: SELF      R36 R36 K43  ; R37 := R36; R36 := R36[0xe9768ed0]
 214 [-]: CALL      R36 2 2      ; R36 := R36(R37)
-215 [-]: LOADBOOL  R37 0 0      ; R37 := false
+215 [-]: LOADKB    R37 0 0      ; R37 := false
 216 [-]: GETGLOBAL R38 K5       ; R38 := 0xc8802016
 217 [-]: MOVE      R39 R36      ; R39 := R36
 218 [-]: CALL      R38 2 4      ; R38,R39,R40 := R38(R39)
@@ -250,7 +250,7 @@
 221 [-]: GETGLOBAL R44 K38      ; R44 := 0x6fed6096
 222 [-]: EQ        0 R43 R44    ; if R43 ~= R44 then PC := 226
 223 [-]: JMP       226          ; PC := 226
-224 [-]: LOADBOOL  R37 1 0      ; R37 := true
+224 [-]: LOADKB    R37 1 0      ; R37 := true
 225 [-]: JMP       228          ; PC := 228
 226 [-]: TFORLOOP  R38 2        ; R41,R42 :=  R38(R39,R40); if R41 ~= nil then begin PC = 220; R40 := R41 end
 227 [-]: JMP       220          ; PC := 220
@@ -332,7 +332,7 @@
 303 [-]: TEST      R43 1        ; if R43 then PC := 309
 304 [-]: JMP       309          ; PC := 309
 305 [-]: GETGLOBAL R43 K18      ; R43 := 0xcbd666e1
-306 [-]: LOADK     R44 0        ; R44 := 0.000000
+306 [-]: CONST     R44 0        ; R44 := 0.000000
 307 [-]: CALL      R43 2 1      ; R43(R44)
 308 [-]: JMP       296          ; PC := 296
 309 [-]: TEST      R19 1        ; if R19 then PC := 327
@@ -347,9 +347,9 @@
 318 [-]: LOADK     R47 K58      ; R47 := "GAME_C1_HIP1"
 319 [-]: CALL      R46 2 2      ; R46 := R46(R47)
 320 [-]: GETGLOBAL R47 K59      ; R47 := 0xa421af95
-321 [-]: LOADK     R48 0        ; R48 := 0.000000
-322 [-]: LOADK     R49 0        ; R49 := -0.250000
-323 [-]: LOADK     R50 0        ; R50 := 0.000000
+321 [-]: CONST     R48 0        ; R48 := 0.000000
+322 [-]: CONST     R49 0        ; R49 := -0.250000
+323 [-]: CONST     R50 0        ; R50 := 0.000000
 324 [-]: CALL      R47 4 0      ; R47,... := R47(R48,R49,R50)
 325 [-]: CALL      R43 0 2      ; R43 := R43(R44,...)
 326 [-]: MOVE      R15 R43      ; R15 := R43
@@ -365,14 +365,14 @@
 336 [-]: SELF      R46 R43 K20  ; R47 := R43; R46 := R43[0xed4e0128]
 337 [-]: CALL      R46 2 0      ; R46,... := R46(R47)
 338 [-]: SETLIST   R45 0 1      ; R45[(1-1)*FPF+i] := R(45+i), 1 <= i <= 0
-339 [-]: LOADBOOL  R46 0 0      ; R46 := false
+339 [-]: LOADKB    R46 0 0      ; R46 := false
 340 [-]: CALL      R44 3 2      ; R44 := R44(R45,R46)
 341 [-]: SELF      R45 R44 K39  ; R46 := R44; R45 := R44[0xd2d3875a]
 342 [-]: CALL      R45 2 2      ; R45 := R45(R46)
 343 [-]: TEST      R45 1        ; if R45 then PC := 349
 344 [-]: JMP       349          ; PC := 349
 345 [-]: GETGLOBAL R45 K18      ; R45 := 0xcbd666e1
-346 [-]: LOADK     R46 0        ; R46 := 0.000000
+346 [-]: CONST     R46 0        ; R46 := 0.000000
 347 [-]: CALL      R45 2 1      ; R45(R46)
 348 [-]: JMP       341          ; PC := 341
 349 [-]: GETGLOBAL R45 K40      ; R45 := 0xb009bbc6
@@ -468,8 +468,8 @@
  25 [-]: GETTABLE  R1 R1 K4     ; R1 := R1["/Lotus/Language/Npcs/Nakak"]
  26 [-]: GETTABLE  R1 R1 K10    ; R1 := R1["activatedSpeechSets"]
  27 [-]: LEN       R2 R1        ; R2 := # R1
- 28 [-]: LOADK     R3 1         ; R3 := 1.000000
- 29 [-]: LOADK     R4 -1        ; R4 := -1.000000
+ 28 [-]: CONST     R3 1         ; R3 := 1.000000
+ 29 [-]: CONST     R4 -1        ; R4 := -1.000000
  30 [-]: FORPREP   R2 41        ; R2 -= R4; PC := 41
  31 [-]: GETTABLE  R6 R1 R5     ; R6 := R1[R5]
  32 [-]: GETUPVAL  R7 U2        ; R7 := U2
@@ -490,7 +490,7 @@
  47 [-]: JMP       53           ; PC := 53
  48 [-]: SELF      R6 R0 K13    ; R7 := R0; R6 := R0[0x6421bf48]
  49 [-]: GETGLOBAL R8 K14       ; R8 := 0x6fed6096
- 50 [-]: LOADBOOL  R9 1 0       ; R9 := true
+ 50 [-]: LOADKB    R9 1 0       ; R9 := true
  51 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
  52 [-]: JMP       56           ; PC := 56
  53 [-]: SELF      R6 R0 K15    ; R7 := R0; R6 := R0[0x49cfdc52]
@@ -544,7 +544,7 @@
  24 [-]: TEST      R3 0         ; if not R3 then PC := 30
  25 [-]: JMP       30           ; PC := 30
  26 [-]: GETGLOBAL R3 K8        ; R3 := 0xcbd666e1
- 27 [-]: LOADK     R4 0         ; R4 := 0.000000
+ 27 [-]: CONST     R4 0         ; R4 := 0.000000
  28 [-]: CALL      R3 2 1       ; R3(R4)
  29 [-]: JMP       16           ; PC := 16
  30 [-]: GETGLOBAL R3 K9        ; R3 := _T
@@ -570,8 +570,8 @@
   3 [-]: GETTABLE  R1 R1 K2     ; R1 := R1["MaskSeller_ForceDialog"]
   4 [-]: EQ        1 R1 K3      ; if R1 == nil then PC := 7
   5 [-]: JMP       7            ; PC := 7
-  6 [-]: LOADBOOL  R1 0 1       ; R1 := false; PC := 7
-  7 [-]: LOADBOOL  R1 1 0       ; R1 := true
+  6 [-]: LOADKB    R1 0 1       ; R1 := false; PC := 7
+  7 [-]: LOADKB    R1 1 0       ; R1 := true
   8 [-]: RETURN    R1 2         ; return R1
   9 [-]: RETURN    R0 1         ; return 
 

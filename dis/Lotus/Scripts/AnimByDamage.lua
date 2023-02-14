@@ -30,11 +30,11 @@
   7 [-]: GETGLOBAL R5 K4        ; R5 := ZERO_ROTATION
   8 [-]: CALL      R1 5 1       ; R1(R2,R3,R4,R5)
   9 [-]: GETGLOBAL R1 K5        ; R1 := 0x78ca68a2
- 10 [-]: LOADK     R2 0         ; R2 := 0.000000
+ 10 [-]: CONST     R2 0         ; R2 := 0.000000
  11 [-]: LOADK     R3 K6        ; R3 := 0.200000
  12 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
- 13 [-]: LOADK     R2 2         ; R2 := 2.000000
- 14 [-]: LOADK     R3 0         ; R3 := 0.000000
+ 13 [-]: CONST     R2 2         ; R2 := 2.000000
+ 14 [-]: CONST     R3 0         ; R3 := 0.000000
  15 [-]: GETGLOBAL R4 K7        ; R4 := 0x7b998233
  16 [-]: MOVE      R5 R0        ; R5 := R0
  17 [-]: CALL      R4 2 2       ; R4 := R4(R5)
@@ -45,8 +45,8 @@
  22 [-]: GETGLOBAL R5 K9        ; R5 := 0xe1eb1f56
  23 [-]: DIV       R4 R4 R5     ; R4 := R4 / R5
  24 [-]: GETGLOBAL R5 K10       ; R5 := 0x42dcc9f5
- 25 [-]: LOADK     R6 0         ; R6 := 0.000000
- 26 [-]: LOADK     R7 1         ; R7 := 1.000000
+ 25 [-]: CONST     R6 0         ; R6 := 0.000000
+ 26 [-]: CONST     R7 1         ; R7 := 1.000000
  27 [-]: SUB       R8 K11 R4    ; R8 := 1.000000 - R4
  28 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
  29 [-]: MOVE      R4 R5        ; R4 := R5
@@ -66,10 +66,10 @@
  43 [-]: LT        0 K18 R6     ; if 0.001000 >= R6 then PC := 52
  44 [-]: JMP       52           ; PC := 52
  45 [-]: SELF      R6 R0 K19    ; R7 := R0; R6 := R0[0x45c31347]
- 46 [-]: LOADK     R8 0         ; R8 := 0.000000
+ 46 [-]: CONST     R8 0         ; R8 := 0.000000
  47 [-]: MUL       R9 K20 R5    ; R9 := 0.990000 * R5
  48 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
- 49 [-]: LOADK     R2 2         ; R2 := 2.000000
+ 49 [-]: CONST     R2 2         ; R2 := 2.000000
  50 [-]: MOVE      R3 R5        ; R3 := R5
  51 [-]: JMP       55           ; PC := 55
  52 [-]: GETGLOBAL R6 K14       ; R6 := 0x67652851
@@ -87,7 +87,7 @@
  64 [-]: CALL      R6 5 1       ; R6(R7,R8,R9,R10)
  65 [-]: RETURN    R0 1         ; return 
  66 [-]: GETGLOBAL R6 K22       ; R6 := 0xcbd666e1
- 67 [-]: LOADK     R7 0         ; R7 := 0.000000
+ 67 [-]: CONST     R7 0         ; R7 := 0.000000
  68 [-]: CALL      R6 2 1       ; R6(R7)
  69 [-]: JMP       15           ; PC := 15
  70 [-]: RETURN    R0 1         ; return 

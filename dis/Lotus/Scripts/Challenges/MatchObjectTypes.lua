@@ -26,7 +26,7 @@
   3 [-]: CALL      R4 2 2       ; R4 := R4(R5)
   4 [-]: TEST      R4 0         ; if not R4 then PC := 8
   5 [-]: JMP       8            ; PC := 8
-  6 [-]: LOADBOOL  R4 0 0       ; R4 := false
+  6 [-]: LOADKB    R4 0 0       ; R4 := false
   7 [-]: RETURN    R4 2         ; return R4
   8 [-]: GETGLOBAL R4 K1        ; R4 := 0xa5718aaa
   9 [-]: TEST      R4 0         ; if not R4 then PC := 19
@@ -39,10 +39,10 @@
  16 [-]: TEST      R5 1         ; if R5 then PC := 19
  17 [-]: JMP       19           ; PC := 19
  18 [-]: MOVE      R3 R4        ; R3 := R4
- 19 [-]: LOADK     R5 1         ; R5 := 1.000000
+ 19 [-]: CONST     R5 1         ; R5 := 1.000000
  20 [-]: GETGLOBAL R6 K3        ; R6 := 0x127d537d
  21 [-]: LEN       R6 R6        ; R6 := # R6
- 22 [-]: LOADK     R7 1         ; R7 := 1.000000
+ 22 [-]: CONST     R7 1         ; R7 := 1.000000
  23 [-]: FORPREP   R5 78        ; R5 -= R7; PC := 78
  24 [-]: SELF      R9 R3 K4     ; R10 := R3; R9 := R3[0xf2deaf69]
  25 [-]: GETGLOBAL R11 K3       ; R11 := 0x127d537d
@@ -71,8 +71,8 @@
  48 [-]: NEWTABLE  R11 0 0      ; R11 := {}
  49 [-]: SETTABLE  R10 R9 R11   ; R10[R9] := R11
  50 [-]: LEN       R12 R11      ; R12 := # R11
- 51 [-]: LOADK     R13 1        ; R13 := 1.000000
- 52 [-]: LOADK     R14 -1       ; R14 := -1.000000
+ 51 [-]: CONST     R13 1        ; R13 := 1.000000
+ 52 [-]: CONST     R14 -1       ; R14 := -1.000000
  53 [-]: FORPREP   R12 70       ; R12 -= R14; PC := 70
  54 [-]: GETTABLE  R16 R11 R15  ; R16 := R11[R15]
  55 [-]: GETGLOBAL R17 K0       ; R17 := 0x7b998233
@@ -88,7 +88,7 @@
  65 [-]: JMP       70           ; PC := 70
  66 [-]: EQ        0 R16 R3     ; if R16 ~= R3 then PC := 70
  67 [-]: JMP       70           ; PC := 70
- 68 [-]: LOADBOOL  R17 0 0      ; R17 := false
+ 68 [-]: LOADKB    R17 0 0      ; R17 := false
  69 [-]: RETURN    R17 2        ; return R17
  70 [-]: FORLOOP   R12 54       ; R12 += R14; if R12 <= R13 then begin PC := 54; R15 := R12 end
  71 [-]: GETGLOBAL R17 K10      ; R17 := 0x33bdd652
@@ -96,10 +96,10 @@
  73 [-]: MOVE      R18 R11      ; R18 := R11
  74 [-]: MOVE      R19 R3       ; R19 := R3
  75 [-]: CALL      R17 3 1      ; R17(R18,R19)
- 76 [-]: LOADBOOL  R17 1 0      ; R17 := true
+ 76 [-]: LOADKB    R17 1 0      ; R17 := true
  77 [-]: RETURN    R17 2        ; return R17
  78 [-]: FORLOOP   R5 24        ; R5 += R7; if R5 <= R6 then begin PC := 24; R8 := R5 end
- 79 [-]: LOADBOOL  R17 0 0      ; R17 := false
+ 79 [-]: LOADKB    R17 0 0      ; R17 := false
  80 [-]: RETURN    R17 2        ; return R17
  81 [-]: RETURN    R0 1         ; return 
 

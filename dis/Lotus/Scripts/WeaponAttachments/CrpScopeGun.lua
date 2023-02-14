@@ -7,7 +7,7 @@
 ; Is_vararg:       2
 ; Max Stack Size:  4
 
-  1 [-]: LOADK     R0 5         ; R0 := 5.000000
+  1 [-]: CONST     R0 5         ; R0 := 5.000000
   2 [-]: GETGLOBAL R1 K0        ; R1 := 0x7ed0a956
   3 [-]: LOADK     R2 K1        ; R2 := "/Lotus/Interface/SpecialReticles/CorpusGunScope.swf"
   4 [-]: CALL      R1 2 2       ; R1 := R1(R2)
@@ -54,7 +54,7 @@
  16 [-]: SELF      R3 R2 K3     ; R4 := R2; R3 := R2[0xde321e6f]
  17 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  18 [-]: SELF      R3 R3 K4     ; R4 := R3; R3 := R3[0xe85a2361]
- 19 [-]: LOADK     R5 3         ; R5 := 3.000000
+ 19 [-]: CONST     R5 3         ; R5 := 3.000000
  20 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
  21 [-]: MOVE      R1 R3        ; R1 := R3
  22 [-]: GETGLOBAL R3 K2        ; R3 := 0x7b998233
@@ -65,7 +65,7 @@
  27 [-]: RETURN    R0 1         ; return 
  28 [-]: SELF      R3 R2 K6     ; R4 := R2; R3 := R2[0x388577d5]
  29 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 30 [-]: LOADK     R4 0         ; R4 := 0.000000
+ 30 [-]: CONST     R4 0         ; R4 := 0.000000
  31 [-]: GETGLOBAL R5 K7        ; R5 := _T
  32 [-]: GETTABLE  R5 R5 K8     ; R5 := R5["crpScopeGun"]
  33 [-]: EQ        1 R5 K9      ; if R5 == nil then PC := 43
@@ -82,7 +82,7 @@
  44 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  45 [-]: LE        0 R5 K11     ; if R5 > 0.250000 then PC := 48
  46 [-]: JMP       48           ; PC := 48
- 47 [-]: LOADK     R5 1         ; R5 := 1.000000
+ 47 [-]: CONST     R5 1         ; R5 := 1.000000
  48 [-]: SELF      R6 R0 K12    ; R7 := R0; R6 := R0[0xf6ebd926]
  49 [-]: CALL      R6 2 2       ; R6 := R6(R7)
  50 [-]: SELF      R7 R0 K13    ; R8 := R0; R7 := R0[0xc9f6a7d7]
@@ -113,9 +113,9 @@
  75 [-]: CALL      R9 3 2       ; R9 := R9(R10,R11)
  76 [-]: LE        0 K20 R5     ; if 1.000000 > R5 then PC := 98
  77 [-]: JMP       98           ; PC := 98
- 78 [-]: LOADK     R10 1        ; R10 := 1.000000
+ 78 [-]: CONST     R10 1        ; R10 := 1.000000
  79 [-]: MOVE      R11 R4       ; R11 := R4
- 80 [-]: LOADK     R12 1        ; R12 := 1.000000
+ 80 [-]: CONST     R12 1        ; R12 := 1.000000
  81 [-]: FORPREP   R10 97       ; R10 -= R12; PC := 97
  82 [-]: GETGLOBAL R14 K21      ; R14 := 0x89326c93
  83 [-]: SELF      R14 R14 K22  ; R15 := R14; R14 := R14[0x05909209]
@@ -161,9 +161,9 @@
 ; Max Stack Size:  13
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0xcbd666e1
-  2 [-]: LOADK     R2 0         ; R2 := 0.000000
+  2 [-]: CONST     R2 0         ; R2 := 0.000000
   3 [-]: CALL      R1 2 1       ; R1(R2)
-  4 [-]: LOADK     R1 0         ; R1 := 0.000000
+  4 [-]: CONST     R1 0         ; R1 := 0.000000
   5 [-]: LOADK     R2 K1        ; R2 := 1.800000
   6 [-]: SELF      R3 R0 K2     ; R4 := R0; R3 := R0[0xd1586535]
   7 [-]: CALL      R3 2 2       ; R3 := R3(R4)
@@ -186,7 +186,7 @@
  24 [-]: GETGLOBAL R10 K10      ; R10 := 0x5bced4c4
  25 [-]: GETTABLE  R10 R10 K11  ; R10 := R10[0xa40531d8]
  26 [-]: SUB       R11 K5 R1    ; R11 := 1.000000 - R1
- 27 [-]: LOADK     R12 2        ; R12 := 2.000000
+ 27 [-]: CONST     R12 2        ; R12 := 2.000000
  28 [-]: CALL      R10 3 2      ; R10 := R10(R11,R12)
  29 [-]: SUB       R10 K5 R10   ; R10 := 1.000000 - R10
  30 [-]: GETGLOBAL R11 K6       ; R11 := 0x6f068685
@@ -196,7 +196,7 @@
  34 [-]: GETGLOBAL R5 K10       ; R5 := 0x5bced4c4
  35 [-]: GETTABLE  R5 R5 K11    ; R5 := R5[0xa40531d8]
  36 [-]: MOVE      R6 R1        ; R6 := R1
- 37 [-]: LOADK     R7 3         ; R7 := 3.000000
+ 37 [-]: CONST     R7 3         ; R7 := 3.000000
  38 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
  39 [-]: SUB       R5 K5 R5     ; R5 := 1.000000 - R5
  40 [-]: SELF      R6 R0 K12    ; R7 := R0; R6 := R0[0x5004be24]
@@ -208,7 +208,7 @@
  46 [-]: MUL       R6 R6 R2     ; R6 := R6 * R2
  47 [-]: ADD       R1 R1 R6     ; R1 := R1 + R6
  48 [-]: GETGLOBAL R6 K0        ; R6 := 0xcbd666e1
- 49 [-]: LOADK     R7 0         ; R7 := 0.000000
+ 49 [-]: CONST     R7 0         ; R7 := 0.000000
  50 [-]: CALL      R6 2 1       ; R6(R7)
  51 [-]: JMP       10           ; PC := 10
  52 [-]: RETURN    R0 1         ; return 
@@ -247,7 +247,7 @@
  22 [-]: GETTABLE  R6 R6 K2     ; R6 := R6["crpScopeGun"]
  23 [-]: GETTABLE  R6 R6 R3     ; R6 := R6[R3]
  24 [-]: ADD       R6 R6 R2     ; R6 := R6 + R2
- 25 [-]: LOADK     R7 0         ; R7 := 0.000000
+ 25 [-]: CONST     R7 0         ; R7 := 0.000000
  26 [-]: GETUPVAL  R8 U0        ; R8 := U0
  27 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
  28 [-]: SETTABLE  R4 R3 R5     ; R4[R3] := R5
@@ -290,7 +290,7 @@
   1 [-]: GETUPVAL  R2 U0        ; R2 := U0
   2 [-]: MOVE      R3 R0        ; R3 := R0
   3 [-]: MOVE      R4 R1        ; R4 := R1
-  4 [-]: LOADK     R5 1         ; R5 := 1.000000
+  4 [-]: CONST     R5 1         ; R5 := 1.000000
   5 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
   6 [-]: RETURN    R0 1         ; return 
 
@@ -307,7 +307,7 @@
   1 [-]: GETUPVAL  R2 U0        ; R2 := U0
   2 [-]: MOVE      R3 R0        ; R3 := R0
   3 [-]: MOVE      R4 R1        ; R4 := R1
-  4 [-]: LOADK     R5 -1        ; R5 := -1.000000
+  4 [-]: CONST     R5 -1        ; R5 := -1.000000
   5 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
   6 [-]: RETURN    R0 1         ; return 
 

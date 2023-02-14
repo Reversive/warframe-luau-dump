@@ -49,9 +49,9 @@
  12 [-]: GETUPVAL  R1 U2        ; R1 := U2
  13 [-]: EQ        0 R0 R1      ; if R0 ~= R1 then PC := 17
  14 [-]: JMP       17           ; PC := 17
- 15 [-]: LOADBOOL  R1 1 0       ; R1 := true
+ 15 [-]: LOADKB    R1 1 0       ; R1 := true
  16 [-]: RETURN    R1 2         ; return R1
- 17 [-]: LOADBOOL  R1 0 0       ; R1 := false
+ 17 [-]: LOADKB    R1 0 0       ; R1 := false
  18 [-]: RETURN    R1 2         ; return R1
  19 [-]: RETURN    R0 1         ; return 
 
@@ -115,9 +115,9 @@
  48 [-]: CALL      R6 2 2       ; R6 := R6(R7)
  49 [-]: TEST      R6 0         ; if not R6 then PC := 53
  50 [-]: JMP       53           ; PC := 53
- 51 [-]: LOADBOOL  R6 1 0       ; R6 := true
+ 51 [-]: LOADKB    R6 1 0       ; R6 := true
  52 [-]: RETURN    R6 2         ; return R6
- 53 [-]: LOADBOOL  R6 0 0       ; R6 := false
+ 53 [-]: LOADKB    R6 0 0       ; R6 := false
  54 [-]: RETURN    R6 2         ; return R6
  55 [-]: RETURN    R0 1         ; return 
 

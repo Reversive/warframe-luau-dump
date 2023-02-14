@@ -7,7 +7,7 @@
 ; Is_vararg:       2
 ; Max Stack Size:  4
 
-  1 [-]: LOADBOOL  R0 1 0       ; R0 := true
+  1 [-]: LOADKB    R0 1 0       ; R0 := true
   2 [-]: LOADNIL   R1 R2        ; R1 := R2 := nil
   3 [-]: CLOSURE   R3 0         ; R3 := closure(Function #1)
   4 [-]: MOVE      R0 R0        ; R0 := R0
@@ -94,9 +94,9 @@
   7 [-]: GETGLOBAL R1 K5        ; R1 := 0x89326c93
   8 [-]: SELF      R1 R1 K6     ; R2 := R1; R1 := R1[0x21c948f8]
   9 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 10 [-]: LOADK     R2 1         ; R2 := 1.000000
+ 10 [-]: CONST     R2 1         ; R2 := 1.000000
  11 [-]: LEN       R3 R1        ; R3 := # R1
- 12 [-]: LOADK     R4 1         ; R4 := 1.000000
+ 12 [-]: CONST     R4 1         ; R4 := 1.000000
  13 [-]: FORPREP   R2 49        ; R2 -= R4; PC := 49
  14 [-]: GETTABLE  R6 R1 R5     ; R6 := R1[R5]
  15 [-]: SELF      R7 R6 K7     ; R8 := R6; R7 := R6[0x2047cfe7]
@@ -121,7 +121,7 @@
  34 [-]: SELF      R9 R8 K14    ; R10 := R8; R9 := R8[0xfc0e440a]
  35 [-]: GETGLOBAL R11 K0       ; R11 := _T
  36 [-]: GETTABLE  R11 R11 K1   ; R11 := R11["testProcType"]
- 37 [-]: LOADBOOL  R12 1 0      ; R12 := true
+ 37 [-]: LOADKB    R12 1 0      ; R12 := true
  38 [-]: CALL      R9 4 1       ; R9(R10,R11,R12)
  39 [-]: SELF      R9 R8 K15    ; R10 := R8; R9 := R8[0x86cd00cb]
  40 [-]: MOVE      R11 R0       ; R11 := R0
@@ -155,10 +155,10 @@
   7 [-]: GETGLOBAL R1 K5        ; R1 := 0x89326c93
   8 [-]: SELF      R1 R1 K6     ; R2 := R1; R1 := R1[0x21c948f8]
   9 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 10 [-]: LOADBOOL  R2 1 0       ; R2 := true
- 11 [-]: LOADK     R3 1         ; R3 := 1.000000
+ 10 [-]: LOADKB    R2 1 0       ; R2 := true
+ 11 [-]: CONST     R3 1         ; R3 := 1.000000
  12 [-]: LEN       R4 R1        ; R4 := # R1
- 13 [-]: LOADK     R5 1         ; R5 := 1.000000
+ 13 [-]: CONST     R5 1         ; R5 := 1.000000
  14 [-]: FORPREP   R3 62        ; R3 -= R5; PC := 62
  15 [-]: GETTABLE  R7 R1 R6     ; R7 := R1[R6]
  16 [-]: SELF      R8 R7 K7     ; R9 := R7; R8 := R7[0x2047cfe7]
@@ -186,7 +186,7 @@
  38 [-]: SELF      R10 R9 K15   ; R11 := R9; R10 := R9[0xfc0e440a]
  39 [-]: GETGLOBAL R12 K0       ; R12 := _T
  40 [-]: GETTABLE  R12 R12 K1   ; R12 := R12["testProcType"]
- 41 [-]: LOADBOOL  R13 1 0      ; R13 := true
+ 41 [-]: LOADKB    R13 1 0      ; R13 := true
  42 [-]: CALL      R10 4 1      ; R10(R11,R12,R13)
  43 [-]: SELF      R10 R9 K16   ; R11 := R9; R10 := R9[0xcdb40c41]
  44 [-]: MUL       R12 R8 K17   ; R12 := R8 * 100.000000

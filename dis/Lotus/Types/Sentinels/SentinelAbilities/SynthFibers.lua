@@ -140,8 +140,8 @@
  49 [-]: SETTABLE  R5 K17 R6    ; R5["buffDataExtra"] := R6
  50 [-]: SELF      R6 R4 K21    ; R7 := R4; R6 := R4[0x37e45fb5]
  51 [-]: MOVE      R8 R5        ; R8 := R5
- 52 [-]: LOADBOOL  R9 0 0       ; R9 := false
- 53 [-]: LOADBOOL  R10 1 0      ; R10 := true
+ 52 [-]: LOADKB    R9 0 0       ; R9 := false
+ 53 [-]: LOADKB    R10 1 0      ; R10 := true
  54 [-]: CALL      R6 5 1       ; R6(R7,R8,R9,R10)
  55 [-]: RETURN    R0 1         ; return 
 
@@ -163,16 +163,16 @@
   6 [-]: SELF      R2 R1 K2     ; R3 := R1; R2 := R1[0xde321e6f]
   7 [-]: CALL      R2 2 2       ; R2 := R2(R3)
   8 [-]: SELF      R2 R2 K3     ; R3 := R2; R2 := R2[0x5e6704ff]
-  9 [-]: LOADK     R4 111       ; R4 := 111.000000
- 10 [-]: LOADK     R5 1         ; R5 := 1.000000
- 11 [-]: LOADK     R6 2         ; R6 := 2.000000
+  9 [-]: CONST     R4 114       ; R4 := 114.000000
+ 10 [-]: CONST     R5 2         ; R5 := 2.000000
+ 11 [-]: CONST     R6 2         ; R6 := 2.000000
  12 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
  13 [-]: GETGLOBAL R2 K6        ; R2 := 0x6687f6e0
  14 [-]: SELF      R2 R2 K7     ; R3 := R2; R2 := R2[0x855eb96d]
  15 [-]: GETGLOBAL R4 K8        ; R4 := 0x0469f296
  16 [-]: LOADK     R5 K9        ; R5 := "OwnerPickup"
  17 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 18 [-]: LOADBOOL  R5 1 0       ; R5 := true
+ 18 [-]: LOADKB    R5 1 0       ; R5 := true
  19 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
  20 [-]: RETURN    R0 1         ; return 
 
@@ -236,7 +236,7 @@
  48 [-]: SELF      R9 R6 K17    ; R10 := R6; R9 := R6[0x583c2ed7]
  49 [-]: MOVE      R11 R8       ; R11 := R8
  50 [-]: CALL      R9 3 1       ; R9(R10,R11)
- 51 [-]: LOADK     R9 0         ; R9 := 0.000000
+ 51 [-]: CONST     R9 0         ; R9 := 0.000000
  52 [-]: GETGLOBAL R10 K18      ; R10 := 0x422e1719
  53 [-]: GETGLOBAL R11 K11      ; R11 := 0x5bced4c4
  54 [-]: GETTABLE  R11 R11 K15  ; R11 := R11[0xac1b386a]
@@ -248,7 +248,7 @@
  60 [-]: LT        0 R9 R10     ; if R9 >= R10 then PC := 80
  61 [-]: JMP       80           ; PC := 80
  62 [-]: GETGLOBAL R11 K19      ; R11 := 0xcbd666e1
- 63 [-]: LOADK     R12 0        ; R12 := 0.000000
+ 63 [-]: CONST     R12 0        ; R12 := 0.000000
  64 [-]: CALL      R11 2 1      ; R11(R12)
  65 [-]: GETGLOBAL R11 K20      ; R11 := 0x67652851
  66 [-]: CALL      R11 1 2      ; R11 := R11()
@@ -259,7 +259,7 @@
  71 [-]: GETTABLE  R11 R11 K21  ; R11 := R11["reset"]
  72 [-]: TEST      R11 0        ; if not R11 then PC := 60
  73 [-]: JMP       60           ; PC := 60
- 74 [-]: LOADK     R9 0         ; R9 := 0.000000
+ 74 [-]: CONST     R9 0         ; R9 := 0.000000
  75 [-]: GETGLOBAL R11 K7       ; R11 := _T
  76 [-]: GETTABLE  R11 R11 K8   ; R11 := R11["sentinelArmourMod"]
  77 [-]: GETTABLE  R11 R11 R4   ; R11 := R11[R4]
@@ -383,8 +383,8 @@
  91 [-]: SETTABLE  R6 K22 R7    ; R6["buffDataExtra"] := R7
  92 [-]: SELF      R7 R4 K26    ; R8 := R4; R7 := R4[0x37e45fb5]
  93 [-]: MOVE      R9 R6        ; R9 := R6
- 94 [-]: LOADBOOL  R10 1 0      ; R10 := true
- 95 [-]: LOADBOOL  R11 1 0      ; R11 := true
+ 94 [-]: LOADKB    R10 1 0      ; R10 := true
+ 95 [-]: LOADKB    R11 1 0      ; R11 := true
  96 [-]: CALL      R7 5 1       ; R7(R8,R9,R10,R11)
  97 [-]: SELF      R7 R5 K27    ; R8 := R5; R7 := R5[0x5ca33548]
  98 [-]: CALL      R7 2 2       ; R7 := R7(R8)
@@ -421,7 +421,7 @@
 129 [-]: GETGLOBAL R10 K35      ; R10 := 0x0469f296
 130 [-]: LOADK     R11 K36      ; R11 := "ApplyAndRemoveArmour"
 131 [-]: CALL      R10 2 2      ; R10 := R10(R11)
-132 [-]: LOADBOOL  R11 0 0      ; R11 := false
+132 [-]: LOADKB    R11 0 0      ; R11 := false
 133 [-]: CALL      R8 4 1       ; R8(R9,R10,R11)
 134 [-]: RETURN    R0 1         ; return 
 

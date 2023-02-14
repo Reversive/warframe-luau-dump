@@ -45,7 +45,7 @@
  22 [-]: JMP       46           ; PC := 46
  23 [-]: GETGLOBAL R6 K6        ; R6 := 0x5bced4c4
  24 [-]: GETTABLE  R6 R6 K7     ; R6 := R6[0x3630e649]
- 25 [-]: LOADK     R7 1         ; R7 := 1.000000
+ 25 [-]: CONST     R7 1         ; R7 := 1.000000
  26 [-]: LEN       R8 R4        ; R8 := # R4
  27 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
  28 [-]: GETTABLE  R6 R4 R6     ; R6 := R4[R6]

@@ -7,8 +7,8 @@
 ; Is_vararg:       2
 ; Max Stack Size:  5
 
-  1 [-]: LOADK     R0 0         ; R0 := 0.000000
-  2 [-]: LOADK     R1 1         ; R1 := 1.000000
+  1 [-]: CONST     R0 0         ; R0 := 0.000000
+  2 [-]: CONST     R1 1         ; R1 := 1.000000
   3 [-]: LOADNIL   R2 R3        ; R2 := R3 := nil
   4 [-]: CLOSURE   R4 0         ; R4 := closure(Function #1)
   5 [-]: MOVE      R0 R2        ; R0 := R2
@@ -67,7 +67,7 @@
  32 [-]: GETUPVAL  R0 U1        ; R0 := U1
  33 [-]: SELF      R0 R0 K9     ; R1 := R0; R0 := R0[0x2373e028]
  34 [-]: LOADK     R2 K8        ; R2 := "curNum"
- 35 [-]: LOADK     R3 0         ; R3 := 0.000000
+ 35 [-]: CONST     R3 0         ; R3 := 0.000000
  36 [-]: CALL      R0 4 1       ; R0(R1,R2,R3)
  37 [-]: GETUPVAL  R0 U1        ; R0 := U1
  38 [-]: SELF      R0 R0 K10    ; R1 := R0; R0 := R0[0xbf0268f4]

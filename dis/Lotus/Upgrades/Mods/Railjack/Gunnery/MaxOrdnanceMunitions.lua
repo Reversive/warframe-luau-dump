@@ -61,8 +61,8 @@
   9 [-]: SELF      R6 R0 K3     ; R7 := R0; R6 := R0[0xde321e6f]
  10 [-]: CALL      R6 2 2       ; R6 := R6(R7)
  11 [-]: SELF      R6 R6 K4     ; R7 := R6; R6 := R6[0x5e6704ff]
- 12 [-]: LOADK     R8 191       ; R8 := 191.000000
- 13 [-]: LOADK     R9 2         ; R9 := 2.000000
+ 12 [-]: CONST     R8 196       ; R8 := 196.000000
+ 13 [-]: CONST     R9 3         ; R9 := 3.000000
  14 [-]: MOVE      R10 R5       ; R10 := R5
  15 [-]: GETGLOBAL R11 K7       ; R11 := 0x7bb9b400
  16 [-]: CALL      R6 6 1       ; R6(R7,R8,R9,R10,R11)
@@ -89,8 +89,8 @@
   9 [-]: SELF      R6 R0 K3     ; R7 := R0; R6 := R0[0xde321e6f]
  10 [-]: CALL      R6 2 2       ; R6 := R6(R7)
  11 [-]: SELF      R6 R6 K4     ; R7 := R6; R6 := R6[0x12dd9da2]
- 12 [-]: LOADK     R8 191       ; R8 := 191.000000
- 13 [-]: LOADK     R9 2         ; R9 := 2.000000
+ 12 [-]: CONST     R8 196       ; R8 := 196.000000
+ 13 [-]: CONST     R9 3         ; R9 := 3.000000
  14 [-]: MOVE      R10 R5       ; R10 := R5
  15 [-]: GETGLOBAL R11 K7       ; R11 := 0x7bb9b400
  16 [-]: CALL      R6 6 1       ; R6(R7,R8,R9,R10,R11)

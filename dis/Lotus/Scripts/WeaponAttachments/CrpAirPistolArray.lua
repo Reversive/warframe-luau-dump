@@ -30,10 +30,10 @@
 ; Max Stack Size:  9
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0xcbd666e1
-  2 [-]: LOADK     R2 0         ; R2 := 0.000000
+  2 [-]: CONST     R2 0         ; R2 := 0.000000
   3 [-]: CALL      R1 2 1       ; R1(R2)
-  4 [-]: LOADK     R1 0         ; R1 := 0.000000
-  5 [-]: LOADK     R2 0         ; R2 := 0.000000
+  4 [-]: CONST     R1 0         ; R1 := 0.000000
+  5 [-]: CONST     R2 0         ; R2 := 0.000000
   6 [-]: GETGLOBAL R3 K1        ; R3 := 0xffe5f3b7
   7 [-]: LT        0 R1 R3      ; if R1 >= R3 then PC := 57
   8 [-]: JMP       57           ; PC := 57
@@ -55,7 +55,7 @@
  24 [-]: GETGLOBAL R7 K1        ; R7 := 0xffe5f3b7
  25 [-]: DIV       R7 R1 R7     ; R7 := R1 / R7
  26 [-]: SUB       R7 K10 R7    ; R7 := 1.000000 - R7
- 27 [-]: LOADK     R8 2         ; R8 := 2.000000
+ 27 [-]: CONST     R8 2         ; R8 := 2.000000
  28 [-]: CALL      R6 3 0       ; R6,... := R6(R7,R8)
  29 [-]: CALL      R3 0 2       ; R3 := R3(R4,...)
  30 [-]: MOVE      R2 R3        ; R2 := R3
@@ -64,13 +64,13 @@
  33 [-]: MOVE      R6 R2        ; R6 := R2
  34 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
  35 [-]: GETGLOBAL R3 K2        ; R3 := 0x9bafffe3
- 36 [-]: LOADK     R4 10        ; R4 := 10.000000
- 37 [-]: LOADK     R5 0         ; R5 := 0.000000
+ 36 [-]: CONST     R4 10        ; R4 := 10.000000
+ 37 [-]: CONST     R5 0         ; R5 := 0.000000
  38 [-]: GETGLOBAL R6 K8        ; R6 := 0x5bced4c4
  39 [-]: GETTABLE  R6 R6 K9     ; R6 := R6[0xa40531d8]
  40 [-]: GETGLOBAL R7 K1        ; R7 := 0xffe5f3b7
  41 [-]: DIV       R7 R1 R7     ; R7 := R1 / R7
- 42 [-]: LOADK     R8 2         ; R8 := 2.000000
+ 42 [-]: CONST     R8 2         ; R8 := 2.000000
  43 [-]: CALL      R6 3 0       ; R6,... := R6(R7,R8)
  44 [-]: CALL      R3 0 2       ; R3 := R3(R4,...)
  45 [-]: MOVE      R2 R3        ; R2 := R3
@@ -82,7 +82,7 @@
  51 [-]: CALL      R3 1 2       ; R3 := R3()
  52 [-]: ADD       R1 R1 R3     ; R1 := R1 + R3
  53 [-]: GETGLOBAL R3 K0        ; R3 := 0xcbd666e1
- 54 [-]: LOADK     R4 0         ; R4 := 0.000000
+ 54 [-]: CONST     R4 0         ; R4 := 0.000000
  55 [-]: CALL      R3 2 1       ; R3(R4)
  56 [-]: JMP       6            ; PC := 6
  57 [-]: RETURN    R0 1         ; return 

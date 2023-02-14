@@ -30,10 +30,10 @@
   7 [-]: GETGLOBAL R3 K2        ; R3 := 0xc85463d2
   8 [-]: EQ        0 R2 R3      ; if R2 ~= R3 then PC := 13
   9 [-]: JMP       13           ; PC := 13
- 10 [-]: LOADBOOL  R2 1 0       ; R2 := true
+ 10 [-]: LOADKB    R2 1 0       ; R2 := true
  11 [-]: RETURN    R2 2         ; return R2
  12 [-]: JMP       15           ; PC := 15
- 13 [-]: LOADBOOL  R2 0 0       ; R2 := false
+ 13 [-]: LOADKB    R2 0 0       ; R2 := false
  14 [-]: RETURN    R2 2         ; return R2
  15 [-]: RETURN    R0 1         ; return 
 

@@ -104,8 +104,8 @@
  34 [-]: JMP       36           ; PC := 36
  35 [-]: RETURN    R0 1         ; return 
  36 [-]: LEN       R4 R3        ; R4 := # R3
- 37 [-]: LOADK     R5 1         ; R5 := 1.000000
- 38 [-]: LOADK     R6 -1        ; R6 := -1.000000
+ 37 [-]: CONST     R5 1         ; R5 := 1.000000
+ 38 [-]: CONST     R6 -1        ; R6 := -1.000000
  39 [-]: FORPREP   R4 48        ; R4 -= R6; PC := 48
  40 [-]: GETTABLE  R8 R3 R7     ; R8 := R3[R7]
  41 [-]: GETGLOBAL R9 K1        ; R9 := 0x7b998233

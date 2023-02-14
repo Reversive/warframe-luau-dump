@@ -33,17 +33,17 @@
   6 [-]: GETTABLE  R2 R2 K3     ; R2 := R2["pursuitShipDisabled"]
   7 [-]: EQ        0 R2 K2      ; if R2 ~= true then PC := 11
   8 [-]: JMP       11           ; PC := 11
-  9 [-]: LOADK     R2 0         ; R2 := 0.000000
+  9 [-]: CONST     R2 0         ; R2 := 0.000000
  10 [-]: RETURN    R2 2         ; return R2
  11 [-]: SELF      R2 R1 K4     ; R3 := R1; R2 := R1[0x9ba17154]
  12 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  13 [-]: GETGLOBAL R3 K5        ; R3 := 0x89326c93
  14 [-]: SELF      R3 R3 K6     ; R4 := R3; R3 := R3[0x8b5b1f58]
  15 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 16 [-]: LOADK     R4 -1        ; R4 := -1.000000
- 17 [-]: LOADK     R5 1         ; R5 := 1.000000
+ 16 [-]: CONST     R4 -1        ; R4 := -1.000000
+ 17 [-]: CONST     R5 1         ; R5 := 1.000000
  18 [-]: LEN       R6 R3        ; R6 := # R3
- 19 [-]: LOADK     R7 1         ; R7 := 1.000000
+ 19 [-]: CONST     R7 1         ; R7 := 1.000000
  20 [-]: FORPREP   R5 58        ; R5 -= R7; PC := 58
  21 [-]: GETTABLE  R9 R3 R8     ; R9 := R3[R8]
  22 [-]: SELF      R10 R1 K7    ; R11 := R1; R10 := R1[0xbebad19f]
@@ -85,9 +85,9 @@
  58 [-]: FORLOOP   R5 21        ; R5 += R7; if R5 <= R6 then begin PC := 21; R8 := R5 end
  59 [-]: LE        0 K9 R4      ; if 0.000000 > R4 then PC := 63
  60 [-]: JMP       63           ; PC := 63
- 61 [-]: LOADK     R12 1        ; R12 := 1.000000
+ 61 [-]: CONST     R12 1        ; R12 := 1.000000
  62 [-]: RETURN    R12 2        ; return R12
- 63 [-]: LOADK     R12 0        ; R12 := 0.000000
+ 63 [-]: CONST     R12 0        ; R12 := 0.000000
  64 [-]: RETURN    R12 2        ; return R12
  65 [-]: RETURN    R0 1         ; return 
 
@@ -120,11 +120,11 @@
  17 [-]: RETURN    R0 1         ; return 
  18 [-]: GETGLOBAL R4 K3        ; R4 := 0x5bced4c4
  19 [-]: GETTABLE  R4 R4 K4     ; R4 := R4[0x3630e649]
- 20 [-]: LOADK     R5 2         ; R5 := 2.000000
+ 20 [-]: CONST     R5 2         ; R5 := 2.000000
  21 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 22 [-]: LOADK     R5 1         ; R5 := 1.000000
+ 22 [-]: CONST     R5 1         ; R5 := 1.000000
  23 [-]: GETGLOBAL R6 K5        ; R6 := 0x3d239e62
- 24 [-]: LOADK     R7 1         ; R7 := 1.000000
+ 24 [-]: CONST     R7 1         ; R7 := 1.000000
  25 [-]: FORPREP   R5 136       ; R5 -= R7; PC := 136
  26 [-]: MOD       R9 R4 K6     ; R9 := R4 % 2.000000
  27 [-]: EQ        0 R9 K7      ; if R9 ~= 0.000000 then PC := 34
@@ -147,7 +147,7 @@
  44 [-]: GETTABLE  R11 R10 K14  ; R11 := R10["heading"]
  45 [-]: GETGLOBAL R12 K15      ; R12 := 0xc163f229
  46 [-]: GETGLOBAL R13 K16      ; R13 := 0xb0156380
- 47 [-]: UNM       R13 R13      ; R13 := ^ R13
+ 47 [-]: UNM       R13 R13      ; R13 :=  R13
  48 [-]: GETGLOBAL R14 K16      ; R14 := 0xb0156380
  49 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
  50 [-]: ADD       R11 R11 R12  ; R11 := R11 + R12
@@ -155,7 +155,7 @@
  52 [-]: GETTABLE  R11 R10 K17  ; R11 := R10["pitch"]
  53 [-]: GETGLOBAL R12 K15      ; R12 := 0xc163f229
  54 [-]: GETGLOBAL R13 K16      ; R13 := 0xb0156380
- 55 [-]: UNM       R13 R13      ; R13 := ^ R13
+ 55 [-]: UNM       R13 R13      ; R13 :=  R13
  56 [-]: GETGLOBAL R14 K16      ; R14 := 0xb0156380
  57 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
  58 [-]: ADD       R11 R11 R12  ; R11 := R11 + R12
@@ -199,7 +199,7 @@
  96 [-]: GETTABLE  R12 R12 K29  ; R12 := R12["pursuitCombatMode"]
  97 [-]: EQ        0 R12 K30    ; if R12 ~= true then PC := 101
  98 [-]: JMP       101          ; PC := 101
- 99 [-]: LOADK     R12 0        ; R12 := 0.000000
+ 99 [-]: CONST     R12 0        ; R12 := 0.000000
 100 [-]: RETURN    R12 2        ; return R12
 101 [-]: GETGLOBAL R12 K2       ; R12 := 0x7b998233
 102 [-]: MOVE      R13 R2       ; R13 := R2

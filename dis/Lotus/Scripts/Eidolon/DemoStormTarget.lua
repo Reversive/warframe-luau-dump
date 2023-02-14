@@ -29,7 +29,7 @@
   4 [-]: TEST      R1 0         ; if not R1 then PC := 10
   5 [-]: JMP       10           ; PC := 10
   6 [-]: GETGLOBAL R1 K1        ; R1 := 0xcbd666e1
-  7 [-]: LOADK     R2 0         ; R2 := 0.000000
+  7 [-]: CONST     R2 0         ; R2 := 0.000000
   8 [-]: CALL      R1 2 1       ; R1(R2)
   9 [-]: JMP       1            ; PC := 1
  10 [-]: GETGLOBAL R1 K2        ; R1 := 0x89326c93
@@ -76,10 +76,10 @@
   8 [-]: JMP       16           ; PC := 16
   9 [-]: SELF      R1 R0 K3     ; R2 := R0; R1 := R0[0x5d985c7e]
  10 [-]: GETGLOBAL R3 K4        ; R3 := 0x987a8f47
- 11 [-]: LOADBOOL  R4 0 0       ; R4 := false
- 12 [-]: LOADK     R5 3         ; R5 := 3.000000
- 13 [-]: LOADK     R6 2         ; R6 := 2.000000
- 14 [-]: LOADBOOL  R7 1 0       ; R7 := true
+ 11 [-]: LOADKB    R4 0 0       ; R4 := false
+ 12 [-]: CONST     R5 3         ; R5 := 3.000000
+ 13 [-]: CONST     R6 2         ; R6 := 2.000000
+ 14 [-]: LOADKB    R7 1 0       ; R7 := true
  15 [-]: CALL      R1 7 1       ; R1(R2,R3,R4,R5,R6,R7)
  16 [-]: RETURN    R0 1         ; return 
 

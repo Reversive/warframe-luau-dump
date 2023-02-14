@@ -36,9 +36,9 @@
  13 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  14 [-]: EQ        0 R3 K5      ; if R3 ~= 5.000000 then PC := 18
  15 [-]: JMP       18           ; PC := 18
- 16 [-]: LOADBOOL  R4 1 0       ; R4 := true
+ 16 [-]: LOADKB    R4 1 0       ; R4 := true
  17 [-]: RETURN    R4 2         ; return R4
- 18 [-]: LOADBOOL  R4 0 0       ; R4 := false
+ 18 [-]: LOADKB    R4 0 0       ; R4 := false
  19 [-]: RETURN    R4 2         ; return R4
  20 [-]: RETURN    R0 1         ; return 
 

@@ -27,7 +27,7 @@
   4 [-]: CALL      R2 2 2       ; R2 := R2(R3)
   5 [-]: TEST      R2 0         ; if not R2 then PC := 9
   6 [-]: JMP       9            ; PC := 9
-  7 [-]: LOADBOOL  R2 1 0       ; R2 := true
+  7 [-]: LOADKB    R2 1 0       ; R2 := true
   8 [-]: RETURN    R2 2         ; return R2
   9 [-]: GETGLOBAL R2 K0        ; R2 := 0x7b998233
  10 [-]: GETGLOBAL R3 K1        ; R3 := _T
@@ -76,9 +76,9 @@
  53 [-]: GETTABLE  R5 R5 K2     ; R5 := R5["PlayerEnergyCap"]
  54 [-]: LT        0 R4 R5      ; if R4 >= R5 then PC := 58
  55 [-]: JMP       58           ; PC := 58
- 56 [-]: LOADBOOL  R4 1 0       ; R4 := true
+ 56 [-]: LOADKB    R4 1 0       ; R4 := true
  57 [-]: RETURN    R4 2         ; return R4
- 58 [-]: LOADBOOL  R4 0 0       ; R4 := false
+ 58 [-]: LOADKB    R4 0 0       ; R4 := false
  59 [-]: RETURN    R4 2         ; return R4
  60 [-]: RETURN    R0 1         ; return 
 

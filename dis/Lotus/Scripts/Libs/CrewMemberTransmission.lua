@@ -57,8 +57,8 @@
   7 [-]: GETUPVAL  R3 U0        ; R3 := U0
   8 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
   9 [-]: JMP       12           ; PC := 12
- 10 [-]: LOADBOOL  R1 0 1       ; R1 := false; PC := 11
- 11 [-]: LOADBOOL  R1 1 0       ; R1 := true
+ 10 [-]: LOADKB    R1 0 1       ; R1 := false; PC := 11
+ 11 [-]: LOADKB    R1 1 0       ; R1 := true
  12 [-]: RETURN    R1 2         ; return R1
  13 [-]: RETURN    R0 1         ; return 
 
@@ -81,8 +81,8 @@
   7 [-]: GETUPVAL  R3 U0        ; R3 := U0
   8 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
   9 [-]: JMP       12           ; PC := 12
- 10 [-]: LOADBOOL  R1 0 1       ; R1 := false; PC := 11
- 11 [-]: LOADBOOL  R1 1 0       ; R1 := true
+ 10 [-]: LOADKB    R1 0 1       ; R1 := false; PC := 11
+ 11 [-]: LOADKB    R1 1 0       ; R1 := true
  12 [-]: RETURN    R1 2         ; return R1
  13 [-]: RETURN    R0 1         ; return 
 
@@ -113,7 +113,7 @@
  15 [-]: TEST      R2 1         ; if R2 then PC := 21
  16 [-]: JMP       21           ; PC := 21
  17 [-]: GETGLOBAL R2 K6        ; R2 := 0xcbd666e1
- 18 [-]: LOADK     R3 0         ; R3 := 0.000000
+ 18 [-]: CONST     R3 0         ; R3 := 0.000000
  19 [-]: CALL      R2 2 1       ; R2(R3)
  20 [-]: JMP       13           ; PC := 13
  21 [-]: RETURN    R0 1         ; return 

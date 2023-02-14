@@ -47,8 +47,8 @@
  12 [-]: GETTABLE  R3 R3 R4     ; R3 := R3[R4]
  13 [-]: DIV       R3 K5 R3     ; R3 := 5.000000 / R3
  14 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 15 [-]: LOADK     R3 1         ; R3 := 1.000000
- 16 [-]: LOADBOOL  R4 0 0       ; R4 := false
+ 15 [-]: CONST     R3 1         ; R3 := 1.000000
+ 16 [-]: LOADKB    R4 0 0       ; R4 := false
  17 [-]: CALL      R1 4 2       ; R1 := R1(R2,R3,R4)
  18 [-]: GETUPVAL  R2 U0        ; R2 := U0
  19 [-]: GETTABLE  R2 R2 K0     ; R2 := R2[0x1142c7a8]
@@ -61,8 +61,8 @@
  26 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
  27 [-]: GETTABLE  R3 R3 R4     ; R3 := R3[R4]
  28 [-]: MUL       R3 R3 K7     ; R3 := R3 * 100.000000
- 29 [-]: LOADK     R4 1         ; R4 := 1.000000
- 30 [-]: LOADBOOL  R5 0 0       ; R5 := false
+ 29 [-]: CONST     R4 1         ; R4 := 1.000000
+ 30 [-]: LOADKB    R5 0 0       ; R5 := false
  31 [-]: CALL      R2 4 2       ; R2 := R2(R3,R4,R5)
  32 [-]: NEWTABLE  R3 0 2       ; R3 := {}
  33 [-]: SETTABLE  R3 K8 R1     ; R3["RATE"] := R1
@@ -85,10 +85,10 @@
 ; Max Stack Size:  12
 
   1 [-]: SELF      R5 R1 K0     ; R6 := R1; R5 := R1[0x96120d5c]
-  2 [-]: LOADBOOL  R7 0 0       ; R7 := false
+  2 [-]: LOADKB    R7 0 0       ; R7 := false
   3 [-]: CALL      R5 3 1       ; R5(R6,R7)
   4 [-]: SELF      R5 R1 K1     ; R6 := R1; R5 := R1[0xc8e7e8f9]
-  5 [-]: LOADK     R7 2         ; R7 := 2.000000
+  5 [-]: CONST     R7 2         ; R7 := 2.000000
   6 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
   7 [-]: SELF      R6 R5 K2     ; R7 := R5; R6 := R5[0xb5f2cb03]
   8 [-]: GETGLOBAL R8 K3        ; R8 := 0x3ee26138
@@ -117,7 +117,7 @@
   3 [-]: SELF      R2 R0 K1     ; R3 := R0; R2 := R0[0xde321e6f]
   4 [-]: CALL      R2 2 2       ; R2 := R2(R3)
   5 [-]: SELF      R2 R2 K2     ; R3 := R2; R2 := R2[0x881b6b90]
-  6 [-]: LOADK     R4 0         ; R4 := 0.000000
+  6 [-]: CONST     R4 0         ; R4 := 0.000000
   7 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
   8 [-]: GETGLOBAL R3 K4        ; R3 := 0x7b998233
   9 [-]: MOVE      R4 R2        ; R4 := R2
@@ -128,12 +128,12 @@
  14 [-]: GETTABLE  R3 R3 K6     ; R3 := R3["grakataAltFire"]
  15 [-]: SETTABLE  R3 R1 K7     ; R3[R1] := nil
  16 [-]: RETURN    R0 1         ; return 
- 17 [-]: LOADK     R3 0         ; R3 := 0.000000
+ 17 [-]: CONST     R3 0         ; R3 := 0.000000
  18 [-]: SELF      R4 R2 K8     ; R5 := R2; R4 := R2[0x0ad758cb]
  19 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 20 [-]: LOADK     R5 0         ; R5 := 0.000000
+ 20 [-]: CONST     R5 0         ; R5 := 0.000000
  21 [-]: SUB       R6 R4 K9     ; R6 := R4 - 1.000000
- 22 [-]: LOADK     R7 1         ; R7 := 1.000000
+ 22 [-]: CONST     R7 1         ; R7 := 1.000000
  23 [-]: FORPREP   R5 42        ; R5 -= R7; PC := 42
  24 [-]: SELF      R9 R2 K10    ; R10 := R2; R9 := R2[0xfef27732]
  25 [-]: MOVE      R11 R8       ; R11 := R8
@@ -164,7 +164,7 @@
  50 [-]: TEST      R10 0        ; if not R10 then PC := 56
  51 [-]: JMP       56           ; PC := 56
  52 [-]: GETGLOBAL R10 K16      ; R10 := 0xcbd666e1
- 53 [-]: LOADK     R11 0        ; R11 := 0.000000
+ 53 [-]: CONST     R11 0        ; R11 := 0.000000
  54 [-]: CALL      R10 2 1      ; R10(R11)
  55 [-]: JMP       43           ; PC := 43
  56 [-]: SELF      R10 R2 K17   ; R11 := R2; R10 := R2[0x7a7373f5]
@@ -180,7 +180,7 @@
  66 [-]: EQ        0 R10 K18    ; if R10 ~= 0.000000 then PC := 72
  67 [-]: JMP       72           ; PC := 72
  68 [-]: GETGLOBAL R10 K16      ; R10 := 0xcbd666e1
- 69 [-]: LOADK     R11 0        ; R11 := 0.000000
+ 69 [-]: CONST     R11 0        ; R11 := 0.000000
  70 [-]: CALL      R10 2 1      ; R10(R11)
  71 [-]: JMP       64           ; PC := 64
  72 [-]: SELF      R10 R0 K0    ; R11 := R0; R10 := R0[0x388577d5]
@@ -240,7 +240,7 @@
   5 [-]: JMP       7            ; PC := 7
   6 [-]: RETURN    R0 1         ; return 
   7 [-]: GETGLOBAL R1 K1        ; R1 := 0xcbd666e1
-  8 [-]: LOADK     R2 0         ; R2 := 0.000000
+  8 [-]: CONST     R2 0         ; R2 := 0.000000
   9 [-]: CALL      R1 2 1       ; R1(R2)
  10 [-]: SELF      R1 R0 K2     ; R2 := R0; R1 := R0[0x1ac1655c]
  11 [-]: CALL      R1 2 2       ; R1 := R1(R2)
@@ -264,7 +264,7 @@
  29 [-]: SELF      R4 R2 K8     ; R5 := R2; R4 := R2[0xde321e6f]
  30 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  31 [-]: SELF      R4 R4 K9     ; R5 := R4; R4 := R4[0x881b6b90]
- 32 [-]: LOADK     R6 0         ; R6 := 0.000000
+ 32 [-]: CONST     R6 0         ; R6 := 0.000000
  33 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
  34 [-]: GETGLOBAL R5 K0        ; R5 := 0x7b998233
  35 [-]: MOVE      R6 R4        ; R6 := R4
@@ -282,7 +282,7 @@
  47 [-]: TEST      R5 0         ; if not R5 then PC := 106
  48 [-]: JMP       106          ; PC := 106
  49 [-]: GETGLOBAL R5 K1        ; R5 := 0xcbd666e1
- 50 [-]: LOADK     R6 0         ; R6 := 0.000000
+ 50 [-]: CONST     R6 0         ; R6 := 0.000000
  51 [-]: CALL      R5 2 1       ; R5(R6)
  52 [-]: GETGLOBAL R5 K0        ; R5 := 0x7b998233
  53 [-]: GETGLOBAL R6 K12       ; R6 := _T
@@ -404,13 +404,13 @@
  52 [-]: NEWTABLE  R8 0 0       ; R8 := {}
  53 [-]: SETTABLE  R7 K10 R8    ; R7["processed"] := R8
  54 [-]: SETTABLE  R6 R4 R7     ; R6[R4] := R7
- 55 [-]: LOADK     R6 1         ; R6 := 1.000000
+ 55 [-]: CONST     R6 1         ; R6 := 1.000000
  56 [-]: GETGLOBAL R7 K7        ; R7 := _T
  57 [-]: GETTABLE  R7 R7 K8     ; R7 := R7["grakataAltFire"]
  58 [-]: GETTABLE  R7 R7 R4     ; R7 := R7[R4]
  59 [-]: GETTABLE  R7 R7 K10    ; R7 := R7["processed"]
  60 [-]: LEN       R7 R7        ; R7 := # R7
- 61 [-]: LOADK     R8 1         ; R8 := 1.000000
+ 61 [-]: CONST     R8 1         ; R8 := 1.000000
  62 [-]: FORPREP   R6 71        ; R6 -= R8; PC := 71
  63 [-]: GETGLOBAL R10 K7       ; R10 := _T
  64 [-]: GETTABLE  R10 R10 K8   ; R10 := R10["grakataAltFire"]
@@ -425,7 +425,7 @@
  73 [-]: GETGLOBAL R12 K12      ; R12 := 0x0469f296
  74 [-]: LOADK     R13 K13      ; R13 := "WaitForDeath"
  75 [-]: CALL      R12 2 2      ; R12 := R12(R13)
- 76 [-]: LOADBOOL  R13 0 0      ; R13 := false
+ 76 [-]: LOADKB    R13 0 0      ; R13 := false
  77 [-]: CALL      R10 4 1      ; R10(R11,R12,R13)
  78 [-]: GETGLOBAL R10 K14      ; R10 := 0x33bdd652
  79 [-]: GETTABLE  R10 R10 K15  ; R10 := R10[0x23d5322f]
@@ -446,7 +446,7 @@
  94 [-]: GETGLOBAL R12 K12      ; R12 := 0x0469f296
  95 [-]: LOADK     R13 K17      ; R13 := "WaitToRefundAmmo"
  96 [-]: CALL      R12 2 2      ; R12 := R12(R13)
- 97 [-]: LOADBOOL  R13 0 0      ; R13 := false
+ 97 [-]: LOADKB    R13 0 0      ; R13 := false
  98 [-]: CALL      R10 4 1      ; R10(R11,R12,R13)
  99 [-]: RETURN    R0 1         ; return 
 

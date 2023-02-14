@@ -30,7 +30,7 @@
   1 [-]: SELF      R2 R0 K0     ; R3 := R0; R2 := R0[0xde321e6f]
   2 [-]: CALL      R2 2 2       ; R2 := R2(R3)
   3 [-]: SELF      R3 R2 K1     ; R4 := R2; R3 := R2[0xe85a2361]
-  4 [-]: LOADK     R5 11        ; R5 := 11.000000
+  4 [-]: CONST     R5 11        ; R5 := 11.000000
   5 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
   6 [-]: GETGLOBAL R4 K3        ; R4 := 0x7b998233
   7 [-]: MOVE      R5 R3        ; R5 := R3
@@ -38,7 +38,7 @@
   9 [-]: TEST      R4 1         ; if R4 then PC := 40
  10 [-]: JMP       40           ; PC := 40
  11 [-]: SELF      R4 R2 K4     ; R5 := R2; R4 := R2[0x881b6b90]
- 12 [-]: LOADK     R6 0         ; R6 := 0.000000
+ 12 [-]: CONST     R6 0         ; R6 := 0.000000
  13 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
  14 [-]: EQ        1 R4 R3      ; if R4 == R3 then PC := 40
  15 [-]: JMP       40           ; PC := 40

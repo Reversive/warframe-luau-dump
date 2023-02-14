@@ -76,7 +76,7 @@
  22 [-]: CALL      R3 2 1       ; R3(R4)
  23 [-]: GETGLOBAL R3 K8        ; R3 := 0x5bced4c4
  24 [-]: GETTABLE  R3 R3 K9     ; R3 := R3[0x3630e649]
- 25 [-]: LOADK     R4 100       ; R4 := 100.000000
+ 25 [-]: CONST     R4 100       ; R4 := 100.000000
  26 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  27 [-]: LE        0 R3 R2      ; if R3 > R2 then PC := 40
  28 [-]: JMP       40           ; PC := 40
@@ -190,7 +190,7 @@
  10 [-]: TEST      R1 0         ; if not R1 then PC := 16
  11 [-]: JMP       16           ; PC := 16
  12 [-]: GETGLOBAL R1 K4        ; R1 := 0xcbd666e1
- 13 [-]: LOADK     R2 0         ; R2 := 0.000000
+ 13 [-]: CONST     R2 0         ; R2 := 0.000000
  14 [-]: CALL      R1 2 1       ; R1(R2)
  15 [-]: JMP       7            ; PC := 7
  16 [-]: SETUPVAL  R0 U0        ; U82 := R0
@@ -203,7 +203,7 @@
  23 [-]: GETGLOBAL R3 K6        ; R3 := 0x0469f296
  24 [-]: LOADK     R4 K7        ; R4 := "CheckAutoRepair"
  25 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 26 [-]: LOADBOOL  R4 0 0       ; R4 := false
+ 26 [-]: LOADKB    R4 0 0       ; R4 := false
  27 [-]: CALL      R1 4 1       ; R1(R2,R3,R4)
  28 [-]: GETGLOBAL R1 K8        ; R1 := 0x6a1d40e9
  29 [-]: GETUPVAL  R2 U1        ; R2 := U1

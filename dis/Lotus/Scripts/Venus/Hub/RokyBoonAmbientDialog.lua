@@ -104,7 +104,7 @@
  77 [-]: TEST      R8 0         ; if not R8 then PC := 83
  78 [-]: JMP       83           ; PC := 83
  79 [-]: GETGLOBAL R8 K23       ; R8 := 0xcbd666e1
- 80 [-]: LOADK     R9 0         ; R9 := 0.000000
+ 80 [-]: CONST     R9 0         ; R9 := 0.000000
  81 [-]: CALL      R8 2 1       ; R8(R9)
  82 [-]: JMP       64           ; PC := 64
  83 [-]: GETGLOBAL R8 K23       ; R8 := 0xcbd666e1
@@ -119,7 +119,7 @@
  92 [-]: TFORLOOP  R8 2         ; R11,R12 :=  R8(R9,R10); if R11 ~= nil then begin PC = 90; R10 := R11 end
  93 [-]: JMP       90           ; PC := 90
  94 [-]: GETGLOBAL R13 K23      ; R13 := 0xcbd666e1
- 95 [-]: LOADK     R14 3        ; R14 := 3.000000
+ 95 [-]: CONST     R14 3        ; R14 := 3.000000
  96 [-]: CALL      R13 2 1      ; R13(R14)
  97 [-]: RETURN    R0 1         ; return 
 

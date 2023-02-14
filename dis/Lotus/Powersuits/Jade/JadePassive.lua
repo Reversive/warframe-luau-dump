@@ -41,7 +41,7 @@
   3 [-]: GETGLOBAL R2 K3        ; R2 := 0x5bced4c4
   4 [-]: GETTABLE  R2 R2 K4     ; R2 := R2[0x55f27c30]
   5 [-]: GETUPVAL  R3 U0        ; R3 := U0
-  6 [-]: UNM       R3 R3        ; R3 := ^ R3
+  6 [-]: UNM       R3 R3        ; R3 :=  R3
   7 [-]: MUL       R3 R3 K5     ; R3 := R3 * 100.000000
   8 [-]: CALL      R2 2 2       ; R2 := R2(R3)
   9 [-]: SETTABLE  R1 K2 R2     ; R1["PERCENT"] := R2
@@ -63,16 +63,16 @@
   3 [-]: SELF      R2 R0 K0     ; R3 := R0; R2 := R0[0xde321e6f]
   4 [-]: CALL      R2 2 2       ; R2 := R2(R3)
   5 [-]: SELF      R2 R2 K1     ; R3 := R2; R2 := R2[0x5e6704ff]
-  6 [-]: LOADK     R4 50        ; R4 := 50.000000
-  7 [-]: LOADK     R5 2         ; R5 := 2.000000
+  6 [-]: CONST     R4 51        ; R4 := 51.000000
+  7 [-]: CONST     R5 3         ; R5 := 3.000000
   8 [-]: GETUPVAL  R6 U0        ; R6 := U0
   9 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
  10 [-]: JMP       18           ; PC := 18
  11 [-]: SELF      R2 R0 K0     ; R3 := R0; R2 := R0[0xde321e6f]
  12 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  13 [-]: SELF      R2 R2 K4     ; R3 := R2; R2 := R2[0x12dd9da2]
- 14 [-]: LOADK     R4 50        ; R4 := 50.000000
- 15 [-]: LOADK     R5 2         ; R5 := 2.000000
+ 14 [-]: CONST     R4 51        ; R4 := 51.000000
+ 15 [-]: CONST     R5 3         ; R5 := 3.000000
  16 [-]: GETUPVAL  R6 U0        ; R6 := U0
  17 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
  18 [-]: RETURN    R0 1         ; return 
@@ -112,7 +112,7 @@
  23 [-]: SETTABLE  R2 K6 R3     ; R2["JADE_EnablePassive"] := R3
  24 [-]: GETUPVAL  R2 U1        ; R2 := U1
  25 [-]: MOVE      R3 R1        ; R3 := R1
- 26 [-]: LOADBOOL  R4 1 0       ; R4 := true
+ 26 [-]: LOADKB    R4 1 0       ; R4 := true
  27 [-]: CALL      R2 3 1       ; R2(R3,R4)
  28 [-]: RETURN    R0 1         ; return 
 
@@ -148,7 +148,7 @@
  20 [-]: RETURN    R0 1         ; return 
  21 [-]: GETUPVAL  R2 U1        ; R2 := U1
  22 [-]: MOVE      R3 R1        ; R3 := R1
- 23 [-]: LOADBOOL  R4 0 0       ; R4 := false
+ 23 [-]: LOADKB    R4 0 0       ; R4 := false
  24 [-]: CALL      R2 3 1       ; R2(R3,R4)
  25 [-]: RETURN    R0 1         ; return 
 

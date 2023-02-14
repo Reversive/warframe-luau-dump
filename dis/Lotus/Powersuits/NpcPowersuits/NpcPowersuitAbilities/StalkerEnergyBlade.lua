@@ -48,13 +48,13 @@
  19 [-]: GETGLOBAL R4 K7        ; R4 := 0x443a8d0b
  20 [-]: LT        0 R4 R3      ; if R4 >= R3 then PC := 25
  21 [-]: JMP       25           ; PC := 25
- 22 [-]: LOADK     R3 0         ; R3 := 0.000000
+ 22 [-]: CONST     R3 0         ; R3 := 0.000000
  23 [-]: RETURN    R3 2         ; return R3
  24 [-]: JMP       30           ; PC := 30
  25 [-]: SELF      R3 R0 K8     ; R4 := R0; R3 := R0[0x48d05257]
  26 [-]: GETTABLE  R5 R2 K4     ; R5 := R2["avatar"]
  27 [-]: CALL      R3 3 1       ; R3(R4,R5)
- 28 [-]: LOADK     R3 1         ; R3 := 1.000000
+ 28 [-]: CONST     R3 1         ; R3 := 1.000000
  29 [-]: RETURN    R3 2         ; return R3
  30 [-]: RETURN    R0 1         ; return 
 
@@ -136,15 +136,15 @@
   9 [-]: SELF      R7 R1 K3     ; R8 := R1; R7 := R1[0x7027c544]
  10 [-]: GETGLOBAL R9 K4        ; R9 := 0xc4955624
  11 [-]: GETGLOBAL R10 K5       ; R10 := 0x55730e1a
- 12 [-]: LOADK     R11 1        ; R11 := 1.000000
+ 12 [-]: CONST     R11 1        ; R11 := 1.000000
  13 [-]: GETGLOBAL R12 K4       ; R12 := 0xc4955624
  14 [-]: LEN       R12 R12      ; R12 := # R12
  15 [-]: CALL      R10 3 2      ; R10 := R10(R11,R12)
  16 [-]: GETTABLE  R9 R9 R10    ; R9 := R9[R10]
- 17 [-]: LOADBOOL  R10 0 0      ; R10 := false
- 18 [-]: LOADK     R11 2        ; R11 := 2.000000
- 19 [-]: LOADK     R12 1        ; R12 := 1.000000
- 20 [-]: LOADBOOL  R13 1 0      ; R13 := true
+ 17 [-]: LOADKB    R10 0 0      ; R10 := false
+ 18 [-]: CONST     R11 2        ; R11 := 2.000000
+ 19 [-]: CONST     R12 1        ; R12 := 1.000000
+ 20 [-]: LOADKB    R13 1 0      ; R13 := true
  21 [-]: CALL      R7 7 0       ; R7,... := R7(R8,R9,R10,R11,R12,R13)
  22 [-]: CALL      R4 0 1       ; R4(R5,...)
  23 [-]: GETUPVAL  R4 U0        ; R4 := U0
@@ -154,7 +154,7 @@
  27 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
  28 [-]: SELF      R4 R1 K1     ; R5 := R1; R4 := R1[0x21b4c60e]
  29 [-]: LOADK     R6 K2        ; R6 := "DoomProjectile"
- 30 [-]: LOADK     R7 1         ; R7 := 1.000000
+ 30 [-]: CONST     R7 1         ; R7 := 1.000000
  31 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
  32 [-]: GETUPVAL  R4 U0        ; R4 := U0
  33 [-]: MOVE      R5 R1        ; R5 := R1

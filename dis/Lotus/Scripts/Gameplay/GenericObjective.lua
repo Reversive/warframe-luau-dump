@@ -26,7 +26,7 @@
 ; Max Stack Size:  12
 
   1 [-]: SELF      R1 R0 K0     ; R2 := R0; R1 := R0[0x05eeb9db]
-  2 [-]: LOADK     R3 1         ; R3 := 1.000000
+  2 [-]: CONST     R3 1         ; R3 := 1.000000
   3 [-]: CALL      R1 3 1       ; R1(R2,R3)
   4 [-]: GETGLOBAL R1 K1        ; R1 := _T
   5 [-]: GETTABLE  R1 R1 K2     ; R1 := R1[0x8ee923fe]
@@ -37,7 +37,7 @@
  10 [-]: GETUPVAL  R3 U0        ; R3 := U0
  11 [-]: GETTABLE  R3 R3 K5     ; R3 := R3["HT_LABEL"]
  12 [-]: LOADNIL   R4 R5        ; R4 := R5 := nil
- 13 [-]: LOADBOOL  R6 0 0       ; R6 := false
+ 13 [-]: LOADKB    R6 0 0       ; R6 := false
  14 [-]: CALL      R1 6 2       ; R1 := R1(R2,R3,R4,R5,R6)
  15 [-]: TEST      R1 0         ; if not R1 then PC := 56
  16 [-]: JMP       56           ; PC := 56
@@ -67,7 +67,7 @@
  40 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  41 [-]: LOADK     R5 K16       ; R5 := "<br><font color=\""
  42 [-]: GETTABLE  R6 R1 K17    ; R6 := R1[0xe2c898b9]
- 43 [-]: LOADK     R7 35        ; R7 := 35.000000
+ 43 [-]: CONST     R7 35        ; R7 := 35.000000
  44 [-]: CALL      R6 2 2       ; R6 := R6(R7)
  45 [-]: LOADK     R7 K19       ; R7 := "\">"
  46 [-]: GETTABLE  R8 R1 K10    ; R8 := R1[0x603636ad]
@@ -93,7 +93,7 @@
  66 [-]: LT        0 K24 R2     ; if 0.000000 >= R2 then PC := 72
  67 [-]: JMP       72           ; PC := 72
  68 [-]: GETGLOBAL R2 K25       ; R2 := 0xcbd666e1
- 69 [-]: LOADK     R3 0         ; R3 := 0.000000
+ 69 [-]: CONST     R3 0         ; R3 := 0.000000
  70 [-]: CALL      R2 2 1       ; R2(R3)
  71 [-]: JMP       64           ; PC := 64
  72 [-]: TEST      R1 0         ; if not R1 then PC := 78

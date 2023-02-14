@@ -7,7 +7,7 @@
 ; Is_vararg:       2
 ; Max Stack Size:  2
 
-  1 [-]: LOADK     R0 3         ; R0 := 3.000000
+  1 [-]: CONST     R0 3         ; R0 := 3.000000
   2 [-]: CLOSURE   R1 0         ; R1 := closure(Function #1)
   3 [-]: MOVE      R0 R0        ; R0 := R0
   4 [-]: SETGLOBAL R1 K0        ; MatchTagEvent := R1
@@ -33,7 +33,7 @@
   8 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
   9 [-]: TEST      R5 1         ; if R5 then PC := 13
  10 [-]: JMP       13           ; PC := 13
- 11 [-]: LOADBOOL  R5 0 0       ; R5 := false
+ 11 [-]: LOADKB    R5 0 0       ; R5 := false
  12 [-]: RETURN    R5 2         ; return R5
  13 [-]: GETGLOBAL R5 K3        ; R5 := _T
  14 [-]: GETTABLE  R5 R5 K4     ; R5 := R5["EvoShotgunAmmoEffOnPunchthrough"]
@@ -44,7 +44,7 @@
  19 [-]: SETTABLE  R5 K4 R6     ; R5["EvoShotgunAmmoEffOnPunchthrough"] := R6
  20 [-]: GETGLOBAL R5 K6        ; R5 := 0x34291f5c
  21 [-]: GETTABLE  R5 R5 K7     ; R5 := R5[0x397b920f]
- 22 [-]: LOADK     R6 0         ; R6 := 0.000000
+ 22 [-]: CONST     R6 0         ; R6 := 0.000000
  23 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  24 [-]: NEWTABLE  R6 0 0       ; R6 := {}
  25 [-]: GETGLOBAL R7 K8        ; R7 := 0xcfc01047
@@ -93,7 +93,7 @@
  68 [-]: GETTABLE  R18 R18 K18  ; R18 := R18["sucess"]
  69 [-]: TEST      R18 0        ; if not R18 then PC := 73
  70 [-]: JMP       73           ; PC := 73
- 71 [-]: LOADBOOL  R18 0 0      ; R18 := false
+ 71 [-]: LOADKB    R18 0 0      ; R18 := false
  72 [-]: RETURN    R18 2        ; return R18
  73 [-]: SELF      R18 R3 K19   ; R19 := R3; R18 := R3[0xf14ae078]
  74 [-]: CALL      R18 2 2      ; R18 := R18(R19)
@@ -118,7 +118,7 @@
  93 [-]: JMP       98           ; PC := 98
  94 [-]: EQ        0 R24 R19    ; if R24 ~= R19 then PC := 98
  95 [-]: JMP       98           ; PC := 98
- 96 [-]: LOADBOOL  R25 0 0      ; R25 := false
+ 96 [-]: LOADKB    R25 0 0      ; R25 := false
  97 [-]: RETURN    R25 2        ; return R25
  98 [-]: TFORLOOP  R20 2        ; R23,R24 :=  R20(R21,R22); if R23 ~= nil then begin PC = 94; R22 := R23 end
  99 [-]: JMP       94           ; PC := 94
@@ -142,9 +142,9 @@
 117 [-]: GETTABLE  R25 R25 K4   ; R25 := R25["EvoShotgunAmmoEffOnPunchthrough"]
 118 [-]: GETTABLE  R25 R25 R17  ; R25 := R25[R17]
 119 [-]: SETTABLE  R25 K18 K22  ; R25["sucess"] := true
-120 [-]: LOADBOOL  R25 1 0      ; R25 := true
+120 [-]: LOADKB    R25 1 0      ; R25 := true
 121 [-]: RETURN    R25 2        ; return R25
-122 [-]: LOADBOOL  R25 0 0      ; R25 := false
+122 [-]: LOADKB    R25 0 0      ; R25 := false
 123 [-]: RETURN    R25 2        ; return R25
 124 [-]: RETURN    R0 1         ; return 
 

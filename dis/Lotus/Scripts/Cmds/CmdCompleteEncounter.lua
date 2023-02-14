@@ -59,11 +59,11 @@
  34 [-]: GETGLOBAL R14 K10      ; R14 := _T
  35 [-]: SETTABLE  R14 K11 K12  ; R14["QualifiedForBountyBonus"] := true
  36 [-]: SELF      R14 R12 K13  ; R15 := R12; R14 := R12[0xfe9dc265]
- 37 [-]: LOADK     R16 4        ; R16 := 4.000000
+ 37 [-]: CONST     R16 4        ; R16 := 4.000000
  38 [-]: CALL      R14 3 1      ; R14(R15,R16)
  39 [-]: JMP       43           ; PC := 43
  40 [-]: SELF      R14 R12 K13  ; R15 := R12; R14 := R12[0xfe9dc265]
- 41 [-]: LOADK     R16 5        ; R16 := 5.000000
+ 41 [-]: CONST     R16 5        ; R16 := 5.000000
  42 [-]: CALL      R14 3 1      ; R14(R15,R16)
  43 [-]: TFORLOOP  R8 2         ; R11,R12 :=  R8(R9,R10); if R11 ~= nil then begin PC = 23; R10 := R11 end
  44 [-]: JMP       23           ; PC := 23
@@ -91,11 +91,11 @@
  66 [-]: GETGLOBAL R15 K10      ; R15 := _T
  67 [-]: SETTABLE  R15 K11 K12  ; R15["QualifiedForBountyBonus"] := true
  68 [-]: SELF      R15 R6 K13   ; R16 := R6; R15 := R6[0xfe9dc265]
- 69 [-]: LOADK     R17 4        ; R17 := 4.000000
+ 69 [-]: CONST     R17 4        ; R17 := 4.000000
  70 [-]: CALL      R15 3 1      ; R15(R16,R17)
  71 [-]: JMP       75           ; PC := 75
  72 [-]: SELF      R15 R6 K13   ; R16 := R6; R15 := R6[0xfe9dc265]
- 73 [-]: LOADK     R17 5        ; R17 := 5.000000
+ 73 [-]: CONST     R17 5        ; R17 := 5.000000
  74 [-]: CALL      R15 3 1      ; R15(R16,R17)
  75 [-]: TFORLOOP  R2 2         ; R5,R6 :=  R2(R3,R4); if R5 ~= nil then begin PC = 9; R4 := R5 end
  76 [-]: JMP       9            ; PC := 9

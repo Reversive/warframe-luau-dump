@@ -60,9 +60,9 @@
  29 [-]: GETTABLE  R5 R5 R6     ; R5 := R5[R6]
  30 [-]: EQ        0 R5 R2      ; if R5 ~= R2 then PC := 34
  31 [-]: JMP       34           ; PC := 34
- 32 [-]: LOADBOOL  R5 1 0       ; R5 := true
+ 32 [-]: LOADKB    R5 1 0       ; R5 := true
  33 [-]: RETURN    R5 2         ; return R5
- 34 [-]: LOADBOOL  R5 0 0       ; R5 := false
+ 34 [-]: LOADKB    R5 0 0       ; R5 := false
  35 [-]: RETURN    R5 2         ; return R5
  36 [-]: RETURN    R0 1         ; return 
 

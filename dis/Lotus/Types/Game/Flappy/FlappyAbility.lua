@@ -31,30 +31,30 @@
   6 [-]: SETTABLE  R4 K1 K2     ; R4["WaitingForFlappyTap"] := false
   7 [-]: GETGLOBAL R4 K3        ; R4 := 0xbe190284
   8 [-]: SELF      R4 R4 K4     ; R5 := R4; R4 := R4[0x0d94da04]
-  9 [-]: LOADK     R6 -30       ; R6 := -30.000000
+  9 [-]: CONST     R6 -30       ; R6 := -30.000000
  10 [-]: CALL      R4 3 1       ; R4(R5,R6)
  11 [-]: GETGLOBAL R4 K5        ; R4 := 0xcbd666e1
- 12 [-]: LOADK     R5 0         ; R5 := 0.000000
+ 12 [-]: CONST     R5 0         ; R5 := 0.000000
  13 [-]: CALL      R4 2 1       ; R4(R5)
  14 [-]: SELF      R4 R1 K6     ; R5 := R1; R4 := R1[0x7027c544]
  15 [-]: GETGLOBAL R6 K7        ; R6 := 0xb8624824
- 16 [-]: LOADBOOL  R7 0 0       ; R7 := false
- 17 [-]: LOADK     R8 2         ; R8 := 2.000000
- 18 [-]: LOADK     R9 1         ; R9 := 1.000000
- 19 [-]: LOADBOOL  R10 0 0      ; R10 := false
+ 16 [-]: LOADKB    R7 0 0       ; R7 := false
+ 17 [-]: CONST     R8 2         ; R8 := 2.000000
+ 18 [-]: CONST     R9 1         ; R9 := 1.000000
+ 19 [-]: LOADKB    R10 0 0      ; R10 := false
  20 [-]: CALL      R4 7 1       ; R4(R5,R6,R7,R8,R9,R10)
  21 [-]: SELF      R4 R1 K9     ; R5 := R1; R4 := R1[0x47901f07]
  22 [-]: GETGLOBAL R6 K10       ; R6 := 0x618c8df6
  23 [-]: GETGLOBAL R7 K11       ; R7 := EMPTY_SYMBOL
  24 [-]: GETGLOBAL R8 K12       ; R8 := 0xa421af95
- 25 [-]: LOADK     R9 -10       ; R9 := -10.000000
- 26 [-]: LOADK     R10 -10      ; R10 := -10.000000
- 27 [-]: LOADK     R11 -10      ; R11 := -10.000000
+ 25 [-]: CONST     R9 -10       ; R9 := -10.000000
+ 26 [-]: CONST     R10 -10      ; R10 := -10.000000
+ 27 [-]: CONST     R11 -10      ; R11 := -10.000000
  28 [-]: CALL      R8 4 2       ; R8 := R8(R9,R10,R11)
  29 [-]: GETGLOBAL R9 K13       ; R9 := 0x00046924
- 30 [-]: LOADK     R10 90       ; R10 := 90.000000
- 31 [-]: LOADK     R11 0        ; R11 := 0.000000
- 32 [-]: LOADK     R12 90       ; R12 := 90.000000
+ 30 [-]: CONST     R10 90       ; R10 := 90.000000
+ 31 [-]: CONST     R11 0        ; R11 := 0.000000
+ 32 [-]: CONST     R12 90       ; R12 := 90.000000
  33 [-]: CALL      R9 4 0       ; R9,... := R9(R10,R11,R12)
  34 [-]: CALL      R4 0 1       ; R4(R5,...)
  35 [-]: SELF      R4 R1 K14    ; R5 := R1; R4 := R1[0xb326e827]

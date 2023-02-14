@@ -10,7 +10,7 @@
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0xa421af95
   2 [-]: LOADK     R1 K1        ; R1 := 0.120000
   3 [-]: LOADK     R2 K2        ; R2 := -0.120000
-  4 [-]: LOADK     R3 0         ; R3 := 0.250000
+  4 [-]: CONST     R3 0         ; R3 := 0.250000
   5 [-]: CALL      R0 4 2       ; R0 := R0(R1,R2,R3)
   6 [-]: CLOSURE   R1 0         ; R1 := closure(Function #1)
   7 [-]: MOVE      R0 R0        ; R0 := R0
@@ -47,7 +47,7 @@
  15 [-]: SELF      R6 R4 K5     ; R7 := R4; R6 := R4[0xde321e6f]
  16 [-]: CALL      R6 2 2       ; R6 := R6(R7)
  17 [-]: SELF      R7 R6 K6     ; R8 := R6; R7 := R6[0xe85a2361]
- 18 [-]: LOADK     R9 5         ; R9 := 5.000000
+ 18 [-]: CONST     R9 5         ; R9 := 5.000000
  19 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
  20 [-]: GETGLOBAL R8 K2        ; R8 := 0x7b998233
  21 [-]: MOVE      R9 R0        ; R9 := R0
@@ -162,7 +162,7 @@
 130 [-]: CALL      R8 2 1       ; R8(R9)
 131 [-]: LOADNIL   R2 R2        ; R2 := nil
 132 [-]: GETGLOBAL R8 K21       ; R8 := 0xcbd666e1
-133 [-]: LOADK     R9 0         ; R9 := 0.000000
+133 [-]: CONST     R9 0         ; R9 := 0.000000
 134 [-]: CALL      R8 2 1       ; R8(R9)
 135 [-]: JMP       20           ; PC := 20
 136 [-]: RETURN    R0 1         ; return 
@@ -194,10 +194,10 @@
  15 [-]: SELF      R6 R4 K5     ; R7 := R4; R6 := R4[0xde321e6f]
  16 [-]: CALL      R6 2 2       ; R6 := R6(R7)
  17 [-]: SELF      R7 R6 K6     ; R8 := R6; R7 := R6[0xe85a2361]
- 18 [-]: LOADK     R9 5         ; R9 := 5.000000
+ 18 [-]: CONST     R9 5         ; R9 := 5.000000
  19 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
  20 [-]: SELF      R8 R7 K8     ; R9 := R7; R8 := R7[0xc8e7e8f9]
- 21 [-]: LOADK     R10 1        ; R10 := 1.000000
+ 21 [-]: CONST     R10 1        ; R10 := 1.000000
  22 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
  23 [-]: GETGLOBAL R9 K2        ; R9 := 0x7b998233
  24 [-]: MOVE      R10 R0       ; R10 := R0
@@ -293,7 +293,7 @@
 114 [-]: CALL      R9 2 1       ; R9(R10)
 115 [-]: LOADNIL   R2 R2        ; R2 := nil
 116 [-]: GETGLOBAL R9 K20       ; R9 := 0xcbd666e1
-117 [-]: LOADK     R10 0        ; R10 := 0.000000
+117 [-]: CONST     R10 0        ; R10 := 0.000000
 118 [-]: CALL      R9 2 1       ; R9(R10)
 119 [-]: JMP       23           ; PC := 23
 120 [-]: RETURN    R0 1         ; return 

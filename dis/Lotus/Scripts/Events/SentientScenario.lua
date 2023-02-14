@@ -55,7 +55,7 @@
   8 [-]: GETGLOBAL R0 K1        ; R0 := 0xe7f2b02f
   9 [-]: SELF      R0 R0 K3     ; R1 := R0; R0 := R0[0x30d844a6]
  10 [-]: CALL      R0 2 2       ; R0 := R0(R1)
- 11 [-]: NOT       R0 R0        ; R0 := not R0
+ 11 [-]: NOT       R0 R0        ; R0 :=  R0
  12 [-]: RETURN    R0 2         ; return R0
  13 [-]: RETURN    R0 1         ; return 
 
@@ -88,7 +88,7 @@
  17 [-]: GETTABLE  R1 R1 K6     ; R1 := R1[0xe0cba3ca]
  18 [-]: LOADK     R2 K7        ; R2 := "/Lotus/Language/Events/MissionPrereq"
  19 [-]: CALL      R1 2 1       ; R1(R2)
- 20 [-]: LOADBOOL  R1 0 0       ; R1 := false
+ 20 [-]: LOADKB    R1 0 0       ; R1 := false
  21 [-]: RETURN    R1 2         ; return R1
  22 [-]: GETGLOBAL R1 K8        ; R1 := 0x0032441c
  23 [-]: GETTABLE  R1 R1 K9     ; R1 := R1["Scenario"]
@@ -104,7 +104,7 @@
  33 [-]: GETTABLE  R1 R1 K11    ; R1 := R1["EndTime"]
  34 [-]: TEST      R1 1         ; if R1 then PC := 38
  35 [-]: JMP       38           ; PC := 38
- 36 [-]: LOADBOOL  R1 0 0       ; R1 := false
+ 36 [-]: LOADKB    R1 0 0       ; R1 := false
  37 [-]: RETURN    R1 2         ; return R1
  38 [-]: GETGLOBAL R1 K8        ; R1 := 0x0032441c
  39 [-]: GETTABLE  R1 R1 K9     ; R1 := R1["Scenario"]
@@ -119,7 +119,7 @@
  48 [-]: GETTABLE  R1 R1 K6     ; R1 := R1[0xe0cba3ca]
  49 [-]: LOADK     R2 K13       ; R2 := "/Lotus/Language/Events/FlotillaWaveInactive"
  50 [-]: CALL      R1 2 1       ; R1(R2)
- 51 [-]: LOADBOOL  R1 0 0       ; R1 := false
+ 51 [-]: LOADKB    R1 0 0       ; R1 := false
  52 [-]: RETURN    R1 2         ; return R1
  53 [-]: GETGLOBAL R1 K14       ; R1 := 0x34291f5c
  54 [-]: GETTABLE  R1 R1 K15    ; R1 := R1[0xc6fa2eba]
@@ -145,9 +145,9 @@
  74 [-]: GETTABLE  R3 R3 K6     ; R3 := R3[0xe0cba3ca]
  75 [-]: LOADK     R4 K13       ; R4 := "/Lotus/Language/Events/FlotillaWaveInactive"
  76 [-]: CALL      R3 2 1       ; R3(R4)
- 77 [-]: LOADBOOL  R3 0 0       ; R3 := false
+ 77 [-]: LOADKB    R3 0 0       ; R3 := false
  78 [-]: RETURN    R3 2         ; return R3
- 79 [-]: LOADBOOL  R3 1 0       ; R3 := true
+ 79 [-]: LOADKB    R3 1 0       ; R3 := true
  80 [-]: RETURN    R3 2         ; return R3
  81 [-]: RETURN    R0 1         ; return 
 
@@ -184,7 +184,7 @@
  21 [-]: GETGLOBAL R5 K9        ; R5 := 0x0469f296
  22 [-]: MOVE      R6 R3        ; R6 := R3
  23 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 24 [-]: LOADBOOL  R6 1 0       ; R6 := true
+ 24 [-]: LOADKB    R6 1 0       ; R6 := true
  25 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
  26 [-]: EQ        1 R4 K10     ; if R4 == nil then PC := 33
  27 [-]: JMP       33           ; PC := 33
@@ -303,13 +303,13 @@
  40 [-]: GETTABLE  R3 R3 K14    ; R3 := R3["StartTime"]
  41 [-]: TEST      R3 1         ; if R3 then PC := 44
  42 [-]: JMP       44           ; PC := 44
- 43 [-]: LOADK     R3 0         ; R3 := 0.000000
+ 43 [-]: CONST     R3 0         ; R3 := 0.000000
  44 [-]: GETUPVAL  R4 U1        ; R4 := U1
  45 [-]: GETTABLE  R4 R4 K15    ; R4 := R4[0x94098a1d]
  46 [-]: GETGLOBAL R5 K16       ; R5 := 0x0469f296
  47 [-]: MOVE      R6 R2        ; R6 := R2
  48 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 49 [-]: LOADBOOL  R6 1 0       ; R6 := true
+ 49 [-]: LOADKB    R6 1 0       ; R6 := true
  50 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
  51 [-]: EQ        1 R4 K17     ; if R4 == nil then PC := 58
  52 [-]: JMP       58           ; PC := 58
@@ -403,8 +403,8 @@
 140 [-]: GETTABLE  R12 R12 K53  ; R12 := R12["SF_RAILJACK_KEY"]
 141 [-]: CALL      R10 3 2      ; R10 := R10(R11,R12)
 142 [-]: JMP       145          ; PC := 145
-143 [-]: LOADBOOL  R10 0 1      ; R10 := false; PC := 144
-144 [-]: LOADBOOL  R10 1 0      ; R10 := true
+143 [-]: LOADKB    R10 0 1      ; R10 := false; PC := 144
+144 [-]: LOADKB    R10 1 0      ; R10 := true
 145 [-]: LOADNIL   R11 R11      ; R11 := nil
 146 [-]: TEST      R10 1        ; if R10 then PC := 177
 147 [-]: JMP       177          ; PC := 177
@@ -479,14 +479,14 @@
 216 [-]: RETURN    R0 1         ; return 
 217 [-]: TFORLOOP  R13 2        ; R16,R17 :=  R13(R14,R15); if R16 ~= nil then begin PC = 187; R15 := R16 end
 218 [-]: JMP       187          ; PC := 187
-219 [-]: LOADBOOL  R11 1 0      ; R11 := true
+219 [-]: LOADKB    R11 1 0      ; R11 := true
 220 [-]: JMP       256          ; PC := 256
 221 [-]: GETGLOBAL R21 K1       ; R21 := 0xe7f2b02f
 222 [-]: SELF      R21 R21 K55  ; R22 := R21; R21 := R21[0x30d844a6]
 223 [-]: CALL      R21 2 2      ; R21 := R21(R22)
 224 [-]: TEST      R21 1        ; if R21 then PC := 228
 225 [-]: JMP       228          ; PC := 228
-226 [-]: LOADBOOL  R11 1 0      ; R11 := true
+226 [-]: LOADKB    R11 1 0      ; R11 := true
 227 [-]: JMP       256          ; PC := 256
 228 [-]: GETGLOBAL R21 K69      ; R21 := 0x34291f5c
 229 [-]: GETTABLE  R21 R21 K70  ; R21 := R21[0xe27b35bb]
@@ -510,7 +510,7 @@
 247 [-]: TEST      R23 1        ; if R23 then PC := 253
 248 [-]: JMP       253          ; PC := 253
 249 [-]: GETGLOBAL R23 K83      ; R23 := 0xcbd666e1
-250 [-]: LOADK     R24 0        ; R24 := 0.000000
+250 [-]: CONST     R24 0        ; R24 := 0.000000
 251 [-]: CALL      R23 2 1      ; R23(R24)
 252 [-]: JMP       244          ; PC := 244
 253 [-]: EQ        0 R11 K17    ; if R11 ~= nil then PC := 256
@@ -547,7 +547,7 @@
 284 [-]: GETTABLE  R25 R25 K86  ; R25 := R25[0x06d055f9]
 285 [-]: MOVE      R26 R11      ; R26 := R11
 286 [-]: LOADNIL   R27 R27      ; R27 := nil
-287 [-]: LOADK     R28 2        ; R28 := 2.000000
+287 [-]: CONST     R28 2        ; R28 := 2.000000
 288 [-]: CALL      R25 4 2      ; R25 := R25(R26,R27,R28)
 289 [-]: SETTABLE  R24 K58 R25  ; R24["InRailJackMode"] := R25
 290 [-]: GETGLOBAL R24 K1       ; R24 := 0xe7f2b02f
@@ -571,12 +571,12 @@
   3 [-]: RETURN    R0 1         ; return 
   4 [-]: EQ        0 R0 K2      ; if R0 ~= 6.000000 then PC := 9
   5 [-]: JMP       9            ; PC := 9
-  6 [-]: LOADBOOL  R1 0 0       ; R1 := false
+  6 [-]: LOADKB    R1 0 0       ; R1 := false
   7 [-]: SETUPVAL  R1 U0        ; U82 := R0
   8 [-]: JMP       13           ; PC := 13
   9 [-]: EQ        0 R0 K3      ; if R0 ~= 4.000000 then PC := 13
  10 [-]: JMP       13           ; PC := 13
- 11 [-]: LOADBOOL  R1 1 0       ; R1 := true
+ 11 [-]: LOADKB    R1 1 0       ; R1 := true
  12 [-]: SETUPVAL  R1 U0        ; U82 := R0
  13 [-]: RETURN    R0 1         ; return 
 

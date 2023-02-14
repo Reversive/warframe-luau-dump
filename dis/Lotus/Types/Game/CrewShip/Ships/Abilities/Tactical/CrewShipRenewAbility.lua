@@ -7,8 +7,8 @@
 ; Is_vararg:       2
 ; Max Stack Size:  6
 
-  1 [-]: LOADK     R0 300       ; R0 := 300.000000
-  2 [-]: LOADK     R1 0         ; R1 := 0.250000
+  1 [-]: CONST     R0 300       ; R0 := 300.000000
+  2 [-]: CONST     R1 0         ; R1 := 0.250000
   3 [-]: GETGLOBAL R2 K0        ; R2 := 0x2d0fad09
   4 [-]: LOADK     R3 K1        ; R3 := "Lotus.Scripts.Libs.AbilitiesLib"
   5 [-]: CALL      R2 2 2       ; R2 := R2(R3)
@@ -44,7 +44,7 @@
 
   1 [-]: EQ        0 R0 K0      ; if R0 ~= 1.000000 then PC := 6
   2 [-]: JMP       6            ; PC := 6
-  3 [-]: LOADK     R1 0         ; R1 := 0.500000
+  3 [-]: CONST     R1 0         ; R1 := 0.500000
   4 [-]: SETUPVAL  R1 U0        ; U82 := R0
   5 [-]: JMP       38           ; PC := 38
   6 [-]: EQ        0 R0 K1      ; if R0 ~= 2.000000 then PC := 11
@@ -69,7 +69,7 @@
  25 [-]: JMP       38           ; PC := 38
  26 [-]: EQ        0 R0 K9      ; if R0 ~= 6.000000 then PC := 31
  27 [-]: JMP       31           ; PC := 31
- 28 [-]: LOADK     R1 0         ; R1 := 0.750000
+ 28 [-]: CONST     R1 0         ; R1 := 0.750000
  29 [-]: SETUPVAL  R1 U0        ; U82 := R0
  30 [-]: JMP       38           ; PC := 38
  31 [-]: EQ        0 R0 K10     ; if R0 ~= 7.000000 then PC := 36
@@ -77,7 +77,7 @@
  33 [-]: LOADK     R1 K11       ; R1 := 0.800000
  34 [-]: SETUPVAL  R1 U0        ; U82 := R0
  35 [-]: JMP       38           ; PC := 38
- 36 [-]: LOADK     R1 1         ; R1 := 1.000000
+ 36 [-]: CONST     R1 1         ; R1 := 1.000000
  37 [-]: SETUPVAL  R1 U0        ; U82 := R0
  38 [-]: RETURN    R0 1         ; return 
 

@@ -50,7 +50,7 @@
  23 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  24 [-]: TEST      R4 0         ; if not R4 then PC := 28
  25 [-]: JMP       28           ; PC := 28
- 26 [-]: LOADK     R4 0         ; R4 := 0.000000
+ 26 [-]: CONST     R4 0         ; R4 := 0.000000
  27 [-]: RETURN    R4 2         ; return R4
  28 [-]: GETGLOBAL R4 K0        ; R4 := 0x7b998233
  29 [-]: GETGLOBAL R5 K8        ; R5 := _T
@@ -69,9 +69,9 @@
  42 [-]: SELF      R5 R0 K12    ; R6 := R0; R5 := R0[0x48d05257]
  43 [-]: GETTABLE  R7 R4 K13    ; R7 := R4["avatar"]
  44 [-]: CALL      R5 3 1       ; R5(R6,R7)
- 45 [-]: LOADK     R5 1         ; R5 := 1.000000
+ 45 [-]: CONST     R5 1         ; R5 := 1.000000
  46 [-]: RETURN    R5 2         ; return R5
- 47 [-]: LOADK     R5 0         ; R5 := 0.000000
+ 47 [-]: CONST     R5 0         ; R5 := 0.000000
  48 [-]: RETURN    R5 2         ; return R5
  49 [-]: RETURN    R0 1         ; return 
 
@@ -96,105 +96,6 @@
   9 [-]: TEST      R4 1         ; if R4 then PC := 16
  10 [-]: JMP       16           ; PC := 16
  11 [-]: SELF      R4 R1 K2     ; R5 := R1; R4 := R1[0x0e46e45b]
- 12 [-]: LOADK     R6 20        ; R6 := 20.000000
+ 12 [-]: CONST     R6 20        ; R6 := 20.000000
  13 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
- 14 [-]: TEST      R4 0         ; if not R4 then PC := 17
- 15 [-]: JMP       17           ; PC := 17
- 16 [-]: RETURN    R0 1         ; return 
- 17 [-]: SELF      R4 R1 K4     ; R5 := R1; R4 := R1[0x09a06f2d]
- 18 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 19 [-]: EQ        1 R4 K6      ; if R4 == 0.000000 then PC := 22
- 20 [-]: JMP       22           ; PC := 22
- 21 [-]: LOADBOOL  R4 0 1       ; R4 := false; PC := 22
- 22 [-]: LOADBOOL  R4 1 0       ; R4 := true
- 23 [-]: LOADNIL   R5 R5        ; R5 := nil
- 24 [-]: LOADBOOL  R6 0 0       ; R6 := false
- 25 [-]: TEST      R4 0         ; if not R4 then PC := 35
- 26 [-]: JMP       35           ; PC := 35
- 27 [-]: GETGLOBAL R7 K7        ; R7 := 0x0ed8b456
- 28 [-]: GETGLOBAL R8 K8        ; R8 := 0x0c5e62f9
- 29 [-]: LOADK     R9 1         ; R9 := 1.000000
- 30 [-]: GETGLOBAL R10 K7       ; R10 := 0x0ed8b456
- 31 [-]: LEN       R10 R10      ; R10 := # R10
- 32 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
- 33 [-]: GETTABLE  R5 R7 R8     ; R5 := R7[R8]
- 34 [-]: JMP       43           ; PC := 43
- 35 [-]: GETGLOBAL R7 K9        ; R7 := 0x781989ca
- 36 [-]: GETGLOBAL R8 K8        ; R8 := 0x0c5e62f9
- 37 [-]: LOADK     R9 1         ; R9 := 1.000000
- 38 [-]: GETGLOBAL R10 K9       ; R10 := 0x781989ca
- 39 [-]: LEN       R10 R10      ; R10 := # R10
- 40 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
- 41 [-]: GETTABLE  R5 R7 R8     ; R5 := R7[R8]
- 42 [-]: LOADBOOL  R6 1 0       ; R6 := true
- 43 [-]: SELF      R7 R1 K10    ; R8 := R1; R7 := R1[0x7027c544]
- 44 [-]: MOVE      R9 R5        ; R9 := R5
- 45 [-]: LOADBOOL  R10 0 0      ; R10 := false
- 46 [-]: LOADK     R11 2        ; R11 := 2.000000
- 47 [-]: LOADK     R12 1        ; R12 := 1.000000
- 48 [-]: MOVE      R13 R6       ; R13 := R6
- 49 [-]: CALL      R7 7 1       ; R7(R8,R9,R10,R11,R12,R13)
- 50 [-]: GETGLOBAL R7 K11       ; R7 := 0xcbd666e1
- 51 [-]: LOADK     R8 0         ; R8 := 0.000000
- 52 [-]: CALL      R7 2 1       ; R7(R8)
- 53 [-]: GETGLOBAL R7 K0        ; R7 := 0x7b998233
- 54 [-]: MOVE      R8 R1        ; R8 := R1
- 55 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 56 [-]: TEST      R7 1         ; if R7 then PC := 99
- 57 [-]: JMP       99           ; PC := 99
- 58 [-]: SELF      R7 R1 K12    ; R8 := R1; R7 := R1[0x16e0b3da]
- 59 [-]: MOVE      R9 R5        ; R9 := R5
- 60 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
- 61 [-]: TEST      R7 0         ; if not R7 then PC := 99
- 62 [-]: JMP       99           ; PC := 99
- 63 [-]: TEST      R4 0         ; if not R4 then PC := 95
- 64 [-]: JMP       95           ; PC := 95
- 65 [-]: GETGLOBAL R7 K0        ; R7 := 0x7b998233
- 66 [-]: MOVE      R8 R2        ; R8 := R2
- 67 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 68 [-]: TEST      R7 1         ; if R7 then PC := 91
- 69 [-]: JMP       91           ; PC := 91
- 70 [-]: SELF      R7 R1 K13    ; R8 := R1; R7 := R1[0x890697e0]
- 71 [-]: SELF      R9 R2 K14    ; R10 := R2; R9 := R2[0xf6ebd926]
- 72 [-]: CALL      R9 2 0       ; R9,... := R9(R10)
- 73 [-]: CALL      R7 0 2       ; R7 := R7(R8,...)
- 74 [-]: LT        0 K15 R7     ; if 5.000000 >= R7 then PC := 91
- 75 [-]: JMP       91           ; PC := 91
- 76 [-]: GETGLOBAL R7 K16       ; R7 := 0x20b7f774
- 77 [-]: SELF      R8 R1 K14    ; R9 := R1; R8 := R1[0xf6ebd926]
- 78 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 79 [-]: SELF      R9 R2 K14    ; R10 := R2; R9 := R2[0xf6ebd926]
- 80 [-]: CALL      R9 2 0       ; R9,... := R9(R10)
- 81 [-]: CALL      R7 0 2       ; R7 := R7(R8,...)
- 82 [-]: SELF      R8 R1 K18    ; R9 := R1; R8 := R1[0x5280b883]
- 83 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 84 [-]: GETTABLE  R8 R8 K17    ; R8 := R8["pitch"]
- 85 [-]: SETTABLE  R7 K17 R8    ; R7["pitch"] := R8
- 86 [-]: SETTABLE  R7 K19 K6    ; R7["bank"] := 0.000000
- 87 [-]: SELF      R8 R1 K20    ; R9 := R1; R8 := R1[0x6cc17595]
- 88 [-]: MOVE      R10 R7       ; R10 := R7
- 89 [-]: CALL      R8 3 1       ; R8(R9,R10)
- 90 [-]: JMP       95           ; PC := 95
- 91 [-]: SELF      R8 R1 K20    ; R9 := R1; R8 := R1[0x6cc17595]
- 92 [-]: SELF      R10 R1 K18   ; R11 := R1; R10 := R1[0x5280b883]
- 93 [-]: CALL      R10 2 0      ; R10,... := R10(R11)
- 94 [-]: CALL      R8 0 1       ; R8(R9,...)
- 95 [-]: GETGLOBAL R8 K11       ; R8 := 0xcbd666e1
- 96 [-]: LOADK     R9 0         ; R9 := 0.000000
- 97 [-]: CALL      R8 2 1       ; R8(R9)
- 98 [-]: JMP       53           ; PC := 53
- 99 [-]: RETURN    R0 1         ; return 
-
-
-; Function #3:
-;
-; Name:            
-; Defined at line: 62
-; #Upvalues:       0
-; #Parameters:     4
-; Is_vararg:       0
-; Max Stack Size:  4
-
-  1 [-]: RETURN    R0 1         ; return 
-
-
+ 14 [-]: TEST      R

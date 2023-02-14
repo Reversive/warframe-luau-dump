@@ -27,8 +27,8 @@
   4 [-]: SELF      R4 R2 K2     ; R5 := R2; R4 := R2[0x96284d62]
   5 [-]: MOVE      R6 R3        ; R6 := R3
   6 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
-  7 [-]: LOADK     R5 0         ; R5 := 0.000000
-  8 [-]: LOADK     R6 0         ; R6 := 0.000000
+  7 [-]: CONST     R5 0         ; R5 := 0.000000
+  8 [-]: CONST     R6 0         ; R6 := 0.000000
   9 [-]: GETGLOBAL R7 K3        ; R7 := 0x5bced4c4
  10 [-]: GETTABLE  R7 R7 K4     ; R7 := R7[0x55f27c30]
  11 [-]: GETTABLE  R8 R4 K1     ; R8 := R4[1.000000]

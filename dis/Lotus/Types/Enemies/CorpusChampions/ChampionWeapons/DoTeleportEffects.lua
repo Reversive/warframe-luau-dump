@@ -42,7 +42,7 @@
  19 [-]: MOVE      R8 R0        ; R8 := R0
  20 [-]: CALL      R2 7 1       ; R2(R3,R4,R5,R6,R7,R8)
  21 [-]: GETGLOBAL R2 K6        ; R2 := 0xcbd666e1
- 22 [-]: LOADK     R3 0         ; R3 := 0.000000
+ 22 [-]: CONST     R3 0         ; R3 := 0.000000
  23 [-]: CALL      R2 2 1       ; R2(R3)
  24 [-]: GETGLOBAL R2 K0        ; R2 := 0x7b998233
  25 [-]: MOVE      R3 R1        ; R3 := R1

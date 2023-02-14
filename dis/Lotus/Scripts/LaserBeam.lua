@@ -78,7 +78,7 @@
   4 [-]: TEST      R1 0         ; if not R1 then PC := 10
   5 [-]: JMP       10           ; PC := 10
   6 [-]: GETGLOBAL R1 K2        ; R1 := 0xcbd666e1
-  7 [-]: LOADK     R2 0         ; R2 := 0.000000
+  7 [-]: CONST     R2 0         ; R2 := 0.000000
   8 [-]: CALL      R1 2 1       ; R1(R2)
   9 [-]: JMP       1            ; PC := 1
  10 [-]: LOADNIL   R1 R2        ; R1 := R2 := nil
@@ -99,7 +99,7 @@
  25 [-]: EQ        0 R4 K5      ; if R4 ~= 0.000000 then PC := 35
  26 [-]: JMP       35           ; PC := 35
  27 [-]: GETGLOBAL R4 K2        ; R4 := 0xcbd666e1
- 28 [-]: LOADK     R5 1         ; R5 := 1.000000
+ 28 [-]: CONST     R5 1         ; R5 := 1.000000
  29 [-]: CALL      R4 2 1       ; R4(R5)
  30 [-]: SELF      R4 R0 K3     ; R5 := R0; R4 := R0[0xc1595bd5]
  31 [-]: GETGLOBAL R6 K4        ; R6 := gSequencerType
@@ -126,7 +126,7 @@
  52 [-]: JMP       44           ; PC := 44
  53 [-]: MOVE      R2 R1        ; R2 := R1
  54 [-]: GETGLOBAL R9 K2        ; R9 := 0xcbd666e1
- 55 [-]: LOADK     R10 0        ; R10 := 0.000000
+ 55 [-]: CONST     R10 0        ; R10 := 0.000000
  56 [-]: CALL      R9 2 1       ; R9(R10)
  57 [-]: JMP       14           ; PC := 14
  58 [-]: RETURN    R0 1         ; return 

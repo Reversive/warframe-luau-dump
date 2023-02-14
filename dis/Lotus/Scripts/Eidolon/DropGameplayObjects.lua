@@ -106,7 +106,7 @@
  83 [-]: TFORLOOP  R2 2         ; R5,R6 :=  R2(R3,R4); if R5 ~= nil then begin PC = 11; R4 := R5 end
  84 [-]: JMP       11           ; PC := 11
  85 [-]: GETGLOBAL R10 K18      ; R10 := 0xcbd666e1
- 86 [-]: LOADK     R11 1        ; R11 := 1.000000
+ 86 [-]: CONST     R11 1        ; R11 := 1.000000
  87 [-]: CALL      R10 2 1      ; R10(R11)
  88 [-]: JMP       1            ; PC := 1
  89 [-]: RETURN    R0 1         ; return 

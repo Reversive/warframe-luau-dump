@@ -7,8 +7,8 @@
 ; Is_vararg:       2
 ; Max Stack Size:  5
 
-  1 [-]: LOADBOOL  R2 0 0       ; R2 := false
-  2 [-]: LOADK     R3 0         ; R3 := 0.000000
+  1 [-]: LOADKB    R2 0 0       ; R2 := false
+  2 [-]: CONST     R3 0         ; R3 := 0.000000
   3 [-]: CLOSURE   R4 0         ; R4 := closure(Function #1)
   4 [-]: MOVE      R0 R0        ; R0 := R0
   5 [-]: MOVE      R0 R3        ; R0 := R3
@@ -83,9 +83,9 @@
  46 [-]: GETUPVAL  R1 U0        ; R1 := U0
  47 [-]: SELF      R1 R1 K14    ; R2 := R1; R1 := R1[0x659d451f]
  48 [-]: GETGLOBAL R3 K15       ; R3 := 0x2fd575cb
- 49 [-]: LOADBOOL  R4 0 0       ; R4 := false
+ 49 [-]: LOADKB    R4 0 0       ; R4 := false
  50 [-]: CALL      R1 4 1       ; R1(R2,R3,R4)
- 51 [-]: LOADBOOL  R1 1 0       ; R1 := true
+ 51 [-]: LOADKB    R1 1 0       ; R1 := true
  52 [-]: SETUPVAL  R1 U2        ; U82 := R2
  53 [-]: RETURN    R0 1         ; return 
 
@@ -123,9 +123,9 @@
  22 [-]: GETUPVAL  R2 U1        ; R2 := U1
  23 [-]: SELF      R2 R2 K2     ; R3 := R2; R2 := R2[0xa2880940]
  24 [-]: CALL      R2 2 1       ; R2(R3)
- 25 [-]: LOADBOOL  R2 0 0       ; R2 := false
+ 25 [-]: LOADKB    R2 0 0       ; R2 := false
  26 [-]: SETUPVAL  R2 U0        ; U82 := R0
- 27 [-]: LOADK     R2 5         ; R2 := 5.000000
+ 27 [-]: CONST     R2 5         ; R2 := 5.000000
  28 [-]: SETUPVAL  R2 U2        ; U82 := R2
  29 [-]: RETURN    R0 1         ; return 
 
@@ -157,7 +157,7 @@
  16 [-]: JMP       26           ; PC := 26
  17 [-]: GETGLOBAL R1 K5        ; R1 := 0x5bced4c4
  18 [-]: GETTABLE  R1 R1 K6     ; R1 := R1[0xb62ecfe0]
- 19 [-]: LOADK     R2 0         ; R2 := 0.000000
+ 19 [-]: CONST     R2 0         ; R2 := 0.000000
  20 [-]: GETUPVAL  R3 U0        ; R3 := U0
  21 [-]: GETGLOBAL R4 K7        ; R4 := 0x67652851
  22 [-]: CALL      R4 1 2       ; R4 := R4()
@@ -165,7 +165,7 @@
  24 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
  25 [-]: SETUPVAL  R1 U0        ; U82 := R0
  26 [-]: GETGLOBAL R1 K8        ; R1 := 0xcbd666e1
- 27 [-]: LOADK     R2 0         ; R2 := 0.000000
+ 27 [-]: CONST     R2 0         ; R2 := 0.000000
  28 [-]: CALL      R1 2 1       ; R1(R2)
  29 [-]: JMP       9            ; PC := 9
  30 [-]: RETURN    R0 1         ; return 

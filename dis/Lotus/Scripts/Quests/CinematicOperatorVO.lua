@@ -34,7 +34,7 @@
  11 [-]: JMP       25           ; PC := 25
  12 [-]: GETTABLE  R3 R1 K4     ; R3 := R1["mOperatorCustomization"]
  13 [-]: SELF      R4 R3 K5     ; R5 := R3; R4 := R3[0xc89bae6f]
- 14 [-]: LOADK     R6 9         ; R6 := 9.000000
+ 14 [-]: CONST     R6 9         ; R6 := 9.000000
  15 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
  16 [-]: GETGLOBAL R5 K3        ; R5 := 0x7b998233
  17 [-]: GETTABLE  R6 R4 K7     ; R6 := R4["mItemType"]
@@ -68,9 +68,9 @@
  45 [-]: LOADK     R7 K13       ; R7 := "ERROR - Could not find operator voice item. No Sound Set will be loaded"
  46 [-]: CALL      R6 2 1       ; R6(R7)
  47 [-]: RETURN    R0 1         ; return 
- 48 [-]: LOADK     R6 1         ; R6 := 1.000000
+ 48 [-]: CONST     R6 1         ; R6 := 1.000000
  49 [-]: LEN       R7 R5        ; R7 := # R5
- 50 [-]: LOADK     R8 1         ; R8 := 1.000000
+ 50 [-]: CONST     R8 1         ; R8 := 1.000000
  51 [-]: FORPREP   R6 56        ; R6 -= R8; PC := 56
  52 [-]: GETTABLE  R10 R5 R9    ; R10 := R5[R9]
  53 [-]: SELF      R10 R10 K14  ; R11 := R10; R10 := R10[0xbd74fac2]

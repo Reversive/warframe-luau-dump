@@ -10,7 +10,7 @@
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x2d0fad09
   2 [-]: LOADK     R1 K1        ; R1 := "Lotus.Interface.LotusUtilities"
   3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: LOADBOOL  R1 0 0       ; R1 := false
+  4 [-]: LOADKB    R1 0 0       ; R1 := false
   5 [-]: CLOSURE   R2 0         ; R2 := closure(Function #1)
   6 [-]: CLOSURE   R3 1         ; R3 := closure(Function #2)
   7 [-]: MOVE      R0 R1        ; R0 := R1
@@ -34,9 +34,9 @@
 
   1 [-]: SELF      R1 R0 K0     ; R2 := R0; R1 := R0[0x42700bd0]
   2 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  3 [-]: LOADK     R2 0         ; R2 := 0.000000
+  3 [-]: CONST     R2 0         ; R2 := 0.000000
   4 [-]: LEN       R3 R1        ; R3 := # R1
-  5 [-]: LOADK     R4 1         ; R4 := 1.000000
+  5 [-]: CONST     R4 1         ; R4 := 1.000000
   6 [-]: FORPREP   R2 23        ; R2 -= R4; PC := 23
   7 [-]: GETGLOBAL R6 K1        ; R6 := 0xd644c2f1
   8 [-]: GETGLOBAL R7 K2        ; R7 := 0x64fb1586
@@ -67,7 +67,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
-  1 [-]: LOADBOOL  R0 1 0       ; R0 := true
+  1 [-]: LOADKB    R0 1 0       ; R0 := true
   2 [-]: SETUPVAL  R0 U0        ; U82 := R0
   3 [-]: RETURN    R0 1         ; return 
 
@@ -83,7 +83,7 @@
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0x76ea806b
   2 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1[0x3f3ae64c]
-  3 [-]: LOADK     R3 0         ; R3 := 0.000000
+  3 [-]: CONST     R3 0         ; R3 := 0.000000
   4 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
   5 [-]: SELF      R1 R1 K2     ; R2 := R1; R1 := R1[0x80563238]
   6 [-]: CALL      R1 2 2       ; R1 := R1(R2)
@@ -97,7 +97,7 @@
  14 [-]: GETTABLE  R3 R3 K6     ; R3 := R3[0xa5a62f78]
  15 [-]: MOVE      R4 R1        ; R4 := R1
  16 [-]: MOVE      R5 R2        ; R5 := R2
- 17 [-]: LOADBOOL  R6 0 0       ; R6 := false
+ 17 [-]: LOADKB    R6 0 0       ; R6 := false
  18 [-]: CALL      R3 4 3       ; R3,R4 := R3(R4,R5,R6)
  19 [-]: GETGLOBAL R5 K7        ; R5 := 0x7b998233
  20 [-]: MOVE      R6 R2        ; R6 := R2
@@ -137,7 +137,7 @@
  54 [-]: MOVE      R8 R0        ; R8 := R0
  55 [-]: CALL      R7 2 0       ; R7,... := R7(R8)
  56 [-]: CALL      R6 0 2       ; R6 := R6(R7,...)
- 57 [-]: LOADK     R7 0         ; R7 := 0.000000
+ 57 [-]: CONST     R7 0         ; R7 := 0.000000
  58 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
  59 [-]: MOVE      R0 R5        ; R0 := R5
  60 [-]: SELF      R5 R2 K19    ; R6 := R2; R5 := R2[0x8a0f9f88]
@@ -154,17 +154,17 @@
  71 [-]: GETGLOBAL R5 K8        ; R5 := 0xd644c2f1
  72 [-]: LOADK     R6 K20       ; R6 := "Changing quest stage, please wait..."
  73 [-]: CALL      R5 2 1       ; R5(R6)
- 74 [-]: LOADBOOL  R5 0 0       ; R5 := false
+ 74 [-]: LOADKB    R5 0 0       ; R5 := false
  75 [-]: SETUPVAL  R5 U2        ; U82 := R2
  76 [-]: GETGLOBAL R5 K21       ; R5 := 0x6c97a788
  77 [-]: GETTABLE  R5 R5 K22    ; R5 := R5[0x3cc30953]
  78 [-]: MOVE      R6 R2        ; R6 := R2
  79 [-]: LT        0 K23 R4     ; if 0.000000 >= R4 then PC := 84
  80 [-]: JMP       84           ; PC := 84
- 81 [-]: LOADK     R7 0         ; R7 := 0.000000
+ 81 [-]: CONST     R7 0         ; R7 := 0.000000
  82 [-]: TEST      R7 1         ; if R7 then PC := 85
  83 [-]: JMP       85           ; PC := 85
- 84 [-]: LOADK     R7 -1        ; R7 := -1.000000
+ 84 [-]: CONST     R7 -1        ; R7 := -1.000000
  85 [-]: LOADK     R8 K24       ; R8 := "OnResponse"
  86 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
  87 [-]: SELF      R6 R5 K25    ; R7 := R5; R6 := R5[0xe4162eed]
@@ -177,11 +177,11 @@
  94 [-]: CALL      R6 2 1       ; R6(R7)
  95 [-]: JMP       89           ; PC := 89
  96 [-]: LOADNIL   R5 R5        ; R5 := nil
- 97 [-]: LOADK     R6 1         ; R6 := 1.000000
+ 97 [-]: CONST     R6 1         ; R6 := 1.000000
  98 [-]: MOVE      R7 R0        ; R7 := R0
- 99 [-]: LOADK     R8 1         ; R8 := 1.000000
+ 99 [-]: CONST     R8 1         ; R8 := 1.000000
 100 [-]: FORPREP   R6 114       ; R6 -= R8; PC := 114
-101 [-]: LOADBOOL  R10 0 0      ; R10 := false
+101 [-]: LOADKB    R10 0 0      ; R10 := false
 102 [-]: SETUPVAL  R10 U2       ; U82 := R2
 103 [-]: SELF      R10 R1 K28   ; R11 := R1; R10 := R1[0x88cfae95]
 104 [-]: SUB       R12 R9 K15   ; R12 := R9 - 1.000000

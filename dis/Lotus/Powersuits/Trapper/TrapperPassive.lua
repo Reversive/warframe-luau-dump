@@ -10,7 +10,7 @@
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x2d0fad09
   2 [-]: LOADK     R1 K1        ; R1 := "Lotus.Scripts.Libs.AbilitiesLib"
   3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: LOADK     R1 0         ; R1 := 0.250000
+  4 [-]: CONST     R1 0         ; R1 := 0.250000
   5 [-]: CLOSURE   R2 0         ; R2 := closure(Function #1)
   6 [-]: MOVE      R0 R1        ; R0 := R1
   7 [-]: SETGLOBAL R2 K2        ; GetPassiveInfo := R2
@@ -78,8 +78,8 @@
  21 [-]: SELF      R2 R1 K5     ; R3 := R1; R2 := R1[0xde321e6f]
  22 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  23 [-]: SELF      R2 R2 K6     ; R3 := R2; R2 := R2[0x5e6704ff]
- 24 [-]: LOADK     R4 29        ; R4 := 29.000000
- 25 [-]: LOADK     R5 2         ; R5 := 2.000000
+ 24 [-]: CONST     R4 30        ; R4 := 30.000000
+ 25 [-]: CONST     R5 3         ; R5 := 3.000000
  26 [-]: GETUPVAL  R6 U1        ; R6 := U1
  27 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
  28 [-]: RETURN    R0 1         ; return 
@@ -117,8 +117,8 @@
  21 [-]: SELF      R2 R1 K5     ; R3 := R1; R2 := R1[0xde321e6f]
  22 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  23 [-]: SELF      R2 R2 K6     ; R3 := R2; R2 := R2[0x12dd9da2]
- 24 [-]: LOADK     R4 29        ; R4 := 29.000000
- 25 [-]: LOADK     R5 2         ; R5 := 2.000000
+ 24 [-]: CONST     R4 30        ; R4 := 30.000000
+ 25 [-]: CONST     R5 3         ; R5 := 3.000000
  26 [-]: GETUPVAL  R6 U1        ; R6 := U1
  27 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
  28 [-]: RETURN    R0 1         ; return 

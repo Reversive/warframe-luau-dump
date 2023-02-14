@@ -47,7 +47,7 @@
   1 [-]: GETUPVAL  R0 U0        ; R0 := U0
   2 [-]: GETTABLE  R0 R0 K0     ; R0 := R0[0xa1df01d6]
   3 [-]: LOADK     R1 K1        ; R1 := "/Lotus/Language/Objectives/SabotageSimpleDestroy"
-  4 [-]: LOADK     R2 2         ; R2 := 2.000000
+  4 [-]: CONST     R2 2         ; R2 := 2.000000
   5 [-]: CALL      R0 3 1       ; R0(R1,R2)
   6 [-]: GETGLOBAL R0 K2        ; R0 := 0xb99426db
   7 [-]: SELF      R0 R0 K3     ; R1 := R0; R0 := R0[0x47901f07]
@@ -62,10 +62,10 @@
  16 [-]: CALL      R1 2 2       ; R1 := R1(R2)
  17 [-]: TEST      R1 0         ; if not R1 then PC := 41
  18 [-]: JMP       41           ; PC := 41
- 19 [-]: LOADK     R1 1         ; R1 := 1.000000
+ 19 [-]: CONST     R1 1         ; R1 := 1.000000
  20 [-]: GETGLOBAL R2 K9        ; R2 := 0xde0a8020
  21 [-]: LEN       R2 R2        ; R2 := # R2
- 22 [-]: LOADK     R3 1         ; R3 := 1.000000
+ 22 [-]: CONST     R3 1         ; R3 := 1.000000
  23 [-]: FORPREP   R1 40        ; R1 -= R3; PC := 40
  24 [-]: GETGLOBAL R5 K7        ; R5 := 0x89326c93
  25 [-]: SELF      R5 R5 K10    ; R6 := R5; R5 := R5[0x05909209]
@@ -89,10 +89,10 @@
  43 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  44 [-]: TEST      R5 0         ; if not R5 then PC := 70
  45 [-]: JMP       70           ; PC := 70
- 46 [-]: LOADK     R5 0         ; R5 := 0.000000
- 47 [-]: LOADK     R6 1         ; R6 := 1.000000
+ 46 [-]: CONST     R5 0         ; R5 := 0.000000
+ 47 [-]: CONST     R6 1         ; R6 := 1.000000
  48 [-]: LEN       R7 R0        ; R7 := # R0
- 49 [-]: LOADK     R8 1         ; R8 := 1.000000
+ 49 [-]: CONST     R8 1         ; R8 := 1.000000
  50 [-]: FORPREP   R6 64        ; R6 -= R8; PC := 64
  51 [-]: GETGLOBAL R10 K15      ; R10 := 0x7b998233
  52 [-]: GETTABLE  R11 R0 R9    ; R11 := R0[R9]
@@ -116,9 +116,9 @@
  70 [-]: GETGLOBAL R10 K2       ; R10 := 0xb99426db
  71 [-]: SELF      R10 R10 K22  ; R11 := R10; R10 := R10[0x5d985c7e]
  72 [-]: GETGLOBAL R12 K23      ; R12 := 0x987a8f47
- 73 [-]: LOADBOOL  R13 0 0      ; R13 := false
- 74 [-]: LOADBOOL  R14 0 0      ; R14 := false
- 75 [-]: LOADK     R15 1        ; R15 := 1.000000
+ 73 [-]: LOADKB    R13 0 0      ; R13 := false
+ 74 [-]: LOADKB    R14 0 0      ; R14 := false
+ 75 [-]: CONST     R15 1        ; R15 := 1.000000
  76 [-]: GETGLOBAL R16 K5       ; R16 := 0x0469f296
  77 [-]: CALL      R16 1 2      ; R16 := R16()
  78 [-]: LOADK     R17 K24      ; R17 := 0.450000
@@ -161,7 +161,7 @@
  24 [-]: JMP       30           ; PC := 30
  25 [-]: GETGLOBAL R4 K7        ; R4 := 0x95bff78d
  26 [-]: SELF      R4 R4 K8     ; R5 := R4; R4 := R4[0xcddc3abb]
- 27 [-]: LOADK     R6 3         ; R6 := 3.000000
+ 27 [-]: CONST     R6 3         ; R6 := 3.000000
  28 [-]: GETGLOBAL R7 K9        ; R7 := 0x2f9b2a12
  29 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
  30 [-]: EQ        0 R3 R2      ; if R3 ~= R2 then PC := 76
@@ -207,7 +207,7 @@
  70 [-]: JMP       76           ; PC := 76
  71 [-]: GETGLOBAL R7 K7        ; R7 := 0x95bff78d
  72 [-]: SELF      R7 R7 K8     ; R8 := R7; R7 := R7[0xcddc3abb]
- 73 [-]: LOADK     R9 3         ; R9 := 3.000000
+ 73 [-]: CONST     R9 3         ; R9 := 3.000000
  74 [-]: GETGLOBAL R10 K18      ; R10 := 0xd89994ac
  75 [-]: CALL      R7 4 1       ; R7(R8,R9,R10)
  76 [-]: RETURN    R0 1         ; return 
@@ -238,9 +238,9 @@
  14 [-]: SELF      R2 R2 K5     ; R3 := R2; R2 := R2[0xfb669000]
  15 [-]: GETGLOBAL R4 K6        ; R4 := 0x7111bccf
  16 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
- 17 [-]: LOADK     R3 1         ; R3 := 1.000000
+ 17 [-]: CONST     R3 1         ; R3 := 1.000000
  18 [-]: LEN       R4 R2        ; R4 := # R2
- 19 [-]: LOADK     R5 1         ; R5 := 1.000000
+ 19 [-]: CONST     R5 1         ; R5 := 1.000000
  20 [-]: FORPREP   R3 30        ; R3 -= R5; PC := 30
  21 [-]: GETGLOBAL R7 K7        ; R7 := 0x7b998233
  22 [-]: GETTABLE  R8 R2 R6     ; R8 := R2[R6]
@@ -263,7 +263,7 @@
  39 [-]: GETUPVAL  R7 U1        ; R7 := U1
  40 [-]: GETTABLE  R7 R7 K10    ; R7 := R7[0xa1df01d6]
  41 [-]: LOADK     R8 K11       ; R8 := "/Lotus/Language/Objectives/SabotageSimpleDestroy"
- 42 [-]: LOADK     R9 2         ; R9 := 2.000000
+ 42 [-]: CONST     R9 2         ; R9 := 2.000000
  43 [-]: CALL      R7 3 1       ; R7(R8,R9)
  44 [-]: RETURN    R0 1         ; return 
 

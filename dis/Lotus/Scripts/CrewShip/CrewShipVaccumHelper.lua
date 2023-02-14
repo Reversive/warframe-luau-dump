@@ -26,7 +26,7 @@
 ; Max Stack Size:  10
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0xcbd666e1
-  2 [-]: LOADK     R2 0         ; R2 := 0.000000
+  2 [-]: CONST     R2 0         ; R2 := 0.000000
   3 [-]: CALL      R1 2 1       ; R1(R2)
   4 [-]: SELF      R1 R0 K1     ; R2 := R0; R1 := R0[0x2b54251b]
   5 [-]: CALL      R1 2 2       ; R1 := R1(R2)
@@ -57,7 +57,7 @@
  30 [-]: LOADK     R4 K9        ; R4 := "CrewshipVaccumHelper : NULL CREWSHIP"
  31 [-]: CALL      R3 2 1       ; R3(R4)
  32 [-]: RETURN    R0 1         ; return 
- 33 [-]: LOADBOOL  R3 0 0       ; R3 := false
+ 33 [-]: LOADKB    R3 0 0       ; R3 := false
  34 [-]: SELF      R4 R0 K10    ; R5 := R0; R4 := R0[0xde89cf48]
  35 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  36 [-]: GETGLOBAL R5 K2        ; R5 := 0x7b998233
@@ -65,7 +65,7 @@
  38 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  39 [-]: TEST      R5 1         ; if R5 then PC := 93
  40 [-]: JMP       93           ; PC := 93
- 41 [-]: LOADBOOL  R5 0 0       ; R5 := false
+ 41 [-]: LOADKB    R5 0 0       ; R5 := false
  42 [-]: GETGLOBAL R6 K2        ; R6 := 0x7b998233
  43 [-]: MOVE      R7 R2        ; R7 := R2
  44 [-]: CALL      R6 2 2       ; R6 := R6(R7)
@@ -89,17 +89,17 @@
  62 [-]: EQ        1 R7 K16     ; if R7 == 2.000000 then PC := 75
  63 [-]: JMP       75           ; PC := 75
  64 [-]: SELF      R7 R1 K17    ; R8 := R1; R7 := R1[0x0e46e45b]
- 65 [-]: LOADK     R9 29        ; R9 := 29.000000
+ 65 [-]: CONST     R9 29        ; R9 := 29.000000
  66 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
  67 [-]: TESTSET   R5 R7 1      ; if R7 then PC := 76 else R5 := R7
  68 [-]: JMP       76           ; PC := 76
  69 [-]: SELF      R7 R1 K17    ; R8 := R1; R7 := R1[0x0e46e45b]
- 70 [-]: LOADK     R9 4         ; R9 := 4.000000
+ 70 [-]: CONST     R9 4         ; R9 := 4.000000
  71 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
  72 [-]: MOVE      R5 R7        ; R5 := R7
  73 [-]: JMP       76           ; PC := 76
- 74 [-]: LOADBOOL  R5 0 1       ; R5 := false; PC := 75
- 75 [-]: LOADBOOL  R5 1 0       ; R5 := true
+ 74 [-]: LOADKB    R5 0 1       ; R5 := false; PC := 75
+ 75 [-]: LOADKB    R5 1 0       ; R5 := true
  76 [-]: EQ        1 R3 R5      ; if R3 == R5 then PC := 88
  77 [-]: JMP       88           ; PC := 88
  78 [-]: TEST      R5 0         ; if not R5 then PC := 85
@@ -114,7 +114,7 @@
  87 [-]: CALL      R7 3 1       ; R7(R8,R9)
  88 [-]: MOVE      R3 R5        ; R3 := R5
  89 [-]: GETGLOBAL R7 K0        ; R7 := 0xcbd666e1
- 90 [-]: LOADK     R8 0         ; R8 := 0.000000
+ 90 [-]: CONST     R8 0         ; R8 := 0.000000
  91 [-]: CALL      R7 2 1       ; R7(R8)
  92 [-]: JMP       36           ; PC := 36
  93 [-]: RETURN    R0 1         ; return 

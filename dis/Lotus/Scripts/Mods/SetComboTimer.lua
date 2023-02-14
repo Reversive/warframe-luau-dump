@@ -24,7 +24,7 @@
   1 [-]: SELF      R4 R1 K0     ; R5 := R1; R4 := R1[0x327f2778]
   2 [-]: CALL      R4 2 2       ; R4 := R4(R5)
   3 [-]: SELF      R5 R4 K1     ; R6 := R4; R5 := R4[0x4e26e41f]
-  4 [-]: LOADBOOL  R7 1 0       ; R7 := true
+  4 [-]: LOADKB    R7 1 0       ; R7 := true
   5 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
   6 [-]: SELF      R6 R4 K2     ; R7 := R4; R6 := R4[0x447837c2]
   7 [-]: MOVE      R8 R5        ; R8 := R5

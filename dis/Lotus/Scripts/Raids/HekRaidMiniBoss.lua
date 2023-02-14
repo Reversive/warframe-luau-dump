@@ -75,7 +75,7 @@
  50 [-]: TEST      R10 1        ; if R10 then PC := 56
  51 [-]: JMP       56           ; PC := 56
  52 [-]: GETGLOBAL R10 K16      ; R10 := 0xcbd666e1
- 53 [-]: LOADK     R11 0        ; R11 := 0.000000
+ 53 [-]: CONST     R11 0        ; R11 := 0.000000
  54 [-]: CALL      R10 2 1      ; R10(R11)
  55 [-]: JMP       47           ; PC := 47
  56 [-]: GETGLOBAL R10 K17      ; R10 := 0x164df846

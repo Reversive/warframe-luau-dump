@@ -28,7 +28,7 @@
   3 [-]: CALL      R2 2 2       ; R2 := R2(R3)
   4 [-]: TEST      R2 0         ; if not R2 then PC := 8
   5 [-]: JMP       8            ; PC := 8
-  6 [-]: LOADBOOL  R2 0 0       ; R2 := false
+  6 [-]: LOADKB    R2 0 0       ; R2 := false
   7 [-]: RETURN    R2 2         ; return R2
   8 [-]: GETGLOBAL R2 K1        ; R2 := 0x55156ff7
   9 [-]: CALL      R2 1 2       ; R2 := R2()
@@ -45,7 +45,7 @@
  20 [-]: GETGLOBAL R3 K5        ; R3 := 0x33bdd652
  21 [-]: GETTABLE  R3 R3 K6     ; R3 := R3[0x9c1f3b5a]
  22 [-]: GETUPVAL  R4 U0        ; R4 := U0
- 23 [-]: LOADK     R5 1         ; R5 := 1.000000
+ 23 [-]: CONST     R5 1         ; R5 := 1.000000
  24 [-]: CALL      R3 3 1       ; R3(R4,R5)
  25 [-]: JMP       10           ; PC := 10
  26 [-]: GETGLOBAL R3 K5        ; R3 := 0x33bdd652
@@ -58,8 +58,8 @@
  33 [-]: GETGLOBAL R4 K8        ; R4 := 0x778e66a1
  34 [-]: LE        1 R4 R3      ; if R4 <= R3 then PC := 37
  35 [-]: JMP       37           ; PC := 37
- 36 [-]: LOADBOOL  R3 0 1       ; R3 := false; PC := 37
- 37 [-]: LOADBOOL  R3 1 0       ; R3 := true
+ 36 [-]: LOADKB    R3 0 1       ; R3 := false; PC := 37
+ 37 [-]: LOADKB    R3 1 0       ; R3 := true
  38 [-]: TEST      R3 0         ; if not R3 then PC := 42
  39 [-]: JMP       42           ; PC := 42
  40 [-]: NEWTABLE  R4 0 0       ; R4 := {}

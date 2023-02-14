@@ -58,7 +58,7 @@
  35 [-]: GETGLOBAL R8 K10       ; R8 := 0xf1ab3843
  36 [-]: GETTABLE  R8 R8 R2     ; R8 := R8[R2]
  37 [-]: SUB       R7 R7 R8     ; R7 := R7 - R8
- 38 [-]: LOADK     R8 0         ; R8 := 0.000000
+ 38 [-]: CONST     R8 0         ; R8 := 0.000000
  39 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
  40 [-]: SELF      R7 R5 K11    ; R8 := R5; R7 := R5[0x57369b8b]
  41 [-]: MOVE      R9 R6        ; R9 := R6

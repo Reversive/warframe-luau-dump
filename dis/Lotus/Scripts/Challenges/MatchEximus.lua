@@ -42,7 +42,7 @@
  19 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  20 [-]: EQ        0 R4 K7      ; if R4 ~= 0.000000 then PC := 24
  21 [-]: JMP       24           ; PC := 24
- 22 [-]: LOADBOOL  R4 0 0       ; R4 := false
+ 22 [-]: LOADKB    R4 0 0       ; R4 := false
  23 [-]: RETURN    R4 2         ; return R4
  24 [-]: GETGLOBAL R4 K3        ; R4 := 0x7b998233
  25 [-]: MOVE      R5 R2        ; R5 := R2
@@ -60,8 +60,8 @@
  37 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  38 [-]: EQ        0 R4 R5      ; if R4 ~= R5 then PC := 41
  39 [-]: JMP       41           ; PC := 41
- 40 [-]: LOADBOOL  R4 0 1       ; R4 := false; PC := 41
- 41 [-]: LOADBOOL  R4 1 0       ; R4 := true
+ 40 [-]: LOADKB    R4 0 1       ; R4 := false; PC := 41
+ 41 [-]: LOADKB    R4 1 0       ; R4 := true
  42 [-]: RETURN    R4 2         ; return R4
  43 [-]: RETURN    R0 1         ; return 
 

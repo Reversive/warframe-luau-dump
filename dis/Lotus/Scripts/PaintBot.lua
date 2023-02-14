@@ -7,9 +7,9 @@
 ; Is_vararg:       2
 ; Max Stack Size:  13
 
-  1 [-]: LOADBOOL  R0 0 0       ; R0 := false
+  1 [-]: LOADKB    R0 0 0       ; R0 := false
   2 [-]: LOADNIL   R1 R2        ; R1 := R2 := nil
-  3 [-]: LOADBOOL  R3 0 0       ; R3 := false
+  3 [-]: LOADKB    R3 0 0       ; R3 := false
   4 [-]: GETGLOBAL R4 K0        ; R4 := 0x2d0fad09
   5 [-]: LOADK     R5 K1        ; R5 := "EE.Interface.Utilities"
   6 [-]: CALL      R4 2 2       ; R4 := R4(R5)
@@ -88,12 +88,12 @@
  11 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
  12 [-]: JMP       34           ; PC := 34
  13 [-]: NEWTABLE  R2 0 0       ; R2 := {}
- 14 [-]: LOADK     R3 1         ; R3 := 1.000000
+ 14 [-]: CONST     R3 1         ; R3 := 1.000000
  15 [-]: GETGLOBAL R4 K2        ; R4 := _T
  16 [-]: GETTABLE  R4 R4 K3     ; R4 := R4["DojoMgr"]
  17 [-]: GETTABLE  R4 R4 K5     ; R4 := R4["TINT_NAMES"]
  18 [-]: LEN       R4 R4        ; R4 := # R4
- 19 [-]: LOADK     R5 1         ; R5 := 1.000000
+ 19 [-]: CONST     R5 1         ; R5 := 1.000000
  20 [-]: FORPREP   R3 27        ; R3 -= R5; PC := 27
  21 [-]: GETGLOBAL R7 K6        ; R7 := 0x33bdd652
  22 [-]: GETTABLE  R7 R7 K7     ; R7 := R7[0x23d5322f]
@@ -133,9 +133,9 @@
  11 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
  12 [-]: JMP       31           ; PC := 31
  13 [-]: NEWTABLE  R2 0 0       ; R2 := {}
- 14 [-]: LOADK     R3 1         ; R3 := 1.000000
- 15 [-]: LOADK     R4 3         ; R4 := 3.000000
- 16 [-]: LOADK     R5 1         ; R5 := 1.000000
+ 14 [-]: CONST     R3 1         ; R3 := 1.000000
+ 15 [-]: CONST     R4 3         ; R4 := 3.000000
+ 16 [-]: CONST     R5 1         ; R5 := 1.000000
  17 [-]: FORPREP   R3 24        ; R3 -= R5; PC := 24
  18 [-]: GETGLOBAL R7 K5        ; R7 := 0x33bdd652
  19 [-]: GETTABLE  R7 R7 K6     ; R7 := R7[0x23d5322f]
@@ -168,7 +168,7 @@
   4 [-]: GETTABLE  R2 R2 K1     ; R2 := R2[0xe0cba3ca]
   5 [-]: LOADK     R3 K2        ; R3 := "/Lotus/Language/Dojo/PaintBotColorsUpdateFailed"
   6 [-]: CALL      R2 2 1       ; R2(R3)
-  7 [-]: LOADBOOL  R2 0 0       ; R2 := false
+  7 [-]: LOADKB    R2 0 0       ; R2 := false
   8 [-]: SETUPVAL  R2 U1        ; U82 := R1
   9 [-]: RETURN    R0 1         ; return 
 
@@ -193,12 +193,12 @@
   9 [-]: MOVE      R3 R1        ; R3 := R1
  10 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  11 [-]: NEWTABLE  R3 0 0       ; R3 := {}
- 12 [-]: LOADK     R4 1         ; R4 := 1.000000
+ 12 [-]: CONST     R4 1         ; R4 := 1.000000
  13 [-]: GETGLOBAL R5 K3        ; R5 := _T
  14 [-]: GETTABLE  R5 R5 K4     ; R5 := R5["DojoMgr"]
  15 [-]: GETTABLE  R5 R5 K5     ; R5 := R5["TINT_NAMES"]
  16 [-]: LEN       R5 R5        ; R5 := # R5
- 17 [-]: LOADK     R6 1         ; R6 := 1.000000
+ 17 [-]: CONST     R6 1         ; R6 := 1.000000
  18 [-]: FORPREP   R4 46        ; R4 -= R6; PC := 46
  19 [-]: TESTSET   R8 R2 1      ; if R2 then PC := 28 else R8 := R2
  20 [-]: JMP       28           ; PC := 28
@@ -207,8 +207,8 @@
  23 [-]: GETTABLE  R9 R9 K7     ; R9 := R9["CustomizationColorPalette_sDefaultColor"]
  24 [-]: EQ        1 R8 R9      ; if R8 == R9 then PC := 27
  25 [-]: JMP       27           ; PC := 27
- 26 [-]: LOADBOOL  R8 0 1       ; R8 := false; PC := 27
- 27 [-]: LOADBOOL  R8 1 0       ; R8 := true
+ 26 [-]: LOADKB    R8 0 1       ; R8 := false; PC := 27
+ 27 [-]: LOADKB    R8 1 0       ; R8 := true
  28 [-]: LOADNIL   R9 R9        ; R9 := nil
  29 [-]: TEST      R8 0         ; if not R8 then PC := 37
  30 [-]: JMP       37           ; PC := 37
@@ -252,9 +252,9 @@
   9 [-]: MOVE      R3 R1        ; R3 := R1
  10 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  11 [-]: NEWTABLE  R3 0 0       ; R3 := {}
- 12 [-]: LOADK     R4 1         ; R4 := 1.000000
- 13 [-]: LOADK     R5 3         ; R5 := 3.000000
- 14 [-]: LOADK     R6 1         ; R6 := 1.000000
+ 12 [-]: CONST     R4 1         ; R4 := 1.000000
+ 13 [-]: CONST     R5 3         ; R5 := 3.000000
+ 14 [-]: CONST     R6 1         ; R6 := 1.000000
  15 [-]: FORPREP   R4 43        ; R4 -= R6; PC := 43
  16 [-]: TESTSET   R8 R2 1      ; if R2 then PC := 25 else R8 := R2
  17 [-]: JMP       25           ; PC := 25
@@ -263,8 +263,8 @@
  20 [-]: GETTABLE  R9 R9 K4     ; R9 := R9["CustomizationColorPalette_sDefaultColor"]
  21 [-]: EQ        1 R8 R9      ; if R8 == R9 then PC := 24
  22 [-]: JMP       24           ; PC := 24
- 23 [-]: LOADBOOL  R8 0 1       ; R8 := false; PC := 24
- 24 [-]: LOADBOOL  R8 1 0       ; R8 := true
+ 23 [-]: LOADKB    R8 0 1       ; R8 := false; PC := 24
+ 24 [-]: LOADKB    R8 1 0       ; R8 := true
  25 [-]: LOADNIL   R9 R9        ; R9 := nil
  26 [-]: TEST      R8 0         ; if not R8 then PC := 34
  27 [-]: JMP       34           ; PC := 34
@@ -409,7 +409,7 @@
 110 [-]: EQ        0 R8 K34     ; if R8 ~= nil then PC := 116
 111 [-]: JMP       116          ; PC := 116
 112 [-]: GETGLOBAL R9 K35       ; R9 := 0xcbd666e1
-113 [-]: LOADK     R10 0        ; R10 := 0.000000
+113 [-]: CONST     R10 0        ; R10 := 0.000000
 114 [-]: CALL      R9 2 1       ; R9(R10)
 115 [-]: JMP       110          ; PC := 110
 116 [-]: LOADNIL   R9 R9        ; R9 := nil
@@ -525,7 +525,7 @@
 226 [-]: CALL      R12 4 1      ; R12(R13,R14,R15)
 227 [-]: GETGLOBAL R12 K8       ; R12 := _T
 228 [-]: SETTABLE  R12 K18 K49  ; R12["PaintBotColorsActive"] := true
-229 [-]: LOADK     R12 20       ; R12 := 20.000000
+229 [-]: CONST     R12 20       ; R12 := 20.000000
 230 [-]: LT        0 K56 R12    ; if 0.000000 >= R12 then PC := 254
 231 [-]: JMP       254          ; PC := 254
 232 [-]: SELF      R13 R11 K20  ; R14 := R11; R13 := R11[0x0803eee1]
@@ -542,7 +542,7 @@
 243 [-]: CALL      R15 3 0      ; R15,... := R15(R16,R17)
 244 [-]: CALL      R13 0 1      ; R13(R14,...)
 245 [-]: GETGLOBAL R13 K35      ; R13 := 0xcbd666e1
-246 [-]: LOADK     R14 0        ; R14 := 0.000000
+246 [-]: CONST     R14 0        ; R14 := 0.000000
 247 [-]: CALL      R13 2 1      ; R13(R14)
 248 [-]: GETGLOBAL R13 K62      ; R13 := 0x67652851
 249 [-]: CALL      R13 1 2      ; R13 := R13()
@@ -589,8 +589,8 @@
 290 [-]: JMP       313          ; PC := 313
 291 [-]: GETUPVAL  R13 U5       ; R13 := U5
 292 [-]: GETTABLE  R13 R13 K65  ; R13 := R13[0x334af2b4]
-293 [-]: LOADBOOL  R14 1 0      ; R14 := true
-294 [-]: LOADBOOL  R15 0 0      ; R15 := false
+293 [-]: LOADKB    R14 1 0      ; R14 := true
+294 [-]: LOADKB    R15 0 0      ; R15 := false
 295 [-]: CALL      R13 3 2      ; R13 := R13(R14,R15)
 296 [-]: TEST      R13 1        ; if R13 then PC := 303
 297 [-]: JMP       303          ; PC := 303
@@ -622,7 +622,7 @@
 323 [-]: TEST      R14 0        ; if not R14 then PC := 329
 324 [-]: JMP       329          ; PC := 329
 325 [-]: GETGLOBAL R14 K35      ; R14 := 0xcbd666e1
-326 [-]: LOADK     R15 0        ; R15 := 0.000000
+326 [-]: CONST     R15 0        ; R15 := 0.000000
 327 [-]: CALL      R14 2 1      ; R14(R15)
 328 [-]: JMP       320          ; PC := 320
 329 [-]: GETUPVAL  R14 U6       ; R14 := U6
@@ -638,7 +638,7 @@
 339 [-]: CALL      R15 2 2      ; R15 := R15(R16)
 340 [-]: TEST      R15 1        ; if R15 then PC := 498
 341 [-]: JMP       498          ; PC := 498
-342 [-]: LOADBOOL  R15 1 0      ; R15 := true
+342 [-]: LOADKB    R15 1 0      ; R15 := true
 343 [-]: SETUPVAL  R15 U7       ; U82 := R7
 344 [-]: NEWTABLE  R15 0 0      ; R15 := {}
 345 [-]: GETGLOBAL R16 K8       ; R16 := _T
@@ -682,7 +682,7 @@
 383 [-]: TEST      R16 0        ; if not R16 then PC := 389
 384 [-]: JMP       389          ; PC := 389
 385 [-]: GETGLOBAL R16 K35      ; R16 := 0xcbd666e1
-386 [-]: LOADK     R17 0        ; R17 := 0.000000
+386 [-]: CONST     R17 0        ; R17 := 0.000000
 387 [-]: CALL      R16 2 1      ; R16(R17)
 388 [-]: JMP       382          ; PC := 382
 389 [-]: GETUPVAL  R16 U0       ; R16 := U0
@@ -704,15 +704,15 @@
 405 [-]: JMP       408          ; PC := 408
 406 [-]: GETTABLE  R16 R6 K83   ; R16 := R6["lights"]
 407 [-]: GETTABLE  R17 R6 K39   ; R17 := R6["pendingLights"]
-408 [-]: LOADBOOL  R18 0 0      ; R18 := false
+408 [-]: LOADKB    R18 0 0      ; R18 := false
 409 [-]: GETGLOBAL R19 K5       ; R19 := 0x7b998233
 410 [-]: MOVE      R20 R17      ; R20 := R17
 411 [-]: CALL      R19 2 2      ; R19 := R19(R20)
 412 [-]: TEST      R19 0        ; if not R19 then PC := 441
 413 [-]: JMP       441          ; PC := 441
-414 [-]: LOADK     R19 1        ; R19 := 1.000000
+414 [-]: CONST     R19 1        ; R19 := 1.000000
 415 [-]: LEN       R20 R15      ; R20 := # R15
-416 [-]: LOADK     R21 1        ; R21 := 1.000000
+416 [-]: CONST     R21 1        ; R21 := 1.000000
 417 [-]: FORPREP   R19 439      ; R19 -= R21; PC := 439
 418 [-]: GETTABLE  R23 R15 R22  ; R23 := R15[R22]
 419 [-]: SELF      R23 R23 K84  ; R24 := R23; R23 := R23[0xa5d5c8f6]
@@ -733,13 +733,13 @@
 434 [-]: CALL      R24 2 2      ; R24 := R24(R25)
 435 [-]: EQ        1 R23 R24    ; if R23 == R24 then PC := 439
 436 [-]: JMP       439          ; PC := 439
-437 [-]: LOADBOOL  R18 1 0      ; R18 := true
+437 [-]: LOADKB    R18 1 0      ; R18 := true
 438 [-]: JMP       456          ; PC := 456
 439 [-]: FORLOOP   R19 418      ; R19 += R21; if R19 <= R20 then begin PC := 418; R22 := R19 end
 440 [-]: JMP       456          ; PC := 456
-441 [-]: LOADK     R23 1        ; R23 := 1.000000
+441 [-]: CONST     R23 1        ; R23 := 1.000000
 442 [-]: LEN       R24 R15      ; R24 := # R15
-443 [-]: LOADK     R25 1        ; R25 := 1.000000
+443 [-]: CONST     R25 1        ; R25 := 1.000000
 444 [-]: FORPREP   R23 455      ; R23 -= R25; PC := 455
 445 [-]: GETTABLE  R27 R15 R26  ; R27 := R15[R26]
 446 [-]: SELF      R27 R27 K84  ; R28 := R27; R27 := R27[0xa5d5c8f6]
@@ -749,12 +749,12 @@
 450 [-]: CALL      R28 2 2      ; R28 := R28(R29)
 451 [-]: EQ        1 R27 R28    ; if R27 == R28 then PC := 455
 452 [-]: JMP       455          ; PC := 455
-453 [-]: LOADBOOL  R18 1 0      ; R18 := true
+453 [-]: LOADKB    R18 1 0      ; R18 := true
 454 [-]: JMP       456          ; PC := 456
 455 [-]: FORLOOP   R23 445      ; R23 += R25; if R23 <= R24 then begin PC := 445; R26 := R23 end
 456 [-]: TEST      R18 0        ; if not R18 then PC := 497
 457 [-]: JMP       497          ; PC := 497
-458 [-]: LOADBOOL  R27 1 0      ; R27 := true
+458 [-]: LOADKB    R27 1 0      ; R27 := true
 459 [-]: SETUPVAL  R27 U10      ; U82 := R10
 460 [-]: GETGLOBAL R27 K8       ; R27 := _T
 461 [-]: GETTABLE  R27 R27 K67  ; R27 := R27["changingDojoLights"]
@@ -779,12 +779,12 @@
 480 [-]: MOVE      R31 R15      ; R31 := R15
 481 [-]: GETUPVAL  R32 U11      ; R32 := U11
 482 [-]: CALL      R27 6 1      ; R27(R28,R29,R30,R31,R32)
-483 [-]: LOADK     R27 0        ; R27 := 0.000000
+483 [-]: CONST     R27 0        ; R27 := 0.000000
 484 [-]: GETUPVAL  R28 U10      ; R28 := U10
 485 [-]: TEST      R28 0        ; if not R28 then PC := 497
 486 [-]: JMP       497          ; PC := 497
 487 [-]: GETGLOBAL R28 K35      ; R28 := 0xcbd666e1
-488 [-]: LOADK     R29 0        ; R29 := 0.000000
+488 [-]: CONST     R29 0        ; R29 := 0.000000
 489 [-]: CALL      R28 2 1      ; R28(R29)
 490 [-]: GETGLOBAL R28 K89      ; R28 := 0xb693b6c1
 491 [-]: CALL      R28 1 2      ; R28 := R28()
@@ -931,9 +931,9 @@
  11 [-]: GETUPVAL  R2 U0        ; R2 := U0
  12 [-]: GETUPVAL  R3 U1        ; R3 := U1
  13 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 14 [-]: LOADK     R3 1         ; R3 := 1.000000
- 15 [-]: LOADK     R4 3         ; R4 := 3.000000
- 16 [-]: LOADK     R5 1         ; R5 := 1.000000
+ 14 [-]: CONST     R3 1         ; R3 := 1.000000
+ 15 [-]: CONST     R4 3         ; R4 := 3.000000
+ 16 [-]: CONST     R5 1         ; R5 := 1.000000
  17 [-]: FORPREP   R3 44        ; R3 -= R5; PC := 44
  18 [-]: GETGLOBAL R7 K5        ; R7 := 0x33bdd652
  19 [-]: GETTABLE  R7 R7 K6     ; R7 := R7[0x23d5322f]
@@ -987,12 +987,12 @@
  67 [-]: GETUPVAL  R8 U4        ; R8 := U4
  68 [-]: GETUPVAL  R9 U1        ; R9 := U1
  69 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 70 [-]: LOADK     R9 1         ; R9 := 1.000000
+ 70 [-]: CONST     R9 1         ; R9 := 1.000000
  71 [-]: GETGLOBAL R10 K0       ; R10 := _T
  72 [-]: GETTABLE  R10 R10 K9   ; R10 := R10["DojoMgr"]
  73 [-]: GETTABLE  R10 R10 K10  ; R10 := R10["TINT_NAMES"]
  74 [-]: LEN       R10 R10      ; R10 := # R10
- 75 [-]: LOADK     R11 1        ; R11 := 1.000000
+ 75 [-]: CONST     R11 1        ; R11 := 1.000000
  76 [-]: FORPREP   R9 103       ; R9 -= R11; PC := 103
  77 [-]: GETGLOBAL R13 K5       ; R13 := 0x33bdd652
  78 [-]: GETTABLE  R13 R13 K6   ; R13 := R13[0x23d5322f]
@@ -1090,7 +1090,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
-  1 [-]: LOADBOOL  R1 0 0       ; R1 := false
+  1 [-]: LOADKB    R1 0 0       ; R1 := false
   2 [-]: SETUPVAL  R1 U0        ; U82 := R0
   3 [-]: SETUPVAL  R0 U1        ; U82 := R1
   4 [-]: RETURN    R0 1         ; return 

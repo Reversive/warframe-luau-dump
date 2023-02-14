@@ -11,7 +11,7 @@
   2 [-]: LOADK     R1 K1        ; R1 := "Lotus.Scripts.Challenges.PvpChallenges.Timed.TimedChallengeKillsCommon"
   3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
   4 [-]: LOADNIL   R1 R1        ; R1 := nil
-  5 [-]: LOADK     R2 2         ; R2 := 2.000000
+  5 [-]: CONST     R2 2         ; R2 := 2.000000
   6 [-]: CLOSURE   R3 0         ; R3 := closure(Function #1)
   7 [-]: MOVE      R0 R1        ; R0 := R1
   8 [-]: MOVE      R0 R0        ; R0 := R0

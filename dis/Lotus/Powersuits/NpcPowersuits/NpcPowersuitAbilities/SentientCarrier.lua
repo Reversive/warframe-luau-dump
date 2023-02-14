@@ -27,7 +27,7 @@
   4 [-]: TEST      R2 0         ; if not R2 then PC := 30
   5 [-]: JMP       30           ; PC := 30
   6 [-]: SELF      R2 R1 K2     ; R3 := R1; R2 := R1[0x26808912]
-  7 [-]: LOADK     R4 25        ; R4 := 25.000000
+  7 [-]: CONST     R4 25        ; R4 := 25.000000
   8 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
   9 [-]: TEST      R2 0         ; if not R2 then PC := 30
  10 [-]: JMP       30           ; PC := 30

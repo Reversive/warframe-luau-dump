@@ -7,7 +7,7 @@
 ; Is_vararg:       2
 ; Max Stack Size:  2
 
-  1 [-]: LOADK     R0 0         ; R0 := 0.000000
+  1 [-]: CONST     R0 0         ; R0 := 0.000000
   2 [-]: CLOSURE   R1 0         ; R1 := closure(Function #1)
   3 [-]: MOVE      R0 R0        ; R0 := R0
   4 [-]: SETGLOBAL R1 K0        ; FortressTurretMonitor := R1
@@ -36,7 +36,7 @@
  11 [-]: CALL      R1 2 2       ; R1 := R1(R2)
  12 [-]: EQ        0 R1 K6      ; if R1 ~= 8.000000 then PC := 16
  13 [-]: JMP       16           ; PC := 16
- 14 [-]: LOADK     R2 1         ; R2 := 1.000000
+ 14 [-]: CONST     R2 1         ; R2 := 1.000000
  15 [-]: SETUPVAL  R2 U0        ; U82 := R0
  16 [-]: LOADNIL   R2 R2        ; R2 := nil
  17 [-]: GETGLOBAL R3 K0        ; R3 := 0x7b998233
@@ -49,7 +49,7 @@
  24 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  25 [-]: MOVE      R2 R3        ; R2 := R3
  26 [-]: GETGLOBAL R3 K8        ; R3 := 0xcbd666e1
- 27 [-]: LOADK     R4 0         ; R4 := 0.000000
+ 27 [-]: CONST     R4 0         ; R4 := 0.000000
  28 [-]: CALL      R3 2 1       ; R3(R4)
  29 [-]: JMP       17           ; PC := 17
  30 [-]: SELF      R3 R2 K9     ; R4 := R2; R3 := R2[0xf2deaf69]
@@ -86,9 +86,9 @@
  61 [-]: SELF      R3 R3 K19    ; R4 := R3; R3 := R3[0xa383de31]
  62 [-]: GETGLOBAL R5 K20       ; R5 := 0x0469f296
  63 [-]: CALL      R5 1 2       ; R5 := R5()
- 64 [-]: LOADK     R6 25        ; R6 := 25.000000
- 65 [-]: LOADK     R7 6         ; R7 := 6.000000
- 66 [-]: LOADK     R8 0         ; R8 := 0.000000
+ 64 [-]: CONST     R6 25        ; R6 := 25.000000
+ 65 [-]: CONST     R7 6         ; R7 := 6.000000
+ 66 [-]: CONST     R8 0         ; R8 := 0.000000
  67 [-]: CALL      R3 6 1       ; R3(R4,R5,R6,R7,R8)
  68 [-]: GETGLOBAL R3 K0        ; R3 := 0x7b998233
  69 [-]: MOVE      R4 R2        ; R4 := R2
@@ -108,7 +108,7 @@
  83 [-]: LOADK     R5 K25       ; R5 := "TriggerPort"
  84 [-]: CALL      R3 3 1       ; R3(R4,R5)
  85 [-]: GETGLOBAL R3 K8        ; R3 := 0xcbd666e1
- 86 [-]: LOADK     R4 2         ; R4 := 2.500000
+ 86 [-]: CONST     R4 2         ; R4 := 2.500000
  87 [-]: CALL      R3 2 1       ; R3(R4)
  88 [-]: GETGLOBAL R3 K2        ; R3 := 0x89326c93
  89 [-]: SELF      R3 R3 K26    ; R4 := R3; R3 := R3[0x29ef273d]

@@ -32,12 +32,12 @@
   9 [-]: JMP       25           ; PC := 25
  10 [-]: SELF      R2 R1 K4     ; R3 := R1; R2 := R1[0x383d2e7d]
  11 [-]: CALL      R2 2 1       ; R2(R3)
- 12 [-]: LOADK     R2 0         ; R2 := 0.000000
+ 12 [-]: CONST     R2 0         ; R2 := 0.000000
  13 [-]: GETGLOBAL R3 K5        ; R3 := 0xadf61563
  14 [-]: LT        0 R2 R3      ; if R2 >= R3 then PC := 23
  15 [-]: JMP       23           ; PC := 23
  16 [-]: GETGLOBAL R3 K6        ; R3 := 0xcbd666e1
- 17 [-]: LOADK     R4 0         ; R4 := 0.000000
+ 17 [-]: CONST     R4 0         ; R4 := 0.000000
  18 [-]: CALL      R3 2 1       ; R3(R4)
  19 [-]: GETGLOBAL R3 K7        ; R3 := 0x67652851
  20 [-]: CALL      R3 1 2       ; R3 := R3()

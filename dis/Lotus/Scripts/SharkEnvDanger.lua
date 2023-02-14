@@ -50,8 +50,8 @@
  23 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
  24 [-]: SELF      R3 R1 K6     ; R4 := R1; R3 := R1[0x5d985c7e]
  25 [-]: GETGLOBAL R5 K7        ; R5 := 0x795156a3
- 26 [-]: LOADBOOL  R6 0 0       ; R6 := false
- 27 [-]: LOADBOOL  R7 0 0       ; R7 := false
+ 26 [-]: LOADKB    R6 0 0       ; R6 := false
+ 27 [-]: LOADKB    R7 0 0       ; R7 := false
  28 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
  29 [-]: RETURN    R0 1         ; return 
 

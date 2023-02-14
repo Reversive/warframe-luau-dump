@@ -38,7 +38,7 @@
   9 [-]: GETGLOBAL R2 K2        ; R2 := _T
  10 [-]: SELF      R3 R1 K4     ; R4 := R1; R3 := R1[0x511d26b8]
  11 [-]: GETGLOBAL R5 K5        ; R5 := 0x98ae9e09
- 12 [-]: LOADBOOL  R6 0 0       ; R6 := false
+ 12 [-]: LOADKB    R6 0 0       ; R6 := false
  13 [-]: CALL      R3 4 2       ; R3 := R3(R4,R5,R6)
  14 [-]: SETTABLE  R2 K3 R3     ; R2["RaidAura"] := R3
  15 [-]: RETURN    R0 1         ; return 
@@ -98,7 +98,7 @@
  43 [-]: GETTABLE  R4 R4 K14    ; R4 := R4["RaidAura"]
  44 [-]: CALL      R2 3 1       ; R2(R3,R4)
  45 [-]: GETGLOBAL R2 K16       ; R2 := 0xcbd666e1
- 46 [-]: LOADK     R3 0         ; R3 := 0.000000
+ 46 [-]: CONST     R3 0         ; R3 := 0.000000
  47 [-]: CALL      R2 2 1       ; R2(R3)
  48 [-]: JMP       21           ; PC := 21
  49 [-]: RETURN    R0 1         ; return 
@@ -118,13 +118,13 @@
   3 [-]: GETGLOBAL R3 K2        ; R3 := gLotusNpcAvatarType
   4 [-]: SELF      R4 R0 K3     ; R5 := R0; R4 := R0[0xd1586535]
   5 [-]: CALL      R4 2 2       ; R4 := R4(R5)
-  6 [-]: LOADK     R5 0         ; R5 := 0.000000
-  7 [-]: LOADK     R6 15        ; R6 := 15.000000
+  6 [-]: CONST     R5 0         ; R5 := 0.000000
+  7 [-]: CONST     R6 15        ; R6 := 15.000000
   8 [-]: CALL      R1 6 2       ; R1 := R1(R2,R3,R4,R5,R6)
   9 [-]: LOADNIL   R2 R2        ; R2 := nil
- 10 [-]: LOADK     R3 1         ; R3 := 1.000000
+ 10 [-]: CONST     R3 1         ; R3 := 1.000000
  11 [-]: LEN       R4 R1        ; R4 := # R1
- 12 [-]: LOADK     R5 1         ; R5 := 1.000000
+ 12 [-]: CONST     R5 1         ; R5 := 1.000000
  13 [-]: FORPREP   R3 26        ; R3 -= R5; PC := 26
  14 [-]: GETTABLE  R7 R1 R6     ; R7 := R1[R6]
  15 [-]: SELF      R7 R7 K4     ; R8 := R7; R7 := R7[0xc9f6a7d7]
@@ -157,12 +157,12 @@
   4 [-]: SELF      R4 R0 K3     ; R5 := R0; R4 := R0[0xd1586535]
   5 [-]: CALL      R4 2 2       ; R4 := R4(R5)
   6 [-]: LOADK     R5 K4        ; R5 := 15.100000
-  7 [-]: LOADK     R6 25        ; R6 := 25.000000
+  7 [-]: CONST     R6 25        ; R6 := 25.000000
   8 [-]: CALL      R1 6 2       ; R1 := R1(R2,R3,R4,R5,R6)
   9 [-]: LOADNIL   R2 R2        ; R2 := nil
- 10 [-]: LOADK     R3 1         ; R3 := 1.000000
+ 10 [-]: CONST     R3 1         ; R3 := 1.000000
  11 [-]: LEN       R4 R1        ; R4 := # R1
- 12 [-]: LOADK     R5 1         ; R5 := 1.000000
+ 12 [-]: CONST     R5 1         ; R5 := 1.000000
  13 [-]: FORPREP   R3 29        ; R3 -= R5; PC := 29
  14 [-]: GETTABLE  R7 R1 R6     ; R7 := R1[R6]
  15 [-]: SELF      R7 R7 K5     ; R8 := R7; R7 := R7[0xc9f6a7d7]

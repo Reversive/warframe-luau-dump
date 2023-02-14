@@ -30,7 +30,7 @@
 ; Max Stack Size:  5
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0xcbd666e1
-  2 [-]: LOADK     R2 0         ; R2 := 0.000000
+  2 [-]: CONST     R2 0         ; R2 := 0.000000
   3 [-]: CALL      R1 2 1       ; R1(R2)
   4 [-]: GETGLOBAL R1 K1        ; R1 := 0x603636ad
   5 [-]: GETGLOBAL R2 K2        ; R2 := 0x1f44bed8
@@ -61,7 +61,7 @@
  30 [-]: GETGLOBAL R3 K12       ; R3 := 0x0469f296
  31 [-]: LOADK     R4 K9        ; R4 := "OnDisable"
  32 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 33 [-]: LOADBOOL  R4 1 0       ; R4 := true
+ 33 [-]: LOADKB    R4 1 0       ; R4 := true
  34 [-]: CALL      R1 4 1       ; R1(R2,R3,R4)
  35 [-]: RETURN    R0 1         ; return 
 
@@ -146,9 +146,9 @@
  49 [-]: GETGLOBAL R5 K13       ; R5 := 0x5ca213a9
  50 [-]: GETGLOBAL R6 K14       ; R6 := 0x52482344
  51 [-]: GETGLOBAL R7 K15       ; R7 := 0xa421af95
- 52 [-]: LOADK     R8 1         ; R8 := 1.000000
- 53 [-]: LOADK     R9 1         ; R9 := 1.000000
- 54 [-]: LOADK     R10 1        ; R10 := 1.000000
+ 52 [-]: CONST     R8 1         ; R8 := 1.000000
+ 53 [-]: CONST     R9 1         ; R9 := 1.000000
+ 54 [-]: CONST     R10 1        ; R10 := 1.000000
  55 [-]: CALL      R7 4 0       ; R7,... := R7(R8,R9,R10)
  56 [-]: CALL      R2 0 1       ; R2(R3,...)
  57 [-]: RETURN    R0 1         ; return 

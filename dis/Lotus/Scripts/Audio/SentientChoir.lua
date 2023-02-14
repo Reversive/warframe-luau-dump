@@ -27,7 +27,7 @@
   2 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0x29ef273d]
   3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
   4 [-]: SELF      R0 R0 K2     ; R1 := R0; R0 := R0[0x09468bd0]
-  5 [-]: LOADBOOL  R2 0 0       ; R2 := false
+  5 [-]: LOADKB    R2 0 0       ; R2 := false
   6 [-]: CALL      R0 3 1       ; R0(R1,R2)
   7 [-]: RETURN    R0 1         ; return 
 
@@ -45,7 +45,7 @@
   2 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0x29ef273d]
   3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
   4 [-]: SELF      R0 R0 K2     ; R1 := R0; R0 := R0[0x09468bd0]
-  5 [-]: LOADBOOL  R2 1 0       ; R2 := true
+  5 [-]: LOADKB    R2 1 0       ; R2 := true
   6 [-]: CALL      R0 3 1       ; R0(R1,R2)
   7 [-]: RETURN    R0 1         ; return 
 

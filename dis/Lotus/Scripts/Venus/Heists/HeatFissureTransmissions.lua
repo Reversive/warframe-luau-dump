@@ -24,10 +24,10 @@
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x89326c93
   2 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0x8b5b1f58]
   3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: LOADBOOL  R1 0 0       ; R1 := false
-  5 [-]: LOADK     R2 1         ; R2 := 1.000000
+  4 [-]: LOADKB    R1 0 0       ; R1 := false
+  5 [-]: CONST     R2 1         ; R2 := 1.000000
   6 [-]: LEN       R3 R0        ; R3 := # R0
-  7 [-]: LOADK     R4 1         ; R4 := 1.000000
+  7 [-]: CONST     R4 1         ; R4 := 1.000000
   8 [-]: FORPREP   R2 17        ; R2 -= R4; PC := 17
   9 [-]: GETTABLE  R6 R0 R5     ; R6 := R0[R5]
  10 [-]: SELF      R6 R6 K2     ; R7 := R6; R6 := R6[0x0866b4bd]
@@ -35,7 +35,7 @@
  12 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
  13 [-]: TEST      R6 0         ; if not R6 then PC := 17
  14 [-]: JMP       17           ; PC := 17
- 15 [-]: LOADBOOL  R1 1 0       ; R1 := true
+ 15 [-]: LOADKB    R1 1 0       ; R1 := true
  16 [-]: JMP       18           ; PC := 18
  17 [-]: FORLOOP   R2 9         ; R2 += R4; if R2 <= R3 then begin PC := 9; R5 := R2 end
  18 [-]: TEST      R1 0         ; if not R1 then PC := 25

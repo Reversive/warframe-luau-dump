@@ -25,12 +25,12 @@
   2 [-]: GETTABLE  R0 R0 K1     ; R0 := R0["TaggedDialog"]
   3 [-]: TEST      R0 1         ; if R0 then PC := 7
   4 [-]: JMP       7            ; PC := 7
-  5 [-]: LOADBOOL  R0 0 0       ; R0 := false
+  5 [-]: LOADKB    R0 0 0       ; R0 := false
   6 [-]: RETURN    R0 2         ; return R0
-  7 [-]: LOADK     R0 1         ; R0 := 1.000000
+  7 [-]: CONST     R0 1         ; R0 := 1.000000
   8 [-]: GETGLOBAL R1 K2        ; R1 := 0x51cb4e17
   9 [-]: LEN       R1 R1        ; R1 := # R1
- 10 [-]: LOADK     R2 1         ; R2 := 1.000000
+ 10 [-]: CONST     R2 1         ; R2 := 1.000000
  11 [-]: FORPREP   R0 35        ; R0 -= R2; PC := 35
  12 [-]: GETGLOBAL R4 K2        ; R4 := 0x51cb4e17
  13 [-]: GETTABLE  R4 R4 R3     ; R4 := R4[R3]
@@ -53,10 +53,10 @@
  30 [-]: CALL      R6 1 2       ; R6 := R6()
  31 [-]: TEST      R6 0         ; if not R6 then PC := 35
  32 [-]: JMP       35           ; PC := 35
- 33 [-]: LOADBOOL  R6 1 0       ; R6 := true
+ 33 [-]: LOADKB    R6 1 0       ; R6 := true
  34 [-]: RETURN    R6 2         ; return R6
  35 [-]: FORLOOP   R0 12        ; R0 += R2; if R0 <= R1 then begin PC := 12; R3 := R0 end
- 36 [-]: LOADBOOL  R6 0 0       ; R6 := false
+ 36 [-]: LOADKB    R6 0 0       ; R6 := false
  37 [-]: RETURN    R6 2         ; return R6
  38 [-]: RETURN    R0 1         ; return 
 

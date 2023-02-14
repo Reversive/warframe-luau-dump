@@ -42,7 +42,7 @@
  11 [-]: TEST      R2 0         ; if not R2 then PC := 17
  12 [-]: JMP       17           ; PC := 17
  13 [-]: GETGLOBAL R2 K4        ; R2 := 0xcbd666e1
- 14 [-]: LOADK     R3 0         ; R3 := 0.000000
+ 14 [-]: CONST     R3 0         ; R3 := 0.000000
  15 [-]: CALL      R2 2 1       ; R2(R3)
  16 [-]: JMP       7            ; PC := 7
  17 [-]: SELF      R2 R0 K3     ; R3 := R0; R2 := R0[0x2b54251b]
@@ -166,7 +166,7 @@
 135 [-]: TEST      R18 0        ; if not R18 then PC := 155
 136 [-]: JMP       155          ; PC := 155
 137 [-]: GETGLOBAL R18 K4       ; R18 := 0xcbd666e1
-138 [-]: LOADK     R19 0        ; R19 := 0.000000
+138 [-]: CONST     R19 0        ; R19 := 0.000000
 139 [-]: CALL      R18 2 1      ; R18(R19)
 140 [-]: GETGLOBAL R18 K2       ; R18 := 0x7b998233
 141 [-]: MOVE      R19 R1       ; R19 := R1
@@ -187,7 +187,7 @@
 156 [-]: MOVE      R20 R11      ; R20 := R11
 157 [-]: CALL      R18 3 1      ; R18(R19,R20)
 158 [-]: SELF      R18 R17 K45  ; R19 := R17; R18 := R17[0x4af1933a]
-159 [-]: LOADK     R20 1        ; R20 := 1.000000
+159 [-]: CONST     R20 1        ; R20 := 1.000000
 160 [-]: SELF      R21 R17 K46  ; R22 := R17; R21 := R17[0xa2356091]
 161 [-]: MOVE      R23 R11      ; R23 := R11
 162 [-]: CALL      R21 3 0      ; R21,... := R21(R22,R23)
@@ -195,10 +195,10 @@
 164 [-]: SELF      R18 R1 K47   ; R19 := R1; R18 := R1[0x1f564532]
 165 [-]: CALL      R18 2 2      ; R18 := R18(R19)
 166 [-]: SELF      R19 R1 K48   ; R20 := R1; R19 := R1[0xdfac277a]
-167 [-]: LOADBOOL  R21 1 0      ; R21 := true
+167 [-]: LOADKB    R21 1 0      ; R21 := true
 168 [-]: CALL      R19 3 1      ; R19(R20,R21)
 169 [-]: GETGLOBAL R19 K4       ; R19 := 0xcbd666e1
-170 [-]: LOADK     R20 0        ; R20 := 0.000000
+170 [-]: CONST     R20 0        ; R20 := 0.000000
 171 [-]: CALL      R19 2 1      ; R19(R20)
 172 [-]: SELF      R19 R1 K48   ; R20 := R1; R19 := R1[0xdfac277a]
 173 [-]: MOVE      R21 R18      ; R21 := R18
@@ -219,8 +219,8 @@
   2 [-]: GETTABLE  R3 R1 K0     ; R3 := R1["playerName"]
   3 [-]: LT        1 R2 R3      ; if R2 < R3 then PC := 6
   4 [-]: JMP       6            ; PC := 6
-  5 [-]: LOADBOOL  R2 0 1       ; R2 := false; PC := 6
-  6 [-]: LOADBOOL  R2 1 0       ; R2 := true
+  5 [-]: LOADKB    R2 0 1       ; R2 := false; PC := 6
+  6 [-]: LOADKB    R2 1 0       ; R2 := true
   7 [-]: RETURN    R2 2         ; return R2
   8 [-]: RETURN    R0 1         ; return 
 

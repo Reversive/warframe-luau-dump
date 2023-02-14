@@ -73,9 +73,9 @@
   4 [-]: TEST      R1 0         ; if not R1 then PC := 7
   5 [-]: JMP       7            ; PC := 7
   6 [-]: RETURN    R0 1         ; return 
-  7 [-]: LOADK     R1 1         ; R1 := 1.000000
+  7 [-]: CONST     R1 1         ; R1 := 1.000000
   8 [-]: LEN       R2 R0        ; R2 := # R0
-  9 [-]: LOADK     R3 1         ; R3 := 1.000000
+  9 [-]: CONST     R3 1         ; R3 := 1.000000
  10 [-]: FORPREP   R1 66        ; R1 -= R3; PC := 66
  11 [-]: GETGLOBAL R5 K0        ; R5 := 0x7b998233
  12 [-]: GETTABLE  R6 R0 R4     ; R6 := R0[R4]
@@ -100,7 +100,7 @@
  31 [-]: JMP       37           ; PC := 37
  32 [-]: GETUPVAL  R5 U0        ; R5 := U0
  33 [-]: GETTABLE  R6 R0 R4     ; R6 := R0[R4]
- 34 [-]: LOADK     R7 0         ; R7 := 0.000000
+ 34 [-]: CONST     R7 0         ; R7 := 0.000000
  35 [-]: CALL      R5 3 1       ; R5(R6,R7)
  36 [-]: JMP       66           ; PC := 66
  37 [-]: GETTABLE  R5 R0 R4     ; R5 := R0[R4]
@@ -151,9 +151,9 @@
   4 [-]: TEST      R1 0         ; if not R1 then PC := 7
   5 [-]: JMP       7            ; PC := 7
   6 [-]: RETURN    R0 1         ; return 
-  7 [-]: LOADK     R1 1         ; R1 := 1.000000
+  7 [-]: CONST     R1 1         ; R1 := 1.000000
   8 [-]: LEN       R2 R0        ; R2 := # R0
-  9 [-]: LOADK     R3 1         ; R3 := 1.000000
+  9 [-]: CONST     R3 1         ; R3 := 1.000000
  10 [-]: FORPREP   R1 66        ; R1 -= R3; PC := 66
  11 [-]: GETGLOBAL R5 K0        ; R5 := 0x7b998233
  12 [-]: GETTABLE  R6 R0 R4     ; R6 := R0[R4]
@@ -178,7 +178,7 @@
  31 [-]: JMP       37           ; PC := 37
  32 [-]: GETUPVAL  R5 U0        ; R5 := U0
  33 [-]: GETTABLE  R6 R0 R4     ; R6 := R0[R4]
- 34 [-]: LOADK     R7 1         ; R7 := 1.000000
+ 34 [-]: CONST     R7 1         ; R7 := 1.000000
  35 [-]: CALL      R5 3 1       ; R5(R6,R7)
  36 [-]: JMP       66           ; PC := 66
  37 [-]: GETTABLE  R5 R0 R4     ; R5 := R0[R4]
@@ -266,7 +266,7 @@
   4 [-]: LOADK     R4 K0        ; R4 := "Day"
   5 [-]: CALL      R3 2 1       ; R3(R4)
   6 [-]: GETUPVAL  R3 U0        ; R3 := U0
-  7 [-]: LOADBOOL  R4 1 0       ; R4 := true
+  7 [-]: LOADKB    R4 1 0       ; R4 := true
   8 [-]: CALL      R3 2 1       ; R3(R4)
   9 [-]: GETUPVAL  R3 U1        ; R3 := U1
  10 [-]: MOVE      R4 R1        ; R4 := R1
@@ -281,7 +281,7 @@
  19 [-]: LOADK     R4 K2        ; R4 := "Night"
  20 [-]: CALL      R3 2 1       ; R3(R4)
  21 [-]: GETUPVAL  R3 U0        ; R3 := U0
- 22 [-]: LOADBOOL  R4 0 0       ; R4 := false
+ 22 [-]: LOADKB    R4 0 0       ; R4 := false
  23 [-]: CALL      R3 2 1       ; R3(R4)
  24 [-]: GETUPVAL  R3 U1        ; R3 := U1
  25 [-]: MOVE      R4 R2        ; R4 := R2
@@ -322,7 +322,7 @@
  19 [-]: SELF      R3 R3 K8     ; R4 := R3; R3 := R3[0xc7fcada9]
  20 [-]: GETUPVAL  R5 U2        ; R5 := U2
  21 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
- 22 [-]: LOADK     R4 10        ; R4 := 10.000000
+ 22 [-]: CONST     R4 10        ; R4 := 10.000000
  23 [-]: GETUPVAL  R5 U3        ; R5 := U3
  24 [-]: LOADK     R6 K9        ; R6 := "Day"
  25 [-]: MOVE      R7 R2        ; R7 := R2
@@ -340,7 +340,7 @@
  37 [-]: MOVE      R6 R4        ; R6 := R4
  38 [-]: CALL      R5 2 1       ; R5(R6)
  39 [-]: GETGLOBAL R5 K10       ; R5 := 0xcbd666e1
- 40 [-]: LOADK     R6 0         ; R6 := 0.000000
+ 40 [-]: CONST     R6 0         ; R6 := 0.000000
  41 [-]: CALL      R5 2 1       ; R5(R6)
  42 [-]: JMP       23           ; PC := 23
  43 [-]: GETGLOBAL R5 K0        ; R5 := 0xd644c2f1

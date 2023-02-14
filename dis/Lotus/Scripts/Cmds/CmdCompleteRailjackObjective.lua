@@ -55,7 +55,7 @@
  28 [-]: TEST      R8 0         ; if not R8 then PC := 116
  29 [-]: JMP       116          ; PC := 116
  30 [-]: SELF      R8 R6 K11    ; R9 := R6; R8 := R6[0xfe9dc265]
- 31 [-]: LOADK     R10 4        ; R10 := 4.000000
+ 31 [-]: CONST     R10 4        ; R10 := 4.000000
  32 [-]: CALL      R8 3 1       ; R8(R9,R10)
  33 [-]: GETGLOBAL R8 K13       ; R8 := 0xd644c2f1
  34 [-]: LOADK     R9 K14       ; R9 := "Completing "
@@ -132,7 +132,7 @@
 105 [-]: TEST      R8 0         ; if not R8 then PC := 116
 106 [-]: JMP       116          ; PC := 116
 107 [-]: SELF      R8 R6 K11    ; R9 := R6; R8 := R6[0xfe9dc265]
-108 [-]: LOADK     R10 4        ; R10 := 4.000000
+108 [-]: CONST     R10 4        ; R10 := 4.000000
 109 [-]: CALL      R8 3 1       ; R8(R9,R10)
 110 [-]: GETGLOBAL R8 K13       ; R8 := 0xd644c2f1
 111 [-]: LOADK     R9 K14       ; R9 := "Completing "

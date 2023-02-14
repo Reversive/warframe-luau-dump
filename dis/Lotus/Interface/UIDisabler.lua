@@ -10,7 +10,7 @@
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x2d0fad09
   2 [-]: LOADK     R1 K1        ; R1 := "EE.Interface.Utilities"
   3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: LOADK     R1 0         ; R1 := 0.000000
+  4 [-]: CONST     R1 0         ; R1 := 0.000000
   5 [-]: CLOSURE   R2 0         ; R2 := closure(Function #1)
   6 [-]: MOVE      R0 R0        ; R0 := R0
   7 [-]: CLOSURE   R3 1         ; R3 := closure(Function #2)
@@ -71,19 +71,19 @@
   5 [-]: GETGLOBAL R2 K1        ; R2 := 0xae91e43b
   6 [-]: SELF      R2 R2 K2     ; R3 := R2; R2 := R2[0x67bc869f]
   7 [-]: LOADK     R4 K3        ; R4 := "MouseCatcherBtn"
-  8 [-]: LOADK     R5 10        ; R5 := 10.000000
-  9 [-]: LOADK     R6 0         ; R6 := 0.000000
+  8 [-]: CONST     R5 10        ; R5 := 10.000000
+  9 [-]: CONST     R6 0         ; R6 := 0.000000
  10 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
  11 [-]: GETGLOBAL R2 K1        ; R2 := 0xae91e43b
  12 [-]: SELF      R2 R2 K2     ; R3 := R2; R2 := R2[0x67bc869f]
  13 [-]: LOADK     R4 K3        ; R4 := "MouseCatcherBtn"
- 14 [-]: LOADK     R5 12        ; R5 := 12.000000
+ 14 [-]: CONST     R5 12        ; R5 := 12.000000
  15 [-]: MOVE      R6 R0        ; R6 := R0
  16 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
  17 [-]: GETGLOBAL R2 K1        ; R2 := 0xae91e43b
  18 [-]: SELF      R2 R2 K2     ; R3 := R2; R2 := R2[0x67bc869f]
  19 [-]: LOADK     R4 K3        ; R4 := "MouseCatcherBtn"
- 20 [-]: LOADK     R5 13        ; R5 := 13.000000
+ 20 [-]: CONST     R5 13        ; R5 := 13.000000
  21 [-]: MOVE      R6 R1        ; R6 := R1
  22 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
  23 [-]: RETURN    R0 1         ; return 
@@ -118,8 +118,8 @@
  18 [-]: JMP       24           ; PC := 24
  19 [-]: SELF      R1 R0 K8     ; R2 := R0; R1 := R0[0xaade900e]
  20 [-]: LOADK     R3 K9        ; R3 := "_root"
- 21 [-]: LOADK     R4 11        ; R4 := 11.000000
- 22 [-]: LOADBOOL  R5 0 0       ; R5 := false
+ 21 [-]: CONST     R4 11        ; R4 := 11.000000
+ 22 [-]: LOADKB    R5 0 0       ; R5 := false
  23 [-]: CALL      R1 5 1       ; R1(R2,R3,R4,R5)
  24 [-]: RETURN    R0 1         ; return 
 
@@ -144,8 +144,8 @@
   9 [-]: JMP       15           ; PC := 15
  10 [-]: SELF      R1 R0 K4     ; R2 := R0; R1 := R0[0xaade900e]
  11 [-]: LOADK     R3 K5        ; R3 := "_root"
- 12 [-]: LOADK     R4 11        ; R4 := 11.000000
- 13 [-]: LOADBOOL  R5 1 0       ; R5 := true
+ 12 [-]: CONST     R4 11        ; R4 := 11.000000
+ 13 [-]: LOADKB    R5 1 0       ; R5 := true
  14 [-]: CALL      R1 5 1       ; R1(R2,R3,R4,R5)
  15 [-]: RETURN    R0 1         ; return 
 
@@ -208,7 +208,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
-  1 [-]: LOADBOOL  R0 1 0       ; R0 := true
+  1 [-]: LOADKB    R0 1 0       ; R0 := true
   2 [-]: RETURN    R0 2         ; return R0
   3 [-]: RETURN    R0 1         ; return 
 
@@ -222,7 +222,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
-  1 [-]: LOADBOOL  R0 1 0       ; R0 := true
+  1 [-]: LOADKB    R0 1 0       ; R0 := true
   2 [-]: RETURN    R0 2         ; return R0
   3 [-]: RETURN    R0 1         ; return 
 
@@ -236,7 +236,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
-  1 [-]: LOADBOOL  R0 1 0       ; R0 := true
+  1 [-]: LOADKB    R0 1 0       ; R0 := true
   2 [-]: RETURN    R0 2         ; return R0
   3 [-]: RETURN    R0 1         ; return 
 
@@ -250,7 +250,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
-  1 [-]: LOADBOOL  R0 1 0       ; R0 := true
+  1 [-]: LOADKB    R0 1 0       ; R0 := true
   2 [-]: RETURN    R0 2         ; return R0
   3 [-]: RETURN    R0 1         ; return 
 
@@ -264,7 +264,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
-  1 [-]: LOADBOOL  R0 1 0       ; R0 := true
+  1 [-]: LOADKB    R0 1 0       ; R0 := true
   2 [-]: RETURN    R0 2         ; return R0
   3 [-]: RETURN    R0 1         ; return 
 
@@ -278,7 +278,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
-  1 [-]: LOADBOOL  R0 1 0       ; R0 := true
+  1 [-]: LOADKB    R0 1 0       ; R0 := true
   2 [-]: RETURN    R0 2         ; return R0
   3 [-]: RETURN    R0 1         ; return 
 
@@ -292,7 +292,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  4
 
-  1 [-]: LOADBOOL  R3 1 0       ; R3 := true
+  1 [-]: LOADKB    R3 1 0       ; R3 := true
   2 [-]: RETURN    R3 2         ; return R3
   3 [-]: RETURN    R0 1         ; return 
 
@@ -306,7 +306,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
-  1 [-]: LOADBOOL  R0 1 0       ; R0 := true
+  1 [-]: LOADKB    R0 1 0       ; R0 := true
   2 [-]: RETURN    R0 2         ; return R0
   3 [-]: RETURN    R0 1         ; return 
 
@@ -320,7 +320,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
-  1 [-]: LOADBOOL  R0 1 0       ; R0 := true
+  1 [-]: LOADKB    R0 1 0       ; R0 := true
   2 [-]: RETURN    R0 2         ; return R0
   3 [-]: RETURN    R0 1         ; return 
 
@@ -334,7 +334,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
-  1 [-]: LOADBOOL  R0 1 0       ; R0 := true
+  1 [-]: LOADKB    R0 1 0       ; R0 := true
   2 [-]: RETURN    R0 2         ; return R0
   3 [-]: RETURN    R0 1         ; return 
 
@@ -372,7 +372,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
-  1 [-]: LOADBOOL  R0 1 0       ; R0 := true
+  1 [-]: LOADKB    R0 1 0       ; R0 := true
   2 [-]: RETURN    R0 2         ; return R0
   3 [-]: RETURN    R0 1         ; return 
 

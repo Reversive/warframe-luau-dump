@@ -11,12 +11,12 @@
   2 [-]: LOADK     R1 K1        ; R1 := "Lotus.Types.Vehicles.Hoverboard.HoverboardAbility.HoverboardAbilityUtil"
   3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
   4 [-]: NEWTABLE  R1 4 0       ; R1 := {}
-  5 [-]: LOADK     R2 1         ; R2 := 1.500000
-  6 [-]: LOADK     R3 3         ; R3 := 3.000000
-  7 [-]: LOADK     R4 4         ; R4 := 4.000000
-  8 [-]: LOADK     R5 5         ; R5 := 5.000000
+  5 [-]: CONST     R2 1         ; R2 := 1.500000
+  6 [-]: CONST     R3 3         ; R3 := 3.000000
+  7 [-]: CONST     R4 4         ; R4 := 4.000000
+  8 [-]: CONST     R5 5         ; R5 := 5.000000
   9 [-]: SETLIST   R1 4 1       ; R1[(1-1)*FPF+i] := R(1+i), 1 <= i <= 4
- 10 [-]: LOADK     R2 1         ; R2 := 1.000000
+ 10 [-]: CONST     R2 1         ; R2 := 1.000000
  11 [-]: LOADNIL   R3 R3        ; R3 := nil
  12 [-]: CLOSURE   R4 0         ; R4 := closure(Function #1)
  13 [-]: MOVE      R0 R1        ; R0 := R1
@@ -50,7 +50,7 @@
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0x42dcc9f5
   2 [-]: MOVE      R2 R0        ; R2 := R0
-  3 [-]: LOADK     R3 1         ; R3 := 1.000000
+  3 [-]: CONST     R3 1         ; R3 := 1.000000
   4 [-]: GETUPVAL  R4 U0        ; R4 := U0
   5 [-]: LEN       R4 R4        ; R4 := # R4
   6 [-]: CALL      R1 4 2       ; R1 := R1(R2,R3,R4)
@@ -108,7 +108,7 @@
  14 [-]: GETUPVAL  R4 U1        ; R4 := U1
  15 [-]: GETUPVAL  R5 U2        ; R5 := U2
  16 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 17 [-]: LOADK     R5 0         ; R5 := 0.000000
+ 17 [-]: CONST     R5 0         ; R5 := 0.000000
  18 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
  19 [-]: GETGLOBAL R2 K5        ; R2 := 0x7b998233
  20 [-]: GETUPVAL  R3 U0        ; R3 := U0
@@ -122,7 +122,7 @@
  28 [-]: GETUPVAL  R4 U1        ; R4 := U1
  29 [-]: GETUPVAL  R5 U2        ; R5 := U2
  30 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 31 [-]: LOADK     R5 0         ; R5 := 0.000000
+ 31 [-]: CONST     R5 0         ; R5 := 0.000000
  32 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
  33 [-]: TEST      R1 1         ; if R1 then PC := 56
  34 [-]: JMP       56           ; PC := 56

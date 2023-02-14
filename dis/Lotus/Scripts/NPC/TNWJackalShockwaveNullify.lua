@@ -33,11 +33,11 @@
  10 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  11 [-]: TEST      R3 1         ; if R3 then PC := 48
  12 [-]: JMP       48           ; PC := 48
- 13 [-]: LOADK     R3 1         ; R3 := 1.000000
+ 13 [-]: CONST     R3 1         ; R3 := 1.000000
  14 [-]: GETGLOBAL R4 K1        ; R4 := _T
  15 [-]: GETTABLE  R4 R4 K2     ; R4 := R4["VesoMoas"]
  16 [-]: LEN       R4 R4        ; R4 := # R4
- 17 [-]: LOADK     R5 1         ; R5 := 1.000000
+ 17 [-]: CONST     R5 1         ; R5 := 1.000000
  18 [-]: FORPREP   R3 47        ; R3 -= R5; PC := 47
  19 [-]: GETGLOBAL R7 K1        ; R7 := _T
  20 [-]: GETTABLE  R7 R7 K2     ; R7 := R7["VesoMoas"]
@@ -60,8 +60,8 @@
  37 [-]: MOVE      R10 R0       ; R10 := R0
  38 [-]: CALL      R8 3 1       ; R8(R9,R10)
  39 [-]: SELF      R8 R7 K13    ; R9 := R7; R8 := R7[0x1586e35e]
- 40 [-]: LOADK     R10 19       ; R10 := 19.000000
- 41 [-]: LOADK     R11 1        ; R11 := 1.000000
+ 40 [-]: CONST     R10 19       ; R10 := 19.000000
+ 41 [-]: CONST     R11 1        ; R11 := 1.000000
  42 [-]: CALL      R8 4 1       ; R8(R9,R10,R11)
  43 [-]: SELF      R8 R1 K14    ; R9 := R1; R8 := R1[0x479483bb]
  44 [-]: MOVE      R10 R7       ; R10 := R7

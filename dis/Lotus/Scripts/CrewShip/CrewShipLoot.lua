@@ -26,7 +26,7 @@
 ; Max Stack Size:  39
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0xcbd666e1
-  2 [-]: LOADK     R1 1         ; R1 := 1.000000
+  2 [-]: CONST     R1 1         ; R1 := 1.000000
   3 [-]: CALL      R0 2 1       ; R0(R1)
   4 [-]: GETGLOBAL R0 K1        ; R0 := _T
   5 [-]: GETTABLE  R0 R0 K2     ; R0 := R0["TeshinMissionActive"]
@@ -39,7 +39,7 @@
  12 [-]: TEST      R0 0         ; if not R0 then PC := 18
  13 [-]: JMP       18           ; PC := 18
  14 [-]: GETGLOBAL R0 K0        ; R0 := 0xcbd666e1
- 15 [-]: LOADK     R1 0         ; R1 := 0.000000
+ 15 [-]: CONST     R1 0         ; R1 := 0.000000
  16 [-]: CALL      R0 2 1       ; R0(R1)
  17 [-]: JMP       9            ; PC := 9
  18 [-]: GETGLOBAL R0 K1        ; R0 := _T
@@ -56,10 +56,10 @@
  29 [-]: MOVE      R3 R0        ; R3 := R0
  30 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
  31 [-]: MOVE      R0 R1        ; R0 := R1
- 32 [-]: LOADK     R1 0         ; R1 := 0.000000
- 33 [-]: LOADK     R2 1         ; R2 := 1.000000
+ 32 [-]: CONST     R1 0         ; R1 := 0.000000
+ 33 [-]: CONST     R2 1         ; R2 := 1.000000
  34 [-]: GETGLOBAL R3 K10       ; R3 := 0x02b447d9
- 35 [-]: LOADK     R4 1         ; R4 := 1.000000
+ 35 [-]: CONST     R4 1         ; R4 := 1.000000
  36 [-]: FORPREP   R2 44        ; R2 -= R4; PC := 44
  37 [-]: GETGLOBAL R6 K7        ; R6 := 0x5bced4c4
  38 [-]: GETTABLE  R6 R6 K11    ; R6 := R6[0x3630e649]
@@ -69,10 +69,10 @@
  42 [-]: JMP       44           ; PC := 44
  43 [-]: ADD       R1 R1 K13    ; R1 := R1 + 1.000000
  44 [-]: FORLOOP   R2 37        ; R2 += R4; if R2 <= R3 then begin PC := 37; R5 := R2 end
- 45 [-]: LOADK     R7 0         ; R7 := 0.000000
- 46 [-]: LOADK     R8 1         ; R8 := 1.000000
+ 45 [-]: CONST     R7 0         ; R7 := 0.000000
+ 46 [-]: CONST     R8 1         ; R8 := 1.000000
  47 [-]: GETGLOBAL R9 K14       ; R9 := 0x99000b32
- 48 [-]: LOADK     R10 1        ; R10 := 1.000000
+ 48 [-]: CONST     R10 1        ; R10 := 1.000000
  49 [-]: FORPREP   R8 57        ; R8 -= R10; PC := 57
  50 [-]: GETGLOBAL R12 K7       ; R12 := 0x5bced4c4
  51 [-]: GETTABLE  R12 R12 K11  ; R12 := R12[0x3630e649]
@@ -82,10 +82,10 @@
  55 [-]: JMP       57           ; PC := 57
  56 [-]: ADD       R7 R7 K13    ; R7 := R7 + 1.000000
  57 [-]: FORLOOP   R8 50        ; R8 += R10; if R8 <= R9 then begin PC := 50; R11 := R8 end
- 58 [-]: LOADK     R13 0        ; R13 := 0.000000
- 59 [-]: LOADK     R14 1        ; R14 := 1.000000
+ 58 [-]: CONST     R13 0        ; R13 := 0.000000
+ 59 [-]: CONST     R14 1        ; R14 := 1.000000
  60 [-]: GETGLOBAL R15 K16      ; R15 := 0x127daba0
- 61 [-]: LOADK     R16 1        ; R16 := 1.000000
+ 61 [-]: CONST     R16 1        ; R16 := 1.000000
  62 [-]: FORPREP   R14 70       ; R14 -= R16; PC := 70
  63 [-]: GETGLOBAL R18 K7       ; R18 := 0x5bced4c4
  64 [-]: GETTABLE  R18 R18 K11  ; R18 := R18[0x3630e649]
@@ -95,10 +95,10 @@
  68 [-]: JMP       70           ; PC := 70
  69 [-]: ADD       R13 R13 K13  ; R13 := R13 + 1.000000
  70 [-]: FORLOOP   R14 63       ; R14 += R16; if R14 <= R15 then begin PC := 63; R17 := R14 end
- 71 [-]: LOADK     R19 0        ; R19 := 0.000000
- 72 [-]: LOADK     R20 1        ; R20 := 1.000000
+ 71 [-]: CONST     R19 0        ; R19 := 0.000000
+ 72 [-]: CONST     R20 1        ; R20 := 1.000000
  73 [-]: GETGLOBAL R21 K18      ; R21 := 0xdda0abca
- 74 [-]: LOADK     R22 1        ; R22 := 1.000000
+ 74 [-]: CONST     R22 1        ; R22 := 1.000000
  75 [-]: FORPREP   R20 83       ; R20 -= R22; PC := 83
  76 [-]: GETGLOBAL R24 K7       ; R24 := 0x5bced4c4
  77 [-]: GETTABLE  R24 R24 K11  ; R24 := R24[0x3630e649]

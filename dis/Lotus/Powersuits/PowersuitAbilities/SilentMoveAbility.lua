@@ -22,7 +22,7 @@
 ; Max Stack Size:  5
 
   1 [-]: SELF      R2 R1 K0     ; R3 := R1; R2 := R1[0x8f87f99a]
-  2 [-]: LOADBOOL  R4 0 0       ; R4 := false
+  2 [-]: LOADKB    R4 0 0       ; R4 := false
   3 [-]: CALL      R2 3 1       ; R2(R3,R4)
   4 [-]: RETURN    R0 1         ; return 
 

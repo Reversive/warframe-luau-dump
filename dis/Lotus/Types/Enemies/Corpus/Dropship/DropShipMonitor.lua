@@ -26,7 +26,7 @@
 ; Max Stack Size:  3
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0xcbd666e1
-  2 [-]: LOADK     R2 1         ; R2 := 1.000000
+  2 [-]: CONST     R2 1         ; R2 := 1.000000
   3 [-]: CALL      R1 2 1       ; R1(R2)
   4 [-]: GETGLOBAL R1 K1        ; R1 := 0x7b998233
   5 [-]: MOVE      R2 R0        ; R2 := R0
@@ -69,7 +69,7 @@
  20 [-]: SELF      R1 R0 K5     ; R2 := R0; R1 := R0[0x014db014]
  21 [-]: SELF      R3 R0 K6     ; R4 := R0; R3 := R0[0xb40c191a]
  22 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 23 [-]: LOADBOOL  R4 0 0       ; R4 := false
+ 23 [-]: LOADKB    R4 0 0       ; R4 := false
  24 [-]: CALL      R1 4 1       ; R1(R2,R3,R4)
  25 [-]: SELF      R1 R0 K7     ; R2 := R0; R1 := R0[0xedb2efd9]
  26 [-]: CALL      R1 2 1       ; R1(R2)
@@ -93,10 +93,10 @@
   6 [-]: SELF      R1 R0 K1     ; R2 := R0; R1 := R0[0xf05afc29]
   7 [-]: CALL      R1 2 1       ; R1(R2)
   8 [-]: GETGLOBAL R1 K2        ; R1 := 0xcbd666e1
-  9 [-]: LOADK     R2 2         ; R2 := 2.000000
+  9 [-]: CONST     R2 2         ; R2 := 2.000000
  10 [-]: CALL      R1 2 1       ; R1(R2)
  11 [-]: SELF      R1 R0 K3     ; R2 := R0; R1 := R0[0x8675004d]
- 12 [-]: LOADBOOL  R3 1 0       ; R3 := true
+ 12 [-]: LOADKB    R3 1 0       ; R3 := true
  13 [-]: CALL      R1 3 1       ; R1(R2,R3)
  14 [-]: GETGLOBAL R1 K2        ; R1 := 0xcbd666e1
  15 [-]: GETGLOBAL R2 K4        ; R2 := 0x21fb1d08
@@ -111,12 +111,12 @@
  24 [-]: TEST      R1 1         ; if R1 then PC := 44
  25 [-]: JMP       44           ; PC := 44
  26 [-]: SELF      R1 R0 K3     ; R2 := R0; R1 := R0[0x8675004d]
- 27 [-]: LOADBOOL  R3 0 0       ; R3 := false
+ 27 [-]: LOADKB    R3 0 0       ; R3 := false
  28 [-]: CALL      R1 3 1       ; R1(R2,R3)
  29 [-]: SELF      R1 R0 K6     ; R2 := R0; R1 := R0[0x014db014]
  30 [-]: SELF      R3 R0 K7     ; R4 := R0; R3 := R0[0xb40c191a]
  31 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 32 [-]: LOADBOOL  R4 0 0       ; R4 := false
+ 32 [-]: LOADKB    R4 0 0       ; R4 := false
  33 [-]: CALL      R1 4 1       ; R1(R2,R3,R4)
  34 [-]: SELF      R1 R0 K8     ; R2 := R0; R1 := R0[0x1ac1655c]
  35 [-]: CALL      R1 2 2       ; R1 := R1(R2)

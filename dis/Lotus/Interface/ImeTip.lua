@@ -67,7 +67,7 @@
   2 [-]: GETTABLE  R1 R1 K0     ; R1 := R1[0x088839fd]
   3 [-]: MOVE      R2 R0        ; R2 := R0
   4 [-]: GETGLOBAL R3 K1        ; R3 := 0xae91e43b
-  5 [-]: LOADBOOL  R4 1 0       ; R4 := true
+  5 [-]: LOADKB    R4 1 0       ; R4 := true
   6 [-]: CALL      R1 4 1       ; R1(R2,R3,R4)
   7 [-]: RETURN    R0 1         ; return 
 
@@ -194,7 +194,7 @@
  28 [-]: CALL      R0 3 1       ; R0(R1,R2)
  29 [-]: GETGLOBAL R0 K1        ; R0 := 0xae91e43b
  30 [-]: SELF      R0 R0 K15    ; R1 := R0; R0 := R0[0x78f32995]
- 31 [-]: LOADBOOL  R2 1 0       ; R2 := true
+ 31 [-]: LOADKB    R2 1 0       ; R2 := true
  32 [-]: CALL      R0 3 1       ; R0(R1,R2)
  33 [-]: RETURN    R0 1         ; return 
 
@@ -251,8 +251,8 @@
  26 [-]: GETTABLE  R2 R2 K8     ; R2 := R2["RadialSolarMapOpen"]
  27 [-]: EQ        1 R2 K9      ; if R2 == true then PC := 30
  28 [-]: JMP       30           ; PC := 30
- 29 [-]: LOADBOOL  R2 0 1       ; R2 := false; PC := 30
- 30 [-]: LOADBOOL  R2 1 0       ; R2 := true
+ 29 [-]: LOADKB    R2 0 1       ; R2 := false; PC := 30
+ 30 [-]: LOADKB    R2 1 0       ; R2 := true
  31 [-]: CALL      R0 3 1       ; R0(R1,R2)
  32 [-]: JMP       42           ; PC := 42
  33 [-]: GETGLOBAL R0 K4        ; R0 := 0xae91e43b
@@ -261,8 +261,8 @@
  36 [-]: GETTABLE  R2 R2 K8     ; R2 := R2["RadialSolarMapOpen"]
  37 [-]: EQ        1 R2 K9      ; if R2 == true then PC := 40
  38 [-]: JMP       40           ; PC := 40
- 39 [-]: LOADBOOL  R2 0 1       ; R2 := false; PC := 40
- 40 [-]: LOADBOOL  R2 1 0       ; R2 := true
+ 39 [-]: LOADKB    R2 0 1       ; R2 := false; PC := 40
+ 40 [-]: LOADKB    R2 1 0       ; R2 := true
  41 [-]: CALL      R0 3 1       ; R0(R1,R2)
  42 [-]: GETUPVAL  R0 U2        ; R0 := U2
  43 [-]: TEST      R0 0         ; if not R0 then PC := 48

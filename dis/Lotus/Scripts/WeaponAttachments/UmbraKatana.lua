@@ -73,9 +73,9 @@
  25 [-]: JMP       35           ; PC := 35
  26 [-]: SELF      R3 R1 K8     ; R4 := R1; R3 := R1[0x659d451f]
  27 [-]: GETGLOBAL R5 K9        ; R5 := 0x5113cbdd
- 28 [-]: LOADBOOL  R6 0 0       ; R6 := false
- 29 [-]: LOADK     R7 0         ; R7 := 0.000000
- 30 [-]: LOADBOOL  R8 0 0       ; R8 := false
+ 28 [-]: LOADKB    R6 0 0       ; R6 := false
+ 29 [-]: CONST     R7 0         ; R7 := 0.000000
+ 30 [-]: LOADKB    R8 0 0       ; R8 := false
  31 [-]: CALL      R3 6 1       ; R3(R4,R5,R6,R7,R8)
  32 [-]: GETUPVAL  R3 U1        ; R3 := U1
  33 [-]: GETTABLE  R3 R3 K10    ; R3 := R3[0xc783d23f]
@@ -84,7 +84,7 @@
  36 [-]: GETGLOBAL R5 K12       ; R5 := 0x0469f296
  37 [-]: LOADK     R6 K13       ; R6 := "UpdateUmbraFx"
  38 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 39 [-]: LOADBOOL  R6 0 0       ; R6 := false
+ 39 [-]: LOADKB    R6 0 0       ; R6 := false
  40 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
  41 [-]: RETURN    R0 1         ; return 
 
@@ -102,7 +102,7 @@
   2 [-]: SELF      R3 R0 K0     ; R4 := R0; R3 := R0[0x5163741e]
   3 [-]: CALL      R3 2 2       ; R3 := R3(R4)
   4 [-]: SELF      R4 R1 K1     ; R5 := R1; R4 := R1[0x93a7101f]
-  5 [-]: LOADK     R6 19        ; R6 := 19.000000
+  5 [-]: CONST     R6 19        ; R6 := 19.000000
   6 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
   7 [-]: TEST      R4 0         ; if not R4 then PC := 23
   8 [-]: JMP       23           ; PC := 23
@@ -219,9 +219,9 @@
  65 [-]: JMP       75           ; PC := 75
  66 [-]: SELF      R5 R0 K19    ; R6 := R0; R5 := R0[0x659d451f]
  67 [-]: GETGLOBAL R7 K20       ; R7 := 0xc537e3c9
- 68 [-]: LOADBOOL  R8 0 0       ; R8 := false
- 69 [-]: LOADK     R9 0         ; R9 := 0.000000
- 70 [-]: LOADBOOL  R10 0 0      ; R10 := false
+ 68 [-]: LOADKB    R8 0 0       ; R8 := false
+ 69 [-]: CONST     R9 0         ; R9 := 0.000000
+ 70 [-]: LOADKB    R10 0 0      ; R10 := false
  71 [-]: CALL      R5 6 1       ; R5(R6,R7,R8,R9,R10)
  72 [-]: GETUPVAL  R5 U3        ; R5 := U3
  73 [-]: GETTABLE  R5 R5 K21    ; R5 := R5[0x35a11f46]
@@ -229,7 +229,7 @@
  75 [-]: SETTABLE  R2 K14 K4    ; R2["mSerial"] := 0.000000
  76 [-]: JMP       81           ; PC := 81
  77 [-]: GETGLOBAL R5 K22       ; R5 := 0xcbd666e1
- 78 [-]: LOADK     R6 0         ; R6 := 0.000000
+ 78 [-]: CONST     R6 0         ; R6 := 0.000000
  79 [-]: CALL      R5 2 1       ; R5(R6)
  80 [-]: JMP       35           ; PC := 35
  81 [-]: RETURN    R0 1         ; return 

@@ -48,10 +48,10 @@
  25 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  26 [-]: TEST      R3 0         ; if not R3 then PC := 46
  27 [-]: JMP       46           ; PC := 46
- 28 [-]: LOADK     R4 1         ; R4 := 1.000000
+ 28 [-]: CONST     R4 1         ; R4 := 1.000000
  29 [-]: GETGLOBAL R5 K6        ; R5 := 0xb4b8c5cb
  30 [-]: LEN       R5 R5        ; R5 := # R5
- 31 [-]: LOADK     R6 1         ; R6 := 1.000000
+ 31 [-]: CONST     R6 1         ; R6 := 1.000000
  32 [-]: FORPREP   R4 44        ; R4 -= R6; PC := 44
  33 [-]: GETGLOBAL R8 K6        ; R8 := 0xb4b8c5cb
  34 [-]: GETTABLE  R8 R8 R7     ; R8 := R8[R7]
@@ -60,16 +60,16 @@
  37 [-]: SELF      R8 R0 K7     ; R9 := R0; R8 := R0[0x659d451f]
  38 [-]: GETGLOBAL R10 K6       ; R10 := 0xb4b8c5cb
  39 [-]: GETTABLE  R10 R10 R7   ; R10 := R10[R7]
- 40 [-]: LOADBOOL  R11 0 0      ; R11 := false
- 41 [-]: LOADK     R12 0        ; R12 := 0.000000
- 42 [-]: LOADBOOL  R13 0 0      ; R13 := false
+ 40 [-]: LOADKB    R11 0 0      ; R11 := false
+ 41 [-]: CONST     R12 0        ; R12 := 0.000000
+ 42 [-]: LOADKB    R13 0 0      ; R13 := false
  43 [-]: CALL      R8 6 1       ; R8(R9,R10,R11,R12,R13)
  44 [-]: FORLOOP   R4 33        ; R4 += R6; if R4 <= R5 then begin PC := 33; R7 := R4 end
  45 [-]: JMP       63           ; PC := 63
- 46 [-]: LOADK     R8 1         ; R8 := 1.000000
+ 46 [-]: CONST     R8 1         ; R8 := 1.000000
  47 [-]: GETGLOBAL R9 K8        ; R9 := 0x95d840bd
  48 [-]: LEN       R9 R9        ; R9 := # R9
- 49 [-]: LOADK     R10 1        ; R10 := 1.000000
+ 49 [-]: CONST     R10 1        ; R10 := 1.000000
  50 [-]: FORPREP   R8 62        ; R8 -= R10; PC := 62
  51 [-]: GETGLOBAL R12 K8       ; R12 := 0x95d840bd
  52 [-]: GETTABLE  R12 R12 R11  ; R12 := R12[R11]
@@ -78,9 +78,9 @@
  55 [-]: SELF      R12 R0 K7    ; R13 := R0; R12 := R0[0x659d451f]
  56 [-]: GETGLOBAL R14 K8       ; R14 := 0x95d840bd
  57 [-]: GETTABLE  R14 R14 R11  ; R14 := R14[R11]
- 58 [-]: LOADBOOL  R15 0 0      ; R15 := false
- 59 [-]: LOADK     R16 0        ; R16 := 0.000000
- 60 [-]: LOADBOOL  R17 0 0      ; R17 := false
+ 58 [-]: LOADKB    R15 0 0      ; R15 := false
+ 59 [-]: CONST     R16 0        ; R16 := 0.000000
+ 60 [-]: LOADKB    R17 0 0      ; R17 := false
  61 [-]: CALL      R12 6 1      ; R12(R13,R14,R15,R16,R17)
  62 [-]: FORLOOP   R8 51        ; R8 += R10; if R8 <= R9 then begin PC := 51; R11 := R8 end
  63 [-]: RETURN    R0 1         ; return 

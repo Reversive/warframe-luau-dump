@@ -13,9 +13,9 @@
   4 [-]: GETGLOBAL R1 K0        ; R1 := 0x2d0fad09
   5 [-]: LOADK     R2 K2        ; R2 := "Lotus.Interface.UIStyleUtilities"
   6 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  7 [-]: LOADBOOL  R2 1 0       ; R2 := true
+  7 [-]: LOADKB    R2 1 0       ; R2 := true
   8 [-]: LOADNIL   R3 R6        ; R3 := R4 := R5 := R6 := nil
-  9 [-]: LOADBOOL  R7 0 0       ; R7 := false
+  9 [-]: LOADKB    R7 0 0       ; R7 := false
  10 [-]: CLOSURE   R8 0         ; R8 := closure(Function #1)
  11 [-]: MOVE      R0 R1        ; R0 := R1
  12 [-]: CLOSURE   R9 1         ; R9 := closure(Function #2)
@@ -63,106 +63,106 @@
 
   1 [-]: GETUPVAL  R0 U0        ; R0 := U0
   2 [-]: GETTABLE  R0 R0 K0     ; R0 := R0[0x5d10207d]
-  3 [-]: LOADK     R1 2         ; R1 := 2.000000
-  4 [-]: LOADBOOL  R2 1 0       ; R2 := true
+  3 [-]: CONST     R1 2         ; R1 := 2.000000
+  4 [-]: LOADKB    R2 1 0       ; R2 := true
   5 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
   6 [-]: GETUPVAL  R1 U0        ; R1 := U0
   7 [-]: GETTABLE  R1 R1 K0     ; R1 := R1[0x5d10207d]
-  8 [-]: LOADK     R2 9         ; R2 := 9.000000
-  9 [-]: LOADBOOL  R3 1 0       ; R3 := true
+  8 [-]: CONST     R2 9         ; R2 := 9.000000
+  9 [-]: LOADKB    R3 1 0       ; R3 := true
  10 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
  11 [-]: GETUPVAL  R2 U0        ; R2 := U0
  12 [-]: GETTABLE  R2 R2 K0     ; R2 := R2[0x5d10207d]
- 13 [-]: LOADK     R3 6         ; R3 := 6.000000
- 14 [-]: LOADBOOL  R4 1 0       ; R4 := true
+ 13 [-]: CONST     R3 6         ; R3 := 6.000000
+ 14 [-]: LOADKB    R4 1 0       ; R4 := true
  15 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
  16 [-]: GETUPVAL  R3 U0        ; R3 := U0
  17 [-]: GETTABLE  R3 R3 K0     ; R3 := R3[0x5d10207d]
- 18 [-]: LOADK     R4 12        ; R4 := 12.000000
- 19 [-]: LOADBOOL  R5 1 0       ; R5 := true
+ 18 [-]: CONST     R4 12        ; R4 := 12.000000
+ 19 [-]: LOADKB    R5 1 0       ; R5 := true
  20 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
  21 [-]: GETGLOBAL R4 K2        ; R4 := 0xae91e43b
  22 [-]: SELF      R4 R4 K3     ; R5 := R4; R4 := R4[0x67bc869f]
  23 [-]: LOADK     R6 K4        ; R6 := "Header"
- 24 [-]: LOADK     R7 36        ; R7 := 36.000000
+ 24 [-]: CONST     R7 36        ; R7 := 36.000000
  25 [-]: MOVE      R8 R3        ; R8 := R3
  26 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
  27 [-]: GETGLOBAL R4 K2        ; R4 := 0xae91e43b
  28 [-]: SELF      R4 R4 K3     ; R5 := R4; R4 := R4[0x67bc869f]
  29 [-]: LOADK     R6 K5        ; R6 := "Description"
- 30 [-]: LOADK     R7 36        ; R7 := 36.000000
+ 30 [-]: CONST     R7 36        ; R7 := 36.000000
  31 [-]: MOVE      R8 R2        ; R8 := R2
  32 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
  33 [-]: GETGLOBAL R4 K2        ; R4 := 0xae91e43b
  34 [-]: SELF      R4 R4 K3     ; R5 := R4; R4 := R4[0x67bc869f]
  35 [-]: LOADK     R6 K6        ; R6 := "WarningWidget.IconAnim"
- 36 [-]: LOADK     R7 9         ; R7 := 9.000000
+ 36 [-]: CONST     R7 9         ; R7 := 9.000000
  37 [-]: MOVE      R8 R3        ; R8 := R3
  38 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
  39 [-]: GETGLOBAL R4 K2        ; R4 := 0xae91e43b
  40 [-]: SELF      R4 R4 K3     ; R5 := R4; R4 := R4[0x67bc869f]
  41 [-]: LOADK     R6 K7        ; R6 := "WarningWidget.Arrows"
- 42 [-]: LOADK     R7 9         ; R7 := 9.000000
+ 42 [-]: CONST     R7 9         ; R7 := 9.000000
  43 [-]: MOVE      R8 R3        ; R8 := R3
  44 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
  45 [-]: GETGLOBAL R4 K2        ; R4 := 0xae91e43b
  46 [-]: SELF      R4 R4 K3     ; R5 := R4; R4 := R4[0x67bc869f]
  47 [-]: LOADK     R6 K8        ; R6 := "WarningWidget.Lines"
- 48 [-]: LOADK     R7 9         ; R7 := 9.000000
+ 48 [-]: CONST     R7 9         ; R7 := 9.000000
  49 [-]: MOVE      R8 R1        ; R8 := R1
  50 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
  51 [-]: GETGLOBAL R4 K2        ; R4 := 0xae91e43b
  52 [-]: SELF      R4 R4 K3     ; R5 := R4; R4 := R4[0x67bc869f]
  53 [-]: LOADK     R6 K9        ; R6 := "WarningWidget.CrossingLinesAnim"
- 54 [-]: LOADK     R7 9         ; R7 := 9.000000
+ 54 [-]: CONST     R7 9         ; R7 := 9.000000
  55 [-]: MOVE      R8 R1        ; R8 := R1
  56 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
  57 [-]: GETGLOBAL R4 K2        ; R4 := 0xae91e43b
  58 [-]: SELF      R4 R4 K3     ; R5 := R4; R4 := R4[0x67bc869f]
  59 [-]: LOADK     R6 K10       ; R6 := "WarningWidget.MedDiamondBigStroke.Backer"
- 60 [-]: LOADK     R7 9         ; R7 := 9.000000
+ 60 [-]: CONST     R7 9         ; R7 := 9.000000
  61 [-]: MOVE      R8 R0        ; R8 := R0
  62 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
  63 [-]: GETGLOBAL R4 K2        ; R4 := 0xae91e43b
  64 [-]: SELF      R4 R4 K3     ; R5 := R4; R4 := R4[0x67bc869f]
  65 [-]: LOADK     R6 K11       ; R6 := "WarningWidget.MedDiamondBigStroke.Stroke"
- 66 [-]: LOADK     R7 9         ; R7 := 9.000000
+ 66 [-]: CONST     R7 9         ; R7 := 9.000000
  67 [-]: MOVE      R8 R3        ; R8 := R3
  68 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
  69 [-]: GETGLOBAL R4 K2        ; R4 := 0xae91e43b
  70 [-]: SELF      R4 R4 K3     ; R5 := R4; R4 := R4[0x67bc869f]
  71 [-]: LOADK     R6 K12       ; R6 := "WarningWidget.MedDiamondThinStroke.Backer"
- 72 [-]: LOADK     R7 9         ; R7 := 9.000000
+ 72 [-]: CONST     R7 9         ; R7 := 9.000000
  73 [-]: MOVE      R8 R0        ; R8 := R0
  74 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
  75 [-]: GETGLOBAL R4 K2        ; R4 := 0xae91e43b
  76 [-]: SELF      R4 R4 K3     ; R5 := R4; R4 := R4[0x67bc869f]
  77 [-]: LOADK     R6 K13       ; R6 := "WarningWidget.MedDiamondThinStroke.Stroke"
- 78 [-]: LOADK     R7 9         ; R7 := 9.000000
+ 78 [-]: CONST     R7 9         ; R7 := 9.000000
  79 [-]: MOVE      R8 R3        ; R8 := R3
  80 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
  81 [-]: GETGLOBAL R4 K2        ; R4 := 0xae91e43b
  82 [-]: SELF      R4 R4 K3     ; R5 := R4; R4 := R4[0x67bc869f]
  83 [-]: LOADK     R6 K14       ; R6 := "WarningWidget.LargeDiamondInnerBacker.DiamondBacker"
- 84 [-]: LOADK     R7 9         ; R7 := 9.000000
+ 84 [-]: CONST     R7 9         ; R7 := 9.000000
  85 [-]: MOVE      R8 R0        ; R8 := R0
  86 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
  87 [-]: GETGLOBAL R4 K2        ; R4 := 0xae91e43b
  88 [-]: SELF      R4 R4 K3     ; R5 := R4; R4 := R4[0x67bc869f]
  89 [-]: LOADK     R6 K15       ; R6 := "WarningWidget.LargeDiamondInnerBorder.Diamond"
- 90 [-]: LOADK     R7 9         ; R7 := 9.000000
+ 90 [-]: CONST     R7 9         ; R7 := 9.000000
  91 [-]: MOVE      R8 R3        ; R8 := R3
  92 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
  93 [-]: GETGLOBAL R4 K2        ; R4 := 0xae91e43b
  94 [-]: SELF      R4 R4 K3     ; R5 := R4; R4 := R4[0x67bc869f]
  95 [-]: LOADK     R6 K16       ; R6 := "WarningWidget.LargeDiamondOuterBacker.DiamondBacker"
- 96 [-]: LOADK     R7 9         ; R7 := 9.000000
+ 96 [-]: CONST     R7 9         ; R7 := 9.000000
  97 [-]: MOVE      R8 R0        ; R8 := R0
  98 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
  99 [-]: GETGLOBAL R4 K2        ; R4 := 0xae91e43b
 100 [-]: SELF      R4 R4 K3     ; R5 := R4; R4 := R4[0x67bc869f]
 101 [-]: LOADK     R6 K17       ; R6 := "WarningWidget.LargeDiamondOuterBorder.Diamond"
-102 [-]: LOADK     R7 9         ; R7 := 9.000000
+102 [-]: CONST     R7 9         ; R7 := 9.000000
 103 [-]: MOVE      R8 R3        ; R8 := R3
 104 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
 105 [-]: RETURN    R0 1         ; return 
@@ -198,7 +198,7 @@
  19 [-]: GETGLOBAL R2 K11       ; R2 := 0xae91e43b
  20 [-]: MOVE      R3 R0        ; R3 := R0
  21 [-]: GETGLOBAL R4 K12       ; R4 := 0xcd0165a3
- 22 [-]: LOADK     R5 1         ; R5 := 1.000000
+ 22 [-]: CONST     R5 1         ; R5 := 1.000000
  23 [-]: CALL      R4 2 0       ; R4,... := R4(R5)
  24 [-]: CALL      R1 0 1       ; R1(R2,...)
  25 [-]: RETURN    R0 1         ; return 
@@ -266,7 +266,7 @@
  36 [-]: GETGLOBAL R1 K15       ; R1 := 0x3d7ea73b
  37 [-]: CALL      R0 2 2       ; R0 := R0(R1)
  38 [-]: SETUPVAL  R0 U5        ; U82 := R5
- 39 [-]: LOADBOOL  R0 1 0       ; R0 := true
+ 39 [-]: LOADKB    R0 1 0       ; R0 := true
  40 [-]: SETUPVAL  R0 U6        ; U82 := R6
  41 [-]: RETURN    R0 1         ; return 
 
@@ -287,7 +287,7 @@
   5 [-]: JMP       10           ; PC := 10
   6 [-]: GETUPVAL  R0 U0        ; R0 := U0
   7 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0x6cf1e476]
-  8 [-]: LOADBOOL  R2 1 0       ; R2 := true
+  8 [-]: LOADKB    R2 1 0       ; R2 := true
   9 [-]: CALL      R0 3 1       ; R0(R1,R2)
  10 [-]: GETUPVAL  R0 U1        ; R0 := U1
  11 [-]: GETTABLE  R0 R0 K2     ; R0 := R0[0x659d451f]
@@ -348,11 +348,11 @@
  17 [-]: CALL      R0 2 2       ; R0 := R0(R1)
  18 [-]: LT        1 K3 R0      ; if 0.001000 < R0 then PC := 21
  19 [-]: JMP       21           ; PC := 21
- 20 [-]: LOADBOOL  R0 0 1       ; R0 := false; PC := 21
- 21 [-]: LOADBOOL  R0 1 0       ; R0 := true
+ 20 [-]: LOADKB    R0 0 1       ; R0 := false; PC := 21
+ 21 [-]: LOADKB    R0 1 0       ; R0 := true
  22 [-]: TEST      R0 1         ; if R0 then PC := 29
  23 [-]: JMP       29           ; PC := 29
- 24 [-]: LOADBOOL  R1 0 0       ; R1 := false
+ 24 [-]: LOADKB    R1 0 0       ; R1 := false
  25 [-]: SETUPVAL  R1 U2        ; U82 := R2
  26 [-]: GETGLOBAL R1 K1        ; R1 := 0xae91e43b
  27 [-]: SELF      R1 R1 K4     ; R2 := R1; R1 := R1[0x32302b4a]
@@ -384,13 +384,13 @@
   5 [-]: GETGLOBAL R6 K1        ; R6 := 0xae91e43b
   6 [-]: SELF      R6 R6 K2     ; R7 := R6; R6 := R6[0x67bc869f]
   7 [-]: LOADK     R8 K3        ; R8 := "BackgroundTexture"
-  8 [-]: LOADK     R9 12        ; R9 := 12.000000
+  8 [-]: CONST     R9 12        ; R9 := 12.000000
   9 [-]: MOVE      R10 R4       ; R10 := R4
  10 [-]: CALL      R6 5 1       ; R6(R7,R8,R9,R10)
  11 [-]: GETGLOBAL R6 K1        ; R6 := 0xae91e43b
  12 [-]: SELF      R6 R6 K2     ; R7 := R6; R6 := R6[0x67bc869f]
  13 [-]: LOADK     R8 K3        ; R8 := "BackgroundTexture"
- 14 [-]: LOADK     R9 13        ; R9 := 13.000000
+ 14 [-]: CONST     R9 13        ; R9 := 13.000000
  15 [-]: MOVE      R10 R5       ; R10 := R5
  16 [-]: CALL      R6 5 1       ; R6(R7,R8,R9,R10)
  17 [-]: RETURN    R0 1         ; return 
@@ -418,7 +418,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
-  1 [-]: LOADBOOL  R0 1 0       ; R0 := true
+  1 [-]: LOADKB    R0 1 0       ; R0 := true
   2 [-]: RETURN    R0 2         ; return R0
   3 [-]: RETURN    R0 1         ; return 
 

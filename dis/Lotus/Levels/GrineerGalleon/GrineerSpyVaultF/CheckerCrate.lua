@@ -140,14 +140,14 @@
  14 [-]: LOADK     R4 K7        ; R4 := "TriggerPort"
  15 [-]: CALL      R2 3 1       ; R2(R3,R4)
  16 [-]: GETGLOBAL R2 K8        ; R2 := 0xcbd666e1
- 17 [-]: LOADK     R3 2         ; R3 := 2.500000
+ 17 [-]: CONST     R3 2         ; R3 := 2.500000
  18 [-]: CALL      R2 2 1       ; R2(R3)
  19 [-]: GETGLOBAL R2 K9        ; R2 := 0xe2776db0
  20 [-]: SELF      R2 R2 K6     ; R3 := R2; R2 := R2[0x8eb2112d]
  21 [-]: LOADK     R4 K7        ; R4 := "TriggerPort"
  22 [-]: CALL      R2 3 1       ; R2(R3,R4)
  23 [-]: GETGLOBAL R2 K8        ; R2 := 0xcbd666e1
- 24 [-]: LOADK     R3 0         ; R3 := 0.000000
+ 24 [-]: CONST     R3 0         ; R3 := 0.000000
  25 [-]: CALL      R2 2 1       ; R2(R3)
  26 [-]: RETURN    R0 1         ; return 
 
@@ -177,14 +177,14 @@
  14 [-]: LOADK     R4 K7        ; R4 := "TriggerPort"
  15 [-]: CALL      R2 3 1       ; R2(R3,R4)
  16 [-]: GETGLOBAL R2 K8        ; R2 := 0xcbd666e1
- 17 [-]: LOADK     R3 2         ; R3 := 2.500000
+ 17 [-]: CONST     R3 2         ; R3 := 2.500000
  18 [-]: CALL      R2 2 1       ; R2(R3)
  19 [-]: GETGLOBAL R2 K9        ; R2 := 0xe2776db0
  20 [-]: SELF      R2 R2 K6     ; R3 := R2; R2 := R2[0x8eb2112d]
  21 [-]: LOADK     R4 K7        ; R4 := "TriggerPort"
  22 [-]: CALL      R2 3 1       ; R2(R3,R4)
  23 [-]: GETGLOBAL R2 K8        ; R2 := 0xcbd666e1
- 24 [-]: LOADK     R3 0         ; R3 := 0.000000
+ 24 [-]: CONST     R3 0         ; R3 := 0.000000
  25 [-]: CALL      R2 2 1       ; R2(R3)
  26 [-]: RETURN    R0 1         ; return 
 
@@ -219,14 +219,14 @@
  19 [-]: LOADK     R4 K8        ; R4 := "Open"
  20 [-]: CALL      R2 3 1       ; R2(R3,R4)
  21 [-]: GETGLOBAL R2 K9        ; R2 := 0xcbd666e1
- 22 [-]: LOADK     R3 2         ; R3 := 2.500000
+ 22 [-]: CONST     R3 2         ; R3 := 2.500000
  23 [-]: CALL      R2 2 1       ; R2(R3)
  24 [-]: GETGLOBAL R2 K6        ; R2 := 0x891fcb87
  25 [-]: SELF      R2 R2 K7     ; R3 := R2; R2 := R2[0x8eb2112d]
  26 [-]: LOADK     R4 K10       ; R4 := "Close"
  27 [-]: CALL      R2 3 1       ; R2(R3,R4)
  28 [-]: GETGLOBAL R2 K9        ; R2 := 0xcbd666e1
- 29 [-]: LOADK     R3 0         ; R3 := 0.000000
+ 29 [-]: CONST     R3 0         ; R3 := 0.000000
  30 [-]: CALL      R2 2 1       ; R2(R3)
  31 [-]: RETURN    R0 1         ; return 
 

@@ -12,7 +12,7 @@
   3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
   4 [-]: CLOSURE   R1 0         ; R1 := closure(Function #1)
   5 [-]: CLOSURE   R2 1         ; R2 := closure(Function #2)
-  6 [-]: LOADBOOL  R3 0 0       ; R3 := false
+  6 [-]: LOADKB    R3 0 0       ; R3 := false
   7 [-]: CLOSURE   R4 2         ; R4 := closure(Function #3)
   8 [-]: MOVE      R0 R3        ; R0 := R3
   9 [-]: MOVE      R0 R1        ; R0 := R1
@@ -129,7 +129,7 @@
   3 [-]: JMP       28           ; PC := 28
   4 [-]: GETUPVAL  R0 U1        ; R0 := U1
   5 [-]: CALL      R0 1 1       ; R0()
-  6 [-]: LOADBOOL  R0 1 0       ; R0 := true
+  6 [-]: LOADKB    R0 1 0       ; R0 := true
   7 [-]: SETUPVAL  R0 U0        ; U82 := R0
   8 [-]: GETGLOBAL R0 K0        ; R0 := 0x89326c93
   9 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0x18d05d30]
@@ -142,9 +142,9 @@
  16 [-]: LOADK     R3 K4        ; R3 := "LevelStartScript"
  17 [-]: CALL      R2 2 0       ; R2,... := R2(R3)
  18 [-]: CALL      R0 0 2       ; R0 := R0(R1,...)
- 19 [-]: LOADK     R1 1         ; R1 := 1.000000
+ 19 [-]: CONST     R1 1         ; R1 := 1.000000
  20 [-]: LEN       R2 R0        ; R2 := # R0
- 21 [-]: LOADK     R3 1         ; R3 := 1.000000
+ 21 [-]: CONST     R3 1         ; R3 := 1.000000
  22 [-]: FORPREP   R1 27        ; R1 -= R3; PC := 27
  23 [-]: GETTABLE  R5 R0 R4     ; R5 := R0[R4]
  24 [-]: SELF      R5 R5 K5     ; R6 := R5; R5 := R5[0x8eb2112d]
@@ -383,7 +383,7 @@
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x34291f5c
   2 [-]: GETTABLE  R0 R0 K1     ; R0 := R0[0x8ee24660]
-  3 [-]: LOADBOOL  R1 0 0       ; R1 := false
+  3 [-]: LOADKB    R1 0 0       ; R1 := false
   4 [-]: CALL      R0 2 1       ; R0(R1)
   5 [-]: RETURN    R0 1         ; return 
 
@@ -398,7 +398,7 @@
 ; Max Stack Size:  5
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0xcbd666e1
-  2 [-]: LOADK     R2 0         ; R2 := 0.000000
+  2 [-]: CONST     R2 0         ; R2 := 0.000000
   3 [-]: CALL      R1 2 1       ; R1(R2)
   4 [-]: GETGLOBAL R1 K1        ; R1 := 0xe7f2b02f
   5 [-]: SELF      R1 R1 K2     ; R2 := R1; R1 := R1[0x0a7813f5]
@@ -474,7 +474,7 @@
  55 [-]: LOADK     R6 K13       ; R6 := "OnConfirmDisconnect"
  56 [-]: CALL      R4 3 1       ; R4(R5,R6)
  57 [-]: GETGLOBAL R4 K14       ; R4 := 0xcbd666e1
- 58 [-]: LOADK     R5 0         ; R5 := 0.000000
+ 58 [-]: CONST     R5 0         ; R5 := 0.000000
  59 [-]: CALL      R4 2 1       ; R4(R5)
  60 [-]: JMP       57           ; PC := 57
  61 [-]: JMP       70           ; PC := 70
@@ -484,7 +484,7 @@
  65 [-]: GETGLOBAL R6 K16       ; R6 := 0x0469f296
  66 [-]: LOADK     R7 K17       ; R7 := "DisconnectMe"
  67 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 68 [-]: LOADBOOL  R7 0 0       ; R7 := false
+ 68 [-]: LOADKB    R7 0 0       ; R7 := false
  69 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
  70 [-]: RETURN    R0 1         ; return 
 
@@ -653,7 +653,7 @@
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0x7f5022cf
   2 [-]: GETTABLE  R1 R1 K1     ; R1 := R1[0x1a94c9cc]
   3 [-]: MOVE      R2 R0        ; R2 := R0
-  4 [-]: LOADK     R3 3         ; R3 := 3.000000
+  4 [-]: CONST     R3 3         ; R3 := 3.000000
   5 [-]: GETGLOBAL R4 K0        ; R4 := 0x7f5022cf
   6 [-]: GETTABLE  R4 R4 K2     ; R4 := R4[0x41e2ae25]
   7 [-]: MOVE      R5 R0        ; R5 := R0
@@ -744,26 +744,24 @@
 ; Defined at line: 214
 ; #Upvalues:       1
 ; #Parameters:     1
-; Is_vararg:       7
-; Max Stack Size:  7
+; Is_vararg:       3
+; Max Stack Size:  6
 
   1 [-]: GETUPVAL  R2 U0        ; R2 := U0
   2 [-]: CALL      R2 1 2       ; R2 := R2()
-  3 [-]: TEST      R2 0         ; if not R2 then PC := 17
-  4 [-]: JMP       17           ; PC := 17
+  3 [-]: TEST      R2 0         ; if not R2 then PC := 15
+  4 [-]: JMP       15           ; PC := 15
   5 [-]: GETUPVAL  R2 U0        ; R2 := U0
   6 [-]: CALL      R2 1 2       ; R2 := R2()
   7 [-]: GETTABLE  R2 R2 R0     ; R2 := R2[R0]
-  8 [-]: TEST      R2 0         ; if not R2 then PC := 17
-  9 [-]: JMP       17           ; PC := 17
+  8 [-]: TEST      R2 0         ; if not R2 then PC := 15
+  9 [-]: JMP       15           ; PC := 15
  10 [-]: MOVE      R3 R2        ; R3 := R2
  11 [-]: GETUPVAL  R4 U0        ; R4 := U0
  12 [-]: CALL      R4 1 2       ; R4 := R4()
- 13 [-]: GETGLOBAL R5 K0        ; R5 := 0x22572a38
- 14 [-]: MOVE      R6 R1        ; R6 := R1
- 15 [-]: CALL      R5 2 0       ; R5,... := R5(R6)
- 16 [-]: CALL      R3 0 1       ; R3(R4,...)
- 17 [-]: RETURN    R0 1         ; return 
+ 13 [-]: VARARG    R5 0         ; R5 := ...
+ 14 [-]: CALL      R3 0 1       ; R3(R4,...)
+ 15 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #25:
@@ -807,10 +805,10 @@
   7 [-]: LOADK     R2 K3        ; R2 := "/Lotus/Language/Menu/AbortMissionConfirm"
   8 [-]: LOADK     R3 K4        ; R3 := "AbortConfirm"
   9 [-]: CALL      R1 3 1       ; R1(R2,R3)
- 10 [-]: LOADBOOL  R1 0 0       ; R1 := false
+ 10 [-]: LOADKB    R1 0 0       ; R1 := false
  11 [-]: RETURN    R1 2         ; return R1
  12 [-]: JMP       15           ; PC := 15
- 13 [-]: LOADBOOL  R1 1 0       ; R1 := true
+ 13 [-]: LOADKB    R1 1 0       ; R1 := true
  14 [-]: RETURN    R1 2         ; return R1
  15 [-]: RETURN    R0 1         ; return 
 

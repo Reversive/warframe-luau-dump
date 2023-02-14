@@ -40,9 +40,9 @@
  17 [-]: GETGLOBAL R5 K5        ; R5 := 0x5ca213a9
  18 [-]: GETGLOBAL R6 K6        ; R6 := 0x52482344
  19 [-]: GETGLOBAL R7 K7        ; R7 := 0xa421af95
- 20 [-]: LOADK     R8 1         ; R8 := 1.000000
- 21 [-]: LOADK     R9 1         ; R9 := 1.000000
- 22 [-]: LOADK     R10 1        ; R10 := 1.000000
+ 20 [-]: CONST     R8 1         ; R8 := 1.000000
+ 21 [-]: CONST     R9 1         ; R9 := 1.000000
+ 22 [-]: CONST     R10 1        ; R10 := 1.000000
  23 [-]: CALL      R7 4 0       ; R7,... := R7(R8,R9,R10)
  24 [-]: CALL      R2 0 1       ; R2(R3,...)
  25 [-]: RETURN    R0 1         ; return 

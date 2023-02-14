@@ -7,7 +7,7 @@
 ; Is_vararg:       2
 ; Max Stack Size:  5
 
-  1 [-]: LOADBOOL  R0 0 0       ; R0 := false
+  1 [-]: LOADKB    R0 0 0       ; R0 := false
   2 [-]: GETGLOBAL R1 K0        ; R1 := 0x89326c93
   3 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1[0x29ef273d]
   4 [-]: CALL      R1 2 2       ; R1 := R1(R2)
@@ -44,7 +44,7 @@
   7 [-]: GETGLOBAL R1 K2        ; R1 := 0xc4d60c1d
   8 [-]: EQ        0 R0 R1      ; if R0 ~= R1 then PC := 12
   9 [-]: JMP       12           ; PC := 12
- 10 [-]: LOADBOOL  R0 1 0       ; R0 := true
+ 10 [-]: LOADKB    R0 1 0       ; R0 := true
  11 [-]: SETUPVAL  R0 U0        ; U82 := R0
  12 [-]: GETGLOBAL R0 K3        ; R0 := 0xd6e28dfc
  13 [-]: TEST      R0 1         ; if R0 then PC := 16

@@ -65,15 +65,15 @@
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x25312c9b
   2 [-]: GETGLOBAL R1 K1        ; R1 := 0xae91e43b
   3 [-]: LOADK     R2 K2        ; R2 := "_root"
-  4 [-]: LOADK     R3 0         ; R3 := 0.000000
+  4 [-]: CONST     R3 0         ; R3 := 0.000000
   5 [-]: NEWTABLE  R4 1 0       ; R4 := {}
-  6 [-]: LOADK     R5 10        ; R5 := 10.000000
+  6 [-]: CONST     R5 10        ; R5 := 10.000000
   7 [-]: SETLIST   R4 1 1       ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 1
   8 [-]: NEWTABLE  R5 1 0       ; R5 := {}
-  9 [-]: LOADK     R6 0         ; R6 := 0.000000
+  9 [-]: CONST     R6 0         ; R6 := 0.000000
  10 [-]: SETLIST   R5 1 1       ; R5[(1-1)*FPF+i] := R(5+i), 1 <= i <= 1
- 11 [-]: LOADK     R6 1         ; R6 := 1.500000
- 12 [-]: LOADK     R7 0         ; R7 := 0.000000
+ 11 [-]: CONST     R6 1         ; R6 := 1.500000
+ 12 [-]: CONST     R7 0         ; R7 := 0.000000
  13 [-]: CLOSURE   R8 0         ; R8 := closure(Function #1.1)
  14 [-]: CALL      R0 9 1       ; R0(R1,R2,R3,R4,R5,R6,R7,R8)
  15 [-]: RETURN    R0 1         ; return 
@@ -106,18 +106,18 @@
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x25312c9b
   2 [-]: GETGLOBAL R1 K1        ; R1 := 0xae91e43b
   3 [-]: LOADK     R2 K2        ; R2 := "Title"
-  4 [-]: LOADK     R3 0         ; R3 := 0.000000
+  4 [-]: CONST     R3 0         ; R3 := 0.000000
   5 [-]: NEWTABLE  R4 1 0       ; R4 := {}
   6 [-]: CLOSURE   R5 0         ; R5 := closure(Function #2.1)
   7 [-]: SETLIST   R4 1 1       ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 1
   8 [-]: NEWTABLE  R5 1 0       ; R5 := {}
-  9 [-]: LOADK     R6 1         ; R6 := 1.000000
+  9 [-]: CONST     R6 1         ; R6 := 1.000000
  10 [-]: SETLIST   R5 1 1       ; R5[(1-1)*FPF+i] := R(5+i), 1 <= i <= 1
- 11 [-]: LOADK     R6 10        ; R6 := 10.000000
+ 11 [-]: CONST     R6 10        ; R6 := 10.000000
  12 [-]: CALL      R0 7 1       ; R0(R1,R2,R3,R4,R5,R6)
  13 [-]: GETUPVAL  R0 U0        ; R0 := U0
  14 [-]: SELF      R0 R0 K4     ; R1 := R0; R0 := R0[0xbd2e96ea]
- 15 [-]: LOADK     R2 1         ; R2 := 1.500000
+ 15 [-]: CONST     R2 1         ; R2 := 1.500000
  16 [-]: CLOSURE   R3 1         ; R3 := closure(Function #2.2)
  17 [-]: GETUPVAL  R0 U1        ; R0 := U1
  18 [-]: GETUPVAL  R0 U2        ; R0 := U2
@@ -125,7 +125,7 @@
  20 [-]: CALL      R0 4 1       ; R0(R1,R2,R3)
  21 [-]: GETUPVAL  R0 U0        ; R0 := U0
  22 [-]: SELF      R0 R0 K4     ; R1 := R0; R0 := R0[0xbd2e96ea]
- 23 [-]: LOADK     R2 5         ; R2 := 5.000000
+ 23 [-]: CONST     R2 5         ; R2 := 5.000000
  24 [-]: GETUPVAL  R3 U3        ; R3 := U3
  25 [-]: CALL      R0 4 1       ; R0(R1,R2,R3)
  26 [-]: RETURN    R0 1         ; return 
@@ -143,17 +143,17 @@
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0xae91e43b
   2 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1[0x67bc869f]
   3 [-]: LOADK     R3 K2        ; R3 := "Title"
-  4 [-]: LOADK     R4 10        ; R4 := 10.000000
+  4 [-]: CONST     R4 10        ; R4 := 10.000000
   5 [-]: GETGLOBAL R5 K3        ; R5 := 0x5bced4c4
   6 [-]: GETTABLE  R5 R5 K4     ; R5 := R5[0xac1b386a]
   7 [-]: MUL       R6 R0 K5     ; R6 := R0 * 1000.000000
-  8 [-]: LOADK     R7 100       ; R7 := 100.000000
+  8 [-]: CONST     R7 100       ; R7 := 100.000000
   9 [-]: CALL      R5 3 0       ; R5,... := R5(R6,R7)
  10 [-]: CALL      R1 0 1       ; R1(R2,...)
  11 [-]: GETGLOBAL R1 K0        ; R1 := 0xae91e43b
  12 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1[0x67bc869f]
  13 [-]: LOADK     R3 K2        ; R3 := "Title"
- 14 [-]: LOADK     R4 65        ; R4 := 65.000000
+ 14 [-]: CONST     R4 65        ; R4 := 65.000000
  15 [-]: MUL       R5 R0 K6     ; R5 := R0 * 15.000000
  16 [-]: CALL      R1 5 1       ; R1(R2,R3,R4,R5)
  17 [-]: RETURN    R0 1         ; return 
@@ -176,7 +176,7 @@
   6 [-]: GETUPVAL  R4 U1        ; R4 := U1
   7 [-]: GETTABLE  R4 R4 K2     ; R4 := R4["Subtitle1"]
   8 [-]: LOADNIL   R5 R5        ; R5 := nil
-  9 [-]: LOADK     R6 2         ; R6 := 2.250000
+  9 [-]: CONST     R6 2         ; R6 := 2.250000
  10 [-]: CALL      R0 7 1       ; R0(R1,R2,R3,R4,R5,R6)
  11 [-]: GETUPVAL  R0 U2        ; R0 := U2
  12 [-]: SELF      R0 R0 K3     ; R1 := R0; R0 := R0[0xbd2e96ea]
@@ -205,7 +205,7 @@
   6 [-]: GETUPVAL  R4 U1        ; R4 := U1
   7 [-]: GETTABLE  R4 R4 K2     ; R4 := R4["Subtitle2"]
   8 [-]: LOADNIL   R5 R5        ; R5 := nil
-  9 [-]: LOADK     R6 1         ; R6 := 1.250000
+  9 [-]: CONST     R6 1         ; R6 := 1.250000
  10 [-]: CALL      R0 7 1       ; R0(R1,R2,R3,R4,R5,R6)
  11 [-]: RETURN    R0 1         ; return 
 
@@ -222,8 +222,8 @@
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0xae91e43b
   2 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0x67bc869f]
   3 [-]: LOADK     R2 K2        ; R2 := "Title"
-  4 [-]: LOADK     R3 10        ; R3 := 10.000000
-  5 [-]: LOADK     R4 0         ; R4 := 0.000000
+  4 [-]: CONST     R3 10        ; R3 := 10.000000
+  5 [-]: CONST     R4 0         ; R4 := 0.000000
   6 [-]: CALL      R0 5 1       ; R0(R1,R2,R3,R4)
   7 [-]: GETGLOBAL R0 K0        ; R0 := 0xae91e43b
   8 [-]: SELF      R0 R0 K3     ; R1 := R0; R0 := R0[0x20b98db3]
@@ -246,10 +246,10 @@
  25 [-]: CALL      R1 2 2       ; R1 := R1(R2)
  26 [-]: SELF      R1 R1 K12    ; R2 := R1; R1 := R1[0x8f89d633]
  27 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 28 [-]: LOADK     R2 1         ; R2 := 1.000000
+ 28 [-]: CONST     R2 1         ; R2 := 1.000000
  29 [-]: GETUPVAL  R3 U1        ; R3 := U1
  30 [-]: LEN       R3 R3        ; R3 := # R3
- 31 [-]: LOADK     R4 1         ; R4 := 1.000000
+ 31 [-]: CONST     R4 1         ; R4 := 1.000000
  32 [-]: FORPREP   R2 49        ; R2 -= R4; PC := 49
  33 [-]: GETUPVAL  R6 U1        ; R6 := U1
  34 [-]: GETTABLE  R6 R6 R5     ; R6 := R6[R5]

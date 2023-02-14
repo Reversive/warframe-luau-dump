@@ -34,9 +34,9 @@
  11 [-]: SELF      R3 R3 K5     ; R4 := R3; R3 := R3[0xf6ebd926]
  12 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  13 [-]: GETGLOBAL R4 K6        ; R4 := 0xa421af95
- 14 [-]: LOADK     R5 0         ; R5 := 0.000000
+ 14 [-]: CONST     R5 0         ; R5 := 0.000000
  15 [-]: GETGLOBAL R6 K7        ; R6 := 0x1897967f
- 16 [-]: LOADK     R7 0         ; R7 := 0.000000
+ 16 [-]: CONST     R7 0         ; R7 := 0.000000
  17 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
  18 [-]: ADD       R3 R3 R4     ; R3 := R3 + R4
  19 [-]: GETGLOBAL R4 K1        ; R4 := 0xf817d60e

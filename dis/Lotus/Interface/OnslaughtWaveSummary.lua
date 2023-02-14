@@ -19,7 +19,7 @@
  10 [-]: GETGLOBAL R3 K3        ; R3 := 0xb009bbc6
  11 [-]: LOADK     R4 K5        ; R4 := "/Lotus/Sounds/Gameplay/DarkSector/DarkSectorMidWaveRecapClose"
  12 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 13 [-]: LOADK     R4 6         ; R4 := 6.000000
+ 13 [-]: CONST     R4 6         ; R4 := 6.000000
  14 [-]: LOADNIL   R5 R5        ; R5 := nil
  15 [-]: CLOSURE   R6 0         ; R6 := closure(Function #1)
  16 [-]: CLOSURE   R7 1         ; R7 := closure(Function #2)
@@ -58,7 +58,7 @@
   1 [-]: GETGLOBAL R2 K0        ; R2 := 0xae91e43b
   2 [-]: SELF      R2 R2 K1     ; R3 := R2; R2 := R2[0x5f56eeab]
   3 [-]: MOVE      R4 R0        ; R4 := R0
-  4 [-]: LOADK     R5 29        ; R5 := 29.000000
+  4 [-]: CONST     R5 29        ; R5 := 29.000000
   5 [-]: MOVE      R6 R1        ; R6 := R1
   6 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
   7 [-]: RETURN    R0 1         ; return 
@@ -149,28 +149,28 @@
   2 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1[0xe261aa96]
   3 [-]: GETTABLE  R3 R0 K2     ; R3 := R0["mClipName"]
   4 [-]: LOADK     R4 K3        ; R4 := "Title"
-  5 [-]: LOADK     R5 38        ; R5 := 38.000000
+  5 [-]: CONST     R5 38        ; R5 := 38.000000
   6 [-]: LOADK     R6 K4        ; R6 := "center"
   7 [-]: CALL      R1 6 1       ; R1(R2,R3,R4,R5,R6)
   8 [-]: GETGLOBAL R1 K0        ; R1 := 0xae91e43b
   9 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1[0xe261aa96]
  10 [-]: GETTABLE  R3 R0 K2     ; R3 := R0["mClipName"]
  11 [-]: LOADK     R4 K3        ; R4 := "Title"
- 12 [-]: LOADK     R5 29        ; R5 := 29.000000
+ 12 [-]: CONST     R5 29        ; R5 := 29.000000
  13 [-]: GETTABLE  R6 R0 K3     ; R6 := R0["Title"]
  14 [-]: CALL      R1 6 1       ; R1(R2,R3,R4,R5,R6)
  15 [-]: GETGLOBAL R1 K0        ; R1 := 0xae91e43b
  16 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1[0xe261aa96]
  17 [-]: GETTABLE  R3 R0 K2     ; R3 := R0["mClipName"]
  18 [-]: LOADK     R4 K5        ; R4 := "Calc"
- 19 [-]: LOADK     R5 29        ; R5 := 29.000000
+ 19 [-]: CONST     R5 29        ; R5 := 29.000000
  20 [-]: GETTABLE  R6 R0 K5     ; R6 := R0["Calc"]
  21 [-]: CALL      R1 6 1       ; R1(R2,R3,R4,R5,R6)
  22 [-]: GETGLOBAL R1 K0        ; R1 := 0xae91e43b
  23 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1[0xe261aa96]
  24 [-]: GETTABLE  R3 R0 K2     ; R3 := R0["mClipName"]
  25 [-]: LOADK     R4 K6        ; R4 := "Value"
- 26 [-]: LOADK     R5 29        ; R5 := 29.000000
+ 26 [-]: CONST     R5 29        ; R5 := 29.000000
  27 [-]: GETTABLE  R6 R0 K6     ; R6 := R0["Value"]
  28 [-]: CALL      R1 6 1       ; R1(R2,R3,R4,R5,R6)
  29 [-]: RETURN    R0 1         ; return 
@@ -218,12 +218,12 @@
  31 [-]: GETGLOBAL R4 K6        ; R4 := 0xae91e43b
  32 [-]: SELF      R4 R4 K12    ; R5 := R4; R4 := R4[0xaf9fda9f]
  33 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 34 [-]: LOADBOOL  R5 1 0       ; R5 := true
+ 34 [-]: LOADKB    R5 1 0       ; R5 := true
  35 [-]: GETTABLE  R6 R0 K13    ; R6 := R0["mHudScalePadding"]
  36 [-]: CALL      R1 6 1       ; R1(R2,R3,R4,R5,R6)
  37 [-]: GETGLOBAL R1 K14       ; R1 := 0x76ea806b
  38 [-]: SELF      R1 R1 K15    ; R2 := R1; R1 := R1[0x3f3ae64c]
- 39 [-]: LOADK     R3 0         ; R3 := 0.000000
+ 39 [-]: CONST     R3 0         ; R3 := 0.000000
  40 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
  41 [-]: GETGLOBAL R2 K0        ; R2 := 0x7b998233
  42 [-]: MOVE      R3 R1        ; R3 := R1
@@ -252,72 +252,72 @@
  65 [-]: GETGLOBAL R4 K6        ; R4 := 0xae91e43b
  66 [-]: SELF      R4 R4 K23    ; R5 := R4; R4 := R4[0x67bc869f]
  67 [-]: LOADK     R6 K7        ; R6 := "Card"
- 68 [-]: LOADK     R7 10        ; R7 := 10.000000
- 69 [-]: LOADK     R8 0         ; R8 := 0.000000
+ 68 [-]: CONST     R7 10        ; R7 := 10.000000
+ 69 [-]: CONST     R8 0         ; R8 := 0.000000
  70 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
  71 [-]: GETGLOBAL R4 K6        ; R4 := 0xae91e43b
  72 [-]: SELF      R4 R4 K23    ; R5 := R4; R4 := R4[0x67bc869f]
  73 [-]: LOADK     R6 K7        ; R6 := "Card"
- 74 [-]: LOADK     R7 5         ; R7 := 5.000000
- 75 [-]: LOADK     R8 0         ; R8 := 0.000000
+ 74 [-]: CONST     R7 5         ; R7 := 5.000000
+ 75 [-]: CONST     R8 0         ; R8 := 0.000000
  76 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
  77 [-]: GETUPVAL  R4 U3        ; R4 := U3
  78 [-]: CALL      R4 1 1       ; R4()
  79 [-]: GETGLOBAL R4 K6        ; R4 := 0xae91e43b
  80 [-]: SELF      R4 R4 K24    ; R5 := R4; R4 := R4[0xaade900e]
  81 [-]: LOADK     R6 K25       ; R6 := "Card.WaveTitle"
- 82 [-]: LOADK     R7 44        ; R7 := 44.000000
- 83 [-]: LOADBOOL  R8 1 0       ; R8 := true
+ 82 [-]: CONST     R7 44        ; R7 := 44.000000
+ 83 [-]: LOADKB    R8 1 0       ; R8 := true
  84 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
  85 [-]: GETGLOBAL R4 K6        ; R4 := 0xae91e43b
  86 [-]: SELF      R4 R4 K26    ; R5 := R4; R4 := R4[0x5f56eeab]
  87 [-]: LOADK     R6 K25       ; R6 := "Card.WaveTitle"
- 88 [-]: LOADK     R7 38        ; R7 := 38.000000
+ 88 [-]: CONST     R7 38        ; R7 := 38.000000
  89 [-]: LOADK     R8 K27       ; R8 := "center"
  90 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
  91 [-]: GETGLOBAL R4 K6        ; R4 := 0xae91e43b
  92 [-]: SELF      R4 R4 K26    ; R5 := R4; R4 := R4[0x5f56eeab]
  93 [-]: LOADK     R6 K25       ; R6 := "Card.WaveTitle"
- 94 [-]: LOADK     R7 29        ; R7 := 29.000000
+ 94 [-]: CONST     R7 29        ; R7 := 29.000000
  95 [-]: LOADK     R8 K28       ; R8 := ""
  96 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
  97 [-]: GETGLOBAL R4 K6        ; R4 := 0xae91e43b
  98 [-]: SELF      R4 R4 K26    ; R5 := R4; R4 := R4[0x5f56eeab]
  99 [-]: LOADK     R6 K29       ; R6 := "Card.Rank"
-100 [-]: LOADK     R7 29        ; R7 := 29.000000
+100 [-]: CONST     R7 29        ; R7 := 29.000000
 101 [-]: LOADK     R8 K28       ; R8 := ""
 102 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
 103 [-]: GETGLOBAL R4 K6        ; R4 := 0xae91e43b
 104 [-]: SELF      R4 R4 K23    ; R5 := R4; R4 := R4[0x67bc869f]
 105 [-]: LOADK     R6 K29       ; R6 := "Card.Rank"
-106 [-]: LOADK     R7 9         ; R7 := 9.000000
+106 [-]: CONST     R7 9         ; R7 := 9.000000
 107 [-]: GETGLOBAL R8 K30       ; R8 := 0x0032441c
 108 [-]: GETTABLE  R8 R8 K31    ; R8 := R8["UIColor_MediumGrey"]
 109 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
 110 [-]: GETGLOBAL R4 K6        ; R4 := 0xae91e43b
 111 [-]: SELF      R4 R4 K23    ; R5 := R4; R4 := R4[0x67bc869f]
 112 [-]: LOADK     R6 K29       ; R6 := "Card.Rank"
-113 [-]: LOADK     R7 10        ; R7 := 10.000000
-114 [-]: LOADK     R8 40        ; R8 := 40.000000
+113 [-]: CONST     R7 10        ; R7 := 10.000000
+114 [-]: CONST     R8 40        ; R8 := 40.000000
 115 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
 116 [-]: GETGLOBAL R4 K32       ; R4 := 0x25312c9b
 117 [-]: GETGLOBAL R5 K6        ; R5 := 0xae91e43b
 118 [-]: LOADK     R6 K7        ; R6 := "Card"
-119 [-]: LOADK     R7 0         ; R7 := 0.000000
+119 [-]: CONST     R7 0         ; R7 := 0.000000
 120 [-]: NEWTABLE  R8 2 0       ; R8 := {}
-121 [-]: LOADK     R9 10        ; R9 := 10.000000
-122 [-]: LOADK     R10 5        ; R10 := 5.000000
+121 [-]: CONST     R9 10        ; R9 := 10.000000
+122 [-]: CONST     R10 5        ; R10 := 5.000000
 123 [-]: SETLIST   R8 2 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 2
 124 [-]: NEWTABLE  R9 2 0       ; R9 := {}
-125 [-]: LOADK     R10 100      ; R10 := 100.000000
-126 [-]: LOADK     R11 100      ; R11 := 100.000000
+125 [-]: CONST     R10 100      ; R10 := 100.000000
+126 [-]: CONST     R11 100      ; R11 := 100.000000
 127 [-]: SETLIST   R9 2 1       ; R9[(1-1)*FPF+i] := R(9+i), 1 <= i <= 2
 128 [-]: LOADK     R10 K34      ; R10 := 0.200000
-129 [-]: LOADK     R11 0        ; R11 := 0.000000
+129 [-]: CONST     R11 0        ; R11 := 0.000000
 130 [-]: CALL      R4 8 1       ; R4(R5,R6,R7,R8,R9,R10,R11)
 131 [-]: GETGLOBAL R4 K2        ; R4 := _T
 132 [-]: GETUPVAL  R5 U4        ; R5 := U4
-133 [-]: SETTABLE  R4 K35 R5    ; R4["OWS_PopulateWaveSummaryLine"] := R5
+133 [-]: SETTABLE  R4 K35 R5    ; R4[0x8a8c8d5a] := R5
 134 [-]: GETGLOBAL R4 K2        ; R4 := _T
 135 [-]: GETUPVAL  R5 U5        ; R5 := U5
 136 [-]: SETTABLE  R4 K36 R5    ; R4["OWS_SetText"] := R5
@@ -345,17 +345,17 @@
  10 [-]: GETGLOBAL R0 K2        ; R0 := 0x25312c9b
  11 [-]: GETGLOBAL R1 K3        ; R1 := 0xae91e43b
  12 [-]: LOADK     R2 K4        ; R2 := "Card"
- 13 [-]: LOADK     R3 0         ; R3 := 0.000000
+ 13 [-]: CONST     R3 0         ; R3 := 0.000000
  14 [-]: NEWTABLE  R4 2 0       ; R4 := {}
- 15 [-]: LOADK     R5 10        ; R5 := 10.000000
- 16 [-]: LOADK     R6 5         ; R6 := 5.000000
+ 15 [-]: CONST     R5 10        ; R5 := 10.000000
+ 16 [-]: CONST     R6 5         ; R6 := 5.000000
  17 [-]: SETLIST   R4 2 1       ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 2
  18 [-]: NEWTABLE  R5 2 0       ; R5 := {}
- 19 [-]: LOADK     R6 0         ; R6 := 0.000000
- 20 [-]: LOADK     R7 0         ; R7 := 0.000000
+ 19 [-]: CONST     R6 0         ; R6 := 0.000000
+ 20 [-]: CONST     R7 0         ; R7 := 0.000000
  21 [-]: SETLIST   R5 2 1       ; R5[(1-1)*FPF+i] := R(5+i), 1 <= i <= 2
  22 [-]: LOADK     R6 K6        ; R6 := 0.200000
- 23 [-]: LOADK     R7 0         ; R7 := 0.000000
+ 23 [-]: CONST     R7 0         ; R7 := 0.000000
  24 [-]: CLOSURE   R8 0         ; R8 := closure(Function #6.1)
  25 [-]: CALL      R0 9 1       ; R0(R1,R2,R3,R4,R5,R6,R7,R8)
  26 [-]: RETURN    R0 1         ; return 

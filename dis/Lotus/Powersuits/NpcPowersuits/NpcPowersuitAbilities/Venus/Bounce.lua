@@ -22,7 +22,7 @@
 ; Max Stack Size:  14
 
   1 [-]: GETGLOBAL R2 K0        ; R2 := 0xcbd666e1
-  2 [-]: LOADK     R3 0         ; R3 := 0.000000
+  2 [-]: CONST     R3 0         ; R3 := 0.000000
   3 [-]: CALL      R2 2 1       ; R2(R3)
   4 [-]: SELF      R2 R0 K1     ; R3 := R0; R2 := R0[0xd1586535]
   5 [-]: CALL      R2 2 2       ; R2 := R2(R3)
@@ -46,7 +46,7 @@
  23 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
  24 [-]: TEST      R5 0         ; if not R5 then PC := 28
  25 [-]: JMP       28           ; PC := 28
- 26 [-]: LOADK     R5 10        ; R5 := 10.000000
+ 26 [-]: CONST     R5 10        ; R5 := 10.000000
  27 [-]: SETGLOBAL R5 K7        ; (0x1cbd55d3) := R5
  28 [-]: GETTABLE  R5 R3 K8     ; R5 := R3["pitch"]
  29 [-]: SUB       R5 R5 K9     ; R5 := R5 - 90.000000
@@ -72,7 +72,7 @@
  49 [-]: MOVE      R9 R0        ; R9 := R0
  50 [-]: GETGLOBAL R10 K12      ; R10 := EMPTY_SYMBOL
  51 [-]: CALL      R7 4 1       ; R7(R8,R9,R10)
- 52 [-]: LOADK     R7 0         ; R7 := 0.000000
+ 52 [-]: CONST     R7 0         ; R7 := 0.000000
  53 [-]: GETGLOBAL R8 K4        ; R8 := 0x7b998233
  54 [-]: MOVE      R9 R5        ; R9 := R5
  55 [-]: CALL      R8 2 2       ; R8 := R8(R9)
@@ -83,7 +83,7 @@
  60 [-]: TEST      R8 0         ; if not R8 then PC := 73
  61 [-]: JMP       73           ; PC := 73
  62 [-]: GETGLOBAL R8 K0        ; R8 := 0xcbd666e1
- 63 [-]: LOADK     R9 0         ; R9 := 0.000000
+ 63 [-]: CONST     R9 0         ; R9 := 0.000000
  64 [-]: CALL      R8 2 1       ; R8(R9)
  65 [-]: GETGLOBAL R8 K20       ; R8 := 0x67652851
  66 [-]: CALL      R8 1 2       ; R8 := R8()

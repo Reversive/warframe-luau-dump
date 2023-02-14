@@ -30,7 +30,7 @@
   5 [-]: EQ        0 R1 K2      ; if R1 ~= 0.000000 then PC := 10
   6 [-]: JMP       10           ; PC := 10
   7 [-]: SELF      R1 R0 K3     ; R2 := R0; R1 := R0[0x014ca753]
-  8 [-]: LOADBOOL  R3 1 0       ; R3 := true
+  8 [-]: LOADKB    R3 1 0       ; R3 := true
   9 [-]: CALL      R1 3 1       ; R1(R2,R3)
  10 [-]: RETURN    R0 1         ; return 
 
@@ -45,7 +45,7 @@
 ; Max Stack Size:  4
 
   1 [-]: SELF      R1 R0 K0     ; R2 := R0; R1 := R0[0x014ca753]
-  2 [-]: LOADBOOL  R3 0 0       ; R3 := false
+  2 [-]: LOADKB    R3 0 0       ; R3 := false
   3 [-]: CALL      R1 3 1       ; R1(R2,R3)
   4 [-]: RETURN    R0 1         ; return 
 

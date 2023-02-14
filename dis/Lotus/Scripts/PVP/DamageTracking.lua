@@ -63,7 +63,7 @@
  16 [-]: SETTABLE  R0 K16 K9    ; R0["HITTYPE_EX_WEAPON_SECONDARY"] := 2.000000
  17 [-]: GETGLOBAL R1 K18       ; R1 := 0x603636ad
  18 [-]: LOADK     R2 K19       ; R2 := "/Lotus/Language/Pvp/ParkourHit"
- 19 [-]: LOADBOOL  R3 0 0       ; R3 := false
+ 19 [-]: LOADKB    R3 0 0       ; R3 := false
  20 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
  21 [-]: SETTABLE  R0 K17 R1    ; R0["ParkourHitLoc"] := R1
  22 [-]: RETURN    R0 1         ; return 
@@ -78,11 +78,11 @@
 ; Is_vararg:       0
 ; Max Stack Size:  9
 
-  1 [-]: LOADK     R3 0         ; R3 := 0.000000
-  2 [-]: LOADK     R4 0         ; R4 := 0.000000
+  1 [-]: CONST     R3 0         ; R3 := 0.000000
+  2 [-]: CONST     R4 0         ; R4 := 0.000000
   3 [-]: GETTABLE  R5 R0 K0     ; R5 := R0["HITTYPE_NUM"]
   4 [-]: SUB       R5 R5 K1     ; R5 := R5 - 1.000000
-  5 [-]: LOADK     R6 1         ; R6 := 1.000000
+  5 [-]: CONST     R6 1         ; R6 := 1.000000
   6 [-]: FORPREP   R4 24        ; R4 -= R6; PC := 24
   7 [-]: GETTABLE  R8 R0 K2     ; R8 := R0["DamageHistory"]
   8 [-]: GETTABLE  R8 R8 R1     ; R8 := R8[R1]
@@ -296,7 +296,7 @@
 179 [-]: CALL      R19 2 2      ; R19 := R19(R20)
 180 [-]: SELF      R19 R19 K34  ; R20 := R19; R19 := R19[0x6d604ba7]
 181 [-]: CALL      R19 2 2      ; R19 := R19(R20)
-182 [-]: LOADBOOL  R20 0 0      ; R20 := false
+182 [-]: LOADKB    R20 0 0      ; R20 := false
 183 [-]: CALL      R18 3 2      ; R18 := R18(R19,R20)
 184 [-]: MOVE      R15 R18      ; R15 := R18
 185 [-]: JMP       215          ; PC := 215
@@ -323,7 +323,7 @@
 206 [-]: CALL      R19 2 2      ; R19 := R19(R20)
 207 [-]: SELF      R19 R19 K34  ; R20 := R19; R19 := R19[0x6d604ba7]
 208 [-]: CALL      R19 2 2      ; R19 := R19(R20)
-209 [-]: LOADBOOL  R20 0 0      ; R20 := false
+209 [-]: LOADKB    R20 0 0      ; R20 := false
 210 [-]: CALL      R18 3 2      ; R18 := R18(R19,R20)
 211 [-]: MOVE      R15 R18      ; R15 := R18
 212 [-]: JMP       215          ; PC := 215

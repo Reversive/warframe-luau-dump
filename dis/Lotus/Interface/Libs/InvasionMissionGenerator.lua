@@ -21,9 +21,9 @@
  12 [-]: GETGLOBAL R2 K3        ; R2 := 0x2d0fad09
  13 [-]: LOADK     R3 K6        ; R3 := "Lotus.Interface.Libs.MissionGeneratorUtil"
  14 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 15 [-]: LOADBOOL  R3 0 0       ; R3 := false
- 16 [-]: LOADK     R4 1440      ; R4 := 1440.000000
- 17 [-]: LOADK     R5 15        ; R5 := 15.000000
+ 15 [-]: LOADKB    R3 0 0       ; R3 := false
+ 16 [-]: CONST     R4 1440      ; R4 := 1440.000000
+ 17 [-]: CONST     R5 15        ; R5 := 15.000000
  18 [-]: NEWTABLE  R6 0 0       ; R6 := {}
  19 [-]: NEWTABLE  R7 5 0       ; R7 := {}
  20 [-]: NEWTABLE  R8 0 4       ; R8 := {}
@@ -132,8 +132,8 @@
 123 [-]: NEWTABLE  R7 9 0       ; R7 := {}
 124 [-]: NEWTABLE  R8 0 2       ; R8 := {}
 125 [-]: NEWTABLE  R9 2 0       ; R9 := {}
-126 [-]: LOADK     R10 0        ; R10 := 0.000000
-127 [-]: LOADK     R11 1        ; R11 := 1.000000
+126 [-]: CONST     R10 0        ; R10 := 0.000000
+127 [-]: CONST     R11 1        ; R11 := 1.000000
 128 [-]: SETLIST   R9 2 1       ; R9[(1-1)*FPF+i] := R(9+i), 1 <= i <= 2
 129 [-]: SETTABLE  R8 K37 R9    ; R8["factions"] := R9
 130 [-]: GETGLOBAL R9 K19       ; R9 := 0xb009bbc6
@@ -142,8 +142,8 @@
 133 [-]: SETTABLE  R8 K38 R9    ; R8["enemySpec"] := R9
 134 [-]: NEWTABLE  R9 0 2       ; R9 := {}
 135 [-]: NEWTABLE  R10 2 0      ; R10 := {}
-136 [-]: LOADK     R11 0        ; R11 := 0.000000
-137 [-]: LOADK     R12 1        ; R12 := 1.000000
+136 [-]: CONST     R11 0        ; R11 := 0.000000
+137 [-]: CONST     R12 1        ; R12 := 1.000000
 138 [-]: SETLIST   R10 2 1      ; R10[(1-1)*FPF+i] := R(10+i), 1 <= i <= 2
 139 [-]: SETTABLE  R9 K37 R10   ; R9["factions"] := R10
 140 [-]: GETGLOBAL R10 K19      ; R10 := 0xb009bbc6
@@ -152,8 +152,8 @@
 143 [-]: SETTABLE  R9 K38 R10   ; R9["enemySpec"] := R10
 144 [-]: NEWTABLE  R10 0 2      ; R10 := {}
 145 [-]: NEWTABLE  R11 2 0      ; R11 := {}
-146 [-]: LOADK     R12 0        ; R12 := 0.000000
-147 [-]: LOADK     R13 1        ; R13 := 1.000000
+146 [-]: CONST     R12 0        ; R12 := 0.000000
+147 [-]: CONST     R13 1        ; R13 := 1.000000
 148 [-]: SETLIST   R11 2 1      ; R11[(1-1)*FPF+i] := R(11+i), 1 <= i <= 2
 149 [-]: SETTABLE  R10 K37 R11  ; R10["factions"] := R11
 150 [-]: GETGLOBAL R11 K19      ; R11 := 0xb009bbc6
@@ -162,8 +162,8 @@
 153 [-]: SETTABLE  R10 K38 R11  ; R10["enemySpec"] := R11
 154 [-]: NEWTABLE  R11 0 2      ; R11 := {}
 155 [-]: NEWTABLE  R12 2 0      ; R12 := {}
-156 [-]: LOADK     R13 0        ; R13 := 0.000000
-157 [-]: LOADK     R14 1        ; R14 := 1.000000
+156 [-]: CONST     R13 0        ; R13 := 0.000000
+157 [-]: CONST     R14 1        ; R14 := 1.000000
 158 [-]: SETLIST   R12 2 1      ; R12[(1-1)*FPF+i] := R(12+i), 1 <= i <= 2
 159 [-]: SETTABLE  R11 K37 R12  ; R11["factions"] := R12
 160 [-]: GETGLOBAL R12 K19      ; R12 := 0xb009bbc6
@@ -172,8 +172,8 @@
 163 [-]: SETTABLE  R11 K38 R12  ; R11["enemySpec"] := R12
 164 [-]: NEWTABLE  R12 0 2      ; R12 := {}
 165 [-]: NEWTABLE  R13 2 0      ; R13 := {}
-166 [-]: LOADK     R14 2        ; R14 := 2.000000
-167 [-]: LOADK     R15 0        ; R15 := 0.000000
+166 [-]: CONST     R14 2        ; R14 := 2.000000
+167 [-]: CONST     R15 0        ; R15 := 0.000000
 168 [-]: SETLIST   R13 2 1      ; R13[(1-1)*FPF+i] := R(13+i), 1 <= i <= 2
 169 [-]: SETTABLE  R12 K37 R13  ; R12["factions"] := R13
 170 [-]: GETGLOBAL R13 K19      ; R13 := 0xb009bbc6
@@ -182,8 +182,8 @@
 173 [-]: SETTABLE  R12 K38 R13  ; R12["enemySpec"] := R13
 174 [-]: NEWTABLE  R13 0 2      ; R13 := {}
 175 [-]: NEWTABLE  R14 2 0      ; R14 := {}
-176 [-]: LOADK     R15 2        ; R15 := 2.000000
-177 [-]: LOADK     R16 0        ; R16 := 0.000000
+176 [-]: CONST     R15 2        ; R15 := 2.000000
+177 [-]: CONST     R16 0        ; R16 := 0.000000
 178 [-]: SETLIST   R14 2 1      ; R14[(1-1)*FPF+i] := R(14+i), 1 <= i <= 2
 179 [-]: SETTABLE  R13 K37 R14  ; R13["factions"] := R14
 180 [-]: GETGLOBAL R14 K19      ; R14 := 0xb009bbc6
@@ -192,8 +192,8 @@
 183 [-]: SETTABLE  R13 K38 R14  ; R13["enemySpec"] := R14
 184 [-]: NEWTABLE  R14 0 2      ; R14 := {}
 185 [-]: NEWTABLE  R15 2 0      ; R15 := {}
-186 [-]: LOADK     R16 2        ; R16 := 2.000000
-187 [-]: LOADK     R17 1        ; R17 := 1.000000
+186 [-]: CONST     R16 2        ; R16 := 2.000000
+187 [-]: CONST     R17 1        ; R17 := 1.000000
 188 [-]: SETLIST   R15 2 1      ; R15[(1-1)*FPF+i] := R(15+i), 1 <= i <= 2
 189 [-]: SETTABLE  R14 K37 R15  ; R14["factions"] := R15
 190 [-]: GETGLOBAL R15 K19      ; R15 := 0xb009bbc6
@@ -202,8 +202,8 @@
 193 [-]: SETTABLE  R14 K38 R15  ; R14["enemySpec"] := R15
 194 [-]: NEWTABLE  R15 0 2      ; R15 := {}
 195 [-]: NEWTABLE  R16 2 0      ; R16 := {}
-196 [-]: LOADK     R17 2        ; R17 := 2.000000
-197 [-]: LOADK     R18 1        ; R18 := 1.000000
+196 [-]: CONST     R17 2        ; R17 := 2.000000
+197 [-]: CONST     R18 1        ; R18 := 1.000000
 198 [-]: SETLIST   R16 2 1      ; R16[(1-1)*FPF+i] := R(16+i), 1 <= i <= 2
 199 [-]: SETTABLE  R15 K37 R16  ; R15["factions"] := R16
 200 [-]: GETGLOBAL R16 K19      ; R16 := 0xb009bbc6
@@ -212,8 +212,8 @@
 203 [-]: SETTABLE  R15 K38 R16  ; R15["enemySpec"] := R16
 204 [-]: NEWTABLE  R16 0 2      ; R16 := {}
 205 [-]: NEWTABLE  R17 2 0      ; R17 := {}
-206 [-]: LOADK     R18 2        ; R18 := 2.000000
-207 [-]: LOADK     R19 1        ; R19 := 1.000000
+206 [-]: CONST     R18 2        ; R18 := 2.000000
+207 [-]: CONST     R19 1        ; R19 := 1.000000
 208 [-]: SETLIST   R17 2 1      ; R17[(1-1)*FPF+i] := R(17+i), 1 <= i <= 2
 209 [-]: SETTABLE  R16 K37 R17  ; R16["factions"] := R17
 210 [-]: GETGLOBAL R17 K19      ; R17 := 0xb009bbc6
@@ -329,16 +329,16 @@
 320 [-]: SETTABLE  R23 K38 R24  ; R23["enemySpec"] := R24
 321 [-]: SETLIST   R8 15 1      ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 15
 322 [-]: NEWTABLE  R9 4 0       ; R9 := {}
-323 [-]: LOADK     R10 1        ; R10 := 1.000000
-324 [-]: LOADK     R11 4        ; R11 := 4.000000
-325 [-]: LOADK     R12 5        ; R12 := 5.000000
-326 [-]: LOADK     R13 13       ; R13 := 13.000000
+323 [-]: CONST     R10 1        ; R10 := 1.000000
+324 [-]: CONST     R11 4        ; R11 := 4.000000
+325 [-]: CONST     R12 5        ; R12 := 5.000000
+326 [-]: CONST     R13 13       ; R13 := 13.000000
 327 [-]: SETLIST   R9 4 1       ; R9[(1-1)*FPF+i] := R(9+i), 1 <= i <= 4
 328 [-]: NEWTABLE  R10 4 0      ; R10 := {}
-329 [-]: LOADK     R11 1        ; R11 := 1.000000
-330 [-]: LOADK     R12 2        ; R12 := 2.000000
-331 [-]: LOADK     R13 9        ; R13 := 9.000000
-332 [-]: LOADK     R14 8        ; R14 := 8.000000
+329 [-]: CONST     R11 1        ; R11 := 1.000000
+330 [-]: CONST     R12 2        ; R12 := 2.000000
+331 [-]: CONST     R13 9        ; R13 := 9.000000
+332 [-]: CONST     R14 8        ; R14 := 8.000000
 333 [-]: SETLIST   R10 4 1      ; R10[(1-1)*FPF+i] := R(10+i), 1 <= i <= 4
 334 [-]: NEWTABLE  R11 0 5      ; R11 := {}
 335 [-]: GETGLOBAL R12 K10      ; R12 := 0x7ed0a956
@@ -433,7 +433,7 @@
 ; Max Stack Size:  4
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0x0c5e62f9
-  2 [-]: LOADK     R2 1         ; R2 := 1.000000
+  2 [-]: CONST     R2 1         ; R2 := 1.000000
   3 [-]: LEN       R3 R0        ; R3 := # R0
   4 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
   5 [-]: GETTABLE  R1 R0 R1     ; R1 := R0[R1]
@@ -455,7 +455,7 @@
   3 [-]: GETUPVAL  R4 U0        ; R4 := U0
   4 [-]: CALL      R3 2 4       ; R3,R4,R5 := R3(R4)
   5 [-]: JMP       25           ; PC := 25
-  6 [-]: LOADK     R8 0         ; R8 := 0.000000
+  6 [-]: CONST     R8 0         ; R8 := 0.000000
   7 [-]: GETGLOBAL R9 K0        ; R9 := 0xcfc01047
   8 [-]: GETTABLE  R10 R7 K1    ; R10 := R7["factions"]
   9 [-]: CALL      R9 2 4       ; R9,R10,R11 := R9(R10)
@@ -531,7 +531,7 @@
   3 [-]: CALL      R1 2 2       ; R1 := R1(R2)
   4 [-]: TEST      R1 0         ; if not R1 then PC := 8
   5 [-]: JMP       8            ; PC := 8
-  6 [-]: LOADBOOL  R1 0 0       ; R1 := false
+  6 [-]: LOADKB    R1 0 0       ; R1 := false
   7 [-]: RETURN    R1 2         ; return R1
   8 [-]: GETGLOBAL R1 K1        ; R1 := 0x64fb1586
   9 [-]: SELF      R2 R0 K2     ; R3 := R0; R2 := R0[0xe223e2b1]
@@ -551,8 +551,8 @@
  23 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
  24 [-]: EQ        0 R2 K6      ; if R2 ~= nil then PC := 27
  25 [-]: JMP       27           ; PC := 27
- 26 [-]: LOADBOOL  R2 0 1       ; R2 := false; PC := 27
- 27 [-]: LOADBOOL  R2 1 0       ; R2 := true
+ 26 [-]: LOADKB    R2 0 1       ; R2 := false; PC := 27
+ 27 [-]: LOADKB    R2 1 0       ; R2 := true
  28 [-]: RETURN    R2 2         ; return R2
  29 [-]: RETURN    R0 1         ; return 
 
@@ -682,8 +682,8 @@
  76 [-]: GETTABLE  R12 R12 K16  ; R12 := R12["seed"]
  77 [-]: EQ        1 R11 R12    ; if R11 == R12 then PC := 80
  78 [-]: JMP       80           ; PC := 80
- 79 [-]: LOADBOOL  R11 0 1      ; R11 := false; PC := 80
- 80 [-]: LOADBOOL  R11 1 0      ; R11 := true
+ 79 [-]: LOADKB    R11 0 1      ; R11 := false; PC := 80
+ 80 [-]: LOADKB    R11 1 0      ; R11 := true
  81 [-]: GETTABLE  R12 R1 K14   ; R12 := R1["mission"]
  82 [-]: GETTABLE  R12 R12 K16  ; R12 := R12["seed"]
  83 [-]: GETTABLE  R13 R7 K16   ; R13 := R7["seed"]
@@ -716,8 +716,8 @@
 110 [-]: GETTABLE  R12 R12 K11  ; R12 := R12[0x06d055f9]
 111 [-]: EQ        1 R8 K22     ; if R8 == 0.000000 then PC := 114
 112 [-]: JMP       114          ; PC := 114
-113 [-]: LOADBOOL  R13 0 1      ; R13 := false; PC := 114
-114 [-]: LOADBOOL  R13 1 0      ; R13 := true
+113 [-]: LOADKB    R13 0 1      ; R13 := false; PC := 114
+114 [-]: LOADKB    R13 1 0      ; R13 := true
 115 [-]: GETUPVAL  R14 U3       ; R14 := U3
 116 [-]: GETTABLE  R14 R14 K25  ; R14 := R14["enemySpecGrineer"]
 117 [-]: GETUPVAL  R15 U3       ; R15 := U3
@@ -770,7 +770,7 @@
 164 [-]: GETTABLE  R15 R15 K31  ; R15 := R15["location"]
 165 [-]: MOVE      R16 R13      ; R16 := R13
 166 [-]: NEWTABLE  R17 1 0      ; R17 := {}
-167 [-]: LOADK     R18 1        ; R18 := 1.000000
+167 [-]: CONST     R18 1        ; R18 := 1.000000
 168 [-]: SETLIST   R17 1 1      ; R17[(1-1)*FPF+i] := R(17+i), 1 <= i <= 1
 169 [-]: CALL      R14 4 2      ; R14 := R14(R15,R16,R17)
 170 [-]: MOVE      R11 R14      ; R11 := R14
@@ -978,11 +978,11 @@
  26 [-]: CALL      R1 1 2       ; R1 := R1()
  27 [-]: SELF      R1 R1 K10    ; R2 := R1; R1 := R1[0xd13b47be]
  28 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 29 [-]: LOADK     R2 1         ; R2 := 1.000000
- 30 [-]: LOADK     R3 100       ; R3 := 100.000000
- 31 [-]: LOADK     R4 1         ; R4 := 1.000000
+ 29 [-]: CONST     R2 1         ; R2 := 1.000000
+ 30 [-]: CONST     R3 100       ; R3 := 100.000000
+ 31 [-]: CONST     R4 1         ; R4 := 1.000000
  32 [-]: FORPREP   R2 137       ; R2 -= R4; PC := 137
- 33 [-]: LOADK     R6 0         ; R6 := 0.000000
+ 33 [-]: CONST     R6 0         ; R6 := 0.000000
  34 [-]: GETGLOBAL R7 K11       ; R7 := 0xcfc01047
  35 [-]: MOVE      R8 R0        ; R8 := R0
  36 [-]: CALL      R7 2 4       ; R7,R8,R9 := R7(R8)
@@ -1015,7 +1015,7 @@
  63 [-]: CALL      R13 2 4      ; R13,R14,R15 := R13(R14)
  64 [-]: JMP       126          ; PC := 126
  65 [-]: GETGLOBAL R18 K17      ; R18 := 0xce225efa
- 66 [-]: LOADK     R19 0        ; R19 := 0.000000
+ 66 [-]: CONST     R19 0        ; R19 := 0.000000
  67 [-]: CALL      R18 2 1      ; R18(R19)
  68 [-]: GETTABLE  R18 R17 K18  ; R18 := R17["name"]
  69 [-]: SELF      R18 R18 K19  ; R19 := R18; R18 := R18[0x56c01834]
@@ -1067,12 +1067,12 @@
 115 [-]: GETUPVAL  R18 U2       ; R18 := U2
 116 [-]: MOVE      R19 R12      ; R19 := R12
 117 [-]: MOVE      R20 R17      ; R20 := R17
-118 [-]: LOADBOOL  R21 1 0      ; R21 := true
+118 [-]: LOADKB    R21 1 0      ; R21 := true
 119 [-]: CALL      R18 4 1      ; R18(R19,R20,R21)
 120 [-]: GETUPVAL  R18 U2       ; R18 := U2
 121 [-]: MOVE      R19 R12      ; R19 := R12
 122 [-]: MOVE      R20 R17      ; R20 := R17
-123 [-]: LOADBOOL  R21 0 0      ; R21 := false
+123 [-]: LOADKB    R21 0 0      ; R21 := false
 124 [-]: CALL      R18 4 1      ; R18(R19,R20,R21)
 125 [-]: ADD       R6 R6 K7     ; R6 := R6 + 1.000000
 126 [-]: TFORLOOP  R13 2        ; R16,R17 :=  R13(R14,R15); if R16 ~= nil then begin PC = 65; R15 := R16 end
@@ -1099,7 +1099,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  13
 
-  1 [-]: LOADBOOL  R2 0 0       ; R2 := false
+  1 [-]: LOADKB    R2 0 0       ; R2 := false
   2 [-]: TEST      R2 0         ; if not R2 then PC := 6
   3 [-]: JMP       6            ; PC := 6
   4 [-]: GETUPVAL  R2 U0        ; R2 := U0
@@ -1159,7 +1159,7 @@
  58 [-]: GETUPVAL  R7 U6        ; R7 := U6
  59 [-]: MOVE      R8 R1        ; R8 := R1
  60 [-]: MOVE      R9 R5        ; R9 := R5
- 61 [-]: LOADBOOL  R10 1 0      ; R10 := true
+ 61 [-]: LOADKB    R10 1 0      ; R10 := true
  62 [-]: CALL      R7 4 2       ; R7 := R7(R8,R9,R10)
  63 [-]: SETTABLE  R6 K16 R7    ; R6["attackerMissionInfo"] := R7
  64 [-]: GETUPVAL  R6 U4        ; R6 := U4
@@ -1167,7 +1167,7 @@
  66 [-]: GETUPVAL  R7 U6        ; R7 := U6
  67 [-]: MOVE      R8 R1        ; R8 := R1
  68 [-]: MOVE      R9 R5        ; R9 := R5
- 69 [-]: LOADBOOL  R10 0 0      ; R10 := false
+ 69 [-]: LOADKB    R10 0 0      ; R10 := false
  70 [-]: CALL      R7 4 2       ; R7 := R7(R8,R9,R10)
  71 [-]: SETTABLE  R6 K5 R7     ; R6["defenderMissionInfo"] := R7
  72 [-]: GETUPVAL  R6 U4        ; R6 := U4

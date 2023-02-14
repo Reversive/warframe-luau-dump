@@ -54,8 +54,8 @@
   5 [-]: JMP       7            ; PC := 7
   6 [-]: RETURN    R0 1         ; return 
   7 [-]: GETGLOBAL R5 K2        ; R5 := 0x55730e1a
-  8 [-]: LOADK     R6 0         ; R6 := 0.000000
-  9 [-]: LOADK     R7 100       ; R7 := 100.000000
+  8 [-]: CONST     R6 0         ; R6 := 0.000000
+  9 [-]: CONST     R7 100       ; R7 := 100.000000
  10 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
  11 [-]: GETGLOBAL R6 K3        ; R6 := 0x778ea816
  12 [-]: LT        0 R6 R5      ; if R6 >= R5 then PC := 15
@@ -67,7 +67,7 @@
  18 [-]: SELF      R6 R6 K5     ; R7 := R6; R6 := R6[0xfb669000]
  19 [-]: GETGLOBAL R8 K6        ; R8 := gLotusNpcAvatarType
  20 [-]: MOVE      R9 R5        ; R9 := R5
- 21 [-]: LOADK     R10 0        ; R10 := 0.000000
+ 21 [-]: CONST     R10 0        ; R10 := 0.000000
  22 [-]: GETGLOBAL R11 K7       ; R11 := 0x443a8d0b
  23 [-]: CALL      R6 6 2       ; R6 := R6(R7,R8,R9,R10,R11)
  24 [-]: GETGLOBAL R7 K8        ; R7 := 0x0469f296
@@ -98,10 +98,10 @@
  49 [-]: JMP       57           ; PC := 57
  50 [-]: SELF      R14 R12 K16  ; R15 := R12; R14 := R12[0x0f89a4d4]
  51 [-]: MOVE      R16 R7       ; R16 := R7
- 52 [-]: LOADBOOL  R17 0 0      ; R17 := false
- 53 [-]: LOADK     R18 3        ; R18 := 3.000000
- 54 [-]: LOADK     R19 2        ; R19 := 2.000000
- 55 [-]: LOADBOOL  R20 1 0      ; R20 := true
+ 52 [-]: LOADKB    R17 0 0      ; R17 := false
+ 53 [-]: CONST     R18 3        ; R18 := 3.000000
+ 54 [-]: CONST     R19 2        ; R19 := 2.000000
+ 55 [-]: LOADKB    R20 1 0      ; R20 := true
  56 [-]: CALL      R14 7 1      ; R14(R15,R16,R17,R18,R19,R20)
  57 [-]: TFORLOOP  R8 2         ; R11,R12 :=  R8(R9,R10); if R11 ~= nil then begin PC = 31; R10 := R11 end
  58 [-]: JMP       31           ; PC := 31
@@ -142,20 +142,20 @@
  93 [-]: GETGLOBAL R22 K8       ; R22 := 0x0469f296
  94 [-]: LOADK     R23 K21      ; R23 := "GROUND_STRUGGLE_END"
  95 [-]: CALL      R22 2 2      ; R22 := R22(R23)
- 96 [-]: LOADBOOL  R23 0 0      ; R23 := false
- 97 [-]: LOADK     R24 3        ; R24 := 3.000000
- 98 [-]: LOADK     R25 1        ; R25 := 1.000000
- 99 [-]: LOADBOOL  R26 1 0      ; R26 := true
+ 96 [-]: LOADKB    R23 0 0      ; R23 := false
+ 97 [-]: CONST     R24 3        ; R24 := 3.000000
+ 98 [-]: CONST     R25 1        ; R25 := 1.000000
+ 99 [-]: LOADKB    R26 1 0      ; R26 := true
 100 [-]: CALL      R20 7 0      ; R20,... := R20(R21,R22,R23,R24,R25,R26)
 101 [-]: CALL      R19 0 2      ; R19 := R19(R20,...)
 102 [-]: TEST      R19 0        ; if not R19 then PC := 111
 103 [-]: JMP       111          ; PC := 111
 104 [-]: SELF      R19 R18 K22  ; R20 := R18; R19 := R18[0x7027c544]
 105 [-]: LOADNIL   R21 R21      ; R21 := nil
-106 [-]: LOADBOOL  R22 0 0      ; R22 := false
-107 [-]: LOADK     R23 3        ; R23 := 3.000000
-108 [-]: LOADK     R24 1        ; R24 := 1.000000
-109 [-]: LOADBOOL  R25 0 0      ; R25 := false
+106 [-]: LOADKB    R22 0 0      ; R22 := false
+107 [-]: CONST     R23 3        ; R23 := 3.000000
+108 [-]: CONST     R24 1        ; R24 := 1.000000
+109 [-]: LOADKB    R25 0 0      ; R25 := false
 110 [-]: CALL      R19 7 1      ; R19(R20,R21,R22,R23,R24,R25)
 111 [-]: TFORLOOP  R14 2        ; R17,R18 :=  R14(R15,R16); if R17 ~= nil then begin PC = 72; R16 := R17 end
 112 [-]: JMP       72           ; PC := 72

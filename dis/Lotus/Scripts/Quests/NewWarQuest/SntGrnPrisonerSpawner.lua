@@ -7,7 +7,7 @@
 ; Is_vararg:       2
 ; Max Stack Size:  2
 
-  1 [-]: LOADK     R0 10        ; R0 := 10.000000
+  1 [-]: CONST     R0 10        ; R0 := 10.000000
   2 [-]: CLOSURE   R1 0         ; R1 := closure(Function #1)
   3 [-]: MOVE      R0 R0        ; R0 := R0
   4 [-]: SETGLOBAL R1 K0        ; SpawnImprisonedEnemy := R1
@@ -108,7 +108,7 @@
  13 [-]: CALL      R2 0 2       ; R2 := R2(R3,...)
  14 [-]: MOVE      R1 R2        ; R1 := R2
  15 [-]: GETGLOBAL R2 K6        ; R2 := 0xcbd666e1
- 16 [-]: LOADK     R3 0         ; R3 := 0.000000
+ 16 [-]: CONST     R3 0         ; R3 := 0.000000
  17 [-]: CALL      R2 2 1       ; R2(R3)
  18 [-]: JMP       1            ; PC := 1
  19 [-]: GETGLOBAL R2 K1        ; R2 := 0x89326c93
@@ -149,8 +149,8 @@
  54 [-]: CALL      R6 2 2       ; R6 := R6(R7)
  55 [-]: SELF      R7 R2 K15    ; R8 := R2; R7 := R2[0x2970f52f]
  56 [-]: MOVE      R9 R6        ; R9 := R6
- 57 [-]: LOADBOOL  R10 0 0      ; R10 := false
- 58 [-]: LOADBOOL  R11 0 0      ; R11 := false
+ 57 [-]: LOADKB    R10 0 0      ; R10 := false
+ 58 [-]: LOADKB    R11 0 0      ; R11 := false
  59 [-]: CALL      R7 5 1       ; R7(R8,R9,R10,R11)
  60 [-]: SELF      R7 R2 K16    ; R8 := R2; R7 := R2[0x2d9ba74f]
  61 [-]: SELF      R9 R5 K17    ; R10 := R5; R9 := R5[0x65d389cb]
@@ -158,17 +158,17 @@
  63 [-]: CALL      R7 0 1       ; R7(R8,...)
  64 [-]: SELF      R7 R2 K18    ; R8 := R2; R7 := R2[0x3cc28101]
  65 [-]: MOVE      R9 R5        ; R9 := R5
- 66 [-]: LOADBOOL  R10 1 0      ; R10 := true
- 67 [-]: LOADBOOL  R11 0 0      ; R11 := false
- 68 [-]: LOADK     R12 1        ; R12 := 1.000000
+ 66 [-]: LOADKB    R10 1 0      ; R10 := true
+ 67 [-]: LOADKB    R11 0 0      ; R11 := false
+ 68 [-]: CONST     R12 1        ; R12 := 1.000000
  69 [-]: CALL      R7 6 1       ; R7(R8,R9,R10,R11,R12)
  70 [-]: SELF      R7 R5 K20    ; R8 := R5; R7 := R5[0x7e441664]
  71 [-]: CALL      R7 2 2       ; R7 := R7(R8)
  72 [-]: LT        0 K21 R7     ; if 0.000000 >= R7 then PC := 86
  73 [-]: JMP       86           ; PC := 86
- 74 [-]: LOADK     R8 0         ; R8 := 0.000000
+ 74 [-]: CONST     R8 0         ; R8 := 0.000000
  75 [-]: MOVE      R9 R7        ; R9 := R7
- 76 [-]: LOADK     R10 1        ; R10 := 1.000000
+ 76 [-]: CONST     R10 1        ; R10 := 1.000000
  77 [-]: FORPREP   R8 85        ; R8 -= R10; PC := 85
  78 [-]: SELF      R12 R5 K22   ; R13 := R5; R12 := R5[0x819abd48]
  79 [-]: MOVE      R14 R11      ; R14 := R11

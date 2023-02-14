@@ -105,7 +105,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
-  1 [-]: SETTABLE  R0 K0 R1     ; R0["mMouseDown"] := R1
+  1 [-]: SETTABLE  R0 K0 R1     ; R0[0x00000098] := R1
   2 [-]: RETURN    R0 1         ; return 
 
 
@@ -184,8 +184,8 @@
  17 [-]: MUL       R3 R3 R1     ; R3 := R3 * R1
  18 [-]: RETURN    R2 3         ; return R2,R3
  19 [-]: JMP       23           ; PC := 23
- 20 [-]: LOADK     R2 0         ; R2 := 0.000000
- 21 [-]: LOADK     R3 0         ; R3 := 0.000000
+ 20 [-]: CONST     R2 0         ; R2 := 0.000000
+ 21 [-]: CONST     R3 0         ; R3 := 0.000000
  22 [-]: RETURN    R2 3         ; return R2,R3
  23 [-]: RETURN    R0 1         ; return 
 
@@ -199,7 +199,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  4
 
-  1 [-]: LOADK     R1 6         ; R1 := 6.000000
+  1 [-]: CONST     R1 6         ; R1 := 6.000000
   2 [-]: GETTABLE  R2 R0 K0     ; R2 := R0["mRightStickTension"]
   3 [-]: GETTABLE  R2 R2 K1     ; R2 := R2["x"]
   4 [-]: MUL       R2 R2 R1     ; R2 := R2 * R1
@@ -225,8 +225,8 @@
   4 [-]: JMP       8            ; PC := 8
   5 [-]: EQ        0 R2 K1      ; if R2 ~= 0.000000 then PC := 8
   6 [-]: JMP       8            ; PC := 8
-  7 [-]: LOADBOOL  R3 0 1       ; R3 := false; PC := 8
-  8 [-]: LOADBOOL  R3 1 0       ; R3 := true
+  7 [-]: LOADKB    R3 0 1       ; R3 := false; PC := 8
+  8 [-]: LOADKB    R3 1 0       ; R3 := true
   9 [-]: RETURN    R3 2         ; return R3
  10 [-]: RETURN    R0 1         ; return 
 
@@ -277,12 +277,12 @@
   1 [-]: GETTABLE  R1 R0 K0     ; R1 := R0["mMovie"]
   2 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1[0x91a24e4b]
   3 [-]: LOADK     R3 K2        ; R3 := "_root"
-  4 [-]: LOADK     R4 25        ; R4 := 25.000000
+  4 [-]: CONST     R4 25        ; R4 := 25.000000
   5 [-]: CALL      R1 4 2       ; R1 := R1(R2,R3,R4)
   6 [-]: GETTABLE  R2 R0 K0     ; R2 := R0["mMovie"]
   7 [-]: SELF      R2 R2 K1     ; R3 := R2; R2 := R2[0x91a24e4b]
   8 [-]: LOADK     R4 K2        ; R4 := "_root"
-  9 [-]: LOADK     R5 26        ; R5 := 26.000000
+  9 [-]: CONST     R5 26        ; R5 := 26.000000
  10 [-]: CALL      R2 4 0       ; R2,... := R2(R3,R4,R5)
  11 [-]: RETURN    R1 0         ; return R1,...
  12 [-]: RETURN    R0 1         ; return 
@@ -328,8 +328,8 @@
  29 [-]: GETTABLE  R2 R0 K9     ; R2 := R0["mRightStickDeadZone"]
  30 [-]: LT        1 R2 R1      ; if R2 < R1 then PC := 33
  31 [-]: JMP       33           ; PC := 33
- 32 [-]: LOADBOOL  R1 0 1       ; R1 := false; PC := 33
- 33 [-]: LOADBOOL  R1 1 0       ; R1 := true
+ 32 [-]: LOADKB    R1 0 1       ; R1 := false; PC := 33
+ 33 [-]: LOADKB    R1 1 0       ; R1 := true
  34 [-]: RETURN    R1 2         ; return R1
  35 [-]: JMP       38           ; PC := 38
  36 [-]: GETTABLE  R1 R0 K11    ; R1 := R0["mMouseDown"]

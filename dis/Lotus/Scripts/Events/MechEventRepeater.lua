@@ -27,9 +27,9 @@
 ; Is_vararg:       0
 ; Max Stack Size:  13
 
-  1 [-]: LOADK     R1 2         ; R1 := 2.500000
+  1 [-]: CONST     R1 2         ; R1 := 2.500000
   2 [-]: LOADK     R2 K0        ; R2 := 0.004500
-  3 [-]: LOADK     R3 10000     ; R3 := 10000.000000
+  3 [-]: CONST     R3 10000     ; R3 := 10000.000000
   4 [-]: LOADNIL   R4 R4        ; R4 := nil
   5 [-]: GETGLOBAL R5 K1        ; R5 := 0x89326c93
   6 [-]: SELF      R5 R5 K2     ; R6 := R5; R5 := R5[0xc7b81e8d]
@@ -70,7 +70,7 @@
  41 [-]: MOVE      R8 R9        ; R8 := R9
  42 [-]: SELF      R9 R0 K13    ; R10 := R0; R9 := R0[0x014db014]
  43 [-]: MOVE      R11 R8       ; R11 := R8
- 44 [-]: LOADBOOL  R12 1 0      ; R12 := true
+ 44 [-]: LOADKB    R12 1 0      ; R12 := true
  45 [-]: CALL      R9 4 1       ; R9(R10,R11,R12)
  46 [-]: RETURN    R0 1         ; return 
 

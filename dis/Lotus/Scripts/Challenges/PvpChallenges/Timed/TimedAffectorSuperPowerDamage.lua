@@ -50,9 +50,9 @@
  13 [-]: TEST      R3 1         ; if R3 then PC := 20
  14 [-]: JMP       20           ; PC := 20
  15 [-]: SELF      R3 R2 K3     ; R4 := R2; R3 := R2[0x5e6704ff]
- 16 [-]: LOADK     R5 10        ; R5 := 10.000000
- 17 [-]: LOADK     R6 2         ; R6 := 2.000000
- 18 [-]: LOADK     R7 1         ; R7 := 1.000000
+ 16 [-]: CONST     R5 10        ; R5 := 10.000000
+ 17 [-]: CONST     R6 3         ; R6 := 3.000000
+ 18 [-]: CONST     R7 1         ; R7 := 1.000000
  19 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
  20 [-]: RETURN    R0 1         ; return 
 

@@ -70,43 +70,43 @@
 ; Max Stack Size:  3
 
   1 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  2 [-]: LOADK     R1 1         ; R1 := 1.000000
-  3 [-]: LOADK     R2 0         ; R2 := 0.500000
+  2 [-]: CONST     R1 1         ; R1 := 1.000000
+  3 [-]: CONST     R2 0         ; R2 := 0.500000
   4 [-]: CALL      R0 3 1       ; R0(R1,R2)
   5 [-]: GETGLOBAL R0 K0        ; R0 := 0xcbd666e1
   6 [-]: LOADK     R1 K1        ; R1 := 0.020000
   7 [-]: CALL      R0 2 1       ; R0(R1)
   8 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  9 [-]: LOADK     R1 1         ; R1 := 1.000000
- 10 [-]: LOADK     R2 1         ; R2 := 1.000000
+  9 [-]: CONST     R1 1         ; R1 := 1.000000
+ 10 [-]: CONST     R2 1         ; R2 := 1.000000
  11 [-]: CALL      R0 3 1       ; R0(R1,R2)
  12 [-]: GETGLOBAL R0 K0        ; R0 := 0xcbd666e1
  13 [-]: LOADK     R1 K1        ; R1 := 0.020000
  14 [-]: CALL      R0 2 1       ; R0(R1)
  15 [-]: GETUPVAL  R0 U0        ; R0 := U0
- 16 [-]: LOADK     R1 1         ; R1 := 1.000000
- 17 [-]: LOADK     R2 2         ; R2 := 2.000000
+ 16 [-]: CONST     R1 1         ; R1 := 1.000000
+ 17 [-]: CONST     R2 2         ; R2 := 2.000000
  18 [-]: CALL      R0 3 1       ; R0(R1,R2)
  19 [-]: GETGLOBAL R0 K0        ; R0 := 0xcbd666e1
  20 [-]: LOADK     R1 K1        ; R1 := 0.020000
  21 [-]: CALL      R0 2 1       ; R0(R1)
  22 [-]: GETUPVAL  R0 U0        ; R0 := U0
- 23 [-]: LOADK     R1 1         ; R1 := 1.000000
- 24 [-]: LOADK     R2 4         ; R2 := 4.000000
+ 23 [-]: CONST     R1 1         ; R1 := 1.000000
+ 24 [-]: CONST     R2 4         ; R2 := 4.000000
  25 [-]: CALL      R0 3 1       ; R0(R1,R2)
  26 [-]: GETGLOBAL R0 K0        ; R0 := 0xcbd666e1
  27 [-]: LOADK     R1 K1        ; R1 := 0.020000
  28 [-]: CALL      R0 2 1       ; R0(R1)
  29 [-]: GETUPVAL  R0 U0        ; R0 := U0
- 30 [-]: LOADK     R1 0         ; R1 := 0.000000
- 31 [-]: LOADK     R2 1         ; R2 := 1.000000
+ 30 [-]: CONST     R1 0         ; R1 := 0.000000
+ 31 [-]: CONST     R2 1         ; R2 := 1.000000
  32 [-]: CALL      R0 3 1       ; R0(R1,R2)
  33 [-]: GETGLOBAL R0 K0        ; R0 := 0xcbd666e1
  34 [-]: LOADK     R1 K1        ; R1 := 0.020000
  35 [-]: CALL      R0 2 1       ; R0(R1)
  36 [-]: GETUPVAL  R0 U0        ; R0 := U0
- 37 [-]: LOADK     R1 0         ; R1 := 0.000000
- 38 [-]: LOADK     R2 0         ; R2 := 0.000000
+ 37 [-]: CONST     R1 0         ; R1 := 0.000000
+ 38 [-]: CONST     R2 0         ; R2 := 0.000000
  39 [-]: CALL      R0 3 1       ; R0(R1,R2)
  40 [-]: RETURN    R0 1         ; return 
 

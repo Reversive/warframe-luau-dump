@@ -30,7 +30,7 @@
 ; Max Stack Size:  14
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0xcbd666e1
-  2 [-]: LOADK     R2 1         ; R2 := 1.000000
+  2 [-]: CONST     R2 1         ; R2 := 1.000000
   3 [-]: CALL      R1 2 1       ; R1(R2)
   4 [-]: GETGLOBAL R1 K1        ; R1 := 0x89326c93
   5 [-]: SELF      R1 R1 K2     ; R2 := R1; R1 := R1[0x46a0ebf5]
@@ -85,7 +85,7 @@
  54 [-]: GETTABLE  R12 R12 K15  ; R12 := R12[0x021dc4be]
  55 [-]: GETTABLE  R13 R6 K18   ; R13 := R6["blue"]
  56 [-]: CALL      R12 2 2      ; R12 := R12(R13)
- 57 [-]: LOADK     R13 1        ; R13 := 1.000000
+ 57 [-]: CONST     R13 1        ; R13 := 1.000000
  58 [-]: CALL      R7 7 1       ; R7(R8,R9,R10,R11,R12,R13)
  59 [-]: RETURN    R0 1         ; return 
 

@@ -27,9 +27,9 @@
   2 [-]: CALL      R2 2 2       ; R2 := R2(R3)
   3 [-]: LE        0 R2 K1      ; if R2 > 0.300000 then PC := 7
   4 [-]: JMP       7            ; PC := 7
-  5 [-]: LOADK     R2 1         ; R2 := 1.000000
+  5 [-]: CONST     R2 1         ; R2 := 1.000000
   6 [-]: RETURN    R2 2         ; return R2
-  7 [-]: LOADK     R2 0         ; R2 := 0.000000
+  7 [-]: CONST     R2 0         ; R2 := 0.000000
   8 [-]: RETURN    R2 2         ; return R2
   9 [-]: RETURN    R0 1         ; return 
 
@@ -48,7 +48,7 @@
   3 [-]: GETGLOBAL R6 K2        ; R6 := 0x0469f296
   4 [-]: LOADK     R7 K3        ; R7 := "TENNO"
   5 [-]: CALL      R6 2 2       ; R6 := R6(R7)
-  6 [-]: LOADBOOL  R7 1 0       ; R7 := true
+  6 [-]: LOADKB    R7 1 0       ; R7 := true
   7 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
   8 [-]: GETGLOBAL R5 K4        ; R5 := 0xc8802016
   9 [-]: MOVE      R6 R4        ; R6 := R4

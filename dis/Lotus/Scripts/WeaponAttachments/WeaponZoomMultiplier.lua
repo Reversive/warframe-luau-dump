@@ -95,15 +95,15 @@
  37 [-]: GETTABLE  R10 R4 K9    ; R10 := R4["mZoomMultipliers"]
  38 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
  39 [-]: SELF      R9 R5 K10    ; R10 := R5; R9 := R5[0x12dd9da2]
- 40 [-]: LOADK     R11 343      ; R11 := 343.000000
- 41 [-]: LOADK     R12 1        ; R12 := 1.000000
+ 40 [-]: CONST     R11 353      ; R11 := 353.000000
+ 41 [-]: CONST     R12 2        ; R12 := 2.000000
  42 [-]: MOVE      R13 R7       ; R13 := R7
  43 [-]: MOVE      R14 R6       ; R14 := R6
  44 [-]: MOVE      R15 R2       ; R15 := R2
  45 [-]: CALL      R9 7 1       ; R9(R10,R11,R12,R13,R14,R15)
  46 [-]: SELF      R9 R5 K13    ; R10 := R5; R9 := R5[0x5e6704ff]
- 47 [-]: LOADK     R11 343      ; R11 := 343.000000
- 48 [-]: LOADK     R12 1        ; R12 := 1.000000
+ 47 [-]: CONST     R11 353      ; R11 := 353.000000
+ 48 [-]: CONST     R12 2        ; R12 := 2.000000
  49 [-]: MOVE      R13 R8       ; R13 := R8
  50 [-]: MOVE      R14 R6       ; R14 := R6
  51 [-]: MOVE      R15 R2       ; R15 := R2
@@ -153,8 +153,8 @@
  30 [-]: SELF      R4 R1 K11    ; R5 := R1; R4 := R1[0xde321e6f]
  31 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  32 [-]: SELF      R4 R4 K12    ; R5 := R4; R4 := R4[0x5e6704ff]
- 33 [-]: LOADK     R6 343       ; R6 := 343.000000
- 34 [-]: LOADK     R7 1         ; R7 := 1.000000
+ 33 [-]: CONST     R6 353       ; R6 := 353.000000
+ 34 [-]: CONST     R7 2         ; R7 := 2.000000
  35 [-]: GETUPVAL  R8 U1        ; R8 := U1
  36 [-]: MOVE      R9 R2        ; R9 := R2
  37 [-]: GETTABLE  R10 R3 K9    ; R10 := R3["mZoomMultipliers"]
@@ -199,8 +199,8 @@
  22 [-]: SELF      R3 R1 K7     ; R4 := R1; R3 := R1[0xde321e6f]
  23 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  24 [-]: SELF      R3 R3 K8     ; R4 := R3; R3 := R3[0x12dd9da2]
- 25 [-]: LOADK     R5 343       ; R5 := 343.000000
- 26 [-]: LOADK     R6 1         ; R6 := 1.000000
+ 25 [-]: CONST     R5 353       ; R5 := 353.000000
+ 26 [-]: CONST     R6 2         ; R6 := 2.000000
  27 [-]: GETUPVAL  R7 U0        ; R7 := U0
  28 [-]: MOVE      R8 R2        ; R8 := R2
  29 [-]: GETGLOBAL R9 K11       ; R9 := 0xe6871f87

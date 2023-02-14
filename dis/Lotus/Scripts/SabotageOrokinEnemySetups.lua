@@ -42,20 +42,20 @@
  15 [-]: MOVE      R6 R3        ; R6 := R3
  16 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
  17 [-]: GETGLOBAL R5 K6        ; R5 := 0x55730e1a
- 18 [-]: LOADK     R6 1         ; R6 := 1.000000
+ 18 [-]: CONST     R6 1         ; R6 := 1.000000
  19 [-]: GETGLOBAL R7 K7        ; R7 := 0x083efaa3
  20 [-]: LEN       R7 R7        ; R7 := # R7
  21 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
  22 [-]: GETGLOBAL R6 K7        ; R6 := 0x083efaa3
  23 [-]: GETTABLE  R6 R6 R5     ; R6 := R6[R5]
- 24 [-]: LOADK     R7 0         ; R7 := 0.000000
+ 24 [-]: CONST     R7 0         ; R7 := 0.000000
  25 [-]: GETGLOBAL R8 K9        ; R8 := 0x5d172da9
  26 [-]: TEST      R8 0         ; if not R8 then PC := 32
  27 [-]: JMP       32           ; PC := 32
  28 [-]: GETGLOBAL R8 K10       ; R8 := 0xe223468f
  29 [-]: LE        0 R8 R1      ; if R8 > R1 then PC := 32
  30 [-]: JMP       32           ; PC := 32
- 31 [-]: LOADK     R7 1         ; R7 := 1.000000
+ 31 [-]: CONST     R7 1         ; R7 := 1.000000
  32 [-]: SELF      R8 R0 K11    ; R9 := R0; R8 := R0[0x33fc842f]
  33 [-]: MOVE      R10 R6       ; R10 := R6
  34 [-]: GETGLOBAL R11 K12      ; R11 := 0xb5985109
@@ -88,7 +88,7 @@
  61 [-]: CALL      R11 2 2      ; R11 := R11(R12)
  62 [-]: GETGLOBAL R12 K18      ; R12 := _T
  63 [-]: GETTABLE  R12 R12 K19  ; R12 := R12["SabotageConsoleTarget"]
- 64 [-]: LOADK     R13 10       ; R13 := 10.000000
+ 64 [-]: CONST     R13 10       ; R13 := 10.000000
  65 [-]: CALL      R9 5 1       ; R9(R10,R11,R12,R13)
  66 [-]: RETURN    R0 1         ; return 
 
@@ -118,14 +118,14 @@
  14 [-]: MOVE      R5 R1        ; R5 := R1
  15 [-]: MOVE      R6 R3        ; R6 := R3
  16 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
- 17 [-]: LOADK     R5 0         ; R5 := 0.000000
+ 17 [-]: CONST     R5 0         ; R5 := 0.000000
  18 [-]: GETGLOBAL R6 K8        ; R6 := 0x5d172da9
  19 [-]: TEST      R6 0         ; if not R6 then PC := 25
  20 [-]: JMP       25           ; PC := 25
  21 [-]: GETGLOBAL R6 K9        ; R6 := 0xe223468f
  22 [-]: LE        0 R6 R1      ; if R6 > R1 then PC := 25
  23 [-]: JMP       25           ; PC := 25
- 24 [-]: LOADK     R5 1         ; R5 := 1.000000
+ 24 [-]: CONST     R5 1         ; R5 := 1.000000
  25 [-]: GETGLOBAL R6 K10       ; R6 := 0xc8802016
  26 [-]: GETGLOBAL R7 K11       ; R7 := 0x58c8430e
  27 [-]: CALL      R6 2 4       ; R6,R7,R8 := R6(R7)
@@ -136,7 +136,7 @@
  32 [-]: TEST      R12 1        ; if R12 then PC := 41
  33 [-]: JMP       41           ; PC := 41
  34 [-]: GETGLOBAL R12 K6       ; R12 := 0x55730e1a
- 35 [-]: LOADK     R13 1        ; R13 := 1.000000
+ 35 [-]: CONST     R13 1        ; R13 := 1.000000
  36 [-]: GETGLOBAL R14 K12      ; R14 := 0x083efaa3
  37 [-]: LEN       R14 R14      ; R14 := # R14
  38 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
@@ -186,7 +186,7 @@
  82 [-]: CALL      R17 2 2      ; R17 := R17(R18)
  83 [-]: GETGLOBAL R18 K23      ; R18 := _T
  84 [-]: GETTABLE  R18 R18 K24  ; R18 := R18["SabotageConsoleTarget"]
- 85 [-]: LOADK     R19 10       ; R19 := 10.000000
+ 85 [-]: CONST     R19 10       ; R19 := 10.000000
  86 [-]: CALL      R15 5 1      ; R15(R16,R17,R18,R19)
  87 [-]: TFORLOOP  R6 2         ; R9,R10 :=  R6(R7,R8); if R9 ~= nil then begin PC = 29; R8 := R9 end
  88 [-]: JMP       29           ; PC := 29
@@ -219,7 +219,7 @@
  15 [-]: MOVE      R6 R3        ; R6 := R3
  16 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
  17 [-]: GETGLOBAL R5 K6        ; R5 := 0x55730e1a
- 18 [-]: LOADK     R6 1         ; R6 := 1.000000
+ 18 [-]: CONST     R6 1         ; R6 := 1.000000
  19 [-]: GETGLOBAL R7 K7        ; R7 := 0x4d054358
  20 [-]: LEN       R7 R7        ; R7 := # R7
  21 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
@@ -286,7 +286,7 @@
  82 [-]: CALL      R11 2 2      ; R11 := R11(R12)
  83 [-]: GETGLOBAL R12 K17      ; R12 := _T
  84 [-]: GETTABLE  R12 R12 K18  ; R12 := R12["SabotageConsoleTarget"]
- 85 [-]: LOADK     R13 10       ; R13 := 10.000000
+ 85 [-]: CONST     R13 10       ; R13 := 10.000000
  86 [-]: CALL      R9 5 1       ; R9(R10,R11,R12,R13)
  87 [-]: SELF      R9 R8 K19    ; R10 := R8; R9 := R8[0x81b5632f]
  88 [-]: GETGLOBAL R11 K12      ; R11 := 0x0469f296
@@ -294,7 +294,7 @@
  90 [-]: CALL      R11 2 2      ; R11 := R11(R12)
  91 [-]: GETGLOBAL R12 K17      ; R12 := _T
  92 [-]: GETTABLE  R12 R12 K18  ; R12 := R12["SabotageConsoleTarget"]
- 93 [-]: LOADK     R13 10       ; R13 := 10.000000
+ 93 [-]: CONST     R13 10       ; R13 := 10.000000
  94 [-]: CALL      R9 5 1       ; R9(R10,R11,R12,R13)
  95 [-]: RETURN    R0 1         ; return 
 

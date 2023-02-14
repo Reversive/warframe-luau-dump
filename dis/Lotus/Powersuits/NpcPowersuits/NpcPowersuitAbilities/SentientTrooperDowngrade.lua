@@ -34,8 +34,8 @@
  11 [-]: GETGLOBAL R5 K4        ; R5 := 0x0469f296
  12 [-]: LOADK     R6 K5        ; R6 := "DOWNGRADE"
  13 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 14 [-]: LOADK     R6 216       ; R6 := 216.000000
- 15 [-]: LOADK     R7 1         ; R7 := 1.000000
+ 14 [-]: CONST     R6 223       ; R6 := 223.000000
+ 15 [-]: CONST     R7 2         ; R7 := 2.000000
  16 [-]: GETGLOBAL R8 K8        ; R8 := 0xb6469a04
  17 [-]: CALL      R3 6 1       ; R3(R4,R5,R6,R7,R8)
  18 [-]: RETURN    R0 1         ; return 

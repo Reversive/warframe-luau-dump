@@ -33,13 +33,13 @@
   8 [-]: JMP       19           ; PC := 19
   9 [-]: GETGLOBAL R2 K4        ; R2 := 0xcbd666e1
  10 [-]: GETGLOBAL R3 K5        ; R3 := 0xc163f229
- 11 [-]: LOADK     R4 0         ; R4 := 0.000000
+ 11 [-]: CONST     R4 0         ; R4 := 0.000000
  12 [-]: LOADK     R5 K6        ; R5 := 0.200000
  13 [-]: CALL      R3 3 0       ; R3,... := R3(R4,R5)
  14 [-]: CALL      R2 0 1       ; R2(R3,...)
  15 [-]: SELF      R2 R1 K7     ; R3 := R1; R2 := R1[0x659d451f]
  16 [-]: GETGLOBAL R4 K3        ; R4 := 0x12ffad79
- 17 [-]: LOADBOOL  R5 0 0       ; R5 := false
+ 17 [-]: LOADKB    R5 0 0       ; R5 := false
  18 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
  19 [-]: RETURN    R0 1         ; return 
 
@@ -69,9 +69,9 @@
  14 [-]: LEN       R2 R1        ; R2 := # R1
  15 [-]: LT        0 K6 R2      ; if 0.000000 >= R2 then PC := 43
  16 [-]: JMP       43           ; PC := 43
- 17 [-]: LOADK     R2 1         ; R2 := 1.000000
+ 17 [-]: CONST     R2 1         ; R2 := 1.000000
  18 [-]: LEN       R3 R1        ; R3 := # R1
- 19 [-]: LOADK     R4 1         ; R4 := 1.000000
+ 19 [-]: CONST     R4 1         ; R4 := 1.000000
  20 [-]: FORPREP   R2 42        ; R2 -= R4; PC := 42
  21 [-]: GETTABLE  R6 R1 R5     ; R6 := R1[R5]
  22 [-]: GETTABLE  R7 R6 K7     ; R7 := R6["probability"]
@@ -96,8 +96,8 @@
  41 [-]: CALL      R13 7 1      ; R13(R14,R15,R16,R17,R18,R19)
  42 [-]: FORLOOP   R2 21        ; R2 += R4; if R2 <= R3 then begin PC := 21; R5 := R2 end
  43 [-]: SELF      R13 R0 K14   ; R14 := R0; R13 := R0[0xce01ccc2]
- 44 [-]: LOADK     R15 1        ; R15 := 1.000000
- 45 [-]: LOADK     R16 2        ; R16 := 2.000000
+ 44 [-]: CONST     R15 1        ; R15 := 1.000000
+ 45 [-]: CONST     R16 2        ; R16 := 2.000000
  46 [-]: CALL      R13 4 1      ; R13(R14,R15,R16)
  47 [-]: GETGLOBAL R13 K0       ; R13 := 0x89326c93
  48 [-]: SELF      R13 R13 K15  ; R14 := R13; R13 := R13[0x7c1a0374]

@@ -7,9 +7,9 @@
 ; Is_vararg:       2
 ; Max Stack Size:  5
 
-  1 [-]: LOADK     R0 1         ; R0 := 1.000000
-  2 [-]: LOADK     R1 0         ; R1 := 0.000000
-  3 [-]: LOADBOOL  R2 0 0       ; R2 := false
+  1 [-]: CONST     R0 1         ; R0 := 1.000000
+  2 [-]: CONST     R1 0         ; R1 := 0.000000
+  3 [-]: LOADKB    R2 0 0       ; R2 := false
   4 [-]: LOADNIL   R3 R3        ; R3 := nil
   5 [-]: CLOSURE   R4 0         ; R4 := closure(Function #1)
   6 [-]: MOVE      R0 R3        ; R0 := R3
@@ -57,7 +57,7 @@
  15 [-]: SELF      R1 R1 K5     ; R2 := R1; R1 := R1[0x9b71e815]
  16 [-]: MOVE      R3 R0        ; R3 := R0
  17 [-]: CALL      R1 3 1       ; R1(R2,R3)
- 18 [-]: LOADBOOL  R1 1 0       ; R1 := true
+ 18 [-]: LOADKB    R1 1 0       ; R1 := true
  19 [-]: RETURN    R1 2         ; return R1
  20 [-]: RETURN    R0 1         ; return 
 
@@ -84,7 +84,7 @@
  11 [-]: SETUPVAL  R1 U0        ; U82 := R0
  12 [-]: GETUPVAL  R1 U0        ; R1 := U0
  13 [-]: SELF      R1 R1 K7     ; R2 := R1; R1 := R1[0x46610c50]
- 14 [-]: LOADBOOL  R3 1 0       ; R3 := true
+ 14 [-]: LOADKB    R3 1 0       ; R3 := true
  15 [-]: CALL      R1 3 1       ; R1(R2,R3)
  16 [-]: RETURN    R0 1         ; return 
 
@@ -104,9 +104,9 @@
   4 [-]: GETGLOBAL R0 K0        ; R0 := 0x3d106989
   5 [-]: LOADK     R1 K1        ; R1 := "SaveSpinner:Finished"
   6 [-]: CALL      R0 2 1       ; R0(R1)
-  7 [-]: LOADBOOL  R0 1 0       ; R0 := true
+  7 [-]: LOADKB    R0 1 0       ; R0 := true
   8 [-]: SETUPVAL  R0 U0        ; U82 := R0
-  9 [-]: LOADBOOL  R0 1 0       ; R0 := true
+  9 [-]: LOADKB    R0 1 0       ; R0 := true
  10 [-]: RETURN    R0 2         ; return R0
  11 [-]: RETURN    R0 1         ; return 
 
@@ -155,7 +155,7 @@
  33 [-]: JMP       38           ; PC := 38
  34 [-]: GETUPVAL  R0 U0        ; R0 := U0
  35 [-]: SELF      R0 R0 K7     ; R1 := R0; R0 := R0[0x46610c50]
- 36 [-]: LOADBOOL  R2 0 0       ; R2 := false
+ 36 [-]: LOADKB    R2 0 0       ; R2 := false
  37 [-]: CALL      R0 3 1       ; R0(R1,R2)
  38 [-]: RETURN    R0 1         ; return 
 
@@ -169,7 +169,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
-  1 [-]: LOADBOOL  R0 1 0       ; R0 := true
+  1 [-]: LOADKB    R0 1 0       ; R0 := true
   2 [-]: RETURN    R0 2         ; return R0
   3 [-]: RETURN    R0 1         ; return 
 

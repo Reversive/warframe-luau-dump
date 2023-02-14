@@ -168,7 +168,7 @@
  28 [-]: TEST      R3 1         ; if R3 then PC := 34
  29 [-]: JMP       34           ; PC := 34
  30 [-]: GETGLOBAL R3 K9        ; R3 := 0xcbd666e1
- 31 [-]: LOADK     R4 0         ; R4 := 0.000000
+ 31 [-]: CONST     R4 0         ; R4 := 0.000000
  32 [-]: CALL      R3 2 1       ; R3(R4)
  33 [-]: JMP       25           ; PC := 25
  34 [-]: SETTABLE  R0 K10 K11   ; R0["mReset"] := true
@@ -198,8 +198,8 @@
  12 [-]: SELF      R2 R0 K5     ; R3 := R0; R2 := R0[0x68d7cbe0]
  13 [-]: MOVE      R4 R1        ; R4 := R1
  14 [-]: LOADNIL   R5 R5        ; R5 := nil
- 15 [-]: LOADBOOL  R6 1 0       ; R6 := true
- 16 [-]: LOADBOOL  R7 1 0       ; R7 := true
+ 15 [-]: LOADKB    R6 1 0       ; R6 := true
+ 16 [-]: LOADKB    R7 1 0       ; R7 := true
  17 [-]: CALL      R2 6 1       ; R2(R3,R4,R5,R6,R7)
  18 [-]: SETTABLE  R0 K6 K7     ; R0["mReset"] := true
  19 [-]: RETURN    R0 1         ; return 
@@ -228,8 +228,8 @@
  12 [-]: SELF      R2 R0 K5     ; R3 := R0; R2 := R0[0x68d7cbe0]
  13 [-]: MOVE      R4 R1        ; R4 := R1
  14 [-]: LOADNIL   R5 R5        ; R5 := nil
- 15 [-]: LOADBOOL  R6 1 0       ; R6 := true
- 16 [-]: LOADBOOL  R7 1 0       ; R7 := true
+ 15 [-]: LOADKB    R6 1 0       ; R6 := true
+ 16 [-]: LOADKB    R7 1 0       ; R7 := true
  17 [-]: CALL      R2 6 1       ; R2(R3,R4,R5,R6,R7)
  18 [-]: SETTABLE  R0 K6 K7     ; R0["mReset"] := true
  19 [-]: RETURN    R0 1         ; return 
@@ -258,8 +258,8 @@
  12 [-]: SELF      R2 R0 K5     ; R3 := R0; R2 := R0[0x68d7cbe0]
  13 [-]: MOVE      R4 R1        ; R4 := R1
  14 [-]: LOADNIL   R5 R5        ; R5 := nil
- 15 [-]: LOADBOOL  R6 1 0       ; R6 := true
- 16 [-]: LOADBOOL  R7 1 0       ; R7 := true
+ 15 [-]: LOADKB    R6 1 0       ; R6 := true
+ 16 [-]: LOADKB    R7 1 0       ; R7 := true
  17 [-]: CALL      R2 6 1       ; R2(R3,R4,R5,R6,R7)
  18 [-]: SETTABLE  R0 K6 K7     ; R0["mReset"] := true
  19 [-]: RETURN    R0 1         ; return 
@@ -274,9 +274,9 @@
 ; Is_vararg:       0
 ; Max Stack Size:  9
 
-  1 [-]: LOADBOOL  R1 0 0       ; R1 := false
-  2 [-]: LOADBOOL  R2 0 0       ; R2 := false
-  3 [-]: LOADK     R3 0         ; R3 := 0.000000
+  1 [-]: LOADKB    R1 0 0       ; R1 := false
+  2 [-]: LOADKB    R2 0 0       ; R2 := false
+  3 [-]: CONST     R3 0         ; R3 := 0.000000
   4 [-]: GETGLOBAL R4 K0        ; R4 := 0x7b998233
   5 [-]: MOVE      R5 R0        ; R5 := R0
   6 [-]: CALL      R4 2 2       ; R4 := R4(R5)
@@ -291,8 +291,8 @@
  15 [-]: GETTABLE  R4 R4 K3     ; R4 := R4["mSpeakerName"]
  16 [-]: EQ        1 R4 K4      ; if R4 == "/Lotus/Language/Npcs/PrimeVaultTrader" then PC := 19
  17 [-]: JMP       19           ; PC := 19
- 18 [-]: LOADBOOL  R2 0 1       ; R2 := false; PC := 19
- 19 [-]: LOADBOOL  R2 1 0       ; R2 := true
+ 18 [-]: LOADKB    R2 0 1       ; R2 := false; PC := 19
+ 19 [-]: LOADKB    R2 1 0       ; R2 := true
  20 [-]: TEST      R1 0         ; if not R1 then PC := 67
  21 [-]: JMP       67           ; PC := 67
  22 [-]: TEST      R2 0         ; if not R2 then PC := 65
@@ -338,7 +338,7 @@
  62 [-]: MOVE      R8 R5        ; R8 := R5
  63 [-]: CALL      R6 3 1       ; R6(R7,R8)
  64 [-]: JMP       75           ; PC := 75
- 65 [-]: LOADBOOL  R1 0 0       ; R1 := false
+ 65 [-]: LOADKB    R1 0 0       ; R1 := false
  66 [-]: JMP       75           ; PC := 75
  67 [-]: TEST      R2 0         ; if not R2 then PC := 75
  68 [-]: JMP       75           ; PC := 75
@@ -347,9 +347,9 @@
  71 [-]: GETGLOBAL R8 K9        ; R8 := 0xc8dbde7b
  72 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
  73 [-]: MOVE      R3 R6        ; R3 := R6
- 74 [-]: LOADBOOL  R1 1 0       ; R1 := true
+ 74 [-]: LOADKB    R1 1 0       ; R1 := true
  75 [-]: GETGLOBAL R6 K14       ; R6 := 0xcbd666e1
- 76 [-]: LOADK     R7 0         ; R7 := 0.000000
+ 76 [-]: CONST     R7 0         ; R7 := 0.000000
  77 [-]: CALL      R6 2 1       ; R6(R7)
  78 [-]: JMP       4            ; PC := 4
  79 [-]: RETURN    R0 1         ; return 

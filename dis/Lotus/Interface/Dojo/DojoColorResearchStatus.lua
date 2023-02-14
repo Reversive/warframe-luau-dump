@@ -13,13 +13,13 @@
   4 [-]: GETGLOBAL R1 K0        ; R1 := 0x2d0fad09
   5 [-]: LOADK     R2 K2        ; R2 := "Lotus.Interface.LotusUtilities"
   6 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  7 [-]: LOADK     R2 10        ; R2 := 10.000000
-  8 [-]: LOADK     R3 300       ; R3 := 300.000000
+  7 [-]: CONST     R2 10        ; R2 := 10.000000
+  8 [-]: CONST     R3 300       ; R3 := 300.000000
   9 [-]: LOADNIL   R4 R4        ; R4 := nil
  10 [-]: NEWTABLE  R5 0 0       ; R5 := {}
  11 [-]: LOADNIL   R6 R10       ; R6 := R7 := R8 := R9 := R10 := nil
- 12 [-]: LOADBOOL  R11 0 0      ; R11 := false
- 13 [-]: LOADBOOL  R12 0 0      ; R12 := false
+ 12 [-]: LOADKB    R11 0 0      ; R11 := false
+ 13 [-]: LOADKB    R12 0 0      ; R12 := false
  14 [-]: LOADNIL   R13 R13      ; R13 := nil
  15 [-]: CLOSURE   R14 0        ; R14 := closure(Function #1)
  16 [-]: MOVE      R0 R9        ; R0 := R9
@@ -101,13 +101,13 @@
  12 [-]: GETUPVAL  R4 U1        ; R4 := U1
  13 [-]: GETTABLE  R4 R4 R0     ; R4 := R4[R0]
  14 [-]: GETTABLE  R4 R4 K6     ; R4 := R4["LocTag"]
- 15 [-]: LOADBOOL  R5 1 0       ; R5 := true
+ 15 [-]: LOADKB    R5 1 0       ; R5 := true
  16 [-]: CALL      R2 4 0       ; R2,... := R2(R3,R4,R5)
  17 [-]: CALL      R1 0 2       ; R1 := R1(R2,...)
  18 [-]: GETGLOBAL R2 K4        ; R2 := 0xae91e43b
  19 [-]: SELF      R2 R2 K7     ; R3 := R2; R2 := R2[0x5f56eeab]
  20 [-]: LOADK     R4 K8        ; R4 := "Status.PigmentDrops.AvatarInfo.Name"
- 21 [-]: LOADK     R5 29        ; R5 := 29.000000
+ 21 [-]: CONST     R5 29        ; R5 := 29.000000
  22 [-]: MOVE      R6 R1        ; R6 := R1
  23 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
  24 [-]: GETUPVAL  R2 U2        ; R2 := U2
@@ -117,7 +117,7 @@
  28 [-]: GETTABLE  R4 R4 R0     ; R4 := R4[R0]
  29 [-]: GETTABLE  R4 R4 K11    ; R4 := R4["Icon"]
  30 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 31 [-]: NOT       R3 R3        ; R3 := not R3
+ 31 [-]: NOT       R3 R3        ; R3 :=  R3
  32 [-]: GETUPVAL  R4 U1        ; R4 := U1
  33 [-]: GETTABLE  R4 R4 R0     ; R4 := R4[R0]
  34 [-]: GETTABLE  R4 R4 K11    ; R4 := R4["Icon"]
@@ -161,7 +161,7 @@
  19 [-]: GETGLOBAL R1 K5        ; R1 := 0xae91e43b
  20 [-]: SELF      R1 R1 K6     ; R2 := R1; R1 := R1[0x5f56eeab]
  21 [-]: LOADK     R3 K7        ; R3 := "Status.ProgressData"
- 22 [-]: LOADK     R4 29        ; R4 := 29.000000
+ 22 [-]: CONST     R4 29        ; R4 := 29.000000
  23 [-]: GETUPVAL  R5 U2        ; R5 := U2
  24 [-]: GETTABLE  R5 R5 K8     ; R5 := R5[0x817b1503]
  25 [-]: GETGLOBAL R6 K5        ; R6 := 0xae91e43b
@@ -170,8 +170,8 @@
  28 [-]: CALL      R1 0 1       ; R1(R2,...)
  29 [-]: LE        1 R0 K9      ; if R0 <= 0.000000 then PC := 32
  30 [-]: JMP       32           ; PC := 32
- 31 [-]: LOADBOOL  R1 0 1       ; R1 := false; PC := 32
- 32 [-]: LOADBOOL  R1 1 0       ; R1 := true
+ 31 [-]: LOADKB    R1 0 1       ; R1 := false; PC := 32
+ 32 [-]: LOADKB    R1 1 0       ; R1 := true
  33 [-]: RETURN    R1 2         ; return R1
  34 [-]: RETURN    R0 1         ; return 
 
@@ -200,9 +200,9 @@
  13 [-]: GETTABLE  R2 R2 K4     ; R2 := R2["mGameRules"]
  14 [-]: SELF      R2 R2 K5     ; R3 := R2; R2 := R2[0xa65a128c]
  15 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 16 [-]: LOADK     R3 1         ; R3 := 1.000000
+ 16 [-]: CONST     R3 1         ; R3 := 1.000000
  17 [-]: LEN       R4 R2        ; R4 := # R2
- 18 [-]: LOADK     R5 1         ; R5 := 1.000000
+ 18 [-]: CONST     R5 1         ; R5 := 1.000000
  19 [-]: FORPREP   R3 71        ; R3 -= R5; PC := 71
  20 [-]: GETTABLE  R7 R2 R6     ; R7 := R2[R6]
  21 [-]: GETGLOBAL R8 K6        ; R8 := 0x7b998233
@@ -280,9 +280,9 @@
  93 [-]: GETTABLE  R8 R8 K1     ; R8 := R8["mItemType"]
  94 [-]: SELF      R8 R8 K17    ; R9 := R8; R8 := R8[0xe19eb6d6]
  95 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 96 [-]: LOADK     R9 1         ; R9 := 1.000000
+ 96 [-]: CONST     R9 1         ; R9 := 1.000000
  97 [-]: LEN       R10 R8       ; R10 := # R8
- 98 [-]: LOADK     R11 1        ; R11 := 1.000000
+ 98 [-]: CONST     R11 1        ; R11 := 1.000000
  99 [-]: FORPREP   R9 136       ; R9 -= R11; PC := 136
 100 [-]: GETGLOBAL R13 K18      ; R13 := 0x33bdd652
 101 [-]: GETTABLE  R13 R13 K19  ; R13 := R13[0x23d5322f]
@@ -334,8 +334,8 @@
 147 [-]: GETUPVAL  R14 U0       ; R14 := U0
 148 [-]: EQ        0 R14 K0     ; if R14 ~= nil then PC := 151
 149 [-]: JMP       151          ; PC := 151
-150 [-]: LOADBOOL  R14 0 1      ; R14 := false; PC := 151
-151 [-]: LOADBOOL  R14 1 0      ; R14 := true
+150 [-]: LOADKB    R14 0 1      ; R14 := false; PC := 151
+151 [-]: LOADKB    R14 1 0      ; R14 := true
 152 [-]: CALL      R12 3 1      ; R12(R13,R14)
 153 [-]: GETUPVAL  R12 U0       ; R12 := U0
 154 [-]: EQ        1 R12 K0     ; if R12 == nil then PC := 369
@@ -370,8 +370,8 @@
 183 [-]: GETGLOBAL R14 K8       ; R14 := gDojoColorRecipeItemType
 184 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
 185 [-]: JMP       188          ; PC := 188
-186 [-]: LOADBOOL  R12 0 1      ; R12 := false; PC := 187
-187 [-]: LOADBOOL  R12 1 0      ; R12 := true
+186 [-]: LOADKB    R12 0 1      ; R12 := false; PC := 187
+187 [-]: LOADKB    R12 1 0      ; R12 := true
 188 [-]: GETGLOBAL R13 K39      ; R13 := 0x7f5022cf
 189 [-]: GETTABLE  R13 R13 K40  ; R13 := R13[0x3f3e4d12]
 190 [-]: GETGLOBAL R14 K41      ; R14 := 0x603636ad
@@ -381,64 +381,64 @@
 194 [-]: LOADK     R17 K43      ; R17 := "/Lotus/Language/Dojo/ColorResearch_ProgressTitle"
 195 [-]: LOADK     R18 K44      ; R18 := "/Lotus/Language/Dojo/ResearchRemaining"
 196 [-]: CALL      R15 4 2      ; R15 := R15(R16,R17,R18)
-197 [-]: LOADBOOL  R16 0 0      ; R16 := false
+197 [-]: LOADKB    R16 0 0      ; R16 := false
 198 [-]: CALL      R14 3 0      ; R14,... := R14(R15,R16)
 199 [-]: CALL      R13 0 2      ; R13 := R13(R14,...)
 200 [-]: GETGLOBAL R14 K28      ; R14 := 0xae91e43b
 201 [-]: SELF      R14 R14 K45  ; R15 := R14; R14 := R14[0x5f56eeab]
 202 [-]: LOADK     R16 K46      ; R16 := "Status.ProgressTitle"
-203 [-]: LOADK     R17 29       ; R17 := 29.000000
+203 [-]: CONST     R17 29       ; R17 := 29.000000
 204 [-]: MOVE      R18 R13      ; R18 := R13
 205 [-]: CALL      R14 5 1      ; R14(R15,R16,R17,R18)
 206 [-]: GETGLOBAL R14 K28      ; R14 := 0xae91e43b
 207 [-]: SELF      R14 R14 K47  ; R15 := R14; R14 := R14[0xaade900e]
 208 [-]: LOADK     R16 K48      ; R16 := "Status.Progress"
-209 [-]: LOADK     R17 11       ; R17 := 11.000000
+209 [-]: CONST     R17 11       ; R17 := 11.000000
 210 [-]: MOVE      R18 R12      ; R18 := R12
 211 [-]: CALL      R14 5 1      ; R14(R15,R16,R17,R18)
 212 [-]: GETGLOBAL R14 K28      ; R14 := 0xae91e43b
 213 [-]: SELF      R14 R14 K47  ; R15 := R14; R14 := R14[0xaade900e]
 214 [-]: LOADK     R16 K49      ; R16 := "Status.PigmentDrops"
-215 [-]: LOADK     R17 11       ; R17 := 11.000000
+215 [-]: CONST     R17 11       ; R17 := 11.000000
 216 [-]: TESTSET   R18 R12 0    ; if not R12 then PC := 224 else R18 := R12
 217 [-]: JMP       224          ; PC := 224
 218 [-]: GETUPVAL  R18 U1       ; R18 := U1
 219 [-]: LEN       R18 R18      ; R18 := # R18
 220 [-]: LT        1 K11 R18    ; if 0.000000 < R18 then PC := 223
 221 [-]: JMP       223          ; PC := 223
-222 [-]: LOADBOOL  R18 0 1      ; R18 := false; PC := 223
-223 [-]: LOADBOOL  R18 1 0      ; R18 := true
+222 [-]: LOADKB    R18 0 1      ; R18 := false; PC := 223
+223 [-]: LOADKB    R18 1 0      ; R18 := true
 224 [-]: CALL      R14 5 1      ; R14(R15,R16,R17,R18)
-225 [-]: LOADK     R14 0        ; R14 := 0.000000
+225 [-]: CONST     R14 0        ; R14 := 0.000000
 226 [-]: TEST      R12 0        ; if not R12 then PC := 240
 227 [-]: JMP       240          ; PC := 240
 228 [-]: GETGLOBAL R15 K28      ; R15 := 0xae91e43b
 229 [-]: SELF      R15 R15 K50  ; R16 := R15; R15 := R15[0x91a24e4b]
 230 [-]: LOADK     R17 K49      ; R17 := "Status.PigmentDrops"
-231 [-]: LOADK     R18 1        ; R18 := 1.000000
+231 [-]: CONST     R18 1        ; R18 := 1.000000
 232 [-]: CALL      R15 4 2      ; R15 := R15(R16,R17,R18)
 233 [-]: GETGLOBAL R16 K28      ; R16 := 0xae91e43b
 234 [-]: SELF      R16 R16 K50  ; R17 := R16; R16 := R16[0x91a24e4b]
 235 [-]: LOADK     R18 K49      ; R18 := "Status.PigmentDrops"
-236 [-]: LOADK     R19 13       ; R19 := 13.000000
+236 [-]: CONST     R19 13       ; R19 := 13.000000
 237 [-]: CALL      R16 4 2      ; R16 := R16(R17,R18,R19)
 238 [-]: ADD       R14 R15 R16  ; R14 := R15 + R16
 239 [-]: JMP       251          ; PC := 251
 240 [-]: GETGLOBAL R16 K28      ; R16 := 0xae91e43b
 241 [-]: SELF      R16 R16 K50  ; R17 := R16; R16 := R16[0x91a24e4b]
 242 [-]: LOADK     R18 K51      ; R18 := "Status.ProgressData"
-243 [-]: LOADK     R19 1        ; R19 := 1.000000
+243 [-]: CONST     R19 1        ; R19 := 1.000000
 244 [-]: CALL      R16 4 2      ; R16 := R16(R17,R18,R19)
 245 [-]: GETGLOBAL R17 K28      ; R17 := 0xae91e43b
 246 [-]: SELF      R17 R17 K50  ; R18 := R17; R17 := R17[0x91a24e4b]
 247 [-]: LOADK     R19 K51      ; R19 := "Status.ProgressData"
-248 [-]: LOADK     R20 34       ; R20 := 34.000000
+248 [-]: CONST     R20 34       ; R20 := 34.000000
 249 [-]: CALL      R17 4 2      ; R17 := R17(R18,R19,R20)
 250 [-]: ADD       R14 R16 R17  ; R14 := R16 + R17
 251 [-]: GETGLOBAL R17 K28      ; R17 := 0xae91e43b
 252 [-]: SELF      R17 R17 K52  ; R18 := R17; R17 := R17[0x67bc869f]
 253 [-]: LOADK     R19 K33      ; R19 := "Status.Bg"
-254 [-]: LOADK     R20 13       ; R20 := 13.000000
+254 [-]: CONST     R20 13       ; R20 := 13.000000
 255 [-]: ADD       R21 R14 K53  ; R21 := R14 + 20.000000
 256 [-]: CALL      R17 5 1      ; R17(R18,R19,R20,R21)
 257 [-]: TEST      R12 0        ; if not R12 then PC := 356
@@ -449,32 +449,32 @@
 262 [-]: GETGLOBAL R18 K28      ; R18 := 0xae91e43b
 263 [-]: SELF      R18 R18 K47  ; R19 := R18; R18 := R18[0xaade900e]
 264 [-]: LOADK     R20 K51      ; R20 := "Status.ProgressData"
-265 [-]: LOADK     R21 11       ; R21 := 11.000000
+265 [-]: CONST     R21 11       ; R21 := 11.000000
 266 [-]: EQ        0 R17 K0     ; if R17 ~= nil then PC := 269
 267 [-]: JMP       269          ; PC := 269
-268 [-]: LOADBOOL  R22 0 1      ; R22 := false; PC := 269
-269 [-]: LOADBOOL  R22 1 0      ; R22 := true
+268 [-]: LOADKB    R22 0 1      ; R22 := false; PC := 269
+269 [-]: LOADKB    R22 1 0      ; R22 := true
 270 [-]: CALL      R18 5 1      ; R18(R19,R20,R21,R22)
 271 [-]: GETGLOBAL R18 K28      ; R18 := 0xae91e43b
 272 [-]: SELF      R18 R18 K47  ; R19 := R18; R18 := R18[0xaade900e]
 273 [-]: LOADK     R20 K48      ; R20 := "Status.Progress"
-274 [-]: LOADK     R21 11       ; R21 := 11.000000
+274 [-]: CONST     R21 11       ; R21 := 11.000000
 275 [-]: EQ        0 R17 K0     ; if R17 ~= nil then PC := 278
 276 [-]: JMP       278          ; PC := 278
-277 [-]: LOADBOOL  R22 0 1      ; R22 := false; PC := 278
-278 [-]: LOADBOOL  R22 1 0      ; R22 := true
+277 [-]: LOADKB    R22 0 1      ; R22 := false; PC := 278
+278 [-]: LOADKB    R22 1 0      ; R22 := true
 279 [-]: CALL      R18 5 1      ; R18(R19,R20,R21,R22)
 280 [-]: EQ        1 R17 K0     ; if R17 == nil then PC := 340
 281 [-]: JMP       340          ; PC := 340
-282 [-]: LOADK     R18 0        ; R18 := 0.000000
-283 [-]: LOADK     R19 0        ; R19 := 0.000000
+282 [-]: CONST     R18 0        ; R18 := 0.000000
+283 [-]: CONST     R19 0        ; R19 := 0.000000
 284 [-]: GETUPVAL  R20 U0       ; R20 := U0
 285 [-]: GETTABLE  R20 R20 K1   ; R20 := R20["mItemType"]
 286 [-]: SELF      R20 R20 K55  ; R21 := R20; R20 := R20[0xfc40d6a1]
 287 [-]: CALL      R20 2 2      ; R20 := R20(R21)
-288 [-]: LOADK     R21 1        ; R21 := 1.000000
+288 [-]: CONST     R21 1        ; R21 := 1.000000
 289 [-]: LEN       R22 R20      ; R22 := # R20
-290 [-]: LOADK     R23 1        ; R23 := 1.000000
+290 [-]: CONST     R23 1        ; R23 := 1.000000
 291 [-]: FORPREP   R21 313      ; R21 -= R23; PC := 313
 292 [-]: GETTABLE  R25 R20 R24  ; R25 := R20[R24]
 293 [-]: GETTABLE  R25 R25 K1   ; R25 := R25["mItemType"]
@@ -492,7 +492,7 @@
 305 [-]: GETTABLE  R29 R29 K4   ; R29 := R29["mGameRules"]
 306 [-]: SELF      R29 R29 K59  ; R30 := R29; R29 := R29[0x3cbed8a9]
 307 [-]: CALL      R29 2 2      ; R29 := R29(R30)
-308 [-]: LOADBOOL  R30 1 0      ; R30 := true
+308 [-]: LOADKB    R30 1 0      ; R30 := true
 309 [-]: CALL      R25 6 2      ; R25 := R25(R26,R27,R28,R29,R30)
 310 [-]: MOVE      R18 R25      ; R18 := R25
 311 [-]: GETTABLE  R25 R17 K58  ; R25 := R17["mItemCount"]
@@ -501,7 +501,7 @@
 314 [-]: GETGLOBAL R25 K28      ; R25 := 0xae91e43b
 315 [-]: SELF      R25 R25 K45  ; R26 := R25; R25 := R25[0x5f56eeab]
 316 [-]: LOADK     R27 K51      ; R27 := "Status.ProgressData"
-317 [-]: LOADK     R28 29       ; R28 := 29.000000
+317 [-]: CONST     R28 29       ; R28 := 29.000000
 318 [-]: MOVE      R29 R19      ; R29 := R19
 319 [-]: LOADK     R30 K60      ; R30 := " / "
 320 [-]: MOVE      R31 R18      ; R31 := R18
@@ -510,13 +510,13 @@
 323 [-]: GETGLOBAL R25 K28      ; R25 := 0xae91e43b
 324 [-]: SELF      R25 R25 K50  ; R26 := R25; R25 := R25[0x91a24e4b]
 325 [-]: LOADK     R27 K61      ; R27 := "Status.Progress.Bg"
-326 [-]: LOADK     R28 12       ; R28 := 12.000000
+326 [-]: CONST     R28 12       ; R28 := 12.000000
 327 [-]: CALL      R25 4 2      ; R25 := R25(R26,R27,R28)
 328 [-]: SUB       R25 R25 K62  ; R25 := R25 - 2.000000
 329 [-]: GETGLOBAL R26 K28      ; R26 := 0xae91e43b
 330 [-]: SELF      R26 R26 K52  ; R27 := R26; R26 := R26[0x67bc869f]
 331 [-]: LOADK     R28 K63      ; R28 := "Status.Progress.Fill"
-332 [-]: LOADK     R29 12       ; R29 := 12.000000
+332 [-]: CONST     R29 12       ; R29 := 12.000000
 333 [-]: GETGLOBAL R30 K64      ; R30 := 0x5bced4c4
 334 [-]: GETTABLE  R30 R30 K65  ; R30 := R30[0xb62ecfe0]
 335 [-]: DIV       R31 R19 R18  ; R31 := R19 / R18
@@ -533,7 +533,7 @@
 346 [-]: LEN       R26 R26      ; R26 := # R26
 347 [-]: LT        0 K11 R26    ; if 0.000000 >= R26 then PC := 358
 348 [-]: JMP       358          ; PC := 358
-349 [-]: LOADK     R26 0        ; R26 := 0.000000
+349 [-]: CONST     R26 0        ; R26 := 0.000000
 350 [-]: SETUPVAL  R26 U3       ; U82 := R3
 351 [-]: GETUPVAL  R26 U8       ; R26 := U8
 352 [-]: SETUPVAL  R26 U4       ; U82 := R4
@@ -545,7 +545,7 @@
 358 [-]: GETGLOBAL R26 K28      ; R26 := 0xae91e43b
 359 [-]: SELF      R26 R26 K45  ; R27 := R26; R26 := R26[0x5f56eeab]
 360 [-]: LOADK     R28 K51      ; R28 := "Status.ProgressData"
-361 [-]: LOADK     R29 37       ; R29 := 37.000000
+361 [-]: CONST     R29 37       ; R29 := 37.000000
 362 [-]: GETUPVAL  R30 U7       ; R30 := U7
 363 [-]: GETTABLE  R30 R30 K42  ; R30 := R30[0x06d055f9]
 364 [-]: MOVE      R31 R12      ; R31 := R12
@@ -598,7 +598,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
-  1 [-]: LOADBOOL  R0 1 0       ; R0 := true
+  1 [-]: LOADKB    R0 1 0       ; R0 := true
   2 [-]: SETUPVAL  R0 U0        ; U82 := R0
   3 [-]: RETURN    R0 1         ; return 
 
@@ -632,7 +632,7 @@
  18 [-]: JMP       28           ; PC := 28
  19 [-]: GETUPVAL  R4 U0        ; R4 := U0
  20 [-]: SELF      R4 R4 K5     ; R5 := R4; R4 := R4[0xa5639b9f]
- 21 [-]: LOADBOOL  R6 1 0       ; R6 := true
+ 21 [-]: LOADKB    R6 1 0       ; R6 := true
  22 [-]: LOADK     R7 K6        ; R7 := ""
  23 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
  24 [-]: GETUPVAL  R4 U0        ; R4 := U0
@@ -701,7 +701,7 @@
   7 [-]: RETURN    R0 1         ; return 
   8 [-]: GETGLOBAL R0 K3        ; R0 := 0x76ea806b
   9 [-]: SELF      R0 R0 K4     ; R1 := R0; R0 := R0[0x3f3ae64c]
- 10 [-]: LOADK     R2 0         ; R2 := 0.000000
+ 10 [-]: CONST     R2 0         ; R2 := 0.000000
  11 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
  12 [-]: GETGLOBAL R1 K0        ; R1 := 0x7b998233
  13 [-]: MOVE      R2 R0        ; R2 := R0
@@ -753,7 +753,7 @@
  59 [-]: SELF      R3 R3 K16    ; R4 := R3; R3 := R3[0x802f7dd8]
  60 [-]: LOADK     R5 K17       ; R5 := "OnGuildTech"
  61 [-]: CALL      R3 3 1       ; R3(R4,R5)
- 62 [-]: LOADBOOL  R3 1 0       ; R3 := true
+ 62 [-]: LOADKB    R3 1 0       ; R3 := true
  63 [-]: SETUPVAL  R3 U3        ; U82 := R3
  64 [-]: RETURN    R0 1         ; return 
 
@@ -829,15 +829,15 @@
  46 [-]: GETGLOBAL R1 K9        ; R1 := 0x25312c9b
  47 [-]: GETGLOBAL R2 K4        ; R2 := 0xae91e43b
  48 [-]: LOADK     R3 K10       ; R3 := "Status.PigmentDrops.AvatarInfo"
- 49 [-]: LOADK     R4 8         ; R4 := 8.000000
+ 49 [-]: CONST     R4 8         ; R4 := 8.000000
  50 [-]: NEWTABLE  R5 1 0       ; R5 := {}
  51 [-]: LOADK     R6 K12       ; R6 := "_alpha"
  52 [-]: SETLIST   R5 1 1       ; R5[(1-1)*FPF+i] := R(5+i), 1 <= i <= 1
  53 [-]: NEWTABLE  R6 1 0       ; R6 := {}
- 54 [-]: LOADK     R7 0         ; R7 := 0.000000
+ 54 [-]: CONST     R7 0         ; R7 := 0.000000
  55 [-]: SETLIST   R6 1 1       ; R6[(1-1)*FPF+i] := R(6+i), 1 <= i <= 1
- 56 [-]: LOADK     R7 0         ; R7 := 0.500000
- 57 [-]: LOADK     R8 0         ; R8 := 0.000000
+ 56 [-]: CONST     R7 0         ; R7 := 0.500000
+ 57 [-]: CONST     R8 0         ; R8 := 0.000000
  58 [-]: CLOSURE   R9 0         ; R9 := closure(Function #9.1)
  59 [-]: GETUPVAL  R0 U5        ; R0 := U5
  60 [-]: GETUPVAL  R0 U6        ; R0 := U6
@@ -863,7 +863,7 @@
  80 [-]: GETUPVAL  R1 U9        ; R1 := U9
  81 [-]: LE        0 R1 K8      ; if R1 > 0.000000 then PC := 114
  82 [-]: JMP       114          ; PC := 114
- 83 [-]: LOADBOOL  R1 0 0       ; R1 := false
+ 83 [-]: LOADKB    R1 0 0       ; R1 := false
  84 [-]: SETUPVAL  R1 U10       ; U82 := R10
  85 [-]: LOADNIL   R1 R1        ; R1 := nil
  86 [-]: SETUPVAL  R1 U9        ; U82 := R9
@@ -906,7 +906,7 @@
 123 [-]: SETUPVAL  R2 U3        ; U82 := R3
 124 [-]: GETGLOBAL R2 K4        ; R2 := 0xae91e43b
 125 [-]: SELF      R2 R2 K20    ; R3 := R2; R2 := R2[0x368ad758]
-126 [-]: LOADBOOL  R4 0 0       ; R4 := false
+126 [-]: LOADKB    R4 0 0       ; R4 := false
 127 [-]: CALL      R2 3 1       ; R2(R3,R4)
 128 [-]: RETURN    R0 1         ; return 
 
@@ -933,15 +933,15 @@
  11 [-]: GETGLOBAL R0 K3        ; R0 := 0x25312c9b
  12 [-]: GETGLOBAL R1 K4        ; R1 := 0xae91e43b
  13 [-]: LOADK     R2 K5        ; R2 := "Status.PigmentDrops.AvatarInfo"
- 14 [-]: LOADK     R3 8         ; R3 := 8.000000
+ 14 [-]: CONST     R3 8         ; R3 := 8.000000
  15 [-]: NEWTABLE  R4 1 0       ; R4 := {}
  16 [-]: LOADK     R5 K7        ; R5 := "_alpha"
  17 [-]: SETLIST   R4 1 1       ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 1
  18 [-]: NEWTABLE  R5 1 0       ; R5 := {}
- 19 [-]: LOADK     R6 100       ; R6 := 100.000000
+ 19 [-]: CONST     R6 100       ; R6 := 100.000000
  20 [-]: SETLIST   R5 1 1       ; R5[(1-1)*FPF+i] := R(5+i), 1 <= i <= 1
- 21 [-]: LOADK     R6 0         ; R6 := 0.500000
- 22 [-]: LOADK     R7 0         ; R7 := 0.000000
+ 21 [-]: CONST     R6 0         ; R6 := 0.500000
+ 22 [-]: CONST     R7 0         ; R7 := 0.000000
  23 [-]: CLOSURE   R8 0         ; R8 := closure(Function #9.1.1)
  24 [-]: GETUPVAL  R0 U3        ; R0 := U3
  25 [-]: GETUPVAL  R0 U4        ; R0 := U4

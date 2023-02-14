@@ -10,7 +10,7 @@
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x2d0fad09
   2 [-]: LOADK     R1 K1        ; R1 := "Lotus.Scripts.Libs.AbilitiesLib"
   3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: LOADK     R1 10        ; R1 := 10.000000
+  4 [-]: CONST     R1 10        ; R1 := 10.000000
   5 [-]: CLOSURE   R2 0         ; R2 := closure(Function #1)
   6 [-]: MOVE      R0 R1        ; R0 := R1
   7 [-]: SETGLOBAL R2 K2        ; GetPassiveInfo := R2
@@ -74,25 +74,25 @@
  21 [-]: GETTABLE  R2 R2 K6     ; R2 := R2[0x449a507e]
  22 [-]: CALL      R2 1 2       ; R2 := R2()
  23 [-]: SELF      R3 R2 K7     ; R4 := R2; R3 := R2[0xc670d7f3]
- 24 [-]: LOADK     R5 1         ; R5 := 1.000000
+ 24 [-]: CONST     R5 2         ; R5 := 2.000000
  25 [-]: CALL      R3 3 1       ; R3(R4,R5)
  26 [-]: SELF      R3 R2 K9     ; R4 := R2; R3 := R2[0x14894de6]
- 27 [-]: LOADK     R5 146       ; R5 := 146.000000
+ 27 [-]: CONST     R5 149       ; R5 := 149.000000
  28 [-]: CALL      R3 3 1       ; R3(R4,R5)
  29 [-]: SELF      R3 R2 K10    ; R4 := R2; R3 := R2[0x8550d2a7]
  30 [-]: GETUPVAL  R5 U1        ; R5 := U1
  31 [-]: CALL      R3 3 1       ; R3(R4,R5)
  32 [-]: SELF      R3 R2 K11    ; R4 := R2; R3 := R2[0xf0952e00]
- 33 [-]: LOADK     R5 20        ; R5 := 20.000000
- 34 [-]: LOADBOOL  R6 1 0       ; R6 := true
+ 33 [-]: CONST     R5 20        ; R5 := 20.000000
+ 34 [-]: LOADKB    R6 1 0       ; R6 := true
  35 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
  36 [-]: SELF      R3 R2 K11    ; R4 := R2; R3 := R2[0xf0952e00]
- 37 [-]: LOADK     R5 21        ; R5 := 21.000000
- 38 [-]: LOADBOOL  R6 1 0       ; R6 := true
+ 37 [-]: CONST     R5 21        ; R5 := 21.000000
+ 38 [-]: LOADKB    R6 1 0       ; R6 := true
  39 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
  40 [-]: SELF      R3 R2 K11    ; R4 := R2; R3 := R2[0xf0952e00]
- 41 [-]: LOADK     R5 22        ; R5 := 22.000000
- 42 [-]: LOADBOOL  R6 1 0       ; R6 := true
+ 41 [-]: CONST     R5 22        ; R5 := 22.000000
+ 42 [-]: LOADKB    R6 1 0       ; R6 := true
  43 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
  44 [-]: SELF      R3 R1 K12    ; R4 := R1; R3 := R1[0xde321e6f]
  45 [-]: CALL      R3 2 2       ; R3 := R3(R4)
@@ -134,25 +134,25 @@
  21 [-]: GETTABLE  R2 R2 K6     ; R2 := R2[0x449a507e]
  22 [-]: CALL      R2 1 2       ; R2 := R2()
  23 [-]: SELF      R3 R2 K7     ; R4 := R2; R3 := R2[0xc670d7f3]
- 24 [-]: LOADK     R5 1         ; R5 := 1.000000
+ 24 [-]: CONST     R5 2         ; R5 := 2.000000
  25 [-]: CALL      R3 3 1       ; R3(R4,R5)
  26 [-]: SELF      R3 R2 K9     ; R4 := R2; R3 := R2[0x14894de6]
- 27 [-]: LOADK     R5 146       ; R5 := 146.000000
+ 27 [-]: CONST     R5 149       ; R5 := 149.000000
  28 [-]: CALL      R3 3 1       ; R3(R4,R5)
  29 [-]: SELF      R3 R2 K10    ; R4 := R2; R3 := R2[0x8550d2a7]
  30 [-]: GETUPVAL  R5 U1        ; R5 := U1
  31 [-]: CALL      R3 3 1       ; R3(R4,R5)
  32 [-]: SELF      R3 R2 K11    ; R4 := R2; R3 := R2[0xf0952e00]
- 33 [-]: LOADK     R5 20        ; R5 := 20.000000
- 34 [-]: LOADBOOL  R6 1 0       ; R6 := true
+ 33 [-]: CONST     R5 20        ; R5 := 20.000000
+ 34 [-]: LOADKB    R6 1 0       ; R6 := true
  35 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
  36 [-]: SELF      R3 R2 K11    ; R4 := R2; R3 := R2[0xf0952e00]
- 37 [-]: LOADK     R5 21        ; R5 := 21.000000
- 38 [-]: LOADBOOL  R6 1 0       ; R6 := true
+ 37 [-]: CONST     R5 21        ; R5 := 21.000000
+ 38 [-]: LOADKB    R6 1 0       ; R6 := true
  39 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
  40 [-]: SELF      R3 R2 K11    ; R4 := R2; R3 := R2[0xf0952e00]
- 41 [-]: LOADK     R5 22        ; R5 := 22.000000
- 42 [-]: LOADBOOL  R6 1 0       ; R6 := true
+ 41 [-]: CONST     R5 22        ; R5 := 22.000000
+ 42 [-]: LOADKB    R6 1 0       ; R6 := true
  43 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
  44 [-]: SELF      R3 R1 K12    ; R4 := R1; R3 := R1[0xde321e6f]
  45 [-]: CALL      R3 2 2       ; R3 := R3(R4)

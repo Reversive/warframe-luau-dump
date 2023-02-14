@@ -32,7 +32,7 @@
   2 [-]: CALL      R1 2 2       ; R1 := R1(R2)
   3 [-]: TEST      R1 1         ; if R1 then PC := 7
   4 [-]: JMP       7            ; PC := 7
-  5 [-]: LOADBOOL  R1 1 0       ; R1 := true
+  5 [-]: LOADKB    R1 1 0       ; R1 := true
   6 [-]: RETURN    R1 2         ; return R1
   7 [-]: GETUPVAL  R1 U0        ; R1 := U0
   8 [-]: GETTABLE  R1 R1 K1     ; R1 := R1[0x3c43772b]
@@ -56,7 +56,7 @@
  26 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
  27 [-]: TEST      R3 0         ; if not R3 then PC := 32
  28 [-]: JMP       32           ; PC := 32
- 29 [-]: LOADBOOL  R3 1 0       ; R3 := true
+ 29 [-]: LOADKB    R3 1 0       ; R3 := true
  30 [-]: RETURN    R3 2         ; return R3
  31 [-]: JMP       50           ; PC := 50
  32 [-]: GETGLOBAL R3 K8        ; R3 := 0xbe190284
@@ -69,13 +69,13 @@
  39 [-]: JMP       48           ; PC := 48
  40 [-]: GETGLOBAL R4 K10       ; R4 := 0x603636ad
  41 [-]: LOADK     R5 K11       ; R5 := "/Lotus/Language/Game/AnimalRarityBoost_WrongType"
- 42 [-]: LOADBOOL  R6 0 0       ; R6 := false
+ 42 [-]: LOADKB    R6 0 0       ; R6 := false
  43 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
  44 [-]: SELF      R5 R3 K12    ; R6 := R3; R5 := R3[0xe4162eed]
  45 [-]: LOADK     R7 K13       ; R7 := "ShowGameplayMessage"
  46 [-]: MOVE      R8 R4        ; R8 := R4
  47 [-]: CALL      R5 4 1       ; R5(R6,R7,R8)
- 48 [-]: LOADBOOL  R5 0 0       ; R5 := false
+ 48 [-]: LOADKB    R5 0 0       ; R5 := false
  49 [-]: RETURN    R5 2         ; return R5
  50 [-]: GETGLOBAL R5 K8        ; R5 := 0xbe190284
  51 [-]: SELF      R5 R5 K9     ; R6 := R5; R5 := R5[0x33307f92]
@@ -87,13 +87,13 @@
  57 [-]: JMP       66           ; PC := 66
  58 [-]: GETGLOBAL R6 K10       ; R6 := 0x603636ad
  59 [-]: LOADK     R7 K14       ; R7 := "/Lotus/Language/Game/AnimalRarityBoost_BadLocation"
- 60 [-]: LOADBOOL  R8 0 0       ; R8 := false
+ 60 [-]: LOADKB    R8 0 0       ; R8 := false
  61 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
  62 [-]: SELF      R7 R5 K12    ; R8 := R5; R7 := R5[0xe4162eed]
  63 [-]: LOADK     R9 K13       ; R9 := "ShowGameplayMessage"
  64 [-]: MOVE      R10 R6       ; R10 := R6
  65 [-]: CALL      R7 4 1       ; R7(R8,R9,R10)
- 66 [-]: LOADBOOL  R7 0 0       ; R7 := false
+ 66 [-]: LOADKB    R7 0 0       ; R7 := false
  67 [-]: RETURN    R7 2         ; return R7
  68 [-]: RETURN    R0 1         ; return 
 

@@ -7,7 +7,7 @@
 ; Is_vararg:       2
 ; Max Stack Size:  2
 
-  1 [-]: LOADK     R0 2         ; R0 := 2.000000
+  1 [-]: CONST     R0 2         ; R0 := 2.000000
   2 [-]: CLOSURE   R1 0         ; R1 := closure(Function #1)
   3 [-]: MOVE      R0 R0        ; R0 := R0
   4 [-]: SETGLOBAL R1 K0        ; MatchAttackEvent := R1
@@ -89,9 +89,9 @@
  64 [-]: GETUPVAL  R6 U0        ; R6 := U0
  65 [-]: LE        0 R6 R5      ; if R6 > R5 then PC := 69
  66 [-]: JMP       69           ; PC := 69
- 67 [-]: LOADBOOL  R5 1 0       ; R5 := true
+ 67 [-]: LOADKB    R5 1 0       ; R5 := true
  68 [-]: RETURN    R5 2         ; return R5
- 69 [-]: LOADBOOL  R5 0 0       ; R5 := false
+ 69 [-]: LOADKB    R5 0 0       ; R5 := false
  70 [-]: RETURN    R5 2         ; return R5
  71 [-]: RETURN    R0 1         ; return 
 

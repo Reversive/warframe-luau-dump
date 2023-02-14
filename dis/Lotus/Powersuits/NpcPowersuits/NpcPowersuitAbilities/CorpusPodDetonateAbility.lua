@@ -33,9 +33,9 @@
   8 [-]: CALL      R2 4 2       ; R2 := R2(R3,R4,R5)
   9 [-]: LT        0 K4 R2      ; if 0.000000 >= R2 then PC := 13
  10 [-]: JMP       13           ; PC := 13
- 11 [-]: LOADK     R2 1         ; R2 := 1.000000
+ 11 [-]: CONST     R2 1         ; R2 := 1.000000
  12 [-]: RETURN    R2 2         ; return R2
- 13 [-]: LOADK     R2 0         ; R2 := 0.000000
+ 13 [-]: CONST     R2 0         ; R2 := 0.000000
  14 [-]: RETURN    R2 2         ; return R2
  15 [-]: RETURN    R0 1         ; return 
 
@@ -63,9 +63,9 @@
  12 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  13 [-]: TEST      R5 1         ; if R5 then PC := 68
  14 [-]: JMP       68           ; PC := 68
- 15 [-]: LOADK     R5 1         ; R5 := 1.000000
+ 15 [-]: CONST     R5 1         ; R5 := 1.000000
  16 [-]: LEN       R6 R4        ; R6 := # R4
- 17 [-]: LOADK     R7 1         ; R7 := 1.000000
+ 17 [-]: CONST     R7 1         ; R7 := 1.000000
  18 [-]: FORPREP   R5 67        ; R5 -= R7; PC := 67
  19 [-]: GETTABLE  R9 R4 R8     ; R9 := R4[R8]
  20 [-]: SELF      R9 R9 K4     ; R10 := R9; R9 := R9[0xbebad19f]
@@ -74,9 +74,9 @@
  23 [-]: GETGLOBAL R10 K5       ; R10 := 0x3dbcdfab
  24 [-]: LE        0 R9 R10     ; if R9 > R10 then PC := 67
  25 [-]: JMP       67           ; PC := 67
- 26 [-]: LOADK     R9 1         ; R9 := 1.000000
+ 26 [-]: CONST     R9 1         ; R9 := 1.000000
  27 [-]: GETGLOBAL R10 K6       ; R10 := 0x806521dc
- 28 [-]: LOADK     R11 1        ; R11 := 1.000000
+ 28 [-]: CONST     R11 1        ; R11 := 1.000000
  29 [-]: FORPREP   R9 53        ; R9 -= R11; PC := 53
  30 [-]: GETGLOBAL R13 K0       ; R13 := 0x89326c93
  31 [-]: SELF      R13 R13 K7   ; R14 := R13; R13 := R13[0x05909209]
@@ -99,7 +99,7 @@
  48 [-]: CALL      R17 2 2      ; R17 := R17(R18)
  49 [-]: SELF      R18 R13 K15  ; R19 := R13; R18 := R13[0x808b79e6]
  50 [-]: CALL      R18 2 2      ; R18 := R18(R19)
- 51 [-]: LOADBOOL  R19 1 0      ; R19 := true
+ 51 [-]: LOADKB    R19 1 0      ; R19 := true
  52 [-]: CALL      R14 6 1      ; R14(R15,R16,R17,R18,R19)
  53 [-]: FORLOOP   R9 30        ; R9 += R11; if R9 <= R10 then begin PC := 30; R12 := R9 end
  54 [-]: GETGLOBAL R14 K0       ; R14 := 0x89326c93

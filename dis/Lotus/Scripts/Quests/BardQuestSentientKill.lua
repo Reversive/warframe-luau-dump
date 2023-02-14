@@ -30,7 +30,7 @@
   7 [-]: LT        0 R2 K3      ; if R2 >= 60.000000 then PC := 13
   8 [-]: JMP       13           ; PC := 13
   9 [-]: GETGLOBAL R2 K4        ; R2 := 0xcbd666e1
- 10 [-]: LOADK     R3 1         ; R3 := 1.000000
+ 10 [-]: CONST     R3 1         ; R3 := 1.000000
  11 [-]: CALL      R2 2 1       ; R2(R3)
  12 [-]: JMP       4            ; PC := 4
  13 [-]: GETGLOBAL R2 K5        ; R2 := 0x7b998233
@@ -39,7 +39,7 @@
  16 [-]: TEST      R2 1         ; if R2 then PC := 23
  17 [-]: JMP       23           ; PC := 23
  18 [-]: GETGLOBAL R2 K4        ; R2 := 0xcbd666e1
- 19 [-]: LOADK     R3 2         ; R3 := 2.000000
+ 19 [-]: CONST     R3 2         ; R3 := 2.000000
  20 [-]: CALL      R2 2 1       ; R2(R3)
  21 [-]: SELF      R2 R0 K6     ; R3 := R0; R2 := R0[0xa2880940]
  22 [-]: CALL      R2 2 1       ; R2(R3)

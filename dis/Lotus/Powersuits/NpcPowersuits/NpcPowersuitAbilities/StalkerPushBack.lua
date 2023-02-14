@@ -42,7 +42,7 @@
  13 [-]: TEST      R3 1         ; if R3 then PC := 30
  14 [-]: JMP       30           ; PC := 30
  15 [-]: SELF      R3 R1 K4     ; R4 := R1; R3 := R1[0x0e46e45b]
- 16 [-]: LOADK     R5 6         ; R5 := 6.000000
+ 16 [-]: CONST     R5 6         ; R5 := 6.000000
  17 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
  18 [-]: TEST      R3 1         ; if R3 then PC := 30
  19 [-]: JMP       30           ; PC := 30
@@ -56,10 +56,10 @@
  27 [-]: GETTABLE  R3 R3 K7     ; R3 := R3["FightStarted"]
  28 [-]: TEST      R3 1         ; if R3 then PC := 33
  29 [-]: JMP       33           ; PC := 33
- 30 [-]: LOADK     R3 0         ; R3 := 0.000000
+ 30 [-]: CONST     R3 0         ; R3 := 0.000000
  31 [-]: RETURN    R3 2         ; return R3
  32 [-]: JMP       35           ; PC := 35
- 33 [-]: LOADK     R3 1         ; R3 := 1.000000
+ 33 [-]: CONST     R3 1         ; R3 := 1.000000
  34 [-]: RETURN    R3 2         ; return R3
  35 [-]: RETURN    R0 1         ; return 
 
@@ -93,18 +93,18 @@
  18 [-]: SELF      R6 R0 K6     ; R7 := R0; R6 := R0[0xd1586535]
  19 [-]: CALL      R6 2 2       ; R6 := R6(R7)
  20 [-]: GETGLOBAL R7 K7        ; R7 := 0xa421af95
- 21 [-]: LOADK     R8 0         ; R8 := 0.000000
- 22 [-]: LOADK     R9 3         ; R9 := 3.000000
- 23 [-]: LOADK     R10 0        ; R10 := 0.000000
+ 21 [-]: CONST     R8 0         ; R8 := 0.000000
+ 22 [-]: CONST     R9 3         ; R9 := 3.000000
+ 23 [-]: CONST     R10 0        ; R10 := 0.000000
  24 [-]: CALL      R7 4 2       ; R7 := R7(R8,R9,R10)
  25 [-]: ADD       R6 R6 R7     ; R6 := R6 + R7
  26 [-]: GETTABLE  R7 R1 K4     ; R7 := R1["entity"]
  27 [-]: SELF      R7 R7 K6     ; R8 := R7; R7 := R7[0xd1586535]
  28 [-]: CALL      R7 2 2       ; R7 := R7(R8)
  29 [-]: GETGLOBAL R8 K7        ; R8 := 0xa421af95
- 30 [-]: LOADK     R9 0         ; R9 := 0.000000
+ 30 [-]: CONST     R9 0         ; R9 := 0.000000
  31 [-]: LOADK     R10 K8       ; R10 := 0.200000
- 32 [-]: LOADK     R11 0        ; R11 := 0.000000
+ 32 [-]: CONST     R11 0        ; R11 := 0.000000
  33 [-]: CALL      R8 4 2       ; R8 := R8(R9,R10,R11)
  34 [-]: ADD       R7 R7 R8     ; R7 := R7 + R8
  35 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
@@ -186,7 +186,7 @@
  34 [-]: CALL      R10 2 0      ; R10,... := R10(R11)
  35 [-]: CALL      R7 0 2       ; R7 := R7(R8,...)
  36 [-]: GETGLOBAL R8 K11       ; R8 := 0x55730e1a
- 37 [-]: LOADK     R9 1         ; R9 := 1.000000
+ 37 [-]: CONST     R9 1         ; R9 := 1.000000
  38 [-]: LEN       R10 R4       ; R10 := # R4
  39 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
  40 [-]: GETTABLE  R8 R4 R8     ; R8 := R4[R8]
@@ -251,10 +251,10 @@
  99 [-]: LOADK     R13 K26      ; R13 := "DoomProjectile"
 100 [-]: SELF      R14 R1 K27   ; R15 := R1; R14 := R1[0x7027c544]
 101 [-]: GETGLOBAL R16 K28      ; R16 := 0xa33cb7bf
-102 [-]: LOADBOOL  R17 0 0      ; R17 := false
-103 [-]: LOADK     R18 2        ; R18 := 2.000000
-104 [-]: LOADK     R19 1        ; R19 := 1.000000
-105 [-]: LOADBOOL  R20 1 0      ; R20 := true
+102 [-]: LOADKB    R17 0 0      ; R17 := false
+103 [-]: CONST     R18 2        ; R18 := 2.000000
+104 [-]: CONST     R19 1        ; R19 := 1.000000
+105 [-]: LOADKB    R20 1 0      ; R20 := true
 106 [-]: CALL      R14 7 0      ; R14,... := R14(R15,R16,R17,R18,R19,R20)
 107 [-]: CALL      R11 0 1      ; R11(R12,...)
 108 [-]: GETUPVAL  R11 U0       ; R11 := U0
@@ -265,7 +265,7 @@
 113 [-]: EQ        0 R8 R5      ; if R8 ~= R5 then PC := 118
 114 [-]: JMP       118          ; PC := 118
 115 [-]: GETGLOBAL R11 K23      ; R11 := 0xcbd666e1
-116 [-]: LOADK     R12 3        ; R12 := 3.000000
+116 [-]: CONST     R12 3        ; R12 := 3.000000
 117 [-]: CALL      R11 2 1      ; R11(R12)
 118 [-]: GETGLOBAL R11 K23      ; R11 := 0xcbd666e1
 119 [-]: LOADK     R12 K30      ; R12 := 0.300000

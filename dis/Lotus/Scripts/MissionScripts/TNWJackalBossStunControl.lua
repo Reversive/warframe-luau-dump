@@ -25,7 +25,7 @@
  16 [-]: GETGLOBAL R5 K0        ; R5 := 0x0469f296
  17 [-]: LOADK     R6 K6        ; R6 := "TNWJackalPhase2DamageTriggerForwarder"
  18 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 19 [-]: LOADK     R6 2         ; R6 := 2.000000
+ 19 [-]: CONST     R6 2         ; R6 := 2.000000
  20 [-]: CLOSURE   R7 0         ; R7 := closure(Function #1)
  21 [-]: MOVE      R0 R0        ; R0 := R0
  22 [-]: MOVE      R0 R1        ; R0 := R1
@@ -67,7 +67,7 @@
  15 [-]: GETGLOBAL R3 K5        ; R3 := 0xbe190284
  16 [-]: SELF      R3 R3 K6     ; R4 := R3; R3 := R3[0x0eb34c69]
  17 [-]: GETUPVAL  R5 U0        ; R5 := U0
- 18 [-]: LOADK     R6 1         ; R6 := 1.000000
+ 18 [-]: CONST     R6 1         ; R6 := 1.000000
  19 [-]: CALL      R3 4 2       ; R3 := R3(R4,R5,R6)
  20 [-]: SELF      R4 R0 K7     ; R5 := R0; R4 := R0[0xfa9e477f]
  21 [-]: CALL      R4 2 2       ; R4 := R4(R5)
@@ -113,7 +113,7 @@
  61 [-]: SELF      R8 R1 K22    ; R9 := R1; R8 := R1[0xf4e253b6]
  62 [-]: CALL      R8 2 1       ; R8(R9)
  63 [-]: SELF      R8 R0 K23    ; R9 := R0; R8 := R0[0x250a9055]
- 64 [-]: LOADK     R10 0        ; R10 := 0.000000
+ 64 [-]: CONST     R10 0        ; R10 := 0.000000
  65 [-]: GETUPVAL  R11 U2       ; R11 := U2
  66 [-]: CALL      R8 4 1       ; R8(R9,R10,R11)
  67 [-]: GETGLOBAL R8 K0        ; R8 := 0x7b998233
@@ -137,7 +137,7 @@
  85 [-]: GETGLOBAL R8 K14       ; R8 := _T
  86 [-]: GETTABLE  R8 R8 K25    ; R8 := R8["VesoDecoyMoaAvatar"]
  87 [-]: SELF      R8 R8 K23    ; R9 := R8; R8 := R8[0x250a9055]
- 88 [-]: LOADK     R10 2        ; R10 := 2.000000
+ 88 [-]: CONST     R10 2        ; R10 := 2.000000
  89 [-]: GETUPVAL  R11 U3       ; R11 := U3
  90 [-]: CALL      R8 4 1       ; R8(R9,R10,R11)
  91 [-]: GETGLOBAL R8 K14       ; R8 := _T
@@ -147,7 +147,7 @@
  95 [-]: CALL      R8 2 1       ; R8(R9)
  96 [-]: RETURN    R0 1         ; return 
  97 [-]: GETGLOBAL R8 K31       ; R8 := 0xcbd666e1
- 98 [-]: LOADK     R9 0         ; R9 := 0.000000
+ 98 [-]: CONST     R9 0         ; R9 := 0.000000
  99 [-]: CALL      R8 2 1       ; R8(R9)
 100 [-]: JMP       42           ; PC := 42
 101 [-]: GETGLOBAL R8 K0        ; R8 := 0x7b998233
@@ -163,11 +163,11 @@
 111 [-]: TEST      R9 1         ; if R9 then PC := 117
 112 [-]: JMP       117          ; PC := 117
 113 [-]: SELF      R9 R8 K32    ; R10 := R8; R9 := R8[0x55e9211c]
-114 [-]: LOADBOOL  R11 1 0      ; R11 := true
+114 [-]: LOADKB    R11 1 0      ; R11 := true
 115 [-]: GETUPVAL  R12 U4       ; R12 := U4
 116 [-]: CALL      R9 4 1       ; R9(R10,R11,R12)
 117 [-]: GETGLOBAL R9 K31       ; R9 := 0xcbd666e1
-118 [-]: LOADK     R10 0        ; R10 := 0.000000
+118 [-]: CONST     R10 0        ; R10 := 0.000000
 119 [-]: CALL      R9 2 1       ; R9(R10)
 120 [-]: SELF      R9 R1 K22    ; R10 := R1; R9 := R1[0xf4e253b6]
 121 [-]: CALL      R9 2 1       ; R9(R10)
@@ -184,7 +184,7 @@
 132 [-]: TEST      R10 1        ; if R10 then PC := 138
 133 [-]: JMP       138          ; PC := 138
 134 [-]: SELF      R10 R9 K32   ; R11 := R9; R10 := R9[0x55e9211c]
-135 [-]: LOADBOOL  R12 0 0      ; R12 := false
+135 [-]: LOADKB    R12 0 0      ; R12 := false
 136 [-]: GETUPVAL  R13 U4       ; R13 := U4
 137 [-]: CALL      R10 4 1      ; R10(R11,R12,R13)
 138 [-]: ADD       R10 R3 K16   ; R10 := R3 + 1.000000
@@ -218,7 +218,7 @@
 166 [-]: JMP       171          ; PC := 171
 167 [-]: SELF      R12 R4 K40   ; R13 := R4; R12 := R4[0xefa4e034]
 168 [-]: MOVE      R14 R11      ; R14 := R11
-169 [-]: LOADBOOL  R15 1 0      ; R15 := true
+169 [-]: LOADKB    R15 1 0      ; R15 := true
 170 [-]: CALL      R12 4 1      ; R12(R13,R14,R15)
 171 [-]: GETGLOBAL R12 K5       ; R12 := 0xbe190284
 172 [-]: SELF      R12 R12 K41  ; R13 := R12; R12 := R12[0x751f061d]
@@ -243,7 +243,7 @@
 191 [-]: CONCAT    R13 R13 R15  ; R13 := R13 .. R14 .. R15
 192 [-]: CALL      R12 2 1      ; R12(R13)
 193 [-]: SELF      R12 R0 K23   ; R13 := R0; R12 := R0[0x250a9055]
-194 [-]: LOADK     R14 0        ; R14 := 0.000000
+194 [-]: CONST     R14 0        ; R14 := 0.000000
 195 [-]: GETUPVAL  R15 U2       ; R15 := U2
 196 [-]: CALL      R12 4 1      ; R12(R13,R14,R15)
 197 [-]: GETGLOBAL R12 K0       ; R12 := 0x7b998233
@@ -267,7 +267,7 @@
 215 [-]: GETGLOBAL R12 K14      ; R12 := _T
 216 [-]: GETTABLE  R12 R12 K25  ; R12 := R12["VesoDecoyMoaAvatar"]
 217 [-]: SELF      R12 R12 K23  ; R13 := R12; R12 := R12[0x250a9055]
-218 [-]: LOADK     R14 2        ; R14 := 2.000000
+218 [-]: CONST     R14 2        ; R14 := 2.000000
 219 [-]: GETUPVAL  R15 U3       ; R15 := U3
 220 [-]: CALL      R12 4 1      ; R12(R13,R14,R15)
 221 [-]: RETURN    R0 1         ; return 
@@ -285,7 +285,7 @@
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0xbe190284
   2 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1[0x0eb34c69]
   3 [-]: GETUPVAL  R3 U0        ; R3 := U0
-  4 [-]: LOADK     R4 1         ; R4 := 1.000000
+  4 [-]: CONST     R4 1         ; R4 := 1.000000
   5 [-]: CALL      R1 4 2       ; R1 := R1(R2,R3,R4)
   6 [-]: GETGLOBAL R2 K2        ; R2 := 0x3d106989
   7 [-]: LOADK     R3 K3        ; R3 := "JACKAL: Entering Stun in Fight Stage: "
@@ -297,7 +297,7 @@
  13 [-]: LT        0 R2 R1      ; if R2 >= R1 then PC := 16
  14 [-]: JMP       16           ; PC := 16
  15 [-]: RETURN    R0 1         ; return 
- 16 [-]: LOADK     R2 1         ; R2 := 1.000000
+ 16 [-]: CONST     R2 1         ; R2 := 1.000000
  17 [-]: GETGLOBAL R3 K0        ; R3 := 0xbe190284
  18 [-]: SELF      R3 R3 K5     ; R4 := R3; R3 := R3[0xef893aec]
  19 [-]: CALL      R3 2 2       ; R3 := R3(R4)

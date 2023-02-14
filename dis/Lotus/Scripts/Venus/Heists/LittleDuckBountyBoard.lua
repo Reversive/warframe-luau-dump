@@ -32,7 +32,7 @@
   9 [-]: TEST      R0 0         ; if not R0 then PC := 15
  10 [-]: JMP       15           ; PC := 15
  11 [-]: GETGLOBAL R0 K3        ; R0 := 0xcbd666e1
- 12 [-]: LOADK     R1 0         ; R1 := 0.000000
+ 12 [-]: CONST     R1 0         ; R1 := 0.000000
  13 [-]: CALL      R0 2 1       ; R0(R1)
  14 [-]: JMP       1            ; PC := 1
  15 [-]: GETGLOBAL R0 K4        ; R0 := 0x89326c93
@@ -41,10 +41,10 @@
  18 [-]: TEST      R0 1         ; if R0 then PC := 24
  19 [-]: JMP       24           ; PC := 24
  20 [-]: GETGLOBAL R0 K3        ; R0 := 0xcbd666e1
- 21 [-]: LOADK     R1 0         ; R1 := 0.000000
+ 21 [-]: CONST     R1 0         ; R1 := 0.000000
  22 [-]: CALL      R0 2 1       ; R0(R1)
  23 [-]: JMP       15           ; PC := 15
- 24 [-]: LOADK     R0 0         ; R0 := 0.000000
+ 24 [-]: CONST     R0 0         ; R0 := 0.000000
  25 [-]: GETGLOBAL R1 K0        ; R1 := 0x7b998233
  26 [-]: GETGLOBAL R2 K6        ; R2 := _T
  27 [-]: GETTABLE  R2 R2 K7     ; R2 := R2["ActiveJob"]
@@ -54,7 +54,7 @@
  31 [-]: LT        0 R0 K8      ; if R0 >= 10.000000 then PC := 40
  32 [-]: JMP       40           ; PC := 40
  33 [-]: GETGLOBAL R1 K3        ; R1 := 0xcbd666e1
- 34 [-]: LOADK     R2 0         ; R2 := 0.000000
+ 34 [-]: CONST     R2 0         ; R2 := 0.000000
  35 [-]: CALL      R1 2 1       ; R1(R2)
  36 [-]: GETGLOBAL R1 K9        ; R1 := 0x67652851
  37 [-]: CALL      R1 1 2       ; R1 := R1()
@@ -80,7 +80,7 @@
  57 [-]: TEST      R1 1         ; if R1 then PC := 63
  58 [-]: JMP       63           ; PC := 63
  59 [-]: GETGLOBAL R1 K3        ; R1 := 0xcbd666e1
- 60 [-]: LOADK     R2 0         ; R2 := 0.000000
+ 60 [-]: CONST     R2 0         ; R2 := 0.000000
  61 [-]: CALL      R1 2 1       ; R1(R2)
  62 [-]: JMP       53           ; PC := 53
  63 [-]: GETGLOBAL R1 K4        ; R1 := 0x89326c93

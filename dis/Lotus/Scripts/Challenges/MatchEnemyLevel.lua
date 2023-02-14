@@ -37,7 +37,7 @@
   6 [-]: CALL      R1 2 2       ; R1 := R1(R2)
   7 [-]: TEST      R1 0         ; if not R1 then PC := 11
   8 [-]: JMP       11           ; PC := 11
-  9 [-]: LOADBOOL  R1 0 0       ; R1 := false
+  9 [-]: LOADKB    R1 0 0       ; R1 := false
  10 [-]: RETURN    R1 2         ; return R1
  11 [-]: GETGLOBAL R1 K3        ; R1 := 0x228372c4
  12 [-]: LT        0 K4 R1      ; if 0.000000 >= R1 then PC := 20
@@ -46,9 +46,9 @@
  15 [-]: GETGLOBAL R2 K3        ; R2 := 0x228372c4
  16 [-]: LT        0 R1 R2      ; if R1 >= R2 then PC := 20
  17 [-]: JMP       20           ; PC := 20
- 18 [-]: LOADBOOL  R1 0 0       ; R1 := false
+ 18 [-]: LOADKB    R1 0 0       ; R1 := false
  19 [-]: RETURN    R1 2         ; return R1
- 20 [-]: LOADBOOL  R1 1 0       ; R1 := true
+ 20 [-]: LOADKB    R1 1 0       ; R1 := true
  21 [-]: RETURN    R1 2         ; return R1
  22 [-]: RETURN    R0 1         ; return 
 

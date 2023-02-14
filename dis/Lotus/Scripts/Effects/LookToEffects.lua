@@ -15,20 +15,22 @@
   6 [-]: SETGLOBAL R1 K2        ; LookAtThisBone := R1
   7 [-]: CLOSURE   R1 1         ; R1 := closure(Function #2)
   8 [-]: SETGLOBAL R1 K3        ; ShoulderLookAt := R1
-  9 [-]: RETURN    R0 1         ; return 
+  9 [-]: CLOSURE   R1 2         ; R1 := closure(Function #3)
+ 10 [-]: SETGLOBAL R1 K4        ; FaceTo := R1
+ 11 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
 ;
 ; Name:            
-; Defined at line: 8
+; Defined at line: 10
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
 ; Max Stack Size:  13
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0xcbd666e1
-  2 [-]: LOADK     R2 1         ; R2 := 1.000000
+  2 [-]: CONST     R2 1         ; R2 := 1.000000
   3 [-]: CALL      R1 2 1       ; R1(R2)
   4 [-]: SELF      R1 R0 K1     ; R2 := R0; R1 := R0[0x89531483]
   5 [-]: CALL      R1 2 2       ; R1 := R1(R2)
@@ -99,7 +101,7 @@
  70 [-]: MOVE      R10 R6       ; R10 := R6
  71 [-]: CALL      R8 3 1       ; R8(R9,R10)
  72 [-]: GETGLOBAL R8 K0        ; R8 := 0xcbd666e1
- 73 [-]: LOADK     R9 0         ; R9 := 0.000000
+ 73 [-]: CONST     R9 0         ; R9 := 0.000000
  74 [-]: CALL      R8 2 1       ; R8(R9)
  75 [-]: JMP       26           ; PC := 26
  76 [-]: RETURN    R0 1         ; return 
@@ -108,14 +110,14 @@
 ; Function #2:
 ;
 ; Name:            
-; Defined at line: 44
+; Defined at line: 46
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
 ; Max Stack Size:  11
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0xcbd666e1
-  2 [-]: LOADK     R2 1         ; R2 := 1.000000
+  2 [-]: CONST     R2 1         ; R2 := 1.000000
   3 [-]: CALL      R1 2 1       ; R1(R2)
   4 [-]: SELF      R1 R0 K1     ; R2 := R0; R1 := R0[0x28e744cf]
   5 [-]: CALL      R1 2 2       ; R1 := R1(R2)
@@ -148,14 +150,14 @@
  32 [-]: GETGLOBAL R6 K11       ; R6 := 0x00046924
  33 [-]: GETGLOBAL R7 K12       ; R7 := 0x9bafffe3
  34 [-]: GETTABLE  R8 R5 K13    ; R8 := R5["pitch"]
- 35 [-]: UNM       R8 R8        ; R8 := ^ R8
- 36 [-]: LOADK     R9 0         ; R9 := 0.000000
+ 35 [-]: UNM       R8 R8        ; R8 :=  R8
+ 36 [-]: CONST     R9 0         ; R9 := 0.000000
  37 [-]: LOADK     R10 K14      ; R10 := 0.800000
  38 [-]: CALL      R7 4 2       ; R7 := R7(R8,R9,R10)
  39 [-]: GETTABLE  R8 R4 K15    ; R8 := R4["heading"]
  40 [-]: GETTABLE  R9 R5 K15    ; R9 := R5["heading"]
  41 [-]: SUB       R8 R8 R9     ; R8 := R8 - R9
- 42 [-]: LOADK     R9 0         ; R9 := 0.000000
+ 42 [-]: CONST     R9 0         ; R9 := 0.000000
  43 [-]: CALL      R6 4 2       ; R6 := R6(R7,R8,R9)
  44 [-]: GETGLOBAL R7 K16       ; R7 := 0x3d106989
  45 [-]: MOVE      R8 R6        ; R8 := R6
@@ -165,9 +167,39 @@
  49 [-]: MOVE      R10 R6       ; R10 := R6
  50 [-]: CALL      R7 4 1       ; R7(R8,R9,R10)
  51 [-]: GETGLOBAL R7 K0        ; R7 := 0xcbd666e1
- 52 [-]: LOADK     R8 0         ; R8 := 0.000000
+ 52 [-]: CONST     R8 0         ; R8 := 0.000000
  53 [-]: CALL      R7 2 1       ; R7(R8)
  54 [-]: JMP       18           ; PC := 18
  55 [-]: RETURN    R0 1         ; return 
+
+
+; Function #3:
+;
+; Name:            
+; Defined at line: 69
+; #Upvalues:       0
+; #Parameters:     1
+; Is_vararg:       0
+; Max Stack Size:  6
+
+  1 [-]: GETGLOBAL R1 K0        ; R1 := 0x89326c93
+  2 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1[0x46a0ebf5]
+  3 [-]: GETGLOBAL R3 K2        ; R3 := 0xf0bffb28
+  4 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
+  5 [-]: GETGLOBAL R2 K3        ; R2 := 0x7b998233
+  6 [-]: MOVE      R3 R1        ; R3 := R1
+  7 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+  8 [-]: TEST      R2 0         ; if not R2 then PC := 11
+  9 [-]: JMP       11           ; PC := 11
+ 10 [-]: RETURN    R0 1         ; return 
+ 11 [-]: SELF      R2 R0 K4     ; R3 := R0; R2 := R0[0x32809832]
+ 12 [-]: SELF      R4 R1 K5     ; R5 := R1; R4 := R1[0xf6ebd926]
+ 13 [-]: CALL      R4 2 0       ; R4,... := R4(R5)
+ 14 [-]: CALL      R2 0 1       ; R2(R3,...)
+ 15 [-]: GETGLOBAL R2 K6        ; R2 := 0xcbd666e1
+ 16 [-]: CONST     R3 0         ; R3 := 0.000000
+ 17 [-]: CALL      R2 2 1       ; R2(R3)
+ 18 [-]: JMP       11           ; PC := 11
+ 19 [-]: RETURN    R0 1         ; return 
 
 

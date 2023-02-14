@@ -34,7 +34,7 @@
   1 [-]: GETGLOBAL R0 K0        ; R0 := _T
   2 [-]: SETTABLE  R0 K1 K2     ; R0["QuestJobSuccess"] := nil
   3 [-]: GETGLOBAL R0 K3        ; R0 := 0xcbd666e1
-  4 [-]: LOADK     R1 0         ; R1 := 0.000000
+  4 [-]: CONST     R1 0         ; R1 := 0.000000
   5 [-]: CALL      R0 2 1       ; R0(R1)
   6 [-]: GETGLOBAL R0 K4        ; R0 := 0x3d106989
   7 [-]: LOADK     R1 K5        ; R1 := "Waiting for gamerules"
@@ -52,7 +52,7 @@
  19 [-]: TEST      R0 0         ; if not R0 then PC := 25
  20 [-]: JMP       25           ; PC := 25
  21 [-]: GETGLOBAL R0 K3        ; R0 := 0xcbd666e1
- 22 [-]: LOADK     R1 0         ; R1 := 0.000000
+ 22 [-]: CONST     R1 0         ; R1 := 0.000000
  23 [-]: CALL      R0 2 1       ; R0(R1)
  24 [-]: JMP       9            ; PC := 9
  25 [-]: GETGLOBAL R0 K7        ; R0 := 0xbe190284
@@ -74,7 +74,7 @@
  41 [-]: EQ        0 R0 K2      ; if R0 ~= nil then PC := 47
  42 [-]: JMP       47           ; PC := 47
  43 [-]: GETGLOBAL R0 K3        ; R0 := 0xcbd666e1
- 44 [-]: LOADK     R1 0         ; R1 := 0.000000
+ 44 [-]: CONST     R1 0         ; R1 := 0.000000
  45 [-]: CALL      R0 2 1       ; R0(R1)
  46 [-]: JMP       39           ; PC := 39
  47 [-]: GETGLOBAL R0 K0        ; R0 := _T
@@ -93,7 +93,7 @@
  60 [-]: TEST      R0 1         ; if R0 then PC := 66
  61 [-]: JMP       66           ; PC := 66
  62 [-]: GETGLOBAL R0 K3        ; R0 := 0xcbd666e1
- 63 [-]: LOADK     R1 0         ; R1 := 0.000000
+ 63 [-]: CONST     R1 0         ; R1 := 0.000000
  64 [-]: CALL      R0 2 1       ; R0(R1)
  65 [-]: JMP       58           ; PC := 58
  66 [-]: GETGLOBAL R0 K0        ; R0 := _T
@@ -105,7 +105,7 @@
  72 [-]: TEST      R0 0         ; if not R0 then PC := 78
  73 [-]: JMP       78           ; PC := 78
  74 [-]: GETGLOBAL R0 K3        ; R0 := 0xcbd666e1
- 75 [-]: LOADK     R1 0         ; R1 := 0.000000
+ 75 [-]: CONST     R1 0         ; R1 := 0.000000
  76 [-]: CALL      R0 2 1       ; R0(R1)
  77 [-]: JMP       66           ; PC := 66
  78 [-]: GETGLOBAL R0 K6        ; R0 := 0x7b998233

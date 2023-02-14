@@ -43,7 +43,7 @@
  18 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  19 [-]: SELF      R2 R2 K3     ; R3 := R2; R2 := R2[0x6e0c2ee3]
  20 [-]: GETGLOBAL R4 K4        ; R4 := 0x6e0671ef
- 21 [-]: LOADK     R5 1         ; R5 := 1.000000
+ 21 [-]: CONST     R5 1         ; R5 := 1.000000
  22 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
  23 [-]: RETURN    R0 1         ; return 
 

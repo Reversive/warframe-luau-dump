@@ -12,7 +12,7 @@
   3 [-]: GETGLOBAL R2 K1        ; R2 := package
   4 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["seeall"]
   5 [-]: CALL      R0 3 1       ; R0(R1,R2)
-  6 [-]: LOADK     R0 0         ; R0 := 0.500000
+  6 [-]: CONST     R0 0         ; R0 := 0.500000
   7 [-]: NEWTABLE  R1 0 2       ; R1 := {}
   8 [-]: SETTABLE  R1 K3 K4     ; R1["x"] := 25.000000
   9 [-]: SETTABLE  R1 K5 K6     ; R1["y"] := -14.000000
@@ -24,17 +24,17 @@
  15 [-]: LOADK     R4 K14       ; R4 := "Lotus.Interface.LotusUtilities"
  16 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  17 [-]: LOADNIL   R4 R4        ; R4 := nil
- 18 [-]: LOADK     R5 1         ; R5 := 1.000000
+ 18 [-]: CONST     R5 1         ; R5 := 1.000000
  19 [-]: SETGLOBAL R5 K15       ; GENERIC_ICON := R5
- 20 [-]: LOADK     R5 2         ; R5 := 2.000000
+ 20 [-]: CONST     R5 2         ; R5 := 2.000000
  21 [-]: SETGLOBAL R5 K16       ; ATTACK_ICON := R5
- 22 [-]: LOADK     R5 3         ; R5 := 3.000000
+ 22 [-]: CONST     R5 3         ; R5 := 3.000000
  23 [-]: SETGLOBAL R5 K17       ; EXTRACT_ICON := R5
- 24 [-]: LOADK     R5 4         ; R5 := 4.000000
+ 24 [-]: CONST     R5 4         ; R5 := 4.000000
  25 [-]: SETGLOBAL R5 K18       ; LOOT_ICON := R5
- 26 [-]: LOADK     R5 5         ; R5 := 5.000000
+ 26 [-]: CONST     R5 5         ; R5 := 5.000000
  27 [-]: SETGLOBAL R5 K19       ; DEFEND_ICON := R5
- 28 [-]: LOADK     R5 6         ; R5 := 6.000000
+ 28 [-]: CONST     R5 6         ; R5 := 6.000000
  29 [-]: SETGLOBAL R5 K20       ; OPTIONAL_ICON := R5
  30 [-]: CLOSURE   R5 0         ; R5 := closure(Function #1)
  31 [-]: MOVE      R0 R4        ; R0 := R4
@@ -134,7 +134,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  11
 
-  1 [-]: LOADK     R1 0         ; R1 := 0.000000
+  1 [-]: CONST     R1 0         ; R1 := 0.000000
   2 [-]: GETGLOBAL R2 K0        ; R2 := 0x7b998233
   3 [-]: GETGLOBAL R3 K1        ; R3 := _T
   4 [-]: GETTABLE  R3 R3 K2     ; R3 := R3["UiEncounterOrder"]
@@ -147,7 +147,7 @@
  11 [-]: CALL      R2 1 2       ; R2 := R2()
  12 [-]: ADD       R1 R1 R2     ; R1 := R1 + R2
  13 [-]: GETGLOBAL R2 K5        ; R2 := 0xcbd666e1
- 14 [-]: LOADK     R3 0         ; R3 := 0.000000
+ 14 [-]: CONST     R3 0         ; R3 := 0.000000
  15 [-]: CALL      R2 2 1       ; R2(R3)
  16 [-]: JMP       2            ; PC := 2
  17 [-]: GETGLOBAL R2 K0        ; R2 := 0x7b998233
@@ -160,11 +160,11 @@
  24 [-]: NEWTABLE  R3 0 0       ; R3 := {}
  25 [-]: SETTABLE  R2 K2 R3     ; R2["UiEncounterOrder"] := R3
  26 [-]: LOADNIL   R2 R2        ; R2 := nil
- 27 [-]: LOADK     R3 1         ; R3 := 1.000000
+ 27 [-]: CONST     R3 1         ; R3 := 1.000000
  28 [-]: GETGLOBAL R4 K1        ; R4 := _T
  29 [-]: GETTABLE  R4 R4 K2     ; R4 := R4["UiEncounterOrder"]
  30 [-]: LEN       R4 R4        ; R4 := # R4
- 31 [-]: LOADK     R5 1         ; R5 := 1.000000
+ 31 [-]: CONST     R5 1         ; R5 := 1.000000
  32 [-]: FORPREP   R3 49        ; R3 -= R5; PC := 49
  33 [-]: GETGLOBAL R7 K0        ; R7 := 0x7b998233
  34 [-]: GETGLOBAL R8 K1        ; R8 := _T
@@ -239,14 +239,14 @@
  24 [-]: GETTABLE  R7 R0 K6     ; R7 := R0[0x603636ad]
  25 [-]: MOVE      R8 R2        ; R8 := R2
  26 [-]: LOADNIL   R9 R9        ; R9 := nil
- 27 [-]: LOADBOOL  R10 1 0      ; R10 := true
+ 27 [-]: LOADKB    R10 1 0      ; R10 := true
  28 [-]: CALL      R7 4 2       ; R7 := R7(R8,R9,R10)
  29 [-]: TEST      R1 0         ; if not R1 then PC := 44
  30 [-]: JMP       44           ; PC := 44
  31 [-]: MOVE      R8 R5        ; R8 := R5
  32 [-]: LOADK     R9 K10       ; R9 := "<font face=\"Noto Sans\" color=\""
  33 [-]: GETTABLE  R10 R0 K3    ; R10 := R0[0xe2c898b9]
- 34 [-]: LOADK     R11 37       ; R11 := 37.000000
+ 34 [-]: CONST     R11 37       ; R11 := 37.000000
  35 [-]: CALL      R10 2 2      ; R10 := R10(R11)
  36 [-]: LOADK     R11 K5       ; R11 := "\">"
  37 [-]: GETUPVAL  R12 U1       ; R12 := U1
@@ -259,7 +259,7 @@
  44 [-]: MOVE      R8 R5        ; R8 := R5
  45 [-]: LOADK     R9 K10       ; R9 := "<font face=\"Noto Sans\" color=\""
  46 [-]: GETTABLE  R10 R0 K3    ; R10 := R0[0xe2c898b9]
- 47 [-]: LOADK     R11 37       ; R11 := 37.000000
+ 47 [-]: CONST     R11 37       ; R11 := 37.000000
  48 [-]: CALL      R10 2 2      ; R10 := R10(R11)
  49 [-]: LOADK     R11 K5       ; R11 := "\">"
  50 [-]: MOVE      R12 R7       ; R12 := R7
@@ -308,11 +308,11 @@
  14 [-]: GETTABLE  R8 R8 K5     ; R8 := R8["HT_LABEL"]
  15 [-]: GETUPVAL  R9 U2        ; R9 := U2
  16 [-]: MOVE      R10 R5       ; R10 := R5
- 17 [-]: LOADBOOL  R11 1 0      ; R11 := true
+ 17 [-]: LOADKB    R11 1 0      ; R11 := true
  18 [-]: CALL      R6 6 2       ; R6 := R6(R7,R8,R9,R10,R11)
  19 [-]: GETUPVAL  R7 U3        ; R7 := U3
  20 [-]: MOVE      R8 R6        ; R8 := R6
- 21 [-]: LOADBOOL  R9 1 0       ; R9 := true
+ 21 [-]: LOADKB    R9 1 0       ; R9 := true
  22 [-]: MOVE      R10 R1       ; R10 := R1
  23 [-]: MOVE      R11 R2       ; R11 := R2
  24 [-]: CALL      R7 5 1       ; R7(R8,R9,R10,R11)
@@ -356,53 +356,58 @@
  25 [-]: GETUPVAL  R13 U2       ; R13 := U2
  26 [-]: TESTSET   R14 R6 1     ; if R6 then PC := 29 else R14 := R6
  27 [-]: JMP       29           ; PC := 29
- 28 [-]: LOADK     R14 1        ; R14 := 1.000000
+ 28 [-]: CONST     R14 1        ; R14 := 1.000000
  29 [-]: ADD       R14 R9 R14   ; R14 := R9 + R14
- 30 [-]: LOADBOOL  R15 1 0      ; R15 := true
+ 30 [-]: LOADKB    R15 1 0      ; R15 := true
  31 [-]: CALL      R10 6 2      ; R10 := R10(R11,R12,R13,R14,R15)
  32 [-]: TEST      R5 0         ; if not R5 then PC := 37
  33 [-]: JMP       37           ; PC := 37
  34 [-]: GETTABLE  R11 R10 K9   ; R11 := R10[0x774680cd]
  35 [-]: MOVE      R12 R5       ; R12 := R5
  36 [-]: CALL      R11 2 1      ; R11(R12)
- 37 [-]: GETGLOBAL R11 K1       ; R11 := 0x7b998233
- 38 [-]: MOVE      R12 R3       ; R12 := R3
- 39 [-]: CALL      R11 2 2      ; R11 := R11(R12)
- 40 [-]: TEST      R11 0        ; if not R11 then PC := 50
- 41 [-]: JMP       50           ; PC := 50
- 42 [-]: GETTABLE  R11 R10 K10  ; R11 := R10[0xb7ae3621]
- 43 [-]: GETUPVAL  R12 U3       ; R12 := U3
- 44 [-]: GETTABLE  R12 R12 K11  ; R12 := R12["x"]
- 45 [-]: GETUPVAL  R13 U3       ; R13 := U3
- 46 [-]: GETTABLE  R13 R13 K12  ; R13 := R13["y"]
- 47 [-]: LOADBOOL  R14 1 0      ; R14 := true
- 48 [-]: CALL      R11 4 1      ; R11(R12,R13,R14)
- 49 [-]: JMP       56           ; PC := 56
- 50 [-]: GETTABLE  R11 R10 K10  ; R11 := R10[0xb7ae3621]
- 51 [-]: LOADK     R12 0        ; R12 := 0.000000
- 52 [-]: GETUPVAL  R13 U3       ; R13 := U3
- 53 [-]: GETTABLE  R13 R13 K12  ; R13 := R13["y"]
- 54 [-]: LOADBOOL  R14 1 0      ; R14 := true
- 55 [-]: CALL      R11 4 1      ; R11(R12,R13,R14)
- 56 [-]: GETUPVAL  R11 U4       ; R11 := U4
- 57 [-]: MOVE      R12 R10      ; R12 := R10
- 58 [-]: LOADBOOL  R13 0 0      ; R13 := false
- 59 [-]: MOVE      R14 R2       ; R14 := R2
- 60 [-]: MOVE      R15 R4       ; R15 := R4
- 61 [-]: MOVE      R16 R3       ; R16 := R3
- 62 [-]: CALL      R11 6 1      ; R11(R12,R13,R14,R15,R16)
- 63 [-]: RETURN    R10 2        ; return R10
- 64 [-]: RETURN    R0 1         ; return 
+ 37 [-]: GETGLOBAL R11 K2       ; R11 := 0x3d106989
+ 38 [-]: LOADK     R12 K10      ; R12 := "RAILOBJ - Adding SubObjective: "
+ 39 [-]: MOVE      R13 R1       ; R13 := R1
+ 40 [-]: CONCAT    R12 R12 R13  ; R12 := R12 .. R13
+ 41 [-]: CALL      R11 2 1      ; R11(R12)
+ 42 [-]: GETGLOBAL R11 K1       ; R11 := 0x7b998233
+ 43 [-]: MOVE      R12 R3       ; R12 := R3
+ 44 [-]: CALL      R11 2 2      ; R11 := R11(R12)
+ 45 [-]: TEST      R11 0        ; if not R11 then PC := 55
+ 46 [-]: JMP       55           ; PC := 55
+ 47 [-]: GETTABLE  R11 R10 K11  ; R11 := R10[0xb7ae3621]
+ 48 [-]: GETUPVAL  R12 U3       ; R12 := U3
+ 49 [-]: GETTABLE  R12 R12 K12  ; R12 := R12["x"]
+ 50 [-]: GETUPVAL  R13 U3       ; R13 := U3
+ 51 [-]: GETTABLE  R13 R13 K13  ; R13 := R13["y"]
+ 52 [-]: LOADKB    R14 1 0      ; R14 := true
+ 53 [-]: CALL      R11 4 1      ; R11(R12,R13,R14)
+ 54 [-]: JMP       61           ; PC := 61
+ 55 [-]: GETTABLE  R11 R10 K11  ; R11 := R10[0xb7ae3621]
+ 56 [-]: CONST     R12 0        ; R12 := 0.000000
+ 57 [-]: GETUPVAL  R13 U3       ; R13 := U3
+ 58 [-]: GETTABLE  R13 R13 K13  ; R13 := R13["y"]
+ 59 [-]: LOADKB    R14 1 0      ; R14 := true
+ 60 [-]: CALL      R11 4 1      ; R11(R12,R13,R14)
+ 61 [-]: GETUPVAL  R11 U4       ; R11 := U4
+ 62 [-]: MOVE      R12 R10      ; R12 := R10
+ 63 [-]: LOADKB    R13 0 0      ; R13 := false
+ 64 [-]: MOVE      R14 R2       ; R14 := R2
+ 65 [-]: MOVE      R15 R4       ; R15 := R4
+ 66 [-]: MOVE      R16 R3       ; R16 := R3
+ 67 [-]: CALL      R11 6 1      ; R11(R12,R13,R14,R15,R16)
+ 68 [-]: RETURN    R10 2        ; return R10
+ 69 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #6:
 ;
 ; Name:            
-; Defined at line: 129
+; Defined at line: 131
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
-; Max Stack Size:  8
+; Max Stack Size:  12
 
   1 [-]: SELF      R3 R0 K0     ; R4 := R0; R3 := R0[0x4c976eda]
   2 [-]: CALL      R3 2 2       ; R3 := R3(R4)
@@ -428,12 +433,12 @@
  22 [-]: GETGLOBAL R5 K2        ; R5 := 0x7b998233
  23 [-]: MOVE      R6 R4        ; R6 := R4
  24 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 25 [-]: TEST      R5 1         ; if R5 then PC := 43
- 26 [-]: JMP       43           ; PC := 43
+ 25 [-]: TEST      R5 1         ; if R5 then PC := 52
+ 26 [-]: JMP       52           ; PC := 52
  27 [-]: GETTABLE  R5 R4 K7     ; R5 := R4["Data"]
  28 [-]: GETTABLE  R5 R5 K8     ; R5 := R5["Visible"]
- 29 [-]: TEST      R5 0         ; if not R5 then PC := 43
- 30 [-]: JMP       43           ; PC := 43
+ 29 [-]: TEST      R5 0         ; if not R5 then PC := 52
+ 30 [-]: JMP       52           ; PC := 52
  31 [-]: GETTABLE  R5 R4 K7     ; R5 := R4["Data"]
  32 [-]: GETTABLE  R5 R5 K9     ; R5 := R5["Location"]
  33 [-]: TEST      R5 0         ; if not R5 then PC := 40
@@ -446,13 +451,22 @@
  40 [-]: GETTABLE  R6 R4 K13    ; R6 := R4[0x368ad758]
  41 [-]: MOVE      R7 R2        ; R7 := R2
  42 [-]: CALL      R6 2 1       ; R6(R7)
- 43 [-]: RETURN    R0 1         ; return 
+ 43 [-]: GETGLOBAL R6 K14       ; R6 := 0x3d106989
+ 44 [-]: LOADK     R7 K15       ; R7 := "RAILOBJ - Setting SubObjective visible: "
+ 45 [-]: MOVE      R8 R1        ; R8 := R1
+ 46 [-]: LOADK     R9 K16       ; R9 := ", visible = "
+ 47 [-]: GETGLOBAL R10 K17      ; R10 := 0x64fb1586
+ 48 [-]: MOVE      R11 R2       ; R11 := R2
+ 49 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+ 50 [-]: CONCAT    R7 R7 R10    ; R7 := R7 .. R8 .. R9 .. R10
+ 51 [-]: CALL      R6 2 1       ; R6(R7)
+ 52 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #7:
 ;
 ; Name:            
-; Defined at line: 150
+; Defined at line: 153
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -462,8 +476,8 @@
   2 [-]: GETGLOBAL R3 K1        ; R3 := _T
   3 [-]: GETTABLE  R3 R3 K2     ; R3 := R3["RemoveHudTracker"]
   4 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  5 [-]: TEST      R2 1         ; if R2 then PC := 53
-  6 [-]: JMP       53           ; PC := 53
+  5 [-]: TEST      R2 1         ; if R2 then PC := 66
+  6 [-]: JMP       66           ; PC := 66
   7 [-]: GETGLOBAL R2 K0        ; R2 := 0x7b998233
   8 [-]: MOVE      R3 R0        ; R3 := R0
   9 [-]: CALL      R2 2 2       ; R2 := R2(R3)
@@ -510,13 +524,26 @@
  50 [-]: MOVE      R5 R3        ; R5 := R3
  51 [-]: GETUPVAL  R6 U0        ; R6 := U0
  52 [-]: CALL      R4 3 1       ; R4(R5,R6)
- 53 [-]: RETURN    R0 1         ; return 
+ 53 [-]: TEST      R1 0         ; if not R1 then PC := 61
+ 54 [-]: JMP       61           ; PC := 61
+ 55 [-]: GETGLOBAL R4 K10       ; R4 := 0x3d106989
+ 56 [-]: LOADK     R5 K11       ; R5 := "RAILOBJ - Removing SubObjective: "
+ 57 [-]: MOVE      R6 R1        ; R6 := R1
+ 58 [-]: CONCAT    R5 R5 R6     ; R5 := R5 .. R6
+ 59 [-]: CALL      R4 2 1       ; R4(R5)
+ 60 [-]: JMP       66           ; PC := 66
+ 61 [-]: GETGLOBAL R4 K10       ; R4 := 0x3d106989
+ 62 [-]: LOADK     R5 K12       ; R5 := "RAILOBJ - Removing Objective: "
+ 63 [-]: MOVE      R6 R2        ; R6 := R2
+ 64 [-]: CONCAT    R5 R5 R6     ; R5 := R5 .. R6
+ 65 [-]: CALL      R4 2 1       ; R4(R5)
+ 66 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #8:
 ;
 ; Name:            
-; Defined at line: 170
+; Defined at line: 178
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -537,13 +564,13 @@
  13 [-]: GETUPVAL  R4 U0        ; R4 := U0
  14 [-]: GETTABLE  R4 R4 K5     ; R4 := R4["HT_LABEL"]
  15 [-]: GETUPVAL  R5 U1        ; R5 := U1
- 16 [-]: LOADK     R6 2         ; R6 := 2.000000
- 17 [-]: LOADBOOL  R7 1 0       ; R7 := true
+ 16 [-]: CONST     R6 2         ; R6 := 2.000000
+ 17 [-]: LOADKB    R7 1 0       ; R7 := true
  18 [-]: CALL      R2 6 2       ; R2 := R2(R3,R4,R5,R6,R7)
  19 [-]: MOVE      R1 R2        ; R1 := R2
  20 [-]: GETUPVAL  R2 U2        ; R2 := U2
  21 [-]: MOVE      R3 R1        ; R3 := R1
- 22 [-]: LOADBOOL  R4 1 0       ; R4 := true
+ 22 [-]: LOADKB    R4 1 0       ; R4 := true
  23 [-]: LOADK     R5 K6        ; R5 := "/Lotus/Language/Railjack/ReturnToRailjack"
  24 [-]: LOADNIL   R6 R6        ; R6 := nil
  25 [-]: GETGLOBAL R7 K7        ; R7 := EXTRACT_ICON
@@ -555,7 +582,7 @@
  31 [-]: JMP       34           ; PC := 34
  32 [-]: LT        0 K8 R0      ; if 0.000000 >= R0 then PC := 82
  33 [-]: JMP       82           ; PC := 82
- 34 [-]: LOADK     R2 30        ; R2 := 30.000000
+ 34 [-]: CONST     R2 30        ; R2 := 30.000000
  35 [-]: GETGLOBAL R3 K3        ; R3 := 0x7b998233
  36 [-]: MOVE      R4 R0        ; R4 := R0
  37 [-]: CALL      R3 2 2       ; R3 := R3(R4)
@@ -579,27 +606,27 @@
  55 [-]: GETUPVAL  R6 U0        ; R6 := U0
  56 [-]: GETTABLE  R6 R6 K10    ; R6 := R6["HT_TIMER"]
  57 [-]: GETUPVAL  R7 U1        ; R7 := U1
- 58 [-]: LOADK     R8 3         ; R8 := 3.000000
- 59 [-]: LOADBOOL  R9 1 0       ; R9 := true
+ 58 [-]: CONST     R8 3         ; R8 := 3.000000
+ 59 [-]: LOADKB    R9 1 0       ; R9 := true
  60 [-]: CALL      R4 6 2       ; R4 := R4(R5,R6,R7,R8,R9)
  61 [-]: MOVE      R3 R4        ; R3 := R4
  62 [-]: GETTABLE  R4 R3 K11    ; R4 := R3[0xb7ae3621]
- 63 [-]: LOADK     R5 30        ; R5 := 30.000000
- 64 [-]: LOADK     R6 -14       ; R6 := -14.000000
- 65 [-]: LOADBOOL  R7 1 0       ; R7 := true
+ 63 [-]: CONST     R5 30        ; R5 := 30.000000
+ 64 [-]: CONST     R6 -14       ; R6 := -14.000000
+ 65 [-]: LOADKB    R7 1 0       ; R7 := true
  66 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
  67 [-]: GETTABLE  R4 R3 K12    ; R4 := R3[0xe0cba3ca]
  68 [-]: LOADK     R5 K6        ; R5 := "/Lotus/Language/Railjack/ReturnToRailjack"
- 69 [-]: LOADK     R6 3         ; R6 := 3.000000
+ 69 [-]: CONST     R6 3         ; R6 := 3.000000
  70 [-]: CALL      R4 3 1       ; R4(R5,R6)
  71 [-]: GETTABLE  R4 R3 K13    ; R4 := R3[0x3f8a850c]
  72 [-]: LOADK     R5 K14       ; R5 := ""
  73 [-]: CALL      R4 2 1       ; R4(R5)
  74 [-]: GETTABLE  R4 R3 K15    ; R4 := R3[0xa9136b2f]
  75 [-]: MOVE      R5 R2        ; R5 := R2
- 76 [-]: LOADBOOL  R6 0 0       ; R6 := false
- 77 [-]: LOADBOOL  R7 1 0       ; R7 := true
- 78 [-]: LOADBOOL  R8 0 0       ; R8 := false
+ 76 [-]: LOADKB    R6 0 0       ; R6 := false
+ 77 [-]: LOADKB    R7 1 0       ; R7 := true
+ 78 [-]: LOADKB    R8 0 0       ; R8 := false
  79 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
  80 [-]: GETGLOBAL R4 K0        ; R4 := _T
  81 [-]: SETTABLE  R4 K9 R3     ; R4["ReturnToRailjackTimer"] := R3
@@ -609,7 +636,7 @@
 ; Function #9:
 ;
 ; Name:            
-; Defined at line: 201
+; Defined at line: 209
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -662,7 +689,7 @@
 ; Function #10:
 ;
 ; Name:            
-; Defined at line: 217
+; Defined at line: 225
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -709,7 +736,7 @@
  39 [-]: GETTABLE  R0 R0 K8     ; R0 := R0["Time"]
  40 [-]: RETURN    R0 2         ; return R0
  41 [-]: JMP       44           ; PC := 44
- 42 [-]: LOADK     R0 0         ; R0 := 0.000000
+ 42 [-]: CONST     R0 0         ; R0 := 0.000000
  43 [-]: RETURN    R0 2         ; return R0
  44 [-]: RETURN    R0 1         ; return 
 
@@ -717,7 +744,7 @@
 ; Function #11:
 ;
 ; Name:            
-; Defined at line: 232
+; Defined at line: 240
 ; #Upvalues:       1
 ; #Parameters:     5
 ; Is_vararg:       0
@@ -736,7 +763,7 @@
 ; Function #12:
 ;
 ; Name:            
-; Defined at line: 236
+; Defined at line: 244
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -754,7 +781,7 @@
 ; Function #13:
 ;
 ; Name:            
-; Defined at line: 242
+; Defined at line: 250
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -773,7 +800,7 @@
  11 [-]: MOVE      R6 R3        ; R6 := R3
  12 [-]: CALL      R5 2 0       ; R5,... := R5(R6)
  13 [-]: CALL      R4 0 2       ; R4 := R4(R5,...)
- 14 [-]: NOT       R4 R4        ; R4 := not R4
+ 14 [-]: NOT       R4 R4        ; R4 :=  R4
  15 [-]: RETURN    R4 2         ; return R4
  16 [-]: RETURN    R0 1         ; return 
 

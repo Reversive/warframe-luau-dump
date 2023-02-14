@@ -53,7 +53,7 @@
   5 [-]: GETGLOBAL R1 K2        ; R1 := 0xfa60be7f
   6 [-]: LT        0 R1 K1      ; if R1 >= 0.000000 then PC := 10
   7 [-]: JMP       10           ; PC := 10
-  8 [-]: LOADK     R1 0         ; R1 := 0.000000
+  8 [-]: CONST     R1 0         ; R1 := 0.000000
   9 [-]: SETGLOBAL R1 K2        ; (0xfa60be7f) := R1
  10 [-]: GETGLOBAL R1 K3        ; R1 := 0x1223ab4d
  11 [-]: GETGLOBAL R2 K2        ; R2 := 0xfa60be7f
@@ -64,7 +64,7 @@
  16 [-]: GETGLOBAL R1 K4        ; R1 := 0xf18f937f
  17 [-]: LT        0 R1 K1      ; if R1 >= 0.000000 then PC := 21
  18 [-]: JMP       21           ; PC := 21
- 19 [-]: LOADK     R1 0         ; R1 := 0.000000
+ 19 [-]: CONST     R1 0         ; R1 := 0.000000
  20 [-]: SETGLOBAL R1 K4        ; (0xf18f937f) := R1
  21 [-]: GETGLOBAL R1 K5        ; R1 := 0x5b5e8c89
  22 [-]: GETGLOBAL R2 K4        ; R2 := 0xf18f937f

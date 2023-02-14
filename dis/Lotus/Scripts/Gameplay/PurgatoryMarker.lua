@@ -67,9 +67,9 @@
  30 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  31 [-]: EQ        0 R1 R2      ; if R1 ~= R2 then PC := 35
  32 [-]: JMP       35           ; PC := 35
- 33 [-]: LOADBOOL  R2 1 0       ; R2 := true
+ 33 [-]: LOADKB    R2 1 0       ; R2 := true
  34 [-]: RETURN    R2 2         ; return R2
- 35 [-]: LOADBOOL  R2 0 0       ; R2 := false
+ 35 [-]: LOADKB    R2 0 0       ; R2 := false
  36 [-]: RETURN    R2 2         ; return R2
  37 [-]: RETURN    R0 1         ; return 
 
@@ -105,8 +105,8 @@
  20 [-]: GETGLOBAL R9 K3        ; R9 := 0x89326c93
  21 [-]: SELF      R9 R9 K9     ; R10 := R9; R9 := R9[0x18d05d30]
  22 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 23 [-]: LOADK     R10 3        ; R10 := 3.000000
- 24 [-]: LOADK     R11 4        ; R11 := 4.000000
+ 23 [-]: CONST     R10 3        ; R10 := 3.000000
+ 24 [-]: CONST     R11 4        ; R11 := 4.000000
  25 [-]: CALL      R8 4 0       ; R8,... := R8(R9,R10,R11)
  26 [-]: CALL      R1 0 2       ; R1 := R1(R2,...)
  27 [-]: SETTABLE  R0 K2 R1     ; R0["PurgatoryPortalMarker"] := R1
@@ -122,8 +122,8 @@
 ; Is_vararg:       0
 ; Max Stack Size:  19
 
-  1 [-]: LOADK     R1 0         ; R1 := 0.000000
-  2 [-]: LOADK     R2 0         ; R2 := 0.500000
+  1 [-]: CONST     R1 0         ; R1 := 0.000000
+  2 [-]: CONST     R2 0         ; R2 := 0.500000
   3 [-]: GETGLOBAL R3 K0        ; R3 := 0x89326c93
   4 [-]: SELF      R3 R3 K1     ; R4 := R3; R3 := R3[0x78298275]
   5 [-]: CALL      R3 2 2       ; R3 := R3(R4)
@@ -136,7 +136,7 @@
  12 [-]: SELF      R5 R5 K4     ; R6 := R5; R5 := R5[0xc7fcada9]
  13 [-]: GETUPVAL  R7 U0        ; R7 := U0
  14 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
- 15 [-]: LOADK     R6 35        ; R6 := 35.000000
+ 15 [-]: CONST     R6 35        ; R6 := 35.000000
  16 [-]: GETGLOBAL R7 K5        ; R7 := 0x7b998233
  17 [-]: MOVE      R8 R0        ; R8 := R0
  18 [-]: CALL      R7 2 2       ; R7 := R7(R8)

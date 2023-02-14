@@ -7,7 +7,7 @@
 ; Is_vararg:       2
 ; Max Stack Size:  2
 
-  1 [-]: LOADK     R0 60        ; R0 := 60.000000
+  1 [-]: CONST     R0 60        ; R0 := 60.000000
   2 [-]: CLOSURE   R1 0         ; R1 := closure(Function #1)
   3 [-]: MOVE      R0 R0        ; R0 := R0
   4 [-]: SETGLOBAL R1 K0        ; EvaluateMove := R1
@@ -32,9 +32,9 @@
   7 [-]: GETUPVAL  R4 U0        ; R4 := U0
   8 [-]: LT        0 R3 R4      ; if R3 >= R4 then PC := 12
   9 [-]: JMP       12           ; PC := 12
- 10 [-]: LOADBOOL  R3 1 0       ; R3 := true
+ 10 [-]: LOADKB    R3 1 0       ; R3 := true
  11 [-]: RETURN    R3 2         ; return R3
- 12 [-]: LOADBOOL  R3 0 0       ; R3 := false
+ 12 [-]: LOADKB    R3 0 0       ; R3 := false
  13 [-]: RETURN    R3 2         ; return R3
  14 [-]: RETURN    R0 1         ; return 
 

@@ -13,17 +13,17 @@
   4 [-]: GETGLOBAL R1 K0        ; R1 := 0x2d0fad09
   5 [-]: LOADK     R2 K2        ; R2 := "EE.Interface.Utilities"
   6 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  7 [-]: LOADBOOL  R2 0 0       ; R2 := false
+  7 [-]: LOADKB    R2 0 0       ; R2 := false
   8 [-]: LOADNIL   R3 R3        ; R3 := nil
   9 [-]: NEWTABLE  R4 0 0       ; R4 := {}
- 10 [-]: LOADBOOL  R5 0 0       ; R5 := false
+ 10 [-]: LOADKB    R5 0 0       ; R5 := false
  11 [-]: LOADNIL   R6 R7        ; R6 := R7 := nil
- 12 [-]: LOADK     R8 0         ; R8 := 0.000000
+ 12 [-]: CONST     R8 0         ; R8 := 0.000000
  13 [-]: LOADNIL   R9 R10       ; R9 := R10 := nil
- 14 [-]: LOADK     R11 1        ; R11 := 1.000000
+ 14 [-]: CONST     R11 1        ; R11 := 1.000000
  15 [-]: LOADNIL   R12 R13      ; R12 := R13 := nil
- 16 [-]: LOADBOOL  R14 0 0      ; R14 := false
- 17 [-]: LOADK     R15 0        ; R15 := 0.000000
+ 16 [-]: LOADKB    R14 0 0      ; R14 := false
+ 17 [-]: CONST     R15 0        ; R15 := 0.000000
  18 [-]: CLOSURE   R16 0        ; R16 := closure(Function #1)
  19 [-]: MOVE      R0 R2        ; R0 := R2
  20 [-]: MOVE      R0 R3        ; R0 := R3
@@ -123,7 +123,7 @@
  30 [-]: GETUPVAL  R1 U1        ; R1 := U1
  31 [-]: SELF      R1 R1 K6     ; R2 := R1; R1 := R1[0x91a24e4b]
  32 [-]: LOADK     R3 K7        ; R3 := "_root"
- 33 [-]: LOADK     R4 10        ; R4 := 10.000000
+ 33 [-]: CONST     R4 10        ; R4 := 10.000000
  34 [-]: CALL      R1 4 2       ; R1 := R1(R2,R3,R4)
  35 [-]: GETUPVAL  R2 U2        ; R2 := U2
  36 [-]: EQ        1 R2 R1      ; if R2 == R1 then PC := 45
@@ -132,19 +132,19 @@
  39 [-]: GETGLOBAL R2 K1        ; R2 := 0xae91e43b
  40 [-]: SELF      R2 R2 K8     ; R3 := R2; R2 := R2[0x67bc869f]
  41 [-]: LOADK     R4 K7        ; R4 := "_root"
- 42 [-]: LOADK     R5 10        ; R5 := 10.000000
+ 42 [-]: CONST     R5 10        ; R5 := 10.000000
  43 [-]: MOVE      R6 R1        ; R6 := R1
  44 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
- 45 [-]: LOADBOOL  R2 1 0       ; R2 := true
+ 45 [-]: LOADKB    R2 1 0       ; R2 := true
  46 [-]: SETUPVAL  R2 U3        ; U82 := R3
  47 [-]: GETUPVAL  R2 U4        ; R2 := U4
  48 [-]: LEN       R2 R2        ; R2 := # R2
  49 [-]: LT        0 K9 R2      ; if 0.000000 >= R2 then PC := 69
  50 [-]: JMP       69           ; PC := 69
- 51 [-]: LOADK     R2 1         ; R2 := 1.000000
+ 51 [-]: CONST     R2 1         ; R2 := 1.000000
  52 [-]: GETUPVAL  R3 U4        ; R3 := U4
  53 [-]: LEN       R3 R3        ; R3 := # R3
- 54 [-]: LOADK     R4 1         ; R4 := 1.000000
+ 54 [-]: CONST     R4 1         ; R4 := 1.000000
  55 [-]: FORPREP   R2 66        ; R2 -= R4; PC := 66
  56 [-]: GETUPVAL  R6 U4        ; R6 := U4
  57 [-]: GETTABLE  R6 R6 R5     ; R6 := R6[R5]
@@ -159,7 +159,7 @@
  66 [-]: FORLOOP   R2 56        ; R2 += R4; if R2 <= R3 then begin PC := 56; R5 := R2 end
  67 [-]: NEWTABLE  R6 0 0       ; R6 := {}
  68 [-]: SETUPVAL  R6 U4        ; U82 := R4
- 69 [-]: LOADBOOL  R6 0 0       ; R6 := false
+ 69 [-]: LOADKB    R6 0 0       ; R6 := false
  70 [-]: SETUPVAL  R6 U3        ; U82 := R3
  71 [-]: GETUPVAL  R6 U6        ; R6 := U6
  72 [-]: GETTABLE  R6 R6 K13    ; R6 := R6[0x0cad99b9]
@@ -243,13 +243,13 @@
  23 [-]: GETGLOBAL R1 K4        ; R1 := 0xae91e43b
  24 [-]: SELF      R1 R1 K5     ; R2 := R1; R1 := R1[0x67bc869f]
  25 [-]: LOADK     R3 K6        ; R3 := "SporeStatus.Spore.Effect"
- 26 [-]: LOADK     R4 9         ; R4 := 9.000000
+ 26 [-]: CONST     R4 9         ; R4 := 9.000000
  27 [-]: MOVE      R5 R0        ; R5 := R0
  28 [-]: CALL      R1 5 1       ; R1(R2,R3,R4,R5)
  29 [-]: GETGLOBAL R1 K4        ; R1 := 0xae91e43b
  30 [-]: SELF      R1 R1 K5     ; R2 := R1; R1 := R1[0x67bc869f]
  31 [-]: LOADK     R3 K7        ; R3 := "SporeStatus.Spore.Glow"
- 32 [-]: LOADK     R4 9         ; R4 := 9.000000
+ 32 [-]: CONST     R4 9         ; R4 := 9.000000
  33 [-]: MOVE      R5 R0        ; R5 := R0
  34 [-]: CALL      R1 5 1       ; R1(R2,R3,R4,R5)
  35 [-]: RETURN    R0 1         ; return 
@@ -350,16 +350,16 @@
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0x25312c9b
   2 [-]: GETGLOBAL R2 K1        ; R2 := 0xae91e43b
   3 [-]: LOADK     R3 K2        ; R3 := "SporeStatus"
-  4 [-]: LOADK     R4 0         ; R4 := 0.000000
+  4 [-]: CONST     R4 0         ; R4 := 0.000000
   5 [-]: NEWTABLE  R5 1 0       ; R5 := {}
-  6 [-]: LOADK     R6 10        ; R6 := 10.000000
+  6 [-]: CONST     R6 10        ; R6 := 10.000000
   7 [-]: SETLIST   R5 1 1       ; R5[(1-1)*FPF+i] := R(5+i), 1 <= i <= 1
   8 [-]: NEWTABLE  R6 0 0       ; R6 := {}
   9 [-]: GETUPVAL  R7 U0        ; R7 := U0
  10 [-]: GETTABLE  R7 R7 K4     ; R7 := R7[0x06d055f9]
  11 [-]: MOVE      R8 R0        ; R8 := R0
- 12 [-]: LOADK     R9 100       ; R9 := 100.000000
- 13 [-]: LOADK     R10 0        ; R10 := 0.000000
+ 12 [-]: CONST     R9 100       ; R9 := 100.000000
+ 13 [-]: CONST     R10 0        ; R10 := 0.000000
  14 [-]: CALL      R7 4 0       ; R7,... := R7(R8,R9,R10)
  15 [-]: SETLIST   R6 0 1       ; R6[(1-1)*FPF+i] := R(6+i), 1 <= i <= 0
  16 [-]: LOADK     R7 K5        ; R7 := 0.200000
@@ -379,7 +379,7 @@
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0xae91e43b
   2 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1[0x5f56eeab]
   3 [-]: LOADK     R3 K2        ; R3 := "SporeStatus.Damage"
-  4 [-]: LOADK     R4 29        ; R4 := 29.000000
+  4 [-]: CONST     R4 29        ; R4 := 29.000000
   5 [-]: GETUPVAL  R5 U0        ; R5 := U0
   6 [-]: GETTABLE  R5 R5 K3     ; R5 := R5[0xba3f419d]
   7 [-]: MOVE      R6 R0        ; R6 := R0
@@ -403,15 +403,15 @@
   4 [-]: GETGLOBAL R2 K0        ; R2 := 0x25312c9b
   5 [-]: GETGLOBAL R3 K1        ; R3 := 0xae91e43b
   6 [-]: LOADK     R4 K2        ; R4 := "SporeStatus.Infected"
-  7 [-]: LOADK     R5 0         ; R5 := 0.000000
+  7 [-]: CONST     R5 0         ; R5 := 0.000000
   8 [-]: NEWTABLE  R6 1 0       ; R6 := {}
   9 [-]: MOVE      R7 R1        ; R7 := R1
  10 [-]: SETLIST   R6 1 1       ; R6[(1-1)*FPF+i] := R(6+i), 1 <= i <= 1
  11 [-]: NEWTABLE  R7 1 0       ; R7 := {}
- 12 [-]: LOADK     R8 1         ; R8 := 1.000000
+ 12 [-]: CONST     R8 1         ; R8 := 1.000000
  13 [-]: SETLIST   R7 1 1       ; R7[(1-1)*FPF+i] := R(7+i), 1 <= i <= 1
  14 [-]: GETUPVAL  R8 U0        ; R8 := U0
- 15 [-]: LOADK     R9 0         ; R9 := 0.000000
+ 15 [-]: CONST     R9 0         ; R9 := 0.000000
  16 [-]: GETUPVAL  R10 U1       ; R10 := U1
  17 [-]: CALL      R2 9 1       ; R2(R3,R4,R5,R6,R7,R8,R9,R10)
  18 [-]: GETUPVAL  R2 U0        ; R2 := U0
@@ -430,7 +430,7 @@
 ; Max Stack Size:  8
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0x60130201
-  2 [-]: LOADK     R2 255       ; R2 := 255.000000
+  2 [-]: CONST     R2 255       ; R2 := 255.000000
   3 [-]: MUL       R3 R0 K1     ; R3 := R0 * 127.000000
   4 [-]: ADD       R3 K2 R3     ; R3 := 128.000000 + R3
   5 [-]: MUL       R4 R0 K1     ; R4 := R0 * 127.000000
@@ -439,7 +439,7 @@
   8 [-]: GETGLOBAL R2 K3        ; R2 := 0xae91e43b
   9 [-]: SELF      R2 R2 K4     ; R3 := R2; R2 := R2[0x67bc869f]
  10 [-]: LOADK     R4 K5        ; R4 := "SporeStatus.Infected"
- 11 [-]: LOADK     R5 36        ; R5 := 36.000000
+ 11 [-]: CONST     R5 36        ; R5 := 36.000000
  12 [-]: SELF      R6 R1 K6     ; R7 := R1; R6 := R1[0xa5d5c8f6]
  13 [-]: CALL      R6 2 0       ; R6,... := R6(R7)
  14 [-]: CALL      R2 0 1       ; R2(R3,...)
@@ -485,7 +485,7 @@
   5 [-]: GETUPVAL  R3 U0        ; R3 := U0
   6 [-]: GETTABLE  R3 R3 K3     ; R3 := R3[0x1142c7a8]
   7 [-]: MOVE      R4 R0        ; R4 := R0
-  8 [-]: LOADK     R5 0         ; R5 := 0.000000
+  8 [-]: CONST     R5 0         ; R5 := 0.000000
   9 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
  10 [-]: LOADK     R4 K4        ; R4 := "</b> "
  11 [-]: GETUPVAL  R5 U1        ; R5 := U1
@@ -495,13 +495,13 @@
  15 [-]: GETGLOBAL R2 K6        ; R2 := 0xae91e43b
  16 [-]: SELF      R2 R2 K7     ; R3 := R2; R2 := R2[0x42b04007]
  17 [-]: LOADK     R4 K8        ; R4 := "/Lotus/Language/Suits/PoisonAbility_Decaying"
- 18 [-]: LOADBOOL  R5 1 0       ; R5 := true
+ 18 [-]: LOADKB    R5 1 0       ; R5 := true
  19 [-]: CALL      R2 4 2       ; R2 := R2(R3,R4,R5)
  20 [-]: MOVE      R1 R2        ; R1 := R2
  21 [-]: GETGLOBAL R2 K6        ; R2 := 0xae91e43b
  22 [-]: SELF      R2 R2 K9     ; R3 := R2; R2 := R2[0x5f56eeab]
  23 [-]: LOADK     R4 K10       ; R4 := "SporeStatus.Infected"
- 24 [-]: LOADK     R5 29        ; R5 := 29.000000
+ 24 [-]: CONST     R5 29        ; R5 := 29.000000
  25 [-]: MOVE      R6 R1        ; R6 := R1
  26 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
  27 [-]: GETUPVAL  R2 U2        ; R2 := U2
@@ -520,16 +520,16 @@
  40 [-]: GETGLOBAL R3 K6        ; R3 := 0xae91e43b
  41 [-]: LOADK     R4 K14       ; R4 := "SporeStatus"
  42 [-]: GETGLOBAL R5 K15       ; R5 := 0xe3239eb5
- 43 [-]: LOADK     R6 0         ; R6 := 0.000000
- 44 [-]: LOADK     R7 0         ; R7 := 0.000000
+ 43 [-]: CONST     R6 0         ; R6 := 0.000000
+ 44 [-]: CONST     R7 0         ; R7 := 0.000000
  45 [-]: CALL      R2 6 2       ; R2 := R2(R3,R4,R5,R6,R7)
  46 [-]: GETUPVAL  R3 U0        ; R3 := U0
  47 [-]: GETTABLE  R3 R3 K13    ; R3 := R3[0xf76783e5]
  48 [-]: GETGLOBAL R4 K6        ; R4 := 0xae91e43b
  49 [-]: LOADK     R5 K14       ; R5 := "SporeStatus"
  50 [-]: GETGLOBAL R6 K16       ; R6 := 0xdf3de70a
- 51 [-]: LOADK     R7 0         ; R7 := 0.000000
- 52 [-]: LOADK     R8 0         ; R8 := 0.000000
+ 51 [-]: CONST     R7 0         ; R7 := 0.000000
+ 52 [-]: CONST     R8 0         ; R8 := 0.000000
  53 [-]: CALL      R3 6 2       ; R3 := R3(R4,R5,R6,R7,R8)
  54 [-]: GETGLOBAL R4 K17       ; R4 := 0xc8802016
  55 [-]: NEWTABLE  R5 2 0       ; R5 := {}
@@ -548,16 +548,16 @@
  68 [-]: GETGLOBAL R10 K19      ; R10 := 0x25312c9b
  69 [-]: GETGLOBAL R11 K6       ; R11 := 0xae91e43b
  70 [-]: LOADK     R12 K20      ; R12 := "SporeStatus.Spore"
- 71 [-]: LOADK     R13 0        ; R13 := 0.000000
+ 71 [-]: CONST     R13 0        ; R13 := 0.000000
  72 [-]: NEWTABLE  R14 1 0      ; R14 := {}
  73 [-]: MOVE      R15 R9       ; R15 := R9
  74 [-]: SETLIST   R14 1 1      ; R14[(1-1)*FPF+i] := R(14+i), 1 <= i <= 1
  75 [-]: NEWTABLE  R15 1 0      ; R15 := {}
- 76 [-]: LOADK     R16 1        ; R16 := 1.000000
+ 76 [-]: CONST     R16 1        ; R16 := 1.000000
  77 [-]: SETLIST   R15 1 1      ; R15[(1-1)*FPF+i] := R(15+i), 1 <= i <= 1
- 78 [-]: LOADK     R16 0        ; R16 := 0.500000
+ 78 [-]: CONST     R16 0        ; R16 := 0.500000
  79 [-]: CALL      R10 7 1      ; R10(R11,R12,R13,R14,R15,R16)
- 80 [-]: LOADK     R10 1        ; R10 := 1.000000
+ 80 [-]: CONST     R10 1        ; R10 := 1.000000
  81 [-]: SETUPVAL  R10 U4       ; U82 := R4
  82 [-]: GETUPVAL  R10 U5       ; R10 := U5
  83 [-]: CALL      R10 1 1      ; R10()
@@ -569,7 +569,7 @@
  89 [-]: GETGLOBAL R10 K6       ; R10 := 0xae91e43b
  90 [-]: SELF      R10 R10 K23  ; R11 := R10; R10 := R10[0x67bc869f]
  91 [-]: LOADK     R12 K10      ; R12 := "SporeStatus.Infected"
- 92 [-]: LOADK     R13 36       ; R13 := 36.000000
+ 92 [-]: CONST     R13 36       ; R13 := 36.000000
  93 [-]: GETGLOBAL R14 K24      ; R14 := 0x0032441c
  94 [-]: GETTABLE  R14 R14 K25  ; R14 := R14["UIColor_White"]
  95 [-]: CALL      R10 5 1      ; R10(R11,R12,R13,R14)
@@ -594,13 +594,13 @@
   7 [-]: GETGLOBAL R1 K4        ; R1 := 0xae91e43b
   8 [-]: SELF      R1 R1 K5     ; R2 := R1; R1 := R1[0x67bc869f]
   9 [-]: LOADK     R3 K6        ; R3 := "SporeStatus.Spore"
- 10 [-]: LOADK     R4 0         ; R4 := 0.000000
+ 10 [-]: CONST     R4 0         ; R4 := 0.000000
  11 [-]: MUL       R5 K7 R0     ; R5 := 3.000000 * R0
  12 [-]: CALL      R1 5 1       ; R1(R2,R3,R4,R5)
  13 [-]: GETGLOBAL R1 K4        ; R1 := 0xae91e43b
  14 [-]: SELF      R1 R1 K5     ; R2 := R1; R1 := R1[0x67bc869f]
  15 [-]: LOADK     R3 K6        ; R3 := "SporeStatus.Spore"
- 16 [-]: LOADK     R4 1         ; R4 := 1.000000
+ 16 [-]: CONST     R4 1         ; R4 := 1.000000
  17 [-]: MUL       R5 K8 R0     ; R5 := 1.000000 * R0
  18 [-]: CALL      R1 5 1       ; R1(R2,R3,R4,R5)
  19 [-]: RETURN    R0 1         ; return 
@@ -618,8 +618,8 @@
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0xae91e43b
   2 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0x67bc869f]
   3 [-]: LOADK     R2 K2        ; R2 := "_root"
-  4 [-]: LOADK     R3 10        ; R3 := 10.000000
-  5 [-]: LOADK     R4 0         ; R4 := 0.000000
+  4 [-]: CONST     R3 10        ; R3 := 10.000000
+  5 [-]: CONST     R4 0         ; R4 := 0.000000
   6 [-]: CALL      R0 5 1       ; R0(R1,R2,R3,R4)
   7 [-]: GETGLOBAL R0 K3        ; R0 := _T
   8 [-]: CLOSURE   R1 0         ; R1 := closure(Function #11.1)
@@ -656,7 +656,7 @@
  39 [-]: GETGLOBAL R4 K0        ; R4 := 0xae91e43b
  40 [-]: SELF      R4 R4 K14    ; R5 := R4; R4 := R4[0xaf9fda9f]
  41 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 42 [-]: LOADBOOL  R5 1 0       ; R5 := true
+ 42 [-]: LOADKB    R5 1 0       ; R5 := true
  43 [-]: GETTABLE  R6 R0 K15    ; R6 := R0["mHudScalePadding"]
  44 [-]: CALL      R1 6 1       ; R1(R2,R3,R4,R5,R6)
  45 [-]: GETGLOBAL R1 K3        ; R1 := _T
@@ -672,31 +672,31 @@
  55 [-]: GETGLOBAL R1 K0        ; R1 := 0xae91e43b
  56 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1[0x67bc869f]
  57 [-]: LOADK     R3 K18       ; R3 := "SporeStatus.Spore.Effect"
- 58 [-]: LOADK     R4 10        ; R4 := 10.000000
- 59 [-]: LOADK     R5 40        ; R5 := 40.000000
+ 58 [-]: CONST     R4 10        ; R4 := 10.000000
+ 59 [-]: CONST     R5 40        ; R5 := 40.000000
  60 [-]: CALL      R1 5 1       ; R1(R2,R3,R4,R5)
  61 [-]: GETGLOBAL R1 K0        ; R1 := 0xae91e43b
  62 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1[0x67bc869f]
  63 [-]: LOADK     R3 K20       ; R3 := "SporeStatus.Spore.Glow"
- 64 [-]: LOADK     R4 10        ; R4 := 10.000000
- 65 [-]: LOADK     R5 60        ; R5 := 60.000000
+ 64 [-]: CONST     R4 10        ; R4 := 10.000000
+ 65 [-]: CONST     R5 60        ; R5 := 60.000000
  66 [-]: CALL      R1 5 1       ; R1(R2,R3,R4,R5)
  67 [-]: GETGLOBAL R1 K0        ; R1 := 0xae91e43b
  68 [-]: SELF      R1 R1 K21    ; R2 := R1; R1 := R1[0x5f56eeab]
  69 [-]: LOADK     R3 K22       ; R3 := "SporeStatus.Infected"
- 70 [-]: LOADK     R4 29        ; R4 := 29.000000
+ 70 [-]: CONST     R4 29        ; R4 := 29.000000
  71 [-]: LOADK     R5 K23       ; R5 := ""
  72 [-]: CALL      R1 5 1       ; R1(R2,R3,R4,R5)
  73 [-]: GETGLOBAL R1 K0        ; R1 := 0xae91e43b
  74 [-]: SELF      R1 R1 K24    ; R2 := R1; R1 := R1[0xaade900e]
  75 [-]: LOADK     R3 K22       ; R3 := "SporeStatus.Infected"
- 76 [-]: LOADK     R4 75        ; R4 := 75.000000
- 77 [-]: LOADBOOL  R5 1 0       ; R5 := true
+ 76 [-]: CONST     R4 75        ; R4 := 75.000000
+ 77 [-]: LOADKB    R5 1 0       ; R5 := true
  78 [-]: CALL      R1 5 1       ; R1(R2,R3,R4,R5)
  79 [-]: GETGLOBAL R1 K0        ; R1 := 0xae91e43b
  80 [-]: SELF      R1 R1 K25    ; R2 := R1; R1 := R1[0x42b04007]
  81 [-]: LOADK     R3 K26       ; R3 := "/Lotus/Language/Suits/SarynInfected"
- 82 [-]: LOADBOOL  R4 0 0       ; R4 := false
+ 82 [-]: LOADKB    R4 0 0       ; R4 := false
  83 [-]: CALL      R1 4 2       ; R1 := R1(R2,R3,R4)
  84 [-]: SETUPVAL  R1 U5        ; U82 := R5
  85 [-]: SELF      R1 R0 K27    ; R2 := R0; R1 := R0[0x9d1db3eb]
@@ -725,15 +725,15 @@
 108 [-]: CALL      R2 2 2       ; R2 := R2(R3)
 109 [-]: SETUPVAL  R2 U8        ; U82 := R8
 110 [-]: GETUPVAL  R2 U1        ; R2 := U1
-111 [-]: LOADBOOL  R3 0 0       ; R3 := false
+111 [-]: LOADKB    R3 0 0       ; R3 := false
 112 [-]: CALL      R2 2 1       ; R2(R3)
 113 [-]: GETUPVAL  R2 U2        ; R2 := U2
-114 [-]: LOADK     R3 0         ; R3 := 0.000000
+114 [-]: CONST     R3 0         ; R3 := 0.000000
 115 [-]: CALL      R2 2 1       ; R2(R3)
 116 [-]: GETUPVAL  R2 U3        ; R2 := U3
-117 [-]: LOADK     R3 0         ; R3 := 0.000000
+117 [-]: CONST     R3 0         ; R3 := 0.000000
 118 [-]: CALL      R2 2 1       ; R2(R3)
-119 [-]: LOADBOOL  R2 1 0       ; R2 := true
+119 [-]: LOADKB    R2 1 0       ; R2 := true
 120 [-]: SETUPVAL  R2 U9        ; U82 := R9
 121 [-]: RETURN    R0 1         ; return 
 

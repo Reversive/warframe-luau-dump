@@ -71,9 +71,9 @@
   4 [-]: JMP       13           ; PC := 13
   5 [-]: SELF      R7 R6 K1     ; R8 := R6; R7 := R6[0x5d985c7e]
   6 [-]: MOVE      R9 R1        ; R9 := R1
-  7 [-]: LOADBOOL  R10 0 0      ; R10 := false
-  8 [-]: LOADBOOL  R11 0 0      ; R11 := false
-  9 [-]: LOADK     R12 0        ; R12 := 0.000000
+  7 [-]: LOADKB    R10 0 0      ; R10 := false
+  8 [-]: LOADKB    R11 0 0      ; R11 := false
+  9 [-]: CONST     R12 0        ; R12 := 0.000000
  10 [-]: GETGLOBAL R13 K2       ; R13 := EMPTY_SYMBOL
  11 [-]: GETGLOBAL R14 K3       ; R14 := 0xbef61894
  12 [-]: CALL      R7 8 1       ; R7(R8,R9,R10,R11,R12,R13,R14)
@@ -122,8 +122,8 @@
  29 [-]: LOADK     R8 K13       ; R8 := "SentientDoorFrame"
  30 [-]: CALL      R7 2 2       ; R7 := R7(R8)
  31 [-]: MOVE      R8 R3        ; R8 := R3
- 32 [-]: LOADK     R9 0         ; R9 := 0.000000
- 33 [-]: LOADK     R10 20       ; R10 := 20.000000
+ 32 [-]: CONST     R9 0         ; R9 := 0.000000
+ 33 [-]: CONST     R10 20       ; R10 := 20.000000
  34 [-]: CALL      R5 6 2       ; R5 := R5(R6,R7,R8,R9,R10)
  35 [-]: GETUPVAL  R6 U0        ; R6 := U0
  36 [-]: MOVE      R7 R5        ; R7 := R5
@@ -154,8 +154,8 @@
  61 [-]: LOADK     R9 K18       ; R9 := "DoorBlockingVolume"
  62 [-]: CALL      R8 2 2       ; R8 := R8(R9)
  63 [-]: MOVE      R9 R3        ; R9 := R3
- 64 [-]: LOADK     R10 0        ; R10 := 0.000000
- 65 [-]: LOADK     R11 20       ; R11 := 20.000000
+ 64 [-]: CONST     R10 0        ; R10 := 0.000000
+ 65 [-]: CONST     R11 20       ; R11 := 20.000000
  66 [-]: CALL      R6 6 2       ; R6 := R6(R7,R8,R9,R10,R11)
  67 [-]: GETGLOBAL R7 K19       ; R7 := 0xc8802016
  68 [-]: MOVE      R8 R6        ; R8 := R6
@@ -181,8 +181,8 @@
  88 [-]: LOADK     R16 K23      ; R16 := "DoorLock"
  89 [-]: CALL      R15 2 2      ; R15 := R15(R16)
  90 [-]: MOVE      R16 R3       ; R16 := R3
- 91 [-]: LOADK     R17 0        ; R17 := 0.000000
- 92 [-]: LOADK     R18 20       ; R18 := 20.000000
+ 91 [-]: CONST     R17 0        ; R17 := 0.000000
+ 92 [-]: CONST     R18 20       ; R18 := 20.000000
  93 [-]: CALL      R13 6 2      ; R13 := R13(R14,R15,R16,R17,R18)
  94 [-]: MOVE      R12 R13      ; R12 := R13
  95 [-]: JMP       106          ; PC := 106
@@ -192,8 +192,8 @@
  99 [-]: LOADK     R16 K24      ; R16 := "DoorUnlock"
 100 [-]: CALL      R15 2 2      ; R15 := R15(R16)
 101 [-]: MOVE      R16 R3       ; R16 := R3
-102 [-]: LOADK     R17 0        ; R17 := 0.000000
-103 [-]: LOADK     R18 20       ; R18 := 20.000000
+102 [-]: CONST     R17 0        ; R17 := 0.000000
+103 [-]: CONST     R18 20       ; R18 := 20.000000
 104 [-]: CALL      R13 6 2      ; R13 := R13(R14,R15,R16,R17,R18)
 105 [-]: MOVE      R12 R13      ; R12 := R13
 106 [-]: GETGLOBAL R13 K19      ; R13 := 0xc8802016
@@ -219,12 +219,12 @@
 126 [-]: CALL      R23 3 1      ; R23(R24,R25)
 127 [-]: TFORLOOP  R18 2        ; R21,R22 :=  R18(R19,R20); if R21 ~= nil then begin PC = 119; R20 := R21 end
 128 [-]: JMP       119          ; PC := 119
-129 [-]: LOADBOOL  R23 1 0      ; R23 := true
+129 [-]: LOADKB    R23 1 0      ; R23 := true
 130 [-]: EQ        1 R2 K8      ; if R2 == 0.000000 then PC := 134
 131 [-]: JMP       134          ; PC := 134
 132 [-]: EQ        0 R2 K14     ; if R2 ~= 5.000000 then PC := 135
 133 [-]: JMP       135          ; PC := 135
-134 [-]: LOADBOOL  R23 0 0      ; R23 := false
+134 [-]: LOADKB    R23 0 0      ; R23 := false
 135 [-]: GETGLOBAL R24 K19      ; R24 := 0xc8802016
 136 [-]: GETGLOBAL R25 K28      ; R25 := 0x0c899a43
 137 [-]: CALL      R24 2 4      ; R24,R25,R26 := R24(R25)
@@ -261,7 +261,7 @@
  13 [-]: GETGLOBAL R8 K6        ; R8 := gNpcDoorHintType
  14 [-]: SELF      R9 R5 K7     ; R10 := R5; R9 := R5[0xd1586535]
  15 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 16 [-]: LOADK     R10 12       ; R10 := 12.000000
+ 16 [-]: CONST     R10 12       ; R10 := 12.000000
  17 [-]: CALL      R6 5 2       ; R6 := R6(R7,R8,R9,R10)
  18 [-]: GETGLOBAL R7 K8        ; R7 := 0x7b998233
  19 [-]: MOVE      R8 R6        ; R8 := R6
@@ -271,7 +271,7 @@
  23 [-]: SELF      R7 R5 K9     ; R8 := R5; R7 := R5[0x986d2ab8]
  24 [-]: GETGLOBAL R9 K10       ; R9 := 0x6c97a788
  25 [-]: GETTABLE  R9 R9 K11    ; R9 := R9["EMISSIVE_MAP_ATTEN"]
- 26 [-]: LOADK     R10 0        ; R10 := 0.000000
+ 26 [-]: CONST     R10 0        ; R10 := 0.000000
  27 [-]: CALL      R7 4 1       ; R7(R8,R9,R10)
  28 [-]: SELF      R7 R5 K12    ; R8 := R5; R7 := R5[0xc1595bd5]
  29 [-]: GETGLOBAL R9 K13       ; R9 := gLotusEffectDecorationType

@@ -51,18 +51,18 @@
  28 [-]: GETTABLE  R2 R2 K5     ; R2 := R2["IsUnmasked"]
  29 [-]: TEST      R2 0         ; if not R2 then PC := 44
  30 [-]: JMP       44           ; PC := 44
- 31 [-]: LOADK     R2 0         ; R2 := 0.000000
- 32 [-]: LOADK     R3 4         ; R3 := 4.000000
- 33 [-]: LOADK     R4 1         ; R4 := 1.000000
+ 31 [-]: CONST     R2 0         ; R2 := 0.000000
+ 32 [-]: CONST     R3 4         ; R3 := 4.000000
+ 33 [-]: CONST     R4 1         ; R4 := 1.000000
  34 [-]: FORPREP   R2 39        ; R2 -= R4; PC := 39
  35 [-]: SELF      R6 R1 K6     ; R7 := R1; R6 := R1[0xef040c26]
  36 [-]: MOVE      R8 R5        ; R8 := R5
- 37 [-]: LOADK     R9 -1        ; R9 := -1.000000
+ 37 [-]: CONST     R9 -1        ; R9 := -1.000000
  38 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
  39 [-]: FORLOOP   R2 35        ; R2 += R4; if R2 <= R3 then begin PC := 35; R5 := R2 end
  40 [-]: SELF      R6 R1 K6     ; R7 := R1; R6 := R1[0xef040c26]
- 41 [-]: LOADK     R8 6         ; R8 := 6.000000
- 42 [-]: LOADK     R9 1         ; R9 := 1.000000
+ 41 [-]: CONST     R8 6         ; R8 := 6.000000
+ 42 [-]: CONST     R9 1         ; R9 := 1.000000
  43 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
  44 [-]: RETURN    R0 1         ; return 
 

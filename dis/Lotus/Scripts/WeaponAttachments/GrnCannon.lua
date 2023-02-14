@@ -53,7 +53,7 @@
  26 [-]: GETGLOBAL R6 K10       ; R6 := ZERO_ROTATION
  27 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
  28 [-]: SELF      R3 R1 K11    ; R4 := R1; R3 := R1[0x768274d6]
- 29 [-]: LOADBOOL  R5 1 0       ; R5 := true
+ 29 [-]: LOADKB    R5 1 0       ; R5 := true
  30 [-]: CALL      R3 3 1       ; R3(R4,R5)
  31 [-]: RETURN    R0 1         ; return 
 
@@ -92,7 +92,7 @@
  23 [-]: CALL      R6 2 0       ; R6,... := R6(R7)
  24 [-]: CALL      R3 0 1       ; R3(R4,...)
  25 [-]: SELF      R3 R2 K8     ; R4 := R2; R3 := R2[0x768274d6]
- 26 [-]: LOADBOOL  R5 0 0       ; R5 := false
+ 26 [-]: LOADKB    R5 0 0       ; R5 := false
  27 [-]: CALL      R3 3 1       ; R3(R4,R5)
  28 [-]: RETURN    R0 1         ; return 
 

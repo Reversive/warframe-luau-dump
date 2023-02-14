@@ -10,8 +10,8 @@
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x2d0fad09
   2 [-]: LOADK     R1 K1        ; R1 := "Lotus.Scripts.Nemesis.NemesisGenerator"
   3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: LOADK     R1 2         ; R1 := 2.000000
-  5 [-]: LOADK     R2 10        ; R2 := 10.000000
+  4 [-]: CONST     R1 2         ; R1 := 2.000000
+  5 [-]: CONST     R2 10        ; R2 := 10.000000
   6 [-]: GETGLOBAL R3 K2        ; R3 := 0x0469f296
   7 [-]: LOADK     R4 K3        ; R4 := "HenchmenCount"
   8 [-]: CALL      R3 2 2       ; R3 := R3(R4)
@@ -45,7 +45,7 @@
   3 [-]: CALL      R1 2 2       ; R1 := R1(R2)
   4 [-]: SELF      R1 R1 K2     ; R2 := R1; R1 := R1[0x66905cb0]
   5 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  6 [-]: LOADK     R2 0         ; R2 := 0.000000
+  6 [-]: CONST     R2 0         ; R2 := 0.000000
   7 [-]: SELF      R3 R1 K3     ; R4 := R1; R3 := R1[0x6968ea36]
   8 [-]: CALL      R3 2 2       ; R3 := R3(R4)
   9 [-]: SELF      R4 R1 K4     ; R5 := R1; R4 := R1[0xcea36880]
@@ -55,7 +55,7 @@
  13 [-]: MOVE      R8 R3        ; R8 := R3
  14 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
  15 [-]: GETGLOBAL R6 K6        ; R6 := 0x55730e1a
- 16 [-]: LOADK     R7 1         ; R7 := 1.000000
+ 16 [-]: CONST     R7 1         ; R7 := 1.000000
  17 [-]: LEN       R8 R5        ; R8 := # R5
  18 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
  19 [-]: GETTABLE  R6 R5 R6     ; R6 := R5[R6]
@@ -118,7 +118,7 @@
  76 [-]: MOVE      R20 R6       ; R20 := R6
  77 [-]: MOVE      R21 R8       ; R21 := R8
  78 [-]: MOVE      R22 R9       ; R22 := R9
- 79 [-]: LOADK     R23 2        ; R23 := 2.000000
+ 79 [-]: CONST     R23 2        ; R23 := 2.000000
  80 [-]: GETUPVAL  R24 U1       ; R24 := U1
  81 [-]: SELF      R25 R1 K3    ; R26 := R1; R25 := R1[0x6968ea36]
  82 [-]: CALL      R25 2 0      ; R25,... := R25(R26)
@@ -157,7 +157,7 @@
 115 [-]: MOVE      R21 R15      ; R21 := R15
 116 [-]: CALL      R19 3 1      ; R19(R20,R21)
 117 [-]: SELF      R19 R1 K32   ; R20 := R1; R19 := R1[0xf2d6020e]
-118 [-]: LOADK     R21 1        ; R21 := 1.000000
+118 [-]: CONST     R21 1        ; R21 := 1.000000
 119 [-]: CALL      R19 3 1      ; R19(R20,R21)
 120 [-]: ADD       R2 R2 K10    ; R2 := R2 + 1.000000
 121 [-]: RETURN    R0 1         ; return 
@@ -172,19 +172,19 @@
 ; Is_vararg:       0
 ; Max Stack Size:  8
 
-  1 [-]: LOADK     R1 0         ; R1 := 0.000000
+  1 [-]: CONST     R1 0         ; R1 := 0.000000
   2 [-]: LOADNIL   R2 R2        ; R2 := nil
   3 [-]: GETGLOBAL R3 K0        ; R3 := _T
   4 [-]: GETTABLE  R3 R3 K1     ; R3 := R3["UpdateHenchmanCount"]
   5 [-]: TEST      R3 1         ; if R3 then PC := 11
   6 [-]: JMP       11           ; PC := 11
   7 [-]: GETGLOBAL R3 K2        ; R3 := 0xcbd666e1
-  8 [-]: LOADK     R4 0         ; R4 := 0.000000
+  8 [-]: CONST     R4 0         ; R4 := 0.000000
   9 [-]: CALL      R3 2 1       ; R3(R4)
  10 [-]: JMP       3            ; PC := 3
  11 [-]: GETGLOBAL R3 K0        ; R3 := _T
  12 [-]: GETTABLE  R2 R3 K1     ; R2 := R3["UpdateHenchmanCount"]
- 13 [-]: LOADBOOL  R3 1 0       ; R3 := true
+ 13 [-]: LOADKB    R3 1 0       ; R3 := true
  14 [-]: GETUPVAL  R4 U0        ; R4 := U0
  15 [-]: GETTABLE  R4 R4 K3     ; R4 := R4[0x1598a62a]
  16 [-]: CLOSURE   R5 0         ; R5 := closure(Function #2.1)
@@ -193,7 +193,7 @@
  19 [-]: GETGLOBAL R4 K4        ; R4 := 0xbe190284
  20 [-]: SELF      R4 R4 K5     ; R5 := R4; R4 := R4[0x0eb34c69]
  21 [-]: GETUPVAL  R6 U1        ; R6 := U1
- 22 [-]: LOADK     R7 0         ; R7 := 0.000000
+ 22 [-]: CONST     R7 0         ; R7 := 0.000000
  23 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
  24 [-]: GETUPVAL  R5 U2        ; R5 := U2
  25 [-]: LE        0 R5 R4      ; if R5 > R4 then PC := 28
@@ -229,7 +229,7 @@
  55 [-]: MOVE      R5 R0        ; R5 := R0
  56 [-]: CALL      R4 2 1       ; R4(R5)
  57 [-]: GETGLOBAL R4 K2        ; R4 := 0xcbd666e1
- 58 [-]: LOADK     R5 0         ; R5 := 0.000000
+ 58 [-]: CONST     R5 0         ; R5 := 0.000000
  59 [-]: CALL      R4 2 1       ; R4(R5)
  60 [-]: JMP       19           ; PC := 19
  61 [-]: RETURN    R0 1         ; return 

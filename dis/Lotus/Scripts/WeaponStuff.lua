@@ -28,9 +28,9 @@
   5 [-]: JMP       12           ; PC := 12
   6 [-]: SELF      R1 R0 K1     ; R2 := R0; R1 := R0[0x659d451f]
   7 [-]: GETGLOBAL R3 K2        ; R3 := 0x19bb65af
-  8 [-]: LOADBOOL  R4 1 0       ; R4 := true
-  9 [-]: LOADK     R5 0         ; R5 := 0.000000
- 10 [-]: LOADBOOL  R6 0 0       ; R6 := false
+  8 [-]: LOADKB    R4 1 0       ; R4 := true
+  9 [-]: CONST     R5 0         ; R5 := 0.000000
+ 10 [-]: LOADKB    R6 0 0       ; R6 := false
  11 [-]: CALL      R1 6 1       ; R1(R2,R3,R4,R5,R6)
  12 [-]: RETURN    R0 1         ; return 
 

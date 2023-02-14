@@ -48,7 +48,7 @@
   9 [-]: GETUPVAL  R0 U1        ; R0 := U1
  10 [-]: GETTABLE  R0 R0 K5     ; R0 := R0[0x118e5c26]
  11 [-]: LOADK     R1 K6        ; R1 := "[HC] PRACTICE AREA"
- 12 [-]: LOADK     R2 0         ; R2 := 0.000000
+ 12 [-]: CONST     R2 0         ; R2 := 0.000000
  13 [-]: CALL      R0 3 1       ; R0(R1,R2)
  14 [-]: GETUPVAL  R0 U1        ; R0 := U1
  15 [-]: GETTABLE  R0 R0 K7     ; R0 := R0[0x2beb71d2]
@@ -151,7 +151,7 @@
  38 [-]: GETUPVAL  R8 U0        ; R8 := U0
  39 [-]: GETTABLE  R8 R8 K14    ; R8 := R8[0xa1df01d6]
  40 [-]: LOADK     R9 K15       ; R9 := "[HC] RETRIEVE THE CREDITS CACHE"
- 41 [-]: LOADK     R10 1        ; R10 := 1.000000
+ 41 [-]: CONST     R10 1        ; R10 := 1.000000
  42 [-]: CALL      R8 3 1       ; R8(R9,R10)
  43 [-]: RETURN    R0 1         ; return 
 

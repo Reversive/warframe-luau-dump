@@ -29,7 +29,7 @@
   4 [-]: TEST      R1 0         ; if not R1 then PC := 7
   5 [-]: JMP       7            ; PC := 7
   6 [-]: RETURN    R0 1         ; return 
-  7 [-]: LOADBOOL  R1 0 0       ; R1 := false
+  7 [-]: LOADKB    R1 0 0       ; R1 := false
   8 [-]: SELF      R2 R0 K1     ; R3 := R0; R2 := R0[0x2b54251b]
   9 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  10 [-]: SELF      R3 R2 K2     ; R4 := R2; R3 := R2[0xf2deaf69]
@@ -68,7 +68,7 @@
  43 [-]: RETURN    R0 1         ; return 
  44 [-]: SELF      R5 R4 K10    ; R6 := R4; R5 := R4[0x86e05b7d]
  45 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 46 [-]: NOT       R6 R5        ; R6 := not R5
+ 46 [-]: NOT       R6 R5        ; R6 :=  R5
  47 [-]: EQ        0 R6 R1      ; if R6 ~= R1 then PC := 71
  48 [-]: JMP       71           ; PC := 71
  49 [-]: TEST      R5 0         ; if not R5 then PC := 61
@@ -115,7 +115,7 @@
   4 [-]: TEST      R1 0         ; if not R1 then PC := 7
   5 [-]: JMP       7            ; PC := 7
   6 [-]: RETURN    R0 1         ; return 
-  7 [-]: LOADBOOL  R1 0 0       ; R1 := false
+  7 [-]: LOADKB    R1 0 0       ; R1 := false
   8 [-]: SELF      R2 R0 K1     ; R3 := R0; R2 := R0[0x2b54251b]
   9 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  10 [-]: SELF      R3 R2 K2     ; R4 := R2; R3 := R2[0xf2deaf69]
@@ -150,7 +150,7 @@
  39 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  40 [-]: SELF      R6 R3 K11    ; R7 := R3; R6 := R3[0xf663f477]
  41 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 42 [-]: NOT       R7 R5        ; R7 := not R5
+ 42 [-]: NOT       R7 R5        ; R7 :=  R5
  43 [-]: EQ        0 R7 R1      ; if R7 ~= R1 then PC := 68
  44 [-]: JMP       68           ; PC := 68
  45 [-]: TEST      R5 0         ; if not R5 then PC := 57
@@ -188,7 +188,7 @@
  77 [-]: SELF      R7 R4 K13    ; R8 := R4; R7 := R4[0xf4e253b6]
  78 [-]: CALL      R7 2 1       ; R7(R8)
  79 [-]: GETGLOBAL R7 K14       ; R7 := 0xcbd666e1
- 80 [-]: LOADK     R8 0         ; R8 := 0.000000
+ 80 [-]: CONST     R8 0         ; R8 := 0.000000
  81 [-]: CALL      R7 2 1       ; R7(R8)
  82 [-]: JMP       32           ; PC := 32
  83 [-]: RETURN    R0 1         ; return 

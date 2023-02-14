@@ -33,10 +33,10 @@
   6 [-]: CALL      R3 2 2       ; R3 := R3(R4)
   7 [-]: TEST      R3 0         ; if not R3 then PC := 12
   8 [-]: JMP       12           ; PC := 12
-  9 [-]: LOADBOOL  R3 1 0       ; R3 := true
+  9 [-]: LOADKB    R3 1 0       ; R3 := true
  10 [-]: RETURN    R3 2         ; return R3
  11 [-]: JMP       14           ; PC := 14
- 12 [-]: LOADBOOL  R3 0 0       ; R3 := false
+ 12 [-]: LOADKB    R3 0 0       ; R3 := false
  13 [-]: RETURN    R3 2         ; return R3
  14 [-]: RETURN    R0 1         ; return 
 
@@ -56,7 +56,7 @@
   4 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
   5 [-]: SELF      R5 R1 K3     ; R6 := R1; R5 := R1[0x7027c544]
   6 [-]: LOADNIL   R7 R7        ; R7 := nil
-  7 [-]: LOADBOOL  R8 0 0       ; R8 := false
+  7 [-]: LOADKB    R8 0 0       ; R8 := false
   8 [-]: CALL      R5 4 1       ; R5(R6,R7,R8)
   9 [-]: RETURN    R0 1         ; return 
 

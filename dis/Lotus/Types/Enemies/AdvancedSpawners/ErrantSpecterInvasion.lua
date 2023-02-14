@@ -7,19 +7,19 @@
 ; Is_vararg:       2
 ; Max Stack Size:  13
 
-  1 [-]: LOADK     R0 8         ; R0 := 8.000000
+  1 [-]: CONST     R0 8         ; R0 := 8.000000
   2 [-]: NEWTABLE  R1 4 0       ; R1 := {}
-  3 [-]: LOADK     R2 3         ; R2 := 3.000000
-  4 [-]: LOADK     R3 4         ; R3 := 4.000000
-  5 [-]: LOADK     R4 5         ; R4 := 5.000000
-  6 [-]: LOADK     R5 6         ; R5 := 6.000000
+  3 [-]: CONST     R2 3         ; R2 := 3.000000
+  4 [-]: CONST     R3 4         ; R3 := 4.000000
+  5 [-]: CONST     R4 5         ; R4 := 5.000000
+  6 [-]: CONST     R5 6         ; R5 := 6.000000
   7 [-]: SETLIST   R1 4 1       ; R1[(1-1)*FPF+i] := R(1+i), 1 <= i <= 4
-  8 [-]: LOADK     R2 100       ; R2 := 100.000000
+  8 [-]: CONST     R2 100       ; R2 := 100.000000
   9 [-]: NEWTABLE  R3 4 0       ; R3 := {}
- 10 [-]: LOADK     R4 6         ; R4 := 6.000000
- 11 [-]: LOADK     R5 8         ; R5 := 8.000000
- 12 [-]: LOADK     R6 10        ; R6 := 10.000000
- 13 [-]: LOADK     R7 12        ; R7 := 12.000000
+ 10 [-]: CONST     R4 6         ; R4 := 6.000000
+ 11 [-]: CONST     R5 8         ; R5 := 8.000000
+ 12 [-]: CONST     R6 10        ; R6 := 10.000000
+ 13 [-]: CONST     R7 12        ; R7 := 12.000000
  14 [-]: SETLIST   R3 4 1       ; R3[(1-1)*FPF+i] := R(3+i), 1 <= i <= 4
  15 [-]: NEWTABLE  R4 0 3       ; R4 := {}
  16 [-]: SETTABLE  R4 K0 K1     ; R4["players"] := nil
@@ -121,7 +121,7 @@
  12 [-]: GETUPVAL  R0 U0        ; R0 := U0
  13 [-]: GETTABLE  R0 R0 K1     ; R0 := R0["players"]
  14 [-]: GETGLOBAL R1 K3        ; R1 := 0x55730e1a
- 15 [-]: LOADK     R2 1         ; R2 := 1.000000
+ 15 [-]: CONST     R2 1         ; R2 := 1.000000
  16 [-]: GETUPVAL  R3 U0        ; R3 := U0
  17 [-]: GETTABLE  R3 R3 K1     ; R3 := R3["players"]
  18 [-]: LEN       R3 R3        ; R3 := # R3
@@ -140,10 +140,10 @@
  31 [-]: TEST      R2 1         ; if R2 then PC := 82
  32 [-]: JMP       82           ; PC := 82
  33 [-]: NEWTABLE  R2 0 0       ; R2 := {}
- 34 [-]: LOADK     R3 1         ; R3 := 1.000000
+ 34 [-]: CONST     R3 1         ; R3 := 1.000000
  35 [-]: GETUPVAL  R4 U1        ; R4 := U1
  36 [-]: LEN       R4 R4        ; R4 := # R4
- 37 [-]: LOADK     R5 1         ; R5 := 1.000000
+ 37 [-]: CONST     R5 1         ; R5 := 1.000000
  38 [-]: FORPREP   R3 69        ; R3 -= R5; PC := 69
  39 [-]: GETUPVAL  R7 U1        ; R7 := U1
  40 [-]: GETTABLE  R7 R7 R6     ; R7 := R7[R6]
@@ -181,7 +181,7 @@
  72 [-]: JMP       82           ; PC := 82
  73 [-]: MOVE      R7 R0        ; R7 := R0
  74 [-]: GETGLOBAL R8 K3        ; R8 := 0x55730e1a
- 75 [-]: LOADK     R9 1         ; R9 := 1.000000
+ 75 [-]: CONST     R9 1         ; R9 := 1.000000
  76 [-]: LEN       R10 R2       ; R10 := # R2
  77 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
  78 [-]: GETTABLE  R8 R2 R8     ; R8 := R2[R8]
@@ -210,7 +210,7 @@
   8 [-]: LOADK     R4 K6        ; R4 := "Server.NumVirtualTestClients"
   9 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
  10 [-]: ADD       R1 R1 R2     ; R1 := R1 + R2
- 11 [-]: LOADK     R2 4         ; R2 := 4.000000
+ 11 [-]: CONST     R2 4         ; R2 := 4.000000
  12 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
  13 [-]: GETGLOBAL R1 K7        ; R1 := 0x7b998233
  14 [-]: GETUPVAL  R2 U0        ; R2 := U0
@@ -285,8 +285,8 @@
  18 [-]: LOADK     R5 K8        ; R5 := "HandShrineSpawn"
  19 [-]: CALL      R4 2 0       ; R4,... := R4(R5)
  20 [-]: CALL      R2 0 2       ; R2 := R2(R3,...)
- 21 [-]: LOADK     R3 0         ; R3 := 0.000000
- 22 [-]: LOADK     R4 0         ; R4 := 0.000000
+ 21 [-]: CONST     R3 0         ; R3 := 0.000000
+ 22 [-]: CONST     R4 0         ; R4 := 0.000000
  23 [-]: GETGLOBAL R5 K9        ; R5 := _T
  24 [-]: SETTABLE  R5 K10 K11   ; R5["ReservedSpawnSlots"] := 0.000000
  25 [-]: GETGLOBAL R5 K0        ; R5 := 0x89326c93
@@ -296,8 +296,8 @@
  29 [-]: SETUPVAL  R5 U1        ; U82 := R1
  30 [-]: GETUPVAL  R5 U1        ; R5 := U1
  31 [-]: LEN       R5 R5        ; R5 := # R5
- 32 [-]: LOADK     R6 1         ; R6 := 1.000000
- 33 [-]: LOADK     R7 -1        ; R7 := -1.000000
+ 32 [-]: CONST     R6 1         ; R6 := 1.000000
+ 33 [-]: CONST     R7 -1        ; R7 := -1.000000
  34 [-]: FORPREP   R5 65        ; R5 -= R7; PC := 65
  35 [-]: GETUPVAL  R9 U1        ; R9 := U1
  36 [-]: GETTABLE  R9 R9 R8     ; R9 := R9[R8]
@@ -330,7 +330,7 @@
  63 [-]: MOVE      R12 R8       ; R12 := R8
  64 [-]: CALL      R10 3 1      ; R10(R11,R12)
  65 [-]: FORLOOP   R5 35        ; R5 += R7; if R5 <= R6 then begin PC := 35; R8 := R5 end
- 66 [-]: LOADK     R10 999      ; R10 := 999.000000
+ 66 [-]: CONST     R10 999      ; R10 := 999.000000
  67 [-]: GETGLOBAL R11 K9       ; R11 := _T
  68 [-]: GETTABLE  R11 R11 K20  ; R11 := R11["SpawnErrants"]
  69 [-]: TEST      R11 0        ; if not R11 then PC := 232
@@ -372,8 +372,8 @@
 105 [-]: GETUPVAL  R12 U5       ; R12 := U5
 106 [-]: GETTABLE  R12 R12 K24  ; R12 := R12["errants"]
 107 [-]: LEN       R12 R12      ; R12 := # R12
-108 [-]: LOADK     R13 1        ; R13 := 1.000000
-109 [-]: LOADK     R14 -1       ; R14 := -1.000000
+108 [-]: CONST     R13 1        ; R13 := 1.000000
+109 [-]: CONST     R14 -1       ; R14 := -1.000000
 110 [-]: FORPREP   R12 122      ; R12 -= R14; PC := 122
 111 [-]: GETGLOBAL R16 K18      ; R16 := 0x7b998233
 112 [-]: GETUPVAL  R17 U5       ; R17 := U5
@@ -425,22 +425,22 @@
 158 [-]: MOVE      R21 R17      ; R21 := R17
 159 [-]: GETGLOBAL R22 K28      ; R22 := ZERO_ROTATION
 160 [-]: CALL      R18 5 1      ; R18(R19,R20,R21,R22)
-161 [-]: LOADK     R18 1        ; R18 := 1.000000
+161 [-]: CONST     R18 1        ; R18 := 1.000000
 162 [-]: MOVE      R19 R11      ; R19 := R11
-163 [-]: LOADK     R20 1        ; R20 := 1.000000
+163 [-]: CONST     R20 1        ; R20 := 1.000000
 164 [-]: FORPREP   R18 222      ; R18 -= R20; PC := 222
 165 [-]: GETGLOBAL R22 K29      ; R22 := 0x55730e1a
-166 [-]: LOADK     R23 1        ; R23 := 1.000000
+166 [-]: CONST     R23 1        ; R23 := 1.000000
 167 [-]: LEN       R24 R1       ; R24 := # R1
 168 [-]: CALL      R22 3 2      ; R22 := R22(R23,R24)
 169 [-]: GETTABLE  R22 R1 R22   ; R22 := R1[R22]
 170 [-]: GETUPVAL  R23 U0       ; R23 := U0
 171 [-]: SELF      R23 R23 K30  ; R24 := R23; R23 := R23[0x96930263]
 172 [-]: MOVE      R25 R17      ; R25 := R17
-173 [-]: LOADK     R26 1        ; R26 := 1.000000
-174 [-]: LOADK     R27 8        ; R27 := 8.000000
-175 [-]: LOADBOOL  R28 0 0      ; R28 := false
-176 [-]: LOADK     R29 0        ; R29 := 0.000000
+173 [-]: CONST     R26 1        ; R26 := 1.000000
+174 [-]: CONST     R27 8        ; R27 := 8.000000
+175 [-]: LOADKB    R28 0 0      ; R28 := false
+176 [-]: CONST     R29 0        ; R29 := 0.000000
 177 [-]: CALL      R23 7 2      ; R23 := R23(R24,R25,R26,R27,R28,R29)
 178 [-]: GETUPVAL  R24 U0       ; R24 := U0
 179 [-]: SELF      R24 R24 K31  ; R25 := R24; R24 := R24[0x6cd833c5]
@@ -488,7 +488,7 @@
 221 [-]: CALL      R26 2 1      ; R26(R27)
 222 [-]: FORLOOP   R18 165      ; R18 += R20; if R18 <= R19 then begin PC := 165; R21 := R18 end
 223 [-]: SETUPVAL  R17 U10      ; U82 := R10
-224 [-]: LOADK     R10 0        ; R10 := 0.000000
+224 [-]: CONST     R10 0        ; R10 := 0.000000
 225 [-]: JMP       228          ; PC := 228
 226 [-]: GETUPVAL  R26 U3       ; R26 := U3
 227 [-]: SUB       R10 R26 K43  ; R10 := R26 - 1.000000
@@ -498,7 +498,7 @@
 231 [-]: JMP       241          ; PC := 241
 232 [-]: EQ        1 R4 K11     ; if R4 == 0.000000 then PC := 235
 233 [-]: JMP       235          ; PC := 235
-234 [-]: LOADK     R4 0         ; R4 := 0.000000
+234 [-]: CONST     R4 0         ; R4 := 0.000000
 235 [-]: GETGLOBAL R26 K9       ; R26 := _T
 236 [-]: GETTABLE  R26 R26 K10  ; R26 := R26["ReservedSpawnSlots"]
 237 [-]: EQ        1 R26 K11    ; if R26 == 0.000000 then PC := 241
@@ -506,7 +506,7 @@
 239 [-]: GETGLOBAL R26 K9       ; R26 := _T
 240 [-]: SETTABLE  R26 K10 K11  ; R26["ReservedSpawnSlots"] := 0.000000
 241 [-]: GETGLOBAL R26 K39      ; R26 := 0xcbd666e1
-242 [-]: LOADK     R27 0        ; R27 := 0.000000
+242 [-]: CONST     R27 0        ; R27 := 0.000000
 243 [-]: CALL      R26 2 1      ; R26(R27)
 244 [-]: JMP       67           ; PC := 67
 245 [-]: RETURN    R0 1         ; return 

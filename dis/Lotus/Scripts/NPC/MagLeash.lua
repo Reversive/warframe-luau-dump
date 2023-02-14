@@ -202,7 +202,7 @@
  69 [-]: GETGLOBAL R11 K12      ; R11 := 0x0469f296
  70 [-]: LOADK     R12 K13      ; R12 := "DoMagGrappleSlow"
  71 [-]: CALL      R11 2 2      ; R11 := R11(R12)
- 72 [-]: LOADBOOL  R12 0 0      ; R12 := false
+ 72 [-]: LOADKB    R12 0 0      ; R12 := false
  73 [-]: CALL      R9 4 1       ; R9(R10,R11,R12)
  74 [-]: RETURN    R0 1         ; return 
 
@@ -256,9 +256,9 @@
  38 [-]: CALL      R9 2 2       ; R9 := R9(R10)
  39 [-]: TEST      R9 1         ; if R9 then PC := 59
  40 [-]: JMP       59           ; PC := 59
- 41 [-]: LOADK     R9 1         ; R9 := 1.000000
+ 41 [-]: CONST     R9 1         ; R9 := 1.000000
  42 [-]: LEN       R10 R8       ; R10 := # R8
- 43 [-]: LOADK     R11 1        ; R11 := 1.000000
+ 43 [-]: CONST     R11 1        ; R11 := 1.000000
  44 [-]: FORPREP   R9 58        ; R9 -= R11; PC := 58
  45 [-]: GETTABLE  R13 R8 R12   ; R13 := R8[R12]
  46 [-]: SELF      R13 R13 K10  ; R14 := R13; R13 := R13[0xab8600f8]

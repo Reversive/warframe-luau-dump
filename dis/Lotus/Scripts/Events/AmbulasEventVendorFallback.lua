@@ -10,7 +10,7 @@
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x0469f296
   2 [-]: LOADK     R1 K1        ; R1 := "AmbulasEvent"
   3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: LOADBOOL  R1 0 0       ; R1 := false
+  4 [-]: LOADKB    R1 0 0       ; R1 := false
   5 [-]: LOADNIL   R2 R4        ; R2 := R3 := R4 := nil
   6 [-]: CLOSURE   R5 0         ; R5 := closure(Function #1)
   7 [-]: MOVE      R0 R1        ; R0 := R1
@@ -41,7 +41,7 @@
   3 [-]: RETURN    R0 1         ; return 
   4 [-]: GETGLOBAL R2 K0        ; R2 := 0x76ea806b
   5 [-]: SELF      R2 R2 K1     ; R3 := R2; R2 := R2[0x3f3ae64c]
-  6 [-]: LOADK     R4 0         ; R4 := 0.000000
+  6 [-]: CONST     R4 0         ; R4 := 0.000000
   7 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
   8 [-]: GETGLOBAL R3 K2        ; R3 := 0x7b998233
   9 [-]: MOVE      R4 R2        ; R4 := R2
@@ -57,14 +57,14 @@
  19 [-]: TEST      R4 0         ; if not R4 then PC := 22
  20 [-]: JMP       22           ; PC := 22
  21 [-]: RETURN    R0 1         ; return 
- 22 [-]: LOADBOOL  R4 0 0       ; R4 := false
+ 22 [-]: LOADKB    R4 0 0       ; R4 := false
  23 [-]: SETUPVAL  R4 U0        ; U82 := R0
  24 [-]: SELF      R4 R3 K4     ; R5 := R3; R4 := R3[0x69727e0b]
  25 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 26 [-]: LOADK     R5 1         ; R5 := 1.000000
+ 26 [-]: CONST     R5 1         ; R5 := 1.000000
  27 [-]: GETTABLE  R6 R4 K5     ; R6 := R4["mGoals"]
  28 [-]: LEN       R6 R6        ; R6 := # R6
- 29 [-]: LOADK     R7 1         ; R7 := 1.000000
+ 29 [-]: CONST     R7 1         ; R7 := 1.000000
  30 [-]: FORPREP   R5 56        ; R5 -= R7; PC := 56
  31 [-]: GETGLOBAL R9 K2        ; R9 := 0x7b998233
  32 [-]: GETTABLE  R10 R4 K5    ; R10 := R4["mGoals"]
@@ -87,8 +87,8 @@
  49 [-]: CALL      R10 2 2      ; R10 := R10(R11)
  50 [-]: LT        1 K10 R10    ; if 0.000000 < R10 then PC := 53
  51 [-]: JMP       53           ; PC := 53
- 52 [-]: LOADBOOL  R11 0 1      ; R11 := false; PC := 53
- 53 [-]: LOADBOOL  R11 1 0      ; R11 := true
+ 52 [-]: LOADKB    R11 0 1      ; R11 := false; PC := 53
+ 53 [-]: LOADKB    R11 1 0      ; R11 := true
  54 [-]: SETUPVAL  R11 U0       ; U82 := R0
  55 [-]: JMP       57           ; PC := 57
  56 [-]: FORLOOP   R5 31        ; R5 += R7; if R5 <= R6 then begin PC := 31; R8 := R5 end
@@ -132,11 +132,11 @@
   4 [-]: TEST      R2 0         ; if not R2 then PC := 15
   5 [-]: JMP       15           ; PC := 15
   6 [-]: GETGLOBAL R2 K1        ; R2 := 0xcbd666e1
-  7 [-]: LOADK     R3 0         ; R3 := 0.000000
+  7 [-]: CONST     R3 0         ; R3 := 0.000000
   8 [-]: CALL      R2 2 1       ; R2(R3)
   9 [-]: GETGLOBAL R2 K2        ; R2 := 0x76ea806b
  10 [-]: SELF      R2 R2 K3     ; R3 := R2; R2 := R2[0x3f3ae64c]
- 11 [-]: LOADK     R4 0         ; R4 := 0.000000
+ 11 [-]: CONST     R4 0         ; R4 := 0.000000
  12 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
  13 [-]: MOVE      R1 R2        ; R1 := R2
  14 [-]: JMP       1            ; PC := 1
@@ -147,7 +147,7 @@
  19 [-]: TEST      R3 0         ; if not R3 then PC := 28
  20 [-]: JMP       28           ; PC := 28
  21 [-]: GETGLOBAL R3 K1        ; R3 := 0xcbd666e1
- 22 [-]: LOADK     R4 0         ; R4 := 0.000000
+ 22 [-]: CONST     R4 0         ; R4 := 0.000000
  23 [-]: CALL      R3 2 1       ; R3(R4)
  24 [-]: SELF      R3 R1 K4     ; R4 := R1; R3 := R1[0x80563238]
  25 [-]: CALL      R3 2 2       ; R3 := R3(R4)
@@ -161,7 +161,7 @@
  33 [-]: CALL      R3 2 1       ; R3(R4)
  34 [-]: RETURN    R0 1         ; return 
  35 [-]: GETGLOBAL R3 K1        ; R3 := 0xcbd666e1
- 36 [-]: LOADK     R4 1         ; R4 := 1.000000
+ 36 [-]: CONST     R4 1         ; R4 := 1.000000
  37 [-]: CALL      R3 2 1       ; R3(R4)
  38 [-]: SETUPVAL  R0 U0        ; U82 := R0
  39 [-]: GETGLOBAL R3 K8        ; R3 := 0x89326c93
@@ -183,7 +183,7 @@
  55 [-]: GETGLOBAL R6 K10       ; R6 := 0x0469f296
  56 [-]: LOADK     R7 K15       ; R7 := "AmbulasEventFallbackVendor"
  57 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 58 [-]: LOADBOOL  R7 0 0       ; R7 := false
+ 58 [-]: LOADKB    R7 0 0       ; R7 := false
  59 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
  60 [-]: RETURN    R0 1         ; return 
 

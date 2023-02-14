@@ -103,7 +103,7 @@
  39 [-]: TEST      R2 0         ; if not R2 then PC := 45
  40 [-]: JMP       45           ; PC := 45
  41 [-]: GETGLOBAL R2 K11       ; R2 := 0xcbd666e1
- 42 [-]: LOADK     R3 0         ; R3 := 0.000000
+ 42 [-]: CONST     R3 0         ; R3 := 0.000000
  43 [-]: CALL      R2 2 1       ; R2(R3)
  44 [-]: JMP       36           ; PC := 36
  45 [-]: GETGLOBAL R2 K0        ; R2 := _T

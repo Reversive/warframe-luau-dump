@@ -25,10 +25,10 @@
 ; Is_vararg:       0
 ; Max Stack Size:  7
 
-  1 [-]: LOADK     R1 1         ; R1 := 1.000000
+  1 [-]: CONST     R1 1         ; R1 := 1.000000
   2 [-]: GETGLOBAL R2 K0        ; R2 := 0xe5826dc2
   3 [-]: LEN       R2 R2        ; R2 := # R2
-  4 [-]: LOADK     R3 1         ; R3 := 1.000000
+  4 [-]: CONST     R3 1         ; R3 := 1.000000
   5 [-]: FORPREP   R1 14        ; R1 -= R3; PC := 14
   6 [-]: GETGLOBAL R5 K1        ; R5 := 0x64fb1586
   7 [-]: GETGLOBAL R6 K0        ; R6 := 0xe5826dc2
@@ -36,10 +36,10 @@
   9 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  10 [-]: EQ        0 R0 R5      ; if R0 ~= R5 then PC := 14
  11 [-]: JMP       14           ; PC := 14
- 12 [-]: LOADBOOL  R5 1 0       ; R5 := true
+ 12 [-]: LOADKB    R5 1 0       ; R5 := true
  13 [-]: RETURN    R5 2         ; return R5
  14 [-]: FORLOOP   R1 6         ; R1 += R3; if R1 <= R2 then begin PC := 6; R4 := R1 end
- 15 [-]: LOADBOOL  R5 0 0       ; R5 := false
+ 15 [-]: LOADKB    R5 0 0       ; R5 := false
  16 [-]: RETURN    R5 2         ; return R5
  17 [-]: RETURN    R0 1         ; return 
 
@@ -62,11 +62,11 @@
   7 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
   8 [-]: TEST      R6 0         ; if not R6 then PC := 12
   9 [-]: JMP       12           ; PC := 12
- 10 [-]: LOADBOOL  R6 1 0       ; R6 := true
+ 10 [-]: LOADKB    R6 1 0       ; R6 := true
  11 [-]: RETURN    R6 2         ; return R6
  12 [-]: TFORLOOP  R1 2         ; R4,R5 :=  R1(R2,R3); if R4 ~= nil then begin PC = 5; R3 := R4 end
  13 [-]: JMP       5            ; PC := 5
- 14 [-]: LOADBOOL  R6 0 0       ; R6 := false
+ 14 [-]: LOADKB    R6 0 0       ; R6 := false
  15 [-]: RETURN    R6 2         ; return R6
  16 [-]: RETURN    R0 1         ; return 
 
@@ -90,7 +90,7 @@
   8 [-]: CALL      R4 2 2       ; R4 := R4(R5)
   9 [-]: TEST      R4 0         ; if not R4 then PC := 13
  10 [-]: JMP       13           ; PC := 13
- 11 [-]: LOADBOOL  R4 0 0       ; R4 := false
+ 11 [-]: LOADKB    R4 0 0       ; R4 := false
  12 [-]: RETURN    R4 2         ; return R4
  13 [-]: GETUPVAL  R4 U0        ; R4 := U0
  14 [-]: MOVE      R5 R1        ; R5 := R1
@@ -102,9 +102,9 @@
  20 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  21 [-]: TEST      R4 0         ; if not R4 then PC := 25
  22 [-]: JMP       25           ; PC := 25
- 23 [-]: LOADBOOL  R4 1 0       ; R4 := true
+ 23 [-]: LOADKB    R4 1 0       ; R4 := true
  24 [-]: RETURN    R4 2         ; return R4
- 25 [-]: LOADBOOL  R4 0 0       ; R4 := false
+ 25 [-]: LOADKB    R4 0 0       ; R4 := false
  26 [-]: RETURN    R4 2         ; return R4
  27 [-]: RETURN    R0 1         ; return 
 

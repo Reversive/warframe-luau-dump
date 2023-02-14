@@ -27,17 +27,17 @@
   4 [-]: GETGLOBAL R1 K2        ; R1 := 0xcbd666e1
   5 [-]: GETGLOBAL R2 K0        ; R2 := 0x92453ec1
   6 [-]: CALL      R1 2 1       ; R1(R2)
-  7 [-]: LOADBOOL  R1 0 0       ; R1 := false
+  7 [-]: LOADKB    R1 0 0       ; R1 := false
   8 [-]: GETGLOBAL R2 K3        ; R2 := 0xbeadc6c3
   9 [-]: TEST      R2 1         ; if R2 then PC := 13
  10 [-]: JMP       13           ; PC := 13
  11 [-]: TEST      R1 1         ; if R1 then PC := 53
  12 [-]: JMP       53           ; PC := 53
- 13 [-]: LOADBOOL  R1 1 0       ; R1 := true
- 14 [-]: LOADK     R2 1         ; R2 := 1.000000
+ 13 [-]: LOADKB    R1 1 0       ; R1 := true
+ 14 [-]: CONST     R2 1         ; R2 := 1.000000
  15 [-]: GETGLOBAL R3 K4        ; R3 := 0xf8e547d6
  16 [-]: LEN       R3 R3        ; R3 := # R3
- 17 [-]: LOADK     R4 1         ; R4 := 1.000000
+ 17 [-]: CONST     R4 1         ; R4 := 1.000000
  18 [-]: FORPREP   R2 45        ; R2 -= R4; PC := 45
  19 [-]: GETGLOBAL R6 K5        ; R6 := 0x7b998233
  20 [-]: GETGLOBAL R7 K6        ; R7 := 0x6ccc73bd

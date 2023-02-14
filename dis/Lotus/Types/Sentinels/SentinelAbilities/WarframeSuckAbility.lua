@@ -145,7 +145,7 @@
   9 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  10 [-]: TEST      R5 0         ; if not R5 then PC := 14
  11 [-]: JMP       14           ; PC := 14
- 12 [-]: LOADK     R5 0         ; R5 := 0.000000
+ 12 [-]: CONST     R5 0         ; R5 := 0.000000
  13 [-]: RETURN    R5 2         ; return R5
  14 [-]: GETUPVAL  R5 U0        ; R5 := U0
  15 [-]: MOVE      R6 R4        ; R6 := R4
@@ -159,9 +159,9 @@
  23 [-]: CALL      R6 2 2       ; R6 := R6(R7)
  24 [-]: TEST      R6 1         ; if R6 then PC := 28
  25 [-]: JMP       28           ; PC := 28
- 26 [-]: LOADK     R6 0         ; R6 := 0.000000
+ 26 [-]: CONST     R6 0         ; R6 := 0.000000
  27 [-]: RETURN    R6 2         ; return R6
- 28 [-]: LOADK     R6 1         ; R6 := 1.000000
+ 28 [-]: CONST     R6 1         ; R6 := 1.000000
  29 [-]: RETURN    R6 2         ; return R6
  30 [-]: RETURN    R0 1         ; return 
 
@@ -311,7 +311,7 @@
 115 [-]: CALL      R10 2 1      ; R10(R11)
 116 [-]: RETURN    R0 1         ; return 
 117 [-]: GETGLOBAL R10 K19      ; R10 := 0xcbd666e1
-118 [-]: LOADK     R11 0        ; R11 := 0.000000
+118 [-]: CONST     R11 0        ; R11 := 0.000000
 119 [-]: CALL      R10 2 1      ; R10(R11)
 120 [-]: JMP       72           ; PC := 72
 121 [-]: JMP       147          ; PC := 147
@@ -329,14 +329,14 @@
 133 [-]: LT        0 K3 R10     ; if 0.000000 >= R10 then PC := 139
 134 [-]: JMP       139          ; PC := 139
 135 [-]: GETGLOBAL R10 K19      ; R10 := 0xcbd666e1
-136 [-]: LOADK     R11 1        ; R11 := 1.000000
+136 [-]: CONST     R11 1        ; R11 := 1.000000
 137 [-]: CALL      R10 2 1      ; R10(R11)
 138 [-]: JMP       127          ; PC := 127
 139 [-]: SELF      R10 R0 K18   ; R11 := R0; R10 := R0[0x949398c2]
 140 [-]: CALL      R10 2 1      ; R10(R11)
 141 [-]: JMP       147          ; PC := 147
 142 [-]: GETGLOBAL R10 K19      ; R10 := 0xcbd666e1
-143 [-]: LOADK     R11 10       ; R11 := 10.000000
+143 [-]: CONST     R11 10       ; R11 := 10.000000
 144 [-]: CALL      R10 2 1      ; R10(R11)
 145 [-]: JMP       142          ; PC := 142
 146 [-]: RETURN    R0 1         ; return 

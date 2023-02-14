@@ -29,7 +29,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
-  1 [-]: LOADK     R0 0         ; R0 := 0.000000
+  1 [-]: CONST     R0 0         ; R0 := 0.000000
   2 [-]: RETURN    R0 2         ; return R0
   3 [-]: RETURN    R0 1         ; return 
 
@@ -53,7 +53,7 @@
   8 [-]: TEST      R3 0         ; if not R3 then PC := 11
   9 [-]: JMP       11           ; PC := 11
  10 [-]: RETURN    R0 1         ; return 
- 11 [-]: LOADK     R3 0         ; R3 := 0.000000
+ 11 [-]: CONST     R3 0         ; R3 := 0.000000
  12 [-]: SELF      R4 R2 K3     ; R5 := R2; R4 := R2[0x72d56f6b]
  13 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  14 [-]: SELF      R5 R4 K4     ; R6 := R4; R5 := R4[0xf2deaf69]
@@ -124,8 +124,8 @@
  79 [-]: MOVE      R8 R7        ; R8 := R7
  80 [-]: SELF      R9 R0 K18    ; R10 := R0; R9 := R0[0x5d985c7e]
  81 [-]: MOVE      R11 R6       ; R11 := R6
- 82 [-]: LOADBOOL  R12 0 0      ; R12 := false
- 83 [-]: LOADBOOL  R13 0 0      ; R13 := false
+ 82 [-]: LOADKB    R12 0 0      ; R12 := false
+ 83 [-]: LOADKB    R13 0 0      ; R13 := false
  84 [-]: SELF      R14 R6 K19   ; R15 := R6; R14 := R6[0xfa2c150a]
  85 [-]: CALL      R14 2 2      ; R14 := R14(R15)
  86 [-]: SELF      R15 R6 K20   ; R16 := R6; R15 := R6[0xa4f6f2ed]

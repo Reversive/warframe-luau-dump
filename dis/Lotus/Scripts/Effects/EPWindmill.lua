@@ -38,8 +38,8 @@
   9 [-]: CALL      R1 2 2       ; R1 := R1(R2)
  10 [-]: TEST      R1 1         ; if R1 then PC := 44
  11 [-]: JMP       44           ; PC := 44
- 12 [-]: LOADK     R1 0         ; R1 := 0.000000
- 13 [-]: LOADK     R2 0         ; R2 := 0.000000
+ 12 [-]: CONST     R1 0         ; R1 := 0.000000
+ 13 [-]: CONST     R2 0         ; R2 := 0.000000
  14 [-]: GETGLOBAL R3 K4        ; R3 := 0x07e9d557
  15 [-]: LT        0 R1 R3      ; if R1 >= R3 then PC := 44
  16 [-]: JMP       44           ; PC := 44
@@ -67,7 +67,7 @@
  38 [-]: CALL      R4 1 2       ; R4 := R4()
  39 [-]: ADD       R1 R1 R4     ; R1 := R1 + R4
  40 [-]: GETGLOBAL R4 K2        ; R4 := 0xcbd666e1
- 41 [-]: LOADK     R5 0         ; R5 := 0.000000
+ 41 [-]: CONST     R5 0         ; R5 := 0.000000
  42 [-]: CALL      R4 2 1       ; R4(R5)
  43 [-]: JMP       14           ; PC := 14
  44 [-]: RETURN    R0 1         ; return 
@@ -84,8 +84,8 @@
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x5bced4c4
   2 [-]: GETTABLE  R0 R0 K1     ; R0 := R0[0x3630e649]
-  3 [-]: LOADK     R1 0         ; R1 := 0.000000
-  4 [-]: LOADK     R2 100       ; R2 := 100.000000
+  3 [-]: CONST     R1 0         ; R1 := 0.000000
+  4 [-]: CONST     R2 100       ; R2 := 100.000000
   5 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
   6 [-]: GETGLOBAL R1 K2        ; R1 := 0xa619ac89
   7 [-]: LT        0 R0 R1      ; if R0 >= R1 then PC := 19

@@ -47,16 +47,16 @@
  18 [-]: GETGLOBAL R2 K2        ; R2 := _T
  19 [-]: SELF      R3 R0 K5     ; R4 := R0; R3 := R0[0x2b54251b]
  20 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 21 [-]: SETTABLE  R2 K3 R3     ; R2[0xa534c3ac] := R3
+ 21 [-]: SETTABLE  R2 K3 R3     ; R2[0xcbae1596] := R3
  22 [-]: GETGLOBAL R2 K2        ; R2 := _T
  23 [-]: SELF      R3 R0 K5     ; R4 := R0; R3 := R0[0x2b54251b]
  24 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 25 [-]: SETTABLE  R2 K6 R3     ; R2[0xf4045b7e] := R3
+ 25 [-]: SETTABLE  R2 K6 R3     ; R2["RelayEventCapturedEnemy"] := R3
  26 [-]: SELF      R2 R1 K7     ; R3 := R1; R2 := R1[0xd5f7912b]
  27 [-]: GETGLOBAL R4 K8        ; R4 := 0x0469f296
  28 [-]: LOADK     R5 K9        ; R5 := "PlayCaptureAnimation"
  29 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 30 [-]: LOADBOOL  R5 0 0       ; R5 := false
+ 30 [-]: LOADKB    R5 0 0       ; R5 := false
  31 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
  32 [-]: RETURN    R0 1         ; return 
 
@@ -70,9 +70,9 @@
 ; Is_vararg:       0
 ; Max Stack Size:  8
 
-  1 [-]: LOADK     R2 1         ; R2 := 1.000000
+  1 [-]: CONST     R2 1         ; R2 := 1.000000
   2 [-]: LEN       R3 R0        ; R3 := # R0
-  3 [-]: LOADK     R4 1         ; R4 := 1.000000
+  3 [-]: CONST     R4 1         ; R4 := 1.000000
   4 [-]: FORPREP   R2 15        ; R2 -= R4; PC := 15
   5 [-]: GETTABLE  R6 R0 R5     ; R6 := R0[R5]
   6 [-]: GETTABLE  R7 R6 K0     ; R7 := R6["mItemType"]
@@ -81,11 +81,11 @@
   9 [-]: GETTABLE  R7 R6 K1     ; R7 := R6["mItemCount"]
  10 [-]: LT        1 K2 R7      ; if 0.000000 < R7 then PC := 13
  11 [-]: JMP       13           ; PC := 13
- 12 [-]: LOADBOOL  R7 0 1       ; R7 := false; PC := 13
- 13 [-]: LOADBOOL  R7 1 0       ; R7 := true
+ 12 [-]: LOADKB    R7 0 1       ; R7 := false; PC := 13
+ 13 [-]: LOADKB    R7 1 0       ; R7 := true
  14 [-]: RETURN    R7 2         ; return R7
  15 [-]: FORLOOP   R2 5         ; R2 += R4; if R2 <= R3 then begin PC := 5; R5 := R2 end
- 16 [-]: LOADBOOL  R7 0 0       ; R7 := false
+ 16 [-]: LOADKB    R7 0 0       ; R7 := false
  17 [-]: RETURN    R7 2         ; return R7
  18 [-]: RETURN    R0 1         ; return 
 
@@ -137,7 +137,7 @@
  36 [-]: TEST      R3 1         ; if R3 then PC := 41
  37 [-]: JMP       41           ; PC := 41
  38 [-]: SELF      R3 R2 K14    ; R4 := R2; R3 := R2[0x31a3964d]
- 39 [-]: LOADK     R5 6         ; R5 := 6.000000
+ 39 [-]: CONST     R5 6         ; R5 := 6.000000
  40 [-]: CALL      R3 3 1       ; R3(R4,R5)
  41 [-]: GETGLOBAL R3 K10       ; R3 := 0x7b998233
  42 [-]: MOVE      R4 R0        ; R4 := R0
@@ -155,13 +155,13 @@
  54 [-]: JMP       62           ; PC := 62
  55 [-]: SELF      R3 R0 K19    ; R4 := R0; R3 := R0[0x7027c544]
  56 [-]: GETGLOBAL R5 K18       ; R5 := 0xba16f1c9
- 57 [-]: LOADBOOL  R6 0 0       ; R6 := false
- 58 [-]: LOADK     R7 2         ; R7 := 2.000000
- 59 [-]: LOADK     R8 2         ; R8 := 2.000000
- 60 [-]: LOADBOOL  R9 1 0       ; R9 := true
+ 57 [-]: LOADKB    R6 0 0       ; R6 := false
+ 58 [-]: CONST     R7 2         ; R7 := 2.000000
+ 59 [-]: CONST     R8 2         ; R8 := 2.000000
+ 60 [-]: LOADKB    R9 1 0       ; R9 := true
  61 [-]: CALL      R3 7 1       ; R3(R4,R5,R6,R7,R8,R9)
  62 [-]: GETGLOBAL R3 K21       ; R3 := 0xcbd666e1
- 63 [-]: LOADK     R4 2         ; R4 := 2.000000
+ 63 [-]: CONST     R4 2         ; R4 := 2.000000
  64 [-]: CALL      R3 2 1       ; R3(R4)
  65 [-]: GETGLOBAL R3 K10       ; R3 := 0x7b998233
  66 [-]: MOVE      R4 R0        ; R4 := R0
@@ -175,10 +175,10 @@
  74 [-]: JMP       82           ; PC := 82
  75 [-]: SELF      R3 R0 K19    ; R4 := R0; R3 := R0[0x7027c544]
  76 [-]: LOADNIL   R5 R5        ; R5 := nil
- 77 [-]: LOADBOOL  R6 0 0       ; R6 := false
- 78 [-]: LOADK     R7 2         ; R7 := 2.000000
- 79 [-]: LOADK     R8 1         ; R8 := 1.000000
- 80 [-]: LOADBOOL  R9 0 0       ; R9 := false
+ 77 [-]: LOADKB    R6 0 0       ; R6 := false
+ 78 [-]: CONST     R7 2         ; R7 := 2.000000
+ 79 [-]: CONST     R8 1         ; R8 := 1.000000
+ 80 [-]: LOADKB    R9 0 0       ; R9 := false
  81 [-]: CALL      R3 7 1       ; R3(R4,R5,R6,R7,R8,R9)
  82 [-]: GETGLOBAL R3 K10       ; R3 := 0x7b998233
  83 [-]: MOVE      R4 R0        ; R4 := R0
@@ -192,7 +192,7 @@
  91 [-]: GETGLOBAL R3 K3        ; R3 := _T
  92 [-]: GETTABLE  R3 R3 K23    ; R3 := R3["RelayEventPhaseInfo"]
  93 [-]: GETTABLE  R3 R3 K24    ; R3 := R3["item"]
- 94 [-]: LOADBOOL  R4 1 0       ; R4 := true
+ 94 [-]: LOADKB    R4 1 0       ; R4 := true
  95 [-]: TEST      R4 0         ; if not R4 then PC := 112
  96 [-]: JMP       112          ; PC := 112
  97 [-]: GETGLOBAL R5 K10       ; R5 := 0x7b998233
@@ -208,8 +208,8 @@
 107 [-]: CALL      R5 0 2       ; R5 := R5(R6,...)
 108 [-]: LE        1 R5 K16     ; if R5 <= 0.000000 then PC := 111
 109 [-]: JMP       111          ; PC := 111
-110 [-]: LOADBOOL  R4 0 1       ; R4 := false; PC := 111
-111 [-]: LOADBOOL  R4 1 0       ; R4 := true
+110 [-]: LOADKB    R4 0 1       ; R4 := false; PC := 111
+111 [-]: LOADKB    R4 1 0       ; R4 := true
 112 [-]: TEST      R4 0         ; if not R4 then PC := 142
 113 [-]: JMP       142          ; PC := 142
 114 [-]: SELF      R5 R0 K29    ; R6 := R0; R5 := R0[0xde321e6f]
@@ -220,7 +220,7 @@
 119 [-]: MOVE      R8 R6        ; R8 := R6
 120 [-]: MOVE      R9 R3        ; R9 := R3
 121 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
-122 [-]: NOT       R4 R7        ; R4 := not R7
+122 [-]: NOT       R4 R7        ; R4 :=  R7
 123 [-]: TEST      R4 0         ; if not R4 then PC := 142
 124 [-]: JMP       142          ; PC := 142
 125 [-]: SELF      R7 R0 K31    ; R8 := R0; R7 := R0[0xf2deaf69]
@@ -239,7 +239,7 @@
 138 [-]: MOVE      R9 R6        ; R9 := R6
 139 [-]: MOVE      R10 R3       ; R10 := R3
 140 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
-141 [-]: NOT       R4 R8        ; R4 := not R8
+141 [-]: NOT       R4 R8        ; R4 :=  R8
 142 [-]: TEST      R4 0         ; if not R4 then PC := 159
 143 [-]: JMP       159          ; PC := 159
 144 [-]: GETGLOBAL R8 K10       ; R8 := 0x7b998233
@@ -256,7 +256,7 @@
 155 [-]: MOVE      R11 R9       ; R11 := R9
 156 [-]: MOVE      R12 R3       ; R12 := R3
 157 [-]: CALL      R10 3 2      ; R10 := R10(R11,R12)
-158 [-]: NOT       R4 R10       ; R4 := not R10
+158 [-]: NOT       R4 R10       ; R4 :=  R10
 159 [-]: TEST      R4 0         ; if not R4 then PC := 170
 160 [-]: JMP       170          ; PC := 170
 161 [-]: GETGLOBAL R10 K37      ; R10 := 0xc8802016
@@ -335,13 +335,13 @@
  24 [-]: TEST      R1 0         ; if not R1 then PC := 27
  25 [-]: JMP       27           ; PC := 27
  26 [-]: JMP       75           ; PC := 75
- 27 [-]: LOADBOOL  R1 1 0       ; R1 := true
+ 27 [-]: LOADKB    R1 1 0       ; R1 := true
  28 [-]: GETGLOBAL R2 K0        ; R2 := 0x89326c93
  29 [-]: SELF      R2 R2 K10    ; R3 := R2; R2 := R2[0x7d108ddb]
  30 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 31 [-]: LOADK     R3 1         ; R3 := 1.000000
+ 31 [-]: CONST     R3 1         ; R3 := 1.000000
  32 [-]: LEN       R4 R2        ; R4 := # R2
- 33 [-]: LOADK     R5 1         ; R5 := 1.000000
+ 33 [-]: CONST     R5 1         ; R5 := 1.000000
  34 [-]: FORPREP   R3 62        ; R3 -= R5; PC := 62
  35 [-]: GETTABLE  R7 R2 R6     ; R7 := R2[R6]
  36 [-]: GETGLOBAL R8 K2        ; R8 := _T
@@ -356,9 +356,9 @@
  45 [-]: GETTABLE  R10 R2 R6    ; R10 := R2[R6]
  46 [-]: LOADK     R11 K14      ; R11 := "/Lotus/Language/RelayReconstruction/EnemyItemCarrierDetonate"
  47 [-]: LOADK     R12 K15      ; R12 := ""
- 48 [-]: LOADK     R13 0        ; R13 := 0.000000
- 49 [-]: LOADK     R14 2        ; R14 := 2.000000
- 50 [-]: LOADBOOL  R15 1 0      ; R15 := true
+ 48 [-]: CONST     R13 0        ; R13 := 0.000000
+ 49 [-]: CONST     R14 2        ; R14 := 2.000000
+ 50 [-]: LOADKB    R15 1 0      ; R15 := true
  51 [-]: LOADK     R16 K16      ; R16 := "SECONDS"
  52 [-]: GETGLOBAL R17 K17      ; R17 := 0x64fb1586
  53 [-]: GETGLOBAL R18 K18      ; R18 := 0x5bced4c4
@@ -369,13 +369,13 @@
  58 [-]: CALL      R17 0 2      ; R17 := R17(R18,...)
  59 [-]: LOADNIL   R18 R18      ; R18 := nil
  60 [-]: CALL      R8 11 1      ; R8(R9,R10,R11,R12,R13,R14,R15,R16,R17,R18)
- 61 [-]: LOADBOOL  R1 0 0       ; R1 := false
+ 61 [-]: LOADKB    R1 0 0       ; R1 := false
  62 [-]: FORLOOP   R3 35        ; R3 += R5; if R3 <= R4 then begin PC := 35; R6 := R3 end
  63 [-]: TEST      R1 0         ; if not R1 then PC := 66
  64 [-]: JMP       66           ; PC := 66
  65 [-]: JMP       75           ; PC := 75
  66 [-]: GETGLOBAL R8 K20       ; R8 := 0xcbd666e1
- 67 [-]: LOADK     R9 1         ; R9 := 1.000000
+ 67 [-]: CONST     R9 1         ; R9 := 1.000000
  68 [-]: CALL      R8 2 1       ; R8(R9)
  69 [-]: GETGLOBAL R8 K2        ; R8 := _T
  70 [-]: GETGLOBAL R9 K2        ; R9 := _T
@@ -394,7 +394,7 @@
  83 [-]: SELF      R8 R8 K22    ; R9 := R8; R8 := R8[0x1ac1655c]
  84 [-]: CALL      R8 2 2       ; R8 := R8(R9)
  85 [-]: SELF      R8 R8 K23    ; R9 := R8; R8 := R8[0x53376c85]
- 86 [-]: LOADBOOL  R10 0 0      ; R10 := false
+ 86 [-]: LOADKB    R10 0 0      ; R10 := false
  87 [-]: CALL      R8 3 1       ; R8(R9,R10)
  88 [-]: GETGLOBAL R8 K2        ; R8 := _T
  89 [-]: GETTABLE  R8 R8 K9     ; R8 := R8["RelayEventTargetEnemy"]
@@ -409,7 +409,7 @@
  98 [-]: SELF      R8 R8 K22    ; R9 := R8; R8 := R8[0x1ac1655c]
  99 [-]: CALL      R8 2 2       ; R8 := R8(R9)
 100 [-]: SELF      R8 R8 K26    ; R9 := R8; R8 := R8[0x57369b8b]
-101 [-]: LOADK     R10 0        ; R10 := 0.000000
+101 [-]: CONST     R10 0        ; R10 := 0.000000
 102 [-]: CALL      R8 3 1       ; R8(R9,R10)
 103 [-]: GETGLOBAL R8 K2        ; R8 := _T
 104 [-]: GETTABLE  R8 R8 K9     ; R8 := R8["RelayEventTargetEnemy"]

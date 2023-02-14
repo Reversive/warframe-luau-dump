@@ -32,13 +32,13 @@
   7 [-]: CALL      R2 2 2       ; R2 := R2(R3)
   8 [-]: TEST      R2 1         ; if R2 then PC := 12
   9 [-]: JMP       12           ; PC := 12
- 10 [-]: LOADBOOL  R2 0 0       ; R2 := false
+ 10 [-]: LOADKB    R2 0 0       ; R2 := false
  11 [-]: RETURN    R2 2         ; return R2
  12 [-]: SELF      R2 R0 K2     ; R3 := R0; R2 := R0[0xe8b105b3]
  13 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  14 [-]: EQ        0 R2 K4      ; if R2 ~= 7.000000 then PC := 18
  15 [-]: JMP       18           ; PC := 18
- 16 [-]: LOADBOOL  R2 0 0       ; R2 := false
+ 16 [-]: LOADKB    R2 0 0       ; R2 := false
  17 [-]: RETURN    R2 2         ; return R2
  18 [-]: GETGLOBAL R2 K5        ; R2 := 0x32edd3c0
  19 [-]: TEST      R2 0         ; if not R2 then PC := 42
@@ -47,7 +47,7 @@
  22 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  23 [-]: TEST      R2 1         ; if R2 then PC := 27
  24 [-]: JMP       27           ; PC := 27
- 25 [-]: LOADBOOL  R2 0 0       ; R2 := false
+ 25 [-]: LOADKB    R2 0 0       ; R2 := false
  26 [-]: RETURN    R2 2         ; return R2
  27 [-]: SELF      R2 R1 K7     ; R3 := R1; R2 := R1[0xbb610e5b]
  28 [-]: CALL      R2 2 2       ; R2 := R2(R3)
@@ -56,13 +56,13 @@
  31 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  32 [-]: TEST      R3 0         ; if not R3 then PC := 36
  33 [-]: JMP       36           ; PC := 36
- 34 [-]: LOADBOOL  R3 0 0       ; R3 := false
+ 34 [-]: LOADKB    R3 0 0       ; R3 := false
  35 [-]: RETURN    R3 2         ; return R3
  36 [-]: SELF      R3 R2 K8     ; R4 := R2; R3 := R2[0xe668799a]
  37 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  38 [-]: EQ        1 R3 K9      ; if R3 == 5.000000 then PC := 42
  39 [-]: JMP       42           ; PC := 42
- 40 [-]: LOADBOOL  R4 0 0       ; R4 := false
+ 40 [-]: LOADKB    R4 0 0       ; R4 := false
  41 [-]: RETURN    R4 2         ; return R4
  42 [-]: SELF      R4 R0 K10    ; R5 := R0; R4 := R0[0x14a55974]
  43 [-]: CALL      R4 2 2       ; R4 := R4(R5)
@@ -71,7 +71,7 @@
  46 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  47 [-]: TEST      R5 0         ; if not R5 then PC := 51
  48 [-]: JMP       51           ; PC := 51
- 49 [-]: LOADBOOL  R5 0 0       ; R5 := false
+ 49 [-]: LOADKB    R5 0 0       ; R5 := false
  50 [-]: RETURN    R5 2         ; return R5
  51 [-]: SELF      R5 R4 K11    ; R6 := R4; R5 := R4[0x6daa621a]
  52 [-]: CALL      R5 2 2       ; R5 := R5(R6)
@@ -150,11 +150,11 @@
 125 [-]: GETGLOBAL R7 K14       ; R7 := 0xc5bca868
 126 [-]: EQ        0 R7 K19     ; if R7 ~= 0.000000 then PC := 130
 127 [-]: JMP       130          ; PC := 130
-128 [-]: LOADBOOL  R7 0 0       ; R7 := false
+128 [-]: LOADKB    R7 0 0       ; R7 := false
 129 [-]: RETURN    R7 2         ; return R7
 130 [-]: GETGLOBAL R7 K20       ; R7 := 0x76ea806b
 131 [-]: SELF      R7 R7 K21    ; R8 := R7; R7 := R7[0x3f3ae64c]
-132 [-]: LOADK     R9 0         ; R9 := 0.000000
+132 [-]: CONST     R9 0         ; R9 := 0.000000
 133 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
 134 [-]: LOADNIL   R8 R8        ; R8 := nil
 135 [-]: GETGLOBAL R9 K0        ; R9 := 0x7b998233
@@ -170,7 +170,7 @@
 145 [-]: CALL      R9 2 2       ; R9 := R9(R10)
 146 [-]: TEST      R9 0         ; if not R9 then PC := 150
 147 [-]: JMP       150          ; PC := 150
-148 [-]: LOADBOOL  R9 0 0       ; R9 := false
+148 [-]: LOADKB    R9 0 0       ; R9 := false
 149 [-]: RETURN    R9 2         ; return R9
 150 [-]: SELF      R9 R8 K23    ; R10 := R8; R9 := R8[0x25a6e75e]
 151 [-]: CALL      R9 2 2       ; R9 := R9(R10)
@@ -190,7 +190,7 @@
 165 [-]: GETGLOBAL R13 K14      ; R13 := 0xc5bca868
 166 [-]: LT        0 R12 R13    ; if R12 >= R13 then PC := 170
 167 [-]: JMP       170          ; PC := 170
-168 [-]: LOADBOOL  R13 0 0      ; R13 := false
+168 [-]: LOADKB    R13 0 0      ; R13 := false
 169 [-]: RETURN    R13 2        ; return R13
 170 [-]: GETGLOBAL R13 K26      ; R13 := 0x7f5022cf
 171 [-]: GETTABLE  R13 R13 K28  ; R13 := R13[0x1a94c9cc]
@@ -211,9 +211,9 @@
 186 [-]: GETTABLE  R14 R14 R15  ; R14 := R14[R15]
 187 [-]: GETTABLE  R14 R14 R5   ; R14 := R14[R5]
 188 [-]: SETTABLE  R14 R6 K30   ; R14[R6] := true
-189 [-]: LOADBOOL  R14 1 0      ; R14 := true
+189 [-]: LOADKB    R14 1 0      ; R14 := true
 190 [-]: RETURN    R14 2        ; return R14
-191 [-]: LOADBOOL  R14 0 0      ; R14 := false
+191 [-]: LOADKB    R14 0 0      ; R14 := false
 192 [-]: RETURN    R14 2        ; return R14
 193 [-]: RETURN    R0 1         ; return 
 

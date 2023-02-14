@@ -40,10 +40,10 @@
  15 [-]: MOVE      R6 R1        ; R6 := R1
  16 [-]: CALL      R4 3 1       ; R4(R5,R6)
  17 [-]: GETGLOBAL R4 K0        ; R4 := 0xcbd666e1
- 18 [-]: LOADK     R5 0         ; R5 := 0.000000
+ 18 [-]: CONST     R5 0         ; R5 := 0.000000
  19 [-]: CALL      R4 2 1       ; R4(R5)
  20 [-]: RETURN    R0 1         ; return 
- 21 [-]: LOADK     R4 0         ; R4 := 0.000000
+ 21 [-]: CONST     R4 0         ; R4 := 0.000000
  22 [-]: LOADNIL   R5 R5        ; R5 := nil
  23 [-]: LT        0 R4 K8      ; if R4 >= 1.000000 then PC := 42
  24 [-]: JMP       42           ; PC := 42
@@ -61,14 +61,14 @@
  36 [-]: DIV       R6 R6 R0     ; R6 := R6 / R0
  37 [-]: ADD       R4 R4 R6     ; R4 := R4 + R6
  38 [-]: GETGLOBAL R6 K0        ; R6 := 0xcbd666e1
- 39 [-]: LOADK     R7 0         ; R7 := 0.000000
+ 39 [-]: CONST     R7 0         ; R7 := 0.000000
  40 [-]: CALL      R6 2 1       ; R6(R7)
  41 [-]: JMP       23           ; PC := 23
  42 [-]: SELF      R6 R2 K7     ; R7 := R2; R6 := R2[0xb6df3e50]
  43 [-]: MOVE      R8 R1        ; R8 := R1
  44 [-]: CALL      R6 3 1       ; R6(R7,R8)
  45 [-]: GETGLOBAL R6 K0        ; R6 := 0xcbd666e1
- 46 [-]: LOADK     R7 0         ; R7 := 0.000000
+ 46 [-]: CONST     R7 0         ; R7 := 0.000000
  47 [-]: CALL      R6 2 1       ; R6(R7)
  48 [-]: RETURN    R0 1         ; return 
 
@@ -104,7 +104,7 @@
  20 [-]: TEST      R8 0         ; if not R8 then PC := 62
  21 [-]: JMP       62           ; PC := 62
  22 [-]: SELF      R8 R7 K7     ; R9 := R7; R8 := R7[0x2c13654d]
- 23 [-]: LOADBOOL  R10 0 0      ; R10 := false
+ 23 [-]: LOADKB    R10 0 0      ; R10 := false
  24 [-]: CALL      R8 3 1       ; R8(R9,R10)
  25 [-]: GETUPVAL  R8 U0        ; R8 := U0
  26 [-]: GETGLOBAL R9 K8        ; R9 := 0x8a2b08d8
@@ -133,7 +133,7 @@
  49 [-]: CALL      R10 2 0      ; R10,... := R10(R11)
  50 [-]: CALL      R8 0 1       ; R8(R9,...)
  51 [-]: SELF      R8 R7 K7     ; R9 := R7; R8 := R7[0x2c13654d]
- 52 [-]: LOADBOOL  R10 1 0      ; R10 := true
+ 52 [-]: LOADKB    R10 1 0      ; R10 := true
  53 [-]: CALL      R8 3 1       ; R8(R9,R10)
  54 [-]: GETGLOBAL R8 K14       ; R8 := 0xcbd666e1
  55 [-]: GETGLOBAL R9 K15       ; R9 := 0x90e49958

@@ -14,15 +14,15 @@
   5 [-]: LOADK     R2 K2        ; R2 := "Lotus.Types.Vehicles.Hoverboard.HoverboardAbility.HoverboardAbilityUtil"
   6 [-]: CALL      R1 2 2       ; R1 := R1(R2)
   7 [-]: NEWTABLE  R2 4 0       ; R2 := {}
-  8 [-]: LOADK     R3 500       ; R3 := 500.000000
-  9 [-]: LOADK     R4 400       ; R4 := 400.000000
- 10 [-]: LOADK     R5 300       ; R5 := 300.000000
- 11 [-]: LOADK     R6 200       ; R6 := 200.000000
+  8 [-]: CONST     R3 500       ; R3 := 500.000000
+  9 [-]: CONST     R4 400       ; R4 := 400.000000
+ 10 [-]: CONST     R5 300       ; R5 := 300.000000
+ 11 [-]: CONST     R6 200       ; R6 := 200.000000
  12 [-]: SETLIST   R2 4 1       ; R2[(1-1)*FPF+i] := R(2+i), 1 <= i <= 4
  13 [-]: GETGLOBAL R3 K3        ; R3 := 0x0469f296
  14 [-]: LOADK     R4 K4        ; R4 := "GAME_C1_ENGINE"
  15 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 16 [-]: LOADK     R4 1         ; R4 := 1.000000
+ 16 [-]: CONST     R4 1         ; R4 := 1.000000
  17 [-]: CLOSURE   R5 0         ; R5 := closure(Function #1)
  18 [-]: MOVE      R0 R2        ; R0 := R2
  19 [-]: CLOSURE   R6 1         ; R6 := closure(Function #2)
@@ -56,7 +56,7 @@
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0x42dcc9f5
   2 [-]: MOVE      R2 R0        ; R2 := R0
-  3 [-]: LOADK     R3 1         ; R3 := 1.000000
+  3 [-]: CONST     R3 1         ; R3 := 1.000000
   4 [-]: GETUPVAL  R4 U0        ; R4 := U0
   5 [-]: LEN       R4 R4        ; R4 := # R4
   6 [-]: CALL      R1 4 2       ; R1 := R1(R2,R3,R4)

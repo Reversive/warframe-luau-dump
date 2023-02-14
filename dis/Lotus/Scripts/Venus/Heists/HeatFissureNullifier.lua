@@ -57,7 +57,7 @@
  14 [-]: TEST      R3 1         ; if R3 then PC := 20
  15 [-]: JMP       20           ; PC := 20
  16 [-]: SELF      R3 R2 K3     ; R4 := R2; R3 := R2[0xd533f1cc]
- 17 [-]: LOADBOOL  R5 1 0       ; R5 := true
+ 17 [-]: LOADKB    R5 1 0       ; R5 := true
  18 [-]: NEWTABLE  R6 0 0       ; R6 := {}
  19 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
  20 [-]: RETURN    R0 1         ; return 
@@ -88,7 +88,7 @@
  14 [-]: TEST      R3 1         ; if R3 then PC := 20
  15 [-]: JMP       20           ; PC := 20
  16 [-]: SELF      R3 R2 K3     ; R4 := R2; R3 := R2[0xd533f1cc]
- 17 [-]: LOADBOOL  R5 0 0       ; R5 := false
+ 17 [-]: LOADKB    R5 0 0       ; R5 := false
  18 [-]: NEWTABLE  R6 0 0       ; R6 := {}
  19 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
  20 [-]: RETURN    R0 1         ; return 

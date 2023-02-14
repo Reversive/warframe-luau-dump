@@ -153,7 +153,7 @@
  11 [-]: CALL      R3 1 0       ; R3,... := R3()
  12 [-]: CALL      R2 0 2       ; R2 := R2(R3,...)
  13 [-]: LOADNIL   R3 R3        ; R3 := nil
- 14 [-]: LOADBOOL  R4 1 0       ; R4 := true
+ 14 [-]: LOADKB    R4 1 0       ; R4 := true
  15 [-]: GETUPVAL  R5 U1        ; R5 := U1
  16 [-]: GETTABLE  R5 R5 R0     ; R5 := R5[R0]
  17 [-]: EQ        1 R5 K4      ; if R5 == nil then PC := 53
@@ -178,7 +178,7 @@
  36 [-]: CALL      R7 2 1       ; R7(R8)
  37 [-]: LT        0 K9 R6      ; if 0.000000 >= R6 then PC := 48
  38 [-]: JMP       48           ; PC := 48
- 39 [-]: LOADBOOL  R4 0 0       ; R4 := false
+ 39 [-]: LOADKB    R4 0 0       ; R4 := false
  40 [-]: ADD       R3 R2 R6     ; R3 := R2 + R6
  41 [-]: GETUPVAL  R7 U2        ; R7 := U2
  42 [-]: LOADK     R8 K10       ; R8 := "waiting an additional "
@@ -264,12 +264,12 @@
   4 [-]: GETTABLE  R0 R0 K2     ; R0 := R0["sortieId"]
   5 [-]: EQ        0 R0 K3      ; if R0 ~= "" then PC := 8
   6 [-]: JMP       8            ; PC := 8
-  7 [-]: LOADBOOL  R0 0 1       ; R0 := false; PC := 8
-  8 [-]: LOADBOOL  R0 1 0       ; R0 := true
+  7 [-]: LOADKB    R0 0 1       ; R0 := false; PC := 8
+  8 [-]: LOADKB    R0 1 0       ; R0 := true
   9 [-]: GETUPVAL  R1 U0        ; R1 := U0
  10 [-]: LEN       R1 R1        ; R1 := # R1
- 11 [-]: LOADK     R2 1         ; R2 := 1.000000
- 12 [-]: LOADK     R3 -1        ; R3 := -1.000000
+ 11 [-]: CONST     R2 1         ; R2 := 1.000000
+ 12 [-]: CONST     R3 -1        ; R3 := -1.000000
  13 [-]: FORPREP   R1 66        ; R1 -= R3; PC := 66
  14 [-]: GETUPVAL  R5 U0        ; R5 := U0
  15 [-]: GETTABLE  R5 R5 R4     ; R5 := R5[R4]
@@ -336,10 +336,10 @@
 ; Is_vararg:       0
 ; Max Stack Size:  9
 
-  1 [-]: LOADK     R2 1         ; R2 := 1.000000
+  1 [-]: CONST     R2 1         ; R2 := 1.000000
   2 [-]: GETUPVAL  R3 U0        ; R3 := U0
   3 [-]: LEN       R3 R3        ; R3 := # R3
-  4 [-]: LOADK     R4 1         ; R4 := 1.000000
+  4 [-]: CONST     R4 1         ; R4 := 1.000000
   5 [-]: FORPREP   R2 12        ; R2 -= R4; PC := 12
   6 [-]: GETUPVAL  R6 U0        ; R6 := U0
   7 [-]: GETTABLE  R6 R6 R5     ; R6 := R6[R5]
@@ -411,7 +411,7 @@
  21 [-]: GETGLOBAL R3 K6        ; R3 := 0x5bced4c4
  22 [-]: GETTABLE  R3 R3 K9     ; R3 := R3[0xb62ecfe0]
  23 [-]: SUB       R4 R1 R2     ; R4 := R1 - R2
- 24 [-]: LOADK     R5 0         ; R5 := 0.000000
+ 24 [-]: CONST     R5 0         ; R5 := 0.000000
  25 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
  26 [-]: GETUPVAL  R4 U4        ; R4 := U4
  27 [-]: LOADK     R5 K10       ; R5 := "sleeping for "

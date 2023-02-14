@@ -14,7 +14,7 @@
   5 [-]: LOADK     R2 K2        ; R2 := "FillAmount"
   6 [-]: CALL      R1 2 2       ; R1 := R1(R2)
   7 [-]: GETGLOBAL R2 K3        ; R2 := 0xa421af95
-  8 [-]: LOADK     R3 1         ; R3 := 1.000000
+  8 [-]: CONST     R3 1         ; R3 := 1.000000
   9 [-]: LOADK     R4 K4        ; R4 := 0.240000
  10 [-]: LOADK     R5 K5        ; R5 := 0.031000
  11 [-]: CALL      R2 4 2       ; R2 := R2(R3,R4,R5)
@@ -52,8 +52,8 @@
  13 [-]: JMP       15           ; PC := 15
  14 [-]: RETURN    R0 1         ; return 
  15 [-]: LOADNIL   R2 R2        ; R2 := nil
- 16 [-]: LOADK     R3 100       ; R3 := 100.000000
- 17 [-]: LOADBOOL  R4 0 0       ; R4 := false
+ 16 [-]: CONST     R3 100       ; R3 := 100.000000
+ 17 [-]: LOADKB    R4 0 0       ; R4 := false
  18 [-]: GETGLOBAL R5 K4        ; R5 := 0x0f1f9fdd
  19 [-]: TEST      R5 0         ; if not R5 then PC := 49
  20 [-]: JMP       49           ; PC := 49
@@ -84,7 +84,7 @@
  45 [-]: MOVE      R3 R5        ; R3 := R5
  46 [-]: LE        0 R3 K11     ; if R3 > 0.000000 then PC := 49
  47 [-]: JMP       49           ; PC := 49
- 48 [-]: LOADK     R3 1         ; R3 := 1.000000
+ 48 [-]: CONST     R3 1         ; R3 := 1.000000
  49 [-]: GETGLOBAL R5 K12       ; R5 := 0x34291f5c
  50 [-]: GETTABLE  R5 R5 K13    ; R5 := R5[0xe82b9b03]
  51 [-]: MOVE      R6 R0        ; R6 := R0
@@ -123,7 +123,7 @@
  84 [-]: DIV       R9 R9 R3     ; R9 := R9 / R3
  85 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
  86 [-]: GETGLOBAL R6 K0        ; R6 := 0xcbd666e1
- 87 [-]: LOADK     R7 0         ; R7 := 0.000000
+ 87 [-]: CONST     R7 0         ; R7 := 0.000000
  88 [-]: CALL      R6 2 1       ; R6(R7)
  89 [-]: JMP       53           ; PC := 53
  90 [-]: RETURN    R0 1         ; return 
@@ -161,8 +161,8 @@
  21 [-]: GETTABLE  R5 R5 K6     ; R5 := R5["y"]
  22 [-]: GETUPVAL  R6 U2        ; R6 := U2
  23 [-]: GETTABLE  R6 R6 K7     ; R6 := R6["z"]
- 24 [-]: LOADK     R7 1         ; R7 := 1.000000
- 25 [-]: LOADBOOL  R8 1 0       ; R8 := true
+ 24 [-]: CONST     R7 1         ; R7 := 1.000000
+ 25 [-]: LOADKB    R8 1 0       ; R8 := true
  26 [-]: CALL      R1 8 1       ; R1(R2,R3,R4,R5,R6,R7,R8)
  27 [-]: GETUPVAL  R1 U0        ; R1 := U0
  28 [-]: MOVE      R2 R0        ; R2 := R0

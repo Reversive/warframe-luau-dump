@@ -46,24 +46,24 @@
   9 [-]: GETGLOBAL R2 K2        ; R2 := 0xcbd666e1
  10 [-]: GETGLOBAL R3 K3        ; R3 := 0x74b75231
  11 [-]: CALL      R2 2 1       ; R2(R3)
- 12 [-]: LOADK     R2 1         ; R2 := 1.000000
+ 12 [-]: CONST     R2 1         ; R2 := 1.000000
  13 [-]: LEN       R3 R1        ; R3 := # R1
- 14 [-]: LOADK     R4 1         ; R4 := 1.000000
+ 14 [-]: CONST     R4 1         ; R4 := 1.000000
  15 [-]: FORPREP   R2 21        ; R2 -= R4; PC := 21
  16 [-]: GETTABLE  R6 R1 R5     ; R6 := R1[R5]
  17 [-]: SELF      R6 R6 K4     ; R7 := R6; R6 := R6[0x768274d6]
- 18 [-]: LOADBOOL  R8 0 0       ; R8 := false
- 19 [-]: LOADBOOL  R9 1 0       ; R9 := true
+ 18 [-]: LOADKB    R8 0 0       ; R8 := false
+ 19 [-]: LOADKB    R9 1 0       ; R9 := true
  20 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
  21 [-]: FORLOOP   R2 16        ; R2 += R4; if R2 <= R3 then begin PC := 16; R5 := R2 end
- 22 [-]: LOADK     R6 1         ; R6 := 1.000000
+ 22 [-]: CONST     R6 1         ; R6 := 1.000000
  23 [-]: LEN       R7 R0        ; R7 := # R0
- 24 [-]: LOADK     R8 1         ; R8 := 1.000000
+ 24 [-]: CONST     R8 1         ; R8 := 1.000000
  25 [-]: FORPREP   R6 31        ; R6 -= R8; PC := 31
  26 [-]: GETTABLE  R10 R0 R9    ; R10 := R0[R9]
  27 [-]: SELF      R10 R10 K4   ; R11 := R10; R10 := R10[0x768274d6]
- 28 [-]: LOADBOOL  R12 1 0      ; R12 := true
- 29 [-]: LOADBOOL  R13 1 0      ; R13 := true
+ 28 [-]: LOADKB    R12 1 0      ; R12 := true
+ 29 [-]: LOADKB    R13 1 0      ; R13 := true
  30 [-]: CALL      R10 4 1      ; R10(R11,R12,R13)
  31 [-]: FORLOOP   R6 26        ; R6 += R8; if R6 <= R7 then begin PC := 26; R9 := R6 end
  32 [-]: RETURN    R0 1         ; return 

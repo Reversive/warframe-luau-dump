@@ -52,7 +52,7 @@
   7 [-]: TEST      R2 0         ; if not R2 then PC := 17
   8 [-]: JMP       17           ; PC := 17
   9 [-]: GETGLOBAL R2 K2        ; R2 := 0xcbd666e1
- 10 [-]: LOADK     R3 0         ; R3 := 0.000000
+ 10 [-]: CONST     R3 0         ; R3 := 0.000000
  11 [-]: CALL      R2 2 1       ; R2(R3)
  12 [-]: SELF      R2 R0 K0     ; R3 := R0; R2 := R0[0xc9f6a7d7]
  13 [-]: GETUPVAL  R4 U0        ; R4 := U0
@@ -61,7 +61,7 @@
  16 [-]: JMP       4            ; PC := 4
  17 [-]: SELF      R2 R1 K3     ; R3 := R1; R2 := R1[0x986d2ab8]
  18 [-]: GETUPVAL  R4 U1        ; R4 := U1
- 19 [-]: LOADK     R5 0         ; R5 := 0.000000
+ 19 [-]: CONST     R5 0         ; R5 := 0.000000
  20 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
  21 [-]: GETGLOBAL R2 K4        ; R2 := _T
  22 [-]: GETTABLE  R2 R2 K5     ; R2 := R2["gHeatFissureHarvesters"]
@@ -90,7 +90,7 @@
  45 [-]: TEST      R4 0         ; if not R4 then PC := 170
  46 [-]: JMP       170          ; PC := 170
  47 [-]: GETGLOBAL R4 K2        ; R4 := 0xcbd666e1
- 48 [-]: LOADK     R5 0         ; R5 := 0.000000
+ 48 [-]: CONST     R5 0         ; R5 := 0.000000
  49 [-]: CALL      R4 2 1       ; R4(R5)
  50 [-]: GETGLOBAL R4 K4        ; R4 := _T
  51 [-]: GETTABLE  R4 R4 K5     ; R4 := R4["gHeatFissureHarvesters"]
@@ -108,7 +108,7 @@
  63 [-]: GETGLOBAL R4 K13       ; R4 := 0x3d106989
  64 [-]: LOADK     R5 K14       ; R5 := "harvester avatar created"
  65 [-]: CALL      R4 2 1       ; R4(R5)
- 66 [-]: LOADBOOL  R3 1 0       ; R3 := true
+ 66 [-]: LOADKB    R3 1 0       ; R3 := true
  67 [-]: SELF      R4 R0 K0     ; R5 := R0; R4 := R0[0xc9f6a7d7]
  68 [-]: GETGLOBAL R6 K15       ; R6 := gLotusFissureHarvesterStateType
  69 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
@@ -119,7 +119,7 @@
  74 [-]: TEST      R4 0         ; if not R4 then PC := 170
  75 [-]: JMP       170          ; PC := 170
  76 [-]: GETGLOBAL R4 K2        ; R4 := 0xcbd666e1
- 77 [-]: LOADK     R5 0         ; R5 := 0.000000
+ 77 [-]: CONST     R5 0         ; R5 := 0.000000
  78 [-]: CALL      R4 2 1       ; R4(R5)
  79 [-]: SELF      R4 R0 K0     ; R5 := R0; R4 := R0[0xc9f6a7d7]
  80 [-]: GETGLOBAL R6 K15       ; R6 := gLotusFissureHarvesterStateType
@@ -140,18 +140,18 @@
  95 [-]: TEST      R5 0         ; if not R5 then PC := 104
  96 [-]: JMP       104          ; PC := 104
  97 [-]: GETGLOBAL R5 K2        ; R5 := 0xcbd666e1
- 98 [-]: LOADK     R6 0         ; R6 := 0.000000
+ 98 [-]: CONST     R6 0         ; R6 := 0.000000
  99 [-]: CALL      R5 2 1       ; R5(R6)
 100 [-]: SELF      R5 R0 K17    ; R6 := R0; R5 := R0[0xcd73323e]
 101 [-]: CALL      R5 2 2       ; R5 := R5(R6)
 102 [-]: MOVE      R4 R5        ; R4 := R5
 103 [-]: JMP       92           ; PC := 92
-104 [-]: LOADK     R5 1         ; R5 := 1.000000
-105 [-]: LOADK     R6 5         ; R6 := 5.000000
-106 [-]: LOADK     R7 1         ; R7 := 1.000000
+104 [-]: CONST     R5 1         ; R5 := 1.000000
+105 [-]: CONST     R6 5         ; R6 := 5.000000
+106 [-]: CONST     R7 1         ; R7 := 1.000000
 107 [-]: FORPREP   R5 123       ; R5 -= R7; PC := 123
 108 [-]: GETGLOBAL R9 K2        ; R9 := 0xcbd666e1
-109 [-]: LOADK     R10 0        ; R10 := 0.000000
+109 [-]: CONST     R10 0        ; R10 := 0.000000
 110 [-]: CALL      R9 2 1       ; R9(R10)
 111 [-]: GETGLOBAL R9 K4        ; R9 := _T
 112 [-]: GETTABLE  R9 R9 K5     ; R9 := R9["gHeatFissureHarvesters"]
@@ -203,7 +203,7 @@
 158 [-]: TEST      R10 0        ; if not R10 then PC := 170
 159 [-]: JMP       170          ; PC := 170
 160 [-]: GETGLOBAL R10 K2       ; R10 := 0xcbd666e1
-161 [-]: LOADK     R11 0        ; R11 := 0.000000
+161 [-]: CONST     R11 0        ; R11 := 0.000000
 162 [-]: CALL      R10 2 1      ; R10(R11)
 163 [-]: GETGLOBAL R10 K4       ; R10 := _T
 164 [-]: GETTABLE  R10 R10 K5   ; R10 := R10["gHeatFissureHarvesters"]
@@ -221,7 +221,7 @@
 176 [-]: TEST      R11 0        ; if not R11 then PC := 186
 177 [-]: JMP       186          ; PC := 186
 178 [-]: GETGLOBAL R11 K2       ; R11 := 0xcbd666e1
-179 [-]: LOADK     R12 0        ; R12 := 0.000000
+179 [-]: CONST     R12 0        ; R12 := 0.000000
 180 [-]: CALL      R11 2 1      ; R11(R12)
 181 [-]: SELF      R11 R0 K0    ; R12 := R0; R11 := R0[0xc9f6a7d7]
 182 [-]: GETUPVAL  R13 U3       ; R13 := U3
@@ -234,7 +234,7 @@
 189 [-]: CALL      R12 2 2      ; R12 := R12(R13)
 190 [-]: TEST      R12 0        ; if not R12 then PC := 194
 191 [-]: JMP       194          ; PC := 194
-192 [-]: LOADK     R11 0        ; R11 := 0.000000
+192 [-]: CONST     R11 0        ; R11 := 0.000000
 193 [-]: JMP       197          ; PC := 197
 194 [-]: SELF      R12 R2 K25   ; R13 := R2; R12 := R2[0x958b6075]
 195 [-]: CALL      R12 2 2      ; R12 := R12(R13)
@@ -270,7 +270,7 @@
 225 [-]: CALL      R13 4 1      ; R13(R14,R15,R16)
 226 [-]: MOVE      R12 R11      ; R12 := R11
 227 [-]: GETGLOBAL R13 K2       ; R13 := 0xcbd666e1
-228 [-]: LOADK     R14 0        ; R14 := 0.000000
+228 [-]: CONST     R14 0        ; R14 := 0.000000
 229 [-]: CALL      R13 2 1      ; R13(R14)
 230 [-]: JMP       206          ; PC := 206
 231 [-]: RETURN    R0 1         ; return 

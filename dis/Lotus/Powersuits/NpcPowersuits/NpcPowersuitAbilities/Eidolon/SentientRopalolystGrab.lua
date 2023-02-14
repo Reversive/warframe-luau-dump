@@ -52,11 +52,11 @@
  25 [-]: CALL      R9 0 2       ; R9 := R9(R10,...)
  26 [-]: LE        0 R9 R2      ; if R9 > R2 then PC := 30
  27 [-]: JMP       30           ; PC := 30
- 28 [-]: LOADK     R9 1         ; R9 := 1.000000
+ 28 [-]: CONST     R9 1         ; R9 := 1.000000
  29 [-]: RETURN    R9 2         ; return R9
  30 [-]: TFORLOOP  R4 2         ; R7,R8 :=  R4(R5,R6); if R7 ~= nil then begin PC = 15; R6 := R7 end
  31 [-]: JMP       15           ; PC := 15
- 32 [-]: LOADK     R9 0         ; R9 := 0.000000
+ 32 [-]: CONST     R9 0         ; R9 := 0.000000
  33 [-]: RETURN    R9 2         ; return R9
  34 [-]: RETURN    R0 1         ; return 
 
@@ -82,7 +82,7 @@
  10 [-]: JMP       19           ; PC := 19
  11 [-]: SELF      R3 R1 K5     ; R4 := R1; R3 := R1[0x21b4c60e]
  12 [-]: LOADK     R5 K6        ; R5 := "GrabStart"
- 13 [-]: LOADK     R6 10        ; R6 := 10.000000
+ 13 [-]: CONST     R6 10        ; R6 := 10.000000
  14 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
  15 [-]: SELF      R3 R1 K7     ; R4 := R1; R3 := R1[0x47901f07]
  16 [-]: GETGLOBAL R5 K8        ; R5 := 0xcd03a610
@@ -90,7 +90,7 @@
  18 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
  19 [-]: SELF      R3 R1 K5     ; R4 := R1; R3 := R1[0x21b4c60e]
  20 [-]: LOADK     R5 K10       ; R5 := "GrabEnd"
- 21 [-]: LOADK     R6 10        ; R6 := 10.000000
+ 21 [-]: CONST     R6 10        ; R6 := 10.000000
  22 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
  23 [-]: RETURN    R0 1         ; return 
 

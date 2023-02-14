@@ -16,7 +16,7 @@
   7 [-]: CALL      R5 2 2       ; R5 := R5(R6)
   8 [-]: LOADK     R6 K4        ; R6 := 100000.000000
   9 [-]: NEWTABLE  R7 0 0       ; R7 := {}
- 10 [-]: LOADBOOL  R8 0 0       ; R8 := false
+ 10 [-]: LOADKB    R8 0 0       ; R8 := false
  11 [-]: CLOSURE   R9 0         ; R9 := closure(Function #1)
  12 [-]: CLOSURE   R10 1        ; R10 := closure(Function #2)
  13 [-]: MOVE      R0 R8        ; R0 := R8
@@ -61,15 +61,15 @@
   4 [-]: GETGLOBAL R2 K0        ; R2 := 0x25312c9b
   5 [-]: GETGLOBAL R3 K1        ; R3 := 0xae91e43b
   6 [-]: LOADK     R4 K2        ; R4 := "Heat.Container.Fill"
-  7 [-]: LOADK     R5 2         ; R5 := 2.000000
+  7 [-]: CONST     R5 2         ; R5 := 2.000000
   8 [-]: NEWTABLE  R6 1 0       ; R6 := {}
   9 [-]: MOVE      R7 R1        ; R7 := R1
  10 [-]: SETLIST   R6 1 1       ; R6[(1-1)*FPF+i] := R(6+i), 1 <= i <= 1
  11 [-]: NEWTABLE  R7 1 0       ; R7 := {}
- 12 [-]: LOADK     R8 1         ; R8 := 1.000000
+ 12 [-]: CONST     R8 1         ; R8 := 1.000000
  13 [-]: SETLIST   R7 1 1       ; R7[(1-1)*FPF+i] := R(7+i), 1 <= i <= 1
- 14 [-]: LOADK     R8 1         ; R8 := 1.000000
- 15 [-]: LOADK     R9 0         ; R9 := 0.000000
+ 14 [-]: CONST     R8 1         ; R8 := 1.000000
+ 15 [-]: CONST     R9 0         ; R9 := 0.000000
  16 [-]: CALL      R2 8 1       ; R2(R3,R4,R5,R6,R7,R8,R9)
  17 [-]: RETURN    R0 1         ; return 
 
@@ -84,7 +84,7 @@
 ; Max Stack Size:  8
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0x60130201
-  2 [-]: LOADK     R2 255       ; R2 := 255.000000
+  2 [-]: CONST     R2 255       ; R2 := 255.000000
   3 [-]: MUL       R3 R0 K1     ; R3 := R0 * 127.000000
   4 [-]: ADD       R3 R3 K2     ; R3 := R3 + 128.000000
   5 [-]: MUL       R4 R0 K1     ; R4 := R0 * 127.000000
@@ -93,12 +93,12 @@
   8 [-]: GETGLOBAL R2 K3        ; R2 := 0xae91e43b
   9 [-]: SELF      R2 R2 K4     ; R3 := R2; R2 := R2[0x67bc869f]
  10 [-]: LOADK     R4 K5        ; R4 := "Heat.Container.Fill"
- 11 [-]: LOADK     R5 9         ; R5 := 9.000000
+ 11 [-]: CONST     R5 9         ; R5 := 9.000000
  12 [-]: SELF      R6 R1 K6     ; R7 := R1; R6 := R1[0xa5d5c8f6]
  13 [-]: CALL      R6 2 0       ; R6,... := R6(R7)
  14 [-]: CALL      R2 0 1       ; R2(R3,...)
  15 [-]: GETGLOBAL R2 K0        ; R2 := 0x60130201
- 16 [-]: LOADK     R3 255       ; R3 := 255.000000
+ 16 [-]: CONST     R3 255       ; R3 := 255.000000
  17 [-]: MUL       R4 R0 K7     ; R4 := R0 * 255.000000
  18 [-]: MUL       R5 R0 K7     ; R5 := R0 * 255.000000
  19 [-]: CALL      R2 4 2       ; R2 := R2(R3,R4,R5)
@@ -106,7 +106,7 @@
  21 [-]: GETGLOBAL R2 K3        ; R2 := 0xae91e43b
  22 [-]: SELF      R2 R2 K4     ; R3 := R2; R2 := R2[0x67bc869f]
  23 [-]: LOADK     R4 K8        ; R4 := "Heat.Container.Backer"
- 24 [-]: LOADK     R5 9         ; R5 := 9.000000
+ 24 [-]: CONST     R5 9         ; R5 := 9.000000
  25 [-]: SELF      R6 R1 K6     ; R7 := R1; R6 := R1[0xa5d5c8f6]
  26 [-]: CALL      R6 2 0       ; R6,... := R6(R7)
  27 [-]: CALL      R2 0 1       ; R2(R3,...)
@@ -242,12 +242,12 @@
  44 [-]: SETUPVAL  R1 U4        ; U82 := R4
  45 [-]: EQ        0 R1 K9      ; if R1 ~= 0.000000 then PC := 49
  46 [-]: JMP       49           ; PC := 49
- 47 [-]: LOADK     R1 360       ; R1 := 360.000000
+ 47 [-]: CONST     R1 360       ; R1 := 360.000000
  48 [-]: JMP       57           ; PC := 57
  49 [-]: GETGLOBAL R2 K10       ; R2 := 0x42dcc9f5
  50 [-]: MOVE      R3 R1        ; R3 := R1
- 51 [-]: LOADK     R4 0         ; R4 := 0.000000
- 52 [-]: LOADK     R5 1         ; R5 := 1.000000
+ 51 [-]: CONST     R4 0         ; R4 := 0.000000
+ 52 [-]: CONST     R5 1         ; R5 := 1.000000
  53 [-]: CALL      R2 4 2       ; R2 := R2(R3,R4,R5)
  54 [-]: SUB       R2 K11 R2    ; R2 := 1.000000 - R2
  55 [-]: GETGLOBAL R3 K12       ; R3 := 0x1c8b5646
@@ -255,7 +255,7 @@
  57 [-]: GETGLOBAL R2 K1        ; R2 := 0xae91e43b
  58 [-]: SELF      R2 R2 K13    ; R3 := R2; R2 := R2[0x67bc869f]
  59 [-]: LOADK     R4 K14       ; R4 := "Heat.Container.Arrow"
- 60 [-]: LOADK     R5 14        ; R5 := 14.000000
+ 60 [-]: CONST     R5 14        ; R5 := 14.000000
  61 [-]: GETGLOBAL R6 K15       ; R6 := 0x829d835f
  62 [-]: ADD       R6 R6 R1     ; R6 := R6 + R1
  63 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
@@ -264,9 +264,9 @@
  66 [-]: LOADK     R4 K17       ; R4 := "Heat.Container.Fill"
  67 [-]: LOADK     R5 K18       ; R5 := "AlphaTestThreshold"
  68 [-]: DIV       R6 R1 K19    ; R6 := R1 / 360.000000
- 69 [-]: LOADK     R7 0         ; R7 := 0.000000
- 70 [-]: LOADK     R8 0         ; R8 := 0.000000
- 71 [-]: LOADK     R9 0         ; R9 := 0.000000
+ 69 [-]: CONST     R7 0         ; R7 := 0.000000
+ 70 [-]: CONST     R8 0         ; R8 := 0.000000
+ 71 [-]: CONST     R9 0         ; R9 := 0.000000
  72 [-]: CALL      R2 8 1       ; R2(R3,R4,R5,R6,R7,R8,R9)
  73 [-]: GETGLOBAL R2 K3        ; R2 := 0x7b998233
  74 [-]: GETUPVAL  R3 U0        ; R3 := U0
@@ -276,7 +276,7 @@
  78 [-]: GETUPVAL  R2 U0        ; R2 := U0
  79 [-]: SELF      R2 R2 K20    ; R3 := R2; R2 := R2[0x91a24e4b]
  80 [-]: LOADK     R4 K21       ; R4 := "_root"
- 81 [-]: LOADK     R5 10        ; R5 := 10.000000
+ 81 [-]: CONST     R5 10        ; R5 := 10.000000
  82 [-]: CALL      R2 4 2       ; R2 := R2(R3,R4,R5)
  83 [-]: GETUPVAL  R3 U5        ; R3 := U5
  84 [-]: EQ        1 R3 R2      ; if R3 == R2 then PC := 93
@@ -285,19 +285,19 @@
  87 [-]: GETGLOBAL R3 K1        ; R3 := 0xae91e43b
  88 [-]: SELF      R3 R3 K13    ; R4 := R3; R3 := R3[0x67bc869f]
  89 [-]: LOADK     R5 K21       ; R5 := "_root"
- 90 [-]: LOADK     R6 10        ; R6 := 10.000000
+ 90 [-]: CONST     R6 10        ; R6 := 10.000000
  91 [-]: MOVE      R7 R2        ; R7 := R2
  92 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
- 93 [-]: LOADBOOL  R3 1 0       ; R3 := true
+ 93 [-]: LOADKB    R3 1 0       ; R3 := true
  94 [-]: SETUPVAL  R3 U6        ; U82 := R6
  95 [-]: GETUPVAL  R3 U7        ; R3 := U7
  96 [-]: LEN       R3 R3        ; R3 := # R3
  97 [-]: LT        0 K9 R3      ; if 0.000000 >= R3 then PC := 117
  98 [-]: JMP       117          ; PC := 117
- 99 [-]: LOADK     R3 1         ; R3 := 1.000000
+ 99 [-]: CONST     R3 1         ; R3 := 1.000000
 100 [-]: GETUPVAL  R4 U7        ; R4 := U7
 101 [-]: LEN       R4 R4        ; R4 := # R4
-102 [-]: LOADK     R5 1         ; R5 := 1.000000
+102 [-]: CONST     R5 1         ; R5 := 1.000000
 103 [-]: FORPREP   R3 114       ; R3 -= R5; PC := 114
 104 [-]: GETUPVAL  R7 U7        ; R7 := U7
 105 [-]: GETTABLE  R7 R7 R6     ; R7 := R7[R6]
@@ -312,7 +312,7 @@
 114 [-]: FORLOOP   R3 104       ; R3 += R5; if R3 <= R4 then begin PC := 104; R6 := R3 end
 115 [-]: NEWTABLE  R7 0 0       ; R7 := {}
 116 [-]: SETUPVAL  R7 U7        ; U82 := R7
-117 [-]: LOADBOOL  R7 0 0       ; R7 := false
+117 [-]: LOADKB    R7 0 0       ; R7 := false
 118 [-]: SETUPVAL  R7 U6        ; U82 := R6
 119 [-]: RETURN    R0 1         ; return 
 
@@ -367,38 +367,38 @@
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0xae91e43b
   2 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0x67bc869f]
   3 [-]: LOADK     R2 K2        ; R2 := "_root"
-  4 [-]: LOADK     R3 10        ; R3 := 10.000000
-  5 [-]: LOADK     R4 0         ; R4 := 0.000000
+  4 [-]: CONST     R3 10        ; R3 := 10.000000
+  5 [-]: CONST     R4 0         ; R4 := 0.000000
   6 [-]: CALL      R0 5 1       ; R0(R1,R2,R3,R4)
   7 [-]: GETGLOBAL R0 K0        ; R0 := 0xae91e43b
   8 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0x67bc869f]
   9 [-]: LOADK     R2 K3        ; R2 := "Heat.Container.Arrow"
- 10 [-]: LOADK     R3 10        ; R3 := 10.000000
- 11 [-]: LOADK     R4 0         ; R4 := 0.000000
+ 10 [-]: CONST     R3 10        ; R3 := 10.000000
+ 11 [-]: CONST     R4 0         ; R4 := 0.000000
  12 [-]: CALL      R0 5 1       ; R0(R1,R2,R3,R4)
  13 [-]: GETGLOBAL R0 K0        ; R0 := 0xae91e43b
  14 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0x67bc869f]
  15 [-]: LOADK     R2 K4        ; R2 := "Heat.Container.Fill"
- 16 [-]: LOADK     R3 14        ; R3 := 14.000000
+ 16 [-]: CONST     R3 14        ; R3 := 14.000000
  17 [-]: GETGLOBAL R4 K5        ; R4 := 0x829d835f
  18 [-]: CALL      R0 5 1       ; R0(R1,R2,R3,R4)
  19 [-]: GETGLOBAL R0 K0        ; R0 := 0xae91e43b
  20 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0x67bc869f]
  21 [-]: LOADK     R2 K6        ; R2 := "Heat.Container.Backer"
- 22 [-]: LOADK     R3 14        ; R3 := 14.000000
+ 22 [-]: CONST     R3 14        ; R3 := 14.000000
  23 [-]: GETGLOBAL R4 K5        ; R4 := 0x829d835f
  24 [-]: CALL      R0 5 1       ; R0(R1,R2,R3,R4)
  25 [-]: GETGLOBAL R0 K0        ; R0 := 0xae91e43b
  26 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0x67bc869f]
  27 [-]: LOADK     R2 K7        ; R2 := "Heat.Container.Arrow.Image"
- 28 [-]: LOADK     R3 1         ; R3 := 1.000000
+ 28 [-]: CONST     R3 1         ; R3 := 1.000000
  29 [-]: GETGLOBAL R4 K8        ; R4 := 0x54986af0
- 30 [-]: UNM       R4 R4        ; R4 := ^ R4
+ 30 [-]: UNM       R4 R4        ; R4 :=  R4
  31 [-]: CALL      R0 5 1       ; R0(R1,R2,R3,R4)
  32 [-]: GETGLOBAL R0 K0        ; R0 := 0xae91e43b
  33 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0x67bc869f]
  34 [-]: LOADK     R2 K7        ; R2 := "Heat.Container.Arrow.Image"
- 35 [-]: LOADK     R3 14        ; R3 := 14.000000
+ 35 [-]: CONST     R3 14        ; R3 := 14.000000
  36 [-]: GETGLOBAL R4 K9        ; R4 := 0xcfd6217d
  37 [-]: CALL      R0 5 1       ; R0(R1,R2,R3,R4)
  38 [-]: GETGLOBAL R0 K0        ; R0 := 0xae91e43b
@@ -421,10 +421,10 @@
  55 [-]: SELF      R0 R0 K16    ; R1 := R0; R0 := R0[0x91e13703]
  56 [-]: LOADK     R2 K4        ; R2 := "Heat.Container.Fill"
  57 [-]: LOADK     R3 K17       ; R3 := "AlphaTestThreshold"
- 58 [-]: LOADK     R4 0         ; R4 := 0.000000
- 59 [-]: LOADK     R5 0         ; R5 := 0.000000
- 60 [-]: LOADK     R6 0         ; R6 := 0.000000
- 61 [-]: LOADK     R7 0         ; R7 := 0.000000
+ 58 [-]: CONST     R4 0         ; R4 := 0.000000
+ 59 [-]: CONST     R5 0         ; R5 := 0.000000
+ 60 [-]: CONST     R6 0         ; R6 := 0.000000
+ 61 [-]: CONST     R7 0         ; R7 := 0.000000
  62 [-]: CALL      R0 8 1       ; R0(R1,R2,R3,R4,R5,R6,R7)
  63 [-]: GETGLOBAL R0 K18       ; R0 := 0x7b998233
  64 [-]: GETGLOBAL R1 K19       ; R1 := _T
@@ -450,7 +450,7 @@
  84 [-]: GETGLOBAL R4 K0        ; R4 := 0xae91e43b
  85 [-]: SELF      R4 R4 K28    ; R5 := R4; R4 := R4[0xaf9fda9f]
  86 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 87 [-]: LOADBOOL  R5 1 0       ; R5 := true
+ 87 [-]: LOADKB    R5 1 0       ; R5 := true
  88 [-]: GETTABLE  R6 R0 K29    ; R6 := R0["mHudScalePadding"]
  89 [-]: CALL      R1 6 1       ; R1(R2,R3,R4,R5,R6)
  90 [-]: GETGLOBAL R1 K18       ; R1 := 0x7b998233
@@ -463,8 +463,8 @@
  97 [-]: GETTABLE  R1 R1 K31    ; R1 := R1[0x6b23d28b]
  98 [-]: GETGLOBAL R2 K0        ; R2 := 0xae91e43b
  99 [-]: LOADK     R3 K23       ; R3 := "Heat"
-100 [-]: LOADBOOL  R4 1 0       ; R4 := true
-101 [-]: LOADBOOL  R5 1 0       ; R5 := true
+100 [-]: LOADKB    R4 1 0       ; R4 := true
+101 [-]: LOADKB    R5 1 0       ; R5 := true
 102 [-]: CALL      R1 5 1       ; R1(R2,R3,R4,R5)
 103 [-]: GETGLOBAL R1 K18       ; R1 := 0x7b998233
 104 [-]: GETGLOBAL R2 K19       ; R2 := _T
@@ -519,7 +519,7 @@
   5 [-]: GETGLOBAL R1 K1        ; R1 := 0xae91e43b
   6 [-]: SELF      R1 R1 K2     ; R2 := R1; R1 := R1[0x67bc869f]
   7 [-]: LOADK     R3 K3        ; R3 := "Heat.Container"
-  8 [-]: LOADK     R4 1         ; R4 := 1.000000
+  8 [-]: CONST     R4 1         ; R4 := 1.000000
   9 [-]: ADD       R5 R0 K4     ; R5 := R0 + 10.000000
  10 [-]: CALL      R1 5 1       ; R1(R2,R3,R4,R5)
  11 [-]: RETURN    R0 1         ; return 

@@ -40,20 +40,20 @@
  13 [-]: LOADK     R2 K1        ; R2 := "bank"
  14 [-]: GETGLOBAL R8 K6        ; R8 := 0x5bced4c4
  15 [-]: GETTABLE  R8 R8 K7     ; R8 := R8["max"]
- 16 [-]: LOADK     R9 0         ; R9 := 0.000000
+ 16 [-]: CONST     R9 0         ; R9 := 0.000000
  17 [-]: GETGLOBAL R10 K9       ; R10 := IsNull
  18 [-]: GETGLOBAL R11 K10      ; R11 := DeltaTime
  19 [-]: GETGLOBAL R12 K11      ; R12 := 0x00046924
  20 [-]: CALL      R12 1 2      ; R12 := R12()
- 21 [-]: LOADK     R13 0        ; R13 := 0.000000
+ 21 [-]: CONST     R13 0        ; R13 := 0.000000
  22 [-]: MOVE      R14 R3       ; R14 := R3
  23 [-]: SELF      R15 R0 K12   ; R16 := R0; R15 := R0[0x73a8846a]
  24 [-]: CALL      R15 2 2      ; R15 := R15(R16)
  25 [-]: GETUPVAL  R16 U0       ; R16 := U0
- 26 [-]: LOADK     R17 1        ; R17 := 1.000000
+ 26 [-]: CONST     R17 1        ; R17 := 1.000000
  27 [-]: TEST      R6 0         ; if not R6 then PC := 30
  28 [-]: JMP       30           ; PC := 30
- 29 [-]: LOADK     R17 -1       ; R17 := -1.000000
+ 29 [-]: CONST     R17 -1       ; R17 := -1.000000
  30 [-]: MOVE      R18 R10      ; R18 := R10
  31 [-]: MOVE      R19 R15      ; R19 := R15
  32 [-]: CALL      R18 2 2      ; R18 := R18(R19)
@@ -72,23 +72,23 @@
  45 [-]: CALL      R19 2 2      ; R19 := R19(R20)
  46 [-]: SELF      R20 R0 K15   ; R21 := R0; R20 := R0[0xa390a429]
  47 [-]: MOVE      R22 R1       ; R22 := R1
- 48 [-]: LOADBOOL  R23 1 0      ; R23 := true
+ 48 [-]: LOADKB    R23 1 0      ; R23 := true
  49 [-]: CALL      R20 4 1      ; R20(R21,R22,R23)
  50 [-]: MOVE      R20 R10      ; R20 := R10
  51 [-]: MOVE      R21 R0       ; R21 := R0
  52 [-]: CALL      R20 2 2      ; R20 := R20(R21)
- 53 [-]: TEST      R20 1        ; if R20 then PC := 121
- 54 [-]: JMP       121          ; PC := 121
+ 53 [-]: TEST      R20 1        ; if R20 then PC := 125
+ 54 [-]: JMP       125          ; PC := 125
  55 [-]: MOVE      R20 R10      ; R20 := R10
  56 [-]: MOVE      R21 R15      ; R21 := R15
  57 [-]: CALL      R20 2 2      ; R20 := R20(R21)
- 58 [-]: TEST      R20 1        ; if R20 then PC := 121
- 59 [-]: JMP       121          ; PC := 121
+ 58 [-]: TEST      R20 1        ; if R20 then PC := 125
+ 59 [-]: JMP       125          ; PC := 125
  60 [-]: MOVE      R20 R10      ; R20 := R10
  61 [-]: MOVE      R21 R18      ; R21 := R18
  62 [-]: CALL      R20 2 2      ; R20 := R20(R21)
- 63 [-]: TEST      R20 1        ; if R20 then PC := 121
- 64 [-]: JMP       121          ; PC := 121
+ 63 [-]: TEST      R20 1        ; if R20 then PC := 125
+ 64 [-]: JMP       125          ; PC := 125
  65 [-]: MOVE      R20 R11      ; R20 := R11
  66 [-]: CALL      R20 1 2      ; R20 := R20()
  67 [-]: MOVE      R13 R20      ; R13 := R20
@@ -98,54 +98,58 @@
  71 [-]: CALL      R20 4 2      ; R20 := R20(R21,R22,R23)
  72 [-]: TEST      R20 1        ; if R20 then PC := 76
  73 [-]: JMP       76           ; PC := 76
- 74 [-]: TEST      R7 0         ; if not R7 then PC := 100
- 75 [-]: JMP       100          ; PC := 100
+ 74 [-]: TEST      R7 0         ; if not R7 then PC := 104
+ 75 [-]: JMP       104          ; PC := 104
  76 [-]: LT        0 K17 R16    ; if 0.000000 >= R16 then PC := 80
  77 [-]: JMP       80           ; PC := 80
  78 [-]: SUB       R16 R16 R13  ; R16 := R16 - R13
- 79 [-]: JMP       113          ; PC := 113
+ 79 [-]: JMP       117          ; PC := 117
  80 [-]: SELF      R21 R15 K18  ; R22 := R15; R21 := R15[0x7d4b71b1]
  81 [-]: CALL      R21 2 2      ; R21 := R21(R22)
- 82 [-]: TEST      R21 0        ; if not R21 then PC := 86
- 83 [-]: JMP       86           ; PC := 86
- 84 [-]: MOVE      R14 R4       ; R14 := R4
- 85 [-]: JMP       93           ; PC := 93
- 86 [-]: MUL       R21 R13 R5   ; R21 := R13 * R5
- 87 [-]: MUL       R21 R21 R21  ; R21 := R21 * R21
- 88 [-]: MOVE      R22 R8       ; R22 := R8
- 89 [-]: MOVE      R23 R3       ; R23 := R3
- 90 [-]: SUB       R24 R14 R21  ; R24 := R14 - R21
- 91 [-]: CALL      R22 3 2      ; R22 := R22(R23,R24)
- 92 [-]: MOVE      R14 R22      ; R14 := R22
- 93 [-]: GETTABLE  R22 R12 R2   ; R22 := R12[R2]
- 94 [-]: MUL       R23 R17 R14  ; R23 := R17 * R14
- 95 [-]: MUL       R23 R23 K19  ; R23 := R23 * 360.000000
- 96 [-]: MUL       R23 R13 R23  ; R23 := R13 * R23
- 97 [-]: ADD       R22 R22 R23  ; R22 := R22 + R23
- 98 [-]: SETTABLE  R12 R2 R22   ; R12[R2] := R22
- 99 [-]: JMP       113          ; PC := 113
-100 [-]: GETUPVAL  R16 U0       ; R16 := U0
-101 [-]: SELF      R22 R15 K18  ; R23 := R15; R22 := R15[0x7d4b71b1]
-102 [-]: CALL      R22 2 2      ; R22 := R22(R23)
-103 [-]: TEST      R22 0        ; if not R22 then PC := 112
-104 [-]: JMP       112          ; PC := 112
-105 [-]: GETTABLE  R22 R12 R2   ; R22 := R12[R2]
-106 [-]: MUL       R23 R17 R14  ; R23 := R17 * R14
-107 [-]: MUL       R23 R23 K19  ; R23 := R23 * 360.000000
-108 [-]: MUL       R23 R13 R23  ; R23 := R13 * R23
-109 [-]: ADD       R22 R22 R23  ; R22 := R22 + R23
-110 [-]: SETTABLE  R12 R2 R22   ; R12[R2] := R22
-111 [-]: JMP       113          ; PC := 113
-112 [-]: SETTABLE  R12 R2 K17   ; R12[R2] := 0.000000
-113 [-]: SELF      R22 R0 K20   ; R23 := R0; R22 := R0[0x9437c71b]
-114 [-]: MOVE      R24 R1       ; R24 := R1
-115 [-]: MOVE      R25 R12      ; R25 := R12
-116 [-]: CALL      R22 4 1      ; R22(R23,R24,R25)
-117 [-]: GETGLOBAL R22 K21      ; R22 := 0xcbd666e1
-118 [-]: LOADK     R23 0        ; R23 := 0.000000
-119 [-]: CALL      R22 2 1      ; R22(R23)
-120 [-]: JMP       50           ; PC := 50
-121 [-]: RETURN    R0 1         ; return 
+ 82 [-]: TEST      R21 0        ; if not R21 then PC := 90
+ 83 [-]: JMP       90           ; PC := 90
+ 84 [-]: SELF      R21 R0 K19   ; R22 := R0; R21 := R0[0x2b231118]
+ 85 [-]: CALL      R21 2 2      ; R21 := R21(R22)
+ 86 [-]: TEST      R21 0        ; if not R21 then PC := 90
+ 87 [-]: JMP       90           ; PC := 90
+ 88 [-]: MOVE      R14 R4       ; R14 := R4
+ 89 [-]: JMP       97           ; PC := 97
+ 90 [-]: MUL       R21 R13 R5   ; R21 := R13 * R5
+ 91 [-]: MUL       R21 R21 R21  ; R21 := R21 * R21
+ 92 [-]: MOVE      R22 R8       ; R22 := R8
+ 93 [-]: MOVE      R23 R3       ; R23 := R3
+ 94 [-]: SUB       R24 R14 R21  ; R24 := R14 - R21
+ 95 [-]: CALL      R22 3 2      ; R22 := R22(R23,R24)
+ 96 [-]: MOVE      R14 R22      ; R14 := R22
+ 97 [-]: GETTABLE  R22 R12 R2   ; R22 := R12[R2]
+ 98 [-]: MUL       R23 R17 R14  ; R23 := R17 * R14
+ 99 [-]: MUL       R23 R23 K20  ; R23 := R23 * 360.000000
+100 [-]: MUL       R23 R13 R23  ; R23 := R13 * R23
+101 [-]: ADD       R22 R22 R23  ; R22 := R22 + R23
+102 [-]: SETTABLE  R12 R2 R22   ; R12[R2] := R22
+103 [-]: JMP       117          ; PC := 117
+104 [-]: GETUPVAL  R16 U0       ; R16 := U0
+105 [-]: SELF      R22 R15 K18  ; R23 := R15; R22 := R15[0x7d4b71b1]
+106 [-]: CALL      R22 2 2      ; R22 := R22(R23)
+107 [-]: TEST      R22 0        ; if not R22 then PC := 116
+108 [-]: JMP       116          ; PC := 116
+109 [-]: GETTABLE  R22 R12 R2   ; R22 := R12[R2]
+110 [-]: MUL       R23 R17 R14  ; R23 := R17 * R14
+111 [-]: MUL       R23 R23 K20  ; R23 := R23 * 360.000000
+112 [-]: MUL       R23 R13 R23  ; R23 := R13 * R23
+113 [-]: ADD       R22 R22 R23  ; R22 := R22 + R23
+114 [-]: SETTABLE  R12 R2 R22   ; R12[R2] := R22
+115 [-]: JMP       117          ; PC := 117
+116 [-]: SETTABLE  R12 R2 K17   ; R12[R2] := 0.000000
+117 [-]: SELF      R22 R0 K21   ; R23 := R0; R22 := R0[0x9437c71b]
+118 [-]: MOVE      R24 R1       ; R24 := R1
+119 [-]: MOVE      R25 R12      ; R25 := R12
+120 [-]: CALL      R22 4 1      ; R22(R23,R24,R25)
+121 [-]: GETGLOBAL R22 K22      ; R22 := 0xcbd666e1
+122 [-]: CONST     R23 0        ; R23 := 0.000000
+123 [-]: CALL      R22 2 1      ; R22(R23)
+124 [-]: JMP       50           ; PC := 50
+125 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #2:
@@ -158,7 +162,7 @@
 ; Max Stack Size:  10
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0xcbd666e1
-  2 [-]: LOADK     R2 0         ; R2 := 0.000000
+  2 [-]: CONST     R2 0         ; R2 := 0.000000
   3 [-]: CALL      R1 2 1       ; R1(R2)
   4 [-]: GETUPVAL  R1 U0        ; R1 := U0
   5 [-]: MOVE      R2 R0        ; R2 := R0

@@ -90,7 +90,7 @@
  25 [-]: CALL      R1 6 1       ; R1(R2,R3,R4,R5,R6)
  26 [-]: GETGLOBAL R1 K3        ; R1 := 0x3341b43b
  27 [-]: SELF      R1 R1 K13    ; R2 := R1; R1 := R1[0xcddc3abb]
- 28 [-]: LOADK     R3 0         ; R3 := 0.000000
+ 28 [-]: CONST     R3 0         ; R3 := 0.000000
  29 [-]: GETGLOBAL R4 K14       ; R4 := 0x008a038b
  30 [-]: CALL      R1 4 1       ; R1(R2,R3,R4)
  31 [-]: GETGLOBAL R1 K3        ; R1 := 0x3341b43b

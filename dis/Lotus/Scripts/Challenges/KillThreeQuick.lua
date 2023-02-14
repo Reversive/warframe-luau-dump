@@ -7,9 +7,9 @@
 ; Is_vararg:       2
 ; Max Stack Size:  4
 
-  1 [-]: LOADK     R0 0         ; R0 := 0.000000
-  2 [-]: LOADK     R1 0         ; R1 := 0.000000
-  3 [-]: LOADK     R2 0         ; R2 := 0.000000
+  1 [-]: CONST     R0 0         ; R0 := 0.000000
+  2 [-]: CONST     R1 0         ; R1 := 0.000000
+  3 [-]: CONST     R2 0         ; R2 := 0.000000
   4 [-]: CLOSURE   R3 0         ; R3 := closure(Function #1)
   5 [-]: MOVE      R0 R0        ; R0 := R0
   6 [-]: MOVE      R0 R1        ; R0 := R1
@@ -39,7 +39,7 @@
  10 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  11 [-]: EQ        1 R2 R3      ; if R2 == R3 then PC := 15
  12 [-]: JMP       15           ; PC := 15
- 13 [-]: LOADBOOL  R2 0 0       ; R2 := false
+ 13 [-]: LOADKB    R2 0 0       ; R2 := false
  14 [-]: RETURN    R2 2         ; return R2
  15 [-]: SELF      R2 R0 K3     ; R3 := R0; R2 := R0[0x14a55974]
  16 [-]: CALL      R2 2 2       ; R2 := R2(R3)
@@ -91,9 +91,9 @@
  62 [-]: SUB       R5 R3 R5     ; R5 := R3 - R5
  63 [-]: LT        0 R5 K13     ; if R5 >= 5.000000 then PC := 67
  64 [-]: JMP       67           ; PC := 67
- 65 [-]: LOADBOOL  R5 1 0       ; R5 := true
+ 65 [-]: LOADKB    R5 1 0       ; R5 := true
  66 [-]: RETURN    R5 2         ; return R5
- 67 [-]: LOADBOOL  R5 0 0       ; R5 := false
+ 67 [-]: LOADKB    R5 0 0       ; R5 := false
  68 [-]: RETURN    R5 2         ; return R5
  69 [-]: RETURN    R0 1         ; return 
 

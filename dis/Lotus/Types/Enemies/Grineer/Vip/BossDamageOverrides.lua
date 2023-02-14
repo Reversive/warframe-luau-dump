@@ -44,9 +44,9 @@
  16 [-]: JMP       22           ; PC := 22
  17 [-]: EQ        0 R0 K0      ; if R0 ~= 1.000000 then PC := 21
  18 [-]: JMP       21           ; PC := 21
- 19 [-]: LOADK     R5 2         ; R5 := 2.000000
+ 19 [-]: CONST     R5 2         ; R5 := 2.000000
  20 [-]: JMP       22           ; PC := 22
- 21 [-]: LOADK     R5 1         ; R5 := 1.000000
+ 21 [-]: CONST     R5 1         ; R5 := 1.000000
  22 [-]: RETURN    R5 2         ; return R5
  23 [-]: RETURN    R0 1         ; return 
 
@@ -127,8 +127,8 @@
  65 [-]: GETGLOBAL R5 K26       ; R5 := 0x0469f296
  66 [-]: LOADK     R6 K27       ; R6 := "BossHealthDmgMod"
  67 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 68 [-]: LOADK     R6 25        ; R6 := 25.000000
- 69 [-]: LOADK     R7 6         ; R7 := 6.000000
+ 68 [-]: CONST     R6 25        ; R6 := 25.000000
+ 69 [-]: CONST     R7 6         ; R7 := 6.000000
  70 [-]: MOVE      R8 R1        ; R8 := R1
  71 [-]: CALL      R3 6 1       ; R3(R4,R5,R6,R7,R8)
  72 [-]: SELF      R3 R0 K24    ; R4 := R0; R3 := R0[0x1ac1655c]
@@ -137,8 +137,8 @@
  75 [-]: GETGLOBAL R5 K26       ; R5 := 0x0469f296
  76 [-]: LOADK     R6 K30       ; R6 := "BossShieldDmgMod"
  77 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 78 [-]: LOADK     R6 25        ; R6 := 25.000000
- 79 [-]: LOADK     R7 6         ; R7 := 6.000000
+ 78 [-]: CONST     R6 25        ; R6 := 25.000000
+ 79 [-]: CONST     R7 6         ; R7 := 6.000000
  80 [-]: MOVE      R8 R2        ; R8 := R2
  81 [-]: CALL      R3 6 1       ; R3(R4,R5,R6,R7,R8)
  82 [-]: RETURN    R0 1         ; return 
@@ -165,7 +165,7 @@
  10 [-]: TEST      R1 0         ; if not R1 then PC := 16
  11 [-]: JMP       16           ; PC := 16
  12 [-]: GETGLOBAL R1 K5        ; R1 := 0xcbd666e1
- 13 [-]: LOADK     R2 0         ; R2 := 0.000000
+ 13 [-]: CONST     R2 0         ; R2 := 0.000000
  14 [-]: CALL      R1 2 1       ; R1(R2)
  15 [-]: JMP       6            ; PC := 6
  16 [-]: GETGLOBAL R1 K0        ; R1 := 0x89326c93
@@ -183,8 +183,8 @@
  28 [-]: SELF      R4 R0 K9     ; R5 := R0; R4 := R0[0xde321e6f]
  29 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  30 [-]: SELF      R4 R4 K10    ; R5 := R4; R4 := R4[0x5e6704ff]
- 31 [-]: LOADK     R6 216       ; R6 := 216.000000
- 32 [-]: LOADK     R7 1         ; R7 := 1.000000
+ 31 [-]: CONST     R6 223       ; R6 := 223.000000
+ 32 [-]: CONST     R7 2         ; R7 := 2.000000
  33 [-]: LOADK     R8 K13       ; R8 := 0.100000
  34 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
  35 [-]: LEN       R4 R1        ; R4 := # R1
@@ -272,8 +272,8 @@
 117 [-]: GETGLOBAL R6 K40       ; R6 := 0x0469f296
 118 [-]: LOADK     R7 K41       ; R7 := "BossHealthDmgMod"
 119 [-]: CALL      R6 2 2       ; R6 := R6(R7)
-120 [-]: LOADK     R7 25        ; R7 := 25.000000
-121 [-]: LOADK     R8 6         ; R8 := 6.000000
+120 [-]: CONST     R7 25        ; R7 := 25.000000
+121 [-]: CONST     R8 6         ; R8 := 6.000000
 122 [-]: MOVE      R9 R2        ; R9 := R2
 123 [-]: CALL      R4 6 1       ; R4(R5,R6,R7,R8,R9)
 124 [-]: LT        0 K37 R3     ; if 0.000000 >= R3 then PC := 136
@@ -284,8 +284,8 @@
 129 [-]: GETGLOBAL R6 K40       ; R6 := 0x0469f296
 130 [-]: LOADK     R7 K43       ; R7 := "BossShieldDmgMod"
 131 [-]: CALL      R6 2 2       ; R6 := R6(R7)
-132 [-]: LOADK     R7 25        ; R7 := 25.000000
-133 [-]: LOADK     R8 6         ; R8 := 6.000000
+132 [-]: CONST     R7 25        ; R7 := 25.000000
+133 [-]: CONST     R8 6         ; R8 := 6.000000
 134 [-]: MOVE      R9 R3        ; R9 := R3
 135 [-]: CALL      R4 6 1       ; R4(R5,R6,R7,R8,R9)
 136 [-]: RETURN    R0 1         ; return 

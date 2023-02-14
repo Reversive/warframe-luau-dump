@@ -25,10 +25,10 @@
   2 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1[0x8eb2112d]
   3 [-]: LOADK     R3 K2        ; R3 := "MoveTo"
   4 [-]: CALL      R1 3 1       ; R1(R2,R3)
-  5 [-]: LOADK     R1 1         ; R1 := 1.000000
+  5 [-]: CONST     R1 1         ; R1 := 1.000000
   6 [-]: GETGLOBAL R2 K3        ; R2 := 0xff6c80ac
   7 [-]: LEN       R2 R2        ; R2 := # R2
-  8 [-]: LOADK     R3 1         ; R3 := 1.000000
+  8 [-]: CONST     R3 1         ; R3 := 1.000000
   9 [-]: FORPREP   R1 21        ; R1 -= R3; PC := 21
  10 [-]: GETGLOBAL R5 K4        ; R5 := 0x7b998233
  11 [-]: GETGLOBAL R6 K3        ; R6 := 0xff6c80ac

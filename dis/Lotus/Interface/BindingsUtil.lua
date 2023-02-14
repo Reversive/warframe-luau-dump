@@ -481,7 +481,7 @@
 472 [-]: SETTABLE  R21 K40 K189 ; R21["Action"] := "DOJO_SELECTION_EXIT"
 473 [-]: SETTABLE  R21 K42 K43  ; R21["ExcludePowers"] := true
 474 [-]: NEWTABLE  R22 0 3      ; R22 := {}
-475 [-]: SETTABLE  R22 K38 K190 ; R22["Label"] := "/Lotus/Language/Labels/AdvancedMode"
+475 [-]: SETTABLE  R22 K38 K190 ; R22["Label"] := "/Lotus/Language/UiElements/Input_DOJO_SELECTION_MODE"
 476 [-]: SETTABLE  R22 K40 K191 ; R22["Action"] := "DOJO_SELECTION_MODE"
 477 [-]: SETTABLE  R22 K42 K43  ; R22["ExcludePowers"] := true
 478 [-]: SETLIST   R4 18 1      ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 18
@@ -682,28 +682,28 @@
 673 [-]: SETTABLE  R2 K120 K253 ; R2["Platform"] := "ALL"
 674 [-]: NEWTABLE  R3 0 4       ; R3 := {}
 675 [-]: SETTABLE  R3 K248 K255 ; R3["Button"] := "GAMEPAD_UP"
-676 [-]: LOADK     R4 3         ; R4 := 3.000000
+676 [-]: CONST     R4 3         ; R4 := 3.000000
 677 [-]: SETTABLE  R3 K250 R4   ; R3["AnchorIndex"] := R4
 678 [-]: SETTABLE  R3 K251 K252 ; R3["TextAlign"] := "right"
 679 [-]: SETTABLE  R3 K120 K253 ; R3["Platform"] := "ALL"
 680 [-]: NEWTABLE  R4 0 4       ; R4 := {}
 681 [-]: LOADK     R5 K256      ; R5 := "GAMEPAD_LEFT"
 682 [-]: SETTABLE  R4 K248 R5   ; R4["Button"] := R5
-683 [-]: LOADK     R5 4         ; R5 := 4.000000
+683 [-]: CONST     R5 4         ; R5 := 4.000000
 684 [-]: SETTABLE  R4 K250 R5   ; R4["AnchorIndex"] := R5
 685 [-]: SETTABLE  R4 K251 K252 ; R4["TextAlign"] := "right"
 686 [-]: SETTABLE  R4 K120 K253 ; R4["Platform"] := "ALL"
 687 [-]: NEWTABLE  R5 0 4       ; R5 := {}
 688 [-]: LOADK     R6 K257      ; R6 := "GAMEPAD_DOWN"
 689 [-]: SETTABLE  R5 K248 R6   ; R5["Button"] := R6
-690 [-]: LOADK     R6 5         ; R6 := 5.000000
+690 [-]: CONST     R6 5         ; R6 := 5.000000
 691 [-]: SETTABLE  R5 K250 R6   ; R5["AnchorIndex"] := R6
 692 [-]: SETTABLE  R5 K251 K252 ; R5["TextAlign"] := "right"
 693 [-]: SETTABLE  R5 K120 K253 ; R5["Platform"] := "ALL"
 694 [-]: NEWTABLE  R6 0 4       ; R6 := {}
 695 [-]: LOADK     R7 K258      ; R7 := "GAMEPAD_RIGHT"
 696 [-]: SETTABLE  R6 K248 R7   ; R6["Button"] := R7
-697 [-]: LOADK     R7 6         ; R7 := 6.000000
+697 [-]: CONST     R7 6         ; R7 := 6.000000
 698 [-]: SETTABLE  R6 K250 R7   ; R6["AnchorIndex"] := R7
 699 [-]: SETTABLE  R6 K251 K252 ; R6["TextAlign"] := "right"
 700 [-]: SETTABLE  R6 K120 K253 ; R6["Platform"] := "ALL"
@@ -711,43 +711,43 @@
 702 [-]: LOADK     R8 K259      ; R8 := "GAMEPAD_LX"
 703 [-]: SETTABLE  R7 K248 R8   ; R7["Button"] := R8
 704 [-]: LOADK     R8 K260      ; R8 := "IsStick"
-705 [-]: LOADBOOL  R9 1 0       ; R9 := true
+705 [-]: LOADKB    R9 1 0       ; R9 := true
 706 [-]: SETTABLE  R7 R8 R9     ; R7[R8] := R9
-707 [-]: LOADK     R8 7         ; R8 := 7.000000
+707 [-]: CONST     R8 7         ; R8 := 7.000000
 708 [-]: SETTABLE  R7 K250 R8   ; R7["AnchorIndex"] := R8
 709 [-]: SETTABLE  R7 K251 K252 ; R7["TextAlign"] := "right"
 710 [-]: SETTABLE  R7 K120 K253 ; R7["Platform"] := "ALL"
 711 [-]: NEWTABLE  R8 0 4       ; R8 := {}
 712 [-]: LOADK     R9 K261      ; R9 := "GAMEPAD_LTHUMB"
 713 [-]: SETTABLE  R8 K248 R9   ; R8["Button"] := R9
-714 [-]: LOADK     R9 8         ; R9 := 8.000000
+714 [-]: CONST     R9 8         ; R9 := 8.000000
 715 [-]: SETTABLE  R8 K250 R9   ; R8["AnchorIndex"] := R9
 716 [-]: SETTABLE  R8 K251 K252 ; R8["TextAlign"] := "right"
 717 [-]: SETTABLE  R8 K120 K253 ; R8["Platform"] := "ALL"
 718 [-]: NEWTABLE  R9 0 5       ; R9 := {}
 719 [-]: LOADK     R10 K262     ; R10 := "GAMEPAD_START"
 720 [-]: SETTABLE  R9 K248 R10  ; R9["Button"] := R10
-721 [-]: LOADK     R10 9        ; R10 := 9.000000
+721 [-]: CONST     R10 9        ; R10 := 9.000000
 722 [-]: SETTABLE  R9 K250 R10  ; R9["AnchorIndex"] := R10
 723 [-]: LOADK     R10 K263     ; R10 := "left"
 724 [-]: SETTABLE  R9 K251 R10  ; R9["TextAlign"] := R10
 725 [-]: SETTABLE  R9 K120 K253 ; R9["Platform"] := "ALL"
-726 [-]: LOADBOOL  R10 1 0      ; R10 := true
+726 [-]: LOADKB    R10 1 0      ; R10 := true
 727 [-]: SETTABLE  R9 K63 R10   ; R9["ReadOnly"] := R10
 728 [-]: NEWTABLE  R10 0 5      ; R10 := {}
 729 [-]: LOADK     R11 K264     ; R11 := "GAMEPAD_SELECT"
 730 [-]: SETTABLE  R10 K248 R11 ; R10["Button"] := R11
-731 [-]: LOADK     R11 18       ; R11 := 18.000000
+731 [-]: CONST     R11 18       ; R11 := 18.000000
 732 [-]: SETTABLE  R10 K250 R11 ; R10["AnchorIndex"] := R11
 733 [-]: SETTABLE  R10 K251 K252; R10["TextAlign"] := "right"
 734 [-]: LOADK     R11 K265     ; R11 := "PC"
 735 [-]: SETTABLE  R10 K120 R11 ; R10["Platform"] := R11
-736 [-]: LOADBOOL  R11 1 0      ; R11 := true
+736 [-]: LOADKB    R11 1 0      ; R11 := true
 737 [-]: SETTABLE  R10 K63 R11  ; R10["ReadOnly"] := R11
 738 [-]: NEWTABLE  R11 0 4      ; R11 := {}
 739 [-]: LOADK     R12 K266     ; R12 := "GAMEPAD_R1"
 740 [-]: SETTABLE  R11 K248 R12 ; R11["Button"] := R12
-741 [-]: LOADK     R12 10       ; R12 := 10.000000
+741 [-]: CONST     R12 10       ; R12 := 10.000000
 742 [-]: SETTABLE  R11 K250 R12 ; R11["AnchorIndex"] := R12
 743 [-]: LOADK     R12 K263     ; R12 := "left"
 744 [-]: SETTABLE  R11 K251 R12 ; R11["TextAlign"] := R12
@@ -755,7 +755,7 @@
 746 [-]: NEWTABLE  R12 0 4      ; R12 := {}
 747 [-]: LOADK     R13 K267     ; R13 := "GAMEPAD_R2"
 748 [-]: SETTABLE  R12 K248 R13 ; R12["Button"] := R13
-749 [-]: LOADK     R13 11       ; R13 := 11.000000
+749 [-]: CONST     R13 11       ; R13 := 11.000000
 750 [-]: SETTABLE  R12 K250 R13 ; R12["AnchorIndex"] := R13
 751 [-]: LOADK     R13 K263     ; R13 := "left"
 752 [-]: SETTABLE  R12 K251 R13 ; R12["TextAlign"] := R13
@@ -763,7 +763,7 @@
 754 [-]: NEWTABLE  R13 0 4      ; R13 := {}
 755 [-]: LOADK     R14 K268     ; R14 := "GAMEPAD_TRIANGLE"
 756 [-]: SETTABLE  R13 K248 R14 ; R13["Button"] := R14
-757 [-]: LOADK     R14 12       ; R14 := 12.000000
+757 [-]: CONST     R14 12       ; R14 := 12.000000
 758 [-]: SETTABLE  R13 K250 R14 ; R13["AnchorIndex"] := R14
 759 [-]: LOADK     R14 K263     ; R14 := "left"
 760 [-]: SETTABLE  R13 K251 R14 ; R13["TextAlign"] := R14
@@ -771,7 +771,7 @@
 762 [-]: NEWTABLE  R14 0 4      ; R14 := {}
 763 [-]: LOADK     R15 K269     ; R15 := "GAMEPAD_CIRCLE"
 764 [-]: SETTABLE  R14 K248 R15 ; R14["Button"] := R15
-765 [-]: LOADK     R15 13       ; R15 := 13.000000
+765 [-]: CONST     R15 13       ; R15 := 13.000000
 766 [-]: SETTABLE  R14 K250 R15 ; R14["AnchorIndex"] := R15
 767 [-]: LOADK     R15 K263     ; R15 := "left"
 768 [-]: SETTABLE  R14 K251 R15 ; R14["TextAlign"] := R15
@@ -779,7 +779,7 @@
 770 [-]: NEWTABLE  R15 0 4      ; R15 := {}
 771 [-]: LOADK     R16 K270     ; R16 := "GAMEPAD_X"
 772 [-]: SETTABLE  R15 K248 R16 ; R15["Button"] := R16
-773 [-]: LOADK     R16 14       ; R16 := 14.000000
+773 [-]: CONST     R16 14       ; R16 := 14.000000
 774 [-]: SETTABLE  R15 K250 R16 ; R15["AnchorIndex"] := R16
 775 [-]: LOADK     R16 K263     ; R16 := "left"
 776 [-]: SETTABLE  R15 K251 R16 ; R15["TextAlign"] := R16
@@ -787,7 +787,7 @@
 778 [-]: NEWTABLE  R16 0 4      ; R16 := {}
 779 [-]: LOADK     R17 K271     ; R17 := "GAMEPAD_SQUARE"
 780 [-]: SETTABLE  R16 K248 R17 ; R16["Button"] := R17
-781 [-]: LOADK     R17 15       ; R17 := 15.000000
+781 [-]: CONST     R17 15       ; R17 := 15.000000
 782 [-]: SETTABLE  R16 K250 R17 ; R16["AnchorIndex"] := R17
 783 [-]: LOADK     R17 K263     ; R17 := "left"
 784 [-]: SETTABLE  R16 K251 R17 ; R16["TextAlign"] := R17
@@ -796,9 +796,9 @@
 787 [-]: LOADK     R18 K272     ; R18 := "GAMEPAD_RX"
 788 [-]: SETTABLE  R17 K248 R18 ; R17["Button"] := R18
 789 [-]: LOADK     R18 K260     ; R18 := "IsStick"
-790 [-]: LOADBOOL  R19 1 0      ; R19 := true
+790 [-]: LOADKB    R19 1 0      ; R19 := true
 791 [-]: SETTABLE  R17 R18 R19  ; R17[R18] := R19
-792 [-]: LOADK     R18 16       ; R18 := 16.000000
+792 [-]: CONST     R18 16       ; R18 := 16.000000
 793 [-]: SETTABLE  R17 K250 R18 ; R17["AnchorIndex"] := R18
 794 [-]: LOADK     R18 K263     ; R18 := "left"
 795 [-]: SETTABLE  R17 K251 R18 ; R17["TextAlign"] := R18
@@ -806,7 +806,7 @@
 797 [-]: NEWTABLE  R18 0 4      ; R18 := {}
 798 [-]: LOADK     R19 K273     ; R19 := "GAMEPAD_RTHUMB"
 799 [-]: SETTABLE  R18 K248 R19 ; R18["Button"] := R19
-800 [-]: LOADK     R19 17       ; R19 := 17.000000
+800 [-]: CONST     R19 17       ; R19 := 17.000000
 801 [-]: SETTABLE  R18 K250 R19 ; R18["AnchorIndex"] := R19
 802 [-]: LOADK     R19 K263     ; R19 := "left"
 803 [-]: SETTABLE  R18 K251 R19 ; R18["TextAlign"] := R19
@@ -815,7 +815,7 @@
 806 [-]: LOADK     R20 K274     ; R20 := "GAMEPAD_SWIPE_UP"
 807 [-]: SETTABLE  R19 K248 R20 ; R19["Button"] := R20
 808 [-]: LOADK     R20 K275     ; R20 := "TouchPad"
-809 [-]: LOADBOOL  R21 1 0      ; R21 := true
+809 [-]: LOADKB    R21 1 0      ; R21 := true
 810 [-]: SETTABLE  R19 R20 R21  ; R19[R20] := R21
 811 [-]: SETTABLE  R19 K120 K122; R19["Platform"] := "PS5"
 812 [-]: LOADK     R20 K276     ; R20 := "OverrideClipName"
@@ -825,7 +825,7 @@
 816 [-]: LOADK     R21 K278     ; R21 := "GAMEPAD_SWIPE_DOWN"
 817 [-]: SETTABLE  R20 K248 R21 ; R20["Button"] := R21
 818 [-]: LOADK     R21 K275     ; R21 := "TouchPad"
-819 [-]: LOADBOOL  R22 1 0      ; R22 := true
+819 [-]: LOADKB    R22 1 0      ; R22 := true
 820 [-]: SETTABLE  R20 R21 R22  ; R20[R21] := R22
 821 [-]: SETTABLE  R20 K120 K122; R20["Platform"] := "PS5"
 822 [-]: LOADK     R21 K276     ; R21 := "OverrideClipName"
@@ -835,7 +835,7 @@
 826 [-]: LOADK     R22 K280     ; R22 := "GAMEPAD_SWIPE_LEFT"
 827 [-]: SETTABLE  R21 K248 R22 ; R21["Button"] := R22
 828 [-]: LOADK     R22 K275     ; R22 := "TouchPad"
-829 [-]: LOADBOOL  R23 1 0      ; R23 := true
+829 [-]: LOADKB    R23 1 0      ; R23 := true
 830 [-]: SETTABLE  R21 R22 R23  ; R21[R22] := R23
 831 [-]: SETTABLE  R21 K120 K122; R21["Platform"] := "PS5"
 832 [-]: LOADK     R22 K276     ; R22 := "OverrideClipName"
@@ -845,7 +845,7 @@
 836 [-]: LOADK     R23 K282     ; R23 := "GAMEPAD_SWIPE_RIGHT"
 837 [-]: SETTABLE  R22 K248 R23 ; R22["Button"] := R23
 838 [-]: LOADK     R23 K275     ; R23 := "TouchPad"
-839 [-]: LOADBOOL  R24 1 0      ; R24 := true
+839 [-]: LOADKB    R24 1 0      ; R24 := true
 840 [-]: SETTABLE  R22 R23 R24  ; R22[R23] := R24
 841 [-]: SETTABLE  R22 K120 K122; R22["Platform"] := "PS5"
 842 [-]: LOADK     R23 K276     ; R23 := "OverrideClipName"
@@ -855,7 +855,7 @@
 846 [-]: LOADK     R24 K284     ; R24 := "GAMEPAD_MOTION_PRESS"
 847 [-]: SETTABLE  R23 K248 R24 ; R23["Button"] := R24
 848 [-]: LOADK     R24 K275     ; R24 := "TouchPad"
-849 [-]: LOADBOOL  R25 1 0      ; R25 := true
+849 [-]: LOADKB    R25 1 0      ; R25 := true
 850 [-]: SETTABLE  R23 R24 R25  ; R23[R24] := R25
 851 [-]: SETTABLE  R23 K120 K122; R23["Platform"] := "PS5"
 852 [-]: LOADK     R24 K276     ; R24 := "OverrideClipName"
@@ -866,40 +866,40 @@
 857 [-]: NEWTABLE  R0 20 0      ; R0 := {}
 858 [-]: NEWTABLE  R1 0 4       ; R1 := {}
 859 [-]: SETTABLE  R1 K248 K249 ; R1["Button"] := "GAMEPAD_L1"
-860 [-]: LOADK     R2 1         ; R2 := 1.000000
+860 [-]: CONST     R2 1         ; R2 := 1.000000
 861 [-]: SETTABLE  R1 K250 R2   ; R1["AnchorIndex"] := R2
 862 [-]: SETTABLE  R1 K251 K252 ; R1["TextAlign"] := "right"
 863 [-]: SETTABLE  R1 K120 K253 ; R1["Platform"] := "ALL"
 864 [-]: NEWTABLE  R2 0 4       ; R2 := {}
 865 [-]: SETTABLE  R2 K248 K254 ; R2["Button"] := "GAMEPAD_L2"
-866 [-]: LOADK     R3 2         ; R3 := 2.000000
+866 [-]: CONST     R3 2         ; R3 := 2.000000
 867 [-]: SETTABLE  R2 K250 R3   ; R2["AnchorIndex"] := R3
 868 [-]: SETTABLE  R2 K251 K252 ; R2["TextAlign"] := "right"
 869 [-]: SETTABLE  R2 K120 K253 ; R2["Platform"] := "ALL"
 870 [-]: NEWTABLE  R3 0 4       ; R3 := {}
 871 [-]: SETTABLE  R3 K248 K255 ; R3["Button"] := "GAMEPAD_UP"
-872 [-]: LOADK     R4 3         ; R4 := 3.000000
+872 [-]: CONST     R4 3         ; R4 := 3.000000
 873 [-]: SETTABLE  R3 K250 R4   ; R3["AnchorIndex"] := R4
 874 [-]: SETTABLE  R3 K251 K252 ; R3["TextAlign"] := "right"
 875 [-]: SETTABLE  R3 K120 K253 ; R3["Platform"] := "ALL"
 876 [-]: NEWTABLE  R4 0 4       ; R4 := {}
 877 [-]: LOADK     R5 K256      ; R5 := "GAMEPAD_LEFT"
 878 [-]: SETTABLE  R4 K248 R5   ; R4["Button"] := R5
-879 [-]: LOADK     R5 4         ; R5 := 4.000000
+879 [-]: CONST     R5 4         ; R5 := 4.000000
 880 [-]: SETTABLE  R4 K250 R5   ; R4["AnchorIndex"] := R5
 881 [-]: SETTABLE  R4 K251 K252 ; R4["TextAlign"] := "right"
 882 [-]: SETTABLE  R4 K120 K253 ; R4["Platform"] := "ALL"
 883 [-]: NEWTABLE  R5 0 4       ; R5 := {}
 884 [-]: LOADK     R6 K257      ; R6 := "GAMEPAD_DOWN"
 885 [-]: SETTABLE  R5 K248 R6   ; R5["Button"] := R6
-886 [-]: LOADK     R6 5         ; R6 := 5.000000
+886 [-]: CONST     R6 5         ; R6 := 5.000000
 887 [-]: SETTABLE  R5 K250 R6   ; R5["AnchorIndex"] := R6
 888 [-]: SETTABLE  R5 K251 K252 ; R5["TextAlign"] := "right"
 889 [-]: SETTABLE  R5 K120 K253 ; R5["Platform"] := "ALL"
 890 [-]: NEWTABLE  R6 0 4       ; R6 := {}
 891 [-]: LOADK     R7 K258      ; R7 := "GAMEPAD_RIGHT"
 892 [-]: SETTABLE  R6 K248 R7   ; R6["Button"] := R7
-893 [-]: LOADK     R7 6         ; R7 := 6.000000
+893 [-]: CONST     R7 6         ; R7 := 6.000000
 894 [-]: SETTABLE  R6 K250 R7   ; R6["AnchorIndex"] := R7
 895 [-]: SETTABLE  R6 K251 K252 ; R6["TextAlign"] := "right"
 896 [-]: SETTABLE  R6 K120 K253 ; R6["Platform"] := "ALL"
@@ -907,43 +907,43 @@
 898 [-]: LOADK     R8 K259      ; R8 := "GAMEPAD_LX"
 899 [-]: SETTABLE  R7 K248 R8   ; R7["Button"] := R8
 900 [-]: LOADK     R8 K260      ; R8 := "IsStick"
-901 [-]: LOADBOOL  R9 1 0       ; R9 := true
+901 [-]: LOADKB    R9 1 0       ; R9 := true
 902 [-]: SETTABLE  R7 R8 R9     ; R7[R8] := R9
-903 [-]: LOADK     R8 7         ; R8 := 7.000000
+903 [-]: CONST     R8 7         ; R8 := 7.000000
 904 [-]: SETTABLE  R7 K250 R8   ; R7["AnchorIndex"] := R8
 905 [-]: SETTABLE  R7 K251 K252 ; R7["TextAlign"] := "right"
 906 [-]: SETTABLE  R7 K120 K253 ; R7["Platform"] := "ALL"
 907 [-]: NEWTABLE  R8 0 4       ; R8 := {}
 908 [-]: LOADK     R9 K261      ; R9 := "GAMEPAD_LTHUMB"
 909 [-]: SETTABLE  R8 K248 R9   ; R8["Button"] := R9
-910 [-]: LOADK     R9 8         ; R9 := 8.000000
+910 [-]: CONST     R9 8         ; R9 := 8.000000
 911 [-]: SETTABLE  R8 K250 R9   ; R8["AnchorIndex"] := R9
 912 [-]: SETTABLE  R8 K251 K252 ; R8["TextAlign"] := "right"
 913 [-]: SETTABLE  R8 K120 K253 ; R8["Platform"] := "ALL"
 914 [-]: NEWTABLE  R9 0 5       ; R9 := {}
 915 [-]: LOADK     R10 K262     ; R10 := "GAMEPAD_START"
 916 [-]: SETTABLE  R9 K248 R10  ; R9["Button"] := R10
-917 [-]: LOADK     R10 9        ; R10 := 9.000000
+917 [-]: CONST     R10 9        ; R10 := 9.000000
 918 [-]: SETTABLE  R9 K250 R10  ; R9["AnchorIndex"] := R10
 919 [-]: LOADK     R10 K263     ; R10 := "left"
 920 [-]: SETTABLE  R9 K251 R10  ; R9["TextAlign"] := R10
 921 [-]: SETTABLE  R9 K120 K253 ; R9["Platform"] := "ALL"
-922 [-]: LOADBOOL  R10 1 0      ; R10 := true
+922 [-]: LOADKB    R10 1 0      ; R10 := true
 923 [-]: SETTABLE  R9 K63 R10   ; R9["ReadOnly"] := R10
 924 [-]: NEWTABLE  R10 0 5      ; R10 := {}
 925 [-]: LOADK     R11 K264     ; R11 := "GAMEPAD_SELECT"
 926 [-]: SETTABLE  R10 K248 R11 ; R10["Button"] := R11
-927 [-]: LOADK     R11 18       ; R11 := 18.000000
+927 [-]: CONST     R11 18       ; R11 := 18.000000
 928 [-]: SETTABLE  R10 K250 R11 ; R10["AnchorIndex"] := R11
 929 [-]: SETTABLE  R10 K251 K252; R10["TextAlign"] := "right"
 930 [-]: LOADK     R11 K265     ; R11 := "PC"
 931 [-]: SETTABLE  R10 K120 R11 ; R10["Platform"] := R11
-932 [-]: LOADBOOL  R11 1 0      ; R11 := true
+932 [-]: LOADKB    R11 1 0      ; R11 := true
 933 [-]: SETTABLE  R10 K63 R11  ; R10["ReadOnly"] := R11
 934 [-]: NEWTABLE  R11 0 4      ; R11 := {}
 935 [-]: LOADK     R12 K266     ; R12 := "GAMEPAD_R1"
 936 [-]: SETTABLE  R11 K248 R12 ; R11["Button"] := R12
-937 [-]: LOADK     R12 10       ; R12 := 10.000000
+937 [-]: CONST     R12 10       ; R12 := 10.000000
 938 [-]: SETTABLE  R11 K250 R12 ; R11["AnchorIndex"] := R12
 939 [-]: LOADK     R12 K263     ; R12 := "left"
 940 [-]: SETTABLE  R11 K251 R12 ; R11["TextAlign"] := R12
@@ -951,7 +951,7 @@
 942 [-]: NEWTABLE  R12 0 4      ; R12 := {}
 943 [-]: LOADK     R13 K267     ; R13 := "GAMEPAD_R2"
 944 [-]: SETTABLE  R12 K248 R13 ; R12["Button"] := R13
-945 [-]: LOADK     R13 11       ; R13 := 11.000000
+945 [-]: CONST     R13 11       ; R13 := 11.000000
 946 [-]: SETTABLE  R12 K250 R13 ; R12["AnchorIndex"] := R13
 947 [-]: LOADK     R13 K263     ; R13 := "left"
 948 [-]: SETTABLE  R12 K251 R13 ; R12["TextAlign"] := R13
@@ -959,7 +959,7 @@
 950 [-]: NEWTABLE  R13 0 4      ; R13 := {}
 951 [-]: LOADK     R14 K268     ; R14 := "GAMEPAD_TRIANGLE"
 952 [-]: SETTABLE  R13 K248 R14 ; R13["Button"] := R14
-953 [-]: LOADK     R14 12       ; R14 := 12.000000
+953 [-]: CONST     R14 12       ; R14 := 12.000000
 954 [-]: SETTABLE  R13 K250 R14 ; R13["AnchorIndex"] := R14
 955 [-]: LOADK     R14 K263     ; R14 := "left"
 956 [-]: SETTABLE  R13 K251 R14 ; R13["TextAlign"] := R14
@@ -967,7 +967,7 @@
 958 [-]: NEWTABLE  R14 0 4      ; R14 := {}
 959 [-]: LOADK     R15 K269     ; R15 := "GAMEPAD_CIRCLE"
 960 [-]: SETTABLE  R14 K248 R15 ; R14["Button"] := R15
-961 [-]: LOADK     R15 13       ; R15 := 13.000000
+961 [-]: CONST     R15 13       ; R15 := 13.000000
 962 [-]: SETTABLE  R14 K250 R15 ; R14["AnchorIndex"] := R15
 963 [-]: LOADK     R15 K263     ; R15 := "left"
 964 [-]: SETTABLE  R14 K251 R15 ; R14["TextAlign"] := R15
@@ -975,7 +975,7 @@
 966 [-]: NEWTABLE  R15 0 4      ; R15 := {}
 967 [-]: LOADK     R16 K270     ; R16 := "GAMEPAD_X"
 968 [-]: SETTABLE  R15 K248 R16 ; R15["Button"] := R16
-969 [-]: LOADK     R16 14       ; R16 := 14.000000
+969 [-]: CONST     R16 14       ; R16 := 14.000000
 970 [-]: SETTABLE  R15 K250 R16 ; R15["AnchorIndex"] := R16
 971 [-]: LOADK     R16 K263     ; R16 := "left"
 972 [-]: SETTABLE  R15 K251 R16 ; R15["TextAlign"] := R16
@@ -983,7 +983,7 @@
 974 [-]: NEWTABLE  R16 0 4      ; R16 := {}
 975 [-]: LOADK     R17 K271     ; R17 := "GAMEPAD_SQUARE"
 976 [-]: SETTABLE  R16 K248 R17 ; R16["Button"] := R17
-977 [-]: LOADK     R17 15       ; R17 := 15.000000
+977 [-]: CONST     R17 15       ; R17 := 15.000000
 978 [-]: SETTABLE  R16 K250 R17 ; R16["AnchorIndex"] := R17
 979 [-]: LOADK     R17 K263     ; R17 := "left"
 980 [-]: SETTABLE  R16 K251 R17 ; R16["TextAlign"] := R17
@@ -992,9 +992,9 @@
 983 [-]: LOADK     R18 K272     ; R18 := "GAMEPAD_RX"
 984 [-]: SETTABLE  R17 K248 R18 ; R17["Button"] := R18
 985 [-]: LOADK     R18 K260     ; R18 := "IsStick"
-986 [-]: LOADBOOL  R19 1 0      ; R19 := true
+986 [-]: LOADKB    R19 1 0      ; R19 := true
 987 [-]: SETTABLE  R17 R18 R19  ; R17[R18] := R19
-988 [-]: LOADK     R18 16       ; R18 := 16.000000
+988 [-]: CONST     R18 16       ; R18 := 16.000000
 989 [-]: SETTABLE  R17 K250 R18 ; R17["AnchorIndex"] := R18
 990 [-]: LOADK     R18 K263     ; R18 := "left"
 991 [-]: SETTABLE  R17 K251 R18 ; R17["TextAlign"] := R18
@@ -1002,7 +1002,7 @@
 993 [-]: NEWTABLE  R18 0 4      ; R18 := {}
 994 [-]: LOADK     R19 K273     ; R19 := "GAMEPAD_RTHUMB"
 995 [-]: SETTABLE  R18 K248 R19 ; R18["Button"] := R19
-996 [-]: LOADK     R19 17       ; R19 := 17.000000
+996 [-]: CONST     R19 17       ; R19 := 17.000000
 997 [-]: SETTABLE  R18 K250 R19 ; R18["AnchorIndex"] := R19
 998 [-]: LOADK     R19 K263     ; R19 := "left"
 999 [-]: SETTABLE  R18 K251 R19 ; R18["TextAlign"] := R19
@@ -1011,7 +1011,7 @@
 1002 [-]: LOADK     R20 K274     ; R20 := "GAMEPAD_SWIPE_UP"
 1003 [-]: SETTABLE  R19 K248 R20 ; R19["Button"] := R20
 1004 [-]: LOADK     R20 K275     ; R20 := "TouchPad"
-1005 [-]: LOADBOOL  R21 1 0      ; R21 := true
+1005 [-]: LOADKB    R21 1 0      ; R21 := true
 1006 [-]: SETTABLE  R19 R20 R21  ; R19[R20] := R21
 1007 [-]: SETTABLE  R19 K120 K121; R19["Platform"] := "PS4"
 1008 [-]: LOADK     R20 K276     ; R20 := "OverrideClipName"
@@ -1021,7 +1021,7 @@
 1012 [-]: LOADK     R21 K278     ; R21 := "GAMEPAD_SWIPE_DOWN"
 1013 [-]: SETTABLE  R20 K248 R21 ; R20["Button"] := R21
 1014 [-]: LOADK     R21 K275     ; R21 := "TouchPad"
-1015 [-]: LOADBOOL  R22 1 0      ; R22 := true
+1015 [-]: LOADKB    R22 1 0      ; R22 := true
 1016 [-]: SETTABLE  R20 R21 R22  ; R20[R21] := R22
 1017 [-]: SETTABLE  R20 K120 K121; R20["Platform"] := "PS4"
 1018 [-]: LOADK     R21 K276     ; R21 := "OverrideClipName"
@@ -1031,7 +1031,7 @@
 1022 [-]: LOADK     R22 K280     ; R22 := "GAMEPAD_SWIPE_LEFT"
 1023 [-]: SETTABLE  R21 K248 R22 ; R21["Button"] := R22
 1024 [-]: LOADK     R22 K275     ; R22 := "TouchPad"
-1025 [-]: LOADBOOL  R23 1 0      ; R23 := true
+1025 [-]: LOADKB    R23 1 0      ; R23 := true
 1026 [-]: SETTABLE  R21 R22 R23  ; R21[R22] := R23
 1027 [-]: SETTABLE  R21 K120 K121; R21["Platform"] := "PS4"
 1028 [-]: LOADK     R22 K276     ; R22 := "OverrideClipName"
@@ -1041,7 +1041,7 @@
 1032 [-]: LOADK     R23 K282     ; R23 := "GAMEPAD_SWIPE_RIGHT"
 1033 [-]: SETTABLE  R22 K248 R23 ; R22["Button"] := R23
 1034 [-]: LOADK     R23 K275     ; R23 := "TouchPad"
-1035 [-]: LOADBOOL  R24 1 0      ; R24 := true
+1035 [-]: LOADKB    R24 1 0      ; R24 := true
 1036 [-]: SETTABLE  R22 R23 R24  ; R22[R23] := R24
 1037 [-]: SETTABLE  R22 K120 K121; R22["Platform"] := "PS4"
 1038 [-]: LOADK     R23 K276     ; R23 := "OverrideClipName"
@@ -1051,7 +1051,7 @@
 1042 [-]: LOADK     R24 K284     ; R24 := "GAMEPAD_MOTION_PRESS"
 1043 [-]: SETTABLE  R23 K248 R24 ; R23["Button"] := R24
 1044 [-]: LOADK     R24 K275     ; R24 := "TouchPad"
-1045 [-]: LOADBOOL  R25 1 0      ; R25 := true
+1045 [-]: LOADKB    R25 1 0      ; R25 := true
 1046 [-]: SETTABLE  R23 R24 R25  ; R23[R24] := R25
 1047 [-]: SETTABLE  R23 K120 K121; R23["Platform"] := "PS4"
 1048 [-]: LOADK     R24 K276     ; R24 := "OverrideClipName"
@@ -1062,34 +1062,34 @@
 1053 [-]: NEWTABLE  R0 19 0      ; R0 := {}
 1054 [-]: NEWTABLE  R1 0 4       ; R1 := {}
 1055 [-]: SETTABLE  R1 K248 K254 ; R1["Button"] := "GAMEPAD_L2"
-1056 [-]: LOADK     R2 1         ; R2 := 1.000000
+1056 [-]: CONST     R2 1         ; R2 := 1.000000
 1057 [-]: SETTABLE  R1 K250 R2   ; R1["AnchorIndex"] := R2
 1058 [-]: SETTABLE  R1 K251 K252 ; R1["TextAlign"] := "right"
 1059 [-]: SETTABLE  R1 K120 K253 ; R1["Platform"] := "ALL"
 1060 [-]: NEWTABLE  R2 0 4       ; R2 := {}
 1061 [-]: SETTABLE  R2 K248 K255 ; R2["Button"] := "GAMEPAD_UP"
-1062 [-]: LOADK     R3 2         ; R3 := 2.000000
+1062 [-]: CONST     R3 2         ; R3 := 2.000000
 1063 [-]: SETTABLE  R2 K250 R3   ; R2["AnchorIndex"] := R3
 1064 [-]: SETTABLE  R2 K251 K252 ; R2["TextAlign"] := "right"
 1065 [-]: SETTABLE  R2 K120 K253 ; R2["Platform"] := "ALL"
 1066 [-]: NEWTABLE  R3 0 4       ; R3 := {}
 1067 [-]: LOADK     R4 K256      ; R4 := "GAMEPAD_LEFT"
 1068 [-]: SETTABLE  R3 K248 R4   ; R3["Button"] := R4
-1069 [-]: LOADK     R4 3         ; R4 := 3.000000
+1069 [-]: CONST     R4 3         ; R4 := 3.000000
 1070 [-]: SETTABLE  R3 K250 R4   ; R3["AnchorIndex"] := R4
 1071 [-]: SETTABLE  R3 K251 K252 ; R3["TextAlign"] := "right"
 1072 [-]: SETTABLE  R3 K120 K253 ; R3["Platform"] := "ALL"
 1073 [-]: NEWTABLE  R4 0 4       ; R4 := {}
 1074 [-]: LOADK     R5 K257      ; R5 := "GAMEPAD_DOWN"
 1075 [-]: SETTABLE  R4 K248 R5   ; R4["Button"] := R5
-1076 [-]: LOADK     R5 4         ; R5 := 4.000000
+1076 [-]: CONST     R5 4         ; R5 := 4.000000
 1077 [-]: SETTABLE  R4 K250 R5   ; R4["AnchorIndex"] := R5
 1078 [-]: SETTABLE  R4 K251 K252 ; R4["TextAlign"] := "right"
 1079 [-]: SETTABLE  R4 K120 K253 ; R4["Platform"] := "ALL"
 1080 [-]: NEWTABLE  R5 0 4       ; R5 := {}
 1081 [-]: LOADK     R6 K258      ; R6 := "GAMEPAD_RIGHT"
 1082 [-]: SETTABLE  R5 K248 R6   ; R5["Button"] := R6
-1083 [-]: LOADK     R6 5         ; R6 := 5.000000
+1083 [-]: CONST     R6 5         ; R6 := 5.000000
 1084 [-]: SETTABLE  R5 K250 R6   ; R5["AnchorIndex"] := R6
 1085 [-]: SETTABLE  R5 K251 K252 ; R5["TextAlign"] := "right"
 1086 [-]: SETTABLE  R5 K120 K253 ; R5["Platform"] := "ALL"
@@ -1097,9 +1097,9 @@
 1088 [-]: LOADK     R7 K259      ; R7 := "GAMEPAD_LX"
 1089 [-]: SETTABLE  R6 K248 R7   ; R6["Button"] := R7
 1090 [-]: LOADK     R7 K260      ; R7 := "IsStick"
-1091 [-]: LOADBOOL  R8 1 0       ; R8 := true
+1091 [-]: LOADKB    R8 1 0       ; R8 := true
 1092 [-]: SETTABLE  R6 R7 R8     ; R6[R7] := R8
-1093 [-]: LOADK     R7 6         ; R7 := 6.000000
+1093 [-]: CONST     R7 6         ; R7 := 6.000000
 1094 [-]: SETTABLE  R6 K250 R7   ; R6["AnchorIndex"] := R7
 1095 [-]: SETTABLE  R6 K251 K252 ; R6["TextAlign"] := "right"
 1096 [-]: SETTABLE  R6 K120 K253 ; R6["Platform"] := "ALL"
@@ -1133,7 +1133,7 @@
 1124 [-]: NEWTABLE  R11 0 4      ; R11 := {}
 1125 [-]: LOADK     R12 K267     ; R12 := "GAMEPAD_R2"
 1126 [-]: SETTABLE  R11 K248 R12 ; R11["Button"] := R12
-1127 [-]: LOADK     R12 7        ; R12 := 7.000000
+1127 [-]: CONST     R12 7        ; R12 := 7.000000
 1128 [-]: SETTABLE  R11 K250 R12 ; R11["AnchorIndex"] := R12
 1129 [-]: LOADK     R12 K263     ; R12 := "left"
 1130 [-]: SETTABLE  R11 K251 R12 ; R11["TextAlign"] := R12
@@ -1141,7 +1141,7 @@
 1132 [-]: NEWTABLE  R12 0 4      ; R12 := {}
 1133 [-]: LOADK     R13 K268     ; R13 := "GAMEPAD_TRIANGLE"
 1134 [-]: SETTABLE  R12 K248 R13 ; R12["Button"] := R13
-1135 [-]: LOADK     R13 8        ; R13 := 8.000000
+1135 [-]: CONST     R13 8        ; R13 := 8.000000
 1136 [-]: SETTABLE  R12 K250 R13 ; R12["AnchorIndex"] := R13
 1137 [-]: LOADK     R13 K263     ; R13 := "left"
 1138 [-]: SETTABLE  R12 K251 R13 ; R12["TextAlign"] := R13
@@ -1149,7 +1149,7 @@
 1140 [-]: NEWTABLE  R13 0 4      ; R13 := {}
 1141 [-]: LOADK     R14 K269     ; R14 := "GAMEPAD_CIRCLE"
 1142 [-]: SETTABLE  R13 K248 R14 ; R13["Button"] := R14
-1143 [-]: LOADK     R14 9        ; R14 := 9.000000
+1143 [-]: CONST     R14 9        ; R14 := 9.000000
 1144 [-]: SETTABLE  R13 K250 R14 ; R13["AnchorIndex"] := R14
 1145 [-]: LOADK     R14 K263     ; R14 := "left"
 1146 [-]: SETTABLE  R13 K251 R14 ; R13["TextAlign"] := R14
@@ -1157,7 +1157,7 @@
 1148 [-]: NEWTABLE  R14 0 4      ; R14 := {}
 1149 [-]: LOADK     R15 K270     ; R15 := "GAMEPAD_X"
 1150 [-]: SETTABLE  R14 K248 R15 ; R14["Button"] := R15
-1151 [-]: LOADK     R15 10       ; R15 := 10.000000
+1151 [-]: CONST     R15 10       ; R15 := 10.000000
 1152 [-]: SETTABLE  R14 K250 R15 ; R14["AnchorIndex"] := R15
 1153 [-]: LOADK     R15 K263     ; R15 := "left"
 1154 [-]: SETTABLE  R14 K251 R15 ; R14["TextAlign"] := R15
@@ -1165,7 +1165,7 @@
 1156 [-]: NEWTABLE  R15 0 4      ; R15 := {}
 1157 [-]: LOADK     R16 K271     ; R16 := "GAMEPAD_SQUARE"
 1158 [-]: SETTABLE  R15 K248 R16 ; R15["Button"] := R16
-1159 [-]: LOADK     R16 11       ; R16 := 11.000000
+1159 [-]: CONST     R16 11       ; R16 := 11.000000
 1160 [-]: SETTABLE  R15 K250 R16 ; R15["AnchorIndex"] := R16
 1161 [-]: LOADK     R16 K263     ; R16 := "left"
 1162 [-]: SETTABLE  R15 K251 R16 ; R15["TextAlign"] := R16
@@ -1174,9 +1174,9 @@
 1165 [-]: LOADK     R17 K272     ; R17 := "GAMEPAD_RX"
 1166 [-]: SETTABLE  R16 K248 R17 ; R16["Button"] := R17
 1167 [-]: LOADK     R17 K260     ; R17 := "IsStick"
-1168 [-]: LOADBOOL  R18 1 0      ; R18 := true
+1168 [-]: LOADKB    R18 1 0      ; R18 := true
 1169 [-]: SETTABLE  R16 R17 R18  ; R16[R17] := R18
-1170 [-]: LOADK     R17 12       ; R17 := 12.000000
+1170 [-]: CONST     R17 12       ; R17 := 12.000000
 1171 [-]: SETTABLE  R16 K250 R17 ; R16["AnchorIndex"] := R17
 1172 [-]: LOADK     R17 K263     ; R17 := "left"
 1173 [-]: SETTABLE  R16 K251 R17 ; R16["TextAlign"] := R17
@@ -1184,28 +1184,28 @@
 1175 [-]: NEWTABLE  R17 0 5      ; R17 := {}
 1176 [-]: LOADK     R18 K262     ; R18 := "GAMEPAD_START"
 1177 [-]: SETTABLE  R17 K248 R18 ; R17["Button"] := R18
-1178 [-]: LOADK     R18 13       ; R18 := 13.000000
+1178 [-]: CONST     R18 13       ; R18 := 13.000000
 1179 [-]: SETTABLE  R17 K250 R18 ; R17["AnchorIndex"] := R18
 1180 [-]: LOADK     R18 K263     ; R18 := "left"
 1181 [-]: SETTABLE  R17 K251 R18 ; R17["TextAlign"] := R18
 1182 [-]: SETTABLE  R17 K120 K253; R17["Platform"] := "ALL"
-1183 [-]: LOADBOOL  R18 1 0      ; R18 := true
+1183 [-]: LOADKB    R18 1 0      ; R18 := true
 1184 [-]: SETTABLE  R17 K63 R18  ; R17["ReadOnly"] := R18
 1185 [-]: NEWTABLE  R18 0 5      ; R18 := {}
 1186 [-]: LOADK     R19 K264     ; R19 := "GAMEPAD_SELECT"
 1187 [-]: SETTABLE  R18 K248 R19 ; R18["Button"] := R19
-1188 [-]: LOADK     R19 14       ; R19 := 14.000000
+1188 [-]: CONST     R19 14       ; R19 := 14.000000
 1189 [-]: SETTABLE  R18 K250 R19 ; R18["AnchorIndex"] := R19
 1190 [-]: LOADK     R19 K263     ; R19 := "left"
 1191 [-]: SETTABLE  R18 K251 R19 ; R18["TextAlign"] := R19
 1192 [-]: SETTABLE  R18 K120 K253; R18["Platform"] := "ALL"
-1193 [-]: LOADBOOL  R19 1 0      ; R19 := true
+1193 [-]: LOADKB    R19 1 0      ; R19 := true
 1194 [-]: SETTABLE  R18 K63 R19  ; R18["ReadOnly"] := R19
 1195 [-]: NEWTABLE  R19 0 4      ; R19 := {}
 1196 [-]: LOADK     R20 K274     ; R20 := "GAMEPAD_SWIPE_UP"
 1197 [-]: SETTABLE  R19 K248 R20 ; R19["Button"] := R20
 1198 [-]: LOADK     R20 K275     ; R20 := "TouchPad"
-1199 [-]: LOADBOOL  R21 1 0      ; R21 := true
+1199 [-]: LOADKB    R21 1 0      ; R21 := true
 1200 [-]: SETTABLE  R19 R20 R21  ; R19[R20] := R21
 1201 [-]: SETTABLE  R19 K120 K253; R19["Platform"] := "ALL"
 1202 [-]: LOADK     R20 K276     ; R20 := "OverrideClipName"
@@ -1215,7 +1215,7 @@
 1206 [-]: LOADK     R21 K278     ; R21 := "GAMEPAD_SWIPE_DOWN"
 1207 [-]: SETTABLE  R20 K248 R21 ; R20["Button"] := R21
 1208 [-]: LOADK     R21 K275     ; R21 := "TouchPad"
-1209 [-]: LOADBOOL  R22 1 0      ; R22 := true
+1209 [-]: LOADKB    R22 1 0      ; R22 := true
 1210 [-]: SETTABLE  R20 R21 R22  ; R20[R21] := R22
 1211 [-]: SETTABLE  R20 K120 K253; R20["Platform"] := "ALL"
 1212 [-]: LOADK     R21 K276     ; R21 := "OverrideClipName"
@@ -1225,7 +1225,7 @@
 1216 [-]: LOADK     R22 K280     ; R22 := "GAMEPAD_SWIPE_LEFT"
 1217 [-]: SETTABLE  R21 K248 R22 ; R21["Button"] := R22
 1218 [-]: LOADK     R22 K275     ; R22 := "TouchPad"
-1219 [-]: LOADBOOL  R23 1 0      ; R23 := true
+1219 [-]: LOADKB    R23 1 0      ; R23 := true
 1220 [-]: SETTABLE  R21 R22 R23  ; R21[R22] := R23
 1221 [-]: SETTABLE  R21 K120 K253; R21["Platform"] := "ALL"
 1222 [-]: LOADK     R22 K276     ; R22 := "OverrideClipName"
@@ -1235,7 +1235,7 @@
 1226 [-]: LOADK     R23 K282     ; R23 := "GAMEPAD_SWIPE_RIGHT"
 1227 [-]: SETTABLE  R22 K248 R23 ; R22["Button"] := R23
 1228 [-]: LOADK     R23 K275     ; R23 := "TouchPad"
-1229 [-]: LOADBOOL  R24 1 0      ; R24 := true
+1229 [-]: LOADKB    R24 1 0      ; R24 := true
 1230 [-]: SETTABLE  R22 R23 R24  ; R22[R23] := R24
 1231 [-]: SETTABLE  R22 K120 K253; R22["Platform"] := "ALL"
 1232 [-]: LOADK     R23 K276     ; R23 := "OverrideClipName"
@@ -1247,19 +1247,19 @@
 1238 [-]: NEWTABLE  R1 0 4       ; R1 := {}
 1239 [-]: LOADK     R2 K264      ; R2 := "GAMEPAD_SELECT"
 1240 [-]: SETTABLE  R1 K248 R2   ; R1["Button"] := R2
-1241 [-]: LOADK     R2 18        ; R2 := 18.000000
+1241 [-]: CONST     R2 18        ; R2 := 18.000000
 1242 [-]: SETTABLE  R1 K250 R2   ; R1["AnchorIndex"] := R2
 1243 [-]: SETTABLE  R1 K251 K252 ; R1["TextAlign"] := "right"
 1244 [-]: SETTABLE  R1 K120 K253 ; R1["Platform"] := "ALL"
 1245 [-]: NEWTABLE  R2 0 4       ; R2 := {}
 1246 [-]: SETTABLE  R2 K248 K249 ; R2["Button"] := "GAMEPAD_L1"
-1247 [-]: LOADK     R3 1         ; R3 := 1.000000
+1247 [-]: CONST     R3 1         ; R3 := 1.000000
 1248 [-]: SETTABLE  R2 K250 R3   ; R2["AnchorIndex"] := R3
 1249 [-]: SETTABLE  R2 K251 K252 ; R2["TextAlign"] := "right"
 1250 [-]: SETTABLE  R2 K120 K253 ; R2["Platform"] := "ALL"
 1251 [-]: NEWTABLE  R3 0 4       ; R3 := {}
 1252 [-]: SETTABLE  R3 K248 K254 ; R3["Button"] := "GAMEPAD_L2"
-1253 [-]: LOADK     R4 2         ; R4 := 2.000000
+1253 [-]: CONST     R4 2         ; R4 := 2.000000
 1254 [-]: SETTABLE  R3 K250 R4   ; R3["AnchorIndex"] := R4
 1255 [-]: SETTABLE  R3 K251 K252 ; R3["TextAlign"] := "right"
 1256 [-]: SETTABLE  R3 K120 K253 ; R3["Platform"] := "ALL"
@@ -1267,60 +1267,60 @@
 1258 [-]: LOADK     R5 K259      ; R5 := "GAMEPAD_LX"
 1259 [-]: SETTABLE  R4 K248 R5   ; R4["Button"] := R5
 1260 [-]: LOADK     R5 K260      ; R5 := "IsStick"
-1261 [-]: LOADBOOL  R6 1 0       ; R6 := true
+1261 [-]: LOADKB    R6 1 0       ; R6 := true
 1262 [-]: SETTABLE  R4 R5 R6     ; R4[R5] := R6
-1263 [-]: LOADK     R5 3         ; R5 := 3.000000
+1263 [-]: CONST     R5 3         ; R5 := 3.000000
 1264 [-]: SETTABLE  R4 K250 R5   ; R4["AnchorIndex"] := R5
 1265 [-]: SETTABLE  R4 K251 K252 ; R4["TextAlign"] := "right"
 1266 [-]: SETTABLE  R4 K120 K253 ; R4["Platform"] := "ALL"
 1267 [-]: NEWTABLE  R5 0 4       ; R5 := {}
 1268 [-]: LOADK     R6 K261      ; R6 := "GAMEPAD_LTHUMB"
 1269 [-]: SETTABLE  R5 K248 R6   ; R5["Button"] := R6
-1270 [-]: LOADK     R6 4         ; R6 := 4.000000
+1270 [-]: CONST     R6 4         ; R6 := 4.000000
 1271 [-]: SETTABLE  R5 K250 R6   ; R5["AnchorIndex"] := R6
 1272 [-]: SETTABLE  R5 K251 K252 ; R5["TextAlign"] := "right"
 1273 [-]: SETTABLE  R5 K120 K253 ; R5["Platform"] := "ALL"
 1274 [-]: NEWTABLE  R6 0 4       ; R6 := {}
 1275 [-]: SETTABLE  R6 K248 K255 ; R6["Button"] := "GAMEPAD_UP"
-1276 [-]: LOADK     R7 5         ; R7 := 5.000000
+1276 [-]: CONST     R7 5         ; R7 := 5.000000
 1277 [-]: SETTABLE  R6 K250 R7   ; R6["AnchorIndex"] := R7
 1278 [-]: SETTABLE  R6 K251 K252 ; R6["TextAlign"] := "right"
 1279 [-]: SETTABLE  R6 K120 K253 ; R6["Platform"] := "ALL"
 1280 [-]: NEWTABLE  R7 0 4       ; R7 := {}
 1281 [-]: LOADK     R8 K256      ; R8 := "GAMEPAD_LEFT"
 1282 [-]: SETTABLE  R7 K248 R8   ; R7["Button"] := R8
-1283 [-]: LOADK     R8 6         ; R8 := 6.000000
+1283 [-]: CONST     R8 6         ; R8 := 6.000000
 1284 [-]: SETTABLE  R7 K250 R8   ; R7["AnchorIndex"] := R8
 1285 [-]: SETTABLE  R7 K251 K252 ; R7["TextAlign"] := "right"
 1286 [-]: SETTABLE  R7 K120 K253 ; R7["Platform"] := "ALL"
 1287 [-]: NEWTABLE  R8 0 4       ; R8 := {}
 1288 [-]: LOADK     R9 K257      ; R9 := "GAMEPAD_DOWN"
 1289 [-]: SETTABLE  R8 K248 R9   ; R8["Button"] := R9
-1290 [-]: LOADK     R9 7         ; R9 := 7.000000
+1290 [-]: CONST     R9 7         ; R9 := 7.000000
 1291 [-]: SETTABLE  R8 K250 R9   ; R8["AnchorIndex"] := R9
 1292 [-]: SETTABLE  R8 K251 K252 ; R8["TextAlign"] := "right"
 1293 [-]: SETTABLE  R8 K120 K253 ; R8["Platform"] := "ALL"
 1294 [-]: NEWTABLE  R9 0 4       ; R9 := {}
 1295 [-]: LOADK     R10 K258     ; R10 := "GAMEPAD_RIGHT"
 1296 [-]: SETTABLE  R9 K248 R10  ; R9["Button"] := R10
-1297 [-]: LOADK     R10 8        ; R10 := 8.000000
+1297 [-]: CONST     R10 8        ; R10 := 8.000000
 1298 [-]: SETTABLE  R9 K250 R10  ; R9["AnchorIndex"] := R10
 1299 [-]: SETTABLE  R9 K251 K252 ; R9["TextAlign"] := "right"
 1300 [-]: SETTABLE  R9 K120 K253 ; R9["Platform"] := "ALL"
 1301 [-]: NEWTABLE  R10 0 5      ; R10 := {}
 1302 [-]: LOADK     R11 K262     ; R11 := "GAMEPAD_START"
 1303 [-]: SETTABLE  R10 K248 R11 ; R10["Button"] := R11
-1304 [-]: LOADK     R11 9        ; R11 := 9.000000
+1304 [-]: CONST     R11 9        ; R11 := 9.000000
 1305 [-]: SETTABLE  R10 K250 R11 ; R10["AnchorIndex"] := R11
 1306 [-]: LOADK     R11 K263     ; R11 := "left"
 1307 [-]: SETTABLE  R10 K251 R11 ; R10["TextAlign"] := R11
 1308 [-]: SETTABLE  R10 K120 K253; R10["Platform"] := "ALL"
-1309 [-]: LOADBOOL  R11 1 0      ; R11 := true
+1309 [-]: LOADKB    R11 1 0      ; R11 := true
 1310 [-]: SETTABLE  R10 K63 R11  ; R10["ReadOnly"] := R11
 1311 [-]: NEWTABLE  R11 0 4      ; R11 := {}
 1312 [-]: LOADK     R12 K266     ; R12 := "GAMEPAD_R1"
 1313 [-]: SETTABLE  R11 K248 R12 ; R11["Button"] := R12
-1314 [-]: LOADK     R12 10       ; R12 := 10.000000
+1314 [-]: CONST     R12 10       ; R12 := 10.000000
 1315 [-]: SETTABLE  R11 K250 R12 ; R11["AnchorIndex"] := R12
 1316 [-]: LOADK     R12 K263     ; R12 := "left"
 1317 [-]: SETTABLE  R11 K251 R12 ; R11["TextAlign"] := R12
@@ -1328,7 +1328,7 @@
 1319 [-]: NEWTABLE  R12 0 4      ; R12 := {}
 1320 [-]: LOADK     R13 K267     ; R13 := "GAMEPAD_R2"
 1321 [-]: SETTABLE  R12 K248 R13 ; R12["Button"] := R13
-1322 [-]: LOADK     R13 11       ; R13 := 11.000000
+1322 [-]: CONST     R13 11       ; R13 := 11.000000
 1323 [-]: SETTABLE  R12 K250 R13 ; R12["AnchorIndex"] := R13
 1324 [-]: LOADK     R13 K263     ; R13 := "left"
 1325 [-]: SETTABLE  R12 K251 R13 ; R12["TextAlign"] := R13
@@ -1336,7 +1336,7 @@
 1327 [-]: NEWTABLE  R13 0 4      ; R13 := {}
 1328 [-]: LOADK     R14 K268     ; R14 := "GAMEPAD_TRIANGLE"
 1329 [-]: SETTABLE  R13 K248 R14 ; R13["Button"] := R14
-1330 [-]: LOADK     R14 12       ; R14 := 12.000000
+1330 [-]: CONST     R14 12       ; R14 := 12.000000
 1331 [-]: SETTABLE  R13 K250 R14 ; R13["AnchorIndex"] := R14
 1332 [-]: LOADK     R14 K263     ; R14 := "left"
 1333 [-]: SETTABLE  R13 K251 R14 ; R13["TextAlign"] := R14
@@ -1344,7 +1344,7 @@
 1335 [-]: NEWTABLE  R14 0 4      ; R14 := {}
 1336 [-]: LOADK     R15 K269     ; R15 := "GAMEPAD_CIRCLE"
 1337 [-]: SETTABLE  R14 K248 R15 ; R14["Button"] := R15
-1338 [-]: LOADK     R15 13       ; R15 := 13.000000
+1338 [-]: CONST     R15 13       ; R15 := 13.000000
 1339 [-]: SETTABLE  R14 K250 R15 ; R14["AnchorIndex"] := R15
 1340 [-]: LOADK     R15 K263     ; R15 := "left"
 1341 [-]: SETTABLE  R14 K251 R15 ; R14["TextAlign"] := R15
@@ -1352,7 +1352,7 @@
 1343 [-]: NEWTABLE  R15 0 4      ; R15 := {}
 1344 [-]: LOADK     R16 K270     ; R16 := "GAMEPAD_X"
 1345 [-]: SETTABLE  R15 K248 R16 ; R15["Button"] := R16
-1346 [-]: LOADK     R16 14       ; R16 := 14.000000
+1346 [-]: CONST     R16 14       ; R16 := 14.000000
 1347 [-]: SETTABLE  R15 K250 R16 ; R15["AnchorIndex"] := R16
 1348 [-]: LOADK     R16 K263     ; R16 := "left"
 1349 [-]: SETTABLE  R15 K251 R16 ; R15["TextAlign"] := R16
@@ -1360,7 +1360,7 @@
 1351 [-]: NEWTABLE  R16 0 4      ; R16 := {}
 1352 [-]: LOADK     R17 K271     ; R17 := "GAMEPAD_SQUARE"
 1353 [-]: SETTABLE  R16 K248 R17 ; R16["Button"] := R17
-1354 [-]: LOADK     R17 15       ; R17 := 15.000000
+1354 [-]: CONST     R17 15       ; R17 := 15.000000
 1355 [-]: SETTABLE  R16 K250 R17 ; R16["AnchorIndex"] := R17
 1356 [-]: LOADK     R17 K263     ; R17 := "left"
 1357 [-]: SETTABLE  R16 K251 R17 ; R16["TextAlign"] := R17
@@ -1369,9 +1369,9 @@
 1360 [-]: LOADK     R18 K272     ; R18 := "GAMEPAD_RX"
 1361 [-]: SETTABLE  R17 K248 R18 ; R17["Button"] := R18
 1362 [-]: LOADK     R18 K260     ; R18 := "IsStick"
-1363 [-]: LOADBOOL  R19 1 0      ; R19 := true
+1363 [-]: LOADKB    R19 1 0      ; R19 := true
 1364 [-]: SETTABLE  R17 R18 R19  ; R17[R18] := R19
-1365 [-]: LOADK     R18 16       ; R18 := 16.000000
+1365 [-]: CONST     R18 16       ; R18 := 16.000000
 1366 [-]: SETTABLE  R17 K250 R18 ; R17["AnchorIndex"] := R18
 1367 [-]: LOADK     R18 K263     ; R18 := "left"
 1368 [-]: SETTABLE  R17 K251 R18 ; R17["TextAlign"] := R18
@@ -1379,7 +1379,7 @@
 1370 [-]: NEWTABLE  R18 0 4      ; R18 := {}
 1371 [-]: LOADK     R19 K273     ; R19 := "GAMEPAD_RTHUMB"
 1372 [-]: SETTABLE  R18 K248 R19 ; R18["Button"] := R19
-1373 [-]: LOADK     R19 17       ; R19 := 17.000000
+1373 [-]: CONST     R19 17       ; R19 := 17.000000
 1374 [-]: SETTABLE  R18 K250 R19 ; R18["AnchorIndex"] := R19
 1375 [-]: LOADK     R19 K263     ; R19 := "left"
 1376 [-]: SETTABLE  R18 K251 R19 ; R18["TextAlign"] := R19
@@ -1390,19 +1390,19 @@
 1381 [-]: NEWTABLE  R1 0 4       ; R1 := {}
 1382 [-]: LOADK     R2 K264      ; R2 := "GAMEPAD_SELECT"
 1383 [-]: SETTABLE  R1 K248 R2   ; R1["Button"] := R2
-1384 [-]: LOADK     R2 18        ; R2 := 18.000000
+1384 [-]: CONST     R2 18        ; R2 := 18.000000
 1385 [-]: SETTABLE  R1 K250 R2   ; R1["AnchorIndex"] := R2
 1386 [-]: SETTABLE  R1 K251 K252 ; R1["TextAlign"] := "right"
 1387 [-]: SETTABLE  R1 K120 K253 ; R1["Platform"] := "ALL"
 1388 [-]: NEWTABLE  R2 0 4       ; R2 := {}
 1389 [-]: SETTABLE  R2 K248 K249 ; R2["Button"] := "GAMEPAD_L1"
-1390 [-]: LOADK     R3 1         ; R3 := 1.000000
+1390 [-]: CONST     R3 1         ; R3 := 1.000000
 1391 [-]: SETTABLE  R2 K250 R3   ; R2["AnchorIndex"] := R3
 1392 [-]: SETTABLE  R2 K251 K252 ; R2["TextAlign"] := "right"
 1393 [-]: SETTABLE  R2 K120 K253 ; R2["Platform"] := "ALL"
 1394 [-]: NEWTABLE  R3 0 4       ; R3 := {}
 1395 [-]: SETTABLE  R3 K248 K254 ; R3["Button"] := "GAMEPAD_L2"
-1396 [-]: LOADK     R4 2         ; R4 := 2.000000
+1396 [-]: CONST     R4 2         ; R4 := 2.000000
 1397 [-]: SETTABLE  R3 K250 R4   ; R3["AnchorIndex"] := R4
 1398 [-]: SETTABLE  R3 K251 K252 ; R3["TextAlign"] := "right"
 1399 [-]: SETTABLE  R3 K120 K253 ; R3["Platform"] := "ALL"
@@ -1410,60 +1410,60 @@
 1401 [-]: LOADK     R5 K259      ; R5 := "GAMEPAD_LX"
 1402 [-]: SETTABLE  R4 K248 R5   ; R4["Button"] := R5
 1403 [-]: LOADK     R5 K260      ; R5 := "IsStick"
-1404 [-]: LOADBOOL  R6 1 0       ; R6 := true
+1404 [-]: LOADKB    R6 1 0       ; R6 := true
 1405 [-]: SETTABLE  R4 R5 R6     ; R4[R5] := R6
-1406 [-]: LOADK     R5 3         ; R5 := 3.000000
+1406 [-]: CONST     R5 3         ; R5 := 3.000000
 1407 [-]: SETTABLE  R4 K250 R5   ; R4["AnchorIndex"] := R5
 1408 [-]: SETTABLE  R4 K251 K252 ; R4["TextAlign"] := "right"
 1409 [-]: SETTABLE  R4 K120 K253 ; R4["Platform"] := "ALL"
 1410 [-]: NEWTABLE  R5 0 4       ; R5 := {}
 1411 [-]: LOADK     R6 K261      ; R6 := "GAMEPAD_LTHUMB"
 1412 [-]: SETTABLE  R5 K248 R6   ; R5["Button"] := R6
-1413 [-]: LOADK     R6 4         ; R6 := 4.000000
+1413 [-]: CONST     R6 4         ; R6 := 4.000000
 1414 [-]: SETTABLE  R5 K250 R6   ; R5["AnchorIndex"] := R6
 1415 [-]: SETTABLE  R5 K251 K252 ; R5["TextAlign"] := "right"
 1416 [-]: SETTABLE  R5 K120 K253 ; R5["Platform"] := "ALL"
 1417 [-]: NEWTABLE  R6 0 4       ; R6 := {}
 1418 [-]: SETTABLE  R6 K248 K255 ; R6["Button"] := "GAMEPAD_UP"
-1419 [-]: LOADK     R7 5         ; R7 := 5.000000
+1419 [-]: CONST     R7 5         ; R7 := 5.000000
 1420 [-]: SETTABLE  R6 K250 R7   ; R6["AnchorIndex"] := R7
 1421 [-]: SETTABLE  R6 K251 K252 ; R6["TextAlign"] := "right"
 1422 [-]: SETTABLE  R6 K120 K253 ; R6["Platform"] := "ALL"
 1423 [-]: NEWTABLE  R7 0 4       ; R7 := {}
 1424 [-]: LOADK     R8 K256      ; R8 := "GAMEPAD_LEFT"
 1425 [-]: SETTABLE  R7 K248 R8   ; R7["Button"] := R8
-1426 [-]: LOADK     R8 6         ; R8 := 6.000000
+1426 [-]: CONST     R8 6         ; R8 := 6.000000
 1427 [-]: SETTABLE  R7 K250 R8   ; R7["AnchorIndex"] := R8
 1428 [-]: SETTABLE  R7 K251 K252 ; R7["TextAlign"] := "right"
 1429 [-]: SETTABLE  R7 K120 K253 ; R7["Platform"] := "ALL"
 1430 [-]: NEWTABLE  R8 0 4       ; R8 := {}
 1431 [-]: LOADK     R9 K257      ; R9 := "GAMEPAD_DOWN"
 1432 [-]: SETTABLE  R8 K248 R9   ; R8["Button"] := R9
-1433 [-]: LOADK     R9 7         ; R9 := 7.000000
+1433 [-]: CONST     R9 7         ; R9 := 7.000000
 1434 [-]: SETTABLE  R8 K250 R9   ; R8["AnchorIndex"] := R9
 1435 [-]: SETTABLE  R8 K251 K252 ; R8["TextAlign"] := "right"
 1436 [-]: SETTABLE  R8 K120 K253 ; R8["Platform"] := "ALL"
 1437 [-]: NEWTABLE  R9 0 4       ; R9 := {}
 1438 [-]: LOADK     R10 K258     ; R10 := "GAMEPAD_RIGHT"
 1439 [-]: SETTABLE  R9 K248 R10  ; R9["Button"] := R10
-1440 [-]: LOADK     R10 8        ; R10 := 8.000000
+1440 [-]: CONST     R10 8        ; R10 := 8.000000
 1441 [-]: SETTABLE  R9 K250 R10  ; R9["AnchorIndex"] := R10
 1442 [-]: SETTABLE  R9 K251 K252 ; R9["TextAlign"] := "right"
 1443 [-]: SETTABLE  R9 K120 K253 ; R9["Platform"] := "ALL"
 1444 [-]: NEWTABLE  R10 0 5      ; R10 := {}
 1445 [-]: LOADK     R11 K262     ; R11 := "GAMEPAD_START"
 1446 [-]: SETTABLE  R10 K248 R11 ; R10["Button"] := R11
-1447 [-]: LOADK     R11 9        ; R11 := 9.000000
+1447 [-]: CONST     R11 9        ; R11 := 9.000000
 1448 [-]: SETTABLE  R10 K250 R11 ; R10["AnchorIndex"] := R11
 1449 [-]: LOADK     R11 K263     ; R11 := "left"
 1450 [-]: SETTABLE  R10 K251 R11 ; R10["TextAlign"] := R11
 1451 [-]: SETTABLE  R10 K120 K253; R10["Platform"] := "ALL"
-1452 [-]: LOADBOOL  R11 1 0      ; R11 := true
+1452 [-]: LOADKB    R11 1 0      ; R11 := true
 1453 [-]: SETTABLE  R10 K63 R11  ; R10["ReadOnly"] := R11
 1454 [-]: NEWTABLE  R11 0 4      ; R11 := {}
 1455 [-]: LOADK     R12 K266     ; R12 := "GAMEPAD_R1"
 1456 [-]: SETTABLE  R11 K248 R12 ; R11["Button"] := R12
-1457 [-]: LOADK     R12 10       ; R12 := 10.000000
+1457 [-]: CONST     R12 10       ; R12 := 10.000000
 1458 [-]: SETTABLE  R11 K250 R12 ; R11["AnchorIndex"] := R12
 1459 [-]: LOADK     R12 K263     ; R12 := "left"
 1460 [-]: SETTABLE  R11 K251 R12 ; R11["TextAlign"] := R12
@@ -1471,7 +1471,7 @@
 1462 [-]: NEWTABLE  R12 0 4      ; R12 := {}
 1463 [-]: LOADK     R13 K267     ; R13 := "GAMEPAD_R2"
 1464 [-]: SETTABLE  R12 K248 R13 ; R12["Button"] := R13
-1465 [-]: LOADK     R13 11       ; R13 := 11.000000
+1465 [-]: CONST     R13 11       ; R13 := 11.000000
 1466 [-]: SETTABLE  R12 K250 R13 ; R12["AnchorIndex"] := R13
 1467 [-]: LOADK     R13 K263     ; R13 := "left"
 1468 [-]: SETTABLE  R12 K251 R13 ; R12["TextAlign"] := R13
@@ -1479,7 +1479,7 @@
 1470 [-]: NEWTABLE  R13 0 4      ; R13 := {}
 1471 [-]: LOADK     R14 K268     ; R14 := "GAMEPAD_TRIANGLE"
 1472 [-]: SETTABLE  R13 K248 R14 ; R13["Button"] := R14
-1473 [-]: LOADK     R14 12       ; R14 := 12.000000
+1473 [-]: CONST     R14 12       ; R14 := 12.000000
 1474 [-]: SETTABLE  R13 K250 R14 ; R13["AnchorIndex"] := R14
 1475 [-]: LOADK     R14 K263     ; R14 := "left"
 1476 [-]: SETTABLE  R13 K251 R14 ; R13["TextAlign"] := R14
@@ -1487,7 +1487,7 @@
 1478 [-]: NEWTABLE  R14 0 4      ; R14 := {}
 1479 [-]: LOADK     R15 K269     ; R15 := "GAMEPAD_CIRCLE"
 1480 [-]: SETTABLE  R14 K248 R15 ; R14["Button"] := R15
-1481 [-]: LOADK     R15 13       ; R15 := 13.000000
+1481 [-]: CONST     R15 13       ; R15 := 13.000000
 1482 [-]: SETTABLE  R14 K250 R15 ; R14["AnchorIndex"] := R15
 1483 [-]: LOADK     R15 K263     ; R15 := "left"
 1484 [-]: SETTABLE  R14 K251 R15 ; R14["TextAlign"] := R15
@@ -1495,7 +1495,7 @@
 1486 [-]: NEWTABLE  R15 0 4      ; R15 := {}
 1487 [-]: LOADK     R16 K270     ; R16 := "GAMEPAD_X"
 1488 [-]: SETTABLE  R15 K248 R16 ; R15["Button"] := R16
-1489 [-]: LOADK     R16 14       ; R16 := 14.000000
+1489 [-]: CONST     R16 14       ; R16 := 14.000000
 1490 [-]: SETTABLE  R15 K250 R16 ; R15["AnchorIndex"] := R16
 1491 [-]: LOADK     R16 K263     ; R16 := "left"
 1492 [-]: SETTABLE  R15 K251 R16 ; R15["TextAlign"] := R16
@@ -1503,7 +1503,7 @@
 1494 [-]: NEWTABLE  R16 0 4      ; R16 := {}
 1495 [-]: LOADK     R17 K271     ; R17 := "GAMEPAD_SQUARE"
 1496 [-]: SETTABLE  R16 K248 R17 ; R16["Button"] := R17
-1497 [-]: LOADK     R17 15       ; R17 := 15.000000
+1497 [-]: CONST     R17 15       ; R17 := 15.000000
 1498 [-]: SETTABLE  R16 K250 R17 ; R16["AnchorIndex"] := R17
 1499 [-]: LOADK     R17 K263     ; R17 := "left"
 1500 [-]: SETTABLE  R16 K251 R17 ; R16["TextAlign"] := R17
@@ -1512,9 +1512,9 @@
 1503 [-]: LOADK     R18 K272     ; R18 := "GAMEPAD_RX"
 1504 [-]: SETTABLE  R17 K248 R18 ; R17["Button"] := R18
 1505 [-]: LOADK     R18 K260     ; R18 := "IsStick"
-1506 [-]: LOADBOOL  R19 1 0      ; R19 := true
+1506 [-]: LOADKB    R19 1 0      ; R19 := true
 1507 [-]: SETTABLE  R17 R18 R19  ; R17[R18] := R19
-1508 [-]: LOADK     R18 16       ; R18 := 16.000000
+1508 [-]: CONST     R18 16       ; R18 := 16.000000
 1509 [-]: SETTABLE  R17 K250 R18 ; R17["AnchorIndex"] := R18
 1510 [-]: LOADK     R18 K263     ; R18 := "left"
 1511 [-]: SETTABLE  R17 K251 R18 ; R17["TextAlign"] := R18
@@ -1522,7 +1522,7 @@
 1513 [-]: NEWTABLE  R18 0 4      ; R18 := {}
 1514 [-]: LOADK     R19 K273     ; R19 := "GAMEPAD_RTHUMB"
 1515 [-]: SETTABLE  R18 K248 R19 ; R18["Button"] := R19
-1516 [-]: LOADK     R19 17       ; R19 := 17.000000
+1516 [-]: CONST     R19 17       ; R19 := 17.000000
 1517 [-]: SETTABLE  R18 K250 R19 ; R18["AnchorIndex"] := R19
 1518 [-]: LOADK     R19 K263     ; R19 := "left"
 1519 [-]: SETTABLE  R18 K251 R19 ; R18["TextAlign"] := R19
@@ -1533,19 +1533,19 @@
 1524 [-]: NEWTABLE  R1 0 4       ; R1 := {}
 1525 [-]: LOADK     R2 K264      ; R2 := "GAMEPAD_SELECT"
 1526 [-]: SETTABLE  R1 K248 R2   ; R1["Button"] := R2
-1527 [-]: LOADK     R2 3         ; R2 := 3.000000
+1527 [-]: CONST     R2 3         ; R2 := 3.000000
 1528 [-]: SETTABLE  R1 K250 R2   ; R1["AnchorIndex"] := R2
 1529 [-]: SETTABLE  R1 K251 K252 ; R1["TextAlign"] := "right"
 1530 [-]: SETTABLE  R1 K120 K253 ; R1["Platform"] := "ALL"
 1531 [-]: NEWTABLE  R2 0 4       ; R2 := {}
 1532 [-]: SETTABLE  R2 K248 K249 ; R2["Button"] := "GAMEPAD_L1"
-1533 [-]: LOADK     R3 1         ; R3 := 1.000000
+1533 [-]: CONST     R3 1         ; R3 := 1.000000
 1534 [-]: SETTABLE  R2 K250 R3   ; R2["AnchorIndex"] := R3
 1535 [-]: SETTABLE  R2 K251 K252 ; R2["TextAlign"] := "right"
 1536 [-]: SETTABLE  R2 K120 K253 ; R2["Platform"] := "ALL"
 1537 [-]: NEWTABLE  R3 0 4       ; R3 := {}
 1538 [-]: SETTABLE  R3 K248 K254 ; R3["Button"] := "GAMEPAD_L2"
-1539 [-]: LOADK     R4 2         ; R4 := 2.000000
+1539 [-]: CONST     R4 2         ; R4 := 2.000000
 1540 [-]: SETTABLE  R3 K250 R4   ; R3["AnchorIndex"] := R4
 1541 [-]: SETTABLE  R3 K251 K252 ; R3["TextAlign"] := "right"
 1542 [-]: SETTABLE  R3 K120 K253 ; R3["Platform"] := "ALL"
@@ -1553,60 +1553,60 @@
 1544 [-]: LOADK     R5 K259      ; R5 := "GAMEPAD_LX"
 1545 [-]: SETTABLE  R4 K248 R5   ; R4["Button"] := R5
 1546 [-]: LOADK     R5 K260      ; R5 := "IsStick"
-1547 [-]: LOADBOOL  R6 1 0       ; R6 := true
+1547 [-]: LOADKB    R6 1 0       ; R6 := true
 1548 [-]: SETTABLE  R4 R5 R6     ; R4[R5] := R6
-1549 [-]: LOADK     R5 4         ; R5 := 4.000000
+1549 [-]: CONST     R5 4         ; R5 := 4.000000
 1550 [-]: SETTABLE  R4 K250 R5   ; R4["AnchorIndex"] := R5
 1551 [-]: SETTABLE  R4 K251 K252 ; R4["TextAlign"] := "right"
 1552 [-]: SETTABLE  R4 K120 K253 ; R4["Platform"] := "ALL"
 1553 [-]: NEWTABLE  R5 0 4       ; R5 := {}
 1554 [-]: LOADK     R6 K261      ; R6 := "GAMEPAD_LTHUMB"
 1555 [-]: SETTABLE  R5 K248 R6   ; R5["Button"] := R6
-1556 [-]: LOADK     R6 5         ; R6 := 5.000000
+1556 [-]: CONST     R6 5         ; R6 := 5.000000
 1557 [-]: SETTABLE  R5 K250 R6   ; R5["AnchorIndex"] := R6
 1558 [-]: SETTABLE  R5 K251 K252 ; R5["TextAlign"] := "right"
 1559 [-]: SETTABLE  R5 K120 K253 ; R5["Platform"] := "ALL"
 1560 [-]: NEWTABLE  R6 0 4       ; R6 := {}
 1561 [-]: SETTABLE  R6 K248 K255 ; R6["Button"] := "GAMEPAD_UP"
-1562 [-]: LOADK     R7 6         ; R7 := 6.000000
+1562 [-]: CONST     R7 6         ; R7 := 6.000000
 1563 [-]: SETTABLE  R6 K250 R7   ; R6["AnchorIndex"] := R7
 1564 [-]: SETTABLE  R6 K251 K252 ; R6["TextAlign"] := "right"
 1565 [-]: SETTABLE  R6 K120 K253 ; R6["Platform"] := "ALL"
 1566 [-]: NEWTABLE  R7 0 4       ; R7 := {}
 1567 [-]: LOADK     R8 K256      ; R8 := "GAMEPAD_LEFT"
 1568 [-]: SETTABLE  R7 K248 R8   ; R7["Button"] := R8
-1569 [-]: LOADK     R8 7         ; R8 := 7.000000
+1569 [-]: CONST     R8 7         ; R8 := 7.000000
 1570 [-]: SETTABLE  R7 K250 R8   ; R7["AnchorIndex"] := R8
 1571 [-]: SETTABLE  R7 K251 K252 ; R7["TextAlign"] := "right"
 1572 [-]: SETTABLE  R7 K120 K253 ; R7["Platform"] := "ALL"
 1573 [-]: NEWTABLE  R8 0 4       ; R8 := {}
 1574 [-]: LOADK     R9 K257      ; R9 := "GAMEPAD_DOWN"
 1575 [-]: SETTABLE  R8 K248 R9   ; R8["Button"] := R9
-1576 [-]: LOADK     R9 8         ; R9 := 8.000000
+1576 [-]: CONST     R9 8         ; R9 := 8.000000
 1577 [-]: SETTABLE  R8 K250 R9   ; R8["AnchorIndex"] := R9
 1578 [-]: SETTABLE  R8 K251 K252 ; R8["TextAlign"] := "right"
 1579 [-]: SETTABLE  R8 K120 K253 ; R8["Platform"] := "ALL"
 1580 [-]: NEWTABLE  R9 0 4       ; R9 := {}
 1581 [-]: LOADK     R10 K258     ; R10 := "GAMEPAD_RIGHT"
 1582 [-]: SETTABLE  R9 K248 R10  ; R9["Button"] := R10
-1583 [-]: LOADK     R10 9        ; R10 := 9.000000
+1583 [-]: CONST     R10 9        ; R10 := 9.000000
 1584 [-]: SETTABLE  R9 K250 R10  ; R9["AnchorIndex"] := R10
 1585 [-]: SETTABLE  R9 K251 K252 ; R9["TextAlign"] := "right"
 1586 [-]: SETTABLE  R9 K120 K253 ; R9["Platform"] := "ALL"
 1587 [-]: NEWTABLE  R10 0 5      ; R10 := {}
 1588 [-]: LOADK     R11 K262     ; R11 := "GAMEPAD_START"
 1589 [-]: SETTABLE  R10 K248 R11 ; R10["Button"] := R11
-1590 [-]: LOADK     R11 13       ; R11 := 13.000000
+1590 [-]: CONST     R11 13       ; R11 := 13.000000
 1591 [-]: SETTABLE  R10 K250 R11 ; R10["AnchorIndex"] := R11
 1592 [-]: LOADK     R11 K263     ; R11 := "left"
 1593 [-]: SETTABLE  R10 K251 R11 ; R10["TextAlign"] := R11
 1594 [-]: SETTABLE  R10 K120 K253; R10["Platform"] := "ALL"
-1595 [-]: LOADBOOL  R11 1 0      ; R11 := true
+1595 [-]: LOADKB    R11 1 0      ; R11 := true
 1596 [-]: SETTABLE  R10 K63 R11  ; R10["ReadOnly"] := R11
 1597 [-]: NEWTABLE  R11 0 4      ; R11 := {}
 1598 [-]: LOADK     R12 K266     ; R12 := "GAMEPAD_R1"
 1599 [-]: SETTABLE  R11 K248 R12 ; R11["Button"] := R12
-1600 [-]: LOADK     R12 11       ; R12 := 11.000000
+1600 [-]: CONST     R12 11       ; R12 := 11.000000
 1601 [-]: SETTABLE  R11 K250 R12 ; R11["AnchorIndex"] := R12
 1602 [-]: LOADK     R12 K263     ; R12 := "left"
 1603 [-]: SETTABLE  R11 K251 R12 ; R11["TextAlign"] := R12
@@ -1614,7 +1614,7 @@
 1605 [-]: NEWTABLE  R12 0 4      ; R12 := {}
 1606 [-]: LOADK     R13 K267     ; R13 := "GAMEPAD_R2"
 1607 [-]: SETTABLE  R12 K248 R13 ; R12["Button"] := R13
-1608 [-]: LOADK     R13 12       ; R13 := 12.000000
+1608 [-]: CONST     R13 12       ; R13 := 12.000000
 1609 [-]: SETTABLE  R12 K250 R13 ; R12["AnchorIndex"] := R13
 1610 [-]: LOADK     R13 K263     ; R13 := "left"
 1611 [-]: SETTABLE  R12 K251 R13 ; R12["TextAlign"] := R13
@@ -1622,7 +1622,7 @@
 1613 [-]: NEWTABLE  R13 0 4      ; R13 := {}
 1614 [-]: LOADK     R14 K268     ; R14 := "GAMEPAD_TRIANGLE"
 1615 [-]: SETTABLE  R13 K248 R14 ; R13["Button"] := R14
-1616 [-]: LOADK     R14 14       ; R14 := 14.000000
+1616 [-]: CONST     R14 14       ; R14 := 14.000000
 1617 [-]: SETTABLE  R13 K250 R14 ; R13["AnchorIndex"] := R14
 1618 [-]: LOADK     R14 K263     ; R14 := "left"
 1619 [-]: SETTABLE  R13 K251 R14 ; R13["TextAlign"] := R14
@@ -1630,7 +1630,7 @@
 1621 [-]: NEWTABLE  R14 0 4      ; R14 := {}
 1622 [-]: LOADK     R15 K269     ; R15 := "GAMEPAD_CIRCLE"
 1623 [-]: SETTABLE  R14 K248 R15 ; R14["Button"] := R15
-1624 [-]: LOADK     R15 15       ; R15 := 15.000000
+1624 [-]: CONST     R15 15       ; R15 := 15.000000
 1625 [-]: SETTABLE  R14 K250 R15 ; R14["AnchorIndex"] := R15
 1626 [-]: LOADK     R15 K263     ; R15 := "left"
 1627 [-]: SETTABLE  R14 K251 R15 ; R14["TextAlign"] := R15
@@ -1638,7 +1638,7 @@
 1629 [-]: NEWTABLE  R15 0 4      ; R15 := {}
 1630 [-]: LOADK     R16 K270     ; R16 := "GAMEPAD_X"
 1631 [-]: SETTABLE  R15 K248 R16 ; R15["Button"] := R16
-1632 [-]: LOADK     R16 16       ; R16 := 16.000000
+1632 [-]: CONST     R16 16       ; R16 := 16.000000
 1633 [-]: SETTABLE  R15 K250 R16 ; R15["AnchorIndex"] := R16
 1634 [-]: LOADK     R16 K263     ; R16 := "left"
 1635 [-]: SETTABLE  R15 K251 R16 ; R15["TextAlign"] := R16
@@ -1646,7 +1646,7 @@
 1637 [-]: NEWTABLE  R16 0 4      ; R16 := {}
 1638 [-]: LOADK     R17 K271     ; R17 := "GAMEPAD_SQUARE"
 1639 [-]: SETTABLE  R16 K248 R17 ; R16["Button"] := R17
-1640 [-]: LOADK     R17 17       ; R17 := 17.000000
+1640 [-]: CONST     R17 17       ; R17 := 17.000000
 1641 [-]: SETTABLE  R16 K250 R17 ; R16["AnchorIndex"] := R17
 1642 [-]: LOADK     R17 K263     ; R17 := "left"
 1643 [-]: SETTABLE  R16 K251 R17 ; R16["TextAlign"] := R17
@@ -1655,9 +1655,9 @@
 1646 [-]: LOADK     R18 K272     ; R18 := "GAMEPAD_RX"
 1647 [-]: SETTABLE  R17 K248 R18 ; R17["Button"] := R18
 1648 [-]: LOADK     R18 K260     ; R18 := "IsStick"
-1649 [-]: LOADBOOL  R19 1 0      ; R19 := true
+1649 [-]: LOADKB    R19 1 0      ; R19 := true
 1650 [-]: SETTABLE  R17 R18 R19  ; R17[R18] := R19
-1651 [-]: LOADK     R18 18       ; R18 := 18.000000
+1651 [-]: CONST     R18 18       ; R18 := 18.000000
 1652 [-]: SETTABLE  R17 K250 R18 ; R17["AnchorIndex"] := R18
 1653 [-]: LOADK     R18 K263     ; R18 := "left"
 1654 [-]: SETTABLE  R17 K251 R18 ; R17["TextAlign"] := R18
@@ -1665,7 +1665,7 @@
 1656 [-]: NEWTABLE  R18 0 4      ; R18 := {}
 1657 [-]: LOADK     R19 K273     ; R19 := "GAMEPAD_RTHUMB"
 1658 [-]: SETTABLE  R18 K248 R19 ; R18["Button"] := R19
-1659 [-]: LOADK     R19 19       ; R19 := 19.000000
+1659 [-]: CONST     R19 19       ; R19 := 19.000000
 1660 [-]: SETTABLE  R18 K250 R19 ; R18["AnchorIndex"] := R19
 1661 [-]: LOADK     R19 K263     ; R19 := "left"
 1662 [-]: SETTABLE  R18 K251 R19 ; R18["TextAlign"] := R19
@@ -1797,9 +1797,9 @@
  12 [-]: MOVE      R6 R8        ; R6 := R8
  13 [-]: EQ        0 R7 K3      ; if R7 ~= 0.000000 then PC := 17
  14 [-]: JMP       17           ; PC := 17
- 15 [-]: LOADBOOL  R8 0 0       ; R8 := false
+ 15 [-]: LOADKB    R8 0 0       ; R8 := false
  16 [-]: RETURN    R8 2         ; return R8
- 17 [-]: LOADBOOL  R2 1 0       ; R2 := true
+ 17 [-]: LOADKB    R2 1 0       ; R2 := true
  18 [-]: LOADNIL   R8 R8        ; R8 := nil
  19 [-]: SELF      R9 R1 K0     ; R10 := R1; R9 := R1[0x66edf04f]
  20 [-]: LOADK     R11 K6       ; R11 := "_([LR])X"
@@ -1810,8 +1810,8 @@
  25 [-]: GETGLOBAL R9 K8        ; R9 := 0x60cce7b4
  26 [-]: EQ        0 R7 K3      ; if R7 ~= 0.000000 then PC := 29
  27 [-]: JMP       29           ; PC := 29
- 28 [-]: LOADBOOL  R10 0 1      ; R10 := false; PC := 29
- 29 [-]: LOADBOOL  R10 1 0      ; R10 := true
+ 28 [-]: LOADKB    R10 0 1      ; R10 := false; PC := 29
+ 29 [-]: LOADKB    R10 1 0      ; R10 := true
  30 [-]: CALL      R9 2 1       ; R9(R10)
  31 [-]: SELF      R9 R5 K9     ; R10 := R5; R9 := R5[0x17f38ff3]
  32 [-]: MOVE      R11 R6       ; R11 := R6
@@ -1827,7 +1827,7 @@
  42 [-]: MOVE      R14 R3       ; R14 := R3
  43 [-]: MOVE      R15 R4       ; R15 := R4
  44 [-]: CALL      R9 7 1       ; R9(R10,R11,R12,R13,R14,R15)
- 45 [-]: LOADBOOL  R9 1 0       ; R9 := true
+ 45 [-]: LOADKB    R9 1 0       ; R9 := true
  46 [-]: RETURN    R9 2         ; return R9
  47 [-]: RETURN    R0 1         ; return 
 
@@ -1861,20 +1861,20 @@
  18 [-]: GETUPVAL  R7 U0        ; R7 := U0
  19 [-]: CALL      R7 1 2       ; R7 := R7()
  20 [-]: LOADNIL   R8 R11       ; R8 := R9 := R10 := R11 := nil
- 21 [-]: LOADBOOL  R12 1 0      ; R12 := true
- 22 [-]: LOADBOOL  R13 1 0      ; R13 := true
- 23 [-]: LOADK     R14 1        ; R14 := 1.000000
+ 21 [-]: LOADKB    R12 1 0      ; R12 := true
+ 22 [-]: LOADKB    R13 1 0      ; R13 := true
+ 23 [-]: CONST     R14 1        ; R14 := 1.000000
  24 [-]: LEN       R15 R6       ; R15 := # R6
- 25 [-]: LOADK     R16 1        ; R16 := 1.000000
+ 25 [-]: CONST     R16 1        ; R16 := 1.000000
  26 [-]: FORPREP   R14 58       ; R14 -= R16; PC := 58
  27 [-]: GETTABLE  R8 R6 R17    ; R8 := R6[R17]
  28 [-]: GETTABLE  R10 R8 K6    ; R10 := R8["Action"]
  29 [-]: GETTABLE  R18 R8 K7    ; R18 := R8["Invert"]
  30 [-]: EQ        1 R18 K8     ; if R18 == true then PC := 33
  31 [-]: JMP       33           ; PC := 33
- 32 [-]: LOADBOOL  R11 0 1      ; R11 := false; PC := 33
- 33 [-]: LOADBOOL  R11 1 0      ; R11 := true
- 34 [-]: NOT       R13 R4       ; R13 := not R4
+ 32 [-]: LOADKB    R11 0 1      ; R11 := false; PC := 33
+ 33 [-]: LOADKB    R11 1 0      ; R11 := true
+ 34 [-]: NOT       R13 R4       ; R13 :=  R4
  35 [-]: GETGLOBAL R18 K9       ; R18 := 0xcfc01047
  36 [-]: MOVE      R19 R5       ; R19 := R5
  37 [-]: CALL      R18 2 4      ; R18,R19,R20 := R18(R19)
@@ -1899,23 +1899,23 @@
  56 [-]: MOVE      R30 R12      ; R30 := R12
  57 [-]: CALL      R23 8 1      ; R23(R24,R25,R26,R27,R28,R29,R30)
  58 [-]: FORLOOP   R14 27       ; R14 += R16; if R14 <= R15 then begin PC := 27; R17 := R14 end
- 59 [-]: LOADK     R23 1        ; R23 := 1.000000
+ 59 [-]: CONST     R23 1        ; R23 := 1.000000
  60 [-]: LEN       R24 R7       ; R24 := # R7
- 61 [-]: LOADK     R25 1        ; R25 := 1.000000
+ 61 [-]: CONST     R25 1        ; R25 := 1.000000
  62 [-]: FORPREP   R23 111      ; R23 -= R25; PC := 111
  63 [-]: GETTABLE  R27 R7 R26   ; R27 := R7[R26]
  64 [-]: GETTABLE  R9 R27 K13   ; R9 := R27["Button"]
- 65 [-]: LOADK     R27 1        ; R27 := 1.000000
+ 65 [-]: CONST     R27 1        ; R27 := 1.000000
  66 [-]: LEN       R28 R6       ; R28 := # R6
- 67 [-]: LOADK     R29 1        ; R29 := 1.000000
+ 67 [-]: CONST     R29 1        ; R29 := 1.000000
  68 [-]: FORPREP   R27 110      ; R27 -= R29; PC := 110
  69 [-]: GETTABLE  R8 R6 R30    ; R8 := R6[R30]
  70 [-]: GETTABLE  R10 R8 K6    ; R10 := R8["Action"]
  71 [-]: GETTABLE  R31 R8 K7    ; R31 := R8["Invert"]
  72 [-]: EQ        1 R31 K8     ; if R31 == true then PC := 75
  73 [-]: JMP       75           ; PC := 75
- 74 [-]: LOADBOOL  R11 0 1      ; R11 := false; PC := 75
- 75 [-]: LOADBOOL  R11 1 0      ; R11 := true
+ 74 [-]: LOADKB    R11 0 1      ; R11 := false; PC := 75
+ 75 [-]: LOADKB    R11 1 0      ; R11 := true
  76 [-]: GETGLOBAL R31 K14      ; R31 := 0x9ba7909f
  77 [-]: SELF      R31 R31 K15  ; R32 := R31; R31 := R31[0xa50d1a6a]
  78 [-]: MOVE      R33 R10      ; R33 := R10
@@ -1925,7 +1925,7 @@
  82 [-]: CALL      R31 6 2      ; R31 := R31(R32,R33,R34,R35,R36)
  83 [-]: EQ        0 R9 R31     ; if R9 ~= R31 then PC := 110
  84 [-]: JMP       110          ; PC := 110
- 85 [-]: NOT       R13 R4       ; R13 := not R4
+ 85 [-]: NOT       R13 R4       ; R13 :=  R4
  86 [-]: GETGLOBAL R31 K9       ; R31 := 0xcfc01047
  87 [-]: MOVE      R32 R5       ; R32 := R5
  88 [-]: CALL      R31 2 4      ; R31,R32,R33 := R31(R32)
@@ -1972,9 +1972,9 @@
   6 [-]: GETTABLE  R3 R3 K4     ; R3 := R3["GENERAL"]
   7 [-]: GETTABLE  R2 R2 R3     ; R2 := R2[R3]
   8 [-]: LOADNIL   R3 R6        ; R3 := R4 := R5 := R6 := nil
-  9 [-]: LOADK     R7 1         ; R7 := 1.000000
+  9 [-]: CONST     R7 1         ; R7 := 1.000000
  10 [-]: LEN       R8 R2        ; R8 := # R2
- 11 [-]: LOADK     R9 1         ; R9 := 1.000000
+ 11 [-]: CONST     R9 1         ; R9 := 1.000000
  12 [-]: FORPREP   R7 58        ; R7 -= R9; PC := 58
  13 [-]: GETTABLE  R3 R2 R10    ; R3 := R2[R10]
  14 [-]: GETTABLE  R4 R3 K5     ; R4 := R3["Action"]
@@ -1988,8 +1988,8 @@
  22 [-]: GETTABLE  R14 R3 K9    ; R14 := R3["Invert"]
  23 [-]: EQ        1 R14 K10    ; if R14 == true then PC := 26
  24 [-]: JMP       26           ; PC := 26
- 25 [-]: LOADBOOL  R14 0 1      ; R14 := false; PC := 26
- 26 [-]: LOADBOOL  R14 1 0      ; R14 := true
+ 25 [-]: LOADKB    R14 0 1      ; R14 := false; PC := 26
+ 26 [-]: LOADKB    R14 1 0      ; R14 := true
  27 [-]: MOVE      R15 R1       ; R15 := R1
  28 [-]: GETGLOBAL R16 K11      ; R16 := defaultFilter
  29 [-]: CALL      R11 6 2      ; R11 := R11(R12,R13,R14,R15,R16)
@@ -2010,8 +2010,8 @@
  44 [-]: GETTABLE  R14 R3 K9    ; R14 := R3["Invert"]
  45 [-]: EQ        1 R14 K10    ; if R14 == true then PC := 48
  46 [-]: JMP       48           ; PC := 48
- 47 [-]: LOADBOOL  R14 0 1      ; R14 := false; PC := 48
- 48 [-]: LOADBOOL  R14 1 0      ; R14 := true
+ 47 [-]: LOADKB    R14 0 1      ; R14 := false; PC := 48
+ 48 [-]: LOADKB    R14 1 0      ; R14 := true
  49 [-]: MOVE      R15 R1       ; R15 := R1
  50 [-]: GETGLOBAL R16 K14      ; R16 := archwingFilter
  51 [-]: CALL      R11 6 2      ; R11 := R11(R12,R13,R14,R15,R16)
@@ -2067,9 +2067,9 @@
 101 [-]: GETGLOBAL R11 K0       ; R11 := 0x3d106989
 102 [-]: LOADK     R12 K22      ; R12 := "-Rebinding MOVE_Y"
 103 [-]: CALL      R11 2 1      ; R11(R12)
-104 [-]: LOADK     R11 1        ; R11 := 1.000000
+104 [-]: CONST     R11 1        ; R11 := 1.000000
 105 [-]: LEN       R12 R2       ; R12 := # R2
-106 [-]: LOADK     R13 1        ; R13 := 1.000000
+106 [-]: CONST     R13 1        ; R13 := 1.000000
 107 [-]: FORPREP   R11 135      ; R11 -= R13; PC := 135
 108 [-]: GETTABLE  R3 R2 R14    ; R3 := R2[R14]
 109 [-]: GETTABLE  R4 R3 K5     ; R4 := R3["Action"]
@@ -2081,8 +2081,8 @@
 115 [-]: GETTABLE  R15 R3 K9    ; R15 := R3["Invert"]
 116 [-]: EQ        1 R15 K10    ; if R15 == true then PC := 119
 117 [-]: JMP       119          ; PC := 119
-118 [-]: LOADBOOL  R15 0 1      ; R15 := false; PC := 119
-119 [-]: LOADBOOL  R15 1 0      ; R15 := true
+118 [-]: LOADKB    R15 0 1      ; R15 := false; PC := 119
+119 [-]: LOADKB    R15 1 0      ; R15 := true
 120 [-]: SELF      R16 R0 K23   ; R17 := R0; R16 := R0[0x17f38ff3]
 121 [-]: MOVE      R18 R4       ; R18 := R4
 122 [-]: LOADK     R19 K24      ; R19 := "unused"
@@ -2122,9 +2122,9 @@
   9 [-]: SELF      R3 R3 K6     ; R4 := R3; R3 := R3[0xaa3c124f]
  10 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  11 [-]: LOADNIL   R4 R6        ; R4 := R5 := R6 := nil
- 12 [-]: LOADK     R7 1         ; R7 := 1.000000
+ 12 [-]: CONST     R7 1         ; R7 := 1.000000
  13 [-]: LEN       R8 R2        ; R8 := # R2
- 14 [-]: LOADK     R9 1         ; R9 := 1.000000
+ 14 [-]: CONST     R9 1         ; R9 := 1.000000
  15 [-]: FORPREP   R7 58        ; R7 -= R9; PC := 58
  16 [-]: GETTABLE  R5 R2 R10    ; R5 := R2[R10]
  17 [-]: GETTABLE  R6 R5 K7     ; R6 := R5["Action"]
@@ -2136,8 +2136,8 @@
  23 [-]: GETTABLE  R11 R5 K10   ; R11 := R5["Invert"]
  24 [-]: EQ        1 R11 K11    ; if R11 == true then PC := 27
  25 [-]: JMP       27           ; PC := 27
- 26 [-]: LOADBOOL  R11 0 1      ; R11 := false; PC := 27
- 27 [-]: LOADBOOL  R11 1 0      ; R11 := true
+ 26 [-]: LOADKB    R11 0 1      ; R11 := false; PC := 27
+ 27 [-]: LOADKB    R11 1 0      ; R11 := true
  28 [-]: SELF      R12 R0 K12   ; R13 := R0; R12 := R0[0x8fa32637]
  29 [-]: LOADK     R14 K9       ; R14 := "MOVE_Y"
  30 [-]: MOVE      R15 R11      ; R15 := R11
@@ -2183,7 +2183,7 @@
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x76ea806b
   2 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0x3f3ae64c]
-  3 [-]: LOADK     R2 0         ; R2 := 0.000000
+  3 [-]: CONST     R2 0         ; R2 := 0.000000
   4 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
   5 [-]: GETGLOBAL R1 K2        ; R1 := 0x7b998233
   6 [-]: MOVE      R2 R0        ; R2 := R0
@@ -2202,8 +2202,8 @@
  19 [-]: CLOSURE   R5 0         ; R5 := closure(Function #7.1)
  20 [-]: MOVE      R0 R3        ; R0 := R3
  21 [-]: MOVE      R6 R5        ; R6 := R5
- 22 [-]: LOADK     R7 1         ; R7 := 1.000000
- 23 [-]: LOADK     R8 4         ; R8 := 4.000000
+ 22 [-]: CONST     R7 1         ; R7 := 1.000000
+ 23 [-]: CONST     R8 4         ; R8 := 4.000000
  24 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
  25 [-]: TEST      R6 0         ; if not R6 then PC := 38
  26 [-]: JMP       38           ; PC := 38
@@ -2213,13 +2213,13 @@
  30 [-]: GETGLOBAL R9 K7        ; R9 := SECTION_ID
  31 [-]: GETTABLE  R9 R9 K8     ; R9 := R9["PLACEMENT"]
  32 [-]: GETGLOBAL R10 K9       ; R10 := placementFilter
- 33 [-]: LOADBOOL  R11 0 0      ; R11 := false
+ 33 [-]: LOADKB    R11 0 0      ; R11 := false
  34 [-]: NEWTABLE  R12 0 2      ; R12 := {}
  35 [-]: SETTABLE  R12 K10 K11  ; R12["LOOK_X"] := true
  36 [-]: SETTABLE  R12 K12 K11  ; R12["MOVE_X"] := true
  37 [-]: CALL      R6 7 1       ; R6(R7,R8,R9,R10,R11,R12)
  38 [-]: MOVE      R6 R5        ; R6 := R5
- 39 [-]: LOADK     R7 8         ; R7 := 8.000000
+ 39 [-]: CONST     R7 8         ; R7 := 8.000000
  40 [-]: CALL      R6 2 2       ; R6 := R6(R7)
  41 [-]: TEST      R6 0         ; if not R6 then PC := 51
  42 [-]: JMP       51           ; PC := 51
@@ -2237,7 +2237,7 @@
  54 [-]: MOVE      R8 R3        ; R8 := R3
  55 [-]: CALL      R6 3 1       ; R6(R7,R8)
  56 [-]: SELF      R6 R1 K14    ; R7 := R1; R6 := R1[0x12cefdb8]
- 57 [-]: LOADBOOL  R8 0 0       ; R8 := false
+ 57 [-]: LOADKB    R8 0 0       ; R8 := false
  58 [-]: CALL      R6 3 1       ; R6(R7,R8)
  59 [-]: GETGLOBAL R6 K15       ; R6 := 0x9ba7909f
  60 [-]: SELF      R6 R6 K16    ; R7 := R6; R6 := R6[0xc3803d01]
@@ -2249,7 +2249,7 @@
  66 [-]: CALL      R6 3 1       ; R6(R7,R8)
  67 [-]: GETGLOBAL R6 K0        ; R6 := 0x76ea806b
  68 [-]: SELF      R6 R6 K20    ; R7 := R6; R6 := R6[0xe70a580a]
- 69 [-]: LOADK     R8 0         ; R8 := 0.000000
+ 69 [-]: CONST     R8 0         ; R8 := 0.000000
  70 [-]: LOADK     R9 K19       ; R9 := "OnProfileSaved"
  71 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
  72 [-]: RETURN    R0 1         ; return 
@@ -2278,9 +2278,9 @@
  12 [-]: LT        0 R2 R0      ; if R2 >= R0 then PC := 17
  13 [-]: JMP       17           ; PC := 17
  14 [-]: SETUPVAL  R0 U0        ; U82 := R0
- 15 [-]: LOADBOOL  R2 1 0       ; R2 := true
+ 15 [-]: LOADKB    R2 1 0       ; R2 := true
  16 [-]: RETURN    R2 2         ; return R2
- 17 [-]: LOADBOOL  R2 0 0       ; R2 := false
+ 17 [-]: LOADKB    R2 0 0       ; R2 := false
  18 [-]: RETURN    R2 2         ; return R2
  19 [-]: RETURN    R0 1         ; return 
 

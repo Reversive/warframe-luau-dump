@@ -13,8 +13,8 @@
   4 [-]: GETGLOBAL R1 K2        ; R1 := 0x0469f296
   5 [-]: LOADK     R2 K3        ; R2 := "TransmissionVolLight"
   6 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  7 [-]: LOADK     R2 0         ; R2 := 0.250000
-  8 [-]: LOADK     R3 30        ; R3 := 30.000000
+  7 [-]: CONST     R2 0         ; R2 := 0.250000
+  8 [-]: CONST     R3 30        ; R3 := 30.000000
   9 [-]: NEWTABLE  R4 1 0       ; R4 := {}
  10 [-]: GETGLOBAL R5 K2        ; R5 := 0x0469f296
  11 [-]: LOADK     R6 K4        ; R6 := "WarWithinFirstQueens"
@@ -66,10 +66,10 @@
  16 [-]: SELF      R1 R0 K7     ; R2 := R0; R1 := R0[0xef893aec]
  17 [-]: CALL      R1 2 2       ; R1 := R1(R2)
  18 [-]: GETTABLE  R1 R1 K8     ; R1 := R1["goalTag"]
- 19 [-]: LOADK     R2 1         ; R2 := 1.000000
+ 19 [-]: CONST     R2 1         ; R2 := 1.000000
  20 [-]: GETUPVAL  R3 U0        ; R3 := U0
  21 [-]: LEN       R3 R3        ; R3 := # R3
- 22 [-]: LOADK     R4 1         ; R4 := 1.000000
+ 22 [-]: CONST     R4 1         ; R4 := 1.000000
  23 [-]: FORPREP   R2 29        ; R2 -= R4; PC := 29
  24 [-]: GETUPVAL  R6 U0        ; R6 := U0
  25 [-]: GETTABLE  R6 R6 R5     ; R6 := R6[R5]
@@ -89,8 +89,8 @@
  39 [-]: GETGLOBAL R7 K0        ; R7 := _T
  40 [-]: SETTABLE  R7 K1 R6     ; R7["lastWormQueenAnnouncementTime"] := R6
  41 [-]: GETGLOBAL R7 K10       ; R7 := 0xdd6e4cf8
- 42 [-]: LOADK     R8 0         ; R8 := 0.000000
- 43 [-]: LOADK     R9 1         ; R9 := 1.000000
+ 42 [-]: CONST     R8 0         ; R8 := 0.000000
+ 43 [-]: CONST     R9 1         ; R9 := 1.000000
  44 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
  45 [-]: GETUPVAL  R8 U2        ; R8 := U2
  46 [-]: LT        0 R8 R7      ; if R8 >= R7 then PC := 49
@@ -134,18 +134,18 @@
  11 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  12 [-]: TEST      R2 0         ; if not R2 then PC := 23
  13 [-]: JMP       23           ; PC := 23
- 14 [-]: LOADK     R2 1         ; R2 := 1.000000
+ 14 [-]: CONST     R2 1         ; R2 := 1.000000
  15 [-]: LEN       R3 R0        ; R3 := # R0
- 16 [-]: LOADK     R4 1         ; R4 := 1.000000
+ 16 [-]: CONST     R4 1         ; R4 := 1.000000
  17 [-]: FORPREP   R2 22        ; R2 -= R4; PC := 22
  18 [-]: GETTABLE  R6 R0 R5     ; R6 := R0[R5]
  19 [-]: SELF      R6 R6 K4     ; R7 := R6; R6 := R6[0x51b28d4c]
- 20 [-]: LOADBOOL  R8 1 0       ; R8 := true
+ 20 [-]: LOADKB    R8 1 0       ; R8 := true
  21 [-]: CALL      R6 3 1       ; R6(R7,R8)
  22 [-]: FORLOOP   R2 18        ; R2 += R4; if R2 <= R3 then begin PC := 18; R5 := R2 end
- 23 [-]: LOADK     R6 1         ; R6 := 1.000000
+ 23 [-]: CONST     R6 1         ; R6 := 1.000000
  24 [-]: LEN       R7 R1        ; R7 := # R1
- 25 [-]: LOADK     R8 1         ; R8 := 1.000000
+ 25 [-]: CONST     R8 1         ; R8 := 1.000000
  26 [-]: FORPREP   R6 31        ; R6 -= R8; PC := 31
  27 [-]: GETTABLE  R10 R1 R9    ; R10 := R1[R9]
  28 [-]: SELF      R10 R10 K5   ; R11 := R10; R10 := R10[0xff96af09]
@@ -177,18 +177,18 @@
  11 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  12 [-]: TEST      R2 0         ; if not R2 then PC := 23
  13 [-]: JMP       23           ; PC := 23
- 14 [-]: LOADK     R2 1         ; R2 := 1.000000
+ 14 [-]: CONST     R2 1         ; R2 := 1.000000
  15 [-]: LEN       R3 R0        ; R3 := # R0
- 16 [-]: LOADK     R4 1         ; R4 := 1.000000
+ 16 [-]: CONST     R4 1         ; R4 := 1.000000
  17 [-]: FORPREP   R2 22        ; R2 -= R4; PC := 22
  18 [-]: GETTABLE  R6 R0 R5     ; R6 := R0[R5]
  19 [-]: SELF      R6 R6 K4     ; R7 := R6; R6 := R6[0x51b28d4c]
- 20 [-]: LOADBOOL  R8 0 0       ; R8 := false
+ 20 [-]: LOADKB    R8 0 0       ; R8 := false
  21 [-]: CALL      R6 3 1       ; R6(R7,R8)
  22 [-]: FORLOOP   R2 18        ; R2 += R4; if R2 <= R3 then begin PC := 18; R5 := R2 end
- 23 [-]: LOADK     R6 1         ; R6 := 1.000000
+ 23 [-]: CONST     R6 1         ; R6 := 1.000000
  24 [-]: LEN       R7 R1        ; R7 := # R1
- 25 [-]: LOADK     R8 1         ; R8 := 1.000000
+ 25 [-]: CONST     R8 1         ; R8 := 1.000000
  26 [-]: FORPREP   R6 31        ; R6 -= R8; PC := 31
  27 [-]: GETTABLE  R10 R1 R9    ; R10 := R1[R9]
  28 [-]: SELF      R10 R10 K5   ; R11 := R10; R10 := R10[0xff96af09]

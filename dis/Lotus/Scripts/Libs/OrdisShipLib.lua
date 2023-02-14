@@ -50,9 +50,9 @@
   9 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  10 [-]: TEST      R3 1         ; if R3 then PC := 35
  11 [-]: JMP       35           ; PC := 35
- 12 [-]: LOADK     R3 1         ; R3 := 1.000000
+ 12 [-]: CONST     R3 1         ; R3 := 1.000000
  13 [-]: LEN       R4 R0        ; R4 := # R0
- 14 [-]: LOADK     R5 1         ; R5 := 1.000000
+ 14 [-]: CONST     R5 1         ; R5 := 1.000000
  15 [-]: FORPREP   R3 34        ; R3 -= R5; PC := 34
  16 [-]: GETGLOBAL R7 K4        ; R7 := 0x64fb1586
  17 [-]: GETTABLE  R8 R0 R6     ; R8 := R0[R6]
@@ -87,8 +87,8 @@
 ; Max Stack Size:  5
 
   1 [-]: SELF      R1 R0 K0     ; R2 := R0; R1 := R0[0x768274d6]
-  2 [-]: LOADBOOL  R3 1 0       ; R3 := true
-  3 [-]: LOADBOOL  R4 1 0       ; R4 := true
+  2 [-]: LOADKB    R3 1 0       ; R3 := true
+  3 [-]: LOADKB    R4 1 0       ; R4 := true
   4 [-]: CALL      R1 4 1       ; R1(R2,R3,R4)
   5 [-]: RETURN    R0 1         ; return 
 
@@ -103,8 +103,8 @@
 ; Max Stack Size:  5
 
   1 [-]: SELF      R1 R0 K0     ; R2 := R0; R1 := R0[0x768274d6]
-  2 [-]: LOADBOOL  R3 0 0       ; R3 := false
-  3 [-]: LOADBOOL  R4 1 0       ; R4 := true
+  2 [-]: LOADKB    R3 0 0       ; R3 := false
+  3 [-]: LOADKB    R4 1 0       ; R4 := true
   4 [-]: CALL      R1 4 1       ; R1(R2,R3,R4)
   5 [-]: RETURN    R0 1         ; return 
 
@@ -163,9 +163,9 @@
  28 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  29 [-]: LOADK     R6 K7        ; R6 := 100000.000000
  30 [-]: LOADNIL   R7 R7        ; R7 := nil
- 31 [-]: LOADK     R8 1         ; R8 := 1.000000
+ 31 [-]: CONST     R8 1         ; R8 := 1.000000
  32 [-]: LEN       R9 R4        ; R9 := # R4
- 33 [-]: LOADK     R10 1        ; R10 := 1.000000
+ 33 [-]: CONST     R10 1        ; R10 := 1.000000
  34 [-]: FORPREP   R8 46        ; R8 -= R10; PC := 46
  35 [-]: GETGLOBAL R12 K8       ; R12 := 0xae2294fa
  36 [-]: GETTABLE  R13 R4 R11   ; R13 := R4[R11]
@@ -217,7 +217,7 @@
  82 [-]: CALL      R13 2 1      ; R13(R14)
  83 [-]: GETGLOBAL R13 K16      ; R13 := 0x5bced4c4
  84 [-]: GETTABLE  R13 R13 K17  ; R13 := R13[0x3630e649]
- 85 [-]: LOADK     R14 1        ; R14 := 1.000000
+ 85 [-]: CONST     R14 1        ; R14 := 1.000000
  86 [-]: LEN       R15 R12      ; R15 := # R12
  87 [-]: CALL      R13 3 2      ; R13 := R13(R14,R15)
  88 [-]: GETTABLE  R13 R12 R13  ; R13 := R12[R13]

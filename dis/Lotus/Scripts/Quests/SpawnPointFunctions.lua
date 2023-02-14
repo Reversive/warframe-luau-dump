@@ -54,7 +54,7 @@
  31 [-]: GETGLOBAL R6 K9        ; R6 := 0x4e02a25c
  32 [-]: CALL      R2 5 2       ; R2 := R2(R3,R4,R5,R6)
  33 [-]: SELF      R3 R2 K10    ; R4 := R2; R3 := R2[0xa69ce1e5]
- 34 [-]: LOADBOOL  R5 0 0       ; R5 := false
+ 34 [-]: LOADKB    R5 0 0       ; R5 := false
  35 [-]: CALL      R3 3 1       ; R3(R4,R5)
  36 [-]: SELF      R3 R2 K11    ; R4 := R2; R3 := R2[0x53bc0559]
  37 [-]: GETGLOBAL R5 K12       ; R5 := 0x279900b1

@@ -17,366 +17,372 @@
   8 [-]: CALL      R0 2 2       ; R0 := R0(R1)
   9 [-]: NEWTABLE  R1 1 0       ; R1 := {}
  10 [-]: CLOSURE   R2 0         ; R2 := closure(Function #1)
- 11 [-]: SETLIST   R1 1 1       ; R1[(1-1)*FPF+i] := R(1+i), 1 <= i <= 1
- 12 [-]: NEWTABLE  R2 0 8       ; R2 := {}
- 13 [-]: NEWTABLE  R3 0 1       ; R3 := {}
- 14 [-]: SETTABLE  R3 K7 K8     ; R3["mLoc"] := "/Lotus/Language/Labels/AVATAR_HEALTH_MAX"
- 15 [-]: SETTABLE  R2 K6 R3     ; R2[64.000000] := R3
- 16 [-]: NEWTABLE  R3 0 1       ; R3 := {}
- 17 [-]: SETTABLE  R3 K7 K10    ; R3["mLoc"] := "/Lotus/Language/Labels/AVATAR_SHIELD_MAX"
- 18 [-]: SETTABLE  R2 K9 R3     ; R2[117.000000] := R3
- 19 [-]: NEWTABLE  R3 0 2       ; R3 := {}
- 20 [-]: SETTABLE  R3 K7 K12    ; R3["mLoc"] := "/Lotus/Language/Labels/WEAPON_DAMAGE_AMOUNT"
- 21 [-]: SETTABLE  R3 K13 K14   ; R3["mFormatting"] := 1.000000
- 22 [-]: SETTABLE  R2 K11 R3    ; R2[216.000000] := R3
- 23 [-]: NEWTABLE  R3 0 2       ; R3 := {}
- 24 [-]: SETTABLE  R3 K7 K16    ; R3["mLoc"] := "/Lotus/Language/Labels/AVATAR_ABILITY_EFFICIENCY"
- 25 [-]: SETTABLE  R3 K13 K14   ; R3["mFormatting"] := 1.000000
- 26 [-]: SETTABLE  R2 K15 R3    ; R2[351.000000] := R3
- 27 [-]: NEWTABLE  R3 0 2       ; R3 := {}
- 28 [-]: SETTABLE  R3 K7 K18    ; R3["mLoc"] := "/Lotus/Language/Labels/AVATAR_HEAL_RATE"
- 29 [-]: SETTABLE  R3 K13 K14   ; R3["mFormatting"] := 1.000000
- 30 [-]: SETTABLE  R2 K17 R3    ; R2[61.000000] := R3
- 31 [-]: NEWTABLE  R3 0 2       ; R3 := {}
- 32 [-]: SETTABLE  R3 K7 K20    ; R3["mLoc"] := "/Lotus/Language/Labels/AVATAR_MOVEMENT_SPEED"
- 33 [-]: SETTABLE  R3 K13 K14   ; R3["mFormatting"] := 1.000000
- 34 [-]: SETTABLE  R2 K19 R3    ; R2[79.000000] := R3
- 35 [-]: NEWTABLE  R3 0 2       ; R3 := {}
- 36 [-]: SETTABLE  R3 K7 K22    ; R3["mLoc"] := "/Lotus/Language/Labels/WEAPON_HEAT_GENERATION"
- 37 [-]: SETTABLE  R3 K13 K14   ; R3["mFormatting"] := 1.000000
- 38 [-]: SETTABLE  R2 K21 R3    ; R2[189.000000] := R3
- 39 [-]: NEWTABLE  R3 0 2       ; R3 := {}
- 40 [-]: SETTABLE  R3 K7 K24    ; R3["mLoc"] := "/Lotus/Language/Labels/WEAPON_SPREAD"
- 41 [-]: SETTABLE  R3 K13 K14   ; R3["mFormatting"] := 1.000000
- 42 [-]: SETTABLE  R2 K23 R3    ; R2[337.000000] := R3
- 43 [-]: LOADK     R3 5         ; R3 := 5.000000
- 44 [-]: NEWTABLE  R4 0 6       ; R4 := {}
- 45 [-]: NEWTABLE  R5 1 0       ; R5 := {}
- 46 [-]: NEWTABLE  R6 0 3       ; R6 := {}
- 47 [-]: SETTABLE  R6 K26 K19   ; R6["upgradeType"] := 79.000000
- 48 [-]: SETTABLE  R6 K27 K25   ; R6["value"] := 0.000000
- 49 [-]: SETTABLE  R6 K28 K30   ; R6["operationType"] := 2.000000
- 50 [-]: SETLIST   R5 1 1       ; R5[(1-1)*FPF+i] := R(5+i), 1 <= i <= 1
- 51 [-]: SETTABLE  R4 K25 R5    ; R4[0.000000] := R5
- 52 [-]: NEWTABLE  R5 1 0       ; R5 := {}
- 53 [-]: NEWTABLE  R6 0 3       ; R6 := {}
- 54 [-]: SETTABLE  R6 K26 K19   ; R6["upgradeType"] := 79.000000
- 55 [-]: SETTABLE  R6 K27 K31   ; R6["value"] := 0.050000
- 56 [-]: SETTABLE  R6 K28 K30   ; R6["operationType"] := 2.000000
- 57 [-]: SETLIST   R5 1 1       ; R5[(1-1)*FPF+i] := R(5+i), 1 <= i <= 1
- 58 [-]: SETTABLE  R4 K14 R5    ; R4[1.000000] := R5
- 59 [-]: NEWTABLE  R5 1 0       ; R5 := {}
- 60 [-]: NEWTABLE  R6 0 3       ; R6 := {}
- 61 [-]: SETTABLE  R6 K26 K19   ; R6["upgradeType"] := 79.000000
- 62 [-]: SETTABLE  R6 K27 K31   ; R6["value"] := 0.050000
- 63 [-]: SETTABLE  R6 K28 K30   ; R6["operationType"] := 2.000000
- 64 [-]: SETLIST   R5 1 1       ; R5[(1-1)*FPF+i] := R(5+i), 1 <= i <= 1
- 65 [-]: SETTABLE  R4 K30 R5    ; R4[2.000000] := R5
- 66 [-]: NEWTABLE  R5 1 0       ; R5 := {}
- 67 [-]: NEWTABLE  R6 0 3       ; R6 := {}
- 68 [-]: SETTABLE  R6 K26 K19   ; R6["upgradeType"] := 79.000000
- 69 [-]: SETTABLE  R6 K27 K31   ; R6["value"] := 0.050000
- 70 [-]: SETTABLE  R6 K28 K30   ; R6["operationType"] := 2.000000
- 71 [-]: SETLIST   R5 1 1       ; R5[(1-1)*FPF+i] := R(5+i), 1 <= i <= 1
- 72 [-]: SETTABLE  R4 K32 R5    ; R4[3.000000] := R5
- 73 [-]: NEWTABLE  R5 1 0       ; R5 := {}
- 74 [-]: NEWTABLE  R6 0 3       ; R6 := {}
- 75 [-]: SETTABLE  R6 K26 K19   ; R6["upgradeType"] := 79.000000
- 76 [-]: SETTABLE  R6 K27 K31   ; R6["value"] := 0.050000
- 77 [-]: SETTABLE  R6 K28 K30   ; R6["operationType"] := 2.000000
- 78 [-]: SETLIST   R5 1 1       ; R5[(1-1)*FPF+i] := R(5+i), 1 <= i <= 1
- 79 [-]: SETTABLE  R4 K33 R5    ; R4[4.000000] := R5
- 80 [-]: NEWTABLE  R5 1 0       ; R5 := {}
- 81 [-]: NEWTABLE  R6 0 3       ; R6 := {}
- 82 [-]: SETTABLE  R6 K26 K19   ; R6["upgradeType"] := 79.000000
- 83 [-]: SETTABLE  R6 K27 K31   ; R6["value"] := 0.050000
- 84 [-]: SETTABLE  R6 K28 K30   ; R6["operationType"] := 2.000000
- 85 [-]: SETLIST   R5 1 1       ; R5[(1-1)*FPF+i] := R(5+i), 1 <= i <= 1
- 86 [-]: SETTABLE  R4 K34 R5    ; R4[5.000000] := R5
- 87 [-]: NEWTABLE  R5 0 6       ; R5 := {}
- 88 [-]: NEWTABLE  R6 2 0       ; R6 := {}
- 89 [-]: NEWTABLE  R7 0 3       ; R7 := {}
- 90 [-]: SETTABLE  R7 K26 K21   ; R7["upgradeType"] := 189.000000
- 91 [-]: SETTABLE  R7 K27 K25   ; R7["value"] := 0.000000
- 92 [-]: SETTABLE  R7 K28 K30   ; R7["operationType"] := 2.000000
- 93 [-]: NEWTABLE  R8 0 3       ; R8 := {}
- 94 [-]: SETTABLE  R8 K26 K23   ; R8["upgradeType"] := 337.000000
- 95 [-]: SETTABLE  R8 K27 K25   ; R8["value"] := 0.000000
- 96 [-]: SETTABLE  R8 K28 K30   ; R8["operationType"] := 2.000000
- 97 [-]: SETLIST   R6 2 1       ; R6[(1-1)*FPF+i] := R(6+i), 1 <= i <= 2
- 98 [-]: SETTABLE  R5 K25 R6    ; R5[0.000000] := R6
- 99 [-]: NEWTABLE  R6 2 0       ; R6 := {}
-100 [-]: NEWTABLE  R7 0 3       ; R7 := {}
-101 [-]: SETTABLE  R7 K26 K21   ; R7["upgradeType"] := 189.000000
-102 [-]: SETTABLE  R7 K27 K35   ; R7["value"] := -0.100000
-103 [-]: SETTABLE  R7 K28 K30   ; R7["operationType"] := 2.000000
-104 [-]: NEWTABLE  R8 0 3       ; R8 := {}
-105 [-]: SETTABLE  R8 K26 K23   ; R8["upgradeType"] := 337.000000
-106 [-]: SETTABLE  R8 K27 K36   ; R8["value"] := 0.150000
-107 [-]: SETTABLE  R8 K28 K30   ; R8["operationType"] := 2.000000
-108 [-]: SETLIST   R6 2 1       ; R6[(1-1)*FPF+i] := R(6+i), 1 <= i <= 2
-109 [-]: SETTABLE  R5 K14 R6    ; R5[1.000000] := R6
-110 [-]: NEWTABLE  R6 2 0       ; R6 := {}
-111 [-]: NEWTABLE  R7 0 3       ; R7 := {}
-112 [-]: SETTABLE  R7 K26 K21   ; R7["upgradeType"] := 189.000000
-113 [-]: SETTABLE  R7 K27 K35   ; R7["value"] := -0.100000
-114 [-]: SETTABLE  R7 K28 K30   ; R7["operationType"] := 2.000000
-115 [-]: NEWTABLE  R8 0 3       ; R8 := {}
-116 [-]: SETTABLE  R8 K26 K23   ; R8["upgradeType"] := 337.000000
-117 [-]: SETTABLE  R8 K27 K36   ; R8["value"] := 0.150000
-118 [-]: SETTABLE  R8 K28 K30   ; R8["operationType"] := 2.000000
-119 [-]: SETLIST   R6 2 1       ; R6[(1-1)*FPF+i] := R(6+i), 1 <= i <= 2
-120 [-]: SETTABLE  R5 K30 R6    ; R5[2.000000] := R6
-121 [-]: NEWTABLE  R6 2 0       ; R6 := {}
-122 [-]: NEWTABLE  R7 0 3       ; R7 := {}
-123 [-]: SETTABLE  R7 K26 K21   ; R7["upgradeType"] := 189.000000
-124 [-]: SETTABLE  R7 K27 K35   ; R7["value"] := -0.100000
-125 [-]: SETTABLE  R7 K28 K30   ; R7["operationType"] := 2.000000
-126 [-]: NEWTABLE  R8 0 3       ; R8 := {}
-127 [-]: SETTABLE  R8 K26 K23   ; R8["upgradeType"] := 337.000000
-128 [-]: SETTABLE  R8 K27 K36   ; R8["value"] := 0.150000
-129 [-]: SETTABLE  R8 K28 K30   ; R8["operationType"] := 2.000000
-130 [-]: SETLIST   R6 2 1       ; R6[(1-1)*FPF+i] := R(6+i), 1 <= i <= 2
-131 [-]: SETTABLE  R5 K32 R6    ; R5[3.000000] := R6
-132 [-]: NEWTABLE  R6 2 0       ; R6 := {}
-133 [-]: NEWTABLE  R7 0 3       ; R7 := {}
-134 [-]: SETTABLE  R7 K26 K21   ; R7["upgradeType"] := 189.000000
-135 [-]: SETTABLE  R7 K27 K35   ; R7["value"] := -0.100000
-136 [-]: SETTABLE  R7 K28 K30   ; R7["operationType"] := 2.000000
-137 [-]: NEWTABLE  R8 0 3       ; R8 := {}
-138 [-]: SETTABLE  R8 K26 K23   ; R8["upgradeType"] := 337.000000
-139 [-]: SETTABLE  R8 K27 K36   ; R8["value"] := 0.150000
-140 [-]: SETTABLE  R8 K28 K30   ; R8["operationType"] := 2.000000
-141 [-]: SETLIST   R6 2 1       ; R6[(1-1)*FPF+i] := R(6+i), 1 <= i <= 2
-142 [-]: SETTABLE  R5 K33 R6    ; R5[4.000000] := R6
-143 [-]: NEWTABLE  R6 2 0       ; R6 := {}
-144 [-]: NEWTABLE  R7 0 3       ; R7 := {}
-145 [-]: SETTABLE  R7 K26 K21   ; R7["upgradeType"] := 189.000000
-146 [-]: SETTABLE  R7 K27 K35   ; R7["value"] := -0.100000
-147 [-]: SETTABLE  R7 K28 K30   ; R7["operationType"] := 2.000000
-148 [-]: NEWTABLE  R8 0 3       ; R8 := {}
-149 [-]: SETTABLE  R8 K26 K23   ; R8["upgradeType"] := 337.000000
-150 [-]: SETTABLE  R8 K27 K36   ; R8["value"] := 0.150000
-151 [-]: SETTABLE  R8 K28 K30   ; R8["operationType"] := 2.000000
-152 [-]: SETLIST   R6 2 1       ; R6[(1-1)*FPF+i] := R(6+i), 1 <= i <= 2
-153 [-]: SETTABLE  R5 K34 R6    ; R5[5.000000] := R6
-154 [-]: NEWTABLE  R6 0 6       ; R6 := {}
-155 [-]: NEWTABLE  R7 1 0       ; R7 := {}
-156 [-]: NEWTABLE  R8 0 3       ; R8 := {}
-157 [-]: SETTABLE  R8 K26 K11   ; R8["upgradeType"] := 216.000000
-158 [-]: SETTABLE  R8 K27 K25   ; R8["value"] := 0.000000
-159 [-]: SETTABLE  R8 K28 K30   ; R8["operationType"] := 2.000000
-160 [-]: SETLIST   R7 1 1       ; R7[(1-1)*FPF+i] := R(7+i), 1 <= i <= 1
-161 [-]: SETTABLE  R6 K25 R7    ; R6[0.000000] := R7
-162 [-]: NEWTABLE  R7 1 0       ; R7 := {}
-163 [-]: NEWTABLE  R8 0 3       ; R8 := {}
-164 [-]: SETTABLE  R8 K26 K11   ; R8["upgradeType"] := 216.000000
-165 [-]: SETTABLE  R8 K27 K37   ; R8["value"] := 0.400000
-166 [-]: SETTABLE  R8 K28 K30   ; R8["operationType"] := 2.000000
-167 [-]: SETLIST   R7 1 1       ; R7[(1-1)*FPF+i] := R(7+i), 1 <= i <= 1
-168 [-]: SETTABLE  R6 K14 R7    ; R6[1.000000] := R7
-169 [-]: NEWTABLE  R7 1 0       ; R7 := {}
-170 [-]: NEWTABLE  R8 0 3       ; R8 := {}
-171 [-]: SETTABLE  R8 K26 K11   ; R8["upgradeType"] := 216.000000
-172 [-]: SETTABLE  R8 K27 K37   ; R8["value"] := 0.400000
-173 [-]: SETTABLE  R8 K28 K30   ; R8["operationType"] := 2.000000
-174 [-]: SETLIST   R7 1 1       ; R7[(1-1)*FPF+i] := R(7+i), 1 <= i <= 1
-175 [-]: SETTABLE  R6 K30 R7    ; R6[2.000000] := R7
-176 [-]: NEWTABLE  R7 1 0       ; R7 := {}
-177 [-]: NEWTABLE  R8 0 3       ; R8 := {}
-178 [-]: SETTABLE  R8 K26 K11   ; R8["upgradeType"] := 216.000000
-179 [-]: SETTABLE  R8 K27 K37   ; R8["value"] := 0.400000
-180 [-]: SETTABLE  R8 K28 K30   ; R8["operationType"] := 2.000000
-181 [-]: SETLIST   R7 1 1       ; R7[(1-1)*FPF+i] := R(7+i), 1 <= i <= 1
-182 [-]: SETTABLE  R6 K32 R7    ; R6[3.000000] := R7
-183 [-]: NEWTABLE  R7 1 0       ; R7 := {}
-184 [-]: NEWTABLE  R8 0 3       ; R8 := {}
-185 [-]: SETTABLE  R8 K26 K11   ; R8["upgradeType"] := 216.000000
-186 [-]: SETTABLE  R8 K27 K37   ; R8["value"] := 0.400000
-187 [-]: SETTABLE  R8 K28 K30   ; R8["operationType"] := 2.000000
-188 [-]: SETLIST   R7 1 1       ; R7[(1-1)*FPF+i] := R(7+i), 1 <= i <= 1
-189 [-]: SETTABLE  R6 K33 R7    ; R6[4.000000] := R7
-190 [-]: NEWTABLE  R7 1 0       ; R7 := {}
-191 [-]: NEWTABLE  R8 0 3       ; R8 := {}
-192 [-]: SETTABLE  R8 K26 K11   ; R8["upgradeType"] := 216.000000
-193 [-]: SETTABLE  R8 K27 K37   ; R8["value"] := 0.400000
-194 [-]: SETTABLE  R8 K28 K30   ; R8["operationType"] := 2.000000
-195 [-]: SETLIST   R7 1 1       ; R7[(1-1)*FPF+i] := R(7+i), 1 <= i <= 1
-196 [-]: SETTABLE  R6 K34 R7    ; R6[5.000000] := R7
-197 [-]: NEWTABLE  R7 0 6       ; R7 := {}
-198 [-]: NEWTABLE  R8 2 0       ; R8 := {}
-199 [-]: NEWTABLE  R9 0 3       ; R9 := {}
-200 [-]: SETTABLE  R9 K26 K6    ; R9["upgradeType"] := 64.000000
-201 [-]: SETTABLE  R9 K27 K25   ; R9["value"] := 0.000000
-202 [-]: SETTABLE  R9 K28 K25   ; R9["operationType"] := 0.000000
-203 [-]: NEWTABLE  R10 0 3      ; R10 := {}
-204 [-]: SETTABLE  R10 K26 K9   ; R10["upgradeType"] := 117.000000
-205 [-]: SETTABLE  R10 K27 K25  ; R10["value"] := 0.000000
-206 [-]: SETTABLE  R10 K28 K25  ; R10["operationType"] := 0.000000
-207 [-]: SETLIST   R8 2 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 2
-208 [-]: SETTABLE  R7 K25 R8    ; R7[0.000000] := R8
-209 [-]: NEWTABLE  R8 2 0       ; R8 := {}
-210 [-]: NEWTABLE  R9 0 3       ; R9 := {}
-211 [-]: SETTABLE  R9 K26 K6    ; R9["upgradeType"] := 64.000000
-212 [-]: SETTABLE  R9 K27 K38   ; R9["value"] := 300.000000
-213 [-]: SETTABLE  R9 K28 K25   ; R9["operationType"] := 0.000000
-214 [-]: NEWTABLE  R10 0 3      ; R10 := {}
-215 [-]: SETTABLE  R10 K26 K9   ; R10["upgradeType"] := 117.000000
-216 [-]: SETTABLE  R10 K27 K39  ; R10["value"] := 100.000000
-217 [-]: SETTABLE  R10 K28 K25  ; R10["operationType"] := 0.000000
-218 [-]: SETLIST   R8 2 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 2
-219 [-]: SETTABLE  R7 K14 R8    ; R7[1.000000] := R8
-220 [-]: NEWTABLE  R8 2 0       ; R8 := {}
-221 [-]: NEWTABLE  R9 0 3       ; R9 := {}
-222 [-]: SETTABLE  R9 K26 K6    ; R9["upgradeType"] := 64.000000
-223 [-]: SETTABLE  R9 K27 K38   ; R9["value"] := 300.000000
-224 [-]: SETTABLE  R9 K28 K25   ; R9["operationType"] := 0.000000
-225 [-]: NEWTABLE  R10 0 3      ; R10 := {}
-226 [-]: SETTABLE  R10 K26 K9   ; R10["upgradeType"] := 117.000000
-227 [-]: SETTABLE  R10 K27 K39  ; R10["value"] := 100.000000
-228 [-]: SETTABLE  R10 K28 K25  ; R10["operationType"] := 0.000000
-229 [-]: SETLIST   R8 2 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 2
-230 [-]: SETTABLE  R7 K30 R8    ; R7[2.000000] := R8
-231 [-]: NEWTABLE  R8 2 0       ; R8 := {}
-232 [-]: NEWTABLE  R9 0 3       ; R9 := {}
-233 [-]: SETTABLE  R9 K26 K6    ; R9["upgradeType"] := 64.000000
-234 [-]: SETTABLE  R9 K27 K38   ; R9["value"] := 300.000000
-235 [-]: SETTABLE  R9 K28 K25   ; R9["operationType"] := 0.000000
-236 [-]: NEWTABLE  R10 0 3      ; R10 := {}
-237 [-]: SETTABLE  R10 K26 K9   ; R10["upgradeType"] := 117.000000
-238 [-]: SETTABLE  R10 K27 K39  ; R10["value"] := 100.000000
-239 [-]: SETTABLE  R10 K28 K25  ; R10["operationType"] := 0.000000
-240 [-]: SETLIST   R8 2 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 2
-241 [-]: SETTABLE  R7 K32 R8    ; R7[3.000000] := R8
-242 [-]: NEWTABLE  R8 2 0       ; R8 := {}
-243 [-]: NEWTABLE  R9 0 3       ; R9 := {}
-244 [-]: SETTABLE  R9 K26 K6    ; R9["upgradeType"] := 64.000000
-245 [-]: SETTABLE  R9 K27 K38   ; R9["value"] := 300.000000
-246 [-]: SETTABLE  R9 K28 K25   ; R9["operationType"] := 0.000000
-247 [-]: NEWTABLE  R10 0 3      ; R10 := {}
-248 [-]: SETTABLE  R10 K26 K9   ; R10["upgradeType"] := 117.000000
-249 [-]: SETTABLE  R10 K27 K39  ; R10["value"] := 100.000000
-250 [-]: SETTABLE  R10 K28 K25  ; R10["operationType"] := 0.000000
-251 [-]: SETLIST   R8 2 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 2
-252 [-]: SETTABLE  R7 K33 R8    ; R7[4.000000] := R8
-253 [-]: NEWTABLE  R8 2 0       ; R8 := {}
-254 [-]: NEWTABLE  R9 0 3       ; R9 := {}
-255 [-]: SETTABLE  R9 K26 K6    ; R9["upgradeType"] := 64.000000
-256 [-]: SETTABLE  R9 K27 K38   ; R9["value"] := 300.000000
-257 [-]: SETTABLE  R9 K28 K25   ; R9["operationType"] := 0.000000
-258 [-]: NEWTABLE  R10 0 3      ; R10 := {}
-259 [-]: SETTABLE  R10 K26 K9   ; R10["upgradeType"] := 117.000000
-260 [-]: SETTABLE  R10 K27 K39  ; R10["value"] := 100.000000
-261 [-]: SETTABLE  R10 K28 K25  ; R10["operationType"] := 0.000000
-262 [-]: SETLIST   R8 2 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 2
-263 [-]: SETTABLE  R7 K34 R8    ; R7[5.000000] := R8
-264 [-]: NEWTABLE  R8 0 6       ; R8 := {}
-265 [-]: NEWTABLE  R9 2 0       ; R9 := {}
-266 [-]: NEWTABLE  R10 0 3      ; R10 := {}
-267 [-]: SETTABLE  R10 K26 K15  ; R10["upgradeType"] := 351.000000
-268 [-]: SETTABLE  R10 K27 K25  ; R10["value"] := 0.000000
-269 [-]: SETTABLE  R10 K28 K30  ; R10["operationType"] := 2.000000
-270 [-]: NEWTABLE  R11 0 3      ; R11 := {}
-271 [-]: SETTABLE  R11 K26 K17  ; R11["upgradeType"] := 61.000000
-272 [-]: SETTABLE  R11 K27 K25  ; R11["value"] := 0.000000
-273 [-]: SETTABLE  R11 K28 K25  ; R11["operationType"] := 0.000000
-274 [-]: SETLIST   R9 2 1       ; R9[(1-1)*FPF+i] := R(9+i), 1 <= i <= 2
-275 [-]: SETTABLE  R8 K25 R9    ; R8[0.000000] := R9
-276 [-]: NEWTABLE  R9 2 0       ; R9 := {}
-277 [-]: NEWTABLE  R10 0 3      ; R10 := {}
-278 [-]: SETTABLE  R10 K26 K15  ; R10["upgradeType"] := 351.000000
-279 [-]: SETTABLE  R10 K27 K40  ; R10["value"] := 0.100000
-280 [-]: SETTABLE  R10 K28 K30  ; R10["operationType"] := 2.000000
-281 [-]: NEWTABLE  R11 0 3      ; R11 := {}
-282 [-]: SETTABLE  R11 K26 K17  ; R11["upgradeType"] := 61.000000
-283 [-]: SETTABLE  R11 K27 K41  ; R11["value"] := 0.020000
-284 [-]: SETTABLE  R11 K28 K25  ; R11["operationType"] := 0.000000
-285 [-]: SETLIST   R9 2 1       ; R9[(1-1)*FPF+i] := R(9+i), 1 <= i <= 2
-286 [-]: SETTABLE  R8 K14 R9    ; R8[1.000000] := R9
-287 [-]: NEWTABLE  R9 2 0       ; R9 := {}
-288 [-]: NEWTABLE  R10 0 3      ; R10 := {}
-289 [-]: SETTABLE  R10 K26 K15  ; R10["upgradeType"] := 351.000000
-290 [-]: SETTABLE  R10 K27 K40  ; R10["value"] := 0.100000
-291 [-]: SETTABLE  R10 K28 K30  ; R10["operationType"] := 2.000000
-292 [-]: NEWTABLE  R11 0 3      ; R11 := {}
-293 [-]: SETTABLE  R11 K26 K17  ; R11["upgradeType"] := 61.000000
-294 [-]: SETTABLE  R11 K27 K41  ; R11["value"] := 0.020000
-295 [-]: SETTABLE  R11 K28 K25  ; R11["operationType"] := 0.000000
-296 [-]: SETLIST   R9 2 1       ; R9[(1-1)*FPF+i] := R(9+i), 1 <= i <= 2
-297 [-]: SETTABLE  R8 K30 R9    ; R8[2.000000] := R9
-298 [-]: NEWTABLE  R9 2 0       ; R9 := {}
-299 [-]: NEWTABLE  R10 0 3      ; R10 := {}
-300 [-]: SETTABLE  R10 K26 K15  ; R10["upgradeType"] := 351.000000
-301 [-]: SETTABLE  R10 K27 K40  ; R10["value"] := 0.100000
-302 [-]: SETTABLE  R10 K28 K30  ; R10["operationType"] := 2.000000
-303 [-]: NEWTABLE  R11 0 3      ; R11 := {}
-304 [-]: SETTABLE  R11 K26 K17  ; R11["upgradeType"] := 61.000000
-305 [-]: SETTABLE  R11 K27 K41  ; R11["value"] := 0.020000
-306 [-]: SETTABLE  R11 K28 K25  ; R11["operationType"] := 0.000000
-307 [-]: SETLIST   R9 2 1       ; R9[(1-1)*FPF+i] := R(9+i), 1 <= i <= 2
-308 [-]: SETTABLE  R8 K32 R9    ; R8[3.000000] := R9
-309 [-]: NEWTABLE  R9 2 0       ; R9 := {}
-310 [-]: NEWTABLE  R10 0 3      ; R10 := {}
-311 [-]: SETTABLE  R10 K26 K15  ; R10["upgradeType"] := 351.000000
-312 [-]: SETTABLE  R10 K27 K40  ; R10["value"] := 0.100000
-313 [-]: SETTABLE  R10 K28 K30  ; R10["operationType"] := 2.000000
-314 [-]: NEWTABLE  R11 0 3      ; R11 := {}
-315 [-]: SETTABLE  R11 K26 K17  ; R11["upgradeType"] := 61.000000
-316 [-]: SETTABLE  R11 K27 K41  ; R11["value"] := 0.020000
-317 [-]: SETTABLE  R11 K28 K25  ; R11["operationType"] := 0.000000
-318 [-]: SETLIST   R9 2 1       ; R9[(1-1)*FPF+i] := R(9+i), 1 <= i <= 2
-319 [-]: SETTABLE  R8 K33 R9    ; R8[4.000000] := R9
-320 [-]: NEWTABLE  R9 2 0       ; R9 := {}
-321 [-]: NEWTABLE  R10 0 3      ; R10 := {}
-322 [-]: SETTABLE  R10 K26 K15  ; R10["upgradeType"] := 351.000000
-323 [-]: SETTABLE  R10 K27 K40  ; R10["value"] := 0.100000
-324 [-]: SETTABLE  R10 K28 K30  ; R10["operationType"] := 2.000000
-325 [-]: NEWTABLE  R11 0 3      ; R11 := {}
-326 [-]: SETTABLE  R11 K26 K17  ; R11["upgradeType"] := 61.000000
-327 [-]: SETTABLE  R11 K27 K41  ; R11["value"] := 0.020000
-328 [-]: SETTABLE  R11 K28 K25  ; R11["operationType"] := 0.000000
-329 [-]: SETLIST   R9 2 1       ; R9[(1-1)*FPF+i] := R(9+i), 1 <= i <= 2
-330 [-]: SETTABLE  R8 K34 R9    ; R8[5.000000] := R9
-331 [-]: NEWTABLE  R9 0 5       ; R9 := {}
-332 [-]: SETTABLE  R9 K25 R4    ; R9[0.000000] := R4
-333 [-]: SETTABLE  R9 K14 R5    ; R9[1.000000] := R5
-334 [-]: SETTABLE  R9 K30 R8    ; R9[2.000000] := R8
-335 [-]: SETTABLE  R9 K32 R6    ; R9[3.000000] := R6
-336 [-]: SETTABLE  R9 K33 R7    ; R9[4.000000] := R7
-337 [-]: CLOSURE   R10 1        ; R10 := closure(Function #2)
-338 [-]: CLOSURE   R11 2        ; R11 := closure(Function #3)
-339 [-]: MOVE      R0 R3        ; R0 := R3
-340 [-]: MOVE      R0 R9        ; R0 := R9
-341 [-]: MOVE      R0 R10       ; R0 := R10
-342 [-]: SETGLOBAL R11 K43      ; GetUpgrades := R11
-343 [-]: CLOSURE   R11 3        ; R11 := closure(Function #4)
-344 [-]: MOVE      R0 R0        ; R0 := R0
-345 [-]: CLOSURE   R12 4        ; R12 := closure(Function #5)
-346 [-]: MOVE      R0 R9        ; R0 := R9
-347 [-]: MOVE      R0 R2        ; R0 := R2
-348 [-]: MOVE      R0 R1        ; R0 := R1
-349 [-]: MOVE      R0 R11       ; R0 := R11
-350 [-]: SETGLOBAL R12 K44      ; GetSkillValues := R12
-351 [-]: RETURN    R0 1         ; return 
+ 11 [-]: MOVE      R0 R0        ; R0 := R0
+ 12 [-]: SETLIST   R1 1 1       ; R1[(1-1)*FPF+i] := R(1+i), 1 <= i <= 1
+ 13 [-]: NEWTABLE  R2 0 8       ; R2 := {}
+ 14 [-]: NEWTABLE  R3 0 1       ; R3 := {}
+ 15 [-]: SETTABLE  R3 K7 K8     ; R3["mLoc"] := "/Lotus/Language/Labels/AVATAR_HEALTH_MAX"
+ 16 [-]: SETTABLE  R2 K6 R3     ; R2[65.000000] := R3
+ 17 [-]: NEWTABLE  R3 0 1       ; R3 := {}
+ 18 [-]: SETTABLE  R3 K7 K10    ; R3["mLoc"] := "/Lotus/Language/Labels/AVATAR_SHIELD_MAX"
+ 19 [-]: SETTABLE  R2 K9 R3     ; R2[120.000000] := R3
+ 20 [-]: NEWTABLE  R3 0 2       ; R3 := {}
+ 21 [-]: SETTABLE  R3 K7 K12    ; R3["mLoc"] := "/Lotus/Language/Labels/WEAPON_DAMAGE_AMOUNT"
+ 22 [-]: SETTABLE  R3 K13 K14   ; R3["mFormatting"] := 1.000000
+ 23 [-]: SETTABLE  R2 K11 R3    ; R2[0x449a507e] := R3
+ 24 [-]: NEWTABLE  R3 0 2       ; R3 := {}
+ 25 [-]: SETTABLE  R3 K7 K16    ; R3["mLoc"] := "/Lotus/Language/Labels/AVATAR_ABILITY_EFFICIENCY"
+ 26 [-]: SETTABLE  R3 K13 K14   ; R3["mFormatting"] := 1.000000
+ 27 [-]: SETTABLE  R2 K15 R3    ; R2[0x34291f5c] := R3
+ 28 [-]: NEWTABLE  R3 0 2       ; R3 := {}
+ 29 [-]: SETTABLE  R3 K7 K18    ; R3["mLoc"] := "/Lotus/Language/Labels/AVATAR_HEAL_RATE"
+ 30 [-]: SETTABLE  R3 K13 K14   ; R3["mFormatting"] := 1.000000
+ 31 [-]: SETTABLE  R2 K17 R3    ; R2[0x8550d2a7] := R3
+ 32 [-]: NEWTABLE  R3 0 2       ; R3 := {}
+ 33 [-]: SETTABLE  R3 K7 K20    ; R3["mLoc"] := "/Lotus/Language/Labels/AVATAR_MOVEMENT_SPEED"
+ 34 [-]: SETTABLE  R3 K13 K14   ; R3["mFormatting"] := 1.000000
+ 35 [-]: SETTABLE  R2 K19 R3    ; R2[80.000000] := R3
+ 36 [-]: NEWTABLE  R3 0 2       ; R3 := {}
+ 37 [-]: SETTABLE  R3 K7 K22    ; R3["mLoc"] := "/Lotus/Language/Labels/WEAPON_HEAT_GENERATION"
+ 38 [-]: SETTABLE  R3 K13 K14   ; R3["mFormatting"] := 1.000000
+ 39 [-]: SETTABLE  R2 K21 R3    ; R2[194.000000] := R3
+ 40 [-]: NEWTABLE  R3 0 2       ; R3 := {}
+ 41 [-]: SETTABLE  R3 K7 K24    ; R3["mLoc"] := "/Lotus/Language/Labels/WEAPON_SPREAD"
+ 42 [-]: SETTABLE  R3 K13 K14   ; R3["mFormatting"] := 1.000000
+ 43 [-]: SETTABLE  R2 K23 R3    ; R2[344.000000] := R3
+ 44 [-]: CONST     R3 5         ; R3 := 5.000000
+ 45 [-]: NEWTABLE  R4 0 6       ; R4 := {}
+ 46 [-]: NEWTABLE  R5 1 0       ; R5 := {}
+ 47 [-]: NEWTABLE  R6 0 3       ; R6 := {}
+ 48 [-]: SETTABLE  R6 K26 K19   ; R6["upgradeType"] := 80.000000
+ 49 [-]: SETTABLE  R6 K27 K25   ; R6["value"] := 0.000000
+ 50 [-]: SETTABLE  R6 K28 K30   ; R6["operationType"] := 3.000000
+ 51 [-]: SETLIST   R5 1 1       ; R5[(1-1)*FPF+i] := R(5+i), 1 <= i <= 1
+ 52 [-]: SETTABLE  R4 K25 R5    ; R4[0.000000] := R5
+ 53 [-]: NEWTABLE  R5 1 0       ; R5 := {}
+ 54 [-]: NEWTABLE  R6 0 3       ; R6 := {}
+ 55 [-]: SETTABLE  R6 K26 K19   ; R6["upgradeType"] := 80.000000
+ 56 [-]: SETTABLE  R6 K27 K31   ; R6["value"] := 0.050000
+ 57 [-]: SETTABLE  R6 K28 K30   ; R6["operationType"] := 3.000000
+ 58 [-]: SETLIST   R5 1 1       ; R5[(1-1)*FPF+i] := R(5+i), 1 <= i <= 1
+ 59 [-]: SETTABLE  R4 K14 R5    ; R4[0xc670d7f3] := R5
+ 60 [-]: NEWTABLE  R5 1 0       ; R5 := {}
+ 61 [-]: NEWTABLE  R6 0 3       ; R6 := {}
+ 62 [-]: SETTABLE  R6 K26 K19   ; R6["upgradeType"] := 80.000000
+ 63 [-]: SETTABLE  R6 K27 K31   ; R6["value"] := 0.050000
+ 64 [-]: SETTABLE  R6 K28 K30   ; R6["operationType"] := 3.000000
+ 65 [-]: SETLIST   R5 1 1       ; R5[(1-1)*FPF+i] := R(5+i), 1 <= i <= 1
+ 66 [-]: SETTABLE  R4 K32 R5    ; R4[2.000000] := R5
+ 67 [-]: NEWTABLE  R5 1 0       ; R5 := {}
+ 68 [-]: NEWTABLE  R6 0 3       ; R6 := {}
+ 69 [-]: SETTABLE  R6 K26 K19   ; R6["upgradeType"] := 80.000000
+ 70 [-]: SETTABLE  R6 K27 K31   ; R6["value"] := 0.050000
+ 71 [-]: SETTABLE  R6 K28 K30   ; R6["operationType"] := 3.000000
+ 72 [-]: SETLIST   R5 1 1       ; R5[(1-1)*FPF+i] := R(5+i), 1 <= i <= 1
+ 73 [-]: SETTABLE  R4 K30 R5    ; R4[3.000000] := R5
+ 74 [-]: NEWTABLE  R5 1 0       ; R5 := {}
+ 75 [-]: NEWTABLE  R6 0 3       ; R6 := {}
+ 76 [-]: SETTABLE  R6 K26 K19   ; R6["upgradeType"] := 80.000000
+ 77 [-]: SETTABLE  R6 K27 K31   ; R6["value"] := 0.050000
+ 78 [-]: SETTABLE  R6 K28 K30   ; R6["operationType"] := 3.000000
+ 79 [-]: SETLIST   R5 1 1       ; R5[(1-1)*FPF+i] := R(5+i), 1 <= i <= 1
+ 80 [-]: SETTABLE  R4 K33 R5    ; R4[4.000000] := R5
+ 81 [-]: NEWTABLE  R5 1 0       ; R5 := {}
+ 82 [-]: NEWTABLE  R6 0 3       ; R6 := {}
+ 83 [-]: SETTABLE  R6 K26 K19   ; R6["upgradeType"] := 80.000000
+ 84 [-]: SETTABLE  R6 K27 K31   ; R6["value"] := 0.050000
+ 85 [-]: SETTABLE  R6 K28 K30   ; R6["operationType"] := 3.000000
+ 86 [-]: SETLIST   R5 1 1       ; R5[(1-1)*FPF+i] := R(5+i), 1 <= i <= 1
+ 87 [-]: SETTABLE  R4 K34 R5    ; R4[5.000000] := R5
+ 88 [-]: NEWTABLE  R5 0 6       ; R5 := {}
+ 89 [-]: NEWTABLE  R6 2 0       ; R6 := {}
+ 90 [-]: NEWTABLE  R7 0 3       ; R7 := {}
+ 91 [-]: SETTABLE  R7 K26 K21   ; R7["upgradeType"] := 194.000000
+ 92 [-]: SETTABLE  R7 K27 K25   ; R7["value"] := 0.000000
+ 93 [-]: SETTABLE  R7 K28 K30   ; R7["operationType"] := 3.000000
+ 94 [-]: NEWTABLE  R8 0 3       ; R8 := {}
+ 95 [-]: SETTABLE  R8 K26 K23   ; R8["upgradeType"] := 344.000000
+ 96 [-]: SETTABLE  R8 K27 K25   ; R8["value"] := 0.000000
+ 97 [-]: SETTABLE  R8 K28 K30   ; R8["operationType"] := 3.000000
+ 98 [-]: SETLIST   R6 2 1       ; R6[(1-1)*FPF+i] := R(6+i), 1 <= i <= 2
+ 99 [-]: SETTABLE  R5 K25 R6    ; R5[0.000000] := R6
+100 [-]: NEWTABLE  R6 2 0       ; R6 := {}
+101 [-]: NEWTABLE  R7 0 3       ; R7 := {}
+102 [-]: SETTABLE  R7 K26 K21   ; R7["upgradeType"] := 194.000000
+103 [-]: SETTABLE  R7 K27 K35   ; R7["value"] := -0.100000
+104 [-]: SETTABLE  R7 K28 K30   ; R7["operationType"] := 3.000000
+105 [-]: NEWTABLE  R8 0 3       ; R8 := {}
+106 [-]: SETTABLE  R8 K26 K23   ; R8["upgradeType"] := 344.000000
+107 [-]: SETTABLE  R8 K27 K36   ; R8["value"] := 0.150000
+108 [-]: SETTABLE  R8 K28 K30   ; R8["operationType"] := 3.000000
+109 [-]: SETLIST   R6 2 1       ; R6[(1-1)*FPF+i] := R(6+i), 1 <= i <= 2
+110 [-]: SETTABLE  R5 K14 R6    ; R5[0xc670d7f3] := R6
+111 [-]: NEWTABLE  R6 2 0       ; R6 := {}
+112 [-]: NEWTABLE  R7 0 3       ; R7 := {}
+113 [-]: SETTABLE  R7 K26 K21   ; R7["upgradeType"] := 194.000000
+114 [-]: SETTABLE  R7 K27 K35   ; R7["value"] := -0.100000
+115 [-]: SETTABLE  R7 K28 K30   ; R7["operationType"] := 3.000000
+116 [-]: NEWTABLE  R8 0 3       ; R8 := {}
+117 [-]: SETTABLE  R8 K26 K23   ; R8["upgradeType"] := 344.000000
+118 [-]: SETTABLE  R8 K27 K36   ; R8["value"] := 0.150000
+119 [-]: SETTABLE  R8 K28 K30   ; R8["operationType"] := 3.000000
+120 [-]: SETLIST   R6 2 1       ; R6[(1-1)*FPF+i] := R(6+i), 1 <= i <= 2
+121 [-]: SETTABLE  R5 K32 R6    ; R5[2.000000] := R6
+122 [-]: NEWTABLE  R6 2 0       ; R6 := {}
+123 [-]: NEWTABLE  R7 0 3       ; R7 := {}
+124 [-]: SETTABLE  R7 K26 K21   ; R7["upgradeType"] := 194.000000
+125 [-]: SETTABLE  R7 K27 K35   ; R7["value"] := -0.100000
+126 [-]: SETTABLE  R7 K28 K30   ; R7["operationType"] := 3.000000
+127 [-]: NEWTABLE  R8 0 3       ; R8 := {}
+128 [-]: SETTABLE  R8 K26 K23   ; R8["upgradeType"] := 344.000000
+129 [-]: SETTABLE  R8 K27 K36   ; R8["value"] := 0.150000
+130 [-]: SETTABLE  R8 K28 K30   ; R8["operationType"] := 3.000000
+131 [-]: SETLIST   R6 2 1       ; R6[(1-1)*FPF+i] := R(6+i), 1 <= i <= 2
+132 [-]: SETTABLE  R5 K30 R6    ; R5[3.000000] := R6
+133 [-]: NEWTABLE  R6 2 0       ; R6 := {}
+134 [-]: NEWTABLE  R7 0 3       ; R7 := {}
+135 [-]: SETTABLE  R7 K26 K21   ; R7["upgradeType"] := 194.000000
+136 [-]: SETTABLE  R7 K27 K35   ; R7["value"] := -0.100000
+137 [-]: SETTABLE  R7 K28 K30   ; R7["operationType"] := 3.000000
+138 [-]: NEWTABLE  R8 0 3       ; R8 := {}
+139 [-]: SETTABLE  R8 K26 K23   ; R8["upgradeType"] := 344.000000
+140 [-]: SETTABLE  R8 K27 K36   ; R8["value"] := 0.150000
+141 [-]: SETTABLE  R8 K28 K30   ; R8["operationType"] := 3.000000
+142 [-]: SETLIST   R6 2 1       ; R6[(1-1)*FPF+i] := R(6+i), 1 <= i <= 2
+143 [-]: SETTABLE  R5 K33 R6    ; R5[4.000000] := R6
+144 [-]: NEWTABLE  R6 2 0       ; R6 := {}
+145 [-]: NEWTABLE  R7 0 3       ; R7 := {}
+146 [-]: SETTABLE  R7 K26 K21   ; R7["upgradeType"] := 194.000000
+147 [-]: SETTABLE  R7 K27 K35   ; R7["value"] := -0.100000
+148 [-]: SETTABLE  R7 K28 K30   ; R7["operationType"] := 3.000000
+149 [-]: NEWTABLE  R8 0 3       ; R8 := {}
+150 [-]: SETTABLE  R8 K26 K23   ; R8["upgradeType"] := 344.000000
+151 [-]: SETTABLE  R8 K27 K36   ; R8["value"] := 0.150000
+152 [-]: SETTABLE  R8 K28 K30   ; R8["operationType"] := 3.000000
+153 [-]: SETLIST   R6 2 1       ; R6[(1-1)*FPF+i] := R(6+i), 1 <= i <= 2
+154 [-]: SETTABLE  R5 K34 R6    ; R5[5.000000] := R6
+155 [-]: NEWTABLE  R6 0 6       ; R6 := {}
+156 [-]: NEWTABLE  R7 1 0       ; R7 := {}
+157 [-]: NEWTABLE  R8 0 3       ; R8 := {}
+158 [-]: SETTABLE  R8 K26 K11   ; R8["upgradeType"] := 223.000000
+159 [-]: SETTABLE  R8 K27 K25   ; R8["value"] := 0.000000
+160 [-]: SETTABLE  R8 K28 K30   ; R8["operationType"] := 3.000000
+161 [-]: SETLIST   R7 1 1       ; R7[(1-1)*FPF+i] := R(7+i), 1 <= i <= 1
+162 [-]: SETTABLE  R6 K25 R7    ; R6[0.000000] := R7
+163 [-]: NEWTABLE  R7 1 0       ; R7 := {}
+164 [-]: NEWTABLE  R8 0 3       ; R8 := {}
+165 [-]: SETTABLE  R8 K26 K11   ; R8["upgradeType"] := 223.000000
+166 [-]: SETTABLE  R8 K27 K37   ; R8["value"] := 0.400000
+167 [-]: SETTABLE  R8 K28 K30   ; R8["operationType"] := 3.000000
+168 [-]: SETLIST   R7 1 1       ; R7[(1-1)*FPF+i] := R(7+i), 1 <= i <= 1
+169 [-]: SETTABLE  R6 K14 R7    ; R6[0xc670d7f3] := R7
+170 [-]: NEWTABLE  R7 1 0       ; R7 := {}
+171 [-]: NEWTABLE  R8 0 3       ; R8 := {}
+172 [-]: SETTABLE  R8 K26 K11   ; R8["upgradeType"] := 223.000000
+173 [-]: SETTABLE  R8 K27 K37   ; R8["value"] := 0.400000
+174 [-]: SETTABLE  R8 K28 K30   ; R8["operationType"] := 3.000000
+175 [-]: SETLIST   R7 1 1       ; R7[(1-1)*FPF+i] := R(7+i), 1 <= i <= 1
+176 [-]: SETTABLE  R6 K32 R7    ; R6[2.000000] := R7
+177 [-]: NEWTABLE  R7 1 0       ; R7 := {}
+178 [-]: NEWTABLE  R8 0 3       ; R8 := {}
+179 [-]: SETTABLE  R8 K26 K11   ; R8["upgradeType"] := 223.000000
+180 [-]: SETTABLE  R8 K27 K37   ; R8["value"] := 0.400000
+181 [-]: SETTABLE  R8 K28 K30   ; R8["operationType"] := 3.000000
+182 [-]: SETLIST   R7 1 1       ; R7[(1-1)*FPF+i] := R(7+i), 1 <= i <= 1
+183 [-]: SETTABLE  R6 K30 R7    ; R6[3.000000] := R7
+184 [-]: NEWTABLE  R7 1 0       ; R7 := {}
+185 [-]: NEWTABLE  R8 0 3       ; R8 := {}
+186 [-]: SETTABLE  R8 K26 K11   ; R8["upgradeType"] := 223.000000
+187 [-]: SETTABLE  R8 K27 K37   ; R8["value"] := 0.400000
+188 [-]: SETTABLE  R8 K28 K30   ; R8["operationType"] := 3.000000
+189 [-]: SETLIST   R7 1 1       ; R7[(1-1)*FPF+i] := R(7+i), 1 <= i <= 1
+190 [-]: SETTABLE  R6 K33 R7    ; R6[4.000000] := R7
+191 [-]: NEWTABLE  R7 1 0       ; R7 := {}
+192 [-]: NEWTABLE  R8 0 3       ; R8 := {}
+193 [-]: SETTABLE  R8 K26 K11   ; R8["upgradeType"] := 223.000000
+194 [-]: SETTABLE  R8 K27 K37   ; R8["value"] := 0.400000
+195 [-]: SETTABLE  R8 K28 K30   ; R8["operationType"] := 3.000000
+196 [-]: SETLIST   R7 1 1       ; R7[(1-1)*FPF+i] := R(7+i), 1 <= i <= 1
+197 [-]: SETTABLE  R6 K34 R7    ; R6[5.000000] := R7
+198 [-]: NEWTABLE  R7 0 6       ; R7 := {}
+199 [-]: NEWTABLE  R8 2 0       ; R8 := {}
+200 [-]: NEWTABLE  R9 0 3       ; R9 := {}
+201 [-]: SETTABLE  R9 K26 K6    ; R9["upgradeType"] := 65.000000
+202 [-]: SETTABLE  R9 K27 K25   ; R9["value"] := 0.000000
+203 [-]: SETTABLE  R9 K28 K25   ; R9["operationType"] := 0.000000
+204 [-]: NEWTABLE  R10 0 3      ; R10 := {}
+205 [-]: SETTABLE  R10 K26 K9   ; R10["upgradeType"] := 120.000000
+206 [-]: SETTABLE  R10 K27 K25  ; R10["value"] := 0.000000
+207 [-]: SETTABLE  R10 K28 K25  ; R10["operationType"] := 0.000000
+208 [-]: SETLIST   R8 2 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 2
+209 [-]: SETTABLE  R7 K25 R8    ; R7[0.000000] := R8
+210 [-]: NEWTABLE  R8 2 0       ; R8 := {}
+211 [-]: NEWTABLE  R9 0 3       ; R9 := {}
+212 [-]: SETTABLE  R9 K26 K6    ; R9["upgradeType"] := 65.000000
+213 [-]: SETTABLE  R9 K27 K38   ; R9["value"] := 300.000000
+214 [-]: SETTABLE  R9 K28 K25   ; R9["operationType"] := 0.000000
+215 [-]: NEWTABLE  R10 0 3      ; R10 := {}
+216 [-]: SETTABLE  R10 K26 K9   ; R10["upgradeType"] := 120.000000
+217 [-]: SETTABLE  R10 K27 K39  ; R10["value"] := 100.000000
+218 [-]: SETTABLE  R10 K28 K25  ; R10["operationType"] := 0.000000
+219 [-]: SETLIST   R8 2 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 2
+220 [-]: SETTABLE  R7 K14 R8    ; R7[0xc670d7f3] := R8
+221 [-]: NEWTABLE  R8 2 0       ; R8 := {}
+222 [-]: NEWTABLE  R9 0 3       ; R9 := {}
+223 [-]: SETTABLE  R9 K26 K6    ; R9["upgradeType"] := 65.000000
+224 [-]: SETTABLE  R9 K27 K38   ; R9["value"] := 300.000000
+225 [-]: SETTABLE  R9 K28 K25   ; R9["operationType"] := 0.000000
+226 [-]: NEWTABLE  R10 0 3      ; R10 := {}
+227 [-]: SETTABLE  R10 K26 K9   ; R10["upgradeType"] := 120.000000
+228 [-]: SETTABLE  R10 K27 K39  ; R10["value"] := 100.000000
+229 [-]: SETTABLE  R10 K28 K25  ; R10["operationType"] := 0.000000
+230 [-]: SETLIST   R8 2 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 2
+231 [-]: SETTABLE  R7 K32 R8    ; R7[2.000000] := R8
+232 [-]: NEWTABLE  R8 2 0       ; R8 := {}
+233 [-]: NEWTABLE  R9 0 3       ; R9 := {}
+234 [-]: SETTABLE  R9 K26 K6    ; R9["upgradeType"] := 65.000000
+235 [-]: SETTABLE  R9 K27 K38   ; R9["value"] := 300.000000
+236 [-]: SETTABLE  R9 K28 K25   ; R9["operationType"] := 0.000000
+237 [-]: NEWTABLE  R10 0 3      ; R10 := {}
+238 [-]: SETTABLE  R10 K26 K9   ; R10["upgradeType"] := 120.000000
+239 [-]: SETTABLE  R10 K27 K39  ; R10["value"] := 100.000000
+240 [-]: SETTABLE  R10 K28 K25  ; R10["operationType"] := 0.000000
+241 [-]: SETLIST   R8 2 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 2
+242 [-]: SETTABLE  R7 K30 R8    ; R7[3.000000] := R8
+243 [-]: NEWTABLE  R8 2 0       ; R8 := {}
+244 [-]: NEWTABLE  R9 0 3       ; R9 := {}
+245 [-]: SETTABLE  R9 K26 K6    ; R9["upgradeType"] := 65.000000
+246 [-]: SETTABLE  R9 K27 K38   ; R9["value"] := 300.000000
+247 [-]: SETTABLE  R9 K28 K25   ; R9["operationType"] := 0.000000
+248 [-]: NEWTABLE  R10 0 3      ; R10 := {}
+249 [-]: SETTABLE  R10 K26 K9   ; R10["upgradeType"] := 120.000000
+250 [-]: SETTABLE  R10 K27 K39  ; R10["value"] := 100.000000
+251 [-]: SETTABLE  R10 K28 K25  ; R10["operationType"] := 0.000000
+252 [-]: SETLIST   R8 2 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 2
+253 [-]: SETTABLE  R7 K33 R8    ; R7[4.000000] := R8
+254 [-]: NEWTABLE  R8 2 0       ; R8 := {}
+255 [-]: NEWTABLE  R9 0 3       ; R9 := {}
+256 [-]: SETTABLE  R9 K26 K6    ; R9["upgradeType"] := 65.000000
+257 [-]: SETTABLE  R9 K27 K38   ; R9["value"] := 300.000000
+258 [-]: SETTABLE  R9 K28 K25   ; R9["operationType"] := 0.000000
+259 [-]: NEWTABLE  R10 0 3      ; R10 := {}
+260 [-]: SETTABLE  R10 K26 K9   ; R10["upgradeType"] := 120.000000
+261 [-]: SETTABLE  R10 K27 K39  ; R10["value"] := 100.000000
+262 [-]: SETTABLE  R10 K28 K25  ; R10["operationType"] := 0.000000
+263 [-]: SETLIST   R8 2 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 2
+264 [-]: SETTABLE  R7 K34 R8    ; R7[5.000000] := R8
+265 [-]: NEWTABLE  R8 0 6       ; R8 := {}
+266 [-]: NEWTABLE  R9 2 0       ; R9 := {}
+267 [-]: NEWTABLE  R10 0 3      ; R10 := {}
+268 [-]: SETTABLE  R10 K26 K15  ; R10["upgradeType"] := 361.000000
+269 [-]: SETTABLE  R10 K27 K25  ; R10["value"] := 0.000000
+270 [-]: SETTABLE  R10 K28 K30  ; R10["operationType"] := 3.000000
+271 [-]: NEWTABLE  R11 0 3      ; R11 := {}
+272 [-]: SETTABLE  R11 K26 K17  ; R11["upgradeType"] := 62.000000
+273 [-]: SETTABLE  R11 K27 K25  ; R11["value"] := 0.000000
+274 [-]: SETTABLE  R11 K28 K25  ; R11["operationType"] := 0.000000
+275 [-]: SETLIST   R9 2 1       ; R9[(1-1)*FPF+i] := R(9+i), 1 <= i <= 2
+276 [-]: SETTABLE  R8 K25 R9    ; R8[0.000000] := R9
+277 [-]: NEWTABLE  R9 2 0       ; R9 := {}
+278 [-]: NEWTABLE  R10 0 3      ; R10 := {}
+279 [-]: SETTABLE  R10 K26 K15  ; R10["upgradeType"] := 361.000000
+280 [-]: SETTABLE  R10 K27 K40  ; R10["value"] := 0.100000
+281 [-]: SETTABLE  R10 K28 K30  ; R10["operationType"] := 3.000000
+282 [-]: NEWTABLE  R11 0 3      ; R11 := {}
+283 [-]: SETTABLE  R11 K26 K17  ; R11["upgradeType"] := 62.000000
+284 [-]: SETTABLE  R11 K27 K41  ; R11["value"] := 0.020000
+285 [-]: SETTABLE  R11 K28 K25  ; R11["operationType"] := 0.000000
+286 [-]: SETLIST   R9 2 1       ; R9[(1-1)*FPF+i] := R(9+i), 1 <= i <= 2
+287 [-]: SETTABLE  R8 K14 R9    ; R8[0xc670d7f3] := R9
+288 [-]: NEWTABLE  R9 2 0       ; R9 := {}
+289 [-]: NEWTABLE  R10 0 3      ; R10 := {}
+290 [-]: SETTABLE  R10 K26 K15  ; R10["upgradeType"] := 361.000000
+291 [-]: SETTABLE  R10 K27 K40  ; R10["value"] := 0.100000
+292 [-]: SETTABLE  R10 K28 K30  ; R10["operationType"] := 3.000000
+293 [-]: NEWTABLE  R11 0 3      ; R11 := {}
+294 [-]: SETTABLE  R11 K26 K17  ; R11["upgradeType"] := 62.000000
+295 [-]: SETTABLE  R11 K27 K41  ; R11["value"] := 0.020000
+296 [-]: SETTABLE  R11 K28 K25  ; R11["operationType"] := 0.000000
+297 [-]: SETLIST   R9 2 1       ; R9[(1-1)*FPF+i] := R(9+i), 1 <= i <= 2
+298 [-]: SETTABLE  R8 K32 R9    ; R8[2.000000] := R9
+299 [-]: NEWTABLE  R9 2 0       ; R9 := {}
+300 [-]: NEWTABLE  R10 0 3      ; R10 := {}
+301 [-]: SETTABLE  R10 K26 K15  ; R10["upgradeType"] := 361.000000
+302 [-]: SETTABLE  R10 K27 K40  ; R10["value"] := 0.100000
+303 [-]: SETTABLE  R10 K28 K30  ; R10["operationType"] := 3.000000
+304 [-]: NEWTABLE  R11 0 3      ; R11 := {}
+305 [-]: SETTABLE  R11 K26 K17  ; R11["upgradeType"] := 62.000000
+306 [-]: SETTABLE  R11 K27 K41  ; R11["value"] := 0.020000
+307 [-]: SETTABLE  R11 K28 K25  ; R11["operationType"] := 0.000000
+308 [-]: SETLIST   R9 2 1       ; R9[(1-1)*FPF+i] := R(9+i), 1 <= i <= 2
+309 [-]: SETTABLE  R8 K30 R9    ; R8[3.000000] := R9
+310 [-]: NEWTABLE  R9 2 0       ; R9 := {}
+311 [-]: NEWTABLE  R10 0 3      ; R10 := {}
+312 [-]: SETTABLE  R10 K26 K15  ; R10["upgradeType"] := 361.000000
+313 [-]: SETTABLE  R10 K27 K40  ; R10["value"] := 0.100000
+314 [-]: SETTABLE  R10 K28 K30  ; R10["operationType"] := 3.000000
+315 [-]: NEWTABLE  R11 0 3      ; R11 := {}
+316 [-]: SETTABLE  R11 K26 K17  ; R11["upgradeType"] := 62.000000
+317 [-]: SETTABLE  R11 K27 K41  ; R11["value"] := 0.020000
+318 [-]: SETTABLE  R11 K28 K25  ; R11["operationType"] := 0.000000
+319 [-]: SETLIST   R9 2 1       ; R9[(1-1)*FPF+i] := R(9+i), 1 <= i <= 2
+320 [-]: SETTABLE  R8 K33 R9    ; R8[4.000000] := R9
+321 [-]: NEWTABLE  R9 2 0       ; R9 := {}
+322 [-]: NEWTABLE  R10 0 3      ; R10 := {}
+323 [-]: SETTABLE  R10 K26 K15  ; R10["upgradeType"] := 361.000000
+324 [-]: SETTABLE  R10 K27 K40  ; R10["value"] := 0.100000
+325 [-]: SETTABLE  R10 K28 K30  ; R10["operationType"] := 3.000000
+326 [-]: NEWTABLE  R11 0 3      ; R11 := {}
+327 [-]: SETTABLE  R11 K26 K17  ; R11["upgradeType"] := 62.000000
+328 [-]: SETTABLE  R11 K27 K41  ; R11["value"] := 0.020000
+329 [-]: SETTABLE  R11 K28 K25  ; R11["operationType"] := 0.000000
+330 [-]: SETLIST   R9 2 1       ; R9[(1-1)*FPF+i] := R(9+i), 1 <= i <= 2
+331 [-]: SETTABLE  R8 K34 R9    ; R8[5.000000] := R9
+332 [-]: NEWTABLE  R9 0 5       ; R9 := {}
+333 [-]: SETTABLE  R9 K25 R4    ; R9[0.000000] := R4
+334 [-]: SETTABLE  R9 K14 R5    ; R9[0xc670d7f3] := R5
+335 [-]: SETTABLE  R9 K32 R8    ; R9[2.000000] := R8
+336 [-]: SETTABLE  R9 K30 R6    ; R9[3.000000] := R6
+337 [-]: SETTABLE  R9 K33 R7    ; R9[4.000000] := R7
+338 [-]: CLOSURE   R10 1        ; R10 := closure(Function #2)
+339 [-]: CLOSURE   R11 2        ; R11 := closure(Function #3)
+340 [-]: MOVE      R0 R3        ; R0 := R3
+341 [-]: MOVE      R0 R9        ; R0 := R9
+342 [-]: MOVE      R0 R10       ; R0 := R10
+343 [-]: SETGLOBAL R11 K43      ; GetUpgrades := R11
+344 [-]: CLOSURE   R11 3        ; R11 := closure(Function #4)
+345 [-]: MOVE      R0 R0        ; R0 := R0
+346 [-]: CLOSURE   R12 4        ; R12 := closure(Function #5)
+347 [-]: MOVE      R0 R9        ; R0 := R9
+348 [-]: MOVE      R0 R2        ; R0 := R2
+349 [-]: MOVE      R0 R1        ; R0 := R1
+350 [-]: MOVE      R0 R11       ; R0 := R11
+351 [-]: SETGLOBAL R12 K44      ; GetSkillValues := R12
+352 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
 ;
 ; Name:            
 ; Defined at line: 6
-; #Upvalues:       0
+; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  5
+; Max Stack Size:  8
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0x603636ad
   2 [-]: LOADK     R2 K1        ; R2 := "/Lotus/Language/Railjack/CrewSkillPercent"
   3 [-]: NEWTABLE  R3 0 1       ; R3 := {}
-  4 [-]: MUL       R4 R0 K3     ; R4 := R0 * 100.000000
-  5 [-]: SETTABLE  R3 K2 R4     ; R3["VALUE"] := R4
-  6 [-]: TAILCALL  R1 3 0       ; R1,... := R1(R2,R3)
-  7 [-]: RETURN    R1 0         ; return R1,...
-  8 [-]: RETURN    R0 1         ; return 
+  4 [-]: GETUPVAL  R4 U0        ; R4 := U0
+  5 [-]: GETTABLE  R4 R4 K3     ; R4 := R4[0x1142c7a8]
+  6 [-]: MUL       R5 R0 K4     ; R5 := R0 * 100.000000
+  7 [-]: CONST     R6 2         ; R6 := 2.000000
+  8 [-]: LOADKB    R7 0 0       ; R7 := false
+  9 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
+ 10 [-]: SETTABLE  R3 K2 R4     ; R3["VALUE"] := R4
+ 11 [-]: TAILCALL  R1 3 0       ; R1,... := R1(R2,R3)
+ 12 [-]: RETURN    R1 0         ; return R1,...
+ 13 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #2:
@@ -412,7 +418,7 @@
  22 [-]: TEST      R2 0         ; if not R2 then PC := 28
  23 [-]: JMP       28           ; PC := 28
  24 [-]: SELF      R2 R1 K6     ; R3 := R1; R2 := R1[0xc670d7f3]
- 25 [-]: LOADK     R4 3         ; R4 := 3.000000
+ 25 [-]: CONST     R4 4         ; R4 := 4.000000
  26 [-]: CALL      R2 3 1       ; R2(R3,R4)
  27 [-]: JMP       31           ; PC := 31
  28 [-]: SELF      R2 R1 K6     ; R3 := R1; R2 := R1[0xc670d7f3]
@@ -424,7 +430,7 @@
  34 [-]: TEST      R2 0         ; if not R2 then PC := 40
  35 [-]: JMP       40           ; PC := 40
  36 [-]: SELF      R2 R1 K9     ; R3 := R1; R2 := R1[0x8550d2a7]
- 37 [-]: LOADK     R4 1         ; R4 := 1.000000
+ 37 [-]: CONST     R4 1         ; R4 := 1.000000
  38 [-]: CALL      R2 3 1       ; R2(R3,R4)
  39 [-]: JMP       43           ; PC := 43
  40 [-]: SELF      R2 R1 K9     ; R3 := R1; R2 := R1[0x8550d2a7]
@@ -472,14 +478,14 @@
  27 [-]: LOADNIL   R3 R3        ; R3 := nil
  28 [-]: RETURN    R3 2         ; return R3
  29 [-]: NEWTABLE  R3 0 0       ; R3 := {}
- 30 [-]: LOADK     R4 1         ; R4 := 1.000000
+ 30 [-]: CONST     R4 1         ; R4 := 1.000000
  31 [-]: MOVE      R5 R1        ; R5 := R1
- 32 [-]: LOADK     R6 1         ; R6 := 1.000000
+ 32 [-]: CONST     R6 1         ; R6 := 1.000000
  33 [-]: FORPREP   R4 53        ; R4 -= R6; PC := 53
  34 [-]: GETTABLE  R8 R2 R7     ; R8 := R2[R7]
- 35 [-]: LOADK     R9 1         ; R9 := 1.000000
+ 35 [-]: CONST     R9 1         ; R9 := 1.000000
  36 [-]: LEN       R10 R8       ; R10 := # R8
- 37 [-]: LOADK     R11 1        ; R11 := 1.000000
+ 37 [-]: CONST     R11 1        ; R11 := 1.000000
  38 [-]: FORPREP   R9 52        ; R9 -= R11; PC := 52
  39 [-]: GETUPVAL  R13 U2       ; R13 := U2
  40 [-]: GETTABLE  R14 R8 R12   ; R14 := R8[R12]
@@ -511,12 +517,12 @@
 
   1 [-]: LE        1 K0 R0      ; if 0.000000 <= R0 then PC := 4
   2 [-]: JMP       4            ; PC := 4
-  3 [-]: LOADBOOL  R2 0 1       ; R2 := false; PC := 4
-  4 [-]: LOADBOOL  R2 1 0       ; R2 := true
+  3 [-]: LOADKB    R2 0 1       ; R2 := false; PC := 4
+  4 [-]: LOADKB    R2 1 0       ; R2 := true
   5 [-]: GETUPVAL  R3 U0        ; R3 := U0
   6 [-]: GETTABLE  R3 R3 K1     ; R3 := R3[0x74a11ec6]
   7 [-]: MOVE      R4 R0        ; R4 := R0
-  8 [-]: LOADK     R5 2         ; R5 := 2.000000
+  8 [-]: CONST     R5 2         ; R5 := 2.000000
   9 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
  10 [-]: MOVE      R0 R3        ; R0 := R3
  11 [-]: EQ        1 R1 K2      ; if R1 == nil then PC := 17
@@ -555,13 +561,13 @@
  10 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
  11 [-]: TESTSET   R9 R2 1      ; if R2 then PC := 14 else R9 := R2
  12 [-]: JMP       14           ; PC := 14
- 13 [-]: LOADK     R9 0         ; R9 := 0.000000
+ 13 [-]: CONST     R9 0         ; R9 := 0.000000
  14 [-]: ADD       R8 R8 R9     ; R8 := R8 + R9
  15 [-]: TESTSET   R9 R3 1      ; if R3 then PC := 18 else R9 := R3
  16 [-]: JMP       18           ; PC := 18
- 17 [-]: LOADK     R9 0         ; R9 := 0.000000
+ 17 [-]: CONST     R9 0         ; R9 := 0.000000
  18 [-]: ADD       R3 R8 R9     ; R3 := R8 + R9
- 19 [-]: LOADK     R9 0         ; R9 := 0.000000
+ 19 [-]: CONST     R9 0         ; R9 := 0.000000
  20 [-]: GETGLOBAL R10 K2       ; R10 := 0x5bced4c4
  21 [-]: GETTABLE  R10 R10 K3   ; R10 := R10[0xac1b386a]
  22 [-]: GETGLOBAL R11 K2       ; R11 := 0x5bced4c4
@@ -571,7 +577,7 @@
  26 [-]: CALL      R11 3 2      ; R11 := R11(R12,R13)
  27 [-]: LEN       R12 R7       ; R12 := # R7
  28 [-]: CALL      R10 3 2      ; R10 := R10(R11,R12)
- 29 [-]: LOADK     R11 1        ; R11 := 1.000000
+ 29 [-]: CONST     R11 1        ; R11 := 1.000000
  30 [-]: FORPREP   R9 85        ; R9 -= R11; PC := 85
  31 [-]: GETGLOBAL R13 K5       ; R13 := 0xc8802016
  32 [-]: GETTABLE  R14 R7 R12   ; R14 := R7[R12]
@@ -630,9 +636,9 @@
  85 [-]: FORLOOP   R9 31        ; R9 += R11; if R9 <= R10 then begin PC := 31; R12 := R9 end
  86 [-]: LOADK     R18 K12      ; R18 := ""
  87 [-]: LOADNIL   R19 R20      ; R19 := R20 := nil
- 88 [-]: LOADK     R21 0        ; R21 := 0.000000
- 89 [-]: LOADK     R22 0        ; R22 := 0.000000
- 90 [-]: LOADK     R23 0        ; R23 := 0.000000
+ 88 [-]: CONST     R21 0        ; R21 := 0.000000
+ 89 [-]: CONST     R22 0        ; R22 := 0.000000
+ 90 [-]: CONST     R23 0        ; R23 := 0.000000
  91 [-]: GETGLOBAL R24 K13      ; R24 := 0xcfc01047
  92 [-]: MOVE      R25 R6       ; R25 := R6
  93 [-]: CALL      R24 2 4      ; R24,R25,R26 := R24(R25)

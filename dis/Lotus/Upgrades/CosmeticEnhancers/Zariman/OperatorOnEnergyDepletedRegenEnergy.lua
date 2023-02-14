@@ -94,15 +94,15 @@
  38 [-]: SETTABLE  R5 K16 K17   ; R5["isDebuff"] := false
  39 [-]: SELF      R7 R0 K18    ; R8 := R0; R7 := R0[0x37e45fb5]
  40 [-]: MOVE      R9 R5        ; R9 := R5
- 41 [-]: LOADBOOL  R10 1 0      ; R10 := true
- 42 [-]: LOADBOOL  R11 1 0      ; R11 := true
+ 41 [-]: LOADKB    R10 1 0      ; R10 := true
+ 42 [-]: LOADKB    R11 1 0      ; R11 := true
  43 [-]: CALL      R7 5 1       ; R7(R8,R9,R10,R11)
  44 [-]: SELF      R7 R1 K19    ; R8 := R1; R7 := R1[0x6d3293f5]
  45 [-]: CALL      R7 2 2       ; R7 := R7(R8)
  46 [-]: TEST      R7 0         ; if not R7 then PC := 52
  47 [-]: JMP       52           ; PC := 52
  48 [-]: GETGLOBAL R7 K20       ; R7 := 0xcbd666e1
- 49 [-]: LOADK     R8 0         ; R8 := 0.000000
+ 49 [-]: CONST     R8 0         ; R8 := 0.000000
  50 [-]: CALL      R7 2 1       ; R7(R8)
  51 [-]: JMP       44           ; PC := 44
  52 [-]: SETTABLE  R5 K14 K21   ; R5["buffType"] := 3.000000
@@ -112,14 +112,14 @@
  56 [-]: SETTABLE  R5 K23 R7    ; R5["buffDataExtra"] := R7
  57 [-]: SELF      R7 R0 K18    ; R8 := R0; R7 := R0[0x37e45fb5]
  58 [-]: MOVE      R9 R5        ; R9 := R5
- 59 [-]: LOADBOOL  R10 1 0      ; R10 := true
- 60 [-]: LOADBOOL  R11 1 0      ; R11 := true
+ 59 [-]: LOADKB    R10 1 0      ; R10 := true
+ 60 [-]: LOADKB    R11 1 0      ; R11 := true
  61 [-]: CALL      R7 5 1       ; R7(R8,R9,R10,R11)
  62 [-]: SELF      R7 R0 K24    ; R8 := R0; R7 := R0[0xde321e6f]
  63 [-]: CALL      R7 2 2       ; R7 := R7(R8)
  64 [-]: SELF      R7 R7 K25    ; R8 := R7; R7 := R7[0x5e6704ff]
- 65 [-]: LOADK     R9 46        ; R9 := 46.000000
- 66 [-]: LOADK     R10 2        ; R10 := 2.000000
+ 65 [-]: CONST     R9 47        ; R9 := 47.000000
+ 66 [-]: CONST     R10 3        ; R10 := 3.000000
  67 [-]: MOVE      R11 R6       ; R11 := R6
  68 [-]: CALL      R7 5 1       ; R7(R8,R9,R10,R11)
  69 [-]: GETGLOBAL R7 K20       ; R7 := 0xcbd666e1
@@ -128,8 +128,8 @@
  72 [-]: SELF      R7 R0 K24    ; R8 := R0; R7 := R0[0xde321e6f]
  73 [-]: CALL      R7 2 2       ; R7 := R7(R8)
  74 [-]: SELF      R7 R7 K28    ; R8 := R7; R7 := R7[0x12dd9da2]
- 75 [-]: LOADK     R9 46        ; R9 := 46.000000
- 76 [-]: LOADK     R10 2        ; R10 := 2.000000
+ 75 [-]: CONST     R9 47        ; R9 := 47.000000
+ 76 [-]: CONST     R10 3        ; R10 := 3.000000
  77 [-]: MOVE      R11 R6       ; R11 := R6
  78 [-]: CALL      R7 5 1       ; R7(R8,R9,R10,R11)
  79 [-]: GETGLOBAL R7 K29       ; R7 := 0x917d9b36
@@ -141,28 +141,28 @@
  85 [-]: SETTABLE  R5 K16 K32   ; R5["isDebuff"] := true
  86 [-]: SELF      R7 R0 K18    ; R8 := R0; R7 := R0[0x37e45fb5]
  87 [-]: MOVE      R9 R5        ; R9 := R5
- 88 [-]: LOADBOOL  R10 1 0      ; R10 := true
- 89 [-]: LOADBOOL  R11 1 0      ; R11 := true
+ 88 [-]: LOADKB    R10 1 0      ; R10 := true
+ 89 [-]: LOADKB    R11 1 0      ; R11 := true
  90 [-]: CALL      R7 5 1       ; R7(R8,R9,R10,R11)
  91 [-]: GETGLOBAL R7 K20       ; R7 := 0xcbd666e1
  92 [-]: GETGLOBAL R8 K31       ; R8 := 0xd14173b7
  93 [-]: CALL      R7 2 1       ; R7(R8)
  94 [-]: SELF      R7 R0 K18    ; R8 := R0; R7 := R0[0x37e45fb5]
  95 [-]: MOVE      R9 R5        ; R9 := R5
- 96 [-]: LOADBOOL  R10 0 0      ; R10 := false
- 97 [-]: LOADBOOL  R11 1 0      ; R11 := true
+ 96 [-]: LOADKB    R10 0 0      ; R10 := false
+ 97 [-]: LOADKB    R11 1 0      ; R11 := true
  98 [-]: CALL      R7 5 1       ; R7(R8,R9,R10,R11)
  99 [-]: JMP       108          ; PC := 108
 100 [-]: SELF      R7 R0 K18    ; R8 := R0; R7 := R0[0x37e45fb5]
 101 [-]: MOVE      R9 R5        ; R9 := R5
-102 [-]: LOADBOOL  R10 0 0      ; R10 := false
-103 [-]: LOADBOOL  R11 1 0      ; R11 := true
+102 [-]: LOADKB    R10 0 0      ; R10 := false
+103 [-]: LOADKB    R11 1 0      ; R11 := true
 104 [-]: CALL      R7 5 1       ; R7(R8,R9,R10,R11)
 105 [-]: GETGLOBAL R7 K20       ; R7 := 0xcbd666e1
 106 [-]: GETGLOBAL R8 K31       ; R8 := 0xd14173b7
 107 [-]: CALL      R7 2 1       ; R7(R8)
 108 [-]: GETGLOBAL R7 K20       ; R7 := 0xcbd666e1
-109 [-]: LOADK     R8 0         ; R8 := 0.000000
+109 [-]: CONST     R8 0         ; R8 := 0.000000
 110 [-]: CALL      R7 2 1       ; R7(R8)
 111 [-]: JMP       20           ; PC := 20
 112 [-]: RETURN    R0 1         ; return 

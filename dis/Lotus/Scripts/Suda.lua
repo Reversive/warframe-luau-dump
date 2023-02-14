@@ -23,13 +23,13 @@
 ; Is_vararg:       0
 ; Max Stack Size:  17
 
-  1 [-]: LOADK     R1 1         ; R1 := 1.000000
-  2 [-]: LOADK     R2 4         ; R2 := 4.000000
-  3 [-]: LOADK     R3 1         ; R3 := 1.000000
+  1 [-]: CONST     R1 1         ; R1 := 1.000000
+  2 [-]: CONST     R2 4         ; R2 := 4.000000
+  3 [-]: CONST     R3 1         ; R3 := 1.000000
   4 [-]: FORPREP   R1 28        ; R1 -= R3; PC := 28
-  5 [-]: LOADK     R5 1         ; R5 := 1.000000
-  6 [-]: LOADK     R6 4         ; R6 := 4.000000
-  7 [-]: LOADK     R7 1         ; R7 := 1.000000
+  5 [-]: CONST     R5 1         ; R5 := 1.000000
+  6 [-]: CONST     R6 4         ; R6 := 4.000000
+  7 [-]: CONST     R7 1         ; R7 := 1.000000
   8 [-]: FORPREP   R5 27        ; R5 -= R7; PC := 27
   9 [-]: ADD       R9 R4 K0     ; R9 := R4 + 1.000000
  10 [-]: DIV       R9 R9 K1     ; R9 := R9 / 2.000000
@@ -40,7 +40,7 @@
  15 [-]: GETGLOBAL R11 K3       ; R11 := 0xa421af95
  16 [-]: MUL       R12 R9 K4    ; R12 := R9 * 1.250000
  17 [-]: MUL       R13 R10 K4   ; R13 := R10 * 1.250000
- 18 [-]: LOADK     R14 0        ; R14 := 0.000000
+ 18 [-]: CONST     R14 0        ; R14 := 0.000000
  19 [-]: CALL      R11 4 2      ; R11 := R11(R12,R13,R14)
  20 [-]: EQ        1 R4 R8      ; if R4 == R8 then PC := 27
  21 [-]: JMP       27           ; PC := 27
@@ -78,9 +78,9 @@
  13 [-]: SELF      R3 R0 K3     ; R4 := R0; R3 := R0[0xc1595bd5]
  14 [-]: GETGLOBAL R5 K4        ; R5 := gDecorationType
  15 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
- 16 [-]: LOADK     R4 1         ; R4 := 1.000000
+ 16 [-]: CONST     R4 1         ; R4 := 1.000000
  17 [-]: LEN       R5 R3        ; R5 := # R3
- 18 [-]: LOADK     R6 1         ; R6 := 1.000000
+ 18 [-]: CONST     R6 1         ; R6 := 1.000000
  19 [-]: FORPREP   R4 27        ; R4 -= R6; PC := 27
  20 [-]: GETTABLE  R8 R3 R7     ; R8 := R3[R7]
  21 [-]: SELF      R9 R8 K5     ; R10 := R8; R9 := R8[0x89531483]
@@ -92,7 +92,7 @@
  27 [-]: FORLOOP   R4 20        ; R4 += R6; if R4 <= R5 then begin PC := 20; R7 := R4 end
  28 [-]: GETGLOBAL R9 K7        ; R9 := _T
  29 [-]: SETTABLE  R9 K8 K9     ; R9["SudaSpeaking"] := 0.000000
- 30 [-]: LOADK     R9 0         ; R9 := 0.000000
+ 30 [-]: CONST     R9 0         ; R9 := 0.000000
  31 [-]: GETGLOBAL R10 K10      ; R10 := 0x00046924
  32 [-]: CALL      R10 1 2      ; R10 := R10()
  33 [-]: GETGLOBAL R11 K11      ; R11 := 0xa421af95
@@ -105,7 +105,7 @@
  40 [-]: GETTABLE  R12 R12 K8   ; R12 := R12["SudaSpeaking"]
  41 [-]: TEST      R12 1        ; if R12 then PC := 44
  42 [-]: JMP       44           ; PC := 44
- 43 [-]: LOADK     R12 0        ; R12 := 0.000000
+ 43 [-]: CONST     R12 0        ; R12 := 0.000000
  44 [-]: GETGLOBAL R13 K14      ; R13 := 0x67652851
  45 [-]: CALL      R13 1 2      ; R13 := R13()
  46 [-]: MUL       R13 R12 R13  ; R13 := R12 * R13
@@ -118,9 +118,9 @@
  53 [-]: JMP       50           ; PC := 50
  54 [-]: MUL       R13 R9 K19   ; R13 := R9 * 3.141593
  55 [-]: MUL       R13 R13 K20  ; R13 := R13 * 2.000000
- 56 [-]: LOADK     R14 1        ; R14 := 1.000000
+ 56 [-]: CONST     R14 1        ; R14 := 1.000000
  57 [-]: LEN       R15 R3       ; R15 := # R3
- 58 [-]: LOADK     R16 1        ; R16 := 1.000000
+ 58 [-]: CONST     R16 1        ; R16 := 1.000000
  59 [-]: FORPREP   R14 92       ; R14 -= R16; PC := 92
  60 [-]: GETGLOBAL R18 K18      ; R18 := 0x5bced4c4
  61 [-]: GETTABLE  R18 R18 K21  ; R18 := R18[0x3eda26fc]
@@ -156,7 +156,7 @@
  91 [-]: CALL      R21 4 1      ; R21(R22,R23,R24)
  92 [-]: FORLOOP   R14 60       ; R14 += R16; if R14 <= R15 then begin PC := 60; R17 := R14 end
  93 [-]: GETGLOBAL R21 K1       ; R21 := 0xcbd666e1
- 94 [-]: LOADK     R22 0        ; R22 := 0.000000
+ 94 [-]: CONST     R22 0        ; R22 := 0.000000
  95 [-]: CALL      R21 2 1      ; R21(R22)
  96 [-]: JMP       39           ; PC := 39
  97 [-]: RETURN    R0 1         ; return 

@@ -50,12 +50,12 @@
  18 [-]: NEWTABLE  R7 0 2       ; R7 := {}
  19 [-]: SELF      R8 R0 K14    ; R9 := R0; R8 := R0[0x91a24e4b]
  20 [-]: MOVE      R10 R1       ; R10 := R1
- 21 [-]: LOADK     R11 0        ; R11 := 0.000000
+ 21 [-]: CONST     R11 0        ; R11 := 0.000000
  22 [-]: CALL      R8 4 2       ; R8 := R8(R9,R10,R11)
  23 [-]: SETTABLE  R7 K7 R8     ; R7["x"] := R8
  24 [-]: SELF      R8 R0 K14    ; R9 := R0; R8 := R0[0x91a24e4b]
  25 [-]: MOVE      R10 R1       ; R10 := R1
- 26 [-]: LOADK     R11 1        ; R11 := 1.000000
+ 26 [-]: CONST     R11 1        ; R11 := 1.000000
  27 [-]: CALL      R8 4 2       ; R8 := R8(R9,R10,R11)
  28 [-]: SETTABLE  R7 K9 R8     ; R7["y"] := R8
  29 [-]: SETTABLE  R6 K13 R7    ; R6["mOriginalCoords"] := R7
@@ -84,7 +84,7 @@
  52 [-]: SETTABLE  R7 K7 R8     ; R7["x"] := R8
  53 [-]: SUB       R8 R3 R5     ; R8 := R3 - R5
  54 [-]: SETTABLE  R7 K9 R8     ; R7["y"] := R8
- 55 [-]: SETTABLE  R6 K21 R7    ; R6["mScrollRange"] := R7
+ 55 [-]: SETTABLE  R6 K21 R7    ; R6[0x00000000] := R7
  56 [-]: SETTABLE  R6 K22 K23   ; R6["mDeselectRange"] := 10.000000
  57 [-]: CLOSURE   R7 0         ; R7 := closure(Function #1.1)
  58 [-]: GETUPVAL  R0 U0        ; R0 := U0
@@ -112,7 +112,7 @@
   2 [-]: GETTABLE  R5 R5 R1     ; R5 := R5[R1]
   3 [-]: GETGLOBAL R6 K1        ; R6 := 0x42dcc9f5
   4 [-]: MOVE      R7 R2        ; R7 := R2
-  5 [-]: UNM       R8 R5        ; R8 := ^ R5
+  5 [-]: UNM       R8 R5        ; R8 :=  R5
   6 [-]: ADD       R9 K2 R5     ; R9 := 1.000000 + R5
   7 [-]: CALL      R6 4 2       ; R6 := R6(R7,R8,R9)
   8 [-]: MOVE      R2 R6        ; R2 := R6
@@ -240,7 +240,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  15
 
-  1 [-]: LOADBOOL  R2 0 0       ; R2 := false
+  1 [-]: LOADKB    R2 0 0       ; R2 := false
   2 [-]: GETGLOBAL R3 K0        ; R3 := 0xc8802016
   3 [-]: NEWTABLE  R4 2 0       ; R4 := {}
   4 [-]: LOADK     R5 K1        ; R5 := "x"
@@ -291,8 +291,8 @@
  49 [-]: GETTABLE  R10 R0 K19   ; R10 := R0["mDeselectRange"]
  50 [-]: LT        1 R10 R9     ; if R10 < R9 then PC := 53
  51 [-]: JMP       53           ; PC := 53
- 52 [-]: LOADBOOL  R2 0 1       ; R2 := false; PC := 53
- 53 [-]: LOADBOOL  R2 1 0       ; R2 := true
+ 52 [-]: LOADKB    R2 0 1       ; R2 := false; PC := 53
+ 53 [-]: LOADKB    R2 1 0       ; R2 := true
  54 [-]: GETTABLE  R9 R0 K5     ; R9 := R0["mStarting"]
  55 [-]: SETTABLE  R9 R7 R8     ; R9[R7] := R8
  56 [-]: JMP       87           ; PC := 87
@@ -307,7 +307,7 @@
  65 [-]: GETTABLE  R9 R0 K14    ; R9 := R0["mDragSpeed"]
  66 [-]: GETTABLE  R10 R0 K20   ; R10 := R0["mCurrentScroll"]
  67 [-]: GETTABLE  R10 R10 R7   ; R10 := R10[R7]
- 68 [-]: UNM       R10 R10      ; R10 := ^ R10
+ 68 [-]: UNM       R10 R10      ; R10 :=  R10
  69 [-]: DIV       R10 R10 K21  ; R10 := R10 / 20.000000
  70 [-]: SETTABLE  R9 R7 R10    ; R9[R7] := R10
  71 [-]: JMP       87           ; PC := 87
@@ -323,7 +323,7 @@
  81 [-]: GETTABLE  R10 R0 K20   ; R10 := R0["mCurrentScroll"]
  82 [-]: GETTABLE  R10 R10 R7   ; R10 := R10[R7]
  83 [-]: SUB       R10 R10 K22  ; R10 := R10 - 1.000000
- 84 [-]: UNM       R10 R10      ; R10 := ^ R10
+ 84 [-]: UNM       R10 R10      ; R10 :=  R10
  85 [-]: DIV       R10 R10 K21  ; R10 := R10 / 20.000000
  86 [-]: SETTABLE  R9 R7 R10    ; R9[R7] := R10
  87 [-]: GETTABLE  R9 R0 K14    ; R9 := R0["mDragSpeed"]

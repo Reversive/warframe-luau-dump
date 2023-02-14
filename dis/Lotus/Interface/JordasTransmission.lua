@@ -32,8 +32,8 @@
   9 [-]: TEST      R1 0         ; if not R1 then PC := 12
  10 [-]: JMP       12           ; PC := 12
  11 [-]: RETURN    R0 1         ; return 
- 12 [-]: LOADK     R1 0         ; R1 := 0.000000
- 13 [-]: LOADK     R2 0         ; R2 := 0.000000
+ 12 [-]: CONST     R1 0         ; R1 := 0.000000
+ 13 [-]: CONST     R2 0         ; R2 := 0.000000
  14 [-]: GETGLOBAL R3 K5        ; R3 := 0x74acbbe0
  15 [-]: SELF      R3 R3 K6     ; R4 := R3; R3 := R3[0xfb669000]
  16 [-]: GETGLOBAL R5 K7        ; R5 := gCameraSpotType
@@ -50,7 +50,7 @@
  27 [-]: JMP       125          ; PC := 125
  28 [-]: GETGLOBAL R4 K8        ; R4 := 0x5bced4c4
  29 [-]: GETTABLE  R4 R4 K9     ; R4 := R4[0xac1b386a]
- 30 [-]: LOADK     R5 1         ; R5 := 1.000000
+ 30 [-]: CONST     R5 1         ; R5 := 1.000000
  31 [-]: GETGLOBAL R6 K10       ; R6 := 0x67652851
  32 [-]: CALL      R6 1 2       ; R6 := R6()
  33 [-]: MUL       R6 R6 K11    ; R6 := R6 * 2.000000
@@ -59,7 +59,7 @@
  36 [-]: MOVE      R1 R4        ; R1 := R4
  37 [-]: GETGLOBAL R4 K8        ; R4 := 0x5bced4c4
  38 [-]: GETTABLE  R4 R4 K9     ; R4 := R4[0xac1b386a]
- 39 [-]: LOADK     R5 1         ; R5 := 1.000000
+ 39 [-]: CONST     R5 1         ; R5 := 1.000000
  40 [-]: GETGLOBAL R6 K10       ; R6 := 0x67652851
  41 [-]: CALL      R6 1 2       ; R6 := R6()
  42 [-]: MUL       R6 R6 K12    ; R6 := R6 * 1.000000
@@ -77,27 +77,27 @@
  54 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  55 [-]: GETTABLE  R5 R3 K12    ; R5 := R3[1.000000]
  56 [-]: SELF      R5 R5 K14    ; R6 := R5; R5 := R5[0xf3cefa26]
- 57 [-]: LOADK     R7 2         ; R7 := 2.000000
+ 57 [-]: CONST     R7 2         ; R7 := 2.000000
  58 [-]: MUL       R8 K11 R1    ; R8 := 2.000000 * R1
  59 [-]: MUL       R8 R8 R4     ; R8 := R8 * R4
  60 [-]: CALL      R5 4 1       ; R5(R6,R7,R8)
- 61 [-]: LOADK     R5 1         ; R5 := 1.000000
+ 61 [-]: CONST     R5 1         ; R5 := 1.000000
  62 [-]: GETGLOBAL R6 K0        ; R6 := _T
  63 [-]: GETTABLE  R6 R6 K1     ; R6 := R6["TransmissionSoundInstance"]
  64 [-]: SELF      R6 R6 K15    ; R7 := R6; R6 := R6[0xef040c26]
- 65 [-]: LOADK     R8 6         ; R8 := 6.000000
+ 65 [-]: CONST     R8 6         ; R8 := 6.000000
  66 [-]: MUL       R9 R5 R1     ; R9 := R5 * R1
  67 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
  68 [-]: GETGLOBAL R6 K0        ; R6 := _T
  69 [-]: GETTABLE  R6 R6 K1     ; R6 := R6["TransmissionSoundInstance"]
  70 [-]: SELF      R6 R6 K15    ; R7 := R6; R6 := R6[0xef040c26]
- 71 [-]: LOADK     R8 7         ; R8 := 7.000000
+ 71 [-]: CONST     R8 7         ; R8 := 7.000000
  72 [-]: MUL       R9 R5 R1     ; R9 := R5 * R1
  73 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
  74 [-]: MUL       R6 R2 K16    ; R6 := R2 * 0.500000
  75 [-]: GETGLOBAL R7 K8        ; R7 := 0x5bced4c4
  76 [-]: GETTABLE  R7 R7 K9     ; R7 := R7[0xac1b386a]
- 77 [-]: LOADK     R8 0         ; R8 := 0.500000
+ 77 [-]: CONST     R8 0         ; R8 := 0.500000
  78 [-]: GETGLOBAL R9 K17       ; R9 := 0xdfebb754
  79 [-]: GETGLOBAL R10 K18      ; R10 := 0x107bf6da
  80 [-]: GETGLOBAL R11 K19      ; R11 := 0x55156ff7
@@ -122,9 +122,9 @@
  99 [-]: SELF      R9 R9 K6     ; R10 := R9; R9 := R9[0xfb669000]
 100 [-]: GETGLOBAL R11 K27      ; R11 := gZoneAttribsType
 101 [-]: CALL      R9 3 2       ; R9 := R9(R10,R11)
-102 [-]: LOADK     R10 1        ; R10 := 1.000000
+102 [-]: CONST     R10 1        ; R10 := 1.000000
 103 [-]: LEN       R11 R9       ; R11 := # R9
-104 [-]: LOADK     R12 1        ; R12 := 1.000000
+104 [-]: CONST     R12 1        ; R12 := 1.000000
 105 [-]: FORPREP   R10 120      ; R10 -= R12; PC := 120
 106 [-]: GETTABLE  R14 R9 R13   ; R14 := R9[R13]
 107 [-]: SELF      R15 R14 K28  ; R16 := R14; R15 := R14[0xe79e7ef4]
@@ -142,7 +142,7 @@
 119 [-]: CALL      R16 5 1      ; R16(R17,R18,R19,R20)
 120 [-]: FORLOOP   R10 106      ; R10 += R12; if R10 <= R11 then begin PC := 106; R13 := R10 end
 121 [-]: GETGLOBAL R16 K2       ; R16 := 0xcbd666e1
-122 [-]: LOADK     R17 0        ; R17 := 0.000000
+122 [-]: CONST     R17 0        ; R17 := 0.000000
 123 [-]: CALL      R16 2 1      ; R16(R17)
 124 [-]: JMP       18           ; PC := 18
 125 [-]: RETURN    R0 1         ; return 

@@ -61,7 +61,7 @@
  38 [-]: JMP       40           ; PC := 40
  39 [-]: RETURN    R0 1         ; return 
  40 [-]: SELF      R4 R3 K7     ; R5 := R3; R4 := R3[0xfef27732]
- 41 [-]: LOADK     R6 0         ; R6 := 0.000000
+ 41 [-]: CONST     R6 0         ; R6 := 0.000000
  42 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
  43 [-]: GETGLOBAL R5 K0        ; R5 := 0x7b998233
  44 [-]: MOVE      R6 R4        ; R6 := R4
@@ -78,7 +78,7 @@
  55 [-]: CALL      R6 2 2       ; R6 := R6(R7)
  56 [-]: SELF      R6 R6 K10    ; R7 := R6; R6 := R6[0xba887e48]
  57 [-]: GETGLOBAL R8 K11       ; R8 := 0x3fa72714
- 58 [-]: LOADK     R9 1         ; R9 := 1.000000
+ 58 [-]: CONST     R9 1         ; R9 := 1.000000
  59 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
  60 [-]: RETURN    R0 1         ; return 
 

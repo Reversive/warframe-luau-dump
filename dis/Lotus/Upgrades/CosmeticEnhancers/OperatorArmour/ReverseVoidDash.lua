@@ -71,11 +71,11 @@
  13 [-]: CALL      R3 1 2       ; R3 := R3()
  14 [-]: SUB       R2 R2 R3     ; R2 := R2 - R3
  15 [-]: GETGLOBAL R3 K7        ; R3 := 0xcbd666e1
- 16 [-]: LOADK     R4 0         ; R4 := 0.000000
+ 16 [-]: CONST     R4 0         ; R4 := 0.000000
  17 [-]: CALL      R3 2 1       ; R3(R4)
  18 [-]: JMP       4            ; PC := 4
  19 [-]: SELF      R3 R0 K8     ; R4 := R0; R3 := R0[0x88a29b58]
- 20 [-]: LOADBOOL  R5 0 0       ; R5 := false
+ 20 [-]: LOADKB    R5 0 0       ; R5 := false
  21 [-]: CALL      R3 3 1       ; R3(R4,R5)
  22 [-]: RETURN    R0 1         ; return 
 
@@ -104,7 +104,7 @@
  13 [-]: TEST      R5 1         ; if R5 then PC := 18
  14 [-]: JMP       18           ; PC := 18
  15 [-]: GETGLOBAL R7 K3        ; R7 := 0xcbd666e1
- 16 [-]: LOADK     R8 0         ; R8 := 0.000000
+ 16 [-]: CONST     R8 0         ; R8 := 0.000000
  17 [-]: CALL      R7 2 1       ; R7(R8)
  18 [-]: SELF      R7 R0 K4     ; R8 := R0; R7 := R0[0x388577d5]
  19 [-]: CALL      R7 2 2       ; R7 := R7(R8)
@@ -196,23 +196,23 @@
 105 [-]: SETTABLE  R9 K10 K24   ; R9["cooldown"] := 0.000000
 106 [-]: SELF      R9 R0 K25    ; R10 := R0; R9 := R0[0x37e45fb5]
 107 [-]: MOVE      R11 R8       ; R11 := R8
-108 [-]: LOADBOOL  R12 1 0      ; R12 := true
-109 [-]: LOADBOOL  R13 0 0      ; R13 := false
+108 [-]: LOADKB    R12 1 0      ; R12 := true
+109 [-]: LOADKB    R13 0 0      ; R13 := false
 110 [-]: CALL      R9 5 1       ; R9(R10,R11,R12,R13)
 111 [-]: SELF      R9 R0 K26    ; R10 := R0; R9 := R0[0x88a29b58]
-112 [-]: LOADBOOL  R11 1 0      ; R11 := true
+112 [-]: LOADKB    R11 1 0      ; R11 := true
 113 [-]: CALL      R9 3 1       ; R9(R10,R11)
 114 [-]: SELF      R9 R0 K27    ; R10 := R0; R9 := R0[0xd5f7912b]
 115 [-]: GETGLOBAL R11 K28      ; R11 := 0x0469f296
 116 [-]: LOADK     R12 K29      ; R12 := "WaitAndCancelFreeDash"
 117 [-]: CALL      R11 2 2      ; R11 := R11(R12)
-118 [-]: LOADBOOL  R12 0 0      ; R12 := false
+118 [-]: LOADKB    R12 0 0      ; R12 := false
 119 [-]: CALL      R9 4 1       ; R9(R10,R11,R12)
 120 [-]: RETURN    R0 1         ; return 
 121 [-]: SELF      R9 R0 K25    ; R10 := R0; R9 := R0[0x37e45fb5]
 122 [-]: MOVE      R11 R8       ; R11 := R8
-123 [-]: LOADBOOL  R12 0 0      ; R12 := false
-124 [-]: LOADBOOL  R13 0 0      ; R13 := false
+123 [-]: LOADKB    R12 0 0      ; R12 := false
+124 [-]: LOADKB    R13 0 0      ; R13 := false
 125 [-]: CALL      R9 5 1       ; R9(R10,R11,R12,R13)
 126 [-]: GETGLOBAL R9 K30       ; R9 := 0x1c139f5c
 127 [-]: GETGLOBAL R10 K31      ; R10 := 0x5bced4c4

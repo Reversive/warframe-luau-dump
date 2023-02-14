@@ -40,27 +40,27 @@
   3 [-]: EQ        1 R2 R3      ; if R2 == R3 then PC := 11
   4 [-]: JMP       11           ; PC := 11
   5 [-]: GETGLOBAL R2 K0        ; R2 := 0x55730e1a
-  6 [-]: LOADK     R3 1         ; R3 := 1.000000
+  6 [-]: CONST     R3 1         ; R3 := 1.000000
   7 [-]: LEN       R4 R0        ; R4 := # R0
   8 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
   9 [-]: GETTABLE  R2 R0 R2     ; R2 := R0[R2]
  10 [-]: RETURN    R2 2         ; return R2
- 11 [-]: LOADK     R2 0         ; R2 := 0.000000
- 12 [-]: LOADK     R3 1         ; R3 := 1.000000
+ 11 [-]: CONST     R2 0         ; R2 := 0.000000
+ 12 [-]: CONST     R3 1         ; R3 := 1.000000
  13 [-]: LEN       R4 R0        ; R4 := # R0
- 14 [-]: LOADK     R5 1         ; R5 := 1.000000
+ 14 [-]: CONST     R5 1         ; R5 := 1.000000
  15 [-]: FORPREP   R3 18        ; R3 -= R5; PC := 18
  16 [-]: GETTABLE  R7 R1 R6     ; R7 := R1[R6]
  17 [-]: ADD       R2 R2 R7     ; R2 := R2 + R7
  18 [-]: FORLOOP   R3 16        ; R3 += R5; if R3 <= R4 then begin PC := 16; R6 := R3 end
  19 [-]: GETGLOBAL R7 K1        ; R7 := 0xc163f229
- 20 [-]: LOADK     R8 0         ; R8 := 0.000000
- 21 [-]: LOADK     R9 1         ; R9 := 1.000000
+ 20 [-]: CONST     R8 0         ; R8 := 0.000000
+ 21 [-]: CONST     R9 1         ; R9 := 1.000000
  22 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
  23 [-]: MUL       R7 R7 R2     ; R7 := R7 * R2
- 24 [-]: LOADK     R8 1         ; R8 := 1.000000
+ 24 [-]: CONST     R8 1         ; R8 := 1.000000
  25 [-]: LEN       R9 R0        ; R9 := # R0
- 26 [-]: LOADK     R10 1        ; R10 := 1.000000
+ 26 [-]: CONST     R10 1        ; R10 := 1.000000
  27 [-]: FORPREP   R8 35        ; R8 -= R10; PC := 35
  28 [-]: GETTABLE  R12 R1 R11   ; R12 := R1[R11]
  29 [-]: LE        0 R7 R12     ; if R7 > R12 then PC := 33
@@ -71,7 +71,7 @@
  34 [-]: SUB       R7 R7 R12    ; R7 := R7 - R12
  35 [-]: FORLOOP   R8 28        ; R8 += R10; if R8 <= R9 then begin PC := 28; R11 := R8 end
  36 [-]: GETGLOBAL R12 K0       ; R12 := 0x55730e1a
- 37 [-]: LOADK     R13 1        ; R13 := 1.000000
+ 37 [-]: CONST     R13 1        ; R13 := 1.000000
  38 [-]: LEN       R14 R0       ; R14 := # R0
  39 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
  40 [-]: GETTABLE  R12 R0 R12   ; R12 := R0[R12]
@@ -89,7 +89,7 @@
 ; Max Stack Size:  6
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0x55730e1a
-  2 [-]: LOADK     R2 1         ; R2 := 1.000000
+  2 [-]: CONST     R2 1         ; R2 := 1.000000
   3 [-]: LEN       R3 R0        ; R3 := # R0
   4 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
   5 [-]: GETTABLE  R2 R0 R1     ; R2 := R0[R1]
@@ -142,7 +142,7 @@
  29 [-]: SELF      R7 R4 K10    ; R8 := R4; R7 := R4[0x65d389cb]
  30 [-]: CALL      R7 2 2       ; R7 := R7(R8)
  31 [-]: GETGLOBAL R8 K11       ; R8 := 0xc163f229
- 32 [-]: LOADK     R9 1         ; R9 := 1.000000
+ 32 [-]: CONST     R9 1         ; R9 := 1.000000
  33 [-]: GETGLOBAL R10 K7       ; R10 := 0x60bef817
  34 [-]: ADD       R10 K12 R10  ; R10 := 1.000000 + R10
  35 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
@@ -190,9 +190,9 @@
  28 [-]: LOADK     R5 K9        ; R5 := "RarePlantPoint"
  29 [-]: CALL      R4 2 0       ; R4,... := R4(R5)
  30 [-]: CALL      R2 0 2       ; R2 := R2(R3,...)
- 31 [-]: LOADK     R3 1         ; R3 := 1.000000
+ 31 [-]: CONST     R3 1         ; R3 := 1.000000
  32 [-]: GETGLOBAL R4 K10       ; R4 := 0xe1f8b228
- 33 [-]: LOADK     R5 1         ; R5 := 1.000000
+ 33 [-]: CONST     R5 1         ; R5 := 1.000000
  34 [-]: FORPREP   R3 118       ; R3 -= R5; PC := 118
  35 [-]: GETGLOBAL R7 K11       ; R7 := 0xbe190284
  36 [-]: SELF      R8 R7 K12    ; R9 := R7; R8 := R7[0x0eb34c69]
@@ -202,7 +202,7 @@
  40 [-]: EQ        0 R8 K13     ; if R8 ~= 9999.000000 then PC := 51
  41 [-]: JMP       51           ; PC := 51
  42 [-]: GETGLOBAL R9 K14       ; R9 := 0xcbd666e1
- 43 [-]: LOADK     R10 0        ; R10 := 0.000000
+ 43 [-]: CONST     R10 0        ; R10 := 0.000000
  44 [-]: CALL      R9 2 1       ; R9(R10)
  45 [-]: SELF      R9 R7 K12    ; R10 := R7; R9 := R7[0x0eb34c69]
  46 [-]: GETUPVAL  R11 U0       ; R11 := U0

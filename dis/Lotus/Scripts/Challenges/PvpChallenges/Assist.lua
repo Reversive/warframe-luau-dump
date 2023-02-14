@@ -7,7 +7,7 @@
 ; Is_vararg:       2
 ; Max Stack Size:  3
 
-  1 [-]: LOADK     R0 5         ; R0 := 5.000000
+  1 [-]: CONST     R0 5         ; R0 := 5.000000
   2 [-]: GETGLOBAL R1 K0        ; R1 := 0x0469f296
   3 [-]: LOADK     R2 K1        ; R2 := "ASSIST_CHALLENGE"
   4 [-]: CALL      R1 2 2       ; R1 := R1(R2)
@@ -59,9 +59,9 @@
  30 [-]: SELF      R8 R1 K11    ; R9 := R1; R8 := R1[0xad1e0b4b]
  31 [-]: CALL      R8 2 0       ; R8,... := R8(R9)
  32 [-]: CALL      R6 0 2       ; R6 := R6(R7,...)
- 33 [-]: LOADK     R7 1         ; R7 := 1.000000
+ 33 [-]: CONST     R7 1         ; R7 := 1.000000
  34 [-]: LEN       R8 R6        ; R8 := # R6
- 35 [-]: LOADK     R9 1         ; R9 := 1.000000
+ 35 [-]: CONST     R9 1         ; R9 := 1.000000
  36 [-]: FORPREP   R7 67        ; R7 -= R9; PC := 67
  37 [-]: GETTABLE  R11 R6 R10   ; R11 := R6[R10]
  38 [-]: SELF      R11 R11 K0   ; R12 := R11; R11 := R11[0x5ca33548]
@@ -117,7 +117,7 @@
  88 [-]: GETGLOBAL R13 K8       ; R13 := 0x0a8f62a7
  89 [-]: CALL      R13 1 2      ; R13 := R13()
  90 [-]: SETTABLE  R12 R4 R13   ; R12[R4] := R13
- 91 [-]: LOADBOOL  R12 0 0      ; R12 := false
+ 91 [-]: LOADKB    R12 0 0      ; R12 := false
  92 [-]: RETURN    R12 2        ; return R12
  93 [-]: RETURN    R0 1         ; return 
 

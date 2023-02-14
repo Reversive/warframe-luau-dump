@@ -33,9 +33,9 @@
   3 [-]: GETGLOBAL R2 K2        ; R2 := gZoneAttribsType
   4 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
   5 [-]: NEWTABLE  R1 0 0       ; R1 := {}
-  6 [-]: LOADK     R2 1         ; R2 := 1.000000
+  6 [-]: CONST     R2 1         ; R2 := 1.000000
   7 [-]: LEN       R3 R0        ; R3 := # R0
-  8 [-]: LOADK     R4 1         ; R4 := 1.000000
+  8 [-]: CONST     R4 1         ; R4 := 1.000000
   9 [-]: FORPREP   R2 35        ; R2 -= R4; PC := 35
  10 [-]: GETGLOBAL R6 K3        ; R6 := 0x7b998233
  11 [-]: GETTABLE  R7 R0 R5     ; R7 := R0[R5]
@@ -99,9 +99,9 @@
  69 [-]: CALL      R13 4 1      ; R13(R14,R15,R16)
  70 [-]: TFORLOOP  R8 2         ; R11,R12 :=  R8(R9,R10); if R11 ~= nil then begin PC = 49; R10 := R11 end
  71 [-]: JMP       49           ; PC := 49
- 72 [-]: LOADK     R13 1        ; R13 := 1.000000
+ 72 [-]: CONST     R13 1        ; R13 := 1.000000
  73 [-]: LEN       R14 R1       ; R14 := # R1
- 74 [-]: LOADK     R15 1        ; R15 := 1.000000
+ 74 [-]: CONST     R15 1        ; R15 := 1.000000
  75 [-]: FORPREP   R13 92       ; R13 -= R15; PC := 92
  76 [-]: GETGLOBAL R17 K3       ; R17 := 0x7b998233
  77 [-]: GETTABLE  R18 R1 R16   ; R18 := R1[R16]
@@ -117,7 +117,7 @@
  87 [-]: GETGLOBAL R19 K27      ; R19 := 0x329ceb02
  88 [-]: CALL      R17 3 1      ; R17(R18,R19)
  89 [-]: GETGLOBAL R17 K28      ; R17 := 0xcbd666e1
- 90 [-]: LOADK     R18 0        ; R18 := 0.000000
+ 90 [-]: CONST     R18 0        ; R18 := 0.000000
  91 [-]: CALL      R17 2 1      ; R17(R18)
  92 [-]: FORLOOP   R13 76       ; R13 += R15; if R13 <= R14 then begin PC := 76; R16 := R13 end
  93 [-]: GETGLOBAL R17 K29      ; R17 := 0x78d35867
@@ -159,9 +159,9 @@
   2 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0xfb669000]
   3 [-]: GETGLOBAL R2 K2        ; R2 := gZoneAttribsType
   4 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
-  5 [-]: LOADK     R1 1         ; R1 := 1.000000
+  5 [-]: CONST     R1 1         ; R1 := 1.000000
   6 [-]: LEN       R2 R0        ; R2 := # R0
-  7 [-]: LOADK     R3 1         ; R3 := 1.000000
+  7 [-]: CONST     R3 1         ; R3 := 1.000000
   8 [-]: FORPREP   R1 39        ; R1 -= R3; PC := 39
   9 [-]: GETTABLE  R5 R0 R4     ; R5 := R0[R4]
  10 [-]: SELF      R5 R5 K3     ; R6 := R5; R5 := R5[0xe79e7ef4]
@@ -185,7 +185,7 @@
  28 [-]: EQ        1 R6 R7      ; if R6 == R7 then PC := 39
  29 [-]: JMP       39           ; PC := 39
  30 [-]: SELF      R7 R5 K9     ; R8 := R5; R7 := R5[0x31376c14]
- 31 [-]: LOADBOOL  R9 1 0       ; R9 := true
+ 31 [-]: LOADKB    R9 1 0       ; R9 := true
  32 [-]: CALL      R7 3 1       ; R7(R8,R9)
  33 [-]: SELF      R7 R5 K10    ; R8 := R5; R7 := R5[0x16a61ad1]
  34 [-]: GETGLOBAL R9 K11       ; R9 := 0x88fc99a9
@@ -204,9 +204,9 @@
  47 [-]: CALL      R7 2 2       ; R7 := R7(R8)
  48 [-]: TEST      R7 0         ; if not R7 then PC := 102
  49 [-]: JMP       102          ; PC := 102
- 50 [-]: LOADK     R7 1         ; R7 := 1.000000
+ 50 [-]: CONST     R7 1         ; R7 := 1.000000
  51 [-]: LEN       R8 R0        ; R8 := # R0
- 52 [-]: LOADK     R9 1         ; R9 := 1.000000
+ 52 [-]: CONST     R9 1         ; R9 := 1.000000
  53 [-]: FORPREP   R7 100       ; R7 -= R9; PC := 100
  54 [-]: GETTABLE  R11 R0 R10   ; R11 := R0[R10]
  55 [-]: SELF      R11 R11 K4   ; R12 := R11; R11 := R11[0x22da1852]
@@ -260,7 +260,7 @@
 103 [-]: SELF      R15 R15 K1   ; R16 := R15; R15 := R15[0xfb669000]
 104 [-]: GETGLOBAL R17 K14      ; R17 := 0x677b6655
 105 [-]: CALL      R15 3 2      ; R15 := R15(R16,R17)
-106 [-]: LOADK     R16 0        ; R16 := 0.000000
+106 [-]: CONST     R16 0        ; R16 := 0.000000
 107 [-]: GETGLOBAL R17 K5       ; R17 := 0x7b998233
 108 [-]: MOVE      R18 R15      ; R18 := R15
 109 [-]: CALL      R17 2 2      ; R17 := R17(R18)
@@ -280,7 +280,7 @@
 123 [-]: CALL      R17 1 2      ; R17 := R17()
 124 [-]: ADD       R16 R16 R17  ; R16 := R16 + R17
 125 [-]: GETGLOBAL R17 K33      ; R17 := 0xcbd666e1
-126 [-]: LOADK     R18 0        ; R18 := 0.000000
+126 [-]: CONST     R18 0        ; R18 := 0.000000
 127 [-]: CALL      R17 2 1      ; R17(R18)
 128 [-]: JMP       107          ; PC := 107
 129 [-]: GETGLOBAL R17 K34      ; R17 := 0xc8802016

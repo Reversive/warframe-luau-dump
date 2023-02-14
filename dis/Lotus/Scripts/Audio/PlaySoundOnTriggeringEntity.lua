@@ -30,7 +30,7 @@
   7 [-]: JMP       12           ; PC := 12
   8 [-]: SELF      R2 R1 K2     ; R3 := R1; R2 := R1[0x659d451f]
   9 [-]: GETGLOBAL R4 K3        ; R4 := 0x520e413d
- 10 [-]: LOADBOOL  R5 0 0       ; R5 := false
+ 10 [-]: LOADKB    R5 0 0       ; R5 := false
  11 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
  12 [-]: RETURN    R0 1         ; return 
 

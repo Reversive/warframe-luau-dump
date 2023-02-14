@@ -47,12 +47,12 @@
  22 [-]: GETGLOBAL R3 K8        ; R3 := _T
  23 [-]: GETTABLE  R3 R3 K9     ; R3 := R3[0x659270d0]
  24 [-]: LOADK     R4 K10       ; R4 := "/Lotus/Language/Game/RestorativeErrorOutOfRange"
- 25 [-]: LOADK     R5 2         ; R5 := 2.000000
- 26 [-]: LOADBOOL  R6 1 0       ; R6 := true
+ 25 [-]: CONST     R5 2         ; R5 := 2.000000
+ 26 [-]: LOADKB    R6 1 0       ; R6 := true
  27 [-]: LOADNIL   R7 R7        ; R7 := nil
- 28 [-]: LOADBOOL  R8 0 0       ; R8 := false
+ 28 [-]: LOADKB    R8 0 0       ; R8 := false
  29 [-]: CALL      R3 6 1       ; R3(R4,R5,R6,R7,R8)
- 30 [-]: LOADBOOL  R3 0 0       ; R3 := false
+ 30 [-]: LOADKB    R3 0 0       ; R3 := false
  31 [-]: RETURN    R3 2         ; return R3
  32 [-]: GETGLOBAL R3 K0        ; R3 := 0x89326c93
  33 [-]: SELF      R3 R3 K11    ; R4 := R3; R3 := R3[0x8b5b1f58]
@@ -84,17 +84,17 @@
  59 [-]: GETGLOBAL R9 K8        ; R9 := _T
  60 [-]: GETTABLE  R9 R9 K9     ; R9 := R9[0x659270d0]
  61 [-]: LOADK     R10 K16      ; R10 := "/Lotus/Language/Game/RestorativeErrorTeammateOutOfRange"
- 62 [-]: LOADK     R11 2        ; R11 := 2.500000
- 63 [-]: LOADBOOL  R12 1 0      ; R12 := true
+ 62 [-]: CONST     R11 2        ; R11 := 2.500000
+ 63 [-]: LOADKB    R12 1 0      ; R12 := true
  64 [-]: LOADNIL   R13 R13      ; R13 := nil
- 65 [-]: LOADBOOL  R14 0 0      ; R14 := false
+ 65 [-]: LOADKB    R14 0 0      ; R14 := false
  66 [-]: CALL      R9 6 1       ; R9(R10,R11,R12,R13,R14)
  67 [-]: GETGLOBAL R9 K8        ; R9 := _T
  68 [-]: GETTABLE  R9 R9 K13    ; R9 := R9["fomorianNegator"]
  69 [-]: SELF      R10 R0 K15   ; R11 := R0; R10 := R0[0x388577d5]
  70 [-]: CALL      R10 2 2      ; R10 := R10(R11)
  71 [-]: SETTABLE  R9 R10 K17   ; R9[R10] := true
- 72 [-]: LOADBOOL  R9 0 0       ; R9 := false
+ 72 [-]: LOADKB    R9 0 0       ; R9 := false
  73 [-]: RETURN    R9 2         ; return R9
  74 [-]: TFORLOOP  R4 2         ; R7,R8 :=  R4(R5,R6); if R7 ~= nil then begin PC = 39; R6 := R7 end
  75 [-]: JMP       39           ; PC := 39
@@ -116,7 +116,7 @@
  91 [-]: SELF      R10 R0 K15   ; R11 := R0; R10 := R0[0x388577d5]
  92 [-]: CALL      R10 2 2      ; R10 := R10(R11)
  93 [-]: SETTABLE  R9 R10 K17   ; R9[R10] := true
- 94 [-]: LOADBOOL  R9 1 0       ; R9 := true
+ 94 [-]: LOADKB    R9 1 0       ; R9 := true
  95 [-]: RETURN    R9 2         ; return R9
  96 [-]: RETURN    R0 1         ; return 
 
@@ -165,10 +165,10 @@
  33 [-]: JMP       41           ; PC := 41
  34 [-]: SELF      R9 R8 K11    ; R10 := R8; R9 := R8[0x7027c544]
  35 [-]: GETGLOBAL R11 K10      ; R11 := 0x2cb70b14
- 36 [-]: LOADBOOL  R12 0 0      ; R12 := false
- 37 [-]: LOADK     R13 3        ; R13 := 3.000000
- 38 [-]: LOADK     R14 1        ; R14 := 1.000000
- 39 [-]: LOADBOOL  R15 1 0      ; R15 := true
+ 36 [-]: LOADKB    R12 0 0      ; R12 := false
+ 37 [-]: CONST     R13 3        ; R13 := 3.000000
+ 38 [-]: CONST     R14 1        ; R14 := 1.000000
+ 39 [-]: LOADKB    R15 1 0      ; R15 := true
  40 [-]: CALL      R9 7 1       ; R9(R10,R11,R12,R13,R14,R15)
  41 [-]: GETGLOBAL R9 K1        ; R9 := 0x89326c93
  42 [-]: SELF      R9 R9 K13    ; R10 := R9; R9 := R9[0x18d05d30]
@@ -209,10 +209,10 @@
  77 [-]: CALL      R11 2 2      ; R11 := R11(R12)
  78 [-]: SELF      R12 R0 K11   ; R13 := R0; R12 := R0[0x7027c544]
  79 [-]: GETGLOBAL R14 K10      ; R14 := 0x2cb70b14
- 80 [-]: LOADBOOL  R15 0 0      ; R15 := false
- 81 [-]: LOADK     R16 3        ; R16 := 3.000000
- 82 [-]: LOADK     R17 1        ; R17 := 1.000000
- 83 [-]: LOADBOOL  R18 1 0      ; R18 := true
+ 80 [-]: LOADKB    R15 0 0      ; R15 := false
+ 81 [-]: CONST     R16 3        ; R16 := 3.000000
+ 82 [-]: CONST     R17 1        ; R17 := 1.000000
+ 83 [-]: LOADKB    R18 1 0      ; R18 := true
  84 [-]: CALL      R12 7 0      ; R12,... := R12(R13,R14,R15,R16,R17,R18)
  85 [-]: CALL      R9 0 1       ; R9(R10,...)
  86 [-]: GETGLOBAL R9 K0        ; R9 := 0x7b998233

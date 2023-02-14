@@ -55,7 +55,7 @@
  32 [-]: JMP       58           ; PC := 58
  33 [-]: SELF      R2 R1 K8     ; R3 := R1; R2 := R1[0x768274d6]
  34 [-]: GETGLOBAL R4 K7        ; R4 := 0x6503f39d
- 35 [-]: LOADBOOL  R5 1 0       ; R5 := true
+ 35 [-]: LOADKB    R5 1 0       ; R5 := true
  36 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
  37 [-]: SELF      R2 R1 K9     ; R3 := R1; R2 := R1[0x905bb2bd]
  38 [-]: CALL      R2 2 2       ; R2 := R2(R3)

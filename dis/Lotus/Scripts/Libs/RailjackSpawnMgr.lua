@@ -18,9 +18,9 @@
   9 [-]: GETGLOBAL R1 K3        ; R1 := 0x2d0fad09
  10 [-]: LOADK     R2 K5        ; R2 := "Lotus.Scripts.Libs.TableLib"
  11 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 12 [-]: LOADK     R2 80        ; R2 := 80.000000
- 13 [-]: LOADK     R3 81        ; R3 := 81.000000
- 14 [-]: LOADK     R4 50        ; R4 := 50.000000
+ 12 [-]: CONST     R2 80        ; R2 := 80.000000
+ 13 [-]: CONST     R3 81        ; R3 := 81.000000
+ 14 [-]: CONST     R4 50        ; R4 := 50.000000
  15 [-]: GETGLOBAL R5 K6        ; R5 := 0x0469f296
  16 [-]: LOADK     R6 K7        ; R6 := "Dead-End"
  17 [-]: CALL      R5 2 2       ; R5 := R5(R6)
@@ -73,10 +73,10 @@
   2 [-]: GETTABLE  R2 R2 K0     ; R2 := R2[0x6696a66c]
   3 [-]: GETTABLE  R3 R0 K1     ; R3 := R0["mCrewShip"]
   4 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  5 [-]: LOADBOOL  R3 0 0       ; R3 := false
+  5 [-]: LOADKB    R3 0 0       ; R3 := false
   6 [-]: LEN       R4 R1        ; R4 := # R1
-  7 [-]: LOADK     R5 1         ; R5 := 1.000000
-  8 [-]: LOADK     R6 -1        ; R6 := -1.000000
+  7 [-]: CONST     R5 1         ; R5 := 1.000000
+  8 [-]: CONST     R6 -1        ; R6 := -1.000000
   9 [-]: FORPREP   R4 60        ; R4 -= R6; PC := 60
  10 [-]: GETTABLE  R8 R1 R7     ; R8 := R1[R7]
  11 [-]: GETGLOBAL R9 K2        ; R9 := 0x7b998233
@@ -95,8 +95,8 @@
  24 [-]: GETGLOBAL R11 K7       ; R11 := gLotusAvatarType
  25 [-]: SELF      R12 R8 K8    ; R13 := R8; R12 := R8[0xd1586535]
  26 [-]: CALL      R12 2 2      ; R12 := R12(R13)
- 27 [-]: LOADK     R13 0        ; R13 := 0.000000
- 28 [-]: LOADK     R14 3        ; R14 := 3.000000
+ 27 [-]: CONST     R13 0        ; R13 := 0.000000
+ 28 [-]: CONST     R14 3        ; R14 := 3.000000
  29 [-]: CALL      R9 6 2       ; R9 := R9(R10,R11,R12,R13,R14)
  30 [-]: LEN       R10 R9       ; R10 := # R9
  31 [-]: EQ        0 R10 K9     ; if R10 ~= 0.000000 then PC := 60
@@ -110,7 +110,7 @@
  39 [-]: CALL      R15 3 2      ; R15 := R15(R16,R17)
  40 [-]: LT        0 K12 R15    ; if 0.100000 >= R15 then PC := 44
  41 [-]: JMP       44           ; PC := 44
- 42 [-]: LOADBOOL  R3 1 0       ; R3 := true
+ 42 [-]: LOADKB    R3 1 0       ; R3 := true
  43 [-]: JMP       46           ; PC := 46
  44 [-]: TFORLOOP  R10 2        ; R13,R14 :=  R10(R11,R12); if R13 ~= nil then begin PC = 37; R12 := R13 end
  45 [-]: JMP       37           ; PC := 37
@@ -127,7 +127,7 @@
  56 [-]: MOVE      R17 R8       ; R17 := R8
  57 [-]: CALL      R15 3 1      ; R15(R16,R17)
  58 [-]: RETURN    R8 2         ; return R8
- 59 [-]: LOADBOOL  R3 0 0       ; R3 := false
+ 59 [-]: LOADKB    R3 0 0       ; R3 := false
  60 [-]: FORLOOP   R4 10        ; R4 += R6; if R4 <= R5 then begin PC := 10; R7 := R4 end
  61 [-]: LOADNIL   R15 R15      ; R15 := nil
  62 [-]: RETURN    R15 2        ; return R15
@@ -147,11 +147,11 @@
   2 [-]: SELF      R2 R2 K1     ; R3 := R2; R2 := R2[0xd1b469e9]
   3 [-]: GETTABLE  R4 R0 K2     ; R4 := R0["mAiSpec"]
   4 [-]: GETTABLE  R5 R0 K3     ; R5 := R0["mFaction"]
-  5 [-]: LOADK     R6 0         ; R6 := 0.000000
-  6 [-]: LOADBOOL  R7 1 0       ; R7 := true
-  7 [-]: LOADBOOL  R8 0 0       ; R8 := false
+  5 [-]: CONST     R6 0         ; R6 := 0.000000
+  6 [-]: LOADKB    R7 1 0       ; R7 := true
+  7 [-]: LOADKB    R8 0 0       ; R8 := false
   8 [-]: GETTABLE  R9 R1 K4     ; R9 := R1["AgentTier"]
-  9 [-]: LOADBOOL  R10 1 0      ; R10 := true
+  9 [-]: LOADKB    R10 1 0      ; R10 := true
  10 [-]: CALL      R2 9 2       ; R2 := R2(R3,R4,R5,R6,R7,R8,R9,R10)
  11 [-]: GETGLOBAL R3 K5        ; R3 := 0x7b998233
  12 [-]: MOVE      R4 R2        ; R4 := R2
@@ -169,11 +169,11 @@
  24 [-]: SELF      R3 R3 K1     ; R4 := R3; R3 := R3[0xd1b469e9]
  25 [-]: GETTABLE  R5 R0 K2     ; R5 := R0["mAiSpec"]
  26 [-]: GETTABLE  R6 R0 K3     ; R6 := R0["mFaction"]
- 27 [-]: LOADK     R7 0         ; R7 := 0.000000
- 28 [-]: LOADBOOL  R8 1 0       ; R8 := true
- 29 [-]: LOADBOOL  R9 0 0       ; R9 := false
+ 27 [-]: CONST     R7 0         ; R7 := 0.000000
+ 28 [-]: LOADKB    R8 1 0       ; R8 := true
+ 29 [-]: LOADKB    R9 0 0       ; R9 := false
  30 [-]: GETTABLE  R10 R0 K9    ; R10 := R0["crewTier"]
- 31 [-]: LOADBOOL  R11 1 0      ; R11 := true
+ 31 [-]: LOADKB    R11 1 0      ; R11 := true
  32 [-]: CALL      R3 9 2       ; R3 := R3(R4,R5,R6,R7,R8,R9,R10,R11)
  33 [-]: MOVE      R2 R3        ; R2 := R3
  34 [-]: GETTABLE  R3 R0 K10    ; R3 := R0["mTileData"]
@@ -263,7 +263,7 @@
 118 [-]: SELF      R8 R8 K37    ; R9 := R8; R8 := R8[0x50a314f9]
 119 [-]: SELF      R10 R7 K35   ; R11 := R7; R10 := R7[0xd1586535]
 120 [-]: CALL      R10 2 2      ; R10 := R10(R11)
-121 [-]: LOADK     R11 300      ; R11 := 300.000000
+121 [-]: CONST     R11 300      ; R11 := 300.000000
 122 [-]: CALL      R8 4 2       ; R8 := R8(R9,R10,R11)
 123 [-]: SELF      R9 R5 K28    ; R10 := R5; R9 := R5[0xa64a1f4a]
 124 [-]: MOVE      R11 R8       ; R11 := R8
@@ -277,7 +277,7 @@
 132 [-]: GETTABLE  R9 R0 K39    ; R9 := R0[0x304c9b5b]
 133 [-]: MOVE      R10 R5       ; R10 := R5
 134 [-]: CALL      R9 2 1       ; R9(R10)
-135 [-]: LOADBOOL  R9 1 0       ; R9 := true
+135 [-]: LOADKB    R9 1 0       ; R9 := true
 136 [-]: RETURN    R9 2         ; return R9
 137 [-]: JMP       180          ; PC := 180
 138 [-]: GETGLOBAL R9 K5        ; R9 := 0x7b998233
@@ -322,7 +322,7 @@
 177 [-]: LOADK     R12 K47      ; R12 := ", could not find a spawn"
 178 [-]: CONCAT    R10 R10 R12  ; R10 := R10 .. R11 .. R12
 179 [-]: CALL      R9 2 1       ; R9(R10)
-180 [-]: LOADBOOL  R9 0 0       ; R9 := false
+180 [-]: LOADKB    R9 0 0       ; R9 := false
 181 [-]: RETURN    R9 2         ; return R9
 182 [-]: RETURN    R0 1         ; return 
 
@@ -436,7 +436,7 @@
   2 [-]: GETTABLE  R3 R0 K1     ; R3 := R0["mTileData"]
   3 [-]: GETTABLE  R3 R3 R1     ; R3 := R3[R1]
   4 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  5 [-]: NOT       R2 R2        ; R2 := not R2
+  5 [-]: NOT       R2 R2        ; R2 :=  R2
   6 [-]: RETURN    R2 2         ; return R2
   7 [-]: RETURN    R0 1         ; return 
 
@@ -581,17 +581,17 @@
  55 [-]: SETTABLE  R3 K29 K22   ; R3["mSpawnLayerIndex"] := 0.000000
  56 [-]: SETTABLE  R3 K30 K11   ; R3["mTileData"] := nil
  57 [-]: NEWTABLE  R4 4 0       ; R4 := {}
- 58 [-]: LOADK     R5 4         ; R5 := 4.000000
- 59 [-]: LOADK     R6 5         ; R6 := 5.000000
- 60 [-]: LOADK     R7 7         ; R7 := 7.000000
- 61 [-]: LOADK     R8 8         ; R8 := 8.000000
+ 58 [-]: CONST     R5 4         ; R5 := 4.000000
+ 59 [-]: CONST     R6 5         ; R6 := 5.000000
+ 60 [-]: CONST     R7 7         ; R7 := 7.000000
+ 61 [-]: CONST     R8 8         ; R8 := 8.000000
  62 [-]: SETLIST   R4 4 1       ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 4
  63 [-]: SETTABLE  R3 K31 R4    ; R3["MIN_REINFORCE_COUNT"] := R4
  64 [-]: NEWTABLE  R4 4 0       ; R4 := {}
- 65 [-]: LOADK     R5 7         ; R5 := 7.000000
- 66 [-]: LOADK     R6 8         ; R6 := 8.000000
- 67 [-]: LOADK     R7 10        ; R7 := 10.000000
- 68 [-]: LOADK     R8 12        ; R8 := 12.000000
+ 65 [-]: CONST     R5 7         ; R5 := 7.000000
+ 66 [-]: CONST     R6 8         ; R6 := 8.000000
+ 67 [-]: CONST     R7 10        ; R7 := 10.000000
+ 68 [-]: CONST     R8 12        ; R8 := 12.000000
  69 [-]: SETLIST   R4 4 1       ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 4
  70 [-]: SETTABLE  R3 K32 R4    ; R3["MAX_REINFORCE_COUNT"] := R4
  71 [-]: SETTABLE  R3 K33 K11   ; R3["mAgentSpawnedCallback"] := nil
@@ -599,17 +599,17 @@
  73 [-]: SETTABLE  R3 K35 K24   ; R3["mMinimumSpawns"] := false
  74 [-]: SETTABLE  R3 K36 K24   ; R3["mAllowSpawnInView"] := false
  75 [-]: NEWTABLE  R4 4 0       ; R4 := {}
- 76 [-]: LOADK     R5 10        ; R5 := 10.000000
- 77 [-]: LOADK     R6 9         ; R6 := 9.000000
- 78 [-]: LOADK     R7 7         ; R7 := 7.000000
- 79 [-]: LOADK     R8 5         ; R8 := 5.000000
+ 76 [-]: CONST     R5 10        ; R5 := 10.000000
+ 77 [-]: CONST     R6 9         ; R6 := 9.000000
+ 78 [-]: CONST     R7 7         ; R7 := 7.000000
+ 79 [-]: CONST     R8 5         ; R8 := 5.000000
  80 [-]: SETLIST   R4 4 1       ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 4
  81 [-]: SETTABLE  R3 K37 R4    ; R3["REINFORCE_TIME"] := R4
  82 [-]: NEWTABLE  R4 4 0       ; R4 := {}
- 83 [-]: LOADK     R5 2         ; R5 := 2.000000
- 84 [-]: LOADK     R6 2         ; R6 := 2.000000
- 85 [-]: LOADK     R7 4         ; R7 := 4.000000
- 86 [-]: LOADK     R8 6         ; R8 := 6.000000
+ 83 [-]: CONST     R5 2         ; R5 := 2.000000
+ 84 [-]: CONST     R6 2         ; R6 := 2.000000
+ 85 [-]: CONST     R7 4         ; R7 := 4.000000
+ 86 [-]: CONST     R8 6         ; R8 := 6.000000
  87 [-]: SETLIST   R4 4 1       ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 4
  88 [-]: SETTABLE  R3 K38 R4    ; R3["REINFORCE_THRESHOLD"] := R4
  89 [-]: SETTABLE  R3 K39 K40   ; R3["mReinforceTime"] := 10.000000
@@ -725,8 +725,8 @@
 199 [-]: CALL      R9 3 2       ; R9 := R9(R10,R11)
 200 [-]: LOADNIL   R10 R10      ; R10 := nil
 201 [-]: LEN       R11 R9       ; R11 := # R9
-202 [-]: LOADK     R12 1        ; R12 := 1.000000
-203 [-]: LOADK     R13 -1       ; R13 := -1.000000
+202 [-]: CONST     R12 1        ; R12 := 1.000000
+203 [-]: CONST     R13 -1       ; R13 := -1.000000
 204 [-]: FORPREP   R11 231      ; R11 -= R13; PC := 231
 205 [-]: GETTABLE  R15 R9 R14   ; R15 := R9[R14]
 206 [-]: SELF      R16 R15 K87  ; R17 := R15; R16 := R15[0x22da1852]
@@ -767,7 +767,7 @@
 241 [-]: GETGLOBAL R17 K88      ; R17 := 0x33bdd652
 242 [-]: GETTABLE  R17 R17 K92  ; R17 := R17[0x23d5322f]
 243 [-]: GETTABLE  R18 R3 K20   ; R18 := R3["mCustomSpawns"]
-244 [-]: LOADK     R19 1        ; R19 := 1.000000
+244 [-]: CONST     R19 1        ; R19 := 1.000000
 245 [-]: MOVE      R20 R10      ; R20 := R10
 246 [-]: CALL      R17 4 1      ; R17(R18,R19,R20)
 247 [-]: NEWTABLE  R17 0 0      ; R17 := {}
@@ -869,7 +869,7 @@
 343 [-]: MOVE      R35 R32      ; R35 := R32
 344 [-]: SELF      R36 R31 K103 ; R37 := R31; R36 := R31[0xd1586535]
 345 [-]: CALL      R36 2 2      ; R36 := R36(R37)
-346 [-]: LOADK     R37 5        ; R37 := 5.000000
+346 [-]: CONST     R37 5        ; R37 := 5.000000
 347 [-]: CALL      R33 5 2      ; R33 := R33(R34,R35,R36,R37)
 348 [-]: NEWTABLE  R34 0 0      ; R34 := {}
 349 [-]: GETGLOBAL R35 K0       ; R35 := 0x7b998233
@@ -952,8 +952,8 @@
 
   1 [-]: GETTABLE  R4 R0 K0     ; R4 := R0["mCustomSpawns"]
   2 [-]: LEN       R4 R4        ; R4 := # R4
-  3 [-]: LOADK     R5 1         ; R5 := 1.000000
-  4 [-]: LOADK     R6 -1        ; R6 := -1.000000
+  3 [-]: CONST     R5 1         ; R5 := 1.000000
+  4 [-]: CONST     R6 -1        ; R6 := -1.000000
   5 [-]: FORPREP   R4 38        ; R4 -= R6; PC := 38
   6 [-]: GETTABLE  R8 R0 K0     ; R8 := R0["mCustomSpawns"]
   7 [-]: GETTABLE  R8 R8 R7     ; R8 := R8[R7]
@@ -1040,7 +1040,7 @@
 ; Max Stack Size:  16
 
   1 [-]: SETTABLE  R0 K0 K1     ; R0["mMinimumSpawns"] := true
-  2 [-]: LOADK     R2 0         ; R2 := 0.000000
+  2 [-]: CONST     R2 0         ; R2 := 0.000000
   3 [-]: GETGLOBAL R3 K2        ; R3 := 0xcfc01047
   4 [-]: GETTABLE  R4 R0 K3     ; R4 := R0["mTileData"]
   5 [-]: CALL      R3 2 4       ; R3,R4,R5 := R3(R4)
@@ -1112,9 +1112,9 @@
 ; Is_vararg:       0
 ; Max Stack Size:  12
 
-  1 [-]: LOADK     R2 1         ; R2 := 1.000000
+  1 [-]: CONST     R2 1         ; R2 := 1.000000
   2 [-]: MOVE      R3 R1        ; R3 := R1
-  3 [-]: LOADK     R4 1         ; R4 := 1.000000
+  3 [-]: CONST     R4 1         ; R4 := 1.000000
   4 [-]: FORPREP   R2 16        ; R2 -= R4; PC := 16
   5 [-]: GETTABLE  R6 R0 K0     ; R6 := R0["mCustomSpawns"]
   6 [-]: GETTABLE  R6 R6 R5     ; R6 := R6[R5]
@@ -1181,7 +1181,7 @@
  12 [-]: SELF      R9 R9 K6     ; R10 := R9; R9 := R9[0x50a314f9]
  13 [-]: SELF      R11 R8 K7    ; R12 := R8; R11 := R8[0xd1586535]
  14 [-]: CALL      R11 2 2      ; R11 := R11(R12)
- 15 [-]: LOADK     R12 300      ; R12 := 300.000000
+ 15 [-]: CONST     R12 300      ; R12 := 300.000000
  16 [-]: CALL      R9 4 2       ; R9 := R9(R10,R11,R12)
  17 [-]: SELF      R10 R7 K8    ; R11 := R7; R10 := R7[0xa64a1f4a]
  18 [-]: MOVE      R12 R9       ; R12 := R9
@@ -1213,7 +1213,7 @@
  10 [-]: GETTABLE  R4 R2 K3     ; R4 := R2["CustomSpawns"]
  11 [-]: GETGLOBAL R5 K4        ; R5 := 0x5bced4c4
  12 [-]: GETTABLE  R5 R5 K5     ; R5 := R5[0xac1b386a]
- 13 [-]: LOADK     R6 1         ; R6 := 1.000000
+ 13 [-]: CONST     R6 1         ; R6 := 1.000000
  14 [-]: LEN       R7 R3        ; R7 := # R3
  15 [-]: LEN       R8 R4        ; R8 := # R4
  16 [-]: ADD       R7 R7 R8     ; R7 := R7 + R8
@@ -1316,7 +1316,7 @@
 113 [-]: JMP       122          ; PC := 122
 114 [-]: GETGLOBAL R23 K4       ; R23 := 0x5bced4c4
 115 [-]: GETTABLE  R23 R23 K40  ; R23 := R23[0xb62ecfe0]
-116 [-]: LOADK     R24 0        ; R24 := 0.000000
+116 [-]: CONST     R24 0        ; R24 := 0.000000
 117 [-]: GETTABLE  R25 R0 K41   ; R25 := R0["mAgentsToSpawn"]
 118 [-]: LEN       R25 R25      ; R25 := # R25
 119 [-]: SUB       R25 R8 R25   ; R25 := R8 - R25
@@ -1333,9 +1333,9 @@
 130 [-]: CALL      R23 2 1      ; R23(R24)
 131 [-]: SETTABLE  R2 K45 R7    ; R2["NumToSpawn"] := R7
 132 [-]: NEWTABLE  R23 0 0      ; R23 := {}
-133 [-]: LOADK     R24 1        ; R24 := 1.000000
+133 [-]: CONST     R24 1        ; R24 := 1.000000
 134 [-]: MOVE      R25 R7       ; R25 := R7
-135 [-]: LOADK     R26 1        ; R26 := 1.000000
+135 [-]: CONST     R26 1        ; R26 := 1.000000
 136 [-]: FORPREP   R24 181      ; R24 -= R26; PC := 181
 137 [-]: LOADNIL   R28 R28      ; R28 := nil
 138 [-]: GETTABLE  R29 R0 K46   ; R29 := R0["crewTier"]
@@ -1358,7 +1358,7 @@
 155 [-]: GETGLOBAL R30 K51      ; R30 := 0x33bdd652
 156 [-]: GETTABLE  R30 R30 K52  ; R30 := R30[0x9c1f3b5a]
 157 [-]: MOVE      R31 R4       ; R31 := R4
-158 [-]: LOADK     R32 1        ; R32 := 1.000000
+158 [-]: CONST     R32 1        ; R32 := 1.000000
 159 [-]: CALL      R30 3 1      ; R30(R31,R32)
 160 [-]: TEST      R28 1        ; if R28 then PC := 176
 161 [-]: JMP       176          ; PC := 176
@@ -1369,7 +1369,7 @@
 166 [-]: GETGLOBAL R30 K51      ; R30 := 0x33bdd652
 167 [-]: GETTABLE  R30 R30 K52  ; R30 := R30[0x9c1f3b5a]
 168 [-]: MOVE      R31 R3       ; R31 := R3
-169 [-]: LOADK     R32 1        ; R32 := 1.000000
+169 [-]: CONST     R32 1        ; R32 := 1.000000
 170 [-]: CALL      R30 3 1      ; R30(R31,R32)
 171 [-]: GETGLOBAL R30 K51      ; R30 := 0x33bdd652
 172 [-]: GETTABLE  R30 R30 K53  ; R30 := R30[0x23d5322f]
@@ -1406,8 +1406,8 @@
   3 [-]: JMP       30           ; PC := 30
   4 [-]: GETTABLE  R1 R0 K1     ; R1 := R0["mAgents"]
   5 [-]: LEN       R1 R1        ; R1 := # R1
-  6 [-]: LOADK     R2 1         ; R2 := 1.000000
-  7 [-]: LOADK     R3 -1        ; R3 := -1.000000
+  6 [-]: CONST     R2 1         ; R2 := 1.000000
+  7 [-]: CONST     R3 -1        ; R3 := -1.000000
   8 [-]: FORPREP   R1 29        ; R1 -= R3; PC := 29
   9 [-]: GETTABLE  R5 R0 K1     ; R5 := R0["mAgents"]
  10 [-]: GETTABLE  R5 R5 R4     ; R5 := R5[R4]
@@ -1457,7 +1457,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  52
 
-  1 [-]: LOADBOOL  R2 0 0       ; R2 := false
+  1 [-]: LOADKB    R2 0 0       ; R2 := false
   2 [-]: TEST      R2 0         ; if not R2 then PC := 171
   3 [-]: JMP       171          ; PC := 171
   4 [-]: GETGLOBAL R2 K0        ; R2 := 0xbe190284
@@ -1465,7 +1465,7 @@
   6 [-]: GETGLOBAL R4 K2        ; R4 := 0x0469f296
   7 [-]: LOADK     R5 K3        ; R5 := "NumAgents"
   8 [-]: CALL      R4 2 2       ; R4 := R4(R5)
-  9 [-]: LOADK     R5 0         ; R5 := 0.000000
+  9 [-]: CONST     R5 0         ; R5 := 0.000000
  10 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
  11 [-]: GETGLOBAL R2 K0        ; R2 := 0xbe190284
  12 [-]: SELF      R2 R2 K1     ; R3 := R2; R2 := R2[0xc7a98999]
@@ -1534,7 +1534,7 @@
  75 [-]: GETGLOBAL R6 K2        ; R6 := 0x0469f296
  76 [-]: LOADK     R7 K20       ; R7 := "HostLayerSpawnPointCount"
  77 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 78 [-]: LOADK     R7 0         ; R7 := 0.000000
+ 78 [-]: CONST     R7 0         ; R7 := 0.000000
  79 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
  80 [-]: GETTABLE  R4 R0 K22    ; R4 := R0["mDefenseMode"]
  81 [-]: TEST      R4 0         ; if not R4 then PC := 90
@@ -1557,11 +1557,11 @@
  98 [-]: GETGLOBAL R11 K2       ; R11 := 0x0469f296
  99 [-]: MOVE      R12 R7       ; R12 := R7
 100 [-]: CALL      R11 2 2      ; R11 := R11(R12)
-101 [-]: LOADK     R12 0        ; R12 := 0.000000
+101 [-]: CONST     R12 0        ; R12 := 0.000000
 102 [-]: CALL      R9 4 1       ; R9(R10,R11,R12)
 103 [-]: TFORLOOP  R4 2         ; R7,R8 :=  R4(R5,R6); if R7 ~= nil then begin PC = 94; R6 := R7 end
 104 [-]: JMP       94           ; PC := 94
-105 [-]: LOADK     R9 0         ; R9 := 0.000000
+105 [-]: CONST     R9 0         ; R9 := 0.000000
 106 [-]: GETTABLE  R10 R0 K28   ; R10 := R0["mHint"]
 107 [-]: SELF      R10 R10 K29  ; R11 := R10; R10 := R10[0x22df603c]
 108 [-]: CALL      R10 2 2      ; R10 := R10(R11)
@@ -1645,10 +1645,10 @@
 186 [-]: CALL      R20 2 2      ; R20 := R20(R21)
 187 [-]: GETGLOBAL R21 K43      ; R21 := 0x5bced4c4
 188 [-]: GETTABLE  R21 R21 K44  ; R21 := R21[0xb62ecfe0]
-189 [-]: LOADK     R22 4        ; R22 := 4.000000
+189 [-]: CONST     R22 4        ; R22 := 4.000000
 190 [-]: GETGLOBAL R23 K43      ; R23 := 0x5bced4c4
 191 [-]: GETTABLE  R23 R23 K45  ; R23 := R23[0xac1b386a]
-192 [-]: LOADK     R24 1        ; R24 := 1.000000
+192 [-]: CONST     R24 1        ; R24 := 1.000000
 193 [-]: GETGLOBAL R25 K6       ; R25 := 0x89326c93
 194 [-]: SELF      R25 R25 K46  ; R26 := R25; R25 := R25[0x5d971903]
 195 [-]: CALL      R25 2 0      ; R25,... := R25(R26)
@@ -1693,21 +1693,21 @@
 234 [-]: LOADK     R30 K55      ; R30 := " agents"
 235 [-]: CONCAT    R28 R28 R30  ; R28 := R28 .. R29 .. R30
 236 [-]: CALL      R27 2 1      ; R27(R28)
-237 [-]: LOADK     R27 1        ; R27 := 1.000000
+237 [-]: CONST     R27 1        ; R27 := 1.000000
 238 [-]: MOVE      R28 R26      ; R28 := R26
-239 [-]: LOADK     R29 1        ; R29 := 1.000000
+239 [-]: CONST     R29 1        ; R29 := 1.000000
 240 [-]: FORPREP   R27 250      ; R27 -= R29; PC := 250
 241 [-]: SELF      R31 R0 K56   ; R32 := R0; R31 := R0[0x4e0d74e4]
 242 [-]: GETTABLE  R33 R0 K57   ; R33 := R0["crewTier"]
 243 [-]: GETGLOBAL R34 K50      ; R34 := 0x55730e1a
-244 [-]: LOADK     R35 1        ; R35 := 1.000000
+244 [-]: CONST     R35 1        ; R35 := 1.000000
 245 [-]: LEN       R36 R25      ; R36 := # R25
 246 [-]: CALL      R34 3 2      ; R34 := R34(R35,R36)
 247 [-]: GETTABLE  R34 R25 R34  ; R34 := R25[R34]
 248 [-]: MOVE      R35 R22      ; R35 := R22
 249 [-]: CALL      R31 5 1      ; R31(R32,R33,R34,R35)
 250 [-]: FORLOOP   R27 241      ; R27 += R29; if R27 <= R28 then begin PC := 241; R30 := R27 end
-251 [-]: LOADBOOL  R31 0 0      ; R31 := false
+251 [-]: LOADKB    R31 0 0      ; R31 := false
 252 [-]: TEST      R31 0        ; if not R31 then PC := 350
 253 [-]: JMP       350          ; PC := 350
 254 [-]: GETGLOBAL R31 K0       ; R31 := 0xbe190284
@@ -1739,7 +1739,7 @@
 280 [-]: GETTABLE  R40 R0 K60   ; R40 := R0["mDoorHintData"]
 281 [-]: CALL      R39 2 4      ; R39,R40,R41 := R39(R40)
 282 [-]: JMP       341          ; PC := 341
-283 [-]: LOADK     R44 0        ; R44 := 0.000000
+283 [-]: CONST     R44 0        ; R44 := 0.000000
 284 [-]: GETTABLE  R45 R43 K61  ; R45 := R43["CurrentLayerIndex"]
 285 [-]: EQ        0 R45 R38    ; if R45 ~= R38 then PC := 289
 286 [-]: JMP       289          ; PC := 289
@@ -1789,7 +1789,7 @@
 330 [-]: JMP       341          ; PC := 341
 331 [-]: GETTABLE  R49 R0 K69   ; R49 := R0["mAiDir"]
 332 [-]: SELF      R49 R49 K70  ; R50 := R49; R49 := R49[0x59f3e81d]
-333 [-]: LOADK     R51 1        ; R51 := 1.000000
+333 [-]: CONST     R51 1        ; R51 := 1.000000
 334 [-]: CALL      R49 3 2      ; R49 := R49(R50,R51)
 335 [-]: TEST      R49 0        ; if not R49 then PC := 341
 336 [-]: JMP       341          ; PC := 341
@@ -1825,7 +1825,7 @@
 366 [-]: GETGLOBAL R49 K72      ; R49 := 0x33bdd652
 367 [-]: GETTABLE  R49 R49 K73  ; R49 := R49[0x9c1f3b5a]
 368 [-]: GETTABLE  R50 R0 K5    ; R50 := R0["mAgentsToSpawn"]
-369 [-]: LOADK     R51 1        ; R51 := 1.000000
+369 [-]: CONST     R51 1        ; R51 := 1.000000
 370 [-]: CALL      R49 3 1      ; R49(R50,R51)
 371 [-]: JMP       384          ; PC := 384
 372 [-]: GETGLOBAL R49 K53      ; R49 := 0x3d106989
@@ -1838,7 +1838,7 @@
 379 [-]: GETGLOBAL R49 K72      ; R49 := 0x33bdd652
 380 [-]: GETTABLE  R49 R49 K73  ; R49 := R49[0x9c1f3b5a]
 381 [-]: GETTABLE  R50 R0 K5    ; R50 := R0["mAgentsToSpawn"]
-382 [-]: LOADK     R51 1        ; R51 := 1.000000
+382 [-]: CONST     R51 1        ; R51 := 1.000000
 383 [-]: CALL      R49 3 1      ; R49(R50,R51)
 384 [-]: SELF      R49 R0 K76   ; R50 := R0; R49 := R0[0x82af5b7b]
 385 [-]: CALL      R49 2 1      ; R49(R50)
@@ -1884,7 +1884,7 @@
  28 [-]: JMP       33           ; PC := 33
  29 [-]: SELF      R10 R8 K12   ; R11 := R8; R10 := R8[0xa64a1f4a]
  30 [-]: MOVE      R12 R9       ; R12 := R9
- 31 [-]: LOADK     R13 10       ; R13 := 10.000000
+ 31 [-]: CONST     R13 10       ; R13 := 10.000000
  32 [-]: CALL      R10 4 1      ; R10(R11,R12,R13)
  33 [-]: TFORLOOP  R4 2         ; R7,R8 :=  R4(R5,R6); if R7 ~= nil then begin PC = 11; R6 := R7 end
  34 [-]: JMP       11           ; PC := 11
@@ -1952,7 +1952,7 @@
   7 [-]: JMP       12           ; PC := 12
   8 [-]: SELF      R7 R6 K3     ; R8 := R6; R7 := R6[0xa64a1f4a]
   9 [-]: LOADNIL   R9 R9        ; R9 := nil
- 10 [-]: LOADK     R10 0        ; R10 := 0.000000
+ 10 [-]: CONST     R10 0        ; R10 := 0.000000
  11 [-]: CALL      R7 4 1       ; R7(R8,R9,R10)
  12 [-]: TFORLOOP  R2 2         ; R5,R6 :=  R2(R3,R4); if R5 ~= nil then begin PC = 8; R4 := R5 end
  13 [-]: JMP       8            ; PC := 8
@@ -2039,7 +2039,7 @@
   6 [-]: GETTABLE  R3 R0 K3     ; R3 := R0["mTileData"]
   7 [-]: CALL      R2 2 4       ; R2,R3,R4 := R2(R3)
   8 [-]: JMP       33           ; PC := 33
-  9 [-]: LOADBOOL  R7 1 0       ; R7 := true
+  9 [-]: LOADKB    R7 1 0       ; R7 := true
  10 [-]: GETGLOBAL R8 K4        ; R8 := 0xc8802016
  11 [-]: MOVE      R9 R1        ; R9 := R1
  12 [-]: CALL      R8 2 4       ; R8,R9,R10 := R8(R9)
@@ -2055,7 +2055,7 @@
  22 [-]: CALL      R14 2 2      ; R14 := R14(R15)
  23 [-]: EQ        0 R14 R5     ; if R14 ~= R5 then PC := 27
  24 [-]: JMP       27           ; PC := 27
- 25 [-]: LOADBOOL  R7 0 0       ; R7 := false
+ 25 [-]: LOADKB    R7 0 0       ; R7 := false
  26 [-]: JMP       29           ; PC := 29
  27 [-]: TFORLOOP  R8 2         ; R11,R12 :=  R8(R9,R10); if R11 ~= nil then begin PC = 14; R10 := R11 end
  28 [-]: JMP       14           ; PC := 14

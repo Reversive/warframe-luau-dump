@@ -23,7 +23,7 @@
 
   1 [-]: SELF      R1 R0 K0     ; R2 := R0; R1 := R0[0xa390a429]
   2 [-]: GETGLOBAL R3 K1        ; R3 := 0x39885d68
-  3 [-]: LOADBOOL  R4 1 0       ; R4 := true
+  3 [-]: LOADKB    R4 1 0       ; R4 := true
   4 [-]: CALL      R1 4 1       ; R1(R2,R3,R4)
   5 [-]: SELF      R1 R0 K2     ; R2 := R0; R1 := R0[0x415c64b3]
   6 [-]: GETGLOBAL R3 K1        ; R3 := 0x39885d68

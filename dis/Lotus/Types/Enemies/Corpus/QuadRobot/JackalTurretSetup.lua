@@ -49,7 +49,7 @@
  22 [-]: GETGLOBAL R5 K5        ; R5 := 0x0469f296
  23 [-]: LOADK     R6 K7        ; R6 := "Corpus"
  24 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 25 [-]: LOADBOOL  R6 1 0       ; R6 := true
+ 25 [-]: LOADKB    R6 1 0       ; R6 := true
  26 [-]: CALL      R1 6 1       ; R1(R2,R3,R4,R5,R6)
  27 [-]: GETGLOBAL R1 K8        ; R1 := 0x0dd95144
  28 [-]: TEST      R1 0         ; if not R1 then PC := 41
@@ -62,7 +62,7 @@
  35 [-]: TEST      R2 1         ; if R2 then PC := 41
  36 [-]: JMP       41           ; PC := 41
  37 [-]: SELF      R2 R1 K10    ; R3 := R1; R2 := R1[0x55e9211c]
- 38 [-]: LOADBOOL  R4 1 0       ; R4 := true
+ 38 [-]: LOADKB    R4 1 0       ; R4 := true
  39 [-]: GETUPVAL  R5 U0        ; R5 := U0
  40 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
  41 [-]: RETURN    R0 1         ; return 

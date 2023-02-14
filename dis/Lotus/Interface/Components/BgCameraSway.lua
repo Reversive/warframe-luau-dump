@@ -59,13 +59,13 @@
  31 [-]: SETTABLE  R6 K17 R7    ; R6["mCameraRotationOffset"] := R7
  32 [-]: SETTABLE  R6 K19 R2    ; R6["mCameraSpotType"] := R2
  33 [-]: GETGLOBAL R7 K21       ; R7 := 0x78ca68a2
- 34 [-]: LOADK     R8 0         ; R8 := 0.000000
- 35 [-]: LOADK     R9 0         ; R9 := 0.250000
+ 34 [-]: CONST     R8 0         ; R8 := 0.000000
+ 35 [-]: CONST     R9 0         ; R9 := 0.250000
  36 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
  37 [-]: SETTABLE  R6 K20 R7    ; R6["mSmoothCursorX"] := R7
  38 [-]: GETGLOBAL R7 K21       ; R7 := 0x78ca68a2
- 39 [-]: LOADK     R8 0         ; R8 := 0.000000
- 40 [-]: LOADK     R9 0         ; R9 := 0.250000
+ 39 [-]: CONST     R8 0         ; R8 := 0.000000
+ 40 [-]: CONST     R9 0         ; R9 := 0.250000
  41 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
  42 [-]: SETTABLE  R6 K22 R7    ; R6["mSmoothCursorY"] := R7
  43 [-]: SETTABLE  R6 K23 R1    ; R6["mTimerMgr"] := R1
@@ -124,7 +124,7 @@
  31 [-]: JMP       36           ; PC := 36
  32 [-]: SELF      R2 R1 K6     ; R3 := R1; R2 := R1[0x14c7f7dd]
  33 [-]: LOADNIL   R4 R4        ; R4 := nil
- 34 [-]: LOADK     R5 0         ; R5 := 0.000000
+ 34 [-]: CONST     R5 0         ; R5 := 0.000000
  35 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
  36 [-]: RETURN    R0 1         ; return 
 
@@ -156,9 +156,9 @@
  16 [-]: CALL      R1 2 2       ; R1 := R1(R2)
  17 [-]: SETTABLE  R0 K7 R1     ; R0["mBaseRotation"] := R1
  18 [-]: GETGLOBAL R1 K10       ; R1 := 0xa421af95
- 19 [-]: LOADK     R2 0         ; R2 := -0.500000
- 20 [-]: LOADK     R3 1         ; R3 := 1.750000
- 21 [-]: LOADK     R4 0         ; R4 := 0.000000
+ 19 [-]: CONST     R2 0         ; R2 := -0.500000
+ 20 [-]: CONST     R3 1         ; R3 := 1.750000
+ 21 [-]: CONST     R4 0         ; R4 := 0.000000
  22 [-]: CALL      R1 4 2       ; R1 := R1(R2,R3,R4)
  23 [-]: SETTABLE  R0 K9 R1     ; R0["mCameraOffset"] := R1
  24 [-]: JMP       33           ; PC := 33
@@ -193,7 +193,7 @@
  53 [-]: JMP       58           ; PC := 58
  54 [-]: SELF      R2 R1 K16    ; R3 := R1; R2 := R1[0x14c7f7dd]
  55 [-]: LOADNIL   R4 R4        ; R4 := nil
- 56 [-]: LOADK     R5 0         ; R5 := 0.000000
+ 56 [-]: CONST     R5 0         ; R5 := 0.000000
  57 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
  58 [-]: GETGLOBAL R2 K3        ; R2 := 0x7b998233
  59 [-]: MOVE      R3 R1        ; R3 := R1
@@ -248,7 +248,7 @@
   6 [-]: GETTABLE  R4 R0 K1     ; R4 := R0["mMovie"]
   7 [-]: SELF      R4 R4 K3     ; R5 := R4; R4 := R4[0x906faf80]
   8 [-]: CALL      R4 2 2       ; R4 := R4(R5)
-  9 [-]: LOADK     R5 0         ; R5 := 0.000000
+  9 [-]: CONST     R5 0         ; R5 := 0.000000
  10 [-]: MOVE      R6 R1        ; R6 := R1
  11 [-]: CALL      R3 4 2       ; R3 := R3(R4,R5,R6)
  12 [-]: DIV       R4 R1 K4     ; R4 := R1 / 2.000000
@@ -257,7 +257,7 @@
  15 [-]: GETTABLE  R5 R0 K1     ; R5 := R0["mMovie"]
  16 [-]: SELF      R5 R5 K5     ; R6 := R5; R5 := R5[0x916fb113]
  17 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 18 [-]: LOADK     R6 0         ; R6 := 0.000000
+ 18 [-]: CONST     R6 0         ; R6 := 0.000000
  19 [-]: MOVE      R7 R2        ; R7 := R2
  20 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
  21 [-]: DIV       R5 R2 K4     ; R5 := R2 / 2.000000
@@ -270,16 +270,16 @@
  28 [-]: CALL      R6 2 2       ; R6 := R6(R7)
  29 [-]: GETGLOBAL R7 K2        ; R7 := 0x42dcc9f5
  30 [-]: DIV       R8 R3 R1     ; R8 := R3 / R1
- 31 [-]: LOADK     R9 -1        ; R9 := -1.000000
- 32 [-]: LOADK     R10 1        ; R10 := 1.000000
+ 31 [-]: CONST     R9 -1        ; R9 := -1.000000
+ 32 [-]: CONST     R10 1        ; R10 := 1.000000
  33 [-]: CALL      R7 4 2       ; R7 := R7(R8,R9,R10)
- 34 [-]: UNM       R3 R7        ; R3 := ^ R7
+ 34 [-]: UNM       R3 R7        ; R3 :=  R7
  35 [-]: GETGLOBAL R7 K2        ; R7 := 0x42dcc9f5
  36 [-]: DIV       R8 R4 R2     ; R8 := R4 / R2
- 37 [-]: LOADK     R9 -1        ; R9 := -1.000000
- 38 [-]: LOADK     R10 1        ; R10 := 1.000000
+ 37 [-]: CONST     R9 -1        ; R9 := -1.000000
+ 38 [-]: CONST     R10 1        ; R10 := 1.000000
  39 [-]: CALL      R7 4 2       ; R7 := R7(R8,R9,R10)
- 40 [-]: UNM       R4 R7        ; R4 := ^ R7
+ 40 [-]: UNM       R4 R7        ; R4 :=  R7
  41 [-]: GETTABLE  R7 R0 K6     ; R7 := R0["mSmoothCursorX"]
  42 [-]: SELF      R7 R7 K9     ; R8 := R7; R7 := R7[0x188e2bee]
  43 [-]: MOVE      R9 R3        ; R9 := R3

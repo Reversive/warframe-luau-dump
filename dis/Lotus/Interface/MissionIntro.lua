@@ -16,8 +16,8 @@
   7 [-]: GETGLOBAL R2 K0        ; R2 := 0x2d0fad09
   8 [-]: LOADK     R3 K3        ; R3 := "Lotus.Interface.Components.MissionPanel"
   9 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 10 [-]: LOADBOOL  R3 0 0       ; R3 := false
- 11 [-]: LOADBOOL  R4 0 0       ; R4 := false
+ 10 [-]: LOADKB    R3 0 0       ; R3 := false
+ 11 [-]: LOADKB    R4 0 0       ; R4 := false
  12 [-]: LOADNIL   R5 R6        ; R5 := R6 := nil
  13 [-]: CLOSURE   R7 0         ; R7 := closure(Function #1)
  14 [-]: MOVE      R0 R4        ; R0 := R4
@@ -52,16 +52,16 @@
 ; Is_vararg:       0
 ; Max Stack Size:  10
 
-  1 [-]: LOADK     R0 5         ; R0 := 5.000000
+  1 [-]: CONST     R0 5         ; R0 := 5.000000
   2 [-]: GETGLOBAL R1 K0        ; R1 := 0x25312c9b
   3 [-]: GETGLOBAL R2 K1        ; R2 := 0xae91e43b
   4 [-]: LOADK     R3 K2        ; R3 := "_root"
-  5 [-]: LOADK     R4 0         ; R4 := 0.000000
+  5 [-]: CONST     R4 0         ; R4 := 0.000000
   6 [-]: NEWTABLE  R5 1 0       ; R5 := {}
-  7 [-]: LOADK     R6 10        ; R6 := 10.000000
+  7 [-]: CONST     R6 10        ; R6 := 10.000000
   8 [-]: SETLIST   R5 1 1       ; R5[(1-1)*FPF+i] := R(5+i), 1 <= i <= 1
   9 [-]: NEWTABLE  R6 1 0       ; R6 := {}
- 10 [-]: LOADK     R7 0         ; R7 := 0.000000
+ 10 [-]: CONST     R7 0         ; R7 := 0.000000
  11 [-]: SETLIST   R6 1 1       ; R6[(1-1)*FPF+i] := R(6+i), 1 <= i <= 1
  12 [-]: LOADK     R7 K4        ; R7 := 0.350000
  13 [-]: ADD       R8 R0 K5     ; R8 := R0 + 2.000000
@@ -80,7 +80,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
-  1 [-]: LOADBOOL  R0 1 0       ; R0 := true
+  1 [-]: LOADKB    R0 1 0       ; R0 := true
   2 [-]: SETUPVAL  R0 U0        ; U82 := R0
   3 [-]: RETURN    R0 1         ; return 
 
@@ -186,28 +186,28 @@
  68 [-]: GETGLOBAL R2 K8        ; R2 := 0xae91e43b
  69 [-]: SELF      R2 R2 K18    ; R3 := R2; R2 := R2[0x67bc869f]
  70 [-]: LOADK     R4 K19       ; R4 := "_root"
- 71 [-]: LOADK     R5 10        ; R5 := 10.000000
- 72 [-]: LOADK     R6 0         ; R6 := 0.000000
+ 71 [-]: CONST     R5 10        ; R5 := 10.000000
+ 72 [-]: CONST     R6 0         ; R6 := 0.000000
  73 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
  74 [-]: GETUPVAL  R2 U2        ; R2 := U2
  75 [-]: SELF      R2 R2 K20    ; R3 := R2; R2 := R2[0x587aa683]
- 76 [-]: LOADBOOL  R4 1 0       ; R4 := true
+ 76 [-]: LOADKB    R4 1 0       ; R4 := true
  77 [-]: CALL      R2 3 1       ; R2(R3,R4)
  78 [-]: GETGLOBAL R2 K21       ; R2 := 0x25312c9b
  79 [-]: GETGLOBAL R3 K8        ; R3 := 0xae91e43b
  80 [-]: LOADK     R4 K19       ; R4 := "_root"
- 81 [-]: LOADK     R5 0         ; R5 := 0.000000
+ 81 [-]: CONST     R5 0         ; R5 := 0.000000
  82 [-]: NEWTABLE  R6 1 0       ; R6 := {}
- 83 [-]: LOADK     R7 10        ; R7 := 10.000000
+ 83 [-]: CONST     R7 10        ; R7 := 10.000000
  84 [-]: SETLIST   R6 1 1       ; R6[(1-1)*FPF+i] := R(6+i), 1 <= i <= 1
  85 [-]: NEWTABLE  R7 1 0       ; R7 := {}
- 86 [-]: LOADK     R8 100       ; R8 := 100.000000
+ 86 [-]: CONST     R8 100       ; R8 := 100.000000
  87 [-]: SETLIST   R7 1 1       ; R7[(1-1)*FPF+i] := R(7+i), 1 <= i <= 1
- 88 [-]: LOADK     R8 2         ; R8 := 2.000000
- 89 [-]: LOADK     R9 2         ; R9 := 2.000000
+ 88 [-]: CONST     R8 2         ; R8 := 2.000000
+ 89 [-]: CONST     R9 2         ; R9 := 2.000000
  90 [-]: GETUPVAL  R10 U4       ; R10 := U4
  91 [-]: CALL      R2 9 1       ; R2(R3,R4,R5,R6,R7,R8,R9,R10)
- 92 [-]: LOADBOOL  R2 1 0       ; R2 := true
+ 92 [-]: LOADKB    R2 1 0       ; R2 := true
  93 [-]: SETUPVAL  R2 U5        ; U82 := R5
  94 [-]: GETGLOBAL R2 K23       ; R2 := _T
  95 [-]: SETTABLE  R2 K24 K25   ; R2["MissionIntroShowing"] := true

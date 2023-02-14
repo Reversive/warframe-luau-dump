@@ -7,13 +7,13 @@
 ; Is_vararg:       2
 ; Max Stack Size:  8
 
-  1 [-]: LOADK     R0 0         ; R0 := 0.000000
-  2 [-]: LOADK     R1 8         ; R1 := 8.000000
-  3 [-]: LOADK     R2 2         ; R2 := 2.000000
-  4 [-]: LOADK     R3 2         ; R3 := 2.000000
-  5 [-]: LOADK     R4 1         ; R4 := 1.500000
-  6 [-]: LOADK     R5 3         ; R5 := 3.000000
-  7 [-]: LOADK     R6 3         ; R6 := 3.000000
+  1 [-]: CONST     R0 0         ; R0 := 0.000000
+  2 [-]: CONST     R1 8         ; R1 := 8.000000
+  3 [-]: CONST     R2 2         ; R2 := 2.000000
+  4 [-]: CONST     R3 2         ; R3 := 2.000000
+  5 [-]: CONST     R4 1         ; R4 := 1.500000
+  6 [-]: CONST     R5 3         ; R5 := 3.000000
+  7 [-]: CONST     R6 3         ; R6 := 3.000000
   8 [-]: CLOSURE   R7 0         ; R7 := closure(Function #1)
   9 [-]: MOVE      R0 R6        ; R0 := R6
  10 [-]: MOVE      R0 R0        ; R0 := R0
@@ -38,7 +38,7 @@
 ; Max Stack Size:  30
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0xcbd666e1
-  2 [-]: LOADK     R2 0         ; R2 := 0.000000
+  2 [-]: CONST     R2 0         ; R2 := 0.000000
   3 [-]: CALL      R1 2 1       ; R1(R2)
   4 [-]: SELF      R1 R0 K1     ; R2 := R0; R1 := R0[0x73a8846a]
   5 [-]: CALL      R1 2 2       ; R1 := R1(R2)
@@ -64,9 +64,9 @@
  25 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  26 [-]: SELF      R4 R1 K7     ; R5 := R1; R4 := R1[0x41bf4b5d]
  27 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 28 [-]: LOADK     R5 0         ; R5 := 0.000000
+ 28 [-]: CONST     R5 0         ; R5 := 0.000000
  29 [-]: SUB       R6 R3 K8     ; R6 := R3 - 1.000000
- 30 [-]: LOADK     R7 1         ; R7 := 1.000000
+ 30 [-]: CONST     R7 1         ; R7 := 1.000000
  31 [-]: FORPREP   R5 60        ; R5 -= R7; PC := 60
  32 [-]: SELF      R9 R1 K9     ; R10 := R1; R9 := R1[0xfef27732]
  33 [-]: MOVE      R11 R8       ; R11 := R8
@@ -116,11 +116,11 @@
  77 [-]: GETGLOBAL R18 K15      ; R18 := _T
  78 [-]: GETTABLE  R18 R18 K16  ; R18 := R18["loopingFireAnimation"]
  79 [-]: SETTABLE  R18 R16 K5   ; R18[R16] := 0.000000
- 80 [-]: LOADBOOL  R18 1 0      ; R18 := true
- 81 [-]: LOADBOOL  R19 1 0      ; R19 := true
+ 80 [-]: LOADKB    R18 1 0      ; R18 := true
+ 81 [-]: LOADKB    R19 1 0      ; R19 := true
  82 [-]: GETGLOBAL R20 K18      ; R20 := 0x5bced4c4
  83 [-]: GETTABLE  R20 R20 K19  ; R20 := R20[0xac1b386a]
- 84 [-]: LOADK     R21 1        ; R21 := 1.000000
+ 84 [-]: CONST     R21 1        ; R21 := 1.000000
  85 [-]: GETGLOBAL R22 K15      ; R22 := _T
  86 [-]: GETTABLE  R22 R22 K16  ; R22 := R22["loopingFireAnimation"]
  87 [-]: GETTABLE  R22 R22 R16  ; R22 := R22[R16]
@@ -138,23 +138,23 @@
  99 [-]: JMP       110          ; PC := 110
 100 [-]: SELF      R22 R0 K21   ; R23 := R0; R22 := R0[0x5d985c7e]
 101 [-]: GETGLOBAL R24 K22      ; R24 := 0x81b67eec
-102 [-]: LOADBOOL  R25 0 0      ; R25 := false
-103 [-]: LOADBOOL  R26 1 0      ; R26 := true
-104 [-]: LOADK     R27 0        ; R27 := 0.000000
+102 [-]: LOADKB    R25 0 0      ; R25 := false
+103 [-]: LOADKB    R26 1 0      ; R26 := true
+104 [-]: CONST     R27 0        ; R27 := 0.000000
 105 [-]: MOVE      R28 R17      ; R28 := R17
 106 [-]: MOVE      R29 R21      ; R29 := R21
 107 [-]: CALL      R22 8 1      ; R22(R23,R24,R25,R26,R27,R28,R29)
-108 [-]: LOADBOOL  R18 0 0      ; R18 := false
+108 [-]: LOADKB    R18 0 0      ; R18 := false
 109 [-]: JMP       117          ; PC := 117
 110 [-]: EQ        0 R21 K5     ; if R21 ~= 0.000000 then PC := 113
 111 [-]: JMP       113          ; PC := 113
-112 [-]: LOADBOOL  R18 1 0      ; R18 := true
+112 [-]: LOADKB    R18 1 0      ; R18 := true
 113 [-]: SELF      R22 R0 K23   ; R23 := R0; R22 := R0[0xe7fe0b05]
-114 [-]: LOADK     R24 0        ; R24 := 0.000000
+114 [-]: CONST     R24 0        ; R24 := 0.000000
 115 [-]: MOVE      R25 R21      ; R25 := R21
 116 [-]: CALL      R22 4 1      ; R22(R23,R24,R25)
 117 [-]: GETGLOBAL R22 K0       ; R22 := 0xcbd666e1
-118 [-]: LOADK     R23 0        ; R23 := 0.000000
+118 [-]: CONST     R23 0        ; R23 := 0.000000
 119 [-]: CALL      R22 2 1      ; R22(R23)
 120 [-]: LOADNIL   R22 R22      ; R22 := nil
 121 [-]: TEST      R19 0        ; if not R19 then PC := 141
@@ -185,7 +185,7 @@
 146 [-]: GETTABLE  R23 R23 K16  ; R23 := R23["loopingFireAnimation"]
 147 [-]: GETGLOBAL R24 K18      ; R24 := 0x5bced4c4
 148 [-]: GETTABLE  R24 R24 K25  ; R24 := R24[0xb62ecfe0]
-149 [-]: LOADK     R25 0        ; R25 := 0.000000
+149 [-]: CONST     R25 0        ; R25 := 0.000000
 150 [-]: GETGLOBAL R26 K15      ; R26 := _T
 151 [-]: GETTABLE  R26 R26 K16  ; R26 := R26["loopingFireAnimation"]
 152 [-]: GETTABLE  R26 R26 R16  ; R26 := R26[R16]

@@ -83,9 +83,9 @@
 ; Max Stack Size:  16
 
   1 [-]: GETTABLE  R3 R0 K0     ; R3 := R0["mTimers"]
-  2 [-]: LOADK     R4 1         ; R4 := 1.000000
+  2 [-]: CONST     R4 1         ; R4 := 1.000000
   3 [-]: GETTABLE  R5 R0 K1     ; R5 := R0["mMaxIndex"]
-  4 [-]: LOADK     R6 1         ; R6 := 1.000000
+  4 [-]: CONST     R6 1         ; R6 := 1.000000
   5 [-]: FORPREP   R4 48        ; R4 -= R6; PC := 48
   6 [-]: GETTABLE  R8 R3 R7     ; R8 := R3[R7]
   7 [-]: EQ        1 R8 K2      ; if R8 == nil then PC := 48
@@ -111,7 +111,7 @@
  27 [-]: MOVE      R10 R2       ; R10 := R2
  28 [-]: NEWTABLE  R11 0 2      ; R11 := {}
  29 [-]: GETTABLE  R12 R8 K6    ; R12 := R8["Callback"]
- 30 [-]: SETTABLE  R11 K9 R12   ; R11["callback"] := R12
+ 30 [-]: SETTABLE  R11 K9 R12   ; R11[0x23d5322f] := R12
  31 [-]: GETTABLE  R12 R8 K11   ; R12 := R8["Arg"]
  32 [-]: SETTABLE  R11 K10 R12  ; R11["arg"] := R12
  33 [-]: CALL      R9 3 1       ; R9(R10,R11)
@@ -132,9 +132,9 @@
  48 [-]: FORLOOP   R4 6         ; R4 += R6; if R4 <= R5 then begin PC := 6; R7 := R4 end
  49 [-]: EQ        1 R2 K2      ; if R2 == nil then PC := 60
  50 [-]: JMP       60           ; PC := 60
- 51 [-]: LOADK     R9 1         ; R9 := 1.000000
+ 51 [-]: CONST     R9 1         ; R9 := 1.000000
  52 [-]: LEN       R10 R2       ; R10 := # R2
- 53 [-]: LOADK     R11 1        ; R11 := 1.000000
+ 53 [-]: CONST     R11 1        ; R11 := 1.000000
  54 [-]: FORPREP   R9 59        ; R9 -= R11; PC := 59
  55 [-]: GETTABLE  R13 R2 R12   ; R13 := R2[R12]
  56 [-]: GETTABLE  R14 R13 K14  ; R14 := R13[0x56348e81]
@@ -232,8 +232,8 @@
  19 [-]: JMP       22           ; PC := 22
  20 [-]: EQ        1 R3 K12     ; if R3 == true then PC := 23
  21 [-]: JMP       23           ; PC := 23
- 22 [-]: LOADBOOL  R9 0 1       ; R9 := false; PC := 23
- 23 [-]: LOADBOOL  R9 1 0       ; R9 := true
+ 22 [-]: LOADKB    R9 0 1       ; R9 := false; PC := 23
+ 23 [-]: LOADKB    R9 1 0       ; R9 := true
  24 [-]: SETTABLE  R8 K10 R9    ; R8["Loop"] := R9
  25 [-]: SETTABLE  R7 R5 R8     ; R7[R5] := R8
  26 [-]: JMP       49           ; PC := 49
@@ -250,8 +250,8 @@
  37 [-]: JMP       40           ; PC := 40
  38 [-]: EQ        1 R3 K12     ; if R3 == true then PC := 41
  39 [-]: JMP       41           ; PC := 41
- 40 [-]: LOADBOOL  R10 0 1      ; R10 := false; PC := 41
- 41 [-]: LOADBOOL  R10 1 0      ; R10 := true
+ 40 [-]: LOADKB    R10 0 1      ; R10 := false; PC := 41
+ 41 [-]: LOADKB    R10 1 0      ; R10 := true
  42 [-]: SETTABLE  R9 K10 R10   ; R9["Loop"] := R10
  43 [-]: SETTABLE  R9 K5 R5     ; R9["Id"] := R5
  44 [-]: GETGLOBAL R10 K3       ; R10 := 0x33bdd652
@@ -274,14 +274,14 @@
 
   1 [-]: EQ        0 R1 K0      ; if R1 ~= nil then PC := 5
   2 [-]: JMP       5            ; PC := 5
-  3 [-]: LOADBOOL  R2 0 0       ; R2 := false
+  3 [-]: LOADKB    R2 0 0       ; R2 := false
   4 [-]: RETURN    R2 2         ; return R2
   5 [-]: GETTABLE  R2 R0 K1     ; R2 := R0["mTimers"]
   6 [-]: GETTABLE  R2 R2 R1     ; R2 := R2[R1]
   7 [-]: EQ        0 R2 K0      ; if R2 ~= nil then PC := 10
   8 [-]: JMP       10           ; PC := 10
-  9 [-]: LOADBOOL  R2 0 1       ; R2 := false; PC := 10
- 10 [-]: LOADBOOL  R2 1 0       ; R2 := true
+  9 [-]: LOADKB    R2 0 1       ; R2 := false; PC := 10
+ 10 [-]: LOADKB    R2 1 0       ; R2 := true
  11 [-]: RETURN    R2 2         ; return R2
  12 [-]: RETURN    R0 1         ; return 
 
@@ -303,11 +303,11 @@
   6 [-]: GETTABLE  R8 R7 K2     ; R8 := R7["Arg"]
   7 [-]: EQ        0 R8 R1      ; if R8 ~= R1 then PC := 11
   8 [-]: JMP       11           ; PC := 11
-  9 [-]: LOADBOOL  R8 1 0       ; R8 := true
+  9 [-]: LOADKB    R8 1 0       ; R8 := true
  10 [-]: RETURN    R8 2         ; return R8
  11 [-]: TFORLOOP  R3 2         ; R6,R7 :=  R3(R4,R5); if R6 ~= nil then begin PC = 6; R5 := R6 end
  12 [-]: JMP       6            ; PC := 6
- 13 [-]: LOADBOOL  R8 0 0       ; R8 := false
+ 13 [-]: LOADKB    R8 0 0       ; R8 := false
  14 [-]: RETURN    R8 2         ; return R8
  15 [-]: RETURN    R0 1         ; return 
 

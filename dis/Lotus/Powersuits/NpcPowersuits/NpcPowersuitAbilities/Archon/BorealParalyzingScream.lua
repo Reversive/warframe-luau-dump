@@ -59,7 +59,7 @@
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := _T
   2 [-]: GETGLOBAL R2 K2        ; R2 := 0xba4eb39f
-  3 [-]: SETTABLE  R1 K1 R2     ; R1[0x7b998233] := R2
+  3 [-]: SETTABLE  R1 K1 R2     ; R1["ScreamhealthThreshold"] := R2
   4 [-]: RETURN    R0 1         ; return 
 
 
@@ -78,7 +78,7 @@
   4 [-]: GETTABLE  R4 R4 K2     ; R4 := R4["ScreamhealthThreshold"]
   5 [-]: LT        0 R4 R3      ; if R4 >= R3 then PC := 9
   6 [-]: JMP       9            ; PC := 9
-  7 [-]: LOADK     R4 0         ; R4 := 0.000000
+  7 [-]: CONST     R4 0         ; R4 := 0.000000
   8 [-]: RETURN    R4 2         ; return R4
   9 [-]: SELF      R4 R1 K3     ; R5 := R1; R4 := R1[0xfa9e477f]
  10 [-]: CALL      R4 2 2       ; R4 := R4(R5)
@@ -92,9 +92,9 @@
  18 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
  19 [-]: TEST      R5 0         ; if not R5 then PC := 23
  20 [-]: JMP       23           ; PC := 23
- 21 [-]: LOADK     R5 0         ; R5 := 0.000000
+ 21 [-]: CONST     R5 0         ; R5 := 0.000000
  22 [-]: RETURN    R5 2         ; return R5
- 23 [-]: LOADK     R5 1         ; R5 := 1.000000
+ 23 [-]: CONST     R5 1         ; R5 := 1.000000
  24 [-]: RETURN    R5 2         ; return R5
  25 [-]: RETURN    R0 1         ; return 
 
@@ -125,17 +125,17 @@
 ; Is_vararg:       0
 ; Max Stack Size:  6
 
-  1 [-]: LOADK     R1 35        ; R1 := 35.000000
+  1 [-]: CONST     R1 35        ; R1 := 35.000000
   2 [-]: GETGLOBAL R2 K0        ; R2 := 0x42dcc9f5
   3 [-]: DIV       R3 R0 R1     ; R3 := R0 / R1
-  4 [-]: LOADK     R4 0         ; R4 := 0.000000
-  5 [-]: LOADK     R5 1         ; R5 := 1.000000
+  4 [-]: CONST     R4 0         ; R4 := 0.000000
+  5 [-]: CONST     R5 1         ; R5 := 1.000000
   6 [-]: CALL      R2 4 2       ; R2 := R2(R3,R4,R5)
   7 [-]: SUB       R2 K1 R2     ; R2 := 1.000000 - R2
   8 [-]: GETGLOBAL R3 K2        ; R3 := 0x5bced4c4
   9 [-]: GETTABLE  R3 R3 K3     ; R3 := R3[0xa40531d8]
  10 [-]: MOVE      R4 R2        ; R4 := R2
- 11 [-]: LOADK     R5 1         ; R5 := 1.000000
+ 11 [-]: CONST     R5 1         ; R5 := 1.000000
  12 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
  13 [-]: MOVE      R2 R3        ; R2 := R3
  14 [-]: MUL       R2 R2 K4     ; R2 := R2 * 10.000000
@@ -187,21 +187,21 @@
  33 [-]: SETTABLE  R4 K10 R5    ; R4["bloom"] := R5
  34 [-]: SELF      R5 R4 K13    ; R6 := R4; R5 := R4[0xc72bc204]
  35 [-]: GETGLOBAL R7 K14       ; R7 := 0x9bafffe3
- 36 [-]: LOADK     R8 1         ; R8 := 1.000000
+ 36 [-]: CONST     R8 1         ; R8 := 1.000000
  37 [-]: LOADK     R9 K15       ; R9 := 0.800000
  38 [-]: MOVE      R10 R1       ; R10 := R1
  39 [-]: CALL      R7 4 2       ; R7 := R7(R8,R9,R10)
  40 [-]: GETGLOBAL R8 K14       ; R8 := 0x9bafffe3
- 41 [-]: LOADK     R9 1         ; R9 := 1.000000
+ 41 [-]: CONST     R9 1         ; R9 := 1.000000
  42 [-]: LOADK     R10 K16      ; R10 := 1.100000
  43 [-]: MOVE      R11 R1       ; R11 := R1
  44 [-]: CALL      R8 4 2       ; R8 := R8(R9,R10,R11)
  45 [-]: GETGLOBAL R9 K14       ; R9 := 0x9bafffe3
- 46 [-]: LOADK     R10 1        ; R10 := 1.000000
+ 46 [-]: CONST     R10 1        ; R10 := 1.000000
  47 [-]: LOADK     R11 K17      ; R11 := 1.200000
  48 [-]: MOVE      R12 R1       ; R12 := R1
  49 [-]: CALL      R9 4 2       ; R9 := R9(R10,R11,R12)
- 50 [-]: LOADK     R10 0        ; R10 := 0.000000
+ 50 [-]: CONST     R10 0        ; R10 := 0.000000
  51 [-]: CALL      R5 6 1       ; R5(R6,R7,R8,R9,R10)
  52 [-]: RETURN    R0 1         ; return 
 
@@ -241,7 +241,7 @@
 ; Max Stack Size:  37
 
   1 [-]: SELF      R4 R1 K0     ; R5 := R1; R4 := R1[0x6667e5d4]
-  2 [-]: LOADBOOL  R6 1 0       ; R6 := true
+  2 [-]: LOADKB    R6 1 0       ; R6 := true
   3 [-]: CALL      R4 3 1       ; R4(R5,R6)
   4 [-]: SELF      R4 R1 K1     ; R5 := R1; R4 := R1[0xd1586535]
   5 [-]: CALL      R4 2 2       ; R4 := R4(R5)
@@ -254,7 +254,7 @@
  12 [-]: MOVE      R6 R1        ; R6 := R1
  13 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  14 [-]: SELF      R6 R1 K4     ; R7 := R1; R6 := R1[0xffc58a04]
- 15 [-]: LOADK     R8 2         ; R8 := 2.000000
+ 15 [-]: CONST     R8 2         ; R8 := 2.000000
  16 [-]: GETUPVAL  R9 U1        ; R9 := U1
  17 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
  18 [-]: SELF      R6 R1 K6     ; R7 := R1; R6 := R1[0x25f1413e]
@@ -271,7 +271,7 @@
  29 [-]: GETGLOBAL R8 K11       ; R8 := 0xcc79ff20
  30 [-]: SELF      R8 R8 K12    ; R9 := R8; R8 := R8[0x6d604ba7]
  31 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 32 [-]: LOADK     R9 1         ; R9 := 1.500000
+ 32 [-]: CONST     R9 1         ; R9 := 1.500000
  33 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
  34 [-]: GETGLOBAL R6 K2        ; R6 := 0x89326c93
  35 [-]: SELF      R6 R6 K13    ; R7 := R6; R6 := R6[0x462c251c]
@@ -280,12 +280,12 @@
  38 [-]: CALL      R8 2 2       ; R8 := R8(R9)
  39 [-]: SELF      R9 R1 K16    ; R10 := R1; R9 := R1[0xf6ebd926]
  40 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 41 [-]: LOADK     R10 0        ; R10 := 0.000000
- 42 [-]: LOADK     R11 200      ; R11 := 200.000000
+ 41 [-]: CONST     R10 0        ; R10 := 0.000000
+ 42 [-]: CONST     R11 200      ; R11 := 200.000000
  43 [-]: CALL      R6 6 2       ; R6 := R6(R7,R8,R9,R10,R11)
  44 [-]: SELF      R7 R1 K17    ; R8 := R1; R7 := R1[0xfa9e477f]
  45 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 46 [-]: LOADK     R8 0         ; R8 := 0.000000
+ 46 [-]: CONST     R8 0         ; R8 := 0.000000
  47 [-]: LOADNIL   R9 R10       ; R9 := R10 := nil
  48 [-]: SELF      R11 R1 K18   ; R12 := R1; R11 := R1[0x020d4331]
  49 [-]: CALL      R11 2 2      ; R11 := R11(R12)
@@ -296,7 +296,7 @@
  54 [-]: TEST      R14 1        ; if R14 then PC := 59
  55 [-]: JMP       59           ; PC := 59
  56 [-]: SELF      R14 R13 K20  ; R15 := R13; R14 := R13[0xa3ff8243]
- 57 [-]: LOADK     R16 500      ; R16 := 500.000000
+ 57 [-]: CONST     R16 500      ; R16 := 500.000000
  58 [-]: CALL      R14 3 1      ; R14(R15,R16)
  59 [-]: SELF      R14 R7 K21   ; R15 := R7; R14 := R7[0x4094b424]
  60 [-]: CALL      R14 2 1      ; R14(R15)
@@ -322,7 +322,7 @@
  80 [-]: TEST      R14 1        ; if R14 then PC := 85
  81 [-]: JMP       85           ; PC := 85
  82 [-]: SELF      R14 R13 K20  ; R15 := R13; R14 := R13[0xa3ff8243]
- 83 [-]: LOADK     R16 500      ; R16 := 500.000000
+ 83 [-]: CONST     R16 500      ; R16 := 500.000000
  84 [-]: CALL      R14 3 1      ; R14(R15,R16)
  85 [-]: SELF      R14 R1 K23   ; R15 := R1; R14 := R1[0xd2715720]
  86 [-]: CALL      R14 2 2      ; R14 := R14(R15)
@@ -332,7 +332,7 @@
  90 [-]: CALL      R16 2 2      ; R16 := R16(R17)
  91 [-]: SELF      R16 R16 K26  ; R17 := R16; R16 := R16[0x16f436a2]
  92 [-]: CALL      R16 2 2      ; R16 := R16(R17)
- 93 [-]: LOADBOOL  R17 1 0      ; R17 := true
+ 93 [-]: LOADKB    R17 1 0      ; R17 := true
  94 [-]: GETGLOBAL R18 K27      ; R18 := 0x76aa7df1
  95 [-]: SELF      R19 R1 K28   ; R20 := R1; R19 := R1[0x47901f07]
  96 [-]: GETGLOBAL R21 K29      ; R21 := 0x6a074d65
@@ -359,7 +359,7 @@
 117 [-]: MOVE      R27 R1       ; R27 := R1
 118 [-]: CALL      R21 7 2      ; R21 := R21(R22,R23,R24,R25,R26,R27)
 119 [-]: MOVE      R20 R21      ; R20 := R21
-120 [-]: LOADK     R21 0        ; R21 := 0.000000
+120 [-]: CONST     R21 0        ; R21 := 0.000000
 121 [-]: SELF      R22 R1 K25   ; R23 := R1; R22 := R1[0x1ac1655c]
 122 [-]: CALL      R22 2 2      ; R22 := R22(R23)
 123 [-]: GETGLOBAL R23 K34      ; R23 := 0x39617e7a
@@ -375,13 +375,13 @@
 133 [-]: GETGLOBAL R28 K40      ; R28 := 0x72310365
 134 [-]: LEN       R29 R25      ; R29 := # R25
 135 [-]: GETTABLE  R28 R28 R29  ; R28 := R28[R29]
-136 [-]: LOADK     R29 5        ; R29 := 5.000000
+136 [-]: CONST     R29 5        ; R29 := 5.000000
 137 [-]: MOVE      R30 R1       ; R30 := R1
 138 [-]: CALL      R26 5 2      ; R26 := R26(R27,R28,R29,R30)
-139 [-]: SELF      R27 R22 K42  ; R28 := R22; R27 := R22[0xd61b73d9]
+139 [-]: SELF      R27 R22 K42  ; R28 := R22; R27 := R22[0x6466a515]
 140 [-]: MOVE      R29 R26      ; R29 := R26
 141 [-]: CALL      R27 3 1      ; R27(R28,R29)
-142 [-]: SELF      R27 R22 K43  ; R28 := R22; R27 := R22[0xa963ee09]
+142 [-]: SELF      R27 R22 K43  ; R28 := R22; R27 := R22[0xd687233d]
 143 [-]: MOVE      R29 R26      ; R29 := R26
 144 [-]: CALL      R27 3 1      ; R27(R28,R29)
 145 [-]: SELF      R27 R22 K44  ; R28 := R22; R27 := R22[0x47cb4a02]
@@ -389,14 +389,14 @@
 147 [-]: GETGLOBAL R27 K38      ; R27 := 0xbe190284
 148 [-]: SELF      R27 R27 K39  ; R28 := R27; R27 := R27[0x0d10e037]
 149 [-]: GETGLOBAL R29 K34      ; R29 := 0x39617e7a
-150 [-]: LOADK     R30 1        ; R30 := 1.000000
+150 [-]: CONST     R30 1        ; R30 := 1.000000
 151 [-]: MOVE      R31 R1       ; R31 := R1
 152 [-]: CALL      R27 5 2      ; R27 := R27(R28,R29,R30,R31)
 153 [-]: MOVE      R23 R27      ; R23 := R27
 154 [-]: GETGLOBAL R27 K38      ; R27 := 0xbe190284
 155 [-]: SELF      R27 R27 K39  ; R28 := R27; R27 := R27[0x0d10e037]
 156 [-]: GETGLOBAL R29 K35      ; R29 := 0x737f31cf
-157 [-]: LOADK     R30 1        ; R30 := 1.000000
+157 [-]: CONST     R30 1        ; R30 := 1.000000
 158 [-]: MOVE      R31 R1       ; R31 := R1
 159 [-]: CALL      R27 5 2      ; R27 := R27(R28,R29,R30,R31)
 160 [-]: MOVE      R24 R27      ; R24 := R27
@@ -448,8 +448,8 @@
 206 [-]: GETTABLE  R29 R29 K50  ; R29 := R29["ScreamhealthThreshold"]
 207 [-]: SUB       R29 R29 K51  ; R29 := R29 - 0.150000
 208 [-]: SETTABLE  R28 K50 R29  ; R28["ScreamhealthThreshold"] := R29
-209 [-]: LOADK     R8 0         ; R8 := 0.000000
-210 [-]: LOADK     R12 0        ; R12 := 0.000000
+209 [-]: CONST     R8 0         ; R8 := 0.000000
+210 [-]: CONST     R12 0        ; R12 := 0.000000
 211 [-]: GETUPVAL  R28 U2       ; R28 := U2
 212 [-]: MOVE      R29 R6       ; R29 := R6
 213 [-]: MOVE      R30 R8       ; R30 := R8
@@ -510,7 +510,7 @@
 268 [-]: ADD       R8 R8 R29    ; R8 := R8 + R29
 269 [-]: LT        0 K58 R8     ; if 1.000000 >= R8 then PC := 280
 270 [-]: JMP       280          ; PC := 280
-271 [-]: LOADK     R8 1         ; R8 := 1.000000
+271 [-]: CONST     R8 1         ; R8 := 1.000000
 272 [-]: JMP       280          ; PC := 280
 273 [-]: GETGLOBAL R29 K53      ; R29 := 0x67652851
 274 [-]: CALL      R29 1 2      ; R29 := R29()
@@ -518,7 +518,7 @@
 276 [-]: SUB       R8 R8 R29    ; R8 := R8 - R29
 277 [-]: LT        0 R8 K59     ; if R8 >= 0.000000 then PC := 280
 278 [-]: JMP       280          ; PC := 280
-279 [-]: LOADK     R8 0         ; R8 := 0.000000
+279 [-]: CONST     R8 0         ; R8 := 0.000000
 280 [-]: GETGLOBAL R29 K19      ; R29 := 0x7b998233
 281 [-]: MOVE      R30 R2       ; R30 := R2
 282 [-]: CALL      R29 2 2      ; R29 := R29(R30)
@@ -549,8 +549,8 @@
 307 [-]: MOVE      R12 R18      ; R12 := R18
 308 [-]: LT        1 R12 R18    ; if R12 < R18 then PC := 311
 309 [-]: JMP       311          ; PC := 311
-310 [-]: LOADBOOL  R29 0 1      ; R29 := false; PC := 311
-311 [-]: LOADBOOL  R29 1 0      ; R29 := true
+310 [-]: LOADKB    R29 0 1      ; R29 := false; PC := 311
+311 [-]: LOADKB    R29 1 0      ; R29 := true
 312 [-]: EQ        1 R17 R29    ; if R17 == R29 then PC := 396
 313 [-]: JMP       396          ; PC := 396
 314 [-]: TEST      R29 0        ; if not R29 then PC := 347
@@ -559,10 +559,10 @@
 317 [-]: LOADK     R31 K63      ; R31 := "make boreal weak"
 318 [-]: CALL      R30 2 1      ; R30(R31)
 319 [-]: SELF      R30 R1 K64   ; R31 := R1; R30 := R1[0x069d881f]
-320 [-]: LOADBOOL  R32 0 0      ; R32 := false
+320 [-]: LOADKB    R32 0 0      ; R32 := false
 321 [-]: CALL      R30 3 1      ; R30(R31,R32)
 322 [-]: SELF      R30 R1 K65   ; R31 := R1; R30 := R1[0x250a9055]
-323 [-]: LOADK     R32 0        ; R32 := 0.000000
+323 [-]: CONST     R32 0        ; R32 := 0.000000
 324 [-]: GETUPVAL  R33 U4       ; R33 := U4
 325 [-]: CALL      R30 4 1      ; R30(R31,R32,R33)
 326 [-]: GETGLOBAL R30 K36      ; R30 := 0x8599d938
@@ -590,10 +590,10 @@
 348 [-]: LOADK     R31 K69      ; R31 := "make boreal invulnerable"
 349 [-]: CALL      R30 2 1      ; R30(R31)
 350 [-]: SELF      R30 R1 K64   ; R31 := R1; R30 := R1[0x069d881f]
-351 [-]: LOADBOOL  R32 1 0      ; R32 := true
+351 [-]: LOADKB    R32 1 0      ; R32 := true
 352 [-]: CALL      R30 3 1      ; R30(R31,R32)
 353 [-]: SELF      R30 R1 K4    ; R31 := R1; R30 := R1[0xffc58a04]
-354 [-]: LOADK     R32 0        ; R32 := 0.000000
+354 [-]: CONST     R32 0        ; R32 := 0.000000
 355 [-]: GETUPVAL  R33 U4       ; R33 := U4
 356 [-]: CALL      R30 4 1      ; R30(R31,R32,R33)
 357 [-]: GETGLOBAL R30 K36      ; R30 := 0x8599d938
@@ -601,23 +601,23 @@
 359 [-]: JMP       368          ; PC := 368
 360 [-]: SELF      R30 R22 K70  ; R31 := R22; R30 := R22[0xeb3c14da]
 361 [-]: GETUPVAL  R32 U4       ; R32 := U4
-362 [-]: LOADK     R33 25       ; R33 := 25.000000
-363 [-]: LOADK     R34 6        ; R34 := 6.000000
-364 [-]: LOADK     R35 0        ; R35 := 0.000000
-365 [-]: LOADK     R36 0        ; R36 := 0.000000
+362 [-]: CONST     R33 25       ; R33 := 25.000000
+363 [-]: CONST     R34 6        ; R34 := 6.000000
+364 [-]: CONST     R35 0        ; R35 := 0.000000
+365 [-]: CONST     R36 0        ; R36 := 0.000000
 366 [-]: CALL      R30 7 1      ; R30(R31,R32,R33,R34,R35,R36)
 367 [-]: JMP       380          ; PC := 380
 368 [-]: SELF      R30 R22 K71  ; R31 := R22; R30 := R22[0xa383de31]
 369 [-]: GETUPVAL  R32 U4       ; R32 := U4
-370 [-]: LOADK     R33 25       ; R33 := 25.000000
-371 [-]: LOADK     R34 6        ; R34 := 6.000000
-372 [-]: LOADK     R35 0        ; R35 := 0.000000
+370 [-]: CONST     R33 25       ; R33 := 25.000000
+371 [-]: CONST     R34 6        ; R34 := 6.000000
+372 [-]: CONST     R35 0        ; R35 := 0.000000
 373 [-]: CALL      R30 6 1      ; R30(R31,R32,R33,R34,R35)
 374 [-]: SELF      R30 R22 K72  ; R31 := R22; R30 := R22[0x4cb29d1c]
 375 [-]: GETUPVAL  R32 U4       ; R32 := U4
-376 [-]: LOADK     R33 25       ; R33 := 25.000000
-377 [-]: LOADK     R34 6        ; R34 := 6.000000
-378 [-]: LOADK     R35 0        ; R35 := 0.000000
+376 [-]: CONST     R33 25       ; R33 := 25.000000
+377 [-]: CONST     R34 6        ; R34 := 6.000000
+378 [-]: CONST     R35 0        ; R35 := 0.000000
 379 [-]: CALL      R30 6 1      ; R30(R31,R32,R33,R34,R35)
 380 [-]: GETGLOBAL R30 K19      ; R30 := 0x7b998233
 381 [-]: MOVE      R31 R20      ; R31 := R20
@@ -653,7 +653,7 @@
 411 [-]: TEST      R31 1        ; if R31 then PC := 419
 412 [-]: JMP       419          ; PC := 419
 413 [-]: SELF      R31 R13 K20  ; R32 := R13; R31 := R13[0xa3ff8243]
-414 [-]: LOADK     R33 500      ; R33 := 500.000000
+414 [-]: CONST     R33 500      ; R33 := 500.000000
 415 [-]: CALL      R31 3 1      ; R31(R32,R33)
 416 [-]: SELF      R31 R13 K73  ; R32 := R13; R31 := R13[0xcdadcd5d]
 417 [-]: MOVE      R33 R30      ; R33 := R30
@@ -665,7 +665,7 @@
 423 [-]: MOVE      R35 R17      ; R35 := R17
 424 [-]: CALL      R31 5 1      ; R31(R32,R33,R34,R35)
 425 [-]: GETGLOBAL R31 K74      ; R31 := 0xcbd666e1
-426 [-]: LOADK     R32 0        ; R32 := 0.000000
+426 [-]: CONST     R32 0        ; R32 := 0.000000
 427 [-]: CALL      R31 2 1      ; R31(R32)
 428 [-]: GETGLOBAL R31 K19      ; R31 := 0x7b998233
 429 [-]: GETGLOBAL R32 K38      ; R32 := 0xbe190284
@@ -767,10 +767,10 @@
  31 [-]: SELF      R5 R1 K8     ; R6 := R1; R5 := R1[0x1ac1655c]
  32 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  33 [-]: SELF      R6 R1 K9     ; R7 := R1; R6 := R1[0x069d881f]
- 34 [-]: LOADBOOL  R8 0 0       ; R8 := false
+ 34 [-]: LOADKB    R8 0 0       ; R8 := false
  35 [-]: CALL      R6 3 1       ; R6(R7,R8)
  36 [-]: SELF      R6 R1 K10    ; R7 := R1; R6 := R1[0x250a9055]
- 37 [-]: LOADK     R8 0         ; R8 := 0.000000
+ 37 [-]: CONST     R8 0         ; R8 := 0.000000
  38 [-]: GETUPVAL  R9 U0        ; R9 := U0
  39 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
  40 [-]: SELF      R6 R5 K12    ; R7 := R5; R6 := R5[0x8e3e343e]
@@ -796,11 +796,11 @@
  60 [-]: TEST      R6 0         ; if not R6 then PC := 66
  61 [-]: JMP       66           ; PC := 66
  62 [-]: SELF      R6 R1 K10    ; R7 := R1; R6 := R1[0x250a9055]
- 63 [-]: LOADK     R8 2         ; R8 := 2.000000
+ 63 [-]: CONST     R8 2         ; R8 := 2.000000
  64 [-]: GETUPVAL  R9 U3        ; R9 := U3
  65 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
  66 [-]: SELF      R6 R1 K16    ; R7 := R1; R6 := R1[0x6667e5d4]
- 67 [-]: LOADBOOL  R8 0 0       ; R8 := false
+ 67 [-]: LOADKB    R8 0 0       ; R8 := false
  68 [-]: CALL      R6 3 1       ; R6(R7,R8)
  69 [-]: RETURN    R0 1         ; return 
 

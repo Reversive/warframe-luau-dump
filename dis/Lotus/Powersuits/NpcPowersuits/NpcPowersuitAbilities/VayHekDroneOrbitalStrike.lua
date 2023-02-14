@@ -51,9 +51,9 @@
  26 [-]: SELF      R3 R0 K9     ; R4 := R0; R3 := R0[0x48d05257]
  27 [-]: GETTABLE  R5 R2 K4     ; R5 := R2["avatar"]
  28 [-]: CALL      R3 3 1       ; R3(R4,R5)
- 29 [-]: LOADK     R3 1         ; R3 := 1.000000
+ 29 [-]: CONST     R3 1         ; R3 := 1.000000
  30 [-]: RETURN    R3 2         ; return R3
- 31 [-]: LOADK     R3 0         ; R3 := 0.000000
+ 31 [-]: CONST     R3 0         ; R3 := 0.000000
  32 [-]: RETURN    R3 2         ; return R3
  33 [-]: RETURN    R0 1         ; return 
 
@@ -118,7 +118,7 @@
  49 [-]: JMP       54           ; PC := 54
  50 [-]: SELF      R8 R1 K15    ; R9 := R1; R8 := R1[0x659d451f]
  51 [-]: GETGLOBAL R10 K14      ; R10 := 0xf4b320c1
- 52 [-]: LOADBOOL  R11 0 0      ; R11 := false
+ 52 [-]: LOADKB    R11 0 0      ; R11 := false
  53 [-]: CALL      R8 4 1       ; R8(R9,R10,R11)
  54 [-]: GETGLOBAL R8 K1        ; R8 := 0x89326c93
  55 [-]: SELF      R8 R8 K16    ; R9 := R8; R8 := R8[0xc7fcada9]
@@ -171,7 +171,7 @@
 102 [-]: CALL      R13 1 2      ; R13 := R13()
 103 [-]: SUB       R12 R12 R13  ; R12 := R12 - R13
 104 [-]: GETGLOBAL R13 K23      ; R13 := 0xcbd666e1
-105 [-]: LOADK     R14 0        ; R14 := 0.000000
+105 [-]: CONST     R14 0        ; R14 := 0.000000
 106 [-]: CALL      R13 2 1      ; R13(R14)
 107 [-]: JMP       87           ; PC := 87
 108 [-]: SELF      R13 R1 K28   ; R14 := R1; R13 := R1[0x2047cfe7]
@@ -186,7 +186,7 @@
 117 [-]: JMP       151          ; PC := 151
 118 [-]: GETGLOBAL R13 K34      ; R13 := 0x5bced4c4
 119 [-]: GETTABLE  R13 R13 K35  ; R13 := R13[0x3630e649]
-120 [-]: LOADK     R14 1        ; R14 := 1.000000
+120 [-]: CONST     R14 1        ; R14 := 1.000000
 121 [-]: LEN       R15 R8       ; R15 := # R8
 122 [-]: CALL      R13 3 2      ; R13 := R13(R14,R15)
 123 [-]: GETTABLE  R13 R8 R13   ; R13 := R8[R13]
@@ -208,7 +208,7 @@
 139 [-]: MOVE      R18 R1       ; R18 := R1
 140 [-]: CALL      R16 3 1      ; R16(R17,R18)
 141 [-]: SELF      R16 R15 K29  ; R17 := R15; R16 := R15[0x2d9ba74f]
-142 [-]: LOADK     R18 4        ; R18 := 4.000000
+142 [-]: CONST     R18 4        ; R18 := 4.000000
 143 [-]: CALL      R16 3 1      ; R16(R17,R18)
 144 [-]: SELF      R16 R15 K39  ; R17 := R15; R16 := R15[0x419785d7]
 145 [-]: MOVE      R18 R7       ; R18 := R7

@@ -83,7 +83,7 @@
  54 [-]: TEST      R8 0         ; if not R8 then PC := 73
  55 [-]: JMP       73           ; PC := 73
  56 [-]: LOADK     R8 K20       ; R8 := "/Lotus/Language/NewWar/P3M2BalloonBounds"
- 57 [-]: LOADK     R9 -1        ; R9 := -1.000000
+ 57 [-]: CONST     R9 -1        ; R9 := -1.000000
  58 [-]: GETGLOBAL R10 K8       ; R10 := _T
  59 [-]: GETTABLE  R10 R10 K21  ; R10 := R10[0x659270d0]
  60 [-]: GETGLOBAL R11 K22      ; R11 := 0x603636ad
@@ -91,11 +91,11 @@
  62 [-]: NEWTABLE  R13 0 0      ; R13 := {}
  63 [-]: CALL      R11 3 2      ; R11 := R11(R12,R13)
  64 [-]: MOVE      R12 R9       ; R12 := R9
- 65 [-]: LOADBOOL  R13 0 0      ; R13 := false
+ 65 [-]: LOADKB    R13 0 0      ; R13 := false
  66 [-]: LOADNIL   R14 R14      ; R14 := nil
- 67 [-]: LOADBOOL  R15 0 0      ; R15 := false
+ 67 [-]: LOADKB    R15 0 0      ; R15 := false
  68 [-]: LOADNIL   R16 R16      ; R16 := nil
- 69 [-]: LOADK     R17 3        ; R17 := 3.000000
+ 69 [-]: CONST     R17 3        ; R17 := 3.000000
  70 [-]: CALL      R10 8 1      ; R10(R11,R12,R13,R14,R15,R16,R17)
  71 [-]: JMP       73           ; PC := 73
  72 [-]: RETURN    R0 1         ; return 
@@ -156,7 +156,7 @@
 127 [-]: GETGLOBAL R19 K30      ; R19 := 0x5bced4c4
 128 [-]: GETTABLE  R19 R19 K31  ; R19 := R19[0xa40531d8]
 129 [-]: SUB       R20 K32 R15  ; R20 := 1.000000 - R15
-130 [-]: LOADK     R21 2        ; R21 := 2.000000
+130 [-]: CONST     R21 2        ; R21 := 2.000000
 131 [-]: CALL      R19 3 0      ; R19,... := R19(R20,R21)
 132 [-]: CALL      R16 0 1      ; R16(R17,...)
 133 [-]: GETGLOBAL R16 K33      ; R16 := 0x2d5c5020
@@ -169,8 +169,8 @@
 140 [-]: GETTABLE  R16 R13 K35  ; R16 := R13["postProcess"]
 141 [-]: SELF      R16 R16 K36  ; R17 := R16; R16 := R16[0xc7bdb630]
 142 [-]: GETGLOBAL R18 K37      ; R18 := 0x9bafffe3
-143 [-]: LOADK     R19 10       ; R19 := 10.000000
-144 [-]: LOADK     R20 0        ; R20 := 0.000000
+143 [-]: CONST     R19 10       ; R19 := 10.000000
+144 [-]: CONST     R20 0        ; R20 := 0.000000
 145 [-]: MOVE      R21 R15      ; R21 := R15
 146 [-]: CALL      R18 4 0      ; R18,... := R18(R19,R20,R21)
 147 [-]: CALL      R16 0 1      ; R16(R17,...)
@@ -227,8 +227,8 @@
 198 [-]: CALL      R20 3 2      ; R20 := R20(R21,R22)
 199 [-]: MUL       R20 K43 R20  ; R20 := 0.500000 * R20
 200 [-]: ADD       R20 R20 K43  ; R20 := R20 + 0.500000
-201 [-]: LOADK     R21 0        ; R21 := 0.000000
-202 [-]: LOADK     R22 1        ; R22 := 1.000000
+201 [-]: CONST     R21 0        ; R21 := 0.000000
+202 [-]: CONST     R22 1        ; R22 := 1.000000
 203 [-]: CALL      R19 4 2      ; R19 := R19(R20,R21,R22)
 204 [-]: MUL       R19 R16 R19  ; R19 := R16 * R19
 205 [-]: CALL      R17 3 1      ; R17(R18,R19)
@@ -242,11 +242,11 @@
 213 [-]: LOADK     R18 K52      ; R18 := "Avatar not in trigger, can maybe hide FX..."
 214 [-]: CALL      R17 2 1      ; R17(R18)
 215 [-]: GETGLOBAL R17 K53      ; R17 := 0xcbd666e1
-216 [-]: LOADK     R18 0        ; R18 := 0.000000
+216 [-]: CONST     R18 0        ; R18 := 0.000000
 217 [-]: CALL      R17 2 1      ; R17(R18)
 218 [-]: GETTABLE  R17 R13 K35  ; R17 := R13["postProcess"]
 219 [-]: SELF      R17 R17 K36  ; R18 := R17; R17 := R17[0xc7bdb630]
-220 [-]: LOADK     R19 0        ; R19 := 0.000000
+220 [-]: CONST     R19 0        ; R19 := 0.000000
 221 [-]: CALL      R17 3 1      ; R17(R18,R19)
 222 [-]: JMP       83           ; PC := 83
 223 [-]: RETURN    R0 1         ; return 
@@ -304,7 +304,7 @@
  41 [-]: SELF      R4 R4 K12    ; R5 := R4; R4 := R4[0x7c1a0374]
  42 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  43 [-]: SELF      R4 R4 K13    ; R5 := R4; R4 := R4[0xb6df3e50]
- 44 [-]: LOADK     R6 0         ; R6 := 0.000000
+ 44 [-]: CONST     R6 0         ; R6 := 0.000000
  45 [-]: CALL      R4 3 1       ; R4(R5,R6)
  46 [-]: SETTABLE  R3 K14 K15   ; R3["saturation"] := 1.000000
  47 [-]: GETGLOBAL R4 K16       ; R4 := 0x6bd52413

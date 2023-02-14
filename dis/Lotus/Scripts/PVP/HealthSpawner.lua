@@ -7,7 +7,7 @@
 ; Is_vararg:       2
 ; Max Stack Size:  3
 
-  1 [-]: LOADK     R0 20        ; R0 := 20.000000
+  1 [-]: CONST     R0 20        ; R0 := 20.000000
   2 [-]: CLOSURE   R1 0         ; R1 := closure(Function #1)
   3 [-]: MOVE      R0 R0        ; R0 := R0
   4 [-]: CLOSURE   R2 1         ; R2 := closure(Function #2)
@@ -36,7 +36,7 @@
   9 [-]: CALL      R0 0 2       ; R0 := R0(R1,...)
  10 [-]: NEWTABLE  R1 0 0       ; R1 := {}
  11 [-]: GETGLOBAL R2 K6        ; R2 := 0xcbd666e1
- 12 [-]: LOADK     R3 1         ; R3 := 1.000000
+ 12 [-]: CONST     R3 1         ; R3 := 1.000000
  13 [-]: CALL      R2 2 1       ; R2(R3)
  14 [-]: GETGLOBAL R2 K7        ; R2 := 0x14459a1c
  15 [-]: TEST      R2 0         ; if not R2 then PC := 29
@@ -104,7 +104,7 @@
  77 [-]: JMP       79           ; PC := 79
  78 [-]: JMP       83           ; PC := 83
  79 [-]: GETGLOBAL R19 K6       ; R19 := 0xcbd666e1
- 80 [-]: LOADK     R20 0        ; R20 := 0.000000
+ 80 [-]: CONST     R20 0        ; R20 := 0.000000
  81 [-]: CALL      R19 2 1      ; R19(R20)
  82 [-]: JMP       42           ; PC := 42
  83 [-]: GETGLOBAL R19 K0       ; R19 := 0x3d106989

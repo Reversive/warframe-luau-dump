@@ -76,7 +76,7 @@
  49 [-]: TEST      R3 1         ; if R3 then PC := 55
  50 [-]: JMP       55           ; PC := 55
  51 [-]: GETGLOBAL R3 K13       ; R3 := 0xcbd666e1
- 52 [-]: LOADK     R4 0         ; R4 := 0.000000
+ 52 [-]: CONST     R4 0         ; R4 := 0.000000
  53 [-]: CALL      R3 2 1       ; R3(R4)
  54 [-]: JMP       37           ; PC := 37
  55 [-]: GETGLOBAL R3 K1        ; R3 := 0x7b998233
@@ -110,7 +110,7 @@
  10 [-]: JMP       12           ; PC := 12
  11 [-]: JMP       16           ; PC := 16
  12 [-]: GETGLOBAL R2 K2        ; R2 := 0xcbd666e1
- 13 [-]: LOADK     R3 0         ; R3 := 0.000000
+ 13 [-]: CONST     R3 0         ; R3 := 0.000000
  14 [-]: CALL      R2 2 1       ; R2(R3)
  15 [-]: JMP       1            ; PC := 1
  16 [-]: GETGLOBAL R2 K0        ; R2 := 0x7b998233
@@ -130,7 +130,7 @@
  30 [-]: GETGLOBAL R4 K5        ; R4 := 0x0469f296
  31 [-]: LOADK     R5 K6        ; R5 := "CreateWaitDestroy"
  32 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 33 [-]: LOADBOOL  R5 0 0       ; R5 := false
+ 33 [-]: LOADKB    R5 0 0       ; R5 := false
  34 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
  35 [-]: RETURN    R0 1         ; return 
 

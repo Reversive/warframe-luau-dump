@@ -21,7 +21,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  8
 
-  1 [-]: LOADK     R2 0         ; R2 := 0.000000
+  1 [-]: CONST     R2 0         ; R2 := 0.000000
   2 [-]: GETGLOBAL R3 K0        ; R3 := _T
   3 [-]: GETTABLE  R3 R3 K1     ; R3 := R3["gHeatFissureHarvesters"]
   4 [-]: SELF      R3 R3 K2     ; R4 := R3; R3 := R3[0x4d8f4ec4]

@@ -67,7 +67,7 @@
 ; Max Stack Size:  21
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0xcbd666e1
-  2 [-]: LOADK     R2 0         ; R2 := 0.000000
+  2 [-]: CONST     R2 0         ; R2 := 0.000000
   3 [-]: CALL      R1 2 1       ; R1(R2)
   4 [-]: SELF      R1 R0 K1     ; R2 := R0; R1 := R0[0xed324116]
   5 [-]: CALL      R1 2 2       ; R1 := R1(R2)
@@ -138,7 +138,7 @@
  70 [-]: GETGLOBAL R11 K11      ; R11 := gLotusAvatarType
  71 [-]: SELF      R12 R0 K15   ; R13 := R0; R12 := R0[0xd1586535]
  72 [-]: CALL      R12 2 2      ; R12 := R12(R13)
- 73 [-]: LOADK     R13 0        ; R13 := 0.000000
+ 73 [-]: CONST     R13 0        ; R13 := 0.000000
  74 [-]: GETGLOBAL R14 K16      ; R14 := 0x2571fe13
  75 [-]: CALL      R9 6 2       ; R9 := R9(R10,R11,R12,R13,R14)
  76 [-]: LOADNIL   R10 R10      ; R10 := nil
@@ -177,7 +177,7 @@
 109 [-]: MOVE      R20 R10      ; R20 := R10
 110 [-]: CALL      R18 3 1      ; R18(R19,R20)
 111 [-]: GETGLOBAL R18 K0       ; R18 := 0xcbd666e1
-112 [-]: LOADK     R19 0        ; R19 := 0.000000
+112 [-]: CONST     R19 0        ; R19 := 0.000000
 113 [-]: CALL      R18 2 1      ; R18(R19)
 114 [-]: JMP       27           ; PC := 27
 115 [-]: RETURN    R0 1         ; return 

@@ -12,9 +12,9 @@
   3 [-]: GETGLOBAL R2 K1        ; R2 := package
   4 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["seeall"]
   5 [-]: CALL      R0 3 1       ; R0(R1,R2)
-  6 [-]: LOADK     R0 60        ; R0 := 60.000000
+  6 [-]: CONST     R0 60        ; R0 := 60.000000
   7 [-]: SETGLOBAL R0 K3        ; LITE_PRESENCE_RESYNC_INTERVAL := R0
-  8 [-]: LOADK     R0 15        ; R0 := 15.000000
+  8 [-]: CONST     R0 15        ; R0 := 15.000000
   9 [-]: SETGLOBAL R0 K4        ; RICH_PRESENCE_RESYNC_INTERVAL := R0
  10 [-]: CLOSURE   R0 0         ; R0 := closure(Function #1)
  11 [-]: SETGLOBAL R0 K5        ; Create := R0
@@ -38,9 +38,9 @@
   6 [-]: CLOSURE   R1 1         ; R1 := closure(Function #1.2)
   7 [-]: SETTABLE  R0 K2 R1     ; R0["CanResyncPresence"] := R1
   8 [-]: CLOSURE   R1 2         ; R1 := closure(Function #1.3)
-  9 [-]: SETTABLE  R0 K3 R1     ; R0["ResyncRichPresence"] := R1
+  9 [-]: SETTABLE  R0 K3 R1     ; R0[0x9ba7909f] := R1
  10 [-]: CLOSURE   R1 3         ; R1 := closure(Function #1.4)
- 11 [-]: SETTABLE  R0 K4 R1     ; R0["ResyncLitePresence"] := R1
+ 11 [-]: SETTABLE  R0 K4 R1     ; R0[0x7e17ae26] := R1
  12 [-]: CLOSURE   R1 4         ; R1 := closure(Function #1.5)
  13 [-]: SETTABLE  R0 K5 R1     ; R0["Update"] := R1
  14 [-]: RETURN    R0 2         ; return R0
@@ -61,7 +61,7 @@
   3 [-]: JMP       6            ; PC := 6
   4 [-]: GETTABLE  R1 R0 K0     ; R1 := R0["mParentEnv"]
   5 [-]: RETURN    R1 2         ; return R1
-  6 [-]: LOADK     R1 1         ; R1 := 1.000000
+  6 [-]: CONST     R1 1         ; R1 := 1.000000
   7 [-]: LOADNIL   R2 R2        ; R2 := nil
   8 [-]: GETGLOBAL R3 K2        ; R3 := 0xcd0165a3
   9 [-]: MOVE      R4 R1        ; R4 := R1
@@ -87,14 +87,14 @@
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0x76ea806b
   2 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1[0x3f3ae64c]
-  3 [-]: LOADK     R3 0         ; R3 := 0.000000
+  3 [-]: CONST     R3 0         ; R3 := 0.000000
   4 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
   5 [-]: GETGLOBAL R2 K2        ; R2 := 0x7b998233
   6 [-]: MOVE      R3 R1        ; R3 := R1
   7 [-]: CALL      R2 2 2       ; R2 := R2(R3)
   8 [-]: TEST      R2 0         ; if not R2 then PC := 12
   9 [-]: JMP       12           ; PC := 12
- 10 [-]: LOADBOOL  R2 0 0       ; R2 := false
+ 10 [-]: LOADKB    R2 0 0       ; R2 := false
  11 [-]: RETURN    R2 2         ; return R2
  12 [-]: SELF      R2 R1 K3     ; R3 := R1; R2 := R1[0x80563238]
  13 [-]: CALL      R2 2 2       ; R2 := R2(R3)
@@ -103,12 +103,12 @@
  16 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  17 [-]: TEST      R3 0         ; if not R3 then PC := 21
  18 [-]: JMP       21           ; PC := 21
- 19 [-]: LOADBOOL  R3 0 0       ; R3 := false
+ 19 [-]: LOADKB    R3 0 0       ; R3 := false
  20 [-]: RETURN    R3 2         ; return R3
- 21 [-]: LOADK     R3 1         ; R3 := 1.000000
+ 21 [-]: CONST     R3 1         ; R3 := 1.000000
  22 [-]: GETTABLE  R4 R0 K4     ; R4 := R0["mMoviesToSync"]
  23 [-]: LEN       R4 R4        ; R4 := # R4
- 24 [-]: LOADK     R5 1         ; R5 := 1.000000
+ 24 [-]: CONST     R5 1         ; R5 := 1.000000
  25 [-]: FORPREP   R3 44        ; R3 -= R5; PC := 44
  26 [-]: GETGLOBAL R7 K5        ; R7 := 0x9ba7909f
  27 [-]: SELF      R7 R7 K6     ; R8 := R7; R7 := R7[0xbcfb64ab]
@@ -126,10 +126,10 @@
  39 [-]: CALL      R8 4 2       ; R8 := R8(R9,R10,R11)
  40 [-]: TEST      R8 0         ; if not R8 then PC := 44
  41 [-]: JMP       44           ; PC := 44
- 42 [-]: LOADBOOL  R8 1 0       ; R8 := true
+ 42 [-]: LOADKB    R8 1 0       ; R8 := true
  43 [-]: RETURN    R8 2         ; return R8
  44 [-]: FORLOOP   R3 26        ; R3 += R5; if R3 <= R4 then begin PC := 26; R6 := R3 end
- 45 [-]: LOADBOOL  R8 0 0       ; R8 := false
+ 45 [-]: LOADKB    R8 0 0       ; R8 := false
  46 [-]: RETURN    R8 2         ; return R8
  47 [-]: RETURN    R0 1         ; return 
 

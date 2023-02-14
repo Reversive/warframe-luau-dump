@@ -42,41 +42,41 @@
  19 [-]: SELF      R3 R2 K4     ; R4 := R2; R3 := R2[0x68d708a7]
  20 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  21 [-]: SELF      R4 R3 K5     ; R5 := R3; R4 := R3[0x8e62760a]
- 22 [-]: LOADK     R6 0         ; R6 := 0.000000
+ 22 [-]: CONST     R6 0         ; R6 := 0.000000
  23 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
  24 [-]: SELF      R5 R0 K4     ; R6 := R0; R5 := R0[0x68d708a7]
  25 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  26 [-]: SELF      R6 R5 K5     ; R7 := R5; R6 := R5[0x8e62760a]
- 27 [-]: LOADK     R8 0         ; R8 := 0.000000
+ 27 [-]: CONST     R8 0         ; R8 := 0.000000
  28 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
  29 [-]: SELF      R7 R4 K7     ; R8 := R4; R7 := R4[0x697019d0]
- 30 [-]: LOADK     R9 6         ; R9 := 6.000000
+ 30 [-]: CONST     R9 6         ; R9 := 6.000000
  31 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
  32 [-]: TEST      R7 0         ; if not R7 then PC := 42
  33 [-]: JMP       42           ; PC := 42
  34 [-]: SELF      R7 R6 K8     ; R8 := R6; R7 := R6[0xa3927fe9]
- 35 [-]: LOADK     R9 6         ; R9 := 6.000000
+ 35 [-]: CONST     R9 6         ; R9 := 6.000000
  36 [-]: GETTABLE  R10 R4 K9    ; R10 := R4["mEnergyColor"]
  37 [-]: CALL      R7 4 1       ; R7(R8,R9,R10)
  38 [-]: SELF      R7 R6 K10    ; R8 := R6; R7 := R6[0xfc5d7158]
- 39 [-]: LOADK     R9 6         ; R9 := 6.000000
- 40 [-]: LOADBOOL  R10 1 0      ; R10 := true
+ 39 [-]: CONST     R9 6         ; R9 := 6.000000
+ 40 [-]: LOADKB    R10 1 0      ; R10 := true
  41 [-]: CALL      R7 4 1       ; R7(R8,R9,R10)
  42 [-]: SELF      R7 R4 K7     ; R8 := R4; R7 := R4[0x697019d0]
- 43 [-]: LOADK     R9 7         ; R9 := 7.000000
+ 43 [-]: CONST     R9 7         ; R9 := 7.000000
  44 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
  45 [-]: TEST      R7 0         ; if not R7 then PC := 55
  46 [-]: JMP       55           ; PC := 55
  47 [-]: SELF      R7 R6 K8     ; R8 := R6; R7 := R6[0xa3927fe9]
- 48 [-]: LOADK     R9 7         ; R9 := 7.000000
+ 48 [-]: CONST     R9 7         ; R9 := 7.000000
  49 [-]: GETTABLE  R10 R4 K11   ; R10 := R4["mEnergyColor1"]
  50 [-]: CALL      R7 4 1       ; R7(R8,R9,R10)
  51 [-]: SELF      R7 R6 K10    ; R8 := R6; R7 := R6[0xfc5d7158]
- 52 [-]: LOADK     R9 7         ; R9 := 7.000000
- 53 [-]: LOADBOOL  R10 1 0      ; R10 := true
+ 52 [-]: CONST     R9 7         ; R9 := 7.000000
+ 53 [-]: LOADKB    R10 1 0      ; R10 := true
  54 [-]: CALL      R7 4 1       ; R7(R8,R9,R10)
  55 [-]: SELF      R7 R5 K12    ; R8 := R5; R7 := R5[0x199edf6e]
- 56 [-]: LOADK     R9 0         ; R9 := 0.000000
+ 56 [-]: CONST     R9 0         ; R9 := 0.000000
  57 [-]: MOVE      R10 R6       ; R10 := R6
  58 [-]: CALL      R7 4 1       ; R7(R8,R9,R10)
  59 [-]: SELF      R7 R0 K13    ; R8 := R0; R7 := R0[0xaa041663]

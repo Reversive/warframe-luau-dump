@@ -80,7 +80,7 @@
   4 [-]: TEST      R1 0         ; if not R1 then PC := 10
   5 [-]: JMP       10           ; PC := 10
   6 [-]: GETGLOBAL R1 K2        ; R1 := 0xcbd666e1
-  7 [-]: LOADK     R2 0         ; R2 := 0.000000
+  7 [-]: CONST     R2 0         ; R2 := 0.000000
   8 [-]: CALL      R1 2 1       ; R1(R2)
   9 [-]: JMP       1            ; PC := 1
  10 [-]: GETGLOBAL R1 K1        ; R1 := 0xbe190284
@@ -103,10 +103,10 @@
  27 [-]: SELF      R3 R2 K5     ; R4 := R2; R3 := R2[0x68d708a7]
  28 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  29 [-]: SELF      R4 R3 K6     ; R5 := R3; R4 := R3[0x8e62760a]
- 30 [-]: LOADK     R6 0         ; R6 := 0.000000
+ 30 [-]: CONST     R6 0         ; R6 := 0.000000
  31 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
  32 [-]: SELF      R5 R4 K8     ; R6 := R4; R5 := R4[0x697019d0]
- 33 [-]: LOADK     R7 6         ; R7 := 6.000000
+ 33 [-]: CONST     R7 6         ; R7 := 6.000000
  34 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
  35 [-]: TEST      R5 0         ; if not R5 then PC := 57
  36 [-]: JMP       57           ; PC := 57
@@ -114,15 +114,15 @@
  38 [-]: GETTABLE  R6 R4 K10    ; R6 := R4["mEnergyColor"]
  39 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  40 [-]: SELF      R6 R4 K11    ; R7 := R4; R6 := R4[0xa3927fe9]
- 41 [-]: LOADK     R8 6         ; R8 := 6.000000
+ 41 [-]: CONST     R8 6         ; R8 := 6.000000
  42 [-]: MOVE      R9 R5        ; R9 := R5
  43 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
  44 [-]: SELF      R6 R4 K12    ; R7 := R4; R6 := R4[0xfc5d7158]
- 45 [-]: LOADK     R8 6         ; R8 := 6.000000
- 46 [-]: LOADBOOL  R9 1 0       ; R9 := true
+ 45 [-]: CONST     R8 6         ; R8 := 6.000000
+ 46 [-]: LOADKB    R9 1 0       ; R9 := true
  47 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
  48 [-]: SELF      R6 R3 K13    ; R7 := R3; R6 := R3[0x199edf6e]
- 49 [-]: LOADK     R8 0         ; R8 := 0.000000
+ 49 [-]: CONST     R8 0         ; R8 := 0.000000
  50 [-]: MOVE      R9 R4        ; R9 := R4
  51 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
  52 [-]: SELF      R6 R3 K14    ; R7 := R3; R6 := R3[0xf6ce03ef]
@@ -143,13 +143,13 @@
 ; Max Stack Size:  10
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0xcbd666e1
-  2 [-]: LOADK     R2 1         ; R2 := 1.000000
+  2 [-]: CONST     R2 1         ; R2 := 1.000000
   3 [-]: CALL      R1 2 1       ; R1(R2)
   4 [-]: SELF      R1 R0 K1     ; R2 := R0; R1 := R0[0xc8a45881]
   5 [-]: CALL      R1 2 1       ; R1(R2)
   6 [-]: SELF      R1 R0 K2     ; R2 := R0; R1 := R0[0x986d2ab8]
   7 [-]: GETUPVAL  R3 U0        ; R3 := U0
-  8 [-]: LOADK     R4 0         ; R4 := 0.000000
+  8 [-]: CONST     R4 0         ; R4 := 0.000000
   9 [-]: CALL      R1 4 1       ; R1(R2,R3,R4)
  10 [-]: SELF      R1 R0 K3     ; R2 := R0; R1 := R0[0x2b54251b]
  11 [-]: CALL      R1 2 2       ; R1 := R1(R2)
@@ -170,7 +170,7 @@
  26 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  27 [-]: SELF      R4 R2 K9     ; R5 := R2; R4 := R2[0x7a7373f5]
  28 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 29 [-]: LOADK     R5 1         ; R5 := 1.000000
+ 29 [-]: CONST     R5 1         ; R5 := 1.000000
  30 [-]: GETGLOBAL R6 K4        ; R6 := 0x7b998233
  31 [-]: MOVE      R7 R2        ; R7 := R2
  32 [-]: CALL      R6 2 2       ; R6 := R6(R7)
@@ -182,8 +182,8 @@
  38 [-]: GETGLOBAL R6 K10       ; R6 := 0x42dcc9f5
  39 [-]: DIV       R7 R4 R3     ; R7 := R4 / R3
  40 [-]: SUB       R7 K11 R7    ; R7 := 1.000000 - R7
- 41 [-]: LOADK     R8 0         ; R8 := 0.000000
- 42 [-]: LOADK     R9 1         ; R9 := 1.000000
+ 41 [-]: CONST     R8 0         ; R8 := 0.000000
+ 42 [-]: CONST     R9 1         ; R9 := 1.000000
  43 [-]: CALL      R6 4 2       ; R6 := R6(R7,R8,R9)
  44 [-]: MOVE      R5 R6        ; R5 := R6
  45 [-]: LT        0 K12 R5     ; if 0.010000 >= R5 then PC := 55
@@ -193,7 +193,7 @@
  49 [-]: MOVE      R9 R5        ; R9 := R5
  50 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
  51 [-]: GETGLOBAL R6 K0        ; R6 := 0xcbd666e1
- 52 [-]: LOADK     R7 0         ; R7 := 0.000000
+ 52 [-]: CONST     R7 0         ; R7 := 0.000000
  53 [-]: CALL      R6 2 1       ; R6(R7)
  54 [-]: JMP       30           ; PC := 30
  55 [-]: GETGLOBAL R6 K0        ; R6 := 0xcbd666e1

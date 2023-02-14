@@ -112,7 +112,7 @@
  89 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  90 [-]: SELF      R3 R3 K15    ; R4 := R3; R3 := R3[0x99fddba0]
  91 [-]: GETGLOBAL R5 K32       ; R5 := 0xc53ded2d
- 92 [-]: NOT       R5 R5        ; R5 := not R5
+ 92 [-]: NOT       R5 R5        ; R5 :=  R5
  93 [-]: CALL      R3 3 1       ; R3(R4,R5)
  94 [-]: SELF      R3 R1 K21    ; R4 := R1; R3 := R1[0xd9848b59]
  95 [-]: GETGLOBAL R5 K33       ; R5 := 0x3a343f65

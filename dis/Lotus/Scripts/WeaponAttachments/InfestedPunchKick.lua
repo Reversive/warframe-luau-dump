@@ -32,8 +32,8 @@
   7 [-]: GETGLOBAL R7 K3        ; R7 := 0x520e413d
   8 [-]: SELF      R8 R0 K4     ; R9 := R0; R8 := R0[0xd1586535]
   9 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 10 [-]: LOADBOOL  R9 0 0       ; R9 := false
- 11 [-]: LOADK     R10 1        ; R10 := 1.000000
+ 10 [-]: LOADKB    R9 0 0       ; R9 := false
+ 11 [-]: CONST     R10 1        ; R10 := 1.000000
  12 [-]: MOVE      R11 R0       ; R11 := R0
  13 [-]: LOADNIL   R12 R12      ; R12 := nil
  14 [-]: CALL      R5 8 1       ; R5(R6,R7,R8,R9,R10,R11,R12)
@@ -60,13 +60,13 @@
   9 [-]: GETGLOBAL R4 K3        ; R4 := 0x7b998233
  10 [-]: MOVE      R5 R3        ; R5 := R3
  11 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 12 [-]: TEST      R4 1         ; if R4 then PC := 38
- 13 [-]: JMP       38           ; PC := 38
+ 12 [-]: TEST      R4 1         ; if R4 then PC := 41
+ 13 [-]: JMP       41           ; PC := 41
  14 [-]: SELF      R4 R3 K4     ; R5 := R3; R4 := R3[0xf2deaf69]
  15 [-]: GETGLOBAL R6 K5        ; R6 := gBaseAvatarType
  16 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
- 17 [-]: TEST      R4 0         ; if not R4 then PC := 38
- 18 [-]: JMP       38           ; PC := 38
+ 17 [-]: TEST      R4 0         ; if not R4 then PC := 41
+ 18 [-]: JMP       41           ; PC := 41
  19 [-]: GETGLOBAL R4 K6        ; R4 := 0xbe190284
  20 [-]: SELF      R4 R4 K7     ; R5 := R4; R4 := R4[0x32316a21]
  21 [-]: CALL      R4 2 2       ; R4 := R4(R5)
@@ -74,8 +74,8 @@
  23 [-]: JMP       28           ; PC := 28
  24 [-]: SELF      R4 R1 K8     ; R5 := R1; R4 := R1[0xbe9db62e]
  25 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 26 [-]: LT        0 K9 R4      ; if 0.000000 >= R4 then PC := 38
- 27 [-]: JMP       38           ; PC := 38
+ 26 [-]: LT        0 K9 R4      ; if 0.000000 >= R4 then PC := 41
+ 27 [-]: JMP       41           ; PC := 41
  28 [-]: SELF      R4 R3 K10    ; R5 := R3; R4 := R3[0x1f135de0]
  29 [-]: MOVE      R6 R3        ; R6 := R3
  30 [-]: SELF      R7 R1 K11    ; R8 := R1; R7 := R1[0xfbe77371]
@@ -83,9 +83,12 @@
  32 [-]: SELF      R8 R1 K12    ; R9 := R1; R8 := R1[0x32466c36]
  33 [-]: CALL      R8 2 2       ; R8 := R8(R9)
  34 [-]: ADD       R7 R7 R8     ; R7 := R7 + R8
- 35 [-]: GETGLOBAL R8 K13       ; R8 := 0x196a8282
- 36 [-]: MUL       R7 R7 R8     ; R7 := R7 * R8
- 37 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
- 38 [-]: RETURN    R0 1         ; return 
+ 35 [-]: SELF      R8 R1 K13    ; R9 := R1; R8 := R1[0xfc79a2a8]
+ 36 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+ 37 [-]: ADD       R7 R7 R8     ; R7 := R7 + R8
+ 38 [-]: GETGLOBAL R8 K14       ; R8 := 0x196a8282
+ 39 [-]: MUL       R7 R7 R8     ; R7 := R7 * R8
+ 40 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
+ 41 [-]: RETURN    R0 1         ; return 
 
 

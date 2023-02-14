@@ -34,7 +34,7 @@
  11 [-]: CALL      R6 0 2       ; R6 := R6(R7,...)
  12 [-]: LOADK     R7 K5        ; R7 := "/Lotus/"
  13 [-]: LOADK     R8 K6        ; R8 := "/Lotus/StoreItems/"
- 14 [-]: LOADK     R9 1         ; R9 := 1.000000
+ 14 [-]: CONST     R9 1         ; R9 := 1.000000
  15 [-]: CALL      R5 5 2       ; R5 := R5(R6,R7,R8,R9)
  16 [-]: GETGLOBAL R6 K7        ; R6 := 0xb009bbc6
  17 [-]: MOVE      R7 R5        ; R7 := R5
@@ -49,8 +49,8 @@
  26 [-]: GETGLOBAL R8 K9        ; R8 := 0x2bd2e169
  27 [-]: LE        1 R8 R7      ; if R8 <= R7 then PC := 30
  28 [-]: JMP       30           ; PC := 30
- 29 [-]: LOADBOOL  R7 0 1       ; R7 := false; PC := 30
- 30 [-]: LOADBOOL  R7 1 0       ; R7 := true
+ 29 [-]: LOADKB    R7 0 1       ; R7 := false; PC := 30
+ 30 [-]: LOADKB    R7 1 0       ; R7 := true
  31 [-]: RETURN    R7 2         ; return R7
  32 [-]: GETGLOBAL R7 K0        ; R7 := 0x7b998233
  33 [-]: MOVE      R8 R4        ; R8 := R4
@@ -65,8 +65,8 @@
  42 [-]: GETGLOBAL R8 K9        ; R8 := 0x2bd2e169
  43 [-]: LE        1 R8 R7      ; if R8 <= R7 then PC := 46
  44 [-]: JMP       46           ; PC := 46
- 45 [-]: LOADBOOL  R7 0 1       ; R7 := false; PC := 46
- 46 [-]: LOADBOOL  R7 1 0       ; R7 := true
+ 45 [-]: LOADKB    R7 0 1       ; R7 := false; PC := 46
+ 46 [-]: LOADKB    R7 1 0       ; R7 := true
  47 [-]: RETURN    R7 2         ; return R7
  48 [-]: RETURN    R0 1         ; return 
 

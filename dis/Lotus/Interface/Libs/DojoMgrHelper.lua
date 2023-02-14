@@ -5,7 +5,7 @@
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       2
-; Max Stack Size:  36
+; Max Stack Size:  37
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x2d0fad09
   2 [-]: LOADK     R1 K1        ; R1 := "EE.Interface.Utilities"
@@ -19,252 +19,259 @@
  10 [-]: GETGLOBAL R3 K0        ; R3 := 0x2d0fad09
  11 [-]: LOADK     R4 K4        ; R4 := "EE.Types.ScriptCommands.JSON"
  12 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 13 [-]: GETGLOBAL R4 K5        ; R4 := 0xb009bbc6
- 14 [-]: LOADK     R5 K6        ; R5 := "/EE/Types/Physics/KinematicAvatarsWalkThrough"
+ 13 [-]: GETGLOBAL R4 K0        ; R4 := 0x2d0fad09
+ 14 [-]: LOADK     R5 K5        ; R5 := "Lotus.Scripts.Libs.PlayerShipUtilities"
  15 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 16 [-]: GETGLOBAL R5 K7        ; R5 := 0x0469f296
- 17 [-]: LOADK     R6 K8        ; R6 := "PersonalQuartersRoom"
+ 16 [-]: GETGLOBAL R5 K6        ; R5 := 0xb009bbc6
+ 17 [-]: LOADK     R6 K7        ; R6 := "/EE/Types/Physics/KinematicAvatarsWalkThrough"
  18 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 19 [-]: GETGLOBAL R6 K9        ; R6 := 0x7ed0a956
- 20 [-]: LOADK     R7 K10       ; R7 := "/Lotus/Types/Game/ActionFigurePlaceableAreaTrigger"
+ 19 [-]: GETGLOBAL R6 K8        ; R6 := 0x0469f296
+ 20 [-]: LOADK     R7 K9        ; R7 := "PersonalQuartersRoom"
  21 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 22 [-]: LOADNIL   R7 R12       ; R7 := R8 := R9 := R10 := R11 := R12 := nil
- 23 [-]: CLOSURE   R13 0        ; R13 := closure(Function #1)
- 24 [-]: SETGLOBAL R13 K11      ; FatalErrorConfirm := R13
- 25 [-]: CLOSURE   R13 1        ; R13 := closure(Function #2)
- 26 [-]: CLOSURE   R14 2        ; R14 := closure(Function #3)
- 27 [-]: MOVE      R0 R13       ; R0 := R13
- 28 [-]: CLOSURE   R15 3        ; R15 := closure(Function #4)
- 29 [-]: MOVE      R0 R14       ; R0 := R14
- 30 [-]: MOVE      R0 R13       ; R0 := R13
- 31 [-]: SETGLOBAL R15 K12      ; InitializeDojoMgr := R15
- 32 [-]: CLOSURE   R15 4        ; R15 := closure(Function #5)
- 33 [-]: SETGLOBAL R15 K13      ; UpdateComponentDecoStates := R15
- 34 [-]: CLOSURE   R15 5        ; R15 := closure(Function #6)
- 35 [-]: SETGLOBAL R15 K14      ; OnStreamSkyboxes := R15
- 36 [-]: CLOSURE   R15 6        ; R15 := closure(Function #7)
- 37 [-]: SETGLOBAL R15 K15      ; OnDojoRefreshed := R15
- 38 [-]: CLOSURE   R15 7        ; R15 := closure(Function #8)
- 39 [-]: MOVE      R0 R7        ; R0 := R7
- 40 [-]: SETGLOBAL R15 K16      ; OnComponentRefreshed := R15
- 41 [-]: CLOSURE   R15 8        ; R15 := closure(Function #9)
- 42 [-]: SETGLOBAL R15 K17      ; OnComponentsRefreshed := R15
- 43 [-]: CLOSURE   R15 9        ; R15 := closure(Function #10)
- 44 [-]: SETGLOBAL R15 K18      ; OnComponentPlaced := R15
- 45 [-]: CLOSURE   R15 10       ; R15 := closure(Function #11)
- 46 [-]: SETGLOBAL R15 K19      ; OnComponentOperationFinished := R15
- 47 [-]: CLOSURE   R15 11       ; R15 := closure(Function #12)
- 48 [-]: SETGLOBAL R15 K20      ; OnComponentAborted := R15
- 49 [-]: CLOSURE   R15 12       ; R15 := closure(Function #13)
- 50 [-]: SETGLOBAL R15 K21      ; OnComponentMessageSet := R15
- 51 [-]: CLOSURE   R15 13       ; R15 := closure(Function #14)
- 52 [-]: SETGLOBAL R15 K22      ; OnSpawnRoomChanged := R15
- 53 [-]: CLOSURE   R15 14       ; R15 := closure(Function #15)
- 54 [-]: SETGLOBAL R15 K23      ; ConfirmationReviewed := R15
- 55 [-]: CLOSURE   R15 15       ; R15 := closure(Function #16)
- 56 [-]: SETGLOBAL R15 K24      ; OnVaultRefreshed := R15
- 57 [-]: CLOSURE   R15 16       ; R15 := closure(Function #17)
- 58 [-]: SETGLOBAL R15 K25      ; OnEmblemRetrieved := R15
- 59 [-]: CLOSURE   R15 17       ; R15 := closure(Function #18)
- 60 [-]: SETGLOBAL R15 K26      ; OnDecoResourceReady := R15
- 61 [-]: CLOSURE   R15 18       ; R15 := closure(Function #19)
- 62 [-]: SETGLOBAL R15 K27      ; ApplyDecoGrouping := R15
- 63 [-]: CLOSURE   R15 19       ; R15 := closure(Function #20)
- 64 [-]: CLOSURE   R16 20       ; R16 := closure(Function #21)
- 65 [-]: CLOSURE   R17 21       ; R17 := closure(Function #22)
- 66 [-]: MOVE      R0 R15       ; R0 := R15
- 67 [-]: MOVE      R0 R10       ; R0 := R10
- 68 [-]: MOVE      R0 R0        ; R0 := R0
- 69 [-]: MOVE      R0 R11       ; R0 := R11
- 70 [-]: CLOSURE   R18 22       ; R18 := closure(Function #23)
+ 22 [-]: GETGLOBAL R7 K10       ; R7 := 0x7ed0a956
+ 23 [-]: LOADK     R8 K11       ; R8 := "/Lotus/Types/Game/ActionFigurePlaceableAreaTrigger"
+ 24 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+ 25 [-]: LOADNIL   R8 R13       ; R8 := R9 := R10 := R11 := R12 := R13 := nil
+ 26 [-]: CLOSURE   R14 0        ; R14 := closure(Function #1)
+ 27 [-]: SETGLOBAL R14 K12      ; FatalErrorConfirm := R14
+ 28 [-]: CLOSURE   R14 1        ; R14 := closure(Function #2)
+ 29 [-]: CLOSURE   R15 2        ; R15 := closure(Function #3)
+ 30 [-]: MOVE      R0 R14       ; R0 := R14
+ 31 [-]: CLOSURE   R16 3        ; R16 := closure(Function #4)
+ 32 [-]: MOVE      R0 R15       ; R0 := R15
+ 33 [-]: MOVE      R0 R14       ; R0 := R14
+ 34 [-]: SETGLOBAL R16 K13      ; InitializeDojoMgr := R16
+ 35 [-]: CLOSURE   R16 4        ; R16 := closure(Function #5)
+ 36 [-]: SETGLOBAL R16 K14      ; UpdateComponentDecoStates := R16
+ 37 [-]: CLOSURE   R16 5        ; R16 := closure(Function #6)
+ 38 [-]: SETGLOBAL R16 K15      ; OnStreamSkyboxes := R16
+ 39 [-]: CLOSURE   R16 6        ; R16 := closure(Function #7)
+ 40 [-]: SETGLOBAL R16 K16      ; OnDojoRefreshed := R16
+ 41 [-]: CLOSURE   R16 7        ; R16 := closure(Function #8)
+ 42 [-]: MOVE      R0 R8        ; R0 := R8
+ 43 [-]: SETGLOBAL R16 K17      ; OnComponentRefreshed := R16
+ 44 [-]: CLOSURE   R16 8        ; R16 := closure(Function #9)
+ 45 [-]: SETGLOBAL R16 K18      ; OnComponentsRefreshed := R16
+ 46 [-]: CLOSURE   R16 9        ; R16 := closure(Function #10)
+ 47 [-]: SETGLOBAL R16 K19      ; OnComponentPlaced := R16
+ 48 [-]: CLOSURE   R16 10       ; R16 := closure(Function #11)
+ 49 [-]: SETGLOBAL R16 K20      ; OnComponentOperationFinished := R16
+ 50 [-]: CLOSURE   R16 11       ; R16 := closure(Function #12)
+ 51 [-]: SETGLOBAL R16 K21      ; OnComponentAborted := R16
+ 52 [-]: CLOSURE   R16 12       ; R16 := closure(Function #13)
+ 53 [-]: SETGLOBAL R16 K22      ; OnComponentMessageSet := R16
+ 54 [-]: CLOSURE   R16 13       ; R16 := closure(Function #14)
+ 55 [-]: SETGLOBAL R16 K23      ; OnSpawnRoomChanged := R16
+ 56 [-]: CLOSURE   R16 14       ; R16 := closure(Function #15)
+ 57 [-]: SETGLOBAL R16 K24      ; ConfirmationReviewed := R16
+ 58 [-]: CLOSURE   R16 15       ; R16 := closure(Function #16)
+ 59 [-]: SETGLOBAL R16 K25      ; OnVaultRefreshed := R16
+ 60 [-]: CLOSURE   R16 16       ; R16 := closure(Function #17)
+ 61 [-]: SETGLOBAL R16 K26      ; OnEmblemRetrieved := R16
+ 62 [-]: CLOSURE   R16 17       ; R16 := closure(Function #18)
+ 63 [-]: SETGLOBAL R16 K27      ; OnDecoResourceReady := R16
+ 64 [-]: CLOSURE   R16 18       ; R16 := closure(Function #19)
+ 65 [-]: SETGLOBAL R16 K28      ; ApplyDecoGrouping := R16
+ 66 [-]: CLOSURE   R16 19       ; R16 := closure(Function #20)
+ 67 [-]: CLOSURE   R17 20       ; R17 := closure(Function #21)
+ 68 [-]: CLOSURE   R18 21       ; R18 := closure(Function #22)
+ 69 [-]: MOVE      R0 R16       ; R0 := R16
+ 70 [-]: MOVE      R0 R11       ; R0 := R11
  71 [-]: MOVE      R0 R0        ; R0 := R0
- 72 [-]: CLOSURE   R19 23       ; R19 := closure(Function #24)
- 73 [-]: MOVE      R0 R18       ; R0 := R18
+ 72 [-]: MOVE      R0 R12       ; R0 := R12
+ 73 [-]: CLOSURE   R19 22       ; R19 := closure(Function #23)
  74 [-]: MOVE      R0 R0        ; R0 := R0
- 75 [-]: MOVE      R0 R17       ; R0 := R17
- 76 [-]: CLOSURE   R20 24       ; R20 := closure(Function #25)
- 77 [-]: MOVE      R0 R19       ; R0 := R19
- 78 [-]: SETGLOBAL R20 K28      ; OSKOnDecoNamed := R20
- 79 [-]: CLOSURE   R20 25       ; R20 := closure(Function #26)
- 80 [-]: MOVE      R0 R1        ; R0 := R1
- 81 [-]: MOVE      R0 R0        ; R0 := R0
- 82 [-]: MOVE      R0 R12       ; R0 := R12
- 83 [-]: MOVE      R0 R19       ; R0 := R19
- 84 [-]: CLOSURE   R21 26       ; R21 := closure(Function #27)
- 85 [-]: CLOSURE   R22 27       ; R22 := closure(Function #28)
- 86 [-]: MOVE      R0 R21       ; R0 := R21
- 87 [-]: MOVE      R0 R0        ; R0 := R0
- 88 [-]: MOVE      R0 R7        ; R0 := R7
- 89 [-]: MOVE      R0 R15       ; R0 := R15
- 90 [-]: SETGLOBAL R22 K29      ; OnShipDecoPlaced := R22
- 91 [-]: CLOSURE   R22 28       ; R22 := closure(Function #29)
- 92 [-]: MOVE      R0 R16       ; R0 := R16
- 93 [-]: MOVE      R0 R21       ; R0 := R21
- 94 [-]: MOVE      R0 R7        ; R0 := R7
- 95 [-]: MOVE      R0 R0        ; R0 := R0
- 96 [-]: SETGLOBAL R22 K30      ; OnShipDecoRemoved := R22
- 97 [-]: CLOSURE   R22 29       ; R22 := closure(Function #30)
- 98 [-]: MOVE      R0 R0        ; R0 := R0
- 99 [-]: SETGLOBAL R22 K31      ; OnShipRootDecoUngrouped := R22
-100 [-]: CLOSURE   R22 30       ; R22 := closure(Function #31)
-101 [-]: MOVE      R0 R1        ; R0 := R1
-102 [-]: SETGLOBAL R22 K32      ; OnRemoteDecoMoved := R22
-103 [-]: CLOSURE   R11 31       ; R11 := closure(Function #32)
-104 [-]: CLOSURE   R22 32       ; R22 := closure(Function #33)
-105 [-]: MOVE      R0 R10       ; R0 := R10
-106 [-]: MOVE      R0 R0        ; R0 := R0
-107 [-]: MOVE      R0 R11       ; R0 := R11
-108 [-]: MOVE      R0 R3        ; R0 := R3
-109 [-]: MOVE      R0 R5        ; R0 := R5
-110 [-]: MOVE      R0 R6        ; R0 := R6
-111 [-]: MOVE      R0 R7        ; R0 := R7
-112 [-]: SETGLOBAL R22 K33      ; OnShipDecoMoved := R22
-113 [-]: CLOSURE   R22 33       ; R22 := closure(Function #34)
-114 [-]: SETGLOBAL R22 K34      ; OnHostFavouriteWarframeUpdated := R22
-115 [-]: CLOSURE   R12 34       ; R12 := closure(Function #35)
-116 [-]: MOVE      R0 R11       ; R0 := R11
-117 [-]: MOVE      R0 R10       ; R0 := R10
-118 [-]: MOVE      R0 R7        ; R0 := R7
-119 [-]: CLOSURE   R22 35       ; R22 := closure(Function #36)
-120 [-]: MOVE      R0 R12       ; R0 := R12
-121 [-]: SETGLOBAL R22 K35      ; CancelDecorationPlacement := R22
-122 [-]: CLOSURE   R22 36       ; R22 := closure(Function #37)
-123 [-]: MOVE      R0 R1        ; R0 := R1
-124 [-]: MOVE      R0 R0        ; R0 := R0
-125 [-]: MOVE      R0 R12       ; R0 := R12
-126 [-]: CLOSURE   R23 37       ; R23 := closure(Function #38)
-127 [-]: MOVE      R0 R22       ; R0 := R22
-128 [-]: MOVE      R0 R20       ; R0 := R20
-129 [-]: SETGLOBAL R23 K36      ; PlaceDecoration := R23
-130 [-]: CLOSURE   R23 38       ; R23 := closure(Function #39)
-131 [-]: MOVE      R0 R12       ; R0 := R12
-132 [-]: MOVE      R0 R0        ; R0 := R0
-133 [-]: SETGLOBAL R23 K37      ; InvalidGroupDecoration := R23
-134 [-]: CLOSURE   R23 39       ; R23 := closure(Function #40)
-135 [-]: CLOSURE   R24 40       ; R24 := closure(Function #41)
-136 [-]: MOVE      R0 R1        ; R0 := R1
-137 [-]: MOVE      R0 R0        ; R0 := R0
-138 [-]: CLOSURE   R25 41       ; R25 := closure(Function #42)
-139 [-]: CLOSURE   R26 42       ; R26 := closure(Function #43)
-140 [-]: MOVE      R0 R25       ; R0 := R25
-141 [-]: SETGLOBAL R26 K38      ; ChangeDecoSelectionMode := R26
-142 [-]: CLOSURE   R26 43       ; R26 := closure(Function #44)
-143 [-]: MOVE      R0 R1        ; R0 := R1
-144 [-]: MOVE      R0 R0        ; R0 := R0
-145 [-]: MOVE      R0 R25       ; R0 := R25
-146 [-]: CLOSURE   R27 44       ; R27 := closure(Function #45)
-147 [-]: MOVE      R0 R1        ; R0 := R1
-148 [-]: MOVE      R0 R0        ; R0 := R0
-149 [-]: MOVE      R0 R25       ; R0 := R25
-150 [-]: CLOSURE   R28 45       ; R28 := closure(Function #46)
-151 [-]: MOVE      R0 R1        ; R0 := R1
-152 [-]: MOVE      R0 R2        ; R0 := R2
-153 [-]: MOVE      R0 R0        ; R0 := R0
-154 [-]: MOVE      R0 R27       ; R0 := R27
+ 75 [-]: CLOSURE   R20 23       ; R20 := closure(Function #24)
+ 76 [-]: MOVE      R0 R19       ; R0 := R19
+ 77 [-]: MOVE      R0 R0        ; R0 := R0
+ 78 [-]: MOVE      R0 R18       ; R0 := R18
+ 79 [-]: CLOSURE   R21 24       ; R21 := closure(Function #25)
+ 80 [-]: MOVE      R0 R20       ; R0 := R20
+ 81 [-]: SETGLOBAL R21 K29      ; OSKOnDecoNamed := R21
+ 82 [-]: CLOSURE   R21 25       ; R21 := closure(Function #26)
+ 83 [-]: MOVE      R0 R1        ; R0 := R1
+ 84 [-]: MOVE      R0 R0        ; R0 := R0
+ 85 [-]: MOVE      R0 R13       ; R0 := R13
+ 86 [-]: MOVE      R0 R20       ; R0 := R20
+ 87 [-]: CLOSURE   R22 26       ; R22 := closure(Function #27)
+ 88 [-]: MOVE      R0 R4        ; R0 := R4
+ 89 [-]: CLOSURE   R23 27       ; R23 := closure(Function #28)
+ 90 [-]: MOVE      R0 R22       ; R0 := R22
+ 91 [-]: MOVE      R0 R0        ; R0 := R0
+ 92 [-]: MOVE      R0 R8        ; R0 := R8
+ 93 [-]: MOVE      R0 R16       ; R0 := R16
+ 94 [-]: SETGLOBAL R23 K30      ; OnShipDecoPlaced := R23
+ 95 [-]: CLOSURE   R23 28       ; R23 := closure(Function #29)
+ 96 [-]: MOVE      R0 R17       ; R0 := R17
+ 97 [-]: MOVE      R0 R22       ; R0 := R22
+ 98 [-]: MOVE      R0 R8        ; R0 := R8
+ 99 [-]: MOVE      R0 R0        ; R0 := R0
+100 [-]: SETGLOBAL R23 K31      ; OnShipDecoRemoved := R23
+101 [-]: CLOSURE   R23 29       ; R23 := closure(Function #30)
+102 [-]: MOVE      R0 R0        ; R0 := R0
+103 [-]: SETGLOBAL R23 K32      ; OnShipRootDecoUngrouped := R23
+104 [-]: CLOSURE   R23 30       ; R23 := closure(Function #31)
+105 [-]: MOVE      R0 R1        ; R0 := R1
+106 [-]: SETGLOBAL R23 K33      ; OnRemoteDecoMoved := R23
+107 [-]: CLOSURE   R12 31       ; R12 := closure(Function #32)
+108 [-]: CLOSURE   R23 32       ; R23 := closure(Function #33)
+109 [-]: MOVE      R0 R11       ; R0 := R11
+110 [-]: MOVE      R0 R0        ; R0 := R0
+111 [-]: MOVE      R0 R12       ; R0 := R12
+112 [-]: MOVE      R0 R3        ; R0 := R3
+113 [-]: MOVE      R0 R4        ; R0 := R4
+114 [-]: MOVE      R0 R6        ; R0 := R6
+115 [-]: MOVE      R0 R7        ; R0 := R7
+116 [-]: MOVE      R0 R8        ; R0 := R8
+117 [-]: SETGLOBAL R23 K34      ; OnShipDecoMoved := R23
+118 [-]: CLOSURE   R23 33       ; R23 := closure(Function #34)
+119 [-]: MOVE      R0 R4        ; R0 := R4
+120 [-]: SETGLOBAL R23 K35      ; OnHostFavouriteWarframeUpdated := R23
+121 [-]: CLOSURE   R13 34       ; R13 := closure(Function #35)
+122 [-]: MOVE      R0 R12       ; R0 := R12
+123 [-]: MOVE      R0 R11       ; R0 := R11
+124 [-]: MOVE      R0 R8        ; R0 := R8
+125 [-]: CLOSURE   R23 35       ; R23 := closure(Function #36)
+126 [-]: MOVE      R0 R13       ; R0 := R13
+127 [-]: SETGLOBAL R23 K36      ; CancelDecorationPlacement := R23
+128 [-]: CLOSURE   R23 36       ; R23 := closure(Function #37)
+129 [-]: MOVE      R0 R1        ; R0 := R1
+130 [-]: MOVE      R0 R0        ; R0 := R0
+131 [-]: MOVE      R0 R13       ; R0 := R13
+132 [-]: CLOSURE   R24 37       ; R24 := closure(Function #38)
+133 [-]: MOVE      R0 R23       ; R0 := R23
+134 [-]: MOVE      R0 R21       ; R0 := R21
+135 [-]: SETGLOBAL R24 K37      ; PlaceDecoration := R24
+136 [-]: CLOSURE   R24 38       ; R24 := closure(Function #39)
+137 [-]: MOVE      R0 R13       ; R0 := R13
+138 [-]: MOVE      R0 R0        ; R0 := R0
+139 [-]: SETGLOBAL R24 K38      ; InvalidGroupDecoration := R24
+140 [-]: CLOSURE   R24 39       ; R24 := closure(Function #40)
+141 [-]: CLOSURE   R25 40       ; R25 := closure(Function #41)
+142 [-]: MOVE      R0 R1        ; R0 := R1
+143 [-]: MOVE      R0 R0        ; R0 := R0
+144 [-]: CLOSURE   R26 41       ; R26 := closure(Function #42)
+145 [-]: CLOSURE   R27 42       ; R27 := closure(Function #43)
+146 [-]: MOVE      R0 R26       ; R0 := R26
+147 [-]: SETGLOBAL R27 K39      ; ChangeDecoSelectionMode := R27
+148 [-]: CLOSURE   R27 43       ; R27 := closure(Function #44)
+149 [-]: MOVE      R0 R1        ; R0 := R1
+150 [-]: MOVE      R0 R0        ; R0 := R0
+151 [-]: MOVE      R0 R26       ; R0 := R26
+152 [-]: CLOSURE   R28 44       ; R28 := closure(Function #45)
+153 [-]: MOVE      R0 R1        ; R0 := R1
+154 [-]: MOVE      R0 R0        ; R0 := R0
 155 [-]: MOVE      R0 R26       ; R0 := R26
-156 [-]: CLOSURE   R29 46       ; R29 := closure(Function #47)
-157 [-]: MOVE      R0 R28       ; R0 := R28
-158 [-]: MOVE      R0 R23       ; R0 := R23
-159 [-]: SETGLOBAL R29 K39      ; AddNewDecoration := R29
-160 [-]: CLOSURE   R29 47       ; R29 := closure(Function #48)
-161 [-]: MOVE      R0 R16       ; R0 := R16
-162 [-]: MOVE      R0 R19       ; R0 := R19
-163 [-]: MOVE      R0 R7        ; R0 := R7
-164 [-]: MOVE      R0 R0        ; R0 := R0
-165 [-]: CLOSURE   R30 48       ; R30 := closure(Function #49)
-166 [-]: MOVE      R0 R29       ; R0 := R29
-167 [-]: SETGLOBAL R30 K40      ; DestroyDecorationConfirmResult := R30
-168 [-]: CLOSURE   R30 49       ; R30 := closure(Function #50)
-169 [-]: MOVE      R0 R29       ; R0 := R29
-170 [-]: MOVE      R0 R12       ; R0 := R12
-171 [-]: SETGLOBAL R30 K41      ; ReplaceDecoConfirmResult := R30
-172 [-]: CLOSURE   R30 50       ; R30 := closure(Function #51)
-173 [-]: MOVE      R0 R29       ; R0 := R29
-174 [-]: SETGLOBAL R30 K42      ; AbortDecorationConfirmResult := R30
-175 [-]: CLOSURE   R30 51       ; R30 := closure(Function #52)
-176 [-]: MOVE      R0 R1        ; R0 := R1
-177 [-]: SETGLOBAL R30 K43      ; RemoveDecorationInShipConfirmResult := R30
-178 [-]: CLOSURE   R10 52       ; R10 := closure(Function #53)
-179 [-]: MOVE      R0 R9        ; R0 := R9
-180 [-]: CLOSURE   R9 53        ; R9 := closure(Function #54)
-181 [-]: CLOSURE   R30 54       ; R30 := closure(Function #55)
-182 [-]: CLOSURE   R31 55       ; R31 := closure(Function #56)
-183 [-]: MOVE      R0 R0        ; R0 := R0
-184 [-]: MOVE      R0 R1        ; R0 := R1
-185 [-]: MOVE      R0 R17       ; R0 := R17
-186 [-]: CLOSURE   R32 56       ; R32 := closure(Function #57)
-187 [-]: MOVE      R0 R31       ; R0 := R31
-188 [-]: SETGLOBAL R32 K44      ; OSKOnPlacedDecoNamed := R32
-189 [-]: CLOSURE   R32 57       ; R32 := closure(Function #58)
-190 [-]: MOVE      R0 R26       ; R0 := R26
-191 [-]: MOVE      R0 R30       ; R0 := R30
-192 [-]: MOVE      R0 R0        ; R0 := R0
-193 [-]: MOVE      R0 R1        ; R0 := R1
-194 [-]: MOVE      R0 R9        ; R0 := R9
-195 [-]: MOVE      R0 R31       ; R0 := R31
-196 [-]: SETGLOBAL R32 K45      ; ManageDeco := R32
-197 [-]: CLOSURE   R32 58       ; R32 := closure(Function #59)
-198 [-]: MOVE      R0 R9        ; R0 := R9
-199 [-]: MOVE      R0 R26       ; R0 := R26
-200 [-]: MOVE      R0 R0        ; R0 := R0
-201 [-]: MOVE      R0 R30       ; R0 := R30
-202 [-]: MOVE      R0 R1        ; R0 := R1
-203 [-]: SETGLOBAL R32 K46      ; DuplicateDeco := R32
-204 [-]: CLOSURE   R32 59       ; R32 := closure(Function #60)
-205 [-]: MOVE      R0 R1        ; R0 := R1
-206 [-]: CLOSURE   R33 60       ; R33 := closure(Function #61)
+156 [-]: CLOSURE   R29 45       ; R29 := closure(Function #46)
+157 [-]: MOVE      R0 R1        ; R0 := R1
+158 [-]: MOVE      R0 R2        ; R0 := R2
+159 [-]: MOVE      R0 R0        ; R0 := R0
+160 [-]: MOVE      R0 R28       ; R0 := R28
+161 [-]: MOVE      R0 R27       ; R0 := R27
+162 [-]: CLOSURE   R30 46       ; R30 := closure(Function #47)
+163 [-]: MOVE      R0 R29       ; R0 := R29
+164 [-]: MOVE      R0 R24       ; R0 := R24
+165 [-]: SETGLOBAL R30 K40      ; AddNewDecoration := R30
+166 [-]: CLOSURE   R30 47       ; R30 := closure(Function #48)
+167 [-]: MOVE      R0 R17       ; R0 := R17
+168 [-]: MOVE      R0 R20       ; R0 := R20
+169 [-]: MOVE      R0 R8        ; R0 := R8
+170 [-]: MOVE      R0 R0        ; R0 := R0
+171 [-]: CLOSURE   R31 48       ; R31 := closure(Function #49)
+172 [-]: MOVE      R0 R30       ; R0 := R30
+173 [-]: SETGLOBAL R31 K41      ; DestroyDecorationConfirmResult := R31
+174 [-]: CLOSURE   R31 49       ; R31 := closure(Function #50)
+175 [-]: MOVE      R0 R30       ; R0 := R30
+176 [-]: MOVE      R0 R13       ; R0 := R13
+177 [-]: SETGLOBAL R31 K42      ; ReplaceDecoConfirmResult := R31
+178 [-]: CLOSURE   R31 50       ; R31 := closure(Function #51)
+179 [-]: MOVE      R0 R30       ; R0 := R30
+180 [-]: SETGLOBAL R31 K43      ; AbortDecorationConfirmResult := R31
+181 [-]: CLOSURE   R31 51       ; R31 := closure(Function #52)
+182 [-]: MOVE      R0 R1        ; R0 := R1
+183 [-]: SETGLOBAL R31 K44      ; RemoveDecorationInShipConfirmResult := R31
+184 [-]: CLOSURE   R11 52       ; R11 := closure(Function #53)
+185 [-]: MOVE      R0 R10       ; R0 := R10
+186 [-]: CLOSURE   R10 53       ; R10 := closure(Function #54)
+187 [-]: CLOSURE   R31 54       ; R31 := closure(Function #55)
+188 [-]: CLOSURE   R32 55       ; R32 := closure(Function #56)
+189 [-]: MOVE      R0 R0        ; R0 := R0
+190 [-]: MOVE      R0 R1        ; R0 := R1
+191 [-]: MOVE      R0 R18       ; R0 := R18
+192 [-]: CLOSURE   R33 56       ; R33 := closure(Function #57)
+193 [-]: MOVE      R0 R32       ; R0 := R32
+194 [-]: SETGLOBAL R33 K45      ; OSKOnPlacedDecoNamed := R33
+195 [-]: CLOSURE   R33 57       ; R33 := closure(Function #58)
+196 [-]: MOVE      R0 R27       ; R0 := R27
+197 [-]: MOVE      R0 R31       ; R0 := R31
+198 [-]: MOVE      R0 R0        ; R0 := R0
+199 [-]: MOVE      R0 R1        ; R0 := R1
+200 [-]: MOVE      R0 R10       ; R0 := R10
+201 [-]: MOVE      R0 R4        ; R0 := R4
+202 [-]: MOVE      R0 R32       ; R0 := R32
+203 [-]: SETGLOBAL R33 K46      ; ManageDeco := R33
+204 [-]: CLOSURE   R33 58       ; R33 := closure(Function #59)
+205 [-]: MOVE      R0 R10       ; R0 := R10
+206 [-]: MOVE      R0 R27       ; R0 := R27
 207 [-]: MOVE      R0 R0        ; R0 := R0
-208 [-]: CLOSURE   R34 61       ; R34 := closure(Function #62)
-209 [-]: MOVE      R0 R33       ; R0 := R33
-210 [-]: MOVE      R0 R0        ; R0 := R0
-211 [-]: CLOSURE   R35 62       ; R35 := closure(Function #63)
-212 [-]: MOVE      R0 R34       ; R0 := R34
-213 [-]: SETGLOBAL R35 K47      ; NameDecoTemplate := R35
-214 [-]: CLOSURE   R35 63       ; R35 := closure(Function #64)
-215 [-]: MOVE      R0 R34       ; R0 := R34
-216 [-]: SETGLOBAL R35 K48      ; OSKNameDecoTemplate := R35
-217 [-]: CLOSURE   R35 64       ; R35 := closure(Function #65)
-218 [-]: MOVE      R0 R32       ; R0 := R32
-219 [-]: MOVE      R0 R1        ; R0 := R1
-220 [-]: SETGLOBAL R35 K49      ; CreateDecoTemplate := R35
-221 [-]: CLOSURE   R35 65       ; R35 := closure(Function #66)
-222 [-]: MOVE      R0 R22       ; R0 := R22
-223 [-]: MOVE      R0 R20       ; R0 := R20
-224 [-]: SETGLOBAL R35 K50      ; UngroupDecorationConfirmResult := R35
-225 [-]: CLOSURE   R35 66       ; R35 := closure(Function #67)
-226 [-]: MOVE      R0 R0        ; R0 := R0
-227 [-]: SETGLOBAL R35 K51      ; UngroupDecoration := R35
-228 [-]: CLOSURE   R35 67       ; R35 := closure(Function #68)
-229 [-]: MOVE      R0 R9        ; R0 := R9
-230 [-]: MOVE      R0 R24       ; R0 := R24
-231 [-]: SETGLOBAL R35 K52      ; MoveDecoration := R35
-232 [-]: CLOSURE   R7 68        ; R7 := closure(Function #69)
+208 [-]: MOVE      R0 R31       ; R0 := R31
+209 [-]: MOVE      R0 R1        ; R0 := R1
+210 [-]: SETGLOBAL R33 K47      ; DuplicateDeco := R33
+211 [-]: CLOSURE   R33 59       ; R33 := closure(Function #60)
+212 [-]: MOVE      R0 R1        ; R0 := R1
+213 [-]: CLOSURE   R34 60       ; R34 := closure(Function #61)
+214 [-]: MOVE      R0 R0        ; R0 := R0
+215 [-]: CLOSURE   R35 61       ; R35 := closure(Function #62)
+216 [-]: MOVE      R0 R34       ; R0 := R34
+217 [-]: MOVE      R0 R0        ; R0 := R0
+218 [-]: CLOSURE   R36 62       ; R36 := closure(Function #63)
+219 [-]: MOVE      R0 R35       ; R0 := R35
+220 [-]: SETGLOBAL R36 K48      ; NameDecoTemplate := R36
+221 [-]: CLOSURE   R36 63       ; R36 := closure(Function #64)
+222 [-]: MOVE      R0 R35       ; R0 := R35
+223 [-]: SETGLOBAL R36 K49      ; OSKNameDecoTemplate := R36
+224 [-]: CLOSURE   R36 64       ; R36 := closure(Function #65)
+225 [-]: MOVE      R0 R33       ; R0 := R33
+226 [-]: MOVE      R0 R1        ; R0 := R1
+227 [-]: SETGLOBAL R36 K50      ; CreateDecoTemplate := R36
+228 [-]: CLOSURE   R36 65       ; R36 := closure(Function #66)
+229 [-]: MOVE      R0 R23       ; R0 := R23
+230 [-]: MOVE      R0 R21       ; R0 := R21
+231 [-]: SETGLOBAL R36 K51      ; UngroupDecorationConfirmResult := R36
+232 [-]: CLOSURE   R36 66       ; R36 := closure(Function #67)
 233 [-]: MOVE      R0 R0        ; R0 := R0
-234 [-]: MOVE      R0 R1        ; R0 := R1
-235 [-]: MOVE      R0 R9        ; R0 := R9
-236 [-]: CLOSURE   R35 69       ; R35 := closure(Function #70)
-237 [-]: MOVE      R0 R7        ; R0 := R7
-238 [-]: SETGLOBAL R35 K53      ; OnFocusedDecoChanged := R35
-239 [-]: CLOSURE   R35 70       ; R35 := closure(Function #71)
-240 [-]: MOVE      R0 R24       ; R0 := R24
-241 [-]: SETGLOBAL R35 K54      ; UpdateDecoPlacementInstructions := R35
-242 [-]: CLOSURE   R35 71       ; R35 := closure(Function #72)
-243 [-]: MOVE      R0 R9        ; R0 := R9
-244 [-]: SETGLOBAL R35 K55      ; GroupDecoration := R35
-245 [-]: CLOSURE   R8 72        ; R8 := closure(Function #73)
-246 [-]: CLOSURE   R35 73       ; R35 := closure(Function #74)
-247 [-]: MOVE      R0 R4        ; R0 := R4
-248 [-]: SETGLOBAL R35 K56      ; OnDecoModeInitiated := R35
-249 [-]: CLOSURE   R35 74       ; R35 := closure(Function #75)
-250 [-]: MOVE      R0 R1        ; R0 := R1
-251 [-]: SETGLOBAL R35 K57      ; ResetDecorations := R35
-252 [-]: RETURN    R0 1         ; return 
+234 [-]: SETGLOBAL R36 K52      ; UngroupDecoration := R36
+235 [-]: CLOSURE   R36 67       ; R36 := closure(Function #68)
+236 [-]: MOVE      R0 R10       ; R0 := R10
+237 [-]: MOVE      R0 R25       ; R0 := R25
+238 [-]: SETGLOBAL R36 K53      ; MoveDecoration := R36
+239 [-]: CLOSURE   R8 68        ; R8 := closure(Function #69)
+240 [-]: MOVE      R0 R0        ; R0 := R0
+241 [-]: MOVE      R0 R1        ; R0 := R1
+242 [-]: MOVE      R0 R10       ; R0 := R10
+243 [-]: CLOSURE   R36 69       ; R36 := closure(Function #70)
+244 [-]: MOVE      R0 R8        ; R0 := R8
+245 [-]: SETGLOBAL R36 K54      ; OnFocusedDecoChanged := R36
+246 [-]: CLOSURE   R36 70       ; R36 := closure(Function #71)
+247 [-]: MOVE      R0 R25       ; R0 := R25
+248 [-]: SETGLOBAL R36 K55      ; UpdateDecoPlacementInstructions := R36
+249 [-]: CLOSURE   R36 71       ; R36 := closure(Function #72)
+250 [-]: MOVE      R0 R10       ; R0 := R10
+251 [-]: SETGLOBAL R36 K56      ; GroupDecoration := R36
+252 [-]: CLOSURE   R9 72        ; R9 := closure(Function #73)
+253 [-]: CLOSURE   R36 73       ; R36 := closure(Function #74)
+254 [-]: MOVE      R0 R5        ; R0 := R5
+255 [-]: SETGLOBAL R36 K57      ; OnDecoModeInitiated := R36
+256 [-]: CLOSURE   R36 74       ; R36 := closure(Function #75)
+257 [-]: MOVE      R0 R1        ; R0 := R1
+258 [-]: SETGLOBAL R36 K58      ; ResetDecorations := R36
+259 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
 ;
 ; Name:            
-; Defined at line: 41
+; Defined at line: 42
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -275,7 +282,7 @@
   3 [-]: CALL      R0 2 1       ; R0(R1)
   4 [-]: GETGLOBAL R0 K2        ; R0 := 0x34291f5c
   5 [-]: GETTABLE  R0 R0 K3     ; R0 := R0[0x8ee24660]
-  6 [-]: LOADBOOL  R1 0 0       ; R1 := false
+  6 [-]: LOADKB    R1 0 0       ; R1 := false
   7 [-]: CALL      R0 2 1       ; R0(R1)
   8 [-]: RETURN    R0 1         ; return 
 
@@ -283,7 +290,7 @@
 ; Function #2:
 ;
 ; Name:            
-; Defined at line: 46
+; Defined at line: 47
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -298,7 +305,7 @@
   7 [-]: RETURN    R0 1         ; return 
   8 [-]: GETGLOBAL R0 K3        ; R0 := 0x76ea806b
   9 [-]: SELF      R0 R0 K4     ; R1 := R0; R0 := R0[0x3f3ae64c]
- 10 [-]: LOADK     R2 0         ; R2 := 0.000000
+ 10 [-]: CONST     R2 0         ; R2 := 0.000000
  11 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
  12 [-]: GETGLOBAL R1 K5        ; R1 := 0x7b998233
  13 [-]: MOVE      R2 R0        ; R2 := R0
@@ -336,7 +343,7 @@
  45 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
  46 [-]: GETGLOBAL R6 K12       ; R6 := 0x5bced4c4
  47 [-]: GETTABLE  R6 R6 K13    ; R6 := R6[0xb62ecfe0]
- 48 [-]: LOADK     R7 0         ; R7 := 0.000000
+ 48 [-]: CONST     R7 0         ; R7 := 0.000000
  49 [-]: SUB       R8 R5 R4     ; R8 := R5 - R4
  50 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
  51 [-]: EQ        1 R6 K14     ; if R6 == 0.000000 then PC := 54
@@ -345,27 +352,27 @@
  54 [-]: GETGLOBAL R7 K15       ; R7 := 0x7ed0a956
  55 [-]: LOADK     R8 K16       ; R8 := "/Lotus/Objects/Tenno/Props/TnoClanMasteryAltarDeco"
  56 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 57 [-]: LOADBOOL  R8 0 0       ; R8 := false
+ 57 [-]: LOADKB    R8 0 0       ; R8 := false
  58 [-]: GETGLOBAL R9 K17       ; R9 := _T
  59 [-]: GETTABLE  R9 R9 K18    ; R9 := R9["DojoMgr"]
  60 [-]: GETTABLE  R9 R9 K19    ; R9 := R9["mDojo"]
  61 [-]: SELF      R9 R9 K20    ; R10 := R9; R9 := R9[0x43c3090e]
  62 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 63 [-]: LOADK     R10 1        ; R10 := 1.000000
+ 63 [-]: CONST     R10 1        ; R10 := 1.000000
  64 [-]: LEN       R11 R9       ; R11 := # R9
- 65 [-]: LOADK     R12 1        ; R12 := 1.000000
+ 65 [-]: CONST     R12 1        ; R12 := 1.000000
  66 [-]: FORPREP   R10 83       ; R10 -= R12; PC := 83
  67 [-]: GETTABLE  R14 R9 R13   ; R14 := R9[R13]
  68 [-]: GETTABLE  R14 R14 K21  ; R14 := R14["placedDecos"]
- 69 [-]: LOADK     R15 1        ; R15 := 1.000000
+ 69 [-]: CONST     R15 1        ; R15 := 1.000000
  70 [-]: LEN       R16 R14      ; R16 := # R14
- 71 [-]: LOADK     R17 1        ; R17 := 1.000000
+ 71 [-]: CONST     R17 1        ; R17 := 1.000000
  72 [-]: FORPREP   R15 79       ; R15 -= R17; PC := 79
  73 [-]: GETTABLE  R19 R14 R18  ; R19 := R14[R18]
  74 [-]: GETTABLE  R19 R19 K22  ; R19 := R19["decoType"]
  75 [-]: EQ        0 R19 R7     ; if R19 ~= R7 then PC := 79
  76 [-]: JMP       79           ; PC := 79
- 77 [-]: LOADBOOL  R8 1 0       ; R8 := true
+ 77 [-]: LOADKB    R8 1 0       ; R8 := true
  78 [-]: JMP       80           ; PC := 80
  79 [-]: FORLOOP   R15 73       ; R15 += R17; if R15 <= R16 then begin PC := 73; R18 := R15 end
  80 [-]: TEST      R8 0         ; if not R8 then PC := 83
@@ -376,7 +383,7 @@
  85 [-]: JMP       117          ; PC := 117
  86 [-]: LOADK     R19 K23      ; R19 := "/Lotus/Language/Menu/Notification_DojoRankUpDeviceNeeded"
  87 [-]: LOADK     R20 K24      ; R20 := "Alert"
- 88 [-]: LOADK     R21 10       ; R21 := 10.000000
+ 88 [-]: CONST     R21 10       ; R21 := 10.000000
  89 [-]: GETGLOBAL R22 K17      ; R22 := _T
  90 [-]: GETTABLE  R22 R22 K25  ; R22 := R22["ShowNotification"]
  91 [-]: EQ        1 R22 K26    ; if R22 == nil then PC := 101
@@ -385,7 +392,7 @@
  94 [-]: GETTABLE  R22 R22 K27  ; R22 := R22[0x7dce37bc]
  95 [-]: MOVE      R23 R19      ; R23 := R19
  96 [-]: MOVE      R24 R20      ; R24 := R20
- 97 [-]: LOADBOOL  R25 0 0      ; R25 := false
+ 97 [-]: LOADKB    R25 0 0      ; R25 := false
  98 [-]: MOVE      R26 R21      ; R26 := R21
  99 [-]: CALL      R22 5 1      ; R22(R23,R24,R25,R26)
 100 [-]: JMP       117          ; PC := 117
@@ -411,7 +418,7 @@
 ; Function #3:
 ;
 ; Name:            
-; Defined at line: 111
+; Defined at line: 112
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -429,7 +436,7 @@
 ; Function #4:
 ;
 ; Name:            
-; Defined at line: 117
+; Defined at line: 118
 ; #Upvalues:       2
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -452,9 +459,9 @@
  15 [-]: LOADK     R7 K7        ; R7 := "DojoComponentPanel"
  16 [-]: CALL      R6 2 0       ; R6,... := R6(R7)
  17 [-]: CALL      R4 0 2       ; R4 := R4(R5,...)
- 18 [-]: LOADK     R5 1         ; R5 := 1.000000
+ 18 [-]: CONST     R5 1         ; R5 := 1.000000
  19 [-]: LEN       R6 R4        ; R6 := # R4
- 20 [-]: LOADK     R7 1         ; R7 := 1.000000
+ 20 [-]: CONST     R7 1         ; R7 := 1.000000
  21 [-]: FORPREP   R5 25        ; R5 -= R7; PC := 25
  22 [-]: GETTABLE  R9 R4 R8     ; R9 := R4[R8]
  23 [-]: SELF      R9 R9 K8     ; R10 := R9; R9 := R9[0xa2880940]
@@ -469,7 +476,7 @@
  32 [-]: GETGLOBAL R9 K12       ; R9 := 0x2d0fad09
  33 [-]: LOADK     R10 K13      ; R10 := "Lotus.Interface.Libs.DojoMgr"
  34 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 35 [-]: LOADBOOL  R10 0 0      ; R10 := false
+ 35 [-]: LOADKB    R10 0 0      ; R10 := false
  36 [-]: GETGLOBAL R11 K10      ; R11 := _T
  37 [-]: GETTABLE  R12 R9 K14   ; R12 := R9[0xe9eeaaf6]
  38 [-]: CALL      R12 1 2      ; R12 := R12()
@@ -482,7 +489,7 @@
  45 [-]: GETGLOBAL R15 K16      ; R15 := 0x13ea34dc
  46 [-]: GETGLOBAL R16 K17      ; R16 := 0x78c78f0c
  47 [-]: GETGLOBAL R17 K18      ; R17 := 0x6b36c8d1
- 48 [-]: LOADBOOL  R18 1 0      ; R18 := true
+ 48 [-]: LOADKB    R18 1 0      ; R18 := true
  49 [-]: CALL      R11 8 1      ; R11(R12,R13,R14,R15,R16,R17,R18)
  50 [-]: GETGLOBAL R11 K4       ; R11 := 0x89326c93
  51 [-]: SELF      R11 R11 K19  ; R12 := R11; R11 := R11[0x18d05d30]
@@ -505,7 +512,7 @@
  68 [-]: GETGLOBAL R11 K10      ; R11 := _T
  69 [-]: GETTABLE  R11 R11 K11  ; R11 := R11["DojoMgr"]
  70 [-]: SELF      R11 R11 K25  ; R12 := R11; R11 := R11[0xb86cf5cf]
- 71 [-]: LOADBOOL  R13 1 0      ; R13 := true
+ 71 [-]: LOADKB    R13 1 0      ; R13 := true
  72 [-]: GETGLOBAL R14 K22      ; R14 := 0x0032441c
  73 [-]: GETTABLE  R14 R14 K23  ; R14 := R14["PendingDuelComponentJson"]
  74 [-]: CALL      R11 4 1      ; R11(R12,R13,R14)
@@ -523,7 +530,7 @@
  86 [-]: GETGLOBAL R11 K10      ; R11 := _T
  87 [-]: GETTABLE  R11 R11 K11  ; R11 := R11["DojoMgr"]
  88 [-]: SELF      R11 R11 K25  ; R12 := R11; R11 := R11[0xb86cf5cf]
- 89 [-]: LOADBOOL  R13 1 0      ; R13 := true
+ 89 [-]: LOADKB    R13 1 0      ; R13 := true
  90 [-]: GETGLOBAL R14 K22      ; R14 := 0x0032441c
  91 [-]: GETTABLE  R14 R14 K23  ; R14 := R14["PendingDuelComponentJson"]
  92 [-]: CALL      R11 4 1      ; R11(R12,R13,R14)
@@ -536,7 +543,7 @@
  99 [-]: GETTABLE  R11 R11 K11  ; R11 := R11["DojoMgr"]
 100 [-]: SELF      R11 R11 K27  ; R12 := R11; R11 := R11[0x0311b020]
 101 [-]: GETUPVAL  R13 U0       ; R13 := U0
-102 [-]: LOADK     R14 0        ; R14 := 0.000000
+102 [-]: CONST     R14 0        ; R14 := 0.000000
 103 [-]: CALL      R11 4 1      ; R11(R12,R13,R14)
 104 [-]: JMP       124          ; PC := 124
 105 [-]: GETGLOBAL R11 K10      ; R11 := _T
@@ -550,14 +557,14 @@
 113 [-]: GETTABLE  R11 R11 K11  ; R11 := R11["DojoMgr"]
 114 [-]: SELF      R11 R11 K27  ; R12 := R11; R11 := R11[0x0311b020]
 115 [-]: GETUPVAL  R13 U0       ; R13 := U0
-116 [-]: LOADK     R14 0        ; R14 := 0.000000
+116 [-]: CONST     R14 0        ; R14 := 0.000000
 117 [-]: CALL      R11 4 1      ; R11(R12,R13,R14)
 118 [-]: JMP       124          ; PC := 124
 119 [-]: GETGLOBAL R11 K10      ; R11 := _T
 120 [-]: GETTABLE  R11 R11 K11  ; R11 := R11["DojoMgr"]
 121 [-]: SELF      R11 R11 K26  ; R12 := R11; R11 := R11[0x02afa3bf]
 122 [-]: CALL      R11 2 1      ; R11(R12)
-123 [-]: LOADBOOL  R10 1 0      ; R10 := true
+123 [-]: LOADKB    R10 1 0      ; R10 := true
 124 [-]: TEST      R10 0        ; if not R10 then PC := 128
 125 [-]: JMP       128          ; PC := 128
 126 [-]: GETUPVAL  R11 U1       ; R11 := U1
@@ -568,7 +575,7 @@
 ; Function #5:
 ;
 ; Name:            
-; Defined at line: 168
+; Defined at line: 169
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -591,7 +598,7 @@
 ; Function #6:
 ;
 ; Name:            
-; Defined at line: 174
+; Defined at line: 175
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -613,7 +620,7 @@
 ; Function #7:
 ;
 ; Name:            
-; Defined at line: 180
+; Defined at line: 181
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -628,8 +635,8 @@
   7 [-]: RETURN    R0 1         ; return 
   8 [-]: EQ        1 R0 K3      ; if R0 == 0.000000 then PC := 11
   9 [-]: JMP       11           ; PC := 11
- 10 [-]: LOADBOOL  R3 0 1       ; R3 := false; PC := 11
- 11 [-]: LOADBOOL  R3 1 0       ; R3 := true
+ 10 [-]: LOADKB    R3 0 1       ; R3 := false; PC := 11
+ 11 [-]: LOADKB    R3 1 0       ; R3 := true
  12 [-]: GETGLOBAL R4 K1        ; R4 := _T
  13 [-]: GETTABLE  R4 R4 K2     ; R4 := R4["DojoMgr"]
  14 [-]: SELF      R4 R4 K4     ; R5 := R4; R4 := R4[0xb86cf5cf]
@@ -643,7 +650,7 @@
 ; Function #8:
 ;
 ; Name:            
-; Defined at line: 189
+; Defined at line: 190
 ; #Upvalues:       1
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -689,7 +696,7 @@
 ; Function #9:
 ;
 ; Name:            
-; Defined at line: 202
+; Defined at line: 203
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -715,7 +722,7 @@
 ; Function #10:
 ;
 ; Name:            
-; Defined at line: 208
+; Defined at line: 209
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -741,7 +748,7 @@
 ; Function #11:
 ;
 ; Name:            
-; Defined at line: 216
+; Defined at line: 217
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -767,7 +774,7 @@
 ; Function #12:
 ;
 ; Name:            
-; Defined at line: 224
+; Defined at line: 225
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -793,7 +800,7 @@
 ; Function #13:
 ;
 ; Name:            
-; Defined at line: 232
+; Defined at line: 233
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -818,7 +825,7 @@
 ; Function #14:
 ;
 ; Name:            
-; Defined at line: 240
+; Defined at line: 241
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -844,7 +851,7 @@
 ; Function #15:
 ;
 ; Name:            
-; Defined at line: 248
+; Defined at line: 249
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -867,7 +874,7 @@
 ; Function #16:
 ;
 ; Name:            
-; Defined at line: 256
+; Defined at line: 257
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -882,8 +889,8 @@
   7 [-]: RETURN    R0 1         ; return 
   8 [-]: EQ        1 R0 K3      ; if R0 == 1.000000 then PC := 11
   9 [-]: JMP       11           ; PC := 11
- 10 [-]: LOADBOOL  R1 0 1       ; R1 := false; PC := 11
- 11 [-]: LOADBOOL  R1 1 0       ; R1 := true
+ 10 [-]: LOADKB    R1 0 1       ; R1 := false; PC := 11
+ 11 [-]: LOADKB    R1 1 0       ; R1 := true
  12 [-]: GETGLOBAL R2 K1        ; R2 := _T
  13 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["DojoMgr"]
  14 [-]: SELF      R2 R2 K4     ; R3 := R2; R2 := R2[0x1dd6a78f]
@@ -895,7 +902,7 @@
 ; Function #17:
 ;
 ; Name:            
-; Defined at line: 265
+; Defined at line: 266
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -918,7 +925,7 @@
 ; Function #18:
 ;
 ; Name:            
-; Defined at line: 273
+; Defined at line: 274
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -933,8 +940,8 @@
   7 [-]: RETURN    R0 1         ; return 
   8 [-]: EQ        1 R0 K3      ; if R0 == 0.000000 then PC := 11
   9 [-]: JMP       11           ; PC := 11
- 10 [-]: LOADBOOL  R2 0 1       ; R2 := false; PC := 11
- 11 [-]: LOADBOOL  R2 1 0       ; R2 := true
+ 10 [-]: LOADKB    R2 0 1       ; R2 := false; PC := 11
+ 11 [-]: LOADKB    R2 1 0       ; R2 := true
  12 [-]: GETGLOBAL R3 K1        ; R3 := _T
  13 [-]: GETTABLE  R3 R3 K2     ; R3 := R3["DojoMgr"]
  14 [-]: SELF      R3 R3 K4     ; R4 := R3; R3 := R3[0x50a11da5]
@@ -947,7 +954,7 @@
 ; Function #19:
 ;
 ; Name:            
-; Defined at line: 282
+; Defined at line: 283
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -962,8 +969,8 @@
   7 [-]: RETURN    R0 1         ; return 
   8 [-]: EQ        1 R0 K3      ; if R0 == 0.000000 then PC := 11
   9 [-]: JMP       11           ; PC := 11
- 10 [-]: LOADBOOL  R1 0 1       ; R1 := false; PC := 11
- 11 [-]: LOADBOOL  R1 1 0       ; R1 := true
+ 10 [-]: LOADKB    R1 0 1       ; R1 := false; PC := 11
+ 11 [-]: LOADKB    R1 1 0       ; R1 := true
  12 [-]: GETGLOBAL R2 K1        ; R2 := _T
  13 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["DojoMgr"]
  14 [-]: SELF      R2 R2 K4     ; R3 := R2; R2 := R2[0xfa6d00b6]
@@ -975,7 +982,7 @@
 ; Function #20:
 ;
 ; Name:            
-; Defined at line: 291
+; Defined at line: 292
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -997,7 +1004,7 @@
  14 [-]: GETTABLE  R2 R2 K3     ; R2 := R2["PrevPlacedDecoInfo"]
  15 [-]: GETTABLE  R2 R2 K4     ; R2 := R2["Count"]
  16 [-]: SUB       R2 R2 K7     ; R2 := R2 - 1.000000
- 17 [-]: LOADK     R3 0         ; R3 := 0.000000
+ 17 [-]: CONST     R3 0         ; R3 := 0.000000
  18 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
  19 [-]: SETTABLE  R0 K4 R1     ; R0["Count"] := R1
  20 [-]: GETGLOBAL R0 K0        ; R0 := _T
@@ -1093,7 +1100,7 @@
 ; Function #21:
 ;
 ; Name:            
-; Defined at line: 314
+; Defined at line: 315
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1179,7 +1186,7 @@
 ; Function #22:
 ;
 ; Name:            
-; Defined at line: 333
+; Defined at line: 334
 ; #Upvalues:       4
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1239,7 +1246,7 @@
  52 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  53 [-]: TEST      R3 1         ; if R3 then PC := 91
  54 [-]: JMP       91           ; PC := 91
- 55 [-]: LOADK     R3 255       ; R3 := 255.000000
+ 55 [-]: CONST     R3 255       ; R3 := 255.000000
  56 [-]: GETGLOBAL R4 K1        ; R4 := _T
  57 [-]: GETTABLE  R4 R4 K26    ; R4 := R4["PlacedDecoSocketInfo"]
  58 [-]: EQ        1 R4 K27     ; if R4 == nil then PC := 64
@@ -1250,7 +1257,7 @@
  63 [-]: SETTABLE  R4 K26 K27   ; R4["PlacedDecoSocketInfo"] := nil
  64 [-]: GETGLOBAL R4 K28       ; R4 := 0x76ea806b
  65 [-]: SELF      R4 R4 K29    ; R5 := R4; R4 := R4[0x3f3ae64c]
- 66 [-]: LOADK     R6 0         ; R6 := 0.000000
+ 66 [-]: CONST     R6 0         ; R6 := 0.000000
  67 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
  68 [-]: GETGLOBAL R5 K0        ; R5 := 0x7b998233
  69 [-]: MOVE      R6 R4        ; R6 := R4
@@ -1328,8 +1335,8 @@
 141 [-]: CALL      R6 2 2       ; R6 := R6(R7)
 142 [-]: TEST      R6 1         ; if R6 then PC := 223
 143 [-]: JMP       223          ; PC := 223
-144 [-]: LOADK     R6 1         ; R6 := 1.000000
-145 [-]: LOADBOOL  R7 1 0       ; R7 := true
+144 [-]: CONST     R6 1         ; R6 := 1.000000
+145 [-]: LOADKB    R7 1 0       ; R7 := true
 146 [-]: GETGLOBAL R8 K1        ; R8 := _T
 147 [-]: GETTABLE  R8 R8 K43    ; R8 := R8["DojoPlacingRecipe"]
 148 [-]: SELF      R8 R8 K44    ; R9 := R8; R8 := R8[0xc777ab04]
@@ -1375,9 +1382,9 @@
 188 [-]: MOVE      R15 R12      ; R15 := R12
 189 [-]: CALL      R13 3 2      ; R13 := R13(R14,R15)
 190 [-]: GETTABLE  R14 R13 K53  ; R14 := R13["placedDecos"]
-191 [-]: LOADK     R15 1        ; R15 := 1.000000
+191 [-]: CONST     R15 1        ; R15 := 1.000000
 192 [-]: LEN       R16 R14      ; R16 := # R14
-193 [-]: LOADK     R17 1        ; R17 := 1.000000
+193 [-]: CONST     R17 1        ; R17 := 1.000000
 194 [-]: FORPREP   R15 205      ; R15 -= R17; PC := 205
 195 [-]: GETTABLE  R19 R14 R18  ; R19 := R14[R18]
 196 [-]: GETGLOBAL R20 K0       ; R20 := 0x7b998233
@@ -1392,7 +1399,7 @@
 205 [-]: FORLOOP   R15 195      ; R15 += R17; if R15 <= R16 then begin PC := 195; R18 := R15 end
 206 [-]: LE        0 R8 R6      ; if R8 > R6 then PC := 209
 207 [-]: JMP       209          ; PC := 209
-208 [-]: LOADBOOL  R7 0 0       ; R7 := false
+208 [-]: LOADKB    R7 0 0       ; R7 := false
 209 [-]: TEST      R7 0         ; if not R7 then PC := 218
 210 [-]: JMP       218          ; PC := 218
 211 [-]: GETGLOBAL R20 K1       ; R20 := _T
@@ -1439,7 +1446,7 @@
 252 [-]: JMP       257          ; PC := 257
 253 [-]: SELF      R21 R20 K61  ; R22 := R20; R21 := R20[0x659d451f]
 254 [-]: GETGLOBAL R23 K60      ; R23 := 0x94bdf50f
-255 [-]: LOADBOOL  R24 0 0      ; R24 := false
+255 [-]: LOADKB    R24 0 0      ; R24 := false
 256 [-]: CALL      R21 4 1      ; R21(R22,R23,R24)
 257 [-]: GETGLOBAL R21 K6       ; R21 := 0x3d106989
 258 [-]: LOADK     R22 K62      ; R22 := "DecoMoveInfo cleared _OnDecorationPlaced"
@@ -1452,7 +1459,7 @@
 ; Function #23:
 ;
 ; Name:            
-; Defined at line: 445
+; Defined at line: 446
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1482,7 +1489,7 @@
 ; Function #24:
 ;
 ; Name:            
-; Defined at line: 454
+; Defined at line: 455
 ; #Upvalues:       3
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1552,7 +1559,7 @@
  62 [-]: MOVE      R0 R4        ; R0 := R4
  63 [-]: GETGLOBAL R4 K18       ; R4 := 0x09423272
  64 [-]: MOVE      R5 R0        ; R5 := R0
- 65 [-]: LOADK     R6 0         ; R6 := 0.000000
+ 65 [-]: CONST     R6 0         ; R6 := 0.000000
  66 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
  67 [-]: EQ        1 R4 R0      ; if R4 == R0 then PC := 73
  68 [-]: JMP       73           ; PC := 73
@@ -1565,22 +1572,22 @@
  75 [-]: GETTABLE  R5 R5 K23    ; R5 := R5["mDojo"]
  76 [-]: SELF      R5 R5 K24    ; R6 := R5; R5 := R5[0x43c3090e]
  77 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 78 [-]: LOADK     R6 1         ; R6 := 1.000000
+ 78 [-]: CONST     R6 1         ; R6 := 1.000000
  79 [-]: LEN       R7 R5        ; R7 := # R5
- 80 [-]: LOADK     R8 1         ; R8 := 1.000000
+ 80 [-]: CONST     R8 1         ; R8 := 1.000000
  81 [-]: FORPREP   R6 98        ; R6 -= R8; PC := 98
  82 [-]: GETTABLE  R10 R5 R9    ; R10 := R5[R9]
  83 [-]: GETTABLE  R10 R10 K25  ; R10 := R10["placedDecos"]
- 84 [-]: LOADK     R11 1        ; R11 := 1.000000
+ 84 [-]: CONST     R11 1        ; R11 := 1.000000
  85 [-]: LEN       R12 R10      ; R12 := # R10
- 86 [-]: LOADK     R13 1        ; R13 := 1.000000
+ 86 [-]: CONST     R13 1        ; R13 := 1.000000
  87 [-]: FORPREP   R11 97       ; R11 -= R13; PC := 97
  88 [-]: GETTABLE  R15 R10 R14  ; R15 := R10[R14]
  89 [-]: GETTABLE  R15 R15 K26  ; R15 := R15["name"]
  90 [-]: EQ        0 R15 R0     ; if R15 ~= R0 then PC := 97
  91 [-]: JMP       97           ; PC := 97
  92 [-]: GETUPVAL  R15 U2       ; R15 := U2
- 93 [-]: LOADK     R16 8        ; R16 := 8.000000
+ 93 [-]: CONST     R16 8        ; R16 := 8.000000
  94 [-]: LOADK     R17 K0       ; R17 := ""
  95 [-]: CALL      R15 3 1      ; R15(R16,R17)
  96 [-]: RETURN    R0 1         ; return 
@@ -1683,7 +1690,7 @@
 ; Function #25:
 ;
 ; Name:            
-; Defined at line: 522
+; Defined at line: 523
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1708,7 +1715,7 @@
  17 [-]: JMP       22           ; PC := 22
  18 [-]: GETUPVAL  R3 U0        ; R3 := U0
  19 [-]: MOVE      R4 R1        ; R4 := R1
- 20 [-]: LOADBOOL  R5 1 0       ; R5 := true
+ 20 [-]: LOADKB    R5 1 0       ; R5 := true
  21 [-]: CALL      R3 3 1       ; R3(R4,R5)
  22 [-]: RETURN    R0 1         ; return 
 
@@ -1716,7 +1723,7 @@
 ; Function #26:
 ;
 ; Name:            
-; Defined at line: 533
+; Defined at line: 534
 ; #Upvalues:       4
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1727,7 +1734,7 @@
   3 [-]: SETTABLE  R0 K2 K3     ; R0["mPendingDecoName"] := nil
   4 [-]: GETUPVAL  R0 U0        ; R0 := U0
   5 [-]: GETTABLE  R0 R0 K4     ; R0 := R0[0x334af2b4]
-  6 [-]: LOADBOOL  R1 1 0       ; R1 := true
+  6 [-]: LOADKB    R1 1 0       ; R1 := true
   7 [-]: CALL      R0 2 2       ; R0 := R0(R1)
   8 [-]: TEST      R0 1         ; if R0 then PC := 23
   9 [-]: JMP       23           ; PC := 23
@@ -1766,7 +1773,7 @@
  42 [-]: LOADNIL   R2 R2        ; R2 := nil
  43 [-]: LOADK     R3 K14       ; R3 := "/Lotus/Language/Dojo/NameDeco"
  44 [-]: LOADK     R4 K15       ; R4 := ""
- 45 [-]: LOADK     R5 40        ; R5 := 40.000000
+ 45 [-]: CONST     R5 40        ; R5 := 40.000000
  46 [-]: LOADK     R6 K12       ; R6 := "OnDecoNamed"
  47 [-]: LOADK     R7 K16       ; R7 := "OSKOnDecoNamed"
  48 [-]: CALL      R1 7 1       ; R1(R2,R3,R4,R5,R6,R7)
@@ -1798,7 +1805,7 @@
  74 [-]: JMP       80           ; PC := 80
  75 [-]: GETUPVAL  R3 U3        ; R3 := U3
  76 [-]: LOADK     R4 K15       ; R4 := ""
- 77 [-]: LOADBOOL  R5 0 0       ; R5 := false
+ 77 [-]: LOADKB    R5 0 0       ; R5 := false
  78 [-]: CALL      R3 3 1       ; R3(R4,R5)
  79 [-]: JMP       90           ; PC := 90
  80 [-]: GETUPVAL  R3 U1        ; R3 := U1
@@ -1809,7 +1816,7 @@
  85 [-]: JMP       90           ; PC := 90
  86 [-]: GETUPVAL  R3 U3        ; R3 := U3
  87 [-]: LOADK     R4 K15       ; R4 := ""
- 88 [-]: LOADBOOL  R5 0 0       ; R5 := false
+ 88 [-]: LOADKB    R5 0 0       ; R5 := false
  89 [-]: CALL      R3 3 1       ; R3(R4,R5)
  90 [-]: RETURN    R0 1         ; return 
 
@@ -1817,7 +1824,7 @@
 ; Function #26.1:
 ;
 ; Name:            
-; Defined at line: 546
+; Defined at line: 547
 ; #Upvalues:       1
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -1835,7 +1842,7 @@
  10 [-]: JMP       16           ; PC := 16
  11 [-]: GETUPVAL  R3 U0        ; R3 := U0
  12 [-]: MOVE      R4 R0        ; R4 := R0
- 13 [-]: LOADBOOL  R5 1 0       ; R5 := true
+ 13 [-]: LOADKB    R5 1 0       ; R5 := true
  14 [-]: CALL      R3 3 1       ; R3(R4,R5)
  15 [-]: JMP       30           ; PC := 30
  16 [-]: GETGLOBAL R3 K4        ; R3 := 0x89326c93
@@ -1858,33 +1865,23 @@
 ; Function #27:
 ;
 ; Name:            
-; Defined at line: 573
-; #Upvalues:       0
+; Defined at line: 574
+; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  6
+; Max Stack Size:  3
 
-  1 [-]: GETGLOBAL R1 K0        ; R1 := 0x7b998233
-  2 [-]: GETGLOBAL R2 K1        ; R2 := _T
-  3 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["BackgroundMovie"]
-  4 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  5 [-]: TEST      R1 1         ; if R1 then PC := 15
-  6 [-]: JMP       15           ; PC := 15
-  7 [-]: GETGLOBAL R1 K1        ; R1 := _T
-  8 [-]: GETTABLE  R1 R1 K2     ; R1 := R1["BackgroundMovie"]
-  9 [-]: SELF      R1 R1 K3     ; R2 := R1; R1 := R1[0xf56f3887]
- 10 [-]: LOADK     R3 K4        ; R3 := "RefreshShipDecos"
- 11 [-]: NEWTABLE  R4 1 0       ; R4 := {}
- 12 [-]: MOVE      R5 R0        ; R5 := R0
- 13 [-]: SETLIST   R4 1 1       ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 1
- 14 [-]: CALL      R1 4 1       ; R1(R2,R3,R4)
- 15 [-]: RETURN    R0 1         ; return 
+  1 [-]: GETUPVAL  R1 U0        ; R1 := U0
+  2 [-]: GETTABLE  R1 R1 K0     ; R1 := R1[0xeb79235f]
+  3 [-]: MOVE      R2 R0        ; R2 := R0
+  4 [-]: CALL      R1 2 1       ; R1(R2)
+  5 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #28:
 ;
 ; Name:            
-; Defined at line: 579
+; Defined at line: 578
 ; #Upvalues:       4
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1922,7 +1919,7 @@
  30 [-]: JMP       52           ; PC := 52
  31 [-]: SELF      R3 R2 K10    ; R4 := R2; R3 := R2[0x659d451f]
  32 [-]: GETGLOBAL R5 K9        ; R5 := 0x94bdf50f
- 33 [-]: LOADBOOL  R6 0 0       ; R6 := false
+ 33 [-]: LOADKB    R6 0 0       ; R6 := false
  34 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
  35 [-]: JMP       52           ; PC := 52
  36 [-]: GETGLOBAL R3 K11       ; R3 := 0x7f5022cf
@@ -1957,7 +1954,7 @@
 ; Function #29:
 ;
 ; Name:            
-; Defined at line: 608
+; Defined at line: 607
 ; #Upvalues:       4
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1998,7 +1995,7 @@
 ; Function #30:
 ;
 ; Name:            
-; Defined at line: 624
+; Defined at line: 623
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -2031,7 +2028,7 @@
  25 [-]: JMP       35           ; PC := 35
  26 [-]: SELF      R3 R2 K7     ; R4 := R2; R3 := R2[0x659d451f]
  27 [-]: GETGLOBAL R5 K6        ; R5 := 0x94bdf50f
- 28 [-]: LOADBOOL  R6 0 0       ; R6 := false
+ 28 [-]: LOADKB    R6 0 0       ; R6 := false
  29 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
  30 [-]: JMP       35           ; PC := 35
  31 [-]: GETUPVAL  R3 U0        ; R3 := U0
@@ -2046,7 +2043,7 @@
 ; Function #31:
 ;
 ; Name:            
-; Defined at line: 640
+; Defined at line: 639
 ; #Upvalues:       1
 ; #Parameters:     5
 ; Is_vararg:       0
@@ -2146,7 +2143,7 @@
 ; Function #32:
 ;
 ; Name:            
-; Defined at line: 676
+; Defined at line: 675
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2216,8 +2213,8 @@
 ; Function #33:
 ;
 ; Name:            
-; Defined at line: 697
-; #Upvalues:       7
+; Defined at line: 696
+; #Upvalues:       8
 ; #Parameters:     2
 ; Is_vararg:       0
 ; Max Stack Size:  17
@@ -2263,7 +2260,7 @@
  39 [-]: JMP       44           ; PC := 44
  40 [-]: SELF      R3 R2 K14    ; R4 := R2; R3 := R2[0x659d451f]
  41 [-]: GETGLOBAL R5 K13       ; R5 := 0x94bdf50f
- 42 [-]: LOADBOOL  R6 0 0       ; R6 := false
+ 42 [-]: LOADKB    R6 0 0       ; R6 := false
  43 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
  44 [-]: TEST      R0 1         ; if R0 then PC := 77
  45 [-]: JMP       77           ; PC := 77
@@ -2297,7 +2294,7 @@
  73 [-]: CALL      R3 2 1       ; R3(R4)
  74 [-]: GETUPVAL  R3 U2        ; R3 := U2
  75 [-]: CALL      R3 1 1       ; R3()
- 76 [-]: JMP       212          ; PC := 212
+ 76 [-]: JMP       209          ; PC := 209
  77 [-]: GETUPVAL  R3 U3        ; R3 := U3
  78 [-]: SELF      R3 R3 K24    ; R4 := R3; R3 := R3[0x7ab914d8]
  79 [-]: MOVE      R5 R1        ; R5 := R1
@@ -2313,170 +2310,161 @@
  89 [-]: EQ        0 R5 R4      ; if R5 ~= R4 then PC := 94
  90 [-]: JMP       94           ; PC := 94
  91 [-]: GETTABLE  R5 R3 K28    ; R5 := R3["MaxCapacityIncrease"]
- 92 [-]: EQ        1 R5 K18     ; if R5 == nil then PC := 107
- 93 [-]: JMP       107          ; PC := 107
+ 92 [-]: EQ        1 R5 K18     ; if R5 == nil then PC := 104
+ 93 [-]: JMP       104          ; PC := 104
  94 [-]: GETGLOBAL R5 K0        ; R5 := _T
  95 [-]: GETTABLE  R5 R5 K5     ; R5 := R5["DecoMoveInfo"]
  96 [-]: GETTABLE  R5 R5 K6     ; R5 := R5["Deco"]
  97 [-]: SELF      R5 R5 K29    ; R6 := R5; R5 := R5[0xaa6ffd67]
  98 [-]: MOVE      R7 R4        ; R7 := R4
- 99 [-]: LOADBOOL  R8 1 0       ; R8 := true
+ 99 [-]: LOADKB    R8 1 0       ; R8 := true
 100 [-]: CALL      R5 4 1       ; R5(R6,R7,R8)
-101 [-]: GETGLOBAL R5 K0        ; R5 := _T
-102 [-]: GETTABLE  R5 R5 K1     ; R5 := R5["BackgroundMovie"]
-103 [-]: SELF      R5 R5 K2     ; R6 := R5; R5 := R5[0xe4162eed]
-104 [-]: LOADK     R7 K30       ; R7 := "UpdateShipDecoCapacity"
-105 [-]: LOADK     R8 K31       ; R8 := ""
-106 [-]: CALL      R5 4 1       ; R5(R6,R7,R8)
-107 [-]: GETGLOBAL R5 K12       ; R5 := 0x7b998233
-108 [-]: GETGLOBAL R6 K0        ; R6 := _T
-109 [-]: GETTABLE  R6 R6 K5     ; R6 := R6["DecoMoveInfo"]
-110 [-]: GETTABLE  R6 R6 K32    ; R6 := R6["UnattachParent"]
-111 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-112 [-]: TEST      R5 1         ; if R5 then PC := 119
-113 [-]: JMP       119          ; PC := 119
-114 [-]: GETGLOBAL R5 K0        ; R5 := _T
-115 [-]: GETTABLE  R5 R5 K5     ; R5 := R5["DecoMoveInfo"]
-116 [-]: GETTABLE  R5 R5 K6     ; R5 := R5["Deco"]
-117 [-]: SELF      R5 R5 K33    ; R6 := R5; R5 := R5[0xd0001094]
-118 [-]: CALL      R5 2 1       ; R5(R6)
-119 [-]: GETUPVAL  R5 U4        ; R5 := U4
-120 [-]: EQ        0 R4 R5      ; if R4 ~= R5 then PC := 182
-121 [-]: JMP       182          ; PC := 182
-122 [-]: GETGLOBAL R5 K34       ; R5 := 0xa421af95
-123 [-]: CALL      R5 1 2       ; R5 := R5()
-124 [-]: GETGLOBAL R6 K34       ; R6 := 0xa421af95
-125 [-]: CALL      R6 1 2       ; R6 := R6()
-126 [-]: GETGLOBAL R7 K35       ; R7 := 0x00046924
-127 [-]: CALL      R7 1 2       ; R7 := R7()
-128 [-]: GETGLOBAL R8 K0        ; R8 := _T
-129 [-]: GETTABLE  R8 R8 K5     ; R8 := R8["DecoMoveInfo"]
-130 [-]: GETTABLE  R8 R8 K6     ; R8 := R8["Deco"]
-131 [-]: SELF      R8 R8 K36    ; R9 := R8; R8 := R8[0x64930a5f]
-132 [-]: MOVE      R10 R5       ; R10 := R5
-133 [-]: MOVE      R11 R6       ; R11 := R6
-134 [-]: MOVE      R12 R7       ; R12 := R7
-135 [-]: CALL      R8 5 1       ; R8(R9,R10,R11,R12)
-136 [-]: GETGLOBAL R8 K10       ; R8 := 0x89326c93
-137 [-]: SELF      R8 R8 K37    ; R9 := R8; R8 := R8[0x78094005]
-138 [-]: MOVE      R10 R6       ; R10 := R6
-139 [-]: MOVE      R11 R5       ; R11 := R5
-140 [-]: MOVE      R12 R7       ; R12 := R7
-141 [-]: GETUPVAL  R13 U5       ; R13 := U5
-142 [-]: LOADBOOL  R14 0 0      ; R14 := false
-143 [-]: LOADBOOL  R15 1 0      ; R15 := true
-144 [-]: LOADBOOL  R16 0 0      ; R16 := false
-145 [-]: CALL      R8 9 2       ; R8 := R8(R9,R10,R11,R12,R13,R14,R15,R16)
-146 [-]: GETGLOBAL R9 K12       ; R9 := 0x7b998233
-147 [-]: MOVE      R10 R8       ; R10 := R8
-148 [-]: CALL      R9 2 2       ; R9 := R9(R10)
-149 [-]: TEST      R9 1         ; if R9 then PC := 170
-150 [-]: JMP       170          ; PC := 170
-151 [-]: GETGLOBAL R9 K0        ; R9 := _T
-152 [-]: GETTABLE  R9 R9 K38    ; R9 := R9["ShipDecosInVignette"]
-153 [-]: EQ        0 R9 K18     ; if R9 ~= nil then PC := 158
-154 [-]: JMP       158          ; PC := 158
+101 [-]: GETUPVAL  R5 U4        ; R5 := U4
+102 [-]: GETTABLE  R5 R5 K30    ; R5 := R5[0x5ff2dcc8]
+103 [-]: CALL      R5 1 1       ; R5()
+104 [-]: GETGLOBAL R5 K12       ; R5 := 0x7b998233
+105 [-]: GETGLOBAL R6 K0        ; R6 := _T
+106 [-]: GETTABLE  R6 R6 K5     ; R6 := R6["DecoMoveInfo"]
+107 [-]: GETTABLE  R6 R6 K31    ; R6 := R6["UnattachParent"]
+108 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+109 [-]: TEST      R5 1         ; if R5 then PC := 116
+110 [-]: JMP       116          ; PC := 116
+111 [-]: GETGLOBAL R5 K0        ; R5 := _T
+112 [-]: GETTABLE  R5 R5 K5     ; R5 := R5["DecoMoveInfo"]
+113 [-]: GETTABLE  R5 R5 K6     ; R5 := R5["Deco"]
+114 [-]: SELF      R5 R5 K32    ; R6 := R5; R5 := R5[0xd0001094]
+115 [-]: CALL      R5 2 1       ; R5(R6)
+116 [-]: GETUPVAL  R5 U5        ; R5 := U5
+117 [-]: EQ        0 R4 R5      ; if R4 ~= R5 then PC := 179
+118 [-]: JMP       179          ; PC := 179
+119 [-]: GETGLOBAL R5 K33       ; R5 := 0xa421af95
+120 [-]: CALL      R5 1 2       ; R5 := R5()
+121 [-]: GETGLOBAL R6 K33       ; R6 := 0xa421af95
+122 [-]: CALL      R6 1 2       ; R6 := R6()
+123 [-]: GETGLOBAL R7 K34       ; R7 := 0x00046924
+124 [-]: CALL      R7 1 2       ; R7 := R7()
+125 [-]: GETGLOBAL R8 K0        ; R8 := _T
+126 [-]: GETTABLE  R8 R8 K5     ; R8 := R8["DecoMoveInfo"]
+127 [-]: GETTABLE  R8 R8 K6     ; R8 := R8["Deco"]
+128 [-]: SELF      R8 R8 K35    ; R9 := R8; R8 := R8[0x64930a5f]
+129 [-]: MOVE      R10 R5       ; R10 := R5
+130 [-]: MOVE      R11 R6       ; R11 := R6
+131 [-]: MOVE      R12 R7       ; R12 := R7
+132 [-]: CALL      R8 5 1       ; R8(R9,R10,R11,R12)
+133 [-]: GETGLOBAL R8 K10       ; R8 := 0x89326c93
+134 [-]: SELF      R8 R8 K36    ; R9 := R8; R8 := R8[0x78094005]
+135 [-]: MOVE      R10 R6       ; R10 := R6
+136 [-]: MOVE      R11 R5       ; R11 := R5
+137 [-]: MOVE      R12 R7       ; R12 := R7
+138 [-]: GETUPVAL  R13 U6       ; R13 := U6
+139 [-]: LOADKB    R14 0 0      ; R14 := false
+140 [-]: LOADKB    R15 1 0      ; R15 := true
+141 [-]: LOADKB    R16 0 0      ; R16 := false
+142 [-]: CALL      R8 9 2       ; R8 := R8(R9,R10,R11,R12,R13,R14,R15,R16)
+143 [-]: GETGLOBAL R9 K12       ; R9 := 0x7b998233
+144 [-]: MOVE      R10 R8       ; R10 := R8
+145 [-]: CALL      R9 2 2       ; R9 := R9(R10)
+146 [-]: TEST      R9 1         ; if R9 then PC := 167
+147 [-]: JMP       167          ; PC := 167
+148 [-]: GETGLOBAL R9 K0        ; R9 := _T
+149 [-]: GETTABLE  R9 R9 K37    ; R9 := R9["ShipDecosInVignette"]
+150 [-]: EQ        0 R9 K18     ; if R9 ~= nil then PC := 155
+151 [-]: JMP       155          ; PC := 155
+152 [-]: GETGLOBAL R9 K0        ; R9 := _T
+153 [-]: NEWTABLE  R10 0 0      ; R10 := {}
+154 [-]: SETTABLE  R9 K37 R10   ; R9["ShipDecosInVignette"] := R10
 155 [-]: GETGLOBAL R9 K0        ; R9 := _T
-156 [-]: NEWTABLE  R10 0 0      ; R10 := {}
-157 [-]: SETTABLE  R9 K38 R10   ; R9["ShipDecosInVignette"] := R10
-158 [-]: GETGLOBAL R9 K0        ; R9 := _T
-159 [-]: GETTABLE  R9 R9 K38    ; R9 := R9["ShipDecosInVignette"]
-160 [-]: GETGLOBAL R10 K0       ; R10 := _T
-161 [-]: GETTABLE  R10 R10 K5   ; R10 := R10["DecoMoveInfo"]
-162 [-]: GETTABLE  R10 R10 K6   ; R10 := R10["Deco"]
-163 [-]: SELF      R10 R10 K39  ; R11 := R10; R10 := R10[0xf537cfc7]
-164 [-]: CALL      R10 2 2      ; R10 := R10(R11)
-165 [-]: GETGLOBAL R11 K0       ; R11 := _T
-166 [-]: GETTABLE  R11 R11 K5   ; R11 := R11["DecoMoveInfo"]
-167 [-]: GETTABLE  R11 R11 K6   ; R11 := R11["Deco"]
-168 [-]: SETTABLE  R9 R10 R11   ; R9[R10] := R11
-169 [-]: JMP       182          ; PC := 182
-170 [-]: GETGLOBAL R9 K0        ; R9 := _T
-171 [-]: GETTABLE  R9 R9 K38    ; R9 := R9["ShipDecosInVignette"]
-172 [-]: EQ        1 R9 K18     ; if R9 == nil then PC := 182
-173 [-]: JMP       182          ; PC := 182
-174 [-]: GETGLOBAL R9 K0        ; R9 := _T
-175 [-]: GETTABLE  R9 R9 K38    ; R9 := R9["ShipDecosInVignette"]
-176 [-]: GETGLOBAL R10 K0       ; R10 := _T
-177 [-]: GETTABLE  R10 R10 K5   ; R10 := R10["DecoMoveInfo"]
-178 [-]: GETTABLE  R10 R10 K6   ; R10 := R10["Deco"]
-179 [-]: SELF      R10 R10 K39  ; R11 := R10; R10 := R10[0xf537cfc7]
-180 [-]: CALL      R10 2 2      ; R10 := R10(R11)
-181 [-]: SETTABLE  R9 R10 K18   ; R9[R10] := nil
-182 [-]: GETGLOBAL R9 K0        ; R9 := _T
-183 [-]: GETTABLE  R9 R9 K5     ; R9 := R9["DecoMoveInfo"]
-184 [-]: GETTABLE  R9 R9 K6     ; R9 := R9["Deco"]
-185 [-]: SELF      R9 R9 K39    ; R10 := R9; R9 := R9[0xf537cfc7]
-186 [-]: CALL      R9 2 2       ; R9 := R9(R10)
-187 [-]: GETGLOBAL R10 K0       ; R10 := _T
-188 [-]: GETTABLE  R10 R10 K40  ; R10 := R10["DynamicDecos"]
-189 [-]: EQ        1 R10 K18    ; if R10 == nil then PC := 212
-190 [-]: JMP       212          ; PC := 212
-191 [-]: GETGLOBAL R10 K0       ; R10 := _T
-192 [-]: GETTABLE  R10 R10 K40  ; R10 := R10["DynamicDecos"]
-193 [-]: GETTABLE  R10 R10 R9   ; R10 := R10[R9]
-194 [-]: EQ        1 R10 K18    ; if R10 == nil then PC := 212
-195 [-]: JMP       212          ; PC := 212
-196 [-]: GETGLOBAL R10 K0       ; R10 := _T
-197 [-]: GETTABLE  R10 R10 K40  ; R10 := R10["DynamicDecos"]
-198 [-]: NEWTABLE  R11 0 2      ; R11 := {}
-199 [-]: GETGLOBAL R12 K0       ; R12 := _T
-200 [-]: GETTABLE  R12 R12 K5   ; R12 := R12["DecoMoveInfo"]
-201 [-]: GETTABLE  R12 R12 K6   ; R12 := R12["Deco"]
-202 [-]: SELF      R12 R12 K42  ; R13 := R12; R12 := R12[0xf6ebd926]
-203 [-]: CALL      R12 2 2      ; R12 := R12(R13)
-204 [-]: SETTABLE  R11 K41 R12  ; R11["pos"] := R12
-205 [-]: GETGLOBAL R12 K0       ; R12 := _T
-206 [-]: GETTABLE  R12 R12 K5   ; R12 := R12["DecoMoveInfo"]
-207 [-]: GETTABLE  R12 R12 K6   ; R12 := R12["Deco"]
-208 [-]: SELF      R12 R12 K44  ; R13 := R12; R12 := R12[0x5280b883]
-209 [-]: CALL      R12 2 2      ; R12 := R12(R13)
-210 [-]: SETTABLE  R11 K43 R12  ; R11["rot"] := R12
-211 [-]: SETTABLE  R10 R9 R11   ; R10[R9] := R11
-212 [-]: GETGLOBAL R10 K45      ; R10 := 0x3d106989
-213 [-]: LOADK     R11 K46      ; R11 := "DecoMoveInfo cleared OnShipDecoMoved"
-214 [-]: CALL      R10 2 1      ; R10(R11)
-215 [-]: GETGLOBAL R10 K0       ; R10 := _T
-216 [-]: SETTABLE  R10 K5 K18   ; R10["DecoMoveInfo"] := nil
-217 [-]: GETUPVAL  R10 U6       ; R10 := U6
-218 [-]: CALL      R10 1 1      ; R10()
-219 [-]: GETGLOBAL R10 K0       ; R10 := _T
-220 [-]: SETTABLE  R10 K47 K18  ; R10["ShipDecoToPlace"] := nil
-221 [-]: RETURN    R0 1         ; return 
+156 [-]: GETTABLE  R9 R9 K37    ; R9 := R9["ShipDecosInVignette"]
+157 [-]: GETGLOBAL R10 K0       ; R10 := _T
+158 [-]: GETTABLE  R10 R10 K5   ; R10 := R10["DecoMoveInfo"]
+159 [-]: GETTABLE  R10 R10 K6   ; R10 := R10["Deco"]
+160 [-]: SELF      R10 R10 K38  ; R11 := R10; R10 := R10[0xf537cfc7]
+161 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+162 [-]: GETGLOBAL R11 K0       ; R11 := _T
+163 [-]: GETTABLE  R11 R11 K5   ; R11 := R11["DecoMoveInfo"]
+164 [-]: GETTABLE  R11 R11 K6   ; R11 := R11["Deco"]
+165 [-]: SETTABLE  R9 R10 R11   ; R9[R10] := R11
+166 [-]: JMP       179          ; PC := 179
+167 [-]: GETGLOBAL R9 K0        ; R9 := _T
+168 [-]: GETTABLE  R9 R9 K37    ; R9 := R9["ShipDecosInVignette"]
+169 [-]: EQ        1 R9 K18     ; if R9 == nil then PC := 179
+170 [-]: JMP       179          ; PC := 179
+171 [-]: GETGLOBAL R9 K0        ; R9 := _T
+172 [-]: GETTABLE  R9 R9 K37    ; R9 := R9["ShipDecosInVignette"]
+173 [-]: GETGLOBAL R10 K0       ; R10 := _T
+174 [-]: GETTABLE  R10 R10 K5   ; R10 := R10["DecoMoveInfo"]
+175 [-]: GETTABLE  R10 R10 K6   ; R10 := R10["Deco"]
+176 [-]: SELF      R10 R10 K38  ; R11 := R10; R10 := R10[0xf537cfc7]
+177 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+178 [-]: SETTABLE  R9 R10 K18   ; R9[R10] := nil
+179 [-]: GETGLOBAL R9 K0        ; R9 := _T
+180 [-]: GETTABLE  R9 R9 K5     ; R9 := R9["DecoMoveInfo"]
+181 [-]: GETTABLE  R9 R9 K6     ; R9 := R9["Deco"]
+182 [-]: SELF      R9 R9 K38    ; R10 := R9; R9 := R9[0xf537cfc7]
+183 [-]: CALL      R9 2 2       ; R9 := R9(R10)
+184 [-]: GETGLOBAL R10 K0       ; R10 := _T
+185 [-]: GETTABLE  R10 R10 K39  ; R10 := R10["DynamicDecos"]
+186 [-]: EQ        1 R10 K18    ; if R10 == nil then PC := 209
+187 [-]: JMP       209          ; PC := 209
+188 [-]: GETGLOBAL R10 K0       ; R10 := _T
+189 [-]: GETTABLE  R10 R10 K39  ; R10 := R10["DynamicDecos"]
+190 [-]: GETTABLE  R10 R10 R9   ; R10 := R10[R9]
+191 [-]: EQ        1 R10 K18    ; if R10 == nil then PC := 209
+192 [-]: JMP       209          ; PC := 209
+193 [-]: GETGLOBAL R10 K0       ; R10 := _T
+194 [-]: GETTABLE  R10 R10 K39  ; R10 := R10["DynamicDecos"]
+195 [-]: NEWTABLE  R11 0 2      ; R11 := {}
+196 [-]: GETGLOBAL R12 K0       ; R12 := _T
+197 [-]: GETTABLE  R12 R12 K5   ; R12 := R12["DecoMoveInfo"]
+198 [-]: GETTABLE  R12 R12 K6   ; R12 := R12["Deco"]
+199 [-]: SELF      R12 R12 K41  ; R13 := R12; R12 := R12[0xf6ebd926]
+200 [-]: CALL      R12 2 2      ; R12 := R12(R13)
+201 [-]: SETTABLE  R11 K40 R12  ; R11["pos"] := R12
+202 [-]: GETGLOBAL R12 K0       ; R12 := _T
+203 [-]: GETTABLE  R12 R12 K5   ; R12 := R12["DecoMoveInfo"]
+204 [-]: GETTABLE  R12 R12 K6   ; R12 := R12["Deco"]
+205 [-]: SELF      R12 R12 K43  ; R13 := R12; R12 := R12[0x5280b883]
+206 [-]: CALL      R12 2 2      ; R12 := R12(R13)
+207 [-]: SETTABLE  R11 K42 R12  ; R11["rot"] := R12
+208 [-]: SETTABLE  R10 R9 R11   ; R10[R9] := R11
+209 [-]: GETGLOBAL R10 K44      ; R10 := 0x3d106989
+210 [-]: LOADK     R11 K45      ; R11 := "DecoMoveInfo cleared OnShipDecoMoved"
+211 [-]: CALL      R10 2 1      ; R10(R11)
+212 [-]: GETGLOBAL R10 K0       ; R10 := _T
+213 [-]: SETTABLE  R10 K5 K18   ; R10["DecoMoveInfo"] := nil
+214 [-]: GETUPVAL  R10 U7       ; R10 := U7
+215 [-]: CALL      R10 1 1      ; R10()
+216 [-]: GETGLOBAL R10 K0       ; R10 := _T
+217 [-]: SETTABLE  R10 K46 K18  ; R10["ShipDecoToPlace"] := nil
+218 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #34:
 ;
 ; Name:            
-; Defined at line: 768
-; #Upvalues:       0
+; Defined at line: 767
+; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
-; Max Stack Size:  8
+; Max Stack Size:  5
 
-  1 [-]: GETGLOBAL R2 K0        ; R2 := _T
-  2 [-]: GETTABLE  R2 R2 K1     ; R2 := R2["BackgroundMovie"]
-  3 [-]: SELF      R2 R2 K2     ; R3 := R2; R2 := R2[0xf56f3887]
-  4 [-]: LOADK     R4 K3        ; R4 := "OnHostFavouriteWarframeUpdated"
-  5 [-]: NEWTABLE  R5 2 0       ; R5 := {}
-  6 [-]: GETGLOBAL R6 K4        ; R6 := 0x64fb1586
-  7 [-]: MOVE      R7 R0        ; R7 := R0
-  8 [-]: CALL      R6 2 2       ; R6 := R6(R7)
-  9 [-]: MOVE      R7 R1        ; R7 := R1
- 10 [-]: SETLIST   R5 2 1       ; R5[(1-1)*FPF+i] := R(5+i), 1 <= i <= 2
- 11 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
- 12 [-]: GETGLOBAL R2 K5        ; R2 := 0x3d106989
- 13 [-]: LOADK     R3 K6        ; R3 := "Host favourite warframe was updated at "
- 14 [-]: MOVE      R4 R1        ; R4 := R1
- 15 [-]: CONCAT    R3 R3 R4     ; R3 := R3 .. R4
- 16 [-]: CALL      R2 2 1       ; R2(R3)
- 17 [-]: RETURN    R0 1         ; return 
+  1 [-]: GETUPVAL  R2 U0        ; R2 := U0
+  2 [-]: GETTABLE  R2 R2 K0     ; R2 := R2[0xe4aee6f2]
+  3 [-]: MOVE      R3 R0        ; R3 := R0
+  4 [-]: MOVE      R4 R1        ; R4 := R1
+  5 [-]: CALL      R2 3 1       ; R2(R3,R4)
+  6 [-]: GETGLOBAL R2 K1        ; R2 := 0x3d106989
+  7 [-]: LOADK     R3 K2        ; R3 := "Host favourite warframe was updated at "
+  8 [-]: MOVE      R4 R1        ; R4 := R1
+  9 [-]: CONCAT    R3 R3 R4     ; R3 := R3 .. R4
+ 10 [-]: CALL      R2 2 1       ; R2(R3)
+ 11 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #35:
 ;
 ; Name:            
-; Defined at line: 773
+; Defined at line: 772
 ; #Upvalues:       3
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -2539,7 +2527,7 @@
 ; Function #36:
 ;
 ; Name:            
-; Defined at line: 796
+; Defined at line: 795
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -2555,7 +2543,7 @@
 ; Function #37:
 ;
 ; Name:            
-; Defined at line: 800
+; Defined at line: 799
 ; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2563,7 +2551,7 @@
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x76ea806b
   2 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0x3f3ae64c]
-  3 [-]: LOADK     R2 0         ; R2 := 0.000000
+  3 [-]: CONST     R2 0         ; R2 := 0.000000
   4 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
   5 [-]: GETGLOBAL R1 K2        ; R1 := 0x7b998233
   6 [-]: MOVE      R2 R0        ; R2 := R0
@@ -2610,7 +2598,7 @@
  47 [-]: CALL      R7 2 2       ; R7 := R7(R8)
  48 [-]: EQ        0 R2 R7      ; if R2 ~= R7 then PC := 52
  49 [-]: JMP       52           ; PC := 52
- 50 [-]: LOADK     R6 0         ; R6 := 0.000000
+ 50 [-]: CONST     R6 0         ; R6 := 0.000000
  51 [-]: JMP       61           ; PC := 61
  52 [-]: GETGLOBAL R7 K11       ; R7 := 0x0032441c
  53 [-]: GETTABLE  R7 R7 K12    ; R7 := R7["CapacityCost"]
@@ -2654,8 +2642,8 @@
  91 [-]: GETTABLE  R10 R10 R11  ; R10 := R10[R11]
  92 [-]: EQ        1 R10 K15    ; if R10 == nil then PC := 95
  93 [-]: JMP       95           ; PC := 95
- 94 [-]: LOADBOOL  R10 0 1      ; R10 := false; PC := 95
- 95 [-]: LOADBOOL  R10 1 0      ; R10 := true
+ 94 [-]: LOADKB    R10 0 1      ; R10 := false; PC := 95
+ 95 [-]: LOADKB    R10 1 0      ; R10 := true
  96 [-]: LOADK     R11 K17      ; R11 := "true"
  97 [-]: LOADK     R12 K18      ; R12 := "false"
  98 [-]: CALL      R9 4 2       ; R9 := R9(R10,R11,R12)
@@ -2737,8 +2725,8 @@
 174 [-]: CALL      R16 2 2      ; R16 := R16(R17)
 175 [-]: EQ        0 R16 K23    ; if R16 ~= "" then PC := 178
 176 [-]: JMP       178          ; PC := 178
-177 [-]: LOADBOOL  R16 0 1      ; R16 := false; PC := 178
-178 [-]: LOADBOOL  R16 1 0      ; R16 := true
+177 [-]: LOADKB    R16 0 1      ; R16 := false; PC := 178
+178 [-]: LOADKB    R16 1 0      ; R16 := true
 179 [-]: GETGLOBAL R17 K5       ; R17 := _T
 180 [-]: GETTABLE  R17 R17 K6   ; R17 := R17["ShipDecoToPlace"]
 181 [-]: SELF      R17 R17 K32  ; R18 := R17; R17 := R17[0xf537cfc7]
@@ -2796,7 +2784,7 @@
 233 [-]: GETGLOBAL R16 K45      ; R16 := 0x33201ebb
 234 [-]: CALL      R14 3 2      ; R14 := R14(R15,R16)
 235 [-]: SETTABLE  R13 K40 R14  ; R13["PlacingCustomizableDeco"] := R14
-236 [-]: LOADK     R13 255      ; R13 := 255.000000
+236 [-]: CONST     R13 255      ; R13 := 255.000000
 237 [-]: GETGLOBAL R14 K5       ; R14 := _T
 238 [-]: GETTABLE  R14 R14 K46  ; R14 := R14["PlacedDecoSocketInfo"]
 239 [-]: EQ        1 R14 K15    ; if R14 == nil then PC := 245
@@ -2872,7 +2860,7 @@
 ; Function #38:
 ;
 ; Name:            
-; Defined at line: 888
+; Defined at line: 887
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -2899,7 +2887,7 @@
 ; Function #39:
 ;
 ; Name:            
-; Defined at line: 901
+; Defined at line: 900
 ; #Upvalues:       2
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -2953,7 +2941,7 @@
 ; Function #40:
 ;
 ; Name:            
-; Defined at line: 917
+; Defined at line: 916
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -3001,13 +2989,13 @@
 ; Function #41:
 ;
 ; Name:            
-; Defined at line: 931
+; Defined at line: 930
 ; #Upvalues:       2
 ; #Parameters:     9
 ; Is_vararg:       0
 ; Max Stack Size:  50
 
-  1 [-]: LOADK     R9 0         ; R9 := 0.000000
+  1 [-]: CONST     R9 0         ; R9 := 0.000000
   2 [-]: GETGLOBAL R10 K0       ; R10 := 0x7b998233
   3 [-]: GETGLOBAL R11 K1       ; R11 := _T
   4 [-]: GETTABLE  R11 R11 K2   ; R11 := R11["DojoMgr"]
@@ -3016,7 +3004,7 @@
   7 [-]: JMP       42           ; PC := 42
   8 [-]: GETGLOBAL R10 K3       ; R10 := 0x76ea806b
   9 [-]: SELF      R10 R10 K4   ; R11 := R10; R10 := R10[0x3f3ae64c]
- 10 [-]: LOADK     R12 0        ; R12 := 0.000000
+ 10 [-]: CONST     R12 0        ; R12 := 0.000000
  11 [-]: CALL      R10 3 2      ; R10 := R10(R11,R12)
  12 [-]: GETGLOBAL R11 K0       ; R11 := 0x7b998233
  13 [-]: MOVE      R12 R10      ; R12 := R10
@@ -3041,8 +3029,8 @@
  32 [-]: GETTABLE  R14 R14 K8   ; R14 := R14["DECO_AREA_APARTMENT"]
  33 [-]: EQ        1 R13 R14    ; if R13 == R14 then PC := 36
  34 [-]: JMP       36           ; PC := 36
- 35 [-]: LOADBOOL  R13 0 1      ; R13 := false; PC := 36
- 36 [-]: LOADBOOL  R13 1 0      ; R13 := true
+ 35 [-]: LOADKB    R13 0 1      ; R13 := false; PC := 36
+ 36 [-]: LOADKB    R13 1 0      ; R13 := true
  37 [-]: SELF      R14 R11 K9   ; R15 := R11; R14 := R11[0x4386f26c]
  38 [-]: MOVE      R16 R12      ; R16 := R12
  39 [-]: MOVE      R17 R13      ; R17 := R13
@@ -3052,8 +3040,8 @@
  43 [-]: JMP       47           ; PC := 47
  44 [-]: EQ        1 R1 K12     ; if R1 == 6.000000 then PC := 47
  45 [-]: JMP       47           ; PC := 47
- 46 [-]: LOADBOOL  R14 0 1      ; R14 := false; PC := 47
- 47 [-]: LOADBOOL  R14 1 0      ; R14 := true
+ 46 [-]: LOADKB    R14 0 1      ; R14 := false; PC := 47
+ 47 [-]: LOADKB    R14 1 0      ; R14 := true
  48 [-]: LOADK     R15 K13      ; R15 := ""
  49 [-]: NEWTABLE  R16 0 2      ; R16 := {}
  50 [-]: NEWTABLE  R17 0 2      ; R17 := {}
@@ -3085,8 +3073,8 @@
  76 [-]: GETTABLE  R25 R22 K15  ; R25 := R22["InputCode"]
  77 [-]: GETTABLE  R26 R22 K17  ; R26 := R22["Invert"]
  78 [-]: GETGLOBAL R27 K27      ; R27 := 0xcdd5e125
- 79 [-]: LOADBOOL  R28 1 0      ; R28 := true
- 80 [-]: LOADBOOL  R29 0 0      ; R29 := false
+ 79 [-]: LOADKB    R28 1 0      ; R28 := true
+ 80 [-]: LOADKB    R29 0 0      ; R29 := false
  81 [-]: CALL      R23 7 2      ; R23 := R23(R24,R25,R26,R27,R28,R29)
  82 [-]: LEN       R24 R23      ; R24 := # R23
  83 [-]: LT        0 K28 R24    ; if 0.000000 >= R24 then PC := 95
@@ -3130,8 +3118,8 @@
 121 [-]: JMP       261          ; PC := 261
 122 [-]: EQ        1 R1 K39     ; if R1 == 5.000000 then PC := 125
 123 [-]: JMP       125          ; PC := 125
-124 [-]: LOADBOOL  R25 0 1      ; R25 := false; PC := 125
-125 [-]: LOADBOOL  R25 1 0      ; R25 := true
+124 [-]: LOADKB    R25 0 1      ; R25 := false; PC := 125
+125 [-]: LOADKB    R25 1 0      ; R25 := true
 126 [-]: LOADNIL   R26 R26      ; R26 := nil
 127 [-]: LOADK     R27 K13      ; R27 := ""
 128 [-]: EQ        0 R7 K28     ; if R7 ~= 0.000000 then PC := 136
@@ -3197,7 +3185,7 @@
 188 [-]: JMP       191          ; PC := 191
 189 [-]: EQ        0 R1 K48     ; if R1 ~= 4.000000 then PC := 192
 190 [-]: JMP       192          ; PC := 192
-191 [-]: LOADBOOL  R14 1 0      ; R14 := true
+191 [-]: LOADKB    R14 1 0      ; R14 := true
 192 [-]: LOADNIL   R28 R28      ; R28 := nil
 193 [-]: LOADK     R29 K13      ; R29 := ""
 194 [-]: GETUPVAL  R30 U1       ; R30 := U1
@@ -3214,10 +3202,10 @@
 205 [-]: CALL      R31 3 2      ; R31 := R31(R32,R33)
 206 [-]: MOVE      R28 R31      ; R28 := R31
 207 [-]: JMP       229          ; PC := 229
-208 [-]: LOADK     R31 2        ; R31 := 2.000000
+208 [-]: CONST     R31 2        ; R31 := 2.000000
 209 [-]: TEST      R25 0        ; if not R25 then PC := 218
 210 [-]: JMP       218          ; PC := 218
-211 [-]: LOADK     R31 0        ; R31 := 0.000000
+211 [-]: CONST     R31 0        ; R31 := 0.000000
 212 [-]: GETGLOBAL R32 K40      ; R32 := 0x603636ad
 213 [-]: LOADK     R33 K53      ; R33 := "/Lotus/Language/UiElements/PLACEMENT_DEGREES"
 214 [-]: LOADNIL   R34 R34      ; R34 := nil
@@ -3279,8 +3267,8 @@
 270 [-]: LOADK     R33 K13      ; R33 := ""
 271 [-]: EQ        1 R1 K39     ; if R1 == 5.000000 then PC := 274
 272 [-]: JMP       274          ; PC := 274
-273 [-]: LOADBOOL  R34 0 1      ; R34 := false; PC := 274
-274 [-]: LOADBOOL  R34 1 0      ; R34 := true
+273 [-]: LOADKB    R34 0 1      ; R34 := false; PC := 274
+274 [-]: LOADKB    R34 1 0      ; R34 := true
 275 [-]: TEST      R3 0         ; if not R3 then PC := 289
 276 [-]: JMP       289          ; PC := 289
 277 [-]: GETGLOBAL R35 K40      ; R35 := 0x603636ad
@@ -3353,10 +3341,10 @@
 344 [-]: CALL      R42 3 2      ; R42 := R42(R43,R44)
 345 [-]: MOVE      R39 R42      ; R39 := R42
 346 [-]: JMP       368          ; PC := 368
-347 [-]: LOADK     R42 2        ; R42 := 2.000000
+347 [-]: CONST     R42 2        ; R42 := 2.000000
 348 [-]: TEST      R34 0        ; if not R34 then PC := 357
 349 [-]: JMP       357          ; PC := 357
-350 [-]: LOADK     R42 0        ; R42 := 0.000000
+350 [-]: CONST     R42 0        ; R42 := 0.000000
 351 [-]: GETGLOBAL R43 K40      ; R43 := 0x603636ad
 352 [-]: LOADK     R44 K53      ; R44 := "/Lotus/Language/UiElements/PLACEMENT_DEGREES"
 353 [-]: LOADNIL   R45 R45      ; R45 := nil
@@ -3391,13 +3379,13 @@
 382 [-]: JMP       389          ; PC := 389
 383 [-]: GETGLOBAL R44 K40      ; R44 := 0x603636ad
 384 [-]: LOADK     R45 K69      ; R45 := "/Lotus/Language/Labels/DecorationHeaderMoveDeco"
-385 [-]: LOADBOOL  R46 1 0      ; R46 := true
+385 [-]: LOADKB    R46 1 0      ; R46 := true
 386 [-]: CALL      R44 3 2      ; R44 := R44(R45,R46)
 387 [-]: MOVE      R15 R44      ; R15 := R44
 388 [-]: JMP       394          ; PC := 394
 389 [-]: GETGLOBAL R44 K40      ; R44 := 0x603636ad
 390 [-]: LOADK     R45 K70      ; R45 := "/Lotus/Language/Labels/DecorationHeaderAddDeco"
-391 [-]: LOADBOOL  R46 1 0      ; R46 := true
+391 [-]: LOADKB    R46 1 0      ; R46 := true
 392 [-]: CALL      R44 3 2      ; R44 := R44(R45,R46)
 393 [-]: MOVE      R15 R44      ; R15 := R44
 394 [-]: MOVE      R44 R15      ; R44 := R15
@@ -3471,7 +3459,7 @@
 ; Function #42:
 ;
 ; Name:            
-; Defined at line: 1112
+; Defined at line: 1111
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -3505,7 +3493,7 @@
  26 [-]: GETTABLE  R1 R1 K1     ; R1 := R1["DojoMgr"]
  27 [-]: GETTABLE  R1 R1 K7     ; R1 := R1["mDecoSelectedCallback"]
  28 [-]: GETTABLE  R1 R1 R0     ; R1 := R1[R0]
- 29 [-]: LOADBOOL  R2 1 0       ; R2 := true
+ 29 [-]: LOADKB    R2 1 0       ; R2 := true
  30 [-]: CALL      R1 2 1       ; R1(R2)
  31 [-]: RETURN    R0 1         ; return 
 
@@ -3513,7 +3501,7 @@
 ; Function #43:
 ;
 ; Name:            
-; Defined at line: 1121
+; Defined at line: 1120
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -3527,7 +3515,7 @@
 ; Function #44:
 ;
 ; Name:            
-; Defined at line: 1125
+; Defined at line: 1124
 ; #Upvalues:       3
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -3535,7 +3523,7 @@
 
   1 [-]: GETGLOBAL R2 K0        ; R2 := 0x76ea806b
   2 [-]: SELF      R2 R2 K1     ; R3 := R2; R2 := R2[0x3f3ae64c]
-  3 [-]: LOADK     R4 0         ; R4 := 0.000000
+  3 [-]: CONST     R4 0         ; R4 := 0.000000
   4 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
   5 [-]: GETGLOBAL R3 K2        ; R3 := 0x7b998233
   6 [-]: MOVE      R4 R2        ; R4 := R2
@@ -3554,7 +3542,7 @@
  19 [-]: GETUPVAL  R4 U0        ; R4 := U0
  20 [-]: GETTABLE  R4 R4 K4     ; R4 := R4[0xb73d420f]
  21 [-]: CALL      R4 1 2       ; R4 := R4()
- 22 [-]: LOADK     R5 0         ; R5 := 0.000000
+ 22 [-]: CONST     R5 0         ; R5 := 0.000000
  23 [-]: LOADK     R6 K5        ; R6 := 999999.000000
  24 [-]: GETTABLE  R7 R0 K6     ; R7 := R0["StoreItem"]
  25 [-]: GETGLOBAL R8 K2        ; R8 := 0x7b998233
@@ -3590,7 +3578,7 @@
  55 [-]: CALL      R11 2 2      ; R11 := R11(R12)
  56 [-]: MOVE      R5 R11       ; R5 := R11
  57 [-]: SELF      R11 R7 K17   ; R12 := R7; R11 := R7[0xfb7eb1d7]
- 58 [-]: LOADBOOL  R13 1 0      ; R13 := true
+ 58 [-]: LOADKB    R13 1 0      ; R13 := true
  59 [-]: CALL      R11 3 2      ; R11 := R11(R12,R13)
  60 [-]: MOVE      R6 R11       ; R6 := R11
  61 [-]: JMP       84           ; PC := 84
@@ -3605,15 +3593,15 @@
  70 [-]: GETTABLE  R13 R13 K20  ; R13 := R13["DECO_AREA_APARTMENT"]
  71 [-]: EQ        1 R12 R13    ; if R12 == R13 then PC := 74
  72 [-]: JMP       74           ; PC := 74
- 73 [-]: LOADBOOL  R12 0 1      ; R12 := false; PC := 74
- 74 [-]: LOADBOOL  R12 1 0      ; R12 := true
+ 73 [-]: LOADKB    R12 0 1      ; R12 := false; PC := 74
+ 74 [-]: LOADKB    R12 1 0      ; R12 := true
  75 [-]: SELF      R13 R3 K21   ; R14 := R3; R13 := R3[0xd104f830]
  76 [-]: MOVE      R15 R11      ; R15 := R11
  77 [-]: MOVE      R16 R12      ; R16 := R12
  78 [-]: CALL      R13 4 2      ; R13 := R13(R14,R15,R16)
  79 [-]: MOVE      R5 R13       ; R5 := R13
  80 [-]: SELF      R13 R7 K17   ; R14 := R7; R13 := R7[0xfb7eb1d7]
- 81 [-]: LOADBOOL  R15 0 0      ; R15 := false
+ 81 [-]: LOADKB    R15 0 0      ; R15 := false
  82 [-]: CALL      R13 3 2      ; R13 := R13(R14,R15)
  83 [-]: MOVE      R6 R13       ; R6 := R13
  84 [-]: LT        0 R5 R6      ; if R5 >= R6 then PC := 91
@@ -3635,16 +3623,16 @@
 100 [-]: GETTABLE  R13 R14 K28  ; R13 := R14["mSockets"]
 101 [-]: GETGLOBAL R14 K7       ; R14 := _T
 102 [-]: NEWTABLE  R15 0 4      ; R15 := {}
-103 [-]: SETTABLE  R15 K6 R7    ; R15[0xd1964243] := R7
+103 [-]: SETTABLE  R15 K6 R7    ; R15["StoreItem"] := R7
 104 [-]: GETTABLE  R16 R0 K30   ; R16 := R0["Count"]
 105 [-]: SETTABLE  R15 K30 R16  ; R15["Count"] := R16
 106 [-]: GETTABLE  R16 R0 K32   ; R16 := R0["VaultDeco"]
-107 [-]: SETTABLE  R15 K31 R16  ; R15[0x33bdd652] := R16
+107 [-]: SETTABLE  R15 K31 R16  ; R15["IsVault"] := R16
 108 [-]: SETTABLE  R15 K25 R13  ; R15["SocketInfo"] := R13
 109 [-]: SETTABLE  R14 K29 R15  ; R14["ShipDecoItemInfo"] := R15
 110 [-]: GETGLOBAL R14 K7       ; R14 := _T
 111 [-]: GETTABLE  R15 R0 K34   ; R15 := R0["Type"]
-112 [-]: SETTABLE  R14 K33 R15  ; R14[0x59e42e1b] := R15
+112 [-]: SETTABLE  R14 K33 R15  ; R14["ShipDecoItemToPlace"] := R15
 113 [-]: GETGLOBAL R14 K7       ; R14 := _T
 114 [-]: GETTABLE  R15 R0 K36   ; R15 := R0["Name"]
 115 [-]: SETTABLE  R14 K35 R15  ; R14["PlacedDecoName"] := R15
@@ -3656,9 +3644,9 @@
 121 [-]: JMP       124          ; PC := 124
 122 [-]: GETTABLE  R15 R0 K32   ; R15 := R0["VaultDeco"]
 123 [-]: JMP       126          ; PC := 126
-124 [-]: LOADBOOL  R15 0 1      ; R15 := false; PC := 125
-125 [-]: LOADBOOL  R15 1 0      ; R15 := true
-126 [-]: SETTABLE  R14 K32 R15  ; R14[0x9c1f3b5a] := R15
+124 [-]: LOADKB    R15 0 1      ; R15 := false; PC := 125
+125 [-]: LOADKB    R15 1 0      ; R15 := true
+126 [-]: SETTABLE  R14 K32 R15  ; R14["VaultDeco"] := R15
 127 [-]: GETGLOBAL R14 K9       ; R14 := 0x89326c93
 128 [-]: SELF      R14 R14 K10  ; R15 := R14; R14 := R14[0x78298275]
 129 [-]: CALL      R14 2 2      ; R14 := R14(R15)
@@ -3720,7 +3708,7 @@
 ; Function #45:
 ;
 ; Name:            
-; Defined at line: 1210
+; Defined at line: 1209
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3730,7 +3718,7 @@
   2 [-]: SETTABLE  R1 K1 K2     ; R1["PlacingShipDeco"] := true
   3 [-]: GETGLOBAL R1 K3        ; R1 := 0x76ea806b
   4 [-]: SELF      R1 R1 K4     ; R2 := R1; R1 := R1[0x3f3ae64c]
-  5 [-]: LOADK     R3 0         ; R3 := 0.000000
+  5 [-]: CONST     R3 0         ; R3 := 0.000000
   6 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
   7 [-]: GETGLOBAL R2 K5        ; R2 := 0x7b998233
   8 [-]: MOVE      R3 R1        ; R3 := R1
@@ -3749,7 +3737,7 @@
  21 [-]: GETUPVAL  R3 U0        ; R3 := U0
  22 [-]: GETTABLE  R3 R3 K7     ; R3 := R3[0xb73d420f]
  23 [-]: CALL      R3 1 2       ; R3 := R3()
- 24 [-]: LOADK     R4 0         ; R4 := 0.000000
+ 24 [-]: CONST     R4 0         ; R4 := 0.000000
  25 [-]: GETTABLE  R5 R0 K8     ; R5 := R0["capacityCost"]
  26 [-]: GETGLOBAL R6 K5        ; R6 := 0x7b998233
  27 [-]: GETGLOBAL R7 K0        ; R7 := _T
@@ -3795,8 +3783,8 @@
  67 [-]: GETTABLE  R11 R11 K20  ; R11 := R11["DECO_AREA_APARTMENT"]
  68 [-]: EQ        1 R10 R11    ; if R10 == R11 then PC := 71
  69 [-]: JMP       71           ; PC := 71
- 70 [-]: LOADBOOL  R10 0 1      ; R10 := false; PC := 71
- 71 [-]: LOADBOOL  R10 1 0      ; R10 := true
+ 70 [-]: LOADKB    R10 0 1      ; R10 := false; PC := 71
+ 71 [-]: LOADKB    R10 1 0      ; R10 := true
  72 [-]: SELF      R11 R2 K21   ; R12 := R2; R11 := R2[0xd104f830]
  73 [-]: MOVE      R13 R9       ; R13 := R9
  74 [-]: MOVE      R14 R10      ; R14 := R10
@@ -3836,7 +3824,7 @@
 108 [-]: GETGLOBAL R11 K39      ; R11 := 0x33bdd652
 109 [-]: GETTABLE  R11 R11 K40  ; R11 := R11[0x9c1f3b5a]
 110 [-]: GETTABLE  R12 R0 K36   ; R12 := R0["TreasureIds"]
-111 [-]: LOADK     R13 1        ; R13 := 1.000000
+111 [-]: CONST     R13 1        ; R13 := 1.000000
 112 [-]: CALL      R11 3 1      ; R11(R12,R13)
 113 [-]: GETGLOBAL R11 K0       ; R11 := _T
 114 [-]: GETTABLE  R11 R11 K25  ; R11 := R11["ShipDecoItemInfo"]
@@ -3851,8 +3839,8 @@
 123 [-]: JMP       126          ; PC := 126
 124 [-]: GETTABLE  R12 R0 K30   ; R12 := R0["VaultDeco"]
 125 [-]: JMP       128          ; PC := 128
-126 [-]: LOADBOOL  R12 0 1      ; R12 := false; PC := 127
-127 [-]: LOADBOOL  R12 1 0      ; R12 := true
+126 [-]: LOADKB    R12 0 1      ; R12 := false; PC := 127
+127 [-]: LOADKB    R12 1 0      ; R12 := true
 128 [-]: SETTABLE  R11 K30 R12  ; R11[0xf1b3fb6d] := R12
 129 [-]: GETGLOBAL R11 K10      ; R11 := 0x89326c93
 130 [-]: SELF      R11 R11 K11  ; R12 := R11; R11 := R11[0x78298275]
@@ -3871,10 +3859,10 @@
 143 [-]: NEWTABLE  R17 0 0      ; R17 := {}
 144 [-]: LOADK     R18 K45      ; R18 := ""
 145 [-]: GETGLOBAL R19 K46      ; R19 := 0xb7cbd06b
-146 [-]: LOADK     R20 1        ; R20 := 1.000000
-147 [-]: LOADK     R21 1        ; R21 := 1.000000
+146 [-]: CONST     R20 1        ; R20 := 1.000000
+147 [-]: CONST     R21 1        ; R21 := 1.000000
 148 [-]: CALL      R19 3 2      ; R19 := R19(R20,R21)
-149 [-]: LOADBOOL  R20 0 0      ; R20 := false
+149 [-]: LOADKB    R20 0 0      ; R20 := false
 150 [-]: CALL      R14 7 1      ; R14(R15,R16,R17,R18,R19,R20)
 151 [-]: JMP       175          ; PC := 175
 152 [-]: SELF      R14 R11 K12  ; R15 := R11; R14 := R11[0xe79e7ef4]
@@ -3895,10 +3883,10 @@
 167 [-]: GETTABLE  R19 R19 R20  ; R19 := R19[R20]
 168 [-]: GETTABLE  R20 R15 K48  ; R20 := R15["id"]
 169 [-]: GETGLOBAL R21 K46      ; R21 := 0xb7cbd06b
-170 [-]: LOADK     R22 1        ; R22 := 1.000000
-171 [-]: LOADK     R23 1        ; R23 := 1.000000
+170 [-]: CONST     R22 1        ; R22 := 1.000000
+171 [-]: CONST     R23 1        ; R23 := 1.000000
 172 [-]: CALL      R21 3 2      ; R21 := R21(R22,R23)
-173 [-]: LOADBOOL  R22 0 0      ; R22 := false
+173 [-]: LOADKB    R22 0 0      ; R22 := false
 174 [-]: CALL      R16 7 1      ; R16(R17,R18,R19,R20,R21,R22)
 175 [-]: GETUPVAL  R16 U2       ; R16 := U2
 176 [-]: CALL      R16 1 1      ; R16()
@@ -3908,7 +3896,7 @@
 ; Function #46:
 ;
 ; Name:            
-; Defined at line: 1285
+; Defined at line: 1284
 ; #Upvalues:       5
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -3916,7 +3904,7 @@
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x76ea806b
   2 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0x3f3ae64c]
-  3 [-]: LOADK     R2 0         ; R2 := 0.000000
+  3 [-]: CONST     R2 0         ; R2 := 0.000000
   4 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
   5 [-]: GETGLOBAL R1 K2        ; R1 := 0x7b998233
   6 [-]: MOVE      R2 R0        ; R2 := R0
@@ -3932,7 +3920,7 @@
  16 [-]: TEST      R2 0         ; if not R2 then PC := 19
  17 [-]: JMP       19           ; PC := 19
  18 [-]: RETURN    R0 1         ; return 
- 19 [-]: LOADK     R2 0         ; R2 := 0.000000
+ 19 [-]: CONST     R2 0         ; R2 := 0.000000
  20 [-]: GETGLOBAL R3 K2        ; R3 := 0x7b998233
  21 [-]: GETGLOBAL R4 K4        ; R4 := _T
  22 [-]: GETTABLE  R4 R4 K5     ; R4 := R4["DojoMgr"]
@@ -3977,8 +3965,8 @@
  61 [-]: GETTABLE  R8 R8 K16    ; R8 := R8["DECO_AREA_APARTMENT"]
  62 [-]: EQ        1 R7 R8      ; if R7 == R8 then PC := 65
  63 [-]: JMP       65           ; PC := 65
- 64 [-]: LOADBOOL  R7 0 1       ; R7 := false; PC := 65
- 65 [-]: LOADBOOL  R7 1 0       ; R7 := true
+ 64 [-]: LOADKB    R7 0 1       ; R7 := false; PC := 65
+ 65 [-]: LOADKB    R7 1 0       ; R7 := true
  66 [-]: SELF      R8 R1 K17    ; R9 := R1; R8 := R1[0xd104f830]
  67 [-]: MOVE      R10 R6       ; R10 := R6
  68 [-]: MOVE      R11 R7       ; R11 := R7
@@ -4038,7 +4026,7 @@
 122 [-]: CALL      R10 4 1      ; R10(R11,R12,R13)
 123 [-]: SELF      R10 R8 K24   ; R11 := R8; R10 := R8[0xe4162eed]
 124 [-]: LOADK     R12 K38      ; R12 := "SetHideCountThreshold"
-125 [-]: LOADK     R13 0        ; R13 := 0.000000
+125 [-]: CONST     R13 0        ; R13 := 0.000000
 126 [-]: CALL      R10 4 1      ; R10(R11,R12,R13)
 127 [-]: SELF      R10 R8 K24   ; R11 := R8; R10 := R8[0xe4162eed]
 128 [-]: LOADK     R12 K39      ; R12 := "SetHidePriceIfOwned"
@@ -4058,7 +4046,7 @@
 142 [-]: GETUPVAL  R0 U2        ; R0 := U2
 143 [-]: GETUPVAL  R0 U3        ; R0 := U3
 144 [-]: GETUPVAL  R0 U4        ; R0 := U4
-145 [-]: SETTABLE  R11 K43 R12  ; R11["BrowseDone"] := R12
+145 [-]: SETTABLE  R11 K43 R12  ; R11[0x1be91010] := R12
 146 [-]: SELF      R11 R8 K24   ; R12 := R8; R11 := R8[0xe4162eed]
 147 [-]: LOADK     R13 K44      ; R13 := "SetCallBack"
 148 [-]: LOADK     R14 K43      ; R14 := "BrowseDone"
@@ -4068,7 +4056,7 @@
 152 [-]: GETUPVAL  R0 U1        ; R0 := U1
 153 [-]: MOVE      R0 R8        ; R0 := R8
 154 [-]: MOVE      R0 R1        ; R0 := R1
-155 [-]: SETTABLE  R11 K45 R12  ; R11["GetAllItems"] := R12
+155 [-]: SETTABLE  R11 K45 R12  ; R11[0xbcfb64ab] := R12
 156 [-]: SELF      R11 R8 K24   ; R12 := R8; R11 := R8[0xe4162eed]
 157 [-]: LOADK     R13 K46      ; R13 := "SetElementsFunction"
 158 [-]: LOADK     R14 K45      ; R14 := "GetAllItems"
@@ -4098,7 +4086,7 @@
 ; Function #46.1:
 ;
 ; Name:            
-; Defined at line: 1333
+; Defined at line: 1332
 ; #Upvalues:       5
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -4136,8 +4124,8 @@
  30 [-]: JMP       43           ; PC := 43
  31 [-]: GETUPVAL  R2 U1        ; R2 := U1
  32 [-]: GETTABLE  R2 R2 K13    ; R2 := R2[0x334af2b4]
- 33 [-]: LOADBOOL  R3 1 0       ; R3 := true
- 34 [-]: LOADBOOL  R4 0 0       ; R4 := false
+ 33 [-]: LOADKB    R3 1 0       ; R3 := true
+ 34 [-]: LOADKB    R4 0 0       ; R4 := false
  35 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
  36 [-]: TEST      R2 1         ; if R2 then PC := 43
  37 [-]: JMP       43           ; PC := 43
@@ -4156,7 +4144,7 @@
  50 [-]: JMP       55           ; PC := 55
  51 [-]: GETUPVAL  R2 U4        ; R2 := U4
  52 [-]: GETTABLE  R3 R0 K10    ; R3 := R0[1.000000]
- 53 [-]: LOADBOOL  R4 0 0       ; R4 := false
+ 53 [-]: LOADKB    R4 0 0       ; R4 := false
  54 [-]: CALL      R2 3 1       ; R2(R3,R4)
  55 [-]: RETURN    R0 1         ; return 
 
@@ -4164,7 +4152,7 @@
 ; Function #46.2:
 ;
 ; Name:            
-; Defined at line: 1359
+; Defined at line: 1358
 ; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -4174,7 +4162,7 @@
   2 [-]: GETTABLE  R0 R0 K0     ; R0 := R0[0x2c905c8f]
   3 [-]: GETUPVAL  R1 U1        ; R1 := U1
   4 [-]: GETUPVAL  R2 U2        ; R2 := U2
-  5 [-]: LOADBOOL  R3 1 0       ; R3 := true
+  5 [-]: LOADKB    R3 1 0       ; R3 := true
   6 [-]: CALL      R0 4 2       ; R0 := R0(R1,R2,R3)
   7 [-]: RETURN    R0 2         ; return R0
   8 [-]: RETURN    R0 1         ; return 
@@ -4183,7 +4171,7 @@
 ; Function #46.3:
 ;
 ; Name:            
-; Defined at line: 1367
+; Defined at line: 1366
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -4196,7 +4184,7 @@
   5 [-]: NEWTABLE  R3 0 3       ; R3 := {}
   6 [-]: GETGLOBAL R4 K3        ; R4 := 0x603636ad
   7 [-]: LOADK     R5 K4        ; R5 := "/Lotus/Language/Menu/Store_Owned"
-  8 [-]: LOADBOOL  R6 0 0       ; R6 := false
+  8 [-]: LOADKB    R6 0 0       ; R6 := false
   9 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
  10 [-]: SETTABLE  R3 K2 R4     ; R3["Name"] := R4
  11 [-]: SETTABLE  R3 K5 K6     ; R3["SortId"] := "OWNED"
@@ -4209,7 +4197,7 @@
  18 [-]: NEWTABLE  R3 0 3       ; R3 := {}
  19 [-]: GETGLOBAL R4 K3        ; R4 := 0x603636ad
  20 [-]: LOADK     R5 K8        ; R5 := "/Lotus/Language/Menu/SortBy_Name"
- 21 [-]: LOADBOOL  R6 0 0       ; R6 := false
+ 21 [-]: LOADKB    R6 0 0       ; R6 := false
  22 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
  23 [-]: SETTABLE  R3 K2 R4     ; R3["Name"] := R4
  24 [-]: SETTABLE  R3 K5 K9     ; R3["SortId"] := "NAME"
@@ -4224,7 +4212,7 @@
 ; Function #46.3.1:
 ;
 ; Name:            
-; Defined at line: 1370
+; Defined at line: 1369
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -4233,13 +4221,13 @@
   1 [-]: GETTABLE  R2 R0 K0     ; R2 := R0["PremiumPrice"]
   2 [-]: EQ        0 R2 K1      ; if R2 ~= nil then PC := 5
   3 [-]: JMP       5            ; PC := 5
-  4 [-]: LOADBOOL  R2 0 1       ; R2 := false; PC := 5
-  5 [-]: LOADBOOL  R2 1 0       ; R2 := true
+  4 [-]: LOADKB    R2 0 1       ; R2 := false; PC := 5
+  5 [-]: LOADKB    R2 1 0       ; R2 := true
   6 [-]: GETTABLE  R3 R1 K0     ; R3 := R1["PremiumPrice"]
   7 [-]: EQ        0 R3 K1      ; if R3 ~= nil then PC := 10
   8 [-]: JMP       10           ; PC := 10
-  9 [-]: LOADBOOL  R3 0 1       ; R3 := false; PC := 10
- 10 [-]: LOADBOOL  R3 1 0       ; R3 := true
+  9 [-]: LOADKB    R3 0 1       ; R3 := false; PC := 10
+ 10 [-]: LOADKB    R3 1 0       ; R3 := true
  11 [-]: EQ        1 R2 R3      ; if R2 == R3 then PC := 14
  12 [-]: JMP       14           ; PC := 14
  13 [-]: RETURN    R3 2         ; return R3
@@ -4247,8 +4235,8 @@
  15 [-]: GETTABLE  R5 R1 K2     ; R5 := R1["Name"]
  16 [-]: LT        1 R4 R5      ; if R4 < R5 then PC := 19
  17 [-]: JMP       19           ; PC := 19
- 18 [-]: LOADBOOL  R6 0 1       ; R6 := false; PC := 19
- 19 [-]: LOADBOOL  R6 1 0       ; R6 := true
+ 18 [-]: LOADKB    R6 0 1       ; R6 := false; PC := 19
+ 19 [-]: LOADKB    R6 1 0       ; R6 := true
  20 [-]: RETURN    R6 2         ; return R6
  21 [-]: RETURN    R0 1         ; return 
 
@@ -4256,7 +4244,7 @@
 ; Function #46.4:
 ;
 ; Name:            
-; Defined at line: 1389
+; Defined at line: 1388
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -4382,7 +4370,7 @@
 ; Function #47:
 ;
 ; Name:            
-; Defined at line: 1405
+; Defined at line: 1404
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -4403,7 +4391,7 @@
 ; Function #48:
 ;
 ; Name:            
-; Defined at line: 1413
+; Defined at line: 1412
 ; #Upvalues:       4
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -4434,7 +4422,7 @@
  23 [-]: JMP       28           ; PC := 28
  24 [-]: GETUPVAL  R2 U1        ; R2 := U1
  25 [-]: LOADK     R3 K10       ; R3 := ""
- 26 [-]: LOADBOOL  R4 0 0       ; R4 := false
+ 26 [-]: LOADKB    R4 0 0       ; R4 := false
  27 [-]: CALL      R2 3 1       ; R2(R3,R4)
  28 [-]: GETUPVAL  R2 U2        ; R2 := U2
  29 [-]: CALL      R2 1 1       ; R2()
@@ -4470,7 +4458,7 @@
 ; Function #49:
 ;
 ; Name:            
-; Defined at line: 1438
+; Defined at line: 1437
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -4507,7 +4495,7 @@
 ; Function #50:
 ;
 ; Name:            
-; Defined at line: 1449
+; Defined at line: 1448
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -4611,7 +4599,7 @@
 ; Function #51:
 ;
 ; Name:            
-; Defined at line: 1477
+; Defined at line: 1476
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -4651,7 +4639,7 @@
 ; Function #52:
 ;
 ; Name:            
-; Defined at line: 1486
+; Defined at line: 1485
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -4717,9 +4705,9 @@
  58 [-]: GETGLOBAL R6 K17       ; R6 := gShipDecoItemType
  59 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
  60 [-]: LOADNIL   R5 R5        ; R5 := nil
- 61 [-]: LOADK     R6 1         ; R6 := 1.000000
+ 61 [-]: CONST     R6 1         ; R6 := 1.000000
  62 [-]: LEN       R7 R4        ; R7 := # R4
- 63 [-]: LOADK     R8 1         ; R8 := 1.000000
+ 63 [-]: CONST     R8 1         ; R8 := 1.000000
  64 [-]: FORPREP   R6 79        ; R6 -= R8; PC := 79
  65 [-]: GETTABLE  R10 R4 R9    ; R10 := R4[R9]
  66 [-]: SELF      R10 R10 K18  ; R11 := R10; R10 := R10[0x656c098f]
@@ -4753,16 +4741,16 @@
 ; Function #53:
 ;
 ; Name:            
-; Defined at line: 1522
+; Defined at line: 1521
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
 ; Max Stack Size:  14
 
-  1 [-]: LOADK     R2 1         ; R2 := 1.000000
-  2 [-]: LOADBOOL  R3 0 0       ; R3 := false
+  1 [-]: CONST     R2 1         ; R2 := 1.000000
+  2 [-]: LOADKB    R3 0 0       ; R3 := false
   3 [-]: LOADNIL   R4 R4        ; R4 := nil
-  4 [-]: LOADK     R5 4         ; R5 := 4.000000
+  4 [-]: CONST     R5 4         ; R5 := 4.000000
   5 [-]: GETGLOBAL R6 K1        ; R6 := 0xbe190284
   6 [-]: SELF      R6 R6 K2     ; R7 := R6; R6 := R6[0x99f38c13]
   7 [-]: CALL      R6 2 2       ; R6 := R6(R7)
@@ -4781,21 +4769,21 @@
  20 [-]: CALL      R8 2 2       ; R8 := R8(R9)
  21 [-]: TEST      R8 0         ; if not R8 then PC := 29
  22 [-]: JMP       29           ; PC := 29
- 23 [-]: LOADK     R2 2         ; R2 := 2.000000
+ 23 [-]: CONST     R2 2         ; R2 := 2.000000
  24 [-]: GETGLOBAL R8 K5        ; R8 := _T
  25 [-]: GETTABLE  R8 R8 K6     ; R8 := R8["DojoMgr"]
  26 [-]: GETTABLE  R4 R8 K7     ; R4 := R8["mDecoConstructionQueuedMaterialOverride"]
- 27 [-]: LOADK     R5 2         ; R5 := 2.000000
+ 27 [-]: CONST     R5 2         ; R5 := 2.000000
  28 [-]: JMP       38           ; PC := 38
  29 [-]: SELF      R8 R6 K8     ; R9 := R6; R8 := R6[0x04de00e9]
  30 [-]: CALL      R8 2 2       ; R8 := R8(R9)
  31 [-]: TEST      R8 0         ; if not R8 then PC := 38
  32 [-]: JMP       38           ; PC := 38
- 33 [-]: LOADK     R2 2         ; R2 := 2.000000
+ 33 [-]: CONST     R2 2         ; R2 := 2.000000
  34 [-]: GETGLOBAL R8 K5        ; R8 := _T
  35 [-]: GETTABLE  R8 R8 K6     ; R8 := R8["DojoMgr"]
  36 [-]: GETTABLE  R4 R8 K9     ; R4 := R8["mDecoUnderConstructionMaterialOverride"]
- 37 [-]: LOADK     R5 3         ; R5 := 3.000000
+ 37 [-]: CONST     R5 3         ; R5 := 3.000000
  38 [-]: SELF      R8 R0 K10    ; R9 := R0; R8 := R0[0x5acae14c]
  39 [-]: MOVE      R10 R5       ; R10 := R5
  40 [-]: MOVE      R11 R2       ; R11 := R2
@@ -4825,7 +4813,7 @@
 ; Function #54:
 ;
 ; Name:            
-; Defined at line: 1547
+; Defined at line: 1546
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -4898,7 +4886,7 @@
 ; Function #55:
 ;
 ; Name:            
-; Defined at line: 1578
+; Defined at line: 1577
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -4922,7 +4910,7 @@
 ; Function #56:
 ;
 ; Name:            
-; Defined at line: 1585
+; Defined at line: 1584
 ; #Upvalues:       3
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -4948,7 +4936,7 @@
  18 [-]: LOADNIL   R3 R3        ; R3 := nil
  19 [-]: LOADK     R4 K9        ; R4 := "/Lotus/Language/Dojo/NameDeco"
  20 [-]: MOVE      R5 R1        ; R5 := R1
- 21 [-]: LOADK     R6 40        ; R6 := 40.000000
+ 21 [-]: CONST     R6 40        ; R6 := 40.000000
  22 [-]: LOADK     R7 K10       ; R7 := "OnDecoNamed"
  23 [-]: LOADK     R8 K11       ; R8 := "OSKOnPlacedDecoNamed"
  24 [-]: CALL      R2 7 1       ; R2(R3,R4,R5,R6,R7,R8)
@@ -4970,7 +4958,7 @@
  40 [-]: GETGLOBAL R4 K17       ; R4 := 0xae91e43b
  41 [-]: SELF      R4 R4 K18    ; R5 := R4; R4 := R4[0x42b04007]
  42 [-]: LOADK     R6 K19       ; R6 := "/Lotus/Language/Menu/SocialOverlay_InvalidCharacter"
- 43 [-]: LOADBOOL  R7 0 0       ; R7 := false
+ 43 [-]: LOADKB    R7 0 0       ; R7 := false
  44 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
  45 [-]: GETGLOBAL R5 K20       ; R5 := 0x68b0afb4
  46 [-]: MOVE      R6 R1        ; R6 := R1
@@ -4984,7 +4972,7 @@
  54 [-]: LOADNIL   R4 R4        ; R4 := nil
  55 [-]: LOADK     R5 K9        ; R5 := "/Lotus/Language/Dojo/NameDeco"
  56 [-]: MOVE      R6 R1        ; R6 := R1
- 57 [-]: LOADK     R7 40        ; R7 := 40.000000
+ 57 [-]: CONST     R7 40        ; R7 := 40.000000
  58 [-]: LOADK     R8 K10       ; R8 := "OnDecoNamed"
  59 [-]: LOADK     R9 K11       ; R9 := "OSKOnPlacedDecoNamed"
  60 [-]: CALL      R3 7 1       ; R3(R4,R5,R6,R7,R8,R9)
@@ -5015,7 +5003,7 @@
  85 [-]: LOADNIL   R5 R5        ; R5 := nil
  86 [-]: LOADK     R6 K9        ; R6 := "/Lotus/Language/Dojo/NameDeco"
  87 [-]: MOVE      R7 R1        ; R7 := R1
- 88 [-]: LOADK     R8 40        ; R8 := 40.000000
+ 88 [-]: CONST     R8 40        ; R8 := 40.000000
  89 [-]: LOADK     R9 K10       ; R9 := "OnDecoNamed"
  90 [-]: LOADK     R10 K11      ; R10 := "OSKOnPlacedDecoNamed"
  91 [-]: CALL      R4 7 1       ; R4(R5,R6,R7,R8,R9,R10)
@@ -5028,7 +5016,7 @@
  98 [-]: MOVE      R1 R4        ; R1 := R4
  99 [-]: GETGLOBAL R4 K27       ; R4 := 0x09423272
 100 [-]: MOVE      R5 R1        ; R5 := R1
-101 [-]: LOADK     R6 0         ; R6 := 0.000000
+101 [-]: CONST     R6 0         ; R6 := 0.000000
 102 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
 103 [-]: EQ        1 R4 R1      ; if R4 == R1 then PC := 119
 104 [-]: JMP       119          ; PC := 119
@@ -5041,7 +5029,7 @@
 111 [-]: LOADNIL   R6 R6        ; R6 := nil
 112 [-]: LOADK     R7 K9        ; R7 := "/Lotus/Language/Dojo/NameDeco"
 113 [-]: MOVE      R8 R1        ; R8 := R1
-114 [-]: LOADK     R9 40        ; R9 := 40.000000
+114 [-]: CONST     R9 40        ; R9 := 40.000000
 115 [-]: LOADK     R10 K10      ; R10 := "OnDecoNamed"
 116 [-]: LOADK     R11 K11      ; R11 := "OSKOnPlacedDecoNamed"
 117 [-]: CALL      R5 7 1       ; R5(R6,R7,R8,R9,R10,R11)
@@ -5051,15 +5039,15 @@
 121 [-]: GETTABLE  R5 R5 K30    ; R5 := R5["mDojo"]
 122 [-]: SELF      R5 R5 K31    ; R6 := R5; R5 := R5[0x43c3090e]
 123 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-124 [-]: LOADK     R6 1         ; R6 := 1.000000
+124 [-]: CONST     R6 1         ; R6 := 1.000000
 125 [-]: LEN       R7 R5        ; R7 := # R5
-126 [-]: LOADK     R8 1         ; R8 := 1.000000
+126 [-]: CONST     R8 1         ; R8 := 1.000000
 127 [-]: FORPREP   R6 153       ; R6 -= R8; PC := 153
 128 [-]: GETTABLE  R10 R5 R9    ; R10 := R5[R9]
 129 [-]: GETTABLE  R10 R10 K32  ; R10 := R10["placedDecos"]
-130 [-]: LOADK     R11 1        ; R11 := 1.000000
+130 [-]: CONST     R11 1        ; R11 := 1.000000
 131 [-]: LEN       R12 R10      ; R12 := # R10
-132 [-]: LOADK     R13 1        ; R13 := 1.000000
+132 [-]: CONST     R13 1        ; R13 := 1.000000
 133 [-]: FORPREP   R11 152      ; R11 -= R13; PC := 152
 134 [-]: GETTABLE  R15 R10 R14  ; R15 := R10[R14]
 135 [-]: GETTABLE  R15 R15 K33  ; R15 := R15["name"]
@@ -5074,7 +5062,7 @@
 144 [-]: LOADNIL   R16 R16      ; R16 := nil
 145 [-]: LOADK     R17 K9       ; R17 := "/Lotus/Language/Dojo/NameDeco"
 146 [-]: MOVE      R18 R1       ; R18 := R1
-147 [-]: LOADK     R19 40       ; R19 := 40.000000
+147 [-]: CONST     R19 40       ; R19 := 40.000000
 148 [-]: LOADK     R20 K10      ; R20 := "OnDecoNamed"
 149 [-]: LOADK     R21 K11      ; R21 := "OSKOnPlacedDecoNamed"
 150 [-]: CALL      R15 7 1      ; R15(R16,R17,R18,R19,R20,R21)
@@ -5111,14 +5099,14 @@
 ; Function #57:
 ;
 ; Name:            
-; Defined at line: 1649
+; Defined at line: 1648
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
 ; Max Stack Size:  5
 
   1 [-]: GETUPVAL  R2 U0        ; R2 := U0
-  2 [-]: NOT       R3 R0        ; R3 := not R0
+  2 [-]: NOT       R3 R0        ; R3 :=  R0
   3 [-]: MOVE      R4 R1        ; R4 := R1
   4 [-]: CALL      R2 3 1       ; R2(R3,R4)
   5 [-]: RETURN    R0 1         ; return 
@@ -5127,8 +5115,8 @@
 ; Function #58:
 ;
 ; Name:            
-; Defined at line: 1653
-; #Upvalues:       6
+; Defined at line: 1652
+; #Upvalues:       7
 ; #Parameters:     3
 ; Is_vararg:       0
 ; Max Stack Size:  17
@@ -5168,7 +5156,7 @@
  33 [-]: GETGLOBAL R6 K1        ; R6 := _T
  34 [-]: GETTABLE  R6 R6 K4     ; R6 := R6["ComponentParams"]
  35 [-]: GETTABLE  R6 R6 K7     ; R6 := R6["id"]
- 36 [-]: LOADBOOL  R7 0 0       ; R7 := false
+ 36 [-]: LOADKB    R7 0 0       ; R7 := false
  37 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
  38 [-]: JMP       133          ; PC := 133
  39 [-]: GETGLOBAL R3 K0        ; R3 := 0x7b998233
@@ -5262,7 +5250,7 @@
 127 [-]: JMP       132          ; PC := 132
 128 [-]: GETUPVAL  R6 U0        ; R6 := U0
 129 [-]: MOVE      R7 R3        ; R7 := R3
-130 [-]: LOADBOOL  R8 0 0       ; R8 := false
+130 [-]: LOADKB    R8 0 0       ; R8 := false
 131 [-]: CALL      R6 3 1       ; R6(R7,R8)
 132 [-]: CLOSE     R3           ; SAVE R3,...
 133 [-]: RETURN    R0 1         ; return 
@@ -5280,332 +5268,305 @@
 145 [-]: CALL      R3 3 3       ; R3,R4 := R3(R4,R5)
 146 [-]: EQ        1 R1 K39     ; if R1 == "" then PC := 158
 147 [-]: JMP       158          ; PC := 158
-148 [-]: EQ        1 R3 K19     ; if R3 == nil then PC := 298
-149 [-]: JMP       298          ; PC := 298
+148 [-]: EQ        1 R3 K19     ; if R3 == nil then PC := 271
+149 [-]: JMP       271          ; PC := 271
 150 [-]: SELF      R5 R3 K40    ; R6 := R3; R5 := R3[0x3ae915ba]
 151 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-152 [-]: TEST      R5 1         ; if R5 then PC := 298
-153 [-]: JMP       298          ; PC := 298
+152 [-]: TEST      R5 1         ; if R5 then PC := 271
+153 [-]: JMP       271          ; PC := 271
 154 [-]: SELF      R5 R3 K41    ; R6 := R3; R5 := R3[0x04de00e9]
 155 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-156 [-]: TEST      R5 1         ; if R5 then PC := 298
-157 [-]: JMP       298          ; PC := 298
-158 [-]: TEST      R2 0         ; if not R2 then PC := 277
-159 [-]: JMP       277          ; PC := 277
+156 [-]: TEST      R5 1         ; if R5 then PC := 271
+157 [-]: JMP       271          ; PC := 271
+158 [-]: TEST      R2 0         ; if not R2 then PC := 250
+159 [-]: JMP       250          ; PC := 250
 160 [-]: SELF      R5 R0 K42    ; R6 := R0; R5 := R0[0xf2deaf69]
 161 [-]: GETGLOBAL R7 K43       ; R7 := 0xeaa9b878
 162 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
-163 [-]: TEST      R5 0         ; if not R5 then PC := 180
-164 [-]: JMP       180          ; PC := 180
+163 [-]: TEST      R5 0         ; if not R5 then PC := 171
+164 [-]: JMP       171          ; PC := 171
 165 [-]: GETGLOBAL R5 K1        ; R5 := _T
 166 [-]: SETTABLE  R5 K44 R0    ; R5["FragmentViewerDeco"] := R0
-167 [-]: GETGLOBAL R5 K0        ; R5 := 0x7b998233
-168 [-]: GETGLOBAL R6 K1        ; R6 := _T
-169 [-]: GETTABLE  R6 R6 K45    ; R6 := R6["BackgroundMovie"]
-170 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-171 [-]: TEST      R5 1         ; if R5 then PC := 275
-172 [-]: JMP       275          ; PC := 275
-173 [-]: GETGLOBAL R5 K1        ; R5 := _T
-174 [-]: GETTABLE  R5 R5 K45    ; R5 := R5["BackgroundMovie"]
-175 [-]: SELF      R5 R5 K46    ; R6 := R5; R5 := R5[0xe4162eed]
-176 [-]: LOADK     R7 K47       ; R7 := "ShowFragmentScreen"
-177 [-]: LOADK     R8 K39       ; R8 := ""
-178 [-]: CALL      R5 4 1       ; R5(R6,R7,R8)
-179 [-]: JMP       275          ; PC := 275
-180 [-]: SELF      R5 R0 K42    ; R6 := R0; R5 := R0[0xf2deaf69]
-181 [-]: GETGLOBAL R7 K48       ; R7 := 0xaeffd5d2
-182 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
-183 [-]: TEST      R5 0         ; if not R5 then PC := 200
-184 [-]: JMP       200          ; PC := 200
-185 [-]: GETGLOBAL R5 K1        ; R5 := _T
-186 [-]: SETTABLE  R5 K49 R0    ; R5["ActionFigureDeco"] := R0
-187 [-]: GETGLOBAL R5 K0        ; R5 := 0x7b998233
-188 [-]: GETGLOBAL R6 K1        ; R6 := _T
-189 [-]: GETTABLE  R6 R6 K45    ; R6 := R6["BackgroundMovie"]
-190 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-191 [-]: TEST      R5 1         ; if R5 then PC := 275
-192 [-]: JMP       275          ; PC := 275
-193 [-]: GETGLOBAL R5 K1        ; R5 := _T
-194 [-]: GETTABLE  R5 R5 K45    ; R5 := R5["BackgroundMovie"]
-195 [-]: SELF      R5 R5 K46    ; R6 := R5; R5 := R5[0xe4162eed]
-196 [-]: LOADK     R7 K50       ; R7 := "ShowActionFigureScreen"
-197 [-]: LOADK     R8 K39       ; R8 := ""
-198 [-]: CALL      R5 4 1       ; R5(R6,R7,R8)
-199 [-]: JMP       275          ; PC := 275
-200 [-]: SELF      R5 R0 K42    ; R6 := R0; R5 := R0[0xf2deaf69]
-201 [-]: GETGLOBAL R7 K51       ; R7 := 0xb5c20330
-202 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
-203 [-]: TEST      R5 0         ; if not R5 then PC := 232
-204 [-]: JMP       232          ; PC := 232
-205 [-]: GETGLOBAL R5 K1        ; R5 := _T
-206 [-]: SETTABLE  R5 K52 R0    ; R5["LightDeco"] := R0
-207 [-]: SELF      R5 R0 K42    ; R6 := R0; R5 := R0[0xf2deaf69]
-208 [-]: GETGLOBAL R7 K53       ; R7 := 0x33201ebb
-209 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
-210 [-]: TEST      R5 0         ; if not R5 then PC := 217
-211 [-]: JMP       217          ; PC := 217
-212 [-]: GETGLOBAL R5 K1        ; R5 := _T
-213 [-]: SELF      R6 R0 K55    ; R7 := R0; R6 := R0[0x801404d2]
-214 [-]: CALL      R6 2 2       ; R6 := R6(R7)
-215 [-]: SETTABLE  R5 K54 R6    ; R5["TextLightMovie"] := R6
-216 [-]: JMP       219          ; PC := 219
-217 [-]: GETGLOBAL R5 K1        ; R5 := _T
-218 [-]: SETTABLE  R5 K54 K19   ; R5["TextLightMovie"] := nil
-219 [-]: GETGLOBAL R5 K0        ; R5 := 0x7b998233
-220 [-]: GETGLOBAL R6 K1        ; R6 := _T
-221 [-]: GETTABLE  R6 R6 K45    ; R6 := R6["BackgroundMovie"]
-222 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-223 [-]: TEST      R5 1         ; if R5 then PC := 275
-224 [-]: JMP       275          ; PC := 275
+167 [-]: GETUPVAL  R5 U5        ; R5 := U5
+168 [-]: GETTABLE  R5 R5 K45    ; R5 := R5[0x70db5c9f]
+169 [-]: CALL      R5 1 1       ; R5()
+170 [-]: JMP       248          ; PC := 248
+171 [-]: SELF      R5 R0 K42    ; R6 := R0; R5 := R0[0xf2deaf69]
+172 [-]: GETGLOBAL R7 K46       ; R7 := 0xaeffd5d2
+173 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
+174 [-]: TEST      R5 0         ; if not R5 then PC := 182
+175 [-]: JMP       182          ; PC := 182
+176 [-]: GETGLOBAL R5 K1        ; R5 := _T
+177 [-]: SETTABLE  R5 K47 R0    ; R5["ActionFigureDeco"] := R0
+178 [-]: GETUPVAL  R5 U5        ; R5 := U5
+179 [-]: GETTABLE  R5 R5 K48    ; R5 := R5[0xe276c7e1]
+180 [-]: CALL      R5 1 1       ; R5()
+181 [-]: JMP       248          ; PC := 248
+182 [-]: SELF      R5 R0 K42    ; R6 := R0; R5 := R0[0xf2deaf69]
+183 [-]: GETGLOBAL R7 K49       ; R7 := 0xb5c20330
+184 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
+185 [-]: TEST      R5 0         ; if not R5 then PC := 205
+186 [-]: JMP       205          ; PC := 205
+187 [-]: GETGLOBAL R5 K1        ; R5 := _T
+188 [-]: SETTABLE  R5 K50 R0    ; R5["LightDeco"] := R0
+189 [-]: SELF      R5 R0 K42    ; R6 := R0; R5 := R0[0xf2deaf69]
+190 [-]: GETGLOBAL R7 K51       ; R7 := 0x33201ebb
+191 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
+192 [-]: TEST      R5 0         ; if not R5 then PC := 199
+193 [-]: JMP       199          ; PC := 199
+194 [-]: GETGLOBAL R5 K1        ; R5 := _T
+195 [-]: SELF      R6 R0 K53    ; R7 := R0; R6 := R0[0x801404d2]
+196 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+197 [-]: SETTABLE  R5 K52 R6    ; R5["TextLightMovie"] := R6
+198 [-]: JMP       201          ; PC := 201
+199 [-]: GETGLOBAL R5 K1        ; R5 := _T
+200 [-]: SETTABLE  R5 K52 K19   ; R5["TextLightMovie"] := nil
+201 [-]: GETUPVAL  R5 U5        ; R5 := U5
+202 [-]: GETTABLE  R5 R5 K54    ; R5 := R5[0x21de2936]
+203 [-]: CALL      R5 1 1       ; R5()
+204 [-]: JMP       248          ; PC := 248
+205 [-]: SELF      R5 R0 K42    ; R6 := R0; R5 := R0[0xf2deaf69]
+206 [-]: GETGLOBAL R7 K51       ; R7 := 0x33201ebb
+207 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
+208 [-]: TEST      R5 0         ; if not R5 then PC := 215
+209 [-]: JMP       215          ; PC := 215
+210 [-]: GETGLOBAL R5 K1        ; R5 := _T
+211 [-]: SELF      R6 R0 K53    ; R7 := R0; R6 := R0[0x801404d2]
+212 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+213 [-]: SETTABLE  R5 K52 R6    ; R5["TextLightMovie"] := R6
+214 [-]: JMP       248          ; PC := 248
+215 [-]: SELF      R5 R0 K55    ; R6 := R0; R5 := R0[0x4d1eaf2d]
+216 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+217 [-]: TEST      R5 0         ; if not R5 then PC := 242
+218 [-]: JMP       242          ; PC := 242
+219 [-]: GETGLOBAL R5 K1        ; R5 := _T
+220 [-]: SETTABLE  R5 K52 K19   ; R5["TextLightMovie"] := nil
+221 [-]: GETGLOBAL R5 K1        ; R5 := _T
+222 [-]: CLOSURE   R6 1         ; R6 := closure(Function #58.2)
+223 [-]: GETUPVAL  R0 U6        ; R0 := U6
+224 [-]: SETTABLE  R5 K56 R6    ; R5["OnDecoNamed"] := R6
 225 [-]: GETGLOBAL R5 K1        ; R5 := _T
-226 [-]: GETTABLE  R5 R5 K45    ; R5 := R5["BackgroundMovie"]
-227 [-]: SELF      R5 R5 K46    ; R6 := R5; R5 := R5[0xe4162eed]
-228 [-]: LOADK     R7 K56       ; R7 := "ShowLightCustScreen"
-229 [-]: LOADK     R8 K39       ; R8 := ""
-230 [-]: CALL      R5 4 1       ; R5(R6,R7,R8)
-231 [-]: JMP       275          ; PC := 275
-232 [-]: SELF      R5 R0 K42    ; R6 := R0; R5 := R0[0xf2deaf69]
-233 [-]: GETGLOBAL R7 K53       ; R7 := 0x33201ebb
-234 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
-235 [-]: TEST      R5 0         ; if not R5 then PC := 242
-236 [-]: JMP       242          ; PC := 242
-237 [-]: GETGLOBAL R5 K1        ; R5 := _T
-238 [-]: SELF      R6 R0 K55    ; R7 := R0; R6 := R0[0x801404d2]
-239 [-]: CALL      R6 2 2       ; R6 := R6(R7)
-240 [-]: SETTABLE  R5 K54 R6    ; R5["TextLightMovie"] := R6
-241 [-]: JMP       275          ; PC := 275
-242 [-]: SELF      R5 R0 K57    ; R6 := R0; R5 := R0[0x4d1eaf2d]
-243 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-244 [-]: TEST      R5 0         ; if not R5 then PC := 269
-245 [-]: JMP       269          ; PC := 269
-246 [-]: GETGLOBAL R5 K1        ; R5 := _T
-247 [-]: SETTABLE  R5 K54 K19   ; R5["TextLightMovie"] := nil
-248 [-]: GETGLOBAL R5 K1        ; R5 := _T
-249 [-]: CLOSURE   R6 1         ; R6 := closure(Function #58.2)
-250 [-]: GETUPVAL  R0 U5        ; R0 := U5
-251 [-]: SETTABLE  R5 K58 R6    ; R5["OnDecoNamed"] := R6
-252 [-]: GETGLOBAL R5 K1        ; R5 := _T
-253 [-]: GETTABLE  R5 R5 K5     ; R5 := R5["DojoMgr"]
-254 [-]: SETTABLE  R5 K59 R0    ; R5["mPendingDecoToPlace"] := R0
-255 [-]: GETGLOBAL R5 K1        ; R5 := _T
-256 [-]: GETTABLE  R5 R5 K5     ; R5 := R5["DojoMgr"]
-257 [-]: SETTABLE  R5 K60 R4    ; R5["mPendingDecoComponentId"] := R4
-258 [-]: GETUPVAL  R5 U3        ; R5 := U3
-259 [-]: GETTABLE  R5 R5 K61    ; R5 := R5[0xef3e3165]
-260 [-]: LOADNIL   R6 R6        ; R6 := nil
-261 [-]: LOADK     R7 K62       ; R7 := "/Lotus/Language/Dojo/NameDeco"
-262 [-]: SELF      R8 R0 K63    ; R9 := R0; R8 := R0[0xe223e2b1]
-263 [-]: CALL      R8 2 2       ; R8 := R8(R9)
-264 [-]: LOADK     R9 40        ; R9 := 40.000000
-265 [-]: LOADK     R10 K58      ; R10 := "OnDecoNamed"
-266 [-]: LOADK     R11 K64      ; R11 := "OSKOnPlacedDecoNamed"
-267 [-]: CALL      R5 7 1       ; R5(R6,R7,R8,R9,R10,R11)
-268 [-]: JMP       275          ; PC := 275
-269 [-]: GETGLOBAL R5 K1        ; R5 := _T
-270 [-]: SETTABLE  R5 K54 K19   ; R5["TextLightMovie"] := nil
-271 [-]: GETUPVAL  R5 U2        ; R5 := U2
-272 [-]: GETTABLE  R5 R5 K65    ; R5 := R5[0xe0cba3ca]
-273 [-]: LOADK     R6 K66       ; R6 := "/Lotus/Language/UiElements/ShipDecoCantEdit"
-274 [-]: CALL      R5 2 1       ; R5(R6)
-275 [-]: RETURN    R0 1         ; return 
-276 [-]: JMP       298          ; PC := 298
-277 [-]: EQ        0 R1 K39     ; if R1 ~= "" then PC := 298
-278 [-]: JMP       298          ; PC := 298
-279 [-]: GETGLOBAL R5 K0        ; R5 := 0x7b998233
-280 [-]: GETGLOBAL R6 K1        ; R6 := _T
-281 [-]: GETTABLE  R6 R6 K67    ; R6 := R6["ShipDecoToRemove"]
-282 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-283 [-]: TEST      R5 0         ; if not R5 then PC := 297
-284 [-]: JMP       297          ; PC := 297
-285 [-]: GETGLOBAL R5 K0        ; R5 := 0x7b998233
-286 [-]: MOVE      R6 R0        ; R6 := R0
-287 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-288 [-]: TEST      R5 1         ; if R5 then PC := 297
-289 [-]: JMP       297          ; PC := 297
-290 [-]: GETGLOBAL R5 K1        ; R5 := _T
-291 [-]: SETTABLE  R5 K67 R0    ; R5["ShipDecoToRemove"] := R0
-292 [-]: GETUPVAL  R5 U2        ; R5 := U2
-293 [-]: GETTABLE  R5 R5 K68    ; R5 := R5[0xf616a184]
-294 [-]: LOADK     R6 K69       ; R6 := "/Lotus/Language/UiElements/RemoveShipDecoConfirm"
-295 [-]: LOADK     R7 K70       ; R7 := "RemoveDecorationInShipConfirmResult"
-296 [-]: CALL      R5 3 1       ; R5(R6,R7)
-297 [-]: RETURN    R0 1         ; return 
-298 [-]: GETGLOBAL R5 K0        ; R5 := 0x7b998233
-299 [-]: MOVE      R6 R3        ; R6 := R3
-300 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-301 [-]: TEST      R5 1         ; if R5 then PC := 467
-302 [-]: JMP       467          ; PC := 467
-303 [-]: SELF      R5 R3 K71    ; R6 := R3; R5 := R3[0x56c01834]
-304 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-305 [-]: TEST      R5 0         ; if not R5 then PC := 467
-306 [-]: JMP       467          ; PC := 467
-307 [-]: LOADNIL   R5 R5        ; R5 := nil
-308 [-]: GETGLOBAL R6 K72       ; R6 := 0xb009bbc6
-309 [-]: GETGLOBAL R7 K73       ; R7 := 0x59462acb
-310 [-]: CALL      R6 2 2       ; R6 := R6(R7)
-311 [-]: SELF      R7 R6 K74    ; R8 := R6; R7 := R6[0x1cf7e604]
-312 [-]: GETTABLE  R9 R3 K75    ; R9 := R3["decoType"]
-313 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
-314 [-]: TEST      R2 0         ; if not R2 then PC := 348
-315 [-]: JMP       348          ; PC := 348
-316 [-]: GETGLOBAL R8 K0        ; R8 := 0x7b998233
-317 [-]: MOVE      R9 R7        ; R9 := R7
-318 [-]: CALL      R8 2 2       ; R8 := R8(R9)
-319 [-]: TEST      R8 1         ; if R8 then PC := 339
-320 [-]: JMP       339          ; PC := 339
-321 [-]: SELF      R8 R3 K40    ; R9 := R3; R8 := R3[0x3ae915ba]
-322 [-]: CALL      R8 2 2       ; R8 := R8(R9)
-323 [-]: TEST      R8 0         ; if not R8 then PC := 330
-324 [-]: JMP       330          ; PC := 330
-325 [-]: GETGLOBAL R8 K72       ; R8 := 0xb009bbc6
-326 [-]: GETGLOBAL R9 K76       ; R9 := 0x5e9a35db
-327 [-]: CALL      R8 2 2       ; R8 := R8(R9)
-328 [-]: MOVE      R5 R8        ; R5 := R8
-329 [-]: JMP       433          ; PC := 433
-330 [-]: SELF      R8 R3 K41    ; R9 := R3; R8 := R3[0x04de00e9]
-331 [-]: CALL      R8 2 2       ; R8 := R8(R9)
-332 [-]: TEST      R8 0         ; if not R8 then PC := 433
-333 [-]: JMP       433          ; PC := 433
-334 [-]: GETGLOBAL R8 K72       ; R8 := 0xb009bbc6
-335 [-]: GETGLOBAL R9 K77       ; R9 := 0x225828fd
-336 [-]: CALL      R8 2 2       ; R8 := R8(R9)
-337 [-]: MOVE      R5 R8        ; R5 := R8
-338 [-]: JMP       433          ; PC := 433
-339 [-]: GETGLOBAL R8 K37       ; R8 := 0x3d106989
-340 [-]: LOADK     R9 K78       ; R9 := "Could not find recipe for "
-341 [-]: GETTABLE  R10 R3 K75   ; R10 := R3["decoType"]
-342 [-]: SELF      R10 R10 K79  ; R11 := R10; R10 := R10[0xed4e0128]
-343 [-]: CALL      R10 2 2      ; R10 := R10(R11)
-344 [-]: LOADK     R11 K80      ; R11 := "; probably a ship deco that just got placed?"
-345 [-]: CONCAT    R9 R9 R11    ; R9 := R9 .. R10 .. R11
-346 [-]: CALL      R8 2 1       ; R8(R9)
-347 [-]: JMP       433          ; PC := 433
-348 [-]: GETGLOBAL R8 K30       ; R8 := 0x9ba7909f
-349 [-]: SELF      R8 R8 K31    ; R9 := R8; R8 := R8[0xcfba257f]
-350 [-]: GETGLOBAL R10 K81      ; R10 := 0x3255839e
-351 [-]: CALL      R8 3 1       ; R8(R9,R10)
-352 [-]: GETUPVAL  R8 U3        ; R8 := U3
-353 [-]: GETTABLE  R8 R8 K82    ; R8 := R8[0x334af2b4]
-354 [-]: LOADBOOL  R9 1 0       ; R9 := true
-355 [-]: CALL      R8 2 2       ; R8 := R8(R9)
-356 [-]: TEST      R8 0         ; if not R8 then PC := 429
-357 [-]: JMP       429          ; PC := 429
-358 [-]: GETGLOBAL R9 K1        ; R9 := _T
-359 [-]: GETTABLE  R9 R9 K5     ; R9 := R9["DojoMgr"]
-360 [-]: SETTABLE  R9 K83 R0    ; R9["mPendingDestroyDeco"] := R0
-361 [-]: GETGLOBAL R9 K1        ; R9 := _T
-362 [-]: GETTABLE  R9 R9 K5     ; R9 := R9["DojoMgr"]
-363 [-]: SETTABLE  R9 K84 R4    ; R9["mPendingDestroyDecoComponentId"] := R4
-364 [-]: SELF      R9 R3 K40    ; R10 := R3; R9 := R3[0x3ae915ba]
-365 [-]: CALL      R9 2 2       ; R9 := R9(R10)
-366 [-]: TEST      R9 0         ; if not R9 then PC := 374
-367 [-]: JMP       374          ; PC := 374
-368 [-]: GETUPVAL  R9 U2        ; R9 := U2
-369 [-]: GETTABLE  R9 R9 K68    ; R9 := R9[0xf616a184]
-370 [-]: LOADK     R10 K85      ; R10 := "/Lotus/Language/Dojo/CancelDecoConfirmation"
-371 [-]: LOADK     R11 K86      ; R11 := "AbortDecorationConfirmResult"
-372 [-]: CALL      R9 3 1       ; R9(R10,R11)
-373 [-]: JMP       433          ; PC := 433
-374 [-]: GETGLOBAL R9 K0        ; R9 := 0x7b998233
-375 [-]: MOVE      R10 R7       ; R10 := R7
-376 [-]: CALL      R9 2 2       ; R9 := R9(R10)
-377 [-]: TEST      R9 1         ; if R9 then PC := 421
-378 [-]: JMP       421          ; PC := 421
-379 [-]: SELF      R9 R7 K87    ; R10 := R7; R9 := R7[0x05af28f3]
-380 [-]: CALL      R9 2 2       ; R9 := R9(R10)
-381 [-]: EQ        0 R9 K88     ; if R9 ~= 0.000000 then PC := 398
-382 [-]: JMP       398          ; PC := 398
-383 [-]: SELF      R9 R7 K89    ; R10 := R7; R9 := R7[0x7e366333]
-384 [-]: CALL      R9 2 2       ; R9 := R9(R10)
-385 [-]: EQ        0 R9 K88     ; if R9 ~= 0.000000 then PC := 398
-386 [-]: JMP       398          ; PC := 398
-387 [-]: SELF      R9 R7 K90    ; R10 := R7; R9 := R7[0x024d3816]
-388 [-]: CALL      R9 2 2       ; R9 := R9(R10)
-389 [-]: LEN       R9 R9        ; R9 := # R9
-390 [-]: EQ        0 R9 K88     ; if R9 ~= 0.000000 then PC := 398
-391 [-]: JMP       398          ; PC := 398
-392 [-]: GETUPVAL  R9 U2        ; R9 := U2
-393 [-]: GETTABLE  R9 R9 K68    ; R9 := R9[0xf616a184]
-394 [-]: LOADK     R10 K91      ; R10 := "/Lotus/Language/Dojo/DecoDestroyConfirm"
-395 [-]: LOADK     R11 K92      ; R11 := "DestroyDecorationConfirmResult"
-396 [-]: CALL      R9 3 1       ; R9(R10,R11)
-397 [-]: JMP       433          ; PC := 433
-398 [-]: SELF      R9 R7 K93    ; R10 := R7; R9 := R7[0xe6a4276c]
-399 [-]: CALL      R9 2 2       ; R9 := R9(R10)
-400 [-]: EQ        0 R9 K20     ; if R9 ~= 1.000000 then PC := 408
-401 [-]: JMP       408          ; PC := 408
-402 [-]: GETUPVAL  R10 U2       ; R10 := U2
-403 [-]: GETTABLE  R10 R10 K68  ; R10 := R10[0xf616a184]
-404 [-]: LOADK     R11 K94      ; R11 := "/Lotus/Language/Dojo/DecoDestroyConfirmToVaultFullRefund"
-405 [-]: LOADK     R12 K92      ; R12 := "DestroyDecorationConfirmResult"
-406 [-]: CALL      R10 3 1      ; R10(R11,R12)
-407 [-]: JMP       433          ; PC := 433
-408 [-]: NEWTABLE  R10 0 1      ; R10 := {}
-409 [-]: MUL       R11 R9 K96   ; R11 := R9 * 100.000000
-410 [-]: SETTABLE  R10 K95 R11  ; R10["PERCENT"] := R11
-411 [-]: GETGLOBAL R11 K12      ; R11 := 0x603636ad
-412 [-]: LOADK     R12 K97      ; R12 := "/Lotus/Language/Dojo/DecoDestroyConfirmWithRefundPercentage"
-413 [-]: MOVE      R13 R10      ; R13 := R10
-414 [-]: CALL      R11 3 2      ; R11 := R11(R12,R13)
-415 [-]: GETUPVAL  R12 U2       ; R12 := U2
-416 [-]: GETTABLE  R12 R12 K68  ; R12 := R12[0xf616a184]
-417 [-]: MOVE      R13 R11      ; R13 := R11
-418 [-]: LOADK     R14 K92      ; R14 := "DestroyDecorationConfirmResult"
-419 [-]: CALL      R12 3 1      ; R12(R13,R14)
-420 [-]: JMP       433          ; PC := 433
-421 [-]: GETGLOBAL R12 K1       ; R12 := _T
-422 [-]: SETTABLE  R12 K67 R0   ; R12["ShipDecoToRemove"] := R0
-423 [-]: GETUPVAL  R12 U2       ; R12 := U2
-424 [-]: GETTABLE  R12 R12 K68  ; R12 := R12[0xf616a184]
-425 [-]: LOADK     R13 K98      ; R13 := "/Lotus/Language/Dojo/ShipDecoDestroyConfirmToVault"
-426 [-]: LOADK     R14 K92      ; R14 := "DestroyDecorationConfirmResult"
-427 [-]: CALL      R12 3 1      ; R12(R13,R14)
-428 [-]: JMP       433          ; PC := 433
-429 [-]: GETUPVAL  R12 U2       ; R12 := U2
-430 [-]: GETTABLE  R12 R12 K65  ; R12 := R12[0xe0cba3ca]
-431 [-]: LOADK     R13 K99      ; R13 := "/Lotus/Language/Dojo/DecoDestroyNoPermission"
-432 [-]: CALL      R12 2 1      ; R12(R13)
-433 [-]: GETGLOBAL R12 K0       ; R12 := 0x7b998233
-434 [-]: MOVE      R13 R5       ; R13 := R5
-435 [-]: CALL      R12 2 2      ; R12 := R12(R13)
-436 [-]: TEST      R12 1        ; if R12 then PC := 467
-437 [-]: JMP       467          ; PC := 467
-438 [-]: GETGLOBAL R12 K30      ; R12 := 0x9ba7909f
-439 [-]: SELF      R12 R12 K31  ; R13 := R12; R12 := R12[0xcfba257f]
-440 [-]: MOVE      R14 R5       ; R14 := R5
-441 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
-442 [-]: GETGLOBAL R13 K0       ; R13 := 0x7b998233
-443 [-]: MOVE      R14 R12      ; R14 := R12
-444 [-]: CALL      R13 2 2      ; R13 := R13(R14)
-445 [-]: TEST      R13 1        ; if R13 then PC := 467
-446 [-]: JMP       467          ; PC := 467
-447 [-]: GETGLOBAL R13 K1       ; R13 := _T
-448 [-]: GETGLOBAL R14 K100     ; R14 := 0x8d39c5fa
-449 [-]: GETTABLE  R14 R14 K101 ; R14 := R14[0x4efa6a8b]
-450 [-]: CALL      R14 1 2      ; R14 := R14()
-451 [-]: SETTABLE  R13 K4 R14   ; R13["ComponentParams"] := R14
-452 [-]: GETGLOBAL R13 K1       ; R13 := _T
-453 [-]: GETTABLE  R13 R13 K4   ; R13 := R13["ComponentParams"]
-454 [-]: SETTABLE  R13 K7 R4    ; R13["id"] := R4
-455 [-]: GETGLOBAL R13 K1       ; R13 := _T
-456 [-]: SELF      R14 R3 K103  ; R15 := R3; R14 := R3[0xf537cfc7]
-457 [-]: CALL      R14 2 2      ; R14 := R14(R15)
-458 [-]: SETTABLE  R13 K102 R14 ; R13["DecoId"] := R14
-459 [-]: GETGLOBAL R13 K1       ; R13 := _T
-460 [-]: SETTABLE  R13 K104 K29 ; R13["ShowDecorationContribution"] := true
-461 [-]: SELF      R13 R12 K46  ; R14 := R12; R13 := R12[0xe4162eed]
-462 [-]: LOADK     R15 K105     ; R15 := "ReadDojoVars"
-463 [-]: LOADK     R16 K39      ; R16 := ""
-464 [-]: CALL      R13 4 1      ; R13(R14,R15,R16)
-465 [-]: GETGLOBAL R13 K1       ; R13 := _T
-466 [-]: SETTABLE  R13 K104 K106; R13["ShowDecorationContribution"] := false
-467 [-]: RETURN    R0 1         ; return 
+226 [-]: GETTABLE  R5 R5 K5     ; R5 := R5["DojoMgr"]
+227 [-]: SETTABLE  R5 K57 R0    ; R5["mPendingDecoToPlace"] := R0
+228 [-]: GETGLOBAL R5 K1        ; R5 := _T
+229 [-]: GETTABLE  R5 R5 K5     ; R5 := R5["DojoMgr"]
+230 [-]: SETTABLE  R5 K58 R4    ; R5["mPendingDecoComponentId"] := R4
+231 [-]: GETUPVAL  R5 U3        ; R5 := U3
+232 [-]: GETTABLE  R5 R5 K59    ; R5 := R5[0xef3e3165]
+233 [-]: LOADNIL   R6 R6        ; R6 := nil
+234 [-]: LOADK     R7 K60       ; R7 := "/Lotus/Language/Dojo/NameDeco"
+235 [-]: SELF      R8 R0 K61    ; R9 := R0; R8 := R0[0xe223e2b1]
+236 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+237 [-]: CONST     R9 40        ; R9 := 40.000000
+238 [-]: LOADK     R10 K56      ; R10 := "OnDecoNamed"
+239 [-]: LOADK     R11 K62      ; R11 := "OSKOnPlacedDecoNamed"
+240 [-]: CALL      R5 7 1       ; R5(R6,R7,R8,R9,R10,R11)
+241 [-]: JMP       248          ; PC := 248
+242 [-]: GETGLOBAL R5 K1        ; R5 := _T
+243 [-]: SETTABLE  R5 K52 K19   ; R5["TextLightMovie"] := nil
+244 [-]: GETUPVAL  R5 U2        ; R5 := U2
+245 [-]: GETTABLE  R5 R5 K63    ; R5 := R5[0xe0cba3ca]
+246 [-]: LOADK     R6 K64       ; R6 := "/Lotus/Language/UiElements/ShipDecoCantEdit"
+247 [-]: CALL      R5 2 1       ; R5(R6)
+248 [-]: RETURN    R0 1         ; return 
+249 [-]: JMP       271          ; PC := 271
+250 [-]: EQ        0 R1 K39     ; if R1 ~= "" then PC := 271
+251 [-]: JMP       271          ; PC := 271
+252 [-]: GETGLOBAL R5 K0        ; R5 := 0x7b998233
+253 [-]: GETGLOBAL R6 K1        ; R6 := _T
+254 [-]: GETTABLE  R6 R6 K65    ; R6 := R6["ShipDecoToRemove"]
+255 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+256 [-]: TEST      R5 0         ; if not R5 then PC := 270
+257 [-]: JMP       270          ; PC := 270
+258 [-]: GETGLOBAL R5 K0        ; R5 := 0x7b998233
+259 [-]: MOVE      R6 R0        ; R6 := R0
+260 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+261 [-]: TEST      R5 1         ; if R5 then PC := 270
+262 [-]: JMP       270          ; PC := 270
+263 [-]: GETGLOBAL R5 K1        ; R5 := _T
+264 [-]: SETTABLE  R5 K65 R0    ; R5["ShipDecoToRemove"] := R0
+265 [-]: GETUPVAL  R5 U2        ; R5 := U2
+266 [-]: GETTABLE  R5 R5 K66    ; R5 := R5[0xf616a184]
+267 [-]: LOADK     R6 K67       ; R6 := "/Lotus/Language/UiElements/RemoveShipDecoConfirm"
+268 [-]: LOADK     R7 K68       ; R7 := "RemoveDecorationInShipConfirmResult"
+269 [-]: CALL      R5 3 1       ; R5(R6,R7)
+270 [-]: RETURN    R0 1         ; return 
+271 [-]: GETGLOBAL R5 K0        ; R5 := 0x7b998233
+272 [-]: MOVE      R6 R3        ; R6 := R3
+273 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+274 [-]: TEST      R5 1         ; if R5 then PC := 440
+275 [-]: JMP       440          ; PC := 440
+276 [-]: SELF      R5 R3 K69    ; R6 := R3; R5 := R3[0x56c01834]
+277 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+278 [-]: TEST      R5 0         ; if not R5 then PC := 440
+279 [-]: JMP       440          ; PC := 440
+280 [-]: LOADNIL   R5 R5        ; R5 := nil
+281 [-]: GETGLOBAL R6 K70       ; R6 := 0xb009bbc6
+282 [-]: GETGLOBAL R7 K71       ; R7 := 0x59462acb
+283 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+284 [-]: SELF      R7 R6 K72    ; R8 := R6; R7 := R6[0x1cf7e604]
+285 [-]: GETTABLE  R9 R3 K73    ; R9 := R3["decoType"]
+286 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
+287 [-]: TEST      R2 0         ; if not R2 then PC := 321
+288 [-]: JMP       321          ; PC := 321
+289 [-]: GETGLOBAL R8 K0        ; R8 := 0x7b998233
+290 [-]: MOVE      R9 R7        ; R9 := R7
+291 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+292 [-]: TEST      R8 1         ; if R8 then PC := 312
+293 [-]: JMP       312          ; PC := 312
+294 [-]: SELF      R8 R3 K40    ; R9 := R3; R8 := R3[0x3ae915ba]
+295 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+296 [-]: TEST      R8 0         ; if not R8 then PC := 303
+297 [-]: JMP       303          ; PC := 303
+298 [-]: GETGLOBAL R8 K70       ; R8 := 0xb009bbc6
+299 [-]: GETGLOBAL R9 K74       ; R9 := 0x5e9a35db
+300 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+301 [-]: MOVE      R5 R8        ; R5 := R8
+302 [-]: JMP       406          ; PC := 406
+303 [-]: SELF      R8 R3 K41    ; R9 := R3; R8 := R3[0x04de00e9]
+304 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+305 [-]: TEST      R8 0         ; if not R8 then PC := 406
+306 [-]: JMP       406          ; PC := 406
+307 [-]: GETGLOBAL R8 K70       ; R8 := 0xb009bbc6
+308 [-]: GETGLOBAL R9 K75       ; R9 := 0x225828fd
+309 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+310 [-]: MOVE      R5 R8        ; R5 := R8
+311 [-]: JMP       406          ; PC := 406
+312 [-]: GETGLOBAL R8 K37       ; R8 := 0x3d106989
+313 [-]: LOADK     R9 K76       ; R9 := "Could not find recipe for "
+314 [-]: GETTABLE  R10 R3 K73   ; R10 := R3["decoType"]
+315 [-]: SELF      R10 R10 K77  ; R11 := R10; R10 := R10[0xed4e0128]
+316 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+317 [-]: LOADK     R11 K78      ; R11 := "; probably a ship deco that just got placed?"
+318 [-]: CONCAT    R9 R9 R11    ; R9 := R9 .. R10 .. R11
+319 [-]: CALL      R8 2 1       ; R8(R9)
+320 [-]: JMP       406          ; PC := 406
+321 [-]: GETGLOBAL R8 K30       ; R8 := 0x9ba7909f
+322 [-]: SELF      R8 R8 K31    ; R9 := R8; R8 := R8[0xcfba257f]
+323 [-]: GETGLOBAL R10 K79      ; R10 := 0x3255839e
+324 [-]: CALL      R8 3 1       ; R8(R9,R10)
+325 [-]: GETUPVAL  R8 U3        ; R8 := U3
+326 [-]: GETTABLE  R8 R8 K80    ; R8 := R8[0x334af2b4]
+327 [-]: LOADKB    R9 1 0       ; R9 := true
+328 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+329 [-]: TEST      R8 0         ; if not R8 then PC := 402
+330 [-]: JMP       402          ; PC := 402
+331 [-]: GETGLOBAL R9 K1        ; R9 := _T
+332 [-]: GETTABLE  R9 R9 K5     ; R9 := R9["DojoMgr"]
+333 [-]: SETTABLE  R9 K81 R0    ; R9["mPendingDestroyDeco"] := R0
+334 [-]: GETGLOBAL R9 K1        ; R9 := _T
+335 [-]: GETTABLE  R9 R9 K5     ; R9 := R9["DojoMgr"]
+336 [-]: SETTABLE  R9 K82 R4    ; R9["mPendingDestroyDecoComponentId"] := R4
+337 [-]: SELF      R9 R3 K40    ; R10 := R3; R9 := R3[0x3ae915ba]
+338 [-]: CALL      R9 2 2       ; R9 := R9(R10)
+339 [-]: TEST      R9 0         ; if not R9 then PC := 347
+340 [-]: JMP       347          ; PC := 347
+341 [-]: GETUPVAL  R9 U2        ; R9 := U2
+342 [-]: GETTABLE  R9 R9 K66    ; R9 := R9[0xf616a184]
+343 [-]: LOADK     R10 K83      ; R10 := "/Lotus/Language/Dojo/CancelDecoConfirmation"
+344 [-]: LOADK     R11 K84      ; R11 := "AbortDecorationConfirmResult"
+345 [-]: CALL      R9 3 1       ; R9(R10,R11)
+346 [-]: JMP       406          ; PC := 406
+347 [-]: GETGLOBAL R9 K0        ; R9 := 0x7b998233
+348 [-]: MOVE      R10 R7       ; R10 := R7
+349 [-]: CALL      R9 2 2       ; R9 := R9(R10)
+350 [-]: TEST      R9 1         ; if R9 then PC := 394
+351 [-]: JMP       394          ; PC := 394
+352 [-]: SELF      R9 R7 K85    ; R10 := R7; R9 := R7[0x05af28f3]
+353 [-]: CALL      R9 2 2       ; R9 := R9(R10)
+354 [-]: EQ        0 R9 K86     ; if R9 ~= 0.000000 then PC := 371
+355 [-]: JMP       371          ; PC := 371
+356 [-]: SELF      R9 R7 K87    ; R10 := R7; R9 := R7[0x7e366333]
+357 [-]: CALL      R9 2 2       ; R9 := R9(R10)
+358 [-]: EQ        0 R9 K86     ; if R9 ~= 0.000000 then PC := 371
+359 [-]: JMP       371          ; PC := 371
+360 [-]: SELF      R9 R7 K88    ; R10 := R7; R9 := R7[0x024d3816]
+361 [-]: CALL      R9 2 2       ; R9 := R9(R10)
+362 [-]: LEN       R9 R9        ; R9 := # R9
+363 [-]: EQ        0 R9 K86     ; if R9 ~= 0.000000 then PC := 371
+364 [-]: JMP       371          ; PC := 371
+365 [-]: GETUPVAL  R9 U2        ; R9 := U2
+366 [-]: GETTABLE  R9 R9 K66    ; R9 := R9[0xf616a184]
+367 [-]: LOADK     R10 K89      ; R10 := "/Lotus/Language/Dojo/DecoDestroyConfirm"
+368 [-]: LOADK     R11 K90      ; R11 := "DestroyDecorationConfirmResult"
+369 [-]: CALL      R9 3 1       ; R9(R10,R11)
+370 [-]: JMP       406          ; PC := 406
+371 [-]: SELF      R9 R7 K91    ; R10 := R7; R9 := R7[0xe6a4276c]
+372 [-]: CALL      R9 2 2       ; R9 := R9(R10)
+373 [-]: EQ        0 R9 K20     ; if R9 ~= 1.000000 then PC := 381
+374 [-]: JMP       381          ; PC := 381
+375 [-]: GETUPVAL  R10 U2       ; R10 := U2
+376 [-]: GETTABLE  R10 R10 K66  ; R10 := R10[0xf616a184]
+377 [-]: LOADK     R11 K92      ; R11 := "/Lotus/Language/Dojo/DecoDestroyConfirmToVaultFullRefund"
+378 [-]: LOADK     R12 K90      ; R12 := "DestroyDecorationConfirmResult"
+379 [-]: CALL      R10 3 1      ; R10(R11,R12)
+380 [-]: JMP       406          ; PC := 406
+381 [-]: NEWTABLE  R10 0 1      ; R10 := {}
+382 [-]: MUL       R11 R9 K94   ; R11 := R9 * 100.000000
+383 [-]: SETTABLE  R10 K93 R11  ; R10["PERCENT"] := R11
+384 [-]: GETGLOBAL R11 K12      ; R11 := 0x603636ad
+385 [-]: LOADK     R12 K95      ; R12 := "/Lotus/Language/Dojo/DecoDestroyConfirmWithRefundPercentage"
+386 [-]: MOVE      R13 R10      ; R13 := R10
+387 [-]: CALL      R11 3 2      ; R11 := R11(R12,R13)
+388 [-]: GETUPVAL  R12 U2       ; R12 := U2
+389 [-]: GETTABLE  R12 R12 K66  ; R12 := R12[0xf616a184]
+390 [-]: MOVE      R13 R11      ; R13 := R11
+391 [-]: LOADK     R14 K90      ; R14 := "DestroyDecorationConfirmResult"
+392 [-]: CALL      R12 3 1      ; R12(R13,R14)
+393 [-]: JMP       406          ; PC := 406
+394 [-]: GETGLOBAL R12 K1       ; R12 := _T
+395 [-]: SETTABLE  R12 K65 R0   ; R12["ShipDecoToRemove"] := R0
+396 [-]: GETUPVAL  R12 U2       ; R12 := U2
+397 [-]: GETTABLE  R12 R12 K66  ; R12 := R12[0xf616a184]
+398 [-]: LOADK     R13 K96      ; R13 := "/Lotus/Language/Dojo/ShipDecoDestroyConfirmToVault"
+399 [-]: LOADK     R14 K90      ; R14 := "DestroyDecorationConfirmResult"
+400 [-]: CALL      R12 3 1      ; R12(R13,R14)
+401 [-]: JMP       406          ; PC := 406
+402 [-]: GETUPVAL  R12 U2       ; R12 := U2
+403 [-]: GETTABLE  R12 R12 K63  ; R12 := R12[0xe0cba3ca]
+404 [-]: LOADK     R13 K97      ; R13 := "/Lotus/Language/Dojo/DecoDestroyNoPermission"
+405 [-]: CALL      R12 2 1      ; R12(R13)
+406 [-]: GETGLOBAL R12 K0       ; R12 := 0x7b998233
+407 [-]: MOVE      R13 R5       ; R13 := R5
+408 [-]: CALL      R12 2 2      ; R12 := R12(R13)
+409 [-]: TEST      R12 1        ; if R12 then PC := 440
+410 [-]: JMP       440          ; PC := 440
+411 [-]: GETGLOBAL R12 K30      ; R12 := 0x9ba7909f
+412 [-]: SELF      R12 R12 K31  ; R13 := R12; R12 := R12[0xcfba257f]
+413 [-]: MOVE      R14 R5       ; R14 := R5
+414 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
+415 [-]: GETGLOBAL R13 K0       ; R13 := 0x7b998233
+416 [-]: MOVE      R14 R12      ; R14 := R12
+417 [-]: CALL      R13 2 2      ; R13 := R13(R14)
+418 [-]: TEST      R13 1        ; if R13 then PC := 440
+419 [-]: JMP       440          ; PC := 440
+420 [-]: GETGLOBAL R13 K1       ; R13 := _T
+421 [-]: GETGLOBAL R14 K98      ; R14 := 0x8d39c5fa
+422 [-]: GETTABLE  R14 R14 K99  ; R14 := R14[0x4efa6a8b]
+423 [-]: CALL      R14 1 2      ; R14 := R14()
+424 [-]: SETTABLE  R13 K4 R14   ; R13["ComponentParams"] := R14
+425 [-]: GETGLOBAL R13 K1       ; R13 := _T
+426 [-]: GETTABLE  R13 R13 K4   ; R13 := R13["ComponentParams"]
+427 [-]: SETTABLE  R13 K7 R4    ; R13["id"] := R4
+428 [-]: GETGLOBAL R13 K1       ; R13 := _T
+429 [-]: SELF      R14 R3 K101  ; R15 := R3; R14 := R3[0xf537cfc7]
+430 [-]: CALL      R14 2 2      ; R14 := R14(R15)
+431 [-]: SETTABLE  R13 K100 R14 ; R13["DecoId"] := R14
+432 [-]: GETGLOBAL R13 K1       ; R13 := _T
+433 [-]: SETTABLE  R13 K102 K29 ; R13["ShowDecorationContribution"] := true
+434 [-]: SELF      R13 R12 K103 ; R14 := R12; R13 := R12[0xe4162eed]
+435 [-]: LOADK     R15 K104     ; R15 := "ReadDojoVars"
+436 [-]: LOADK     R16 K39      ; R16 := ""
+437 [-]: CALL      R13 4 1      ; R13(R14,R15,R16)
+438 [-]: GETGLOBAL R13 K1       ; R13 := _T
+439 [-]: SETTABLE  R13 K102 K105; R13["ShowDecorationContribution"] := false
+440 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #58.1:
 ;
 ; Name:            
-; Defined at line: 1676
+; Defined at line: 1675
 ; #Upvalues:       4
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -5635,7 +5596,7 @@
  22 [-]: SETTABLE  R2 K3 R3     ; R2["Count"] := R3
  23 [-]: GETUPVAL  R2 U1        ; R2 := U1
  24 [-]: GETUPVAL  R3 U0        ; R3 := U0
- 25 [-]: LOADBOOL  R4 0 0       ; R4 := false
+ 25 [-]: LOADKB    R4 0 0       ; R4 := false
  26 [-]: CALL      R2 3 1       ; R2(R3,R4)
  27 [-]: GETUPVAL  R2 U2        ; R2 := U2
  28 [-]: CALL      R2 1 1       ; R2()
@@ -5650,7 +5611,7 @@
 ; Function #58.2:
 ;
 ; Name:            
-; Defined at line: 1749
+; Defined at line: 1742
 ; #Upvalues:       1
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -5667,8 +5628,8 @@
   9 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  10 [-]: EQ        1 R4 K3      ; if R4 == 4.000000 then PC := 13
  11 [-]: JMP       13           ; PC := 13
- 12 [-]: LOADBOOL  R4 0 1       ; R4 := false; PC := 13
- 13 [-]: LOADBOOL  R4 1 0       ; R4 := true
+ 12 [-]: LOADKB    R4 0 1       ; R4 := false; PC := 13
+ 13 [-]: LOADKB    R4 1 0       ; R4 := true
  14 [-]: MOVE      R5 R0        ; R5 := R0
  15 [-]: CALL      R3 3 1       ; R3(R4,R5)
  16 [-]: RETURN    R0 1         ; return 
@@ -5677,7 +5638,7 @@
 ; Function #59:
 ;
 ; Name:            
-; Defined at line: 1840
+; Defined at line: 1833
 ; #Upvalues:       5
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -5734,7 +5695,7 @@
  49 [-]: SELF      R8 R8 K14    ; R9 := R8; R8 := R8[0xa539d818]
  50 [-]: MOVE      R10 R7       ; R10 := R7
  51 [-]: MOVE      R11 R1       ; R11 := R1
- 52 [-]: LOADBOOL  R12 1 0      ; R12 := true
+ 52 [-]: LOADKB    R12 1 0      ; R12 := true
  53 [-]: CALL      R8 5 1       ; R8(R9,R10,R11,R12)
  54 [-]: RETURN    R0 1         ; return 
  55 [-]: SELF      R8 R2 K15    ; R9 := R2; R8 := R2[0xa1c390fe]
@@ -5751,9 +5712,9 @@
  66 [-]: SELF      R10 R0 K18   ; R11 := R0; R10 := R0[0xcde10c4a]
  67 [-]: CALL      R10 2 2      ; R10 := R10(R11)
  68 [-]: LOADNIL   R11 R11      ; R11 := nil
- 69 [-]: LOADK     R12 1        ; R12 := 1.000000
+ 69 [-]: CONST     R12 1        ; R12 := 1.000000
  70 [-]: LEN       R13 R9       ; R13 := # R9
- 71 [-]: LOADK     R14 1        ; R14 := 1.000000
+ 71 [-]: CONST     R14 1        ; R14 := 1.000000
  72 [-]: FORPREP   R12 80       ; R12 -= R14; PC := 80
  73 [-]: GETTABLE  R16 R9 R15   ; R16 := R9[R15]
  74 [-]: SELF      R16 R16 K19  ; R17 := R16; R16 := R16[0x656c098f]
@@ -5771,7 +5732,7 @@
  86 [-]: RETURN    R0 1         ; return 
  87 [-]: GETGLOBAL R16 K20      ; R16 := 0x76ea806b
  88 [-]: SELF      R16 R16 K21  ; R17 := R16; R16 := R16[0x3f3ae64c]
- 89 [-]: LOADK     R18 0        ; R18 := 0.000000
+ 89 [-]: CONST     R18 0        ; R18 := 0.000000
  90 [-]: CALL      R16 3 2      ; R16 := R16(R17,R18)
  91 [-]: GETGLOBAL R17 K0       ; R17 := 0x7b998233
  92 [-]: MOVE      R18 R16      ; R18 := R16
@@ -5807,10 +5768,10 @@
 122 [-]: CALL      R18 2 2      ; R18 := R18(R19)
 123 [-]: EQ        1 R18 K3     ; if R18 == nil then PC := 183
 124 [-]: JMP       183          ; PC := 183
-125 [-]: LOADK     R19 1        ; R19 := 1.000000
+125 [-]: CONST     R19 1        ; R19 := 1.000000
 126 [-]: GETTABLE  R20 R18 K33  ; R20 := R18["mShipDecorations"]
 127 [-]: LEN       R20 R20      ; R20 := # R20
-128 [-]: LOADK     R21 1        ; R21 := 1.000000
+128 [-]: CONST     R21 1        ; R21 := 1.000000
 129 [-]: FORPREP   R19 141      ; R19 -= R21; PC := 141
 130 [-]: GETTABLE  R23 R17 K24  ; R23 := R17["Type"]
 131 [-]: GETTABLE  R24 R18 K33  ; R24 := R18["mShipDecorations"]
@@ -5827,7 +5788,7 @@
 142 [-]: GETTABLE  R23 R17 K26  ; R23 := R17["Count"]
 143 [-]: EQ        0 R23 K27    ; if R23 ~= 0.000000 then PC := 177
 144 [-]: JMP       177          ; PC := 177
-145 [-]: LOADK     R23 0        ; R23 := 0.000000
+145 [-]: CONST     R23 0        ; R23 := 0.000000
 146 [-]: SELF      R24 R0 K7    ; R25 := R0; R24 := R0[0xf2deaf69]
 147 [-]: GETGLOBAL R26 K36      ; R26 := gDojoPlaceableDecorationType
 148 [-]: CALL      R24 3 2      ; R24 := R24(R25,R26)
@@ -5836,10 +5797,10 @@
 151 [-]: SELF      R24 R0 K37   ; R25 := R0; R24 := R0[0x3ef3c120]
 152 [-]: CALL      R24 2 2      ; R24 := R24(R25)
 153 [-]: MOVE      R23 R24      ; R23 := R24
-154 [-]: LOADK     R24 1        ; R24 := 1.000000
+154 [-]: CONST     R24 1        ; R24 := 1.000000
 155 [-]: GETTABLE  R25 R18 K38  ; R25 := R18["mFusionTreasures"]
 156 [-]: LEN       R25 R25      ; R25 := # R25
-157 [-]: LOADK     R26 1        ; R26 := 1.000000
+157 [-]: CONST     R26 1        ; R26 := 1.000000
 158 [-]: FORPREP   R24 176      ; R24 -= R26; PC := 176
 159 [-]: GETTABLE  R28 R17 K24  ; R28 := R17["Type"]
 160 [-]: GETTABLE  R29 R18 K38  ; R29 := R18["mFusionTreasures"]
@@ -5862,15 +5823,15 @@
 177 [-]: GETTABLE  R28 R17 K26  ; R28 := R17["Count"]
 178 [-]: LT        1 K27 R28    ; if 0.000000 < R28 then PC := 181
 179 [-]: JMP       181          ; PC := 181
-180 [-]: LOADBOOL  R28 0 1      ; R28 := false; PC := 181
-181 [-]: LOADBOOL  R28 1 0      ; R28 := true
+180 [-]: LOADKB    R28 0 1      ; R28 := false; PC := 181
+181 [-]: LOADKB    R28 1 0      ; R28 := true
 182 [-]: SETTABLE  R17 K28 R28  ; R17["VaultDeco"] := R28
 183 [-]: GETTABLE  R28 R17 K26  ; R28 := R17["Count"]
 184 [-]: LT        0 K27 R28    ; if 0.000000 >= R28 then PC := 191
 185 [-]: JMP       191          ; PC := 191
 186 [-]: GETUPVAL  R28 U1       ; R28 := U1
 187 [-]: MOVE      R29 R17      ; R29 := R17
-188 [-]: LOADBOOL  R30 0 0      ; R30 := false
+188 [-]: LOADKB    R30 0 0      ; R30 := false
 189 [-]: CALL      R28 3 1      ; R28(R29,R30)
 190 [-]: JMP       298          ; PC := 298
 191 [-]: GETUPVAL  R28 U2       ; R28 := U2
@@ -5883,9 +5844,9 @@
 198 [-]: CALL      R28 2 2      ; R28 := R28(R29)
 199 [-]: SELF      R29 R28 K43  ; R30 := R28; R29 := R28[0x7c12ac22]
 200 [-]: CALL      R29 2 2      ; R29 := R29(R30)
-201 [-]: LOADK     R30 1        ; R30 := 1.000000
+201 [-]: CONST     R30 1        ; R30 := 1.000000
 202 [-]: LEN       R31 R29      ; R31 := # R29
-203 [-]: LOADK     R32 1        ; R32 := 1.000000
+203 [-]: CONST     R32 1        ; R32 := 1.000000
 204 [-]: FORPREP   R30 214      ; R30 -= R32; PC := 214
 205 [-]: GETTABLE  R34 R17 K24  ; R34 := R17["Type"]
 206 [-]: GETTABLE  R35 R29 R33  ; R35 := R29[R33]
@@ -5903,7 +5864,7 @@
 218 [-]: SELF      R34 R28 K44  ; R35 := R28; R34 := R28[0x7a5dc828]
 219 [-]: CALL      R34 2 2      ; R34 := R34(R35)
 220 [-]: MOVE      R29 R34      ; R29 := R34
-221 [-]: LOADK     R34 0        ; R34 := 0.000000
+221 [-]: CONST     R34 0        ; R34 := 0.000000
 222 [-]: SELF      R35 R0 K7    ; R36 := R0; R35 := R0[0xf2deaf69]
 223 [-]: GETGLOBAL R37 K36      ; R37 := gDojoPlaceableDecorationType
 224 [-]: CALL      R35 3 2      ; R35 := R35(R36,R37)
@@ -5912,9 +5873,9 @@
 227 [-]: SELF      R35 R0 K37   ; R36 := R0; R35 := R0[0x3ef3c120]
 228 [-]: CALL      R35 2 2      ; R35 := R35(R36)
 229 [-]: MOVE      R34 R35      ; R34 := R35
-230 [-]: LOADK     R35 1        ; R35 := 1.000000
+230 [-]: CONST     R35 1        ; R35 := 1.000000
 231 [-]: LEN       R36 R29      ; R36 := # R29
-232 [-]: LOADK     R37 1        ; R37 := 1.000000
+232 [-]: CONST     R37 1        ; R37 := 1.000000
 233 [-]: FORPREP   R35 248      ; R35 -= R37; PC := 248
 234 [-]: GETTABLE  R39 R17 K24  ; R39 := R17["Type"]
 235 [-]: GETTABLE  R40 R29 R38  ; R40 := R29[R38]
@@ -5978,7 +5939,7 @@
 293 [-]: JMP       298          ; PC := 298
 294 [-]: GETUPVAL  R41 U1       ; R41 := U1
 295 [-]: MOVE      R42 R17      ; R42 := R17
-296 [-]: LOADBOOL  R43 1 0      ; R43 := true
+296 [-]: LOADKB    R43 1 0      ; R43 := true
 297 [-]: CALL      R41 3 1      ; R41(R42,R43)
 298 [-]: RETURN    R0 1         ; return 
 
@@ -5986,7 +5947,7 @@
 ; Function #59.1:
 ;
 ; Name:            
-; Defined at line: 1964
+; Defined at line: 1957
 ; #Upvalues:       4
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -6008,7 +5969,7 @@
  14 [-]: SETTABLE  R2 K1 R3     ; R2["Count"] := R3
  15 [-]: GETUPVAL  R2 U1        ; R2 := U1
  16 [-]: GETUPVAL  R3 U0        ; R3 := U0
- 17 [-]: LOADBOOL  R4 0 0       ; R4 := false
+ 17 [-]: LOADKB    R4 0 0       ; R4 := false
  18 [-]: CALL      R2 3 1       ; R2(R3,R4)
  19 [-]: GETUPVAL  R2 U2        ; R2 := U2
  20 [-]: CALL      R2 1 1       ; R2()
@@ -6023,13 +5984,13 @@
 ; Function #60:
 ;
 ; Name:            
-; Defined at line: 1994
+; Defined at line: 1987
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
 ; Max Stack Size:  10
 
-  1 [-]: LOADK     R0 0         ; R0 := 0.000000
+  1 [-]: CONST     R0 0         ; R0 := 0.000000
   2 [-]: GETGLOBAL R1 K0        ; R1 := 0x7b998233
   3 [-]: GETGLOBAL R2 K1        ; R2 := _T
   4 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["DojoMgr"]
@@ -6074,8 +6035,8 @@
  43 [-]: GETTABLE  R6 R6 K13    ; R6 := R6["DECO_AREA_APARTMENT"]
  44 [-]: EQ        1 R5 R6      ; if R5 == R6 then PC := 47
  45 [-]: JMP       47           ; PC := 47
- 46 [-]: LOADBOOL  R5 0 1       ; R5 := false; PC := 47
- 47 [-]: LOADBOOL  R5 1 0       ; R5 := true
+ 46 [-]: LOADKB    R5 0 1       ; R5 := false; PC := 47
+ 47 [-]: LOADKB    R5 1 0       ; R5 := true
  48 [-]: GETGLOBAL R6 K14       ; R6 := 0x25d99d89
  49 [-]: SELF      R6 R6 K15    ; R7 := R6; R6 := R6[0xd104f830]
  50 [-]: MOVE      R8 R4        ; R8 := R4
@@ -6101,7 +6062,7 @@
 ; Function #61:
 ;
 ; Name:            
-; Defined at line: 2017
+; Defined at line: 2010
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -6115,7 +6076,7 @@
   6 [-]: GETTABLE  R1 R1 K2     ; R1 := R1[0xe0cba3ca]
   7 [-]: LOADK     R2 K3        ; R2 := "/Lotus/Language/Menu/Loadout_InvalidName"
   8 [-]: CALL      R1 2 1       ; R1(R2)
-  9 [-]: LOADBOOL  R1 0 0       ; R1 := false
+  9 [-]: LOADKB    R1 0 0       ; R1 := false
  10 [-]: RETURN    R1 2         ; return R1
  11 [-]: GETUPVAL  R1 U0        ; R1 := U0
  12 [-]: GETTABLE  R1 R1 K4     ; R1 := R1[0xa8ff37e9]
@@ -6145,7 +6106,7 @@
  36 [-]: GETGLOBAL R4 K11       ; R4 := 0xae91e43b
  37 [-]: SELF      R4 R4 K12    ; R5 := R4; R4 := R4[0x42b04007]
  38 [-]: LOADK     R6 K13       ; R6 := "/Lotus/Language/Menu/SocialOverlay_InvalidCharacter"
- 39 [-]: LOADBOOL  R7 0 0       ; R7 := false
+ 39 [-]: LOADKB    R7 0 0       ; R7 := false
  40 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
  41 [-]: GETGLOBAL R5 K14       ; R5 := 0x68b0afb4
  42 [-]: MOVE      R6 R0        ; R6 := R0
@@ -6154,7 +6115,7 @@
  45 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
  46 [-]: CONCAT    R4 R4 R5     ; R4 := R4 .. R5
  47 [-]: CALL      R3 2 1       ; R3(R4)
- 48 [-]: LOADBOOL  R3 0 0       ; R3 := false
+ 48 [-]: LOADKB    R3 0 0       ; R3 := false
  49 [-]: RETURN    R3 2         ; return R3
  50 [-]: GETGLOBAL R3 K15       ; R3 := 0x7f5022cf
  51 [-]: GETTABLE  R3 R3 K16    ; R3 := R3[0x41e2ae25]
@@ -6167,17 +6128,17 @@
  58 [-]: GETGLOBAL R4 K11       ; R4 := 0xae91e43b
  59 [-]: SELF      R4 R4 K12    ; R5 := R4; R4 := R4[0x42b04007]
  60 [-]: LOADK     R6 K18       ; R6 := "/Lotus/Language/Menu/SocialOverlay_TooLong"
- 61 [-]: LOADBOOL  R7 0 0       ; R7 := false
+ 61 [-]: LOADKB    R7 0 0       ; R7 := false
  62 [-]: CALL      R4 4 0       ; R4,... := R4(R5,R6,R7)
  63 [-]: CALL      R3 0 1       ; R3(R4,...)
- 64 [-]: LOADBOOL  R3 0 0       ; R3 := false
+ 64 [-]: LOADKB    R3 0 0       ; R3 := false
  65 [-]: RETURN    R3 2         ; return R3
  66 [-]: GETGLOBAL R3 K19       ; R3 := 0x7db5f856
  67 [-]: MOVE      R4 R0        ; R4 := R0
  68 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  69 [-]: GETGLOBAL R4 K20       ; R4 := 0x09423272
  70 [-]: MOVE      R5 R3        ; R5 := R3
- 71 [-]: LOADK     R6 1         ; R6 := 1.000000
+ 71 [-]: CONST     R6 1         ; R6 := 1.000000
  72 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
  73 [-]: EQ        1 R4 R3      ; if R4 == R3 then PC := 85
  74 [-]: JMP       85           ; PC := 85
@@ -6186,12 +6147,12 @@
  77 [-]: GETGLOBAL R6 K11       ; R6 := 0xae91e43b
  78 [-]: SELF      R6 R6 K12    ; R7 := R6; R6 := R6[0x42b04007]
  79 [-]: LOADK     R8 K22       ; R8 := "/Lotus/Language/Menu/Generic_Name_CENSORED"
- 80 [-]: LOADBOOL  R9 0 0       ; R9 := false
+ 80 [-]: LOADKB    R9 0 0       ; R9 := false
  81 [-]: CALL      R6 4 0       ; R6,... := R6(R7,R8,R9)
  82 [-]: CALL      R5 0 1       ; R5(R6,...)
- 83 [-]: LOADBOOL  R5 0 0       ; R5 := false
+ 83 [-]: LOADKB    R5 0 0       ; R5 := false
  84 [-]: RETURN    R5 2         ; return R5
- 85 [-]: LOADBOOL  R5 1 0       ; R5 := true
+ 85 [-]: LOADKB    R5 1 0       ; R5 := true
  86 [-]: MOVE      R6 R3        ; R6 := R3
  87 [-]: RETURN    R5 3         ; return R5,R6
  88 [-]: RETURN    R0 1         ; return 
@@ -6200,7 +6161,7 @@
 ; Function #62:
 ;
 ; Name:            
-; Defined at line: 2049
+; Defined at line: 2042
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -6218,7 +6179,7 @@
  10 [-]: LOADK     R6 K3        ; R6 := "Okay, cool. "
  11 [-]: MOVE      R7 R2        ; R7 := R2
  12 [-]: CONCAT    R6 R6 R7     ; R6 := R6 .. R7
- 13 [-]: LOADBOOL  R7 0 0       ; R7 := false
+ 13 [-]: LOADKB    R7 0 0       ; R7 := false
  14 [-]: CALL      R4 4 0       ; R4,... := R4(R5,R6,R7)
  15 [-]: CALL      R3 0 1       ; R3(R4,...)
  16 [-]: JMP       27           ; PC := 27
@@ -6229,7 +6190,7 @@
  21 [-]: LOADK     R6 K4        ; R6 := "NOT COOL, "
  22 [-]: MOVE      R7 R2        ; R7 := R2
  23 [-]: CONCAT    R6 R6 R7     ; R6 := R6 .. R7
- 24 [-]: LOADBOOL  R7 0 0       ; R7 := false
+ 24 [-]: LOADKB    R7 0 0       ; R7 := false
  25 [-]: CALL      R4 4 0       ; R4,... := R4(R5,R6,R7)
  26 [-]: CALL      R3 0 1       ; R3(R4,...)
  27 [-]: RETURN    R0 1         ; return 
@@ -6238,7 +6199,7 @@
 ; Function #63:
 ;
 ; Name:            
-; Defined at line: 2058
+; Defined at line: 2051
 ; #Upvalues:       1
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -6263,7 +6224,7 @@
 ; Function #64:
 ;
 ; Name:            
-; Defined at line: 2064
+; Defined at line: 2057
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -6289,7 +6250,7 @@
 ; Function #65:
 ;
 ; Name:            
-; Defined at line: 2076
+; Defined at line: 2069
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -6304,7 +6265,7 @@
   7 [-]: GETGLOBAL R1 K1        ; R1 := _T
   8 [-]: SETTABLE  R1 K2 R0     ; R1["DecoTemplateRoot"] := R0
   9 [-]: GETUPVAL  R1 U0        ; R1 := U0
- 10 [-]: LOADBOOL  R2 1 0       ; R2 := true
+ 10 [-]: LOADKB    R2 1 0       ; R2 := true
  11 [-]: CALL      R1 2 2       ; R1 := R1(R2)
  12 [-]: GETGLOBAL R2 K0        ; R2 := 0x7b998233
  13 [-]: MOVE      R3 R1        ; R3 := R1
@@ -6323,7 +6284,7 @@
  26 [-]: LOADNIL   R6 R6        ; R6 := nil
  27 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
  28 [-]: LOADK     R5 K5        ; R5 := ""
- 29 [-]: LOADK     R6 24        ; R6 := 24.000000
+ 29 [-]: CONST     R6 24        ; R6 := 24.000000
  30 [-]: LOADK     R7 K9        ; R7 := "NameDecoTemplate"
  31 [-]: LOADK     R8 K10       ; R8 := "OSKNameDecoTemplate"
  32 [-]: NEWTABLE  R9 0 1       ; R9 := {}
@@ -6335,7 +6296,7 @@
 ; Function #66:
 ;
 ; Name:            
-; Defined at line: 2088
+; Defined at line: 2081
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -6418,7 +6379,7 @@
 ; Function #67:
 ;
 ; Name:            
-; Defined at line: 2109
+; Defined at line: 2102
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -6455,7 +6416,7 @@
 ; Function #68:
 ;
 ; Name:            
-; Defined at line: 2121
+; Defined at line: 2114
 ; #Upvalues:       2
 ; #Parameters:     8
 ; Is_vararg:       0
@@ -6620,8 +6581,8 @@
 157 [-]: SUB       R18 R18 R19  ; R18 := R18 - R19
 158 [-]: LT        1 K41 R18    ; if 0.010000 < R18 then PC := 161
 159 [-]: JMP       161          ; PC := 161
-160 [-]: LOADBOOL  R18 0 1      ; R18 := false; PC := 161
-161 [-]: LOADBOOL  R18 1 0      ; R18 := true
+160 [-]: LOADKB    R18 0 1      ; R18 := false; PC := 161
+161 [-]: LOADKB    R18 1 0      ; R18 := true
 162 [-]: EQ        1 R1 K43     ; if R1 == 4.000000 then PC := 174
 163 [-]: JMP       174          ; PC := 174
 164 [-]: SELF      R19 R12 K44  ; R20 := R12; R19 := R12[0x59e42e1b]
@@ -6643,7 +6604,7 @@
 180 [-]: MOVE      R25 R5       ; R25 := R5
 181 [-]: MOVE      R26 R6       ; R26 := R6
 182 [-]: MOVE      R27 R7       ; R27 := R7
-183 [-]: LOADBOOL  R28 1 0      ; R28 := true
+183 [-]: LOADKB    R28 1 0      ; R28 := true
 184 [-]: CALL      R19 10 1     ; R19(R20,R21,R22,R23,R24,R25,R26,R27,R28)
 185 [-]: RETURN    R0 1         ; return 
 
@@ -6651,7 +6612,7 @@
 ; Function #69:
 ;
 ; Name:            
-; Defined at line: 2187
+; Defined at line: 2180
 ; #Upvalues:       3
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -6755,14 +6716,14 @@
  96 [-]: LOADK     R12 K21      ; R12 := "\r\n"
  97 [-]: GETGLOBAL R13 K12      ; R13 := 0x603636ad
  98 [-]: LOADK     R14 K25      ; R14 := "/Lotus/Language/UiElements/ResetRoomShipDecos"
- 99 [-]: LOADBOOL  R15 1 0      ; R15 := true
+ 99 [-]: LOADKB    R15 1 0      ; R15 := true
 100 [-]: CALL      R13 3 2      ; R13 := R13(R14,R15)
 101 [-]: CONCAT    R7 R11 R13   ; R7 := R11 .. R12 .. R13
 102 [-]: MOVE      R11 R7       ; R11 := R7
 103 [-]: LOADK     R12 K21      ; R12 := "\r\n"
 104 [-]: GETGLOBAL R13 K12      ; R13 := 0x603636ad
 105 [-]: LOADK     R14 K23      ; R14 := "/Lotus/Language/Labels/DecorationModeExit"
-106 [-]: LOADBOOL  R15 1 0      ; R15 := true
+106 [-]: LOADKB    R15 1 0      ; R15 := true
 107 [-]: CALL      R13 3 2      ; R13 := R13(R14,R15)
 108 [-]: CONCAT    R7 R11 R13   ; R7 := R11 .. R12 .. R13
 109 [-]: JMP       306          ; PC := 306
@@ -6818,7 +6779,7 @@
 159 [-]: CALL      R15 2 2      ; R15 := R15(R16)
 160 [-]: TEST      R15 0        ; if not R15 then PC := 163
 161 [-]: JMP       163          ; PC := 163
-162 [-]: LOADBOOL  R14 1 0      ; R14 := true
+162 [-]: LOADKB    R14 1 0      ; R14 := true
 163 [-]: LOADK     R15 K36      ; R15 := "/Lotus/Language/Dojo/DecoEditContents"
 164 [-]: MOVE      R16 R8       ; R16 := R8
 165 [-]: CONCAT    R15 R15 R16  ; R15 := R15 .. R16
@@ -6844,7 +6805,7 @@
 185 [-]: CALL      R18 2 2      ; R18 := R18(R19)
 186 [-]: TEST      R18 0        ; if not R18 then PC := 199
 187 [-]: JMP       199          ; PC := 199
-188 [-]: LOADBOOL  R14 1 0      ; R14 := true
+188 [-]: LOADKB    R14 1 0      ; R14 := true
 189 [-]: LOADK     R18 K41      ; R18 := "/Lotus/Language/Dojo/"
 190 [-]: GETUPVAL  R19 U0       ; R19 := U0
 191 [-]: GETTABLE  R19 R19 K9   ; R19 := R19[0x06d055f9]
@@ -6861,14 +6822,14 @@
 202 [-]: LOADK     R19 K21      ; R19 := "\r\n"
 203 [-]: GETGLOBAL R20 K12      ; R20 := 0x603636ad
 204 [-]: MOVE      R21 R15      ; R21 := R15
-205 [-]: LOADBOOL  R22 1 0      ; R22 := true
+205 [-]: LOADKB    R22 1 0      ; R22 := true
 206 [-]: CALL      R20 3 2      ; R20 := R20(R21,R22)
 207 [-]: CONCAT    R12 R18 R20  ; R12 := R18 .. R19 .. R20
 208 [-]: MOVE      R18 R13      ; R18 := R13
 209 [-]: LOADK     R19 K21      ; R19 := "\r\n"
 210 [-]: GETGLOBAL R20 K12      ; R20 := 0x603636ad
 211 [-]: MOVE      R21 R15      ; R21 := R15
-212 [-]: LOADBOOL  R22 1 0      ; R22 := true
+212 [-]: LOADKB    R22 1 0      ; R22 := true
 213 [-]: CALL      R20 3 2      ; R20 := R20(R21,R22)
 214 [-]: CONCAT    R13 R18 R20  ; R13 := R18 .. R19 .. R20
 215 [-]: LOADK     R15 K44      ; R15 := "/Lotus/Language/Dojo/DecoTweakPlacement"
@@ -6876,7 +6837,7 @@
 217 [-]: LOADK     R19 K21      ; R19 := "\r\n"
 218 [-]: GETGLOBAL R20 K12      ; R20 := 0x603636ad
 219 [-]: MOVE      R21 R15      ; R21 := R15
-220 [-]: LOADBOOL  R22 1 0      ; R22 := true
+220 [-]: LOADKB    R22 1 0      ; R22 := true
 221 [-]: CALL      R20 3 2      ; R20 := R20(R21,R22)
 222 [-]: CONCAT    R13 R18 R20  ; R13 := R18 .. R19 .. R20
 223 [-]: LOADK     R15 K45      ; R15 := "/Lotus/Language/Dojo/DecoPlaceAnotherFocused"
@@ -6884,14 +6845,14 @@
 225 [-]: LOADK     R19 K21      ; R19 := "\r\n"
 226 [-]: GETGLOBAL R20 K12      ; R20 := 0x603636ad
 227 [-]: MOVE      R21 R15      ; R21 := R15
-228 [-]: LOADBOOL  R22 1 0      ; R22 := true
+228 [-]: LOADKB    R22 1 0      ; R22 := true
 229 [-]: CALL      R20 3 2      ; R20 := R20(R21,R22)
 230 [-]: CONCAT    R12 R18 R20  ; R12 := R18 .. R19 .. R20
 231 [-]: MOVE      R18 R13      ; R18 := R13
 232 [-]: LOADK     R19 K21      ; R19 := "\r\n"
 233 [-]: GETGLOBAL R20 K12      ; R20 := 0x603636ad
 234 [-]: MOVE      R21 R15      ; R21 := R15
-235 [-]: LOADBOOL  R22 1 0      ; R22 := true
+235 [-]: LOADKB    R22 1 0      ; R22 := true
 236 [-]: CALL      R20 3 2      ; R20 := R20(R21,R22)
 237 [-]: CONCAT    R13 R18 R20  ; R13 := R18 .. R19 .. R20
 238 [-]: GETGLOBAL R18 K46      ; R18 := 0x9ba7909f
@@ -6909,14 +6870,14 @@
 250 [-]: LOADK     R19 K21      ; R19 := "\r\n"
 251 [-]: GETGLOBAL R20 K12      ; R20 := 0x603636ad
 252 [-]: MOVE      R21 R15      ; R21 := R15
-253 [-]: LOADBOOL  R22 1 0      ; R22 := true
+253 [-]: LOADKB    R22 1 0      ; R22 := true
 254 [-]: CALL      R20 3 2      ; R20 := R20(R21,R22)
 255 [-]: CONCAT    R12 R18 R20  ; R12 := R18 .. R19 .. R20
 256 [-]: MOVE      R18 R13      ; R18 := R13
 257 [-]: LOADK     R19 K21      ; R19 := "\r\n"
 258 [-]: GETGLOBAL R20 K12      ; R20 := 0x603636ad
 259 [-]: MOVE      R21 R15      ; R21 := R15
-260 [-]: LOADBOOL  R22 1 0      ; R22 := true
+260 [-]: LOADKB    R22 1 0      ; R22 := true
 261 [-]: CALL      R20 3 2      ; R20 := R20(R21,R22)
 262 [-]: CONCAT    R13 R18 R20  ; R13 := R18 .. R19 .. R20
 263 [-]: JMP       279          ; PC := 279
@@ -6925,14 +6886,14 @@
 266 [-]: LOADK     R19 K21      ; R19 := "\r\n"
 267 [-]: GETGLOBAL R20 K12      ; R20 := 0x603636ad
 268 [-]: MOVE      R21 R15      ; R21 := R15
-269 [-]: LOADBOOL  R22 1 0      ; R22 := true
+269 [-]: LOADKB    R22 1 0      ; R22 := true
 270 [-]: CALL      R20 3 2      ; R20 := R20(R21,R22)
 271 [-]: CONCAT    R12 R18 R20  ; R12 := R18 .. R19 .. R20
 272 [-]: MOVE      R18 R13      ; R18 := R13
 273 [-]: LOADK     R19 K21      ; R19 := "\r\n"
 274 [-]: GETGLOBAL R20 K12      ; R20 := 0x603636ad
 275 [-]: MOVE      R21 R15      ; R21 := R15
-276 [-]: LOADBOOL  R22 1 0      ; R22 := true
+276 [-]: LOADKB    R22 1 0      ; R22 := true
 277 [-]: CALL      R20 3 2      ; R20 := R20(R21,R22)
 278 [-]: CONCAT    R13 R18 R20  ; R13 := R18 .. R19 .. R20
 279 [-]: SELF      R18 R0 K52   ; R19 := R0; R18 := R0[0x2c10da67]
@@ -6944,14 +6905,14 @@
 285 [-]: LOADK     R19 K21      ; R19 := "\r\n"
 286 [-]: GETGLOBAL R20 K12      ; R20 := 0x603636ad
 287 [-]: MOVE      R21 R15      ; R21 := R15
-288 [-]: LOADBOOL  R22 1 0      ; R22 := true
+288 [-]: LOADKB    R22 1 0      ; R22 := true
 289 [-]: CALL      R20 3 2      ; R20 := R20(R21,R22)
 290 [-]: CONCAT    R12 R18 R20  ; R12 := R18 .. R19 .. R20
 291 [-]: MOVE      R18 R13      ; R18 := R13
 292 [-]: LOADK     R19 K21      ; R19 := "\r\n"
 293 [-]: GETGLOBAL R20 K12      ; R20 := 0x603636ad
 294 [-]: MOVE      R21 R15      ; R21 := R15
-295 [-]: LOADBOOL  R22 1 0      ; R22 := true
+295 [-]: LOADKB    R22 1 0      ; R22 := true
 296 [-]: CALL      R20 3 2      ; R20 := R20(R21,R22)
 297 [-]: CONCAT    R13 R18 R20  ; R13 := R18 .. R19 .. R20
 298 [-]: MOVE      R18 R12      ; R18 := R12
@@ -7041,7 +7002,7 @@
 382 [-]: GETTABLE  R22 R22 K58  ; R22 := R22["DojoMgr"]
 383 [-]: GETTABLE  R22 R22 K63  ; R22 := R22["mDecoFocusChangedCallback"]
 384 [-]: GETTABLE  R22 R22 R20  ; R22 := R22[R20]
-385 [-]: LOADBOOL  R23 0 0      ; R23 := false
+385 [-]: LOADKB    R23 0 0      ; R23 := false
 386 [-]: CALL      R22 2 1      ; R22(R23)
 387 [-]: GETGLOBAL R22 K18      ; R22 := _T
 388 [-]: GETTABLE  R22 R22 K58  ; R22 := R22["DojoMgr"]
@@ -7053,7 +7014,7 @@
 394 [-]: GETTABLE  R22 R22 K58  ; R22 := R22["DojoMgr"]
 395 [-]: GETTABLE  R22 R22 K63  ; R22 := R22["mDecoFocusChangedCallback"]
 396 [-]: GETTABLE  R22 R22 R21  ; R22 := R22[R21]
-397 [-]: LOADBOOL  R23 1 0      ; R23 := true
+397 [-]: LOADKB    R23 1 0      ; R23 := true
 398 [-]: CALL      R22 2 1      ; R22(R23)
 399 [-]: RETURN    R0 1         ; return 
 
@@ -7061,7 +7022,7 @@
 ; Function #70:
 ;
 ; Name:            
-; Defined at line: 2305
+; Defined at line: 2298
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -7077,7 +7038,7 @@
 ; Function #71:
 ;
 ; Name:            
-; Defined at line: 2309
+; Defined at line: 2302
 ; #Upvalues:       1
 ; #Parameters:     9
 ; Is_vararg:       0
@@ -7100,7 +7061,7 @@
 ; Function #72:
 ;
 ; Name:            
-; Defined at line: 2313
+; Defined at line: 2306
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -7195,7 +7156,7 @@
 ; Function #73:
 ;
 ; Name:            
-; Defined at line: 2350
+; Defined at line: 2343
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -7267,7 +7228,7 @@
  64 [-]: GETGLOBAL R5 K9        ; R5 := _T
  65 [-]: GETTABLE  R5 R5 K13    ; R5 := R5["FxNamePlateAnchor"]
  66 [-]: SELF      R5 R5 K19    ; R6 := R5; R5 := R5[0x768274d6]
- 67 [-]: LOADBOOL  R7 0 0       ; R7 := false
+ 67 [-]: LOADKB    R7 0 0       ; R7 := false
  68 [-]: CALL      R5 3 1       ; R5(R6,R7)
  69 [-]: GETGLOBAL R5 K0        ; R5 := 0x7b998233
  70 [-]: GETGLOBAL R6 K9        ; R6 := _T
@@ -7307,7 +7268,7 @@
 104 [-]: LOADK     R9 K30       ; R9 := "true"
 105 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
 106 [-]: GETGLOBAL R6 K31       ; R6 := 0xa421af95
-107 [-]: LOADK     R7 0         ; R7 := 0.000000
+107 [-]: CONST     R7 0         ; R7 := 0.000000
 108 [-]: LOADK     R8 K32       ; R8 := 0.200000
 109 [-]: LOADK     R9 K33       ; R9 := -0.150000
 110 [-]: CALL      R6 4 2       ; R6 := R6(R7,R8,R9)
@@ -7366,7 +7327,7 @@
 ; Function #74:
 ;
 ; Name:            
-; Defined at line: 2398
+; Defined at line: 2391
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -7378,9 +7339,9 @@
   4 [-]: LOADK     R3 K3        ; R3 := "DynamicDojoDeco"
   5 [-]: CALL      R2 2 0       ; R2,... := R2(R3)
   6 [-]: CALL      R0 0 2       ; R0 := R0(R1,...)
-  7 [-]: LOADK     R1 1         ; R1 := 1.000000
+  7 [-]: CONST     R1 1         ; R1 := 1.000000
   8 [-]: LEN       R2 R0        ; R2 := # R0
-  9 [-]: LOADK     R3 1         ; R3 := 1.000000
+  9 [-]: CONST     R3 1         ; R3 := 1.000000
  10 [-]: FORPREP   R1 41        ; R1 -= R3; PC := 41
  11 [-]: GETTABLE  R5 R0 R4     ; R5 := R0[R4]
  12 [-]: GETGLOBAL R6 K4        ; R6 := 0x7b998233
@@ -7400,7 +7361,7 @@
  26 [-]: GETUPVAL  R9 U0        ; R9 := U0
  27 [-]: CALL      R7 3 1       ; R7(R8,R9)
  28 [-]: GETGLOBAL R7 K11       ; R7 := 0xcbd666e1
- 29 [-]: LOADK     R8 0         ; R8 := 0.000000
+ 29 [-]: CONST     R8 0         ; R8 := 0.000000
  30 [-]: CALL      R7 2 1       ; R7(R8)
  31 [-]: SELF      R7 R5 K12    ; R8 := R5; R7 := R5[0x589ef1c1]
  32 [-]: GETGLOBAL R9 K7        ; R9 := _T
@@ -7419,7 +7380,7 @@
 ; Function #75:
 ;
 ; Name:            
-; Defined at line: 2413
+; Defined at line: 2406
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0

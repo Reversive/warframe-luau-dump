@@ -7,7 +7,7 @@
 ; Is_vararg:       2
 ; Max Stack Size:  2
 
-  1 [-]: LOADK     R0 6         ; R0 := 6.000000
+  1 [-]: CONST     R0 6         ; R0 := 6.000000
   2 [-]: CLOSURE   R1 0         ; R1 := closure(Function #1)
   3 [-]: MOVE      R0 R0        ; R0 := R0
   4 [-]: SETGLOBAL R1 K1        ; PercentDamageTrigger := R1
@@ -32,8 +32,8 @@
   7 [-]: GETGLOBAL R3 K2        ; R3 := gBaseAvatarType
   8 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
   9 [-]: JMP       12           ; PC := 12
- 10 [-]: LOADBOOL  R1 0 1       ; R1 := false; PC := 11
- 11 [-]: LOADBOOL  R1 1 0       ; R1 := true
+ 10 [-]: LOADKB    R1 0 1       ; R1 := false; PC := 11
+ 11 [-]: LOADKB    R1 1 0       ; R1 := true
  12 [-]: TEST      R1 0         ; if not R1 then PC := 36
  13 [-]: JMP       36           ; PC := 36
  14 [-]: SELF      R2 R0 K3     ; R3 := R0; R2 := R0[0x1ac1655c]
@@ -55,7 +55,7 @@
  30 [-]: MOVE      R9 R6        ; R9 := R6
  31 [-]: GETGLOBAL R10 K10      ; R10 := 0x0c212cb3
  32 [-]: GETUPVAL  R11 U0       ; R11 := U0
- 33 [-]: LOADK     R12 0        ; R12 := 0.000000
+ 33 [-]: CONST     R12 0        ; R12 := 0.000000
  34 [-]: LOADNIL   R13 R14      ; R13 := R14 := nil
  35 [-]: CALL      R7 8 1       ; R7(R8,R9,R10,R11,R12,R13,R14)
  36 [-]: RETURN    R0 1         ; return 

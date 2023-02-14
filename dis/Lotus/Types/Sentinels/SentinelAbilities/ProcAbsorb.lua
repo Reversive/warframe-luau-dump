@@ -129,103 +129,104 @@
  47 [-]: CALL      R11 2 2      ; R11 := R11(R12)
  48 [-]: SELF      R11 R11 K18  ; R12 := R11; R11 := R11[0xcde10c4a]
  49 [-]: CALL      R11 2 2      ; R11 := R11(R12)
- 50 [-]: SETTABLE  R10 K15 R11  ; R10[0x5163741e] := R11
+ 50 [-]: SETTABLE  R10 K15 R11  ; R10["abilityType"] := R11
  51 [-]: SETTABLE  R10 K19 K20  ; R10["buffType"] := 1.000000
  52 [-]: SETTABLE  R10 K21 K22  ; R10["isDebuff"] := true
- 53 [-]: SETTABLE  R10 K23 R9   ; R10[0xc8802016] := R9
+ 53 [-]: SETTABLE  R10 K23 R9   ; R10[0x7ed0a956] := R9
  54 [-]: GETGLOBAL R11 K1       ; R11 := 0x7b998233
  55 [-]: GETGLOBAL R12 K16      ; R12 := 0x6687f6e0
  56 [-]: CALL      R11 2 2      ; R11 := R11(R12)
- 57 [-]: TEST      R11 1        ; if R11 then PC := 146
- 58 [-]: JMP       146          ; PC := 146
+ 57 [-]: TEST      R11 1        ; if R11 then PC := 147
+ 58 [-]: JMP       147          ; PC := 147
  59 [-]: GETGLOBAL R11 K16      ; R11 := 0x6687f6e0
  60 [-]: SELF      R11 R11 K24  ; R12 := R11; R11 := R11[0x30f46140]
  61 [-]: CALL      R11 2 2      ; R11 := R11(R12)
- 62 [-]: TEST      R11 1        ; if R11 then PC := 146
- 63 [-]: JMP       146          ; PC := 146
+ 62 [-]: TEST      R11 1        ; if R11 then PC := 147
+ 63 [-]: JMP       147          ; PC := 147
  64 [-]: GETGLOBAL R11 K1       ; R11 := 0x7b998233
  65 [-]: MOVE      R12 R1       ; R12 := R1
  66 [-]: CALL      R11 2 2      ; R11 := R11(R12)
- 67 [-]: TEST      R11 1        ; if R11 then PC := 146
- 68 [-]: JMP       146          ; PC := 146
+ 67 [-]: TEST      R11 1        ; if R11 then PC := 147
+ 68 [-]: JMP       147          ; PC := 147
  69 [-]: SELF      R11 R1 K25   ; R12 := R1; R11 := R1[0x2047cfe7]
  70 [-]: CALL      R11 2 2      ; R11 := R11(R12)
- 71 [-]: TEST      R11 1        ; if R11 then PC := 146
- 72 [-]: JMP       146          ; PC := 146
+ 71 [-]: TEST      R11 1        ; if R11 then PC := 147
+ 72 [-]: JMP       147          ; PC := 147
  73 [-]: GETGLOBAL R11 K1       ; R11 := 0x7b998233
  74 [-]: MOVE      R12 R5       ; R12 := R5
  75 [-]: CALL      R11 2 2      ; R11 := R11(R12)
- 76 [-]: TEST      R11 1        ; if R11 then PC := 146
- 77 [-]: JMP       146          ; PC := 146
+ 76 [-]: TEST      R11 1        ; if R11 then PC := 147
+ 77 [-]: JMP       147          ; PC := 147
  78 [-]: SELF      R11 R5 K25   ; R12 := R5; R11 := R5[0x2047cfe7]
  79 [-]: CALL      R11 2 2      ; R11 := R11(R12)
- 80 [-]: TEST      R11 1        ; if R11 then PC := 146
- 81 [-]: JMP       146          ; PC := 146
+ 80 [-]: TEST      R11 1        ; if R11 then PC := 147
+ 81 [-]: JMP       147          ; PC := 147
  82 [-]: GETGLOBAL R11 K1       ; R11 := 0x7b998233
  83 [-]: MOVE      R12 R6       ; R12 := R6
  84 [-]: CALL      R11 2 2      ; R11 := R11(R12)
- 85 [-]: TEST      R11 1        ; if R11 then PC := 146
- 86 [-]: JMP       146          ; PC := 146
+ 85 [-]: TEST      R11 1        ; if R11 then PC := 147
+ 86 [-]: JMP       147          ; PC := 147
  87 [-]: GETGLOBAL R11 K1       ; R11 := 0x7b998233
  88 [-]: GETGLOBAL R12 K5       ; R12 := _T
  89 [-]: GETTABLE  R12 R12 K6   ; R12 := R12["procAbsorb"]
  90 [-]: CALL      R11 2 2      ; R11 := R11(R12)
- 91 [-]: TEST      R11 1        ; if R11 then PC := 146
- 92 [-]: JMP       146          ; PC := 146
+ 91 [-]: TEST      R11 1        ; if R11 then PC := 147
+ 92 [-]: JMP       147          ; PC := 147
  93 [-]: GETGLOBAL R11 K5       ; R11 := _T
  94 [-]: GETTABLE  R11 R11 K6   ; R11 := R11["procAbsorb"]
  95 [-]: GETTABLE  R11 R11 R8   ; R11 := R11[R8]
- 96 [-]: EQ        0 R11 K26    ; if R11 ~= false then PC := 125
- 97 [-]: JMP       125          ; PC := 125
+ 96 [-]: EQ        0 R11 K26    ; if R11 ~= false then PC := 126
+ 97 [-]: JMP       126          ; PC := 126
  98 [-]: GETGLOBAL R11 K5       ; R11 := _T
  99 [-]: GETTABLE  R11 R11 K6   ; R11 := R11["procAbsorb"]
 100 [-]: SETTABLE  R11 R8 K7    ; R11[R8] := nil
 101 [-]: GETUPVAL  R11 U1       ; R11 := U1
 102 [-]: GETTABLE  R11 R11 K27  ; R11 := R11[0x8c971f40]
 103 [-]: MOVE      R12 R5       ; R12 := R5
-104 [-]: LOADBOOL  R13 0 0      ; R13 := false
+104 [-]: LOADKB    R13 0 0      ; R13 := false
 105 [-]: CALL      R11 3 1      ; R11(R12,R13)
 106 [-]: SELF      R11 R6 K28   ; R12 := R6; R11 := R6[0x56a4f3d7]
-107 [-]: MOVE      R13 R7       ; R13 := R7
-108 [-]: CALL      R11 3 1      ; R11(R12,R13)
-109 [-]: SELF      R11 R5 K29   ; R12 := R5; R11 := R5[0x37e45fb5]
-110 [-]: MOVE      R13 R10      ; R13 := R10
-111 [-]: LOADBOOL  R14 1 0      ; R14 := true
-112 [-]: LOADBOOL  R15 0 0      ; R15 := false
-113 [-]: CALL      R11 5 1      ; R11(R12,R13,R14,R15)
-114 [-]: SELF      R11 R5 K30   ; R12 := R5; R11 := R5[0x47901f07]
-115 [-]: GETGLOBAL R13 K31      ; R13 := 0x4268b887
-116 [-]: GETUPVAL  R14 U2       ; R14 := U2
-117 [-]: GETGLOBAL R15 K32      ; R15 := ZERO_VECTOR
-118 [-]: GETGLOBAL R16 K33      ; R16 := ZERO_ROTATION
-119 [-]: MOVE      R17 R0       ; R17 := R0
-120 [-]: CALL      R11 7 1      ; R11(R12,R13,R14,R15,R16,R17)
-121 [-]: GETGLOBAL R11 K34      ; R11 := 0xcbd666e1
-122 [-]: MOVE      R12 R9       ; R12 := R9
-123 [-]: CALL      R11 2 1      ; R11(R12)
-124 [-]: JMP       54           ; PC := 54
-125 [-]: GETGLOBAL R11 K5       ; R11 := _T
-126 [-]: GETTABLE  R11 R11 K6   ; R11 := R11["procAbsorb"]
-127 [-]: GETTABLE  R11 R11 R8   ; R11 := R11[R8]
-128 [-]: EQ        0 R11 K7     ; if R11 ~= nil then PC := 142
-129 [-]: JMP       142          ; PC := 142
-130 [-]: GETGLOBAL R11 K5       ; R11 := _T
-131 [-]: GETTABLE  R11 R11 K6   ; R11 := R11["procAbsorb"]
-132 [-]: SETTABLE  R11 R8 K22   ; R11[R8] := true
-133 [-]: GETUPVAL  R11 U1       ; R11 := U1
-134 [-]: GETTABLE  R11 R11 K27  ; R11 := R11[0x8c971f40]
-135 [-]: MOVE      R12 R5       ; R12 := R5
-136 [-]: LOADBOOL  R13 1 0      ; R13 := true
-137 [-]: CALL      R11 3 1      ; R11(R12,R13)
-138 [-]: SELF      R11 R6 K35   ; R12 := R6; R11 := R6[0x9c27a26d]
-139 [-]: GETGLOBAL R13 K16      ; R13 := 0x6687f6e0
-140 [-]: MOVE      R14 R7       ; R14 := R7
-141 [-]: CALL      R11 4 1      ; R11(R12,R13,R14)
-142 [-]: GETGLOBAL R11 K34      ; R11 := 0xcbd666e1
-143 [-]: LOADK     R12 0        ; R12 := 0.000000
-144 [-]: CALL      R11 2 1      ; R11(R12)
-145 [-]: JMP       54           ; PC := 54
-146 [-]: RETURN    R0 1         ; return 
+107 [-]: GETGLOBAL R13 K16      ; R13 := 0x6687f6e0
+108 [-]: MOVE      R14 R7       ; R14 := R7
+109 [-]: CALL      R11 4 1      ; R11(R12,R13,R14)
+110 [-]: SELF      R11 R5 K29   ; R12 := R5; R11 := R5[0x37e45fb5]
+111 [-]: MOVE      R13 R10      ; R13 := R10
+112 [-]: LOADKB    R14 1 0      ; R14 := true
+113 [-]: LOADKB    R15 0 0      ; R15 := false
+114 [-]: CALL      R11 5 1      ; R11(R12,R13,R14,R15)
+115 [-]: SELF      R11 R5 K30   ; R12 := R5; R11 := R5[0x47901f07]
+116 [-]: GETGLOBAL R13 K31      ; R13 := 0x4268b887
+117 [-]: GETUPVAL  R14 U2       ; R14 := U2
+118 [-]: GETGLOBAL R15 K32      ; R15 := ZERO_VECTOR
+119 [-]: GETGLOBAL R16 K33      ; R16 := ZERO_ROTATION
+120 [-]: MOVE      R17 R0       ; R17 := R0
+121 [-]: CALL      R11 7 1      ; R11(R12,R13,R14,R15,R16,R17)
+122 [-]: GETGLOBAL R11 K34      ; R11 := 0xcbd666e1
+123 [-]: MOVE      R12 R9       ; R12 := R9
+124 [-]: CALL      R11 2 1      ; R11(R12)
+125 [-]: JMP       54           ; PC := 54
+126 [-]: GETGLOBAL R11 K5       ; R11 := _T
+127 [-]: GETTABLE  R11 R11 K6   ; R11 := R11["procAbsorb"]
+128 [-]: GETTABLE  R11 R11 R8   ; R11 := R11[R8]
+129 [-]: EQ        0 R11 K7     ; if R11 ~= nil then PC := 143
+130 [-]: JMP       143          ; PC := 143
+131 [-]: GETGLOBAL R11 K5       ; R11 := _T
+132 [-]: GETTABLE  R11 R11 K6   ; R11 := R11["procAbsorb"]
+133 [-]: SETTABLE  R11 R8 K22   ; R11[R8] := true
+134 [-]: GETUPVAL  R11 U1       ; R11 := U1
+135 [-]: GETTABLE  R11 R11 K27  ; R11 := R11[0x8c971f40]
+136 [-]: MOVE      R12 R5       ; R12 := R5
+137 [-]: LOADKB    R13 1 0      ; R13 := true
+138 [-]: CALL      R11 3 1      ; R11(R12,R13)
+139 [-]: SELF      R11 R6 K35   ; R12 := R6; R11 := R6[0x9c27a26d]
+140 [-]: GETGLOBAL R13 K16      ; R13 := 0x6687f6e0
+141 [-]: MOVE      R14 R7       ; R14 := R7
+142 [-]: CALL      R11 4 1      ; R11(R12,R13,R14)
+143 [-]: GETGLOBAL R11 K34      ; R11 := 0xcbd666e1
+144 [-]: CONST     R12 0        ; R12 := 0.000000
+145 [-]: CALL      R11 2 1      ; R11(R12)
+146 [-]: JMP       54           ; PC := 54
+147 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #4:
@@ -235,7 +236,7 @@
 ; #Upvalues:       1
 ; #Parameters:     5
 ; Is_vararg:       0
-; Max Stack Size:  12
+; Max Stack Size:  13
 
   1 [-]: GETGLOBAL R5 K0        ; R5 := 0x7b998233
   2 [-]: MOVE      R6 R1        ; R6 := R1
@@ -247,26 +248,26 @@
   8 [-]: RETURN    R0 1         ; return 
   9 [-]: GETGLOBAL R5 K1        ; R5 := _T
  10 [-]: GETTABLE  R5 R5 K2     ; R5 := R5["procAbsorb"]
- 11 [-]: EQ        1 R5 K3      ; if R5 == nil then PC := 57
- 12 [-]: JMP       57           ; PC := 57
+ 11 [-]: EQ        1 R5 K3      ; if R5 == nil then PC := 58
+ 12 [-]: JMP       58           ; PC := 58
  13 [-]: SELF      R5 R1 K4     ; R6 := R1; R5 := R1[0x388577d5]
  14 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  15 [-]: GETGLOBAL R6 K1        ; R6 := _T
  16 [-]: GETTABLE  R6 R6 K2     ; R6 := R6["procAbsorb"]
  17 [-]: GETTABLE  R6 R6 R5     ; R6 := R6[R5]
- 18 [-]: EQ        0 R6 K5      ; if R6 ~= true then PC := 46
- 19 [-]: JMP       46           ; PC := 46
+ 18 [-]: EQ        0 R6 K5      ; if R6 ~= true then PC := 47
+ 19 [-]: JMP       47           ; PC := 47
  20 [-]: SELF      R6 R1 K6     ; R7 := R1; R6 := R1[0x1c881607]
  21 [-]: CALL      R6 2 2       ; R6 := R6(R7)
  22 [-]: GETGLOBAL R7 K0        ; R7 := 0x7b998233
  23 [-]: MOVE      R8 R6        ; R8 := R6
  24 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 25 [-]: TEST      R7 1         ; if R7 then PC := 46
- 26 [-]: JMP       46           ; PC := 46
+ 25 [-]: TEST      R7 1         ; if R7 then PC := 47
+ 26 [-]: JMP       47           ; PC := 47
  27 [-]: GETUPVAL  R7 U0        ; R7 := U0
  28 [-]: GETTABLE  R7 R7 K7     ; R7 := R7[0x8c971f40]
  29 [-]: MOVE      R8 R6        ; R8 := R6
- 30 [-]: LOADBOOL  R9 0 0       ; R9 := false
+ 30 [-]: LOADKB    R9 0 0       ; R9 := false
  31 [-]: CALL      R7 3 1       ; R7(R8,R9)
  32 [-]: SELF      R7 R6 K8     ; R8 := R6; R7 := R6[0xde321e6f]
  33 [-]: CALL      R7 2 2       ; R7 := R7(R8)
@@ -275,25 +276,26 @@
  36 [-]: GETGLOBAL R8 K0        ; R8 := 0x7b998233
  37 [-]: MOVE      R9 R7        ; R9 := R7
  38 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 39 [-]: TEST      R8 1         ; if R8 then PC := 46
- 40 [-]: JMP       46           ; PC := 46
+ 39 [-]: TEST      R8 1         ; if R8 then PC := 47
+ 40 [-]: JMP       47           ; PC := 47
  41 [-]: SELF      R8 R7 K10    ; R9 := R7; R8 := R7[0x56a4f3d7]
- 42 [-]: GETGLOBAL R10 K11      ; R10 := 0x0469f296
- 43 [-]: LOADK     R11 K12      ; R11 := "ProcBlocked"
- 44 [-]: CALL      R10 2 0      ; R10,... := R10(R11)
- 45 [-]: CALL      R8 0 1       ; R8(R9,...)
- 46 [-]: GETGLOBAL R8 K1        ; R8 := _T
- 47 [-]: GETTABLE  R8 R8 K2     ; R8 := R8["procAbsorb"]
- 48 [-]: SETTABLE  R8 R5 K3     ; R8[R5] := nil
- 49 [-]: GETGLOBAL R8 K13       ; R8 := 0x4ec73e73
- 50 [-]: GETGLOBAL R9 K1        ; R9 := _T
- 51 [-]: GETTABLE  R9 R9 K2     ; R9 := R9["procAbsorb"]
- 52 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 53 [-]: EQ        0 R8 K3      ; if R8 ~= nil then PC := 57
- 54 [-]: JMP       57           ; PC := 57
- 55 [-]: GETGLOBAL R8 K1        ; R8 := _T
- 56 [-]: SETTABLE  R8 K2 K3     ; R8["procAbsorb"] := nil
- 57 [-]: RETURN    R0 1         ; return 
+ 42 [-]: GETGLOBAL R10 K11      ; R10 := 0x6687f6e0
+ 43 [-]: GETGLOBAL R11 K12      ; R11 := 0x0469f296
+ 44 [-]: LOADK     R12 K13      ; R12 := "ProcBlocked"
+ 45 [-]: CALL      R11 2 0      ; R11,... := R11(R12)
+ 46 [-]: CALL      R8 0 1       ; R8(R9,...)
+ 47 [-]: GETGLOBAL R8 K1        ; R8 := _T
+ 48 [-]: GETTABLE  R8 R8 K2     ; R8 := R8["procAbsorb"]
+ 49 [-]: SETTABLE  R8 R5 K3     ; R8[R5] := nil
+ 50 [-]: GETGLOBAL R8 K14       ; R8 := 0x4ec73e73
+ 51 [-]: GETGLOBAL R9 K1        ; R9 := _T
+ 52 [-]: GETTABLE  R9 R9 K2     ; R9 := R9["procAbsorb"]
+ 53 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+ 54 [-]: EQ        0 R8 K3      ; if R8 ~= nil then PC := 58
+ 55 [-]: JMP       58           ; PC := 58
+ 56 [-]: GETGLOBAL R8 K1        ; R8 := _T
+ 57 [-]: SETTABLE  R8 K2 K3     ; R8["procAbsorb"] := nil
+ 58 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #5:
@@ -350,7 +352,7 @@
  43 [-]: CALL      R16 2 2      ; R16 := R16(R17)
  44 [-]: GETGLOBAL R17 K14      ; R17 := 0x6c97a788
  45 [-]: GETTABLE  R17 R17 K15  ; R17 := R17[0x733fc736]
- 46 [-]: LOADBOOL  R18 0 0      ; R18 := false
+ 46 [-]: LOADKB    R18 0 0      ; R18 := false
  47 [-]: CALL      R17 2 0      ; R17,... := R17(R18)
  48 [-]: CALL      R13 0 1      ; R13(R14,...)
  49 [-]: JMP       52           ; PC := 52

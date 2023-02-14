@@ -71,8 +71,8 @@
  16 [-]: GETTABLE  R2 R2 K5     ; R2 := R2[0x35c16153]
  17 [-]: CALL      R2 1 2       ; R2 := R2()
  18 [-]: SELF      R3 R2 K6     ; R4 := R2; R3 := R2[0xfc0e440a]
- 19 [-]: LOADK     R5 18        ; R5 := 18.000000
- 20 [-]: LOADBOOL  R6 1 0       ; R6 := true
+ 19 [-]: CONST     R5 18        ; R5 := 18.000000
+ 20 [-]: LOADKB    R6 1 0       ; R6 := true
  21 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
  22 [-]: SETTABLE  R2 K7 K8     ; R2["baseProcChance"] := 1.000000
  23 [-]: SELF      R3 R1 K9     ; R4 := R1; R3 := R1[0x479483bb]
@@ -129,12 +129,12 @@
  37 [-]: SELF      R8 R0 K14    ; R9 := R0; R8 := R0[0x2d0a291f]
  38 [-]: CALL      R8 2 0       ; R8,... := R8(R9)
  39 [-]: CALL      R6 0 1       ; R6(R7,...)
- 40 [-]: LOADK     R6 0         ; R6 := 0.000000
+ 40 [-]: CONST     R6 0         ; R6 := 0.000000
  41 [-]: GETGLOBAL R7 K15       ; R7 := 0xe15169d2
  42 [-]: LT        0 R6 R7      ; if R6 >= R7 then PC := 51
  43 [-]: JMP       51           ; PC := 51
  44 [-]: GETGLOBAL R7 K16       ; R7 := 0xcbd666e1
- 45 [-]: LOADK     R8 0         ; R8 := 0.000000
+ 45 [-]: CONST     R8 0         ; R8 := 0.000000
  46 [-]: CALL      R7 2 1       ; R7(R8)
  47 [-]: GETGLOBAL R7 K17       ; R7 := 0x67652851
  48 [-]: CALL      R7 1 2       ; R7 := R7()

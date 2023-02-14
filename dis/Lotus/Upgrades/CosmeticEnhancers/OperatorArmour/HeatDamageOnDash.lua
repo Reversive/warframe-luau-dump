@@ -110,28 +110,28 @@
  34 [-]: SUB       R3 R3 R4     ; R3 := R3 - R4
  35 [-]: SETTABLE  R2 K4 R3     ; R2["timer"] := R3
  36 [-]: GETGLOBAL R2 K8        ; R2 := 0xcbd666e1
- 37 [-]: LOADK     R3 0         ; R3 := 0.000000
+ 37 [-]: CONST     R3 0         ; R3 := 0.000000
  38 [-]: CALL      R2 2 1       ; R2(R3)
  39 [-]: JMP       10           ; PC := 10
  40 [-]: GETGLOBAL R2 K1        ; R2 := _T
  41 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["heatDashDamage"]
  42 [-]: GETTABLE  R2 R2 R1     ; R2 := R2[R1]
  43 [-]: GETTABLE  R2 R2 K9     ; R2 := R2["damage"]
- 44 [-]: LOADK     R3 1         ; R3 := 1.000000
+ 44 [-]: CONST     R3 1         ; R3 := 1.000000
  45 [-]: GETGLOBAL R4 K1        ; R4 := _T
  46 [-]: GETTABLE  R4 R4 K2     ; R4 := R4["heatDashDamage"]
  47 [-]: GETTABLE  R4 R4 R1     ; R4 := R4[R1]
  48 [-]: GETTABLE  R4 R4 K10    ; R4 := R4["stacks"]
- 49 [-]: LOADK     R5 1         ; R5 := 1.000000
+ 49 [-]: CONST     R5 1         ; R5 := 1.000000
  50 [-]: FORPREP   R3 60        ; R3 -= R5; PC := 60
  51 [-]: SELF      R7 R0 K11    ; R8 := R0; R7 := R0[0xde321e6f]
  52 [-]: CALL      R7 2 2       ; R7 := R7(R8)
  53 [-]: SELF      R7 R7 K12    ; R8 := R7; R7 := R7[0x12dd9da2]
- 54 [-]: LOADK     R9 300       ; R9 := 300.000000
- 55 [-]: LOADK     R10 0        ; R10 := 0.000000
+ 54 [-]: CONST     R9 306       ; R9 := 306.000000
+ 55 [-]: CONST     R10 0        ; R10 := 0.000000
  56 [-]: MOVE      R11 R2       ; R11 := R2
  57 [-]: LOADNIL   R12 R13      ; R12 := R13 := nil
- 58 [-]: LOADK     R14 3        ; R14 := 3.000000
+ 58 [-]: CONST     R14 3        ; R14 := 3.000000
  59 [-]: CALL      R7 8 1       ; R7(R8,R9,R10,R11,R12,R13,R14)
  60 [-]: FORLOOP   R3 51        ; R3 += R5; if R3 <= R4 then begin PC := 51; R6 := R3 end
  61 [-]: GETGLOBAL R7 K1        ; R7 := _T
@@ -182,7 +182,7 @@
  31 [-]: GETTABLE  R6 R6 R7     ; R6 := R6[R7]
  32 [-]: SELF      R7 R0 K9     ; R8 := R0; R7 := R0[0x388577d5]
  33 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 34 [-]: LOADBOOL  R8 0 0       ; R8 := false
+ 34 [-]: LOADKB    R8 0 0       ; R8 := false
  35 [-]: GETGLOBAL R9 K2        ; R9 := 0x7b998233
  36 [-]: GETGLOBAL R10 K3       ; R10 := _T
  37 [-]: GETTABLE  R10 R10 K4   ; R10 := R10["heatDashDamage"]
@@ -210,7 +210,7 @@
  59 [-]: GETGLOBAL R11 K15      ; R11 := 0x0469f296
  60 [-]: LOADK     R12 K16      ; R12 := "HeatDamageLoop"
  61 [-]: CALL      R11 2 2      ; R11 := R11(R12)
- 62 [-]: LOADBOOL  R12 0 0      ; R12 := false
+ 62 [-]: LOADKB    R12 0 0      ; R12 := false
  63 [-]: CALL      R9 4 1       ; R9(R10,R11,R12)
  64 [-]: JMP       96           ; PC := 96
  65 [-]: GETGLOBAL R9 K3        ; R9 := _T
@@ -227,8 +227,8 @@
  76 [-]: GETTABLE  R10 R10 R11  ; R10 := R10[R11]
  77 [-]: LE        1 R10 R9     ; if R10 <= R9 then PC := 80
  78 [-]: JMP       80           ; PC := 80
- 79 [-]: LOADBOOL  R8 0 1       ; R8 := false; PC := 80
- 80 [-]: LOADBOOL  R8 1 0       ; R8 := true
+ 79 [-]: LOADKB    R8 0 1       ; R8 := false; PC := 80
+ 80 [-]: LOADKB    R8 1 0       ; R8 := true
  81 [-]: GETGLOBAL R9 K3        ; R9 := _T
  82 [-]: GETTABLE  R9 R9 K4     ; R9 := R9["heatDashDamage"]
  83 [-]: GETTABLE  R9 R9 R7     ; R9 := R9[R7]
@@ -252,7 +252,7 @@
 101 [-]: MOVE      R11 R0       ; R11 := R0
 102 [-]: SETLIST   R10 1 1      ; R10[(1-1)*FPF+i] := R(10+i), 1 <= i <= 1
 103 [-]: SETTABLE  R9 K21 R10   ; R9["affected"] := R10
-104 [-]: SETTABLE  R9 K22 K23   ; R9["buffType"] := 12.000000
+104 [-]: SETTABLE  R9 K22 K23   ; R9["buffType"] := 13.000000
 105 [-]: SETTABLE  R9 K24 R4    ; R9["abilityType"] := R4
 106 [-]: GETGLOBAL R10 K3       ; R10 := _T
 107 [-]: GETTABLE  R10 R10 K4   ; R10 := R10["heatDashDamage"]
@@ -266,8 +266,8 @@
 115 [-]: SETTABLE  R9 K26 R10   ; R9["buffDataExtra"] := R10
 116 [-]: SELF      R10 R0 K27   ; R11 := R0; R10 := R0[0x37e45fb5]
 117 [-]: MOVE      R12 R9       ; R12 := R9
-118 [-]: LOADBOOL  R13 1 0      ; R13 := true
-119 [-]: LOADBOOL  R14 1 0      ; R14 := true
+118 [-]: LOADKB    R13 1 0      ; R13 := true
+119 [-]: LOADKB    R14 1 0      ; R14 := true
 120 [-]: CALL      R10 5 1      ; R10(R11,R12,R13,R14)
 121 [-]: TEST      R8 0         ; if not R8 then PC := 124
 122 [-]: JMP       124          ; PC := 124
@@ -275,11 +275,11 @@
 124 [-]: SELF      R10 R0 K28   ; R11 := R0; R10 := R0[0xde321e6f]
 125 [-]: CALL      R10 2 2      ; R10 := R10(R11)
 126 [-]: SELF      R10 R10 K29  ; R11 := R10; R10 := R10[0x5e6704ff]
-127 [-]: LOADK     R12 300      ; R12 := 300.000000
-128 [-]: LOADK     R13 0        ; R13 := 0.000000
+127 [-]: CONST     R12 306      ; R12 := 306.000000
+128 [-]: CONST     R13 0        ; R13 := 0.000000
 129 [-]: MOVE      R14 R5       ; R14 := R5
 130 [-]: LOADNIL   R15 R16      ; R15 := R16 := nil
-131 [-]: LOADK     R17 3        ; R17 := 3.000000
+131 [-]: CONST     R17 3        ; R17 := 3.000000
 132 [-]: CALL      R10 8 1      ; R10(R11,R12,R13,R14,R15,R16,R17)
 133 [-]: RETURN    R0 1         ; return 
 

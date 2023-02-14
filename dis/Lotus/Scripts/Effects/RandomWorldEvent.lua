@@ -43,14 +43,14 @@
   9 [-]: LE        0 R3 R1      ; if R3 > R1 then PC := 43
  10 [-]: JMP       43           ; PC := 43
  11 [-]: GETGLOBAL R3 K4        ; R3 := 0xc163f229
- 12 [-]: LOADK     R4 0         ; R4 := 0.000000
- 13 [-]: LOADK     R5 100       ; R5 := 100.000000
+ 12 [-]: CONST     R4 0         ; R4 := 0.000000
+ 13 [-]: CONST     R5 100       ; R5 := 100.000000
  14 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
  15 [-]: LE        0 R3 R1      ; if R3 > R1 then PC := 38
  16 [-]: JMP       38           ; PC := 38
  17 [-]: SELF      R4 R0 K5     ; R5 := R0; R4 := R0[0x751f061d]
  18 [-]: GETUPVAL  R6 U0        ; R6 := U0
- 19 [-]: LOADK     R7 0         ; R7 := 0.000000
+ 19 [-]: CONST     R7 0         ; R7 := 0.000000
  20 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
  21 [-]: GETGLOBAL R4 K6        ; R4 := 0x7b998233
  22 [-]: GETGLOBAL R5 K7        ; R5 := 0x3341b43b
@@ -101,14 +101,14 @@
   9 [-]: LE        0 R3 R1      ; if R3 > R1 then PC := 44
  10 [-]: JMP       44           ; PC := 44
  11 [-]: GETGLOBAL R3 K4        ; R3 := 0xc163f229
- 12 [-]: LOADK     R4 0         ; R4 := 0.000000
- 13 [-]: LOADK     R5 100       ; R5 := 100.000000
+ 12 [-]: CONST     R4 0         ; R4 := 0.000000
+ 13 [-]: CONST     R5 100       ; R5 := 100.000000
  14 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
  15 [-]: LE        0 R3 R1      ; if R3 > R1 then PC := 39
  16 [-]: JMP       39           ; PC := 39
  17 [-]: SELF      R4 R0 K5     ; R5 := R0; R4 := R0[0x751f061d]
  18 [-]: GETUPVAL  R6 U0        ; R6 := U0
- 19 [-]: LOADK     R7 0         ; R7 := 0.000000
+ 19 [-]: CONST     R7 0         ; R7 := 0.000000
  20 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
  21 [-]: GETGLOBAL R4 K6        ; R4 := 0x7b998233
  22 [-]: GETGLOBAL R5 K7        ; R5 := 0xb39d8ed1
@@ -150,8 +150,8 @@
 ; Max Stack Size:  5
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0xc163f229
-  2 [-]: LOADK     R1 0         ; R1 := 0.000000
-  3 [-]: LOADK     R2 100       ; R2 := 100.000000
+  2 [-]: CONST     R1 0         ; R1 := 0.000000
+  3 [-]: CONST     R2 100       ; R2 := 100.000000
   4 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
   5 [-]: GETGLOBAL R1 K1        ; R1 := 0x5c10fb7a
   6 [-]: TEST      R1 0         ; if not R1 then PC := 14
@@ -205,8 +205,8 @@
 ; Max Stack Size:  5
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0xc163f229
-  2 [-]: LOADK     R1 0         ; R1 := 0.000000
-  3 [-]: LOADK     R2 100       ; R2 := 100.000000
+  2 [-]: CONST     R1 0         ; R1 := 0.000000
+  3 [-]: CONST     R2 100       ; R2 := 100.000000
   4 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
   5 [-]: GETGLOBAL R1 K1        ; R1 := 0x5c10fb7a
   6 [-]: TEST      R1 0         ; if not R1 then PC := 14

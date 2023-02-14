@@ -23,7 +23,7 @@
 
   1 [-]: TEST      R2 0         ; if not R2 then PC := 5
   2 [-]: JMP       5            ; PC := 5
-  3 [-]: LOADBOOL  R3 0 0       ; R3 := false
+  3 [-]: LOADKB    R3 0 0       ; R3 := false
   4 [-]: RETURN    R3 2         ; return R3
   5 [-]: SELF      R3 R0 K0     ; R4 := R0; R3 := R0[0x52de0ed7]
   6 [-]: CALL      R3 2 2       ; R3 := R3(R4)
@@ -37,7 +37,7 @@
  14 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
  15 [-]: TEST      R4 1         ; if R4 then PC := 19
  16 [-]: JMP       19           ; PC := 19
- 17 [-]: LOADBOOL  R4 0 0       ; R4 := false
+ 17 [-]: LOADKB    R4 0 0       ; R4 := false
  18 [-]: RETURN    R4 2         ; return R4
  19 [-]: GETGLOBAL R4 K1        ; R4 := 0x7b998233
  20 [-]: GETGLOBAL R5 K4        ; R5 := _T
@@ -54,7 +54,7 @@
  31 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  32 [-]: TEST      R4 0         ; if not R4 then PC := 36
  33 [-]: JMP       36           ; PC := 36
- 34 [-]: LOADBOOL  R4 0 0       ; R4 := false
+ 34 [-]: LOADKB    R4 0 0       ; R4 := false
  35 [-]: RETURN    R4 2         ; return R4
  36 [-]: GETGLOBAL R4 K1        ; R4 := 0x7b998233
  37 [-]: GETGLOBAL R5 K4        ; R5 := _T
@@ -87,12 +87,12 @@
  64 [-]: GETGLOBAL R6 K8        ; R6 := 0x55156ff7
  65 [-]: CALL      R6 1 2       ; R6 := R6()
  66 [-]: SETTABLE  R5 R4 R6     ; R5[R4] := R6
- 67 [-]: LOADBOOL  R5 0 0       ; R5 := false
+ 67 [-]: LOADKB    R5 0 0       ; R5 := false
  68 [-]: RETURN    R5 2         ; return R5
  69 [-]: GETGLOBAL R5 K4        ; R5 := _T
  70 [-]: GETTABLE  R5 R5 K7     ; R5 := R5["ZarimanDaggerFinisherBuff"]
  71 [-]: SETTABLE  R5 R4 K10    ; R5[R4] := nil
- 72 [-]: LOADBOOL  R5 1 0       ; R5 := true
+ 72 [-]: LOADKB    R5 1 0       ; R5 := true
  73 [-]: RETURN    R5 2         ; return R5
  74 [-]: RETURN    R0 1         ; return 
 

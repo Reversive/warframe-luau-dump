@@ -43,7 +43,7 @@
 
   1 [-]: SELF      R1 R0 K0     ; R2 := R0; R1 := R0[0x22da1852]
   2 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  3 [-]: LOADK     R2 0         ; R2 := 0.000000
+  3 [-]: CONST     R2 0         ; R2 := 0.000000
   4 [-]: GETGLOBAL R3 K1        ; R3 := 0xc8802016
   5 [-]: GETUPVAL  R4 U0        ; R4 := U0
   6 [-]: CALL      R3 2 4       ; R3,R4,R5 := R3(R4)
@@ -62,12 +62,12 @@
  19 [-]: SELF      R8 R0 K10    ; R9 := R0; R8 := R0[0x5d985c7e]
  20 [-]: GETGLOBAL R10 K11      ; R10 := 0x85ceeb45
  21 [-]: GETTABLE  R10 R10 R2   ; R10 := R10[R2]
- 22 [-]: LOADBOOL  R11 1 0      ; R11 := true
- 23 [-]: LOADBOOL  R12 0 0      ; R12 := false
+ 22 [-]: LOADKB    R11 1 0      ; R11 := true
+ 23 [-]: LOADKB    R12 0 0      ; R12 := false
  24 [-]: CALL      R8 5 1       ; R8(R9,R10,R11,R12)
  25 [-]: SELF      R8 R0 K12    ; R9 := R0; R8 := R0[0x768274d6]
- 26 [-]: LOADBOOL  R10 0 0      ; R10 := false
- 27 [-]: LOADBOOL  R11 1 0      ; R11 := true
+ 26 [-]: LOADKB    R10 0 0      ; R10 := false
+ 27 [-]: LOADKB    R11 1 0      ; R11 := true
  28 [-]: CALL      R8 4 1       ; R8(R9,R10,R11)
  29 [-]: GETGLOBAL R8 K3        ; R8 := _T
  30 [-]: GETTABLE  R8 R8 K4     ; R8 := R8["gHangarStatusArray"]
@@ -89,7 +89,7 @@
 
   1 [-]: SELF      R1 R0 K0     ; R2 := R0; R1 := R0[0x22da1852]
   2 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  3 [-]: LOADK     R2 0         ; R2 := 0.000000
+  3 [-]: CONST     R2 0         ; R2 := 0.000000
   4 [-]: GETGLOBAL R3 K1        ; R3 := 0xc8802016
   5 [-]: GETUPVAL  R4 U0        ; R4 := U0
   6 [-]: CALL      R3 2 4       ; R3,R4,R5 := R3(R4)
@@ -108,8 +108,8 @@
  19 [-]: SELF      R8 R0 K10    ; R9 := R0; R8 := R0[0x5d985c7e]
  20 [-]: GETGLOBAL R10 K11      ; R10 := 0xc5e56cfa
  21 [-]: GETTABLE  R10 R10 R2   ; R10 := R10[R2]
- 22 [-]: LOADBOOL  R11 1 0      ; R11 := true
- 23 [-]: LOADBOOL  R12 0 0      ; R12 := false
+ 22 [-]: LOADKB    R11 1 0      ; R11 := true
+ 23 [-]: LOADKB    R12 0 0      ; R12 := false
  24 [-]: CALL      R8 5 1       ; R8(R9,R10,R11,R12)
  25 [-]: GETGLOBAL R8 K3        ; R8 := _T
  26 [-]: GETTABLE  R8 R8 K4     ; R8 := R8["gHangarStatusArray"]
@@ -129,7 +129,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  20
 
-  1 [-]: LOADK     R0 0         ; R0 := 0.000000
+  1 [-]: CONST     R0 0         ; R0 := 0.000000
   2 [-]: GETGLOBAL R1 K0        ; R1 := 0xc8802016
   3 [-]: GETGLOBAL R2 K1        ; R2 := 0x06beee25
   4 [-]: CALL      R1 2 4       ; R1,R2,R3 := R1(R2)
@@ -141,21 +141,21 @@
  10 [-]: SETTABLE  R7 K5 K6     ; R7["status"] := "IDLE"
  11 [-]: SETTABLE  R6 R4 R7     ; R6[R4] := R7
  12 [-]: SELF      R6 R5 K7     ; R7 := R5; R6 := R5[0x768274d6]
- 13 [-]: LOADBOOL  R8 1 0       ; R8 := true
+ 13 [-]: LOADKB    R8 1 0       ; R8 := true
  14 [-]: CALL      R6 3 1       ; R6(R7,R8)
  15 [-]: SELF      R6 R5 K8     ; R7 := R5; R6 := R5[0x5d985c7e]
  16 [-]: GETGLOBAL R8 K9        ; R8 := 0xf9d3aaac
- 17 [-]: LOADBOOL  R9 0 0       ; R9 := false
- 18 [-]: LOADBOOL  R10 1 0      ; R10 := true
+ 17 [-]: LOADKB    R9 0 0       ; R9 := false
+ 18 [-]: LOADKB    R10 1 0      ; R10 := true
  19 [-]: CALL      R6 5 1       ; R6(R7,R8,R9,R10)
  20 [-]: TFORLOOP  R1 2         ; R4,R5 :=  R1(R2,R3); if R4 ~= nil then begin PC = 6; R3 := R4 end
  21 [-]: JMP       6            ; PC := 6
  22 [-]: GETGLOBAL R6 K10       ; R6 := 0xc163f229
- 23 [-]: LOADK     R7 6         ; R7 := 6.000000
- 24 [-]: LOADK     R8 8         ; R8 := 8.000000
+ 23 [-]: CONST     R7 6         ; R7 := 6.000000
+ 24 [-]: CONST     R8 8         ; R8 := 8.000000
  25 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
- 26 [-]: LOADBOOL  R7 0 0       ; R7 := false
- 27 [-]: LOADBOOL  R8 0 0       ; R8 := false
+ 26 [-]: LOADKB    R7 0 0       ; R7 := false
+ 27 [-]: LOADKB    R8 0 0       ; R8 := false
  28 [-]: GETGLOBAL R9 K0        ; R9 := 0xc8802016
  29 [-]: GETGLOBAL R10 K2       ; R10 := _T
  30 [-]: GETTABLE  R10 R10 K3   ; R10 := R10["gHangarStatusArray"]
@@ -165,8 +165,8 @@
  34 [-]: EQ        0 R14 K6     ; if R14 ~= "IDLE" then PC := 58
  35 [-]: JMP       58           ; PC := 58
  36 [-]: GETGLOBAL R14 K11      ; R14 := 0x55730e1a
- 37 [-]: LOADK     R15 1        ; R15 := 1.000000
- 38 [-]: LOADK     R16 3        ; R16 := 3.000000
+ 37 [-]: CONST     R15 1        ; R15 := 1.000000
+ 38 [-]: CONST     R16 3        ; R16 := 3.000000
  39 [-]: CALL      R14 3 2      ; R14 := R14(R15,R16)
  40 [-]: EQ        0 R14 K12    ; if R14 ~= 1.000000 then PC := 54
  41 [-]: JMP       54           ; PC := 54
@@ -174,38 +174,38 @@
  43 [-]: JMP       54           ; PC := 54
  44 [-]: TEST      R8 1         ; if R8 then PC := 54
  45 [-]: JMP       54           ; PC := 54
- 46 [-]: LOADBOOL  R8 1 0       ; R8 := true
+ 46 [-]: LOADKB    R8 1 0       ; R8 := true
  47 [-]: GETTABLE  R15 R13 K4   ; R15 := R13["instance"]
  48 [-]: SELF      R15 R15 K13  ; R16 := R15; R15 := R15[0xd5f7912b]
  49 [-]: GETGLOBAL R17 K14      ; R17 := 0x0469f296
  50 [-]: LOADK     R18 K15      ; R18 := "UndockLiset"
  51 [-]: CALL      R17 2 2      ; R17 := R17(R18)
- 52 [-]: LOADBOOL  R18 0 0      ; R18 := false
+ 52 [-]: LOADKB    R18 0 0      ; R18 := false
  53 [-]: CALL      R15 4 1      ; R15(R16,R17,R18)
  54 [-]: GETGLOBAL R15 K16      ; R15 := 0xcbd666e1
- 55 [-]: LOADK     R16 0        ; R16 := 0.000000
+ 55 [-]: CONST     R16 0        ; R16 := 0.000000
  56 [-]: CALL      R15 2 1      ; R15(R16)
  57 [-]: JMP       101          ; PC := 101
  58 [-]: GETTABLE  R15 R13 K5   ; R15 := R13["status"]
  59 [-]: EQ        0 R15 K17    ; if R15 ~= "DOCKING" then PC := 65
  60 [-]: JMP       65           ; PC := 65
  61 [-]: GETGLOBAL R15 K16      ; R15 := 0xcbd666e1
- 62 [-]: LOADK     R16 0        ; R16 := 0.000000
+ 62 [-]: CONST     R16 0        ; R16 := 0.000000
  63 [-]: CALL      R15 2 1      ; R15(R16)
  64 [-]: JMP       101          ; PC := 101
  65 [-]: GETTABLE  R15 R13 K5   ; R15 := R13["status"]
  66 [-]: EQ        0 R15 K18    ; if R15 ~= "UNDOCKING" then PC := 72
  67 [-]: JMP       72           ; PC := 72
  68 [-]: GETGLOBAL R15 K16      ; R15 := 0xcbd666e1
- 69 [-]: LOADK     R16 0        ; R16 := 0.000000
+ 69 [-]: CONST     R16 0        ; R16 := 0.000000
  70 [-]: CALL      R15 2 1      ; R15(R16)
  71 [-]: JMP       101          ; PC := 101
  72 [-]: GETTABLE  R15 R13 K5   ; R15 := R13["status"]
  73 [-]: EQ        0 R15 K19    ; if R15 ~= "EMPTY" then PC := 101
  74 [-]: JMP       101          ; PC := 101
  75 [-]: GETGLOBAL R15 K11      ; R15 := 0x55730e1a
- 76 [-]: LOADK     R16 1        ; R16 := 1.000000
- 77 [-]: LOADK     R17 3        ; R17 := 3.000000
+ 76 [-]: CONST     R16 1        ; R16 := 1.000000
+ 77 [-]: CONST     R17 3        ; R17 := 3.000000
  78 [-]: CALL      R15 3 2      ; R15 := R15(R16,R17)
  79 [-]: EQ        0 R15 K12    ; if R15 ~= 1.000000 then PC := 101
  80 [-]: JMP       101          ; PC := 101
@@ -213,21 +213,21 @@
  82 [-]: JMP       101          ; PC := 101
  83 [-]: TEST      R8 1         ; if R8 then PC := 101
  84 [-]: JMP       101          ; PC := 101
- 85 [-]: LOADBOOL  R7 1 0       ; R7 := true
+ 85 [-]: LOADKB    R7 1 0       ; R7 := true
  86 [-]: GETTABLE  R16 R13 K4   ; R16 := R13["instance"]
  87 [-]: SELF      R16 R16 K13  ; R17 := R16; R16 := R16[0xd5f7912b]
  88 [-]: GETGLOBAL R18 K14      ; R18 := 0x0469f296
  89 [-]: LOADK     R19 K20      ; R19 := "DockLiset"
  90 [-]: CALL      R18 2 2      ; R18 := R18(R19)
- 91 [-]: LOADBOOL  R19 0 0      ; R19 := false
+ 91 [-]: LOADKB    R19 0 0      ; R19 := false
  92 [-]: CALL      R16 4 1      ; R16(R17,R18,R19)
  93 [-]: GETGLOBAL R16 K16      ; R16 := 0xcbd666e1
  94 [-]: LOADK     R17 K21      ; R17 := 0.100000
  95 [-]: CALL      R16 2 1      ; R16(R17)
  96 [-]: GETTABLE  R16 R13 K4   ; R16 := R13["instance"]
  97 [-]: SELF      R16 R16 K7   ; R17 := R16; R16 := R16[0x768274d6]
- 98 [-]: LOADBOOL  R18 1 0      ; R18 := true
- 99 [-]: LOADBOOL  R19 1 0      ; R19 := true
+ 98 [-]: LOADKB    R18 1 0      ; R18 := true
+ 99 [-]: LOADKB    R19 1 0      ; R19 := true
 100 [-]: CALL      R16 4 1      ; R16(R17,R18,R19)
 101 [-]: TFORLOOP  R9 2         ; R12,R13 :=  R9(R10,R11); if R12 ~= nil then begin PC = 33; R11 := R12 end
 102 [-]: JMP       33           ; PC := 33

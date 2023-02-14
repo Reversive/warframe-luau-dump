@@ -212,16 +212,16 @@
  16 [-]: GETTABLE  R8 R8 R2     ; R8 := R8[R2]
  17 [-]: LT        0 R7 R8      ; if R7 >= R8 then PC := 21
  18 [-]: JMP       21           ; PC := 21
- 19 [-]: LOADK     R7 0         ; R7 := 0.000000
+ 19 [-]: CONST     R7 0         ; R7 := 0.000000
  20 [-]: RETURN    R7 2         ; return R7
  21 [-]: EQ        1 R5 K1      ; if R5 == nil then PC := 28
  22 [-]: JMP       28           ; PC := 28
  23 [-]: SELF      R7 R0 K4     ; R8 := R0; R7 := R0[0x48d05257]
  24 [-]: GETTABLE  R9 R5 K5     ; R9 := R5["avatar"]
  25 [-]: CALL      R7 3 1       ; R7(R8,R9)
- 26 [-]: LOADK     R7 1         ; R7 := 1.000000
+ 26 [-]: CONST     R7 1         ; R7 := 1.000000
  27 [-]: RETURN    R7 2         ; return R7
- 28 [-]: LOADK     R7 0         ; R7 := 0.000000
+ 28 [-]: CONST     R7 0         ; R7 := 0.000000
  29 [-]: RETURN    R7 2         ; return R7
  30 [-]: RETURN    R0 1         ; return 
 
@@ -258,10 +258,10 @@
  21 [-]: CALL      R8 0 1       ; R8(R9,...)
  22 [-]: SELF      R8 R1 K8     ; R9 := R1; R8 := R1[0x7027c544]
  23 [-]: GETGLOBAL R10 K9       ; R10 := 0xc5321a17
- 24 [-]: LOADBOOL  R11 1 0      ; R11 := true
- 25 [-]: LOADK     R12 2        ; R12 := 2.000000
- 26 [-]: LOADK     R13 1        ; R13 := 1.000000
- 27 [-]: LOADBOOL  R14 1 0      ; R14 := true
+ 24 [-]: LOADKB    R11 1 0      ; R11 := true
+ 25 [-]: CONST     R12 2        ; R12 := 2.000000
+ 26 [-]: CONST     R13 1        ; R13 := 1.000000
+ 27 [-]: LOADKB    R14 1 0      ; R14 := true
  28 [-]: CALL      R8 7 1       ; R8(R9,R10,R11,R12,R13,R14)
  29 [-]: GETGLOBAL R8 K2        ; R8 := 0x7b998233
  30 [-]: MOVE      R9 R2        ; R9 := R2

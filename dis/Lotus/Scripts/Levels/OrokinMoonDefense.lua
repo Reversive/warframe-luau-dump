@@ -27,11 +27,11 @@
 ; Is_vararg:       0
 ; Max Stack Size:  18
 
-  1 [-]: LOADK     R0 0         ; R0 := 0.000000
+  1 [-]: CONST     R0 0         ; R0 := 0.000000
   2 [-]: GETUPVAL  R1 U0        ; R1 := U0
   3 [-]: SELF      R1 R1 K0     ; R2 := R1; R1 := R1[0x0eb34c69]
   4 [-]: GETUPVAL  R3 U1        ; R3 := U1
-  5 [-]: LOADK     R4 0         ; R4 := 0.000000
+  5 [-]: CONST     R4 0         ; R4 := 0.000000
   6 [-]: CALL      R1 4 2       ; R1 := R1(R2,R3,R4)
   7 [-]: GETGLOBAL R2 K1        ; R2 := 0xc8802016
   8 [-]: GETGLOBAL R3 K2        ; R3 := 0x0e6668ee
@@ -121,7 +121,7 @@
  92 [-]: TEST      R14 1        ; if R14 then PC := 99
  93 [-]: JMP       99           ; PC := 99
  94 [-]: GETGLOBAL R14 K22      ; R14 := 0xcbd666e1
- 95 [-]: LOADK     R15 7        ; R15 := 7.000000
+ 95 [-]: CONST     R15 7        ; R15 := 7.000000
  96 [-]: CALL      R14 2 1      ; R14(R15)
  97 [-]: SELF      R14 R7 K23   ; R15 := R7; R14 := R7[0x383d2e7d]
  98 [-]: CALL      R14 2 1      ; R14(R15)

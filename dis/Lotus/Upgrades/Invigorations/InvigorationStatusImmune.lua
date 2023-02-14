@@ -26,20 +26,24 @@
 ; #Upvalues:       1
 ; #Parameters:     5
 ; Is_vararg:       0
-; Max Stack Size:  8
+; Max Stack Size:  10
 
   1 [-]: SELF      R5 R0 K0     ; R6 := R0; R5 := R0[0x1ac1655c]
   2 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-  3 [-]: SELF      R5 R5 K1     ; R6 := R5; R5 := R5[0x857557de]
-  4 [-]: GETUPVAL  R7 U0        ; R7 := U0
-  5 [-]: CALL      R5 3 1       ; R5(R6,R7)
-  6 [-]: RETURN    R0 1         ; return 
+  3 [-]: SELF      R6 R5 K1     ; R7 := R5; R6 := R5[0x857557de]
+  4 [-]: GETUPVAL  R8 U0        ; R8 := U0
+  5 [-]: CALL      R6 3 1       ; R6(R7,R8)
+  6 [-]: SELF      R6 R5 K2     ; R7 := R5; R6 := R5[0xde9ee3a4]
+  7 [-]: CONST     R8 21        ; R8 := 21.000000
+  8 [-]: GETUPVAL  R9 U0        ; R9 := U0
+  9 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
+ 10 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #2:
 ;
 ; Name:            
-; Defined at line: 7
+; Defined at line: 9
 ; #Upvalues:       1
 ; #Parameters:     5
 ; Is_vararg:       0

@@ -41,7 +41,7 @@
   5 [-]: SELF      R1 R0 K1     ; R2 := R0; R1 := R0[0x6bfeac2e]
   6 [-]: CALL      R1 2 1       ; R1(R2)
   7 [-]: GETGLOBAL R1 K2        ; R1 := 0xcbd666e1
-  8 [-]: LOADK     R2 0         ; R2 := 0.000000
+  8 [-]: CONST     R2 0         ; R2 := 0.000000
   9 [-]: CALL      R1 2 1       ; R1(R2)
  10 [-]: SELF      R1 R0 K3     ; R2 := R0; R1 := R0[0xdefdef64]
  11 [-]: CALL      R1 2 2       ; R1 := R1(R2)
@@ -63,7 +63,7 @@
 ; Max Stack Size:  4
 
   1 [-]: SELF      R1 R0 K0     ; R2 := R0; R1 := R0[0xf4c60cd6]
-  2 [-]: LOADK     R3 1         ; R3 := 1.000000
+  2 [-]: CONST     R3 1         ; R3 := 1.000000
   3 [-]: CALL      R1 3 1       ; R1(R2,R3)
   4 [-]: GETUPVAL  R1 U0        ; R1 := U0
   5 [-]: MOVE      R2 R0        ; R2 := R0
@@ -108,7 +108,7 @@
 
   1 [-]: TEST      R1 1         ; if R1 then PC := 4
   2 [-]: JMP       4            ; PC := 4
-  3 [-]: LOADK     R1 10        ; R1 := 10.000000
+  3 [-]: CONST     R1 10        ; R1 := 10.000000
   4 [-]: SELF      R2 R0 K0     ; R3 := R0; R2 := R0[0xf4c60cd6]
   5 [-]: MOVE      R4 R1        ; R4 := R1
   6 [-]: CALL      R2 3 1       ; R2(R3,R4)
@@ -121,7 +121,7 @@
  13 [-]: LOADNIL   R3 R3        ; R3 := nil
  14 [-]: RETURN    R3 2         ; return R3
  15 [-]: GETGLOBAL R3 K2        ; R3 := 0x55730e1a
- 16 [-]: LOADK     R4 1         ; R4 := 1.000000
+ 16 [-]: CONST     R4 1         ; R4 := 1.000000
  17 [-]: LEN       R5 R2        ; R5 := # R2
  18 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
  19 [-]: GETTABLE  R4 R2 R3     ; R4 := R2[R3]

@@ -31,7 +31,7 @@
 ; Max Stack Size:  10
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0xcbd666e1
-  2 [-]: LOADK     R2 0         ; R2 := 0.000000
+  2 [-]: CONST     R2 0         ; R2 := 0.000000
   3 [-]: CALL      R1 2 1       ; R1(R2)
   4 [-]: GETGLOBAL R1 K1        ; R1 := 0x7b998233
   5 [-]: MOVE      R2 R0        ; R2 := R0
@@ -50,11 +50,11 @@
  18 [-]: CALL      R1 2 2       ; R1 := R1(R2)
  19 [-]: TEST      R1 1         ; if R1 then PC := 64
  20 [-]: JMP       64           ; PC := 64
- 21 [-]: LOADBOOL  R1 0 0       ; R1 := false
- 22 [-]: LOADK     R2 1         ; R2 := 1.000000
+ 21 [-]: LOADKB    R1 0 0       ; R1 := false
+ 22 [-]: CONST     R2 1         ; R2 := 1.000000
  23 [-]: GETGLOBAL R3 K5        ; R3 := transmissionTypes
  24 [-]: LEN       R3 R3        ; R3 := # R3
- 25 [-]: LOADK     R4 1         ; R4 := 1.000000
+ 25 [-]: CONST     R4 1         ; R4 := 1.000000
  26 [-]: FORPREP   R2 43        ; R2 -= R4; PC := 43
  27 [-]: GETGLOBAL R6 K1        ; R6 := 0x7b998233
  28 [-]: GETGLOBAL R7 K5        ; R7 := transmissionTypes
@@ -70,7 +70,7 @@
  38 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
  39 [-]: TEST      R6 0         ; if not R6 then PC := 43
  40 [-]: JMP       43           ; PC := 43
- 41 [-]: LOADBOOL  R1 1 0       ; R1 := true
+ 41 [-]: LOADKB    R1 1 0       ; R1 := true
  42 [-]: JMP       44           ; PC := 44
  43 [-]: FORLOOP   R2 27        ; R2 += R4; if R2 <= R3 then begin PC := 27; R5 := R2 end
  44 [-]: TEST      R1 0         ; if not R1 then PC := 64
@@ -78,23 +78,23 @@
  46 [-]: GETGLOBAL R6 K2        ; R6 := _T
  47 [-]: GETTABLE  R6 R6 K3     ; R6 := R6["TransmissionSoundInstance"]
  48 [-]: SELF      R6 R6 K7     ; R7 := R6; R6 := R6[0xef040c26]
- 49 [-]: LOADK     R8 1         ; R8 := 1.000000
- 50 [-]: LOADK     R9 -1        ; R9 := -1.000000
+ 49 [-]: CONST     R8 1         ; R8 := 1.000000
+ 50 [-]: CONST     R9 -1        ; R9 := -1.000000
  51 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
  52 [-]: GETGLOBAL R6 K2        ; R6 := _T
  53 [-]: GETTABLE  R6 R6 K3     ; R6 := R6["TransmissionSoundInstance"]
  54 [-]: SELF      R6 R6 K7     ; R7 := R6; R6 := R6[0xef040c26]
- 55 [-]: LOADK     R8 2         ; R8 := 2.000000
- 56 [-]: LOADK     R9 -1        ; R9 := -1.000000
+ 55 [-]: CONST     R8 2         ; R8 := 2.000000
+ 56 [-]: CONST     R9 -1        ; R9 := -1.000000
  57 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
  58 [-]: GETGLOBAL R6 K2        ; R6 := _T
  59 [-]: GETTABLE  R6 R6 K3     ; R6 := R6["TransmissionSoundInstance"]
  60 [-]: SELF      R6 R6 K7     ; R7 := R6; R6 := R6[0xef040c26]
- 61 [-]: LOADK     R8 3         ; R8 := 3.000000
- 62 [-]: LOADK     R9 -1        ; R9 := -1.000000
+ 61 [-]: CONST     R8 3         ; R8 := 3.000000
+ 62 [-]: CONST     R9 -1        ; R9 := -1.000000
  63 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
  64 [-]: GETGLOBAL R6 K0        ; R6 := 0xcbd666e1
- 65 [-]: LOADK     R7 0         ; R7 := 0.000000
+ 65 [-]: CONST     R7 0         ; R7 := 0.000000
  66 [-]: CALL      R6 2 1       ; R6(R7)
  67 [-]: JMP       4            ; PC := 4
  68 [-]: RETURN    R0 1         ; return 

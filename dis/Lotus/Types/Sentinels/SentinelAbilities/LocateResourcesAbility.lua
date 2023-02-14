@@ -7,7 +7,7 @@
 ; Is_vararg:       2
 ; Max Stack Size:  2
 
-  1 [-]: LOADK     R0 30        ; R0 := 30.000000
+  1 [-]: CONST     R0 30        ; R0 := 30.000000
   2 [-]: CLOSURE   R1 0         ; R1 := closure(Function #1)
   3 [-]: MOVE      R0 R0        ; R0 := R0
   4 [-]: SETGLOBAL R1 K0        ; GetDescriptionInfo := R1
@@ -66,7 +66,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  5
 
-  1 [-]: LOADK     R4 1         ; R4 := 1.000000
+  1 [-]: CONST     R4 1         ; R4 := 1.000000
   2 [-]: RETURN    R4 2         ; return R4
   3 [-]: RETURN    R0 1         ; return 
 
@@ -105,21 +105,21 @@
  23 [-]: SELF      R7 R1 K6     ; R8 := R1; R7 := R1[0xde321e6f]
  24 [-]: CALL      R7 2 2       ; R7 := R7(R8)
  25 [-]: SELF      R8 R7 K7     ; R9 := R7; R8 := R7[0x881b6b90]
- 26 [-]: LOADK     R10 0        ; R10 := 0.000000
+ 26 [-]: CONST     R10 0        ; R10 := 0.000000
  27 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
- 28 [-]: LOADK     R9 0         ; R9 := 0.000000
- 29 [-]: LOADK     R10 0        ; R10 := 0.000000
+ 28 [-]: CONST     R9 0         ; R9 := 0.000000
+ 29 [-]: CONST     R10 0        ; R10 := 0.000000
  30 [-]: GETGLOBAL R11 K9       ; R11 := 0x67652851
  31 [-]: CALL      R11 1 2      ; R11 := R11()
  32 [-]: ADD       R10 R10 R11  ; R10 := R10 + R11
  33 [-]: GETUPVAL  R11 U0       ; R11 := U0
  34 [-]: LE        0 R11 R10    ; if R11 > R10 then PC := 64
  35 [-]: JMP       64           ; PC := 64
- 36 [-]: LOADK     R10 0        ; R10 := 0.000000
+ 36 [-]: CONST     R10 0        ; R10 := 0.000000
  37 [-]: SELF      R11 R7 K10   ; R12 := R7; R11 := R7[0x032a0844]
  38 [-]: MOVE      R13 R6       ; R13 := R6
- 39 [-]: LOADK     R14 74       ; R14 := 74.000000
- 40 [-]: LOADK     R15 0        ; R15 := 0.000000
+ 39 [-]: CONST     R14 75       ; R14 := 75.000000
+ 40 [-]: CONST     R15 0        ; R15 := 0.000000
  41 [-]: MOVE      R16 R5       ; R16 := R5
  42 [-]: CALL      R11 6 1      ; R11(R12,R13,R14,R15,R16)
  43 [-]: GETGLOBAL R11 K12      ; R11 := 0x7b998233
@@ -133,14 +133,14 @@
  51 [-]: JMP       64           ; PC := 64
  52 [-]: SELF      R11 R1 K14   ; R12 := R1; R11 := R1[0x5d985c7e]
  53 [-]: GETGLOBAL R13 K15      ; R13 := 0x1a4560cb
- 54 [-]: LOADBOOL  R14 1 0      ; R14 := true
+ 54 [-]: LOADKB    R14 1 0      ; R14 := true
  55 [-]: CALL      R11 4 1      ; R11(R12,R13,R14)
  56 [-]: SELF      R11 R1 K14   ; R12 := R1; R11 := R1[0x5d985c7e]
  57 [-]: GETGLOBAL R13 K16      ; R13 := 0x95169449
- 58 [-]: LOADBOOL  R14 0 0      ; R14 := false
- 59 [-]: LOADK     R15 2        ; R15 := 2.000000
- 60 [-]: LOADK     R16 2        ; R16 := 2.000000
- 61 [-]: LOADBOOL  R17 0 0      ; R17 := false
+ 58 [-]: LOADKB    R14 0 0      ; R14 := false
+ 59 [-]: CONST     R15 2        ; R15 := 2.000000
+ 60 [-]: CONST     R16 2        ; R16 := 2.000000
+ 61 [-]: LOADKB    R17 0 0      ; R17 := false
  62 [-]: CALL      R11 7 1      ; R11(R12,R13,R14,R15,R16,R17)
  63 [-]: MOVE      R9 R6        ; R9 := R6
  64 [-]: LT        0 K17 R9     ; if 0.000000 >= R9 then PC := 80
@@ -150,17 +150,17 @@
  68 [-]: SUB       R9 R9 R11    ; R9 := R9 - R11
  69 [-]: LE        0 R9 K17     ; if R9 > 0.000000 then PC := 80
  70 [-]: JMP       80           ; PC := 80
- 71 [-]: LOADK     R9 0         ; R9 := 0.000000
+ 71 [-]: CONST     R9 0         ; R9 := 0.000000
  72 [-]: SELF      R11 R1 K14   ; R12 := R1; R11 := R1[0x5d985c7e]
  73 [-]: GETGLOBAL R13 K18      ; R13 := 0xff88fc98
- 74 [-]: LOADBOOL  R14 1 0      ; R14 := true
+ 74 [-]: LOADKB    R14 1 0      ; R14 := true
  75 [-]: CALL      R11 4 1      ; R11(R12,R13,R14)
  76 [-]: SELF      R11 R1 K14   ; R12 := R1; R11 := R1[0x5d985c7e]
  77 [-]: LOADNIL   R13 R13      ; R13 := nil
- 78 [-]: LOADBOOL  R14 0 0      ; R14 := false
+ 78 [-]: LOADKB    R14 0 0      ; R14 := false
  79 [-]: CALL      R11 4 1      ; R11(R12,R13,R14)
  80 [-]: GETGLOBAL R11 K19      ; R11 := 0xcbd666e1
- 81 [-]: LOADK     R12 0        ; R12 := 0.000000
+ 81 [-]: CONST     R12 0        ; R12 := 0.000000
  82 [-]: CALL      R11 2 1      ; R11(R12)
  83 [-]: JMP       30           ; PC := 30
  84 [-]: RETURN    R0 1         ; return 

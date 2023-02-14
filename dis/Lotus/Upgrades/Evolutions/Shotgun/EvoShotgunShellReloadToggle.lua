@@ -9,14 +9,14 @@
 
   1 [-]: NEWTABLE  R0 2 0       ; R0 := {}
   2 [-]: NEWTABLE  R1 0 4       ; R1 := {}
-  3 [-]: SETTABLE  R1 K0 K2     ; R1["upgradeType"] := 319.000000
+  3 [-]: SETTABLE  R1 K0 K2     ; R1["upgradeType"] := 325.000000
   4 [-]: SETTABLE  R1 K3 K5     ; R1["operation"] := 0.000000
   5 [-]: NEWTABLE  R2 5 0       ; R2 := {}
-  6 [-]: LOADK     R3 4         ; R3 := 4.000000
-  7 [-]: LOADK     R4 4         ; R4 := 4.000000
-  8 [-]: LOADK     R5 4         ; R5 := 4.000000
-  9 [-]: LOADK     R6 4         ; R6 := 4.000000
- 10 [-]: LOADK     R7 4         ; R7 := 4.000000
+  6 [-]: CONST     R3 4         ; R3 := 4.000000
+  7 [-]: CONST     R4 4         ; R4 := 4.000000
+  8 [-]: CONST     R5 4         ; R5 := 4.000000
+  9 [-]: CONST     R6 4         ; R6 := 4.000000
+ 10 [-]: CONST     R7 4         ; R7 := 4.000000
  11 [-]: SETLIST   R2 5 1       ; R2[(1-1)*FPF+i] := R(2+i), 1 <= i <= 5
  12 [-]: SETTABLE  R1 K6 R2     ; R1["amounts"] := R2
  13 [-]: GETGLOBAL R2 K8        ; R2 := 0x7ed0a956
@@ -24,14 +24,14 @@
  15 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  16 [-]: SETTABLE  R1 K7 R2     ; R1["notificationType"] := R2
  17 [-]: NEWTABLE  R2 0 4       ; R2 := {}
- 18 [-]: SETTABLE  R2 K0 K10    ; R2["upgradeType"] := 318.000000
- 19 [-]: SETTABLE  R2 K3 K11    ; R2["operation"] := 2.000000
+ 18 [-]: SETTABLE  R2 K0 K10    ; R2["upgradeType"] := 324.000000
+ 19 [-]: SETTABLE  R2 K3 K11    ; R2["operation"] := 3.000000
  20 [-]: NEWTABLE  R3 5 0       ; R3 := {}
- 21 [-]: LOADK     R4 1         ; R4 := 1.000000
- 22 [-]: LOADK     R5 1         ; R5 := 1.000000
- 23 [-]: LOADK     R6 1         ; R6 := 1.000000
- 24 [-]: LOADK     R7 1         ; R7 := 1.000000
- 25 [-]: LOADK     R8 1         ; R8 := 1.000000
+ 21 [-]: CONST     R4 1         ; R4 := 1.000000
+ 22 [-]: CONST     R5 1         ; R5 := 1.000000
+ 23 [-]: CONST     R6 1         ; R6 := 1.000000
+ 24 [-]: CONST     R7 1         ; R7 := 1.000000
+ 25 [-]: CONST     R8 1         ; R8 := 1.000000
  26 [-]: SETLIST   R3 5 1       ; R3[(1-1)*FPF+i] := R(3+i), 1 <= i <= 5
  27 [-]: SETTABLE  R2 K6 R3     ; R2["amounts"] := R3
  28 [-]: GETGLOBAL R3 K8        ; R3 := 0x7ed0a956
@@ -57,7 +57,7 @@
   1 [-]: GETGLOBAL R5 K0        ; R5 := 0x89326c93
   2 [-]: SELF      R5 R5 K1     ; R6 := R5; R5 := R5[0x18d05d30]
   3 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-  4 [-]: NOT       R5 R5        ; R5 := not R5
+  4 [-]: NOT       R5 R5        ; R5 :=  R5
   5 [-]: SELF      R6 R0 K2     ; R7 := R0; R6 := R0[0x4accf179]
   6 [-]: CALL      R6 2 2       ; R6 := R6(R7)
   7 [-]: TEST      R6 0         ; if not R6 then PC := 110
@@ -80,7 +80,7 @@
  24 [-]: SELF      R12 R1 K11   ; R13 := R1; R12 := R1[0xcde10c4a]
  25 [-]: CALL      R12 2 2      ; R12 := R12(R13)
  26 [-]: MOVE      R13 R1       ; R13 := R1
- 27 [-]: LOADK     R14 25       ; R14 := 25.000000
+ 27 [-]: CONST     R14 25       ; R14 := 25.000000
  28 [-]: GETGLOBAL R15 K13      ; R15 := EMPTY_SYMBOL
  29 [-]: MOVE      R16 R5       ; R16 := R5
  30 [-]: CALL      R7 10 1      ; R7(R8,R9,R10,R11,R12,R13,R14,R15,R16)
@@ -96,8 +96,8 @@
  40 [-]: SETTABLE  R7 K18 R8    ; R7["abilityType"] := R8
  41 [-]: SELF      R8 R0 K20    ; R9 := R0; R8 := R0[0x37e45fb5]
  42 [-]: MOVE      R10 R7       ; R10 := R7
- 43 [-]: LOADBOOL  R11 0 0      ; R11 := false
- 44 [-]: LOADBOOL  R12 1 0      ; R12 := true
+ 43 [-]: LOADKB    R11 0 0      ; R11 := false
+ 44 [-]: LOADKB    R12 1 0      ; R12 := true
  45 [-]: CALL      R8 5 1       ; R8(R9,R10,R11,R12)
  46 [-]: GETGLOBAL R8 K3        ; R8 := _T
  47 [-]: GETTABLE  R8 R8 K4     ; R8 := R8["EvoShotgunShellReloadToggle"]
@@ -131,7 +131,7 @@
  75 [-]: SELF      R14 R1 K11   ; R15 := R1; R14 := R1[0xcde10c4a]
  76 [-]: CALL      R14 2 2      ; R14 := R14(R15)
  77 [-]: MOVE      R15 R1       ; R15 := R1
- 78 [-]: LOADK     R16 25       ; R16 := 25.000000
+ 78 [-]: CONST     R16 25       ; R16 := 25.000000
  79 [-]: GETGLOBAL R17 K13      ; R17 := EMPTY_SYMBOL
  80 [-]: MOVE      R18 R5       ; R18 := R5
  81 [-]: CALL      R9 10 1      ; R9(R10,R11,R12,R13,R14,R15,R16,R17,R18)
@@ -144,24 +144,24 @@
  88 [-]: SETLIST   R10 1 1      ; R10[(1-1)*FPF+i] := R(10+i), 1 <= i <= 1
  89 [-]: SETTABLE  R9 K17 R10   ; R9["affected"] := R10
  90 [-]: GETTABLE  R10 R8 K9    ; R10 := R8["operation"]
- 91 [-]: EQ        0 R10 K23    ; if R10 ~= 2.000000 then PC := 99
+ 91 [-]: EQ        0 R10 K23    ; if R10 ~= 3.000000 then PC := 99
  92 [-]: JMP       99           ; PC := 99
- 93 [-]: SETTABLE  R9 K24 K23   ; R9["buffType"] := 2.000000
+ 93 [-]: SETTABLE  R9 K24 K25   ; R9["buffType"] := 2.000000
  94 [-]: GETTABLE  R10 R8 K10   ; R10 := R8["amounts"]
  95 [-]: GETTABLE  R10 R10 R2   ; R10 := R10[R2]
- 96 [-]: MUL       R10 R10 K26  ; R10 := R10 * 100.000000
- 97 [-]: SETTABLE  R9 K25 R10   ; R9["buffData"] := R10
+ 96 [-]: MUL       R10 R10 K27  ; R10 := R10 * 100.000000
+ 97 [-]: SETTABLE  R9 K26 R10   ; R9["buffData"] := R10
  98 [-]: JMP       103          ; PC := 103
- 99 [-]: SETTABLE  R9 K24 K27   ; R9["buffType"] := 5.000000
+ 99 [-]: SETTABLE  R9 K24 K28   ; R9["buffType"] := 5.000000
 100 [-]: GETTABLE  R10 R8 K10   ; R10 := R8["amounts"]
 101 [-]: GETTABLE  R10 R10 R2   ; R10 := R10[R2]
-102 [-]: SETTABLE  R9 K25 R10   ; R9["buffData"] := R10
+102 [-]: SETTABLE  R9 K26 R10   ; R9["buffData"] := R10
 103 [-]: GETTABLE  R10 R8 K19   ; R10 := R8["notificationType"]
 104 [-]: SETTABLE  R9 K18 R10   ; R9["abilityType"] := R10
 105 [-]: SELF      R10 R0 K20   ; R11 := R0; R10 := R0[0x37e45fb5]
 106 [-]: MOVE      R12 R9       ; R12 := R9
-107 [-]: LOADBOOL  R13 1 0      ; R13 := true
-108 [-]: LOADBOOL  R14 1 0      ; R14 := true
+107 [-]: LOADKB    R13 1 0      ; R13 := true
+108 [-]: LOADKB    R14 1 0      ; R14 := true
 109 [-]: CALL      R10 5 1      ; R10(R11,R12,R13,R14)
 110 [-]: RETURN    R0 1         ; return 
 

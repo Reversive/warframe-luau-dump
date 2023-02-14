@@ -7,7 +7,7 @@
 ; Is_vararg:       2
 ; Max Stack Size:  11
 
-  1 [-]: LOADK     R1 0         ; R1 := -0.750000
+  1 [-]: CONST     R1 0         ; R1 := -0.750000
   2 [-]: GETGLOBAL R2 K0        ; R2 := 0x2d0fad09
   3 [-]: LOADK     R3 K1        ; R3 := "Lotus.Scripts.Libs.TransmissionSet"
   4 [-]: CALL      R2 2 2       ; R2 := R2(R3)
@@ -208,7 +208,7 @@
  22 [-]: CALL      R3 2 1       ; R3(R4)
  23 [-]: GETGLOBAL R3 K8        ; R3 := 0x5bced4c4
  24 [-]: GETTABLE  R3 R3 K9     ; R3 := R3[0x3630e649]
- 25 [-]: LOADK     R4 100       ; R4 := 100.000000
+ 25 [-]: CONST     R4 100       ; R4 := 100.000000
  26 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  27 [-]: LE        0 R3 R2      ; if R3 > R2 then PC := 40
  28 [-]: JMP       40           ; PC := 40
@@ -460,7 +460,7 @@
   4 [-]: TEST      R1 0         ; if not R1 then PC := 10
   5 [-]: JMP       10           ; PC := 10
   6 [-]: GETGLOBAL R1 K2        ; R1 := 0xcbd666e1
-  7 [-]: LOADK     R2 0         ; R2 := 0.000000
+  7 [-]: CONST     R2 0         ; R2 := 0.000000
   8 [-]: CALL      R1 2 1       ; R1(R2)
   9 [-]: JMP       1            ; PC := 1
  10 [-]: SETUPVAL  R0 U0        ; U82 := R0
@@ -499,13 +499,13 @@
  43 [-]: GETGLOBAL R3 K11       ; R3 := 0x0469f296
  44 [-]: LOADK     R4 K12       ; R4 := "ElectricalMalfunctionTransmissions"
  45 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 46 [-]: LOADBOOL  R4 0 0       ; R4 := false
+ 46 [-]: LOADKB    R4 0 0       ; R4 := false
  47 [-]: CALL      R1 4 1       ; R1(R2,R3,R4)
  48 [-]: SELF      R1 R0 K10    ; R2 := R0; R1 := R0[0xd5f7912b]
  49 [-]: GETGLOBAL R3 K11       ; R3 := 0x0469f296
  50 [-]: LOADK     R4 K13       ; R4 := "CheckAutoRepair"
  51 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 52 [-]: LOADBOOL  R4 0 0       ; R4 := false
+ 52 [-]: LOADKB    R4 0 0       ; R4 := false
  53 [-]: CALL      R1 4 1       ; R1(R2,R3,R4)
  54 [-]: GETGLOBAL R1 K0        ; R1 := 0x7b998233
  55 [-]: GETUPVAL  R2 U0        ; R2 := U0

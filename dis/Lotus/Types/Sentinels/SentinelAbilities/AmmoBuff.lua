@@ -10,19 +10,19 @@
   1 [-]: NEWTABLE  R0 6 0       ; R0 := {}
   2 [-]: LOADK     R1 K0        ; R1 := 1.050000
   3 [-]: LOADK     R2 K1        ; R2 := 1.100000
-  4 [-]: LOADK     R3 1         ; R3 := 1.125000
+  4 [-]: CONST     R3 1         ; R3 := 1.125000
   5 [-]: LOADK     R4 K2        ; R4 := 1.150000
   6 [-]: LOADK     R5 K3        ; R5 := 1.175000
-  7 [-]: LOADK     R6 1         ; R6 := 1.250000
+  7 [-]: CONST     R6 1         ; R6 := 1.250000
   8 [-]: SETLIST   R0 6 1       ; R0[(1-1)*FPF+i] := R(0+i), 1 <= i <= 6
-  9 [-]: LOADK     R1 10        ; R1 := 10.000000
+  9 [-]: CONST     R1 10        ; R1 := 10.000000
  10 [-]: NEWTABLE  R2 6 0       ; R2 := {}
- 11 [-]: LOADK     R3 5         ; R3 := 5.000000
- 12 [-]: LOADK     R4 4         ; R4 := 4.000000
- 13 [-]: LOADK     R5 3         ; R5 := 3.500000
- 14 [-]: LOADK     R6 3         ; R6 := 3.000000
- 15 [-]: LOADK     R7 2         ; R7 := 2.500000
- 16 [-]: LOADK     R8 2         ; R8 := 2.000000
+ 11 [-]: CONST     R3 5         ; R3 := 5.000000
+ 12 [-]: CONST     R4 4         ; R4 := 4.000000
+ 13 [-]: CONST     R5 3         ; R5 := 3.500000
+ 14 [-]: CONST     R6 3         ; R6 := 3.000000
+ 15 [-]: CONST     R7 2         ; R7 := 2.500000
+ 16 [-]: CONST     R8 2         ; R8 := 2.000000
  17 [-]: SETLIST   R2 6 1       ; R2[(1-1)*FPF+i] := R(2+i), 1 <= i <= 6
  18 [-]: CLOSURE   R3 0         ; R3 := closure(Function #1)
  19 [-]: MOVE      R0 R0        ; R0 := R0
@@ -31,23 +31,24 @@
  22 [-]: CLOSURE   R5 2         ; R5 := closure(Function #3)
  23 [-]: MOVE      R0 R3        ; R0 := R3
  24 [-]: MOVE      R0 R4        ; R0 := R4
- 25 [-]: SETGLOBAL R5 K4        ; GetDescriptionInfo := R5
- 26 [-]: CLOSURE   R5 3         ; R5 := closure(Function #4)
- 27 [-]: MOVE      R0 R3        ; R0 := R3
- 28 [-]: MOVE      R0 R1        ; R0 := R1
- 29 [-]: MOVE      R0 R4        ; R0 := R4
- 30 [-]: SETGLOBAL R5 K5        ; ApplyUpgrades := R5
- 31 [-]: CLOSURE   R5 4         ; R5 := closure(Function #5)
- 32 [-]: MOVE      R0 R3        ; R0 := R3
- 33 [-]: MOVE      R0 R1        ; R0 := R1
- 34 [-]: MOVE      R0 R4        ; R0 := R4
- 35 [-]: CLOSURE   R6 5         ; R6 := closure(Function #6)
- 36 [-]: MOVE      R0 R5        ; R0 := R5
- 37 [-]: SETGLOBAL R6 K6        ; OnDamaged := R6
- 38 [-]: CLOSURE   R6 6         ; R6 := closure(Function #7)
- 39 [-]: MOVE      R0 R5        ; R0 := R5
- 40 [-]: SETGLOBAL R6 K7        ; UnapplyUpgrades := R6
- 41 [-]: RETURN    R0 1         ; return 
+ 25 [-]: MOVE      R0 R1        ; R0 := R1
+ 26 [-]: SETGLOBAL R5 K4        ; GetDescriptionInfo := R5
+ 27 [-]: CLOSURE   R5 3         ; R5 := closure(Function #4)
+ 28 [-]: MOVE      R0 R3        ; R0 := R3
+ 29 [-]: MOVE      R0 R1        ; R0 := R1
+ 30 [-]: MOVE      R0 R4        ; R0 := R4
+ 31 [-]: SETGLOBAL R5 K5        ; ApplyUpgrades := R5
+ 32 [-]: CLOSURE   R5 4         ; R5 := closure(Function #5)
+ 33 [-]: MOVE      R0 R3        ; R0 := R3
+ 34 [-]: MOVE      R0 R1        ; R0 := R1
+ 35 [-]: MOVE      R0 R4        ; R0 := R4
+ 36 [-]: CLOSURE   R6 5         ; R6 := closure(Function #6)
+ 37 [-]: MOVE      R0 R5        ; R0 := R5
+ 38 [-]: SETGLOBAL R6 K6        ; OnDamaged := R6
+ 39 [-]: CLOSURE   R6 6         ; R6 := closure(Function #7)
+ 40 [-]: MOVE      R0 R5        ; R0 := R5
+ 41 [-]: SETGLOBAL R6 K7        ; UnapplyUpgrades := R6
+ 42 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
@@ -98,12 +99,12 @@
 ;
 ; Name:            
 ; Defined at line: 27
-; #Upvalues:       2
+; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
 ; Max Stack Size:  5
 
-  1 [-]: NEWTABLE  R1 0 2       ; R1 := {}
+  1 [-]: NEWTABLE  R1 0 3       ; R1 := {}
   2 [-]: GETGLOBAL R2 K1        ; R2 := 0x5bced4c4
   3 [-]: GETTABLE  R2 R2 K2     ; R2 := R2[0x55f27c30]
   4 [-]: GETUPVAL  R3 U0        ; R3 := U0
@@ -117,19 +118,21 @@
  12 [-]: GETUPVAL  R2 U1        ; R2 := U1
  13 [-]: MOVE      R3 R0        ; R3 := R0
  14 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 15 [-]: SETTABLE  R1 K6 R2     ; R1["DELAY"] := R2
- 16 [-]: GETGLOBAL R2 K7        ; R2 := cjson
- 17 [-]: GETTABLE  R2 R2 K8     ; R2 := R2[0xb139d7bc]
- 18 [-]: MOVE      R3 R1        ; R3 := R1
- 19 [-]: TAILCALL  R2 2 0       ; R2,... := R2(R3)
- 20 [-]: RETURN    R2 0         ; return R2,...
- 21 [-]: RETURN    R0 1         ; return 
+ 15 [-]: SETTABLE  R1 K6 R2     ; R1[0x7b998233] := R2
+ 16 [-]: GETUPVAL  R2 U2        ; R2 := U2
+ 17 [-]: SETTABLE  R1 K7 R2     ; R1[0x3d106989] := R2
+ 18 [-]: GETGLOBAL R2 K8        ; R2 := cjson
+ 19 [-]: GETTABLE  R2 R2 K9     ; R2 := R2[0xb139d7bc]
+ 20 [-]: MOVE      R3 R1        ; R3 := R1
+ 21 [-]: TAILCALL  R2 2 0       ; R2,... := R2(R3)
+ 22 [-]: RETURN    R2 0         ; return R2,...
+ 23 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #4:
 ;
 ; Name:            
-; Defined at line: 35
+; Defined at line: 36
 ; #Upvalues:       3
 ; #Parameters:     5
 ; Is_vararg:       0
@@ -185,20 +188,20 @@
  48 [-]: GETTABLE  R8 R8 K9     ; R8 := R8["ammoBuff"]
  49 [-]: SETTABLE  R8 R7 R2     ; R8[R7] := R2
  50 [-]: SELF      R8 R6 K11    ; R9 := R6; R8 := R6[0x5e6704ff]
- 51 [-]: LOADK     R10 191      ; R10 := 191.000000
- 52 [-]: LOADK     R11 1        ; R11 := 1.000000
+ 51 [-]: CONST     R10 196      ; R10 := 196.000000
+ 52 [-]: CONST     R11 2        ; R11 := 2.000000
  53 [-]: GETUPVAL  R12 U0       ; R12 := U0
  54 [-]: MOVE      R13 R2       ; R13 := R2
  55 [-]: CALL      R12 2 0      ; R12,... := R12(R13)
  56 [-]: CALL      R8 0 1       ; R8(R9,...)
  57 [-]: SELF      R8 R6 K11    ; R9 := R6; R8 := R6[0x5e6704ff]
- 58 [-]: LOADK     R10 203      ; R10 := 203.000000
- 59 [-]: LOADK     R11 0        ; R11 := 0.000000
+ 58 [-]: CONST     R10 210      ; R10 := 210.000000
+ 59 [-]: CONST     R11 0        ; R11 := 0.000000
  60 [-]: GETUPVAL  R12 U1       ; R12 := U1
  61 [-]: CALL      R8 5 1       ; R8(R9,R10,R11,R12)
  62 [-]: SELF      R8 R6 K11    ; R9 := R6; R8 := R6[0x5e6704ff]
- 63 [-]: LOADK     R10 204      ; R10 := 204.000000
- 64 [-]: LOADK     R11 3        ; R11 := 3.000000
+ 63 [-]: CONST     R10 211      ; R10 := 211.000000
+ 64 [-]: CONST     R11 4        ; R11 := 4.000000
  65 [-]: GETUPVAL  R12 U2       ; R12 := U2
  66 [-]: MOVE      R13 R2       ; R13 := R2
  67 [-]: CALL      R12 2 0      ; R12,... := R12(R13)
@@ -215,7 +218,7 @@
 ; Function #5:
 ;
 ; Name:            
-; Defined at line: 68
+; Defined at line: 69
 ; #Upvalues:       3
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -250,20 +253,20 @@
  27 [-]: CALL      R4 2 1       ; R4(R5)
  28 [-]: RETURN    R0 1         ; return 
  29 [-]: SELF      R4 R3 K8     ; R5 := R3; R4 := R3[0x12dd9da2]
- 30 [-]: LOADK     R6 191       ; R6 := 191.000000
- 31 [-]: LOADK     R7 1         ; R7 := 1.000000
+ 30 [-]: CONST     R6 196       ; R6 := 196.000000
+ 31 [-]: CONST     R7 2         ; R7 := 2.000000
  32 [-]: GETUPVAL  R8 U0        ; R8 := U0
  33 [-]: MOVE      R9 R1        ; R9 := R1
  34 [-]: CALL      R8 2 0       ; R8,... := R8(R9)
  35 [-]: CALL      R4 0 1       ; R4(R5,...)
  36 [-]: SELF      R4 R3 K8     ; R5 := R3; R4 := R3[0x12dd9da2]
- 37 [-]: LOADK     R6 203       ; R6 := 203.000000
- 38 [-]: LOADK     R7 0         ; R7 := 0.000000
+ 37 [-]: CONST     R6 210       ; R6 := 210.000000
+ 38 [-]: CONST     R7 0         ; R7 := 0.000000
  39 [-]: GETUPVAL  R8 U1        ; R8 := U1
  40 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
  41 [-]: SELF      R4 R3 K8     ; R5 := R3; R4 := R3[0x12dd9da2]
- 42 [-]: LOADK     R6 204       ; R6 := 204.000000
- 43 [-]: LOADK     R7 3         ; R7 := 3.000000
+ 42 [-]: CONST     R6 211       ; R6 := 211.000000
+ 43 [-]: CONST     R7 4         ; R7 := 4.000000
  44 [-]: GETUPVAL  R8 U2        ; R8 := U2
  45 [-]: MOVE      R9 R1        ; R9 := R1
  46 [-]: CALL      R8 2 0       ; R8,... := R8(R9)
@@ -277,7 +280,7 @@
 ; Function #6:
 ;
 ; Name:            
-; Defined at line: 88
+; Defined at line: 89
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -319,7 +322,7 @@
 ; Function #7:
 ;
 ; Name:            
-; Defined at line: 104
+; Defined at line: 105
 ; #Upvalues:       1
 ; #Parameters:     5
 ; Is_vararg:       0

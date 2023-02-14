@@ -159,7 +159,7 @@
  34 [-]: JMP       95           ; PC := 95
  35 [-]: SELF      R2 R0 K14    ; R3 := R0; R2 := R0[0x3f384325]
  36 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 37 [-]: LOADK     R3 52        ; R3 := 52.500000
+ 37 [-]: CONST     R3 52        ; R3 := 52.500000
  38 [-]: GETGLOBAL R4 K7        ; R4 := 0x7b998233
  39 [-]: MOVE      R5 R2        ; R5 := R2
  40 [-]: CALL      R4 2 2       ; R4 := R4(R5)
@@ -195,7 +195,7 @@
  70 [-]: SETTABLE  R1 K25 R5    ; R1["radius"] := R5
  71 [-]: SELF      R5 R1 K27    ; R6 := R1; R5 := R1[0x1586e35e]
  72 [-]: GETGLOBAL R7 K28       ; R7 := 0x0c212cb3
- 73 [-]: LOADK     R8 1         ; R8 := 1.000000
+ 73 [-]: CONST     R8 1         ; R8 := 1.000000
  74 [-]: CALL      R5 4 1       ; R5(R6,R7,R8)
  75 [-]: SELF      R5 R1 K29    ; R6 := R1; R5 := R1[0xcdb40c41]
  76 [-]: GETGLOBAL R7 K30       ; R7 := 0xbf5aaa24

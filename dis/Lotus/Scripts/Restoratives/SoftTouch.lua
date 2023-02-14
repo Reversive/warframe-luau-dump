@@ -32,9 +32,9 @@
   9 [-]: TEST      R3 1         ; if R3 then PC := 60
  10 [-]: JMP       60           ; PC := 60
  11 [-]: GETTABLE  R3 R2 K3     ; R3 := R2["fishInfo"]
- 12 [-]: LOADK     R4 1         ; R4 := 1.000000
+ 12 [-]: CONST     R4 1         ; R4 := 1.000000
  13 [-]: LEN       R5 R3        ; R5 := # R3
- 14 [-]: LOADK     R6 1         ; R6 := 1.000000
+ 14 [-]: CONST     R6 1         ; R6 := 1.000000
  15 [-]: FORPREP   R4 59        ; R4 -= R6; PC := 59
  16 [-]: GETTABLE  R8 R3 R7     ; R8 := R3[R7]
  17 [-]: GETTABLE  R9 R8 K4     ; R9 := R8["deco"]
@@ -43,9 +43,9 @@
  20 [-]: GETTABLE  R9 R2 K5     ; R9 := R2["activeBait"]
  21 [-]: SELF      R10 R0 K6    ; R11 := R0; R10 := R0[0x2b54251b]
  22 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 23 [-]: LOADK     R11 1        ; R11 := 1.000000
+ 23 [-]: CONST     R11 1        ; R11 := 1.000000
  24 [-]: LEN       R12 R9       ; R12 := # R9
- 25 [-]: LOADK     R13 1        ; R13 := 1.000000
+ 25 [-]: CONST     R13 1        ; R13 := 1.000000
  26 [-]: FORPREP   R11 58       ; R11 -= R13; PC := 58
  27 [-]: GETTABLE  R15 R9 R14   ; R15 := R9[R14]
  28 [-]: GETTABLE  R16 R15 K7   ; R16 := R15["bait"]
@@ -57,16 +57,16 @@
  34 [-]: SUB       R17 R17 K10  ; R17 := R17 - 0.100000
  35 [-]: SETTABLE  R16 K9 R17   ; R16["y"] := R17
  36 [-]: GETGLOBAL R17 K11      ; R17 := 0xa421af95
- 37 [-]: LOADK     R18 0        ; R18 := 0.000000
- 38 [-]: LOADK     R19 30       ; R19 := 30.000000
- 39 [-]: LOADK     R20 0        ; R20 := 0.000000
+ 37 [-]: CONST     R18 0        ; R18 := 0.000000
+ 38 [-]: CONST     R19 30       ; R19 := 30.000000
+ 39 [-]: CONST     R20 0        ; R20 := 0.000000
  40 [-]: CALL      R17 4 2      ; R17 := R17(R18,R19,R20)
  41 [-]: GETGLOBAL R18 K12      ; R18 := 0x89326c93
  42 [-]: SELF      R18 R18 K13  ; R19 := R18; R18 := R18[0xa3f8dbe6]
  43 [-]: ADD       R20 R16 R17  ; R20 := R16 + R17
  44 [-]: MOVE      R21 R16      ; R21 := R16
  45 [-]: LOADNIL   R22 R22      ; R22 := nil
- 46 [-]: LOADBOOL  R23 1 0      ; R23 := true
+ 46 [-]: LOADKB    R23 1 0      ; R23 := true
  47 [-]: CALL      R18 6 2      ; R18 := R18(R19,R20,R21,R22,R23)
  48 [-]: GETGLOBAL R19 K2       ; R19 := 0x7b998233
  49 [-]: MOVE      R20 R18      ; R20 := R18

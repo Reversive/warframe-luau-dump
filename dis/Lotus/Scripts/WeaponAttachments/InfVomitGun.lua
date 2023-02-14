@@ -68,12 +68,12 @@
  25 [-]: CALL      R6 2 2       ; R6 := R6(R7)
  26 [-]: SETTABLE  R5 R6 K6     ; R5[R6] := true
  27 [-]: SELF      R5 R1 K7     ; R6 := R1; R5 := R1[0x92c56c50]
- 28 [-]: LOADK     R7 1         ; R7 := 1.000000
- 29 [-]: LOADK     R8 1         ; R8 := 1.000000
+ 28 [-]: CONST     R7 1         ; R7 := 1.000000
+ 29 [-]: CONST     R8 1         ; R8 := 1.000000
  30 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
  31 [-]: SELF      R6 R1 K7     ; R7 := R1; R6 := R1[0x92c56c50]
- 32 [-]: LOADK     R8 1         ; R8 := 1.000000
- 33 [-]: LOADK     R9 0         ; R9 := 0.000000
+ 32 [-]: CONST     R8 1         ; R8 := 1.000000
+ 33 [-]: CONST     R9 0         ; R9 := 0.000000
  34 [-]: CALL      R6 4 2       ; R6 := R6(R7,R8,R9)
  35 [-]: GETGLOBAL R7 K0        ; R7 := 0x7b998233
  36 [-]: MOVE      R8 R5        ; R8 := R5

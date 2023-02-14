@@ -5,7 +5,7 @@
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       2
-; Max Stack Size:  8
+; Max Stack Size:  5
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0xaeabecda
   2 [-]: VARARG    R1 R2        ; R1 := R2 := ...
@@ -18,37 +18,28 @@
   9 [-]: GETGLOBAL R1 K3        ; R1 := 0x2d0fad09
  10 [-]: LOADK     R2 K5        ; R2 := "EE.Interface.Utilities"
  11 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 12 [-]: NEWTABLE  R2 3 0       ; R2 := {}
- 13 [-]: GETGLOBAL R3 K6        ; R3 := 0x7ed0a956
- 14 [-]: LOADK     R4 K7        ; R4 := "/Lotus/Weapons/ClanTech/Chemical/FlamethrowerWraithBlueprint"
- 15 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 16 [-]: GETGLOBAL R4 K6        ; R4 := 0x7ed0a956
- 17 [-]: LOADK     R5 K8        ; R5 := "/Lotus/Types/Items/RelayRebuild/PhaseOneClanItemBlueprint"
- 18 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 19 [-]: GETGLOBAL R5 K6        ; R5 := 0x7ed0a956
- 20 [-]: LOADK     R6 K9        ; R6 := "/Lotus/Types/Items/RelayRebuild/PhaseTwoClanItemBlueprint"
- 21 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 22 [-]: GETGLOBAL R6 K6        ; R6 := 0x7ed0a956
- 23 [-]: LOADK     R7 K10       ; R7 := "/Lotus/Types/Items/RelayRebuild/PhaseThreeClanItemBlueprint"
- 24 [-]: CALL      R6 2 0       ; R6,... := R6(R7)
- 25 [-]: SETLIST   R2 0 1       ; R2[(1-1)*FPF+i] := R(2+i), 1 <= i <= 0
- 26 [-]: CLOSURE   R3 0         ; R3 := closure(Function #1)
- 27 [-]: CLOSURE   R4 1         ; R4 := closure(Function #2)
- 28 [-]: MOVE      R0 R3        ; R0 := R3
- 29 [-]: SETGLOBAL R4 K11       ; GetEnemiesList := R4
- 30 [-]: CLOSURE   R4 2         ; R4 := closure(Function #3)
- 31 [-]: MOVE      R0 R0        ; R0 := R0
- 32 [-]: MOVE      R0 R3        ; R0 := R3
- 33 [-]: MOVE      R0 R2        ; R0 := R2
- 34 [-]: MOVE      R0 R1        ; R0 := R1
- 35 [-]: SETGLOBAL R4 K12       ; GetResearchList := R4
- 36 [-]: RETURN    R0 1         ; return 
+ 12 [-]: NEWTABLE  R2 0 0       ; R2 := {}
+ 13 [-]: GETGLOBAL R3 K7        ; R3 := 0x7ed0a956
+ 14 [-]: LOADK     R4 K8        ; R4 := "/Lotus/Types/Items/RelayRebuild/PhaseOneClanItemBlueprint"
+ 15 [-]: CALL      R3 2 0       ; R3,... := R3(R4)
+ 16 [-]: SETLIST   R2 0 1       ; R2[(1-1)*FPF+i] := R(2+i), 1 <= i <= 0
+ 17 [-]: SETGLOBAL R2 K6        ; RAID_RESEARCH_TYPES := R2
+ 18 [-]: CLOSURE   R2 0         ; R2 := closure(Function #1)
+ 19 [-]: CLOSURE   R3 1         ; R3 := closure(Function #2)
+ 20 [-]: MOVE      R0 R2        ; R0 := R2
+ 21 [-]: SETGLOBAL R3 K9        ; GetEnemiesList := R3
+ 22 [-]: CLOSURE   R3 2         ; R3 := closure(Function #3)
+ 23 [-]: MOVE      R0 R0        ; R0 := R0
+ 24 [-]: MOVE      R0 R2        ; R0 := R2
+ 25 [-]: MOVE      R0 R1        ; R0 := R1
+ 26 [-]: SETGLOBAL R3 K10       ; GetResearchList := R3
+ 27 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
 ;
 ; Name:            
-; Defined at line: 15
+; Defined at line: 11
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -58,9 +49,9 @@
   2 [-]: CALL      R1 2 2       ; R1 := R1(R2)
   3 [-]: NEWTABLE  R2 0 0       ; R2 := {}
   4 [-]: LOADK     R3 K1        ; R3 := "\r\n"
-  5 [-]: LOADK     R4 1         ; R4 := 1.000000
+  5 [-]: CONST     R4 1         ; R4 := 1.000000
   6 [-]: LEN       R5 R1        ; R5 := # R1
-  7 [-]: LOADK     R6 1         ; R6 := 1.000000
+  7 [-]: CONST     R6 1         ; R6 := 1.000000
   8 [-]: FORPREP   R4 33        ; R4 -= R6; PC := 33
   9 [-]: GETTABLE  R8 R1 R7     ; R8 := R1[R7]
  10 [-]: GETTABLE  R8 R8 K2     ; R8 := R8["mLocTag"]
@@ -94,7 +85,7 @@
 ; Function #2:
 ;
 ; Name:            
-; Defined at line: 32
+; Defined at line: 28
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -110,8 +101,8 @@
 ; Function #3:
 ;
 ; Name:            
-; Defined at line: 37
-; #Upvalues:       4
+; Defined at line: 33
+; #Upvalues:       3
 ; #Parameters:     7
 ; Is_vararg:       0
 ; Max Stack Size:  58
@@ -144,13 +135,13 @@
  26 [-]: NEWTABLE  R11 0 0      ; R11 := {}
  27 [-]: SETTABLE  R10 K7 R11   ; R10["recipes"] := R11
  28 [-]: SETTABLE  R7 K2 R10    ; R7["InProgress"] := R10
- 29 [-]: LOADK     R10 1        ; R10 := 1.000000
+ 29 [-]: CONST     R10 1        ; R10 := 1.000000
  30 [-]: LEN       R11 R8       ; R11 := # R8
- 31 [-]: LOADK     R12 1        ; R12 := 1.000000
+ 31 [-]: CONST     R12 1        ; R12 := 1.000000
  32 [-]: FORPREP   R10 456      ; R10 -= R12; PC := 456
  33 [-]: GETTABLE  R14 R8 R13   ; R14 := R8[R13]
  34 [-]: GETGLOBAL R15 K8       ; R15 := 0xce225efa
- 35 [-]: LOADK     R16 0        ; R16 := 0.000000
+ 35 [-]: CONST     R16 0        ; R16 := 0.000000
  36 [-]: CALL      R15 2 1      ; R15(R16)
  37 [-]: GETGLOBAL R15 K0       ; R15 := 0x7b998233
  38 [-]: MOVE      R16 R14      ; R16 := R14
@@ -251,7 +242,7 @@
 133 [-]: CALL      R22 2 2      ; R22 := R22(R23)
 134 [-]: SELF      R22 R22 K24  ; R23 := R22; R22 := R22[0x6d604ba7]
 135 [-]: CALL      R22 2 2      ; R22 := R22(R23)
-136 [-]: LOADBOOL  R23 1 0      ; R23 := true
+136 [-]: LOADKB    R23 1 0      ; R23 := true
 137 [-]: CALL      R20 4 2      ; R20 := R20(R21,R22,R23)
 138 [-]: MOVE      R19 R20      ; R19 := R20
 139 [-]: SELF      R20 R14 K27  ; R21 := R14; R20 := R14[0x78ceba36]
@@ -260,7 +251,7 @@
 142 [-]: JMP       160          ; PC := 160
 143 [-]: SELF      R21 R0 K25   ; R22 := R0; R21 := R0[0x42b04007]
 144 [-]: LOADK     R23 K28      ; R23 := "/Lotus/Language/Items/LargeBatchItem"
-145 [-]: LOADBOOL  R24 0 0      ; R24 := false
+145 [-]: LOADKB    R24 0 0      ; R24 := false
 146 [-]: NEWTABLE  R25 0 2      ; R25 := {}
 147 [-]: SETTABLE  R25 K29 R19  ; R25["ITEM"] := R19
 148 [-]: SETTABLE  R25 K30 R20  ; R25["NUM"] := R20
@@ -272,7 +263,7 @@
 154 [-]: CALL      R23 2 2      ; R23 := R23(R24)
 155 [-]: SELF      R23 R23 K24  ; R24 := R23; R23 := R23[0x6d604ba7]
 156 [-]: CALL      R23 2 2      ; R23 := R23(R24)
-157 [-]: LOADBOOL  R24 1 0      ; R24 := true
+157 [-]: LOADKB    R24 1 0      ; R24 := true
 158 [-]: CALL      R21 4 2      ; R21 := R21(R22,R23,R24)
 159 [-]: MOVE      R19 R21      ; R19 := R21
 160 [-]: NEWTABLE  R21 0 9      ; R21 := {}
@@ -287,9 +278,9 @@
 169 [-]: SELF      R22 R14 K40  ; R23 := R14; R22 := R14[0xc5e1d5fa]
 170 [-]: CALL      R22 2 2      ; R22 := R22(R23)
 171 [-]: SETTABLE  R21 K39 R22  ; R21["XP"] := R22
-172 [-]: LOADK     R22 1        ; R22 := 1.000000
+172 [-]: CONST     R22 1        ; R22 := 1.000000
 173 [-]: LEN       R23 R4       ; R23 := # R4
-174 [-]: LOADK     R24 1        ; R24 := 1.000000
+174 [-]: CONST     R24 1        ; R24 := 1.000000
 175 [-]: FORPREP   R22 214      ; R22 -= R24; PC := 214
 176 [-]: GETTABLE  R26 R4 R25   ; R26 := R4[R25]
 177 [-]: GETTABLE  R27 R26 K41  ; R27 := R26["mItemType"]
@@ -330,25 +321,25 @@
 212 [-]: SETTABLE  R21 K48 R26  ; R21["mTechItem"] := R26
 213 [-]: JMP       215          ; PC := 215
 214 [-]: FORLOOP   R22 176      ; R22 += R24; if R22 <= R23 then begin PC := 176; R25 := R22 end
-215 [-]: LOADBOOL  R28 0 0      ; R28 := false
-216 [-]: LOADBOOL  R29 0 0      ; R29 := false
-217 [-]: LOADK     R30 1        ; R30 := 1.000000
-218 [-]: GETUPVAL  R31 U2       ; R31 := U2
+215 [-]: LOADKB    R28 0 0      ; R28 := false
+216 [-]: LOADKB    R29 0 0      ; R29 := false
+217 [-]: CONST     R30 1        ; R30 := 1.000000
+218 [-]: GETGLOBAL R31 K49      ; R31 := RAID_RESEARCH_TYPES
 219 [-]: LEN       R31 R31      ; R31 := # R31
-220 [-]: LOADK     R32 1        ; R32 := 1.000000
+220 [-]: CONST     R32 1        ; R32 := 1.000000
 221 [-]: FORPREP   R30 235      ; R30 -= R32; PC := 235
 222 [-]: SELF      R34 R14 K14  ; R35 := R14; R34 := R14[0xf2deaf69]
-223 [-]: GETUPVAL  R36 U2       ; R36 := U2
+223 [-]: GETGLOBAL R36 K49      ; R36 := RAID_RESEARCH_TYPES
 224 [-]: GETTABLE  R36 R36 R33  ; R36 := R36[R33]
 225 [-]: CALL      R34 3 2      ; R34 := R34(R35,R36)
 226 [-]: TEST      R34 0        ; if not R34 then PC := 235
 227 [-]: JMP       235          ; PC := 235
-228 [-]: GETGLOBAL R34 K49      ; R34 := 0x25d99d89
-229 [-]: SELF      R34 R34 K50  ; R35 := R34; R34 := R34[0x33c9fd7f]
+228 [-]: GETGLOBAL R34 K50      ; R34 := 0x25d99d89
+229 [-]: SELF      R34 R34 K51  ; R35 := R34; R34 := R34[0x33c9fd7f]
 230 [-]: MOVE      R36 R14      ; R36 := R14
 231 [-]: CALL      R34 3 2      ; R34 := R34(R35,R36)
 232 [-]: MOVE      R29 R34      ; R29 := R34
-233 [-]: LOADBOOL  R28 1 0      ; R28 := true
+233 [-]: LOADKB    R28 1 0      ; R28 := true
 234 [-]: JMP       236          ; PC := 236
 235 [-]: FORLOOP   R30 222      ; R30 += R32; if R30 <= R31 then begin PC := 222; R33 := R30 end
 236 [-]: TEST      R29 1        ; if R29 then PC := 240
@@ -359,9 +350,9 @@
 241 [-]: GETTABLE  R35 R7 R15   ; R35 := R7[R15]
 242 [-]: GETTABLE  R35 R35 K5   ; R35 := R35["Total"]
 243 [-]: ADD       R35 R35 K12  ; R35 := R35 + 1.000000
-244 [-]: SETTABLE  R34 K5 R35   ; R34["Total"] := R35
-245 [-]: GETGLOBAL R34 K51      ; R34 := 0x33bdd652
-246 [-]: GETTABLE  R34 R34 K52  ; R34 := R34[0x23d5322f]
+244 [-]: SETTABLE  R34 K5 R35   ; R34[0x5bced4c4] := R35
+245 [-]: GETGLOBAL R34 K52      ; R34 := 0x33bdd652
+246 [-]: GETTABLE  R34 R34 K53  ; R34 := R34[0x23d5322f]
 247 [-]: GETTABLE  R35 R7 R15   ; R35 := R7[R15]
 248 [-]: GETTABLE  R35 R35 K7   ; R35 := R35["recipes"]
 249 [-]: MOVE      R36 R21      ; R36 := R21
@@ -379,14 +370,14 @@
 261 [-]: GETTABLE  R35 R7 K2    ; R35 := R7["InProgress"]
 262 [-]: GETTABLE  R35 R35 K5   ; R35 := R35["Total"]
 263 [-]: ADD       R35 R35 K12  ; R35 := R35 + 1.000000
-264 [-]: SETTABLE  R34 K5 R35   ; R34["Total"] := R35
-265 [-]: GETUPVAL  R34 U3       ; R34 := U3
-266 [-]: GETTABLE  R34 R34 K53  ; R34 := R34[0xae97c4f5]
+264 [-]: SETTABLE  R34 K5 R35   ; R34[0x5bced4c4] := R35
+265 [-]: GETUPVAL  R34 U2       ; R34 := U2
+266 [-]: GETTABLE  R34 R34 K54  ; R34 := R34[0xae97c4f5]
 267 [-]: MOVE      R35 R21      ; R35 := R21
 268 [-]: CALL      R34 2 2      ; R34 := R34(R35)
-269 [-]: SETTABLE  R34 K54 K47  ; R34["InProgressCopy"] := true
-270 [-]: GETGLOBAL R35 K51      ; R35 := 0x33bdd652
-271 [-]: GETTABLE  R35 R35 K52  ; R35 := R35[0x23d5322f]
+269 [-]: SETTABLE  R34 K55 K47  ; R34["InProgressCopy"] := true
+270 [-]: GETGLOBAL R35 K52      ; R35 := 0x33bdd652
+271 [-]: GETTABLE  R35 R35 K53  ; R35 := R35[0x23d5322f]
 272 [-]: GETTABLE  R36 R7 K2    ; R36 := R7["InProgress"]
 273 [-]: GETTABLE  R36 R36 K7   ; R36 := R36["recipes"]
 274 [-]: MOVE      R37 R34      ; R37 := R34
@@ -395,7 +386,7 @@
 277 [-]: TEST      R5 1         ; if R5 then PC := 367
 278 [-]: JMP       367          ; PC := 367
 279 [-]: SELF      R35 R14 K14  ; R36 := R14; R35 := R14[0xf2deaf69]
-280 [-]: GETGLOBAL R37 K55      ; R37 := gDojoDecorationRecipeItemType
+280 [-]: GETGLOBAL R37 K56      ; R37 := gDojoDecorationRecipeItemType
 281 [-]: CALL      R35 3 2      ; R35 := R35(R36,R37)
 282 [-]: TEST      R35 0        ; if not R35 then PC := 367
 283 [-]: JMP       367          ; PC := 367
@@ -403,23 +394,23 @@
 285 [-]: CALL      R35 2 2      ; R35 := R35(R36)
 286 [-]: LT        0 K6 R35     ; if 0.000000 >= R35 then PC := 456
 287 [-]: JMP       456          ; PC := 456
-288 [-]: LOADK     R36 K56      ; R36 := "Decorations"
+288 [-]: LOADK     R36 K57      ; R36 := "Decorations"
 289 [-]: GETTABLE  R37 R7 R36   ; R37 := R7[R36]
 290 [-]: EQ        0 R37 K16    ; if R37 ~= nil then PC := 300
 291 [-]: JMP       300          ; PC := 300
 292 [-]: NEWTABLE  R37 0 5      ; R37 := {}
-293 [-]: SETTABLE  R37 K3 K57   ; R37["Name"] := "/Lotus/Language/Dojo/Decorations"
+293 [-]: SETTABLE  R37 K3 K58   ; R37["Name"] := "/Lotus/Language/Dojo/Decorations"
 294 [-]: SETTABLE  R37 K5 K6    ; R37["Total"] := 0.000000
 295 [-]: SETTABLE  R37 K18 K6   ; R37["Completed"] := 0.000000
 296 [-]: NEWTABLE  R38 0 0      ; R38 := {}
 297 [-]: SETTABLE  R37 K7 R38   ; R37["recipes"] := R38
-298 [-]: SETTABLE  R37 K58 K47  ; R37["UseBuiltLabel"] := true
+298 [-]: SETTABLE  R37 K59 K47  ; R37["UseBuiltLabel"] := true
 299 [-]: SETTABLE  R7 R36 R37   ; R7[R36] := R37
 300 [-]: GETTABLE  R37 R7 R36   ; R37 := R7[R36]
 301 [-]: GETTABLE  R38 R7 R36   ; R38 := R7[R36]
 302 [-]: GETTABLE  R38 R38 K5   ; R38 := R38["Total"]
 303 [-]: ADD       R38 R38 K12  ; R38 := R38 + 1.000000
-304 [-]: SETTABLE  R37 K5 R38   ; R37["Total"] := R38
+304 [-]: SETTABLE  R37 K5 R38   ; R37[0x5bced4c4] := R38
 305 [-]: LOADK     R37 K17      ; R37 := ""
 306 [-]: GETGLOBAL R38 K0       ; R38 := 0x7b998233
 307 [-]: SELF      R39 R14 K22  ; R40 := R14; R39 := R14[0x5cc4dde3]
@@ -434,7 +425,7 @@
 316 [-]: CALL      R40 2 2      ; R40 := R40(R41)
 317 [-]: SELF      R40 R40 K24  ; R41 := R40; R40 := R40[0x6d604ba7]
 318 [-]: CALL      R40 2 2      ; R40 := R40(R41)
-319 [-]: LOADBOOL  R41 1 0      ; R41 := true
+319 [-]: LOADKB    R41 1 0      ; R41 := true
 320 [-]: CALL      R38 4 2      ; R38 := R38(R39,R40,R41)
 321 [-]: MOVE      R37 R38      ; R37 := R38
 322 [-]: JMP       331          ; PC := 331
@@ -443,7 +434,7 @@
 325 [-]: CALL      R40 2 2      ; R40 := R40(R41)
 326 [-]: SELF      R40 R40 K24  ; R41 := R40; R40 := R40[0x6d604ba7]
 327 [-]: CALL      R40 2 2      ; R40 := R40(R41)
-328 [-]: LOADBOOL  R41 1 0      ; R41 := true
+328 [-]: LOADKB    R41 1 0      ; R41 := true
 329 [-]: CALL      R38 4 2      ; R38 := R38(R39,R40,R41)
 330 [-]: MOVE      R37 R38      ; R37 := R38
 331 [-]: NEWTABLE  R38 0 6      ; R38 := {}
@@ -454,14 +445,14 @@
 336 [-]: SELF      R39 R14 K40  ; R40 := R14; R39 := R14[0xc5e1d5fa]
 337 [-]: CALL      R39 2 2      ; R39 := R39(R40)
 338 [-]: SETTABLE  R38 K39 R39  ; R38["XP"] := R39
-339 [-]: SETTABLE  R38 K58 K47  ; R38["UseBuiltLabel"] := true
-340 [-]: LOADK     R39 1        ; R39 := 1.000000
+339 [-]: SETTABLE  R38 K59 K47  ; R38["UseBuiltLabel"] := true
+340 [-]: CONST     R39 1        ; R39 := 1.000000
 341 [-]: LEN       R40 R6       ; R40 := # R6
-342 [-]: LOADK     R41 1        ; R41 := 1.000000
+342 [-]: CONST     R41 1        ; R41 := 1.000000
 343 [-]: FORPREP   R39 359      ; R39 -= R41; PC := 359
 344 [-]: GETTABLE  R43 R6 R42   ; R43 := R6[R42]
-345 [-]: GETTABLE  R44 R43 K59  ; R44 := R43["mStoreItem"]
-346 [-]: SELF      R44 R44 K60  ; R45 := R44; R44 := R44[0x170c5cfa]
+345 [-]: GETTABLE  R44 R43 K60  ; R44 := R43["mStoreItem"]
+346 [-]: SELF      R44 R44 K61  ; R45 := R44; R44 := R44[0x170c5cfa]
 347 [-]: CALL      R44 2 2      ; R44 := R44(R45)
 348 [-]: SELF      R45 R14 K13  ; R46 := R14; R45 := R14[0xed4e0128]
 349 [-]: CALL      R45 2 2      ; R45 := R45(R46)
@@ -475,8 +466,8 @@
 357 [-]: SETTABLE  R38 K34 K12  ; R38["State"] := 1.000000
 358 [-]: JMP       360          ; PC := 360
 359 [-]: FORLOOP   R39 344      ; R39 += R41; if R39 <= R40 then begin PC := 344; R42 := R39 end
-360 [-]: GETGLOBAL R45 K51      ; R45 := 0x33bdd652
-361 [-]: GETTABLE  R45 R45 K52  ; R45 := R45[0x23d5322f]
+360 [-]: GETGLOBAL R45 K52      ; R45 := 0x33bdd652
+361 [-]: GETTABLE  R45 R45 K53  ; R45 := R45[0x23d5322f]
 362 [-]: GETTABLE  R46 R7 R36   ; R46 := R7[R36]
 363 [-]: GETTABLE  R46 R46 K7   ; R46 := R46["recipes"]
 364 [-]: MOVE      R47 R38      ; R47 := R38
@@ -485,7 +476,7 @@
 367 [-]: TEST      R5 1         ; if R5 then PC := 456
 368 [-]: JMP       456          ; PC := 456
 369 [-]: SELF      R45 R14 K14  ; R46 := R14; R45 := R14[0xf2deaf69]
-370 [-]: GETGLOBAL R47 K61      ; R47 := gDojoRecipeItemType
+370 [-]: GETGLOBAL R47 K62      ; R47 := gDojoRecipeItemType
 371 [-]: CALL      R45 3 2      ; R45 := R45(R46,R47)
 372 [-]: TEST      R45 0        ; if not R45 then PC := 456
 373 [-]: JMP       456          ; PC := 456
@@ -493,23 +484,23 @@
 375 [-]: CALL      R45 2 2      ; R45 := R45(R46)
 376 [-]: LT        0 K6 R45     ; if 0.000000 >= R45 then PC := 456
 377 [-]: JMP       456          ; PC := 456
-378 [-]: LOADK     R46 K62      ; R46 := "Components"
+378 [-]: LOADK     R46 K63      ; R46 := "Components"
 379 [-]: GETTABLE  R47 R7 R46   ; R47 := R7[R46]
 380 [-]: EQ        0 R47 K16    ; if R47 ~= nil then PC := 390
 381 [-]: JMP       390          ; PC := 390
 382 [-]: NEWTABLE  R47 0 5      ; R47 := {}
-383 [-]: SETTABLE  R47 K3 K63   ; R47["Name"] := "/Lotus/Language/Dojo/Rooms"
+383 [-]: SETTABLE  R47 K3 K64   ; R47["Name"] := "/Lotus/Language/Dojo/Rooms"
 384 [-]: SETTABLE  R47 K5 K6    ; R47["Total"] := 0.000000
 385 [-]: SETTABLE  R47 K18 K6   ; R47["Completed"] := 0.000000
 386 [-]: NEWTABLE  R48 0 0      ; R48 := {}
 387 [-]: SETTABLE  R47 K7 R48   ; R47["recipes"] := R48
-388 [-]: SETTABLE  R47 K58 K47  ; R47["UseBuiltLabel"] := true
+388 [-]: SETTABLE  R47 K59 K47  ; R47["UseBuiltLabel"] := true
 389 [-]: SETTABLE  R7 R46 R47   ; R7[R46] := R47
 390 [-]: GETTABLE  R47 R7 R46   ; R47 := R7[R46]
 391 [-]: GETTABLE  R48 R7 R46   ; R48 := R7[R46]
 392 [-]: GETTABLE  R48 R48 K5   ; R48 := R48["Total"]
 393 [-]: ADD       R48 R48 K12  ; R48 := R48 + 1.000000
-394 [-]: SETTABLE  R47 K5 R48   ; R47["Total"] := R48
+394 [-]: SETTABLE  R47 K5 R48   ; R47[0x5bced4c4] := R48
 395 [-]: LOADK     R47 K17      ; R47 := ""
 396 [-]: GETGLOBAL R48 K0       ; R48 := 0x7b998233
 397 [-]: SELF      R49 R14 K22  ; R50 := R14; R49 := R14[0x5cc4dde3]
@@ -524,7 +515,7 @@
 406 [-]: CALL      R50 2 2      ; R50 := R50(R51)
 407 [-]: SELF      R50 R50 K24  ; R51 := R50; R50 := R50[0x6d604ba7]
 408 [-]: CALL      R50 2 2      ; R50 := R50(R51)
-409 [-]: LOADBOOL  R51 1 0      ; R51 := true
+409 [-]: LOADKB    R51 1 0      ; R51 := true
 410 [-]: CALL      R48 4 2      ; R48 := R48(R49,R50,R51)
 411 [-]: MOVE      R47 R48      ; R47 := R48
 412 [-]: JMP       421          ; PC := 421
@@ -533,7 +524,7 @@
 415 [-]: CALL      R50 2 2      ; R50 := R50(R51)
 416 [-]: SELF      R50 R50 K24  ; R51 := R50; R50 := R50[0x6d604ba7]
 417 [-]: CALL      R50 2 2      ; R50 := R50(R51)
-418 [-]: LOADBOOL  R51 1 0      ; R51 := true
+418 [-]: LOADKB    R51 1 0      ; R51 := true
 419 [-]: CALL      R48 4 2      ; R48 := R48(R49,R50,R51)
 420 [-]: MOVE      R47 R48      ; R47 := R48
 421 [-]: NEWTABLE  R48 0 6      ; R48 := {}
@@ -544,14 +535,14 @@
 426 [-]: SELF      R49 R14 K40  ; R50 := R14; R49 := R14[0xc5e1d5fa]
 427 [-]: CALL      R49 2 2      ; R49 := R49(R50)
 428 [-]: SETTABLE  R48 K39 R49  ; R48["XP"] := R49
-429 [-]: SETTABLE  R48 K58 K47  ; R48["UseBuiltLabel"] := true
-430 [-]: LOADK     R49 1        ; R49 := 1.000000
+429 [-]: SETTABLE  R48 K59 K47  ; R48["UseBuiltLabel"] := true
+430 [-]: CONST     R49 1        ; R49 := 1.000000
 431 [-]: LEN       R50 R6       ; R50 := # R6
-432 [-]: LOADK     R51 1        ; R51 := 1.000000
+432 [-]: CONST     R51 1        ; R51 := 1.000000
 433 [-]: FORPREP   R49 449      ; R49 -= R51; PC := 449
 434 [-]: GETTABLE  R53 R6 R52   ; R53 := R6[R52]
-435 [-]: GETTABLE  R54 R53 K59  ; R54 := R53["mStoreItem"]
-436 [-]: SELF      R54 R54 K60  ; R55 := R54; R54 := R54[0x170c5cfa]
+435 [-]: GETTABLE  R54 R53 K60  ; R54 := R53["mStoreItem"]
+436 [-]: SELF      R54 R54 K61  ; R55 := R54; R54 := R54[0x170c5cfa]
 437 [-]: CALL      R54 2 2      ; R54 := R54(R55)
 438 [-]: SELF      R55 R14 K13  ; R56 := R14; R55 := R14[0xed4e0128]
 439 [-]: CALL      R55 2 2      ; R55 := R55(R56)
@@ -565,8 +556,8 @@
 447 [-]: SETTABLE  R48 K34 K12  ; R48["State"] := 1.000000
 448 [-]: JMP       450          ; PC := 450
 449 [-]: FORLOOP   R49 434      ; R49 += R51; if R49 <= R50 then begin PC := 434; R52 := R49 end
-450 [-]: GETGLOBAL R55 K51      ; R55 := 0x33bdd652
-451 [-]: GETTABLE  R55 R55 K52  ; R55 := R55[0x23d5322f]
+450 [-]: GETGLOBAL R55 K52      ; R55 := 0x33bdd652
+451 [-]: GETTABLE  R55 R55 K53  ; R55 := R55[0x23d5322f]
 452 [-]: GETTABLE  R56 R7 R46   ; R56 := R7[R46]
 453 [-]: GETTABLE  R56 R56 K7   ; R56 := R56["recipes"]
 454 [-]: MOVE      R57 R48      ; R57 := R48
@@ -579,14 +570,14 @@
 ; Function #3.1:
 ;
 ; Name:            
-; Defined at line: 46
+; Defined at line: 42
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
 ; Max Stack Size:  18
 
-  1 [-]: LOADK     R2 0         ; R2 := 0.000000
-  2 [-]: LOADK     R3 0         ; R3 := 0.000000
+  1 [-]: CONST     R2 0         ; R2 := 0.000000
+  2 [-]: CONST     R3 0         ; R3 := 0.000000
   3 [-]: SELF      R4 R0 K0     ; R5 := R0; R4 := R0[0x67bc9d36]
   4 [-]: CALL      R4 2 2       ; R4 := R4(R5)
   5 [-]: EQ        1 R4 K1      ; if R4 == 0.000000 then PC := 20
@@ -597,7 +588,7 @@
  10 [-]: SELF      R7 R0 K0     ; R8 := R0; R7 := R0[0x67bc9d36]
  11 [-]: CALL      R7 2 2       ; R7 := R7(R8)
  12 [-]: GETUPVAL  R8 U0        ; R8 := U0
- 13 [-]: LOADBOOL  R9 1 0       ; R9 := true
+ 13 [-]: LOADKB    R9 1 0       ; R9 := true
  14 [-]: CALL      R4 6 2       ; R4 := R4(R5,R6,R7,R8,R9)
  15 [-]: GETTABLE  R5 R1 K4     ; R5 := R1["mReqCredits"]
  16 [-]: DIV       R5 R5 R4     ; R5 := R5 / R4
@@ -606,9 +597,9 @@
  19 [-]: ADD       R3 R3 K5     ; R3 := R3 + 1.000000
  20 [-]: SELF      R5 R0 K6     ; R6 := R0; R5 := R0[0xfc40d6a1]
  21 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 22 [-]: LOADK     R6 1         ; R6 := 1.000000
+ 22 [-]: CONST     R6 1         ; R6 := 1.000000
  23 [-]: LEN       R7 R5        ; R7 := # R5
- 24 [-]: LOADK     R8 1         ; R8 := 1.000000
+ 24 [-]: CONST     R8 1         ; R8 := 1.000000
  25 [-]: FORPREP   R6 53        ; R6 -= R8; PC := 53
  26 [-]: GETGLOBAL R10 K2       ; R10 := 0xa94df70b
  27 [-]: SELF      R10 R10 K3   ; R11 := R10; R10 := R10[0xeace7c8a]
@@ -616,12 +607,12 @@
  29 [-]: GETTABLE  R13 R5 R9    ; R13 := R5[R9]
  30 [-]: GETTABLE  R13 R13 K7   ; R13 := R13["mItemCount"]
  31 [-]: GETUPVAL  R14 U0       ; R14 := U0
- 32 [-]: LOADBOOL  R15 1 0      ; R15 := true
+ 32 [-]: LOADKB    R15 1 0      ; R15 := true
  33 [-]: CALL      R10 6 2      ; R10 := R10(R11,R12,R13,R14,R15)
- 34 [-]: LOADK     R11 1        ; R11 := 1.000000
+ 34 [-]: CONST     R11 1        ; R11 := 1.000000
  35 [-]: GETTABLE  R12 R1 K8    ; R12 := R1["mReqItems"]
  36 [-]: LEN       R12 R12      ; R12 := # R12
- 37 [-]: LOADK     R13 1        ; R13 := 1.000000
+ 37 [-]: CONST     R13 1        ; R13 := 1.000000
  38 [-]: FORPREP   R11 51       ; R11 -= R13; PC := 51
  39 [-]: GETTABLE  R15 R1 K8    ; R15 := R1["mReqItems"]
  40 [-]: GETTABLE  R15 R15 R14  ; R15 := R15[R14]

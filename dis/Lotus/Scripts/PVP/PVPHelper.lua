@@ -197,11 +197,11 @@
  24 [-]: CONCAT    R9 R9 R12    ; R9 := R9 .. R10 .. R11 .. R12
  25 [-]: CALL      R8 2 1       ; R8(R9)
  26 [-]: JMP       49           ; PC := 49
- 27 [-]: LOADK     R8 1         ; R8 := 1.000000
+ 27 [-]: CONST     R8 1         ; R8 := 1.000000
  28 [-]: GETGLOBAL R9 K5        ; R9 := 0xbe190284
  29 [-]: SELF      R9 R9 K10    ; R10 := R9; R9 := R9[0x955b105a]
  30 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 31 [-]: LOADK     R10 1        ; R10 := 1.000000
+ 31 [-]: CONST     R10 1        ; R10 := 1.000000
  32 [-]: FORPREP   R8 48        ; R8 -= R10; PC := 48
  33 [-]: GETGLOBAL R12 K5       ; R12 := 0xbe190284
  34 [-]: SELF      R12 R12 K6   ; R13 := R12; R12 := R12[0x8e6699cb]
@@ -234,7 +234,7 @@
 ; Max Stack Size:  87
 
   1 [-]: NEWTABLE  R1 0 0       ; R1 := {}
-  2 [-]: LOADK     R2 0         ; R2 := 0.000000
+  2 [-]: CONST     R2 0         ; R2 := 0.000000
   3 [-]: NEWTABLE  R3 0 0       ; R3 := {}
   4 [-]: NEWTABLE  R4 0 0       ; R4 := {}
   5 [-]: GETGLOBAL R5 K0        ; R5 := 0x33bdd652
@@ -305,9 +305,9 @@
  70 [-]: GETGLOBAL R16 K18      ; R16 := 0xe7f2b02f
  71 [-]: SELF      R16 R16 K19  ; R17 := R16; R16 := R16[0x6d0aa187]
  72 [-]: CALL      R16 2 2      ; R16 := R16(R17)
- 73 [-]: LOADK     R17 1        ; R17 := 1.000000
+ 73 [-]: CONST     R17 1        ; R17 := 1.000000
  74 [-]: LEN       R18 R16      ; R18 := # R16
- 75 [-]: LOADK     R19 1        ; R19 := 1.000000
+ 75 [-]: CONST     R19 1        ; R19 := 1.000000
  76 [-]: FORPREP   R17 130      ; R17 -= R19; PC := 130
  77 [-]: GETTABLE  R21 R16 R20  ; R21 := R16[R20]
  78 [-]: GETTABLE  R22 R21 K20  ; R22 := R21["groupName"]
@@ -380,9 +380,9 @@
 145 [-]: CALL      R29 2 1      ; R29(R30)
 146 [-]: LEN       R29 R23      ; R29 := # R23
 147 [-]: ADD       R29 R29 K16  ; R29 := R29 + 1.000000
-148 [-]: LOADK     R30 1        ; R30 := 1.000000
+148 [-]: CONST     R30 1        ; R30 := 1.000000
 149 [-]: LEN       R31 R23      ; R31 := # R23
-150 [-]: LOADK     R32 1        ; R32 := 1.000000
+150 [-]: CONST     R32 1        ; R32 := 1.000000
 151 [-]: FORPREP   R30 159      ; R30 -= R32; PC := 159
 152 [-]: LEN       R34 R28      ; R34 := # R28
 153 [-]: GETTABLE  R35 R23 R33  ; R35 := R23[R33]
@@ -416,8 +416,8 @@
 181 [-]: LEN       R36 R36      ; R36 := # R36
 182 [-]: LE        1 R35 R36    ; if R35 <= R36 then PC := 185
 183 [-]: JMP       185          ; PC := 185
-184 [-]: LOADBOOL  R35 0 1      ; R35 := false; PC := 185
-185 [-]: LOADBOOL  R35 1 0      ; R35 := true
+184 [-]: LOADKB    R35 0 1      ; R35 := false; PC := 185
+185 [-]: LOADKB    R35 1 0      ; R35 := true
 186 [-]: GETTABLE  R36 R4 K16   ; R36 := R4[1.000000]
 187 [-]: GETTABLE  R37 R4 K11   ; R37 := R4[2.000000]
 188 [-]: CALL      R34 4 2      ; R34 := R34(R35,R36,R37)
@@ -444,9 +444,9 @@
 209 [-]: LT        0 K36 R2     ; if 0.000000 >= R2 then PC := 296
 210 [-]: JMP       296          ; PC := 296
 211 [-]: LOADNIL   R35 R35      ; R35 := nil
-212 [-]: LOADK     R36 1        ; R36 := 1.000000
+212 [-]: CONST     R36 1        ; R36 := 1.000000
 213 [-]: MOVE      R37 R2       ; R37 := R2
-214 [-]: LOADK     R38 1        ; R38 := 1.000000
+214 [-]: CONST     R38 1        ; R38 := 1.000000
 215 [-]: FORPREP   R36 262      ; R36 -= R38; PC := 262
 216 [-]: GETTABLE  R40 R23 R39  ; R40 := R23[R39]
 217 [-]: GETTABLE  R40 R1 R40   ; R40 := R1[R40]
@@ -500,7 +500,7 @@
 265 [-]: GETGLOBAL R47 K7       ; R47 := 0x3d106989
 266 [-]: LOADK     R48 K41      ; R48 := "AutoAssignTeams failed! (group assignment) - splitting group"
 267 [-]: CALL      R47 2 1      ; R47(R48)
-268 [-]: LOADK     R35 1        ; R35 := 1.000000
+268 [-]: CONST     R35 1        ; R35 := 1.000000
 269 [-]: GETTABLE  R47 R23 R35  ; R47 := R23[R35]
 270 [-]: GETTABLE  R47 R1 R47   ; R47 := R1[R47]
 271 [-]: GETGLOBAL R48 K9       ; R48 := 0xcfc01047
@@ -539,7 +539,7 @@
 304 [-]: GETGLOBAL R53 K0       ; R53 := 0x33bdd652
 305 [-]: GETTABLE  R53 R53 K43  ; R53 := R53[0x9c1f3b5a]
 306 [-]: MOVE      R54 R3       ; R54 := R3
-307 [-]: LOADK     R55 1        ; R55 := 1.000000
+307 [-]: CONST     R55 1        ; R55 := 1.000000
 308 [-]: CALL      R53 3 1      ; R53(R54,R55)
 309 [-]: JMP       168          ; PC := 168
 310 [-]: GETGLOBAL R53 K7       ; R53 := 0x3d106989
@@ -555,18 +555,18 @@
 320 [-]: TEST      R53 0        ; if not R53 then PC := 366
 321 [-]: JMP       366          ; PC := 366
 322 [-]: LOADNIL   R53 R53      ; R53 := nil
-323 [-]: LOADBOOL  R53 0 0      ; R53 := false
-324 [-]: LOADK     R54 1        ; R54 := 1.000000
-325 [-]: LOADK     R55 1        ; R55 := 1.000000
-326 [-]: LOADK     R56 1        ; R56 := 1.000000
+323 [-]: LOADKB    R53 0 0      ; R53 := false
+324 [-]: CONST     R54 1        ; R54 := 1.000000
+325 [-]: CONST     R55 1        ; R55 := 1.000000
+326 [-]: CONST     R56 1        ; R56 := 1.000000
 327 [-]: LEN       R57 R4       ; R57 := # R4
-328 [-]: LOADK     R58 1        ; R58 := 1.000000
+328 [-]: CONST     R58 1        ; R58 := 1.000000
 329 [-]: FORPREP   R56 347      ; R56 -= R58; PC := 347
 330 [-]: GETTABLE  R60 R4 R59   ; R60 := R4[R59]
 331 [-]: LEN       R60 R60      ; R60 := # R60
-332 [-]: LOADK     R61 1        ; R61 := 1.000000
+332 [-]: CONST     R61 1        ; R61 := 1.000000
 333 [-]: LEN       R62 R4       ; R62 := # R4
-334 [-]: LOADK     R63 1        ; R63 := 1.000000
+334 [-]: CONST     R63 1        ; R63 := 1.000000
 335 [-]: FORPREP   R61 346      ; R61 -= R63; PC := 346
 336 [-]: EQ        1 R59 R64    ; if R59 == R64 then PC := 346
 337 [-]: JMP       346          ; PC := 346
@@ -575,7 +575,7 @@
 340 [-]: ADD       R66 R65 K16  ; R66 := R65 + 1.000000
 341 [-]: LT        0 R66 R60    ; if R66 >= R60 then PC := 346
 342 [-]: JMP       346          ; PC := 346
-343 [-]: LOADBOOL  R53 1 0      ; R53 := true
+343 [-]: LOADKB    R53 1 0      ; R53 := true
 344 [-]: MOVE      R54 R59      ; R54 := R59
 345 [-]: MOVE      R55 R64      ; R55 := R64
 346 [-]: FORLOOP   R61 336      ; R61 += R63; if R61 <= R62 then begin PC := 336; R64 := R61 end
@@ -609,9 +609,9 @@
 374 [-]: MOVE      R74 R71      ; R74 := R71
 375 [-]: CONCAT    R73 R73 R74  ; R73 := R73 .. R74
 376 [-]: CALL      R72 2 1      ; R72(R73)
-377 [-]: LOADK     R72 1        ; R72 := 1.000000
+377 [-]: CONST     R72 1        ; R72 := 1.000000
 378 [-]: LEN       R73 R4       ; R73 := # R4
-379 [-]: LOADK     R74 1        ; R74 := 1.000000
+379 [-]: CONST     R74 1        ; R74 := 1.000000
 380 [-]: FORPREP   R72 402      ; R72 -= R74; PC := 402
 381 [-]: GETGLOBAL R76 K9       ; R76 := 0xcfc01047
 382 [-]: GETTABLE  R77 R4 R75   ; R77 := R4[R75]
@@ -692,10 +692,10 @@
  41 [-]: GETTABLE  R10 R10 R3   ; R10 := R10[R3]
  42 [-]: TEST      R10 0        ; if not R10 then PC := 79
  43 [-]: JMP       79           ; PC := 79
- 44 [-]: LOADK     R11 0        ; R11 := 0.000000
+ 44 [-]: CONST     R11 0        ; R11 := 0.000000
  45 [-]: GETTABLE  R12 R5 K5    ; R12 := R5["HITTYPE_NUM"]
  46 [-]: SUB       R12 R12 K6   ; R12 := R12 - 1.000000
- 47 [-]: LOADK     R13 1        ; R13 := 1.000000
+ 47 [-]: CONST     R13 1        ; R13 := 1.000000
  48 [-]: FORPREP   R11 66       ; R11 -= R13; PC := 66
  49 [-]: LOADNIL   R15 R15      ; R15 := nil
  50 [-]: GETTABLE  R16 R10 K7   ; R16 := R10["hitTypes"]
@@ -744,8 +744,8 @@
  93 [-]: GETTABLE  R18 R18 K19  ; R18 := R18[0x06d055f9]
  94 [-]: EQ        1 R6 R4      ; if R6 == R4 then PC := 97
  95 [-]: JMP       97           ; PC := 97
- 96 [-]: LOADBOOL  R19 0 1      ; R19 := false; PC := 97
- 97 [-]: LOADBOOL  R19 1 0      ; R19 := true
+ 96 [-]: LOADKB    R19 0 1      ; R19 := false; PC := 97
+ 97 [-]: LOADKB    R19 1 0      ; R19 := true
  98 [-]: GETGLOBAL R20 K17      ; R20 := 0x0032441c
  99 [-]: GETTABLE  R20 R20 K20  ; R20 := R20["UIColor_PvpTeamOne"]
 100 [-]: GETGLOBAL R21 K17      ; R21 := 0x0032441c
@@ -756,8 +756,8 @@
 105 [-]: GETTABLE  R18 R18 K19  ; R18 := R18[0x06d055f9]
 106 [-]: EQ        1 R7 R4      ; if R7 == R4 then PC := 109
 107 [-]: JMP       109          ; PC := 109
-108 [-]: LOADBOOL  R19 0 1      ; R19 := false; PC := 109
-109 [-]: LOADBOOL  R19 1 0      ; R19 := true
+108 [-]: LOADKB    R19 0 1      ; R19 := false; PC := 109
+109 [-]: LOADKB    R19 1 0      ; R19 := true
 110 [-]: GETGLOBAL R20 K17      ; R20 := 0x0032441c
 111 [-]: GETTABLE  R20 R20 K20  ; R20 := R20["UIColor_PvpTeamOne"]
 112 [-]: GETGLOBAL R21 K17      ; R21 := 0x0032441c
@@ -910,7 +910,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  6
 
-  1 [-]: LOADBOOL  R2 0 0       ; R2 := false
+  1 [-]: LOADKB    R2 0 0       ; R2 := false
   2 [-]: GETUPVAL  R3 U0        ; R3 := U0
   3 [-]: EQ        1 K0 R3      ; if nil == R3 then PC := 15
   4 [-]: JMP       15           ; PC := 15
@@ -918,7 +918,7 @@
   6 [-]: JMP       15           ; PC := 15
   7 [-]: EQ        0 R3 R1      ; if R3 ~= R1 then PC := 11
   8 [-]: JMP       11           ; PC := 11
-  9 [-]: LOADBOOL  R2 1 0       ; R2 := true
+  9 [-]: LOADKB    R2 1 0       ; R2 := true
  10 [-]: JMP       3            ; PC := 3
  11 [-]: SELF      R4 R3 K2     ; R5 := R3; R4 := R3[0x78ea68cf]
  12 [-]: CALL      R4 2 2       ; R4 := R4(R5)

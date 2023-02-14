@@ -12,19 +12,19 @@
   3 [-]: GETGLOBAL R2 K1        ; R2 := package
   4 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["seeall"]
   5 [-]: CALL      R0 3 1       ; R0(R1,R2)
-  6 [-]: LOADK     R0 0         ; R0 := 0.000000
+  6 [-]: CONST     R0 0         ; R0 := 0.000000
   7 [-]: SETGLOBAL R0 K3        ; HITTYPE_MELEE := R0
-  8 [-]: LOADK     R0 1         ; R0 := 1.000000
+  8 [-]: CONST     R0 1         ; R0 := 1.000000
   9 [-]: SETGLOBAL R0 K4        ; HITTYPE_POWER := R0
- 10 [-]: LOADK     R0 2         ; R0 := 2.000000
+ 10 [-]: CONST     R0 2         ; R0 := 2.000000
  11 [-]: SETGLOBAL R0 K5        ; HITTYPE_WEAPON := R0
- 12 [-]: LOADK     R0 3         ; R0 := 3.000000
+ 12 [-]: CONST     R0 3         ; R0 := 3.000000
  13 [-]: SETGLOBAL R0 K6        ; HITTYPE_NUM := R0
- 14 [-]: LOADK     R0 0         ; R0 := 0.000000
+ 14 [-]: CONST     R0 0         ; R0 := 0.000000
  15 [-]: SETGLOBAL R0 K7        ; HITTYPE_EX_NONE := R0
- 16 [-]: LOADK     R0 1         ; R0 := 1.000000
+ 16 [-]: CONST     R0 1         ; R0 := 1.000000
  17 [-]: SETGLOBAL R0 K8        ; HITTYPE_EX_WEAPON_PRIMARY := R0
- 18 [-]: LOADK     R0 2         ; R0 := 2.000000
+ 18 [-]: CONST     R0 2         ; R0 := 2.000000
  19 [-]: SETGLOBAL R0 K9        ; HITTYPE_EX_WEAPON_SECONDARY := R0
  20 [-]: CLOSURE   R0 0         ; R0 := closure(Function #1)
  21 [-]: SETGLOBAL R0 K10       ; OnStart := R0
@@ -89,7 +89,7 @@
  41 [-]: GETTABLE  R3 R2 K13    ; R3 := R2["challengeUserState"]
  42 [-]: SELF      R3 R3 K16    ; R4 := R3; R3 := R3[0x2373e028]
  43 [-]: LOADK     R5 K0        ; R5 := "curNumHits"
- 44 [-]: LOADK     R6 0         ; R6 := 0.000000
+ 44 [-]: CONST     R6 0         ; R6 := 0.000000
  45 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
  46 [-]: GETTABLE  R3 R2 K13    ; R3 := R2["challengeUserState"]
  47 [-]: SELF      R3 R3 K17    ; R4 := R3; R3 := R3[0xbf0268f4]
@@ -202,8 +202,8 @@
  78 [-]: CALL      R13 2 2      ; R13 := R13(R14)
  79 [-]: EQ        1 R13 R7     ; if R13 == R7 then PC := 82
  80 [-]: JMP       82           ; PC := 82
- 81 [-]: LOADBOOL  R13 0 1      ; R13 := false; PC := 82
- 82 [-]: LOADBOOL  R13 1 0      ; R13 := true
+ 81 [-]: LOADKB    R13 0 1      ; R13 := false; PC := 82
+ 82 [-]: LOADKB    R13 1 0      ; R13 := true
  83 [-]: TEST      R3 1         ; if R3 then PC := 149
  84 [-]: JMP       149          ; PC := 149
  85 [-]: GETTABLE  R14 R0 K19   ; R14 := R0["DamageHistory"]
@@ -289,7 +289,7 @@
 165 [-]: MOVE      R20 R11      ; R20 := R11
 166 [-]: SELF      R21 R1 K34   ; R22 := R1; R21 := R1[0xf0a798a6]
 167 [-]: CALL      R21 2 2      ; R21 := R21(R22)
-168 [-]: LOADBOOL  R22 1 0      ; R22 := true
+168 [-]: LOADKB    R22 1 0      ; R22 := true
 169 [-]: CALL      R14 9 1      ; R14(R15,R16,R17,R18,R19,R20,R21,R22)
 170 [-]: GETTABLE  R14 R0 K31   ; R14 := R0[0xf58a38c0]
 171 [-]: MOVE      R15 R5       ; R15 := R5
@@ -418,11 +418,11 @@
 ; Is_vararg:       0
 ; Max Stack Size:  9
 
-  1 [-]: LOADK     R3 0         ; R3 := 0.000000
-  2 [-]: LOADK     R4 0         ; R4 := 0.000000
+  1 [-]: CONST     R3 0         ; R3 := 0.000000
+  2 [-]: CONST     R4 0         ; R4 := 0.000000
   3 [-]: GETGLOBAL R5 K0        ; R5 := HITTYPE_NUM
   4 [-]: SUB       R5 R5 K1     ; R5 := R5 - 1.000000
-  5 [-]: LOADK     R6 1         ; R6 := 1.000000
+  5 [-]: CONST     R6 1         ; R6 := 1.000000
   6 [-]: FORPREP   R4 24        ; R4 -= R6; PC := 24
   7 [-]: GETTABLE  R8 R0 K2     ; R8 := R0["DamageHistory"]
   8 [-]: GETTABLE  R8 R8 R1     ; R8 := R8[R1]
@@ -457,7 +457,7 @@
 
   1 [-]: TEST      R1 1         ; if R1 then PC := 4
   2 [-]: JMP       4            ; PC := 4
-  3 [-]: LOADK     R1 1         ; R1 := 1.000000
+  3 [-]: CONST     R1 1         ; R1 := 1.000000
   4 [-]: GETTABLE  R2 R0 K0     ; R2 := R0["curNumHits"]
   5 [-]: ADD       R2 R2 R1     ; R2 := R2 + R1
   6 [-]: SETTABLE  R0 K0 R2     ; R0["curNumHits"] := R2

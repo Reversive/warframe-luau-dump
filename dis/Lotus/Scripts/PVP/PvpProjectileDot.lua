@@ -42,7 +42,7 @@
  15 [-]: GETGLOBAL R8 K4        ; R8 := 0x17eb528a
  16 [-]: GETGLOBAL R9 K5        ; R9 := 0x49518788
  17 [-]: GETGLOBAL R10 K6       ; R10 := 0x5d433d82
- 18 [-]: LOADK     R11 17       ; R11 := 17.000000
+ 18 [-]: CONST     R11 17       ; R11 := 17.000000
  19 [-]: GETGLOBAL R12 K8       ; R12 := 0xbf49fcf8
  20 [-]: CALL      R4 9 1       ; R4(R5,R6,R7,R8,R9,R10,R11,R12)
  21 [-]: RETURN    R0 1         ; return 

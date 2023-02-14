@@ -110,8 +110,8 @@
  56 [-]: CALL      R9 0 2       ; R9 := R9(R10,...)
  57 [-]: LE        1 R9 K18     ; if R9 <= 45.000000 then PC := 60
  58 [-]: JMP       60           ; PC := 60
- 59 [-]: LOADBOOL  R9 0 1       ; R9 := false; PC := 60
- 60 [-]: LOADBOOL  R9 1 0       ; R9 := true
+ 59 [-]: LOADKB    R9 0 1       ; R9 := false; PC := 60
+ 60 [-]: LOADKB    R9 1 0       ; R9 := true
  61 [-]: TEST      R9 0         ; if not R9 then PC := 86
  62 [-]: JMP       86           ; PC := 86
  63 [-]: LOADNIL   R10 R10      ; R10 := nil

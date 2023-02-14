@@ -16,15 +16,15 @@
   7 [-]: LOADK     R1 K4        ; R1 := "/Lotus/Types/Enemies/CaptureTargets/CaptureTargetBaseAvatar"
   8 [-]: CALL      R0 2 2       ; R0 := R0(R1)
   9 [-]: LOADNIL   R1 R1        ; R1 := nil
- 10 [-]: LOADK     R2 180       ; R2 := 180.000000
+ 10 [-]: CONST     R2 180       ; R2 := 180.000000
  11 [-]: GETGLOBAL R3 K5        ; R3 := 0x0469f296
  12 [-]: LOADK     R4 K6        ; R4 := "PanicSystemStatus"
  13 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 14 [-]: LOADK     R4 0         ; R4 := 0.000000
+ 14 [-]: CONST     R4 0         ; R4 := 0.000000
  15 [-]: SETGLOBAL R4 K7        ; UNALERT := R4
- 16 [-]: LOADK     R4 1         ; R4 := 1.000000
+ 16 [-]: CONST     R4 1         ; R4 := 1.000000
  17 [-]: SETGLOBAL R4 K8        ; ALERT := R4
- 18 [-]: LOADK     R4 2         ; R4 := 2.000000
+ 18 [-]: CONST     R4 2         ; R4 := 2.000000
  19 [-]: SETGLOBAL R4 K9        ; LOCKDOWN := R4
  20 [-]: CLOSURE   R4 0         ; R4 := closure(Function #1)
  21 [-]: CLOSURE   R5 1         ; R5 := closure(Function #2)
@@ -129,7 +129,7 @@
  16 [-]: JMP       36           ; PC := 36
  17 [-]: GETUPVAL  R0 U0        ; R0 := U0
  18 [-]: SELF      R0 R0 K6     ; R1 := R0; R0 := R0[0x6878e5f0]
- 19 [-]: LOADBOOL  R2 0 0       ; R2 := false
+ 19 [-]: LOADKB    R2 0 0       ; R2 := false
  20 [-]: CALL      R0 3 1       ; R0(R1,R2)
  21 [-]: GETGLOBAL R0 K0        ; R0 := 0x7b998233
  22 [-]: GETGLOBAL R1 K7        ; R1 := _T
@@ -278,7 +278,7 @@
   7 [-]: JMP       10           ; PC := 10
   8 [-]: EQ        0 R0 K5      ; if R0 ~= 33.000000 then PC := 12
   9 [-]: JMP       12           ; PC := 12
- 10 [-]: LOADBOOL  R1 1 0       ; R1 := true
+ 10 [-]: LOADKB    R1 1 0       ; R1 := true
  11 [-]: RETURN    R1 2         ; return R1
  12 [-]: EQ        0 R0 K6      ; if R0 ~= 9.000000 then PC := 24
  13 [-]: JMP       24           ; PC := 24
@@ -290,9 +290,9 @@
  19 [-]: CALL      R1 0 2       ; R1 := R1(R2,...)
  20 [-]: LT        0 K10 R1     ; if 0.000000 >= R1 then PC := 24
  21 [-]: JMP       24           ; PC := 24
- 22 [-]: LOADBOOL  R1 1 0       ; R1 := true
+ 22 [-]: LOADKB    R1 1 0       ; R1 := true
  23 [-]: RETURN    R1 2         ; return R1
- 24 [-]: LOADBOOL  R1 0 0       ; R1 := false
+ 24 [-]: LOADKB    R1 0 0       ; R1 := false
  25 [-]: RETURN    R1 2         ; return R1
  26 [-]: RETURN    R0 1         ; return 
 
@@ -325,7 +325,7 @@
  17 [-]: JMP       36           ; PC := 36
  18 [-]: GETUPVAL  R4 U2        ; R4 := U2
  19 [-]: SELF      R4 R4 K4     ; R5 := R4; R4 := R4[0x4da602a1]
- 20 [-]: LOADBOOL  R6 1 0       ; R6 := true
+ 20 [-]: LOADKB    R6 1 0       ; R6 := true
  21 [-]: GETUPVAL  R7 U3        ; R7 := U3
  22 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
  23 [-]: GETUPVAL  R4 U4        ; R4 := U4
@@ -343,7 +343,7 @@
  35 [-]: JMP       74           ; PC := 74
  36 [-]: GETUPVAL  R4 U2        ; R4 := U2
  37 [-]: SELF      R4 R4 K4     ; R5 := R4; R4 := R4[0x4da602a1]
- 38 [-]: LOADBOOL  R6 0 0       ; R6 := false
+ 38 [-]: LOADKB    R6 0 0       ; R6 := false
  39 [-]: GETUPVAL  R7 U3        ; R7 := U3
  40 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
  41 [-]: GETGLOBAL R4 K3        ; R4 := LOCKDOWN
@@ -384,11 +384,11 @@
  76 [-]: JMP       86           ; PC := 86
  77 [-]: GETUPVAL  R4 U2        ; R4 := U2
  78 [-]: SELF      R4 R4 K17    ; R5 := R4; R4 := R4[0xe603bab2]
- 79 [-]: LOADBOOL  R6 1 0       ; R6 := true
+ 79 [-]: LOADKB    R6 1 0       ; R6 := true
  80 [-]: CALL      R4 3 1       ; R4(R5,R6)
  81 [-]: GETGLOBAL R4 K18       ; R4 := 0xbe190284
  82 [-]: SELF      R4 R4 K19    ; R5 := R4; R4 := R4[0x6bb40851]
- 83 [-]: LOADBOOL  R6 1 0       ; R6 := true
+ 83 [-]: LOADKB    R6 1 0       ; R6 := true
  84 [-]: CALL      R4 3 1       ; R4(R5,R6)
  85 [-]: JMP       99           ; PC := 99
  86 [-]: GETGLOBAL R4 K20       ; R4 := UNALERT
@@ -398,18 +398,18 @@
  90 [-]: JMP       95           ; PC := 95
  91 [-]: GETUPVAL  R4 U2        ; R4 := U2
  92 [-]: SELF      R4 R4 K17    ; R5 := R4; R4 := R4[0xe603bab2]
- 93 [-]: LOADBOOL  R6 0 0       ; R6 := false
+ 93 [-]: LOADKB    R6 0 0       ; R6 := false
  94 [-]: CALL      R4 3 1       ; R4(R5,R6)
  95 [-]: GETGLOBAL R4 K18       ; R4 := 0xbe190284
  96 [-]: SELF      R4 R4 K19    ; R5 := R4; R4 := R4[0x6bb40851]
- 97 [-]: LOADBOOL  R6 0 0       ; R6 := false
+ 97 [-]: LOADKB    R6 0 0       ; R6 := false
  98 [-]: CALL      R4 3 1       ; R4(R5,R6)
  99 [-]: GETUPVAL  R4 U4        ; R4 := U4
 100 [-]: GETGLOBAL R5 K5        ; R5 := 0x0469f296
 101 [-]: LOADK     R6 K21       ; R6 := "PanicButtonMasterScript"
 102 [-]: CALL      R5 2 2       ; R5 := R5(R6)
 103 [-]: LOADK     R6 K22       ; R6 := "Execute"
-104 [-]: LOADBOOL  R7 1 0       ; R7 := true
+104 [-]: LOADKB    R7 1 0       ; R7 := true
 105 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
 106 [-]: RETURN    R0 1         ; return 
 
@@ -505,9 +505,9 @@
  26 [-]: GETGLOBAL R3 K6        ; R3 := 0x89326c93
  27 [-]: SELF      R3 R3 K7     ; R4 := R3; R3 := R3[0x7d108ddb]
  28 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 29 [-]: LOADK     R4 1         ; R4 := 1.000000
+ 29 [-]: CONST     R4 1         ; R4 := 1.000000
  30 [-]: LEN       R5 R3        ; R5 := # R3
- 31 [-]: LOADK     R6 1         ; R6 := 1.000000
+ 31 [-]: CONST     R6 1         ; R6 := 1.000000
  32 [-]: FORPREP   R4 134       ; R4 -= R6; PC := 134
  33 [-]: GETTABLE  R8 R3 R7     ; R8 := R3[R7]
  34 [-]: SELF      R8 R8 K8     ; R9 := R8; R8 := R8[0x8b72b36e]
@@ -519,16 +519,16 @@
  40 [-]: CALL      R9 2 2       ; R9 := R9(R10)
  41 [-]: TEST      R9 1         ; if R9 then PC := 134
  42 [-]: JMP       134          ; PC := 134
- 43 [-]: LOADK     R9 1         ; R9 := 1.000000
+ 43 [-]: CONST     R9 1         ; R9 := 1.000000
  44 [-]: LEN       R10 R2       ; R10 := # R2
- 45 [-]: LOADK     R11 1        ; R11 := 1.000000
+ 45 [-]: CONST     R11 1        ; R11 := 1.000000
  46 [-]: FORPREP   R9 133       ; R9 -= R11; PC := 133
  47 [-]: GETGLOBAL R13 K1       ; R13 := _T
  48 [-]: GETTABLE  R13 R13 K2   ; R13 := R13["harlequinObjectChange"]
  49 [-]: GETTABLE  R13 R13 R8   ; R13 := R13[R8]
- 50 [-]: LOADK     R14 1        ; R14 := 1.000000
+ 50 [-]: CONST     R14 1        ; R14 := 1.000000
  51 [-]: LEN       R15 R13      ; R15 := # R13
- 52 [-]: LOADK     R16 1        ; R16 := 1.000000
+ 52 [-]: CONST     R16 1        ; R16 := 1.000000
  53 [-]: FORPREP   R14 132      ; R14 -= R16; PC := 132
  54 [-]: GETTABLE  R18 R2 R12   ; R18 := R2[R12]
  55 [-]: GETTABLE  R19 R13 R17  ; R19 := R13[R17]
@@ -592,21 +592,21 @@
 113 [-]: GETTABLE  R24 R13 R17  ; R24 := R13[R17]
 114 [-]: GETTABLE  R24 R24 K11  ; R24 := R24["params"]
 115 [-]: GETTABLE  R24 R24 K22  ; R24 := R24["consoleRange"]
-116 [-]: LOADK     R25 500      ; R25 := 500.000000
-117 [-]: LOADK     R26 7        ; R26 := 7.000000
+116 [-]: CONST     R25 500      ; R25 := 500.000000
+117 [-]: CONST     R26 7        ; R26 := 7.000000
 118 [-]: GETTABLE  R27 R2 R12   ; R27 := R2[R12]
 119 [-]: MOVE      R28 R18      ; R28 := R18
-120 [-]: LOADK     R29 19       ; R29 := 19.000000
-121 [-]: LOADBOOL  R30 1 0      ; R30 := true
-122 [-]: LOADBOOL  R31 1 0      ; R31 := true
-123 [-]: LOADBOOL  R32 0 0      ; R32 := false
-124 [-]: LOADK     R33 1        ; R33 := 1.000000
-125 [-]: LOADBOOL  R34 1 0      ; R34 := true
+120 [-]: CONST     R29 19       ; R29 := 19.000000
+121 [-]: LOADKB    R30 1 0      ; R30 := true
+122 [-]: LOADKB    R31 1 0      ; R31 := true
+123 [-]: LOADKB    R32 0 0      ; R32 := false
+124 [-]: CONST     R33 1        ; R33 := 1.000000
+125 [-]: LOADKB    R34 1 0      ; R34 := true
 126 [-]: CALL      R19 16 1     ; R19(R20,R21,R22,R23,R24,R25,R26,R27,R28,R29,R30,R31,R32,R33,R34)
 127 [-]: GETGLOBAL R19 K24      ; R19 := 0x3d106989
 128 [-]: LOADK     R20 K25      ; R20 := "Alarm System: Mirage trap triggered"
 129 [-]: CALL      R19 2 1      ; R19(R20)
-130 [-]: LOADBOOL  R19 1 0      ; R19 := true
+130 [-]: LOADKB    R19 1 0      ; R19 := true
 131 [-]: RETURN    R19 2        ; return R19
 132 [-]: FORLOOP   R14 54       ; R14 += R16; if R14 <= R15 then begin PC := 54; R17 := R14 end
 133 [-]: FORLOOP   R9 47        ; R9 += R11; if R9 <= R10 then begin PC := 47; R12 := R9 end
@@ -688,8 +688,8 @@
  34 [-]: CALL      R8 2 2       ; R8 := R8(R9)
  35 [-]: EQ        1 R7 R8      ; if R7 == R8 then PC := 38
  36 [-]: JMP       38           ; PC := 38
- 37 [-]: LOADBOOL  R5 0 1       ; R5 := false; PC := 38
- 38 [-]: LOADBOOL  R5 1 0       ; R5 := true
+ 37 [-]: LOADKB    R5 0 1       ; R5 := false; PC := 38
+ 38 [-]: LOADKB    R5 1 0       ; R5 := true
  39 [-]: GETGLOBAL R8 K4        ; R8 := 0x3d106989
  40 [-]: LOADK     R9 K10       ; R9 := "Alarm System: faction = "
  41 [-]: GETGLOBAL R10 K11      ; R10 := 0x64fb1586
@@ -789,7 +789,7 @@
 135 [-]: SELF      R10 R0 K31   ; R11 := R0; R10 := R0[0xde321e6f]
 136 [-]: CALL      R10 2 2      ; R10 := R10(R11)
 137 [-]: SELF      R10 R10 K32  ; R11 := R10; R10 := R10[0x8db2624f]
-138 [-]: LOADK     R12 50       ; R12 := 50.000000
+138 [-]: CONST     R12 50       ; R12 := 50.000000
 139 [-]: MOVE      R13 R0       ; R13 := R0
 140 [-]: GETGLOBAL R14 K8       ; R14 := 0x0469f296
 141 [-]: LOADK     R15 K33      ; R15 := "/Lotus/Language/Actions/HackXP"
@@ -832,9 +832,9 @@
 178 [-]: JMP       185          ; PC := 185
 179 [-]: SELF      R10 R1 K45   ; R11 := R1; R10 := R1[0x659d451f]
 180 [-]: MOVE      R12 R2       ; R12 := R2
-181 [-]: LOADBOOL  R13 0 0      ; R13 := false
-182 [-]: LOADK     R14 0        ; R14 := 0.000000
-183 [-]: LOADBOOL  R15 1 0      ; R15 := true
+181 [-]: LOADKB    R13 0 0      ; R13 := false
+182 [-]: CONST     R14 0        ; R14 := 0.000000
+183 [-]: LOADKB    R15 1 0      ; R15 := true
 184 [-]: CALL      R10 6 1      ; R10(R11,R12,R13,R14,R15)
 185 [-]: GETUPVAL  R10 U5       ; R10 := U5
 186 [-]: MOVE      R11 R1       ; R11 := R1

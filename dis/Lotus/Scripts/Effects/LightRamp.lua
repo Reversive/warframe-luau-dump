@@ -21,7 +21,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  6
 
-  1 [-]: LOADK     R1 0         ; R1 := 0.000000
+  1 [-]: CONST     R1 0         ; R1 := 0.000000
   2 [-]: GETGLOBAL R2 K0        ; R2 := 0xe15169d2
   3 [-]: LT        0 R1 R2      ; if R1 >= R2 then PC := 24
   4 [-]: JMP       24           ; PC := 24
@@ -41,7 +41,7 @@
  18 [-]: CALL      R3 1 2       ; R3 := R3()
  19 [-]: ADD       R1 R1 R3     ; R1 := R1 + R3
  20 [-]: GETGLOBAL R3 K7        ; R3 := 0xcbd666e1
- 21 [-]: LOADK     R4 0         ; R4 := 0.000000
+ 21 [-]: CONST     R4 0         ; R4 := 0.000000
  22 [-]: CALL      R3 2 1       ; R3(R4)
  23 [-]: JMP       2            ; PC := 2
  24 [-]: RETURN    R0 1         ; return 

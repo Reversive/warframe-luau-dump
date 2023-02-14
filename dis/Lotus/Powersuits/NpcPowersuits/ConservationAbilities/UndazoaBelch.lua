@@ -39,19 +39,19 @@
   7 [-]: CALL      R3 2 2       ; R3 := R3(R4)
   8 [-]: TEST      R3 0         ; if not R3 then PC := 12
   9 [-]: JMP       12           ; PC := 12
- 10 [-]: LOADK     R3 0         ; R3 := 0.000000
+ 10 [-]: CONST     R3 0         ; R3 := 0.000000
  11 [-]: RETURN    R3 2         ; return R3
  12 [-]: SELF      R3 R1 K4     ; R4 := R1; R3 := R1[0xb6a7c46e]
  13 [-]: GETUPVAL  R5 U0        ; R5 := U0
  14 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
  15 [-]: TEST      R3 0         ; if not R3 then PC := 19
  16 [-]: JMP       19           ; PC := 19
- 17 [-]: LOADK     R3 0         ; R3 := 0.000000
+ 17 [-]: CONST     R3 0         ; R3 := 0.000000
  18 [-]: RETURN    R3 2         ; return R3
  19 [-]: SELF      R3 R0 K5     ; R4 := R0; R3 := R0[0x48d05257]
  20 [-]: GETTABLE  R5 R2 K3     ; R5 := R2["avatar"]
  21 [-]: CALL      R3 3 1       ; R3(R4,R5)
- 22 [-]: LOADK     R3 1         ; R3 := 1.000000
+ 22 [-]: CONST     R3 1         ; R3 := 1.000000
  23 [-]: RETURN    R3 2         ; return R3
  24 [-]: RETURN    R0 1         ; return 
 
@@ -89,11 +89,11 @@
 
   1 [-]: SELF      R4 R1 K0     ; R5 := R1; R4 := R1[0x659d451f]
   2 [-]: GETGLOBAL R6 K1        ; R6 := 0x17517254
-  3 [-]: LOADBOOL  R7 0 0       ; R7 := false
-  4 [-]: LOADK     R8 0         ; R8 := 0.000000
-  5 [-]: LOADBOOL  R9 1 0       ; R9 := true
+  3 [-]: LOADKB    R7 0 0       ; R7 := false
+  4 [-]: CONST     R8 0         ; R8 := 0.000000
+  5 [-]: LOADKB    R9 1 0       ; R9 := true
   6 [-]: CALL      R4 6 1       ; R4(R5,R6,R7,R8,R9)
-  7 [-]: LOADK     R4 0         ; R4 := 0.000000
+  7 [-]: CONST     R4 0         ; R4 := 0.000000
   8 [-]: LOADNIL   R5 R5        ; R5 := nil
   9 [-]: NEWTABLE  R6 0 0       ; R6 := {}
  10 [-]: GETGLOBAL R7 K2        ; R7 := ZERO_VECTOR
@@ -133,7 +133,7 @@
  44 [-]: GETGLOBAL R12 K10      ; R12 := 0x0469f296
  45 [-]: LOADK     R13 K11      ; R13 := "TrailDecoWait"
  46 [-]: CALL      R12 2 2      ; R12 := R12(R13)
- 47 [-]: LOADBOOL  R13 0 0      ; R13 := false
+ 47 [-]: LOADKB    R13 0 0      ; R13 := false
  48 [-]: CALL      R10 4 1      ; R10(R11,R12,R13)
  49 [-]: GETGLOBAL R10 K12      ; R10 := 0x89326c93
  50 [-]: SELF      R10 R10 K13  ; R11 := R10; R10 := R10[0x05909209]
@@ -154,7 +154,7 @@
  65 [-]: CALL      R10 1 2      ; R10 := R10()
  66 [-]: ADD       R4 R4 R10    ; R4 := R4 + R10
  67 [-]: GETGLOBAL R10 K19      ; R10 := 0xcbd666e1
- 68 [-]: LOADK     R11 0        ; R11 := 0.000000
+ 68 [-]: CONST     R11 0        ; R11 := 0.000000
  69 [-]: CALL      R10 2 1      ; R10(R11)
  70 [-]: JMP       11           ; PC := 11
  71 [-]: GETGLOBAL R10 K3       ; R10 := 0x7b998233
@@ -166,7 +166,7 @@
  77 [-]: GETGLOBAL R12 K10      ; R12 := 0x0469f296
  78 [-]: LOADK     R13 K11      ; R13 := "TrailDecoWait"
  79 [-]: CALL      R12 2 2      ; R12 := R12(R13)
- 80 [-]: LOADBOOL  R13 0 0      ; R13 := false
+ 80 [-]: LOADKB    R13 0 0      ; R13 := false
  81 [-]: CALL      R10 4 1      ; R10(R11,R12,R13)
  82 [-]: RETURN    R0 1         ; return 
 

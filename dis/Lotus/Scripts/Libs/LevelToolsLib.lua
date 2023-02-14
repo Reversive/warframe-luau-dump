@@ -158,7 +158,7 @@
  49 [-]: MOVE      R9 R1        ; R9 := R1
  50 [-]: CALL      R7 3 1       ; R7(R8,R9)
  51 [-]: GETGLOBAL R7 K13       ; R7 := 0xcbd666e1
- 52 [-]: LOADK     R8 1         ; R8 := 1.250000
+ 52 [-]: CONST     R8 1         ; R8 := 1.250000
  53 [-]: CALL      R7 2 1       ; R7(R8)
  54 [-]: GETGLOBAL R7 K2        ; R7 := 0x7b998233
  55 [-]: MOVE      R8 R6        ; R8 := R6
@@ -182,7 +182,7 @@
   1 [-]: SELF      R2 R0 K0     ; R3 := R0; R2 := R0[0x986d2ab8]
   2 [-]: GETGLOBAL R4 K1        ; R4 := 0x6c97a788
   3 [-]: GETTABLE  R4 R4 K2     ; R4 := R4["EMISSIVE_MAP_ATTEN"]
-  4 [-]: LOADK     R5 0         ; R5 := 0.000000
+  4 [-]: CONST     R5 0         ; R5 := 0.000000
   5 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
   6 [-]: GETUPVAL  R2 U0        ; R2 := U0
   7 [-]: MOVE      R3 R0        ; R3 := R0

@@ -57,9 +57,9 @@
  25 [-]: GETGLOBAL R5 K8        ; R5 := 0x8838a493
  26 [-]: LT        0 R5 R4      ; if R5 >= R4 then PC := 30
  27 [-]: JMP       30           ; PC := 30
- 28 [-]: LOADK     R4 1         ; R4 := 1.000000
+ 28 [-]: CONST     R4 1         ; R4 := 1.000000
  29 [-]: RETURN    R4 2         ; return R4
- 30 [-]: LOADK     R4 0         ; R4 := 0.000000
+ 30 [-]: CONST     R4 0         ; R4 := 0.000000
  31 [-]: RETURN    R4 2         ; return R4
  32 [-]: RETURN    R0 1         ; return 
 
@@ -127,9 +127,9 @@
  52 [-]: JMP       59           ; PC := 59
  53 [-]: SELF      R8 R6 K13    ; R9 := R6; R8 := R6[0xeade8050]
  54 [-]: GETUPVAL  R10 U0       ; R10 := U0
- 55 [-]: LOADK     R11 117      ; R11 := 117.000000
- 56 [-]: LOADK     R12 3        ; R12 := 3.000000
- 57 [-]: LOADK     R13 0        ; R13 := 0.000000
+ 55 [-]: CONST     R11 120      ; R11 := 120.000000
+ 56 [-]: CONST     R12 4        ; R12 := 4.000000
+ 57 [-]: CONST     R13 0        ; R13 := 0.000000
  58 [-]: CALL      R8 6 1       ; R8(R9,R10,R11,R12,R13)
  59 [-]: GETGLOBAL R8 K16       ; R8 := 0xcbd666e1
  60 [-]: GETGLOBAL R9 K17       ; R9 := 0x0127f965
@@ -141,9 +141,9 @@
  66 [-]: JMP       73           ; PC := 73
  67 [-]: SELF      R8 R6 K18    ; R9 := R6; R8 := R6[0x2722b5c3]
  68 [-]: GETUPVAL  R10 U0       ; R10 := U0
- 69 [-]: LOADK     R11 117      ; R11 := 117.000000
- 70 [-]: LOADK     R12 3        ; R12 := 3.000000
- 71 [-]: LOADK     R13 0        ; R13 := 0.000000
+ 69 [-]: CONST     R11 120      ; R11 := 120.000000
+ 70 [-]: CONST     R12 4        ; R12 := 4.000000
+ 71 [-]: CONST     R13 0        ; R13 := 0.000000
  72 [-]: CALL      R8 6 1       ; R8(R9,R10,R11,R12,R13)
  73 [-]: RETURN    R0 1         ; return 
 
@@ -171,9 +171,9 @@
  12 [-]: JMP       19           ; PC := 19
  13 [-]: SELF      R5 R4 K3     ; R6 := R4; R5 := R4[0x2722b5c3]
  14 [-]: GETUPVAL  R7 U0        ; R7 := U0
- 15 [-]: LOADK     R8 117       ; R8 := 117.000000
- 16 [-]: LOADK     R9 3         ; R9 := 3.000000
- 17 [-]: LOADK     R10 0        ; R10 := 0.000000
+ 15 [-]: CONST     R8 120       ; R8 := 120.000000
+ 16 [-]: CONST     R9 4         ; R9 := 4.000000
+ 17 [-]: CONST     R10 0        ; R10 := 0.000000
  18 [-]: CALL      R5 6 1       ; R5(R6,R7,R8,R9,R10)
  19 [-]: RETURN    R0 1         ; return 
 

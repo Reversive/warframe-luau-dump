@@ -42,7 +42,7 @@
  17 [-]: NEWTABLE  R2 0 0       ; R2 := {}
  18 [-]: MOVE      R1 R2        ; R1 := R2
  19 [-]: GETGLOBAL R2 K5        ; R2 := 0x0c5e62f9
- 20 [-]: LOADK     R3 1         ; R3 := 1.000000
+ 20 [-]: CONST     R3 1         ; R3 := 1.000000
  21 [-]: LEN       R4 R0        ; R4 := # R0
  22 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
  23 [-]: GETTABLE  R3 R0 R2     ; R3 := R0[R2]

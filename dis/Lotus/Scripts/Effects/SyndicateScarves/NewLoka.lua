@@ -87,7 +87,7 @@
  64 [-]: GETTABLE  R8 R8 K10    ; R8 := R8["Total"]
  65 [-]: ADD       R8 R8 K13    ; R8 := R8 + 1.000000
  66 [-]: SETTABLE  R7 K10 R8    ; R7["Total"] := R8
- 67 [-]: LOADBOOL  R7 0 0       ; R7 := false
+ 67 [-]: LOADKB    R7 0 0       ; R7 := false
  68 [-]: GETGLOBAL R8 K14       ; R8 := 0xc8802016
  69 [-]: GETGLOBAL R9 K5        ; R9 := _T
  70 [-]: GETTABLE  R9 R9 K6     ; R9 := R9["NewLokaEffects"]
@@ -102,7 +102,7 @@
  79 [-]: GETTABLE  R13 R12 K10  ; R13 := R12["Total"]
  80 [-]: ADD       R13 R13 K13  ; R13 := R13 + 1.000000
  81 [-]: SETTABLE  R12 K10 R13  ; R12["Total"] := R13
- 82 [-]: LOADBOOL  R7 1 0       ; R7 := true
+ 82 [-]: LOADKB    R7 1 0       ; R7 := true
  83 [-]: TFORLOOP  R8 2         ; R11,R12 :=  R8(R9,R10); if R11 ~= nil then begin PC = 75; R10 := R11 end
  84 [-]: JMP       75           ; PC := 75
  85 [-]: TEST      R7 1         ; if R7 then PC := 98
@@ -118,7 +118,7 @@
  95 [-]: SETTABLE  R15 K8 K12   ; R15["Flash"] := 3.000000
  96 [-]: SETTABLE  R15 K10 K13  ; R15["Total"] := 1.000000
  97 [-]: CALL      R13 3 1      ; R13(R14,R15)
- 98 [-]: LOADBOOL  R13 1 0      ; R13 := true
+ 98 [-]: LOADKB    R13 1 0      ; R13 := true
  99 [-]: RETURN    R13 2        ; return R13
 100 [-]: RETURN    R0 1         ; return 
 

@@ -10,11 +10,11 @@
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x2d0fad09
   2 [-]: LOADK     R1 K1        ; R1 := "Lotus.Interface.UIUtilities"
   3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: LOADBOOL  R1 0 0       ; R1 := false
+  4 [-]: LOADKB    R1 0 0       ; R1 := false
   5 [-]: LOADNIL   R2 R3        ; R2 := R3 := nil
-  6 [-]: LOADBOOL  R4 0 0       ; R4 := false
+  6 [-]: LOADKB    R4 0 0       ; R4 := false
   7 [-]: LOADNIL   R5 R6        ; R5 := R6 := nil
-  8 [-]: LOADBOOL  R7 0 0       ; R7 := false
+  8 [-]: LOADKB    R7 0 0       ; R7 := false
   9 [-]: LOADNIL   R8 R12       ; R8 := R9 := R10 := R11 := R12 := nil
  10 [-]: CLOSURE   R13 0        ; R13 := closure(Function #1)
  11 [-]: SETGLOBAL R13 K2       ; Shutdown := R13
@@ -139,7 +139,7 @@
  41 [-]: SELF      R1 R1 K8     ; R2 := R1; R1 := R1[0x33307f92]
  42 [-]: CALL      R1 2 2       ; R1 := R1(R2)
  43 [-]: SETUPVAL  R1 U4        ; U82 := R4
- 44 [-]: LOADBOOL  R1 1 0       ; R1 := true
+ 44 [-]: LOADKB    R1 1 0       ; R1 := true
  45 [-]: SETUPVAL  R1 U5        ; U82 := R5
  46 [-]: GETGLOBAL R1 K0        ; R1 := 0x7b998233
  47 [-]: GETUPVAL  R2 U4        ; R2 := U4
@@ -160,7 +160,7 @@
  62 [-]: GETUPVAL  R2 U4        ; R2 := U4
  63 [-]: SELF      R2 R2 K11    ; R3 := R2; R2 := R2[0x91a24e4b]
  64 [-]: LOADK     R4 K12       ; R4 := "_root"
- 65 [-]: LOADK     R5 10        ; R5 := 10.000000
+ 65 [-]: CONST     R5 10        ; R5 := 10.000000
  66 [-]: CALL      R2 4 2       ; R2 := R2(R3,R4,R5)
  67 [-]: GETUPVAL  R3 U7        ; R3 := U7
  68 [-]: EQ        1 R3 R2      ; if R3 == R2 then PC := 77
@@ -169,7 +169,7 @@
  71 [-]: GETGLOBAL R3 K1        ; R3 := 0xae91e43b
  72 [-]: SELF      R3 R3 K13    ; R4 := R3; R3 := R3[0x67bc869f]
  73 [-]: LOADK     R5 K12       ; R5 := "_root"
- 74 [-]: LOADK     R6 10        ; R6 := 10.000000
+ 74 [-]: CONST     R6 10        ; R6 := 10.000000
  75 [-]: MOVE      R7 R2        ; R7 := R2
  76 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
  77 [-]: GETGLOBAL R3 K14       ; R3 := 0x89326c93
@@ -206,10 +206,10 @@
 108 [-]: GETUPVAL  R8 U9        ; R8 := U9
 109 [-]: TEST      R8 0         ; if not R8 then PC := 114
 110 [-]: JMP       114          ; PC := 114
-111 [-]: LOADK     R8 2         ; R8 := 2.000000
+111 [-]: CONST     R8 2         ; R8 := 2.000000
 112 [-]: TEST      R8 1         ; if R8 then PC := 115
 113 [-]: JMP       115          ; PC := 115
-114 [-]: LOADK     R8 1         ; R8 := 1.000000
+114 [-]: CONST     R8 1         ; R8 := 1.000000
 115 [-]: CALL      R5 4 1       ; R5(R6,R7,R8)
 116 [-]: LOADK     R5 K20       ; R5 := "Hip"
 117 [-]: GETUPVAL  R6 U10       ; R6 := U10
@@ -225,7 +225,7 @@
 127 [-]: TEST      R6 1         ; if R6 then PC := 135
 128 [-]: JMP       135          ; PC := 135
 129 [-]: SELF      R6 R3 K23    ; R7 := R3; R6 := R3[0x0e46e45b]
-130 [-]: LOADK     R8 26        ; R8 := 26.000000
+130 [-]: CONST     R8 26        ; R8 := 26.000000
 131 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
 132 [-]: TEST      R6 0         ; if not R6 then PC := 135
 133 [-]: JMP       135          ; PC := 135
@@ -287,10 +287,10 @@
  22 [-]: GETGLOBAL R5 K6        ; R5 := 0xae91e43b
  23 [-]: SELF      R5 R5 K12    ; R6 := R5; R5 := R5[0xaf9fda9f]
  24 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 25 [-]: LOADBOOL  R6 1 0       ; R6 := true
+ 25 [-]: LOADKB    R6 1 0       ; R6 := true
  26 [-]: GETTABLE  R7 R1 K13    ; R7 := R1["mHudScalePadding"]
  27 [-]: CALL      R2 6 1       ; R2(R3,R4,R5,R6,R7)
- 28 [-]: LOADBOOL  R2 1 0       ; R2 := true
+ 28 [-]: LOADKB    R2 1 0       ; R2 := true
  29 [-]: SETUPVAL  R2 U1        ; U82 := R1
  30 [-]: RETURN    R0 1         ; return 
 
@@ -305,7 +305,7 @@
 ; Max Stack Size:  2
 
   1 [-]: SETUPVAL  R0 U0        ; U82 := R0
-  2 [-]: LOADBOOL  R1 1 0       ; R1 := true
+  2 [-]: LOADKB    R1 1 0       ; R1 := true
   3 [-]: RETURN    R1 2         ; return R1
   4 [-]: RETURN    R0 1         ; return 
 
@@ -337,13 +337,13 @@
 
   1 [-]: EQ        1 R0 K0      ; if R0 == "true" then PC := 4
   2 [-]: JMP       4            ; PC := 4
-  3 [-]: LOADBOOL  R1 0 1       ; R1 := false; PC := 4
-  4 [-]: LOADBOOL  R1 1 0       ; R1 := true
+  3 [-]: LOADKB    R1 0 1       ; R1 := false; PC := 4
+  4 [-]: LOADKB    R1 1 0       ; R1 := true
   5 [-]: SETUPVAL  R1 U0        ; U82 := R0
   6 [-]: GETGLOBAL R1 K1        ; R1 := 0xae91e43b
   7 [-]: SELF      R1 R1 K2     ; R2 := R1; R1 := R1[0xaade900e]
   8 [-]: LOADK     R3 K3        ; R3 := "_root"
-  9 [-]: LOADK     R4 11        ; R4 := 11.000000
+  9 [-]: CONST     R4 11        ; R4 := 11.000000
  10 [-]: GETUPVAL  R5 U0        ; R5 := U0
  11 [-]: CALL      R1 5 1       ; R1(R2,R3,R4,R5)
  12 [-]: RETURN    R0 1         ; return 
@@ -358,7 +358,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
-  1 [-]: LOADBOOL  R0 1 0       ; R0 := true
+  1 [-]: LOADKB    R0 1 0       ; R0 := true
   2 [-]: RETURN    R0 2         ; return R0
   3 [-]: RETURN    R0 1         ; return 
 

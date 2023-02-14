@@ -111,7 +111,7 @@
  68 [-]: CALL      R7 2 2       ; R7 := R7(R8)
  69 [-]: SELF      R8 R6 K11    ; R9 := R6; R8 := R6[0x72e3e97a]
  70 [-]: MOVE      R10 R7       ; R10 := R7
- 71 [-]: LOADBOOL  R11 0 0      ; R11 := false
+ 71 [-]: LOADKB    R11 0 0      ; R11 := false
  72 [-]: CALL      R8 4 1       ; R8(R9,R10,R11)
  73 [-]: RETURN    R0 1         ; return 
 
@@ -136,7 +136,7 @@
   9 [-]: JMP       16           ; PC := 16
  10 [-]: SELF      R2 R1 K5     ; R3 := R1; R2 := R1[0x659d451f]
  11 [-]: GETGLOBAL R4 K1        ; R4 := 0xaa4d5bdd
- 12 [-]: LOADBOOL  R5 0 0       ; R5 := false
+ 12 [-]: LOADKB    R5 0 0       ; R5 := false
  13 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
  14 [-]: GETGLOBAL R2 K2        ; R2 := _T
  15 [-]: SETTABLE  R2 K3 K4     ; R2["PickUpPlayed"] := true
@@ -201,7 +201,7 @@
   2 [-]: LOADK     R2 K1        ; R2 := "Avatar being paralyzed, going to downed firing state!"
   3 [-]: CALL      R1 2 1       ; R1(R2)
   4 [-]: SELF      R1 R0 K2     ; R2 := R0; R1 := R0[0xc67c97ab]
-  5 [-]: LOADBOOL  R3 1 0       ; R3 := true
+  5 [-]: LOADKB    R3 1 0       ; R3 := true
   6 [-]: GETGLOBAL R4 K3        ; R4 := 0x0ce9dace
   7 [-]: CALL      R1 4 1       ; R1(R2,R3,R4)
   8 [-]: RETURN    R0 1         ; return 
@@ -219,7 +219,7 @@
   1 [-]: SELF      R1 R0 K0     ; R2 := R0; R1 := R0[0xbb610e5b]
   2 [-]: CALL      R1 2 2       ; R1 := R1(R2)
   3 [-]: SELF      R2 R1 K1     ; R3 := R1; R2 := R1[0xc67c97ab]
-  4 [-]: LOADBOOL  R4 1 0       ; R4 := true
+  4 [-]: LOADKB    R4 1 0       ; R4 := true
   5 [-]: GETGLOBAL R5 K2        ; R5 := 0x0ce9dace
   6 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
   7 [-]: RETURN    R0 1         ; return 
@@ -238,7 +238,7 @@
   2 [-]: LOADK     R2 K1        ; R2 := "Avatar being paralyzed, going to dropped state!"
   3 [-]: CALL      R1 2 1       ; R1(R2)
   4 [-]: SELF      R1 R0 K2     ; R2 := R0; R1 := R0[0xc67c97ab]
-  5 [-]: LOADBOOL  R3 1 0       ; R3 := true
+  5 [-]: LOADKB    R3 1 0       ; R3 := true
   6 [-]: GETGLOBAL R4 K3        ; R4 := 0x243ccedc
   7 [-]: CALL      R1 4 1       ; R1(R2,R3,R4)
   8 [-]: RETURN    R0 1         ; return 
@@ -261,7 +261,7 @@
   6 [-]: TEST      R1 0         ; if not R1 then PC := 12
   7 [-]: JMP       12           ; PC := 12
   8 [-]: SELF      R1 R0 K3     ; R2 := R0; R1 := R0[0xc67c97ab]
-  9 [-]: LOADBOOL  R3 1 0       ; R3 := true
+  9 [-]: LOADKB    R3 1 0       ; R3 := true
  10 [-]: GETGLOBAL R4 K4        ; R4 := 0x3886666c
  11 [-]: CALL      R1 4 1       ; R1(R2,R3,R4)
  12 [-]: RETURN    R0 1         ; return 
@@ -297,7 +297,7 @@
   2 [-]: LOADK     R2 K1        ; R2 := "Recover From Carrying"
   3 [-]: CALL      R1 2 1       ; R1(R2)
   4 [-]: SELF      R1 R0 K2     ; R2 := R0; R1 := R0[0xc67c97ab]
-  5 [-]: LOADBOOL  R3 0 0       ; R3 := false
+  5 [-]: LOADKB    R3 0 0       ; R3 := false
   6 [-]: GETGLOBAL R4 K3        ; R4 := 0x26df0ae3
   7 [-]: CALL      R1 4 1       ; R1(R2,R3,R4)
   8 [-]: RETURN    R0 1         ; return 
@@ -315,7 +315,7 @@
   1 [-]: SELF      R1 R0 K0     ; R2 := R0; R1 := R0[0xbb610e5b]
   2 [-]: CALL      R1 2 2       ; R1 := R1(R2)
   3 [-]: SELF      R2 R1 K1     ; R3 := R1; R2 := R1[0xc67c97ab]
-  4 [-]: LOADBOOL  R4 1 0       ; R4 := true
+  4 [-]: LOADKB    R4 1 0       ; R4 := true
   5 [-]: GETGLOBAL R5 K2        ; R5 := 0x243ccedc
   6 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
   7 [-]: RETURN    R0 1         ; return 

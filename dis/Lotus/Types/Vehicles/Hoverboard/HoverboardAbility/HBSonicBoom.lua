@@ -7,8 +7,8 @@
 ; Is_vararg:       2
 ; Max Stack Size:  6
 
-  1 [-]: LOADK     R0 1         ; R0 := 1.000000
-  2 [-]: LOADBOOL  R1 0 0       ; R1 := false
+  1 [-]: CONST     R0 1         ; R0 := 1.000000
+  2 [-]: LOADKB    R1 0 0       ; R1 := false
   3 [-]: CLOSURE   R2 0         ; R2 := closure(Function #1)
   4 [-]: CLOSURE   R3 1         ; R3 := closure(Function #2)
   5 [-]: CLOSURE   R4 2         ; R4 := closure(Function #3)
@@ -40,7 +40,7 @@
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0x42dcc9f5
   2 [-]: MOVE      R2 R0        ; R2 := R0
-  3 [-]: LOADK     R3 1         ; R3 := 1.000000
+  3 [-]: CONST     R3 1         ; R3 := 1.000000
   4 [-]: GETGLOBAL R4 K1        ; R4 := 0x21d9d673
   5 [-]: LEN       R4 R4        ; R4 := # R4
   6 [-]: CALL      R1 4 2       ; R1 := R1(R2,R3,R4)
@@ -62,7 +62,7 @@
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0x42dcc9f5
   2 [-]: MOVE      R2 R0        ; R2 := R0
-  3 [-]: LOADK     R3 1         ; R3 := 1.000000
+  3 [-]: CONST     R3 1         ; R3 := 1.000000
   4 [-]: GETGLOBAL R4 K1        ; R4 := 0x59246d24
   5 [-]: LEN       R4 R4        ; R4 := # R4
   6 [-]: CALL      R1 4 2       ; R1 := R1(R2,R3,R4)
@@ -139,9 +139,9 @@
  29 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  30 [-]: LT        0 R1 R2      ; if R1 >= R2 then PC := 34
  31 [-]: JMP       34           ; PC := 34
- 32 [-]: LOADBOOL  R1 1 0       ; R1 := true
+ 32 [-]: LOADKB    R1 1 0       ; R1 := true
  33 [-]: RETURN    R1 2         ; return R1
- 34 [-]: LOADBOOL  R1 0 0       ; R1 := false
+ 34 [-]: LOADKB    R1 0 0       ; R1 := false
  35 [-]: RETURN    R1 2         ; return R1
  36 [-]: RETURN    R0 1         ; return 
 
@@ -184,8 +184,8 @@
  27 [-]: CALL      R7 2 2       ; R7 := R7(R8)
  28 [-]: EQ        1 R7 K9      ; if R7 == 2.000000 then PC := 31
  29 [-]: JMP       31           ; PC := 31
- 30 [-]: LOADBOOL  R7 0 1       ; R7 := false; PC := 31
- 31 [-]: LOADBOOL  R7 1 0       ; R7 := true
+ 30 [-]: LOADKB    R7 0 1       ; R7 := false; PC := 31
+ 31 [-]: LOADKB    R7 1 0       ; R7 := true
  32 [-]: EQ        0 R7 K10     ; if R7 ~= true then PC := 102
  33 [-]: JMP       102          ; PC := 102
  34 [-]: GETUPVAL  R8 U1        ; R8 := U1
@@ -205,74 +205,7 @@
  48 [-]: GETUPVAL  R13 U3       ; R13 := U3
  49 [-]: GETUPVAL  R14 U0       ; R14 := U0
  50 [-]: CALL      R13 2 2      ; R13 := R13(R14)
- 51 [-]: LOADK     R14 100      ; R14 := 100.000000
- 52 [-]: LOADK     R15 0        ; R15 := 0.000000
+ 51 [-]: CONST     R14 100      ; R14 := 100.000000
+ 52 [-]: CONST     R15 0        ; R15 := 0.000000
  53 [-]: LOADNIL   R16 R16      ; R16 := nil
- 54 [-]: MOVE      R17 R6       ; R17 := R6
- 55 [-]: LOADK     R18 18       ; R18 := 18.000000
- 56 [-]: LOADBOOL  R19 1 0      ; R19 := true
- 57 [-]: LOADBOOL  R20 1 0      ; R20 := true
- 58 [-]: LOADBOOL  R21 0 0      ; R21 := false
- 59 [-]: LOADK     R22 1        ; R22 := 1.000000
- 60 [-]: LOADBOOL  R23 0 0      ; R23 := false
- 61 [-]: LOADNIL   R24 R24      ; R24 := nil
- 62 [-]: LOADK     R25 0        ; R25 := 0.000000
- 63 [-]: CALL      R8 18 1      ; R8(R9,R10,R11,R12,R13,R14,R15,R16,R17,R18,R19,R20,R21,R22,R23,R24,R25)
- 64 [-]: GETGLOBAL R8 K1        ; R8 := 0x7b998233
- 65 [-]: GETGLOBAL R9 K16       ; R9 := 0xb8346e9b
- 66 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 67 [-]: TEST      R8 1         ; if R8 then PC := 76
- 68 [-]: JMP       76           ; PC := 76
- 69 [-]: SELF      R8 R0 K17    ; R9 := R0; R8 := R0[0x47901f07]
- 70 [-]: GETGLOBAL R10 K16      ; R10 := 0xb8346e9b
- 71 [-]: GETGLOBAL R11 K18      ; R11 := EMPTY_SYMBOL
- 72 [-]: GETGLOBAL R12 K19      ; R12 := ZERO_VECTOR
- 73 [-]: GETGLOBAL R13 K20      ; R13 := ZERO_ROTATION
- 74 [-]: MOVE      R14 R0       ; R14 := R0
- 75 [-]: CALL      R8 7 1       ; R8(R9,R10,R11,R12,R13,R14)
- 76 [-]: GETGLOBAL R8 K1        ; R8 := 0x7b998233
- 77 [-]: GETGLOBAL R9 K21       ; R9 := _T
- 78 [-]: GETTABLE  R9 R9 K22    ; R9 := R9["hbSonicBoom"]
- 79 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 80 [-]: TEST      R8 0         ; if not R8 then PC := 85
- 81 [-]: JMP       85           ; PC := 85
- 82 [-]: GETGLOBAL R8 K21       ; R8 := _T
- 83 [-]: NEWTABLE  R9 0 0       ; R9 := {}
- 84 [-]: SETTABLE  R8 K22 R9    ; R8["hbSonicBoom"] := R9
- 85 [-]: GETGLOBAL R8 K1        ; R8 := 0x7b998233
- 86 [-]: GETGLOBAL R9 K21       ; R9 := _T
- 87 [-]: GETTABLE  R9 R9 K22    ; R9 := R9["hbSonicBoom"]
- 88 [-]: GETTABLE  R9 R9 R4     ; R9 := R9[R4]
- 89 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 90 [-]: TEST      R8 0         ; if not R8 then PC := 96
- 91 [-]: JMP       96           ; PC := 96
- 92 [-]: GETGLOBAL R8 K21       ; R8 := _T
- 93 [-]: GETTABLE  R8 R8 K22    ; R8 := R8["hbSonicBoom"]
- 94 [-]: NEWTABLE  R9 0 0       ; R9 := {}
- 95 [-]: SETTABLE  R8 R4 R9     ; R8[R4] := R9
- 96 [-]: GETGLOBAL R8 K21       ; R8 := _T
- 97 [-]: GETTABLE  R8 R8 K22    ; R8 := R8["hbSonicBoom"]
- 98 [-]: GETTABLE  R8 R8 R4     ; R8 := R8[R4]
- 99 [-]: GETGLOBAL R9 K24       ; R9 := 0x55156ff7
-100 [-]: CALL      R9 1 2       ; R9 := R9()
-101 [-]: SETTABLE  R8 K23 R9    ; R8["lastUsedTime"] := R9
-102 [-]: SETUPVAL  R7 U1        ; U82 := R1
-103 [-]: GETGLOBAL R8 K25       ; R8 := 0xcbd666e1
-104 [-]: LOADK     R9 0         ; R9 := 0.000000
-105 [-]: CALL      R8 2 1       ; R8(R9)
-106 [-]: JMP       4            ; PC := 4
-107 [-]: RETURN    R0 1         ; return 
-
-
-; Function #6:
-;
-; Name:            
-; Defined at line: 73
-; #Upvalues:       0
-; #Parameters:     1
-; Is_vararg:       0
-; Max Stack Size:  2
-
-  1 [-]: RETURN    R0 1         ; return 
-
-
+ 54 [-]: MOVE     

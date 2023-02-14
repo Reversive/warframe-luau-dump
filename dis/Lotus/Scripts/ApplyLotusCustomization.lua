@@ -93,7 +93,7 @@
  13 [-]: TEST      R1 1         ; if R1 then PC := 19
  14 [-]: JMP       19           ; PC := 19
  15 [-]: GETGLOBAL R1 K4        ; R1 := 0xcbd666e1
- 16 [-]: LOADK     R2 0         ; R2 := 0.000000
+ 16 [-]: CONST     R2 0         ; R2 := 0.000000
  17 [-]: CALL      R1 2 1       ; R1(R2)
  18 [-]: JMP       1            ; PC := 1
  19 [-]: SELF      R1 R0 K5     ; R2 := R0; R1 := R0[0x2d63c59e]
@@ -120,10 +120,10 @@
  40 [-]: GETGLOBAL R5 K11       ; R5 := 0x88efc25e
  41 [-]: LOADK     R6 K12       ; R6 := "/Lotus/Powersuits/Lotus/LotusSuit"
  42 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 43 [-]: LOADBOOL  R6 1 0       ; R6 := true
+ 43 [-]: LOADKB    R6 1 0       ; R6 := true
  44 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
  45 [-]: SELF      R3 R2 K13    ; R4 := R2; R3 := R2[0x2d9ba74f]
- 46 [-]: LOADK     R5 1         ; R5 := 1.250000
+ 46 [-]: CONST     R5 1         ; R5 := 1.250000
  47 [-]: CALL      R3 3 1       ; R3(R4,R5)
  48 [-]: GETUPVAL  R3 U0        ; R3 := U0
  49 [-]: MOVE      R4 R2        ; R4 := R2
@@ -135,10 +135,10 @@
  55 [-]: JMP       63           ; PC := 63
  56 [-]: SELF      R3 R2 K15    ; R4 := R2; R3 := R2[0x5d985c7e]
  57 [-]: GETGLOBAL R5 K14       ; R5 := 0x66c01afd
- 58 [-]: LOADBOOL  R6 0 0       ; R6 := false
- 59 [-]: LOADK     R7 3         ; R7 := 3.000000
- 60 [-]: LOADK     R8 2         ; R8 := 2.000000
- 61 [-]: LOADBOOL  R9 1 0       ; R9 := true
+ 58 [-]: LOADKB    R6 0 0       ; R6 := false
+ 59 [-]: CONST     R7 3         ; R7 := 3.000000
+ 60 [-]: CONST     R8 2         ; R8 := 2.000000
+ 61 [-]: LOADKB    R9 1 0       ; R9 := true
  62 [-]: CALL      R3 7 1       ; R3(R4,R5,R6,R7,R8,R9)
  63 [-]: GETGLOBAL R3 K0        ; R3 := 0x7b998233
  64 [-]: GETGLOBAL R4 K1        ; R4 := 0x89326c93
@@ -148,7 +148,7 @@
  68 [-]: TEST      R3 0         ; if not R3 then PC := 74
  69 [-]: JMP       74           ; PC := 74
  70 [-]: GETGLOBAL R3 K4        ; R3 := 0xcbd666e1
- 71 [-]: LOADK     R4 0         ; R4 := 0.000000
+ 71 [-]: CONST     R4 0         ; R4 := 0.000000
  72 [-]: CALL      R3 2 1       ; R3(R4)
  73 [-]: JMP       63           ; PC := 63
  74 [-]: SELF      R3 R2 K18    ; R4 := R2; R3 := R2[0x0cca925a]

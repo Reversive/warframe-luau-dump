@@ -22,7 +22,7 @@
 ; Max Stack Size:  5
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0xcbd666e1
-  2 [-]: LOADK     R2 5         ; R2 := 5.000000
+  2 [-]: CONST     R2 5         ; R2 := 5.000000
   3 [-]: CALL      R1 2 1       ; R1(R2)
   4 [-]: GETGLOBAL R1 K1        ; R1 := 0x7b998233
   5 [-]: MOVE      R2 R0        ; R2 := R0
@@ -46,7 +46,7 @@
  23 [-]: TEST      R2 1         ; if R2 then PC := 36
  24 [-]: JMP       36           ; PC := 36
  25 [-]: SELF      R2 R1 K4     ; R3 := R1; R2 := R1[0x31a3964d]
- 26 [-]: LOADK     R4 15        ; R4 := 15.000000
+ 26 [-]: CONST     R4 15        ; R4 := 15.000000
  27 [-]: CALL      R2 3 1       ; R2(R3,R4)
  28 [-]: GETGLOBAL R2 K5        ; R2 := 0xc163f229
  29 [-]: GETGLOBAL R3 K6        ; R3 := 0xb1166204

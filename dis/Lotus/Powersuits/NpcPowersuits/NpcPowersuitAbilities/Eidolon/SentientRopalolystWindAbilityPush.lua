@@ -30,7 +30,7 @@
   5 [-]: NEWTABLE  R3 1 0       ; R3 := {}
   6 [-]: NEWTABLE  R4 2 0       ; R4 := {}
   7 [-]: MOVE      R5 R1        ; R5 := R1
-  8 [-]: LOADK     R6 1         ; R6 := 1.000000
+  8 [-]: CONST     R6 1         ; R6 := 1.000000
   9 [-]: SETLIST   R4 2 1       ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 2
  10 [-]: SETLIST   R3 1 1       ; R3[(1-1)*FPF+i] := R(3+i), 1 <= i <= 1
  11 [-]: MOVE      R2 R3        ; R2 := R3
@@ -55,7 +55,7 @@
  30 [-]: MOVE      R9 R2        ; R9 := R2
  31 [-]: NEWTABLE  R10 2 0      ; R10 := {}
  32 [-]: MOVE      R11 R1       ; R11 := R1
- 33 [-]: LOADK     R12 1        ; R12 := 1.000000
+ 33 [-]: CONST     R12 1        ; R12 := 1.000000
  34 [-]: SETLIST   R10 2 1      ; R10[(1-1)*FPF+i] := R(10+i), 1 <= i <= 2
  35 [-]: CALL      R8 3 1       ; R8(R9,R10)
  36 [-]: RETURN    R0 1         ; return 

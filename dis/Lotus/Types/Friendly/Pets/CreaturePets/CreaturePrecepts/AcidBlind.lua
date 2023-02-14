@@ -52,11 +52,11 @@
  23 [-]: TEST      R3 1         ; if R3 then PC := 47
  24 [-]: JMP       47           ; PC := 47
  25 [-]: SELF      R3 R2 K12    ; R4 := R2; R3 := R2[0x95328115]
- 26 [-]: LOADBOOL  R5 1 0       ; R5 := true
+ 26 [-]: LOADKB    R5 1 0       ; R5 := true
  27 [-]: GETGLOBAL R6 K5        ; R6 := 0x41851729
  28 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
  29 [-]: SELF      R3 R0 K13    ; R4 := R0; R3 := R0[0xc4dff581]
- 30 [-]: LOADK     R5 8         ; R5 := 8.000000
+ 30 [-]: CONST     R5 8         ; R5 := 8.000000
  31 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
  32 [-]: TEST      R3 1         ; if R3 then PC := 47
  33 [-]: JMP       47           ; PC := 47
@@ -64,13 +64,13 @@
  35 [-]: GETGLOBAL R5 K16       ; R5 := 0x0469f296
  36 [-]: LOADK     R6 K17       ; R6 := "EXCALIBUR_BLIND"
  37 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 38 [-]: LOADBOOL  R6 0 0       ; R6 := false
- 39 [-]: LOADK     R7 3         ; R7 := 3.000000
- 40 [-]: LOADK     R8 1         ; R8 := 1.000000
- 41 [-]: LOADBOOL  R9 1 0       ; R9 := true
+ 38 [-]: LOADKB    R6 0 0       ; R6 := false
+ 39 [-]: CONST     R7 3         ; R7 := 3.000000
+ 40 [-]: CONST     R8 1         ; R8 := 1.000000
+ 41 [-]: LOADKB    R9 1 0       ; R9 := true
  42 [-]: GETGLOBAL R10 K19      ; R10 := 0x55730e1a
- 43 [-]: LOADK     R11 0        ; R11 := 0.000000
- 44 [-]: LOADK     R12 2        ; R12 := 2.000000
+ 43 [-]: CONST     R11 0        ; R11 := 0.000000
+ 44 [-]: CONST     R12 2        ; R12 := 2.000000
  45 [-]: CALL      R10 3 0      ; R10,... := R10(R11,R12)
  46 [-]: CALL      R3 0 1       ; R3(R4,...)
  47 [-]: GETGLOBAL R3 K11       ; R3 := 0x7b998233

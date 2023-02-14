@@ -10,7 +10,7 @@
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x2d0fad09
   2 [-]: LOADK     R1 K1        ; R1 := "Lotus.Scripts.Libs.TableLib"
   3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: LOADK     R1 0         ; R1 := 0.000000
+  4 [-]: CONST     R1 0         ; R1 := 0.000000
   5 [-]: LOADNIL   R2 R2        ; R2 := nil
   6 [-]: NEWTABLE  R3 0 0       ; R3 := {}
   7 [-]: CLOSURE   R4 0         ; R4 := closure(Function #1)
@@ -92,7 +92,7 @@
   7 [-]: LT        0 R2 R3      ; if R2 >= R3 then PC := 17
   8 [-]: JMP       17           ; PC := 17
   9 [-]: GETGLOBAL R2 K3        ; R2 := 0xcbd666e1
- 10 [-]: LOADK     R3 0         ; R3 := 0.000000
+ 10 [-]: CONST     R3 0         ; R3 := 0.000000
  11 [-]: CALL      R2 2 1       ; R2(R3)
  12 [-]: SELF      R2 R0 K0     ; R3 := R0; R2 := R0[0xc1595bd5]
  13 [-]: GETGLOBAL R4 K1        ; R4 := gDecorationType
@@ -130,7 +130,7 @@
  45 [-]: LT        0 R14 R13    ; if R14 >= R13 then PC := 51
  46 [-]: JMP       51           ; PC := 51
  47 [-]: GETGLOBAL R13 K3       ; R13 := 0xcbd666e1
- 48 [-]: LOADK     R14 0        ; R14 := 0.000000
+ 48 [-]: CONST     R14 0        ; R14 := 0.000000
  49 [-]: CALL      R13 2 1      ; R13(R14)
  50 [-]: JMP       43           ; PC := 43
  51 [-]: RETURN    R0 1         ; return 
@@ -168,7 +168,7 @@
   6 [-]: TEST      R2 0         ; if not R2 then PC := 23
   7 [-]: JMP       23           ; PC := 23
   8 [-]: GETGLOBAL R2 K1        ; R2 := 0xcbd666e1
-  9 [-]: LOADK     R3 1         ; R3 := 1.000000
+  9 [-]: CONST     R3 1         ; R3 := 1.000000
  10 [-]: CALL      R2 2 1       ; R2(R3)
  11 [-]: GETGLOBAL R2 K0        ; R2 := 0x7b998233
  12 [-]: GETUPVAL  R3 U0        ; R3 := U0
@@ -197,14 +197,14 @@
  35 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
  36 [-]: GETUPVAL  R3 U0        ; R3 := U0
  37 [-]: SELF      R3 R3 K10    ; R4 := R3; R3 := R3[0x1f29fdc4]
- 38 [-]: LOADBOOL  R5 0 0       ; R5 := false
+ 38 [-]: LOADKB    R5 0 0       ; R5 := false
  39 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
  40 [-]: GETGLOBAL R4 K11       ; R4 := 0x2d5c5020
  41 [-]: GETTABLE  R4 R4 K12    ; R4 := R4[0x4a2c3a0f]
  42 [-]: GETUPVAL  R5 U0        ; R5 := U0
  43 [-]: GETGLOBAL R6 K13       ; R6 := gParticleSysType
- 44 [-]: LOADBOOL  R7 0 0       ; R7 := false
- 45 [-]: LOADBOOL  R8 1 0       ; R8 := true
+ 44 [-]: LOADKB    R7 0 0       ; R7 := false
+ 45 [-]: LOADKB    R8 1 0       ; R8 := true
  46 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
  47 [-]: SELF      R4 R2 K14    ; R5 := R2; R4 := R2[0xf4e253b6]
  48 [-]: CALL      R4 2 1       ; R4(R5)
@@ -214,7 +214,7 @@
  52 [-]: TEST      R4 1         ; if R4 then PC := 74
  53 [-]: JMP       74           ; PC := 74
  54 [-]: GETGLOBAL R4 K1        ; R4 := 0xcbd666e1
- 55 [-]: LOADK     R5 0         ; R5 := 0.000000
+ 55 [-]: CONST     R5 0         ; R5 := 0.000000
  56 [-]: CALL      R4 2 1       ; R4(R5)
  57 [-]: GETGLOBAL R4 K0        ; R4 := 0x7b998233
  58 [-]: GETUPVAL  R5 U0        ; R5 := U0
@@ -227,8 +227,8 @@
  65 [-]: GETTABLE  R4 R4 K12    ; R4 := R4[0x4a2c3a0f]
  66 [-]: GETUPVAL  R5 U0        ; R5 := U0
  67 [-]: GETGLOBAL R6 K13       ; R6 := gParticleSysType
- 68 [-]: LOADBOOL  R7 1 0       ; R7 := true
- 69 [-]: LOADBOOL  R8 1 0       ; R8 := true
+ 68 [-]: LOADKB    R7 1 0       ; R7 := true
+ 69 [-]: LOADKB    R8 1 0       ; R8 := true
  70 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
  71 [-]: SELF      R4 R2 K15    ; R5 := R2; R4 := R2[0x383d2e7d]
  72 [-]: CALL      R4 2 1       ; R4(R5)

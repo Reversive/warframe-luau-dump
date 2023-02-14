@@ -22,7 +22,7 @@
 ; Max Stack Size:  5
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0xcbd666e1
-  2 [-]: LOADK     R1 0         ; R1 := 0.000000
+  2 [-]: CONST     R1 0         ; R1 := 0.000000
   3 [-]: CALL      R0 2 1       ; R0(R1)
   4 [-]: GETGLOBAL R0 K1        ; R0 := 0x3d106989
   5 [-]: LOADK     R1 K2        ; R1 := "Icy Breath begin"
@@ -44,7 +44,7 @@
  21 [-]: LOADK     R2 K8        ; R2 := "No avatar found yet..."
  22 [-]: CALL      R1 2 1       ; R1(R2)
  23 [-]: GETGLOBAL R1 K0        ; R1 := 0xcbd666e1
- 24 [-]: LOADK     R2 0         ; R2 := 0.000000
+ 24 [-]: CONST     R2 0         ; R2 := 0.000000
  25 [-]: CALL      R1 2 1       ; R1(R2)
  26 [-]: JMP       8            ; PC := 8
  27 [-]: GETGLOBAL R1 K3        ; R1 := 0x7b998233

@@ -55,12 +55,12 @@
  30 [-]: GETGLOBAL R4 K9        ; R4 := 0x8c5ab52d
  31 [-]: LE        0 R4 R3      ; if R4 > R3 then PC := 35
  32 [-]: JMP       35           ; PC := 35
- 33 [-]: LOADK     R3 0         ; R3 := 0.000000
+ 33 [-]: CONST     R3 0         ; R3 := 0.000000
  34 [-]: RETURN    R3 2         ; return R3
  35 [-]: SELF      R3 R0 K10    ; R4 := R0; R3 := R0[0x48d05257]
  36 [-]: GETTABLE  R5 R2 K4     ; R5 := R2["avatar"]
  37 [-]: CALL      R3 3 1       ; R3(R4,R5)
- 38 [-]: LOADK     R3 1         ; R3 := 1.000000
+ 38 [-]: CONST     R3 1         ; R3 := 1.000000
  39 [-]: RETURN    R3 2         ; return R3
  40 [-]: RETURN    R0 1         ; return 
 
@@ -112,15 +112,15 @@
  36 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  37 [-]: SETTABLE  R4 K7 K8     ; R4["mStruggleValue"] := 0.000000
  38 [-]: GETGLOBAL R5 K9        ; R5 := 0xcbd666e1
- 39 [-]: LOADK     R6 0         ; R6 := 0.000000
+ 39 [-]: CONST     R6 0         ; R6 := 0.000000
  40 [-]: CALL      R5 2 1       ; R5(R6)
  41 [-]: SELF      R5 R2 K10    ; R6 := R2; R5 := R2[0xf542432e]
  42 [-]: CALL      R5 2 1       ; R5(R6)
  43 [-]: GETGLOBAL R5 K9        ; R5 := 0xcbd666e1
- 44 [-]: LOADK     R6 0         ; R6 := 0.000000
+ 44 [-]: CONST     R6 0         ; R6 := 0.000000
  45 [-]: CALL      R5 2 1       ; R5(R6)
  46 [-]: LOADK     R5 K11       ; R5 := "/Lotus/Language/NewWar/P3M2DeaconSpotted"
- 47 [-]: LOADK     R6 8         ; R6 := 8.000000
+ 47 [-]: CONST     R6 8         ; R6 := 8.000000
  48 [-]: GETGLOBAL R7 K12       ; R7 := _T
  49 [-]: GETTABLE  R7 R7 K13    ; R7 := R7[0x659270d0]
  50 [-]: GETGLOBAL R8 K14       ; R8 := 0x603636ad
@@ -128,11 +128,11 @@
  52 [-]: NEWTABLE  R10 0 0      ; R10 := {}
  53 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
  54 [-]: MOVE      R9 R6        ; R9 := R6
- 55 [-]: LOADBOOL  R10 1 0      ; R10 := true
+ 55 [-]: LOADKB    R10 1 0      ; R10 := true
  56 [-]: LOADNIL   R11 R11      ; R11 := nil
- 57 [-]: LOADBOOL  R12 0 0      ; R12 := false
+ 57 [-]: LOADKB    R12 0 0      ; R12 := false
  58 [-]: LOADNIL   R13 R13      ; R13 := nil
- 59 [-]: LOADK     R14 3        ; R14 := 3.000000
+ 59 [-]: CONST     R14 3        ; R14 := 3.000000
  60 [-]: CALL      R7 8 1       ; R7(R8,R9,R10,R11,R12,R13,R14)
  61 [-]: SELF      R7 R2 K3     ; R8 := R2; R7 := R2[0x050d3328]
  62 [-]: CALL      R7 2 2       ; R7 := R7(R8)
@@ -143,7 +143,7 @@
  67 [-]: SELF      R7 R7 K5     ; R8 := R7; R7 := R7[0x4094b424]
  68 [-]: CALL      R7 2 1       ; R7(R8)
  69 [-]: GETGLOBAL R7 K9        ; R7 := 0xcbd666e1
- 70 [-]: LOADK     R8 0         ; R8 := 0.000000
+ 70 [-]: CONST     R8 0         ; R8 := 0.000000
  71 [-]: CALL      R7 2 1       ; R7(R8)
  72 [-]: JMP       61           ; PC := 61
  73 [-]: RETURN    R0 1         ; return 

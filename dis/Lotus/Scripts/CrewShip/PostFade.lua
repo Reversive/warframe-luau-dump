@@ -7,7 +7,7 @@
 ; Is_vararg:       2
 ; Max Stack Size:  3
 
-  1 [-]: LOADK     R0 0         ; R0 := 0.000000
+  1 [-]: CONST     R0 0         ; R0 := 0.000000
   2 [-]: CLOSURE   R1 0         ; R1 := closure(Function #1)
   3 [-]: CLOSURE   R2 1         ; R2 := closure(Function #2)
   4 [-]: MOVE      R0 R0        ; R0 := R0
@@ -27,7 +27,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  12
 
-  1 [-]: LOADK     R4 0         ; R4 := 0.000000
+  1 [-]: CONST     R4 0         ; R4 := 0.000000
   2 [-]: SELF      R5 R0 K0     ; R6 := R0; R5 := R0[0xadbdc520]
   3 [-]: CALL      R5 2 2       ; R5 := R5(R6)
   4 [-]: SELF      R5 R5 K1     ; R6 := R5; R5 := R5[0x7c1a0374]
@@ -50,7 +50,7 @@
  21 [-]: CALL      R8 4 0       ; R8,... := R8(R9,R10,R11)
  22 [-]: CALL      R6 0 1       ; R6(R7,...)
  23 [-]: GETGLOBAL R6 K6        ; R6 := 0xcbd666e1
- 24 [-]: LOADK     R7 0         ; R7 := 0.000000
+ 24 [-]: CONST     R7 0         ; R7 := 0.000000
  25 [-]: CALL      R6 2 1       ; R6(R7)
  26 [-]: JMP       6            ; PC := 6
  27 [-]: SELF      R6 R5 K4     ; R7 := R5; R6 := R5[0xb6df3e50]
@@ -107,7 +107,7 @@
  37 [-]: GETGLOBAL R8 K1        ; R8 := 0x0469f296
  38 [-]: LOADK     R9 K11       ; R9 := "FadeInOut"
  39 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 40 [-]: LOADBOOL  R9 0 0       ; R9 := false
+ 40 [-]: LOADKB    R9 0 0       ; R9 := false
  41 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
  42 [-]: GETGLOBAL R6 K12       ; R6 := 0xba77b832
  43 [-]: TEST      R6 0         ; if not R6 then PC := 54
@@ -118,7 +118,7 @@
  48 [-]: TEST      R6 1         ; if R6 then PC := 54
  49 [-]: JMP       54           ; PC := 54
  50 [-]: SELF      R6 R4 K13    ; R7 := R4; R6 := R4[0x83df59e9]
- 51 [-]: LOADBOOL  R8 1 0       ; R8 := true
+ 51 [-]: LOADKB    R8 1 0       ; R8 := true
  52 [-]: MOVE      R9 R1        ; R9 := R1
  53 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
  54 [-]: GETUPVAL  R6 U1        ; R6 := U1
@@ -145,7 +145,7 @@
  75 [-]: TEST      R6 1         ; if R6 then PC := 81
  76 [-]: JMP       81           ; PC := 81
  77 [-]: SELF      R6 R4 K13    ; R7 := R4; R6 := R4[0x83df59e9]
- 78 [-]: LOADBOOL  R8 0 0       ; R8 := false
+ 78 [-]: LOADKB    R8 0 0       ; R8 := false
  79 [-]: MOVE      R9 R1        ; R9 := R1
  80 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
  81 [-]: RETURN    R0 1         ; return 
@@ -180,7 +180,7 @@
  18 [-]: TEST      R2 0         ; if not R2 then PC := 1
  19 [-]: JMP       1            ; PC := 1
  20 [-]: GETGLOBAL R2 K3        ; R2 := 0xcbd666e1
- 21 [-]: LOADK     R3 0         ; R3 := 0.000000
+ 21 [-]: CONST     R3 0         ; R3 := 0.000000
  22 [-]: CALL      R2 2 1       ; R2(R3)
  23 [-]: JMP       1            ; PC := 1
  24 [-]: SELF      R2 R1 K4     ; R3 := R1; R2 := R1[0x973c5b4d]
@@ -211,7 +211,7 @@
  49 [-]: GETGLOBAL R6 K10       ; R6 := 0x0469f296
  50 [-]: LOADK     R7 K11       ; R7 := "FadeInOut"
  51 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 52 [-]: LOADBOOL  R7 0 0       ; R7 := false
+ 52 [-]: LOADKB    R7 0 0       ; R7 := false
  53 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
  54 [-]: RETURN    R0 1         ; return 
 

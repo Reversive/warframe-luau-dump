@@ -13,9 +13,9 @@
   4 [-]: GETGLOBAL R1 K2        ; R1 := 0x0469f296
   5 [-]: LOADK     R2 K3        ; R2 := "FleeAtten"
   6 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  7 [-]: LOADK     R2 10        ; R2 := 10.000000
-  8 [-]: LOADK     R3 5         ; R3 := 5.000000
-  9 [-]: LOADBOOL  R4 0 0       ; R4 := false
+  7 [-]: CONST     R2 10        ; R2 := 10.000000
+  8 [-]: CONST     R3 5         ; R3 := 5.000000
+  9 [-]: LOADKB    R4 0 0       ; R4 := false
  10 [-]: CLOSURE   R5 0         ; R5 := closure(Function #1)
  11 [-]: MOVE      R0 R2        ; R0 := R2
  12 [-]: MOVE      R0 R0        ; R0 := R0
@@ -60,8 +60,8 @@
   4 [-]: LEN       R2 R2        ; R2 := # R2
   5 [-]: LT        1 R2 R0      ; if R2 < R0 then PC := 8
   6 [-]: JMP       8            ; PC := 8
-  7 [-]: LOADBOOL  R2 0 1       ; R2 := false; PC := 8
-  8 [-]: LOADBOOL  R2 1 0       ; R2 := true
+  7 [-]: LOADKB    R2 0 1       ; R2 := false; PC := 8
+  8 [-]: LOADKB    R2 1 0       ; R2 := true
   9 [-]: GETGLOBAL R3 K1        ; R3 := 0x443a8d0b
  10 [-]: GETGLOBAL R4 K1        ; R4 := 0x443a8d0b
  11 [-]: LEN       R4 R4        ; R4 := # R4
@@ -76,8 +76,8 @@
  20 [-]: LEN       R2 R2        ; R2 := # R2
  21 [-]: LT        1 R2 R0      ; if R2 < R0 then PC := 24
  22 [-]: JMP       24           ; PC := 24
- 23 [-]: LOADBOOL  R2 0 1       ; R2 := false; PC := 24
- 24 [-]: LOADBOOL  R2 1 0       ; R2 := true
+ 23 [-]: LOADKB    R2 0 1       ; R2 := false; PC := 24
+ 24 [-]: LOADKB    R2 1 0       ; R2 := true
  25 [-]: GETGLOBAL R3 K2        ; R3 := 0xe15169d2
  26 [-]: GETGLOBAL R4 K2        ; R4 := 0xe15169d2
  27 [-]: LEN       R4 R4        ; R4 := # R4
@@ -129,13 +129,13 @@
   4 [-]: CALL      R1 2 2       ; R1 := R1(R2)
   5 [-]: TEST      R1 0         ; if not R1 then PC := 9
   6 [-]: JMP       9            ; PC := 9
-  7 [-]: LOADBOOL  R1 0 0       ; R1 := false
+  7 [-]: LOADKB    R1 0 0       ; R1 := false
   8 [-]: RETURN    R1 2         ; return R1
-  9 [-]: LOADK     R1 1         ; R1 := 1.000000
+  9 [-]: CONST     R1 1         ; R1 := 1.000000
  10 [-]: GETGLOBAL R2 K1        ; R2 := _T
  11 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["MarkedTerritory"]
  12 [-]: LEN       R2 R2        ; R2 := # R2
- 13 [-]: LOADK     R3 1         ; R3 := 1.000000
+ 13 [-]: CONST     R3 1         ; R3 := 1.000000
  14 [-]: FORPREP   R1 29        ; R1 -= R3; PC := 29
  15 [-]: SELF      R5 R0 K3     ; R6 := R0; R5 := R0[0x1f420a3a]
  16 [-]: GETGLOBAL R7 K1        ; R7 := _T
@@ -149,10 +149,10 @@
  24 [-]: GETTABLE  R6 R6 K5     ; R6 := R6["range"]
  25 [-]: LT        0 R5 R6      ; if R5 >= R6 then PC := 29
  26 [-]: JMP       29           ; PC := 29
- 27 [-]: LOADBOOL  R5 1 0       ; R5 := true
+ 27 [-]: LOADKB    R5 1 0       ; R5 := true
  28 [-]: RETURN    R5 2         ; return R5
  29 [-]: FORLOOP   R1 15        ; R1 += R3; if R1 <= R2 then begin PC := 15; R4 := R1 end
- 30 [-]: LOADBOOL  R5 0 0       ; R5 := false
+ 30 [-]: LOADKB    R5 0 0       ; R5 := false
  31 [-]: RETURN    R5 2         ; return R5
  32 [-]: RETURN    R0 1         ; return 
 
@@ -181,7 +181,7 @@
  13 [-]: TEST      R6 1         ; if R6 then PC := 25
  14 [-]: JMP       25           ; PC := 25
  15 [-]: SELF      R6 R5 K3     ; R7 := R5; R6 := R5[0x0e46e45b]
- 16 [-]: LOADK     R8 7         ; R8 := 7.000000
+ 16 [-]: CONST     R8 7         ; R8 := 7.000000
  17 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
  18 [-]: TEST      R6 1         ; if R6 then PC := 25
  19 [-]: JMP       25           ; PC := 25
@@ -190,7 +190,7 @@
  22 [-]: CALL      R6 2 2       ; R6 := R6(R7)
  23 [-]: TEST      R6 0         ; if not R6 then PC := 27
  24 [-]: JMP       27           ; PC := 27
- 25 [-]: LOADK     R6 0         ; R6 := 0.000000
+ 25 [-]: CONST     R6 0         ; R6 := 0.000000
  26 [-]: RETURN    R6 2         ; return R6
  27 [-]: GETUPVAL  R6 U1        ; R6 := U1
  28 [-]: MOVE      R7 R2        ; R7 := R2
@@ -200,7 +200,7 @@
  32 [-]: GETGLOBAL R8 K7        ; R8 := gLotusNpcAvatarType
  33 [-]: SELF      R9 R1 K8     ; R10 := R1; R9 := R1[0xd1586535]
  34 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 35 [-]: LOADK     R10 0        ; R10 := 0.000000
+ 35 [-]: CONST     R10 0        ; R10 := 0.000000
  36 [-]: GETUPVAL  R11 U2       ; R11 := U2
  37 [-]: CALL      R6 6 2       ; R6 := R6(R7,R8,R9,R10,R11)
  38 [-]: GETGLOBAL R7 K9        ; R7 := 0xc8802016
@@ -212,11 +212,11 @@
  44 [-]: GETGLOBAL R13 K11      ; R13 := 0x39d65c8e
  45 [-]: EQ        0 R12 R13    ; if R12 ~= R13 then PC := 49
  46 [-]: JMP       49           ; PC := 49
- 47 [-]: LOADK     R12 1        ; R12 := 1.000000
+ 47 [-]: CONST     R12 1        ; R12 := 1.000000
  48 [-]: RETURN    R12 2        ; return R12
  49 [-]: TFORLOOP  R7 2         ; R10,R11 :=  R7(R8,R9); if R10 ~= nil then begin PC = 42; R9 := R10 end
  50 [-]: JMP       42           ; PC := 42
- 51 [-]: LOADK     R12 0        ; R12 := 0.000000
+ 51 [-]: CONST     R12 0        ; R12 := 0.000000
  52 [-]: RETURN    R12 2        ; return R12
  53 [-]: RETURN    R0 1         ; return 
 
@@ -254,11 +254,11 @@
  22 [-]: SETTABLE  R9 K5 R10    ; R9["wasMarked"] := R10
  23 [-]: TFORLOOP  R5 2         ; R8,R9 :=  R5(R6,R7); if R8 ~= nil then begin PC = 21; R7 := R8 end
  24 [-]: JMP       21           ; PC := 21
- 25 [-]: LOADK     R10 1        ; R10 := 1.000000
+ 25 [-]: CONST     R10 1        ; R10 := 1.000000
  26 [-]: GETGLOBAL R11 K7       ; R11 := _T
  27 [-]: GETTABLE  R11 R11 K8   ; R11 := R11["MarkedTerritory"]
  28 [-]: LEN       R11 R11      ; R11 := # R11
- 29 [-]: LOADK     R12 1        ; R12 := 1.000000
+ 29 [-]: CONST     R12 1        ; R12 := 1.000000
  30 [-]: FORPREP   R10 95       ; R10 -= R12; PC := 95
  31 [-]: GETGLOBAL R14 K7       ; R14 := _T
  32 [-]: GETTABLE  R14 R14 K8   ; R14 := R14["MarkedTerritory"]
@@ -276,7 +276,7 @@
  44 [-]: SELF      R22 R22 K14  ; R23 := R22; R22 := R22[0xfb669000]
  45 [-]: GETGLOBAL R24 K15      ; R24 := gLotusNpcAvatarType
  46 [-]: MOVE      R25 R15      ; R25 := R15
- 47 [-]: LOADK     R26 0        ; R26 := 0.000000
+ 47 [-]: CONST     R26 0        ; R26 := 0.000000
  48 [-]: MOVE      R27 R16      ; R27 := R16
  49 [-]: CALL      R22 6 2      ; R22 := R22(R23,R24,R25,R26,R27)
  50 [-]: GETGLOBAL R23 K16      ; R23 := 0xc8802016
@@ -352,7 +352,7 @@
 120 [-]: JMP       126          ; PC := 126
 121 [-]: SELF      R41 R40 K24  ; R42 := R40; R41 := R40[0x36d3dff8]
 122 [-]: GETGLOBAL R43 K25      ; R43 := 0x003dd3ac
-123 [-]: LOADBOOL  R44 0 0      ; R44 := false
+123 [-]: LOADKB    R44 0 0      ; R44 := false
 124 [-]: CALL      R41 4 1      ; R41(R42,R43,R44)
 125 [-]: JMP       128          ; PC := 128
 126 [-]: SETTABLE  R38 K5 K12   ; R38["wasMarked"] := false
@@ -378,11 +378,11 @@
 146 [-]: SETTABLE  R3 R37 K29   ; R3[R37] := nil
 147 [-]: TFORLOOP  R34 2        ; R37,R38 :=  R34(R35,R36); if R37 ~= nil then begin PC = 100; R36 := R37 end
 148 [-]: JMP       100          ; PC := 100
-149 [-]: LOADK     R41 1        ; R41 := 1.000000
+149 [-]: CONST     R41 1        ; R41 := 1.000000
 150 [-]: GETGLOBAL R42 K7       ; R42 := _T
 151 [-]: GETTABLE  R42 R42 K8   ; R42 := R42["MarkedTerritory"]
 152 [-]: LEN       R42 R42      ; R42 := # R42
-153 [-]: LOADK     R43 1        ; R43 := 1.000000
+153 [-]: CONST     R43 1        ; R43 := 1.000000
 154 [-]: FORPREP   R41 211      ; R41 -= R43; PC := 211
 155 [-]: GETGLOBAL R45 K7       ; R45 := _T
 156 [-]: GETTABLE  R45 R45 K8   ; R45 := R45["MarkedTerritory"]
@@ -442,7 +442,7 @@
 210 [-]: JMP       186          ; PC := 186
 211 [-]: FORLOOP   R41 155      ; R41 += R43; if R41 <= R42 then begin PC := 155; R44 := R41 end
 212 [-]: GETGLOBAL R52 K34      ; R52 := 0xcbd666e1
-213 [-]: LOADK     R53 0        ; R53 := 0.000000
+213 [-]: CONST     R53 0        ; R53 := 0.000000
 214 [-]: CALL      R52 2 1      ; R52(R53)
 215 [-]: JMP       5            ; PC := 5
 216 [-]: RETURN    R0 1         ; return 
@@ -477,7 +477,7 @@
  18 [-]: GETUPVAL  R7 U0        ; R7 := U0
  19 [-]: MOVE      R8 R3        ; R8 := R3
  20 [-]: CALL      R7 2 1       ; R7(R8)
- 21 [-]: LOADBOOL  R7 0 0       ; R7 := false
+ 21 [-]: LOADKB    R7 0 0       ; R7 := false
  22 [-]: GETGLOBAL R8 K3        ; R8 := 0x7b998233
  23 [-]: GETGLOBAL R9 K6        ; R9 := _T
  24 [-]: GETTABLE  R9 R9 K7     ; R9 := R9["MarkedTerritory"]
@@ -487,7 +487,7 @@
  28 [-]: GETGLOBAL R8 K6        ; R8 := _T
  29 [-]: NEWTABLE  R9 0 0       ; R9 := {}
  30 [-]: SETTABLE  R8 K7 R9     ; R8["MarkedTerritory"] := R9
- 31 [-]: LOADBOOL  R7 1 0       ; R7 := true
+ 31 [-]: LOADKB    R7 1 0       ; R7 := true
  32 [-]: GETGLOBAL R8 K0        ; R8 := 0x89326c93
  33 [-]: SELF      R8 R8 K8     ; R9 := R8; R8 := R8[0x05909209]
  34 [-]: GETGLOBAL R10 K9       ; R10 := 0x0c21593a
@@ -505,9 +505,9 @@
  46 [-]: CALL      R9 3 1       ; R9(R10,R11)
  47 [-]: SELF      R9 R1 K12    ; R10 := R1; R9 := R1[0x659d451f]
  48 [-]: GETGLOBAL R11 K13      ; R11 := 0x13daade5
- 49 [-]: LOADBOOL  R12 0 0      ; R12 := false
- 50 [-]: LOADK     R13 0        ; R13 := 0.000000
- 51 [-]: LOADBOOL  R14 1 0      ; R14 := true
+ 49 [-]: LOADKB    R12 0 0      ; R12 := false
+ 50 [-]: CONST     R13 0        ; R13 := 0.000000
+ 51 [-]: LOADKB    R14 1 0      ; R14 := true
  52 [-]: CALL      R9 6 1       ; R9(R10,R11,R12,R13,R14)
  53 [-]: GETGLOBAL R9 K6        ; R9 := _T
  54 [-]: GETTABLE  R9 R9 K7     ; R9 := R9["MarkedTerritory"]
@@ -542,7 +542,7 @@
  83 [-]: GETGLOBAL R15 K22      ; R15 := 0x60130201
  84 [-]: SUB       R16 K14 R9   ; R16 := 1.000000 - R9
  85 [-]: MUL       R16 R16 K23  ; R16 := R16 * 255.000000
- 86 [-]: LOADK     R17 0        ; R17 := 0.000000
+ 86 [-]: CONST     R17 0        ; R17 := 0.000000
  87 [-]: MUL       R18 R9 K23   ; R18 := R9 * 255.000000
  88 [-]: CALL      R15 4 2      ; R15 := R15(R16,R17,R18)
  89 [-]: LOADK     R16 K24      ; R16 := 50000.000000
@@ -552,14 +552,14 @@
  93 [-]: MOVE      R12 R6       ; R12 := R6
  94 [-]: GETUPVAL  R13 U1       ; R13 := U1
  95 [-]: GETGLOBAL R14 K22      ; R14 := 0x60130201
- 96 [-]: LOADK     R15 0        ; R15 := 0.000000
- 97 [-]: LOADK     R16 255      ; R16 := 255.000000
- 98 [-]: LOADK     R17 0        ; R17 := 0.000000
+ 96 [-]: CONST     R15 0        ; R15 := 0.000000
+ 97 [-]: CONST     R16 255      ; R16 := 255.000000
+ 98 [-]: CONST     R17 0        ; R17 := 0.000000
  99 [-]: CALL      R14 4 2      ; R14 := R14(R15,R16,R17)
 100 [-]: GETGLOBAL R15 K26      ; R15 := 0x00046924
-101 [-]: LOADK     R16 0        ; R16 := 0.000000
-102 [-]: LOADK     R17 90       ; R17 := 90.000000
-103 [-]: LOADK     R18 0        ; R18 := 0.000000
+101 [-]: CONST     R16 0        ; R16 := 0.000000
+102 [-]: CONST     R17 90       ; R17 := 90.000000
+103 [-]: CONST     R18 0        ; R18 := 0.000000
 104 [-]: CALL      R15 4 2      ; R15 := R15(R16,R17,R18)
 105 [-]: LOADK     R16 K24      ; R16 := 50000.000000
 106 [-]: CALL      R10 7 1      ; R10(R11,R12,R13,R14,R15,R16)
@@ -572,7 +572,7 @@
 113 [-]: CALL      R13 2 2      ; R13 := R13(R14)
 114 [-]: GETGLOBAL R14 K31      ; R14 := 0x6c97a788
 115 [-]: GETTABLE  R14 R14 K32  ; R14 := R14[0x733fc736]
-116 [-]: LOADBOOL  R15 0 0      ; R15 := false
+116 [-]: LOADKB    R15 0 0      ; R15 := false
 117 [-]: CALL      R14 2 0      ; R14,... := R14(R15)
 118 [-]: CALL      R10 0 1      ; R10(R11,...)
 119 [-]: RETURN    R0 1         ; return 
@@ -593,7 +593,7 @@
   4 [-]: SELF      R3 R3 K3     ; R4 := R3; R3 := R3[0x24b019ac]
   5 [-]: CALL      R3 2 2       ; R3 := R3(R4)
   6 [-]: MOVE      R4 R1        ; R4 := R1
-  7 [-]: LOADK     R5 0         ; R5 := 0.000000
+  7 [-]: CONST     R5 0         ; R5 := 0.000000
   8 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
   9 [-]: RETURN    R0 1         ; return 
 

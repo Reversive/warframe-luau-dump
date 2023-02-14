@@ -7,8 +7,8 @@
 ; Is_vararg:       2
 ; Max Stack Size:  6
 
-  1 [-]: LOADK     R0 300       ; R0 := 300.000000
-  2 [-]: LOADK     R1 10        ; R1 := 10.000000
+  1 [-]: CONST     R0 300       ; R0 := 300.000000
+  2 [-]: CONST     R1 10        ; R1 := 10.000000
   3 [-]: GETGLOBAL R2 K0        ; R2 := 0x2d0fad09
   4 [-]: LOADK     R3 K1        ; R3 := "Lotus.Scripts.Libs.AbilitiesLib"
   5 [-]: CALL      R2 2 2       ; R2 := R2(R3)
@@ -46,40 +46,40 @@
 
   1 [-]: EQ        0 R0 K0      ; if R0 ~= 1.000000 then PC := 6
   2 [-]: JMP       6            ; PC := 6
-  3 [-]: LOADK     R1 10        ; R1 := 10.000000
+  3 [-]: CONST     R1 10        ; R1 := 10.000000
   4 [-]: SETUPVAL  R1 U0        ; U82 := R0
   5 [-]: JMP       38           ; PC := 38
   6 [-]: EQ        0 R0 K1      ; if R0 ~= 2.000000 then PC := 11
   7 [-]: JMP       11           ; PC := 11
-  8 [-]: LOADK     R1 15        ; R1 := 15.000000
+  8 [-]: CONST     R1 15        ; R1 := 15.000000
   9 [-]: SETUPVAL  R1 U0        ; U82 := R0
  10 [-]: JMP       38           ; PC := 38
  11 [-]: EQ        0 R0 K2      ; if R0 ~= 3.000000 then PC := 16
  12 [-]: JMP       16           ; PC := 16
- 13 [-]: LOADK     R1 20        ; R1 := 20.000000
+ 13 [-]: CONST     R1 20        ; R1 := 20.000000
  14 [-]: SETUPVAL  R1 U0        ; U82 := R0
  15 [-]: JMP       38           ; PC := 38
  16 [-]: EQ        0 R0 K3      ; if R0 ~= 4.000000 then PC := 21
  17 [-]: JMP       21           ; PC := 21
- 18 [-]: LOADK     R1 25        ; R1 := 25.000000
+ 18 [-]: CONST     R1 25        ; R1 := 25.000000
  19 [-]: SETUPVAL  R1 U0        ; U82 := R0
  20 [-]: JMP       38           ; PC := 38
  21 [-]: EQ        0 R0 K4      ; if R0 ~= 5.000000 then PC := 26
  22 [-]: JMP       26           ; PC := 26
- 23 [-]: LOADK     R1 30        ; R1 := 30.000000
+ 23 [-]: CONST     R1 30        ; R1 := 30.000000
  24 [-]: SETUPVAL  R1 U0        ; U82 := R0
  25 [-]: JMP       38           ; PC := 38
  26 [-]: EQ        0 R0 K5      ; if R0 ~= 6.000000 then PC := 31
  27 [-]: JMP       31           ; PC := 31
- 28 [-]: LOADK     R1 35        ; R1 := 35.000000
+ 28 [-]: CONST     R1 35        ; R1 := 35.000000
  29 [-]: SETUPVAL  R1 U0        ; U82 := R0
  30 [-]: JMP       38           ; PC := 38
  31 [-]: EQ        0 R0 K6      ; if R0 ~= 7.000000 then PC := 36
  32 [-]: JMP       36           ; PC := 36
- 33 [-]: LOADK     R1 40        ; R1 := 40.000000
+ 33 [-]: CONST     R1 40        ; R1 := 40.000000
  34 [-]: SETUPVAL  R1 U0        ; U82 := R0
  35 [-]: JMP       38           ; PC := 38
- 36 [-]: LOADK     R1 45        ; R1 := 45.000000
+ 36 [-]: CONST     R1 45        ; R1 := 45.000000
  37 [-]: SETUPVAL  R1 U0        ; U82 := R0
  38 [-]: RETURN    R0 1         ; return 
 
@@ -178,7 +178,7 @@
  41 [-]: JMP       46           ; PC := 46
  42 [-]: SELF      R15 R14 K13  ; R16 := R14; R15 := R14[0x9d668f53]
  43 [-]: MOVE      R17 R8       ; R17 := R8
- 44 [-]: LOADK     R18 0        ; R18 := 0.000000
+ 44 [-]: CONST     R18 0        ; R18 := 0.000000
  45 [-]: CALL      R15 4 1      ; R15(R16,R17,R18)
  46 [-]: TFORLOOP  R10 2        ; R13,R14 :=  R10(R11,R12); if R13 ~= nil then begin PC = 30; R12 := R13 end
  47 [-]: JMP       30           ; PC := 30

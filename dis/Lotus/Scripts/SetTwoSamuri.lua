@@ -10,9 +10,9 @@
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x0469f296
   2 [-]: LOADK     R1 K1        ; R1 := "Scalar2"
   3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: LOADK     R1 0         ; R1 := 0.000000
-  5 [-]: LOADK     R2 8         ; R2 := 8.000000
-  6 [-]: LOADK     R3 3         ; R3 := 3.000000
+  4 [-]: CONST     R1 0         ; R1 := 0.000000
+  5 [-]: CONST     R2 8         ; R2 := 8.000000
+  6 [-]: CONST     R3 3         ; R3 := 3.000000
   7 [-]: CLOSURE   R4 0         ; R4 := closure(Function #1)
   8 [-]: MOVE      R0 R0        ; R0 := R0
   9 [-]: MOVE      R0 R1        ; R0 := R1
@@ -84,7 +84,7 @@
  25 [-]: MOVE      R8 R4        ; R8 := R4
  26 [-]: CALL      R5 4 1       ; R5(R6,R7,R8)
  27 [-]: GETGLOBAL R5 K5        ; R5 := 0xcbd666e1
- 28 [-]: LOADK     R6 0         ; R6 := 0.000000
+ 28 [-]: CONST     R6 0         ; R6 := 0.000000
  29 [-]: CALL      R5 2 1       ; R5(R6)
  30 [-]: GETGLOBAL R5 K6        ; R5 := 0x67652851
  31 [-]: CALL      R5 1 2       ; R5 := R5()

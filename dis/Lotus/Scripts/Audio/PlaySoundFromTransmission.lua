@@ -37,7 +37,7 @@
  14 [-]: EQ        0 R1 R0      ; if R1 ~= R0 then PC := 20
  15 [-]: JMP       20           ; PC := 20
  16 [-]: GETGLOBAL R1 K4        ; R1 := 0xcbd666e1
- 17 [-]: LOADK     R2 0         ; R2 := 0.000000
+ 17 [-]: CONST     R2 0         ; R2 := 0.000000
  18 [-]: CALL      R1 2 1       ; R1(R2)
  19 [-]: JMP       12           ; PC := 12
  20 [-]: GETGLOBAL R1 K5        ; R1 := 0x74b75231
@@ -74,14 +74,14 @@
  51 [-]: JMP       57           ; PC := 57
  52 [-]: SELF      R3 R1 K12    ; R4 := R1; R3 := R1[0x659d451f]
  53 [-]: GETGLOBAL R5 K7        ; R5 := 0x520e413d
- 54 [-]: LOADBOOL  R6 0 0       ; R6 := false
+ 54 [-]: LOADKB    R6 0 0       ; R6 := false
  55 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
  56 [-]: JMP       63           ; PC := 63
  57 [-]: GETGLOBAL R3 K10       ; R3 := 0x89326c93
  58 [-]: SELF      R3 R3 K12    ; R4 := R3; R3 := R3[0x659d451f]
  59 [-]: GETGLOBAL R5 K7        ; R5 := 0x520e413d
  60 [-]: GETGLOBAL R6 K13       ; R6 := ZERO_VECTOR
- 61 [-]: LOADBOOL  R7 0 0       ; R7 := false
+ 61 [-]: LOADKB    R7 0 0       ; R7 := false
  62 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
  63 [-]: GETGLOBAL R3 K14       ; R3 := 0xc8802016
  64 [-]: GETGLOBAL R4 K15       ; R4 := 0xbecfbe8a

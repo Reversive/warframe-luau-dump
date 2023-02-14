@@ -62,7 +62,7 @@
  33 [-]: GETGLOBAL R7 K16       ; R7 := 0x3d106989
  34 [-]: LOADK     R8 K17       ; R8 := "Bad parameters for Combo.lua"
  35 [-]: CALL      R7 2 1       ; R7(R8)
- 36 [-]: LOADBOOL  R7 0 0       ; R7 := false
+ 36 [-]: LOADKB    R7 0 0       ; R7 := false
  37 [-]: RETURN    R7 2         ; return R7
  38 [-]: GETGLOBAL R7 K18       ; R7 := 0x7b998233
  39 [-]: SELF      R8 R3 K19    ; R9 := R3; R8 := R3[0x5e651723]
@@ -149,11 +149,11 @@
 120 [-]: CALL      R10 2 2      ; R10 := R10(R11)
 121 [-]: TEST      R10 0        ; if not R10 then PC := 159
 122 [-]: JMP       159          ; PC := 159
-123 [-]: LOADK     R10 0        ; R10 := 0.000000
-124 [-]: LOADK     R11 1        ; R11 := 1.000000
+123 [-]: CONST     R10 0        ; R10 := 0.000000
+124 [-]: CONST     R11 1        ; R11 := 1.000000
 125 [-]: GETUPVAL  R12 U0       ; R12 := U0
 126 [-]: LEN       R12 R12      ; R12 := # R12
-127 [-]: LOADK     R13 1        ; R13 := 1.000000
+127 [-]: CONST     R13 1        ; R13 := 1.000000
 128 [-]: FORPREP   R11 139      ; R11 -= R13; PC := 139
 129 [-]: GETGLOBAL R15 K20      ; R15 := _T
 130 [-]: GETTABLE  R15 R15 R6   ; R15 := R15[R6]
@@ -166,7 +166,7 @@
 137 [-]: JMP       139          ; PC := 139
 138 [-]: ADD       R10 R10 K7   ; R10 := R10 + 1.000000
 139 [-]: FORLOOP   R11 129      ; R11 += R13; if R11 <= R12 then begin PC := 129; R14 := R11 end
-140 [-]: LOADBOOL  R15 0 0      ; R15 := false
+140 [-]: LOADKB    R15 0 0      ; R15 := false
 141 [-]: GETGLOBAL R16 K6       ; R16 := 0x8f5a2eab
 142 [-]: EQ        0 R10 R16    ; if R10 ~= R16 then PC := 155
 143 [-]: JMP       155          ; PC := 155
@@ -180,12 +180,12 @@
 151 [-]: GETTABLE  R16 R16 R5   ; R16 := R16[R5]
 152 [-]: TEST      R16 0        ; if not R16 then PC := 155
 153 [-]: JMP       155          ; PC := 155
-154 [-]: LOADBOOL  R15 1 0      ; R15 := true
+154 [-]: LOADKB    R15 1 0      ; R15 := true
 155 [-]: GETGLOBAL R16 K20      ; R16 := _T
 156 [-]: GETTABLE  R16 R16 R6   ; R16 := R16[R6]
 157 [-]: SETTABLE  R16 R7 K21   ; R16[R7] := nil
 158 [-]: RETURN    R15 2        ; return R15
-159 [-]: LOADBOOL  R16 0 0      ; R16 := false
+159 [-]: LOADKB    R16 0 0      ; R16 := false
 160 [-]: RETURN    R16 2        ; return R16
 161 [-]: RETURN    R0 1         ; return 
 

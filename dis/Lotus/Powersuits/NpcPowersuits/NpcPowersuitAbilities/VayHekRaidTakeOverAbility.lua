@@ -74,9 +74,9 @@
  49 [-]: SELF      R5 R0 K13    ; R6 := R0; R5 := R0[0x48d05257]
  50 [-]: MOVE      R7 R3        ; R7 := R3
  51 [-]: CALL      R5 3 1       ; R5(R6,R7)
- 52 [-]: LOADK     R5 1         ; R5 := 1.000000
+ 52 [-]: CONST     R5 1         ; R5 := 1.000000
  53 [-]: RETURN    R5 2         ; return R5
- 54 [-]: LOADK     R5 0         ; R5 := 0.000000
+ 54 [-]: CONST     R5 0         ; R5 := 0.000000
  55 [-]: RETURN    R5 2         ; return R5
  56 [-]: RETURN    R0 1         ; return 
 
@@ -91,7 +91,7 @@
 ; Max Stack Size:  7
 
   1 [-]: SELF      R4 R1 K0     ; R5 := R1; R4 := R1[0x89e3d5ed]
-  2 [-]: LOADBOOL  R6 1 0       ; R6 := true
+  2 [-]: LOADKB    R6 1 0       ; R6 := true
   3 [-]: CALL      R4 3 1       ; R4(R5,R6)
   4 [-]: RETURN    R0 1         ; return 
 

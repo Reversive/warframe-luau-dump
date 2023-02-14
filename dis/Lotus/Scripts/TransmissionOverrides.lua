@@ -26,12 +26,12 @@
   1 [-]: GETGLOBAL R2 K0        ; R2 := _T
   2 [-]: GETGLOBAL R3 K2        ; R3 := 0x8fa717b0
   3 [-]: SETTABLE  R2 K1 R3     ; R2["EndOfMissionVoiceOverride"] := R3
-  4 [-]: LOADK     R2 1         ; R2 := 1.000000
+  4 [-]: CONST     R2 1         ; R2 := 1.000000
   5 [-]: GETGLOBAL R3 K3        ; R3 := 0xa142fde2
   6 [-]: LEN       R3 R3        ; R3 := # R3
-  7 [-]: LOADK     R4 1         ; R4 := 1.000000
+  7 [-]: CONST     R4 1         ; R4 := 1.000000
   8 [-]: FORPREP   R2 25        ; R2 -= R4; PC := 25
-  9 [-]: LOADK     R6 0         ; R6 := 0.000000
+  9 [-]: CONST     R6 0         ; R6 := 0.000000
  10 [-]: GETGLOBAL R7 K4        ; R7 := 0x7b998233
  11 [-]: GETGLOBAL R8 K5        ; R8 := 0x8bb9aacf
  12 [-]: GETTABLE  R8 R8 R5     ; R8 := R8[R5]
@@ -94,12 +94,12 @@
  10 [-]: JMP       13           ; PC := 13
  11 [-]: GETGLOBAL R1 K3        ; R1 := _T
  12 [-]: SETTABLE  R1 K4 K5     ; R1["EndOfMissionVoiceOverride"] := ""
- 13 [-]: LOADK     R1 1         ; R1 := 1.000000
+ 13 [-]: CONST     R1 1         ; R1 := 1.000000
  14 [-]: GETGLOBAL R2 K6        ; R2 := 0xa142fde2
  15 [-]: LEN       R2 R2        ; R2 := # R2
- 16 [-]: LOADK     R3 1         ; R3 := 1.000000
+ 16 [-]: CONST     R3 1         ; R3 := 1.000000
  17 [-]: FORPREP   R1 34        ; R1 -= R3; PC := 34
- 18 [-]: LOADK     R5 0         ; R5 := 0.000000
+ 18 [-]: CONST     R5 0         ; R5 := 0.000000
  19 [-]: GETGLOBAL R6 K1        ; R6 := 0x7b998233
  20 [-]: GETGLOBAL R7 K7        ; R7 := 0x8bb9aacf
  21 [-]: GETTABLE  R7 R7 R4     ; R7 := R7[R4]

@@ -117,7 +117,7 @@
  12 [-]: NEWTABLE  R5 1 0       ; R5 := {}
  13 [-]: GETGLOBAL R6 K2        ; R6 := 0xa6cebb12
  14 [-]: SETLIST   R5 1 1       ; R5[(1-1)*FPF+i] := R(5+i), 1 <= i <= 1
- 15 [-]: LOADBOOL  R6 1 0       ; R6 := true
+ 15 [-]: LOADKB    R6 1 0       ; R6 := true
  16 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
  17 [-]: RETURN    R0 1         ; return 
 
@@ -184,12 +184,12 @@
   7 [-]: GETUPVAL  R1 U0        ; R1 := U0
   8 [-]: MOVE      R2 R0        ; R2 := R0
   9 [-]: CALL      R1 2 1       ; R1(R2)
- 10 [-]: LOADK     R1 0         ; R1 := 0.000000
- 11 [-]: LOADK     R2 0         ; R2 := 0.000000
+ 10 [-]: CONST     R1 0         ; R1 := 0.000000
+ 11 [-]: CONST     R2 0         ; R2 := 0.000000
  12 [-]: GETUPVAL  R3 U1        ; R3 := U1
  13 [-]: MOVE      R4 R0        ; R4 := R0
  14 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 15 [-]: LOADBOOL  R4 0 0       ; R4 := false
+ 15 [-]: LOADKB    R4 0 0       ; R4 := false
  16 [-]: SELF      R5 R3 K1     ; R6 := R3; R5 := R3[0xf2deaf69]
  17 [-]: GETGLOBAL R7 K2        ; R7 := gLotusVehicleAvatarType
  18 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
@@ -266,14 +266,21 @@
  10 [-]: TEST      R1 0         ; if not R1 then PC := 13
  11 [-]: JMP       13           ; PC := 13
  12 [-]: RETURN    R0 1         ; return 
- 13 [-]: GETUPVAL  R1 U0        ; R1 := U0
- 14 [-]: MOVE      R2 R0        ; R2 := R0
- 15 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 16 [-]: GETGLOBAL R2 K1        ; R2 := 0xbe190284
- 17 [-]: SELF      R2 R2 K2     ; R3 := R2; R2 := R2[0x268018ba]
- 18 [-]: MOVE      R4 R1        ; R4 := R1
- 19 [-]: GETGLOBAL R5 K3        ; R5 := 0xdeb59243
- 20 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
- 21 [-]: RETURN    R0 1         ; return 
+ 13 [-]: GETGLOBAL R1 K1        ; R1 := 0xbe190284
+ 14 [-]: SELF      R1 R1 K2     ; R2 := R1; R1 := R1[0xf2deaf69]
+ 15 [-]: GETGLOBAL R3 K3        ; R3 := gLotusBaseGameRulesType
+ 16 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
+ 17 [-]: TEST      R1 1         ; if R1 then PC := 20
+ 18 [-]: JMP       20           ; PC := 20
+ 19 [-]: RETURN    R0 1         ; return 
+ 20 [-]: GETUPVAL  R1 U0        ; R1 := U0
+ 21 [-]: MOVE      R2 R0        ; R2 := R0
+ 22 [-]: CALL      R1 2 2       ; R1 := R1(R2)
+ 23 [-]: GETGLOBAL R2 K1        ; R2 := 0xbe190284
+ 24 [-]: SELF      R2 R2 K4     ; R3 := R2; R2 := R2[0x268018ba]
+ 25 [-]: MOVE      R4 R1        ; R4 := R1
+ 26 [-]: GETGLOBAL R5 K5        ; R5 := 0xdeb59243
+ 27 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
+ 28 [-]: RETURN    R0 1         ; return 
 
 

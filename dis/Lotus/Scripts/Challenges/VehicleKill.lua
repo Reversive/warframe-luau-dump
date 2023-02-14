@@ -37,7 +37,7 @@
  14 [-]: RETURN    R8 2         ; return R8
  15 [-]: TFORLOOP  R3 2         ; R6,R7 :=  R3(R4,R5); if R6 ~= nil then begin PC = 7; R5 := R6 end
  16 [-]: JMP       7            ; PC := 7
- 17 [-]: LOADBOOL  R8 1 0       ; R8 := true
+ 17 [-]: LOADKB    R8 1 0       ; R8 := true
  18 [-]: RETURN    R8 2         ; return R8
  19 [-]: RETURN    R0 1         ; return 
 

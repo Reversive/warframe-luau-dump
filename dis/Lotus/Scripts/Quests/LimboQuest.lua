@@ -8,10 +8,10 @@
 ; Max Stack Size:  9
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0xbe190284
-  2 [-]: LOADBOOL  R1 0 0       ; R1 := false
-  3 [-]: LOADBOOL  R2 0 0       ; R2 := false
-  4 [-]: LOADBOOL  R3 0 0       ; R3 := false
-  5 [-]: LOADBOOL  R4 0 0       ; R4 := false
+  2 [-]: LOADKB    R1 0 0       ; R1 := false
+  3 [-]: LOADKB    R2 0 0       ; R2 := false
+  4 [-]: LOADKB    R3 0 0       ; R3 := false
+  5 [-]: LOADKB    R4 0 0       ; R4 := false
   6 [-]: GETGLOBAL R5 K1        ; R5 := 0x2d0fad09
   7 [-]: LOADK     R6 K2        ; R6 := "Lotus.Scripts.Libs.ObjectiveText"
   8 [-]: CALL      R5 2 2       ; R5 := R5(R6)
@@ -51,7 +51,7 @@
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x76ea806b
   2 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0x3f3ae64c]
-  3 [-]: LOADK     R2 0         ; R2 := 0.000000
+  3 [-]: CONST     R2 0         ; R2 := 0.000000
   4 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
   5 [-]: GETGLOBAL R1 K2        ; R1 := 0x7b998233
   6 [-]: MOVE      R2 R0        ; R2 := R0
@@ -60,11 +60,11 @@
   9 [-]: JMP       19           ; PC := 19
  10 [-]: GETGLOBAL R1 K0        ; R1 := 0x76ea806b
  11 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1[0x3f3ae64c]
- 12 [-]: LOADK     R3 0         ; R3 := 0.000000
+ 12 [-]: CONST     R3 0         ; R3 := 0.000000
  13 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
  14 [-]: MOVE      R0 R1        ; R0 := R1
  15 [-]: GETGLOBAL R1 K3        ; R1 := 0xcbd666e1
- 16 [-]: LOADK     R2 0         ; R2 := 0.000000
+ 16 [-]: CONST     R2 0         ; R2 := 0.000000
  17 [-]: CALL      R1 2 1       ; R1(R2)
  18 [-]: JMP       5            ; PC := 5
  19 [-]: SELF      R1 R0 K4     ; R2 := R0; R1 := R0[0x80563238]
@@ -78,7 +78,7 @@
  27 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  28 [-]: MOVE      R1 R2        ; R1 := R2
  29 [-]: GETGLOBAL R2 K3        ; R2 := 0xcbd666e1
- 30 [-]: LOADK     R3 0         ; R3 := 0.000000
+ 30 [-]: CONST     R3 0         ; R3 := 0.000000
  31 [-]: CALL      R2 2 1       ; R2(R3)
  32 [-]: JMP       21           ; PC := 21
  33 [-]: RETURN    R1 2         ; return R1
@@ -132,17 +132,17 @@
 ; Is_vararg:       0
 ; Max Stack Size:  4
 
-  1 [-]: LOADBOOL  R2 1 0       ; R2 := true
+  1 [-]: LOADKB    R2 1 0       ; R2 := true
   2 [-]: SETUPVAL  R2 U0        ; U82 := R0
   3 [-]: TEST      R0 0         ; if not R0 then PC := 11
   4 [-]: JMP       11           ; PC := 11
   5 [-]: GETGLOBAL R2 K0        ; R2 := 0x3d106989
   6 [-]: LOADK     R3 K1        ; R3 := "Items given"
   7 [-]: CALL      R2 2 1       ; R2(R3)
-  8 [-]: LOADBOOL  R2 1 0       ; R2 := true
+  8 [-]: LOADKB    R2 1 0       ; R2 := true
   9 [-]: SETUPVAL  R2 U1        ; U82 := R1
  10 [-]: JMP       13           ; PC := 13
- 11 [-]: LOADBOOL  R2 0 0       ; R2 := false
+ 11 [-]: LOADKB    R2 0 0       ; R2 := false
  12 [-]: SETUPVAL  R2 U1        ; U82 := R1
  13 [-]: RETURN    R0 1         ; return 
 
@@ -156,7 +156,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  3
 
-  1 [-]: LOADBOOL  R2 1 0       ; R2 := true
+  1 [-]: LOADKB    R2 1 0       ; R2 := true
   2 [-]: SETUPVAL  R2 U0        ; U82 := R0
   3 [-]: SETUPVAL  R0 U1        ; U82 := R1
   4 [-]: RETURN    R0 1         ; return 
@@ -179,7 +179,7 @@
   6 [-]: CALL      R1 4 2       ; R1 := R1(R2,R3,R4)
   7 [-]: TEST      R1 1         ; if R1 then PC := 43
   8 [-]: JMP       43           ; PC := 43
-  9 [-]: LOADK     R1 0         ; R1 := 0.000000
+  9 [-]: CONST     R1 0         ; R1 := 0.000000
  10 [-]: GETUPVAL  R2 U1        ; R2 := U1
  11 [-]: TEST      R2 1         ; if R2 then PC := 48
  12 [-]: JMP       48           ; PC := 48
@@ -203,20 +203,20 @@
  30 [-]: TEST      R2 1         ; if R2 then PC := 36
  31 [-]: JMP       36           ; PC := 36
  32 [-]: GETGLOBAL R2 K9        ; R2 := 0xcbd666e1
- 33 [-]: LOADK     R3 0         ; R3 := 0.000000
+ 33 [-]: CONST     R3 0         ; R3 := 0.000000
  34 [-]: CALL      R2 2 1       ; R2(R3)
  35 [-]: JMP       29           ; PC := 29
- 36 [-]: LOADBOOL  R2 0 0       ; R2 := false
+ 36 [-]: LOADKB    R2 0 0       ; R2 := false
  37 [-]: SETUPVAL  R2 U2        ; U82 := R2
  38 [-]: GETGLOBAL R2 K9        ; R2 := 0xcbd666e1
- 39 [-]: LOADK     R3 0         ; R3 := 0.000000
+ 39 [-]: CONST     R3 0         ; R3 := 0.000000
  40 [-]: CALL      R2 2 1       ; R2(R3)
  41 [-]: JMP       10           ; PC := 10
  42 [-]: JMP       48           ; PC := 48
  43 [-]: GETGLOBAL R2 K10       ; R2 := 0x3d106989
  44 [-]: LOADK     R3 K11       ; R3 := "Recovering from LimboQuest triggered items already given"
  45 [-]: CALL      R2 2 1       ; R2(R3)
- 46 [-]: LOADBOOL  R2 1 0       ; R2 := true
+ 46 [-]: LOADKB    R2 1 0       ; R2 := true
  47 [-]: SETUPVAL  R2 U1        ; U82 := R1
  48 [-]: GETGLOBAL R2 K12       ; R2 := 0x11fee1f2
  49 [-]: TEST      R2 0         ; if not R2 then PC := 93
@@ -224,7 +224,7 @@
  51 [-]: GETUPVAL  R2 U1        ; R2 := U1
  52 [-]: TEST      R2 0         ; if not R2 then PC := 93
  53 [-]: JMP       93           ; PC := 93
- 54 [-]: LOADK     R2 0         ; R2 := 0.000000
+ 54 [-]: CONST     R2 0         ; R2 := 0.000000
  55 [-]: GETUPVAL  R3 U3        ; R3 := U3
  56 [-]: TEST      R3 1         ; if R3 then PC := 84
  57 [-]: JMP       84           ; PC := 84
@@ -245,13 +245,13 @@
  72 [-]: TEST      R3 1         ; if R3 then PC := 78
  73 [-]: JMP       78           ; PC := 78
  74 [-]: GETGLOBAL R3 K9        ; R3 := 0xcbd666e1
- 75 [-]: LOADK     R4 0         ; R4 := 0.000000
+ 75 [-]: CONST     R4 0         ; R4 := 0.000000
  76 [-]: CALL      R3 2 1       ; R3(R4)
  77 [-]: JMP       71           ; PC := 71
- 78 [-]: LOADBOOL  R3 0 0       ; R3 := false
+ 78 [-]: LOADKB    R3 0 0       ; R3 := false
  79 [-]: SETUPVAL  R3 U4        ; U82 := R4
  80 [-]: GETGLOBAL R3 K9        ; R3 := 0xcbd666e1
- 81 [-]: LOADK     R4 0         ; R4 := 0.000000
+ 81 [-]: CONST     R4 0         ; R4 := 0.000000
  82 [-]: CALL      R3 2 1       ; R3(R4)
  83 [-]: JMP       55           ; PC := 55
  84 [-]: GETUPVAL  R3 U3        ; R3 := U3

@@ -25,7 +25,7 @@
  16 [-]: LOADK     R4 K9        ; R4 := "ShrineMarker"
  17 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  18 [-]: LOADNIL   R4 R6        ; R4 := R5 := R6 := nil
- 19 [-]: LOADBOOL  R7 0 0       ; R7 := false
+ 19 [-]: LOADKB    R7 0 0       ; R7 := false
  20 [-]: LOADNIL   R8 R10       ; R8 := R9 := R10 := nil
  21 [-]: LOADK     R11 K10      ; R11 := "/Lotus/Language/DeadlockProtocol/ProteaQuestKillTreasurer"
  22 [-]: LOADK     R12 K11      ; R12 := "/Lotus/Language/DeadlockProtocol/ProteaQuestFindTreasurer"
@@ -110,7 +110,7 @@
  27 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  28 [-]: SETUPVAL  R2 U0        ; U82 := R0
  29 [-]: GETGLOBAL R2 K6        ; R2 := 0xcbd666e1
- 30 [-]: LOADK     R3 0         ; R3 := 0.000000
+ 30 [-]: CONST     R3 0         ; R3 := 0.000000
  31 [-]: CALL      R2 2 1       ; R2(R3)
  32 [-]: JMP       1            ; PC := 1
  33 [-]: RETURN    R0 1         ; return 
@@ -207,7 +207,7 @@
  19 [-]: JMP       21           ; PC := 21
  20 [-]: RETURN    R0 1         ; return 
  21 [-]: GETGLOBAL R2 K5        ; R2 := 0xcbd666e1
- 22 [-]: LOADK     R3 0         ; R3 := 0.000000
+ 22 [-]: CONST     R3 0         ; R3 := 0.000000
  23 [-]: CALL      R2 2 1       ; R2(R3)
  24 [-]: JMP       1            ; PC := 1
  25 [-]: RETURN    R0 1         ; return 
@@ -288,7 +288,7 @@
  49 [-]: TEST      R4 0         ; if not R4 then PC := 74
  50 [-]: JMP       74           ; PC := 74
  51 [-]: GETGLOBAL R4 K20       ; R4 := 0xcbd666e1
- 52 [-]: LOADK     R5 1         ; R5 := 1.000000
+ 52 [-]: CONST     R5 1         ; R5 := 1.000000
  53 [-]: CALL      R4 2 1       ; R4(R5)
  54 [-]: GETUPVAL  R4 U6        ; R4 := U6
  55 [-]: GETTABLE  R4 R4 K21    ; R4 := R4[0x374aec88]
@@ -313,7 +313,7 @@
  74 [-]: GETTABLE  R4 R0 K28    ; R4 := R0["isQuestM5"]
  75 [-]: TEST      R4 0         ; if not R4 then PC := 191
  76 [-]: JMP       191          ; PC := 191
- 77 [-]: LOADBOOL  R4 0 0       ; R4 := false
+ 77 [-]: LOADKB    R4 0 0       ; R4 := false
  78 [-]: GETGLOBAL R5 K1        ; R5 := 0x89326c93
  79 [-]: SELF      R5 R5 K29    ; R6 := R5; R5 := R5[0x78298275]
  80 [-]: CALL      R5 2 2       ; R5 := R5(R6)
@@ -338,7 +338,7 @@
  99 [-]: LOADK     R10 K34      ; R10 := "ProteaQuestRumble"
 100 [-]: CALL      R9 2 0       ; R9,... := R9(R10)
 101 [-]: CALL      R7 0 2       ; R7 := R7(R8,...)
-102 [-]: LOADBOOL  R4 1 0       ; R4 := true
+102 [-]: LOADKB    R4 1 0       ; R4 := true
 103 [-]: GETGLOBAL R8 K8        ; R8 := 0x7b998233
 104 [-]: MOVE      R9 R7        ; R9 := R7
 105 [-]: CALL      R8 2 2       ; R8 := R8(R9)
@@ -363,7 +363,7 @@
 124 [-]: CALL      R8 0 2       ; R8 := R8(R9,...)
 125 [-]: MOVE      R6 R8        ; R6 := R8
 126 [-]: GETGLOBAL R8 K20       ; R8 := 0xcbd666e1
-127 [-]: LOADK     R9 0         ; R9 := 0.000000
+127 [-]: CONST     R9 0         ; R9 := 0.000000
 128 [-]: CALL      R8 2 1       ; R8(R9)
 129 [-]: JMP       86           ; PC := 86
 130 [-]: GETUPVAL  R8 U6        ; R8 := U6
@@ -411,7 +411,7 @@
 172 [-]: CALL      R9 0 2       ; R9 := R9(R10,...)
 173 [-]: MOVE      R6 R9        ; R6 := R9
 174 [-]: GETGLOBAL R9 K20       ; R9 := 0xcbd666e1
-175 [-]: LOADK     R10 0        ; R10 := 0.000000
+175 [-]: CONST     R10 0        ; R10 := 0.000000
 176 [-]: CALL      R9 2 1       ; R9(R10)
 177 [-]: JMP       155          ; PC := 155
 178 [-]: GETGLOBAL R9 K1        ; R9 := 0x89326c93
@@ -481,7 +481,7 @@
 242 [-]: CALL      R12 3 1      ; R12(R13,R14)
 243 [-]: GETUPVAL  R12 U2       ; R12 := U2
 244 [-]: SELF      R12 R12 K55  ; R13 := R12; R12 := R12[0xe603bab2]
-245 [-]: LOADBOOL  R14 1 0      ; R14 := true
+245 [-]: LOADKB    R14 1 0      ; R14 := true
 246 [-]: CALL      R12 3 1      ; R12(R13,R14)
 247 [-]: GETGLOBAL R12 K8       ; R12 := 0x7b998233
 248 [-]: MOVE      R13 R11      ; R13 := R11
@@ -493,7 +493,7 @@
 254 [-]: TEST      R12 1        ; if R12 then PC := 260
 255 [-]: JMP       260          ; PC := 260
 256 [-]: GETGLOBAL R12 K20      ; R12 := 0xcbd666e1
-257 [-]: LOADK     R13 0        ; R13 := 0.000000
+257 [-]: CONST     R13 0        ; R13 := 0.000000
 258 [-]: CALL      R12 2 1      ; R12(R13)
 259 [-]: JMP       247          ; PC := 247
 260 [-]: GETGLOBAL R12 K1       ; R12 := 0x89326c93
@@ -540,7 +540,7 @@
  16 [-]: TEST      R1 1         ; if R1 then PC := 22
  17 [-]: JMP       22           ; PC := 22
  18 [-]: GETGLOBAL R1 K8        ; R1 := 0xcbd666e1
- 19 [-]: LOADK     R2 0         ; R2 := 0.000000
+ 19 [-]: CONST     R2 0         ; R2 := 0.000000
  20 [-]: CALL      R1 2 1       ; R1(R2)
  21 [-]: JMP       14           ; PC := 14
  22 [-]: GETGLOBAL R1 K9        ; R1 := 0x7b998233
@@ -577,7 +577,7 @@
  53 [-]: TEST      R1 1         ; if R1 then PC := 59
  54 [-]: JMP       59           ; PC := 59
  55 [-]: GETGLOBAL R1 K8        ; R1 := 0xcbd666e1
- 56 [-]: LOADK     R2 0         ; R2 := 0.000000
+ 56 [-]: CONST     R2 0         ; R2 := 0.000000
  57 [-]: CALL      R1 2 1       ; R1(R2)
  58 [-]: JMP       49           ; PC := 49
  59 [-]: GETUPVAL  R1 U4        ; R1 := U4
@@ -608,9 +608,9 @@
  84 [-]: GETUPVAL  R1 U2        ; R1 := U2
  85 [-]: SELF      R1 R1 K26    ; R2 := R1; R1 := R1[0x74d61f1b]
  86 [-]: GETUPVAL  R3 U7        ; R3 := U7
- 87 [-]: LOADK     R4 0         ; R4 := 0.000000
- 88 [-]: LOADK     R5 300       ; R5 := 300.000000
- 89 [-]: LOADBOOL  R6 0 0       ; R6 := false
+ 87 [-]: CONST     R4 0         ; R4 := 0.000000
+ 88 [-]: CONST     R5 300       ; R5 := 300.000000
+ 89 [-]: LOADKB    R6 0 0       ; R6 := false
  90 [-]: CALL      R1 6 2       ; R1 := R1(R2,R3,R4,R5,R6)
  91 [-]: GETGLOBAL R2 K9        ; R2 := 0x7b998233
  92 [-]: MOVE      R3 R1        ; R3 := R1
@@ -651,7 +651,7 @@
 127 [-]: CALL      R3 2 1       ; R3(R4)
 128 [-]: JMP       132          ; PC := 132
 129 [-]: GETUPVAL  R3 U9        ; R3 := U9
-130 [-]: LOADBOOL  R4 1 0       ; R4 := true
+130 [-]: LOADKB    R4 1 0       ; R4 := true
 131 [-]: CALL      R3 2 1       ; R3(R4)
 132 [-]: GETTABLE  R3 R0 K25    ; R3 := R0["shrineObjMarker"]
 133 [-]: SELF      R3 R3 K33    ; R4 := R3; R3 := R3[0x383d2e7d]
@@ -659,8 +659,8 @@
 135 [-]: GETTABLE  R3 R0 K25    ; R3 := R0["shrineObjMarker"]
 136 [-]: SELF      R3 R3 K34    ; R4 := R3; R3 := R3[0x53bc0559]
 137 [-]: GETGLOBAL R5 K35       ; R5 := 0xb7cbd06b
-138 [-]: LOADK     R6 5         ; R6 := 5.000000
-139 [-]: LOADK     R7 5000      ; R7 := 5000.000000
+138 [-]: CONST     R6 5         ; R6 := 5.000000
+139 [-]: CONST     R7 5000      ; R7 := 5000.000000
 140 [-]: CALL      R5 3 0       ; R5,... := R5(R6,R7)
 141 [-]: CALL      R3 0 1       ; R3(R4,...)
 142 [-]: GETUPVAL  R3 U2        ; R3 := U2
@@ -678,7 +678,7 @@
 154 [-]: TEST      R3 0         ; if not R3 then PC := 160
 155 [-]: JMP       160          ; PC := 160
 156 [-]: GETGLOBAL R3 K8        ; R3 := 0xcbd666e1
-157 [-]: LOADK     R4 0         ; R4 := 0.000000
+157 [-]: CONST     R4 0         ; R4 := 0.000000
 158 [-]: CALL      R3 2 1       ; R3(R4)
 159 [-]: JMP       150          ; PC := 150
 160 [-]: GETTABLE  R3 R0 K18    ; R3 := R0["isQuestM3"]
@@ -735,7 +735,7 @@
 211 [-]: CALL      R7 2 2       ; R7 := R7(R8)
 212 [-]: SETUPVAL  R7 U8        ; U82 := R8
 213 [-]: GETGLOBAL R7 K8        ; R7 := 0xcbd666e1
-214 [-]: LOADK     R8 0         ; R8 := 0.000000
+214 [-]: CONST     R8 0         ; R8 := 0.000000
 215 [-]: CALL      R7 2 1       ; R7(R8)
 216 [-]: JMP       185          ; PC := 185
 217 [-]: GETGLOBAL R7 K9        ; R7 := 0x7b998233

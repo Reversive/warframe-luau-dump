@@ -68,7 +68,7 @@
   8 [-]: GETGLOBAL R4 K4        ; R4 := 0x0469f296
   9 [-]: LOADK     R5 K5        ; R5 := "CreatorProcced"
  10 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 11 [-]: LOADBOOL  R5 1 0       ; R5 := true
+ 11 [-]: LOADKB    R5 1 0       ; R5 := true
  12 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
  13 [-]: RETURN    R0 1         ; return 
 
@@ -82,7 +82,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  3
 
-  1 [-]: LOADK     R2 0         ; R2 := 0.000000
+  1 [-]: CONST     R2 0         ; R2 := 0.000000
   2 [-]: RETURN    R2 2         ; return R2
   3 [-]: RETURN    R0 1         ; return 
 
@@ -152,7 +152,7 @@
  42 [-]: LEN       R8 R8        ; R8 := # R8
  43 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
  44 [-]: GETTABLE  R5 R5 R6     ; R5 := R5[R6]
- 45 [-]: LOADK     R6 0         ; R6 := 0.000000
+ 45 [-]: CONST     R6 0         ; R6 := 0.000000
  46 [-]: LT        0 R6 R5      ; if R6 >= R5 then PC := 64
  47 [-]: JMP       64           ; PC := 64
  48 [-]: GETGLOBAL R7 K2        ; R7 := 0x7b998233
@@ -168,7 +168,7 @@
  58 [-]: CALL      R7 1 2       ; R7 := R7()
  59 [-]: ADD       R6 R6 R7     ; R6 := R6 + R7
  60 [-]: GETGLOBAL R7 K15       ; R7 := 0xcbd666e1
- 61 [-]: LOADK     R8 0         ; R8 := 0.000000
+ 61 [-]: CONST     R8 0         ; R8 := 0.000000
  62 [-]: CALL      R7 2 1       ; R7(R8)
  63 [-]: JMP       46           ; PC := 46
  64 [-]: GETGLOBAL R7 K2        ; R7 := 0x7b998233
@@ -214,4 +214,54 @@
  16 [-]: RETURN    R0 1         ; return 
  17 [-]: GETGLOBAL R3 K2        ; R3 := 0x7b998233
  18 [-]: GETGLOBAL R4 K4        ; R4 := _T
- 19 [-]: GET
+ 19 [-]: GETTABLE  R4 R4 K5     ; R4 := R4["kubrowBleedTarget"]
+ 20 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 21 [-]: TEST      R3 0         ; if not R3 then PC := 26
+ 22 [-]: JMP       26           ; PC := 26
+ 23 [-]: GETGLOBAL R3 K4        ; R3 := _T
+ 24 [-]: NEWTABLE  R4 0 0       ; R4 := {}
+ 25 [-]: SETTABLE  R3 K5 R4     ; R3["kubrowBleedTarget"] := R4
+ 26 [-]: SELF      R3 R0 K6     ; R4 := R0; R3 := R0[0x388577d5]
+ 27 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 28 [-]: GETGLOBAL R4 K4        ; R4 := _T
+ 29 [-]: GETTABLE  R4 R4 K5     ; R4 := R4["kubrowBleedTarget"]
+ 30 [-]: GETTABLE  R4 R4 R3     ; R4 := R4[R3]
+ 31 [-]: EQ        0 R4 K7      ; if R4 ~= nil then PC := 40
+ 32 [-]: JMP       40           ; PC := 40
+ 33 [-]: GETGLOBAL R5 K4        ; R5 := _T
+ 34 [-]: GETTABLE  R5 R5 K5     ; R5 := R5["kubrowBleedTarget"]
+ 35 [-]: NEWTABLE  R6 0 2       ; R6 := {}
+ 36 [-]: SETTABLE  R6 K8 R2     ; R6["enemy"] := R2
+ 37 [-]: SETTABLE  R6 K9 R1     ; R6["level"] := R1
+ 38 [-]: SETTABLE  R5 R3 R6     ; R5[R3] := R6
+ 39 [-]: JMP       54           ; PC := 54
+ 40 [-]: GETGLOBAL R5 K2        ; R5 := 0x7b998233
+ 41 [-]: GETTABLE  R6 R4 K8     ; R6 := R4["enemy"]
+ 42 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+ 43 [-]: TEST      R5 1         ; if R5 then PC := 50
+ 44 [-]: JMP       50           ; PC := 50
+ 45 [-]: GETTABLE  R5 R4 K8     ; R5 := R4["enemy"]
+ 46 [-]: SELF      R5 R5 K3     ; R6 := R5; R5 := R5[0x2047cfe7]
+ 47 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+ 48 [-]: TEST      R5 0         ; if not R5 then PC := 53
+ 49 [-]: JMP       53           ; PC := 53
+ 50 [-]: SETTABLE  R4 K8 R2     ; R4["enemy"] := R2
+ 51 [-]: SETTABLE  R4 K9 R1     ; R4["level"] := R1
+ 52 [-]: JMP       54           ; PC := 54
+ 53 [-]: RETURN    R0 1         ; return 
+ 54 [-]: SELF      R5 R0 K10    ; R6 := R0; R5 := R0[0x20833f15]
+ 55 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+ 56 [-]: GETGLOBAL R6 K2        ; R6 := 0x7b998233
+ 57 [-]: MOVE      R7 R5        ; R7 := R5
+ 58 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 59 [-]: TEST      R6 1         ; if R6 then PC := 67
+ 60 [-]: JMP       67           ; PC := 67
+ 61 [-]: SELF      R6 R5 K11    ; R7 := R5; R6 := R5[0xd5f7912b]
+ 62 [-]: GETGLOBAL R8 K12       ; R8 := 0x0469f296
+ 63 [-]: LOADK     R9 K13       ; R9 := "AttackEnemy"
+ 64 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+ 65 [-]: LOADKB    R9 0 0       ; R9 := false
+ 66 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
+ 67 [-]: RETURN    R0 1         ; return 
+
+

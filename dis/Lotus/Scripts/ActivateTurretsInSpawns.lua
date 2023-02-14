@@ -7,7 +7,7 @@
 ; Is_vararg:       2
 ; Max Stack Size:  2
 
-  1 [-]: LOADK     R0 16        ; R0 := 16.000000
+  1 [-]: CONST     R0 16        ; R0 := 16.000000
   2 [-]: CLOSURE   R1 0         ; R1 := closure(Function #1)
   3 [-]: MOVE      R0 R0        ; R0 := R0
   4 [-]: SETGLOBAL R1 K0        ; TurretActivation := R1
@@ -25,10 +25,10 @@
 ; Is_vararg:       0
 ; Max Stack Size:  16
 
-  1 [-]: LOADK     R1 1         ; R1 := 1.000000
+  1 [-]: CONST     R1 1         ; R1 := 1.000000
   2 [-]: GETGLOBAL R2 K0        ; R2 := 0xa8235864
   3 [-]: LEN       R2 R2        ; R2 := # R2
-  4 [-]: LOADK     R3 1         ; R3 := 1.000000
+  4 [-]: CONST     R3 1         ; R3 := 1.000000
   5 [-]: FORPREP   R1 21        ; R1 -= R3; PC := 21
   6 [-]: GETGLOBAL R5 K0        ; R5 := 0xa8235864
   7 [-]: GETTABLE  R5 R5 R4     ; R5 := R5[R4]
@@ -62,13 +62,13 @@
  35 [-]: JMP       37           ; PC := 37
  36 [-]: JMP       41           ; PC := 41
  37 [-]: GETGLOBAL R8 K15       ; R8 := 0xcbd666e1
- 38 [-]: LOADK     R9 0         ; R9 := 0.000000
+ 38 [-]: CONST     R9 0         ; R9 := 0.000000
  39 [-]: CALL      R8 2 1       ; R8(R9)
  40 [-]: JMP       26           ; PC := 26
- 41 [-]: LOADK     R8 1         ; R8 := 1.000000
+ 41 [-]: CONST     R8 1         ; R8 := 1.000000
  42 [-]: GETGLOBAL R9 K0        ; R9 := 0xa8235864
  43 [-]: LEN       R9 R9        ; R9 := # R9
- 44 [-]: LOADK     R10 1        ; R10 := 1.000000
+ 44 [-]: CONST     R10 1        ; R10 := 1.000000
  45 [-]: FORPREP   R8 57        ; R8 -= R10; PC := 57
  46 [-]: GETGLOBAL R12 K0       ; R12 := 0xa8235864
  47 [-]: GETTABLE  R12 R12 R11  ; R12 := R12[R11]
@@ -97,40 +97,4 @@
 ; Is_vararg:       0
 ; Max Stack Size:  8
 
-  1 [-]: GETGLOBAL R3 K0        ; R3 := 0xa8235864
-  2 [-]: LEN       R3 R3        ; R3 := # R3
-  3 [-]: EQ        0 R3 K1      ; if R3 ~= 0.000000 then PC := 6
-  4 [-]: JMP       6            ; PC := 6
-  5 [-]: RETURN    R0 1         ; return 
-  6 [-]: GETGLOBAL R3 K2        ; R3 := 0x7b998233
-  7 [-]: MOVE      R4 R0        ; R4 := R0
-  8 [-]: CALL      R3 2 2       ; R3 := R3(R4)
-  9 [-]: TEST      R3 0         ; if not R3 then PC := 12
- 10 [-]: JMP       12           ; PC := 12
- 11 [-]: RETURN    R0 1         ; return 
- 12 [-]: SELF      R3 R0 K3     ; R4 := R0; R3 := R0[0xfa9e477f]
- 13 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 14 [-]: GETGLOBAL R4 K2        ; R4 := 0x7b998233
- 15 [-]: MOVE      R5 R3        ; R5 := R3
- 16 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 17 [-]: TEST      R4 1         ; if R4 then PC := 20
- 18 [-]: JMP       20           ; PC := 20
- 19 [-]: LOADK     R1 1         ; R1 := 1.000000
- 20 [-]: EQ        0 R1 K4      ; if R1 ~= nil then PC := 23
- 21 [-]: JMP       23           ; PC := 23
- 22 [-]: LOADK     R1 1         ; R1 := 1.000000
- 23 [-]: EQ        0 R1 K5      ; if R1 ~= 1.000000 then PC := 35
- 24 [-]: JMP       35           ; PC := 35
- 25 [-]: GETGLOBAL R4 K6        ; R4 := _T
- 26 [-]: SELF      R5 R3 K8     ; R6 := R3; R5 := R3[0xc45c884b]
- 27 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 28 [-]: SETTABLE  R4 K7 R5     ; R4["TurretSpawnLevel"] := R5
- 29 [-]: SELF      R4 R2 K9     ; R5 := R2; R4 := R2[0xd5f7912b]
- 30 [-]: GETGLOBAL R6 K10       ; R6 := 0x0469f296
- 31 [-]: LOADK     R7 K11       ; R7 := "TurretActivation"
- 32 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 33 [-]: LOADBOOL  R7 0 0       ; R7 := false
- 34 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
- 35 [-]: RETURN    R0 1         ; return 
-
-
+  1 [-]: GETGLOBAL R3 K0        ; R3 :=

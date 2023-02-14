@@ -30,14 +30,14 @@
   7 [-]: LOADK     R2 K3        ; R2 := "EntityScaling.lua::MoverScale - entity is not a mover!"
   8 [-]: CALL      R1 2 1       ; R1(R2)
   9 [-]: RETURN    R0 1         ; return 
- 10 [-]: LOADK     R1 1         ; R1 := 1.000000
- 11 [-]: LOADK     R2 2         ; R2 := 2.000000
+ 10 [-]: CONST     R1 1         ; R1 := 1.000000
+ 11 [-]: CONST     R2 2         ; R2 := 2.000000
  12 [-]: GETGLOBAL R3 K4        ; R3 := 0x702f807d
  13 [-]: GETTABLE  R3 R3 R1     ; R3 := R3[R1]
  14 [-]: GETGLOBAL R4 K4        ; R4 := 0x702f807d
  15 [-]: GETTABLE  R4 R4 R2     ; R4 := R4[R2]
- 16 [-]: LOADK     R5 0         ; R5 := 0.000000
- 17 [-]: LOADK     R6 0         ; R6 := 0.000000
+ 16 [-]: CONST     R5 0         ; R5 := 0.000000
+ 17 [-]: CONST     R6 0         ; R6 := 0.000000
  18 [-]: GETGLOBAL R7 K5        ; R7 := 0x7b998233
  19 [-]: MOVE      R8 R0        ; R8 := R0
  20 [-]: CALL      R7 2 2       ; R7 := R7(R8)
@@ -61,8 +61,8 @@
  38 [-]: TEST      R7 1         ; if R7 then PC := 41
  39 [-]: JMP       41           ; PC := 41
  40 [-]: RETURN    R0 1         ; return 
- 41 [-]: LOADK     R2 2         ; R2 := 2.000000
- 42 [-]: LOADK     R1 1         ; R1 := 1.000000
+ 41 [-]: CONST     R2 2         ; R2 := 2.000000
+ 42 [-]: CONST     R1 1         ; R1 := 1.000000
  43 [-]: JMP       46           ; PC := 46
  44 [-]: MOVE      R1 R2        ; R1 := R2
  45 [-]: ADD       R2 R2 K8     ; R2 := R2 + 1.000000
@@ -88,7 +88,7 @@
  65 [-]: CALL      R8 3 1       ; R8(R9,R10)
  66 [-]: MOVE      R5 R6        ; R5 := R6
  67 [-]: GETGLOBAL R8 K12       ; R8 := 0xcbd666e1
- 68 [-]: LOADK     R9 0         ; R9 := 0.000000
+ 68 [-]: CONST     R9 0         ; R9 := 0.000000
  69 [-]: CALL      R8 2 1       ; R8(R9)
  70 [-]: JMP       18           ; PC := 18
  71 [-]: RETURN    R0 1         ; return 

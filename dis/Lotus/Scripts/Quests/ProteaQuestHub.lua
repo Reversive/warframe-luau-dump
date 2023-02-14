@@ -66,30 +66,30 @@
  23 [-]: SELF      R4 R3 K10    ; R5 := R3; R4 := R3[0xc1595bd5]
  24 [-]: GETGLOBAL R6 K11       ; R6 := gDecorationType
  25 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
- 26 [-]: LOADK     R5 1         ; R5 := 1.000000
+ 26 [-]: CONST     R5 1         ; R5 := 1.000000
  27 [-]: LEN       R6 R4        ; R6 := # R4
- 28 [-]: LOADK     R7 1         ; R7 := 1.000000
+ 28 [-]: CONST     R7 1         ; R7 := 1.000000
  29 [-]: FORPREP   R5 36        ; R5 -= R7; PC := 36
  30 [-]: GETTABLE  R9 R4 R8     ; R9 := R4[R8]
  31 [-]: SELF      R9 R9 K12    ; R10 := R9; R9 := R9[0xcddc3abb]
- 32 [-]: LOADK     R11 0        ; R11 := 0.000000
+ 32 [-]: CONST     R11 0        ; R11 := 0.000000
  33 [-]: GETGLOBAL R12 K13      ; R12 := 0x008a038b
- 34 [-]: LOADBOOL  R13 0 0      ; R13 := false
+ 34 [-]: LOADKB    R13 0 0      ; R13 := false
  35 [-]: CALL      R9 5 1       ; R9(R10,R11,R12,R13)
  36 [-]: FORLOOP   R5 30        ; R5 += R7; if R5 <= R6 then begin PC := 30; R8 := R5 end
  37 [-]: SELF      R9 R3 K10    ; R10 := R3; R9 := R3[0xc1595bd5]
  38 [-]: GETGLOBAL R11 K14      ; R11 := gSkeletalClothExType
  39 [-]: CALL      R9 3 2       ; R9 := R9(R10,R11)
  40 [-]: MOVE      R4 R9        ; R4 := R9
- 41 [-]: LOADK     R9 1         ; R9 := 1.000000
+ 41 [-]: CONST     R9 1         ; R9 := 1.000000
  42 [-]: LEN       R10 R4       ; R10 := # R4
- 43 [-]: LOADK     R11 1        ; R11 := 1.000000
+ 43 [-]: CONST     R11 1        ; R11 := 1.000000
  44 [-]: FORPREP   R9 51        ; R9 -= R11; PC := 51
  45 [-]: GETTABLE  R13 R4 R12   ; R13 := R4[R12]
  46 [-]: SELF      R13 R13 K12  ; R14 := R13; R13 := R13[0xcddc3abb]
- 47 [-]: LOADK     R15 0        ; R15 := 0.000000
+ 47 [-]: CONST     R15 0        ; R15 := 0.000000
  48 [-]: GETGLOBAL R16 K13      ; R16 := 0x008a038b
- 49 [-]: LOADBOOL  R17 0 0      ; R17 := false
+ 49 [-]: LOADKB    R17 0 0      ; R17 := false
  50 [-]: CALL      R13 5 1      ; R13(R14,R15,R16,R17)
  51 [-]: FORLOOP   R9 45        ; R9 += R11; if R9 <= R10 then begin PC := 45; R12 := R9 end
  52 [-]: GETGLOBAL R13 K0       ; R13 := _T
@@ -123,10 +123,10 @@
  15 [-]: SELF      R3 R3 K1     ; R4 := R3; R3 := R3[0xed4e0128]
  16 [-]: CALL      R3 2 0       ; R3,... := R3(R4)
  17 [-]: CALL      R1 0 1       ; R1(R2,...)
- 18 [-]: LOADK     R1 1         ; R1 := 1.000000
+ 18 [-]: CONST     R1 1         ; R1 := 1.000000
  19 [-]: GETGLOBAL R2 K6        ; R2 := 0xef885cb7
  20 [-]: LEN       R2 R2        ; R2 := # R2
- 21 [-]: LOADK     R3 1         ; R3 := 1.000000
+ 21 [-]: CONST     R3 1         ; R3 := 1.000000
  22 [-]: FORPREP   R1 34        ; R1 -= R3; PC := 34
  23 [-]: GETGLOBAL R5 K4        ; R5 := 0x33bdd652
  24 [-]: GETTABLE  R5 R5 K5     ; R5 := R5[0x23d5322f]
@@ -158,7 +158,7 @@
  50 [-]: TEST      R6 1         ; if R6 then PC := 56
  51 [-]: JMP       56           ; PC := 56
  52 [-]: GETGLOBAL R6 K17       ; R6 := 0xcbd666e1
- 53 [-]: LOADK     R7 0         ; R7 := 0.000000
+ 53 [-]: CONST     R7 0         ; R7 := 0.000000
  54 [-]: CALL      R6 2 1       ; R6(R7)
  55 [-]: JMP       48           ; PC := 48
  56 [-]: GETGLOBAL R6 K18       ; R6 := 0x98cd3822
@@ -177,8 +177,8 @@
  69 [-]: CALL      R8 2 0       ; R8,... := R8(R9)
  70 [-]: CALL      R6 0 2       ; R6 := R6(R7,...)
  71 [-]: SELF      R6 R6 K25    ; R7 := R6; R6 := R6[0x768274d6]
- 72 [-]: LOADBOOL  R8 0 0       ; R8 := false
- 73 [-]: LOADBOOL  R9 1 0       ; R9 := true
+ 72 [-]: LOADKB    R8 0 0       ; R8 := false
+ 73 [-]: LOADKB    R9 1 0       ; R9 := true
  74 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
  75 [-]: NEWTABLE  R6 2 0       ; R6 := {}
  76 [-]: GETGLOBAL R7 K21       ; R7 := 0x89326c93
@@ -209,10 +209,10 @@
 101 [-]: SELF      R10 R10 K33  ; R11 := R10; R10 := R10[0xcb3851b8]
 102 [-]: CALL      R10 2 2      ; R10 := R10(R11)
 103 [-]: SETTABLE  R8 K30 R10   ; R8["HeistRoom_HologramRotation"] := R10
-104 [-]: SETTABLE  R7 K29 R9    ; R7[0xbb5b1bfe] := R9
-105 [-]: LOADK     R7 1         ; R7 := 1.000000
+104 [-]: SETTABLE  R7 K29 R9    ; R7["HeistRoom_HologramPosition"] := R9
+105 [-]: CONST     R7 1         ; R7 := 1.000000
 106 [-]: LEN       R8 R6        ; R8 := # R6
-107 [-]: LOADK     R9 1         ; R9 := 1.000000
+107 [-]: CONST     R9 1         ; R9 := 1.000000
 108 [-]: FORPREP   R7 112       ; R7 -= R9; PC := 112
 109 [-]: GETTABLE  R11 R6 R10   ; R11 := R6[R10]
 110 [-]: SELF      R11 R11 K34  ; R12 := R11; R11 := R11[0xa2880940]
@@ -237,7 +237,7 @@
 129 [-]: TEST      R11 1        ; if R11 then PC := 135
 130 [-]: JMP       135          ; PC := 135
 131 [-]: GETGLOBAL R11 K17      ; R11 := 0xcbd666e1
-132 [-]: LOADK     R12 0        ; R12 := 0.000000
+132 [-]: CONST     R12 0        ; R12 := 0.000000
 133 [-]: CALL      R11 2 1      ; R11(R12)
 134 [-]: JMP       127          ; PC := 127
 135 [-]: GETUPVAL  R11 U2       ; R11 := U2
@@ -313,8 +313,8 @@
  40 [-]: GETGLOBAL R11 K18      ; R11 := 0x4b858385
  41 [-]: CALL      R10 2 2      ; R10 := R10(R11)
  42 [-]: GETGLOBAL R11 K19      ; R11 := ZERO_VECTOR
- 43 [-]: LOADBOOL  R12 0 0      ; R12 := false
- 44 [-]: LOADK     R13 1        ; R13 := 1.000000
+ 43 [-]: LOADKB    R12 0 0      ; R12 := false
+ 44 [-]: CONST     R13 1        ; R13 := 1.000000
  45 [-]: CALL      R8 6 2       ; R8 := R8(R9,R10,R11,R12,R13)
  46 [-]: SETTABLE  R7 K15 R8    ; R7["HeistTableMusic"] := R8
  47 [-]: LOADNIL   R7 R7        ; R7 := nil
@@ -326,13 +326,13 @@
  53 [-]: JMP       58           ; PC := 58
  54 [-]: LT        1 K24 R10    ; if 0.000000 < R10 then PC := 57
  55 [-]: JMP       57           ; PC := 57
- 56 [-]: LOADBOOL  R11 0 1      ; R11 := false; PC := 57
- 57 [-]: LOADBOOL  R11 1 0      ; R11 := true
+ 56 [-]: LOADKB    R11 0 1      ; R11 := false; PC := 57
+ 57 [-]: LOADKB    R11 1 0      ; R11 := true
  58 [-]: SETTABLE  R0 K23 R11   ; R0["mAllowLineSkip"] := R11
- 59 [-]: LOADK     R11 1        ; R11 := 1.000000
+ 59 [-]: CONST     R11 1        ; R11 := 1.000000
  60 [-]: GETGLOBAL R12 K25      ; R12 := 0xef885cb7
  61 [-]: LEN       R12 R12      ; R12 := # R12
- 62 [-]: LOADK     R13 1        ; R13 := 1.000000
+ 62 [-]: CONST     R13 1        ; R13 := 1.000000
  63 [-]: FORPREP   R11 108      ; R11 -= R13; PC := 108
  64 [-]: GETGLOBAL R15 K17      ; R15 := 0xb009bbc6
  65 [-]: GETGLOBAL R16 K26      ; R16 := 0xe91d7466
@@ -375,8 +375,8 @@
 102 [-]: SELF      R16 R0 K33   ; R17 := R0; R16 := R0[0x68d7cbe0]
 103 [-]: MOVE      R18 R15      ; R18 := R15
 104 [-]: LOADNIL   R19 R19      ; R19 := nil
-105 [-]: LOADBOOL  R20 1 0      ; R20 := true
-106 [-]: LOADBOOL  R21 1 0      ; R21 := true
+105 [-]: LOADKB    R20 1 0      ; R20 := true
+106 [-]: LOADKB    R21 1 0      ; R21 := true
 107 [-]: CALL      R16 6 1      ; R16(R17,R18,R19,R20,R21)
 108 [-]: FORLOOP   R11 64       ; R11 += R13; if R11 <= R12 then begin PC := 64; R14 := R11 end
 109 [-]: GETGLOBAL R16 K34      ; R16 := 0x7b998233
@@ -415,7 +415,7 @@
 142 [-]: GETGLOBAL R16 K14      ; R16 := _T
 143 [-]: GETTABLE  R16 R16 K15  ; R16 := R16["HeistTableMusic"]
 144 [-]: SELF      R16 R16 K43  ; R17 := R16; R16 := R16[0x6cf1e476]
-145 [-]: LOADBOOL  R18 0 0      ; R18 := false
+145 [-]: LOADKB    R18 0 0      ; R18 := false
 146 [-]: CALL      R16 3 1      ; R16(R17,R18)
 147 [-]: GETGLOBAL R16 K14      ; R16 := _T
 148 [-]: GETTABLE  R16 R16 K44  ; R16 := R16["TaggedDialog"]

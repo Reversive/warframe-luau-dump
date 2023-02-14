@@ -89,9 +89,9 @@
   8 [-]: TEST      R3 0         ; if not R3 then PC := 11
   9 [-]: JMP       11           ; PC := 11
  10 [-]: RETURN    R0 1         ; return 
- 11 [-]: LOADK     R3 1         ; R3 := 1.000000
+ 11 [-]: CONST     R3 1         ; R3 := 1.000000
  12 [-]: LEN       R4 R1        ; R4 := # R1
- 13 [-]: LOADK     R5 1         ; R5 := 1.000000
+ 13 [-]: CONST     R5 1         ; R5 := 1.000000
  14 [-]: FORPREP   R3 39        ; R3 -= R5; PC := 39
  15 [-]: GETTABLE  R7 R1 R6     ; R7 := R1[R6]
  16 [-]: SELF      R8 R7 K3     ; R9 := R7; R8 := R7[0xf2deaf69]
@@ -146,7 +146,7 @@
  14 [-]: TEST      R3 1         ; if R3 then PC := 23
  15 [-]: JMP       23           ; PC := 23
  16 [-]: GETGLOBAL R3 K7        ; R3 := 0xcbd666e1
- 17 [-]: LOADK     R4 0         ; R4 := 0.000000
+ 17 [-]: CONST     R4 0         ; R4 := 0.000000
  18 [-]: CALL      R3 2 1       ; R3(R4)
  19 [-]: GETGLOBAL R3 K8        ; R3 := 0x67652851
  20 [-]: CALL      R3 1 2       ; R3 := R3()
@@ -155,8 +155,8 @@
  23 [-]: SELF      R3 R0 K9     ; R4 := R0; R3 := R0[0xde321e6f]
  24 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  25 [-]: SELF      R3 R3 K10    ; R4 := R3; R3 := R3[0x12dd9da2]
- 26 [-]: LOADK     R5 325       ; R5 := 325.000000
- 27 [-]: LOADK     R6 2         ; R6 := 2.000000
+ 26 [-]: CONST     R5 331       ; R5 := 331.000000
+ 27 [-]: CONST     R6 3         ; R6 := 3.000000
  28 [-]: GETGLOBAL R7 K2        ; R7 := _T
  29 [-]: GETTABLE  R7 R7 K3     ; R7 := R7["tonkorNightwaveUpgrade"]
  30 [-]: GETTABLE  R7 R7 R1     ; R7 := R7[R1]
@@ -183,7 +183,7 @@
   7 [-]: SELF      R5 R0 K2     ; R6 := R0; R5 := R0[0xde321e6f]
   8 [-]: CALL      R5 2 2       ; R5 := R5(R6)
   9 [-]: SELF      R5 R5 K3     ; R6 := R5; R5 := R5[0x881b6b90]
- 10 [-]: LOADK     R7 0         ; R7 := 0.000000
+ 10 [-]: CONST     R7 0         ; R7 := 0.000000
  11 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
  12 [-]: EQ        1 R1 R5      ; if R1 == R5 then PC := 15
  13 [-]: JMP       15           ; PC := 15
@@ -216,7 +216,7 @@
  40 [-]: GETTABLE  R7 R7 R6     ; R7 := R7[R6]
  41 [-]: SETTABLE  R7 K9 K10    ; R7["interrupt"] := true
  42 [-]: GETGLOBAL R7 K11       ; R7 := 0xcbd666e1
- 43 [-]: LOADK     R8 0         ; R8 := 0.000000
+ 43 [-]: CONST     R8 0         ; R8 := 0.000000
  44 [-]: CALL      R7 2 1       ; R7(R8)
  45 [-]: GETGLOBAL R7 K12       ; R7 := 0x7f49b323
  46 [-]: GETGLOBAL R8 K13       ; R8 := 0x5bced4c4
@@ -233,8 +233,8 @@
  57 [-]: SELF      R8 R0 K2     ; R9 := R0; R8 := R0[0xde321e6f]
  58 [-]: CALL      R8 2 2       ; R8 := R8(R9)
  59 [-]: SELF      R8 R8 K16    ; R9 := R8; R8 := R8[0x5e6704ff]
- 60 [-]: LOADK     R10 325      ; R10 := 325.000000
- 61 [-]: LOADK     R11 2        ; R11 := 2.000000
+ 60 [-]: CONST     R10 331      ; R10 := 331.000000
+ 61 [-]: CONST     R11 3        ; R11 := 3.000000
  62 [-]: MOVE      R12 R7       ; R12 := R7
  63 [-]: CALL      R8 5 1       ; R8(R9,R10,R11,R12)
  64 [-]: GETGLOBAL R8 K18       ; R8 := 0x6c97a788
@@ -255,14 +255,14 @@
  79 [-]: SETTABLE  R8 K28 R9    ; R8["buffDataExtra"] := R9
  80 [-]: SELF      R9 R0 K30    ; R10 := R0; R9 := R0[0x37e45fb5]
  81 [-]: MOVE      R11 R8       ; R11 := R8
- 82 [-]: LOADBOOL  R12 1 0      ; R12 := true
- 83 [-]: LOADBOOL  R13 1 0      ; R13 := true
+ 82 [-]: LOADKB    R12 1 0      ; R12 := true
+ 83 [-]: LOADKB    R13 1 0      ; R13 := true
  84 [-]: CALL      R9 5 1       ; R9(R10,R11,R12,R13)
  85 [-]: SELF      R9 R0 K31    ; R10 := R0; R9 := R0[0xd5f7912b]
  86 [-]: GETGLOBAL R11 K32      ; R11 := 0x0469f296
  87 [-]: LOADK     R12 K33      ; R12 := "NightwaveUpgrade"
  88 [-]: CALL      R11 2 2      ; R11 := R11(R12)
- 89 [-]: LOADBOOL  R12 0 0      ; R12 := false
+ 89 [-]: LOADKB    R12 0 0      ; R12 := false
  90 [-]: CALL      R9 4 1       ; R9(R10,R11,R12)
  91 [-]: RETURN    R0 1         ; return 
 

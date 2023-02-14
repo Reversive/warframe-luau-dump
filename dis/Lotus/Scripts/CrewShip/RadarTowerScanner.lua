@@ -23,9 +23,9 @@
  14 [-]: LOADK     R5 K5        ; R5 := "EE.Interface.Utilities"
  15 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  16 [-]: LOADNIL   R5 R10       ; R5 := R6 := R7 := R8 := R9 := R10 := nil
- 17 [-]: LOADK     R11 0        ; R11 := 0.000000
+ 17 [-]: CONST     R11 0        ; R11 := 0.000000
  18 [-]: LOADNIL   R12 R12      ; R12 := nil
- 19 [-]: LOADK     R13 8        ; R13 := 8.000000
+ 19 [-]: CONST     R13 8        ; R13 := 8.000000
  20 [-]: CLOSURE   R14 0        ; R14 := closure(Function #1)
  21 [-]: SETGLOBAL R14 K6       ; RemovePulseBuff := R14
  22 [-]: CLOSURE   R14 1        ; R14 := closure(Function #2)
@@ -69,9 +69,9 @@
   2 [-]: CALL      R1 2 2       ; R1 := R1(R2)
   3 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1[0xeb3c14da]
   4 [-]: GETGLOBAL R3 K2        ; R3 := 0x2d7f296e
-  5 [-]: LOADK     R4 25        ; R4 := 25.000000
-  6 [-]: LOADK     R5 6         ; R5 := 6.000000
-  7 [-]: LOADK     R6 0         ; R6 := 0.000000
+  5 [-]: CONST     R4 25        ; R4 := 25.000000
+  6 [-]: CONST     R5 6         ; R5 := 6.000000
+  7 [-]: CONST     R6 0         ; R6 := 0.000000
   8 [-]: GETGLOBAL R7 K4        ; R7 := 0x897d8d0f
   9 [-]: CALL      R1 7 1       ; R1(R2,R3,R4,R5,R6,R7)
  10 [-]: SELF      R1 R0 K5     ; R2 := R0; R1 := R0[0xc9f6a7d7]
@@ -135,11 +135,11 @@
   3 [-]: CALL      R2 2 2       ; R2 := R2(R3)
   4 [-]: TEST      R2 1         ; if R2 then PC := 44
   5 [-]: JMP       44           ; PC := 44
-  6 [-]: LOADBOOL  R2 0 0       ; R2 := false
-  7 [-]: LOADK     R3 1         ; R3 := 1.000000
+  6 [-]: LOADKB    R2 0 0       ; R2 := false
+  7 [-]: CONST     R3 1         ; R3 := 1.000000
   8 [-]: GETGLOBAL R4 K1        ; R4 := 0x320d9a15
   9 [-]: LEN       R4 R4        ; R4 := # R4
- 10 [-]: LOADK     R5 1         ; R5 := 1.000000
+ 10 [-]: CONST     R5 1         ; R5 := 1.000000
  11 [-]: FORPREP   R3 20        ; R3 -= R5; PC := 20
  12 [-]: GETGLOBAL R7 K1        ; R7 := 0x320d9a15
  13 [-]: GETTABLE  R7 R7 R6     ; R7 := R7[R6]
@@ -150,10 +150,10 @@
  18 [-]: JMP       20           ; PC := 20
  19 [-]: RETURN    R0 1         ; return 
  20 [-]: FORLOOP   R3 12        ; R3 += R5; if R3 <= R4 then begin PC := 12; R6 := R3 end
- 21 [-]: LOADK     R8 1         ; R8 := 1.000000
+ 21 [-]: CONST     R8 1         ; R8 := 1.000000
  22 [-]: GETGLOBAL R9 K3        ; R9 := 0x43ba5fca
  23 [-]: LEN       R9 R9        ; R9 := # R9
- 24 [-]: LOADK     R10 1        ; R10 := 1.000000
+ 24 [-]: CONST     R10 1        ; R10 := 1.000000
  25 [-]: FORPREP   R8 35        ; R8 -= R10; PC := 35
  26 [-]: GETGLOBAL R12 K3       ; R12 := 0x43ba5fca
  27 [-]: GETTABLE  R12 R12 R11  ; R12 := R12[R11]
@@ -162,7 +162,7 @@
  30 [-]: CALL      R13 3 2      ; R13 := R13(R14,R15)
  31 [-]: TEST      R13 0        ; if not R13 then PC := 35
  32 [-]: JMP       35           ; PC := 35
- 33 [-]: LOADBOOL  R2 1 0       ; R2 := true
+ 33 [-]: LOADKB    R2 1 0       ; R2 := true
  34 [-]: JMP       36           ; PC := 36
  35 [-]: FORLOOP   R8 26        ; R8 += R10; if R8 <= R9 then begin PC := 26; R11 := R8 end
  36 [-]: EQ        0 R2 K4      ; if R2 ~= true then PC := 44
@@ -171,7 +171,7 @@
  39 [-]: GETGLOBAL R15 K6       ; R15 := 0x0469f296
  40 [-]: LOADK     R16 K7       ; R16 := "RemovePulseBuff"
  41 [-]: CALL      R15 2 2      ; R15 := R15(R16)
- 42 [-]: LOADBOOL  R16 0 0      ; R16 := false
+ 42 [-]: LOADKB    R16 0 0      ; R16 := false
  43 [-]: CALL      R13 4 1      ; R13(R14,R15,R16)
  44 [-]: RETURN    R0 1         ; return 
 
@@ -306,10 +306,10 @@
  48 [-]: GETGLOBAL R1 K11       ; R1 := 0x142584a3
  49 [-]: EQ        0 R1 K12     ; if R1 ~= nil then PC := 52
  50 [-]: JMP       52           ; PC := 52
- 51 [-]: LOADBOOL  R1 0 1       ; R1 := false; PC := 52
- 52 [-]: LOADBOOL  R1 1 0       ; R1 := true
+ 51 [-]: LOADKB    R1 0 1       ; R1 := false; PC := 52
+ 52 [-]: LOADKB    R1 1 0       ; R1 := true
  53 [-]: GETGLOBAL R2 K11       ; R2 := 0x142584a3
- 54 [-]: LOADK     R3 3         ; R3 := 3.000000
+ 54 [-]: CONST     R3 3         ; R3 := 3.000000
  55 [-]: CALL      R0 4 2       ; R0 := R0(R1,R2,R3)
  56 [-]: SETUPVAL  R0 U4        ; U82 := R4
  57 [-]: RETURN    R0 1         ; return 
@@ -336,7 +336,7 @@
  10 [-]: JMP       13           ; PC := 13
  11 [-]: GETUPVAL  R1 U2        ; R1 := U2
  12 [-]: CALL      R1 1 1       ; R1()
- 13 [-]: LOADBOOL  R1 0 0       ; R1 := false
+ 13 [-]: LOADKB    R1 0 0       ; R1 := false
  14 [-]: GETUPVAL  R2 U1        ; R2 := U1
  15 [-]: SELF      R2 R2 K3     ; R3 := R2; R2 := R2[0xabe61691]
  16 [-]: CALL      R2 2 2       ; R2 := R2(R3)
@@ -369,7 +369,7 @@
  43 [-]: CALL      R3 2 1       ; R3(R4)
  44 [-]: RETURN    R0 1         ; return 
  45 [-]: GETGLOBAL R3 K6        ; R3 := 0xcbd666e1
- 46 [-]: LOADK     R4 0         ; R4 := 0.000000
+ 46 [-]: CONST     R4 0         ; R4 := 0.000000
  47 [-]: CALL      R3 2 1       ; R3(R4)
  48 [-]: GETGLOBAL R3 K4        ; R3 := 0x7b998233
  49 [-]: GETUPVAL  R4 U7        ; R4 := U7
@@ -377,7 +377,7 @@
  51 [-]: TEST      R3 0         ; if not R3 then PC := 74
  52 [-]: JMP       74           ; PC := 74
  53 [-]: GETGLOBAL R3 K6        ; R3 := 0xcbd666e1
- 54 [-]: LOADK     R4 0         ; R4 := 0.000000
+ 54 [-]: CONST     R4 0         ; R4 := 0.000000
  55 [-]: CALL      R3 2 1       ; R3(R4)
  56 [-]: GETGLOBAL R3 K7        ; R3 := 0xbe190284
  57 [-]: SETUPVAL  R3 U7        ; U82 := R7
@@ -386,14 +386,14 @@
  60 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  61 [-]: TEST      R3 1         ; if R3 then PC := 48
  62 [-]: JMP       48           ; PC := 48
- 63 [-]: LOADBOOL  R1 1 0       ; R1 := true
+ 63 [-]: LOADKB    R1 1 0       ; R1 := true
  64 [-]: GETUPVAL  R3 U7        ; R3 := U7
  65 [-]: SELF      R3 R3 K8     ; R4 := R3; R3 := R3[0xc1f9f0d9]
  66 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  67 [-]: TEST      R3 1         ; if R3 then PC := 48
  68 [-]: JMP       48           ; PC := 48
  69 [-]: GETGLOBAL R3 K6        ; R3 := 0xcbd666e1
- 70 [-]: LOADK     R4 0         ; R4 := 0.000000
+ 70 [-]: CONST     R4 0         ; R4 := 0.000000
  71 [-]: CALL      R3 2 1       ; R3(R4)
  72 [-]: JMP       64           ; PC := 64
  73 [-]: JMP       48           ; PC := 48

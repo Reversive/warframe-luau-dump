@@ -7,9 +7,9 @@
 ; Is_vararg:       2
 ; Max Stack Size:  7
 
-  1 [-]: LOADK     R0 0         ; R0 := 0.500000
+  1 [-]: CONST     R0 0         ; R0 := 0.500000
   2 [-]: LOADK     R1 K0        ; R1 := 0.150000
-  3 [-]: LOADK     R2 10000     ; R2 := 10000.000000
+  3 [-]: CONST     R2 10000     ; R2 := 10000.000000
   4 [-]: GETGLOBAL R3 K1        ; R3 := 0x2d0fad09
   5 [-]: LOADK     R4 K2        ; R4 := "Lotus.Scripts.Libs.AbilitiesLib"
   6 [-]: CALL      R3 2 2       ; R3 := R3(R4)
@@ -111,14 +111,14 @@
  20 [-]: SELF      R2 R1 K5     ; R3 := R1; R2 := R1[0xde321e6f]
  21 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  22 [-]: SELF      R3 R2 K6     ; R4 := R2; R3 := R2[0x5e6704ff]
- 23 [-]: LOADK     R5 72        ; R5 := 72.000000
- 24 [-]: LOADK     R6 2         ; R6 := 2.000000
+ 23 [-]: CONST     R5 73        ; R5 := 73.000000
+ 24 [-]: CONST     R6 3         ; R6 := 3.000000
  25 [-]: GETUPVAL  R7 U1        ; R7 := U1
  26 [-]: CALL      R7 1 0       ; R7,... := R7()
  27 [-]: CALL      R3 0 1       ; R3(R4,...)
  28 [-]: SELF      R3 R2 K6     ; R4 := R2; R3 := R2[0x5e6704ff]
- 29 [-]: LOADK     R5 66        ; R5 := 66.000000
- 30 [-]: LOADK     R6 3         ; R6 := 3.000000
+ 29 [-]: CONST     R5 67        ; R5 := 67.000000
+ 30 [-]: CONST     R6 4         ; R6 := 4.000000
  31 [-]: GETUPVAL  R7 U2        ; R7 := U2
  32 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
  33 [-]: SELF      R3 R1 K9     ; R4 := R1; R3 := R1[0x08fd455a]
@@ -158,14 +158,14 @@
  20 [-]: SELF      R2 R1 K5     ; R3 := R1; R2 := R1[0xde321e6f]
  21 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  22 [-]: SELF      R3 R2 K6     ; R4 := R2; R3 := R2[0x12dd9da2]
- 23 [-]: LOADK     R5 72        ; R5 := 72.000000
- 24 [-]: LOADK     R6 2         ; R6 := 2.000000
+ 23 [-]: CONST     R5 73        ; R5 := 73.000000
+ 24 [-]: CONST     R6 3         ; R6 := 3.000000
  25 [-]: GETUPVAL  R7 U1        ; R7 := U1
  26 [-]: CALL      R7 1 0       ; R7,... := R7()
  27 [-]: CALL      R3 0 1       ; R3(R4,...)
  28 [-]: SELF      R3 R2 K6     ; R4 := R2; R3 := R2[0x12dd9da2]
- 29 [-]: LOADK     R5 66        ; R5 := 66.000000
- 30 [-]: LOADK     R6 3         ; R6 := 3.000000
+ 29 [-]: CONST     R5 67        ; R5 := 67.000000
+ 30 [-]: CONST     R6 4         ; R6 := 4.000000
  31 [-]: GETUPVAL  R7 U2        ; R7 := U2
  32 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
  33 [-]: SELF      R3 R1 K9     ; R4 := R1; R3 := R1[0x08fd455a]

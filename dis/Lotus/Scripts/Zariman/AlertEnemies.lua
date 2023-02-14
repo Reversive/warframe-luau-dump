@@ -27,7 +27,7 @@
   4 [-]: SELF      R2 R2 K2     ; R3 := R2; R2 := R2[0x66905cb0]
   5 [-]: CALL      R2 2 2       ; R2 := R2(R3)
   6 [-]: SELF      R3 R2 K3     ; R4 := R2; R3 := R2[0xe603bab2]
-  7 [-]: LOADBOOL  R5 1 0       ; R5 := true
+  7 [-]: LOADKB    R5 1 0       ; R5 := true
   8 [-]: CALL      R3 3 1       ; R3(R4,R5)
   9 [-]: RETURN    R0 1         ; return 
 

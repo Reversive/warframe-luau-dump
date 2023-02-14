@@ -7,8 +7,8 @@
 ; Is_vararg:       2
 ; Max Stack Size:  3
 
-  1 [-]: LOADK     R0 1         ; R0 := 1.000000
-  2 [-]: LOADK     R1 0         ; R1 := 0.500000
+  1 [-]: CONST     R0 1         ; R0 := 1.000000
+  2 [-]: CONST     R1 0         ; R1 := 0.500000
   3 [-]: CLOSURE   R2 0         ; R2 := closure(Function #1)
   4 [-]: MOVE      R0 R0        ; R0 := R0
   5 [-]: MOVE      R0 R1        ; R0 := R1
@@ -28,7 +28,7 @@
   1 [-]: SELF      R1 R0 K0     ; R2 := R0; R1 := R0[0x71c3065d]
   2 [-]: CALL      R1 2 2       ; R1 := R1(R2)
   3 [-]: GETUPVAL  R2 U0        ; R2 := U0
-  4 [-]: LOADK     R3 -1        ; R3 := -1.000000
+  4 [-]: CONST     R3 -1        ; R3 := -1.000000
   5 [-]: LT        0 K1 R2      ; if 0.000000 >= R2 then PC := 35
   6 [-]: JMP       35           ; PC := 35
   7 [-]: GETGLOBAL R4 K2        ; R4 := 0x7b998233
@@ -56,7 +56,7 @@
  29 [-]: CALL      R4 1 2       ; R4 := R4()
  30 [-]: SUB       R2 R2 R4     ; R2 := R2 - R4
  31 [-]: GETGLOBAL R4 K6        ; R4 := 0xcbd666e1
- 32 [-]: LOADK     R5 0         ; R5 := 0.000000
+ 32 [-]: CONST     R5 0         ; R5 := 0.000000
  33 [-]: CALL      R4 2 1       ; R4(R5)
  34 [-]: JMP       5            ; PC := 5
  35 [-]: LT        0 K1 R3      ; if 0.000000 >= R3 then PC := 40

@@ -49,7 +49,7 @@
  24 [-]: TEST      R2 1         ; if R2 then PC := 65
  25 [-]: JMP       65           ; PC := 65
  26 [-]: GETGLOBAL R2 K6        ; R2 := 0xcbd666e1
- 27 [-]: LOADK     R3 0         ; R3 := 0.000000
+ 27 [-]: CONST     R3 0         ; R3 := 0.000000
  28 [-]: CALL      R2 2 1       ; R2(R3)
  29 [-]: GETGLOBAL R2 K7        ; R2 := _T
  30 [-]: GETTABLE  R2 R2 K8     ; R2 := R2["jackalAvatarStunned"]
@@ -76,8 +76,8 @@
  51 [-]: MOVE      R5 R1        ; R5 := R1
  52 [-]: CALL      R3 3 1       ; R3(R4,R5)
  53 [-]: SELF      R3 R2 K18    ; R4 := R2; R3 := R2[0x1586e35e]
- 54 [-]: LOADK     R5 19        ; R5 := 19.000000
- 55 [-]: LOADK     R6 1         ; R6 := 1.000000
+ 54 [-]: CONST     R5 19        ; R5 := 19.000000
+ 55 [-]: CONST     R6 1         ; R6 := 1.000000
  56 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
  57 [-]: SELF      R3 R0 K19    ; R4 := R0; R3 := R0[0x479483bb]
  58 [-]: MOVE      R5 R2        ; R5 := R2
@@ -143,7 +143,7 @@
  42 [-]: GETGLOBAL R4 K9        ; R4 := 0x0469f296
  43 [-]: LOADK     R5 K10       ; R5 := "DealDamageAndBreakStun"
  44 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 45 [-]: LOADBOOL  R5 0 0       ; R5 := false
+ 45 [-]: LOADKB    R5 0 0       ; R5 := false
  46 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
  47 [-]: RETURN    R0 1         ; return 
  48 [-]: JMP       52           ; PC := 52

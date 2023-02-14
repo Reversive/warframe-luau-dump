@@ -26,14 +26,14 @@
 ; Max Stack Size:  11
 
   1 [-]: GETGLOBAL R2 K0        ; R2 := 0xfa1b5621
-  2 [-]: LOADBOOL  R3 0 0       ; R3 := false
+  2 [-]: LOADKB    R3 0 0       ; R3 := false
   3 [-]: GETGLOBAL R4 K1        ; R4 := 0x7b998233
   4 [-]: MOVE      R5 R1        ; R5 := R1
   5 [-]: CALL      R4 2 2       ; R4 := R4(R5)
   6 [-]: TEST      R4 0         ; if not R4 then PC := 15
   7 [-]: JMP       15           ; PC := 15
   8 [-]: GETGLOBAL R4 K2        ; R4 := 0xcbd666e1
-  9 [-]: LOADK     R5 0         ; R5 := 0.000000
+  9 [-]: CONST     R5 0         ; R5 := 0.000000
  10 [-]: CALL      R4 2 1       ; R4(R5)
  11 [-]: SELF      R4 R0 K3     ; R5 := R0; R4 := R0[0x73a8846a]
  12 [-]: CALL      R4 2 2       ; R4 := R4(R5)
@@ -83,7 +83,7 @@
  56 [-]: JMP       61           ; PC := 61
  57 [-]: SELF      R7 R4 K14    ; R8 := R4; R7 := R4[0x818ec626]
  58 [-]: LOADNIL   R9 R9        ; R9 := nil
- 59 [-]: LOADBOOL  R10 0 0      ; R10 := false
+ 59 [-]: LOADKB    R10 0 0      ; R10 := false
  60 [-]: CALL      R7 4 1       ; R7(R8,R9,R10)
  61 [-]: SELF      R7 R5 K15    ; R8 := R5; R7 := R5[0x804b6fe6]
  62 [-]: CALL      R7 2 2       ; R7 := R7(R8)
@@ -91,7 +91,7 @@
  64 [-]: JMP       72           ; PC := 72
  65 [-]: EQ        0 R3 K16     ; if R3 ~= false then PC := 100
  66 [-]: JMP       100          ; PC := 100
- 67 [-]: LOADBOOL  R3 1 0       ; R3 := true
+ 67 [-]: LOADKB    R3 1 0       ; R3 := true
  68 [-]: GETGLOBAL R7 K7        ; R7 := _T
  69 [-]: GETTABLE  R7 R7 K8     ; R7 := R7["somaKams"]
  70 [-]: SETTABLE  R7 R6 K17    ; R7[R6] := true
@@ -115,17 +115,17 @@
  88 [-]: JMP       100          ; PC := 100
  89 [-]: SELF      R7 R4 K14    ; R8 := R4; R7 := R4[0x818ec626]
  90 [-]: GETGLOBAL R9 K13       ; R9 := 0x3338124a
- 91 [-]: LOADBOOL  R10 0 0      ; R10 := false
+ 91 [-]: LOADKB    R10 0 0      ; R10 := false
  92 [-]: CALL      R7 4 1       ; R7(R8,R9,R10)
  93 [-]: GETGLOBAL R2 K0        ; R2 := 0xfa1b5621
- 94 [-]: LOADBOOL  R3 0 0       ; R3 := false
+ 94 [-]: LOADKB    R3 0 0       ; R3 := false
  95 [-]: GETGLOBAL R7 K7        ; R7 := _T
  96 [-]: GETTABLE  R7 R7 K8     ; R7 := R7["somaKams"]
  97 [-]: SETTABLE  R7 R6 K16    ; R7[R6] := false
  98 [-]: JMP       100          ; PC := 100
  99 [-]: GETGLOBAL R2 K0        ; R2 := 0xfa1b5621
 100 [-]: GETGLOBAL R7 K2        ; R7 := 0xcbd666e1
-101 [-]: LOADK     R8 0         ; R8 := 0.000000
+101 [-]: CONST     R8 0         ; R8 := 0.000000
 102 [-]: CALL      R7 2 1       ; R7(R8)
 103 [-]: JMP       34           ; PC := 34
 104 [-]: RETURN    R0 1         ; return 
@@ -172,9 +172,9 @@
  30 [-]: JMP       40           ; PC := 40
  31 [-]: SELF      R4 R0 K8     ; R5 := R0; R4 := R0[0x659d451f]
  32 [-]: GETGLOBAL R6 K9        ; R6 := 0x7003d19b
- 33 [-]: LOADBOOL  R7 0 0       ; R7 := false
- 34 [-]: LOADK     R8 0         ; R8 := 0.000000
- 35 [-]: LOADBOOL  R9 0 0       ; R9 := false
+ 33 [-]: LOADKB    R7 0 0       ; R7 := false
+ 34 [-]: CONST     R8 0         ; R8 := 0.000000
+ 35 [-]: LOADKB    R9 0 0       ; R9 := false
  36 [-]: CALL      R4 6 1       ; R4(R5,R6,R7,R8,R9)
  37 [-]: GETGLOBAL R4 K4        ; R4 := _T
  38 [-]: GETTABLE  R4 R4 K5     ; R4 := R4["somaKams"]
@@ -187,3 +187,49 @@
 ; Name:            
 ; Defined at line: 76
 ; #Upvalues:       0
+; #Parameters:     1
+; Is_vararg:       0
+; Max Stack Size:  10
+
+  1 [-]: SELF      R1 R0 K0     ; R2 := R0; R1 := R0[0x73a8846a]
+  2 [-]: CALL      R1 2 2       ; R1 := R1(R2)
+  3 [-]: GETGLOBAL R2 K1        ; R2 := 0x7b998233
+  4 [-]: MOVE      R3 R1        ; R3 := R1
+  5 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+  6 [-]: TEST      R2 0         ; if not R2 then PC := 9
+  7 [-]: JMP       9            ; PC := 9
+  8 [-]: RETURN    R0 1         ; return 
+  9 [-]: SELF      R2 R1 K2     ; R3 := R1; R2 := R1[0x5163741e]
+ 10 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 11 [-]: GETGLOBAL R3 K1        ; R3 := 0x7b998233
+ 12 [-]: MOVE      R4 R2        ; R4 := R2
+ 13 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 14 [-]: TEST      R3 0         ; if not R3 then PC := 17
+ 15 [-]: JMP       17           ; PC := 17
+ 16 [-]: RETURN    R0 1         ; return 
+ 17 [-]: SELF      R3 R2 K3     ; R4 := R2; R3 := R2[0xe223e2b1]
+ 18 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 19 [-]: GETGLOBAL R4 K4        ; R4 := _T
+ 20 [-]: GETTABLE  R4 R4 K5     ; R4 := R4["somaKams"]
+ 21 [-]: EQ        0 R4 K6      ; if R4 ~= nil then PC := 26
+ 22 [-]: JMP       26           ; PC := 26
+ 23 [-]: GETGLOBAL R4 K4        ; R4 := _T
+ 24 [-]: NEWTABLE  R5 0 0       ; R5 := {}
+ 25 [-]: SETTABLE  R4 K5 R5     ; R4["somaKams"] := R5
+ 26 [-]: GETGLOBAL R4 K4        ; R4 := _T
+ 27 [-]: GETTABLE  R4 R4 K5     ; R4 := R4["somaKams"]
+ 28 [-]: GETTABLE  R4 R4 R3     ; R4 := R4[R3]
+ 29 [-]: EQ        0 R4 K7      ; if R4 ~= true then PC := 40
+ 30 [-]: JMP       40           ; PC := 40
+ 31 [-]: SELF      R4 R0 K8     ; R5 := R0; R4 := R0[0x659d451f]
+ 32 [-]: GETGLOBAL R6 K9        ; R6 := 0x7003d19b
+ 33 [-]: LOADKB    R7 0 0       ; R7 := false
+ 34 [-]: CONST     R8 0         ; R8 := 0.000000
+ 35 [-]: LOADKB    R9 0 0       ; R9 := false
+ 36 [-]: CALL      R4 6 1       ; R4(R5,R6,R7,R8,R9)
+ 37 [-]: GETGLOBAL R4 K4        ; R4 := _T
+ 38 [-]: GETTABLE  R4 R4 K5     ; R4 := R4["somaKams"]
+ 39 [-]: SETTABLE  R4 R3 K10    ; R4[R3] := false
+ 40 [-]: RETURN    R0 1         ; return 
+
+

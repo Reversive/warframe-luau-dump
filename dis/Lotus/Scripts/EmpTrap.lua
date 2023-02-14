@@ -55,14 +55,14 @@
  32 [-]: CALL      R7 2 2       ; R7 := R7(R8)
  33 [-]: GETGLOBAL R8 K9        ; R8 := 0x9b5ddf0b
  34 [-]: GETGLOBAL R9 K10       ; R9 := 0x1e9434ac
- 35 [-]: LOADK     R10 100      ; R10 := 100.000000
- 36 [-]: LOADK     R11 10       ; R11 := 10.000000
+ 35 [-]: CONST     R10 100      ; R10 := 100.000000
+ 36 [-]: CONST     R11 10       ; R11 := 10.000000
  37 [-]: MOVE      R12 R2       ; R12 := R2
  38 [-]: MOVE      R13 R2       ; R13 := R2
- 39 [-]: LOADK     R14 10       ; R14 := 10.000000
+ 39 [-]: CONST     R14 10       ; R14 := 10.000000
  40 [-]: CALL      R4 11 1      ; R4(R5,R6,R7,R8,R9,R10,R11,R12,R13,R14)
  41 [-]: GETGLOBAL R4 K12       ; R4 := 0xcbd666e1
- 42 [-]: LOADK     R5 0         ; R5 := 0.000000
+ 42 [-]: CONST     R5 0         ; R5 := 0.000000
  43 [-]: CALL      R4 2 1       ; R4(R5)
  44 [-]: GETGLOBAL R4 K0        ; R4 := 0x7b998233
  45 [-]: MOVE      R5 R2        ; R5 := R2

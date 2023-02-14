@@ -80,8 +80,8 @@
   4 [-]: GETUPVAL  R5 U0        ; R5 := U0
   5 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
   6 [-]: LOADNIL   R4 R4        ; R4 := nil
-  7 [-]: LOADBOOL  R5 0 0       ; R5 := false
-  8 [-]: LOADBOOL  R6 1 0       ; R6 := true
+  7 [-]: LOADKB    R5 0 0       ; R5 := false
+  8 [-]: LOADKB    R6 1 0       ; R6 := true
   9 [-]: CALL      R1 6 1       ; R1(R2,R3,R4,R5,R6)
  10 [-]: GETGLOBAL R1 K3        ; R1 := _T
  11 [-]: GETTABLE  R1 R1 K4     ; R1 := R1["TaggedDialog"]

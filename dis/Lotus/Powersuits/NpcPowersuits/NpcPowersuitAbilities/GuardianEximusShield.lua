@@ -7,7 +7,7 @@
 ; Is_vararg:       2
 ; Max Stack Size:  6
 
-  1 [-]: LOADK     R0 1         ; R0 := 1.000000
+  1 [-]: CONST     R0 1         ; R0 := 1.000000
   2 [-]: GETGLOBAL R1 K0        ; R1 := 0x0469f296
   3 [-]: LOADK     R2 K1        ; R2 := "Guardian"
   4 [-]: CALL      R1 2 2       ; R1 := R1(R2)
@@ -94,8 +94,8 @@
  46 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  47 [-]: SELF      R4 R4 K12    ; R5 := R4; R4 := R4[0xeade8050]
  48 [-]: GETUPVAL  R6 U0        ; R6 := U0
- 49 [-]: LOADK     R7 33        ; R7 := 33.000000
- 50 [-]: LOADK     R8 1         ; R8 := 1.000000
+ 49 [-]: CONST     R7 34        ; R7 := 34.000000
+ 50 [-]: CONST     R8 2         ; R8 := 2.000000
  51 [-]: GETGLOBAL R9 K15       ; R9 := 0xea32a2f0
  52 [-]: CALL      R4 6 1       ; R4(R5,R6,R7,R8,R9)
  53 [-]: RETURN    R0 1         ; return 
@@ -129,8 +129,8 @@
  17 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  18 [-]: SELF      R3 R3 K5     ; R4 := R3; R3 := R3[0x2722b5c3]
  19 [-]: GETUPVAL  R5 U0        ; R5 := U0
- 20 [-]: LOADK     R6 33        ; R6 := 33.000000
- 21 [-]: LOADK     R7 1         ; R7 := 1.000000
+ 20 [-]: CONST     R6 34        ; R6 := 34.000000
+ 21 [-]: CONST     R7 2         ; R7 := 2.000000
  22 [-]: GETGLOBAL R8 K8        ; R8 := 0xea32a2f0
  23 [-]: CALL      R3 6 1       ; R3(R4,R5,R6,R7,R8)
  24 [-]: SELF      R3 R1 K0     ; R4 := R1; R3 := R1[0xde321e6f]
@@ -223,7 +223,7 @@
  31 [-]: TEST      R2 1         ; if R2 then PC := 39
  32 [-]: JMP       39           ; PC := 39
  33 [-]: SELF      R2 R1 K6     ; R3 := R1; R2 := R1[0x31a3964d]
- 34 [-]: LOADK     R4 41        ; R4 := 41.000000
+ 34 [-]: CONST     R4 41        ; R4 := 41.000000
  35 [-]: GETGLOBAL R5 K8        ; R5 := 0x0469f296
  36 [-]: LOADK     R6 K9        ; R6 := "Guard"
  37 [-]: CALL      R5 2 0       ; R5,... := R5(R6)
@@ -260,9 +260,9 @@
  18 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  19 [-]: TEST      R2 0         ; if not R2 then PC := 23
  20 [-]: JMP       23           ; PC := 23
- 21 [-]: LOADBOOL  R2 1 0       ; R2 := true
+ 21 [-]: LOADKB    R2 1 0       ; R2 := true
  22 [-]: RETURN    R2 2         ; return R2
- 23 [-]: LOADBOOL  R2 0 0       ; R2 := false
+ 23 [-]: LOADKB    R2 0 0       ; R2 := false
  24 [-]: RETURN    R2 2         ; return R2
  25 [-]: RETURN    R0 1         ; return 
 
@@ -299,7 +299,7 @@
  21 [-]: LOADK     R4 K5        ; R4 := "OnDamageBarkCheck"
  22 [-]: CALL      R2 3 1       ; R2(R3,R4)
  23 [-]: LOADNIL   R2 R2        ; R2 := nil
- 24 [-]: LOADBOOL  R3 0 0       ; R3 := false
+ 24 [-]: LOADKB    R3 0 0       ; R3 := false
  25 [-]: GETGLOBAL R4 K0        ; R4 := 0x7b998233
  26 [-]: MOVE      R5 R1        ; R5 := R1
  27 [-]: CALL      R4 2 2       ; R4 := R4(R5)
@@ -333,7 +333,7 @@
  55 [-]: SELF      R5 R5 K10    ; R6 := R5; R5 := R5[0x55481e0d]
  56 [-]: GETUPVAL  R7 U1        ; R7 := U1
  57 [-]: CALL      R5 3 1       ; R5(R6,R7)
- 58 [-]: LOADBOOL  R3 0 0       ; R3 := false
+ 58 [-]: LOADKB    R3 0 0       ; R3 := false
  59 [-]: JMP       85           ; PC := 85
  60 [-]: TEST      R3 1         ; if R3 then PC := 85
  61 [-]: JMP       85           ; PC := 85
@@ -354,14 +354,14 @@
  76 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  77 [-]: SELF      R5 R5 K16    ; R6 := R5; R5 := R5[0xeb3c14da]
  78 [-]: GETUPVAL  R7 U1        ; R7 := U1
- 79 [-]: LOADK     R8 25        ; R8 := 25.000000
- 80 [-]: LOADK     R9 6         ; R9 := 6.000000
- 81 [-]: LOADK     R10 4        ; R10 := 4.000000
+ 79 [-]: CONST     R8 25        ; R8 := 25.000000
+ 80 [-]: CONST     R9 6         ; R9 := 6.000000
+ 81 [-]: CONST     R10 4        ; R10 := 4.000000
  82 [-]: GETGLOBAL R11 K7       ; R11 := 0x79927067
  83 [-]: CALL      R5 7 1       ; R5(R6,R7,R8,R9,R10,R11)
- 84 [-]: LOADBOOL  R3 1 0       ; R3 := true
+ 84 [-]: LOADKB    R3 1 0       ; R3 := true
  85 [-]: GETGLOBAL R5 K18       ; R5 := 0xcbd666e1
- 86 [-]: LOADK     R6 0         ; R6 := 0.000000
+ 86 [-]: CONST     R6 0         ; R6 := 0.000000
  87 [-]: CALL      R5 2 1       ; R5(R6)
  88 [-]: JMP       25           ; PC := 25
  89 [-]: RETURN    R0 1         ; return 

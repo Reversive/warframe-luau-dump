@@ -134,7 +134,7 @@
  11 [-]: GETTABLE  R1 R0 K8     ; R1 := R0["mMovie"]
  12 [-]: SELF      R1 R1 K9     ; R2 := R1; R1 := R1[0x91a24e4b]
  13 [-]: GETTABLE  R3 R0 K10    ; R3 := R0["mClipName"]
- 14 [-]: LOADK     R4 0         ; R4 := 0.000000
+ 14 [-]: CONST     R4 0         ; R4 := 0.000000
  15 [-]: CALL      R1 4 2       ; R1 := R1(R2,R3,R4)
  16 [-]: SETTABLE  R0 K6 R1     ; R0["mInitialX"] := R1
  17 [-]: GETTABLE  R1 R0 K10    ; R1 := R0["mClipName"]
@@ -149,60 +149,60 @@
  26 [-]: SELF      R1 R1 K15    ; R2 := R1; R1 := R1[0xf64b7262]
  27 [-]: GETTABLE  R3 R0 K10    ; R3 := R0["mClipName"]
  28 [-]: LOADK     R4 K16       ; R4 := "Indicator"
- 29 [-]: LOADK     R5 10        ; R5 := 10.000000
- 30 [-]: LOADK     R6 0         ; R6 := 0.000000
+ 29 [-]: CONST     R5 10        ; R5 := 10.000000
+ 30 [-]: CONST     R6 0         ; R6 := 0.000000
  31 [-]: CALL      R1 6 1       ; R1(R2,R3,R4,R5,R6)
  32 [-]: GETTABLE  R1 R0 K8     ; R1 := R0["mMovie"]
  33 [-]: SELF      R1 R1 K15    ; R2 := R1; R1 := R1[0xf64b7262]
  34 [-]: GETTABLE  R3 R0 K10    ; R3 := R0["mClipName"]
  35 [-]: LOADK     R4 K17       ; R4 := "Bg"
- 36 [-]: LOADK     R5 9         ; R5 := 9.000000
+ 36 [-]: CONST     R5 9         ; R5 := 9.000000
  37 [-]: GETTABLE  R6 R0 K18    ; R6 := R0["mBgColor"]
  38 [-]: CALL      R1 6 1       ; R1(R2,R3,R4,R5,R6)
  39 [-]: GETTABLE  R1 R0 K8     ; R1 := R0["mMovie"]
  40 [-]: SELF      R1 R1 K15    ; R2 := R1; R1 := R1[0xf64b7262]
  41 [-]: GETTABLE  R3 R0 K10    ; R3 := R0["mClipName"]
  42 [-]: LOADK     R4 K17       ; R4 := "Bg"
- 43 [-]: LOADK     R5 10        ; R5 := 10.000000
+ 43 [-]: CONST     R5 10        ; R5 := 10.000000
  44 [-]: GETTABLE  R6 R0 K19    ; R6 := R0["mBgAlpha"]
  45 [-]: CALL      R1 6 1       ; R1(R2,R3,R4,R5,R6)
  46 [-]: GETTABLE  R1 R0 K8     ; R1 := R0["mMovie"]
  47 [-]: SELF      R1 R1 K20    ; R2 := R1; R1 := R1[0xc0a3774b]
  48 [-]: GETTABLE  R3 R0 K10    ; R3 := R0["mClipName"]
  49 [-]: LOADK     R4 K21       ; R4 := "InvulnerableBadge"
- 50 [-]: LOADK     R5 11        ; R5 := 11.000000
- 51 [-]: LOADBOOL  R6 0 0       ; R6 := false
+ 50 [-]: CONST     R5 11        ; R5 := 11.000000
+ 51 [-]: LOADKB    R6 0 0       ; R6 := false
  52 [-]: CALL      R1 6 1       ; R1(R2,R3,R4,R5,R6)
  53 [-]: GETTABLE  R1 R0 K8     ; R1 := R0["mMovie"]
  54 [-]: SELF      R1 R1 K15    ; R2 := R1; R1 := R1[0xf64b7262]
  55 [-]: GETTABLE  R3 R0 K10    ; R3 := R0["mClipName"]
  56 [-]: LOADK     R4 K21       ; R4 := "InvulnerableBadge"
- 57 [-]: LOADK     R5 0         ; R5 := 0.000000
+ 57 [-]: CONST     R5 0         ; R5 := 0.000000
  58 [-]: GETTABLE  R6 R0 K22    ; R6 := R0["mWidth"]
  59 [-]: DIV       R6 R6 K23    ; R6 := R6 / 2.000000
  60 [-]: CALL      R1 6 1       ; R1(R2,R3,R4,R5,R6)
  61 [-]: GETTABLE  R1 R0 K8     ; R1 := R0["mMovie"]
  62 [-]: SELF      R1 R1 K24    ; R2 := R1; R1 := R1[0x67bc869f]
  63 [-]: GETTABLE  R3 R0 K11    ; R3 := R0["mHealthClip"]
- 64 [-]: LOADK     R4 9         ; R4 := 9.000000
+ 64 [-]: CONST     R4 9         ; R4 := 9.000000
  65 [-]: GETTABLE  R5 R0 K25    ; R5 := R0["mHealthColor"]
  66 [-]: CALL      R1 5 1       ; R1(R2,R3,R4,R5)
  67 [-]: GETTABLE  R1 R0 K8     ; R1 := R0["mMovie"]
  68 [-]: SELF      R1 R1 K24    ; R2 := R1; R1 := R1[0x67bc869f]
  69 [-]: GETTABLE  R3 R0 K11    ; R3 := R0["mHealthClip"]
- 70 [-]: LOADK     R4 10        ; R4 := 10.000000
+ 70 [-]: CONST     R4 10        ; R4 := 10.000000
  71 [-]: GETTABLE  R5 R0 K26    ; R5 := R0["mHealthAlpha"]
  72 [-]: CALL      R1 5 1       ; R1(R2,R3,R4,R5)
  73 [-]: GETTABLE  R1 R0 K8     ; R1 := R0["mMovie"]
  74 [-]: SELF      R1 R1 K24    ; R2 := R1; R1 := R1[0x67bc869f]
  75 [-]: GETTABLE  R3 R0 K13    ; R3 := R0["mShieldClip"]
- 76 [-]: LOADK     R4 9         ; R4 := 9.000000
+ 76 [-]: CONST     R4 9         ; R4 := 9.000000
  77 [-]: GETTABLE  R5 R0 K27    ; R5 := R0["mShieldColor"]
  78 [-]: CALL      R1 5 1       ; R1(R2,R3,R4,R5)
  79 [-]: GETTABLE  R1 R0 K8     ; R1 := R0["mMovie"]
  80 [-]: SELF      R1 R1 K24    ; R2 := R1; R1 := R1[0x67bc869f]
  81 [-]: GETTABLE  R3 R0 K13    ; R3 := R0["mShieldClip"]
- 82 [-]: LOADK     R4 10        ; R4 := 10.000000
+ 82 [-]: CONST     R4 10        ; R4 := 10.000000
  83 [-]: GETTABLE  R5 R0 K28    ; R5 := R0["mShieldAlpha"]
  84 [-]: CALL      R1 5 1       ; R1(R2,R3,R4,R5)
  85 [-]: LOADK     R1 K29       ; R1 := "Noto Sans"
@@ -224,7 +224,7 @@
 101 [-]: GETTABLE  R7 R0 K8     ; R7 := R0["mMovie"]
 102 [-]: SELF      R7 R7 K40    ; R8 := R7; R7 := R7[0x42b04007]
 103 [-]: LOADK     R9 K41       ; R9 := "/Lotus/Language/Menu/PlayerBeingRevived"
-104 [-]: LOADBOOL  R10 1 0      ; R10 := true
+104 [-]: LOADKB    R10 1 0      ; R10 := true
 105 [-]: CALL      R7 4 2       ; R7 := R7(R8,R9,R10)
 106 [-]: LOADK     R8 K42       ; R8 := "</font><font face=\"Noto Sans\"><b> %s%%</b></font></p>"
 107 [-]: CONCAT    R2 R2 R8     ; R2 := R2 .. R3 .. R4 .. R5 .. R6 .. R7 .. R8
@@ -241,12 +241,12 @@
 118 [-]: GETTABLE  R7 R0 K8     ; R7 := R0["mMovie"]
 119 [-]: SELF      R7 R7 K40    ; R8 := R7; R7 := R7[0x42b04007]
 120 [-]: LOADK     R9 K45       ; R9 := "/Lotus/Language/Game/DeadPlayer"
-121 [-]: LOADBOOL  R10 1 0      ; R10 := true
+121 [-]: LOADKB    R10 1 0      ; R10 := true
 122 [-]: CALL      R7 4 2       ; R7 := R7(R8,R9,R10)
 123 [-]: LOADK     R8 K46       ; R8 := "</b></font></p>"
 124 [-]: CONCAT    R2 R2 R8     ; R2 := R2 .. R3 .. R4 .. R5 .. R6 .. R7 .. R8
 125 [-]: SETTABLE  R0 K43 R2    ; R0["mDeadString"] := R2
-126 [-]: LOADBOOL  R2 1 0       ; R2 := true
+126 [-]: LOADKB    R2 1 0       ; R2 := true
 127 [-]: GETGLOBAL R3 K47       ; R3 := 0x7b998233
 128 [-]: GETTABLE  R4 R0 K48    ; R4 := R0["mAvatar"]
 129 [-]: CALL      R3 2 2       ; R3 := R3(R4)
@@ -264,7 +264,7 @@
 141 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
 142 [-]: TEST      R3 1         ; if R3 then PC := 145
 143 [-]: JMP       145          ; PC := 145
-144 [-]: LOADBOOL  R2 0 0       ; R2 := false
+144 [-]: LOADKB    R2 0 0       ; R2 := false
 145 [-]: TEST      R2 0         ; if not R2 then PC := 165
 146 [-]: JMP       165          ; PC := 165
 147 [-]: LOADK     R3 K34       ; R3 := "<p><font face=\""
@@ -279,7 +279,7 @@
 156 [-]: GETTABLE  R8 R0 K8     ; R8 := R0["mMovie"]
 157 [-]: SELF      R8 R8 K40    ; R9 := R8; R8 := R8[0x42b04007]
 158 [-]: LOADK     R10 K53      ; R10 := "/Lotus/Language/Menu/PlayerDown"
-159 [-]: LOADBOOL  R11 1 0      ; R11 := true
+159 [-]: LOADKB    R11 1 0      ; R11 := true
 160 [-]: CALL      R8 4 2       ; R8 := R8(R9,R10,R11)
 161 [-]: LOADK     R9 K54       ; R9 := "</font>"
 162 [-]: CONCAT    R3 R3 R9     ; R3 := R3 .. R4 .. R5 .. R6 .. R7 .. R8 .. R9
@@ -377,7 +377,7 @@
 254 [-]: GETTABLE  R5 R0 K8     ; R5 := R0["mMovie"]
 255 [-]: SELF      R5 R5 K24    ; R6 := R5; R5 := R5[0x67bc869f]
 256 [-]: GETTABLE  R7 R0 K10    ; R7 := R0["mClipName"]
-257 [-]: LOADK     R8 0         ; R8 := 0.000000
+257 [-]: CONST     R8 0         ; R8 := 0.000000
 258 [-]: GETTABLE  R9 R0 K6     ; R9 := R0["mInitialX"]
 259 [-]: GETTABLE  R10 R0 K22   ; R10 := R0["mWidth"]
 260 [-]: SUB       R9 R9 R10    ; R9 := R9 - R10
@@ -386,20 +386,20 @@
 263 [-]: GETTABLE  R5 R0 K8     ; R5 := R0["mMovie"]
 264 [-]: SELF      R5 R5 K24    ; R6 := R5; R5 := R5[0x67bc869f]
 265 [-]: GETTABLE  R7 R0 K11    ; R7 := R0["mHealthClip"]
-266 [-]: LOADK     R8 0         ; R8 := 0.000000
+266 [-]: CONST     R8 0         ; R8 := 0.000000
 267 [-]: GETTABLE  R9 R0 K22    ; R9 := R0["mWidth"]
 268 [-]: CALL      R5 5 1       ; R5(R6,R7,R8,R9)
 269 [-]: GETTABLE  R5 R0 K8     ; R5 := R0["mMovie"]
 270 [-]: SELF      R5 R5 K24    ; R6 := R5; R5 := R5[0x67bc869f]
 271 [-]: GETTABLE  R7 R0 K11    ; R7 := R0["mHealthClip"]
-272 [-]: LOADK     R8 1         ; R8 := 1.000000
-273 [-]: LOADK     R9 0         ; R9 := 0.500000
+272 [-]: CONST     R8 1         ; R8 := 1.000000
+273 [-]: CONST     R9 0         ; R9 := 0.500000
 274 [-]: CALL      R5 5 1       ; R5(R6,R7,R8,R9)
 275 [-]: GETTABLE  R5 R0 K8     ; R5 := R0["mMovie"]
 276 [-]: SELF      R5 R5 K15    ; R6 := R5; R5 := R5[0xf64b7262]
 277 [-]: GETTABLE  R7 R0 K10    ; R7 := R0["mClipName"]
 278 [-]: LOADK     R8 K17       ; R8 := "Bg"
-279 [-]: LOADK     R9 5         ; R9 := 5.000000
+279 [-]: CONST     R9 5         ; R9 := 5.000000
 280 [-]: GETTABLE  R10 R0 K22   ; R10 := R0["mWidth"]
 281 [-]: CALL      R5 6 1       ; R5(R6,R7,R8,R9,R10)
 282 [-]: GETTABLE  R5 R0 K76    ; R5 := R0["mTextField"]
@@ -408,7 +408,7 @@
 285 [-]: GETTABLE  R5 R0 K8     ; R5 := R0["mMovie"]
 286 [-]: SELF      R5 R5 K77    ; R6 := R5; R5 := R5[0x5f56eeab]
 287 [-]: GETTABLE  R7 R0 K76    ; R7 := R0["mTextField"]
-288 [-]: LOADK     R8 29        ; R8 := 29.000000
+288 [-]: CONST     R8 29        ; R8 := 29.000000
 289 [-]: LOADK     R9 K66       ; R9 := ""
 290 [-]: CALL      R5 5 1       ; R5(R6,R7,R8,R9)
 291 [-]: GETTABLE  R5 R0 K78    ; R5 := R0["mAlternateReviveTextField"]
@@ -417,7 +417,7 @@
 294 [-]: GETTABLE  R5 R0 K8     ; R5 := R0["mMovie"]
 295 [-]: SELF      R5 R5 K77    ; R6 := R5; R5 := R5[0x5f56eeab]
 296 [-]: GETTABLE  R7 R0 K78    ; R7 := R0["mAlternateReviveTextField"]
-297 [-]: LOADK     R8 29        ; R8 := 29.000000
+297 [-]: CONST     R8 29        ; R8 := 29.000000
 298 [-]: LOADK     R9 K66       ; R9 := ""
 299 [-]: CALL      R5 5 1       ; R5(R6,R7,R8,R9)
 300 [-]: SETTABLE  R0 K79 K80   ; R0["mHealth"] := -1.000000
@@ -433,8 +433,8 @@
 310 [-]: GETTABLE  R5 R0 K8     ; R5 := R0["mMovie"]
 311 [-]: SELF      R5 R5 K91    ; R6 := R5; R5 := R5[0xaade900e]
 312 [-]: LOADK     R7 K92       ; R7 := "HealthAndShield.StaminaBar"
-313 [-]: LOADK     R8 11        ; R8 := 11.000000
-314 [-]: LOADBOOL  R9 0 0       ; R9 := false
+313 [-]: CONST     R8 11        ; R8 := 11.000000
+314 [-]: LOADKB    R9 0 0       ; R9 := false
 315 [-]: CALL      R5 5 1       ; R5(R6,R7,R8,R9)
 316 [-]: SETTABLE  R0 K93 K1    ; R0["mSkipNextDamageNotification"] := true
 317 [-]: SETTABLE  R0 K94 K85   ; R0["mIsDefenseTarget"] := false
@@ -472,8 +472,8 @@
 ; Is_vararg:       0
 ; Max Stack Size:  12
 
-  1 [-]: LOADK     R1 0         ; R1 := 0.000000
-  2 [-]: LOADK     R2 0         ; R2 := 0.000000
+  1 [-]: CONST     R1 0         ; R1 := 0.000000
+  2 [-]: CONST     R2 0         ; R2 := 0.000000
   3 [-]: GETTABLE  R3 R0 K0     ; R3 := R0["mOverrideGetMaxHealth"]
   4 [-]: EQ        1 R3 K1      ; if R3 == nil then PC := 10
   5 [-]: JMP       10           ; PC := 10
@@ -532,16 +532,16 @@
  58 [-]: GETTABLE  R7 R0 K17    ; R7 := R0["mMovie"]
  59 [-]: SELF      R7 R7 K18    ; R8 := R7; R7 := R7[0x67bc869f]
  60 [-]: GETTABLE  R9 R0 K19    ; R9 := R0["mShieldClip"]
- 61 [-]: LOADK     R10 0        ; R10 := 0.000000
+ 61 [-]: CONST     R10 0        ; R10 := 0.000000
  62 [-]: MOVE      R11 R6       ; R11 := R6
  63 [-]: CALL      R7 5 1       ; R7(R8,R9,R10,R11)
- 64 [-]: LOADBOOL  R7 1 0       ; R7 := true
+ 64 [-]: LOADKB    R7 1 0       ; R7 := true
  65 [-]: MOVE      R8 R3        ; R8 := R3
  66 [-]: MOVE      R9 R4        ; R9 := R4
  67 [-]: RETURN    R7 4         ; return R7,R8,R9
- 68 [-]: LOADBOOL  R7 0 0       ; R7 := false
- 69 [-]: LOADK     R8 0         ; R8 := 0.000000
- 70 [-]: LOADK     R9 0         ; R9 := 0.000000
+ 68 [-]: LOADKB    R7 0 0       ; R7 := false
+ 69 [-]: CONST     R8 0         ; R8 := 0.000000
+ 70 [-]: CONST     R9 0         ; R9 := 0.000000
  71 [-]: RETURN    R7 4         ; return R7,R8,R9
  72 [-]: RETURN    R0 1         ; return 
 
@@ -566,12 +566,12 @@
   9 [-]: JMP       13           ; PC := 13
  10 [-]: SELF      R2 R1 K4     ; R3 := R1; R2 := R1[0x32316a21]
  11 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 12 [-]: SETTABLE  R0 K0 R2     ; R0["mIsPvp"] := R2
+ 12 [-]: SETTABLE  R0 K0 R2     ; R0[0xf64b7262] := R2
  13 [-]: GETTABLE  R2 R0 K0     ; R2 := R0["mIsPvp"]
  14 [-]: EQ        1 R2 K5      ; if R2 == true then PC := 17
  15 [-]: JMP       17           ; PC := 17
- 16 [-]: LOADBOOL  R2 0 1       ; R2 := false; PC := 17
- 17 [-]: LOADBOOL  R2 1 0       ; R2 := true
+ 16 [-]: LOADKB    R2 0 1       ; R2 := false; PC := 17
+ 17 [-]: LOADKB    R2 1 0       ; R2 := true
  18 [-]: RETURN    R2 2         ; return R2
  19 [-]: RETURN    R0 1         ; return 
 
@@ -593,8 +593,8 @@
   6 [-]: GETTABLE  R1 R0 K2     ; R1 := R0["mOverrideGetHealth"]
   7 [-]: EQ        0 R1 K3      ; if R1 ~= nil then PC := 10
   8 [-]: JMP       10           ; PC := 10
-  9 [-]: LOADBOOL  R1 0 1       ; R1 := false; PC := 10
- 10 [-]: LOADBOOL  R1 1 0       ; R1 := true
+  9 [-]: LOADKB    R1 0 1       ; R1 := false; PC := 10
+ 10 [-]: LOADKB    R1 1 0       ; R1 := true
  11 [-]: TEST      R1 0         ; if not R1 then PC := 40
  12 [-]: JMP       40           ; PC := 40
  13 [-]: GETTABLE  R2 R0 K4     ; R2 := R0["mOverrideGetShield"]
@@ -620,10 +620,10 @@
  33 [-]: LOADK     R5 K9        ; R5 := "/EE/Types/Game/NullDamageController"
  34 [-]: CALL      R4 2 0       ; R4,... := R4(R5)
  35 [-]: CALL      R2 0 2       ; R2 := R2(R3,...)
- 36 [-]: NOT       R1 R2        ; R1 := not R2
+ 36 [-]: NOT       R1 R2        ; R1 :=  R2
  37 [-]: JMP       40           ; PC := 40
- 38 [-]: LOADBOOL  R1 0 1       ; R1 := false; PC := 39
- 39 [-]: LOADBOOL  R1 1 0       ; R1 := true
+ 38 [-]: LOADKB    R1 0 1       ; R1 := false; PC := 39
+ 39 [-]: LOADKB    R1 1 0       ; R1 := true
  40 [-]: TEST      R1 0         ; if not R1 then PC := 548
  41 [-]: JMP       548          ; PC := 548
  42 [-]: GETTABLE  R2 R0 K10    ; R2 := R0["mInitialized"]
@@ -639,17 +639,17 @@
  52 [-]: GETTABLE  R5 R0 K15    ; R5 := R0["mMaxShield"]
  53 [-]: LT        1 K14 R5     ; if 0.000000 < R5 then PC := 56
  54 [-]: JMP       56           ; PC := 56
- 55 [-]: LOADBOOL  R1 0 1       ; R1 := false; PC := 56
- 56 [-]: LOADBOOL  R1 1 0       ; R1 := true
+ 55 [-]: LOADKB    R1 0 1       ; R1 := false; PC := 56
+ 56 [-]: LOADKB    R1 1 0       ; R1 := true
  57 [-]: TEST      R1 0         ; if not R1 then PC := 548
  58 [-]: JMP       548          ; PC := 548
- 59 [-]: LOADK     R5 0         ; R5 := 0.000000
- 60 [-]: LOADK     R6 0         ; R6 := 0.000000
- 61 [-]: LOADK     R7 0         ; R7 := 0.000000
- 62 [-]: LOADBOOL  R8 0 0       ; R8 := false
- 63 [-]: LOADBOOL  R9 0 0       ; R9 := false
- 64 [-]: LOADBOOL  R10 0 0      ; R10 := false
- 65 [-]: LOADBOOL  R11 0 0      ; R11 := false
+ 59 [-]: CONST     R5 0         ; R5 := 0.000000
+ 60 [-]: CONST     R6 0         ; R6 := 0.000000
+ 61 [-]: CONST     R7 0         ; R7 := 0.000000
+ 62 [-]: LOADKB    R8 0 0       ; R8 := false
+ 63 [-]: LOADKB    R9 0 0       ; R9 := false
+ 64 [-]: LOADKB    R10 0 0      ; R10 := false
+ 65 [-]: LOADKB    R11 0 0      ; R11 := false
  66 [-]: GETGLOBAL R12 K0       ; R12 := 0x7b998233
  67 [-]: GETTABLE  R13 R0 K5    ; R13 := R0["mDamageControl"]
  68 [-]: CALL      R12 2 2      ; R12 := R12(R13)
@@ -688,8 +688,8 @@
 101 [-]: CALL      R12 2 2      ; R12 := R12(R13)
 102 [-]: LT        1 K14 R12    ; if 0.000000 < R12 then PC := 105
 103 [-]: JMP       105          ; PC := 105
-104 [-]: LOADBOOL  R10 0 1      ; R10 := false; PC := 105
-105 [-]: LOADBOOL  R10 1 0      ; R10 := true
+104 [-]: LOADKB    R10 0 1      ; R10 := false; PC := 105
+105 [-]: LOADKB    R10 1 0      ; R10 := true
 106 [-]: GETTABLE  R12 R0 K5    ; R12 := R0["mDamageControl"]
 107 [-]: SELF      R12 R12 K24  ; R13 := R12; R12 := R12[0x68d1b91d]
 108 [-]: CALL      R12 2 2      ; R12 := R12(R13)
@@ -700,8 +700,8 @@
 113 [-]: GETTABLE  R13 R13 K27  ; R13 := R13["UI_MODE_IN_DOJO"]
 114 [-]: EQ        0 R12 R13    ; if R12 ~= R13 then PC := 117
 115 [-]: JMP       117          ; PC := 117
-116 [-]: LOADBOOL  R11 0 1      ; R11 := false; PC := 117
-117 [-]: LOADBOOL  R11 1 0      ; R11 := true
+116 [-]: LOADKB    R11 0 1      ; R11 := false; PC := 117
+117 [-]: LOADKB    R11 1 0      ; R11 := true
 118 [-]: TEST      R8 1         ; if R8 then PC := 154
 119 [-]: JMP       154          ; PC := 154
 120 [-]: GETTABLE  R12 R0 K2    ; R12 := R0["mOverrideGetHealth"]
@@ -729,13 +729,13 @@
 142 [-]: GETGLOBAL R12 K19      ; R12 := 0x5bced4c4
 143 [-]: GETTABLE  R12 R12 K32  ; R12 := R12[0xb62ecfe0]
 144 [-]: MOVE      R13 R5       ; R13 := R5
-145 [-]: LOADK     R14 0        ; R14 := 0.000000
+145 [-]: CONST     R14 0        ; R14 := 0.000000
 146 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
 147 [-]: MOVE      R5 R12       ; R5 := R12
 148 [-]: GETGLOBAL R12 K19      ; R12 := 0x5bced4c4
 149 [-]: GETTABLE  R12 R12 K32  ; R12 := R12[0xb62ecfe0]
 150 [-]: MOVE      R13 R6       ; R13 := R6
-151 [-]: LOADK     R14 0        ; R14 := 0.000000
+151 [-]: CONST     R14 0        ; R14 := 0.000000
 152 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
 153 [-]: MOVE      R6 R12       ; R6 := R12
 154 [-]: GETTABLE  R12 R0 K33   ; R12 := R0["UTIL"]
@@ -754,7 +754,7 @@
 167 [-]: GETTABLE  R13 R0 K38   ; R13 := R0["mMovie"]
 168 [-]: SELF      R13 R13 K39  ; R14 := R13; R13 := R13[0x67bc869f]
 169 [-]: GETTABLE  R15 R0 K40   ; R15 := R0["mHealthClip"]
-170 [-]: LOADK     R16 9        ; R16 := 9.000000
+170 [-]: CONST     R16 9        ; R16 := 9.000000
 171 [-]: MOVE      R17 R12      ; R17 := R12
 172 [-]: CALL      R13 5 1      ; R13(R14,R15,R16,R17)
 173 [-]: GETTABLE  R13 R0 K41   ; R13 := R0["mIsInvulnerable"]
@@ -764,7 +764,7 @@
 177 [-]: SELF      R13 R13 K42  ; R14 := R13; R13 := R13[0xc0a3774b]
 178 [-]: GETTABLE  R15 R0 K43   ; R15 := R0["mClipName"]
 179 [-]: LOADK     R16 K44      ; R16 := "InvulnerableBadge"
-180 [-]: LOADK     R17 11       ; R17 := 11.000000
+180 [-]: CONST     R17 11       ; R17 := 11.000000
 181 [-]: MOVE      R18 R11      ; R18 := R11
 182 [-]: CALL      R13 6 1      ; R13(R14,R15,R16,R17,R18)
 183 [-]: TEST      R2 1         ; if R2 then PC := 199
@@ -789,7 +789,7 @@
 202 [-]: GETTABLE  R14 R0 K46   ; R14 := R0["mShield"]
 203 [-]: SUB       R14 R6 R14   ; R14 := R6 - R14
 204 [-]: SUB       R14 R14 R4   ; R14 := R14 - R4
-205 [-]: LOADK     R15 0        ; R15 := 0.000000
+205 [-]: CONST     R15 0        ; R15 := 0.000000
 206 [-]: GETTABLE  R16 R0 K48   ; R16 := R0["mIsDefenseTarget"]
 207 [-]: TEST      R16 0        ; if not R16 then PC := 233
 208 [-]: JMP       233          ; PC := 233
@@ -851,7 +851,7 @@
 264 [-]: GETTABLE  R22 R0 K38   ; R22 := R0["mMovie"]
 265 [-]: SELF      R22 R22 K39  ; R23 := R22; R22 := R22[0x67bc869f]
 266 [-]: GETTABLE  R24 R0 K40   ; R24 := R0["mHealthClip"]
-267 [-]: LOADK     R25 9        ; R25 := 9.000000
+267 [-]: CONST     R25 9        ; R25 := 9.000000
 268 [-]: MOVE      R26 R12      ; R26 := R12
 269 [-]: CALL      R22 5 1      ; R22(R23,R24,R25,R26)
 270 [-]: GETTABLE  R22 R0 K60   ; R22 := R0["mShieldColor"]
@@ -866,7 +866,7 @@
 279 [-]: GETTABLE  R23 R0 K38   ; R23 := R0["mMovie"]
 280 [-]: SELF      R23 R23 K39  ; R24 := R23; R23 := R23[0x67bc869f]
 281 [-]: GETTABLE  R25 R0 K63   ; R25 := R0["mShieldClip"]
-282 [-]: LOADK     R26 9        ; R26 := 9.000000
+282 [-]: CONST     R26 9        ; R26 := 9.000000
 283 [-]: MOVE      R27 R22      ; R27 := R22
 284 [-]: CALL      R23 5 1      ; R23(R24,R25,R26,R27)
 285 [-]: GETTABLE  R23 R0 K64   ; R23 := R0["mTextField"]
@@ -928,8 +928,8 @@
 341 [-]: GETTABLE  R29 R29 K34  ; R29 := R29[0x06d055f9]
 342 [-]: LE        1 K75 R25    ; if 10.000000 <= R25 then PC := 345
 343 [-]: JMP       345          ; PC := 345
-344 [-]: LOADBOOL  R30 0 1      ; R30 := false; PC := 345
-345 [-]: LOADBOOL  R30 1 0      ; R30 := true
+344 [-]: LOADKB    R30 0 1      ; R30 := false; PC := 345
+345 [-]: LOADKB    R30 1 0      ; R30 := true
 346 [-]: MOVE      R31 R25      ; R31 := R25
 347 [-]: LOADK     R32 K76      ; R32 := "0"
 348 [-]: MOVE      R33 R25      ; R33 := R25
@@ -939,8 +939,8 @@
 352 [-]: GETTABLE  R30 R30 K34  ; R30 := R30[0x06d055f9]
 353 [-]: LE        1 K75 R26    ; if 10.000000 <= R26 then PC := 356
 354 [-]: JMP       356          ; PC := 356
-355 [-]: LOADBOOL  R31 0 1      ; R31 := false; PC := 356
-356 [-]: LOADBOOL  R31 1 0      ; R31 := true
+355 [-]: LOADKB    R31 0 1      ; R31 := false; PC := 356
+356 [-]: LOADKB    R31 1 0      ; R31 := true
 357 [-]: MOVE      R32 R26      ; R32 := R26
 358 [-]: LOADK     R33 K76      ; R33 := "0"
 359 [-]: MOVE      R34 R26      ; R34 := R26
@@ -996,7 +996,7 @@
 409 [-]: GETTABLE  R28 R0 K38   ; R28 := R0["mMovie"]
 410 [-]: SELF      R28 R28 K84  ; R29 := R28; R28 := R28[0x5f56eeab]
 411 [-]: GETTABLE  R30 R0 K83   ; R30 := R0["mAlternateReviveTextField"]
-412 [-]: LOADK     R31 29       ; R31 := 29.000000
+412 [-]: CONST     R31 29       ; R31 := 29.000000
 413 [-]: MOVE      R32 R23      ; R32 := R23
 414 [-]: CALL      R28 5 1      ; R28(R29,R30,R31,R32)
 415 [-]: SETTABLE  R0 K85 K86   ; R0["mShowingAlternateText"] := true
@@ -1008,14 +1008,14 @@
 421 [-]: GETTABLE  R28 R0 K38   ; R28 := R0["mMovie"]
 422 [-]: SELF      R28 R28 K84  ; R29 := R28; R28 := R28[0x5f56eeab]
 423 [-]: GETTABLE  R30 R0 K83   ; R30 := R0["mAlternateReviveTextField"]
-424 [-]: LOADK     R31 29       ; R31 := 29.000000
+424 [-]: CONST     R31 29       ; R31 := 29.000000
 425 [-]: LOADK     R32 K78      ; R32 := ""
 426 [-]: CALL      R28 5 1      ; R28(R29,R30,R31,R32)
 427 [-]: SETTABLE  R0 K85 K87   ; R0["mShowingAlternateText"] := false
 428 [-]: GETTABLE  R28 R0 K38   ; R28 := R0["mMovie"]
 429 [-]: SELF      R28 R28 K84  ; R29 := R28; R28 := R28[0x5f56eeab]
 430 [-]: GETTABLE  R30 R0 K64   ; R30 := R0["mTextField"]
-431 [-]: LOADK     R31 29       ; R31 := 29.000000
+431 [-]: CONST     R31 29       ; R31 := 29.000000
 432 [-]: MOVE      R32 R23      ; R32 := R23
 433 [-]: CALL      R28 5 1      ; R28(R29,R30,R31,R32)
 434 [-]: GETGLOBAL R28 K88      ; R28 := 0x42dcc9f5
@@ -1027,7 +1027,7 @@
 440 [-]: GETTABLE  R31 R0 K89   ; R31 := R0["mHealthMaxWidth"]
 441 [-]: MUL       R30 R30 R31  ; R30 := R30 * R31
 442 [-]: CALL      R29 2 2      ; R29 := R29(R30)
-443 [-]: LOADK     R30 0        ; R30 := 0.000000
+443 [-]: CONST     R30 0        ; R30 := 0.000000
 444 [-]: GETTABLE  R31 R0 K89   ; R31 := R0["mHealthMaxWidth"]
 445 [-]: CALL      R28 4 2      ; R28 := R28(R29,R30,R31)
 446 [-]: GETGLOBAL R29 K88      ; R29 := 0x42dcc9f5
@@ -1039,19 +1039,19 @@
 452 [-]: GETTABLE  R32 R0 K90   ; R32 := R0["mShieldMaxWidth"]
 453 [-]: MUL       R31 R31 R32  ; R31 := R31 * R32
 454 [-]: CALL      R30 2 2      ; R30 := R30(R31)
-455 [-]: LOADK     R31 0        ; R31 := 0.000000
+455 [-]: CONST     R31 0        ; R31 := 0.000000
 456 [-]: GETTABLE  R32 R0 K90   ; R32 := R0["mShieldMaxWidth"]
 457 [-]: CALL      R29 4 2      ; R29 := R29(R30,R31,R32)
 458 [-]: GETTABLE  R30 R0 K33   ; R30 := R0["UTIL"]
 459 [-]: GETTABLE  R30 R30 K34  ; R30 := R30[0x06d055f9]
 460 [-]: GETTABLE  R31 R0 K80   ; R31 := R0["mRightAligned"]
-461 [-]: LOADK     R32 -1       ; R32 := -1.000000
-462 [-]: LOADK     R33 1        ; R33 := 1.000000
+461 [-]: CONST     R32 -1       ; R32 := -1.000000
+462 [-]: CONST     R33 1        ; R33 := 1.000000
 463 [-]: CALL      R30 4 2      ; R30 := R30(R31,R32,R33)
 464 [-]: GETTABLE  R31 R0 K38   ; R31 := R0["mMovie"]
 465 [-]: SELF      R31 R31 K39  ; R32 := R31; R31 := R31[0x67bc869f]
 466 [-]: GETTABLE  R33 R0 K40   ; R33 := R0["mHealthClip"]
-467 [-]: LOADK     R34 5        ; R34 := 5.000000
+467 [-]: CONST     R34 5        ; R34 := 5.000000
 468 [-]: GETGLOBAL R35 K19      ; R35 := 0x5bced4c4
 469 [-]: GETTABLE  R35 R35 K32  ; R35 := R35[0xb62ecfe0]
 470 [-]: MOVE      R36 R28      ; R36 := R28
@@ -1062,7 +1062,7 @@
 475 [-]: GETTABLE  R31 R0 K38   ; R31 := R0["mMovie"]
 476 [-]: SELF      R31 R31 K39  ; R32 := R31; R31 := R31[0x67bc869f]
 477 [-]: GETTABLE  R33 R0 K63   ; R33 := R0["mShieldClip"]
-478 [-]: LOADK     R34 5        ; R34 := 5.000000
+478 [-]: CONST     R34 5        ; R34 := 5.000000
 479 [-]: GETGLOBAL R35 K19      ; R35 := 0x5bced4c4
 480 [-]: GETTABLE  R35 R35 K32  ; R35 := R35[0xb62ecfe0]
 481 [-]: MOVE      R36 R29      ; R36 := R29
@@ -1077,9 +1077,9 @@
 490 [-]: GETTABLE  R31 R0 K92   ; R31 := R0["mSkipNextDamageNotification"]
 491 [-]: TEST      R31 1        ; if R31 then PC := 547
 492 [-]: JMP       547          ; PC := 547
-493 [-]: LOADK     R31 0        ; R31 := 0.000000
-494 [-]: LOADK     R32 0        ; R32 := 0.000000
-495 [-]: LOADK     R33 0        ; R33 := 0.000000
+493 [-]: CONST     R31 0        ; R31 := 0.000000
+494 [-]: CONST     R32 0        ; R32 := 0.000000
+495 [-]: CONST     R33 0        ; R33 := 0.000000
 496 [-]: LT        0 R13 K14    ; if R13 >= 0.000000 then PC := 514
 497 [-]: JMP       514          ; PC := 514
 498 [-]: GETTABLE  R31 R0 K36   ; R31 := R0["mHealthColor"]
@@ -1087,13 +1087,13 @@
 500 [-]: GETGLOBAL R34 K88      ; R34 := 0x42dcc9f5
 501 [-]: GETTABLE  R35 R0 K33   ; R35 := R0["UTIL"]
 502 [-]: GETTABLE  R35 R35 K69  ; R35 := R35[0x74a11ec6]
-503 [-]: UNM       R36 R13      ; R36 := ^ R13
+503 [-]: UNM       R36 R13      ; R36 :=  R13
 504 [-]: GETTABLE  R37 R0 K13   ; R37 := R0["mMaxHealth"]
 505 [-]: DIV       R36 R36 R37  ; R36 := R36 / R37
 506 [-]: GETTABLE  R37 R0 K89   ; R37 := R0["mHealthMaxWidth"]
 507 [-]: MUL       R36 R36 R37  ; R36 := R36 * R37
 508 [-]: CALL      R35 2 2      ; R35 := R35(R36)
-509 [-]: LOADK     R36 1        ; R36 := 1.000000
+509 [-]: CONST     R36 1        ; R36 := 1.000000
 510 [-]: GETTABLE  R37 R0 K89   ; R37 := R0["mHealthMaxWidth"]
 511 [-]: CALL      R34 4 2      ; R34 := R34(R35,R36,R37)
 512 [-]: MOVE      R33 R34      ; R33 := R34
@@ -1104,13 +1104,13 @@
 517 [-]: GETGLOBAL R34 K88      ; R34 := 0x42dcc9f5
 518 [-]: GETTABLE  R35 R0 K33   ; R35 := R0["UTIL"]
 519 [-]: GETTABLE  R35 R35 K69  ; R35 := R35[0x74a11ec6]
-520 [-]: UNM       R36 R14      ; R36 := ^ R14
+520 [-]: UNM       R36 R14      ; R36 :=  R14
 521 [-]: GETTABLE  R37 R0 K15   ; R37 := R0["mMaxShield"]
 522 [-]: DIV       R36 R36 R37  ; R36 := R36 / R37
 523 [-]: GETTABLE  R37 R0 K90   ; R37 := R0["mShieldMaxWidth"]
 524 [-]: MUL       R36 R36 R37  ; R36 := R36 * R37
 525 [-]: CALL      R35 2 2      ; R35 := R35(R36)
-526 [-]: LOADK     R36 1        ; R36 := 1.000000
+526 [-]: CONST     R36 1        ; R36 := 1.000000
 527 [-]: GETTABLE  R37 R0 K90   ; R37 := R0["mShieldMaxWidth"]
 528 [-]: CALL      R34 4 2      ; R34 := R34(R35,R36,R37)
 529 [-]: MOVE      R33 R34      ; R33 := R34
@@ -1139,13 +1139,13 @@
 552 [-]: GETTABLE  R34 R0 K38   ; R34 := R0["mMovie"]
 553 [-]: SELF      R34 R34 K98  ; R35 := R34; R34 := R34[0xaade900e]
 554 [-]: GETTABLE  R36 R0 K43   ; R36 := R0["mClipName"]
-555 [-]: LOADK     R37 11       ; R37 := 11.000000
+555 [-]: CONST     R37 11       ; R37 := 11.000000
 556 [-]: MOVE      R38 R1       ; R38 := R1
 557 [-]: CALL      R34 5 1      ; R34(R35,R36,R37,R38)
 558 [-]: GETTABLE  R34 R0 K38   ; R34 := R0["mMovie"]
 559 [-]: SELF      R34 R34 K98  ; R35 := R34; R34 := R34[0xaade900e]
 560 [-]: GETTABLE  R36 R0 K64   ; R36 := R0["mTextField"]
-561 [-]: LOADK     R37 11       ; R37 := 11.000000
+561 [-]: CONST     R37 11       ; R37 := 11.000000
 562 [-]: MOVE      R38 R1       ; R38 := R1
 563 [-]: CALL      R34 5 1      ; R34(R35,R36,R37,R38)
 564 [-]: RETURN    R0 1         ; return 
@@ -1160,9 +1160,9 @@
 ; Is_vararg:       0
 ; Max Stack Size:  20
 
-  1 [-]: LOADK     R5 1         ; R5 := 1.000000
-  2 [-]: LOADK     R6 20        ; R6 := 20.000000
-  3 [-]: LOADK     R7 1         ; R7 := 1.000000
+  1 [-]: CONST     R5 1         ; R5 := 1.000000
+  2 [-]: CONST     R6 20        ; R6 := 20.000000
+  3 [-]: CONST     R7 1         ; R7 := 1.000000
   4 [-]: FORPREP   R5 11        ; R5 -= R7; PC := 11
   5 [-]: GETTABLE  R9 R0 K0     ; R9 := R0["mIndicators"]
   6 [-]: GETTABLE  R9 R9 R8     ; R9 := R9[R8]
@@ -1200,31 +1200,31 @@
  38 [-]: GETTABLE  R11 R0 K4    ; R11 := R0["mMovie"]
  39 [-]: SELF      R11 R11 K10  ; R12 := R11; R11 := R11[0x67bc869f]
  40 [-]: MOVE      R13 R9       ; R13 := R9
- 41 [-]: LOADK     R14 9        ; R14 := 9.000000
+ 41 [-]: CONST     R14 9        ; R14 := 9.000000
  42 [-]: MOVE      R15 R1       ; R15 := R1
  43 [-]: CALL      R11 5 1      ; R11(R12,R13,R14,R15)
  44 [-]: GETTABLE  R11 R0 K4    ; R11 := R0["mMovie"]
  45 [-]: SELF      R11 R11 K10  ; R12 := R11; R11 := R11[0x67bc869f]
  46 [-]: MOVE      R13 R9       ; R13 := R9
- 47 [-]: LOADK     R14 10       ; R14 := 10.000000
- 48 [-]: LOADK     R15 100      ; R15 := 100.000000
+ 47 [-]: CONST     R14 10       ; R14 := 10.000000
+ 48 [-]: CONST     R15 100      ; R15 := 100.000000
  49 [-]: CALL      R11 5 1      ; R11(R12,R13,R14,R15)
  50 [-]: GETTABLE  R11 R0 K4    ; R11 := R0["mMovie"]
  51 [-]: SELF      R11 R11 K10  ; R12 := R11; R11 := R11[0x67bc869f]
  52 [-]: MOVE      R13 R9       ; R13 := R9
- 53 [-]: LOADK     R14 0        ; R14 := 0.000000
+ 53 [-]: CONST     R14 0        ; R14 := 0.000000
  54 [-]: MOVE      R15 R3       ; R15 := R3
  55 [-]: CALL      R11 5 1      ; R11(R12,R13,R14,R15)
  56 [-]: GETTABLE  R11 R0 K4    ; R11 := R0["mMovie"]
  57 [-]: SELF      R11 R11 K10  ; R12 := R11; R11 := R11[0x67bc869f]
  58 [-]: MOVE      R13 R9       ; R13 := R9
- 59 [-]: LOADK     R14 6        ; R14 := 6.000000
- 60 [-]: LOADK     R15 50       ; R15 := 50.000000
+ 59 [-]: CONST     R14 6        ; R14 := 6.000000
+ 60 [-]: CONST     R15 50       ; R15 := 50.000000
  61 [-]: CALL      R11 5 1      ; R11(R12,R13,R14,R15)
  62 [-]: GETTABLE  R11 R0 K4    ; R11 := R0["mMovie"]
  63 [-]: SELF      R11 R11 K10  ; R12 := R11; R11 := R11[0x67bc869f]
  64 [-]: MOVE      R13 R9       ; R13 := R9
- 65 [-]: LOADK     R14 12       ; R14 := 12.000000
+ 65 [-]: CONST     R14 12       ; R14 := 12.000000
  66 [-]: MOVE      R15 R2       ; R15 := R2
  67 [-]: CALL      R11 5 1      ; R11(R12,R13,R14,R15)
  68 [-]: GETTABLE  R11 R0 K0    ; R11 := R0["mIndicators"]
@@ -1232,17 +1232,17 @@
  70 [-]: GETGLOBAL R11 K12      ; R11 := 0x25312c9b
  71 [-]: GETTABLE  R12 R0 K4    ; R12 := R0["mMovie"]
  72 [-]: MOVE      R13 R9       ; R13 := R9
- 73 [-]: LOADK     R14 2        ; R14 := 2.000000
+ 73 [-]: CONST     R14 2        ; R14 := 2.000000
  74 [-]: NEWTABLE  R15 2 0      ; R15 := {}
- 75 [-]: LOADK     R16 6        ; R16 := 6.000000
- 76 [-]: LOADK     R17 10       ; R17 := 10.000000
+ 75 [-]: CONST     R16 6        ; R16 := 6.000000
+ 76 [-]: CONST     R17 10       ; R17 := 10.000000
  77 [-]: SETLIST   R15 2 1      ; R15[(1-1)*FPF+i] := R(15+i), 1 <= i <= 2
  78 [-]: NEWTABLE  R16 2 0      ; R16 := {}
- 79 [-]: LOADK     R17 250      ; R17 := 250.000000
- 80 [-]: LOADK     R18 0        ; R18 := 0.000000
+ 79 [-]: CONST     R17 250      ; R17 := 250.000000
+ 80 [-]: CONST     R18 0        ; R18 := 0.000000
  81 [-]: SETLIST   R16 2 1      ; R16[(1-1)*FPF+i] := R(16+i), 1 <= i <= 2
  82 [-]: LOADK     R17 K14      ; R17 := 0.300000
- 83 [-]: LOADK     R18 0        ; R18 := 0.000000
+ 83 [-]: CONST     R18 0        ; R18 := 0.000000
  84 [-]: CLOSURE   R19 0        ; R19 := closure(Function #1.6.1)
  85 [-]: MOVE      R0 R0        ; R0 := R0
  86 [-]: MOVE      R0 R4        ; R0 := R4

@@ -38,8 +38,8 @@
  13 [-]: TEST      R7 0         ; if not R7 then PC := 23
  14 [-]: JMP       23           ; PC := 23
  15 [-]: SELF      R7 R5 K5     ; R8 := R5; R7 := R5[0x5e6704ff]
- 16 [-]: LOADK     R9 325       ; R9 := 325.000000
- 17 [-]: LOADK     R10 2        ; R10 := 2.000000
+ 16 [-]: CONST     R9 331       ; R9 := 331.000000
+ 17 [-]: CONST     R10 3        ; R10 := 3.000000
  18 [-]: GETGLOBAL R11 K8       ; R11 := 0x10295ece
  19 [-]: SELF      R12 R1 K9    ; R13 := R1; R12 := R1[0xcde10c4a]
  20 [-]: CALL      R12 2 2      ; R12 := R12(R13)
@@ -72,8 +72,8 @@
  13 [-]: TEST      R7 0         ; if not R7 then PC := 23
  14 [-]: JMP       23           ; PC := 23
  15 [-]: SELF      R7 R5 K5     ; R8 := R5; R7 := R5[0x12dd9da2]
- 16 [-]: LOADK     R9 325       ; R9 := 325.000000
- 17 [-]: LOADK     R10 2        ; R10 := 2.000000
+ 16 [-]: CONST     R9 331       ; R9 := 331.000000
+ 17 [-]: CONST     R10 3        ; R10 := 3.000000
  18 [-]: GETGLOBAL R11 K8       ; R11 := 0x10295ece
  19 [-]: SELF      R12 R1 K9    ; R13 := R1; R12 := R1[0xcde10c4a]
  20 [-]: CALL      R12 2 2      ; R12 := R12(R13)

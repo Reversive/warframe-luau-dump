@@ -44,12 +44,12 @@
  17 [-]: JMP       20           ; PC := 20
  18 [-]: LT        0 R2 K7      ; if R2 >= 1.000000 then PC := 22
  19 [-]: JMP       22           ; PC := 22
- 20 [-]: LOADK     R6 0         ; R6 := 0.000000
+ 20 [-]: CONST     R6 0         ; R6 := 0.000000
  21 [-]: RETURN    R6 2         ; return R6
  22 [-]: SELF      R6 R0 K8     ; R7 := R0; R6 := R0[0x48d05257]
  23 [-]: GETTABLE  R8 R5 K3     ; R8 := R5["entity"]
  24 [-]: CALL      R6 3 1       ; R6(R7,R8)
- 25 [-]: LOADK     R6 1         ; R6 := 1.000000
+ 25 [-]: CONST     R6 1         ; R6 := 1.000000
  26 [-]: RETURN    R6 2         ; return R6
  27 [-]: RETURN    R0 1         ; return 
 
@@ -85,7 +85,7 @@
 ; Max Stack Size:  14
 
   1 [-]: SELF      R5 R1 K0     ; R6 := R1; R5 := R1[0x768274d6]
-  2 [-]: LOADBOOL  R7 0 0       ; R7 := false
+  2 [-]: LOADKB    R7 0 0       ; R7 := false
   3 [-]: CALL      R5 3 1       ; R5(R6,R7)
   4 [-]: GETUPVAL  R5 U0        ; R5 := U0
   5 [-]: MOVE      R6 R1        ; R6 := R1
@@ -135,7 +135,7 @@
  49 [-]: CALL      R12 2 0      ; R12,... := R12(R13)
  50 [-]: CALL      R9 0 1       ; R9(R10,...)
  51 [-]: SELF      R9 R1 K0     ; R10 := R1; R9 := R1[0x768274d6]
- 52 [-]: LOADBOOL  R11 1 0      ; R11 := true
+ 52 [-]: LOADKB    R11 1 0      ; R11 := true
  53 [-]: CALL      R9 3 1       ; R9(R10,R11)
  54 [-]: RETURN    R0 1         ; return 
 

@@ -27,7 +27,7 @@
   2 [-]: GETGLOBAL R3 K1        ; R3 := 0x0469f296
   3 [-]: LOADK     R4 K2        ; R4 := "ShrunkMeshShape"
   4 [-]: CALL      R3 2 2       ; R3 := R3(R4)
-  5 [-]: LOADK     R4 1         ; R4 := 1.000000
+  5 [-]: CONST     R4 1         ; R4 := 1.000000
   6 [-]: CALL      R1 4 1       ; R1(R2,R3,R4)
   7 [-]: RETURN    R0 1         ; return 
 
@@ -56,7 +56,7 @@
  13 [-]: JMP       18           ; PC := 18
  14 [-]: SELF      R3 R2 K6     ; R4 := R2; R3 := R2[0x2d9ba74f]
  15 [-]: DIV       R5 R1 K7     ; R5 := R1 / 5.000000
- 16 [-]: LOADBOOL  R6 1 0       ; R6 := true
+ 16 [-]: LOADKB    R6 1 0       ; R6 := true
  17 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
  18 [-]: RETURN    R0 1         ; return 
 

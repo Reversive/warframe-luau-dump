@@ -7,7 +7,7 @@
 ; Is_vararg:       2
 ; Max Stack Size:  2
 
-  1 [-]: LOADK     R0 1         ; R0 := 1.000000
+  1 [-]: CONST     R0 1         ; R0 := 1.000000
   2 [-]: CLOSURE   R1 0         ; R1 := closure(Function #1)
   3 [-]: SETGLOBAL R1 K0        ; GetDescription := R1
   4 [-]: CLOSURE   R1 1         ; R1 := closure(Function #2)
@@ -96,10 +96,10 @@
  43 [-]: TEST      R5 0         ; if not R5 then PC := 46
  44 [-]: JMP       46           ; PC := 46
  45 [-]: RETURN    R0 1         ; return 
- 46 [-]: LOADK     R5 1         ; R5 := 1.000000
+ 46 [-]: CONST     R5 1         ; R5 := 1.000000
  47 [-]: GETGLOBAL R6 K8        ; R6 := 0xbcb4b3b6
  48 [-]: LEN       R6 R6        ; R6 := # R6
- 49 [-]: LOADK     R7 1         ; R7 := 1.000000
+ 49 [-]: CONST     R7 1         ; R7 := 1.000000
  50 [-]: FORPREP   R5 64        ; R5 -= R7; PC := 64
  51 [-]: GETGLOBAL R9 K0        ; R9 := 0x7b998233
  52 [-]: GETGLOBAL R10 K8       ; R10 := 0xbcb4b3b6
@@ -135,25 +135,25 @@
  82 [-]: RETURN    R0 1         ; return 
  83 [-]: SELF      R9 R4 K13    ; R10 := R4; R9 := R4[0x388577d5]
  84 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 85 [-]: LOADBOOL  R10 0 0      ; R10 := false
+ 85 [-]: LOADKB    R10 0 0      ; R10 := false
  86 [-]: GETGLOBAL R11 K0       ; R11 := 0x7b998233
  87 [-]: GETGLOBAL R12 K11      ; R12 := _T
  88 [-]: GETTABLE  R12 R12 K12  ; R12 := R12["RJShieldRechargeOnCrit"]
  89 [-]: CALL      R11 2 2      ; R11 := R11(R12)
  90 [-]: TEST      R11 1        ; if R11 then PC := 106
  91 [-]: JMP       106          ; PC := 106
- 92 [-]: LOADK     R11 1        ; R11 := 1.000000
+ 92 [-]: CONST     R11 1        ; R11 := 1.000000
  93 [-]: GETGLOBAL R12 K11      ; R12 := _T
  94 [-]: GETTABLE  R12 R12 K12  ; R12 := R12["RJShieldRechargeOnCrit"]
  95 [-]: LEN       R12 R12      ; R12 := # R12
- 96 [-]: LOADK     R13 1        ; R13 := 1.000000
+ 96 [-]: CONST     R13 1        ; R13 := 1.000000
  97 [-]: FORPREP   R11 105      ; R11 -= R13; PC := 105
  98 [-]: GETGLOBAL R15 K11      ; R15 := _T
  99 [-]: GETTABLE  R15 R15 K12  ; R15 := R15["RJShieldRechargeOnCrit"]
 100 [-]: GETTABLE  R15 R15 R14  ; R15 := R15[R14]
 101 [-]: EQ        0 R15 R9     ; if R15 ~= R9 then PC := 105
 102 [-]: JMP       105          ; PC := 105
-103 [-]: LOADBOOL  R10 1 0      ; R10 := true
+103 [-]: LOADKB    R10 1 0      ; R10 := true
 104 [-]: JMP       106          ; PC := 106
 105 [-]: FORLOOP   R11 98       ; R11 += R13; if R11 <= R12 then begin PC := 98; R14 := R11 end
 106 [-]: TEST      R10 1        ; if R10 then PC := 109
@@ -241,7 +241,7 @@
  48 [-]: GETGLOBAL R7 K10       ; R7 := _T
  49 [-]: NEWTABLE  R8 0 0       ; R8 := {}
  50 [-]: SETTABLE  R7 K8 R8     ; R7["RJShieldRechargeOnCrit"] := R8
- 51 [-]: LOADBOOL  R7 0 0       ; R7 := false
+ 51 [-]: LOADKB    R7 0 0       ; R7 := false
  52 [-]: SELF      R8 R5 K11    ; R9 := R5; R8 := R5[0x388577d5]
  53 [-]: CALL      R8 2 2       ; R8 := R8(R9)
  54 [-]: GETGLOBAL R9 K0        ; R9 := 0x7b998233
@@ -250,18 +250,18 @@
  57 [-]: CALL      R9 2 2       ; R9 := R9(R10)
  58 [-]: TEST      R9 1         ; if R9 then PC := 73
  59 [-]: JMP       73           ; PC := 73
- 60 [-]: LOADK     R9 1         ; R9 := 1.000000
+ 60 [-]: CONST     R9 1         ; R9 := 1.000000
  61 [-]: GETGLOBAL R10 K10      ; R10 := _T
  62 [-]: GETTABLE  R10 R10 K8   ; R10 := R10["RJShieldRechargeOnCrit"]
  63 [-]: LEN       R10 R10      ; R10 := # R10
- 64 [-]: LOADK     R11 1        ; R11 := 1.000000
+ 64 [-]: CONST     R11 1        ; R11 := 1.000000
  65 [-]: FORPREP   R9 72        ; R9 -= R11; PC := 72
  66 [-]: GETGLOBAL R13 K10      ; R13 := _T
  67 [-]: GETTABLE  R13 R13 K8   ; R13 := R13["RJShieldRechargeOnCrit"]
  68 [-]: GETTABLE  R13 R13 R12  ; R13 := R13[R12]
  69 [-]: EQ        0 R13 R8     ; if R13 ~= R8 then PC := 72
  70 [-]: JMP       72           ; PC := 72
- 71 [-]: LOADBOOL  R7 1 0       ; R7 := true
+ 71 [-]: LOADKB    R7 1 0       ; R7 := true
  72 [-]: FORLOOP   R9 66        ; R9 += R11; if R9 <= R10 then begin PC := 66; R12 := R9 end
  73 [-]: TEST      R7 1         ; if R7 then PC := 81
  74 [-]: JMP       81           ; PC := 81
@@ -320,11 +320,11 @@
  32 [-]: CALL      R7 2 2       ; R7 := R7(R8)
  33 [-]: TEST      R7 1         ; if R7 then PC := 51
  34 [-]: JMP       51           ; PC := 51
- 35 [-]: LOADK     R7 1         ; R7 := 1.000000
+ 35 [-]: CONST     R7 1         ; R7 := 1.000000
  36 [-]: GETGLOBAL R8 K2        ; R8 := _T
  37 [-]: GETTABLE  R8 R8 K3     ; R8 := R8["RJShieldRechargeOnCrit"]
  38 [-]: LEN       R8 R8        ; R8 := # R8
- 39 [-]: LOADK     R9 1         ; R9 := 1.000000
+ 39 [-]: CONST     R9 1         ; R9 := 1.000000
  40 [-]: FORPREP   R7 50        ; R7 -= R9; PC := 50
  41 [-]: GETGLOBAL R11 K2       ; R11 := _T
  42 [-]: GETTABLE  R11 R11 K3   ; R11 := R11["RJShieldRechargeOnCrit"]

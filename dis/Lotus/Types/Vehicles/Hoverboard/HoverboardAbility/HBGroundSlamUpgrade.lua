@@ -11,19 +11,19 @@
   2 [-]: LOADK     R1 K1        ; R1 := "Lotus.Types.Vehicles.Hoverboard.HoverboardAbility.HoverboardAbilityUtil"
   3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
   4 [-]: NEWTABLE  R1 4 0       ; R1 := {}
-  5 [-]: LOADK     R2 10        ; R2 := 10.000000
-  6 [-]: LOADK     R3 20        ; R3 := 20.000000
-  7 [-]: LOADK     R4 30        ; R4 := 30.000000
-  8 [-]: LOADK     R5 40        ; R5 := 40.000000
+  5 [-]: CONST     R2 10        ; R2 := 10.000000
+  6 [-]: CONST     R3 20        ; R3 := 20.000000
+  7 [-]: CONST     R4 30        ; R4 := 30.000000
+  8 [-]: CONST     R5 40        ; R5 := 40.000000
   9 [-]: SETLIST   R1 4 1       ; R1[(1-1)*FPF+i] := R(1+i), 1 <= i <= 4
  10 [-]: NEWTABLE  R2 4 0       ; R2 := {}
- 11 [-]: LOADK     R3 5         ; R3 := 5.000000
- 12 [-]: LOADK     R4 10        ; R4 := 10.000000
- 13 [-]: LOADK     R5 15        ; R5 := 15.000000
- 14 [-]: LOADK     R6 20        ; R6 := 20.000000
+ 11 [-]: CONST     R3 5         ; R3 := 5.000000
+ 12 [-]: CONST     R4 10        ; R4 := 10.000000
+ 13 [-]: CONST     R5 15        ; R5 := 15.000000
+ 14 [-]: CONST     R6 20        ; R6 := 20.000000
  15 [-]: SETLIST   R2 4 1       ; R2[(1-1)*FPF+i] := R(2+i), 1 <= i <= 4
- 16 [-]: LOADK     R3 0         ; R3 := 0.500000
- 17 [-]: LOADBOOL  R4 0 0       ; R4 := false
+ 16 [-]: CONST     R3 0         ; R3 := 0.500000
+ 17 [-]: LOADKB    R4 0 0       ; R4 := false
  18 [-]: CLOSURE   R5 0         ; R5 := closure(Function #1)
  19 [-]: MOVE      R0 R1        ; R0 := R1
  20 [-]: CLOSURE   R6 1         ; R6 := closure(Function #2)
@@ -50,7 +50,7 @@
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0x42dcc9f5
   2 [-]: MOVE      R2 R0        ; R2 := R0
-  3 [-]: LOADK     R3 1         ; R3 := 1.000000
+  3 [-]: CONST     R3 1         ; R3 := 1.000000
   4 [-]: GETUPVAL  R4 U0        ; R4 := U0
   5 [-]: LEN       R4 R4        ; R4 := # R4
   6 [-]: CALL      R1 4 2       ; R1 := R1(R2,R3,R4)
@@ -72,7 +72,7 @@
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0x42dcc9f5
   2 [-]: MOVE      R2 R0        ; R2 := R0
-  3 [-]: LOADK     R3 1         ; R3 := 1.000000
+  3 [-]: CONST     R3 1         ; R3 := 1.000000
   4 [-]: GETUPVAL  R4 U0        ; R4 := U0
   5 [-]: LEN       R4 R4        ; R4 := # R4
   6 [-]: CALL      R1 4 2       ; R1 := R1(R2,R3,R4)

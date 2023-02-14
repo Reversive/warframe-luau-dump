@@ -33,9 +33,9 @@
  10 [-]: RETURN    R0 1         ; return 
  11 [-]: SELF      R3 R2 K3     ; R4 := R2; R3 := R2[0xcd73323e]
  12 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 13 [-]: LOADK     R4 1         ; R4 := 1.000000
+ 13 [-]: CONST     R4 1         ; R4 := 1.000000
  14 [-]: LEN       R5 R1        ; R5 := # R1
- 15 [-]: LOADK     R6 1         ; R6 := 1.000000
+ 15 [-]: CONST     R6 1         ; R6 := 1.000000
  16 [-]: FORPREP   R4 60        ; R4 -= R6; PC := 60
  17 [-]: GETTABLE  R8 R1 R7     ; R8 := R1[R7]
  18 [-]: GETGLOBAL R9 K2        ; R9 := 0x7b998233

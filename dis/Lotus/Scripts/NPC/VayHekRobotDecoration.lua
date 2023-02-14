@@ -27,7 +27,7 @@
   4 [-]: TEST      R1 1         ; if R1 then PC := 15
   5 [-]: JMP       15           ; PC := 15
   6 [-]: GETGLOBAL R1 K1        ; R1 := 0xcbd666e1
-  7 [-]: LOADK     R2 0         ; R2 := 0.000000
+  7 [-]: CONST     R2 0         ; R2 := 0.000000
   8 [-]: CALL      R1 2 1       ; R1(R2)
   9 [-]: SELF      R1 R0 K2     ; R2 := R0; R1 := R0[0x2ba5938d]
  10 [-]: GETGLOBAL R3 K3        ; R3 := 0xa376cd0b

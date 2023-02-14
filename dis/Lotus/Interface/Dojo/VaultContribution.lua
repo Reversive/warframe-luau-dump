@@ -7,16 +7,16 @@
 ; Is_vararg:       2
 ; Max Stack Size:  24
 
-  1 [-]: LOADBOOL  R1 0 0       ; R1 := false
+  1 [-]: LOADKB    R1 0 0       ; R1 := false
   2 [-]: LOADNIL   R2 R2        ; R2 := nil
-  3 [-]: LOADK     R3 0         ; R3 := 0.000000
+  3 [-]: CONST     R3 0         ; R3 := 0.000000
   4 [-]: LOADNIL   R4 R4        ; R4 := nil
-  5 [-]: LOADBOOL  R5 1 0       ; R5 := true
+  5 [-]: LOADKB    R5 1 0       ; R5 := true
   6 [-]: LOADK     R6 K0        ; R6 := ""
-  7 [-]: LOADBOOL  R7 0 0       ; R7 := false
-  8 [-]: LOADK     R8 0         ; R8 := 0.000000
+  7 [-]: LOADKB    R7 0 0       ; R7 := false
+  8 [-]: CONST     R8 0         ; R8 := 0.000000
   9 [-]: LOADNIL   R9 R9        ; R9 := nil
- 10 [-]: LOADBOOL  R10 0 0      ; R10 := false
+ 10 [-]: LOADKB    R10 0 0      ; R10 := false
  11 [-]: GETGLOBAL R11 K1       ; R11 := 0x2d0fad09
  12 [-]: LOADK     R12 K2       ; R12 := "EE.Interface.Utilities"
  13 [-]: CALL      R11 2 2      ; R11 := R11(R12)
@@ -150,10 +150,10 @@
   9 [-]: GETUPVAL  R4 U0        ; R4 := U0
  10 [-]: EQ        1 R4 K3      ; if R4 == nil then PC := 52
  11 [-]: JMP       52           ; PC := 52
- 12 [-]: LOADK     R4 1         ; R4 := 1.000000
+ 12 [-]: CONST     R4 1         ; R4 := 1.000000
  13 [-]: GETUPVAL  R5 U0        ; R5 := U0
  14 [-]: LEN       R5 R5        ; R5 := # R5
- 15 [-]: LOADK     R6 1         ; R6 := 1.000000
+ 15 [-]: CONST     R6 1         ; R6 := 1.000000
  16 [-]: FORPREP   R4 51        ; R4 -= R6; PC := 51
  17 [-]: GETUPVAL  R8 U0        ; R8 := U0
  18 [-]: GETTABLE  R8 R8 R7     ; R8 := R8[R7]
@@ -238,12 +238,12 @@
 
   1 [-]: TEST      R0 1         ; if R0 then PC := 6
   2 [-]: JMP       6            ; PC := 6
-  3 [-]: LOADK     R2 -1        ; R2 := -1.000000
+  3 [-]: CONST     R2 -1        ; R2 := -1.000000
   4 [-]: SETUPVAL  R2 U0        ; U82 := R0
   5 [-]: RETURN    R0 1         ; return 
   6 [-]: GETGLOBAL R2 K0        ; R2 := 0x603636ad
   7 [-]: LOADK     R3 K1        ; R3 := "/Lotus/Language/Dojo/VaultContributionDecoConfirmWord"
-  8 [-]: LOADBOOL  R4 0 0       ; R4 := false
+  8 [-]: LOADKB    R4 0 0       ; R4 := false
   9 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
  10 [-]: GETGLOBAL R3 K2        ; R3 := 0x7f5022cf
  11 [-]: GETTABLE  R3 R3 K3     ; R3 := R3[0x04981ab3]
@@ -251,10 +251,10 @@
  13 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  14 [-]: EQ        0 R3 R2      ; if R3 ~= R2 then PC := 19
  15 [-]: JMP       19           ; PC := 19
- 16 [-]: LOADK     R3 1         ; R3 := 1.000000
+ 16 [-]: CONST     R3 1         ; R3 := 1.000000
  17 [-]: SETUPVAL  R3 U0        ; U82 := R0
  18 [-]: JMP       25           ; PC := 25
- 19 [-]: LOADK     R3 -1        ; R3 := -1.000000
+ 19 [-]: CONST     R3 -1        ; R3 := -1.000000
  20 [-]: SETUPVAL  R3 U0        ; U82 := R0
  21 [-]: GETUPVAL  R3 U1        ; R3 := U1
  22 [-]: GETTABLE  R3 R3 K4     ; R3 := R3[0xa53f5e12]
@@ -273,7 +273,7 @@
 ; Max Stack Size:  5
 
   1 [-]: GETUPVAL  R2 U0        ; R2 := U0
-  2 [-]: NOT       R3 R0        ; R3 := not R0
+  2 [-]: NOT       R3 R0        ; R3 :=  R0
   3 [-]: MOVE      R4 R1        ; R4 := R1
   4 [-]: CALL      R2 3 1       ; R2(R3,R4)
   5 [-]: RETURN    R0 1         ; return 
@@ -295,7 +295,7 @@
   5 [-]: JMP       38           ; PC := 38
   6 [-]: GETGLOBAL R1 K3        ; R1 := 0x603636ad
   7 [-]: LOADK     R2 K4        ; R2 := "/Lotus/Language/Dojo/VaultContributionDecoConfirmWord"
-  8 [-]: LOADBOOL  R3 0 0       ; R3 := false
+  8 [-]: LOADKB    R3 0 0       ; R3 := false
   9 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
  10 [-]: GETGLOBAL R2 K3        ; R2 := 0x603636ad
  11 [-]: LOADK     R3 K5        ; R3 := "/Lotus/Language/Dojo/VaultContributionDecoConfirmShort2"
@@ -311,7 +311,7 @@
  21 [-]: LOADNIL   R4 R4        ; R4 := nil
  22 [-]: MOVE      R5 R2        ; R5 := R2
  23 [-]: LOADK     R6 K10       ; R6 := ""
- 24 [-]: LOADK     R7 20        ; R7 := 20.000000
+ 24 [-]: CONST     R7 20        ; R7 := 20.000000
  25 [-]: LOADK     R8 K11       ; R8 := "DecoContributionConfirmed"
  26 [-]: LOADK     R9 K12       ; R9 := "OSKDecoContributionConfirmed"
  27 [-]: CALL      R3 7 3       ; R3,R4 := R3(R4,R5,R6,R7,R8,R9)
@@ -325,7 +325,7 @@
  35 [-]: MOVE      R8 R1        ; R8 := R1
  36 [-]: CALL      R5 4 1       ; R5(R6,R7,R8)
  37 [-]: JMP       40           ; PC := 40
- 38 [-]: LOADK     R5 -1        ; R5 := -1.000000
+ 38 [-]: CONST     R5 -1        ; R5 := -1.000000
  39 [-]: SETUPVAL  R5 U1        ; U82 := R1
  40 [-]: RETURN    R0 1         ; return 
 
@@ -361,7 +361,7 @@
  20 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  21 [-]: SETUPVAL  R2 U0        ; U82 := R0
  22 [-]: JMP       25           ; PC := 25
- 23 [-]: LOADK     R2 -1        ; R2 := -1.000000
+ 23 [-]: CONST     R2 -1        ; R2 := -1.000000
  24 [-]: SETUPVAL  R2 U0        ; U82 := R0
  25 [-]: RETURN    R0 1         ; return 
 
@@ -375,7 +375,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  19
 
-  1 [-]: LOADK     R0 0         ; R0 := 0.000000
+  1 [-]: CONST     R0 0         ; R0 := 0.000000
   2 [-]: LOADK     R1 K0        ; R1 := "/Lotus/Language/Dojo/VaultContributionGenericDesc"
   3 [-]: GETUPVAL  R2 U0        ; R2 := U0
   4 [-]: TEST      R2 0         ; if not R2 then PC := 60
@@ -391,9 +391,9 @@
  14 [-]: GETUPVAL  R3 U2        ; R3 := U2
  15 [-]: SELF      R3 R3 K4     ; R4 := R3; R3 := R3[0x29ec8b5e]
  16 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 17 [-]: LOADK     R4 1         ; R4 := 1.000000
+ 17 [-]: CONST     R4 1         ; R4 := 1.000000
  18 [-]: LEN       R5 R3        ; R5 := # R3
- 19 [-]: LOADK     R6 1         ; R6 := 1.000000
+ 19 [-]: CONST     R6 1         ; R6 := 1.000000
  20 [-]: FORPREP   R4 58        ; R4 -= R6; PC := 58
  21 [-]: GETTABLE  R8 R3 R7     ; R8 := R3[R7]
  22 [-]: GETTABLE  R8 R8 K5     ; R8 := R8["mId"]
@@ -401,19 +401,19 @@
  24 [-]: JMP       58           ; PC := 58
  25 [-]: GETTABLE  R8 R3 R7     ; R8 := R3[R7]
  26 [-]: SELF      R8 R8 K6     ; R9 := R8; R8 := R8[0x14045151]
- 27 [-]: LOADK     R10 256      ; R10 := 256.000000
+ 27 [-]: CONST     R10 256      ; R10 := 256.000000
  28 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
  29 [-]: TEST      R8 0         ; if not R8 then PC := 37
  30 [-]: JMP       37           ; PC := 37
  31 [-]: GETUPVAL  R8 U2        ; R8 := U2
  32 [-]: SELF      R8 R8 K8     ; R9 := R8; R8 := R8[0x3a57bc9f]
- 33 [-]: LOADK     R10 256      ; R10 := 256.000000
+ 33 [-]: CONST     R10 256      ; R10 := 256.000000
  34 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
  35 [-]: TEST      R8 1         ; if R8 then PC := 51
  36 [-]: JMP       51           ; PC := 51
  37 [-]: GETTABLE  R8 R3 R7     ; R8 := R3[R7]
  38 [-]: SELF      R8 R8 K6     ; R9 := R8; R8 := R8[0x14045151]
- 39 [-]: LOADK     R10 64       ; R10 := 64.000000
+ 39 [-]: CONST     R10 64       ; R10 := 64.000000
  40 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
  41 [-]: TEST      R8 0         ; if not R8 then PC := 90
  42 [-]: JMP       90           ; PC := 90
@@ -448,13 +448,13 @@
  71 [-]: LOADK     R1 K16       ; R1 := "/Lotus/Language/Dojo/VaultContributionGenericOtherClanDesc"
  72 [-]: GETUPVAL  R8 U2        ; R8 := U2
  73 [-]: SELF      R8 R8 K8     ; R9 := R8; R8 := R8[0x3a57bc9f]
- 74 [-]: LOADK     R10 64       ; R10 := 64.000000
+ 74 [-]: CONST     R10 64       ; R10 := 64.000000
  75 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
  76 [-]: TEST      R8 1         ; if R8 then PC := 84
  77 [-]: JMP       84           ; PC := 84
  78 [-]: GETUPVAL  R8 U2        ; R8 := U2
  79 [-]: SELF      R8 R8 K8     ; R9 := R8; R8 := R8[0x3a57bc9f]
- 80 [-]: LOADK     R10 256      ; R10 := 256.000000
+ 80 [-]: CONST     R10 256      ; R10 := 256.000000
  81 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
  82 [-]: TEST      R8 0         ; if not R8 then PC := 90
  83 [-]: JMP       90           ; PC := 90
@@ -464,7 +464,7 @@
  87 [-]: SELF      R8 R8 K12    ; R9 := R8; R8 := R8[0x66ff9e19]
  88 [-]: CALL      R8 2 2       ; R8 := R8(R9)
  89 [-]: MOVE      R0 R8        ; R0 := R8
- 90 [-]: LOADK     R8 0         ; R8 := 0.000000
+ 90 [-]: CONST     R8 0         ; R8 := 0.000000
  91 [-]: GETUPVAL  R9 U5        ; R9 := U5
  92 [-]: TEST      R9 0         ; if not R9 then PC := 101
  93 [-]: JMP       101          ; PC := 101
@@ -507,8 +507,8 @@
 130 [-]: GETUPVAL  R16 U4       ; R16 := U4
 131 [-]: EQ        1 R16 K14    ; if R16 == nil then PC := 134
 132 [-]: JMP       134          ; PC := 134
-133 [-]: LOADBOOL  R16 0 1      ; R16 := false; PC := 134
-134 [-]: LOADBOOL  R16 1 0      ; R16 := true
+133 [-]: LOADKB    R16 0 1      ; R16 := false; PC := 134
+134 [-]: LOADKB    R16 1 0      ; R16 := true
 135 [-]: GETGLOBAL R17 K25      ; R17 := 0x7f5022cf
 136 [-]: GETTABLE  R17 R17 K26  ; R17 := R17[0x04981ab3]
 137 [-]: GETUPVAL  R18 U1       ; R18 := U1
@@ -542,7 +542,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  3
 
-  1 [-]: LOADK     R2 -1        ; R2 := -1.000000
+  1 [-]: CONST     R2 -1        ; R2 := -1.000000
   2 [-]: SETUPVAL  R2 U0        ; U82 := R0
   3 [-]: EQ        1 R0 K0      ; if R0 == nil then PC := 7
   4 [-]: JMP       7            ; PC := 7
@@ -631,7 +631,7 @@
  19 [-]: CALL      R2 0 1       ; R2(R3,...)
  20 [-]: SELF      R2 R1 K4     ; R3 := R1; R2 := R1[0xe4162eed]
  21 [-]: LOADK     R4 K11       ; R4 := "SetRequiredSelections"
- 22 [-]: LOADK     R5 0         ; R5 := 0.000000
+ 22 [-]: CONST     R5 0         ; R5 := 0.000000
  23 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
  24 [-]: GETUPVAL  R2 U1        ; R2 := U1
  25 [-]: GETTABLE  R2 R2 K12    ; R2 := R2[0xf1b3fb6d]
@@ -713,7 +713,7 @@
   5 [-]: GETTABLE  R0 R0 K0     ; R0 := R0[0x2c905c8f]
   6 [-]: GETUPVAL  R1 U2        ; R1 := U2
   7 [-]: GETUPVAL  R2 U3        ; R2 := U3
-  8 [-]: LOADBOOL  R3 1 0       ; R3 := true
+  8 [-]: LOADKB    R3 1 0       ; R3 := true
   9 [-]: CALL      R0 4 2       ; R0 := R0(R1,R2,R3)
  10 [-]: RETURN    R0 2         ; return R0
  11 [-]: JMP       58           ; PC := 58
@@ -730,9 +730,9 @@
  22 [-]: SELF      R2 R2 K4     ; R3 := R2; R2 := R2[0xf39284cf]
  23 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  24 [-]: GETTABLE  R2 R2 K5     ; R2 := R2["mMiscItems"]
- 25 [-]: LOADK     R3 1         ; R3 := 1.000000
+ 25 [-]: CONST     R3 1         ; R3 := 1.000000
  26 [-]: LEN       R4 R2        ; R4 := # R2
- 27 [-]: LOADK     R5 1         ; R5 := 1.000000
+ 27 [-]: CONST     R5 1         ; R5 := 1.000000
  28 [-]: FORPREP   R3 56        ; R3 -= R5; PC := 56
  29 [-]: GETTABLE  R7 R2 R6     ; R7 := R2[R6]
  30 [-]: SELF      R8 R1 K6     ; R9 := R1; R8 := R1[0x105074fb]
@@ -803,13 +803,13 @@
   1 [-]: GETTABLE  R2 R0 K0     ; R2 := R0["PremiumPrice"]
   2 [-]: EQ        0 R2 K1      ; if R2 ~= nil then PC := 5
   3 [-]: JMP       5            ; PC := 5
-  4 [-]: LOADBOOL  R2 0 1       ; R2 := false; PC := 5
-  5 [-]: LOADBOOL  R2 1 0       ; R2 := true
+  4 [-]: LOADKB    R2 0 1       ; R2 := false; PC := 5
+  5 [-]: LOADKB    R2 1 0       ; R2 := true
   6 [-]: GETTABLE  R3 R1 K0     ; R3 := R1["PremiumPrice"]
   7 [-]: EQ        0 R3 K1      ; if R3 ~= nil then PC := 10
   8 [-]: JMP       10           ; PC := 10
-  9 [-]: LOADBOOL  R3 0 1       ; R3 := false; PC := 10
- 10 [-]: LOADBOOL  R3 1 0       ; R3 := true
+  9 [-]: LOADKB    R3 0 1       ; R3 := false; PC := 10
+ 10 [-]: LOADKB    R3 1 0       ; R3 := true
  11 [-]: EQ        1 R2 R3      ; if R2 == R3 then PC := 14
  12 [-]: JMP       14           ; PC := 14
  13 [-]: RETURN    R3 2         ; return R3
@@ -817,8 +817,8 @@
  15 [-]: GETTABLE  R5 R1 K2     ; R5 := R1["Name"]
  16 [-]: LT        1 R4 R5      ; if R4 < R5 then PC := 19
  17 [-]: JMP       19           ; PC := 19
- 18 [-]: LOADBOOL  R6 0 1       ; R6 := false; PC := 19
- 19 [-]: LOADBOOL  R6 1 0       ; R6 := true
+ 18 [-]: LOADKB    R6 0 1       ; R6 := false; PC := 19
+ 19 [-]: LOADKB    R6 1 0       ; R6 := true
  20 [-]: RETURN    R6 2         ; return R6
  21 [-]: RETURN    R0 1         ; return 
 
@@ -968,9 +968,9 @@
   5 [-]: GETUPVAL  R2 U0        ; R2 := U0
   6 [-]: SELF      R2 R2 K1     ; R3 := R2; R2 := R2[0x713ce380]
   7 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  8 [-]: LOADK     R3 1         ; R3 := 1.000000
+  8 [-]: CONST     R3 1         ; R3 := 1.000000
   9 [-]: LEN       R4 R0        ; R4 := # R0
- 10 [-]: LOADK     R5 1         ; R5 := 1.000000
+ 10 [-]: CONST     R5 1         ; R5 := 1.000000
  11 [-]: FORPREP   R3 28        ; R3 -= R5; PC := 28
  12 [-]: GETTABLE  R7 R0 R6     ; R7 := R0[R6]
  13 [-]: GETTABLE  R8 R7 K2     ; R8 := R7["mPending"]
@@ -1072,11 +1072,11 @@
  30 [-]: EQ        0 R1 K11     ; if R1 ~= 9.000000 then PC := 36
  31 [-]: JMP       36           ; PC := 36
  32 [-]: GETUPVAL  R1 U3        ; R1 := U3
- 33 [-]: LOADBOOL  R2 1 0       ; R2 := true
+ 33 [-]: LOADKB    R2 1 0       ; R2 := true
  34 [-]: CALL      R1 2 1       ; R1(R2)
  35 [-]: JMP       42           ; PC := 42
  36 [-]: GETUPVAL  R1 U3        ; R1 := U3
- 37 [-]: LOADBOOL  R2 0 0       ; R2 := false
+ 37 [-]: LOADKB    R2 0 0       ; R2 := false
  38 [-]: CALL      R1 2 1       ; R1(R2)
  39 [-]: JMP       42           ; PC := 42
  40 [-]: LOADNIL   R1 R1        ; R1 := nil
@@ -1114,7 +1114,7 @@
   5 [-]: RETURN    R0 1         ; return 
   6 [-]: GETGLOBAL R2 K1        ; R2 := 0x76ea806b
   7 [-]: SELF      R2 R2 K2     ; R3 := R2; R2 := R2[0x3f3ae64c]
-  8 [-]: LOADK     R4 0         ; R4 := 0.000000
+  8 [-]: CONST     R4 0         ; R4 := 0.000000
   9 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
  10 [-]: GETGLOBAL R3 K3        ; R3 := 0x7b998233
  11 [-]: MOVE      R4 R2        ; R4 := R2
@@ -1137,7 +1137,7 @@
  28 [-]: SETUPVAL  R3 U1        ; U82 := R1
  29 [-]: GETGLOBAL R3 K6        ; R3 := _T
  30 [-]: GETTABLE  R3 R3 K7     ; R3 := R3[0x33cfa273]
- 31 [-]: LOADK     R4 1         ; R4 := 1.000000
+ 31 [-]: CONST     R4 1         ; R4 := 1.000000
  32 [-]: CALL      R3 2 1       ; R3(R4)
  33 [-]: GETUPVAL  R3 U0        ; R3 := U0
  34 [-]: SELF      R3 R3 K8     ; R4 := R3; R3 := R3[0x713ce380]
@@ -1162,8 +1162,8 @@
  53 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  54 [-]: EQ        0 R4 K15     ; if R4 ~= "" then PC := 57
  55 [-]: JMP       57           ; PC := 57
- 56 [-]: LOADBOOL  R4 0 1       ; R4 := false; PC := 57
- 57 [-]: LOADBOOL  R4 1 0       ; R4 := true
+ 56 [-]: LOADKB    R4 0 1       ; R4 := false; PC := 57
+ 57 [-]: LOADKB    R4 1 0       ; R4 := true
  58 [-]: GETGLOBAL R5 K16       ; R5 := 0x9ba7909f
  59 [-]: SELF      R5 R5 K17    ; R6 := R5; R5 := R5[0xcfba257f]
  60 [-]: GETGLOBAL R7 K18       ; R7 := 0x0032441c
@@ -1233,13 +1233,13 @@
 124 [-]: EQ        0 R6 K31     ; if R6 ~= 0.000000 then PC := 130
 125 [-]: JMP       130          ; PC := 130
 126 [-]: GETGLOBAL R6 K32       ; R6 := 0xcbd666e1
-127 [-]: LOADK     R7 0         ; R7 := 0.000000
+127 [-]: CONST     R7 0         ; R7 := 0.000000
 128 [-]: CALL      R6 2 1       ; R6(R7)
 129 [-]: JMP       120          ; PC := 120
 130 [-]: GETUPVAL  R6 U10       ; R6 := U10
 131 [-]: EQ        0 R6 K30     ; if R6 ~= nil then PC := 135
 132 [-]: JMP       135          ; PC := 135
-133 [-]: LOADK     R6 0         ; R6 := 0.000000
+133 [-]: CONST     R6 0         ; R6 := 0.000000
 134 [-]: SETUPVAL  R6 U10       ; U82 := R10
 135 [-]: GETUPVAL  R6 U10       ; R6 := U10
 136 [-]: LT        0 R6 K31     ; if R6 >= 0.000000 then PC := 275
@@ -1249,13 +1249,13 @@
 140 [-]: CALL      R6 2 2       ; R6 := R6(R7)
 141 [-]: TEST      R6 1         ; if R6 then PC := 275
 142 [-]: JMP       275          ; PC := 275
-143 [-]: LOADK     R6 0         ; R6 := 0.000000
+143 [-]: CONST     R6 0         ; R6 := 0.000000
 144 [-]: SETUPVAL  R6 U10       ; U82 := R10
 145 [-]: LOADK     R6 K33       ; R6 := "\r\n"
-146 [-]: LOADK     R7 1         ; R7 := 1.000000
+146 [-]: CONST     R7 1         ; R7 := 1.000000
 147 [-]: GETUPVAL  R8 U12       ; R8 := U12
 148 [-]: LEN       R8 R8        ; R8 := # R8
-149 [-]: LOADK     R9 1         ; R9 := 1.000000
+149 [-]: CONST     R9 1         ; R9 := 1.000000
 150 [-]: FORPREP   R7 174       ; R7 -= R9; PC := 174
 151 [-]: MOVE      R11 R6       ; R11 := R6
 152 [-]: LOADK     R12 K34      ; R12 := "    "
@@ -1283,7 +1283,7 @@
 174 [-]: FORLOOP   R7 151       ; R7 += R9; if R7 <= R8 then begin PC := 151; R10 := R7 end
 175 [-]: GETGLOBAL R11 K40      ; R11 := 0x603636ad
 176 [-]: LOADK     R12 K41      ; R12 := "/Lotus/Language/Dojo/VaultContributionDecoConfirmWord"
-177 [-]: LOADBOOL  R13 0 0      ; R13 := false
+177 [-]: LOADKB    R13 0 0      ; R13 := false
 178 [-]: CALL      R11 3 2      ; R11 := R11(R12,R13)
 179 [-]: LOADK     R12 K15      ; R12 := ""
 180 [-]: LOADK     R13 K15      ; R13 := ""
@@ -1344,7 +1344,7 @@
 235 [-]: GETTABLE  R14 R14 K54  ; R14 := R14[0xf616a184]
 236 [-]: MOVE      R15 R13      ; R15 := R13
 237 [-]: LOADK     R16 K55      ; R16 := "ConditionalFirstConfirm"
-238 [-]: LOADK     R17 3        ; R17 := 3.000000
+238 [-]: CONST     R17 3        ; R17 := 3.000000
 239 [-]: CALL      R14 4 1      ; R14(R15,R16,R17)
 240 [-]: JMP       259          ; PC := 259
 241 [-]: GETUPVAL  R14 U11      ; R14 := U11
@@ -1352,7 +1352,7 @@
 243 [-]: LOADNIL   R15 R15      ; R15 := nil
 244 [-]: MOVE      R16 R12      ; R16 := R12
 245 [-]: LOADK     R17 K15      ; R17 := ""
-246 [-]: LOADK     R18 20       ; R18 := 20.000000
+246 [-]: CONST     R18 20       ; R18 := 20.000000
 247 [-]: LOADK     R19 K51      ; R19 := "DecoContributionConfirmed"
 248 [-]: LOADK     R20 K57      ; R20 := "OSKDecoContributionConfirmed"
 249 [-]: CALL      R14 7 3      ; R14,R15 := R14(R15,R16,R17,R18,R19,R20)
@@ -1369,16 +1369,16 @@
 260 [-]: EQ        0 R16 K31    ; if R16 ~= 0.000000 then PC := 266
 261 [-]: JMP       266          ; PC := 266
 262 [-]: GETGLOBAL R16 K32      ; R16 := 0xcbd666e1
-263 [-]: LOADK     R17 0        ; R17 := 0.000000
+263 [-]: CONST     R17 0        ; R17 := 0.000000
 264 [-]: CALL      R16 2 1      ; R16(R17)
 265 [-]: JMP       259          ; PC := 259
 266 [-]: GETUPVAL  R16 U10      ; R16 := U10
 267 [-]: LT        0 K31 R16    ; if 0.000000 >= R16 then PC := 322
 268 [-]: JMP       322          ; PC := 322
-269 [-]: LOADK     R16 0        ; R16 := 0.000000
+269 [-]: CONST     R16 0        ; R16 := 0.000000
 270 [-]: SETUPVAL  R16 U10      ; U82 := R10
 271 [-]: GETUPVAL  R16 U15      ; R16 := U15
-272 [-]: LOADK     R17 4        ; R17 := 4.000000
+272 [-]: CONST     R17 4        ; R17 := 4.000000
 273 [-]: CALL      R16 2 1      ; R16(R17)
 274 [-]: JMP       322          ; PC := 322
 275 [-]: GETUPVAL  R16 U10      ; R16 := U10
@@ -1406,13 +1406,13 @@
 297 [-]: JMP       304          ; PC := 304
 298 [-]: GETGLOBAL R19 K40      ; R19 := 0x603636ad
 299 [-]: LOADK     R20 K63      ; R20 := "/Lotus/Language/Dojo/VaultContributionSourceClanVault_UPPER"
-300 [-]: LOADBOOL  R21 0 0      ; R21 := false
+300 [-]: LOADKB    R21 0 0      ; R21 := false
 301 [-]: CALL      R19 3 2      ; R19 := R19(R20,R21)
 302 [-]: MOVE      R18 R19      ; R18 := R19
 303 [-]: JMP       309          ; PC := 309
 304 [-]: GETGLOBAL R19 K40      ; R19 := 0x603636ad
 305 [-]: LOADK     R20 K64      ; R20 := "/Lotus/Language/Dojo/VaultContributionSourcePersonal_UPPER"
-306 [-]: LOADBOOL  R21 0 0      ; R21 := false
+306 [-]: LOADKB    R21 0 0      ; R21 := false
 307 [-]: CALL      R19 3 2      ; R19 := R19(R20,R21)
 308 [-]: MOVE      R18 R19      ; R18 := R19
 309 [-]: MOVE      R19 R17      ; R19 := R17
@@ -1430,7 +1430,7 @@
 321 [-]: CALL      R19 3 1      ; R19(R20,R21)
 322 [-]: GETGLOBAL R19 K6       ; R19 := _T
 323 [-]: GETTABLE  R19 R19 K7   ; R19 := R19[0x33cfa273]
-324 [-]: LOADK     R20 -1       ; R20 := -1.000000
+324 [-]: CONST     R20 -1       ; R20 := -1.000000
 325 [-]: CALL      R19 2 1      ; R19(R20)
 326 [-]: RETURN    R0 1         ; return 
 
@@ -1477,8 +1477,8 @@
  31 [-]: JMP       34           ; PC := 34
  32 [-]: LT        1 R1 K9      ; if R1 < 8.000000 then PC := 35
  33 [-]: JMP       35           ; PC := 35
- 34 [-]: LOADBOOL  R2 0 1       ; R2 := false; PC := 35
- 35 [-]: LOADBOOL  R2 1 0       ; R2 := true
+ 34 [-]: LOADKB    R2 0 1       ; R2 := false; PC := 35
+ 35 [-]: LOADKB    R2 1 0       ; R2 := true
  36 [-]: SETUPVAL  R2 U2        ; U82 := R2
  37 [-]: LE        0 K9 R1      ; if 8.000000 > R1 then PC := 43
  38 [-]: JMP       43           ; PC := 43
@@ -1491,8 +1491,8 @@
  45 [-]: JMP       54           ; PC := 54
  46 [-]: EQ        1 R1 K10     ; if R1 == 7.000000 then PC := 49
  47 [-]: JMP       49           ; PC := 49
- 48 [-]: LOADBOOL  R2 0 1       ; R2 := false; PC := 49
- 49 [-]: LOADBOOL  R2 1 0       ; R2 := true
+ 48 [-]: LOADKB    R2 0 1       ; R2 := false; PC := 49
+ 49 [-]: LOADKB    R2 1 0       ; R2 := true
  50 [-]: SETUPVAL  R2 U5        ; U82 := R5
  51 [-]: GETUPVAL  R2 U6        ; R2 := U6
  52 [-]: CALL      R2 1 1       ; R2()
@@ -1505,23 +1505,23 @@
  59 [-]: EQ        0 R1 K11     ; if R1 ~= 2.000000 then PC := 65
  60 [-]: JMP       65           ; PC := 65
  61 [-]: GETUPVAL  R2 U7        ; R2 := U7
- 62 [-]: LOADBOOL  R3 1 0       ; R3 := true
+ 62 [-]: LOADKB    R3 1 0       ; R3 := true
  63 [-]: CALL      R2 2 1       ; R2(R3)
  64 [-]: JMP       83           ; PC := 83
  65 [-]: EQ        0 R1 K12     ; if R1 ~= 3.000000 then PC := 71
  66 [-]: JMP       71           ; PC := 71
  67 [-]: GETUPVAL  R2 U8        ; R2 := U8
- 68 [-]: LOADBOOL  R3 1 0       ; R3 := true
+ 68 [-]: LOADKB    R3 1 0       ; R3 := true
  69 [-]: CALL      R2 2 1       ; R2(R3)
  70 [-]: JMP       83           ; PC := 83
  71 [-]: EQ        0 R1 K13     ; if R1 ~= 4.000000 then PC := 77
  72 [-]: JMP       77           ; PC := 77
  73 [-]: GETUPVAL  R2 U7        ; R2 := U7
- 74 [-]: LOADBOOL  R3 0 0       ; R3 := false
+ 74 [-]: LOADKB    R3 0 0       ; R3 := false
  75 [-]: CALL      R2 2 1       ; R2(R3)
  76 [-]: JMP       83           ; PC := 83
  77 [-]: GETUPVAL  R2 U8        ; R2 := U8
- 78 [-]: LOADBOOL  R3 0 0       ; R3 := false
+ 78 [-]: LOADKB    R3 0 0       ; R3 := false
  79 [-]: CALL      R2 2 1       ; R2(R3)
  80 [-]: JMP       83           ; PC := 83
  81 [-]: LOADNIL   R2 R2        ; R2 := nil
@@ -1546,7 +1546,7 @@
   6 [-]: GETUPVAL  R2 U0        ; R2 := U0
   7 [-]: SELF      R2 R2 K2     ; R3 := R2; R2 := R2[0x42b04007]
   8 [-]: LOADK     R4 K3        ; R4 := "/Lotus/Language/Dojo/VaultContribution"
-  9 [-]: LOADBOOL  R5 1 0       ; R5 := true
+  9 [-]: LOADKB    R5 1 0       ; R5 := true
  10 [-]: NEWTABLE  R6 0 2       ; R6 := {}
  11 [-]: SETTABLE  R6 K4 R1     ; R6["VAULT_NAME"] := R1
  12 [-]: GETUPVAL  R7 U1        ; R7 := U1
@@ -1611,7 +1611,7 @@
  71 [-]: GETUPVAL  R4 U0        ; R4 := U0
  72 [-]: SELF      R4 R4 K2     ; R5 := R4; R4 := R4[0x42b04007]
  73 [-]: LOADK     R6 K3        ; R6 := "/Lotus/Language/Dojo/VaultContribution"
- 74 [-]: LOADBOOL  R7 1 0       ; R7 := true
+ 74 [-]: LOADKB    R7 1 0       ; R7 := true
  75 [-]: NEWTABLE  R8 0 2       ; R8 := {}
  76 [-]: SETTABLE  R8 K4 R3     ; R8["VAULT_NAME"] := R3
  77 [-]: GETUPVAL  R9 U1        ; R9 := U1
@@ -1642,7 +1642,7 @@
 102 [-]: CALL      R5 3 1       ; R5(R6,R7)
 103 [-]: GETUPVAL  R5 U5        ; R5 := U5
 104 [-]: SELF      R5 R5 K28    ; R6 := R5; R5 := R5[0x3a57bc9f]
-105 [-]: LOADK     R7 64        ; R7 := 64.000000
+105 [-]: CONST     R7 64        ; R7 := 64.000000
 106 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
 107 [-]: TEST      R5 0         ; if not R5 then PC := 116
 108 [-]: JMP       116          ; PC := 116
@@ -1688,7 +1688,7 @@
 ; Max Stack Size:  5
 
   1 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  2 [-]: NOT       R1 R1        ; R1 := not R1
+  2 [-]: NOT       R1 R1        ; R1 :=  R1
   3 [-]: SETUPVAL  R1 U0        ; U82 := R0
   4 [-]: GETTABLE  R1 R0 K0     ; R1 := R0["mMovie"]
   5 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1[0xe4162eed]
@@ -1710,7 +1710,7 @@
   1 [-]: NEWTABLE  R0 0 0       ; R0 := {}
   2 [-]: GETUPVAL  R1 U0        ; R1 := U0
   3 [-]: SELF      R1 R1 K0     ; R2 := R1; R1 := R1[0x3a57bc9f]
-  4 [-]: LOADK     R3 64        ; R3 := 64.000000
+  4 [-]: CONST     R3 64        ; R3 := 64.000000
   5 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
   6 [-]: TEST      R1 0         ; if not R1 then PC := 34
   7 [-]: JMP       34           ; PC := 34
@@ -1722,12 +1722,12 @@
  13 [-]: LOADK     R5 K4        ; R5 := "<CHECKMARK>"
  14 [-]: LOADK     R6 K5        ; R6 := "<CHECKMARK_OUTLINE>"
  15 [-]: CALL      R3 4 2       ; R3 := R3(R4,R5,R6)
- 16 [-]: LOADBOOL  R4 1 0       ; R4 := true
+ 16 [-]: LOADKB    R4 1 0       ; R4 := true
  17 [-]: CALL      R1 4 2       ; R1 := R1(R2,R3,R4)
  18 [-]: GETUPVAL  R2 U1        ; R2 := U1
  19 [-]: SELF      R2 R2 K2     ; R3 := R2; R2 := R2[0x42b04007]
  20 [-]: LOADK     R4 K6        ; R4 := "/Lotus/Language/Dojo/AutoContributeFromVault"
- 21 [-]: LOADBOOL  R5 0 0       ; R5 := false
+ 21 [-]: LOADKB    R5 0 0       ; R5 := false
  22 [-]: NEWTABLE  R6 0 1       ; R6 := {}
  23 [-]: SETTABLE  R6 K7 R1     ; R6["STATE"] := R1
  24 [-]: CALL      R2 5 2       ; R2 := R2(R3,R4,R5,R6)
@@ -1758,8 +1758,8 @@
   3 [-]: GETUPVAL  R3 U0        ; R3 := U0
   4 [-]: EQ        1 R2 K4      ; if R2 == 4.000000 then PC := 7
   5 [-]: JMP       7            ; PC := 7
-  6 [-]: LOADBOOL  R4 0 1       ; R4 := false; PC := 7
-  7 [-]: LOADBOOL  R4 1 0       ; R4 := true
+  6 [-]: LOADKB    R4 0 1       ; R4 := false; PC := 7
+  7 [-]: LOADKB    R4 1 0       ; R4 := true
   8 [-]: MOVE      R5 R0        ; R5 := R0
   9 [-]: CALL      R3 3 1       ; R3(R4,R5)
  10 [-]: RETURN    R0 1         ; return 

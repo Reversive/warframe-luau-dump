@@ -14,19 +14,19 @@
   5 [-]: LOADK     R2 K2        ; R2 := "Lotus.Types.Vehicles.Hoverboard.HoverboardAbility.HoverboardAbilityUtil"
   6 [-]: CALL      R1 2 2       ; R1 := R1(R2)
   7 [-]: NEWTABLE  R2 11 0      ; R2 := {}
-  8 [-]: LOADK     R3 5         ; R3 := 5.000000
-  9 [-]: LOADK     R4 10        ; R4 := 10.000000
- 10 [-]: LOADK     R5 15        ; R5 := 15.000000
- 11 [-]: LOADK     R6 20        ; R6 := 20.000000
- 12 [-]: LOADK     R7 25        ; R7 := 25.000000
- 13 [-]: LOADK     R8 30        ; R8 := 30.000000
- 14 [-]: LOADK     R9 35        ; R9 := 35.000000
- 15 [-]: LOADK     R10 40       ; R10 := 40.000000
- 16 [-]: LOADK     R11 45       ; R11 := 45.000000
- 17 [-]: LOADK     R12 50       ; R12 := 50.000000
- 18 [-]: LOADK     R13 55       ; R13 := 55.000000
+  8 [-]: CONST     R3 5         ; R3 := 5.000000
+  9 [-]: CONST     R4 10        ; R4 := 10.000000
+ 10 [-]: CONST     R5 15        ; R5 := 15.000000
+ 11 [-]: CONST     R6 20        ; R6 := 20.000000
+ 12 [-]: CONST     R7 25        ; R7 := 25.000000
+ 13 [-]: CONST     R8 30        ; R8 := 30.000000
+ 14 [-]: CONST     R9 35        ; R9 := 35.000000
+ 15 [-]: CONST     R10 40       ; R10 := 40.000000
+ 16 [-]: CONST     R11 45       ; R11 := 45.000000
+ 17 [-]: CONST     R12 50       ; R12 := 50.000000
+ 18 [-]: CONST     R13 55       ; R13 := 55.000000
  19 [-]: SETLIST   R2 11 1      ; R2[(1-1)*FPF+i] := R(2+i), 1 <= i <= 11
- 20 [-]: LOADK     R3 1         ; R3 := 1.000000
+ 20 [-]: CONST     R3 1         ; R3 := 1.000000
  21 [-]: CLOSURE   R4 0         ; R4 := closure(Function #1)
  22 [-]: MOVE      R0 R2        ; R0 := R2
  23 [-]: CLOSURE   R5 1         ; R5 := closure(Function #2)
@@ -59,7 +59,7 @@
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0x42dcc9f5
   2 [-]: MOVE      R2 R0        ; R2 := R0
-  3 [-]: LOADK     R3 1         ; R3 := 1.000000
+  3 [-]: CONST     R3 1         ; R3 := 1.000000
   4 [-]: GETUPVAL  R4 U0        ; R4 := U0
   5 [-]: LEN       R4 R4        ; R4 := # R4
   6 [-]: CALL      R1 4 2       ; R1 := R1(R2,R3,R4)

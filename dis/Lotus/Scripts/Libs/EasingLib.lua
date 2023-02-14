@@ -40,176 +40,178 @@
  31 [-]: MOVE      R0 R0        ; R0 := R0
  32 [-]: SETGLOBAL R9 K14       ; inOutQuad := R9
  33 [-]: CLOSURE   R9 6         ; R9 := closure(Function #7)
- 34 [-]: MOVE      R0 R8        ; R0 := R8
- 35 [-]: MOVE      R0 R7        ; R0 := R7
- 36 [-]: SETGLOBAL R9 K15       ; outInQuad := R9
- 37 [-]: CLOSURE   R9 7         ; R9 := closure(Function #8)
- 38 [-]: MOVE      R0 R0        ; R0 := R0
- 39 [-]: CLOSURE   R10 8        ; R10 := closure(Function #9)
+ 34 [-]: SETGLOBAL R9 K15       ; inOutQuadIntegral := R9
+ 35 [-]: CLOSURE   R9 7         ; R9 := closure(Function #8)
+ 36 [-]: MOVE      R0 R8        ; R0 := R8
+ 37 [-]: MOVE      R0 R7        ; R0 := R7
+ 38 [-]: SETGLOBAL R9 K16       ; outInQuad := R9
+ 39 [-]: CLOSURE   R9 8         ; R9 := closure(Function #9)
  40 [-]: MOVE      R0 R0        ; R0 := R0
- 41 [-]: CLOSURE   R11 9        ; R11 := closure(Function #10)
- 42 [-]: MOVE      R0 R9        ; R0 := R9
- 43 [-]: SETGLOBAL R11 K16      ; inCubic := R11
- 44 [-]: CLOSURE   R11 10       ; R11 := closure(Function #11)
- 45 [-]: MOVE      R0 R10       ; R0 := R10
- 46 [-]: SETGLOBAL R11 K17      ; outCubic := R11
- 47 [-]: CLOSURE   R11 11       ; R11 := closure(Function #12)
- 48 [-]: SETGLOBAL R11 K18      ; inOutCubic := R11
+ 41 [-]: CLOSURE   R10 9        ; R10 := closure(Function #10)
+ 42 [-]: MOVE      R0 R0        ; R0 := R0
+ 43 [-]: CLOSURE   R11 10       ; R11 := closure(Function #11)
+ 44 [-]: MOVE      R0 R9        ; R0 := R9
+ 45 [-]: SETGLOBAL R11 K17      ; inCubic := R11
+ 46 [-]: CLOSURE   R11 11       ; R11 := closure(Function #12)
+ 47 [-]: MOVE      R0 R10       ; R0 := R10
+ 48 [-]: SETGLOBAL R11 K18      ; outCubic := R11
  49 [-]: CLOSURE   R11 12       ; R11 := closure(Function #13)
- 50 [-]: MOVE      R0 R10       ; R0 := R10
- 51 [-]: MOVE      R0 R9        ; R0 := R9
- 52 [-]: SETGLOBAL R11 K19      ; outInCubic := R11
- 53 [-]: CLOSURE   R11 13       ; R11 := closure(Function #14)
- 54 [-]: MOVE      R0 R0        ; R0 := R0
- 55 [-]: CLOSURE   R12 14       ; R12 := closure(Function #15)
+ 50 [-]: SETGLOBAL R11 K19      ; inOutCubic := R11
+ 51 [-]: CLOSURE   R11 13       ; R11 := closure(Function #14)
+ 52 [-]: MOVE      R0 R10       ; R0 := R10
+ 53 [-]: MOVE      R0 R9        ; R0 := R9
+ 54 [-]: SETGLOBAL R11 K20      ; outInCubic := R11
+ 55 [-]: CLOSURE   R11 14       ; R11 := closure(Function #15)
  56 [-]: MOVE      R0 R0        ; R0 := R0
- 57 [-]: CLOSURE   R13 15       ; R13 := closure(Function #16)
- 58 [-]: MOVE      R0 R11       ; R0 := R11
- 59 [-]: SETGLOBAL R13 K20      ; inQuart := R13
- 60 [-]: CLOSURE   R13 16       ; R13 := closure(Function #17)
- 61 [-]: MOVE      R0 R12       ; R0 := R12
- 62 [-]: SETGLOBAL R13 K21      ; outQuart := R13
- 63 [-]: CLOSURE   R13 17       ; R13 := closure(Function #18)
- 64 [-]: MOVE      R0 R0        ; R0 := R0
- 65 [-]: SETGLOBAL R13 K22      ; inOutQuart := R13
- 66 [-]: CLOSURE   R13 18       ; R13 := closure(Function #19)
- 67 [-]: MOVE      R0 R12       ; R0 := R12
- 68 [-]: MOVE      R0 R11       ; R0 := R11
- 69 [-]: SETGLOBAL R13 K23      ; outInQuart := R13
- 70 [-]: CLOSURE   R13 19       ; R13 := closure(Function #20)
- 71 [-]: MOVE      R0 R0        ; R0 := R0
- 72 [-]: CLOSURE   R14 20       ; R14 := closure(Function #21)
+ 57 [-]: CLOSURE   R12 15       ; R12 := closure(Function #16)
+ 58 [-]: MOVE      R0 R0        ; R0 := R0
+ 59 [-]: CLOSURE   R13 16       ; R13 := closure(Function #17)
+ 60 [-]: MOVE      R0 R11       ; R0 := R11
+ 61 [-]: SETGLOBAL R13 K21      ; inQuart := R13
+ 62 [-]: CLOSURE   R13 17       ; R13 := closure(Function #18)
+ 63 [-]: MOVE      R0 R12       ; R0 := R12
+ 64 [-]: SETGLOBAL R13 K22      ; outQuart := R13
+ 65 [-]: CLOSURE   R13 18       ; R13 := closure(Function #19)
+ 66 [-]: MOVE      R0 R0        ; R0 := R0
+ 67 [-]: SETGLOBAL R13 K23      ; inOutQuart := R13
+ 68 [-]: CLOSURE   R13 19       ; R13 := closure(Function #20)
+ 69 [-]: MOVE      R0 R12       ; R0 := R12
+ 70 [-]: MOVE      R0 R11       ; R0 := R11
+ 71 [-]: SETGLOBAL R13 K24      ; outInQuart := R13
+ 72 [-]: CLOSURE   R13 20       ; R13 := closure(Function #21)
  73 [-]: MOVE      R0 R0        ; R0 := R0
- 74 [-]: CLOSURE   R15 21       ; R15 := closure(Function #22)
- 75 [-]: MOVE      R0 R13       ; R0 := R13
- 76 [-]: SETGLOBAL R15 K24      ; inQuint := R15
- 77 [-]: CLOSURE   R15 22       ; R15 := closure(Function #23)
- 78 [-]: MOVE      R0 R14       ; R0 := R14
- 79 [-]: SETGLOBAL R15 K25      ; outQuint := R15
- 80 [-]: CLOSURE   R15 23       ; R15 := closure(Function #24)
- 81 [-]: MOVE      R0 R0        ; R0 := R0
- 82 [-]: SETGLOBAL R15 K26      ; inOutQuint := R15
- 83 [-]: CLOSURE   R15 24       ; R15 := closure(Function #25)
- 84 [-]: MOVE      R0 R14       ; R0 := R14
- 85 [-]: MOVE      R0 R13       ; R0 := R13
- 86 [-]: SETGLOBAL R15 K27      ; outInQuint := R15
- 87 [-]: CLOSURE   R15 25       ; R15 := closure(Function #26)
- 88 [-]: MOVE      R0 R2        ; R0 := R2
- 89 [-]: MOVE      R0 R3        ; R0 := R3
- 90 [-]: CLOSURE   R16 26       ; R16 := closure(Function #27)
- 91 [-]: MOVE      R0 R1        ; R0 := R1
- 92 [-]: MOVE      R0 R3        ; R0 := R3
- 93 [-]: CLOSURE   R17 27       ; R17 := closure(Function #28)
- 94 [-]: MOVE      R0 R15       ; R0 := R15
- 95 [-]: SETGLOBAL R17 K28      ; inSine := R17
- 96 [-]: CLOSURE   R17 28       ; R17 := closure(Function #29)
- 97 [-]: MOVE      R0 R16       ; R0 := R16
- 98 [-]: SETGLOBAL R17 K29      ; outSine := R17
- 99 [-]: CLOSURE   R17 29       ; R17 := closure(Function #30)
-100 [-]: MOVE      R0 R2        ; R0 := R2
-101 [-]: MOVE      R0 R3        ; R0 := R3
-102 [-]: SETGLOBAL R17 K30      ; inOutSine := R17
-103 [-]: CLOSURE   R17 30       ; R17 := closure(Function #31)
-104 [-]: MOVE      R0 R16       ; R0 := R16
-105 [-]: MOVE      R0 R15       ; R0 := R15
-106 [-]: SETGLOBAL R17 K31      ; outInSine := R17
-107 [-]: CLOSURE   R17 31       ; R17 := closure(Function #32)
-108 [-]: MOVE      R0 R0        ; R0 := R0
-109 [-]: CLOSURE   R18 32       ; R18 := closure(Function #33)
+ 74 [-]: CLOSURE   R14 21       ; R14 := closure(Function #22)
+ 75 [-]: MOVE      R0 R0        ; R0 := R0
+ 76 [-]: CLOSURE   R15 22       ; R15 := closure(Function #23)
+ 77 [-]: MOVE      R0 R13       ; R0 := R13
+ 78 [-]: SETGLOBAL R15 K25      ; inQuint := R15
+ 79 [-]: CLOSURE   R15 23       ; R15 := closure(Function #24)
+ 80 [-]: MOVE      R0 R14       ; R0 := R14
+ 81 [-]: SETGLOBAL R15 K26      ; outQuint := R15
+ 82 [-]: CLOSURE   R15 24       ; R15 := closure(Function #25)
+ 83 [-]: MOVE      R0 R0        ; R0 := R0
+ 84 [-]: SETGLOBAL R15 K27      ; inOutQuint := R15
+ 85 [-]: CLOSURE   R15 25       ; R15 := closure(Function #26)
+ 86 [-]: MOVE      R0 R14       ; R0 := R14
+ 87 [-]: MOVE      R0 R13       ; R0 := R13
+ 88 [-]: SETGLOBAL R15 K28      ; outInQuint := R15
+ 89 [-]: CLOSURE   R15 26       ; R15 := closure(Function #27)
+ 90 [-]: MOVE      R0 R2        ; R0 := R2
+ 91 [-]: MOVE      R0 R3        ; R0 := R3
+ 92 [-]: CLOSURE   R16 27       ; R16 := closure(Function #28)
+ 93 [-]: MOVE      R0 R1        ; R0 := R1
+ 94 [-]: MOVE      R0 R3        ; R0 := R3
+ 95 [-]: CLOSURE   R17 28       ; R17 := closure(Function #29)
+ 96 [-]: MOVE      R0 R15       ; R0 := R15
+ 97 [-]: SETGLOBAL R17 K29      ; inSine := R17
+ 98 [-]: CLOSURE   R17 29       ; R17 := closure(Function #30)
+ 99 [-]: MOVE      R0 R16       ; R0 := R16
+100 [-]: SETGLOBAL R17 K30      ; outSine := R17
+101 [-]: CLOSURE   R17 30       ; R17 := closure(Function #31)
+102 [-]: MOVE      R0 R2        ; R0 := R2
+103 [-]: MOVE      R0 R3        ; R0 := R3
+104 [-]: SETGLOBAL R17 K31      ; inOutSine := R17
+105 [-]: CLOSURE   R17 31       ; R17 := closure(Function #32)
+106 [-]: MOVE      R0 R16       ; R0 := R16
+107 [-]: MOVE      R0 R15       ; R0 := R15
+108 [-]: SETGLOBAL R17 K32      ; outInSine := R17
+109 [-]: CLOSURE   R17 32       ; R17 := closure(Function #33)
 110 [-]: MOVE      R0 R0        ; R0 := R0
-111 [-]: CLOSURE   R19 33       ; R19 := closure(Function #34)
-112 [-]: MOVE      R0 R17       ; R0 := R17
-113 [-]: SETGLOBAL R19 K32      ; inExpo := R19
-114 [-]: CLOSURE   R19 34       ; R19 := closure(Function #35)
-115 [-]: MOVE      R0 R18       ; R0 := R18
-116 [-]: SETGLOBAL R19 K33      ; outExpo := R19
-117 [-]: CLOSURE   R19 35       ; R19 := closure(Function #36)
-118 [-]: MOVE      R0 R0        ; R0 := R0
-119 [-]: SETGLOBAL R19 K34      ; inOutExpo := R19
-120 [-]: CLOSURE   R19 36       ; R19 := closure(Function #37)
-121 [-]: MOVE      R0 R18       ; R0 := R18
-122 [-]: MOVE      R0 R17       ; R0 := R17
-123 [-]: SETGLOBAL R19 K35      ; outInExpo := R19
-124 [-]: CLOSURE   R19 37       ; R19 := closure(Function #38)
-125 [-]: MOVE      R0 R4        ; R0 := R4
-126 [-]: MOVE      R0 R0        ; R0 := R0
-127 [-]: CLOSURE   R20 38       ; R20 := closure(Function #39)
-128 [-]: MOVE      R0 R4        ; R0 := R4
-129 [-]: MOVE      R0 R0        ; R0 := R0
-130 [-]: CLOSURE   R21 39       ; R21 := closure(Function #40)
-131 [-]: MOVE      R0 R19       ; R0 := R19
-132 [-]: SETGLOBAL R21 K36      ; inCirc := R21
-133 [-]: CLOSURE   R21 40       ; R21 := closure(Function #41)
-134 [-]: MOVE      R0 R20       ; R0 := R20
-135 [-]: SETGLOBAL R21 K37      ; outCirc := R21
-136 [-]: CLOSURE   R21 41       ; R21 := closure(Function #42)
-137 [-]: MOVE      R0 R4        ; R0 := R4
-138 [-]: SETGLOBAL R21 K38      ; inOutCirc := R21
-139 [-]: CLOSURE   R21 42       ; R21 := closure(Function #43)
-140 [-]: MOVE      R0 R20       ; R0 := R20
-141 [-]: MOVE      R0 R19       ; R0 := R19
-142 [-]: SETGLOBAL R21 K39      ; outInCirc := R21
-143 [-]: CLOSURE   R21 43       ; R21 := closure(Function #44)
-144 [-]: MOVE      R0 R5        ; R0 := R5
-145 [-]: MOVE      R0 R3        ; R0 := R3
-146 [-]: MOVE      R0 R6        ; R0 := R6
-147 [-]: MOVE      R0 R0        ; R0 := R0
-148 [-]: MOVE      R0 R1        ; R0 := R1
-149 [-]: CLOSURE   R22 44       ; R22 := closure(Function #45)
-150 [-]: MOVE      R0 R5        ; R0 := R5
-151 [-]: MOVE      R0 R3        ; R0 := R3
-152 [-]: MOVE      R0 R6        ; R0 := R6
-153 [-]: MOVE      R0 R0        ; R0 := R0
-154 [-]: MOVE      R0 R1        ; R0 := R1
-155 [-]: CLOSURE   R23 45       ; R23 := closure(Function #46)
-156 [-]: MOVE      R0 R21       ; R0 := R21
-157 [-]: SETGLOBAL R23 K40      ; inElastic := R23
-158 [-]: CLOSURE   R23 46       ; R23 := closure(Function #47)
-159 [-]: MOVE      R0 R22       ; R0 := R22
-160 [-]: SETGLOBAL R23 K41      ; outElastic := R23
-161 [-]: CLOSURE   R23 47       ; R23 := closure(Function #48)
-162 [-]: MOVE      R0 R5        ; R0 := R5
-163 [-]: MOVE      R0 R3        ; R0 := R3
-164 [-]: MOVE      R0 R6        ; R0 := R6
-165 [-]: MOVE      R0 R0        ; R0 := R0
-166 [-]: MOVE      R0 R1        ; R0 := R1
-167 [-]: SETGLOBAL R23 K42      ; inOutElastic := R23
-168 [-]: CLOSURE   R23 48       ; R23 := closure(Function #49)
-169 [-]: MOVE      R0 R22       ; R0 := R22
-170 [-]: MOVE      R0 R21       ; R0 := R21
-171 [-]: SETGLOBAL R23 K43      ; outInElastic := R23
-172 [-]: CLOSURE   R23 49       ; R23 := closure(Function #50)
-173 [-]: CLOSURE   R24 50       ; R24 := closure(Function #51)
-174 [-]: CLOSURE   R25 51       ; R25 := closure(Function #52)
-175 [-]: MOVE      R0 R23       ; R0 := R23
-176 [-]: SETGLOBAL R25 K44      ; inBack := R25
-177 [-]: CLOSURE   R25 52       ; R25 := closure(Function #53)
-178 [-]: MOVE      R0 R24       ; R0 := R24
-179 [-]: SETGLOBAL R25 K45      ; outBack := R25
-180 [-]: CLOSURE   R25 53       ; R25 := closure(Function #54)
-181 [-]: SETGLOBAL R25 K46      ; inOutBack := R25
+111 [-]: CLOSURE   R18 33       ; R18 := closure(Function #34)
+112 [-]: MOVE      R0 R0        ; R0 := R0
+113 [-]: CLOSURE   R19 34       ; R19 := closure(Function #35)
+114 [-]: MOVE      R0 R17       ; R0 := R17
+115 [-]: SETGLOBAL R19 K33      ; inExpo := R19
+116 [-]: CLOSURE   R19 35       ; R19 := closure(Function #36)
+117 [-]: MOVE      R0 R18       ; R0 := R18
+118 [-]: SETGLOBAL R19 K34      ; outExpo := R19
+119 [-]: CLOSURE   R19 36       ; R19 := closure(Function #37)
+120 [-]: MOVE      R0 R0        ; R0 := R0
+121 [-]: SETGLOBAL R19 K35      ; inOutExpo := R19
+122 [-]: CLOSURE   R19 37       ; R19 := closure(Function #38)
+123 [-]: MOVE      R0 R18       ; R0 := R18
+124 [-]: MOVE      R0 R17       ; R0 := R17
+125 [-]: SETGLOBAL R19 K36      ; outInExpo := R19
+126 [-]: CLOSURE   R19 38       ; R19 := closure(Function #39)
+127 [-]: MOVE      R0 R4        ; R0 := R4
+128 [-]: MOVE      R0 R0        ; R0 := R0
+129 [-]: CLOSURE   R20 39       ; R20 := closure(Function #40)
+130 [-]: MOVE      R0 R4        ; R0 := R4
+131 [-]: MOVE      R0 R0        ; R0 := R0
+132 [-]: CLOSURE   R21 40       ; R21 := closure(Function #41)
+133 [-]: MOVE      R0 R19       ; R0 := R19
+134 [-]: SETGLOBAL R21 K37      ; inCirc := R21
+135 [-]: CLOSURE   R21 41       ; R21 := closure(Function #42)
+136 [-]: MOVE      R0 R20       ; R0 := R20
+137 [-]: SETGLOBAL R21 K38      ; outCirc := R21
+138 [-]: CLOSURE   R21 42       ; R21 := closure(Function #43)
+139 [-]: MOVE      R0 R4        ; R0 := R4
+140 [-]: SETGLOBAL R21 K39      ; inOutCirc := R21
+141 [-]: CLOSURE   R21 43       ; R21 := closure(Function #44)
+142 [-]: MOVE      R0 R20       ; R0 := R20
+143 [-]: MOVE      R0 R19       ; R0 := R19
+144 [-]: SETGLOBAL R21 K40      ; outInCirc := R21
+145 [-]: CLOSURE   R21 44       ; R21 := closure(Function #45)
+146 [-]: MOVE      R0 R5        ; R0 := R5
+147 [-]: MOVE      R0 R3        ; R0 := R3
+148 [-]: MOVE      R0 R6        ; R0 := R6
+149 [-]: MOVE      R0 R0        ; R0 := R0
+150 [-]: MOVE      R0 R1        ; R0 := R1
+151 [-]: CLOSURE   R22 45       ; R22 := closure(Function #46)
+152 [-]: MOVE      R0 R5        ; R0 := R5
+153 [-]: MOVE      R0 R3        ; R0 := R3
+154 [-]: MOVE      R0 R6        ; R0 := R6
+155 [-]: MOVE      R0 R0        ; R0 := R0
+156 [-]: MOVE      R0 R1        ; R0 := R1
+157 [-]: CLOSURE   R23 46       ; R23 := closure(Function #47)
+158 [-]: MOVE      R0 R21       ; R0 := R21
+159 [-]: SETGLOBAL R23 K41      ; inElastic := R23
+160 [-]: CLOSURE   R23 47       ; R23 := closure(Function #48)
+161 [-]: MOVE      R0 R22       ; R0 := R22
+162 [-]: SETGLOBAL R23 K42      ; outElastic := R23
+163 [-]: CLOSURE   R23 48       ; R23 := closure(Function #49)
+164 [-]: MOVE      R0 R5        ; R0 := R5
+165 [-]: MOVE      R0 R3        ; R0 := R3
+166 [-]: MOVE      R0 R6        ; R0 := R6
+167 [-]: MOVE      R0 R0        ; R0 := R0
+168 [-]: MOVE      R0 R1        ; R0 := R1
+169 [-]: SETGLOBAL R23 K43      ; inOutElastic := R23
+170 [-]: CLOSURE   R23 49       ; R23 := closure(Function #50)
+171 [-]: MOVE      R0 R22       ; R0 := R22
+172 [-]: MOVE      R0 R21       ; R0 := R21
+173 [-]: SETGLOBAL R23 K44      ; outInElastic := R23
+174 [-]: CLOSURE   R23 50       ; R23 := closure(Function #51)
+175 [-]: CLOSURE   R24 51       ; R24 := closure(Function #52)
+176 [-]: CLOSURE   R25 52       ; R25 := closure(Function #53)
+177 [-]: MOVE      R0 R23       ; R0 := R23
+178 [-]: SETGLOBAL R25 K45      ; inBack := R25
+179 [-]: CLOSURE   R25 53       ; R25 := closure(Function #54)
+180 [-]: MOVE      R0 R24       ; R0 := R24
+181 [-]: SETGLOBAL R25 K46      ; outBack := R25
 182 [-]: CLOSURE   R25 54       ; R25 := closure(Function #55)
-183 [-]: MOVE      R0 R24       ; R0 := R24
-184 [-]: MOVE      R0 R23       ; R0 := R23
-185 [-]: SETGLOBAL R25 K47      ; outInBack := R25
-186 [-]: CLOSURE   R25 55       ; R25 := closure(Function #56)
-187 [-]: CLOSURE   R26 56       ; R26 := closure(Function #57)
-188 [-]: MOVE      R0 R25       ; R0 := R25
-189 [-]: CLOSURE   R27 57       ; R27 := closure(Function #58)
+183 [-]: SETGLOBAL R25 K47      ; inOutBack := R25
+184 [-]: CLOSURE   R25 55       ; R25 := closure(Function #56)
+185 [-]: MOVE      R0 R24       ; R0 := R24
+186 [-]: MOVE      R0 R23       ; R0 := R23
+187 [-]: SETGLOBAL R25 K48      ; outInBack := R25
+188 [-]: CLOSURE   R25 56       ; R25 := closure(Function #57)
+189 [-]: CLOSURE   R26 57       ; R26 := closure(Function #58)
 190 [-]: MOVE      R0 R25       ; R0 := R25
-191 [-]: SETGLOBAL R27 K48      ; outBounce := R27
-192 [-]: CLOSURE   R27 58       ; R27 := closure(Function #59)
-193 [-]: MOVE      R0 R26       ; R0 := R26
-194 [-]: SETGLOBAL R27 K49      ; inBounce := R27
-195 [-]: CLOSURE   R27 59       ; R27 := closure(Function #60)
-196 [-]: MOVE      R0 R26       ; R0 := R26
-197 [-]: MOVE      R0 R25       ; R0 := R25
-198 [-]: SETGLOBAL R27 K50      ; inOutBounce := R27
-199 [-]: CLOSURE   R27 60       ; R27 := closure(Function #61)
-200 [-]: MOVE      R0 R25       ; R0 := R25
-201 [-]: MOVE      R0 R26       ; R0 := R26
-202 [-]: SETGLOBAL R27 K51      ; outInBounce := R27
-203 [-]: RETURN    R0 1         ; return 
+191 [-]: CLOSURE   R27 58       ; R27 := closure(Function #59)
+192 [-]: MOVE      R0 R25       ; R0 := R25
+193 [-]: SETGLOBAL R27 K49      ; outBounce := R27
+194 [-]: CLOSURE   R27 59       ; R27 := closure(Function #60)
+195 [-]: MOVE      R0 R26       ; R0 := R26
+196 [-]: SETGLOBAL R27 K50      ; inBounce := R27
+197 [-]: CLOSURE   R27 60       ; R27 := closure(Function #61)
+198 [-]: MOVE      R0 R26       ; R0 := R26
+199 [-]: MOVE      R0 R25       ; R0 := R25
+200 [-]: SETGLOBAL R27 K51      ; inOutBounce := R27
+201 [-]: CLOSURE   R27 61       ; R27 := closure(Function #62)
+202 [-]: MOVE      R0 R25       ; R0 := R25
+203 [-]: MOVE      R0 R26       ; R0 := R26
+204 [-]: SETGLOBAL R27 K52      ; outInBounce := R27
+205 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
@@ -240,7 +242,7 @@
   1 [-]: DIV       R0 R0 R3     ; R0 := R0 / R3
   2 [-]: GETUPVAL  R4 U0        ; R4 := U0
   3 [-]: MOVE      R5 R0        ; R5 := R0
-  4 [-]: LOADK     R6 2         ; R6 := 2.000000
+  4 [-]: CONST     R6 2         ; R6 := 2.000000
   5 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
   6 [-]: MUL       R4 R2 R4     ; R4 := R2 * R4
   7 [-]: ADD       R4 R4 R1     ; R4 := R4 + R1
@@ -258,7 +260,7 @@
 ; Max Stack Size:  6
 
   1 [-]: DIV       R0 R0 R3     ; R0 := R0 / R3
-  2 [-]: UNM       R4 R2        ; R4 := ^ R2
+  2 [-]: UNM       R4 R2        ; R4 :=  R2
   3 [-]: MUL       R4 R4 R0     ; R4 := R4 * R0
   4 [-]: SUB       R5 R0 K0     ; R5 := R0 - 2.000000
   5 [-]: MUL       R4 R4 R5     ; R4 := R4 * R5
@@ -321,13 +323,13 @@
   5 [-]: DIV       R4 R2 K0     ; R4 := R2 / 2.000000
   6 [-]: GETUPVAL  R5 U0        ; R5 := U0
   7 [-]: MOVE      R6 R0        ; R6 := R0
-  8 [-]: LOADK     R7 2         ; R7 := 2.000000
+  8 [-]: CONST     R7 2         ; R7 := 2.000000
   9 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
  10 [-]: MUL       R4 R4 R5     ; R4 := R4 * R5
  11 [-]: ADD       R4 R4 R1     ; R4 := R4 + R1
  12 [-]: RETURN    R4 2         ; return R4
  13 [-]: JMP       23           ; PC := 23
- 14 [-]: UNM       R4 R2        ; R4 := ^ R2
+ 14 [-]: UNM       R4 R2        ; R4 :=  R2
  15 [-]: DIV       R4 R4 K0     ; R4 := R4 / 2.000000
  16 [-]: SUB       R5 R0 K1     ; R5 := R0 - 1.000000
  17 [-]: SUB       R6 R0 K2     ; R6 := R0 - 3.000000
@@ -343,6 +345,48 @@
 ;
 ; Name:            
 ; Defined at line: 72
+; #Upvalues:       0
+; #Parameters:     4
+; Is_vararg:       0
+; Max Stack Size:  6
+
+  1 [-]: DIV       R4 R0 R3     ; R4 := R0 / R3
+  2 [-]: MUL       R4 R4 K0     ; R4 := R4 * 2.000000
+  3 [-]: LT        0 R4 K1      ; if R4 >= 1.000000 then PC := 15
+  4 [-]: JMP       15           ; PC := 15
+  5 [-]: MUL       R4 K0 R2     ; R4 := 2.000000 * R2
+  6 [-]: MUL       R4 R4 R0     ; R4 := R4 * R0
+  7 [-]: MUL       R4 R4 R0     ; R4 := R4 * R0
+  8 [-]: MUL       R5 K2 R3     ; R5 := 3.000000 * R3
+  9 [-]: MUL       R5 R5 R3     ; R5 := R5 * R3
+ 10 [-]: DIV       R4 R4 R5     ; R4 := R4 / R5
+ 11 [-]: ADD       R4 R1 R4     ; R4 := R1 + R4
+ 12 [-]: MUL       R4 R0 R4     ; R4 := R0 * R4
+ 13 [-]: RETURN    R4 2         ; return R4
+ 14 [-]: JMP       31           ; PC := 31
+ 15 [-]: MUL       R4 K0 R0     ; R4 := 2.000000 * R0
+ 16 [-]: MUL       R4 R4 R0     ; R4 := R4 * R0
+ 17 [-]: MUL       R5 K2 R3     ; R5 := 3.000000 * R3
+ 18 [-]: MUL       R5 R5 R3     ; R5 := R5 * R3
+ 19 [-]: DIV       R4 R4 R5     ; R4 := R4 / R5
+ 20 [-]: MUL       R5 K0 R0     ; R5 := 2.000000 * R0
+ 21 [-]: DIV       R5 R5 R3     ; R5 := R5 / R3
+ 22 [-]: SUB       R4 R4 R5     ; R4 := R4 - R5
+ 23 [-]: ADD       R4 R4 K1     ; R4 := R4 + 1.000000
+ 24 [-]: MUL       R4 R2 R4     ; R4 := R2 * R4
+ 25 [-]: SUB       R4 R1 R4     ; R4 := R1 - R4
+ 26 [-]: MUL       R4 R0 R4     ; R4 := R0 * R4
+ 27 [-]: MUL       R5 R2 R3     ; R5 := R2 * R3
+ 28 [-]: DIV       R5 R5 K3     ; R5 := R5 / 6.000000
+ 29 [-]: ADD       R4 R4 R5     ; R4 := R4 + R5
+ 30 [-]: RETURN    R4 2         ; return R4
+ 31 [-]: RETURN    R0 1         ; return 
+
+
+; Function #8:
+;
+; Name:            
+; Defined at line: 80
 ; #Upvalues:       2
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -371,10 +415,10 @@
  21 [-]: RETURN    R0 1         ; return 
 
 
-; Function #8:
+; Function #9:
 ;
 ; Name:            
-; Defined at line: 80
+; Defined at line: 88
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -383,7 +427,7 @@
   1 [-]: DIV       R0 R0 R3     ; R0 := R0 / R3
   2 [-]: GETUPVAL  R4 U0        ; R4 := U0
   3 [-]: MOVE      R5 R0        ; R5 := R0
-  4 [-]: LOADK     R6 3         ; R6 := 3.000000
+  4 [-]: CONST     R6 3         ; R6 := 3.000000
   5 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
   6 [-]: MUL       R4 R2 R4     ; R4 := R2 * R4
   7 [-]: ADD       R4 R4 R1     ; R4 := R4 + R1
@@ -391,10 +435,10 @@
   9 [-]: RETURN    R0 1         ; return 
 
 
-; Function #9:
+; Function #10:
 ;
 ; Name:            
-; Defined at line: 85
+; Defined at line: 93
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -404,7 +448,7 @@
   2 [-]: SUB       R0 R4 K0     ; R0 := R4 - 1.000000
   3 [-]: GETUPVAL  R4 U0        ; R4 := U0
   4 [-]: MOVE      R5 R0        ; R5 := R0
-  5 [-]: LOADK     R6 3         ; R6 := 3.000000
+  5 [-]: CONST     R6 3         ; R6 := 3.000000
   6 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
   7 [-]: ADD       R4 R4 K0     ; R4 := R4 + 1.000000
   8 [-]: MUL       R4 R2 R4     ; R4 := R2 * R4
@@ -413,29 +457,10 @@
  11 [-]: RETURN    R0 1         ; return 
 
 
-; Function #10:
-;
-; Name:            
-; Defined at line: 90
-; #Upvalues:       1
-; #Parameters:     4
-; Is_vararg:       0
-; Max Stack Size:  9
-
-  1 [-]: GETUPVAL  R4 U0        ; R4 := U0
-  2 [-]: MOVE      R5 R0        ; R5 := R0
-  3 [-]: MOVE      R6 R1        ; R6 := R1
-  4 [-]: MOVE      R7 R2        ; R7 := R2
-  5 [-]: MOVE      R8 R3        ; R8 := R3
-  6 [-]: TAILCALL  R4 5 0       ; R4,... := R4(R5,R6,R7,R8)
-  7 [-]: RETURN    R4 0         ; return R4,...
-  8 [-]: RETURN    R0 1         ; return 
-
-
 ; Function #11:
 ;
 ; Name:            
-; Defined at line: 94
+; Defined at line: 98
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -454,7 +479,26 @@
 ; Function #12:
 ;
 ; Name:            
-; Defined at line: 98
+; Defined at line: 102
+; #Upvalues:       1
+; #Parameters:     4
+; Is_vararg:       0
+; Max Stack Size:  9
+
+  1 [-]: GETUPVAL  R4 U0        ; R4 := U0
+  2 [-]: MOVE      R5 R0        ; R5 := R0
+  3 [-]: MOVE      R6 R1        ; R6 := R1
+  4 [-]: MOVE      R7 R2        ; R7 := R2
+  5 [-]: MOVE      R8 R3        ; R8 := R3
+  6 [-]: TAILCALL  R4 5 0       ; R4,... := R4(R5,R6,R7,R8)
+  7 [-]: RETURN    R4 0         ; return R4,...
+  8 [-]: RETURN    R0 1         ; return 
+
+
+; Function #13:
+;
+; Name:            
+; Defined at line: 106
 ; #Upvalues:       0
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -482,10 +526,10 @@
  20 [-]: RETURN    R0 1         ; return 
 
 
-; Function #13:
+; Function #14:
 ;
 ; Name:            
-; Defined at line: 108
+; Defined at line: 116
 ; #Upvalues:       2
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -514,10 +558,10 @@
  21 [-]: RETURN    R0 1         ; return 
 
 
-; Function #14:
+; Function #15:
 ;
 ; Name:            
-; Defined at line: 116
+; Defined at line: 124
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -526,7 +570,7 @@
   1 [-]: DIV       R0 R0 R3     ; R0 := R0 / R3
   2 [-]: GETUPVAL  R4 U0        ; R4 := U0
   3 [-]: MOVE      R5 R0        ; R5 := R0
-  4 [-]: LOADK     R6 4         ; R6 := 4.000000
+  4 [-]: CONST     R6 4         ; R6 := 4.000000
   5 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
   6 [-]: MUL       R4 R2 R4     ; R4 := R2 * R4
   7 [-]: ADD       R4 R4 R1     ; R4 := R4 + R1
@@ -534,10 +578,10 @@
   9 [-]: RETURN    R0 1         ; return 
 
 
-; Function #15:
+; Function #16:
 ;
 ; Name:            
-; Defined at line: 121
+; Defined at line: 129
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -545,10 +589,10 @@
 
   1 [-]: DIV       R4 R0 R3     ; R4 := R0 / R3
   2 [-]: SUB       R0 R4 K0     ; R0 := R4 - 1.000000
-  3 [-]: UNM       R4 R2        ; R4 := ^ R2
+  3 [-]: UNM       R4 R2        ; R4 :=  R2
   4 [-]: GETUPVAL  R5 U0        ; R5 := U0
   5 [-]: MOVE      R6 R0        ; R6 := R0
-  6 [-]: LOADK     R7 4         ; R7 := 4.000000
+  6 [-]: CONST     R7 4         ; R7 := 4.000000
   7 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
   8 [-]: SUB       R5 R5 K0     ; R5 := R5 - 1.000000
   9 [-]: MUL       R4 R4 R5     ; R4 := R4 * R5
@@ -557,29 +601,10 @@
  12 [-]: RETURN    R0 1         ; return 
 
 
-; Function #16:
-;
-; Name:            
-; Defined at line: 126
-; #Upvalues:       1
-; #Parameters:     4
-; Is_vararg:       0
-; Max Stack Size:  9
-
-  1 [-]: GETUPVAL  R4 U0        ; R4 := U0
-  2 [-]: MOVE      R5 R0        ; R5 := R0
-  3 [-]: MOVE      R6 R1        ; R6 := R1
-  4 [-]: MOVE      R7 R2        ; R7 := R2
-  5 [-]: MOVE      R8 R3        ; R8 := R3
-  6 [-]: TAILCALL  R4 5 0       ; R4,... := R4(R5,R6,R7,R8)
-  7 [-]: RETURN    R4 0         ; return R4,...
-  8 [-]: RETURN    R0 1         ; return 
-
-
 ; Function #17:
 ;
 ; Name:            
-; Defined at line: 130
+; Defined at line: 134
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -598,7 +623,26 @@
 ; Function #18:
 ;
 ; Name:            
-; Defined at line: 134
+; Defined at line: 138
+; #Upvalues:       1
+; #Parameters:     4
+; Is_vararg:       0
+; Max Stack Size:  9
+
+  1 [-]: GETUPVAL  R4 U0        ; R4 := U0
+  2 [-]: MOVE      R5 R0        ; R5 := R0
+  3 [-]: MOVE      R6 R1        ; R6 := R1
+  4 [-]: MOVE      R7 R2        ; R7 := R2
+  5 [-]: MOVE      R8 R3        ; R8 := R3
+  6 [-]: TAILCALL  R4 5 0       ; R4,... := R4(R5,R6,R7,R8)
+  7 [-]: RETURN    R4 0         ; return R4,...
+  8 [-]: RETURN    R0 1         ; return 
+
+
+; Function #19:
+;
+; Name:            
+; Defined at line: 142
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -611,18 +655,18 @@
   5 [-]: DIV       R4 R2 K0     ; R4 := R2 / 2.000000
   6 [-]: GETUPVAL  R5 U0        ; R5 := U0
   7 [-]: MOVE      R6 R0        ; R6 := R0
-  8 [-]: LOADK     R7 4         ; R7 := 4.000000
+  8 [-]: CONST     R7 4         ; R7 := 4.000000
   9 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
  10 [-]: MUL       R4 R4 R5     ; R4 := R4 * R5
  11 [-]: ADD       R4 R4 R1     ; R4 := R4 + R1
  12 [-]: RETURN    R4 2         ; return R4
  13 [-]: JMP       25           ; PC := 25
  14 [-]: SUB       R0 R0 K0     ; R0 := R0 - 2.000000
- 15 [-]: UNM       R4 R2        ; R4 := ^ R2
+ 15 [-]: UNM       R4 R2        ; R4 :=  R2
  16 [-]: DIV       R4 R4 K0     ; R4 := R4 / 2.000000
  17 [-]: GETUPVAL  R5 U0        ; R5 := U0
  18 [-]: MOVE      R6 R0        ; R6 := R0
- 19 [-]: LOADK     R7 4         ; R7 := 4.000000
+ 19 [-]: CONST     R7 4         ; R7 := 4.000000
  20 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
  21 [-]: SUB       R5 R5 K0     ; R5 := R5 - 2.000000
  22 [-]: MUL       R4 R4 R5     ; R4 := R4 * R5
@@ -631,10 +675,10 @@
  25 [-]: RETURN    R0 1         ; return 
 
 
-; Function #19:
+; Function #20:
 ;
 ; Name:            
-; Defined at line: 144
+; Defined at line: 152
 ; #Upvalues:       2
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -663,10 +707,10 @@
  21 [-]: RETURN    R0 1         ; return 
 
 
-; Function #20:
+; Function #21:
 ;
 ; Name:            
-; Defined at line: 152
+; Defined at line: 160
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -675,7 +719,7 @@
   1 [-]: DIV       R0 R0 R3     ; R0 := R0 / R3
   2 [-]: GETUPVAL  R4 U0        ; R4 := U0
   3 [-]: MOVE      R5 R0        ; R5 := R0
-  4 [-]: LOADK     R6 5         ; R6 := 5.000000
+  4 [-]: CONST     R6 5         ; R6 := 5.000000
   5 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
   6 [-]: MUL       R4 R2 R4     ; R4 := R2 * R4
   7 [-]: ADD       R4 R4 R1     ; R4 := R4 + R1
@@ -683,10 +727,10 @@
   9 [-]: RETURN    R0 1         ; return 
 
 
-; Function #21:
+; Function #22:
 ;
 ; Name:            
-; Defined at line: 157
+; Defined at line: 165
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -696,7 +740,7 @@
   2 [-]: SUB       R0 R4 K0     ; R0 := R4 - 1.000000
   3 [-]: GETUPVAL  R4 U0        ; R4 := U0
   4 [-]: MOVE      R5 R0        ; R5 := R0
-  5 [-]: LOADK     R6 5         ; R6 := 5.000000
+  5 [-]: CONST     R6 5         ; R6 := 5.000000
   6 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
   7 [-]: ADD       R4 R4 K0     ; R4 := R4 + 1.000000
   8 [-]: MUL       R4 R2 R4     ; R4 := R2 * R4
@@ -705,29 +749,10 @@
  11 [-]: RETURN    R0 1         ; return 
 
 
-; Function #22:
-;
-; Name:            
-; Defined at line: 162
-; #Upvalues:       1
-; #Parameters:     4
-; Is_vararg:       0
-; Max Stack Size:  9
-
-  1 [-]: GETUPVAL  R4 U0        ; R4 := U0
-  2 [-]: MOVE      R5 R0        ; R5 := R0
-  3 [-]: MOVE      R6 R1        ; R6 := R1
-  4 [-]: MOVE      R7 R2        ; R7 := R2
-  5 [-]: MOVE      R8 R3        ; R8 := R3
-  6 [-]: TAILCALL  R4 5 0       ; R4,... := R4(R5,R6,R7,R8)
-  7 [-]: RETURN    R4 0         ; return R4,...
-  8 [-]: RETURN    R0 1         ; return 
-
-
 ; Function #23:
 ;
 ; Name:            
-; Defined at line: 166
+; Defined at line: 170
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -746,7 +771,26 @@
 ; Function #24:
 ;
 ; Name:            
-; Defined at line: 170
+; Defined at line: 174
+; #Upvalues:       1
+; #Parameters:     4
+; Is_vararg:       0
+; Max Stack Size:  9
+
+  1 [-]: GETUPVAL  R4 U0        ; R4 := U0
+  2 [-]: MOVE      R5 R0        ; R5 := R0
+  3 [-]: MOVE      R6 R1        ; R6 := R1
+  4 [-]: MOVE      R7 R2        ; R7 := R2
+  5 [-]: MOVE      R8 R3        ; R8 := R3
+  6 [-]: TAILCALL  R4 5 0       ; R4,... := R4(R5,R6,R7,R8)
+  7 [-]: RETURN    R4 0         ; return R4,...
+  8 [-]: RETURN    R0 1         ; return 
+
+
+; Function #25:
+;
+; Name:            
+; Defined at line: 178
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -759,7 +803,7 @@
   5 [-]: DIV       R4 R2 K0     ; R4 := R2 / 2.000000
   6 [-]: GETUPVAL  R5 U0        ; R5 := U0
   7 [-]: MOVE      R6 R0        ; R6 := R0
-  8 [-]: LOADK     R7 5         ; R7 := 5.000000
+  8 [-]: CONST     R7 5         ; R7 := 5.000000
   9 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
  10 [-]: MUL       R4 R4 R5     ; R4 := R4 * R5
  11 [-]: ADD       R4 R4 R1     ; R4 := R4 + R1
@@ -769,7 +813,7 @@
  15 [-]: DIV       R4 R2 K0     ; R4 := R2 / 2.000000
  16 [-]: GETUPVAL  R5 U0        ; R5 := U0
  17 [-]: MOVE      R6 R0        ; R6 := R0
- 18 [-]: LOADK     R7 5         ; R7 := 5.000000
+ 18 [-]: CONST     R7 5         ; R7 := 5.000000
  19 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
  20 [-]: ADD       R5 R5 K0     ; R5 := R5 + 2.000000
  21 [-]: MUL       R4 R4 R5     ; R4 := R4 * R5
@@ -778,10 +822,10 @@
  24 [-]: RETURN    R0 1         ; return 
 
 
-; Function #25:
+; Function #26:
 ;
 ; Name:            
-; Defined at line: 180
+; Defined at line: 188
 ; #Upvalues:       2
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -810,16 +854,16 @@
  21 [-]: RETURN    R0 1         ; return 
 
 
-; Function #26:
+; Function #27:
 ;
 ; Name:            
-; Defined at line: 188
+; Defined at line: 196
 ; #Upvalues:       2
 ; #Parameters:     4
 ; Is_vararg:       0
 ; Max Stack Size:  8
 
-  1 [-]: UNM       R4 R2        ; R4 := ^ R2
+  1 [-]: UNM       R4 R2        ; R4 :=  R2
   2 [-]: GETUPVAL  R5 U0        ; R5 := U0
   3 [-]: DIV       R6 R0 R3     ; R6 := R0 / R3
   4 [-]: GETUPVAL  R7 U1        ; R7 := U1
@@ -833,10 +877,10 @@
  12 [-]: RETURN    R0 1         ; return 
 
 
-; Function #27:
+; Function #28:
 ;
 ; Name:            
-; Defined at line: 192
+; Defined at line: 200
 ; #Upvalues:       2
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -854,29 +898,10 @@
  10 [-]: RETURN    R0 1         ; return 
 
 
-; Function #28:
-;
-; Name:            
-; Defined at line: 196
-; #Upvalues:       1
-; #Parameters:     4
-; Is_vararg:       0
-; Max Stack Size:  9
-
-  1 [-]: GETUPVAL  R4 U0        ; R4 := U0
-  2 [-]: MOVE      R5 R0        ; R5 := R0
-  3 [-]: MOVE      R6 R1        ; R6 := R1
-  4 [-]: MOVE      R7 R2        ; R7 := R2
-  5 [-]: MOVE      R8 R3        ; R8 := R3
-  6 [-]: TAILCALL  R4 5 0       ; R4,... := R4(R5,R6,R7,R8)
-  7 [-]: RETURN    R4 0         ; return R4,...
-  8 [-]: RETURN    R0 1         ; return 
-
-
 ; Function #29:
 ;
 ; Name:            
-; Defined at line: 200
+; Defined at line: 204
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -895,13 +920,32 @@
 ; Function #30:
 ;
 ; Name:            
-; Defined at line: 204
+; Defined at line: 208
+; #Upvalues:       1
+; #Parameters:     4
+; Is_vararg:       0
+; Max Stack Size:  9
+
+  1 [-]: GETUPVAL  R4 U0        ; R4 := U0
+  2 [-]: MOVE      R5 R0        ; R5 := R0
+  3 [-]: MOVE      R6 R1        ; R6 := R1
+  4 [-]: MOVE      R7 R2        ; R7 := R2
+  5 [-]: MOVE      R8 R3        ; R8 := R3
+  6 [-]: TAILCALL  R4 5 0       ; R4,... := R4(R5,R6,R7,R8)
+  7 [-]: RETURN    R4 0         ; return R4,...
+  8 [-]: RETURN    R0 1         ; return 
+
+
+; Function #31:
+;
+; Name:            
+; Defined at line: 212
 ; #Upvalues:       2
 ; #Parameters:     4
 ; Is_vararg:       0
 ; Max Stack Size:  7
 
-  1 [-]: UNM       R4 R2        ; R4 := ^ R2
+  1 [-]: UNM       R4 R2        ; R4 :=  R2
   2 [-]: DIV       R4 R4 K0     ; R4 := R4 / 2.000000
   3 [-]: GETUPVAL  R5 U0        ; R5 := U0
   4 [-]: GETUPVAL  R6 U1        ; R6 := U1
@@ -915,10 +959,10 @@
  12 [-]: RETURN    R0 1         ; return 
 
 
-; Function #31:
+; Function #32:
 ;
 ; Name:            
-; Defined at line: 208
+; Defined at line: 216
 ; #Upvalues:       2
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -947,10 +991,10 @@
  21 [-]: RETURN    R0 1         ; return 
 
 
-; Function #32:
+; Function #33:
 ;
 ; Name:            
-; Defined at line: 216
+; Defined at line: 224
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -961,7 +1005,7 @@
   3 [-]: RETURN    R1 2         ; return R1
   4 [-]: JMP       16           ; PC := 16
   5 [-]: GETUPVAL  R4 U0        ; R4 := U0
-  6 [-]: LOADK     R5 2         ; R5 := 2.000000
+  6 [-]: CONST     R5 2         ; R5 := 2.000000
   7 [-]: DIV       R6 R0 R3     ; R6 := R0 / R3
   8 [-]: SUB       R6 R6 K1     ; R6 := R6 - 1.000000
   9 [-]: MUL       R6 K2 R6     ; R6 := 10.000000 * R6
@@ -974,10 +1018,10 @@
  16 [-]: RETURN    R0 1         ; return 
 
 
-; Function #33:
+; Function #34:
 ;
 ; Name:            
-; Defined at line: 224
+; Defined at line: 232
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -990,11 +1034,11 @@
   5 [-]: JMP       17           ; PC := 17
   6 [-]: MUL       R4 R2 K0     ; R4 := R2 * 1.001000
   7 [-]: GETUPVAL  R5 U0        ; R5 := U0
-  8 [-]: LOADK     R6 2         ; R6 := 2.000000
+  8 [-]: CONST     R6 2         ; R6 := 2.000000
   9 [-]: MUL       R7 K1 R0     ; R7 := -10.000000 * R0
  10 [-]: DIV       R7 R7 R3     ; R7 := R7 / R3
  11 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
- 12 [-]: UNM       R5 R5        ; R5 := ^ R5
+ 12 [-]: UNM       R5 R5        ; R5 :=  R5
  13 [-]: ADD       R5 R5 K2     ; R5 := R5 + 1.000000
  14 [-]: MUL       R4 R4 R5     ; R4 := R4 * R5
  15 [-]: ADD       R4 R4 R1     ; R4 := R4 + R1
@@ -1002,29 +1046,10 @@
  17 [-]: RETURN    R0 1         ; return 
 
 
-; Function #34:
-;
-; Name:            
-; Defined at line: 232
-; #Upvalues:       1
-; #Parameters:     4
-; Is_vararg:       0
-; Max Stack Size:  9
-
-  1 [-]: GETUPVAL  R4 U0        ; R4 := U0
-  2 [-]: MOVE      R5 R0        ; R5 := R0
-  3 [-]: MOVE      R6 R1        ; R6 := R1
-  4 [-]: MOVE      R7 R2        ; R7 := R2
-  5 [-]: MOVE      R8 R3        ; R8 := R3
-  6 [-]: TAILCALL  R4 5 0       ; R4,... := R4(R5,R6,R7,R8)
-  7 [-]: RETURN    R4 0         ; return R4,...
-  8 [-]: RETURN    R0 1         ; return 
-
-
 ; Function #35:
 ;
 ; Name:            
-; Defined at line: 236
+; Defined at line: 240
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -1043,7 +1068,26 @@
 ; Function #36:
 ;
 ; Name:            
-; Defined at line: 240
+; Defined at line: 244
+; #Upvalues:       1
+; #Parameters:     4
+; Is_vararg:       0
+; Max Stack Size:  9
+
+  1 [-]: GETUPVAL  R4 U0        ; R4 := U0
+  2 [-]: MOVE      R5 R0        ; R5 := R0
+  3 [-]: MOVE      R6 R1        ; R6 := R1
+  4 [-]: MOVE      R7 R2        ; R7 := R2
+  5 [-]: MOVE      R8 R3        ; R8 := R3
+  6 [-]: TAILCALL  R4 5 0       ; R4,... := R4(R5,R6,R7,R8)
+  7 [-]: RETURN    R4 0         ; return R4,...
+  8 [-]: RETURN    R0 1         ; return 
+
+
+; Function #37:
+;
+; Name:            
+; Defined at line: 248
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -1062,7 +1106,7 @@
  11 [-]: JMP       24           ; PC := 24
  12 [-]: DIV       R4 R2 K1     ; R4 := R2 / 2.000000
  13 [-]: GETUPVAL  R5 U0        ; R5 := U0
- 14 [-]: LOADK     R6 2         ; R6 := 2.000000
+ 14 [-]: CONST     R6 2         ; R6 := 2.000000
  15 [-]: SUB       R7 R0 K2     ; R7 := R0 - 1.000000
  16 [-]: MUL       R7 K3 R7     ; R7 := 10.000000 * R7
  17 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
@@ -1076,10 +1120,10 @@
  25 [-]: DIV       R4 R2 K1     ; R4 := R2 / 2.000000
  26 [-]: MUL       R4 R4 K5     ; R4 := R4 * 1.000500
  27 [-]: GETUPVAL  R5 U0        ; R5 := U0
- 28 [-]: LOADK     R6 2         ; R6 := 2.000000
+ 28 [-]: CONST     R6 2         ; R6 := 2.000000
  29 [-]: MUL       R7 K6 R0     ; R7 := -10.000000 * R0
  30 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
- 31 [-]: UNM       R5 R5        ; R5 := ^ R5
+ 31 [-]: UNM       R5 R5        ; R5 :=  R5
  32 [-]: ADD       R5 R5 K1     ; R5 := R5 + 2.000000
  33 [-]: MUL       R4 R4 R5     ; R4 := R4 * R5
  34 [-]: ADD       R4 R4 R1     ; R4 := R4 + R1
@@ -1087,10 +1131,10 @@
  36 [-]: RETURN    R0 1         ; return 
 
 
-; Function #37:
+; Function #38:
 ;
 ; Name:            
-; Defined at line: 252
+; Defined at line: 260
 ; #Upvalues:       2
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -1119,21 +1163,21 @@
  21 [-]: RETURN    R0 1         ; return 
 
 
-; Function #38:
+; Function #39:
 ;
 ; Name:            
-; Defined at line: 260
+; Defined at line: 268
 ; #Upvalues:       2
 ; #Parameters:     4
 ; Is_vararg:       0
 ; Max Stack Size:  9
 
   1 [-]: DIV       R0 R0 R3     ; R0 := R0 / R3
-  2 [-]: UNM       R4 R2        ; R4 := ^ R2
+  2 [-]: UNM       R4 R2        ; R4 :=  R2
   3 [-]: GETUPVAL  R5 U0        ; R5 := U0
   4 [-]: GETUPVAL  R6 U1        ; R6 := U1
   5 [-]: MOVE      R7 R0        ; R7 := R0
-  6 [-]: LOADK     R8 2         ; R8 := 2.000000
+  6 [-]: CONST     R8 2         ; R8 := 2.000000
   7 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
   8 [-]: SUB       R6 K0 R6     ; R6 := 1.000000 - R6
   9 [-]: CALL      R5 2 2       ; R5 := R5(R6)
@@ -1144,10 +1188,10 @@
  14 [-]: RETURN    R0 1         ; return 
 
 
-; Function #39:
+; Function #40:
 ;
 ; Name:            
-; Defined at line: 265
+; Defined at line: 273
 ; #Upvalues:       2
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -1158,7 +1202,7 @@
   3 [-]: GETUPVAL  R4 U0        ; R4 := U0
   4 [-]: GETUPVAL  R5 U1        ; R5 := U1
   5 [-]: MOVE      R6 R0        ; R6 := R0
-  6 [-]: LOADK     R7 2         ; R7 := 2.000000
+  6 [-]: CONST     R7 2         ; R7 := 2.000000
   7 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
   8 [-]: SUB       R5 K0 R5     ; R5 := 1.000000 - R5
   9 [-]: CALL      R4 2 2       ; R4 := R4(R5)
@@ -1168,29 +1212,10 @@
  13 [-]: RETURN    R0 1         ; return 
 
 
-; Function #40:
-;
-; Name:            
-; Defined at line: 270
-; #Upvalues:       1
-; #Parameters:     4
-; Is_vararg:       0
-; Max Stack Size:  9
-
-  1 [-]: GETUPVAL  R4 U0        ; R4 := U0
-  2 [-]: MOVE      R5 R0        ; R5 := R0
-  3 [-]: MOVE      R6 R1        ; R6 := R1
-  4 [-]: MOVE      R7 R2        ; R7 := R2
-  5 [-]: MOVE      R8 R3        ; R8 := R3
-  6 [-]: TAILCALL  R4 5 0       ; R4,... := R4(R5,R6,R7,R8)
-  7 [-]: RETURN    R4 0         ; return R4,...
-  8 [-]: RETURN    R0 1         ; return 
-
-
 ; Function #41:
 ;
 ; Name:            
-; Defined at line: 274
+; Defined at line: 278
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -1209,7 +1234,26 @@
 ; Function #42:
 ;
 ; Name:            
-; Defined at line: 278
+; Defined at line: 282
+; #Upvalues:       1
+; #Parameters:     4
+; Is_vararg:       0
+; Max Stack Size:  9
+
+  1 [-]: GETUPVAL  R4 U0        ; R4 := U0
+  2 [-]: MOVE      R5 R0        ; R5 := R0
+  3 [-]: MOVE      R6 R1        ; R6 := R1
+  4 [-]: MOVE      R7 R2        ; R7 := R2
+  5 [-]: MOVE      R8 R3        ; R8 := R3
+  6 [-]: TAILCALL  R4 5 0       ; R4,... := R4(R5,R6,R7,R8)
+  7 [-]: RETURN    R4 0         ; return R4,...
+  8 [-]: RETURN    R0 1         ; return 
+
+
+; Function #43:
+;
+; Name:            
+; Defined at line: 286
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -1219,7 +1263,7 @@
   2 [-]: MUL       R0 R4 K0     ; R0 := R4 * 2.000000
   3 [-]: LT        0 R0 K1      ; if R0 >= 1.000000 then PC := 16
   4 [-]: JMP       16           ; PC := 16
-  5 [-]: UNM       R4 R2        ; R4 := ^ R2
+  5 [-]: UNM       R4 R2        ; R4 :=  R2
   6 [-]: DIV       R4 R4 K0     ; R4 := R4 / 2.000000
   7 [-]: GETUPVAL  R5 U0        ; R5 := U0
   8 [-]: MUL       R6 R0 R0     ; R6 := R0 * R0
@@ -1243,10 +1287,10 @@
  26 [-]: RETURN    R0 1         ; return 
 
 
-; Function #43:
+; Function #44:
 ;
 ; Name:            
-; Defined at line: 288
+; Defined at line: 296
 ; #Upvalues:       2
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -1275,10 +1319,10 @@
  21 [-]: RETURN    R0 1         ; return 
 
 
-; Function #44:
+; Function #45:
 ;
 ; Name:            
-; Defined at line: 296
+; Defined at line: 304
 ; #Upvalues:       5
 ; #Parameters:     6
 ; Is_vararg:       0
@@ -1295,7 +1339,7 @@
   9 [-]: TEST      R5 1         ; if R5 then PC := 12
  10 [-]: JMP       12           ; PC := 12
  11 [-]: MUL       R5 R3 K2     ; R5 := R3 * 0.300000
- 12 [-]: LOADK     R6 0         ; R6 := 0.000000
+ 12 [-]: CONST     R6 0         ; R6 := 0.000000
  13 [-]: TEST      R4 0         ; if not R4 then PC := 20
  14 [-]: JMP       20           ; PC := 20
  15 [-]: GETUPVAL  R7 U0        ; R7 := U0
@@ -1315,7 +1359,7 @@
  29 [-]: MUL       R6 R7 R8     ; R6 := R7 * R8
  30 [-]: SUB       R0 R0 K1     ; R0 := R0 - 1.000000
  31 [-]: GETUPVAL  R7 U3        ; R7 := U3
- 32 [-]: LOADK     R8 2         ; R8 := 2.000000
+ 32 [-]: CONST     R8 2         ; R8 := 2.000000
  33 [-]: MUL       R9 K5 R0     ; R9 := 10.000000 * R0
  34 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
  35 [-]: MUL       R7 R4 R7     ; R7 := R4 * R7
@@ -1328,16 +1372,16 @@
  42 [-]: DIV       R9 R9 R5     ; R9 := R9 / R5
  43 [-]: CALL      R8 2 2       ; R8 := R8(R9)
  44 [-]: MUL       R7 R7 R8     ; R7 := R7 * R8
- 45 [-]: UNM       R7 R7        ; R7 := ^ R7
+ 45 [-]: UNM       R7 R7        ; R7 :=  R7
  46 [-]: ADD       R7 R7 R1     ; R7 := R7 + R1
  47 [-]: RETURN    R7 2         ; return R7
  48 [-]: RETURN    R0 1         ; return 
 
 
-; Function #45:
+; Function #46:
 ;
 ; Name:            
-; Defined at line: 321
+; Defined at line: 329
 ; #Upvalues:       5
 ; #Parameters:     6
 ; Is_vararg:       0
@@ -1354,7 +1398,7 @@
   9 [-]: TEST      R5 1         ; if R5 then PC := 12
  10 [-]: JMP       12           ; PC := 12
  11 [-]: MUL       R5 R3 K2     ; R5 := R3 * 0.300000
- 12 [-]: LOADK     R6 0         ; R6 := 0.000000
+ 12 [-]: CONST     R6 0         ; R6 := 0.000000
  13 [-]: TEST      R4 0         ; if not R4 then PC := 20
  14 [-]: JMP       20           ; PC := 20
  15 [-]: GETUPVAL  R7 U0        ; R7 := U0
@@ -1373,7 +1417,7 @@
  28 [-]: CALL      R8 2 2       ; R8 := R8(R9)
  29 [-]: MUL       R6 R7 R8     ; R6 := R7 * R8
  30 [-]: GETUPVAL  R7 U3        ; R7 := U3
- 31 [-]: LOADK     R8 2         ; R8 := 2.000000
+ 31 [-]: CONST     R8 2         ; R8 := 2.000000
  32 [-]: MUL       R9 K5 R0     ; R9 := -10.000000 * R0
  33 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
  34 [-]: MUL       R7 R4 R7     ; R7 := R4 * R7
@@ -1392,31 +1436,10 @@
  47 [-]: RETURN    R0 1         ; return 
 
 
-; Function #46:
-;
-; Name:            
-; Defined at line: 342
-; #Upvalues:       1
-; #Parameters:     6
-; Is_vararg:       0
-; Max Stack Size:  13
-
-  1 [-]: GETUPVAL  R6 U0        ; R6 := U0
-  2 [-]: MOVE      R7 R0        ; R7 := R0
-  3 [-]: MOVE      R8 R1        ; R8 := R1
-  4 [-]: MOVE      R9 R2        ; R9 := R2
-  5 [-]: MOVE      R10 R3       ; R10 := R3
-  6 [-]: MOVE      R11 R4       ; R11 := R4
-  7 [-]: MOVE      R12 R5       ; R12 := R5
-  8 [-]: TAILCALL  R6 7 0       ; R6,... := R6(R7,R8,R9,R10,R11,R12)
-  9 [-]: RETURN    R6 0         ; return R6,...
- 10 [-]: RETURN    R0 1         ; return 
-
-
 ; Function #47:
 ;
 ; Name:            
-; Defined at line: 348
+; Defined at line: 350
 ; #Upvalues:       1
 ; #Parameters:     6
 ; Is_vararg:       0
@@ -1437,7 +1460,28 @@
 ; Function #48:
 ;
 ; Name:            
-; Defined at line: 354
+; Defined at line: 356
+; #Upvalues:       1
+; #Parameters:     6
+; Is_vararg:       0
+; Max Stack Size:  13
+
+  1 [-]: GETUPVAL  R6 U0        ; R6 := U0
+  2 [-]: MOVE      R7 R0        ; R7 := R0
+  3 [-]: MOVE      R8 R1        ; R8 := R1
+  4 [-]: MOVE      R9 R2        ; R9 := R2
+  5 [-]: MOVE      R10 R3       ; R10 := R3
+  6 [-]: MOVE      R11 R4       ; R11 := R4
+  7 [-]: MOVE      R12 R5       ; R12 := R5
+  8 [-]: TAILCALL  R6 7 0       ; R6,... := R6(R7,R8,R9,R10,R11,R12)
+  9 [-]: RETURN    R6 0         ; return R6,...
+ 10 [-]: RETURN    R0 1         ; return 
+
+
+; Function #49:
+;
+; Name:            
+; Defined at line: 362
 ; #Upvalues:       5
 ; #Parameters:     6
 ; Is_vararg:       0
@@ -1457,8 +1501,8 @@
  12 [-]: MUL       R5 R3 K2     ; R5 := R3 * 0.450000
  13 [-]: TEST      R4 1         ; if R4 then PC := 16
  14 [-]: JMP       16           ; PC := 16
- 15 [-]: LOADK     R4 0         ; R4 := 0.000000
- 16 [-]: LOADK     R6 0         ; R6 := 0.000000
+ 15 [-]: CONST     R4 0         ; R4 := 0.000000
+ 16 [-]: CONST     R6 0         ; R6 := 0.000000
  17 [-]: TEST      R4 0         ; if not R4 then PC := 24
  18 [-]: JMP       24           ; PC := 24
  19 [-]: GETUPVAL  R7 U0        ; R7 := U0
@@ -1480,7 +1524,7 @@
  35 [-]: JMP       55           ; PC := 55
  36 [-]: SUB       R0 R0 K4     ; R0 := R0 - 1.000000
  37 [-]: GETUPVAL  R7 U3        ; R7 := U3
- 38 [-]: LOADK     R8 2         ; R8 := 2.000000
+ 38 [-]: CONST     R8 2         ; R8 := 2.000000
  39 [-]: MUL       R9 K5 R0     ; R9 := 10.000000 * R0
  40 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
  41 [-]: MUL       R7 R4 R7     ; R7 := R4 * R7
@@ -1499,7 +1543,7 @@
  54 [-]: JMP       74           ; PC := 74
  55 [-]: SUB       R0 R0 K4     ; R0 := R0 - 1.000000
  56 [-]: GETUPVAL  R7 U3        ; R7 := U3
- 57 [-]: LOADK     R8 2         ; R8 := 2.000000
+ 57 [-]: CONST     R8 2         ; R8 := 2.000000
  58 [-]: MUL       R9 K7 R0     ; R9 := -10.000000 * R0
  59 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
  60 [-]: MUL       R7 R4 R7     ; R7 := R4 * R7
@@ -1519,10 +1563,10 @@
  74 [-]: RETURN    R0 1         ; return 
 
 
-; Function #49:
+; Function #50:
 ;
 ; Name:            
-; Defined at line: 384
+; Defined at line: 392
 ; #Upvalues:       2
 ; #Parameters:     6
 ; Is_vararg:       0
@@ -1555,10 +1599,10 @@
  25 [-]: RETURN    R0 1         ; return 
 
 
-; Function #50:
+; Function #51:
 ;
 ; Name:            
-; Defined at line: 392
+; Defined at line: 400
 ; #Upvalues:       0
 ; #Parameters:     5
 ; Is_vararg:       0
@@ -1579,10 +1623,10 @@
  13 [-]: RETURN    R0 1         ; return 
 
 
-; Function #51:
+; Function #52:
 ;
 ; Name:            
-; Defined at line: 398
+; Defined at line: 406
 ; #Upvalues:       0
 ; #Parameters:     5
 ; Is_vararg:       0
@@ -1605,30 +1649,10 @@
  15 [-]: RETURN    R0 1         ; return 
 
 
-; Function #52:
-;
-; Name:            
-; Defined at line: 404
-; #Upvalues:       1
-; #Parameters:     5
-; Is_vararg:       0
-; Max Stack Size:  11
-
-  1 [-]: GETUPVAL  R5 U0        ; R5 := U0
-  2 [-]: MOVE      R6 R0        ; R6 := R0
-  3 [-]: MOVE      R7 R1        ; R7 := R1
-  4 [-]: MOVE      R8 R2        ; R8 := R2
-  5 [-]: MOVE      R9 R3        ; R9 := R3
-  6 [-]: MOVE      R10 R4       ; R10 := R4
-  7 [-]: TAILCALL  R5 6 0       ; R5,... := R5(R6,R7,R8,R9,R10)
-  8 [-]: RETURN    R5 0         ; return R5,...
-  9 [-]: RETURN    R0 1         ; return 
-
-
 ; Function #53:
 ;
 ; Name:            
-; Defined at line: 408
+; Defined at line: 412
 ; #Upvalues:       1
 ; #Parameters:     5
 ; Is_vararg:       0
@@ -1648,7 +1672,27 @@
 ; Function #54:
 ;
 ; Name:            
-; Defined at line: 412
+; Defined at line: 416
+; #Upvalues:       1
+; #Parameters:     5
+; Is_vararg:       0
+; Max Stack Size:  11
+
+  1 [-]: GETUPVAL  R5 U0        ; R5 := U0
+  2 [-]: MOVE      R6 R0        ; R6 := R0
+  3 [-]: MOVE      R7 R1        ; R7 := R1
+  4 [-]: MOVE      R8 R2        ; R8 := R2
+  5 [-]: MOVE      R9 R3        ; R9 := R3
+  6 [-]: MOVE      R10 R4       ; R10 := R4
+  7 [-]: TAILCALL  R5 6 0       ; R5,... := R5(R6,R7,R8,R9,R10)
+  8 [-]: RETURN    R5 0         ; return R5,...
+  9 [-]: RETURN    R0 1         ; return 
+
+
+; Function #55:
+;
+; Name:            
+; Defined at line: 420
 ; #Upvalues:       0
 ; #Parameters:     5
 ; Is_vararg:       0
@@ -1686,10 +1730,10 @@
  30 [-]: RETURN    R0 1         ; return 
 
 
-; Function #55:
+; Function #56:
 ;
 ; Name:            
-; Defined at line: 424
+; Defined at line: 432
 ; #Upvalues:       2
 ; #Parameters:     5
 ; Is_vararg:       0
@@ -1720,10 +1764,10 @@
  23 [-]: RETURN    R0 1         ; return 
 
 
-; Function #56:
+; Function #57:
 ;
 ; Name:            
-; Defined at line: 432
+; Defined at line: 440
 ; #Upvalues:       0
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -1768,10 +1812,10 @@
  37 [-]: RETURN    R0 1         ; return 
 
 
-; Function #57:
+; Function #58:
 ;
 ; Name:            
-; Defined at line: 448
+; Defined at line: 456
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -1779,7 +1823,7 @@
 
   1 [-]: GETUPVAL  R4 U0        ; R4 := U0
   2 [-]: SUB       R5 R3 R0     ; R5 := R3 - R0
-  3 [-]: LOADK     R6 0         ; R6 := 0.000000
+  3 [-]: CONST     R6 0         ; R6 := 0.000000
   4 [-]: MOVE      R7 R2        ; R7 := R2
   5 [-]: MOVE      R8 R3        ; R8 := R3
   6 [-]: CALL      R4 5 2       ; R4 := R4(R5,R6,R7,R8)
@@ -1789,29 +1833,10 @@
  10 [-]: RETURN    R0 1         ; return 
 
 
-; Function #58:
-;
-; Name:            
-; Defined at line: 452
-; #Upvalues:       1
-; #Parameters:     4
-; Is_vararg:       0
-; Max Stack Size:  9
-
-  1 [-]: GETUPVAL  R4 U0        ; R4 := U0
-  2 [-]: MOVE      R5 R0        ; R5 := R0
-  3 [-]: MOVE      R6 R1        ; R6 := R1
-  4 [-]: MOVE      R7 R2        ; R7 := R2
-  5 [-]: MOVE      R8 R3        ; R8 := R3
-  6 [-]: TAILCALL  R4 5 0       ; R4,... := R4(R5,R6,R7,R8)
-  7 [-]: RETURN    R4 0         ; return R4,...
-  8 [-]: RETURN    R0 1         ; return 
-
-
 ; Function #59:
 ;
 ; Name:            
-; Defined at line: 456
+; Defined at line: 460
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -1830,7 +1855,26 @@
 ; Function #60:
 ;
 ; Name:            
-; Defined at line: 460
+; Defined at line: 464
+; #Upvalues:       1
+; #Parameters:     4
+; Is_vararg:       0
+; Max Stack Size:  9
+
+  1 [-]: GETUPVAL  R4 U0        ; R4 := U0
+  2 [-]: MOVE      R5 R0        ; R5 := R0
+  3 [-]: MOVE      R6 R1        ; R6 := R1
+  4 [-]: MOVE      R7 R2        ; R7 := R2
+  5 [-]: MOVE      R8 R3        ; R8 := R3
+  6 [-]: TAILCALL  R4 5 0       ; R4,... := R4(R5,R6,R7,R8)
+  7 [-]: RETURN    R4 0         ; return R4,...
+  8 [-]: RETURN    R0 1         ; return 
+
+
+; Function #61:
+;
+; Name:            
+; Defined at line: 468
 ; #Upvalues:       2
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -1841,7 +1885,7 @@
   3 [-]: JMP       14           ; PC := 14
   4 [-]: GETUPVAL  R4 U0        ; R4 := U0
   5 [-]: MUL       R5 R0 K0     ; R5 := R0 * 2.000000
-  6 [-]: LOADK     R6 0         ; R6 := 0.000000
+  6 [-]: CONST     R6 0         ; R6 := 0.000000
   7 [-]: MOVE      R7 R2        ; R7 := R2
   8 [-]: MOVE      R8 R3        ; R8 := R3
   9 [-]: CALL      R4 5 2       ; R4 := R4(R5,R6,R7,R8)
@@ -1852,7 +1896,7 @@
  14 [-]: GETUPVAL  R4 U1        ; R4 := U1
  15 [-]: MUL       R5 R0 K0     ; R5 := R0 * 2.000000
  16 [-]: SUB       R5 R5 R3     ; R5 := R5 - R3
- 17 [-]: LOADK     R6 0         ; R6 := 0.000000
+ 17 [-]: CONST     R6 0         ; R6 := 0.000000
  18 [-]: MOVE      R7 R2        ; R7 := R2
  19 [-]: MOVE      R8 R3        ; R8 := R3
  20 [-]: CALL      R4 5 2       ; R4 := R4(R5,R6,R7,R8)
@@ -1864,10 +1908,10 @@
  26 [-]: RETURN    R0 1         ; return 
 
 
-; Function #61:
+; Function #62:
 ;
 ; Name:            
-; Defined at line: 468
+; Defined at line: 476
 ; #Upvalues:       2
 ; #Parameters:     4
 ; Is_vararg:       0

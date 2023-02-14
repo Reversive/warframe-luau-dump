@@ -51,7 +51,7 @@
  20 [-]: GETTABLE  R3 R3 K1     ; R3 := R3["ElevatorTransmissions"]
  21 [-]: CLOSURE   R4 0         ; R4 := closure(Function #1.1)
  22 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
- 23 [-]: LOADBOOL  R3 1 0       ; R3 := true
+ 23 [-]: LOADKB    R3 1 0       ; R3 := true
  24 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
  25 [-]: GETGLOBAL R2 K0        ; R2 := _T
  26 [-]: SETTABLE  R2 K1 K7     ; R2["ElevatorTransmissions"] := nil
@@ -69,7 +69,7 @@
  38 [-]: TEST      R3 1         ; if R3 then PC := 44
  39 [-]: JMP       44           ; PC := 44
  40 [-]: GETGLOBAL R3 K11       ; R3 := 0xcbd666e1
- 41 [-]: LOADK     R4 0         ; R4 := 0.000000
+ 41 [-]: CONST     R4 0         ; R4 := 0.000000
  42 [-]: CALL      R3 2 1       ; R3(R4)
  43 [-]: JMP       31           ; PC := 31
  44 [-]: GETGLOBAL R3 K9        ; R3 := 0x7b998233
@@ -85,7 +85,7 @@
  54 [-]: TEST      R3 1         ; if R3 then PC := 60
  55 [-]: JMP       60           ; PC := 60
  56 [-]: GETGLOBAL R3 K11       ; R3 := 0xcbd666e1
- 57 [-]: LOADK     R4 0         ; R4 := 0.000000
+ 57 [-]: CONST     R4 0         ; R4 := 0.000000
  58 [-]: CALL      R3 2 1       ; R3(R4)
  59 [-]: JMP       52           ; PC := 52
  60 [-]: GETGLOBAL R3 K0        ; R3 := _T
@@ -103,7 +103,7 @@
  72 [-]: MOVE      R5 R0        ; R5 := R0
  73 [-]: CALL      R4 2 0       ; R4,... := R4(R5)
  74 [-]: CALL      R3 0 1       ; R3(R4,...)
- 75 [-]: LOADK     R3 0         ; R3 := 0.000000
+ 75 [-]: CONST     R3 0         ; R3 := 0.000000
  76 [-]: LT        0 R3 K19     ; if R3 >= 3.000000 then PC := 91
  77 [-]: JMP       91           ; PC := 91
  78 [-]: GETGLOBAL R4 K9        ; R4 := 0x7b998233
@@ -113,7 +113,7 @@
  82 [-]: TEST      R4 0         ; if not R4 then PC := 91
  83 [-]: JMP       91           ; PC := 91
  84 [-]: GETGLOBAL R4 K11       ; R4 := 0xcbd666e1
- 85 [-]: LOADK     R5 0         ; R5 := 0.000000
+ 85 [-]: CONST     R5 0         ; R5 := 0.000000
  86 [-]: CALL      R4 2 1       ; R4(R5)
  87 [-]: GETGLOBAL R4 K21       ; R4 := 0x67652851
  88 [-]: CALL      R4 1 2       ; R4 := R4()
@@ -126,7 +126,7 @@
  95 [-]: TEST      R4 1         ; if R4 then PC := 101
  96 [-]: JMP       101          ; PC := 101
  97 [-]: GETGLOBAL R4 K11       ; R4 := 0xcbd666e1
- 98 [-]: LOADK     R5 0         ; R5 := 0.000000
+ 98 [-]: CONST     R5 0         ; R5 := 0.000000
  99 [-]: CALL      R4 2 1       ; R4(R5)
 100 [-]: JMP       91           ; PC := 91
 101 [-]: GETGLOBAL R4 K0        ; R4 := _T
@@ -151,8 +151,8 @@
   6 [-]: SELF      R1 R0 K1     ; R2 := R0; R1 := R0[0xed4e0128]
   7 [-]: CALL      R1 2 2       ; R1 := R1(R2)
   8 [-]: JMP       11           ; PC := 11
-  9 [-]: LOADBOOL  R1 0 1       ; R1 := false; PC := 10
- 10 [-]: LOADBOOL  R1 1 0       ; R1 := true
+  9 [-]: LOADKB    R1 0 1       ; R1 := false; PC := 10
+ 10 [-]: LOADKB    R1 1 0       ; R1 := true
  11 [-]: RETURN    R1 2         ; return R1
  12 [-]: RETURN    R0 1         ; return 
 

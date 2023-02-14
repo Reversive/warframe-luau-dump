@@ -7,8 +7,8 @@
 ; Is_vararg:       2
 ; Max Stack Size:  7
 
-  1 [-]: LOADK     R0 5         ; R0 := 5.000000
-  2 [-]: LOADK     R1 200       ; R1 := 200.000000
+  1 [-]: CONST     R0 5         ; R0 := 5.000000
+  2 [-]: CONST     R1 200       ; R1 := 200.000000
   3 [-]: GETGLOBAL R2 K0        ; R2 := 0x2d0fad09
   4 [-]: LOADK     R3 K1        ; R3 := "Lotus.Scripts.Effects.EnergyElement"
   5 [-]: CALL      R2 2 2       ; R2 := R2(R3)
@@ -45,7 +45,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  9
 
-  1 [-]: LOADK     R2 0         ; R2 := 0.000000
+  1 [-]: CONST     R2 0         ; R2 := 0.000000
   2 [-]: SELF      R3 R1 K0     ; R4 := R1; R3 := R1[0x65d389cb]
   3 [-]: CALL      R3 2 2       ; R3 := R3(R4)
   4 [-]: NEWTABLE  R4 1 0       ; R4 := {}
@@ -85,16 +85,16 @@
  11 [-]: JMP       19           ; PC := 19
  12 [-]: SELF      R3 R1 K3     ; R4 := R1; R3 := R1[0x659d451f]
  13 [-]: GETGLOBAL R5 K4        ; R5 := 0x2b19dbdf
- 14 [-]: LOADBOOL  R6 0 0       ; R6 := false
- 15 [-]: LOADK     R7 0         ; R7 := 0.000000
- 16 [-]: LOADBOOL  R8 0 0       ; R8 := false
+ 14 [-]: LOADKB    R6 0 0       ; R6 := false
+ 15 [-]: CONST     R7 0         ; R7 := 0.000000
+ 16 [-]: LOADKB    R8 0 0       ; R8 := false
  17 [-]: CALL      R3 6 1       ; R3(R4,R5,R6,R7,R8)
  18 [-]: JMP       25           ; PC := 25
  19 [-]: SELF      R3 R1 K3     ; R4 := R1; R3 := R1[0x659d451f]
  20 [-]: GETGLOBAL R5 K5        ; R5 := 0x22d9fd92
- 21 [-]: LOADBOOL  R6 0 0       ; R6 := false
- 22 [-]: LOADK     R7 0         ; R7 := 0.000000
- 23 [-]: LOADBOOL  R8 0 0       ; R8 := false
+ 21 [-]: LOADKB    R6 0 0       ; R6 := false
+ 22 [-]: CONST     R7 0         ; R7 := 0.000000
+ 23 [-]: LOADKB    R8 0 0       ; R8 := false
  24 [-]: CALL      R3 6 1       ; R3(R4,R5,R6,R7,R8)
  25 [-]: MOVE      R3 R0        ; R3 := R0
  26 [-]: GETGLOBAL R4 K1        ; R4 := 0x7b998233
@@ -145,8 +145,8 @@
  71 [-]: JMP       77           ; PC := 77
  72 [-]: SELF      R8 R6 K17    ; R9 := R6; R8 := R6[0x5d985c7e]
  73 [-]: GETGLOBAL R10 K18      ; R10 := 0xce9e5cc9
- 74 [-]: LOADBOOL  R11 0 0      ; R11 := false
- 75 [-]: LOADBOOL  R12 0 0      ; R12 := false
+ 74 [-]: LOADKB    R11 0 0      ; R11 := false
+ 75 [-]: LOADKB    R12 0 0      ; R12 := false
  76 [-]: CALL      R8 5 1       ; R8(R9,R10,R11,R12)
  77 [-]: GETGLOBAL R8 K1        ; R8 := 0x7b998233
  78 [-]: MOVE      R9 R7        ; R9 := R7
@@ -155,17 +155,17 @@
  81 [-]: JMP       87           ; PC := 87
  82 [-]: SELF      R8 R7 K17    ; R9 := R7; R8 := R7[0x5d985c7e]
  83 [-]: GETGLOBAL R10 K19      ; R10 := 0x6d6c1b1e
- 84 [-]: LOADBOOL  R11 0 0      ; R11 := false
- 85 [-]: LOADBOOL  R12 0 0      ; R12 := false
+ 84 [-]: LOADKB    R11 0 0      ; R11 := false
+ 85 [-]: LOADKB    R12 0 0      ; R12 := false
  86 [-]: CALL      R8 5 1       ; R8(R9,R10,R11,R12)
  87 [-]: SELF      R8 R1 K20    ; R9 := R1; R8 := R1[0x21b4c60e]
  88 [-]: LOADK     R10 K21      ; R10 := "DragonPeltFlapActivate"
  89 [-]: SELF      R11 R1 K22   ; R12 := R1; R11 := R1[0x7027c544]
  90 [-]: GETGLOBAL R13 K23      ; R13 := 0x0ed8b456
- 91 [-]: LOADBOOL  R14 0 0      ; R14 := false
- 92 [-]: LOADK     R15 2        ; R15 := 2.000000
- 93 [-]: LOADK     R16 1        ; R16 := 1.000000
- 94 [-]: LOADBOOL  R17 1 0      ; R17 := true
+ 91 [-]: LOADKB    R14 0 0      ; R14 := false
+ 92 [-]: CONST     R15 2        ; R15 := 2.000000
+ 93 [-]: CONST     R16 1        ; R16 := 1.000000
+ 94 [-]: LOADKB    R17 1 0      ; R17 := true
  95 [-]: CALL      R11 7 0      ; R11,... := R11(R12,R13,R14,R15,R16,R17)
  96 [-]: CALL      R8 0 1       ; R8(R9,...)
  97 [-]: GETUPVAL  R8 U3        ; R8 := U3
@@ -192,16 +192,16 @@
 118 [-]: GETUPVAL  R16 U5       ; R16 := U5
 119 [-]: SUB       R17 R10 K32  ; R17 := R10 - 1.000000
 120 [-]: ADD       R16 R16 R17  ; R16 := R16 + R17
-121 [-]: LOADK     R17 200      ; R17 := 200.000000
+121 [-]: CONST     R17 200      ; R17 := 200.000000
 122 [-]: MOVE      R18 R8       ; R18 := R8
 123 [-]: MOVE      R19 R1       ; R19 := R1
 124 [-]: MOVE      R20 R0       ; R20 := R0
-125 [-]: LOADK     R21 20       ; R21 := 20.000000
-126 [-]: LOADBOOL  R22 1 0      ; R22 := true
-127 [-]: LOADBOOL  R23 1 0      ; R23 := true
-128 [-]: LOADBOOL  R24 1 0      ; R24 := true
-129 [-]: LOADK     R25 0        ; R25 := 0.000000
-130 [-]: LOADBOOL  R26 1 0      ; R26 := true
+125 [-]: CONST     R21 20       ; R21 := 20.000000
+126 [-]: LOADKB    R22 1 0      ; R22 := true
+127 [-]: LOADKB    R23 1 0      ; R23 := true
+128 [-]: LOADKB    R24 1 0      ; R24 := true
+129 [-]: CONST     R25 0        ; R25 := 0.000000
+130 [-]: LOADKB    R26 1 0      ; R26 := true
 131 [-]: CALL      R11 16 1     ; R11(R12,R13,R14,R15,R16,R17,R18,R19,R20,R21,R22,R23,R24,R25,R26)
 132 [-]: GETGLOBAL R11 K1       ; R11 := 0x7b998233
 133 [-]: MOVE      R12 R5       ; R12 := R5
@@ -211,14 +211,14 @@
 137 [-]: SELF      R11 R5 K33   ; R12 := R5; R11 := R5[0xe28aa928]
 138 [-]: GETGLOBAL R13 K34      ; R13 := 0xa421af95
 139 [-]: LOADK     R14 K35      ; R14 := 0.400000
-140 [-]: LOADK     R15 0        ; R15 := 0.000000
-141 [-]: LOADK     R16 0        ; R16 := -0.500000
+140 [-]: CONST     R15 0        ; R15 := 0.000000
+141 [-]: CONST     R16 0        ; R16 := -0.500000
 142 [-]: CALL      R13 4 2      ; R13 := R13(R14,R15,R16)
 143 [-]: GETGLOBAL R14 K16      ; R14 := ZERO_ROTATION
 144 [-]: CALL      R11 4 1      ; R11(R12,R13,R14)
 145 [-]: GETGLOBAL R11 K36      ; R11 := 0xb7cbd06b
-146 [-]: LOADK     R12 50       ; R12 := 50.000000
-147 [-]: LOADK     R13 60       ; R13 := 60.000000
+146 [-]: CONST     R12 50       ; R12 := 50.000000
+147 [-]: CONST     R13 60       ; R13 := 60.000000
 148 [-]: CALL      R11 3 2      ; R11 := R11(R12,R13)
 149 [-]: SELF      R12 R5 K37   ; R13 := R5; R12 := R5[0xaed5398d]
 150 [-]: MOVE      R14 R11      ; R14 := R11
@@ -227,7 +227,7 @@
 153 [-]: GETGLOBAL R14 K12      ; R14 := 0x0469f296
 154 [-]: LOADK     R15 K39      ; R15 := "WindTimer"
 155 [-]: CALL      R14 2 2      ; R14 := R14(R15)
-156 [-]: LOADBOOL  R15 0 0      ; R15 := false
+156 [-]: LOADKB    R15 0 0      ; R15 := false
 157 [-]: CALL      R12 4 1      ; R12(R13,R14,R15)
 158 [-]: GETGLOBAL R12 K27      ; R12 := 0x89326c93
 159 [-]: SELF      R12 R12 K40  ; R13 := R12; R12 := R12[0x05909209]

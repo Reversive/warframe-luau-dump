@@ -31,9 +31,9 @@
   4 [-]: CALL      R0 3 1       ; R0(R1,R2)
   5 [-]: GETUPVAL  R0 U0        ; R0 := U0
   6 [-]: GETTABLE  R0 R0 K3     ; R0 := R0[0xd06ddfa8]
-  7 [-]: LOADK     R1 0         ; R1 := 0.000000
-  8 [-]: LOADK     R2 1         ; R2 := 1.000000
-  9 [-]: LOADK     R3 0         ; R3 := 0.500000
+  7 [-]: CONST     R1 0         ; R1 := 0.000000
+  8 [-]: CONST     R2 1         ; R2 := 1.000000
+  9 [-]: CONST     R3 0         ; R3 := 0.500000
  10 [-]: CALL      R0 4 1       ; R0(R1,R2,R3)
  11 [-]: GETGLOBAL R0 K4        ; R0 := 0xcbd666e1
  12 [-]: LOADK     R1 K5        ; R1 := 0.100000

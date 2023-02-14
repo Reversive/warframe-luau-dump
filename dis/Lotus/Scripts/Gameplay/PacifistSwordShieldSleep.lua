@@ -20,7 +20,7 @@
  11 [-]: LOADK     R4 K4        ; R4 := "SLEEP_END"
  12 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  13 [-]: GETGLOBAL R4 K5        ; R4 := 0x7ed0a956
- 14 [-]: LOADK     R5 K6        ; R5 := "/Lotus/Powersuits/Pacifist/Pacifist"
+ 14 [-]: LOADK     R5 K6        ; R5 := "/Lotus/Powersuits/Pacifist/PacifistBaseSuit"
  15 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  16 [-]: CLOSURE   R5 0         ; R5 := closure(Function #1)
  17 [-]: MOVE      R0 R4        ; R0 := R4
@@ -97,14 +97,14 @@
  52 [-]: JMP       54           ; PC := 54
  53 [-]: RETURN    R0 1         ; return 
  54 [-]: SELF      R8 R7 K9     ; R9 := R7; R8 := R7[0x93d83685]
- 55 [-]: LOADK     R10 0        ; R10 := 0.000000
- 56 [-]: LOADK     R11 0        ; R11 := 0.000000
+ 55 [-]: CONST     R10 0        ; R10 := 0.000000
+ 56 [-]: CONST     R11 0        ; R11 := 0.000000
  57 [-]: CALL      R8 4 2       ; R8 := R8(R9,R10,R11)
  58 [-]: TEST      R8 1         ; if R8 then PC := 64
  59 [-]: JMP       64           ; PC := 64
  60 [-]: SELF      R8 R7 K9     ; R9 := R7; R8 := R7[0x93d83685]
- 61 [-]: LOADK     R10 1        ; R10 := 1.000000
- 62 [-]: LOADK     R11 0        ; R11 := 0.000000
+ 61 [-]: CONST     R10 1        ; R10 := 1.000000
+ 62 [-]: CONST     R11 0        ; R11 := 0.000000
  63 [-]: CALL      R8 4 2       ; R8 := R8(R9,R10,R11)
  64 [-]: TEST      R8 0         ; if not R8 then PC := 92
  65 [-]: JMP       92           ; PC := 92
@@ -117,8 +117,8 @@
  72 [-]: GETTABLE  R9 R9 K14    ; R9 := R9[0x35c16153]
  73 [-]: CALL      R9 1 2       ; R9 := R9()
  74 [-]: SELF      R10 R9 K15   ; R11 := R9; R10 := R9[0xfc0e440a]
- 75 [-]: LOADK     R12 0        ; R12 := 0.000000
- 76 [-]: LOADBOOL  R13 1 0      ; R13 := true
+ 75 [-]: CONST     R12 0        ; R12 := 0.000000
+ 76 [-]: LOADKB    R13 1 0      ; R13 := true
  77 [-]: CALL      R10 4 1      ; R10(R11,R12,R13)
  78 [-]: SELF      R10 R2 K16   ; R11 := R2; R10 := R2[0x479483bb]
  79 [-]: MOVE      R12 R9       ; R12 := R9
@@ -164,8 +164,8 @@
 119 [-]: SETTABLE  R13 K29 K28  ; R13["lastShield"] := nil
 120 [-]: GETGLOBAL R14 K31      ; R14 := 0x5bced4c4
 121 [-]: GETTABLE  R14 R14 K32  ; R14 := R14[0x3630e649]
-122 [-]: LOADK     R15 1        ; R15 := 1.000000
-123 [-]: LOADK     R16 2        ; R16 := 2.000000
+122 [-]: CONST     R15 1        ; R15 := 1.000000
+123 [-]: CONST     R16 2        ; R16 := 2.000000
 124 [-]: CALL      R14 3 2      ; R14 := R14(R15,R16)
 125 [-]: SETTABLE  R13 K30 R14  ; R13["reactionId"] := R14
 126 [-]: SETTABLE  R13 K33 K34  ; R13["state"] := 0.000000
@@ -175,7 +175,7 @@
 130 [-]: GETGLOBAL R14 K37      ; R14 := 0x0469f296
 131 [-]: LOADK     R15 K38      ; R15 := "DoSleepHit"
 132 [-]: CALL      R14 2 2      ; R14 := R14(R15)
-133 [-]: LOADBOOL  R15 0 0      ; R15 := false
+133 [-]: LOADKB    R15 0 0      ; R15 := false
 134 [-]: CALL      R12 4 1      ; R12(R13,R14,R15)
 135 [-]: RETURN    R0 1         ; return 
 
@@ -202,7 +202,7 @@
  11 [-]: JMP       13           ; PC := 13
  12 [-]: RETURN    R0 1         ; return 
  13 [-]: GETGLOBAL R3 K5        ; R3 := 0xcbd666e1
- 14 [-]: LOADK     R4 0         ; R4 := 0.000000
+ 14 [-]: CONST     R4 0         ; R4 := 0.000000
  15 [-]: CALL      R3 2 1       ; R3(R4)
  16 [-]: GETGLOBAL R3 K4        ; R3 := 0x7b998233
  17 [-]: GETGLOBAL R4 K1        ; R4 := _T
@@ -239,10 +239,10 @@
  48 [-]: JMP       72           ; PC := 72
  49 [-]: SELF      R3 R0 K15    ; R4 := R0; R3 := R0[0x0f89a4d4]
  50 [-]: GETUPVAL  R5 U0        ; R5 := U0
- 51 [-]: LOADBOOL  R6 0 0       ; R6 := false
- 52 [-]: LOADK     R7 4         ; R7 := 4.000000
- 53 [-]: LOADK     R8 3         ; R8 := 3.000000
- 54 [-]: LOADBOOL  R9 1 0       ; R9 := true
+ 51 [-]: LOADKB    R6 0 0       ; R6 := false
+ 52 [-]: CONST     R7 4         ; R7 := 4.000000
+ 53 [-]: CONST     R8 3         ; R8 := 3.000000
+ 54 [-]: LOADKB    R9 1 0       ; R9 := true
  55 [-]: GETGLOBAL R10 K1       ; R10 := _T
  56 [-]: GETTABLE  R10 R10 K2   ; R10 := R10["PacifistSleepHit"]
  57 [-]: GETTABLE  R10 R10 R1   ; R10 := R10[R1]
@@ -257,7 +257,7 @@
  66 [-]: SELF      R3 R0 K18    ; R4 := R0; R3 := R0[0xfa9e477f]
  67 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  68 [-]: SELF      R3 R3 K19    ; R4 := R3; R3 := R3[0x55e9211c]
- 69 [-]: LOADBOOL  R5 1 0       ; R5 := true
+ 69 [-]: LOADKB    R5 1 0       ; R5 := true
  70 [-]: GETUPVAL  R6 U1        ; R6 := U1
  71 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
  72 [-]: GETGLOBAL R3 K1        ; R3 := _T
@@ -297,16 +297,16 @@
 106 [-]: JMP       128          ; PC := 128
 107 [-]: SELF      R3 R0 K22    ; R4 := R0; R3 := R0[0x444ae2c8]
 108 [-]: GETGLOBAL R5 K23       ; R5 := EMPTY_SYMBOL
-109 [-]: LOADBOOL  R6 0 0       ; R6 := false
+109 [-]: LOADKB    R6 0 0       ; R6 := false
 110 [-]: CALL      R3 4 2       ; R3 := R3(R4,R5,R6)
 111 [-]: TEST      R3 1         ; if R3 then PC := 128
 112 [-]: JMP       128          ; PC := 128
 113 [-]: SELF      R3 R0 K15    ; R4 := R0; R3 := R0[0x0f89a4d4]
 114 [-]: GETUPVAL  R5 U2        ; R5 := U2
-115 [-]: LOADBOOL  R6 0 0       ; R6 := false
-116 [-]: LOADK     R7 4         ; R7 := 4.000000
-117 [-]: LOADK     R8 2         ; R8 := 2.000000
-118 [-]: LOADBOOL  R9 1 0       ; R9 := true
+115 [-]: LOADKB    R6 0 0       ; R6 := false
+116 [-]: CONST     R7 4         ; R7 := 4.000000
+117 [-]: CONST     R8 2         ; R8 := 2.000000
+118 [-]: LOADKB    R9 1 0       ; R9 := true
 119 [-]: GETGLOBAL R10 K1       ; R10 := _T
 120 [-]: GETTABLE  R10 R10 K2   ; R10 := R10["PacifistSleepHit"]
 121 [-]: GETTABLE  R10 R10 R1   ; R10 := R10[R1]
@@ -353,7 +353,7 @@
 162 [-]: JMP       164          ; PC := 164
 163 [-]: JMP       179          ; PC := 179
 164 [-]: GETGLOBAL R5 K5        ; R5 := 0xcbd666e1
-165 [-]: LOADK     R6 0         ; R6 := 0.000000
+165 [-]: CONST     R6 0         ; R6 := 0.000000
 166 [-]: CALL      R5 2 1       ; R5(R6)
 167 [-]: GETGLOBAL R5 K1        ; R5 := _T
 168 [-]: GETTABLE  R5 R5 K2     ; R5 := R5["PacifistSleepHit"]
@@ -393,10 +393,10 @@
 202 [-]: JMP       214          ; PC := 214
 203 [-]: SELF      R5 R0 K15    ; R6 := R0; R5 := R0[0x0f89a4d4]
 204 [-]: GETUPVAL  R7 U3        ; R7 := U3
-205 [-]: LOADBOOL  R8 0 0       ; R8 := false
-206 [-]: LOADK     R9 4         ; R9 := 4.000000
-207 [-]: LOADK     R10 1        ; R10 := 1.000000
-208 [-]: LOADBOOL  R11 1 0      ; R11 := true
+205 [-]: LOADKB    R8 0 0       ; R8 := false
+206 [-]: CONST     R9 4         ; R9 := 4.000000
+207 [-]: CONST     R10 1        ; R10 := 1.000000
+208 [-]: LOADKB    R11 1 0      ; R11 := true
 209 [-]: GETGLOBAL R12 K1       ; R12 := _T
 210 [-]: GETTABLE  R12 R12 K2   ; R12 := R12["PacifistSleepHit"]
 211 [-]: GETTABLE  R12 R12 R1   ; R12 := R12[R1]
@@ -417,7 +417,7 @@
 226 [-]: SELF      R5 R0 K18    ; R6 := R0; R5 := R0[0xfa9e477f]
 227 [-]: CALL      R5 2 2       ; R5 := R5(R6)
 228 [-]: SELF      R5 R5 K19    ; R6 := R5; R5 := R5[0x55e9211c]
-229 [-]: LOADBOOL  R7 0 0       ; R7 := false
+229 [-]: LOADKB    R7 0 0       ; R7 := false
 230 [-]: GETUPVAL  R8 U1        ; R8 := U1
 231 [-]: CALL      R5 4 1       ; R5(R6,R7,R8)
 232 [-]: GETGLOBAL R5 K1        ; R5 := _T

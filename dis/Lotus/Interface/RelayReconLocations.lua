@@ -14,7 +14,7 @@
   5 [-]: LOADK     R2 K2        ; R2 := "Lotus.Interface.LotusUtilities"
   6 [-]: CALL      R1 2 2       ; R1 := R1(R2)
   7 [-]: LOADNIL   R2 R2        ; R2 := nil
-  8 [-]: LOADBOOL  R3 1 0       ; R3 := true
+  8 [-]: LOADKB    R3 1 0       ; R3 := true
   9 [-]: LOADNIL   R4 R4        ; R4 := nil
  10 [-]: CLOSURE   R5 0         ; R5 := closure(Function #1)
  11 [-]: MOVE      R0 R3        ; R0 := R3
@@ -96,7 +96,7 @@
  13 [-]: GETGLOBAL R2 K9        ; R2 := 0xae91e43b
  14 [-]: MOVE      R3 R0        ; R3 := R0
  15 [-]: GETGLOBAL R4 K10       ; R4 := 0xcd0165a3
- 16 [-]: LOADK     R5 1         ; R5 := 1.000000
+ 16 [-]: CONST     R5 1         ; R5 := 1.000000
  17 [-]: CALL      R4 2 0       ; R4,... := R4(R5)
  18 [-]: CALL      R1 0 1       ; R1(R2,...)
  19 [-]: RETURN    R0 1         ; return 
@@ -138,7 +138,7 @@
   8 [-]: GETGLOBAL R0 K0        ; R0 := 0xae91e43b
   9 [-]: SELF      R0 R0 K6     ; R1 := R0; R0 := R0[0x5f56eeab]
  10 [-]: LOADK     R2 K7        ; R2 := "Banner.ProjectName"
- 11 [-]: LOADK     R3 38        ; R3 := 38.000000
+ 11 [-]: CONST     R3 38        ; R3 := 38.000000
  12 [-]: LOADK     R4 K8        ; R4 := "bottom"
  13 [-]: CALL      R0 5 1       ; R0(R1,R2,R3,R4)
  14 [-]: GETGLOBAL R0 K0        ; R0 := 0xae91e43b
@@ -151,7 +151,7 @@
  21 [-]: GETGLOBAL R7 K3        ; R7 := _T
  22 [-]: GETTABLE  R7 R7 K4     ; R7 := R7["RelayReconPhaseInfo"]
  23 [-]: GETTABLE  R7 R7 K14    ; R7 := R7["ProjectName"]
- 24 [-]: LOADBOOL  R8 0 0       ; R8 := false
+ 24 [-]: LOADKB    R8 0 0       ; R8 := false
  25 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
  26 [-]: SETTABLE  R4 K12 R5    ; R4["PROJECT"] := R5
  27 [-]: CALL      R0 5 1       ; R0(R1,R2,R3,R4)
@@ -193,7 +193,7 @@
  24 [-]: GETGLOBAL R4 K6        ; R4 := 0xae91e43b
  25 [-]: SELF      R4 R4 K7     ; R5 := R4; R4 := R4[0x67bc869f]
  26 [-]: LOADK     R6 K8        ; R6 := "Bg"
- 27 [-]: LOADK     R7 13        ; R7 := 13.000000
+ 27 [-]: CONST     R7 13        ; R7 := 13.000000
  28 [-]: ADD       R8 K9 R3     ; R8 := 142.000000 + R3
  29 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
  30 [-]: RETURN    R0 1         ; return 
@@ -236,10 +236,10 @@
  26 [-]: GETUPVAL  R0 U0        ; R0 := U0
  27 [-]: GETUPVAL  R0 U1        ; R0 := U1
  28 [-]: SETTABLE  R3 K13 R4    ; R3["mElementDrawCallback"] := R4
- 29 [-]: LOADK     R4 1         ; R4 := 1.000000
+ 29 [-]: CONST     R4 1         ; R4 := 1.000000
  30 [-]: GETTABLE  R5 R1 K14    ; R5 := R1["regions"]
  31 [-]: LEN       R5 R5        ; R5 := # R5
- 32 [-]: LOADK     R6 1         ; R6 := 1.000000
+ 32 [-]: CONST     R6 1         ; R6 := 1.000000
  33 [-]: FORPREP   R4 64        ; R4 -= R6; PC := 64
  34 [-]: GETTABLE  R8 R1 K14    ; R8 := R1["regions"]
  35 [-]: GETTABLE  R8 R8 R7     ; R8 := R8[R7]
@@ -252,7 +252,7 @@
  42 [-]: GETTABLE  R13 R13 R7   ; R13 := R13[R7]
  43 [-]: CALL      R11 3 0      ; R11,... := R11(R12,R13)
  44 [-]: CALL      R10 0 2      ; R10 := R10(R11,...)
- 45 [-]: LOADBOOL  R11 0 0      ; R11 := false
+ 45 [-]: LOADKB    R11 0 0      ; R11 := false
  46 [-]: CALL      R9 3 2       ; R9 := R9(R10,R11)
  47 [-]: GETUPVAL  R10 U3       ; R10 := U3
  48 [-]: GETTABLE  R10 R10 K19  ; R10 := R10[0xdebdf69b]
@@ -269,7 +269,7 @@
  59 [-]: SETTABLE  R13 K21 R14  ; R13["Name"] := R14
  60 [-]: SETTABLE  R13 K24 R10  ; R13["Unlocked"] := R10
  61 [-]: SETTABLE  R13 K25 R8   ; R13["RegionIdx"] := R8
- 62 [-]: LOADBOOL  R14 1 0      ; R14 := true
+ 62 [-]: LOADKB    R14 1 0      ; R14 := true
  63 [-]: CALL      R11 4 1      ; R11(R12,R13,R14)
  64 [-]: FORLOOP   R4 34        ; R4 += R6; if R4 <= R5 then begin PC := 34; R7 := R4 end
  65 [-]: SELF      R11 R3 K26   ; R12 := R3; R11 := R3[0x71e9ac81]
@@ -369,8 +369,8 @@
  14 [-]: GETTABLE  R3 R0 K4     ; R3 := R0["Id"]
  15 [-]: EQ        1 R2 R3      ; if R2 == R3 then PC := 18
  16 [-]: JMP       18           ; PC := 18
- 17 [-]: LOADBOOL  R2 0 1       ; R2 := false; PC := 18
- 18 [-]: LOADBOOL  R2 1 0       ; R2 := true
+ 17 [-]: LOADKB    R2 0 1       ; R2 := false; PC := 18
+ 18 [-]: LOADKB    R2 1 0       ; R2 := true
  19 [-]: GETGLOBAL R3 K5        ; R3 := 0x2d0fad09
  20 [-]: LOADK     R4 K6        ; R4 := "Lotus.Interface.Components.Button"
  21 [-]: CALL      R3 2 2       ; R3 := R3(R4)
@@ -381,13 +381,13 @@
  26 [-]: LOADK     R8 K11       ; R8 := ""
  27 [-]: LOADK     R9 K11       ; R9 := ""
  28 [-]: LOADNIL   R10 R11      ; R10 := R11 := nil
- 29 [-]: LOADBOOL  R12 1 0      ; R12 := true
+ 29 [-]: LOADKB    R12 1 0      ; R12 := true
  30 [-]: CALL      R4 9 2       ; R4 := R4(R5,R6,R7,R8,R9,R10,R11,R12)
  31 [-]: SETTABLE  R0 K7 R4     ; R0["mBtn"] := R4
  32 [-]: GETTABLE  R4 R0 K7     ; R4 := R0["mBtn"]
  33 [-]: CLOSURE   R5 0         ; R5 := closure(Function #6.1.4.1)
  34 [-]: MOVE      R0 R2        ; R0 := R2
- 35 [-]: SETTABLE  R4 K12 R5    ; R4[0x91e13703] := R5
+ 35 [-]: SETTABLE  R4 K12 R5    ; R4["OnRedraw"] := R5
  36 [-]: GETTABLE  R4 R0 K7     ; R4 := R0["mBtn"]
  37 [-]: CLOSURE   R5 1         ; R5 := closure(Function #6.1.4.2)
  38 [-]: SETTABLE  R4 K13 R5    ; R4["mOnFocusedCallback"] := R5
@@ -423,7 +423,7 @@
   2 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1[0xc0a3774b]
   3 [-]: GETTABLE  R3 R0 K2     ; R3 := R0["mClipName"]
   4 [-]: LOADK     R4 K3        ; R4 := "Callout"
-  5 [-]: LOADK     R5 11        ; R5 := 11.000000
+  5 [-]: CONST     R5 11        ; R5 := 11.000000
   6 [-]: GETUPVAL  R6 U0        ; R6 := U0
   7 [-]: CALL      R1 6 1       ; R1(R2,R3,R4,R5,R6)
   8 [-]: RETURN    R0 1         ; return 
@@ -442,8 +442,8 @@
   2 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1[0xc0a3774b]
   3 [-]: GETTABLE  R3 R0 K2     ; R3 := R0["mClipName"]
   4 [-]: LOADK     R4 K3        ; R4 := "Callout"
-  5 [-]: LOADK     R5 11        ; R5 := 11.000000
-  6 [-]: LOADBOOL  R6 1 0       ; R6 := true
+  5 [-]: CONST     R5 11        ; R5 := 11.000000
+  6 [-]: LOADKB    R6 1 0       ; R6 := true
   7 [-]: CALL      R1 6 1       ; R1(R2,R3,R4,R5,R6)
   8 [-]: RETURN    R0 1         ; return 
 
@@ -461,8 +461,8 @@
   2 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1[0xc0a3774b]
   3 [-]: GETTABLE  R3 R0 K2     ; R3 := R0["mClipName"]
   4 [-]: LOADK     R4 K3        ; R4 := "Callout"
-  5 [-]: LOADK     R5 11        ; R5 := 11.000000
-  6 [-]: LOADBOOL  R6 0 0       ; R6 := false
+  5 [-]: CONST     R5 11        ; R5 := 11.000000
+  6 [-]: LOADKB    R6 0 0       ; R6 := false
   7 [-]: CALL      R1 6 1       ; R1(R2,R3,R4,R5,R6)
   8 [-]: RETURN    R0 1         ; return 
 
@@ -499,14 +499,14 @@
  21 [-]: GETGLOBAL R2 K4        ; R2 := 0xae91e43b
  22 [-]: SELF      R2 R2 K10    ; R3 := R2; R2 := R2[0x42b04007]
  23 [-]: LOADK     R4 K11       ; R4 := "/Lotus/Language/RelayReconstruction/PlanetLockedWarning"
- 24 [-]: LOADBOOL  R5 0 0       ; R5 := false
+ 24 [-]: LOADKB    R5 0 0       ; R5 := false
  25 [-]: NEWTABLE  R6 0 1       ; R6 := {}
  26 [-]: GETUPVAL  R7 U0        ; R7 := U0
  27 [-]: GETTABLE  R7 R7 K13    ; R7 := R7["Name"]
  28 [-]: SETTABLE  R6 K12 R7    ; R6["PLANET"] := R7
  29 [-]: CALL      R2 5 2       ; R2 := R2(R3,R4,R5,R6)
  30 [-]: LOADNIL   R3 R4        ; R3 := R4 := nil
- 31 [-]: LOADBOOL  R5 1 0       ; R5 := true
+ 31 [-]: LOADKB    R5 1 0       ; R5 := true
  32 [-]: CALL      R1 5 1       ; R1(R2,R3,R4,R5)
  33 [-]: RETURN    R0 1         ; return 
 
@@ -543,20 +543,20 @@
   4 [-]: GETTABLE  R2 R2 K3     ; R2 := R2["RadialSolarMapOpen"]
   5 [-]: EQ        1 R2 K4      ; if R2 == true then PC := 8
   6 [-]: JMP       8            ; PC := 8
-  7 [-]: LOADBOOL  R2 0 1       ; R2 := false; PC := 8
-  8 [-]: LOADBOOL  R2 1 0       ; R2 := true
+  7 [-]: LOADKB    R2 0 1       ; R2 := false; PC := 8
+  8 [-]: LOADKB    R2 1 0       ; R2 := true
   9 [-]: CALL      R0 3 1       ; R0(R1,R2)
  10 [-]: GETGLOBAL R0 K0        ; R0 := 0xae91e43b
  11 [-]: SELF      R0 R0 K5     ; R1 := R0; R0 := R0[0xc6a10ab1]
- 12 [-]: LOADK     R2 0         ; R2 := 0.000000
+ 12 [-]: CONST     R2 0         ; R2 := 0.000000
  13 [-]: CALL      R0 3 1       ; R0(R1,R2)
  14 [-]: GETGLOBAL R0 K0        ; R0 := 0xae91e43b
  15 [-]: SELF      R0 R0 K6     ; R1 := R0; R0 := R0[0x58bec6d6]
- 16 [-]: LOADK     R2 0         ; R2 := 0.750000
+ 16 [-]: CONST     R2 0         ; R2 := 0.750000
  17 [-]: CALL      R0 3 1       ; R0(R1,R2)
  18 [-]: GETGLOBAL R0 K7        ; R0 := 0x76ea806b
  19 [-]: SELF      R0 R0 K8     ; R1 := R0; R0 := R0[0x3f3ae64c]
- 20 [-]: LOADK     R2 0         ; R2 := 0.000000
+ 20 [-]: CONST     R2 0         ; R2 := 0.000000
  21 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
  22 [-]: SELF      R0 R0 K9     ; R1 := R0; R0 := R0[0x80563238]
  23 [-]: CALL      R0 2 2       ; R0 := R0(R1)
@@ -580,8 +580,8 @@
  41 [-]: GETGLOBAL R0 K0        ; R0 := 0xae91e43b
  42 [-]: SELF      R0 R0 K13    ; R1 := R0; R0 := R0[0x67bc869f]
  43 [-]: LOADK     R2 K14       ; R2 := "BannerSeparator"
- 44 [-]: LOADK     R3 10        ; R3 := 10.000000
- 45 [-]: LOADK     R4 20        ; R4 := 20.000000
+ 44 [-]: CONST     R3 10        ; R3 := 10.000000
+ 45 [-]: CONST     R4 20        ; R4 := 20.000000
  46 [-]: CALL      R0 5 1       ; R0(R1,R2,R3,R4)
  47 [-]: GETGLOBAL R0 K0        ; R0 := 0xae91e43b
  48 [-]: SELF      R0 R0 K15    ; R1 := R0; R0 := R0[0xd5181643]
@@ -617,7 +617,7 @@
  78 [-]: GETGLOBAL R6 K17       ; R6 := 0x0032441c
  79 [-]: GETTABLE  R6 R6 K27    ; R6 := R6["UIColorObject_DarkBlue"]
  80 [-]: GETTABLE  R6 R6 K24    ; R6 := R6["b"]
- 81 [-]: LOADK     R7 0         ; R7 := 0.250000
+ 81 [-]: CONST     R7 0         ; R7 := 0.250000
  82 [-]: CALL      R0 8 1       ; R0(R1,R2,R3,R4,R5,R6,R7)
  83 [-]: GETUPVAL  R0 U1        ; R0 := U1
  84 [-]: CALL      R0 1 1       ; R0()
@@ -627,7 +627,7 @@
  88 [-]: SETTABLE  R0 K11 K28   ; R0["RelayReconPhaseInfo"] := nil
  89 [-]: GETUPVAL  R0 U3        ; R0 := U3
  90 [-]: CALL      R0 1 1       ; R0()
- 91 [-]: LOADBOOL  R0 0 0       ; R0 := false
+ 91 [-]: LOADKB    R0 0 0       ; R0 := false
  92 [-]: SETUPVAL  R0 U4        ; U82 := R4
  93 [-]: RETURN    R0 1         ; return 
 

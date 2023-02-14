@@ -71,9 +71,9 @@
  12 [-]: SELF      R1 R1 K5     ; R2 := R1; R1 := R1[0xc7fcada9]
  13 [-]: GETUPVAL  R3 U1        ; R3 := U1
  14 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
- 15 [-]: LOADK     R2 1         ; R2 := 1.000000
- 16 [-]: LOADK     R3 0         ; R3 := 0.000000
- 17 [-]: LOADK     R4 0         ; R4 := 0.000000
+ 15 [-]: CONST     R2 1         ; R2 := 1.000000
+ 16 [-]: CONST     R3 0         ; R3 := 0.000000
+ 17 [-]: CONST     R4 0         ; R4 := 0.000000
  18 [-]: GETGLOBAL R5 K6        ; R5 := 0x7b998233
  19 [-]: MOVE      R6 R0        ; R6 := R0
  20 [-]: CALL      R5 2 2       ; R5 := R5(R6)
@@ -150,7 +150,7 @@
  91 [-]: GETGLOBAL R17 K0       ; R17 := _T
  92 [-]: GETTABLE  R2 R17 K1    ; R2 := R17["AlchemyRoomInfestedLights"]
  93 [-]: GETGLOBAL R17 K19      ; R17 := 0xcbd666e1
- 94 [-]: LOADK     R18 0        ; R18 := 0.000000
+ 94 [-]: CONST     R18 0        ; R18 := 0.000000
  95 [-]: CALL      R17 2 1      ; R17(R18)
  96 [-]: JMP       32           ; PC := 32
  97 [-]: RETURN    R0 1         ; return 
@@ -165,8 +165,8 @@
 ; Is_vararg:       0
 ; Max Stack Size:  11
 
-  1 [-]: LOADBOOL  R0 1 0       ; R0 := true
-  2 [-]: LOADK     R1 0         ; R1 := 0.000000
+  1 [-]: LOADKB    R0 1 0       ; R0 := true
+  2 [-]: CONST     R1 0         ; R1 := 0.000000
   3 [-]: GETGLOBAL R2 K0        ; R2 := 0x89326c93
   4 [-]: SELF      R2 R2 K1     ; R3 := R2; R2 := R2[0x46a0ebf5]
   5 [-]: GETGLOBAL R4 K2        ; R4 := 0x0469f296
@@ -176,7 +176,7 @@
   9 [-]: GETUPVAL  R3 U0        ; R3 := U0
  10 [-]: SELF      R3 R3 K4     ; R4 := R3; R3 := R3[0x0d09d3c0]
  11 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 12 [-]: LOADBOOL  R0 0 0       ; R0 := false
+ 12 [-]: LOADKB    R0 0 0       ; R0 := false
  13 [-]: GETGLOBAL R4 K5        ; R4 := 0xc8802016
  14 [-]: MOVE      R5 R3        ; R5 := R3
  15 [-]: CALL      R4 2 4       ; R4,R5,R6 := R4(R5)
@@ -186,7 +186,7 @@
  19 [-]: CALL      R9 2 2       ; R9 := R9(R10)
  20 [-]: EQ        0 R8 R9      ; if R8 ~= R9 then PC := 24
  21 [-]: JMP       24           ; PC := 24
- 22 [-]: LOADBOOL  R0 1 0       ; R0 := true
+ 22 [-]: LOADKB    R0 1 0       ; R0 := true
  23 [-]: JMP       26           ; PC := 26
  24 [-]: TFORLOOP  R4 2         ; R7,R8 :=  R4(R5,R6); if R7 ~= nil then begin PC = 17; R6 := R7 end
  25 [-]: JMP       17           ; PC := 17
@@ -246,7 +246,7 @@
  14 [-]: CALL      R1 2 2       ; R1 := R1(R2)
  15 [-]: GETGLOBAL R2 K6        ; R2 := 0x76ea806b
  16 [-]: SELF      R2 R2 K7     ; R3 := R2; R2 := R2[0x3f3ae64c]
- 17 [-]: LOADK     R4 0         ; R4 := 0.000000
+ 17 [-]: CONST     R4 0         ; R4 := 0.000000
  18 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
  19 [-]: GETGLOBAL R3 K8        ; R3 := 0x7b998233
  20 [-]: MOVE      R4 R2        ; R4 := R2
@@ -317,13 +317,13 @@
  85 [-]: GETGLOBAL R9 K25       ; R9 := 0x0469f296
  86 [-]: LOADK     R10 K26      ; R10 := "OrdisIdleTransmissions"
  87 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 88 [-]: LOADBOOL  R10 0 0      ; R10 := false
+ 88 [-]: LOADKB    R10 0 0      ; R10 := false
  89 [-]: CALL      R7 4 1       ; R7(R8,R9,R10)
  90 [-]: JMP       99           ; PC := 99
  91 [-]: GETUPVAL  R7 U4        ; R7 := U4
  92 [-]: GETTABLE  R7 R7 K21    ; R7 := R7[0x1f60d532]
  93 [-]: GETGLOBAL R8 K27       ; R8 := 0x55730e1a
- 94 [-]: LOADK     R9 1         ; R9 := 1.000000
+ 94 [-]: CONST     R9 1         ; R9 := 1.000000
  95 [-]: LEN       R10 R4       ; R10 := # R4
  96 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
  97 [-]: GETTABLE  R8 R4 R8     ; R8 := R4[R8]
@@ -366,7 +366,7 @@
  20 [-]: GETGLOBAL R2 K0        ; R2 := _T
  21 [-]: GETGLOBAL R3 K7        ; R3 := 0x5bced4c4
  22 [-]: GETTABLE  R3 R3 K8     ; R3 := R3[0xac1b386a]
- 23 [-]: LOADK     R4 1         ; R4 := 1.000000
+ 23 [-]: CONST     R4 1         ; R4 := 1.000000
  24 [-]: SELF      R5 R1 K9     ; R6 := R1; R5 := R1[0xdae5bcb5]
  25 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  26 [-]: GETUPVAL  R6 U0        ; R6 := U0
@@ -374,12 +374,12 @@
  28 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
  29 [-]: SETTABLE  R2 K2 R3     ; R2["AlchemyRoomInfestedLights"] := R3
  30 [-]: GETGLOBAL R2 K10       ; R2 := 0xcbd666e1
- 31 [-]: LOADK     R3 0         ; R3 := 0.000000
+ 31 [-]: CONST     R3 0         ; R3 := 0.000000
  32 [-]: CALL      R2 2 1       ; R2(R3)
  33 [-]: JMP       9            ; PC := 9
  34 [-]: GETGLOBAL R2 K0        ; R2 := _T
  35 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["AlchemyRoomInfestedLights"]
- 36 [-]: LOADK     R3 0         ; R3 := 0.000000
+ 36 [-]: CONST     R3 0         ; R3 := 0.000000
  37 [-]: LT        0 R3 K11     ; if R3 >= 1.000000 then PC := 54
  38 [-]: JMP       54           ; PC := 54
  39 [-]: GETGLOBAL R4 K12       ; R4 := 0x67652851
@@ -389,12 +389,12 @@
  43 [-]: GETGLOBAL R4 K0        ; R4 := _T
  44 [-]: GETGLOBAL R5 K14       ; R5 := 0x9bafffe3
  45 [-]: MOVE      R6 R2        ; R6 := R2
- 46 [-]: LOADK     R7 0         ; R7 := 0.000000
+ 46 [-]: CONST     R7 0         ; R7 := 0.000000
  47 [-]: MOVE      R8 R3        ; R8 := R3
  48 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
  49 [-]: SETTABLE  R4 K2 R5     ; R4["AlchemyRoomInfestedLights"] := R5
  50 [-]: GETGLOBAL R4 K10       ; R4 := 0xcbd666e1
- 51 [-]: LOADK     R5 0         ; R5 := 0.000000
+ 51 [-]: CONST     R5 0         ; R5 := 0.000000
  52 [-]: CALL      R4 2 1       ; R4(R5)
  53 [-]: JMP       37           ; PC := 37
  54 [-]: GETGLOBAL R4 K0        ; R4 := _T

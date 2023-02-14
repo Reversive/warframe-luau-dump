@@ -16,21 +16,21 @@
   7 [-]: GETGLOBAL R2 K0        ; R2 := 0x2d0fad09
   8 [-]: LOADK     R3 K3        ; R3 := "Lotus.Scripts.Libs.ConservationLib"
   9 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 10 [-]: LOADBOOL  R3 0 0       ; R3 := false
+ 10 [-]: LOADKB    R3 0 0       ; R3 := false
  11 [-]: LOADNIL   R4 R6        ; R4 := R5 := R6 := nil
- 12 [-]: LOADBOOL  R7 0 0       ; R7 := false
+ 12 [-]: LOADKB    R7 0 0       ; R7 := false
  13 [-]: LOADNIL   R8 R9        ; R8 := R9 := nil
- 14 [-]: LOADBOOL  R10 0 0      ; R10 := false
- 15 [-]: LOADBOOL  R11 0 0      ; R11 := false
- 16 [-]: LOADK     R12 0        ; R12 := 0.000000
+ 14 [-]: LOADKB    R10 0 0      ; R10 := false
+ 15 [-]: LOADKB    R11 0 0      ; R11 := false
+ 16 [-]: CONST     R12 0        ; R12 := 0.000000
  17 [-]: GETGLOBAL R13 K4       ; R13 := 0x0469f296
  18 [-]: LOADK     R14 K5       ; R14 := "Whistle"
  19 [-]: CALL      R13 2 2      ; R13 := R13(R14)
  20 [-]: LOADK     R14 K6       ; R14 := 0.150000
- 21 [-]: LOADK     R15 0        ; R15 := 0.000000
- 22 [-]: LOADBOOL  R16 0 0      ; R16 := false
- 23 [-]: LOADK     R17 0        ; R17 := 0.000000
- 24 [-]: LOADBOOL  R18 0 0      ; R18 := false
+ 21 [-]: CONST     R15 0        ; R15 := 0.000000
+ 22 [-]: LOADKB    R16 0 0      ; R16 := false
+ 23 [-]: CONST     R17 0        ; R17 := 0.000000
+ 24 [-]: LOADKB    R18 0 0      ; R18 := false
  25 [-]: LOADNIL   R19 R19      ; R19 := nil
  26 [-]: GETGLOBAL R20 K4       ; R20 := 0x0469f296
  27 [-]: LOADK     R21 K7       ; R21 := "AnimalCallSeq"
@@ -199,19 +199,19 @@
  12 [-]: GETGLOBAL R1 K4        ; R1 := 0x25312c9b
  13 [-]: GETGLOBAL R2 K5        ; R2 := 0xae91e43b
  14 [-]: LOADK     R3 K6        ; R3 := "Frequency"
- 15 [-]: LOADK     R4 0         ; R4 := 0.000000
+ 15 [-]: CONST     R4 0         ; R4 := 0.000000
  16 [-]: NEWTABLE  R5 1 0       ; R5 := {}
- 17 [-]: LOADK     R6 10        ; R6 := 10.000000
+ 17 [-]: CONST     R6 10        ; R6 := 10.000000
  18 [-]: SETLIST   R5 1 1       ; R5[(1-1)*FPF+i] := R(5+i), 1 <= i <= 1
  19 [-]: NEWTABLE  R6 0 0       ; R6 := {}
  20 [-]: GETUPVAL  R7 U1        ; R7 := U1
  21 [-]: GETTABLE  R7 R7 K8     ; R7 := R7[0x06d055f9]
  22 [-]: GETUPVAL  R8 U0        ; R8 := U0
- 23 [-]: LOADK     R9 100       ; R9 := 100.000000
- 24 [-]: LOADK     R10 20       ; R10 := 20.000000
+ 23 [-]: CONST     R9 100       ; R9 := 100.000000
+ 24 [-]: CONST     R10 20       ; R10 := 20.000000
  25 [-]: CALL      R7 4 0       ; R7,... := R7(R8,R9,R10)
  26 [-]: SETLIST   R6 0 1       ; R6[(1-1)*FPF+i] := R(6+i), 1 <= i <= 0
- 27 [-]: LOADK     R7 0         ; R7 := 0.250000
+ 27 [-]: CONST     R7 0         ; R7 := 0.250000
  28 [-]: CALL      R1 7 1       ; R1(R2,R3,R4,R5,R6,R7)
  29 [-]: GETGLOBAL R1 K9        ; R1 := 0x89326c93
  30 [-]: SELF      R1 R1 K10    ; R2 := R1; R1 := R1[0x78298275]
@@ -222,7 +222,7 @@
  35 [-]: TEST      R2 1         ; if R2 then PC := 69
  36 [-]: JMP       69           ; PC := 69
  37 [-]: SELF      R2 R1 K12    ; R3 := R1; R2 := R1[0x0e46e45b]
- 38 [-]: LOADK     R4 0         ; R4 := 0.000000
+ 38 [-]: CONST     R4 0         ; R4 := 0.000000
  39 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
  40 [-]: TEST      R2 1         ; if R2 then PC := 48
  41 [-]: JMP       48           ; PC := 48
@@ -230,8 +230,8 @@
  43 [-]: GETTABLE  R2 R2 K3     ; R2 := R2["AnimalLureFiring"]
  44 [-]: EQ        1 R2 K14     ; if R2 == true then PC := 47
  45 [-]: JMP       47           ; PC := 47
- 46 [-]: LOADBOOL  R2 0 1       ; R2 := false; PC := 47
- 47 [-]: LOADBOOL  R2 1 0       ; R2 := true
+ 46 [-]: LOADKB    R2 0 1       ; R2 := false; PC := 47
+ 47 [-]: LOADKB    R2 1 0       ; R2 := true
  48 [-]: GETUPVAL  R3 U2        ; R3 := U2
  49 [-]: EQ        1 R2 R3      ; if R2 == R3 then PC := 69
  50 [-]: JMP       69           ; PC := 69
@@ -253,7 +253,7 @@
  66 [-]: GETUPVAL  R6 U3        ; R6 := U3
  67 [-]: CALL      R4 3 1       ; R4(R5,R6)
  68 [-]: SETUPVAL  R2 U2        ; U82 := R2
- 69 [-]: LOADBOOL  R4 0 0       ; R4 := false
+ 69 [-]: LOADKB    R4 0 0       ; R4 := false
  70 [-]: GETUPVAL  R5 U5        ; R5 := U5
  71 [-]: GETTABLE  R5 R5 K18    ; R5 := R5[0x3c43772b]
  72 [-]: CALL      R5 1 2       ; R5 := R5()
@@ -268,7 +268,7 @@
  81 [-]: EQ        1 R6 R7      ; if R6 == R7 then PC := 85
  82 [-]: JMP       85           ; PC := 85
  83 [-]: SETUPVAL  R5 U6        ; U82 := R6
- 84 [-]: LOADBOOL  R4 1 0       ; R4 := true
+ 84 [-]: LOADKB    R4 1 0       ; R4 := true
  85 [-]: GETUPVAL  R6 U6        ; R6 := U6
  86 [-]: EQ        1 R6 K19     ; if R6 == nil then PC := 96
  87 [-]: JMP       96           ; PC := 96
@@ -280,12 +280,12 @@
  93 [-]: GETTABLE  R7 R7 K23    ; R7 := R7["DOING_PITCH_MATCHING"]
  94 [-]: EQ        1 R6 R7      ; if R6 == R7 then PC := 97
  95 [-]: JMP       97           ; PC := 97
- 96 [-]: LOADBOOL  R6 0 1       ; R6 := false; PC := 97
- 97 [-]: LOADBOOL  R6 1 0       ; R6 := true
+ 96 [-]: LOADKB    R6 0 1       ; R6 := false; PC := 97
+ 97 [-]: LOADKB    R6 1 0       ; R6 := true
  98 [-]: GETGLOBAL R7 K5        ; R7 := 0xae91e43b
  99 [-]: SELF      R7 R7 K24    ; R8 := R7; R7 := R7[0xaade900e]
 100 [-]: LOADK     R9 K25       ; R9 := "Frequency.ArrowStart"
-101 [-]: LOADK     R10 11       ; R10 := 11.000000
+101 [-]: CONST     R10 11       ; R10 := 11.000000
 102 [-]: MOVE      R11 R6       ; R11 := R6
 103 [-]: CALL      R7 5 1       ; R7(R8,R9,R10,R11)
 104 [-]: TEST      R6 1         ; if R6 then PC := 112
@@ -293,7 +293,7 @@
 106 [-]: GETUPVAL  R7 U7        ; R7 := U7
 107 [-]: LT        0 K26 R7     ; if 0.000000 >= R7 then PC := 112
 108 [-]: JMP       112          ; PC := 112
-109 [-]: LOADK     R7 0         ; R7 := 0.000000
+109 [-]: CONST     R7 0         ; R7 := 0.000000
 110 [-]: SETUPVAL  R7 U7        ; U82 := R7
 111 [-]: JMP       131          ; PC := 131
 112 [-]: TEST      R6 0         ; if not R6 then PC := 131
@@ -323,7 +323,7 @@
 136 [-]: GETGLOBAL R8 K0        ; R8 := _T
 137 [-]: GETTABLE  R8 R8 K3     ; R8 := R8["AnimalLureFiring"]
 138 [-]: SETUPVAL  R8 U9        ; U82 := R9
-139 [-]: LOADK     R8 0         ; R8 := 0.000000
+139 [-]: CONST     R8 0         ; R8 := 0.000000
 140 [-]: SETUPVAL  R8 U10       ; U82 := R10
 141 [-]: GETUPVAL  R8 U9        ; R8 := U9
 142 [-]: TEST      R8 0         ; if not R8 then PC := 149
@@ -346,21 +346,21 @@
 159 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
 160 [-]: GETGLOBAL R9 K0        ; R9 := _T
 161 [-]: SETTABLE  R9 K32 R8    ; R9["lureTargetGain"] := R8
-162 [-]: LOADK     R9 220       ; R9 := 220.000000
+162 [-]: CONST     R9 220       ; R9 := 220.000000
 163 [-]: GETGLOBAL R10 K5       ; R10 := 0xae91e43b
 164 [-]: SELF      R10 R10 K33  ; R11 := R10; R10 := R10[0x67bc869f]
 165 [-]: LOADK     R12 K25      ; R12 := "Frequency.ArrowStart"
-166 [-]: LOADK     R13 1        ; R13 := 1.000000
+166 [-]: CONST     R13 1        ; R13 := 1.000000
 167 [-]: MUL       R14 R9 K34   ; R14 := R9 * 0.500000
 168 [-]: MUL       R14 R14 R8   ; R14 := R14 * R8
 169 [-]: CALL      R10 5 1      ; R10(R11,R12,R13,R14)
 170 [-]: GETGLOBAL R10 K5       ; R10 := 0xae91e43b
 171 [-]: SELF      R10 R10 K24  ; R11 := R10; R10 := R10[0xaade900e]
 172 [-]: LOADK     R12 K25      ; R12 := "Frequency.ArrowStart"
-173 [-]: LOADK     R13 11       ; R13 := 11.000000
-174 [-]: LOADBOOL  R14 1 0      ; R14 := true
+173 [-]: CONST     R13 11       ; R13 := 11.000000
+174 [-]: LOADKB    R14 1 0      ; R14 := true
 175 [-]: CALL      R10 5 1      ; R10(R11,R12,R13,R14)
-176 [-]: LOADBOOL  R10 1 0      ; R10 := true
+176 [-]: LOADKB    R10 1 0      ; R10 := true
 177 [-]: TEST      R10 0        ; if not R10 then PC := 216
 178 [-]: JMP       216          ; PC := 216
 179 [-]: GETGLOBAL R11 K0       ; R11 := _T
@@ -370,10 +370,10 @@
 183 [-]: GETGLOBAL R11 K5       ; R11 := 0xae91e43b
 184 [-]: SELF      R11 R11 K36  ; R12 := R11; R11 := R11[0x91a24e4b]
 185 [-]: LOADK     R13 K6       ; R13 := "Frequency"
-186 [-]: LOADK     R14 13       ; R14 := 13.000000
+186 [-]: CONST     R14 13       ; R14 := 13.000000
 187 [-]: CALL      R11 4 2      ; R11 := R11(R12,R13,R14)
-188 [-]: LOADK     R12 20       ; R12 := 20.000000
-189 [-]: LOADK     R13 0        ; R13 := 0.500000
+188 [-]: CONST     R12 20       ; R12 := 20.000000
+189 [-]: CONST     R13 0        ; R13 := 0.500000
 190 [-]: MUL       R14 R12 R13  ; R14 := R12 * R13
 191 [-]: DIV       R14 R14 R11  ; R14 := R14 / R11
 192 [-]: SUB       R15 R11 R12  ; R15 := R11 - R12
@@ -382,10 +382,10 @@
 195 [-]: GETGLOBAL R16 K37      ; R16 := 0x42dcc9f5
 196 [-]: GETGLOBAL R17 K0       ; R17 := _T
 197 [-]: GETTABLE  R17 R17 K35  ; R17 := R17["FrequencyMeter"]
-198 [-]: LOADK     R18 -1       ; R18 := -1.000000
-199 [-]: LOADK     R19 1        ; R19 := 1.000000
+198 [-]: CONST     R18 -1       ; R18 := -1.000000
+199 [-]: CONST     R19 1        ; R19 := 1.000000
 200 [-]: CALL      R16 4 2      ; R16 := R16(R17,R18,R19)
-201 [-]: UNM       R17 R16      ; R17 := ^ R16
+201 [-]: UNM       R17 R16      ; R17 :=  R16
 202 [-]: ADD       R17 R17 K38  ; R17 := R17 + 1.000000
 203 [-]: MUL       R17 R17 K34  ; R17 := R17 * 0.500000
 204 [-]: SUB       R18 R15 R14  ; R18 := R15 - R14
@@ -396,11 +396,11 @@
 209 [-]: LOADK     R20 K40      ; R20 := "Frequency.Fill"
 210 [-]: LOADK     R21 K41      ; R21 := "VisibilityCenter"
 211 [-]: MOVE      R22 R17      ; R22 := R17
-212 [-]: LOADK     R23 0        ; R23 := 0.000000
-213 [-]: LOADK     R24 0        ; R24 := 0.000000
-214 [-]: LOADK     R25 0        ; R25 := 0.000000
+212 [-]: CONST     R23 0        ; R23 := 0.000000
+213 [-]: CONST     R24 0        ; R24 := 0.000000
+214 [-]: CONST     R25 0        ; R25 := 0.000000
 215 [-]: CALL      R18 8 1      ; R18(R19,R20,R21,R22,R23,R24,R25)
-216 [-]: LOADK     R18 1        ; R18 := 1.000000
+216 [-]: CONST     R18 1        ; R18 := 1.000000
 217 [-]: GETGLOBAL R19 K0       ; R19 := _T
 218 [-]: GETTABLE  R19 R19 K42  ; R19 := R19["AnimalLureSoundAmplitude"]
 219 [-]: TEST      R19 0        ; if not R19 then PC := 245
@@ -417,12 +417,12 @@
 230 [-]: GETGLOBAL R19 K44      ; R19 := 0x5bced4c4
 231 [-]: GETTABLE  R19 R19 K45  ; R19 := R19[0xe4a5b3ca]
 232 [-]: GETGLOBAL R20 K46      ; R20 := 0xdef8aeae
-233 [-]: LOADK     R21 3        ; R21 := 3.000000
+233 [-]: CONST     R21 3        ; R21 := 3.000000
 234 [-]: LOADK     R22 K47      ; R22 := 0.700000
 235 [-]: GETGLOBAL R23 K48      ; R23 := 0x107bf6da
 236 [-]: GETUPVAL  R24 U11      ; R24 := U11
 237 [-]: CALL      R23 2 2      ; R23 := R23(R24)
-238 [-]: LOADK     R24 0        ; R24 := 0.500000
+238 [-]: CONST     R24 0        ; R24 := 0.500000
 239 [-]: CALL      R20 5 0      ; R20,... := R20(R21,R22,R23,R24)
 240 [-]: CALL      R19 0 2      ; R19 := R19(R20,...)
 241 [-]: MUL       R19 R19 K43  ; R19 := R19 * 4.000000
@@ -430,8 +430,8 @@
 243 [-]: GETTABLE  R20 R20 K42  ; R20 := R20["AnimalLureSoundAmplitude"]
 244 [-]: MUL       R18 R19 R20  ; R18 := R19 * R20
 245 [-]: GETGLOBAL R19 K49      ; R19 := 0x9bafffe3
-246 [-]: LOADK     R20 0        ; R20 := 0.500000
-247 [-]: LOADK     R21 1        ; R21 := 1.000000
+246 [-]: CONST     R20 0        ; R20 := 0.500000
+247 [-]: CONST     R21 1        ; R21 := 1.000000
 248 [-]: MUL       R22 R18 R18  ; R22 := R18 * R18
 249 [-]: CALL      R19 4 2      ; R19 := R19(R20,R21,R22)
 250 [-]: GETUPVAL  R20 U1       ; R20 := U1
@@ -449,18 +449,18 @@
 262 [-]: LOADK     R24 K40      ; R24 := "Frequency.Fill"
 263 [-]: LOADK     R25 K54      ; R25 := "VisibilitySize"
 264 [-]: MOVE      R26 R20      ; R26 := R20
-265 [-]: LOADK     R27 0        ; R27 := 0.000000
-266 [-]: LOADK     R28 0        ; R28 := 0.000000
-267 [-]: LOADK     R29 0        ; R29 := 0.000000
+265 [-]: CONST     R27 0        ; R27 := 0.000000
+266 [-]: CONST     R28 0        ; R28 := 0.000000
+267 [-]: CONST     R29 0        ; R29 := 0.000000
 268 [-]: CALL      R22 8 1      ; R22(R23,R24,R25,R26,R27,R28,R29)
 269 [-]: GETGLOBAL R22 K5       ; R22 := 0xae91e43b
 270 [-]: SELF      R22 R22 K39  ; R23 := R22; R22 := R22[0x91e13703]
 271 [-]: LOADK     R24 K40      ; R24 := "Frequency.Fill"
 272 [-]: LOADK     R25 K55      ; R25 := "VisibilityFadeSize"
 273 [-]: MOVE      R26 R21      ; R26 := R21
-274 [-]: LOADK     R27 0        ; R27 := 0.000000
-275 [-]: LOADK     R28 0        ; R28 := 0.000000
-276 [-]: LOADK     R29 0        ; R29 := 0.000000
+274 [-]: CONST     R27 0        ; R27 := 0.000000
+275 [-]: CONST     R28 0        ; R28 := 0.000000
+276 [-]: CONST     R29 0        ; R29 := 0.000000
 277 [-]: CALL      R22 8 1      ; R22(R23,R24,R25,R26,R27,R28,R29)
 278 [-]: RETURN    R0 1         ; return 
 
@@ -510,14 +510,14 @@
  34 [-]: SELF      R1 R1 K10    ; R2 := R1; R1 := R1[0x33307f92]
  35 [-]: CALL      R1 2 2       ; R1 := R1(R2)
  36 [-]: SETUPVAL  R1 U1        ; U82 := R1
- 37 [-]: LOADBOOL  R1 1 0       ; R1 := true
+ 37 [-]: LOADKB    R1 1 0       ; R1 := true
  38 [-]: SETUPVAL  R1 U2        ; U82 := R2
  39 [-]: GETGLOBAL R1 K0        ; R1 := 0x7b998233
  40 [-]: GETUPVAL  R2 U1        ; R2 := U1
  41 [-]: CALL      R1 2 2       ; R1 := R1(R2)
  42 [-]: TEST      R1 1         ; if R1 then PC := 63
  43 [-]: JMP       63           ; PC := 63
- 44 [-]: LOADBOOL  R1 1 0       ; R1 := true
+ 44 [-]: LOADKB    R1 1 0       ; R1 := true
  45 [-]: GETGLOBAL R2 K0        ; R2 := 0x7b998233
  46 [-]: GETGLOBAL R3 K11       ; R3 := _T
  47 [-]: GETTABLE  R3 R3 K12    ; R3 := R3["reticleState"]
@@ -555,7 +555,7 @@
  79 [-]: GETUPVAL  R3 U1        ; R3 := U1
  80 [-]: SELF      R3 R3 K18    ; R4 := R3; R3 := R3[0x91a24e4b]
  81 [-]: LOADK     R5 K19       ; R5 := "_root"
- 82 [-]: LOADK     R6 10        ; R6 := 10.000000
+ 82 [-]: CONST     R6 10        ; R6 := 10.000000
  83 [-]: CALL      R3 4 2       ; R3 := R3(R4,R5,R6)
  84 [-]: GETUPVAL  R4 U4        ; R4 := U4
  85 [-]: EQ        1 R4 R3      ; if R4 == R3 then PC := 94
@@ -564,7 +564,7 @@
  88 [-]: GETGLOBAL R4 K1        ; R4 := 0xae91e43b
  89 [-]: SELF      R4 R4 K20    ; R5 := R4; R4 := R4[0x67bc869f]
  90 [-]: LOADK     R6 K19       ; R6 := "_root"
- 91 [-]: LOADK     R7 10        ; R7 := 10.000000
+ 91 [-]: CONST     R7 10        ; R7 := 10.000000
  92 [-]: MOVE      R8 R3        ; R8 := R3
  93 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
  94 [-]: GETUPVAL  R4 U5        ; R4 := U5
@@ -596,20 +596,20 @@
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0xae91e43b
   2 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0x67bc869f]
   3 [-]: LOADK     R2 K2        ; R2 := "Frequency"
-  4 [-]: LOADK     R3 10        ; R3 := 10.000000
-  5 [-]: LOADK     R4 20        ; R4 := 20.000000
+  4 [-]: CONST     R3 10        ; R3 := 10.000000
+  5 [-]: CONST     R4 20        ; R4 := 20.000000
   6 [-]: CALL      R0 5 1       ; R0(R1,R2,R3,R4)
   7 [-]: GETGLOBAL R0 K0        ; R0 := 0xae91e43b
   8 [-]: SELF      R0 R0 K3     ; R1 := R0; R0 := R0[0xaade900e]
   9 [-]: LOADK     R2 K4        ; R2 := "Frequency.ArrowStart"
- 10 [-]: LOADK     R3 11        ; R3 := 11.000000
- 11 [-]: LOADBOOL  R4 0 0       ; R4 := false
+ 10 [-]: CONST     R3 11        ; R3 := 11.000000
+ 11 [-]: LOADKB    R4 0 0       ; R4 := false
  12 [-]: CALL      R0 5 1       ; R0(R1,R2,R3,R4)
  13 [-]: GETGLOBAL R0 K0        ; R0 := 0xae91e43b
  14 [-]: SELF      R0 R0 K3     ; R1 := R0; R0 := R0[0xaade900e]
  15 [-]: LOADK     R2 K5        ; R2 := "Frequency.ArrowEnd"
- 16 [-]: LOADK     R3 11        ; R3 := 11.000000
- 17 [-]: LOADBOOL  R4 0 0       ; R4 := false
+ 16 [-]: CONST     R3 11        ; R3 := 11.000000
+ 17 [-]: LOADKB    R4 0 0       ; R4 := false
  18 [-]: CALL      R0 5 1       ; R0(R1,R2,R3,R4)
  19 [-]: GETGLOBAL R0 K6        ; R0 := _T
  20 [-]: GETTABLE  R0 R0 K7     ; R0 := R0[0xf6b77431]
@@ -629,18 +629,18 @@
  34 [-]: GETGLOBAL R4 K0        ; R4 := 0xae91e43b
  35 [-]: SELF      R4 R4 K13    ; R5 := R4; R4 := R4[0xaf9fda9f]
  36 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 37 [-]: LOADBOOL  R5 1 0       ; R5 := true
+ 37 [-]: LOADKB    R5 1 0       ; R5 := true
  38 [-]: GETTABLE  R6 R0 K14    ; R6 := R0["mHudScalePadding"]
  39 [-]: CALL      R1 6 1       ; R1(R2,R3,R4,R5,R6)
  40 [-]: GETUPVAL  R1 U0        ; R1 := U0
  41 [-]: GETTABLE  R1 R1 K15    ; R1 := R1[0xd718f59b]
  42 [-]: GETGLOBAL R2 K0        ; R2 := 0xae91e43b
- 43 [-]: LOADK     R3 5         ; R3 := 5.000000
+ 43 [-]: CONST     R3 5         ; R3 := 5.000000
  44 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
  45 [-]: GETUPVAL  R2 U0        ; R2 := U0
  46 [-]: GETTABLE  R2 R2 K16    ; R2 := R2[0x0db7934d]
  47 [-]: GETGLOBAL R3 K0        ; R3 := 0xae91e43b
- 48 [-]: LOADK     R4 15        ; R4 := 15.000000
+ 48 [-]: CONST     R4 15        ; R4 := 15.000000
  49 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
  50 [-]: GETGLOBAL R3 K0        ; R3 := 0xae91e43b
  51 [-]: SELF      R3 R3 K17    ; R4 := R3; R3 := R3[0xd5181643]
@@ -652,18 +652,18 @@
  57 [-]: LOADK     R5 K18       ; R5 := "Frequency.Fill"
  58 [-]: LOADK     R6 K21       ; R6 := "VisibilitySize"
  59 [-]: MOVE      R7 R1        ; R7 := R1
- 60 [-]: LOADK     R8 0         ; R8 := 0.000000
- 61 [-]: LOADK     R9 0         ; R9 := 0.000000
- 62 [-]: LOADK     R10 0        ; R10 := 0.000000
+ 60 [-]: CONST     R8 0         ; R8 := 0.000000
+ 61 [-]: CONST     R9 0         ; R9 := 0.000000
+ 62 [-]: CONST     R10 0        ; R10 := 0.000000
  63 [-]: CALL      R3 8 1       ; R3(R4,R5,R6,R7,R8,R9,R10)
  64 [-]: GETGLOBAL R3 K0        ; R3 := 0xae91e43b
  65 [-]: SELF      R3 R3 K20    ; R4 := R3; R3 := R3[0x91e13703]
  66 [-]: LOADK     R5 K18       ; R5 := "Frequency.Fill"
  67 [-]: LOADK     R6 K22       ; R6 := "VisibilityFadeSize"
  68 [-]: MOVE      R7 R2        ; R7 := R2
- 69 [-]: LOADK     R8 0         ; R8 := 0.000000
- 70 [-]: LOADK     R9 0         ; R9 := 0.000000
- 71 [-]: LOADK     R10 0        ; R10 := 0.000000
+ 69 [-]: CONST     R8 0         ; R8 := 0.000000
+ 70 [-]: CONST     R9 0         ; R9 := 0.000000
+ 71 [-]: CONST     R10 0        ; R10 := 0.000000
  72 [-]: CALL      R3 8 1       ; R3(R4,R5,R6,R7,R8,R9,R10)
  73 [-]: GETGLOBAL R3 K0        ; R3 := 0xae91e43b
  74 [-]: SELF      R3 R3 K23    ; R4 := R3; R3 := R3[0x1fd6abd0]
@@ -680,7 +680,7 @@
  85 [-]: GETGLOBAL R5 K28       ; R5 := 0xc75c17fc
  86 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
  87 [-]: SETUPVAL  R3 U2        ; U82 := R2
- 88 [-]: LOADBOOL  R3 1 0       ; R3 := true
+ 88 [-]: LOADKB    R3 1 0       ; R3 := true
  89 [-]: SETUPVAL  R3 U3        ; U82 := R3
  90 [-]: RETURN    R0 1         ; return 
 
@@ -694,7 +694,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
-  1 [-]: LOADBOOL  R1 1 0       ; R1 := true
+  1 [-]: LOADKB    R1 1 0       ; R1 := true
   2 [-]: RETURN    R1 2         ; return R1
   3 [-]: RETURN    R0 1         ; return 
 
@@ -710,8 +710,8 @@
 
   1 [-]: EQ        1 R0 K0      ; if R0 == "true" then PC := 4
   2 [-]: JMP       4            ; PC := 4
-  3 [-]: LOADBOOL  R0 0 1       ; R0 := false; PC := 4
-  4 [-]: LOADBOOL  R0 1 0       ; R0 := true
+  3 [-]: LOADKB    R0 0 1       ; R0 := false; PC := 4
+  4 [-]: LOADKB    R0 1 0       ; R0 := true
   5 [-]: GETUPVAL  R1 U0        ; R1 := U0
   6 [-]: EQ        1 R1 R0      ; if R1 == R0 then PC := 9
   7 [-]: JMP       9            ; PC := 9
@@ -730,13 +730,13 @@
 
   1 [-]: EQ        1 R0 K0      ; if R0 == "true" then PC := 4
   2 [-]: JMP       4            ; PC := 4
-  3 [-]: LOADBOOL  R1 0 1       ; R1 := false; PC := 4
-  4 [-]: LOADBOOL  R1 1 0       ; R1 := true
+  3 [-]: LOADKB    R1 0 1       ; R1 := false; PC := 4
+  4 [-]: LOADKB    R1 1 0       ; R1 := true
   5 [-]: SETUPVAL  R1 U0        ; U82 := R0
   6 [-]: GETGLOBAL R1 K1        ; R1 := 0xae91e43b
   7 [-]: SELF      R1 R1 K2     ; R2 := R1; R1 := R1[0xaade900e]
   8 [-]: LOADK     R3 K3        ; R3 := "_root"
-  9 [-]: LOADK     R4 11        ; R4 := 11.000000
+  9 [-]: CONST     R4 11        ; R4 := 11.000000
  10 [-]: GETUPVAL  R5 U0        ; R5 := U0
  11 [-]: CALL      R1 5 1       ; R1(R2,R3,R4,R5)
  12 [-]: GETGLOBAL R1 K4        ; R1 := 0x7b998233
@@ -777,7 +777,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
-  1 [-]: LOADBOOL  R0 1 0       ; R0 := true
+  1 [-]: LOADKB    R0 1 0       ; R0 := true
   2 [-]: RETURN    R0 2         ; return R0
   3 [-]: RETURN    R0 1         ; return 
 

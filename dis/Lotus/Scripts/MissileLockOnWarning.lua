@@ -82,7 +82,7 @@
  55 [-]: GETGLOBAL R6 K12       ; R6 := 0x0469f296
  56 [-]: LOADK     R7 K13       ; R7 := "PlaySoundAtTransEnd"
  57 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 58 [-]: LOADBOOL  R7 0 0       ; R7 := false
+ 58 [-]: LOADKB    R7 0 0       ; R7 := false
  59 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
  60 [-]: GETGLOBAL R4 K0        ; R4 := 0x7b998233
  61 [-]: MOVE      R5 R1        ; R5 := R1
@@ -141,7 +141,7 @@
  16 [-]: TEST      R2 1         ; if R2 then PC := 22
  17 [-]: JMP       22           ; PC := 22
  18 [-]: GETGLOBAL R2 K3        ; R2 := 0xcbd666e1
- 19 [-]: LOADK     R3 0         ; R3 := 0.000000
+ 19 [-]: CONST     R3 0         ; R3 := 0.000000
  20 [-]: CALL      R2 2 1       ; R2(R3)
  21 [-]: JMP       9            ; PC := 9
  22 [-]: GETGLOBAL R2 K2        ; R2 := 0x7b998233
@@ -151,9 +151,9 @@
  26 [-]: JMP       33           ; PC := 33
  27 [-]: SELF      R2 R0 K4     ; R3 := R0; R2 := R0[0x659d451f]
  28 [-]: GETGLOBAL R4 K5        ; R4 := 0x039424ec
- 29 [-]: LOADBOOL  R5 0 0       ; R5 := false
- 30 [-]: LOADK     R6 0         ; R6 := 0.000000
- 31 [-]: LOADBOOL  R7 0 0       ; R7 := false
+ 29 [-]: LOADKB    R5 0 0       ; R5 := false
+ 30 [-]: CONST     R6 0         ; R6 := 0.000000
+ 31 [-]: LOADKB    R7 0 0       ; R7 := false
  32 [-]: CALL      R2 6 1       ; R2(R3,R4,R5,R6,R7)
  33 [-]: RETURN    R0 1         ; return 
 
@@ -224,7 +224,7 @@
  55 [-]: GETGLOBAL R6 K12       ; R6 := 0x0469f296
  56 [-]: LOADK     R7 K13       ; R7 := "PlaySoundAtTransEnd"
  57 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 58 [-]: LOADBOOL  R7 0 0       ; R7 := false
+ 58 [-]: LOADKB    R7 0 0       ; R7 := false
  59 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
  60 [-]: GETGLOBAL R4 K0        ; R4 := 0x7b998233
  61 [-]: MOVE      R5 R1        ; R5 := R1
@@ -248,7 +248,7 @@
  79 [-]: SELF      R4 R1 K18    ; R5 := R1; R4 := R1[0x1b56d232]
  80 [-]: CALL      R4 2 1       ; R4(R5)
  81 [-]: SELF      R4 R1 K19    ; R5 := R1; R4 := R1[0x76ce1fd1]
- 82 [-]: LOADK     R6 5         ; R6 := 5.000000
+ 82 [-]: CONST     R6 5         ; R6 := 5.000000
  83 [-]: CALL      R4 3 1       ; R4(R5,R6)
  84 [-]: RETURN    R0 1         ; return 
 

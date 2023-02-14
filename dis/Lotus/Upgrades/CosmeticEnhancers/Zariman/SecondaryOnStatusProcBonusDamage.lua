@@ -55,47 +55,52 @@
   3 [-]: GETGLOBAL R6 K1        ; R6 := 0x7b998233
   4 [-]: GETTABLE  R7 R5 K2     ; R7 := R5["victim"]
   5 [-]: CALL      R6 2 2       ; R6 := R6(R7)
-  6 [-]: TEST      R6 0         ; if not R6 then PC := 9
-  7 [-]: JMP       9            ; PC := 9
-  8 [-]: RETURN    R0 1         ; return 
-  9 [-]: GETGLOBAL R6 K3        ; R6 := 0x34291f5c
- 10 [-]: GETTABLE  R6 R6 K4     ; R6 := R6[0x35c16153]
- 11 [-]: CALL      R6 1 2       ; R6 := R6()
- 12 [-]: GETGLOBAL R7 K6        ; R7 := 0xc39c3f44
- 13 [-]: GETGLOBAL R8 K7        ; R8 := 0x5bced4c4
- 14 [-]: GETTABLE  R8 R8 K8     ; R8 := R8[0xac1b386a]
- 15 [-]: GETGLOBAL R9 K6        ; R9 := 0xc39c3f44
- 16 [-]: LEN       R9 R9        ; R9 := # R9
- 17 [-]: MOVE      R10 R2       ; R10 := R2
- 18 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
- 19 [-]: GETTABLE  R7 R7 R8     ; R7 := R7[R8]
- 20 [-]: SETTABLE  R6 K5 R7     ; R6["baseAmount"] := R7
- 21 [-]: SELF      R7 R6 K9     ; R8 := R6; R7 := R6[0x86cd00cb]
- 22 [-]: MOVE      R9 R0        ; R9 := R0
- 23 [-]: CALL      R7 3 1       ; R7(R8,R9)
- 24 [-]: SELF      R7 R6 K10    ; R8 := R6; R7 := R6[0xf4dc3420]
- 25 [-]: SELF      R9 R5 K11    ; R10 := R5; R9 := R5[0x14a55974]
- 26 [-]: CALL      R9 2 0       ; R9,... := R9(R10)
- 27 [-]: CALL      R7 0 1       ; R7(R8,...)
- 28 [-]: SETTABLE  R6 K12 K13   ; R6["hitType"] := 7.000000
- 29 [-]: LOADK     R7 0         ; R7 := 0.000000
- 30 [-]: LOADK     R8 12        ; R8 := 12.000000
- 31 [-]: LOADK     R9 1         ; R9 := 1.000000
- 32 [-]: FORPREP   R7 42        ; R7 -= R9; PC := 42
- 33 [-]: SELF      R11 R5 K14   ; R12 := R5; R11 := R5[0x26808912]
- 34 [-]: MOVE      R13 R10      ; R13 := R10
- 35 [-]: CALL      R11 3 2      ; R11 := R11(R12,R13)
- 36 [-]: TEST      R11 0        ; if not R11 then PC := 42
- 37 [-]: JMP       42           ; PC := 42
- 38 [-]: SELF      R11 R6 K15   ; R12 := R6; R11 := R6[0x1586e35e]
+  6 [-]: TEST      R6 1         ; if R6 then PC := 13
+  7 [-]: JMP       13           ; PC := 13
+  8 [-]: GETTABLE  R6 R5 K2     ; R6 := R5["victim"]
+  9 [-]: SELF      R6 R6 K3     ; R7 := R6; R6 := R6[0x2047cfe7]
+ 10 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 11 [-]: TEST      R6 0         ; if not R6 then PC := 14
+ 12 [-]: JMP       14           ; PC := 14
+ 13 [-]: RETURN    R0 1         ; return 
+ 14 [-]: GETGLOBAL R6 K4        ; R6 := 0x34291f5c
+ 15 [-]: GETTABLE  R6 R6 K5     ; R6 := R6[0x35c16153]
+ 16 [-]: CALL      R6 1 2       ; R6 := R6()
+ 17 [-]: GETGLOBAL R7 K7        ; R7 := 0xc39c3f44
+ 18 [-]: GETGLOBAL R8 K8        ; R8 := 0x5bced4c4
+ 19 [-]: GETTABLE  R8 R8 K9     ; R8 := R8[0xac1b386a]
+ 20 [-]: GETGLOBAL R9 K7        ; R9 := 0xc39c3f44
+ 21 [-]: LEN       R9 R9        ; R9 := # R9
+ 22 [-]: MOVE      R10 R2       ; R10 := R2
+ 23 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
+ 24 [-]: GETTABLE  R7 R7 R8     ; R7 := R7[R8]
+ 25 [-]: SETTABLE  R6 K6 R7     ; R6["baseAmount"] := R7
+ 26 [-]: SELF      R7 R6 K10    ; R8 := R6; R7 := R6[0x86cd00cb]
+ 27 [-]: MOVE      R9 R0        ; R9 := R0
+ 28 [-]: CALL      R7 3 1       ; R7(R8,R9)
+ 29 [-]: SELF      R7 R6 K11    ; R8 := R6; R7 := R6[0xf4dc3420]
+ 30 [-]: SELF      R9 R5 K12    ; R10 := R5; R9 := R5[0x14a55974]
+ 31 [-]: CALL      R9 2 0       ; R9,... := R9(R10)
+ 32 [-]: CALL      R7 0 1       ; R7(R8,...)
+ 33 [-]: SETTABLE  R6 K13 K14   ; R6["hitType"] := 7.000000
+ 34 [-]: CONST     R7 0         ; R7 := 0.000000
+ 35 [-]: CONST     R8 12        ; R8 := 12.000000
+ 36 [-]: CONST     R9 1         ; R9 := 1.000000
+ 37 [-]: FORPREP   R7 47        ; R7 -= R9; PC := 47
+ 38 [-]: SELF      R11 R5 K15   ; R12 := R5; R11 := R5[0x26808912]
  39 [-]: MOVE      R13 R10      ; R13 := R10
- 40 [-]: LOADK     R14 1        ; R14 := 1.000000
- 41 [-]: CALL      R11 4 1      ; R11(R12,R13,R14)
- 42 [-]: FORLOOP   R7 33        ; R7 += R9; if R7 <= R8 then begin PC := 33; R10 := R7 end
- 43 [-]: GETTABLE  R11 R5 K2    ; R11 := R5["victim"]
- 44 [-]: SELF      R11 R11 K16  ; R12 := R11; R11 := R11[0x479483bb]
- 45 [-]: MOVE      R13 R6       ; R13 := R6
- 46 [-]: CALL      R11 3 1      ; R11(R12,R13)
- 47 [-]: RETURN    R0 1         ; return 
+ 40 [-]: CALL      R11 3 2      ; R11 := R11(R12,R13)
+ 41 [-]: TEST      R11 0        ; if not R11 then PC := 47
+ 42 [-]: JMP       47           ; PC := 47
+ 43 [-]: SELF      R11 R6 K16   ; R12 := R6; R11 := R6[0x1586e35e]
+ 44 [-]: MOVE      R13 R10      ; R13 := R10
+ 45 [-]: CONST     R14 1        ; R14 := 1.000000
+ 46 [-]: CALL      R11 4 1      ; R11(R12,R13,R14)
+ 47 [-]: FORLOOP   R7 38        ; R7 += R9; if R7 <= R8 then begin PC := 38; R10 := R7 end
+ 48 [-]: GETTABLE  R11 R5 K2    ; R11 := R5["victim"]
+ 49 [-]: SELF      R11 R11 K17  ; R12 := R11; R11 := R11[0x479483bb]
+ 50 [-]: MOVE      R13 R6       ; R13 := R6
+ 51 [-]: CALL      R11 3 1      ; R11(R12,R13)
+ 52 [-]: RETURN    R0 1         ; return 
 
 

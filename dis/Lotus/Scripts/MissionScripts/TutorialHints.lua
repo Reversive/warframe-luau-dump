@@ -26,46 +26,69 @@
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
-; Max Stack Size:  5
+; Max Stack Size:  8
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x64fb1586
   2 [-]: GETGLOBAL R1 K1        ; R1 := 0xbb214211
   3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  5 [-]: GETTABLE  R1 R1 K2     ; R1 := R1[0xd10f3de8]
-  6 [-]: MOVE      R2 R0        ; R2 := R0
-  7 [-]: LOADNIL   R3 R3        ; R3 := nil
-  8 [-]: GETGLOBAL R4 K3        ; R4 := 0xacaa689c
-  9 [-]: CALL      R1 4 1       ; R1(R2,R3,R4)
- 10 [-]: LOADK     R1 0         ; R1 := 0.000000
- 11 [-]: GETGLOBAL R2 K4        ; R2 := _T
- 12 [-]: GETTABLE  R2 R2 K5     ; R2 := R2["HintActive"]
- 13 [-]: TEST      R2 0         ; if not R2 then PC := 32
- 14 [-]: JMP       32           ; PC := 32
- 15 [-]: GETGLOBAL R2 K6        ; R2 := 0x255d9db2
- 16 [-]: LT        0 K7 R2      ; if 0.000000 >= R2 then PC := 25
- 17 [-]: JMP       25           ; PC := 25
- 18 [-]: GETGLOBAL R2 K6        ; R2 := 0x255d9db2
- 19 [-]: LE        0 R2 R1      ; if R2 > R1 then PC := 25
- 20 [-]: JMP       25           ; PC := 25
- 21 [-]: GETUPVAL  R2 U0        ; R2 := U0
- 22 [-]: GETTABLE  R2 R2 K8     ; R2 := R2[0x69d46c91]
- 23 [-]: CALL      R2 1 1       ; R2()
- 24 [-]: JMP       32           ; PC := 32
- 25 [-]: GETGLOBAL R2 K9        ; R2 := 0xcbd666e1
- 26 [-]: LOADK     R3 0         ; R3 := 0.000000
- 27 [-]: CALL      R2 2 1       ; R2(R3)
- 28 [-]: GETGLOBAL R2 K10       ; R2 := 0x67652851
- 29 [-]: CALL      R2 1 2       ; R2 := R2()
- 30 [-]: ADD       R1 R1 R2     ; R1 := R1 + R2
- 31 [-]: JMP       11           ; PC := 11
- 32 [-]: RETURN    R0 1         ; return 
+  4 [-]: GETGLOBAL R1 K2        ; R1 := 0x34291f5c
+  5 [-]: GETTABLE  R1 R1 K3     ; R1 := R1[0x1467d5f4]
+  6 [-]: CALL      R1 1 2       ; R1 := R1()
+  7 [-]: TEST      R1 0         ; if not R1 then PC := 27
+  8 [-]: JMP       27           ; PC := 27
+  9 [-]: MOVE      R1 R0        ; R1 := R0
+ 10 [-]: LOADK     R2 K4        ; R2 := "_Controller"
+ 11 [-]: CONCAT    R1 R1 R2     ; R1 := R1 .. R2
+ 12 [-]: GETGLOBAL R2 K5        ; R2 := 0xbe190284
+ 13 [-]: SELF      R2 R2 K6     ; R3 := R2; R2 := R2[0x33307f92]
+ 14 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 15 [-]: GETGLOBAL R3 K7        ; R3 := 0x7b998233
+ 16 [-]: MOVE      R4 R2        ; R4 := R2
+ 17 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 18 [-]: TEST      R3 1         ; if R3 then PC := 27
+ 19 [-]: JMP       27           ; PC := 27
+ 20 [-]: SELF      R3 R2 K8     ; R4 := R2; R3 := R2[0x42b04007]
+ 21 [-]: MOVE      R5 R1        ; R5 := R1
+ 22 [-]: LOADKB    R6 1 0       ; R6 := true
+ 23 [-]: CALL      R3 4 2       ; R3 := R3(R4,R5,R6)
+ 24 [-]: EQ        1 R1 R3      ; if R1 == R3 then PC := 27
+ 25 [-]: JMP       27           ; PC := 27
+ 26 [-]: MOVE      R0 R1        ; R0 := R1
+ 27 [-]: GETUPVAL  R4 U0        ; R4 := U0
+ 28 [-]: GETTABLE  R4 R4 K9     ; R4 := R4[0xd10f3de8]
+ 29 [-]: MOVE      R5 R0        ; R5 := R0
+ 30 [-]: LOADNIL   R6 R6        ; R6 := nil
+ 31 [-]: GETGLOBAL R7 K10       ; R7 := 0xacaa689c
+ 32 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
+ 33 [-]: CONST     R4 0         ; R4 := 0.000000
+ 34 [-]: GETGLOBAL R5 K11       ; R5 := _T
+ 35 [-]: GETTABLE  R5 R5 K12    ; R5 := R5["HintActive"]
+ 36 [-]: TEST      R5 0         ; if not R5 then PC := 55
+ 37 [-]: JMP       55           ; PC := 55
+ 38 [-]: GETGLOBAL R5 K13       ; R5 := 0x255d9db2
+ 39 [-]: LT        0 K14 R5     ; if 0.000000 >= R5 then PC := 48
+ 40 [-]: JMP       48           ; PC := 48
+ 41 [-]: GETGLOBAL R5 K13       ; R5 := 0x255d9db2
+ 42 [-]: LE        0 R5 R4      ; if R5 > R4 then PC := 48
+ 43 [-]: JMP       48           ; PC := 48
+ 44 [-]: GETUPVAL  R5 U0        ; R5 := U0
+ 45 [-]: GETTABLE  R5 R5 K15    ; R5 := R5[0x69d46c91]
+ 46 [-]: CALL      R5 1 1       ; R5()
+ 47 [-]: JMP       55           ; PC := 55
+ 48 [-]: GETGLOBAL R5 K16       ; R5 := 0xcbd666e1
+ 49 [-]: CONST     R6 0         ; R6 := 0.000000
+ 50 [-]: CALL      R5 2 1       ; R5(R6)
+ 51 [-]: GETGLOBAL R5 K17       ; R5 := 0x67652851
+ 52 [-]: CALL      R5 1 2       ; R5 := R5()
+ 53 [-]: ADD       R4 R4 R5     ; R4 := R4 + R5
+ 54 [-]: JMP       34           ; PC := 34
+ 55 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #2:
 ;
 ; Name:            
-; Defined at line: 22
+; Defined at line: 33
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0

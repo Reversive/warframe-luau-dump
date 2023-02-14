@@ -31,9 +31,9 @@
   8 [-]: CALL      R2 2 2       ; R2 := R2(R3)
   9 [-]: EQ        0 R1 R2      ; if R1 ~= R2 then PC := 13
  10 [-]: JMP       13           ; PC := 13
- 11 [-]: LOADBOOL  R2 1 0       ; R2 := true
+ 11 [-]: LOADKB    R2 1 0       ; R2 := true
  12 [-]: RETURN    R2 2         ; return R2
- 13 [-]: LOADBOOL  R2 0 0       ; R2 := false
+ 13 [-]: LOADKB    R2 0 0       ; R2 := false
  14 [-]: RETURN    R2 2         ; return R2
  15 [-]: RETURN    R0 1         ; return 
 

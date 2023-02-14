@@ -64,9 +64,9 @@
 
   1 [-]: SELF      R1 R0 K0     ; R2 := R0; R1 := R0[0x07ee6456]
   2 [-]: CALL      R1 2 1       ; R1(R2)
-  3 [-]: LOADK     R1 1         ; R1 := 1.000000
+  3 [-]: CONST     R1 1         ; R1 := 1.000000
   4 [-]: GETTABLE  R2 R0 K1     ; R2 := R0["MAX_SHAKES"]
-  5 [-]: LOADK     R3 1         ; R3 := 1.000000
+  5 [-]: CONST     R3 1         ; R3 := 1.000000
   6 [-]: FORPREP   R1 15        ; R1 -= R3; PC := 15
   7 [-]: SELF      R5 R0 K2     ; R6 := R0; R5 := R0[0x1b84afc0]
   8 [-]: MOVE      R7 R4        ; R7 := R4
@@ -95,7 +95,7 @@
   4 [-]: MOVE      R3 R1        ; R3 := R1
   5 [-]: CALL      R2 2 2       ; R2 := R2(R3)
   6 [-]: GETGLOBAL R3 K1        ; R3 := 0x0b96777e
-  7 [-]: LOADK     R4 1         ; R4 := 1.000000
+  7 [-]: CONST     R4 1         ; R4 := 1.000000
   8 [-]: CALL      R3 2 2       ; R3 := R3(R4)
   9 [-]: EQ        0 R2 R3      ; if R2 ~= R3 then PC := 16
  10 [-]: JMP       16           ; PC := 16
@@ -104,7 +104,7 @@
  13 [-]: GETTABLE  R2 R0 K3     ; R2 := R0["MAX_SHAKES"]
  14 [-]: LT        0 R2 R1      ; if R2 >= R1 then PC := 18
  15 [-]: JMP       18           ; PC := 18
- 16 [-]: LOADBOOL  R2 0 0       ; R2 := false
+ 16 [-]: LOADKB    R2 0 0       ; R2 := false
  17 [-]: RETURN    R2 2         ; return R2
  18 [-]: GETGLOBAL R2 K4        ; R2 := 0x7b998233
  19 [-]: GETTABLE  R3 R0 K5     ; R3 := R0["shakeArray"]
@@ -117,10 +117,10 @@
  26 [-]: GETTABLE  R2 R2 K6     ; R2 := R2["timeSinceLastUpdate"]
  27 [-]: LT        0 K7 R2      ; if -1.000000 >= R2 then PC := 32
  28 [-]: JMP       32           ; PC := 32
- 29 [-]: LOADBOOL  R2 1 0       ; R2 := true
+ 29 [-]: LOADKB    R2 1 0       ; R2 := true
  30 [-]: RETURN    R2 2         ; return R2
  31 [-]: JMP       34           ; PC := 34
- 32 [-]: LOADBOOL  R2 0 0       ; R2 := false
+ 32 [-]: LOADKB    R2 0 0       ; R2 := false
  33 [-]: RETURN    R2 2         ; return R2
  34 [-]: RETURN    R0 1         ; return 
 
@@ -136,10 +136,10 @@
 
   1 [-]: SELF      R1 R0 K0     ; R2 := R0; R1 := R0[0x07ee6456]
   2 [-]: CALL      R1 2 1       ; R1(R2)
-  3 [-]: LOADK     R1 1         ; R1 := 1.000000
+  3 [-]: CONST     R1 1         ; R1 := 1.000000
   4 [-]: GETTABLE  R2 R0 K1     ; R2 := R0["shakeArray"]
   5 [-]: LEN       R2 R2        ; R2 := # R2
-  6 [-]: LOADK     R3 1         ; R3 := 1.000000
+  6 [-]: CONST     R3 1         ; R3 := 1.000000
   7 [-]: FORPREP   R1 32        ; R1 -= R3; PC := 32
   8 [-]: SELF      R5 R0 K2     ; R6 := R0; R5 := R0[0x1b84afc0]
   9 [-]: MOVE      R7 R4        ; R7 := R4
@@ -166,12 +166,12 @@
  30 [-]: ADD       R6 R6 R7     ; R6 := R6 + R7
  31 [-]: SETTABLE  R5 K3 R6     ; R5["timeSinceLastUpdate"] := R6
  32 [-]: FORLOOP   R1 8         ; R1 += R3; if R1 <= R2 then begin PC := 8; R4 := R1 end
- 33 [-]: LOADK     R5 0         ; R5 := 0.000000
- 34 [-]: LOADK     R6 0         ; R6 := 0.000000
- 35 [-]: LOADK     R7 1         ; R7 := 1.000000
+ 33 [-]: CONST     R5 0         ; R5 := 0.000000
+ 34 [-]: CONST     R6 0         ; R6 := 0.000000
+ 35 [-]: CONST     R7 1         ; R7 := 1.000000
  36 [-]: GETTABLE  R8 R0 K1     ; R8 := R0["shakeArray"]
  37 [-]: LEN       R8 R8        ; R8 := # R8
- 38 [-]: LOADK     R9 1         ; R9 := 1.000000
+ 38 [-]: CONST     R9 1         ; R9 := 1.000000
  39 [-]: FORPREP   R7 64        ; R7 -= R9; PC := 64
  40 [-]: SELF      R11 R0 K2    ; R12 := R0; R11 := R0[0x1b84afc0]
  41 [-]: MOVE      R13 R10      ; R13 := R10
@@ -222,9 +222,9 @@
 
   1 [-]: SELF      R1 R0 K0     ; R2 := R0; R1 := R0[0x07ee6456]
   2 [-]: CALL      R1 2 1       ; R1(R2)
-  3 [-]: LOADK     R1 1         ; R1 := 1.000000
+  3 [-]: CONST     R1 1         ; R1 := 1.000000
   4 [-]: GETTABLE  R2 R0 K1     ; R2 := R0["MAX_SHAKES"]
-  5 [-]: LOADK     R3 1         ; R3 := 1.000000
+  5 [-]: CONST     R3 1         ; R3 := 1.000000
   6 [-]: FORPREP   R1 32        ; R1 -= R3; PC := 32
   7 [-]: SELF      R5 R0 K2     ; R6 := R0; R5 := R0[0x1b84afc0]
   8 [-]: MOVE      R7 R4        ; R7 := R4
@@ -252,7 +252,7 @@
  30 [-]: SETTABLE  R5 K9 K6     ; R5["timeSinceLastUpdate"] := 0.000000
  31 [-]: RETURN    R4 2         ; return R4
  32 [-]: FORLOOP   R1 7         ; R1 += R3; if R1 <= R2 then begin PC := 7; R4 := R1 end
- 33 [-]: LOADBOOL  R5 0 0       ; R5 := false
+ 33 [-]: LOADKB    R5 0 0       ; R5 := false
  34 [-]: LOADK     R6 K10       ; R6 := "No space available"
  35 [-]: RETURN    R5 3         ; return R5,R6
  36 [-]: RETURN    R0 1         ; return 
@@ -287,7 +287,7 @@
  18 [-]: GETTABLE  R4 R4 R1     ; R4 := R4[R1]
  19 [-]: SETTABLE  R4 K6 K7     ; R4["timeSinceLastUpdate"] := 0.000000
  20 [-]: JMP       24           ; PC := 24
- 21 [-]: LOADBOOL  R4 0 0       ; R4 := false
+ 21 [-]: LOADKB    R4 0 0       ; R4 := false
  22 [-]: LOADK     R5 K8        ; R5 := "provided a bad index"
  23 [-]: RETURN    R4 3         ; return R4,R5
  24 [-]: RETURN    R0 1         ; return 
@@ -318,10 +318,10 @@
  14 [-]: GETTABLE  R2 R0 K2     ; R2 := R0["shakeArray"]
  15 [-]: GETTABLE  R2 R2 R1     ; R2 := R2[R1]
  16 [-]: SETTABLE  R2 K6 K7     ; R2["timeSinceLastUpdate"] := -1.000000
- 17 [-]: LOADBOOL  R2 1 0       ; R2 := true
+ 17 [-]: LOADKB    R2 1 0       ; R2 := true
  18 [-]: RETURN    R2 2         ; return R2
  19 [-]: JMP       23           ; PC := 23
- 20 [-]: LOADBOOL  R2 0 0       ; R2 := false
+ 20 [-]: LOADKB    R2 0 0       ; R2 := false
  21 [-]: LOADK     R3 K8        ; R3 := "provided a bad index"
  22 [-]: RETURN    R2 3         ; return R2,R3
  23 [-]: RETURN    R0 1         ; return 

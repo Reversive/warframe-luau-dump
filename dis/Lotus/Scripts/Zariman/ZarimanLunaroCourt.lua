@@ -36,7 +36,7 @@
   6 [-]: MOVE      R5 R1        ; R5 := R1
   7 [-]: GETGLOBAL R6 K4        ; R6 := ZERO_ROTATION
   8 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
-  9 [-]: LOADK     R2 8         ; R2 := 8.000000
+  9 [-]: CONST     R2 8         ; R2 := 8.000000
  10 [-]: LT        0 K5 R2      ; if 0.010000 >= R2 then PC := 30
  11 [-]: JMP       30           ; PC := 30
  12 [-]: GETGLOBAL R3 K6        ; R3 := 0x7b998233
@@ -50,7 +50,7 @@
  20 [-]: MOVE      R6 R2        ; R6 := R2
  21 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
  22 [-]: GETGLOBAL R3 K9        ; R3 := 0xcbd666e1
- 23 [-]: LOADK     R4 0         ; R4 := 0.000000
+ 23 [-]: CONST     R4 0         ; R4 := 0.000000
  24 [-]: CALL      R3 2 1       ; R3(R4)
  25 [-]: GETGLOBAL R3 K10       ; R3 := 0x67652851
  26 [-]: CALL      R3 1 2       ; R3 := R3()
@@ -73,7 +73,7 @@
   2 [-]: CALL      R1 2 2       ; R1 := R1(R2)
   3 [-]: SELF      R2 R1 K1     ; R3 := R1; R2 := R1[0x659d451f]
   4 [-]: GETGLOBAL R4 K2        ; R4 := 0x6b2094a8
-  5 [-]: LOADBOOL  R5 0 0       ; R5 := false
+  5 [-]: LOADKB    R5 0 0       ; R5 := false
   6 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
   7 [-]: GETGLOBAL R2 K3        ; R2 := 0x361e120e
   8 [-]: SELF      R2 R2 K4     ; R3 := R2; R2 := R2[0xd199e920]
@@ -81,7 +81,7 @@
  10 [-]: GETGLOBAL R2 K5        ; R2 := 0x351e107b
  11 [-]: SELF      R2 R2 K4     ; R3 := R2; R2 := R2[0xd199e920]
  12 [-]: CALL      R2 2 1       ; R2(R3)
- 13 [-]: LOADK     R2 8         ; R2 := 8.000000
+ 13 [-]: CONST     R2 8         ; R2 := 8.000000
  14 [-]: LT        0 K6 R2      ; if 0.010000 >= R2 then PC := 49
  15 [-]: JMP       49           ; PC := 49
  16 [-]: GETGLOBAL R3 K7        ; R3 := 0x7b998233
@@ -110,7 +110,7 @@
  39 [-]: MOVE      R6 R2        ; R6 := R2
  40 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
  41 [-]: GETGLOBAL R3 K13       ; R3 := 0xcbd666e1
- 42 [-]: LOADK     R4 0         ; R4 := 0.000000
+ 42 [-]: CONST     R4 0         ; R4 := 0.000000
  43 [-]: CALL      R3 2 1       ; R3(R4)
  44 [-]: GETGLOBAL R3 K14       ; R3 := 0x67652851
  45 [-]: CALL      R3 1 2       ; R3 := R3()

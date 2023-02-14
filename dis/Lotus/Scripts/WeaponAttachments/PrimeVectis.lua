@@ -25,7 +25,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  14
 
-  1 [-]: LOADK     R1 100       ; R1 := 100.000000
+  1 [-]: CONST     R1 100       ; R1 := 100.000000
   2 [-]: LOADNIL   R2 R3        ; R2 := R3 := nil
   3 [-]: GETGLOBAL R4 K0        ; R4 := 0x0469f296
   4 [-]: LOADK     R5 K1        ; R5 := "ATT_C1_SPIN"
@@ -62,7 +62,7 @@
  35 [-]: JMP       41           ; PC := 41
  36 [-]: SUB       R1 R1 K6     ; R1 := R1 - 1.000000
  37 [-]: GETGLOBAL R5 K7        ; R5 := 0xcbd666e1
- 38 [-]: LOADK     R6 0         ; R6 := 0.000000
+ 38 [-]: CONST     R6 0         ; R6 := 0.000000
  39 [-]: CALL      R5 2 1       ; R5(R6)
  40 [-]: JMP       6            ; PC := 6
  41 [-]: SELF      R5 R3 K8     ; R6 := R3; R5 := R3[0x5163741e]
@@ -134,7 +134,7 @@
 107 [-]: MOVE      R13 R8       ; R13 := R8
 108 [-]: CALL      R10 4 1      ; R10(R11,R12,R13)
 109 [-]: GETGLOBAL R10 K7       ; R10 := 0xcbd666e1
-110 [-]: LOADK     R11 0        ; R11 := 0.000000
+110 [-]: CONST     R11 0        ; R11 := 0.000000
 111 [-]: CALL      R10 2 1      ; R10(R11)
 112 [-]: JMP       71           ; PC := 71
 113 [-]: RETURN    R0 1         ; return 
@@ -217,7 +217,7 @@
  25 [-]: SETTABLE  R4 K5 R5     ; R4["primeVectis"] := R5
  26 [-]: SELF      R4 R1 K7     ; R5 := R1; R4 := R1[0x9b9eb65e]
  27 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 28 [-]: LOADK     R5 0         ; R5 := 0.000000
+ 28 [-]: CONST     R5 0         ; R5 := 0.000000
  29 [-]: GETGLOBAL R6 K4        ; R6 := _T
  30 [-]: GETTABLE  R6 R6 K5     ; R6 := R6["primeVectis"]
  31 [-]: GETGLOBAL R7 K8        ; R7 := 0x00046924
@@ -233,7 +233,7 @@
  41 [-]: GETGLOBAL R7 K4        ; R7 := _T
  42 [-]: GETTABLE  R7 R7 K5     ; R7 := R7["primeVectis"]
  43 [-]: GETGLOBAL R8 K12       ; R8 := 0x9bafffe3
- 44 [-]: LOADK     R9 0         ; R9 := 0.000000
+ 44 [-]: CONST     R9 0         ; R9 := 0.000000
  45 [-]: GETGLOBAL R10 K13      ; R10 := 0x060e03e3
  46 [-]: MOVE      R11 R6       ; R11 := R6
  47 [-]: CALL      R8 4 2       ; R8 := R8(R9,R10,R11)
@@ -242,7 +242,7 @@
  50 [-]: CALL      R7 1 2       ; R7 := R7()
  51 [-]: ADD       R5 R5 R7     ; R5 := R5 + R7
  52 [-]: GETGLOBAL R7 K15       ; R7 := 0xcbd666e1
- 53 [-]: LOADK     R8 0         ; R8 := 0.000000
+ 53 [-]: CONST     R8 0         ; R8 := 0.000000
  54 [-]: CALL      R7 2 1       ; R7(R8)
  55 [-]: JMP       34           ; PC := 34
  56 [-]: GETGLOBAL R7 K4        ; R7 := _T

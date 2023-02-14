@@ -32,9 +32,9 @@
   9 [-]: RETURN    R0 1         ; return 
  10 [-]: SELF      R2 R1 K3     ; R3 := R1; R2 := R1[0x659d451f]
  11 [-]: GETGLOBAL R4 K4        ; R4 := 0x520e413d
- 12 [-]: LOADBOOL  R5 0 0       ; R5 := false
- 13 [-]: LOADK     R6 0         ; R6 := 0.000000
- 14 [-]: LOADBOOL  R7 1 0       ; R7 := true
+ 12 [-]: LOADKB    R5 0 0       ; R5 := false
+ 13 [-]: CONST     R6 0         ; R6 := 0.000000
+ 14 [-]: LOADKB    R7 1 0       ; R7 := true
  15 [-]: CALL      R2 6 1       ; R2(R3,R4,R5,R6,R7)
  16 [-]: SELF      R2 R1 K5     ; R3 := R1; R2 := R1[0x47901f07]
  17 [-]: GETGLOBAL R4 K6        ; R4 := 0x44991c7c

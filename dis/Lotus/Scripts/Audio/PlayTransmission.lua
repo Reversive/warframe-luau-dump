@@ -54,8 +54,8 @@
   5 [-]: LT        0 R0 K2      ; if R0 >= 1.000000 then PC := 15
   6 [-]: JMP       15           ; PC := 15
   7 [-]: GETGLOBAL R0 K3        ; R0 := 0xdd6e4cf8
-  8 [-]: LOADK     R1 0         ; R1 := 0.000000
-  9 [-]: LOADK     R2 1         ; R2 := 1.000000
+  8 [-]: CONST     R1 0         ; R1 := 0.000000
+  9 [-]: CONST     R2 1         ; R2 := 1.000000
  10 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
  11 [-]: GETGLOBAL R1 K0        ; R1 := 0x653688c5
  12 [-]: LT        0 R0 R1      ; if R0 >= R1 then PC := 15
@@ -125,8 +125,8 @@
   5 [-]: LT        0 R0 K2      ; if R0 >= 1.000000 then PC := 15
   6 [-]: JMP       15           ; PC := 15
   7 [-]: GETGLOBAL R0 K3        ; R0 := 0xdd6e4cf8
-  8 [-]: LOADK     R1 0         ; R1 := 0.000000
-  9 [-]: LOADK     R2 1         ; R2 := 1.000000
+  8 [-]: CONST     R1 0         ; R1 := 0.000000
+  9 [-]: CONST     R2 1         ; R2 := 1.000000
  10 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
  11 [-]: GETGLOBAL R1 K0        ; R1 := 0x653688c5
  12 [-]: LT        0 R0 R1      ; if R0 >= R1 then PC := 15
@@ -202,8 +202,8 @@
   5 [-]: LT        0 R0 K2      ; if R0 >= 1.000000 then PC := 15
   6 [-]: JMP       15           ; PC := 15
   7 [-]: GETGLOBAL R0 K3        ; R0 := 0xdd6e4cf8
-  8 [-]: LOADK     R1 0         ; R1 := 0.000000
-  9 [-]: LOADK     R2 1         ; R2 := 1.000000
+  8 [-]: CONST     R1 0         ; R1 := 0.000000
+  9 [-]: CONST     R2 1         ; R2 := 1.000000
  10 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
  11 [-]: GETGLOBAL R1 K0        ; R1 := 0x653688c5
  12 [-]: LT        0 R0 R1      ; if R0 >= R1 then PC := 15
@@ -248,8 +248,8 @@
  20 [-]: LT        0 R1 K6      ; if R1 >= 1.000000 then PC := 30
  21 [-]: JMP       30           ; PC := 30
  22 [-]: GETGLOBAL R1 K7        ; R1 := 0xdd6e4cf8
- 23 [-]: LOADK     R2 0         ; R2 := 0.000000
- 24 [-]: LOADK     R3 1         ; R3 := 1.000000
+ 23 [-]: CONST     R2 0         ; R2 := 0.000000
+ 24 [-]: CONST     R3 1         ; R3 := 1.000000
  25 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
  26 [-]: GETGLOBAL R2 K4        ; R2 := 0x653688c5
  27 [-]: LT        0 R1 R2      ; if R1 >= R2 then PC := 30

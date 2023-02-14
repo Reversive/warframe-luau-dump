@@ -61,9 +61,9 @@
  38 [-]: GETGLOBAL R3 K7        ; R3 := 0x89326c93
  39 [-]: SELF      R3 R3 K12    ; R4 := R3; R3 := R3[0x7d108ddb]
  40 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 41 [-]: LOADK     R4 1         ; R4 := 1.000000
+ 41 [-]: CONST     R4 1         ; R4 := 1.000000
  42 [-]: LEN       R5 R3        ; R5 := # R3
- 43 [-]: LOADK     R6 1         ; R6 := 1.000000
+ 43 [-]: CONST     R6 1         ; R6 := 1.000000
  44 [-]: FORPREP   R4 82        ; R4 -= R6; PC := 82
  45 [-]: GETTABLE  R8 R3 R7     ; R8 := R3[R7]
  46 [-]: GETGLOBAL R9 K1        ; R9 := 0x7b998233

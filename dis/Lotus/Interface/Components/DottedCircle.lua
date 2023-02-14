@@ -63,17 +63,17 @@
  35 [-]: SETTABLE  R4 K33 K34   ; R4["mNextGenerationTime"] := 2.000000
  36 [-]: SETTABLE  R4 K35 K36   ; R4["mMaxLife"] := 30.000000
  37 [-]: GETGLOBAL R5 K38       ; R5 := 0x60130201
- 38 [-]: LOADK     R6 200       ; R6 := 200.000000
- 39 [-]: LOADK     R7 200       ; R7 := 200.000000
- 40 [-]: LOADK     R8 200       ; R8 := 200.000000
- 41 [-]: LOADK     R9 255       ; R9 := 255.000000
+ 38 [-]: CONST     R6 200       ; R6 := 200.000000
+ 39 [-]: CONST     R7 200       ; R7 := 200.000000
+ 40 [-]: CONST     R8 200       ; R8 := 200.000000
+ 41 [-]: CONST     R9 255       ; R9 := 255.000000
  42 [-]: CALL      R5 5 2       ; R5 := R5(R6,R7,R8,R9)
  43 [-]: SETTABLE  R4 K37 R5    ; R4["mColor"] := R5
  44 [-]: GETGLOBAL R5 K38       ; R5 := 0x60130201
- 45 [-]: LOADK     R6 0         ; R6 := 0.000000
- 46 [-]: LOADK     R7 0         ; R7 := 0.000000
- 47 [-]: LOADK     R8 0         ; R8 := 0.000000
- 48 [-]: LOADK     R9 0         ; R9 := 0.000000
+ 45 [-]: CONST     R6 0         ; R6 := 0.000000
+ 46 [-]: CONST     R7 0         ; R7 := 0.000000
+ 47 [-]: CONST     R8 0         ; R8 := 0.000000
+ 48 [-]: CONST     R9 0         ; R9 := 0.000000
  49 [-]: CALL      R5 5 2       ; R5 := R5(R6,R7,R8,R9)
  50 [-]: SETTABLE  R4 K39 R5    ; R4["mHiddenColor"] := R5
  51 [-]: GETGLOBAL R5 K41       ; R5 := 0x0469f296
@@ -141,7 +141,7 @@
  23 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
  24 [-]: GETGLOBAL R4 K8        ; R4 := 0x42dcc9f5
  25 [-]: SUB       R5 K9 R2     ; R5 := 1.000000 - R2
- 26 [-]: LOADK     R6 0         ; R6 := 0.000000
+ 26 [-]: CONST     R6 0         ; R6 := 0.000000
  27 [-]: LOADK     R7 K10       ; R7 := 0.100000
  28 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
  29 [-]: DIV       R4 R4 K10    ; R4 := R4 / 0.100000
@@ -228,10 +228,10 @@
  63 [-]: GETTABLE  R5 R5 K24    ; R5 := R5[0x06d055f9]
  64 [-]: EQ        0 R1 K11     ; if R1 ~= nil then PC := 67
  65 [-]: JMP       67           ; PC := 67
- 66 [-]: LOADBOOL  R6 0 1       ; R6 := false; PC := 67
- 67 [-]: LOADBOOL  R6 1 0       ; R6 := true
+ 66 [-]: LOADKB    R6 0 1       ; R6 := false; PC := 67
+ 67 [-]: LOADKB    R6 1 0       ; R6 := true
  68 [-]: MOVE      R7 R1        ; R7 := R1
- 69 [-]: LOADK     R8 0         ; R8 := 0.000000
+ 69 [-]: CONST     R8 0         ; R8 := 0.000000
  70 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
  71 [-]: SETTABLE  R4 K22 R5    ; R4["Life"] := R5
  72 [-]: GETGLOBAL R5 K26       ; R5 := 0xc163f229
@@ -269,10 +269,10 @@
   6 [-]: CALL      R1 2 2       ; R1 := R1(R2)
   7 [-]: TEST      R1 1         ; if R1 then PC := 32
   8 [-]: JMP       32           ; PC := 32
-  9 [-]: LOADK     R1 1         ; R1 := 1.000000
+  9 [-]: CONST     R1 1         ; R1 := 1.000000
  10 [-]: GETTABLE  R2 R0 K4     ; R2 := R0["mRings"]
  11 [-]: LEN       R2 R2        ; R2 := # R2
- 12 [-]: LOADK     R3 1         ; R3 := 1.000000
+ 12 [-]: CONST     R3 1         ; R3 := 1.000000
  13 [-]: FORPREP   R1 20        ; R1 -= R3; PC := 20
  14 [-]: GETTABLE  R5 R0 K3     ; R5 := R0["mRegion"]
  15 [-]: SELF      R5 R5 K5     ; R6 := R5; R5 := R5[0x59c96e77]
@@ -281,10 +281,10 @@
  18 [-]: GETTABLE  R7 R7 K6     ; R7 := R7["Effect"]
  19 [-]: CALL      R5 3 1       ; R5(R6,R7)
  20 [-]: FORLOOP   R1 14        ; R1 += R3; if R1 <= R2 then begin PC := 14; R4 := R1 end
- 21 [-]: LOADK     R5 1         ; R5 := 1.000000
+ 21 [-]: CONST     R5 1         ; R5 := 1.000000
  22 [-]: GETTABLE  R6 R0 K7     ; R6 := R0["mUnusedRingEffects"]
  23 [-]: LEN       R6 R6        ; R6 := # R6
- 24 [-]: LOADK     R7 1         ; R7 := 1.000000
+ 24 [-]: CONST     R7 1         ; R7 := 1.000000
  25 [-]: FORPREP   R5 31        ; R5 -= R7; PC := 31
  26 [-]: GETTABLE  R9 R0 K3     ; R9 := R0["mRegion"]
  27 [-]: SELF      R9 R9 K5     ; R10 := R9; R9 := R9[0x59c96e77]
@@ -342,8 +342,8 @@
  36 [-]: TFORLOOP  R3 2         ; R6,R7 :=  R3(R4,R5); if R6 ~= nil then begin PC = 6; R5 := R6 end
  37 [-]: JMP       6            ; PC := 6
  38 [-]: LEN       R8 R2        ; R8 := # R2
- 39 [-]: LOADK     R9 1         ; R9 := 1.000000
- 40 [-]: LOADK     R10 -1       ; R10 := -1.000000
+ 39 [-]: CONST     R9 1         ; R9 := 1.000000
+ 40 [-]: CONST     R10 -1       ; R10 := -1.000000
  41 [-]: FORPREP   R8 47        ; R8 -= R10; PC := 47
  42 [-]: GETGLOBAL R12 K8       ; R12 := 0x33bdd652
  43 [-]: GETTABLE  R12 R12 K12  ; R12 := R12[0x9c1f3b5a]
@@ -360,7 +360,7 @@
  54 [-]: GETTABLE  R13 R0 K14   ; R13 := R0["mNextGenerationTime"]
  55 [-]: SUB       R13 R13 R12  ; R13 := R13 - R12
  56 [-]: SETTABLE  R0 K14 R13   ; R0["mNextGenerationTime"] := R13
- 57 [-]: LOADK     R12 0        ; R12 := 0.000000
+ 57 [-]: CONST     R12 0        ; R12 := 0.000000
  58 [-]: JMP       49           ; PC := 49
  59 [-]: MOVE      R13 R12      ; R13 := R12
  60 [-]: GETTABLE  R14 R0 K14   ; R14 := R0["mNextGenerationTime"]

@@ -8,11 +8,11 @@
 ; Max Stack Size:  15
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0xb7cbd06b
-  2 [-]: LOADK     R1 30        ; R1 := 30.000000
-  3 [-]: LOADK     R2 35        ; R2 := 35.000000
+  2 [-]: CONST     R1 30        ; R1 := 30.000000
+  3 [-]: CONST     R2 35        ; R2 := 35.000000
   4 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
   5 [-]: LOADNIL   R1 R1        ; R1 := nil
-  6 [-]: LOADK     R2 200       ; R2 := 200.000000
+  6 [-]: CONST     R2 200       ; R2 := 200.000000
   7 [-]: GETGLOBAL R3 K1        ; R3 := 0x0469f296
   8 [-]: LOADK     R4 K2        ; R4 := "Sentient"
   9 [-]: CALL      R3 2 2       ; R3 := R3(R4)
@@ -75,10 +75,10 @@
   2 [-]: TEST      R0 0         ; if not R0 then PC := 5
   3 [-]: JMP       5            ; PC := 5
   4 [-]: LOADK     R1 K1        ; R1 := "Lock"
-  5 [-]: LOADK     R2 1         ; R2 := 1.000000
+  5 [-]: CONST     R2 1         ; R2 := 1.000000
   6 [-]: GETGLOBAL R3 K2        ; R3 := 0xe2f84610
   7 [-]: LEN       R3 R3        ; R3 := # R3
-  8 [-]: LOADK     R4 1         ; R4 := 1.000000
+  8 [-]: CONST     R4 1         ; R4 := 1.000000
   9 [-]: FORPREP   R2 27        ; R2 -= R4; PC := 27
  10 [-]: GETGLOBAL R6 K3        ; R6 := 0x89326c93
  11 [-]: SELF      R6 R6 K4     ; R7 := R6; R6 := R6[0x4e5939a5]
@@ -87,7 +87,7 @@
  14 [-]: GETTABLE  R9 R9 R5     ; R9 := R9[R5]
  15 [-]: SELF      R9 R9 K6     ; R10 := R9; R9 := R9[0xd1586535]
  16 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 17 [-]: LOADK     R10 10       ; R10 := 10.000000
+ 17 [-]: CONST     R10 10       ; R10 := 10.000000
  18 [-]: CALL      R6 5 2       ; R6 := R6(R7,R8,R9,R10)
  19 [-]: GETGLOBAL R7 K7        ; R7 := 0x7b998233
  20 [-]: MOVE      R8 R6        ; R8 := R6
@@ -113,9 +113,9 @@
   1 [-]: GETGLOBAL R2 K0        ; R2 := _T
   2 [-]: GETTABLE  R2 R2 K1     ; R2 := R2[0x659270d0]
   3 [-]: LOADK     R3 K2        ; R3 := "[PH] WARP GATE ACTIVATED"
-  4 [-]: LOADK     R4 6         ; R4 := 6.000000
+  4 [-]: CONST     R4 6         ; R4 := 6.000000
   5 [-]: LOADNIL   R5 R6        ; R5 := R6 := nil
-  6 [-]: LOADBOOL  R7 0 0       ; R7 := false
+  6 [-]: LOADKB    R7 0 0       ; R7 := false
   7 [-]: CALL      R2 6 1       ; R2(R3,R4,R5,R6,R7)
   8 [-]: LOADNIL   R2 R2        ; R2 := nil
   9 [-]: SELF      R3 R0 K3     ; R4 := R0; R3 := R0[0xd1586535]
@@ -138,7 +138,7 @@
  26 [-]: SELF      R5 R0 K11    ; R6 := R0; R5 := R0[0xf4e253b6]
  27 [-]: CALL      R5 2 1       ; R5(R6)
  28 [-]: GETUPVAL  R5 U0        ; R5 := U0
- 29 [-]: LOADBOOL  R6 1 0       ; R6 := true
+ 29 [-]: LOADKB    R6 1 0       ; R6 := true
  30 [-]: CALL      R5 2 1       ; R5(R6)
  31 [-]: RETURN    R0 1         ; return 
 
@@ -155,9 +155,9 @@
   1 [-]: GETGLOBAL R1 K0        ; R1 := _T
   2 [-]: GETTABLE  R1 R1 K1     ; R1 := R1[0x659270d0]
   3 [-]: LOADK     R2 K2        ; R2 := "[PH] WARP GATE ENCOUNTER STARTED"
-  4 [-]: LOADK     R3 6         ; R3 := 6.000000
+  4 [-]: CONST     R3 6         ; R3 := 6.000000
   5 [-]: LOADNIL   R4 R5        ; R4 := R5 := nil
-  6 [-]: LOADBOOL  R6 0 0       ; R6 := false
+  6 [-]: LOADKB    R6 0 0       ; R6 := false
   7 [-]: CALL      R1 6 1       ; R1(R2,R3,R4,R5,R6)
   8 [-]: GETGLOBAL R1 K3        ; R1 := 0x89326c93
   9 [-]: SELF      R1 R1 K4     ; R2 := R1; R1 := R1[0x29ef273d]
@@ -214,7 +214,7 @@
  60 [-]: JMP       62           ; PC := 62
  61 [-]: JMP       66           ; PC := 66
  62 [-]: GETGLOBAL R4 K19       ; R4 := 0xcbd666e1
- 63 [-]: LOADK     R5 0         ; R5 := 0.000000
+ 63 [-]: CONST     R5 0         ; R5 := 0.000000
  64 [-]: CALL      R4 2 1       ; R4(R5)
  65 [-]: JMP       52           ; PC := 52
  66 [-]: GETUPVAL  R4 U7        ; R4 := U7
@@ -238,14 +238,14 @@
  84 [-]: LOADK     R7 K23       ; R7 := "Enable"
  85 [-]: CALL      R5 3 1       ; R5(R6,R7)
  86 [-]: GETUPVAL  R5 U9        ; R5 := U9
- 87 [-]: LOADBOOL  R6 0 0       ; R6 := false
+ 87 [-]: LOADKB    R6 0 0       ; R6 := false
  88 [-]: CALL      R5 2 1       ; R5(R6)
  89 [-]: GETGLOBAL R5 K0        ; R5 := _T
  90 [-]: GETTABLE  R5 R5 K1     ; R5 := R5[0x659270d0]
  91 [-]: LOADK     R6 K24       ; R6 := "[PH] WARP GATE ENCOUNTER COMPLETE"
- 92 [-]: LOADK     R7 6         ; R7 := 6.000000
+ 92 [-]: CONST     R7 6         ; R7 := 6.000000
  93 [-]: LOADNIL   R8 R9        ; R8 := R9 := nil
- 94 [-]: LOADBOOL  R10 0 0      ; R10 := false
+ 94 [-]: LOADKB    R10 0 0      ; R10 := false
  95 [-]: CALL      R5 6 1       ; R5(R6,R7,R8,R9,R10)
  96 [-]: RETURN    R0 1         ; return 
 

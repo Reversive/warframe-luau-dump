@@ -26,9 +26,9 @@
   3 [-]: GETGLOBAL R2 K2        ; R2 := gZoneAttribsType
   4 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
   5 [-]: LOADNIL   R1 R1        ; R1 := nil
-  6 [-]: LOADK     R2 1         ; R2 := 1.000000
+  6 [-]: CONST     R2 1         ; R2 := 1.000000
   7 [-]: LEN       R3 R0        ; R3 := # R0
-  8 [-]: LOADK     R4 1         ; R4 := 1.000000
+  8 [-]: CONST     R4 1         ; R4 := 1.000000
   9 [-]: FORPREP   R2 28        ; R2 -= R4; PC := 28
  10 [-]: GETGLOBAL R6 K3        ; R6 := 0x7b998233
  11 [-]: GETTABLE  R7 R0 R5     ; R7 := R0[R5]
@@ -54,10 +54,10 @@
  31 [-]: CALL      R7 2 2       ; R7 := R7(R8)
  32 [-]: TEST      R7 1         ; if R7 then PC := 53
  33 [-]: JMP       53           ; PC := 53
- 34 [-]: LOADK     R7 1         ; R7 := 1.000000
+ 34 [-]: CONST     R7 1         ; R7 := 1.000000
  35 [-]: GETGLOBAL R8 K8        ; R8 := 0xcdfc40c0
  36 [-]: LEN       R8 R8        ; R8 := # R8
- 37 [-]: LOADK     R9 1         ; R9 := 1.000000
+ 37 [-]: CONST     R9 1         ; R9 := 1.000000
  38 [-]: FORPREP   R7 52        ; R7 -= R9; PC := 52
  39 [-]: GETGLOBAL R11 K8       ; R11 := 0xcdfc40c0
  40 [-]: GETTABLE  R11 R11 R10  ; R11 := R11[R10]

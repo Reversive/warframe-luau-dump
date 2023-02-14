@@ -8,10 +8,10 @@
 ; Max Stack Size:  5
 
   1 [-]: NEWTABLE  R0 4 0       ; R0 := {}
-  2 [-]: LOADK     R1 10        ; R1 := 10.000000
-  3 [-]: LOADK     R2 10        ; R2 := 10.000000
-  4 [-]: LOADK     R3 10        ; R3 := 10.000000
-  5 [-]: LOADK     R4 10        ; R4 := 10.000000
+  2 [-]: CONST     R1 10        ; R1 := 10.000000
+  3 [-]: CONST     R2 10        ; R2 := 10.000000
+  4 [-]: CONST     R3 10        ; R3 := 10.000000
+  5 [-]: CONST     R4 10        ; R4 := 10.000000
   6 [-]: SETLIST   R0 4 1       ; R0[(1-1)*FPF+i] := R(0+i), 1 <= i <= 4
   7 [-]: CLOSURE   R1 0         ; R1 := closure(Function #1)
   8 [-]: MOVE      R0 R0        ; R0 := R0
@@ -62,7 +62,7 @@
 
   1 [-]: TEST      R2 0         ; if not R2 then PC := 5
   2 [-]: JMP       5            ; PC := 5
-  3 [-]: LOADBOOL  R3 0 0       ; R3 := false
+  3 [-]: LOADKB    R3 0 0       ; R3 := false
   4 [-]: RETURN    R3 2         ; return R3
   5 [-]: SELF      R3 R0 K0     ; R4 := R0; R3 := R0[0x52de0ed7]
   6 [-]: CALL      R3 2 2       ; R3 := R3(R4)
@@ -76,7 +76,7 @@
  14 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
  15 [-]: TEST      R4 1         ; if R4 then PC := 19
  16 [-]: JMP       19           ; PC := 19
- 17 [-]: LOADBOOL  R4 0 0       ; R4 := false
+ 17 [-]: LOADKB    R4 0 0       ; R4 := false
  18 [-]: RETURN    R4 2         ; return R4
  19 [-]: GETGLOBAL R4 K1        ; R4 := 0x7b998233
  20 [-]: GETGLOBAL R5 K4        ; R5 := _T
@@ -109,12 +109,12 @@
  47 [-]: GETGLOBAL R6 K7        ; R6 := 0x55156ff7
  48 [-]: CALL      R6 1 2       ; R6 := R6()
  49 [-]: SETTABLE  R5 R4 R6     ; R5[R4] := R6
- 50 [-]: LOADBOOL  R5 0 0       ; R5 := false
+ 50 [-]: LOADKB    R5 0 0       ; R5 := false
  51 [-]: RETURN    R5 2         ; return R5
  52 [-]: GETGLOBAL R5 K4        ; R5 := _T
  53 [-]: GETTABLE  R5 R5 K5     ; R5 := R5["ZarimanDaggerStunEvo"]
  54 [-]: SETTABLE  R5 R4 K9     ; R5[R4] := nil
- 55 [-]: LOADBOOL  R5 1 0       ; R5 := true
+ 55 [-]: LOADKB    R5 1 0       ; R5 := true
  56 [-]: RETURN    R5 2         ; return R5
  57 [-]: RETURN    R0 1         ; return 
 
@@ -141,10 +141,10 @@
  11 [-]: GETGLOBAL R8 K4        ; R8 := gBaseAvatarType
  12 [-]: SELF      R9 R0 K5     ; R10 := R0; R9 := R0[0xd1586535]
  13 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 14 [-]: LOADK     R10 0        ; R10 := 0.000000
+ 14 [-]: CONST     R10 0        ; R10 := 0.000000
  15 [-]: MOVE      R11 R5       ; R11 := R5
  16 [-]: CALL      R6 6 2       ; R6 := R6(R7,R8,R9,R10,R11)
- 17 [-]: LOADBOOL  R7 0 0       ; R7 := false
+ 17 [-]: LOADKB    R7 0 0       ; R7 := false
  18 [-]: GETGLOBAL R8 K6        ; R8 := 0xc8802016
  19 [-]: MOVE      R9 R6        ; R9 := R6
  20 [-]: CALL      R8 2 4       ; R8,R9,R10 := R8(R9)
@@ -175,12 +175,12 @@
  45 [-]: CALL      R14 3 1      ; R14(R15,R16)
  46 [-]: SELF      R14 R13 K14  ; R15 := R13; R14 := R13[0xfc0e440a]
  47 [-]: GETGLOBAL R16 K15      ; R16 := 0x5ebb02a2
- 48 [-]: LOADBOOL  R17 1 0      ; R17 := true
+ 48 [-]: LOADKB    R17 1 0      ; R17 := true
  49 [-]: CALL      R14 4 1      ; R14(R15,R16,R17)
  50 [-]: SELF      R14 R12 K16  ; R15 := R12; R14 := R12[0x479483bb]
  51 [-]: MOVE      R16 R13      ; R16 := R13
  52 [-]: CALL      R14 3 1      ; R14(R15,R16)
- 53 [-]: LOADBOOL  R7 1 0       ; R7 := true
+ 53 [-]: LOADKB    R7 1 0       ; R7 := true
  54 [-]: TFORLOOP  R8 2         ; R11,R12 :=  R8(R9,R10); if R11 ~= nil then begin PC = 22; R10 := R11 end
  55 [-]: JMP       22           ; PC := 22
  56 [-]: TEST      R7 0         ; if not R7 then PC := 72
@@ -191,9 +191,9 @@
  61 [-]: SELF      R17 R0 K19   ; R18 := R0; R17 := R0[0xf6ebd926]
  62 [-]: CALL      R17 2 2      ; R17 := R17(R18)
  63 [-]: GETGLOBAL R18 K20      ; R18 := 0xa421af95
- 64 [-]: LOADK     R19 0        ; R19 := 0.000000
- 65 [-]: LOADK     R20 1        ; R20 := 1.000000
- 66 [-]: LOADK     R21 0        ; R21 := 0.000000
+ 64 [-]: CONST     R19 0        ; R19 := 0.000000
+ 65 [-]: CONST     R20 1        ; R20 := 1.000000
+ 66 [-]: CONST     R21 0        ; R21 := 0.000000
  67 [-]: CALL      R18 4 2      ; R18 := R18(R19,R20,R21)
  68 [-]: ADD       R17 R17 R18  ; R17 := R17 + R18
  69 [-]: SELF      R18 R0 K21   ; R19 := R0; R18 := R0[0x5280b883]

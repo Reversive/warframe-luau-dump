@@ -49,7 +49,7 @@
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x89326c93
   2 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0xe3a0bbca]
-  3 [-]: LOADK     R2 0         ; R2 := 0.000000
+  3 [-]: CONST     R2 0         ; R2 := 0.000000
   4 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
   5 [-]: GETGLOBAL R1 K2        ; R1 := _T
   6 [-]: GETTABLE  R1 R1 K3     ; R1 := R1[0x1a41a3c1]
@@ -62,7 +62,7 @@
  13 [-]: GETGLOBAL R4 K6        ; R4 := 0xe815af87
  14 [-]: GETGLOBAL R5 K7        ; R5 := 0x5b6123c1
  15 [-]: GETGLOBAL R6 K8        ; R6 := 0xd2bb8f07
- 16 [-]: LOADK     R7 5         ; R7 := 5.000000
+ 16 [-]: CONST     R7 5         ; R7 := 5.000000
  17 [-]: CALL      R1 7 1       ; R1(R2,R3,R4,R5,R6,R7)
  18 [-]: RETURN    R0 1         ; return 
 
@@ -89,7 +89,7 @@
  11 [-]: CALL      R4 2 1       ; R4(R5)
  12 [-]: GETTABLE  R4 R3 K2     ; R4 := R3[1.000000]
  13 [-]: SELF      R4 R4 K4     ; R5 := R4; R4 := R4[0xcddc3abb]
- 14 [-]: LOADK     R6 1         ; R6 := 1.000000
+ 14 [-]: CONST     R6 1         ; R6 := 1.000000
  15 [-]: GETGLOBAL R7 K5        ; R7 := 0xa6affc49
  16 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
  17 [-]: JMP       26           ; PC := 26
@@ -98,7 +98,7 @@
  20 [-]: CALL      R4 2 1       ; R4(R5)
  21 [-]: GETTABLE  R4 R3 K2     ; R4 := R3[1.000000]
  22 [-]: SELF      R4 R4 K4     ; R5 := R4; R4 := R4[0xcddc3abb]
- 23 [-]: LOADK     R6 1         ; R6 := 1.000000
+ 23 [-]: CONST     R6 1         ; R6 := 1.000000
  24 [-]: GETGLOBAL R7 K7        ; R7 := 0xa7fe82b2
  25 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
  26 [-]: RETURN    R0 1         ; return 
@@ -115,29 +115,29 @@
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0xbe190284
   2 [-]: SELF      R1 R0 K1     ; R2 := R0; R1 := R0[0x416d7dcf]
-  3 [-]: LOADBOOL  R3 1 0       ; R3 := true
+  3 [-]: LOADKB    R3 1 0       ; R3 := true
   4 [-]: CALL      R1 3 1       ; R1(R2,R3)
   5 [-]: GETGLOBAL R1 K2        ; R1 := _T
   6 [-]: GETTABLE  R1 R1 K3     ; R1 := R1[0x8ee923fe]
   7 [-]: LOADK     R2 K4        ; R2 := "HackingChallengeTimer"
   8 [-]: GETUPVAL  R3 U1        ; R3 := U1
   9 [-]: GETTABLE  R3 R3 K5     ; R3 := R3["HT_TIMER"]
- 10 [-]: LOADK     R4 0         ; R4 := 0.250000
- 11 [-]: LOADBOOL  R5 0 0       ; R5 := false
- 12 [-]: LOADBOOL  R6 0 0       ; R6 := false
+ 10 [-]: CONST     R4 0         ; R4 := 0.250000
+ 11 [-]: LOADKB    R5 0 0       ; R5 := false
+ 12 [-]: LOADKB    R6 0 0       ; R6 := false
  13 [-]: CALL      R1 6 2       ; R1 := R1(R2,R3,R4,R5,R6)
  14 [-]: SETUPVAL  R1 U0        ; U82 := R0
  15 [-]: GETUPVAL  R1 U0        ; R1 := U0
  16 [-]: GETTABLE  R1 R1 K6     ; R1 := R1[0xe0cba3ca]
  17 [-]: GETUPVAL  R2 U2        ; R2 := U2
- 18 [-]: LOADK     R3 5         ; R3 := 5.000000
+ 18 [-]: CONST     R3 5         ; R3 := 5.000000
  19 [-]: CALL      R1 3 1       ; R1(R2,R3)
  20 [-]: GETUPVAL  R1 U0        ; R1 := U0
  21 [-]: GETTABLE  R1 R1 K7     ; R1 := R1[0xa9136b2f]
  22 [-]: GETGLOBAL R2 K8        ; R2 := 0xdaf34e92
- 23 [-]: LOADBOOL  R3 0 0       ; R3 := false
- 24 [-]: LOADBOOL  R4 1 0       ; R4 := true
- 25 [-]: LOADBOOL  R5 1 0       ; R5 := true
+ 23 [-]: LOADKB    R3 0 0       ; R3 := false
+ 24 [-]: LOADKB    R4 1 0       ; R4 := true
+ 25 [-]: LOADKB    R5 1 0       ; R5 := true
  26 [-]: CALL      R1 5 1       ; R1(R2,R3,R4,R5)
  27 [-]: GETGLOBAL R1 K2        ; R1 := _T
  28 [-]: SETTABLE  R1 K9 K10    ; R1["hackingTutorialOverride"] := 2.000000
@@ -149,19 +149,19 @@
  34 [-]: CALL      R6 2 1       ; R6(R7)
  35 [-]: GETUPVAL  R6 U3        ; R6 := U3
  36 [-]: MOVE      R7 R5        ; R7 := R5
- 37 [-]: LOADBOOL  R8 1 0       ; R8 := true
+ 37 [-]: LOADKB    R8 1 0       ; R8 := true
  38 [-]: CALL      R6 3 1       ; R6(R7,R8)
  39 [-]: SELF      R6 R5 K14    ; R7 := R5; R6 := R5[0xf37943ff]
  40 [-]: CALL      R6 2 2       ; R6 := R6(R7)
  41 [-]: TEST      R6 0         ; if not R6 then PC := 47
  42 [-]: JMP       47           ; PC := 47
  43 [-]: GETGLOBAL R6 K15       ; R6 := 0xcbd666e1
- 44 [-]: LOADK     R7 0         ; R7 := 0.000000
+ 44 [-]: CONST     R7 0         ; R7 := 0.000000
  45 [-]: CALL      R6 2 1       ; R6(R7)
  46 [-]: JMP       39           ; PC := 39
  47 [-]: GETUPVAL  R6 U3        ; R6 := U3
  48 [-]: MOVE      R7 R5        ; R7 := R5
- 49 [-]: LOADBOOL  R8 0 0       ; R8 := false
+ 49 [-]: LOADKB    R8 0 0       ; R8 := false
  50 [-]: CALL      R6 3 1       ; R6(R7,R8)
  51 [-]: GETGLOBAL R6 K2        ; R6 := _T
  52 [-]: GETUPVAL  R7 U4        ; R7 := U4
@@ -170,9 +170,9 @@
  55 [-]: GETTABLE  R8 R8 K9     ; R8 := R8["hackingTutorialOverride"]
  56 [-]: LT        1 K17 R8     ; if 3.000000 < R8 then PC := 59
  57 [-]: JMP       59           ; PC := 59
- 58 [-]: LOADBOOL  R8 0 1       ; R8 := false; PC := 59
- 59 [-]: LOADBOOL  R8 1 0       ; R8 := true
- 60 [-]: LOADK     R9 2         ; R9 := 2.000000
+ 58 [-]: LOADKB    R8 0 1       ; R8 := false; PC := 59
+ 59 [-]: LOADKB    R8 1 0       ; R8 := true
+ 60 [-]: CONST     R9 2         ; R9 := 2.000000
  61 [-]: GETGLOBAL R10 K2       ; R10 := _T
  62 [-]: GETTABLE  R10 R10 K9   ; R10 := R10["hackingTutorialOverride"]
  63 [-]: ADD       R10 R10 K18  ; R10 := R10 + 1.000000

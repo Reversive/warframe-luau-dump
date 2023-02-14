@@ -53,7 +53,7 @@
  28 [-]: JMP       33           ; PC := 33
  29 [-]: SELF      R2 R0 K9     ; R3 := R0; R2 := R0[0x659d451f]
  30 [-]: GETGLOBAL R4 K8        ; R4 := 0x520e413d
- 31 [-]: LOADBOOL  R5 0 0       ; R5 := false
+ 31 [-]: LOADKB    R5 0 0       ; R5 := false
  32 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
  33 [-]: GETGLOBAL R2 K0        ; R2 := 0x7b998233
  34 [-]: GETGLOBAL R3 K10       ; R3 := 0xd2ee5c32
@@ -64,15 +64,15 @@
  39 [-]: GETGLOBAL R4 K10       ; R4 := 0xd2ee5c32
  40 [-]: GETGLOBAL R5 K12       ; R5 := EMPTY_SYMBOL
  41 [-]: GETGLOBAL R6 K13       ; R6 := 0xa421af95
- 42 [-]: LOADK     R7 0         ; R7 := 0.000000
- 43 [-]: LOADK     R8 1         ; R8 := 1.000000
- 44 [-]: LOADK     R9 0         ; R9 := 0.000000
+ 42 [-]: CONST     R7 0         ; R7 := 0.000000
+ 43 [-]: CONST     R8 1         ; R8 := 1.000000
+ 44 [-]: CONST     R9 0         ; R9 := 0.000000
  45 [-]: CALL      R6 4 0       ; R6,... := R6(R7,R8,R9)
  46 [-]: CALL      R2 0 2       ; R2 := R2(R3,...)
  47 [-]: SELF      R3 R0 K14    ; R4 := R0; R3 := R0[0x1ac1655c]
  48 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 49 [-]: SELF      R4 R3 K15    ; R5 := R3; R4 := R3[0xa963ee09]
- 50 [-]: LOADK     R6 0         ; R6 := 0.000000
+ 49 [-]: SELF      R4 R3 K15    ; R5 := R3; R4 := R3[0xd687233d]
+ 50 [-]: CONST     R6 0         ; R6 := 0.000000
  51 [-]: CALL      R4 3 1       ; R4(R5,R6)
  52 [-]: RETURN    R0 1         ; return 
 
@@ -102,9 +102,9 @@
  14 [-]: RETURN    R0 1         ; return 
  15 [-]: SELF      R3 R2 K2     ; R4 := R2; R3 := R2[0x659d451f]
  16 [-]: GETGLOBAL R5 K3        ; R5 := 0x520e413d
- 17 [-]: LOADBOOL  R6 0 0       ; R6 := false
- 18 [-]: LOADK     R7 1         ; R7 := 1.000000
- 19 [-]: LOADBOOL  R8 0 0       ; R8 := false
+ 17 [-]: LOADKB    R6 0 0       ; R6 := false
+ 18 [-]: CONST     R7 1         ; R7 := 1.000000
+ 19 [-]: LOADKB    R8 0 0       ; R8 := false
  20 [-]: CALL      R3 6 2       ; R3 := R3(R4,R5,R6,R7,R8)
  21 [-]: GETGLOBAL R4 K0        ; R4 := 0x7b998233
  22 [-]: MOVE      R5 R3        ; R5 := R3

@@ -22,13 +22,13 @@
 ; Max Stack Size:  14
 
   1 [-]: NEWTABLE  R0 1 0       ; R0 := {}
-  2 [-]: LOADK     R1 0         ; R1 := 0.000000
+  2 [-]: CONST     R1 0         ; R1 := 0.000000
   3 [-]: SETLIST   R0 1 1       ; R0[(1-1)*FPF+i] := R(0+i), 1 <= i <= 1
-  4 [-]: LOADK     R1 0         ; R1 := 0.000000
-  5 [-]: LOADK     R2 1         ; R2 := 1.000000
+  4 [-]: CONST     R1 0         ; R1 := 0.000000
+  5 [-]: CONST     R2 1         ; R2 := 1.000000
   6 [-]: GETGLOBAL R3 K0        ; R3 := 0x15d6612f
   7 [-]: LEN       R3 R3        ; R3 := # R3
-  8 [-]: LOADK     R4 1         ; R4 := 1.000000
+  8 [-]: CONST     R4 1         ; R4 := 1.000000
   9 [-]: FORPREP   R2 15        ; R2 -= R4; PC := 15
  10 [-]: GETGLOBAL R6 K0        ; R6 := 0x15d6612f
  11 [-]: GETTABLE  R6 R6 R5     ; R6 := R6[R5]
@@ -38,10 +38,10 @@
  15 [-]: FORLOOP   R2 10        ; R2 += R4; if R2 <= R3 then begin PC := 10; R5 := R2 end
  16 [-]: LT        0 R1 K2      ; if R1 >= 1.000000 then PC := 49
  17 [-]: JMP       49           ; PC := 49
- 18 [-]: LOADK     R6 1         ; R6 := 1.000000
+ 18 [-]: CONST     R6 1         ; R6 := 1.000000
  19 [-]: GETGLOBAL R7 K0        ; R7 := 0x15d6612f
  20 [-]: LEN       R7 R7        ; R7 := # R7
- 21 [-]: LOADK     R8 1         ; R8 := 1.000000
+ 21 [-]: CONST     R8 1         ; R8 := 1.000000
  22 [-]: FORPREP   R6 39        ; R6 -= R8; PC := 39
  23 [-]: GETGLOBAL R10 K3       ; R10 := 0x9bafffe3
  24 [-]: GETTABLE  R11 R0 R9    ; R11 := R0[R9]
@@ -66,7 +66,7 @@
  43 [-]: DIV       R11 R11 R12  ; R11 := R11 / R12
  44 [-]: ADD       R1 R1 R11    ; R1 := R1 + R11
  45 [-]: GETGLOBAL R11 K9       ; R11 := 0xcbd666e1
- 46 [-]: LOADK     R12 0        ; R12 := 0.000000
+ 46 [-]: CONST     R12 0        ; R12 := 0.000000
  47 [-]: CALL      R11 2 1      ; R11(R12)
  48 [-]: JMP       16           ; PC := 16
  49 [-]: RETURN    R0 1         ; return 

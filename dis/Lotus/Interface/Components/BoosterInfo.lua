@@ -108,7 +108,7 @@
   3 [-]: SETTABLE  R0 K1 K2     ; R0["mRefreshDelay"] := nil
   4 [-]: GETGLOBAL R1 K3        ; R1 := 0x76ea806b
   5 [-]: SELF      R1 R1 K4     ; R2 := R1; R1 := R1[0x3f3ae64c]
-  6 [-]: LOADK     R3 0         ; R3 := 0.000000
+  6 [-]: CONST     R3 0         ; R3 := 0.000000
   7 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
   8 [-]: GETGLOBAL R2 K5        ; R2 := 0x7b998233
   9 [-]: MOVE      R3 R1        ; R3 := R1
@@ -131,9 +131,9 @@
  26 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  27 [-]: SELF      R3 R3 K9     ; R4 := R3; R3 := R3[0x498c31a3]
  28 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 29 [-]: LOADK     R4 1         ; R4 := 1.000000
+ 29 [-]: CONST     R4 1         ; R4 := 1.000000
  30 [-]: LEN       R5 R3        ; R5 := # R3
- 31 [-]: LOADK     R6 1         ; R6 := 1.000000
+ 31 [-]: CONST     R6 1         ; R6 := 1.000000
  32 [-]: FORPREP   R4 105       ; R4 -= R6; PC := 105
  33 [-]: LOADNIL   R8 R8        ; R8 := nil
  34 [-]: GETGLOBAL R9 K5        ; R9 := 0x7b998233
@@ -208,25 +208,25 @@
 103 [-]: MOVE      R12 R8       ; R12 := R8
 104 [-]: CALL      R10 3 1      ; R10(R11,R12)
 105 [-]: FORLOOP   R4 33        ; R4 += R6; if R4 <= R5 then begin PC := 33; R7 := R4 end
-106 [-]: LOADK     R10 1        ; R10 := 1.000000
+106 [-]: CONST     R10 1        ; R10 := 1.000000
 107 [-]: LEN       R11 R2       ; R11 := # R2
-108 [-]: LOADK     R12 1        ; R12 := 1.000000
+108 [-]: CONST     R12 1        ; R12 := 1.000000
 109 [-]: FORPREP   R10 154      ; R10 -= R12; PC := 154
 110 [-]: GETTABLE  R14 R2 R13   ; R14 := R2[R13]
 111 [-]: GETTABLE  R14 R14 K10  ; R14 := R14["mItemType"]
-112 [-]: LOADBOOL  R15 0 0      ; R15 := false
-113 [-]: LOADK     R16 1        ; R16 := 1.000000
+112 [-]: LOADKB    R15 0 0      ; R15 := false
+113 [-]: CONST     R16 1        ; R16 := 1.000000
 114 [-]: GETTABLE  R17 R0 K0    ; R17 := R0["mActiveBoosters"]
 115 [-]: LEN       R17 R17      ; R17 := # R17
-116 [-]: LOADK     R18 1        ; R18 := 1.000000
+116 [-]: CONST     R18 1        ; R18 := 1.000000
 117 [-]: FORPREP   R16 148      ; R16 -= R18; PC := 148
 118 [-]: GETTABLE  R20 R0 K0    ; R20 := R0["mActiveBoosters"]
 119 [-]: GETTABLE  R20 R20 R19  ; R20 := R20[R19]
 120 [-]: GETTABLE  R20 R20 K10  ; R20 := R20["mItemType"]
-121 [-]: LOADK     R21 1        ; R21 := 1.000000
+121 [-]: CONST     R21 1        ; R21 := 1.000000
 122 [-]: GETUPVAL  R22 U0       ; R22 := U0
 123 [-]: LEN       R22 R22      ; R22 := # R22
-124 [-]: LOADK     R23 1        ; R23 := 1.000000
+124 [-]: CONST     R23 1        ; R23 := 1.000000
 125 [-]: FORPREP   R21 142      ; R21 -= R23; PC := 142
 126 [-]: SELF      R25 R14 K25  ; R26 := R14; R25 := R14[0xf2deaf69]
 127 [-]: GETUPVAL  R27 U0       ; R27 := U0
@@ -242,7 +242,7 @@
 137 [-]: CALL      R25 3 2      ; R25 := R25(R26,R27)
 138 [-]: TEST      R25 0        ; if not R25 then PC := 143
 139 [-]: JMP       143          ; PC := 143
-140 [-]: LOADBOOL  R15 1 0      ; R15 := true
+140 [-]: LOADKB    R15 1 0      ; R15 := true
 141 [-]: JMP       143          ; PC := 143
 142 [-]: FORLOOP   R21 126      ; R21 += R23; if R21 <= R22 then begin PC := 126; R24 := R21 end
 143 [-]: TEST      R15 0        ; if not R15 then PC := 148
@@ -260,10 +260,10 @@
 155 [-]: GETTABLE  R25 R0 K6    ; R25 := R0["mGameData"]
 156 [-]: SELF      R25 R25 K30  ; R26 := R25; R25 := R25[0x69727e0b]
 157 [-]: CALL      R25 2 2      ; R25 := R25(R26)
-158 [-]: LOADK     R26 1        ; R26 := 1.000000
+158 [-]: CONST     R26 1        ; R26 := 1.000000
 159 [-]: GETTABLE  R27 R25 K31  ; R27 := R25["mGlobalUpgrades"]
 160 [-]: LEN       R27 R27      ; R27 := # R27
-161 [-]: LOADK     R28 1        ; R28 := 1.000000
+161 [-]: CONST     R28 1        ; R28 := 1.000000
 162 [-]: FORPREP   R26 177      ; R26 -= R28; PC := 177
 163 [-]: GETTABLE  R30 R25 K31  ; R30 := R25["mGlobalUpgrades"]
 164 [-]: GETTABLE  R30 R30 R29  ; R30 := R30[R29]
@@ -289,11 +289,11 @@
 184 [-]: GETTABLE  R34 R34 K34  ; R34 := R34["HubBlessings"]
 185 [-]: CALL      R33 2 4      ; R33,R34,R35 := R33(R34)
 186 [-]: JMP       237          ; PC := 237
-187 [-]: LOADBOOL  R38 0 0      ; R38 := false
-188 [-]: LOADK     R39 1        ; R39 := 1.000000
+187 [-]: LOADKB    R38 0 0      ; R38 := false
+188 [-]: CONST     R39 1        ; R39 := 1.000000
 189 [-]: GETTABLE  R40 R0 K0    ; R40 := R0["mActiveBoosters"]
 190 [-]: LEN       R40 R40      ; R40 := # R40
-191 [-]: LOADK     R41 1        ; R41 := 1.000000
+191 [-]: CONST     R41 1        ; R41 := 1.000000
 192 [-]: FORPREP   R39 205      ; R39 -= R41; PC := 205
 193 [-]: GETTABLE  R43 R0 K0    ; R43 := R0["mActiveBoosters"]
 194 [-]: GETTABLE  R43 R43 R42  ; R43 := R43[R42]
@@ -305,7 +305,7 @@
 200 [-]: JMP       205          ; PC := 205
 201 [-]: GETTABLE  R44 R37 K14  ; R44 := R37["mExpiryDate"]
 202 [-]: SETTABLE  R43 K14 R44  ; R43["mExpiryDate"] := R44
-203 [-]: LOADBOOL  R38 1 0      ; R38 := true
+203 [-]: LOADKB    R38 1 0      ; R38 := true
 204 [-]: JMP       206          ; PC := 206
 205 [-]: FORLOOP   R39 193      ; R39 += R41; if R39 <= R40 then begin PC := 193; R42 := R39 end
 206 [-]: TEST      R38 1        ; if R38 then PC := 237
@@ -341,9 +341,9 @@
 236 [-]: CALL      R46 3 1      ; R46(R47,R48)
 237 [-]: TFORLOOP  R33 2        ; R36,R37 :=  R33(R34,R35); if R36 ~= nil then begin PC = 187; R35 := R36 end
 238 [-]: JMP       187          ; PC := 187
-239 [-]: LOADK     R46 1        ; R46 := 1.000000
-240 [-]: LOADK     R47 4        ; R47 := 4.000000
-241 [-]: LOADK     R48 1        ; R48 := 1.000000
+239 [-]: CONST     R46 1        ; R46 := 1.000000
+240 [-]: CONST     R47 4        ; R47 := 4.000000
+241 [-]: CONST     R48 1        ; R48 := 1.000000
 242 [-]: FORPREP   R46 267      ; R46 -= R48; PC := 267
 243 [-]: GETTABLE  R50 R0 K0    ; R50 := R0["mActiveBoosters"]
 244 [-]: LEN       R50 R50      ; R50 := # R50

@@ -10,14 +10,14 @@
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x2d0fad09
   2 [-]: LOADK     R1 K1        ; R1 := "EE.Interface.Utilities"
   3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: LOADBOOL  R1 0 0       ; R1 := false
-  5 [-]: LOADK     R2 -5000     ; R2 := -5000.000000
+  4 [-]: LOADKB    R1 0 0       ; R1 := false
+  5 [-]: CONST     R2 -5000     ; R2 := -5000.000000
   6 [-]: LOADNIL   R3 R4        ; R3 := R4 := nil
-  7 [-]: LOADK     R5 4         ; R5 := 4.000000
+  7 [-]: CONST     R5 4         ; R5 := 4.000000
   8 [-]: LOADK     R6 K2        ; R6 := ""
   9 [-]: LOADK     R7 K2        ; R7 := ""
  10 [-]: LOADK     R8 K2        ; R8 := ""
- 11 [-]: LOADBOOL  R9 0 0       ; R9 := false
+ 11 [-]: LOADKB    R9 0 0       ; R9 := false
  12 [-]: GETGLOBAL R10 K3       ; R10 := 0x0469f296
  13 [-]: LOADK     R11 K4       ; R11 := "Scope"
  14 [-]: CALL      R10 2 2      ; R10 := R10(R11)
@@ -93,7 +93,7 @@
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0xae91e43b
   2 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0x42b04007]
   3 [-]: LOADK     R2 K2        ; R2 := "/Lotus/Language/Game/TAG_INSTRUCTIONS1"
-  4 [-]: LOADBOOL  R3 0 0       ; R3 := false
+  4 [-]: LOADKB    R3 0 0       ; R3 := false
   5 [-]: CALL      R0 4 2       ; R0 := R0(R1,R2,R3)
   6 [-]: LOADK     R1 K3        ; R1 := "<p><font size=\"18\" color=\"#ffffff\">"
   7 [-]: MOVE      R2 R0        ; R2 := R0
@@ -103,7 +103,7 @@
  11 [-]: GETGLOBAL R1 K0        ; R1 := 0xae91e43b
  12 [-]: SELF      R1 R1 K5     ; R2 := R1; R1 := R1[0x5f56eeab]
  13 [-]: LOADK     R3 K6        ; R3 := "Scope.TagInfo"
- 14 [-]: LOADK     R4 29        ; R4 := 29.000000
+ 14 [-]: CONST     R4 29        ; R4 := 29.000000
  15 [-]: GETUPVAL  R5 U0        ; R5 := U0
  16 [-]: CALL      R1 5 1       ; R1(R2,R3,R4,R5)
  17 [-]: RETURN    R0 1         ; return 
@@ -144,14 +144,14 @@
  24 [-]: GETGLOBAL R3 K6        ; R3 := 0xae91e43b
  25 [-]: SELF      R3 R3 K7     ; R4 := R3; R3 := R3[0x42b04007]
  26 [-]: LOADK     R5 K8        ; R5 := "/Lotus/Language/Game/ENTITY_TAGGED"
- 27 [-]: LOADBOOL  R6 0 0       ; R6 := false
+ 27 [-]: LOADKB    R6 0 0       ; R6 := false
  28 [-]: NEWTABLE  R7 0 1       ; R7 := {}
  29 [-]: SETTABLE  R7 K9 R2     ; R7[0x659d451f] := R2
  30 [-]: CALL      R3 5 2       ; R3 := R3(R4,R5,R6,R7)
  31 [-]: GETGLOBAL R4 K6        ; R4 := 0xae91e43b
  32 [-]: SELF      R4 R4 K7     ; R5 := R4; R4 := R4[0x42b04007]
  33 [-]: LOADK     R6 K10       ; R6 := "/Lotus/Language/Game/TAG_INSTRUCTIONS2"
- 34 [-]: LOADBOOL  R7 0 0       ; R7 := false
+ 34 [-]: LOADKB    R7 0 0       ; R7 := false
  35 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
  36 [-]: LOADK     R5 K11       ; R5 := "<p><font size=\"24\" color=\"#fc8506\">"
  37 [-]: MOVE      R6 R1        ; R6 := R1
@@ -165,7 +165,7 @@
  45 [-]: GETGLOBAL R5 K6        ; R5 := 0xae91e43b
  46 [-]: SELF      R5 R5 K15    ; R6 := R5; R5 := R5[0x5f56eeab]
  47 [-]: LOADK     R7 K16       ; R7 := "Scope.TagInfo"
- 48 [-]: LOADK     R8 29        ; R8 := 29.000000
+ 48 [-]: CONST     R8 29        ; R8 := 29.000000
  49 [-]: GETUPVAL  R9 U3        ; R9 := U3
  50 [-]: CALL      R5 5 1       ; R5(R6,R7,R8,R9)
  51 [-]: RETURN    R0 1         ; return 
@@ -190,7 +190,7 @@
   8 [-]: CALL      R0 2 2       ; R0 := R0(R1)
   9 [-]: TEST      R0 0         ; if not R0 then PC := 122
  10 [-]: JMP       122          ; PC := 122
- 11 [-]: LOADBOOL  R0 1 0       ; R0 := true
+ 11 [-]: LOADKB    R0 1 0       ; R0 := true
  12 [-]: SETUPVAL  R0 U1        ; U82 := R1
  13 [-]: LOADK     R0 K2        ; R0 := ""
  14 [-]: GETUPVAL  R1 U0        ; R1 := U0
@@ -238,7 +238,7 @@
  56 [-]: SELF      R5 R5 K15    ; R6 := R5; R5 := R5[0x42b04007]
  57 [-]: SELF      R7 R3 K16    ; R8 := R3; R7 := R3[0x6d604ba7]
  58 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 59 [-]: LOADBOOL  R8 0 0       ; R8 := false
+ 59 [-]: LOADKB    R8 0 0       ; R8 := false
  60 [-]: CALL      R5 4 0       ; R5,... := R5(R6,R7,R8)
  61 [-]: CALL      R4 0 2       ; R4 := R4(R5,...)
  62 [-]: MOVE      R0 R4        ; R0 := R4
@@ -255,11 +255,11 @@
  73 [-]: GETGLOBAL R6 K18       ; R6 := 0xe84ea9bb
  74 [-]: GETGLOBAL R7 K21       ; R7 := 0xa421af95
  75 [-]: CALL      R7 1 2       ; R7 := R7()
- 76 [-]: LOADBOOL  R8 0 0       ; R8 := false
+ 76 [-]: LOADKB    R8 0 0       ; R8 := false
  77 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
- 78 [-]: LOADK     R4 1         ; R4 := 1.000000
+ 78 [-]: CONST     R4 1         ; R4 := 1.000000
  79 [-]: GETUPVAL  R5 U3        ; R5 := U3
- 80 [-]: LOADK     R6 1         ; R6 := 1.000000
+ 80 [-]: CONST     R6 1         ; R6 := 1.000000
  81 [-]: FORPREP   R4 90        ; R4 -= R6; PC := 90
  82 [-]: GETGLOBAL R8 K22       ; R8 := 0x38f10e85
  83 [-]: GETGLOBAL R9 K14       ; R9 := 0xae91e43b
@@ -274,7 +274,7 @@
  92 [-]: GETUPVAL  R8 U1        ; R8 := U1
  93 [-]: TEST      R8 0         ; if not R8 then PC := 122
  94 [-]: JMP       122          ; PC := 122
- 95 [-]: LOADBOOL  R8 0 0       ; R8 := false
+ 95 [-]: LOADKB    R8 0 0       ; R8 := false
  96 [-]: SETUPVAL  R8 U1        ; U82 := R1
  97 [-]: GETUPVAL  R8 U4        ; R8 := U4
  98 [-]: CALL      R8 1 1       ; R8()
@@ -286,11 +286,11 @@
 104 [-]: GETGLOBAL R10 K26      ; R10 := 0xe3b2e927
 105 [-]: GETGLOBAL R11 K21      ; R11 := 0xa421af95
 106 [-]: CALL      R11 1 2      ; R11 := R11()
-107 [-]: LOADBOOL  R12 0 0      ; R12 := false
+107 [-]: LOADKB    R12 0 0      ; R12 := false
 108 [-]: CALL      R8 5 1       ; R8(R9,R10,R11,R12)
-109 [-]: LOADK     R8 1         ; R8 := 1.000000
+109 [-]: CONST     R8 1         ; R8 := 1.000000
 110 [-]: GETUPVAL  R9 U3        ; R9 := U3
-111 [-]: LOADK     R10 1        ; R10 := 1.000000
+111 [-]: CONST     R10 1        ; R10 := 1.000000
 112 [-]: FORPREP   R8 121       ; R8 -= R10; PC := 121
 113 [-]: GETGLOBAL R12 K22      ; R12 := 0x38f10e85
 114 [-]: GETGLOBAL R13 K14      ; R13 := 0xae91e43b
@@ -330,10 +330,10 @@
  15 [-]: JMP       20           ; PC := 20
  16 [-]: GETGLOBAL R2 K3        ; R2 := _T
  17 [-]: GETTABLE  R2 R2 K5     ; R2 := R2["freeCamActive"]
- 18 [-]: NOT       R2 R2        ; R2 := not R2
+ 18 [-]: NOT       R2 R2        ; R2 :=  R2
  19 [-]: JMP       22           ; PC := 22
- 20 [-]: LOADBOOL  R2 0 1       ; R2 := false; PC := 21
- 21 [-]: LOADBOOL  R2 1 0       ; R2 := true
+ 20 [-]: LOADKB    R2 0 1       ; R2 := false; PC := 21
+ 21 [-]: LOADKB    R2 1 0       ; R2 := true
  22 [-]: CALL      R0 3 1       ; R0(R1,R2)
  23 [-]: GETGLOBAL R0 K6        ; R0 := 0x67652851
  24 [-]: CALL      R0 1 2       ; R0 := R0()
@@ -390,37 +390,37 @@
   5 [-]: GETGLOBAL R2 K1        ; R2 := 0xae91e43b
   6 [-]: SELF      R2 R2 K2     ; R3 := R2; R2 := R2[0x67bc869f]
   7 [-]: LOADK     R4 K3        ; R4 := "Scope.Vignette.LeftExtend"
-  8 [-]: LOADK     R5 12        ; R5 := 12.000000
+  8 [-]: CONST     R5 12        ; R5 := 12.000000
   9 [-]: DIV       R6 R0 K4     ; R6 := R0 / 2.000000
  10 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
  11 [-]: GETGLOBAL R2 K1        ; R2 := 0xae91e43b
  12 [-]: SELF      R2 R2 K2     ; R3 := R2; R2 := R2[0x67bc869f]
  13 [-]: LOADK     R4 K5        ; R4 := "Scope.Vignette.RightExtend"
- 14 [-]: LOADK     R5 12        ; R5 := 12.000000
+ 14 [-]: CONST     R5 12        ; R5 := 12.000000
  15 [-]: DIV       R6 R0 K4     ; R6 := R0 / 2.000000
  16 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
  17 [-]: GETGLOBAL R2 K1        ; R2 := 0xae91e43b
  18 [-]: SELF      R2 R2 K2     ; R3 := R2; R2 := R2[0x67bc869f]
  19 [-]: LOADK     R4 K6        ; R4 := "Scope.Vignette.TopExtend"
- 20 [-]: LOADK     R5 13        ; R5 := 13.000000
+ 20 [-]: CONST     R5 13        ; R5 := 13.000000
  21 [-]: DIV       R6 R1 K4     ; R6 := R1 / 2.000000
  22 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
  23 [-]: GETGLOBAL R2 K1        ; R2 := 0xae91e43b
  24 [-]: SELF      R2 R2 K2     ; R3 := R2; R2 := R2[0x67bc869f]
  25 [-]: LOADK     R4 K6        ; R4 := "Scope.Vignette.TopExtend"
- 26 [-]: LOADK     R5 12        ; R5 := 12.000000
+ 26 [-]: CONST     R5 12        ; R5 := 12.000000
  27 [-]: MOVE      R6 R0        ; R6 := R0
  28 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
  29 [-]: GETGLOBAL R2 K1        ; R2 := 0xae91e43b
  30 [-]: SELF      R2 R2 K2     ; R3 := R2; R2 := R2[0x67bc869f]
  31 [-]: LOADK     R4 K7        ; R4 := "Scope.Vignette.BottomExtend"
- 32 [-]: LOADK     R5 13        ; R5 := 13.000000
+ 32 [-]: CONST     R5 13        ; R5 := 13.000000
  33 [-]: DIV       R6 R1 K4     ; R6 := R1 / 2.000000
  34 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
  35 [-]: GETGLOBAL R2 K1        ; R2 := 0xae91e43b
  36 [-]: SELF      R2 R2 K2     ; R3 := R2; R2 := R2[0x67bc869f]
  37 [-]: LOADK     R4 K7        ; R4 := "Scope.Vignette.BottomExtend"
- 38 [-]: LOADK     R5 12        ; R5 := 12.000000
+ 38 [-]: CONST     R5 12        ; R5 := 12.000000
  39 [-]: MOVE      R6 R0        ; R6 := R0
  40 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
  41 [-]: RETURN    R0 1         ; return 
@@ -438,65 +438,65 @@
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0xae91e43b
   2 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0x67bc869f]
   3 [-]: LOADK     R2 K2        ; R2 := "Scope.Dot"
-  4 [-]: LOADK     R3 10        ; R3 := 10.000000
-  5 [-]: LOADK     R4 0         ; R4 := 0.000000
+  4 [-]: CONST     R3 10        ; R3 := 10.000000
+  5 [-]: CONST     R4 0         ; R4 := 0.000000
   6 [-]: CALL      R0 5 1       ; R0(R1,R2,R3,R4)
   7 [-]: GETGLOBAL R0 K0        ; R0 := 0xae91e43b
   8 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0x67bc869f]
   9 [-]: LOADK     R2 K3        ; R2 := "Scope.Reticle"
- 10 [-]: LOADK     R3 10        ; R3 := 10.000000
- 11 [-]: LOADK     R4 0         ; R4 := 0.000000
+ 10 [-]: CONST     R3 10        ; R3 := 10.000000
+ 11 [-]: CONST     R4 0         ; R4 := 0.000000
  12 [-]: CALL      R0 5 1       ; R0(R1,R2,R3,R4)
  13 [-]: GETGLOBAL R0 K0        ; R0 := 0xae91e43b
  14 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0x67bc869f]
  15 [-]: LOADK     R2 K4        ; R2 := "Scope.Vignette"
- 16 [-]: LOADK     R3 10        ; R3 := 10.000000
- 17 [-]: LOADK     R4 0         ; R4 := 0.000000
+ 16 [-]: CONST     R3 10        ; R3 := 10.000000
+ 17 [-]: CONST     R4 0         ; R4 := 0.000000
  18 [-]: CALL      R0 5 1       ; R0(R1,R2,R3,R4)
  19 [-]: GETGLOBAL R0 K0        ; R0 := 0xae91e43b
  20 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0x67bc869f]
  21 [-]: LOADK     R2 K5        ; R2 := "Scope.Vignette.TopExtend"
- 22 [-]: LOADK     R3 9         ; R3 := 9.000000
+ 22 [-]: CONST     R3 9         ; R3 := 9.000000
  23 [-]: GETGLOBAL R4 K6        ; R4 := 0x0032441c
  24 [-]: GETTABLE  R4 R4 K7     ; R4 := R4["UIColor_Black"]
  25 [-]: CALL      R0 5 1       ; R0(R1,R2,R3,R4)
  26 [-]: GETGLOBAL R0 K0        ; R0 := 0xae91e43b
  27 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0x67bc869f]
  28 [-]: LOADK     R2 K8        ; R2 := "Scope.Vignette.LeftExtend"
- 29 [-]: LOADK     R3 9         ; R3 := 9.000000
+ 29 [-]: CONST     R3 9         ; R3 := 9.000000
  30 [-]: GETGLOBAL R4 K6        ; R4 := 0x0032441c
  31 [-]: GETTABLE  R4 R4 K7     ; R4 := R4["UIColor_Black"]
  32 [-]: CALL      R0 5 1       ; R0(R1,R2,R3,R4)
  33 [-]: GETGLOBAL R0 K0        ; R0 := 0xae91e43b
  34 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0x67bc869f]
  35 [-]: LOADK     R2 K9        ; R2 := "Scope.Vignette.BottomExtend"
- 36 [-]: LOADK     R3 9         ; R3 := 9.000000
+ 36 [-]: CONST     R3 9         ; R3 := 9.000000
  37 [-]: GETGLOBAL R4 K6        ; R4 := 0x0032441c
  38 [-]: GETTABLE  R4 R4 K7     ; R4 := R4["UIColor_Black"]
  39 [-]: CALL      R0 5 1       ; R0(R1,R2,R3,R4)
  40 [-]: GETGLOBAL R0 K0        ; R0 := 0xae91e43b
  41 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0x67bc869f]
  42 [-]: LOADK     R2 K10       ; R2 := "Scope.Vignette.RightExtend"
- 43 [-]: LOADK     R3 9         ; R3 := 9.000000
+ 43 [-]: CONST     R3 9         ; R3 := 9.000000
  44 [-]: GETGLOBAL R4 K6        ; R4 := 0x0032441c
  45 [-]: GETTABLE  R4 R4 K7     ; R4 := R4["UIColor_Black"]
  46 [-]: CALL      R0 5 1       ; R0(R1,R2,R3,R4)
  47 [-]: GETGLOBAL R0 K0        ; R0 := 0xae91e43b
  48 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0x67bc869f]
  49 [-]: LOADK     R2 K11       ; R2 := "Scope.TagInfo"
- 50 [-]: LOADK     R3 10        ; R3 := 10.000000
- 51 [-]: LOADK     R4 0         ; R4 := 0.000000
+ 50 [-]: CONST     R3 10        ; R3 := 10.000000
+ 51 [-]: CONST     R4 0         ; R4 := 0.000000
  52 [-]: CALL      R0 5 1       ; R0(R1,R2,R3,R4)
  53 [-]: GETGLOBAL R0 K0        ; R0 := 0xae91e43b
  54 [-]: SELF      R0 R0 K12    ; R1 := R0; R0 := R0[0x5f56eeab]
  55 [-]: LOADK     R2 K11       ; R2 := "Scope.TagInfo"
- 56 [-]: LOADK     R3 38        ; R3 := 38.000000
+ 56 [-]: CONST     R3 38        ; R3 := 38.000000
  57 [-]: LOADK     R4 K13       ; R4 := "center"
  58 [-]: CALL      R0 5 1       ; R0(R1,R2,R3,R4)
  59 [-]: GETGLOBAL R0 K0        ; R0 := 0xae91e43b
  60 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0x67bc869f]
  61 [-]: LOADK     R2 K3        ; R2 := "Scope.Reticle"
- 62 [-]: LOADK     R3 4         ; R3 := 4.000000
+ 62 [-]: CONST     R3 4         ; R3 := 4.000000
  63 [-]: GETUPVAL  R4 U0        ; R4 := U0
  64 [-]: CALL      R0 5 1       ; R0(R1,R2,R3,R4)
  65 [-]: GETGLOBAL R0 K0        ; R0 := 0xae91e43b
@@ -508,7 +508,7 @@
  71 [-]: CALL      R0 1 1       ; R0()
  72 [-]: GETUPVAL  R0 U2        ; R0 := U2
  73 [-]: CALL      R0 1 1       ; R0()
- 74 [-]: LOADBOOL  R0 1 0       ; R0 := true
+ 74 [-]: LOADKB    R0 1 0       ; R0 := true
  75 [-]: SETUPVAL  R0 U3        ; U82 := R3
  76 [-]: RETURN    R0 1         ; return 
 
@@ -544,7 +544,7 @@
   2 [-]: GETGLOBAL R1 K0        ; R1 := 0x7b998233
   3 [-]: MOVE      R2 R0        ; R2 := R0
   4 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  5 [-]: NOT       R1 R1        ; R1 := not R1
+  5 [-]: NOT       R1 R1        ; R1 :=  R1
   6 [-]: RETURN    R1 2         ; return R1
   7 [-]: RETURN    R0 1         ; return 
 
@@ -560,76 +560,76 @@
 
   1 [-]: EQ        1 R0 K0      ; if R0 == "true" then PC := 4
   2 [-]: JMP       4            ; PC := 4
-  3 [-]: LOADBOOL  R0 0 1       ; R0 := false; PC := 4
-  4 [-]: LOADBOOL  R0 1 0       ; R0 := true
+  3 [-]: LOADKB    R0 0 1       ; R0 := false; PC := 4
+  4 [-]: LOADKB    R0 1 0       ; R0 := true
   5 [-]: GETUPVAL  R2 U0        ; R2 := U0
   6 [-]: GETTABLE  R2 R2 K1     ; R2 := R2[0x06d055f9]
   7 [-]: MOVE      R3 R0        ; R3 := R0
-  8 [-]: LOADK     R4 25        ; R4 := 25.000000
-  9 [-]: LOADK     R5 0         ; R5 := 0.000000
+  8 [-]: CONST     R4 25        ; R4 := 25.000000
+  9 [-]: CONST     R5 0         ; R5 := 0.000000
  10 [-]: CALL      R2 4 2       ; R2 := R2(R3,R4,R5)
  11 [-]: GETUPVAL  R3 U0        ; R3 := U0
  12 [-]: GETTABLE  R3 R3 K1     ; R3 := R3[0x06d055f9]
  13 [-]: MOVE      R4 R0        ; R4 := R0
- 14 [-]: LOADK     R5 0         ; R5 := 0.000000
+ 14 [-]: CONST     R5 0         ; R5 := 0.000000
  15 [-]: GETUPVAL  R6 U1        ; R6 := U1
  16 [-]: CALL      R3 4 2       ; R3 := R3(R4,R5,R6)
  17 [-]: GETUPVAL  R4 U0        ; R4 := U0
  18 [-]: GETTABLE  R4 R4 K1     ; R4 := R4[0x06d055f9]
  19 [-]: MOVE      R5 R0        ; R5 := R0
- 20 [-]: LOADK     R6 100       ; R6 := 100.000000
- 21 [-]: LOADK     R7 0         ; R7 := 0.000000
+ 20 [-]: CONST     R6 100       ; R6 := 100.000000
+ 21 [-]: CONST     R7 0         ; R7 := 0.000000
  22 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
  23 [-]: GETGLOBAL R5 K2        ; R5 := 0x25312c9b
  24 [-]: GETGLOBAL R6 K3        ; R6 := 0xae91e43b
  25 [-]: LOADK     R7 K4        ; R7 := "Scope.Dot"
- 26 [-]: LOADK     R8 2         ; R8 := 2.000000
+ 26 [-]: CONST     R8 2         ; R8 := 2.000000
  27 [-]: NEWTABLE  R9 1 0       ; R9 := {}
- 28 [-]: LOADK     R10 10       ; R10 := 10.000000
+ 28 [-]: CONST     R10 10       ; R10 := 10.000000
  29 [-]: SETLIST   R9 1 1       ; R9[(1-1)*FPF+i] := R(9+i), 1 <= i <= 1
  30 [-]: NEWTABLE  R10 1 0      ; R10 := {}
  31 [-]: MOVE      R11 R4       ; R11 := R4
  32 [-]: SETLIST   R10 1 1      ; R10[(1-1)*FPF+i] := R(10+i), 1 <= i <= 1
- 33 [-]: LOADK     R11 0        ; R11 := 0.250000
+ 33 [-]: CONST     R11 0        ; R11 := 0.250000
  34 [-]: CALL      R5 7 1       ; R5(R6,R7,R8,R9,R10,R11)
  35 [-]: GETGLOBAL R5 K2        ; R5 := 0x25312c9b
  36 [-]: GETGLOBAL R6 K3        ; R6 := 0xae91e43b
  37 [-]: LOADK     R7 K6        ; R7 := "Scope.TagInfo"
- 38 [-]: LOADK     R8 2         ; R8 := 2.000000
+ 38 [-]: CONST     R8 2         ; R8 := 2.000000
  39 [-]: NEWTABLE  R9 1 0       ; R9 := {}
- 40 [-]: LOADK     R10 10       ; R10 := 10.000000
+ 40 [-]: CONST     R10 10       ; R10 := 10.000000
  41 [-]: SETLIST   R9 1 1       ; R9[(1-1)*FPF+i] := R(9+i), 1 <= i <= 1
  42 [-]: NEWTABLE  R10 1 0      ; R10 := {}
  43 [-]: MOVE      R11 R4       ; R11 := R4
  44 [-]: SETLIST   R10 1 1      ; R10[(1-1)*FPF+i] := R(10+i), 1 <= i <= 1
- 45 [-]: LOADK     R11 0        ; R11 := 0.250000
+ 45 [-]: CONST     R11 0        ; R11 := 0.250000
  46 [-]: CALL      R5 7 1       ; R5(R6,R7,R8,R9,R10,R11)
  47 [-]: GETGLOBAL R5 K2        ; R5 := 0x25312c9b
  48 [-]: GETGLOBAL R6 K3        ; R6 := 0xae91e43b
  49 [-]: LOADK     R7 K7        ; R7 := "Scope.Vignette"
- 50 [-]: LOADK     R8 2         ; R8 := 2.000000
+ 50 [-]: CONST     R8 2         ; R8 := 2.000000
  51 [-]: NEWTABLE  R9 1 0       ; R9 := {}
- 52 [-]: LOADK     R10 10       ; R10 := 10.000000
+ 52 [-]: CONST     R10 10       ; R10 := 10.000000
  53 [-]: SETLIST   R9 1 1       ; R9[(1-1)*FPF+i] := R(9+i), 1 <= i <= 1
  54 [-]: NEWTABLE  R10 1 0      ; R10 := {}
  55 [-]: MOVE      R11 R2       ; R11 := R2
  56 [-]: SETLIST   R10 1 1      ; R10[(1-1)*FPF+i] := R(10+i), 1 <= i <= 1
- 57 [-]: LOADK     R11 0        ; R11 := 0.250000
+ 57 [-]: CONST     R11 0        ; R11 := 0.250000
  58 [-]: CALL      R5 7 1       ; R5(R6,R7,R8,R9,R10,R11)
  59 [-]: GETGLOBAL R5 K2        ; R5 := 0x25312c9b
  60 [-]: GETGLOBAL R6 K3        ; R6 := 0xae91e43b
  61 [-]: LOADK     R7 K8        ; R7 := "Scope.Reticle"
- 62 [-]: LOADK     R8 2         ; R8 := 2.000000
+ 62 [-]: CONST     R8 2         ; R8 := 2.000000
  63 [-]: NEWTABLE  R9 2 0       ; R9 := {}
- 64 [-]: LOADK     R10 10       ; R10 := 10.000000
- 65 [-]: LOADK     R11 4        ; R11 := 4.000000
+ 64 [-]: CONST     R10 10       ; R10 := 10.000000
+ 65 [-]: CONST     R11 4        ; R11 := 4.000000
  66 [-]: SETLIST   R9 2 1       ; R9[(1-1)*FPF+i] := R(9+i), 1 <= i <= 2
  67 [-]: NEWTABLE  R10 2 0      ; R10 := {}
  68 [-]: MOVE      R11 R2       ; R11 := R2
  69 [-]: MOVE      R12 R3       ; R12 := R3
  70 [-]: SETLIST   R10 2 1      ; R10[(1-1)*FPF+i] := R(10+i), 1 <= i <= 2
- 71 [-]: LOADK     R11 0        ; R11 := 0.250000
- 72 [-]: LOADK     R12 0        ; R12 := 0.000000
+ 71 [-]: CONST     R11 0        ; R11 := 0.250000
+ 72 [-]: CONST     R12 0        ; R12 := 0.000000
  73 [-]: CLOSURE   R13 0        ; R13 := closure(Function #10.1)
  74 [-]: MOVE      R0 R1        ; R0 := R1
  75 [-]: CALL      R5 9 1       ; R5(R6,R7,R8,R9,R10,R11,R12,R13)
@@ -638,7 +638,7 @@
  78 [-]: GETGLOBAL R5 K3        ; R5 := 0xae91e43b
  79 [-]: SELF      R5 R5 K9     ; R6 := R5; R5 := R5[0x5f56eeab]
  80 [-]: LOADK     R7 K6        ; R7 := "Scope.TagInfo"
- 81 [-]: LOADK     R8 29        ; R8 := 29.000000
+ 81 [-]: CONST     R8 29        ; R8 := 29.000000
  82 [-]: GETUPVAL  R9 U2        ; R9 := U2
  83 [-]: CALL      R5 5 1       ; R5(R6,R7,R8,R9)
  84 [-]: GETGLOBAL R5 K10       ; R5 := 0x89326c93
@@ -690,8 +690,8 @@
   4 [-]: GETGLOBAL R0 K1        ; R0 := 0xae91e43b
   5 [-]: SELF      R0 R0 K2     ; R1 := R0; R0 := R0[0xaade900e]
   6 [-]: LOADK     R2 K3        ; R2 := "_root"
-  7 [-]: LOADK     R3 11        ; R3 := 11.000000
-  8 [-]: LOADBOOL  R4 0 0       ; R4 := false
+  7 [-]: CONST     R3 11        ; R3 := 11.000000
+  8 [-]: LOADKB    R4 0 0       ; R4 := false
   9 [-]: CALL      R0 5 1       ; R0(R1,R2,R3,R4)
  10 [-]: RETURN    R0 1         ; return 
 
@@ -722,15 +722,15 @@
 
   1 [-]: EQ        1 R0 K0      ; if R0 == "true" then PC := 4
   2 [-]: JMP       4            ; PC := 4
-  3 [-]: LOADBOOL  R0 0 1       ; R0 := false; PC := 4
-  4 [-]: LOADBOOL  R0 1 0       ; R0 := true
+  3 [-]: LOADKB    R0 0 1       ; R0 := false; PC := 4
+  4 [-]: LOADKB    R0 1 0       ; R0 := true
   5 [-]: TEST      R0 0         ; if not R0 then PC := 13
   6 [-]: JMP       13           ; PC := 13
   7 [-]: GETGLOBAL R2 K1        ; R2 := 0xae91e43b
   8 [-]: SELF      R2 R2 K2     ; R3 := R2; R2 := R2[0xaade900e]
   9 [-]: LOADK     R4 K3        ; R4 := "_root"
- 10 [-]: LOADK     R5 11        ; R5 := 11.000000
- 11 [-]: LOADBOOL  R6 1 0       ; R6 := true
+ 10 [-]: CONST     R5 11        ; R5 := 11.000000
+ 11 [-]: LOADKB    R6 1 0       ; R6 := true
  12 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
  13 [-]: GETUPVAL  R2 U0        ; R2 := U0
  14 [-]: MOVE      R3 R1        ; R3 := R1
@@ -783,19 +783,25 @@
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
-; Max Stack Size:  10
+; Max Stack Size:  14
 
   1 [-]: GETGLOBAL R2 K0        ; R2 := 0xae91e43b
   2 [-]: SELF      R2 R2 K1     ; R3 := R2; R2 := R2[0x5f56eeab]
   3 [-]: LOADK     R4 K2        ; R4 := "Scope.Reticle.RangeFinder"
-  4 [-]: LOADK     R5 29        ; R5 := 29.000000
-  5 [-]: MOVE      R6 R0        ; R6 := R0
-  6 [-]: LOADK     R7 K3        ; R7 := "."
-  7 [-]: MOVE      R8 R1        ; R8 := R1
-  8 [-]: LOADK     R9 K4        ; R9 := "m"
-  9 [-]: CONCAT    R6 R6 R9     ; R6 := R6 .. R7 .. R8 .. R9
- 10 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
- 11 [-]: RETURN    R0 1         ; return 
+  4 [-]: CONST     R5 29        ; R5 := 29.000000
+  5 [-]: GETGLOBAL R6 K0        ; R6 := 0xae91e43b
+  6 [-]: SELF      R6 R6 K3     ; R7 := R6; R6 := R6[0x42b04007]
+  7 [-]: LOADK     R8 K4        ; R8 := "/Lotus/Language/Game/UNIT_METER"
+  8 [-]: LOADKB    R9 0 0       ; R9 := false
+  9 [-]: NEWTABLE  R10 0 1      ; R10 := {}
+ 10 [-]: MOVE      R11 R0       ; R11 := R0
+ 11 [-]: LOADK     R12 K6       ; R12 := "."
+ 12 [-]: MOVE      R13 R1       ; R13 := R1
+ 13 [-]: CONCAT    R11 R11 R13  ; R11 := R11 .. R12 .. R13
+ 14 [-]: SETTABLE  R10 K5 R11   ; R10["COUNT"] := R11
+ 15 [-]: CALL      R6 5 0       ; R6,... := R6(R7,R8,R9,R10)
+ 16 [-]: CALL      R2 0 1       ; R2(R3,...)
+ 17 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #16:

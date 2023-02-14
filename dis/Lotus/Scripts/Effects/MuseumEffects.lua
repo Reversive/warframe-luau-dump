@@ -30,11 +30,11 @@
   5 [-]: MUL       R2 R2 K2     ; R2 := R2 * 5.000000
   6 [-]: GETGLOBAL R3 K3        ; R3 := 0xc163f229
   7 [-]: LOADK     R4 K4        ; R4 := 0.200000
-  8 [-]: LOADK     R5 0         ; R5 := 0.500000
+  8 [-]: CONST     R5 0         ; R5 := 0.500000
   9 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
  10 [-]: GETGLOBAL R4 K3        ; R4 := 0xc163f229
- 11 [-]: LOADK     R5 -1        ; R5 := -1.000000
- 12 [-]: LOADK     R6 1         ; R6 := 1.000000
+ 11 [-]: CONST     R5 -1        ; R5 := -1.000000
+ 12 [-]: CONST     R6 1         ; R6 := 1.000000
  13 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
  14 [-]: GETGLOBAL R5 K5        ; R5 := 0x5bced4c4
  15 [-]: GETTABLE  R5 R5 K6     ; R5 := R5[0xe4a5b3ca]
@@ -45,13 +45,13 @@
  20 [-]: CALL      R6 1 2       ; R6 := R6()
  21 [-]: LT        0 K8 R6      ; if 0.500000 >= R6 then PC := 24
  22 [-]: JMP       24           ; PC := 24
- 23 [-]: UNM       R5 R5        ; R5 := ^ R5
- 24 [-]: LOADK     R6 -1        ; R6 := -1.000000
+ 23 [-]: UNM       R5 R5        ; R5 :=  R5
+ 24 [-]: CONST     R6 -1        ; R6 := -1.000000
  25 [-]: GETGLOBAL R7 K1        ; R7 := 0x0c62abf7
  26 [-]: CALL      R7 1 2       ; R7 := R7()
  27 [-]: LT        0 K8 R7      ; if 0.500000 >= R7 then PC := 33
  28 [-]: JMP       33           ; PC := 33
- 29 [-]: LOADK     R6 1         ; R6 := 1.000000
+ 29 [-]: CONST     R6 1         ; R6 := 1.000000
  30 [-]: GETTABLE  R7 R1 K9     ; R7 := R1["y"]
  31 [-]: SUB       R7 R7 K10    ; R7 := R7 - 2.000000
  32 [-]: SETTABLE  R1 K9 R7     ; R1["y"] := R7
@@ -84,7 +84,7 @@
  59 [-]: MOVE      R11 R1       ; R11 := R1
  60 [-]: CALL      R9 3 1       ; R9(R10,R11)
  61 [-]: GETGLOBAL R9 K16       ; R9 := 0xcbd666e1
- 62 [-]: LOADK     R10 0        ; R10 := 0.000000
+ 62 [-]: CONST     R10 0        ; R10 := 0.000000
  63 [-]: CALL      R9 2 1       ; R9(R10)
  64 [-]: MUL       R9 R7 R3     ; R9 := R7 * R3
  65 [-]: ADD       R2 R2 R9     ; R2 := R2 + R9

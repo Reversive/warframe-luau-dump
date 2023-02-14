@@ -38,13 +38,13 @@
   1 [-]: LEN       R2 R0        ; R2 := # R0
   2 [-]: EQ        0 R2 K0      ; if R2 ~= 0.000000 then PC := 6
   3 [-]: JMP       6            ; PC := 6
-  4 [-]: LOADK     R2 -1        ; R2 := -1.000000
+  4 [-]: CONST     R2 -1        ; R2 := -1.000000
   5 [-]: RETURN    R2 2         ; return R2
   6 [-]: LEN       R2 R0        ; R2 := # R0
   7 [-]: LEN       R3 R1        ; R3 := # R1
   8 [-]: EQ        1 R2 R3      ; if R2 == R3 then PC := 12
   9 [-]: JMP       12           ; PC := 12
- 10 [-]: LOADK     R2 -1        ; R2 := -1.000000
+ 10 [-]: CONST     R2 -1        ; R2 := -1.000000
  11 [-]: RETURN    R2 2         ; return R2
  12 [-]: GETGLOBAL R2 K1        ; R2 := _T
  13 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["AvatarRandomizerOverrideIndex"]
@@ -62,22 +62,22 @@
  25 [-]: GETGLOBAL R2 K1        ; R2 := _T
  26 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["AvatarRandomizerOverrideIndex"]
  27 [-]: RETURN    R2 2         ; return R2
- 28 [-]: LOADK     R2 0         ; R2 := 0.000000
- 29 [-]: LOADK     R3 1         ; R3 := 1.000000
+ 28 [-]: CONST     R2 0         ; R2 := 0.000000
+ 29 [-]: CONST     R3 1         ; R3 := 1.000000
  30 [-]: LEN       R4 R0        ; R4 := # R0
- 31 [-]: LOADK     R5 1         ; R5 := 1.000000
+ 31 [-]: CONST     R5 1         ; R5 := 1.000000
  32 [-]: FORPREP   R3 35        ; R3 -= R5; PC := 35
  33 [-]: GETTABLE  R7 R1 R6     ; R7 := R1[R6]
  34 [-]: ADD       R2 R2 R7     ; R2 := R2 + R7
  35 [-]: FORLOOP   R3 33        ; R3 += R5; if R3 <= R4 then begin PC := 33; R6 := R3 end
  36 [-]: GETGLOBAL R7 K6        ; R7 := 0xc163f229
- 37 [-]: LOADK     R8 0         ; R8 := 0.000000
- 38 [-]: LOADK     R9 1         ; R9 := 1.000000
+ 37 [-]: CONST     R8 0         ; R8 := 0.000000
+ 38 [-]: CONST     R9 1         ; R9 := 1.000000
  39 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
  40 [-]: MUL       R7 R7 R2     ; R7 := R7 * R2
- 41 [-]: LOADK     R8 1         ; R8 := 1.000000
+ 41 [-]: CONST     R8 1         ; R8 := 1.000000
  42 [-]: LEN       R9 R0        ; R9 := # R0
- 43 [-]: LOADK     R10 1        ; R10 := 1.000000
+ 43 [-]: CONST     R10 1        ; R10 := 1.000000
  44 [-]: FORPREP   R8 51        ; R8 -= R10; PC := 51
  45 [-]: GETTABLE  R12 R1 R11   ; R12 := R1[R11]
  46 [-]: LE        0 R7 R12     ; if R7 > R12 then PC := 49
@@ -86,7 +86,7 @@
  49 [-]: GETTABLE  R12 R1 R11   ; R12 := R1[R11]
  50 [-]: SUB       R7 R7 R12    ; R7 := R7 - R12
  51 [-]: FORLOOP   R8 45        ; R8 += R10; if R8 <= R9 then begin PC := 45; R11 := R8 end
- 52 [-]: LOADK     R12 -1       ; R12 := -1.000000
+ 52 [-]: CONST     R12 -1       ; R12 := -1.000000
  53 [-]: RETURN    R12 2        ; return R12
  54 [-]: RETURN    R0 1         ; return 
 
@@ -118,7 +118,7 @@
  16 [-]: CALL      R7 2 2       ; R7 := R7(R8)
  17 [-]: SELF      R7 R7 K6     ; R8 := R7; R7 := R7[0x6d604ba7]
  18 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 19 [-]: LOADBOOL  R8 0 0       ; R8 := false
+ 19 [-]: LOADKB    R8 0 0       ; R8 := false
  20 [-]: TAILCALL  R6 3 0       ; R6,... := R6(R7,R8)
  21 [-]: RETURN    R6 0         ; return R6,...
  22 [-]: LOADK     R6 K7        ; R6 := ""
@@ -180,7 +180,7 @@
  43 [-]: LT        0 K14 R1     ; if 0.000000 >= R1 then PC := 54
  44 [-]: JMP       54           ; PC := 54
  45 [-]: GETGLOBAL R1 K15       ; R1 := 0x55730e1a
- 46 [-]: LOADK     R2 1         ; R2 := 1.000000
+ 46 [-]: CONST     R2 1         ; R2 := 1.000000
  47 [-]: GETGLOBAL R3 K13       ; R3 := 0xc4460bd1
  48 [-]: LEN       R3 R3        ; R3 := # R3
  49 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
@@ -245,7 +245,7 @@
  43 [-]: LT        0 K14 R1     ; if 0.000000 >= R1 then PC := 54
  44 [-]: JMP       54           ; PC := 54
  45 [-]: GETGLOBAL R1 K15       ; R1 := 0x55730e1a
- 46 [-]: LOADK     R2 1         ; R2 := 1.000000
+ 46 [-]: CONST     R2 1         ; R2 := 1.000000
  47 [-]: GETGLOBAL R3 K13       ; R3 := 0xb1c2b2f4
  48 [-]: LEN       R3 R3        ; R3 := # R3
  49 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
@@ -281,7 +281,7 @@
  14 [-]: LEN       R1 R1        ; R1 := # R1
  15 [-]: LT        0 K6 R1      ; if 0.000000 >= R1 then PC := 39
  16 [-]: JMP       39           ; PC := 39
- 17 [-]: LOADK     R2 1         ; R2 := 1.000000
+ 17 [-]: CONST     R2 1         ; R2 := 1.000000
  18 [-]: GETGLOBAL R3 K7        ; R3 := _T
  19 [-]: GETTABLE  R3 R3 K8     ; R3 := R3["AvatarRandomizerOverrideIndex"]
  20 [-]: EQ        1 R3 K9      ; if R3 == nil then PC := 29
@@ -294,14 +294,14 @@
  27 [-]: GETTABLE  R2 R3 K8     ; R2 := R3["AvatarRandomizerOverrideIndex"]
  28 [-]: JMP       34           ; PC := 34
  29 [-]: GETGLOBAL R3 K10       ; R3 := 0x55730e1a
- 30 [-]: LOADK     R4 1         ; R4 := 1.000000
+ 30 [-]: CONST     R4 1         ; R4 := 1.000000
  31 [-]: MOVE      R5 R1        ; R5 := R1
  32 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
  33 [-]: MOVE      R2 R3        ; R2 := R3
  34 [-]: SELF      R3 R0 K11    ; R4 := R0; R3 := R0[0x511d26b8]
  35 [-]: GETGLOBAL R5 K5        ; R5 := 0xfa327719
  36 [-]: GETTABLE  R5 R5 R2     ; R5 := R5[R2]
- 37 [-]: LOADBOOL  R6 0 0       ; R6 := false
+ 37 [-]: LOADKB    R6 0 0       ; R6 := false
  38 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
  39 [-]: RETURN    R0 1         ; return 
 
@@ -328,14 +328,14 @@
 ; Is_vararg:       0
 ; Max Stack Size:  7
 
-  1 [-]: LOADK     R1 0         ; R1 := 0.000000
+  1 [-]: CONST     R1 0         ; R1 := 0.000000
   2 [-]: GETGLOBAL R2 K0        ; R2 := _T
   3 [-]: GETTABLE  R2 R2 K1     ; R2 := R2["AvatarRandomizerOverrideIndex"]
   4 [-]: EQ        0 R2 K2      ; if R2 ~= nil then PC := 11
   5 [-]: JMP       11           ; PC := 11
   6 [-]: GETGLOBAL R2 K3        ; R2 := 0x55730e1a
-  7 [-]: LOADK     R3 0         ; R3 := 0.000000
-  8 [-]: LOADK     R4 1         ; R4 := 1.000000
+  7 [-]: CONST     R3 0         ; R3 := 0.000000
+  8 [-]: CONST     R4 1         ; R4 := 1.000000
   9 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
  10 [-]: MOVE      R1 R2        ; R1 := R2
  11 [-]: EQ        0 R1 K4      ; if R1 ~= 0.000000 then PC := 17
@@ -373,7 +373,7 @@
  43 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  44 [-]: SELF      R5 R5 K12    ; R6 := R5; R5 := R5[0x6d604ba7]
  45 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 46 [-]: LOADBOOL  R6 0 0       ; R6 := false
+ 46 [-]: LOADKB    R6 0 0       ; R6 := false
  47 [-]: CALL      R4 3 0       ; R4,... := R4(R5,R6)
  48 [-]: TAILCALL  R3 0 0       ; R3,... := R3(R4,...)
  49 [-]: RETURN    R3 0         ; return R3,...

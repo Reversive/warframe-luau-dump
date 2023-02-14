@@ -7,7 +7,7 @@
 ; Is_vararg:       2
 ; Max Stack Size:  6
 
-  1 [-]: LOADK     R0 10        ; R0 := 10.000000
+  1 [-]: CONST     R0 10        ; R0 := 10.000000
   2 [-]: GETGLOBAL R1 K0        ; R1 := 0x7ed0a956
   3 [-]: LOADK     R2 K1        ; R2 := "/Lotus/Types/PickUps/CaptureFlagPvP"
   4 [-]: CALL      R1 2 2       ; R1 := R1(R2)
@@ -106,7 +106,7 @@
  65 [-]: GETUPVAL  R9 U4        ; R9 := U4
  66 [-]: LE        0 R8 R9      ; if R8 > R9 then PC := 71
  67 [-]: JMP       71           ; PC := 71
- 68 [-]: LOADBOOL  R8 1 0       ; R8 := true
+ 68 [-]: LOADKB    R8 1 0       ; R8 := true
  69 [-]: RETURN    R8 2         ; return R8
  70 [-]: JMP       97           ; PC := 97
  71 [-]: GETGLOBAL R8 K11       ; R8 := _T
@@ -133,9 +133,9 @@
  92 [-]: GETUPVAL  R9 U4        ; R9 := U4
  93 [-]: LE        0 R8 R9      ; if R8 > R9 then PC := 97
  94 [-]: JMP       97           ; PC := 97
- 95 [-]: LOADBOOL  R8 1 0       ; R8 := true
+ 95 [-]: LOADKB    R8 1 0       ; R8 := true
  96 [-]: RETURN    R8 2         ; return R8
- 97 [-]: LOADBOOL  R8 0 0       ; R8 := false
+ 97 [-]: LOADKB    R8 0 0       ; R8 := false
  98 [-]: RETURN    R8 2         ; return R8
  99 [-]: RETURN    R0 1         ; return 
 

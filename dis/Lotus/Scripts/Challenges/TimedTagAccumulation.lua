@@ -93,10 +93,10 @@
   8 [-]: EQ        0 R2 K3      ; if R2 ~= nil then PC := 35
   9 [-]: JMP       35           ; PC := 35
  10 [-]: NEWTABLE  R2 0 0       ; R2 := {}
- 11 [-]: LOADK     R3 1         ; R3 := 1.000000
+ 11 [-]: CONST     R3 1         ; R3 := 1.000000
  12 [-]: GETGLOBAL R4 K4        ; R4 := 0x6917998a
  13 [-]: LEN       R4 R4        ; R4 := # R4
- 14 [-]: LOADK     R5 1         ; R5 := 1.000000
+ 14 [-]: CONST     R5 1         ; R5 := 1.000000
  15 [-]: FORPREP   R3 21        ; R3 -= R5; PC := 21
  16 [-]: GETGLOBAL R7 K0        ; R7 := 0x64fb1586
  17 [-]: GETGLOBAL R8 K4        ; R8 := 0x6917998a
@@ -170,7 +170,7 @@
  13 [-]: LOADK     R11 K6       ; R11 := " is incomplete, challenge not done yet"
  14 [-]: CONCAT    R7 R7 R11    ; R7 := R7 .. R8 .. R9 .. R10 .. R11
  15 [-]: CALL      R6 2 1       ; R6(R7)
- 16 [-]: LOADBOOL  R6 0 0       ; R6 := false
+ 16 [-]: LOADKB    R6 0 0       ; R6 := false
  17 [-]: RETURN    R6 2         ; return R6
  18 [-]: TFORLOOP  R1 2         ; R4,R5 :=  R1(R2,R3); if R4 ~= nil then begin PC = 6; R3 := R4 end
  19 [-]: JMP       6            ; PC := 6
@@ -188,7 +188,7 @@
  31 [-]: LOADK     R9 K9        ; R9 := " - Challenge success"
  32 [-]: CONCAT    R7 R7 R9     ; R7 := R7 .. R8 .. R9
  33 [-]: CALL      R6 2 1       ; R6(R7)
- 34 [-]: LOADBOOL  R6 1 0       ; R6 := true
+ 34 [-]: LOADKB    R6 1 0       ; R6 := true
  35 [-]: RETURN    R6 2         ; return R6
  36 [-]: RETURN    R0 1         ; return 
 
@@ -239,7 +239,7 @@
  35 [-]: MOVE      R8 R6        ; R8 := R6
  36 [-]: TAILCALL  R7 2 0       ; R7,... := R7(R8)
  37 [-]: RETURN    R7 0         ; return R7,...
- 38 [-]: LOADBOOL  R7 0 0       ; R7 := false
+ 38 [-]: LOADKB    R7 0 0       ; R7 := false
  39 [-]: RETURN    R7 2         ; return R7
  40 [-]: RETURN    R0 1         ; return 
 
@@ -276,7 +276,7 @@
  21 [-]: MOVE      R6 R4        ; R6 := R4
  22 [-]: TAILCALL  R5 2 0       ; R5,... := R5(R6)
  23 [-]: RETURN    R5 0         ; return R5,...
- 24 [-]: LOADBOOL  R5 0 0       ; R5 := false
+ 24 [-]: LOADKB    R5 0 0       ; R5 := false
  25 [-]: RETURN    R5 2         ; return R5
  26 [-]: RETURN    R0 1         ; return 
 

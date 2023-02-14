@@ -70,7 +70,7 @@
   2 [-]: GETGLOBAL R2 K1        ; R2 := 0x7b998233
   3 [-]: GETUPVAL  R3 U0        ; R3 := U0
   4 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  5 [-]: NOT       R2 R2        ; R2 := not R2
+  5 [-]: NOT       R2 R2        ; R2 :=  R2
   6 [-]: CALL      R1 2 1       ; R1(R2)
   7 [-]: RETURN    R0 1         ; return 
 
@@ -119,8 +119,8 @@
  33 [-]: SELF      R4 R3 K6     ; R5 := R3; R4 := R3[0x62c81b76]
  34 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  35 [-]: SELF      R4 R4 K7     ; R5 := R4; R4 := R4[0xb61abfd2]
- 36 [-]: LOADK     R6 0         ; R6 := 0.000000
- 37 [-]: LOADK     R7 0         ; R7 := 0.000000
+ 36 [-]: CONST     R6 0         ; R6 := 0.000000
+ 37 [-]: CONST     R7 0         ; R7 := 0.000000
  38 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
  39 [-]: GETTABLE  R4 R4 K9     ; R4 := R4["mInfestationDate"]
  40 [-]: SELF      R5 R4 K10    ; R6 := R4; R5 := R4[0x56c01834]
@@ -147,7 +147,7 @@
  61 [-]: JMP       63           ; PC := 63
  62 [-]: RETURN    R0 1         ; return 
  63 [-]: SELF      R6 R5 K15    ; R7 := R5; R6 := R5[0x712e2346]
- 64 [-]: LOADBOOL  R8 1 0       ; R8 := true
+ 64 [-]: LOADKB    R8 1 0       ; R8 := true
  65 [-]: CALL      R6 3 1       ; R6(R7,R8)
  66 [-]: RETURN    R0 1         ; return 
 
@@ -167,34 +167,34 @@
   4 [-]: CALL      R3 2 2       ; R3 := R3(R4)
   5 [-]: TEST      R3 0         ; if not R3 then PC := 78
   6 [-]: JMP       78           ; PC := 78
-  7 [-]: LOADK     R3 -86400    ; R3 := -86400.000000
+  7 [-]: CONST     R3 -86400    ; R3 := -86400.000000
   8 [-]: GETGLOBAL R4 K2        ; R4 := 0x34291f5c
   9 [-]: GETTABLE  R4 R4 K3     ; R4 := R4[0x397b920f]
  10 [-]: MOVE      R5 R2        ; R5 := R2
  11 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  12 [-]: LT        1 R4 R3      ; if R4 < R3 then PC := 15
  13 [-]: JMP       15           ; PC := 15
- 14 [-]: LOADBOOL  R5 0 1       ; R5 := false; PC := 15
- 15 [-]: LOADBOOL  R5 1 0       ; R5 := true
+ 14 [-]: LOADKB    R5 0 1       ; R5 := false; PC := 15
+ 15 [-]: LOADKB    R5 1 0       ; R5 := true
  16 [-]: DIV       R6 R4 K4     ; R6 := R4 / 86400.000000
  17 [-]: GETGLOBAL R7 K5        ; R7 := 0x42dcc9f5
  18 [-]: ADD       R8 R6 K6     ; R8 := R6 + 1.000000
  19 [-]: DIV       R8 R8 K7     ; R8 := R8 / -6.000000
- 20 [-]: LOADK     R9 0         ; R9 := 0.000000
- 21 [-]: LOADK     R10 1        ; R10 := 1.000000
+ 20 [-]: CONST     R9 0         ; R9 := 0.000000
+ 21 [-]: CONST     R10 1        ; R10 := 1.000000
  22 [-]: CALL      R7 4 2       ; R7 := R7(R8,R9,R10)
  23 [-]: MUL       R7 R7 R7     ; R7 := R7 * R7
  24 [-]: GETGLOBAL R8 K8        ; R8 := 0x9bafffe3
- 25 [-]: LOADK     R9 0         ; R9 := 0.250000
+ 25 [-]: CONST     R9 0         ; R9 := 0.250000
  26 [-]: LOADK     R10 K9       ; R10 := 0.850000
  27 [-]: MOVE      R11 R7       ; R11 := R7
  28 [-]: CALL      R8 4 2       ; R8 := R8(R9,R10,R11)
- 29 [-]: LOADK     R9 7         ; R9 := 7.000000
+ 29 [-]: CONST     R9 7         ; R9 := 7.000000
  30 [-]: MUL       R10 R3 R9    ; R10 := R3 * R9
  31 [-]: LE        1 R4 R10     ; if R4 <= R10 then PC := 34
  32 [-]: JMP       34           ; PC := 34
- 33 [-]: LOADBOOL  R10 0 1      ; R10 := false; PC := 34
- 34 [-]: LOADBOOL  R10 1 0      ; R10 := true
+ 33 [-]: LOADKB    R10 0 1      ; R10 := false; PC := 34
+ 34 [-]: LOADKB    R10 1 0      ; R10 := true
  35 [-]: TEST      R5 0         ; if not R5 then PC := 78
  36 [-]: JMP       78           ; PC := 78
  37 [-]: SELF      R11 R1 K10   ; R12 := R1; R11 := R1[0x2d9ba74f]
@@ -203,9 +203,9 @@
  40 [-]: TEST      R10 1        ; if R10 then PC := 47
  41 [-]: JMP       47           ; PC := 47
  42 [-]: SELF      R11 R1 K11   ; R12 := R1; R11 := R1[0xcddc3abb]
- 43 [-]: LOADK     R13 1        ; R13 := 1.000000
+ 43 [-]: CONST     R13 1        ; R13 := 1.000000
  44 [-]: GETGLOBAL R14 K12      ; R14 := 0x45a763eb
- 45 [-]: LOADBOOL  R15 0 0      ; R15 := false
+ 45 [-]: LOADKB    R15 0 0      ; R15 := false
  46 [-]: CALL      R11 5 1      ; R11(R12,R13,R14,R15)
  47 [-]: GETGLOBAL R11 K13      ; R11 := 0x7b998233
  48 [-]: MOVE      R12 R0       ; R12 := R0
@@ -254,7 +254,7 @@
 ; Max Stack Size:  21
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0xcbd666e1
-  2 [-]: LOADK     R2 0         ; R2 := 0.000000
+  2 [-]: CONST     R2 0         ; R2 := 0.000000
   3 [-]: CALL      R1 2 1       ; R1(R2)
   4 [-]: SELF      R1 R0 K1     ; R2 := R0; R1 := R0[0x2b54251b]
   5 [-]: CALL      R1 2 2       ; R1 := R1(R2)
@@ -299,7 +299,7 @@
  44 [-]: RETURN    R0 1         ; return 
  45 [-]: GETGLOBAL R2 K6        ; R2 := 0x76ea806b
  46 [-]: SELF      R2 R2 K7     ; R3 := R2; R2 := R2[0x3f3ae64c]
- 47 [-]: LOADK     R4 0         ; R4 := 0.000000
+ 47 [-]: CONST     R4 0         ; R4 := 0.000000
  48 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
  49 [-]: GETGLOBAL R3 K2        ; R3 := 0x7b998233
  50 [-]: MOVE      R4 R2        ; R4 := R2
@@ -344,8 +344,8 @@
  89 [-]: SELF      R9 R3 K16    ; R10 := R3; R9 := R3[0x62c81b76]
  90 [-]: CALL      R9 2 2       ; R9 := R9(R10)
  91 [-]: SELF      R10 R9 K17   ; R11 := R9; R10 := R9[0xb61abfd2]
- 92 [-]: LOADK     R12 0        ; R12 := 0.000000
- 93 [-]: LOADK     R13 0        ; R13 := 0.000000
+ 92 [-]: CONST     R12 0        ; R12 := 0.000000
+ 93 [-]: CONST     R13 0        ; R13 := 0.000000
  94 [-]: CALL      R10 4 2      ; R10 := R10(R11,R12,R13)
  95 [-]: MOVE      R4 R10       ; R4 := R10
  96 [-]: GETTABLE  R10 R4 K19   ; R10 := R4["mInfestationDate"]
@@ -360,7 +360,7 @@
 105 [-]: TEST      R11 0        ; if not R11 then PC := 111
 106 [-]: JMP       111          ; PC := 111
 107 [-]: GETGLOBAL R11 K0       ; R11 := 0xcbd666e1
-108 [-]: LOADK     R12 0        ; R12 := 0.000000
+108 [-]: CONST     R12 0        ; R12 := 0.000000
 109 [-]: CALL      R11 2 1      ; R11(R12)
 110 [-]: JMP       102          ; PC := 102
 111 [-]: GETGLOBAL R11 K20      ; R11 := 0xbe190284
@@ -375,7 +375,7 @@
 120 [-]: TEST      R11 1        ; if R11 then PC := 180
 121 [-]: JMP       180          ; PC := 180
 122 [-]: LOADNIL   R11 R11      ; R11 := nil
-123 [-]: LOADK     R12 32       ; R12 := 32.000000
+123 [-]: CONST     R12 32       ; R12 := 32.000000
 124 [-]: SELF      R13 R1 K3    ; R14 := R1; R13 := R1[0xf2deaf69]
 125 [-]: GETGLOBAL R15 K22      ; R15 := gLotusNpcAvatarType
 126 [-]: CALL      R13 3 2      ; R13 := R13(R14,R15)
@@ -412,7 +412,7 @@
 157 [-]: JMP       159          ; PC := 159
 158 [-]: JMP       163          ; PC := 163
 159 [-]: GETGLOBAL R16 K0       ; R16 := 0xcbd666e1
-160 [-]: LOADK     R17 0        ; R17 := 0.500000
+160 [-]: CONST     R17 0        ; R17 := 0.500000
 161 [-]: CALL      R16 2 1      ; R16(R17)
 162 [-]: JMP       127          ; PC := 127
 163 [-]: GETGLOBAL R16 K2       ; R16 := 0x7b998233
@@ -423,8 +423,8 @@
 168 [-]: SELF      R16 R11 K16  ; R17 := R11; R16 := R11[0x62c81b76]
 169 [-]: CALL      R16 2 2      ; R16 := R16(R17)
 170 [-]: SELF      R17 R16 K17  ; R18 := R16; R17 := R16[0xb61abfd2]
-171 [-]: LOADK     R19 0        ; R19 := 0.000000
-172 [-]: LOADK     R20 0        ; R20 := 0.000000
+171 [-]: CONST     R19 0        ; R19 := 0.000000
+172 [-]: CONST     R20 0        ; R20 := 0.000000
 173 [-]: CALL      R17 4 2      ; R17 := R17(R18,R19,R20)
 174 [-]: GETTABLE  R10 R17 K19  ; R10 := R17["mInfestationDate"]
 175 [-]: GETUPVAL  R17 U1       ; R17 := U1

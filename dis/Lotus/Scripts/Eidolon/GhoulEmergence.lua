@@ -19,7 +19,7 @@
  10 [-]: GETGLOBAL R3 K0        ; R3 := 0x0469f296
  11 [-]: LOADK     R4 K4        ; R4 := "Tusk"
  12 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 13 [-]: LOADK     R4 20        ; R4 := 20.000000
+ 13 [-]: CONST     R4 20        ; R4 := 20.000000
  14 [-]: LOADK     R5 K5        ; R5 := 0.050000
  15 [-]: CLOSURE   R6 0         ; R6 := closure(Function #1)
  16 [-]: MOVE      R0 R0        ; R0 := R0
@@ -50,7 +50,7 @@
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x76ea806b
   2 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0x3f3ae64c]
-  3 [-]: LOADK     R2 0         ; R2 := 0.000000
+  3 [-]: CONST     R2 0         ; R2 := 0.000000
   4 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
   5 [-]: GETGLOBAL R1 K2        ; R1 := 0x7b998233
   6 [-]: MOVE      R2 R0        ; R2 := R0
@@ -67,9 +67,9 @@
  17 [-]: SELF      R2 R1 K4     ; R3 := R1; R2 := R1[0x69727e0b]
  18 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  19 [-]: GETTABLE  R2 R2 K5     ; R2 := R2["mGoals"]
- 20 [-]: LOADK     R3 1         ; R3 := 1.000000
+ 20 [-]: CONST     R3 1         ; R3 := 1.000000
  21 [-]: LEN       R4 R2        ; R4 := # R2
- 22 [-]: LOADK     R5 1         ; R5 := 1.000000
+ 22 [-]: CONST     R5 1         ; R5 := 1.000000
  23 [-]: FORPREP   R3 36        ; R3 -= R5; PC := 36
  24 [-]: GETTABLE  R7 R2 R6     ; R7 := R2[R6]
  25 [-]: GETTABLE  R7 R7 K6     ; R7 := R7["mTag"]
@@ -81,7 +81,7 @@
  31 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
  32 [-]: TEST      R8 0         ; if not R8 then PC := 36
  33 [-]: JMP       36           ; PC := 36
- 34 [-]: LOADBOOL  R8 1 0       ; R8 := true
+ 34 [-]: LOADKB    R8 1 0       ; R8 := true
  35 [-]: RETURN    R8 2         ; return R8
  36 [-]: FORLOOP   R3 24        ; R3 += R5; if R3 <= R4 then begin PC := 24; R6 := R3 end
  37 [-]: RETURN    R0 1         ; return 
@@ -122,7 +122,7 @@
   9 [-]: TEST      R0 0         ; if not R0 then PC := 15
  10 [-]: JMP       15           ; PC := 15
  11 [-]: GETGLOBAL R0 K3        ; R0 := 0xcbd666e1
- 12 [-]: LOADK     R1 0         ; R1 := 0.000000
+ 12 [-]: CONST     R1 0         ; R1 := 0.000000
  13 [-]: CALL      R0 2 1       ; R0(R1)
  14 [-]: JMP       1            ; PC := 1
  15 [-]: GETUPVAL  R0 U0        ; R0 := U0
@@ -170,7 +170,7 @@
   8 [-]: TEST      R0 1         ; if R0 then PC := 14
   9 [-]: JMP       14           ; PC := 14
  10 [-]: GETGLOBAL R0 K2        ; R0 := 0xcbd666e1
- 11 [-]: LOADK     R1 0         ; R1 := 0.000000
+ 11 [-]: CONST     R1 0         ; R1 := 0.000000
  12 [-]: CALL      R0 2 1       ; R0(R1)
  13 [-]: JMP       6            ; PC := 6
  14 [-]: GETGLOBAL R0 K0        ; R0 := _T
@@ -179,17 +179,17 @@
  17 [-]: TEST      R0 1         ; if R0 then PC := 26
  18 [-]: JMP       26           ; PC := 26
  19 [-]: GETGLOBAL R1 K2        ; R1 := 0xcbd666e1
- 20 [-]: LOADK     R2 0         ; R2 := 0.000000
+ 20 [-]: CONST     R2 0         ; R2 := 0.000000
  21 [-]: CALL      R1 2 1       ; R1(R2)
  22 [-]: GETGLOBAL R1 K0        ; R1 := _T
  23 [-]: GETTABLE  R1 R1 K1     ; R1 := R1["HubNpcs"]
  24 [-]: GETTABLE  R0 R1 K3     ; R0 := R1["/Lotus/Language/Npcs/Konzu"]
  25 [-]: JMP       17           ; PC := 17
  26 [-]: NEWTABLE  R1 0 0       ; R1 := {}
- 27 [-]: LOADK     R2 1         ; R2 := 1.000000
+ 27 [-]: CONST     R2 1         ; R2 := 1.000000
  28 [-]: GETGLOBAL R3 K4        ; R3 := 0xa4eaa12b
  29 [-]: LEN       R3 R3        ; R3 := # R3
- 30 [-]: LOADK     R4 1         ; R4 := 1.000000
+ 30 [-]: CONST     R4 1         ; R4 := 1.000000
  31 [-]: FORPREP   R2 40        ; R2 -= R4; PC := 40
  32 [-]: GETGLOBAL R6 K5        ; R6 := 0x33bdd652
  33 [-]: GETTABLE  R6 R6 K6     ; R6 := R6[0x23d5322f]
@@ -216,10 +216,10 @@
  54 [-]: TEST      R7 0         ; if not R7 then PC := 81
  55 [-]: JMP       81           ; PC := 81
  56 [-]: NEWTABLE  R8 0 0       ; R8 := {}
- 57 [-]: LOADK     R9 1         ; R9 := 1.000000
+ 57 [-]: CONST     R9 1         ; R9 := 1.000000
  58 [-]: GETGLOBAL R10 K4       ; R10 := 0xa4eaa12b
  59 [-]: LEN       R10 R10      ; R10 := # R10
- 60 [-]: LOADK     R11 1        ; R11 := 1.000000
+ 60 [-]: CONST     R11 1        ; R11 := 1.000000
  61 [-]: FORPREP   R9 70        ; R9 -= R11; PC := 70
  62 [-]: GETGLOBAL R13 K5       ; R13 := 0x33bdd652
  63 [-]: GETTABLE  R13 R13 K6   ; R13 := R13[0x23d5322f]

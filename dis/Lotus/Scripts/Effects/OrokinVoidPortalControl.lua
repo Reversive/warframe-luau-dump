@@ -52,12 +52,12 @@
  27 [-]: GETGLOBAL R8 K8        ; R8 := 0x3cd4bed2
  28 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
  29 [-]: GETGLOBAL R7 K9        ; R7 := 0xcbd666e1
- 30 [-]: LOADK     R8 0         ; R8 := 0.000000
+ 30 [-]: CONST     R8 0         ; R8 := 0.000000
  31 [-]: CALL      R7 2 1       ; R7(R8)
  32 [-]: SELF      R7 R4 K10    ; R8 := R4; R7 := R4[0x768274d6]
- 33 [-]: LOADBOOL  R9 1 0       ; R9 := true
+ 33 [-]: LOADKB    R9 1 0       ; R9 := true
  34 [-]: CALL      R7 3 1       ; R7(R8,R9)
- 35 [-]: LOADK     R7 0         ; R7 := 0.000000
+ 35 [-]: CONST     R7 0         ; R7 := 0.000000
  36 [-]: LOADNIL   R8 R10       ; R8 := R9 := R10 := nil
  37 [-]: GETGLOBAL R11 K11      ; R11 := 0x60130201
  38 [-]: CALL      R11 1 2      ; R11 := R11()
@@ -72,8 +72,8 @@
  47 [-]: SUB       R9 K14 R8    ; R9 := 1.000000 - R8
  48 [-]: GETGLOBAL R12 K15      ; R12 := 0x42dcc9f5
  49 [-]: MUL       R13 R8 K16   ; R13 := R8 * 3.000000
- 50 [-]: LOADK     R14 0        ; R14 := 0.000000
- 51 [-]: LOADK     R15 1        ; R15 := 1.000000
+ 50 [-]: CONST     R14 0        ; R14 := 0.000000
+ 51 [-]: CONST     R15 1        ; R15 := 1.000000
  52 [-]: CALL      R12 4 2      ; R12 := R12(R13,R14,R15)
  53 [-]: MOVE      R10 R12      ; R10 := R12
  54 [-]: GETGLOBAL R12 K18      ; R12 := 0x9bafffe3
@@ -105,7 +105,7 @@
  80 [-]: GETGLOBAL R14 K15      ; R14 := 0x42dcc9f5
  81 [-]: MOVE      R15 R9       ; R15 := R9
  82 [-]: LOADK     R16 K24      ; R16 := 0.030000
- 83 [-]: LOADK     R17 1        ; R17 := 1.000000
+ 83 [-]: CONST     R17 1        ; R17 := 1.000000
  84 [-]: CALL      R14 4 0      ; R14,... := R14(R15,R16,R17)
  85 [-]: CALL      R12 0 1      ; R12(R13,...)
  86 [-]: SELF      R12 R0 K23   ; R13 := R0; R12 := R0[0x66472bf5]
@@ -155,11 +155,11 @@
 130 [-]: CALL      R12 1 2      ; R12 := R12()
 131 [-]: ADD       R7 R7 R12    ; R7 := R7 + R12
 132 [-]: GETGLOBAL R12 K9       ; R12 := 0xcbd666e1
-133 [-]: LOADK     R13 0        ; R13 := 0.000000
+133 [-]: CONST     R13 0        ; R13 := 0.000000
 134 [-]: CALL      R12 2 1      ; R12(R13)
 135 [-]: JMP       39           ; PC := 39
 136 [-]: SELF      R12 R3 K10   ; R13 := R3; R12 := R3[0x768274d6]
-137 [-]: LOADBOOL  R14 0 0      ; R14 := false
+137 [-]: LOADKB    R14 0 0      ; R14 := false
 138 [-]: CALL      R12 3 1      ; R12(R13,R14)
 139 [-]: RETURN    R0 1         ; return 
 140 [-]: RETURN    R0 1         ; return 
@@ -203,9 +203,9 @@
  27 [-]: GETGLOBAL R8 K8        ; R8 := 0x3cd4bed2
  28 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
  29 [-]: SELF      R7 R3 K9     ; R8 := R3; R7 := R3[0x768274d6]
- 30 [-]: LOADBOOL  R9 1 0       ; R9 := true
+ 30 [-]: LOADKB    R9 1 0       ; R9 := true
  31 [-]: CALL      R7 3 1       ; R7(R8,R9)
- 32 [-]: LOADK     R7 0         ; R7 := 0.000000
+ 32 [-]: CONST     R7 0         ; R7 := 0.000000
  33 [-]: LOADNIL   R8 R9        ; R8 := R9 := nil
  34 [-]: GETGLOBAL R10 K10      ; R10 := 0x60130201
  35 [-]: CALL      R10 1 2      ; R10 := R10()
@@ -248,7 +248,7 @@
  72 [-]: GETGLOBAL R13 K21      ; R13 := 0x42dcc9f5
  73 [-]: MOVE      R14 R9       ; R14 := R9
  74 [-]: LOADK     R15 K22      ; R15 := 0.030000
- 75 [-]: LOADK     R16 1        ; R16 := 1.000000
+ 75 [-]: CONST     R16 1        ; R16 := 1.000000
  76 [-]: CALL      R13 4 0      ; R13,... := R13(R14,R15,R16)
  77 [-]: CALL      R11 0 1      ; R11(R12,...)
  78 [-]: SELF      R11 R0 K20   ; R12 := R0; R11 := R0[0x66472bf5]
@@ -298,11 +298,11 @@
 122 [-]: CALL      R11 1 2      ; R11 := R11()
 123 [-]: ADD       R7 R7 R11    ; R7 := R7 + R11
 124 [-]: GETGLOBAL R11 K34      ; R11 := 0xcbd666e1
-125 [-]: LOADK     R12 0        ; R12 := 0.000000
+125 [-]: CONST     R12 0        ; R12 := 0.000000
 126 [-]: CALL      R11 2 1      ; R11(R12)
 127 [-]: JMP       36           ; PC := 36
 128 [-]: SELF      R11 R4 K9    ; R12 := R4; R11 := R4[0x768274d6]
-129 [-]: LOADBOOL  R13 0 0      ; R13 := false
+129 [-]: LOADKB    R13 0 0      ; R13 := false
 130 [-]: CALL      R11 3 1      ; R11(R12,R13)
 131 [-]: RETURN    R0 1         ; return 
 132 [-]: RETURN    R0 1         ; return 

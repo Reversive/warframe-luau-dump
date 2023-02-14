@@ -8,7 +8,7 @@
 ; Max Stack Size:  5
 
   1 [-]: LOADK     R0 K0        ; R0 := "/Lotus/Language/G1Quests/VorsPrize3Objective"
-  2 [-]: LOADK     R1 22        ; R1 := 22.000000
+  2 [-]: CONST     R1 22        ; R1 := 22.000000
   3 [-]: GETGLOBAL R2 K1        ; R2 := 0x0469f296
   4 [-]: LOADK     R3 K2        ; R3 := "ExterminateMid"
   5 [-]: CALL      R2 2 2       ; R2 := R2(R3)
@@ -103,11 +103,11 @@
  28 [-]: SELF      R4 R1 K13    ; R5 := R1; R4 := R1[0x5a76630b]
  29 [-]: CALL      R4 2 1       ; R4(R5)
  30 [-]: GETGLOBAL R4 K14       ; R4 := 0xcbd666e1
- 31 [-]: LOADK     R5 0         ; R5 := 0.250000
+ 31 [-]: CONST     R5 0         ; R5 := 0.250000
  32 [-]: CALL      R4 2 1       ; R4(R5)
  33 [-]: SELF      R4 R1 K15    ; R5 := R1; R4 := R1[0x07a9131a]
  34 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 35 [-]: LOADK     R5 0         ; R5 := 0.000000
+ 35 [-]: CONST     R5 0         ; R5 := 0.000000
  36 [-]: EQ        0 R4 K8      ; if R4 ~= 0.000000 then PC := 52
  37 [-]: JMP       52           ; PC := 52
  38 [-]: SELF      R6 R1 K15    ; R7 := R1; R6 := R1[0x07a9131a]
@@ -118,10 +118,10 @@
  43 [-]: ADD       R5 R5 R6     ; R5 := R5 + R6
  44 [-]: LE        0 K17 R5     ; if 3.000000 > R5 then PC := 48
  45 [-]: JMP       48           ; PC := 48
- 46 [-]: LOADK     R4 600       ; R4 := 600.000000
+ 46 [-]: CONST     R4 600       ; R4 := 600.000000
  47 [-]: JMP       52           ; PC := 52
  48 [-]: GETGLOBAL R6 K14       ; R6 := 0xcbd666e1
- 49 [-]: LOADK     R7 0         ; R7 := 0.000000
+ 49 [-]: CONST     R7 0         ; R7 := 0.000000
  50 [-]: CALL      R6 2 1       ; R6(R7)
  51 [-]: JMP       36           ; PC := 36
  52 [-]: SELF      R6 R1 K18    ; R7 := R1; R6 := R1[0xe830ac3d]

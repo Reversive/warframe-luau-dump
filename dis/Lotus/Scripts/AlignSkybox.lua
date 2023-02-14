@@ -31,9 +31,9 @@
   6 [-]: SELF      R1 R1 K2     ; R2 := R1; R1 := R1[0xc7fcada9]
   7 [-]: GETGLOBAL R3 K3        ; R3 := 0xa2f10438
   8 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
-  9 [-]: LOADK     R2 1         ; R2 := 1.000000
+  9 [-]: CONST     R2 1         ; R2 := 1.000000
  10 [-]: LEN       R3 R1        ; R3 := # R1
- 11 [-]: LOADK     R4 1         ; R4 := 1.000000
+ 11 [-]: CONST     R4 1         ; R4 := 1.000000
  12 [-]: FORPREP   R2 36        ; R2 -= R4; PC := 36
  13 [-]: GETTABLE  R6 R1 R5     ; R6 := R1[R5]
  14 [-]: SELF      R7 R6 K4     ; R8 := R6; R7 := R6[0xf2deaf69]
@@ -50,7 +50,7 @@
  25 [-]: SELF      R7 R7 K9     ; R8 := R7; R7 := R7[0xcb3851b8]
  26 [-]: CALL      R7 2 2       ; R7 := R7(R8)
  27 [-]: GETTABLE  R8 R7 K10    ; R8 := R7["heading"]
- 28 [-]: UNM       R8 R8        ; R8 := ^ R8
+ 28 [-]: UNM       R8 R8        ; R8 :=  R8
  29 [-]: SETTABLE  R7 K10 R8    ; R7["heading"] := R8
  30 [-]: SETTABLE  R7 K11 K12   ; R7["pitch"] := 0.000000
  31 [-]: SETTABLE  R7 K13 K12   ; R7["bank"] := 0.000000
@@ -81,9 +81,9 @@
   8 [-]: SELF      R2 R2 K2     ; R3 := R2; R2 := R2[0xc7fcada9]
   9 [-]: GETGLOBAL R4 K3        ; R4 := 0xa2f10438
  10 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
- 11 [-]: LOADK     R3 1         ; R3 := 1.000000
+ 11 [-]: CONST     R3 1         ; R3 := 1.000000
  12 [-]: LEN       R4 R2        ; R4 := # R2
- 13 [-]: LOADK     R5 1         ; R5 := 1.000000
+ 13 [-]: CONST     R5 1         ; R5 := 1.000000
  14 [-]: FORPREP   R3 28        ; R3 -= R5; PC := 28
  15 [-]: GETTABLE  R7 R2 R6     ; R7 := R2[R6]
  16 [-]: SELF      R8 R7 K4     ; R9 := R7; R8 := R7[0xf2deaf69]

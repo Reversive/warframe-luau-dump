@@ -32,9 +32,9 @@
   2 [-]: CALL      R4 2 2       ; R4 := R4(R5)
   3 [-]: SELF      R4 R4 K1     ; R5 := R4; R4 := R4[0x01e6ede5]
   4 [-]: GETUPVAL  R6 U0        ; R6 := U0
-  5 [-]: LOADK     R7 25        ; R7 := 25.000000
-  6 [-]: LOADK     R8 6         ; R8 := 6.000000
-  7 [-]: LOADK     R9 0         ; R9 := 0.000000
+  5 [-]: CONST     R7 25        ; R7 := 25.000000
+  6 [-]: CONST     R8 6         ; R8 := 6.000000
+  7 [-]: CONST     R9 0         ; R9 := 0.000000
   8 [-]: GETGLOBAL R10 K3       ; R10 := 0xfbb3095e
   9 [-]: CALL      R4 7 1       ; R4(R5,R6,R7,R8,R9,R10)
  10 [-]: RETURN    R0 1         ; return 

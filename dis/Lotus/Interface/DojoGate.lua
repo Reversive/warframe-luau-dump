@@ -13,13 +13,13 @@
   4 [-]: GETGLOBAL R1 K0        ; R1 := 0x2d0fad09
   5 [-]: LOADK     R2 K2        ; R2 := "EE.Interface.Utilities"
   6 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  7 [-]: LOADBOOL  R2 0 0       ; R2 := false
+  7 [-]: LOADKB    R2 0 0       ; R2 := false
   8 [-]: LOADNIL   R3 R5        ; R3 := R4 := R5 := nil
-  9 [-]: LOADK     R6 0         ; R6 := 0.000000
- 10 [-]: LOADK     R7 0         ; R7 := 0.000000
- 11 [-]: LOADK     R8 0         ; R8 := 0.000000
- 12 [-]: LOADBOOL  R9 0 0       ; R9 := false
- 13 [-]: LOADBOOL  R10 0 0      ; R10 := false
+  9 [-]: CONST     R6 0         ; R6 := 0.000000
+ 10 [-]: CONST     R7 0         ; R7 := 0.000000
+ 11 [-]: CONST     R8 0         ; R8 := 0.000000
+ 12 [-]: LOADKB    R9 0 0       ; R9 := false
+ 13 [-]: LOADKB    R10 0 0      ; R10 := false
  14 [-]: NEWTABLE  R11 0 6      ; R11 := {}
  15 [-]: SETTABLE  R11 K3 K4    ; R11["AVAILABLE"] := 1.000000
  16 [-]: SETTABLE  R11 K5 K6    ; R11["COLLECTING_MATERIALS"] := 2.000000
@@ -28,7 +28,7 @@
  19 [-]: SETTABLE  R11 K11 K12  ; R11["BEING_DESTROYED"] := 5.000000
  20 [-]: SETTABLE  R11 K13 K14  ; R11["DEAD_END"] := 6.000000
  21 [-]: LOADNIL   R12 R12      ; R12 := nil
- 22 [-]: LOADK     R13 0        ; R13 := 0.000000
+ 22 [-]: CONST     R13 0        ; R13 := 0.000000
  23 [-]: CLOSURE   R14 0        ; R14 := closure(Function #1)
  24 [-]: MOVE      R0 R1        ; R0 := R1
  25 [-]: CLOSURE   R15 1        ; R15 := closure(Function #2)
@@ -106,7 +106,7 @@
   9 [-]: GETTABLE  R6 R1 K5     ; R6 := R1["r"]
  10 [-]: GETTABLE  R7 R1 K6     ; R7 := R1["g"]
  11 [-]: GETTABLE  R8 R1 K7     ; R8 := R1["b"]
- 12 [-]: LOADK     R9 1         ; R9 := 1.000000
+ 12 [-]: CONST     R9 1         ; R9 := 1.000000
  13 [-]: CALL      R2 8 1       ; R2(R3,R4,R5,R6,R7,R8,R9)
  14 [-]: RETURN    R0 1         ; return 
 
@@ -122,14 +122,14 @@
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0x42dcc9f5
   2 [-]: MOVE      R2 R0        ; R2 := R0
-  3 [-]: LOADK     R3 0         ; R3 := 0.000000
-  4 [-]: LOADK     R4 100       ; R4 := 100.000000
+  3 [-]: CONST     R3 0         ; R3 := 0.000000
+  4 [-]: CONST     R4 100       ; R4 := 100.000000
   5 [-]: CALL      R1 4 2       ; R1 := R1(R2,R3,R4)
   6 [-]: MOVE      R0 R1        ; R0 := R1
   7 [-]: GETGLOBAL R1 K1        ; R1 := 0xae91e43b
   8 [-]: SELF      R1 R1 K2     ; R2 := R1; R1 := R1[0x5f56eeab]
   9 [-]: LOADK     R3 K3        ; R3 := "Wings.Progress.Label.Tf"
- 10 [-]: LOADK     R4 29        ; R4 := 29.000000
+ 10 [-]: CONST     R4 29        ; R4 := 29.000000
  11 [-]: GETGLOBAL R5 K4        ; R5 := 0x5bced4c4
  12 [-]: GETTABLE  R5 R5 K5     ; R5 := R5[0x55f27c30]
  13 [-]: MOVE      R6 R0        ; R6 := R0
@@ -140,7 +140,7 @@
  18 [-]: GETGLOBAL R1 K1        ; R1 := 0xae91e43b
  19 [-]: SELF      R1 R1 K2     ; R2 := R1; R1 := R1[0x5f56eeab]
  20 [-]: LOADK     R3 K7        ; R3 := "Wings.Progress.Label.TfShadow"
- 21 [-]: LOADK     R4 29        ; R4 := 29.000000
+ 21 [-]: CONST     R4 29        ; R4 := 29.000000
  22 [-]: GETGLOBAL R5 K4        ; R5 := 0x5bced4c4
  23 [-]: GETTABLE  R5 R5 K5     ; R5 := R5[0x55f27c30]
  24 [-]: MOVE      R6 R0        ; R6 := R0
@@ -151,7 +151,7 @@
  29 [-]: GETGLOBAL R1 K1        ; R1 := 0xae91e43b
  30 [-]: SELF      R1 R1 K2     ; R2 := R1; R1 := R1[0x5f56eeab]
  31 [-]: LOADK     R3 K8        ; R3 := "Wings.ProgressShadow.Label.Tf"
- 32 [-]: LOADK     R4 29        ; R4 := 29.000000
+ 32 [-]: CONST     R4 29        ; R4 := 29.000000
  33 [-]: GETGLOBAL R5 K4        ; R5 := 0x5bced4c4
  34 [-]: GETTABLE  R5 R5 K5     ; R5 := R5[0x55f27c30]
  35 [-]: MOVE      R6 R0        ; R6 := R0
@@ -168,18 +168,18 @@
  46 [-]: LOADK     R5 K13       ; R5 := "Wings.Progress.Fill"
  47 [-]: LOADK     R6 K14       ; R6 := "AlphaTestThreshold"
  48 [-]: MOVE      R7 R2        ; R7 := R2
- 49 [-]: LOADK     R8 0         ; R8 := 0.000000
- 50 [-]: LOADK     R9 0         ; R9 := 0.000000
- 51 [-]: LOADK     R10 0        ; R10 := 0.000000
+ 49 [-]: CONST     R8 0         ; R8 := 0.000000
+ 50 [-]: CONST     R9 0         ; R9 := 0.000000
+ 51 [-]: CONST     R10 0        ; R10 := 0.000000
  52 [-]: CALL      R3 8 1       ; R3(R4,R5,R6,R7,R8,R9,R10)
  53 [-]: GETGLOBAL R3 K1        ; R3 := 0xae91e43b
  54 [-]: SELF      R3 R3 K12    ; R4 := R3; R3 := R3[0x91e13703]
  55 [-]: LOADK     R5 K15       ; R5 := "Wings.ProgressShadow.Fill"
  56 [-]: LOADK     R6 K14       ; R6 := "AlphaTestThreshold"
  57 [-]: MOVE      R7 R2        ; R7 := R2
- 58 [-]: LOADK     R8 0         ; R8 := 0.000000
- 59 [-]: LOADK     R9 0         ; R9 := 0.000000
- 60 [-]: LOADK     R10 0        ; R10 := 0.000000
+ 58 [-]: CONST     R8 0         ; R8 := 0.000000
+ 59 [-]: CONST     R9 0         ; R9 := 0.000000
+ 60 [-]: CONST     R10 0        ; R10 := 0.000000
  61 [-]: CALL      R3 8 1       ; R3(R4,R5,R6,R7,R8,R9,R10)
  62 [-]: RETURN    R0 1         ; return 
 
@@ -196,10 +196,10 @@
   1 [-]: SETUPVAL  R0 U0        ; U82 := R0
   2 [-]: LOADK     R1 K0        ; R1 := ""
   3 [-]: LOADK     R2 K1        ; R2 := 16777215.000000
-  4 [-]: LOADBOOL  R3 0 0       ; R3 := false
-  5 [-]: LOADBOOL  R4 0 0       ; R4 := false
-  6 [-]: LOADBOOL  R5 0 0       ; R5 := false
-  7 [-]: LOADK     R6 100       ; R6 := 100.000000
+  4 [-]: LOADKB    R3 0 0       ; R3 := false
+  5 [-]: LOADKB    R4 0 0       ; R4 := false
+  6 [-]: LOADKB    R5 0 0       ; R5 := false
+  7 [-]: CONST     R6 100       ; R6 := 100.000000
   8 [-]: GETUPVAL  R7 U0        ; R7 := U0
   9 [-]: GETUPVAL  R8 U1        ; R8 := U1
  10 [-]: GETTABLE  R8 R8 K2     ; R8 := R8["AVAILABLE"]
@@ -207,7 +207,7 @@
  12 [-]: JMP       17           ; PC := 17
  13 [-]: LOADK     R2 K3        ; R2 := 10680825.000000
  14 [-]: LOADK     R1 K4        ; R1 := "/Lotus/Language/Dojo/PortalStatusAvailable"
- 15 [-]: LOADBOOL  R3 1 0       ; R3 := true
+ 15 [-]: LOADKB    R3 1 0       ; R3 := true
  16 [-]: JMP       84           ; PC := 84
  17 [-]: GETUPVAL  R7 U0        ; R7 := U0
  18 [-]: GETUPVAL  R8 U1        ; R8 := U1
@@ -216,7 +216,7 @@
  21 [-]: JMP       26           ; PC := 26
  22 [-]: LOADK     R2 K6        ; R2 := 16767144.000000
  23 [-]: LOADK     R1 K7        ; R1 := "/Lotus/Language/Dojo/PortalStatusCollectingMaterials"
- 24 [-]: LOADBOOL  R4 1 0       ; R4 := true
+ 24 [-]: LOADKB    R4 1 0       ; R4 := true
  25 [-]: JMP       84           ; PC := 84
  26 [-]: GETUPVAL  R7 U0        ; R7 := U0
  27 [-]: GETUPVAL  R8 U1        ; R8 := U1
@@ -228,17 +228,17 @@
  33 [-]: GETGLOBAL R7 K11       ; R7 := 0xae91e43b
  34 [-]: SELF      R7 R7 K12    ; R8 := R7; R7 := R7[0xaade900e]
  35 [-]: LOADK     R9 K13       ; R9 := "Wings.Available"
- 36 [-]: LOADK     R10 11       ; R10 := 11.000000
- 37 [-]: LOADBOOL  R11 0 0      ; R11 := false
+ 36 [-]: CONST     R10 11       ; R10 := 11.000000
+ 37 [-]: LOADKB    R11 0 0      ; R11 := false
  38 [-]: CALL      R7 5 1       ; R7(R8,R9,R10,R11)
  39 [-]: GETGLOBAL R7 K11       ; R7 := 0xae91e43b
  40 [-]: SELF      R7 R7 K12    ; R8 := R7; R7 := R7[0xaade900e]
  41 [-]: LOADK     R9 K14       ; R9 := "Wings.AvailableShadow"
- 42 [-]: LOADK     R10 11       ; R10 := 11.000000
- 43 [-]: LOADBOOL  R11 0 0      ; R11 := false
+ 42 [-]: CONST     R10 11       ; R10 := 11.000000
+ 43 [-]: LOADKB    R11 0 0      ; R11 := false
  44 [-]: CALL      R7 5 1       ; R7(R8,R9,R10,R11)
- 45 [-]: LOADBOOL  R4 1 0       ; R4 := true
- 46 [-]: LOADBOOL  R5 1 0       ; R5 := true
+ 45 [-]: LOADKB    R4 1 0       ; R4 := true
+ 46 [-]: LOADKB    R5 1 0       ; R5 := true
  47 [-]: JMP       84           ; PC := 84
  48 [-]: GETUPVAL  R7 U0        ; R7 := U0
  49 [-]: GETUPVAL  R8 U1        ; R8 := U1
@@ -247,7 +247,7 @@
  52 [-]: JMP       57           ; PC := 57
  53 [-]: LOADK     R2 K3        ; R2 := 10680825.000000
  54 [-]: LOADK     R1 K16       ; R1 := "/Lotus/Language/Dojo/PortalStatusRoomOptions"
- 55 [-]: LOADK     R6 70        ; R6 := 70.000000
+ 55 [-]: CONST     R6 70        ; R6 := 70.000000
  56 [-]: JMP       84           ; PC := 84
  57 [-]: GETUPVAL  R7 U0        ; R7 := U0
  58 [-]: GETUPVAL  R8 U1        ; R8 := U1
@@ -256,9 +256,9 @@
  61 [-]: JMP       68           ; PC := 68
  62 [-]: LOADK     R2 K18       ; R2 := 16747411.000000
  63 [-]: LOADK     R1 K19       ; R1 := "/Lotus/Language/Dojo/PortalStatusBeingDestroyed"
- 64 [-]: LOADBOOL  R4 1 0       ; R4 := true
- 65 [-]: LOADBOOL  R5 1 0       ; R5 := true
- 66 [-]: LOADK     R6 70        ; R6 := 70.000000
+ 64 [-]: LOADKB    R4 1 0       ; R4 := true
+ 65 [-]: LOADKB    R5 1 0       ; R5 := true
+ 66 [-]: CONST     R6 70        ; R6 := 70.000000
  67 [-]: JMP       84           ; PC := 84
  68 [-]: GETUPVAL  R7 U0        ; R7 := U0
  69 [-]: GETUPVAL  R8 U1        ; R8 := U1
@@ -282,7 +282,7 @@
  87 [-]: GETGLOBAL R7 K11       ; R7 := 0xae91e43b
  88 [-]: SELF      R7 R7 K27    ; R8 := R7; R7 := R7[0x42b04007]
  89 [-]: MOVE      R9 R1        ; R9 := R1
- 90 [-]: LOADBOOL  R10 0 0      ; R10 := false
+ 90 [-]: LOADKB    R10 0 0      ; R10 := false
  91 [-]: CALL      R7 4 2       ; R7 := R7(R8,R9,R10)
  92 [-]: GETGLOBAL R8 K11       ; R8 := 0xae91e43b
  93 [-]: SELF      R8 R8 K28    ; R9 := R8; R8 := R8[0x20b98db3]
@@ -292,55 +292,55 @@
  97 [-]: GETGLOBAL R8 K11       ; R8 := 0xae91e43b
  98 [-]: SELF      R8 R8 K30    ; R9 := R8; R8 := R8[0x5f56eeab]
  99 [-]: LOADK     R10 K31      ; R10 := "Wings.LabelShadow"
-100 [-]: LOADK     R11 29       ; R11 := 29.000000
+100 [-]: CONST     R11 29       ; R11 := 29.000000
 101 [-]: MOVE      R12 R7       ; R12 := R7
 102 [-]: CALL      R8 5 1       ; R8(R9,R10,R11,R12)
 103 [-]: GETGLOBAL R8 K11       ; R8 := 0xae91e43b
 104 [-]: SELF      R8 R8 K12    ; R9 := R8; R8 := R8[0xaade900e]
 105 [-]: LOADK     R10 K13      ; R10 := "Wings.Available"
-106 [-]: LOADK     R11 11       ; R11 := 11.000000
+106 [-]: CONST     R11 11       ; R11 := 11.000000
 107 [-]: MOVE      R12 R3       ; R12 := R3
 108 [-]: CALL      R8 5 1       ; R8(R9,R10,R11,R12)
 109 [-]: GETGLOBAL R8 K11       ; R8 := 0xae91e43b
 110 [-]: SELF      R8 R8 K12    ; R9 := R8; R8 := R8[0xaade900e]
 111 [-]: LOADK     R10 K14      ; R10 := "Wings.AvailableShadow"
-112 [-]: LOADK     R11 11       ; R11 := 11.000000
+112 [-]: CONST     R11 11       ; R11 := 11.000000
 113 [-]: MOVE      R12 R3       ; R12 := R3
 114 [-]: CALL      R8 5 1       ; R8(R9,R10,R11,R12)
 115 [-]: GETGLOBAL R8 K11       ; R8 := 0xae91e43b
 116 [-]: SELF      R8 R8 K12    ; R9 := R8; R8 := R8[0xaade900e]
 117 [-]: LOADK     R10 K32      ; R10 := "Wings.Progress"
-118 [-]: LOADK     R11 11       ; R11 := 11.000000
+118 [-]: CONST     R11 11       ; R11 := 11.000000
 119 [-]: MOVE      R12 R4       ; R12 := R4
 120 [-]: CALL      R8 5 1       ; R8(R9,R10,R11,R12)
 121 [-]: GETGLOBAL R8 K11       ; R8 := 0xae91e43b
 122 [-]: SELF      R8 R8 K12    ; R9 := R8; R8 := R8[0xaade900e]
 123 [-]: LOADK     R10 K33      ; R10 := "Wings.ProgressShadow"
-124 [-]: LOADK     R11 11       ; R11 := 11.000000
+124 [-]: CONST     R11 11       ; R11 := 11.000000
 125 [-]: MOVE      R12 R4       ; R12 := R4
 126 [-]: CALL      R8 5 1       ; R8(R9,R10,R11,R12)
 127 [-]: GETGLOBAL R8 K11       ; R8 := 0xae91e43b
 128 [-]: SELF      R8 R8 K12    ; R9 := R8; R8 := R8[0xaade900e]
 129 [-]: LOADK     R10 K34      ; R10 := "Wings.TimeRemaining"
-130 [-]: LOADK     R11 11       ; R11 := 11.000000
+130 [-]: CONST     R11 11       ; R11 := 11.000000
 131 [-]: MOVE      R12 R5       ; R12 := R5
 132 [-]: CALL      R8 5 1       ; R8(R9,R10,R11,R12)
 133 [-]: GETGLOBAL R8 K11       ; R8 := 0xae91e43b
 134 [-]: SELF      R8 R8 K12    ; R9 := R8; R8 := R8[0xaade900e]
 135 [-]: LOADK     R10 K35      ; R10 := "Wings.TimeRemainingShadow"
-136 [-]: LOADK     R11 11       ; R11 := 11.000000
+136 [-]: CONST     R11 11       ; R11 := 11.000000
 137 [-]: MOVE      R12 R5       ; R12 := R5
 138 [-]: CALL      R8 5 1       ; R8(R9,R10,R11,R12)
 139 [-]: GETGLOBAL R8 K11       ; R8 := 0xae91e43b
 140 [-]: SELF      R8 R8 K36    ; R9 := R8; R8 := R8[0x67bc869f]
 141 [-]: LOADK     R10 K37      ; R10 := "_root"
-142 [-]: LOADK     R11 5        ; R11 := 5.000000
+142 [-]: CONST     R11 5        ; R11 := 5.000000
 143 [-]: MOVE      R12 R6       ; R12 := R6
 144 [-]: CALL      R8 5 1       ; R8(R9,R10,R11,R12)
 145 [-]: GETGLOBAL R8 K11       ; R8 := 0xae91e43b
 146 [-]: SELF      R8 R8 K36    ; R9 := R8; R8 := R8[0x67bc869f]
 147 [-]: LOADK     R10 K37      ; R10 := "_root"
-148 [-]: LOADK     R11 6        ; R11 := 6.000000
+148 [-]: CONST     R11 6        ; R11 := 6.000000
 149 [-]: MOVE      R12 R6       ; R12 := R6
 150 [-]: CALL      R8 5 1       ; R8(R9,R10,R11,R12)
 151 [-]: RETURN    R0 1         ; return 
@@ -366,7 +366,7 @@
   9 [-]: JMP       109          ; PC := 109
  10 [-]: GETGLOBAL R1 K4        ; R1 := 0x76ea806b
  11 [-]: SELF      R1 R1 K5     ; R2 := R1; R1 := R1[0x3f3ae64c]
- 12 [-]: LOADK     R3 0         ; R3 := 0.000000
+ 12 [-]: CONST     R3 0         ; R3 := 0.000000
  13 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
  14 [-]: LOADNIL   R2 R2        ; R2 := nil
  15 [-]: TEST      R1 0         ; if not R1 then PC := 20
@@ -399,9 +399,9 @@
  42 [-]: GETTABLE  R9 R9 K15    ; R9 := R9["mGameRules"]
  43 [-]: SELF      R9 R9 K16    ; R10 := R9; R9 := R9[0x3cbed8a9]
  44 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 45 [-]: LOADBOOL  R10 0 0      ; R10 := false
+ 45 [-]: LOADKB    R10 0 0      ; R10 := false
  46 [-]: CALL      R5 6 2       ; R5 := R5(R6,R7,R8,R9,R10)
- 47 [-]: SETTABLE  R4 K9 R5     ; R4["Needed"] := R5
+ 47 [-]: SETTABLE  R4 K9 R5     ; R4[0x601ac988] := R5
  48 [-]: SELF      R5 R0 K18    ; R6 := R0; R5 := R0[0x1e11a6d0]
  49 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  50 [-]: SETTABLE  R4 K17 R5    ; R4["Contributed"] := R5
@@ -411,16 +411,16 @@
  54 [-]: SETUPVAL  R5 U0        ; U82 := R0
  55 [-]: SELF      R5 R3 K19    ; R6 := R3; R5 := R3[0x024d3816]
  56 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 57 [-]: LOADK     R6 1         ; R6 := 1.000000
+ 57 [-]: CONST     R6 1         ; R6 := 1.000000
  58 [-]: LEN       R7 R5        ; R7 := # R5
- 59 [-]: LOADK     R8 1         ; R8 := 1.000000
+ 59 [-]: CONST     R8 1         ; R8 := 1.000000
  60 [-]: FORPREP   R6 97        ; R6 -= R8; PC := 97
- 61 [-]: LOADK     R10 0        ; R10 := 0.000000
- 62 [-]: LOADK     R11 0        ; R11 := 0.000000
- 63 [-]: LOADK     R12 1        ; R12 := 1.000000
+ 61 [-]: CONST     R10 0        ; R10 := 0.000000
+ 62 [-]: CONST     R11 0        ; R11 := 0.000000
+ 63 [-]: CONST     R12 1        ; R12 := 1.000000
  64 [-]: GETTABLE  R13 R0 K20   ; R13 := R0["miscItems"]
  65 [-]: LEN       R13 R13      ; R13 := # R13
- 66 [-]: LOADK     R14 1        ; R14 := 1.000000
+ 66 [-]: CONST     R14 1        ; R14 := 1.000000
  67 [-]: FORPREP   R12 79       ; R12 -= R14; PC := 79
  68 [-]: GETTABLE  R16 R0 K20   ; R16 := R0["miscItems"]
  69 [-]: GETTABLE  R16 R16 R15  ; R16 := R16[R15]
@@ -444,7 +444,7 @@
  87 [-]: GETTABLE  R20 R20 K15  ; R20 := R20["mGameRules"]
  88 [-]: SELF      R20 R20 K16  ; R21 := R20; R20 := R20[0x3cbed8a9]
  89 [-]: CALL      R20 2 2      ; R20 := R20(R21)
- 90 [-]: LOADBOOL  R21 0 0      ; R21 := false
+ 90 [-]: LOADKB    R21 0 0      ; R21 := false
  91 [-]: CALL      R16 6 2      ; R16 := R16(R17,R18,R19,R20,R21)
  92 [-]: MOVE      R10 R16      ; R10 := R16
  93 [-]: GETUPVAL  R16 U0       ; R16 := U0
@@ -476,7 +476,7 @@
 ; Max Stack Size:  2
 
   1 [-]: SETUPVAL  R0 U0        ; U82 := R0
-  2 [-]: LOADBOOL  R1 1 0       ; R1 := true
+  2 [-]: LOADKB    R1 1 0       ; R1 := true
   3 [-]: SETUPVAL  R1 U1        ; U82 := R1
   4 [-]: RETURN    R0 1         ; return 
 
@@ -493,12 +493,12 @@
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x25312c9b
   2 [-]: GETGLOBAL R1 K1        ; R1 := 0xae91e43b
   3 [-]: LOADK     R2 K2        ; R2 := "_root"
-  4 [-]: LOADK     R3 0         ; R3 := 0.000000
+  4 [-]: CONST     R3 0         ; R3 := 0.000000
   5 [-]: NEWTABLE  R4 1 0       ; R4 := {}
-  6 [-]: LOADK     R5 10        ; R5 := 10.000000
+  6 [-]: CONST     R5 10        ; R5 := 10.000000
   7 [-]: SETLIST   R4 1 1       ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 1
   8 [-]: NEWTABLE  R5 1 0       ; R5 := {}
-  9 [-]: LOADK     R6 100       ; R6 := 100.000000
+  9 [-]: CONST     R6 100       ; R6 := 100.000000
  10 [-]: SETLIST   R5 1 1       ; R5[(1-1)*FPF+i] := R(5+i), 1 <= i <= 1
  11 [-]: LOADK     R6 K4        ; R6 := 0.150000
  12 [-]: CALL      R0 7 1       ; R0(R1,R2,R3,R4,R5,R6)
@@ -526,10 +526,10 @@
  34 [-]: SELF      R1 R1 K13    ; R2 := R1; R1 := R1[0x9f4807a9]
  35 [-]: GETUPVAL  R3 U3        ; R3 := U3
  36 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
- 37 [-]: LOADBOOL  R2 0 0       ; R2 := false
- 38 [-]: LOADK     R3 1         ; R3 := 1.000000
+ 37 [-]: LOADKB    R2 0 0       ; R2 := false
+ 38 [-]: CONST     R3 1         ; R3 := 1.000000
  39 [-]: LEN       R4 R1        ; R4 := # R1
- 40 [-]: LOADK     R5 1         ; R5 := 1.000000
+ 40 [-]: CONST     R5 1         ; R5 := 1.000000
  41 [-]: FORPREP   R3 58        ; R3 -= R5; PC := 58
  42 [-]: GETGLOBAL R7 K14       ; R7 := 0x59462acb
  43 [-]: SELF      R7 R7 K15    ; R8 := R7; R7 := R7[0x56595420]
@@ -545,7 +545,7 @@
  53 [-]: CALL      R8 2 2       ; R8 := R8(R9)
  54 [-]: TEST      R8 0         ; if not R8 then PC := 58
  55 [-]: JMP       58           ; PC := 58
- 56 [-]: LOADBOOL  R2 1 0       ; R2 := true
+ 56 [-]: LOADKB    R2 1 0       ; R2 := true
  57 [-]: JMP       59           ; PC := 59
  58 [-]: FORLOOP   R3 42        ; R3 += R5; if R3 <= R4 then begin PC := 42; R6 := R3 end
  59 [-]: TEST      R2 1         ; if R2 then PC := 112
@@ -698,7 +698,7 @@
  19 [-]: GETTABLE  R0 R0 K5     ; R0 := R0["gWaitingForComponentRefresh"]
  20 [-]: TEST      R0 0         ; if not R0 then PC := 24
  21 [-]: JMP       24           ; PC := 24
- 22 [-]: LOADBOOL  R0 1 0       ; R0 := true
+ 22 [-]: LOADKB    R0 1 0       ; R0 := true
  23 [-]: SETUPVAL  R0 U1        ; U82 := R1
  24 [-]: GETGLOBAL R0 K0        ; R0 := 0x7b998233
  25 [-]: GETUPVAL  R1 U2        ; R1 := U2
@@ -709,7 +709,7 @@
  30 [-]: GETUPVAL  R0 U3        ; R0 := U3
  31 [-]: TEST      R0 0         ; if not R0 then PC := 37
  32 [-]: JMP       37           ; PC := 37
- 33 [-]: LOADBOOL  R0 0 0       ; R0 := false
+ 33 [-]: LOADKB    R0 0 0       ; R0 := false
  34 [-]: SETUPVAL  R0 U3        ; U82 := R3
  35 [-]: GETUPVAL  R0 U4        ; R0 := U4
  36 [-]: CALL      R0 1 1       ; R0()
@@ -729,7 +729,7 @@
  50 [-]: GETTABLE  R1 R1 K10    ; R1 := R1[0xb62ecfe0]
  51 [-]: GETUPVAL  R2 U7        ; R2 := U7
  52 [-]: SUB       R2 R2 R0     ; R2 := R2 - R0
- 53 [-]: LOADK     R3 0         ; R3 := 0.000000
+ 53 [-]: CONST     R3 0         ; R3 := 0.000000
  54 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
  55 [-]: SETUPVAL  R1 U7        ; U82 := R7
  56 [-]: GETUPVAL  R1 U8        ; R1 := U8
@@ -745,7 +745,7 @@
  66 [-]: GETUPVAL  R2 U9        ; R2 := U9
  67 [-]: GETGLOBAL R3 K9        ; R3 := 0x5bced4c4
  68 [-]: GETTABLE  R3 R3 K12    ; R3 := R3[0xac1b386a]
- 69 [-]: LOADK     R4 100       ; R4 := 100.000000
+ 69 [-]: CONST     R4 100       ; R4 := 100.000000
  70 [-]: GETUPVAL  R5 U7        ; R5 := U7
  71 [-]: GETUPVAL  R6 U10       ; R6 := U10
  72 [-]: DIV       R5 R5 R6     ; R5 := R5 / R6
@@ -757,7 +757,7 @@
  78 [-]: GETUPVAL  R2 U9        ; R2 := U9
  79 [-]: GETGLOBAL R3 K9        ; R3 := 0x5bced4c4
  80 [-]: GETTABLE  R3 R3 K12    ; R3 := R3[0xac1b386a]
- 81 [-]: LOADK     R4 100       ; R4 := 100.000000
+ 81 [-]: CONST     R4 100       ; R4 := 100.000000
  82 [-]: GETUPVAL  R5 U7        ; R5 := U7
  83 [-]: GETUPVAL  R6 U11       ; R6 := U11
  84 [-]: DIV       R5 R5 R6     ; R5 := R5 / R6
@@ -767,13 +767,13 @@
  88 [-]: GETGLOBAL R2 K1        ; R2 := 0xae91e43b
  89 [-]: SELF      R2 R2 K14    ; R3 := R2; R2 := R2[0x5f56eeab]
  90 [-]: LOADK     R4 K15       ; R4 := "Wings.TimeRemaining"
- 91 [-]: LOADK     R5 29        ; R5 := 29.000000
+ 91 [-]: CONST     R5 29        ; R5 := 29.000000
  92 [-]: MOVE      R6 R1        ; R6 := R1
  93 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
  94 [-]: GETGLOBAL R2 K1        ; R2 := 0xae91e43b
  95 [-]: SELF      R2 R2 K14    ; R3 := R2; R2 := R2[0x5f56eeab]
  96 [-]: LOADK     R4 K16       ; R4 := "Wings.TimeRemainingShadow"
- 97 [-]: LOADK     R5 29        ; R5 := 29.000000
+ 97 [-]: CONST     R5 29        ; R5 := 29.000000
  98 [-]: MOVE      R6 R1        ; R6 := R1
  99 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
 100 [-]: RETURN    R0 1         ; return 
@@ -791,15 +791,15 @@
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x25312c9b
   2 [-]: GETGLOBAL R1 K1        ; R1 := 0xae91e43b
   3 [-]: LOADK     R2 K2        ; R2 := "_root"
-  4 [-]: LOADK     R3 0         ; R3 := 0.000000
+  4 [-]: CONST     R3 0         ; R3 := 0.000000
   5 [-]: NEWTABLE  R4 1 0       ; R4 := {}
-  6 [-]: LOADK     R5 10        ; R5 := 10.000000
+  6 [-]: CONST     R5 10        ; R5 := 10.000000
   7 [-]: SETLIST   R4 1 1       ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 1
   8 [-]: NEWTABLE  R5 1 0       ; R5 := {}
-  9 [-]: LOADK     R6 0         ; R6 := 0.000000
+  9 [-]: CONST     R6 0         ; R6 := 0.000000
  10 [-]: SETLIST   R5 1 1       ; R5[(1-1)*FPF+i] := R(5+i), 1 <= i <= 1
  11 [-]: LOADK     R6 K4        ; R6 := 0.150000
- 12 [-]: LOADK     R7 0         ; R7 := 0.000000
+ 12 [-]: CONST     R7 0         ; R7 := 0.000000
  13 [-]: CLOSURE   R8 0         ; R8 := closure(Function #9.1)
  14 [-]: CALL      R0 9 1       ; R0(R1,R2,R3,R4,R5,R6,R7,R8)
  15 [-]: RETURN    R0 1         ; return 
@@ -852,71 +852,71 @@
   7 [-]: GETUPVAL  R0 U0        ; R0 := U0
   8 [-]: CALL      R0 1 1       ; R0()
   9 [-]: RETURN    R0 1         ; return 
- 10 [-]: LOADK     R0 -450      ; R0 := -450.000000
+ 10 [-]: CONST     R0 -450      ; R0 := -450.000000
  11 [-]: GETGLOBAL R1 K3        ; R1 := 0xae91e43b
  12 [-]: SELF      R1 R1 K4     ; R2 := R1; R1 := R1[0x67bc869f]
  13 [-]: LOADK     R3 K5        ; R3 := "Wings.Glyph"
- 14 [-]: LOADK     R4 4         ; R4 := 4.000000
+ 14 [-]: CONST     R4 4         ; R4 := 4.000000
  15 [-]: MOVE      R5 R0        ; R5 := R0
  16 [-]: CALL      R1 5 1       ; R1(R2,R3,R4,R5)
  17 [-]: GETGLOBAL R1 K3        ; R1 := 0xae91e43b
  18 [-]: SELF      R1 R1 K4     ; R2 := R1; R1 := R1[0x67bc869f]
  19 [-]: LOADK     R3 K6        ; R3 := "Wings.Label"
- 20 [-]: LOADK     R4 4         ; R4 := 4.000000
+ 20 [-]: CONST     R4 4         ; R4 := 4.000000
  21 [-]: MOVE      R5 R0        ; R5 := R0
  22 [-]: CALL      R1 5 1       ; R1(R2,R3,R4,R5)
  23 [-]: GETGLOBAL R1 K3        ; R1 := 0xae91e43b
  24 [-]: SELF      R1 R1 K4     ; R2 := R1; R1 := R1[0x67bc869f]
  25 [-]: LOADK     R3 K7        ; R3 := "Wings.LabelShadow"
- 26 [-]: LOADK     R4 4         ; R4 := 4.000000
+ 26 [-]: CONST     R4 4         ; R4 := 4.000000
  27 [-]: ADD       R5 R0 K8     ; R5 := R0 + 50.000000
  28 [-]: CALL      R1 5 1       ; R1(R2,R3,R4,R5)
  29 [-]: GETGLOBAL R1 K3        ; R1 := 0xae91e43b
  30 [-]: SELF      R1 R1 K4     ; R2 := R1; R1 := R1[0x67bc869f]
  31 [-]: LOADK     R3 K9        ; R3 := "Wings.Available"
- 32 [-]: LOADK     R4 4         ; R4 := 4.000000
+ 32 [-]: CONST     R4 4         ; R4 := 4.000000
  33 [-]: MOVE      R5 R0        ; R5 := R0
  34 [-]: CALL      R1 5 1       ; R1(R2,R3,R4,R5)
  35 [-]: GETGLOBAL R1 K3        ; R1 := 0xae91e43b
  36 [-]: SELF      R1 R1 K4     ; R2 := R1; R1 := R1[0x67bc869f]
  37 [-]: LOADK     R3 K10       ; R3 := "Wings.Progress"
- 38 [-]: LOADK     R4 4         ; R4 := 4.000000
+ 38 [-]: CONST     R4 4         ; R4 := 4.000000
  39 [-]: SUB       R5 R0 K11    ; R5 := R0 - 600.000000
  40 [-]: CALL      R1 5 1       ; R1(R2,R3,R4,R5)
  41 [-]: GETGLOBAL R1 K3        ; R1 := 0xae91e43b
  42 [-]: SELF      R1 R1 K4     ; R2 := R1; R1 := R1[0x67bc869f]
  43 [-]: LOADK     R3 K12       ; R3 := "Wings.ProgressShadow"
- 44 [-]: LOADK     R4 4         ; R4 := 4.000000
+ 44 [-]: CONST     R4 4         ; R4 := 4.000000
  45 [-]: SUB       R5 R0 K13    ; R5 := R0 - 100.000000
  46 [-]: CALL      R1 5 1       ; R1(R2,R3,R4,R5)
  47 [-]: GETGLOBAL R1 K3        ; R1 := 0xae91e43b
  48 [-]: SELF      R1 R1 K4     ; R2 := R1; R1 := R1[0x67bc869f]
  49 [-]: LOADK     R3 K14       ; R3 := "Wings.NouveauCircle"
- 50 [-]: LOADK     R4 4         ; R4 := 4.000000
+ 50 [-]: CONST     R4 4         ; R4 := 4.000000
  51 [-]: SUB       R5 R0 K15    ; R5 := R0 - 400.000000
  52 [-]: CALL      R1 5 1       ; R1(R2,R3,R4,R5)
  53 [-]: GETGLOBAL R1 K3        ; R1 := 0xae91e43b
  54 [-]: SELF      R1 R1 K4     ; R2 := R1; R1 := R1[0x67bc869f]
  55 [-]: LOADK     R3 K16       ; R3 := "Wings.NouveauCircleBacking"
- 56 [-]: LOADK     R4 4         ; R4 := 4.000000
+ 56 [-]: CONST     R4 4         ; R4 := 4.000000
  57 [-]: MOVE      R5 R0        ; R5 := R0
  58 [-]: CALL      R1 5 1       ; R1(R2,R3,R4,R5)
  59 [-]: GETGLOBAL R1 K3        ; R1 := 0xae91e43b
  60 [-]: SELF      R1 R1 K4     ; R2 := R1; R1 := R1[0x67bc869f]
  61 [-]: LOADK     R3 K17       ; R3 := "Wings.DojoGateUnderline"
- 62 [-]: LOADK     R4 4         ; R4 := 4.000000
+ 62 [-]: CONST     R4 4         ; R4 := 4.000000
  63 [-]: SUB       R5 R0 K18    ; R5 := R0 - 260.000000
  64 [-]: CALL      R1 5 1       ; R1(R2,R3,R4,R5)
  65 [-]: GETGLOBAL R1 K3        ; R1 := 0xae91e43b
  66 [-]: SELF      R1 R1 K4     ; R2 := R1; R1 := R1[0x67bc869f]
  67 [-]: LOADK     R3 K19       ; R3 := "Wings.TimeRemaining"
- 68 [-]: LOADK     R4 4         ; R4 := 4.000000
+ 68 [-]: CONST     R4 4         ; R4 := 4.000000
  69 [-]: MOVE      R5 R0        ; R5 := R0
  70 [-]: CALL      R1 5 1       ; R1(R2,R3,R4,R5)
  71 [-]: GETGLOBAL R1 K3        ; R1 := 0xae91e43b
  72 [-]: SELF      R1 R1 K4     ; R2 := R1; R1 := R1[0x67bc869f]
  73 [-]: LOADK     R3 K20       ; R3 := "Wings.TimeRemainingShadow"
- 74 [-]: LOADK     R4 4         ; R4 := 4.000000
+ 74 [-]: CONST     R4 4         ; R4 := 4.000000
  75 [-]: ADD       R5 R0 K8     ; R5 := R0 + 50.000000
  76 [-]: CALL      R1 5 1       ; R1(R2,R3,R4,R5)
  77 [-]: GETGLOBAL R1 K3        ; R1 := 0xae91e43b
@@ -963,28 +963,28 @@
 118 [-]: SELF      R1 R1 K29    ; R2 := R1; R1 := R1[0x91e13703]
 119 [-]: LOADK     R3 K26       ; R3 := "Wings.Progress.Fill"
 120 [-]: LOADK     R4 K30       ; R4 := "AlphaTestThreshold"
-121 [-]: LOADK     R5 0         ; R5 := 0.000000
-122 [-]: LOADK     R6 0         ; R6 := 0.000000
-123 [-]: LOADK     R7 0         ; R7 := 0.000000
-124 [-]: LOADK     R8 0         ; R8 := 0.000000
+121 [-]: CONST     R5 0         ; R5 := 0.000000
+122 [-]: CONST     R6 0         ; R6 := 0.000000
+123 [-]: CONST     R7 0         ; R7 := 0.000000
+124 [-]: CONST     R8 0         ; R8 := 0.000000
 125 [-]: CALL      R1 8 1       ; R1(R2,R3,R4,R5,R6,R7,R8)
 126 [-]: GETGLOBAL R1 K3        ; R1 := 0xae91e43b
 127 [-]: SELF      R1 R1 K29    ; R2 := R1; R1 := R1[0x91e13703]
 128 [-]: LOADK     R3 K28       ; R3 := "Wings.ProgressShadow.Fill"
 129 [-]: LOADK     R4 K30       ; R4 := "AlphaTestThreshold"
-130 [-]: LOADK     R5 0         ; R5 := 0.000000
-131 [-]: LOADK     R6 0         ; R6 := 0.000000
-132 [-]: LOADK     R7 0         ; R7 := 0.000000
-133 [-]: LOADK     R8 0         ; R8 := 0.000000
+130 [-]: CONST     R5 0         ; R5 := 0.000000
+131 [-]: CONST     R6 0         ; R6 := 0.000000
+132 [-]: CONST     R7 0         ; R7 := 0.000000
+133 [-]: CONST     R8 0         ; R8 := 0.000000
 134 [-]: CALL      R1 8 1       ; R1(R2,R3,R4,R5,R6,R7,R8)
 135 [-]: GETGLOBAL R1 K3        ; R1 := 0xae91e43b
 136 [-]: SELF      R1 R1 K4     ; R2 := R1; R1 := R1[0x67bc869f]
 137 [-]: LOADK     R3 K31       ; R3 := "_root"
-138 [-]: LOADK     R4 10        ; R4 := 10.000000
-139 [-]: LOADK     R5 0         ; R5 := 0.000000
+138 [-]: CONST     R4 10        ; R4 := 10.000000
+139 [-]: CONST     R5 0         ; R5 := 0.000000
 140 [-]: CALL      R1 5 1       ; R1(R2,R3,R4,R5)
 141 [-]: GETUPVAL  R1 U1        ; R1 := U1
-142 [-]: LOADK     R2 0         ; R2 := 0.000000
+142 [-]: CONST     R2 0         ; R2 := 0.000000
 143 [-]: CALL      R1 2 1       ; R1(R2)
 144 [-]: GETGLOBAL R1 K1        ; R1 := _T
 145 [-]: GETTABLE  R1 R1 K2     ; R1 := R1["DojoMgr"]
@@ -1007,7 +1007,7 @@
 162 [-]: GETUPVAL  R3 U2        ; R3 := U2
 163 [-]: GETTABLE  R3 R3 K34    ; R3 := R3["id"]
 164 [-]: GETUPVAL  R4 U4        ; R4 := U4
-165 [-]: LOADBOOL  R5 1 0       ; R5 := true
+165 [-]: LOADKB    R5 1 0       ; R5 := true
 166 [-]: CALL      R1 5 1       ; R1(R2,R3,R4,R5)
 167 [-]: JMP       175          ; PC := 175
 168 [-]: GETUPVAL  R1 U4        ; R1 := U4
@@ -1017,7 +1017,7 @@
 172 [-]: CALL      R1 0 1       ; R1(R2,...)
 173 [-]: LOADK     R1 K35       ; R1 := ""
 174 [-]: SETUPVAL  R1 U3        ; U82 := R3
-175 [-]: LOADBOOL  R1 1 0       ; R1 := true
+175 [-]: LOADKB    R1 1 0       ; R1 := true
 176 [-]: SETUPVAL  R1 U5        ; U82 := R5
 177 [-]: RETURN    R0 1         ; return 
 

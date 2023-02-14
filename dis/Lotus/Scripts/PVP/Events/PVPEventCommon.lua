@@ -15,8 +15,8 @@
   6 [-]: GETGLOBAL R0 K3        ; R0 := 0x2d0fad09
   7 [-]: LOADK     R1 K4        ; R1 := "Lotus.Scripts.PVP.PVPHelper"
   8 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  9 [-]: LOADK     R1 30        ; R1 := 30.000000
- 10 [-]: LOADK     R2 20        ; R2 := 20.000000
+  9 [-]: CONST     R1 30        ; R1 := 30.000000
+ 10 [-]: CONST     R2 20        ; R2 := 20.000000
  11 [-]: GETTABLE  R3 R0 K6     ; R3 := R0[0xc96d0ce6]
  12 [-]: LOADNIL   R4 R4        ; R4 := nil
  13 [-]: CALL      R3 2 2       ; R3 := R3(R4)
@@ -195,7 +195,7 @@
  51 [-]: SELF      R4 R4 K13    ; R5 := R4; R4 := R4[0x6b9eebac]
  52 [-]: LOADK     R6 K14       ; R6 := ""
  53 [-]: GETTABLE  R7 R0 K15    ; R7 := R0["introTransRes"]
- 54 [-]: LOADBOOL  R8 1 0       ; R8 := true
+ 54 [-]: LOADKB    R8 1 0       ; R8 := true
  55 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
  56 [-]: SELF      R4 R0 K10    ; R5 := R0; R4 := R0[0xd5a1ad5f]
  57 [-]: CALL      R4 2 2       ; R4 := R4(R5)
@@ -241,14 +241,14 @@
  97 [-]: EQ        0 R3 R4      ; if R3 ~= R4 then PC := 103
  98 [-]: JMP       103          ; PC := 103
  99 [-]: SELF      R4 R0 K20    ; R5 := R0; R4 := R0[0xc40da7b8]
-100 [-]: LOADBOOL  R6 1 0       ; R6 := true
+100 [-]: LOADKB    R6 1 0       ; R6 := true
 101 [-]: CALL      R4 3 1       ; R4(R5,R6)
 102 [-]: JMP       109          ; PC := 109
 103 [-]: GETTABLE  R4 R0 K18    ; R4 := R0["PVPSTATE_FINISHED"]
 104 [-]: EQ        0 R3 R4      ; if R3 ~= R4 then PC := 109
 105 [-]: JMP       109          ; PC := 109
 106 [-]: SELF      R4 R0 K20    ; R5 := R0; R4 := R0[0xc40da7b8]
-107 [-]: LOADBOOL  R6 0 0       ; R6 := false
+107 [-]: LOADKB    R6 0 0       ; R6 := false
 108 [-]: CALL      R4 3 1       ; R4(R5,R6)
 109 [-]: RETURN    R0 1         ; return 
 
@@ -290,7 +290,7 @@
  26 [-]: GETTABLE  R5 R5 K11    ; R5 := R5[0x8ee923fe]
  27 [-]: LOADK     R6 K12       ; R6 := "PvpEventTimer"
  28 [-]: GETTABLE  R7 R4 K13    ; R7 := R4["HT_TIMER"]
- 29 [-]: LOADK     R8 0         ; R8 := 0.250000
+ 29 [-]: CONST     R8 0         ; R8 := 0.250000
  30 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
  31 [-]: GETTABLE  R6 R5 K14    ; R6 := R5[0xa9136b2f]
  32 [-]: MOVE      R7 R0        ; R7 := R0
@@ -298,15 +298,15 @@
  34 [-]: SELF      R7 R7 K15    ; R8 := R7; R7 := R7[0x39406d2f]
  35 [-]: CALL      R7 2 2       ; R7 := R7(R8)
  36 [-]: SUB       R7 R7 R3     ; R7 := R7 - R3
- 37 [-]: LOADBOOL  R8 0 0       ; R8 := false
- 38 [-]: LOADBOOL  R9 1 0       ; R9 := true
+ 37 [-]: LOADKB    R8 0 0       ; R8 := false
+ 38 [-]: LOADKB    R9 1 0       ; R9 := true
  39 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
  40 [-]: SELF      R6 R0 K6     ; R7 := R0; R6 := R0[0xd5a1ad5f]
  41 [-]: CALL      R6 2 2       ; R6 := R6(R7)
  42 [-]: SELF      R6 R6 K16    ; R7 := R6; R6 := R6[0x6b9eebac]
  43 [-]: LOADK     R8 K17       ; R8 := ""
  44 [-]: GETTABLE  R9 R0 K18    ; R9 := R0["startTransRes"]
- 45 [-]: LOADBOOL  R10 1 0      ; R10 := true
+ 45 [-]: LOADKB    R10 1 0      ; R10 := true
  46 [-]: CALL      R6 5 1       ; R6(R7,R8,R9,R10)
  47 [-]: LOADK     R6 K19       ; R6 := "<p><font color=\"#FFFFFF\"> "
  48 [-]: LOADK     R7 K20       ; R7 := "$$"
@@ -334,16 +334,16 @@
  70 [-]: LOADK     R13 K28      ; R13 := "OnEventActivateChange fix up mode"
  71 [-]: CALL      R12 2 1      ; R12(R13)
  72 [-]: SELF      R12 R2 K29   ; R13 := R2; R12 := R2[0x7d73251e]
- 73 [-]: NOT       R14 R1       ; R14 := not R1
+ 73 [-]: NOT       R14 R1       ; R14 :=  R1
  74 [-]: CALL      R12 3 1      ; R12(R13,R14)
  75 [-]: SELF      R12 R0 K6    ; R13 := R0; R12 := R0[0xd5a1ad5f]
  76 [-]: CALL      R12 2 2      ; R12 := R12(R13)
- 77 [-]: NOT       R13 R1       ; R13 := not R1
+ 77 [-]: NOT       R13 R1       ; R13 :=  R1
  78 [-]: SETTABLE  R12 K30 R13  ; R12["defaultHUDHandling"] := R13
  79 [-]: SELF      R12 R0 K6    ; R13 := R0; R12 := R0[0xd5a1ad5f]
  80 [-]: CALL      R12 2 2      ; R12 := R12(R13)
  81 [-]: SELF      R12 R12 K31  ; R13 := R12; R12 := R12[0x2827e3ee]
- 82 [-]: NOT       R14 R1       ; R14 := not R1
+ 82 [-]: NOT       R14 R1       ; R14 :=  R1
  83 [-]: CALL      R12 3 1      ; R12(R13,R14)
  84 [-]: RETURN    R0 1         ; return 
 

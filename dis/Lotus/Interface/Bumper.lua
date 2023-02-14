@@ -10,7 +10,7 @@
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x2d0fad09
   2 [-]: LOADK     R1 K1        ; R1 := "EE.Interface.Utilities"
   3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: LOADK     R1 0         ; R1 := 0.000000
+  4 [-]: CONST     R1 0         ; R1 := 0.000000
   5 [-]: CLOSURE   R2 0         ; R2 := closure(Function #1)
   6 [-]: CLOSURE   R3 1         ; R3 := closure(Function #2)
   7 [-]: MOVE      R0 R0        ; R0 := R0
@@ -78,7 +78,7 @@
  21 [-]: JMP       26           ; PC := 26
  22 [-]: GETGLOBAL R2 K7        ; R2 := 0xae91e43b
  23 [-]: SELF      R2 R2 K8     ; R3 := R2; R2 := R2[0xc6a10ab1]
- 24 [-]: LOADK     R4 0         ; R4 := 0.000000
+ 24 [-]: CONST     R4 0         ; R4 := 0.000000
  25 [-]: CALL      R2 3 1       ; R2(R3,R4)
  26 [-]: GETUPVAL  R2 U1        ; R2 := U1
  27 [-]: ADD       R2 R2 K9     ; R2 := R2 + 1.000000
@@ -120,23 +120,23 @@
  63 [-]: DIV       R7 K18 R7    ; R7 := 720.000000 / R7
  64 [-]: LT        0 R7 R6      ; if R7 >= R6 then PC := 70
  65 [-]: JMP       70           ; PC := 70
- 66 [-]: LOADK     R2 1280      ; R2 := 1280.000000
+ 66 [-]: CONST     R2 1280      ; R2 := 1280.000000
  67 [-]: GETTABLE  R8 R5 K16    ; R8 := R5["y"]
  68 [-]: MUL       R3 R8 R6     ; R3 := R8 * R6
  69 [-]: JMP       73           ; PC := 73
  70 [-]: GETTABLE  R8 R5 K15    ; R8 := R5["x"]
  71 [-]: MUL       R2 R8 R7     ; R2 := R8 * R7
- 72 [-]: LOADK     R3 720       ; R3 := 720.000000
+ 72 [-]: CONST     R3 720       ; R3 := 720.000000
  73 [-]: GETGLOBAL R8 K7        ; R8 := 0xae91e43b
  74 [-]: SELF      R8 R8 K19    ; R9 := R8; R8 := R8[0x67bc869f]
  75 [-]: LOADK     R10 K12      ; R10 := "Image"
- 76 [-]: LOADK     R11 12       ; R11 := 12.000000
+ 76 [-]: CONST     R11 12       ; R11 := 12.000000
  77 [-]: MOVE      R12 R2       ; R12 := R2
  78 [-]: CALL      R8 5 1       ; R8(R9,R10,R11,R12)
  79 [-]: GETGLOBAL R8 K7        ; R8 := 0xae91e43b
  80 [-]: SELF      R8 R8 K19    ; R9 := R8; R8 := R8[0x67bc869f]
  81 [-]: LOADK     R10 K12      ; R10 := "Image"
- 82 [-]: LOADK     R11 13       ; R11 := 13.000000
+ 82 [-]: CONST     R11 13       ; R11 := 13.000000
  83 [-]: MOVE      R12 R3       ; R12 := R3
  84 [-]: CALL      R8 5 1       ; R8(R9,R10,R11,R12)
  85 [-]: GETGLOBAL R8 K20       ; R8 := 0x111b4287
@@ -144,19 +144,19 @@
  87 [-]: GETTABLE  R8 R8 R9     ; R8 := R8[R9]
  88 [-]: EQ        0 R8 K10     ; if R8 ~= nil then PC := 91
  89 [-]: JMP       91           ; PC := 91
- 90 [-]: LOADK     R8 5         ; R8 := 5.000000
+ 90 [-]: CONST     R8 5         ; R8 := 5.000000
  91 [-]: GETGLOBAL R9 K21       ; R9 := 0x25312c9b
  92 [-]: GETGLOBAL R10 K7       ; R10 := 0xae91e43b
  93 [-]: LOADK     R11 K12      ; R11 := "Image"
- 94 [-]: LOADK     R12 0        ; R12 := 0.000000
+ 94 [-]: CONST     R12 0        ; R12 := 0.000000
  95 [-]: NEWTABLE  R13 1 0      ; R13 := {}
- 96 [-]: LOADK     R14 10       ; R14 := 10.000000
+ 96 [-]: CONST     R14 10       ; R14 := 10.000000
  97 [-]: SETLIST   R13 1 1      ; R13[(1-1)*FPF+i] := R(13+i), 1 <= i <= 1
  98 [-]: NEWTABLE  R14 1 0      ; R14 := {}
- 99 [-]: LOADK     R15 100      ; R15 := 100.000000
+ 99 [-]: CONST     R15 100      ; R15 := 100.000000
 100 [-]: SETLIST   R14 1 1      ; R14[(1-1)*FPF+i] := R(14+i), 1 <= i <= 1
 101 [-]: GETGLOBAL R15 K23      ; R15 := 0xba7d82a1
-102 [-]: LOADK     R16 0        ; R16 := 0.000000
+102 [-]: CONST     R16 0        ; R16 := 0.000000
 103 [-]: CLOSURE   R17 0        ; R17 := closure(Function #2.1)
 104 [-]: MOVE      R0 R8        ; R0 := R8
 105 [-]: GETUPVAL  R0 U2        ; R0 := U2
@@ -180,12 +180,12 @@
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x25312c9b
   2 [-]: GETGLOBAL R1 K1        ; R1 := 0xae91e43b
   3 [-]: LOADK     R2 K2        ; R2 := "Image"
-  4 [-]: LOADK     R3 0         ; R3 := 0.000000
+  4 [-]: CONST     R3 0         ; R3 := 0.000000
   5 [-]: NEWTABLE  R4 1 0       ; R4 := {}
-  6 [-]: LOADK     R5 10        ; R5 := 10.000000
+  6 [-]: CONST     R5 10        ; R5 := 10.000000
   7 [-]: SETLIST   R4 1 1       ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 1
   8 [-]: NEWTABLE  R5 1 0       ; R5 := {}
-  9 [-]: LOADK     R6 0         ; R6 := 0.000000
+  9 [-]: CONST     R6 0         ; R6 := 0.000000
  10 [-]: SETLIST   R5 1 1       ; R5[(1-1)*FPF+i] := R(5+i), 1 <= i <= 1
  11 [-]: GETGLOBAL R6 K4        ; R6 := 0xba7d82a1
  12 [-]: GETUPVAL  R7 U0        ; R7 := U0
@@ -206,8 +206,8 @@
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0xae91e43b
   2 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0x67bc869f]
   3 [-]: LOADK     R2 K2        ; R2 := "Image"
-  4 [-]: LOADK     R3 10        ; R3 := 10.000000
-  5 [-]: LOADK     R4 0         ; R4 := 0.000000
+  4 [-]: CONST     R3 10        ; R3 := 10.000000
+  5 [-]: CONST     R4 0         ; R4 := 0.000000
   6 [-]: CALL      R0 5 1       ; R0(R1,R2,R3,R4)
   7 [-]: GETUPVAL  R0 U0        ; R0 := U0
   8 [-]: CALL      R0 1 1       ; R0()

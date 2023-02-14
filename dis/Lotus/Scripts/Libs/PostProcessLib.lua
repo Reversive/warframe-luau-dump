@@ -13,12 +13,12 @@
   4 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["seeall"]
   5 [-]: CALL      R0 3 1       ; R0(R1,R2)
   6 [-]: LOADNIL   R0 R0        ; R0 := nil
-  7 [-]: LOADK     R1 0         ; R1 := 0.000000
-  8 [-]: LOADK     R2 0         ; R2 := 0.000000
-  9 [-]: LOADK     R3 0         ; R3 := 0.000000
- 10 [-]: LOADK     R4 0         ; R4 := 0.000000
- 11 [-]: LOADK     R5 0         ; R5 := 0.000000
- 12 [-]: LOADK     R6 -1        ; R6 := -1.000000
+  7 [-]: CONST     R1 0         ; R1 := 0.000000
+  8 [-]: CONST     R2 0         ; R2 := 0.000000
+  9 [-]: CONST     R3 0         ; R3 := 0.000000
+ 10 [-]: CONST     R4 0         ; R4 := 0.000000
+ 11 [-]: CONST     R5 0         ; R5 := 0.000000
+ 12 [-]: CONST     R6 -1        ; R6 := -1.000000
  13 [-]: GETGLOBAL R7 K3        ; R7 := 0x7ed0a956
  14 [-]: LOADK     R8 K4        ; R8 := "/EE/Types/Engine/NullCameraController"
  15 [-]: CALL      R7 2 2       ; R7 := R7(R8)
@@ -149,7 +149,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  6
 
-  1 [-]: LOADK     R3 0         ; R3 := 0.000000
+  1 [-]: CONST     R3 0         ; R3 := 0.000000
   2 [-]: SETUPVAL  R3 U0        ; U82 := R0
   3 [-]: SETUPVAL  R2 U1        ; U82 := R1
   4 [-]: SETUPVAL  R0 U2        ; U82 := R2
@@ -249,7 +249,7 @@
  67 [-]: SELF      R3 R3 K4     ; R4 := R3; R3 := R3[0xd07747a1]
  68 [-]: GETUPVAL  R5 U5        ; R5 := U5
  69 [-]: CALL      R3 3 1       ; R3(R4,R5)
- 70 [-]: LOADK     R3 -1        ; R3 := -1.000000
+ 70 [-]: CONST     R3 -1        ; R3 := -1.000000
  71 [-]: SETUPVAL  R3 U1        ; U82 := R1
  72 [-]: RETURN    R0 1         ; return 
 
@@ -266,7 +266,7 @@
   1 [-]: GETGLOBAL R2 K0        ; R2 := 0x89326c93
   2 [-]: SELF      R2 R2 K1     ; R3 := R2; R2 := R2[0x7c1a0374]
   3 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  4 [-]: LOADK     R3 0         ; R3 := 0.000000
+  4 [-]: CONST     R3 0         ; R3 := 0.000000
   5 [-]: LOADNIL   R4 R4        ; R4 := nil
   6 [-]: SELF      R5 R2 K2     ; R6 := R2; R5 := R2[0x65c7544c]
   7 [-]: CALL      R5 2 2       ; R5 := R5(R6)
@@ -282,7 +282,7 @@
  17 [-]: MOVE      R8 R4        ; R8 := R4
  18 [-]: CALL      R6 3 1       ; R6(R7,R8)
  19 [-]: GETGLOBAL R6 K5        ; R6 := 0xcbd666e1
- 20 [-]: LOADK     R7 0         ; R7 := 0.000000
+ 20 [-]: CONST     R7 0         ; R7 := 0.000000
  21 [-]: CALL      R6 2 1       ; R6(R7)
  22 [-]: GETGLOBAL R6 K6        ; R6 := 0x67652851
  23 [-]: CALL      R6 1 2       ; R6 := R6()

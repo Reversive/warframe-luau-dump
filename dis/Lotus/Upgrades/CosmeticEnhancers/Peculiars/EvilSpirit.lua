@@ -7,7 +7,7 @@
 ; Is_vararg:       2
 ; Max Stack Size:  2
 
-  1 [-]: LOADK     R0 30        ; R0 := 30.000000
+  1 [-]: CONST     R0 30        ; R0 := 30.000000
   2 [-]: CLOSURE   R1 0         ; R1 := closure(Function #1)
   3 [-]: SETGLOBAL R1 K0        ; GetDescription := R1
   4 [-]: CLOSURE   R1 1         ; R1 := closure(Function #2)
@@ -75,8 +75,8 @@
  23 [-]: GETGLOBAL R7 K8        ; R7 := 0xcb2f9123
  24 [-]: MUL       R7 R2 R7     ; R7 := R2 * R7
  25 [-]: GETGLOBAL R8 K9        ; R8 := 0xc163f229
- 26 [-]: LOADK     R9 0         ; R9 := 0.000000
- 27 [-]: LOADK     R10 1        ; R10 := 1.000000
+ 26 [-]: CONST     R9 0         ; R9 := 0.000000
+ 27 [-]: CONST     R10 1        ; R10 := 1.000000
  28 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
  29 [-]: LT        0 R7 R8      ; if R7 >= R8 then PC := 32
  30 [-]: JMP       32           ; PC := 32
@@ -86,8 +86,8 @@
  34 [-]: GETGLOBAL R11 K12      ; R11 := 0xb93b820e
  35 [-]: SELF      R12 R0 K13   ; R13 := R0; R12 := R0[0xf6ebd926]
  36 [-]: CALL      R12 2 2      ; R12 := R12(R13)
- 37 [-]: LOADBOOL  R13 0 0      ; R13 := false
- 38 [-]: LOADK     R14 0        ; R14 := 0.000000
+ 37 [-]: LOADKB    R13 0 0      ; R13 := false
+ 38 [-]: CONST     R14 0        ; R14 := 0.000000
  39 [-]: MOVE      R15 R0       ; R15 := R0
  40 [-]: CALL      R9 7 1       ; R9(R10,R11,R12,R13,R14,R15)
  41 [-]: GETGLOBAL R9 K3        ; R9 := _T

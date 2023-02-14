@@ -56,8 +56,8 @@
  33 [-]: GETGLOBAL R9 K19       ; R9 := 0x1a49cf25
  34 [-]: CALL      R7 3 1       ; R7(R8,R9)
  35 [-]: SELF      R7 R6 K20    ; R8 := R6; R7 := R6[0xfc0e440a]
- 36 [-]: LOADK     R9 19        ; R9 := 19.000000
- 37 [-]: LOADBOOL  R10 1 0      ; R10 := true
+ 36 [-]: CONST     R9 19        ; R9 := 19.000000
+ 37 [-]: LOADKB    R10 1 0      ; R10 := true
  38 [-]: CALL      R7 4 1       ; R7(R8,R9,R10)
  39 [-]: GETGLOBAL R7 K21       ; R7 := 0x89326c93
  40 [-]: SELF      R7 R7 K22    ; R8 := R7; R7 := R7[0x97dcff30]

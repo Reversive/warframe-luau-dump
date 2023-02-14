@@ -10,7 +10,7 @@
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x88efc25e
   2 [-]: LOADK     R1 K1        ; R1 := "/Lotus/Characters/Sentient/Symbilyst/SymbilystArmsSkelDeco"
   3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: LOADK     R1 4         ; R1 := 4.000000
+  4 [-]: CONST     R1 4         ; R1 := 4.000000
   5 [-]: GETGLOBAL R2 K2        ; R2 := 0x0469f296
   6 [-]: LOADK     R3 K3        ; R3 := "GAME_R1_SHIELDFX"
   7 [-]: CALL      R2 2 2       ; R2 := R2(R3)
@@ -46,7 +46,7 @@
   5 [-]: SELF      R4 R1 K2     ; R5 := R1; R4 := R1[0xd2715720]
   6 [-]: CALL      R4 2 2       ; R4 := R4(R5)
   7 [-]: SELF      R5 R1 K3     ; R6 := R1; R5 := R1[0xb40c191a]
-  8 [-]: LOADBOOL  R7 1 0       ; R7 := true
+  8 [-]: LOADKB    R7 1 0       ; R7 := true
   9 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
  10 [-]: SELF      R6 R1 K4     ; R7 := R1; R6 := R1[0xc9f6a7d7]
  11 [-]: GETUPVAL  R8 U0        ; R8 := U0
@@ -56,11 +56,11 @@
  15 [-]: CALL      R7 2 2       ; R7 := R7(R8)
  16 [-]: TEST      R7 0         ; if not R7 then PC := 20
  17 [-]: JMP       20           ; PC := 20
- 18 [-]: LOADK     R7 0         ; R7 := 0.000000
+ 18 [-]: CONST     R7 0         ; R7 := 0.000000
  19 [-]: RETURN    R7 2         ; return R7
  20 [-]: LT        0 R4 R5      ; if R4 >= R5 then PC := 24
  21 [-]: JMP       24           ; PC := 24
- 22 [-]: LOADK     R7 1         ; R7 := 1.000000
+ 22 [-]: CONST     R7 1         ; R7 := 1.000000
  23 [-]: RETURN    R7 2         ; return R7
  24 [-]: GETTABLE  R7 R3 K6     ; R7 := R3["avatar"]
  25 [-]: GETGLOBAL R8 K5        ; R8 := 0x7b998233
@@ -79,9 +79,9 @@
  38 [-]: JMP       43           ; PC := 43
  39 [-]: EQ        0 R8 R1      ; if R8 ~= R1 then PC := 43
  40 [-]: JMP       43           ; PC := 43
- 41 [-]: LOADK     R9 1         ; R9 := 1.000000
+ 41 [-]: CONST     R9 1         ; R9 := 1.000000
  42 [-]: RETURN    R9 2         ; return R9
- 43 [-]: LOADK     R9 0         ; R9 := 0.000000
+ 43 [-]: CONST     R9 0         ; R9 := 0.000000
  44 [-]: RETURN    R9 2         ; return R9
  45 [-]: RETURN    R0 1         ; return 
 
@@ -105,7 +105,7 @@
   8 [-]: JMP       10           ; PC := 10
   9 [-]: RETURN    R0 1         ; return 
  10 [-]: GETGLOBAL R5 K3        ; R5 := 0x55730e1a
- 11 [-]: LOADK     R6 1         ; R6 := 1.000000
+ 11 [-]: CONST     R6 1         ; R6 := 1.000000
  12 [-]: GETGLOBAL R7 K4        ; R7 := 0x68a7179d
  13 [-]: LEN       R7 R7        ; R7 := # R7
  14 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
@@ -117,11 +117,11 @@
  20 [-]: CALL      R8 2 2       ; R8 := R8(R9)
  21 [-]: SELF      R9 R1 K7     ; R10 := R1; R9 := R1[0x5d985c7e]
  22 [-]: MOVE      R11 R6       ; R11 := R6
- 23 [-]: LOADBOOL  R12 1 0      ; R12 := true
+ 23 [-]: LOADKB    R12 1 0      ; R12 := true
  24 [-]: CALL      R9 4 1       ; R9(R10,R11,R12)
  25 [-]: SELF      R9 R1 K7     ; R10 := R1; R9 := R1[0x5d985c7e]
  26 [-]: MOVE      R11 R7       ; R11 := R7
- 27 [-]: LOADBOOL  R12 0 0      ; R12 := false
+ 27 [-]: LOADKB    R12 0 0      ; R12 := false
  28 [-]: CALL      R9 4 1       ; R9(R10,R11,R12)
  29 [-]: GETGLOBAL R9 K8        ; R9 := 0xcbd666e1
  30 [-]: DIV       R10 R8 K9    ; R10 := R8 / 2.000000
@@ -149,11 +149,11 @@
   9 [-]: CALL      R2 2 1       ; R2(R3)
  10 [-]: SELF      R2 R1 K4     ; R3 := R1; R2 := R1[0x5d985c7e]
  11 [-]: GETGLOBAL R4 K5        ; R4 := 0x5f1e8c25
- 12 [-]: LOADBOOL  R5 1 0       ; R5 := true
+ 12 [-]: LOADKB    R5 1 0       ; R5 := true
  13 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
  14 [-]: SELF      R2 R1 K6     ; R3 := R1; R2 := R1[0x7027c544]
  15 [-]: LOADNIL   R4 R4        ; R4 := nil
- 16 [-]: LOADBOOL  R5 0 0       ; R5 := false
+ 16 [-]: LOADKB    R5 0 0       ; R5 := false
  17 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
  18 [-]: RETURN    R0 1         ; return 
 
