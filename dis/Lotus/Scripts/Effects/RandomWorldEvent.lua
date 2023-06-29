@@ -1,30 +1,26 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
+; Is_vararg:       1
 ; Max Stack Size:  2
 
-  1 [-]: GETGLOBAL R0 K0        ; R0 := 0x0469f296
-  2 [-]: LOADK     R1 K1        ; R1 := "RandWorldEventChance"
-  3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: CLOSURE   R1 0         ; R1 := closure(Function #1)
-  5 [-]: MOVE      R0 R0        ; R0 := R0
-  6 [-]: SETGLOBAL R1 K2        ; rollForEvent := R1
-  7 [-]: CLOSURE   R1 1         ; R1 := closure(Function #2)
-  8 [-]: MOVE      R0 R0        ; R0 := R0
-  9 [-]: SETGLOBAL R1 K3        ; rollForEventPortForwarder := R1
- 10 [-]: CLOSURE   R1 2         ; R1 := closure(Function #3)
- 11 [-]: SETGLOBAL R1 K4        ; RandomChanceMoverTrigger := R1
- 12 [-]: CLOSURE   R1 3         ; R1 := closure(Function #4)
- 13 [-]: SETGLOBAL R1 K5        ; RandomChancePortForwarderTrigger := R1
- 14 [-]: RETURN    R0 1         ; return 
+            1 [-]: GETIMPORT R0 1 [nil]
+       2 [-]: LOADK R1 K2 ["RandWorldEventChance"]
+       3 [-]: CALL R0 1 1  
+       4 [-]: DUPCLOSURE R1 K3 []
+       5 [-]: MOVE R0 R0   
+       6 [-]: SETGLOBAL R1 K4 ["rollForEvent"]
+       7 [-]: DUPCLOSURE R1 K5 []
+       8 [-]: MOVE R0 R0   
+       9 [-]: SETGLOBAL R1 K6 ["rollForEventPortForwarder"]
+      10 [-]: DUPCLOSURE R1 K7 []
+      11 [-]: SETGLOBAL R1 K8 ["RandomChanceMoverTrigger"]
+      12 [-]: DUPCLOSURE R1 K9 []
+      13 [-]: SETGLOBAL R1 K10 ["RandomChancePortForwarderTrigger"]
+      14 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 15
 ; #Upvalues:       1
@@ -32,57 +28,53 @@
 ; Is_vararg:       0
 ; Max Stack Size:  8
 
-  1 [-]: GETGLOBAL R0 K0        ; R0 := 0xbe190284
-  2 [-]: SELF      R1 R0 K1     ; R2 := R0; R1 := R0[0x0eb34c69]
-  3 [-]: GETUPVAL  R3 U0        ; R3 := U0
-  4 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
-  5 [-]: GETGLOBAL R2 K2        ; R2 := 0x9b40de7b
-  6 [-]: MUL       R2 R2 K3     ; R2 := R2 * 0.250000
-  7 [-]: ADD       R2 R1 R2     ; R2 := R1 + R2
-  8 [-]: GETGLOBAL R3 K2        ; R3 := 0x9b40de7b
-  9 [-]: LE        0 R3 R1      ; if R3 > R1 then PC := 43
- 10 [-]: JMP       43           ; PC := 43
- 11 [-]: GETGLOBAL R3 K4        ; R3 := 0xc163f229
- 12 [-]: CONST     R4 0         ; R4 := 0.000000
- 13 [-]: CONST     R5 100       ; R5 := 100.000000
- 14 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
- 15 [-]: LE        0 R3 R1      ; if R3 > R1 then PC := 38
- 16 [-]: JMP       38           ; PC := 38
- 17 [-]: SELF      R4 R0 K5     ; R5 := R0; R4 := R0[0x751f061d]
- 18 [-]: GETUPVAL  R6 U0        ; R6 := U0
- 19 [-]: CONST     R7 0         ; R7 := 0.000000
- 20 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
- 21 [-]: GETGLOBAL R4 K6        ; R4 := 0x7b998233
- 22 [-]: GETGLOBAL R5 K7        ; R5 := 0x3341b43b
- 23 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 24 [-]: TEST      R4 1         ; if R4 then PC := 29
- 25 [-]: JMP       29           ; PC := 29
- 26 [-]: GETGLOBAL R4 K7        ; R4 := 0x3341b43b
- 27 [-]: SELF      R4 R4 K8     ; R5 := R4; R4 := R4[0x7cdbbaaa]
- 28 [-]: CALL      R4 2 1       ; R4(R5)
- 29 [-]: GETGLOBAL R4 K6        ; R4 := 0x7b998233
- 30 [-]: GETGLOBAL R5 K9        ; R5 := 0x4b45e8f4
- 31 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 32 [-]: TEST      R4 1         ; if R4 then PC := 47
- 33 [-]: JMP       47           ; PC := 47
- 34 [-]: GETGLOBAL R4 K9        ; R4 := 0x4b45e8f4
- 35 [-]: SELF      R4 R4 K10    ; R5 := R4; R4 := R4[0xa2880940]
- 36 [-]: CALL      R4 2 1       ; R4(R5)
- 37 [-]: JMP       47           ; PC := 47
- 38 [-]: SELF      R4 R0 K5     ; R5 := R0; R4 := R0[0x751f061d]
- 39 [-]: GETUPVAL  R6 U0        ; R6 := U0
- 40 [-]: MOVE      R7 R2        ; R7 := R2
- 41 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
- 42 [-]: JMP       47           ; PC := 47
- 43 [-]: SELF      R4 R0 K5     ; R5 := R0; R4 := R0[0x751f061d]
- 44 [-]: GETUPVAL  R6 U0        ; R6 := U0
- 45 [-]: MOVE      R7 R2        ; R7 := R2
- 46 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
- 47 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETUPVAL R3 0
+       2 [-]: NAMECALL R1 R0 K2 [0x0EB34C69]
+       3 [-]: CALL R1 2 1  
+       4 [-]: GETIMPORT R4 5 [nil]
+       5 [-]: MULK R3 R4 K3 [0.25]
+       6 [-]: ADD R2 R1 R3 
+       7 [-]: GETIMPORT R3 5 [nil]
+       8 [-]: JUMPIFNOTLE R3 R1 L4
+       9 [-]: GETIMPORT R3 7 [nil]
+      10 [-]: LOADN R4 0   
+      11 [-]: LOADN R5 100 
+      12 [-]: CALL R3 2 1  
+      13 [-]: JUMPIFNOTLE R3 R1 L3
+      14 [-]: GETUPVAL R6 0
+      15 [-]: LOADN R7 0   
+      16 [-]: NAMECALL R4 R0 K8 [0x751F061D]
+      17 [-]: CALL R4 3 0  
+      18 [-]: GETIMPORT R5 10 [nil]
+      19 [-]: FASTCALL1 62 R5 L0
+      20 [-]: GETIMPORT R4 12 [nil]
+      21 [-]: CALL R4 1 1  
+L 0:  22 [-]: JUMPIF R4 L1 
+      23 [-]: GETIMPORT R4 10 [nil]
+      24 [-]: NAMECALL R4 R4 K13 [0x7CDBBAAA]
+      25 [-]: CALL R4 1 0  
+L 1:  26 [-]: GETIMPORT R5 15 [nil]
+      27 [-]: FASTCALL1 62 R5 L2
+      28 [-]: GETIMPORT R4 12 [nil]
+      29 [-]: CALL R4 1 1  
+L 2:  30 [-]: JUMPIF R4 L5 
+      31 [-]: GETIMPORT R4 15 [nil]
+      32 [-]: NAMECALL R4 R4 K16 [0xA2880940]
+      33 [-]: CALL R4 1 0  
+      34 [-]: RETURN R0 0  
+L 3:  35 [-]: GETUPVAL R6 0
+      36 [-]: MOVE R7 R2   
+      37 [-]: NAMECALL R4 R0 K8 [0x751F061D]
+      38 [-]: CALL R4 3 0  
+      39 [-]: RETURN R0 0  
+L 4:  40 [-]: GETUPVAL R5 0
+      41 [-]: MOVE R6 R2   
+      42 [-]: NAMECALL R3 R0 K8 [0x751F061D]
+      43 [-]: CALL R3 3 0  
+L 5:  44 [-]: RETURN R0 0  
 
 
-; Function #2:
-;
 ; Name:            
 ; Defined at line: 47
 ; #Upvalues:       1
@@ -90,164 +82,153 @@
 ; Is_vararg:       0
 ; Max Stack Size:  8
 
-  1 [-]: GETGLOBAL R0 K0        ; R0 := 0xbe190284
-  2 [-]: SELF      R1 R0 K1     ; R2 := R0; R1 := R0[0x0eb34c69]
-  3 [-]: GETUPVAL  R3 U0        ; R3 := U0
-  4 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
-  5 [-]: GETGLOBAL R2 K2        ; R2 := 0x9b40de7b
-  6 [-]: MUL       R2 R2 K3     ; R2 := R2 * 0.250000
-  7 [-]: ADD       R2 R1 R2     ; R2 := R1 + R2
-  8 [-]: GETGLOBAL R3 K2        ; R3 := 0x9b40de7b
-  9 [-]: LE        0 R3 R1      ; if R3 > R1 then PC := 44
- 10 [-]: JMP       44           ; PC := 44
- 11 [-]: GETGLOBAL R3 K4        ; R3 := 0xc163f229
- 12 [-]: CONST     R4 0         ; R4 := 0.000000
- 13 [-]: CONST     R5 100       ; R5 := 100.000000
- 14 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
- 15 [-]: LE        0 R3 R1      ; if R3 > R1 then PC := 39
- 16 [-]: JMP       39           ; PC := 39
- 17 [-]: SELF      R4 R0 K5     ; R5 := R0; R4 := R0[0x751f061d]
- 18 [-]: GETUPVAL  R6 U0        ; R6 := U0
- 19 [-]: CONST     R7 0         ; R7 := 0.000000
- 20 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
- 21 [-]: GETGLOBAL R4 K6        ; R4 := 0x7b998233
- 22 [-]: GETGLOBAL R5 K7        ; R5 := 0xb39d8ed1
- 23 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 24 [-]: TEST      R4 1         ; if R4 then PC := 30
- 25 [-]: JMP       30           ; PC := 30
- 26 [-]: GETGLOBAL R4 K7        ; R4 := 0xb39d8ed1
- 27 [-]: SELF      R4 R4 K8     ; R5 := R4; R4 := R4[0x8eb2112d]
- 28 [-]: LOADK     R6 K9        ; R6 := "TriggerPort"
- 29 [-]: CALL      R4 3 1       ; R4(R5,R6)
- 30 [-]: GETGLOBAL R4 K6        ; R4 := 0x7b998233
- 31 [-]: GETGLOBAL R5 K10       ; R5 := 0x4b45e8f4
- 32 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 33 [-]: TEST      R4 1         ; if R4 then PC := 48
- 34 [-]: JMP       48           ; PC := 48
- 35 [-]: GETGLOBAL R4 K10       ; R4 := 0x4b45e8f4
- 36 [-]: SELF      R4 R4 K11    ; R5 := R4; R4 := R4[0xa2880940]
- 37 [-]: CALL      R4 2 1       ; R4(R5)
- 38 [-]: JMP       48           ; PC := 48
- 39 [-]: SELF      R4 R0 K5     ; R5 := R0; R4 := R0[0x751f061d]
- 40 [-]: GETUPVAL  R6 U0        ; R6 := U0
- 41 [-]: MOVE      R7 R2        ; R7 := R2
- 42 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
- 43 [-]: JMP       48           ; PC := 48
- 44 [-]: SELF      R4 R0 K5     ; R5 := R0; R4 := R0[0x751f061d]
- 45 [-]: GETUPVAL  R6 U0        ; R6 := U0
- 46 [-]: MOVE      R7 R2        ; R7 := R2
- 47 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
- 48 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETUPVAL R3 0
+       2 [-]: NAMECALL R1 R0 K2 [0x0EB34C69]
+       3 [-]: CALL R1 2 1  
+       4 [-]: GETIMPORT R4 5 [nil]
+       5 [-]: MULK R3 R4 K3 [0.25]
+       6 [-]: ADD R2 R1 R3 
+       7 [-]: GETIMPORT R3 5 [nil]
+       8 [-]: JUMPIFNOTLE R3 R1 L4
+       9 [-]: GETIMPORT R3 7 [nil]
+      10 [-]: LOADN R4 0   
+      11 [-]: LOADN R5 100 
+      12 [-]: CALL R3 2 1  
+      13 [-]: JUMPIFNOTLE R3 R1 L3
+      14 [-]: GETUPVAL R6 0
+      15 [-]: LOADN R7 0   
+      16 [-]: NAMECALL R4 R0 K8 [0x751F061D]
+      17 [-]: CALL R4 3 0  
+      18 [-]: GETIMPORT R5 10 [nil]
+      19 [-]: FASTCALL1 62 R5 L0
+      20 [-]: GETIMPORT R4 12 [nil]
+      21 [-]: CALL R4 1 1  
+L 0:  22 [-]: JUMPIF R4 L1 
+      23 [-]: GETIMPORT R4 10 [nil]
+      24 [-]: LOADK R6 K13 ["TriggerPort"]
+      25 [-]: NAMECALL R4 R4 K14 [0x8EB2112D]
+      26 [-]: CALL R4 2 0  
+L 1:  27 [-]: GETIMPORT R5 16 [nil]
+      28 [-]: FASTCALL1 62 R5 L2
+      29 [-]: GETIMPORT R4 12 [nil]
+      30 [-]: CALL R4 1 1  
+L 2:  31 [-]: JUMPIF R4 L5 
+      32 [-]: GETIMPORT R4 16 [nil]
+      33 [-]: NAMECALL R4 R4 K17 [0xA2880940]
+      34 [-]: CALL R4 1 0  
+      35 [-]: RETURN R0 0  
+L 3:  36 [-]: GETUPVAL R6 0
+      37 [-]: MOVE R7 R2   
+      38 [-]: NAMECALL R4 R0 K8 [0x751F061D]
+      39 [-]: CALL R4 3 0  
+      40 [-]: RETURN R0 0  
+L 4:  41 [-]: GETUPVAL R5 0
+      42 [-]: MOVE R6 R2   
+      43 [-]: NAMECALL R3 R0 K8 [0x751F061D]
+      44 [-]: CALL R3 3 0  
+L 5:  45 [-]: RETURN R0 0  
 
 
-; Function #3:
-;
 ; Name:            
 ; Defined at line: 79
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
-; Max Stack Size:  5
+; Max Stack Size:  6
 
-  1 [-]: GETGLOBAL R0 K0        ; R0 := 0xc163f229
-  2 [-]: CONST     R1 0         ; R1 := 0.000000
-  3 [-]: CONST     R2 100       ; R2 := 100.000000
-  4 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
-  5 [-]: GETGLOBAL R1 K1        ; R1 := 0x5c10fb7a
-  6 [-]: TEST      R1 0         ; if not R1 then PC := 14
-  7 [-]: JMP       14           ; PC := 14
-  8 [-]: GETGLOBAL R1 K2        ; R1 := 0x3d106989
-  9 [-]: LOADK     R2 K3        ; R2 := "RandomChance was "
- 10 [-]: MOVE      R3 R0        ; R3 := R0
- 11 [-]: LOADK     R4 K4        ; R4 := ". This msg brought to you by RandomWorldEvent.lua"
- 12 [-]: CONCAT    R2 R2 R4     ; R2 := R2 .. R3 .. R4
- 13 [-]: CALL      R1 2 1       ; R1(R2)
- 14 [-]: GETGLOBAL R1 K5        ; R1 := 0x053c1cf6
- 15 [-]: LE        0 R0 R1      ; if R0 > R1 then PC := 33
- 16 [-]: JMP       33           ; PC := 33
- 17 [-]: GETGLOBAL R1 K6        ; R1 := 0x7b998233
- 18 [-]: GETGLOBAL R2 K7        ; R2 := 0x3341b43b
- 19 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 20 [-]: TEST      R1 1         ; if R1 then PC := 25
- 21 [-]: JMP       25           ; PC := 25
- 22 [-]: GETGLOBAL R1 K7        ; R1 := 0x3341b43b
- 23 [-]: SELF      R1 R1 K8     ; R2 := R1; R1 := R1[0x7cdbbaaa]
- 24 [-]: CALL      R1 2 1       ; R1(R2)
- 25 [-]: GETGLOBAL R1 K6        ; R1 := 0x7b998233
- 26 [-]: GETGLOBAL R2 K9        ; R2 := 0x4b45e8f4
- 27 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 28 [-]: TEST      R1 1         ; if R1 then PC := 33
- 29 [-]: JMP       33           ; PC := 33
- 30 [-]: GETGLOBAL R1 K9        ; R1 := 0x4b45e8f4
- 31 [-]: SELF      R1 R1 K10    ; R2 := R1; R1 := R1[0xa2880940]
- 32 [-]: CALL      R1 2 1       ; R1(R2)
- 33 [-]: GETGLOBAL R1 K11       ; R1 := 0xe77b13cf
- 34 [-]: TEST      R1 0         ; if not R1 then PC := 44
- 35 [-]: JMP       44           ; PC := 44
- 36 [-]: GETGLOBAL R1 K6        ; R1 := 0x7b998233
- 37 [-]: GETGLOBAL R2 K9        ; R2 := 0x4b45e8f4
- 38 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 39 [-]: TEST      R1 1         ; if R1 then PC := 44
- 40 [-]: JMP       44           ; PC := 44
- 41 [-]: GETGLOBAL R1 K9        ; R1 := 0x4b45e8f4
- 42 [-]: SELF      R1 R1 K10    ; R2 := R1; R1 := R1[0xa2880940]
- 43 [-]: CALL      R1 2 1       ; R1(R2)
- 44 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: LOADN R1 0   
+       2 [-]: LOADN R2 100 
+       3 [-]: CALL R0 2 1  
+       4 [-]: GETIMPORT R1 3 [nil]
+       5 [-]: JUMPIFNOT R1 L0
+       6 [-]: GETIMPORT R1 5 [nil]
+       7 [-]: LOADK R3 K6 ["RandomChance was "]
+       8 [-]: MOVE R4 R0   
+       9 [-]: LOADK R5 K7 [". This msg brought to you by RandomWorldEvent.lua"]
+      10 [-]: CONCAT R2 R3 R5
+      11 [-]: CALL R1 1 0  
+L 0:  12 [-]: GETIMPORT R1 9 [nil]
+      13 [-]: JUMPIFNOTLE R0 R1 L4
+      14 [-]: GETIMPORT R2 11 [nil]
+      15 [-]: FASTCALL1 62 R2 L1
+      16 [-]: GETIMPORT R1 13 [nil]
+      17 [-]: CALL R1 1 1  
+L 1:  18 [-]: JUMPIF R1 L2 
+      19 [-]: GETIMPORT R1 11 [nil]
+      20 [-]: NAMECALL R1 R1 K14 [0x7CDBBAAA]
+      21 [-]: CALL R1 1 0  
+L 2:  22 [-]: GETIMPORT R2 16 [nil]
+      23 [-]: FASTCALL1 62 R2 L3
+      24 [-]: GETIMPORT R1 13 [nil]
+      25 [-]: CALL R1 1 1  
+L 3:  26 [-]: JUMPIF R1 L4 
+      27 [-]: GETIMPORT R1 16 [nil]
+      28 [-]: NAMECALL R1 R1 K17 [0xA2880940]
+      29 [-]: CALL R1 1 0  
+L 4:  30 [-]: GETIMPORT R1 19 [nil]
+      31 [-]: JUMPIFNOT R1 L6
+      32 [-]: GETIMPORT R2 16 [nil]
+      33 [-]: FASTCALL1 62 R2 L5
+      34 [-]: GETIMPORT R1 13 [nil]
+      35 [-]: CALL R1 1 1  
+L 5:  36 [-]: JUMPIF R1 L6 
+      37 [-]: GETIMPORT R1 16 [nil]
+      38 [-]: NAMECALL R1 R1 K17 [0xA2880940]
+      39 [-]: CALL R1 1 0  
+L 6:  40 [-]: RETURN R0 0  
 
 
-; Function #4:
-;
 ; Name:            
 ; Defined at line: 97
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
-; Max Stack Size:  5
+; Max Stack Size:  6
 
-  1 [-]: GETGLOBAL R0 K0        ; R0 := 0xc163f229
-  2 [-]: CONST     R1 0         ; R1 := 0.000000
-  3 [-]: CONST     R2 100       ; R2 := 100.000000
-  4 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
-  5 [-]: GETGLOBAL R1 K1        ; R1 := 0x5c10fb7a
-  6 [-]: TEST      R1 0         ; if not R1 then PC := 14
-  7 [-]: JMP       14           ; PC := 14
-  8 [-]: GETGLOBAL R1 K2        ; R1 := 0x3d106989
-  9 [-]: LOADK     R2 K3        ; R2 := "RandomChance was "
- 10 [-]: MOVE      R3 R0        ; R3 := R0
- 11 [-]: LOADK     R4 K4        ; R4 := ". This msg brought to you by RandomWorldEvent.lua"
- 12 [-]: CONCAT    R2 R2 R4     ; R2 := R2 .. R3 .. R4
- 13 [-]: CALL      R1 2 1       ; R1(R2)
- 14 [-]: GETGLOBAL R1 K5        ; R1 := 0x053c1cf6
- 15 [-]: LE        0 R0 R1      ; if R0 > R1 then PC := 34
- 16 [-]: JMP       34           ; PC := 34
- 17 [-]: GETGLOBAL R1 K6        ; R1 := 0x7b998233
- 18 [-]: GETGLOBAL R2 K7        ; R2 := 0xb39d8ed1
- 19 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 20 [-]: TEST      R1 1         ; if R1 then PC := 26
- 21 [-]: JMP       26           ; PC := 26
- 22 [-]: GETGLOBAL R1 K7        ; R1 := 0xb39d8ed1
- 23 [-]: SELF      R1 R1 K8     ; R2 := R1; R1 := R1[0x8eb2112d]
- 24 [-]: LOADK     R3 K9        ; R3 := "TriggerPort"
- 25 [-]: CALL      R1 3 1       ; R1(R2,R3)
- 26 [-]: GETGLOBAL R1 K6        ; R1 := 0x7b998233
- 27 [-]: GETGLOBAL R2 K10       ; R2 := 0x4b45e8f4
- 28 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 29 [-]: TEST      R1 1         ; if R1 then PC := 34
- 30 [-]: JMP       34           ; PC := 34
- 31 [-]: GETGLOBAL R1 K10       ; R1 := 0x4b45e8f4
- 32 [-]: SELF      R1 R1 K11    ; R2 := R1; R1 := R1[0xa2880940]
- 33 [-]: CALL      R1 2 1       ; R1(R2)
- 34 [-]: GETGLOBAL R1 K12       ; R1 := 0xe77b13cf
- 35 [-]: TEST      R1 0         ; if not R1 then PC := 45
- 36 [-]: JMP       45           ; PC := 45
- 37 [-]: GETGLOBAL R1 K6        ; R1 := 0x7b998233
- 38 [-]: GETGLOBAL R2 K10       ; R2 := 0x4b45e8f4
- 39 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 40 [-]: TEST      R1 1         ; if R1 then PC := 45
- 41 [-]: JMP       45           ; PC := 45
- 42 [-]: GETGLOBAL R1 K10       ; R1 := 0x4b45e8f4
- 43 [-]: SELF      R1 R1 K11    ; R2 := R1; R1 := R1[0xa2880940]
- 44 [-]: CALL      R1 2 1       ; R1(R2)
- 45 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: LOADN R1 0   
+       2 [-]: LOADN R2 100 
+       3 [-]: CALL R0 2 1  
+       4 [-]: GETIMPORT R1 3 [nil]
+       5 [-]: JUMPIFNOT R1 L0
+       6 [-]: GETIMPORT R1 5 [nil]
+       7 [-]: LOADK R3 K6 ["RandomChance was "]
+       8 [-]: MOVE R4 R0   
+       9 [-]: LOADK R5 K7 [". This msg brought to you by RandomWorldEvent.lua"]
+      10 [-]: CONCAT R2 R3 R5
+      11 [-]: CALL R1 1 0  
+L 0:  12 [-]: GETIMPORT R1 9 [nil]
+      13 [-]: JUMPIFNOTLE R0 R1 L4
+      14 [-]: GETIMPORT R2 11 [nil]
+      15 [-]: FASTCALL1 62 R2 L1
+      16 [-]: GETIMPORT R1 13 [nil]
+      17 [-]: CALL R1 1 1  
+L 1:  18 [-]: JUMPIF R1 L2 
+      19 [-]: GETIMPORT R1 11 [nil]
+      20 [-]: LOADK R3 K14 ["TriggerPort"]
+      21 [-]: NAMECALL R1 R1 K15 [0x8EB2112D]
+      22 [-]: CALL R1 2 0  
+L 2:  23 [-]: GETIMPORT R2 17 [nil]
+      24 [-]: FASTCALL1 62 R2 L3
+      25 [-]: GETIMPORT R1 13 [nil]
+      26 [-]: CALL R1 1 1  
+L 3:  27 [-]: JUMPIF R1 L4 
+      28 [-]: GETIMPORT R1 17 [nil]
+      29 [-]: NAMECALL R1 R1 K18 [0xA2880940]
+      30 [-]: CALL R1 1 0  
+L 4:  31 [-]: GETIMPORT R1 20 [nil]
+      32 [-]: JUMPIFNOT R1 L6
+      33 [-]: GETIMPORT R2 17 [nil]
+      34 [-]: FASTCALL1 62 R2 L5
+      35 [-]: GETIMPORT R1 13 [nil]
+      36 [-]: CALL R1 1 1  
+L 5:  37 [-]: JUMPIF R1 L6 
+      38 [-]: GETIMPORT R1 17 [nil]
+      39 [-]: NAMECALL R1 R1 K18 [0xA2880940]
+      40 [-]: CALL R1 1 0  
+L 6:  41 [-]: RETURN R0 0  
+
 
 

@@ -1,78 +1,83 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
-; Max Stack Size:  8
+; Is_vararg:       1
+; Max Stack Size:  6
 
-  1 [-]: NEWTABLE  R0 0 10      ; R0 := {}
-  2 [-]: SETTABLE  R0 K0 K1     ; R0["UNINITIALIZED"] := 0.000000
-  3 [-]: SETTABLE  R0 K2 K3     ; R0["INITIALIZED"] := 1.000000
-  4 [-]: SETTABLE  R0 K4 K5     ; R0["PITCH_GAME_INITIATED"] := 2.000000
-  5 [-]: SETTABLE  R0 K6 K7     ; R0["ANIMAL_RESPONSE"] := 3.000000
-  6 [-]: SETTABLE  R0 K8 K9     ; R0["DOING_PITCH_MATCHING"] := 4.000000
-  7 [-]: SETTABLE  R0 K10 K11   ; R0["CALL_MATCHED"] := 5.000000
-  8 [-]: SETTABLE  R0 K12 K13   ; R0["PITCH_GAME_CALLS_COMPLETE"] := 25.000000
-  9 [-]: SETTABLE  R0 K14 K15   ; R0["SPAWNED"] := 26.000000
- 10 [-]: SETTABLE  R0 K16 K17   ; R0["SLEPT"] := 27.000000
- 11 [-]: SETTABLE  R0 K18 K19   ; R0["ESCAPED"] := 28.000000
- 12 [-]: CONST     R1 0         ; R1 := 0.000000
- 13 [-]: CONST     R2 20        ; R2 := 20.000000
- 14 [-]: CLOSURE   R3 0         ; R3 := closure(Function #1)
- 15 [-]: MOVE      R0 R0        ; R0 := R0
- 16 [-]: CLOSURE   R4 1         ; R4 := closure(Function #2)
- 17 [-]: NEWTABLE  R5 0 17      ; R5 := {}
- 18 [-]: SETTABLE  R5 K20 R0    ; R5["states"] := R0
- 19 [-]: SETTABLE  R5 K21 R1    ; R5["MIN_PITCH"] := R1
- 20 [-]: SETTABLE  R5 K22 R2    ; R5["MAX_PITCH"] := R2
- 21 [-]: GETGLOBAL R6 K24       ; R6 := 0x0469f296
- 22 [-]: LOADK     R7 K25       ; R7 := "AnimalCallPoint"
- 23 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 24 [-]: SETTABLE  R5 K23 R6    ; R5["callPointTag"] := R6
- 25 [-]: CLOSURE   R6 2         ; R6 := closure(Function #3)
- 26 [-]: MOVE      R0 R3        ; R0 := R3
- 27 [-]: SETTABLE  R5 K26 R6    ; R5["AddConservationEncounterState"] := R6
- 28 [-]: CLOSURE   R6 3         ; R6 := closure(Function #4)
- 29 [-]: SETTABLE  R5 K27 R6    ; R5["EndEncounter"] := R6
- 30 [-]: SETTABLE  R5 K28 R4    ; R5["GetCurrentConservationEncounter"] := R4
- 31 [-]: CLOSURE   R6 4         ; R6 := closure(Function #5)
- 32 [-]: MOVE      R0 R4        ; R0 := R4
- 33 [-]: SETTABLE  R5 K29 R6    ; R5["GetCurrentConservationEncounterState"] := R6
- 34 [-]: CLOSURE   R6 5         ; R6 := closure(Function #6)
- 35 [-]: SETTABLE  R5 K30 R6    ; R5["SetCurrentConservationEncounterByStartPoint"] := R6
- 36 [-]: CLOSURE   R6 6         ; R6 := closure(Function #7)
- 37 [-]: SETTABLE  R5 K31 R6    ; R5["SetCurrentConservationEncounterByCallPoint"] := R6
- 38 [-]: CLOSURE   R6 7         ; R6 := closure(Function #8)
- 39 [-]: SETTABLE  R5 K32 R6    ; R5["GetConservationEncounterByCallPoint"] := R6
- 40 [-]: CLOSURE   R6 8         ; R6 := closure(Function #9)
- 41 [-]: SETTABLE  R5 K33 R6    ; R5["GetConservationEncounterByHuntingState"] := R6
- 42 [-]: CLOSURE   R6 9         ; R6 := closure(Function #10)
- 43 [-]: SETTABLE  R5 K34 R6    ; R5["GetConservationEncounterForHint"] := R6
- 44 [-]: CLOSURE   R6 10        ; R6 := closure(Function #11)
- 45 [-]: MOVE      R0 R4        ; R0 := R4
- 46 [-]: MOVE      R0 R0        ; R0 := R0
- 47 [-]: SETTABLE  R5 K35 R6    ; R5["InitiatePitchGame"] := R6
- 48 [-]: CLOSURE   R6 11        ; R6 := closure(Function #12)
- 49 [-]: MOVE      R0 R4        ; R0 := R4
- 50 [-]: MOVE      R0 R0        ; R0 := R0
- 51 [-]: SETTABLE  R5 K36 R6    ; R5["PitchGameMatch"] := R6
- 52 [-]: CLOSURE   R6 12        ; R6 := closure(Function #13)
- 53 [-]: MOVE      R0 R4        ; R0 := R4
- 54 [-]: SETTABLE  R5 K37 R6    ; R5["GetPitchAtTime"] := R6
- 55 [-]: CLOSURE   R6 13        ; R6 := closure(Function #14)
- 56 [-]: MOVE      R0 R4        ; R0 := R4
- 57 [-]: SETTABLE  R5 K38 R6    ; R5["GetDisappearTimePercentage"] := R6
- 58 [-]: CLOSURE   R6 14        ; R6 := closure(Function #15)
- 59 [-]: MOVE      R0 R4        ; R0 := R4
- 60 [-]: SETTABLE  R5 K39 R6    ; R5["SetDisappearTime"] := R6
- 61 [-]: RETURN    R5 2         ; return R5
- 62 [-]: RETURN    R0 1         ; return 
+            1 [-]: DUPTABLE R0 10
+       2 [-]: LOADN R1 0   
+       3 [-]: SETTABLEKS R1 R0 K0 ["UNINITIALIZED"]
+       4 [-]: LOADN R1 1   
+       5 [-]: SETTABLEKS R1 R0 K1 ["INITIALIZED"]
+       6 [-]: LOADN R1 2   
+       7 [-]: SETTABLEKS R1 R0 K2 ["PITCH_GAME_INITIATED"]
+       8 [-]: LOADN R1 3   
+       9 [-]: SETTABLEKS R1 R0 K3 ["ANIMAL_RESPONSE"]
+      10 [-]: LOADN R1 4   
+      11 [-]: SETTABLEKS R1 R0 K4 ["DOING_PITCH_MATCHING"]
+      12 [-]: LOADN R1 5   
+      13 [-]: SETTABLEKS R1 R0 K5 ["CALL_MATCHED"]
+      14 [-]: LOADN R1 25  
+      15 [-]: SETTABLEKS R1 R0 K6 ["PITCH_GAME_CALLS_COMPLETE"]
+      16 [-]: LOADN R1 26  
+      17 [-]: SETTABLEKS R1 R0 K7 ["SPAWNED"]
+      18 [-]: LOADN R1 27  
+      19 [-]: SETTABLEKS R1 R0 K8 ["SLEPT"]
+      20 [-]: LOADN R1 28  
+      21 [-]: SETTABLEKS R1 R0 K9 ["ESCAPED"]
+      22 [-]: DUPCLOSURE R1 K11 []
+      23 [-]: MOVE R0 R0   
+      24 [-]: DUPCLOSURE R2 K12 []
+      25 [-]: DUPTABLE R3 31
+      26 [-]: SETTABLEKS R0 R3 K13 ["states"]
+      27 [-]: LOADN R4 0   
+      28 [-]: SETTABLEKS R4 R3 K14 ["MIN_PITCH"]
+      29 [-]: LOADN R4 20  
+      30 [-]: SETTABLEKS R4 R3 K15 ["MAX_PITCH"]
+      31 [-]: GETIMPORT R4 33 [nil]
+      32 [-]: LOADK R5 K34 ["AnimalCallPoint"]
+      33 [-]: CALL R4 1 1  
+      34 [-]: SETTABLEKS R4 R3 K16 ["callPointTag"]
+      35 [-]: DUPCLOSURE R4 K35 []
+      36 [-]: MOVE R0 R1   
+      37 [-]: SETTABLEKS R4 R3 K17 ["AddConservationEncounterState"]
+      38 [-]: DUPCLOSURE R4 K36 []
+      39 [-]: SETTABLEKS R4 R3 K18 ["EndEncounter"]
+      40 [-]: SETTABLEKS R2 R3 K19 ["GetCurrentConservationEncounter"]
+      41 [-]: DUPCLOSURE R4 K37 []
+      42 [-]: MOVE R0 R2   
+      43 [-]: SETTABLEKS R4 R3 K20 ["GetCurrentConservationEncounterState"]
+      44 [-]: DUPCLOSURE R4 K38 []
+      45 [-]: SETTABLEKS R4 R3 K21 ["SetCurrentConservationEncounterByStartPoint"]
+      46 [-]: DUPCLOSURE R4 K39 []
+      47 [-]: SETTABLEKS R4 R3 K22 ["SetCurrentConservationEncounterByCallPoint"]
+      48 [-]: DUPCLOSURE R4 K40 []
+      49 [-]: SETTABLEKS R4 R3 K23 ["GetConservationEncounterByCallPoint"]
+      50 [-]: DUPCLOSURE R4 K41 []
+      51 [-]: SETTABLEKS R4 R3 K24 ["GetConservationEncounterByHuntingState"]
+      52 [-]: DUPCLOSURE R4 K42 []
+      53 [-]: SETTABLEKS R4 R3 K25 ["GetConservationEncounterForHint"]
+      54 [-]: DUPCLOSURE R4 K43 []
+      55 [-]: MOVE R0 R2   
+      56 [-]: MOVE R0 R0   
+      57 [-]: SETTABLEKS R4 R3 K26 ["InitiatePitchGame"]
+      58 [-]: DUPCLOSURE R4 K44 []
+      59 [-]: MOVE R0 R2   
+      60 [-]: MOVE R0 R0   
+      61 [-]: SETTABLEKS R4 R3 K27 ["PitchGameMatch"]
+      62 [-]: DUPCLOSURE R4 K45 []
+      63 [-]: MOVE R0 R2   
+      64 [-]: SETTABLEKS R4 R3 K28 ["GetPitchAtTime"]
+      65 [-]: DUPCLOSURE R4 K46 []
+      66 [-]: MOVE R0 R2   
+      67 [-]: SETTABLEKS R4 R3 K29 ["GetDisappearTimePercentage"]
+      68 [-]: DUPCLOSURE R4 K47 []
+      69 [-]: MOVE R0 R2   
+      70 [-]: SETTABLEKS R4 R3 K30 ["SetDisappearTime"]
+      71 [-]: RETURN R3 1  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 18
 ; #Upvalues:       1
@@ -80,245 +85,68 @@
 ; Is_vararg:       0
 ; Max Stack Size:  3
 
-  1 [-]: NEWTABLE  R1 0 10      ; R1 := {}
-  2 [-]: SETTABLE  R1 K0 R0     ; R1["huntingState"] := R0
-  3 [-]: CLOSURE   R2 0         ; R2 := closure(Function #1.1)
-  4 [-]: SETTABLE  R1 K1 R2     ; R1["SetHint"] := R2
-  5 [-]: CLOSURE   R2 1         ; R2 := closure(Function #1.2)
-  6 [-]: SETTABLE  R1 K2 R2     ; R1["GetState"] := R2
-  7 [-]: CLOSURE   R2 2         ; R2 := closure(Function #1.3)
-  8 [-]: SETTABLE  R1 K3 R2     ; R1["SetState"] := R2
-  9 [-]: CLOSURE   R2 3         ; R2 := closure(Function #1.4)
- 10 [-]: SETTABLE  R1 K4 R2     ; R1["GetCallPoint"] := R2
- 11 [-]: CLOSURE   R2 4         ; R2 := closure(Function #1.5)
- 12 [-]: SETTABLE  R1 K5 R2     ; R1["SetCallPoint"] := R2
- 13 [-]: CLOSURE   R2 5         ; R2 := closure(Function #1.6)
- 14 [-]: SETTABLE  R1 K6 R2     ; R1["SetPitches"] := R2
- 15 [-]: CLOSURE   R2 6         ; R2 := closure(Function #1.7)
- 16 [-]: SETTABLE  R1 K7 R2     ; R1["GetPitchAtTime"] := R2
- 17 [-]: CLOSURE   R2 7         ; R2 := closure(Function #1.8)
- 18 [-]: GETUPVAL  R0 U0        ; R0 := U0
- 19 [-]: SETTABLE  R1 K8 R2     ; R1["IsEncounterOver"] := R2
- 20 [-]: CLOSURE   R2 8         ; R2 := closure(Function #1.9)
- 21 [-]: SETTABLE  R1 K9 R2     ; R1["MatchesAnimal"] := R2
- 22 [-]: RETURN    R1 2         ; return R1
- 23 [-]: RETURN    R0 1         ; return 
+       0 [-]: DUPTABLE R1 10
+       1 [-]: SETTABLEKS R0 R1 K0 ["huntingState"]
+       2 [-]: DUPCLOSURE R2 K11 []
+       3 [-]: SETTABLEKS R2 R1 K1 ["SetHint"]
+       4 [-]: DUPCLOSURE R2 K12 []
+       5 [-]: SETTABLEKS R2 R1 K2 ["GetState"]
+       6 [-]: DUPCLOSURE R2 K13 []
+       7 [-]: SETTABLEKS R2 R1 K3 ["SetState"]
+       8 [-]: DUPCLOSURE R2 K14 []
+       9 [-]: SETTABLEKS R2 R1 K4 ["GetCallPoint"]
+      10 [-]: DUPCLOSURE R2 K15 []
+      11 [-]: SETTABLEKS R2 R1 K5 ["SetCallPoint"]
+      12 [-]: DUPCLOSURE R2 K16 []
+      13 [-]: SETTABLEKS R2 R1 K6 ["SetPitches"]
+      14 [-]: DUPCLOSURE R2 K17 []
+      15 [-]: SETTABLEKS R2 R1 K7 ["GetPitchAtTime"]
+      16 [-]: DUPCLOSURE R2 K18 []
+      17 [-]: MOVE R2 R0   
+      18 [-]: SETTABLEKS R2 R1 K8 ["IsEncounterOver"]
+      19 [-]: DUPCLOSURE R2 K19 []
+      20 [-]: SETTABLEKS R2 R1 K9 ["MatchesAnimal"]
+      21 [-]: RETURN R1 1  
 
 
-; Function #1.1:
-;
-; Name:            
-; Defined at line: 23
-; #Upvalues:       0
-; #Parameters:     2
-; Is_vararg:       0
-; Max Stack Size:  2
-
-  1 [-]: SETTABLE  R0 K0 R1     ; R0["hint"] := R1
-  2 [-]: RETURN    R0 1         ; return 
-
-
-; Function #1.2:
-;
-; Name:            
-; Defined at line: 27
-; #Upvalues:       0
-; #Parameters:     1
-; Is_vararg:       0
-; Max Stack Size:  3
-
-  1 [-]: GETGLOBAL R1 K0        ; R1 := 0x7b998233
-  2 [-]: GETTABLE  R2 R0 K1     ; R2 := R0["huntingState"]
-  3 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  4 [-]: TEST      R1 0         ; if not R1 then PC := 8
-  5 [-]: JMP       8            ; PC := 8
-  6 [-]: CONST     R1 0         ; R1 := 0.000000
-  7 [-]: RETURN    R1 2         ; return R1
-  8 [-]: GETTABLE  R1 R0 K1     ; R1 := R0["huntingState"]
-  9 [-]: SELF      R1 R1 K2     ; R2 := R1; R1 := R1[0x53c3399f]
- 10 [-]: TAILCALL  R1 2 0       ; R1,... := R1(R2)
- 11 [-]: RETURN    R1 0         ; return R1,...
- 12 [-]: RETURN    R0 1         ; return 
-
-
-; Function #1.3:
-;
-; Name:            
-; Defined at line: 34
-; #Upvalues:       0
-; #Parameters:     2
-; Is_vararg:       0
-; Max Stack Size:  5
-
-  1 [-]: GETTABLE  R2 R0 K0     ; R2 := R0["huntingState"]
-  2 [-]: SELF      R2 R2 K1     ; R3 := R2; R2 := R2[0x05eeb9db]
-  3 [-]: MOVE      R4 R1        ; R4 := R1
-  4 [-]: CALL      R2 3 1       ; R2(R3,R4)
-  5 [-]: RETURN    R0 1         ; return 
-
-
-; Function #1.4:
-;
-; Name:            
-; Defined at line: 38
-; #Upvalues:       0
-; #Parameters:     1
-; Is_vararg:       0
-; Max Stack Size:  3
-
-  1 [-]: GETTABLE  R1 R0 K0     ; R1 := R0["huntingState"]
-  2 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1[0xead1e880]
-  3 [-]: TAILCALL  R1 2 0       ; R1,... := R1(R2)
-  4 [-]: RETURN    R1 0         ; return R1,...
-  5 [-]: RETURN    R0 1         ; return 
-
-
-; Function #1.5:
-;
-; Name:            
-; Defined at line: 42
-; #Upvalues:       0
-; #Parameters:     2
-; Is_vararg:       0
-; Max Stack Size:  5
-
-  1 [-]: GETTABLE  R2 R0 K0     ; R2 := R0["huntingState"]
-  2 [-]: SELF      R2 R2 K1     ; R3 := R2; R2 := R2[0xadfb12fc]
-  3 [-]: MOVE      R4 R1        ; R4 := R1
-  4 [-]: CALL      R2 3 1       ; R2(R3,R4)
-  5 [-]: RETURN    R0 1         ; return 
-
-
-; Function #1.6:
-;
-; Name:            
-; Defined at line: 46
-; #Upvalues:       0
-; #Parameters:     3
-; Is_vararg:       0
-; Max Stack Size:  7
-
-  1 [-]: GETTABLE  R3 R0 K0     ; R3 := R0["huntingState"]
-  2 [-]: SELF      R3 R3 K1     ; R4 := R3; R3 := R3[0x02cc7170]
-  3 [-]: MOVE      R5 R1        ; R5 := R1
-  4 [-]: MOVE      R6 R2        ; R6 := R2
-  5 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
-  6 [-]: RETURN    R0 1         ; return 
-
-
-; Function #1.7:
-;
-; Name:            
-; Defined at line: 50
-; #Upvalues:       0
-; #Parameters:     2
-; Is_vararg:       0
-; Max Stack Size:  5
-
-  1 [-]: GETTABLE  R2 R0 K0     ; R2 := R0["huntingState"]
-  2 [-]: SELF      R2 R2 K1     ; R3 := R2; R2 := R2[0x9e51979c]
-  3 [-]: MOVE      R4 R1        ; R4 := R1
-  4 [-]: TAILCALL  R2 3 0       ; R2,... := R2(R3,R4)
-  5 [-]: RETURN    R2 0         ; return R2,...
-  6 [-]: RETURN    R0 1         ; return 
-
-
-; Function #1.8:
-;
-; Name:            
-; Defined at line: 54
-; #Upvalues:       1
-; #Parameters:     1
-; Is_vararg:       0
-; Max Stack Size:  3
-
-  1 [-]: SELF      R1 R0 K0     ; R2 := R0; R1 := R0[0x53c3399f]
-  2 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  3 [-]: EQ        1 R1 K1      ; if R1 == 0.000000 then PC := 10
-  4 [-]: JMP       10           ; PC := 10
-  5 [-]: GETUPVAL  R2 U0        ; R2 := U0
-  6 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["SPAWNED"]
-  7 [-]: LE        1 R2 R1      ; if R2 <= R1 then PC := 10
-  8 [-]: JMP       10           ; PC := 10
-  9 [-]: LOADKB    R2 0 1       ; R2 := false; PC := 10
- 10 [-]: LOADKB    R2 1 0       ; R2 := true
- 11 [-]: RETURN    R2 2         ; return R2
- 12 [-]: RETURN    R0 1         ; return 
-
-
-; Function #1.9:
-;
-; Name:            
-; Defined at line: 59
-; #Upvalues:       0
-; #Parameters:     2
-; Is_vararg:       0
-; Max Stack Size:  6
-
-  1 [-]: GETTABLE  R2 R0 K0     ; R2 := R0["huntingState"]
-  2 [-]: SELF      R2 R2 K1     ; R3 := R2; R2 := R2[0xead1e880]
-  3 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  4 [-]: GETGLOBAL R3 K2        ; R3 := 0x7b998233
-  5 [-]: MOVE      R4 R2        ; R4 := R2
-  6 [-]: CALL      R3 2 2       ; R3 := R3(R4)
-  7 [-]: TEST      R3 1         ; if R3 then PC := 13
-  8 [-]: JMP       13           ; PC := 13
-  9 [-]: SELF      R3 R2 K3     ; R4 := R2; R3 := R2[0x08db51de]
- 10 [-]: MOVE      R5 R1        ; R5 := R1
- 11 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
- 12 [-]: JMP       15           ; PC := 15
- 13 [-]: LOADKB    R3 0 1       ; R3 := false; PC := 14
- 14 [-]: LOADKB    R3 1 0       ; R3 := true
- 15 [-]: RETURN    R3 2         ; return R3
- 16 [-]: RETURN    R0 1         ; return 
-
-
-; Function #2:
-;
 ; Name:            
 ; Defined at line: 66
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
-; Max Stack Size:  10
+; Max Stack Size:  9
 
-  1 [-]: GETGLOBAL R0 K0        ; R0 := _T
-  2 [-]: GETTABLE  R0 R0 K1     ; R0 := R0["currentConservationEncounter"]
-  3 [-]: TEST      R0 1         ; if R0 then PC := 6
-  4 [-]: JMP       6            ; PC := 6
-  5 [-]: RETURN    R0 1         ; return 
-  6 [-]: GETGLOBAL R1 K2        ; R1 := 0x7b998233
-  7 [-]: GETTABLE  R2 R0 K3     ; R2 := R0["huntingState"]
-  8 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  9 [-]: TEST      R1 0         ; if not R1 then PC := 32
- 10 [-]: JMP       32           ; PC := 32
- 11 [-]: GETGLOBAL R1 K0        ; R1 := _T
- 12 [-]: GETTABLE  R1 R1 K4     ; R1 := R1["activeConservationEncounters"]
- 13 [-]: LEN       R2 R1        ; R2 := # R1
- 14 [-]: CONST     R3 1         ; R3 := 1.000000
- 15 [-]: CONST     R4 -1        ; R4 := -1.000000
- 16 [-]: FORPREP   R2 28        ; R2 -= R4; PC := 28
- 17 [-]: GETTABLE  R6 R1 R5     ; R6 := R1[R5]
- 18 [-]: GETGLOBAL R7 K2        ; R7 := 0x7b998233
- 19 [-]: GETTABLE  R8 R6 K3     ; R8 := R6["huntingState"]
- 20 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 21 [-]: TEST      R7 0         ; if not R7 then PC := 28
- 22 [-]: JMP       28           ; PC := 28
- 23 [-]: GETGLOBAL R7 K5        ; R7 := 0x33bdd652
- 24 [-]: GETTABLE  R7 R7 K6     ; R7 := R7[0x9c1f3b5a]
- 25 [-]: MOVE      R8 R1        ; R8 := R1
- 26 [-]: MOVE      R9 R5        ; R9 := R5
- 27 [-]: CALL      R7 3 1       ; R7(R8,R9)
- 28 [-]: FORLOOP   R2 17        ; R2 += R4; if R2 <= R3 then begin PC := 17; R5 := R2 end
- 29 [-]: GETGLOBAL R7 K0        ; R7 := _T
- 30 [-]: SETTABLE  R7 K1 K7     ; R7["currentConservationEncounter"] := nil
- 31 [-]: RETURN    R0 1         ; return 
- 32 [-]: RETURN    R0 2         ; return R0
- 33 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R0 2 [nil]
+       1 [-]: JUMPIF R0 L0 
+       2 [-]: RETURN R0 0  
+L 0:   3 [-]: GETTABLEKS R2 R0 K3 ["huntingState"]
+       4 [-]: FASTCALL1 62 R2 L1
+       5 [-]: GETIMPORT R1 5 [nil]
+       6 [-]: CALL R1 1 1  
+L 1:   7 [-]: JUMPIFNOT R1 L6
+       8 [-]: GETIMPORT R1 7 [nil]
+       9 [-]: LENGTH R4 R1 
+      10 [-]: LOADN R2 1   
+      11 [-]: LOADN R3 -1  
+      12 [-]: FORNPREP R2 L5
+L 2:  13 [-]: GETTABLE R5 R1 R4
+      14 [-]: GETTABLEKS R7 R5 K3 ["huntingState"]
+      15 [-]: FASTCALL1 62 R7 L3
+      16 [-]: GETIMPORT R6 5 [nil]
+      17 [-]: CALL R6 1 1  
+L 3:  18 [-]: JUMPIFNOT R6 L4
+      19 [-]: GETIMPORT R6 10 [nil]
+      20 [-]: MOVE R7 R1   
+      21 [-]: MOVE R8 R4   
+      22 [-]: CALL R6 2 0  
+L 4:  23 [-]: FORNLOOP R2 L2
+L 5:  24 [-]: GETIMPORT R2 11 [nil]
+      25 [-]: LOADNIL R3   
+      26 [-]: SETTABLEKS R3 R2 K1 ["currentConservationEncounter"]
+      27 [-]: RETURN R0 0  
+L 6:  28 [-]: RETURN R0 1  
 
 
-; Function #3:
-;
 ; Name:            
 ; Defined at line: 97
 ; #Upvalues:       1
@@ -326,105 +154,90 @@
 ; Is_vararg:       0
 ; Max Stack Size:  5
 
-  1 [-]: GETGLOBAL R1 K0        ; R1 := _T
-  2 [-]: GETTABLE  R1 R1 K1     ; R1 := R1["activeConservationEncounters"]
-  3 [-]: TEST      R1 1         ; if R1 then PC := 8
-  4 [-]: JMP       8            ; PC := 8
-  5 [-]: GETGLOBAL R1 K0        ; R1 := _T
-  6 [-]: NEWTABLE  R2 0 0       ; R2 := {}
-  7 [-]: SETTABLE  R1 K1 R2     ; R1["activeConservationEncounters"] := R2
-  8 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  9 [-]: MOVE      R2 R0        ; R2 := R0
- 10 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 11 [-]: GETGLOBAL R2 K2        ; R2 := 0x33bdd652
- 12 [-]: GETTABLE  R2 R2 K3     ; R2 := R2[0x23d5322f]
- 13 [-]: GETGLOBAL R3 K0        ; R3 := _T
- 14 [-]: GETTABLE  R3 R3 K1     ; R3 := R3["activeConservationEncounters"]
- 15 [-]: MOVE      R4 R1        ; R4 := R1
- 16 [-]: CALL      R2 3 1       ; R2(R3,R4)
- 17 [-]: GETGLOBAL R2 K4        ; R2 := 0x7b998233
- 18 [-]: GETGLOBAL R3 K0        ; R3 := _T
- 19 [-]: GETTABLE  R3 R3 K5     ; R3 := R3["pendingRequestedConservationEncounter"]
- 20 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 21 [-]: TEST      R2 1         ; if R2 then PC := 46
- 22 [-]: JMP       46           ; PC := 46
- 23 [-]: SELF      R2 R0 K6     ; R3 := R0; R2 := R0[0x2b54251b]
- 24 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 25 [-]: GETGLOBAL R3 K4        ; R3 := 0x7b998233
- 26 [-]: MOVE      R4 R2        ; R4 := R2
- 27 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 28 [-]: TEST      R3 0         ; if not R3 then PC := 37
- 29 [-]: JMP       37           ; PC := 37
- 30 [-]: GETGLOBAL R3 K7        ; R3 := 0xcbd666e1
- 31 [-]: CONST     R4 0         ; R4 := 0.000000
- 32 [-]: CALL      R3 2 1       ; R3(R4)
- 33 [-]: SELF      R3 R0 K6     ; R4 := R0; R3 := R0[0x2b54251b]
- 34 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 35 [-]: MOVE      R2 R3        ; R2 := R3
- 36 [-]: JMP       25           ; PC := 25
- 37 [-]: GETGLOBAL R3 K0        ; R3 := _T
- 38 [-]: GETTABLE  R3 R3 K5     ; R3 := R3["pendingRequestedConservationEncounter"]
- 39 [-]: EQ        0 R2 R3      ; if R2 ~= R3 then PC := 52
- 40 [-]: JMP       52           ; PC := 52
- 41 [-]: GETGLOBAL R3 K0        ; R3 := _T
- 42 [-]: SETTABLE  R3 K8 R1     ; R3["currentConservationEncounter"] := R1
- 43 [-]: GETGLOBAL R3 K0        ; R3 := _T
- 44 [-]: SETTABLE  R3 K5 K9     ; R3["pendingRequestedConservationEncounter"] := nil
- 45 [-]: JMP       52           ; PC := 52
- 46 [-]: GETGLOBAL R3 K0        ; R3 := _T
- 47 [-]: GETTABLE  R3 R3 K8     ; R3 := R3["currentConservationEncounter"]
- 48 [-]: TEST      R3 1         ; if R3 then PC := 52
- 49 [-]: JMP       52           ; PC := 52
- 50 [-]: GETGLOBAL R3 K0        ; R3 := _T
- 51 [-]: SETTABLE  R3 K8 R1     ; R3["currentConservationEncounter"] := R1
- 52 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R1 2 [nil]
+       1 [-]: JUMPIF R1 L0 
+       2 [-]: GETIMPORT R1 3 [nil]
+       3 [-]: NEWTABLE R2 0 0
+       4 [-]: SETTABLEKS R2 R1 K1 ["activeConservationEncounters"]
+L 0:   5 [-]: GETUPVAL R1 0
+       6 [-]: MOVE R2 R0   
+       7 [-]: CALL R1 1 1  
+       8 [-]: GETIMPORT R3 2 [nil]
+       9 [-]: FASTCALL2 52 R3 R1 L1
+      10 [-]: MOVE R4 R1   
+      11 [-]: GETIMPORT R2 6 [nil]
+      12 [-]: CALL R2 2 0  
+L 1:  13 [-]: GETIMPORT R3 8 [nil]
+      14 [-]: FASTCALL1 62 R3 L2
+      15 [-]: GETIMPORT R2 10 [nil]
+      16 [-]: CALL R2 1 1  
+L 2:  17 [-]: JUMPIF R2 L6 
+      18 [-]: NAMECALL R2 R0 K11 [0x2B54251B]
+      19 [-]: CALL R2 1 1  
+L 3:  20 [-]: FASTCALL1 62 R2 L4
+      21 [-]: MOVE R4 R2   
+      22 [-]: GETIMPORT R3 10 [nil]
+      23 [-]: CALL R3 1 1  
+L 4:  24 [-]: JUMPIFNOT R3 L5
+      25 [-]: GETIMPORT R3 13 [nil]
+      26 [-]: LOADN R4 0   
+      27 [-]: CALL R3 1 0  
+      28 [-]: NAMECALL R3 R0 K11 [0x2B54251B]
+      29 [-]: CALL R3 1 1  
+      30 [-]: MOVE R2 R3   
+      31 [-]: JUMPBACK L3  
+L 5:  32 [-]: GETIMPORT R3 8 [nil]
+      33 [-]: JUMPIFNOTEQ R2 R3 L7
+      34 [-]: GETIMPORT R3 3 [nil]
+      35 [-]: SETTABLEKS R1 R3 K14 ["currentConservationEncounter"]
+      36 [-]: GETIMPORT R3 3 [nil]
+      37 [-]: LOADNIL R4   
+      38 [-]: SETTABLEKS R4 R3 K7 ["pendingRequestedConservationEncounter"]
+      39 [-]: RETURN R0 0  
+L 6:  40 [-]: GETIMPORT R2 15 [nil]
+      41 [-]: JUMPIF R2 L7 
+      42 [-]: GETIMPORT R2 3 [nil]
+      43 [-]: SETTABLEKS R1 R2 K14 ["currentConservationEncounter"]
+L 7:  44 [-]: RETURN R0 0  
 
 
-; Function #4:
-;
 ; Name:            
 ; Defined at line: 120
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  11
+; Max Stack Size:  10
 
-  1 [-]: GETGLOBAL R1 K0        ; R1 := _T
-  2 [-]: GETTABLE  R1 R1 K1     ; R1 := R1["currentConservationEncounter"]
-  3 [-]: TEST      R1 0         ; if not R1 then PC := 11
-  4 [-]: JMP       11           ; PC := 11
-  5 [-]: GETTABLE  R2 R1 K2     ; R2 := R1["huntingState"]
-  6 [-]: GETTABLE  R3 R0 K2     ; R3 := R0["huntingState"]
-  7 [-]: EQ        0 R2 R3      ; if R2 ~= R3 then PC := 11
-  8 [-]: JMP       11           ; PC := 11
-  9 [-]: GETGLOBAL R2 K0        ; R2 := _T
- 10 [-]: SETTABLE  R2 K1 K3     ; R2["currentConservationEncounter"] := nil
- 11 [-]: GETGLOBAL R2 K0        ; R2 := _T
- 12 [-]: GETTABLE  R2 R2 K4     ; R2 := R2["activeConservationEncounters"]
- 13 [-]: CONST     R3 1         ; R3 := 1.000000
- 14 [-]: LEN       R4 R2        ; R4 := # R2
- 15 [-]: CONST     R5 1         ; R5 := 1.000000
- 16 [-]: FORPREP   R3 28        ; R3 -= R5; PC := 28
- 17 [-]: GETTABLE  R7 R2 R6     ; R7 := R2[R6]
- 18 [-]: GETTABLE  R8 R7 K2     ; R8 := R7["huntingState"]
- 19 [-]: GETTABLE  R9 R0 K2     ; R9 := R0["huntingState"]
- 20 [-]: EQ        0 R8 R9      ; if R8 ~= R9 then PC := 28
- 21 [-]: JMP       28           ; PC := 28
- 22 [-]: GETGLOBAL R8 K5        ; R8 := 0x33bdd652
- 23 [-]: GETTABLE  R8 R8 K6     ; R8 := R8[0x9c1f3b5a]
- 24 [-]: MOVE      R9 R2        ; R9 := R2
- 25 [-]: MOVE      R10 R6       ; R10 := R6
- 26 [-]: CALL      R8 3 1       ; R8(R9,R10)
- 27 [-]: JMP       29           ; PC := 29
- 28 [-]: FORLOOP   R3 17        ; R3 += R5; if R3 <= R4 then begin PC := 17; R6 := R3 end
- 29 [-]: GETTABLE  R8 R0 K2     ; R8 := R0["huntingState"]
- 30 [-]: SELF      R8 R8 K7     ; R9 := R8; R8 := R8[0x2c7a2400]
- 31 [-]: CALL      R8 2 1       ; R8(R9)
- 32 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R1 2 [nil]
+       1 [-]: JUMPIFNOT R1 L0
+       2 [-]: GETTABLEKS R2 R1 K3 ["huntingState"]
+       3 [-]: GETTABLEKS R3 R0 K3 ["huntingState"]
+       4 [-]: JUMPIFNOTEQ R2 R3 L0
+       5 [-]: GETIMPORT R2 4 [nil]
+       6 [-]: LOADNIL R3   
+       7 [-]: SETTABLEKS R3 R2 K1 ["currentConservationEncounter"]
+L 0:   8 [-]: GETIMPORT R2 6 [nil]
+       9 [-]: LOADN R5 1   
+      10 [-]: LENGTH R3 R2 
+      11 [-]: LOADN R4 1   
+      12 [-]: FORNPREP R3 L3
+L 1:  13 [-]: GETTABLE R6 R2 R5
+      14 [-]: GETTABLEKS R7 R6 K3 ["huntingState"]
+      15 [-]: GETTABLEKS R8 R0 K3 ["huntingState"]
+      16 [-]: JUMPIFNOTEQ R7 R8 L2
+      17 [-]: GETIMPORT R7 9 [nil]
+      18 [-]: MOVE R8 R2   
+      19 [-]: MOVE R9 R5   
+      20 [-]: CALL R7 2 0  
+      21 [-]: JUMP L3
+     
+L 2:  22 [-]: FORNLOOP R3 L1
+L 3:  23 [-]: GETTABLEKS R3 R0 K3 ["huntingState"]
+      24 [-]: NAMECALL R3 R3 K10 [0x2C7A2400]
+      25 [-]: CALL R3 1 0  
+      26 [-]: RETURN R0 0  
 
 
-; Function #5:
-;
 ; Name:            
 ; Defined at line: 142
 ; #Upvalues:       1
@@ -432,161 +245,139 @@
 ; Is_vararg:       0
 ; Max Stack Size:  3
 
-  1 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  2 [-]: CALL      R0 1 2       ; R0 := R0()
-  3 [-]: TEST      R0 1         ; if R0 then PC := 7
-  4 [-]: JMP       7            ; PC := 7
-  5 [-]: CONST     R1 0         ; R1 := 0.000000
-  6 [-]: RETURN    R1 2         ; return R1
-  7 [-]: GETTABLE  R1 R0 K0     ; R1 := R0["huntingState"]
-  8 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1[0x53c3399f]
-  9 [-]: TAILCALL  R1 2 0       ; R1,... := R1(R2)
- 10 [-]: RETURN    R1 0         ; return R1,...
- 11 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETUPVAL R0 0
+       1 [-]: CALL R0 0 1  
+       2 [-]: JUMPIF R0 L0 
+       3 [-]: LOADN R1 0   
+       4 [-]: RETURN R1 1  
+L 0:   5 [-]: GETTABLEKS R1 R0 K0 ["huntingState"]
+       6 [-]: NAMECALL R1 R1 K1 [0x53C3399F]
+       7 [-]: CALL R1 1 -1 
+       8 [-]: RETURN R1 -1 
 
 
-; Function #6:
-;
 ; Name:            
 ; Defined at line: 152
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  10
+; Max Stack Size:  9
 
-  1 [-]: GETGLOBAL R1 K0        ; R1 := _T
-  2 [-]: GETTABLE  R1 R1 K1     ; R1 := R1["activeConservationEncounters"]
-  3 [-]: LEN       R1 R1        ; R1 := # R1
-  4 [-]: CONST     R2 1         ; R2 := 1.000000
-  5 [-]: CONST     R3 -1        ; R3 := -1.000000
-  6 [-]: FORPREP   R1 42        ; R1 -= R3; PC := 42
-  7 [-]: GETGLOBAL R5 K0        ; R5 := _T
-  8 [-]: GETTABLE  R5 R5 K1     ; R5 := R5["activeConservationEncounters"]
-  9 [-]: GETTABLE  R5 R5 R4     ; R5 := R5[R4]
- 10 [-]: GETGLOBAL R6 K2        ; R6 := 0x7b998233
- 11 [-]: GETTABLE  R7 R5 K3     ; R7 := R5["huntingState"]
- 12 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 13 [-]: TEST      R6 0         ; if not R6 then PC := 22
- 14 [-]: JMP       22           ; PC := 22
- 15 [-]: GETGLOBAL R6 K4        ; R6 := 0x33bdd652
- 16 [-]: GETTABLE  R6 R6 K5     ; R6 := R6[0x9c1f3b5a]
- 17 [-]: GETGLOBAL R7 K0        ; R7 := _T
- 18 [-]: GETTABLE  R7 R7 K1     ; R7 := R7["activeConservationEncounters"]
- 19 [-]: MOVE      R8 R4        ; R8 := R4
- 20 [-]: CALL      R6 3 1       ; R6(R7,R8)
- 21 [-]: JMP       42           ; PC := 42
- 22 [-]: GETTABLE  R6 R5 K3     ; R6 := R5["huntingState"]
- 23 [-]: SELF      R7 R6 K6     ; R8 := R6; R7 := R6[0x2b54251b]
- 24 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 25 [-]: GETGLOBAL R8 K2        ; R8 := 0x7b998233
- 26 [-]: MOVE      R9 R7        ; R9 := R7
- 27 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 28 [-]: TEST      R8 0         ; if not R8 then PC := 37
- 29 [-]: JMP       37           ; PC := 37
- 30 [-]: GETGLOBAL R8 K7        ; R8 := 0xcbd666e1
- 31 [-]: CONST     R9 0         ; R9 := 0.000000
- 32 [-]: CALL      R8 2 1       ; R8(R9)
- 33 [-]: SELF      R8 R6 K6     ; R9 := R6; R8 := R6[0x2b54251b]
- 34 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 35 [-]: MOVE      R7 R8        ; R7 := R8
- 36 [-]: JMP       25           ; PC := 25
- 37 [-]: EQ        0 R7 R0      ; if R7 ~= R0 then PC := 42
- 38 [-]: JMP       42           ; PC := 42
- 39 [-]: GETGLOBAL R8 K0        ; R8 := _T
- 40 [-]: SETTABLE  R8 K8 R5     ; R8["currentConservationEncounter"] := R5
- 41 [-]: RETURN    R0 1         ; return 
- 42 [-]: FORLOOP   R1 7         ; R1 += R3; if R1 <= R2 then begin PC := 7; R4 := R1 end
- 43 [-]: GETGLOBAL R8 K0        ; R8 := _T
- 44 [-]: SETTABLE  R8 K9 R0     ; R8["pendingRequestedConservationEncounter"] := R0
- 45 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R4 2 [nil]
+       1 [-]: LENGTH R3 R4 
+       2 [-]: LOADN R1 1   
+       3 [-]: LOADN R2 -1  
+       4 [-]: FORNPREP R1 L7
+L 0:   5 [-]: GETIMPORT R5 2 [nil]
+       6 [-]: GETTABLE R4 R5 R3
+       7 [-]: GETTABLEKS R6 R4 K3 ["huntingState"]
+       8 [-]: FASTCALL1 62 R6 L1
+       9 [-]: GETIMPORT R5 5 [nil]
+      10 [-]: CALL R5 1 1  
+L 1:  11 [-]: JUMPIFNOT R5 L2
+      12 [-]: GETIMPORT R5 8 [nil]
+      13 [-]: GETIMPORT R6 2 [nil]
+      14 [-]: MOVE R7 R3   
+      15 [-]: CALL R5 2 0  
+      16 [-]: JUMP L6
+     
+L 2:  17 [-]: GETTABLEKS R5 R4 K3 ["huntingState"]
+      18 [-]: NAMECALL R6 R5 K9 [0x2B54251B]
+      19 [-]: CALL R6 1 1  
+L 3:  20 [-]: FASTCALL1 62 R6 L4
+      21 [-]: MOVE R8 R6   
+      22 [-]: GETIMPORT R7 5 [nil]
+      23 [-]: CALL R7 1 1  
+L 4:  24 [-]: JUMPIFNOT R7 L5
+      25 [-]: GETIMPORT R7 11 [nil]
+      26 [-]: LOADN R8 0   
+      27 [-]: CALL R7 1 0  
+      28 [-]: NAMECALL R7 R5 K9 [0x2B54251B]
+      29 [-]: CALL R7 1 1  
+      30 [-]: MOVE R6 R7   
+      31 [-]: JUMPBACK L3  
+L 5:  32 [-]: JUMPIFNOTEQ R6 R0 L6
+      33 [-]: GETIMPORT R7 12 [nil]
+      34 [-]: SETTABLEKS R4 R7 K13 ["currentConservationEncounter"]
+      35 [-]: RETURN R0 0  
+L 6:  36 [-]: FORNLOOP R1 L0
+L 7:  37 [-]: GETIMPORT R1 12 [nil]
+      38 [-]: SETTABLEKS R0 R1 K14 ["pendingRequestedConservationEncounter"]
+      39 [-]: RETURN R0 0  
 
 
-; Function #7:
-;
 ; Name:            
 ; Defined at line: 175
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  9
+; Max Stack Size:  8
 
-  1 [-]: GETGLOBAL R1 K0        ; R1 := _T
-  2 [-]: GETTABLE  R1 R1 K1     ; R1 := R1["activeConservationEncounters"]
-  3 [-]: LEN       R1 R1        ; R1 := # R1
-  4 [-]: CONST     R2 1         ; R2 := 1.000000
-  5 [-]: CONST     R3 -1        ; R3 := -1.000000
-  6 [-]: FORPREP   R1 31        ; R1 -= R3; PC := 31
-  7 [-]: GETGLOBAL R5 K0        ; R5 := _T
-  8 [-]: GETTABLE  R5 R5 K1     ; R5 := R5["activeConservationEncounters"]
-  9 [-]: GETTABLE  R5 R5 R4     ; R5 := R5[R4]
- 10 [-]: GETGLOBAL R6 K2        ; R6 := 0x7b998233
- 11 [-]: GETTABLE  R7 R5 K3     ; R7 := R5["huntingState"]
- 12 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 13 [-]: TEST      R6 0         ; if not R6 then PC := 22
- 14 [-]: JMP       22           ; PC := 22
- 15 [-]: GETGLOBAL R6 K4        ; R6 := 0x33bdd652
- 16 [-]: GETTABLE  R6 R6 K5     ; R6 := R6[0x9c1f3b5a]
- 17 [-]: GETGLOBAL R7 K0        ; R7 := _T
- 18 [-]: GETTABLE  R7 R7 K1     ; R7 := R7["activeConservationEncounters"]
- 19 [-]: MOVE      R8 R4        ; R8 := R4
- 20 [-]: CALL      R6 3 1       ; R6(R7,R8)
- 21 [-]: JMP       31           ; PC := 31
- 22 [-]: GETTABLE  R6 R5 K3     ; R6 := R5["huntingState"]
- 23 [-]: SELF      R6 R6 K6     ; R7 := R6; R6 := R6[0xae5d3be7]
- 24 [-]: MOVE      R8 R0        ; R8 := R0
- 25 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
- 26 [-]: TEST      R6 0         ; if not R6 then PC := 31
- 27 [-]: JMP       31           ; PC := 31
- 28 [-]: GETGLOBAL R6 K0        ; R6 := _T
- 29 [-]: SETTABLE  R6 K7 R5     ; R6["currentConservationEncounter"] := R5
- 30 [-]: JMP       32           ; PC := 32
- 31 [-]: FORLOOP   R1 7         ; R1 += R3; if R1 <= R2 then begin PC := 7; R4 := R1 end
- 32 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R4 2 [nil]
+       1 [-]: LENGTH R3 R4 
+       2 [-]: LOADN R1 1   
+       3 [-]: LOADN R2 -1  
+       4 [-]: FORNPREP R1 L4
+L 0:   5 [-]: GETIMPORT R5 2 [nil]
+       6 [-]: GETTABLE R4 R5 R3
+       7 [-]: GETTABLEKS R6 R4 K3 ["huntingState"]
+       8 [-]: FASTCALL1 62 R6 L1
+       9 [-]: GETIMPORT R5 5 [nil]
+      10 [-]: CALL R5 1 1  
+L 1:  11 [-]: JUMPIFNOT R5 L2
+      12 [-]: GETIMPORT R5 8 [nil]
+      13 [-]: GETIMPORT R6 2 [nil]
+      14 [-]: MOVE R7 R3   
+      15 [-]: CALL R5 2 0  
+      16 [-]: JUMP L3
+     
+L 2:  17 [-]: GETTABLEKS R5 R4 K3 ["huntingState"]
+      18 [-]: MOVE R7 R0   
+      19 [-]: NAMECALL R5 R5 K9 [0xAE5D3BE7]
+      20 [-]: CALL R5 2 1  
+      21 [-]: JUMPIFNOT R5 L3
+      22 [-]: GETIMPORT R5 10 [nil]
+      23 [-]: SETTABLEKS R4 R5 K11 ["currentConservationEncounter"]
+      24 [-]: RETURN R0 0  
+L 3:  25 [-]: FORNLOOP R1 L0
+L 4:  26 [-]: RETURN R0 0  
 
 
-; Function #8:
-;
 ; Name:            
 ; Defined at line: 187
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  9
+; Max Stack Size:  8
 
-  1 [-]: GETGLOBAL R1 K0        ; R1 := _T
-  2 [-]: GETTABLE  R1 R1 K1     ; R1 := R1["activeConservationEncounters"]
-  3 [-]: LEN       R1 R1        ; R1 := # R1
-  4 [-]: CONST     R2 1         ; R2 := 1.000000
-  5 [-]: CONST     R3 -1        ; R3 := -1.000000
-  6 [-]: FORPREP   R1 29        ; R1 -= R3; PC := 29
-  7 [-]: GETGLOBAL R5 K0        ; R5 := _T
-  8 [-]: GETTABLE  R5 R5 K1     ; R5 := R5["activeConservationEncounters"]
-  9 [-]: GETTABLE  R5 R5 R4     ; R5 := R5[R4]
- 10 [-]: GETGLOBAL R6 K2        ; R6 := 0x7b998233
- 11 [-]: GETTABLE  R7 R5 K3     ; R7 := R5["huntingState"]
- 12 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 13 [-]: TEST      R6 0         ; if not R6 then PC := 22
- 14 [-]: JMP       22           ; PC := 22
- 15 [-]: GETGLOBAL R6 K4        ; R6 := 0x33bdd652
- 16 [-]: GETTABLE  R6 R6 K5     ; R6 := R6[0x9c1f3b5a]
- 17 [-]: GETGLOBAL R7 K0        ; R7 := _T
- 18 [-]: GETTABLE  R7 R7 K1     ; R7 := R7["activeConservationEncounters"]
- 19 [-]: MOVE      R8 R4        ; R8 := R4
- 20 [-]: CALL      R6 3 1       ; R6(R7,R8)
- 21 [-]: JMP       29           ; PC := 29
- 22 [-]: GETTABLE  R6 R5 K3     ; R6 := R5["huntingState"]
- 23 [-]: SELF      R6 R6 K6     ; R7 := R6; R6 := R6[0xae5d3be7]
- 24 [-]: MOVE      R8 R0        ; R8 := R0
- 25 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
- 26 [-]: TEST      R6 0         ; if not R6 then PC := 29
- 27 [-]: JMP       29           ; PC := 29
- 28 [-]: RETURN    R5 2         ; return R5
- 29 [-]: FORLOOP   R1 7         ; R1 += R3; if R1 <= R2 then begin PC := 7; R4 := R1 end
- 30 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R4 2 [nil]
+       1 [-]: LENGTH R3 R4 
+       2 [-]: LOADN R1 1   
+       3 [-]: LOADN R2 -1  
+       4 [-]: FORNPREP R1 L4
+L 0:   5 [-]: GETIMPORT R5 2 [nil]
+       6 [-]: GETTABLE R4 R5 R3
+       7 [-]: GETTABLEKS R6 R4 K3 ["huntingState"]
+       8 [-]: FASTCALL1 62 R6 L1
+       9 [-]: GETIMPORT R5 5 [nil]
+      10 [-]: CALL R5 1 1  
+L 1:  11 [-]: JUMPIFNOT R5 L2
+      12 [-]: GETIMPORT R5 8 [nil]
+      13 [-]: GETIMPORT R6 2 [nil]
+      14 [-]: MOVE R7 R3   
+      15 [-]: CALL R5 2 0  
+      16 [-]: JUMP L3
+     
+L 2:  17 [-]: GETTABLEKS R5 R4 K3 ["huntingState"]
+      18 [-]: MOVE R7 R0   
+      19 [-]: NAMECALL R5 R5 K9 [0xAE5D3BE7]
+      20 [-]: CALL R5 2 1  
+      21 [-]: JUMPIFNOT R5 L3
+      22 [-]: RETURN R4 1  
+L 3:  23 [-]: FORNLOOP R1 L0
+L 4:  24 [-]: RETURN R0 0  
 
 
-; Function #9:
-;
 ; Name:            
 ; Defined at line: 198
 ; #Upvalues:       0
@@ -594,24 +385,20 @@
 ; Is_vararg:       0
 ; Max Stack Size:  7
 
-  1 [-]: GETGLOBAL R1 K0        ; R1 := _T
-  2 [-]: GETTABLE  R1 R1 K1     ; R1 := R1["activeConservationEncounters"]
-  3 [-]: CONST     R2 1         ; R2 := 1.000000
-  4 [-]: LEN       R3 R1        ; R3 := # R1
-  5 [-]: CONST     R4 1         ; R4 := 1.000000
-  6 [-]: FORPREP   R2 13        ; R2 -= R4; PC := 13
-  7 [-]: GETTABLE  R6 R1 R5     ; R6 := R1[R5]
-  8 [-]: GETTABLE  R6 R6 K2     ; R6 := R6["huntingState"]
-  9 [-]: EQ        0 R6 R0      ; if R6 ~= R0 then PC := 13
- 10 [-]: JMP       13           ; PC := 13
- 11 [-]: GETTABLE  R6 R1 R5     ; R6 := R1[R5]
- 12 [-]: RETURN    R6 2         ; return R6
- 13 [-]: FORLOOP   R2 7         ; R2 += R4; if R2 <= R3 then begin PC := 7; R5 := R2 end
- 14 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R1 2 [nil]
+       1 [-]: LOADN R4 1   
+       2 [-]: LENGTH R2 R1 
+       3 [-]: LOADN R3 1   
+       4 [-]: FORNPREP R2 L2
+L 0:   5 [-]: GETTABLE R6 R1 R4
+       6 [-]: GETTABLEKS R5 R6 K3 ["huntingState"]
+       7 [-]: JUMPIFNOTEQ R5 R0 L1
+       8 [-]: GETTABLE R5 R1 R4
+       9 [-]: RETURN R5 1  
+L 1:  10 [-]: FORNLOOP R2 L0
+L 2:  11 [-]: RETURN R0 0  
 
 
-; Function #10:
-;
 ; Name:            
 ; Defined at line: 207
 ; #Upvalues:       0
@@ -619,66 +406,56 @@
 ; Is_vararg:       0
 ; Max Stack Size:  7
 
-  1 [-]: GETGLOBAL R1 K0        ; R1 := _T
-  2 [-]: GETTABLE  R1 R1 K1     ; R1 := R1["activeConservationEncounters"]
-  3 [-]: CONST     R2 1         ; R2 := 1.000000
-  4 [-]: LEN       R3 R1        ; R3 := # R1
-  5 [-]: CONST     R4 1         ; R4 := 1.000000
-  6 [-]: FORPREP   R2 13        ; R2 -= R4; PC := 13
-  7 [-]: GETTABLE  R6 R1 R5     ; R6 := R1[R5]
-  8 [-]: GETTABLE  R6 R6 K2     ; R6 := R6["hint"]
-  9 [-]: EQ        0 R6 R0      ; if R6 ~= R0 then PC := 13
- 10 [-]: JMP       13           ; PC := 13
- 11 [-]: GETTABLE  R6 R1 R5     ; R6 := R1[R5]
- 12 [-]: RETURN    R6 2         ; return R6
- 13 [-]: FORLOOP   R2 7         ; R2 += R4; if R2 <= R3 then begin PC := 7; R5 := R2 end
- 14 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R1 2 [nil]
+       1 [-]: LOADN R4 1   
+       2 [-]: LENGTH R2 R1 
+       3 [-]: LOADN R3 1   
+       4 [-]: FORNPREP R2 L2
+L 0:   5 [-]: GETTABLE R6 R1 R4
+       6 [-]: GETTABLEKS R5 R6 K3 ["hint"]
+       7 [-]: JUMPIFNOTEQ R5 R0 L1
+       8 [-]: GETTABLE R5 R1 R4
+       9 [-]: RETURN R5 1  
+L 1:  10 [-]: FORNLOOP R2 L0
+L 2:  11 [-]: RETURN R0 0  
 
 
-; Function #11:
-;
 ; Name:            
 ; Defined at line: 216
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  5
+; Max Stack Size:  6
 
-  1 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  2 [-]: CALL      R1 1 2       ; R1 := R1()
-  3 [-]: TEST      R1 0         ; if not R1 then PC := 10
-  4 [-]: JMP       10           ; PC := 10
-  5 [-]: GETTABLE  R2 R1 K0     ; R2 := R1["huntingState"]
-  6 [-]: SELF      R2 R2 K1     ; R3 := R2; R2 := R2[0x05eeb9db]
-  7 [-]: GETUPVAL  R4 U1        ; R4 := U1
-  8 [-]: GETTABLE  R4 R4 K2     ; R4 := R4["PITCH_GAME_INITIATED"]
-  9 [-]: CALL      R2 3 1       ; R2(R3,R4)
- 10 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETUPVAL R1 0
+       1 [-]: CALL R1 0 1  
+       2 [-]: JUMPIFNOT R1 L0
+       3 [-]: GETTABLEKS R2 R1 K0 ["huntingState"]
+       4 [-]: GETUPVAL R5 1
+       5 [-]: GETTABLEKS R4 R5 K1 ["PITCH_GAME_INITIATED"]
+       6 [-]: NAMECALL R2 R2 K2 [0x05EEB9DB]
+       7 [-]: CALL R2 2 0  
+L 0:   8 [-]: RETURN R0 0  
 
 
-; Function #12:
-;
 ; Name:            
 ; Defined at line: 224
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  5
+; Max Stack Size:  6
 
-  1 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  2 [-]: CALL      R1 1 2       ; R1 := R1()
-  3 [-]: TEST      R1 0         ; if not R1 then PC := 10
-  4 [-]: JMP       10           ; PC := 10
-  5 [-]: GETTABLE  R2 R1 K0     ; R2 := R1["huntingState"]
-  6 [-]: SELF      R2 R2 K1     ; R3 := R2; R2 := R2[0x05eeb9db]
-  7 [-]: GETUPVAL  R4 U1        ; R4 := U1
-  8 [-]: GETTABLE  R4 R4 K2     ; R4 := R4["CALL_MATCHED"]
-  9 [-]: CALL      R2 3 1       ; R2(R3,R4)
- 10 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETUPVAL R1 0
+       1 [-]: CALL R1 0 1  
+       2 [-]: JUMPIFNOT R1 L0
+       3 [-]: GETTABLEKS R2 R1 K0 ["huntingState"]
+       4 [-]: GETUPVAL R5 1
+       5 [-]: GETTABLEKS R4 R5 K1 ["CALL_MATCHED"]
+       6 [-]: NAMECALL R2 R2 K2 [0x05EEB9DB]
+       7 [-]: CALL R2 2 0  
+L 0:   8 [-]: RETURN R0 0  
 
 
-; Function #13:
-;
 ; Name:            
 ; Defined at line: 232
 ; #Upvalues:       1
@@ -686,21 +463,17 @@
 ; Is_vararg:       0
 ; Max Stack Size:  5
 
-  1 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  2 [-]: CALL      R1 1 2       ; R1 := R1()
-  3 [-]: TEST      R1 1         ; if R1 then PC := 7
-  4 [-]: JMP       7            ; PC := 7
-  5 [-]: CONST     R2 0         ; R2 := 0.000000
-  6 [-]: RETURN    R2 2         ; return R2
-  7 [-]: SELF      R2 R1 K0     ; R3 := R1; R2 := R1[0x9e51979c]
-  8 [-]: MOVE      R4 R0        ; R4 := R0
-  9 [-]: TAILCALL  R2 3 0       ; R2,... := R2(R3,R4)
- 10 [-]: RETURN    R2 0         ; return R2,...
- 11 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETUPVAL R1 0
+       1 [-]: CALL R1 0 1  
+       2 [-]: JUMPIF R1 L0 
+       3 [-]: LOADN R2 0   
+       4 [-]: RETURN R2 1  
+L 0:   5 [-]: MOVE R4 R0   
+       6 [-]: NAMECALL R2 R1 K0 [0x9E51979C]
+       7 [-]: CALL R2 2 -1 
+       8 [-]: RETURN R2 -1 
 
 
-; Function #14:
-;
 ; Name:            
 ; Defined at line: 241
 ; #Upvalues:       1
@@ -708,21 +481,17 @@
 ; Is_vararg:       0
 ; Max Stack Size:  3
 
-  1 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  2 [-]: CALL      R0 1 2       ; R0 := R0()
-  3 [-]: TEST      R0 0         ; if not R0 then PC := 9
-  4 [-]: JMP       9            ; PC := 9
-  5 [-]: GETTABLE  R1 R0 K0     ; R1 := R0["huntingState"]
-  6 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1[0xc1908a7a]
-  7 [-]: TAILCALL  R1 2 0       ; R1,... := R1(R2)
-  8 [-]: RETURN    R1 0         ; return R1,...
-  9 [-]: CONST     R1 0         ; R1 := 0.000000
- 10 [-]: RETURN    R1 2         ; return R1
- 11 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETUPVAL R0 0
+       1 [-]: CALL R0 0 1  
+       2 [-]: JUMPIFNOT R0 L0
+       3 [-]: GETTABLEKS R1 R0 K0 ["huntingState"]
+       4 [-]: NAMECALL R1 R1 K1 [0xC1908A7A]
+       5 [-]: CALL R1 1 -1 
+       6 [-]: RETURN R1 -1 
+L 0:   7 [-]: LOADN R1 0   
+       8 [-]: RETURN R1 1  
 
 
-; Function #15:
-;
 ; Name:            
 ; Defined at line: 250
 ; #Upvalues:       1
@@ -730,18 +499,18 @@
 ; Is_vararg:       0
 ; Max Stack Size:  6
 
-  1 [-]: GETUPVAL  R2 U0        ; R2 := U0
-  2 [-]: CALL      R2 1 2       ; R2 := R2()
-  3 [-]: TEST      R2 0         ; if not R2 then PC := 13
-  4 [-]: JMP       13           ; PC := 13
-  5 [-]: GETTABLE  R3 R2 K0     ; R3 := R2["huntingState"]
-  6 [-]: SELF      R3 R3 K1     ; R4 := R3; R3 := R3[0x9b478213]
-  7 [-]: MOVE      R5 R0        ; R5 := R0
-  8 [-]: CALL      R3 3 1       ; R3(R4,R5)
-  9 [-]: GETTABLE  R3 R2 K0     ; R3 := R2["huntingState"]
- 10 [-]: SELF      R3 R3 K2     ; R4 := R3; R3 := R3[0xf399668c]
- 11 [-]: MOVE      R5 R1        ; R5 := R1
- 12 [-]: CALL      R3 3 1       ; R3(R4,R5)
- 13 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETUPVAL R2 0
+       1 [-]: CALL R2 0 1  
+       2 [-]: JUMPIFNOT R2 L0
+       3 [-]: GETTABLEKS R3 R2 K0 ["huntingState"]
+       4 [-]: MOVE R5 R0   
+       5 [-]: NAMECALL R3 R3 K1 [0x9B478213]
+       6 [-]: CALL R3 2 0  
+       7 [-]: GETTABLEKS R3 R2 K0 ["huntingState"]
+       8 [-]: MOVE R5 R1   
+       9 [-]: NAMECALL R3 R3 K2 [0xF399668C]
+      10 [-]: CALL R3 2 0  
+L 0:  11 [-]: RETURN R0 0  
+
 
 

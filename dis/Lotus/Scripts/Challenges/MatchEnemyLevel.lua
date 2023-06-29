@@ -1,27 +1,20 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
+; Is_vararg:       1
 ; Max Stack Size:  2
 
-  1 [-]: CLOSURE   R0 0         ; R0 := closure(Function #1)
-  2 [-]: CLOSURE   R1 1         ; R1 := closure(Function #2)
-  3 [-]: MOVE      R0 R0        ; R0 := R0
-  4 [-]: SETGLOBAL R1 K0        ; MatchTagEvent := R1
-  5 [-]: CLOSURE   R1 2         ; R1 := closure(Function #3)
-  6 [-]: MOVE      R0 R0        ; R0 := R0
-  7 [-]: SETGLOBAL R1 K1        ; MatchAttackEvent := R1
-  8 [-]: CLOSURE   R1 3         ; R1 := closure(Function #4)
-  9 [-]: MOVE      R0 R0        ; R0 := R0
- 10 [-]: SETGLOBAL R1 K2        ; MatchItemEvent := R1
- 11 [-]: RETURN    R0 1         ; return 
+            1 [-]: DUPCLOSURE R0 K0 []
+       2 [-]: DUPCLOSURE R1 K1 []
+       3 [-]: SETGLOBAL R1 K2 ["MatchTagEvent"]
+       4 [-]: DUPCLOSURE R1 K3 []
+       5 [-]: SETGLOBAL R1 K4 ["MatchAttackEvent"]
+       6 [-]: DUPCLOSURE R1 K5 []
+       7 [-]: SETGLOBAL R1 K6 ["MatchItemEvent"]
+       8 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 4
 ; #Upvalues:       0
@@ -29,72 +22,113 @@
 ; Is_vararg:       0
 ; Max Stack Size:  3
 
-  1 [-]: GETGLOBAL R0 K0        ; R0 := 0xbe190284
-  2 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0xef893aec]
-  3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: GETGLOBAL R1 K2        ; R1 := 0x7b998233
-  5 [-]: MOVE      R2 R0        ; R2 := R0
-  6 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  7 [-]: TEST      R1 0         ; if not R1 then PC := 11
-  8 [-]: JMP       11           ; PC := 11
-  9 [-]: LOADKB    R1 0 0       ; R1 := false
- 10 [-]: RETURN    R1 2         ; return R1
- 11 [-]: GETGLOBAL R1 K3        ; R1 := 0x228372c4
- 12 [-]: LT        0 K4 R1      ; if 0.000000 >= R1 then PC := 20
- 13 [-]: JMP       20           ; PC := 20
- 14 [-]: GETTABLE  R1 R0 K5     ; R1 := R0["minEnemyLevel"]
- 15 [-]: GETGLOBAL R2 K3        ; R2 := 0x228372c4
- 16 [-]: LT        0 R1 R2      ; if R1 >= R2 then PC := 20
- 17 [-]: JMP       20           ; PC := 20
- 18 [-]: LOADKB    R1 0 0       ; R1 := false
- 19 [-]: RETURN    R1 2         ; return R1
- 20 [-]: LOADKB    R1 1 0       ; R1 := true
- 21 [-]: RETURN    R1 2         ; return R1
- 22 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: NAMECALL R0 R0 K2 [0xEF893AEC]
+       2 [-]: CALL R0 1 1  
+       3 [-]: FASTCALL1 62 R0 L0
+       4 [-]: MOVE R2 R0   
+       5 [-]: GETIMPORT R1 4 [nil]
+       6 [-]: CALL R1 1 1  
+L 0:   7 [-]: JUMPIFNOT R1 L1
+       8 [-]: LOADB R1 0   
+       9 [-]: RETURN R1 1  
+L 1:  10 [-]: GETIMPORT R1 6 [nil]
+      11 [-]: LOADN R2 0   
+      12 [-]: JUMPIFNOTLT R2 R1 L2
+      13 [-]: GETTABLEKS R1 R0 K7 ["minEnemyLevel"]
+      14 [-]: GETIMPORT R2 6 [nil]
+      15 [-]: JUMPIFNOTLT R1 R2 L2
+      16 [-]: LOADB R1 0   
+      17 [-]: RETURN R1 1  
+L 2:  18 [-]: LOADB R1 1   
+      19 [-]: RETURN R1 1  
 
 
-; Function #2:
-;
 ; Name:            
 ; Defined at line: 17
-; #Upvalues:       1
+; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
-; Max Stack Size:  3
+; Max Stack Size:  6
 
-  1 [-]: GETUPVAL  R2 U0        ; R2 := U0
-  2 [-]: TAILCALL  R2 1 0       ; R2,... := R2()
-  3 [-]: RETURN    R2 0         ; return R2,...
-  4 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R3 1 [nil]
+       1 [-]: NAMECALL R3 R3 K2 [0xEF893AEC]
+       2 [-]: CALL R3 1 1  
+       3 [-]: FASTCALL1 62 R3 L0
+       4 [-]: MOVE R5 R3   
+       5 [-]: GETIMPORT R4 4 [nil]
+       6 [-]: CALL R4 1 1  
+L 0:   7 [-]: JUMPIFNOT R4 L1
+       8 [-]: LOADB R2 0   
+       9 [-]: RETURN R2 1  
+L 1:  10 [-]: GETIMPORT R4 6 [nil]
+      11 [-]: LOADN R5 0   
+      12 [-]: JUMPIFNOTLT R5 R4 L2
+      13 [-]: GETTABLEKS R4 R3 K7 ["minEnemyLevel"]
+      14 [-]: GETIMPORT R5 6 [nil]
+      15 [-]: JUMPIFNOTLT R4 R5 L2
+      16 [-]: LOADB R2 0   
+      17 [-]: RETURN R2 1  
+L 2:  18 [-]: LOADB R2 1   
+      19 [-]: RETURN R2 1  
 
 
-; Function #3:
-;
 ; Name:            
 ; Defined at line: 21
-; #Upvalues:       1
+; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
-; Max Stack Size:  3
+; Max Stack Size:  6
 
-  1 [-]: GETUPVAL  R2 U0        ; R2 := U0
-  2 [-]: TAILCALL  R2 1 0       ; R2,... := R2()
-  3 [-]: RETURN    R2 0         ; return R2,...
-  4 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R3 1 [nil]
+       1 [-]: NAMECALL R3 R3 K2 [0xEF893AEC]
+       2 [-]: CALL R3 1 1  
+       3 [-]: FASTCALL1 62 R3 L0
+       4 [-]: MOVE R5 R3   
+       5 [-]: GETIMPORT R4 4 [nil]
+       6 [-]: CALL R4 1 1  
+L 0:   7 [-]: JUMPIFNOT R4 L1
+       8 [-]: LOADB R2 0   
+       9 [-]: RETURN R2 1  
+L 1:  10 [-]: GETIMPORT R4 6 [nil]
+      11 [-]: LOADN R5 0   
+      12 [-]: JUMPIFNOTLT R5 R4 L2
+      13 [-]: GETTABLEKS R4 R3 K7 ["minEnemyLevel"]
+      14 [-]: GETIMPORT R5 6 [nil]
+      15 [-]: JUMPIFNOTLT R4 R5 L2
+      16 [-]: LOADB R2 0   
+      17 [-]: RETURN R2 1  
+L 2:  18 [-]: LOADB R2 1   
+      19 [-]: RETURN R2 1  
 
 
-; Function #4:
-;
 ; Name:            
 ; Defined at line: 25
-; #Upvalues:       1
+; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
-; Max Stack Size:  3
+; Max Stack Size:  6
 
-  1 [-]: GETUPVAL  R2 U0        ; R2 := U0
-  2 [-]: TAILCALL  R2 1 0       ; R2,... := R2()
-  3 [-]: RETURN    R2 0         ; return R2,...
-  4 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R3 1 [nil]
+       1 [-]: NAMECALL R3 R3 K2 [0xEF893AEC]
+       2 [-]: CALL R3 1 1  
+       3 [-]: FASTCALL1 62 R3 L0
+       4 [-]: MOVE R5 R3   
+       5 [-]: GETIMPORT R4 4 [nil]
+       6 [-]: CALL R4 1 1  
+L 0:   7 [-]: JUMPIFNOT R4 L1
+       8 [-]: LOADB R2 0   
+       9 [-]: RETURN R2 1  
+L 1:  10 [-]: GETIMPORT R4 6 [nil]
+      11 [-]: LOADN R5 0   
+      12 [-]: JUMPIFNOTLT R5 R4 L2
+      13 [-]: GETTABLEKS R4 R3 K7 ["minEnemyLevel"]
+      14 [-]: GETIMPORT R5 6 [nil]
+      15 [-]: JUMPIFNOTLT R4 R5 L2
+      16 [-]: LOADB R2 0   
+      17 [-]: RETURN R2 1  
+L 2:  18 [-]: LOADB R2 1   
+      19 [-]: RETURN R2 1  
+
 
 

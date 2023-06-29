@@ -1,25 +1,21 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
+; Is_vararg:       1
 ; Max Stack Size:  3
 
-  1 [-]: GETGLOBAL R0 K0        ; R0 := 0x2d0fad09
-  2 [-]: LOADK     R1 K1        ; R1 := "Lotus.Scripts.Libs.TransmissionSet"
-  3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: CLOSURE   R1 0         ; R1 := closure(Function #1)
-  5 [-]: MOVE      R0 R0        ; R0 := R0
-  6 [-]: CLOSURE   R2 1         ; R2 := closure(Function #2)
-  7 [-]: MOVE      R0 R1        ; R0 := R1
-  8 [-]: SETGLOBAL R2 K2        ; DestroyTransmission := R2
-  9 [-]: RETURN    R0 1         ; return 
+            1 [-]: GETIMPORT R0 1 [nil]
+       2 [-]: LOADK R1 K2 ["Lotus.Scripts.Libs.TransmissionSet"]
+       3 [-]: CALL R0 1 1  
+       4 [-]: DUPCLOSURE R1 K3 []
+       5 [-]: MOVE R0 R0   
+       6 [-]: DUPCLOSURE R2 K4 []
+       7 [-]: MOVE R0 R1   
+       8 [-]: SETGLOBAL R2 K5 ["DestroyTransmission"]
+       9 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 5
 ; #Upvalues:       1
@@ -27,56 +23,52 @@
 ; Is_vararg:       0
 ; Max Stack Size:  13
 
-  1 [-]: GETGLOBAL R1 K0        ; R1 := 0x7b998233
-  2 [-]: GETGLOBAL R2 K1        ; R2 := 0xbe190284
-  3 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  4 [-]: TEST      R1 0         ; if not R1 then PC := 7
-  5 [-]: JMP       7            ; PC := 7
-  6 [-]: RETURN    R0 1         ; return 
-  7 [-]: GETGLOBAL R1 K1        ; R1 := 0xbe190284
-  8 [-]: SELF      R1 R1 K2     ; R2 := R1; R1 := R1[0xd7d79b74]
-  9 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 10 [-]: GETGLOBAL R2 K0        ; R2 := 0x7b998233
- 11 [-]: MOVE      R3 R1        ; R3 := R1
- 12 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 13 [-]: TEST      R2 0         ; if not R2 then PC := 16
- 14 [-]: JMP       16           ; PC := 16
- 15 [-]: RETURN    R0 1         ; return 
- 16 [-]: SELF      R2 R1 K3     ; R3 := R1; R2 := R1[0xcd57f819]
- 17 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 18 [-]: GETGLOBAL R3 K0        ; R3 := 0x7b998233
- 19 [-]: MOVE      R4 R2        ; R4 := R2
- 20 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 21 [-]: TEST      R3 0         ; if not R3 then PC := 24
- 22 [-]: JMP       24           ; PC := 24
- 23 [-]: RETURN    R0 1         ; return 
- 24 [-]: GETGLOBAL R3 K4        ; R3 := 0x89326c93
- 25 [-]: SELF      R3 R3 K5     ; R4 := R3; R3 := R3[0x8b5b1f58]
- 26 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 27 [-]: GETGLOBAL R4 K6        ; R4 := 0xc8802016
- 28 [-]: MOVE      R5 R3        ; R5 := R3
- 29 [-]: CALL      R4 2 4       ; R4,R5,R6 := R4(R5)
- 30 [-]: JMP       44           ; PC := 44
- 31 [-]: SELF      R9 R8 K7     ; R10 := R8; R9 := R8[0xde321e6f]
- 32 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 33 [-]: SELF      R9 R9 K8     ; R10 := R9; R9 := R9[0x46348bdb]
- 34 [-]: MOVE      R11 R2       ; R11 := R2
- 35 [-]: CALL      R9 3 2       ; R9 := R9(R10,R11)
- 36 [-]: TEST      R9 0         ; if not R9 then PC := 44
- 37 [-]: JMP       44           ; PC := 44
- 38 [-]: GETUPVAL  R9 U0        ; R9 := U0
- 39 [-]: GETTABLE  R9 R9 K9     ; R9 := R9[0xf22cfc77]
- 40 [-]: GETGLOBAL R10 K10      ; R10 := 0xe91d7466
- 41 [-]: MOVE      R11 R0       ; R11 := R0
- 42 [-]: MOVE      R12 R8       ; R12 := R8
- 43 [-]: CALL      R9 4 1       ; R9(R10,R11,R12)
- 44 [-]: TFORLOOP  R4 2         ; R7,R8 :=  R4(R5,R6); if R7 ~= nil then begin PC = 31; R6 := R7 end
- 45 [-]: JMP       31           ; PC := 31
- 46 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R2 1 [nil]
+       1 [-]: FASTCALL1 62 R2 L0
+       2 [-]: GETIMPORT R1 3 [nil]
+       3 [-]: CALL R1 1 1  
+L 0:   4 [-]: JUMPIFNOT R1 L1
+       5 [-]: RETURN R0 0  
+L 1:   6 [-]: GETIMPORT R1 1 [nil]
+       7 [-]: NAMECALL R1 R1 K4 [0xD7D79B74]
+       8 [-]: CALL R1 1 1  
+       9 [-]: FASTCALL1 62 R1 L2
+      10 [-]: MOVE R3 R1   
+      11 [-]: GETIMPORT R2 3 [nil]
+      12 [-]: CALL R2 1 1  
+L 2:  13 [-]: JUMPIFNOT R2 L3
+      14 [-]: RETURN R0 0  
+L 3:  15 [-]: NAMECALL R2 R1 K5 [0xCD57F819]
+      16 [-]: CALL R2 1 1  
+      17 [-]: FASTCALL1 62 R2 L4
+      18 [-]: MOVE R4 R2   
+      19 [-]: GETIMPORT R3 3 [nil]
+      20 [-]: CALL R3 1 1  
+L 4:  21 [-]: JUMPIFNOT R3 L5
+      22 [-]: RETURN R0 0  
+L 5:  23 [-]: GETIMPORT R3 7 [nil]
+      24 [-]: NAMECALL R3 R3 K8 [0x8B5B1F58]
+      25 [-]: CALL R3 1 1  
+      26 [-]: GETIMPORT R4 10 [nil]
+      27 [-]: MOVE R5 R3   
+      28 [-]: CALL R4 1 3  
+      29 [-]: FORGPREP_INEXT R4 L7
+L 6:  30 [-]: NAMECALL R9 R8 K11 [0xDE321E6F]
+      31 [-]: CALL R9 1 1  
+      32 [-]: MOVE R11 R2  
+      33 [-]: NAMECALL R9 R9 K12 [0x46348BDB]
+      34 [-]: CALL R9 2 1  
+      35 [-]: JUMPIFNOT R9 L7
+      36 [-]: GETUPVAL R10 0
+      37 [-]: GETTABLEKS R9 R10 K13 [0xF22CFC77]
+      38 [-]: GETIMPORT R10 15 [nil]
+      39 [-]: MOVE R11 R0  
+      40 [-]: MOVE R12 R8  
+      41 [-]: CALL R9 3 0  
+L 7:  42 [-]: FORGLOOP R4 L6 2 [inext]
+      43 [-]: RETURN R0 0  
 
 
-; Function #2:
-;
 ; Name:            
 ; Defined at line: 29
 ; #Upvalues:       1
@@ -84,20 +76,20 @@
 ; Is_vararg:       0
 ; Max Stack Size:  4
 
-  1 [-]: GETGLOBAL R0 K0        ; R0 := 0x89326c93
-  2 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0xc7fcada9]
-  3 [-]: GETGLOBAL R2 K2        ; R2 := 0x0469f296
-  4 [-]: LOADK     R3 K3        ; R3 := "HackerJamDrone"
-  5 [-]: CALL      R2 2 0       ; R2,... := R2(R3)
-  6 [-]: CALL      R0 0 2       ; R0 := R0(R1,...)
-  7 [-]: LEN       R1 R0        ; R1 := # R0
-  8 [-]: EQ        0 R1 K4      ; if R1 ~= 1.000000 then PC := 15
-  9 [-]: JMP       15           ; PC := 15
- 10 [-]: GETUPVAL  R1 U0        ; R1 := U0
- 11 [-]: GETGLOBAL R2 K2        ; R2 := 0x0469f296
- 12 [-]: LOADK     R3 K5        ; R3 := "RJSystemsRestored"
- 13 [-]: CALL      R2 2 0       ; R2,... := R2(R3)
- 14 [-]: CALL      R1 0 1       ; R1(R2,...)
- 15 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R2 3 [nil]
+       2 [-]: LOADK R3 K4 ["HackerJamDrone"]
+       3 [-]: CALL R2 1 -1 
+       4 [-]: NAMECALL R0 R0 K5 [0xC7FCADA9]
+       5 [-]: CALL R0 -1 1 
+       6 [-]: LENGTH R1 R0 
+       7 [-]: JUMPXEQKN R1 K6 L0 NOT [1]
+       8 [-]: GETUPVAL R1 0
+       9 [-]: GETIMPORT R2 3 [nil]
+      10 [-]: LOADK R3 K7 ["RJSystemsRestored"]
+      11 [-]: CALL R2 1 -1 
+      12 [-]: CALL R1 -1 0 
+L 0:  13 [-]: RETURN R0 0  
+
 
 

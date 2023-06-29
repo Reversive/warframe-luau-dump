@@ -1,249 +1,223 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
-; Max Stack Size:  2
+; Is_vararg:       1
+; Max Stack Size:  1
 
-  1 [-]: CLOSURE   R0 0         ; R0 := closure(Function #1)
-  2 [-]: SETGLOBAL R0 K0        ; GetDescription := R0
-  3 [-]: CLOSURE   R0 1         ; R0 := closure(Function #2)
-  4 [-]: SETGLOBAL R0 K1        ; HoverboardSpeedTimer := R0
-  5 [-]: CLOSURE   R0 2         ; R0 := closure(Function #3)
-  6 [-]: SETGLOBAL R0 K2        ; ApplyUpgrade := R0
-  7 [-]: RETURN    R0 1         ; return 
+            1 [-]: DUPCLOSURE R0 K0 []
+       2 [-]: SETGLOBAL R0 K1 ["GetDescription"]
+       3 [-]: DUPCLOSURE R0 K2 []
+       4 [-]: SETGLOBAL R0 K3 ["HoverboardSpeedTimer"]
+       5 [-]: DUPCLOSURE R0 K4 []
+       6 [-]: SETGLOBAL R0 K5 ["ApplyUpgrade"]
+       7 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 5
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  7
+; Max Stack Size:  9
 
-  1 [-]: NEWTABLE  R1 0 2       ; R1 := {}
-  2 [-]: GETGLOBAL R2 K1        ; R2 := 0x5bced4c4
-  3 [-]: GETTABLE  R2 R2 K2     ; R2 := R2[0x55f27c30]
-  4 [-]: GETGLOBAL R3 K3        ; R3 := 0x91be34e1
-  5 [-]: GETGLOBAL R4 K1        ; R4 := 0x5bced4c4
-  6 [-]: GETTABLE  R4 R4 K4     ; R4 := R4[0xac1b386a]
-  7 [-]: GETGLOBAL R5 K3        ; R5 := 0x91be34e1
-  8 [-]: LEN       R5 R5        ; R5 := # R5
-  9 [-]: MOVE      R6 R0        ; R6 := R0
- 10 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
- 11 [-]: GETTABLE  R3 R3 R4     ; R3 := R3[R4]
- 12 [-]: MUL       R3 R3 K5     ; R3 := R3 * 100.000000
- 13 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 14 [-]: SETTABLE  R1 K0 R2     ; R1["AMOUNT"] := R2
- 15 [-]: GETGLOBAL R2 K7        ; R2 := 0xe15169d2
- 16 [-]: GETGLOBAL R3 K1        ; R3 := 0x5bced4c4
- 17 [-]: GETTABLE  R3 R3 K4     ; R3 := R3[0xac1b386a]
- 18 [-]: GETGLOBAL R4 K7        ; R4 := 0xe15169d2
- 19 [-]: LEN       R4 R4        ; R4 := # R4
- 20 [-]: MOVE      R5 R0        ; R5 := R0
- 21 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
- 22 [-]: GETTABLE  R2 R2 R3     ; R2 := R2[R3]
- 23 [-]: SETTABLE  R1 K6 R2     ; R1["DURATION"] := R2
- 24 [-]: GETGLOBAL R2 K8        ; R2 := cjson
- 25 [-]: GETTABLE  R2 R2 K9     ; R2 := R2[0xb139d7bc]
- 26 [-]: MOVE      R3 R1        ; R3 := R1
- 27 [-]: TAILCALL  R2 2 0       ; R2,... := R2(R3)
- 28 [-]: RETURN    R2 0         ; return R2,...
- 29 [-]: RETURN    R0 1         ; return 
+       0 [-]: DUPTABLE R1 2
+       1 [-]: GETIMPORT R5 5 [nil]
+       2 [-]: GETIMPORT R8 5 [nil]
+       3 [-]: LENGTH R7 R8 
+       4 [-]: FASTCALL2 19 R7 R0 L0
+       5 [-]: MOVE R8 R0   
+       6 [-]: GETIMPORT R6 8 [nil]
+       7 [-]: CALL R6 2 1  
+L 0:   8 [-]: GETTABLE R4 R5 R6
+       9 [-]: MULK R3 R4 K3 [100]
+      10 [-]: FASTCALL1 12 R3 L1
+      11 [-]: GETIMPORT R2 10 [nil]
+      12 [-]: CALL R2 1 1  
+L 1:  13 [-]: SETTABLEKS R2 R1 K0 ["AMOUNT"]
+      14 [-]: GETIMPORT R3 12 [nil]
+      15 [-]: GETIMPORT R6 12 [nil]
+      16 [-]: LENGTH R5 R6 
+      17 [-]: FASTCALL2 19 R5 R0 L2
+      18 [-]: MOVE R6 R0   
+      19 [-]: GETIMPORT R4 8 [nil]
+      20 [-]: CALL R4 2 1  
+L 2:  21 [-]: GETTABLE R2 R3 R4
+      22 [-]: SETTABLEKS R2 R1 K1 ["DURATION"]
+      23 [-]: GETIMPORT R2 15 [nil]
+      24 [-]: MOVE R3 R1   
+      25 [-]: CALL R2 1 -1 
+      26 [-]: RETURN R2 -1 
 
 
-; Function #2:
-;
 ; Name:            
 ; Defined at line: 14
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  13
+; Max Stack Size:  15
 
-  1 [-]: SELF      R1 R0 K0     ; R2 := R0; R1 := R0[0x388577d5]
-  2 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  3 [-]: GETGLOBAL R2 K1        ; R2 := 0x7b998233
-  4 [-]: GETGLOBAL R3 K2        ; R3 := _T
-  5 [-]: GETTABLE  R3 R3 K3     ; R3 := R3["hoverboardSpeed"]
-  6 [-]: GETTABLE  R3 R3 R1     ; R3 := R3[R1]
-  7 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  8 [-]: TEST      R2 0         ; if not R2 then PC := 11
-  9 [-]: JMP       11           ; PC := 11
- 10 [-]: RETURN    R0 1         ; return 
- 11 [-]: GETGLOBAL R2 K4        ; R2 := 0x6c97a788
- 12 [-]: GETTABLE  R2 R2 K5     ; R2 := R2[0x608bc054]
- 13 [-]: CALL      R2 1 2       ; R2 := R2()
- 14 [-]: SETTABLE  R2 K6 R0     ; R2["instigator"] := R0
- 15 [-]: SETTABLE  R2 K7 K8     ; R2["buffType"] := 3.000000
- 16 [-]: GETGLOBAL R3 K2        ; R3 := _T
- 17 [-]: GETTABLE  R3 R3 K3     ; R3 := R3["hoverboardSpeed"]
- 18 [-]: GETTABLE  R3 R3 R1     ; R3 := R3[R1]
- 19 [-]: GETTABLE  R3 R3 K10    ; R3 := R3["upgrade"]
- 20 [-]: SETTABLE  R2 K9 R3     ; R2["abilityType"] := R3
- 21 [-]: GETGLOBAL R3 K2        ; R3 := _T
- 22 [-]: GETTABLE  R3 R3 K3     ; R3 := R3["hoverboardSpeed"]
- 23 [-]: GETTABLE  R3 R3 R1     ; R3 := R3[R1]
- 24 [-]: GETTABLE  R3 R3 K12    ; R3 := R3["speed"]
- 25 [-]: MUL       R3 R3 K13    ; R3 := R3 * 100.000000
- 26 [-]: SETTABLE  R2 K11 R3    ; R2["buffDataExtra"] := R3
- 27 [-]: SELF      R3 R0 K14    ; R4 := R0; R3 := R0[0x5b89142c]
- 28 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 29 [-]: SELF      R4 R3 K15    ; R5 := R3; R4 := R3[0xbb610e5b]
- 30 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 31 [-]: LOADNIL   R5 R6        ; R5 := R6 := nil
- 32 [-]: GETGLOBAL R7 K2        ; R7 := _T
- 33 [-]: GETTABLE  R7 R7 K3     ; R7 := R7["hoverboardSpeed"]
- 34 [-]: GETTABLE  R7 R7 R1     ; R7 := R7[R1]
- 35 [-]: GETTABLE  R7 R7 K16    ; R7 := R7["timer"]
- 36 [-]: LT        0 K17 R7     ; if 0.000000 >= R7 then PC := 138
- 37 [-]: JMP       138          ; PC := 138
- 38 [-]: GETGLOBAL R7 K18       ; R7 := 0xcbd666e1
- 39 [-]: CONST     R8 0         ; R8 := 0.000000
- 40 [-]: CALL      R7 2 1       ; R7(R8)
- 41 [-]: GETGLOBAL R7 K2        ; R7 := _T
- 42 [-]: GETTABLE  R7 R7 K3     ; R7 := R7["hoverboardSpeed"]
- 43 [-]: GETTABLE  R7 R7 R1     ; R7 := R7[R1]
- 44 [-]: GETGLOBAL R8 K2        ; R8 := _T
- 45 [-]: GETTABLE  R8 R8 K3     ; R8 := R8["hoverboardSpeed"]
- 46 [-]: GETTABLE  R8 R8 R1     ; R8 := R8[R1]
- 47 [-]: GETTABLE  R8 R8 K16    ; R8 := R8["timer"]
- 48 [-]: GETGLOBAL R9 K19       ; R9 := 0x67652851
- 49 [-]: CALL      R9 1 2       ; R9 := R9()
- 50 [-]: SUB       R8 R8 R9     ; R8 := R8 - R9
- 51 [-]: SETTABLE  R7 K16 R8    ; R7["timer"] := R8
- 52 [-]: SELF      R7 R3 K15    ; R8 := R3; R7 := R3[0xbb610e5b]
- 53 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 54 [-]: MOVE      R6 R7        ; R6 := R7
- 55 [-]: EQ        1 R4 R6      ; if R4 == R6 then PC := 32
- 56 [-]: JMP       32           ; PC := 32
- 57 [-]: GETGLOBAL R7 K1        ; R7 := 0x7b998233
- 58 [-]: MOVE      R8 R5        ; R8 := R5
- 59 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 60 [-]: TEST      R7 1         ; if R7 then PC := 91
- 61 [-]: JMP       91           ; PC := 91
- 62 [-]: GETGLOBAL R7 K1        ; R7 := 0x7b998233
- 63 [-]: SELF      R8 R5 K20    ; R9 := R5; R8 := R5[0xf7d48ee0]
- 64 [-]: CALL      R8 2 0       ; R8,... := R8(R9)
- 65 [-]: CALL      R7 0 2       ; R7 := R7(R8,...)
- 66 [-]: TEST      R7 1         ; if R7 then PC := 91
- 67 [-]: JMP       91           ; PC := 91
- 68 [-]: SELF      R7 R5 K20    ; R8 := R5; R7 := R5[0xf7d48ee0]
- 69 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 70 [-]: SELF      R7 R7 K21    ; R8 := R7; R7 := R7[0xf2deaf69]
- 71 [-]: GETGLOBAL R9 K22       ; R9 := 0x21992e98
- 72 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
- 73 [-]: TEST      R7 0         ; if not R7 then PC := 91
- 74 [-]: JMP       91           ; PC := 91
- 75 [-]: SELF      R7 R5 K23    ; R8 := R5; R7 := R5[0x12dd9da2]
- 76 [-]: CONST     R9 190       ; R9 := 190.000000
- 77 [-]: CONST     R10 3        ; R10 := 3.000000
- 78 [-]: GETGLOBAL R11 K2       ; R11 := _T
- 79 [-]: GETTABLE  R11 R11 K3   ; R11 := R11["hoverboardSpeed"]
- 80 [-]: GETTABLE  R11 R11 R1   ; R11 := R11[R1]
- 81 [-]: GETTABLE  R11 R11 K12  ; R11 := R11["speed"]
- 82 [-]: CALL      R7 5 1       ; R7(R8,R9,R10,R11)
- 83 [-]: SELF      R7 R5 K23    ; R8 := R5; R7 := R5[0x12dd9da2]
- 84 [-]: CONST     R9 192       ; R9 := 192.000000
- 85 [-]: CONST     R10 3        ; R10 := 3.000000
- 86 [-]: GETGLOBAL R11 K2       ; R11 := _T
- 87 [-]: GETTABLE  R11 R11 K3   ; R11 := R11["hoverboardSpeed"]
- 88 [-]: GETTABLE  R11 R11 R1   ; R11 := R11[R1]
- 89 [-]: GETTABLE  R11 R11 K12  ; R11 := R11["speed"]
- 90 [-]: CALL      R7 5 1       ; R7(R8,R9,R10,R11)
- 91 [-]: MOVE      R4 R6        ; R4 := R6
- 92 [-]: SELF      R7 R4 K26    ; R8 := R4; R7 := R4[0xde321e6f]
- 93 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 94 [-]: MOVE      R5 R7        ; R5 := R7
- 95 [-]: SELF      R7 R5 K20    ; R8 := R5; R7 := R5[0xf7d48ee0]
- 96 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 97 [-]: GETGLOBAL R8 K1        ; R8 := 0x7b998233
- 98 [-]: MOVE      R9 R7        ; R9 := R7
- 99 [-]: CALL      R8 2 2       ; R8 := R8(R9)
-100 [-]: TEST      R8 1         ; if R8 then PC := 32
-101 [-]: JMP       32           ; PC := 32
-102 [-]: SELF      R8 R7 K21    ; R9 := R7; R8 := R7[0xf2deaf69]
-103 [-]: GETGLOBAL R10 K22      ; R10 := 0x21992e98
-104 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
-105 [-]: TEST      R8 0         ; if not R8 then PC := 32
-106 [-]: JMP       32           ; PC := 32
-107 [-]: SELF      R8 R5 K27    ; R9 := R5; R8 := R5[0x5e6704ff]
-108 [-]: CONST     R10 190      ; R10 := 190.000000
-109 [-]: CONST     R11 3        ; R11 := 3.000000
-110 [-]: GETGLOBAL R12 K2       ; R12 := _T
-111 [-]: GETTABLE  R12 R12 K3   ; R12 := R12["hoverboardSpeed"]
-112 [-]: GETTABLE  R12 R12 R1   ; R12 := R12[R1]
-113 [-]: GETTABLE  R12 R12 K12  ; R12 := R12["speed"]
-114 [-]: CALL      R8 5 1       ; R8(R9,R10,R11,R12)
-115 [-]: SELF      R8 R5 K27    ; R9 := R5; R8 := R5[0x5e6704ff]
-116 [-]: CONST     R10 192      ; R10 := 192.000000
-117 [-]: CONST     R11 3        ; R11 := 3.000000
-118 [-]: GETGLOBAL R12 K2       ; R12 := _T
-119 [-]: GETTABLE  R12 R12 K3   ; R12 := R12["hoverboardSpeed"]
-120 [-]: GETTABLE  R12 R12 R1   ; R12 := R12[R1]
-121 [-]: GETTABLE  R12 R12 K12  ; R12 := R12["speed"]
-122 [-]: CALL      R8 5 1       ; R8(R9,R10,R11,R12)
-123 [-]: NEWTABLE  R8 1 0       ; R8 := {}
-124 [-]: MOVE      R9 R4        ; R9 := R4
-125 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
-126 [-]: SETTABLE  R2 K28 R8    ; R2["affected"] := R8
-127 [-]: GETGLOBAL R8 K2        ; R8 := _T
-128 [-]: GETTABLE  R8 R8 K3     ; R8 := R8["hoverboardSpeed"]
-129 [-]: GETTABLE  R8 R8 R1     ; R8 := R8[R1]
-130 [-]: GETTABLE  R8 R8 K16    ; R8 := R8["timer"]
-131 [-]: SETTABLE  R2 K29 R8    ; R2["buffData"] := R8
-132 [-]: SELF      R8 R4 K30    ; R9 := R4; R8 := R4[0x37e45fb5]
-133 [-]: MOVE      R10 R2       ; R10 := R2
-134 [-]: LOADKB    R11 1 0      ; R11 := true
-135 [-]: LOADKB    R12 1 0      ; R12 := true
-136 [-]: CALL      R8 5 1       ; R8(R9,R10,R11,R12)
-137 [-]: JMP       32           ; PC := 32
-138 [-]: GETGLOBAL R8 K1        ; R8 := 0x7b998233
-139 [-]: MOVE      R9 R5        ; R9 := R5
-140 [-]: CALL      R8 2 2       ; R8 := R8(R9)
-141 [-]: TEST      R8 1         ; if R8 then PC := 172
-142 [-]: JMP       172          ; PC := 172
-143 [-]: GETGLOBAL R8 K1        ; R8 := 0x7b998233
-144 [-]: SELF      R9 R5 K20    ; R10 := R5; R9 := R5[0xf7d48ee0]
-145 [-]: CALL      R9 2 0       ; R9,... := R9(R10)
-146 [-]: CALL      R8 0 2       ; R8 := R8(R9,...)
-147 [-]: TEST      R8 1         ; if R8 then PC := 172
-148 [-]: JMP       172          ; PC := 172
-149 [-]: SELF      R8 R5 K20    ; R9 := R5; R8 := R5[0xf7d48ee0]
-150 [-]: CALL      R8 2 2       ; R8 := R8(R9)
-151 [-]: SELF      R8 R8 K21    ; R9 := R8; R8 := R8[0xf2deaf69]
-152 [-]: GETGLOBAL R10 K22      ; R10 := 0x21992e98
-153 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
-154 [-]: TEST      R8 0         ; if not R8 then PC := 172
-155 [-]: JMP       172          ; PC := 172
-156 [-]: SELF      R8 R5 K23    ; R9 := R5; R8 := R5[0x12dd9da2]
-157 [-]: CONST     R10 190      ; R10 := 190.000000
-158 [-]: CONST     R11 3        ; R11 := 3.000000
-159 [-]: GETGLOBAL R12 K2       ; R12 := _T
-160 [-]: GETTABLE  R12 R12 K3   ; R12 := R12["hoverboardSpeed"]
-161 [-]: GETTABLE  R12 R12 R1   ; R12 := R12[R1]
-162 [-]: GETTABLE  R12 R12 K12  ; R12 := R12["speed"]
-163 [-]: CALL      R8 5 1       ; R8(R9,R10,R11,R12)
-164 [-]: SELF      R8 R5 K23    ; R9 := R5; R8 := R5[0x12dd9da2]
-165 [-]: CONST     R10 192      ; R10 := 192.000000
-166 [-]: CONST     R11 3        ; R11 := 3.000000
-167 [-]: GETGLOBAL R12 K2       ; R12 := _T
-168 [-]: GETTABLE  R12 R12 K3   ; R12 := R12["hoverboardSpeed"]
-169 [-]: GETTABLE  R12 R12 R1   ; R12 := R12[R1]
-170 [-]: GETTABLE  R12 R12 K12  ; R12 := R12["speed"]
-171 [-]: CALL      R8 5 1       ; R8(R9,R10,R11,R12)
-172 [-]: GETGLOBAL R8 K2        ; R8 := _T
-173 [-]: GETTABLE  R8 R8 K3     ; R8 := R8["hoverboardSpeed"]
-174 [-]: SETTABLE  R8 R1 K31    ; R8[R1] := nil
-175 [-]: RETURN    R0 1         ; return 
+       0 [-]: NAMECALL R1 R0 K0 [0x388577D5]
+       1 [-]: CALL R1 1 1  
+       2 [-]: GETIMPORT R4 3 [nil]
+       3 [-]: GETTABLE R3 R4 R1
+       4 [-]: FASTCALL1 62 R3 L0
+       5 [-]: GETIMPORT R2 5 [nil]
+       6 [-]: CALL R2 1 1  
+L 0:   7 [-]: JUMPIFNOT R2 L1
+       8 [-]: RETURN R0 0  
+L 1:   9 [-]: GETIMPORT R2 8 [nil]
+      10 [-]: CALL R2 0 1  
+      11 [-]: SETTABLEKS R0 R2 K9 ["instigator"]
+      12 [-]: LOADN R3 3   
+      13 [-]: SETTABLEKS R3 R2 K10 ["buffType"]
+      14 [-]: GETIMPORT R5 3 [nil]
+      15 [-]: GETTABLE R4 R5 R1
+      16 [-]: GETTABLEKS R3 R4 K11 ["upgrade"]
+      17 [-]: SETTABLEKS R3 R2 K12 ["abilityType"]
+      18 [-]: GETIMPORT R6 3 [nil]
+      19 [-]: GETTABLE R5 R6 R1
+      20 [-]: GETTABLEKS R4 R5 K14 ["speed"]
+      21 [-]: MULK R3 R4 K13 [100]
+      22 [-]: SETTABLEKS R3 R2 K15 ["buffDataExtra"]
+      23 [-]: NAMECALL R3 R0 K16 [0x5B89142C]
+      24 [-]: CALL R3 1 1  
+      25 [-]: NAMECALL R4 R3 K17 [0xBB610E5B]
+      26 [-]: CALL R4 1 1  
+      27 [-]: LOADNIL R5   
+      28 [-]: LOADNIL R6   
+L 2:  29 [-]: GETIMPORT R9 3 [nil]
+      30 [-]: GETTABLE R8 R9 R1
+      31 [-]: GETTABLEKS R7 R8 K18 ["timer"]
+      32 [-]: LOADN R8 0   
+      33 [-]: JUMPIFNOTLT R8 R7 L8
+      34 [-]: GETIMPORT R7 20 [nil]
+      35 [-]: LOADN R8 0   
+      36 [-]: CALL R7 1 0  
+      37 [-]: GETIMPORT R8 3 [nil]
+      38 [-]: GETTABLE R7 R8 R1
+      39 [-]: GETIMPORT R11 3 [nil]
+      40 [-]: GETTABLE R10 R11 R1
+      41 [-]: GETTABLEKS R9 R10 K18 ["timer"]
+      42 [-]: GETIMPORT R10 22 [nil]
+      43 [-]: CALL R10 0 1 
+      44 [-]: SUB R8 R9 R10
+      45 [-]: SETTABLEKS R8 R7 K18 ["timer"]
+      46 [-]: NAMECALL R7 R3 K17 [0xBB610E5B]
+      47 [-]: CALL R7 1 1  
+      48 [-]: MOVE R6 R7   
+      49 [-]: JUMPIFEQ R4 R6 L7
+      50 [-]: FASTCALL1 62 R5 L3
+      51 [-]: MOVE R8 R5   
+      52 [-]: GETIMPORT R7 5 [nil]
+      53 [-]: CALL R7 1 1  
+L 3:  54 [-]: JUMPIF R7 L5 
+      55 [-]: NAMECALL R8 R5 K23 [0xF7D48EE0]
+      56 [-]: CALL R8 1 1  
+      57 [-]: FASTCALL1 62 R8 L4
+      58 [-]: GETIMPORT R7 5 [nil]
+      59 [-]: CALL R7 1 1  
+L 4:  60 [-]: JUMPIF R7 L5 
+      61 [-]: NAMECALL R7 R5 K23 [0xF7D48EE0]
+      62 [-]: CALL R7 1 1  
+      63 [-]: GETIMPORT R9 25 [nil]
+      64 [-]: NAMECALL R7 R7 K26 [0xF2DEAF69]
+      65 [-]: CALL R7 2 1  
+      66 [-]: JUMPIFNOT R7 L5
+      67 [-]: LOADN R9 194 
+      68 [-]: LOADN R10 3  
+      69 [-]: GETIMPORT R13 3 [nil]
+      70 [-]: GETTABLE R12 R13 R1
+      71 [-]: GETTABLEKS R11 R12 K14 ["speed"]
+      72 [-]: NAMECALL R7 R5 K27 [0x12DD9DA2]
+      73 [-]: CALL R7 4 0  
+      74 [-]: LOADN R9 196 
+      75 [-]: LOADN R10 3  
+      76 [-]: GETIMPORT R13 3 [nil]
+      77 [-]: GETTABLE R12 R13 R1
+      78 [-]: GETTABLEKS R11 R12 K14 ["speed"]
+      79 [-]: NAMECALL R7 R5 K27 [0x12DD9DA2]
+      80 [-]: CALL R7 4 0  
+L 5:  81 [-]: MOVE R4 R6   
+      82 [-]: NAMECALL R7 R4 K28 [0xDE321E6F]
+      83 [-]: CALL R7 1 1  
+      84 [-]: MOVE R5 R7   
+      85 [-]: NAMECALL R7 R5 K23 [0xF7D48EE0]
+      86 [-]: CALL R7 1 1  
+      87 [-]: FASTCALL1 62 R7 L6
+      88 [-]: MOVE R9 R7   
+      89 [-]: GETIMPORT R8 5 [nil]
+      90 [-]: CALL R8 1 1  
+L 6:  91 [-]: JUMPIF R8 L7 
+      92 [-]: GETIMPORT R10 25 [nil]
+      93 [-]: NAMECALL R8 R7 K26 [0xF2DEAF69]
+      94 [-]: CALL R8 2 1  
+      95 [-]: JUMPIFNOT R8 L7
+      96 [-]: LOADN R10 194
+      97 [-]: LOADN R11 3  
+      98 [-]: GETIMPORT R14 3 [nil]
+      99 [-]: GETTABLE R13 R14 R1
+     100 [-]: GETTABLEKS R12 R13 K14 ["speed"]
+     101 [-]: NAMECALL R8 R5 K29 [0x5E6704FF]
+     102 [-]: CALL R8 4 0  
+     103 [-]: LOADN R10 196
+     104 [-]: LOADN R11 3  
+     105 [-]: GETIMPORT R14 3 [nil]
+     106 [-]: GETTABLE R13 R14 R1
+     107 [-]: GETTABLEKS R12 R13 K14 ["speed"]
+     108 [-]: NAMECALL R8 R5 K29 [0x5E6704FF]
+     109 [-]: CALL R8 4 0  
+     110 [-]: NEWTABLE R8 0 1
+     111 [-]: MOVE R9 R4   
+     112 [-]: SETLIST R8 R9 1 [1]
+     113 [-]: SETTABLEKS R8 R2 K30 ["affected"]
+     114 [-]: GETIMPORT R10 3 [nil]
+     115 [-]: GETTABLE R9 R10 R1
+     116 [-]: GETTABLEKS R8 R9 K18 ["timer"]
+     117 [-]: SETTABLEKS R8 R2 K31 ["buffData"]
+     118 [-]: MOVE R10 R2  
+     119 [-]: LOADB R11 1  
+     120 [-]: LOADB R12 1  
+     121 [-]: NAMECALL R8 R4 K32 [0x37E45FB5]
+     122 [-]: CALL R8 4 0  
+L 7: 123 [-]: JUMPBACK L2  
+L 8: 124 [-]: FASTCALL1 62 R5 L9
+     125 [-]: MOVE R8 R5   
+     126 [-]: GETIMPORT R7 5 [nil]
+     127 [-]: CALL R7 1 1  
+L 9: 128 [-]: JUMPIF R7 L11
+     129 [-]: NAMECALL R8 R5 K23 [0xF7D48EE0]
+     130 [-]: CALL R8 1 1  
+     131 [-]: FASTCALL1 62 R8 L10
+     132 [-]: GETIMPORT R7 5 [nil]
+     133 [-]: CALL R7 1 1  
+L10: 134 [-]: JUMPIF R7 L11
+     135 [-]: NAMECALL R7 R5 K23 [0xF7D48EE0]
+     136 [-]: CALL R7 1 1  
+     137 [-]: GETIMPORT R9 25 [nil]
+     138 [-]: NAMECALL R7 R7 K26 [0xF2DEAF69]
+     139 [-]: CALL R7 2 1  
+     140 [-]: JUMPIFNOT R7 L11
+     141 [-]: LOADN R9 194 
+     142 [-]: LOADN R10 3  
+     143 [-]: GETIMPORT R13 3 [nil]
+     144 [-]: GETTABLE R12 R13 R1
+     145 [-]: GETTABLEKS R11 R12 K14 ["speed"]
+     146 [-]: NAMECALL R7 R5 K27 [0x12DD9DA2]
+     147 [-]: CALL R7 4 0  
+     148 [-]: LOADN R9 196 
+     149 [-]: LOADN R10 3  
+     150 [-]: GETIMPORT R13 3 [nil]
+     151 [-]: GETTABLE R12 R13 R1
+     152 [-]: GETTABLEKS R11 R12 K14 ["speed"]
+     153 [-]: NAMECALL R7 R5 K27 [0x12DD9DA2]
+     154 [-]: CALL R7 4 0  
+L11: 155 [-]: GETIMPORT R7 3 [nil]
+     156 [-]: LOADNIL R8   
+     157 [-]: SETTABLE R8 R7 R1
+     158 [-]: RETURN R0 0  
 
 
-; Function #3:
-;
 ; Name:            
 ; Defined at line: 64
 ; #Upvalues:       0
@@ -251,108 +225,102 @@
 ; Is_vararg:       0
 ; Max Stack Size:  15
 
-  1 [-]: GETGLOBAL R5 K0        ; R5 := 0x89326c93
-  2 [-]: SELF      R5 R5 K1     ; R6 := R5; R5 := R5[0x18d05d30]
-  3 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-  4 [-]: TEST      R5 1         ; if R5 then PC := 7
-  5 [-]: JMP       7            ; PC := 7
-  6 [-]: RETURN    R0 1         ; return 
-  7 [-]: SELF      R5 R0 K2     ; R6 := R0; R5 := R0[0x5b89142c]
-  8 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-  9 [-]: GETGLOBAL R6 K3        ; R6 := 0x7b998233
- 10 [-]: MOVE      R7 R5        ; R7 := R5
- 11 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 12 [-]: TEST      R6 0         ; if not R6 then PC := 15
- 13 [-]: JMP       15           ; PC := 15
- 14 [-]: RETURN    R0 1         ; return 
- 15 [-]: SELF      R6 R5 K4     ; R7 := R5; R6 := R5[0xa534c3ac]
- 16 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 17 [-]: GETGLOBAL R7 K3        ; R7 := 0x7b998233
- 18 [-]: MOVE      R8 R6        ; R8 := R6
- 19 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 20 [-]: TEST      R7 0         ; if not R7 then PC := 23
- 21 [-]: JMP       23           ; PC := 23
- 22 [-]: RETURN    R0 1         ; return 
- 23 [-]: GETGLOBAL R7 K3        ; R7 := 0x7b998233
- 24 [-]: GETGLOBAL R8 K5        ; R8 := _T
- 25 [-]: GETTABLE  R8 R8 K6     ; R8 := R8["hoverboardSpeed"]
- 26 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 27 [-]: TEST      R7 0         ; if not R7 then PC := 32
- 28 [-]: JMP       32           ; PC := 32
- 29 [-]: GETGLOBAL R7 K5        ; R7 := _T
- 30 [-]: NEWTABLE  R8 0 0       ; R8 := {}
- 31 [-]: SETTABLE  R7 K6 R8     ; R7["hoverboardSpeed"] := R8
- 32 [-]: GETGLOBAL R7 K7        ; R7 := 0x91be34e1
- 33 [-]: GETGLOBAL R8 K8        ; R8 := 0x5bced4c4
- 34 [-]: GETTABLE  R8 R8 K9     ; R8 := R8[0xac1b386a]
- 35 [-]: GETGLOBAL R9 K7        ; R9 := 0x91be34e1
- 36 [-]: LEN       R9 R9        ; R9 := # R9
- 37 [-]: MOVE      R10 R2       ; R10 := R2
- 38 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
- 39 [-]: GETTABLE  R7 R7 R8     ; R7 := R7[R8]
- 40 [-]: GETGLOBAL R8 K10       ; R8 := 0xe15169d2
- 41 [-]: GETGLOBAL R9 K8        ; R9 := 0x5bced4c4
- 42 [-]: GETTABLE  R9 R9 K9     ; R9 := R9[0xac1b386a]
- 43 [-]: GETGLOBAL R10 K10      ; R10 := 0xe15169d2
- 44 [-]: LEN       R10 R10      ; R10 := # R10
- 45 [-]: MOVE      R11 R2       ; R11 := R2
- 46 [-]: CALL      R9 3 2       ; R9 := R9(R10,R11)
- 47 [-]: GETTABLE  R8 R8 R9     ; R8 := R8[R9]
- 48 [-]: GETGLOBAL R9 K11       ; R9 := 0x6c97a788
- 49 [-]: GETTABLE  R9 R9 K12    ; R9 := R9[0x608bc054]
- 50 [-]: CALL      R9 1 2       ; R9 := R9()
- 51 [-]: SETTABLE  R9 K13 R6    ; R9["instigator"] := R6
- 52 [-]: NEWTABLE  R10 1 0      ; R10 := {}
- 53 [-]: MOVE      R11 R6       ; R11 := R6
- 54 [-]: SETLIST   R10 1 1      ; R10[(1-1)*FPF+i] := R(10+i), 1 <= i <= 1
- 55 [-]: SETTABLE  R9 K14 R10   ; R9["affected"] := R10
- 56 [-]: SETTABLE  R9 K15 K16   ; R9["buffType"] := 3.000000
- 57 [-]: SETTABLE  R9 K17 R4    ; R9["abilityType"] := R4
- 58 [-]: SETTABLE  R9 K18 R8    ; R9["buffData"] := R8
- 59 [-]: MUL       R10 R7 K20   ; R10 := R7 * 100.000000
- 60 [-]: SETTABLE  R9 K19 R10   ; R9["buffDataExtra"] := R10
- 61 [-]: SELF      R10 R6 K21   ; R11 := R6; R10 := R6[0x37e45fb5]
- 62 [-]: MOVE      R12 R9       ; R12 := R9
- 63 [-]: LOADKB    R13 1 0      ; R13 := true
- 64 [-]: LOADKB    R14 1 0      ; R14 := true
- 65 [-]: CALL      R10 5 1      ; R10(R11,R12,R13,R14)
- 66 [-]: SELF      R10 R6 K22   ; R11 := R6; R10 := R6[0x388577d5]
- 67 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 68 [-]: GETGLOBAL R11 K3       ; R11 := 0x7b998233
- 69 [-]: GETGLOBAL R12 K5       ; R12 := _T
- 70 [-]: GETTABLE  R12 R12 K6   ; R12 := R12["hoverboardSpeed"]
- 71 [-]: GETTABLE  R12 R12 R10  ; R12 := R12[R10]
- 72 [-]: CALL      R11 2 2      ; R11 := R11(R12)
- 73 [-]: TEST      R11 0        ; if not R11 then PC := 92
- 74 [-]: JMP       92           ; PC := 92
- 75 [-]: GETGLOBAL R11 K5       ; R11 := _T
- 76 [-]: GETTABLE  R11 R11 K6   ; R11 := R11["hoverboardSpeed"]
- 77 [-]: NEWTABLE  R12 0 0      ; R12 := {}
- 78 [-]: SETTABLE  R11 R10 R12  ; R11[R10] := R12
- 79 [-]: GETGLOBAL R11 K5       ; R11 := _T
- 80 [-]: GETTABLE  R11 R11 K6   ; R11 := R11["hoverboardSpeed"]
- 81 [-]: GETTABLE  R11 R11 R10  ; R11 := R11[R10]
- 82 [-]: SETTABLE  R11 K23 R8   ; R11["timer"] := R8
- 83 [-]: GETGLOBAL R11 K5       ; R11 := _T
- 84 [-]: GETTABLE  R11 R11 K6   ; R11 := R11["hoverboardSpeed"]
- 85 [-]: GETTABLE  R11 R11 R10  ; R11 := R11[R10]
- 86 [-]: SETTABLE  R11 K24 R7   ; R11["speed"] := R7
- 87 [-]: GETGLOBAL R11 K5       ; R11 := _T
- 88 [-]: GETTABLE  R11 R11 K6   ; R11 := R11["hoverboardSpeed"]
- 89 [-]: GETTABLE  R11 R11 R10  ; R11 := R11[R10]
- 90 [-]: SETTABLE  R11 K25 R4   ; R11["upgrade"] := R4
- 91 [-]: JMP       97           ; PC := 97
- 92 [-]: GETGLOBAL R11 K5       ; R11 := _T
- 93 [-]: GETTABLE  R11 R11 K6   ; R11 := R11["hoverboardSpeed"]
- 94 [-]: GETTABLE  R11 R11 R10  ; R11 := R11[R10]
- 95 [-]: SETTABLE  R11 K23 R8   ; R11["timer"] := R8
- 96 [-]: RETURN    R0 1         ; return 
- 97 [-]: SELF      R11 R6 K26   ; R12 := R6; R11 := R6[0xd5f7912b]
- 98 [-]: GETGLOBAL R13 K27      ; R13 := 0x0469f296
- 99 [-]: LOADK     R14 K28      ; R14 := "HoverboardSpeedTimer"
-100 [-]: CALL      R13 2 2      ; R13 := R13(R14)
-101 [-]: LOADKB    R14 0 0      ; R14 := false
-102 [-]: CALL      R11 4 1      ; R11(R12,R13,R14)
-103 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R5 1 [nil]
+       1 [-]: NAMECALL R5 R5 K2 [0x18D05D30]
+       2 [-]: CALL R5 1 1  
+       3 [-]: JUMPIF R5 L0 
+       4 [-]: RETURN R0 0  
+L 0:   5 [-]: NAMECALL R5 R0 K3 [0x5B89142C]
+       6 [-]: CALL R5 1 1  
+       7 [-]: FASTCALL1 62 R5 L1
+       8 [-]: MOVE R7 R5   
+       9 [-]: GETIMPORT R6 5 [nil]
+      10 [-]: CALL R6 1 1  
+L 1:  11 [-]: JUMPIFNOT R6 L2
+      12 [-]: RETURN R0 0  
+L 2:  13 [-]: NAMECALL R6 R5 K6 [0xA534C3AC]
+      14 [-]: CALL R6 1 1  
+      15 [-]: FASTCALL1 62 R6 L3
+      16 [-]: MOVE R8 R6   
+      17 [-]: GETIMPORT R7 5 [nil]
+      18 [-]: CALL R7 1 1  
+L 3:  19 [-]: JUMPIFNOT R7 L4
+      20 [-]: RETURN R0 0  
+L 4:  21 [-]: GETIMPORT R8 9 [nil]
+      22 [-]: FASTCALL1 62 R8 L5
+      23 [-]: GETIMPORT R7 5 [nil]
+      24 [-]: CALL R7 1 1  
+L 5:  25 [-]: JUMPIFNOT R7 L6
+      26 [-]: GETIMPORT R7 10 [nil]
+      27 [-]: NEWTABLE R8 0 0
+      28 [-]: SETTABLEKS R8 R7 K8 ["hoverboardSpeed"]
+L 6:  29 [-]: GETIMPORT R8 12 [nil]
+      30 [-]: GETIMPORT R11 12 [nil]
+      31 [-]: LENGTH R10 R11
+      32 [-]: FASTCALL2 19 R10 R2 L7
+      33 [-]: MOVE R11 R2  
+      34 [-]: GETIMPORT R9 15 [nil]
+      35 [-]: CALL R9 2 1  
+L 7:  36 [-]: GETTABLE R7 R8 R9
+      37 [-]: GETIMPORT R9 17 [nil]
+      38 [-]: GETIMPORT R12 17 [nil]
+      39 [-]: LENGTH R11 R12
+      40 [-]: FASTCALL2 19 R11 R2 L8
+      41 [-]: MOVE R12 R2  
+      42 [-]: GETIMPORT R10 15 [nil]
+      43 [-]: CALL R10 2 1 
+L 8:  44 [-]: GETTABLE R8 R9 R10
+      45 [-]: GETIMPORT R9 20 [nil]
+      46 [-]: CALL R9 0 1  
+      47 [-]: SETTABLEKS R6 R9 K21 ["instigator"]
+      48 [-]: NEWTABLE R10 0 1
+      49 [-]: MOVE R11 R6  
+      50 [-]: SETLIST R10 R11 1 [1]
+      51 [-]: SETTABLEKS R10 R9 K22 ["affected"]
+      52 [-]: LOADN R10 3  
+      53 [-]: SETTABLEKS R10 R9 K23 ["buffType"]
+      54 [-]: SETTABLEKS R4 R9 K24 ["abilityType"]
+      55 [-]: SETTABLEKS R8 R9 K25 ["buffData"]
+      56 [-]: MULK R10 R7 K26 [100]
+      57 [-]: SETTABLEKS R10 R9 K27 ["buffDataExtra"]
+      58 [-]: MOVE R12 R9  
+      59 [-]: LOADB R13 1  
+      60 [-]: LOADB R14 1  
+      61 [-]: NAMECALL R10 R6 K28 [0x37E45FB5]
+      62 [-]: CALL R10 4 0 
+      63 [-]: NAMECALL R10 R6 K29 [0x388577D5]
+      64 [-]: CALL R10 1 1 
+      65 [-]: GETIMPORT R13 9 [nil]
+      66 [-]: GETTABLE R12 R13 R10
+      67 [-]: FASTCALL1 62 R12 L9
+      68 [-]: GETIMPORT R11 5 [nil]
+      69 [-]: CALL R11 1 1 
+L 9:  70 [-]: JUMPIFNOT R11 L10
+      71 [-]: GETIMPORT R11 9 [nil]
+      72 [-]: NEWTABLE R12 0 0
+      73 [-]: SETTABLE R12 R11 R10
+      74 [-]: GETIMPORT R12 9 [nil]
+      75 [-]: GETTABLE R11 R12 R10
+      76 [-]: SETTABLEKS R8 R11 K30 ["timer"]
+      77 [-]: GETIMPORT R12 9 [nil]
+      78 [-]: GETTABLE R11 R12 R10
+      79 [-]: SETTABLEKS R7 R11 K31 ["speed"]
+      80 [-]: GETIMPORT R12 9 [nil]
+      81 [-]: GETTABLE R11 R12 R10
+      82 [-]: SETTABLEKS R4 R11 K32 ["upgrade"]
+      83 [-]: JUMP L11
+    
+L10:  84 [-]: GETIMPORT R12 9 [nil]
+      85 [-]: GETTABLE R11 R12 R10
+      86 [-]: SETTABLEKS R8 R11 K30 ["timer"]
+      87 [-]: RETURN R0 0  
+L11:  88 [-]: GETIMPORT R13 34 [nil]
+      89 [-]: LOADK R14 K35 ["HoverboardSpeedTimer"]
+      90 [-]: CALL R13 1 1 
+      91 [-]: LOADB R14 0  
+      92 [-]: NAMECALL R11 R6 K36 [0xD5F7912B]
+      93 [-]: CALL R11 3 0 
+      94 [-]: RETURN R0 0  
+
 
 

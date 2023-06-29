@@ -1,68 +1,62 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
-; Max Stack Size:  2
+; Is_vararg:       1
+; Max Stack Size:  1
 
-  1 [-]: CLOSURE   R0 0         ; R0 := closure(Function #1)
-  2 [-]: SETGLOBAL R0 K0        ; DestroyableObject := R0
-  3 [-]: RETURN    R0 1         ; return 
+            1 [-]: DUPCLOSURE R0 K0 []
+       2 [-]: SETGLOBAL R0 K1 ["DestroyableObject"]
+       3 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 5
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  19
+; Max Stack Size:  9
 
-  1 [-]: GETGLOBAL R1 K0        ; R1 := 0xc8802016
-  2 [-]: GETGLOBAL R2 K1        ; R2 := 0xc45aa52c
-  3 [-]: CALL      R1 2 4       ; R1,R2,R3 := R1(R2)
-  4 [-]: JMP       13           ; PC := 13
-  5 [-]: GETGLOBAL R6 K2        ; R6 := 0x7b998233
-  6 [-]: MOVE      R7 R5        ; R7 := R5
-  7 [-]: CALL      R6 2 2       ; R6 := R6(R7)
-  8 [-]: TEST      R6 1         ; if R6 then PC := 13
-  9 [-]: JMP       13           ; PC := 13
- 10 [-]: SELF      R6 R5 K3     ; R7 := R5; R6 := R5[0x8eb2112d]
- 11 [-]: LOADK     R8 K4        ; R8 := "Destroy"
- 12 [-]: CALL      R6 3 1       ; R6(R7,R8)
- 13 [-]: TFORLOOP  R1 2         ; R4,R5 :=  R1(R2,R3); if R4 ~= nil then begin PC = 5; R3 := R4 end
- 14 [-]: JMP       5            ; PC := 5
- 15 [-]: GETGLOBAL R6 K0        ; R6 := 0xc8802016
- 16 [-]: GETGLOBAL R7 K5        ; R7 := 0x5298bf71
- 17 [-]: CALL      R6 2 4       ; R6,R7,R8 := R6(R7)
- 18 [-]: JMP       27           ; PC := 27
- 19 [-]: GETGLOBAL R11 K2       ; R11 := 0x7b998233
- 20 [-]: MOVE      R12 R10      ; R12 := R10
- 21 [-]: CALL      R11 2 2      ; R11 := R11(R12)
- 22 [-]: TEST      R11 1        ; if R11 then PC := 27
- 23 [-]: JMP       27           ; PC := 27
- 24 [-]: SELF      R11 R10 K3   ; R12 := R10; R11 := R10[0x8eb2112d]
- 25 [-]: LOADK     R13 K6       ; R13 := "Show"
- 26 [-]: CALL      R11 3 1      ; R11(R12,R13)
- 27 [-]: TFORLOOP  R6 2         ; R9,R10 :=  R6(R7,R8); if R9 ~= nil then begin PC = 19; R8 := R9 end
- 28 [-]: JMP       19           ; PC := 19
- 29 [-]: GETGLOBAL R11 K0       ; R11 := 0xc8802016
- 30 [-]: GETGLOBAL R12 K7       ; R12 := 0xec94c032
- 31 [-]: CALL      R11 2 4      ; R11,R12,R13 := R11(R12)
- 32 [-]: JMP       41           ; PC := 41
- 33 [-]: GETGLOBAL R16 K2       ; R16 := 0x7b998233
- 34 [-]: MOVE      R17 R15      ; R17 := R15
- 35 [-]: CALL      R16 2 2      ; R16 := R16(R17)
- 36 [-]: TEST      R16 1        ; if R16 then PC := 41
- 37 [-]: JMP       41           ; PC := 41
- 38 [-]: SELF      R16 R15 K3   ; R17 := R15; R16 := R15[0x8eb2112d]
- 39 [-]: LOADK     R18 K8       ; R18 := "Disable"
- 40 [-]: CALL      R16 3 1      ; R16(R17,R18)
- 41 [-]: TFORLOOP  R11 2        ; R14,R15 :=  R11(R12,R13); if R14 ~= nil then begin PC = 33; R13 := R14 end
- 42 [-]: JMP       33           ; PC := 33
- 43 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R1 1 [nil]
+       1 [-]: GETIMPORT R2 3 [nil]
+       2 [-]: CALL R1 1 3  
+       3 [-]: FORGPREP_INEXT R1 L2
+L 0:   4 [-]: FASTCALL1 62 R5 L1
+       5 [-]: MOVE R7 R5   
+       6 [-]: GETIMPORT R6 5 [nil]
+       7 [-]: CALL R6 1 1  
+L 1:   8 [-]: JUMPIF R6 L2 
+       9 [-]: LOADK R8 K6 ["Destroy"]
+      10 [-]: NAMECALL R6 R5 K7 [0x8EB2112D]
+      11 [-]: CALL R6 2 0  
+L 2:  12 [-]: FORGLOOP R1 L0 2 [inext]
+      13 [-]: GETIMPORT R1 1 [nil]
+      14 [-]: GETIMPORT R2 9 [nil]
+      15 [-]: CALL R1 1 3  
+      16 [-]: FORGPREP_INEXT R1 L5
+L 3:  17 [-]: FASTCALL1 62 R5 L4
+      18 [-]: MOVE R7 R5   
+      19 [-]: GETIMPORT R6 5 [nil]
+      20 [-]: CALL R6 1 1  
+L 4:  21 [-]: JUMPIF R6 L5 
+      22 [-]: LOADK R8 K10 ["Show"]
+      23 [-]: NAMECALL R6 R5 K7 [0x8EB2112D]
+      24 [-]: CALL R6 2 0  
+L 5:  25 [-]: FORGLOOP R1 L3 2 [inext]
+      26 [-]: GETIMPORT R1 1 [nil]
+      27 [-]: GETIMPORT R2 12 [nil]
+      28 [-]: CALL R1 1 3  
+      29 [-]: FORGPREP_INEXT R1 L8
+L 6:  30 [-]: FASTCALL1 62 R5 L7
+      31 [-]: MOVE R7 R5   
+      32 [-]: GETIMPORT R6 5 [nil]
+      33 [-]: CALL R6 1 1  
+L 7:  34 [-]: JUMPIF R6 L8 
+      35 [-]: LOADK R8 K13 ["Disable"]
+      36 [-]: NAMECALL R6 R5 K7 [0x8EB2112D]
+      37 [-]: CALL R6 2 0  
+L 8:  38 [-]: FORGLOOP R1 L6 2 [inext]
+      39 [-]: RETURN R0 0  
+
 
 

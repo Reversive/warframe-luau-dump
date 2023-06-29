@@ -1,189 +1,157 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
-; Max Stack Size:  57
+; Is_vararg:       1
+; Max Stack Size:  36
 
-  1 [-]: GETGLOBAL R0 K0        ; R0 := 0x2d0fad09
-  2 [-]: LOADK     R1 K1        ; R1 := "EE.Interface.Utilities"
-  3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: GETGLOBAL R1 K0        ; R1 := 0x2d0fad09
-  5 [-]: LOADK     R2 K2        ; R2 := "Lotus.Scripts.Libs.LandscapeLib"
-  6 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  7 [-]: GETGLOBAL R2 K0        ; R2 := 0x2d0fad09
-  8 [-]: LOADK     R3 K3        ; R3 := "Lotus.Scripts.Libs.TransmissionSet"
-  9 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 10 [-]: GETGLOBAL R3 K0        ; R3 := 0x2d0fad09
- 11 [-]: LOADK     R4 K4        ; R4 := "Lotus.Interface.Libs.TimerMgr"
- 12 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 13 [-]: GETGLOBAL R4 K0        ; R4 := 0x2d0fad09
- 14 [-]: LOADK     R5 K5        ; R5 := "Lotus.Scripts.Libs.ObjectiveText"
- 15 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 16 [-]: LOADK     R5 K6        ; R5 := "/Lotus/Language/SolarisQuest/HackConsoleObjective"
- 17 [-]: LOADK     R6 K7        ; R6 := "/Lotus/Language/SolarisQuest/DefendConsoleObjective"
- 18 [-]: LOADK     R7 K8        ; R7 := "/Lotus/Language/SolarisQuest/TowerOverheatObjective"
- 19 [-]: LOADK     R8 K9        ; R8 := "/Lotus/Language/SolarisQuest/AmarystStageObjective"
- 20 [-]: LOADNIL   R9 R12       ; R9 := R10 := R11 := R12 := nil
- 21 [-]: CONST     R13 0        ; R13 := 0.000000
- 22 [-]: CONST     R14 0        ; R14 := 0.000000
- 23 [-]: LOADNIL   R15 R26      ; R15 := R16 := R17 := R18 := R19 := R20 := R21 := R22 := R23 := R24 := R25 := R26 := nil
- 24 [-]: CONST     R27 0        ; R27 := 0.000000
- 25 [-]: CONST     R28 1        ; R28 := 1.000000
- 26 [-]: CONST     R29 2        ; R29 := 2.000000
- 27 [-]: CONST     R30 3        ; R30 := 3.000000
- 28 [-]: CONST     R31 4        ; R31 := 4.000000
- 29 [-]: CONST     R32 5        ; R32 := 5.000000
- 30 [-]: CONST     R33 6        ; R33 := 6.000000
- 31 [-]: CONST     R34 7        ; R34 := 7.000000
- 32 [-]: CONST     R35 8        ; R35 := 8.000000
- 33 [-]: CONST     R36 9        ; R36 := 9.000000
- 34 [-]: CONST     R37 10       ; R37 := 10.000000
- 35 [-]: CONST     R38 11       ; R38 := 11.000000
- 36 [-]: CONST     R39 7        ; R39 := 7.000000
- 37 [-]: CONST     R40 3        ; R40 := 3.000000
- 38 [-]: CONST     R41 13       ; R41 := 13.000000
- 39 [-]: CONST     R42 4        ; R42 := 4.000000
- 40 [-]: CONST     R43 180      ; R43 := 180.000000
- 41 [-]: NEWTABLE  R44 0 4      ; R44 := {}
- 42 [-]: SETTABLE  R44 R31 K10  ; R44[R31] := 0.000000
- 43 [-]: SETTABLE  R44 R32 K11  ; R44[R32] := 75.000000
- 44 [-]: SETTABLE  R44 R33 K12  ; R44[R33] := 135.000000
- 45 [-]: SETTABLE  R44 R34 K13  ; R44[R34] := 170.000000
- 46 [-]: NEWTABLE  R45 0 4      ; R45 := {}
- 47 [-]: SETTABLE  R45 R31 K14  ; R45[R31] := 1.000000
- 48 [-]: SETTABLE  R45 R32 K15  ; R45[R32] := 2.000000
- 49 [-]: SETTABLE  R45 R33 K15  ; R45[R33] := 2.000000
- 50 [-]: SETTABLE  R45 R34 K16  ; R45[R34] := 3.000000
- 51 [-]: GETGLOBAL R46 K17      ; R46 := 0x0469f296
- 52 [-]: LOADK     R47 K18      ; R47 := "QuestM5ConsoleHacked"
- 53 [-]: CALL      R46 2 2      ; R46 := R46(R47)
- 54 [-]: GETGLOBAL R47 K17      ; R47 := 0x0469f296
- 55 [-]: LOADK     R48 K19      ; R48 := "QuestM5AmarystConsole"
- 56 [-]: CALL      R47 2 2      ; R47 := R47(R48)
- 57 [-]: GETGLOBAL R48 K17      ; R48 := 0x0469f296
- 58 [-]: LOADK     R49 K20      ; R49 := "QuestMissionDM"
- 59 [-]: CALL      R48 2 2      ; R48 := R48(R49)
- 60 [-]: CLOSURE   R49 0        ; R49 := closure(Function #1)
- 61 [-]: MOVE      R0 R22       ; R0 := R22
- 62 [-]: MOVE      R0 R48       ; R0 := R48
- 63 [-]: CLOSURE   R50 1        ; R50 := closure(Function #2)
- 64 [-]: MOVE      R0 R1        ; R0 := R1
- 65 [-]: MOVE      R0 R15       ; R0 := R15
- 66 [-]: MOVE      R0 R23       ; R0 := R23
- 67 [-]: MOVE      R0 R22       ; R0 := R22
- 68 [-]: MOVE      R0 R49       ; R0 := R49
- 69 [-]: CLOSURE   R51 2        ; R51 := closure(Function #3)
- 70 [-]: CLOSURE   R52 3        ; R52 := closure(Function #4)
- 71 [-]: MOVE      R0 R15       ; R0 := R15
- 72 [-]: MOVE      R0 R39       ; R0 := R39
- 73 [-]: MOVE      R0 R40       ; R0 := R40
- 74 [-]: MOVE      R0 R51       ; R0 := R51
- 75 [-]: MOVE      R0 R10       ; R0 := R10
- 76 [-]: MOVE      R0 R12       ; R0 := R12
- 77 [-]: CLOSURE   R53 4        ; R53 := closure(Function #5)
- 78 [-]: MOVE      R0 R1        ; R0 := R1
- 79 [-]: MOVE      R0 R15       ; R0 := R15
- 80 [-]: CLOSURE   R54 5        ; R54 := closure(Function #6)
- 81 [-]: MOVE      R0 R18       ; R0 := R18
- 82 [-]: MOVE      R0 R4        ; R0 := R4
- 83 [-]: MOVE      R0 R28       ; R0 := R28
- 84 [-]: MOVE      R0 R2        ; R0 := R2
- 85 [-]: MOVE      R0 R16       ; R0 := R16
- 86 [-]: MOVE      R0 R20       ; R0 := R20
- 87 [-]: MOVE      R0 R5        ; R0 := R5
- 88 [-]: MOVE      R0 R25       ; R0 := R25
- 89 [-]: MOVE      R0 R24       ; R0 := R24
- 90 [-]: MOVE      R0 R35       ; R0 := R35
- 91 [-]: MOVE      R0 R29       ; R0 := R29
- 92 [-]: MOVE      R0 R50       ; R0 := R50
- 93 [-]: MOVE      R0 R22       ; R0 := R22
- 94 [-]: MOVE      R0 R6        ; R0 := R6
- 95 [-]: MOVE      R0 R30       ; R0 := R30
- 96 [-]: MOVE      R0 R52       ; R0 := R52
- 97 [-]: MOVE      R0 R10       ; R0 := R10
- 98 [-]: MOVE      R0 R49       ; R0 := R49
- 99 [-]: MOVE      R0 R53       ; R0 := R53
-100 [-]: MOVE      R0 R31       ; R0 := R31
-101 [-]: MOVE      R0 R7        ; R0 := R7
-102 [-]: MOVE      R0 R32       ; R0 := R32
-103 [-]: MOVE      R0 R33       ; R0 := R33
-104 [-]: MOVE      R0 R34       ; R0 := R34
-105 [-]: MOVE      R0 R36       ; R0 := R36
-106 [-]: MOVE      R0 R8        ; R0 := R8
-107 [-]: MOVE      R0 R26       ; R0 := R26
-108 [-]: MOVE      R0 R37       ; R0 := R37
-109 [-]: MOVE      R0 R38       ; R0 := R38
-110 [-]: CLOSURE   R55 6        ; R55 := closure(Function #7)
-111 [-]: MOVE      R0 R10       ; R0 := R10
-112 [-]: MOVE      R0 R9        ; R0 := R9
-113 [-]: MOVE      R0 R11       ; R0 := R11
-114 [-]: MOVE      R0 R15       ; R0 := R15
-115 [-]: MOVE      R0 R12       ; R0 := R12
-116 [-]: MOVE      R0 R13       ; R0 := R13
-117 [-]: MOVE      R0 R14       ; R0 := R14
-118 [-]: MOVE      R0 R19       ; R0 := R19
-119 [-]: MOVE      R0 R16       ; R0 := R16
-120 [-]: MOVE      R0 R21       ; R0 := R21
-121 [-]: MOVE      R0 R20       ; R0 := R20
-122 [-]: MOVE      R0 R23       ; R0 := R23
-123 [-]: MOVE      R0 R18       ; R0 := R18
-124 [-]: MOVE      R0 R1        ; R0 := R1
-125 [-]: MOVE      R0 R54       ; R0 := R54
-126 [-]: MOVE      R0 R46       ; R0 := R46
-127 [-]: MOVE      R0 R47       ; R0 := R47
-128 [-]: MOVE      R0 R17       ; R0 := R17
-129 [-]: MOVE      R0 R3        ; R0 := R3
-130 [-]: MOVE      R0 R25       ; R0 := R25
-131 [-]: MOVE      R0 R26       ; R0 := R26
-132 [-]: MOVE      R0 R0        ; R0 := R0
-133 [-]: MOVE      R0 R28       ; R0 := R28
-134 [-]: CLOSURE   R56 7        ; R56 := closure(Function #8)
-135 [-]: MOVE      R0 R55       ; R0 := R55
-136 [-]: MOVE      R0 R27       ; R0 := R27
-137 [-]: MOVE      R0 R37       ; R0 := R37
-138 [-]: MOVE      R0 R18       ; R0 := R18
-139 [-]: MOVE      R0 R28       ; R0 := R28
-140 [-]: MOVE      R0 R25       ; R0 := R25
-141 [-]: MOVE      R0 R29       ; R0 := R29
-142 [-]: MOVE      R0 R31       ; R0 := R31
-143 [-]: MOVE      R0 R34       ; R0 := R34
-144 [-]: MOVE      R0 R43       ; R0 := R43
-145 [-]: MOVE      R0 R4        ; R0 := R4
-146 [-]: MOVE      R0 R52       ; R0 := R52
-147 [-]: MOVE      R0 R41       ; R0 := R41
-148 [-]: MOVE      R0 R42       ; R0 := R42
-149 [-]: MOVE      R0 R44       ; R0 := R44
-150 [-]: MOVE      R0 R45       ; R0 := R45
-151 [-]: MOVE      R0 R10       ; R0 := R10
-152 [-]: MOVE      R0 R35       ; R0 := R35
-153 [-]: MOVE      R0 R22       ; R0 := R22
-154 [-]: MOVE      R0 R38       ; R0 := R38
-155 [-]: MOVE      R0 R36       ; R0 := R36
-156 [-]: MOVE      R0 R26       ; R0 := R26
-157 [-]: MOVE      R0 R17       ; R0 := R17
-158 [-]: MOVE      R0 R1        ; R0 := R1
-159 [-]: MOVE      R0 R11       ; R0 := R11
-160 [-]: SETGLOBAL R56 K21      ; Start := R56
-161 [-]: CLOSURE   R56 8        ; R56 := closure(Function #9)
-162 [-]: SETGLOBAL R56 K22      ; DefenseConsoleHacked := R56
-163 [-]: CLOSURE   R56 9        ; R56 := closure(Function #10)
-164 [-]: SETGLOBAL R56 K23      ; AmarystConsoleHacked := R56
-165 [-]: CLOSURE   R56 10       ; R56 := closure(Function #11)
-166 [-]: MOVE      R0 R1        ; R0 := R1
-167 [-]: MOVE      R0 R11       ; R0 := R11
-168 [-]: SETGLOBAL R56 K24      ; PlayersLeaving := R56
-169 [-]: CLOSURE   R56 11       ; R56 := closure(Function #12)
-170 [-]: MOVE      R0 R1        ; R0 := R1
-171 [-]: MOVE      R0 R11       ; R0 := R11
-172 [-]: SETGLOBAL R56 K25      ; PlayersReturning := R56
-173 [-]: RETURN    R0 1         ; return 
+            1 [-]: GETIMPORT R0 1 [nil]
+       2 [-]: LOADK R1 K2 ["EE.Interface.Utilities"]
+       3 [-]: CALL R0 1 1  
+       4 [-]: GETIMPORT R1 1 [nil]
+       5 [-]: LOADK R2 K3 ["Lotus.Scripts.Libs.LandscapeLib"]
+       6 [-]: CALL R1 1 1  
+       7 [-]: GETIMPORT R2 1 [nil]
+       8 [-]: LOADK R3 K4 ["Lotus.Scripts.Libs.TransmissionSet"]
+       9 [-]: CALL R2 1 1  
+      10 [-]: GETIMPORT R3 1 [nil]
+      11 [-]: LOADK R4 K5 ["Lotus.Interface.Libs.TimerMgr"]
+      12 [-]: CALL R3 1 1  
+      13 [-]: GETIMPORT R4 1 [nil]
+      14 [-]: LOADK R5 K6 ["Lotus.Scripts.Libs.ObjectiveText"]
+      15 [-]: CALL R4 1 1  
+      16 [-]: LOADNIL R5   
+      17 [-]: LOADNIL R6   
+      18 [-]: LOADNIL R7   
+      19 [-]: LOADNIL R8   
+      20 [-]: LOADN R9 0   
+      21 [-]: LOADN R10 0  
+      22 [-]: LOADNIL R11  
+      23 [-]: LOADNIL R12  
+      24 [-]: LOADNIL R13  
+      25 [-]: LOADNIL R14  
+      26 [-]: LOADNIL R15  
+      27 [-]: LOADNIL R16  
+      28 [-]: LOADNIL R17  
+      29 [-]: LOADNIL R18  
+      30 [-]: LOADNIL R19  
+      31 [-]: LOADNIL R20  
+      32 [-]: LOADNIL R21  
+      33 [-]: LOADNIL R22  
+      34 [-]: NEWTABLE R23 4 0
+      35 [-]: LOADN R24 0  
+      36 [-]: SETTABLEN R24 R23 4
+      37 [-]: LOADN R24 75 
+      38 [-]: SETTABLEN R24 R23 5
+      39 [-]: LOADN R24 135
+      40 [-]: SETTABLEN R24 R23 6
+      41 [-]: LOADN R24 170
+      42 [-]: SETTABLEN R24 R23 7
+      43 [-]: NEWTABLE R24 4 0
+      44 [-]: LOADN R25 1  
+      45 [-]: SETTABLEN R25 R24 4
+      46 [-]: LOADN R25 2  
+      47 [-]: SETTABLEN R25 R24 5
+      48 [-]: LOADN R25 2  
+      49 [-]: SETTABLEN R25 R24 6
+      50 [-]: LOADN R25 3  
+      51 [-]: SETTABLEN R25 R24 7
+      52 [-]: GETIMPORT R25 8 [nil]
+      53 [-]: LOADK R26 K9 ["QuestM5ConsoleHacked"]
+      54 [-]: CALL R25 1 1 
+      55 [-]: GETIMPORT R26 8 [nil]
+      56 [-]: LOADK R27 K10 ["QuestM5AmarystConsole"]
+      57 [-]: CALL R26 1 1 
+      58 [-]: GETIMPORT R27 8 [nil]
+      59 [-]: LOADK R28 K11 ["QuestMissionDM"]
+      60 [-]: CALL R27 1 1 
+      61 [-]: NEWCLOSURE R28 P0
+      62 [-]: MOVE R1 R18  
+      63 [-]: MOVE R0 R27  
+      64 [-]: NEWCLOSURE R29 P1
+      65 [-]: MOVE R0 R1   
+      66 [-]: MOVE R1 R11  
+      67 [-]: MOVE R1 R19  
+      68 [-]: MOVE R1 R18  
+      69 [-]: MOVE R0 R28  
+      70 [-]: DUPCLOSURE R30 K12 []
+      71 [-]: NEWCLOSURE R31 P3
+      72 [-]: MOVE R1 R11  
+      73 [-]: MOVE R0 R30  
+      74 [-]: MOVE R1 R6   
+      75 [-]: MOVE R1 R8   
+      76 [-]: NEWCLOSURE R32 P4
+      77 [-]: MOVE R0 R1   
+      78 [-]: MOVE R1 R11  
+      79 [-]: NEWCLOSURE R33 P5
+      80 [-]: MOVE R1 R14  
+      81 [-]: MOVE R0 R4   
+      82 [-]: MOVE R0 R2   
+      83 [-]: MOVE R1 R12  
+      84 [-]: MOVE R1 R16  
+      85 [-]: MOVE R1 R21  
+      86 [-]: MOVE R1 R20  
+      87 [-]: MOVE R0 R29  
+      88 [-]: MOVE R1 R18  
+      89 [-]: MOVE R0 R31  
+      90 [-]: MOVE R1 R6   
+      91 [-]: MOVE R0 R28  
+      92 [-]: MOVE R0 R32  
+      93 [-]: MOVE R1 R22  
+      94 [-]: NEWCLOSURE R34 P6
+      95 [-]: MOVE R1 R6   
+      96 [-]: MOVE R1 R5   
+      97 [-]: MOVE R1 R7   
+      98 [-]: MOVE R1 R11  
+      99 [-]: MOVE R1 R8   
+     100 [-]: MOVE R1 R9   
+     101 [-]: MOVE R1 R10  
+     102 [-]: MOVE R1 R15  
+     103 [-]: MOVE R1 R12  
+     104 [-]: MOVE R1 R17  
+     105 [-]: MOVE R1 R16  
+     106 [-]: MOVE R1 R19  
+     107 [-]: MOVE R1 R14  
+     108 [-]: MOVE R0 R1   
+     109 [-]: MOVE R0 R33  
+     110 [-]: MOVE R0 R25  
+     111 [-]: MOVE R0 R26  
+     112 [-]: MOVE R1 R13  
+     113 [-]: MOVE R0 R3   
+     114 [-]: MOVE R1 R21  
+     115 [-]: MOVE R1 R22  
+     116 [-]: MOVE R0 R0   
+     117 [-]: NEWCLOSURE R35 P7
+     118 [-]: MOVE R0 R34  
+     119 [-]: MOVE R1 R14  
+     120 [-]: MOVE R1 R21  
+     121 [-]: MOVE R0 R4   
+     122 [-]: MOVE R0 R31  
+     123 [-]: MOVE R0 R23  
+     124 [-]: MOVE R0 R24  
+     125 [-]: MOVE R1 R6   
+     126 [-]: MOVE R1 R18  
+     127 [-]: MOVE R1 R22  
+     128 [-]: MOVE R1 R13  
+     129 [-]: MOVE R0 R1   
+     130 [-]: MOVE R1 R7   
+     131 [-]: SETGLOBAL R35 K13 ["Start"]
+     132 [-]: DUPCLOSURE R35 K14 []
+     133 [-]: SETGLOBAL R35 K15 ["DefenseConsoleHacked"]
+     134 [-]: DUPCLOSURE R35 K16 []
+     135 [-]: SETGLOBAL R35 K17 ["AmarystConsoleHacked"]
+     136 [-]: NEWCLOSURE R35 P10
+     137 [-]: MOVE R0 R1   
+     138 [-]: MOVE R1 R7   
+     139 [-]: SETGLOBAL R35 K18 ["PlayersLeaving"]
+     140 [-]: NEWCLOSURE R35 P11
+     141 [-]: MOVE R0 R1   
+     142 [-]: MOVE R1 R7   
+     143 [-]: SETGLOBAL R35 K19 ["PlayersReturning"]
+     144 [-]: CLOSEUPVALS R5
+     145 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 74
 ; #Upvalues:       2
@@ -191,50 +159,47 @@
 ; Is_vararg:       0
 ; Max Stack Size:  7
 
-  1 [-]: GETGLOBAL R1 K0        ; R1 := 0x7b998233
-  2 [-]: GETUPVAL  R2 U0        ; R2 := U0
-  3 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  4 [-]: TEST      R1 1         ; if R1 then PC := 40
-  5 [-]: JMP       40           ; PC := 40
-  6 [-]: TEST      R0 0         ; if not R0 then PC := 26
-  7 [-]: JMP       26           ; PC := 26
-  8 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  9 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1[0x1fedcbcf]
- 10 [-]: CONST     R3 -5        ; R3 := -5.000000
- 11 [-]: CALL      R1 3 1       ; R1(R2,R3)
- 12 [-]: GETUPVAL  R1 U0        ; R1 := U0
- 13 [-]: SELF      R1 R1 K2     ; R2 := R1; R1 := R1[0x1ac1655c]
- 14 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 15 [-]: SELF      R1 R1 K3     ; R2 := R1; R1 := R1[0xa383de31]
- 16 [-]: GETUPVAL  R3 U1        ; R3 := U1
- 17 [-]: CONST     R4 25        ; R4 := 25.000000
- 18 [-]: CONST     R5 6         ; R5 := 6.000000
- 19 [-]: CONST     R6 0         ; R6 := 0.000000
- 20 [-]: CALL      R1 6 1       ; R1(R2,R3,R4,R5,R6)
- 21 [-]: GETUPVAL  R1 U0        ; R1 := U0
- 22 [-]: SELF      R1 R1 K5     ; R2 := R1; R1 := R1[0x069d881f]
- 23 [-]: LOADKB    R3 1 0       ; R3 := true
- 24 [-]: CALL      R1 3 1       ; R1(R2,R3)
- 25 [-]: JMP       40           ; PC := 40
- 26 [-]: GETUPVAL  R1 U0        ; R1 := U0
- 27 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1[0x1fedcbcf]
- 28 [-]: CONST     R3 2         ; R3 := 2.000000
- 29 [-]: CALL      R1 3 1       ; R1(R2,R3)
- 30 [-]: GETUPVAL  R1 U0        ; R1 := U0
- 31 [-]: SELF      R1 R1 K2     ; R2 := R1; R1 := R1[0x1ac1655c]
- 32 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 33 [-]: SELF      R1 R1 K6     ; R2 := R1; R1 := R1[0x8e3e343e]
- 34 [-]: GETUPVAL  R3 U1        ; R3 := U1
- 35 [-]: CALL      R1 3 1       ; R1(R2,R3)
- 36 [-]: GETUPVAL  R1 U0        ; R1 := U0
- 37 [-]: SELF      R1 R1 K5     ; R2 := R1; R1 := R1[0x069d881f]
- 38 [-]: LOADKB    R3 0 0       ; R3 := false
- 39 [-]: CALL      R1 3 1       ; R1(R2,R3)
- 40 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETUPVAL R2 0
+       1 [-]: FASTCALL1 62 R2 L0
+       2 [-]: GETIMPORT R1 1 [nil]
+       3 [-]: CALL R1 1 1  
+L 0:   4 [-]: JUMPIF R1 L2 
+       5 [-]: JUMPIFNOT R0 L1
+       6 [-]: GETUPVAL R1 0
+       7 [-]: LOADN R3 -5  
+       8 [-]: NAMECALL R1 R1 K2 [0x1FEDCBCF]
+       9 [-]: CALL R1 2 0  
+      10 [-]: GETUPVAL R1 0
+      11 [-]: NAMECALL R1 R1 K3 [0x1AC1655C]
+      12 [-]: CALL R1 1 1  
+      13 [-]: GETUPVAL R3 1
+      14 [-]: LOADN R4 25  
+      15 [-]: LOADN R5 6   
+      16 [-]: LOADN R6 0   
+      17 [-]: NAMECALL R1 R1 K4 [0xA383DE31]
+      18 [-]: CALL R1 5 0  
+      19 [-]: GETUPVAL R1 0
+      20 [-]: LOADB R3 1   
+      21 [-]: NAMECALL R1 R1 K5 [0x069D881F]
+      22 [-]: CALL R1 2 0  
+      23 [-]: RETURN R0 0  
+L 1:  24 [-]: GETUPVAL R1 0
+      25 [-]: LOADN R3 2   
+      26 [-]: NAMECALL R1 R1 K2 [0x1FEDCBCF]
+      27 [-]: CALL R1 2 0  
+      28 [-]: GETUPVAL R1 0
+      29 [-]: NAMECALL R1 R1 K3 [0x1AC1655C]
+      30 [-]: CALL R1 1 1  
+      31 [-]: GETUPVAL R3 1
+      32 [-]: NAMECALL R1 R1 K6 [0x8E3E343E]
+      33 [-]: CALL R1 2 0  
+      34 [-]: GETUPVAL R1 0
+      35 [-]: LOADB R3 0   
+      36 [-]: NAMECALL R1 R1 K5 [0x069D881F]
+      37 [-]: CALL R1 2 0  
+L 2:  38 [-]: RETURN R0 0  
 
 
-; Function #2:
-;
 ; Name:            
 ; Defined at line: 88
 ; #Upvalues:       5
@@ -242,935 +207,861 @@
 ; Is_vararg:       0
 ; Max Stack Size:  6
 
-  1 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  2 [-]: GETTABLE  R0 R0 K0     ; R0 := R0[0xbd9a0502]
-  3 [-]: GETUPVAL  R1 U1        ; R1 := U1
-  4 [-]: GETGLOBAL R2 K1        ; R2 := gNpcSpawnControlType
-  5 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
-  6 [-]: SELF      R1 R0 K2     ; R2 := R0; R1 := R0[0x64c5c9ed]
-  7 [-]: GETUPVAL  R3 U2        ; R3 := U2
-  8 [-]: CALL      R1 3 1       ; R1(R2,R3)
-  9 [-]: SELF      R1 R0 K3     ; R2 := R0; R1 := R0[0x6bfeac2e]
- 10 [-]: CALL      R1 2 1       ; R1(R2)
- 11 [-]: SELF      R1 R0 K4     ; R2 := R0; R1 := R0[0x90e142ba]
- 12 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 13 [-]: GETTABLE  R1 R1 K5     ; R1 := R1[1.000000]
- 14 [-]: LOADNIL   R2 R2        ; R2 := nil
- 15 [-]: GETGLOBAL R3 K6        ; R3 := 0x7b998233
- 16 [-]: MOVE      R4 R2        ; R4 := R2
- 17 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 18 [-]: TEST      R3 0         ; if not R3 then PC := 35
- 19 [-]: JMP       35           ; PC := 35
- 20 [-]: SELF      R3 R1 K7     ; R4 := R1; R3 := R1[0x1e3535e5]
- 21 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 22 [-]: GETGLOBAL R4 K6        ; R4 := 0x7b998233
- 23 [-]: MOVE      R5 R3        ; R5 := R3
- 24 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 25 [-]: TEST      R4 1         ; if R4 then PC := 31
- 26 [-]: JMP       31           ; PC := 31
- 27 [-]: SETUPVAL  R3 U3        ; U82 := R3
- 28 [-]: SELF      R4 R3 K8     ; R5 := R3; R4 := R3[0xfa9e477f]
- 29 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 30 [-]: MOVE      R2 R4        ; R2 := R4
- 31 [-]: GETGLOBAL R4 K9        ; R4 := 0xcbd666e1
- 32 [-]: CONST     R5 0         ; R5 := 0.000000
- 33 [-]: CALL      R4 2 1       ; R4(R5)
- 34 [-]: JMP       15           ; PC := 15
- 35 [-]: GETUPVAL  R4 U4        ; R4 := U4
- 36 [-]: LOADKB    R5 1 0       ; R5 := true
- 37 [-]: CALL      R4 2 1       ; R4(R5)
- 38 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETUPVAL R1 0
+       1 [-]: GETTABLEKS R0 R1 K0 [0xBD9A0502]
+       2 [-]: GETUPVAL R1 1
+       3 [-]: GETIMPORT R2 2 [nil]
+       4 [-]: CALL R0 2 1  
+       5 [-]: GETUPVAL R3 2
+       6 [-]: NAMECALL R1 R0 K3 [0x64C5C9ED]
+       7 [-]: CALL R1 2 0  
+       8 [-]: NAMECALL R1 R0 K4 [0x6BFEAC2E]
+       9 [-]: CALL R1 1 0  
+      10 [-]: NAMECALL R2 R0 K5 [0x90E142BA]
+      11 [-]: CALL R2 1 1  
+      12 [-]: GETTABLEN R1 R2 1
+      13 [-]: LOADNIL R2   
+L 0:  14 [-]: FASTCALL1 62 R2 L1
+      15 [-]: MOVE R4 R2   
+      16 [-]: GETIMPORT R3 7 [nil]
+      17 [-]: CALL R3 1 1  
+L 1:  18 [-]: JUMPIFNOT R3 L4
+      19 [-]: NAMECALL R3 R1 K8 [0x1E3535E5]
+      20 [-]: CALL R3 1 1  
+      21 [-]: FASTCALL1 62 R3 L2
+      22 [-]: MOVE R5 R3   
+      23 [-]: GETIMPORT R4 7 [nil]
+      24 [-]: CALL R4 1 1  
+L 2:  25 [-]: JUMPIF R4 L3 
+      26 [-]: SETUPVAL R3 3
+      27 [-]: NAMECALL R4 R3 K9 [0xFA9E477F]
+      28 [-]: CALL R4 1 1  
+      29 [-]: MOVE R2 R4   
+L 3:  30 [-]: GETIMPORT R4 11 [nil]
+      31 [-]: LOADN R5 0   
+      32 [-]: CALL R4 1 0  
+      33 [-]: JUMPBACK L0  
+L 4:  34 [-]: GETUPVAL R3 4
+      35 [-]: LOADB R4 1   
+      36 [-]: CALL R3 1 0  
+      37 [-]: RETURN R0 0  
 
 
-; Function #3:
-;
 ; Name:            
 ; Defined at line: 106
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
-; Max Stack Size:  14
+; Max Stack Size:  10
 
-  1 [-]: GETGLOBAL R0 K0        ; R0 := 0x64855ced
-  2 [-]: CONST     R1 0         ; R1 := 0.000000
-  3 [-]: CONST     R2 1         ; R2 := 1.000000
-  4 [-]: LEN       R3 R0        ; R3 := # R0
-  5 [-]: CONST     R4 1         ; R4 := 1.000000
-  6 [-]: FORPREP   R2 9         ; R2 -= R4; PC := 9
-  7 [-]: GETTABLE  R6 R0 R5     ; R6 := R0[R5]
-  8 [-]: ADD       R1 R1 R6     ; R1 := R1 + R6
-  9 [-]: FORLOOP   R2 7         ; R2 += R4; if R2 <= R3 then begin PC := 7; R5 := R2 end
- 10 [-]: GETGLOBAL R6 K1        ; R6 := 0x5bced4c4
- 11 [-]: GETTABLE  R6 R6 K2     ; R6 := R6[0x3630e649]
- 12 [-]: CALL      R6 1 2       ; R6 := R6()
- 13 [-]: CONST     R7 1         ; R7 := 1.000000
- 14 [-]: LEN       R8 R0        ; R8 := # R0
- 15 [-]: CONST     R9 1         ; R9 := 1.000000
- 16 [-]: FORPREP   R7 37        ; R7 -= R9; PC := 37
- 17 [-]: CONST     R11 0        ; R11 := 0.000000
- 18 [-]: LT        0 K3 R10     ; if 1.000000 >= R10 then PC := 23
- 19 [-]: JMP       23           ; PC := 23
- 20 [-]: SUB       R12 R10 K3   ; R12 := R10 - 1.000000
- 21 [-]: GETTABLE  R12 R0 R12   ; R12 := R0[R12]
- 22 [-]: DIV       R11 R12 R1   ; R11 := R12 / R1
- 23 [-]: LOADK     R12 K4       ; R12 := 1.100000
- 24 [-]: LEN       R13 R0       ; R13 := # R0
- 25 [-]: LT        0 R10 R13    ; if R10 >= R13 then PC := 30
- 26 [-]: JMP       30           ; PC := 30
- 27 [-]: ADD       R13 R10 K3   ; R13 := R10 + 1.000000
- 28 [-]: GETTABLE  R13 R0 R13   ; R13 := R0[R13]
- 29 [-]: DIV       R12 R13 R1   ; R12 := R13 / R1
- 30 [-]: LE        0 R11 R6     ; if R11 > R6 then PC := 37
- 31 [-]: JMP       37           ; PC := 37
- 32 [-]: LT        0 R6 R12     ; if R6 >= R12 then PC := 37
- 33 [-]: JMP       37           ; PC := 37
- 34 [-]: GETGLOBAL R13 K5       ; R13 := 0xcc240205
- 35 [-]: GETTABLE  R13 R13 R10  ; R13 := R13[R10]
- 36 [-]: RETURN    R13 2        ; return R13
- 37 [-]: FORLOOP   R7 17        ; R7 += R9; if R7 <= R8 then begin PC := 17; R10 := R7 end
- 38 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: LOADN R1 0   
+       2 [-]: LOADN R4 1   
+       3 [-]: LENGTH R2 R0 
+       4 [-]: LOADN R3 1   
+       5 [-]: FORNPREP R2 L1
+L 0:   6 [-]: GETTABLE R5 R0 R4
+       7 [-]: ADD R1 R1 R5 
+       8 [-]: FORNLOOP R2 L0
+L 1:   9 [-]: GETIMPORT R2 4 [nil]
+      10 [-]: CALL R2 0 1  
+      11 [-]: LOADN R5 1   
+      12 [-]: LENGTH R3 R0 
+      13 [-]: LOADN R4 1   
+      14 [-]: FORNPREP R3 L6
+L 2:  15 [-]: LOADN R6 0   
+      16 [-]: LOADN R7 1   
+      17 [-]: JUMPIFNOTLT R7 R5 L3
+      18 [-]: SUBK R8 R5 K5 [1]
+      19 [-]: GETTABLE R7 R0 R8
+      20 [-]: DIV R6 R7 R1 
+L 3:  21 [-]: LOADK R7 K6 [1.1000000000000001]
+      22 [-]: LENGTH R8 R0 
+      23 [-]: JUMPIFNOTLT R5 R8 L4
+      24 [-]: ADDK R9 R5 K5 [1]
+      25 [-]: GETTABLE R8 R0 R9
+      26 [-]: DIV R7 R8 R1 
+L 4:  27 [-]: JUMPIFNOTLE R6 R2 L5
+      28 [-]: JUMPIFNOTLT R2 R7 L5
+      29 [-]: GETIMPORT R9 8 [nil]
+      30 [-]: GETTABLE R8 R9 R5
+      31 [-]: RETURN R8 1  
+L 5:  32 [-]: FORNLOOP R3 L2
+L 6:  33 [-]: RETURN R0 0  
 
 
-; Function #4:
-;
 ; Name:            
 ; Defined at line: 129
-; #Upvalues:       6
+; #Upvalues:       4
 ; #Parameters:     0
 ; Is_vararg:       0
-; Max Stack Size:  16
+; Max Stack Size:  15
 
-  1 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  2 [-]: SELF      R0 R0 K0     ; R1 := R0; R0 := R0[0x39e33d94]
-  3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: GETUPVAL  R1 U1        ; R1 := U1
-  5 [-]: LT        0 R0 R1      ; if R0 >= R1 then PC := 32
-  6 [-]: JMP       32           ; PC := 32
-  7 [-]: CONST     R1 1         ; R1 := 1.000000
-  8 [-]: GETUPVAL  R2 U2        ; R2 := U2
-  9 [-]: LE        0 R0 R2      ; if R0 > R2 then PC := 12
- 10 [-]: JMP       12           ; PC := 12
- 11 [-]: CONST     R1 2         ; R1 := 2.000000
- 12 [-]: CONST     R2 1         ; R2 := 1.000000
- 13 [-]: MOVE      R3 R1        ; R3 := R1
- 14 [-]: CONST     R4 1         ; R4 := 1.000000
- 15 [-]: FORPREP   R2 31        ; R2 -= R4; PC := 31
- 16 [-]: GETUPVAL  R6 U3        ; R6 := U3
- 17 [-]: CALL      R6 1 2       ; R6 := R6()
- 18 [-]: GETUPVAL  R7 U4        ; R7 := U4
- 19 [-]: SELF      R7 R7 K1     ; R8 := R7; R7 := R7[0xa3871690]
- 20 [-]: GETUPVAL  R9 U5        ; R9 := U5
- 21 [-]: CONST     R10 30       ; R10 := 30.000000
- 22 [-]: CONST     R11 80       ; R11 := 80.000000
- 23 [-]: MOVE      R12 R6       ; R12 := R6
- 24 [-]: CONST     R13 2        ; R13 := 2.000000
- 25 [-]: CONST     R14 2        ; R14 := 2.000000
- 26 [-]: GETUPVAL  R15 U0       ; R15 := U0
- 27 [-]: CALL      R7 9 1       ; R7(R8,R9,R10,R11,R12,R13,R14,R15)
- 28 [-]: GETGLOBAL R7 K3        ; R7 := 0xd644c2f1
- 29 [-]: LOADK     R8 K4        ; R8 := "Quest: Reinforcements triggered"
- 30 [-]: CALL      R7 2 1       ; R7(R8)
- 31 [-]: FORLOOP   R2 16        ; R2 += R4; if R2 <= R3 then begin PC := 16; R5 := R2 end
- 32 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETUPVAL R0 0
+       1 [-]: NAMECALL R0 R0 K0 [0x39E33D94]
+       2 [-]: CALL R0 1 1  
+       3 [-]: LOADN R1 7   
+       4 [-]: JUMPIFNOTLT R0 R1 L2
+       5 [-]: LOADN R1 1   
+       6 [-]: LOADN R2 3   
+       7 [-]: JUMPIFNOTLE R0 R2 L0
+       8 [-]: LOADN R1 2   
+L 0:   9 [-]: LOADN R4 1   
+      10 [-]: MOVE R2 R1   
+      11 [-]: LOADN R3 1   
+      12 [-]: FORNPREP R2 L2
+L 1:  13 [-]: GETUPVAL R5 1
+      14 [-]: CALL R5 0 1  
+      15 [-]: GETUPVAL R6 2
+      16 [-]: GETUPVAL R8 3
+      17 [-]: LOADN R9 30  
+      18 [-]: LOADN R10 80 
+      19 [-]: MOVE R11 R5  
+      20 [-]: LOADN R12 2  
+      21 [-]: LOADN R13 2  
+      22 [-]: GETUPVAL R14 0
+      23 [-]: NAMECALL R6 R6 K1 [0xA3871690]
+      24 [-]: CALL R6 8 0  
+      25 [-]: GETIMPORT R6 3 [nil]
+      26 [-]: LOADK R7 K4 ["Quest: Reinforcements triggered"]
+      27 [-]: CALL R6 1 0  
+      28 [-]: FORNLOOP R2 L1
+L 2:  29 [-]: RETURN R0 0  
 
 
-; Function #5:
-;
 ; Name:            
 ; Defined at line: 144
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  6
+; Max Stack Size:  9
 
-  1 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  2 [-]: GETTABLE  R1 R1 K0     ; R1 := R1[0xbd9a0502]
-  3 [-]: GETUPVAL  R2 U1        ; R2 := U1
-  4 [-]: LOADNIL   R3 R3        ; R3 := nil
-  5 [-]: MOVE      R4 R0        ; R4 := R0
-  6 [-]: CALL      R1 4 2       ; R1 := R1(R2,R3,R4)
-  7 [-]: GETGLOBAL R2 K1        ; R2 := 0x7b998233
-  8 [-]: MOVE      R3 R1        ; R3 := R1
-  9 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 10 [-]: TEST      R2 1         ; if R2 then PC := 15
- 11 [-]: JMP       15           ; PC := 15
- 12 [-]: SELF      R2 R1 K2     ; R3 := R1; R2 := R1[0x8eb2112d]
- 13 [-]: LOADK     R4 K3        ; R4 := "TriggerPort"
- 14 [-]: CALL      R2 3 1       ; R2(R3,R4)
- 15 [-]: GETGLOBAL R2 K4        ; R2 := 0xd644c2f1
- 16 [-]: LOADK     R3 K5        ; R3 := "Solaris Quest: "
- 17 [-]: GETGLOBAL R4 K6        ; R4 := 0x64fb1586
- 18 [-]: MOVE      R5 R0        ; R5 := R0
- 19 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 20 [-]: LOADK     R5 K7        ; R5 := " event"
- 21 [-]: CONCAT    R3 R3 R5     ; R3 := R3 .. R4 .. R5
- 22 [-]: CALL      R2 2 1       ; R2(R3)
- 23 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETUPVAL R2 0
+       1 [-]: GETTABLEKS R1 R2 K0 [0xBD9A0502]
+       2 [-]: GETUPVAL R2 1
+       3 [-]: LOADNIL R3   
+       4 [-]: MOVE R4 R0   
+       5 [-]: CALL R1 3 1  
+       6 [-]: FASTCALL1 62 R1 L0
+       7 [-]: MOVE R3 R1   
+       8 [-]: GETIMPORT R2 2 [nil]
+       9 [-]: CALL R2 1 1  
+L 0:  10 [-]: JUMPIF R2 L1 
+      11 [-]: LOADK R4 K3 ["TriggerPort"]
+      12 [-]: NAMECALL R2 R1 K4 [0x8EB2112D]
+      13 [-]: CALL R2 2 0  
+L 1:  14 [-]: GETIMPORT R2 6 [nil]
+      15 [-]: LOADK R4 K7 ["Solaris Quest: "]
+      16 [-]: GETIMPORT R7 9 [nil]
+      17 [-]: MOVE R8 R0   
+      18 [-]: CALL R7 1 1  
+      19 [-]: MOVE R5 R7   
+      20 [-]: LOADK R6 K10 [" event"]
+      21 [-]: CONCAT R3 R4 R6
+      22 [-]: CALL R2 1 0  
+      23 [-]: RETURN R0 0  
 
 
-; Function #6:
-;
 ; Name:            
 ; Defined at line: 154
-; #Upvalues:       29
+; #Upvalues:       14
 ; #Parameters:     0
 ; Is_vararg:       0
 ; Max Stack Size:  10
 
-  1 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  2 [-]: SELF      R0 R0 K0     ; R1 := R0; R0 := R0[0x209398c2]
-  3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: GETUPVAL  R1 U1        ; R1 := U1
-  5 [-]: GETTABLE  R1 R1 K1     ; R1 := R1[0x2beb71d2]
-  6 [-]: LOADK     R2 K2        ; R2 := "DEBUG STAGE: "
-  7 [-]: GETGLOBAL R3 K3        ; R3 := 0x64fb1586
-  8 [-]: MOVE      R4 R0        ; R4 := R0
-  9 [-]: CALL      R3 2 0       ; R3,... := R3(R4)
- 10 [-]: CALL      R1 0 1       ; R1(R2,...)
- 11 [-]: GETUPVAL  R1 U2        ; R1 := U2
- 12 [-]: EQ        0 R0 R1      ; if R0 ~= R1 then PC := 78
- 13 [-]: JMP       78           ; PC := 78
- 14 [-]: GETGLOBAL R1 K4        ; R1 := 0x3d106989
- 15 [-]: LOADK     R2 K5        ; R2 := "Solaris United Quest: State Change: ARRIVED"
- 16 [-]: CALL      R1 2 1       ; R1(R2)
- 17 [-]: GETUPVAL  R1 U1        ; R1 := U1
- 18 [-]: GETTABLE  R1 R1 K6     ; R1 := R1[0xdc3b2033]
- 19 [-]: CALL      R1 1 1       ; R1()
- 20 [-]: GETUPVAL  R1 U3        ; R1 := U3
- 21 [-]: GETTABLE  R1 R1 K7     ; R1 := R1[0x9742b85b]
- 22 [-]: GETUPVAL  R2 U4        ; R2 := U4
- 23 [-]: GETGLOBAL R3 K8        ; R3 := 0x0469f296
- 24 [-]: GETUPVAL  R4 U5        ; R4 := U5
- 25 [-]: LOADK     R5 K9        ; R5 := "_Arrived"
- 26 [-]: CONCAT    R4 R4 R5     ; R4 := R4 .. R5
- 27 [-]: CALL      R3 2 0       ; R3,... := R3(R4)
- 28 [-]: CALL      R1 0 1       ; R1(R2,...)
- 29 [-]: GETUPVAL  R1 U3        ; R1 := U3
- 30 [-]: GETTABLE  R1 R1 K10    ; R1 := R1[0xfc87a231]
- 31 [-]: CALL      R1 1 1       ; R1()
- 32 [-]: GETUPVAL  R1 U1        ; R1 := U1
- 33 [-]: GETTABLE  R1 R1 K11    ; R1 := R1[0xa1df01d6]
- 34 [-]: GETUPVAL  R2 U6        ; R2 := U6
- 35 [-]: CALL      R1 2 1       ; R1(R2)
- 36 [-]: GETUPVAL  R1 U7        ; R1 := U7
- 37 [-]: SELF      R1 R1 K12    ; R2 := R1; R1 := R1[0x383d2e7d]
- 38 [-]: CALL      R1 2 1       ; R1(R2)
- 39 [-]: GETGLOBAL R1 K13       ; R1 := 0x492c7f2a
- 40 [-]: GETUPVAL  R2 U7        ; R2 := U7
- 41 [-]: SELF      R2 R2 K14    ; R3 := R2; R2 := R2[0xa02ee9ef]
- 42 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 43 [-]: GETUPVAL  R3 U7        ; R3 := U7
- 44 [-]: SELF      R3 R3 K15    ; R4 := R3; R3 := R3[0xcb3851b8]
- 45 [-]: CALL      R3 2 0       ; R3,... := R3(R4)
- 46 [-]: CALL      R1 0 2       ; R1 := R1(R2,...)
- 47 [-]: GETGLOBAL R2 K16       ; R2 := 0x89326c93
- 48 [-]: SELF      R2 R2 K17    ; R3 := R2; R2 := R2[0x05909209]
- 49 [-]: GETGLOBAL R4 K18       ; R4 := 0x7760462d
- 50 [-]: GETUPVAL  R5 U7        ; R5 := U7
- 51 [-]: SELF      R5 R5 K19    ; R6 := R5; R5 := R5[0xd1586535]
- 52 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 53 [-]: ADD       R5 R5 R1     ; R5 := R5 + R1
- 54 [-]: GETGLOBAL R6 K20       ; R6 := ZERO_ROTATION
- 55 [-]: CALL      R2 5 2       ; R2 := R2(R3,R4,R5,R6)
- 56 [-]: SETUPVAL  R2 U8        ; U82 := R8
- 57 [-]: LOADKB    R2 0 0       ; R2 := false
- 58 [-]: TEST      R2 0         ; if not R2 then PC := 367
- 59 [-]: JMP       367          ; PC := 367
- 60 [-]: GETUPVAL  R2 U1        ; R2 := U1
- 61 [-]: GETTABLE  R2 R2 K6     ; R2 := R2[0xdc3b2033]
- 62 [-]: CALL      R2 1 1       ; R2()
- 63 [-]: GETUPVAL  R2 U1        ; R2 := U1
- 64 [-]: GETTABLE  R2 R2 K1     ; R2 := R2[0x2beb71d2]
- 65 [-]: LOADK     R3 K21       ; R3 := "DEBUG: SKIPPING DEFENSE..."
- 66 [-]: CALL      R2 2 1       ; R2(R3)
- 67 [-]: GETUPVAL  R2 U8        ; R2 := U8
- 68 [-]: SELF      R2 R2 K22    ; R3 := R2; R2 := R2[0xa2880940]
- 69 [-]: CALL      R2 2 1       ; R2(R3)
- 70 [-]: GETGLOBAL R2 K23       ; R2 := 0xcbd666e1
- 71 [-]: CONST     R3 3         ; R3 := 3.000000
- 72 [-]: CALL      R2 2 1       ; R2(R3)
- 73 [-]: GETUPVAL  R2 U0        ; R2 := U0
- 74 [-]: SELF      R2 R2 K24    ; R3 := R2; R2 := R2[0x8abff40e]
- 75 [-]: GETUPVAL  R4 U9        ; R4 := U9
- 76 [-]: CALL      R2 3 1       ; R2(R3,R4)
- 77 [-]: JMP       367          ; PC := 367
- 78 [-]: GETUPVAL  R2 U10       ; R2 := U10
- 79 [-]: EQ        0 R0 R2      ; if R0 ~= R2 then PC := 132
- 80 [-]: JMP       132          ; PC := 132
- 81 [-]: GETGLOBAL R2 K4        ; R2 := 0x3d106989
- 82 [-]: LOADK     R3 K25       ; R3 := "Solaris United Quest: State Change: CONSOLE_HACKED"
- 83 [-]: CALL      R2 2 1       ; R2(R3)
- 84 [-]: GETGLOBAL R2 K26       ; R2 := 0x7b998233
- 85 [-]: GETUPVAL  R3 U8        ; R3 := U8
- 86 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 87 [-]: TEST      R2 1         ; if R2 then PC := 92
- 88 [-]: JMP       92           ; PC := 92
- 89 [-]: GETUPVAL  R2 U8        ; R2 := U8
- 90 [-]: SELF      R2 R2 K22    ; R3 := R2; R2 := R2[0xa2880940]
- 91 [-]: CALL      R2 2 1       ; R2(R3)
- 92 [-]: GETUPVAL  R2 U11       ; R2 := U11
- 93 [-]: CALL      R2 1 1       ; R2()
- 94 [-]: GETGLOBAL R2 K16       ; R2 := 0x89326c93
- 95 [-]: SELF      R2 R2 K17    ; R3 := R2; R2 := R2[0x05909209]
- 96 [-]: GETGLOBAL R4 K27       ; R4 := 0x30a9fa98
- 97 [-]: GETUPVAL  R5 U12       ; R5 := U12
- 98 [-]: SELF      R5 R5 K19    ; R6 := R5; R5 := R5[0xd1586535]
- 99 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-100 [-]: GETGLOBAL R6 K28       ; R6 := 0xa421af95
-101 [-]: CONST     R7 0         ; R7 := 0.000000
-102 [-]: CONST     R8 1         ; R8 := 1.000000
-103 [-]: CONST     R9 0         ; R9 := 0.000000
-104 [-]: CALL      R6 4 2       ; R6 := R6(R7,R8,R9)
-105 [-]: ADD       R5 R5 R6     ; R5 := R5 + R6
-106 [-]: GETGLOBAL R6 K20       ; R6 := ZERO_ROTATION
-107 [-]: CALL      R2 5 2       ; R2 := R2(R3,R4,R5,R6)
-108 [-]: SETUPVAL  R2 U8        ; U82 := R8
-109 [-]: GETUPVAL  R2 U1        ; R2 := U1
-110 [-]: GETTABLE  R2 R2 K11    ; R2 := R2[0xa1df01d6]
-111 [-]: GETUPVAL  R3 U13       ; R3 := U13
-112 [-]: GETUPVAL  R4 U1        ; R4 := U1
-113 [-]: GETTABLE  R4 R4 K29    ; R4 := R4["DEFEND_ICON"]
-114 [-]: CALL      R2 3 1       ; R2(R3,R4)
-115 [-]: GETUPVAL  R2 U3        ; R2 := U3
-116 [-]: GETTABLE  R2 R2 K7     ; R2 := R2[0x9742b85b]
-117 [-]: GETUPVAL  R3 U4        ; R3 := U4
-118 [-]: GETGLOBAL R4 K8        ; R4 := 0x0469f296
-119 [-]: GETUPVAL  R5 U5        ; R5 := U5
-120 [-]: LOADK     R6 K30       ; R6 := "_Started"
-121 [-]: CONCAT    R5 R5 R6     ; R5 := R5 .. R6
-122 [-]: CALL      R4 2 0       ; R4,... := R4(R5)
-123 [-]: CALL      R2 0 1       ; R2(R3,...)
-124 [-]: GETUPVAL  R2 U3        ; R2 := U3
-125 [-]: GETTABLE  R2 R2 K10    ; R2 := R2[0xfc87a231]
-126 [-]: CALL      R2 1 1       ; R2()
-127 [-]: GETUPVAL  R2 U0        ; R2 := U0
-128 [-]: SELF      R2 R2 K24    ; R3 := R2; R2 := R2[0x8abff40e]
-129 [-]: GETUPVAL  R4 U14       ; R4 := U14
-130 [-]: CALL      R2 3 1       ; R2(R3,R4)
-131 [-]: JMP       367          ; PC := 367
-132 [-]: GETUPVAL  R2 U14       ; R2 := U14
-133 [-]: EQ        0 R0 R2      ; if R0 ~= R2 then PC := 188
-134 [-]: JMP       188          ; PC := 188
-135 [-]: GETGLOBAL R2 K4        ; R2 := 0x3d106989
-136 [-]: LOADK     R3 K31       ; R3 := "Solaris United Quest: State Change: DEFEND_INTRO"
-137 [-]: CALL      R2 2 1       ; R2(R3)
-138 [-]: GETUPVAL  R2 U3        ; R2 := U3
-139 [-]: GETTABLE  R2 R2 K7     ; R2 := R2[0x9742b85b]
-140 [-]: GETUPVAL  R3 U4        ; R3 := U4
-141 [-]: GETGLOBAL R4 K8        ; R4 := 0x0469f296
-142 [-]: GETUPVAL  R5 U5        ; R5 := U5
-143 [-]: LOADK     R6 K32       ; R6 := "_StartedNef"
-144 [-]: CONCAT    R5 R5 R6     ; R5 := R5 .. R6
-145 [-]: CALL      R4 2 0       ; R4,... := R4(R5)
-146 [-]: CALL      R2 0 1       ; R2(R3,...)
-147 [-]: GETGLOBAL R2 K23       ; R2 := 0xcbd666e1
-148 [-]: CONST     R3 10        ; R3 := 10.000000
-149 [-]: CALL      R2 2 1       ; R2(R3)
-150 [-]: GETUPVAL  R2 U15       ; R2 := U15
-151 [-]: CALL      R2 1 1       ; R2()
-152 [-]: GETUPVAL  R2 U16       ; R2 := U16
-153 [-]: SELF      R2 R2 K33    ; R3 := R2; R2 := R2[0xcc6aa982]
-154 [-]: GETUPVAL  R4 U12       ; R4 := U12
-155 [-]: CALL      R2 3 1       ; R2(R3,R4)
-156 [-]: GETUPVAL  R2 U17       ; R2 := U17
-157 [-]: LOADKB    R3 0 0       ; R3 := false
-158 [-]: CALL      R2 2 1       ; R2(R3)
-159 [-]: GETUPVAL  R2 U1        ; R2 := U1
-160 [-]: GETTABLE  R2 R2 K34    ; R2 := R2[0x1551aa65]
-161 [-]: GETUPVAL  R3 U12       ; R3 := U12
-162 [-]: CALL      R2 2 1       ; R2(R3)
-163 [-]: GETUPVAL  R2 U3        ; R2 := U3
-164 [-]: GETTABLE  R2 R2 K10    ; R2 := R2[0xfc87a231]
-165 [-]: CALL      R2 1 1       ; R2()
-166 [-]: GETUPVAL  R2 U3        ; R2 := U3
-167 [-]: GETTABLE  R2 R2 K7     ; R2 := R2[0x9742b85b]
-168 [-]: GETUPVAL  R3 U4        ; R3 := U4
-169 [-]: GETGLOBAL R4 K8        ; R4 := 0x0469f296
-170 [-]: GETUPVAL  R5 U5        ; R5 := U5
-171 [-]: LOADK     R6 K35       ; R6 := "_TurnUpHeat"
-172 [-]: CONCAT    R5 R5 R6     ; R5 := R5 .. R6
-173 [-]: CALL      R4 2 0       ; R4,... := R4(R5)
-174 [-]: CALL      R2 0 1       ; R2(R3,...)
-175 [-]: GETUPVAL  R2 U18       ; R2 := U18
-176 [-]: GETGLOBAL R3 K8        ; R3 := 0x0469f296
-177 [-]: LOADK     R4 K36       ; R4 := "SQFinalTower_Rumble"
-178 [-]: CALL      R3 2 0       ; R3,... := R3(R4)
-179 [-]: CALL      R2 0 1       ; R2(R3,...)
-180 [-]: GETUPVAL  R2 U3        ; R2 := U3
-181 [-]: GETTABLE  R2 R2 K10    ; R2 := R2[0xfc87a231]
-182 [-]: CALL      R2 1 1       ; R2()
-183 [-]: GETUPVAL  R2 U0        ; R2 := U0
-184 [-]: SELF      R2 R2 K24    ; R3 := R2; R2 := R2[0x8abff40e]
-185 [-]: GETUPVAL  R4 U19       ; R4 := U19
-186 [-]: CALL      R2 3 1       ; R2(R3,R4)
-187 [-]: JMP       367          ; PC := 367
-188 [-]: GETUPVAL  R2 U19       ; R2 := U19
-189 [-]: EQ        0 R0 R2      ; if R0 ~= R2 then PC := 212
-190 [-]: JMP       212          ; PC := 212
-191 [-]: GETGLOBAL R2 K4        ; R2 := 0x3d106989
-192 [-]: LOADK     R3 K37       ; R3 := "Solaris United Quest: State Change: DEFEND_A"
-193 [-]: CALL      R2 2 1       ; R2(R3)
-194 [-]: GETUPVAL  R2 U1        ; R2 := U1
-195 [-]: GETTABLE  R2 R2 K38    ; R2 := R2[0xea753e99]
-196 [-]: GETUPVAL  R3 U20       ; R3 := U20
-197 [-]: CONST     R4 0         ; R4 := 0.000000
-198 [-]: CONST     R5 100       ; R5 := 100.000000
-199 [-]: LOADNIL   R6 R6        ; R6 := nil
-200 [-]: LOADKB    R7 1 0       ; R7 := true
-201 [-]: CALL      R2 6 1       ; R2(R3,R4,R5,R6,R7)
-202 [-]: GETUPVAL  R2 U3        ; R2 := U3
-203 [-]: GETTABLE  R2 R2 K7     ; R2 := R2[0x9742b85b]
-204 [-]: GETUPVAL  R3 U4        ; R3 := U4
-205 [-]: GETGLOBAL R4 K8        ; R4 := 0x0469f296
-206 [-]: GETUPVAL  R5 U5        ; R5 := U5
-207 [-]: LOADK     R6 K39       ; R6 := "_DefendStart"
-208 [-]: CONCAT    R5 R5 R6     ; R5 := R5 .. R6
-209 [-]: CALL      R4 2 0       ; R4,... := R4(R5)
-210 [-]: CALL      R2 0 1       ; R2(R3,...)
-211 [-]: JMP       367          ; PC := 367
-212 [-]: GETUPVAL  R2 U21       ; R2 := U21
-213 [-]: EQ        0 R0 R2      ; if R0 ~= R2 then PC := 233
-214 [-]: JMP       233          ; PC := 233
-215 [-]: GETGLOBAL R2 K4        ; R2 := 0x3d106989
-216 [-]: LOADK     R3 K40       ; R3 := "Solaris United Quest: State Change: DEFEND_B"
-217 [-]: CALL      R2 2 1       ; R2(R3)
-218 [-]: GETUPVAL  R2 U3        ; R2 := U3
-219 [-]: GETTABLE  R2 R2 K7     ; R2 := R2[0x9742b85b]
-220 [-]: GETUPVAL  R3 U4        ; R3 := U4
-221 [-]: GETGLOBAL R4 K8        ; R4 := 0x0469f296
-222 [-]: GETUPVAL  R5 U5        ; R5 := U5
-223 [-]: LOADK     R6 K41       ; R6 := "_EventA"
-224 [-]: CONCAT    R5 R5 R6     ; R5 := R5 .. R6
-225 [-]: CALL      R4 2 0       ; R4,... := R4(R5)
-226 [-]: CALL      R2 0 1       ; R2(R3,...)
-227 [-]: GETUPVAL  R2 U18       ; R2 := U18
-228 [-]: GETGLOBAL R3 K8        ; R3 := 0x0469f296
-229 [-]: LOADK     R4 K42       ; R4 := "SQFinalTower_Smoke"
-230 [-]: CALL      R3 2 0       ; R3,... := R3(R4)
-231 [-]: CALL      R2 0 1       ; R2(R3,...)
-232 [-]: JMP       367          ; PC := 367
-233 [-]: GETUPVAL  R2 U22       ; R2 := U22
-234 [-]: EQ        0 R0 R2      ; if R0 ~= R2 then PC := 254
-235 [-]: JMP       254          ; PC := 254
-236 [-]: GETGLOBAL R2 K4        ; R2 := 0x3d106989
-237 [-]: LOADK     R3 K43       ; R3 := "Solaris United Quest: State Change: DEFEND_C"
-238 [-]: CALL      R2 2 1       ; R2(R3)
-239 [-]: GETUPVAL  R2 U3        ; R2 := U3
-240 [-]: GETTABLE  R2 R2 K7     ; R2 := R2[0x9742b85b]
-241 [-]: GETUPVAL  R3 U4        ; R3 := U4
-242 [-]: GETGLOBAL R4 K8        ; R4 := 0x0469f296
-243 [-]: GETUPVAL  R5 U5        ; R5 := U5
-244 [-]: LOADK     R6 K44       ; R6 := "_EventB"
-245 [-]: CONCAT    R5 R5 R6     ; R5 := R5 .. R6
-246 [-]: CALL      R4 2 0       ; R4,... := R4(R5)
-247 [-]: CALL      R2 0 1       ; R2(R3,...)
-248 [-]: GETUPVAL  R2 U18       ; R2 := U18
-249 [-]: GETGLOBAL R3 K8        ; R3 := 0x0469f296
-250 [-]: LOADK     R4 K45       ; R4 := "SQFinalTower_Glow"
-251 [-]: CALL      R3 2 0       ; R3,... := R3(R4)
-252 [-]: CALL      R2 0 1       ; R2(R3,...)
-253 [-]: JMP       367          ; PC := 367
-254 [-]: GETUPVAL  R2 U23       ; R2 := U23
-255 [-]: EQ        0 R0 R2      ; if R0 ~= R2 then PC := 275
-256 [-]: JMP       275          ; PC := 275
-257 [-]: GETGLOBAL R2 K4        ; R2 := 0x3d106989
-258 [-]: LOADK     R3 K46       ; R3 := "Solaris United Quest: State Change: DEFEND_D"
-259 [-]: CALL      R2 2 1       ; R2(R3)
-260 [-]: GETUPVAL  R2 U3        ; R2 := U3
-261 [-]: GETTABLE  R2 R2 K7     ; R2 := R2[0x9742b85b]
-262 [-]: GETUPVAL  R3 U4        ; R3 := U4
-263 [-]: GETGLOBAL R4 K8        ; R4 := 0x0469f296
-264 [-]: GETUPVAL  R5 U5        ; R5 := U5
-265 [-]: LOADK     R6 K47       ; R6 := "_EventC"
-266 [-]: CONCAT    R5 R5 R6     ; R5 := R5 .. R6
-267 [-]: CALL      R4 2 0       ; R4,... := R4(R5)
-268 [-]: CALL      R2 0 1       ; R2(R3,...)
-269 [-]: GETUPVAL  R2 U18       ; R2 := U18
-270 [-]: GETGLOBAL R3 K8        ; R3 := 0x0469f296
-271 [-]: LOADK     R4 K48       ; R4 := "SQFinalTower_Shockwave"
-272 [-]: CALL      R3 2 0       ; R3,... := R3(R4)
-273 [-]: CALL      R2 0 1       ; R2(R3,...)
-274 [-]: JMP       367          ; PC := 367
-275 [-]: GETUPVAL  R2 U9        ; R2 := U9
-276 [-]: EQ        0 R0 R2      ; if R0 ~= R2 then PC := 320
-277 [-]: JMP       320          ; PC := 320
-278 [-]: GETGLOBAL R2 K4        ; R2 := 0x3d106989
-279 [-]: LOADK     R3 K49       ; R3 := "Solaris United Quest: State Change: DEFEND_DONE"
-280 [-]: CALL      R2 2 1       ; R2(R3)
-281 [-]: GETGLOBAL R2 K26       ; R2 := 0x7b998233
-282 [-]: GETUPVAL  R3 U8        ; R3 := U8
-283 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-284 [-]: TEST      R2 1         ; if R2 then PC := 289
-285 [-]: JMP       289          ; PC := 289
-286 [-]: GETUPVAL  R2 U8        ; R2 := U8
-287 [-]: SELF      R2 R2 K22    ; R3 := R2; R2 := R2[0xa2880940]
-288 [-]: CALL      R2 2 1       ; R2(R3)
-289 [-]: GETUPVAL  R2 U3        ; R2 := U3
-290 [-]: GETTABLE  R2 R2 K7     ; R2 := R2[0x9742b85b]
-291 [-]: GETUPVAL  R3 U4        ; R3 := U4
-292 [-]: GETGLOBAL R4 K8        ; R4 := 0x0469f296
-293 [-]: GETUPVAL  R5 U5        ; R5 := U5
-294 [-]: LOADK     R6 K50       ; R6 := "_DefendStop"
-295 [-]: CONCAT    R5 R5 R6     ; R5 := R5 .. R6
-296 [-]: CALL      R4 2 0       ; R4,... := R4(R5)
-297 [-]: CALL      R2 0 1       ; R2(R3,...)
-298 [-]: GETUPVAL  R2 U16       ; R2 := U16
-299 [-]: SELF      R2 R2 K51    ; R3 := R2; R2 := R2[0x27d04add]
-300 [-]: CONST     R4 0         ; R4 := 0.000000
-301 [-]: CALL      R2 3 1       ; R2(R3,R4)
-302 [-]: GETUPVAL  R2 U16       ; R2 := U16
-303 [-]: SELF      R2 R2 K52    ; R3 := R2; R2 := R2[0x996c2cab]
-304 [-]: GETUPVAL  R4 U12       ; R4 := U12
-305 [-]: CALL      R2 3 1       ; R2(R3,R4)
-306 [-]: GETUPVAL  R2 U1        ; R2 := U1
-307 [-]: GETTABLE  R2 R2 K53    ; R2 := R2[0xedf59000]
-308 [-]: CALL      R2 1 1       ; R2()
-309 [-]: GETUPVAL  R2 U17       ; R2 := U17
-310 [-]: LOADKB    R3 1 0       ; R3 := true
-311 [-]: CALL      R2 2 1       ; R2(R3)
-312 [-]: GETUPVAL  R2 U3        ; R2 := U3
-313 [-]: GETTABLE  R2 R2 K10    ; R2 := R2[0xfc87a231]
-314 [-]: CALL      R2 1 1       ; R2()
-315 [-]: GETUPVAL  R2 U0        ; R2 := U0
-316 [-]: SELF      R2 R2 K24    ; R3 := R2; R2 := R2[0x8abff40e]
-317 [-]: GETUPVAL  R4 U24       ; R4 := U24
-318 [-]: CALL      R2 3 1       ; R2(R3,R4)
-319 [-]: JMP       367          ; PC := 367
-320 [-]: GETUPVAL  R2 U24       ; R2 := U24
-321 [-]: EQ        0 R0 R2      ; if R0 ~= R2 then PC := 337
-322 [-]: JMP       337          ; PC := 337
-323 [-]: GETGLOBAL R2 K4        ; R2 := 0x3d106989
-324 [-]: LOADK     R3 K54       ; R3 := "Solaris United Quest: State Change: AMARYST"
-325 [-]: CALL      R2 2 1       ; R2(R3)
-326 [-]: GETUPVAL  R2 U1        ; R2 := U1
-327 [-]: GETTABLE  R2 R2 K55    ; R2 := R2[0xbd3ce95d]
-328 [-]: CALL      R2 1 1       ; R2()
-329 [-]: GETUPVAL  R2 U1        ; R2 := U1
-330 [-]: GETTABLE  R2 R2 K11    ; R2 := R2[0xa1df01d6]
-331 [-]: GETUPVAL  R3 U25       ; R3 := U25
-332 [-]: CALL      R2 2 1       ; R2(R3)
-333 [-]: GETUPVAL  R2 U26       ; R2 := U26
-334 [-]: SELF      R2 R2 K12    ; R3 := R2; R2 := R2[0x383d2e7d]
-335 [-]: CALL      R2 2 1       ; R2(R3)
-336 [-]: JMP       367          ; PC := 367
-337 [-]: GETUPVAL  R2 U27       ; R2 := U27
-338 [-]: EQ        0 R0 R2      ; if R0 ~= R2 then PC := 358
-339 [-]: JMP       358          ; PC := 358
-340 [-]: GETGLOBAL R2 K4        ; R2 := 0x3d106989
-341 [-]: LOADK     R3 K56       ; R3 := "Solaris United Quest: State Change: COMPLETE"
-342 [-]: CALL      R2 2 1       ; R2(R3)
-343 [-]: GETUPVAL  R2 U3        ; R2 := U3
-344 [-]: GETTABLE  R2 R2 K7     ; R2 := R2[0x9742b85b]
-345 [-]: GETUPVAL  R3 U4        ; R3 := U4
-346 [-]: GETGLOBAL R4 K8        ; R4 := 0x0469f296
-347 [-]: GETUPVAL  R5 U5        ; R5 := U5
-348 [-]: LOADK     R6 K57       ; R6 := "_Done"
-349 [-]: CONCAT    R5 R5 R6     ; R5 := R5 .. R6
-350 [-]: CALL      R4 2 0       ; R4,... := R4(R5)
-351 [-]: CALL      R2 0 1       ; R2(R3,...)
-352 [-]: GETUPVAL  R2 U18       ; R2 := U18
-353 [-]: GETGLOBAL R3 K8        ; R3 := 0x0469f296
-354 [-]: LOADK     R4 K58       ; R4 := "SQFinalTower_Cooldown"
-355 [-]: CALL      R3 2 0       ; R3,... := R3(R4)
-356 [-]: CALL      R2 0 1       ; R2(R3,...)
-357 [-]: JMP       367          ; PC := 367
-358 [-]: GETUPVAL  R2 U28       ; R2 := U28
-359 [-]: EQ        0 R0 R2      ; if R0 ~= R2 then PC := 367
-360 [-]: JMP       367          ; PC := 367
-361 [-]: GETGLOBAL R2 K4        ; R2 := 0x3d106989
-362 [-]: LOADK     R3 K59       ; R3 := "Solaris United Quest: State Change: FAILED"
-363 [-]: CALL      R2 2 1       ; R2(R3)
-364 [-]: GETGLOBAL R2 K23       ; R2 := 0xcbd666e1
-365 [-]: CONST     R3 3         ; R3 := 3.000000
-366 [-]: CALL      R2 2 1       ; R2(R3)
-367 [-]: GETUPVAL  R2 U27       ; R2 := U27
-368 [-]: LE        0 R2 R0      ; if R2 > R0 then PC := 385
-369 [-]: JMP       385          ; PC := 385
-370 [-]: GETUPVAL  R2 U1        ; R2 := U1
-371 [-]: GETTABLE  R2 R2 K60    ; R2 := R2[0xf158d74d]
-372 [-]: CALL      R2 1 1       ; R2()
-373 [-]: GETUPVAL  R2 U1        ; R2 := U1
-374 [-]: GETTABLE  R2 R2 K53    ; R2 := R2[0xedf59000]
-375 [-]: CALL      R2 1 1       ; R2()
-376 [-]: GETUPVAL  R2 U1        ; R2 := U1
-377 [-]: GETTABLE  R2 R2 K55    ; R2 := R2[0xbd3ce95d]
-378 [-]: CALL      R2 1 1       ; R2()
-379 [-]: GETUPVAL  R2 U1        ; R2 := U1
-380 [-]: GETTABLE  R2 R2 K6     ; R2 := R2[0xdc3b2033]
-381 [-]: CALL      R2 1 1       ; R2()
-382 [-]: GETUPVAL  R2 U0        ; R2 := U0
-383 [-]: SELF      R2 R2 K61    ; R3 := R2; R2 := R2[0x588ed000]
-384 [-]: CALL      R2 2 1       ; R2(R3)
-385 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETUPVAL R0 0
+       1 [-]: NAMECALL R0 R0 K0 [0x209398C2]
+       2 [-]: CALL R0 1 1  
+       3 [-]: GETUPVAL R2 1
+       4 [-]: GETTABLEKS R1 R2 K1 [0x2BEB71D2]
+       5 [-]: LOADK R2 K2 ["DEBUG STAGE: "]
+       6 [-]: GETIMPORT R3 4 [nil]
+       7 [-]: MOVE R4 R0   
+       8 [-]: CALL R3 1 -1 
+       9 [-]: CALL R1 -1 0 
+      10 [-]: JUMPXEQKN R0 K5 L0 NOT [1]
+      11 [-]: GETIMPORT R1 7 [nil]
+      12 [-]: LOADK R2 K8 ["Solaris United Quest: State Change: ARRIVED"]
+      13 [-]: CALL R1 1 0  
+      14 [-]: GETUPVAL R2 1
+      15 [-]: GETTABLEKS R1 R2 K9 [0xDC3B2033]
+      16 [-]: CALL R1 0 0  
+      17 [-]: GETUPVAL R2 2
+      18 [-]: GETTABLEKS R1 R2 K10 [0x9742B85B]
+      19 [-]: GETUPVAL R2 3
+      20 [-]: GETIMPORT R3 12 [nil]
+      21 [-]: GETUPVAL R5 4
+      22 [-]: LOADK R6 K13 ["_Arrived"]
+      23 [-]: CONCAT R4 R5 R6
+      24 [-]: CALL R3 1 -1 
+      25 [-]: CALL R1 -1 0 
+      26 [-]: GETUPVAL R2 2
+      27 [-]: GETTABLEKS R1 R2 K14 [0xFC87A231]
+      28 [-]: CALL R1 0 0  
+      29 [-]: GETUPVAL R2 1
+      30 [-]: GETTABLEKS R1 R2 K15 [0xA1DF01D6]
+      31 [-]: LOADK R2 K16 ["/Lotus/Language/SolarisQuest/HackConsoleObjective"]
+      32 [-]: CALL R1 1 0  
+      33 [-]: GETUPVAL R1 5
+      34 [-]: NAMECALL R1 R1 K17 [0x383D2E7D]
+      35 [-]: CALL R1 1 0  
+      36 [-]: GETIMPORT R1 19 [nil]
+      37 [-]: GETUPVAL R2 5
+      38 [-]: NAMECALL R2 R2 K20 [0xA02EE9EF]
+      39 [-]: CALL R2 1 1  
+      40 [-]: GETUPVAL R3 5
+      41 [-]: NAMECALL R3 R3 K21 [0xCB3851B8]
+      42 [-]: CALL R3 1 -1 
+      43 [-]: CALL R1 -1 1 
+      44 [-]: GETIMPORT R2 23 [nil]
+      45 [-]: GETIMPORT R4 25 [nil]
+      46 [-]: GETUPVAL R6 5
+      47 [-]: NAMECALL R6 R6 K26 [0xD1586535]
+      48 [-]: CALL R6 1 1  
+      49 [-]: ADD R5 R6 R1 
+      50 [-]: GETIMPORT R6 28 [nil]
+      51 [-]: NAMECALL R2 R2 K29 [0x05909209]
+      52 [-]: CALL R2 4 1  
+      53 [-]: SETUPVAL R2 6
+      54 [-]: JUMP L14
+    
+L 0:  55 [-]: JUMPXEQKN R0 K30 L3 NOT [2]
+      56 [-]: GETIMPORT R1 7 [nil]
+      57 [-]: LOADK R2 K31 ["Solaris United Quest: State Change: CONSOLE_HACKED"]
+      58 [-]: CALL R1 1 0  
+      59 [-]: GETUPVAL R2 6
+      60 [-]: FASTCALL1 62 R2 L1
+      61 [-]: GETIMPORT R1 33 [nil]
+      62 [-]: CALL R1 1 1  
+L 1:  63 [-]: JUMPIF R1 L2 
+      64 [-]: GETUPVAL R1 6
+      65 [-]: NAMECALL R1 R1 K34 [0xA2880940]
+      66 [-]: CALL R1 1 0  
+L 2:  67 [-]: GETUPVAL R1 7
+      68 [-]: CALL R1 0 0  
+      69 [-]: GETIMPORT R1 23 [nil]
+      70 [-]: GETIMPORT R3 36 [nil]
+      71 [-]: GETUPVAL R5 8
+      72 [-]: NAMECALL R5 R5 K26 [0xD1586535]
+      73 [-]: CALL R5 1 1  
+      74 [-]: GETIMPORT R6 38 [nil]
+      75 [-]: LOADN R7 0   
+      76 [-]: LOADN R8 1   
+      77 [-]: LOADN R9 0   
+      78 [-]: CALL R6 3 1  
+      79 [-]: ADD R4 R5 R6 
+      80 [-]: GETIMPORT R5 28 [nil]
+      81 [-]: NAMECALL R1 R1 K29 [0x05909209]
+      82 [-]: CALL R1 4 1  
+      83 [-]: SETUPVAL R1 6
+      84 [-]: GETUPVAL R2 1
+      85 [-]: GETTABLEKS R1 R2 K15 [0xA1DF01D6]
+      86 [-]: LOADK R2 K39 ["/Lotus/Language/SolarisQuest/DefendConsoleObjective"]
+      87 [-]: GETUPVAL R4 1
+      88 [-]: GETTABLEKS R3 R4 K40 ["DEFEND_ICON"]
+      89 [-]: CALL R1 2 0  
+      90 [-]: GETUPVAL R2 2
+      91 [-]: GETTABLEKS R1 R2 K10 [0x9742B85B]
+      92 [-]: GETUPVAL R2 3
+      93 [-]: GETIMPORT R3 12 [nil]
+      94 [-]: GETUPVAL R5 4
+      95 [-]: LOADK R6 K41 ["_Started"]
+      96 [-]: CONCAT R4 R5 R6
+      97 [-]: CALL R3 1 -1 
+      98 [-]: CALL R1 -1 0 
+      99 [-]: GETUPVAL R2 2
+     100 [-]: GETTABLEKS R1 R2 K14 [0xFC87A231]
+     101 [-]: CALL R1 0 0  
+     102 [-]: GETUPVAL R1 0
+     103 [-]: LOADN R3 3   
+     104 [-]: NAMECALL R1 R1 K42 [0x8ABFF40E]
+     105 [-]: CALL R1 2 0  
+     106 [-]: JUMP L14
+    
+L 3: 107 [-]: JUMPXEQKN R0 K43 L4 NOT [3]
+     108 [-]: GETIMPORT R1 7 [nil]
+     109 [-]: LOADK R2 K44 ["Solaris United Quest: State Change: DEFEND_INTRO"]
+     110 [-]: CALL R1 1 0  
+     111 [-]: GETUPVAL R2 2
+     112 [-]: GETTABLEKS R1 R2 K10 [0x9742B85B]
+     113 [-]: GETUPVAL R2 3
+     114 [-]: GETIMPORT R3 12 [nil]
+     115 [-]: GETUPVAL R5 4
+     116 [-]: LOADK R6 K45 ["_StartedNef"]
+     117 [-]: CONCAT R4 R5 R6
+     118 [-]: CALL R3 1 -1 
+     119 [-]: CALL R1 -1 0 
+     120 [-]: GETIMPORT R1 47 [nil]
+     121 [-]: LOADN R2 10  
+     122 [-]: CALL R1 1 0  
+     123 [-]: GETUPVAL R1 9
+     124 [-]: CALL R1 0 0  
+     125 [-]: GETUPVAL R1 10
+     126 [-]: GETUPVAL R3 8
+     127 [-]: NAMECALL R1 R1 K48 [0xCC6AA982]
+     128 [-]: CALL R1 2 0  
+     129 [-]: GETUPVAL R1 11
+     130 [-]: LOADB R2 0   
+     131 [-]: CALL R1 1 0  
+     132 [-]: GETUPVAL R2 1
+     133 [-]: GETTABLEKS R1 R2 K49 [0x1551AA65]
+     134 [-]: GETUPVAL R2 8
+     135 [-]: CALL R1 1 0  
+     136 [-]: GETUPVAL R2 2
+     137 [-]: GETTABLEKS R1 R2 K14 [0xFC87A231]
+     138 [-]: CALL R1 0 0  
+     139 [-]: GETUPVAL R2 2
+     140 [-]: GETTABLEKS R1 R2 K10 [0x9742B85B]
+     141 [-]: GETUPVAL R2 3
+     142 [-]: GETIMPORT R3 12 [nil]
+     143 [-]: GETUPVAL R5 4
+     144 [-]: LOADK R6 K50 ["_TurnUpHeat"]
+     145 [-]: CONCAT R4 R5 R6
+     146 [-]: CALL R3 1 -1 
+     147 [-]: CALL R1 -1 0 
+     148 [-]: GETUPVAL R1 12
+     149 [-]: GETIMPORT R2 12 [nil]
+     150 [-]: LOADK R3 K51 ["SQFinalTower_Rumble"]
+     151 [-]: CALL R2 1 -1 
+     152 [-]: CALL R1 -1 0 
+     153 [-]: GETUPVAL R2 2
+     154 [-]: GETTABLEKS R1 R2 K14 [0xFC87A231]
+     155 [-]: CALL R1 0 0  
+     156 [-]: GETUPVAL R1 0
+     157 [-]: LOADN R3 4   
+     158 [-]: NAMECALL R1 R1 K42 [0x8ABFF40E]
+     159 [-]: CALL R1 2 0  
+     160 [-]: JUMP L14
+    
+L 4: 161 [-]: JUMPXEQKN R0 K52 L5 NOT [4]
+     162 [-]: GETIMPORT R1 7 [nil]
+     163 [-]: LOADK R2 K53 ["Solaris United Quest: State Change: DEFEND_A"]
+     164 [-]: CALL R1 1 0  
+     165 [-]: GETUPVAL R2 1
+     166 [-]: GETTABLEKS R1 R2 K54 [0xEA753E99]
+     167 [-]: LOADK R2 K55 ["/Lotus/Language/SolarisQuest/TowerOverheatObjective"]
+     168 [-]: LOADN R3 0   
+     169 [-]: LOADN R4 100 
+     170 [-]: LOADNIL R5   
+     171 [-]: LOADB R6 1   
+     172 [-]: CALL R1 5 0  
+     173 [-]: GETUPVAL R2 2
+     174 [-]: GETTABLEKS R1 R2 K10 [0x9742B85B]
+     175 [-]: GETUPVAL R2 3
+     176 [-]: GETIMPORT R3 12 [nil]
+     177 [-]: GETUPVAL R5 4
+     178 [-]: LOADK R6 K56 ["_DefendStart"]
+     179 [-]: CONCAT R4 R5 R6
+     180 [-]: CALL R3 1 -1 
+     181 [-]: CALL R1 -1 0 
+     182 [-]: JUMP L14
+    
+L 5: 183 [-]: JUMPXEQKN R0 K57 L6 NOT [5]
+     184 [-]: GETIMPORT R1 7 [nil]
+     185 [-]: LOADK R2 K58 ["Solaris United Quest: State Change: DEFEND_B"]
+     186 [-]: CALL R1 1 0  
+     187 [-]: GETUPVAL R2 2
+     188 [-]: GETTABLEKS R1 R2 K10 [0x9742B85B]
+     189 [-]: GETUPVAL R2 3
+     190 [-]: GETIMPORT R3 12 [nil]
+     191 [-]: GETUPVAL R5 4
+     192 [-]: LOADK R6 K59 ["_EventA"]
+     193 [-]: CONCAT R4 R5 R6
+     194 [-]: CALL R3 1 -1 
+     195 [-]: CALL R1 -1 0 
+     196 [-]: GETUPVAL R1 12
+     197 [-]: GETIMPORT R2 12 [nil]
+     198 [-]: LOADK R3 K60 ["SQFinalTower_Smoke"]
+     199 [-]: CALL R2 1 -1 
+     200 [-]: CALL R1 -1 0 
+     201 [-]: JUMP L14
+    
+L 6: 202 [-]: JUMPXEQKN R0 K61 L7 NOT [6]
+     203 [-]: GETIMPORT R1 7 [nil]
+     204 [-]: LOADK R2 K62 ["Solaris United Quest: State Change: DEFEND_C"]
+     205 [-]: CALL R1 1 0  
+     206 [-]: GETUPVAL R2 2
+     207 [-]: GETTABLEKS R1 R2 K10 [0x9742B85B]
+     208 [-]: GETUPVAL R2 3
+     209 [-]: GETIMPORT R3 12 [nil]
+     210 [-]: GETUPVAL R5 4
+     211 [-]: LOADK R6 K63 ["_EventB"]
+     212 [-]: CONCAT R4 R5 R6
+     213 [-]: CALL R3 1 -1 
+     214 [-]: CALL R1 -1 0 
+     215 [-]: GETUPVAL R1 12
+     216 [-]: GETIMPORT R2 12 [nil]
+     217 [-]: LOADK R3 K64 ["SQFinalTower_Glow"]
+     218 [-]: CALL R2 1 -1 
+     219 [-]: CALL R1 -1 0 
+     220 [-]: JUMP L14
+    
+L 7: 221 [-]: JUMPXEQKN R0 K65 L8 NOT [7]
+     222 [-]: GETIMPORT R1 7 [nil]
+     223 [-]: LOADK R2 K66 ["Solaris United Quest: State Change: DEFEND_D"]
+     224 [-]: CALL R1 1 0  
+     225 [-]: GETUPVAL R2 2
+     226 [-]: GETTABLEKS R1 R2 K10 [0x9742B85B]
+     227 [-]: GETUPVAL R2 3
+     228 [-]: GETIMPORT R3 12 [nil]
+     229 [-]: GETUPVAL R5 4
+     230 [-]: LOADK R6 K67 ["_EventC"]
+     231 [-]: CONCAT R4 R5 R6
+     232 [-]: CALL R3 1 -1 
+     233 [-]: CALL R1 -1 0 
+     234 [-]: GETUPVAL R1 12
+     235 [-]: GETIMPORT R2 12 [nil]
+     236 [-]: LOADK R3 K68 ["SQFinalTower_Shockwave"]
+     237 [-]: CALL R2 1 -1 
+     238 [-]: CALL R1 -1 0 
+     239 [-]: JUMP L14
+    
+L 8: 240 [-]: JUMPXEQKN R0 K69 L11 NOT [8]
+     241 [-]: GETIMPORT R1 7 [nil]
+     242 [-]: LOADK R2 K70 ["Solaris United Quest: State Change: DEFEND_DONE"]
+     243 [-]: CALL R1 1 0  
+     244 [-]: GETUPVAL R2 6
+     245 [-]: FASTCALL1 62 R2 L9
+     246 [-]: GETIMPORT R1 33 [nil]
+     247 [-]: CALL R1 1 1  
+L 9: 248 [-]: JUMPIF R1 L10
+     249 [-]: GETUPVAL R1 6
+     250 [-]: NAMECALL R1 R1 K34 [0xA2880940]
+     251 [-]: CALL R1 1 0  
+L10: 252 [-]: GETUPVAL R2 2
+     253 [-]: GETTABLEKS R1 R2 K10 [0x9742B85B]
+     254 [-]: GETUPVAL R2 3
+     255 [-]: GETIMPORT R3 12 [nil]
+     256 [-]: GETUPVAL R5 4
+     257 [-]: LOADK R6 K71 ["_DefendStop"]
+     258 [-]: CONCAT R4 R5 R6
+     259 [-]: CALL R3 1 -1 
+     260 [-]: CALL R1 -1 0 
+     261 [-]: GETUPVAL R1 10
+     262 [-]: LOADN R3 0   
+     263 [-]: NAMECALL R1 R1 K72 [0x27D04ADD]
+     264 [-]: CALL R1 2 0  
+     265 [-]: GETUPVAL R1 10
+     266 [-]: GETUPVAL R3 8
+     267 [-]: NAMECALL R1 R1 K73 [0x996C2CAB]
+     268 [-]: CALL R1 2 0  
+     269 [-]: GETUPVAL R2 1
+     270 [-]: GETTABLEKS R1 R2 K74 [0xEDF59000]
+     271 [-]: CALL R1 0 0  
+     272 [-]: GETUPVAL R1 11
+     273 [-]: LOADB R2 1   
+     274 [-]: CALL R1 1 0  
+     275 [-]: GETUPVAL R2 2
+     276 [-]: GETTABLEKS R1 R2 K14 [0xFC87A231]
+     277 [-]: CALL R1 0 0  
+     278 [-]: GETUPVAL R1 0
+     279 [-]: LOADN R3 9   
+     280 [-]: NAMECALL R1 R1 K42 [0x8ABFF40E]
+     281 [-]: CALL R1 2 0  
+     282 [-]: JUMP L14
+    
+L11: 283 [-]: JUMPXEQKN R0 K75 L12 NOT [9]
+     284 [-]: GETIMPORT R1 7 [nil]
+     285 [-]: LOADK R2 K76 ["Solaris United Quest: State Change: AMARYST"]
+     286 [-]: CALL R1 1 0  
+     287 [-]: GETUPVAL R2 1
+     288 [-]: GETTABLEKS R1 R2 K77 [0xBD3CE95D]
+     289 [-]: CALL R1 0 0  
+     290 [-]: GETUPVAL R2 1
+     291 [-]: GETTABLEKS R1 R2 K15 [0xA1DF01D6]
+     292 [-]: LOADK R2 K78 ["/Lotus/Language/SolarisQuest/AmarystStageObjective"]
+     293 [-]: CALL R1 1 0  
+     294 [-]: GETUPVAL R1 13
+     295 [-]: NAMECALL R1 R1 K17 [0x383D2E7D]
+     296 [-]: CALL R1 1 0  
+     297 [-]: JUMP L14
+    
+L12: 298 [-]: JUMPXEQKN R0 K79 L13 NOT [10]
+     299 [-]: GETIMPORT R1 7 [nil]
+     300 [-]: LOADK R2 K80 ["Solaris United Quest: State Change: COMPLETE"]
+     301 [-]: CALL R1 1 0  
+     302 [-]: GETUPVAL R2 2
+     303 [-]: GETTABLEKS R1 R2 K10 [0x9742B85B]
+     304 [-]: GETUPVAL R2 3
+     305 [-]: GETIMPORT R3 12 [nil]
+     306 [-]: GETUPVAL R5 4
+     307 [-]: LOADK R6 K81 ["_Done"]
+     308 [-]: CONCAT R4 R5 R6
+     309 [-]: CALL R3 1 -1 
+     310 [-]: CALL R1 -1 0 
+     311 [-]: GETUPVAL R1 12
+     312 [-]: GETIMPORT R2 12 [nil]
+     313 [-]: LOADK R3 K82 ["SQFinalTower_Cooldown"]
+     314 [-]: CALL R2 1 -1 
+     315 [-]: CALL R1 -1 0 
+     316 [-]: JUMP L14
+    
+L13: 317 [-]: JUMPXEQKN R0 K83 L14 NOT [11]
+     318 [-]: GETIMPORT R1 7 [nil]
+     319 [-]: LOADK R2 K84 ["Solaris United Quest: State Change: FAILED"]
+     320 [-]: CALL R1 1 0  
+     321 [-]: GETIMPORT R1 47 [nil]
+     322 [-]: LOADN R2 3   
+     323 [-]: CALL R1 1 0  
+L14: 324 [-]: LOADN R1 10  
+     325 [-]: JUMPIFNOTLE R1 R0 L15
+     326 [-]: GETUPVAL R2 1
+     327 [-]: GETTABLEKS R1 R2 K85 [0xF158D74D]
+     328 [-]: CALL R1 0 0  
+     329 [-]: GETUPVAL R2 1
+     330 [-]: GETTABLEKS R1 R2 K74 [0xEDF59000]
+     331 [-]: CALL R1 0 0  
+     332 [-]: GETUPVAL R2 1
+     333 [-]: GETTABLEKS R1 R2 K77 [0xBD3CE95D]
+     334 [-]: CALL R1 0 0  
+     335 [-]: GETUPVAL R2 1
+     336 [-]: GETTABLEKS R1 R2 K9 [0xDC3B2033]
+     337 [-]: CALL R1 0 0  
+     338 [-]: GETUPVAL R1 0
+     339 [-]: NAMECALL R1 R1 K86 [0x588ED000]
+     340 [-]: CALL R1 1 0  
+L15: 341 [-]: RETURN R0 0  
 
 
-; Function #7:
-;
 ; Name:            
 ; Defined at line: 284
-; #Upvalues:       23
+; #Upvalues:       22
 ; #Parameters:     1
 ; Is_vararg:       0
 ; Max Stack Size:  8
 
-  1 [-]: GETGLOBAL R1 K0        ; R1 := 0x3d106989
-  2 [-]: LOADK     R2 K1        ; R2 := "Solaris United Quest: Initializing..."
-  3 [-]: CALL      R1 2 1       ; R1(R2)
-  4 [-]: GETGLOBAL R1 K2        ; R1 := 0x89326c93
-  5 [-]: SELF      R1 R1 K3     ; R2 := R1; R1 := R1[0x29ef273d]
-  6 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  7 [-]: SELF      R1 R1 K4     ; R2 := R1; R1 := R1[0x66905cb0]
-  8 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  9 [-]: SETUPVAL  R1 U0        ; U82 := R0
- 10 [-]: GETUPVAL  R1 U0        ; R1 := U0
- 11 [-]: SELF      R1 R1 K5     ; R2 := R1; R1 := R1[0xa2d83ed4]
- 12 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 13 [-]: TEST      R1 1         ; if R1 then PC := 19
- 14 [-]: JMP       19           ; PC := 19
- 15 [-]: GETGLOBAL R1 K6        ; R1 := 0xcbd666e1
- 16 [-]: CONST     R2 0         ; R2 := 0.000000
- 17 [-]: CALL      R1 2 1       ; R1(R2)
- 18 [-]: JMP       10           ; PC := 10
- 19 [-]: GETGLOBAL R1 K7        ; R1 := 0xbe190284
- 20 [-]: SETUPVAL  R1 U1        ; U82 := R1
- 21 [-]: SETUPVAL  R0 U2        ; U82 := R2
- 22 [-]: SELF      R1 R0 K8     ; R2 := R0; R1 := R0[0x891629fa]
- 23 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 24 [-]: SETUPVAL  R1 U3        ; U82 := R3
- 25 [-]: SELF      R1 R0 K9     ; R2 := R0; R1 := R0[0xd1586535]
- 26 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 27 [-]: SETUPVAL  R1 U4        ; U82 := R4
- 28 [-]: SELF      R1 R0 K10    ; R2 := R0; R1 := R0[0xc5b92518]
- 29 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 30 [-]: SETUPVAL  R1 U5        ; U82 := R5
- 31 [-]: SELF      R1 R0 K11    ; R2 := R0; R1 := R0[0x7c97b143]
- 32 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 33 [-]: SETUPVAL  R1 U6        ; U82 := R6
- 34 [-]: GETUPVAL  R1 U3        ; R1 := U3
- 35 [-]: SELF      R1 R1 K12    ; R2 := R1; R1 := R1[0xe86a236e]
- 36 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 37 [-]: SETUPVAL  R1 U7        ; U82 := R7
- 38 [-]: GETUPVAL  R1 U7        ; R1 := U7
- 39 [-]: SELF      R1 R1 K13    ; R2 := R1; R1 := R1[0xe4c355e2]
- 40 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 41 [-]: SETUPVAL  R1 U8        ; U82 := R8
- 42 [-]: GETGLOBAL R1 K2        ; R1 := 0x89326c93
- 43 [-]: SELF      R1 R1 K14    ; R2 := R1; R1 := R1[0x7d108ddb]
- 44 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 45 [-]: SETUPVAL  R1 U9        ; U82 := R9
- 46 [-]: GETUPVAL  R1 U7        ; R1 := U7
- 47 [-]: SELF      R1 R1 K15    ; R2 := R1; R1 := R1[0xe223e2b1]
- 48 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 49 [-]: SETUPVAL  R1 U10       ; U82 := R10
- 50 [-]: GETUPVAL  R1 U0        ; R1 := U0
- 51 [-]: SELF      R1 R1 K16    ; R2 := R1; R1 := R1[0xc1088746]
- 52 [-]: GETUPVAL  R3 U4        ; R3 := U4
- 53 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
- 54 [-]: SETUPVAL  R1 U11       ; U82 := R11
- 55 [-]: GETUPVAL  R1 U13       ; R1 := U13
- 56 [-]: GETTABLE  R1 R1 K17    ; R1 := R1[0xc9013731]
- 57 [-]: GETUPVAL  R2 U14       ; R2 := U14
- 58 [-]: GETUPVAL  R3 U2        ; R3 := U2
- 59 [-]: NEWTABLE  R4 2 0       ; R4 := {}
- 60 [-]: GETUPVAL  R5 U15       ; R5 := U15
- 61 [-]: GETUPVAL  R6 U16       ; R6 := U16
- 62 [-]: SETLIST   R4 2 1       ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 2
- 63 [-]: CALL      R1 4 2       ; R1 := R1(R2,R3,R4)
- 64 [-]: SETUPVAL  R1 U12       ; U82 := R12
- 65 [-]: GETUPVAL  R1 U18       ; R1 := U18
- 66 [-]: GETTABLE  R1 R1 K18    ; R1 := R1[0xde474187]
- 67 [-]: CALL      R1 1 2       ; R1 := R1()
- 68 [-]: SETUPVAL  R1 U17       ; U82 := R17
- 69 [-]: GETUPVAL  R1 U13       ; R1 := U13
- 70 [-]: GETTABLE  R1 R1 K19    ; R1 := R1[0xbd9a0502]
- 71 [-]: GETUPVAL  R2 U3        ; R2 := U3
- 72 [-]: GETGLOBAL R3 K20       ; R3 := gContextActionType
- 73 [-]: GETGLOBAL R4 K21       ; R4 := 0x0469f296
- 74 [-]: LOADK     R5 K22       ; R5 := "SolarisQuestM5DefendConsole"
- 75 [-]: CALL      R4 2 0       ; R4,... := R4(R5)
- 76 [-]: CALL      R1 0 2       ; R1 := R1(R2,...)
- 77 [-]: SETUPVAL  R1 U19       ; U82 := R19
- 78 [-]: GETUPVAL  R1 U13       ; R1 := U13
- 79 [-]: GETTABLE  R1 R1 K19    ; R1 := R1[0xbd9a0502]
- 80 [-]: GETUPVAL  R2 U3        ; R2 := U3
- 81 [-]: GETGLOBAL R3 K20       ; R3 := gContextActionType
- 82 [-]: GETGLOBAL R4 K21       ; R4 := 0x0469f296
- 83 [-]: LOADK     R5 K23       ; R5 := "SolarisQuestM5AmarystConsole"
- 84 [-]: CALL      R4 2 0       ; R4,... := R4(R5)
- 85 [-]: CALL      R1 0 2       ; R1 := R1(R2,...)
- 86 [-]: SETUPVAL  R1 U20       ; U82 := R20
- 87 [-]: SELF      R1 R0 K24    ; R2 := R0; R1 := R0[0xe19c3f44]
- 88 [-]: LOADK     R3 K25       ; R3 := "PlayersLeaving"
- 89 [-]: GETGLOBAL R4 K21       ; R4 := 0x0469f296
- 90 [-]: LOADK     R5 K26       ; R5 := "LeavingCB"
- 91 [-]: CALL      R4 2 0       ; R4,... := R4(R5)
- 92 [-]: CALL      R1 0 1       ; R1(R2,...)
- 93 [-]: SELF      R1 R0 K27    ; R2 := R0; R1 := R0[0x3f86f5a0]
- 94 [-]: LOADK     R3 K28       ; R3 := "PlayersReturning"
- 95 [-]: GETGLOBAL R4 K21       ; R4 := 0x0469f296
- 96 [-]: LOADK     R5 K29       ; R5 := "ReturningCB"
- 97 [-]: CALL      R4 2 0       ; R4,... := R4(R5)
- 98 [-]: CALL      R1 0 1       ; R1(R2,...)
- 99 [-]: GETGLOBAL R1 K0        ; R1 := 0x3d106989
-100 [-]: LOADK     R2 K30       ; R2 := "Solaris United Quest: Initialize complete"
-101 [-]: CALL      R1 2 1       ; R1(R2)
-102 [-]: GETUPVAL  R1 U2        ; R1 := U2
-103 [-]: SELF      R1 R1 K31    ; R2 := R1; R1 := R1[0xabe61691]
-104 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-105 [-]: EQ        0 R1 K32     ; if R1 ~= 0.000000 then PC := 111
-106 [-]: JMP       111          ; PC := 111
-107 [-]: GETUPVAL  R2 U3        ; R2 := U3
-108 [-]: SELF      R2 R2 K33    ; R3 := R2; R2 := R2[0x5b18bb5d]
-109 [-]: CONST     R4 1         ; R4 := 1.000000
-110 [-]: CALL      R2 3 1       ; R2(R3,R4)
-111 [-]: GETUPVAL  R2 U12       ; R2 := U12
-112 [-]: SELF      R2 R2 K34    ; R3 := R2; R2 := R2[0x8abff40e]
-113 [-]: GETUPVAL  R4 U21       ; R4 := U21
-114 [-]: GETTABLE  R4 R4 K35    ; R4 := R4[0x06d055f9]
-115 [-]: EQ        1 R1 K32     ; if R1 == 0.000000 then PC := 118
-116 [-]: JMP       118          ; PC := 118
-117 [-]: LOADKB    R5 0 1       ; R5 := false; PC := 118
-118 [-]: LOADKB    R5 1 0       ; R5 := true
-119 [-]: GETUPVAL  R6 U22       ; R6 := U22
-120 [-]: MOVE      R7 R1        ; R7 := R1
-121 [-]: CALL      R4 4 0       ; R4,... := R4(R5,R6,R7)
-122 [-]: CALL      R2 0 1       ; R2(R3,...)
-123 [-]: SELF      R2 R0 K36    ; R3 := R0; R2 := R0[0xefe6cad1]
-124 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-125 [-]: EQ        0 R2 K38     ; if R2 ~= 1.000000 then PC := 130
-126 [-]: JMP       130          ; PC := 130
-127 [-]: SELF      R2 R0 K39    ; R3 := R0; R2 := R0[0xfe9dc265]
-128 [-]: CONST     R4 2         ; R4 := 2.000000
-129 [-]: CALL      R2 3 1       ; R2(R3,R4)
-130 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R1 1 [nil]
+       1 [-]: LOADK R2 K2 ["Solaris United Quest: Initializing..."]
+       2 [-]: CALL R1 1 0  
+       3 [-]: GETIMPORT R1 4 [nil]
+       4 [-]: NAMECALL R1 R1 K5 [0x29EF273D]
+       5 [-]: CALL R1 1 1  
+       6 [-]: NAMECALL R1 R1 K6 [0x66905CB0]
+       7 [-]: CALL R1 1 1  
+       8 [-]: SETUPVAL R1 0
+L 0:   9 [-]: GETUPVAL R1 0
+      10 [-]: NAMECALL R1 R1 K7 [0xA2D83ED4]
+      11 [-]: CALL R1 1 1  
+      12 [-]: JUMPIF R1 L1 
+      13 [-]: GETIMPORT R1 9 [nil]
+      14 [-]: LOADN R2 0   
+      15 [-]: CALL R1 1 0  
+      16 [-]: JUMPBACK L0  
+L 1:  17 [-]: GETIMPORT R1 11 [nil]
+      18 [-]: SETUPVAL R1 1
+      19 [-]: SETUPVAL R0 2
+      20 [-]: NAMECALL R1 R0 K12 [0x891629FA]
+      21 [-]: CALL R1 1 1  
+      22 [-]: SETUPVAL R1 3
+      23 [-]: NAMECALL R1 R0 K13 [0xD1586535]
+      24 [-]: CALL R1 1 1  
+      25 [-]: SETUPVAL R1 4
+      26 [-]: NAMECALL R1 R0 K14 [0xC5B92518]
+      27 [-]: CALL R1 1 1  
+      28 [-]: SETUPVAL R1 5
+      29 [-]: NAMECALL R1 R0 K15 [0x7C97B143]
+      30 [-]: CALL R1 1 1  
+      31 [-]: SETUPVAL R1 6
+      32 [-]: GETUPVAL R1 3
+      33 [-]: NAMECALL R1 R1 K16 [0xE86A236E]
+      34 [-]: CALL R1 1 1  
+      35 [-]: SETUPVAL R1 7
+      36 [-]: GETUPVAL R1 7
+      37 [-]: NAMECALL R1 R1 K17 [0xE4C355E2]
+      38 [-]: CALL R1 1 1  
+      39 [-]: SETUPVAL R1 8
+      40 [-]: GETIMPORT R1 4 [nil]
+      41 [-]: NAMECALL R1 R1 K18 [0x7D108DDB]
+      42 [-]: CALL R1 1 1  
+      43 [-]: SETUPVAL R1 9
+      44 [-]: GETUPVAL R1 7
+      45 [-]: NAMECALL R1 R1 K19 [0xE223E2B1]
+      46 [-]: CALL R1 1 1  
+      47 [-]: SETUPVAL R1 10
+      48 [-]: GETUPVAL R1 0
+      49 [-]: GETUPVAL R3 4
+      50 [-]: NAMECALL R1 R1 K20 [0xC1088746]
+      51 [-]: CALL R1 2 1  
+      52 [-]: SETUPVAL R1 11
+      53 [-]: GETUPVAL R2 13
+      54 [-]: GETTABLEKS R1 R2 K21 [0xC9013731]
+      55 [-]: GETUPVAL R2 14
+      56 [-]: GETUPVAL R3 2
+      57 [-]: NEWTABLE R4 0 2
+      58 [-]: GETUPVAL R5 15
+      59 [-]: GETUPVAL R6 16
+      60 [-]: SETLIST R4 R5 2 [1]
+      61 [-]: CALL R1 3 1  
+      62 [-]: SETUPVAL R1 12
+      63 [-]: GETUPVAL R2 18
+      64 [-]: GETTABLEKS R1 R2 K22 [0xDE474187]
+      65 [-]: CALL R1 0 1  
+      66 [-]: SETUPVAL R1 17
+      67 [-]: GETUPVAL R2 13
+      68 [-]: GETTABLEKS R1 R2 K23 [0xBD9A0502]
+      69 [-]: GETUPVAL R2 3
+      70 [-]: GETIMPORT R3 25 [nil]
+      71 [-]: GETIMPORT R4 27 [nil]
+      72 [-]: LOADK R5 K28 ["SolarisQuestM5DefendConsole"]
+      73 [-]: CALL R4 1 -1 
+      74 [-]: CALL R1 -1 1 
+      75 [-]: SETUPVAL R1 19
+      76 [-]: GETUPVAL R2 13
+      77 [-]: GETTABLEKS R1 R2 K23 [0xBD9A0502]
+      78 [-]: GETUPVAL R2 3
+      79 [-]: GETIMPORT R3 25 [nil]
+      80 [-]: GETIMPORT R4 27 [nil]
+      81 [-]: LOADK R5 K29 ["SolarisQuestM5AmarystConsole"]
+      82 [-]: CALL R4 1 -1 
+      83 [-]: CALL R1 -1 1 
+      84 [-]: SETUPVAL R1 20
+      85 [-]: LOADK R3 K30 ["PlayersLeaving"]
+      86 [-]: GETIMPORT R4 27 [nil]
+      87 [-]: LOADK R5 K31 ["LeavingCB"]
+      88 [-]: CALL R4 1 -1 
+      89 [-]: NAMECALL R1 R0 K32 [0xE19C3F44]
+      90 [-]: CALL R1 -1 0 
+      91 [-]: LOADK R3 K33 ["PlayersReturning"]
+      92 [-]: GETIMPORT R4 27 [nil]
+      93 [-]: LOADK R5 K34 ["ReturningCB"]
+      94 [-]: CALL R4 1 -1 
+      95 [-]: NAMECALL R1 R0 K35 [0x3F86F5A0]
+      96 [-]: CALL R1 -1 0 
+      97 [-]: GETIMPORT R1 1 [nil]
+      98 [-]: LOADK R2 K36 ["Solaris United Quest: Initialize complete"]
+      99 [-]: CALL R1 1 0  
+     100 [-]: GETUPVAL R1 2
+     101 [-]: NAMECALL R1 R1 K37 [0xABE61691]
+     102 [-]: CALL R1 1 1  
+     103 [-]: JUMPXEQKN R1 K38 L2 NOT [0]
+     104 [-]: GETUPVAL R2 3
+     105 [-]: LOADN R4 1   
+     106 [-]: NAMECALL R2 R2 K39 [0x5B18BB5D]
+     107 [-]: CALL R2 2 0  
+L 2: 108 [-]: GETUPVAL R2 12
+     109 [-]: GETUPVAL R5 21
+     110 [-]: GETTABLEKS R4 R5 K40 [0x06D055F9]
+     111 [-]: JUMPXEQKN R1 K38 L3 [0]
+     112 [-]: LOADB R5 0 +1
+L 3: 113 [-]: LOADB R5 1   
+L 4: 114 [-]: LOADN R6 1   
+     115 [-]: MOVE R7 R1   
+     116 [-]: CALL R4 3 -1 
+     117 [-]: NAMECALL R2 R2 K41 [0x8ABFF40E]
+     118 [-]: CALL R2 -1 0 
+     119 [-]: NAMECALL R2 R0 K42 [0xEFE6CAD1]
+     120 [-]: CALL R2 1 1  
+     121 [-]: LOADN R3 1   
+     122 [-]: JUMPIFNOTEQ R2 R3 L5
+     123 [-]: LOADN R4 2   
+     124 [-]: NAMECALL R2 R0 K43 [0xFE9DC265]
+     125 [-]: CALL R2 2 0  
+L 5: 126 [-]: RETURN R0 0  
 
 
-; Function #8:
-;
 ; Name:            
 ; Defined at line: 328
-; #Upvalues:       25
+; #Upvalues:       13
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  19
+; Max Stack Size:  13
 
-  1 [-]: GETGLOBAL R1 K0        ; R1 := 0x3d106989
-  2 [-]: LOADK     R2 K1        ; R2 := "Solaris United Quest: Started"
-  3 [-]: CALL      R1 2 1       ; R1(R2)
-  4 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  5 [-]: MOVE      R2 R0        ; R2 := R0
-  6 [-]: CALL      R1 2 1       ; R1(R2)
-  7 [-]: CONST     R1 10        ; R1 := 10.000000
-  8 [-]: CONST     R2 0         ; R2 := 0.000000
-  9 [-]: CONST     R3 0         ; R3 := 0.000000
- 10 [-]: CONST     R4 0         ; R4 := 0.000000
- 11 [-]: CONST     R5 0         ; R5 := 0.000000
- 12 [-]: GETUPVAL  R6 U1        ; R6 := U1
- 13 [-]: GETUPVAL  R7 U2        ; R7 := U2
- 14 [-]: LT        0 R6 R7      ; if R6 >= R7 then PC := 167
- 15 [-]: JMP       167          ; PC := 167
- 16 [-]: SELF      R7 R0 K2     ; R8 := R0; R7 := R0[0xefe6cad1]
- 17 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 18 [-]: LT        0 R7 K4      ; if R7 >= 4.000000 then PC := 167
- 19 [-]: JMP       167          ; PC := 167
- 20 [-]: GETGLOBAL R7 K5        ; R7 := 0xfff641af
- 21 [-]: CALL      R7 1 2       ; R7 := R7()
- 22 [-]: MOVE      R5 R7        ; R5 := R7
- 23 [-]: GETUPVAL  R7 U3        ; R7 := U3
- 24 [-]: SELF      R7 R7 K6     ; R8 := R7; R7 := R7[0x209398c2]
- 25 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 26 [-]: MOVE      R6 R7        ; R6 := R7
- 27 [-]: GETUPVAL  R7 U4        ; R7 := U4
- 28 [-]: EQ        0 R6 R7      ; if R6 ~= R7 then PC := 43
- 29 [-]: JMP       43           ; PC := 43
- 30 [-]: GETUPVAL  R7 U5        ; R7 := U5
- 31 [-]: SELF      R7 R7 K7     ; R8 := R7; R7 := R7[0xf37943ff]
- 32 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 33 [-]: TEST      R7 1         ; if R7 then PC := 148
- 34 [-]: JMP       148          ; PC := 148
- 35 [-]: GETGLOBAL R7 K0        ; R7 := 0x3d106989
- 36 [-]: LOADK     R8 K8        ; R8 := "Solaris United Quest: ARRIVED: Console hack detected"
- 37 [-]: CALL      R7 2 1       ; R7(R8)
- 38 [-]: GETUPVAL  R7 U3        ; R7 := U3
- 39 [-]: SELF      R7 R7 K9     ; R8 := R7; R7 := R7[0x8abff40e]
- 40 [-]: GETUPVAL  R9 U6        ; R9 := U6
- 41 [-]: CALL      R7 3 1       ; R7(R8,R9)
- 42 [-]: JMP       148          ; PC := 148
- 43 [-]: GETUPVAL  R7 U7        ; R7 := U7
- 44 [-]: LE        0 R7 R6      ; if R7 > R6 then PC := 133
- 45 [-]: JMP       133          ; PC := 133
- 46 [-]: GETUPVAL  R7 U8        ; R7 := U8
- 47 [-]: LE        0 R6 R7      ; if R6 > R7 then PC := 133
- 48 [-]: JMP       133          ; PC := 133
- 49 [-]: ADD       R4 R4 R5     ; R4 := R4 + R5
- 50 [-]: GETGLOBAL R7 K10       ; R7 := 0x5bced4c4
- 51 [-]: GETTABLE  R7 R7 K11    ; R7 := R7[0x55f27c30]
- 52 [-]: GETUPVAL  R8 U9        ; R8 := U9
- 53 [-]: DIV       R8 R4 R8     ; R8 := R4 / R8
- 54 [-]: MUL       R8 R8 K12    ; R8 := R8 * 100.000000
- 55 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 56 [-]: GETUPVAL  R8 U10       ; R8 := U10
- 57 [-]: GETTABLE  R8 R8 K13    ; R8 := R8[0x03fc64ef]
- 58 [-]: MOVE      R9 R7        ; R9 := R7
- 59 [-]: CONST     R10 100      ; R10 := 100.000000
- 60 [-]: CALL      R8 3 1       ; R8(R9,R10)
- 61 [-]: SUB       R1 R1 R5     ; R1 := R1 - R5
- 62 [-]: LE        0 R1 K14     ; if R1 > 0.000000 then PC := 72
- 63 [-]: JMP       72           ; PC := 72
- 64 [-]: GETUPVAL  R8 U11       ; R8 := U11
- 65 [-]: CALL      R8 1 1       ; R8()
- 66 [-]: GETGLOBAL R8 K15       ; R8 := 0x9bafffe3
- 67 [-]: GETUPVAL  R9 U12       ; R9 := U12
- 68 [-]: GETUPVAL  R10 U13      ; R10 := U13
- 69 [-]: DIV       R11 R7 K12   ; R11 := R7 / 100.000000
- 70 [-]: CALL      R8 4 2       ; R8 := R8(R9,R10,R11)
- 71 [-]: MOVE      R1 R8        ; R1 := R8
- 72 [-]: GETUPVAL  R9 U7        ; R9 := U7
- 73 [-]: GETUPVAL  R10 U8       ; R10 := U8
- 74 [-]: CONST     R11 1        ; R11 := 1.000000
- 75 [-]: FORPREP   R9 88        ; R9 -= R11; PC := 88
- 76 [-]: LT        0 R6 R12     ; if R6 >= R12 then PC := 88
- 77 [-]: JMP       88           ; PC := 88
- 78 [-]: GETUPVAL  R13 U14      ; R13 := U14
- 79 [-]: GETTABLE  R13 R13 R12  ; R13 := R13[R12]
- 80 [-]: LE        0 R13 R4     ; if R13 > R4 then PC := 88
- 81 [-]: JMP       88           ; PC := 88
- 82 [-]: GETUPVAL  R13 U3       ; R13 := U3
- 83 [-]: SELF      R13 R13 K9   ; R14 := R13; R13 := R13[0x8abff40e]
- 84 [-]: MOVE      R15 R12      ; R15 := R12
- 85 [-]: CALL      R13 3 1      ; R13(R14,R15)
- 86 [-]: GETUPVAL  R13 U15      ; R13 := U15
- 87 [-]: GETTABLE  R2 R13 R12   ; R2 := R13[R12]
- 88 [-]: FORLOOP   R9 76        ; R9 += R11; if R9 <= R10 then begin PC := 76; R12 := R9 end
- 89 [-]: GETUPVAL  R13 U16      ; R13 := U16
- 90 [-]: SELF      R13 R13 K16  ; R14 := R13; R13 := R13[0x78072ca1]
- 91 [-]: CALL      R13 2 2      ; R13 := R13(R14)
- 92 [-]: GETGLOBAL R14 K10      ; R14 := 0x5bced4c4
- 93 [-]: GETTABLE  R14 R14 K17  ; R14 := R14[0xb62ecfe0]
- 94 [-]: MOVE      R15 R13      ; R15 := R13
- 95 [-]: MOVE      R16 R2       ; R16 := R2
- 96 [-]: CALL      R14 3 2      ; R14 := R14(R15,R16)
- 97 [-]: LT        0 R13 R14    ; if R13 >= R14 then PC := 108
- 98 [-]: JMP       108          ; PC := 108
- 99 [-]: GETUPVAL  R15 U16      ; R15 := U16
-100 [-]: SELF      R15 R15 K18  ; R16 := R15; R15 := R15[0x27d04add]
-101 [-]: MOVE      R17 R14      ; R17 := R14
-102 [-]: CALL      R15 3 1      ; R15(R16,R17)
-103 [-]: GETGLOBAL R15 K19      ; R15 := 0xd644c2f1
-104 [-]: LOADK     R16 K20      ; R16 := "Base Capture: Alert level increased to "
-105 [-]: MOVE      R17 R14      ; R17 := R14
-106 [-]: CONCAT    R16 R16 R17  ; R16 := R16 .. R17
-107 [-]: CALL      R15 2 1      ; R15(R16)
-108 [-]: GETUPVAL  R15 U8       ; R15 := U8
-109 [-]: EQ        0 R6 R15     ; if R6 ~= R15 then PC := 118
-110 [-]: JMP       118          ; PC := 118
-111 [-]: LT        0 R3 R4      ; if R3 >= R4 then PC := 118
-112 [-]: JMP       118          ; PC := 118
-113 [-]: GETUPVAL  R15 U3       ; R15 := U3
-114 [-]: SELF      R15 R15 K9   ; R16 := R15; R15 := R15[0x8abff40e]
-115 [-]: GETUPVAL  R17 U17      ; R17 := U17
-116 [-]: CALL      R15 3 1      ; R15(R16,R17)
-117 [-]: JMP       148          ; PC := 148
-118 [-]: GETGLOBAL R15 K21      ; R15 := 0x7b998233
-119 [-]: GETUPVAL  R16 U18      ; R16 := U18
-120 [-]: CALL      R15 2 2      ; R15 := R15(R16)
-121 [-]: TEST      R15 1        ; if R15 then PC := 148
-122 [-]: JMP       148          ; PC := 148
-123 [-]: GETUPVAL  R15 U18      ; R15 := U18
-124 [-]: SELF      R15 R15 K22  ; R16 := R15; R15 := R15[0xd2715720]
-125 [-]: CALL      R15 2 2      ; R15 := R15(R16)
-126 [-]: LE        0 R15 K14    ; if R15 > 0.000000 then PC := 148
-127 [-]: JMP       148          ; PC := 148
-128 [-]: GETUPVAL  R15 U3       ; R15 := U3
-129 [-]: SELF      R15 R15 K9   ; R16 := R15; R15 := R15[0x8abff40e]
-130 [-]: GETUPVAL  R17 U19      ; R17 := U19
-131 [-]: CALL      R15 3 1      ; R15(R16,R17)
-132 [-]: JMP       148          ; PC := 148
-133 [-]: GETUPVAL  R15 U20      ; R15 := U20
-134 [-]: EQ        0 R6 R15     ; if R6 ~= R15 then PC := 148
-135 [-]: JMP       148          ; PC := 148
-136 [-]: GETUPVAL  R15 U21      ; R15 := U21
-137 [-]: SELF      R15 R15 K7   ; R16 := R15; R15 := R15[0xf37943ff]
-138 [-]: CALL      R15 2 2      ; R15 := R15(R16)
-139 [-]: TEST      R15 1        ; if R15 then PC := 148
-140 [-]: JMP       148          ; PC := 148
-141 [-]: GETGLOBAL R15 K0       ; R15 := 0x3d106989
-142 [-]: LOADK     R16 K23      ; R16 := "Solaris United Quest: AMARYST: Console hack detected"
-143 [-]: CALL      R15 2 1      ; R15(R16)
-144 [-]: GETUPVAL  R15 U3       ; R15 := U3
-145 [-]: SELF      R15 R15 K9   ; R16 := R15; R15 := R15[0x8abff40e]
-146 [-]: GETUPVAL  R17 U2       ; R17 := U2
-147 [-]: CALL      R15 3 1      ; R15(R16,R17)
-148 [-]: GETUPVAL  R15 U22      ; R15 := U22
-149 [-]: SELF      R15 R15 K24  ; R16 := R15; R15 := R15[0xfaa69527]
-150 [-]: MOVE      R17 R5       ; R17 := R5
-151 [-]: CALL      R15 3 1      ; R15(R16,R17)
-152 [-]: SELF      R15 R0 K25   ; R16 := R0; R15 := R0[0xd9531187]
-153 [-]: CALL      R15 2 2      ; R15 := R15(R16)
-154 [-]: TEST      R15 0        ; if not R15 then PC := 163
-155 [-]: JMP       163          ; PC := 163
-156 [-]: GETUPVAL  R15 U23      ; R15 := U23
-157 [-]: GETTABLE  R15 R15 K26  ; R15 := R15[0xd712b9db]
-158 [-]: CALL      R15 1 1      ; R15()
-159 [-]: GETUPVAL  R15 U3       ; R15 := U3
-160 [-]: SELF      R15 R15 K9   ; R16 := R15; R15 := R15[0x8abff40e]
-161 [-]: GETUPVAL  R17 U19      ; R17 := U19
-162 [-]: CALL      R15 3 1      ; R15(R16,R17)
-163 [-]: GETGLOBAL R15 K27      ; R15 := 0xcbd666e1
-164 [-]: CONST     R16 0        ; R16 := 0.000000
-165 [-]: CALL      R15 2 1      ; R15(R16)
-166 [-]: JMP       13           ; PC := 13
-167 [-]: GETUPVAL  R15 U19      ; R15 := U19
-168 [-]: EQ        0 R6 R15     ; if R6 ~= R15 then PC := 175
-169 [-]: JMP       175          ; PC := 175
-170 [-]: GETUPVAL  R15 U24      ; R15 := U24
-171 [-]: SELF      R15 R15 K28  ; R16 := R15; R15 := R15[0xfe9dc265]
-172 [-]: CONST     R17 5        ; R17 := 5.000000
-173 [-]: CALL      R15 3 1      ; R15(R16,R17)
-174 [-]: JMP       179          ; PC := 179
-175 [-]: GETUPVAL  R15 U24      ; R15 := U24
-176 [-]: SELF      R15 R15 K28  ; R16 := R15; R15 := R15[0xfe9dc265]
-177 [-]: CONST     R17 4        ; R17 := 4.000000
-178 [-]: CALL      R15 3 1      ; R15(R16,R17)
-179 [-]: SELF      R15 R0 K29   ; R16 := R0; R15 := R0[0x3d412e0d]
-180 [-]: GETGLOBAL R17 K30      ; R17 := 0x0469f296
-181 [-]: LOADK     R18 K31      ; R18 := "LeavingCB"
-182 [-]: CALL      R17 2 0      ; R17,... := R17(R18)
-183 [-]: CALL      R15 0 1      ; R15(R16,...)
-184 [-]: SELF      R15 R0 K32   ; R16 := R0; R15 := R0[0x136a027d]
-185 [-]: GETGLOBAL R17 K30      ; R17 := 0x0469f296
-186 [-]: LOADK     R18 K33      ; R18 := "ReturningCB"
-187 [-]: CALL      R17 2 0      ; R17,... := R17(R18)
-188 [-]: CALL      R15 0 1      ; R15(R16,...)
-189 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R1 1 [nil]
+       1 [-]: LOADK R2 K2 ["Solaris United Quest: Started"]
+       2 [-]: CALL R1 1 0  
+       3 [-]: GETUPVAL R1 0
+       4 [-]: MOVE R2 R0   
+       5 [-]: CALL R1 1 0  
+       6 [-]: LOADN R1 10  
+       7 [-]: LOADN R2 0   
+       8 [-]: LOADN R3 0   
+       9 [-]: LOADN R4 0   
+      10 [-]: LOADN R5 0   
+L 0:  11 [-]: LOADN R6 10  
+      12 [-]: JUMPIFNOTLT R5 R6 L14
+      13 [-]: NAMECALL R6 R0 K3 [0xEFE6CAD1]
+      14 [-]: CALL R6 1 1  
+      15 [-]: LOADN R7 4   
+      16 [-]: JUMPIFNOTLT R6 R7 L14
+      17 [-]: GETIMPORT R6 5 [nil]
+      18 [-]: CALL R6 0 1  
+      19 [-]: MOVE R4 R6   
+      20 [-]: GETUPVAL R6 1
+      21 [-]: NAMECALL R6 R6 K6 [0x209398C2]
+      22 [-]: CALL R6 1 1  
+      23 [-]: MOVE R5 R6   
+      24 [-]: JUMPXEQKN R5 K7 L1 NOT [1]
+      25 [-]: GETUPVAL R6 2
+      26 [-]: NAMECALL R6 R6 K8 [0xF37943FF]
+      27 [-]: CALL R6 1 1  
+      28 [-]: JUMPIF R6 L12
+      29 [-]: GETIMPORT R6 1 [nil]
+      30 [-]: LOADK R7 K9 ["Solaris United Quest: ARRIVED: Console hack detected"]
+      31 [-]: CALL R6 1 0  
+      32 [-]: GETUPVAL R6 1
+      33 [-]: LOADN R8 2   
+      34 [-]: NAMECALL R6 R6 K10 [0x8ABFF40E]
+      35 [-]: CALL R6 2 0  
+      36 [-]: JUMP L12
+    
+L 1:  37 [-]: LOADN R6 4   
+      38 [-]: JUMPIFNOTLE R6 R5 L11
+      39 [-]: LOADN R6 7   
+      40 [-]: JUMPIFNOTLE R5 R6 L11
+      41 [-]: ADD R3 R3 R4 
+      42 [-]: DIVK R8 R3 K12 [180]
+      43 [-]: MULK R7 R8 K11 [100]
+      44 [-]: FASTCALL1 12 R7 L2
+      45 [-]: GETIMPORT R6 15 [nil]
+      46 [-]: CALL R6 1 1  
+L 2:  47 [-]: GETUPVAL R8 3
+      48 [-]: GETTABLEKS R7 R8 K16 [0x03FC64EF]
+      49 [-]: MOVE R8 R6   
+      50 [-]: LOADN R9 100 
+      51 [-]: CALL R7 2 0  
+      52 [-]: SUB R1 R1 R4 
+      53 [-]: LOADN R7 0   
+      54 [-]: JUMPIFNOTLE R1 R7 L3
+      55 [-]: GETUPVAL R7 4
+      56 [-]: CALL R7 0 0  
+      57 [-]: GETIMPORT R7 18 [nil]
+      58 [-]: LOADN R8 13  
+      59 [-]: LOADN R9 4   
+      60 [-]: DIVK R10 R6 K11 [100]
+      61 [-]: CALL R7 3 1  
+      62 [-]: MOVE R1 R7   
+L 3:  63 [-]: LOADN R9 4   
+      64 [-]: LOADN R7 7   
+      65 [-]: LOADN R8 1   
+      66 [-]: FORNPREP R7 L6
+L 4:  67 [-]: JUMPIFNOTLT R5 R9 L5
+      68 [-]: GETUPVAL R11 5
+      69 [-]: GETTABLE R10 R11 R9
+      70 [-]: JUMPIFNOTLE R10 R3 L5
+      71 [-]: GETUPVAL R10 1
+      72 [-]: MOVE R12 R9  
+      73 [-]: NAMECALL R10 R10 K10 [0x8ABFF40E]
+      74 [-]: CALL R10 2 0 
+      75 [-]: GETUPVAL R10 6
+      76 [-]: GETTABLE R2 R10 R9
+L 5:  77 [-]: FORNLOOP R7 L4
+L 6:  78 [-]: GETUPVAL R7 7
+      79 [-]: NAMECALL R7 R7 K19 [0x78072CA1]
+      80 [-]: CALL R7 1 1  
+      81 [-]: FASTCALL2 18 R7 R2 L7
+      82 [-]: MOVE R9 R7   
+      83 [-]: MOVE R10 R2  
+      84 [-]: GETIMPORT R8 21 [nil]
+      85 [-]: CALL R8 2 1  
+L 7:  86 [-]: JUMPIFNOTLT R7 R8 L8
+      87 [-]: GETUPVAL R9 7
+      88 [-]: MOVE R11 R8  
+      89 [-]: NAMECALL R9 R9 K22 [0x27D04ADD]
+      90 [-]: CALL R9 2 0  
+      91 [-]: GETIMPORT R9 24 [nil]
+      92 [-]: LOADK R11 K25 ["Base Capture: Alert level increased to "]
+      93 [-]: MOVE R12 R8  
+      94 [-]: CONCAT R10 R11 R12
+      95 [-]: CALL R9 1 0  
+L 8:  96 [-]: JUMPXEQKN R5 K26 L9 NOT [7]
+      97 [-]: LOADN R9 0   
+      98 [-]: JUMPIFNOTLT R9 R3 L9
+      99 [-]: GETUPVAL R9 1
+     100 [-]: LOADN R11 8  
+     101 [-]: NAMECALL R9 R9 K10 [0x8ABFF40E]
+     102 [-]: CALL R9 2 0  
+     103 [-]: JUMP L12
+    
+L 9: 104 [-]: GETUPVAL R10 8
+     105 [-]: FASTCALL1 62 R10 L10
+     106 [-]: GETIMPORT R9 28 [nil]
+     107 [-]: CALL R9 1 1  
+L10: 108 [-]: JUMPIF R9 L12
+     109 [-]: GETUPVAL R9 8
+     110 [-]: NAMECALL R9 R9 K29 [0xD2715720]
+     111 [-]: CALL R9 1 1  
+     112 [-]: LOADN R10 0  
+     113 [-]: JUMPIFNOTLE R9 R10 L12
+     114 [-]: GETUPVAL R9 1
+     115 [-]: LOADN R11 11 
+     116 [-]: NAMECALL R9 R9 K10 [0x8ABFF40E]
+     117 [-]: CALL R9 2 0  
+     118 [-]: JUMP L12
+    
+L11: 119 [-]: JUMPXEQKN R5 K30 L12 NOT [9]
+     120 [-]: GETUPVAL R6 9
+     121 [-]: NAMECALL R6 R6 K8 [0xF37943FF]
+     122 [-]: CALL R6 1 1  
+     123 [-]: JUMPIF R6 L12
+     124 [-]: GETIMPORT R6 1 [nil]
+     125 [-]: LOADK R7 K31 ["Solaris United Quest: AMARYST: Console hack detected"]
+     126 [-]: CALL R6 1 0  
+     127 [-]: GETUPVAL R6 1
+     128 [-]: LOADN R8 10  
+     129 [-]: NAMECALL R6 R6 K10 [0x8ABFF40E]
+     130 [-]: CALL R6 2 0  
+L12: 131 [-]: GETUPVAL R6 10
+     132 [-]: MOVE R8 R4   
+     133 [-]: NAMECALL R6 R6 K32 [0xFAA69527]
+     134 [-]: CALL R6 2 0  
+     135 [-]: NAMECALL R6 R0 K33 [0xD9531187]
+     136 [-]: CALL R6 1 1  
+     137 [-]: JUMPIFNOT R6 L13
+     138 [-]: GETUPVAL R7 11
+     139 [-]: GETTABLEKS R6 R7 K34 [0xD712B9DB]
+     140 [-]: CALL R6 0 0  
+     141 [-]: GETUPVAL R6 1
+     142 [-]: LOADN R8 11  
+     143 [-]: NAMECALL R6 R6 K10 [0x8ABFF40E]
+     144 [-]: CALL R6 2 0  
+L13: 145 [-]: GETIMPORT R6 36 [nil]
+     146 [-]: LOADN R7 0   
+     147 [-]: CALL R6 1 0  
+     148 [-]: JUMPBACK L0  
+L14: 149 [-]: JUMPXEQKN R5 K37 L15 NOT [11]
+     150 [-]: GETUPVAL R6 12
+     151 [-]: LOADN R8 5   
+     152 [-]: NAMECALL R6 R6 K38 [0xFE9DC265]
+     153 [-]: CALL R6 2 0  
+     154 [-]: JUMP L16
+    
+L15: 155 [-]: GETUPVAL R6 12
+     156 [-]: LOADN R8 4   
+     157 [-]: NAMECALL R6 R6 K38 [0xFE9DC265]
+     158 [-]: CALL R6 2 0  
+L16: 159 [-]: GETIMPORT R8 40 [nil]
+     160 [-]: LOADK R9 K41 ["LeavingCB"]
+     161 [-]: CALL R8 1 -1 
+     162 [-]: NAMECALL R6 R0 K42 [0x3D412E0D]
+     163 [-]: CALL R6 -1 0 
+     164 [-]: GETIMPORT R8 40 [nil]
+     165 [-]: LOADK R9 K43 ["ReturningCB"]
+     166 [-]: CALL R8 1 -1 
+     167 [-]: NAMECALL R6 R0 K44 [0x136A027D]
+     168 [-]: CALL R6 -1 0 
+     169 [-]: RETURN R0 0  
 
 
-; Function #9:
-;
 ; Name:            
 ; Defined at line: 413
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
-; Max Stack Size:  2
+; Max Stack Size:  0
 
-  1 [-]: RETURN    R0 1         ; return 
+       0 [-]: RETURN R0 0  
 
 
-; Function #10:
-;
 ; Name:            
 ; Defined at line: 417
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
-; Max Stack Size:  2
+; Max Stack Size:  0
 
-  1 [-]: RETURN    R0 1         ; return 
+       0 [-]: RETURN R0 0  
 
 
-; Function #11:
-;
 ; Name:            
 ; Defined at line: 422
 ; #Upvalues:       2
@@ -1178,19 +1069,17 @@
 ; Is_vararg:       0
 ; Max Stack Size:  3
 
-  1 [-]: GETGLOBAL R0 K0        ; R0 := 0x3d106989
-  2 [-]: LOADK     R1 K1        ; R1 := "Solaris United Quest: Players abandoning objective"
-  3 [-]: CALL      R0 2 1       ; R0(R1)
-  4 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  5 [-]: GETTABLE  R0 R0 K2     ; R0 := R0[0x7e8a976a]
-  6 [-]: GETUPVAL  R1 U1        ; R1 := U1
-  7 [-]: LOADKB    R2 1 0       ; R2 := true
-  8 [-]: CALL      R0 3 1       ; R0(R1,R2)
-  9 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: LOADK R1 K2 ["Solaris United Quest: Players abandoning objective"]
+       2 [-]: CALL R0 1 0  
+       3 [-]: GETUPVAL R1 0
+       4 [-]: GETTABLEKS R0 R1 K3 [0x7E8A976A]
+       5 [-]: GETUPVAL R1 1
+       6 [-]: LOADB R2 1   
+       7 [-]: CALL R0 2 0  
+       8 [-]: RETURN R0 0  
 
 
-; Function #12:
-;
 ; Name:            
 ; Defined at line: 427
 ; #Upvalues:       2
@@ -1198,14 +1087,15 @@
 ; Is_vararg:       0
 ; Max Stack Size:  3
 
-  1 [-]: GETGLOBAL R0 K0        ; R0 := 0x3d106989
-  2 [-]: LOADK     R1 K1        ; R1 := "Solaris United Quest: Players returned"
-  3 [-]: CALL      R0 2 1       ; R0(R1)
-  4 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  5 [-]: GETTABLE  R0 R0 K2     ; R0 := R0[0x7e8a976a]
-  6 [-]: GETUPVAL  R1 U1        ; R1 := U1
-  7 [-]: LOADKB    R2 0 0       ; R2 := false
-  8 [-]: CALL      R0 3 1       ; R0(R1,R2)
-  9 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: LOADK R1 K2 ["Solaris United Quest: Players returned"]
+       2 [-]: CALL R0 1 0  
+       3 [-]: GETUPVAL R1 0
+       4 [-]: GETTABLEKS R0 R1 K3 [0x7E8A976A]
+       5 [-]: GETUPVAL R1 1
+       6 [-]: LOADB R2 0   
+       7 [-]: CALL R0 2 0  
+       8 [-]: RETURN R0 0  
+
 
 

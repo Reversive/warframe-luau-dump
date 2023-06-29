@@ -1,19 +1,15 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
-; Max Stack Size:  2
+; Is_vararg:       1
+; Max Stack Size:  1
 
-  1 [-]: CLOSURE   R0 0         ; R0 := closure(Function #1)
-  2 [-]: SETGLOBAL R0 K0        ; ScaleOverTime := R0
-  3 [-]: RETURN    R0 1         ; return 
+            1 [-]: DUPCLOSURE R0 K0 []
+       2 [-]: SETGLOBAL R0 K1 ["ScaleOverTime"]
+       3 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 5
 ; #Upvalues:       0
@@ -21,35 +17,34 @@
 ; Is_vararg:       0
 ; Max Stack Size:  8
 
-  1 [-]: CONST     R1 0         ; R1 := 0.000000
-  2 [-]: GETGLOBAL R2 K0        ; R2 := 0x38b4bf3d
-  3 [-]: LT        0 R1 R2      ; if R1 >= R2 then PC := 30
-  4 [-]: JMP       30           ; PC := 30
-  5 [-]: GETGLOBAL R2 K1        ; R2 := 0x7b998233
-  6 [-]: MOVE      R3 R0        ; R3 := R0
-  7 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  8 [-]: TEST      R2 0         ; if not R2 then PC := 11
-  9 [-]: JMP       11           ; PC := 11
- 10 [-]: JMP       30           ; PC := 30
- 11 [-]: GETGLOBAL R2 K2        ; R2 := 0x67652851
- 12 [-]: CALL      R2 1 2       ; R2 := R2()
- 13 [-]: ADD       R1 R1 R2     ; R1 := R1 + R2
- 14 [-]: GETGLOBAL R2 K0        ; R2 := 0x38b4bf3d
- 15 [-]: DIV       R2 R1 R2     ; R2 := R1 / R2
- 16 [-]: GETGLOBAL R3 K3        ; R3 := 0x9bafffe3
- 17 [-]: GETGLOBAL R4 K4        ; R4 := 0x44cb360c
- 18 [-]: GETGLOBAL R5 K5        ; R5 := 0xbffb13f3
- 19 [-]: MUL       R6 R2 R2     ; R6 := R2 * R2
- 20 [-]: MUL       R6 R6 R2     ; R6 := R6 * R2
- 21 [-]: CALL      R3 4 2       ; R3 := R3(R4,R5,R6)
- 22 [-]: SELF      R4 R0 K6     ; R5 := R0; R4 := R0[0x2d9ba74f]
- 23 [-]: MOVE      R6 R3        ; R6 := R3
- 24 [-]: LOADKB    R7 0 0       ; R7 := false
- 25 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
- 26 [-]: GETGLOBAL R4 K7        ; R4 := 0xcbd666e1
- 27 [-]: CONST     R5 0         ; R5 := 0.000000
- 28 [-]: CALL      R4 2 1       ; R4(R5)
- 29 [-]: JMP       2            ; PC := 2
- 30 [-]: RETURN    R0 1         ; return 
+       0 [-]: LOADN R1 0   
+L 0:   1 [-]: GETIMPORT R2 1 [nil]
+       2 [-]: JUMPIFNOTLT R1 R2 L2
+       3 [-]: FASTCALL1 62 R0 L1
+       4 [-]: MOVE R3 R0   
+       5 [-]: GETIMPORT R2 3 [nil]
+       6 [-]: CALL R2 1 1  
+L 1:   7 [-]: JUMPIF R2 L2 
+       8 [-]: GETIMPORT R2 5 [nil]
+       9 [-]: CALL R2 0 1  
+      10 [-]: ADD R1 R1 R2 
+      11 [-]: GETIMPORT R3 1 [nil]
+      12 [-]: DIV R2 R1 R3 
+      13 [-]: GETIMPORT R3 7 [nil]
+      14 [-]: GETIMPORT R4 9 [nil]
+      15 [-]: GETIMPORT R5 11 [nil]
+      16 [-]: MUL R7 R2 R2 
+      17 [-]: MUL R6 R7 R2 
+      18 [-]: CALL R3 3 1  
+      19 [-]: MOVE R6 R3   
+      20 [-]: LOADB R7 0   
+      21 [-]: NAMECALL R4 R0 K12 [0x2D9BA74F]
+      22 [-]: CALL R4 3 0  
+      23 [-]: GETIMPORT R4 14 [nil]
+      24 [-]: LOADN R5 0   
+      25 [-]: CALL R4 1 0  
+      26 [-]: JUMPBACK L0  
+L 2:  27 [-]: RETURN R0 0  
+
 
 

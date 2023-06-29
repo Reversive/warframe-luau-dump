@@ -1,21 +1,17 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
-; Max Stack Size:  2
+; Is_vararg:       1
+; Max Stack Size:  1
 
-  1 [-]: CLOSURE   R0 0         ; R0 := closure(Function #1)
-  2 [-]: SETGLOBAL R0 K0        ; StartMod := R0
-  3 [-]: CLOSURE   R0 1         ; R0 := closure(Function #2)
-  4 [-]: SETGLOBAL R0 K1        ; EndMod := R0
-  5 [-]: RETURN    R0 1         ; return 
+            1 [-]: DUPCLOSURE R0 K0 []
+       2 [-]: SETGLOBAL R0 K1 ["StartMod"]
+       3 [-]: DUPCLOSURE R0 K2 []
+       4 [-]: SETGLOBAL R0 K3 ["EndMod"]
+       5 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 2
 ; #Upvalues:       0
@@ -23,21 +19,19 @@
 ; Is_vararg:       0
 ; Max Stack Size:  8
 
-  1 [-]: GETGLOBAL R5 K0        ; R5 := 0x7b998233
-  2 [-]: MOVE      R6 R1        ; R6 := R1
-  3 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-  4 [-]: TEST      R5 1         ; if R5 then PC := 11
-  5 [-]: JMP       11           ; PC := 11
-  6 [-]: SELF      R5 R1 K1     ; R6 := R1; R5 := R1[0x327f2778]
-  7 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-  8 [-]: SELF      R5 R5 K2     ; R6 := R5; R5 := R5[0x0693d0c9]
-  9 [-]: LOADKB    R7 1 0       ; R7 := true
- 10 [-]: CALL      R5 3 1       ; R5(R6,R7)
- 11 [-]: RETURN    R0 1         ; return 
+       0 [-]: FASTCALL1 62 R1 L0
+       1 [-]: MOVE R6 R1   
+       2 [-]: GETIMPORT R5 1 [nil]
+       3 [-]: CALL R5 1 1  
+L 0:   4 [-]: JUMPIF R5 L1 
+       5 [-]: NAMECALL R5 R1 K2 [0x327F2778]
+       6 [-]: CALL R5 1 1  
+       7 [-]: LOADB R7 1   
+       8 [-]: NAMECALL R5 R5 K3 [0x0693D0C9]
+       9 [-]: CALL R5 2 0  
+L 1:  10 [-]: RETURN R0 0  
 
 
-; Function #2:
-;
 ; Name:            
 ; Defined at line: 8
 ; #Upvalues:       0
@@ -45,16 +39,17 @@
 ; Is_vararg:       0
 ; Max Stack Size:  8
 
-  1 [-]: GETGLOBAL R5 K0        ; R5 := 0x7b998233
-  2 [-]: MOVE      R6 R1        ; R6 := R1
-  3 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-  4 [-]: TEST      R5 0         ; if not R5 then PC := 11
-  5 [-]: JMP       11           ; PC := 11
-  6 [-]: SELF      R5 R1 K1     ; R6 := R1; R5 := R1[0x327f2778]
-  7 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-  8 [-]: SELF      R5 R5 K2     ; R6 := R5; R5 := R5[0x0693d0c9]
-  9 [-]: LOADKB    R7 0 0       ; R7 := false
- 10 [-]: CALL      R5 3 1       ; R5(R6,R7)
- 11 [-]: RETURN    R0 1         ; return 
+       0 [-]: FASTCALL1 62 R1 L0
+       1 [-]: MOVE R6 R1   
+       2 [-]: GETIMPORT R5 1 [nil]
+       3 [-]: CALL R5 1 1  
+L 0:   4 [-]: JUMPIFNOT R5 L1
+       5 [-]: NAMECALL R5 R1 K2 [0x327F2778]
+       6 [-]: CALL R5 1 1  
+       7 [-]: LOADB R7 0   
+       8 [-]: NAMECALL R5 R5 K3 [0x0693D0C9]
+       9 [-]: CALL R5 2 0  
+L 1:  10 [-]: RETURN R0 0  
+
 
 

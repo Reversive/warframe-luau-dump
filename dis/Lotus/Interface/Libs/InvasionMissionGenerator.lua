@@ -1,564 +1,576 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
-; Max Stack Size:  26
+; Is_vararg:       1
+; Max Stack Size:  23
 
-  1 [-]: GETGLOBAL R0 K0        ; R0 := 0xaeabecda
-  2 [-]: VARARG    R1 R2        ; R1 := R2 := ...
-  3 [-]: GETGLOBAL R2 K1        ; R2 := package
-  4 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["seeall"]
-  5 [-]: CALL      R0 3 1       ; R0(R1,R2)
-  6 [-]: GETGLOBAL R0 K3        ; R0 := 0x2d0fad09
-  7 [-]: LOADK     R1 K4        ; R1 := "EE.Interface.Utilities"
-  8 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  9 [-]: GETGLOBAL R1 K3        ; R1 := 0x2d0fad09
- 10 [-]: LOADK     R2 K5        ; R2 := "Lotus.Interface.LotusUtilities"
- 11 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 12 [-]: GETGLOBAL R2 K3        ; R2 := 0x2d0fad09
- 13 [-]: LOADK     R3 K6        ; R3 := "Lotus.Interface.Libs.MissionGeneratorUtil"
- 14 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 15 [-]: LOADKB    R3 0 0       ; R3 := false
- 16 [-]: CONST     R4 1440      ; R4 := 1440.000000
- 17 [-]: CONST     R5 15        ; R5 := 15.000000
- 18 [-]: NEWTABLE  R6 0 0       ; R6 := {}
- 19 [-]: NEWTABLE  R7 5 0       ; R7 := {}
- 20 [-]: NEWTABLE  R8 0 4       ; R8 := {}
- 21 [-]: GETGLOBAL R9 K10       ; R9 := 0x7ed0a956
- 22 [-]: LOADK     R10 K11      ; R10 := "/Lotus/Levels/Proc/Transitional/GrineerToCorpusExterminate"
- 23 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 24 [-]: SETTABLE  R8 K9 R9     ; R8["levelOverride"] := R9
- 25 [-]: SETTABLE  R8 K12 K13   ; R8["missionType"] := 1.000000
- 26 [-]: SETTABLE  R8 K14 K15   ; R8["extraEnemySpec"] := nil
- 27 [-]: SETTABLE  R8 K16 K15   ; R8["vipAgent"] := nil
- 28 [-]: NEWTABLE  R9 0 4       ; R9 := {}
- 29 [-]: GETGLOBAL R10 K10      ; R10 := 0x7ed0a956
- 30 [-]: LOADK     R11 K17      ; R11 := "/Lotus/Levels/Proc/Transitional/GrineerToCorpusCapture"
- 31 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 32 [-]: SETTABLE  R9 K9 R10    ; R9["levelOverride"] := R10
- 33 [-]: SETTABLE  R9 K12 K18   ; R9["missionType"] := 5.000000
- 34 [-]: GETGLOBAL R10 K19      ; R10 := 0xb009bbc6
- 35 [-]: LOADK     R11 K20      ; R11 := "/Lotus/Types/Game/EnemySpecs/GamemodeExtraEnemySpecs/CorpusCaptureTargets"
- 36 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 37 [-]: SETTABLE  R9 K14 R10   ; R9["extraEnemySpec"] := R10
- 38 [-]: SETTABLE  R9 K16 K15   ; R9["vipAgent"] := nil
- 39 [-]: NEWTABLE  R10 0 4      ; R10 := {}
- 40 [-]: GETGLOBAL R11 K10      ; R11 := 0x7ed0a956
- 41 [-]: LOADK     R12 K21      ; R12 := "/Lotus/Levels/Proc/Transitional/GrineerToCorpusIntel"
- 42 [-]: CALL      R11 2 2      ; R11 := R11(R12)
- 43 [-]: SETTABLE  R10 K9 R11   ; R10["levelOverride"] := R11
- 44 [-]: SETTABLE  R10 K12 K22  ; R10["missionType"] := 7.000000
- 45 [-]: GETGLOBAL R11 K19      ; R11 := 0xb009bbc6
- 46 [-]: LOADK     R12 K23      ; R12 := "/Lotus/Types/Game/EnemySpecs/GamemodeExtraEnemySpecs/CorpusIntelTiersA"
- 47 [-]: CALL      R11 2 2      ; R11 := R11(R12)
- 48 [-]: SETTABLE  R10 K14 R11  ; R10["extraEnemySpec"] := R11
- 49 [-]: SETTABLE  R10 K16 K15  ; R10["vipAgent"] := nil
- 50 [-]: NEWTABLE  R11 0 4      ; R11 := {}
- 51 [-]: GETGLOBAL R12 K10      ; R12 := 0x7ed0a956
- 52 [-]: LOADK     R13 K24      ; R13 := "/Lotus/Levels/Proc/Transitional/GrineerToCorpusRescue"
- 53 [-]: CALL      R12 2 2      ; R12 := R12(R13)
- 54 [-]: SETTABLE  R11 K9 R12   ; R11["levelOverride"] := R12
- 55 [-]: SETTABLE  R11 K12 K25  ; R11["missionType"] := 3.000000
- 56 [-]: SETTABLE  R11 K14 K15  ; R11["extraEnemySpec"] := nil
- 57 [-]: GETGLOBAL R12 K10      ; R12 := 0x7ed0a956
- 58 [-]: LOADK     R13 K26      ; R13 := "/Lotus/Types/Friendly/Rescue/RescueAgentGrineer"
- 59 [-]: CALL      R12 2 2      ; R12 := R12(R13)
- 60 [-]: SETTABLE  R11 K16 R12  ; R11["vipAgent"] := R12
- 61 [-]: NEWTABLE  R12 0 4      ; R12 := {}
- 62 [-]: GETGLOBAL R13 K10      ; R13 := 0x7ed0a956
- 63 [-]: LOADK     R14 K27      ; R14 := "/Lotus/Levels/Proc/Transitional/GrineerToCorpusSabotage"
- 64 [-]: CALL      R13 2 2      ; R13 := R13(R14)
- 65 [-]: SETTABLE  R12 K9 R13   ; R12["levelOverride"] := R13
- 66 [-]: SETTABLE  R12 K12 K28  ; R12["missionType"] := 4.000000
- 67 [-]: SETTABLE  R12 K14 K15  ; R12["extraEnemySpec"] := nil
- 68 [-]: SETTABLE  R12 K16 K15  ; R12["vipAgent"] := nil
- 69 [-]: SETLIST   R7 5 1       ; R7[(1-1)*FPF+i] := R(7+i), 1 <= i <= 5
- 70 [-]: SETTABLE  R6 K8 R7     ; R6[0.000000] := R7
- 71 [-]: NEWTABLE  R7 5 0       ; R7 := {}
- 72 [-]: NEWTABLE  R8 0 4       ; R8 := {}
- 73 [-]: GETGLOBAL R9 K10       ; R9 := 0x7ed0a956
- 74 [-]: LOADK     R10 K29      ; R10 := "/Lotus/Levels/Proc/Transitional/CorpusToGrineerExterminate"
- 75 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 76 [-]: SETTABLE  R8 K9 R9     ; R8["levelOverride"] := R9
- 77 [-]: SETTABLE  R8 K12 K13   ; R8["missionType"] := 1.000000
- 78 [-]: SETTABLE  R8 K14 K15   ; R8["extraEnemySpec"] := nil
- 79 [-]: SETTABLE  R8 K16 K15   ; R8["vipAgent"] := nil
- 80 [-]: NEWTABLE  R9 0 4       ; R9 := {}
- 81 [-]: GETGLOBAL R10 K10      ; R10 := 0x7ed0a956
- 82 [-]: LOADK     R11 K30      ; R11 := "/Lotus/Levels/Proc/Transitional/CorpusToGrineerCapture"
- 83 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 84 [-]: SETTABLE  R9 K9 R10    ; R9["levelOverride"] := R10
- 85 [-]: SETTABLE  R9 K12 K18   ; R9["missionType"] := 5.000000
- 86 [-]: GETGLOBAL R10 K19      ; R10 := 0xb009bbc6
- 87 [-]: LOADK     R11 K31      ; R11 := "/Lotus/Types/Game/EnemySpecs/GamemodeExtraEnemySpecs/GrineerCaptureTargets"
- 88 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 89 [-]: SETTABLE  R9 K14 R10   ; R9["extraEnemySpec"] := R10
- 90 [-]: SETTABLE  R9 K16 K15   ; R9["vipAgent"] := nil
- 91 [-]: NEWTABLE  R10 0 4      ; R10 := {}
- 92 [-]: GETGLOBAL R11 K10      ; R11 := 0x7ed0a956
- 93 [-]: LOADK     R12 K32      ; R12 := "/Lotus/Levels/Proc/Transitional/CorpusToGrineerIntel"
- 94 [-]: CALL      R11 2 2      ; R11 := R11(R12)
- 95 [-]: SETTABLE  R10 K9 R11   ; R10["levelOverride"] := R11
- 96 [-]: SETTABLE  R10 K12 K22  ; R10["missionType"] := 7.000000
- 97 [-]: GETGLOBAL R11 K19      ; R11 := 0xb009bbc6
- 98 [-]: LOADK     R12 K33      ; R12 := "/Lotus/Types/Game/EnemySpecs/GamemodeExtraEnemySpecs/GrineerIntelTiersSquadOne"
- 99 [-]: CALL      R11 2 2      ; R11 := R11(R12)
-100 [-]: SETTABLE  R10 K14 R11  ; R10["extraEnemySpec"] := R11
-101 [-]: SETTABLE  R10 K16 K15  ; R10["vipAgent"] := nil
-102 [-]: NEWTABLE  R11 0 4      ; R11 := {}
-103 [-]: GETGLOBAL R12 K10      ; R12 := 0x7ed0a956
-104 [-]: LOADK     R13 K34      ; R13 := "/Lotus/Levels/Proc/Transitional/CorpusToGrineerRescue"
-105 [-]: CALL      R12 2 2      ; R12 := R12(R13)
-106 [-]: SETTABLE  R11 K9 R12   ; R11["levelOverride"] := R12
-107 [-]: SETTABLE  R11 K12 K25  ; R11["missionType"] := 3.000000
-108 [-]: SETTABLE  R11 K14 K15  ; R11["extraEnemySpec"] := nil
-109 [-]: GETGLOBAL R12 K10      ; R12 := 0x7ed0a956
-110 [-]: LOADK     R13 K35      ; R13 := "/Lotus/Types/Friendly/Rescue/RescueAgentCorpus"
-111 [-]: CALL      R12 2 2      ; R12 := R12(R13)
-112 [-]: SETTABLE  R11 K16 R12  ; R11["vipAgent"] := R12
-113 [-]: NEWTABLE  R12 0 4      ; R12 := {}
-114 [-]: GETGLOBAL R13 K10      ; R13 := 0x7ed0a956
-115 [-]: LOADK     R14 K36      ; R14 := "/Lotus/Levels/Proc/Transitional/CorpusToGrineerSabotage"
-116 [-]: CALL      R13 2 2      ; R13 := R13(R14)
-117 [-]: SETTABLE  R12 K9 R13   ; R12["levelOverride"] := R13
-118 [-]: SETTABLE  R12 K12 K28  ; R12["missionType"] := 4.000000
-119 [-]: SETTABLE  R12 K14 K15  ; R12["extraEnemySpec"] := nil
-120 [-]: SETTABLE  R12 K16 K15  ; R12["vipAgent"] := nil
-121 [-]: SETLIST   R7 5 1       ; R7[(1-1)*FPF+i] := R(7+i), 1 <= i <= 5
-122 [-]: SETTABLE  R6 K13 R7    ; R6[1.000000] := R7
-123 [-]: NEWTABLE  R7 9 0       ; R7 := {}
-124 [-]: NEWTABLE  R8 0 2       ; R8 := {}
-125 [-]: NEWTABLE  R9 2 0       ; R9 := {}
-126 [-]: CONST     R10 0        ; R10 := 0.000000
-127 [-]: CONST     R11 1        ; R11 := 1.000000
-128 [-]: SETLIST   R9 2 1       ; R9[(1-1)*FPF+i] := R(9+i), 1 <= i <= 2
-129 [-]: SETTABLE  R8 K37 R9    ; R8["factions"] := R9
-130 [-]: GETGLOBAL R9 K19       ; R9 := 0xb009bbc6
-131 [-]: LOADK     R10 K39      ; R10 := "/Lotus/Types/Game/EnemySpecs/CorpusGrineerInvasionEasy"
-132 [-]: CALL      R9 2 2       ; R9 := R9(R10)
-133 [-]: SETTABLE  R8 K38 R9    ; R8["enemySpec"] := R9
-134 [-]: NEWTABLE  R9 0 2       ; R9 := {}
-135 [-]: NEWTABLE  R10 2 0      ; R10 := {}
-136 [-]: CONST     R11 0        ; R11 := 0.000000
-137 [-]: CONST     R12 1        ; R12 := 1.000000
-138 [-]: SETLIST   R10 2 1      ; R10[(1-1)*FPF+i] := R(10+i), 1 <= i <= 2
-139 [-]: SETTABLE  R9 K37 R10   ; R9["factions"] := R10
-140 [-]: GETGLOBAL R10 K19      ; R10 := 0xb009bbc6
-141 [-]: LOADK     R11 K40      ; R11 := "/Lotus/Types/Game/EnemySpecs/CorpusGrineerInvasionHard"
-142 [-]: CALL      R10 2 2      ; R10 := R10(R11)
-143 [-]: SETTABLE  R9 K38 R10   ; R9["enemySpec"] := R10
-144 [-]: NEWTABLE  R10 0 2      ; R10 := {}
-145 [-]: NEWTABLE  R11 2 0      ; R11 := {}
-146 [-]: CONST     R12 0        ; R12 := 0.000000
-147 [-]: CONST     R13 1        ; R13 := 1.000000
-148 [-]: SETLIST   R11 2 1      ; R11[(1-1)*FPF+i] := R(11+i), 1 <= i <= 2
-149 [-]: SETTABLE  R10 K37 R11  ; R10["factions"] := R11
-150 [-]: GETGLOBAL R11 K19      ; R11 := 0xb009bbc6
-151 [-]: LOADK     R12 K41      ; R12 := "/Lotus/Types/Game/EnemySpecs/ExtremeInvasion"
-152 [-]: CALL      R11 2 2      ; R11 := R11(R12)
-153 [-]: SETTABLE  R10 K38 R11  ; R10["enemySpec"] := R11
-154 [-]: NEWTABLE  R11 0 2      ; R11 := {}
-155 [-]: NEWTABLE  R12 2 0      ; R12 := {}
-156 [-]: CONST     R13 0        ; R13 := 0.000000
-157 [-]: CONST     R14 1        ; R14 := 1.000000
-158 [-]: SETLIST   R12 2 1      ; R12[(1-1)*FPF+i] := R(12+i), 1 <= i <= 2
-159 [-]: SETTABLE  R11 K37 R12  ; R11["factions"] := R12
-160 [-]: GETGLOBAL R12 K19      ; R12 := 0xb009bbc6
-161 [-]: LOADK     R13 K39      ; R13 := "/Lotus/Types/Game/EnemySpecs/CorpusGrineerInvasionEasy"
-162 [-]: CALL      R12 2 2      ; R12 := R12(R13)
-163 [-]: SETTABLE  R11 K38 R12  ; R11["enemySpec"] := R12
-164 [-]: NEWTABLE  R12 0 2      ; R12 := {}
-165 [-]: NEWTABLE  R13 2 0      ; R13 := {}
-166 [-]: CONST     R14 2        ; R14 := 2.000000
-167 [-]: CONST     R15 0        ; R15 := 0.000000
-168 [-]: SETLIST   R13 2 1      ; R13[(1-1)*FPF+i] := R(13+i), 1 <= i <= 2
-169 [-]: SETTABLE  R12 K37 R13  ; R12["factions"] := R13
-170 [-]: GETGLOBAL R13 K19      ; R13 := 0xb009bbc6
-171 [-]: LOADK     R14 K42      ; R14 := "/Lotus/Types/Game/EnemySpecs/GrineerInfestedMix"
-172 [-]: CALL      R13 2 2      ; R13 := R13(R14)
-173 [-]: SETTABLE  R12 K38 R13  ; R12["enemySpec"] := R13
-174 [-]: NEWTABLE  R13 0 2      ; R13 := {}
-175 [-]: NEWTABLE  R14 2 0      ; R14 := {}
-176 [-]: CONST     R15 2        ; R15 := 2.000000
-177 [-]: CONST     R16 0        ; R16 := 0.000000
-178 [-]: SETLIST   R14 2 1      ; R14[(1-1)*FPF+i] := R(14+i), 1 <= i <= 2
-179 [-]: SETTABLE  R13 K37 R14  ; R13["factions"] := R14
-180 [-]: GETGLOBAL R14 K19      ; R14 := 0xb009bbc6
-181 [-]: LOADK     R15 K43      ; R15 := "/Lotus/Types/Game/EnemySpecs/GrineerInfestedMixB"
-182 [-]: CALL      R14 2 2      ; R14 := R14(R15)
-183 [-]: SETTABLE  R13 K38 R14  ; R13["enemySpec"] := R14
-184 [-]: NEWTABLE  R14 0 2      ; R14 := {}
-185 [-]: NEWTABLE  R15 2 0      ; R15 := {}
-186 [-]: CONST     R16 2        ; R16 := 2.000000
-187 [-]: CONST     R17 1        ; R17 := 1.000000
-188 [-]: SETLIST   R15 2 1      ; R15[(1-1)*FPF+i] := R(15+i), 1 <= i <= 2
-189 [-]: SETTABLE  R14 K37 R15  ; R14["factions"] := R15
-190 [-]: GETGLOBAL R15 K19      ; R15 := 0xb009bbc6
-191 [-]: LOADK     R16 K44      ; R16 := "/Lotus/Types/Game/EnemySpecs/CorpusInfestedMix"
-192 [-]: CALL      R15 2 2      ; R15 := R15(R16)
-193 [-]: SETTABLE  R14 K38 R15  ; R14["enemySpec"] := R15
-194 [-]: NEWTABLE  R15 0 2      ; R15 := {}
-195 [-]: NEWTABLE  R16 2 0      ; R16 := {}
-196 [-]: CONST     R17 2        ; R17 := 2.000000
-197 [-]: CONST     R18 1        ; R18 := 1.000000
-198 [-]: SETLIST   R16 2 1      ; R16[(1-1)*FPF+i] := R(16+i), 1 <= i <= 2
-199 [-]: SETTABLE  R15 K37 R16  ; R15["factions"] := R16
-200 [-]: GETGLOBAL R16 K19      ; R16 := 0xb009bbc6
-201 [-]: LOADK     R17 K45      ; R17 := "/Lotus/Types/Game/EnemySpecs/CorpusInfestedMixB"
-202 [-]: CALL      R16 2 2      ; R16 := R16(R17)
-203 [-]: SETTABLE  R15 K38 R16  ; R15["enemySpec"] := R16
-204 [-]: NEWTABLE  R16 0 2      ; R16 := {}
-205 [-]: NEWTABLE  R17 2 0      ; R17 := {}
-206 [-]: CONST     R18 2        ; R18 := 2.000000
-207 [-]: CONST     R19 1        ; R19 := 1.000000
-208 [-]: SETLIST   R17 2 1      ; R17[(1-1)*FPF+i] := R(17+i), 1 <= i <= 2
-209 [-]: SETTABLE  R16 K37 R17  ; R16["factions"] := R17
-210 [-]: GETGLOBAL R17 K19      ; R17 := 0xb009bbc6
-211 [-]: LOADK     R18 K46      ; R18 := "/Lotus/Types/Game/EnemySpecs/SupCorpusInfestedMix"
-212 [-]: CALL      R17 2 2      ; R17 := R17(R18)
-213 [-]: SETTABLE  R16 K38 R17  ; R16["enemySpec"] := R17
-214 [-]: SETLIST   R7 9 1       ; R7[(1-1)*FPF+i] := R(7+i), 1 <= i <= 9
-215 [-]: NEWTABLE  R8 15 0      ; R8 := {}
-216 [-]: NEWTABLE  R9 0 3       ; R9 := {}
-217 [-]: SETTABLE  R9 K47 K8    ; R9["faction"] := 0.000000
-218 [-]: SETTABLE  R9 K48 K15   ; R9["location"] := nil
-219 [-]: GETGLOBAL R10 K19      ; R10 := 0xb009bbc6
-220 [-]: LOADK     R11 K49      ; R11 := "/Lotus/Types/Game/EnemySpecs/GrineerExterminateSimple"
-221 [-]: CALL      R10 2 2      ; R10 := R10(R11)
-222 [-]: SETTABLE  R9 K38 R10   ; R9["enemySpec"] := R10
-223 [-]: NEWTABLE  R10 0 3      ; R10 := {}
-224 [-]: SETTABLE  R10 K47 K8   ; R10["faction"] := 0.000000
-225 [-]: SETTABLE  R10 K48 K15  ; R10["location"] := nil
-226 [-]: GETGLOBAL R11 K19      ; R11 := 0xb009bbc6
-227 [-]: LOADK     R12 K50      ; R12 := "/Lotus/Types/Game/EnemySpecs/GrineerExterminateFire"
-228 [-]: CALL      R11 2 2      ; R11 := R11(R12)
-229 [-]: SETTABLE  R10 K38 R11  ; R10["enemySpec"] := R11
-230 [-]: NEWTABLE  R11 0 3      ; R11 := {}
-231 [-]: SETTABLE  R11 K47 K8   ; R11["faction"] := 0.000000
-232 [-]: SETTABLE  R11 K48 K15  ; R11["location"] := nil
-233 [-]: GETGLOBAL R12 K19      ; R12 := 0xb009bbc6
-234 [-]: LOADK     R13 K51      ; R13 := "/Lotus/Types/Game/EnemySpecs/GrineerExterminateTech"
-235 [-]: CALL      R12 2 2      ; R12 := R12(R13)
-236 [-]: SETTABLE  R11 K38 R12  ; R11["enemySpec"] := R12
-237 [-]: NEWTABLE  R12 0 3      ; R12 := {}
-238 [-]: SETTABLE  R12 K47 K8   ; R12["faction"] := 0.000000
-239 [-]: SETTABLE  R12 K48 K52  ; R12["location"] := "Forest"
-240 [-]: GETGLOBAL R13 K19      ; R13 := 0xb009bbc6
-241 [-]: LOADK     R14 K53      ; R14 := "/Lotus/Types/Game/EnemySpecs/ForestGrineerExterminate"
-242 [-]: CALL      R13 2 2      ; R13 := R13(R14)
-243 [-]: SETTABLE  R12 K38 R13  ; R12["enemySpec"] := R13
-244 [-]: NEWTABLE  R13 0 3      ; R13 := {}
-245 [-]: SETTABLE  R13 K47 K8   ; R13["faction"] := 0.000000
-246 [-]: SETTABLE  R13 K48 K54  ; R13["location"] := "Settlement"
-247 [-]: GETGLOBAL R14 K19      ; R14 := 0xb009bbc6
-248 [-]: LOADK     R15 K55      ; R15 := "/Lotus/Types/Game/EnemySpecs/DesertGrineerExterminate"
-249 [-]: CALL      R14 2 2      ; R14 := R14(R15)
-250 [-]: SETTABLE  R13 K38 R14  ; R13["enemySpec"] := R14
-251 [-]: NEWTABLE  R14 0 3      ; R14 := {}
-252 [-]: SETTABLE  R14 K47 K8   ; R14["faction"] := 0.000000
-253 [-]: SETTABLE  R14 K48 K56  ; R14["location"] := "Shipyards"
-254 [-]: GETGLOBAL R15 K19      ; R15 := 0xb009bbc6
-255 [-]: LOADK     R16 K57      ; R16 := "/Lotus/Types/Game/EnemySpecs/GrineerExterminateBlades"
-256 [-]: CALL      R15 2 2      ; R15 := R15(R16)
-257 [-]: SETTABLE  R14 K38 R15  ; R14["enemySpec"] := R15
-258 [-]: NEWTABLE  R15 0 3      ; R15 := {}
-259 [-]: SETTABLE  R15 K47 K8   ; R15["faction"] := 0.000000
-260 [-]: SETTABLE  R15 K48 K58  ; R15["location"] := "Ocean"
-261 [-]: GETGLOBAL R16 K19      ; R16 := 0xb009bbc6
-262 [-]: LOADK     R17 K59      ; R17 := "/Lotus/Types/Game/EnemySpecs/SeaLabGrineerExterminate"
-263 [-]: CALL      R16 2 2      ; R16 := R16(R17)
-264 [-]: SETTABLE  R15 K38 R16  ; R15["enemySpec"] := R16
-265 [-]: NEWTABLE  R16 0 3      ; R16 := {}
-266 [-]: SETTABLE  R16 K47 K13  ; R16["faction"] := 1.000000
-267 [-]: SETTABLE  R16 K48 K15  ; R16["location"] := nil
-268 [-]: GETGLOBAL R17 K19      ; R17 := 0xb009bbc6
-269 [-]: LOADK     R18 K60      ; R18 := "/Lotus/Types/Game/EnemySpecs/CorpusExterminateRobots"
-270 [-]: CALL      R17 2 2      ; R17 := R17(R18)
-271 [-]: SETTABLE  R16 K38 R17  ; R16["enemySpec"] := R17
-272 [-]: NEWTABLE  R17 0 3      ; R17 := {}
-273 [-]: SETTABLE  R17 K47 K13  ; R17["faction"] := 1.000000
-274 [-]: SETTABLE  R17 K48 K15  ; R17["location"] := nil
-275 [-]: GETGLOBAL R18 K19      ; R18 := 0xb009bbc6
-276 [-]: LOADK     R19 K61      ; R19 := "/Lotus/Types/Game/EnemySpecs/CorpusExterminateHumans"
-277 [-]: CALL      R18 2 2      ; R18 := R18(R19)
-278 [-]: SETTABLE  R17 K38 R18  ; R17["enemySpec"] := R18
-279 [-]: NEWTABLE  R18 0 3      ; R18 := {}
-280 [-]: SETTABLE  R18 K47 K13  ; R18["faction"] := 1.000000
-281 [-]: SETTABLE  R18 K48 K15  ; R18["location"] := nil
-282 [-]: GETGLOBAL R19 K19      ; R19 := 0xb009bbc6
-283 [-]: LOADK     R20 K62      ; R20 := "/Lotus/Types/Game/EnemySpecs/CorpusExterminateMixed"
-284 [-]: CALL      R19 2 2      ; R19 := R19(R20)
-285 [-]: SETTABLE  R18 K38 R19  ; R18["enemySpec"] := R19
-286 [-]: NEWTABLE  R19 0 3      ; R19 := {}
-287 [-]: SETTABLE  R19 K47 K13  ; R19["faction"] := 1.000000
-288 [-]: SETTABLE  R19 K48 K15  ; R19["location"] := nil
-289 [-]: GETGLOBAL R20 K19      ; R20 := 0xb009bbc6
-290 [-]: LOADK     R21 K63      ; R21 := "/Lotus/Types/Game/EnemySpecs/CorpusExterminateSimple"
-291 [-]: CALL      R20 2 2      ; R20 := R20(R21)
-292 [-]: SETTABLE  R19 K38 R20  ; R19["enemySpec"] := R20
-293 [-]: NEWTABLE  R20 0 3      ; R20 := {}
-294 [-]: SETTABLE  R20 K47 K64  ; R20["faction"] := 2.000000
-295 [-]: SETTABLE  R20 K48 K15  ; R20["location"] := nil
-296 [-]: GETGLOBAL R21 K19      ; R21 := 0xb009bbc6
-297 [-]: LOADK     R22 K65      ; R22 := "/Lotus/Types/Game/EnemySpecs/InfestedExterminateMixed"
-298 [-]: CALL      R21 2 2      ; R21 := R21(R22)
-299 [-]: SETTABLE  R20 K38 R21  ; R20["enemySpec"] := R21
-300 [-]: NEWTABLE  R21 0 3      ; R21 := {}
-301 [-]: SETTABLE  R21 K47 K64  ; R21["faction"] := 2.000000
-302 [-]: SETTABLE  R21 K48 K15  ; R21["location"] := nil
-303 [-]: GETGLOBAL R22 K19      ; R22 := 0xb009bbc6
-304 [-]: LOADK     R23 K66      ; R23 := "/Lotus/Types/Game/EnemySpecs/InfestedExterminateToxic"
-305 [-]: CALL      R22 2 2      ; R22 := R22(R23)
-306 [-]: SETTABLE  R21 K38 R22  ; R21["enemySpec"] := R22
-307 [-]: NEWTABLE  R22 0 3      ; R22 := {}
-308 [-]: SETTABLE  R22 K47 K64  ; R22["faction"] := 2.000000
-309 [-]: SETTABLE  R22 K48 K15  ; R22["location"] := nil
-310 [-]: GETGLOBAL R23 K19      ; R23 := 0xb009bbc6
-311 [-]: LOADK     R24 K67      ; R24 := "/Lotus/Types/Game/EnemySpecs/InfestedExterminateSimple"
-312 [-]: CALL      R23 2 2      ; R23 := R23(R24)
-313 [-]: SETTABLE  R22 K38 R23  ; R22["enemySpec"] := R23
-314 [-]: NEWTABLE  R23 0 3      ; R23 := {}
-315 [-]: SETTABLE  R23 K47 K64  ; R23["faction"] := 2.000000
-316 [-]: SETTABLE  R23 K48 K15  ; R23["location"] := nil
-317 [-]: GETGLOBAL R24 K19      ; R24 := 0xb009bbc6
-318 [-]: LOADK     R25 K68      ; R25 := "/Lotus/Types/Game/EnemySpecs/InfestedExterminateSwarm"
-319 [-]: CALL      R24 2 2      ; R24 := R24(R25)
-320 [-]: SETTABLE  R23 K38 R24  ; R23["enemySpec"] := R24
-321 [-]: SETLIST   R8 15 1      ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 15
-322 [-]: NEWTABLE  R9 4 0       ; R9 := {}
-323 [-]: CONST     R10 1        ; R10 := 1.000000
-324 [-]: CONST     R11 4        ; R11 := 4.000000
-325 [-]: CONST     R12 5        ; R12 := 5.000000
-326 [-]: CONST     R13 13       ; R13 := 13.000000
-327 [-]: SETLIST   R9 4 1       ; R9[(1-1)*FPF+i] := R(9+i), 1 <= i <= 4
-328 [-]: NEWTABLE  R10 4 0      ; R10 := {}
-329 [-]: CONST     R11 1        ; R11 := 1.000000
-330 [-]: CONST     R12 2        ; R12 := 2.000000
-331 [-]: CONST     R13 9        ; R13 := 9.000000
-332 [-]: CONST     R14 8        ; R14 := 8.000000
-333 [-]: SETLIST   R10 4 1      ; R10[(1-1)*FPF+i] := R(10+i), 1 <= i <= 4
-334 [-]: NEWTABLE  R11 0 5      ; R11 := {}
-335 [-]: GETGLOBAL R12 K10      ; R12 := 0x7ed0a956
-336 [-]: LOADK     R13 K69      ; R13 := "/Lotus/Levels/Proc/Grineer/GrineerAsteroidBossInfested"
-337 [-]: CALL      R12 2 2      ; R12 := R12(R13)
-338 [-]: SETTABLE  R11 K9 R12   ; R11["levelOverride"] := R12
-339 [-]: GETGLOBAL R12 K19      ; R12 := 0xb009bbc6
-340 [-]: LOADK     R13 K43      ; R13 := "/Lotus/Types/Game/EnemySpecs/GrineerInfestedMixB"
-341 [-]: CALL      R12 2 2      ; R12 := R12(R13)
-342 [-]: SETTABLE  R11 K70 R12  ; R11["enemySpecGrineer"] := R12
-343 [-]: GETGLOBAL R12 K19      ; R12 := 0xb009bbc6
-344 [-]: LOADK     R13 K45      ; R13 := "/Lotus/Types/Game/EnemySpecs/CorpusInfestedMixB"
-345 [-]: CALL      R12 2 2      ; R12 := R12(R13)
-346 [-]: SETTABLE  R11 K71 R12  ; R11["enemySpecCorpus"] := R12
-347 [-]: GETGLOBAL R12 K10      ; R12 := 0x7ed0a956
-348 [-]: LOADK     R13 K72      ; R13 := "/Lotus/Types/Enemies/Infested/Vip/QuadrupedVIP"
-349 [-]: CALL      R12 2 2      ; R12 := R12(R13)
-350 [-]: SETTABLE  R11 K16 R12  ; R11["vipAgent"] := R12
-351 [-]: SETTABLE  R11 K73 K74  ; R11["uniqueName"] := "/Lotus/Language/Bosses/BossPhorid"
-352 [-]: NEWTABLE  R12 0 0      ; R12 := {}
-353 [-]: GETGLOBAL R13 K7       ; R13 := 0x6c97a788
-354 [-]: GETTABLE  R13 R13 K75  ; R13 := R13[0x6e0e9f85]
-355 [-]: CALL      R13 1 2      ; R13 := R13()
-356 [-]: CLOSURE   R14 0        ; R14 := closure(Function #1)
-357 [-]: MOVE      R0 R3        ; R0 := R3
-358 [-]: CLOSURE   R15 1        ; R15 := closure(Function #2)
-359 [-]: CLOSURE   R16 2        ; R16 := closure(Function #3)
-360 [-]: MOVE      R0 R7        ; R0 := R7
-361 [-]: MOVE      R0 R15       ; R0 := R15
-362 [-]: CLOSURE   R17 3        ; R17 := closure(Function #4)
-363 [-]: MOVE      R0 R15       ; R0 := R15
-364 [-]: CLOSURE   R18 4        ; R18 := closure(Function #5)
-365 [-]: CLOSURE   R19 5        ; R19 := closure(Function #6)
-366 [-]: CLOSURE   R20 6        ; R20 := closure(Function #7)
-367 [-]: MOVE      R0 R0        ; R0 := R0
-368 [-]: MOVE      R0 R13       ; R0 := R13
-369 [-]: MOVE      R0 R12       ; R0 := R12
-370 [-]: MOVE      R0 R11       ; R0 := R11
-371 [-]: MOVE      R0 R18       ; R0 := R18
-372 [-]: MOVE      R0 R15       ; R0 := R15
-373 [-]: MOVE      R0 R6        ; R0 := R6
-374 [-]: MOVE      R0 R9        ; R0 := R9
-375 [-]: MOVE      R0 R10       ; R0 := R10
-376 [-]: MOVE      R0 R2        ; R0 := R2
-377 [-]: MOVE      R0 R19       ; R0 := R19
-378 [-]: MOVE      R0 R17       ; R0 := R17
-379 [-]: MOVE      R0 R8        ; R0 := R8
-380 [-]: MOVE      R0 R16       ; R0 := R16
-381 [-]: MOVE      R0 R3        ; R0 := R3
-382 [-]: MOVE      R0 R14       ; R0 := R14
-383 [-]: CLOSURE   R21 7        ; R21 := closure(Function #8)
-384 [-]: MOVE      R0 R12       ; R0 := R12
-385 [-]: MOVE      R0 R1        ; R0 := R1
-386 [-]: MOVE      R0 R20       ; R0 := R20
-387 [-]: CLOSURE   R22 8        ; R22 := closure(Function #9)
-388 [-]: MOVE      R0 R21       ; R0 := R21
-389 [-]: MOVE      R0 R1        ; R0 := R1
-390 [-]: MOVE      R0 R4        ; R0 := R4
-391 [-]: MOVE      R0 R5        ; R0 := R5
-392 [-]: MOVE      R0 R12       ; R0 := R12
-393 [-]: MOVE      R0 R14       ; R0 := R14
-394 [-]: MOVE      R0 R20       ; R0 := R20
-395 [-]: SETGLOBAL R22 K76      ; UpdateInvasionMissions := R22
-396 [-]: RETURN    R0 1         ; return 
+            1 [-]: GETIMPORT R0 1 [nil]
+       2 [-]: GETVARARGS R1 1
+       3 [-]: GETIMPORT R2 4 [nil]
+       4 [-]: CALL R0 2 0  
+       5 [-]: GETIMPORT R0 6 [nil]
+       6 [-]: LOADK R1 K7 ["EE.Interface.Utilities"]
+       7 [-]: CALL R0 1 1  
+       8 [-]: GETIMPORT R1 6 [nil]
+       9 [-]: LOADK R2 K8 ["Lotus.Interface.LotusUtilities"]
+      10 [-]: CALL R1 1 1  
+      11 [-]: GETIMPORT R2 6 [nil]
+      12 [-]: LOADK R3 K9 ["Lotus.Interface.Libs.MissionGeneratorUtil"]
+      13 [-]: CALL R2 1 1  
+      14 [-]: NEWTABLE R3 0 0
+      15 [-]: LOADN R4 0   
+      16 [-]: NEWTABLE R5 0 5
+      17 [-]: DUPTABLE R6 14
+      18 [-]: GETIMPORT R7 16 [nil]
+      19 [-]: LOADK R8 K17 ["/Lotus/Levels/Proc/Transitional/GrineerToCorpusExterminate"]
+      20 [-]: CALL R7 1 1  
+      21 [-]: SETTABLEKS R7 R6 K10 ["levelOverride"]
+      22 [-]: LOADN R7 1   
+      23 [-]: SETTABLEKS R7 R6 K11 ["missionType"]
+      24 [-]: LOADNIL R7   
+      25 [-]: SETTABLEKS R7 R6 K12 ["extraEnemySpec"]
+      26 [-]: LOADNIL R7   
+      27 [-]: SETTABLEKS R7 R6 K13 ["vipAgent"]
+      28 [-]: DUPTABLE R7 14
+      29 [-]: GETIMPORT R8 16 [nil]
+      30 [-]: LOADK R9 K18 ["/Lotus/Levels/Proc/Transitional/GrineerToCorpusCapture"]
+      31 [-]: CALL R8 1 1  
+      32 [-]: SETTABLEKS R8 R7 K10 ["levelOverride"]
+      33 [-]: LOADN R8 5   
+      34 [-]: SETTABLEKS R8 R7 K11 ["missionType"]
+      35 [-]: GETIMPORT R8 20 [nil]
+      36 [-]: LOADK R9 K21 ["/Lotus/Types/Game/EnemySpecs/GamemodeExtraEnemySpecs/CorpusCaptureTargets"]
+      37 [-]: CALL R8 1 1  
+      38 [-]: SETTABLEKS R8 R7 K12 ["extraEnemySpec"]
+      39 [-]: LOADNIL R8   
+      40 [-]: SETTABLEKS R8 R7 K13 ["vipAgent"]
+      41 [-]: DUPTABLE R8 14
+      42 [-]: GETIMPORT R9 16 [nil]
+      43 [-]: LOADK R10 K22 ["/Lotus/Levels/Proc/Transitional/GrineerToCorpusIntel"]
+      44 [-]: CALL R9 1 1  
+      45 [-]: SETTABLEKS R9 R8 K10 ["levelOverride"]
+      46 [-]: LOADN R9 7   
+      47 [-]: SETTABLEKS R9 R8 K11 ["missionType"]
+      48 [-]: GETIMPORT R9 20 [nil]
+      49 [-]: LOADK R10 K23 ["/Lotus/Types/Game/EnemySpecs/GamemodeExtraEnemySpecs/CorpusIntelTiersA"]
+      50 [-]: CALL R9 1 1  
+      51 [-]: SETTABLEKS R9 R8 K12 ["extraEnemySpec"]
+      52 [-]: LOADNIL R9   
+      53 [-]: SETTABLEKS R9 R8 K13 ["vipAgent"]
+      54 [-]: DUPTABLE R9 14
+      55 [-]: GETIMPORT R10 16 [nil]
+      56 [-]: LOADK R11 K24 ["/Lotus/Levels/Proc/Transitional/GrineerToCorpusRescue"]
+      57 [-]: CALL R10 1 1 
+      58 [-]: SETTABLEKS R10 R9 K10 ["levelOverride"]
+      59 [-]: LOADN R10 3  
+      60 [-]: SETTABLEKS R10 R9 K11 ["missionType"]
+      61 [-]: LOADNIL R10  
+      62 [-]: SETTABLEKS R10 R9 K12 ["extraEnemySpec"]
+      63 [-]: GETIMPORT R10 16 [nil]
+      64 [-]: LOADK R11 K25 ["/Lotus/Types/Friendly/Rescue/RescueAgentGrineer"]
+      65 [-]: CALL R10 1 1 
+      66 [-]: SETTABLEKS R10 R9 K13 ["vipAgent"]
+      67 [-]: DUPTABLE R10 14
+      68 [-]: GETIMPORT R11 16 [nil]
+      69 [-]: LOADK R12 K26 ["/Lotus/Levels/Proc/Transitional/GrineerToCorpusSabotage"]
+      70 [-]: CALL R11 1 1 
+      71 [-]: SETTABLEKS R11 R10 K10 ["levelOverride"]
+      72 [-]: LOADN R11 4  
+      73 [-]: SETTABLEKS R11 R10 K11 ["missionType"]
+      74 [-]: LOADNIL R11  
+      75 [-]: SETTABLEKS R11 R10 K12 ["extraEnemySpec"]
+      76 [-]: LOADNIL R11  
+      77 [-]: SETTABLEKS R11 R10 K13 ["vipAgent"]
+      78 [-]: SETLIST R5 R6 5 [1]
+      79 [-]: SETTABLE R5 R3 R4
+      80 [-]: LOADN R4 1   
+      81 [-]: NEWTABLE R5 0 5
+      82 [-]: DUPTABLE R6 14
+      83 [-]: GETIMPORT R7 16 [nil]
+      84 [-]: LOADK R8 K27 ["/Lotus/Levels/Proc/Transitional/CorpusToGrineerExterminate"]
+      85 [-]: CALL R7 1 1  
+      86 [-]: SETTABLEKS R7 R6 K10 ["levelOverride"]
+      87 [-]: LOADN R7 1   
+      88 [-]: SETTABLEKS R7 R6 K11 ["missionType"]
+      89 [-]: LOADNIL R7   
+      90 [-]: SETTABLEKS R7 R6 K12 ["extraEnemySpec"]
+      91 [-]: LOADNIL R7   
+      92 [-]: SETTABLEKS R7 R6 K13 ["vipAgent"]
+      93 [-]: DUPTABLE R7 14
+      94 [-]: GETIMPORT R8 16 [nil]
+      95 [-]: LOADK R9 K28 ["/Lotus/Levels/Proc/Transitional/CorpusToGrineerCapture"]
+      96 [-]: CALL R8 1 1  
+      97 [-]: SETTABLEKS R8 R7 K10 ["levelOverride"]
+      98 [-]: LOADN R8 5   
+      99 [-]: SETTABLEKS R8 R7 K11 ["missionType"]
+     100 [-]: GETIMPORT R8 20 [nil]
+     101 [-]: LOADK R9 K29 ["/Lotus/Types/Game/EnemySpecs/GamemodeExtraEnemySpecs/GrineerCaptureTargets"]
+     102 [-]: CALL R8 1 1  
+     103 [-]: SETTABLEKS R8 R7 K12 ["extraEnemySpec"]
+     104 [-]: LOADNIL R8   
+     105 [-]: SETTABLEKS R8 R7 K13 ["vipAgent"]
+     106 [-]: DUPTABLE R8 14
+     107 [-]: GETIMPORT R9 16 [nil]
+     108 [-]: LOADK R10 K30 ["/Lotus/Levels/Proc/Transitional/CorpusToGrineerIntel"]
+     109 [-]: CALL R9 1 1  
+     110 [-]: SETTABLEKS R9 R8 K10 ["levelOverride"]
+     111 [-]: LOADN R9 7   
+     112 [-]: SETTABLEKS R9 R8 K11 ["missionType"]
+     113 [-]: GETIMPORT R9 20 [nil]
+     114 [-]: LOADK R10 K31 ["/Lotus/Types/Game/EnemySpecs/GamemodeExtraEnemySpecs/GrineerIntelTiersSquadOne"]
+     115 [-]: CALL R9 1 1  
+     116 [-]: SETTABLEKS R9 R8 K12 ["extraEnemySpec"]
+     117 [-]: LOADNIL R9   
+     118 [-]: SETTABLEKS R9 R8 K13 ["vipAgent"]
+     119 [-]: DUPTABLE R9 14
+     120 [-]: GETIMPORT R10 16 [nil]
+     121 [-]: LOADK R11 K32 ["/Lotus/Levels/Proc/Transitional/CorpusToGrineerRescue"]
+     122 [-]: CALL R10 1 1 
+     123 [-]: SETTABLEKS R10 R9 K10 ["levelOverride"]
+     124 [-]: LOADN R10 3  
+     125 [-]: SETTABLEKS R10 R9 K11 ["missionType"]
+     126 [-]: LOADNIL R10  
+     127 [-]: SETTABLEKS R10 R9 K12 ["extraEnemySpec"]
+     128 [-]: GETIMPORT R10 16 [nil]
+     129 [-]: LOADK R11 K33 ["/Lotus/Types/Friendly/Rescue/RescueAgentCorpus"]
+     130 [-]: CALL R10 1 1 
+     131 [-]: SETTABLEKS R10 R9 K13 ["vipAgent"]
+     132 [-]: DUPTABLE R10 14
+     133 [-]: GETIMPORT R11 16 [nil]
+     134 [-]: LOADK R12 K34 ["/Lotus/Levels/Proc/Transitional/CorpusToGrineerSabotage"]
+     135 [-]: CALL R11 1 1 
+     136 [-]: SETTABLEKS R11 R10 K10 ["levelOverride"]
+     137 [-]: LOADN R11 4  
+     138 [-]: SETTABLEKS R11 R10 K11 ["missionType"]
+     139 [-]: LOADNIL R11  
+     140 [-]: SETTABLEKS R11 R10 K12 ["extraEnemySpec"]
+     141 [-]: LOADNIL R11  
+     142 [-]: SETTABLEKS R11 R10 K13 ["vipAgent"]
+     143 [-]: SETLIST R5 R6 5 [1]
+     144 [-]: SETTABLE R5 R3 R4
+     145 [-]: NEWTABLE R4 0 9
+     146 [-]: DUPTABLE R5 37
+     147 [-]: NEWTABLE R6 0 2
+     148 [-]: LOADN R7 0   
+     149 [-]: LOADN R8 1   
+     150 [-]: SETLIST R6 R7 2 [1]
+     151 [-]: SETTABLEKS R6 R5 K35 ["factions"]
+     152 [-]: GETIMPORT R6 20 [nil]
+     153 [-]: LOADK R7 K38 ["/Lotus/Types/Game/EnemySpecs/CorpusGrineerInvasionEasy"]
+     154 [-]: CALL R6 1 1  
+     155 [-]: SETTABLEKS R6 R5 K36 ["enemySpec"]
+     156 [-]: DUPTABLE R6 37
+     157 [-]: NEWTABLE R7 0 2
+     158 [-]: LOADN R8 0   
+     159 [-]: LOADN R9 1   
+     160 [-]: SETLIST R7 R8 2 [1]
+     161 [-]: SETTABLEKS R7 R6 K35 ["factions"]
+     162 [-]: GETIMPORT R7 20 [nil]
+     163 [-]: LOADK R8 K39 ["/Lotus/Types/Game/EnemySpecs/CorpusGrineerInvasionHard"]
+     164 [-]: CALL R7 1 1  
+     165 [-]: SETTABLEKS R7 R6 K36 ["enemySpec"]
+     166 [-]: DUPTABLE R7 37
+     167 [-]: NEWTABLE R8 0 2
+     168 [-]: LOADN R9 0   
+     169 [-]: LOADN R10 1  
+     170 [-]: SETLIST R8 R9 2 [1]
+     171 [-]: SETTABLEKS R8 R7 K35 ["factions"]
+     172 [-]: GETIMPORT R8 20 [nil]
+     173 [-]: LOADK R9 K40 ["/Lotus/Types/Game/EnemySpecs/ExtremeInvasion"]
+     174 [-]: CALL R8 1 1  
+     175 [-]: SETTABLEKS R8 R7 K36 ["enemySpec"]
+     176 [-]: DUPTABLE R8 37
+     177 [-]: NEWTABLE R9 0 2
+     178 [-]: LOADN R10 0  
+     179 [-]: LOADN R11 1  
+     180 [-]: SETLIST R9 R10 2 [1]
+     181 [-]: SETTABLEKS R9 R8 K35 ["factions"]
+     182 [-]: GETIMPORT R9 20 [nil]
+     183 [-]: LOADK R10 K38 ["/Lotus/Types/Game/EnemySpecs/CorpusGrineerInvasionEasy"]
+     184 [-]: CALL R9 1 1  
+     185 [-]: SETTABLEKS R9 R8 K36 ["enemySpec"]
+     186 [-]: DUPTABLE R9 37
+     187 [-]: NEWTABLE R10 0 2
+     188 [-]: LOADN R11 2  
+     189 [-]: LOADN R12 0  
+     190 [-]: SETLIST R10 R11 2 [1]
+     191 [-]: SETTABLEKS R10 R9 K35 ["factions"]
+     192 [-]: GETIMPORT R10 20 [nil]
+     193 [-]: LOADK R11 K41 ["/Lotus/Types/Game/EnemySpecs/GrineerInfestedMix"]
+     194 [-]: CALL R10 1 1 
+     195 [-]: SETTABLEKS R10 R9 K36 ["enemySpec"]
+     196 [-]: DUPTABLE R10 37
+     197 [-]: NEWTABLE R11 0 2
+     198 [-]: LOADN R12 2  
+     199 [-]: LOADN R13 0  
+     200 [-]: SETLIST R11 R12 2 [1]
+     201 [-]: SETTABLEKS R11 R10 K35 ["factions"]
+     202 [-]: GETIMPORT R11 20 [nil]
+     203 [-]: LOADK R12 K42 ["/Lotus/Types/Game/EnemySpecs/GrineerInfestedMixB"]
+     204 [-]: CALL R11 1 1 
+     205 [-]: SETTABLEKS R11 R10 K36 ["enemySpec"]
+     206 [-]: DUPTABLE R11 37
+     207 [-]: NEWTABLE R12 0 2
+     208 [-]: LOADN R13 2  
+     209 [-]: LOADN R14 1  
+     210 [-]: SETLIST R12 R13 2 [1]
+     211 [-]: SETTABLEKS R12 R11 K35 ["factions"]
+     212 [-]: GETIMPORT R12 20 [nil]
+     213 [-]: LOADK R13 K43 ["/Lotus/Types/Game/EnemySpecs/CorpusInfestedMix"]
+     214 [-]: CALL R12 1 1 
+     215 [-]: SETTABLEKS R12 R11 K36 ["enemySpec"]
+     216 [-]: DUPTABLE R12 37
+     217 [-]: NEWTABLE R13 0 2
+     218 [-]: LOADN R14 2  
+     219 [-]: LOADN R15 1  
+     220 [-]: SETLIST R13 R14 2 [1]
+     221 [-]: SETTABLEKS R13 R12 K35 ["factions"]
+     222 [-]: GETIMPORT R13 20 [nil]
+     223 [-]: LOADK R14 K44 ["/Lotus/Types/Game/EnemySpecs/CorpusInfestedMixB"]
+     224 [-]: CALL R13 1 1 
+     225 [-]: SETTABLEKS R13 R12 K36 ["enemySpec"]
+     226 [-]: DUPTABLE R13 37
+     227 [-]: NEWTABLE R14 0 2
+     228 [-]: LOADN R15 2  
+     229 [-]: LOADN R16 1  
+     230 [-]: SETLIST R14 R15 2 [1]
+     231 [-]: SETTABLEKS R14 R13 K35 ["factions"]
+     232 [-]: GETIMPORT R14 20 [nil]
+     233 [-]: LOADK R15 K45 ["/Lotus/Types/Game/EnemySpecs/SupCorpusInfestedMix"]
+     234 [-]: CALL R14 1 1 
+     235 [-]: SETTABLEKS R14 R13 K36 ["enemySpec"]
+     236 [-]: SETLIST R4 R5 9 [1]
+     237 [-]: NEWTABLE R5 0 15
+     238 [-]: DUPTABLE R6 48
+     239 [-]: LOADN R7 0   
+     240 [-]: SETTABLEKS R7 R6 K46 ["faction"]
+     241 [-]: LOADNIL R7   
+     242 [-]: SETTABLEKS R7 R6 K47 ["location"]
+     243 [-]: GETIMPORT R7 20 [nil]
+     244 [-]: LOADK R8 K49 ["/Lotus/Types/Game/EnemySpecs/GrineerExterminateSimple"]
+     245 [-]: CALL R7 1 1  
+     246 [-]: SETTABLEKS R7 R6 K36 ["enemySpec"]
+     247 [-]: DUPTABLE R7 48
+     248 [-]: LOADN R8 0   
+     249 [-]: SETTABLEKS R8 R7 K46 ["faction"]
+     250 [-]: LOADNIL R8   
+     251 [-]: SETTABLEKS R8 R7 K47 ["location"]
+     252 [-]: GETIMPORT R8 20 [nil]
+     253 [-]: LOADK R9 K50 ["/Lotus/Types/Game/EnemySpecs/GrineerExterminateFire"]
+     254 [-]: CALL R8 1 1  
+     255 [-]: SETTABLEKS R8 R7 K36 ["enemySpec"]
+     256 [-]: DUPTABLE R8 48
+     257 [-]: LOADN R9 0   
+     258 [-]: SETTABLEKS R9 R8 K46 ["faction"]
+     259 [-]: LOADNIL R9   
+     260 [-]: SETTABLEKS R9 R8 K47 ["location"]
+     261 [-]: GETIMPORT R9 20 [nil]
+     262 [-]: LOADK R10 K51 ["/Lotus/Types/Game/EnemySpecs/GrineerExterminateTech"]
+     263 [-]: CALL R9 1 1  
+     264 [-]: SETTABLEKS R9 R8 K36 ["enemySpec"]
+     265 [-]: DUPTABLE R9 48
+     266 [-]: LOADN R10 0  
+     267 [-]: SETTABLEKS R10 R9 K46 ["faction"]
+     268 [-]: LOADK R10 K52 ["Forest"]
+     269 [-]: SETTABLEKS R10 R9 K47 ["location"]
+     270 [-]: GETIMPORT R10 20 [nil]
+     271 [-]: LOADK R11 K53 ["/Lotus/Types/Game/EnemySpecs/ForestGrineerExterminate"]
+     272 [-]: CALL R10 1 1 
+     273 [-]: SETTABLEKS R10 R9 K36 ["enemySpec"]
+     274 [-]: DUPTABLE R10 48
+     275 [-]: LOADN R11 0  
+     276 [-]: SETTABLEKS R11 R10 K46 ["faction"]
+     277 [-]: LOADK R11 K54 ["Settlement"]
+     278 [-]: SETTABLEKS R11 R10 K47 ["location"]
+     279 [-]: GETIMPORT R11 20 [nil]
+     280 [-]: LOADK R12 K55 ["/Lotus/Types/Game/EnemySpecs/DesertGrineerExterminate"]
+     281 [-]: CALL R11 1 1 
+     282 [-]: SETTABLEKS R11 R10 K36 ["enemySpec"]
+     283 [-]: DUPTABLE R11 48
+     284 [-]: LOADN R12 0  
+     285 [-]: SETTABLEKS R12 R11 K46 ["faction"]
+     286 [-]: LOADK R12 K56 ["Shipyards"]
+     287 [-]: SETTABLEKS R12 R11 K47 ["location"]
+     288 [-]: GETIMPORT R12 20 [nil]
+     289 [-]: LOADK R13 K57 ["/Lotus/Types/Game/EnemySpecs/GrineerExterminateBlades"]
+     290 [-]: CALL R12 1 1 
+     291 [-]: SETTABLEKS R12 R11 K36 ["enemySpec"]
+     292 [-]: DUPTABLE R12 48
+     293 [-]: LOADN R13 0  
+     294 [-]: SETTABLEKS R13 R12 K46 ["faction"]
+     295 [-]: LOADK R13 K58 ["Ocean"]
+     296 [-]: SETTABLEKS R13 R12 K47 ["location"]
+     297 [-]: GETIMPORT R13 20 [nil]
+     298 [-]: LOADK R14 K59 ["/Lotus/Types/Game/EnemySpecs/SeaLabGrineerExterminate"]
+     299 [-]: CALL R13 1 1 
+     300 [-]: SETTABLEKS R13 R12 K36 ["enemySpec"]
+     301 [-]: DUPTABLE R13 48
+     302 [-]: LOADN R14 1  
+     303 [-]: SETTABLEKS R14 R13 K46 ["faction"]
+     304 [-]: LOADNIL R14  
+     305 [-]: SETTABLEKS R14 R13 K47 ["location"]
+     306 [-]: GETIMPORT R14 20 [nil]
+     307 [-]: LOADK R15 K60 ["/Lotus/Types/Game/EnemySpecs/CorpusExterminateRobots"]
+     308 [-]: CALL R14 1 1 
+     309 [-]: SETTABLEKS R14 R13 K36 ["enemySpec"]
+     310 [-]: DUPTABLE R14 48
+     311 [-]: LOADN R15 1  
+     312 [-]: SETTABLEKS R15 R14 K46 ["faction"]
+     313 [-]: LOADNIL R15  
+     314 [-]: SETTABLEKS R15 R14 K47 ["location"]
+     315 [-]: GETIMPORT R15 20 [nil]
+     316 [-]: LOADK R16 K61 ["/Lotus/Types/Game/EnemySpecs/CorpusExterminateHumans"]
+     317 [-]: CALL R15 1 1 
+     318 [-]: SETTABLEKS R15 R14 K36 ["enemySpec"]
+     319 [-]: DUPTABLE R15 48
+     320 [-]: LOADN R16 1  
+     321 [-]: SETTABLEKS R16 R15 K46 ["faction"]
+     322 [-]: LOADNIL R16  
+     323 [-]: SETTABLEKS R16 R15 K47 ["location"]
+     324 [-]: GETIMPORT R16 20 [nil]
+     325 [-]: LOADK R17 K62 ["/Lotus/Types/Game/EnemySpecs/CorpusExterminateMixed"]
+     326 [-]: CALL R16 1 1 
+     327 [-]: SETTABLEKS R16 R15 K36 ["enemySpec"]
+     328 [-]: DUPTABLE R16 48
+     329 [-]: LOADN R17 1  
+     330 [-]: SETTABLEKS R17 R16 K46 ["faction"]
+     331 [-]: LOADNIL R17  
+     332 [-]: SETTABLEKS R17 R16 K47 ["location"]
+     333 [-]: GETIMPORT R17 20 [nil]
+     334 [-]: LOADK R18 K63 ["/Lotus/Types/Game/EnemySpecs/CorpusExterminateSimple"]
+     335 [-]: CALL R17 1 1 
+     336 [-]: SETTABLEKS R17 R16 K36 ["enemySpec"]
+     337 [-]: DUPTABLE R17 48
+     338 [-]: LOADN R18 2  
+     339 [-]: SETTABLEKS R18 R17 K46 ["faction"]
+     340 [-]: LOADNIL R18  
+     341 [-]: SETTABLEKS R18 R17 K47 ["location"]
+     342 [-]: GETIMPORT R18 20 [nil]
+     343 [-]: LOADK R19 K64 ["/Lotus/Types/Game/EnemySpecs/InfestedExterminateMixed"]
+     344 [-]: CALL R18 1 1 
+     345 [-]: SETTABLEKS R18 R17 K36 ["enemySpec"]
+     346 [-]: DUPTABLE R18 48
+     347 [-]: LOADN R19 2  
+     348 [-]: SETTABLEKS R19 R18 K46 ["faction"]
+     349 [-]: LOADNIL R19  
+     350 [-]: SETTABLEKS R19 R18 K47 ["location"]
+     351 [-]: GETIMPORT R19 20 [nil]
+     352 [-]: LOADK R20 K65 ["/Lotus/Types/Game/EnemySpecs/InfestedExterminateToxic"]
+     353 [-]: CALL R19 1 1 
+     354 [-]: SETTABLEKS R19 R18 K36 ["enemySpec"]
+     355 [-]: DUPTABLE R19 48
+     356 [-]: LOADN R20 2  
+     357 [-]: SETTABLEKS R20 R19 K46 ["faction"]
+     358 [-]: LOADNIL R20  
+     359 [-]: SETTABLEKS R20 R19 K47 ["location"]
+     360 [-]: GETIMPORT R20 20 [nil]
+     361 [-]: LOADK R21 K66 ["/Lotus/Types/Game/EnemySpecs/InfestedExterminateSimple"]
+     362 [-]: CALL R20 1 1 
+     363 [-]: SETTABLEKS R20 R19 K36 ["enemySpec"]
+     364 [-]: DUPTABLE R20 48
+     365 [-]: LOADN R21 2  
+     366 [-]: SETTABLEKS R21 R20 K46 ["faction"]
+     367 [-]: LOADNIL R21  
+     368 [-]: SETTABLEKS R21 R20 K47 ["location"]
+     369 [-]: GETIMPORT R21 20 [nil]
+     370 [-]: LOADK R22 K67 ["/Lotus/Types/Game/EnemySpecs/InfestedExterminateSwarm"]
+     371 [-]: CALL R21 1 1 
+     372 [-]: SETTABLEKS R21 R20 K36 ["enemySpec"]
+     373 [-]: SETLIST R5 R6 15 [1]
+     374 [-]: NEWTABLE R6 0 4
+     375 [-]: LOADN R7 1   
+     376 [-]: LOADN R8 4   
+     377 [-]: LOADN R9 5   
+     378 [-]: LOADN R10 13 
+     379 [-]: SETLIST R6 R7 4 [1]
+     380 [-]: NEWTABLE R7 0 4
+     381 [-]: LOADN R8 1   
+     382 [-]: LOADN R9 2   
+     383 [-]: LOADN R10 9  
+     384 [-]: LOADN R11 8  
+     385 [-]: SETLIST R7 R8 4 [1]
+     386 [-]: DUPTABLE R8 71
+     387 [-]: GETIMPORT R9 16 [nil]
+     388 [-]: LOADK R10 K72 ["/Lotus/Levels/Proc/Grineer/GrineerAsteroidBossInfested"]
+     389 [-]: CALL R9 1 1  
+     390 [-]: SETTABLEKS R9 R8 K10 ["levelOverride"]
+     391 [-]: GETIMPORT R9 20 [nil]
+     392 [-]: LOADK R10 K42 ["/Lotus/Types/Game/EnemySpecs/GrineerInfestedMixB"]
+     393 [-]: CALL R9 1 1  
+     394 [-]: SETTABLEKS R9 R8 K68 ["enemySpecGrineer"]
+     395 [-]: GETIMPORT R9 20 [nil]
+     396 [-]: LOADK R10 K44 ["/Lotus/Types/Game/EnemySpecs/CorpusInfestedMixB"]
+     397 [-]: CALL R9 1 1  
+     398 [-]: SETTABLEKS R9 R8 K69 ["enemySpecCorpus"]
+     399 [-]: GETIMPORT R9 16 [nil]
+     400 [-]: LOADK R10 K73 ["/Lotus/Types/Enemies/Infested/Vip/QuadrupedVIP"]
+     401 [-]: CALL R9 1 1  
+     402 [-]: SETTABLEKS R9 R8 K13 ["vipAgent"]
+     403 [-]: LOADK R9 K74 ["/Lotus/Language/Bosses/BossPhorid"]
+     404 [-]: SETTABLEKS R9 R8 K70 ["uniqueName"]
+     405 [-]: NEWTABLE R9 0 0
+     406 [-]: GETIMPORT R10 77 [nil]
+     407 [-]: CALL R10 0 1 
+     408 [-]: DUPCLOSURE R11 K78 []
+     409 [-]: DUPCLOSURE R12 K79 []
+     410 [-]: DUPCLOSURE R13 K80 []
+     411 [-]: MOVE R0 R4   
+     412 [-]: DUPCLOSURE R14 K81 []
+     413 [-]: DUPCLOSURE R15 K82 []
+     414 [-]: DUPCLOSURE R16 K83 []
+     415 [-]: NEWCLOSURE R17 P6
+     416 [-]: MOVE R0 R0   
+     417 [-]: MOVE R0 R10  
+     418 [-]: MOVE R1 R9   
+     419 [-]: MOVE R0 R8   
+     420 [-]: MOVE R0 R15  
+     421 [-]: MOVE R0 R3   
+     422 [-]: MOVE R0 R6   
+     423 [-]: MOVE R0 R7   
+     424 [-]: MOVE R0 R2   
+     425 [-]: MOVE R0 R16  
+     426 [-]: MOVE R0 R14  
+     427 [-]: MOVE R0 R5   
+     428 [-]: MOVE R0 R13  
+     429 [-]: NEWCLOSURE R18 P7
+     430 [-]: MOVE R1 R9   
+     431 [-]: MOVE R0 R1   
+     432 [-]: MOVE R0 R17  
+     433 [-]: NEWCLOSURE R19 P8
+     434 [-]: MOVE R0 R1   
+     435 [-]: MOVE R1 R9   
+     436 [-]: MOVE R0 R17  
+     437 [-]: SETGLOBAL R19 K84 ["UpdateInvasionMissions"]
+     438 [-]: CLOSEUPVALS R9
+     439 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 101
-; #Upvalues:       1
+; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  3
+; Max Stack Size:  1
 
-  1 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  2 [-]: TEST      R1 0         ; if not R1 then PC := 7
-  3 [-]: JMP       7            ; PC := 7
-  4 [-]: GETGLOBAL R1 K0        ; R1 := 0x3d106989
-  5 [-]: MOVE      R2 R0        ; R2 := R0
-  6 [-]: CALL      R1 2 1       ; R1(R2)
-  7 [-]: RETURN    R0 1         ; return 
+       0 [-]: RETURN R0 0  
 
 
-; Function #2:
-;
 ; Name:            
 ; Defined at line: 107
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  4
+; Max Stack Size:  5
 
-  1 [-]: GETGLOBAL R1 K0        ; R1 := 0x0c5e62f9
-  2 [-]: CONST     R2 1         ; R2 := 1.000000
-  3 [-]: LEN       R3 R0        ; R3 := # R0
-  4 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
-  5 [-]: GETTABLE  R1 R0 R1     ; R1 := R0[R1]
-  6 [-]: RETURN    R1 2         ; return R1
-  7 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R2 1 [nil]
+       1 [-]: LOADN R3 1   
+       2 [-]: LENGTH R4 R0 
+       3 [-]: CALL R2 2 1  
+       4 [-]: GETTABLE R1 R0 R2
+       5 [-]: RETURN R1 1  
 
 
-; Function #3:
-;
 ; Name:            
 ; Defined at line: 111
-; #Upvalues:       2
+; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
-; Max Stack Size:  17
+; Max Stack Size:  14
 
-  1 [-]: NEWTABLE  R2 0 0       ; R2 := {}
-  2 [-]: GETGLOBAL R3 K0        ; R3 := 0xcfc01047
-  3 [-]: GETUPVAL  R4 U0        ; R4 := U0
-  4 [-]: CALL      R3 2 4       ; R3,R4,R5 := R3(R4)
-  5 [-]: JMP       25           ; PC := 25
-  6 [-]: CONST     R8 0         ; R8 := 0.000000
-  7 [-]: GETGLOBAL R9 K0        ; R9 := 0xcfc01047
-  8 [-]: GETTABLE  R10 R7 K1    ; R10 := R7["factions"]
-  9 [-]: CALL      R9 2 4       ; R9,R10,R11 := R9(R10)
- 10 [-]: JMP       16           ; PC := 16
- 11 [-]: EQ        1 R13 R0     ; if R13 == R0 then PC := 15
- 12 [-]: JMP       15           ; PC := 15
- 13 [-]: EQ        0 R13 R1     ; if R13 ~= R1 then PC := 16
- 14 [-]: JMP       16           ; PC := 16
- 15 [-]: ADD       R8 R8 K2     ; R8 := R8 + 1.000000
- 16 [-]: TFORLOOP  R9 2         ; R12,R13 :=  R9(R10,R11); if R12 ~= nil then begin PC = 11; R11 := R12 end
- 17 [-]: JMP       11           ; PC := 11
- 18 [-]: EQ        0 R8 K3      ; if R8 ~= 2.000000 then PC := 25
- 19 [-]: JMP       25           ; PC := 25
- 20 [-]: GETGLOBAL R14 K4       ; R14 := 0x33bdd652
- 21 [-]: GETTABLE  R14 R14 K5   ; R14 := R14[0x23d5322f]
- 22 [-]: MOVE      R15 R2       ; R15 := R2
- 23 [-]: GETTABLE  R16 R7 K6    ; R16 := R7["enemySpec"]
- 24 [-]: CALL      R14 3 1      ; R14(R15,R16)
- 25 [-]: TFORLOOP  R3 2         ; R6,R7 :=  R3(R4,R5); if R6 ~= nil then begin PC = 6; R5 := R6 end
- 26 [-]: JMP       6            ; PC := 6
- 27 [-]: GETUPVAL  R14 U1       ; R14 := U1
- 28 [-]: MOVE      R15 R2       ; R15 := R2
- 29 [-]: CALL      R14 2 2      ; R14 := R14(R15)
- 30 [-]: RETURN    R14 2        ; return R14
- 31 [-]: RETURN    R0 1         ; return 
+       0 [-]: NEWTABLE R2 0 0
+       1 [-]: GETIMPORT R3 1 [nil]
+       2 [-]: GETUPVAL R4 0
+       3 [-]: CALL R3 1 3  
+       4 [-]: FORGPREP_NEXT R3 L4
+L 0:   5 [-]: LOADN R8 0   
+       6 [-]: GETIMPORT R9 1 [nil]
+       7 [-]: GETTABLEKS R10 R7 K2 ["factions"]
+       8 [-]: CALL R9 1 3  
+       9 [-]: FORGPREP_NEXT R9 L3
+L 1:  10 [-]: JUMPIFEQ R13 R0 L2
+      11 [-]: JUMPIFNOTEQ R13 R1 L3
+L 2:  12 [-]: ADDK R8 R8 K3 [1]
+L 3:  13 [-]: FORGLOOP R9 L1 2
+      14 [-]: JUMPXEQKN R8 K4 L4 NOT [2]
+      15 [-]: GETTABLEKS R11 R7 K5 ["enemySpec"]
+      16 [-]: FASTCALL2 52 R2 R11 L4
+      17 [-]: MOVE R10 R2  
+      18 [-]: GETIMPORT R9 8 [nil]
+      19 [-]: CALL R9 2 0  
+L 4:  20 [-]: FORGLOOP R3 L0 2
+      21 [-]: GETIMPORT R4 10 [nil]
+      22 [-]: LOADN R5 1   
+      23 [-]: LENGTH R6 R2 
+      24 [-]: CALL R4 2 1  
+      25 [-]: GETTABLE R3 R2 R4
+      26 [-]: RETURN R3 1  
 
 
-; Function #4:
-;
 ; Name:            
 ; Defined at line: 129
-; #Upvalues:       1
+; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
 ; Max Stack Size:  12
 
-  1 [-]: NEWTABLE  R3 0 0       ; R3 := {}
-  2 [-]: GETGLOBAL R4 K0        ; R4 := 0xcfc01047
-  3 [-]: MOVE      R5 R1        ; R5 := R1
-  4 [-]: CALL      R4 2 4       ; R4,R5,R6 := R4(R5)
-  5 [-]: JMP       17           ; PC := 17
-  6 [-]: GETTABLE  R9 R8 K1     ; R9 := R8["faction"]
-  7 [-]: EQ        0 R9 R0      ; if R9 ~= R0 then PC := 17
-  8 [-]: JMP       17           ; PC := 17
-  9 [-]: GETTABLE  R9 R8 K2     ; R9 := R8["location"]
- 10 [-]: EQ        0 R9 R2      ; if R9 ~= R2 then PC := 17
- 11 [-]: JMP       17           ; PC := 17
- 12 [-]: GETGLOBAL R9 K3        ; R9 := 0x33bdd652
- 13 [-]: GETTABLE  R9 R9 K4     ; R9 := R9[0x23d5322f]
- 14 [-]: MOVE      R10 R3       ; R10 := R3
- 15 [-]: GETTABLE  R11 R8 K5    ; R11 := R8["enemySpec"]
- 16 [-]: CALL      R9 3 1       ; R9(R10,R11)
- 17 [-]: TFORLOOP  R4 2         ; R7,R8 :=  R4(R5,R6); if R7 ~= nil then begin PC = 6; R6 := R7 end
- 18 [-]: JMP       6            ; PC := 6
- 19 [-]: GETUPVAL  R9 U0        ; R9 := U0
- 20 [-]: MOVE      R10 R3       ; R10 := R3
- 21 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 22 [-]: RETURN    R9 2         ; return R9
- 23 [-]: RETURN    R0 1         ; return 
+       0 [-]: NEWTABLE R3 0 0
+       1 [-]: GETIMPORT R4 1 [nil]
+       2 [-]: MOVE R5 R1   
+       3 [-]: CALL R4 1 3  
+       4 [-]: FORGPREP_NEXT R4 L1
+L 0:   5 [-]: GETTABLEKS R9 R8 K2 ["faction"]
+       6 [-]: JUMPIFNOTEQ R9 R0 L1
+       7 [-]: GETTABLEKS R9 R8 K3 ["location"]
+       8 [-]: JUMPIFNOTEQ R9 R2 L1
+       9 [-]: GETTABLEKS R11 R8 K4 ["enemySpec"]
+      10 [-]: FASTCALL2 52 R3 R11 L1
+      11 [-]: MOVE R10 R3  
+      12 [-]: GETIMPORT R9 7 [nil]
+      13 [-]: CALL R9 2 0  
+L 1:  14 [-]: FORGLOOP R4 L0 2
+      15 [-]: GETIMPORT R5 9 [nil]
+      16 [-]: LOADN R6 1   
+      17 [-]: LENGTH R7 R3 
+      18 [-]: CALL R5 2 1  
+      19 [-]: GETTABLE R4 R3 R5
+      20 [-]: RETURN R4 1  
 
 
-; Function #5:
-;
 ; Name:            
 ; Defined at line: 140
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  5
+; Max Stack Size:  6
 
-  1 [-]: GETGLOBAL R1 K0        ; R1 := 0x7b998233
-  2 [-]: MOVE      R2 R0        ; R2 := R0
-  3 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  4 [-]: TEST      R1 0         ; if not R1 then PC := 8
-  5 [-]: JMP       8            ; PC := 8
-  6 [-]: LOADKB    R1 0 0       ; R1 := false
-  7 [-]: RETURN    R1 2         ; return R1
-  8 [-]: GETGLOBAL R1 K1        ; R1 := 0x64fb1586
-  9 [-]: SELF      R2 R0 K2     ; R3 := R0; R2 := R0[0xe223e2b1]
- 10 [-]: CALL      R2 2 0       ; R2,... := R2(R3)
- 11 [-]: CALL      R1 0 2       ; R1 := R1(R2,...)
- 12 [-]: GETGLOBAL R2 K3        ; R2 := 0x7f5022cf
- 13 [-]: GETTABLE  R2 R2 K4     ; R2 := R2[0xa5c556b9]
- 14 [-]: MOVE      R3 R1        ; R3 := R1
- 15 [-]: LOADK     R4 K5        ; R4 := "Galleon"
- 16 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
- 17 [-]: EQ        0 R2 K6      ; if R2 ~= nil then PC := 27
- 18 [-]: JMP       27           ; PC := 27
- 19 [-]: GETGLOBAL R2 K3        ; R2 := 0x7f5022cf
- 20 [-]: GETTABLE  R2 R2 K4     ; R2 := R2[0xa5c556b9]
- 21 [-]: MOVE      R3 R1        ; R3 := R1
- 22 [-]: LOADK     R4 K7        ; R4 := "CorpusShip"
- 23 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
- 24 [-]: EQ        0 R2 K6      ; if R2 ~= nil then PC := 27
- 25 [-]: JMP       27           ; PC := 27
- 26 [-]: LOADKB    R2 0 1       ; R2 := false; PC := 27
- 27 [-]: LOADKB    R2 1 0       ; R2 := true
- 28 [-]: RETURN    R2 2         ; return R2
- 29 [-]: RETURN    R0 1         ; return 
+       0 [-]: FASTCALL1 62 R0 L0
+       1 [-]: MOVE R2 R0   
+       2 [-]: GETIMPORT R1 1 [nil]
+       3 [-]: CALL R1 1 1  
+L 0:   4 [-]: JUMPIFNOT R1 L1
+       5 [-]: LOADB R1 0   
+       6 [-]: RETURN R1 1  
+L 1:   7 [-]: GETIMPORT R1 3 [nil]
+       8 [-]: NAMECALL R2 R0 K4 [0xE223E2B1]
+       9 [-]: CALL R2 1 -1 
+      10 [-]: CALL R1 -1 1 
+      11 [-]: LOADB R2 1   
+      12 [-]: GETIMPORT R3 7 [nil]
+      13 [-]: MOVE R4 R1   
+      14 [-]: LOADK R5 K8 ["Galleon"]
+      15 [-]: CALL R3 2 1  
+      16 [-]: JUMPXEQKNIL R3 L3 NOT
+      17 [-]: GETIMPORT R3 7 [nil]
+      18 [-]: MOVE R4 R1   
+      19 [-]: LOADK R5 K9 ["CorpusShip"]
+      20 [-]: CALL R3 2 1  
+      21 [-]: JUMPXEQKNIL R3 L2 NOT
+      22 [-]: LOADB R2 0 +1
+L 2:  23 [-]: LOADB R2 1   
+L 3:  24 [-]: RETURN R2 1  
 
 
-; Function #6:
-;
 ; Name:            
 ; Defined at line: 148
 ; #Upvalues:       0
@@ -566,619 +578,601 @@
 ; Is_vararg:       0
 ; Max Stack Size:  11
 
-  1 [-]: GETGLOBAL R1 K0        ; R1 := 0x64fb1586
-  2 [-]: SELF      R2 R0 K1     ; R3 := R0; R2 := R0[0xe223e2b1]
-  3 [-]: CALL      R2 2 0       ; R2,... := R2(R3)
-  4 [-]: CALL      R1 0 2       ; R1 := R1(R2,...)
-  5 [-]: NEWTABLE  R2 4 0       ; R2 := {}
-  6 [-]: LOADK     R3 K2        ; R3 := "Forest"
-  7 [-]: LOADK     R4 K3        ; R4 := "Settlement"
-  8 [-]: LOADK     R5 K4        ; R5 := "Shipyards"
-  9 [-]: LOADK     R6 K5        ; R6 := "Ocean"
- 10 [-]: SETLIST   R2 4 1       ; R2[(1-1)*FPF+i] := R(2+i), 1 <= i <= 4
- 11 [-]: GETGLOBAL R3 K6        ; R3 := 0xc8802016
- 12 [-]: MOVE      R4 R2        ; R4 := R2
- 13 [-]: CALL      R3 2 4       ; R3,R4,R5 := R3(R4)
- 14 [-]: JMP       23           ; PC := 23
- 15 [-]: GETGLOBAL R8 K7        ; R8 := 0x7f5022cf
- 16 [-]: GETTABLE  R8 R8 K8     ; R8 := R8[0xa5c556b9]
- 17 [-]: MOVE      R9 R1        ; R9 := R1
- 18 [-]: MOVE      R10 R7       ; R10 := R7
- 19 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
- 20 [-]: EQ        1 R8 K9      ; if R8 == nil then PC := 23
- 21 [-]: JMP       23           ; PC := 23
- 22 [-]: RETURN    R7 2         ; return R7
- 23 [-]: TFORLOOP  R3 2         ; R6,R7 :=  R3(R4,R5); if R6 ~= nil then begin PC = 15; R5 := R6 end
- 24 [-]: JMP       15           ; PC := 15
- 25 [-]: LOADNIL   R8 R8        ; R8 := nil
- 26 [-]: RETURN    R8 2         ; return R8
- 27 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R1 1 [nil]
+       1 [-]: NAMECALL R2 R0 K2 [0xE223E2B1]
+       2 [-]: CALL R2 1 -1 
+       3 [-]: CALL R1 -1 1 
+       4 [-]: NEWTABLE R2 0 4
+       5 [-]: LOADK R3 K3 ["Forest"]
+       6 [-]: LOADK R4 K4 ["Settlement"]
+       7 [-]: LOADK R5 K5 ["Shipyards"]
+       8 [-]: LOADK R6 K6 ["Ocean"]
+       9 [-]: SETLIST R2 R3 4 [1]
+      10 [-]: GETIMPORT R3 8 [nil]
+      11 [-]: MOVE R4 R2   
+      12 [-]: CALL R3 1 3  
+      13 [-]: FORGPREP_INEXT R3 L1
+L 0:  14 [-]: GETIMPORT R8 11 [nil]
+      15 [-]: MOVE R9 R1   
+      16 [-]: MOVE R10 R7  
+      17 [-]: CALL R8 2 1  
+      18 [-]: JUMPXEQKNIL R8 L1
+      19 [-]: RETURN R7 1  
+L 1:  20 [-]: FORGLOOP R3 L0 2 [inext]
+      21 [-]: LOADNIL R3   
+      22 [-]: RETURN R3 1  
 
 
-; Function #7:
-;
 ; Name:            
 ; Defined at line: 159
-; #Upvalues:       16
+; #Upvalues:       13
 ; #Parameters:     3
 ; Is_vararg:       0
-; Max Stack Size:  30
+; Max Stack Size:  23
 
-  1 [-]: GETGLOBAL R3 K0        ; R3 := 0x7b998233
-  2 [-]: GETTABLE  R4 R0 K1     ; R4 := R0["mAttackerMissionKey"]
-  3 [-]: CALL      R3 2 2       ; R3 := R3(R4)
-  4 [-]: TEST      R3 1         ; if R3 then PC := 27
-  5 [-]: JMP       27           ; PC := 27
-  6 [-]: TEST      R2 0         ; if not R2 then PC := 27
-  7 [-]: JMP       27           ; PC := 27
-  8 [-]: GETGLOBAL R3 K2        ; R3 := 0xb009bbc6
-  9 [-]: GETTABLE  R4 R0 K1     ; R4 := R0["mAttackerMissionKey"]
- 10 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 11 [-]: GETGLOBAL R4 K0        ; R4 := 0x7b998233
- 12 [-]: MOVE      R5 R3        ; R5 := R3
- 13 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 14 [-]: TEST      R4 1         ; if R4 then PC := 52
- 15 [-]: JMP       52           ; PC := 52
- 16 [-]: SELF      R4 R3 K3     ; R5 := R3; R4 := R3[0xef893aec]
- 17 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 18 [-]: SELF      R4 R4 K4     ; R5 := R4; R4 := R4[0x8f89d633]
- 19 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 20 [-]: GETTABLE  R5 R0 K6     ; R5 := R0["mId"]
- 21 [-]: GETTABLE  R5 R5 K6     ; R5 := R5["mId"]
- 22 [-]: SETTABLE  R4 K5 R5     ; R4["invasionId"] := R5
- 23 [-]: GETTABLE  R5 R0 K8     ; R5 := R0["mFaction"]
- 24 [-]: SETTABLE  R4 K7 R5     ; R4["invasionAllyFaction"] := R5
- 25 [-]: RETURN    R4 2         ; return R4
- 26 [-]: JMP       52           ; PC := 52
- 27 [-]: GETGLOBAL R5 K0        ; R5 := 0x7b998233
- 28 [-]: GETTABLE  R6 R0 K9     ; R6 := R0["mDefenderMissionKey"]
- 29 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 30 [-]: TEST      R5 1         ; if R5 then PC := 52
- 31 [-]: JMP       52           ; PC := 52
- 32 [-]: TEST      R2 1         ; if R2 then PC := 52
- 33 [-]: JMP       52           ; PC := 52
- 34 [-]: GETGLOBAL R5 K2        ; R5 := 0xb009bbc6
- 35 [-]: GETTABLE  R6 R0 K9     ; R6 := R0["mDefenderMissionKey"]
- 36 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 37 [-]: GETGLOBAL R6 K0        ; R6 := 0x7b998233
- 38 [-]: MOVE      R7 R5        ; R7 := R5
- 39 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 40 [-]: TEST      R6 1         ; if R6 then PC := 52
- 41 [-]: JMP       52           ; PC := 52
- 42 [-]: SELF      R6 R5 K3     ; R7 := R5; R6 := R5[0xef893aec]
- 43 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 44 [-]: SELF      R6 R6 K4     ; R7 := R6; R6 := R6[0x8f89d633]
- 45 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 46 [-]: GETTABLE  R7 R0 K6     ; R7 := R0["mId"]
- 47 [-]: GETTABLE  R7 R7 K6     ; R7 := R7["mId"]
- 48 [-]: SETTABLE  R6 K5 R7     ; R6["invasionId"] := R7
- 49 [-]: GETTABLE  R7 R0 K10    ; R7 := R0["mDefenderFaction"]
- 50 [-]: SETTABLE  R6 K7 R7     ; R6["invasionAllyFaction"] := R7
- 51 [-]: RETURN    R6 2         ; return R6
- 52 [-]: GETUPVAL  R7 U0        ; R7 := U0
- 53 [-]: GETTABLE  R7 R7 K11    ; R7 := R7[0x06d055f9]
- 54 [-]: MOVE      R8 R2        ; R8 := R2
- 55 [-]: GETTABLE  R9 R0 K12    ; R9 := R0["mAttackerMissionInfo"]
- 56 [-]: GETTABLE  R10 R0 K13   ; R10 := R0["mDefenderMissionInfo"]
- 57 [-]: CALL      R7 4 2       ; R7 := R7(R8,R9,R10)
- 58 [-]: GETUPVAL  R8 U0        ; R8 := U0
- 59 [-]: GETTABLE  R8 R8 K11    ; R8 := R8[0x06d055f9]
- 60 [-]: MOVE      R9 R2        ; R9 := R2
- 61 [-]: GETTABLE  R10 R0 K8    ; R10 := R0["mFaction"]
- 62 [-]: GETTABLE  R11 R1 K14   ; R11 := R1["mission"]
- 63 [-]: GETTABLE  R11 R11 K15  ; R11 := R11["faction"]
- 64 [-]: CALL      R8 4 2       ; R8 := R8(R9,R10,R11)
- 65 [-]: GETUPVAL  R9 U0        ; R9 := U0
- 66 [-]: GETTABLE  R9 R9 K11    ; R9 := R9[0x06d055f9]
- 67 [-]: MOVE      R10 R2       ; R10 := R2
- 68 [-]: GETTABLE  R11 R1 K14   ; R11 := R1["mission"]
- 69 [-]: GETTABLE  R11 R11 K15  ; R11 := R11["faction"]
- 70 [-]: GETTABLE  R12 R0 K8    ; R12 := R0["mFaction"]
- 71 [-]: CALL      R9 4 2       ; R9 := R9(R10,R11,R12)
- 72 [-]: GETUPVAL  R10 U0       ; R10 := U0
- 73 [-]: GETTABLE  R10 R10 K11  ; R10 := R10[0x06d055f9]
- 74 [-]: GETTABLE  R11 R7 K16   ; R11 := R7["seed"]
- 75 [-]: GETUPVAL  R12 U1       ; R12 := U1
- 76 [-]: GETTABLE  R12 R12 K16  ; R12 := R12["seed"]
- 77 [-]: EQ        1 R11 R12    ; if R11 == R12 then PC := 80
- 78 [-]: JMP       80           ; PC := 80
- 79 [-]: LOADKB    R11 0 1      ; R11 := false; PC := 80
- 80 [-]: LOADKB    R11 1 0      ; R11 := true
- 81 [-]: GETTABLE  R12 R1 K14   ; R12 := R1["mission"]
- 82 [-]: GETTABLE  R12 R12 K16  ; R12 := R12["seed"]
- 83 [-]: GETTABLE  R13 R7 K16   ; R13 := R7["seed"]
- 84 [-]: CALL      R10 4 2      ; R10 := R10(R11,R12,R13)
- 85 [-]: GETGLOBAL R11 K17      ; R11 := 0x84883f05
- 86 [-]: MOVE      R12 R10      ; R12 := R10
- 87 [-]: GETUPVAL  R13 U2       ; R13 := U2
- 88 [-]: GETTABLE  R14 R0 K6    ; R14 := R0["mId"]
- 89 [-]: GETTABLE  R14 R14 K6   ; R14 := R14["mId"]
- 90 [-]: GETTABLE  R13 R13 R14  ; R13 := R13[R14]
- 91 [-]: GETTABLE  R13 R13 K18  ; R13 := R13["cycleNum"]
- 92 [-]: CALL      R11 3 1      ; R11(R12,R13)
- 93 [-]: GETTABLE  R11 R1 K14   ; R11 := R1["mission"]
- 94 [-]: SELF      R11 R11 K4   ; R12 := R11; R11 := R11[0x8f89d633]
- 95 [-]: CALL      R11 2 2      ; R11 := R11(R12)
- 96 [-]: EQ        0 R9 K20     ; if R9 ~= 2.000000 then PC := 128
- 97 [-]: JMP       128          ; PC := 128
- 98 [-]: GETTABLE  R12 R1 K14   ; R12 := R1["mission"]
- 99 [-]: GETTABLE  R12 R12 K21  ; R12 := R12["missionType"]
-100 [-]: EQ        0 R12 K22    ; if R12 ~= 0.000000 then PC := 128
-101 [-]: JMP       128          ; PC := 128
-102 [-]: GETTABLE  R12 R1 K14   ; R12 := R1["mission"]
-103 [-]: SELF      R12 R12 K4   ; R13 := R12; R12 := R12[0x8f89d633]
-104 [-]: CALL      R12 2 2      ; R12 := R12(R13)
-105 [-]: MOVE      R11 R12      ; R11 := R12
-106 [-]: GETUPVAL  R12 U3       ; R12 := U3
-107 [-]: GETTABLE  R12 R12 K23  ; R12 := R12["levelOverride"]
-108 [-]: SETTABLE  R11 K23 R12  ; R11["levelOverride"] := R12
-109 [-]: GETUPVAL  R12 U0       ; R12 := U0
-110 [-]: GETTABLE  R12 R12 K11  ; R12 := R12[0x06d055f9]
-111 [-]: EQ        1 R8 K22     ; if R8 == 0.000000 then PC := 114
-112 [-]: JMP       114          ; PC := 114
-113 [-]: LOADKB    R13 0 1      ; R13 := false; PC := 114
-114 [-]: LOADKB    R13 1 0      ; R13 := true
-115 [-]: GETUPVAL  R14 U3       ; R14 := U3
-116 [-]: GETTABLE  R14 R14 K25  ; R14 := R14["enemySpecGrineer"]
-117 [-]: GETUPVAL  R15 U3       ; R15 := U3
-118 [-]: GETTABLE  R15 R15 K26  ; R15 := R15["enemySpecCorpus"]
-119 [-]: CALL      R12 4 2      ; R12 := R12(R13,R14,R15)
-120 [-]: SETTABLE  R11 K24 R12  ; R11["enemySpec"] := R12
-121 [-]: GETUPVAL  R12 U3       ; R12 := U3
-122 [-]: GETTABLE  R12 R12 K27  ; R12 := R12["vipAgent"]
-123 [-]: SETTABLE  R11 K27 R12  ; R11["vipAgent"] := R12
-124 [-]: GETUPVAL  R12 U3       ; R12 := U3
-125 [-]: GETTABLE  R12 R12 K28  ; R12 := R12["uniqueName"]
-126 [-]: SETTABLE  R11 K28 R12  ; R11["uniqueName"] := R12
-127 [-]: JMP       238          ; PC := 238
-128 [-]: EQ        1 R8 K20     ; if R8 == 2.000000 then PC := 155
-129 [-]: JMP       155          ; PC := 155
-130 [-]: EQ        1 R9 K20     ; if R9 == 2.000000 then PC := 155
-131 [-]: JMP       155          ; PC := 155
-132 [-]: GETUPVAL  R12 U4       ; R12 := U4
-133 [-]: GETTABLE  R13 R1 K14   ; R13 := R1["mission"]
-134 [-]: GETTABLE  R13 R13 K23  ; R13 := R13["levelOverride"]
-135 [-]: CALL      R12 2 2      ; R12 := R12(R13)
-136 [-]: TEST      R12 0        ; if not R12 then PC := 155
-137 [-]: JMP       155          ; PC := 155
-138 [-]: GETUPVAL  R12 U5       ; R12 := U5
-139 [-]: GETUPVAL  R13 U6       ; R13 := U6
-140 [-]: GETTABLE  R13 R13 R8   ; R13 := R13[R8]
-141 [-]: CALL      R12 2 2      ; R12 := R12(R13)
-142 [-]: GETTABLE  R13 R1 K14   ; R13 := R1["mission"]
-143 [-]: SELF      R13 R13 K4   ; R14 := R13; R13 := R13[0x8f89d633]
-144 [-]: CALL      R13 2 2      ; R13 := R13(R14)
-145 [-]: MOVE      R11 R13      ; R11 := R13
-146 [-]: GETTABLE  R13 R12 K21  ; R13 := R12["missionType"]
-147 [-]: SETTABLE  R11 K21 R13  ; R11["missionType"] := R13
-148 [-]: GETTABLE  R13 R12 K23  ; R13 := R12["levelOverride"]
-149 [-]: SETTABLE  R11 K23 R13  ; R11["levelOverride"] := R13
-150 [-]: GETTABLE  R13 R12 K29  ; R13 := R12["extraEnemySpec"]
-151 [-]: SETTABLE  R11 K29 R13  ; R11["extraEnemySpec"] := R13
-152 [-]: GETTABLE  R13 R12 K27  ; R13 := R12["vipAgent"]
-153 [-]: SETTABLE  R11 K27 R13  ; R11["vipAgent"] := R13
-154 [-]: JMP       191          ; PC := 191
-155 [-]: GETUPVAL  R13 U0       ; R13 := U0
-156 [-]: GETTABLE  R13 R13 K11  ; R13 := R13[0x06d055f9]
-157 [-]: MOVE      R14 R2       ; R14 := R2
-158 [-]: GETUPVAL  R15 U7       ; R15 := U7
-159 [-]: GETUPVAL  R16 U8       ; R16 := U8
-160 [-]: CALL      R13 4 2      ; R13 := R13(R14,R15,R16)
-161 [-]: GETUPVAL  R14 U9       ; R14 := U9
-162 [-]: GETTABLE  R14 R14 K30  ; R14 := R14[0xfcbca8f8]
-163 [-]: GETTABLE  R15 R1 K14   ; R15 := R1["mission"]
-164 [-]: GETTABLE  R15 R15 K31  ; R15 := R15["location"]
-165 [-]: MOVE      R16 R13      ; R16 := R13
-166 [-]: NEWTABLE  R17 1 0      ; R17 := {}
-167 [-]: CONST     R18 1        ; R18 := 1.000000
-168 [-]: SETLIST   R17 1 1      ; R17[(1-1)*FPF+i] := R(17+i), 1 <= i <= 1
-169 [-]: CALL      R14 4 2      ; R14 := R14(R15,R16,R17)
-170 [-]: MOVE      R11 R14      ; R11 := R14
-171 [-]: GETGLOBAL R14 K0       ; R14 := 0x7b998233
-172 [-]: MOVE      R15 R11      ; R15 := R11
-173 [-]: CALL      R14 2 2      ; R14 := R14(R15)
-174 [-]: TEST      R14 0        ; if not R14 then PC := 191
-175 [-]: JMP       191          ; PC := 191
-176 [-]: GETGLOBAL R14 K32      ; R14 := 0x3d106989
-177 [-]: LOADK     R15 K33      ; R15 := "Failed to generate invasion mission for "
-178 [-]: GETGLOBAL R16 K34      ; R16 := 0x64fb1586
-179 [-]: GETTABLE  R17 R1 K35   ; R17 := R1["name"]
-180 [-]: CALL      R16 2 2      ; R16 := R16(R17)
-181 [-]: LOADK     R17 K36      ; R17 := " "
-182 [-]: MOVE      R18 R8       ; R18 := R8
-183 [-]: LOADK     R19 K37      ; R19 := " vs "
-184 [-]: MOVE      R20 R9       ; R20 := R9
-185 [-]: CONCAT    R15 R15 R20  ; R15 := R15 .. R16 .. R17 .. R18 .. R19 .. R20
-186 [-]: CALL      R14 2 1      ; R14(R15)
-187 [-]: GETTABLE  R14 R1 K14   ; R14 := R1["mission"]
-188 [-]: SELF      R14 R14 K4   ; R15 := R14; R14 := R14[0x8f89d633]
-189 [-]: CALL      R14 2 2      ; R14 := R14(R15)
-190 [-]: MOVE      R11 R14      ; R11 := R14
-191 [-]: GETTABLE  R14 R11 K21  ; R14 := R11["missionType"]
-192 [-]: EQ        0 R14 K38    ; if R14 ~= 1.000000 then PC := 233
-193 [-]: JMP       233          ; PC := 233
-194 [-]: GETUPVAL  R15 U10      ; R15 := U10
-195 [-]: GETTABLE  R16 R1 K14   ; R16 := R1["mission"]
-196 [-]: GETTABLE  R16 R16 K23  ; R16 := R16["levelOverride"]
-197 [-]: CALL      R15 2 2      ; R15 := R15(R16)
-198 [-]: GETUPVAL  R16 U11      ; R16 := U11
-199 [-]: MOVE      R17 R9       ; R17 := R9
-200 [-]: GETUPVAL  R18 U12      ; R18 := U12
-201 [-]: MOVE      R19 R15      ; R19 := R15
-202 [-]: CALL      R16 4 2      ; R16 := R16(R17,R18,R19)
-203 [-]: GETUPVAL  R17 U11      ; R17 := U11
-204 [-]: MOVE      R18 R8       ; R18 := R8
-205 [-]: GETUPVAL  R19 U12      ; R19 := U12
-206 [-]: MOVE      R20 R15      ; R20 := R15
-207 [-]: CALL      R17 4 2      ; R17 := R17(R18,R19,R20)
-208 [-]: GETGLOBAL R18 K0       ; R18 := 0x7b998233
-209 [-]: MOVE      R19 R16      ; R19 := R16
-210 [-]: CALL      R18 2 2      ; R18 := R18(R19)
-211 [-]: TEST      R18 0        ; if not R18 then PC := 219
-212 [-]: JMP       219          ; PC := 219
-213 [-]: GETUPVAL  R18 U11      ; R18 := U11
-214 [-]: MOVE      R19 R9       ; R19 := R9
-215 [-]: GETUPVAL  R20 U12      ; R20 := U12
-216 [-]: LOADNIL   R21 R21      ; R21 := nil
-217 [-]: CALL      R18 4 2      ; R18 := R18(R19,R20,R21)
-218 [-]: MOVE      R16 R18      ; R16 := R18
-219 [-]: GETGLOBAL R18 K0       ; R18 := 0x7b998233
-220 [-]: MOVE      R19 R17      ; R19 := R17
-221 [-]: CALL      R18 2 2      ; R18 := R18(R19)
-222 [-]: TEST      R18 0        ; if not R18 then PC := 230
-223 [-]: JMP       230          ; PC := 230
-224 [-]: GETUPVAL  R18 U11      ; R18 := U11
-225 [-]: MOVE      R19 R8       ; R19 := R8
-226 [-]: GETUPVAL  R20 U12      ; R20 := U12
-227 [-]: LOADNIL   R21 R21      ; R21 := nil
-228 [-]: CALL      R18 4 2      ; R18 := R18(R19,R20,R21)
-229 [-]: MOVE      R17 R18      ; R17 := R18
-230 [-]: SETTABLE  R11 K24 R16  ; R11["enemySpec"] := R16
-231 [-]: SETTABLE  R11 K29 R17  ; R11["extraEnemySpec"] := R17
-232 [-]: JMP       238          ; PC := 238
-233 [-]: GETUPVAL  R18 U13      ; R18 := U13
-234 [-]: MOVE      R19 R8       ; R19 := R8
-235 [-]: MOVE      R20 R9       ; R20 := R9
-236 [-]: CALL      R18 3 2      ; R18 := R18(R19,R20)
-237 [-]: SETTABLE  R11 K24 R18  ; R11["enemySpec"] := R18
-238 [-]: GETTABLE  R18 R0 K6    ; R18 := R0["mId"]
-239 [-]: GETTABLE  R18 R18 K6   ; R18 := R18["mId"]
-240 [-]: SETTABLE  R11 K5 R18   ; R11["invasionId"] := R18
-241 [-]: GETTABLE  R18 R7 K16   ; R18 := R7["seed"]
-242 [-]: SETTABLE  R11 K16 R18  ; R11["seed"] := R18
-243 [-]: SETTABLE  R11 K15 R9   ; R11["faction"] := R9
-244 [-]: SETTABLE  R11 K7 R8    ; R11["invasionAllyFaction"] := R8
-245 [-]: SETTABLE  R11 K39 K38  ; R11["difficulty"] := 1.000000
-246 [-]: GETTABLE  R18 R1 K14   ; R18 := R1["mission"]
-247 [-]: GETTABLE  R18 R18 K40  ; R18 := R18["minEnemyLevel"]
-248 [-]: ADD       R18 R18 K41  ; R18 := R18 + 10.000000
-249 [-]: SETTABLE  R11 K40 R18  ; R11["minEnemyLevel"] := R18
-250 [-]: GETTABLE  R18 R1 K14   ; R18 := R1["mission"]
-251 [-]: GETTABLE  R18 R18 K42  ; R18 := R18["maxEnemyLevel"]
-252 [-]: ADD       R18 R18 K41  ; R18 := R18 + 10.000000
-253 [-]: SETTABLE  R11 K42 R18  ; R11["maxEnemyLevel"] := R18
-254 [-]: GETTABLE  R18 R7 K43   ; R18 := R7["missionReward"]
-255 [-]: SETTABLE  R11 K43 R18  ; R11["missionReward"] := R18
-256 [-]: GETTABLE  R18 R11 K21  ; R18 := R11["missionType"]
-257 [-]: EQ        0 R18 K44    ; if R18 ~= 8.000000 then PC := 261
-258 [-]: JMP       261          ; PC := 261
-259 [-]: SETTABLE  R11 K45 K46  ; R11["maxWaveNum"] := 5.000000
-260 [-]: JMP       290          ; PC := 290
-261 [-]: GETTABLE  R18 R11 K21  ; R18 := R11["missionType"]
-262 [-]: EQ        0 R18 K47    ; if R18 ~= 13.000000 then PC := 266
-263 [-]: JMP       266          ; PC := 266
-264 [-]: SETTABLE  R11 K45 K38  ; R11["maxWaveNum"] := 1.000000
-265 [-]: JMP       290          ; PC := 290
-266 [-]: GETTABLE  R18 R11 K21  ; R18 := R11["missionType"]
-267 [-]: EQ        0 R18 K20    ; if R18 ~= 2.000000 then PC := 271
-268 [-]: JMP       271          ; PC := 271
-269 [-]: SETTABLE  R11 K45 K46  ; R11["maxWaveNum"] := 5.000000
-270 [-]: JMP       290          ; PC := 290
-271 [-]: GETTABLE  R18 R11 K21  ; R18 := R11["missionType"]
-272 [-]: EQ        0 R18 K48    ; if R18 ~= 17.000000 then PC := 276
-273 [-]: JMP       276          ; PC := 276
-274 [-]: SETTABLE  R11 K45 K46  ; R11["maxWaveNum"] := 5.000000
-275 [-]: JMP       290          ; PC := 290
-276 [-]: GETTABLE  R18 R11 K21  ; R18 := R11["missionType"]
-277 [-]: EQ        0 R18 K49    ; if R18 ~= 7.000000 then PC := 281
-278 [-]: JMP       281          ; PC := 281
-279 [-]: SETTABLE  R11 K45 K20  ; R11["maxWaveNum"] := 2.000000
-280 [-]: JMP       290          ; PC := 290
-281 [-]: GETTABLE  R18 R11 K21  ; R18 := R11["missionType"]
-282 [-]: EQ        0 R18 K50    ; if R18 ~= 4.000000 then PC := 286
-283 [-]: JMP       286          ; PC := 286
-284 [-]: SETTABLE  R11 K45 K20  ; R11["maxWaveNum"] := 2.000000
-285 [-]: JMP       290          ; PC := 290
-286 [-]: GETTABLE  R18 R11 K21  ; R18 := R11["missionType"]
-287 [-]: EQ        0 R18 K51    ; if R18 ~= 32.000000 then PC := 290
-288 [-]: JMP       290          ; PC := 290
-289 [-]: SETTABLE  R11 K45 K50  ; R11["maxWaveNum"] := 4.000000
-290 [-]: SELF      R18 R11 K52  ; R19 := R11; R18 := R11[0xa76123ac]
-291 [-]: CALL      R18 2 1      ; R18(R19)
-292 [-]: GETUPVAL  R18 U14      ; R18 := U14
-293 [-]: TEST      R18 0        ; if not R18 then PC := 307
-294 [-]: JMP       307          ; PC := 307
-295 [-]: GETUPVAL  R18 U15      ; R18 := U15
-296 [-]: GETUPVAL  R19 U0       ; R19 := U0
-297 [-]: GETTABLE  R19 R19 K11  ; R19 := R19[0x06d055f9]
-298 [-]: MOVE      R20 R2       ; R20 := R2
-299 [-]: LOADK     R21 K53      ; R21 := "ATTACKER : "
-300 [-]: LOADK     R22 K54      ; R22 := "DEFENDER: "
-301 [-]: CALL      R19 4 2      ; R19 := R19(R20,R21,R22)
-302 [-]: SELF      R20 R11 K55  ; R21 := R11; R20 := R11[0xbfa0067d]
-303 [-]: CALL      R20 2 2      ; R20 := R20(R21)
-304 [-]: CONCAT    R19 R19 R20  ; R19 := R19 .. R20
-305 [-]: CALL      R18 2 1      ; R18(R19)
-306 [-]: JMP       334          ; PC := 334
-307 [-]: GETGLOBAL R18 K56      ; R18 := _T
-308 [-]: GETTABLE  R18 R18 K57  ; R18 := R18["InvasionTest"]
-309 [-]: TEST      R18 0        ; if not R18 then PC := 334
-310 [-]: JMP       334          ; PC := 334
-311 [-]: GETGLOBAL R18 K32      ; R18 := 0x3d106989
-312 [-]: GETUPVAL  R19 U0       ; R19 := U0
-313 [-]: GETTABLE  R19 R19 K11  ; R19 := R19[0x06d055f9]
-314 [-]: MOVE      R20 R2       ; R20 := R2
-315 [-]: LOADK     R21 K53      ; R21 := "ATTACKER : "
-316 [-]: LOADK     R22 K54      ; R22 := "DEFENDER: "
-317 [-]: CALL      R19 4 2      ; R19 := R19(R20,R21,R22)
-318 [-]: LOADK     R20 K58      ; R20 := "node="
-319 [-]: GETGLOBAL R21 K34      ; R21 := 0x64fb1586
-320 [-]: GETTABLE  R22 R1 K35   ; R22 := R1["name"]
-321 [-]: CALL      R21 2 2      ; R21 := R21(R22)
-322 [-]: LOADK     R22 K59      ; R22 := " faction="
-323 [-]: GETTABLE  R23 R11 K15  ; R23 := R11["faction"]
-324 [-]: LOADK     R24 K60      ; R24 := " missionType="
-325 [-]: GETTABLE  R25 R11 K21  ; R25 := R11["missionType"]
-326 [-]: LOADK     R26 K61      ; R26 := " levelOverride="
-327 [-]: GETGLOBAL R27 K34      ; R27 := 0x64fb1586
-328 [-]: GETTABLE  R28 R11 K23  ; R28 := R11["levelOverride"]
-329 [-]: SELF      R28 R28 K62  ; R29 := R28; R28 := R28[0xed4e0128]
-330 [-]: CALL      R28 2 0      ; R28,... := R28(R29)
-331 [-]: CALL      R27 0 2      ; R27 := R27(R28,...)
-332 [-]: CONCAT    R19 R19 R27  ; R19 := R19 .. R20 .. R21 .. R22 .. R23 .. R24 .. R25 .. R26 .. R27
-333 [-]: CALL      R18 2 1      ; R18(R19)
-334 [-]: RETURN    R11 2        ; return R11
-335 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETTABLEKS R4 R0 K0 ["mAttackerMissionKey"]
+       1 [-]: FASTCALL1 62 R4 L0
+       2 [-]: GETIMPORT R3 2 [nil]
+       3 [-]: CALL R3 1 1  
+L 0:   4 [-]: JUMPIF R3 L2 
+       5 [-]: JUMPIFNOT R2 L2
+       6 [-]: GETIMPORT R3 4 [nil]
+       7 [-]: GETTABLEKS R4 R0 K0 ["mAttackerMissionKey"]
+       8 [-]: CALL R3 1 1  
+       9 [-]: FASTCALL1 62 R3 L1
+      10 [-]: MOVE R5 R3   
+      11 [-]: GETIMPORT R4 2 [nil]
+      12 [-]: CALL R4 1 1  
+L 1:  13 [-]: JUMPIF R4 L5 
+      14 [-]: NAMECALL R4 R3 K5 [0xEF893AEC]
+      15 [-]: CALL R4 1 1  
+      16 [-]: NAMECALL R4 R4 K6 [0x8F89D633]
+      17 [-]: CALL R4 1 1  
+      18 [-]: GETTABLEKS R6 R0 K7 ["mId"]
+      19 [-]: GETTABLEKS R5 R6 K7 ["mId"]
+      20 [-]: SETTABLEKS R5 R4 K8 ["invasionId"]
+      21 [-]: GETTABLEKS R5 R0 K9 ["mFaction"]
+      22 [-]: SETTABLEKS R5 R4 K10 ["invasionAllyFaction"]
+      23 [-]: RETURN R4 1  
+      24 [-]: JUMP L5
+     
+L 2:  25 [-]: GETTABLEKS R4 R0 K11 ["mDefenderMissionKey"]
+      26 [-]: FASTCALL1 62 R4 L3
+      27 [-]: GETIMPORT R3 2 [nil]
+      28 [-]: CALL R3 1 1  
+L 3:  29 [-]: JUMPIF R3 L5 
+      30 [-]: JUMPIF R2 L5 
+      31 [-]: GETIMPORT R3 4 [nil]
+      32 [-]: GETTABLEKS R4 R0 K11 ["mDefenderMissionKey"]
+      33 [-]: CALL R3 1 1  
+      34 [-]: FASTCALL1 62 R3 L4
+      35 [-]: MOVE R5 R3   
+      36 [-]: GETIMPORT R4 2 [nil]
+      37 [-]: CALL R4 1 1  
+L 4:  38 [-]: JUMPIF R4 L5 
+      39 [-]: NAMECALL R4 R3 K5 [0xEF893AEC]
+      40 [-]: CALL R4 1 1  
+      41 [-]: NAMECALL R4 R4 K6 [0x8F89D633]
+      42 [-]: CALL R4 1 1  
+      43 [-]: GETTABLEKS R6 R0 K7 ["mId"]
+      44 [-]: GETTABLEKS R5 R6 K7 ["mId"]
+      45 [-]: SETTABLEKS R5 R4 K8 ["invasionId"]
+      46 [-]: GETTABLEKS R5 R0 K12 ["mDefenderFaction"]
+      47 [-]: SETTABLEKS R5 R4 K10 ["invasionAllyFaction"]
+      48 [-]: RETURN R4 1  
+L 5:  49 [-]: GETUPVAL R4 0
+      50 [-]: GETTABLEKS R3 R4 K13 [0x06D055F9]
+      51 [-]: MOVE R4 R2   
+      52 [-]: GETTABLEKS R5 R0 K14 ["mAttackerMissionInfo"]
+      53 [-]: GETTABLEKS R6 R0 K15 ["mDefenderMissionInfo"]
+      54 [-]: CALL R3 3 1  
+      55 [-]: GETUPVAL R5 0
+      56 [-]: GETTABLEKS R4 R5 K13 [0x06D055F9]
+      57 [-]: MOVE R5 R2   
+      58 [-]: GETTABLEKS R6 R0 K9 ["mFaction"]
+      59 [-]: GETTABLEKS R8 R1 K16 ["mission"]
+      60 [-]: GETTABLEKS R7 R8 K17 ["faction"]
+      61 [-]: CALL R4 3 1  
+      62 [-]: GETUPVAL R6 0
+      63 [-]: GETTABLEKS R5 R6 K13 [0x06D055F9]
+      64 [-]: MOVE R6 R2   
+      65 [-]: GETTABLEKS R8 R1 K16 ["mission"]
+      66 [-]: GETTABLEKS R7 R8 K17 ["faction"]
+      67 [-]: GETTABLEKS R8 R0 K9 ["mFaction"]
+      68 [-]: CALL R5 3 1  
+      69 [-]: GETUPVAL R7 0
+      70 [-]: GETTABLEKS R6 R7 K13 [0x06D055F9]
+      71 [-]: GETTABLEKS R8 R3 K18 ["seed"]
+      72 [-]: GETUPVAL R10 1
+      73 [-]: GETTABLEKS R9 R10 K18 ["seed"]
+      74 [-]: JUMPIFEQ R8 R9 L6
+      75 [-]: LOADB R7 0 +1
+L 6:  76 [-]: LOADB R7 1   
+L 7:  77 [-]: GETTABLEKS R9 R1 K16 ["mission"]
+      78 [-]: GETTABLEKS R8 R9 K18 ["seed"]
+      79 [-]: GETTABLEKS R9 R3 K18 ["seed"]
+      80 [-]: CALL R6 3 1  
+      81 [-]: GETIMPORT R7 20 [nil]
+      82 [-]: MOVE R8 R6   
+      83 [-]: GETUPVAL R11 2
+      84 [-]: GETTABLEKS R13 R0 K7 ["mId"]
+      85 [-]: GETTABLEKS R12 R13 K7 ["mId"]
+      86 [-]: GETTABLE R10 R11 R12
+      87 [-]: GETTABLEKS R9 R10 K21 ["cycleNum"]
+      88 [-]: CALL R7 2 0  
+      89 [-]: GETTABLEKS R7 R1 K16 ["mission"]
+      90 [-]: NAMECALL R7 R7 K6 [0x8F89D633]
+      91 [-]: CALL R7 1 1  
+      92 [-]: LOADN R8 2   
+      93 [-]: JUMPIFNOTEQ R5 R8 L10
+      94 [-]: GETTABLEKS R9 R1 K16 ["mission"]
+      95 [-]: GETTABLEKS R8 R9 K22 ["missionType"]
+      96 [-]: LOADN R9 0   
+      97 [-]: JUMPIFNOTEQ R8 R9 L10
+      98 [-]: GETTABLEKS R8 R1 K16 ["mission"]
+      99 [-]: NAMECALL R8 R8 K6 [0x8F89D633]
+     100 [-]: CALL R8 1 1  
+     101 [-]: MOVE R7 R8   
+     102 [-]: GETUPVAL R9 3
+     103 [-]: GETTABLEKS R8 R9 K23 ["levelOverride"]
+     104 [-]: SETTABLEKS R8 R7 K23 ["levelOverride"]
+     105 [-]: GETUPVAL R9 0
+     106 [-]: GETTABLEKS R8 R9 K13 [0x06D055F9]
+     107 [-]: LOADN R10 0  
+     108 [-]: JUMPIFEQ R4 R10 L8
+     109 [-]: LOADB R9 0 +1
+L 8: 110 [-]: LOADB R9 1   
+L 9: 111 [-]: GETUPVAL R11 3
+     112 [-]: GETTABLEKS R10 R11 K24 ["enemySpecGrineer"]
+     113 [-]: GETUPVAL R12 3
+     114 [-]: GETTABLEKS R11 R12 K25 ["enemySpecCorpus"]
+     115 [-]: CALL R8 3 1  
+     116 [-]: SETTABLEKS R8 R7 K26 ["enemySpec"]
+     117 [-]: GETUPVAL R9 3
+     118 [-]: GETTABLEKS R8 R9 K27 ["vipAgent"]
+     119 [-]: SETTABLEKS R8 R7 K27 ["vipAgent"]
+     120 [-]: GETUPVAL R9 3
+     121 [-]: GETTABLEKS R8 R9 K28 ["uniqueName"]
+     122 [-]: SETTABLEKS R8 R7 K28 ["uniqueName"]
+     123 [-]: JUMP L19
+    
+L10: 124 [-]: LOADN R8 2   
+     125 [-]: JUMPIFEQ R4 R8 L11
+     126 [-]: LOADN R8 2   
+     127 [-]: JUMPIFEQ R5 R8 L11
+     128 [-]: GETUPVAL R8 4
+     129 [-]: GETTABLEKS R10 R1 K16 ["mission"]
+     130 [-]: GETTABLEKS R9 R10 K23 ["levelOverride"]
+     131 [-]: CALL R8 1 1  
+     132 [-]: JUMPIFNOT R8 L11
+     133 [-]: GETUPVAL R10 5
+     134 [-]: GETTABLE R9 R10 R4
+     135 [-]: GETIMPORT R10 30 [nil]
+     136 [-]: LOADN R11 1  
+     137 [-]: LENGTH R12 R9
+     138 [-]: CALL R10 2 1 
+     139 [-]: GETTABLE R8 R9 R10
+     140 [-]: GETTABLEKS R9 R1 K16 ["mission"]
+     141 [-]: NAMECALL R9 R9 K6 [0x8F89D633]
+     142 [-]: CALL R9 1 1  
+     143 [-]: MOVE R7 R9   
+     144 [-]: GETTABLEKS R9 R8 K22 ["missionType"]
+     145 [-]: SETTABLEKS R9 R7 K22 ["missionType"]
+     146 [-]: GETTABLEKS R9 R8 K23 ["levelOverride"]
+     147 [-]: SETTABLEKS R9 R7 K23 ["levelOverride"]
+     148 [-]: GETTABLEKS R9 R8 K31 ["extraEnemySpec"]
+     149 [-]: SETTABLEKS R9 R7 K31 ["extraEnemySpec"]
+     150 [-]: GETTABLEKS R9 R8 K27 ["vipAgent"]
+     151 [-]: SETTABLEKS R9 R7 K27 ["vipAgent"]
+     152 [-]: JUMP L13
+    
+L11: 153 [-]: GETUPVAL R9 0
+     154 [-]: GETTABLEKS R8 R9 K13 [0x06D055F9]
+     155 [-]: MOVE R9 R2   
+     156 [-]: GETUPVAL R10 6
+     157 [-]: GETUPVAL R11 7
+     158 [-]: CALL R8 3 1  
+     159 [-]: GETUPVAL R10 8
+     160 [-]: GETTABLEKS R9 R10 K32 [0xFCBCA8F8]
+     161 [-]: GETTABLEKS R11 R1 K16 ["mission"]
+     162 [-]: GETTABLEKS R10 R11 K33 ["location"]
+     163 [-]: MOVE R11 R8  
+     164 [-]: NEWTABLE R12 0 1
+     165 [-]: LOADN R13 1  
+     166 [-]: SETLIST R12 R13 1 [1]
+     167 [-]: CALL R9 3 1  
+     168 [-]: MOVE R7 R9   
+     169 [-]: FASTCALL1 62 R7 L12
+     170 [-]: MOVE R10 R7  
+     171 [-]: GETIMPORT R9 2 [nil]
+     172 [-]: CALL R9 1 1  
+L12: 173 [-]: JUMPIFNOT R9 L13
+     174 [-]: GETIMPORT R9 35 [nil]
+     175 [-]: LOADK R11 K36 ["Failed to generate invasion mission for "]
+     176 [-]: GETIMPORT R17 38 [nil]
+     177 [-]: GETTABLEKS R18 R1 K39 ["name"]
+     178 [-]: CALL R17 1 1 
+     179 [-]: MOVE R12 R17 
+     180 [-]: LOADK R13 K40 [" "]
+     181 [-]: MOVE R14 R4  
+     182 [-]: LOADK R15 K41 [" vs "]
+     183 [-]: MOVE R16 R5  
+     184 [-]: CONCAT R10 R11 R16
+     185 [-]: CALL R9 1 0  
+     186 [-]: GETTABLEKS R9 R1 K16 ["mission"]
+     187 [-]: NAMECALL R9 R9 K6 [0x8F89D633]
+     188 [-]: CALL R9 1 1  
+     189 [-]: MOVE R7 R9   
+L13: 190 [-]: GETTABLEKS R8 R7 K22 ["missionType"]
+     191 [-]: LOADN R9 1   
+     192 [-]: JUMPIFNOTEQ R8 R9 L18
+     193 [-]: GETUPVAL R9 9
+     194 [-]: GETTABLEKS R11 R1 K16 ["mission"]
+     195 [-]: GETTABLEKS R10 R11 K23 ["levelOverride"]
+     196 [-]: CALL R9 1 1  
+     197 [-]: GETUPVAL R10 10
+     198 [-]: MOVE R11 R5  
+     199 [-]: GETUPVAL R12 11
+     200 [-]: MOVE R13 R9  
+     201 [-]: CALL R10 3 1 
+     202 [-]: GETUPVAL R11 10
+     203 [-]: MOVE R12 R4  
+     204 [-]: GETUPVAL R13 11
+     205 [-]: MOVE R14 R9  
+     206 [-]: CALL R11 3 1 
+     207 [-]: FASTCALL1 62 R10 L14
+     208 [-]: MOVE R13 R10 
+     209 [-]: GETIMPORT R12 2 [nil]
+     210 [-]: CALL R12 1 1 
+L14: 211 [-]: JUMPIFNOT R12 L15
+     212 [-]: GETUPVAL R12 10
+     213 [-]: MOVE R13 R5  
+     214 [-]: GETUPVAL R14 11
+     215 [-]: LOADNIL R15  
+     216 [-]: CALL R12 3 1 
+     217 [-]: MOVE R10 R12 
+L15: 218 [-]: FASTCALL1 62 R11 L16
+     219 [-]: MOVE R13 R11 
+     220 [-]: GETIMPORT R12 2 [nil]
+     221 [-]: CALL R12 1 1 
+L16: 222 [-]: JUMPIFNOT R12 L17
+     223 [-]: GETUPVAL R12 10
+     224 [-]: MOVE R13 R4  
+     225 [-]: GETUPVAL R14 11
+     226 [-]: LOADNIL R15  
+     227 [-]: CALL R12 3 1 
+     228 [-]: MOVE R11 R12 
+L17: 229 [-]: SETTABLEKS R10 R7 K26 ["enemySpec"]
+     230 [-]: SETTABLEKS R11 R7 K31 ["extraEnemySpec"]
+     231 [-]: JUMP L19
+    
+L18: 232 [-]: GETUPVAL R9 12
+     233 [-]: MOVE R10 R4  
+     234 [-]: MOVE R11 R5  
+     235 [-]: CALL R9 2 1  
+     236 [-]: SETTABLEKS R9 R7 K26 ["enemySpec"]
+L19: 237 [-]: GETTABLEKS R9 R0 K7 ["mId"]
+     238 [-]: GETTABLEKS R8 R9 K7 ["mId"]
+     239 [-]: SETTABLEKS R8 R7 K8 ["invasionId"]
+     240 [-]: GETTABLEKS R8 R3 K18 ["seed"]
+     241 [-]: SETTABLEKS R8 R7 K18 ["seed"]
+     242 [-]: SETTABLEKS R5 R7 K17 ["faction"]
+     243 [-]: SETTABLEKS R4 R7 K10 ["invasionAllyFaction"]
+     244 [-]: LOADN R8 1   
+     245 [-]: SETTABLEKS R8 R7 K42 ["difficulty"]
+     246 [-]: GETTABLEKS R10 R1 K16 ["mission"]
+     247 [-]: GETTABLEKS R9 R10 K44 ["minEnemyLevel"]
+     248 [-]: ADDK R8 R9 K43 [10]
+     249 [-]: SETTABLEKS R8 R7 K44 ["minEnemyLevel"]
+     250 [-]: GETTABLEKS R10 R1 K16 ["mission"]
+     251 [-]: GETTABLEKS R9 R10 K45 ["maxEnemyLevel"]
+     252 [-]: ADDK R8 R9 K43 [10]
+     253 [-]: SETTABLEKS R8 R7 K45 ["maxEnemyLevel"]
+     254 [-]: GETTABLEKS R8 R3 K46 ["missionReward"]
+     255 [-]: SETTABLEKS R8 R7 K46 ["missionReward"]
+     256 [-]: GETTABLEKS R8 R7 K22 ["missionType"]
+     257 [-]: LOADN R9 8   
+     258 [-]: JUMPIFNOTEQ R8 R9 L20
+     259 [-]: LOADN R8 5   
+     260 [-]: SETTABLEKS R8 R7 K47 ["maxWaveNum"]
+     261 [-]: JUMP L26
+    
+L20: 262 [-]: GETTABLEKS R8 R7 K22 ["missionType"]
+     263 [-]: LOADN R9 13  
+     264 [-]: JUMPIFNOTEQ R8 R9 L21
+     265 [-]: LOADN R8 1   
+     266 [-]: SETTABLEKS R8 R7 K47 ["maxWaveNum"]
+     267 [-]: JUMP L26
+    
+L21: 268 [-]: GETTABLEKS R8 R7 K22 ["missionType"]
+     269 [-]: LOADN R9 2   
+     270 [-]: JUMPIFNOTEQ R8 R9 L22
+     271 [-]: LOADN R8 5   
+     272 [-]: SETTABLEKS R8 R7 K47 ["maxWaveNum"]
+     273 [-]: JUMP L26
+    
+L22: 274 [-]: GETTABLEKS R8 R7 K22 ["missionType"]
+     275 [-]: LOADN R9 17  
+     276 [-]: JUMPIFNOTEQ R8 R9 L23
+     277 [-]: LOADN R8 5   
+     278 [-]: SETTABLEKS R8 R7 K47 ["maxWaveNum"]
+     279 [-]: JUMP L26
+    
+L23: 280 [-]: GETTABLEKS R8 R7 K22 ["missionType"]
+     281 [-]: LOADN R9 7   
+     282 [-]: JUMPIFNOTEQ R8 R9 L24
+     283 [-]: LOADN R8 2   
+     284 [-]: SETTABLEKS R8 R7 K47 ["maxWaveNum"]
+     285 [-]: JUMP L26
+    
+L24: 286 [-]: GETTABLEKS R8 R7 K22 ["missionType"]
+     287 [-]: LOADN R9 4   
+     288 [-]: JUMPIFNOTEQ R8 R9 L25
+     289 [-]: LOADN R8 2   
+     290 [-]: SETTABLEKS R8 R7 K47 ["maxWaveNum"]
+     291 [-]: JUMP L26
+    
+L25: 292 [-]: GETTABLEKS R8 R7 K22 ["missionType"]
+     293 [-]: LOADN R9 33  
+     294 [-]: JUMPIFNOTEQ R8 R9 L26
+     295 [-]: LOADN R8 4   
+     296 [-]: SETTABLEKS R8 R7 K47 ["maxWaveNum"]
+L26: 297 [-]: NAMECALL R8 R7 K48 [0xA76123AC]
+     298 [-]: CALL R8 1 0  
+     299 [-]: GETIMPORT R8 51 [nil]
+     300 [-]: JUMPIFNOT R8 L27
+     301 [-]: GETIMPORT R8 35 [nil]
+     302 [-]: GETUPVAL R20 0
+     303 [-]: GETTABLEKS R19 R20 K13 [0x06D055F9]
+     304 [-]: MOVE R20 R2  
+     305 [-]: LOADK R21 K52 ["ATTACKER : "]
+     306 [-]: LOADK R22 K53 ["DEFENDER: "]
+     307 [-]: CALL R19 3 1 
+     308 [-]: MOVE R10 R19 
+     309 [-]: LOADK R11 K54 ["node="]
+     310 [-]: GETIMPORT R19 38 [nil]
+     311 [-]: GETTABLEKS R20 R1 K39 ["name"]
+     312 [-]: CALL R19 1 1 
+     313 [-]: MOVE R12 R19 
+     314 [-]: LOADK R13 K55 [" faction="]
+     315 [-]: GETTABLEKS R14 R7 K17 ["faction"]
+     316 [-]: LOADK R15 K56 [" missionType="]
+     317 [-]: GETTABLEKS R16 R7 K22 ["missionType"]
+     318 [-]: LOADK R17 K57 [" levelOverride="]
+     319 [-]: GETIMPORT R18 38 [nil]
+     320 [-]: GETTABLEKS R19 R7 K23 ["levelOverride"]
+     321 [-]: NAMECALL R19 R19 K58 [0xED4E0128]
+     322 [-]: CALL R19 1 -1
+     323 [-]: CALL R18 -1 1
+     324 [-]: CONCAT R9 R10 R18
+     325 [-]: CALL R8 1 0  
+L27: 326 [-]: RETURN R7 1  
 
 
-; Function #8:
-;
 ; Name:            
 ; Defined at line: 267
 ; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       0
-; Max Stack Size:  23
+; Max Stack Size:  21
 
-  1 [-]: GETGLOBAL R0 K0        ; R0 := _T
-  2 [-]: GETTABLE  R0 R0 K1     ; R0 := R0["InvasionTest"]
-  3 [-]: EQ        0 R0 K2      ; if R0 ~= true then PC := 6
-  4 [-]: JMP       6            ; PC := 6
-  5 [-]: RETURN    R0 1         ; return 
-  6 [-]: GETGLOBAL R0 K0        ; R0 := _T
-  7 [-]: SETTABLE  R0 K1 K2     ; R0["InvasionTest"] := true
-  8 [-]: NEWTABLE  R0 0 0       ; R0 := {}
-  9 [-]: SETUPVAL  R0 U0        ; U82 := R0
- 10 [-]: NEWTABLE  R0 4 0       ; R0 := {}
- 11 [-]: NEWTABLE  R1 0 2       ; R1 := {}
- 12 [-]: SETTABLE  R1 K3 K5     ; R1["factionA"] := 0.000000
- 13 [-]: SETTABLE  R1 K6 K7     ; R1["factionB"] := 1.000000
- 14 [-]: NEWTABLE  R2 0 2       ; R2 := {}
- 15 [-]: SETTABLE  R2 K3 K7     ; R2["factionA"] := 1.000000
- 16 [-]: SETTABLE  R2 K6 K5     ; R2["factionB"] := 0.000000
- 17 [-]: NEWTABLE  R3 0 2       ; R3 := {}
- 18 [-]: SETTABLE  R3 K3 K8     ; R3["factionA"] := 2.000000
- 19 [-]: SETTABLE  R3 K6 K5     ; R3["factionB"] := 0.000000
- 20 [-]: NEWTABLE  R4 0 2       ; R4 := {}
- 21 [-]: SETTABLE  R4 K3 K8     ; R4["factionA"] := 2.000000
- 22 [-]: SETTABLE  R4 K6 K7     ; R4["factionB"] := 1.000000
- 23 [-]: SETLIST   R0 4 1       ; R0[(1-1)*FPF+i] := R(0+i), 1 <= i <= 4
- 24 [-]: GETUPVAL  R1 U1        ; R1 := U1
- 25 [-]: GETTABLE  R1 R1 K9     ; R1 := R1[0x5e35d4d6]
- 26 [-]: CALL      R1 1 2       ; R1 := R1()
- 27 [-]: SELF      R1 R1 K10    ; R2 := R1; R1 := R1[0xd13b47be]
- 28 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 29 [-]: CONST     R2 1         ; R2 := 1.000000
- 30 [-]: CONST     R3 100       ; R3 := 100.000000
- 31 [-]: CONST     R4 1         ; R4 := 1.000000
- 32 [-]: FORPREP   R2 137       ; R2 -= R4; PC := 137
- 33 [-]: CONST     R6 0         ; R6 := 0.000000
- 34 [-]: GETGLOBAL R7 K11       ; R7 := 0xcfc01047
- 35 [-]: MOVE      R8 R0        ; R8 := R0
- 36 [-]: CALL      R7 2 4       ; R7,R8,R9 := R7(R8)
- 37 [-]: JMP       128          ; PC := 128
- 38 [-]: NEWTABLE  R12 0 0      ; R12 := {}
- 39 [-]: NEWTABLE  R13 0 0      ; R13 := {}
- 40 [-]: SETTABLE  R12 K12 R13  ; R12["mId"] := R13
- 41 [-]: GETTABLE  R13 R12 K12  ; R13 := R12["mId"]
- 42 [-]: LOADK     R14 K13      ; R14 := "test"
- 43 [-]: MUL       R15 R10 K14  ; R15 := R10 * 1000.000000
- 44 [-]: ADD       R15 R5 R15   ; R15 := R5 + R15
- 45 [-]: CONCAT    R14 R14 R15  ; R14 := R14 .. R15
- 46 [-]: SETTABLE  R13 K12 R14  ; R13["mId"] := R14
- 47 [-]: GETTABLE  R13 R11 K3   ; R13 := R11["factionA"]
- 48 [-]: SETTABLE  R12 K15 R13  ; R12["mFaction"] := R13
- 49 [-]: GETUPVAL  R13 U0       ; R13 := U0
- 50 [-]: GETTABLE  R14 R12 K12  ; R14 := R12["mId"]
- 51 [-]: GETTABLE  R14 R14 K12  ; R14 := R14["mId"]
- 52 [-]: NEWTABLE  R15 0 0      ; R15 := {}
- 53 [-]: SETTABLE  R13 R14 R15  ; R13[R14] := R15
- 54 [-]: GETUPVAL  R13 U0       ; R13 := U0
- 55 [-]: GETTABLE  R14 R12 K12  ; R14 := R12["mId"]
- 56 [-]: GETTABLE  R14 R14 K12  ; R14 := R14["mId"]
- 57 [-]: GETTABLE  R13 R13 R14  ; R13 := R13[R14]
- 58 [-]: MUL       R14 R10 K14  ; R14 := R10 * 1000.000000
- 59 [-]: ADD       R14 R5 R14   ; R14 := R5 + R14
- 60 [-]: SETTABLE  R13 K16 R14  ; R13["cycleNum"] := R14
- 61 [-]: GETGLOBAL R13 K11      ; R13 := 0xcfc01047
- 62 [-]: MOVE      R14 R1       ; R14 := R1
- 63 [-]: CALL      R13 2 4      ; R13,R14,R15 := R13(R14)
- 64 [-]: JMP       126          ; PC := 126
- 65 [-]: GETGLOBAL R18 K17      ; R18 := 0xce225efa
- 66 [-]: CONST     R19 0        ; R19 := 0.000000
- 67 [-]: CALL      R18 2 1      ; R18(R19)
- 68 [-]: GETTABLE  R18 R17 K18  ; R18 := R17["name"]
- 69 [-]: SELF      R18 R18 K19  ; R19 := R18; R18 := R18[0x56c01834]
- 70 [-]: CALL      R18 2 2      ; R18 := R18(R19)
- 71 [-]: TEST      R18 0        ; if not R18 then PC := 126
- 72 [-]: JMP       126          ; PC := 126
- 73 [-]: GETGLOBAL R18 K20      ; R18 := 0x7b998233
- 74 [-]: GETTABLE  R19 R17 K21  ; R19 := R17["mission"]
- 75 [-]: GETTABLE  R19 R19 K22  ; R19 := R19["levelOverride"]
- 76 [-]: CALL      R18 2 2      ; R18 := R18(R19)
- 77 [-]: TEST      R18 1        ; if R18 then PC := 126
- 78 [-]: JMP       126          ; PC := 126
- 79 [-]: GETGLOBAL R18 K20      ; R18 := 0x7b998233
- 80 [-]: GETTABLE  R19 R17 K23  ; R19 := R17["tileset"]
- 81 [-]: CALL      R18 2 2      ; R18 := R18(R19)
- 82 [-]: TEST      R18 1        ; if R18 then PC := 126
- 83 [-]: JMP       126          ; PC := 126
- 84 [-]: GETTABLE  R18 R17 K21  ; R18 := R17["mission"]
- 85 [-]: GETTABLE  R18 R18 K24  ; R18 := R18["faction"]
- 86 [-]: GETTABLE  R19 R12 K15  ; R19 := R12["mFaction"]
- 87 [-]: EQ        1 R18 R19    ; if R18 == R19 then PC := 126
- 88 [-]: JMP       126          ; PC := 126
- 89 [-]: GETTABLE  R18 R17 K21  ; R18 := R17["mission"]
- 90 [-]: GETTABLE  R18 R18 K24  ; R18 := R18["faction"]
- 91 [-]: EQ        1 R18 K5     ; if R18 == 0.000000 then PC := 97
- 92 [-]: JMP       97           ; PC := 97
- 93 [-]: GETTABLE  R18 R17 K21  ; R18 := R17["mission"]
- 94 [-]: GETTABLE  R18 R18 K24  ; R18 := R18["faction"]
- 95 [-]: EQ        0 R18 K7     ; if R18 ~= 1.000000 then PC := 126
- 96 [-]: JMP       126          ; PC := 126
- 97 [-]: NEWTABLE  R18 0 0      ; R18 := {}
- 98 [-]: SETTABLE  R12 K25 R18  ; R12["mAttackerMissionInfo"] := R18
- 99 [-]: GETGLOBAL R18 K4       ; R18 := 0x6c97a788
-100 [-]: GETTABLE  R18 R18 K26  ; R18 := R18[0x6e0e9f85]
-101 [-]: CALL      R18 1 2      ; R18 := R18()
-102 [-]: SETTABLE  R12 K25 R18  ; R12["mAttackerMissionInfo"] := R18
-103 [-]: GETTABLE  R18 R12 K25  ; R18 := R12["mAttackerMissionInfo"]
-104 [-]: GETTABLE  R19 R11 K6   ; R19 := R11["factionB"]
-105 [-]: SETTABLE  R18 K24 R19  ; R18["faction"] := R19
-106 [-]: NEWTABLE  R18 0 0      ; R18 := {}
-107 [-]: SETTABLE  R12 K27 R18  ; R12["mDefenderMissionInfo"] := R18
-108 [-]: GETGLOBAL R18 K4       ; R18 := 0x6c97a788
-109 [-]: GETTABLE  R18 R18 K26  ; R18 := R18[0x6e0e9f85]
-110 [-]: CALL      R18 1 2      ; R18 := R18()
-111 [-]: SETTABLE  R12 K27 R18  ; R12["mDefenderMissionInfo"] := R18
-112 [-]: GETTABLE  R18 R12 K27  ; R18 := R12["mDefenderMissionInfo"]
-113 [-]: GETTABLE  R19 R11 K3   ; R19 := R11["factionA"]
-114 [-]: SETTABLE  R18 K24 R19  ; R18["faction"] := R19
-115 [-]: GETUPVAL  R18 U2       ; R18 := U2
-116 [-]: MOVE      R19 R12      ; R19 := R12
-117 [-]: MOVE      R20 R17      ; R20 := R17
-118 [-]: LOADKB    R21 1 0      ; R21 := true
-119 [-]: CALL      R18 4 1      ; R18(R19,R20,R21)
-120 [-]: GETUPVAL  R18 U2       ; R18 := U2
-121 [-]: MOVE      R19 R12      ; R19 := R12
-122 [-]: MOVE      R20 R17      ; R20 := R17
-123 [-]: LOADKB    R21 0 0      ; R21 := false
-124 [-]: CALL      R18 4 1      ; R18(R19,R20,R21)
-125 [-]: ADD       R6 R6 K7     ; R6 := R6 + 1.000000
-126 [-]: TFORLOOP  R13 2        ; R16,R17 :=  R13(R14,R15); if R16 ~= nil then begin PC = 65; R15 := R16 end
-127 [-]: JMP       65           ; PC := 65
-128 [-]: TFORLOOP  R7 2         ; R10,R11 :=  R7(R8,R9); if R10 ~= nil then begin PC = 38; R9 := R10 end
-129 [-]: JMP       38           ; PC := 38
-130 [-]: GETGLOBAL R18 K28      ; R18 := 0x3d106989
-131 [-]: LOADK     R19 K29      ; R19 := "Generated cycle "
-132 [-]: MOVE      R20 R5       ; R20 := R5
-133 [-]: LOADK     R21 K30      ; R21 := " of invasion missions on all eligible starchart nodes. Num generated="
-134 [-]: MOVE      R22 R6       ; R22 := R6
-135 [-]: CONCAT    R19 R19 R22  ; R19 := R19 .. R20 .. R21 .. R22
-136 [-]: CALL      R18 2 1      ; R18(R19)
-137 [-]: FORLOOP   R2 33        ; R2 += R4; if R2 <= R3 then begin PC := 33; R5 := R2 end
-138 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R0 2 [nil]
+       1 [-]: JUMPXEQKB R0 1 L0 NOT
+       2 [-]: RETURN R0 0  
+L 0:   3 [-]: GETIMPORT R0 3 [nil]
+       4 [-]: LOADB R1 1   
+       5 [-]: SETTABLEKS R1 R0 K1 ["InvasionTest"]
+       6 [-]: NEWTABLE R0 0 0
+       7 [-]: SETUPVAL R0 0
+       8 [-]: NEWTABLE R0 0 4
+       9 [-]: DUPTABLE R1 6
+      10 [-]: LOADN R2 0   
+      11 [-]: SETTABLEKS R2 R1 K4 ["factionA"]
+      12 [-]: LOADN R2 1   
+      13 [-]: SETTABLEKS R2 R1 K5 ["factionB"]
+      14 [-]: DUPTABLE R2 6
+      15 [-]: LOADN R3 1   
+      16 [-]: SETTABLEKS R3 R2 K4 ["factionA"]
+      17 [-]: LOADN R3 0   
+      18 [-]: SETTABLEKS R3 R2 K5 ["factionB"]
+      19 [-]: DUPTABLE R3 6
+      20 [-]: LOADN R4 2   
+      21 [-]: SETTABLEKS R4 R3 K4 ["factionA"]
+      22 [-]: LOADN R4 0   
+      23 [-]: SETTABLEKS R4 R3 K5 ["factionB"]
+      24 [-]: DUPTABLE R4 6
+      25 [-]: LOADN R5 2   
+      26 [-]: SETTABLEKS R5 R4 K4 ["factionA"]
+      27 [-]: LOADN R5 1   
+      28 [-]: SETTABLEKS R5 R4 K5 ["factionB"]
+      29 [-]: SETLIST R0 R1 4 [1]
+      30 [-]: GETUPVAL R2 1
+      31 [-]: GETTABLEKS R1 R2 K7 [0x5E35D4D6]
+      32 [-]: CALL R1 0 1  
+      33 [-]: NAMECALL R1 R1 K8 [0xD13B47BE]
+      34 [-]: CALL R1 1 1  
+      35 [-]: LOADN R4 1   
+      36 [-]: LOADN R2 100 
+      37 [-]: LOADN R3 1   
+      38 [-]: FORNPREP R2 L9
+L 1:  39 [-]: LOADN R5 0   
+      40 [-]: GETIMPORT R6 10 [nil]
+      41 [-]: MOVE R7 R0   
+      42 [-]: CALL R6 1 3  
+      43 [-]: FORGPREP_NEXT R6 L8
+L 2:  44 [-]: NEWTABLE R11 4 0
+      45 [-]: NEWTABLE R12 0 0
+      46 [-]: SETTABLEKS R12 R11 K11 ["mId"]
+      47 [-]: GETTABLEKS R12 R11 K11 ["mId"]
+      48 [-]: LOADK R14 K12 ["test"]
+      49 [-]: MULK R16 R9 K13 [1000]
+      50 [-]: ADD R15 R4 R16
+      51 [-]: CONCAT R13 R14 R15
+      52 [-]: SETTABLEKS R13 R12 K11 ["mId"]
+      53 [-]: GETTABLEKS R12 R10 K4 ["factionA"]
+      54 [-]: SETTABLEKS R12 R11 K14 ["mFaction"]
+      55 [-]: GETUPVAL R12 0
+      56 [-]: GETTABLEKS R14 R11 K11 ["mId"]
+      57 [-]: GETTABLEKS R13 R14 K11 ["mId"]
+      58 [-]: NEWTABLE R14 0 0
+      59 [-]: SETTABLE R14 R12 R13
+      60 [-]: GETUPVAL R13 0
+      61 [-]: GETTABLEKS R15 R11 K11 ["mId"]
+      62 [-]: GETTABLEKS R14 R15 K11 ["mId"]
+      63 [-]: GETTABLE R12 R13 R14
+      64 [-]: MULK R14 R9 K13 [1000]
+      65 [-]: ADD R13 R4 R14
+      66 [-]: SETTABLEKS R13 R12 K15 ["cycleNum"]
+      67 [-]: GETIMPORT R12 10 [nil]
+      68 [-]: MOVE R13 R1  
+      69 [-]: CALL R12 1 3 
+      70 [-]: FORGPREP_NEXT R12 L7
+L 3:  71 [-]: GETIMPORT R17 17 [nil]
+      72 [-]: LOADN R18 0  
+      73 [-]: CALL R17 1 0 
+      74 [-]: GETTABLEKS R17 R16 K18 ["name"]
+      75 [-]: NAMECALL R17 R17 K19 [0x56C01834]
+      76 [-]: CALL R17 1 1 
+      77 [-]: JUMPIFNOT R17 L7
+      78 [-]: GETTABLEKS R19 R16 K20 ["mission"]
+      79 [-]: GETTABLEKS R18 R19 K21 ["levelOverride"]
+      80 [-]: FASTCALL1 62 R18 L4
+      81 [-]: GETIMPORT R17 23 [nil]
+      82 [-]: CALL R17 1 1 
+L 4:  83 [-]: JUMPIF R17 L7
+      84 [-]: GETTABLEKS R18 R16 K24 ["tileset"]
+      85 [-]: FASTCALL1 62 R18 L5
+      86 [-]: GETIMPORT R17 23 [nil]
+      87 [-]: CALL R17 1 1 
+L 5:  88 [-]: JUMPIF R17 L7
+      89 [-]: GETTABLEKS R18 R16 K20 ["mission"]
+      90 [-]: GETTABLEKS R17 R18 K25 ["faction"]
+      91 [-]: GETTABLEKS R18 R11 K14 ["mFaction"]
+      92 [-]: JUMPIFEQ R17 R18 L7
+      93 [-]: GETTABLEKS R18 R16 K20 ["mission"]
+      94 [-]: GETTABLEKS R17 R18 K25 ["faction"]
+      95 [-]: LOADN R18 0  
+      96 [-]: JUMPIFEQ R17 R18 L6
+      97 [-]: GETTABLEKS R18 R16 K20 ["mission"]
+      98 [-]: GETTABLEKS R17 R18 K25 ["faction"]
+      99 [-]: LOADN R18 1  
+     100 [-]: JUMPIFNOTEQ R17 R18 L7
+L 6: 101 [-]: NEWTABLE R17 0 0
+     102 [-]: SETTABLEKS R17 R11 K26 ["mAttackerMissionInfo"]
+     103 [-]: GETIMPORT R17 29 [nil]
+     104 [-]: CALL R17 0 1 
+     105 [-]: SETTABLEKS R17 R11 K26 ["mAttackerMissionInfo"]
+     106 [-]: GETTABLEKS R17 R11 K26 ["mAttackerMissionInfo"]
+     107 [-]: GETTABLEKS R18 R10 K5 ["factionB"]
+     108 [-]: SETTABLEKS R18 R17 K25 ["faction"]
+     109 [-]: NEWTABLE R17 0 0
+     110 [-]: SETTABLEKS R17 R11 K30 ["mDefenderMissionInfo"]
+     111 [-]: GETIMPORT R17 29 [nil]
+     112 [-]: CALL R17 0 1 
+     113 [-]: SETTABLEKS R17 R11 K30 ["mDefenderMissionInfo"]
+     114 [-]: GETTABLEKS R17 R11 K30 ["mDefenderMissionInfo"]
+     115 [-]: GETTABLEKS R18 R10 K4 ["factionA"]
+     116 [-]: SETTABLEKS R18 R17 K25 ["faction"]
+     117 [-]: GETUPVAL R17 2
+     118 [-]: MOVE R18 R11 
+     119 [-]: MOVE R19 R16 
+     120 [-]: LOADB R20 1  
+     121 [-]: CALL R17 3 0 
+     122 [-]: GETUPVAL R17 2
+     123 [-]: MOVE R18 R11 
+     124 [-]: MOVE R19 R16 
+     125 [-]: LOADB R20 0  
+     126 [-]: CALL R17 3 0 
+     127 [-]: ADDK R5 R5 K31 [1]
+L 7: 128 [-]: FORGLOOP R12 L3 2
+L 8: 129 [-]: FORGLOOP R6 L2 2
+     130 [-]: GETIMPORT R6 33 [nil]
+     131 [-]: LOADK R8 K34 ["Generated cycle "]
+     132 [-]: MOVE R9 R4   
+     133 [-]: LOADK R10 K35 [" of invasion missions on all eligible starchart nodes. Num generated="]
+     134 [-]: MOVE R11 R5  
+     135 [-]: CONCAT R7 R8 R11
+     136 [-]: CALL R6 1 0  
+     137 [-]: FORNLOOP R2 L1
+L 9: 138 [-]: RETURN R0 0  
 
 
-; Function #9:
-;
 ; Name:            
 ; Defined at line: 318
-; #Upvalues:       7
+; #Upvalues:       3
 ; #Parameters:     2
 ; Is_vararg:       0
-; Max Stack Size:  13
+; Max Stack Size:  15
 
-  1 [-]: LOADKB    R2 0 0       ; R2 := false
-  2 [-]: TEST      R2 0         ; if not R2 then PC := 6
-  3 [-]: JMP       6            ; PC := 6
-  4 [-]: GETUPVAL  R2 U0        ; R2 := U0
-  5 [-]: CALL      R2 1 1       ; R2()
-  6 [-]: GETUPVAL  R2 U1        ; R2 := U1
-  7 [-]: GETTABLE  R2 R2 K0     ; R2 := R2[0x55f0bd6d]
-  8 [-]: CALL      R2 1 2       ; R2 := R2()
-  9 [-]: GETUPVAL  R3 U2        ; R3 := U2
- 10 [-]: MOD       R2 R2 R3     ; R2 := R2 % R3
- 11 [-]: GETGLOBAL R3 K1        ; R3 := 0x5bced4c4
- 12 [-]: GETTABLE  R3 R3 K2     ; R3 := R3[0x55f27c30]
- 13 [-]: GETUPVAL  R4 U3        ; R4 := U3
- 14 [-]: DIV       R4 R2 R4     ; R4 := R2 / R4
- 15 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 16 [-]: GETTABLE  R4 R1 K3     ; R4 := R1["mId"]
- 17 [-]: GETTABLE  R4 R4 K3     ; R4 := R4["mId"]
- 18 [-]: GETUPVAL  R5 U4        ; R5 := U4
- 19 [-]: GETTABLE  R5 R5 R4     ; R5 := R5[R4]
- 20 [-]: TEST      R5 1         ; if R5 then PC := 25
- 21 [-]: JMP       25           ; PC := 25
- 22 [-]: GETUPVAL  R5 U4        ; R5 := U4
- 23 [-]: NEWTABLE  R6 0 0       ; R6 := {}
- 24 [-]: SETTABLE  R5 R4 R6     ; R5[R4] := R6
- 25 [-]: GETUPVAL  R5 U4        ; R5 := U4
- 26 [-]: GETTABLE  R5 R5 R4     ; R5 := R5[R4]
- 27 [-]: GETTABLE  R5 R5 K4     ; R5 := R5["cycleNum"]
- 28 [-]: EQ        0 R5 R3      ; if R5 ~= R3 then PC := 35
- 29 [-]: JMP       35           ; PC := 35
- 30 [-]: GETUPVAL  R5 U4        ; R5 := U4
- 31 [-]: GETTABLE  R5 R5 R4     ; R5 := R5[R4]
- 32 [-]: GETTABLE  R5 R5 K5     ; R5 := R5["defenderMissionInfo"]
- 33 [-]: TEST      R5 1         ; if R5 then PC := 72
- 34 [-]: JMP       72           ; PC := 72
- 35 [-]: GETUPVAL  R5 U4        ; R5 := U4
- 36 [-]: GETTABLE  R5 R5 R4     ; R5 := R5[R4]
- 37 [-]: SETTABLE  R5 K4 R3     ; R5["cycleNum"] := R3
- 38 [-]: GETUPVAL  R5 U1        ; R5 := U1
- 39 [-]: GETTABLE  R5 R5 K6     ; R5 := R5[0x5e35d4d6]
- 40 [-]: CALL      R5 1 2       ; R5 := R5()
- 41 [-]: SELF      R5 R5 K7     ; R6 := R5; R5 := R5[0x3ad9ed31]
- 42 [-]: GETTABLE  R7 R1 K8     ; R7 := R1["mNode"]
- 43 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
- 44 [-]: GETUPVAL  R6 U5        ; R6 := U5
- 45 [-]: LOADK     R7 K9        ; R7 := "GENERATING INVASION MISSIONS FOR "
- 46 [-]: GETGLOBAL R8 K10       ; R8 := 0x64fb1586
- 47 [-]: GETTABLE  R9 R1 K8     ; R9 := R1["mNode"]
- 48 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 49 [-]: LOADK     R9 K11       ; R9 := " "
- 50 [-]: GETTABLE  R10 R1 K12   ; R10 := R1["mFaction"]
- 51 [-]: LOADK     R11 K13      ; R11 := " VS "
- 52 [-]: GETTABLE  R12 R5 K14   ; R12 := R5["mission"]
- 53 [-]: GETTABLE  R12 R12 K15  ; R12 := R12["faction"]
- 54 [-]: CONCAT    R7 R7 R12    ; R7 := R7 .. R8 .. R9 .. R10 .. R11 .. R12
- 55 [-]: CALL      R6 2 1       ; R6(R7)
- 56 [-]: GETUPVAL  R6 U4        ; R6 := U4
- 57 [-]: GETTABLE  R6 R6 R4     ; R6 := R6[R4]
- 58 [-]: GETUPVAL  R7 U6        ; R7 := U6
- 59 [-]: MOVE      R8 R1        ; R8 := R1
- 60 [-]: MOVE      R9 R5        ; R9 := R5
- 61 [-]: LOADKB    R10 1 0      ; R10 := true
- 62 [-]: CALL      R7 4 2       ; R7 := R7(R8,R9,R10)
- 63 [-]: SETTABLE  R6 K16 R7    ; R6["attackerMissionInfo"] := R7
- 64 [-]: GETUPVAL  R6 U4        ; R6 := U4
- 65 [-]: GETTABLE  R6 R6 R4     ; R6 := R6[R4]
- 66 [-]: GETUPVAL  R7 U6        ; R7 := U6
- 67 [-]: MOVE      R8 R1        ; R8 := R1
- 68 [-]: MOVE      R9 R5        ; R9 := R5
- 69 [-]: LOADKB    R10 0 0      ; R10 := false
- 70 [-]: CALL      R7 4 2       ; R7 := R7(R8,R9,R10)
- 71 [-]: SETTABLE  R6 K5 R7     ; R6["defenderMissionInfo"] := R7
- 72 [-]: GETUPVAL  R6 U4        ; R6 := U4
- 73 [-]: GETTABLE  R6 R6 R4     ; R6 := R6[R4]
- 74 [-]: GETTABLE  R6 R6 K16    ; R6 := R6["attackerMissionInfo"]
- 75 [-]: SETTABLE  R1 K17 R6    ; R1["mAttackerMissionInfo"] := R6
- 76 [-]: GETUPVAL  R6 U4        ; R6 := U4
- 77 [-]: GETTABLE  R6 R6 R4     ; R6 := R6[R4]
- 78 [-]: GETTABLE  R6 R6 K5     ; R6 := R6["defenderMissionInfo"]
- 79 [-]: SETTABLE  R1 K18 R6    ; R1["mDefenderMissionInfo"] := R6
- 80 [-]: RETURN    R1 2         ; return R1
- 81 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETUPVAL R4 0
+       1 [-]: GETTABLEKS R3 R4 K1 [0x55F0BD6D]
+       2 [-]: CALL R3 0 1  
+       3 [-]: MODK R2 R3 K0 [1440]
+       4 [-]: DIVK R4 R2 K2 [15]
+       5 [-]: FASTCALL1 12 R4 L0
+       6 [-]: GETIMPORT R3 5 [nil]
+       7 [-]: CALL R3 1 1  
+L 0:   8 [-]: GETTABLEKS R5 R1 K6 ["mId"]
+       9 [-]: GETTABLEKS R4 R5 K6 ["mId"]
+      10 [-]: GETUPVAL R6 1
+      11 [-]: GETTABLE R5 R6 R4
+      12 [-]: JUMPIF R5 L1 
+      13 [-]: GETUPVAL R5 1
+      14 [-]: NEWTABLE R6 0 0
+      15 [-]: SETTABLE R6 R5 R4
+L 1:  16 [-]: GETUPVAL R7 1
+      17 [-]: GETTABLE R6 R7 R4
+      18 [-]: GETTABLEKS R5 R6 K7 ["cycleNum"]
+      19 [-]: JUMPIFNOTEQ R5 R3 L2
+      20 [-]: GETUPVAL R7 1
+      21 [-]: GETTABLE R6 R7 R4
+      22 [-]: GETTABLEKS R5 R6 K8 ["defenderMissionInfo"]
+      23 [-]: JUMPIF R5 L3 
+L 2:  24 [-]: GETUPVAL R6 1
+      25 [-]: GETTABLE R5 R6 R4
+      26 [-]: SETTABLEKS R3 R5 K7 ["cycleNum"]
+      27 [-]: GETUPVAL R6 0
+      28 [-]: GETTABLEKS R5 R6 K9 [0x5E35D4D6]
+      29 [-]: CALL R5 0 1  
+      30 [-]: GETTABLEKS R7 R1 K10 ["mNode"]
+      31 [-]: NAMECALL R5 R5 K11 [0x3AD9ED31]
+      32 [-]: CALL R5 2 1  
+      33 [-]: LOADK R7 K12 ["GENERATING INVASION MISSIONS FOR "]
+      34 [-]: GETIMPORT R13 14 [nil]
+      35 [-]: GETTABLEKS R14 R1 K10 ["mNode"]
+      36 [-]: CALL R13 1 1 
+      37 [-]: MOVE R8 R13  
+      38 [-]: LOADK R9 K15 [" "]
+      39 [-]: GETTABLEKS R10 R1 K16 ["mFaction"]
+      40 [-]: LOADK R11 K17 [" VS "]
+      41 [-]: GETTABLEKS R13 R5 K18 ["mission"]
+      42 [-]: GETTABLEKS R12 R13 K19 ["faction"]
+      43 [-]: CONCAT R6 R7 R12
+      44 [-]: GETUPVAL R7 1
+      45 [-]: GETTABLE R6 R7 R4
+      46 [-]: GETUPVAL R7 2
+      47 [-]: MOVE R8 R1   
+      48 [-]: MOVE R9 R5   
+      49 [-]: LOADB R10 1  
+      50 [-]: CALL R7 3 1  
+      51 [-]: SETTABLEKS R7 R6 K20 ["attackerMissionInfo"]
+      52 [-]: GETUPVAL R7 1
+      53 [-]: GETTABLE R6 R7 R4
+      54 [-]: GETUPVAL R7 2
+      55 [-]: MOVE R8 R1   
+      56 [-]: MOVE R9 R5   
+      57 [-]: LOADB R10 0  
+      58 [-]: CALL R7 3 1  
+      59 [-]: SETTABLEKS R7 R6 K8 ["defenderMissionInfo"]
+L 3:  60 [-]: GETUPVAL R7 1
+      61 [-]: GETTABLE R6 R7 R4
+      62 [-]: GETTABLEKS R5 R6 K20 ["attackerMissionInfo"]
+      63 [-]: SETTABLEKS R5 R1 K21 ["mAttackerMissionInfo"]
+      64 [-]: GETUPVAL R7 1
+      65 [-]: GETTABLE R6 R7 R4
+      66 [-]: GETTABLEKS R5 R6 K8 ["defenderMissionInfo"]
+      67 [-]: SETTABLEKS R5 R1 K22 ["mDefenderMissionInfo"]
+      68 [-]: RETURN R1 1  
+
 
 

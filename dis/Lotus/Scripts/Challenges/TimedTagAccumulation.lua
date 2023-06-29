@@ -1,283 +1,293 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
+; Is_vararg:       1
 ; Max Stack Size:  5
 
-  1 [-]: CLOSURE   R0 0         ; R0 := closure(Function #1)
-  2 [-]: CLOSURE   R1 1         ; R1 := closure(Function #2)
-  3 [-]: CLOSURE   R2 2         ; R2 := closure(Function #3)
-  4 [-]: MOVE      R0 R1        ; R0 := R1
-  5 [-]: CLOSURE   R3 3         ; R3 := closure(Function #4)
-  6 [-]: MOVE      R0 R1        ; R0 := R1
-  7 [-]: CLOSURE   R4 4         ; R4 := closure(Function #5)
-  8 [-]: MOVE      R0 R0        ; R0 := R0
-  9 [-]: MOVE      R0 R2        ; R0 := R2
- 10 [-]: MOVE      R0 R3        ; R0 := R3
- 11 [-]: SETGLOBAL R4 K0        ; MatchTagEvent := R4
- 12 [-]: CLOSURE   R4 5         ; R4 := closure(Function #6)
- 13 [-]: MOVE      R0 R0        ; R0 := R0
- 14 [-]: MOVE      R0 R2        ; R0 := R2
- 15 [-]: MOVE      R0 R3        ; R0 := R3
- 16 [-]: SETGLOBAL R4 K1        ; MatchAttackEvent := R4
- 17 [-]: RETURN    R0 1         ; return 
+            1 [-]: DUPCLOSURE R0 K0 []
+       2 [-]: DUPCLOSURE R1 K1 []
+       3 [-]: DUPCLOSURE R2 K2 []
+       4 [-]: DUPCLOSURE R3 K3 []
+       5 [-]: DUPCLOSURE R4 K4 []
+       6 [-]: MOVE R0 R2   
+       7 [-]: MOVE R0 R3   
+       8 [-]: SETGLOBAL R4 K5 ["MatchTagEvent"]
+       9 [-]: DUPCLOSURE R4 K6 []
+      10 [-]: MOVE R0 R2   
+      11 [-]: MOVE R0 R3   
+      12 [-]: SETGLOBAL R4 K7 ["MatchAttackEvent"]
+      13 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 6
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
-; Max Stack Size:  8
+; Max Stack Size:  9
 
-  1 [-]: GETGLOBAL R2 K0        ; R2 := 0x64fb1586
-  2 [-]: SELF      R3 R0 K1     ; R4 := R0; R3 := R0[0x5ca33548]
-  3 [-]: CALL      R3 2 0       ; R3,... := R3(R4)
-  4 [-]: CALL      R2 0 2       ; R2 := R2(R3,...)
-  5 [-]: GETGLOBAL R3 K0        ; R3 := 0x64fb1586
-  6 [-]: GETGLOBAL R4 K2        ; R4 := 0x8b182547
-  7 [-]: CALL      R3 2 2       ; R3 := R3(R4)
-  8 [-]: MOVE      R4 R1        ; R4 := R1
-  9 [-]: GETGLOBAL R5 K0        ; R5 := 0x64fb1586
- 10 [-]: SELF      R6 R0 K1     ; R7 := R0; R6 := R0[0x5ca33548]
- 11 [-]: CALL      R6 2 0       ; R6,... := R6(R7)
- 12 [-]: CALL      R5 0 2       ; R5 := R5(R6,...)
- 13 [-]: CONCAT    R3 R3 R5     ; R3 := R3 .. R4 .. R5
- 14 [-]: RETURN    R3 2         ; return R3
- 15 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R2 1 [nil]
+       1 [-]: NAMECALL R3 R0 K2 [0x5CA33548]
+       2 [-]: CALL R3 1 -1 
+       3 [-]: CALL R2 -1 1 
+       4 [-]: GETIMPORT R7 1 [nil]
+       5 [-]: GETIMPORT R8 4 [nil]
+       6 [-]: CALL R7 1 1  
+       7 [-]: MOVE R4 R7   
+       8 [-]: MOVE R5 R1   
+       9 [-]: GETIMPORT R6 1 [nil]
+      10 [-]: NAMECALL R7 R0 K2 [0x5CA33548]
+      11 [-]: CALL R7 1 -1 
+      12 [-]: CALL R6 -1 1 
+      13 [-]: CONCAT R3 R4 R6
+      14 [-]: RETURN R3 1  
 
 
-; Function #2:
-;
 ; Name:            
 ; Defined at line: 11
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  7
+; Max Stack Size:  8
 
-  1 [-]: GETGLOBAL R1 K0        ; R1 := 0xcfc01047
-  2 [-]: GETGLOBAL R2 K1        ; R2 := _T
-  3 [-]: GETTABLE  R2 R2 R0     ; R2 := R2[R0]
-  4 [-]: CALL      R1 2 4       ; R1,R2,R3 := R1(R2)
-  5 [-]: JMP       9            ; PC := 9
-  6 [-]: GETGLOBAL R6 K1        ; R6 := _T
-  7 [-]: GETTABLE  R6 R6 R0     ; R6 := R6[R0]
-  8 [-]: SETTABLE  R6 R4 K2     ; R6[R4] := false
-  9 [-]: TFORLOOP  R1 2         ; R4,R5 :=  R1(R2,R3); if R4 ~= nil then begin PC = 6; R3 := R4 end
- 10 [-]: JMP       6            ; PC := 6
- 11 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R1 1 [nil]
+       1 [-]: GETIMPORT R4 3 [nil]
+       2 [-]: GETTABLE R2 R4 R0
+       3 [-]: CALL R1 1 3  
+       4 [-]: FORGPREP_NEXT R1 L1
+L 0:   5 [-]: GETIMPORT R7 3 [nil]
+       6 [-]: GETTABLE R6 R7 R0
+       7 [-]: LOADB R7 0   
+       8 [-]: SETTABLE R7 R6 R4
+L 1:   9 [-]: FORGLOOP R1 L0 2
+      10 [-]: RETURN R0 0  
 
 
-; Function #3:
-;
 ; Name:            
 ; Defined at line: 17
-; #Upvalues:       1
+; #Upvalues:       0
 ; #Parameters:     1
-; Is_vararg:       0
-; Max Stack Size:  11
-
-  1 [-]: GETGLOBAL R1 K0        ; R1 := 0x64fb1586
-  2 [-]: MOVE      R2 R0        ; R2 := R0
-  3 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  4 [-]: LOADK     R2 K1        ; R2 := "Time"
-  5 [-]: CONCAT    R1 R1 R2     ; R1 := R1 .. R2
-  6 [-]: GETGLOBAL R2 K2        ; R2 := _T
-  7 [-]: GETTABLE  R2 R2 R1     ; R2 := R2[R1]
-  8 [-]: EQ        0 R2 K3      ; if R2 ~= nil then PC := 35
-  9 [-]: JMP       35           ; PC := 35
- 10 [-]: NEWTABLE  R2 0 0       ; R2 := {}
- 11 [-]: CONST     R3 1         ; R3 := 1.000000
- 12 [-]: GETGLOBAL R4 K4        ; R4 := 0x6917998a
- 13 [-]: LEN       R4 R4        ; R4 := # R4
- 14 [-]: CONST     R5 1         ; R5 := 1.000000
- 15 [-]: FORPREP   R3 21        ; R3 -= R5; PC := 21
- 16 [-]: GETGLOBAL R7 K0        ; R7 := 0x64fb1586
- 17 [-]: GETGLOBAL R8 K4        ; R8 := 0x6917998a
- 18 [-]: GETTABLE  R8 R8 R6     ; R8 := R8[R6]
- 19 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 20 [-]: SETTABLE  R2 R7 K5     ; R2[R7] := false
- 21 [-]: FORLOOP   R3 16        ; R3 += R5; if R3 <= R4 then begin PC := 16; R6 := R3 end
- 22 [-]: GETGLOBAL R7 K2        ; R7 := _T
- 23 [-]: SETTABLE  R7 R0 R2     ; R7[R0] := R2
- 24 [-]: GETGLOBAL R7 K2        ; R7 := _T
- 25 [-]: GETGLOBAL R8 K6        ; R8 := 0x55156ff7
- 26 [-]: CALL      R8 1 2       ; R8 := R8()
- 27 [-]: SETTABLE  R7 R1 R8     ; R7[R1] := R8
- 28 [-]: GETGLOBAL R7 K7        ; R7 := 0xda172b96
- 29 [-]: TEST      R7 0         ; if not R7 then PC := 61
- 30 [-]: JMP       61           ; PC := 61
- 31 [-]: GETGLOBAL R7 K2        ; R7 := _T
- 32 [-]: GETTABLE  R7 R7 R0     ; R7 := R7[R0]
- 33 [-]: SETTABLE  R7 K8 K5     ; R7["TTAAttackEvent"] := false
- 34 [-]: JMP       61           ; PC := 61
- 35 [-]: GETGLOBAL R7 K9        ; R7 := 0xdaf34e92
- 36 [-]: LE        0 R7 K10     ; if R7 > 0.000000 then PC := 40
- 37 [-]: JMP       40           ; PC := 40
- 38 [-]: RETURN    R0 1         ; return 
- 39 [-]: JMP       61           ; PC := 61
- 40 [-]: GETGLOBAL R7 K6        ; R7 := 0x55156ff7
- 41 [-]: CALL      R7 1 2       ; R7 := R7()
- 42 [-]: GETGLOBAL R8 K2        ; R8 := _T
- 43 [-]: GETTABLE  R8 R8 R1     ; R8 := R8[R1]
- 44 [-]: SUB       R7 R7 R8     ; R7 := R7 - R8
- 45 [-]: GETGLOBAL R8 K9        ; R8 := 0xdaf34e92
- 46 [-]: LE        0 R8 R7      ; if R8 > R7 then PC := 61
- 47 [-]: JMP       61           ; PC := 61
- 48 [-]: GETGLOBAL R7 K11       ; R7 := 0x3d106989
- 49 [-]: LOADK     R8 K12       ; R8 := "TimedTagChallenge: "
- 50 [-]: MOVE      R9 R0        ; R9 := R0
- 51 [-]: LOADK     R10 K13      ; R10 := " - Progress reset"
- 52 [-]: CONCAT    R8 R8 R10    ; R8 := R8 .. R9 .. R10
- 53 [-]: CALL      R7 2 1       ; R7(R8)
- 54 [-]: GETGLOBAL R7 K2        ; R7 := _T
- 55 [-]: GETGLOBAL R8 K6        ; R8 := 0x55156ff7
- 56 [-]: CALL      R8 1 2       ; R8 := R8()
- 57 [-]: SETTABLE  R7 R1 R8     ; R7[R1] := R8
- 58 [-]: GETUPVAL  R7 U0        ; R7 := U0
- 59 [-]: MOVE      R8 R0        ; R8 := R0
- 60 [-]: CALL      R7 2 1       ; R7(R8)
- 61 [-]: RETURN    R0 1         ; return 
-
-
-; Function #4:
-;
-; Name:            
-; Defined at line: 39
-; #Upvalues:       1
-; #Parameters:     1
-; Is_vararg:       0
-; Max Stack Size:  12
-
-  1 [-]: GETGLOBAL R1 K0        ; R1 := 0xcfc01047
-  2 [-]: GETGLOBAL R2 K1        ; R2 := _T
-  3 [-]: GETTABLE  R2 R2 R0     ; R2 := R2[R0]
-  4 [-]: CALL      R1 2 4       ; R1,R2,R3 := R1(R2)
-  5 [-]: JMP       18           ; PC := 18
-  6 [-]: EQ        0 R5 K2      ; if R5 ~= false then PC := 18
-  7 [-]: JMP       18           ; PC := 18
-  8 [-]: GETGLOBAL R6 K3        ; R6 := 0x3d106989
-  9 [-]: LOADK     R7 K4        ; R7 := "TimedTagChallenge: "
- 10 [-]: MOVE      R8 R0        ; R8 := R0
- 11 [-]: LOADK     R9 K5        ; R9 := " - "
- 12 [-]: MOVE      R10 R4       ; R10 := R4
- 13 [-]: LOADK     R11 K6       ; R11 := " is incomplete, challenge not done yet"
- 14 [-]: CONCAT    R7 R7 R11    ; R7 := R7 .. R8 .. R9 .. R10 .. R11
- 15 [-]: CALL      R6 2 1       ; R6(R7)
- 16 [-]: LOADKB    R6 0 0       ; R6 := false
- 17 [-]: RETURN    R6 2         ; return R6
- 18 [-]: TFORLOOP  R1 2         ; R4,R5 :=  R1(R2,R3); if R4 ~= nil then begin PC = 6; R3 := R4 end
- 19 [-]: JMP       6            ; PC := 6
- 20 [-]: GETGLOBAL R6 K1        ; R6 := _T
- 21 [-]: MOVE      R7 R0        ; R7 := R0
- 22 [-]: LOADK     R8 K7        ; R8 := "Time"
- 23 [-]: CONCAT    R7 R7 R8     ; R7 := R7 .. R8
- 24 [-]: SETTABLE  R6 R7 K8     ; R6[R7] := 0.000000
- 25 [-]: GETUPVAL  R6 U0        ; R6 := U0
- 26 [-]: MOVE      R7 R0        ; R7 := R0
- 27 [-]: CALL      R6 2 1       ; R6(R7)
- 28 [-]: GETGLOBAL R6 K3        ; R6 := 0x3d106989
- 29 [-]: LOADK     R7 K4        ; R7 := "TimedTagChallenge: "
- 30 [-]: MOVE      R8 R0        ; R8 := R0
- 31 [-]: LOADK     R9 K9        ; R9 := " - Challenge success"
- 32 [-]: CONCAT    R7 R7 R9     ; R7 := R7 .. R8 .. R9
- 33 [-]: CALL      R6 2 1       ; R6(R7)
- 34 [-]: LOADKB    R6 1 0       ; R6 := true
- 35 [-]: RETURN    R6 2         ; return R6
- 36 [-]: RETURN    R0 1         ; return 
-
-
-; Function #5:
-;
-; Name:            
-; Defined at line: 55
-; #Upvalues:       3
-; #Parameters:     6
-; Is_vararg:       0
-; Max Stack Size:  13
-
-  1 [-]: GETUPVAL  R6 U0        ; R6 := U0
-  2 [-]: MOVE      R7 R0        ; R7 := R0
-  3 [-]: MOVE      R8 R5        ; R8 := R5
-  4 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
-  5 [-]: GETGLOBAL R7 K0        ; R7 := _T
-  6 [-]: GETTABLE  R7 R7 R6     ; R7 := R7[R6]
-  7 [-]: EQ        1 R7 K1      ; if R7 == nil then PC := 15
-  8 [-]: JMP       15           ; PC := 15
-  9 [-]: GETGLOBAL R7 K0        ; R7 := _T
- 10 [-]: GETTABLE  R7 R7 R6     ; R7 := R7[R6]
- 11 [-]: GETTABLE  R7 R7 R1     ; R7 := R7[R1]
- 12 [-]: EQ        0 R7 K1      ; if R7 ~= nil then PC := 15
- 13 [-]: JMP       15           ; PC := 15
- 14 [-]: RETURN    R0 1         ; return 
- 15 [-]: GETUPVAL  R7 U1        ; R7 := U1
- 16 [-]: MOVE      R8 R6        ; R8 := R6
- 17 [-]: CALL      R7 2 1       ; R7(R8)
- 18 [-]: GETGLOBAL R7 K0        ; R7 := _T
- 19 [-]: GETTABLE  R7 R7 R6     ; R7 := R7[R6]
- 20 [-]: GETTABLE  R7 R7 R1     ; R7 := R7[R1]
- 21 [-]: EQ        0 R7 K2      ; if R7 ~= false then PC := 38
- 22 [-]: JMP       38           ; PC := 38
- 23 [-]: GETGLOBAL R7 K0        ; R7 := _T
- 24 [-]: GETTABLE  R7 R7 R6     ; R7 := R7[R6]
- 25 [-]: SETTABLE  R7 R1 K3     ; R7[R1] := true
- 26 [-]: GETGLOBAL R7 K4        ; R7 := 0x3d106989
- 27 [-]: LOADK     R8 K5        ; R8 := "TimedTagChallenge: "
- 28 [-]: MOVE      R9 R6        ; R9 := R6
- 29 [-]: LOADK     R10 K6       ; R10 := " - "
- 30 [-]: MOVE      R11 R1       ; R11 := R1
- 31 [-]: LOADK     R12 K7       ; R12 := " triggered!"
- 32 [-]: CONCAT    R8 R8 R12    ; R8 := R8 .. R9 .. R10 .. R11 .. R12
- 33 [-]: CALL      R7 2 1       ; R7(R8)
- 34 [-]: GETUPVAL  R7 U2        ; R7 := U2
- 35 [-]: MOVE      R8 R6        ; R8 := R6
- 36 [-]: TAILCALL  R7 2 0       ; R7,... := R7(R8)
- 37 [-]: RETURN    R7 0         ; return R7,...
- 38 [-]: LOADKB    R7 0 0       ; R7 := false
- 39 [-]: RETURN    R7 2         ; return R7
- 40 [-]: RETURN    R0 1         ; return 
-
-
-; Function #6:
-;
-; Name:            
-; Defined at line: 70
-; #Upvalues:       3
-; #Parameters:     4
 ; Is_vararg:       0
 ; Max Stack Size:  9
 
-  1 [-]: GETGLOBAL R4 K0        ; R4 := 0xda172b96
-  2 [-]: TEST      R4 0         ; if not R4 then PC := 24
-  3 [-]: JMP       24           ; PC := 24
-  4 [-]: GETUPVAL  R4 U0        ; R4 := U0
-  5 [-]: MOVE      R5 R1        ; R5 := R1
-  6 [-]: MOVE      R6 R3        ; R6 := R3
-  7 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
-  8 [-]: GETUPVAL  R5 U1        ; R5 := U1
-  9 [-]: MOVE      R6 R4        ; R6 := R4
- 10 [-]: CALL      R5 2 1       ; R5(R6)
- 11 [-]: GETGLOBAL R5 K1        ; R5 := _T
- 12 [-]: GETTABLE  R5 R5 R4     ; R5 := R5[R4]
- 13 [-]: SETTABLE  R5 K2 K3     ; R5["TTAAttackEvent"] := true
- 14 [-]: GETGLOBAL R5 K4        ; R5 := 0x3d106989
- 15 [-]: LOADK     R6 K5        ; R6 := "TimedTagChallenge: "
- 16 [-]: MOVE      R7 R4        ; R7 := R4
- 17 [-]: LOADK     R8 K6        ; R8 := " - TTAAttackEvent triggered!"
- 18 [-]: CONCAT    R6 R6 R8     ; R6 := R6 .. R7 .. R8
- 19 [-]: CALL      R5 2 1       ; R5(R6)
- 20 [-]: GETUPVAL  R5 U2        ; R5 := U2
- 21 [-]: MOVE      R6 R4        ; R6 := R4
- 22 [-]: TAILCALL  R5 2 0       ; R5,... := R5(R6)
- 23 [-]: RETURN    R5 0         ; return R5,...
- 24 [-]: LOADKB    R5 0 0       ; R5 := false
- 25 [-]: RETURN    R5 2         ; return R5
- 26 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R4 1 [nil]
+       1 [-]: MOVE R5 R0   
+       2 [-]: CALL R4 1 1  
+       3 [-]: MOVE R2 R4   
+       4 [-]: LOADK R3 K2 ["Time"]
+       5 [-]: CONCAT R1 R2 R3
+       6 [-]: GETIMPORT R3 4 [nil]
+       7 [-]: GETTABLE R2 R3 R1
+       8 [-]: JUMPXEQKNIL R2 L2 NOT
+       9 [-]: NEWTABLE R2 0 0
+      10 [-]: LOADN R5 1   
+      11 [-]: GETIMPORT R6 6 [nil]
+      12 [-]: LENGTH R3 R6 
+      13 [-]: LOADN R4 1   
+      14 [-]: FORNPREP R3 L1
+L 0:  15 [-]: GETIMPORT R6 1 [nil]
+      16 [-]: GETIMPORT R8 6 [nil]
+      17 [-]: GETTABLE R7 R8 R5
+      18 [-]: CALL R6 1 1  
+      19 [-]: LOADB R7 0   
+      20 [-]: SETTABLE R7 R2 R6
+      21 [-]: FORNLOOP R3 L0
+L 1:  22 [-]: GETIMPORT R3 4 [nil]
+      23 [-]: SETTABLE R2 R3 R0
+      24 [-]: GETIMPORT R3 4 [nil]
+      25 [-]: GETIMPORT R4 8 [nil]
+      26 [-]: CALL R4 0 1  
+      27 [-]: SETTABLE R4 R3 R1
+      28 [-]: GETIMPORT R3 10 [nil]
+      29 [-]: JUMPIFNOT R3 L6
+      30 [-]: GETIMPORT R4 4 [nil]
+      31 [-]: GETTABLE R3 R4 R0
+      32 [-]: LOADB R4 0   
+      33 [-]: SETTABLEKS R4 R3 K11 ["TTAAttackEvent"]
+      34 [-]: RETURN R0 0  
+L 2:  35 [-]: GETIMPORT R2 13 [nil]
+      36 [-]: LOADN R3 0   
+      37 [-]: JUMPIFNOTLE R2 R3 L3
+      38 [-]: RETURN R0 0  
+L 3:  39 [-]: GETIMPORT R3 8 [nil]
+      40 [-]: CALL R3 0 1  
+      41 [-]: GETIMPORT R5 4 [nil]
+      42 [-]: GETTABLE R4 R5 R1
+      43 [-]: SUB R2 R3 R4 
+      44 [-]: GETIMPORT R3 13 [nil]
+      45 [-]: JUMPIFNOTLE R3 R2 L6
+      46 [-]: GETIMPORT R2 15 [nil]
+      47 [-]: LOADK R4 K16 ["TimedTagChallenge: "]
+      48 [-]: MOVE R5 R0   
+      49 [-]: LOADK R6 K17 [" - Progress reset"]
+      50 [-]: CONCAT R3 R4 R6
+      51 [-]: CALL R2 1 0  
+      52 [-]: GETIMPORT R2 4 [nil]
+      53 [-]: GETIMPORT R3 8 [nil]
+      54 [-]: CALL R3 0 1  
+      55 [-]: SETTABLE R3 R2 R1
+      56 [-]: GETIMPORT R2 19 [nil]
+      57 [-]: GETIMPORT R5 4 [nil]
+      58 [-]: GETTABLE R3 R5 R0
+      59 [-]: CALL R2 1 3  
+      60 [-]: FORGPREP_NEXT R2 L5
+L 4:  61 [-]: GETIMPORT R8 4 [nil]
+      62 [-]: GETTABLE R7 R8 R0
+      63 [-]: LOADB R8 0   
+      64 [-]: SETTABLE R8 R7 R5
+L 5:  65 [-]: FORGLOOP R2 L4 2
+L 6:  66 [-]: RETURN R0 0  
+
+
+; Name:            
+; Defined at line: 39
+; #Upvalues:       0
+; #Parameters:     1
+; Is_vararg:       0
+; Max Stack Size:  13
+
+       0 [-]: GETIMPORT R1 1 [nil]
+       1 [-]: GETIMPORT R4 3 [nil]
+       2 [-]: GETTABLE R2 R4 R0
+       3 [-]: CALL R1 1 3  
+       4 [-]: FORGPREP_NEXT R1 L1
+L 0:   5 [-]: JUMPXEQKB R5 0 L1 NOT
+       6 [-]: GETIMPORT R6 5 [nil]
+       7 [-]: LOADK R8 K6 ["TimedTagChallenge: "]
+       8 [-]: MOVE R9 R0   
+       9 [-]: LOADK R10 K7 [" - "]
+      10 [-]: MOVE R11 R4  
+      11 [-]: LOADK R12 K8 [" is incomplete, challenge not done yet"]
+      12 [-]: CONCAT R7 R8 R12
+      13 [-]: CALL R6 1 0  
+      14 [-]: LOADB R6 0   
+      15 [-]: RETURN R6 1  
+L 1:  16 [-]: FORGLOOP R1 L0 2
+      17 [-]: GETIMPORT R1 3 [nil]
+      18 [-]: MOVE R3 R0   
+      19 [-]: LOADK R4 K9 ["Time"]
+      20 [-]: CONCAT R2 R3 R4
+      21 [-]: LOADN R3 0   
+      22 [-]: SETTABLE R3 R1 R2
+      23 [-]: GETIMPORT R1 1 [nil]
+      24 [-]: GETIMPORT R4 3 [nil]
+      25 [-]: GETTABLE R2 R4 R0
+      26 [-]: CALL R1 1 3  
+      27 [-]: FORGPREP_NEXT R1 L3
+L 2:  28 [-]: GETIMPORT R7 3 [nil]
+      29 [-]: GETTABLE R6 R7 R0
+      30 [-]: LOADB R7 0   
+      31 [-]: SETTABLE R7 R6 R4
+L 3:  32 [-]: FORGLOOP R1 L2 2
+      33 [-]: GETIMPORT R1 5 [nil]
+      34 [-]: LOADK R3 K6 ["TimedTagChallenge: "]
+      35 [-]: MOVE R4 R0   
+      36 [-]: LOADK R5 K10 [" - Challenge success"]
+      37 [-]: CONCAT R2 R3 R5
+      38 [-]: CALL R1 1 0  
+      39 [-]: LOADB R1 1   
+      40 [-]: RETURN R1 1  
+
+
+; Name:            
+; Defined at line: 55
+; #Upvalues:       2
+; #Parameters:     6
+; Is_vararg:       0
+; Max Stack Size:  14
+
+       0 [-]: GETIMPORT R7 1 [nil]
+       1 [-]: NAMECALL R8 R0 K2 [0x5CA33548]
+       2 [-]: CALL R8 1 -1 
+       3 [-]: CALL R7 -1 1 
+       4 [-]: GETIMPORT R11 1 [nil]
+       5 [-]: GETIMPORT R12 4 [nil]
+       6 [-]: CALL R11 1 1 
+       7 [-]: MOVE R8 R11  
+       8 [-]: MOVE R9 R5   
+       9 [-]: GETIMPORT R10 1 [nil]
+      10 [-]: NAMECALL R11 R0 K2 [0x5CA33548]
+      11 [-]: CALL R11 1 -1
+      12 [-]: CALL R10 -1 1
+      13 [-]: CONCAT R6 R8 R10
+      14 [-]: GETIMPORT R8 6 [nil]
+      15 [-]: GETTABLE R7 R8 R6
+      16 [-]: JUMPXEQKNIL R7 L0
+      17 [-]: GETIMPORT R9 6 [nil]
+      18 [-]: GETTABLE R8 R9 R6
+      19 [-]: GETTABLE R7 R8 R1
+      20 [-]: JUMPXEQKNIL R7 L0 NOT
+      21 [-]: RETURN R0 0  
+L 0:  22 [-]: GETUPVAL R7 0
+      23 [-]: MOVE R8 R6   
+      24 [-]: CALL R7 1 0  
+      25 [-]: GETIMPORT R9 6 [nil]
+      26 [-]: GETTABLE R8 R9 R6
+      27 [-]: GETTABLE R7 R8 R1
+      28 [-]: JUMPXEQKB R7 0 L1 NOT
+      29 [-]: GETIMPORT R8 6 [nil]
+      30 [-]: GETTABLE R7 R8 R6
+      31 [-]: LOADB R8 1   
+      32 [-]: SETTABLE R8 R7 R1
+      33 [-]: GETIMPORT R7 8 [nil]
+      34 [-]: LOADK R9 K9 ["TimedTagChallenge: "]
+      35 [-]: MOVE R10 R6  
+      36 [-]: LOADK R11 K10 [" - "]
+      37 [-]: MOVE R12 R1  
+      38 [-]: LOADK R13 K11 [" triggered!"]
+      39 [-]: CONCAT R8 R9 R13
+      40 [-]: CALL R7 1 0  
+      41 [-]: GETUPVAL R7 1
+      42 [-]: MOVE R8 R6   
+      43 [-]: CALL R7 1 1  
+      44 [-]: RETURN R7 1  
+L 1:  45 [-]: LOADB R7 0   
+      46 [-]: RETURN R7 1  
+
+
+; Name:            
+; Defined at line: 70
+; #Upvalues:       2
+; #Parameters:     4
+; Is_vararg:       0
+; Max Stack Size:  11
+
+       0 [-]: GETIMPORT R4 1 [nil]
+       1 [-]: JUMPIFNOT R4 L0
+       2 [-]: GETIMPORT R5 3 [nil]
+       3 [-]: NAMECALL R6 R1 K4 [0x5CA33548]
+       4 [-]: CALL R6 1 -1 
+       5 [-]: CALL R5 -1 1 
+       6 [-]: GETIMPORT R9 3 [nil]
+       7 [-]: GETIMPORT R10 6 [nil]
+       8 [-]: CALL R9 1 1  
+       9 [-]: MOVE R6 R9   
+      10 [-]: MOVE R7 R3   
+      11 [-]: GETIMPORT R8 3 [nil]
+      12 [-]: NAMECALL R9 R1 K4 [0x5CA33548]
+      13 [-]: CALL R9 1 -1 
+      14 [-]: CALL R8 -1 1 
+      15 [-]: CONCAT R4 R6 R8
+      16 [-]: GETUPVAL R5 0
+      17 [-]: MOVE R6 R4   
+      18 [-]: CALL R5 1 0  
+      19 [-]: GETIMPORT R6 8 [nil]
+      20 [-]: GETTABLE R5 R6 R4
+      21 [-]: LOADB R6 1   
+      22 [-]: SETTABLEKS R6 R5 K9 ["TTAAttackEvent"]
+      23 [-]: GETIMPORT R5 11 [nil]
+      24 [-]: LOADK R7 K12 ["TimedTagChallenge: "]
+      25 [-]: MOVE R8 R4   
+      26 [-]: LOADK R9 K13 [" - TTAAttackEvent triggered!"]
+      27 [-]: CONCAT R6 R7 R9
+      28 [-]: CALL R5 1 0  
+      29 [-]: GETUPVAL R5 1
+      30 [-]: MOVE R6 R4   
+      31 [-]: CALL R5 1 1  
+      32 [-]: RETURN R5 1  
+L 0:  33 [-]: LOADB R4 0   
+      34 [-]: RETURN R4 1  
+
 
 

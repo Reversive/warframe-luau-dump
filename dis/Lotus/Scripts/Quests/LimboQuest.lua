@@ -1,47 +1,44 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
+; Is_vararg:       1
 ; Max Stack Size:  9
 
-  1 [-]: GETGLOBAL R0 K0        ; R0 := 0xbe190284
-  2 [-]: LOADKB    R1 0 0       ; R1 := false
-  3 [-]: LOADKB    R2 0 0       ; R2 := false
-  4 [-]: LOADKB    R3 0 0       ; R3 := false
-  5 [-]: LOADKB    R4 0 0       ; R4 := false
-  6 [-]: GETGLOBAL R5 K1        ; R5 := 0x2d0fad09
-  7 [-]: LOADK     R6 K2        ; R6 := "Lotus.Scripts.Libs.ObjectiveText"
-  8 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-  9 [-]: CLOSURE   R6 0         ; R6 := closure(Function #1)
- 10 [-]: CLOSURE   R7 1         ; R7 := closure(Function #2)
- 11 [-]: MOVE      R0 R0        ; R0 := R0
- 12 [-]: CLOSURE   R8 2         ; R8 := closure(Function #3)
- 13 [-]: MOVE      R0 R7        ; R0 := R7
- 14 [-]: MOVE      R0 R5        ; R0 := R5
- 15 [-]: SETGLOBAL R8 K3        ; OnPlayerSpawned := R8
- 16 [-]: CLOSURE   R8 3         ; R8 := closure(Function #4)
- 17 [-]: MOVE      R0 R2        ; R0 := R2
- 18 [-]: MOVE      R0 R1        ; R0 := R1
- 19 [-]: SETGLOBAL R8 K4        ; OnItemsGiven := R8
- 20 [-]: CLOSURE   R8 4         ; R8 := closure(Function #5)
- 21 [-]: MOVE      R0 R4        ; R0 := R4
- 22 [-]: MOVE      R0 R3        ; R0 := R3
- 23 [-]: SETGLOBAL R8 K5        ; QuestStageCompleteCallback := R8
- 24 [-]: CLOSURE   R8 5         ; R8 := closure(Function #6)
- 25 [-]: MOVE      R0 R6        ; R0 := R6
- 26 [-]: MOVE      R0 R1        ; R0 := R1
- 27 [-]: MOVE      R0 R2        ; R0 := R2
- 28 [-]: MOVE      R0 R3        ; R0 := R3
- 29 [-]: MOVE      R0 R4        ; R0 := R4
- 30 [-]: SETGLOBAL R8 K6        ; GiveTriggeredItems := R8
- 31 [-]: RETURN    R0 1         ; return 
+            1 [-]: GETIMPORT R0 1 [nil]
+       2 [-]: LOADB R1 0   
+       3 [-]: LOADB R2 0   
+       4 [-]: LOADB R3 0   
+       5 [-]: LOADB R4 0   
+       6 [-]: GETIMPORT R5 3 [nil]
+       7 [-]: LOADK R6 K4 ["Lotus.Scripts.Libs.ObjectiveText"]
+       8 [-]: CALL R5 1 1  
+       9 [-]: DUPCLOSURE R6 K5 []
+      10 [-]: DUPCLOSURE R7 K6 []
+      11 [-]: MOVE R0 R0   
+      12 [-]: DUPCLOSURE R8 K7 []
+      13 [-]: MOVE R0 R0   
+      14 [-]: MOVE R0 R5   
+      15 [-]: SETGLOBAL R8 K8 ["OnPlayerSpawned"]
+      16 [-]: NEWCLOSURE R8 P3
+      17 [-]: MOVE R1 R2   
+      18 [-]: MOVE R1 R1   
+      19 [-]: SETGLOBAL R8 K9 ["OnItemsGiven"]
+      20 [-]: NEWCLOSURE R8 P4
+      21 [-]: MOVE R1 R4   
+      22 [-]: MOVE R1 R3   
+      23 [-]: SETGLOBAL R8 K10 ["QuestStageCompleteCallback"]
+      24 [-]: NEWCLOSURE R8 P5
+      25 [-]: MOVE R0 R6   
+      26 [-]: MOVE R1 R1   
+      27 [-]: MOVE R1 R2   
+      28 [-]: MOVE R1 R3   
+      29 [-]: MOVE R1 R4   
+      30 [-]: SETGLOBAL R8 K11 ["GiveTriggeredItems"]
+      31 [-]: CLOSEUPVALS R1
+      32 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 17
 ; #Upvalues:       0
@@ -49,44 +46,41 @@
 ; Is_vararg:       0
 ; Max Stack Size:  4
 
-  1 [-]: GETGLOBAL R0 K0        ; R0 := 0x76ea806b
-  2 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0x3f3ae64c]
-  3 [-]: CONST     R2 0         ; R2 := 0.000000
-  4 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
-  5 [-]: GETGLOBAL R1 K2        ; R1 := 0x7b998233
-  6 [-]: MOVE      R2 R0        ; R2 := R0
-  7 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  8 [-]: TEST      R1 0         ; if not R1 then PC := 19
-  9 [-]: JMP       19           ; PC := 19
- 10 [-]: GETGLOBAL R1 K0        ; R1 := 0x76ea806b
- 11 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1[0x3f3ae64c]
- 12 [-]: CONST     R3 0         ; R3 := 0.000000
- 13 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
- 14 [-]: MOVE      R0 R1        ; R0 := R1
- 15 [-]: GETGLOBAL R1 K3        ; R1 := 0xcbd666e1
- 16 [-]: CONST     R2 0         ; R2 := 0.000000
- 17 [-]: CALL      R1 2 1       ; R1(R2)
- 18 [-]: JMP       5            ; PC := 5
- 19 [-]: SELF      R1 R0 K4     ; R2 := R0; R1 := R0[0x80563238]
- 20 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 21 [-]: GETGLOBAL R2 K2        ; R2 := 0x7b998233
- 22 [-]: MOVE      R3 R1        ; R3 := R1
- 23 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 24 [-]: TEST      R2 0         ; if not R2 then PC := 33
- 25 [-]: JMP       33           ; PC := 33
- 26 [-]: SELF      R2 R0 K4     ; R3 := R0; R2 := R0[0x80563238]
- 27 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 28 [-]: MOVE      R1 R2        ; R1 := R2
- 29 [-]: GETGLOBAL R2 K3        ; R2 := 0xcbd666e1
- 30 [-]: CONST     R3 0         ; R3 := 0.000000
- 31 [-]: CALL      R2 2 1       ; R2(R3)
- 32 [-]: JMP       21           ; PC := 21
- 33 [-]: RETURN    R1 2         ; return R1
- 34 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: LOADN R2 0   
+       2 [-]: NAMECALL R0 R0 K2 [0x3F3AE64C]
+       3 [-]: CALL R0 2 1  
+L 0:   4 [-]: FASTCALL1 62 R0 L1
+       5 [-]: MOVE R2 R0   
+       6 [-]: GETIMPORT R1 4 [nil]
+       7 [-]: CALL R1 1 1  
+L 1:   8 [-]: JUMPIFNOT R1 L2
+       9 [-]: GETIMPORT R1 1 [nil]
+      10 [-]: LOADN R3 0   
+      11 [-]: NAMECALL R1 R1 K2 [0x3F3AE64C]
+      12 [-]: CALL R1 2 1  
+      13 [-]: MOVE R0 R1   
+      14 [-]: GETIMPORT R1 6 [nil]
+      15 [-]: LOADN R2 0   
+      16 [-]: CALL R1 1 0  
+      17 [-]: JUMPBACK L0  
+L 2:  18 [-]: NAMECALL R1 R0 K7 [0x80563238]
+      19 [-]: CALL R1 1 1  
+L 3:  20 [-]: FASTCALL1 62 R1 L4
+      21 [-]: MOVE R3 R1   
+      22 [-]: GETIMPORT R2 4 [nil]
+      23 [-]: CALL R2 1 1  
+L 4:  24 [-]: JUMPIFNOT R2 L5
+      25 [-]: NAMECALL R2 R0 K7 [0x80563238]
+      26 [-]: CALL R2 1 1  
+      27 [-]: MOVE R1 R2   
+      28 [-]: GETIMPORT R2 6 [nil]
+      29 [-]: LOADN R3 0   
+      30 [-]: CALL R2 1 0  
+      31 [-]: JUMPBACK L3  
+L 5:  32 [-]: RETURN R1 1  
 
 
-; Function #2:
-;
 ; Name:            
 ; Defined at line: 31
 ; #Upvalues:       1
@@ -94,37 +88,35 @@
 ; Is_vararg:       0
 ; Max Stack Size:  4
 
-  1 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  2 [-]: SELF      R0 R0 K0     ; R1 := R0; R0 := R0[0xdda55336]
-  3 [-]: GETGLOBAL R2 K1        ; R2 := 0x3d480a70
-  4 [-]: GETGLOBAL R3 K2        ; R3 := 0x58711474
-  5 [-]: CALL      R0 4 1       ; R0(R1,R2,R3)
-  6 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETUPVAL R0 0
+       1 [-]: GETIMPORT R2 1 [nil]
+       2 [-]: GETIMPORT R3 3 [nil]
+       3 [-]: NAMECALL R0 R0 K4 [0xDDA55336]
+       4 [-]: CALL R0 3 0  
+       5 [-]: RETURN R0 0  
 
 
-; Function #3:
-;
 ; Name:            
 ; Defined at line: 35
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
-; Max Stack Size:  2
+; Max Stack Size:  4
 
-  1 [-]: GETGLOBAL R0 K0        ; R0 := 0x344a1ca6
-  2 [-]: TEST      R0 0         ; if not R0 then PC := 6
-  3 [-]: JMP       6            ; PC := 6
-  4 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  5 [-]: CALL      R0 1 1       ; R0()
-  6 [-]: GETUPVAL  R0 U1        ; R0 := U1
-  7 [-]: GETTABLE  R0 R0 K1     ; R0 := R0[0xabae55af]
-  8 [-]: LOADK     R1 K2        ; R1 := "/Lotus/Language/Quests/LimboGatherFragments"
-  9 [-]: CALL      R0 2 1       ; R0(R1)
- 10 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: JUMPIFNOT R0 L0
+       2 [-]: GETUPVAL R0 0
+       3 [-]: GETIMPORT R2 3 [nil]
+       4 [-]: GETIMPORT R3 5 [nil]
+       5 [-]: NAMECALL R0 R0 K6 [0xDDA55336]
+       6 [-]: CALL R0 3 0  
+L 0:   7 [-]: GETUPVAL R1 1
+       8 [-]: GETTABLEKS R0 R1 K7 [0xABAE55AF]
+       9 [-]: LOADK R1 K8 ["/Lotus/Language/Quests/LimboGatherFragments"]
+      10 [-]: CALL R0 1 0  
+      11 [-]: RETURN R0 0  
 
 
-; Function #4:
-;
 ; Name:            
 ; Defined at line: 44
 ; #Upvalues:       2
@@ -132,23 +124,20 @@
 ; Is_vararg:       0
 ; Max Stack Size:  4
 
-  1 [-]: LOADKB    R2 1 0       ; R2 := true
-  2 [-]: SETUPVAL  R2 U0        ; U82 := R0
-  3 [-]: TEST      R0 0         ; if not R0 then PC := 11
-  4 [-]: JMP       11           ; PC := 11
-  5 [-]: GETGLOBAL R2 K0        ; R2 := 0x3d106989
-  6 [-]: LOADK     R3 K1        ; R3 := "Items given"
-  7 [-]: CALL      R2 2 1       ; R2(R3)
-  8 [-]: LOADKB    R2 1 0       ; R2 := true
-  9 [-]: SETUPVAL  R2 U1        ; U82 := R1
- 10 [-]: JMP       13           ; PC := 13
- 11 [-]: LOADKB    R2 0 0       ; R2 := false
- 12 [-]: SETUPVAL  R2 U1        ; U82 := R1
- 13 [-]: RETURN    R0 1         ; return 
+       0 [-]: LOADB R2 1   
+       1 [-]: SETUPVAL R2 0
+       2 [-]: JUMPIFNOT R0 L0
+       3 [-]: GETIMPORT R2 1 [nil]
+       4 [-]: LOADK R3 K2 ["Items given"]
+       5 [-]: CALL R2 1 0  
+       6 [-]: LOADB R2 1   
+       7 [-]: SETUPVAL R2 1
+       8 [-]: RETURN R0 0  
+L 0:   9 [-]: LOADB R2 0   
+      10 [-]: SETUPVAL R2 1
+      11 [-]: RETURN R0 0  
 
 
-; Function #5:
-;
 ; Name:            
 ; Defined at line: 54
 ; #Upvalues:       2
@@ -156,14 +145,12 @@
 ; Is_vararg:       0
 ; Max Stack Size:  3
 
-  1 [-]: LOADKB    R2 1 0       ; R2 := true
-  2 [-]: SETUPVAL  R2 U0        ; U82 := R0
-  3 [-]: SETUPVAL  R0 U1        ; U82 := R1
-  4 [-]: RETURN    R0 1         ; return 
+       0 [-]: LOADB R2 1   
+       1 [-]: SETUPVAL R2 0
+       2 [-]: SETUPVAL R0 1
+       3 [-]: RETURN R0 0  
 
 
-; Function #6:
-;
 ; Name:            
 ; Defined at line: 59
 ; #Upvalues:       5
@@ -171,98 +158,91 @@
 ; Is_vararg:       0
 ; Max Stack Size:  7
 
-  1 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  2 [-]: CALL      R0 1 2       ; R0 := R0()
-  3 [-]: SELF      R1 R0 K0     ; R2 := R0; R1 := R0[0x0d385cb5]
-  4 [-]: GETGLOBAL R3 K1        ; R3 := 0x9fc74658
-  5 [-]: GETGLOBAL R4 K2        ; R4 := 0xa6d59a07
-  6 [-]: CALL      R1 4 2       ; R1 := R1(R2,R3,R4)
-  7 [-]: TEST      R1 1         ; if R1 then PC := 43
-  8 [-]: JMP       43           ; PC := 43
-  9 [-]: CONST     R1 0         ; R1 := 0.000000
- 10 [-]: GETUPVAL  R2 U1        ; R2 := U1
- 11 [-]: TEST      R2 1         ; if R2 then PC := 48
- 12 [-]: JMP       48           ; PC := 48
- 13 [-]: LT        0 R1 K3      ; if R1 >= 5.000000 then PC := 48
- 14 [-]: JMP       48           ; PC := 48
- 15 [-]: GETGLOBAL R2 K4        ; R2 := 0x7b998233
- 16 [-]: MOVE      R3 R0        ; R3 := R0
- 17 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 18 [-]: TEST      R2 0         ; if not R2 then PC := 21
- 19 [-]: JMP       21           ; PC := 21
- 20 [-]: RETURN    R0 1         ; return 
- 21 [-]: SELF      R2 R0 K5     ; R3 := R0; R2 := R0[0xedba28e7]
- 22 [-]: GETGLOBAL R4 K6        ; R4 := 0xb009bbc6
- 23 [-]: GETGLOBAL R5 K1        ; R5 := 0x9fc74658
- 24 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 25 [-]: GETGLOBAL R5 K2        ; R5 := 0xa6d59a07
- 26 [-]: LOADK     R6 K7        ; R6 := "OnItemsGiven"
- 27 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
- 28 [-]: ADD       R1 R1 K8     ; R1 := R1 + 1.000000
- 29 [-]: GETUPVAL  R2 U2        ; R2 := U2
- 30 [-]: TEST      R2 1         ; if R2 then PC := 36
- 31 [-]: JMP       36           ; PC := 36
- 32 [-]: GETGLOBAL R2 K9        ; R2 := 0xcbd666e1
- 33 [-]: CONST     R3 0         ; R3 := 0.000000
- 34 [-]: CALL      R2 2 1       ; R2(R3)
- 35 [-]: JMP       29           ; PC := 29
- 36 [-]: LOADKB    R2 0 0       ; R2 := false
- 37 [-]: SETUPVAL  R2 U2        ; U82 := R2
- 38 [-]: GETGLOBAL R2 K9        ; R2 := 0xcbd666e1
- 39 [-]: CONST     R3 0         ; R3 := 0.000000
- 40 [-]: CALL      R2 2 1       ; R2(R3)
- 41 [-]: JMP       10           ; PC := 10
- 42 [-]: JMP       48           ; PC := 48
- 43 [-]: GETGLOBAL R2 K10       ; R2 := 0x3d106989
- 44 [-]: LOADK     R3 K11       ; R3 := "Recovering from LimboQuest triggered items already given"
- 45 [-]: CALL      R2 2 1       ; R2(R3)
- 46 [-]: LOADKB    R2 1 0       ; R2 := true
- 47 [-]: SETUPVAL  R2 U1        ; U82 := R1
- 48 [-]: GETGLOBAL R2 K12       ; R2 := 0x11fee1f2
- 49 [-]: TEST      R2 0         ; if not R2 then PC := 93
- 50 [-]: JMP       93           ; PC := 93
- 51 [-]: GETUPVAL  R2 U1        ; R2 := U1
- 52 [-]: TEST      R2 0         ; if not R2 then PC := 93
- 53 [-]: JMP       93           ; PC := 93
- 54 [-]: CONST     R2 0         ; R2 := 0.000000
- 55 [-]: GETUPVAL  R3 U3        ; R3 := U3
- 56 [-]: TEST      R3 1         ; if R3 then PC := 84
- 57 [-]: JMP       84           ; PC := 84
- 58 [-]: LT        0 R2 K3      ; if R2 >= 5.000000 then PC := 84
- 59 [-]: JMP       84           ; PC := 84
- 60 [-]: GETGLOBAL R3 K4        ; R3 := 0x7b998233
- 61 [-]: MOVE      R4 R0        ; R4 := R0
- 62 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 63 [-]: TEST      R3 0         ; if not R3 then PC := 66
- 64 [-]: JMP       66           ; PC := 66
- 65 [-]: RETURN    R0 1         ; return 
- 66 [-]: SELF      R3 R0 K13    ; R4 := R0; R3 := R0[0x88cfae95]
- 67 [-]: GETGLOBAL R5 K14       ; R5 := 0xee939e66
- 68 [-]: LOADK     R6 K15       ; R6 := "QuestStageCompleteCallback"
- 69 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
- 70 [-]: ADD       R2 R2 K8     ; R2 := R2 + 1.000000
- 71 [-]: GETUPVAL  R3 U4        ; R3 := U4
- 72 [-]: TEST      R3 1         ; if R3 then PC := 78
- 73 [-]: JMP       78           ; PC := 78
- 74 [-]: GETGLOBAL R3 K9        ; R3 := 0xcbd666e1
- 75 [-]: CONST     R4 0         ; R4 := 0.000000
- 76 [-]: CALL      R3 2 1       ; R3(R4)
- 77 [-]: JMP       71           ; PC := 71
- 78 [-]: LOADKB    R3 0 0       ; R3 := false
- 79 [-]: SETUPVAL  R3 U4        ; U82 := R4
- 80 [-]: GETGLOBAL R3 K9        ; R3 := 0xcbd666e1
- 81 [-]: CONST     R4 0         ; R4 := 0.000000
- 82 [-]: CALL      R3 2 1       ; R3(R4)
- 83 [-]: JMP       55           ; PC := 55
- 84 [-]: GETUPVAL  R3 U3        ; R3 := U3
- 85 [-]: TEST      R3 0         ; if not R3 then PC := 93
- 86 [-]: JMP       93           ; PC := 93
- 87 [-]: GETGLOBAL R3 K16       ; R3 := _T
- 88 [-]: GETTABLE  R3 R3 K17    ; R3 := R3["BackgroundMovie"]
- 89 [-]: SELF      R3 R3 K18    ; R4 := R3; R3 := R3[0xe4162eed]
- 90 [-]: LOADK     R5 K19       ; R5 := "CheckQuests"
- 91 [-]: LOADK     R6 K20       ; R6 := ""
- 92 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
- 93 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETUPVAL R0 0
+       1 [-]: CALL R0 0 1  
+       2 [-]: GETIMPORT R3 1 [nil]
+       3 [-]: GETIMPORT R4 3 [nil]
+       4 [-]: NAMECALL R1 R0 K4 [0x0D385CB5]
+       5 [-]: CALL R1 3 1  
+       6 [-]: JUMPIF R1 L5 
+       7 [-]: LOADN R1 0   
+L 0:   8 [-]: GETUPVAL R2 1
+       9 [-]: JUMPIF R2 L6 
+      10 [-]: LOADN R2 5   
+      11 [-]: JUMPIFNOTLT R1 R2 L6
+      12 [-]: FASTCALL1 62 R0 L1
+      13 [-]: MOVE R3 R0   
+      14 [-]: GETIMPORT R2 6 [nil]
+      15 [-]: CALL R2 1 1  
+L 1:  16 [-]: JUMPIFNOT R2 L2
+      17 [-]: RETURN R0 0  
+L 2:  18 [-]: GETIMPORT R4 8 [nil]
+      19 [-]: GETIMPORT R5 1 [nil]
+      20 [-]: CALL R4 1 1  
+      21 [-]: GETIMPORT R5 3 [nil]
+      22 [-]: LOADK R6 K9 ["OnItemsGiven"]
+      23 [-]: NAMECALL R2 R0 K10 [0xEDBA28E7]
+      24 [-]: CALL R2 4 0  
+      25 [-]: ADDK R1 R1 K11 [1]
+L 3:  26 [-]: GETUPVAL R2 2
+      27 [-]: JUMPIF R2 L4 
+      28 [-]: GETIMPORT R2 13 [nil]
+      29 [-]: LOADN R3 0   
+      30 [-]: CALL R2 1 0  
+      31 [-]: JUMPBACK L3  
+L 4:  32 [-]: LOADB R2 0   
+      33 [-]: SETUPVAL R2 2
+      34 [-]: GETIMPORT R2 13 [nil]
+      35 [-]: LOADN R3 0   
+      36 [-]: CALL R2 1 0  
+      37 [-]: JUMPBACK L0  
+      38 [-]: JUMP L6
+     
+L 5:  39 [-]: GETIMPORT R1 15 [nil]
+      40 [-]: LOADK R2 K16 ["Recovering from LimboQuest triggered items already given"]
+      41 [-]: CALL R1 1 0  
+      42 [-]: LOADB R1 1   
+      43 [-]: SETUPVAL R1 1
+L 6:  44 [-]: GETIMPORT R1 18 [nil]
+      45 [-]: JUMPIFNOT R1 L13
+      46 [-]: GETUPVAL R1 1
+      47 [-]: JUMPIFNOT R1 L13
+      48 [-]: LOADN R1 0   
+L 7:  49 [-]: GETUPVAL R2 3
+      50 [-]: JUMPIF R2 L12
+      51 [-]: LOADN R2 5   
+      52 [-]: JUMPIFNOTLT R1 R2 L12
+      53 [-]: FASTCALL1 62 R0 L8
+      54 [-]: MOVE R3 R0   
+      55 [-]: GETIMPORT R2 6 [nil]
+      56 [-]: CALL R2 1 1  
+L 8:  57 [-]: JUMPIFNOT R2 L9
+      58 [-]: RETURN R0 0  
+L 9:  59 [-]: GETIMPORT R4 20 [nil]
+      60 [-]: LOADK R5 K21 ["QuestStageCompleteCallback"]
+      61 [-]: NAMECALL R2 R0 K22 [0x88CFAE95]
+      62 [-]: CALL R2 3 0  
+      63 [-]: ADDK R1 R1 K11 [1]
+L10:  64 [-]: GETUPVAL R2 4
+      65 [-]: JUMPIF R2 L11
+      66 [-]: GETIMPORT R2 13 [nil]
+      67 [-]: LOADN R3 0   
+      68 [-]: CALL R2 1 0  
+      69 [-]: JUMPBACK L10 
+L11:  70 [-]: LOADB R2 0   
+      71 [-]: SETUPVAL R2 4
+      72 [-]: GETIMPORT R2 13 [nil]
+      73 [-]: LOADN R3 0   
+      74 [-]: CALL R2 1 0  
+      75 [-]: JUMPBACK L7  
+L12:  76 [-]: GETUPVAL R2 3
+      77 [-]: JUMPIFNOT R2 L13
+      78 [-]: GETIMPORT R2 25 [nil]
+      79 [-]: LOADK R4 K26 ["CheckQuests"]
+      80 [-]: LOADK R5 K27 [""]
+      81 [-]: NAMECALL R2 R2 K28 [0xE4162EED]
+      82 [-]: CALL R2 3 0  
+L13:  83 [-]: RETURN R0 0  
+
 
 

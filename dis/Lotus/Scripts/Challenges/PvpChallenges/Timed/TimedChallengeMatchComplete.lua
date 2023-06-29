@@ -1,28 +1,26 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
+; Is_vararg:       1
 ; Max Stack Size:  3
 
-  1 [-]: GETGLOBAL R1 K0        ; R1 := 0x2d0fad09
-  2 [-]: LOADK     R2 K1        ; R2 := "Lotus.Scripts.Challenges.PvpChallenges.Timed.TimedChallengeSimpleCounter"
-  3 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  4 [-]: CLOSURE   R2 0         ; R2 := closure(Function #1)
-  5 [-]: MOVE      R0 R0        ; R0 := R0
-  6 [-]: MOVE      R0 R1        ; R0 := R1
-  7 [-]: SETGLOBAL R2 K2        ; Start := R2
-  8 [-]: CLOSURE   R2 1         ; R2 := closure(Function #2)
-  9 [-]: MOVE      R0 R1        ; R0 := R1
- 10 [-]: MOVE      R0 R0        ; R0 := R0
- 11 [-]: SETGLOBAL R2 K3        ; MatchTagEvent := R2
- 12 [-]: RETURN    R0 1         ; return 
+            1 [-]: LOADNIL R0   
+       2 [-]: GETIMPORT R1 1 [nil]
+       3 [-]: LOADK R2 K2 ["Lotus.Scripts.Challenges.PvpChallenges.Timed.TimedChallengeSimpleCounter"]
+       4 [-]: CALL R1 1 1  
+       5 [-]: NEWCLOSURE R2 P0
+       6 [-]: MOVE R1 R0   
+       7 [-]: MOVE R0 R1   
+       8 [-]: SETGLOBAL R2 K3 ["Start"]
+       9 [-]: NEWCLOSURE R2 P1
+      10 [-]: MOVE R0 R1   
+      11 [-]: MOVE R1 R0   
+      12 [-]: SETGLOBAL R2 K4 ["MatchTagEvent"]
+      13 [-]: CLOSEUPVALS R0
+      14 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 8
 ; #Upvalues:       2
@@ -30,17 +28,15 @@
 ; Is_vararg:       0
 ; Max Stack Size:  3
 
-  1 [-]: GETUPVAL  R0 U1        ; R0 := U1
-  2 [-]: GETTABLE  R0 R0 K0     ; R0 := R0[0xb8ae375d]
-  3 [-]: GETGLOBAL R1 K1        ; R1 := 0x83062d09
-  4 [-]: GETGLOBAL R2 K2        ; R2 := 0x5bf84945
-  5 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
-  6 [-]: SETUPVAL  R0 U0        ; U82 := R0
-  7 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETUPVAL R1 1
+       1 [-]: GETTABLEKS R0 R1 K0 [0xB8AE375D]
+       2 [-]: GETIMPORT R1 2 [nil]
+       3 [-]: GETIMPORT R2 4 [nil]
+       4 [-]: CALL R0 2 1  
+       5 [-]: SETUPVAL R0 0
+       6 [-]: RETURN R0 0  
 
 
-; Function #2:
-;
 ; Name:            
 ; Defined at line: 13
 ; #Upvalues:       2
@@ -48,16 +44,15 @@
 ; Is_vararg:       0
 ; Max Stack Size:  6
 
-  1 [-]: EQ        0 R1 K0      ; if R1 ~= "ROUND_ENDED" then PC := 11
-  2 [-]: JMP       11           ; PC := 11
-  3 [-]: SELF      R4 R0 K1     ; R5 := R0; R4 := R0[0x420402a9]
-  4 [-]: CALL      R4 2 2       ; R4 := R4(R5)
-  5 [-]: TEST      R4 0         ; if not R4 then PC := 11
-  6 [-]: JMP       11           ; PC := 11
-  7 [-]: GETUPVAL  R4 U0        ; R4 := U0
-  8 [-]: GETTABLE  R4 R4 K2     ; R4 := R4[0x098c2676]
-  9 [-]: GETUPVAL  R5 U1        ; R5 := U1
- 10 [-]: CALL      R4 2 1       ; R4(R5)
- 11 [-]: RETURN    R0 1         ; return 
+       0 [-]: JUMPXEQKS R1 K0 L0 NOT ["ROUND_ENDED"]
+       1 [-]: NAMECALL R4 R0 K1 [0x420402A9]
+       2 [-]: CALL R4 1 1  
+       3 [-]: JUMPIFNOT R4 L0
+       4 [-]: GETUPVAL R5 0
+       5 [-]: GETTABLEKS R4 R5 K2 [0x098C2676]
+       6 [-]: GETUPVAL R5 1
+       7 [-]: CALL R4 1 0  
+L 0:   8 [-]: RETURN R0 0  
+
 
 

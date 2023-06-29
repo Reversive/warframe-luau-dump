@@ -1,19 +1,15 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
-; Max Stack Size:  2
+; Is_vararg:       1
+; Max Stack Size:  1
 
-  1 [-]: CLOSURE   R0 0         ; R0 := closure(Function #1)
-  2 [-]: SETGLOBAL R0 K0        ; MatchTagEvent := R0
-  3 [-]: RETURN    R0 1         ; return 
+            1 [-]: DUPCLOSURE R0 K0 []
+       2 [-]: SETGLOBAL R0 K1 ["MatchTagEvent"]
+       3 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 4
 ; #Upvalues:       0
@@ -21,53 +17,51 @@
 ; Is_vararg:       0
 ; Max Stack Size:  10
 
-  1 [-]: GETGLOBAL R5 K0        ; R5 := 0x7b998233
-  2 [-]: MOVE      R6 R4        ; R6 := R4
-  3 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-  4 [-]: TEST      R5 1         ; if R5 then PC := 32
-  5 [-]: JMP       32           ; PC := 32
-  6 [-]: GETGLOBAL R5 K1        ; R5 := 0x7f5022cf
-  7 [-]: GETTABLE  R5 R5 K2     ; R5 := R5[0x66edf04f]
-  8 [-]: GETGLOBAL R6 K3        ; R6 := 0x64fb1586
-  9 [-]: SELF      R7 R4 K4     ; R8 := R4; R7 := R4[0xed4e0128]
- 10 [-]: CALL      R7 2 0       ; R7,... := R7(R8)
- 11 [-]: CALL      R6 0 2       ; R6 := R6(R7,...)
- 12 [-]: LOADK     R7 K5        ; R7 := "/Lotus/"
- 13 [-]: LOADK     R8 K6        ; R8 := "/Lotus/StoreItems/"
- 14 [-]: CONST     R9 1         ; R9 := 1.000000
- 15 [-]: CALL      R5 5 2       ; R5 := R5(R6,R7,R8,R9)
- 16 [-]: GETGLOBAL R6 K7        ; R6 := 0xb009bbc6
- 17 [-]: MOVE      R7 R5        ; R7 := R5
- 18 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 19 [-]: GETGLOBAL R7 K0        ; R7 := 0x7b998233
- 20 [-]: MOVE      R8 R6        ; R8 := R6
- 21 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 22 [-]: TEST      R7 1         ; if R7 then PC := 32
- 23 [-]: JMP       32           ; PC := 32
- 24 [-]: SELF      R7 R6 K8     ; R8 := R6; R7 := R6[0xb24acced]
- 25 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 26 [-]: GETGLOBAL R8 K9        ; R8 := 0x2bd2e169
- 27 [-]: LE        1 R8 R7      ; if R8 <= R7 then PC := 30
- 28 [-]: JMP       30           ; PC := 30
- 29 [-]: LOADKB    R7 0 1       ; R7 := false; PC := 30
- 30 [-]: LOADKB    R7 1 0       ; R7 := true
- 31 [-]: RETURN    R7 2         ; return R7
- 32 [-]: GETGLOBAL R7 K0        ; R7 := 0x7b998233
- 33 [-]: MOVE      R8 R4        ; R8 := R4
- 34 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 35 [-]: TEST      R7 1         ; if R7 then PC := 45
- 36 [-]: JMP       45           ; PC := 45
- 37 [-]: GETGLOBAL R7 K7        ; R7 := 0xb009bbc6
- 38 [-]: MOVE      R8 R4        ; R8 := R4
- 39 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 40 [-]: SELF      R7 R7 K8     ; R8 := R7; R7 := R7[0xb24acced]
- 41 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 42 [-]: GETGLOBAL R8 K9        ; R8 := 0x2bd2e169
- 43 [-]: LE        1 R8 R7      ; if R8 <= R7 then PC := 46
- 44 [-]: JMP       46           ; PC := 46
- 45 [-]: LOADKB    R7 0 1       ; R7 := false; PC := 46
- 46 [-]: LOADKB    R7 1 0       ; R7 := true
- 47 [-]: RETURN    R7 2         ; return R7
- 48 [-]: RETURN    R0 1         ; return 
+       0 [-]: FASTCALL1 62 R4 L0
+       1 [-]: MOVE R6 R4   
+       2 [-]: GETIMPORT R5 1 [nil]
+       3 [-]: CALL R5 1 1  
+L 0:   4 [-]: JUMPIF R5 L4 
+       5 [-]: GETIMPORT R5 4 [nil]
+       6 [-]: GETIMPORT R6 6 [nil]
+       7 [-]: NAMECALL R7 R4 K7 [0xED4E0128]
+       8 [-]: CALL R7 1 -1 
+       9 [-]: CALL R6 -1 1 
+      10 [-]: LOADK R7 K8 ["/Lotus/"]
+      11 [-]: LOADK R8 K9 ["/Lotus/StoreItems/"]
+      12 [-]: LOADN R9 1   
+      13 [-]: CALL R5 4 1  
+      14 [-]: GETIMPORT R6 11 [nil]
+      15 [-]: MOVE R7 R5   
+      16 [-]: CALL R6 1 1  
+      17 [-]: FASTCALL1 62 R6 L1
+      18 [-]: MOVE R8 R6   
+      19 [-]: GETIMPORT R7 1 [nil]
+      20 [-]: CALL R7 1 1  
+L 1:  21 [-]: JUMPIF R7 L4 
+      22 [-]: NAMECALL R8 R6 K12 [0xB24ACCED]
+      23 [-]: CALL R8 1 1  
+      24 [-]: GETIMPORT R9 14 [nil]
+      25 [-]: JUMPIFLE R9 R8 L2
+      26 [-]: LOADB R7 0 +1
+L 2:  27 [-]: LOADB R7 1   
+L 3:  28 [-]: RETURN R7 1  
+L 4:  29 [-]: FASTCALL1 62 R4 L5
+      30 [-]: MOVE R7 R4   
+      31 [-]: GETIMPORT R6 1 [nil]
+      32 [-]: CALL R6 1 1  
+L 5:  33 [-]: NOT R5 R6    
+      34 [-]: JUMPIFNOT R5 L7
+      35 [-]: GETIMPORT R6 11 [nil]
+      36 [-]: MOVE R7 R4   
+      37 [-]: CALL R6 1 1  
+      38 [-]: NAMECALL R6 R6 K12 [0xB24ACCED]
+      39 [-]: CALL R6 1 1  
+      40 [-]: GETIMPORT R7 14 [nil]
+      41 [-]: JUMPIFLE R7 R6 L6
+      42 [-]: LOADB R5 0 +1
+L 6:  43 [-]: LOADB R5 1   
+L 7:  44 [-]: RETURN R5 1  
+
 
 

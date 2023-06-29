@@ -1,82 +1,73 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
+; Is_vararg:       1
 ; Max Stack Size:  4
 
-  1 [-]: CLOSURE   R0 0         ; R0 := closure(Function #1)
-  2 [-]: CLOSURE   R1 1         ; R1 := closure(Function #2)
-  3 [-]: CLOSURE   R2 2         ; R2 := closure(Function #3)
-  4 [-]: CLOSURE   R3 3         ; R3 := closure(Function #4)
-  5 [-]: MOVE      R0 R1        ; R0 := R1
-  6 [-]: MOVE      R0 R2        ; R0 := R2
-  7 [-]: MOVE      R0 R0        ; R0 := R0
-  8 [-]: SETGLOBAL R3 K0        ; SetupRepeater := R3
-  9 [-]: RETURN    R0 1         ; return 
+            1 [-]: DUPCLOSURE R0 K0 []
+       2 [-]: DUPCLOSURE R1 K1 []
+       3 [-]: DUPCLOSURE R2 K2 []
+       4 [-]: DUPCLOSURE R3 K3 []
+       5 [-]: MOVE R0 R1   
+       6 [-]: MOVE R0 R0   
+       7 [-]: SETGLOBAL R3 K4 ["SetupRepeater"]
+       8 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 3
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  13
+; Max Stack Size:  11
 
-  1 [-]: CONST     R1 2         ; R1 := 2.500000
-  2 [-]: LOADK     R2 K0        ; R2 := 0.004500
-  3 [-]: CONST     R3 10000     ; R3 := 10000.000000
-  4 [-]: LOADNIL   R4 R4        ; R4 := nil
-  5 [-]: GETGLOBAL R5 K1        ; R5 := 0x89326c93
-  6 [-]: SELF      R5 R5 K2     ; R6 := R5; R5 := R5[0xc7b81e8d]
-  7 [-]: GETGLOBAL R7 K3        ; R7 := 0x0469f296
-  8 [-]: LOADK     R8 K4        ; R8 := "CondrixObject"
-  9 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 10 [-]: SELF      R8 R0 K5     ; R9 := R0; R8 := R0[0xd1586535]
- 11 [-]: CALL      R8 2 0       ; R8,... := R8(R9)
- 12 [-]: CALL      R5 0 2       ; R5 := R5(R6,...)
- 13 [-]: GETGLOBAL R6 K6        ; R6 := 0x7b998233
- 14 [-]: MOVE      R7 R5        ; R7 := R5
- 15 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 16 [-]: TEST      R6 1         ; if R6 then PC := 21
- 17 [-]: JMP       21           ; PC := 21
- 18 [-]: SELF      R6 R5 K7     ; R7 := R5; R6 := R5[0xfa9e477f]
- 19 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 20 [-]: MOVE      R4 R6        ; R4 := R6
- 21 [-]: GETGLOBAL R6 K6        ; R6 := 0x7b998233
- 22 [-]: MOVE      R7 R4        ; R7 := R4
- 23 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 24 [-]: TEST      R6 0         ; if not R6 then PC := 27
- 25 [-]: JMP       27           ; PC := 27
- 26 [-]: RETURN    R0 1         ; return 
- 27 [-]: SELF      R6 R4 K8     ; R7 := R4; R6 := R4[0xc45c884b]
- 28 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 29 [-]: SELF      R7 R0 K9     ; R8 := R0; R7 := R0[0xd2715720]
- 30 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 31 [-]: SUB       R8 R6 K10    ; R8 := R6 - 1.000000
- 32 [-]: POW       R8 R8 R1     ; R8 := R8 ^ R1
- 33 [-]: MUL       R8 R8 R2     ; R8 := R8 * R2
- 34 [-]: ADD       R8 K10 R8    ; R8 := 1.000000 + R8
- 35 [-]: MUL       R8 R7 R8     ; R8 := R7 * R8
- 36 [-]: GETGLOBAL R9 K11       ; R9 := 0x5bced4c4
- 37 [-]: GETTABLE  R9 R9 K12    ; R9 := R9[0xac1b386a]
- 38 [-]: MOVE      R10 R8       ; R10 := R8
- 39 [-]: MOVE      R11 R3       ; R11 := R3
- 40 [-]: CALL      R9 3 2       ; R9 := R9(R10,R11)
- 41 [-]: MOVE      R8 R9        ; R8 := R9
- 42 [-]: SELF      R9 R0 K13    ; R10 := R0; R9 := R0[0x014db014]
- 43 [-]: MOVE      R11 R8       ; R11 := R8
- 44 [-]: LOADKB    R12 1 0      ; R12 := true
- 45 [-]: CALL      R9 4 1       ; R9(R10,R11,R12)
- 46 [-]: RETURN    R0 1         ; return 
+       0 [-]: LOADNIL R1   
+       1 [-]: GETIMPORT R2 1 [nil]
+       2 [-]: GETIMPORT R4 3 [nil]
+       3 [-]: LOADK R5 K4 ["CondrixObject"]
+       4 [-]: CALL R4 1 1  
+       5 [-]: NAMECALL R5 R0 K5 [0xD1586535]
+       6 [-]: CALL R5 1 -1 
+       7 [-]: NAMECALL R2 R2 K6 [0xC7B81E8D]
+       8 [-]: CALL R2 -1 1 
+       9 [-]: FASTCALL1 62 R2 L0
+      10 [-]: MOVE R4 R2   
+      11 [-]: GETIMPORT R3 8 [nil]
+      12 [-]: CALL R3 1 1  
+L 0:  13 [-]: JUMPIF R3 L1 
+      14 [-]: NAMECALL R3 R2 K9 [0xFA9E477F]
+      15 [-]: CALL R3 1 1  
+      16 [-]: MOVE R1 R3   
+L 1:  17 [-]: FASTCALL1 62 R1 L2
+      18 [-]: MOVE R4 R1   
+      19 [-]: GETIMPORT R3 8 [nil]
+      20 [-]: CALL R3 1 1  
+L 2:  21 [-]: JUMPIFNOT R3 L3
+      22 [-]: RETURN R0 0  
+L 3:  23 [-]: NAMECALL R3 R1 K10 [0xC45C884B]
+      24 [-]: CALL R3 1 1  
+      25 [-]: NAMECALL R4 R0 K11 [0xD2715720]
+      26 [-]: CALL R4 1 1  
+      27 [-]: LOADN R7 1   
+      28 [-]: SUBK R10 R3 K14 [1]
+      29 [-]: POWK R9 R10 K13 [2.5]
+      30 [-]: MULK R8 R9 K12 [0.0044999999999999997]
+      31 [-]: ADD R6 R7 R8 
+      32 [-]: MUL R5 R4 R6 
+      33 [-]: FASTCALL2K 19 R5 K15 L4 [10000]
+      34 [-]: MOVE R7 R5   
+      35 [-]: LOADK R8 K15 [10000]
+      36 [-]: GETIMPORT R6 18 [nil]
+      37 [-]: CALL R6 2 1  
+L 4:  38 [-]: MOVE R5 R6   
+      39 [-]: MOVE R8 R5   
+      40 [-]: LOADB R9 1   
+      41 [-]: NAMECALL R6 R0 K19 [0x014DB014]
+      42 [-]: CALL R6 3 0  
+      43 [-]: RETURN R0 0  
 
 
-; Function #2:
-;
 ; Name:            
 ; Defined at line: 25
 ; #Upvalues:       0
@@ -84,150 +75,143 @@
 ; Is_vararg:       0
 ; Max Stack Size:  7
 
-  1 [-]: GETGLOBAL R1 K0        ; R1 := 0x7b998233
-  2 [-]: MOVE      R2 R0        ; R2 := R0
-  3 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  4 [-]: TEST      R1 0         ; if not R1 then PC := 8
-  5 [-]: JMP       8            ; PC := 8
-  6 [-]: LOADNIL   R1 R1        ; R1 := nil
-  7 [-]: RETURN    R1 2         ; return R1
-  8 [-]: SELF      R1 R0 K1     ; R2 := R0; R1 := R0[0xed324116]
-  9 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 10 [-]: GETGLOBAL R2 K0        ; R2 := 0x7b998233
- 11 [-]: MOVE      R3 R1        ; R3 := R1
- 12 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 13 [-]: TEST      R2 0         ; if not R2 then PC := 33
- 14 [-]: JMP       33           ; PC := 33
- 15 [-]: GETGLOBAL R2 K0        ; R2 := 0x7b998233
- 16 [-]: GETGLOBAL R3 K2        ; R3 := 0x333a3d4c
- 17 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 18 [-]: TEST      R2 1         ; if R2 then PC := 33
- 19 [-]: JMP       33           ; PC := 33
- 20 [-]: GETGLOBAL R2 K2        ; R2 := 0x333a3d4c
- 21 [-]: GETGLOBAL R3 K3        ; R3 := 0x0469f296
- 22 [-]: LOADK     R4 K4        ; R4 := ""
- 23 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 24 [-]: EQ        1 R2 R3      ; if R2 == R3 then PC := 33
- 25 [-]: JMP       33           ; PC := 33
- 26 [-]: GETGLOBAL R2 K5        ; R2 := 0x89326c93
- 27 [-]: SELF      R2 R2 K6     ; R3 := R2; R2 := R2[0xc7b81e8d]
- 28 [-]: GETGLOBAL R4 K2        ; R4 := 0x333a3d4c
- 29 [-]: SELF      R5 R0 K7     ; R6 := R0; R5 := R0[0xd1586535]
- 30 [-]: CALL      R5 2 0       ; R5,... := R5(R6)
- 31 [-]: CALL      R2 0 2       ; R2 := R2(R3,...)
- 32 [-]: MOVE      R1 R2        ; R1 := R2
- 33 [-]: RETURN    R1 2         ; return R1
- 34 [-]: RETURN    R0 1         ; return 
+       0 [-]: FASTCALL1 62 R0 L0
+       1 [-]: MOVE R2 R0   
+       2 [-]: GETIMPORT R1 1 [nil]
+       3 [-]: CALL R1 1 1  
+L 0:   4 [-]: JUMPIFNOT R1 L1
+       5 [-]: LOADNIL R1   
+       6 [-]: RETURN R1 1  
+L 1:   7 [-]: NAMECALL R1 R0 K2 [0xED324116]
+       8 [-]: CALL R1 1 1  
+       9 [-]: FASTCALL1 62 R1 L2
+      10 [-]: MOVE R3 R1   
+      11 [-]: GETIMPORT R2 1 [nil]
+      12 [-]: CALL R2 1 1  
+L 2:  13 [-]: JUMPIFNOT R2 L4
+      14 [-]: GETIMPORT R3 4 [nil]
+      15 [-]: FASTCALL1 62 R3 L3
+      16 [-]: GETIMPORT R2 1 [nil]
+      17 [-]: CALL R2 1 1  
+L 3:  18 [-]: JUMPIF R2 L4 
+      19 [-]: GETIMPORT R2 4 [nil]
+      20 [-]: GETIMPORT R3 6 [nil]
+      21 [-]: LOADK R4 K7 [""]
+      22 [-]: CALL R3 1 1  
+      23 [-]: JUMPIFEQ R2 R3 L4
+      24 [-]: GETIMPORT R2 9 [nil]
+      25 [-]: GETIMPORT R4 4 [nil]
+      26 [-]: NAMECALL R5 R0 K10 [0xD1586535]
+      27 [-]: CALL R5 1 -1 
+      28 [-]: NAMECALL R2 R2 K11 [0xC7B81E8D]
+      29 [-]: CALL R2 -1 1 
+      30 [-]: MOVE R1 R2   
+L 4:  31 [-]: RETURN R1 1  
 
 
-; Function #3:
-;
 ; Name:            
 ; Defined at line: 40
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  4
-
-  1 [-]: SELF      R1 R0 K0     ; R2 := R0; R1 := R0[0xe223e2b1]
-  2 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  3 [-]: SELF      R2 R0 K1     ; R3 := R0; R2 := R0[0x388577d5]
-  4 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  5 [-]: CONCAT    R1 R1 R2     ; R1 := R1 .. R2
-  6 [-]: RETURN    R1 2         ; return R1
-  7 [-]: RETURN    R0 1         ; return 
-
-
-; Function #4:
-;
-; Name:            
-; Defined at line: 44
-; #Upvalues:       3
-; #Parameters:     1
-; Is_vararg:       0
 ; Max Stack Size:  6
 
-  1 [-]: GETGLOBAL R1 K0        ; R1 := 0x7b998233
-  2 [-]: MOVE      R2 R0        ; R2 := R0
-  3 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  4 [-]: TEST      R1 0         ; if not R1 then PC := 10
-  5 [-]: JMP       10           ; PC := 10
-  6 [-]: SELF      R1 R0 K1     ; R2 := R0; R1 := R0[0xd2715720]
-  7 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  8 [-]: LE        0 R1 K2      ; if R1 > 0.000000 then PC := 82
-  9 [-]: JMP       82           ; PC := 82
- 10 [-]: GETUPVAL  R1 U0        ; R1 := U0
- 11 [-]: MOVE      R2 R0        ; R2 := R0
- 12 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 13 [-]: GETGLOBAL R2 K0        ; R2 := 0x7b998233
- 14 [-]: MOVE      R3 R1        ; R3 := R1
- 15 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 16 [-]: TEST      R2 1         ; if R2 then PC := 22
- 17 [-]: JMP       22           ; PC := 22
- 18 [-]: SELF      R2 R1 K1     ; R3 := R1; R2 := R1[0xd2715720]
- 19 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 20 [-]: LE        0 R2 K2      ; if R2 > 0.000000 then PC := 44
- 21 [-]: JMP       44           ; PC := 44
- 22 [-]: GETGLOBAL R2 K3        ; R2 := 0x89326c93
- 23 [-]: SELF      R2 R2 K4     ; R3 := R2; R2 := R2[0x18d05d30]
- 24 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 25 [-]: TEST      R2 0         ; if not R2 then PC := 37
- 26 [-]: JMP       37           ; PC := 37
- 27 [-]: GETGLOBAL R2 K5        ; R2 := 0x3d106989
- 28 [-]: LOADK     R3 K6        ; R3 := "MechEvent: Host: Invalid generator entity (null or dead) for "
- 29 [-]: SELF      R4 R0 K7     ; R5 := R0; R4 := R0[0xe223e2b1]
- 30 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 31 [-]: LOADK     R5 K8        ; R5 := ". Destroying repeater!"
- 32 [-]: CONCAT    R3 R3 R5     ; R3 := R3 .. R4 .. R5
- 33 [-]: CALL      R2 2 1       ; R2(R3)
- 34 [-]: SELF      R2 R0 K9     ; R3 := R0; R2 := R0[0xa2880940]
- 35 [-]: CALL      R2 2 1       ; R2(R3)
- 36 [-]: JMP       43           ; PC := 43
- 37 [-]: GETGLOBAL R2 K5        ; R2 := 0x3d106989
- 38 [-]: LOADK     R3 K10       ; R3 := "MechEvent: Client: Invalid generator entity (null or dead) for "
- 39 [-]: SELF      R4 R0 K7     ; R5 := R0; R4 := R0[0xe223e2b1]
- 40 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 41 [-]: CONCAT    R3 R3 R4     ; R3 := R3 .. R4
- 42 [-]: CALL      R2 2 1       ; R2(R3)
- 43 [-]: RETURN    R0 1         ; return 
- 44 [-]: GETUPVAL  R2 U1        ; R2 := U1
- 45 [-]: MOVE      R3 R1        ; R3 := R1
- 46 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 47 [-]: GETGLOBAL R3 K0        ; R3 := 0x7b998233
- 48 [-]: GETGLOBAL R4 K11       ; R4 := _T
- 49 [-]: GETTABLE  R4 R4 K12    ; R4 := R4["Repeaters"]
- 50 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 51 [-]: TEST      R3 0         ; if not R3 then PC := 56
- 52 [-]: JMP       56           ; PC := 56
- 53 [-]: GETGLOBAL R3 K11       ; R3 := _T
- 54 [-]: NEWTABLE  R4 0 0       ; R4 := {}
- 55 [-]: SETTABLE  R3 K12 R4    ; R3["Repeaters"] := R4
- 56 [-]: GETGLOBAL R3 K0        ; R3 := 0x7b998233
- 57 [-]: GETGLOBAL R4 K11       ; R4 := _T
- 58 [-]: GETTABLE  R4 R4 K12    ; R4 := R4["Repeaters"]
- 59 [-]: GETTABLE  R4 R4 R2     ; R4 := R4[R2]
- 60 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 61 [-]: TEST      R3 0         ; if not R3 then PC := 67
- 62 [-]: JMP       67           ; PC := 67
- 63 [-]: GETGLOBAL R3 K11       ; R3 := _T
- 64 [-]: GETTABLE  R3 R3 K12    ; R3 := R3["Repeaters"]
- 65 [-]: NEWTABLE  R4 0 0       ; R4 := {}
- 66 [-]: SETTABLE  R3 R2 R4     ; R3[R2] := R4
- 67 [-]: GETGLOBAL R3 K13       ; R3 := 0x33bdd652
- 68 [-]: GETTABLE  R3 R3 K14    ; R3 := R3[0x23d5322f]
- 69 [-]: GETGLOBAL R4 K11       ; R4 := _T
- 70 [-]: GETTABLE  R4 R4 K12    ; R4 := R4["Repeaters"]
- 71 [-]: GETTABLE  R4 R4 R2     ; R4 := R4[R2]
- 72 [-]: MOVE      R5 R0        ; R5 := R0
- 73 [-]: CALL      R3 3 1       ; R3(R4,R5)
- 74 [-]: GETGLOBAL R3 K3        ; R3 := 0x89326c93
- 75 [-]: SELF      R3 R3 K4     ; R4 := R3; R3 := R3[0x18d05d30]
- 76 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 77 [-]: TEST      R3 0         ; if not R3 then PC := 82
- 78 [-]: JMP       82           ; PC := 82
- 79 [-]: GETUPVAL  R3 U2        ; R3 := U2
- 80 [-]: MOVE      R4 R0        ; R4 := R0
- 81 [-]: CALL      R3 2 1       ; R3(R4)
- 82 [-]: RETURN    R0 1         ; return 
+       0 [-]: NAMECALL R4 R0 K0 [0xE223E2B1]
+       1 [-]: CALL R4 1 1  
+       2 [-]: MOVE R2 R4   
+       3 [-]: NAMECALL R3 R0 K1 [0x388577D5]
+       4 [-]: CALL R3 1 1  
+       5 [-]: CONCAT R1 R2 R3
+       6 [-]: RETURN R1 1  
+
+
+; Name:            
+; Defined at line: 44
+; #Upvalues:       2
+; #Parameters:     1
+; Is_vararg:       0
+; Max Stack Size:  9
+
+       0 [-]: FASTCALL1 62 R0 L0
+       1 [-]: MOVE R2 R0   
+       2 [-]: GETIMPORT R1 1 [nil]
+       3 [-]: CALL R1 1 1  
+L 0:   4 [-]: JUMPIFNOT R1 L1
+       5 [-]: NAMECALL R1 R0 K2 [0xD2715720]
+       6 [-]: CALL R1 1 1  
+       7 [-]: LOADN R2 0   
+       8 [-]: JUMPIFNOTLE R1 R2 L11
+L 1:   9 [-]: GETUPVAL R1 0
+      10 [-]: MOVE R2 R0   
+      11 [-]: CALL R1 1 1  
+      12 [-]: FASTCALL1 62 R1 L2
+      13 [-]: MOVE R3 R1   
+      14 [-]: GETIMPORT R2 1 [nil]
+      15 [-]: CALL R2 1 1  
+L 2:  16 [-]: JUMPIF R2 L3 
+      17 [-]: NAMECALL R2 R1 K2 [0xD2715720]
+      18 [-]: CALL R2 1 1  
+      19 [-]: LOADN R3 0   
+      20 [-]: JUMPIFNOTLE R2 R3 L5
+L 3:  21 [-]: GETIMPORT R2 4 [nil]
+      22 [-]: NAMECALL R2 R2 K5 [0x18D05D30]
+      23 [-]: CALL R2 1 1  
+      24 [-]: JUMPIFNOT R2 L4
+      25 [-]: GETIMPORT R2 7 [nil]
+      26 [-]: LOADK R4 K8 ["MechEvent: Host: Invalid generator entity (null or dead) for "]
+      27 [-]: NAMECALL R7 R0 K9 [0xE223E2B1]
+      28 [-]: CALL R7 1 1  
+      29 [-]: MOVE R5 R7   
+      30 [-]: LOADK R6 K10 [". Destroying repeater!"]
+      31 [-]: CONCAT R3 R4 R6
+      32 [-]: CALL R2 1 0  
+      33 [-]: NAMECALL R2 R0 K11 [0xA2880940]
+      34 [-]: CALL R2 1 0  
+      35 [-]: RETURN R0 0  
+L 4:  36 [-]: GETIMPORT R2 7 [nil]
+      37 [-]: LOADK R4 K12 ["MechEvent: Client: Invalid generator entity (null or dead) for "]
+      38 [-]: NAMECALL R5 R0 K9 [0xE223E2B1]
+      39 [-]: CALL R5 1 1  
+      40 [-]: CONCAT R3 R4 R5
+      41 [-]: CALL R2 1 0  
+      42 [-]: RETURN R0 0  
+L 5:  43 [-]: NAMECALL R5 R1 K9 [0xE223E2B1]
+      44 [-]: CALL R5 1 1  
+      45 [-]: MOVE R3 R5   
+      46 [-]: NAMECALL R4 R1 K13 [0x388577D5]
+      47 [-]: CALL R4 1 1  
+      48 [-]: CONCAT R2 R3 R4
+      49 [-]: GETIMPORT R4 16 [nil]
+      50 [-]: FASTCALL1 62 R4 L6
+      51 [-]: GETIMPORT R3 1 [nil]
+      52 [-]: CALL R3 1 1  
+L 6:  53 [-]: JUMPIFNOT R3 L7
+      54 [-]: GETIMPORT R3 17 [nil]
+      55 [-]: NEWTABLE R4 0 0
+      56 [-]: SETTABLEKS R4 R3 K15 ["Repeaters"]
+L 7:  57 [-]: GETIMPORT R5 16 [nil]
+      58 [-]: GETTABLE R4 R5 R2
+      59 [-]: FASTCALL1 62 R4 L8
+      60 [-]: GETIMPORT R3 1 [nil]
+      61 [-]: CALL R3 1 1  
+L 8:  62 [-]: JUMPIFNOT R3 L9
+      63 [-]: GETIMPORT R3 16 [nil]
+      64 [-]: NEWTABLE R4 0 0
+      65 [-]: SETTABLE R4 R3 R2
+L 9:  66 [-]: GETIMPORT R5 16 [nil]
+      67 [-]: GETTABLE R4 R5 R2
+      68 [-]: FASTCALL2 52 R4 R0 L10
+      69 [-]: MOVE R5 R0   
+      70 [-]: GETIMPORT R3 20 [nil]
+      71 [-]: CALL R3 2 0  
+L10:  72 [-]: GETIMPORT R3 4 [nil]
+      73 [-]: NAMECALL R3 R3 K5 [0x18D05D30]
+      74 [-]: CALL R3 1 1  
+      75 [-]: JUMPIFNOT R3 L11
+      76 [-]: GETUPVAL R3 1
+      77 [-]: MOVE R4 R0   
+      78 [-]: CALL R3 1 0  
+L11:  79 [-]: RETURN R0 0  
+
 
 

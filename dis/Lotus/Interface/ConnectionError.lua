@@ -1,21 +1,17 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
-; Max Stack Size:  2
+; Is_vararg:       1
+; Max Stack Size:  1
 
-  1 [-]: CLOSURE   R0 0         ; R0 := closure(Function #1)
-  2 [-]: SETGLOBAL R0 K0        ; Initialize := R0
-  3 [-]: CLOSURE   R0 1         ; R0 := closure(Function #2)
-  4 [-]: SETGLOBAL R0 K1        ; Shutdown := R0
-  5 [-]: RETURN    R0 1         ; return 
+            1 [-]: DUPCLOSURE R0 K0 []
+       2 [-]: SETGLOBAL R0 K1 ["Initialize"]
+       3 [-]: DUPCLOSURE R0 K2 []
+       4 [-]: SETGLOBAL R0 K3 ["Shutdown"]
+       5 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 2
 ; #Upvalues:       0
@@ -23,27 +19,26 @@
 ; Is_vararg:       0
 ; Max Stack Size:  4
 
-  1 [-]: GETGLOBAL R0 K0        ; R0 := 0xae91e43b
-  2 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0x58bec6d6]
-  3 [-]: CONST     R2 0         ; R2 := 0.000000
-  4 [-]: CALL      R0 3 1       ; R0(R1,R2)
-  5 [-]: GETGLOBAL R0 K0        ; R0 := 0xae91e43b
-  6 [-]: SELF      R0 R0 K2     ; R1 := R0; R0 := R0[0x20b98db3]
-  7 [-]: LOADK     R2 K3        ; R2 := "connectionErrorMsg.text"
-  8 [-]: LOADK     R3 K4        ; R3 := "/Lotus/Language/Menu/ConnectionDelay"
-  9 [-]: CALL      R0 4 1       ; R0(R1,R2,R3)
- 10 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: LOADN R2 0   
+       2 [-]: NAMECALL R0 R0 K2 [0x58BEC6D6]
+       3 [-]: CALL R0 2 0  
+       4 [-]: GETIMPORT R0 1 [nil]
+       5 [-]: LOADK R2 K3 ["connectionErrorMsg.text"]
+       6 [-]: LOADK R3 K4 ["/Lotus/Language/Menu/ConnectionDelay"]
+       7 [-]: NAMECALL R0 R0 K5 [0x20B98DB3]
+       8 [-]: CALL R0 3 0  
+       9 [-]: RETURN R0 0  
 
 
-; Function #2:
-;
 ; Name:            
 ; Defined at line: 8
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
-; Max Stack Size:  2
+; Max Stack Size:  0
 
-  1 [-]: RETURN    R0 1         ; return 
+       0 [-]: RETURN R0 0  
+
 
 

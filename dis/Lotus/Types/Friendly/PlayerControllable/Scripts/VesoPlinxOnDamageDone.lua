@@ -1,91 +1,80 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
-; Max Stack Size:  2
+; Is_vararg:       1
+; Max Stack Size:  1
 
-  1 [-]: CLOSURE   R0 0         ; R0 := closure(Function #1)
-  2 [-]: SETGLOBAL R0 K0        ; OnDamageDone := R0
-  3 [-]: RETURN    R0 1         ; return 
+            1 [-]: DUPCLOSURE R0 K0 []
+       2 [-]: SETGLOBAL R0 K1 ["OnDamageDone"]
+       3 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
-; Max Stack Size:  11
+; Max Stack Size:  10
 
-  1 [-]: GETGLOBAL R3 K0        ; R3 := 0x7b998233
-  2 [-]: MOVE      R4 R2        ; R4 := R2
-  3 [-]: CALL      R3 2 2       ; R3 := R3(R4)
-  4 [-]: TEST      R3 1         ; if R3 then PC := 17
-  5 [-]: JMP       17           ; PC := 17
-  6 [-]: GETGLOBAL R3 K0        ; R3 := 0x7b998233
-  7 [-]: MOVE      R4 R1        ; R4 := R1
-  8 [-]: CALL      R3 2 2       ; R3 := R3(R4)
-  9 [-]: TEST      R3 1         ; if R3 then PC := 17
- 10 [-]: JMP       17           ; PC := 17
- 11 [-]: GETGLOBAL R3 K0        ; R3 := 0x7b998233
- 12 [-]: GETGLOBAL R4 K1        ; R4 := _T
- 13 [-]: GETTABLE  R4 R4 K2     ; R4 := R4["VesoMoas"]
- 14 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 15 [-]: TEST      R3 0         ; if not R3 then PC := 18
- 16 [-]: JMP       18           ; PC := 18
- 17 [-]: RETURN    R0 1         ; return 
- 18 [-]: GETGLOBAL R3 K3        ; R3 := 0x7ed0a956
- 19 [-]: LOADK     R4 K4        ; R4 := "/Lotus/Types/Friendly/PlayerControllable/VesoDummyBipedAvatar"
- 20 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 21 [-]: SELF      R4 R2 K5     ; R5 := R2; R4 := R2[0xf2deaf69]
- 22 [-]: MOVE      R6 R3        ; R6 := R3
- 23 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
- 24 [-]: TEST      R4 1         ; if R4 then PC := 27
- 25 [-]: JMP       27           ; PC := 27
- 26 [-]: RETURN    R0 1         ; return 
- 27 [-]: SELF      R4 R1 K6     ; R5 := R1; R4 := R1[0x36e85886]
- 28 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 29 [-]: EQ        0 R4 K8      ; if R4 ~= 1.000000 then PC := 66
- 30 [-]: JMP       66           ; PC := 66
- 31 [-]: SELF      R4 R1 K9     ; R5 := R1; R4 := R1[0x52de0ed7]
- 32 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 33 [-]: SELF      R4 R4 K10    ; R5 := R4; R4 := R4[0x35844cf2]
- 34 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 35 [-]: TEST      R4 0         ; if not R4 then PC := 66
- 36 [-]: JMP       66           ; PC := 66
- 37 [-]: CONST     R4 1         ; R4 := 1.000000
- 38 [-]: GETGLOBAL R5 K1        ; R5 := _T
- 39 [-]: GETTABLE  R5 R5 K2     ; R5 := R5["VesoMoas"]
- 40 [-]: LEN       R5 R5        ; R5 := # R5
- 41 [-]: CONST     R6 1         ; R6 := 1.000000
- 42 [-]: FORPREP   R4 65        ; R4 -= R6; PC := 65
- 43 [-]: GETGLOBAL R8 K1        ; R8 := _T
- 44 [-]: GETTABLE  R8 R8 K2     ; R8 := R8["VesoMoas"]
- 45 [-]: GETTABLE  R8 R8 R7     ; R8 := R8[R7]
- 46 [-]: GETTABLE  R8 R8 K11    ; R8 := R8["avatar"]
- 47 [-]: EQ        0 R2 R8      ; if R2 ~= R8 then PC := 65
- 48 [-]: JMP       65           ; PC := 65
- 49 [-]: SELF      R8 R2 K12    ; R9 := R2; R8 := R2[0xbf2cdad3]
- 50 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 51 [-]: TEST      R8 1         ; if R8 then PC := 64
- 52 [-]: JMP       64           ; PC := 64
- 53 [-]: SELF      R8 R2 K13    ; R9 := R2; R8 := R2[0x1ac1655c]
- 54 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 55 [-]: SELF      R8 R8 K14    ; R9 := R8; R8 := R8[0xe6f43518]
- 56 [-]: CONST     R10 5        ; R10 := 5.000000
- 57 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
- 58 [-]: TEST      R8 1         ; if R8 then PC := 64
- 59 [-]: JMP       64           ; PC := 64
- 60 [-]: GETGLOBAL R8 K1        ; R8 := _T
- 61 [-]: GETTABLE  R8 R8 K2     ; R8 := R8["VesoMoas"]
- 62 [-]: GETTABLE  R8 R8 R7     ; R8 := R8[R7]
- 63 [-]: SETTABLE  R8 K15 K16   ; R8["triggerSD"] := true
- 64 [-]: RETURN    R0 1         ; return 
- 65 [-]: FORLOOP   R4 43        ; R4 += R6; if R4 <= R5 then begin PC := 43; R7 := R4 end
- 66 [-]: RETURN    R0 1         ; return 
+       0 [-]: FASTCALL1 62 R2 L0
+       1 [-]: MOVE R4 R2   
+       2 [-]: GETIMPORT R3 1 [nil]
+       3 [-]: CALL R3 1 1  
+L 0:   4 [-]: JUMPIF R3 L3 
+       5 [-]: FASTCALL1 62 R1 L1
+       6 [-]: MOVE R4 R1   
+       7 [-]: GETIMPORT R3 1 [nil]
+       8 [-]: CALL R3 1 1  
+L 1:   9 [-]: JUMPIF R3 L3 
+      10 [-]: GETIMPORT R4 4 [nil]
+      11 [-]: FASTCALL1 62 R4 L2
+      12 [-]: GETIMPORT R3 1 [nil]
+      13 [-]: CALL R3 1 1  
+L 2:  14 [-]: JUMPIFNOT R3 L4
+L 3:  15 [-]: RETURN R0 0  
+L 4:  16 [-]: GETIMPORT R3 6 [nil]
+      17 [-]: LOADK R4 K7 ["/Lotus/Types/Friendly/PlayerControllable/VesoDummyBipedAvatar"]
+      18 [-]: CALL R3 1 1  
+      19 [-]: MOVE R6 R3   
+      20 [-]: NAMECALL R4 R2 K8 [0xF2DEAF69]
+      21 [-]: CALL R4 2 1  
+      22 [-]: JUMPIF R4 L5 
+      23 [-]: RETURN R0 0  
+L 5:  24 [-]: NAMECALL R4 R1 K9 [0x36E85886]
+      25 [-]: CALL R4 1 1  
+      26 [-]: LOADN R5 1   
+      27 [-]: JUMPIFNOTEQ R4 R5 L9
+      28 [-]: NAMECALL R4 R1 K10 [0x52DE0ED7]
+      29 [-]: CALL R4 1 1  
+      30 [-]: NAMECALL R4 R4 K11 [0x35844CF2]
+      31 [-]: CALL R4 1 1  
+      32 [-]: JUMPIFNOT R4 L9
+      33 [-]: LOADN R6 1   
+      34 [-]: GETIMPORT R7 4 [nil]
+      35 [-]: LENGTH R4 R7 
+      36 [-]: LOADN R5 1   
+      37 [-]: FORNPREP R4 L9
+L 6:  38 [-]: GETIMPORT R9 4 [nil]
+      39 [-]: GETTABLE R8 R9 R6
+      40 [-]: GETTABLEKS R7 R8 K12 ["avatar"]
+      41 [-]: JUMPIFNOTEQ R2 R7 L8
+      42 [-]: NAMECALL R7 R2 K13 [0xBF2CDAD3]
+      43 [-]: CALL R7 1 1  
+      44 [-]: JUMPIF R7 L7 
+      45 [-]: NAMECALL R7 R2 K14 [0x1AC1655C]
+      46 [-]: CALL R7 1 1  
+      47 [-]: LOADN R9 5   
+      48 [-]: NAMECALL R7 R7 K15 [0xE6F43518]
+      49 [-]: CALL R7 2 1  
+      50 [-]: JUMPIF R7 L7 
+      51 [-]: GETIMPORT R8 4 [nil]
+      52 [-]: GETTABLE R7 R8 R6
+      53 [-]: LOADB R8 1   
+      54 [-]: SETTABLEKS R8 R7 K16 ["triggerSD"]
+L 7:  55 [-]: RETURN R0 0  
+L 8:  56 [-]: FORNLOOP R4 L6
+L 9:  57 [-]: RETURN R0 0  
+
 
 

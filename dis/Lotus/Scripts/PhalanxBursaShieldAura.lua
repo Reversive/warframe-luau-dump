@@ -1,21 +1,17 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
-; Max Stack Size:  2
+; Is_vararg:       1
+; Max Stack Size:  1
 
-  1 [-]: CLOSURE   R0 0         ; R0 := closure(Function #1)
-  2 [-]: SETGLOBAL R0 K0        ; OnAuraEntered := R0
-  3 [-]: CLOSURE   R0 1         ; R0 := closure(Function #2)
-  4 [-]: SETGLOBAL R0 K1        ; OnAuraExited := R0
-  5 [-]: RETURN    R0 1         ; return 
+            1 [-]: DUPCLOSURE R0 K0 []
+       2 [-]: SETGLOBAL R0 K1 ["OnAuraEntered"]
+       3 [-]: DUPCLOSURE R0 K2 []
+       4 [-]: SETGLOBAL R0 K3 ["OnAuraExited"]
+       5 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 1
 ; #Upvalues:       0
@@ -23,36 +19,33 @@
 ; Is_vararg:       0
 ; Max Stack Size:  13
 
-  1 [-]: SELF      R4 R1 K0     ; R5 := R1; R4 := R1[0x1ac1655c]
-  2 [-]: CALL      R4 2 2       ; R4 := R4(R5)
-  3 [-]: SELF      R5 R4 K1     ; R6 := R4; R5 := R4[0xf2deaf69]
-  4 [-]: GETGLOBAL R7 K2        ; R7 := gLotusDamageControllerType
-  5 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
-  6 [-]: TEST      R5 0         ; if not R5 then PC := 26
-  7 [-]: JMP       26           ; PC := 26
-  8 [-]: SELF      R5 R4 K3     ; R6 := R4; R5 := R4[0xee26767f]
-  9 [-]: CALL      R5 2 1       ; R5(R6)
- 10 [-]: SELF      R5 R4 K4     ; R6 := R4; R5 := R4[0x57369b8b]
- 11 [-]: SELF      R7 R4 K5     ; R8 := R4; R7 := R4[0xb87f958d]
- 12 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 13 [-]: LOADKB    R8 1 0       ; R8 := true
- 14 [-]: CALL      R5 4 1       ; R5(R6,R7,R8)
- 15 [-]: SELF      R5 R0 K6     ; R6 := R0; R5 := R0[0xed4e0128]
- 16 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 17 [-]: SELF      R6 R4 K7     ; R7 := R4; R6 := R4[0xeb3c14da]
- 18 [-]: GETGLOBAL R8 K8        ; R8 := 0x0469f296
- 19 [-]: MOVE      R9 R5        ; R9 := R5
- 20 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 21 [-]: CONST     R9 25        ; R9 := 25.000000
- 22 [-]: CONST     R10 6        ; R10 := 6.000000
- 23 [-]: CONST     R11 0        ; R11 := 0.000000
- 24 [-]: LOADK     R12 K10      ; R12 := 0.100000
- 25 [-]: CALL      R6 7 1       ; R6(R7,R8,R9,R10,R11,R12)
- 26 [-]: RETURN    R0 1         ; return 
+       0 [-]: NAMECALL R4 R1 K0 [0x1AC1655C]
+       1 [-]: CALL R4 1 1  
+       2 [-]: GETIMPORT R7 2 [nil]
+       3 [-]: NAMECALL R5 R4 K3 [0xF2DEAF69]
+       4 [-]: CALL R5 2 1  
+       5 [-]: JUMPIFNOT R5 L0
+       6 [-]: NAMECALL R5 R4 K4 [0xEE26767F]
+       7 [-]: CALL R5 1 0  
+       8 [-]: NAMECALL R7 R4 K5 [0xB87F958D]
+       9 [-]: CALL R7 1 1  
+      10 [-]: LOADB R8 1   
+      11 [-]: NAMECALL R5 R4 K6 [0x57369B8B]
+      12 [-]: CALL R5 3 0  
+      13 [-]: NAMECALL R5 R0 K7 [0xED4E0128]
+      14 [-]: CALL R5 1 1  
+      15 [-]: GETIMPORT R8 9 [nil]
+      16 [-]: MOVE R9 R5   
+      17 [-]: CALL R8 1 1  
+      18 [-]: LOADN R9 25  
+      19 [-]: LOADN R10 6  
+      20 [-]: LOADN R11 0  
+      21 [-]: LOADK R12 K10 [0.10000000000000001]
+      22 [-]: NAMECALL R6 R4 K11 [0xEB3C14DA]
+      23 [-]: CALL R6 6 0  
+L 0:  24 [-]: RETURN R0 0  
 
 
-; Function #2:
-;
 ; Name:            
 ; Defined at line: 11
 ; #Upvalues:       0
@@ -60,27 +53,27 @@
 ; Is_vararg:       0
 ; Max Stack Size:  10
 
-  1 [-]: SELF      R4 R1 K0     ; R5 := R1; R4 := R1[0x1ac1655c]
-  2 [-]: CALL      R4 2 2       ; R4 := R4(R5)
-  3 [-]: SELF      R5 R4 K1     ; R6 := R4; R5 := R4[0xf2deaf69]
-  4 [-]: GETGLOBAL R7 K2        ; R7 := gLotusDamageControllerType
-  5 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
-  6 [-]: TEST      R5 0         ; if not R5 then PC := 22
-  7 [-]: JMP       22           ; PC := 22
-  8 [-]: SELF      R5 R4 K3     ; R6 := R4; R5 := R4[0xecc40432]
-  9 [-]: CALL      R5 2 1       ; R5(R6)
- 10 [-]: SELF      R5 R4 K4     ; R6 := R4; R5 := R4[0x57369b8b]
- 11 [-]: SELF      R7 R4 K5     ; R8 := R4; R7 := R4[0xb87f958d]
- 12 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 13 [-]: LOADKB    R8 1 0       ; R8 := true
- 14 [-]: CALL      R5 4 1       ; R5(R6,R7,R8)
- 15 [-]: SELF      R5 R0 K6     ; R6 := R0; R5 := R0[0xed4e0128]
- 16 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 17 [-]: SELF      R6 R4 K7     ; R7 := R4; R6 := R4[0x55481e0d]
- 18 [-]: GETGLOBAL R8 K8        ; R8 := 0x0469f296
- 19 [-]: MOVE      R9 R5        ; R9 := R5
- 20 [-]: CALL      R8 2 0       ; R8,... := R8(R9)
- 21 [-]: CALL      R6 0 1       ; R6(R7,...)
- 22 [-]: RETURN    R0 1         ; return 
+       0 [-]: NAMECALL R4 R1 K0 [0x1AC1655C]
+       1 [-]: CALL R4 1 1  
+       2 [-]: GETIMPORT R7 2 [nil]
+       3 [-]: NAMECALL R5 R4 K3 [0xF2DEAF69]
+       4 [-]: CALL R5 2 1  
+       5 [-]: JUMPIFNOT R5 L0
+       6 [-]: NAMECALL R5 R4 K4 [0xECC40432]
+       7 [-]: CALL R5 1 0  
+       8 [-]: NAMECALL R7 R4 K5 [0xB87F958D]
+       9 [-]: CALL R7 1 1  
+      10 [-]: LOADB R8 1   
+      11 [-]: NAMECALL R5 R4 K6 [0x57369B8B]
+      12 [-]: CALL R5 3 0  
+      13 [-]: NAMECALL R5 R0 K7 [0xED4E0128]
+      14 [-]: CALL R5 1 1  
+      15 [-]: GETIMPORT R8 9 [nil]
+      16 [-]: MOVE R9 R5   
+      17 [-]: CALL R8 1 -1 
+      18 [-]: NAMECALL R6 R4 K10 [0x55481E0D]
+      19 [-]: CALL R6 -1 0 
+L 0:  20 [-]: RETURN R0 0  
+
 
 

@@ -1,19 +1,15 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
-; Max Stack Size:  2
+; Is_vararg:       1
+; Max Stack Size:  1
 
-  1 [-]: CLOSURE   R0 0         ; R0 := closure(Function #1)
-  2 [-]: SETGLOBAL R0 K0        ; InitializeHoloBase := R0
-  3 [-]: RETURN    R0 1         ; return 
+            1 [-]: DUPCLOSURE R0 K0 []
+       2 [-]: SETGLOBAL R0 K1 ["InitializeHoloBase"]
+       3 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 4
 ; #Upvalues:       0
@@ -21,32 +17,33 @@
 ; Is_vararg:       0
 ; Max Stack Size:  11
 
-  1 [-]: GETGLOBAL R1 K0        ; R1 := 0xcbd666e1
-  2 [-]: CONST     R2 0         ; R2 := 0.000000
-  3 [-]: CALL      R1 2 1       ; R1(R2)
-  4 [-]: GETGLOBAL R1 K1        ; R1 := 0x9ba7909f
-  5 [-]: SELF      R1 R1 K2     ; R2 := R1; R1 := R1[0x6dd7aa66]
-  6 [-]: GETGLOBAL R3 K3        ; R3 := 0xe941c1c5
-  7 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
-  8 [-]: SELF      R2 R1 K4     ; R3 := R1; R2 := R1[0xe395d771]
-  9 [-]: MOVE      R4 R0        ; R4 := R0
- 10 [-]: GETGLOBAL R5 K5        ; R5 := 0xa421af95
- 11 [-]: CONST     R6 0         ; R6 := 0.000000
- 12 [-]: CONST     R7 1         ; R7 := 1.000000
- 13 [-]: CONST     R8 0         ; R8 := -0.500000
- 14 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
- 15 [-]: MUL       R5 R5 K6     ; R5 := R5 * 0.400000
- 16 [-]: GETGLOBAL R6 K7        ; R6 := 0x00046924
- 17 [-]: CONST     R7 180       ; R7 := 180.000000
- 18 [-]: CONST     R8 0         ; R8 := 0.000000
- 19 [-]: CONST     R9 0         ; R9 := 0.000000
- 20 [-]: CALL      R6 4 2       ; R6 := R6(R7,R8,R9)
- 21 [-]: GETGLOBAL R7 K5        ; R7 := 0xa421af95
- 22 [-]: CONST     R8 4         ; R8 := 4.000000
- 23 [-]: CONST     R9 4         ; R9 := 4.000000
- 24 [-]: CONST     R10 4        ; R10 := 4.000000
- 25 [-]: CALL      R7 4 0       ; R7,... := R7(R8,R9,R10)
- 26 [-]: CALL      R2 0 1       ; R2(R3,...)
- 27 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R1 1 [nil]
+       1 [-]: LOADN R2 0   
+       2 [-]: CALL R1 1 0  
+       3 [-]: GETIMPORT R1 3 [nil]
+       4 [-]: GETIMPORT R3 5 [nil]
+       5 [-]: NAMECALL R1 R1 K6 [0x6DD7AA66]
+       6 [-]: CALL R1 2 1  
+       7 [-]: MOVE R4 R0   
+       8 [-]: GETIMPORT R6 9 [nil]
+       9 [-]: LOADN R7 0   
+      10 [-]: LOADN R8 1   
+      11 [-]: LOADK R9 K10 [-0.5]
+      12 [-]: CALL R6 3 1  
+      13 [-]: MULK R5 R6 K7 [0.40000000000000002]
+      14 [-]: GETIMPORT R6 12 [nil]
+      15 [-]: LOADN R7 180 
+      16 [-]: LOADN R8 0   
+      17 [-]: LOADN R9 0   
+      18 [-]: CALL R6 3 1  
+      19 [-]: GETIMPORT R7 9 [nil]
+      20 [-]: LOADN R8 4   
+      21 [-]: LOADN R9 4   
+      22 [-]: LOADN R10 4  
+      23 [-]: CALL R7 3 -1 
+      24 [-]: NAMECALL R2 R1 K13 [0xE395D771]
+      25 [-]: CALL R2 -1 0 
+      26 [-]: RETURN R0 0  
+
 
 

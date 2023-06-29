@@ -1,46 +1,39 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
-; Max Stack Size:  2
+; Is_vararg:       1
+; Max Stack Size:  1
 
-  1 [-]: CLOSURE   R0 0         ; R0 := closure(Function #1)
-  2 [-]: SETGLOBAL R0 K0        ; MatchTagEvent := R0
-  3 [-]: RETURN    R0 1         ; return 
+            1 [-]: DUPCLOSURE R0 K0 []
+       2 [-]: SETGLOBAL R0 K1 ["MatchTagEvent"]
+       3 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 4
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
-; Max Stack Size:  8
+; Max Stack Size:  7
 
-  1 [-]: TEST      R1 0         ; if not R1 then PC := 19
-  2 [-]: JMP       19           ; PC := 19
-  3 [-]: EQ        1 R1 K0      ; if R1 == "" then PC := 19
-  4 [-]: JMP       19           ; PC := 19
-  5 [-]: CONST     R2 1         ; R2 := 1.000000
-  6 [-]: GETGLOBAL R3 K1        ; R3 := 0x51cb4e17
-  7 [-]: LEN       R3 R3        ; R3 := # R3
-  8 [-]: CONST     R4 1         ; R4 := 1.000000
-  9 [-]: FORPREP   R2 18        ; R2 -= R4; PC := 18
- 10 [-]: GETGLOBAL R6 K1        ; R6 := 0x51cb4e17
- 11 [-]: GETTABLE  R6 R6 R5     ; R6 := R6[R5]
- 12 [-]: SELF      R6 R6 K2     ; R7 := R6; R6 := R6[0x6d604ba7]
- 13 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 14 [-]: EQ        0 R1 R6      ; if R1 ~= R6 then PC := 18
- 15 [-]: JMP       18           ; PC := 18
- 16 [-]: LOADKB    R6 1 0       ; R6 := true
- 17 [-]: RETURN    R6 2         ; return R6
- 18 [-]: FORLOOP   R2 10        ; R2 += R4; if R2 <= R3 then begin PC := 10; R5 := R2 end
- 19 [-]: LOADKB    R6 0 0       ; R6 := false
- 20 [-]: RETURN    R6 2         ; return R6
- 21 [-]: RETURN    R0 1         ; return 
+       0 [-]: JUMPIFNOT R1 L2
+       1 [-]: JUMPXEQKS R1 K0 L2 [""]
+       2 [-]: LOADN R4 1   
+       3 [-]: GETIMPORT R5 2 [nil]
+       4 [-]: LENGTH R2 R5 
+       5 [-]: LOADN R3 1   
+       6 [-]: FORNPREP R2 L2
+L 0:   7 [-]: GETIMPORT R6 2 [nil]
+       8 [-]: GETTABLE R5 R6 R4
+       9 [-]: NAMECALL R5 R5 K3 [0x6D604BA7]
+      10 [-]: CALL R5 1 1  
+      11 [-]: JUMPIFNOTEQ R1 R5 L1
+      12 [-]: LOADB R5 1   
+      13 [-]: RETURN R5 1  
+L 1:  14 [-]: FORNLOOP R2 L0
+L 2:  15 [-]: LOADB R2 0   
+      16 [-]: RETURN R2 1  
+
 
 

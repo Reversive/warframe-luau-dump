@@ -1,23 +1,19 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
+; Is_vararg:       1
 ; Max Stack Size:  3
 
-  1 [-]: CLOSURE   R0 0         ; R0 := closure(Function #1)
-  2 [-]: CLOSURE   R1 1         ; R1 := closure(Function #2)
-  3 [-]: CLOSURE   R2 2         ; R2 := closure(Function #3)
-  4 [-]: MOVE      R0 R0        ; R0 := R0
-  5 [-]: MOVE      R0 R1        ; R0 := R1
-  6 [-]: SETGLOBAL R2 K0        ; MatchTagEvent := R2
-  7 [-]: RETURN    R0 1         ; return 
+            1 [-]: DUPCLOSURE R0 K0 []
+       2 [-]: DUPCLOSURE R1 K1 []
+       3 [-]: DUPCLOSURE R2 K2 []
+       4 [-]: MOVE R0 R0   
+       5 [-]: MOVE R0 R1   
+       6 [-]: SETGLOBAL R2 K3 ["MatchTagEvent"]
+       7 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 4
 ; #Upvalues:       0
@@ -25,27 +21,23 @@
 ; Is_vararg:       0
 ; Max Stack Size:  7
 
-  1 [-]: CONST     R1 1         ; R1 := 1.000000
-  2 [-]: GETGLOBAL R2 K0        ; R2 := 0xe5826dc2
-  3 [-]: LEN       R2 R2        ; R2 := # R2
-  4 [-]: CONST     R3 1         ; R3 := 1.000000
-  5 [-]: FORPREP   R1 14        ; R1 -= R3; PC := 14
-  6 [-]: GETGLOBAL R5 K1        ; R5 := 0x64fb1586
-  7 [-]: GETGLOBAL R6 K0        ; R6 := 0xe5826dc2
-  8 [-]: GETTABLE  R6 R6 R4     ; R6 := R6[R4]
-  9 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 10 [-]: EQ        0 R0 R5      ; if R0 ~= R5 then PC := 14
- 11 [-]: JMP       14           ; PC := 14
- 12 [-]: LOADKB    R5 1 0       ; R5 := true
- 13 [-]: RETURN    R5 2         ; return R5
- 14 [-]: FORLOOP   R1 6         ; R1 += R3; if R1 <= R2 then begin PC := 6; R4 := R1 end
- 15 [-]: LOADKB    R5 0 0       ; R5 := false
- 16 [-]: RETURN    R5 2         ; return R5
- 17 [-]: RETURN    R0 1         ; return 
+       0 [-]: LOADN R3 1   
+       1 [-]: GETIMPORT R4 1 [nil]
+       2 [-]: LENGTH R1 R4 
+       3 [-]: LOADN R2 1   
+       4 [-]: FORNPREP R1 L2
+L 0:   5 [-]: GETIMPORT R4 3 [nil]
+       6 [-]: GETIMPORT R6 1 [nil]
+       7 [-]: GETTABLE R5 R6 R3
+       8 [-]: CALL R4 1 1  
+       9 [-]: JUMPIFNOTEQ R0 R4 L1
+      10 [-]: LOADB R4 1   
+      11 [-]: RETURN R4 1  
+L 1:  12 [-]: FORNLOOP R1 L0
+L 2:  13 [-]: LOADB R1 0   
+      14 [-]: RETURN R1 1  
 
 
-; Function #2:
-;
 ; Name:            
 ; Defined at line: 13
 ; #Upvalues:       0
@@ -53,26 +45,21 @@
 ; Is_vararg:       0
 ; Max Stack Size:  9
 
-  1 [-]: GETGLOBAL R1 K0        ; R1 := 0xcfc01047
-  2 [-]: GETGLOBAL R2 K1        ; R2 := 0x46c57b9b
-  3 [-]: CALL      R1 2 4       ; R1,R2,R3 := R1(R2)
-  4 [-]: JMP       12           ; PC := 12
-  5 [-]: SELF      R6 R0 K2     ; R7 := R0; R6 := R0[0xf2deaf69]
-  6 [-]: MOVE      R8 R5        ; R8 := R5
-  7 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
-  8 [-]: TEST      R6 0         ; if not R6 then PC := 12
-  9 [-]: JMP       12           ; PC := 12
- 10 [-]: LOADKB    R6 1 0       ; R6 := true
- 11 [-]: RETURN    R6 2         ; return R6
- 12 [-]: TFORLOOP  R1 2         ; R4,R5 :=  R1(R2,R3); if R4 ~= nil then begin PC = 5; R3 := R4 end
- 13 [-]: JMP       5            ; PC := 5
- 14 [-]: LOADKB    R6 0 0       ; R6 := false
- 15 [-]: RETURN    R6 2         ; return R6
- 16 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R1 1 [nil]
+       1 [-]: GETIMPORT R2 3 [nil]
+       2 [-]: CALL R1 1 3  
+       3 [-]: FORGPREP_NEXT R1 L1
+L 0:   4 [-]: MOVE R8 R5   
+       5 [-]: NAMECALL R6 R0 K4 [0xF2DEAF69]
+       6 [-]: CALL R6 2 1  
+       7 [-]: JUMPIFNOT R6 L1
+       8 [-]: LOADB R6 1   
+       9 [-]: RETURN R6 1  
+L 1:  10 [-]: FORGLOOP R1 L0 2
+      11 [-]: LOADB R1 0   
+      12 [-]: RETURN R1 1  
 
 
-; Function #3:
-;
 ; Name:            
 ; Defined at line: 22
 ; #Upvalues:       2
@@ -80,32 +67,30 @@
 ; Is_vararg:       0
 ; Max Stack Size:  6
 
-  1 [-]: GETGLOBAL R4 K0        ; R4 := 0x7b998233
-  2 [-]: MOVE      R5 R3        ; R5 := R3
-  3 [-]: CALL      R4 2 2       ; R4 := R4(R5)
-  4 [-]: TEST      R4 1         ; if R4 then PC := 11
-  5 [-]: JMP       11           ; PC := 11
-  6 [-]: GETGLOBAL R4 K0        ; R4 := 0x7b998233
-  7 [-]: MOVE      R5 R0        ; R5 := R0
-  8 [-]: CALL      R4 2 2       ; R4 := R4(R5)
-  9 [-]: TEST      R4 0         ; if not R4 then PC := 13
- 10 [-]: JMP       13           ; PC := 13
- 11 [-]: LOADKB    R4 0 0       ; R4 := false
- 12 [-]: RETURN    R4 2         ; return R4
- 13 [-]: GETUPVAL  R4 U0        ; R4 := U0
- 14 [-]: MOVE      R5 R1        ; R5 := R1
- 15 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 16 [-]: TEST      R4 0         ; if not R4 then PC := 25
- 17 [-]: JMP       25           ; PC := 25
- 18 [-]: GETUPVAL  R4 U1        ; R4 := U1
- 19 [-]: MOVE      R5 R3        ; R5 := R3
- 20 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 21 [-]: TEST      R4 0         ; if not R4 then PC := 25
- 22 [-]: JMP       25           ; PC := 25
- 23 [-]: LOADKB    R4 1 0       ; R4 := true
- 24 [-]: RETURN    R4 2         ; return R4
- 25 [-]: LOADKB    R4 0 0       ; R4 := false
- 26 [-]: RETURN    R4 2         ; return R4
- 27 [-]: RETURN    R0 1         ; return 
+       0 [-]: FASTCALL1 62 R3 L0
+       1 [-]: MOVE R5 R3   
+       2 [-]: GETIMPORT R4 1 [nil]
+       3 [-]: CALL R4 1 1  
+L 0:   4 [-]: JUMPIF R4 L2 
+       5 [-]: FASTCALL1 62 R0 L1
+       6 [-]: MOVE R5 R0   
+       7 [-]: GETIMPORT R4 1 [nil]
+       8 [-]: CALL R4 1 1  
+L 1:   9 [-]: JUMPIFNOT R4 L3
+L 2:  10 [-]: LOADB R4 0   
+      11 [-]: RETURN R4 1  
+L 3:  12 [-]: GETUPVAL R4 0
+      13 [-]: MOVE R5 R1   
+      14 [-]: CALL R4 1 1  
+      15 [-]: JUMPIFNOT R4 L4
+      16 [-]: GETUPVAL R4 1
+      17 [-]: MOVE R5 R3   
+      18 [-]: CALL R4 1 1  
+      19 [-]: JUMPIFNOT R4 L4
+      20 [-]: LOADB R4 1   
+      21 [-]: RETURN R4 1  
+L 4:  22 [-]: LOADB R4 0   
+      23 [-]: RETURN R4 1  
+
 
 

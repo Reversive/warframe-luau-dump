@@ -1,73 +1,69 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
+; Is_vararg:       1
 ; Max Stack Size:  16
 
-  1 [-]: GETGLOBAL R0 K0        ; R0 := 0x0469f296
-  2 [-]: LOADK     R1 K1        ; R1 := "Corpus"
-  3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: GETGLOBAL R1 K0        ; R1 := 0x0469f296
-  5 [-]: LOADK     R2 K2        ; R2 := "ShrineMarker"
-  6 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  7 [-]: GETGLOBAL R2 K3        ; R2 := 0x7ed0a956
-  8 [-]: LOADK     R3 K4        ; R3 := "/Lotus/Types/Game/AutoTurretAvatar"
-  9 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 10 [-]: GETGLOBAL R3 K3        ; R3 := 0x7ed0a956
- 11 [-]: LOADK     R4 K5        ; R4 := "/Lotus/Types/Game/SecurityCameraAvatar"
- 12 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 13 [-]: GETGLOBAL R4 K3        ; R4 := 0x7ed0a956
- 14 [-]: LOADK     R5 K6        ; R5 := "/Lotus/Types/Items/Tokens/GreedTokens/GreedTokenBasePickup"
- 15 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 16 [-]: GETGLOBAL R5 K3        ; R5 := 0x7ed0a956
- 17 [-]: LOADK     R6 K7        ; R6 := "/Lotus/Types/Enemies/Corpus/Aristocrats/Avatars/AristocratManagerAvatar"
- 18 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 19 [-]: GETGLOBAL R6 K8        ; R6 := 0x2d0fad09
- 20 [-]: LOADK     R7 K9        ; R7 := "Lotus.Scripts.Libs.PanicLib"
- 21 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 22 [-]: CONST     R7 0         ; R7 := 0.000000
- 23 [-]: CONST     R8 0         ; R8 := 0.000000
- 24 [-]: LOADNIL   R9 R9        ; R9 := nil
- 25 [-]: GETGLOBAL R10 K0       ; R10 := 0x0469f296
- 26 [-]: LOADK     R11 K10      ; R11 := "AristoManagerTimer"
- 27 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 28 [-]: GETGLOBAL R11 K0       ; R11 := 0x0469f296
- 29 [-]: LOADK     R12 K11      ; R12 := "AristoManagerKillCount"
- 30 [-]: CALL      R11 2 2      ; R11 := R11(R12)
- 31 [-]: CLOSURE   R12 0        ; R12 := closure(Function #1)
- 32 [-]: CLOSURE   R13 1        ; R13 := closure(Function #2)
- 33 [-]: CLOSURE   R14 2        ; R14 := closure(Function #3)
- 34 [-]: MOVE      R0 R0        ; R0 := R0
- 35 [-]: MOVE      R0 R2        ; R0 := R2
- 36 [-]: MOVE      R0 R3        ; R0 := R3
- 37 [-]: MOVE      R0 R8        ; R0 := R8
- 38 [-]: MOVE      R0 R11       ; R0 := R11
- 39 [-]: SETGLOBAL R14 K12      ; OnDeath := R14
- 40 [-]: CLOSURE   R14 3        ; R14 := closure(Function #4)
- 41 [-]: MOVE      R0 R9        ; R0 := R9
- 42 [-]: CLOSURE   R15 4        ; R15 := closure(Function #5)
- 43 [-]: MOVE      R0 R4        ; R0 := R4
- 44 [-]: MOVE      R0 R5        ; R0 := R5
- 45 [-]: MOVE      R0 R0        ; R0 := R0
- 46 [-]: MOVE      R0 R12       ; R0 := R12
- 47 [-]: MOVE      R0 R1        ; R0 := R1
- 48 [-]: MOVE      R0 R13       ; R0 := R13
- 49 [-]: MOVE      R0 R9        ; R0 := R9
- 50 [-]: MOVE      R0 R7        ; R0 := R7
- 51 [-]: MOVE      R0 R10       ; R0 := R10
- 52 [-]: MOVE      R0 R8        ; R0 := R8
- 53 [-]: MOVE      R0 R11       ; R0 := R11
- 54 [-]: MOVE      R0 R14       ; R0 := R14
- 55 [-]: MOVE      R0 R6        ; R0 := R6
- 56 [-]: SETGLOBAL R15 K13      ; ManagerSpawnLogic := R15
- 57 [-]: RETURN    R0 1         ; return 
+            1 [-]: GETIMPORT R0 1 [nil]
+       2 [-]: LOADK R1 K2 ["Corpus"]
+       3 [-]: CALL R0 1 1  
+       4 [-]: GETIMPORT R1 1 [nil]
+       5 [-]: LOADK R2 K3 ["ShrineMarker"]
+       6 [-]: CALL R1 1 1  
+       7 [-]: GETIMPORT R2 5 [nil]
+       8 [-]: LOADK R3 K6 ["/Lotus/Types/Game/AutoTurretAvatar"]
+       9 [-]: CALL R2 1 1  
+      10 [-]: GETIMPORT R3 5 [nil]
+      11 [-]: LOADK R4 K7 ["/Lotus/Types/Game/SecurityCameraAvatar"]
+      12 [-]: CALL R3 1 1  
+      13 [-]: GETIMPORT R4 5 [nil]
+      14 [-]: LOADK R5 K8 ["/Lotus/Types/Items/Tokens/GreedTokens/GreedTokenBasePickup"]
+      15 [-]: CALL R4 1 1  
+      16 [-]: GETIMPORT R5 5 [nil]
+      17 [-]: LOADK R6 K9 ["/Lotus/Types/Enemies/Corpus/Aristocrats/Avatars/AristocratManagerAvatar"]
+      18 [-]: CALL R5 1 1  
+      19 [-]: GETIMPORT R6 11 [nil]
+      20 [-]: LOADK R7 K12 ["Lotus.Scripts.Libs.PanicLib"]
+      21 [-]: CALL R6 1 1  
+      22 [-]: LOADN R7 0   
+      23 [-]: LOADN R8 0   
+      24 [-]: LOADNIL R9   
+      25 [-]: GETIMPORT R10 1 [nil]
+      26 [-]: LOADK R11 K13 ["AristoManagerTimer"]
+      27 [-]: CALL R10 1 1 
+      28 [-]: GETIMPORT R11 1 [nil]
+      29 [-]: LOADK R12 K14 ["AristoManagerKillCount"]
+      30 [-]: CALL R11 1 1 
+      31 [-]: DUPCLOSURE R12 K15 []
+      32 [-]: DUPCLOSURE R13 K16 []
+      33 [-]: NEWCLOSURE R14 P2
+      34 [-]: MOVE R0 R0   
+      35 [-]: MOVE R0 R2   
+      36 [-]: MOVE R0 R3   
+      37 [-]: MOVE R1 R8   
+      38 [-]: MOVE R0 R11  
+      39 [-]: SETGLOBAL R14 K17 ["OnDeath"]
+      40 [-]: NEWCLOSURE R14 P3
+      41 [-]: MOVE R1 R9   
+      42 [-]: NEWCLOSURE R15 P4
+      43 [-]: MOVE R0 R4   
+      44 [-]: MOVE R0 R5   
+      45 [-]: MOVE R0 R0   
+      46 [-]: MOVE R0 R12  
+      47 [-]: MOVE R0 R1   
+      48 [-]: MOVE R1 R9   
+      49 [-]: MOVE R1 R7   
+      50 [-]: MOVE R0 R10  
+      51 [-]: MOVE R1 R8   
+      52 [-]: MOVE R0 R11  
+      53 [-]: MOVE R0 R14  
+      54 [-]: MOVE R0 R6   
+      55 [-]: SETGLOBAL R15 K18 ["ManagerSpawnLogic"]
+      56 [-]: CLOSEUPVALS R7
+      57 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 26
 ; #Upvalues:       0
@@ -75,25 +71,22 @@
 ; Is_vararg:       0
 ; Max Stack Size:  8
 
-  1 [-]: GETGLOBAL R0 K0        ; R0 := 0x89326c93
-  2 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0xc7fcada9]
-  3 [-]: GETGLOBAL R2 K2        ; R2 := 0x0469f296
-  4 [-]: LOADK     R3 K3        ; R3 := "ShrineTokenAction"
-  5 [-]: CALL      R2 2 0       ; R2,... := R2(R3)
-  6 [-]: CALL      R0 0 2       ; R0 := R0(R1,...)
-  7 [-]: GETGLOBAL R1 K4        ; R1 := 0xc8802016
-  8 [-]: MOVE      R2 R0        ; R2 := R0
-  9 [-]: CALL      R1 2 4       ; R1,R2,R3 := R1(R2)
- 10 [-]: JMP       13           ; PC := 13
- 11 [-]: SELF      R6 R5 K5     ; R7 := R5; R6 := R5[0xf4e253b6]
- 12 [-]: CALL      R6 2 1       ; R6(R7)
- 13 [-]: TFORLOOP  R1 2         ; R4,R5 :=  R1(R2,R3); if R4 ~= nil then begin PC = 11; R3 := R4 end
- 14 [-]: JMP       11           ; PC := 11
- 15 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R2 3 [nil]
+       2 [-]: LOADK R3 K4 ["ShrineTokenAction"]
+       3 [-]: CALL R2 1 -1 
+       4 [-]: NAMECALL R0 R0 K5 [0xC7FCADA9]
+       5 [-]: CALL R0 -1 1 
+       6 [-]: GETIMPORT R1 7 [nil]
+       7 [-]: MOVE R2 R0   
+       8 [-]: CALL R1 1 3  
+       9 [-]: FORGPREP_INEXT R1 L1
+L 0:  10 [-]: NAMECALL R6 R5 K8 [0xF4E253B6]
+      11 [-]: CALL R6 1 0  
+L 1:  12 [-]: FORGLOOP R1 L0 2 [inext]
+      13 [-]: RETURN R0 0  
 
 
-; Function #2:
-;
 ; Name:            
 ; Defined at line: 33
 ; #Upvalues:       0
@@ -101,25 +94,20 @@
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
-  1 [-]: EQ        1 R0 K1      ; if R0 == 2.000000 then PC := 11
-  2 [-]: JMP       11           ; PC := 11
-  3 [-]: GETGLOBAL R1 K0        ; R1 := 0x6c97a788
-  4 [-]: GETTABLE  R1 R1 K2     ; R1 := R1["MT_DEFEND"]
-  5 [-]: EQ        1 R0 R1      ; if R0 == R1 then PC := 11
-  6 [-]: JMP       11           ; PC := 11
-  7 [-]: EQ        1 R0 K3      ; if R0 == 32.000000 then PC := 11
-  8 [-]: JMP       11           ; PC := 11
-  9 [-]: EQ        0 R0 K4      ; if R0 ~= 13.000000 then PC := 13
- 10 [-]: JMP       13           ; PC := 13
- 11 [-]: LOADKB    R1 1 0       ; R1 := true
- 12 [-]: RETURN    R1 2         ; return R1
- 13 [-]: LOADKB    R1 0 0       ; R1 := false
- 14 [-]: RETURN    R1 2         ; return R1
- 15 [-]: RETURN    R0 1         ; return 
+       0 [-]: LOADN R1 2   
+       1 [-]: JUMPIFEQ R0 R1 L0
+       2 [-]: GETIMPORT R1 2 [nil]
+       3 [-]: JUMPIFEQ R0 R1 L0
+       4 [-]: LOADN R1 33  
+       5 [-]: JUMPIFEQ R0 R1 L0
+       6 [-]: LOADN R1 13  
+       7 [-]: JUMPIFNOTEQ R0 R1 L1
+L 0:   8 [-]: LOADB R1 1   
+       9 [-]: RETURN R1 1  
+L 1:  10 [-]: LOADB R1 0   
+      11 [-]: RETURN R1 1  
 
 
-; Function #3:
-;
 ; Name:            
 ; Defined at line: 40
 ; #Upvalues:       5
@@ -127,604 +115,567 @@
 ; Is_vararg:       0
 ; Max Stack Size:  6
 
-  1 [-]: SELF      R1 R0 K0     ; R2 := R0; R1 := R0[0x01145f7a]
-  2 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  3 [-]: GETGLOBAL R2 K1        ; R2 := 0x7b998233
-  4 [-]: MOVE      R3 R1        ; R3 := R1
-  5 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  6 [-]: TEST      R2 0         ; if not R2 then PC := 9
-  7 [-]: JMP       9            ; PC := 9
-  8 [-]: RETURN    R0 1         ; return 
-  9 [-]: SELF      R2 R1 K2     ; R3 := R1; R2 := R1[0xf2deaf69]
- 10 [-]: GETGLOBAL R4 K3        ; R4 := gLotusNpcAvatarType
- 11 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
- 12 [-]: TEST      R2 0         ; if not R2 then PC := 37
- 13 [-]: JMP       37           ; PC := 37
- 14 [-]: SELF      R2 R1 K4     ; R3 := R1; R2 := R1[0x808b79e6]
- 15 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 16 [-]: GETUPVAL  R3 U0        ; R3 := U0
- 17 [-]: EQ        0 R2 R3      ; if R2 ~= R3 then PC := 37
- 18 [-]: JMP       37           ; PC := 37
- 19 [-]: SELF      R2 R1 K2     ; R3 := R1; R2 := R1[0xf2deaf69]
- 20 [-]: GETUPVAL  R4 U1        ; R4 := U1
- 21 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
- 22 [-]: TEST      R2 1         ; if R2 then PC := 37
- 23 [-]: JMP       37           ; PC := 37
- 24 [-]: SELF      R2 R1 K2     ; R3 := R1; R2 := R1[0xf2deaf69]
- 25 [-]: GETUPVAL  R4 U2        ; R4 := U2
- 26 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
- 27 [-]: TEST      R2 1         ; if R2 then PC := 37
- 28 [-]: JMP       37           ; PC := 37
- 29 [-]: GETUPVAL  R2 U3        ; R2 := U3
- 30 [-]: ADD       R2 R2 K5     ; R2 := R2 + 1.000000
- 31 [-]: SETUPVAL  R2 U3        ; U82 := R3
- 32 [-]: GETGLOBAL R2 K6        ; R2 := 0xbe190284
- 33 [-]: SELF      R2 R2 K7     ; R3 := R2; R2 := R2[0x751f061d]
- 34 [-]: GETUPVAL  R4 U4        ; R4 := U4
- 35 [-]: GETUPVAL  R5 U3        ; R5 := U3
- 36 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
- 37 [-]: RETURN    R0 1         ; return 
+       0 [-]: NAMECALL R1 R0 K0 [0x01145F7A]
+       1 [-]: CALL R1 1 1  
+       2 [-]: FASTCALL1 62 R1 L0
+       3 [-]: MOVE R3 R1   
+       4 [-]: GETIMPORT R2 2 [nil]
+       5 [-]: CALL R2 1 1  
+L 0:   6 [-]: JUMPIFNOT R2 L1
+       7 [-]: RETURN R0 0  
+L 1:   8 [-]: GETIMPORT R4 4 [nil]
+       9 [-]: NAMECALL R2 R1 K5 [0xF2DEAF69]
+      10 [-]: CALL R2 2 1  
+      11 [-]: JUMPIFNOT R2 L2
+      12 [-]: NAMECALL R2 R1 K6 [0x808B79E6]
+      13 [-]: CALL R2 1 1  
+      14 [-]: GETUPVAL R3 0
+      15 [-]: JUMPIFNOTEQ R2 R3 L2
+      16 [-]: GETUPVAL R4 1
+      17 [-]: NAMECALL R2 R1 K5 [0xF2DEAF69]
+      18 [-]: CALL R2 2 1  
+      19 [-]: JUMPIF R2 L2 
+      20 [-]: GETUPVAL R4 2
+      21 [-]: NAMECALL R2 R1 K5 [0xF2DEAF69]
+      22 [-]: CALL R2 2 1  
+      23 [-]: JUMPIF R2 L2 
+      24 [-]: GETUPVAL R3 3
+      25 [-]: ADDK R2 R3 K7 [1]
+      26 [-]: SETUPVAL R2 3
+      27 [-]: GETIMPORT R2 9 [nil]
+      28 [-]: GETUPVAL R4 4
+      29 [-]: GETUPVAL R5 3
+      30 [-]: NAMECALL R2 R2 K10 [0x751F061D]
+      31 [-]: CALL R2 3 0  
+L 2:  32 [-]: RETURN R0 0  
 
 
-; Function #4:
-;
 ; Name:            
 ; Defined at line: 52
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  17
+; Max Stack Size:  12
 
-  1 [-]: GETGLOBAL R1 K0        ; R1 := 0x89326c93
-  2 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1[0x29ef273d]
-  3 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  4 [-]: SELF      R1 R1 K2     ; R2 := R1; R1 := R1[0x66905cb0]
-  5 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  6 [-]: SETUPVAL  R1 U0        ; U82 := R0
-  7 [-]: NEWTABLE  R1 0 0       ; R1 := {}
-  8 [-]: NEWTABLE  R2 0 0       ; R2 := {}
-  9 [-]: GETUPVAL  R3 U0        ; R3 := U0
- 10 [-]: SELF      R3 R3 K3     ; R4 := R3; R3 := R3[0xf0606e8b]
- 11 [-]: GETGLOBAL R5 K4        ; R5 := gNpcSpawnPointType
- 12 [-]: GETGLOBAL R6 K5        ; R6 := 0x259d183f
- 13 [-]: GETGLOBAL R7 K6        ; R7 := 0xde28b675
- 14 [-]: LOADKB    R8 1 0       ; R8 := true
- 15 [-]: MOVE      R9 R0        ; R9 := R0
- 16 [-]: CALL      R3 7 2       ; R3 := R3(R4,R5,R6,R7,R8,R9)
- 17 [-]: MOVE      R1 R3        ; R1 := R3
- 18 [-]: GETGLOBAL R3 K7        ; R3 := 0x7b998233
- 19 [-]: MOVE      R4 R1        ; R4 := R1
- 20 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 21 [-]: TEST      R3 1         ; if R3 then PC := 45
- 22 [-]: JMP       45           ; PC := 45
- 23 [-]: CONST     R3 1         ; R3 := 1.000000
- 24 [-]: LEN       R4 R1        ; R4 := # R1
- 25 [-]: CONST     R5 1         ; R5 := 1.000000
- 26 [-]: FORPREP   R3 44        ; R3 -= R5; PC := 44
- 27 [-]: GETTABLE  R7 R1 R6     ; R7 := R1[R6]
- 28 [-]: SELF      R7 R7 K8     ; R8 := R7; R7 := R7[0x22da1852]
- 29 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 30 [-]: GETGLOBAL R8 K9        ; R8 := EMPTY_SYMBOL
- 31 [-]: EQ        0 R7 R8      ; if R7 ~= R8 then PC := 44
- 32 [-]: JMP       44           ; PC := 44
- 33 [-]: SELF      R8 R0 K10    ; R9 := R0; R8 := R0[0x68d0cbed]
- 34 [-]: GETTABLE  R10 R1 R6    ; R10 := R1[R6]
- 35 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
- 36 [-]: GETGLOBAL R9 K11       ; R9 := 0x33bdd652
- 37 [-]: GETTABLE  R9 R9 K12    ; R9 := R9[0x23d5322f]
- 38 [-]: MOVE      R10 R2       ; R10 := R2
- 39 [-]: NEWTABLE  R11 1 1      ; R11 := {}
- 40 [-]: GETTABLE  R12 R1 R6    ; R12 := R1[R6]
- 41 [-]: SETTABLE  R11 K13 R8   ; R11["dist"] := R8
- 42 [-]: SETLIST   R11 1 1      ; R11[(1-1)*FPF+i] := R(11+i), 1 <= i <= 1
- 43 [-]: CALL      R9 3 1       ; R9(R10,R11)
- 44 [-]: FORLOOP   R3 27        ; R3 += R5; if R3 <= R4 then begin PC := 27; R6 := R3 end
- 45 [-]: LEN       R9 R2        ; R9 := # R2
- 46 [-]: LT        0 K14 R9     ; if 1.000000 >= R9 then PC := 54
- 47 [-]: JMP       54           ; PC := 54
- 48 [-]: CLOSURE   R9 0         ; R9 := closure(Function #4.1)
- 49 [-]: GETGLOBAL R10 K11      ; R10 := 0x33bdd652
- 50 [-]: GETTABLE  R10 R10 K15  ; R10 := R10[0xf21b1d8e]
- 51 [-]: MOVE      R11 R2       ; R11 := R2
- 52 [-]: MOVE      R12 R9       ; R12 := R9
- 53 [-]: CALL      R10 3 1      ; R10(R11,R12)
- 54 [-]: CONST     R10 1        ; R10 := 1.000000
- 55 [-]: LEN       R11 R2       ; R11 := # R2
- 56 [-]: CONST     R12 1        ; R12 := 1.000000
- 57 [-]: FORPREP   R10 68       ; R10 -= R12; PC := 68
- 58 [-]: GETGLOBAL R14 K0       ; R14 := 0x89326c93
- 59 [-]: SELF      R14 R14 K16  ; R15 := R14; R14 := R14[0xe5a34eae]
- 60 [-]: GETTABLE  R16 R2 R13   ; R16 := R2[R13]
- 61 [-]: GETTABLE  R16 R16 K14  ; R16 := R16[1.000000]
- 62 [-]: CALL      R14 3 2      ; R14 := R14(R15,R16)
- 63 [-]: TEST      R14 1        ; if R14 then PC := 68
- 64 [-]: JMP       68           ; PC := 68
- 65 [-]: GETTABLE  R14 R2 R13   ; R14 := R2[R13]
- 66 [-]: GETTABLE  R14 R14 K14  ; R14 := R14[1.000000]
- 67 [-]: RETURN    R14 2        ; return R14
- 68 [-]: FORLOOP   R10 58       ; R10 += R12; if R10 <= R11 then begin PC := 58; R13 := R10 end
- 69 [-]: GETGLOBAL R14 K17      ; R14 := 0x3d106989
- 70 [-]: LOADK     R15 K18      ; R15 := "No valid spawnPoints found in given radius"
- 71 [-]: CALL      R14 2 1      ; R14(R15)
- 72 [-]: LOADNIL   R14 R14      ; R14 := nil
- 73 [-]: RETURN    R14 2        ; return R14
- 74 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R1 1 [nil]
+       1 [-]: NAMECALL R1 R1 K2 [0x29EF273D]
+       2 [-]: CALL R1 1 1  
+       3 [-]: NAMECALL R1 R1 K3 [0x66905CB0]
+       4 [-]: CALL R1 1 1  
+       5 [-]: SETUPVAL R1 0
+       6 [-]: NEWTABLE R1 0 0
+       7 [-]: NEWTABLE R2 0 0
+       8 [-]: GETUPVAL R3 0
+       9 [-]: GETIMPORT R5 5 [nil]
+      10 [-]: GETIMPORT R6 7 [nil]
+      11 [-]: GETIMPORT R7 9 [nil]
+      12 [-]: LOADB R8 1   
+      13 [-]: MOVE R9 R0   
+      14 [-]: NAMECALL R3 R3 K10 [0xF0606E8B]
+      15 [-]: CALL R3 6 1  
+      16 [-]: MOVE R1 R3   
+      17 [-]: FASTCALL1 62 R1 L0
+      18 [-]: MOVE R4 R1   
+      19 [-]: GETIMPORT R3 12 [nil]
+      20 [-]: CALL R3 1 1  
+L 0:  21 [-]: JUMPIF R3 L3 
+      22 [-]: LOADN R5 1   
+      23 [-]: LENGTH R3 R1 
+      24 [-]: LOADN R4 1   
+      25 [-]: FORNPREP R3 L3
+L 1:  26 [-]: GETTABLE R6 R1 R5
+      27 [-]: NAMECALL R6 R6 K13 [0x22DA1852]
+      28 [-]: CALL R6 1 1  
+      29 [-]: GETIMPORT R7 15 [nil]
+      30 [-]: JUMPIFNOTEQ R6 R7 L2
+      31 [-]: GETTABLE R9 R1 R5
+      32 [-]: NAMECALL R7 R0 K16 [0x68D0CBED]
+      33 [-]: CALL R7 2 1  
+      34 [-]: NEWTABLE R10 1 1
+      35 [-]: GETTABLE R11 R1 R5
+      36 [-]: SETLIST R10 R11 1 [1]
+      37 [-]: SETTABLEKS R7 R10 K17 ["dist"]
+      38 [-]: FASTCALL2 52 R2 R10 L2
+      39 [-]: MOVE R9 R2   
+      40 [-]: GETIMPORT R8 20 [nil]
+      41 [-]: CALL R8 2 0  
+L 2:  42 [-]: FORNLOOP R3 L1
+L 3:  43 [-]: LENGTH R3 R2 
+      44 [-]: LOADN R4 1   
+      45 [-]: JUMPIFNOTLT R4 R3 L4
+      46 [-]: DUPCLOSURE R3 K21 []
+      47 [-]: GETIMPORT R4 23 [nil]
+      48 [-]: MOVE R5 R2   
+      49 [-]: MOVE R6 R3   
+      50 [-]: CALL R4 2 0  
+L 4:  51 [-]: LOADN R5 1   
+      52 [-]: LENGTH R3 R2 
+      53 [-]: LOADN R4 1   
+      54 [-]: FORNPREP R3 L7
+L 5:  55 [-]: GETIMPORT R6 1 [nil]
+      56 [-]: GETTABLE R9 R2 R5
+      57 [-]: GETTABLEN R8 R9 1
+      58 [-]: NAMECALL R6 R6 K24 [0xE5A34EAE]
+      59 [-]: CALL R6 2 1  
+      60 [-]: JUMPIF R6 L6 
+      61 [-]: GETTABLE R7 R2 R5
+      62 [-]: GETTABLEN R6 R7 1
+      63 [-]: RETURN R6 1  
+L 6:  64 [-]: FORNLOOP R3 L5
+L 7:  65 [-]: GETIMPORT R3 26 [nil]
+      66 [-]: LOADK R4 K27 ["No valid spawnPoints found in given radius"]
+      67 [-]: CALL R3 1 0  
+      68 [-]: LOADNIL R3   
+      69 [-]: RETURN R3 1  
 
 
-; Function #4.1:
-;
-; Name:            
-; Defined at line: 71
-; #Upvalues:       0
-; #Parameters:     2
-; Is_vararg:       0
-; Max Stack Size:  4
-
-  1 [-]: GETTABLE  R2 R0 K0     ; R2 := R0["dist"]
-  2 [-]: GETTABLE  R3 R1 K0     ; R3 := R1["dist"]
-  3 [-]: LT        1 R2 R3      ; if R2 < R3 then PC := 6
-  4 [-]: JMP       6            ; PC := 6
-  5 [-]: LOADKB    R2 0 1       ; R2 := false; PC := 6
-  6 [-]: LOADKB    R2 1 0       ; R2 := true
-  7 [-]: RETURN    R2 2         ; return R2
-  8 [-]: RETURN    R0 1         ; return 
-
-
-; Function #5:
-;
 ; Name:            
 ; Defined at line: 87
-; #Upvalues:       13
+; #Upvalues:       12
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  39
+; Max Stack Size:  33
 
-  1 [-]: GETGLOBAL R1 K0        ; R1 := 0xbe190284
-  2 [-]: GETGLOBAL R2 K1        ; R2 := 0x7b998233
-  3 [-]: MOVE      R3 R1        ; R3 := R1
-  4 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  5 [-]: TEST      R2 0         ; if not R2 then PC := 12
-  6 [-]: JMP       12           ; PC := 12
-  7 [-]: GETGLOBAL R2 K2        ; R2 := 0xcbd666e1
-  8 [-]: CONST     R3 0         ; R3 := 0.000000
-  9 [-]: CALL      R2 2 1       ; R2(R3)
- 10 [-]: GETGLOBAL R1 K0        ; R1 := 0xbe190284
- 11 [-]: JMP       2            ; PC := 2
- 12 [-]: GETGLOBAL R2 K3        ; R2 := 0x89326c93
- 13 [-]: SELF      R2 R2 K4     ; R3 := R2; R2 := R2[0x61be252a]
- 14 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 15 [-]: EQ        0 R2 K5      ; if R2 ~= 0.000000 then PC := 21
- 16 [-]: JMP       21           ; PC := 21
- 17 [-]: GETGLOBAL R2 K2        ; R2 := 0xcbd666e1
- 18 [-]: CONST     R3 0         ; R3 := 0.000000
- 19 [-]: CALL      R2 2 1       ; R2(R3)
- 20 [-]: JMP       12           ; PC := 12
- 21 [-]: GETGLOBAL R2 K1        ; R2 := 0x7b998233
- 22 [-]: GETGLOBAL R3 K3        ; R3 := 0x89326c93
- 23 [-]: SELF      R3 R3 K6     ; R4 := R3; R3 := R3[0x78298275]
- 24 [-]: CALL      R3 2 0       ; R3,... := R3(R4)
- 25 [-]: CALL      R2 0 2       ; R2 := R2(R3,...)
- 26 [-]: TEST      R2 0         ; if not R2 then PC := 32
- 27 [-]: JMP       32           ; PC := 32
- 28 [-]: GETGLOBAL R2 K2        ; R2 := 0xcbd666e1
- 29 [-]: CONST     R3 0         ; R3 := 0.000000
- 30 [-]: CALL      R2 2 1       ; R2(R3)
- 31 [-]: JMP       21           ; PC := 21
- 32 [-]: GETGLOBAL R2 K3        ; R2 := 0x89326c93
- 33 [-]: SELF      R2 R2 K7     ; R3 := R2; R2 := R2[0xfb669000]
- 34 [-]: GETUPVAL  R4 U0        ; R4 := U0
- 35 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
- 36 [-]: GETGLOBAL R3 K1        ; R3 := 0x7b998233
- 37 [-]: MOVE      R4 R2        ; R4 := R2
- 38 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 39 [-]: TEST      R3 1         ; if R3 then PC := 48
- 40 [-]: JMP       48           ; PC := 48
- 41 [-]: LEN       R3 R2        ; R3 := # R2
- 42 [-]: LT        0 K5 R3      ; if 0.000000 >= R3 then PC := 48
- 43 [-]: JMP       48           ; PC := 48
- 44 [-]: GETGLOBAL R3 K8        ; R3 := 0x3d106989
- 45 [-]: LOADK     R4 K9        ; R4 := "Corpus Greed: Exiting, token already dropped."
- 46 [-]: CALL      R3 2 1       ; R3(R4)
- 47 [-]: RETURN    R0 1         ; return 
- 48 [-]: GETGLOBAL R3 K3        ; R3 := 0x89326c93
- 49 [-]: SELF      R3 R3 K7     ; R4 := R3; R3 := R3[0xfb669000]
- 50 [-]: GETUPVAL  R5 U1        ; R5 := U1
- 51 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
- 52 [-]: GETGLOBAL R4 K1        ; R4 := 0x7b998233
- 53 [-]: MOVE      R5 R3        ; R5 := R3
- 54 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 55 [-]: TEST      R4 1         ; if R4 then PC := 61
- 56 [-]: JMP       61           ; PC := 61
- 57 [-]: GETGLOBAL R4 K8        ; R4 := 0x3d106989
- 58 [-]: LOADK     R5 K10       ; R5 := "Corpus Greed: Exiting, Treasurer already active."
- 59 [-]: CALL      R4 2 1       ; R4(R5)
- 60 [-]: RETURN    R0 1         ; return 
- 61 [-]: GETGLOBAL R4 K0        ; R4 := 0xbe190284
- 62 [-]: SELF      R4 R4 K11    ; R5 := R4; R4 := R4[0xef893aec]
- 63 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 64 [-]: GETGLOBAL R5 K1        ; R5 := 0x7b998233
- 65 [-]: MOVE      R6 R4        ; R6 := R4
- 66 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 67 [-]: TEST      R5 1         ; if R5 then PC := 74
- 68 [-]: JMP       74           ; PC := 74
- 69 [-]: GETGLOBAL R5 K1        ; R5 := 0x7b998233
- 70 [-]: GETTABLE  R6 R4 K12    ; R6 := R4["levelOverride"]
- 71 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 72 [-]: TEST      R5 0         ; if not R5 then PC := 78
- 73 [-]: JMP       78           ; PC := 78
- 74 [-]: GETGLOBAL R5 K8        ; R5 := 0x3d106989
- 75 [-]: LOADK     R6 K13       ; R6 := "Corpus Greed: Exiting, proc level loaded from editor."
- 76 [-]: CALL      R5 2 1       ; R5(R6)
- 77 [-]: RETURN    R0 1         ; return 
- 78 [-]: GETGLOBAL R5 K14       ; R5 := _T
- 79 [-]: GETTABLE  R5 R5 K15    ; R5 := R5["faction"]
- 80 [-]: GETUPVAL  R6 U2        ; R6 := U2
- 81 [-]: EQ        1 R5 R6      ; if R5 == R6 then PC := 89
- 82 [-]: JMP       89           ; PC := 89
- 83 [-]: GETGLOBAL R5 K8        ; R5 := 0x3d106989
- 84 [-]: LOADK     R6 K16       ; R6 := "Corpus Greed: Exiting and disabling shrines, main faction isn't Corpus."
- 85 [-]: CALL      R5 2 1       ; R5(R6)
- 86 [-]: GETUPVAL  R5 U3        ; R5 := U3
- 87 [-]: CALL      R5 1 1       ; R5()
- 88 [-]: RETURN    R0 1         ; return 
- 89 [-]: GETGLOBAL R5 K1        ; R5 := 0x7b998233
- 90 [-]: GETTABLE  R6 R4 K17    ; R6 := R4["invasionId"]
- 91 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 92 [-]: TEST      R5 1         ; if R5 then PC := 103
- 93 [-]: JMP       103          ; PC := 103
- 94 [-]: GETTABLE  R5 R4 K17    ; R5 := R4["invasionId"]
- 95 [-]: EQ        1 R5 K18     ; if R5 == "" then PC := 103
- 96 [-]: JMP       103          ; PC := 103
- 97 [-]: GETGLOBAL R5 K8        ; R5 := 0x3d106989
- 98 [-]: LOADK     R6 K19       ; R6 := "Corpus Greed: Exiting and disabling shrines since this is an invasion mission."
- 99 [-]: CALL      R5 2 1       ; R5(R6)
-100 [-]: GETUPVAL  R5 U3        ; R5 := U3
-101 [-]: CALL      R5 1 1       ; R5()
-102 [-]: RETURN    R0 1         ; return 
-103 [-]: GETGLOBAL R5 K3        ; R5 := 0x89326c93
-104 [-]: SELF      R5 R5 K20    ; R6 := R5; R5 := R5[0x46a0ebf5]
-105 [-]: GETGLOBAL R7 K21       ; R7 := 0x0469f296
-106 [-]: LOADK     R8 K22       ; R8 := "PurgatorySpawn"
-107 [-]: CALL      R7 2 0       ; R7,... := R7(R8)
-108 [-]: CALL      R5 0 2       ; R5 := R5(R6,...)
-109 [-]: GETGLOBAL R6 K1        ; R6 := 0x7b998233
-110 [-]: MOVE      R7 R5        ; R7 := R5
-111 [-]: CALL      R6 2 2       ; R6 := R6(R7)
-112 [-]: TEST      R6 0         ; if not R6 then PC := 119
-113 [-]: JMP       119          ; PC := 119
-114 [-]: GETGLOBAL R6 K8        ; R6 := 0x3d106989
-115 [-]: LOADK     R7 K23       ; R7 := "Corpus Greed: Disabling shrines, no purgatory tile present in this level."
-116 [-]: CALL      R6 2 1       ; R6(R7)
-117 [-]: GETUPVAL  R6 U3        ; R6 := U3
-118 [-]: CALL      R6 1 1       ; R6()
-119 [-]: GETTABLE  R6 R4 K12    ; R6 := R4["levelOverride"]
-120 [-]: SELF      R6 R6 K24    ; R7 := R6; R6 := R6[0xed4e0128]
-121 [-]: CALL      R6 2 2       ; R6 := R6(R7)
-122 [-]: GETGLOBAL R7 K25       ; R7 := 0x7f5022cf
-123 [-]: GETTABLE  R7 R7 K26    ; R7 := R7[0xa5c556b9]
-124 [-]: GETGLOBAL R8 K27       ; R8 := 0x64fb1586
-125 [-]: MOVE      R9 R6        ; R9 := R6
-126 [-]: CALL      R8 2 2       ; R8 := R8(R9)
-127 [-]: LOADK     R9 K28       ; R9 := "Protea"
-128 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
-129 [-]: TEST      R7 0         ; if not R7 then PC := 136
-130 [-]: JMP       136          ; PC := 136
-131 [-]: GETGLOBAL R7 K8        ; R7 := 0x3d106989
-132 [-]: LOADK     R8 K29       ; R8 := "Corpus Greed: Exiting, protea quest active."
-133 [-]: CALL      R7 2 1       ; R7(R8)
-134 [-]: RETURN    R0 1         ; return 
-135 [-]: JMP       146          ; PC := 146
-136 [-]: GETGLOBAL R7 K14       ; R7 := _T
-137 [-]: GETTABLE  R7 R7 K30    ; R7 := R7["gQuestMission"]
-138 [-]: TEST      R7 0         ; if not R7 then PC := 146
-139 [-]: JMP       146          ; PC := 146
-140 [-]: GETGLOBAL R7 K8        ; R7 := 0x3d106989
-141 [-]: LOADK     R8 K31       ; R8 := "Corpus Greed: Exiting and disabling shrines, quest mission active."
-142 [-]: CALL      R7 2 1       ; R7(R8)
-143 [-]: GETUPVAL  R7 U3        ; R7 := U3
-144 [-]: CALL      R7 1 1       ; R7()
-145 [-]: RETURN    R0 1         ; return 
-146 [-]: SELF      R7 R1 K32    ; R8 := R1; R7 := R1[0x5c390f04]
-147 [-]: CALL      R7 2 2       ; R7 := R7(R8)
-148 [-]: LOADNIL   R8 R8        ; R8 := nil
-149 [-]: EQ        1 R7 K34     ; if R7 == 8.000000 then PC := 152
-150 [-]: JMP       152          ; PC := 152
-151 [-]: LOADKB    R9 0 1       ; R9 := false; PC := 152
-152 [-]: LOADKB    R9 1 0       ; R9 := true
-153 [-]: TEST      R9 0         ; if not R9 then PC := 172
-154 [-]: JMP       172          ; PC := 172
-155 [-]: GETGLOBAL R10 K3       ; R10 := 0x89326c93
-156 [-]: SELF      R10 R10 K35  ; R11 := R10; R10 := R10[0xc7fcada9]
-157 [-]: GETUPVAL  R12 U4       ; R12 := U4
-158 [-]: CALL      R10 3 2      ; R10 := R10(R11,R12)
-159 [-]: MOVE      R8 R10       ; R8 := R10
-160 [-]: GETGLOBAL R10 K1       ; R10 := 0x7b998233
-161 [-]: MOVE      R11 R8       ; R11 := R8
-162 [-]: CALL      R10 2 2      ; R10 := R10(R11)
-163 [-]: TEST      R10 1        ; if R10 then PC := 168
-164 [-]: JMP       168          ; PC := 168
-165 [-]: LEN       R10 R8       ; R10 := # R8
-166 [-]: EQ        0 R10 K5     ; if R10 ~= 0.000000 then PC := 172
-167 [-]: JMP       172          ; PC := 172
-168 [-]: GETGLOBAL R10 K8       ; R10 := 0x3d106989
-169 [-]: LOADK     R11 K36      ; R11 := "Corpus Greed: No shrines found!"
-170 [-]: CALL      R10 2 1      ; R10(R11)
-171 [-]: RETURN    R0 1         ; return 
-172 [-]: GETUPVAL  R10 U5       ; R10 := U5
-173 [-]: MOVE      R11 R7       ; R11 := R7
-174 [-]: CALL      R10 2 2      ; R10 := R10(R11)
-175 [-]: LOADNIL   R11 R11      ; R11 := nil
-176 [-]: TEST      R10 0        ; if not R10 then PC := 187
-177 [-]: JMP       187          ; PC := 187
-178 [-]: GETGLOBAL R12 K8       ; R12 := 0x3d106989
-179 [-]: LOADK     R13 K37      ; R13 := "Corpus Greed: Enless mission rules apply"
-180 [-]: CALL      R12 2 1      ; R12(R13)
-181 [-]: GETGLOBAL R12 K38      ; R12 := 0xc163f229
-182 [-]: GETGLOBAL R13 K39      ; R13 := 0x5597c2aa
-183 [-]: GETGLOBAL R14 K40      ; R14 := 0x5fab5a20
-184 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
-185 [-]: MOVE      R11 R12      ; R11 := R12
-186 [-]: JMP       192          ; PC := 192
-187 [-]: GETGLOBAL R12 K38      ; R12 := 0xc163f229
-188 [-]: GETGLOBAL R13 K41      ; R13 := 0x16e7fc61
-189 [-]: GETGLOBAL R14 K42      ; R14 := 0x08fb6e0f
-190 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
-191 [-]: MOVE      R11 R12      ; R11 := R12
-192 [-]: GETGLOBAL R12 K3       ; R12 := 0x89326c93
-193 [-]: SELF      R12 R12 K43  ; R13 := R12; R12 := R12[0x29ef273d]
-194 [-]: CALL      R12 2 2      ; R12 := R12(R13)
-195 [-]: SELF      R12 R12 K44  ; R13 := R12; R12 := R12[0x66905cb0]
-196 [-]: CALL      R12 2 2      ; R12 := R12(R13)
-197 [-]: SETUPVAL  R12 U6       ; U82 := R6
-198 [-]: SELF      R12 R1 K45   ; R13 := R1; R12 := R1[0xe7ef698d]
-199 [-]: LOADK     R14 K46      ; R14 := "OnDeath"
-200 [-]: CALL      R12 3 1      ; R12(R13,R14)
-201 [-]: GETUPVAL  R12 U6       ; R12 := U6
-202 [-]: SELF      R12 R12 K47  ; R13 := R12; R12 := R12[0x6968ea36]
-203 [-]: CALL      R12 2 2      ; R12 := R12(R13)
-204 [-]: SELF      R13 R1 K48   ; R14 := R1; R13 := R1[0x0eb34c69]
-205 [-]: GETUPVAL  R15 U8       ; R15 := U8
-206 [-]: CONST     R16 0        ; R16 := 0.000000
-207 [-]: CALL      R13 4 2      ; R13 := R13(R14,R15,R16)
-208 [-]: SETUPVAL  R13 U7       ; U82 := R7
-209 [-]: GETUPVAL  R13 U7       ; R13 := U7
-210 [-]: LE        0 K49 R13    ; if 1000.000000 > R13 then PC := 216
-211 [-]: JMP       216          ; PC := 216
-212 [-]: GETGLOBAL R13 K8       ; R13 := 0x3d106989
-213 [-]: LOADK     R14 K50      ; R14 := "Corpus Greed: Exiting, Treasurer event has already concluded"
-214 [-]: CALL      R13 2 1      ; R13(R14)
-215 [-]: RETURN    R0 1         ; return 
-216 [-]: SELF      R13 R1 K48   ; R14 := R1; R13 := R1[0x0eb34c69]
-217 [-]: GETUPVAL  R15 U10      ; R15 := U10
-218 [-]: CONST     R16 0        ; R16 := 0.000000
-219 [-]: CALL      R13 4 2      ; R13 := R13(R14,R15,R16)
-220 [-]: SETUPVAL  R13 U9       ; U82 := R9
-221 [-]: GETGLOBAL R13 K8       ; R13 := 0x3d106989
-222 [-]: LOADK     R14 K51      ; R14 := "Corpus Greed: Starting..."
-223 [-]: CALL      R13 2 1      ; R13(R14)
-224 [-]: GETUPVAL  R13 U7       ; R13 := U7
-225 [-]: LE        1 R13 R11    ; if R13 <= R11 then PC := 231
-226 [-]: JMP       231          ; PC := 231
-227 [-]: GETUPVAL  R13 U9       ; R13 := U9
-228 [-]: GETGLOBAL R14 K52      ; R14 := 0xf0cb315a
-229 [-]: LE        0 R13 R14    ; if R13 > R14 then PC := 248
-230 [-]: JMP       248          ; PC := 248
-231 [-]: GETGLOBAL R13 K2       ; R13 := 0xcbd666e1
-232 [-]: CONST     R14 0        ; R14 := 0.500000
-233 [-]: CALL      R13 2 1      ; R13(R14)
-234 [-]: GETUPVAL  R13 U7       ; R13 := U7
-235 [-]: ADD       R13 R13 K53  ; R13 := R13 + 0.500000
-236 [-]: GETGLOBAL R14 K54      ; R14 := 0x67652851
-237 [-]: CALL      R14 1 2      ; R14 := R14()
-238 [-]: ADD       R13 R13 R14  ; R13 := R13 + R14
-239 [-]: SETUPVAL  R13 U7       ; U82 := R7
-240 [-]: SELF      R13 R1 K55   ; R14 := R1; R13 := R1[0x751f061d]
-241 [-]: GETUPVAL  R15 U8       ; R15 := U8
-242 [-]: GETGLOBAL R16 K56      ; R16 := 0x5bced4c4
-243 [-]: GETTABLE  R16 R16 K57  ; R16 := R16[0x55f27c30]
-244 [-]: GETUPVAL  R17 U7       ; R17 := U7
-245 [-]: CALL      R16 2 0      ; R16,... := R16(R17)
-246 [-]: CALL      R13 0 1      ; R13(R14,...)
-247 [-]: JMP       224          ; PC := 224
-248 [-]: SELF      R13 R0 K58   ; R14 := R0; R13 := R0[0x6189cb44]
-249 [-]: CALL      R13 2 2      ; R13 := R13(R14)
-250 [-]: GETTABLE  R14 R13 K59  ; R14 := R13[1.000000]
-251 [-]: LOADNIL   R15 R15      ; R15 := nil
-252 [-]: LOADKB    R16 0 0      ; R16 := false
-253 [-]: LOADNIL   R17 R17      ; R17 := nil
-254 [-]: GETGLOBAL R18 K60      ; R18 := 0x990f0a25
-255 [-]: TEST      R16 1        ; if R16 then PC := 430
-256 [-]: JMP       430          ; PC := 430
-257 [-]: TEST      R9 0         ; if not R9 then PC := 269
-258 [-]: JMP       269          ; PC := 269
-259 [-]: GETUPVAL  R19 U6       ; R19 := U6
-260 [-]: SELF      R19 R19 K61  ; R20 := R19; R19 := R19[0x234ba63b]
-261 [-]: GETGLOBAL R21 K21      ; R21 := 0x0469f296
-262 [-]: CALL      R21 1 2      ; R21 := R21()
-263 [-]: LOADKB    R22 0 0      ; R22 := false
-264 [-]: LOADKB    R23 0 0      ; R23 := false
-265 [-]: LOADKB    R24 0 0      ; R24 := false
-266 [-]: CALL      R19 6 2      ; R19 := R19(R20,R21,R22,R23,R24)
-267 [-]: MOVE      R17 R19      ; R17 := R19
-268 [-]: JMP       276          ; PC := 276
-269 [-]: GETUPVAL  R19 U6       ; R19 := U6
-270 [-]: SELF      R19 R19 K62  ; R20 := R19; R19 := R19[0x8026755d]
-271 [-]: CALL      R19 2 2      ; R19 := R19(R20)
-272 [-]: GETUPVAL  R20 U11      ; R20 := U11
-273 [-]: MOVE      R21 R19      ; R21 := R19
-274 [-]: CALL      R20 2 2      ; R20 := R20(R21)
-275 [-]: MOVE      R17 R20      ; R17 := R20
-276 [-]: GETUPVAL  R20 U6       ; R20 := U6
-277 [-]: SELF      R20 R20 K63  ; R21 := R20; R20 := R20[0xe6ae57ee]
-278 [-]: CALL      R20 2 2      ; R20 := R20(R21)
-279 [-]: TEST      R20 0        ; if not R20 then PC := 283
-280 [-]: JMP       283          ; PC := 283
-281 [-]: CONST     R18 0        ; R18 := 0.000000
-282 [-]: JMP       287          ; PC := 287
-283 [-]: ADD       R21 R18 K59  ; R21 := R18 + 1.000000
-284 [-]: GETGLOBAL R22 K54      ; R22 := 0x67652851
-285 [-]: CALL      R22 1 2      ; R22 := R22()
-286 [-]: ADD       R18 R21 R22  ; R18 := R21 + R22
-287 [-]: GETGLOBAL R21 K1       ; R21 := 0x7b998233
-288 [-]: MOVE      R22 R15      ; R22 := R15
-289 [-]: CALL      R21 2 2      ; R21 := R21(R22)
-290 [-]: TEST      R21 0        ; if not R21 then PC := 423
-291 [-]: JMP       423          ; PC := 423
-292 [-]: GETGLOBAL R21 K1       ; R21 := 0x7b998233
-293 [-]: MOVE      R22 R17      ; R22 := R17
-294 [-]: CALL      R21 2 2      ; R21 := R21(R22)
-295 [-]: TEST      R21 1        ; if R21 then PC := 423
-296 [-]: JMP       423          ; PC := 423
-297 [-]: TEST      R20 1        ; if R20 then PC := 423
-298 [-]: JMP       423          ; PC := 423
-299 [-]: GETGLOBAL R21 K60      ; R21 := 0x990f0a25
-300 [-]: LE        0 R21 R18    ; if R21 > R18 then PC := 423
-301 [-]: JMP       423          ; PC := 423
-302 [-]: GETGLOBAL R21 K1       ; R21 := 0x7b998233
-303 [-]: MOVE      R22 R15      ; R22 := R15
-304 [-]: CALL      R21 2 2      ; R21 := R21(R22)
-305 [-]: TEST      R21 0        ; if not R21 then PC := 324
-306 [-]: JMP       324          ; PC := 324
-307 [-]: GETUPVAL  R21 U6       ; R21 := U6
-308 [-]: SELF      R21 R21 K64  ; R22 := R21; R21 := R21[0xe830ac3d]
-309 [-]: LOADKB    R23 1 0      ; R23 := true
-310 [-]: CALL      R21 3 2      ; R21 := R21(R22,R23)
-311 [-]: GETUPVAL  R22 U6       ; R22 := U6
-312 [-]: SELF      R22 R22 K65  ; R23 := R22; R22 := R22[0x9a49d00c]
-313 [-]: CALL      R22 2 2      ; R22 := R22(R23)
-314 [-]: LT        0 R21 R22    ; if R21 >= R22 then PC := 324
-315 [-]: JMP       324          ; PC := 324
-316 [-]: GETUPVAL  R21 U6       ; R21 := U6
-317 [-]: SELF      R21 R21 K66  ; R22 := R21; R21 := R21[0x33fc842f]
-318 [-]: MOVE      R23 R14      ; R23 := R14
-319 [-]: MOVE      R24 R17      ; R24 := R17
-320 [-]: GETUPVAL  R25 U2       ; R25 := U2
-321 [-]: MOVE      R26 R12      ; R26 := R12
-322 [-]: CALL      R21 6 2      ; R21 := R21(R22,R23,R24,R25,R26)
-323 [-]: MOVE      R15 R21      ; R15 := R21
-324 [-]: GETGLOBAL R21 K1       ; R21 := 0x7b998233
-325 [-]: MOVE      R22 R15      ; R22 := R15
-326 [-]: CALL      R21 2 2      ; R21 := R21(R22)
-327 [-]: TEST      R21 1        ; if R21 then PC := 419
-328 [-]: JMP       419          ; PC := 419
-329 [-]: GETUPVAL  R21 U6       ; R21 := U6
-330 [-]: SELF      R21 R21 K67  ; R22 := R21; R21 := R21[0xf2d6020e]
-331 [-]: CONST     R23 1        ; R23 := 1.000000
-332 [-]: CALL      R21 3 1      ; R21(R22,R23)
-333 [-]: GETUPVAL  R21 U12      ; R21 := U12
-334 [-]: GETTABLE  R21 R21 K68  ; R21 := R21[0x67a78dad]
-335 [-]: GETUPVAL  R22 U12      ; R22 := U12
-336 [-]: GETTABLE  R22 R22 K69  ; R22 := R22["UNALERT"]
-337 [-]: CALL      R21 2 1      ; R21(R22)
-338 [-]: GETUPVAL  R21 U6       ; R21 := U6
-339 [-]: SELF      R21 R21 K70  ; R22 := R21; R21 := R21[0x8f4dc1b0]
-340 [-]: LOADKB    R23 0 0      ; R23 := false
-341 [-]: CALL      R21 3 1      ; R21(R22,R23)
-342 [-]: TEST      R9 0         ; if not R9 then PC := 411
-343 [-]: JMP       411          ; PC := 411
-344 [-]: LEN       R21 R8       ; R21 := # R8
-345 [-]: CONST     R22 1        ; R22 := 1.000000
-346 [-]: CONST     R23 -1       ; R23 := -1.000000
-347 [-]: FORPREP   R21 358      ; R21 -= R23; PC := 358
-348 [-]: GETGLOBAL R25 K1       ; R25 := 0x7b998233
-349 [-]: GETTABLE  R26 R8 R24   ; R26 := R8[R24]
-350 [-]: CALL      R25 2 2      ; R25 := R25(R26)
-351 [-]: TEST      R25 0        ; if not R25 then PC := 358
-352 [-]: JMP       358          ; PC := 358
-353 [-]: GETGLOBAL R25 K71      ; R25 := 0x33bdd652
-354 [-]: GETTABLE  R25 R25 K72  ; R25 := R25[0x9c1f3b5a]
-355 [-]: MOVE      R26 R8       ; R26 := R8
-356 [-]: MOVE      R27 R24      ; R27 := R24
-357 [-]: CALL      R25 3 1      ; R25(R26,R27)
-358 [-]: FORLOOP   R21 348      ; R21 += R23; if R21 <= R22 then begin PC := 348; R24 := R21 end
-359 [-]: GETGLOBAL R25 K1       ; R25 := 0x7b998233
-360 [-]: MOVE      R26 R8       ; R26 := R8
-361 [-]: CALL      R25 2 2      ; R25 := R25(R26)
-362 [-]: TEST      R25 1        ; if R25 then PC := 408
-363 [-]: JMP       408          ; PC := 408
-364 [-]: LEN       R25 R8       ; R25 := # R8
-365 [-]: LT        0 K5 R25     ; if 0.000000 >= R25 then PC := 408
-366 [-]: JMP       408          ; PC := 408
-367 [-]: GETGLOBAL R25 K8       ; R25 := 0x3d106989
-368 [-]: LOADK     R26 K73      ; R26 := "Corpus Greed: Defense setup"
-369 [-]: CALL      R25 2 1      ; R25(R26)
-370 [-]: SELF      R25 R15 K74  ; R26 := R15; R25 := R15[0xbb610e5b]
-371 [-]: CALL      R25 2 2      ; R25 := R25(R26)
-372 [-]: GETGLOBAL R26 K1       ; R26 := 0x7b998233
-373 [-]: MOVE      R27 R25      ; R27 := R25
-374 [-]: CALL      R26 2 2      ; R26 := R26(R27)
-375 [-]: TEST      R26 1        ; if R26 then PC := 404
-376 [-]: JMP       404          ; PC := 404
-377 [-]: SELF      R26 R25 K75  ; R27 := R25; R26 := R25[0xd1586535]
-378 [-]: CALL      R26 2 2      ; R26 := R26(R27)
-379 [-]: CONST     R27 0        ; R27 := 0.000000
-380 [-]: CONST     R28 0        ; R28 := 0.000000
-381 [-]: GETTABLE  R29 R8 K59   ; R29 := R8[1.000000]
-382 [-]: CONST     R30 1        ; R30 := 1.000000
-383 [-]: LEN       R31 R8       ; R31 := # R8
-384 [-]: CONST     R32 1        ; R32 := 1.000000
-385 [-]: FORPREP   R30 398      ; R30 -= R32; PC := 398
-386 [-]: GETUPVAL  R34 U6       ; R34 := U6
-387 [-]: SELF      R34 R34 K76  ; R35 := R34; R34 := R34[0x87358ef0]
-388 [-]: MOVE      R36 R26      ; R36 := R26
-389 [-]: GETTABLE  R37 R8 R33   ; R37 := R8[R33]
-390 [-]: SELF      R37 R37 K75  ; R38 := R37; R37 := R37[0xd1586535]
-391 [-]: CALL      R37 2 0      ; R37,... := R37(R38)
-392 [-]: CALL      R34 0 2      ; R34 := R34(R35,...)
-393 [-]: MOVE      R27 R34      ; R27 := R34
-394 [-]: LT        0 R28 R27    ; if R28 >= R27 then PC := 398
-395 [-]: JMP       398          ; PC := 398
-396 [-]: MOVE      R28 R27      ; R28 := R27
-397 [-]: GETTABLE  R29 R8 R33   ; R29 := R8[R33]
-398 [-]: FORLOOP   R30 386      ; R30 += R32; if R30 <= R31 then begin PC := 386; R33 := R30 end
-399 [-]: SELF      R34 R15 K77  ; R35 := R15; R34 := R15[0x54cfc0cf]
-400 [-]: SELF      R36 R29 K75  ; R37 := R29; R36 := R29[0xd1586535]
-401 [-]: CALL      R36 2 0      ; R36,... := R36(R37)
-402 [-]: CALL      R34 0 1      ; R34(R35,...)
-403 [-]: JMP       411          ; PC := 411
-404 [-]: GETGLOBAL R34 K8       ; R34 := 0x3d106989
-405 [-]: LOADK     R35 K78      ; R35 := "Corpus Greed: Avatar is nil!"
-406 [-]: CALL      R34 2 1      ; R34(R35)
-407 [-]: JMP       411          ; PC := 411
-408 [-]: GETGLOBAL R34 K8       ; R34 := 0x3d106989
-409 [-]: LOADK     R35 K36      ; R35 := "Corpus Greed: No shrines found!"
-410 [-]: CALL      R34 2 1      ; R34(R35)
-411 [-]: LOADKB    R16 1 0      ; R16 := true
-412 [-]: SELF      R34 R1 K79   ; R35 := R1; R34 := R1[0xc19d05d7]
-413 [-]: GETGLOBAL R36 K80      ; R36 := 0x280ef87d
-414 [-]: CALL      R34 3 1      ; R34(R35,R36)
-415 [-]: GETGLOBAL R34 K8       ; R34 := 0x3d106989
-416 [-]: LOADK     R35 K81      ; R35 := "Manager spawned"
-417 [-]: CALL      R34 2 1      ; R34(R35)
-418 [-]: JMP       255          ; PC := 255
-419 [-]: GETGLOBAL R34 K2       ; R34 := 0xcbd666e1
-420 [-]: CONST     R35 1        ; R35 := 1.000000
-421 [-]: CALL      R34 2 1      ; R34(R35)
-422 [-]: JMP       255          ; PC := 255
-423 [-]: GETGLOBAL R34 K8       ; R34 := 0x3d106989
-424 [-]: LOADK     R35 K82      ; R35 := "Aristocrat Treasurer: No valid spawnpoint, AI cap reached or VIP/after VIP timer is active."
-425 [-]: CALL      R34 2 1      ; R34(R35)
-426 [-]: GETGLOBAL R34 K2       ; R34 := 0xcbd666e1
-427 [-]: CONST     R35 1        ; R35 := 1.000000
-428 [-]: CALL      R34 2 1      ; R34(R35)
-429 [-]: JMP       255          ; PC := 255
-430 [-]: SELF      R34 R1 K55   ; R35 := R1; R34 := R1[0x751f061d]
-431 [-]: GETUPVAL  R36 U8       ; R36 := U8
-432 [-]: CONST     R37 1000     ; R37 := 1000.000000
-433 [-]: CALL      R34 4 1      ; R34(R35,R36,R37)
-434 [-]: GETGLOBAL R34 K8       ; R34 := 0x3d106989
-435 [-]: LOADK     R35 K83      ; R35 := "Corpus Greed: Aristocrat Treasurer Spawned at "
-436 [-]: GETGLOBAL R36 K27      ; R36 := 0x64fb1586
-437 [-]: SELF      R37 R15 K74  ; R38 := R15; R37 := R15[0xbb610e5b]
-438 [-]: CALL      R37 2 2      ; R37 := R37(R38)
-439 [-]: SELF      R37 R37 K75  ; R38 := R37; R37 := R37[0xd1586535]
-440 [-]: CALL      R37 2 0      ; R37,... := R37(R38)
-441 [-]: CALL      R36 0 2      ; R36 := R36(R37,...)
-442 [-]: CONCAT    R35 R35 R36  ; R35 := R35 .. R36
-443 [-]: CALL      R34 2 1      ; R34(R35)
-444 [-]: GETGLOBAL R34 K8       ; R34 := 0x3d106989
-445 [-]: LOADK     R35 K84      ; R35 := "Corpus Greed: Ended"
-446 [-]: CALL      R34 2 1      ; R34(R35)
-447 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R1 1 [nil]
+L 0:   1 [-]: FASTCALL1 62 R1 L1
+       2 [-]: MOVE R3 R1   
+       3 [-]: GETIMPORT R2 3 [nil]
+       4 [-]: CALL R2 1 1  
+L 1:   5 [-]: JUMPIFNOT R2 L2
+       6 [-]: GETIMPORT R2 5 [nil]
+       7 [-]: LOADN R3 0   
+       8 [-]: CALL R2 1 0  
+       9 [-]: GETIMPORT R1 1 [nil]
+      10 [-]: JUMPBACK L0  
+L 2:  11 [-]: GETIMPORT R2 7 [nil]
+      12 [-]: NAMECALL R2 R2 K8 [0x61BE252A]
+      13 [-]: CALL R2 1 1  
+      14 [-]: JUMPXEQKN R2 K9 L3 NOT [0]
+      15 [-]: GETIMPORT R2 5 [nil]
+      16 [-]: LOADN R3 0   
+      17 [-]: CALL R2 1 0  
+      18 [-]: JUMPBACK L2  
+L 3:  19 [-]: GETIMPORT R3 7 [nil]
+      20 [-]: NAMECALL R3 R3 K10 [0x78298275]
+      21 [-]: CALL R3 1 -1 
+      22 [-]: FASTCALL 62 L4
+      23 [-]: GETIMPORT R2 3 [nil]
+      24 [-]: CALL R2 -1 1 
+L 4:  25 [-]: JUMPIFNOT R2 L5
+      26 [-]: GETIMPORT R2 5 [nil]
+      27 [-]: LOADN R3 0   
+      28 [-]: CALL R2 1 0  
+      29 [-]: JUMPBACK L3  
+L 5:  30 [-]: GETIMPORT R2 7 [nil]
+      31 [-]: GETUPVAL R4 0
+      32 [-]: NAMECALL R2 R2 K11 [0xFB669000]
+      33 [-]: CALL R2 2 1  
+      34 [-]: FASTCALL1 62 R2 L6
+      35 [-]: MOVE R4 R2   
+      36 [-]: GETIMPORT R3 3 [nil]
+      37 [-]: CALL R3 1 1  
+L 6:  38 [-]: JUMPIF R3 L7 
+      39 [-]: LENGTH R3 R2 
+      40 [-]: LOADN R4 0   
+      41 [-]: JUMPIFNOTLT R4 R3 L7
+      42 [-]: GETIMPORT R3 13 [nil]
+      43 [-]: LOADK R4 K14 ["Corpus Greed: Exiting, token already dropped."]
+      44 [-]: CALL R3 1 0  
+      45 [-]: RETURN R0 0  
+L 7:  46 [-]: GETIMPORT R3 7 [nil]
+      47 [-]: GETUPVAL R5 1
+      48 [-]: NAMECALL R3 R3 K11 [0xFB669000]
+      49 [-]: CALL R3 2 1  
+      50 [-]: FASTCALL1 62 R3 L8
+      51 [-]: MOVE R5 R3   
+      52 [-]: GETIMPORT R4 3 [nil]
+      53 [-]: CALL R4 1 1  
+L 8:  54 [-]: JUMPIF R4 L9 
+      55 [-]: GETIMPORT R4 13 [nil]
+      56 [-]: LOADK R5 K15 ["Corpus Greed: Exiting, Treasurer already active."]
+      57 [-]: CALL R4 1 0  
+      58 [-]: RETURN R0 0  
+L 9:  59 [-]: GETIMPORT R4 1 [nil]
+      60 [-]: NAMECALL R4 R4 K16 [0xEF893AEC]
+      61 [-]: CALL R4 1 1  
+      62 [-]: FASTCALL1 62 R4 L10
+      63 [-]: MOVE R6 R4   
+      64 [-]: GETIMPORT R5 3 [nil]
+      65 [-]: CALL R5 1 1  
+L10:  66 [-]: JUMPIF R5 L12
+      67 [-]: GETTABLEKS R6 R4 K17 ["levelOverride"]
+      68 [-]: FASTCALL1 62 R6 L11
+      69 [-]: GETIMPORT R5 3 [nil]
+      70 [-]: CALL R5 1 1  
+L11:  71 [-]: JUMPIFNOT R5 L13
+L12:  72 [-]: GETIMPORT R5 13 [nil]
+      73 [-]: LOADK R6 K18 ["Corpus Greed: Exiting, proc level loaded from editor."]
+      74 [-]: CALL R5 1 0  
+      75 [-]: RETURN R0 0  
+L13:  76 [-]: GETIMPORT R5 21 [nil]
+      77 [-]: GETUPVAL R6 2
+      78 [-]: JUMPIFEQ R5 R6 L14
+      79 [-]: GETIMPORT R5 13 [nil]
+      80 [-]: LOADK R6 K22 ["Corpus Greed: Exiting and disabling shrines, main faction isn't Corpus."]
+      81 [-]: CALL R5 1 0  
+      82 [-]: GETUPVAL R5 3
+      83 [-]: CALL R5 0 0  
+      84 [-]: RETURN R0 0  
+L14:  85 [-]: GETTABLEKS R6 R4 K23 ["invasionId"]
+      86 [-]: FASTCALL1 62 R6 L15
+      87 [-]: GETIMPORT R5 3 [nil]
+      88 [-]: CALL R5 1 1  
+L15:  89 [-]: JUMPIF R5 L16
+      90 [-]: GETTABLEKS R5 R4 K23 ["invasionId"]
+      91 [-]: JUMPXEQKS R5 K24 L16 [""]
+      92 [-]: GETIMPORT R5 13 [nil]
+      93 [-]: LOADK R6 K25 ["Corpus Greed: Exiting and disabling shrines since this is an invasion mission."]
+      94 [-]: CALL R5 1 0  
+      95 [-]: GETUPVAL R5 3
+      96 [-]: CALL R5 0 0  
+      97 [-]: RETURN R0 0  
+L16:  98 [-]: GETIMPORT R5 7 [nil]
+      99 [-]: GETIMPORT R7 27 [nil]
+     100 [-]: LOADK R8 K28 ["PurgatorySpawn"]
+     101 [-]: CALL R7 1 -1 
+     102 [-]: NAMECALL R5 R5 K29 [0x46A0EBF5]
+     103 [-]: CALL R5 -1 1 
+     104 [-]: FASTCALL1 62 R5 L17
+     105 [-]: MOVE R7 R5   
+     106 [-]: GETIMPORT R6 3 [nil]
+     107 [-]: CALL R6 1 1  
+L17: 108 [-]: JUMPIFNOT R6 L18
+     109 [-]: GETIMPORT R6 13 [nil]
+     110 [-]: LOADK R7 K30 ["Corpus Greed: Disabling shrines, no purgatory tile present in this level."]
+     111 [-]: CALL R6 1 0  
+     112 [-]: GETUPVAL R6 3
+     113 [-]: CALL R6 0 0  
+L18: 114 [-]: GETTABLEKS R6 R4 K17 ["levelOverride"]
+     115 [-]: NAMECALL R6 R6 K31 [0xED4E0128]
+     116 [-]: CALL R6 1 1  
+     117 [-]: GETIMPORT R7 34 [nil]
+     118 [-]: GETIMPORT R8 36 [nil]
+     119 [-]: MOVE R9 R6   
+     120 [-]: CALL R8 1 1  
+     121 [-]: LOADK R9 K37 ["Protea"]
+     122 [-]: CALL R7 2 1  
+     123 [-]: JUMPIFNOT R7 L19
+     124 [-]: GETIMPORT R7 13 [nil]
+     125 [-]: LOADK R8 K38 ["Corpus Greed: Exiting, protea quest active."]
+     126 [-]: CALL R7 1 0  
+     127 [-]: RETURN R0 0  
+L19: 128 [-]: GETIMPORT R7 40 [nil]
+     129 [-]: JUMPIFNOT R7 L20
+     130 [-]: GETIMPORT R7 13 [nil]
+     131 [-]: LOADK R8 K41 ["Corpus Greed: Exiting and disabling shrines, quest mission active."]
+     132 [-]: CALL R7 1 0  
+     133 [-]: GETUPVAL R7 3
+     134 [-]: CALL R7 0 0  
+     135 [-]: RETURN R0 0  
+L20: 136 [-]: NAMECALL R7 R1 K42 [0x5C390F04]
+     137 [-]: CALL R7 1 1  
+     138 [-]: LOADNIL R8   
+     139 [-]: LOADN R10 8  
+     140 [-]: JUMPIFEQ R7 R10 L21
+     141 [-]: LOADB R9 0 +1
+L21: 142 [-]: LOADB R9 1   
+L22: 143 [-]: JUMPIFNOT R9 L25
+     144 [-]: GETIMPORT R10 7 [nil]
+     145 [-]: GETUPVAL R12 4
+     146 [-]: NAMECALL R10 R10 K43 [0xC7FCADA9]
+     147 [-]: CALL R10 2 1 
+     148 [-]: MOVE R8 R10  
+     149 [-]: FASTCALL1 62 R8 L23
+     150 [-]: MOVE R11 R8  
+     151 [-]: GETIMPORT R10 3 [nil]
+     152 [-]: CALL R10 1 1 
+L23: 153 [-]: JUMPIF R10 L24
+     154 [-]: LENGTH R10 R8
+     155 [-]: JUMPXEQKN R10 K9 L25 NOT [0]
+L24: 156 [-]: GETIMPORT R10 13 [nil]
+     157 [-]: LOADK R11 K44 ["Corpus Greed: No shrines found!"]
+     158 [-]: CALL R10 1 0 
+     159 [-]: RETURN R0 0  
+L25: 160 [-]: LOADN R11 2  
+     161 [-]: JUMPIFEQ R7 R11 L26
+     162 [-]: GETIMPORT R11 47 [nil]
+     163 [-]: JUMPIFEQ R7 R11 L26
+     164 [-]: LOADN R11 33 
+     165 [-]: JUMPIFEQ R7 R11 L26
+     166 [-]: LOADN R11 13 
+     167 [-]: JUMPIFNOTEQ R7 R11 L27
+L26: 168 [-]: LOADB R10 1  
+     169 [-]: JUMP L28
+    
+L27: 170 [-]: LOADB R10 0  
+L28: 171 [-]: LOADNIL R11  
+     172 [-]: JUMPIFNOT R10 L29
+     173 [-]: GETIMPORT R12 13 [nil]
+     174 [-]: LOADK R13 K48 ["Corpus Greed: Enless mission rules apply"]
+     175 [-]: CALL R12 1 0 
+     176 [-]: GETIMPORT R12 50 [nil]
+     177 [-]: GETIMPORT R13 52 [nil]
+     178 [-]: GETIMPORT R14 54 [nil]
+     179 [-]: CALL R12 2 1 
+     180 [-]: MOVE R11 R12 
+     181 [-]: JUMP L30
+    
+L29: 182 [-]: GETIMPORT R12 50 [nil]
+     183 [-]: GETIMPORT R13 56 [nil]
+     184 [-]: GETIMPORT R14 58 [nil]
+     185 [-]: CALL R12 2 1 
+     186 [-]: MOVE R11 R12 
+L30: 187 [-]: GETIMPORT R12 7 [nil]
+     188 [-]: NAMECALL R12 R12 K59 [0x29EF273D]
+     189 [-]: CALL R12 1 1 
+     190 [-]: NAMECALL R12 R12 K60 [0x66905CB0]
+     191 [-]: CALL R12 1 1 
+     192 [-]: SETUPVAL R12 5
+     193 [-]: LOADK R14 K61 ["OnDeath"]
+     194 [-]: NAMECALL R12 R1 K62 [0xE7EF698D]
+     195 [-]: CALL R12 2 0 
+     196 [-]: GETUPVAL R12 5
+     197 [-]: NAMECALL R12 R12 K63 [0x6968EA36]
+     198 [-]: CALL R12 1 1 
+     199 [-]: GETUPVAL R15 7
+     200 [-]: LOADN R16 0  
+     201 [-]: NAMECALL R13 R1 K64 [0x0EB34C69]
+     202 [-]: CALL R13 3 1 
+     203 [-]: SETUPVAL R13 6
+     204 [-]: GETUPVAL R13 6
+     205 [-]: LOADN R14 1000
+     206 [-]: JUMPIFNOTLE R14 R13 L31
+     207 [-]: GETIMPORT R13 13 [nil]
+     208 [-]: LOADK R14 K65 ["Corpus Greed: Exiting, Treasurer event has already concluded"]
+     209 [-]: CALL R13 1 0 
+     210 [-]: RETURN R0 0  
+L31: 211 [-]: GETUPVAL R15 9
+     212 [-]: LOADN R16 0  
+     213 [-]: NAMECALL R13 R1 K64 [0x0EB34C69]
+     214 [-]: CALL R13 3 1 
+     215 [-]: SETUPVAL R13 8
+     216 [-]: GETIMPORT R13 13 [nil]
+     217 [-]: LOADK R14 K66 ["Corpus Greed: Starting..."]
+     218 [-]: CALL R13 1 0 
+L32: 219 [-]: GETUPVAL R13 6
+     220 [-]: JUMPIFLE R13 R11 L33
+     221 [-]: GETUPVAL R13 8
+     222 [-]: GETIMPORT R14 68 [nil]
+     223 [-]: JUMPIFNOTLE R13 R14 L35
+L33: 224 [-]: GETIMPORT R13 5 [nil]
+     225 [-]: LOADK R14 K69 [0.5]
+     226 [-]: CALL R13 1 0 
+     227 [-]: GETUPVAL R15 6
+     228 [-]: ADDK R14 R15 K69 [0.5]
+     229 [-]: GETIMPORT R15 71 [nil]
+     230 [-]: CALL R15 0 1 
+     231 [-]: ADD R13 R14 R15
+     232 [-]: SETUPVAL R13 6
+     233 [-]: GETUPVAL R15 7
+     234 [-]: GETUPVAL R17 6
+     235 [-]: FASTCALL1 12 R17 L34
+     236 [-]: GETIMPORT R16 74 [nil]
+     237 [-]: CALL R16 1 -1
+L34: 238 [-]: NAMECALL R13 R1 K75 [0x751F061D]
+     239 [-]: CALL R13 -1 0
+     240 [-]: JUMPBACK L32 
+L35: 241 [-]: NAMECALL R13 R0 K76 [0x6189CB44]
+     242 [-]: CALL R13 1 1 
+     243 [-]: GETTABLEN R14 R13 1
+     244 [-]: LOADNIL R15  
+     245 [-]: LOADB R16 0  
+     246 [-]: LOADNIL R17  
+     247 [-]: GETIMPORT R18 78 [nil]
+L36: 248 [-]: JUMPIF R16 L61
+     249 [-]: JUMPIFNOT R9 L37
+     250 [-]: GETUPVAL R19 5
+     251 [-]: GETIMPORT R21 27 [nil]
+     252 [-]: CALL R21 0 1 
+     253 [-]: LOADB R22 0  
+     254 [-]: LOADB R23 0  
+     255 [-]: LOADB R24 0  
+     256 [-]: NAMECALL R19 R19 K79 [0x234BA63B]
+     257 [-]: CALL R19 5 1 
+     258 [-]: MOVE R17 R19 
+     259 [-]: JUMP L38
+    
+L37: 260 [-]: GETUPVAL R19 5
+     261 [-]: NAMECALL R19 R19 K80 [0x8026755D]
+     262 [-]: CALL R19 1 1 
+     263 [-]: GETUPVAL R20 10
+     264 [-]: MOVE R21 R19 
+     265 [-]: CALL R20 1 1 
+     266 [-]: MOVE R17 R20 
+L38: 267 [-]: GETUPVAL R19 5
+     268 [-]: NAMECALL R19 R19 K81 [0xE6AE57EE]
+     269 [-]: CALL R19 1 1 
+     270 [-]: JUMPIFNOT R19 L39
+     271 [-]: LOADN R18 0  
+     272 [-]: JUMP L40
+    
+L39: 273 [-]: ADDK R20 R18 K82 [1]
+     274 [-]: GETIMPORT R21 71 [nil]
+     275 [-]: CALL R21 0 1 
+     276 [-]: ADD R18 R20 R21
+L40: 277 [-]: FASTCALL1 62 R15 L41
+     278 [-]: MOVE R21 R15 
+     279 [-]: GETIMPORT R20 3 [nil]
+     280 [-]: CALL R20 1 1 
+L41: 281 [-]: JUMPIFNOT R20 L59
+     282 [-]: FASTCALL1 62 R17 L42
+     283 [-]: MOVE R21 R17 
+     284 [-]: GETIMPORT R20 3 [nil]
+     285 [-]: CALL R20 1 1 
+L42: 286 [-]: JUMPIF R20 L59
+     287 [-]: JUMPIF R19 L59
+     288 [-]: GETIMPORT R20 78 [nil]
+     289 [-]: JUMPIFNOTLE R20 R18 L59
+     290 [-]: FASTCALL1 62 R15 L43
+     291 [-]: MOVE R21 R15 
+     292 [-]: GETIMPORT R20 3 [nil]
+     293 [-]: CALL R20 1 1 
+L43: 294 [-]: JUMPIFNOT R20 L44
+     295 [-]: GETUPVAL R20 5
+     296 [-]: LOADB R22 1  
+     297 [-]: NAMECALL R20 R20 K83 [0xE830AC3D]
+     298 [-]: CALL R20 2 1 
+     299 [-]: GETUPVAL R21 5
+     300 [-]: NAMECALL R21 R21 K84 [0x9A49D00C]
+     301 [-]: CALL R21 1 1 
+     302 [-]: JUMPIFNOTLT R20 R21 L44
+     303 [-]: GETUPVAL R20 5
+     304 [-]: MOVE R22 R14 
+     305 [-]: MOVE R23 R17 
+     306 [-]: GETUPVAL R24 2
+     307 [-]: MOVE R25 R12 
+     308 [-]: NAMECALL R20 R20 K85 [0x33FC842F]
+     309 [-]: CALL R20 5 1 
+     310 [-]: MOVE R15 R20 
+L44: 311 [-]: FASTCALL1 62 R15 L45
+     312 [-]: MOVE R21 R15 
+     313 [-]: GETIMPORT R20 3 [nil]
+     314 [-]: CALL R20 1 1 
+L45: 315 [-]: JUMPIF R20 L58
+     316 [-]: GETUPVAL R20 5
+     317 [-]: LOADN R22 1  
+     318 [-]: NAMECALL R20 R20 K86 [0xF2D6020E]
+     319 [-]: CALL R20 2 0 
+     320 [-]: GETUPVAL R21 11
+     321 [-]: GETTABLEKS R20 R21 K87 [0x67A78DAD]
+     322 [-]: GETUPVAL R22 11
+     323 [-]: GETTABLEKS R21 R22 K88 ["UNALERT"]
+     324 [-]: CALL R20 1 0 
+     325 [-]: GETUPVAL R20 5
+     326 [-]: LOADB R22 0  
+     327 [-]: NAMECALL R20 R20 K89 [0x8F4DC1B0]
+     328 [-]: CALL R20 2 0 
+     329 [-]: JUMPIFNOT R9 L57
+     330 [-]: LENGTH R22 R8
+     331 [-]: LOADN R20 1  
+     332 [-]: LOADN R21 -1 
+     333 [-]: FORNPREP R20 L49
+L46: 334 [-]: GETTABLE R24 R8 R22
+     335 [-]: FASTCALL1 62 R24 L47
+     336 [-]: GETIMPORT R23 3 [nil]
+     337 [-]: CALL R23 1 1 
+L47: 338 [-]: JUMPIFNOT R23 L48
+     339 [-]: GETIMPORT R23 92 [nil]
+     340 [-]: MOVE R24 R8  
+     341 [-]: MOVE R25 R22 
+     342 [-]: CALL R23 2 0 
+L48: 343 [-]: FORNLOOP R20 L46
+L49: 344 [-]: FASTCALL1 62 R8 L50
+     345 [-]: MOVE R21 R8  
+     346 [-]: GETIMPORT R20 3 [nil]
+     347 [-]: CALL R20 1 1 
+L50: 348 [-]: JUMPIF R20 L56
+     349 [-]: LENGTH R20 R8
+     350 [-]: LOADN R21 0  
+     351 [-]: JUMPIFNOTLT R21 R20 L56
+     352 [-]: GETIMPORT R20 13 [nil]
+     353 [-]: LOADK R21 K93 ["Corpus Greed: Defense setup"]
+     354 [-]: CALL R20 1 0 
+     355 [-]: NAMECALL R20 R15 K94 [0xBB610E5B]
+     356 [-]: CALL R20 1 1 
+     357 [-]: FASTCALL1 62 R20 L51
+     358 [-]: MOVE R22 R20 
+     359 [-]: GETIMPORT R21 3 [nil]
+     360 [-]: CALL R21 1 1 
+L51: 361 [-]: JUMPIF R21 L55
+     362 [-]: NAMECALL R21 R20 K95 [0xD1586535]
+     363 [-]: CALL R21 1 1 
+     364 [-]: LOADN R22 0  
+     365 [-]: LOADN R23 0  
+     366 [-]: GETTABLEN R24 R8 1
+     367 [-]: LOADN R27 1  
+     368 [-]: LENGTH R25 R8
+     369 [-]: LOADN R26 1  
+     370 [-]: FORNPREP R25 L54
+L52: 371 [-]: GETUPVAL R28 5
+     372 [-]: MOVE R30 R21 
+     373 [-]: GETTABLE R31 R8 R27
+     374 [-]: NAMECALL R31 R31 K95 [0xD1586535]
+     375 [-]: CALL R31 1 -1
+     376 [-]: NAMECALL R28 R28 K96 [0x87358EF0]
+     377 [-]: CALL R28 -1 1
+     378 [-]: MOVE R22 R28 
+     379 [-]: JUMPIFNOTLT R23 R22 L53
+     380 [-]: MOVE R23 R22 
+     381 [-]: GETTABLE R24 R8 R27
+L53: 382 [-]: FORNLOOP R25 L52
+L54: 383 [-]: NAMECALL R27 R24 K95 [0xD1586535]
+     384 [-]: CALL R27 1 -1
+     385 [-]: NAMECALL R25 R15 K97 [0x54CFC0CF]
+     386 [-]: CALL R25 -1 0
+     387 [-]: JUMP L57
+    
+L55: 388 [-]: GETIMPORT R21 13 [nil]
+     389 [-]: LOADK R22 K98 ["Corpus Greed: Avatar is nil!"]
+     390 [-]: CALL R21 1 0 
+     391 [-]: JUMP L57
+    
+L56: 392 [-]: GETIMPORT R20 13 [nil]
+     393 [-]: LOADK R21 K44 ["Corpus Greed: No shrines found!"]
+     394 [-]: CALL R20 1 0 
+L57: 395 [-]: LOADB R16 1  
+     396 [-]: GETIMPORT R22 100 [nil]
+     397 [-]: NAMECALL R20 R1 K101 [0xC19D05D7]
+     398 [-]: CALL R20 2 0 
+     399 [-]: GETIMPORT R20 13 [nil]
+     400 [-]: LOADK R21 K102 ["Manager spawned"]
+     401 [-]: CALL R20 1 0 
+     402 [-]: JUMP L60
+    
+L58: 403 [-]: GETIMPORT R20 5 [nil]
+     404 [-]: LOADN R21 1  
+     405 [-]: CALL R20 1 0 
+     406 [-]: JUMP L60
+    
+L59: 407 [-]: GETIMPORT R20 13 [nil]
+     408 [-]: LOADK R21 K103 ["Aristocrat Treasurer: No valid spawnpoint, AI cap reached or VIP/after VIP timer is active."]
+     409 [-]: CALL R20 1 0 
+     410 [-]: GETIMPORT R20 5 [nil]
+     411 [-]: LOADN R21 1  
+     412 [-]: CALL R20 1 0 
+L60: 413 [-]: JUMPBACK L36 
+L61: 414 [-]: GETUPVAL R21 7
+     415 [-]: LOADN R22 1000
+     416 [-]: NAMECALL R19 R1 K75 [0x751F061D]
+     417 [-]: CALL R19 3 0 
+     418 [-]: GETIMPORT R19 13 [nil]
+     419 [-]: LOADK R21 K104 ["Corpus Greed: Aristocrat Treasurer Spawned at "]
+     420 [-]: GETIMPORT R22 36 [nil]
+     421 [-]: NAMECALL R23 R15 K94 [0xBB610E5B]
+     422 [-]: CALL R23 1 1 
+     423 [-]: NAMECALL R23 R23 K95 [0xD1586535]
+     424 [-]: CALL R23 1 -1
+     425 [-]: CALL R22 -1 1
+     426 [-]: CONCAT R20 R21 R22
+     427 [-]: CALL R19 1 0 
+     428 [-]: GETIMPORT R19 13 [nil]
+     429 [-]: LOADK R20 K105 ["Corpus Greed: Ended"]
+     430 [-]: CALL R19 1 0 
+     431 [-]: RETURN R0 0  
+
 
 

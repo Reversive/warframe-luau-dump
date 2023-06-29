@@ -1,21 +1,18 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
+; Is_vararg:       1
 ; Max Stack Size:  2
 
-  1 [-]: NEWTABLE  R0 0 0       ; R0 := {}
-  2 [-]: CLOSURE   R1 0         ; R1 := closure(Function #1)
-  3 [-]: MOVE      R0 R0        ; R0 := R0
-  4 [-]: SETGLOBAL R1 K0        ; MatchTagEvent := R1
-  5 [-]: RETURN    R0 1         ; return 
+            1 [-]: NEWTABLE R0 0 0
+       2 [-]: NEWCLOSURE R1 P0
+       3 [-]: MOVE R1 R0   
+       4 [-]: SETGLOBAL R1 K0 ["MatchTagEvent"]
+       5 [-]: CLOSEUPVALS R0
+       6 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 7
 ; #Upvalues:       1
@@ -23,48 +20,44 @@
 ; Is_vararg:       0
 ; Max Stack Size:  6
 
-  1 [-]: GETGLOBAL R2 K0        ; R2 := 0x7b998233
-  2 [-]: MOVE      R3 R0        ; R3 := R0
-  3 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  4 [-]: TEST      R2 0         ; if not R2 then PC := 8
-  5 [-]: JMP       8            ; PC := 8
-  6 [-]: LOADKB    R2 0 0       ; R2 := false
-  7 [-]: RETURN    R2 2         ; return R2
-  8 [-]: GETGLOBAL R2 K1        ; R2 := 0x55156ff7
-  9 [-]: CALL      R2 1 2       ; R2 := R2()
- 10 [-]: GETUPVAL  R3 U0        ; R3 := U0
- 11 [-]: LEN       R3 R3        ; R3 := # R3
- 12 [-]: LT        0 K2 R3      ; if 0.000000 >= R3 then PC := 26
- 13 [-]: JMP       26           ; PC := 26
- 14 [-]: GETUPVAL  R3 U0        ; R3 := U0
- 15 [-]: GETTABLE  R3 R3 K3     ; R3 := R3[1.000000]
- 16 [-]: SUB       R3 R2 R3     ; R3 := R2 - R3
- 17 [-]: GETGLOBAL R4 K4        ; R4 := 0xdaf34e92
- 18 [-]: LT        0 R4 R3      ; if R4 >= R3 then PC := 26
- 19 [-]: JMP       26           ; PC := 26
- 20 [-]: GETGLOBAL R3 K5        ; R3 := 0x33bdd652
- 21 [-]: GETTABLE  R3 R3 K6     ; R3 := R3[0x9c1f3b5a]
- 22 [-]: GETUPVAL  R4 U0        ; R4 := U0
- 23 [-]: CONST     R5 1         ; R5 := 1.000000
- 24 [-]: CALL      R3 3 1       ; R3(R4,R5)
- 25 [-]: JMP       10           ; PC := 10
- 26 [-]: GETGLOBAL R3 K5        ; R3 := 0x33bdd652
- 27 [-]: GETTABLE  R3 R3 K7     ; R3 := R3[0x23d5322f]
- 28 [-]: GETUPVAL  R4 U0        ; R4 := U0
- 29 [-]: MOVE      R5 R2        ; R5 := R2
- 30 [-]: CALL      R3 3 1       ; R3(R4,R5)
- 31 [-]: GETUPVAL  R3 U0        ; R3 := U0
- 32 [-]: LEN       R3 R3        ; R3 := # R3
- 33 [-]: GETGLOBAL R4 K8        ; R4 := 0x778e66a1
- 34 [-]: LE        1 R4 R3      ; if R4 <= R3 then PC := 37
- 35 [-]: JMP       37           ; PC := 37
- 36 [-]: LOADKB    R3 0 1       ; R3 := false; PC := 37
- 37 [-]: LOADKB    R3 1 0       ; R3 := true
- 38 [-]: TEST      R3 0         ; if not R3 then PC := 42
- 39 [-]: JMP       42           ; PC := 42
- 40 [-]: NEWTABLE  R4 0 0       ; R4 := {}
- 41 [-]: SETUPVAL  R4 U0        ; U82 := R0
- 42 [-]: RETURN    R3 2         ; return R3
- 43 [-]: RETURN    R0 1         ; return 
+       0 [-]: FASTCALL1 62 R0 L0
+       1 [-]: MOVE R3 R0   
+       2 [-]: GETIMPORT R2 1 [nil]
+       3 [-]: CALL R2 1 1  
+L 0:   4 [-]: JUMPIFNOT R2 L1
+       5 [-]: LOADB R2 0   
+       6 [-]: RETURN R2 1  
+L 1:   7 [-]: GETIMPORT R2 3 [nil]
+       8 [-]: CALL R2 0 1  
+L 2:   9 [-]: GETUPVAL R4 0
+      10 [-]: LENGTH R3 R4 
+      11 [-]: LOADN R4 0   
+      12 [-]: JUMPIFNOTLT R4 R3 L3
+      13 [-]: GETUPVAL R5 0
+      14 [-]: GETTABLEN R4 R5 1
+      15 [-]: SUB R3 R2 R4 
+      16 [-]: GETIMPORT R4 5 [nil]
+      17 [-]: JUMPIFNOTLT R4 R3 L3
+      18 [-]: GETIMPORT R3 8 [nil]
+      19 [-]: GETUPVAL R4 0
+      20 [-]: LOADN R5 1   
+      21 [-]: CALL R3 2 0  
+      22 [-]: JUMPBACK L2  
+L 3:  23 [-]: GETUPVAL R4 0
+      24 [-]: FASTCALL2 52 R4 R2 L4
+      25 [-]: MOVE R5 R2   
+      26 [-]: GETIMPORT R3 10 [nil]
+      27 [-]: CALL R3 2 0  
+L 4:  28 [-]: GETUPVAL R5 0
+      29 [-]: LENGTH R4 R5 
+      30 [-]: GETIMPORT R5 12 [nil]
+      31 [-]: JUMPIFLE R5 R4 L5
+      32 [-]: LOADB R3 0 +1
+L 5:  33 [-]: LOADB R3 1   
+L 6:  34 [-]: JUMPIFNOT R3 L7
+      35 [-]: NEWTABLE R4 0 0
+      36 [-]: SETUPVAL R4 0
+L 7:  37 [-]: RETURN R3 1  
+
 
 

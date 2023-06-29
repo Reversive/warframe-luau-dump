@@ -1,19 +1,15 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
-; Max Stack Size:  2
+; Is_vararg:       1
+; Max Stack Size:  1
 
-  1 [-]: CLOSURE   R0 0         ; R0 := closure(Function #1)
-  2 [-]: SETGLOBAL R0 K0        ; CompletePoiObjective := R0
-  3 [-]: RETURN    R0 1         ; return 
+            1 [-]: DUPCLOSURE R0 K0 []
+       2 [-]: SETGLOBAL R0 K1 ["CompletePoiObjective"]
+       3 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 1
 ; #Upvalues:       0
@@ -21,51 +17,49 @@
 ; Is_vararg:       0
 ; Max Stack Size:  11
 
-  1 [-]: GETGLOBAL R0 K0        ; R0 := 0x89326c93
-  2 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0xfb669000]
-  3 [-]: GETGLOBAL R2 K2        ; R2 := gEncounterHintType
-  4 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
-  5 [-]: GETGLOBAL R1 K3        ; R1 := 0xc8802016
-  6 [-]: MOVE      R2 R0        ; R2 := R0
-  7 [-]: CALL      R1 2 4       ; R1,R2,R3 := R1(R2)
-  8 [-]: JMP       44           ; PC := 44
-  9 [-]: SELF      R6 R5 K4     ; R7 := R5; R6 := R5[0xd8140b94]
- 10 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 11 [-]: TEST      R6 0         ; if not R6 then PC := 44
- 12 [-]: JMP       44           ; PC := 44
- 13 [-]: SELF      R6 R5 K5     ; R7 := R5; R6 := R5[0x4c976eda]
- 14 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 15 [-]: SELF      R7 R6 K6     ; R8 := R6; R7 := R6[0xbc030719]
- 16 [-]: GETGLOBAL R9 K7        ; R9 := 0x0469f296
- 17 [-]: LOADK     R10 K8       ; R10 := "PoiMission"
- 18 [-]: CALL      R9 2 0       ; R9,... := R9(R10)
- 19 [-]: CALL      R7 0 2       ; R7 := R7(R8,...)
- 20 [-]: TEST      R7 0         ; if not R7 then PC := 30
- 21 [-]: JMP       30           ; PC := 30
- 22 [-]: SELF      R7 R5 K9     ; R8 := R5; R7 := R5[0xabe61691]
- 23 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 24 [-]: LT        0 K10 R7     ; if 1.000000 >= R7 then PC := 30
- 25 [-]: JMP       30           ; PC := 30
- 26 [-]: SELF      R7 R5 K11    ; R8 := R5; R7 := R5[0xfe9dc265]
- 27 [-]: CONST     R9 4         ; R9 := 4.000000
- 28 [-]: CALL      R7 3 1       ; R7(R8,R9)
- 29 [-]: JMP       44           ; PC := 44
- 30 [-]: SELF      R7 R6 K6     ; R8 := R6; R7 := R6[0xbc030719]
- 31 [-]: GETGLOBAL R9 K7        ; R9 := 0x0469f296
- 32 [-]: LOADK     R10 K13      ; R10 := "CapitalShip"
- 33 [-]: CALL      R9 2 0       ; R9,... := R9(R10)
- 34 [-]: CALL      R7 0 2       ; R7 := R7(R8,...)
- 35 [-]: TEST      R7 0         ; if not R7 then PC := 44
- 36 [-]: JMP       44           ; PC := 44
- 37 [-]: SELF      R7 R5 K9     ; R8 := R5; R7 := R5[0xabe61691]
- 38 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 39 [-]: LT        0 K10 R7     ; if 1.000000 >= R7 then PC := 44
- 40 [-]: JMP       44           ; PC := 44
- 41 [-]: SELF      R7 R5 K11    ; R8 := R5; R7 := R5[0xfe9dc265]
- 42 [-]: CONST     R9 4         ; R9 := 4.000000
- 43 [-]: CALL      R7 3 1       ; R7(R8,R9)
- 44 [-]: TFORLOOP  R1 2         ; R4,R5 :=  R1(R2,R3); if R4 ~= nil then begin PC = 9; R3 := R4 end
- 45 [-]: JMP       9            ; PC := 9
- 46 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R2 3 [nil]
+       2 [-]: NAMECALL R0 R0 K4 [0xFB669000]
+       3 [-]: CALL R0 2 1  
+       4 [-]: GETIMPORT R1 6 [nil]
+       5 [-]: MOVE R2 R0   
+       6 [-]: CALL R1 1 3  
+       7 [-]: FORGPREP_INEXT R1 L2
+L 0:   8 [-]: NAMECALL R6 R5 K7 [0xD8140B94]
+       9 [-]: CALL R6 1 1  
+      10 [-]: JUMPIFNOT R6 L2
+      11 [-]: NAMECALL R6 R5 K8 [0x4C976EDA]
+      12 [-]: CALL R6 1 1  
+      13 [-]: GETIMPORT R9 10 [nil]
+      14 [-]: LOADK R10 K11 ["PoiMission"]
+      15 [-]: CALL R9 1 -1 
+      16 [-]: NAMECALL R7 R6 K12 [0xBC030719]
+      17 [-]: CALL R7 -1 1 
+      18 [-]: JUMPIFNOT R7 L1
+      19 [-]: NAMECALL R7 R5 K13 [0xABE61691]
+      20 [-]: CALL R7 1 1  
+      21 [-]: LOADN R8 1   
+      22 [-]: JUMPIFNOTLT R8 R7 L1
+      23 [-]: LOADN R9 4   
+      24 [-]: NAMECALL R7 R5 K14 [0xFE9DC265]
+      25 [-]: CALL R7 2 0  
+      26 [-]: JUMP L2
+     
+L 1:  27 [-]: GETIMPORT R9 10 [nil]
+      28 [-]: LOADK R10 K15 ["CapitalShip"]
+      29 [-]: CALL R9 1 -1 
+      30 [-]: NAMECALL R7 R6 K12 [0xBC030719]
+      31 [-]: CALL R7 -1 1 
+      32 [-]: JUMPIFNOT R7 L2
+      33 [-]: NAMECALL R7 R5 K13 [0xABE61691]
+      34 [-]: CALL R7 1 1  
+      35 [-]: LOADN R8 1   
+      36 [-]: JUMPIFNOTLT R8 R7 L2
+      37 [-]: LOADN R9 4   
+      38 [-]: NAMECALL R7 R5 K14 [0xFE9DC265]
+      39 [-]: CALL R7 2 0  
+L 2:  40 [-]: FORGLOOP R1 L0 2 [inext]
+      41 [-]: RETURN R0 0  
+
 
 

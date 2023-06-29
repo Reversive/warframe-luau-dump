@@ -1,374 +1,367 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
+; Is_vararg:       1
 ; Max Stack Size:  2
 
-  1 [-]: CLOSURE   R0 0         ; R0 := closure(Function #1)
-  2 [-]: CLOSURE   R1 1         ; R1 := closure(Function #2)
-  3 [-]: MOVE      R0 R0        ; R0 := R0
-  4 [-]: SETGLOBAL R1 K0        ; CalculateVIPLevel := R1
-  5 [-]: RETURN    R0 1         ; return 
+            1 [-]: DUPCLOSURE R0 K0 []
+       2 [-]: DUPCLOSURE R1 K1 []
+       3 [-]: MOVE R0 R0   
+       4 [-]: SETGLOBAL R1 K2 ["CalculateVIPLevel"]
+       5 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 15
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
-; Max Stack Size:  13
+; Max Stack Size:  15
 
-  1 [-]: EQ        0 R0 R0      ; if R0 ~= R0 then PC := 7
-  2 [-]: JMP       7            ; PC := 7
-  3 [-]: LT        1 K0 R0      ; if 340282346638528859811704183484516925440.000000 < R0 then PC := 7
-  4 [-]: JMP       7            ; PC := 7
-  5 [-]: LT        0 R0 K1      ; if R0 >= -340282346638528859811704183484516925440.000000 then PC := 14
-  6 [-]: JMP       14           ; PC := 14
-  7 [-]: GETGLOBAL R3 K2        ; R3 := 0x3d106989
-  8 [-]: LOADK     R4 K3        ; R4 := "NaN conclave rating (mpRankCalc 0). Rating="
-  9 [-]: GETGLOBAL R5 K4        ; R5 := 0x64fb1586
- 10 [-]: MOVE      R6 R0        ; R6 := R0
- 11 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 12 [-]: CONCAT    R4 R4 R5     ; R4 := R4 .. R5
- 13 [-]: CALL      R3 2 1       ; R3(R4)
- 14 [-]: MUL       R3 R0 K5     ; R3 := R0 * 4.000000
- 15 [-]: DIV       R4 R1 R3     ; R4 := R1 / R3
- 16 [-]: MUL       R4 R4 R2     ; R4 := R4 * R2
- 17 [-]: ADD       R5 K6 R4     ; R5 := 1.000000 + R4
- 18 [-]: MUL       R0 R0 R5     ; R0 := R0 * R5
- 19 [-]: EQ        0 R0 R0      ; if R0 ~= R0 then PC := 25
- 20 [-]: JMP       25           ; PC := 25
- 21 [-]: LT        1 K0 R0      ; if 340282346638528859811704183484516925440.000000 < R0 then PC := 25
- 22 [-]: JMP       25           ; PC := 25
- 23 [-]: LT        0 R0 K1      ; if R0 >= -340282346638528859811704183484516925440.000000 then PC := 36
- 24 [-]: JMP       36           ; PC := 36
- 25 [-]: GETGLOBAL R5 K2        ; R5 := 0x3d106989
- 26 [-]: LOADK     R6 K7        ; R6 := "NaN conclave rating (mpRankCalc 1). Rating="
- 27 [-]: GETGLOBAL R7 K4        ; R7 := 0x64fb1586
- 28 [-]: MOVE      R8 R0        ; R8 := R0
- 29 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 30 [-]: LOADK     R8 K8        ; R8 := ", max conclave="
- 31 [-]: GETGLOBAL R9 K4        ; R9 := 0x64fb1586
- 32 [-]: MOVE      R10 R3       ; R10 := R3
- 33 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 34 [-]: CONCAT    R6 R6 R9     ; R6 := R6 .. R7 .. R8 .. R9
- 35 [-]: CALL      R5 2 1       ; R5(R6)
- 36 [-]: GETGLOBAL R5 K9        ; R5 := 0x06bd8146
- 37 [-]: DIV       R5 R0 R5     ; R5 := R0 / R5
- 38 [-]: GETGLOBAL R6 K10       ; R6 := 0xf8fcb4e4
- 39 [-]: MUL       R0 R5 R6     ; R0 := R5 * R6
- 40 [-]: EQ        0 R0 R0      ; if R0 ~= R0 then PC := 46
- 41 [-]: JMP       46           ; PC := 46
- 42 [-]: LT        1 K0 R0      ; if 340282346638528859811704183484516925440.000000 < R0 then PC := 46
- 43 [-]: JMP       46           ; PC := 46
- 44 [-]: LT        0 R0 K1      ; if R0 >= -340282346638528859811704183484516925440.000000 then PC := 61
- 45 [-]: JMP       61           ; PC := 61
- 46 [-]: GETGLOBAL R5 K2        ; R5 := 0x3d106989
- 47 [-]: LOADK     R6 K11       ; R6 := "NaN conclave rating (mpRankCalc). Max="
- 48 [-]: GETGLOBAL R7 K4        ; R7 := 0x64fb1586
- 49 [-]: GETGLOBAL R8 K9        ; R8 := 0x06bd8146
- 50 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 51 [-]: LOADK     R8 K12       ; R8 := ", mult: "
- 52 [-]: GETGLOBAL R9 K4        ; R9 := 0x64fb1586
- 53 [-]: MOVE      R10 R2       ; R10 := R2
- 54 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 55 [-]: LOADK     R10 K13      ; R10 := ", sum ranks="
- 56 [-]: GETGLOBAL R11 K4       ; R11 := 0x64fb1586
- 57 [-]: MOVE      R12 R1       ; R12 := R1
- 58 [-]: CALL      R11 2 2      ; R11 := R11(R12)
- 59 [-]: CONCAT    R6 R6 R11    ; R6 := R6 .. R7 .. R8 .. R9 .. R10 .. R11
- 60 [-]: CALL      R5 2 1       ; R5(R6)
- 61 [-]: RETURN    R0 2         ; return R0
- 62 [-]: RETURN    R0 1         ; return 
+       0 [-]: JUMPIFNOTEQ R0 R0 L0
+       1 [-]: LOADK R3 K0 [3.4028234663852886e+38]
+       2 [-]: JUMPIFLT R3 R0 L0
+       3 [-]: LOADK R4 K0 [3.4028234663852886e+38]
+       4 [-]: MINUS R3 R4  
+       5 [-]: JUMPIFNOTLT R0 R3 L1
+L 0:   6 [-]: GETIMPORT R3 2 [nil]
+       7 [-]: LOADK R5 K3 ["NaN conclave rating (mpRankCalc 0). Rating="]
+       8 [-]: GETIMPORT R6 5 [nil]
+       9 [-]: MOVE R7 R0   
+      10 [-]: CALL R6 1 1  
+      11 [-]: CONCAT R4 R5 R6
+      12 [-]: CALL R3 1 0  
+L 1:  13 [-]: MULK R3 R0 K6 [4]
+      14 [-]: DIV R5 R1 R3 
+      15 [-]: MUL R4 R5 R2 
+      16 [-]: LOADN R6 1   
+      17 [-]: ADD R5 R6 R4 
+      18 [-]: MUL R0 R0 R5 
+      19 [-]: JUMPIFNOTEQ R0 R0 L2
+      20 [-]: LOADK R5 K0 [3.4028234663852886e+38]
+      21 [-]: JUMPIFLT R5 R0 L2
+      22 [-]: LOADK R6 K0 [3.4028234663852886e+38]
+      23 [-]: MINUS R5 R6  
+      24 [-]: JUMPIFNOTLT R0 R5 L3
+L 2:  25 [-]: GETIMPORT R5 2 [nil]
+      26 [-]: LOADK R7 K7 ["NaN conclave rating (mpRankCalc 1). Rating="]
+      27 [-]: GETIMPORT R11 5 [nil]
+      28 [-]: MOVE R12 R0  
+      29 [-]: CALL R11 1 1 
+      30 [-]: MOVE R8 R11  
+      31 [-]: LOADK R9 K8 [", max conclave="]
+      32 [-]: GETIMPORT R10 5 [nil]
+      33 [-]: MOVE R11 R3  
+      34 [-]: CALL R10 1 1 
+      35 [-]: CONCAT R6 R7 R10
+      36 [-]: CALL R5 1 0  
+L 3:  37 [-]: GETIMPORT R6 10 [nil]
+      38 [-]: DIV R5 R0 R6 
+      39 [-]: GETIMPORT R6 12 [nil]
+      40 [-]: MUL R0 R5 R6 
+      41 [-]: JUMPIFNOTEQ R0 R0 L4
+      42 [-]: LOADK R5 K0 [3.4028234663852886e+38]
+      43 [-]: JUMPIFLT R5 R0 L4
+      44 [-]: LOADK R6 K0 [3.4028234663852886e+38]
+      45 [-]: MINUS R5 R6  
+      46 [-]: JUMPIFNOTLT R0 R5 L5
+L 4:  47 [-]: GETIMPORT R5 2 [nil]
+      48 [-]: LOADK R7 K13 ["NaN conclave rating (mpRankCalc). Max="]
+      49 [-]: GETIMPORT R13 5 [nil]
+      50 [-]: GETIMPORT R14 10 [nil]
+      51 [-]: CALL R13 1 1 
+      52 [-]: MOVE R8 R13  
+      53 [-]: LOADK R9 K14 [", mult: "]
+      54 [-]: GETIMPORT R13 5 [nil]
+      55 [-]: MOVE R14 R2  
+      56 [-]: CALL R13 1 1 
+      57 [-]: MOVE R10 R13 
+      58 [-]: LOADK R11 K15 [", sum ranks="]
+      59 [-]: GETIMPORT R12 5 [nil]
+      60 [-]: MOVE R13 R1  
+      61 [-]: CALL R12 1 1 
+      62 [-]: CONCAT R6 R7 R12
+      63 [-]: CALL R5 1 0  
+L 5:  64 [-]: RETURN R0 1  
 
 
-; Function #2:
-;
 ; Name:            
 ; Defined at line: 39
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
-; Max Stack Size:  28
+; Max Stack Size:  29
 
-  1 [-]: GETGLOBAL R0 K0        ; R0 := _T
-  2 [-]: GETTABLE  R0 R0 K1     ; R0 := R0["gNoBossLevelScaling"]
-  3 [-]: TEST      R0 1         ; if R0 then PC := 9
-  4 [-]: JMP       9            ; PC := 9
-  5 [-]: GETGLOBAL R0 K0        ; R0 := _T
-  6 [-]: GETTABLE  R0 R0 K2     ; R0 := R0["InSimulacrum"]
-  7 [-]: TEST      R0 0         ; if not R0 then PC := 11
-  8 [-]: JMP       11           ; PC := 11
-  9 [-]: CONST     R0 0         ; R0 := 0.000000
- 10 [-]: RETURN    R0 2         ; return R0
- 11 [-]: GETGLOBAL R0 K3        ; R0 := 0xbe190284
- 12 [-]: SELF      R0 R0 K4     ; R1 := R0; R0 := R0[0xef893aec]
- 13 [-]: CALL      R0 2 2       ; R0 := R0(R1)
- 14 [-]: GETTABLE  R1 R0 K5     ; R1 := R0["sortieId"]
- 15 [-]: EQ        0 R1 K6      ; if R1 ~= "" then PC := 20
- 16 [-]: JMP       20           ; PC := 20
- 17 [-]: GETTABLE  R1 R0 K7     ; R1 := R0["tier"]
- 18 [-]: LT        0 K8 R1      ; if 0.000000 >= R1 then PC := 25
- 19 [-]: JMP       25           ; PC := 25
- 20 [-]: GETGLOBAL R1 K0        ; R1 := _T
- 21 [-]: GETTABLE  R2 R0 K10    ; R2 := R0["maxEnemyLevel"]
- 22 [-]: SETTABLE  R1 K9 R2     ; R1["weaponConclave"] := R2
- 23 [-]: GETTABLE  R1 R0 K10    ; R1 := R0["maxEnemyLevel"]
- 24 [-]: RETURN    R1 2         ; return R1
- 25 [-]: GETGLOBAL R1 K11       ; R1 := 0x89326c93
- 26 [-]: SELF      R1 R1 K12    ; R2 := R1; R1 := R1[0x29ef273d]
- 27 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 28 [-]: GETGLOBAL R2 K13       ; R2 := 0x2d0fad09
- 29 [-]: LOADK     R3 K14       ; R3 := "EE.Interface.Utilities"
- 30 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 31 [-]: GETGLOBAL R3 K15       ; R3 := 0x7b998233
- 32 [-]: MOVE      R4 R1        ; R4 := R1
- 33 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 34 [-]: TEST      R3 0         ; if not R3 then PC := 41
- 35 [-]: JMP       41           ; PC := 41
- 36 [-]: GETGLOBAL R3 K16       ; R3 := 0x3d106989
- 37 [-]: LOADK     R4 K17       ; R4 := "No npcManager when calculating VIP level!"
- 38 [-]: CALL      R3 2 1       ; R3(R4)
- 39 [-]: CONST     R3 0         ; R3 := 0.000000
- 40 [-]: RETURN    R3 2         ; return R3
- 41 [-]: SELF      R3 R1 K18    ; R4 := R1; R3 := R1[0x66905cb0]
- 42 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 43 [-]: GETGLOBAL R4 K15       ; R4 := 0x7b998233
- 44 [-]: MOVE      R5 R3        ; R5 := R3
- 45 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 46 [-]: TEST      R4 0         ; if not R4 then PC := 53
- 47 [-]: JMP       53           ; PC := 53
- 48 [-]: GETGLOBAL R4 K16       ; R4 := 0x3d106989
- 49 [-]: LOADK     R5 K19       ; R5 := "No aiDir when calculating VIP level!"
- 50 [-]: CALL      R4 2 1       ; R4(R5)
- 51 [-]: CONST     R4 0         ; R4 := 0.000000
- 52 [-]: RETURN    R4 2         ; return R4
- 53 [-]: GETGLOBAL R4 K11       ; R4 := 0x89326c93
- 54 [-]: SELF      R4 R4 K20    ; R5 := R4; R4 := R4[0x8b5b1f58]
- 55 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 56 [-]: GETGLOBAL R5 K11       ; R5 := 0x89326c93
- 57 [-]: SELF      R5 R5 K21    ; R6 := R5; R5 := R5[0x7d108ddb]
- 58 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 59 [-]: CONST     R6 0         ; R6 := 0.000000
- 60 [-]: CONST     R7 0         ; R7 := 0.000000
- 61 [-]: CONST     R8 0         ; R8 := 0.000000
- 62 [-]: CONST     R9 0         ; R9 := 0.000000
- 63 [-]: CONST     R10 0        ; R10 := 0.000000
- 64 [-]: CONST     R11 0        ; R11 := 0.000000
- 65 [-]: CONST     R12 0        ; R12 := 0.000000
- 66 [-]: CONST     R13 0        ; R13 := 0.000000
- 67 [-]: CONST     R14 0        ; R14 := 0.000000
- 68 [-]: CONST     R15 0        ; R15 := 0.000000
- 69 [-]: LOADKB    R16 0 0      ; R16 := false
- 70 [-]: CONST     R17 1        ; R17 := 1.000000
- 71 [-]: LEN       R18 R5       ; R18 := # R5
- 72 [-]: CONST     R19 1        ; R19 := 1.000000
- 73 [-]: FORPREP   R17 158      ; R17 -= R19; PC := 158
- 74 [-]: GETTABLE  R21 R5 R20   ; R21 := R5[R20]
- 75 [-]: SELF      R21 R21 K22  ; R22 := R21; R21 := R21[0x8ed175c9]
- 76 [-]: CALL      R21 2 2      ; R21 := R21(R22)
- 77 [-]: EQ        0 R21 K8     ; if R21 ~= 0.000000 then PC := 80
- 78 [-]: JMP       80           ; PC := 80
- 79 [-]: LOADKB    R16 1 0      ; R16 := true
- 80 [-]: GETTABLE  R21 R2 K23   ; R21 := R2[0x06d055f9]
- 81 [-]: GETTABLE  R22 R5 R20   ; R22 := R5[R20]
- 82 [-]: SELF      R22 R22 K24  ; R23 := R22; R22 := R22[0x420402a9]
- 83 [-]: CALL      R22 2 2      ; R22 := R22(R23)
- 84 [-]: GETGLOBAL R23 K25      ; R23 := 0x76ea806b
- 85 [-]: SELF      R23 R23 K26  ; R24 := R23; R23 := R23[0x3f3ae64c]
- 86 [-]: CONST     R25 0        ; R25 := 0.000000
- 87 [-]: CALL      R23 3 2      ; R23 := R23(R24,R25)
- 88 [-]: SELF      R23 R23 K27  ; R24 := R23; R23 := R23[0x80563238]
- 89 [-]: CALL      R23 2 2      ; R23 := R23(R24)
- 90 [-]: SELF      R23 R23 K28  ; R24 := R23; R23 := R23[0x62c81b76]
- 91 [-]: CALL      R23 2 2      ; R23 := R23(R24)
- 92 [-]: GETTABLE  R24 R5 R20   ; R24 := R5[R20]
- 93 [-]: SELF      R24 R24 K28  ; R25 := R24; R24 := R24[0x62c81b76]
- 94 [-]: CALL      R24 2 0      ; R24,... := R24(R25)
- 95 [-]: CALL      R21 0 2      ; R21 := R21(R22,...)
- 96 [-]: GETGLOBAL R22 K15      ; R22 := 0x7b998233
- 97 [-]: MOVE      R23 R21      ; R23 := R21
- 98 [-]: CALL      R22 2 2      ; R22 := R22(R23)
- 99 [-]: TEST      R22 1        ; if R22 then PC := 122
-100 [-]: JMP       122          ; PC := 122
-101 [-]: SELF      R22 R21 K29  ; R23 := R21; R22 := R21[0x56fa8bc8]
-102 [-]: CONST     R24 0        ; R24 := 0.000000
-103 [-]: CONST     R25 0        ; R25 := 0.000000
-104 [-]: CALL      R22 4 2      ; R22 := R22(R23,R24,R25)
-105 [-]: GETGLOBAL R23 K31      ; R23 := 0x7c6a087b
-106 [-]: GETTABLE  R23 R23 K32  ; R23 := R23[1.000000]
-107 [-]: MUL       R13 R22 R23  ; R13 := R22 * R23
-108 [-]: SELF      R22 R21 K29  ; R23 := R21; R22 := R21[0x56fa8bc8]
-109 [-]: CONST     R24 0        ; R24 := 0.000000
-110 [-]: CONST     R25 1        ; R25 := 1.000000
-111 [-]: CALL      R22 4 2      ; R22 := R22(R23,R24,R25)
-112 [-]: GETGLOBAL R23 K31      ; R23 := 0x7c6a087b
-113 [-]: GETTABLE  R23 R23 K33  ; R23 := R23[2.000000]
-114 [-]: MUL       R14 R22 R23  ; R14 := R22 * R23
-115 [-]: SELF      R22 R21 K29  ; R23 := R21; R22 := R21[0x56fa8bc8]
-116 [-]: CONST     R24 0        ; R24 := 0.000000
-117 [-]: CONST     R25 2        ; R25 := 2.000000
-118 [-]: CALL      R22 4 2      ; R22 := R22(R23,R24,R25)
-119 [-]: GETGLOBAL R23 K31      ; R23 := 0x7c6a087b
-120 [-]: GETTABLE  R23 R23 K34  ; R23 := R23[3.000000]
-121 [-]: MUL       R15 R22 R23  ; R15 := R22 * R23
-122 [-]: ADD       R22 R13 R14  ; R22 := R13 + R14
-123 [-]: ADD       R22 R22 R15  ; R22 := R22 + R15
-124 [-]: DIV       R6 R22 K34   ; R6 := R22 / 3.000000
-125 [-]: ADD       R10 R10 R6   ; R10 := R10 + R6
-126 [-]: GETGLOBAL R22 K35      ; R22 := 0x5bced4c4
-127 [-]: GETTABLE  R22 R22 K36  ; R22 := R22[0xb62ecfe0]
-128 [-]: MOVE      R23 R6       ; R23 := R6
-129 [-]: MOVE      R24 R8       ; R24 := R8
-130 [-]: CALL      R22 3 2      ; R22 := R22(R23,R24)
-131 [-]: MOVE      R8 R22       ; R8 := R22
-132 [-]: ADD       R22 R14 R15  ; R22 := R14 + R15
-133 [-]: DIV       R7 R22 K33   ; R7 := R22 / 2.000000
-134 [-]: ADD       R11 R11 R7   ; R11 := R11 + R7
-135 [-]: GETGLOBAL R22 K35      ; R22 := 0x5bced4c4
-136 [-]: GETTABLE  R22 R22 K36  ; R22 := R22[0xb62ecfe0]
-137 [-]: MOVE      R23 R7       ; R23 := R7
-138 [-]: MOVE      R24 R9       ; R24 := R9
-139 [-]: CALL      R22 3 2      ; R22 := R22(R23,R24)
-140 [-]: MOVE      R9 R22       ; R9 := R22
-141 [-]: EQ        0 R9 R9      ; if R9 ~= R9 then PC := 147
-142 [-]: JMP       147          ; PC := 147
-143 [-]: LT        1 K37 R9     ; if 340282346638528859811704183484516925440.000000 < R9 then PC := 147
-144 [-]: JMP       147          ; PC := 147
-145 [-]: LT        0 R9 K38     ; if R9 >= -340282346638528859811704183484516925440.000000 then PC := 158
-146 [-]: JMP       158          ; PC := 158
-147 [-]: GETGLOBAL R22 K16      ; R22 := 0x3d106989
-148 [-]: LOADK     R23 K39      ; R23 := "NaN conclave rating. pistolRank="
-149 [-]: GETGLOBAL R24 K40      ; R24 := 0x64fb1586
-150 [-]: MOVE      R25 R14      ; R25 := R14
-151 [-]: CALL      R24 2 2      ; R24 := R24(R25)
-152 [-]: LOADK     R25 K41      ; R25 := ", rifle rank="
-153 [-]: GETGLOBAL R26 K40      ; R26 := 0x64fb1586
-154 [-]: MOVE      R27 R15      ; R27 := R15
-155 [-]: CALL      R26 2 2      ; R26 := R26(R27)
-156 [-]: CONCAT    R23 R23 R26  ; R23 := R23 .. R24 .. R25 .. R26
-157 [-]: CALL      R22 2 1      ; R22(R23)
-158 [-]: FORLOOP   R17 74       ; R17 += R19; if R17 <= R18 then begin PC := 74; R20 := R17 end
-159 [-]: LEN       R22 R4       ; R22 := # R4
-160 [-]: LT        0 K32 R22    ; if 1.000000 >= R22 then PC := 202
-161 [-]: JMP       202          ; PC := 202
-162 [-]: EQ        0 R8 K8      ; if R8 ~= 0.000000 then PC := 171
-163 [-]: JMP       171          ; PC := 171
-164 [-]: GETGLOBAL R22 K16      ; R22 := 0x3d106989
-165 [-]: LOADK     R23 K42      ; R23 := "Conclave rank rating = 0. Players: "
-166 [-]: GETGLOBAL R24 K40      ; R24 := 0x64fb1586
-167 [-]: LEN       R25 R5       ; R25 := # R5
-168 [-]: CALL      R24 2 2      ; R24 := R24(R25)
-169 [-]: CONCAT    R23 R23 R24  ; R23 := R23 .. R24
-170 [-]: CALL      R22 2 1      ; R22(R23)
-171 [-]: GETUPVAL  R22 U0       ; R22 := U0
-172 [-]: MOVE      R23 R8       ; R23 := R8
-173 [-]: MOVE      R24 R10      ; R24 := R10
-174 [-]: GETGLOBAL R25 K43      ; R25 := 0xcc5b23c3
-175 [-]: CALL      R22 4 2      ; R22 := R22(R23,R24,R25)
-176 [-]: MOVE      R12 R22      ; R12 := R22
-177 [-]: GETGLOBAL R22 K35      ; R22 := 0x5bced4c4
-178 [-]: GETTABLE  R22 R22 K44  ; R22 := R22[0xac1b386a]
-179 [-]: MOVE      R23 R12      ; R23 := R12
-180 [-]: GETGLOBAL R24 K45      ; R24 := 0xb7161492
-181 [-]: CALL      R22 3 2      ; R22 := R22(R23,R24)
-182 [-]: MOVE      R12 R22      ; R12 := R22
-183 [-]: EQ        0 R9 K8      ; if R9 ~= 0.000000 then PC := 193
-184 [-]: JMP       193          ; PC := 193
-185 [-]: GETGLOBAL R22 K16      ; R22 := 0x3d106989
-186 [-]: LOADK     R23 K46      ; R23 := "Conclave weapon rating = 0. Players: "
-187 [-]: GETGLOBAL R24 K40      ; R24 := 0x64fb1586
-188 [-]: LEN       R25 R5       ; R25 := # R5
-189 [-]: CALL      R24 2 2      ; R24 := R24(R25)
-190 [-]: CONCAT    R23 R23 R24  ; R23 := R23 .. R24
-191 [-]: CALL      R22 2 1      ; R22(R23)
-192 [-]: CONST     R9 1         ; R9 := 1.000000
-193 [-]: GETUPVAL  R22 U0       ; R22 := U0
-194 [-]: MOVE      R23 R9       ; R23 := R9
-195 [-]: MOVE      R24 R11      ; R24 := R11
-196 [-]: GETGLOBAL R25 K47      ; R25 := 0x8fd2d1d3
-197 [-]: CALL      R22 4 2      ; R22 := R22(R23,R24,R25)
-198 [-]: MOVE      R9 R22       ; R9 := R22
-199 [-]: GETGLOBAL R22 K0       ; R22 := _T
-200 [-]: SETTABLE  R22 K9 R9    ; R22["weaponConclave"] := R9
-201 [-]: JMP       235          ; PC := 235
-202 [-]: GETGLOBAL R22 K48      ; R22 := 0x06bd8146
-203 [-]: DIV       R22 R8 R22   ; R22 := R8 / R22
-204 [-]: GETGLOBAL R23 K49      ; R23 := 0xf8fcb4e4
-205 [-]: MUL       R12 R22 R23  ; R12 := R22 * R23
-206 [-]: GETGLOBAL R22 K35      ; R22 := 0x5bced4c4
-207 [-]: GETTABLE  R22 R22 K44  ; R22 := R22[0xac1b386a]
-208 [-]: MOVE      R23 R12      ; R23 := R12
-209 [-]: GETGLOBAL R24 K49      ; R24 := 0xf8fcb4e4
-210 [-]: CALL      R22 3 2      ; R22 := R22(R23,R24)
-211 [-]: MOVE      R12 R22      ; R12 := R22
-212 [-]: GETGLOBAL R22 K48      ; R22 := 0x06bd8146
-213 [-]: DIV       R22 R9 R22   ; R22 := R9 / R22
-214 [-]: GETGLOBAL R23 K49      ; R23 := 0xf8fcb4e4
-215 [-]: MUL       R9 R22 R23   ; R9 := R22 * R23
-216 [-]: EQ        0 R9 R9      ; if R9 ~= R9 then PC := 222
-217 [-]: JMP       222          ; PC := 222
-218 [-]: LT        1 K37 R9     ; if 340282346638528859811704183484516925440.000000 < R9 then PC := 222
-219 [-]: JMP       222          ; PC := 222
-220 [-]: LT        0 R9 K38     ; if R9 >= -340282346638528859811704183484516925440.000000 then PC := 233
-221 [-]: JMP       233          ; PC := 233
-222 [-]: GETGLOBAL R22 K16      ; R22 := 0x3d106989
-223 [-]: LOADK     R23 K50      ; R23 := "NaN conclave rating. maxConclaveRating="
-224 [-]: GETGLOBAL R24 K40      ; R24 := 0x64fb1586
-225 [-]: GETGLOBAL R25 K48      ; R25 := 0x06bd8146
-226 [-]: CALL      R24 2 2      ; R24 := R24(R25)
-227 [-]: LOADK     R25 K51      ; R25 := ", max solo boss level="
-228 [-]: GETGLOBAL R26 K40      ; R26 := 0x64fb1586
-229 [-]: GETGLOBAL R27 K49      ; R27 := 0xf8fcb4e4
-230 [-]: CALL      R26 2 2      ; R26 := R26(R27)
-231 [-]: CONCAT    R23 R23 R26  ; R23 := R23 .. R24 .. R25 .. R26
-232 [-]: CALL      R22 2 1      ; R22(R23)
-233 [-]: GETGLOBAL R22 K0       ; R22 := _T
-234 [-]: SETTABLE  R22 K9 R9    ; R22["weaponConclave"] := R9
-235 [-]: SELF      R22 R3 K52   ; R23 := R3; R22 := R3[0x6968ea36]
-236 [-]: CALL      R22 2 2      ; R22 := R22(R23)
-237 [-]: LT        0 K53 R22    ; if 100.000000 >= R22 then PC := 240
-238 [-]: JMP       240          ; PC := 240
-239 [-]: CONST     R22 20       ; R22 := 20.000000
-240 [-]: GETGLOBAL R23 K35      ; R23 := 0x5bced4c4
-241 [-]: GETTABLE  R23 R23 K36  ; R23 := R23[0xb62ecfe0]
-242 [-]: MOVE      R24 R12      ; R24 := R12
-243 [-]: MOVE      R25 R22      ; R25 := R22
-244 [-]: CALL      R23 3 2      ; R23 := R23(R24,R25)
-245 [-]: MOVE      R12 R23      ; R12 := R23
-246 [-]: GETGLOBAL R23 K54      ; R23 := 0x50ebdb9d
-247 [-]: TEST      R23 0        ; if not R23 then PC := 250
-248 [-]: JMP       250          ; PC := 250
-249 [-]: GETTABLE  R12 R0 K10   ; R12 := R0["maxEnemyLevel"]
-250 [-]: GETGLOBAL R23 K0       ; R23 := _T
-251 [-]: GETTABLE  R23 R23 K55  ; R23 := R23["gTutorialMission"]
-252 [-]: TEST      R23 0        ; if not R23 then PC := 260
-253 [-]: JMP       260          ; PC := 260
-254 [-]: GETGLOBAL R23 K0       ; R23 := _T
-255 [-]: GETTABLE  R23 R23 K9   ; R23 := R23["weaponConclave"]
-256 [-]: LE        0 R23 K56    ; if R23 > 6.000000 then PC := 260
-257 [-]: JMP       260          ; PC := 260
-258 [-]: CONST     R12 1        ; R12 := 1.000000
-259 [-]: JMP       273          ; PC := 273
-260 [-]: GETTABLE  R23 R0 K57   ; R23 := R0["conclaveRange"]
-261 [-]: GETTABLE  R23 R23 K58  ; R23 := R23["maxValue"]
-262 [-]: LT        1 K8 R23     ; if 0.000000 < R23 then PC := 266
-263 [-]: JMP       266          ; PC := 266
-264 [-]: TEST      R16 0        ; if not R16 then PC := 273
-265 [-]: JMP       273          ; PC := 273
-266 [-]: SELF      R23 R3 K52   ; R24 := R3; R23 := R3[0x6968ea36]
-267 [-]: CALL      R23 2 2      ; R23 := R23(R24)
-268 [-]: GETGLOBAL R24 K59      ; R24 := 0x55730e1a
-269 [-]: CONST     R25 5        ; R25 := 5.000000
-270 [-]: CONST     R26 8        ; R26 := 8.000000
-271 [-]: CALL      R24 3 2      ; R24 := R24(R25,R26)
-272 [-]: ADD       R12 R23 R24  ; R12 := R23 + R24
-273 [-]: RETURN    R12 2        ; return R12
-274 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R0 2 [nil]
+       1 [-]: JUMPIF R0 L0 
+       2 [-]: GETIMPORT R0 4 [nil]
+       3 [-]: JUMPIFNOT R0 L1
+L 0:   4 [-]: LOADN R0 0   
+       5 [-]: RETURN R0 1  
+L 1:   6 [-]: GETIMPORT R0 6 [nil]
+       7 [-]: NAMECALL R0 R0 K7 [0xEF893AEC]
+       8 [-]: CALL R0 1 1  
+       9 [-]: GETTABLEKS R1 R0 K8 ["sortieId"]
+      10 [-]: JUMPXEQKS R1 K9 L2 NOT [""]
+      11 [-]: GETTABLEKS R1 R0 K10 ["tier"]
+      12 [-]: LOADN R2 0   
+      13 [-]: JUMPIFNOTLT R2 R1 L3
+L 2:  14 [-]: GETIMPORT R1 11 [nil]
+      15 [-]: GETTABLEKS R2 R0 K12 ["maxEnemyLevel"]
+      16 [-]: SETTABLEKS R2 R1 K13 ["weaponConclave"]
+      17 [-]: GETTABLEKS R1 R0 K12 ["maxEnemyLevel"]
+      18 [-]: RETURN R1 1  
+L 3:  19 [-]: GETIMPORT R1 15 [nil]
+      20 [-]: NAMECALL R1 R1 K16 [0x29EF273D]
+      21 [-]: CALL R1 1 1  
+      22 [-]: GETIMPORT R2 18 [nil]
+      23 [-]: LOADK R3 K19 ["EE.Interface.Utilities"]
+      24 [-]: CALL R2 1 1  
+      25 [-]: FASTCALL1 62 R1 L4
+      26 [-]: MOVE R4 R1   
+      27 [-]: GETIMPORT R3 21 [nil]
+      28 [-]: CALL R3 1 1  
+L 4:  29 [-]: JUMPIFNOT R3 L5
+      30 [-]: GETIMPORT R3 23 [nil]
+      31 [-]: LOADK R4 K24 ["No npcManager when calculating VIP level!"]
+      32 [-]: CALL R3 1 0  
+      33 [-]: LOADN R3 0   
+      34 [-]: RETURN R3 1  
+L 5:  35 [-]: NAMECALL R3 R1 K25 [0x66905CB0]
+      36 [-]: CALL R3 1 1  
+      37 [-]: FASTCALL1 62 R3 L6
+      38 [-]: MOVE R5 R3   
+      39 [-]: GETIMPORT R4 21 [nil]
+      40 [-]: CALL R4 1 1  
+L 6:  41 [-]: JUMPIFNOT R4 L7
+      42 [-]: GETIMPORT R4 23 [nil]
+      43 [-]: LOADK R5 K26 ["No aiDir when calculating VIP level!"]
+      44 [-]: CALL R4 1 0  
+      45 [-]: LOADN R4 0   
+      46 [-]: RETURN R4 1  
+L 7:  47 [-]: GETIMPORT R4 15 [nil]
+      48 [-]: NAMECALL R4 R4 K27 [0x8B5B1F58]
+      49 [-]: CALL R4 1 1  
+      50 [-]: GETIMPORT R5 15 [nil]
+      51 [-]: NAMECALL R5 R5 K28 [0x7D108DDB]
+      52 [-]: CALL R5 1 1  
+      53 [-]: LOADN R6 0   
+      54 [-]: LOADN R7 0   
+      55 [-]: LOADN R8 0   
+      56 [-]: LOADN R9 0   
+      57 [-]: LOADN R10 0  
+      58 [-]: LOADN R11 0  
+      59 [-]: LOADN R12 0  
+      60 [-]: LOADN R13 0  
+      61 [-]: LOADN R14 0  
+      62 [-]: LOADN R15 0  
+      63 [-]: LOADB R16 0  
+      64 [-]: LOADN R19 1  
+      65 [-]: LENGTH R17 R5
+      66 [-]: LOADN R18 1  
+      67 [-]: FORNPREP R17 L16
+L 8:  68 [-]: GETTABLE R20 R5 R19
+      69 [-]: NAMECALL R20 R20 K29 [0x8ED175C9]
+      70 [-]: CALL R20 1 1 
+      71 [-]: JUMPXEQKN R20 K30 L9 NOT [0]
+      72 [-]: LOADB R16 1  
+L 9:  73 [-]: GETTABLEKS R20 R2 K31 [0x06D055F9]
+      74 [-]: GETTABLE R21 R5 R19
+      75 [-]: NAMECALL R21 R21 K32 [0x420402A9]
+      76 [-]: CALL R21 1 1 
+      77 [-]: GETIMPORT R22 34 [nil]
+      78 [-]: LOADN R24 0  
+      79 [-]: NAMECALL R22 R22 K35 [0x3F3AE64C]
+      80 [-]: CALL R22 2 1 
+      81 [-]: NAMECALL R22 R22 K36 [0x80563238]
+      82 [-]: CALL R22 1 1 
+      83 [-]: NAMECALL R22 R22 K37 [0x62C81B76]
+      84 [-]: CALL R22 1 1 
+      85 [-]: GETTABLE R23 R5 R19
+      86 [-]: NAMECALL R23 R23 K37 [0x62C81B76]
+      87 [-]: CALL R23 1 -1
+      88 [-]: CALL R20 -1 1
+      89 [-]: FASTCALL1 62 R20 L10
+      90 [-]: MOVE R22 R20 
+      91 [-]: GETIMPORT R21 21 [nil]
+      92 [-]: CALL R21 1 1 
+L10:  93 [-]: JUMPIF R21 L11
+      94 [-]: LOADN R23 0  
+      95 [-]: LOADN R24 0  
+      96 [-]: NAMECALL R21 R20 K38 [0x56FA8BC8]
+      97 [-]: CALL R21 3 1 
+      98 [-]: GETIMPORT R23 40 [nil]
+      99 [-]: LOADN R25 0  
+     100 [-]: ADDK R24 R25 K41 [1]
+     101 [-]: GETTABLE R22 R23 R24
+     102 [-]: MUL R13 R21 R22
+     103 [-]: LOADN R23 0  
+     104 [-]: LOADN R24 1  
+     105 [-]: NAMECALL R21 R20 K38 [0x56FA8BC8]
+     106 [-]: CALL R21 3 1 
+     107 [-]: GETIMPORT R23 40 [nil]
+     108 [-]: LOADN R25 1  
+     109 [-]: ADDK R24 R25 K41 [1]
+     110 [-]: GETTABLE R22 R23 R24
+     111 [-]: MUL R14 R21 R22
+     112 [-]: LOADN R23 0  
+     113 [-]: LOADN R24 2  
+     114 [-]: NAMECALL R21 R20 K38 [0x56FA8BC8]
+     115 [-]: CALL R21 3 1 
+     116 [-]: GETIMPORT R23 40 [nil]
+     117 [-]: LOADN R25 2  
+     118 [-]: ADDK R24 R25 K41 [1]
+     119 [-]: GETTABLE R22 R23 R24
+     120 [-]: MUL R15 R21 R22
+L11: 121 [-]: ADD R22 R13 R14
+     122 [-]: ADD R21 R22 R15
+     123 [-]: DIVK R6 R21 K42 [3]
+     124 [-]: ADD R10 R10 R6
+     125 [-]: FASTCALL2 18 R6 R8 L12
+     126 [-]: MOVE R22 R6  
+     127 [-]: MOVE R23 R8  
+     128 [-]: GETIMPORT R21 45 [nil]
+     129 [-]: CALL R21 2 1 
+L12: 130 [-]: MOVE R8 R21  
+     131 [-]: ADD R21 R14 R15
+     132 [-]: DIVK R7 R21 K46 [2]
+     133 [-]: ADD R11 R11 R7
+     134 [-]: FASTCALL2 18 R7 R9 L13
+     135 [-]: MOVE R22 R7  
+     136 [-]: MOVE R23 R9  
+     137 [-]: GETIMPORT R21 45 [nil]
+     138 [-]: CALL R21 2 1 
+L13: 139 [-]: MOVE R9 R21  
+     140 [-]: JUMPIFNOTEQ R9 R9 L14
+     141 [-]: LOADK R21 K47 [3.4028234663852886e+38]
+     142 [-]: JUMPIFLT R21 R9 L14
+     143 [-]: LOADK R22 K47 [3.4028234663852886e+38]
+     144 [-]: MINUS R21 R22
+     145 [-]: JUMPIFNOTLT R9 R21 L15
+L14: 146 [-]: GETIMPORT R21 23 [nil]
+     147 [-]: LOADK R23 K48 ["NaN conclave rating. pistolRank="]
+     148 [-]: GETIMPORT R27 50 [nil]
+     149 [-]: MOVE R28 R14 
+     150 [-]: CALL R27 1 1 
+     151 [-]: MOVE R24 R27 
+     152 [-]: LOADK R25 K51 [", rifle rank="]
+     153 [-]: GETIMPORT R26 50 [nil]
+     154 [-]: MOVE R27 R15 
+     155 [-]: CALL R26 1 1 
+     156 [-]: CONCAT R22 R23 R26
+     157 [-]: CALL R21 1 0 
+L15: 158 [-]: FORNLOOP R17 L8
+L16: 159 [-]: LENGTH R17 R4
+     160 [-]: LOADN R18 1  
+     161 [-]: JUMPIFNOTLT R18 R17 L20
+     162 [-]: JUMPXEQKN R8 K30 L17 NOT [0]
+     163 [-]: GETIMPORT R17 23 [nil]
+     164 [-]: LOADK R19 K52 ["Conclave rank rating = 0. Players: "]
+     165 [-]: GETIMPORT R20 50 [nil]
+     166 [-]: LENGTH R21 R5
+     167 [-]: CALL R20 1 1 
+     168 [-]: CONCAT R18 R19 R20
+     169 [-]: CALL R17 1 0 
+L17: 170 [-]: GETUPVAL R17 0
+     171 [-]: MOVE R18 R8  
+     172 [-]: MOVE R19 R10 
+     173 [-]: GETIMPORT R20 54 [nil]
+     174 [-]: CALL R17 3 1 
+     175 [-]: MOVE R12 R17 
+     176 [-]: GETIMPORT R19 56 [nil]
+     177 [-]: FASTCALL2 19 R12 R19 L18
+     178 [-]: MOVE R18 R12 
+     179 [-]: GETIMPORT R17 58 [nil]
+     180 [-]: CALL R17 2 1 
+L18: 181 [-]: MOVE R12 R17 
+     182 [-]: JUMPXEQKN R9 K30 L19 NOT [0]
+     183 [-]: GETIMPORT R17 23 [nil]
+     184 [-]: LOADK R19 K59 ["Conclave weapon rating = 0. Players: "]
+     185 [-]: GETIMPORT R20 50 [nil]
+     186 [-]: LENGTH R21 R5
+     187 [-]: CALL R20 1 1 
+     188 [-]: CONCAT R18 R19 R20
+     189 [-]: CALL R17 1 0 
+     190 [-]: LOADN R9 1   
+L19: 191 [-]: GETUPVAL R17 0
+     192 [-]: MOVE R18 R9  
+     193 [-]: MOVE R19 R11 
+     194 [-]: GETIMPORT R20 61 [nil]
+     195 [-]: CALL R17 3 1 
+     196 [-]: MOVE R9 R17  
+     197 [-]: GETIMPORT R17 11 [nil]
+     198 [-]: SETTABLEKS R9 R17 K13 ["weaponConclave"]
+     199 [-]: JUMP L24
+    
+L20: 200 [-]: GETIMPORT R18 63 [nil]
+     201 [-]: DIV R17 R8 R18
+     202 [-]: GETIMPORT R18 65 [nil]
+     203 [-]: MUL R12 R17 R18
+     204 [-]: GETIMPORT R19 65 [nil]
+     205 [-]: FASTCALL2 19 R12 R19 L21
+     206 [-]: MOVE R18 R12 
+     207 [-]: GETIMPORT R17 58 [nil]
+     208 [-]: CALL R17 2 1 
+L21: 209 [-]: MOVE R12 R17 
+     210 [-]: GETIMPORT R18 63 [nil]
+     211 [-]: DIV R17 R9 R18
+     212 [-]: GETIMPORT R18 65 [nil]
+     213 [-]: MUL R9 R17 R18
+     214 [-]: JUMPIFNOTEQ R9 R9 L22
+     215 [-]: LOADK R17 K47 [3.4028234663852886e+38]
+     216 [-]: JUMPIFLT R17 R9 L22
+     217 [-]: LOADK R18 K47 [3.4028234663852886e+38]
+     218 [-]: MINUS R17 R18
+     219 [-]: JUMPIFNOTLT R9 R17 L23
+L22: 220 [-]: GETIMPORT R17 23 [nil]
+     221 [-]: LOADK R19 K66 ["NaN conclave rating. maxConclaveRating="]
+     222 [-]: GETIMPORT R23 50 [nil]
+     223 [-]: GETIMPORT R24 63 [nil]
+     224 [-]: CALL R23 1 1 
+     225 [-]: MOVE R20 R23 
+     226 [-]: LOADK R21 K67 [", max solo boss level="]
+     227 [-]: GETIMPORT R22 50 [nil]
+     228 [-]: GETIMPORT R23 65 [nil]
+     229 [-]: CALL R22 1 1 
+     230 [-]: CONCAT R18 R19 R22
+     231 [-]: CALL R17 1 0 
+L23: 232 [-]: GETIMPORT R17 11 [nil]
+     233 [-]: SETTABLEKS R9 R17 K13 ["weaponConclave"]
+L24: 234 [-]: NAMECALL R17 R3 K68 [0x6968EA36]
+     235 [-]: CALL R17 1 1 
+     236 [-]: LOADN R18 100
+     237 [-]: JUMPIFNOTLT R18 R17 L25
+     238 [-]: LOADN R17 20 
+L25: 239 [-]: FASTCALL2 18 R12 R17 L26
+     240 [-]: MOVE R19 R12 
+     241 [-]: MOVE R20 R17 
+     242 [-]: GETIMPORT R18 45 [nil]
+     243 [-]: CALL R18 2 1 
+L26: 244 [-]: MOVE R12 R18 
+     245 [-]: GETIMPORT R18 70 [nil]
+     246 [-]: JUMPIFNOT R18 L27
+     247 [-]: GETTABLEKS R12 R0 K12 ["maxEnemyLevel"]
+L27: 248 [-]: GETIMPORT R18 72 [nil]
+     249 [-]: JUMPIFNOT R18 L28
+     250 [-]: GETIMPORT R18 73 [nil]
+     251 [-]: LOADN R19 6  
+     252 [-]: JUMPIFNOTLE R18 R19 L28
+     253 [-]: LOADN R12 1  
+     254 [-]: RETURN R12 1 
+L28: 255 [-]: GETTABLEKS R19 R0 K74 ["conclaveRange"]
+     256 [-]: GETTABLEKS R18 R19 K75 ["maxValue"]
+     257 [-]: LOADN R19 0  
+     258 [-]: JUMPIFLT R19 R18 L29
+     259 [-]: JUMPIFNOT R16 L30
+L29: 260 [-]: NAMECALL R18 R3 K68 [0x6968EA36]
+     261 [-]: CALL R18 1 1 
+     262 [-]: GETIMPORT R19 77 [nil]
+     263 [-]: LOADN R20 5  
+     264 [-]: LOADN R21 8  
+     265 [-]: CALL R19 2 1 
+     266 [-]: ADD R12 R18 R19
+L30: 267 [-]: RETURN R12 1 
+
 
 

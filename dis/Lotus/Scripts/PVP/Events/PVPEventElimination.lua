@@ -1,35 +1,30 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
-; Max Stack Size:  5
+; Is_vararg:       1
+; Max Stack Size:  4
 
-  1 [-]: GETGLOBAL R0 K0        ; R0 := 0x2d0fad09
-  2 [-]: LOADK     R1 K1        ; R1 := "Lotus.Scripts.PVP.PVPHelper"
-  3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: GETGLOBAL R1 K0        ; R1 := 0x2d0fad09
-  5 [-]: LOADK     R2 K2        ; R2 := "Lotus.Scripts.PVP.Events.PVPEventCommon"
-  6 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  7 [-]: GETTABLE  R2 R0 K3     ; R2 := R0[0xc96d0ce6]
-  8 [-]: GETTABLE  R3 R1 K4     ; R3 := R1["PVPEventCommon"]
-  9 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 10 [-]: CLOSURE   R3 0         ; R3 := closure(Function #1)
- 11 [-]: SETTABLE  R2 K5 R3     ; R2[true] := R3
- 12 [-]: CLOSURE   R3 1         ; R3 := closure(Function #2)
- 13 [-]: MOVE      R0 R1        ; R0 := R1
- 14 [-]: SETTABLE  R2 K6 R3     ; R2[true] := R3
- 15 [-]: MOVE      R3 R2        ; R3 := R2
- 16 [-]: CLOSURE   R4 2         ; R4 := closure(Function #3)
- 17 [-]: MOVE      R0 R3        ; R0 := R3
- 18 [-]: SETGLOBAL R4 K7        ; Start := R4
- 19 [-]: RETURN    R0 1         ; return 
+            1 [-]: GETIMPORT R0 1 [nil]
+       2 [-]: LOADK R1 K2 ["Lotus.Scripts.PVP.PVPHelper"]
+       3 [-]: CALL R0 1 1  
+       4 [-]: GETIMPORT R1 1 [nil]
+       5 [-]: LOADK R2 K3 ["Lotus.Scripts.PVP.Events.PVPEventCommon"]
+       6 [-]: CALL R1 1 1  
+       7 [-]: GETTABLEKS R2 R0 K4 [0xC96D0CE6]
+       8 [-]: GETTABLEKS R3 R1 K5 ["PVPEventCommon"]
+       9 [-]: CALL R2 1 1  
+      10 [-]: DUPCLOSURE R3 K6 []
+      11 [-]: SETTABLEKS R3 R2 K7 ["GetNumPlayersAlive"]
+      12 [-]: DUPCLOSURE R3 K8 []
+      13 [-]: MOVE R0 R1   
+      14 [-]: SETTABLEKS R3 R2 K9 ["Update"]
+      15 [-]: DUPCLOSURE R3 K10 []
+      16 [-]: MOVE R0 R2   
+      17 [-]: SETGLOBAL R3 K11 ["Start"]
+      18 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 9
 ; #Upvalues:       0
@@ -37,122 +32,112 @@
 ; Is_vararg:       0
 ; Max Stack Size:  11
 
-  1 [-]: CONST     R1 0         ; R1 := 0.000000
-  2 [-]: GETGLOBAL R2 K0        ; R2 := 0x89326c93
-  3 [-]: SELF      R2 R2 K1     ; R3 := R2; R2 := R2[0x7d108ddb]
-  4 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  5 [-]: GETGLOBAL R3 K2        ; R3 := 0xc8802016
-  6 [-]: MOVE      R4 R2        ; R4 := R2
-  7 [-]: CALL      R3 2 4       ; R3,R4,R5 := R3(R4)
-  8 [-]: JMP       21           ; PC := 21
-  9 [-]: SELF      R8 R7 K3     ; R9 := R7; R8 := R7[0xbb610e5b]
- 10 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 11 [-]: GETGLOBAL R9 K4        ; R9 := 0x7b998233
- 12 [-]: MOVE      R10 R8       ; R10 := R8
- 13 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 14 [-]: TEST      R9 1         ; if R9 then PC := 21
- 15 [-]: JMP       21           ; PC := 21
- 16 [-]: SELF      R9 R8 K5     ; R10 := R8; R9 := R8[0x2047cfe7]
- 17 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 18 [-]: TEST      R9 1         ; if R9 then PC := 21
- 19 [-]: JMP       21           ; PC := 21
- 20 [-]: ADD       R1 R1 K6     ; R1 := R1 + 1.000000
- 21 [-]: TFORLOOP  R3 2         ; R6,R7 :=  R3(R4,R5); if R6 ~= nil then begin PC = 9; R5 := R6 end
- 22 [-]: JMP       9            ; PC := 9
- 23 [-]: RETURN    R1 2         ; return R1
- 24 [-]: RETURN    R0 1         ; return 
+       0 [-]: LOADN R1 0   
+       1 [-]: GETIMPORT R2 1 [nil]
+       2 [-]: NAMECALL R2 R2 K2 [0x7D108DDB]
+       3 [-]: CALL R2 1 1  
+       4 [-]: GETIMPORT R3 4 [nil]
+       5 [-]: MOVE R4 R2   
+       6 [-]: CALL R3 1 3  
+       7 [-]: FORGPREP_INEXT R3 L2
+L 0:   8 [-]: NAMECALL R8 R7 K5 [0xBB610E5B]
+       9 [-]: CALL R8 1 1  
+      10 [-]: FASTCALL1 62 R8 L1
+      11 [-]: MOVE R10 R8  
+      12 [-]: GETIMPORT R9 7 [nil]
+      13 [-]: CALL R9 1 1  
+L 1:  14 [-]: JUMPIF R9 L2 
+      15 [-]: NAMECALL R9 R8 K8 [0x2047CFE7]
+      16 [-]: CALL R9 1 1  
+      17 [-]: JUMPIF R9 L2 
+      18 [-]: ADDK R1 R1 K9 [1]
+L 2:  19 [-]: FORGLOOP R3 L0 2 [inext]
+      20 [-]: RETURN R1 1  
 
 
-; Function #2:
-;
 ; Name:            
 ; Defined at line: 28
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  14
+; Max Stack Size:  13
 
-  1 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  2 [-]: GETTABLE  R1 R1 K0     ; R1 := R1["PVPEventCommon"]
-  3 [-]: GETTABLE  R1 R1 K1     ; R1 := R1[0xfaa69527]
-  4 [-]: MOVE      R2 R0        ; R2 := R0
-  5 [-]: CALL      R1 2 1       ; R1(R2)
-  6 [-]: GETGLOBAL R1 K2        ; R1 := 0x7b998233
-  7 [-]: GETTABLE  R2 R0 K3     ; R2 := R0["pvpEventData"]
-  8 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  9 [-]: TEST      R1 0         ; if not R1 then PC := 12
- 10 [-]: JMP       12           ; PC := 12
- 11 [-]: RETURN    R0 1         ; return 
- 12 [-]: SELF      R1 R0 K4     ; R2 := R0; R1 := R0[0x1bd14d99]
- 13 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 14 [-]: GETGLOBAL R2 K5        ; R2 := 0x89326c93
- 15 [-]: SELF      R2 R2 K6     ; R3 := R2; R2 := R2[0x7d108ddb]
- 16 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 17 [-]: GETGLOBAL R3 K7        ; R3 := 0xc8802016
- 18 [-]: MOVE      R4 R2        ; R4 := R2
- 19 [-]: CALL      R3 2 4       ; R3,R4,R5 := R3(R4)
- 20 [-]: JMP       55           ; PC := 55
- 21 [-]: SELF      R8 R7 K8     ; R9 := R7; R8 := R7[0xbb610e5b]
- 22 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 23 [-]: GETGLOBAL R9 K2        ; R9 := 0x7b998233
- 24 [-]: MOVE      R10 R8       ; R10 := R8
- 25 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 26 [-]: TEST      R9 1         ; if R9 then PC := 55
- 27 [-]: JMP       55           ; PC := 55
- 28 [-]: SELF      R9 R8 K9     ; R10 := R8; R9 := R8[0x2047cfe7]
- 29 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 30 [-]: TEST      R9 1         ; if R9 then PC := 55
- 31 [-]: JMP       55           ; PC := 55
- 32 [-]: GETTABLE  R9 R0 K10    ; R9 := R0["lastKnownPVPEventState"]
- 33 [-]: GETTABLE  R10 R0 K11   ; R10 := R0["PVPSTATE_STARTED"]
- 34 [-]: EQ        0 R9 R10     ; if R9 ~= R10 then PC := 46
- 35 [-]: JMP       46           ; PC := 46
- 36 [-]: SELF      R9 R7 K12    ; R10 := R7; R9 := R7[0x7d904a7c]
- 37 [-]: GETGLOBAL R11 K13      ; R11 := 0x0469f296
- 38 [-]: CALL      R11 1 0      ; R11,... := R11()
- 39 [-]: CALL      R9 0 1       ; R9(R10,...)
- 40 [-]: SELF      R9 R7 K14    ; R10 := R7; R9 := R7[0xb5338e05]
- 41 [-]: GETGLOBAL R11 K13      ; R11 := 0x0469f296
- 42 [-]: LOADK     R12 K15      ; R12 := "pvpEventTimer"
- 43 [-]: CALL      R11 2 0      ; R11,... := R11(R12)
- 44 [-]: CALL      R9 0 1       ; R9(R10,...)
- 45 [-]: JMP       55           ; PC := 55
- 46 [-]: SELF      R9 R7 K12    ; R10 := R7; R9 := R7[0x7d904a7c]
- 47 [-]: GETGLOBAL R11 K13      ; R11 := 0x0469f296
- 48 [-]: LOADK     R12 K15      ; R12 := "pvpEventTimer"
- 49 [-]: CALL      R11 2 0      ; R11,... := R11(R12)
- 50 [-]: CALL      R9 0 1       ; R9(R10,...)
- 51 [-]: SELF      R9 R7 K14    ; R10 := R7; R9 := R7[0xb5338e05]
- 52 [-]: GETGLOBAL R11 K13      ; R11 := 0x0469f296
- 53 [-]: CALL      R11 1 0      ; R11,... := R11()
- 54 [-]: CALL      R9 0 1       ; R9(R10,...)
- 55 [-]: TFORLOOP  R3 2         ; R6,R7 :=  R3(R4,R5); if R6 ~= nil then begin PC = 21; R5 := R6 end
- 56 [-]: JMP       21           ; PC := 21
- 57 [-]: LOADNIL   R9 R9        ; R9 := nil
- 58 [-]: LOADK     R10 K16      ; R10 := "<p><font color=\"#FFFFFF\" size=\"16\">"
- 59 [-]: GETGLOBAL R11 K17      ; R11 := 0x603636ad
- 60 [-]: LOADK     R12 K18      ; R12 := "/Lotus/Language/Game/PVP_Event_RemainingPlayers"
- 61 [-]: NEWTABLE  R13 0 1      ; R13 := {}
- 62 [-]: SETTABLE  R13 K19 R1   ; R13["COUNT"] := R1
- 63 [-]: CALL      R11 3 2      ; R11 := R11(R12,R13)
- 64 [-]: CONCAT    R9 R10 R11   ; R9 := R10 .. R11
- 65 [-]: MOVE      R10 R9       ; R10 := R9
- 66 [-]: LOADK     R11 K20      ; R11 := "</font></p>"
- 67 [-]: CONCAT    R9 R10 R11   ; R9 := R10 .. R11
- 68 [-]: GETTABLE  R10 R0 K10   ; R10 := R0["lastKnownPVPEventState"]
- 69 [-]: GETTABLE  R11 R0 K11   ; R11 := R0["PVPSTATE_STARTED"]
- 70 [-]: EQ        0 R10 R11    ; if R10 ~= R11 then PC := 77
- 71 [-]: JMP       77           ; PC := 77
- 72 [-]: SELF      R10 R0 K21   ; R11 := R0; R10 := R0[0xd5a1ad5f]
- 73 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 74 [-]: SELF      R10 R10 K22  ; R11 := R10; R10 := R10[0x6ab731dc]
- 75 [-]: MOVE      R12 R9       ; R12 := R9
- 76 [-]: CALL      R10 3 1      ; R10(R11,R12)
- 77 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETUPVAL R3 0
+       1 [-]: GETTABLEKS R2 R3 K0 ["PVPEventCommon"]
+       2 [-]: GETTABLEKS R1 R2 K1 [0xFAA69527]
+       3 [-]: MOVE R2 R0   
+       4 [-]: CALL R1 1 0  
+       5 [-]: GETTABLEKS R2 R0 K2 ["pvpEventData"]
+       6 [-]: FASTCALL1 62 R2 L0
+       7 [-]: GETIMPORT R1 4 [nil]
+       8 [-]: CALL R1 1 1  
+L 0:   9 [-]: JUMPIFNOT R1 L1
+      10 [-]: RETURN R0 0  
+L 1:  11 [-]: NAMECALL R1 R0 K5 [0x1BD14D99]
+      12 [-]: CALL R1 1 1  
+      13 [-]: GETIMPORT R2 7 [nil]
+      14 [-]: NAMECALL R2 R2 K8 [0x7D108DDB]
+      15 [-]: CALL R2 1 1  
+      16 [-]: GETIMPORT R3 10 [nil]
+      17 [-]: MOVE R4 R2   
+      18 [-]: CALL R3 1 3  
+      19 [-]: FORGPREP_INEXT R3 L5
+L 2:  20 [-]: NAMECALL R8 R7 K11 [0xBB610E5B]
+      21 [-]: CALL R8 1 1  
+      22 [-]: FASTCALL1 62 R8 L3
+      23 [-]: MOVE R10 R8  
+      24 [-]: GETIMPORT R9 4 [nil]
+      25 [-]: CALL R9 1 1  
+L 3:  26 [-]: JUMPIF R9 L5 
+      27 [-]: NAMECALL R9 R8 K12 [0x2047CFE7]
+      28 [-]: CALL R9 1 1  
+      29 [-]: JUMPIF R9 L5 
+      30 [-]: GETTABLEKS R9 R0 K13 ["lastKnownPVPEventState"]
+      31 [-]: GETTABLEKS R10 R0 K14 ["PVPSTATE_STARTED"]
+      32 [-]: JUMPIFNOTEQ R9 R10 L4
+      33 [-]: GETIMPORT R11 16 [nil]
+      34 [-]: CALL R11 0 -1
+      35 [-]: NAMECALL R9 R7 K17 [0x7D904A7C]
+      36 [-]: CALL R9 -1 0 
+      37 [-]: GETIMPORT R11 16 [nil]
+      38 [-]: LOADK R12 K18 ["pvpEventTimer"]
+      39 [-]: CALL R11 1 -1
+      40 [-]: NAMECALL R9 R7 K19 [0xB5338E05]
+      41 [-]: CALL R9 -1 0 
+      42 [-]: JUMP L5
+     
+L 4:  43 [-]: GETIMPORT R11 16 [nil]
+      44 [-]: LOADK R12 K18 ["pvpEventTimer"]
+      45 [-]: CALL R11 1 -1
+      46 [-]: NAMECALL R9 R7 K17 [0x7D904A7C]
+      47 [-]: CALL R9 -1 0 
+      48 [-]: GETIMPORT R11 16 [nil]
+      49 [-]: CALL R11 0 -1
+      50 [-]: NAMECALL R9 R7 K19 [0xB5338E05]
+      51 [-]: CALL R9 -1 0 
+L 5:  52 [-]: FORGLOOP R3 L2 2 [inext]
+      53 [-]: LOADNIL R3   
+      54 [-]: LOADK R4 K20 ["<p><font color=\"#FFFFFF\" size=\"16\">"]
+      55 [-]: GETIMPORT R5 22 [nil]
+      56 [-]: LOADK R6 K23 ["/Lotus/Language/Game/PVP_Event_RemainingPlayers"]
+      57 [-]: DUPTABLE R7 25
+      58 [-]: SETTABLEKS R1 R7 K24 ["COUNT"]
+      59 [-]: CALL R5 2 1  
+      60 [-]: CONCAT R3 R4 R5
+      61 [-]: MOVE R4 R3   
+      62 [-]: LOADK R5 K26 ["</font></p>"]
+      63 [-]: CONCAT R3 R4 R5
+      64 [-]: GETTABLEKS R4 R0 K13 ["lastKnownPVPEventState"]
+      65 [-]: GETTABLEKS R5 R0 K14 ["PVPSTATE_STARTED"]
+      66 [-]: JUMPIFNOTEQ R4 R5 L6
+      67 [-]: NAMECALL R4 R0 K27 [0xD5A1AD5F]
+      68 [-]: CALL R4 1 1  
+      69 [-]: MOVE R6 R3   
+      70 [-]: NAMECALL R4 R4 K28 [0x6AB731DC]
+      71 [-]: CALL R4 2 0  
+L 6:  72 [-]: RETURN R0 0  
 
 
-; Function #3:
-;
 ; Name:            
 ; Defined at line: 68
 ; #Upvalues:       1
@@ -160,15 +145,16 @@
 ; Is_vararg:       0
 ; Max Stack Size:  4
 
-  1 [-]: GETGLOBAL R1 K0        ; R1 := 0x3d106989
-  2 [-]: LOADK     R2 K1        ; R2 := "AAAAAAAAAAAAAAA PVPEvent Elimination Start pvpEventData"
-  3 [-]: CALL      R1 2 1       ; R1(R2)
-  4 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  5 [-]: SELF      R1 R1 K2     ; R2 := R1; R1 := R1[0x20bbafda]
-  6 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  7 [-]: SELF      R1 R1 K3     ; R2 := R1; R1 := R1[0x5e3aed04]
-  8 [-]: MOVE      R3 R0        ; R3 := R0
-  9 [-]: CALL      R1 3 1       ; R1(R2,R3)
- 10 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R1 1 [nil]
+       1 [-]: LOADK R2 K2 ["AAAAAAAAAAAAAAA PVPEvent Elimination Start pvpEventData"]
+       2 [-]: CALL R1 1 0  
+       3 [-]: GETUPVAL R1 0
+       4 [-]: NAMECALL R1 R1 K3 [0x20BBAFDA]
+       5 [-]: CALL R1 1 1  
+       6 [-]: MOVE R3 R0   
+       7 [-]: NAMECALL R1 R1 K4 [0x5E3AED04]
+       8 [-]: CALL R1 2 0  
+       9 [-]: RETURN R0 0  
+
 
 

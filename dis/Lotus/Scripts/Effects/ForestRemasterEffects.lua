@@ -1,21 +1,17 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
-; Max Stack Size:  2
+; Is_vararg:       1
+; Max Stack Size:  1
 
-  1 [-]: CLOSURE   R0 0         ; R0 := closure(Function #1)
-  2 [-]: SETGLOBAL R0 K0        ; roachGang := R0
-  3 [-]: CLOSURE   R0 1         ; R0 := closure(Function #2)
-  4 [-]: SETGLOBAL R0 K1        ; triggerPlantPollen := R0
-  5 [-]: RETURN    R0 1         ; return 
+            1 [-]: DUPCLOSURE R0 K0 []
+       2 [-]: SETGLOBAL R0 K1 ["roachGang"]
+       3 [-]: DUPCLOSURE R0 K2 []
+       4 [-]: SETGLOBAL R0 K3 ["triggerPlantPollen"]
+       5 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 3
 ; #Upvalues:       0
@@ -23,20 +19,18 @@
 ; Is_vararg:       0
 ; Max Stack Size:  6
 
-  1 [-]: GETGLOBAL R1 K0        ; R1 := 0xcbd666e1
-  2 [-]: CONST     R2 0         ; R2 := 0.000000
-  3 [-]: CALL      R1 2 1       ; R1(R2)
-  4 [-]: SELF      R1 R0 K1     ; R2 := R0; R1 := R0[0x052a3a7c]
-  5 [-]: CONST     R3 4         ; R3 := 4.000000
-  6 [-]: CONST     R4 8         ; R4 := 8.000000
-  7 [-]: LOADKB    R5 1 0       ; R5 := true
-  8 [-]: CALL      R1 5 1       ; R1(R2,R3,R4,R5)
-  9 [-]: JMP       4            ; PC := 4
- 10 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R1 1 [nil]
+       1 [-]: LOADN R2 0   
+       2 [-]: CALL R1 1 0  
+L 0:   3 [-]: LOADN R3 4   
+       4 [-]: LOADN R4 8   
+       5 [-]: LOADB R5 1   
+       6 [-]: NAMECALL R1 R0 K2 [0x052A3A7C]
+       7 [-]: CALL R1 4 0  
+       8 [-]: JUMPBACK L0  
+       9 [-]: RETURN R0 0  
 
 
-; Function #2:
-;
 ; Name:            
 ; Defined at line: 10
 ; #Upvalues:       0
@@ -44,17 +38,18 @@
 ; Is_vararg:       0
 ; Max Stack Size:  7
 
-  1 [-]: GETGLOBAL R1 K0        ; R1 := 0xcbd666e1
-  2 [-]: CONST     R2 0         ; R2 := 0.000000
-  3 [-]: CALL      R1 2 1       ; R1(R2)
-  4 [-]: SELF      R1 R0 K1     ; R2 := R0; R1 := R0[0xd1586535]
-  5 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  6 [-]: GETGLOBAL R2 K2        ; R2 := 0x89326c93
-  7 [-]: SELF      R2 R2 K3     ; R3 := R2; R2 := R2[0x21dbe06c]
-  8 [-]: GETGLOBAL R4 K4        ; R4 := 0xd306a4ff
-  9 [-]: MOVE      R5 R1        ; R5 := R1
- 10 [-]: GETGLOBAL R6 K5        ; R6 := ZERO_ROTATION
- 11 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
- 12 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R1 1 [nil]
+       1 [-]: LOADN R2 0   
+       2 [-]: CALL R1 1 0  
+       3 [-]: NAMECALL R1 R0 K2 [0xD1586535]
+       4 [-]: CALL R1 1 1  
+       5 [-]: GETIMPORT R2 4 [nil]
+       6 [-]: GETIMPORT R4 6 [nil]
+       7 [-]: MOVE R5 R1   
+       8 [-]: GETIMPORT R6 8 [nil]
+       9 [-]: NAMECALL R2 R2 K9 [0x21DBE06C]
+      10 [-]: CALL R2 4 0  
+      11 [-]: RETURN R0 0  
+
 
 

@@ -1,54 +1,50 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
-; Max Stack Size:  2
+; Is_vararg:       1
+; Max Stack Size:  1
 
-  1 [-]: CLOSURE   R0 0         ; R0 := closure(Function #1)
-  2 [-]: SETGLOBAL R0 K0        ; LookAtFissure := R0
-  3 [-]: RETURN    R0 1         ; return 
+            1 [-]: DUPCLOSURE R0 K0 []
+       2 [-]: SETGLOBAL R0 K1 ["LookAtFissure"]
+       3 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 5
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
-; Max Stack Size:  9
+; Max Stack Size:  8
 
-  1 [-]: GETGLOBAL R0 K0        ; R0 := 0x89326c93
-  2 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0x8b5b1f58]
-  3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: LOADKB    R1 0 0       ; R1 := false
-  5 [-]: CONST     R2 1         ; R2 := 1.000000
-  6 [-]: LEN       R3 R0        ; R3 := # R0
-  7 [-]: CONST     R4 1         ; R4 := 1.000000
-  8 [-]: FORPREP   R2 17        ; R2 -= R4; PC := 17
-  9 [-]: GETTABLE  R6 R0 R5     ; R6 := R0[R5]
- 10 [-]: SELF      R6 R6 K2     ; R7 := R6; R6 := R6[0x0866b4bd]
- 11 [-]: GETGLOBAL R8 K3        ; R8 := 0x435fd494
- 12 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
- 13 [-]: TEST      R6 0         ; if not R6 then PC := 17
- 14 [-]: JMP       17           ; PC := 17
- 15 [-]: LOADKB    R1 1 0       ; R1 := true
- 16 [-]: JMP       18           ; PC := 18
- 17 [-]: FORLOOP   R2 9         ; R2 += R4; if R2 <= R3 then begin PC := 9; R5 := R2 end
- 18 [-]: TEST      R1 0         ; if not R1 then PC := 25
- 19 [-]: JMP       25           ; PC := 25
- 20 [-]: GETGLOBAL R6 K4        ; R6 := 0xbe190284
- 21 [-]: SELF      R6 R6 K5     ; R7 := R6; R6 := R6[0xc19d05d7]
- 22 [-]: GETGLOBAL R8 K6        ; R8 := 0xe9d6c1a9
- 23 [-]: CALL      R6 3 1       ; R6(R7,R8)
- 24 [-]: JMP       29           ; PC := 29
- 25 [-]: GETGLOBAL R6 K4        ; R6 := 0xbe190284
- 26 [-]: SELF      R6 R6 K5     ; R7 := R6; R6 := R6[0xc19d05d7]
- 27 [-]: GETGLOBAL R8 K7        ; R8 := 0x0641d100
- 28 [-]: CALL      R6 3 1       ; R6(R7,R8)
- 29 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: NAMECALL R0 R0 K2 [0x8B5B1F58]
+       2 [-]: CALL R0 1 1  
+       3 [-]: LOADB R1 0   
+       4 [-]: LOADN R4 1   
+       5 [-]: LENGTH R2 R0 
+       6 [-]: LOADN R3 1   
+       7 [-]: FORNPREP R2 L2
+L 0:   8 [-]: GETTABLE R5 R0 R4
+       9 [-]: GETIMPORT R7 4 [nil]
+      10 [-]: NAMECALL R5 R5 K5 [0x0866B4BD]
+      11 [-]: CALL R5 2 1  
+      12 [-]: JUMPIFNOT R5 L1
+      13 [-]: LOADB R1 1   
+      14 [-]: JUMP L2
+     
+L 1:  15 [-]: FORNLOOP R2 L0
+L 2:  16 [-]: JUMPIFNOT R1 L3
+      17 [-]: GETIMPORT R2 7 [nil]
+      18 [-]: GETIMPORT R4 9 [nil]
+      19 [-]: NAMECALL R2 R2 K10 [0xC19D05D7]
+      20 [-]: CALL R2 2 0  
+      21 [-]: RETURN R0 0  
+L 3:  22 [-]: GETIMPORT R2 7 [nil]
+      23 [-]: GETIMPORT R4 12 [nil]
+      24 [-]: NAMECALL R2 R2 K10 [0xC19D05D7]
+      25 [-]: CALL R2 2 0  
+      26 [-]: RETURN R0 0  
+
 
 

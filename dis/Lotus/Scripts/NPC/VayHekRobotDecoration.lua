@@ -1,19 +1,15 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
-; Max Stack Size:  2
+; Is_vararg:       1
+; Max Stack Size:  1
 
-  1 [-]: CLOSURE   R0 0         ; R0 := closure(Function #1)
-  2 [-]: SETGLOBAL R0 K0        ; InitRobotDeco := R0
-  3 [-]: RETURN    R0 1         ; return 
+            1 [-]: DUPCLOSURE R0 K0 []
+       2 [-]: SETGLOBAL R0 K1 ["InitRobotDeco"]
+       3 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 4
 ; #Upvalues:       0
@@ -21,20 +17,21 @@
 ; Is_vararg:       0
 ; Max Stack Size:  7
 
-  1 [-]: GETGLOBAL R1 K0        ; R1 := 0x7b998233
-  2 [-]: MOVE      R2 R0        ; R2 := R0
-  3 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  4 [-]: TEST      R1 1         ; if R1 then PC := 15
-  5 [-]: JMP       15           ; PC := 15
-  6 [-]: GETGLOBAL R1 K1        ; R1 := 0xcbd666e1
-  7 [-]: CONST     R2 0         ; R2 := 0.000000
-  8 [-]: CALL      R1 2 1       ; R1(R2)
-  9 [-]: SELF      R1 R0 K2     ; R2 := R0; R1 := R0[0x2ba5938d]
- 10 [-]: GETGLOBAL R3 K3        ; R3 := 0xa376cd0b
- 11 [-]: GETGLOBAL R4 K4        ; R4 := ZERO_ROTATION
- 12 [-]: GETGLOBAL R5 K5        ; R5 := ZERO_VECTOR
- 13 [-]: GETGLOBAL R6 K6        ; R6 := 0x2b74f44a
- 14 [-]: CALL      R1 6 1       ; R1(R2,R3,R4,R5,R6)
- 15 [-]: RETURN    R0 1         ; return 
+       0 [-]: FASTCALL1 62 R0 L0
+       1 [-]: MOVE R2 R0   
+       2 [-]: GETIMPORT R1 1 [nil]
+       3 [-]: CALL R1 1 1  
+L 0:   4 [-]: JUMPIF R1 L1 
+       5 [-]: GETIMPORT R1 3 [nil]
+       6 [-]: LOADN R2 0   
+       7 [-]: CALL R1 1 0  
+       8 [-]: GETIMPORT R3 5 [nil]
+       9 [-]: GETIMPORT R4 7 [nil]
+      10 [-]: GETIMPORT R5 9 [nil]
+      11 [-]: GETIMPORT R6 11 [nil]
+      12 [-]: NAMECALL R1 R0 K12 [0x2BA5938D]
+      13 [-]: CALL R1 5 0  
+L 1:  14 [-]: RETURN R0 0  
+
 
 

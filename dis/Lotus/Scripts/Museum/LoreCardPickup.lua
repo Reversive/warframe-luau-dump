@@ -1,68 +1,63 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
-; Max Stack Size:  2
+; Is_vararg:       1
+; Max Stack Size:  1
 
-  1 [-]: CLOSURE   R0 0         ; R0 := closure(Function #1)
-  2 [-]: SETGLOBAL R0 K0        ; Start := R0
-  3 [-]: RETURN    R0 1         ; return 
+            1 [-]: DUPCLOSURE R0 K0 []
+       2 [-]: SETGLOBAL R0 K1 ["Start"]
+       3 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 4
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
-; Max Stack Size:  13
+; Max Stack Size:  10
 
-  1 [-]: GETGLOBAL R2 K0        ; R2 := 0x7b998233
-  2 [-]: MOVE      R3 R0        ; R3 := R0
-  3 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  4 [-]: TEST      R2 0         ; if not R2 then PC := 7
-  5 [-]: JMP       7            ; PC := 7
-  6 [-]: RETURN    R0 1         ; return 
-  7 [-]: GETGLOBAL R2 K0        ; R2 := 0x7b998233
-  8 [-]: GETGLOBAL R3 K1        ; R3 := 0x25d99d89
-  9 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 10 [-]: TEST      R2 1         ; if R2 then PC := 43
- 11 [-]: JMP       43           ; PC := 43
- 12 [-]: GETGLOBAL R2 K0        ; R2 := 0x7b998233
- 13 [-]: GETGLOBAL R3 K2        ; R3 := 0x159f5a4e
- 14 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 15 [-]: TEST      R2 1         ; if R2 then PC := 43
- 16 [-]: JMP       43           ; PC := 43
- 17 [-]: GETGLOBAL R2 K1        ; R2 := 0x25d99d89
- 18 [-]: SELF      R2 R2 K3     ; R3 := R2; R2 := R2[0x25a6e75e]
- 19 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 20 [-]: SELF      R2 R2 K4     ; R3 := R2; R2 := R2[0x2b7da058]
- 21 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 22 [-]: GETGLOBAL R3 K5        ; R3 := 0xc8802016
- 23 [-]: MOVE      R4 R2        ; R4 := R2
- 24 [-]: CALL      R3 2 4       ; R3,R4,R5 := R3(R4)
- 25 [-]: JMP       31           ; PC := 31
- 26 [-]: GETGLOBAL R8 K2        ; R8 := 0x159f5a4e
- 27 [-]: GETTABLE  R9 R7 K6     ; R9 := R7["mItemType"]
- 28 [-]: EQ        0 R8 R9      ; if R8 ~= R9 then PC := 31
- 29 [-]: JMP       31           ; PC := 31
- 30 [-]: RETURN    R0 1         ; return 
- 31 [-]: TFORLOOP  R3 2         ; R6,R7 :=  R3(R4,R5); if R6 ~= nil then begin PC = 26; R5 := R6 end
- 32 [-]: JMP       26           ; PC := 26
- 33 [-]: GETGLOBAL R8 K1        ; R8 := 0x25d99d89
- 34 [-]: SELF      R8 R8 K7     ; R9 := R8; R8 := R8[0xb1d69b13]
- 35 [-]: GETGLOBAL R10 K2       ; R10 := 0x159f5a4e
- 36 [-]: CALL      R8 3 1       ; R8(R9,R10)
- 37 [-]: GETGLOBAL R8 K1        ; R8 := 0x25d99d89
- 38 [-]: SELF      R8 R8 K8     ; R9 := R8; R8 := R8[0xbc851462]
- 39 [-]: GETGLOBAL R10 K2       ; R10 := 0x159f5a4e
- 40 [-]: LOADK     R11 K9       ; R11 := "/Lotus/Language/Menu/Leverian"
- 41 [-]: GETGLOBAL R12 K10      ; R12 := 0x61d4d149
- 42 [-]: CALL      R8 5 1       ; R8(R9,R10,R11,R12)
- 43 [-]: RETURN    R0 1         ; return 
+       0 [-]: FASTCALL1 62 R0 L0
+       1 [-]: MOVE R3 R0   
+       2 [-]: GETIMPORT R2 1 [nil]
+       3 [-]: CALL R2 1 1  
+L 0:   4 [-]: JUMPIFNOT R2 L1
+       5 [-]: RETURN R0 0  
+L 1:   6 [-]: GETIMPORT R3 3 [nil]
+       7 [-]: FASTCALL1 62 R3 L2
+       8 [-]: GETIMPORT R2 1 [nil]
+       9 [-]: CALL R2 1 1  
+L 2:  10 [-]: JUMPIF R2 L6 
+      11 [-]: GETIMPORT R3 5 [nil]
+      12 [-]: FASTCALL1 62 R3 L3
+      13 [-]: GETIMPORT R2 1 [nil]
+      14 [-]: CALL R2 1 1  
+L 3:  15 [-]: JUMPIF R2 L6 
+      16 [-]: GETIMPORT R2 3 [nil]
+      17 [-]: NAMECALL R2 R2 K6 [0x25A6E75E]
+      18 [-]: CALL R2 1 1  
+      19 [-]: NAMECALL R2 R2 K7 [0x2B7DA058]
+      20 [-]: CALL R2 1 1  
+      21 [-]: GETIMPORT R3 9 [nil]
+      22 [-]: MOVE R4 R2   
+      23 [-]: CALL R3 1 3  
+      24 [-]: FORGPREP_INEXT R3 L5
+L 4:  25 [-]: GETIMPORT R8 5 [nil]
+      26 [-]: GETTABLEKS R9 R7 K10 ["mItemType"]
+      27 [-]: JUMPIFNOTEQ R8 R9 L5
+      28 [-]: RETURN R0 0  
+L 5:  29 [-]: FORGLOOP R3 L4 2 [inext]
+      30 [-]: GETIMPORT R3 3 [nil]
+      31 [-]: GETIMPORT R5 5 [nil]
+      32 [-]: NAMECALL R3 R3 K11 [0xB1D69B13]
+      33 [-]: CALL R3 2 0  
+      34 [-]: GETIMPORT R3 3 [nil]
+      35 [-]: GETIMPORT R5 5 [nil]
+      36 [-]: LOADK R6 K12 ["/Lotus/Language/Menu/Leverian"]
+      37 [-]: GETIMPORT R7 14 [nil]
+      38 [-]: NAMECALL R3 R3 K15 [0xBC851462]
+      39 [-]: CALL R3 4 0  
+L 6:  40 [-]: RETURN R0 0  
+
 
 

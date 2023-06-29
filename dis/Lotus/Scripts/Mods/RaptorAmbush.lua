@@ -1,39 +1,34 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
-; Max Stack Size:  2
+; Is_vararg:       1
+; Max Stack Size:  1
 
-  1 [-]: CLOSURE   R0 0         ; R0 := closure(Function #1)
-  2 [-]: SETGLOBAL R0 K0        ; GetDescriptionInfo := R0
-  3 [-]: RETURN    R0 1         ; return 
+            1 [-]: DUPCLOSURE R0 K0 []
+       2 [-]: SETGLOBAL R0 K1 ["GetDescriptionInfo"]
+       3 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 4
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  4
+; Max Stack Size:  5
 
-  1 [-]: NEWTABLE  R1 0 2       ; R1 := {}
-  2 [-]: GETGLOBAL R2 K1        ; R2 := 0x01869564
-  3 [-]: GETTABLE  R2 R2 R0     ; R2 := R2[R0]
-  4 [-]: MUL       R2 R2 K2     ; R2 := R2 * 100.000000
-  5 [-]: SETTABLE  R1 K0 R2     ; R1["VAL"] := R2
-  6 [-]: GETGLOBAL R2 K4        ; R2 := 0x54294873
-  7 [-]: GETTABLE  R2 R2 R0     ; R2 := R2[R0]
-  8 [-]: SETTABLE  R1 K3 R2     ; R1["TIME"] := R2
-  9 [-]: GETGLOBAL R2 K5        ; R2 := cjson
- 10 [-]: GETTABLE  R2 R2 K6     ; R2 := R2[0xb139d7bc]
- 11 [-]: MOVE      R3 R1        ; R3 := R1
- 12 [-]: TAILCALL  R2 2 0       ; R2,... := R2(R3)
- 13 [-]: RETURN    R2 0         ; return R2,...
- 14 [-]: RETURN    R0 1         ; return 
+       0 [-]: DUPTABLE R1 2
+       1 [-]: GETIMPORT R4 5 [nil]
+       2 [-]: GETTABLE R3 R4 R0
+       3 [-]: MULK R2 R3 K3 [100]
+       4 [-]: SETTABLEKS R2 R1 K0 ["VAL"]
+       5 [-]: GETIMPORT R3 7 [nil]
+       6 [-]: GETTABLE R2 R3 R0
+       7 [-]: SETTABLEKS R2 R1 K1 ["TIME"]
+       8 [-]: GETIMPORT R2 10 [nil]
+       9 [-]: MOVE R3 R1   
+      10 [-]: CALL R2 1 -1 
+      11 [-]: RETURN R2 -1 
+
 
 

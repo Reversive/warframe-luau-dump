@@ -1,19 +1,15 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
-; Max Stack Size:  2
+; Is_vararg:       1
+; Max Stack Size:  1
 
-  1 [-]: CLOSURE   R0 0         ; R0 := closure(Function #1)
-  2 [-]: SETGLOBAL R0 K0        ; Start := R0
-  3 [-]: RETURN    R0 1         ; return 
+            1 [-]: DUPCLOSURE R0 K0 []
+       2 [-]: SETGLOBAL R0 K1 ["Start"]
+       3 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 3
 ; #Upvalues:       0
@@ -21,18 +17,19 @@
 ; Is_vararg:       0
 ; Max Stack Size:  9
 
-  1 [-]: GETGLOBAL R0 K0        ; R0 := 0x89326c93
-  2 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0xb4364067]
-  3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: SELF      R1 R0 K2     ; R2 := R0; R1 := R0[0x47901f07]
-  5 [-]: GETGLOBAL R3 K3        ; R3 := 0xbb23ee62
-  6 [-]: GETGLOBAL R4 K4        ; R4 := EMPTY_SYMBOL
-  7 [-]: GETGLOBAL R5 K5        ; R5 := 0xa421af95
-  8 [-]: CONST     R6 0         ; R6 := 0.000000
-  9 [-]: CONST     R7 0         ; R7 := -0.500000
- 10 [-]: CONST     R8 0         ; R8 := 0.000000
- 11 [-]: CALL      R5 4 0       ; R5,... := R5(R6,R7,R8)
- 12 [-]: CALL      R1 0 1       ; R1(R2,...)
- 13 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: NAMECALL R0 R0 K2 [0xB4364067]
+       2 [-]: CALL R0 1 1  
+       3 [-]: GETIMPORT R3 4 [nil]
+       4 [-]: GETIMPORT R4 6 [nil]
+       5 [-]: GETIMPORT R5 8 [nil]
+       6 [-]: LOADN R6 0   
+       7 [-]: LOADK R7 K9 [-0.5]
+       8 [-]: LOADN R8 0   
+       9 [-]: CALL R5 3 -1 
+      10 [-]: NAMECALL R1 R0 K10 [0x47901F07]
+      11 [-]: CALL R1 -1 0 
+      12 [-]: RETURN R0 0  
+
 
 

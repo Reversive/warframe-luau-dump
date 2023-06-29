@@ -1,149 +1,132 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
+; Is_vararg:       1
 ; Max Stack Size:  2
 
-  1 [-]: GETGLOBAL R0 K0        ; R0 := 0x2d0fad09
-  2 [-]: LOADK     R1 K1        ; R1 := "Lotus.Scripts.Libs.TableLib"
-  3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: CLOSURE   R1 0         ; R1 := closure(Function #1)
-  5 [-]: MOVE      R0 R0        ; R0 := R0
-  6 [-]: SETGLOBAL R1 K2        ; SpawnLootCrates := R1
-  7 [-]: RETURN    R0 1         ; return 
+            1 [-]: GETIMPORT R0 1 [nil]
+       2 [-]: LOADK R1 K2 ["Lotus.Scripts.Libs.TableLib"]
+       3 [-]: CALL R0 1 1  
+       4 [-]: DUPCLOSURE R1 K3 []
+       5 [-]: MOVE R0 R0   
+       6 [-]: SETGLOBAL R1 K4 ["SpawnLootCrates"]
+       7 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 13
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
-; Max Stack Size:  39
+; Max Stack Size:  19
 
-  1 [-]: GETGLOBAL R0 K0        ; R0 := 0xcbd666e1
-  2 [-]: CONST     R1 1         ; R1 := 1.000000
-  3 [-]: CALL      R0 2 1       ; R0(R1)
-  4 [-]: GETGLOBAL R0 K1        ; R0 := _T
-  5 [-]: GETTABLE  R0 R0 K2     ; R0 := R0["TeshinMissionActive"]
-  6 [-]: TEST      R0 0         ; if not R0 then PC := 9
-  7 [-]: JMP       9            ; PC := 9
-  8 [-]: RETURN    R0 1         ; return 
-  9 [-]: GETGLOBAL R0 K3        ; R0 := 0x7b998233
- 10 [-]: GETGLOBAL R1 K4        ; R1 := 0x89326c93
- 11 [-]: CALL      R0 2 2       ; R0 := R0(R1)
- 12 [-]: TEST      R0 0         ; if not R0 then PC := 18
- 13 [-]: JMP       18           ; PC := 18
- 14 [-]: GETGLOBAL R0 K0        ; R0 := 0xcbd666e1
- 15 [-]: CONST     R1 0         ; R1 := 0.000000
- 16 [-]: CALL      R0 2 1       ; R0(R1)
- 17 [-]: JMP       9            ; PC := 9
- 18 [-]: GETGLOBAL R0 K1        ; R0 := _T
- 19 [-]: GETTABLE  R0 R0 K5     ; R0 := R0["CrewShipLootSpawnFuncs"]
- 20 [-]: LEN       R0 R0        ; R0 := # R0
- 21 [-]: GETUPVAL  R1 U0        ; R1 := U0
- 22 [-]: GETTABLE  R1 R1 K6     ; R1 := R1[0xc7766ea9]
- 23 [-]: GETGLOBAL R2 K1        ; R2 := _T
- 24 [-]: GETTABLE  R2 R2 K5     ; R2 := R2["CrewShipLootSpawnFuncs"]
- 25 [-]: CALL      R1 2 1       ; R1(R2)
- 26 [-]: GETGLOBAL R1 K7        ; R1 := 0x5bced4c4
- 27 [-]: GETTABLE  R1 R1 K8     ; R1 := R1[0xb62ecfe0]
- 28 [-]: GETGLOBAL R2 K9        ; R2 := 0xb8e95167
- 29 [-]: MOVE      R3 R0        ; R3 := R0
- 30 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
- 31 [-]: MOVE      R0 R1        ; R0 := R1
- 32 [-]: CONST     R1 0         ; R1 := 0.000000
- 33 [-]: CONST     R2 1         ; R2 := 1.000000
- 34 [-]: GETGLOBAL R3 K10       ; R3 := 0x02b447d9
- 35 [-]: CONST     R4 1         ; R4 := 1.000000
- 36 [-]: FORPREP   R2 44        ; R2 -= R4; PC := 44
- 37 [-]: GETGLOBAL R6 K7        ; R6 := 0x5bced4c4
- 38 [-]: GETTABLE  R6 R6 K11    ; R6 := R6[0x3630e649]
- 39 [-]: CALL      R6 1 2       ; R6 := R6()
- 40 [-]: GETGLOBAL R7 K12       ; R7 := 0x56ff8d0f
- 41 [-]: LE        0 R6 R7      ; if R6 > R7 then PC := 44
- 42 [-]: JMP       44           ; PC := 44
- 43 [-]: ADD       R1 R1 K13    ; R1 := R1 + 1.000000
- 44 [-]: FORLOOP   R2 37        ; R2 += R4; if R2 <= R3 then begin PC := 37; R5 := R2 end
- 45 [-]: CONST     R7 0         ; R7 := 0.000000
- 46 [-]: CONST     R8 1         ; R8 := 1.000000
- 47 [-]: GETGLOBAL R9 K14       ; R9 := 0x99000b32
- 48 [-]: CONST     R10 1        ; R10 := 1.000000
- 49 [-]: FORPREP   R8 57        ; R8 -= R10; PC := 57
- 50 [-]: GETGLOBAL R12 K7       ; R12 := 0x5bced4c4
- 51 [-]: GETTABLE  R12 R12 K11  ; R12 := R12[0x3630e649]
- 52 [-]: CALL      R12 1 2      ; R12 := R12()
- 53 [-]: GETGLOBAL R13 K15      ; R13 := 0xf78f5708
- 54 [-]: LE        0 R12 R13    ; if R12 > R13 then PC := 57
- 55 [-]: JMP       57           ; PC := 57
- 56 [-]: ADD       R7 R7 K13    ; R7 := R7 + 1.000000
- 57 [-]: FORLOOP   R8 50        ; R8 += R10; if R8 <= R9 then begin PC := 50; R11 := R8 end
- 58 [-]: CONST     R13 0        ; R13 := 0.000000
- 59 [-]: CONST     R14 1        ; R14 := 1.000000
- 60 [-]: GETGLOBAL R15 K16      ; R15 := 0x127daba0
- 61 [-]: CONST     R16 1        ; R16 := 1.000000
- 62 [-]: FORPREP   R14 70       ; R14 -= R16; PC := 70
- 63 [-]: GETGLOBAL R18 K7       ; R18 := 0x5bced4c4
- 64 [-]: GETTABLE  R18 R18 K11  ; R18 := R18[0x3630e649]
- 65 [-]: CALL      R18 1 2      ; R18 := R18()
- 66 [-]: GETGLOBAL R19 K17      ; R19 := 0x2e8ee40e
- 67 [-]: LE        0 R18 R19    ; if R18 > R19 then PC := 70
- 68 [-]: JMP       70           ; PC := 70
- 69 [-]: ADD       R13 R13 K13  ; R13 := R13 + 1.000000
- 70 [-]: FORLOOP   R14 63       ; R14 += R16; if R14 <= R15 then begin PC := 63; R17 := R14 end
- 71 [-]: CONST     R19 0        ; R19 := 0.000000
- 72 [-]: CONST     R20 1        ; R20 := 1.000000
- 73 [-]: GETGLOBAL R21 K18      ; R21 := 0xdda0abca
- 74 [-]: CONST     R22 1        ; R22 := 1.000000
- 75 [-]: FORPREP   R20 83       ; R20 -= R22; PC := 83
- 76 [-]: GETGLOBAL R24 K7       ; R24 := 0x5bced4c4
- 77 [-]: GETTABLE  R24 R24 K11  ; R24 := R24[0x3630e649]
- 78 [-]: CALL      R24 1 2      ; R24 := R24()
- 79 [-]: GETGLOBAL R25 K19      ; R25 := 0x87bb9d2c
- 80 [-]: LE        0 R24 R25    ; if R24 > R25 then PC := 83
- 81 [-]: JMP       83           ; PC := 83
- 82 [-]: ADD       R19 R19 K13  ; R19 := R19 + 1.000000
- 83 [-]: FORLOOP   R20 76       ; R20 += R22; if R20 <= R21 then begin PC := 76; R23 := R20 end
- 84 [-]: GETGLOBAL R25 K20      ; R25 := 0xc8802016
- 85 [-]: GETGLOBAL R26 K1       ; R26 := _T
- 86 [-]: GETTABLE  R26 R26 K5   ; R26 := R26["CrewShipLootSpawnFuncs"]
- 87 [-]: CALL      R25 2 4      ; R25,R26,R27 := R25(R26)
- 88 [-]: JMP       115          ; PC := 115
- 89 [-]: GETGLOBAL R30 K7       ; R30 := 0x5bced4c4
- 90 [-]: GETTABLE  R30 R30 K21  ; R30 := R30[0x99675e23]
- 91 [-]: DIV       R31 R1 R0    ; R31 := R1 / R0
- 92 [-]: CALL      R30 2 2      ; R30 := R30(R31)
- 93 [-]: SUB       R1 R1 R30    ; R1 := R1 - R30
- 94 [-]: GETGLOBAL R31 K7       ; R31 := 0x5bced4c4
- 95 [-]: GETTABLE  R31 R31 K21  ; R31 := R31[0x99675e23]
- 96 [-]: DIV       R32 R7 R0    ; R32 := R7 / R0
- 97 [-]: CALL      R31 2 2      ; R31 := R31(R32)
- 98 [-]: SUB       R7 R7 R31    ; R7 := R7 - R31
- 99 [-]: GETGLOBAL R32 K7       ; R32 := 0x5bced4c4
-100 [-]: GETTABLE  R32 R32 K21  ; R32 := R32[0x99675e23]
-101 [-]: DIV       R33 R13 R0   ; R33 := R13 / R0
-102 [-]: CALL      R32 2 2      ; R32 := R32(R33)
-103 [-]: SUB       R13 R13 R32  ; R13 := R13 - R32
-104 [-]: GETGLOBAL R33 K7       ; R33 := 0x5bced4c4
-105 [-]: GETTABLE  R33 R33 K21  ; R33 := R33[0x99675e23]
-106 [-]: DIV       R34 R19 R0   ; R34 := R19 / R0
-107 [-]: CALL      R33 2 2      ; R33 := R33(R34)
-108 [-]: SUB       R19 R19 R33  ; R19 := R19 - R33
-109 [-]: MOVE      R34 R29      ; R34 := R29
-110 [-]: MOVE      R35 R30      ; R35 := R30
-111 [-]: MOVE      R36 R31      ; R36 := R31
-112 [-]: MOVE      R37 R32      ; R37 := R32
-113 [-]: MOVE      R38 R33      ; R38 := R33
-114 [-]: CALL      R34 5 1      ; R34(R35,R36,R37,R38)
-115 [-]: TFORLOOP  R25 2        ; R28,R29 :=  R25(R26,R27); if R28 ~= nil then begin PC = 89; R27 := R28 end
-116 [-]: JMP       89           ; PC := 89
-117 [-]: GETGLOBAL R34 K1       ; R34 := _T
-118 [-]: NEWTABLE  R35 0 0      ; R35 := {}
-119 [-]: SETTABLE  R34 K5 R35   ; R34["CrewShipLootSpawnFuncs"] := R35
-120 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: LOADN R1 1   
+       2 [-]: CALL R0 1 0  
+       3 [-]: GETIMPORT R0 4 [nil]
+       4 [-]: JUMPIFNOT R0 L0
+       5 [-]: RETURN R0 0  
+L 0:   6 [-]: GETIMPORT R1 6 [nil]
+       7 [-]: FASTCALL1 62 R1 L1
+       8 [-]: GETIMPORT R0 8 [nil]
+       9 [-]: CALL R0 1 1  
+L 1:  10 [-]: JUMPIFNOT R0 L2
+      11 [-]: GETIMPORT R0 1 [nil]
+      12 [-]: LOADN R1 0   
+      13 [-]: CALL R0 1 0  
+      14 [-]: JUMPBACK L0  
+L 2:  15 [-]: GETIMPORT R1 10 [nil]
+      16 [-]: LENGTH R0 R1 
+      17 [-]: GETUPVAL R2 0
+      18 [-]: GETTABLEKS R1 R2 K11 [0xC7766EA9]
+      19 [-]: GETIMPORT R2 10 [nil]
+      20 [-]: CALL R1 1 0  
+      21 [-]: GETIMPORT R2 13 [nil]
+      22 [-]: FASTCALL2 18 R2 R0 L3
+      23 [-]: MOVE R3 R0   
+      24 [-]: GETIMPORT R1 16 [nil]
+      25 [-]: CALL R1 2 1  
+L 3:  26 [-]: MOVE R0 R1   
+      27 [-]: LOADN R1 0   
+      28 [-]: LOADN R4 1   
+      29 [-]: GETIMPORT R2 18 [nil]
+      30 [-]: LOADN R3 1   
+      31 [-]: FORNPREP R2 L6
+L 4:  32 [-]: GETIMPORT R5 20 [nil]
+      33 [-]: CALL R5 0 1  
+      34 [-]: GETIMPORT R6 22 [nil]
+      35 [-]: JUMPIFNOTLE R5 R6 L5
+      36 [-]: ADDK R1 R1 K23 [1]
+L 5:  37 [-]: FORNLOOP R2 L4
+L 6:  38 [-]: LOADN R2 0   
+      39 [-]: LOADN R5 1   
+      40 [-]: GETIMPORT R3 25 [nil]
+      41 [-]: LOADN R4 1   
+      42 [-]: FORNPREP R3 L9
+L 7:  43 [-]: GETIMPORT R6 20 [nil]
+      44 [-]: CALL R6 0 1  
+      45 [-]: GETIMPORT R7 27 [nil]
+      46 [-]: JUMPIFNOTLE R6 R7 L8
+      47 [-]: ADDK R2 R2 K23 [1]
+L 8:  48 [-]: FORNLOOP R3 L7
+L 9:  49 [-]: LOADN R3 0   
+      50 [-]: LOADN R6 1   
+      51 [-]: GETIMPORT R4 29 [nil]
+      52 [-]: LOADN R5 1   
+      53 [-]: FORNPREP R4 L12
+L10:  54 [-]: GETIMPORT R7 20 [nil]
+      55 [-]: CALL R7 0 1  
+      56 [-]: GETIMPORT R8 31 [nil]
+      57 [-]: JUMPIFNOTLE R7 R8 L11
+      58 [-]: ADDK R3 R3 K23 [1]
+L11:  59 [-]: FORNLOOP R4 L10
+L12:  60 [-]: LOADN R4 0   
+      61 [-]: LOADN R7 1   
+      62 [-]: GETIMPORT R5 33 [nil]
+      63 [-]: LOADN R6 1   
+      64 [-]: FORNPREP R5 L15
+L13:  65 [-]: GETIMPORT R8 20 [nil]
+      66 [-]: CALL R8 0 1  
+      67 [-]: GETIMPORT R9 35 [nil]
+      68 [-]: JUMPIFNOTLE R8 R9 L14
+      69 [-]: ADDK R4 R4 K23 [1]
+L14:  70 [-]: FORNLOOP R5 L13
+L15:  71 [-]: GETIMPORT R5 37 [nil]
+      72 [-]: GETIMPORT R6 10 [nil]
+      73 [-]: CALL R5 1 3  
+      74 [-]: FORGPREP_INEXT R5 L21
+L16:  75 [-]: DIV R11 R1 R0
+      76 [-]: FASTCALL1 7 R11 L17
+      77 [-]: GETIMPORT R10 39 [nil]
+      78 [-]: CALL R10 1 1 
+L17:  79 [-]: SUB R1 R1 R10
+      80 [-]: DIV R12 R2 R0
+      81 [-]: FASTCALL1 7 R12 L18
+      82 [-]: GETIMPORT R11 39 [nil]
+      83 [-]: CALL R11 1 1 
+L18:  84 [-]: SUB R2 R2 R11
+      85 [-]: DIV R13 R3 R0
+      86 [-]: FASTCALL1 7 R13 L19
+      87 [-]: GETIMPORT R12 39 [nil]
+      88 [-]: CALL R12 1 1 
+L19:  89 [-]: SUB R3 R3 R12
+      90 [-]: DIV R14 R4 R0
+      91 [-]: FASTCALL1 7 R14 L20
+      92 [-]: GETIMPORT R13 39 [nil]
+      93 [-]: CALL R13 1 1 
+L20:  94 [-]: SUB R4 R4 R13
+      95 [-]: MOVE R14 R9  
+      96 [-]: MOVE R15 R10 
+      97 [-]: MOVE R16 R11 
+      98 [-]: MOVE R17 R12 
+      99 [-]: MOVE R18 R13 
+     100 [-]: CALL R14 4 0 
+L21: 101 [-]: FORGLOOP R5 L16 2 [inext]
+     102 [-]: GETIMPORT R5 40 [nil]
+     103 [-]: NEWTABLE R6 0 0
+     104 [-]: SETTABLEKS R6 R5 K9 ["CrewShipLootSpawnFuncs"]
+     105 [-]: RETURN R0 0  
+
 
 

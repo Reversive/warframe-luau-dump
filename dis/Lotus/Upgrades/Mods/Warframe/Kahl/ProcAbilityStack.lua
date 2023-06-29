@@ -1,21 +1,17 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
-; Max Stack Size:  2
+; Is_vararg:       1
+; Max Stack Size:  1
 
-  1 [-]: CLOSURE   R0 0         ; R0 := closure(Function #1)
-  2 [-]: SETGLOBAL R0 K0        ; GetDescriptionInfo := R0
-  3 [-]: CLOSURE   R0 1         ; R0 := closure(Function #2)
-  4 [-]: SETGLOBAL R0 K1        ; MatchAttackEvent := R0
-  5 [-]: RETURN    R0 1         ; return 
+            1 [-]: DUPCLOSURE R0 K0 []
+       2 [-]: SETGLOBAL R0 K1 ["GetDescriptionInfo"]
+       3 [-]: DUPCLOSURE R0 K2 []
+       4 [-]: SETGLOBAL R0 K3 ["MatchAttackEvent"]
+       5 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 3
 ; #Upvalues:       0
@@ -23,19 +19,15 @@
 ; Is_vararg:       0
 ; Max Stack Size:  4
 
-  1 [-]: NEWTABLE  R1 0 1       ; R1 := {}
-  2 [-]: GETGLOBAL R2 K1        ; R2 := 0x0a924b4d
-  3 [-]: SETTABLE  R1 K0 R2     ; R1["val"] := R2
-  4 [-]: GETGLOBAL R2 K2        ; R2 := cjson
-  5 [-]: GETTABLE  R2 R2 K3     ; R2 := R2[0xb139d7bc]
-  6 [-]: MOVE      R3 R1        ; R3 := R1
-  7 [-]: TAILCALL  R2 2 0       ; R2,... := R2(R3)
-  8 [-]: RETURN    R2 0         ; return R2,...
-  9 [-]: RETURN    R0 1         ; return 
+       0 [-]: DUPTABLE R1 1
+       1 [-]: GETIMPORT R2 3 [nil]
+       2 [-]: SETTABLEKS R2 R1 K0 ["val"]
+       3 [-]: GETIMPORT R2 6 [nil]
+       4 [-]: MOVE R3 R1   
+       5 [-]: CALL R2 1 -1 
+       6 [-]: RETURN R2 -1 
 
 
-; Function #2:
-;
 ; Name:            
 ; Defined at line: 11
 ; #Upvalues:       0
@@ -43,60 +35,54 @@
 ; Is_vararg:       0
 ; Max Stack Size:  7
 
-  1 [-]: SELF      R2 R0 K0     ; R3 := R0; R2 := R0[0x7622c1f6]
-  2 [-]: GETGLOBAL R4 K1        ; R4 := 0x0469f296
-  3 [-]: LOADK     R5 K2        ; R5 := "SIMPLE_PROC_UPGRADES"
-  4 [-]: CALL      R4 2 0       ; R4,... := R4(R5)
-  5 [-]: CALL      R2 0 2       ; R2 := R2(R3,...)
-  6 [-]: TEST      R2 0         ; if not R2 then PC := 10
-  7 [-]: JMP       10           ; PC := 10
-  8 [-]: LOADKB    R2 0 0       ; R2 := false
-  9 [-]: RETURN    R2 2         ; return R2
- 10 [-]: SELF      R2 R0 K3     ; R3 := R0; R2 := R0[0x14a55974]
- 11 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 12 [-]: GETGLOBAL R3 K4        ; R3 := 0x7b998233
- 13 [-]: MOVE      R4 R2        ; R4 := R2
- 14 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 15 [-]: TEST      R3 1         ; if R3 then PC := 53
- 16 [-]: JMP       53           ; PC := 53
- 17 [-]: SELF      R3 R2 K5     ; R4 := R2; R3 := R2[0xf2deaf69]
- 18 [-]: GETGLOBAL R5 K6        ; R5 := gPowerSuitType
- 19 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
- 20 [-]: TEST      R3 1         ; if R3 then PC := 27
- 21 [-]: JMP       27           ; PC := 27
- 22 [-]: SELF      R3 R2 K5     ; R4 := R2; R3 := R2[0xf2deaf69]
- 23 [-]: GETGLOBAL R5 K7        ; R5 := gPowerSuitAbilityType
- 24 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
- 25 [-]: TEST      R3 0         ; if not R3 then PC := 29
- 26 [-]: JMP       29           ; PC := 29
- 27 [-]: LOADKB    R3 1 0       ; R3 := true
- 28 [-]: RETURN    R3 2         ; return R3
- 29 [-]: SELF      R3 R2 K5     ; R4 := R2; R3 := R2[0xf2deaf69]
- 30 [-]: GETGLOBAL R5 K8        ; R5 := gWeaponExType
- 31 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
- 32 [-]: TEST      R3 0         ; if not R3 then PC := 53
- 33 [-]: JMP       53           ; PC := 53
- 34 [-]: SELF      R3 R2 K9     ; R4 := R2; R3 := R2[0xd2073b32]
- 35 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 36 [-]: GETGLOBAL R4 K4        ; R4 := 0x7b998233
- 37 [-]: MOVE      R5 R3        ; R5 := R3
- 38 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 39 [-]: TEST      R4 1         ; if R4 then PC := 53
- 40 [-]: JMP       53           ; PC := 53
- 41 [-]: SELF      R4 R3 K5     ; R5 := R3; R4 := R3[0xf2deaf69]
- 42 [-]: GETGLOBAL R6 K6        ; R6 := gPowerSuitType
- 43 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
- 44 [-]: TEST      R4 1         ; if R4 then PC := 51
- 45 [-]: JMP       51           ; PC := 51
- 46 [-]: SELF      R4 R3 K5     ; R5 := R3; R4 := R3[0xf2deaf69]
- 47 [-]: GETGLOBAL R6 K7        ; R6 := gPowerSuitAbilityType
- 48 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
- 49 [-]: TEST      R4 0         ; if not R4 then PC := 53
- 50 [-]: JMP       53           ; PC := 53
- 51 [-]: LOADKB    R4 1 0       ; R4 := true
- 52 [-]: RETURN    R4 2         ; return R4
- 53 [-]: LOADKB    R4 0 0       ; R4 := false
- 54 [-]: RETURN    R4 2         ; return R4
- 55 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R4 1 [nil]
+       1 [-]: LOADK R5 K2 ["SIMPLE_PROC_UPGRADES"]
+       2 [-]: CALL R4 1 -1 
+       3 [-]: NAMECALL R2 R0 K3 [0x7622C1F6]
+       4 [-]: CALL R2 -1 1 
+       5 [-]: JUMPIFNOT R2 L0
+       6 [-]: LOADB R2 0   
+       7 [-]: RETURN R2 1  
+L 0:   8 [-]: NAMECALL R2 R0 K4 [0x14A55974]
+       9 [-]: CALL R2 1 1  
+      10 [-]: FASTCALL1 62 R2 L1
+      11 [-]: MOVE R4 R2   
+      12 [-]: GETIMPORT R3 6 [nil]
+      13 [-]: CALL R3 1 1  
+L 1:  14 [-]: JUMPIF R3 L6 
+      15 [-]: GETIMPORT R5 8 [nil]
+      16 [-]: NAMECALL R3 R2 K9 [0xF2DEAF69]
+      17 [-]: CALL R3 2 1  
+      18 [-]: JUMPIF R3 L2 
+      19 [-]: GETIMPORT R5 11 [nil]
+      20 [-]: NAMECALL R3 R2 K9 [0xF2DEAF69]
+      21 [-]: CALL R3 2 1  
+      22 [-]: JUMPIFNOT R3 L3
+L 2:  23 [-]: LOADB R3 1   
+      24 [-]: RETURN R3 1  
+L 3:  25 [-]: GETIMPORT R5 13 [nil]
+      26 [-]: NAMECALL R3 R2 K9 [0xF2DEAF69]
+      27 [-]: CALL R3 2 1  
+      28 [-]: JUMPIFNOT R3 L6
+      29 [-]: NAMECALL R3 R2 K14 [0xD2073B32]
+      30 [-]: CALL R3 1 1  
+      31 [-]: FASTCALL1 62 R3 L4
+      32 [-]: MOVE R5 R3   
+      33 [-]: GETIMPORT R4 6 [nil]
+      34 [-]: CALL R4 1 1  
+L 4:  35 [-]: JUMPIF R4 L6 
+      36 [-]: GETIMPORT R6 8 [nil]
+      37 [-]: NAMECALL R4 R3 K9 [0xF2DEAF69]
+      38 [-]: CALL R4 2 1  
+      39 [-]: JUMPIF R4 L5 
+      40 [-]: GETIMPORT R6 11 [nil]
+      41 [-]: NAMECALL R4 R3 K9 [0xF2DEAF69]
+      42 [-]: CALL R4 2 1  
+      43 [-]: JUMPIFNOT R4 L6
+L 5:  44 [-]: LOADB R4 1   
+      45 [-]: RETURN R4 1  
+L 6:  46 [-]: LOADB R3 0   
+      47 [-]: RETURN R3 1  
+
 
 

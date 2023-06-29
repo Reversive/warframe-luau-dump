@@ -1,26 +1,22 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
+; Is_vararg:       1
 ; Max Stack Size:  2
 
-  1 [-]: GETGLOBAL R0 K0        ; R0 := 0x0469f296
-  2 [-]: LOADK     R1 K1        ; R1 := "InvigorationStatusImmune"
-  3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: CLOSURE   R1 0         ; R1 := closure(Function #1)
-  5 [-]: MOVE      R0 R0        ; R0 := R0
-  6 [-]: SETGLOBAL R1 K2        ; Activate := R1
-  7 [-]: CLOSURE   R1 1         ; R1 := closure(Function #2)
-  8 [-]: MOVE      R0 R0        ; R0 := R0
-  9 [-]: SETGLOBAL R1 K3        ; Deactivate := R1
- 10 [-]: RETURN    R0 1         ; return 
+            1 [-]: GETIMPORT R0 1 [nil]
+       2 [-]: LOADK R1 K2 ["InvigorationStatusImmune"]
+       3 [-]: CALL R0 1 1  
+       4 [-]: DUPCLOSURE R1 K3 []
+       5 [-]: MOVE R0 R0   
+       6 [-]: SETGLOBAL R1 K4 ["Activate"]
+       7 [-]: DUPCLOSURE R1 K5 []
+       8 [-]: MOVE R0 R0   
+       9 [-]: SETGLOBAL R1 K6 ["Deactivate"]
+      10 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 3
 ; #Upvalues:       1
@@ -28,20 +24,18 @@
 ; Is_vararg:       0
 ; Max Stack Size:  10
 
-  1 [-]: SELF      R5 R0 K0     ; R6 := R0; R5 := R0[0x1ac1655c]
-  2 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-  3 [-]: SELF      R6 R5 K1     ; R7 := R5; R6 := R5[0x857557de]
-  4 [-]: GETUPVAL  R8 U0        ; R8 := U0
-  5 [-]: CALL      R6 3 1       ; R6(R7,R8)
-  6 [-]: SELF      R6 R5 K2     ; R7 := R5; R6 := R5[0xde9ee3a4]
-  7 [-]: CONST     R8 21        ; R8 := 21.000000
-  8 [-]: GETUPVAL  R9 U0        ; R9 := U0
-  9 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
- 10 [-]: RETURN    R0 1         ; return 
+       0 [-]: NAMECALL R5 R0 K0 [0x1AC1655C]
+       1 [-]: CALL R5 1 1  
+       2 [-]: GETUPVAL R8 0
+       3 [-]: NAMECALL R6 R5 K1 [0x857557DE]
+       4 [-]: CALL R6 2 0  
+       5 [-]: LOADN R8 21  
+       6 [-]: GETUPVAL R9 0
+       7 [-]: NAMECALL R6 R5 K2 [0xDE9EE3A4]
+       8 [-]: CALL R6 3 0  
+       9 [-]: RETURN R0 0  
 
 
-; Function #2:
-;
 ; Name:            
 ; Defined at line: 9
 ; #Upvalues:       1
@@ -49,11 +43,12 @@
 ; Is_vararg:       0
 ; Max Stack Size:  8
 
-  1 [-]: SELF      R5 R0 K0     ; R6 := R0; R5 := R0[0x1ac1655c]
-  2 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-  3 [-]: SELF      R5 R5 K1     ; R6 := R5; R5 := R5[0x571105c9]
-  4 [-]: GETUPVAL  R7 U0        ; R7 := U0
-  5 [-]: CALL      R5 3 1       ; R5(R6,R7)
-  6 [-]: RETURN    R0 1         ; return 
+       0 [-]: NAMECALL R5 R0 K0 [0x1AC1655C]
+       1 [-]: CALL R5 1 1  
+       2 [-]: GETUPVAL R7 0
+       3 [-]: NAMECALL R5 R5 K1 [0x571105C9]
+       4 [-]: CALL R5 2 0  
+       5 [-]: RETURN R0 0  
+
 
 

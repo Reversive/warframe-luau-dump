@@ -1,52 +1,47 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
-; Max Stack Size:  2
+; Is_vararg:       1
+; Max Stack Size:  1
 
-  1 [-]: CLOSURE   R0 0         ; R0 := closure(Function #1)
-  2 [-]: SETGLOBAL R0 K0        ; GetLoc := R0
-  3 [-]: RETURN    R0 1         ; return 
+            1 [-]: DUPCLOSURE R0 K0 []
+       2 [-]: SETGLOBAL R0 K1 ["GetLoc"]
+       3 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 6
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
-; Max Stack Size:  8
+; Max Stack Size:  9
 
-  1 [-]: GETGLOBAL R2 K0        ; R2 := 0x5bced4c4
-  2 [-]: GETTABLE  R2 R2 K1     ; R2 := R2[0x55f27c30]
-  3 [-]: GETGLOBAL R3 K2        ; R3 := 0x17e1c49b
-  4 [-]: MUL       R3 R3 K3     ; R3 := R3 * 100.000000
-  5 [-]: MUL       R3 R3 R0     ; R3 := R3 * R0
-  6 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  7 [-]: GETGLOBAL R3 K0        ; R3 := 0x5bced4c4
-  8 [-]: GETTABLE  R3 R3 K1     ; R3 := R3[0x55f27c30]
-  9 [-]: GETGLOBAL R4 K4        ; R4 := 0x18ace120
- 10 [-]: MUL       R4 R4 K3     ; R4 := R4 * 100.000000
- 11 [-]: MUL       R4 R4 R0     ; R4 := R4 * R0
- 12 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 13 [-]: GETGLOBAL R4 K5        ; R4 := 0xe15169d2
- 14 [-]: SUB       R5 R0 K6     ; R5 := R0 - 1.000000
- 15 [-]: GETGLOBAL R6 K7        ; R6 := 0x422e1719
- 16 [-]: MUL       R5 R5 R6     ; R5 := R5 * R6
- 17 [-]: ADD       R4 R4 R5     ; R4 := R4 + R5
- 18 [-]: NEWTABLE  R5 0 3       ; R5 := {}
- 19 [-]: SETTABLE  R5 K8 R2     ; R5["MAX"] := R2
- 20 [-]: SETTABLE  R5 K9 R3     ; R5["REGEN"] := R3
- 21 [-]: SETTABLE  R5 K10 R4    ; R5["DURATION"] := R4
- 22 [-]: GETGLOBAL R6 K11       ; R6 := cjson
- 23 [-]: GETTABLE  R6 R6 K12    ; R6 := R6[0xb139d7bc]
- 24 [-]: MOVE      R7 R5        ; R7 := R5
- 25 [-]: TAILCALL  R6 2 0       ; R6,... := R6(R7)
- 26 [-]: RETURN    R6 0         ; return R6,...
- 27 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R5 2 [nil]
+       1 [-]: MULK R4 R5 K0 [100]
+       2 [-]: MUL R3 R4 R0 
+       3 [-]: FASTCALL1 12 R3 L0
+       4 [-]: GETIMPORT R2 5 [nil]
+       5 [-]: CALL R2 1 1  
+L 0:   6 [-]: GETIMPORT R6 7 [nil]
+       7 [-]: MULK R5 R6 K0 [100]
+       8 [-]: MUL R4 R5 R0 
+       9 [-]: FASTCALL1 12 R4 L1
+      10 [-]: GETIMPORT R3 5 [nil]
+      11 [-]: CALL R3 1 1  
+L 1:  12 [-]: GETIMPORT R5 9 [nil]
+      13 [-]: SUBK R7 R0 K10 [1]
+      14 [-]: GETIMPORT R8 12 [nil]
+      15 [-]: MUL R6 R7 R8 
+      16 [-]: ADD R4 R5 R6 
+      17 [-]: DUPTABLE R5 16
+      18 [-]: SETTABLEKS R2 R5 K13 ["MAX"]
+      19 [-]: SETTABLEKS R3 R5 K14 ["REGEN"]
+      20 [-]: SETTABLEKS R4 R5 K15 ["DURATION"]
+      21 [-]: GETIMPORT R6 19 [nil]
+      22 [-]: MOVE R7 R5   
+      23 [-]: CALL R6 1 -1 
+      24 [-]: RETURN R6 -1 
+
 
 

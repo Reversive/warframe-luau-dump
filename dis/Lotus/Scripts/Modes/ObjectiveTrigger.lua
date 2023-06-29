@@ -1,19 +1,15 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
-; Max Stack Size:  2
+; Is_vararg:       1
+; Max Stack Size:  1
 
-  1 [-]: CLOSURE   R0 0         ; R0 := closure(Function #1)
-  2 [-]: SETGLOBAL R0 K0        ; ChooseScriptFromMissionType := R0
-  3 [-]: RETURN    R0 1         ; return 
+            1 [-]: DUPCLOSURE R0 K0 []
+       2 [-]: SETGLOBAL R0 K1 ["ChooseScriptFromMissionType"]
+       3 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 4
 ; #Upvalues:       0
@@ -21,22 +17,23 @@
 ; Is_vararg:       0
 ; Max Stack Size:  5
 
-  1 [-]: GETGLOBAL R0 K0        ; R0 := 0xbe190284
-  2 [-]: SELF      R1 R0 K1     ; R2 := R0; R1 := R0[0x5c390f04]
-  3 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  4 [-]: EQ        0 R1 K3      ; if R1 ~= 13.000000 then PC := 11
-  5 [-]: JMP       11           ; PC := 11
-  6 [-]: GETGLOBAL R2 K4        ; R2 := 0xa7c246dc
-  7 [-]: SELF      R2 R2 K5     ; R3 := R2; R2 := R2[0x8eb2112d]
-  8 [-]: LOADK     R4 K6        ; R4 := "Execute"
-  9 [-]: CALL      R2 3 1       ; R2(R3,R4)
- 10 [-]: JMP       17           ; PC := 17
- 11 [-]: EQ        0 R1 K7      ; if R1 ~= 8.000000 then PC := 17
- 12 [-]: JMP       17           ; PC := 17
- 13 [-]: GETGLOBAL R2 K8        ; R2 := 0xce923caa
- 14 [-]: SELF      R2 R2 K5     ; R3 := R2; R2 := R2[0x8eb2112d]
- 15 [-]: LOADK     R4 K6        ; R4 := "Execute"
- 16 [-]: CALL      R2 3 1       ; R2(R3,R4)
- 17 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: NAMECALL R1 R0 K2 [0x5C390F04]
+       2 [-]: CALL R1 1 1  
+       3 [-]: LOADN R2 13  
+       4 [-]: JUMPIFNOTEQ R1 R2 L0
+       5 [-]: GETIMPORT R2 4 [nil]
+       6 [-]: LOADK R4 K5 ["Execute"]
+       7 [-]: NAMECALL R2 R2 K6 [0x8EB2112D]
+       8 [-]: CALL R2 2 0  
+       9 [-]: RETURN R0 0  
+L 0:  10 [-]: LOADN R2 8   
+      11 [-]: JUMPIFNOTEQ R1 R2 L1
+      12 [-]: GETIMPORT R2 8 [nil]
+      13 [-]: LOADK R4 K5 ["Execute"]
+      14 [-]: NAMECALL R2 R2 K6 [0x8EB2112D]
+      15 [-]: CALL R2 2 0  
+L 1:  16 [-]: RETURN R0 0  
+
 
 

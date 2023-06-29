@@ -1,45 +1,41 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
-; Max Stack Size:  2
+; Is_vararg:       1
+; Max Stack Size:  1
 
-  1 [-]: CLOSURE   R0 0         ; R0 := closure(Function #1)
-  2 [-]: SETGLOBAL R0 K0        ; GetDescription := R0
-  3 [-]: RETURN    R0 1         ; return 
+            1 [-]: DUPCLOSURE R0 K0 []
+       2 [-]: SETGLOBAL R0 K1 ["GetDescription"]
+       3 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 5
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  5
+; Max Stack Size:  10
 
-  1 [-]: NEWTABLE  R1 0 2       ; R1 := {}
-  2 [-]: GETGLOBAL R2 K1        ; R2 := 0xf1ab3843
-  3 [-]: GETTABLE  R2 R2 R0     ; R2 := R2[R0]
-  4 [-]: SETTABLE  R1 K0 R2     ; R1["drain"] := R2
-  5 [-]: LOADK     R2 K3        ; R2 := "+"
-  6 [-]: GETGLOBAL R3 K4        ; R3 := 0x5bced4c4
-  7 [-]: GETTABLE  R3 R3 K5     ; R3 := R3[0x55f27c30]
-  8 [-]: GETGLOBAL R4 K6        ; R4 := 0x66fc7392
-  9 [-]: MUL       R4 R4 R0     ; R4 := R4 * R0
- 10 [-]: MUL       R4 R4 K7     ; R4 := R4 * 100.000000
- 11 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 12 [-]: LOADK     R4 K8        ; R4 := "%"
- 13 [-]: CONCAT    R2 R2 R4     ; R2 := R2 .. R3 .. R4
- 14 [-]: SETTABLE  R1 K2 R2     ; R1["val"] := R2
- 15 [-]: GETGLOBAL R2 K9        ; R2 := cjson
- 16 [-]: GETTABLE  R2 R2 K10    ; R2 := R2[0xb139d7bc]
- 17 [-]: MOVE      R3 R1        ; R3 := R1
- 18 [-]: TAILCALL  R2 2 0       ; R2,... := R2(R3)
- 19 [-]: RETURN    R2 0         ; return R2,...
- 20 [-]: RETURN    R0 1         ; return 
+       0 [-]: DUPTABLE R1 2
+       1 [-]: GETIMPORT R3 4 [nil]
+       2 [-]: GETTABLE R2 R3 R0
+       3 [-]: SETTABLEKS R2 R1 K0 ["drain"]
+       4 [-]: LOADK R3 K5 ["+"]
+       5 [-]: GETIMPORT R9 8 [nil]
+       6 [-]: MUL R8 R9 R0 
+       7 [-]: MULK R7 R8 K6 [100]
+       8 [-]: FASTCALL1 12 R7 L0
+       9 [-]: GETIMPORT R6 11 [nil]
+      10 [-]: CALL R6 1 1  
+L 0:  11 [-]: MOVE R4 R6   
+      12 [-]: LOADK R5 K12 ["%"]
+      13 [-]: CONCAT R2 R3 R5
+      14 [-]: SETTABLEKS R2 R1 K1 ["val"]
+      15 [-]: GETIMPORT R2 15 [nil]
+      16 [-]: MOVE R3 R1   
+      17 [-]: CALL R2 1 -1 
+      18 [-]: RETURN R2 -1 
+
 
 

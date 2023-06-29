@@ -1,19 +1,15 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
-; Max Stack Size:  2
+; Is_vararg:       1
+; Max Stack Size:  1
 
-  1 [-]: CLOSURE   R0 0         ; R0 := closure(Function #1)
-  2 [-]: SETGLOBAL R0 K0        ; VehicleStateChanged := R0
-  3 [-]: RETURN    R0 1         ; return 
+            1 [-]: DUPCLOSURE R0 K0 []
+       2 [-]: SETGLOBAL R0 K1 ["VehicleStateChanged"]
+       3 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 4
 ; #Upvalues:       0
@@ -21,36 +17,36 @@
 ; Is_vararg:       0
 ; Max Stack Size:  10
 
-  1 [-]: GETGLOBAL R3 K0        ; R3 := 0x7b998233
-  2 [-]: MOVE      R4 R0        ; R4 := R0
-  3 [-]: CALL      R3 2 2       ; R3 := R3(R4)
-  4 [-]: TEST      R3 0         ; if not R3 then PC := 7
-  5 [-]: JMP       7            ; PC := 7
-  6 [-]: RETURN    R0 1         ; return 
-  7 [-]: TEST      R1 0         ; if not R1 then PC := 19
-  8 [-]: JMP       19           ; PC := 19
-  9 [-]: GETGLOBAL R3 K1        ; R3 := 0x89326c93
- 10 [-]: SELF      R3 R3 K2     ; R4 := R3; R3 := R3[0x05909209]
- 11 [-]: GETGLOBAL R5 K3        ; R5 := 0x5e1bfa79
- 12 [-]: MOVE      R6 R2        ; R6 := R2
- 13 [-]: SELF      R7 R0 K4     ; R8 := R0; R7 := R0[0x5280b883]
- 14 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 15 [-]: MOVE      R8 R0        ; R8 := R0
- 16 [-]: MOVE      R9 R0        ; R9 := R0
- 17 [-]: CALL      R3 7 1       ; R3(R4,R5,R6,R7,R8,R9)
- 18 [-]: JMP       31           ; PC := 31
- 19 [-]: GETGLOBAL R3 K5        ; R3 := 0xcbd666e1
- 20 [-]: CONST     R4 0         ; R4 := 0.000000
- 21 [-]: CALL      R3 2 1       ; R3(R4)
- 22 [-]: GETGLOBAL R3 K1        ; R3 := 0x89326c93
- 23 [-]: SELF      R3 R3 K2     ; R4 := R3; R3 := R3[0x05909209]
- 24 [-]: GETGLOBAL R5 K6        ; R5 := 0xc3a42ea5
- 25 [-]: MOVE      R6 R2        ; R6 := R2
- 26 [-]: SELF      R7 R0 K7     ; R8 := R0; R7 := R0[0xcb3851b8]
- 27 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 28 [-]: MOVE      R8 R0        ; R8 := R0
- 29 [-]: MOVE      R9 R0        ; R9 := R0
- 30 [-]: CALL      R3 7 1       ; R3(R4,R5,R6,R7,R8,R9)
- 31 [-]: RETURN    R0 1         ; return 
+       0 [-]: FASTCALL1 62 R0 L0
+       1 [-]: MOVE R4 R0   
+       2 [-]: GETIMPORT R3 1 [nil]
+       3 [-]: CALL R3 1 1  
+L 0:   4 [-]: JUMPIFNOT R3 L1
+       5 [-]: RETURN R0 0  
+L 1:   6 [-]: JUMPIFNOT R1 L2
+       7 [-]: GETIMPORT R3 3 [nil]
+       8 [-]: GETIMPORT R5 5 [nil]
+       9 [-]: MOVE R6 R2   
+      10 [-]: NAMECALL R7 R0 K6 [0x5280B883]
+      11 [-]: CALL R7 1 1  
+      12 [-]: MOVE R8 R0   
+      13 [-]: MOVE R9 R0   
+      14 [-]: NAMECALL R3 R3 K7 [0x05909209]
+      15 [-]: CALL R3 6 0  
+      16 [-]: RETURN R0 0  
+L 2:  17 [-]: GETIMPORT R3 9 [nil]
+      18 [-]: LOADN R4 0   
+      19 [-]: CALL R3 1 0  
+      20 [-]: GETIMPORT R3 3 [nil]
+      21 [-]: GETIMPORT R5 11 [nil]
+      22 [-]: MOVE R6 R2   
+      23 [-]: NAMECALL R7 R0 K12 [0xCB3851B8]
+      24 [-]: CALL R7 1 1  
+      25 [-]: MOVE R8 R0   
+      26 [-]: MOVE R9 R0   
+      27 [-]: NAMECALL R3 R3 K7 [0x05909209]
+      28 [-]: CALL R3 6 0  
+      29 [-]: RETURN R0 0  
+
 
 

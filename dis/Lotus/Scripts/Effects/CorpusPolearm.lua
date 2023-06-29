@@ -1,92 +1,85 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
-; Max Stack Size:  2
+; Is_vararg:       1
+; Max Stack Size:  1
 
-  1 [-]: CLOSURE   R0 0         ; R0 := closure(Function #1)
-  2 [-]: SETGLOBAL R0 K0        ; ClosePolearm := R0
-  3 [-]: CLOSURE   R0 1         ; R0 := closure(Function #2)
-  4 [-]: SETGLOBAL R0 K1        ; OpenPolearm := R0
-  5 [-]: RETURN    R0 1         ; return 
+            1 [-]: DUPCLOSURE R0 K0 []
+       2 [-]: SETGLOBAL R0 K1 ["ClosePolearm"]
+       3 [-]: DUPCLOSURE R0 K2 []
+       4 [-]: SETGLOBAL R0 K3 ["OpenPolearm"]
+       5 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 5
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  14
+; Max Stack Size:  13
 
-  1 [-]: SELF      R1 R0 K0     ; R2 := R0; R1 := R0[0x986d2ab8]
-  2 [-]: GETGLOBAL R3 K1        ; R3 := 0x6c97a788
-  3 [-]: GETTABLE  R3 R3 K2     ; R3 := R3["UNLIT_ATTEN"]
-  4 [-]: CONST     R4 0         ; R4 := 0.000000
-  5 [-]: CALL      R1 4 1       ; R1(R2,R3,R4)
-  6 [-]: SELF      R1 R0 K3     ; R2 := R0; R1 := R0[0xc1595bd5]
-  7 [-]: GETGLOBAL R3 K4        ; R3 := gWeaponTrailType
-  8 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
-  9 [-]: GETGLOBAL R2 K5        ; R2 := 0x7b998233
- 10 [-]: MOVE      R3 R1        ; R3 := R1
- 11 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 12 [-]: TEST      R2 1         ; if R2 then PC := 27
- 13 [-]: JMP       27           ; PC := 27
- 14 [-]: CONST     R2 1         ; R2 := 1.000000
- 15 [-]: LEN       R3 R1        ; R3 := # R1
- 16 [-]: CONST     R4 1         ; R4 := 1.000000
- 17 [-]: FORPREP   R2 26        ; R2 -= R4; PC := 26
- 18 [-]: GETTABLE  R6 R1 R5     ; R6 := R1[R5]
- 19 [-]: SELF      R7 R6 K0     ; R8 := R6; R7 := R6[0x986d2ab8]
- 20 [-]: GETGLOBAL R9 K6        ; R9 := 0x79b325db
- 21 [-]: CONST     R10 0        ; R10 := 0.000000
- 22 [-]: CONST     R11 0        ; R11 := 0.000000
- 23 [-]: CONST     R12 1        ; R12 := 1.000000
- 24 [-]: CONST     R13 0        ; R13 := 0.000000
- 25 [-]: CALL      R7 7 1       ; R7(R8,R9,R10,R11,R12,R13)
- 26 [-]: FORLOOP   R2 18        ; R2 += R4; if R2 <= R3 then begin PC := 18; R5 := R2 end
- 27 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R3 2 [nil]
+       1 [-]: LOADN R4 0   
+       2 [-]: NAMECALL R1 R0 K3 [0x986D2AB8]
+       3 [-]: CALL R1 3 0  
+       4 [-]: GETIMPORT R3 5 [nil]
+       5 [-]: NAMECALL R1 R0 K6 [0xC1595BD5]
+       6 [-]: CALL R1 2 1  
+       7 [-]: FASTCALL1 62 R1 L0
+       8 [-]: MOVE R3 R1   
+       9 [-]: GETIMPORT R2 8 [nil]
+      10 [-]: CALL R2 1 1  
+L 0:  11 [-]: JUMPIF R2 L2 
+      12 [-]: LOADN R4 1   
+      13 [-]: LENGTH R2 R1 
+      14 [-]: LOADN R3 1   
+      15 [-]: FORNPREP R2 L2
+L 1:  16 [-]: GETTABLE R5 R1 R4
+      17 [-]: GETIMPORT R8 10 [nil]
+      18 [-]: LOADN R9 0   
+      19 [-]: LOADN R10 0  
+      20 [-]: LOADN R11 1  
+      21 [-]: LOADN R12 0  
+      22 [-]: NAMECALL R6 R5 K3 [0x986D2AB8]
+      23 [-]: CALL R6 6 0  
+      24 [-]: FORNLOOP R2 L1
+L 2:  25 [-]: RETURN R0 0  
 
 
-; Function #2:
-;
 ; Name:            
 ; Defined at line: 16
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  14
+; Max Stack Size:  13
 
-  1 [-]: SELF      R1 R0 K0     ; R2 := R0; R1 := R0[0x986d2ab8]
-  2 [-]: GETGLOBAL R3 K1        ; R3 := 0x6c97a788
-  3 [-]: GETTABLE  R3 R3 K2     ; R3 := R3["UNLIT_ATTEN"]
-  4 [-]: CONST     R4 1         ; R4 := 1.000000
-  5 [-]: CALL      R1 4 1       ; R1(R2,R3,R4)
-  6 [-]: SELF      R1 R0 K3     ; R2 := R0; R1 := R0[0xc1595bd5]
-  7 [-]: GETGLOBAL R3 K4        ; R3 := gWeaponTrailType
-  8 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
-  9 [-]: GETGLOBAL R2 K5        ; R2 := 0x7b998233
- 10 [-]: MOVE      R3 R1        ; R3 := R1
- 11 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 12 [-]: TEST      R2 1         ; if R2 then PC := 27
- 13 [-]: JMP       27           ; PC := 27
- 14 [-]: CONST     R2 1         ; R2 := 1.000000
- 15 [-]: LEN       R3 R1        ; R3 := # R1
- 16 [-]: CONST     R4 1         ; R4 := 1.000000
- 17 [-]: FORPREP   R2 26        ; R2 -= R4; PC := 26
- 18 [-]: GETTABLE  R6 R1 R5     ; R6 := R1[R5]
- 19 [-]: SELF      R7 R6 K0     ; R8 := R6; R7 := R6[0x986d2ab8]
- 20 [-]: GETGLOBAL R9 K6        ; R9 := 0x79b325db
- 21 [-]: CONST     R10 0        ; R10 := 0.000000
- 22 [-]: CONST     R11 0        ; R11 := 0.000000
- 23 [-]: CONST     R12 1        ; R12 := 1.000000
- 24 [-]: CONST     R13 1        ; R13 := 1.000000
- 25 [-]: CALL      R7 7 1       ; R7(R8,R9,R10,R11,R12,R13)
- 26 [-]: FORLOOP   R2 18        ; R2 += R4; if R2 <= R3 then begin PC := 18; R5 := R2 end
- 27 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R3 2 [nil]
+       1 [-]: LOADN R4 1   
+       2 [-]: NAMECALL R1 R0 K3 [0x986D2AB8]
+       3 [-]: CALL R1 3 0  
+       4 [-]: GETIMPORT R3 5 [nil]
+       5 [-]: NAMECALL R1 R0 K6 [0xC1595BD5]
+       6 [-]: CALL R1 2 1  
+       7 [-]: FASTCALL1 62 R1 L0
+       8 [-]: MOVE R3 R1   
+       9 [-]: GETIMPORT R2 8 [nil]
+      10 [-]: CALL R2 1 1  
+L 0:  11 [-]: JUMPIF R2 L2 
+      12 [-]: LOADN R4 1   
+      13 [-]: LENGTH R2 R1 
+      14 [-]: LOADN R3 1   
+      15 [-]: FORNPREP R2 L2
+L 1:  16 [-]: GETTABLE R5 R1 R4
+      17 [-]: GETIMPORT R8 10 [nil]
+      18 [-]: LOADN R9 0   
+      19 [-]: LOADN R10 0  
+      20 [-]: LOADN R11 1  
+      21 [-]: LOADN R12 1  
+      22 [-]: NAMECALL R6 R5 K3 [0x986D2AB8]
+      23 [-]: CALL R6 6 0  
+      24 [-]: FORNLOOP R2 L1
+L 2:  25 [-]: RETURN R0 0  
+
 
 

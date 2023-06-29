@@ -1,26 +1,22 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
+; Is_vararg:       1
 ; Max Stack Size:  2
 
-  1 [-]: GETGLOBAL R0 K0        ; R0 := 0x0469f296
-  2 [-]: LOADK     R1 K1        ; R1 := "DisruptorAura"
-  3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: CLOSURE   R1 0         ; R1 := closure(Function #1)
-  5 [-]: MOVE      R0 R0        ; R0 := R0
-  6 [-]: SETGLOBAL R1 K2        ; ApplyAncientDisruptorAura := R1
-  7 [-]: CLOSURE   R1 1         ; R1 := closure(Function #2)
-  8 [-]: MOVE      R0 R0        ; R0 := R0
-  9 [-]: SETGLOBAL R1 K3        ; RemoveAncientDisruptorAura := R1
- 10 [-]: RETURN    R0 1         ; return 
+            1 [-]: GETIMPORT R0 1 [nil]
+       2 [-]: LOADK R1 K2 ["DisruptorAura"]
+       3 [-]: CALL R0 1 1  
+       4 [-]: DUPCLOSURE R1 K3 []
+       5 [-]: MOVE R0 R0   
+       6 [-]: SETGLOBAL R1 K4 ["ApplyAncientDisruptorAura"]
+       7 [-]: DUPCLOSURE R1 K5 []
+       8 [-]: MOVE R0 R0   
+       9 [-]: SETGLOBAL R1 K6 ["RemoveAncientDisruptorAura"]
+      10 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 5
 ; #Upvalues:       1
@@ -28,20 +24,18 @@
 ; Is_vararg:       0
 ; Max Stack Size:  11
 
-  1 [-]: SELF      R4 R1 K0     ; R5 := R1; R4 := R1[0x1ac1655c]
-  2 [-]: CALL      R4 2 2       ; R4 := R4(R5)
-  3 [-]: SELF      R4 R4 K1     ; R5 := R4; R4 := R4[0x01e6ede5]
-  4 [-]: GETUPVAL  R6 U0        ; R6 := U0
-  5 [-]: CONST     R7 25        ; R7 := 25.000000
-  6 [-]: CONST     R8 6         ; R8 := 6.000000
-  7 [-]: CONST     R9 0         ; R9 := 0.000000
-  8 [-]: GETGLOBAL R10 K3       ; R10 := 0xfbb3095e
-  9 [-]: CALL      R4 7 1       ; R4(R5,R6,R7,R8,R9,R10)
- 10 [-]: RETURN    R0 1         ; return 
+       0 [-]: NAMECALL R4 R1 K0 [0x1AC1655C]
+       1 [-]: CALL R4 1 1  
+       2 [-]: GETUPVAL R6 0
+       3 [-]: LOADN R7 25  
+       4 [-]: LOADN R8 6   
+       5 [-]: LOADN R9 0   
+       6 [-]: GETIMPORT R10 2 [nil]
+       7 [-]: NAMECALL R4 R4 K3 [0x01E6EDE5]
+       8 [-]: CALL R4 6 0  
+       9 [-]: RETURN R0 0  
 
 
-; Function #2:
-;
 ; Name:            
 ; Defined at line: 9
 ; #Upvalues:       1
@@ -49,11 +43,12 @@
 ; Is_vararg:       0
 ; Max Stack Size:  7
 
-  1 [-]: SELF      R4 R1 K0     ; R5 := R1; R4 := R1[0x1ac1655c]
-  2 [-]: CALL      R4 2 2       ; R4 := R4(R5)
-  3 [-]: SELF      R4 R4 K1     ; R5 := R4; R4 := R4[0xf5ffa164]
-  4 [-]: GETUPVAL  R6 U0        ; R6 := U0
-  5 [-]: CALL      R4 3 1       ; R4(R5,R6)
-  6 [-]: RETURN    R0 1         ; return 
+       0 [-]: NAMECALL R4 R1 K0 [0x1AC1655C]
+       1 [-]: CALL R4 1 1  
+       2 [-]: GETUPVAL R6 0
+       3 [-]: NAMECALL R4 R4 K1 [0xF5FFA164]
+       4 [-]: CALL R4 2 0  
+       5 [-]: RETURN R0 0  
+
 
 

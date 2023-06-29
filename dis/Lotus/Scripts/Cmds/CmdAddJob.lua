@@ -1,146 +1,140 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
-; Max Stack Size:  2
+; Is_vararg:       1
+; Max Stack Size:  1
 
-  1 [-]: CLOSURE   R0 0         ; R0 := closure(Function #1)
-  2 [-]: SETGLOBAL R0 K0        ; CmdAddJob := R0
-  3 [-]: RETURN    R0 1         ; return 
+            1 [-]: DUPCLOSURE R0 K0 []
+       2 [-]: SETGLOBAL R0 K1 ["CmdAddJob"]
+       3 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
-; Max Stack Size:  25
+; Max Stack Size:  18
 
-  1 [-]: GETGLOBAL R3 K0        ; R3 := 0xb009bbc6
-  2 [-]: MOVE      R4 R0        ; R4 := R0
-  3 [-]: CALL      R3 2 2       ; R3 := R3(R4)
-  4 [-]: GETGLOBAL R4 K1        ; R4 := 0x7b998233
-  5 [-]: MOVE      R5 R3        ; R5 := R3
-  6 [-]: CALL      R4 2 2       ; R4 := R4(R5)
-  7 [-]: TEST      R4 0         ; if not R4 then PC := 13
-  8 [-]: JMP       13           ; PC := 13
-  9 [-]: GETGLOBAL R4 K2        ; R4 := 0xd644c2f1
- 10 [-]: LOADK     R5 K3        ; R5 := "Job type not found"
- 11 [-]: CALL      R4 2 1       ; R4(R5)
- 12 [-]: RETURN    R0 1         ; return 
- 13 [-]: GETGLOBAL R4 K4        ; R4 := _T
- 14 [-]: GETTABLE  R4 R4 K5     ; R4 := R4["DEBUG_JOBS"]
- 15 [-]: TEST      R4 1         ; if R4 then PC := 18
- 16 [-]: JMP       18           ; PC := 18
- 17 [-]: NEWTABLE  R4 0 0       ; R4 := {}
- 18 [-]: GETGLOBAL R5 K4        ; R5 := _T
- 19 [-]: SETTABLE  R5 K5 R4     ; R5["DEBUG_JOBS"] := R4
- 20 [-]: CONST     R5 1         ; R5 := 1.000000
- 21 [-]: LEN       R6 R4        ; R6 := # R4
- 22 [-]: CONST     R7 1         ; R7 := 1.000000
- 23 [-]: FORPREP   R5 29        ; R5 -= R7; PC := 29
- 24 [-]: GETTABLE  R9 R4 R8     ; R9 := R4[R8]
- 25 [-]: GETTABLE  R9 R9 K6     ; R9 := R9["jobType"]
- 26 [-]: EQ        0 R9 R3      ; if R9 ~= R3 then PC := 29
- 27 [-]: JMP       29           ; PC := 29
- 28 [-]: RETURN    R0 1         ; return 
- 29 [-]: FORLOOP   R5 24        ; R5 += R7; if R5 <= R6 then begin PC := 24; R8 := R5 end
- 30 [-]: NEWTABLE  R9 0 0       ; R9 := {}
- 31 [-]: NEWTABLE  R10 0 0      ; R10 := {}
- 32 [-]: SELF      R11 R3 K7    ; R12 := R3; R11 := R3[0xce0d5e55]
- 33 [-]: CALL      R11 2 2      ; R11 := R11(R12)
- 34 [-]: CONST     R12 1        ; R12 := 1.000000
- 35 [-]: LEN       R13 R11      ; R13 := # R11
- 36 [-]: CONST     R14 1        ; R14 := 1.000000
- 37 [-]: FORPREP   R12 49       ; R12 -= R14; PC := 49
- 38 [-]: GETTABLE  R16 R11 R15  ; R16 := R11[R15]
- 39 [-]: GETTABLE  R16 R16 K8   ; R16 := R16["encounterChoices"]
- 40 [-]: GETGLOBAL R17 K9       ; R17 := 0x55730e1a
- 41 [-]: CONST     R18 1        ; R18 := 1.000000
- 42 [-]: GETTABLE  R19 R11 R15  ; R19 := R11[R15]
- 43 [-]: GETTABLE  R19 R19 K8   ; R19 := R19["encounterChoices"]
- 44 [-]: LEN       R19 R19      ; R19 := # R19
- 45 [-]: CALL      R17 3 2      ; R17 := R17(R18,R19)
- 46 [-]: GETTABLE  R16 R16 R17  ; R16 := R16[R17]
- 47 [-]: SETTABLE  R9 R15 R16   ; R9[R15] := R16
- 48 [-]: SETTABLE  R10 R15 K10  ; R10[R15] := 0.000000
- 49 [-]: FORLOOP   R12 38       ; R12 += R14; if R12 <= R13 then begin PC := 38; R15 := R12 end
- 50 [-]: GETGLOBAL R16 K11      ; R16 := 0x33bdd652
- 51 [-]: GETTABLE  R16 R16 K12  ; R16 := R16[0x23d5322f]
- 52 [-]: MOVE      R17 R4       ; R17 := R4
- 53 [-]: NEWTABLE  R18 0 18     ; R18 := {}
- 54 [-]: SELF      R19 R3 K14   ; R20 := R3; R19 := R3[0xed4e0128]
- 55 [-]: CALL      R19 2 2      ; R19 := R19(R20)
- 56 [-]: SETTABLE  R18 K13 R19  ; R18["jobId"] := R19
- 57 [-]: GETGLOBAL R19 K16      ; R19 := 0x603636ad
- 58 [-]: GETGLOBAL R20 K17      ; R20 := 0x64fb1586
- 59 [-]: SELF      R21 R3 K18   ; R22 := R3; R21 := R3[0xaf8359c4]
- 60 [-]: CALL      R21 2 0      ; R21,... := R21(R22)
- 61 [-]: CALL      R20 0 2      ; R20 := R20(R21,...)
- 62 [-]: LOADNIL   R21 R21      ; R21 := nil
- 63 [-]: CALL      R19 3 2      ; R19 := R19(R20,R21)
- 64 [-]: SETTABLE  R18 K15 R19  ; R18["name"] := R19
- 65 [-]: GETGLOBAL R19 K16      ; R19 := 0x603636ad
- 66 [-]: GETGLOBAL R20 K17      ; R20 := 0x64fb1586
- 67 [-]: SELF      R21 R3 K20   ; R22 := R3; R21 := R3[0x78bae559]
- 68 [-]: CALL      R21 2 0      ; R21,... := R21(R22)
- 69 [-]: CALL      R20 0 2      ; R20 := R20(R21,...)
- 70 [-]: LOADNIL   R21 R21      ; R21 := nil
- 71 [-]: CALL      R19 3 2      ; R19 := R19(R20,R21)
- 72 [-]: SETTABLE  R18 K19 R19  ; R18["desc"] := R19
- 73 [-]: SELF      R19 R3 K22   ; R20 := R3; R19 := R3[0x056dcf06]
- 74 [-]: CALL      R19 2 2      ; R19 := R19(R20)
- 75 [-]: SETTABLE  R18 K21 R19  ; R18["icon"] := R19
- 76 [-]: SETTABLE  R18 K23 R9   ; R18["stages"] := R9
- 77 [-]: SETTABLE  R18 K24 K25  ; R18["reward"] := nil
- 78 [-]: GETGLOBAL R19 K27      ; R19 := 0x0997dbe6
- 79 [-]: GETGLOBAL R20 K9       ; R20 := 0x55730e1a
- 80 [-]: CONST     R21 0        ; R21 := 0.000000
- 81 [-]: GETGLOBAL R22 K28      ; R22 := 0x5bced4c4
- 82 [-]: GETTABLE  R22 R22 K29  ; R22 := R22[0xa40531d8]
- 83 [-]: CONST     R23 2        ; R23 := 2.000000
- 84 [-]: CONST     R24 30       ; R24 := 30.000000
- 85 [-]: CALL      R22 3 0      ; R22,... := R22(R23,R24)
- 86 [-]: CALL      R20 0 0      ; R20,... := R20(R21,...)
- 87 [-]: CALL      R19 0 2      ; R19 := R19(R20,...)
- 88 [-]: SETTABLE  R18 K26 R19  ; R18["seed"] := R19
- 89 [-]: SETTABLE  R18 K6 R3    ; R18["jobType"] := R3
- 90 [-]: SELF      R19 R3 K14   ; R20 := R3; R19 := R3[0xed4e0128]
- 91 [-]: CALL      R19 2 2      ; R19 := R19(R20)
- 92 [-]: SETTABLE  R18 K30 R19  ; R18["jobTypeName"] := R19
- 93 [-]: SETTABLE  R18 K31 K10  ; R18["masteryReq"] := 0.000000
- 94 [-]: GETGLOBAL R19 K33      ; R19 := 0x03f57322
- 95 [-]: MOVE      R20 R1       ; R20 := R1
- 96 [-]: CALL      R19 2 2      ; R19 := R19(R20)
- 97 [-]: TEST      R19 1        ; if R19 then PC := 100
- 98 [-]: JMP       100          ; PC := 100
- 99 [-]: CONST     R19 15       ; R19 := 15.000000
-100 [-]: SETTABLE  R18 K32 R19  ; R18["minEnemyLevel"] := R19
-101 [-]: GETGLOBAL R19 K33      ; R19 := 0x03f57322
-102 [-]: MOVE      R20 R2       ; R20 := R2
-103 [-]: CALL      R19 2 2      ; R19 := R19(R20)
-104 [-]: TEST      R19 1        ; if R19 then PC := 107
-105 [-]: JMP       107          ; PC := 107
-106 [-]: CONST     R19 20       ; R19 := 20.000000
-107 [-]: SETTABLE  R18 K34 R19  ; R18["maxEnemyLevel"] := R19
-108 [-]: SETTABLE  R18 K35 R10  ; R18["xpAmounts"] := R10
-109 [-]: GETGLOBAL R19 K37      ; R19 := EMPTY_SYMBOL
-110 [-]: SETTABLE  R18 K36 R19  ; R18["syndicateTag"] := R19
-111 [-]: SELF      R19 R3 K39   ; R20 := R3; R19 := R3[0xe4c355e2]
-112 [-]: CALL      R19 2 2      ; R19 := R19(R20)
-113 [-]: SETTABLE  R18 K38 R19  ; R18["transmissionSet"] := R19
-114 [-]: SETTABLE  R18 K40 K41  ; R18["skipInventoryUpdate"] := true
-115 [-]: SETTABLE  R18 K42 K25  ; R18["expiry"] := nil
-116 [-]: SETTABLE  R18 K43 K44  ; R18["hasCompleted"] := false
-117 [-]: SETTABLE  R18 K45 K41  ; R18["isDebug"] := true
-118 [-]: CALL      R16 3 1      ; R16(R17,R18)
-119 [-]: GETGLOBAL R16 K4       ; R16 := _T
-120 [-]: SETTABLE  R16 K46 K41  ; R16["RefreshJobs"] := true
-121 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R3 1 [nil]
+       1 [-]: MOVE R4 R0   
+       2 [-]: CALL R3 1 1  
+       3 [-]: FASTCALL1 62 R3 L0
+       4 [-]: MOVE R5 R3   
+       5 [-]: GETIMPORT R4 3 [nil]
+       6 [-]: CALL R4 1 1  
+L 0:   7 [-]: JUMPIFNOT R4 L1
+       8 [-]: GETIMPORT R4 5 [nil]
+       9 [-]: LOADK R5 K6 ["Job type not found"]
+      10 [-]: CALL R4 1 0  
+      11 [-]: RETURN R0 0  
+L 1:  12 [-]: GETIMPORT R4 9 [nil]
+      13 [-]: JUMPIF R4 L2 
+      14 [-]: NEWTABLE R4 0 0
+L 2:  15 [-]: GETIMPORT R5 10 [nil]
+      16 [-]: SETTABLEKS R4 R5 K8 ["DEBUG_JOBS"]
+      17 [-]: LOADN R7 1   
+      18 [-]: LENGTH R5 R4 
+      19 [-]: LOADN R6 1   
+      20 [-]: FORNPREP R5 L5
+L 3:  21 [-]: GETTABLE R9 R4 R7
+      22 [-]: GETTABLEKS R8 R9 K11 ["jobType"]
+      23 [-]: JUMPIFNOTEQ R8 R3 L4
+      24 [-]: RETURN R0 0  
+L 4:  25 [-]: FORNLOOP R5 L3
+L 5:  26 [-]: NEWTABLE R5 0 0
+      27 [-]: NEWTABLE R6 0 0
+      28 [-]: NAMECALL R7 R3 K12 [0xCE0D5E55]
+      29 [-]: CALL R7 1 1  
+      30 [-]: LOADN R10 1  
+      31 [-]: LENGTH R8 R7 
+      32 [-]: LOADN R9 1   
+      33 [-]: FORNPREP R8 L7
+L 6:  34 [-]: GETTABLE R13 R7 R10
+      35 [-]: GETTABLEKS R12 R13 K13 ["encounterChoices"]
+      36 [-]: GETIMPORT R13 15 [nil]
+      37 [-]: LOADN R14 1  
+      38 [-]: GETTABLE R17 R7 R10
+      39 [-]: GETTABLEKS R16 R17 K13 ["encounterChoices"]
+      40 [-]: LENGTH R15 R16
+      41 [-]: CALL R13 2 1 
+      42 [-]: GETTABLE R11 R12 R13
+      43 [-]: SETTABLE R11 R5 R10
+      44 [-]: LOADN R11 0  
+      45 [-]: SETTABLE R11 R6 R10
+      46 [-]: FORNLOOP R8 L6
+L 7:  47 [-]: DUPTABLE R10 34
+      48 [-]: NAMECALL R11 R3 K35 [0xED4E0128]
+      49 [-]: CALL R11 1 1 
+      50 [-]: SETTABLEKS R11 R10 K16 ["jobId"]
+      51 [-]: GETIMPORT R11 37 [nil]
+      52 [-]: GETIMPORT R12 39 [nil]
+      53 [-]: NAMECALL R13 R3 K40 [0xAF8359C4]
+      54 [-]: CALL R13 1 -1
+      55 [-]: CALL R12 -1 1
+      56 [-]: LOADNIL R13  
+      57 [-]: CALL R11 2 1 
+      58 [-]: SETTABLEKS R11 R10 K17 ["name"]
+      59 [-]: GETIMPORT R11 37 [nil]
+      60 [-]: GETIMPORT R12 39 [nil]
+      61 [-]: NAMECALL R13 R3 K41 [0x78BAE559]
+      62 [-]: CALL R13 1 -1
+      63 [-]: CALL R12 -1 1
+      64 [-]: LOADNIL R13  
+      65 [-]: CALL R11 2 1 
+      66 [-]: SETTABLEKS R11 R10 K18 ["desc"]
+      67 [-]: NAMECALL R11 R3 K42 [0x056DCF06]
+      68 [-]: CALL R11 1 1 
+      69 [-]: SETTABLEKS R11 R10 K19 ["icon"]
+      70 [-]: SETTABLEKS R5 R10 K20 ["stages"]
+      71 [-]: LOADNIL R11  
+      72 [-]: SETTABLEKS R11 R10 K21 ["reward"]
+      73 [-]: GETIMPORT R11 44 [nil]
+      74 [-]: GETIMPORT R12 15 [nil]
+      75 [-]: LOADN R13 0  
+      76 [-]: LOADK R14 K45 [1073741824]
+      77 [-]: CALL R12 2 -1
+      78 [-]: CALL R11 -1 1
+      79 [-]: SETTABLEKS R11 R10 K22 ["seed"]
+      80 [-]: SETTABLEKS R3 R10 K11 ["jobType"]
+      81 [-]: NAMECALL R11 R3 K35 [0xED4E0128]
+      82 [-]: CALL R11 1 1 
+      83 [-]: SETTABLEKS R11 R10 K23 ["jobTypeName"]
+      84 [-]: LOADN R11 0  
+      85 [-]: SETTABLEKS R11 R10 K24 ["masteryReq"]
+      86 [-]: GETIMPORT R12 48 [nil]
+      87 [-]: MOVE R13 R1  
+      88 [-]: CALL R12 1 1 
+      89 [-]: ORK R11 R12 K46 [15]
+      90 [-]: SETTABLEKS R11 R10 K25 ["minEnemyLevel"]
+      91 [-]: GETIMPORT R12 48 [nil]
+      92 [-]: MOVE R13 R2  
+      93 [-]: CALL R12 1 1 
+      94 [-]: ORK R11 R12 K49 [20]
+      95 [-]: SETTABLEKS R11 R10 K26 ["maxEnemyLevel"]
+      96 [-]: SETTABLEKS R6 R10 K27 ["xpAmounts"]
+      97 [-]: GETIMPORT R11 51 [nil]
+      98 [-]: SETTABLEKS R11 R10 K28 ["syndicateTag"]
+      99 [-]: NAMECALL R11 R3 K52 [0xE4C355E2]
+     100 [-]: CALL R11 1 1 
+     101 [-]: SETTABLEKS R11 R10 K29 ["transmissionSet"]
+     102 [-]: LOADB R11 1  
+     103 [-]: SETTABLEKS R11 R10 K30 ["skipInventoryUpdate"]
+     104 [-]: LOADNIL R11  
+     105 [-]: SETTABLEKS R11 R10 K31 ["expiry"]
+     106 [-]: LOADB R11 0  
+     107 [-]: SETTABLEKS R11 R10 K32 ["hasCompleted"]
+     108 [-]: LOADB R11 1  
+     109 [-]: SETTABLEKS R11 R10 K33 ["isDebug"]
+     110 [-]: FASTCALL2 52 R4 R10 L8
+     111 [-]: MOVE R9 R4   
+     112 [-]: GETIMPORT R8 55 [nil]
+     113 [-]: CALL R8 2 0  
+L 8: 114 [-]: GETIMPORT R8 10 [nil]
+     115 [-]: LOADB R9 1   
+     116 [-]: SETTABLEKS R9 R8 K56 ["RefreshJobs"]
+     117 [-]: RETURN R0 0  
+
 
 

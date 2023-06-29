@@ -1,252 +1,228 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
-; Max Stack Size:  9
+; Is_vararg:       1
+; Max Stack Size:  8
 
-  1 [-]: LOADK     R0 K0        ; R0 := "CamperHeistFishingEncounter"
-  2 [-]: LOADNIL   R1 R1        ; R1 := nil
-  3 [-]: CONST     R2 0         ; R2 := 0.000000
-  4 [-]: CONST     R3 0         ; R3 := 0.000000
-  5 [-]: LOADNIL   R4 R5        ; R4 := R5 := nil
-  6 [-]: CLOSURE   R6 0         ; R6 := closure(Function #1)
-  7 [-]: MOVE      R0 R1        ; R0 := R1
-  8 [-]: MOVE      R0 R2        ; R0 := R2
-  9 [-]: MOVE      R0 R3        ; R0 := R3
- 10 [-]: CLOSURE   R7 1         ; R7 := closure(Function #2)
- 11 [-]: MOVE      R0 R5        ; R0 := R5
- 12 [-]: CLOSURE   R8 2         ; R8 := closure(Function #3)
- 13 [-]: MOVE      R0 R1        ; R0 := R1
- 14 [-]: MOVE      R0 R4        ; R0 := R4
- 15 [-]: MOVE      R0 R5        ; R0 := R5
- 16 [-]: MOVE      R0 R3        ; R0 := R3
- 17 [-]: MOVE      R0 R0        ; R0 := R0
- 18 [-]: MOVE      R0 R6        ; R0 := R6
- 19 [-]: MOVE      R0 R7        ; R0 := R7
- 20 [-]: SETGLOBAL R8 K1        ; FishingMonitor := R8
- 21 [-]: RETURN    R0 1         ; return 
+            1 [-]: LOADNIL R0   
+       2 [-]: LOADN R1 0   
+       3 [-]: LOADN R2 0   
+       4 [-]: LOADNIL R3   
+       5 [-]: LOADNIL R4   
+       6 [-]: NEWCLOSURE R5 P0
+       7 [-]: MOVE R1 R0   
+       8 [-]: MOVE R1 R1   
+       9 [-]: MOVE R1 R2   
+      10 [-]: NEWCLOSURE R6 P1
+      11 [-]: MOVE R1 R4   
+      12 [-]: NEWCLOSURE R7 P2
+      13 [-]: MOVE R1 R0   
+      14 [-]: MOVE R1 R3   
+      15 [-]: MOVE R1 R4   
+      16 [-]: MOVE R1 R2   
+      17 [-]: MOVE R0 R5   
+      18 [-]: MOVE R0 R6   
+      19 [-]: SETGLOBAL R7 K0 ["FishingMonitor"]
+      20 [-]: CLOSEUPVALS R0
+      21 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 12
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  6
+; Max Stack Size:  9
 
-  1 [-]: GETGLOBAL R1 K0        ; R1 := 0x89326c93
-  2 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1[0x78298275]
-  3 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  4 [-]: SELF      R2 R1 K2     ; R3 := R1; R2 := R1[0x68d0cbed]
-  5 [-]: GETUPVAL  R4 U0        ; R4 := U0
-  6 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
-  7 [-]: GETUPVAL  R3 U0        ; R3 := U0
-  8 [-]: SELF      R3 R3 K3     ; R4 := R3; R3 := R3[0xde89cf48]
-  9 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 10 [-]: LE        0 R3 R2      ; if R3 > R2 then PC := 16
- 11 [-]: JMP       16           ; PC := 16
- 12 [-]: GETGLOBAL R2 K4        ; R2 := 0x3d106989
- 13 [-]: LOADK     R3 K5        ; R3 := "FishingMonitor.lua::FishCaughtCallback - Caught fish too far from trigger"
- 14 [-]: CALL      R2 2 1       ; R2(R3)
- 15 [-]: RETURN    R0 1         ; return 
- 16 [-]: GETUPVAL  R2 U1        ; R2 := U1
- 17 [-]: ADD       R2 R2 K6     ; R2 := R2 + 1.000000
- 18 [-]: SETUPVAL  R2 U1        ; U82 := R1
- 19 [-]: GETUPVAL  R2 U1        ; R2 := U1
- 20 [-]: GETUPVAL  R3 U2        ; R3 := U2
- 21 [-]: LE        0 R3 R2      ; if R3 > R2 then PC := 39
- 22 [-]: JMP       39           ; PC := 39
- 23 [-]: GETGLOBAL R2 K4        ; R2 := 0x3d106989
- 24 [-]: LOADK     R3 K7        ; R3 := "FishingMonitor.lua::FishCaughtCallback - Found "
- 25 [-]: GETGLOBAL R4 K8        ; R4 := 0x85feea7b
- 26 [-]: SELF      R4 R4 K9     ; R5 := R4; R4 := R4[0xed4e0128]
- 27 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 28 [-]: LOADK     R5 K10       ; R5 := "!"
- 29 [-]: CONCAT    R3 R3 R5     ; R3 := R3 .. R4 .. R5
- 30 [-]: CALL      R2 2 1       ; R2(R3)
- 31 [-]: SELF      R2 R1 K11    ; R3 := R1; R2 := R1[0x5e651723]
- 32 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 33 [-]: SELF      R2 R2 K12    ; R3 := R2; R2 := R2[0xcbae1596]
- 34 [-]: GETGLOBAL R4 K8        ; R4 := 0x85feea7b
- 35 [-]: CONST     R5 1         ; R5 := 1.000000
- 36 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
- 37 [-]: CONST     R2 0         ; R2 := 0.000000
- 38 [-]: SETUPVAL  R2 U1        ; U82 := R1
- 39 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R1 1 [nil]
+       1 [-]: NAMECALL R1 R1 K2 [0x78298275]
+       2 [-]: CALL R1 1 1  
+       3 [-]: GETUPVAL R4 0
+       4 [-]: NAMECALL R2 R1 K3 [0x68D0CBED]
+       5 [-]: CALL R2 2 1  
+       6 [-]: GETUPVAL R3 0
+       7 [-]: NAMECALL R3 R3 K4 [0xDE89CF48]
+       8 [-]: CALL R3 1 1  
+       9 [-]: JUMPIFNOTLE R3 R2 L0
+      10 [-]: GETIMPORT R2 6 [nil]
+      11 [-]: LOADK R3 K7 ["FishingMonitor.lua::FishCaughtCallback - Caught fish too far from trigger"]
+      12 [-]: CALL R2 1 0  
+      13 [-]: RETURN R0 0  
+L 0:  14 [-]: GETUPVAL R3 1
+      15 [-]: ADDK R2 R3 K8 [1]
+      16 [-]: SETUPVAL R2 1
+      17 [-]: GETUPVAL R2 1
+      18 [-]: GETUPVAL R3 2
+      19 [-]: JUMPIFNOTLE R3 R2 L1
+      20 [-]: GETIMPORT R2 6 [nil]
+      21 [-]: LOADK R4 K9 ["FishingMonitor.lua::FishCaughtCallback - Found "]
+      22 [-]: GETIMPORT R7 11 [nil]
+      23 [-]: NAMECALL R7 R7 K12 [0xED4E0128]
+      24 [-]: CALL R7 1 1  
+      25 [-]: MOVE R5 R7   
+      26 [-]: LOADK R6 K13 ["!"]
+      27 [-]: CONCAT R3 R4 R6
+      28 [-]: CALL R2 1 0  
+      29 [-]: NAMECALL R2 R1 K14 [0x5E651723]
+      30 [-]: CALL R2 1 1  
+      31 [-]: GETIMPORT R4 11 [nil]
+      32 [-]: LOADN R5 1   
+      33 [-]: NAMECALL R2 R2 K15 [0xCBAE1596]
+      34 [-]: CALL R2 3 0  
+      35 [-]: LOADN R2 0   
+      36 [-]: SETUPVAL R2 1
+L 1:  37 [-]: RETURN R0 0  
 
 
-; Function #2:
-;
 ; Name:            
 ; Defined at line: 28
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
-; Max Stack Size:  10
+; Max Stack Size:  9
 
-  1 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  2 [-]: SELF      R0 R0 K0     ; R1 := R0; R0 := R0[0xde321e6f]
-  3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: CONST     R1 1         ; R1 := 1.000000
-  5 [-]: SELF      R2 R0 K1     ; R3 := R0; R2 := R0[0x4056d183]
-  6 [-]: CONST     R4 0         ; R4 := 0.000000
-  7 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
-  8 [-]: CONST     R3 1         ; R3 := 1.000000
-  9 [-]: FORPREP   R1 32        ; R1 -= R3; PC := 32
- 10 [-]: SELF      R5 R0 K3     ; R6 := R0; R5 := R0[0xe6e56442]
- 11 [-]: SUB       R7 R4 K4     ; R7 := R4 - 1.000000
- 12 [-]: CONST     R8 0         ; R8 := 0.000000
- 13 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
- 14 [-]: GETGLOBAL R6 K5        ; R6 := 0x7b998233
- 15 [-]: MOVE      R7 R5        ; R7 := R5
- 16 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 17 [-]: TEST      R6 1         ; if R6 then PC := 32
- 18 [-]: JMP       32           ; PC := 32
- 19 [-]: SELF      R6 R5 K6     ; R7 := R5; R6 := R5[0xf2deaf69]
- 20 [-]: GETGLOBAL R8 K7        ; R8 := 0x97d5521c
- 21 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
- 22 [-]: TEST      R6 0         ; if not R6 then PC := 32
- 23 [-]: JMP       32           ; PC := 32
- 24 [-]: SELF      R6 R0 K8     ; R7 := R0; R6 := R0[0x3dc59189]
- 25 [-]: SUB       R8 R4 K4     ; R8 := R4 - 1.000000
- 26 [-]: CONST     R9 0         ; R9 := 0.000000
- 27 [-]: CALL      R6 4 2       ; R6 := R6(R7,R8,R9)
- 28 [-]: LT        0 K9 R6      ; if 0.000000 >= R6 then PC := 32
- 29 [-]: JMP       32           ; PC := 32
- 30 [-]: LOADKB    R6 1 0       ; R6 := true
- 31 [-]: RETURN    R6 2         ; return R6
- 32 [-]: FORLOOP   R1 10        ; R1 += R3; if R1 <= R2 then begin PC := 10; R4 := R1 end
- 33 [-]: LOADKB    R6 0 0       ; R6 := false
- 34 [-]: RETURN    R6 2         ; return R6
- 35 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETUPVAL R0 0
+       1 [-]: NAMECALL R0 R0 K0 [0xDE321E6F]
+       2 [-]: CALL R0 1 1  
+       3 [-]: LOADN R3 1   
+       4 [-]: LOADN R6 0   
+       5 [-]: NAMECALL R4 R0 K1 [0x4056D183]
+       6 [-]: CALL R4 2 1  
+       7 [-]: MOVE R1 R4   
+       8 [-]: LOADN R2 1   
+       9 [-]: FORNPREP R1 L3
+L 0:  10 [-]: SUBK R6 R3 K2 [1]
+      11 [-]: LOADN R7 0   
+      12 [-]: NAMECALL R4 R0 K3 [0xE6E56442]
+      13 [-]: CALL R4 3 1  
+      14 [-]: FASTCALL1 62 R4 L1
+      15 [-]: MOVE R6 R4   
+      16 [-]: GETIMPORT R5 5 [nil]
+      17 [-]: CALL R5 1 1  
+L 1:  18 [-]: JUMPIF R5 L2 
+      19 [-]: GETIMPORT R7 7 [nil]
+      20 [-]: NAMECALL R5 R4 K8 [0xF2DEAF69]
+      21 [-]: CALL R5 2 1  
+      22 [-]: JUMPIFNOT R5 L2
+      23 [-]: SUBK R7 R3 K2 [1]
+      24 [-]: LOADN R8 0   
+      25 [-]: NAMECALL R5 R0 K9 [0x3DC59189]
+      26 [-]: CALL R5 3 1  
+      27 [-]: LOADN R6 0   
+      28 [-]: JUMPIFNOTLT R6 R5 L2
+      29 [-]: LOADB R5 1   
+      30 [-]: RETURN R5 1  
+L 2:  31 [-]: FORNLOOP R1 L0
+L 3:  32 [-]: LOADB R1 0   
+      33 [-]: RETURN R1 1  
 
 
-; Function #3:
-;
 ; Name:            
 ; Defined at line: 41
-; #Upvalues:       7
+; #Upvalues:       6
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  6
+; Max Stack Size:  8
 
-  1 [-]: GETGLOBAL R1 K0        ; R1 := 0xf78db987
-  2 [-]: SETGLOBAL R1 K0        ; (0xf78db987) := R1
-  3 [-]: SETUPVAL  R0 U0        ; U82 := R0
-  4 [-]: GETGLOBAL R1 K1        ; R1 := _T
-  5 [-]: GETTABLE  R1 R1 K2     ; R1 := R1["gFishing"]
-  6 [-]: TEST      R1 0         ; if not R1 then PC := 13
-  7 [-]: JMP       13           ; PC := 13
-  8 [-]: GETGLOBAL R1 K1        ; R1 := _T
-  9 [-]: GETTABLE  R1 R1 K2     ; R1 := R1["gFishing"]
- 10 [-]: GETTABLE  R1 R1 K3     ; R1 := R1["levelData"]
- 11 [-]: TEST      R1 1         ; if R1 then PC := 17
- 12 [-]: JMP       17           ; PC := 17
- 13 [-]: GETGLOBAL R1 K4        ; R1 := 0xcbd666e1
- 14 [-]: CONST     R2 0         ; R2 := 0.000000
- 15 [-]: CALL      R1 2 1       ; R1(R2)
- 16 [-]: JMP       4            ; PC := 4
- 17 [-]: GETGLOBAL R1 K5        ; R1 := 0x89326c93
- 18 [-]: SELF      R1 R1 K6     ; R2 := R1; R1 := R1[0xfb64e76c]
- 19 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 20 [-]: SETUPVAL  R1 U1        ; U82 := R1
- 21 [-]: GETUPVAL  R1 U1        ; R1 := U1
- 22 [-]: SELF      R1 R1 K7     ; R2 := R1; R1 := R1[0xbb610e5b]
- 23 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 24 [-]: SETUPVAL  R1 U2        ; U82 := R2
- 25 [-]: GETGLOBAL R1 K8        ; R1 := 0x55730e1a
- 26 [-]: GETGLOBAL R2 K0        ; R2 := 0xf78db987
- 27 [-]: GETTABLE  R2 R2 K9     ; R2 := R2["minValue"]
- 28 [-]: GETGLOBAL R3 K0        ; R3 := 0xf78db987
- 29 [-]: GETTABLE  R3 R3 K10    ; R3 := R3["maxValue"]
- 30 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
- 31 [-]: SETUPVAL  R1 U3        ; U82 := R3
- 32 [-]: GETGLOBAL R1 K1        ; R1 := _T
- 33 [-]: GETTABLE  R1 R1 K2     ; R1 := R1["gFishing"]
- 34 [-]: GETTABLE  R1 R1 K3     ; R1 := R1["levelData"]
- 35 [-]: GETTABLE  R1 R1 K11    ; R1 := R1[0x5257a88e]
- 36 [-]: GETUPVAL  R2 U4        ; R2 := U4
- 37 [-]: GETUPVAL  R3 U5        ; R3 := U5
- 38 [-]: CALL      R1 3 1       ; R1(R2,R3)
- 39 [-]: SELF      R1 R0 K12    ; R2 := R0; R1 := R0[0xf37943ff]
- 40 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 41 [-]: TEST      R1 0         ; if not R1 then PC := 47
- 42 [-]: JMP       47           ; PC := 47
- 43 [-]: GETGLOBAL R1 K4        ; R1 := 0xcbd666e1
- 44 [-]: CONST     R2 0         ; R2 := 0.000000
- 45 [-]: CALL      R1 2 1       ; R1(R2)
- 46 [-]: JMP       39           ; PC := 39
- 47 [-]: GETGLOBAL R1 K13       ; R1 := 0xbe190284
- 48 [-]: SELF      R1 R1 K14    ; R2 := R1; R1 := R1[0x0eb34c69]
- 49 [-]: GETGLOBAL R3 K15       ; R3 := 0x0469f296
- 50 [-]: GETUPVAL  R4 U1        ; R4 := U1
- 51 [-]: SELF      R4 R4 K16    ; R5 := R4; R4 := R4[0x5ca33548]
- 52 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 53 [-]: LOADK     R5 K17       ; R5 := "ReceivedFreeSpear"
- 54 [-]: CONCAT    R4 R4 R5     ; R4 := R4 .. R5
- 55 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 56 [-]: CONST     R4 0         ; R4 := 0.000000
- 57 [-]: CALL      R1 4 2       ; R1 := R1(R2,R3,R4)
- 58 [-]: EQ        0 R1 K18     ; if R1 ~= 1.000000 then PC := 107
- 59 [-]: JMP       107          ; PC := 107
- 60 [-]: GETGLOBAL R1 K19       ; R1 := 0x3d106989
- 61 [-]: GETUPVAL  R2 U1        ; R2 := U1
- 62 [-]: SELF      R2 R2 K16    ; R3 := R2; R2 := R2[0x5ca33548]
- 63 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 64 [-]: LOADK     R3 K20       ; R3 := " Waiting for spear removal"
- 65 [-]: CONCAT    R2 R2 R3     ; R2 := R2 .. R3
- 66 [-]: CALL      R1 2 1       ; R1(R2)
- 67 [-]: GETGLOBAL R1 K21       ; R1 := 0x7b998233
- 68 [-]: GETUPVAL  R2 U2        ; R2 := U2
- 69 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 70 [-]: TEST      R1 1         ; if R1 then PC := 76
- 71 [-]: JMP       76           ; PC := 76
- 72 [-]: GETUPVAL  R1 U6        ; R1 := U6
- 73 [-]: CALL      R1 1 2       ; R1 := R1()
- 74 [-]: TEST      R1 0         ; if not R1 then PC := 93
- 75 [-]: JMP       93           ; PC := 93
- 76 [-]: GETGLOBAL R1 K4        ; R1 := 0xcbd666e1
- 77 [-]: CONST     R2 0         ; R2 := 0.500000
- 78 [-]: CALL      R1 2 1       ; R1(R2)
- 79 [-]: GETGLOBAL R1 K21       ; R1 := 0x7b998233
- 80 [-]: GETUPVAL  R2 U2        ; R2 := U2
- 81 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 82 [-]: TEST      R1 0         ; if not R1 then PC := 67
- 83 [-]: JMP       67           ; PC := 67
- 84 [-]: GETGLOBAL R1 K4        ; R1 := 0xcbd666e1
- 85 [-]: CONST     R2 0         ; R2 := 0.000000
- 86 [-]: CALL      R1 2 1       ; R1(R2)
- 87 [-]: GETUPVAL  R1 U1        ; R1 := U1
- 88 [-]: SELF      R1 R1 K7     ; R2 := R1; R1 := R1[0xbb610e5b]
- 89 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 90 [-]: SETUPVAL  R1 U2        ; U82 := R2
- 91 [-]: JMP       79           ; PC := 79
- 92 [-]: JMP       67           ; PC := 67
- 93 [-]: GETGLOBAL R1 K19       ; R1 := 0x3d106989
- 94 [-]: LOADK     R2 K22       ; R2 := "Spear removed from "
- 95 [-]: GETUPVAL  R3 U1        ; R3 := U1
- 96 [-]: SELF      R3 R3 K16    ; R4 := R3; R3 := R3[0x5ca33548]
- 97 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 98 [-]: CONCAT    R2 R2 R3     ; R2 := R2 .. R3
- 99 [-]: CALL      R1 2 1       ; R1(R2)
-100 [-]: GETUPVAL  R1 U2        ; R1 := U2
-101 [-]: SELF      R1 R1 K23    ; R2 := R1; R1 := R1[0xde321e6f]
-102 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-103 [-]: SELF      R1 R1 K24    ; R2 := R1; R1 := R1[0xa65fc8a8]
-104 [-]: LOADKB    R3 0 0       ; R3 := false
-105 [-]: LOADKB    R4 0 0       ; R4 := false
-106 [-]: CALL      R1 4 1       ; R1(R2,R3,R4)
-107 [-]: GETGLOBAL R1 K1        ; R1 := _T
-108 [-]: GETTABLE  R1 R1 K2     ; R1 := R1["gFishing"]
-109 [-]: GETTABLE  R1 R1 K3     ; R1 := R1["levelData"]
-110 [-]: GETTABLE  R1 R1 K25    ; R1 := R1[0xeef3683c]
-111 [-]: GETUPVAL  R2 U4        ; R2 := U4
-112 [-]: CALL      R1 2 1       ; R1(R2)
-113 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETGLOBAL R1 K0 [0xF78DB987]
+       1 [-]: SETGLOBAL R1 K0 [0xF78DB987]
+       2 [-]: SETUPVAL R0 0
+L 0:   3 [-]: GETIMPORT R1 3 [nil]
+       4 [-]: JUMPIFNOT R1 L1
+       5 [-]: GETIMPORT R1 5 [nil]
+       6 [-]: JUMPIF R1 L2 
+L 1:   7 [-]: GETIMPORT R1 7 [nil]
+       8 [-]: LOADN R2 0   
+       9 [-]: CALL R1 1 0  
+      10 [-]: JUMPBACK L0  
+L 2:  11 [-]: GETIMPORT R1 9 [nil]
+      12 [-]: NAMECALL R1 R1 K10 [0xFB64E76C]
+      13 [-]: CALL R1 1 1  
+      14 [-]: SETUPVAL R1 1
+      15 [-]: GETUPVAL R1 1
+      16 [-]: NAMECALL R1 R1 K11 [0xBB610E5B]
+      17 [-]: CALL R1 1 1  
+      18 [-]: SETUPVAL R1 2
+      19 [-]: GETIMPORT R1 13 [nil]
+      20 [-]: GETGLOBAL R3 K0 [0xF78DB987]
+      21 [-]: GETTABLEKS R2 R3 K14 ["minValue"]
+      22 [-]: GETGLOBAL R4 K0 [0xF78DB987]
+      23 [-]: GETTABLEKS R3 R4 K15 ["maxValue"]
+      24 [-]: CALL R1 2 1  
+      25 [-]: SETUPVAL R1 3
+      26 [-]: GETIMPORT R2 5 [nil]
+      27 [-]: GETTABLEKS R1 R2 K16 ["RegisterFishCaughtCallback"]
+      28 [-]: LOADK R2 K17 ["CamperHeistFishingEncounter"]
+      29 [-]: GETUPVAL R3 4
+      30 [-]: CALL R1 2 0  
+L 3:  31 [-]: NAMECALL R1 R0 K18 [0xF37943FF]
+      32 [-]: CALL R1 1 1  
+      33 [-]: JUMPIFNOT R1 L4
+      34 [-]: GETIMPORT R1 7 [nil]
+      35 [-]: LOADN R2 0   
+      36 [-]: CALL R1 1 0  
+      37 [-]: JUMPBACK L3  
+L 4:  38 [-]: GETUPVAL R1 1
+      39 [-]: NAMECALL R1 R1 K19 [0x5CA33548]
+      40 [-]: CALL R1 1 1  
+      41 [-]: GETIMPORT R2 21 [nil]
+      42 [-]: GETIMPORT R4 23 [nil]
+      43 [-]: MOVE R6 R1   
+      44 [-]: LOADK R7 K24 ["ReceivedFreeSpear"]
+      45 [-]: CONCAT R5 R6 R7
+      46 [-]: CALL R4 1 1  
+      47 [-]: LOADN R5 0   
+      48 [-]: NAMECALL R2 R2 K25 [0x0EB34C69]
+      49 [-]: CALL R2 3 1  
+      50 [-]: JUMPXEQKN R2 K26 L12 NOT [1]
+      51 [-]: GETIMPORT R2 28 [nil]
+      52 [-]: MOVE R4 R1   
+      53 [-]: LOADK R5 K29 [" Waiting for spear removal"]
+      54 [-]: CONCAT R3 R4 R5
+      55 [-]: CALL R2 1 0  
+L 5:  56 [-]: GETUPVAL R3 2
+      57 [-]: FASTCALL1 62 R3 L6
+      58 [-]: GETIMPORT R2 31 [nil]
+      59 [-]: CALL R2 1 1  
+L 6:  60 [-]: JUMPIF R2 L7 
+      61 [-]: GETUPVAL R2 5
+      62 [-]: CALL R2 0 1  
+      63 [-]: JUMPIFNOT R2 L11
+L 7:  64 [-]: GETIMPORT R2 7 [nil]
+      65 [-]: LOADK R3 K32 [0.5]
+      66 [-]: CALL R2 1 0  
+L 8:  67 [-]: GETUPVAL R3 2
+      68 [-]: FASTCALL1 62 R3 L9
+      69 [-]: GETIMPORT R2 31 [nil]
+      70 [-]: CALL R2 1 1  
+L 9:  71 [-]: JUMPIFNOT R2 L10
+      72 [-]: GETIMPORT R2 7 [nil]
+      73 [-]: LOADN R3 0   
+      74 [-]: CALL R2 1 0  
+      75 [-]: GETUPVAL R2 1
+      76 [-]: NAMECALL R2 R2 K11 [0xBB610E5B]
+      77 [-]: CALL R2 1 1  
+      78 [-]: SETUPVAL R2 2
+      79 [-]: JUMPBACK L8  
+L10:  80 [-]: JUMPBACK L5  
+L11:  81 [-]: GETIMPORT R2 28 [nil]
+      82 [-]: LOADK R4 K33 ["Spear removed from "]
+      83 [-]: MOVE R5 R1   
+      84 [-]: CONCAT R3 R4 R5
+      85 [-]: CALL R2 1 0  
+      86 [-]: GETUPVAL R2 2
+      87 [-]: NAMECALL R2 R2 K34 [0xDE321E6F]
+      88 [-]: CALL R2 1 1  
+      89 [-]: LOADB R4 0   
+      90 [-]: LOADB R5 0   
+      91 [-]: NAMECALL R2 R2 K35 [0xA65FC8A8]
+      92 [-]: CALL R2 3 0  
+L12:  93 [-]: GETIMPORT R3 5 [nil]
+      94 [-]: GETTABLEKS R2 R3 K36 ["UnrgisterFishCaughtCallback"]
+      95 [-]: LOADK R3 K17 ["CamperHeistFishingEncounter"]
+      96 [-]: CALL R2 1 0  
+      97 [-]: RETURN R0 0  
+
 
 

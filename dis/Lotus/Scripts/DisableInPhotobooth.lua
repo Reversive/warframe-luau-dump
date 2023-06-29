@@ -1,19 +1,15 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
-; Max Stack Size:  2
+; Is_vararg:       1
+; Max Stack Size:  1
 
-  1 [-]: CLOSURE   R0 0         ; R0 := closure(Function #1)
-  2 [-]: SETGLOBAL R0 K0        ; CheckAndDisable := R0
-  3 [-]: RETURN    R0 1         ; return 
+            1 [-]: DUPCLOSURE R0 K0 []
+       2 [-]: SETGLOBAL R0 K1 ["CheckAndDisable"]
+       3 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 3
 ; #Upvalues:       0
@@ -21,20 +17,20 @@
 ; Is_vararg:       0
 ; Max Stack Size:  3
 
-  1 [-]: GETGLOBAL R0 K0        ; R0 := 0xbe190284
-  2 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0xf2deaf69]
-  3 [-]: GETGLOBAL R2 K2        ; R2 := gLotusPhotoBoothGameRulesType
-  4 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
-  5 [-]: TEST      R0 0         ; if not R0 then PC := 15
-  6 [-]: JMP       15           ; PC := 15
-  7 [-]: GETGLOBAL R0 K3        ; R0 := 0x7b998233
-  8 [-]: GETGLOBAL R1 K4        ; R1 := 0x79f415dd
-  9 [-]: CALL      R0 2 2       ; R0 := R0(R1)
- 10 [-]: TEST      R0 1         ; if R0 then PC := 15
- 11 [-]: JMP       15           ; PC := 15
- 12 [-]: GETGLOBAL R0 K4        ; R0 := 0x79f415dd
- 13 [-]: SELF      R0 R0 K5     ; R1 := R0; R0 := R0[0xf4e253b6]
- 14 [-]: CALL      R0 2 1       ; R0(R1)
- 15 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R2 3 [nil]
+       2 [-]: NAMECALL R0 R0 K4 [0xF2DEAF69]
+       3 [-]: CALL R0 2 1  
+       4 [-]: JUMPIFNOT R0 L1
+       5 [-]: GETIMPORT R1 6 [nil]
+       6 [-]: FASTCALL1 62 R1 L0
+       7 [-]: GETIMPORT R0 8 [nil]
+       8 [-]: CALL R0 1 1  
+L 0:   9 [-]: JUMPIF R0 L1 
+      10 [-]: GETIMPORT R0 6 [nil]
+      11 [-]: NAMECALL R0 R0 K9 [0xF4E253B6]
+      12 [-]: CALL R0 1 0  
+L 1:  13 [-]: RETURN R0 0  
+
 
 

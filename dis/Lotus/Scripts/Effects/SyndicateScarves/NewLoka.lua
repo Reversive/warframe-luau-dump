@@ -1,125 +1,114 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
-; Max Stack Size:  2
+; Is_vararg:       1
+; Max Stack Size:  1
 
-  1 [-]: CLOSURE   R0 0         ; R0 := closure(Function #1)
-  2 [-]: SETGLOBAL R0 K0        ; MatchItemEvent := R0
-  3 [-]: RETURN    R0 1         ; return 
+            1 [-]: DUPCLOSURE R0 K0 []
+       2 [-]: SETGLOBAL R0 K1 ["MatchItemEvent"]
+       3 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
-; Max Stack Size:  16
+; Max Stack Size:  15
 
-  1 [-]: GETGLOBAL R3 K0        ; R3 := 0x7b998233
-  2 [-]: MOVE      R4 R0        ; R4 := R0
-  3 [-]: CALL      R3 2 2       ; R3 := R3(R4)
-  4 [-]: TEST      R3 0         ; if not R3 then PC := 7
-  5 [-]: JMP       7            ; PC := 7
-  6 [-]: RETURN    R0 1         ; return 
-  7 [-]: SELF      R3 R0 K1     ; R4 := R0; R3 := R0[0xbb610e5b]
-  8 [-]: CALL      R3 2 2       ; R3 := R3(R4)
-  9 [-]: GETGLOBAL R4 K0        ; R4 := 0x7b998233
- 10 [-]: MOVE      R5 R3        ; R5 := R3
- 11 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 12 [-]: TEST      R4 0         ; if not R4 then PC := 15
- 13 [-]: JMP       15           ; PC := 15
- 14 [-]: RETURN    R0 1         ; return 
- 15 [-]: GETGLOBAL R4 K0        ; R4 := 0x7b998233
- 16 [-]: MOVE      R5 R1        ; R5 := R1
- 17 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 18 [-]: TEST      R4 0         ; if not R4 then PC := 21
- 19 [-]: JMP       21           ; PC := 21
- 20 [-]: RETURN    R0 1         ; return 
- 21 [-]: GETGLOBAL R4 K2        ; R4 := 0x64fb1586
- 22 [-]: MOVE      R5 R1        ; R5 := R1
- 23 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 24 [-]: SELF      R5 R3 K3     ; R6 := R3; R5 := R3[0x5e651723]
- 25 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 26 [-]: GETGLOBAL R6 K0        ; R6 := 0x7b998233
- 27 [-]: MOVE      R7 R5        ; R7 := R5
- 28 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 29 [-]: TEST      R6 0         ; if not R6 then PC := 32
- 30 [-]: JMP       32           ; PC := 32
- 31 [-]: RETURN    R0 1         ; return 
- 32 [-]: SELF      R6 R5 K4     ; R7 := R5; R6 := R5[0x5ca33548]
- 33 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 34 [-]: GETGLOBAL R7 K5        ; R7 := _T
- 35 [-]: GETTABLE  R7 R7 K6     ; R7 := R7["NewLokaEffects"]
- 36 [-]: EQ        0 R7 K7      ; if R7 ~= nil then PC := 41
- 37 [-]: JMP       41           ; PC := 41
- 38 [-]: GETGLOBAL R7 K5        ; R7 := _T
- 39 [-]: NEWTABLE  R8 0 0       ; R8 := {}
- 40 [-]: SETTABLE  R7 K6 R8     ; R7["NewLokaEffects"] := R8
- 41 [-]: GETGLOBAL R7 K5        ; R7 := _T
- 42 [-]: GETTABLE  R7 R7 K6     ; R7 := R7["NewLokaEffects"]
- 43 [-]: GETTABLE  R7 R7 R6     ; R7 := R7[R6]
- 44 [-]: EQ        0 R7 K7      ; if R7 ~= nil then PC := 54
- 45 [-]: JMP       54           ; PC := 54
- 46 [-]: GETGLOBAL R7 K5        ; R7 := _T
- 47 [-]: GETTABLE  R7 R7 K6     ; R7 := R7["NewLokaEffects"]
- 48 [-]: NEWTABLE  R8 0 3       ; R8 := {}
- 49 [-]: SETTABLE  R8 K8 K9     ; R8["Flash"] := 0.000000
- 50 [-]: SETTABLE  R8 K10 K9    ; R8["Total"] := 0.000000
- 51 [-]: NEWTABLE  R9 0 0       ; R9 := {}
- 52 [-]: SETTABLE  R8 K11 R9    ; R8["Parts"] := R9
- 53 [-]: SETTABLE  R7 R6 R8     ; R7[R6] := R8
- 54 [-]: GETGLOBAL R7 K5        ; R7 := _T
- 55 [-]: GETTABLE  R7 R7 K6     ; R7 := R7["NewLokaEffects"]
- 56 [-]: GETTABLE  R7 R7 R6     ; R7 := R7[R6]
- 57 [-]: SETTABLE  R7 K8 K12    ; R7["Flash"] := 3.000000
- 58 [-]: GETGLOBAL R7 K5        ; R7 := _T
- 59 [-]: GETTABLE  R7 R7 K6     ; R7 := R7["NewLokaEffects"]
- 60 [-]: GETTABLE  R7 R7 R6     ; R7 := R7[R6]
- 61 [-]: GETGLOBAL R8 K5        ; R8 := _T
- 62 [-]: GETTABLE  R8 R8 K6     ; R8 := R8["NewLokaEffects"]
- 63 [-]: GETTABLE  R8 R8 R6     ; R8 := R8[R6]
- 64 [-]: GETTABLE  R8 R8 K10    ; R8 := R8["Total"]
- 65 [-]: ADD       R8 R8 K13    ; R8 := R8 + 1.000000
- 66 [-]: SETTABLE  R7 K10 R8    ; R7["Total"] := R8
- 67 [-]: LOADKB    R7 0 0       ; R7 := false
- 68 [-]: GETGLOBAL R8 K14       ; R8 := 0xc8802016
- 69 [-]: GETGLOBAL R9 K5        ; R9 := _T
- 70 [-]: GETTABLE  R9 R9 K6     ; R9 := R9["NewLokaEffects"]
- 71 [-]: GETTABLE  R9 R9 R6     ; R9 := R9[R6]
- 72 [-]: GETTABLE  R9 R9 K11    ; R9 := R9["Parts"]
- 73 [-]: CALL      R8 2 4       ; R8,R9,R10 := R8(R9)
- 74 [-]: JMP       83           ; PC := 83
- 75 [-]: GETTABLE  R13 R12 K15  ; R13 := R12["Type"]
- 76 [-]: EQ        0 R13 R4     ; if R13 ~= R4 then PC := 83
- 77 [-]: JMP       83           ; PC := 83
- 78 [-]: SETTABLE  R12 K8 K12   ; R12["Flash"] := 3.000000
- 79 [-]: GETTABLE  R13 R12 K10  ; R13 := R12["Total"]
- 80 [-]: ADD       R13 R13 K13  ; R13 := R13 + 1.000000
- 81 [-]: SETTABLE  R12 K10 R13  ; R12["Total"] := R13
- 82 [-]: LOADKB    R7 1 0       ; R7 := true
- 83 [-]: TFORLOOP  R8 2         ; R11,R12 :=  R8(R9,R10); if R11 ~= nil then begin PC = 75; R10 := R11 end
- 84 [-]: JMP       75           ; PC := 75
- 85 [-]: TEST      R7 1         ; if R7 then PC := 98
- 86 [-]: JMP       98           ; PC := 98
- 87 [-]: GETGLOBAL R13 K16      ; R13 := 0x33bdd652
- 88 [-]: GETTABLE  R13 R13 K17  ; R13 := R13[0x23d5322f]
- 89 [-]: GETGLOBAL R14 K5       ; R14 := _T
- 90 [-]: GETTABLE  R14 R14 K6   ; R14 := R14["NewLokaEffects"]
- 91 [-]: GETTABLE  R14 R14 R6   ; R14 := R14[R6]
- 92 [-]: GETTABLE  R14 R14 K11  ; R14 := R14["Parts"]
- 93 [-]: NEWTABLE  R15 0 3      ; R15 := {}
- 94 [-]: SETTABLE  R15 K15 R4   ; R15["Type"] := R4
- 95 [-]: SETTABLE  R15 K8 K12   ; R15["Flash"] := 3.000000
- 96 [-]: SETTABLE  R15 K10 K13  ; R15["Total"] := 1.000000
- 97 [-]: CALL      R13 3 1      ; R13(R14,R15)
- 98 [-]: LOADKB    R13 1 0      ; R13 := true
- 99 [-]: RETURN    R13 2        ; return R13
-100 [-]: RETURN    R0 1         ; return 
+       0 [-]: FASTCALL1 62 R0 L0
+       1 [-]: MOVE R4 R0   
+       2 [-]: GETIMPORT R3 1 [nil]
+       3 [-]: CALL R3 1 1  
+L 0:   4 [-]: JUMPIFNOT R3 L1
+       5 [-]: RETURN R0 0  
+L 1:   6 [-]: NAMECALL R3 R0 K2 [0xBB610E5B]
+       7 [-]: CALL R3 1 1  
+       8 [-]: FASTCALL1 62 R3 L2
+       9 [-]: MOVE R5 R3   
+      10 [-]: GETIMPORT R4 1 [nil]
+      11 [-]: CALL R4 1 1  
+L 2:  12 [-]: JUMPIFNOT R4 L3
+      13 [-]: RETURN R0 0  
+L 3:  14 [-]: FASTCALL1 62 R1 L4
+      15 [-]: MOVE R5 R1   
+      16 [-]: GETIMPORT R4 1 [nil]
+      17 [-]: CALL R4 1 1  
+L 4:  18 [-]: JUMPIFNOT R4 L5
+      19 [-]: RETURN R0 0  
+L 5:  20 [-]: GETIMPORT R4 4 [nil]
+      21 [-]: MOVE R5 R1   
+      22 [-]: CALL R4 1 1  
+      23 [-]: NAMECALL R5 R3 K5 [0x5E651723]
+      24 [-]: CALL R5 1 1  
+      25 [-]: FASTCALL1 62 R5 L6
+      26 [-]: MOVE R7 R5   
+      27 [-]: GETIMPORT R6 1 [nil]
+      28 [-]: CALL R6 1 1  
+L 6:  29 [-]: JUMPIFNOT R6 L7
+      30 [-]: RETURN R0 0  
+L 7:  31 [-]: NAMECALL R6 R5 K6 [0x5CA33548]
+      32 [-]: CALL R6 1 1  
+      33 [-]: GETIMPORT R7 9 [nil]
+      34 [-]: JUMPXEQKNIL R7 L8 NOT
+      35 [-]: GETIMPORT R7 10 [nil]
+      36 [-]: NEWTABLE R8 0 0
+      37 [-]: SETTABLEKS R8 R7 K8 ["NewLokaEffects"]
+L 8:  38 [-]: GETIMPORT R8 9 [nil]
+      39 [-]: GETTABLE R7 R8 R6
+      40 [-]: JUMPXEQKNIL R7 L9 NOT
+      41 [-]: GETIMPORT R7 9 [nil]
+      42 [-]: DUPTABLE R8 14
+      43 [-]: LOADN R9 0   
+      44 [-]: SETTABLEKS R9 R8 K11 ["Flash"]
+      45 [-]: LOADN R9 0   
+      46 [-]: SETTABLEKS R9 R8 K12 ["Total"]
+      47 [-]: NEWTABLE R9 0 0
+      48 [-]: SETTABLEKS R9 R8 K13 ["Parts"]
+      49 [-]: SETTABLE R8 R7 R6
+L 9:  50 [-]: GETIMPORT R8 9 [nil]
+      51 [-]: GETTABLE R7 R8 R6
+      52 [-]: LOADN R8 3   
+      53 [-]: SETTABLEKS R8 R7 K11 ["Flash"]
+      54 [-]: GETIMPORT R8 9 [nil]
+      55 [-]: GETTABLE R7 R8 R6
+      56 [-]: GETIMPORT R11 9 [nil]
+      57 [-]: GETTABLE R10 R11 R6
+      58 [-]: GETTABLEKS R9 R10 K12 ["Total"]
+      59 [-]: ADDK R8 R9 K15 [1]
+      60 [-]: SETTABLEKS R8 R7 K12 ["Total"]
+      61 [-]: LOADB R7 0   
+      62 [-]: GETIMPORT R8 17 [nil]
+      63 [-]: GETIMPORT R12 9 [nil]
+      64 [-]: GETTABLE R11 R12 R6
+      65 [-]: GETTABLEKS R9 R11 K13 ["Parts"]
+      66 [-]: CALL R8 1 3  
+      67 [-]: FORGPREP_INEXT R8 L11
+L10:  68 [-]: GETTABLEKS R13 R12 K18 ["Type"]
+      69 [-]: JUMPIFNOTEQ R13 R4 L11
+      70 [-]: LOADN R13 3  
+      71 [-]: SETTABLEKS R13 R12 K11 ["Flash"]
+      72 [-]: GETTABLEKS R14 R12 K12 ["Total"]
+      73 [-]: ADDK R13 R14 K15 [1]
+      74 [-]: SETTABLEKS R13 R12 K12 ["Total"]
+      75 [-]: LOADB R7 1   
+L11:  76 [-]: FORGLOOP R8 L10 2 [inext]
+      77 [-]: JUMPIF R7 L12
+      78 [-]: GETIMPORT R11 9 [nil]
+      79 [-]: GETTABLE R10 R11 R6
+      80 [-]: GETTABLEKS R9 R10 K13 ["Parts"]
+      81 [-]: DUPTABLE R10 19
+      82 [-]: SETTABLEKS R4 R10 K18 ["Type"]
+      83 [-]: LOADN R11 3  
+      84 [-]: SETTABLEKS R11 R10 K11 ["Flash"]
+      85 [-]: LOADN R11 1  
+      86 [-]: SETTABLEKS R11 R10 K12 ["Total"]
+      87 [-]: FASTCALL2 52 R9 R10 L12
+      88 [-]: GETIMPORT R8 22 [nil]
+      89 [-]: CALL R8 2 0  
+L12:  90 [-]: LOADB R8 1   
+      91 [-]: RETURN R8 1  
+
 
 

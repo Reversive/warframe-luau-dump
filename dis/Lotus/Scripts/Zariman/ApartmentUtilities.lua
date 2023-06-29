@@ -1,187 +1,168 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
+; Is_vararg:       1
 ; Max Stack Size:  3
 
-  1 [-]: GETGLOBAL R0 K0        ; R0 := 0xaeabecda
-  2 [-]: VARARG    R1 R2        ; R1 := R2 := ...
-  3 [-]: GETGLOBAL R2 K1        ; R2 := package
-  4 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["seeall"]
-  5 [-]: CALL      R0 3 1       ; R0(R1,R2)
-  6 [-]: GETGLOBAL R0 K3        ; R0 := 0x0469f296
-  7 [-]: LOADK     R1 K4        ; R1 := "VideoWall"
-  8 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  9 [-]: GETGLOBAL R1 K3        ; R1 := 0x0469f296
- 10 [-]: LOADK     R2 K5        ; R2 := "ApartmentSoundscape"
- 11 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 12 [-]: CLOSURE   R2 0         ; R2 := closure(Function #1)
- 13 [-]: MOVE      R0 R0        ; R0 := R0
- 14 [-]: SETGLOBAL R2 K6        ; ApplySkybox := R2
- 15 [-]: CLOSURE   R2 1         ; R2 := closure(Function #2)
- 16 [-]: MOVE      R0 R1        ; R0 := R1
- 17 [-]: SETGLOBAL R2 K7        ; ApplySoundscape := R2
- 18 [-]: CLOSURE   R2 2         ; R2 := closure(Function #3)
- 19 [-]: SETGLOBAL R2 K8        ; CleanUpGlobals := R2
- 20 [-]: RETURN    R0 1         ; return 
+            1 [-]: GETIMPORT R0 1 [nil]
+       2 [-]: GETVARARGS R1 1
+       3 [-]: GETIMPORT R2 4 [nil]
+       4 [-]: CALL R0 2 0  
+       5 [-]: GETIMPORT R0 6 [nil]
+       6 [-]: LOADK R1 K7 ["VideoWall"]
+       7 [-]: CALL R0 1 1  
+       8 [-]: GETIMPORT R1 6 [nil]
+       9 [-]: LOADK R2 K8 ["ApartmentSoundscape"]
+      10 [-]: CALL R1 1 1  
+      11 [-]: DUPCLOSURE R2 K9 []
+      12 [-]: MOVE R0 R0   
+      13 [-]: SETGLOBAL R2 K10 ["ApplySkybox"]
+      14 [-]: DUPCLOSURE R2 K11 []
+      15 [-]: MOVE R0 R1   
+      16 [-]: SETGLOBAL R2 K12 ["ApplySoundscape"]
+      17 [-]: DUPCLOSURE R2 K13 []
+      18 [-]: SETGLOBAL R2 K14 ["CleanUpGlobals"]
+      19 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 6
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  14
+; Max Stack Size:  11
 
-  1 [-]: GETGLOBAL R3 K0        ; R3 := EMPTY_SYMBOL
-  2 [-]: LOADNIL   R4 R4        ; R4 := nil
-  3 [-]: GETGLOBAL R5 K1        ; R5 := 0x7b998233
-  4 [-]: MOVE      R6 R0        ; R6 := R0
-  5 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-  6 [-]: TEST      R5 1         ; if R5 then PC := 14
-  7 [-]: JMP       14           ; PC := 14
-  8 [-]: SELF      R5 R0 K2     ; R6 := R0; R5 := R0[0x3fa26d2d]
-  9 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 10 [-]: MOVE      R3 R5        ; R3 := R5
- 11 [-]: SELF      R5 R0 K3     ; R6 := R0; R5 := R0[0x6f087df5]
- 12 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 13 [-]: MOVE      R4 R5        ; R4 := R5
- 14 [-]: GETGLOBAL R5 K4        ; R5 := _T
- 15 [-]: GETTABLE  R5 R5 K5     ; R5 := R5["VideoWallZoneAttribs"]
- 16 [-]: LEN       R5 R5        ; R5 := # R5
- 17 [-]: EQ        0 R5 K6      ; if R5 ~= 0.000000 then PC := 25
- 18 [-]: JMP       25           ; PC := 25
- 19 [-]: GETGLOBAL R5 K4        ; R5 := _T
- 20 [-]: GETGLOBAL R6 K7        ; R6 := 0x89326c93
- 21 [-]: SELF      R6 R6 K8     ; R7 := R6; R6 := R6[0xfb669000]
- 22 [-]: GETGLOBAL R8 K9        ; R8 := gZoneAttribsType
- 23 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
- 24 [-]: SETTABLE  R5 K5 R6     ; R5["VideoWallZoneAttribs"] := R6
- 25 [-]: CONST     R5 1         ; R5 := 1.000000
- 26 [-]: GETGLOBAL R6 K4        ; R6 := _T
- 27 [-]: GETTABLE  R6 R6 K5     ; R6 := R6["VideoWallZoneAttribs"]
- 28 [-]: LEN       R6 R6        ; R6 := # R6
- 29 [-]: CONST     R7 1         ; R7 := 1.000000
- 30 [-]: FORPREP   R5 50        ; R5 -= R7; PC := 50
- 31 [-]: GETGLOBAL R9 K4        ; R9 := _T
- 32 [-]: GETTABLE  R9 R9 K5     ; R9 := R9["VideoWallZoneAttribs"]
- 33 [-]: GETTABLE  R9 R9 R8     ; R9 := R9[R8]
- 34 [-]: SELF      R10 R9 K10   ; R11 := R9; R10 := R9[0x3fe65a58]
- 35 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 36 [-]: TEST      R10 0        ; if not R10 then PC := 44
- 37 [-]: JMP       44           ; PC := 44
- 38 [-]: SELF      R10 R9 K11   ; R11 := R9; R10 := R9[0xefe29e59]
- 39 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 40 [-]: EQ        0 R10 R3     ; if R10 ~= R3 then PC := 44
- 41 [-]: JMP       44           ; PC := 44
- 42 [-]: MOVE      R1 R9        ; R1 := R9
- 43 [-]: JMP       50           ; PC := 50
- 44 [-]: SELF      R10 R9 K12   ; R11 := R9; R10 := R9[0x22da1852]
- 45 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 46 [-]: GETUPVAL  R11 U0       ; R11 := U0
- 47 [-]: EQ        0 R10 R11    ; if R10 ~= R11 then PC := 50
- 48 [-]: JMP       50           ; PC := 50
- 49 [-]: MOVE      R2 R9        ; R2 := R9
- 50 [-]: FORLOOP   R5 31        ; R5 += R7; if R5 <= R6 then begin PC := 31; R8 := R5 end
- 51 [-]: GETGLOBAL R10 K1       ; R10 := 0x7b998233
- 52 [-]: MOVE      R11 R2       ; R11 := R2
- 53 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 54 [-]: TEST      R10 0        ; if not R10 then PC := 60
- 55 [-]: JMP       60           ; PC := 60
- 56 [-]: GETGLOBAL R10 K13      ; R10 := 0x3d106989
- 57 [-]: LOADK     R11 K14      ; R11 := "Couldn't find ZoneAttribs for video wall!"
- 58 [-]: CALL      R10 2 1      ; R10(R11)
- 59 [-]: RETURN    R0 1         ; return 
- 60 [-]: GETGLOBAL R10 K4       ; R10 := _T
- 61 [-]: GETTABLE  R10 R10 K15  ; R10 := R10["VideoWallDefaults"]
- 62 [-]: EQ        0 R10 K16    ; if R10 ~= nil then PC := 75
- 63 [-]: JMP       75           ; PC := 75
- 64 [-]: GETGLOBAL R10 K4       ; R10 := _T
- 65 [-]: NEWTABLE  R11 0 2      ; R11 := {}
- 66 [-]: SELF      R12 R2 K18   ; R13 := R2; R12 := R2[0xb2945c0d]
- 67 [-]: CALL      R12 2 2      ; R12 := R12(R13)
- 68 [-]: SETTABLE  R11 K17 R12  ; R11["BackdropId"] := R12
- 69 [-]: SELF      R12 R2 K20   ; R13 := R2; R12 := R2[0xe79e7ef4]
- 70 [-]: CALL      R12 2 2      ; R12 := R12(R13)
- 71 [-]: SELF      R12 R12 K21  ; R13 := R12; R12 := R12[0x0cf8dd50]
- 72 [-]: CALL      R12 2 2      ; R12 := R12(R13)
- 73 [-]: SETTABLE  R11 K19 R12  ; R11["BackdropZone"] := R12
- 74 [-]: SETTABLE  R10 K15 R11  ; R10["VideoWallDefaults"] := R11
- 75 [-]: GETGLOBAL R10 K1       ; R10 := 0x7b998233
- 76 [-]: MOVE      R11 R0       ; R11 := R0
- 77 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 78 [-]: TEST      R10 0        ; if not R10 then PC := 93
- 79 [-]: JMP       93           ; PC := 93
- 80 [-]: SELF      R10 R2 K22   ; R11 := R2; R10 := R2[0x7e070e71]
- 81 [-]: GETGLOBAL R12 K4       ; R12 := _T
- 82 [-]: GETTABLE  R12 R12 K15  ; R12 := R12["VideoWallDefaults"]
- 83 [-]: GETTABLE  R12 R12 K17  ; R12 := R12["BackdropId"]
- 84 [-]: CALL      R10 3 1      ; R10(R11,R12)
- 85 [-]: SELF      R10 R2 K20   ; R11 := R2; R10 := R2[0xe79e7ef4]
- 86 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 87 [-]: SELF      R10 R10 K23  ; R11 := R10; R10 := R10[0xad92127c]
- 88 [-]: GETGLOBAL R12 K4       ; R12 := _T
- 89 [-]: GETTABLE  R12 R12 K15  ; R12 := R12["VideoWallDefaults"]
- 90 [-]: GETTABLE  R12 R12 K19  ; R12 := R12["BackdropZone"]
- 91 [-]: CALL      R10 3 1      ; R10(R11,R12)
- 92 [-]: JMP       116          ; PC := 116
- 93 [-]: GETGLOBAL R10 K1       ; R10 := 0x7b998233
- 94 [-]: MOVE      R11 R1       ; R11 := R1
- 95 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 96 [-]: TEST      R10 0        ; if not R10 then PC := 106
- 97 [-]: JMP       106          ; PC := 106
- 98 [-]: GETGLOBAL R10 K13      ; R10 := 0x3d106989
- 99 [-]: LOADK     R11 K24      ; R11 := "Couldn't find ZoneAttribs for backdrop "
-100 [-]: GETGLOBAL R12 K25      ; R12 := 0x64fb1586
-101 [-]: MOVE      R13 R3       ; R13 := R3
-102 [-]: CALL      R12 2 2      ; R12 := R12(R13)
-103 [-]: CONCAT    R11 R11 R12  ; R11 := R11 .. R12
-104 [-]: CALL      R10 2 1      ; R10(R11)
-105 [-]: RETURN    R0 1         ; return 
-106 [-]: SELF      R10 R2 K22   ; R11 := R2; R10 := R2[0x7e070e71]
-107 [-]: SELF      R12 R1 K11   ; R13 := R1; R12 := R1[0xefe29e59]
-108 [-]: CALL      R12 2 0      ; R12,... := R12(R13)
-109 [-]: CALL      R10 0 1      ; R10(R11,...)
-110 [-]: SELF      R10 R2 K20   ; R11 := R2; R10 := R2[0xe79e7ef4]
-111 [-]: CALL      R10 2 2      ; R10 := R10(R11)
-112 [-]: SELF      R10 R10 K23  ; R11 := R10; R10 := R10[0xad92127c]
-113 [-]: SELF      R12 R1 K20   ; R13 := R1; R12 := R1[0xe79e7ef4]
-114 [-]: CALL      R12 2 0      ; R12,... := R12(R13)
-115 [-]: CALL      R10 0 1      ; R10(R11,...)
-116 [-]: GETGLOBAL R10 K4       ; R10 := _T
-117 [-]: GETTABLE  R10 R10 K26  ; R10 := R10["VideoWallEndColor"]
-118 [-]: EQ        1 R10 K16    ; if R10 == nil then PC := 124
-119 [-]: JMP       124          ; PC := 124
-120 [-]: GETGLOBAL R10 K4       ; R10 := _T
-121 [-]: GETGLOBAL R11 K4       ; R11 := _T
-122 [-]: GETTABLE  R11 R11 K26  ; R11 := R11["VideoWallEndColor"]
-123 [-]: SETTABLE  R10 K27 R11  ; R10["VideoWallStartColor"] := R11
-124 [-]: GETGLOBAL R10 K4       ; R10 := _T
-125 [-]: SETTABLE  R10 K26 R4   ; R10["VideoWallEndColor"] := R4
-126 [-]: GETGLOBAL R10 K7       ; R10 := 0x89326c93
-127 [-]: SELF      R10 R10 K28  ; R11 := R10; R10 := R10[0x46a0ebf5]
-128 [-]: GETGLOBAL R12 K29      ; R12 := 0x0469f296
-129 [-]: LOADK     R13 K30      ; R13 := "VideowallLightChange"
-130 [-]: CALL      R12 2 0      ; R12,... := R12(R13)
-131 [-]: CALL      R10 0 2      ; R10 := R10(R11,...)
-132 [-]: GETGLOBAL R11 K1       ; R11 := 0x7b998233
-133 [-]: MOVE      R12 R10      ; R12 := R10
-134 [-]: CALL      R11 2 2      ; R11 := R11(R12)
-135 [-]: TEST      R11 1        ; if R11 then PC := 140
-136 [-]: JMP       140          ; PC := 140
-137 [-]: SELF      R11 R10 K31  ; R12 := R10; R11 := R10[0x8eb2112d]
-138 [-]: LOADK     R13 K32      ; R13 := "Execute"
-139 [-]: CALL      R11 3 1      ; R11(R12,R13)
-140 [-]: RETURN    R0 1         ; return 
+       0 [-]: LOADNIL R1   
+       1 [-]: LOADNIL R2   
+       2 [-]: GETIMPORT R3 1 [nil]
+       3 [-]: LOADNIL R4   
+       4 [-]: FASTCALL1 62 R0 L0
+       5 [-]: MOVE R6 R0   
+       6 [-]: GETIMPORT R5 3 [nil]
+       7 [-]: CALL R5 1 1  
+L 0:   8 [-]: JUMPIF R5 L1 
+       9 [-]: NAMECALL R5 R0 K4 [0x3FA26D2D]
+      10 [-]: CALL R5 1 1  
+      11 [-]: MOVE R3 R5   
+      12 [-]: NAMECALL R5 R0 K5 [0x6F087DF5]
+      13 [-]: CALL R5 1 1  
+      14 [-]: MOVE R4 R5   
+L 1:  15 [-]: GETIMPORT R6 8 [nil]
+      16 [-]: LENGTH R5 R6 
+      17 [-]: JUMPXEQKN R5 K9 L2 NOT [0]
+      18 [-]: GETIMPORT R5 10 [nil]
+      19 [-]: GETIMPORT R6 12 [nil]
+      20 [-]: GETIMPORT R8 14 [nil]
+      21 [-]: NAMECALL R6 R6 K15 [0xFB669000]
+      22 [-]: CALL R6 2 1  
+      23 [-]: SETTABLEKS R6 R5 K7 ["VideoWallZoneAttribs"]
+L 2:  24 [-]: LOADN R7 1   
+      25 [-]: GETIMPORT R8 8 [nil]
+      26 [-]: LENGTH R5 R8 
+      27 [-]: LOADN R6 1   
+      28 [-]: FORNPREP R5 L6
+L 3:  29 [-]: GETIMPORT R9 8 [nil]
+      30 [-]: GETTABLE R8 R9 R7
+      31 [-]: NAMECALL R9 R8 K16 [0x3FE65A58]
+      32 [-]: CALL R9 1 1  
+      33 [-]: JUMPIFNOT R9 L4
+      34 [-]: NAMECALL R9 R8 K17 [0xEFE29E59]
+      35 [-]: CALL R9 1 1  
+      36 [-]: JUMPIFNOTEQ R9 R3 L4
+      37 [-]: MOVE R1 R8   
+      38 [-]: JUMP L5
+     
+L 4:  39 [-]: NAMECALL R9 R8 K18 [0x22DA1852]
+      40 [-]: CALL R9 1 1  
+      41 [-]: GETUPVAL R10 0
+      42 [-]: JUMPIFNOTEQ R9 R10 L5
+      43 [-]: MOVE R2 R8   
+L 5:  44 [-]: FORNLOOP R5 L3
+L 6:  45 [-]: FASTCALL1 62 R2 L7
+      46 [-]: MOVE R6 R2   
+      47 [-]: GETIMPORT R5 3 [nil]
+      48 [-]: CALL R5 1 1  
+L 7:  49 [-]: JUMPIFNOT R5 L8
+      50 [-]: GETIMPORT R5 20 [nil]
+      51 [-]: LOADK R6 K21 ["Couldn't find ZoneAttribs for video wall!"]
+      52 [-]: CALL R5 1 0  
+      53 [-]: RETURN R0 0  
+L 8:  54 [-]: GETIMPORT R5 23 [nil]
+      55 [-]: JUMPXEQKNIL R5 L9 NOT
+      56 [-]: GETIMPORT R5 10 [nil]
+      57 [-]: DUPTABLE R6 26
+      58 [-]: NAMECALL R7 R2 K27 [0xB2945C0D]
+      59 [-]: CALL R7 1 1  
+      60 [-]: SETTABLEKS R7 R6 K24 ["BackdropId"]
+      61 [-]: NAMECALL R7 R2 K28 [0xE79E7EF4]
+      62 [-]: CALL R7 1 1  
+      63 [-]: NAMECALL R7 R7 K29 [0x0CF8DD50]
+      64 [-]: CALL R7 1 1  
+      65 [-]: SETTABLEKS R7 R6 K25 ["BackdropZone"]
+      66 [-]: SETTABLEKS R6 R5 K22 ["VideoWallDefaults"]
+L 9:  67 [-]: FASTCALL1 62 R0 L10
+      68 [-]: MOVE R6 R0   
+      69 [-]: GETIMPORT R5 3 [nil]
+      70 [-]: CALL R5 1 1  
+L10:  71 [-]: JUMPIFNOT R5 L11
+      72 [-]: GETIMPORT R7 30 [nil]
+      73 [-]: NAMECALL R5 R2 K31 [0x7E070E71]
+      74 [-]: CALL R5 2 0  
+      75 [-]: NAMECALL R5 R2 K28 [0xE79E7EF4]
+      76 [-]: CALL R5 1 1  
+      77 [-]: GETIMPORT R7 32 [nil]
+      78 [-]: NAMECALL R5 R5 K33 [0xAD92127C]
+      79 [-]: CALL R5 2 0  
+      80 [-]: JUMP L14
+    
+L11:  81 [-]: FASTCALL1 62 R1 L12
+      82 [-]: MOVE R6 R1   
+      83 [-]: GETIMPORT R5 3 [nil]
+      84 [-]: CALL R5 1 1  
+L12:  85 [-]: JUMPIFNOT R5 L13
+      86 [-]: GETIMPORT R5 20 [nil]
+      87 [-]: LOADK R7 K34 ["Couldn't find ZoneAttribs for backdrop "]
+      88 [-]: GETIMPORT R8 36 [nil]
+      89 [-]: MOVE R9 R3   
+      90 [-]: CALL R8 1 1  
+      91 [-]: CONCAT R6 R7 R8
+      92 [-]: CALL R5 1 0  
+      93 [-]: RETURN R0 0  
+L13:  94 [-]: NAMECALL R7 R1 K17 [0xEFE29E59]
+      95 [-]: CALL R7 1 -1 
+      96 [-]: NAMECALL R5 R2 K31 [0x7E070E71]
+      97 [-]: CALL R5 -1 0 
+      98 [-]: NAMECALL R5 R2 K28 [0xE79E7EF4]
+      99 [-]: CALL R5 1 1  
+     100 [-]: NAMECALL R7 R1 K28 [0xE79E7EF4]
+     101 [-]: CALL R7 1 -1 
+     102 [-]: NAMECALL R5 R5 K33 [0xAD92127C]
+     103 [-]: CALL R5 -1 0 
+L14: 104 [-]: GETIMPORT R5 38 [nil]
+     105 [-]: JUMPXEQKNIL R5 L15
+     106 [-]: GETIMPORT R5 10 [nil]
+     107 [-]: GETIMPORT R6 38 [nil]
+     108 [-]: SETTABLEKS R6 R5 K39 ["VideoWallStartColor"]
+L15: 109 [-]: GETIMPORT R5 10 [nil]
+     110 [-]: SETTABLEKS R4 R5 K37 ["VideoWallEndColor"]
+     111 [-]: GETIMPORT R5 12 [nil]
+     112 [-]: GETIMPORT R7 41 [nil]
+     113 [-]: LOADK R8 K42 ["VideowallLightChange"]
+     114 [-]: CALL R7 1 -1 
+     115 [-]: NAMECALL R5 R5 K43 [0x46A0EBF5]
+     116 [-]: CALL R5 -1 1 
+     117 [-]: FASTCALL1 62 R5 L16
+     118 [-]: MOVE R7 R5   
+     119 [-]: GETIMPORT R6 3 [nil]
+     120 [-]: CALL R6 1 1  
+L16: 121 [-]: JUMPIF R6 L17
+     122 [-]: LOADK R8 K44 ["Execute"]
+     123 [-]: NAMECALL R6 R5 K45 [0x8EB2112D]
+     124 [-]: CALL R6 2 0  
+L17: 125 [-]: RETURN R0 0  
 
 
-; Function #2:
-;
 ; Name:            
 ; Defined at line: 66
 ; #Upvalues:       1
@@ -189,68 +170,61 @@
 ; Is_vararg:       0
 ; Max Stack Size:  9
 
-  1 [-]: GETGLOBAL R2 K0        ; R2 := 0x7b998233
-  2 [-]: MOVE      R3 R0        ; R3 := R0
-  3 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  4 [-]: TEST      R2 1         ; if R2 then PC := 10
-  5 [-]: JMP       10           ; PC := 10
-  6 [-]: GETGLOBAL R2 K1        ; R2 := 0x88efc25e
-  7 [-]: MOVE      R3 R0        ; R3 := R0
-  8 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  9 [-]: MOVE      R1 R2        ; R1 := R2
- 10 [-]: GETGLOBAL R2 K0        ; R2 := 0x7b998233
- 11 [-]: GETGLOBAL R3 K2        ; R3 := _T
- 12 [-]: GETTABLE  R3 R3 K3     ; R3 := R3["SoundscapeWaypoint"]
- 13 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 14 [-]: TEST      R2 0         ; if not R2 then PC := 22
- 15 [-]: JMP       22           ; PC := 22
- 16 [-]: GETGLOBAL R2 K2        ; R2 := _T
- 17 [-]: GETGLOBAL R3 K4        ; R3 := 0x89326c93
- 18 [-]: SELF      R3 R3 K5     ; R4 := R3; R3 := R3[0x46a0ebf5]
- 19 [-]: GETUPVAL  R5 U0        ; R5 := U0
- 20 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
- 21 [-]: SETTABLE  R2 K3 R3     ; R2["SoundscapeWaypoint"] := R3
- 22 [-]: GETGLOBAL R2 K0        ; R2 := 0x7b998233
- 23 [-]: GETGLOBAL R3 K2        ; R3 := _T
- 24 [-]: GETTABLE  R3 R3 K3     ; R3 := R3["SoundscapeWaypoint"]
- 25 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 26 [-]: TEST      R2 1         ; if R2 then PC := 58
- 27 [-]: JMP       58           ; PC := 58
- 28 [-]: GETGLOBAL R2 K0        ; R2 := 0x7b998233
- 29 [-]: GETGLOBAL R3 K2        ; R3 := _T
- 30 [-]: GETTABLE  R3 R3 K6     ; R3 := R3["VideoWallSoundSysVolume"]
- 31 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 32 [-]: TEST      R2 1         ; if R2 then PC := 39
- 33 [-]: JMP       39           ; PC := 39
- 34 [-]: GETGLOBAL R2 K4        ; R2 := 0x89326c93
- 35 [-]: SELF      R2 R2 K7     ; R3 := R2; R2 := R2[0x59c96e77]
- 36 [-]: GETGLOBAL R4 K2        ; R4 := _T
- 37 [-]: GETTABLE  R4 R4 K6     ; R4 := R4["VideoWallSoundSysVolume"]
- 38 [-]: CALL      R2 3 1       ; R2(R3,R4)
- 39 [-]: GETGLOBAL R2 K0        ; R2 := 0x7b998233
- 40 [-]: MOVE      R3 R1        ; R3 := R1
- 41 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 42 [-]: TEST      R2 1         ; if R2 then PC := 58
- 43 [-]: JMP       58           ; PC := 58
- 44 [-]: GETGLOBAL R2 K2        ; R2 := _T
- 45 [-]: GETGLOBAL R3 K4        ; R3 := 0x89326c93
- 46 [-]: SELF      R3 R3 K8     ; R4 := R3; R3 := R3[0x05909209]
- 47 [-]: MOVE      R5 R1        ; R5 := R1
- 48 [-]: GETGLOBAL R6 K2        ; R6 := _T
- 49 [-]: GETTABLE  R6 R6 K3     ; R6 := R6["SoundscapeWaypoint"]
- 50 [-]: SELF      R6 R6 K9     ; R7 := R6; R6 := R6[0xd1586535]
- 51 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 52 [-]: GETGLOBAL R7 K2        ; R7 := _T
- 53 [-]: GETTABLE  R7 R7 K3     ; R7 := R7["SoundscapeWaypoint"]
- 54 [-]: SELF      R7 R7 K10    ; R8 := R7; R7 := R7[0xcb3851b8]
- 55 [-]: CALL      R7 2 0       ; R7,... := R7(R8)
- 56 [-]: CALL      R3 0 2       ; R3 := R3(R4,...)
- 57 [-]: SETTABLE  R2 K6 R3     ; R2["VideoWallSoundSysVolume"] := R3
- 58 [-]: RETURN    R0 1         ; return 
+       0 [-]: LOADNIL R1   
+       1 [-]: FASTCALL1 62 R0 L0
+       2 [-]: MOVE R3 R0   
+       3 [-]: GETIMPORT R2 1 [nil]
+       4 [-]: CALL R2 1 1  
+L 0:   5 [-]: JUMPIF R2 L1 
+       6 [-]: GETIMPORT R2 3 [nil]
+       7 [-]: MOVE R3 R0   
+       8 [-]: CALL R2 1 1  
+       9 [-]: MOVE R1 R2   
+L 1:  10 [-]: GETIMPORT R3 6 [nil]
+      11 [-]: FASTCALL1 62 R3 L2
+      12 [-]: GETIMPORT R2 1 [nil]
+      13 [-]: CALL R2 1 1  
+L 2:  14 [-]: JUMPIFNOT R2 L3
+      15 [-]: GETIMPORT R2 7 [nil]
+      16 [-]: GETIMPORT R3 9 [nil]
+      17 [-]: GETUPVAL R5 0
+      18 [-]: NAMECALL R3 R3 K10 [0x46A0EBF5]
+      19 [-]: CALL R3 2 1  
+      20 [-]: SETTABLEKS R3 R2 K5 ["SoundscapeWaypoint"]
+L 3:  21 [-]: GETIMPORT R3 6 [nil]
+      22 [-]: FASTCALL1 62 R3 L4
+      23 [-]: GETIMPORT R2 1 [nil]
+      24 [-]: CALL R2 1 1  
+L 4:  25 [-]: JUMPIF R2 L8 
+      26 [-]: GETIMPORT R3 12 [nil]
+      27 [-]: FASTCALL1 62 R3 L5
+      28 [-]: GETIMPORT R2 1 [nil]
+      29 [-]: CALL R2 1 1  
+L 5:  30 [-]: JUMPIF R2 L6 
+      31 [-]: GETIMPORT R2 9 [nil]
+      32 [-]: GETIMPORT R4 12 [nil]
+      33 [-]: NAMECALL R2 R2 K13 [0x59C96E77]
+      34 [-]: CALL R2 2 0  
+L 6:  35 [-]: FASTCALL1 62 R1 L7
+      36 [-]: MOVE R3 R1   
+      37 [-]: GETIMPORT R2 1 [nil]
+      38 [-]: CALL R2 1 1  
+L 7:  39 [-]: JUMPIF R2 L8 
+      40 [-]: GETIMPORT R2 7 [nil]
+      41 [-]: GETIMPORT R3 9 [nil]
+      42 [-]: MOVE R5 R1   
+      43 [-]: GETIMPORT R6 6 [nil]
+      44 [-]: NAMECALL R6 R6 K14 [0xD1586535]
+      45 [-]: CALL R6 1 1  
+      46 [-]: GETIMPORT R7 6 [nil]
+      47 [-]: NAMECALL R7 R7 K15 [0xCB3851B8]
+      48 [-]: CALL R7 1 -1 
+      49 [-]: NAMECALL R3 R3 K16 [0x05909209]
+      50 [-]: CALL R3 -1 1 
+      51 [-]: SETTABLEKS R3 R2 K11 ["VideoWallSoundSysVolume"]
+L 8:  52 [-]: RETURN R0 0  
 
 
-; Function #3:
-;
 ; Name:            
 ; Defined at line: 87
 ; #Upvalues:       0
@@ -258,18 +232,25 @@
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
-  1 [-]: GETGLOBAL R0 K0        ; R0 := _T
-  2 [-]: SETTABLE  R0 K1 K2     ; R0["VideoWallZoneAttribs"] := nil
-  3 [-]: GETGLOBAL R0 K0        ; R0 := _T
-  4 [-]: SETTABLE  R0 K3 K2     ; R0["VideoWallDefaults"] := nil
-  5 [-]: GETGLOBAL R0 K0        ; R0 := _T
-  6 [-]: SETTABLE  R0 K4 K2     ; R0["VideoWallStartColor"] := nil
-  7 [-]: GETGLOBAL R0 K0        ; R0 := _T
-  8 [-]: SETTABLE  R0 K5 K2     ; R0["VideoWallEndColor"] := nil
-  9 [-]: GETGLOBAL R0 K0        ; R0 := _T
- 10 [-]: SETTABLE  R0 K6 K2     ; R0["SoundscapeWaypoint"] := nil
- 11 [-]: GETGLOBAL R0 K0        ; R0 := _T
- 12 [-]: SETTABLE  R0 K7 K2     ; R0["VideoWallSoundSysVolume"] := nil
- 13 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: LOADNIL R1   
+       2 [-]: SETTABLEKS R1 R0 K2 ["VideoWallZoneAttribs"]
+       3 [-]: GETIMPORT R0 1 [nil]
+       4 [-]: LOADNIL R1   
+       5 [-]: SETTABLEKS R1 R0 K3 ["VideoWallDefaults"]
+       6 [-]: GETIMPORT R0 1 [nil]
+       7 [-]: LOADNIL R1   
+       8 [-]: SETTABLEKS R1 R0 K4 ["VideoWallStartColor"]
+       9 [-]: GETIMPORT R0 1 [nil]
+      10 [-]: LOADNIL R1   
+      11 [-]: SETTABLEKS R1 R0 K5 ["VideoWallEndColor"]
+      12 [-]: GETIMPORT R0 1 [nil]
+      13 [-]: LOADNIL R1   
+      14 [-]: SETTABLEKS R1 R0 K6 ["SoundscapeWaypoint"]
+      15 [-]: GETIMPORT R0 1 [nil]
+      16 [-]: LOADNIL R1   
+      17 [-]: SETTABLEKS R1 R0 K7 ["VideoWallSoundSysVolume"]
+      18 [-]: RETURN R0 0  
+
 
 

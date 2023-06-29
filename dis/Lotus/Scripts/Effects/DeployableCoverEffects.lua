@@ -1,19 +1,15 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
-; Max Stack Size:  2
+; Is_vararg:       1
+; Max Stack Size:  1
 
-  1 [-]: CLOSURE   R0 0         ; R0 := closure(Function #1)
-  2 [-]: SETGLOBAL R0 K0        ; AnimDeco := R0
-  3 [-]: RETURN    R0 1         ; return 
+            1 [-]: DUPCLOSURE R0 K0 []
+       2 [-]: SETGLOBAL R0 K1 ["AnimDeco"]
+       3 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 4
 ; #Upvalues:       0
@@ -21,56 +17,57 @@
 ; Is_vararg:       0
 ; Max Stack Size:  10
 
-  1 [-]: SELF      R1 R0 K0     ; R2 := R0; R1 := R0[0x28e744cf]
-  2 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  3 [-]: GETGLOBAL R2 K1        ; R2 := 0x7b998233
-  4 [-]: MOVE      R3 R1        ; R3 := R1
-  5 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  6 [-]: TEST      R2 0         ; if not R2 then PC := 9
-  7 [-]: JMP       9            ; PC := 9
-  8 [-]: RETURN    R0 1         ; return 
-  9 [-]: SELF      R2 R1 K2     ; R3 := R1; R2 := R1[0xc9f6a7d7]
- 10 [-]: GETGLOBAL R4 K3        ; R4 := 0x74797ceb
- 11 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
- 12 [-]: GETGLOBAL R3 K1        ; R3 := 0x7b998233
- 13 [-]: MOVE      R4 R2        ; R4 := R2
- 14 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 15 [-]: TEST      R3 0         ; if not R3 then PC := 18
- 16 [-]: JMP       18           ; PC := 18
- 17 [-]: RETURN    R0 1         ; return 
- 18 [-]: SELF      R3 R1 K4     ; R4 := R1; R3 := R1[0x47901f07]
- 19 [-]: GETGLOBAL R5 K5        ; R5 := 0x0b2f98e2
- 20 [-]: SELF      R6 R2 K6     ; R7 := R2; R6 := R2[0x6162d901]
- 21 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 22 [-]: SELF      R7 R2 K7     ; R8 := R2; R7 := R2[0x89531483]
- 23 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 24 [-]: SELF      R8 R2 K8     ; R9 := R2; R8 := R2[0xc6ddbc86]
- 25 [-]: CALL      R8 2 0       ; R8,... := R8(R9)
- 26 [-]: CALL      R3 0 2       ; R3 := R3(R4,...)
- 27 [-]: SELF      R4 R1 K9     ; R5 := R1; R4 := R1[0x21b4c60e]
- 28 [-]: LOADK     R6 K10       ; R6 := "TransferCoverAttachment"
- 29 [-]: LOADK     R7 K11       ; R7 := 0.200000
- 30 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
- 31 [-]: GETGLOBAL R4 K1        ; R4 := 0x7b998233
- 32 [-]: MOVE      R5 R3        ; R5 := R3
- 33 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 34 [-]: TEST      R4 1         ; if R4 then PC := 51
- 35 [-]: JMP       51           ; PC := 51
- 36 [-]: GETGLOBAL R4 K1        ; R4 := 0x7b998233
- 37 [-]: MOVE      R5 R1        ; R5 := R1
- 38 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 39 [-]: TEST      R4 1         ; if R4 then PC := 51
- 40 [-]: JMP       51           ; PC := 51
- 41 [-]: SELF      R4 R3 K12    ; R5 := R3; R4 := R3[0xb6b094b2]
- 42 [-]: MOVE      R6 R1        ; R6 := R1
- 43 [-]: GETGLOBAL R7 K13       ; R7 := 0x0469f296
- 44 [-]: LOADK     R8 K14       ; R8 := "GAME_L1_WEAPON1"
- 45 [-]: CALL      R7 2 0       ; R7,... := R7(R8)
- 46 [-]: CALL      R4 0 1       ; R4(R5,...)
- 47 [-]: SELF      R4 R3 K15    ; R5 := R3; R4 := R3[0xe28aa928]
- 48 [-]: GETGLOBAL R6 K16       ; R6 := ZERO_VECTOR
- 49 [-]: GETGLOBAL R7 K17       ; R7 := ZERO_ROTATION
- 50 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
- 51 [-]: RETURN    R0 1         ; return 
+       0 [-]: NAMECALL R1 R0 K0 [0x28E744CF]
+       1 [-]: CALL R1 1 1  
+       2 [-]: FASTCALL1 62 R1 L0
+       3 [-]: MOVE R3 R1   
+       4 [-]: GETIMPORT R2 2 [nil]
+       5 [-]: CALL R2 1 1  
+L 0:   6 [-]: JUMPIFNOT R2 L1
+       7 [-]: RETURN R0 0  
+L 1:   8 [-]: GETIMPORT R4 4 [nil]
+       9 [-]: NAMECALL R2 R1 K5 [0xC9F6A7D7]
+      10 [-]: CALL R2 2 1  
+      11 [-]: FASTCALL1 62 R2 L2
+      12 [-]: MOVE R4 R2   
+      13 [-]: GETIMPORT R3 2 [nil]
+      14 [-]: CALL R3 1 1  
+L 2:  15 [-]: JUMPIFNOT R3 L3
+      16 [-]: RETURN R0 0  
+L 3:  17 [-]: GETIMPORT R5 7 [nil]
+      18 [-]: NAMECALL R6 R2 K8 [0x6162D901]
+      19 [-]: CALL R6 1 1  
+      20 [-]: NAMECALL R7 R2 K9 [0x89531483]
+      21 [-]: CALL R7 1 1  
+      22 [-]: NAMECALL R8 R2 K10 [0xC6DDBC86]
+      23 [-]: CALL R8 1 -1 
+      24 [-]: NAMECALL R3 R1 K11 [0x47901F07]
+      25 [-]: CALL R3 -1 1 
+      26 [-]: LOADK R6 K12 ["TransferCoverAttachment"]
+      27 [-]: LOADK R7 K13 [0.20000000000000001]
+      28 [-]: NAMECALL R4 R1 K14 [0x21B4C60E]
+      29 [-]: CALL R4 3 0  
+      30 [-]: FASTCALL1 62 R3 L4
+      31 [-]: MOVE R5 R3   
+      32 [-]: GETIMPORT R4 2 [nil]
+      33 [-]: CALL R4 1 1  
+L 4:  34 [-]: JUMPIF R4 L6 
+      35 [-]: FASTCALL1 62 R1 L5
+      36 [-]: MOVE R5 R1   
+      37 [-]: GETIMPORT R4 2 [nil]
+      38 [-]: CALL R4 1 1  
+L 5:  39 [-]: JUMPIF R4 L6 
+      40 [-]: MOVE R6 R1   
+      41 [-]: GETIMPORT R7 16 [nil]
+      42 [-]: LOADK R8 K17 ["GAME_L1_WEAPON1"]
+      43 [-]: CALL R7 1 -1 
+      44 [-]: NAMECALL R4 R3 K18 [0xB6B094B2]
+      45 [-]: CALL R4 -1 0 
+      46 [-]: GETIMPORT R6 20 [nil]
+      47 [-]: GETIMPORT R7 22 [nil]
+      48 [-]: NAMECALL R4 R3 K23 [0xE28AA928]
+      49 [-]: CALL R4 3 0  
+L 6:  50 [-]: RETURN R0 0  
+
 
 

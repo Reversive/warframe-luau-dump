@@ -1,327 +1,303 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
-; Max Stack Size:  8
+; Is_vararg:       1
+; Max Stack Size:  7
 
-  1 [-]: GETGLOBAL R0 K0        ; R0 := 0x0469f296
-  2 [-]: LOADK     R1 K1        ; R1 := "NVJackalBossBattleStage"
-  3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: GETGLOBAL R1 K0        ; R1 := 0x0469f296
-  5 [-]: LOADK     R2 K2        ; R2 := "ReadyToGetUp"
-  6 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  7 [-]: GETGLOBAL R2 K0        ; R2 := 0x0469f296
-  8 [-]: LOADK     R3 K3        ; R3 := "TurretPause"
-  9 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 10 [-]: GETGLOBAL R3 K0        ; R3 := 0x0469f296
- 11 [-]: LOADK     R4 K4        ; R4 := "JackalImmunity"
- 12 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 13 [-]: GETGLOBAL R4 K0        ; R4 := 0x0469f296
- 14 [-]: LOADK     R5 K5        ; R5 := "MoaKnockBackImmunity"
- 15 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 16 [-]: GETGLOBAL R5 K0        ; R5 := 0x0469f296
- 17 [-]: LOADK     R6 K6        ; R6 := "TNWJackalPhase2DamageTriggerForwarder"
- 18 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 19 [-]: CONST     R6 2         ; R6 := 2.000000
- 20 [-]: CLOSURE   R7 0         ; R7 := closure(Function #1)
- 21 [-]: MOVE      R0 R0        ; R0 := R0
- 22 [-]: MOVE      R0 R1        ; R0 := R1
- 23 [-]: MOVE      R0 R3        ; R0 := R3
- 24 [-]: MOVE      R0 R4        ; R0 := R4
- 25 [-]: MOVE      R0 R2        ; R0 := R2
- 26 [-]: MOVE      R0 R6        ; R0 := R6
- 27 [-]: MOVE      R0 R5        ; R0 := R5
- 28 [-]: SETGLOBAL R7 K7        ; JackalStunned := R7
- 29 [-]: CLOSURE   R7 1         ; R7 := closure(Function #2)
- 30 [-]: MOVE      R0 R0        ; R0 := R0
- 31 [-]: SETGLOBAL R7 K8        ; EnterStun := R7
- 32 [-]: RETURN    R0 1         ; return 
+            1 [-]: GETIMPORT R0 1 [nil]
+       2 [-]: LOADK R1 K2 ["NVJackalBossBattleStage"]
+       3 [-]: CALL R0 1 1  
+       4 [-]: GETIMPORT R1 1 [nil]
+       5 [-]: LOADK R2 K3 ["ReadyToGetUp"]
+       6 [-]: CALL R1 1 1  
+       7 [-]: GETIMPORT R2 1 [nil]
+       8 [-]: LOADK R3 K4 ["TurretPause"]
+       9 [-]: CALL R2 1 1  
+      10 [-]: GETIMPORT R3 1 [nil]
+      11 [-]: LOADK R4 K5 ["JackalImmunity"]
+      12 [-]: CALL R3 1 1  
+      13 [-]: GETIMPORT R4 1 [nil]
+      14 [-]: LOADK R5 K6 ["MoaKnockBackImmunity"]
+      15 [-]: CALL R4 1 1  
+      16 [-]: GETIMPORT R5 1 [nil]
+      17 [-]: LOADK R6 K7 ["TNWJackalPhase2DamageTriggerForwarder"]
+      18 [-]: CALL R5 1 1  
+      19 [-]: DUPCLOSURE R6 K8 []
+      20 [-]: MOVE R0 R0   
+      21 [-]: MOVE R0 R1   
+      22 [-]: MOVE R0 R3   
+      23 [-]: MOVE R0 R4   
+      24 [-]: MOVE R0 R2   
+      25 [-]: MOVE R0 R5   
+      26 [-]: SETGLOBAL R6 K9 ["JackalStunned"]
+      27 [-]: DUPCLOSURE R6 K10 []
+      28 [-]: MOVE R0 R0   
+      29 [-]: SETGLOBAL R6 K11 ["EnterStun"]
+      30 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 18
-; #Upvalues:       7
+; #Upvalues:       6
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  16
+; Max Stack Size:  15
 
-  1 [-]: GETGLOBAL R1 K0        ; R1 := 0x7b998233
-  2 [-]: MOVE      R2 R0        ; R2 := R0
-  3 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  4 [-]: TEST      R1 0         ; if not R1 then PC := 7
-  5 [-]: JMP       7            ; PC := 7
-  6 [-]: RETURN    R0 1         ; return 
-  7 [-]: SELF      R1 R0 K1     ; R2 := R0; R1 := R0[0xc9f6a7d7]
-  8 [-]: GETGLOBAL R3 K2        ; R3 := 0x2e93b775
-  9 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
- 10 [-]: SELF      R2 R0 K1     ; R3 := R0; R2 := R0[0xc9f6a7d7]
- 11 [-]: GETGLOBAL R4 K3        ; R4 := 0xc0bfd179
- 12 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
- 13 [-]: SELF      R3 R1 K4     ; R4 := R1; R3 := R1[0x383d2e7d]
- 14 [-]: CALL      R3 2 1       ; R3(R4)
- 15 [-]: GETGLOBAL R3 K5        ; R3 := 0xbe190284
- 16 [-]: SELF      R3 R3 K6     ; R4 := R3; R3 := R3[0x0eb34c69]
- 17 [-]: GETUPVAL  R5 U0        ; R5 := U0
- 18 [-]: CONST     R6 1         ; R6 := 1.000000
- 19 [-]: CALL      R3 4 2       ; R3 := R3(R4,R5,R6)
- 20 [-]: SELF      R4 R0 K7     ; R5 := R0; R4 := R0[0xfa9e477f]
- 21 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 22 [-]: SELF      R5 R0 K8     ; R6 := R0; R5 := R0[0x1ac1655c]
- 23 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 24 [-]: SELF      R6 R5 K9     ; R7 := R5; R6 := R5[0xd83b8e1c]
- 25 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 26 [-]: GETGLOBAL R7 K10       ; R7 := 0x3d106989
- 27 [-]: LOADK     R8 K11       ; R8 := "JACKAL - entering stun state with "
- 28 [-]: MOVE      R9 R6        ; R9 := R6
- 29 [-]: LOADK     R10 K12      ; R10 := " disabled legs"
- 30 [-]: CONCAT    R8 R8 R10    ; R8 := R8 .. R9 .. R10
- 31 [-]: CALL      R7 2 1       ; R7(R8)
- 32 [-]: SELF      R7 R0 K13    ; R8 := R0; R7 := R0[0xd2715720]
- 33 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 34 [-]: GETGLOBAL R8 K14       ; R8 := _T
- 35 [-]: GETTABLE  R8 R8 K15    ; R8 := R8["jackalTNWFightStage"]
- 36 [-]: EQ        0 R8 K16     ; if R8 ~= 1.000000 then PC := 42
- 37 [-]: JMP       42           ; PC := 42
- 38 [-]: GETGLOBAL R8 K5        ; R8 := 0xbe190284
- 39 [-]: SELF      R8 R8 K17    ; R9 := R8; R8 := R8[0xc19d05d7]
- 40 [-]: GETGLOBAL R10 K18      ; R10 := 0xbba33765
- 41 [-]: CALL      R8 3 1       ; R8(R9,R10)
- 42 [-]: GETGLOBAL R8 K0        ; R8 := 0x7b998233
- 43 [-]: MOVE      R9 R0        ; R9 := R0
- 44 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 45 [-]: TEST      R8 1         ; if R8 then PC := 101
- 46 [-]: JMP       101          ; PC := 101
- 47 [-]: SELF      R8 R4 K19    ; R9 := R4; R8 := R4[0x870f0adf]
- 48 [-]: GETUPVAL  R10 U1       ; R10 := U1
- 49 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
- 50 [-]: EQ        0 R8 K20     ; if R8 ~= 0.000000 then PC := 101
- 51 [-]: JMP       101          ; PC := 101
- 52 [-]: SELF      R8 R5 K21    ; R9 := R5; R8 := R5[0x155967b6]
- 53 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 54 [-]: LE        0 R8 K20     ; if R8 > 0.000000 then PC := 97
- 55 [-]: JMP       97           ; PC := 97
- 56 [-]: GETGLOBAL R8 K0        ; R8 := 0x7b998233
- 57 [-]: MOVE      R9 R1        ; R9 := R1
- 58 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 59 [-]: TEST      R8 1         ; if R8 then PC := 63
- 60 [-]: JMP       63           ; PC := 63
- 61 [-]: SELF      R8 R1 K22    ; R9 := R1; R8 := R1[0xf4e253b6]
- 62 [-]: CALL      R8 2 1       ; R8(R9)
- 63 [-]: SELF      R8 R0 K23    ; R9 := R0; R8 := R0[0x250a9055]
- 64 [-]: CONST     R10 0        ; R10 := 0.000000
- 65 [-]: GETUPVAL  R11 U2       ; R11 := U2
- 66 [-]: CALL      R8 4 1       ; R8(R9,R10,R11)
- 67 [-]: GETGLOBAL R8 K0        ; R8 := 0x7b998233
- 68 [-]: GETGLOBAL R9 K14       ; R9 := _T
- 69 [-]: GETTABLE  R9 R9 K25    ; R9 := R9["VesoDecoyMoaAvatar"]
- 70 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 71 [-]: TEST      R8 1         ; if R8 then PC := 91
- 72 [-]: JMP       91           ; PC := 91
- 73 [-]: GETGLOBAL R8 K14       ; R8 := _T
- 74 [-]: GETTABLE  R8 R8 K25    ; R8 := R8["VesoDecoyMoaAvatar"]
- 75 [-]: SELF      R8 R8 K26    ; R9 := R8; R8 := R8[0x73901acf]
- 76 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 77 [-]: TEST      R8 1         ; if R8 then PC := 91
- 78 [-]: JMP       91           ; PC := 91
- 79 [-]: GETGLOBAL R8 K14       ; R8 := _T
- 80 [-]: GETTABLE  R8 R8 K25    ; R8 := R8["VesoDecoyMoaAvatar"]
- 81 [-]: SELF      R8 R8 K27    ; R9 := R8; R8 := R8[0x2047cfe7]
- 82 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 83 [-]: TEST      R8 1         ; if R8 then PC := 91
- 84 [-]: JMP       91           ; PC := 91
- 85 [-]: GETGLOBAL R8 K14       ; R8 := _T
- 86 [-]: GETTABLE  R8 R8 K25    ; R8 := R8["VesoDecoyMoaAvatar"]
- 87 [-]: SELF      R8 R8 K23    ; R9 := R8; R8 := R8[0x250a9055]
- 88 [-]: CONST     R10 2        ; R10 := 2.000000
- 89 [-]: GETUPVAL  R11 U3       ; R11 := U3
- 90 [-]: CALL      R8 4 1       ; R8(R9,R10,R11)
- 91 [-]: GETGLOBAL R8 K14       ; R8 := _T
- 92 [-]: SETTABLE  R8 K28 K29   ; R8["jackalAvatarStunned"] := false
- 93 [-]: GETGLOBAL R8 K10       ; R8 := 0x3d106989
- 94 [-]: LOADK     R9 K30       ; R9 := "JACKAL - detonation window expired, getting back up"
- 95 [-]: CALL      R8 2 1       ; R8(R9)
- 96 [-]: RETURN    R0 1         ; return 
- 97 [-]: GETGLOBAL R8 K31       ; R8 := 0xcbd666e1
- 98 [-]: CONST     R9 0         ; R9 := 0.000000
- 99 [-]: CALL      R8 2 1       ; R8(R9)
-100 [-]: JMP       42           ; PC := 42
-101 [-]: GETGLOBAL R8 K0        ; R8 := 0x7b998233
-102 [-]: MOVE      R9 R2        ; R9 := R2
-103 [-]: CALL      R8 2 2       ; R8 := R8(R9)
-104 [-]: TEST      R8 1         ; if R8 then PC := 117
-105 [-]: JMP       117          ; PC := 117
-106 [-]: SELF      R8 R2 K7     ; R9 := R2; R8 := R2[0xfa9e477f]
-107 [-]: CALL      R8 2 2       ; R8 := R8(R9)
-108 [-]: GETGLOBAL R9 K0        ; R9 := 0x7b998233
-109 [-]: MOVE      R10 R8       ; R10 := R8
-110 [-]: CALL      R9 2 2       ; R9 := R9(R10)
-111 [-]: TEST      R9 1         ; if R9 then PC := 117
-112 [-]: JMP       117          ; PC := 117
-113 [-]: SELF      R9 R8 K32    ; R10 := R8; R9 := R8[0x55e9211c]
-114 [-]: LOADKB    R11 1 0      ; R11 := true
-115 [-]: GETUPVAL  R12 U4       ; R12 := U4
-116 [-]: CALL      R9 4 1       ; R9(R10,R11,R12)
-117 [-]: GETGLOBAL R9 K31       ; R9 := 0xcbd666e1
-118 [-]: CONST     R10 0        ; R10 := 0.000000
-119 [-]: CALL      R9 2 1       ; R9(R10)
-120 [-]: SELF      R9 R1 K22    ; R10 := R1; R9 := R1[0xf4e253b6]
-121 [-]: CALL      R9 2 1       ; R9(R10)
-122 [-]: GETGLOBAL R9 K0        ; R9 := 0x7b998233
-123 [-]: MOVE      R10 R2       ; R10 := R2
-124 [-]: CALL      R9 2 2       ; R9 := R9(R10)
-125 [-]: TEST      R9 1         ; if R9 then PC := 138
-126 [-]: JMP       138          ; PC := 138
-127 [-]: SELF      R9 R2 K7     ; R10 := R2; R9 := R2[0xfa9e477f]
-128 [-]: CALL      R9 2 2       ; R9 := R9(R10)
-129 [-]: GETGLOBAL R10 K0       ; R10 := 0x7b998233
-130 [-]: MOVE      R11 R9       ; R11 := R9
-131 [-]: CALL      R10 2 2      ; R10 := R10(R11)
-132 [-]: TEST      R10 1        ; if R10 then PC := 138
-133 [-]: JMP       138          ; PC := 138
-134 [-]: SELF      R10 R9 K32   ; R11 := R9; R10 := R9[0x55e9211c]
-135 [-]: LOADKB    R12 0 0      ; R12 := false
-136 [-]: GETUPVAL  R13 U4       ; R13 := U4
-137 [-]: CALL      R10 4 1      ; R10(R11,R12,R13)
-138 [-]: ADD       R10 R3 K16   ; R10 := R3 + 1.000000
-139 [-]: GETUPVAL  R11 U5       ; R11 := U5
-140 [-]: EQ        0 R10 R11    ; if R10 ~= R11 then PC := 154
-141 [-]: JMP       154          ; PC := 154
-142 [-]: GETGLOBAL R10 K33      ; R10 := 0x89326c93
-143 [-]: SELF      R10 R10 K34  ; R11 := R10; R10 := R10[0x46a0ebf5]
-144 [-]: GETUPVAL  R12 U6       ; R12 := U6
-145 [-]: CALL      R10 3 2      ; R10 := R10(R11,R12)
-146 [-]: GETGLOBAL R11 K0       ; R11 := 0x7b998233
-147 [-]: MOVE      R12 R10      ; R12 := R10
-148 [-]: CALL      R11 2 2      ; R11 := R11(R12)
-149 [-]: TEST      R11 1        ; if R11 then PC := 154
-150 [-]: JMP       154          ; PC := 154
-151 [-]: SELF      R11 R10 K35  ; R12 := R10; R11 := R10[0x8eb2112d]
-152 [-]: LOADK     R13 K36      ; R13 := "TriggerPort"
-153 [-]: CALL      R11 3 1      ; R11(R12,R13)
-154 [-]: GETGLOBAL R11 K14      ; R11 := _T
-155 [-]: SETTABLE  R11 K15 K37  ; R11["jackalTNWFightStage"] := 2.000000
-156 [-]: GETGLOBAL R11 K33      ; R11 := 0x89326c93
-157 [-]: SELF      R11 R11 K34  ; R12 := R11; R11 := R11[0x46a0ebf5]
-158 [-]: GETGLOBAL R13 K38      ; R13 := 0x0469f296
-159 [-]: LOADK     R14 K39      ; R14 := "TNWJackalDefenseVolume1"
-160 [-]: CALL      R13 2 0      ; R13,... := R13(R14)
-161 [-]: CALL      R11 0 2      ; R11 := R11(R12,...)
-162 [-]: GETGLOBAL R12 K0       ; R12 := 0x7b998233
-163 [-]: MOVE      R13 R11      ; R13 := R11
-164 [-]: CALL      R12 2 2      ; R12 := R12(R13)
-165 [-]: TEST      R12 1        ; if R12 then PC := 171
-166 [-]: JMP       171          ; PC := 171
-167 [-]: SELF      R12 R4 K40   ; R13 := R4; R12 := R4[0xefa4e034]
-168 [-]: MOVE      R14 R11      ; R14 := R11
-169 [-]: LOADKB    R15 1 0      ; R15 := true
-170 [-]: CALL      R12 4 1      ; R12(R13,R14,R15)
-171 [-]: GETGLOBAL R12 K5       ; R12 := 0xbe190284
-172 [-]: SELF      R12 R12 K41  ; R13 := R12; R12 := R12[0x751f061d]
-173 [-]: GETUPVAL  R14 U0       ; R14 := U0
-174 [-]: ADD       R15 R3 K16   ; R15 := R3 + 1.000000
-175 [-]: CALL      R12 4 1      ; R12(R13,R14,R15)
-176 [-]: GETGLOBAL R12 K10      ; R12 := 0x3d106989
-177 [-]: LOADK     R13 K42      ; R13 := "JACKAL: Setting Fight Stage to "
-178 [-]: ADD       R14 R3 K16   ; R14 := R3 + 1.000000
-179 [-]: CONCAT    R13 R13 R14  ; R13 := R13 .. R14
-180 [-]: CALL      R12 2 1      ; R12(R13)
-181 [-]: GETGLOBAL R12 K0       ; R12 := 0x7b998233
-182 [-]: MOVE      R13 R5       ; R13 := R5
-183 [-]: CALL      R12 2 2      ; R12 := R12(R13)
-184 [-]: TEST      R12 1        ; if R12 then PC := 193
-185 [-]: JMP       193          ; PC := 193
-186 [-]: GETGLOBAL R12 K10      ; R12 := 0x3d106989
-187 [-]: LOADK     R13 K43      ; R13 := "JACKAL: Now has "
-188 [-]: SELF      R14 R5 K9    ; R15 := R5; R14 := R5[0xd83b8e1c]
-189 [-]: CALL      R14 2 2      ; R14 := R14(R15)
-190 [-]: LOADK     R15 K12      ; R15 := " disabled legs"
-191 [-]: CONCAT    R13 R13 R15  ; R13 := R13 .. R14 .. R15
-192 [-]: CALL      R12 2 1      ; R12(R13)
-193 [-]: SELF      R12 R0 K23   ; R13 := R0; R12 := R0[0x250a9055]
-194 [-]: CONST     R14 0        ; R14 := 0.000000
-195 [-]: GETUPVAL  R15 U2       ; R15 := U2
-196 [-]: CALL      R12 4 1      ; R12(R13,R14,R15)
-197 [-]: GETGLOBAL R12 K0       ; R12 := 0x7b998233
-198 [-]: GETGLOBAL R13 K14      ; R13 := _T
-199 [-]: GETTABLE  R13 R13 K25  ; R13 := R13["VesoDecoyMoaAvatar"]
-200 [-]: CALL      R12 2 2      ; R12 := R12(R13)
-201 [-]: TEST      R12 1        ; if R12 then PC := 221
-202 [-]: JMP       221          ; PC := 221
-203 [-]: GETGLOBAL R12 K14      ; R12 := _T
-204 [-]: GETTABLE  R12 R12 K25  ; R12 := R12["VesoDecoyMoaAvatar"]
-205 [-]: SELF      R12 R12 K26  ; R13 := R12; R12 := R12[0x73901acf]
-206 [-]: CALL      R12 2 2      ; R12 := R12(R13)
-207 [-]: TEST      R12 1        ; if R12 then PC := 221
-208 [-]: JMP       221          ; PC := 221
-209 [-]: GETGLOBAL R12 K14      ; R12 := _T
-210 [-]: GETTABLE  R12 R12 K25  ; R12 := R12["VesoDecoyMoaAvatar"]
-211 [-]: SELF      R12 R12 K27  ; R13 := R12; R12 := R12[0x2047cfe7]
-212 [-]: CALL      R12 2 2      ; R12 := R12(R13)
-213 [-]: TEST      R12 1        ; if R12 then PC := 221
-214 [-]: JMP       221          ; PC := 221
-215 [-]: GETGLOBAL R12 K14      ; R12 := _T
-216 [-]: GETTABLE  R12 R12 K25  ; R12 := R12["VesoDecoyMoaAvatar"]
-217 [-]: SELF      R12 R12 K23  ; R13 := R12; R12 := R12[0x250a9055]
-218 [-]: CONST     R14 2        ; R14 := 2.000000
-219 [-]: GETUPVAL  R15 U3       ; R15 := U3
-220 [-]: CALL      R12 4 1      ; R12(R13,R14,R15)
-221 [-]: RETURN    R0 1         ; return 
+       0 [-]: FASTCALL1 62 R0 L0
+       1 [-]: MOVE R2 R0   
+       2 [-]: GETIMPORT R1 1 [nil]
+       3 [-]: CALL R1 1 1  
+L 0:   4 [-]: JUMPIFNOT R1 L1
+       5 [-]: RETURN R0 0  
+L 1:   6 [-]: GETIMPORT R3 3 [nil]
+       7 [-]: NAMECALL R1 R0 K4 [0xC9F6A7D7]
+       8 [-]: CALL R1 2 1  
+       9 [-]: GETIMPORT R4 6 [nil]
+      10 [-]: NAMECALL R2 R0 K4 [0xC9F6A7D7]
+      11 [-]: CALL R2 2 1  
+      12 [-]: NAMECALL R3 R1 K7 [0x383D2E7D]
+      13 [-]: CALL R3 1 0  
+      14 [-]: GETIMPORT R3 9 [nil]
+      15 [-]: GETUPVAL R5 0
+      16 [-]: LOADN R6 1   
+      17 [-]: NAMECALL R3 R3 K10 [0x0EB34C69]
+      18 [-]: CALL R3 3 1  
+      19 [-]: NAMECALL R4 R0 K11 [0xFA9E477F]
+      20 [-]: CALL R4 1 1  
+      21 [-]: NAMECALL R5 R0 K12 [0x1AC1655C]
+      22 [-]: CALL R5 1 1  
+      23 [-]: NAMECALL R6 R5 K13 [0xD83B8E1C]
+      24 [-]: CALL R6 1 1  
+      25 [-]: GETIMPORT R7 15 [nil]
+      26 [-]: LOADK R9 K16 ["JACKAL - entering stun state with "]
+      27 [-]: MOVE R10 R6  
+      28 [-]: LOADK R11 K17 [" disabled legs"]
+      29 [-]: CONCAT R8 R9 R11
+      30 [-]: CALL R7 1 0  
+      31 [-]: GETIMPORT R7 20 [nil]
+      32 [-]: JUMPXEQKN R7 K21 L2 NOT [1]
+      33 [-]: GETIMPORT R7 9 [nil]
+      34 [-]: GETIMPORT R9 23 [nil]
+      35 [-]: NAMECALL R7 R7 K24 [0xC19D05D7]
+      36 [-]: CALL R7 2 0  
+L 2:  37 [-]: FASTCALL1 62 R0 L3
+      38 [-]: MOVE R8 R0   
+      39 [-]: GETIMPORT R7 1 [nil]
+      40 [-]: CALL R7 1 1  
+L 3:  41 [-]: JUMPIF R7 L9 
+      42 [-]: GETUPVAL R9 1
+      43 [-]: NAMECALL R7 R4 K25 [0x870F0ADF]
+      44 [-]: CALL R7 2 1  
+      45 [-]: JUMPXEQKN R7 K26 L9 NOT [0]
+      46 [-]: NAMECALL R7 R5 K27 [0x155967B6]
+      47 [-]: CALL R7 1 1  
+      48 [-]: LOADN R8 0   
+      49 [-]: JUMPIFNOTLE R7 R8 L8
+      50 [-]: FASTCALL1 62 R1 L4
+      51 [-]: MOVE R8 R1   
+      52 [-]: GETIMPORT R7 1 [nil]
+      53 [-]: CALL R7 1 1  
+L 4:  54 [-]: JUMPIF R7 L5 
+      55 [-]: NAMECALL R7 R1 K28 [0xF4E253B6]
+      56 [-]: CALL R7 1 0  
+L 5:  57 [-]: LOADN R9 0   
+      58 [-]: GETUPVAL R10 2
+      59 [-]: NAMECALL R7 R0 K29 [0x250A9055]
+      60 [-]: CALL R7 3 0  
+      61 [-]: GETIMPORT R8 31 [nil]
+      62 [-]: FASTCALL1 62 R8 L6
+      63 [-]: GETIMPORT R7 1 [nil]
+      64 [-]: CALL R7 1 1  
+L 6:  65 [-]: JUMPIF R7 L7 
+      66 [-]: GETIMPORT R7 31 [nil]
+      67 [-]: NAMECALL R7 R7 K32 [0x73901ACF]
+      68 [-]: CALL R7 1 1  
+      69 [-]: JUMPIF R7 L7 
+      70 [-]: GETIMPORT R7 31 [nil]
+      71 [-]: NAMECALL R7 R7 K33 [0x2047CFE7]
+      72 [-]: CALL R7 1 1  
+      73 [-]: JUMPIF R7 L7 
+      74 [-]: GETIMPORT R7 31 [nil]
+      75 [-]: LOADN R9 2   
+      76 [-]: GETUPVAL R10 3
+      77 [-]: NAMECALL R7 R7 K29 [0x250A9055]
+      78 [-]: CALL R7 3 0  
+L 7:  79 [-]: GETIMPORT R7 34 [nil]
+      80 [-]: LOADB R8 0   
+      81 [-]: SETTABLEKS R8 R7 K35 ["jackalAvatarStunned"]
+      82 [-]: GETIMPORT R7 15 [nil]
+      83 [-]: LOADK R8 K36 ["JACKAL - detonation window expired, getting back up"]
+      84 [-]: CALL R7 1 0  
+      85 [-]: RETURN R0 0  
+L 8:  86 [-]: GETIMPORT R7 38 [nil]
+      87 [-]: LOADN R8 0   
+      88 [-]: CALL R7 1 0  
+      89 [-]: JUMPBACK L2  
+L 9:  90 [-]: FASTCALL1 62 R2 L10
+      91 [-]: MOVE R8 R2   
+      92 [-]: GETIMPORT R7 1 [nil]
+      93 [-]: CALL R7 1 1  
+L10:  94 [-]: JUMPIF R7 L12
+      95 [-]: NAMECALL R7 R2 K11 [0xFA9E477F]
+      96 [-]: CALL R7 1 1  
+      97 [-]: FASTCALL1 62 R7 L11
+      98 [-]: MOVE R9 R7   
+      99 [-]: GETIMPORT R8 1 [nil]
+     100 [-]: CALL R8 1 1  
+L11: 101 [-]: JUMPIF R8 L12
+     102 [-]: LOADB R10 1  
+     103 [-]: GETUPVAL R11 4
+     104 [-]: NAMECALL R8 R7 K39 [0x55E9211C]
+     105 [-]: CALL R8 3 0  
+L12: 106 [-]: GETIMPORT R7 38 [nil]
+     107 [-]: LOADN R8 0   
+     108 [-]: CALL R7 1 0  
+     109 [-]: NAMECALL R7 R1 K28 [0xF4E253B6]
+     110 [-]: CALL R7 1 0  
+     111 [-]: FASTCALL1 62 R2 L13
+     112 [-]: MOVE R8 R2   
+     113 [-]: GETIMPORT R7 1 [nil]
+     114 [-]: CALL R7 1 1  
+L13: 115 [-]: JUMPIF R7 L15
+     116 [-]: NAMECALL R7 R2 K11 [0xFA9E477F]
+     117 [-]: CALL R7 1 1  
+     118 [-]: FASTCALL1 62 R7 L14
+     119 [-]: MOVE R9 R7   
+     120 [-]: GETIMPORT R8 1 [nil]
+     121 [-]: CALL R8 1 1  
+L14: 122 [-]: JUMPIF R8 L15
+     123 [-]: LOADB R10 0  
+     124 [-]: GETUPVAL R11 4
+     125 [-]: NAMECALL R8 R7 K39 [0x55E9211C]
+     126 [-]: CALL R8 3 0  
+L15: 127 [-]: ADDK R7 R3 K21 [1]
+     128 [-]: JUMPXEQKN R7 K40 L17 NOT [2]
+     129 [-]: GETIMPORT R7 42 [nil]
+     130 [-]: GETUPVAL R9 5
+     131 [-]: NAMECALL R7 R7 K43 [0x46A0EBF5]
+     132 [-]: CALL R7 2 1  
+     133 [-]: FASTCALL1 62 R7 L16
+     134 [-]: MOVE R9 R7   
+     135 [-]: GETIMPORT R8 1 [nil]
+     136 [-]: CALL R8 1 1  
+L16: 137 [-]: JUMPIF R8 L17
+     138 [-]: LOADK R10 K44 ["TriggerPort"]
+     139 [-]: NAMECALL R8 R7 K45 [0x8EB2112D]
+     140 [-]: CALL R8 2 0  
+L17: 141 [-]: GETIMPORT R7 34 [nil]
+     142 [-]: LOADN R8 2   
+     143 [-]: SETTABLEKS R8 R7 K19 ["jackalTNWFightStage"]
+     144 [-]: GETIMPORT R7 42 [nil]
+     145 [-]: GETIMPORT R9 47 [nil]
+     146 [-]: LOADK R10 K48 ["TNWJackalDefenseVolume1"]
+     147 [-]: CALL R9 1 -1 
+     148 [-]: NAMECALL R7 R7 K43 [0x46A0EBF5]
+     149 [-]: CALL R7 -1 1 
+     150 [-]: FASTCALL1 62 R7 L18
+     151 [-]: MOVE R9 R7   
+     152 [-]: GETIMPORT R8 1 [nil]
+     153 [-]: CALL R8 1 1  
+L18: 154 [-]: JUMPIF R8 L19
+     155 [-]: MOVE R10 R7  
+     156 [-]: LOADB R11 1  
+     157 [-]: NAMECALL R8 R4 K49 [0xEFA4E034]
+     158 [-]: CALL R8 3 0  
+L19: 159 [-]: GETIMPORT R8 9 [nil]
+     160 [-]: GETUPVAL R10 0
+     161 [-]: ADDK R11 R3 K21 [1]
+     162 [-]: NAMECALL R8 R8 K50 [0x751F061D]
+     163 [-]: CALL R8 3 0  
+     164 [-]: GETIMPORT R8 15 [nil]
+     165 [-]: LOADK R10 K51 ["JACKAL: Setting Fight Stage to "]
+     166 [-]: ADDK R11 R3 K21 [1]
+     167 [-]: CONCAT R9 R10 R11
+     168 [-]: CALL R8 1 0  
+     169 [-]: FASTCALL1 62 R5 L20
+     170 [-]: MOVE R9 R5   
+     171 [-]: GETIMPORT R8 1 [nil]
+     172 [-]: CALL R8 1 1  
+L20: 173 [-]: JUMPIF R8 L21
+     174 [-]: GETIMPORT R8 15 [nil]
+     175 [-]: LOADK R10 K52 ["JACKAL: Now has "]
+     176 [-]: NAMECALL R13 R5 K13 [0xD83B8E1C]
+     177 [-]: CALL R13 1 1 
+     178 [-]: MOVE R11 R13 
+     179 [-]: LOADK R12 K17 [" disabled legs"]
+     180 [-]: CONCAT R9 R10 R12
+     181 [-]: CALL R8 1 0  
+L21: 182 [-]: LOADN R10 0  
+     183 [-]: GETUPVAL R11 2
+     184 [-]: NAMECALL R8 R0 K29 [0x250A9055]
+     185 [-]: CALL R8 3 0  
+     186 [-]: GETIMPORT R9 31 [nil]
+     187 [-]: FASTCALL1 62 R9 L22
+     188 [-]: GETIMPORT R8 1 [nil]
+     189 [-]: CALL R8 1 1  
+L22: 190 [-]: JUMPIF R8 L23
+     191 [-]: GETIMPORT R8 31 [nil]
+     192 [-]: NAMECALL R8 R8 K32 [0x73901ACF]
+     193 [-]: CALL R8 1 1  
+     194 [-]: JUMPIF R8 L23
+     195 [-]: GETIMPORT R8 31 [nil]
+     196 [-]: NAMECALL R8 R8 K33 [0x2047CFE7]
+     197 [-]: CALL R8 1 1  
+     198 [-]: JUMPIF R8 L23
+     199 [-]: GETIMPORT R8 31 [nil]
+     200 [-]: LOADN R10 2  
+     201 [-]: GETUPVAL R11 3
+     202 [-]: NAMECALL R8 R8 K29 [0x250A9055]
+     203 [-]: CALL R8 3 0  
+L23: 204 [-]: RETURN R0 0  
 
 
-; Function #2:
-;
 ; Name:            
-; Defined at line: 120
+; Defined at line: 119
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  7
+; Max Stack Size:  9
 
-  1 [-]: GETGLOBAL R1 K0        ; R1 := 0xbe190284
-  2 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1[0x0eb34c69]
-  3 [-]: GETUPVAL  R3 U0        ; R3 := U0
-  4 [-]: CONST     R4 1         ; R4 := 1.000000
-  5 [-]: CALL      R1 4 2       ; R1 := R1(R2,R3,R4)
-  6 [-]: GETGLOBAL R2 K2        ; R2 := 0x3d106989
-  7 [-]: LOADK     R3 K3        ; R3 := "JACKAL: Entering Stun in Fight Stage: "
-  8 [-]: MOVE      R4 R1        ; R4 := R1
-  9 [-]: CONCAT    R3 R3 R4     ; R3 := R3 .. R4
- 10 [-]: CALL      R2 2 1       ; R2(R3)
- 11 [-]: GETGLOBAL R2 K4        ; R2 := 0x44019f59
- 12 [-]: LEN       R2 R2        ; R2 := # R2
- 13 [-]: LT        0 R2 R1      ; if R2 >= R1 then PC := 16
- 14 [-]: JMP       16           ; PC := 16
- 15 [-]: RETURN    R0 1         ; return 
- 16 [-]: CONST     R2 1         ; R2 := 1.000000
- 17 [-]: GETGLOBAL R3 K0        ; R3 := 0xbe190284
- 18 [-]: SELF      R3 R3 K5     ; R4 := R3; R3 := R3[0xef893aec]
- 19 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 20 [-]: GETGLOBAL R4 K6        ; R4 := 0x7b998233
- 21 [-]: MOVE      R5 R3        ; R5 := R3
- 22 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 23 [-]: TEST      R4 1         ; if R4 then PC := 32
- 24 [-]: JMP       32           ; PC := 32
- 25 [-]: GETTABLE  R4 R3 K7     ; R4 := R3["maxEnemyLevel"]
- 26 [-]: LE        1 K8 R4      ; if 30.000000 <= R4 then PC := 31
- 27 [-]: JMP       31           ; PC := 31
- 28 [-]: GETTABLE  R4 R3 K9     ; R4 := R3["nightmare"]
- 29 [-]: TEST      R4 0         ; if not R4 then PC := 32
- 30 [-]: JMP       32           ; PC := 32
- 31 [-]: GETGLOBAL R2 K10       ; R2 := 0x1a1d8bb4
- 32 [-]: SELF      R4 R0 K11    ; R5 := R0; R4 := R0[0x1ac1655c]
- 33 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 34 [-]: SELF      R4 R4 K12    ; R5 := R4; R4 := R4[0xe86623de]
- 35 [-]: GETGLOBAL R6 K4        ; R6 := 0x44019f59
- 36 [-]: GETTABLE  R6 R6 R1     ; R6 := R6[R1]
- 37 [-]: MUL       R6 R6 R2     ; R6 := R6 * R2
- 38 [-]: CALL      R4 3 1       ; R4(R5,R6)
- 39 [-]: GETGLOBAL R4 K13       ; R4 := _T
- 40 [-]: SETTABLE  R4 K14 K15   ; R4["jackalAvatarStunned"] := true
- 41 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R1 1 [nil]
+       1 [-]: GETUPVAL R3 0
+       2 [-]: LOADN R4 1   
+       3 [-]: NAMECALL R1 R1 K2 [0x0EB34C69]
+       4 [-]: CALL R1 3 1  
+       5 [-]: GETIMPORT R2 4 [nil]
+       6 [-]: LOADK R4 K5 ["JACKAL: Entering Stun in Fight Stage: "]
+       7 [-]: MOVE R5 R1   
+       8 [-]: CONCAT R3 R4 R5
+       9 [-]: CALL R2 1 0  
+      10 [-]: GETIMPORT R3 7 [nil]
+      11 [-]: LENGTH R2 R3 
+      12 [-]: JUMPIFNOTLT R2 R1 L0
+      13 [-]: RETURN R0 0  
+L 0:  14 [-]: LOADN R2 1   
+      15 [-]: GETIMPORT R3 1 [nil]
+      16 [-]: NAMECALL R3 R3 K8 [0xEF893AEC]
+      17 [-]: CALL R3 1 1  
+      18 [-]: FASTCALL1 62 R3 L1
+      19 [-]: MOVE R5 R3   
+      20 [-]: GETIMPORT R4 10 [nil]
+      21 [-]: CALL R4 1 1  
+L 1:  22 [-]: JUMPIF R4 L3 
+      23 [-]: GETTABLEKS R4 R3 K11 ["maxEnemyLevel"]
+      24 [-]: LOADN R5 30  
+      25 [-]: JUMPIFLE R5 R4 L2
+      26 [-]: GETTABLEKS R4 R3 K12 ["nightmare"]
+      27 [-]: JUMPIFNOT R4 L3
+L 2:  28 [-]: GETIMPORT R2 14 [nil]
+L 3:  29 [-]: NAMECALL R4 R0 K15 [0x1AC1655C]
+      30 [-]: CALL R4 1 1  
+      31 [-]: GETIMPORT R8 7 [nil]
+      32 [-]: GETTABLE R7 R8 R1
+      33 [-]: MUL R6 R7 R2 
+      34 [-]: NAMECALL R4 R4 K16 [0xE86623DE]
+      35 [-]: CALL R4 2 0  
+      36 [-]: GETIMPORT R4 18 [nil]
+      37 [-]: LOADB R5 1   
+      38 [-]: SETTABLEKS R5 R4 K19 ["jackalAvatarStunned"]
+      39 [-]: RETURN R0 0  
+
 
 

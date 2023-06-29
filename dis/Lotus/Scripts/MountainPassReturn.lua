@@ -1,23 +1,19 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
+; Is_vararg:       1
 ; Max Stack Size:  2
 
-  1 [-]: GETGLOBAL R0 K0        ; R0 := 0x2d0fad09
-  2 [-]: LOADK     R1 K1        ; R1 := "Lotus.Scripts.PostProcess.BasePostProcessFade"
-  3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: CLOSURE   R1 0         ; R1 := closure(Function #1)
-  5 [-]: MOVE      R0 R0        ; R0 := R0
-  6 [-]: SETGLOBAL R1 K2        ; MountainPassReturnEnd := R1
-  7 [-]: RETURN    R0 1         ; return 
+            1 [-]: GETIMPORT R0 1 [nil]
+       2 [-]: LOADK R1 K2 ["Lotus.Scripts.PostProcess.BasePostProcessFade"]
+       3 [-]: CALL R0 1 1  
+       4 [-]: DUPCLOSURE R1 K3 []
+       5 [-]: MOVE R0 R0   
+       6 [-]: SETGLOBAL R1 K4 ["MountainPassReturnEnd"]
+       7 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 6
 ; #Upvalues:       1
@@ -25,28 +21,29 @@
 ; Is_vararg:       0
 ; Max Stack Size:  4
 
-  1 [-]: GETGLOBAL R0 K0        ; R0 := 0xe474dda7
-  2 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0x8eb2112d]
-  3 [-]: LOADK     R2 K2        ; R2 := "Disable"
-  4 [-]: CALL      R0 3 1       ; R0(R1,R2)
-  5 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  6 [-]: GETTABLE  R0 R0 K3     ; R0 := R0[0xd06ddfa8]
-  7 [-]: CONST     R1 0         ; R1 := 0.000000
-  8 [-]: CONST     R2 1         ; R2 := 1.000000
-  9 [-]: CONST     R3 0         ; R3 := 0.500000
- 10 [-]: CALL      R0 4 1       ; R0(R1,R2,R3)
- 11 [-]: GETGLOBAL R0 K4        ; R0 := 0xcbd666e1
- 12 [-]: LOADK     R1 K5        ; R1 := 0.100000
- 13 [-]: CALL      R0 2 1       ; R0(R1)
- 14 [-]: GETGLOBAL R0 K6        ; R0 := 0x7b998233
- 15 [-]: GETGLOBAL R1 K7        ; R1 := 0x6f76b4f8
- 16 [-]: CALL      R0 2 2       ; R0 := R0(R1)
- 17 [-]: TEST      R0 1         ; if R0 then PC := 23
- 18 [-]: JMP       23           ; PC := 23
- 19 [-]: GETGLOBAL R0 K8        ; R0 := 0x9ba7909f
- 20 [-]: SELF      R0 R0 K9     ; R1 := R0; R0 := R0[0x6dd7aa66]
- 21 [-]: GETGLOBAL R2 K7        ; R2 := 0x6f76b4f8
- 22 [-]: CALL      R0 3 1       ; R0(R1,R2)
- 23 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: LOADK R2 K2 ["Disable"]
+       2 [-]: NAMECALL R0 R0 K3 [0x8EB2112D]
+       3 [-]: CALL R0 2 0  
+       4 [-]: GETUPVAL R1 0
+       5 [-]: GETTABLEKS R0 R1 K4 [0xD06DDFA8]
+       6 [-]: LOADN R1 0   
+       7 [-]: LOADN R2 1   
+       8 [-]: LOADK R3 K5 [0.5]
+       9 [-]: CALL R0 3 0  
+      10 [-]: GETIMPORT R0 7 [nil]
+      11 [-]: LOADK R1 K8 [0.10000000000000001]
+      12 [-]: CALL R0 1 0  
+      13 [-]: GETIMPORT R1 10 [nil]
+      14 [-]: FASTCALL1 62 R1 L0
+      15 [-]: GETIMPORT R0 12 [nil]
+      16 [-]: CALL R0 1 1  
+L 0:  17 [-]: JUMPIF R0 L1 
+      18 [-]: GETIMPORT R0 14 [nil]
+      19 [-]: GETIMPORT R2 10 [nil]
+      20 [-]: NAMECALL R0 R0 K15 [0x6DD7AA66]
+      21 [-]: CALL R0 2 0  
+L 1:  22 [-]: RETURN R0 0  
+
 
 

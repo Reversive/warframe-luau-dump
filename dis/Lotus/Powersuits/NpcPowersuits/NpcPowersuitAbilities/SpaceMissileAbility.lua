@@ -1,29 +1,25 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
+; Is_vararg:       1
 ; Max Stack Size:  3
 
-  1 [-]: GETGLOBAL R0 K0        ; R0 := 0x2d0fad09
-  2 [-]: LOADK     R1 K1        ; R1 := "Lotus.Scripts.Libs.TransmissionSet"
-  3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: CLOSURE   R1 0         ; R1 := closure(Function #1)
-  5 [-]: CLOSURE   R2 1         ; R2 := closure(Function #2)
-  6 [-]: SETGLOBAL R2 K2        ; NpcEvaluateAbility := R2
-  7 [-]: CLOSURE   R2 2         ; R2 := closure(Function #3)
-  8 [-]: MOVE      R0 R0        ; R0 := R0
-  9 [-]: SETGLOBAL R2 K3        ; ActivateAbility := R2
- 10 [-]: CLOSURE   R2 3         ; R2 := closure(Function #4)
- 11 [-]: MOVE      R0 R1        ; R0 := R1
- 12 [-]: SETGLOBAL R2 K4        ; HealthMonitor := R2
- 13 [-]: RETURN    R0 1         ; return 
+            1 [-]: GETIMPORT R0 1 [nil]
+       2 [-]: LOADK R1 K2 ["Lotus.Scripts.Libs.TransmissionSet"]
+       3 [-]: CALL R0 1 1  
+       4 [-]: DUPCLOSURE R1 K3 []
+       5 [-]: DUPCLOSURE R2 K4 []
+       6 [-]: SETGLOBAL R2 K5 ["NpcEvaluateAbility"]
+       7 [-]: DUPCLOSURE R2 K6 []
+       8 [-]: MOVE R0 R0   
+       9 [-]: SETGLOBAL R2 K7 ["ActivateAbility"]
+      10 [-]: DUPCLOSURE R2 K8 []
+      11 [-]: MOVE R0 R1   
+      12 [-]: SETGLOBAL R2 K9 ["HealthMonitor"]
+      13 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 19
 ; #Upvalues:       0
@@ -31,286 +27,264 @@
 ; Is_vararg:       0
 ; Max Stack Size:  11
 
-  1 [-]: GETGLOBAL R1 K0        ; R1 := 0x89326c93
-  2 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1[0x8b5b1f58]
-  3 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  4 [-]: GETGLOBAL R2 K2        ; R2 := 0xc8802016
-  5 [-]: MOVE      R3 R1        ; R3 := R1
-  6 [-]: CALL      R2 2 4       ; R2,R3,R4 := R2(R3)
-  7 [-]: JMP       12           ; PC := 12
-  8 [-]: SELF      R7 R6 K3     ; R8 := R6; R7 := R6[0x511d26b8]
-  9 [-]: MOVE      R9 R0        ; R9 := R0
- 10 [-]: LOADKB    R10 1 0      ; R10 := true
- 11 [-]: CALL      R7 4 1       ; R7(R8,R9,R10)
- 12 [-]: TFORLOOP  R2 2         ; R5,R6 :=  R2(R3,R4); if R5 ~= nil then begin PC = 8; R4 := R5 end
- 13 [-]: JMP       8            ; PC := 8
- 14 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R1 1 [nil]
+       1 [-]: NAMECALL R1 R1 K2 [0x8B5B1F58]
+       2 [-]: CALL R1 1 1  
+       3 [-]: GETIMPORT R2 4 [nil]
+       4 [-]: MOVE R3 R1   
+       5 [-]: CALL R2 1 3  
+       6 [-]: FORGPREP_INEXT R2 L1
+L 0:   7 [-]: MOVE R9 R0   
+       8 [-]: LOADB R10 1  
+       9 [-]: NAMECALL R7 R6 K5 [0x511D26B8]
+      10 [-]: CALL R7 3 0  
+L 1:  11 [-]: FORGLOOP R2 L0 2 [inext]
+      12 [-]: RETURN R0 0  
 
 
-; Function #2:
-;
 ; Name:            
 ; Defined at line: 27
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
-; Max Stack Size:  10
+; Max Stack Size:  9
 
-  1 [-]: GETGLOBAL R2 K0        ; R2 := 0x89326c93
-  2 [-]: SELF      R2 R2 K1     ; R3 := R2; R2 := R2[0x8b5b1f58]
-  3 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  4 [-]: CONST     R3 1         ; R3 := 1.000000
-  5 [-]: LEN       R4 R2        ; R4 := # R2
-  6 [-]: CONST     R5 1         ; R5 := 1.000000
-  7 [-]: FORPREP   R3 21        ; R3 -= R5; PC := 21
-  8 [-]: GETTABLE  R7 R2 R6     ; R7 := R2[R6]
-  9 [-]: SELF      R7 R7 K2     ; R8 := R7; R7 := R7[0xd4cc05b4]
- 10 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 11 [-]: TEST      R7 0         ; if not R7 then PC := 21
- 12 [-]: JMP       21           ; PC := 21
- 13 [-]: SELF      R7 R1 K3     ; R8 := R1; R7 := R1[0xbebad19f]
- 14 [-]: GETTABLE  R9 R2 R6     ; R9 := R2[R6]
- 15 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
- 16 [-]: GETGLOBAL R8 K4        ; R8 := 0x443a8d0b
- 17 [-]: LT        0 R7 R8      ; if R7 >= R8 then PC := 21
- 18 [-]: JMP       21           ; PC := 21
- 19 [-]: CONST     R7 1         ; R7 := 1.000000
- 20 [-]: RETURN    R7 2         ; return R7
- 21 [-]: FORLOOP   R3 8         ; R3 += R5; if R3 <= R4 then begin PC := 8; R6 := R3 end
- 22 [-]: CONST     R7 0         ; R7 := 0.000000
- 23 [-]: RETURN    R7 2         ; return R7
- 24 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R2 1 [nil]
+       1 [-]: NAMECALL R2 R2 K2 [0x8B5B1F58]
+       2 [-]: CALL R2 1 1  
+       3 [-]: LOADN R5 1   
+       4 [-]: LENGTH R3 R2 
+       5 [-]: LOADN R4 1   
+       6 [-]: FORNPREP R3 L2
+L 0:   7 [-]: GETTABLE R6 R2 R5
+       8 [-]: NAMECALL R6 R6 K3 [0xD4CC05B4]
+       9 [-]: CALL R6 1 1  
+      10 [-]: JUMPIFNOT R6 L1
+      11 [-]: GETTABLE R8 R2 R5
+      12 [-]: NAMECALL R6 R1 K4 [0xBEBAD19F]
+      13 [-]: CALL R6 2 1  
+      14 [-]: GETIMPORT R7 6 [nil]
+      15 [-]: JUMPIFNOTLT R6 R7 L1
+      16 [-]: LOADN R6 1   
+      17 [-]: RETURN R6 1  
+L 1:  18 [-]: FORNLOOP R3 L0
+L 2:  19 [-]: LOADN R3 0   
+      20 [-]: RETURN R3 1  
 
 
-; Function #3:
-;
 ; Name:            
 ; Defined at line: 43
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
-; Max Stack Size:  41
+; Max Stack Size:  26
 
-  1 [-]: SELF      R4 R1 K0     ; R5 := R1; R4 := R1[0x388577d5]
-  2 [-]: CALL      R4 2 2       ; R4 := R4(R5)
-  3 [-]: GETGLOBAL R5 K1        ; R5 := 0x7b998233
-  4 [-]: GETGLOBAL R6 K2        ; R6 := _T
-  5 [-]: GETTABLE  R6 R6 K3     ; R6 := R6["gSpaceTrap"]
-  6 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-  7 [-]: TEST      R5 0         ; if not R5 then PC := 12
-  8 [-]: JMP       12           ; PC := 12
-  9 [-]: GETGLOBAL R5 K2        ; R5 := _T
- 10 [-]: NEWTABLE  R6 0 0       ; R6 := {}
- 11 [-]: SETTABLE  R5 K3 R6     ; R5["gSpaceTrap"] := R6
- 12 [-]: GETGLOBAL R5 K1        ; R5 := 0x7b998233
- 13 [-]: GETGLOBAL R6 K2        ; R6 := _T
- 14 [-]: GETTABLE  R6 R6 K3     ; R6 := R6["gSpaceTrap"]
- 15 [-]: GETTABLE  R6 R6 R4     ; R6 := R6[R4]
- 16 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 17 [-]: TEST      R5 0         ; if not R5 then PC := 22
- 18 [-]: JMP       22           ; PC := 22
- 19 [-]: GETGLOBAL R5 K2        ; R5 := _T
- 20 [-]: GETTABLE  R5 R5 K3     ; R5 := R5["gSpaceTrap"]
- 21 [-]: SETTABLE  R5 R4 K4     ; R5[R4] := false
- 22 [-]: GETGLOBAL R5 K5        ; R5 := 0x89326c93
- 23 [-]: SELF      R5 R5 K6     ; R6 := R5; R5 := R5[0x8b5b1f58]
- 24 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 25 [-]: SELF      R6 R1 K7     ; R7 := R1; R6 := R1[0xc1595bd5]
- 26 [-]: GETGLOBAL R8 K8        ; R8 := 0x78eb7099
- 27 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
- 28 [-]: NEWTABLE  R7 0 0       ; R7 := {}
- 29 [-]: GETGLOBAL R8 K1        ; R8 := 0x7b998233
- 30 [-]: MOVE      R9 R6        ; R9 := R6
- 31 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 32 [-]: TEST      R8 0         ; if not R8 then PC := 38
- 33 [-]: JMP       38           ; PC := 38
- 34 [-]: GETGLOBAL R8 K9        ; R8 := 0x3d106989
- 35 [-]: LOADK     R9 K10       ; R9 := "no missile waypoints found"
- 36 [-]: CALL      R8 2 1       ; R8(R9)
- 37 [-]: RETURN    R0 1         ; return 
- 38 [-]: SELF      R8 R1 K11    ; R9 := R1; R8 := R1[0xd1586535]
- 39 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 40 [-]: SELF      R9 R1 K12    ; R10 := R1; R9 := R1[0xcb3851b8]
- 41 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 42 [-]: NEWTABLE  R10 0 0      ; R10 := {}
- 43 [-]: LOADNIL   R11 R11      ; R11 := nil
- 44 [-]: GETGLOBAL R12 K13      ; R12 := 0x3f1686fd
- 45 [-]: TEST      R12 0        ; if not R12 then PC := 149
- 46 [-]: JMP       149          ; PC := 149
- 47 [-]: GETGLOBAL R12 K2       ; R12 := _T
- 48 [-]: GETTABLE  R12 R12 K3   ; R12 := R12["gSpaceTrap"]
- 49 [-]: GETTABLE  R12 R12 R4   ; R12 := R12[R4]
- 50 [-]: TEST      R12 1        ; if R12 then PC := 149
- 51 [-]: JMP       149          ; PC := 149
- 52 [-]: GETGLOBAL R12 K2       ; R12 := _T
- 53 [-]: GETTABLE  R12 R12 K14  ; R12 := R12["EnergyNetWarning"]
- 54 [-]: TEST      R12 1        ; if R12 then PC := 59
- 55 [-]: JMP       59           ; PC := 59
- 56 [-]: GETGLOBAL R12 K2       ; R12 := _T
- 57 [-]: SETTABLE  R12 K14 K15  ; R12["EnergyNetWarning"] := 1.000000
- 58 [-]: JMP       64           ; PC := 64
- 59 [-]: GETGLOBAL R12 K2       ; R12 := _T
- 60 [-]: GETGLOBAL R13 K2       ; R13 := _T
- 61 [-]: GETTABLE  R13 R13 K14  ; R13 := R13["EnergyNetWarning"]
- 62 [-]: ADD       R13 R13 K15  ; R13 := R13 + 1.000000
- 63 [-]: SETTABLE  R12 K14 R13  ; R12["EnergyNetWarning"] := R13
- 64 [-]: GETGLOBAL R12 K2       ; R12 := _T
- 65 [-]: GETTABLE  R12 R12 K14  ; R12 := R12["EnergyNetWarning"]
- 66 [-]: LE        0 R12 K16    ; if R12 > 2.000000 then PC := 83
- 67 [-]: JMP       83           ; PC := 83
- 68 [-]: CONST     R12 1        ; R12 := 1.000000
- 69 [-]: LEN       R13 R5       ; R13 := # R5
- 70 [-]: CONST     R14 1        ; R14 := 1.000000
- 71 [-]: FORPREP   R12 82       ; R12 -= R14; PC := 82
- 72 [-]: SELF      R16 R1 K17   ; R17 := R1; R16 := R1[0xbebad19f]
- 73 [-]: GETTABLE  R18 R5 R15   ; R18 := R5[R15]
- 74 [-]: CALL      R16 3 2      ; R16 := R16(R17,R18)
- 75 [-]: GETGLOBAL R17 K18      ; R17 := 0x443a8d0b
- 76 [-]: LT        0 R16 R17    ; if R16 >= R17 then PC := 82
- 77 [-]: JMP       82           ; PC := 82
- 78 [-]: GETTABLE  R16 R5 R15   ; R16 := R5[R15]
- 79 [-]: SELF      R16 R16 K19  ; R17 := R16; R16 := R16[0x2a748f85]
- 80 [-]: GETGLOBAL R18 K20      ; R18 := 0xfd2cd767
- 81 [-]: CALL      R16 3 1      ; R16(R17,R18)
- 82 [-]: FORLOOP   R12 72       ; R12 += R14; if R12 <= R13 then begin PC := 72; R15 := R12 end
- 83 [-]: GETUPVAL  R16 U0       ; R16 := U0
- 84 [-]: GETTABLE  R16 R16 K21  ; R16 := R16[0x9742b85b]
- 85 [-]: GETGLOBAL R17 K2       ; R17 := _T
- 86 [-]: GETTABLE  R17 R17 K22  ; R17 := R17["MissionTransmissionSet"]
- 87 [-]: GETGLOBAL R18 K23      ; R18 := 0x0469f296
- 88 [-]: LOADK     R19 K24      ; R19 := "EnergyNetTrapped"
- 89 [-]: CALL      R18 2 0      ; R18,... := R18(R19)
- 90 [-]: CALL      R16 0 1      ; R16(R17,...)
- 91 [-]: GETGLOBAL R16 K5       ; R16 := 0x89326c93
- 92 [-]: SELF      R16 R16 K25  ; R17 := R16; R16 := R16[0x05909209]
- 93 [-]: GETGLOBAL R18 K26      ; R18 := 0x036a8e35
- 94 [-]: MOVE      R19 R8       ; R19 := R8
- 95 [-]: MOVE      R20 R9       ; R20 := R9
- 96 [-]: MOVE      R21 R0       ; R21 := R0
- 97 [-]: MOVE      R22 R1       ; R22 := R1
- 98 [-]: CALL      R16 7 2      ; R16 := R16(R17,R18,R19,R20,R21,R22)
- 99 [-]: MOVE      R11 R16      ; R11 := R16
-100 [-]: SELF      R16 R1 K27   ; R17 := R1; R16 := R1[0x47901f07]
-101 [-]: GETGLOBAL R18 K28      ; R18 := 0x0757c943
-102 [-]: GETGLOBAL R19 K29      ; R19 := EMPTY_SYMBOL
-103 [-]: GETGLOBAL R20 K30      ; R20 := 0xa421af95
-104 [-]: CONST     R21 0        ; R21 := 0.000000
-105 [-]: CONST     R22 1        ; R22 := 1.000000
-106 [-]: CONST     R23 0        ; R23 := 0.000000
-107 [-]: CALL      R20 4 0      ; R20,... := R20(R21,R22,R23)
-108 [-]: CALL      R16 0 1      ; R16(R17,...)
-109 [-]: CONST     R16 1        ; R16 := 1.000000
-110 [-]: CONST     R17 30       ; R17 := 30.000000
-111 [-]: CONST     R18 1        ; R18 := 1.000000
-112 [-]: FORPREP   R16 145      ; R16 -= R18; PC := 145
-113 [-]: GETGLOBAL R20 K30      ; R20 := 0xa421af95
-114 [-]: CALL      R20 1 2      ; R20 := R20()
-115 [-]: GETGLOBAL R21 K31      ; R21 := 0xa91ba331
-116 [-]: MOVE      R22 R20      ; R22 := R20
-117 [-]: CALL      R21 2 1      ; R21(R22)
-118 [-]: GETGLOBAL R21 K32      ; R21 := 0xc2892f65
-119 [-]: MOVE      R22 R20      ; R22 := R20
-120 [-]: CALL      R21 2 1      ; R21(R22)
-121 [-]: GETGLOBAL R21 K33      ; R21 := 0x5bced4c4
-122 [-]: GETTABLE  R21 R21 K34  ; R21 := R21[0x3630e649]
-123 [-]: CALL      R21 1 2      ; R21 := R21()
-124 [-]: MUL       R20 R20 R21  ; R20 := R20 * R21
-125 [-]: GETGLOBAL R21 K33      ; R21 := 0x5bced4c4
-126 [-]: GETTABLE  R21 R21 K34  ; R21 := R21[0x3630e649]
-127 [-]: CONST     R22 0        ; R22 := 0.000000
-128 [-]: GETGLOBAL R23 K18      ; R23 := 0x443a8d0b
-129 [-]: CALL      R21 3 2      ; R21 := R21(R22,R23)
-130 [-]: MUL       R20 R20 R21  ; R20 := R20 * R21
-131 [-]: ADD       R21 R8 R20   ; R21 := R8 + R20
-132 [-]: GETGLOBAL R22 K5       ; R22 := 0x89326c93
-133 [-]: SELF      R22 R22 K25  ; R23 := R22; R22 := R22[0x05909209]
-134 [-]: GETGLOBAL R24 K35      ; R24 := 0xa47d3481
-135 [-]: MOVE      R25 R21      ; R25 := R21
-136 [-]: MOVE      R26 R9       ; R26 := R9
-137 [-]: CALL      R22 5 2      ; R22 := R22(R23,R24,R25,R26)
-138 [-]: SETTABLE  R10 R19 R22  ; R10[R19] := R22
-139 [-]: GETTABLE  R22 R10 R19  ; R22 := R10[R19]
-140 [-]: SELF      R22 R22 K36  ; R23 := R22; R22 := R22[0xa83b7094]
-141 [-]: MOVE      R24 R1       ; R24 := R1
-142 [-]: GETGLOBAL R25 K23      ; R25 := 0x0469f296
-143 [-]: CALL      R25 1 0      ; R25,... := R25()
-144 [-]: CALL      R22 0 1      ; R22(R23,...)
-145 [-]: FORLOOP   R16 113      ; R16 += R18; if R16 <= R17 then begin PC := 113; R19 := R16 end
-146 [-]: GETGLOBAL R22 K2       ; R22 := _T
-147 [-]: GETTABLE  R22 R22 K3   ; R22 := R22["gSpaceTrap"]
-148 [-]: SETTABLE  R22 R4 K37   ; R22[R4] := true
-149 [-]: CONST     R22 1        ; R22 := 1.000000
-150 [-]: LEN       R23 R5       ; R23 := # R5
-151 [-]: CONST     R24 1        ; R24 := 1.000000
-152 [-]: FORPREP   R22 215      ; R22 -= R24; PC := 215
-153 [-]: SELF      R26 R1 K17   ; R27 := R1; R26 := R1[0xbebad19f]
-154 [-]: GETTABLE  R28 R5 R25   ; R28 := R5[R25]
-155 [-]: CALL      R26 3 2      ; R26 := R26(R27,R28)
-156 [-]: GETGLOBAL R27 K18      ; R27 := 0x443a8d0b
-157 [-]: LT        0 R26 R27    ; if R26 >= R27 then PC := 192
-158 [-]: JMP       192          ; PC := 192
-159 [-]: CONST     R26 1        ; R26 := 1.000000
-160 [-]: GETGLOBAL R27 K38      ; R27 := 0x35b2d0f5
-161 [-]: CONST     R28 1        ; R28 := 1.000000
-162 [-]: FORPREP   R26 191      ; R26 -= R28; PC := 191
-163 [-]: GETGLOBAL R30 K39      ; R30 := 0x55730e1a
-164 [-]: CONST     R31 1        ; R31 := 1.000000
-165 [-]: LEN       R32 R6       ; R32 := # R6
-166 [-]: CALL      R30 3 2      ; R30 := R30(R31,R32)
-167 [-]: GETTABLE  R30 R6 R30   ; R30 := R6[R30]
-168 [-]: SELF      R31 R30 K11  ; R32 := R30; R31 := R30[0xd1586535]
-169 [-]: CALL      R31 2 2      ; R31 := R31(R32)
-170 [-]: SELF      R32 R30 K12  ; R33 := R30; R32 := R30[0xcb3851b8]
-171 [-]: CALL      R32 2 2      ; R32 := R32(R33)
-172 [-]: GETTABLE  R33 R32 K40  ; R33 := R32["pitch"]
-173 [-]: ADD       R33 R33 K41  ; R33 := R33 + 90.000000
-174 [-]: SETTABLE  R32 K40 R33  ; R32["pitch"] := R33
-175 [-]: GETGLOBAL R33 K5       ; R33 := 0x89326c93
-176 [-]: SELF      R33 R33 K25  ; R34 := R33; R33 := R33[0x05909209]
-177 [-]: GETGLOBAL R35 K42      ; R35 := 0x945f9957
-178 [-]: MOVE      R36 R31      ; R36 := R31
-179 [-]: MOVE      R37 R32      ; R37 := R32
-180 [-]: CALL      R33 5 2      ; R33 := R33(R34,R35,R36,R37)
-181 [-]: GETGLOBAL R34 K5       ; R34 := 0x89326c93
-182 [-]: SELF      R34 R34 K25  ; R35 := R34; R34 := R34[0x05909209]
-183 [-]: GETGLOBAL R36 K43      ; R36 := 0x78403f35
-184 [-]: MOVE      R37 R31      ; R37 := R31
-185 [-]: MOVE      R38 R32      ; R38 := R32
-186 [-]: CALL      R34 5 2      ; R34 := R34(R35,R36,R37,R38)
-187 [-]: SETTABLE  R7 R29 R34   ; R7[R29] := R34
-188 [-]: GETGLOBAL R34 K44      ; R34 := 0xcbd666e1
-189 [-]: GETGLOBAL R35 K45      ; R35 := 0x0b03bc9b
-190 [-]: CALL      R34 2 1      ; R34(R35)
-191 [-]: FORLOOP   R26 163      ; R26 += R28; if R26 <= R27 then begin PC := 163; R29 := R26 end
-192 [-]: GETGLOBAL R34 K1       ; R34 := 0x7b998233
-193 [-]: MOVE      R35 R7       ; R35 := R7
-194 [-]: CALL      R34 2 2      ; R34 := R34(R35)
-195 [-]: TEST      R34 1        ; if R34 then PC := 215
-196 [-]: JMP       215          ; PC := 215
-197 [-]: CONST     R34 1        ; R34 := 1.000000
-198 [-]: LEN       R35 R7       ; R35 := # R7
-199 [-]: CONST     R36 1        ; R36 := 1.000000
-200 [-]: FORPREP   R34 214      ; R34 -= R36; PC := 214
-201 [-]: GETGLOBAL R38 K1       ; R38 := 0x7b998233
-202 [-]: GETTABLE  R39 R7 R37   ; R39 := R7[R37]
-203 [-]: CALL      R38 2 2      ; R38 := R38(R39)
-204 [-]: TEST      R38 1        ; if R38 then PC := 214
-205 [-]: JMP       214          ; PC := 214
-206 [-]: GETTABLE  R38 R7 R37   ; R38 := R7[R37]
-207 [-]: SELF      R38 R38 K46  ; R39 := R38; R38 := R38[0x263a3cc2]
-208 [-]: MOVE      R40 R1       ; R40 := R1
-209 [-]: CALL      R38 3 1      ; R38(R39,R40)
-210 [-]: GETTABLE  R38 R7 R37   ; R38 := R7[R37]
-211 [-]: SELF      R38 R38 K47  ; R39 := R38; R38 := R38[0x419785d7]
-212 [-]: GETTABLE  R40 R5 R25   ; R40 := R5[R25]
-213 [-]: CALL      R38 3 1      ; R38(R39,R40)
-214 [-]: FORLOOP   R34 201      ; R34 += R36; if R34 <= R35 then begin PC := 201; R37 := R34 end
-215 [-]: FORLOOP   R22 153      ; R22 += R24; if R22 <= R23 then begin PC := 153; R25 := R22 end
-216 [-]: RETURN    R0 1         ; return 
+       0 [-]: NAMECALL R4 R1 K0 [0x388577D5]
+       1 [-]: CALL R4 1 1  
+       2 [-]: GETIMPORT R6 3 [nil]
+       3 [-]: FASTCALL1 62 R6 L0
+       4 [-]: GETIMPORT R5 5 [nil]
+       5 [-]: CALL R5 1 1  
+L 0:   6 [-]: JUMPIFNOT R5 L1
+       7 [-]: GETIMPORT R5 6 [nil]
+       8 [-]: NEWTABLE R6 0 0
+       9 [-]: SETTABLEKS R6 R5 K2 ["gSpaceTrap"]
+L 1:  10 [-]: GETIMPORT R7 3 [nil]
+      11 [-]: GETTABLE R6 R7 R4
+      12 [-]: FASTCALL1 62 R6 L2
+      13 [-]: GETIMPORT R5 5 [nil]
+      14 [-]: CALL R5 1 1  
+L 2:  15 [-]: JUMPIFNOT R5 L3
+      16 [-]: GETIMPORT R5 3 [nil]
+      17 [-]: LOADB R6 0   
+      18 [-]: SETTABLE R6 R5 R4
+L 3:  19 [-]: GETIMPORT R5 8 [nil]
+      20 [-]: NAMECALL R5 R5 K9 [0x8B5B1F58]
+      21 [-]: CALL R5 1 1  
+      22 [-]: GETIMPORT R8 11 [nil]
+      23 [-]: NAMECALL R6 R1 K12 [0xC1595BD5]
+      24 [-]: CALL R6 2 1  
+      25 [-]: NEWTABLE R7 0 0
+      26 [-]: FASTCALL1 62 R6 L4
+      27 [-]: MOVE R9 R6   
+      28 [-]: GETIMPORT R8 5 [nil]
+      29 [-]: CALL R8 1 1  
+L 4:  30 [-]: JUMPIFNOT R8 L5
+      31 [-]: GETIMPORT R8 14 [nil]
+      32 [-]: LOADK R9 K15 ["no missile waypoints found"]
+      33 [-]: CALL R8 1 0  
+      34 [-]: RETURN R0 0  
+L 5:  35 [-]: NAMECALL R8 R1 K16 [0xD1586535]
+      36 [-]: CALL R8 1 1  
+      37 [-]: NAMECALL R9 R1 K17 [0xCB3851B8]
+      38 [-]: CALL R9 1 1  
+      39 [-]: NEWTABLE R10 0 0
+      40 [-]: LOADNIL R11  
+      41 [-]: GETIMPORT R12 19 [nil]
+      42 [-]: JUMPIFNOT R12 L13
+      43 [-]: GETIMPORT R13 3 [nil]
+      44 [-]: GETTABLE R12 R13 R4
+      45 [-]: JUMPIF R12 L13
+      46 [-]: GETIMPORT R12 21 [nil]
+      47 [-]: JUMPIF R12 L6
+      48 [-]: GETIMPORT R12 6 [nil]
+      49 [-]: LOADN R13 1  
+      50 [-]: SETTABLEKS R13 R12 K20 ["EnergyNetWarning"]
+      51 [-]: JUMP L7
+     
+L 6:  52 [-]: GETIMPORT R12 6 [nil]
+      53 [-]: GETIMPORT R14 21 [nil]
+      54 [-]: ADDK R13 R14 K22 [1]
+      55 [-]: SETTABLEKS R13 R12 K20 ["EnergyNetWarning"]
+L 7:  56 [-]: GETIMPORT R12 21 [nil]
+      57 [-]: LOADN R13 2  
+      58 [-]: JUMPIFNOTLE R12 R13 L10
+      59 [-]: LOADN R14 1  
+      60 [-]: LENGTH R12 R5
+      61 [-]: LOADN R13 1  
+      62 [-]: FORNPREP R12 L10
+L 8:  63 [-]: GETTABLE R17 R5 R14
+      64 [-]: NAMECALL R15 R1 K23 [0xBEBAD19F]
+      65 [-]: CALL R15 2 1 
+      66 [-]: GETIMPORT R16 25 [nil]
+      67 [-]: JUMPIFNOTLT R15 R16 L9
+      68 [-]: GETTABLE R15 R5 R14
+      69 [-]: GETIMPORT R17 27 [nil]
+      70 [-]: NAMECALL R15 R15 K28 [0x2A748F85]
+      71 [-]: CALL R15 2 0 
+L 9:  72 [-]: FORNLOOP R12 L8
+L10:  73 [-]: GETUPVAL R13 0
+      74 [-]: GETTABLEKS R12 R13 K29 [0x9742B85B]
+      75 [-]: GETIMPORT R13 31 [nil]
+      76 [-]: GETIMPORT R14 33 [nil]
+      77 [-]: LOADK R15 K34 ["EnergyNetTrapped"]
+      78 [-]: CALL R14 1 -1
+      79 [-]: CALL R12 -1 0
+      80 [-]: GETIMPORT R12 8 [nil]
+      81 [-]: GETIMPORT R14 36 [nil]
+      82 [-]: MOVE R15 R8  
+      83 [-]: MOVE R16 R9  
+      84 [-]: MOVE R17 R0  
+      85 [-]: MOVE R18 R1  
+      86 [-]: NAMECALL R12 R12 K37 [0x05909209]
+      87 [-]: CALL R12 6 1 
+      88 [-]: MOVE R11 R12 
+      89 [-]: GETIMPORT R14 39 [nil]
+      90 [-]: GETIMPORT R15 41 [nil]
+      91 [-]: GETIMPORT R16 43 [nil]
+      92 [-]: LOADN R17 0  
+      93 [-]: LOADN R18 1  
+      94 [-]: LOADN R19 0  
+      95 [-]: CALL R16 3 -1
+      96 [-]: NAMECALL R12 R1 K44 [0x47901F07]
+      97 [-]: CALL R12 -1 0
+      98 [-]: LOADN R14 1  
+      99 [-]: LOADN R12 30 
+     100 [-]: LOADN R13 1  
+     101 [-]: FORNPREP R12 L12
+L11: 102 [-]: GETIMPORT R15 43 [nil]
+     103 [-]: CALL R15 0 1 
+     104 [-]: GETIMPORT R16 46 [nil]
+     105 [-]: MOVE R17 R15 
+     106 [-]: CALL R16 1 0 
+     107 [-]: GETIMPORT R16 48 [nil]
+     108 [-]: MOVE R17 R15 
+     109 [-]: CALL R16 1 0 
+     110 [-]: GETIMPORT R16 51 [nil]
+     111 [-]: CALL R16 0 1 
+     112 [-]: MUL R15 R15 R16
+     113 [-]: GETIMPORT R16 51 [nil]
+     114 [-]: LOADN R17 0  
+     115 [-]: GETIMPORT R18 25 [nil]
+     116 [-]: CALL R16 2 1 
+     117 [-]: MUL R15 R15 R16
+     118 [-]: ADD R16 R8 R15
+     119 [-]: GETIMPORT R17 8 [nil]
+     120 [-]: GETIMPORT R19 53 [nil]
+     121 [-]: MOVE R20 R16 
+     122 [-]: MOVE R21 R9  
+     123 [-]: NAMECALL R17 R17 K37 [0x05909209]
+     124 [-]: CALL R17 4 1 
+     125 [-]: SETTABLE R17 R10 R14
+     126 [-]: GETTABLE R17 R10 R14
+     127 [-]: MOVE R19 R1  
+     128 [-]: GETIMPORT R20 33 [nil]
+     129 [-]: CALL R20 0 -1
+     130 [-]: NAMECALL R17 R17 K54 [0xA83B7094]
+     131 [-]: CALL R17 -1 0
+     132 [-]: FORNLOOP R12 L11
+L12: 133 [-]: GETIMPORT R12 3 [nil]
+     134 [-]: LOADB R13 1  
+     135 [-]: SETTABLE R13 R12 R4
+L13: 136 [-]: LOADN R14 1  
+     137 [-]: LENGTH R12 R5
+     138 [-]: LOADN R13 1  
+     139 [-]: FORNPREP R12 L22
+L14: 140 [-]: GETTABLE R17 R5 R14
+     141 [-]: NAMECALL R15 R1 K23 [0xBEBAD19F]
+     142 [-]: CALL R15 2 1 
+     143 [-]: GETIMPORT R16 25 [nil]
+     144 [-]: JUMPIFNOTLT R15 R16 L16
+     145 [-]: LOADN R17 1  
+     146 [-]: GETIMPORT R15 56 [nil]
+     147 [-]: LOADN R16 1  
+     148 [-]: FORNPREP R15 L16
+L15: 149 [-]: GETIMPORT R19 58 [nil]
+     150 [-]: LOADN R20 1  
+     151 [-]: LENGTH R21 R6
+     152 [-]: CALL R19 2 1 
+     153 [-]: GETTABLE R18 R6 R19
+     154 [-]: NAMECALL R19 R18 K16 [0xD1586535]
+     155 [-]: CALL R19 1 1 
+     156 [-]: NAMECALL R20 R18 K17 [0xCB3851B8]
+     157 [-]: CALL R20 1 1 
+     158 [-]: GETTABLEKS R22 R20 K60 ["pitch"]
+     159 [-]: ADDK R21 R22 K59 [90]
+     160 [-]: SETTABLEKS R21 R20 K60 ["pitch"]
+     161 [-]: GETIMPORT R21 8 [nil]
+     162 [-]: GETIMPORT R23 62 [nil]
+     163 [-]: MOVE R24 R19 
+     164 [-]: MOVE R25 R20 
+     165 [-]: NAMECALL R21 R21 K37 [0x05909209]
+     166 [-]: CALL R21 4 0 
+     167 [-]: GETIMPORT R21 8 [nil]
+     168 [-]: GETIMPORT R23 64 [nil]
+     169 [-]: MOVE R24 R19 
+     170 [-]: MOVE R25 R20 
+     171 [-]: NAMECALL R21 R21 K37 [0x05909209]
+     172 [-]: CALL R21 4 1 
+     173 [-]: SETTABLE R21 R7 R17
+     174 [-]: GETIMPORT R21 66 [nil]
+     175 [-]: GETIMPORT R22 68 [nil]
+     176 [-]: CALL R21 1 0 
+     177 [-]: FORNLOOP R15 L15
+L16: 178 [-]: FASTCALL1 62 R7 L17
+     179 [-]: MOVE R16 R7  
+     180 [-]: GETIMPORT R15 5 [nil]
+     181 [-]: CALL R15 1 1 
+L17: 182 [-]: JUMPIF R15 L21
+     183 [-]: LOADN R17 1  
+     184 [-]: LENGTH R15 R7
+     185 [-]: LOADN R16 1  
+     186 [-]: FORNPREP R15 L21
+L18: 187 [-]: GETTABLE R19 R7 R17
+     188 [-]: FASTCALL1 62 R19 L19
+     189 [-]: GETIMPORT R18 5 [nil]
+     190 [-]: CALL R18 1 1 
+L19: 191 [-]: JUMPIF R18 L20
+     192 [-]: GETTABLE R18 R7 R17
+     193 [-]: MOVE R20 R1  
+     194 [-]: NAMECALL R18 R18 K69 [0x263A3CC2]
+     195 [-]: CALL R18 2 0 
+     196 [-]: GETTABLE R18 R7 R17
+     197 [-]: GETTABLE R20 R5 R14
+     198 [-]: NAMECALL R18 R18 K70 [0x419785D7]
+     199 [-]: CALL R18 2 0 
+L20: 200 [-]: FORNLOOP R15 L18
+L21: 201 [-]: FORNLOOP R12 L14
+L22: 202 [-]: RETURN R0 0  
 
 
-; Function #4:
-;
 ; Name:            
 ; Defined at line: 139
 ; #Upvalues:       1
@@ -318,63 +292,58 @@
 ; Is_vararg:       0
 ; Max Stack Size:  6
 
-  1 [-]: GETGLOBAL R1 K0        ; R1 := 0x89326c93
-  2 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1[0x4e5939a5]
-  3 [-]: GETGLOBAL R3 K2        ; R3 := 0x6cbb4385
-  4 [-]: SELF      R4 R0 K3     ; R5 := R0; R4 := R0[0xd1586535]
-  5 [-]: CALL      R4 2 2       ; R4 := R4(R5)
-  6 [-]: CONST     R5 20        ; R5 := 20.000000
-  7 [-]: CALL      R1 5 2       ; R1 := R1(R2,R3,R4,R5)
-  8 [-]: GETGLOBAL R2 K4        ; R2 := 0x7b998233
-  9 [-]: MOVE      R3 R1        ; R3 := R1
- 10 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 11 [-]: TEST      R2 0         ; if not R2 then PC := 16
- 12 [-]: JMP       16           ; PC := 16
- 13 [-]: SELF      R2 R0 K5     ; R3 := R0; R2 := R0[0xa2880940]
- 14 [-]: CALL      R2 2 1       ; R2(R3)
- 15 [-]: RETURN    R0 1         ; return 
- 16 [-]: SELF      R2 R1 K6     ; R3 := R1; R2 := R1[0xc8442850]
- 17 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 18 [-]: CONST     R3 0         ; R3 := 0.000000
- 19 [-]: LT        0 K7 R2      ; if 0.000000 >= R2 then PC := 45
- 20 [-]: JMP       45           ; PC := 45
- 21 [-]: SELF      R4 R1 K6     ; R5 := R1; R4 := R1[0xc8442850]
- 22 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 23 [-]: MOVE      R2 R4        ; R2 := R4
- 24 [-]: GETGLOBAL R4 K8        ; R4 := _T
- 25 [-]: GETTABLE  R4 R4 K9     ; R4 := R4["EnergyNetWarning"]
- 26 [-]: TEST      R4 0         ; if not R4 then PC := 32
- 27 [-]: JMP       32           ; PC := 32
- 28 [-]: GETGLOBAL R4 K8        ; R4 := _T
- 29 [-]: GETTABLE  R4 R4 K9     ; R4 := R4["EnergyNetWarning"]
- 30 [-]: LE        0 R4 K10     ; if R4 > 2.000000 then PC := 41
- 31 [-]: JMP       41           ; PC := 41
- 32 [-]: GETGLOBAL R4 K11       ; R4 := 0x67652851
- 33 [-]: CALL      R4 1 2       ; R4 := R4()
- 34 [-]: ADD       R3 R3 R4     ; R3 := R3 + R4
- 35 [-]: LT        0 K12 R3     ; if 30.000000 >= R3 then PC := 41
- 36 [-]: JMP       41           ; PC := 41
- 37 [-]: GETUPVAL  R4 U0        ; R4 := U0
- 38 [-]: GETGLOBAL R5 K13       ; R5 := 0xefb6326d
- 39 [-]: CALL      R4 2 1       ; R4(R5)
- 40 [-]: CONST     R3 0         ; R3 := 0.000000
- 41 [-]: GETGLOBAL R4 K14       ; R4 := 0xcbd666e1
- 42 [-]: CONST     R5 0         ; R5 := 0.000000
- 43 [-]: CALL      R4 2 1       ; R4(R5)
- 44 [-]: JMP       19           ; PC := 19
- 45 [-]: GETGLOBAL R4 K8        ; R4 := _T
- 46 [-]: GETTABLE  R4 R4 K9     ; R4 := R4["EnergyNetWarning"]
- 47 [-]: TEST      R4 0         ; if not R4 then PC := 53
- 48 [-]: JMP       53           ; PC := 53
- 49 [-]: GETGLOBAL R4 K8        ; R4 := _T
- 50 [-]: GETTABLE  R4 R4 K9     ; R4 := R4["EnergyNetWarning"]
- 51 [-]: LE        0 R4 K10     ; if R4 > 2.000000 then PC := 56
- 52 [-]: JMP       56           ; PC := 56
- 53 [-]: GETUPVAL  R4 U0        ; R4 := U0
- 54 [-]: GETGLOBAL R5 K15       ; R5 := 0x1d1e5b96
- 55 [-]: CALL      R4 2 1       ; R4(R5)
- 56 [-]: SELF      R4 R0 K5     ; R5 := R0; R4 := R0[0xa2880940]
- 57 [-]: CALL      R4 2 1       ; R4(R5)
- 58 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R1 1 [nil]
+       1 [-]: GETIMPORT R3 3 [nil]
+       2 [-]: NAMECALL R4 R0 K4 [0xD1586535]
+       3 [-]: CALL R4 1 1  
+       4 [-]: LOADN R5 20  
+       5 [-]: NAMECALL R1 R1 K5 [0x4E5939A5]
+       6 [-]: CALL R1 4 1  
+       7 [-]: FASTCALL1 62 R1 L0
+       8 [-]: MOVE R3 R1   
+       9 [-]: GETIMPORT R2 7 [nil]
+      10 [-]: CALL R2 1 1  
+L 0:  11 [-]: JUMPIFNOT R2 L1
+      12 [-]: NAMECALL R2 R0 K8 [0xA2880940]
+      13 [-]: CALL R2 1 0  
+      14 [-]: RETURN R0 0  
+L 1:  15 [-]: NAMECALL R2 R1 K9 [0xC8442850]
+      16 [-]: CALL R2 1 1  
+      17 [-]: LOADN R3 0   
+L 2:  18 [-]: LOADN R4 0   
+      19 [-]: JUMPIFNOTLT R4 R2 L5
+      20 [-]: NAMECALL R4 R1 K9 [0xC8442850]
+      21 [-]: CALL R4 1 1  
+      22 [-]: MOVE R2 R4   
+      23 [-]: GETIMPORT R4 12 [nil]
+      24 [-]: JUMPIFNOT R4 L3
+      25 [-]: GETIMPORT R4 12 [nil]
+      26 [-]: LOADN R5 2   
+      27 [-]: JUMPIFNOTLE R4 R5 L4
+L 3:  28 [-]: GETIMPORT R4 14 [nil]
+      29 [-]: CALL R4 0 1  
+      30 [-]: ADD R3 R3 R4 
+      31 [-]: LOADN R4 30  
+      32 [-]: JUMPIFNOTLT R4 R3 L4
+      33 [-]: GETUPVAL R4 0
+      34 [-]: GETIMPORT R5 16 [nil]
+      35 [-]: CALL R4 1 0  
+      36 [-]: LOADN R3 0   
+L 4:  37 [-]: GETIMPORT R4 18 [nil]
+      38 [-]: LOADN R5 0   
+      39 [-]: CALL R4 1 0  
+      40 [-]: JUMPBACK L2  
+L 5:  41 [-]: GETIMPORT R4 12 [nil]
+      42 [-]: JUMPIFNOT R4 L6
+      43 [-]: GETIMPORT R4 12 [nil]
+      44 [-]: LOADN R5 2   
+      45 [-]: JUMPIFNOTLE R4 R5 L7
+L 6:  46 [-]: GETUPVAL R4 0
+      47 [-]: GETIMPORT R5 20 [nil]
+      48 [-]: CALL R4 1 0  
+L 7:  49 [-]: NAMECALL R4 R0 K8 [0xA2880940]
+      50 [-]: CALL R4 1 0  
+      51 [-]: RETURN R0 0  
+
 
 

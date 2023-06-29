@@ -1,1166 +1,1334 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
-; Max Stack Size:  20
+; Is_vararg:       1
+; Max Stack Size:  23
 
-  1 [-]: GETGLOBAL R0 K0        ; R0 := 0xaeabecda
-  2 [-]: VARARG    R1 R2        ; R1 := R2 := ...
-  3 [-]: GETGLOBAL R2 K1        ; R2 := package
-  4 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["seeall"]
-  5 [-]: CALL      R0 3 1       ; R0(R1,R2)
-  6 [-]: GETGLOBAL R0 K4        ; R0 := 0x0469f296
-  7 [-]: LOADK     R1 K5        ; R1 := "SKILL_COMMANDER_MAP"
-  8 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  9 [-]: SETGLOBAL R0 K3        ; sSkillCommanderMap := R0
- 10 [-]: GETGLOBAL R0 K4        ; R0 := 0x0469f296
- 11 [-]: LOADK     R1 K7        ; R1 := "SKILL_REMOTE_PLAYER_TRACKING"
- 12 [-]: CALL      R0 2 2       ; R0 := R0(R1)
- 13 [-]: SETGLOBAL R0 K6        ; sSkillRemotePlayerTracking := R0
- 14 [-]: GETGLOBAL R0 K4        ; R0 := 0x0469f296
- 15 [-]: LOADK     R1 K9        ; R1 := "SKILL_REMOTE_PLAYER_POWER"
- 16 [-]: CALL      R0 2 2       ; R0 := R0(R1)
- 17 [-]: SETGLOBAL R0 K8        ; sSkillRemotePlayerPower := R0
- 18 [-]: GETGLOBAL R0 K4        ; R0 := 0x0469f296
- 19 [-]: LOADK     R1 K11       ; R1 := "SKILL_COMMAND_GEAR_MENU"
- 20 [-]: CALL      R0 2 2       ; R0 := R0(R1)
- 21 [-]: SETGLOBAL R0 K10       ; sSkillCommandGearMenu := R0
- 22 [-]: GETGLOBAL R0 K4        ; R0 := 0x0469f296
- 23 [-]: LOADK     R1 K13       ; R1 := "SKILL_REMOTE_PLAYER_DEPLOY"
- 24 [-]: CALL      R0 2 2       ; R0 := R0(R1)
- 25 [-]: SETGLOBAL R0 K12       ; sSkillRemotePlayerDeploy := R0
- 26 [-]: GETGLOBAL R0 K4        ; R0 := 0x0469f296
- 27 [-]: LOADK     R1 K15       ; R1 := "SKILL_RECALL_TO_RJ"
- 28 [-]: CALL      R0 2 2       ; R0 := R0(R1)
- 29 [-]: SETGLOBAL R0 K14       ; sSkillRecallToRailjack := R0
- 30 [-]: GETGLOBAL R0 K4        ; R0 := 0x0469f296
- 31 [-]: LOADK     R1 K17       ; R1 := "SKILL_MECH_SUMMON"
- 32 [-]: CALL      R0 2 2       ; R0 := R0(R1)
- 33 [-]: SETGLOBAL R0 K16       ; sSkillMechSummon := R0
- 34 [-]: GETGLOBAL R0 K4        ; R0 := 0x0469f296
- 35 [-]: LOADK     R1 K19       ; R1 := "SKILL_RJ_BOOST"
- 36 [-]: CALL      R0 2 2       ; R0 := R0(R1)
- 37 [-]: SETGLOBAL R0 K18       ; sSkillRJBoost := R0
- 38 [-]: GETGLOBAL R0 K4        ; R0 := 0x0469f296
- 39 [-]: LOADK     R1 K21       ; R1 := "SKILL_RJ_DODGE"
- 40 [-]: CALL      R0 2 2       ; R0 := R0(R1)
- 41 [-]: SETGLOBAL R0 K20       ; sSkillRJDodge := R0
- 42 [-]: GETGLOBAL R0 K4        ; R0 := 0x0469f296
- 43 [-]: LOADK     R1 K23       ; R1 := "SKILL_RJ_BLINK"
- 44 [-]: CALL      R0 2 2       ; R0 := R0(R1)
- 45 [-]: SETGLOBAL R0 K22       ; sSkillRJBlink := R0
- 46 [-]: GETGLOBAL R0 K4        ; R0 := 0x0469f296
- 47 [-]: LOADK     R1 K25       ; R1 := "SKILL_RJ_DRIFT"
- 48 [-]: CALL      R0 2 2       ; R0 := R0(R1)
- 49 [-]: SETGLOBAL R0 K24       ; sSkillRJDrift := R0
- 50 [-]: GETGLOBAL R0 K4        ; R0 := 0x0469f296
- 51 [-]: LOADK     R1 K27       ; R1 := "SKILL_RJ_CLEAR_PROJECTILE"
- 52 [-]: CALL      R0 2 2       ; R0 := R0(R1)
- 53 [-]: SETGLOBAL R0 K26       ; sSkillRJClearProjectile := R0
- 54 [-]: GETGLOBAL R0 K4        ; R0 := 0x0469f296
- 55 [-]: LOADK     R1 K29       ; R1 := "SKILL_VACUUM_BUFF"
- 56 [-]: CALL      R0 2 2       ; R0 := R0(R1)
- 57 [-]: SETGLOBAL R0 K28       ; sSkillVacuumBuff := R0
- 58 [-]: GETGLOBAL R0 K4        ; R0 := 0x0469f296
- 59 [-]: LOADK     R1 K31       ; R1 := "SKILL_LOOT_POI_MARKER"
- 60 [-]: CALL      R0 2 2       ; R0 := R0(R1)
- 61 [-]: SETGLOBAL R0 K30       ; sSkillLootPOIMarker := R0
- 62 [-]: GETGLOBAL R0 K4        ; R0 := 0x0469f296
- 63 [-]: LOADK     R1 K33       ; R1 := "SKILL_AW_CANNON"
- 64 [-]: CALL      R0 2 2       ; R0 := R0(R1)
- 65 [-]: SETGLOBAL R0 K32       ; sSkillAWCannon := R0
- 66 [-]: GETGLOBAL R0 K4        ; R0 := 0x0469f296
- 67 [-]: LOADK     R1 K35       ; R1 := "SKILL_RAMSLED_EVASION"
- 68 [-]: CALL      R0 2 2       ; R0 := R0(R1)
- 69 [-]: SETGLOBAL R0 K34       ; sSkillRamsledEvasion := R0
- 70 [-]: GETGLOBAL R0 K4        ; R0 := 0x0469f296
- 71 [-]: LOADK     R1 K37       ; R1 := "SKILL_RJ_LEAD_INDICATOR"
- 72 [-]: CALL      R0 2 2       ; R0 := R0(R1)
- 73 [-]: SETGLOBAL R0 K36       ; sSkillRJLeadIndicator := R0
- 74 [-]: GETGLOBAL R0 K4        ; R0 := 0x0469f296
- 75 [-]: LOADK     R1 K39       ; R1 := "SKILL_RJ_AR_GIMBAL"
- 76 [-]: CALL      R0 2 2       ; R0 := R0(R1)
- 77 [-]: SETGLOBAL R0 K38       ; sSkillRJARGimbal := R0
- 78 [-]: GETGLOBAL R0 K4        ; R0 := 0x0469f296
- 79 [-]: LOADK     R1 K41       ; R1 := "SKILL_RJ_ORDNANCE_LOCK_ON"
- 80 [-]: CALL      R0 2 2       ; R0 := R0(R1)
- 81 [-]: SETGLOBAL R0 K40       ; sSkillRJOrdLockOn := R0
- 82 [-]: GETGLOBAL R0 K4        ; R0 := 0x0469f296
- 83 [-]: LOADK     R1 K43       ; R1 := "SKILL_AIM_INDICATOR_CONVERGE"
- 84 [-]: CALL      R0 2 2       ; R0 := R0(R1)
- 85 [-]: SETGLOBAL R0 K42       ; sSkillAimIndicatorConverge := R0
- 86 [-]: GETGLOBAL R0 K4        ; R0 := 0x0469f296
- 87 [-]: LOADK     R1 K45       ; R1 := "SKILL_RJ_RELOAD"
- 88 [-]: CALL      R0 2 2       ; R0 := R0(R1)
- 89 [-]: SETGLOBAL R0 K44       ; sSkillRJReload := R0
- 90 [-]: GETGLOBAL R0 K4        ; R0 := 0x0469f296
- 91 [-]: LOADK     R1 K47       ; R1 := "SKILL_MULTI_TOOL_EXPERT"
- 92 [-]: CALL      R0 2 2       ; R0 := R0(R1)
- 93 [-]: SETGLOBAL R0 K46       ; sSkillMultiToolExpert := R0
- 94 [-]: GETGLOBAL R0 K4        ; R0 := 0x0469f296
- 95 [-]: LOADK     R1 K49       ; R1 := "SKILL_BC_ORDNANCE"
- 96 [-]: CALL      R0 2 2       ; R0 := R0(R1)
- 97 [-]: SETGLOBAL R0 K48       ; sSkillBCOrd := R0
- 98 [-]: GETGLOBAL R0 K4        ; R0 := 0x0469f296
- 99 [-]: LOADK     R1 K51       ; R1 := "SKILL_BC_SUPER_AMMO"
-100 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-101 [-]: SETGLOBAL R0 K50       ; sSkillBCSuperAmmo := R0
-102 [-]: GETGLOBAL R0 K4        ; R0 := 0x0469f296
-103 [-]: LOADK     R1 K53       ; R1 := "SKILL_BC_UBER_FIX"
-104 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-105 [-]: SETGLOBAL R0 K52       ; sSkillBCUberFix := R0
-106 [-]: GETGLOBAL R0 K4        ; R0 := 0x0469f296
-107 [-]: LOADK     R1 K55       ; R1 := "SKILL_BC_HEAL"
-108 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-109 [-]: SETGLOBAL R0 K54       ; sSkillBCHeal := R0
-110 [-]: GETGLOBAL R0 K4        ; R0 := 0x0469f296
-111 [-]: LOADK     R1 K57       ; R1 := "SKILL_CREW_COMMAND"
-112 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-113 [-]: SETGLOBAL R0 K56       ; sSkillCrewCommand := R0
-114 [-]: GETGLOBAL R0 K4        ; R0 := 0x0469f296
-115 [-]: LOADK     R1 K59       ; R1 := "SKILL_SECOND_COMMAND"
-116 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-117 [-]: SETGLOBAL R0 K58       ; sSkillSecondCommand := R0
-118 [-]: GETGLOBAL R0 K4        ; R0 := 0x0469f296
-119 [-]: LOADK     R1 K61       ; R1 := "SKILL_DAMAGE_PER_BOON"
-120 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-121 [-]: SETGLOBAL R0 K60       ; sSkillDamagePerBoon := R0
-122 [-]: GETGLOBAL R0 K4        ; R0 := 0x0469f296
-123 [-]: LOADK     R1 K63       ; R1 := "SKILL_RESTORATION_MOVESPEED"
-124 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-125 [-]: SETGLOBAL R0 K62       ; sSkillRestorationMoveSpeed := R0
-126 [-]: GETGLOBAL R0 K4        ; R0 := 0x0469f296
-127 [-]: LOADK     R1 K65       ; R1 := "SKILL_RADAR_SLOMO"
-128 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-129 [-]: SETGLOBAL R0 K64       ; sSkillRadarSlomo := R0
-130 [-]: GETGLOBAL R0 K4        ; R0 := 0x0469f296
-131 [-]: LOADK     R1 K67       ; R1 := "SKILL_SUMMON_HORSE"
-132 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-133 [-]: SETGLOBAL R0 K66       ; sSkillSummonHorse := R0
-134 [-]: GETGLOBAL R0 K4        ; R0 := 0x0469f296
-135 [-]: LOADK     R1 K69       ; R1 := "SKILL_HORSE_DODGE"
-136 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-137 [-]: SETGLOBAL R0 K68       ; sSkillHorseDodge := R0
-138 [-]: GETGLOBAL R0 K4        ; R0 := 0x0469f296
-139 [-]: LOADK     R1 K71       ; R1 := "SKILL_HORSE_PROTECT"
-140 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-141 [-]: SETGLOBAL R0 K70       ; sSkillHorseProtect := R0
-142 [-]: GETGLOBAL R0 K4        ; R0 := 0x0469f296
-143 [-]: LOADK     R1 K73       ; R1 := "SKILL_HORSE_STOMP"
-144 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-145 [-]: SETGLOBAL R0 K72       ; sSkillHorseStomp := R0
-146 [-]: GETGLOBAL R0 K4        ; R0 := 0x0469f296
-147 [-]: LOADK     R1 K75       ; R1 := "SKILL_HORSE_WARCRY"
-148 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-149 [-]: SETGLOBAL R0 K74       ; sSkillHorseWarcry := R0
-150 [-]: GETGLOBAL R0 K4        ; R0 := 0x0469f296
-151 [-]: LOADK     R1 K77       ; R1 := "SKILL_FAST_TRAVEL"
-152 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-153 [-]: SETGLOBAL R0 K76       ; sSkillFastTravel := R0
-154 [-]: GETGLOBAL R0 K4        ; R0 := 0x0469f296
-155 [-]: LOADK     R1 K79       ; R1 := "SKILL_BOON_OPTIONS"
-156 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-157 [-]: SETGLOBAL R0 K78       ; sSkillBoonOptions := R0
-158 [-]: GETGLOBAL R0 K4        ; R0 := 0x0469f296
-159 [-]: LOADK     R1 K81       ; R1 := "SKILL_WEAPON_OPTIONS"
-160 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-161 [-]: SETGLOBAL R0 K80       ; sSkillWeaponOptions := R0
-162 [-]: GETGLOBAL R0 K4        ; R0 := 0x0469f296
-163 [-]: LOADK     R1 K83       ; R1 := "SKILL_FREE_BOONS"
-164 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-165 [-]: SETGLOBAL R0 K82       ; sSkillFreeBoons := R0
-166 [-]: GETGLOBAL R0 K4        ; R0 := 0x0469f296
-167 [-]: LOADK     R1 K85       ; R1 := "SKILL_WARFRAME_OPTIONS"
-168 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-169 [-]: SETGLOBAL R0 K84       ; sSkillWarframeOptions := R0
-170 [-]: GETGLOBAL R0 K4        ; R0 := 0x0469f296
-171 [-]: LOADK     R1 K87       ; R1 := "SKILL_RARE_BOONS"
-172 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-173 [-]: SETGLOBAL R0 K86       ; sSkillRareBoons := R0
-174 [-]: GETGLOBAL R0 K4        ; R0 := 0x0469f296
-175 [-]: LOADK     R1 K89       ; R1 := "SKILL_REROLL_BOON"
-176 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-177 [-]: SETGLOBAL R0 K88       ; sSkillRerollBoon := R0
-178 [-]: GETGLOBAL R0 K4        ; R0 := 0x0469f296
-179 [-]: LOADK     R1 K91       ; R1 := "SKILL_HEALTH_PER_BOON"
-180 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-181 [-]: SETGLOBAL R0 K90       ; sSkillHealthPerBoon := R0
-182 [-]: CONST     R0 10        ; R0 := 10.000000
-183 [-]: SETGLOBAL R0 K92       ; MAX_SKILL_RANK := R0
-184 [-]: CONST     R0 1         ; R0 := 1.000000
-185 [-]: SETGLOBAL R0 K93       ; CATEGORY_ALL := R0
-186 [-]: CONST     R0 2         ; R0 := 2.000000
-187 [-]: SETGLOBAL R0 K94       ; CATEGORY_CREWSHIP := R0
-188 [-]: CONST     R0 3         ; R0 := 3.000000
-189 [-]: SETGLOBAL R0 K95       ; CATEGORY_PLAYER := R0
-190 [-]: CONST     R0 4         ; R0 := 4.000000
-191 [-]: SETGLOBAL R0 K96       ; CATEGORY_ARCHWING := R0
-192 [-]: CONST     R0 5         ; R0 := 5.000000
-193 [-]: SETGLOBAL R0 K97       ; CATEGORY_MECH := R0
-194 [-]: CONST     R0 6         ; R0 := 6.000000
-195 [-]: SETGLOBAL R0 K98       ; CATEGORY_DRIFTER := R0
-196 [-]: GETGLOBAL R0 K99       ; R0 := 0x7ed0a956
-197 [-]: LOADK     R1 K100      ; R1 := "/Lotus/Types/Game/CrewShip/CrewShipArchwingCannonEmplacement"
-198 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-199 [-]: GETGLOBAL R1 K99       ; R1 := 0x7ed0a956
-200 [-]: LOADK     R2 K101      ; R2 := "/Lotus/Types/Game/CrewShip/CrewShipAvatar"
-201 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-202 [-]: GETGLOBAL R2 K99       ; R2 := 0x7ed0a956
-203 [-]: LOADK     R3 K102      ; R3 := "/Lotus/Weapons/Tenno/Archwing/Melee/ArchMeleeWeapon"
-204 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-205 [-]: GETGLOBAL R3 K99       ; R3 := 0x7ed0a956
-206 [-]: LOADK     R4 K103      ; R4 := "/Lotus/Weapons/Tenno/Archwing/Primary/ArchGun"
-207 [-]: CALL      R3 2 2       ; R3 := R3(R4)
-208 [-]: GETGLOBAL R4 K99       ; R4 := 0x7ed0a956
-209 [-]: LOADK     R5 K104      ; R5 := "/Lotus/Types/Restoratives/LisetAirSupport"
-210 [-]: CALL      R4 2 2       ; R4 := R4(R5)
-211 [-]: GETGLOBAL R5 K99       ; R5 := 0x7ed0a956
-212 [-]: LOADK     R6 K105      ; R6 := "/Lotus/Types/Restoratives/LoadoutTechSummon"
-213 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-214 [-]: GETGLOBAL R6 K99       ; R6 := 0x7ed0a956
-215 [-]: LOADK     R7 K106      ; R7 := "/Lotus/Types/Game/CrewShip/CrewShipHarness"
-216 [-]: CALL      R6 2 2       ; R6 := R6(R7)
-217 [-]: NEWTABLE  R7 0 10      ; R7 := {}
-218 [-]: NEWTABLE  R8 2 0       ; R8 := {}
-219 [-]: NEWTABLE  R9 0 2       ; R9 := {}
-220 [-]: SETTABLE  R9 K108 K110 ; R9["upgradeType"] := 358.000000
-221 [-]: GETGLOBAL R10 K3       ; R10 := sSkillCommanderMap
-222 [-]: SETTABLE  R9 K111 R10  ; R9["filter"] := R10
-223 [-]: NEWTABLE  R10 0 2      ; R10 := {}
-224 [-]: SETTABLE  R10 K108 K110; R10["upgradeType"] := 358.000000
-225 [-]: GETGLOBAL R11 K6       ; R11 := sSkillRemotePlayerTracking
-226 [-]: SETTABLE  R10 K111 R11 ; R10["filter"] := R11
-227 [-]: SETLIST   R8 2 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 2
-228 [-]: SETTABLE  R7 K107 R8   ; R7[1.000000] := R8
-229 [-]: NEWTABLE  R8 1 0       ; R8 := {}
-230 [-]: NEWTABLE  R9 0 2       ; R9 := {}
-231 [-]: SETTABLE  R9 K108 K110 ; R9["upgradeType"] := 358.000000
-232 [-]: GETGLOBAL R10 K8       ; R10 := sSkillRemotePlayerPower
-233 [-]: SETTABLE  R9 K111 R10  ; R9["filter"] := R10
-234 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
-235 [-]: SETTABLE  R7 K112 R8   ; R7[2.000000] := R8
-236 [-]: NEWTABLE  R8 1 0       ; R8 := {}
-237 [-]: NEWTABLE  R9 0 2       ; R9 := {}
-238 [-]: SETTABLE  R9 K108 K110 ; R9["upgradeType"] := 358.000000
-239 [-]: GETGLOBAL R10 K10      ; R10 := sSkillCommandGearMenu
-240 [-]: SETTABLE  R9 K111 R10  ; R9["filter"] := R10
-241 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
-242 [-]: SETTABLE  R7 K113 R8   ; R7[3.000000] := R8
-243 [-]: NEWTABLE  R8 1 0       ; R8 := {}
-244 [-]: NEWTABLE  R9 0 2       ; R9 := {}
-245 [-]: SETTABLE  R9 K108 K110 ; R9["upgradeType"] := 358.000000
-246 [-]: GETGLOBAL R10 K14      ; R10 := sSkillRecallToRailjack
-247 [-]: SETTABLE  R9 K111 R10  ; R9["filter"] := R10
-248 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
-249 [-]: SETTABLE  R7 K114 R8   ; R7[4.000000] := R8
-250 [-]: NEWTABLE  R8 1 0       ; R8 := {}
-251 [-]: NEWTABLE  R9 0 2       ; R9 := {}
-252 [-]: SETTABLE  R9 K108 K110 ; R9["upgradeType"] := 358.000000
-253 [-]: GETGLOBAL R10 K16      ; R10 := sSkillMechSummon
-254 [-]: SETTABLE  R9 K111 R10  ; R9["filter"] := R10
-255 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
-256 [-]: SETTABLE  R7 K115 R8   ; R7[5.000000] := R8
-257 [-]: NEWTABLE  R8 2 0       ; R8 := {}
-258 [-]: NEWTABLE  R9 0 3       ; R9 := {}
-259 [-]: SETTABLE  R9 K108 K117 ; R9["upgradeType"] := 360.000000
-260 [-]: SETTABLE  R9 K118 K119 ; R9["value"] := 0.250000
-261 [-]: SETTABLE  R9 K120 K113 ; R9["operationType"] := 3.000000
-262 [-]: NEWTABLE  R10 0 4      ; R10 := {}
-263 [-]: SETTABLE  R10 K108 K114; R10["upgradeType"] := 4.000000
-264 [-]: SETTABLE  R10 K118 K119; R10["value"] := 0.250000
-265 [-]: SETTABLE  R10 K120 K113; R10["operationType"] := 3.000000
-266 [-]: SETTABLE  R10 K122 R6  ; R10["validType"] := R6
-267 [-]: SETLIST   R8 2 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 2
-268 [-]: SETTABLE  R7 K116 R8   ; R7[6.000000] := R8
-269 [-]: NEWTABLE  R8 1 0       ; R8 := {}
-270 [-]: NEWTABLE  R9 0 3       ; R9 := {}
-271 [-]: SETTABLE  R9 K108 K124 ; R9["upgradeType"] := 359.000000
-272 [-]: SETTABLE  R9 K118 K125 ; R9["value"] := 0.800000
-273 [-]: SETTABLE  R9 K120 K112 ; R9["operationType"] := 2.000000
-274 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
-275 [-]: SETTABLE  R7 K123 R8   ; R7[7.000000] := R8
-276 [-]: NEWTABLE  R8 2 0       ; R8 := {}
-277 [-]: NEWTABLE  R9 0 4       ; R9 := {}
-278 [-]: SETTABLE  R9 K108 K127 ; R9["upgradeType"] := 39.000000
-279 [-]: SETTABLE  R9 K118 K128 ; R9["value"] := 0.750000
-280 [-]: SETTABLE  R9 K120 K112 ; R9["operationType"] := 2.000000
-281 [-]: GETGLOBAL R10 K96      ; R10 := CATEGORY_ARCHWING
-282 [-]: SETTABLE  R9 K129 R10  ; R9["category"] := R10
-283 [-]: NEWTABLE  R10 0 5      ; R10 := {}
-284 [-]: SETTABLE  R10 K108 K130; R10["upgradeType"] := 164.000000
-285 [-]: SETTABLE  R10 K118 K128; R10["value"] := 0.750000
-286 [-]: SETTABLE  R10 K120 K112; R10["operationType"] := 2.000000
-287 [-]: SETTABLE  R10 K122 R5  ; R10["validType"] := R5
-288 [-]: GETGLOBAL R11 K95      ; R11 := CATEGORY_PLAYER
-289 [-]: SETTABLE  R10 K129 R11 ; R10["category"] := R11
-290 [-]: SETLIST   R8 2 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 2
-291 [-]: SETTABLE  R7 K126 R8   ; R7[8.000000] := R8
-292 [-]: NEWTABLE  R8 1 0       ; R8 := {}
-293 [-]: NEWTABLE  R9 0 3       ; R9 := {}
-294 [-]: SETTABLE  R9 K108 K124 ; R9["upgradeType"] := 359.000000
-295 [-]: SETTABLE  R9 K118 K125 ; R9["value"] := 0.800000
-296 [-]: SETTABLE  R9 K120 K112 ; R9["operationType"] := 2.000000
-297 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
-298 [-]: SETTABLE  R7 K131 R8   ; R7[9.000000] := R8
-299 [-]: NEWTABLE  R8 1 0       ; R8 := {}
-300 [-]: NEWTABLE  R9 0 2       ; R9 := {}
-301 [-]: SETTABLE  R9 K108 K110 ; R9["upgradeType"] := 358.000000
-302 [-]: GETGLOBAL R10 K12      ; R10 := sSkillRemotePlayerDeploy
-303 [-]: SETTABLE  R9 K111 R10  ; R9["filter"] := R10
-304 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
-305 [-]: SETTABLE  R7 K132 R8   ; R7[10.000000] := R8
-306 [-]: NEWTABLE  R8 0 10      ; R8 := {}
-307 [-]: NEWTABLE  R9 1 0       ; R9 := {}
-308 [-]: NEWTABLE  R10 0 2      ; R10 := {}
-309 [-]: SETTABLE  R10 K108 K110; R10["upgradeType"] := 358.000000
-310 [-]: GETGLOBAL R11 K18      ; R11 := sSkillRJBoost
-311 [-]: SETTABLE  R10 K111 R11 ; R10["filter"] := R11
-312 [-]: SETLIST   R9 1 1       ; R9[(1-1)*FPF+i] := R(9+i), 1 <= i <= 1
-313 [-]: SETTABLE  R8 K107 R9   ; R8[1.000000] := R9
-314 [-]: NEWTABLE  R9 1 0       ; R9 := {}
-315 [-]: NEWTABLE  R10 0 2      ; R10 := {}
-316 [-]: SETTABLE  R10 K108 K110; R10["upgradeType"] := 358.000000
-317 [-]: GETGLOBAL R11 K20      ; R11 := sSkillRJDodge
-318 [-]: SETTABLE  R10 K111 R11 ; R10["filter"] := R11
-319 [-]: SETLIST   R9 1 1       ; R9[(1-1)*FPF+i] := R(9+i), 1 <= i <= 1
-320 [-]: SETTABLE  R8 K112 R9   ; R8[2.000000] := R9
-321 [-]: NEWTABLE  R9 1 0       ; R9 := {}
-322 [-]: NEWTABLE  R10 0 2      ; R10 := {}
-323 [-]: SETTABLE  R10 K108 K110; R10["upgradeType"] := 358.000000
-324 [-]: GETGLOBAL R11 K26      ; R11 := sSkillRJClearProjectile
-325 [-]: SETTABLE  R10 K111 R11 ; R10["filter"] := R11
-326 [-]: SETLIST   R9 1 1       ; R9[(1-1)*FPF+i] := R(9+i), 1 <= i <= 1
-327 [-]: SETTABLE  R8 K113 R9   ; R8[3.000000] := R9
-328 [-]: NEWTABLE  R9 1 0       ; R9 := {}
-329 [-]: NEWTABLE  R10 0 2      ; R10 := {}
-330 [-]: SETTABLE  R10 K108 K110; R10["upgradeType"] := 358.000000
-331 [-]: GETGLOBAL R11 K24      ; R11 := sSkillRJDrift
-332 [-]: SETTABLE  R10 K111 R11 ; R10["filter"] := R11
-333 [-]: SETLIST   R9 1 1       ; R9[(1-1)*FPF+i] := R(9+i), 1 <= i <= 1
-334 [-]: SETTABLE  R8 K114 R9   ; R8[4.000000] := R9
-335 [-]: NEWTABLE  R9 2 0       ; R9 := {}
-336 [-]: NEWTABLE  R10 0 2      ; R10 := {}
-337 [-]: SETTABLE  R10 K108 K110; R10["upgradeType"] := 358.000000
-338 [-]: GETGLOBAL R11 K30      ; R11 := sSkillLootPOIMarker
-339 [-]: SETTABLE  R10 K111 R11 ; R10["filter"] := R11
-340 [-]: NEWTABLE  R11 0 2      ; R11 := {}
-341 [-]: SETTABLE  R11 K108 K110; R11["upgradeType"] := 358.000000
-342 [-]: GETGLOBAL R12 K28      ; R12 := sSkillVacuumBuff
-343 [-]: SETTABLE  R11 K111 R12 ; R11["filter"] := R12
-344 [-]: SETLIST   R9 2 1       ; R9[(1-1)*FPF+i] := R(9+i), 1 <= i <= 2
-345 [-]: SETTABLE  R8 K115 R9   ; R8[5.000000] := R9
-346 [-]: NEWTABLE  R9 1 0       ; R9 := {}
-347 [-]: NEWTABLE  R10 0 2      ; R10 := {}
-348 [-]: SETTABLE  R10 K108 K110; R10["upgradeType"] := 358.000000
-349 [-]: GETGLOBAL R11 K34      ; R11 := sSkillRamsledEvasion
-350 [-]: SETTABLE  R10 K111 R11 ; R10["filter"] := R11
-351 [-]: SETLIST   R9 1 1       ; R9[(1-1)*FPF+i] := R(9+i), 1 <= i <= 1
-352 [-]: SETTABLE  R8 K116 R9   ; R8[6.000000] := R9
-353 [-]: NEWTABLE  R9 1 0       ; R9 := {}
-354 [-]: NEWTABLE  R10 0 4      ; R10 := {}
-355 [-]: SETTABLE  R10 K108 K133; R10["upgradeType"] := 80.000000
-356 [-]: SETTABLE  R10 K118 K134; R10["value"] := 0.100000
-357 [-]: SETTABLE  R10 K120 K113; R10["operationType"] := 3.000000
-358 [-]: GETGLOBAL R11 K97      ; R11 := CATEGORY_MECH
-359 [-]: SETTABLE  R10 K129 R11 ; R10["category"] := R11
-360 [-]: SETLIST   R9 1 1       ; R9[(1-1)*FPF+i] := R(9+i), 1 <= i <= 1
-361 [-]: SETTABLE  R8 K123 R9   ; R8[7.000000] := R9
-362 [-]: NEWTABLE  R9 1 0       ; R9 := {}
-363 [-]: NEWTABLE  R10 0 4      ; R10 := {}
-364 [-]: SETTABLE  R10 K108 K133; R10["upgradeType"] := 80.000000
-365 [-]: SETTABLE  R10 K118 K135; R10["value"] := 0.200000
-366 [-]: SETTABLE  R10 K120 K113; R10["operationType"] := 3.000000
-367 [-]: GETGLOBAL R11 K96      ; R11 := CATEGORY_ARCHWING
-368 [-]: SETTABLE  R10 K129 R11 ; R10["category"] := R11
-369 [-]: SETLIST   R9 1 1       ; R9[(1-1)*FPF+i] := R(9+i), 1 <= i <= 1
-370 [-]: SETTABLE  R8 K126 R9   ; R8[8.000000] := R9
-371 [-]: NEWTABLE  R9 2 0       ; R9 := {}
-372 [-]: NEWTABLE  R10 0 5      ; R10 := {}
-373 [-]: SETTABLE  R10 K108 K136; R10["upgradeType"] := 366.000000
-374 [-]: SETTABLE  R10 K118 K128; R10["value"] := 0.750000
-375 [-]: SETTABLE  R10 K137 K112; R10["validPosture"] := 2.000000
-376 [-]: SETTABLE  R10 K120 K112; R10["operationType"] := 2.000000
-377 [-]: SETTABLE  R10 K122 R1  ; R10["validType"] := R1
-378 [-]: NEWTABLE  R11 0 3      ; R11 := {}
-379 [-]: SETTABLE  R11 K108 K138; R11["upgradeType"] := 364.000000
-380 [-]: SETTABLE  R11 K118 K139; R11["value"] := 2000.000000
-381 [-]: SETTABLE  R11 K120 K140; R11["operationType"] := 0.000000
-382 [-]: SETLIST   R9 2 1       ; R9[(1-1)*FPF+i] := R(9+i), 1 <= i <= 2
-383 [-]: SETTABLE  R8 K131 R9   ; R8[9.000000] := R9
-384 [-]: NEWTABLE  R9 1 0       ; R9 := {}
-385 [-]: NEWTABLE  R10 0 2      ; R10 := {}
-386 [-]: SETTABLE  R10 K108 K110; R10["upgradeType"] := 358.000000
-387 [-]: GETGLOBAL R11 K22      ; R11 := sSkillRJBlink
-388 [-]: SETTABLE  R10 K111 R11 ; R10["filter"] := R11
-389 [-]: SETLIST   R9 1 1       ; R9[(1-1)*FPF+i] := R(9+i), 1 <= i <= 1
-390 [-]: SETTABLE  R8 K132 R9   ; R8[10.000000] := R9
-391 [-]: NEWTABLE  R9 0 10      ; R9 := {}
-392 [-]: NEWTABLE  R10 2 0      ; R10 := {}
-393 [-]: NEWTABLE  R11 0 2      ; R11 := {}
-394 [-]: SETTABLE  R11 K108 K110; R11["upgradeType"] := 358.000000
-395 [-]: GETGLOBAL R12 K36      ; R12 := sSkillRJLeadIndicator
-396 [-]: SETTABLE  R11 K111 R12 ; R11["filter"] := R12
-397 [-]: NEWTABLE  R12 0 2      ; R12 := {}
-398 [-]: SETTABLE  R12 K108 K110; R12["upgradeType"] := 358.000000
-399 [-]: GETGLOBAL R13 K40      ; R13 := sSkillRJOrdLockOn
-400 [-]: SETTABLE  R12 K111 R13 ; R12["filter"] := R13
-401 [-]: SETLIST   R10 2 1      ; R10[(1-1)*FPF+i] := R(10+i), 1 <= i <= 2
-402 [-]: SETTABLE  R9 K107 R10  ; R9[1.000000] := R10
-403 [-]: NEWTABLE  R10 1 0      ; R10 := {}
-404 [-]: NEWTABLE  R11 0 2      ; R11 := {}
-405 [-]: SETTABLE  R11 K108 K110; R11["upgradeType"] := 358.000000
-406 [-]: GETGLOBAL R12 K38      ; R12 := sSkillRJARGimbal
-407 [-]: SETTABLE  R11 K111 R12 ; R11["filter"] := R12
-408 [-]: SETLIST   R10 1 1      ; R10[(1-1)*FPF+i] := R(10+i), 1 <= i <= 1
-409 [-]: SETTABLE  R9 K112 R10  ; R9[2.000000] := R10
-410 [-]: NEWTABLE  R10 1 0      ; R10 := {}
-411 [-]: NEWTABLE  R11 0 2      ; R11 := {}
-412 [-]: SETTABLE  R11 K108 K110; R11["upgradeType"] := 358.000000
-413 [-]: GETGLOBAL R12 K32      ; R12 := sSkillAWCannon
-414 [-]: SETTABLE  R11 K111 R12 ; R11["filter"] := R12
-415 [-]: SETLIST   R10 1 1      ; R10[(1-1)*FPF+i] := R(10+i), 1 <= i <= 1
-416 [-]: SETTABLE  R9 K113 R10  ; R9[3.000000] := R10
-417 [-]: NEWTABLE  R10 3 0      ; R10 := {}
-418 [-]: NEWTABLE  R11 0 5      ; R11 := {}
-419 [-]: SETTABLE  R11 K108 K141; R11["upgradeType"] := 267.000000
-420 [-]: SETTABLE  R11 K118 K142; R11["value"] := 25.000000
-421 [-]: SETTABLE  R11 K120 K140; R11["operationType"] := 0.000000
-422 [-]: SETTABLE  R11 K122 R2  ; R11["validType"] := R2
-423 [-]: GETGLOBAL R12 K96      ; R12 := CATEGORY_ARCHWING
-424 [-]: SETTABLE  R11 K129 R12 ; R11["category"] := R12
-425 [-]: NEWTABLE  R12 0 5      ; R12 := {}
-426 [-]: SETTABLE  R12 K108 K143; R12["upgradeType"] := 326.000000
-427 [-]: SETTABLE  R12 K118 K128; R12["value"] := 0.750000
-428 [-]: SETTABLE  R12 K120 K140; R12["operationType"] := 0.000000
-429 [-]: SETTABLE  R12 K122 R2  ; R12["validType"] := R2
-430 [-]: GETGLOBAL R13 K96      ; R13 := CATEGORY_ARCHWING
-431 [-]: SETTABLE  R12 K129 R13 ; R12["category"] := R13
-432 [-]: NEWTABLE  R13 0 5      ; R13 := {}
-433 [-]: SETTABLE  R13 K108 K144; R13["upgradeType"] := 223.000000
-434 [-]: SETTABLE  R13 K118 K135; R13["value"] := 0.200000
-435 [-]: SETTABLE  R13 K120 K113; R13["operationType"] := 3.000000
-436 [-]: SETTABLE  R13 K122 R2  ; R13["validType"] := R2
-437 [-]: GETGLOBAL R14 K96      ; R14 := CATEGORY_ARCHWING
-438 [-]: SETTABLE  R13 K129 R14 ; R13["category"] := R14
-439 [-]: SETLIST   R10 3 1      ; R10[(1-1)*FPF+i] := R(10+i), 1 <= i <= 3
-440 [-]: SETTABLE  R9 K114 R10  ; R9[4.000000] := R10
-441 [-]: NEWTABLE  R10 1 0      ; R10 := {}
-442 [-]: NEWTABLE  R11 0 5      ; R11 := {}
-443 [-]: SETTABLE  R11 K108 K144; R11["upgradeType"] := 223.000000
-444 [-]: SETTABLE  R11 K118 K135; R11["value"] := 0.200000
-445 [-]: SETTABLE  R11 K120 K113; R11["operationType"] := 3.000000
-446 [-]: SETTABLE  R11 K122 R3  ; R11["validType"] := R3
-447 [-]: GETGLOBAL R12 K97      ; R12 := CATEGORY_MECH
-448 [-]: SETTABLE  R11 K129 R12 ; R11["category"] := R12
-449 [-]: SETLIST   R10 1 1      ; R10[(1-1)*FPF+i] := R(10+i), 1 <= i <= 1
-450 [-]: SETTABLE  R9 K115 R10  ; R9[5.000000] := R10
-451 [-]: NEWTABLE  R10 1 0      ; R10 := {}
-452 [-]: NEWTABLE  R11 0 4      ; R11 := {}
-453 [-]: SETTABLE  R11 K108 K145; R11["upgradeType"] := 194.000000
-454 [-]: SETTABLE  R11 K118 K125; R11["value"] := 0.800000
-455 [-]: SETTABLE  R11 K120 K112; R11["operationType"] := 2.000000
-456 [-]: SETTABLE  R11 K122 R1  ; R11["validType"] := R1
-457 [-]: SETLIST   R10 1 1      ; R10[(1-1)*FPF+i] := R(10+i), 1 <= i <= 1
-458 [-]: SETTABLE  R9 K116 R10  ; R9[6.000000] := R10
-459 [-]: NEWTABLE  R10 2 0      ; R10 := {}
-460 [-]: NEWTABLE  R11 0 4      ; R11 := {}
-461 [-]: SETTABLE  R11 K108 K146; R11["upgradeType"] := 330.000000
-462 [-]: SETTABLE  R11 K118 K147; R11["value"] := 0.500000
-463 [-]: SETTABLE  R11 K120 K112; R11["operationType"] := 2.000000
-464 [-]: SETTABLE  R11 K122 R1  ; R11["validType"] := R1
-465 [-]: NEWTABLE  R12 0 4      ; R12 := {}
-466 [-]: SETTABLE  R12 K108 K131; R12["upgradeType"] := 9.000000
-467 [-]: SETTABLE  R12 K118 K147; R12["value"] := 0.500000
-468 [-]: SETTABLE  R12 K120 K113; R12["operationType"] := 3.000000
-469 [-]: SETTABLE  R12 K122 R0  ; R12["validType"] := R0
-470 [-]: SETLIST   R10 2 1      ; R10[(1-1)*FPF+i] := R(10+i), 1 <= i <= 2
-471 [-]: SETTABLE  R9 K123 R10  ; R9[7.000000] := R10
-472 [-]: NEWTABLE  R10 4 0      ; R10 := {}
-473 [-]: NEWTABLE  R11 0 4      ; R11 := {}
-474 [-]: SETTABLE  R11 K108 K144; R11["upgradeType"] := 223.000000
-475 [-]: SETTABLE  R11 K118 K119; R11["value"] := 0.250000
-476 [-]: SETTABLE  R11 K120 K113; R11["operationType"] := 3.000000
-477 [-]: GETGLOBAL R12 K96      ; R12 := CATEGORY_ARCHWING
-478 [-]: SETTABLE  R11 K129 R12 ; R11["category"] := R12
-479 [-]: NEWTABLE  R12 0 4      ; R12 := {}
-480 [-]: SETTABLE  R12 K108 K132; R12["upgradeType"] := 10.000000
-481 [-]: SETTABLE  R12 K118 K135; R12["value"] := 0.200000
-482 [-]: SETTABLE  R12 K120 K113; R12["operationType"] := 3.000000
-483 [-]: GETGLOBAL R13 K96      ; R13 := CATEGORY_ARCHWING
-484 [-]: SETTABLE  R12 K129 R13 ; R12["category"] := R13
-485 [-]: NEWTABLE  R13 0 4      ; R13 := {}
-486 [-]: SETTABLE  R13 K108 K131; R13["upgradeType"] := 9.000000
-487 [-]: SETTABLE  R13 K118 K135; R13["value"] := 0.200000
-488 [-]: SETTABLE  R13 K120 K113; R13["operationType"] := 3.000000
-489 [-]: GETGLOBAL R14 K96      ; R14 := CATEGORY_ARCHWING
-490 [-]: SETTABLE  R13 K129 R14 ; R13["category"] := R14
-491 [-]: NEWTABLE  R14 0 4      ; R14 := {}
-492 [-]: SETTABLE  R14 K108 K114; R14["upgradeType"] := 4.000000
-493 [-]: SETTABLE  R14 K118 K135; R14["value"] := 0.200000
-494 [-]: SETTABLE  R14 K120 K113; R14["operationType"] := 3.000000
-495 [-]: GETGLOBAL R15 K96      ; R15 := CATEGORY_ARCHWING
-496 [-]: SETTABLE  R14 K129 R15 ; R14["category"] := R15
-497 [-]: SETLIST   R10 4 1      ; R10[(1-1)*FPF+i] := R(10+i), 1 <= i <= 4
-498 [-]: SETTABLE  R9 K126 R10  ; R9[8.000000] := R10
-499 [-]: NEWTABLE  R10 1 0      ; R10 := {}
-500 [-]: NEWTABLE  R11 0 2      ; R11 := {}
-501 [-]: SETTABLE  R11 K108 K110; R11["upgradeType"] := 358.000000
-502 [-]: GETGLOBAL R12 K44      ; R12 := sSkillRJReload
-503 [-]: SETTABLE  R11 K111 R12 ; R11["filter"] := R12
-504 [-]: SETLIST   R10 1 1      ; R10[(1-1)*FPF+i] := R(10+i), 1 <= i <= 1
-505 [-]: SETTABLE  R9 K131 R10  ; R9[9.000000] := R10
-506 [-]: NEWTABLE  R10 2 0      ; R10 := {}
-507 [-]: NEWTABLE  R11 0 2      ; R11 := {}
-508 [-]: SETTABLE  R11 K108 K110; R11["upgradeType"] := 358.000000
-509 [-]: GETGLOBAL R12 K42      ; R12 := sSkillAimIndicatorConverge
-510 [-]: SETTABLE  R11 K111 R12 ; R11["filter"] := R12
-511 [-]: NEWTABLE  R12 0 5      ; R12 := {}
-512 [-]: SETTABLE  R12 K108 K145; R12["upgradeType"] := 194.000000
-513 [-]: SETTABLE  R12 K118 K135; R12["value"] := 0.200000
-514 [-]: SETTABLE  R12 K120 K113; R12["operationType"] := 3.000000
-515 [-]: NEWTABLE  R13 1 0      ; R13 := {}
-516 [-]: CONST     R14 1        ; R14 := 1.000000
-517 [-]: SETLIST   R13 1 1      ; R13[(1-1)*FPF+i] := R(13+i), 1 <= i <= 1
-518 [-]: SETTABLE  R12 K148 R13 ; R12["validModifiers"] := R13
-519 [-]: SETTABLE  R12 K122 R1  ; R12["validType"] := R1
-520 [-]: SETLIST   R10 2 1      ; R10[(1-1)*FPF+i] := R(10+i), 1 <= i <= 2
-521 [-]: SETTABLE  R9 K132 R10  ; R9[10.000000] := R10
-522 [-]: NEWTABLE  R10 0 10     ; R10 := {}
-523 [-]: NEWTABLE  R11 1 0      ; R11 := {}
-524 [-]: NEWTABLE  R12 0 2      ; R12 := {}
-525 [-]: SETTABLE  R12 K108 K110; R12["upgradeType"] := 358.000000
-526 [-]: GETGLOBAL R13 K46      ; R13 := sSkillMultiToolExpert
-527 [-]: SETTABLE  R12 K111 R13 ; R12["filter"] := R13
-528 [-]: SETLIST   R11 1 1      ; R11[(1-1)*FPF+i] := R(11+i), 1 <= i <= 1
-529 [-]: SETTABLE  R10 K107 R11 ; R10[1.000000] := R11
-530 [-]: NEWTABLE  R11 1 0      ; R11 := {}
-531 [-]: NEWTABLE  R12 0 5      ; R12 := {}
-532 [-]: SETTABLE  R12 K108 K130; R12["upgradeType"] := 164.000000
-533 [-]: SETTABLE  R12 K118 K147; R12["value"] := 0.500000
-534 [-]: SETTABLE  R12 K120 K112; R12["operationType"] := 2.000000
-535 [-]: SETTABLE  R12 K122 R4  ; R12["validType"] := R4
-536 [-]: GETGLOBAL R13 K95      ; R13 := CATEGORY_PLAYER
-537 [-]: SETTABLE  R12 K129 R13 ; R12["category"] := R13
-538 [-]: SETLIST   R11 1 1      ; R11[(1-1)*FPF+i] := R(11+i), 1 <= i <= 1
-539 [-]: SETTABLE  R10 K112 R11 ; R10[2.000000] := R11
-540 [-]: NEWTABLE  R11 1 0      ; R11 := {}
-541 [-]: NEWTABLE  R12 0 2      ; R12 := {}
-542 [-]: SETTABLE  R12 K108 K110; R12["upgradeType"] := 358.000000
-543 [-]: GETGLOBAL R13 K48      ; R13 := sSkillBCOrd
-544 [-]: SETTABLE  R12 K111 R13 ; R12["filter"] := R13
-545 [-]: SETLIST   R11 1 1      ; R11[(1-1)*FPF+i] := R(11+i), 1 <= i <= 1
-546 [-]: SETTABLE  R10 K113 R11 ; R10[3.000000] := R11
-547 [-]: NEWTABLE  R11 1 0      ; R11 := {}
-548 [-]: NEWTABLE  R12 0 2      ; R12 := {}
-549 [-]: SETTABLE  R12 K108 K110; R12["upgradeType"] := 358.000000
-550 [-]: GETGLOBAL R13 K50      ; R13 := sSkillBCSuperAmmo
-551 [-]: SETTABLE  R12 K111 R13 ; R12["filter"] := R13
-552 [-]: SETLIST   R11 1 1      ; R11[(1-1)*FPF+i] := R(11+i), 1 <= i <= 1
-553 [-]: SETTABLE  R10 K114 R11 ; R10[4.000000] := R11
-554 [-]: NEWTABLE  R11 2 0      ; R11 := {}
-555 [-]: NEWTABLE  R12 0 2      ; R12 := {}
-556 [-]: SETTABLE  R12 K108 K110; R12["upgradeType"] := 358.000000
-557 [-]: GETGLOBAL R13 K54      ; R13 := sSkillBCHeal
-558 [-]: SETTABLE  R12 K111 R13 ; R12["filter"] := R13
-559 [-]: NEWTABLE  R13 0 3      ; R13 := {}
-560 [-]: SETTABLE  R13 K108 K149; R13["upgradeType"] := 361.000000
-561 [-]: SETTABLE  R13 K118 K119; R13["value"] := 0.250000
-562 [-]: SETTABLE  R13 K120 K113; R13["operationType"] := 3.000000
-563 [-]: SETLIST   R11 2 1      ; R11[(1-1)*FPF+i] := R(11+i), 1 <= i <= 2
-564 [-]: SETTABLE  R10 K115 R11 ; R10[5.000000] := R11
-565 [-]: NEWTABLE  R11 1 0      ; R11 := {}
-566 [-]: NEWTABLE  R12 0 3      ; R12 := {}
-567 [-]: SETTABLE  R12 K108 K150; R12["upgradeType"] := 363.000000
-568 [-]: SETTABLE  R12 K118 K151; R12["value"] := -0.250000
-569 [-]: SETTABLE  R12 K120 K113; R12["operationType"] := 3.000000
-570 [-]: SETLIST   R11 1 1      ; R11[(1-1)*FPF+i] := R(11+i), 1 <= i <= 1
-571 [-]: SETTABLE  R10 K116 R11 ; R10[6.000000] := R11
-572 [-]: NEWTABLE  R11 1 0      ; R11 := {}
-573 [-]: NEWTABLE  R12 0 3      ; R12 := {}
-574 [-]: SETTABLE  R12 K108 K149; R12["upgradeType"] := 361.000000
-575 [-]: SETTABLE  R12 K118 K119; R12["value"] := 0.250000
-576 [-]: SETTABLE  R12 K120 K113; R12["operationType"] := 3.000000
-577 [-]: SETLIST   R11 1 1      ; R11[(1-1)*FPF+i] := R(11+i), 1 <= i <= 1
-578 [-]: SETTABLE  R10 K123 R11 ; R10[7.000000] := R11
-579 [-]: NEWTABLE  R11 3 0      ; R11 := {}
-580 [-]: NEWTABLE  R12 0 4      ; R12 := {}
-581 [-]: SETTABLE  R12 K108 K152; R12["upgradeType"] := 65.000000
-582 [-]: SETTABLE  R12 K118 K153; R12["value"] := 0.300000
-583 [-]: SETTABLE  R12 K120 K113; R12["operationType"] := 3.000000
-584 [-]: GETGLOBAL R13 K96      ; R13 := CATEGORY_ARCHWING
-585 [-]: SETTABLE  R12 K129 R13 ; R12["category"] := R13
-586 [-]: NEWTABLE  R13 0 4      ; R13 := {}
-587 [-]: SETTABLE  R13 K108 K154; R13["upgradeType"] := 120.000000
-588 [-]: SETTABLE  R13 K118 K153; R13["value"] := 0.300000
-589 [-]: SETTABLE  R13 K120 K113; R13["operationType"] := 3.000000
-590 [-]: GETGLOBAL R14 K96      ; R14 := CATEGORY_ARCHWING
-591 [-]: SETTABLE  R13 K129 R14 ; R13["category"] := R14
-592 [-]: NEWTABLE  R14 0 4      ; R14 := {}
-593 [-]: SETTABLE  R14 K108 K155; R14["upgradeType"] := 15.000000
-594 [-]: SETTABLE  R14 K118 K153; R14["value"] := 0.300000
-595 [-]: SETTABLE  R14 K120 K113; R14["operationType"] := 3.000000
-596 [-]: GETGLOBAL R15 K96      ; R15 := CATEGORY_ARCHWING
-597 [-]: SETTABLE  R14 K129 R15 ; R14["category"] := R15
-598 [-]: SETLIST   R11 3 1      ; R11[(1-1)*FPF+i] := R(11+i), 1 <= i <= 3
-599 [-]: SETTABLE  R10 K126 R11 ; R10[8.000000] := R11
-600 [-]: NEWTABLE  R11 2 0      ; R11 := {}
-601 [-]: NEWTABLE  R12 0 4      ; R12 := {}
-602 [-]: SETTABLE  R12 K108 K152; R12["upgradeType"] := 65.000000
-603 [-]: SETTABLE  R12 K118 K119; R12["value"] := 0.250000
-604 [-]: SETTABLE  R12 K120 K113; R12["operationType"] := 3.000000
-605 [-]: GETGLOBAL R13 K97      ; R13 := CATEGORY_MECH
-606 [-]: SETTABLE  R12 K129 R13 ; R12["category"] := R13
-607 [-]: NEWTABLE  R13 0 4      ; R13 := {}
-608 [-]: SETTABLE  R13 K108 K154; R13["upgradeType"] := 120.000000
-609 [-]: SETTABLE  R13 K118 K119; R13["value"] := 0.250000
-610 [-]: SETTABLE  R13 K120 K113; R13["operationType"] := 3.000000
-611 [-]: GETGLOBAL R14 K97      ; R14 := CATEGORY_MECH
-612 [-]: SETTABLE  R13 K129 R14 ; R13["category"] := R14
-613 [-]: SETLIST   R11 2 1      ; R11[(1-1)*FPF+i] := R(11+i), 1 <= i <= 2
-614 [-]: SETTABLE  R10 K131 R11 ; R10[9.000000] := R11
-615 [-]: NEWTABLE  R11 1 0      ; R11 := {}
-616 [-]: NEWTABLE  R12 0 2      ; R12 := {}
-617 [-]: SETTABLE  R12 K108 K110; R12["upgradeType"] := 358.000000
-618 [-]: GETGLOBAL R13 K52      ; R13 := sSkillBCUberFix
-619 [-]: SETTABLE  R12 K111 R13 ; R12["filter"] := R13
-620 [-]: SETLIST   R11 1 1      ; R11[(1-1)*FPF+i] := R(11+i), 1 <= i <= 1
-621 [-]: SETTABLE  R10 K132 R11 ; R10[10.000000] := R11
-622 [-]: NEWTABLE  R11 0 10     ; R11 := {}
-623 [-]: NEWTABLE  R12 1 0      ; R12 := {}
-624 [-]: NEWTABLE  R13 0 2      ; R13 := {}
-625 [-]: SETTABLE  R13 K108 K110; R13["upgradeType"] := 358.000000
-626 [-]: GETGLOBAL R14 K56      ; R14 := sSkillCrewCommand
-627 [-]: SETTABLE  R13 K111 R14 ; R13["filter"] := R14
-628 [-]: SETLIST   R12 1 1      ; R12[(1-1)*FPF+i] := R(12+i), 1 <= i <= 1
-629 [-]: SETTABLE  R11 K107 R12 ; R11[1.000000] := R12
-630 [-]: NEWTABLE  R12 0 0      ; R12 := {}
-631 [-]: SETTABLE  R11 K112 R12 ; R11[2.000000] := R12
-632 [-]: NEWTABLE  R12 0 0      ; R12 := {}
-633 [-]: SETTABLE  R11 K113 R12 ; R11[3.000000] := R12
-634 [-]: NEWTABLE  R12 0 0      ; R12 := {}
-635 [-]: SETTABLE  R11 K114 R12 ; R11[4.000000] := R12
-636 [-]: NEWTABLE  R12 0 0      ; R12 := {}
-637 [-]: SETTABLE  R11 K115 R12 ; R11[5.000000] := R12
-638 [-]: NEWTABLE  R12 0 0      ; R12 := {}
-639 [-]: SETTABLE  R11 K116 R12 ; R11[6.000000] := R12
-640 [-]: NEWTABLE  R12 0 0      ; R12 := {}
-641 [-]: SETTABLE  R11 K123 R12 ; R11[7.000000] := R12
-642 [-]: NEWTABLE  R12 0 0      ; R12 := {}
-643 [-]: SETTABLE  R11 K126 R12 ; R11[8.000000] := R12
-644 [-]: NEWTABLE  R12 1 0      ; R12 := {}
-645 [-]: NEWTABLE  R13 0 2      ; R13 := {}
-646 [-]: SETTABLE  R13 K108 K110; R13["upgradeType"] := 358.000000
-647 [-]: GETGLOBAL R14 K58      ; R14 := sSkillSecondCommand
-648 [-]: SETTABLE  R13 K111 R14 ; R13["filter"] := R14
-649 [-]: SETLIST   R12 1 1      ; R12[(1-1)*FPF+i] := R(12+i), 1 <= i <= 1
-650 [-]: SETTABLE  R11 K131 R12 ; R11[9.000000] := R12
-651 [-]: NEWTABLE  R12 0 0      ; R12 := {}
-652 [-]: SETTABLE  R11 K132 R12 ; R11[10.000000] := R12
-653 [-]: NEWTABLE  R12 0 10     ; R12 := {}
-654 [-]: NEWTABLE  R13 1 0      ; R13 := {}
-655 [-]: NEWTABLE  R14 0 3      ; R14 := {}
-656 [-]: SETTABLE  R14 K108 K110; R14["upgradeType"] := 358.000000
-657 [-]: GETGLOBAL R15 K60      ; R15 := sSkillDamagePerBoon
-658 [-]: SETTABLE  R14 K111 R15 ; R14["filter"] := R15
-659 [-]: GETGLOBAL R15 K98      ; R15 := CATEGORY_DRIFTER
-660 [-]: SETTABLE  R14 K129 R15 ; R14["category"] := R15
-661 [-]: SETLIST   R13 1 1      ; R13[(1-1)*FPF+i] := R(13+i), 1 <= i <= 1
-662 [-]: SETTABLE  R12 K107 R13 ; R12[1.000000] := R13
-663 [-]: NEWTABLE  R13 1 0      ; R13 := {}
-664 [-]: NEWTABLE  R14 0 3      ; R14 := {}
-665 [-]: SETTABLE  R14 K108 K110; R14["upgradeType"] := 358.000000
-666 [-]: GETGLOBAL R15 K62      ; R15 := sSkillRestorationMoveSpeed
-667 [-]: SETTABLE  R14 K111 R15 ; R14["filter"] := R15
-668 [-]: GETGLOBAL R15 K98      ; R15 := CATEGORY_DRIFTER
-669 [-]: SETTABLE  R14 K129 R15 ; R14["category"] := R15
-670 [-]: SETLIST   R13 1 1      ; R13[(1-1)*FPF+i] := R(13+i), 1 <= i <= 1
-671 [-]: SETTABLE  R12 K112 R13 ; R12[2.000000] := R13
-672 [-]: NEWTABLE  R13 0 0      ; R13 := {}
-673 [-]: SETTABLE  R12 K113 R13 ; R12[3.000000] := R13
-674 [-]: NEWTABLE  R13 0 0      ; R13 := {}
-675 [-]: SETTABLE  R12 K114 R13 ; R12[4.000000] := R13
-676 [-]: NEWTABLE  R13 1 0      ; R13 := {}
-677 [-]: NEWTABLE  R14 0 4      ; R14 := {}
-678 [-]: SETTABLE  R14 K108 K156; R14["upgradeType"] := 178.000000
-679 [-]: SETTABLE  R14 K120 K112; R14["operationType"] := 2.000000
-680 [-]: SETTABLE  R14 K118 K125; R14["value"] := 0.800000
-681 [-]: GETGLOBAL R15 K98      ; R15 := CATEGORY_DRIFTER
-682 [-]: SETTABLE  R14 K129 R15 ; R14["category"] := R15
-683 [-]: SETLIST   R13 1 1      ; R13[(1-1)*FPF+i] := R(13+i), 1 <= i <= 1
-684 [-]: SETTABLE  R12 K115 R13 ; R12[5.000000] := R13
-685 [-]: NEWTABLE  R13 1 0      ; R13 := {}
-686 [-]: NEWTABLE  R14 0 3      ; R14 := {}
-687 [-]: SETTABLE  R14 K108 K110; R14["upgradeType"] := 358.000000
-688 [-]: GETGLOBAL R15 K64      ; R15 := sSkillRadarSlomo
-689 [-]: SETTABLE  R14 K111 R15 ; R14["filter"] := R15
-690 [-]: GETGLOBAL R15 K98      ; R15 := CATEGORY_DRIFTER
-691 [-]: SETTABLE  R14 K129 R15 ; R14["category"] := R15
-692 [-]: SETLIST   R13 1 1      ; R13[(1-1)*FPF+i] := R(13+i), 1 <= i <= 1
-693 [-]: SETTABLE  R12 K116 R13 ; R12[6.000000] := R13
-694 [-]: NEWTABLE  R13 1 0      ; R13 := {}
-695 [-]: NEWTABLE  R14 0 4      ; R14 := {}
-696 [-]: SETTABLE  R14 K108 K157; R14["upgradeType"] := 216.000000
-697 [-]: SETTABLE  R14 K120 K140; R14["operationType"] := 0.000000
-698 [-]: SETTABLE  R14 K118 K135; R14["value"] := 0.200000
-699 [-]: GETGLOBAL R15 K98      ; R15 := CATEGORY_DRIFTER
-700 [-]: SETTABLE  R14 K129 R15 ; R14["category"] := R15
-701 [-]: SETLIST   R13 1 1      ; R13[(1-1)*FPF+i] := R(13+i), 1 <= i <= 1
-702 [-]: SETTABLE  R12 K123 R13 ; R12[7.000000] := R13
-703 [-]: NEWTABLE  R13 0 0      ; R13 := {}
-704 [-]: SETTABLE  R12 K126 R13 ; R12[8.000000] := R13
-705 [-]: NEWTABLE  R13 0 0      ; R13 := {}
-706 [-]: SETTABLE  R12 K131 R13 ; R12[9.000000] := R13
-707 [-]: NEWTABLE  R13 1 0      ; R13 := {}
-708 [-]: NEWTABLE  R14 0 2      ; R14 := {}
-709 [-]: GETGLOBAL R15 K159     ; R15 := 0x88efc25e
-710 [-]: LOADK     R16 K160     ; R16 := "/Lotus/Upgrades/Intrinsics/OnAbilityIncreaseDamage"
-711 [-]: CALL      R15 2 2      ; R15 := R15(R16)
-712 [-]: SETTABLE  R14 K158 R15 ; R14["upgradeObjectType"] := R15
-713 [-]: GETGLOBAL R15 K98      ; R15 := CATEGORY_DRIFTER
-714 [-]: SETTABLE  R14 K129 R15 ; R14["category"] := R15
-715 [-]: SETLIST   R13 1 1      ; R13[(1-1)*FPF+i] := R(13+i), 1 <= i <= 1
-716 [-]: SETTABLE  R12 K132 R13 ; R12[10.000000] := R13
-717 [-]: NEWTABLE  R13 0 10     ; R13 := {}
-718 [-]: NEWTABLE  R14 1 0      ; R14 := {}
-719 [-]: NEWTABLE  R15 0 3      ; R15 := {}
-720 [-]: SETTABLE  R15 K108 K110; R15["upgradeType"] := 358.000000
-721 [-]: GETGLOBAL R16 K66      ; R16 := sSkillSummonHorse
-722 [-]: SETTABLE  R15 K111 R16 ; R15["filter"] := R16
-723 [-]: GETGLOBAL R16 K95      ; R16 := CATEGORY_PLAYER
-724 [-]: SETTABLE  R15 K129 R16 ; R15["category"] := R16
-725 [-]: SETLIST   R14 1 1      ; R14[(1-1)*FPF+i] := R(14+i), 1 <= i <= 1
-726 [-]: SETTABLE  R13 K107 R14 ; R13[1.000000] := R14
-727 [-]: NEWTABLE  R14 1 0      ; R14 := {}
-728 [-]: NEWTABLE  R15 0 3      ; R15 := {}
-729 [-]: SETTABLE  R15 K108 K110; R15["upgradeType"] := 358.000000
-730 [-]: GETGLOBAL R16 K68      ; R16 := sSkillHorseDodge
-731 [-]: SETTABLE  R15 K111 R16 ; R15["filter"] := R16
-732 [-]: GETGLOBAL R16 K98      ; R16 := CATEGORY_DRIFTER
-733 [-]: SETTABLE  R15 K129 R16 ; R15["category"] := R16
-734 [-]: SETLIST   R14 1 1      ; R14[(1-1)*FPF+i] := R(14+i), 1 <= i <= 1
-735 [-]: SETTABLE  R13 K112 R14 ; R13[2.000000] := R14
-736 [-]: NEWTABLE  R14 1 0      ; R14 := {}
-737 [-]: NEWTABLE  R15 0 3      ; R15 := {}
-738 [-]: SETTABLE  R15 K108 K110; R15["upgradeType"] := 358.000000
-739 [-]: GETGLOBAL R16 K70      ; R16 := sSkillHorseProtect
-740 [-]: SETTABLE  R15 K111 R16 ; R15["filter"] := R16
-741 [-]: GETGLOBAL R16 K98      ; R16 := CATEGORY_DRIFTER
-742 [-]: SETTABLE  R15 K129 R16 ; R15["category"] := R16
-743 [-]: SETLIST   R14 1 1      ; R14[(1-1)*FPF+i] := R(14+i), 1 <= i <= 1
-744 [-]: SETTABLE  R13 K113 R14 ; R13[3.000000] := R14
-745 [-]: NEWTABLE  R14 0 0      ; R14 := {}
-746 [-]: SETTABLE  R13 K114 R14 ; R13[4.000000] := R14
-747 [-]: NEWTABLE  R14 1 0      ; R14 := {}
-748 [-]: NEWTABLE  R15 0 3      ; R15 := {}
-749 [-]: SETTABLE  R15 K108 K110; R15["upgradeType"] := 358.000000
-750 [-]: GETGLOBAL R16 K72      ; R16 := sSkillHorseStomp
-751 [-]: SETTABLE  R15 K111 R16 ; R15["filter"] := R16
-752 [-]: GETGLOBAL R16 K98      ; R16 := CATEGORY_DRIFTER
-753 [-]: SETTABLE  R15 K129 R16 ; R15["category"] := R16
-754 [-]: SETLIST   R14 1 1      ; R14[(1-1)*FPF+i] := R(14+i), 1 <= i <= 1
-755 [-]: SETTABLE  R13 K115 R14 ; R13[5.000000] := R14
-756 [-]: NEWTABLE  R14 1 0      ; R14 := {}
-757 [-]: NEWTABLE  R15 0 3      ; R15 := {}
-758 [-]: SETTABLE  R15 K108 K110; R15["upgradeType"] := 358.000000
-759 [-]: GETGLOBAL R16 K76      ; R16 := sSkillFastTravel
-760 [-]: SETTABLE  R15 K111 R16 ; R15["filter"] := R16
-761 [-]: GETGLOBAL R16 K98      ; R16 := CATEGORY_DRIFTER
-762 [-]: SETTABLE  R15 K129 R16 ; R15["category"] := R16
-763 [-]: SETLIST   R14 1 1      ; R14[(1-1)*FPF+i] := R(14+i), 1 <= i <= 1
-764 [-]: SETTABLE  R13 K116 R14 ; R13[6.000000] := R14
-765 [-]: NEWTABLE  R14 1 0      ; R14 := {}
-766 [-]: NEWTABLE  R15 0 3      ; R15 := {}
-767 [-]: SETTABLE  R15 K108 K110; R15["upgradeType"] := 358.000000
-768 [-]: GETGLOBAL R16 K74      ; R16 := sSkillHorseWarcry
-769 [-]: SETTABLE  R15 K111 R16 ; R15["filter"] := R16
-770 [-]: GETGLOBAL R16 K98      ; R16 := CATEGORY_DRIFTER
-771 [-]: SETTABLE  R15 K129 R16 ; R15["category"] := R16
-772 [-]: SETLIST   R14 1 1      ; R14[(1-1)*FPF+i] := R(14+i), 1 <= i <= 1
-773 [-]: SETTABLE  R13 K123 R14 ; R13[7.000000] := R14
-774 [-]: NEWTABLE  R14 1 0      ; R14 := {}
-775 [-]: NEWTABLE  R15 0 2      ; R15 := {}
-776 [-]: GETGLOBAL R16 K159     ; R16 := 0x88efc25e
-777 [-]: LOADK     R17 K161     ; R17 := "/Lotus/Upgrades/Intrinsics/OnDismountDamageBonus"
-778 [-]: CALL      R16 2 2      ; R16 := R16(R17)
-779 [-]: SETTABLE  R15 K158 R16 ; R15["upgradeObjectType"] := R16
-780 [-]: GETGLOBAL R16 K98      ; R16 := CATEGORY_DRIFTER
-781 [-]: SETTABLE  R15 K129 R16 ; R15["category"] := R16
-782 [-]: SETLIST   R14 1 1      ; R14[(1-1)*FPF+i] := R(14+i), 1 <= i <= 1
-783 [-]: SETTABLE  R13 K126 R14 ; R13[8.000000] := R14
-784 [-]: NEWTABLE  R14 0 0      ; R14 := {}
-785 [-]: SETTABLE  R13 K131 R14 ; R13[9.000000] := R14
-786 [-]: NEWTABLE  R14 0 0      ; R14 := {}
-787 [-]: SETTABLE  R13 K132 R14 ; R13[10.000000] := R14
-788 [-]: NEWTABLE  R14 0 10     ; R14 := {}
-789 [-]: NEWTABLE  R15 1 0      ; R15 := {}
-790 [-]: NEWTABLE  R16 0 5      ; R16 := {}
-791 [-]: SETTABLE  R16 K108 K110; R16["upgradeType"] := 358.000000
-792 [-]: SETTABLE  R16 K118 K107; R16["value"] := 1.000000
-793 [-]: SETTABLE  R16 K120 K140; R16["operationType"] := 0.000000
-794 [-]: GETGLOBAL R17 K78      ; R17 := sSkillBoonOptions
-795 [-]: SETTABLE  R16 K111 R17 ; R16["filter"] := R17
-796 [-]: GETGLOBAL R17 K98      ; R17 := CATEGORY_DRIFTER
-797 [-]: SETTABLE  R16 K129 R17 ; R16["category"] := R17
-798 [-]: SETLIST   R15 1 1      ; R15[(1-1)*FPF+i] := R(15+i), 1 <= i <= 1
-799 [-]: SETTABLE  R14 K107 R15 ; R14[1.000000] := R15
-800 [-]: NEWTABLE  R15 1 0      ; R15 := {}
-801 [-]: NEWTABLE  R16 0 5      ; R16 := {}
-802 [-]: SETTABLE  R16 K108 K110; R16["upgradeType"] := 358.000000
-803 [-]: SETTABLE  R16 K118 K112; R16["value"] := 2.000000
-804 [-]: SETTABLE  R16 K120 K140; R16["operationType"] := 0.000000
-805 [-]: GETGLOBAL R17 K80      ; R17 := sSkillWeaponOptions
-806 [-]: SETTABLE  R16 K111 R17 ; R16["filter"] := R17
-807 [-]: GETGLOBAL R17 K98      ; R17 := CATEGORY_DRIFTER
-808 [-]: SETTABLE  R16 K129 R17 ; R16["category"] := R17
-809 [-]: SETLIST   R15 1 1      ; R15[(1-1)*FPF+i] := R(15+i), 1 <= i <= 1
-810 [-]: SETTABLE  R14 K112 R15 ; R14[2.000000] := R15
-811 [-]: NEWTABLE  R15 1 0      ; R15 := {}
-812 [-]: NEWTABLE  R16 0 5      ; R16 := {}
-813 [-]: SETTABLE  R16 K108 K110; R16["upgradeType"] := 358.000000
-814 [-]: SETTABLE  R16 K118 K107; R16["value"] := 1.000000
-815 [-]: SETTABLE  R16 K120 K140; R16["operationType"] := 0.000000
-816 [-]: GETGLOBAL R17 K82      ; R17 := sSkillFreeBoons
-817 [-]: SETTABLE  R16 K111 R17 ; R16["filter"] := R17
-818 [-]: GETGLOBAL R17 K98      ; R17 := CATEGORY_DRIFTER
-819 [-]: SETTABLE  R16 K129 R17 ; R16["category"] := R17
-820 [-]: SETLIST   R15 1 1      ; R15[(1-1)*FPF+i] := R(15+i), 1 <= i <= 1
-821 [-]: SETTABLE  R14 K113 R15 ; R14[3.000000] := R15
-822 [-]: NEWTABLE  R15 1 0      ; R15 := {}
-823 [-]: NEWTABLE  R16 0 5      ; R16 := {}
-824 [-]: SETTABLE  R16 K108 K110; R16["upgradeType"] := 358.000000
-825 [-]: SETTABLE  R16 K118 K107; R16["value"] := 1.000000
-826 [-]: SETTABLE  R16 K120 K140; R16["operationType"] := 0.000000
-827 [-]: GETGLOBAL R17 K84      ; R17 := sSkillWarframeOptions
-828 [-]: SETTABLE  R16 K111 R17 ; R16["filter"] := R17
-829 [-]: GETGLOBAL R17 K98      ; R17 := CATEGORY_DRIFTER
-830 [-]: SETTABLE  R16 K129 R17 ; R16["category"] := R17
-831 [-]: SETLIST   R15 1 1      ; R15[(1-1)*FPF+i] := R(15+i), 1 <= i <= 1
-832 [-]: SETTABLE  R14 K114 R15 ; R14[4.000000] := R15
-833 [-]: NEWTABLE  R15 1 0      ; R15 := {}
-834 [-]: NEWTABLE  R16 0 5      ; R16 := {}
-835 [-]: SETTABLE  R16 K108 K110; R16["upgradeType"] := 358.000000
-836 [-]: SETTABLE  R16 K118 K147; R16["value"] := 0.500000
-837 [-]: SETTABLE  R16 K120 K113; R16["operationType"] := 3.000000
-838 [-]: GETGLOBAL R17 K86      ; R17 := sSkillRareBoons
-839 [-]: SETTABLE  R16 K111 R17 ; R16["filter"] := R17
-840 [-]: GETGLOBAL R17 K98      ; R17 := CATEGORY_DRIFTER
-841 [-]: SETTABLE  R16 K129 R17 ; R16["category"] := R17
-842 [-]: SETLIST   R15 1 1      ; R15[(1-1)*FPF+i] := R(15+i), 1 <= i <= 1
-843 [-]: SETTABLE  R14 K115 R15 ; R14[5.000000] := R15
-844 [-]: NEWTABLE  R15 1 0      ; R15 := {}
-845 [-]: NEWTABLE  R16 0 5      ; R16 := {}
-846 [-]: SETTABLE  R16 K108 K110; R16["upgradeType"] := 358.000000
-847 [-]: SETTABLE  R16 K118 K113; R16["value"] := 3.000000
-848 [-]: SETTABLE  R16 K120 K140; R16["operationType"] := 0.000000
-849 [-]: GETGLOBAL R17 K88      ; R17 := sSkillRerollBoon
-850 [-]: SETTABLE  R16 K111 R17 ; R16["filter"] := R17
-851 [-]: GETGLOBAL R17 K98      ; R17 := CATEGORY_DRIFTER
-852 [-]: SETTABLE  R16 K129 R17 ; R16["category"] := R17
-853 [-]: SETLIST   R15 1 1      ; R15[(1-1)*FPF+i] := R(15+i), 1 <= i <= 1
-854 [-]: SETTABLE  R14 K116 R15 ; R14[6.000000] := R15
-855 [-]: NEWTABLE  R15 1 0      ; R15 := {}
-856 [-]: NEWTABLE  R16 0 5      ; R16 := {}
-857 [-]: SETTABLE  R16 K108 K110; R16["upgradeType"] := 358.000000
-858 [-]: SETTABLE  R16 K118 K112; R16["value"] := 2.000000
-859 [-]: SETTABLE  R16 K120 K140; R16["operationType"] := 0.000000
-860 [-]: GETGLOBAL R17 K80      ; R17 := sSkillWeaponOptions
-861 [-]: SETTABLE  R16 K111 R17 ; R16["filter"] := R17
-862 [-]: GETGLOBAL R17 K98      ; R17 := CATEGORY_DRIFTER
-863 [-]: SETTABLE  R16 K129 R17 ; R16["category"] := R17
-864 [-]: SETLIST   R15 1 1      ; R15[(1-1)*FPF+i] := R(15+i), 1 <= i <= 1
-865 [-]: SETTABLE  R14 K123 R15 ; R14[7.000000] := R15
-866 [-]: NEWTABLE  R15 1 0      ; R15 := {}
-867 [-]: NEWTABLE  R16 0 5      ; R16 := {}
-868 [-]: SETTABLE  R16 K108 K110; R16["upgradeType"] := 358.000000
-869 [-]: SETTABLE  R16 K118 K107; R16["value"] := 1.000000
-870 [-]: SETTABLE  R16 K120 K140; R16["operationType"] := 0.000000
-871 [-]: GETGLOBAL R17 K84      ; R17 := sSkillWarframeOptions
-872 [-]: SETTABLE  R16 K111 R17 ; R16["filter"] := R17
-873 [-]: GETGLOBAL R17 K98      ; R17 := CATEGORY_DRIFTER
-874 [-]: SETTABLE  R16 K129 R17 ; R16["category"] := R17
-875 [-]: SETLIST   R15 1 1      ; R15[(1-1)*FPF+i] := R(15+i), 1 <= i <= 1
-876 [-]: SETTABLE  R14 K126 R15 ; R14[8.000000] := R15
-877 [-]: NEWTABLE  R15 0 0      ; R15 := {}
-878 [-]: SETTABLE  R14 K131 R15 ; R14[9.000000] := R15
-879 [-]: NEWTABLE  R15 0 0      ; R15 := {}
-880 [-]: SETTABLE  R14 K132 R15 ; R14[10.000000] := R15
-881 [-]: NEWTABLE  R15 0 10     ; R15 := {}
-882 [-]: NEWTABLE  R16 1 0      ; R16 := {}
-883 [-]: NEWTABLE  R17 0 3      ; R17 := {}
-884 [-]: SETTABLE  R17 K108 K110; R17["upgradeType"] := 358.000000
-885 [-]: GETGLOBAL R18 K90      ; R18 := sSkillHealthPerBoon
-886 [-]: SETTABLE  R17 K111 R18 ; R17["filter"] := R18
-887 [-]: GETGLOBAL R18 K98      ; R18 := CATEGORY_DRIFTER
-888 [-]: SETTABLE  R17 K129 R18 ; R17["category"] := R18
-889 [-]: SETLIST   R16 1 1      ; R16[(1-1)*FPF+i] := R(16+i), 1 <= i <= 1
-890 [-]: SETTABLE  R15 K107 R16 ; R15[1.000000] := R16
-891 [-]: NEWTABLE  R16 0 0      ; R16 := {}
-892 [-]: SETTABLE  R15 K112 R16 ; R15[2.000000] := R16
-893 [-]: NEWTABLE  R16 1 0      ; R16 := {}
-894 [-]: NEWTABLE  R17 0 4      ; R17 := {}
-895 [-]: SETTABLE  R17 K108 K162; R17["upgradeType"] := 163.000000
-896 [-]: SETTABLE  R17 K118 K107; R17["value"] := 1.000000
-897 [-]: SETTABLE  R17 K120 K140; R17["operationType"] := 0.000000
-898 [-]: GETGLOBAL R18 K98      ; R18 := CATEGORY_DRIFTER
-899 [-]: SETTABLE  R17 K129 R18 ; R17["category"] := R18
-900 [-]: SETLIST   R16 1 1      ; R16[(1-1)*FPF+i] := R(16+i), 1 <= i <= 1
-901 [-]: SETTABLE  R15 K113 R16 ; R15[3.000000] := R16
-902 [-]: NEWTABLE  R16 0 0      ; R16 := {}
-903 [-]: SETTABLE  R15 K114 R16 ; R15[4.000000] := R16
-904 [-]: NEWTABLE  R16 1 0      ; R16 := {}
-905 [-]: NEWTABLE  R17 0 4      ; R17 := {}
-906 [-]: SETTABLE  R17 K108 K152; R17["upgradeType"] := 65.000000
-907 [-]: SETTABLE  R17 K118 K147; R17["value"] := 0.500000
-908 [-]: SETTABLE  R17 K120 K113; R17["operationType"] := 3.000000
-909 [-]: GETGLOBAL R18 K98      ; R18 := CATEGORY_DRIFTER
-910 [-]: SETTABLE  R17 K129 R18 ; R17["category"] := R18
-911 [-]: SETLIST   R16 1 1      ; R16[(1-1)*FPF+i] := R(16+i), 1 <= i <= 1
-912 [-]: SETTABLE  R15 K115 R16 ; R15[5.000000] := R16
-913 [-]: NEWTABLE  R16 0 0      ; R16 := {}
-914 [-]: SETTABLE  R15 K116 R16 ; R15[6.000000] := R16
-915 [-]: NEWTABLE  R16 1 0      ; R16 := {}
-916 [-]: NEWTABLE  R17 0 2      ; R17 := {}
-917 [-]: GETGLOBAL R18 K159     ; R18 := 0x88efc25e
-918 [-]: LOADK     R19 K163     ; R19 := "/Lotus/Upgrades/Intrinsics/OnHeadshotHeal"
-919 [-]: CALL      R18 2 2      ; R18 := R18(R19)
-920 [-]: SETTABLE  R17 K158 R18 ; R17["upgradeObjectType"] := R18
-921 [-]: GETGLOBAL R18 K98      ; R18 := CATEGORY_DRIFTER
-922 [-]: SETTABLE  R17 K129 R18 ; R17["category"] := R18
-923 [-]: SETLIST   R16 1 1      ; R16[(1-1)*FPF+i] := R(16+i), 1 <= i <= 1
-924 [-]: SETTABLE  R15 K123 R16 ; R15[7.000000] := R16
-925 [-]: NEWTABLE  R16 1 0      ; R16 := {}
-926 [-]: NEWTABLE  R17 0 4      ; R17 := {}
-927 [-]: SETTABLE  R17 K108 K162; R17["upgradeType"] := 163.000000
-928 [-]: SETTABLE  R17 K118 K107; R17["value"] := 1.000000
-929 [-]: SETTABLE  R17 K120 K140; R17["operationType"] := 0.000000
-930 [-]: GETGLOBAL R18 K98      ; R18 := CATEGORY_DRIFTER
-931 [-]: SETTABLE  R17 K129 R18 ; R17["category"] := R18
-932 [-]: SETLIST   R16 1 1      ; R16[(1-1)*FPF+i] := R(16+i), 1 <= i <= 1
-933 [-]: SETTABLE  R15 K126 R16 ; R15[8.000000] := R16
-934 [-]: NEWTABLE  R16 0 0      ; R16 := {}
-935 [-]: SETTABLE  R15 K131 R16 ; R15[9.000000] := R16
-936 [-]: NEWTABLE  R16 0 0      ; R16 := {}
-937 [-]: SETTABLE  R15 K132 R16 ; R15[10.000000] := R16
-938 [-]: NEWTABLE  R16 0 9      ; R16 := {}
-939 [-]: SETTABLE  R16 K113 R7  ; R16[3.000000] := R7
-940 [-]: SETTABLE  R16 K107 R8  ; R16[1.000000] := R8
-941 [-]: SETTABLE  R16 K112 R9  ; R16[2.000000] := R9
-942 [-]: SETTABLE  R16 K114 R10 ; R16[4.000000] := R10
-943 [-]: SETTABLE  R16 K115 R11 ; R16[5.000000] := R11
-944 [-]: SETTABLE  R16 K116 R12 ; R16[6.000000] := R12
-945 [-]: SETTABLE  R16 K123 R13 ; R16[7.000000] := R13
-946 [-]: SETTABLE  R16 K126 R14 ; R16[8.000000] := R14
-947 [-]: SETTABLE  R16 K131 R15 ; R16[9.000000] := R15
-948 [-]: CLOSURE   R17 0        ; R17 := closure(Function #1)
-949 [-]: CLOSURE   R18 1        ; R18 := closure(Function #2)
-950 [-]: MOVE      R0 R16       ; R0 := R16
-951 [-]: MOVE      R0 R17       ; R0 := R17
-952 [-]: SETGLOBAL R18 K165     ; GetUpgrades := R18
-953 [-]: RETURN    R0 1         ; return 
+            1 [-]: GETIMPORT R0 1 [nil]
+       2 [-]: GETVARARGS R1 1
+       3 [-]: GETIMPORT R2 4 [nil]
+       4 [-]: CALL R0 2 0  
+       5 [-]: GETIMPORT R0 6 [nil]
+       6 [-]: LOADK R1 K7 ["Lotus.Scripts.Libs.IntrinsicsSkillSymbolsLib"]
+       7 [-]: CALL R0 1 1  
+       8 [-]: LOADN R1 10  
+       9 [-]: SETGLOBAL R1 K8 ["MAX_SKILL_RANK"]
+      10 [-]: LOADN R1 1   
+      11 [-]: SETGLOBAL R1 K9 ["CATEGORY_ALL"]
+      12 [-]: LOADN R1 2   
+      13 [-]: SETGLOBAL R1 K10 ["CATEGORY_CREWSHIP"]
+      14 [-]: LOADN R1 3   
+      15 [-]: SETGLOBAL R1 K11 ["CATEGORY_PLAYER"]
+      16 [-]: LOADN R1 4   
+      17 [-]: SETGLOBAL R1 K12 ["CATEGORY_ARCHWING"]
+      18 [-]: LOADN R1 5   
+      19 [-]: SETGLOBAL R1 K13 ["CATEGORY_MECH"]
+      20 [-]: LOADN R1 6   
+      21 [-]: SETGLOBAL R1 K14 ["CATEGORY_DRIFTER"]
+      22 [-]: LOADN R1 7   
+      23 [-]: SETGLOBAL R1 K15 ["CATEGORY_OPERATOR"]
+      24 [-]: LOADN R1 8   
+      25 [-]: SETGLOBAL R1 K16 ["CATEGORY_HORSE"]
+      26 [-]: LOADN R1 9   
+      27 [-]: SETGLOBAL R1 K17 ["CATEGORY_DUVIRI_WF"]
+      28 [-]: GETIMPORT R1 19 [nil]
+      29 [-]: LOADK R2 K20 ["/Lotus/Types/Game/CrewShip/CrewShipArchwingCannonEmplacement"]
+      30 [-]: CALL R1 1 1  
+      31 [-]: GETIMPORT R2 19 [nil]
+      32 [-]: LOADK R3 K21 ["/Lotus/Types/Game/CrewShip/CrewShipAvatar"]
+      33 [-]: CALL R2 1 1  
+      34 [-]: GETIMPORT R3 19 [nil]
+      35 [-]: LOADK R4 K22 ["/Lotus/Weapons/Tenno/Archwing/Melee/ArchMeleeWeapon"]
+      36 [-]: CALL R3 1 1  
+      37 [-]: GETIMPORT R4 19 [nil]
+      38 [-]: LOADK R5 K23 ["/Lotus/Weapons/Tenno/Archwing/Primary/ArchGun"]
+      39 [-]: CALL R4 1 1  
+      40 [-]: GETIMPORT R5 19 [nil]
+      41 [-]: LOADK R6 K24 ["/Lotus/Types/Restoratives/LisetAirSupport"]
+      42 [-]: CALL R5 1 1  
+      43 [-]: GETIMPORT R6 19 [nil]
+      44 [-]: LOADK R7 K25 ["/Lotus/Types/Restoratives/LoadoutTechSummon"]
+      45 [-]: CALL R6 1 1  
+      46 [-]: GETIMPORT R7 19 [nil]
+      47 [-]: LOADK R8 K26 ["/Lotus/Types/Game/CrewShip/CrewShipHarness"]
+      48 [-]: CALL R7 1 1  
+      49 [-]: GETIMPORT R8 19 [nil]
+      50 [-]: LOADK R9 K27 ["/Lotus/Types/NeutralCreatures/ErsatzHorse/ErsatzHorseAvatar"]
+      51 [-]: CALL R8 1 1  
+      52 [-]: NEWTABLE R9 0 10
+      53 [-]: NEWTABLE R10 0 2
+      54 [-]: DUPTABLE R11 30
+      55 [-]: LOADN R12 374
+      56 [-]: SETTABLEKS R12 R11 K28 ["upgradeType"]
+      57 [-]: GETTABLEKS R12 R0 K31 ["sSkillCommanderMap"]
+      58 [-]: SETTABLEKS R12 R11 K29 ["filter"]
+      59 [-]: DUPTABLE R12 30
+      60 [-]: LOADN R13 374
+      61 [-]: SETTABLEKS R13 R12 K28 ["upgradeType"]
+      62 [-]: GETTABLEKS R13 R0 K32 ["sSkillRemotePlayerTracking"]
+      63 [-]: SETTABLEKS R13 R12 K29 ["filter"]
+      64 [-]: SETLIST R10 R11 2 [1]
+      65 [-]: SETTABLEN R10 R9 1
+      66 [-]: NEWTABLE R10 0 1
+      67 [-]: DUPTABLE R11 30
+      68 [-]: LOADN R12 374
+      69 [-]: SETTABLEKS R12 R11 K28 ["upgradeType"]
+      70 [-]: GETTABLEKS R12 R0 K33 ["sSkillRemotePlayerPower"]
+      71 [-]: SETTABLEKS R12 R11 K29 ["filter"]
+      72 [-]: SETLIST R10 R11 1 [1]
+      73 [-]: SETTABLEN R10 R9 2
+      74 [-]: NEWTABLE R10 0 1
+      75 [-]: DUPTABLE R11 30
+      76 [-]: LOADN R12 374
+      77 [-]: SETTABLEKS R12 R11 K28 ["upgradeType"]
+      78 [-]: GETTABLEKS R12 R0 K34 ["sSkillCommandGearMenu"]
+      79 [-]: SETTABLEKS R12 R11 K29 ["filter"]
+      80 [-]: SETLIST R10 R11 1 [1]
+      81 [-]: SETTABLEN R10 R9 3
+      82 [-]: NEWTABLE R10 0 1
+      83 [-]: DUPTABLE R11 30
+      84 [-]: LOADN R12 374
+      85 [-]: SETTABLEKS R12 R11 K28 ["upgradeType"]
+      86 [-]: GETTABLEKS R12 R0 K35 ["sSkillRecallToRailjack"]
+      87 [-]: SETTABLEKS R12 R11 K29 ["filter"]
+      88 [-]: SETLIST R10 R11 1 [1]
+      89 [-]: SETTABLEN R10 R9 4
+      90 [-]: NEWTABLE R10 0 1
+      91 [-]: DUPTABLE R11 30
+      92 [-]: LOADN R12 374
+      93 [-]: SETTABLEKS R12 R11 K28 ["upgradeType"]
+      94 [-]: GETTABLEKS R12 R0 K36 ["sSkillMechSummon"]
+      95 [-]: SETTABLEKS R12 R11 K29 ["filter"]
+      96 [-]: SETLIST R10 R11 1 [1]
+      97 [-]: SETTABLEN R10 R9 5
+      98 [-]: NEWTABLE R10 0 2
+      99 [-]: DUPTABLE R11 39
+     100 [-]: LOADN R12 376
+     101 [-]: SETTABLEKS R12 R11 K28 ["upgradeType"]
+     102 [-]: LOADK R12 K40 [0.25]
+     103 [-]: SETTABLEKS R12 R11 K37 ["value"]
+     104 [-]: LOADN R12 3  
+     105 [-]: SETTABLEKS R12 R11 K38 ["operationType"]
+     106 [-]: DUPTABLE R12 42
+     107 [-]: LOADN R13 4  
+     108 [-]: SETTABLEKS R13 R12 K28 ["upgradeType"]
+     109 [-]: LOADK R13 K40 [0.25]
+     110 [-]: SETTABLEKS R13 R12 K37 ["value"]
+     111 [-]: LOADN R13 3  
+     112 [-]: SETTABLEKS R13 R12 K38 ["operationType"]
+     113 [-]: SETTABLEKS R7 R12 K41 ["validType"]
+     114 [-]: SETLIST R10 R11 2 [1]
+     115 [-]: SETTABLEN R10 R9 6
+     116 [-]: NEWTABLE R10 0 1
+     117 [-]: DUPTABLE R11 39
+     118 [-]: LOADN R12 375
+     119 [-]: SETTABLEKS R12 R11 K28 ["upgradeType"]
+     120 [-]: LOADK R12 K43 [0.80000000000000004]
+     121 [-]: SETTABLEKS R12 R11 K37 ["value"]
+     122 [-]: LOADN R12 2  
+     123 [-]: SETTABLEKS R12 R11 K38 ["operationType"]
+     124 [-]: SETLIST R10 R11 1 [1]
+     125 [-]: SETTABLEN R10 R9 7
+     126 [-]: NEWTABLE R10 0 2
+     127 [-]: DUPTABLE R11 45
+     128 [-]: LOADN R12 40 
+     129 [-]: SETTABLEKS R12 R11 K28 ["upgradeType"]
+     130 [-]: LOADK R12 K46 [0.75]
+     131 [-]: SETTABLEKS R12 R11 K37 ["value"]
+     132 [-]: LOADN R12 2  
+     133 [-]: SETTABLEKS R12 R11 K38 ["operationType"]
+     134 [-]: GETGLOBAL R12 K12 ["CATEGORY_ARCHWING"]
+     135 [-]: SETTABLEKS R12 R11 K44 ["category"]
+     136 [-]: DUPTABLE R12 47
+     137 [-]: LOADN R13 167
+     138 [-]: SETTABLEKS R13 R12 K28 ["upgradeType"]
+     139 [-]: LOADK R13 K46 [0.75]
+     140 [-]: SETTABLEKS R13 R12 K37 ["value"]
+     141 [-]: LOADN R13 2  
+     142 [-]: SETTABLEKS R13 R12 K38 ["operationType"]
+     143 [-]: SETTABLEKS R6 R12 K41 ["validType"]
+     144 [-]: GETGLOBAL R13 K11 ["CATEGORY_PLAYER"]
+     145 [-]: SETTABLEKS R13 R12 K44 ["category"]
+     146 [-]: SETLIST R10 R11 2 [1]
+     147 [-]: SETTABLEN R10 R9 8
+     148 [-]: NEWTABLE R10 0 1
+     149 [-]: DUPTABLE R11 39
+     150 [-]: LOADN R12 375
+     151 [-]: SETTABLEKS R12 R11 K28 ["upgradeType"]
+     152 [-]: LOADK R12 K43 [0.80000000000000004]
+     153 [-]: SETTABLEKS R12 R11 K37 ["value"]
+     154 [-]: LOADN R12 2  
+     155 [-]: SETTABLEKS R12 R11 K38 ["operationType"]
+     156 [-]: SETLIST R10 R11 1 [1]
+     157 [-]: SETTABLEN R10 R9 9
+     158 [-]: NEWTABLE R10 0 1
+     159 [-]: DUPTABLE R11 30
+     160 [-]: LOADN R12 374
+     161 [-]: SETTABLEKS R12 R11 K28 ["upgradeType"]
+     162 [-]: GETTABLEKS R12 R0 K48 ["sSkillRemotePlayerDeploy"]
+     163 [-]: SETTABLEKS R12 R11 K29 ["filter"]
+     164 [-]: SETLIST R10 R11 1 [1]
+     165 [-]: SETTABLEN R10 R9 10
+     166 [-]: NEWTABLE R10 0 10
+     167 [-]: NEWTABLE R11 0 1
+     168 [-]: DUPTABLE R12 30
+     169 [-]: LOADN R13 374
+     170 [-]: SETTABLEKS R13 R12 K28 ["upgradeType"]
+     171 [-]: GETTABLEKS R13 R0 K49 ["sSkillRJBoost"]
+     172 [-]: SETTABLEKS R13 R12 K29 ["filter"]
+     173 [-]: SETLIST R11 R12 1 [1]
+     174 [-]: SETTABLEN R11 R10 1
+     175 [-]: NEWTABLE R11 0 1
+     176 [-]: DUPTABLE R12 30
+     177 [-]: LOADN R13 374
+     178 [-]: SETTABLEKS R13 R12 K28 ["upgradeType"]
+     179 [-]: GETTABLEKS R13 R0 K50 ["sSkillRJDodge"]
+     180 [-]: SETTABLEKS R13 R12 K29 ["filter"]
+     181 [-]: SETLIST R11 R12 1 [1]
+     182 [-]: SETTABLEN R11 R10 2
+     183 [-]: NEWTABLE R11 0 1
+     184 [-]: DUPTABLE R12 30
+     185 [-]: LOADN R13 374
+     186 [-]: SETTABLEKS R13 R12 K28 ["upgradeType"]
+     187 [-]: GETTABLEKS R13 R0 K51 ["sSkillRJClearProjectile"]
+     188 [-]: SETTABLEKS R13 R12 K29 ["filter"]
+     189 [-]: SETLIST R11 R12 1 [1]
+     190 [-]: SETTABLEN R11 R10 3
+     191 [-]: NEWTABLE R11 0 1
+     192 [-]: DUPTABLE R12 30
+     193 [-]: LOADN R13 374
+     194 [-]: SETTABLEKS R13 R12 K28 ["upgradeType"]
+     195 [-]: GETTABLEKS R13 R0 K52 ["sSkillRJDrift"]
+     196 [-]: SETTABLEKS R13 R12 K29 ["filter"]
+     197 [-]: SETLIST R11 R12 1 [1]
+     198 [-]: SETTABLEN R11 R10 4
+     199 [-]: NEWTABLE R11 0 2
+     200 [-]: DUPTABLE R12 30
+     201 [-]: LOADN R13 374
+     202 [-]: SETTABLEKS R13 R12 K28 ["upgradeType"]
+     203 [-]: GETTABLEKS R13 R0 K53 ["sSkillLootPOIMarker"]
+     204 [-]: SETTABLEKS R13 R12 K29 ["filter"]
+     205 [-]: DUPTABLE R13 30
+     206 [-]: LOADN R14 374
+     207 [-]: SETTABLEKS R14 R13 K28 ["upgradeType"]
+     208 [-]: GETTABLEKS R14 R0 K54 ["sSkillVacuumBuff"]
+     209 [-]: SETTABLEKS R14 R13 K29 ["filter"]
+     210 [-]: SETLIST R11 R12 2 [1]
+     211 [-]: SETTABLEN R11 R10 5
+     212 [-]: NEWTABLE R11 0 1
+     213 [-]: DUPTABLE R12 30
+     214 [-]: LOADN R13 374
+     215 [-]: SETTABLEKS R13 R12 K28 ["upgradeType"]
+     216 [-]: GETTABLEKS R13 R0 K55 ["sSkillRamsledEvasion"]
+     217 [-]: SETTABLEKS R13 R12 K29 ["filter"]
+     218 [-]: SETLIST R11 R12 1 [1]
+     219 [-]: SETTABLEN R11 R10 6
+     220 [-]: NEWTABLE R11 0 1
+     221 [-]: DUPTABLE R12 45
+     222 [-]: LOADN R13 83 
+     223 [-]: SETTABLEKS R13 R12 K28 ["upgradeType"]
+     224 [-]: LOADK R13 K56 [0.10000000000000001]
+     225 [-]: SETTABLEKS R13 R12 K37 ["value"]
+     226 [-]: LOADN R13 3  
+     227 [-]: SETTABLEKS R13 R12 K38 ["operationType"]
+     228 [-]: GETGLOBAL R13 K13 ["CATEGORY_MECH"]
+     229 [-]: SETTABLEKS R13 R12 K44 ["category"]
+     230 [-]: SETLIST R11 R12 1 [1]
+     231 [-]: SETTABLEN R11 R10 7
+     232 [-]: NEWTABLE R11 0 1
+     233 [-]: DUPTABLE R12 45
+     234 [-]: LOADN R13 83 
+     235 [-]: SETTABLEKS R13 R12 K28 ["upgradeType"]
+     236 [-]: LOADK R13 K57 [0.20000000000000001]
+     237 [-]: SETTABLEKS R13 R12 K37 ["value"]
+     238 [-]: LOADN R13 3  
+     239 [-]: SETTABLEKS R13 R12 K38 ["operationType"]
+     240 [-]: GETGLOBAL R13 K12 ["CATEGORY_ARCHWING"]
+     241 [-]: SETTABLEKS R13 R12 K44 ["category"]
+     242 [-]: SETLIST R11 R12 1 [1]
+     243 [-]: SETTABLEN R11 R10 8
+     244 [-]: NEWTABLE R11 0 2
+     245 [-]: DUPTABLE R12 59
+     246 [-]: LOADN R13 382
+     247 [-]: SETTABLEKS R13 R12 K28 ["upgradeType"]
+     248 [-]: LOADK R13 K46 [0.75]
+     249 [-]: SETTABLEKS R13 R12 K37 ["value"]
+     250 [-]: LOADN R13 2  
+     251 [-]: SETTABLEKS R13 R12 K58 ["validPosture"]
+     252 [-]: LOADN R13 2  
+     253 [-]: SETTABLEKS R13 R12 K38 ["operationType"]
+     254 [-]: SETTABLEKS R2 R12 K41 ["validType"]
+     255 [-]: DUPTABLE R13 39
+     256 [-]: LOADN R14 380
+     257 [-]: SETTABLEKS R14 R13 K28 ["upgradeType"]
+     258 [-]: LOADN R14 2000
+     259 [-]: SETTABLEKS R14 R13 K37 ["value"]
+     260 [-]: LOADN R14 0  
+     261 [-]: SETTABLEKS R14 R13 K38 ["operationType"]
+     262 [-]: SETLIST R11 R12 2 [1]
+     263 [-]: SETTABLEN R11 R10 9
+     264 [-]: NEWTABLE R11 0 1
+     265 [-]: DUPTABLE R12 30
+     266 [-]: LOADN R13 374
+     267 [-]: SETTABLEKS R13 R12 K28 ["upgradeType"]
+     268 [-]: GETTABLEKS R13 R0 K60 ["sSkillRJBlink"]
+     269 [-]: SETTABLEKS R13 R12 K29 ["filter"]
+     270 [-]: SETLIST R11 R12 1 [1]
+     271 [-]: SETTABLEN R11 R10 10
+     272 [-]: NEWTABLE R11 0 10
+     273 [-]: NEWTABLE R12 0 2
+     274 [-]: DUPTABLE R13 30
+     275 [-]: LOADN R14 374
+     276 [-]: SETTABLEKS R14 R13 K28 ["upgradeType"]
+     277 [-]: GETTABLEKS R14 R0 K61 ["sSkillRJLeadIndicator"]
+     278 [-]: SETTABLEKS R14 R13 K29 ["filter"]
+     279 [-]: DUPTABLE R14 30
+     280 [-]: LOADN R15 374
+     281 [-]: SETTABLEKS R15 R14 K28 ["upgradeType"]
+     282 [-]: GETTABLEKS R15 R0 K62 ["sSkillRJOrdLockOn"]
+     283 [-]: SETTABLEKS R15 R14 K29 ["filter"]
+     284 [-]: SETLIST R12 R13 2 [1]
+     285 [-]: SETTABLEN R12 R11 1
+     286 [-]: NEWTABLE R12 0 1
+     287 [-]: DUPTABLE R13 30
+     288 [-]: LOADN R14 374
+     289 [-]: SETTABLEKS R14 R13 K28 ["upgradeType"]
+     290 [-]: GETTABLEKS R14 R0 K63 ["sSkillRJARGimbal"]
+     291 [-]: SETTABLEKS R14 R13 K29 ["filter"]
+     292 [-]: SETLIST R12 R13 1 [1]
+     293 [-]: SETTABLEN R12 R11 2
+     294 [-]: NEWTABLE R12 0 1
+     295 [-]: DUPTABLE R13 30
+     296 [-]: LOADN R14 374
+     297 [-]: SETTABLEKS R14 R13 K28 ["upgradeType"]
+     298 [-]: GETTABLEKS R14 R0 K64 ["sSkillAWCannon"]
+     299 [-]: SETTABLEKS R14 R13 K29 ["filter"]
+     300 [-]: SETLIST R12 R13 1 [1]
+     301 [-]: SETTABLEN R12 R11 3
+     302 [-]: NEWTABLE R12 0 3
+     303 [-]: DUPTABLE R13 47
+     304 [-]: LOADN R14 276
+     305 [-]: SETTABLEKS R14 R13 K28 ["upgradeType"]
+     306 [-]: LOADN R14 25 
+     307 [-]: SETTABLEKS R14 R13 K37 ["value"]
+     308 [-]: LOADN R14 0  
+     309 [-]: SETTABLEKS R14 R13 K38 ["operationType"]
+     310 [-]: SETTABLEKS R3 R13 K41 ["validType"]
+     311 [-]: GETGLOBAL R14 K12 ["CATEGORY_ARCHWING"]
+     312 [-]: SETTABLEKS R14 R13 K44 ["category"]
+     313 [-]: DUPTABLE R14 47
+     314 [-]: LOADN R15 341
+     315 [-]: SETTABLEKS R15 R14 K28 ["upgradeType"]
+     316 [-]: LOADK R15 K46 [0.75]
+     317 [-]: SETTABLEKS R15 R14 K37 ["value"]
+     318 [-]: LOADN R15 0  
+     319 [-]: SETTABLEKS R15 R14 K38 ["operationType"]
+     320 [-]: SETTABLEKS R3 R14 K41 ["validType"]
+     321 [-]: GETGLOBAL R15 K12 ["CATEGORY_ARCHWING"]
+     322 [-]: SETTABLEKS R15 R14 K44 ["category"]
+     323 [-]: DUPTABLE R15 47
+     324 [-]: LOADN R16 228
+     325 [-]: SETTABLEKS R16 R15 K28 ["upgradeType"]
+     326 [-]: LOADK R16 K57 [0.20000000000000001]
+     327 [-]: SETTABLEKS R16 R15 K37 ["value"]
+     328 [-]: LOADN R16 3  
+     329 [-]: SETTABLEKS R16 R15 K38 ["operationType"]
+     330 [-]: SETTABLEKS R3 R15 K41 ["validType"]
+     331 [-]: GETGLOBAL R16 K12 ["CATEGORY_ARCHWING"]
+     332 [-]: SETTABLEKS R16 R15 K44 ["category"]
+     333 [-]: SETLIST R12 R13 3 [1]
+     334 [-]: SETTABLEN R12 R11 4
+     335 [-]: NEWTABLE R12 0 1
+     336 [-]: DUPTABLE R13 47
+     337 [-]: LOADN R14 228
+     338 [-]: SETTABLEKS R14 R13 K28 ["upgradeType"]
+     339 [-]: LOADK R14 K57 [0.20000000000000001]
+     340 [-]: SETTABLEKS R14 R13 K37 ["value"]
+     341 [-]: LOADN R14 3  
+     342 [-]: SETTABLEKS R14 R13 K38 ["operationType"]
+     343 [-]: SETTABLEKS R4 R13 K41 ["validType"]
+     344 [-]: GETGLOBAL R14 K13 ["CATEGORY_MECH"]
+     345 [-]: SETTABLEKS R14 R13 K44 ["category"]
+     346 [-]: SETLIST R12 R13 1 [1]
+     347 [-]: SETTABLEN R12 R11 5
+     348 [-]: NEWTABLE R12 0 1
+     349 [-]: DUPTABLE R13 42
+     350 [-]: LOADN R14 198
+     351 [-]: SETTABLEKS R14 R13 K28 ["upgradeType"]
+     352 [-]: LOADK R14 K43 [0.80000000000000004]
+     353 [-]: SETTABLEKS R14 R13 K37 ["value"]
+     354 [-]: LOADN R14 2  
+     355 [-]: SETTABLEKS R14 R13 K38 ["operationType"]
+     356 [-]: SETTABLEKS R2 R13 K41 ["validType"]
+     357 [-]: SETLIST R12 R13 1 [1]
+     358 [-]: SETTABLEN R12 R11 6
+     359 [-]: NEWTABLE R12 0 2
+     360 [-]: DUPTABLE R13 42
+     361 [-]: LOADN R14 345
+     362 [-]: SETTABLEKS R14 R13 K28 ["upgradeType"]
+     363 [-]: LOADK R14 K65 [0.5]
+     364 [-]: SETTABLEKS R14 R13 K37 ["value"]
+     365 [-]: LOADN R14 2  
+     366 [-]: SETTABLEKS R14 R13 K38 ["operationType"]
+     367 [-]: SETTABLEKS R2 R13 K41 ["validType"]
+     368 [-]: DUPTABLE R14 42
+     369 [-]: LOADN R15 9  
+     370 [-]: SETTABLEKS R15 R14 K28 ["upgradeType"]
+     371 [-]: LOADK R15 K65 [0.5]
+     372 [-]: SETTABLEKS R15 R14 K37 ["value"]
+     373 [-]: LOADN R15 3  
+     374 [-]: SETTABLEKS R15 R14 K38 ["operationType"]
+     375 [-]: SETTABLEKS R1 R14 K41 ["validType"]
+     376 [-]: SETLIST R12 R13 2 [1]
+     377 [-]: SETTABLEN R12 R11 7
+     378 [-]: NEWTABLE R12 0 4
+     379 [-]: DUPTABLE R13 45
+     380 [-]: LOADN R14 228
+     381 [-]: SETTABLEKS R14 R13 K28 ["upgradeType"]
+     382 [-]: LOADK R14 K40 [0.25]
+     383 [-]: SETTABLEKS R14 R13 K37 ["value"]
+     384 [-]: LOADN R14 3  
+     385 [-]: SETTABLEKS R14 R13 K38 ["operationType"]
+     386 [-]: GETGLOBAL R14 K12 ["CATEGORY_ARCHWING"]
+     387 [-]: SETTABLEKS R14 R13 K44 ["category"]
+     388 [-]: DUPTABLE R14 45
+     389 [-]: LOADN R15 10 
+     390 [-]: SETTABLEKS R15 R14 K28 ["upgradeType"]
+     391 [-]: LOADK R15 K57 [0.20000000000000001]
+     392 [-]: SETTABLEKS R15 R14 K37 ["value"]
+     393 [-]: LOADN R15 3  
+     394 [-]: SETTABLEKS R15 R14 K38 ["operationType"]
+     395 [-]: GETGLOBAL R15 K12 ["CATEGORY_ARCHWING"]
+     396 [-]: SETTABLEKS R15 R14 K44 ["category"]
+     397 [-]: DUPTABLE R15 45
+     398 [-]: LOADN R16 9  
+     399 [-]: SETTABLEKS R16 R15 K28 ["upgradeType"]
+     400 [-]: LOADK R16 K57 [0.20000000000000001]
+     401 [-]: SETTABLEKS R16 R15 K37 ["value"]
+     402 [-]: LOADN R16 3  
+     403 [-]: SETTABLEKS R16 R15 K38 ["operationType"]
+     404 [-]: GETGLOBAL R16 K12 ["CATEGORY_ARCHWING"]
+     405 [-]: SETTABLEKS R16 R15 K44 ["category"]
+     406 [-]: DUPTABLE R16 45
+     407 [-]: LOADN R17 4  
+     408 [-]: SETTABLEKS R17 R16 K28 ["upgradeType"]
+     409 [-]: LOADK R17 K57 [0.20000000000000001]
+     410 [-]: SETTABLEKS R17 R16 K37 ["value"]
+     411 [-]: LOADN R17 3  
+     412 [-]: SETTABLEKS R17 R16 K38 ["operationType"]
+     413 [-]: GETGLOBAL R17 K12 ["CATEGORY_ARCHWING"]
+     414 [-]: SETTABLEKS R17 R16 K44 ["category"]
+     415 [-]: SETLIST R12 R13 4 [1]
+     416 [-]: SETTABLEN R12 R11 8
+     417 [-]: NEWTABLE R12 0 1
+     418 [-]: DUPTABLE R13 30
+     419 [-]: LOADN R14 374
+     420 [-]: SETTABLEKS R14 R13 K28 ["upgradeType"]
+     421 [-]: GETTABLEKS R14 R0 K66 ["sSkillRJReload"]
+     422 [-]: SETTABLEKS R14 R13 K29 ["filter"]
+     423 [-]: SETLIST R12 R13 1 [1]
+     424 [-]: SETTABLEN R12 R11 9
+     425 [-]: NEWTABLE R12 0 2
+     426 [-]: DUPTABLE R13 30
+     427 [-]: LOADN R14 374
+     428 [-]: SETTABLEKS R14 R13 K28 ["upgradeType"]
+     429 [-]: GETTABLEKS R14 R0 K67 ["sSkillAimIndicatorConverge"]
+     430 [-]: SETTABLEKS R14 R13 K29 ["filter"]
+     431 [-]: DUPTABLE R14 69
+     432 [-]: LOADN R15 198
+     433 [-]: SETTABLEKS R15 R14 K28 ["upgradeType"]
+     434 [-]: LOADK R15 K57 [0.20000000000000001]
+     435 [-]: SETTABLEKS R15 R14 K37 ["value"]
+     436 [-]: LOADN R15 3  
+     437 [-]: SETTABLEKS R15 R14 K38 ["operationType"]
+     438 [-]: NEWTABLE R15 0 1
+     439 [-]: LOADN R16 1  
+     440 [-]: SETLIST R15 R16 1 [1]
+     441 [-]: SETTABLEKS R15 R14 K68 ["validModifiers"]
+     442 [-]: SETTABLEKS R2 R14 K41 ["validType"]
+     443 [-]: SETLIST R12 R13 2 [1]
+     444 [-]: SETTABLEN R12 R11 10
+     445 [-]: NEWTABLE R12 0 10
+     446 [-]: NEWTABLE R13 0 1
+     447 [-]: DUPTABLE R14 30
+     448 [-]: LOADN R15 374
+     449 [-]: SETTABLEKS R15 R14 K28 ["upgradeType"]
+     450 [-]: GETTABLEKS R15 R0 K70 ["sSkillMultiToolExpert"]
+     451 [-]: SETTABLEKS R15 R14 K29 ["filter"]
+     452 [-]: SETLIST R13 R14 1 [1]
+     453 [-]: SETTABLEN R13 R12 1
+     454 [-]: NEWTABLE R13 0 1
+     455 [-]: DUPTABLE R14 47
+     456 [-]: LOADN R15 167
+     457 [-]: SETTABLEKS R15 R14 K28 ["upgradeType"]
+     458 [-]: LOADK R15 K65 [0.5]
+     459 [-]: SETTABLEKS R15 R14 K37 ["value"]
+     460 [-]: LOADN R15 2  
+     461 [-]: SETTABLEKS R15 R14 K38 ["operationType"]
+     462 [-]: SETTABLEKS R5 R14 K41 ["validType"]
+     463 [-]: GETGLOBAL R15 K11 ["CATEGORY_PLAYER"]
+     464 [-]: SETTABLEKS R15 R14 K44 ["category"]
+     465 [-]: SETLIST R13 R14 1 [1]
+     466 [-]: SETTABLEN R13 R12 2
+     467 [-]: NEWTABLE R13 0 1
+     468 [-]: DUPTABLE R14 30
+     469 [-]: LOADN R15 374
+     470 [-]: SETTABLEKS R15 R14 K28 ["upgradeType"]
+     471 [-]: GETTABLEKS R15 R0 K71 ["sSkillBCOrd"]
+     472 [-]: SETTABLEKS R15 R14 K29 ["filter"]
+     473 [-]: SETLIST R13 R14 1 [1]
+     474 [-]: SETTABLEN R13 R12 3
+     475 [-]: NEWTABLE R13 0 1
+     476 [-]: DUPTABLE R14 30
+     477 [-]: LOADN R15 374
+     478 [-]: SETTABLEKS R15 R14 K28 ["upgradeType"]
+     479 [-]: GETTABLEKS R15 R0 K72 ["sSkillBCSuperAmmo"]
+     480 [-]: SETTABLEKS R15 R14 K29 ["filter"]
+     481 [-]: SETLIST R13 R14 1 [1]
+     482 [-]: SETTABLEN R13 R12 4
+     483 [-]: NEWTABLE R13 0 2
+     484 [-]: DUPTABLE R14 30
+     485 [-]: LOADN R15 374
+     486 [-]: SETTABLEKS R15 R14 K28 ["upgradeType"]
+     487 [-]: GETTABLEKS R15 R0 K73 ["sSkillBCHeal"]
+     488 [-]: SETTABLEKS R15 R14 K29 ["filter"]
+     489 [-]: DUPTABLE R15 39
+     490 [-]: LOADN R16 377
+     491 [-]: SETTABLEKS R16 R15 K28 ["upgradeType"]
+     492 [-]: LOADK R16 K40 [0.25]
+     493 [-]: SETTABLEKS R16 R15 K37 ["value"]
+     494 [-]: LOADN R16 3  
+     495 [-]: SETTABLEKS R16 R15 K38 ["operationType"]
+     496 [-]: SETLIST R13 R14 2 [1]
+     497 [-]: SETTABLEN R13 R12 5
+     498 [-]: NEWTABLE R13 0 1
+     499 [-]: DUPTABLE R14 39
+     500 [-]: LOADN R15 379
+     501 [-]: SETTABLEKS R15 R14 K28 ["upgradeType"]
+     502 [-]: LOADK R15 K74 [-0.25]
+     503 [-]: SETTABLEKS R15 R14 K37 ["value"]
+     504 [-]: LOADN R15 3  
+     505 [-]: SETTABLEKS R15 R14 K38 ["operationType"]
+     506 [-]: SETLIST R13 R14 1 [1]
+     507 [-]: SETTABLEN R13 R12 6
+     508 [-]: NEWTABLE R13 0 1
+     509 [-]: DUPTABLE R14 39
+     510 [-]: LOADN R15 377
+     511 [-]: SETTABLEKS R15 R14 K28 ["upgradeType"]
+     512 [-]: LOADK R15 K40 [0.25]
+     513 [-]: SETTABLEKS R15 R14 K37 ["value"]
+     514 [-]: LOADN R15 3  
+     515 [-]: SETTABLEKS R15 R14 K38 ["operationType"]
+     516 [-]: SETLIST R13 R14 1 [1]
+     517 [-]: SETTABLEN R13 R12 7
+     518 [-]: NEWTABLE R13 0 3
+     519 [-]: DUPTABLE R14 45
+     520 [-]: LOADN R15 66 
+     521 [-]: SETTABLEKS R15 R14 K28 ["upgradeType"]
+     522 [-]: LOADK R15 K75 [0.29999999999999999]
+     523 [-]: SETTABLEKS R15 R14 K37 ["value"]
+     524 [-]: LOADN R15 3  
+     525 [-]: SETTABLEKS R15 R14 K38 ["operationType"]
+     526 [-]: GETGLOBAL R15 K12 ["CATEGORY_ARCHWING"]
+     527 [-]: SETTABLEKS R15 R14 K44 ["category"]
+     528 [-]: DUPTABLE R15 45
+     529 [-]: LOADN R16 123
+     530 [-]: SETTABLEKS R16 R15 K28 ["upgradeType"]
+     531 [-]: LOADK R16 K75 [0.29999999999999999]
+     532 [-]: SETTABLEKS R16 R15 K37 ["value"]
+     533 [-]: LOADN R16 3  
+     534 [-]: SETTABLEKS R16 R15 K38 ["operationType"]
+     535 [-]: GETGLOBAL R16 K12 ["CATEGORY_ARCHWING"]
+     536 [-]: SETTABLEKS R16 R15 K44 ["category"]
+     537 [-]: DUPTABLE R16 45
+     538 [-]: LOADN R17 15 
+     539 [-]: SETTABLEKS R17 R16 K28 ["upgradeType"]
+     540 [-]: LOADK R17 K75 [0.29999999999999999]
+     541 [-]: SETTABLEKS R17 R16 K37 ["value"]
+     542 [-]: LOADN R17 3  
+     543 [-]: SETTABLEKS R17 R16 K38 ["operationType"]
+     544 [-]: GETGLOBAL R17 K12 ["CATEGORY_ARCHWING"]
+     545 [-]: SETTABLEKS R17 R16 K44 ["category"]
+     546 [-]: SETLIST R13 R14 3 [1]
+     547 [-]: SETTABLEN R13 R12 8
+     548 [-]: NEWTABLE R13 0 2
+     549 [-]: DUPTABLE R14 45
+     550 [-]: LOADN R15 66 
+     551 [-]: SETTABLEKS R15 R14 K28 ["upgradeType"]
+     552 [-]: LOADK R15 K40 [0.25]
+     553 [-]: SETTABLEKS R15 R14 K37 ["value"]
+     554 [-]: LOADN R15 3  
+     555 [-]: SETTABLEKS R15 R14 K38 ["operationType"]
+     556 [-]: GETGLOBAL R15 K13 ["CATEGORY_MECH"]
+     557 [-]: SETTABLEKS R15 R14 K44 ["category"]
+     558 [-]: DUPTABLE R15 45
+     559 [-]: LOADN R16 123
+     560 [-]: SETTABLEKS R16 R15 K28 ["upgradeType"]
+     561 [-]: LOADK R16 K40 [0.25]
+     562 [-]: SETTABLEKS R16 R15 K37 ["value"]
+     563 [-]: LOADN R16 3  
+     564 [-]: SETTABLEKS R16 R15 K38 ["operationType"]
+     565 [-]: GETGLOBAL R16 K13 ["CATEGORY_MECH"]
+     566 [-]: SETTABLEKS R16 R15 K44 ["category"]
+     567 [-]: SETLIST R13 R14 2 [1]
+     568 [-]: SETTABLEN R13 R12 9
+     569 [-]: NEWTABLE R13 0 1
+     570 [-]: DUPTABLE R14 30
+     571 [-]: LOADN R15 374
+     572 [-]: SETTABLEKS R15 R14 K28 ["upgradeType"]
+     573 [-]: GETTABLEKS R15 R0 K76 ["sSkillBCUberFix"]
+     574 [-]: SETTABLEKS R15 R14 K29 ["filter"]
+     575 [-]: SETLIST R13 R14 1 [1]
+     576 [-]: SETTABLEN R13 R12 10
+     577 [-]: NEWTABLE R13 0 10
+     578 [-]: NEWTABLE R14 0 1
+     579 [-]: DUPTABLE R15 30
+     580 [-]: LOADN R16 374
+     581 [-]: SETTABLEKS R16 R15 K28 ["upgradeType"]
+     582 [-]: GETTABLEKS R16 R0 K77 ["sSkillCrewCommand"]
+     583 [-]: SETTABLEKS R16 R15 K29 ["filter"]
+     584 [-]: SETLIST R14 R15 1 [1]
+     585 [-]: SETTABLEN R14 R13 1
+     586 [-]: NEWTABLE R14 0 0
+     587 [-]: SETTABLEN R14 R13 2
+     588 [-]: NEWTABLE R14 0 0
+     589 [-]: SETTABLEN R14 R13 3
+     590 [-]: NEWTABLE R14 0 0
+     591 [-]: SETTABLEN R14 R13 4
+     592 [-]: NEWTABLE R14 0 0
+     593 [-]: SETTABLEN R14 R13 5
+     594 [-]: NEWTABLE R14 0 0
+     595 [-]: SETTABLEN R14 R13 6
+     596 [-]: NEWTABLE R14 0 0
+     597 [-]: SETTABLEN R14 R13 7
+     598 [-]: NEWTABLE R14 0 0
+     599 [-]: SETTABLEN R14 R13 8
+     600 [-]: NEWTABLE R14 0 1
+     601 [-]: DUPTABLE R15 30
+     602 [-]: LOADN R16 374
+     603 [-]: SETTABLEKS R16 R15 K28 ["upgradeType"]
+     604 [-]: GETTABLEKS R16 R0 K78 ["sSkillSecondCommand"]
+     605 [-]: SETTABLEKS R16 R15 K29 ["filter"]
+     606 [-]: SETLIST R14 R15 1 [1]
+     607 [-]: SETTABLEN R14 R13 9
+     608 [-]: NEWTABLE R14 0 0
+     609 [-]: SETTABLEN R14 R13 10
+     610 [-]: NEWTABLE R14 0 10
+     611 [-]: NEWTABLE R15 0 2
+     612 [-]: DUPTABLE R16 79
+     613 [-]: LOADN R17 374
+     614 [-]: SETTABLEKS R17 R16 K28 ["upgradeType"]
+     615 [-]: GETTABLEKS R17 R0 K80 ["sSkillDamagePerBoon"]
+     616 [-]: SETTABLEKS R17 R16 K29 ["filter"]
+     617 [-]: GETGLOBAL R17 K14 ["CATEGORY_DRIFTER"]
+     618 [-]: SETTABLEKS R17 R16 K44 ["category"]
+     619 [-]: DUPTABLE R17 79
+     620 [-]: LOADN R18 374
+     621 [-]: SETTABLEKS R18 R17 K28 ["upgradeType"]
+     622 [-]: GETTABLEKS R18 R0 K80 ["sSkillDamagePerBoon"]
+     623 [-]: SETTABLEKS R18 R17 K29 ["filter"]
+     624 [-]: GETGLOBAL R18 K17 ["CATEGORY_DUVIRI_WF"]
+     625 [-]: SETTABLEKS R18 R17 K44 ["category"]
+     626 [-]: SETLIST R15 R16 2 [1]
+     627 [-]: SETTABLEN R15 R14 1
+     628 [-]: NEWTABLE R15 0 1
+     629 [-]: DUPTABLE R16 79
+     630 [-]: LOADN R17 374
+     631 [-]: SETTABLEKS R17 R16 K28 ["upgradeType"]
+     632 [-]: GETTABLEKS R17 R0 K81 ["sSkillRestorationMoveSpeed"]
+     633 [-]: SETTABLEKS R17 R16 K29 ["filter"]
+     634 [-]: GETGLOBAL R17 K14 ["CATEGORY_DRIFTER"]
+     635 [-]: SETTABLEKS R17 R16 K44 ["category"]
+     636 [-]: SETLIST R15 R16 1 [1]
+     637 [-]: SETTABLEN R15 R14 2
+     638 [-]: NEWTABLE R15 0 1
+     639 [-]: DUPTABLE R16 79
+     640 [-]: LOADN R17 374
+     641 [-]: SETTABLEKS R17 R16 K28 ["upgradeType"]
+     642 [-]: GETTABLEKS R17 R0 K82 ["sSkillDuviriBeastMode"]
+     643 [-]: SETTABLEKS R17 R16 K29 ["filter"]
+     644 [-]: GETGLOBAL R17 K14 ["CATEGORY_DRIFTER"]
+     645 [-]: SETTABLEKS R17 R16 K44 ["category"]
+     646 [-]: SETLIST R15 R16 1 [1]
+     647 [-]: SETTABLEN R15 R14 3
+     648 [-]: NEWTABLE R15 0 1
+     649 [-]: DUPTABLE R16 83
+     650 [-]: LOADN R17 319
+     651 [-]: SETTABLEKS R17 R16 K28 ["upgradeType"]
+     652 [-]: LOADN R17 2  
+     653 [-]: SETTABLEKS R17 R16 K38 ["operationType"]
+     654 [-]: LOADK R17 K84 [0.69999999999999996]
+     655 [-]: SETTABLEKS R17 R16 K37 ["value"]
+     656 [-]: GETIMPORT R17 86 [nil]
+     657 [-]: SETTABLEKS R17 R16 K41 ["validType"]
+     658 [-]: GETGLOBAL R17 K14 ["CATEGORY_DRIFTER"]
+     659 [-]: SETTABLEKS R17 R16 K44 ["category"]
+     660 [-]: SETLIST R15 R16 1 [1]
+     661 [-]: SETTABLEN R15 R14 4
+     662 [-]: NEWTABLE R15 0 1
+     663 [-]: DUPTABLE R16 87
+     664 [-]: LOADN R17 181
+     665 [-]: SETTABLEKS R17 R16 K28 ["upgradeType"]
+     666 [-]: LOADN R17 2  
+     667 [-]: SETTABLEKS R17 R16 K38 ["operationType"]
+     668 [-]: LOADK R17 K43 [0.80000000000000004]
+     669 [-]: SETTABLEKS R17 R16 K37 ["value"]
+     670 [-]: GETGLOBAL R17 K14 ["CATEGORY_DRIFTER"]
+     671 [-]: SETTABLEKS R17 R16 K44 ["category"]
+     672 [-]: SETLIST R15 R16 1 [1]
+     673 [-]: SETTABLEN R15 R14 5
+     674 [-]: NEWTABLE R15 0 1
+     675 [-]: DUPTABLE R16 79
+     676 [-]: LOADN R17 374
+     677 [-]: SETTABLEKS R17 R16 K28 ["upgradeType"]
+     678 [-]: GETTABLEKS R17 R0 K88 ["sSkillRadarSlomo"]
+     679 [-]: SETTABLEKS R17 R16 K29 ["filter"]
+     680 [-]: GETGLOBAL R17 K14 ["CATEGORY_DRIFTER"]
+     681 [-]: SETTABLEKS R17 R16 K44 ["category"]
+     682 [-]: SETLIST R15 R16 1 [1]
+     683 [-]: SETTABLEN R15 R14 6
+     684 [-]: NEWTABLE R15 0 1
+     685 [-]: DUPTABLE R16 87
+     686 [-]: LOADN R17 221
+     687 [-]: SETTABLEKS R17 R16 K28 ["upgradeType"]
+     688 [-]: LOADN R17 0  
+     689 [-]: SETTABLEKS R17 R16 K38 ["operationType"]
+     690 [-]: LOADK R17 K57 [0.20000000000000001]
+     691 [-]: SETTABLEKS R17 R16 K37 ["value"]
+     692 [-]: GETGLOBAL R17 K14 ["CATEGORY_DRIFTER"]
+     693 [-]: SETTABLEKS R17 R16 K44 ["category"]
+     694 [-]: SETLIST R15 R16 1 [1]
+     695 [-]: SETTABLEN R15 R14 7
+     696 [-]: NEWTABLE R15 0 1
+     697 [-]: DUPTABLE R16 89
+     698 [-]: LOADN R17 3  
+     699 [-]: SETTABLEKS R17 R16 K28 ["upgradeType"]
+     700 [-]: LOADK R17 K90 [1.5]
+     701 [-]: SETTABLEKS R17 R16 K37 ["value"]
+     702 [-]: LOADN R17 2  
+     703 [-]: SETTABLEKS R17 R16 K38 ["operationType"]
+     704 [-]: GETTABLEKS R17 R0 K82 ["sSkillDuviriBeastMode"]
+     705 [-]: SETTABLEKS R17 R16 K29 ["filter"]
+     706 [-]: GETGLOBAL R17 K14 ["CATEGORY_DRIFTER"]
+     707 [-]: SETTABLEKS R17 R16 K44 ["category"]
+     708 [-]: SETLIST R15 R16 1 [1]
+     709 [-]: SETTABLEN R15 R14 8
+     710 [-]: NEWTABLE R15 0 2
+     711 [-]: DUPTABLE R16 45
+     712 [-]: LOADN R17 228
+     713 [-]: SETTABLEKS R17 R16 K28 ["upgradeType"]
+     714 [-]: LOADK R17 K40 [0.25]
+     715 [-]: SETTABLEKS R17 R16 K37 ["value"]
+     716 [-]: LOADN R17 3  
+     717 [-]: SETTABLEKS R17 R16 K38 ["operationType"]
+     718 [-]: GETGLOBAL R17 K14 ["CATEGORY_DRIFTER"]
+     719 [-]: SETTABLEKS R17 R16 K44 ["category"]
+     720 [-]: DUPTABLE R17 45
+     721 [-]: LOADN R18 228
+     722 [-]: SETTABLEKS R18 R17 K28 ["upgradeType"]
+     723 [-]: LOADK R18 K40 [0.25]
+     724 [-]: SETTABLEKS R18 R17 K37 ["value"]
+     725 [-]: LOADN R18 3  
+     726 [-]: SETTABLEKS R18 R17 K38 ["operationType"]
+     727 [-]: GETGLOBAL R18 K15 ["CATEGORY_OPERATOR"]
+     728 [-]: SETTABLEKS R18 R17 K44 ["category"]
+     729 [-]: SETLIST R15 R16 2 [1]
+     730 [-]: SETTABLEN R15 R14 9
+     731 [-]: NEWTABLE R15 0 1
+     732 [-]: DUPTABLE R16 92
+     733 [-]: GETIMPORT R17 94 [nil]
+     734 [-]: LOADK R18 K95 ["/Lotus/Upgrades/Intrinsics/OnAbilityIncreaseDamage"]
+     735 [-]: CALL R17 1 1 
+     736 [-]: SETTABLEKS R17 R16 K91 ["upgradeObjectType"]
+     737 [-]: GETGLOBAL R17 K14 ["CATEGORY_DRIFTER"]
+     738 [-]: SETTABLEKS R17 R16 K44 ["category"]
+     739 [-]: SETLIST R15 R16 1 [1]
+     740 [-]: SETTABLEN R15 R14 10
+     741 [-]: NEWTABLE R15 0 10
+     742 [-]: NEWTABLE R16 0 1
+     743 [-]: DUPTABLE R17 79
+     744 [-]: LOADN R18 374
+     745 [-]: SETTABLEKS R18 R17 K28 ["upgradeType"]
+     746 [-]: GETTABLEKS R18 R0 K96 ["sSkillSummonHorse"]
+     747 [-]: SETTABLEKS R18 R17 K29 ["filter"]
+     748 [-]: GETGLOBAL R18 K14 ["CATEGORY_DRIFTER"]
+     749 [-]: SETTABLEKS R18 R17 K44 ["category"]
+     750 [-]: SETLIST R16 R17 1 [1]
+     751 [-]: SETTABLEN R16 R15 1
+     752 [-]: NEWTABLE R16 0 1
+     753 [-]: DUPTABLE R17 79
+     754 [-]: LOADN R18 374
+     755 [-]: SETTABLEKS R18 R17 K28 ["upgradeType"]
+     756 [-]: GETTABLEKS R18 R0 K97 ["sSkillHorseResistDismount"]
+     757 [-]: SETTABLEKS R18 R17 K29 ["filter"]
+     758 [-]: GETGLOBAL R18 K14 ["CATEGORY_DRIFTER"]
+     759 [-]: SETTABLEKS R18 R17 K44 ["category"]
+     760 [-]: SETLIST R16 R17 1 [1]
+     761 [-]: SETTABLEN R16 R15 2
+     762 [-]: NEWTABLE R16 0 1
+     763 [-]: DUPTABLE R17 79
+     764 [-]: LOADN R18 374
+     765 [-]: SETTABLEKS R18 R17 K28 ["upgradeType"]
+     766 [-]: GETTABLEKS R18 R0 K98 ["sSkillHorseStomp"]
+     767 [-]: SETTABLEKS R18 R17 K29 ["filter"]
+     768 [-]: GETGLOBAL R18 K14 ["CATEGORY_DRIFTER"]
+     769 [-]: SETTABLEKS R18 R17 K44 ["category"]
+     770 [-]: SETLIST R16 R17 1 [1]
+     771 [-]: SETTABLEN R16 R15 3
+     772 [-]: NEWTABLE R16 0 1
+     773 [-]: DUPTABLE R17 79
+     774 [-]: LOADN R18 374
+     775 [-]: SETTABLEKS R18 R17 K28 ["upgradeType"]
+     776 [-]: GETTABLEKS R18 R0 K99 ["sSkillDuviriFastTravel"]
+     777 [-]: SETTABLEKS R18 R17 K29 ["filter"]
+     778 [-]: GETGLOBAL R18 K14 ["CATEGORY_DRIFTER"]
+     779 [-]: SETTABLEKS R18 R17 K44 ["category"]
+     780 [-]: SETLIST R16 R17 1 [1]
+     781 [-]: SETTABLEN R16 R15 4
+     782 [-]: NEWTABLE R16 0 1
+     783 [-]: DUPTABLE R17 100
+     784 [-]: LOADN R18 78 
+     785 [-]: SETTABLEKS R18 R17 K28 ["upgradeType"]
+     786 [-]: GETGLOBAL R18 K16 ["CATEGORY_HORSE"]
+     787 [-]: SETTABLEKS R18 R17 K44 ["category"]
+     788 [-]: LOADN R18 30 
+     789 [-]: SETTABLEKS R18 R17 K37 ["value"]
+     790 [-]: LOADN R18 0  
+     791 [-]: SETTABLEKS R18 R17 K38 ["operationType"]
+     792 [-]: SETLIST R16 R17 1 [1]
+     793 [-]: SETTABLEN R16 R15 5
+     794 [-]: NEWTABLE R16 0 1
+     795 [-]: DUPTABLE R17 79
+     796 [-]: LOADN R18 374
+     797 [-]: SETTABLEKS R18 R17 K28 ["upgradeType"]
+     798 [-]: GETTABLEKS R18 R0 K101 ["sSkillHorseProtect"]
+     799 [-]: SETTABLEKS R18 R17 K29 ["filter"]
+     800 [-]: GETGLOBAL R18 K14 ["CATEGORY_DRIFTER"]
+     801 [-]: SETTABLEKS R18 R17 K44 ["category"]
+     802 [-]: SETLIST R16 R17 1 [1]
+     803 [-]: SETTABLEN R16 R15 6
+     804 [-]: NEWTABLE R16 0 1
+     805 [-]: DUPTABLE R17 45
+     806 [-]: LOADN R18 186
+     807 [-]: SETTABLEKS R18 R17 K28 ["upgradeType"]
+     808 [-]: LOADK R18 K65 [0.5]
+     809 [-]: SETTABLEKS R18 R17 K37 ["value"]
+     810 [-]: LOADN R18 2  
+     811 [-]: SETTABLEKS R18 R17 K38 ["operationType"]
+     812 [-]: GETGLOBAL R18 K16 ["CATEGORY_HORSE"]
+     813 [-]: SETTABLEKS R18 R17 K44 ["category"]
+     814 [-]: SETLIST R16 R17 1 [1]
+     815 [-]: SETTABLEN R16 R15 7
+     816 [-]: NEWTABLE R16 0 2
+     817 [-]: DUPTABLE R17 79
+     818 [-]: LOADN R18 374
+     819 [-]: SETTABLEKS R18 R17 K28 ["upgradeType"]
+     820 [-]: GETTABLEKS R18 R0 K102 ["sSkillHorseRename"]
+     821 [-]: SETTABLEKS R18 R17 K29 ["filter"]
+     822 [-]: GETGLOBAL R18 K14 ["CATEGORY_DRIFTER"]
+     823 [-]: SETTABLEKS R18 R17 K44 ["category"]
+     824 [-]: DUPTABLE R18 79
+     825 [-]: LOADN R19 374
+     826 [-]: SETTABLEKS R19 R18 K28 ["upgradeType"]
+     827 [-]: GETTABLEKS R19 R0 K102 ["sSkillHorseRename"]
+     828 [-]: SETTABLEKS R19 R18 K29 ["filter"]
+     829 [-]: GETGLOBAL R19 K17 ["CATEGORY_DUVIRI_WF"]
+     830 [-]: SETTABLEKS R19 R18 K44 ["category"]
+     831 [-]: SETLIST R16 R17 2 [1]
+     832 [-]: SETTABLEN R16 R15 8
+     833 [-]: NEWTABLE R16 0 0
+     834 [-]: SETTABLEN R16 R15 9
+     835 [-]: NEWTABLE R16 0 1
+     836 [-]: DUPTABLE R17 79
+     837 [-]: LOADN R18 374
+     838 [-]: SETTABLEKS R18 R17 K28 ["upgradeType"]
+     839 [-]: GETTABLEKS R18 R0 K103 ["sSkillDuviriFastTravelToDrifters"]
+     840 [-]: SETTABLEKS R18 R17 K29 ["filter"]
+     841 [-]: GETGLOBAL R18 K14 ["CATEGORY_DRIFTER"]
+     842 [-]: SETTABLEKS R18 R17 K44 ["category"]
+     843 [-]: SETLIST R16 R17 1 [1]
+     844 [-]: SETTABLEN R16 R15 10
+     845 [-]: NEWTABLE R16 0 10
+     846 [-]: NEWTABLE R17 0 1
+     847 [-]: DUPTABLE R18 89
+     848 [-]: LOADN R19 374
+     849 [-]: SETTABLEKS R19 R18 K28 ["upgradeType"]
+     850 [-]: LOADN R19 1  
+     851 [-]: SETTABLEKS R19 R18 K37 ["value"]
+     852 [-]: LOADN R19 0  
+     853 [-]: SETTABLEKS R19 R18 K38 ["operationType"]
+     854 [-]: GETTABLEKS R19 R0 K104 ["sSkillBoonOptions"]
+     855 [-]: SETTABLEKS R19 R18 K29 ["filter"]
+     856 [-]: GETGLOBAL R19 K14 ["CATEGORY_DRIFTER"]
+     857 [-]: SETTABLEKS R19 R18 K44 ["category"]
+     858 [-]: SETLIST R17 R18 1 [1]
+     859 [-]: SETTABLEN R17 R16 1
+     860 [-]: NEWTABLE R17 0 1
+     861 [-]: DUPTABLE R18 89
+     862 [-]: LOADN R19 374
+     863 [-]: SETTABLEKS R19 R18 K28 ["upgradeType"]
+     864 [-]: LOADN R19 2  
+     865 [-]: SETTABLEKS R19 R18 K37 ["value"]
+     866 [-]: LOADN R19 0  
+     867 [-]: SETTABLEKS R19 R18 K38 ["operationType"]
+     868 [-]: GETTABLEKS R19 R0 K105 ["sSkillWeaponOptions"]
+     869 [-]: SETTABLEKS R19 R18 K29 ["filter"]
+     870 [-]: GETGLOBAL R19 K14 ["CATEGORY_DRIFTER"]
+     871 [-]: SETTABLEKS R19 R18 K44 ["category"]
+     872 [-]: SETLIST R17 R18 1 [1]
+     873 [-]: SETTABLEN R17 R16 2
+     874 [-]: NEWTABLE R17 0 1
+     875 [-]: DUPTABLE R18 89
+     876 [-]: LOADN R19 374
+     877 [-]: SETTABLEKS R19 R18 K28 ["upgradeType"]
+     878 [-]: LOADN R19 1  
+     879 [-]: SETTABLEKS R19 R18 K37 ["value"]
+     880 [-]: LOADN R19 0  
+     881 [-]: SETTABLEKS R19 R18 K38 ["operationType"]
+     882 [-]: GETTABLEKS R19 R0 K106 ["sSkillFreeBoons"]
+     883 [-]: SETTABLEKS R19 R18 K29 ["filter"]
+     884 [-]: GETGLOBAL R19 K14 ["CATEGORY_DRIFTER"]
+     885 [-]: SETTABLEKS R19 R18 K44 ["category"]
+     886 [-]: SETLIST R17 R18 1 [1]
+     887 [-]: SETTABLEN R17 R16 3
+     888 [-]: NEWTABLE R17 0 1
+     889 [-]: DUPTABLE R18 89
+     890 [-]: LOADN R19 374
+     891 [-]: SETTABLEKS R19 R18 K28 ["upgradeType"]
+     892 [-]: LOADN R19 1  
+     893 [-]: SETTABLEKS R19 R18 K37 ["value"]
+     894 [-]: LOADN R19 0  
+     895 [-]: SETTABLEKS R19 R18 K38 ["operationType"]
+     896 [-]: GETTABLEKS R19 R0 K107 ["sSkillWarframeOptions"]
+     897 [-]: SETTABLEKS R19 R18 K29 ["filter"]
+     898 [-]: GETGLOBAL R19 K14 ["CATEGORY_DRIFTER"]
+     899 [-]: SETTABLEKS R19 R18 K44 ["category"]
+     900 [-]: SETLIST R17 R18 1 [1]
+     901 [-]: SETTABLEN R17 R16 4
+     902 [-]: NEWTABLE R17 0 1
+     903 [-]: DUPTABLE R18 89
+     904 [-]: LOADN R19 374
+     905 [-]: SETTABLEKS R19 R18 K28 ["upgradeType"]
+     906 [-]: LOADK R19 K65 [0.5]
+     907 [-]: SETTABLEKS R19 R18 K37 ["value"]
+     908 [-]: LOADN R19 3  
+     909 [-]: SETTABLEKS R19 R18 K38 ["operationType"]
+     910 [-]: GETTABLEKS R19 R0 K108 ["sSkillRareBoons"]
+     911 [-]: SETTABLEKS R19 R18 K29 ["filter"]
+     912 [-]: GETGLOBAL R19 K14 ["CATEGORY_DRIFTER"]
+     913 [-]: SETTABLEKS R19 R18 K44 ["category"]
+     914 [-]: SETLIST R17 R18 1 [1]
+     915 [-]: SETTABLEN R17 R16 5
+     916 [-]: NEWTABLE R17 0 1
+     917 [-]: DUPTABLE R18 89
+     918 [-]: LOADN R19 374
+     919 [-]: SETTABLEKS R19 R18 K28 ["upgradeType"]
+     920 [-]: LOADN R19 3  
+     921 [-]: SETTABLEKS R19 R18 K37 ["value"]
+     922 [-]: LOADN R19 0  
+     923 [-]: SETTABLEKS R19 R18 K38 ["operationType"]
+     924 [-]: GETTABLEKS R19 R0 K109 ["sSkillRerollBoon"]
+     925 [-]: SETTABLEKS R19 R18 K29 ["filter"]
+     926 [-]: GETGLOBAL R19 K14 ["CATEGORY_DRIFTER"]
+     927 [-]: SETTABLEKS R19 R18 K44 ["category"]
+     928 [-]: SETLIST R17 R18 1 [1]
+     929 [-]: SETTABLEN R17 R16 6
+     930 [-]: NEWTABLE R17 0 1
+     931 [-]: DUPTABLE R18 89
+     932 [-]: LOADN R19 374
+     933 [-]: SETTABLEKS R19 R18 K28 ["upgradeType"]
+     934 [-]: LOADN R19 2  
+     935 [-]: SETTABLEKS R19 R18 K37 ["value"]
+     936 [-]: LOADN R19 0  
+     937 [-]: SETTABLEKS R19 R18 K38 ["operationType"]
+     938 [-]: GETTABLEKS R19 R0 K105 ["sSkillWeaponOptions"]
+     939 [-]: SETTABLEKS R19 R18 K29 ["filter"]
+     940 [-]: GETGLOBAL R19 K14 ["CATEGORY_DRIFTER"]
+     941 [-]: SETTABLEKS R19 R18 K44 ["category"]
+     942 [-]: SETLIST R17 R18 1 [1]
+     943 [-]: SETTABLEN R17 R16 7
+     944 [-]: NEWTABLE R17 0 1
+     945 [-]: DUPTABLE R18 89
+     946 [-]: LOADN R19 374
+     947 [-]: SETTABLEKS R19 R18 K28 ["upgradeType"]
+     948 [-]: LOADN R19 1  
+     949 [-]: SETTABLEKS R19 R18 K37 ["value"]
+     950 [-]: LOADN R19 0  
+     951 [-]: SETTABLEKS R19 R18 K38 ["operationType"]
+     952 [-]: GETTABLEKS R19 R0 K107 ["sSkillWarframeOptions"]
+     953 [-]: SETTABLEKS R19 R18 K29 ["filter"]
+     954 [-]: GETGLOBAL R19 K14 ["CATEGORY_DRIFTER"]
+     955 [-]: SETTABLEKS R19 R18 K44 ["category"]
+     956 [-]: SETLIST R17 R18 1 [1]
+     957 [-]: SETTABLEN R17 R16 8
+     958 [-]: NEWTABLE R17 0 0
+     959 [-]: SETTABLEN R17 R16 9
+     960 [-]: NEWTABLE R17 0 1
+     961 [-]: DUPTABLE R18 79
+     962 [-]: LOADN R19 374
+     963 [-]: SETTABLEKS R19 R18 K28 ["upgradeType"]
+     964 [-]: GETTABLEKS R19 R0 K110 ["sSkillStalkerOption"]
+     965 [-]: SETTABLEKS R19 R18 K29 ["filter"]
+     966 [-]: GETGLOBAL R19 K14 ["CATEGORY_DRIFTER"]
+     967 [-]: SETTABLEKS R19 R18 K44 ["category"]
+     968 [-]: SETLIST R17 R18 1 [1]
+     969 [-]: SETTABLEN R17 R16 10
+     970 [-]: NEWTABLE R17 0 10
+     971 [-]: NEWTABLE R18 0 1
+     972 [-]: DUPTABLE R19 79
+     973 [-]: LOADN R20 374
+     974 [-]: SETTABLEKS R20 R19 K28 ["upgradeType"]
+     975 [-]: GETTABLEKS R20 R0 K111 ["sSkillHealthPerBoon"]
+     976 [-]: SETTABLEKS R20 R19 K29 ["filter"]
+     977 [-]: GETGLOBAL R20 K14 ["CATEGORY_DRIFTER"]
+     978 [-]: SETTABLEKS R20 R19 K44 ["category"]
+     979 [-]: SETLIST R18 R19 1 [1]
+     980 [-]: SETTABLEN R18 R17 1
+     981 [-]: NEWTABLE R18 0 2
+     982 [-]: DUPTABLE R19 92
+     983 [-]: GETIMPORT R20 94 [nil]
+     984 [-]: LOADK R21 K112 ["/Lotus/Upgrades/Intrinsics/OnBoonPickupFullyRegenerate"]
+     985 [-]: CALL R20 1 1 
+     986 [-]: SETTABLEKS R20 R19 K91 ["upgradeObjectType"]
+     987 [-]: GETGLOBAL R20 K14 ["CATEGORY_DRIFTER"]
+     988 [-]: SETTABLEKS R20 R19 K44 ["category"]
+     989 [-]: DUPTABLE R20 92
+     990 [-]: GETIMPORT R21 94 [nil]
+     991 [-]: LOADK R22 K112 ["/Lotus/Upgrades/Intrinsics/OnBoonPickupFullyRegenerate"]
+     992 [-]: CALL R21 1 1 
+     993 [-]: SETTABLEKS R21 R20 K91 ["upgradeObjectType"]
+     994 [-]: GETGLOBAL R21 K17 ["CATEGORY_DUVIRI_WF"]
+     995 [-]: SETTABLEKS R21 R20 K44 ["category"]
+     996 [-]: SETLIST R18 R19 2 [1]
+     997 [-]: SETTABLEN R18 R17 2
+     998 [-]: NEWTABLE R18 0 1
+     999 [-]: DUPTABLE R19 45
+     1000 [-]: LOADN R20 166
+     1001 [-]: SETTABLEKS R20 R19 K28 ["upgradeType"]
+     1002 [-]: LOADN R20 1  
+     1003 [-]: SETTABLEKS R20 R19 K37 ["value"]
+     1004 [-]: LOADN R20 0  
+     1005 [-]: SETTABLEKS R20 R19 K38 ["operationType"]
+     1006 [-]: GETGLOBAL R20 K14 ["CATEGORY_DRIFTER"]
+     1007 [-]: SETTABLEKS R20 R19 K44 ["category"]
+     1008 [-]: SETLIST R18 R19 1 [1]
+     1009 [-]: SETTABLEN R18 R17 3
+     1010 [-]: NEWTABLE R18 0 2
+     1011 [-]: DUPTABLE R19 92
+     1012 [-]: GETIMPORT R20 94 [nil]
+     1013 [-]: LOADK R21 K113 ["/Lotus/Upgrades/Intrinsics/OnParryHeal"]
+     1014 [-]: CALL R20 1 1 
+     1015 [-]: SETTABLEKS R20 R19 K91 ["upgradeObjectType"]
+     1016 [-]: GETGLOBAL R20 K14 ["CATEGORY_DRIFTER"]
+     1017 [-]: SETTABLEKS R20 R19 K44 ["category"]
+     1018 [-]: DUPTABLE R20 92
+     1019 [-]: GETIMPORT R21 94 [nil]
+     1020 [-]: LOADK R22 K114 ["/Lotus/Upgrades/Intrinsics/OnSuperiorCounterRecover"]
+     1021 [-]: CALL R21 1 1 
+     1022 [-]: SETTABLEKS R21 R20 K91 ["upgradeObjectType"]
+     1023 [-]: GETGLOBAL R21 K14 ["CATEGORY_DRIFTER"]
+     1024 [-]: SETTABLEKS R21 R20 K44 ["category"]
+     1025 [-]: SETLIST R18 R19 2 [1]
+     1026 [-]: SETTABLEN R18 R17 4
+     1027 [-]: NEWTABLE R18 0 1
+     1028 [-]: DUPTABLE R19 45
+     1029 [-]: LOADN R20 66 
+     1030 [-]: SETTABLEKS R20 R19 K28 ["upgradeType"]
+     1031 [-]: LOADK R20 K65 [0.5]
+     1032 [-]: SETTABLEKS R20 R19 K37 ["value"]
+     1033 [-]: LOADN R20 3  
+     1034 [-]: SETTABLEKS R20 R19 K38 ["operationType"]
+     1035 [-]: GETGLOBAL R20 K14 ["CATEGORY_DRIFTER"]
+     1036 [-]: SETTABLEKS R20 R19 K44 ["category"]
+     1037 [-]: SETLIST R18 R19 1 [1]
+     1038 [-]: SETTABLEN R18 R17 5
+     1039 [-]: NEWTABLE R18 0 1
+     1040 [-]: DUPTABLE R19 79
+     1041 [-]: LOADN R20 374
+     1042 [-]: SETTABLEKS R20 R19 K28 ["upgradeType"]
+     1043 [-]: GETTABLEKS R20 R0 K115 ["sSkillDuviriBeastModeIncreaseOnCounter"]
+     1044 [-]: SETTABLEKS R20 R19 K29 ["filter"]
+     1045 [-]: GETGLOBAL R20 K14 ["CATEGORY_DRIFTER"]
+     1046 [-]: SETTABLEKS R20 R19 K44 ["category"]
+     1047 [-]: SETLIST R18 R19 1 [1]
+     1048 [-]: SETTABLEN R18 R17 6
+     1049 [-]: NEWTABLE R18 0 2
+     1050 [-]: DUPTABLE R19 92
+     1051 [-]: GETIMPORT R20 94 [nil]
+     1052 [-]: LOADK R21 K116 ["/Lotus/Upgrades/Intrinsics/OnHeadshotHeal"]
+     1053 [-]: CALL R20 1 1 
+     1054 [-]: SETTABLEKS R20 R19 K91 ["upgradeObjectType"]
+     1055 [-]: GETGLOBAL R20 K14 ["CATEGORY_DRIFTER"]
+     1056 [-]: SETTABLEKS R20 R19 K44 ["category"]
+     1057 [-]: DUPTABLE R20 92
+     1058 [-]: GETIMPORT R21 94 [nil]
+     1059 [-]: LOADK R22 K116 ["/Lotus/Upgrades/Intrinsics/OnHeadshotHeal"]
+     1060 [-]: CALL R21 1 1 
+     1061 [-]: SETTABLEKS R21 R20 K91 ["upgradeObjectType"]
+     1062 [-]: GETGLOBAL R21 K17 ["CATEGORY_DUVIRI_WF"]
+     1063 [-]: SETTABLEKS R21 R20 K44 ["category"]
+     1064 [-]: SETLIST R18 R19 2 [1]
+     1065 [-]: SETTABLEN R18 R17 7
+     1066 [-]: NEWTABLE R18 0 1
+     1067 [-]: DUPTABLE R19 45
+     1068 [-]: LOADN R20 166
+     1069 [-]: SETTABLEKS R20 R19 K28 ["upgradeType"]
+     1070 [-]: LOADN R20 1  
+     1071 [-]: SETTABLEKS R20 R19 K37 ["value"]
+     1072 [-]: LOADN R20 0  
+     1073 [-]: SETTABLEKS R20 R19 K38 ["operationType"]
+     1074 [-]: GETGLOBAL R20 K14 ["CATEGORY_DRIFTER"]
+     1075 [-]: SETTABLEKS R20 R19 K44 ["category"]
+     1076 [-]: SETLIST R18 R19 1 [1]
+     1077 [-]: SETTABLEN R18 R17 8
+     1078 [-]: NEWTABLE R18 0 2
+     1079 [-]: DUPTABLE R19 45
+     1080 [-]: LOADN R20 64 
+     1081 [-]: SETTABLEKS R20 R19 K28 ["upgradeType"]
+     1082 [-]: LOADN R20 5  
+     1083 [-]: SETTABLEKS R20 R19 K37 ["value"]
+     1084 [-]: LOADN R20 0  
+     1085 [-]: SETTABLEKS R20 R19 K38 ["operationType"]
+     1086 [-]: GETGLOBAL R20 K15 ["CATEGORY_OPERATOR"]
+     1087 [-]: SETTABLEKS R20 R19 K44 ["category"]
+     1088 [-]: DUPTABLE R20 45
+     1089 [-]: LOADN R21 64 
+     1090 [-]: SETTABLEKS R21 R20 K28 ["upgradeType"]
+     1091 [-]: LOADN R21 5  
+     1092 [-]: SETTABLEKS R21 R20 K37 ["value"]
+     1093 [-]: LOADN R21 0  
+     1094 [-]: SETTABLEKS R21 R20 K38 ["operationType"]
+     1095 [-]: GETGLOBAL R21 K14 ["CATEGORY_DRIFTER"]
+     1096 [-]: SETTABLEKS R21 R20 K44 ["category"]
+     1097 [-]: SETLIST R18 R19 2 [1]
+     1098 [-]: SETTABLEN R18 R17 9
+     1099 [-]: NEWTABLE R18 0 1
+     1100 [-]: DUPTABLE R19 92
+     1101 [-]: GETIMPORT R20 94 [nil]
+     1102 [-]: LOADK R21 K117 ["/Lotus/Upgrades/Intrinsics/OnFatalDamageInvulnerabilityAndRecover"]
+     1103 [-]: CALL R20 1 1 
+     1104 [-]: SETTABLEKS R20 R19 K91 ["upgradeObjectType"]
+     1105 [-]: GETGLOBAL R20 K14 ["CATEGORY_DRIFTER"]
+     1106 [-]: SETTABLEKS R20 R19 K44 ["category"]
+     1107 [-]: SETLIST R18 R19 1 [1]
+     1108 [-]: SETTABLEN R18 R17 10
+     1109 [-]: NEWTABLE R18 16 0
+     1110 [-]: LOADN R19 3  
+     1111 [-]: SETTABLE R9 R18 R19
+     1112 [-]: LOADN R19 1  
+     1113 [-]: SETTABLE R10 R18 R19
+     1114 [-]: LOADN R19 2  
+     1115 [-]: SETTABLE R11 R18 R19
+     1116 [-]: LOADN R19 4  
+     1117 [-]: SETTABLE R12 R18 R19
+     1118 [-]: LOADN R19 5  
+     1119 [-]: SETTABLE R13 R18 R19
+     1120 [-]: LOADN R19 6  
+     1121 [-]: SETTABLE R14 R18 R19
+     1122 [-]: LOADN R19 7  
+     1123 [-]: SETTABLE R15 R18 R19
+     1124 [-]: LOADN R19 8  
+     1125 [-]: SETTABLE R16 R18 R19
+     1126 [-]: LOADN R19 9  
+     1127 [-]: SETTABLE R17 R18 R19
+     1128 [-]: DUPCLOSURE R19 K118 []
+     1129 [-]: DUPCLOSURE R20 K119 []
+     1130 [-]: MOVE R0 R18  
+     1131 [-]: MOVE R0 R19  
+     1132 [-]: SETGLOBAL R20 K120 ["GetUpgrades"]
+     1133 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
-; Defined at line: 935
+; Defined at line: 979
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
 ; Max Stack Size:  11
 
-  1 [-]: GETGLOBAL R1 K0        ; R1 := 0x7b998233
-  2 [-]: MOVE      R2 R0        ; R2 := R0
-  3 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  4 [-]: TEST      R1 1         ; if R1 then PC := 11
-  5 [-]: JMP       11           ; PC := 11
-  6 [-]: GETGLOBAL R1 K0        ; R1 := 0x7b998233
-  7 [-]: GETTABLE  R2 R0 K1     ; R2 := R0["upgradeType"]
-  8 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  9 [-]: TEST      R1 0         ; if not R1 then PC := 13
- 10 [-]: JMP       13           ; PC := 13
- 11 [-]: LOADNIL   R1 R1        ; R1 := nil
- 12 [-]: RETURN    R1 2         ; return R1
- 13 [-]: GETGLOBAL R1 K2        ; R1 := 0xaf6ac8d4
- 14 [-]: GETTABLE  R1 R1 K3     ; R1 := R1[0x449a507e]
- 15 [-]: CALL      R1 1 2       ; R1 := R1()
- 16 [-]: SELF      R2 R1 K4     ; R3 := R1; R2 := R1[0x14894de6]
- 17 [-]: GETTABLE  R4 R0 K1     ; R4 := R0["upgradeType"]
- 18 [-]: CALL      R2 3 1       ; R2(R3,R4)
- 19 [-]: GETGLOBAL R2 K0        ; R2 := 0x7b998233
- 20 [-]: GETTABLE  R3 R0 K5     ; R3 := R0["operationType"]
- 21 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 22 [-]: TEST      R2 0         ; if not R2 then PC := 28
- 23 [-]: JMP       28           ; PC := 28
- 24 [-]: SELF      R2 R1 K6     ; R3 := R1; R2 := R1[0xc670d7f3]
- 25 [-]: CONST     R4 4         ; R4 := 4.000000
- 26 [-]: CALL      R2 3 1       ; R2(R3,R4)
- 27 [-]: JMP       31           ; PC := 31
- 28 [-]: SELF      R2 R1 K6     ; R3 := R1; R2 := R1[0xc670d7f3]
- 29 [-]: GETTABLE  R4 R0 K5     ; R4 := R0["operationType"]
- 30 [-]: CALL      R2 3 1       ; R2(R3,R4)
- 31 [-]: GETGLOBAL R2 K0        ; R2 := 0x7b998233
- 32 [-]: GETTABLE  R3 R0 K8     ; R3 := R0["value"]
- 33 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 34 [-]: TEST      R2 0         ; if not R2 then PC := 40
- 35 [-]: JMP       40           ; PC := 40
- 36 [-]: SELF      R2 R1 K9     ; R3 := R1; R2 := R1[0x8550d2a7]
- 37 [-]: CONST     R4 1         ; R4 := 1.000000
- 38 [-]: CALL      R2 3 1       ; R2(R3,R4)
- 39 [-]: JMP       43           ; PC := 43
- 40 [-]: SELF      R2 R1 K9     ; R3 := R1; R2 := R1[0x8550d2a7]
- 41 [-]: GETTABLE  R4 R0 K8     ; R4 := R0["value"]
- 42 [-]: CALL      R2 3 1       ; R2(R3,R4)
- 43 [-]: GETGLOBAL R2 K0        ; R2 := 0x7b998233
- 44 [-]: GETTABLE  R3 R0 K10    ; R3 := R0["validType"]
- 45 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 46 [-]: TEST      R2 1         ; if R2 then PC := 51
- 47 [-]: JMP       51           ; PC := 51
- 48 [-]: SELF      R2 R1 K11    ; R3 := R1; R2 := R1[0xd314c0e0]
- 49 [-]: GETTABLE  R4 R0 K10    ; R4 := R0["validType"]
- 50 [-]: CALL      R2 3 1       ; R2(R3,R4)
- 51 [-]: GETGLOBAL R2 K0        ; R2 := 0x7b998233
- 52 [-]: GETTABLE  R3 R0 K12    ; R3 := R0["validPosture"]
- 53 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 54 [-]: TEST      R2 1         ; if R2 then PC := 60
- 55 [-]: JMP       60           ; PC := 60
- 56 [-]: SELF      R2 R1 K13    ; R3 := R1; R2 := R1[0xf0952e00]
- 57 [-]: GETTABLE  R4 R0 K12    ; R4 := R0["validPosture"]
- 58 [-]: LOADKB    R5 1 0       ; R5 := true
- 59 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
- 60 [-]: GETGLOBAL R2 K14       ; R2 := 0xc8802016
- 61 [-]: GETTABLE  R3 R0 K15    ; R3 := R0["validModifiers"]
- 62 [-]: CALL      R2 2 4       ; R2,R3,R4 := R2(R3)
- 63 [-]: JMP       68           ; PC := 68
- 64 [-]: SELF      R7 R1 K16    ; R8 := R1; R7 := R1[0x81f914f1]
- 65 [-]: MOVE      R9 R6        ; R9 := R6
- 66 [-]: LOADKB    R10 1 0      ; R10 := true
- 67 [-]: CALL      R7 4 1       ; R7(R8,R9,R10)
- 68 [-]: TFORLOOP  R2 2         ; R5,R6 :=  R2(R3,R4); if R5 ~= nil then begin PC = 64; R4 := R5 end
- 69 [-]: JMP       64           ; PC := 64
- 70 [-]: GETGLOBAL R7 K0        ; R7 := 0x7b998233
- 71 [-]: GETTABLE  R8 R0 K17    ; R8 := R0["filter"]
- 72 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 73 [-]: TEST      R7 1         ; if R7 then PC := 78
- 74 [-]: JMP       78           ; PC := 78
- 75 [-]: SELF      R7 R1 K18    ; R8 := R1; R7 := R1[0x05fe5d78]
- 76 [-]: GETTABLE  R9 R0 K17    ; R9 := R0["filter"]
- 77 [-]: CALL      R7 3 1       ; R7(R8,R9)
- 78 [-]: RETURN    R1 2         ; return R1
- 79 [-]: RETURN    R0 1         ; return 
+       0 [-]: FASTCALL1 62 R0 L0
+       1 [-]: MOVE R2 R0   
+       2 [-]: GETIMPORT R1 1 [nil]
+       3 [-]: CALL R1 1 1  
+L 0:   4 [-]: JUMPIF R1 L2 
+       5 [-]: GETTABLEKS R2 R0 K2 ["upgradeType"]
+       6 [-]: FASTCALL1 62 R2 L1
+       7 [-]: GETIMPORT R1 1 [nil]
+       8 [-]: CALL R1 1 1  
+L 1:   9 [-]: JUMPIFNOT R1 L3
+L 2:  10 [-]: LOADNIL R1   
+      11 [-]: RETURN R1 1  
+L 3:  12 [-]: GETIMPORT R1 5 [nil]
+      13 [-]: CALL R1 0 1  
+      14 [-]: GETTABLEKS R4 R0 K2 ["upgradeType"]
+      15 [-]: NAMECALL R2 R1 K6 [0x14894DE6]
+      16 [-]: CALL R2 2 0  
+      17 [-]: GETTABLEKS R3 R0 K7 ["operationType"]
+      18 [-]: FASTCALL1 62 R3 L4
+      19 [-]: GETIMPORT R2 1 [nil]
+      20 [-]: CALL R2 1 1  
+L 4:  21 [-]: JUMPIFNOT R2 L5
+      22 [-]: LOADN R4 4   
+      23 [-]: NAMECALL R2 R1 K8 [0xC670D7F3]
+      24 [-]: CALL R2 2 0  
+      25 [-]: JUMP L6
+     
+L 5:  26 [-]: GETTABLEKS R4 R0 K7 ["operationType"]
+      27 [-]: NAMECALL R2 R1 K8 [0xC670D7F3]
+      28 [-]: CALL R2 2 0  
+L 6:  29 [-]: GETTABLEKS R3 R0 K9 ["value"]
+      30 [-]: FASTCALL1 62 R3 L7
+      31 [-]: GETIMPORT R2 1 [nil]
+      32 [-]: CALL R2 1 1  
+L 7:  33 [-]: JUMPIFNOT R2 L8
+      34 [-]: LOADN R4 1   
+      35 [-]: NAMECALL R2 R1 K10 [0x8550D2A7]
+      36 [-]: CALL R2 2 0  
+      37 [-]: JUMP L9
+     
+L 8:  38 [-]: GETTABLEKS R4 R0 K9 ["value"]
+      39 [-]: NAMECALL R2 R1 K10 [0x8550D2A7]
+      40 [-]: CALL R2 2 0  
+L 9:  41 [-]: GETTABLEKS R3 R0 K11 ["validType"]
+      42 [-]: FASTCALL1 62 R3 L10
+      43 [-]: GETIMPORT R2 1 [nil]
+      44 [-]: CALL R2 1 1  
+L10:  45 [-]: JUMPIF R2 L11
+      46 [-]: GETTABLEKS R4 R0 K11 ["validType"]
+      47 [-]: NAMECALL R2 R1 K12 [0xD314C0E0]
+      48 [-]: CALL R2 2 0  
+L11:  49 [-]: GETTABLEKS R3 R0 K13 ["validPosture"]
+      50 [-]: FASTCALL1 62 R3 L12
+      51 [-]: GETIMPORT R2 1 [nil]
+      52 [-]: CALL R2 1 1  
+L12:  53 [-]: JUMPIF R2 L13
+      54 [-]: GETTABLEKS R4 R0 K13 ["validPosture"]
+      55 [-]: LOADB R5 1   
+      56 [-]: NAMECALL R2 R1 K14 [0xF0952E00]
+      57 [-]: CALL R2 3 0  
+L13:  58 [-]: GETIMPORT R2 16 [nil]
+      59 [-]: GETTABLEKS R3 R0 K17 ["validModifiers"]
+      60 [-]: CALL R2 1 3  
+      61 [-]: FORGPREP_INEXT R2 L15
+L14:  62 [-]: MOVE R9 R6   
+      63 [-]: LOADB R10 1  
+      64 [-]: NAMECALL R7 R1 K18 [0x81F914F1]
+      65 [-]: CALL R7 3 0  
+L15:  66 [-]: FORGLOOP R2 L14 2 [inext]
+      67 [-]: GETTABLEKS R3 R0 K19 ["filter"]
+      68 [-]: FASTCALL1 62 R3 L16
+      69 [-]: GETIMPORT R2 1 [nil]
+      70 [-]: CALL R2 1 1  
+L16:  71 [-]: JUMPIF R2 L17
+      72 [-]: GETTABLEKS R4 R0 K19 ["filter"]
+      73 [-]: NAMECALL R2 R1 K20 [0x05FE5D78]
+      74 [-]: CALL R2 2 0  
+L17:  75 [-]: RETURN R1 1  
 
 
-; Function #2:
-;
 ; Name:            
-; Defined at line: 975
+; Defined at line: 1019
 ; #Upvalues:       2
 ; #Parameters:     4
 ; Is_vararg:       0
-; Max Stack Size:  22
+; Max Stack Size:  21
 
-  1 [-]: LT        1 R1 K0      ; if R1 < 1.000000 then PC := 6
-  2 [-]: JMP       6            ; PC := 6
-  3 [-]: GETGLOBAL R4 K1        ; R4 := MAX_SKILL_RANK
-  4 [-]: LT        0 R4 R1      ; if R4 >= R1 then PC := 11
-  5 [-]: JMP       11           ; PC := 11
-  6 [-]: GETGLOBAL R4 K2        ; R4 := 0x3d106989
-  7 [-]: LOADK     R5 K3        ; R5 := "PLAYER_SKILL_LIB rank arg is incorrect"
-  8 [-]: CALL      R4 2 1       ; R4(R5)
-  9 [-]: LOADNIL   R4 R4        ; R4 := nil
- 10 [-]: RETURN    R4 2         ; return R4
- 11 [-]: GETUPVAL  R4 U0        ; R4 := U0
- 12 [-]: GETTABLE  R4 R4 R0     ; R4 := R4[R0]
- 13 [-]: GETGLOBAL R5 K4        ; R5 := 0x7b998233
- 14 [-]: MOVE      R6 R4        ; R6 := R4
- 15 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 16 [-]: TEST      R5 0         ; if not R5 then PC := 23
- 17 [-]: JMP       23           ; PC := 23
- 18 [-]: GETGLOBAL R5 K2        ; R5 := 0x3d106989
- 19 [-]: LOADK     R6 K5        ; R6 := "PLAYER_SKILL_LIB skill arg is incorrect"
- 20 [-]: CALL      R5 2 1       ; R5(R6)
- 21 [-]: LOADNIL   R5 R5        ; R5 := nil
- 22 [-]: RETURN    R5 2         ; return R5
- 23 [-]: NEWTABLE  R5 0 0       ; R5 := {}
- 24 [-]: NEWTABLE  R6 0 0       ; R6 := {}
- 25 [-]: CONST     R7 1         ; R7 := 1.000000
- 26 [-]: TEST      R2 0         ; if not R2 then PC := 29
- 27 [-]: JMP       29           ; PC := 29
- 28 [-]: MOVE      R7 R1        ; R7 := R1
- 29 [-]: GETGLOBAL R8 K4        ; R8 := 0x7b998233
- 30 [-]: MOVE      R9 R3        ; R9 := R3
- 31 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 32 [-]: TEST      R8 0         ; if not R8 then PC := 35
- 33 [-]: JMP       35           ; PC := 35
- 34 [-]: GETGLOBAL R3 K6        ; R3 := CATEGORY_ALL
- 35 [-]: MOVE      R8 R7        ; R8 := R7
- 36 [-]: MOVE      R9 R1        ; R9 := R1
- 37 [-]: CONST     R10 1        ; R10 := 1.000000
- 38 [-]: FORPREP   R8 97        ; R8 -= R10; PC := 97
- 39 [-]: GETTABLE  R12 R4 R11   ; R12 := R4[R11]
- 40 [-]: CONST     R13 1        ; R13 := 1.000000
- 41 [-]: LEN       R14 R12      ; R14 := # R12
- 42 [-]: CONST     R15 1        ; R15 := 1.000000
- 43 [-]: FORPREP   R13 96       ; R13 -= R15; PC := 96
- 44 [-]: LOADKB    R17 0 0      ; R17 := false
- 45 [-]: GETGLOBAL R18 K6       ; R18 := CATEGORY_ALL
- 46 [-]: EQ        0 R3 R18     ; if R3 ~= R18 then PC := 50
- 47 [-]: JMP       50           ; PC := 50
- 48 [-]: LOADKB    R17 1 0      ; R17 := true
- 49 [-]: JMP       68           ; PC := 68
- 50 [-]: GETGLOBAL R18 K4       ; R18 := 0x7b998233
- 51 [-]: GETTABLE  R19 R12 R16  ; R19 := R12[R16]
- 52 [-]: GETTABLE  R19 R19 K7   ; R19 := R19["category"]
- 53 [-]: CALL      R18 2 2      ; R18 := R18(R19)
- 54 [-]: TEST      R18 1        ; if R18 then PC := 63
- 55 [-]: JMP       63           ; PC := 63
- 56 [-]: GETTABLE  R18 R12 R16  ; R18 := R12[R16]
- 57 [-]: GETTABLE  R18 R18 K7   ; R18 := R18["category"]
- 58 [-]: EQ        1 R3 R18     ; if R3 == R18 then PC := 61
- 59 [-]: JMP       61           ; PC := 61
- 60 [-]: LOADKB    R17 0 1      ; R17 := false; PC := 61
- 61 [-]: LOADKB    R17 1 0      ; R17 := true
- 62 [-]: JMP       68           ; PC := 68
- 63 [-]: GETGLOBAL R18 K8       ; R18 := CATEGORY_CREWSHIP
- 64 [-]: EQ        1 R3 R18     ; if R3 == R18 then PC := 67
- 65 [-]: JMP       67           ; PC := 67
- 66 [-]: LOADKB    R17 0 1      ; R17 := false; PC := 67
- 67 [-]: LOADKB    R17 1 0      ; R17 := true
- 68 [-]: TEST      R17 0        ; if not R17 then PC := 96
- 69 [-]: JMP       96           ; PC := 96
- 70 [-]: GETUPVAL  R18 U1       ; R18 := U1
- 71 [-]: GETTABLE  R19 R12 R16  ; R19 := R12[R16]
- 72 [-]: CALL      R18 2 2      ; R18 := R18(R19)
- 73 [-]: GETGLOBAL R19 K4       ; R19 := 0x7b998233
- 74 [-]: MOVE      R20 R18      ; R20 := R18
- 75 [-]: CALL      R19 2 2      ; R19 := R19(R20)
- 76 [-]: TEST      R19 1        ; if R19 then PC := 84
- 77 [-]: JMP       84           ; PC := 84
- 78 [-]: GETGLOBAL R19 K9       ; R19 := 0x33bdd652
- 79 [-]: GETTABLE  R19 R19 K10  ; R19 := R19[0x23d5322f]
- 80 [-]: MOVE      R20 R5       ; R20 := R5
- 81 [-]: MOVE      R21 R18      ; R21 := R18
- 82 [-]: CALL      R19 3 1      ; R19(R20,R21)
- 83 [-]: JMP       96           ; PC := 96
- 84 [-]: GETGLOBAL R19 K4       ; R19 := 0x7b998233
- 85 [-]: GETTABLE  R20 R12 R16  ; R20 := R12[R16]
- 86 [-]: GETTABLE  R20 R20 K11  ; R20 := R20["upgradeObjectType"]
- 87 [-]: CALL      R19 2 2      ; R19 := R19(R20)
- 88 [-]: TEST      R19 1        ; if R19 then PC := 96
- 89 [-]: JMP       96           ; PC := 96
- 90 [-]: GETGLOBAL R19 K9       ; R19 := 0x33bdd652
- 91 [-]: GETTABLE  R19 R19 K10  ; R19 := R19[0x23d5322f]
- 92 [-]: MOVE      R20 R6       ; R20 := R6
- 93 [-]: GETTABLE  R21 R12 R16  ; R21 := R12[R16]
- 94 [-]: GETTABLE  R21 R21 K11  ; R21 := R21["upgradeObjectType"]
- 95 [-]: CALL      R19 3 1      ; R19(R20,R21)
- 96 [-]: FORLOOP   R13 44       ; R13 += R15; if R13 <= R14 then begin PC := 44; R16 := R13 end
- 97 [-]: FORLOOP   R8 39        ; R8 += R10; if R8 <= R9 then begin PC := 39; R11 := R8 end
- 98 [-]: MOVE      R19 R5       ; R19 := R5
- 99 [-]: MOVE      R20 R6       ; R20 := R6
-100 [-]: RETURN    R19 3        ; return R19,R20
-101 [-]: RETURN    R0 1         ; return 
+       0 [-]: LOADN R4 1   
+       1 [-]: JUMPIFLT R1 R4 L0
+       2 [-]: GETGLOBAL R4 K0 ["MAX_SKILL_RANK"]
+       3 [-]: JUMPIFNOTLT R4 R1 L1
+L 0:   4 [-]: GETIMPORT R4 2 [nil]
+       5 [-]: LOADK R5 K3 ["PLAYER_SKILL_LIB rank arg is incorrect"]
+       6 [-]: CALL R4 1 0  
+       7 [-]: LOADNIL R4   
+       8 [-]: RETURN R4 1  
+L 1:   9 [-]: GETUPVAL R5 0
+      10 [-]: GETTABLE R4 R5 R0
+      11 [-]: FASTCALL1 62 R4 L2
+      12 [-]: MOVE R6 R4   
+      13 [-]: GETIMPORT R5 5 [nil]
+      14 [-]: CALL R5 1 1  
+L 2:  15 [-]: JUMPIFNOT R5 L3
+      16 [-]: GETIMPORT R5 2 [nil]
+      17 [-]: LOADK R6 K6 ["PLAYER_SKILL_LIB skill arg is incorrect"]
+      18 [-]: CALL R5 1 0  
+      19 [-]: LOADNIL R5   
+      20 [-]: RETURN R5 1  
+L 3:  21 [-]: NEWTABLE R5 0 0
+      22 [-]: NEWTABLE R6 0 0
+      23 [-]: LOADN R7 1   
+      24 [-]: JUMPIFNOT R2 L4
+      25 [-]: MOVE R7 R1   
+L 4:  26 [-]: FASTCALL1 62 R3 L5
+      27 [-]: MOVE R9 R3   
+      28 [-]: GETIMPORT R8 5 [nil]
+      29 [-]: CALL R8 1 1  
+L 5:  30 [-]: JUMPIFNOT R8 L6
+      31 [-]: GETGLOBAL R3 K7 ["CATEGORY_ALL"]
+L 6:  32 [-]: MOVE R10 R7  
+      33 [-]: MOVE R8 R1   
+      34 [-]: LOADN R9 1   
+      35 [-]: FORNPREP R8 L22
+L 7:  36 [-]: GETTABLE R11 R4 R10
+      37 [-]: LOADN R14 1  
+      38 [-]: LENGTH R12 R11
+      39 [-]: LOADN R13 1  
+      40 [-]: FORNPREP R12 L21
+L 8:  41 [-]: LOADB R15 0  
+      42 [-]: GETGLOBAL R16 K7 ["CATEGORY_ALL"]
+      43 [-]: JUMPIFNOTEQ R3 R16 L9
+      44 [-]: LOADB R15 1  
+      45 [-]: JUMP L15
+    
+L 9:  46 [-]: GETTABLE R18 R11 R14
+      47 [-]: GETTABLEKS R17 R18 K8 ["category"]
+      48 [-]: FASTCALL1 62 R17 L10
+      49 [-]: GETIMPORT R16 5 [nil]
+      50 [-]: CALL R16 1 1 
+L10:  51 [-]: JUMPIF R16 L13
+      52 [-]: GETTABLE R17 R11 R14
+      53 [-]: GETTABLEKS R16 R17 K8 ["category"]
+      54 [-]: JUMPIFEQ R3 R16 L11
+      55 [-]: LOADB R15 0 +1
+L11:  56 [-]: LOADB R15 1  
+L12:  57 [-]: JUMP L15
+    
+L13:  58 [-]: GETGLOBAL R16 K9 ["CATEGORY_CREWSHIP"]
+      59 [-]: JUMPIFEQ R3 R16 L14
+      60 [-]: LOADB R15 0 +1
+L14:  61 [-]: LOADB R15 1  
+L15:  62 [-]: JUMPIFNOT R15 L20
+      63 [-]: GETUPVAL R16 1
+      64 [-]: GETTABLE R17 R11 R14
+      65 [-]: CALL R16 1 1 
+      66 [-]: FASTCALL1 62 R16 L16
+      67 [-]: MOVE R18 R16 
+      68 [-]: GETIMPORT R17 5 [nil]
+      69 [-]: CALL R17 1 1 
+L16:  70 [-]: JUMPIF R17 L18
+      71 [-]: FASTCALL2 52 R5 R16 L17
+      72 [-]: MOVE R18 R5  
+      73 [-]: MOVE R19 R16 
+      74 [-]: GETIMPORT R17 12 [nil]
+      75 [-]: CALL R17 2 0 
+L17:  76 [-]: JUMP L20
+    
+L18:  77 [-]: GETTABLE R19 R11 R14
+      78 [-]: GETTABLEKS R18 R19 K13 ["upgradeObjectType"]
+      79 [-]: FASTCALL1 62 R18 L19
+      80 [-]: GETIMPORT R17 5 [nil]
+      81 [-]: CALL R17 1 1 
+L19:  82 [-]: JUMPIF R17 L20
+      83 [-]: GETTABLE R20 R11 R14
+      84 [-]: GETTABLEKS R19 R20 K13 ["upgradeObjectType"]
+      85 [-]: FASTCALL2 52 R6 R19 L20
+      86 [-]: MOVE R18 R6  
+      87 [-]: GETIMPORT R17 12 [nil]
+      88 [-]: CALL R17 2 0 
+L20:  89 [-]: FORNLOOP R12 L8
+L21:  90 [-]: FORNLOOP R8 L7
+L22:  91 [-]: RETURN R5 2  
+
 
 

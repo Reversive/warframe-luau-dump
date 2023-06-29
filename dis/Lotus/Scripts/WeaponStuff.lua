@@ -1,19 +1,15 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
-; Max Stack Size:  2
+; Is_vararg:       1
+; Max Stack Size:  1
 
-  1 [-]: CLOSURE   R0 0         ; R0 := closure(Function #1)
-  2 [-]: SETGLOBAL R0 K0        ; grenadeSound := R0
-  3 [-]: RETURN    R0 1         ; return 
+            1 [-]: DUPCLOSURE R0 K0 []
+       2 [-]: SETGLOBAL R0 K1 ["grenadeSound"]
+       3 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 3
 ; #Upvalues:       0
@@ -21,17 +17,18 @@
 ; Is_vararg:       0
 ; Max Stack Size:  7
 
-  1 [-]: GETGLOBAL R1 K0        ; R1 := 0x7b998233
-  2 [-]: MOVE      R2 R0        ; R2 := R0
-  3 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  4 [-]: TEST      R1 1         ; if R1 then PC := 12
-  5 [-]: JMP       12           ; PC := 12
-  6 [-]: SELF      R1 R0 K1     ; R2 := R0; R1 := R0[0x659d451f]
-  7 [-]: GETGLOBAL R3 K2        ; R3 := 0x19bb65af
-  8 [-]: LOADKB    R4 1 0       ; R4 := true
-  9 [-]: CONST     R5 0         ; R5 := 0.000000
- 10 [-]: LOADKB    R6 0 0       ; R6 := false
- 11 [-]: CALL      R1 6 1       ; R1(R2,R3,R4,R5,R6)
- 12 [-]: RETURN    R0 1         ; return 
+       0 [-]: FASTCALL1 62 R0 L0
+       1 [-]: MOVE R2 R0   
+       2 [-]: GETIMPORT R1 1 [nil]
+       3 [-]: CALL R1 1 1  
+L 0:   4 [-]: JUMPIF R1 L1 
+       5 [-]: GETIMPORT R3 3 [nil]
+       6 [-]: LOADB R4 1   
+       7 [-]: LOADN R5 0   
+       8 [-]: LOADB R6 0   
+       9 [-]: NAMECALL R1 R0 K4 [0x659D451F]
+      10 [-]: CALL R1 5 0  
+L 1:  11 [-]: RETURN R0 0  
+
 
 

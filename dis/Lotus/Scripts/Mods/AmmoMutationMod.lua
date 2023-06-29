@@ -1,92 +1,81 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
-; Max Stack Size:  4
+; Is_vararg:       1
+; Max Stack Size:  2
 
-  1 [-]: CONST     R0 20        ; R0 := 20.000000
-  2 [-]: CONST     R1 10        ; R1 := 10.000000
-  3 [-]: CLOSURE   R2 0         ; R2 := closure(Function #1)
-  4 [-]: CLOSURE   R3 1         ; R3 := closure(Function #2)
-  5 [-]: MOVE      R0 R2        ; R0 := R2
-  6 [-]: MOVE      R0 R0        ; R0 := R0
-  7 [-]: MOVE      R0 R1        ; R0 := R1
-  8 [-]: SETGLOBAL R3 K0        ; GetDescriptionInfo := R3
-  9 [-]: RETURN    R0 1         ; return 
+            1 [-]: DUPCLOSURE R0 K0 []
+       2 [-]: DUPCLOSURE R1 K1 []
+       3 [-]: SETGLOBAL R1 K2 ["GetDescriptionInfo"]
+       4 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 5
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
-; Max Stack Size:  4
+; Max Stack Size:  6
 
-  1 [-]: GETGLOBAL R2 K0        ; R2 := 0x5bced4c4
-  2 [-]: GETTABLE  R2 R2 K1     ; R2 := R2[0x55f27c30]
-  3 [-]: MUL       R3 R1 K2     ; R3 := R1 * 0.100000
-  4 [-]: DIV       R3 R0 R3     ; R3 := R0 / R3
-  5 [-]: ADD       R3 R3 K3     ; R3 := R3 + 0.500000
-  6 [-]: TAILCALL  R2 2 0       ; R2,... := R2(R3)
-  7 [-]: RETURN    R2 0         ; return R2,...
-  8 [-]: RETURN    R0 1         ; return 
+       0 [-]: MULK R5 R1 K1 [0.10000000000000001]
+       1 [-]: DIV R4 R0 R5 
+       2 [-]: ADDK R3 R4 K0 [0.5]
+       3 [-]: FASTCALL1 12 R3 L0
+       4 [-]: GETIMPORT R2 4 [nil]
+       5 [-]: CALL R2 1 -1 
+L 0:   6 [-]: RETURN R2 -1 
 
 
-; Function #2:
-;
 ; Name:            
 ; Defined at line: 10
-; #Upvalues:       3
+; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
-; Max Stack Size:  12
+; Max Stack Size:  14
 
-  1 [-]: SELF      R3 R2 K0     ; R4 := R2; R3 := R2[0x86ba2663]
-  2 [-]: SUB       R5 R0 K1     ; R5 := R0 - 1.000000
-  3 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
-  4 [-]: SELF      R4 R2 K2     ; R5 := R2; R4 := R2[0x96284d62]
-  5 [-]: MOVE      R6 R3        ; R6 := R3
-  6 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
-  7 [-]: NEWTABLE  R5 0 0       ; R5 := {}
-  8 [-]: LEN       R6 R4        ; R6 := # R4
-  9 [-]: LT        0 K3 R6      ; if 0.000000 >= R6 then PC := 37
- 10 [-]: JMP       37           ; PC := 37
- 11 [-]: GETTABLE  R6 R4 K1     ; R6 := R4[1.000000]
- 12 [-]: SELF      R6 R6 K4     ; R7 := R6; R6 := R6[0x0fbc7293]
- 13 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 14 [-]: NEWTABLE  R7 0 3       ; R7 := {}
- 15 [-]: GETUPVAL  R8 U0        ; R8 := U0
- 16 [-]: MOVE      R9 R6        ; R9 := R6
- 17 [-]: GETUPVAL  R10 U1       ; R10 := U1
- 18 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
- 19 [-]: SETTABLE  R7 K5 R8     ; R7["PISTOL_RIFLE"] := R8
- 20 [-]: GETUPVAL  R8 U0        ; R8 := U0
- 21 [-]: MOVE      R9 R6        ; R9 := R6
- 22 [-]: GETUPVAL  R10 U2       ; R10 := U2
- 23 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
- 24 [-]: SETTABLE  R7 K6 R8     ; R7["SHOTGUN_SNIPER"] := R8
- 25 [-]: GETGLOBAL R8 K8        ; R8 := 0x5bced4c4
- 26 [-]: GETTABLE  R8 R8 K9     ; R8 := R8[0x55f27c30]
- 27 [-]: SELF      R9 R2 K10    ; R10 := R2; R9 := R2[0xfef27732]
- 28 [-]: CONST     R11 0        ; R11 := 0.000000
- 29 [-]: CALL      R9 3 2       ; R9 := R9(R10,R11)
- 30 [-]: SELF      R9 R9 K4     ; R10 := R9; R9 := R9[0x0fbc7293]
- 31 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 32 [-]: MUL       R9 R9 R0     ; R9 := R9 * R0
- 33 [-]: MUL       R9 R9 K11    ; R9 := R9 * 100.000000
- 34 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 35 [-]: SETTABLE  R7 K7 R8     ; R7["PERCENT"] := R8
- 36 [-]: MOVE      R5 R7        ; R5 := R7
- 37 [-]: GETGLOBAL R7 K12       ; R7 := cjson
- 38 [-]: GETTABLE  R7 R7 K13    ; R7 := R7[0xb139d7bc]
- 39 [-]: MOVE      R8 R5        ; R8 := R5
- 40 [-]: TAILCALL  R7 2 0       ; R7,... := R7(R8)
- 41 [-]: RETURN    R7 0         ; return R7,...
- 42 [-]: RETURN    R0 1         ; return 
+       0 [-]: SUBK R5 R0 K0 [1]
+       1 [-]: NAMECALL R3 R2 K1 [0x86BA2663]
+       2 [-]: CALL R3 2 1  
+       3 [-]: MOVE R6 R3   
+       4 [-]: NAMECALL R4 R2 K2 [0x96284D62]
+       5 [-]: CALL R4 2 1  
+       6 [-]: NEWTABLE R5 0 0
+       7 [-]: LENGTH R6 R4 
+       8 [-]: LOADN R7 0   
+       9 [-]: JUMPIFNOTLT R7 R6 L3
+      10 [-]: GETTABLEN R6 R4 1
+      11 [-]: NAMECALL R6 R6 K3 [0x0FBC7293]
+      12 [-]: CALL R6 1 1  
+      13 [-]: DUPTABLE R7 7
+      14 [-]: DIVK R10 R6 K9 [2]
+      15 [-]: ADDK R9 R10 K8 [0.5]
+      16 [-]: FASTCALL1 12 R9 L0
+      17 [-]: GETIMPORT R8 12 [nil]
+      18 [-]: CALL R8 1 1  
+L 0:  19 [-]: SETTABLEKS R8 R7 K4 ["PISTOL_RIFLE"]
+      20 [-]: DIVK R10 R6 K0 [1]
+      21 [-]: ADDK R9 R10 K8 [0.5]
+      22 [-]: FASTCALL1 12 R9 L1
+      23 [-]: GETIMPORT R8 12 [nil]
+      24 [-]: CALL R8 1 1  
+L 1:  25 [-]: SETTABLEKS R8 R7 K5 ["SHOTGUN_SNIPER"]
+      26 [-]: LOADN R13 0  
+      27 [-]: NAMECALL R11 R2 K14 [0xFEF27732]
+      28 [-]: CALL R11 2 1 
+      29 [-]: NAMECALL R11 R11 K3 [0x0FBC7293]
+      30 [-]: CALL R11 1 1 
+      31 [-]: MUL R10 R11 R0
+      32 [-]: MULK R9 R10 K13 [100]
+      33 [-]: FASTCALL1 12 R9 L2
+      34 [-]: GETIMPORT R8 12 [nil]
+      35 [-]: CALL R8 1 1  
+L 2:  36 [-]: SETTABLEKS R8 R7 K6 ["PERCENT"]
+      37 [-]: MOVE R5 R7   
+L 3:  38 [-]: GETIMPORT R6 17 [nil]
+      39 [-]: MOVE R7 R5   
+      40 [-]: CALL R6 1 -1 
+      41 [-]: RETURN R6 -1 
+
 
 

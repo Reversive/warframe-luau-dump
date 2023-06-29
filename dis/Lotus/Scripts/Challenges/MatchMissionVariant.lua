@@ -1,19 +1,15 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
-; Max Stack Size:  2
+; Is_vararg:       1
+; Max Stack Size:  1
 
-  1 [-]: CLOSURE   R0 0         ; R0 := closure(Function #1)
-  2 [-]: SETGLOBAL R0 K0        ; MatchTagEvent := R0
-  3 [-]: RETURN    R0 1         ; return 
+            1 [-]: DUPCLOSURE R0 K0 []
+       2 [-]: SETGLOBAL R0 K1 ["MatchTagEvent"]
+       3 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 9
 ; #Upvalues:       0
@@ -21,46 +17,35 @@
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
-  1 [-]: GETGLOBAL R0 K0        ; R0 := 0xbe190284
-  2 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0xef893aec]
-  3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: GETTABLE  R1 R0 K2     ; R1 := R0["alertId"]
-  5 [-]: EQ        1 R1 K3      ; if R1 == "" then PC := 10
-  6 [-]: JMP       10           ; PC := 10
-  7 [-]: GETGLOBAL R1 K4        ; R1 := 0x5e68972b
-  8 [-]: RETURN    R1 2         ; return R1
-  9 [-]: JMP       39           ; PC := 39
- 10 [-]: GETTABLE  R1 R0 K5     ; R1 := R0["goalId"]
- 11 [-]: EQ        1 R1 K3      ; if R1 == "" then PC := 16
- 12 [-]: JMP       16           ; PC := 16
- 13 [-]: GETGLOBAL R1 K6        ; R1 := 0x41ce8855
- 14 [-]: RETURN    R1 2         ; return R1
- 15 [-]: JMP       39           ; PC := 39
- 16 [-]: GETTABLE  R1 R0 K7     ; R1 := R0["invasionId"]
- 17 [-]: EQ        1 R1 K3      ; if R1 == "" then PC := 22
- 18 [-]: JMP       22           ; PC := 22
- 19 [-]: GETGLOBAL R1 K8        ; R1 := 0x24525a14
- 20 [-]: RETURN    R1 2         ; return R1
- 21 [-]: JMP       39           ; PC := 39
- 22 [-]: GETTABLE  R1 R0 K9     ; R1 := R0["nightmare"]
- 23 [-]: TEST      R1 0         ; if not R1 then PC := 28
- 24 [-]: JMP       28           ; PC := 28
- 25 [-]: GETGLOBAL R1 K10       ; R1 := 0xe2426880
- 26 [-]: RETURN    R1 2         ; return R1
- 27 [-]: JMP       39           ; PC := 39
- 28 [-]: GETTABLE  R1 R0 K11    ; R1 := R0["sortieId"]
- 29 [-]: EQ        1 R1 K3      ; if R1 == "" then PC := 34
- 30 [-]: JMP       34           ; PC := 34
- 31 [-]: GETGLOBAL R1 K12       ; R1 := 0x52cccd05
- 32 [-]: RETURN    R1 2         ; return R1
- 33 [-]: JMP       39           ; PC := 39
- 34 [-]: GETTABLE  R1 R0 K13    ; R1 := R0["syndicateId"]
- 35 [-]: EQ        1 R1 K3      ; if R1 == "" then PC := 39
- 36 [-]: JMP       39           ; PC := 39
- 37 [-]: GETGLOBAL R1 K14       ; R1 := 0xce6edc67
- 38 [-]: RETURN    R1 2         ; return R1
- 39 [-]: GETGLOBAL R1 K15       ; R1 := 0xf1a099b6
- 40 [-]: RETURN    R1 2         ; return R1
- 41 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: NAMECALL R0 R0 K2 [0xEF893AEC]
+       2 [-]: CALL R0 1 1  
+       3 [-]: GETTABLEKS R1 R0 K3 ["alertId"]
+       4 [-]: JUMPXEQKS R1 K4 L0 [""]
+       5 [-]: GETIMPORT R1 6 [nil]
+       6 [-]: RETURN R1 1  
+L 0:   7 [-]: GETTABLEKS R1 R0 K7 ["goalId"]
+       8 [-]: JUMPXEQKS R1 K4 L1 [""]
+       9 [-]: GETIMPORT R1 9 [nil]
+      10 [-]: RETURN R1 1  
+L 1:  11 [-]: GETTABLEKS R1 R0 K10 ["invasionId"]
+      12 [-]: JUMPXEQKS R1 K4 L2 [""]
+      13 [-]: GETIMPORT R1 12 [nil]
+      14 [-]: RETURN R1 1  
+L 2:  15 [-]: GETTABLEKS R1 R0 K13 ["nightmare"]
+      16 [-]: JUMPIFNOT R1 L3
+      17 [-]: GETIMPORT R1 15 [nil]
+      18 [-]: RETURN R1 1  
+L 3:  19 [-]: GETTABLEKS R1 R0 K16 ["sortieId"]
+      20 [-]: JUMPXEQKS R1 K4 L4 [""]
+      21 [-]: GETIMPORT R1 18 [nil]
+      22 [-]: RETURN R1 1  
+L 4:  23 [-]: GETTABLEKS R1 R0 K19 ["syndicateId"]
+      24 [-]: JUMPXEQKS R1 K4 L5 [""]
+      25 [-]: GETIMPORT R1 21 [nil]
+      26 [-]: RETURN R1 1  
+L 5:  27 [-]: GETIMPORT R1 23 [nil]
+      28 [-]: RETURN R1 1  
+
 
 

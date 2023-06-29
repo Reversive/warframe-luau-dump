@@ -1,21 +1,17 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
-; Max Stack Size:  2
+; Is_vararg:       1
+; Max Stack Size:  1
 
-  1 [-]: CLOSURE   R0 0         ; R0 := closure(Function #1)
-  2 [-]: SETGLOBAL R0 K0        ; ActivateAbility := R0
-  3 [-]: CLOSURE   R0 1         ; R0 := closure(Function #2)
-  4 [-]: SETGLOBAL R0 K1        ; DeactivateAbility := R0
-  5 [-]: RETURN    R0 1         ; return 
+            1 [-]: DUPCLOSURE R0 K0 []
+       2 [-]: SETGLOBAL R0 K1 ["ActivateAbility"]
+       3 [-]: DUPCLOSURE R0 K2 []
+       4 [-]: SETGLOBAL R0 K3 ["DeactivateAbility"]
+       5 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 4
 ; #Upvalues:       0
@@ -23,48 +19,45 @@
 ; Is_vararg:       0
 ; Max Stack Size:  13
 
-  1 [-]: GETGLOBAL R4 K0        ; R4 := _T
-  2 [-]: GETTABLE  R4 R4 K1     ; R4 := R4["WaitingForFlappyTap"]
-  3 [-]: TEST      R4 0         ; if not R4 then PC := 14
-  4 [-]: JMP       14           ; PC := 14
-  5 [-]: GETGLOBAL R4 K0        ; R4 := _T
-  6 [-]: SETTABLE  R4 K1 K2     ; R4["WaitingForFlappyTap"] := false
-  7 [-]: GETGLOBAL R4 K3        ; R4 := 0xbe190284
-  8 [-]: SELF      R4 R4 K4     ; R5 := R4; R4 := R4[0x0d94da04]
-  9 [-]: CONST     R6 -30       ; R6 := -30.000000
- 10 [-]: CALL      R4 3 1       ; R4(R5,R6)
- 11 [-]: GETGLOBAL R4 K5        ; R4 := 0xcbd666e1
- 12 [-]: CONST     R5 0         ; R5 := 0.000000
- 13 [-]: CALL      R4 2 1       ; R4(R5)
- 14 [-]: SELF      R4 R1 K6     ; R5 := R1; R4 := R1[0x7027c544]
- 15 [-]: GETGLOBAL R6 K7        ; R6 := 0xb8624824
- 16 [-]: LOADKB    R7 0 0       ; R7 := false
- 17 [-]: CONST     R8 2         ; R8 := 2.000000
- 18 [-]: CONST     R9 1         ; R9 := 1.000000
- 19 [-]: LOADKB    R10 0 0      ; R10 := false
- 20 [-]: CALL      R4 7 1       ; R4(R5,R6,R7,R8,R9,R10)
- 21 [-]: SELF      R4 R1 K9     ; R5 := R1; R4 := R1[0x47901f07]
- 22 [-]: GETGLOBAL R6 K10       ; R6 := 0x618c8df6
- 23 [-]: GETGLOBAL R7 K11       ; R7 := EMPTY_SYMBOL
- 24 [-]: GETGLOBAL R8 K12       ; R8 := 0xa421af95
- 25 [-]: CONST     R9 -10       ; R9 := -10.000000
- 26 [-]: CONST     R10 -10      ; R10 := -10.000000
- 27 [-]: CONST     R11 -10      ; R11 := -10.000000
- 28 [-]: CALL      R8 4 2       ; R8 := R8(R9,R10,R11)
- 29 [-]: GETGLOBAL R9 K13       ; R9 := 0x00046924
- 30 [-]: CONST     R10 90       ; R10 := 90.000000
- 31 [-]: CONST     R11 0        ; R11 := 0.000000
- 32 [-]: CONST     R12 90       ; R12 := 90.000000
- 33 [-]: CALL      R9 4 0       ; R9,... := R9(R10,R11,R12)
- 34 [-]: CALL      R4 0 1       ; R4(R5,...)
- 35 [-]: SELF      R4 R1 K14    ; R5 := R1; R4 := R1[0xb326e827]
- 36 [-]: LOADK     R6 K15       ; R6 := 10.300000
- 37 [-]: CALL      R4 3 1       ; R4(R5,R6)
- 38 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R4 2 [nil]
+       1 [-]: JUMPIFNOT R4 L0
+       2 [-]: GETIMPORT R4 3 [nil]
+       3 [-]: LOADB R5 0   
+       4 [-]: SETTABLEKS R5 R4 K1 ["WaitingForFlappyTap"]
+       5 [-]: GETIMPORT R4 5 [nil]
+       6 [-]: LOADN R6 -30 
+       7 [-]: NAMECALL R4 R4 K6 [0x0D94DA04]
+       8 [-]: CALL R4 2 0  
+       9 [-]: GETIMPORT R4 8 [nil]
+      10 [-]: LOADN R5 0   
+      11 [-]: CALL R4 1 0  
+L 0:  12 [-]: GETIMPORT R6 10 [nil]
+      13 [-]: LOADB R7 0   
+      14 [-]: LOADN R8 2   
+      15 [-]: LOADN R9 1   
+      16 [-]: LOADB R10 0  
+      17 [-]: NAMECALL R4 R1 K11 [0x7027C544]
+      18 [-]: CALL R4 6 0  
+      19 [-]: GETIMPORT R6 13 [nil]
+      20 [-]: GETIMPORT R7 15 [nil]
+      21 [-]: GETIMPORT R8 17 [nil]
+      22 [-]: LOADN R9 -10 
+      23 [-]: LOADN R10 -10
+      24 [-]: LOADN R11 -10
+      25 [-]: CALL R8 3 1  
+      26 [-]: GETIMPORT R9 19 [nil]
+      27 [-]: LOADN R10 90 
+      28 [-]: LOADN R11 0  
+      29 [-]: LOADN R12 90 
+      30 [-]: CALL R9 3 -1 
+      31 [-]: NAMECALL R4 R1 K20 [0x47901F07]
+      32 [-]: CALL R4 -1 0 
+      33 [-]: LOADK R6 K21 [10.300000000000001]
+      34 [-]: NAMECALL R4 R1 K22 [0xB326E827]
+      35 [-]: CALL R4 2 0  
+      36 [-]: RETURN R0 0  
 
 
-; Function #2:
-;
 ; Name:            
 ; Defined at line: 19
 ; #Upvalues:       0
@@ -72,6 +65,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
-  1 [-]: RETURN    R0 1         ; return 
+       0 [-]: RETURN R0 0  
+
 
 

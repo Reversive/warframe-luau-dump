@@ -1,41 +1,37 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
-; Max Stack Size:  2
+; Is_vararg:       1
+; Max Stack Size:  1
 
-  1 [-]: CLOSURE   R0 0         ; R0 := closure(Function #1)
-  2 [-]: SETGLOBAL R0 K0        ; MatchTagEvent := R0
-  3 [-]: RETURN    R0 1         ; return 
+            1 [-]: DUPCLOSURE R0 K0 []
+       2 [-]: SETGLOBAL R0 K1 ["MatchTagEvent"]
+       3 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 4
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
-; Max Stack Size:  4
+; Max Stack Size:  6
 
-  1 [-]: GETGLOBAL R2 K0        ; R2 := 0x7b998233
-  2 [-]: GETGLOBAL R3 K1        ; R3 := 0xbe190284
-  3 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  4 [-]: TEST      R2 1         ; if R2 then PC := 13
-  5 [-]: JMP       13           ; PC := 13
-  6 [-]: GETGLOBAL R2 K1        ; R2 := 0xbe190284
-  7 [-]: SELF      R2 R2 K2     ; R3 := R2; R2 := R2[0xef893aec]
-  8 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  9 [-]: GETTABLE  R2 R2 K3     ; R2 := R2["periodicMissionTag"]
- 10 [-]: GETGLOBAL R3 K4        ; R3 := 0xf9e15e59
- 11 [-]: EQ        1 R2 R3      ; if R2 == R3 then PC := 14
- 12 [-]: JMP       14           ; PC := 14
- 13 [-]: LOADKB    R2 0 1       ; R2 := false; PC := 14
- 14 [-]: LOADKB    R2 1 0       ; R2 := true
- 15 [-]: RETURN    R2 2         ; return R2
- 16 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R4 1 [nil]
+       1 [-]: FASTCALL1 62 R4 L0
+       2 [-]: GETIMPORT R3 3 [nil]
+       3 [-]: CALL R3 1 1  
+L 0:   4 [-]: NOT R2 R3    
+       5 [-]: JUMPIFNOT R2 L2
+       6 [-]: GETIMPORT R4 1 [nil]
+       7 [-]: NAMECALL R4 R4 K4 [0xEF893AEC]
+       8 [-]: CALL R4 1 1  
+       9 [-]: GETTABLEKS R3 R4 K5 ["periodicMissionTag"]
+      10 [-]: GETIMPORT R4 7 [nil]
+      11 [-]: JUMPIFEQ R3 R4 L1
+      12 [-]: LOADB R2 0 +1
+L 1:  13 [-]: LOADB R2 1   
+L 2:  14 [-]: RETURN R2 1  
+
 
 

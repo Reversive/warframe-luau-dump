@@ -1,19 +1,15 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
-; Max Stack Size:  2
+; Is_vararg:       1
+; Max Stack Size:  1
 
-  1 [-]: CLOSURE   R0 0         ; R0 := closure(Function #1)
-  2 [-]: SETGLOBAL R0 K0        ; Execute := R0
-  3 [-]: RETURN    R0 1         ; return 
+            1 [-]: DUPCLOSURE R0 K0 []
+       2 [-]: SETGLOBAL R0 K1 ["Execute"]
+       3 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 1
 ; #Upvalues:       0
@@ -21,10 +17,10 @@
 ; Is_vararg:       0
 ; Max Stack Size:  3
 
-  1 [-]: TEST      R1 0         ; if not R1 then PC := 5
-  2 [-]: JMP       5            ; PC := 5
-  3 [-]: GETGLOBAL R2 K0        ; R2 := _T
-  4 [-]: SETTABLE  R2 K1 R0     ; R2["StartEncounterHint"] := R0
-  5 [-]: RETURN    R0 1         ; return 
+       0 [-]: JUMPIFNOT R1 L0
+       1 [-]: GETIMPORT R2 1 [nil]
+       2 [-]: SETTABLEKS R0 R2 K2 ["StartEncounterHint"]
+L 0:   3 [-]: RETURN R0 0  
+
 
 

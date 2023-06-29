@@ -1,130 +1,121 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
+; Is_vararg:       1
 ; Max Stack Size:  2
 
-  1 [-]: CLOSURE   R0 0         ; R0 := closure(Function #1)
-  2 [-]: CLOSURE   R1 1         ; R1 := closure(Function #2)
-  3 [-]: MOVE      R0 R0        ; R0 := R0
-  4 [-]: SETGLOBAL R1 K0        ; GetDescriptionInfo := R1
-  5 [-]: CLOSURE   R1 2         ; R1 := closure(Function #3)
-  6 [-]: MOVE      R0 R0        ; R0 := R0
-  7 [-]: SETGLOBAL R1 K1        ; GiveUpgrade := R1
-  8 [-]: CLOSURE   R1 3         ; R1 := closure(Function #4)
-  9 [-]: MOVE      R0 R0        ; R0 := R0
- 10 [-]: SETGLOBAL R1 K2        ; RemoveUpgrade := R1
- 11 [-]: RETURN    R0 1         ; return 
+            1 [-]: DUPCLOSURE R0 K0 []
+       2 [-]: DUPCLOSURE R1 K1 []
+       3 [-]: SETGLOBAL R1 K2 ["GetDescriptionInfo"]
+       4 [-]: DUPCLOSURE R1 K3 []
+       5 [-]: SETGLOBAL R1 K4 ["GiveUpgrade"]
+       6 [-]: DUPCLOSURE R1 K5 []
+       7 [-]: SETGLOBAL R1 K6 ["RemoveUpgrade"]
+       8 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  2
+; Max Stack Size:  6
 
-  1 [-]: SUB       R1 R0 K0     ; R1 := R0 - 1.000000
-  2 [-]: MUL       R1 K1 R1     ; R1 := 6.000000 * R1
-  3 [-]: SUB       R1 K2 R1     ; R1 := 45.000000 - R1
-  4 [-]: RETURN    R1 2         ; return R1
-  5 [-]: RETURN    R0 1         ; return 
+       0 [-]: LOADN R2 45  
+       1 [-]: LOADN R4 6   
+       2 [-]: SUBK R5 R0 K0 [1]
+       3 [-]: MUL R3 R4 R5 
+       4 [-]: SUB R1 R2 R3 
+       5 [-]: RETURN R1 1  
 
 
-; Function #2:
-;
 ; Name:            
 ; Defined at line: 5
-; #Upvalues:       1
+; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  4
+; Max Stack Size:  7
 
-  1 [-]: NEWTABLE  R1 0 1       ; R1 := {}
-  2 [-]: GETUPVAL  R2 U0        ; R2 := U0
-  3 [-]: MOVE      R3 R0        ; R3 := R0
-  4 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  5 [-]: SETTABLE  R1 K0 R2     ; R1["val"] := R2
-  6 [-]: GETGLOBAL R2 K1        ; R2 := cjson
-  7 [-]: GETTABLE  R2 R2 K2     ; R2 := R2[0xb139d7bc]
-  8 [-]: MOVE      R3 R1        ; R3 := R1
-  9 [-]: TAILCALL  R2 2 0       ; R2,... := R2(R3)
- 10 [-]: RETURN    R2 0         ; return R2,...
- 11 [-]: RETURN    R0 1         ; return 
+       0 [-]: DUPTABLE R1 1
+       1 [-]: LOADN R3 45  
+       2 [-]: LOADN R5 6   
+       3 [-]: SUBK R6 R0 K2 [1]
+       4 [-]: MUL R4 R5 R6 
+       5 [-]: SUB R2 R3 R4 
+       6 [-]: SETTABLEKS R2 R1 K0 ["val"]
+       7 [-]: GETIMPORT R2 5 [nil]
+       8 [-]: MOVE R3 R1   
+       9 [-]: CALL R2 1 -1 
+      10 [-]: RETURN R2 -1 
 
 
-; Function #3:
-;
 ; Name:            
 ; Defined at line: 10
-; #Upvalues:       1
+; #Upvalues:       0
 ; #Parameters:     5
 ; Is_vararg:       0
-; Max Stack Size:  12
+; Max Stack Size:  14
 
-  1 [-]: GETGLOBAL R5 K0        ; R5 := 0x89326c93
-  2 [-]: SELF      R5 R5 K1     ; R6 := R5; R5 := R5[0x18d05d30]
-  3 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-  4 [-]: TEST      R5 1         ; if R5 then PC := 7
-  5 [-]: JMP       7            ; PC := 7
-  6 [-]: RETURN    R0 1         ; return 
-  7 [-]: GETGLOBAL R5 K2        ; R5 := 0x7b998233
-  8 [-]: MOVE      R6 R0        ; R6 := R0
-  9 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 10 [-]: TEST      R5 1         ; if R5 then PC := 24
- 11 [-]: JMP       24           ; PC := 24
- 12 [-]: SELF      R5 R0 K3     ; R6 := R0; R5 := R0[0xde321e6f]
- 13 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 14 [-]: SELF      R5 R5 K4     ; R6 := R5; R5 := R5[0x5e6704ff]
- 15 [-]: CONST     R7 232       ; R7 := 232.000000
- 16 [-]: CONST     R8 4         ; R8 := 4.000000
- 17 [-]: GETUPVAL  R9 U0        ; R9 := U0
- 18 [-]: MOVE      R10 R2       ; R10 := R2
- 19 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 20 [-]: SELF      R10 R1 K7    ; R11 := R1; R10 := R1[0x24b019ac]
- 21 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 22 [-]: MOVE      R11 R1       ; R11 := R1
- 23 [-]: CALL      R5 7 1       ; R5(R6,R7,R8,R9,R10,R11)
- 24 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R5 1 [nil]
+       1 [-]: NAMECALL R5 R5 K2 [0x18D05D30]
+       2 [-]: CALL R5 1 1  
+       3 [-]: JUMPIF R5 L0 
+       4 [-]: RETURN R0 0  
+L 0:   5 [-]: FASTCALL1 62 R0 L1
+       6 [-]: MOVE R6 R0   
+       7 [-]: GETIMPORT R5 4 [nil]
+       8 [-]: CALL R5 1 1  
+L 1:   9 [-]: JUMPIF R5 L2 
+      10 [-]: NAMECALL R5 R0 K5 [0xDE321E6F]
+      11 [-]: CALL R5 1 1  
+      12 [-]: LOADN R7 238 
+      13 [-]: LOADN R8 4   
+      14 [-]: LOADN R10 45 
+      15 [-]: LOADN R12 6  
+      16 [-]: SUBK R13 R2 K6 [1]
+      17 [-]: MUL R11 R12 R13
+      18 [-]: SUB R9 R10 R11
+      19 [-]: NAMECALL R10 R1 K7 [0x24B019AC]
+      20 [-]: CALL R10 1 1 
+      21 [-]: MOVE R11 R1  
+      22 [-]: NAMECALL R5 R5 K8 [0x5E6704FF]
+      23 [-]: CALL R5 6 0  
+L 2:  24 [-]: RETURN R0 0  
 
 
-; Function #4:
-;
 ; Name:            
 ; Defined at line: 20
-; #Upvalues:       1
+; #Upvalues:       0
 ; #Parameters:     5
 ; Is_vararg:       0
-; Max Stack Size:  12
+; Max Stack Size:  14
 
-  1 [-]: GETGLOBAL R5 K0        ; R5 := 0x89326c93
-  2 [-]: SELF      R5 R5 K1     ; R6 := R5; R5 := R5[0x18d05d30]
-  3 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-  4 [-]: TEST      R5 1         ; if R5 then PC := 7
-  5 [-]: JMP       7            ; PC := 7
-  6 [-]: RETURN    R0 1         ; return 
-  7 [-]: GETGLOBAL R5 K2        ; R5 := 0x7b998233
-  8 [-]: MOVE      R6 R0        ; R6 := R0
-  9 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 10 [-]: TEST      R5 1         ; if R5 then PC := 24
- 11 [-]: JMP       24           ; PC := 24
- 12 [-]: SELF      R5 R0 K3     ; R6 := R0; R5 := R0[0xde321e6f]
- 13 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 14 [-]: SELF      R5 R5 K4     ; R6 := R5; R5 := R5[0x12dd9da2]
- 15 [-]: CONST     R7 232       ; R7 := 232.000000
- 16 [-]: CONST     R8 4         ; R8 := 4.000000
- 17 [-]: GETUPVAL  R9 U0        ; R9 := U0
- 18 [-]: MOVE      R10 R2       ; R10 := R2
- 19 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 20 [-]: SELF      R10 R1 K7    ; R11 := R1; R10 := R1[0x24b019ac]
- 21 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 22 [-]: MOVE      R11 R1       ; R11 := R1
- 23 [-]: CALL      R5 7 1       ; R5(R6,R7,R8,R9,R10,R11)
- 24 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R5 1 [nil]
+       1 [-]: NAMECALL R5 R5 K2 [0x18D05D30]
+       2 [-]: CALL R5 1 1  
+       3 [-]: JUMPIF R5 L0 
+       4 [-]: RETURN R0 0  
+L 0:   5 [-]: FASTCALL1 62 R0 L1
+       6 [-]: MOVE R6 R0   
+       7 [-]: GETIMPORT R5 4 [nil]
+       8 [-]: CALL R5 1 1  
+L 1:   9 [-]: JUMPIF R5 L2 
+      10 [-]: NAMECALL R5 R0 K5 [0xDE321E6F]
+      11 [-]: CALL R5 1 1  
+      12 [-]: LOADN R7 238 
+      13 [-]: LOADN R8 4   
+      14 [-]: LOADN R10 45 
+      15 [-]: LOADN R12 6  
+      16 [-]: SUBK R13 R2 K6 [1]
+      17 [-]: MUL R11 R12 R13
+      18 [-]: SUB R9 R10 R11
+      19 [-]: NAMECALL R10 R1 K7 [0x24B019AC]
+      20 [-]: CALL R10 1 1 
+      21 [-]: MOVE R11 R1  
+      22 [-]: NAMECALL R5 R5 K8 [0x12DD9DA2]
+      23 [-]: CALL R5 6 0  
+L 2:  24 [-]: RETURN R0 0  
+
 
 

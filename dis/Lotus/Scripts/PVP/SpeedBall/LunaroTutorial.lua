@@ -1,106 +1,101 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
+; Is_vararg:       1
 ; Max Stack Size:  2
 
-  1 [-]: GETGLOBAL R0 K0        ; R0 := 0x7ed0a956
-  2 [-]: LOADK     R1 K1        ; R1 := "/Lotus/Interface/Transmission.swf"
-  3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: CLOSURE   R1 0         ; R1 := closure(Function #1)
-  5 [-]: MOVE      R0 R0        ; R0 := R0
-  6 [-]: SETGLOBAL R1 K2        ; GiveTransmissionAction := R1
-  7 [-]: RETURN    R0 1         ; return 
+            1 [-]: GETIMPORT R0 1 [nil]
+       2 [-]: LOADK R1 K2 ["/Lotus/Interface/Transmission.swf"]
+       3 [-]: CALL R0 1 1  
+       4 [-]: DUPCLOSURE R1 K3 []
+       5 [-]: MOVE R0 R0   
+       6 [-]: SETGLOBAL R1 K4 ["GiveTransmissionAction"]
+       7 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 6
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
-; Max Stack Size:  12
+; Max Stack Size:  10
 
-  1 [-]: GETGLOBAL R2 K0        ; R2 := 0x7b998233
-  2 [-]: MOVE      R3 R1        ; R3 := R1
-  3 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  4 [-]: TEST      R2 1         ; if R2 then PC := 28
-  5 [-]: JMP       28           ; PC := 28
-  6 [-]: GETGLOBAL R2 K0        ; R2 := 0x7b998233
-  7 [-]: SELF      R3 R1 K1     ; R4 := R1; R3 := R1[0x5e651723]
-  8 [-]: CALL      R3 2 0       ; R3,... := R3(R4)
-  9 [-]: CALL      R2 0 2       ; R2 := R2(R3,...)
- 10 [-]: TEST      R2 1         ; if R2 then PC := 28
- 11 [-]: JMP       28           ; PC := 28
- 12 [-]: GETGLOBAL R2 K2        ; R2 := 0x9ba7909f
- 13 [-]: SELF      R2 R2 K3     ; R3 := R2; R2 := R2[0xbcfb64ab]
- 14 [-]: GETUPVAL  R4 U0        ; R4 := U0
- 15 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
- 16 [-]: GETGLOBAL R3 K0        ; R3 := 0x7b998233
- 17 [-]: MOVE      R4 R2        ; R4 := R2
- 18 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 19 [-]: TEST      R3 1         ; if R3 then PC := 25
- 20 [-]: JMP       25           ; PC := 25
- 21 [-]: SELF      R3 R2 K4     ; R4 := R2; R3 := R2[0xe4162eed]
- 22 [-]: LOADK     R5 K5        ; R5 := "PreviewClose"
- 23 [-]: LOADK     R6 K6        ; R6 := ""
- 24 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
- 25 [-]: SELF      R3 R1 K7     ; R4 := R1; R3 := R1[0x2a748f85]
- 26 [-]: GETGLOBAL R5 K8        ; R5 := 0xbb5b1bfe
- 27 [-]: CALL      R3 3 1       ; R3(R4,R5)
- 28 [-]: GETGLOBAL R3 K9        ; R3 := 0x89326c93
- 29 [-]: SELF      R3 R3 K10    ; R4 := R3; R3 := R3[0x46a0ebf5]
- 30 [-]: GETGLOBAL R5 K11       ; R5 := 0x0469f296
- 31 [-]: LOADK     R6 K12       ; R6 := "EnableTutorialForwarder"
- 32 [-]: CALL      R5 2 0       ; R5,... := R5(R6)
- 33 [-]: CALL      R3 0 2       ; R3 := R3(R4,...)
- 34 [-]: GETGLOBAL R4 K9        ; R4 := 0x89326c93
- 35 [-]: SELF      R4 R4 K10    ; R5 := R4; R4 := R4[0x46a0ebf5]
- 36 [-]: GETGLOBAL R6 K11       ; R6 := 0x0469f296
- 37 [-]: LOADK     R7 K13       ; R7 := "DisableTutorialForwarder"
- 38 [-]: CALL      R6 2 0       ; R6,... := R6(R7)
- 39 [-]: CALL      R4 0 2       ; R4 := R4(R5,...)
- 40 [-]: SELF      R5 R4 K14    ; R6 := R4; R5 := R4[0x8eb2112d]
- 41 [-]: LOADK     R7 K15       ; R7 := "TriggerPort"
- 42 [-]: CALL      R5 3 1       ; R5(R6,R7)
- 43 [-]: GETGLOBAL R5 K2        ; R5 := 0x9ba7909f
- 44 [-]: SELF      R5 R5 K16    ; R6 := R5; R5 := R5[0x5374b92e]
- 45 [-]: GETUPVAL  R7 U0        ; R7 := U0
- 46 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
- 47 [-]: TEST      R5 1         ; if R5 then PC := 53
- 48 [-]: JMP       53           ; PC := 53
- 49 [-]: GETGLOBAL R5 K17       ; R5 := 0xcbd666e1
- 50 [-]: CONST     R6 0         ; R6 := 0.000000
- 51 [-]: CALL      R5 2 1       ; R5(R6)
- 52 [-]: JMP       43           ; PC := 43
- 53 [-]: GETGLOBAL R5 K2        ; R5 := 0x9ba7909f
- 54 [-]: SELF      R5 R5 K16    ; R6 := R5; R5 := R5[0x5374b92e]
- 55 [-]: GETUPVAL  R7 U0        ; R7 := U0
- 56 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
- 57 [-]: TEST      R5 0         ; if not R5 then PC := 63
- 58 [-]: JMP       63           ; PC := 63
- 59 [-]: GETGLOBAL R5 K17       ; R5 := 0xcbd666e1
- 60 [-]: CONST     R6 0         ; R6 := 0.000000
- 61 [-]: CALL      R5 2 1       ; R5(R6)
- 62 [-]: JMP       53           ; PC := 53
- 63 [-]: CONST     R5 1         ; R5 := 1.000000
- 64 [-]: GETGLOBAL R6 K18       ; R6 := 0xdc8bd0a9
- 65 [-]: LEN       R6 R6        ; R6 := # R6
- 66 [-]: CONST     R7 1         ; R7 := 1.000000
- 67 [-]: FORPREP   R5 73        ; R5 -= R7; PC := 73
- 68 [-]: GETGLOBAL R9 K18       ; R9 := 0xdc8bd0a9
- 69 [-]: GETTABLE  R9 R9 R8     ; R9 := R9[R8]
- 70 [-]: SELF      R9 R9 K14    ; R10 := R9; R9 := R9[0x8eb2112d]
- 71 [-]: LOADK     R11 K19      ; R11 := "Hide"
- 72 [-]: CALL      R9 3 1       ; R9(R10,R11)
- 73 [-]: FORLOOP   R5 68        ; R5 += R7; if R5 <= R6 then begin PC := 68; R8 := R5 end
- 74 [-]: SELF      R9 R3 K14    ; R10 := R3; R9 := R3[0x8eb2112d]
- 75 [-]: LOADK     R11 K15      ; R11 := "TriggerPort"
- 76 [-]: CALL      R9 3 1       ; R9(R10,R11)
- 77 [-]: RETURN    R0 1         ; return 
+       0 [-]: FASTCALL1 62 R1 L0
+       1 [-]: MOVE R3 R1   
+       2 [-]: GETIMPORT R2 1 [nil]
+       3 [-]: CALL R2 1 1  
+L 0:   4 [-]: JUMPIF R2 L4 
+       5 [-]: NAMECALL R3 R1 K2 [0x5E651723]
+       6 [-]: CALL R3 1 -1 
+       7 [-]: FASTCALL 62 L1
+       8 [-]: GETIMPORT R2 1 [nil]
+       9 [-]: CALL R2 -1 1 
+L 1:  10 [-]: JUMPIF R2 L4 
+      11 [-]: GETIMPORT R2 4 [nil]
+      12 [-]: GETUPVAL R4 0
+      13 [-]: NAMECALL R2 R2 K5 [0xBCFB64AB]
+      14 [-]: CALL R2 2 1  
+      15 [-]: FASTCALL1 62 R2 L2
+      16 [-]: MOVE R4 R2   
+      17 [-]: GETIMPORT R3 1 [nil]
+      18 [-]: CALL R3 1 1  
+L 2:  19 [-]: JUMPIF R3 L3 
+      20 [-]: LOADK R5 K6 ["PreviewClose"]
+      21 [-]: LOADK R6 K7 [""]
+      22 [-]: NAMECALL R3 R2 K8 [0xE4162EED]
+      23 [-]: CALL R3 3 0  
+L 3:  24 [-]: GETIMPORT R5 10 [nil]
+      25 [-]: NAMECALL R3 R1 K11 [0x2A748F85]
+      26 [-]: CALL R3 2 0  
+L 4:  27 [-]: GETIMPORT R2 13 [nil]
+      28 [-]: GETIMPORT R4 15 [nil]
+      29 [-]: LOADK R5 K16 ["EnableTutorialForwarder"]
+      30 [-]: CALL R4 1 -1 
+      31 [-]: NAMECALL R2 R2 K17 [0x46A0EBF5]
+      32 [-]: CALL R2 -1 1 
+      33 [-]: GETIMPORT R3 13 [nil]
+      34 [-]: GETIMPORT R5 15 [nil]
+      35 [-]: LOADK R6 K18 ["DisableTutorialForwarder"]
+      36 [-]: CALL R5 1 -1 
+      37 [-]: NAMECALL R3 R3 K17 [0x46A0EBF5]
+      38 [-]: CALL R3 -1 1 
+      39 [-]: LOADK R6 K19 ["TriggerPort"]
+      40 [-]: NAMECALL R4 R3 K20 [0x8EB2112D]
+      41 [-]: CALL R4 2 0  
+L 5:  42 [-]: GETIMPORT R4 4 [nil]
+      43 [-]: GETUPVAL R6 0
+      44 [-]: NAMECALL R4 R4 K21 [0x5374B92E]
+      45 [-]: CALL R4 2 1  
+      46 [-]: JUMPIF R4 L6 
+      47 [-]: GETIMPORT R4 23 [nil]
+      48 [-]: LOADN R5 0   
+      49 [-]: CALL R4 1 0  
+      50 [-]: JUMPBACK L5  
+L 6:  51 [-]: GETIMPORT R4 4 [nil]
+      52 [-]: GETUPVAL R6 0
+      53 [-]: NAMECALL R4 R4 K21 [0x5374B92E]
+      54 [-]: CALL R4 2 1  
+      55 [-]: JUMPIFNOT R4 L7
+      56 [-]: GETIMPORT R4 23 [nil]
+      57 [-]: LOADN R5 0   
+      58 [-]: CALL R4 1 0  
+      59 [-]: JUMPBACK L6  
+L 7:  60 [-]: LOADN R6 1   
+      61 [-]: GETIMPORT R7 25 [nil]
+      62 [-]: LENGTH R4 R7 
+      63 [-]: LOADN R5 1   
+      64 [-]: FORNPREP R4 L9
+L 8:  65 [-]: GETIMPORT R8 25 [nil]
+      66 [-]: GETTABLE R7 R8 R6
+      67 [-]: LOADK R9 K26 ["Hide"]
+      68 [-]: NAMECALL R7 R7 K20 [0x8EB2112D]
+      69 [-]: CALL R7 2 0  
+      70 [-]: FORNLOOP R4 L8
+L 9:  71 [-]: LOADK R6 K19 ["TriggerPort"]
+      72 [-]: NAMECALL R4 R2 K20 [0x8EB2112D]
+      73 [-]: CALL R4 2 0  
+      74 [-]: RETURN R0 0  
+
 
 

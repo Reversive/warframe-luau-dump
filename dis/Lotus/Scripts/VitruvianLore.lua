@@ -1,26 +1,21 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
+; Is_vararg:       1
 ; Max Stack Size:  3
 
-  1 [-]: GETGLOBAL R0 K0        ; R0 := 0x2d0fad09
-  2 [-]: LOADK     R1 K1        ; R1 := "Lotus.Interface.LotusUtilities"
-  3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: CLOSURE   R1 0         ; R1 := closure(Function #1)
-  5 [-]: MOVE      R0 R0        ; R0 := R0
-  6 [-]: CLOSURE   R2 1         ; R2 := closure(Function #2)
-  7 [-]: MOVE      R0 R1        ; R0 := R1
-  8 [-]: MOVE      R0 R0        ; R0 := R0
-  9 [-]: SETGLOBAL R2 K2        ; OpenVitruvian := R2
- 10 [-]: RETURN    R0 1         ; return 
+            1 [-]: GETIMPORT R0 1 [nil]
+       2 [-]: LOADK R1 K2 ["Lotus.Interface.LotusUtilities"]
+       3 [-]: CALL R0 1 1  
+       4 [-]: DUPCLOSURE R1 K3 []
+       5 [-]: MOVE R0 R0   
+       6 [-]: DUPCLOSURE R2 K4 []
+       7 [-]: MOVE R0 R0   
+       8 [-]: SETGLOBAL R2 K5 ["OpenVitruvian"]
+       9 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 6
 ; #Upvalues:       1
@@ -28,65 +23,73 @@
 ; Is_vararg:       0
 ; Max Stack Size:  3
 
-  1 [-]: TEST      R0 0         ; if not R0 then PC := 12
-  2 [-]: JMP       12           ; PC := 12
-  3 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  4 [-]: GETTABLE  R1 R1 K0     ; R1 := R1[0x56d89411]
-  5 [-]: LOADKB    R2 1 0       ; R2 := true
-  6 [-]: CALL      R1 2 1       ; R1(R2)
-  7 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  8 [-]: GETTABLE  R1 R1 K1     ; R1 := R1[0x15deabb1]
-  9 [-]: LOADKB    R2 1 0       ; R2 := true
- 10 [-]: CALL      R1 2 1       ; R1(R2)
- 11 [-]: JMP       20           ; PC := 20
- 12 [-]: GETUPVAL  R1 U0        ; R1 := U0
- 13 [-]: GETTABLE  R1 R1 K0     ; R1 := R1[0x56d89411]
- 14 [-]: LOADKB    R2 0 0       ; R2 := false
- 15 [-]: CALL      R1 2 1       ; R1(R2)
- 16 [-]: GETUPVAL  R1 U0        ; R1 := U0
- 17 [-]: GETTABLE  R1 R1 K1     ; R1 := R1[0x15deabb1]
- 18 [-]: LOADKB    R2 0 0       ; R2 := false
- 19 [-]: CALL      R1 2 1       ; R1(R2)
- 20 [-]: RETURN    R0 1         ; return 
+       0 [-]: JUMPIFNOT R0 L0
+       1 [-]: GETUPVAL R2 0
+       2 [-]: GETTABLEKS R1 R2 K0 [0x56D89411]
+       3 [-]: LOADB R2 1   
+       4 [-]: CALL R1 1 0  
+       5 [-]: GETUPVAL R2 0
+       6 [-]: GETTABLEKS R1 R2 K1 [0x15DEABB1]
+       7 [-]: LOADB R2 1   
+       8 [-]: CALL R1 1 0  
+       9 [-]: RETURN R0 0  
+L 0:  10 [-]: GETUPVAL R2 0
+      11 [-]: GETTABLEKS R1 R2 K0 [0x56D89411]
+      12 [-]: LOADB R2 0   
+      13 [-]: CALL R1 1 0  
+      14 [-]: GETUPVAL R2 0
+      15 [-]: GETTABLEKS R1 R2 K1 [0x15DEABB1]
+      16 [-]: LOADB R2 0   
+      17 [-]: CALL R1 1 0  
+      18 [-]: RETURN R0 0  
 
 
-; Function #2:
-;
 ; Name:            
 ; Defined at line: 16
-; #Upvalues:       2
+; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
 ; Max Stack Size:  3
 
-  1 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  2 [-]: LOADKB    R1 1 0       ; R1 := true
-  3 [-]: CALL      R0 2 1       ; R0(R1)
-  4 [-]: GETGLOBAL R0 K0        ; R0 := _T
-  5 [-]: GETGLOBAL R1 K2        ; R1 := 0x1e9e5bc8
-  6 [-]: SETTABLE  R0 K1 R1     ; R0["VitruvianStage"] := R1
-  7 [-]: GETGLOBAL R0 K3        ; R0 := 0x9ba7909f
-  8 [-]: SELF      R0 R0 K4     ; R1 := R0; R0 := R0[0xcfba257f]
-  9 [-]: GETGLOBAL R2 K5        ; R2 := 0xb70284f2
- 10 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
- 11 [-]: GETGLOBAL R1 K6        ; R1 := 0x7b998233
- 12 [-]: MOVE      R2 R0        ; R2 := R0
- 13 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 14 [-]: TEST      R1 1         ; if R1 then PC := 20
- 15 [-]: JMP       20           ; PC := 20
- 16 [-]: GETGLOBAL R1 K7        ; R1 := 0xcbd666e1
- 17 [-]: CONST     R2 0         ; R2 := 0.000000
- 18 [-]: CALL      R1 2 1       ; R1(R2)
- 19 [-]: JMP       11           ; PC := 11
- 20 [-]: GETUPVAL  R1 U1        ; R1 := U1
- 21 [-]: GETTABLE  R1 R1 K8     ; R1 := R1[0xa559eb32]
- 22 [-]: CALL      R1 1 1       ; R1()
- 23 [-]: GETUPVAL  R1 U1        ; R1 := U1
- 24 [-]: GETTABLE  R1 R1 K9     ; R1 := R1[0xfe0d9469]
- 25 [-]: CALL      R1 1 1       ; R1()
- 26 [-]: GETUPVAL  R1 U0        ; R1 := U0
- 27 [-]: LOADKB    R2 0 0       ; R2 := false
- 28 [-]: CALL      R1 2 1       ; R1(R2)
- 29 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETUPVAL R1 0
+       1 [-]: GETTABLEKS R0 R1 K0 [0x56D89411]
+       2 [-]: LOADB R1 1   
+       3 [-]: CALL R0 1 0  
+       4 [-]: GETUPVAL R1 0
+       5 [-]: GETTABLEKS R0 R1 K1 [0x15DEABB1]
+       6 [-]: LOADB R1 1   
+       7 [-]: CALL R0 1 0  
+       8 [-]: GETIMPORT R0 3 [nil]
+       9 [-]: GETIMPORT R1 5 [nil]
+      10 [-]: SETTABLEKS R1 R0 K6 ["VitruvianStage"]
+      11 [-]: GETIMPORT R0 8 [nil]
+      12 [-]: GETIMPORT R2 10 [nil]
+      13 [-]: NAMECALL R0 R0 K11 [0xCFBA257F]
+      14 [-]: CALL R0 2 1  
+L 0:  15 [-]: FASTCALL1 62 R0 L1
+      16 [-]: MOVE R2 R0   
+      17 [-]: GETIMPORT R1 13 [nil]
+      18 [-]: CALL R1 1 1  
+L 1:  19 [-]: JUMPIF R1 L2 
+      20 [-]: GETIMPORT R1 15 [nil]
+      21 [-]: LOADN R2 0   
+      22 [-]: CALL R1 1 0  
+      23 [-]: JUMPBACK L0  
+L 2:  24 [-]: GETUPVAL R2 0
+      25 [-]: GETTABLEKS R1 R2 K16 [0xA559EB32]
+      26 [-]: CALL R1 0 0  
+      27 [-]: GETUPVAL R2 0
+      28 [-]: GETTABLEKS R1 R2 K17 [0xFE0D9469]
+      29 [-]: CALL R1 0 0  
+      30 [-]: GETUPVAL R2 0
+      31 [-]: GETTABLEKS R1 R2 K0 [0x56D89411]
+      32 [-]: LOADB R2 0   
+      33 [-]: CALL R1 1 0  
+      34 [-]: GETUPVAL R2 0
+      35 [-]: GETTABLEKS R1 R2 K1 [0x15DEABB1]
+      36 [-]: LOADB R2 0   
+      37 [-]: CALL R1 1 0  
+      38 [-]: RETURN R0 0  
+
 
 

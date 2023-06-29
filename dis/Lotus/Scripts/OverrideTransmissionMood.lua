@@ -1,19 +1,15 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
-; Max Stack Size:  2
+; Is_vararg:       1
+; Max Stack Size:  1
 
-  1 [-]: CLOSURE   R0 0         ; R0 := closure(Function #1)
-  2 [-]: SETGLOBAL R0 K0        ; OverrideTransmissionMood := R0
-  3 [-]: RETURN    R0 1         ; return 
+            1 [-]: DUPCLOSURE R0 K0 []
+       2 [-]: SETGLOBAL R0 K1 ["OverrideTransmissionMood"]
+       3 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 3
 ; #Upvalues:       0
@@ -21,23 +17,20 @@
 ; Is_vararg:       0
 ; Max Stack Size:  3
 
-  1 [-]: GETGLOBAL R0 K0        ; R0 := _T
-  2 [-]: GETTABLE  R0 R0 K1     ; R0 := R0["TransmissionMoodOverride"]
-  3 [-]: EQ        0 R0 K2      ; if R0 ~= nil then PC := 8
-  4 [-]: JMP       8            ; PC := 8
-  5 [-]: GETGLOBAL R0 K0        ; R0 := _T
-  6 [-]: NEWTABLE  R1 0 0       ; R1 := {}
-  7 [-]: SETTABLE  R0 K1 R1     ; R0["TransmissionMoodOverride"] := R1
-  8 [-]: GETGLOBAL R0 K0        ; R0 := _T
-  9 [-]: GETTABLE  R0 R0 K1     ; R0 := R0["TransmissionMoodOverride"]
- 10 [-]: GETGLOBAL R1 K0        ; R1 := _T
- 11 [-]: GETTABLE  R1 R1 K3     ; R1 := R1["curTransmission"]
- 12 [-]: SELF      R1 R1 K4     ; R2 := R1; R1 := R1[0xca33ff41]
- 13 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 14 [-]: SELF      R1 R1 K5     ; R2 := R1; R1 := R1[0x6d604ba7]
- 15 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 16 [-]: GETGLOBAL R2 K6        ; R2 := 0x7cd89039
- 17 [-]: SETTABLE  R0 R1 R2     ; R0[R1] := R2
- 18 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R0 2 [nil]
+       1 [-]: JUMPXEQKNIL R0 L0 NOT
+       2 [-]: GETIMPORT R0 3 [nil]
+       3 [-]: NEWTABLE R1 0 0
+       4 [-]: SETTABLEKS R1 R0 K1 ["TransmissionMoodOverride"]
+L 0:   5 [-]: GETIMPORT R0 2 [nil]
+       6 [-]: GETIMPORT R1 5 [nil]
+       7 [-]: NAMECALL R1 R1 K6 [0xCA33FF41]
+       8 [-]: CALL R1 1 1  
+       9 [-]: NAMECALL R1 R1 K7 [0x6D604BA7]
+      10 [-]: CALL R1 1 1  
+      11 [-]: GETIMPORT R2 9 [nil]
+      12 [-]: SETTABLE R2 R0 R1
+      13 [-]: RETURN R0 0  
+
 
 

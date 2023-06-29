@@ -1,93 +1,85 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
-; Max Stack Size:  5
+; Is_vararg:       1
+; Max Stack Size:  3
 
-  1 [-]: GETGLOBAL R0 K0        ; R0 := 0xaeabecda
-  2 [-]: VARARG    R1 R2        ; R1 := R2 := ...
-  3 [-]: GETGLOBAL R2 K1        ; R2 := package
-  4 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["seeall"]
-  5 [-]: CALL      R0 3 1       ; R0(R1,R2)
-  6 [-]: GETGLOBAL R0 K3        ; R0 := 0x2d0fad09
-  7 [-]: LOADK     R1 K4        ; R1 := "Lotus.Scripts.PVP.PVPHelper"
-  8 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  9 [-]: CONST     R1 30        ; R1 := 30.000000
- 10 [-]: CONST     R2 20        ; R2 := 20.000000
- 11 [-]: GETTABLE  R3 R0 K6     ; R3 := R0[0xc96d0ce6]
- 12 [-]: LOADNIL   R4 R4        ; R4 := nil
- 13 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 14 [-]: SETGLOBAL R3 K5        ; PVPEventCommon := R3
- 15 [-]: GETGLOBAL R3 K5        ; R3 := PVPEventCommon
- 16 [-]: CLOSURE   R4 0         ; R4 := closure(Function #1)
- 17 [-]: SETTABLE  R3 K7 R4     ; R3[true] := R4
- 18 [-]: GETGLOBAL R3 K5        ; R3 := PVPEventCommon
- 19 [-]: CLOSURE   R4 1         ; R4 := closure(Function #2)
- 20 [-]: SETTABLE  R3 K8 R4     ; R3[true] := R4
- 21 [-]: GETGLOBAL R3 K5        ; R3 := PVPEventCommon
- 22 [-]: CLOSURE   R4 2         ; R4 := closure(Function #3)
- 23 [-]: SETTABLE  R3 K9 R4     ; R3[true] := R4
- 24 [-]: GETGLOBAL R3 K5        ; R3 := PVPEventCommon
- 25 [-]: CLOSURE   R4 3         ; R4 := closure(Function #4)
- 26 [-]: SETTABLE  R3 K10 R4    ; R3[true] := R4
- 27 [-]: GETGLOBAL R3 K5        ; R3 := PVPEventCommon
- 28 [-]: CLOSURE   R4 4         ; R4 := closure(Function #5)
- 29 [-]: MOVE      R0 R1        ; R0 := R1
- 30 [-]: MOVE      R0 R2        ; R0 := R2
- 31 [-]: SETTABLE  R3 K11 R4    ; R3[true] := R4
- 32 [-]: GETGLOBAL R3 K5        ; R3 := PVPEventCommon
- 33 [-]: CLOSURE   R4 5         ; R4 := closure(Function #6)
- 34 [-]: MOVE      R0 R1        ; R0 := R1
- 35 [-]: SETTABLE  R3 K12 R4    ; R3[true] := R4
- 36 [-]: RETURN    R0 1         ; return 
+            1 [-]: GETIMPORT R0 1 [nil]
+       2 [-]: GETVARARGS R1 1
+       3 [-]: GETIMPORT R2 4 [nil]
+       4 [-]: CALL R0 2 0  
+       5 [-]: GETIMPORT R0 6 [nil]
+       6 [-]: LOADK R1 K7 ["Lotus.Scripts.PVP.PVPHelper"]
+       7 [-]: CALL R0 1 1  
+       8 [-]: GETTABLEKS R1 R0 K8 [0xC96D0CE6]
+       9 [-]: LOADNIL R2   
+      10 [-]: CALL R1 1 1  
+      11 [-]: SETGLOBAL R1 K9 ["PVPEventCommon"]
+      12 [-]: DUPCLOSURE R1 K10 []
+      13 [-]: GETGLOBAL R2 K9 ["PVPEventCommon"]
+      14 [-]: SETTABLEKS R1 R2 K11 ["Init"]
+      15 [-]: DUPCLOSURE R1 K12 []
+      16 [-]: GETGLOBAL R2 K9 ["PVPEventCommon"]
+      17 [-]: SETTABLEKS R1 R2 K13 ["GetPVPObject"]
+      18 [-]: DUPCLOSURE R1 K14 []
+      19 [-]: GETGLOBAL R2 K9 ["PVPEventCommon"]
+      20 [-]: SETTABLEKS R1 R2 K15 ["OnPlayerKilled"]
+      21 [-]: DUPCLOSURE R1 K16 []
+      22 [-]: GETGLOBAL R2 K9 ["PVPEventCommon"]
+      23 [-]: SETTABLEKS R1 R2 K17 ["GetEventTimeLength"]
+      24 [-]: DUPCLOSURE R1 K18 []
+      25 [-]: GETGLOBAL R2 K9 ["PVPEventCommon"]
+      26 [-]: SETTABLEKS R1 R2 K19 ["Update"]
+      27 [-]: DUPCLOSURE R1 K20 []
+      28 [-]: GETGLOBAL R2 K9 ["PVPEventCommon"]
+      29 [-]: SETTABLEKS R1 R2 K21 ["OnEventActivateChange"]
+      30 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 10
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
-; Max Stack Size:  4
+; Max Stack Size:  5
 
-  1 [-]: GETGLOBAL R2 K0        ; R2 := 0x3d106989
-  2 [-]: LOADK     R3 K1        ; R3 := "AAAAAAAAAAAAAAA PVPEventCommon:Init"
-  3 [-]: CALL      R2 2 1       ; R2(R3)
-  4 [-]: GETGLOBAL R2 K2        ; R2 := _T
-  5 [-]: SETTABLE  R2 K3 R0     ; R2["PVPEvent"] := R0
-  6 [-]: GETGLOBAL R2 K5        ; R2 := 0xb009bbc6
-  7 [-]: MOVE      R3 R1        ; R3 := R1
-  8 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  9 [-]: SETTABLE  R0 K4 R2     ; R0["pvpEventData"] := R2
- 10 [-]: SETTABLE  R0 K6 K7     ; R0["playedIntroTransYet"] := false
- 11 [-]: GETGLOBAL R2 K5        ; R2 := 0xb009bbc6
- 12 [-]: GETTABLE  R3 R0 K4     ; R3 := R0["pvpEventData"]
- 13 [-]: GETTABLE  R3 R3 K9     ; R3 := R3["mIntroTrans"]
- 14 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 15 [-]: SETTABLE  R0 K8 R2     ; R0["introTransRes"] := R2
- 16 [-]: GETGLOBAL R2 K5        ; R2 := 0xb009bbc6
- 17 [-]: GETTABLE  R3 R0 K4     ; R3 := R0["pvpEventData"]
- 18 [-]: GETTABLE  R3 R3 K11    ; R3 := R3["mStartTrans"]
- 19 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 20 [-]: SETTABLE  R0 K10 R2    ; R0["startTransRes"] := R2
- 21 [-]: SETTABLE  R0 K12 K13   ; R0["PVPSTATE_NOTSTARTED"] := 0.000000
- 22 [-]: SETTABLE  R0 K14 K15   ; R0["PVPSTATE_STARTED"] := 1.000000
- 23 [-]: SETTABLE  R0 K16 K17   ; R0["PVPSTATE_FINISHED"] := 2.000000
- 24 [-]: GETTABLE  R2 R0 K12    ; R2 := R0["PVPSTATE_NOTSTARTED"]
- 25 [-]: SETTABLE  R0 K18 R2    ; R0["lastKnownPVPEventState"] := R2
- 26 [-]: GETGLOBAL R2 K20       ; R2 := 0x0469f296
- 27 [-]: LOADK     R3 K21       ; R3 := "PVPEVENT_STATE"
- 28 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 29 [-]: SETTABLE  R0 K19 R2    ; R0["NV_PVPEVENT_STATE"] := R2
- 30 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R2 1 [nil]
+       1 [-]: LOADK R3 K2 ["AAAAAAAAAAAAAAA PVPEventCommon:Init"]
+       2 [-]: CALL R2 1 0  
+       3 [-]: GETIMPORT R2 4 [nil]
+       4 [-]: SETTABLEKS R0 R2 K5 ["PVPEvent"]
+       5 [-]: GETIMPORT R2 7 [nil]
+       6 [-]: MOVE R3 R1   
+       7 [-]: CALL R2 1 1  
+       8 [-]: SETTABLEKS R2 R0 K8 ["pvpEventData"]
+       9 [-]: LOADB R2 0   
+      10 [-]: SETTABLEKS R2 R0 K9 ["playedIntroTransYet"]
+      11 [-]: GETIMPORT R2 7 [nil]
+      12 [-]: GETTABLEKS R4 R0 K8 ["pvpEventData"]
+      13 [-]: GETTABLEKS R3 R4 K10 ["mIntroTrans"]
+      14 [-]: CALL R2 1 1  
+      15 [-]: SETTABLEKS R2 R0 K11 ["introTransRes"]
+      16 [-]: GETIMPORT R2 7 [nil]
+      17 [-]: GETTABLEKS R4 R0 K8 ["pvpEventData"]
+      18 [-]: GETTABLEKS R3 R4 K12 ["mStartTrans"]
+      19 [-]: CALL R2 1 1  
+      20 [-]: SETTABLEKS R2 R0 K13 ["startTransRes"]
+      21 [-]: LOADN R2 0   
+      22 [-]: SETTABLEKS R2 R0 K14 ["PVPSTATE_NOTSTARTED"]
+      23 [-]: LOADN R2 1   
+      24 [-]: SETTABLEKS R2 R0 K15 ["PVPSTATE_STARTED"]
+      25 [-]: LOADN R2 2   
+      26 [-]: SETTABLEKS R2 R0 K16 ["PVPSTATE_FINISHED"]
+      27 [-]: GETTABLEKS R2 R0 K14 ["PVPSTATE_NOTSTARTED"]
+      28 [-]: SETTABLEKS R2 R0 K17 ["lastKnownPVPEventState"]
+      29 [-]: GETIMPORT R2 19 [nil]
+      30 [-]: LOADK R3 K20 ["PVPEVENT_STATE"]
+      31 [-]: CALL R2 1 1  
+      32 [-]: SETTABLEKS R2 R0 K21 ["NV_PVPEVENT_STATE"]
+      33 [-]: RETURN R0 0  
 
 
-; Function #2:
-;
 ; Name:            
 ; Defined at line: 28
 ; #Upvalues:       0
@@ -95,14 +87,10 @@
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
-  1 [-]: GETGLOBAL R1 K0        ; R1 := _T
-  2 [-]: GETTABLE  R1 R1 K1     ; R1 := R1["PVPObject"]
-  3 [-]: RETURN    R1 2         ; return R1
-  4 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R1 2 [nil]
+       1 [-]: RETURN R1 1  
 
 
-; Function #3:
-;
 ; Name:            
 ; Defined at line: 32
 ; #Upvalues:       0
@@ -110,241 +98,218 @@
 ; Is_vararg:       0
 ; Max Stack Size:  4
 
-  1 [-]: GETGLOBAL R2 K0        ; R2 := 0x3d106989
-  2 [-]: LOADK     R3 K1        ; R3 := "AAAAAAAAAAAAAAA PVPEventCommon:OnPlayerKilled"
-  3 [-]: CALL      R2 2 1       ; R2(R3)
-  4 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R2 1 [nil]
+       1 [-]: LOADK R3 K2 ["AAAAAAAAAAAAAAA PVPEventCommon:OnPlayerKilled"]
+       2 [-]: CALL R2 1 0  
+       3 [-]: RETURN R0 0  
 
 
-; Function #4:
-;
 ; Name:            
 ; Defined at line: 37
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  2
+; Max Stack Size:  5
 
-  1 [-]: GETTABLE  R1 R0 K0     ; R1 := R0["pvpEventData"]
-  2 [-]: GETTABLE  R1 R1 K1     ; R1 := R1["mTimeLengthSec"]
-  3 [-]: MUL       R1 R1 K2     ; R1 := R1 * 0.000000
-  4 [-]: ADD       R1 R1 K3     ; R1 := R1 + 60.000000
-  5 [-]: RETURN    R1 2         ; return R1
-  6 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETTABLEKS R4 R0 K2 ["pvpEventData"]
+       1 [-]: GETTABLEKS R3 R4 K3 ["mTimeLengthSec"]
+       2 [-]: MULK R2 R3 K1 [0]
+       3 [-]: ADDK R1 R2 K0 [60]
+       4 [-]: RETURN R1 1  
 
 
-; Function #5:
-;
 ; Name:            
 ; Defined at line: 41
-; #Upvalues:       2
+; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
 ; Max Stack Size:  9
 
-  1 [-]: GETGLOBAL R1 K0        ; R1 := 0x7b998233
-  2 [-]: GETTABLE  R2 R0 K1     ; R2 := R0["pvpEventData"]
-  3 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  4 [-]: TEST      R1 0         ; if not R1 then PC := 7
-  5 [-]: JMP       7            ; PC := 7
-  6 [-]: RETURN    R0 1         ; return 
-  7 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  8 [-]: SELF      R2 R0 K2     ; R3 := R0; R2 := R0[0x39406d2f]
-  9 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 10 [-]: ADD       R1 R1 R2     ; R1 := R1 + R2
- 11 [-]: GETGLOBAL R2 K3        ; R2 := 0xbe190284
- 12 [-]: GETGLOBAL R3 K0        ; R3 := 0x7b998233
- 13 [-]: MOVE      R4 R2        ; R4 := R2
- 14 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 15 [-]: TEST      R3 1         ; if R3 then PC := 109
- 16 [-]: JMP       109          ; PC := 109
- 17 [-]: SELF      R3 R2 K4     ; R4 := R2; R3 := R2[0x0eb34c69]
- 18 [-]: GETTABLE  R5 R0 K5     ; R5 := R0["NV_PVPEVENT_STATE"]
- 19 [-]: GETTABLE  R6 R0 K6     ; R6 := R0["PVPSTATE_NOTSTARTED"]
- 20 [-]: CALL      R3 4 2       ; R3 := R3(R4,R5,R6)
- 21 [-]: GETGLOBAL R4 K7        ; R4 := 0x89326c93
- 22 [-]: SELF      R4 R4 K8     ; R5 := R4; R4 := R4[0x18d05d30]
- 23 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 24 [-]: TEST      R4 0         ; if not R4 then PC := 87
- 25 [-]: JMP       87           ; PC := 87
- 26 [-]: GETTABLE  R4 R0 K6     ; R4 := R0["PVPSTATE_NOTSTARTED"]
- 27 [-]: EQ        0 R3 R4      ; if R3 ~= R4 then PC := 74
- 28 [-]: JMP       74           ; PC := 74
- 29 [-]: GETTABLE  R4 R0 K9     ; R4 := R0["playedIntroTransYet"]
- 30 [-]: TEST      R4 1         ; if R4 then PC := 56
- 31 [-]: JMP       56           ; PC := 56
- 32 [-]: SELF      R4 R0 K10    ; R5 := R0; R4 := R0[0xd5a1ad5f]
- 33 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 34 [-]: SELF      R4 R4 K11    ; R5 := R4; R4 := R4[0x1ff0012a]
- 35 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 36 [-]: GETUPVAL  R5 U0        ; R5 := U0
- 37 [-]: GETUPVAL  R6 U1        ; R6 := U1
- 38 [-]: SUB       R5 R5 R6     ; R5 := R5 - R6
- 39 [-]: LT        0 R5 R4      ; if R5 >= R4 then PC := 56
- 40 [-]: JMP       56           ; PC := 56
- 41 [-]: SELF      R4 R0 K10    ; R5 := R0; R4 := R0[0xd5a1ad5f]
- 42 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 43 [-]: SELF      R4 R4 K11    ; R5 := R4; R4 := R4[0x1ff0012a]
- 44 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 45 [-]: GETUPVAL  R5 U0        ; R5 := U0
- 46 [-]: LT        0 R4 R5      ; if R4 >= R5 then PC := 56
- 47 [-]: JMP       56           ; PC := 56
- 48 [-]: SETTABLE  R0 K9 K12    ; R0["playedIntroTransYet"] := true
- 49 [-]: SELF      R4 R0 K10    ; R5 := R0; R4 := R0[0xd5a1ad5f]
- 50 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 51 [-]: SELF      R4 R4 K13    ; R5 := R4; R4 := R4[0x6b9eebac]
- 52 [-]: LOADK     R6 K14       ; R6 := ""
- 53 [-]: GETTABLE  R7 R0 K15    ; R7 := R0["introTransRes"]
- 54 [-]: LOADKB    R8 1 0       ; R8 := true
- 55 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
- 56 [-]: SELF      R4 R0 K10    ; R5 := R0; R4 := R0[0xd5a1ad5f]
- 57 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 58 [-]: SELF      R4 R4 K11    ; R5 := R4; R4 := R4[0x1ff0012a]
- 59 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 60 [-]: GETUPVAL  R5 U0        ; R5 := U0
- 61 [-]: LT        0 R5 R4      ; if R5 >= R4 then PC := 87
- 62 [-]: JMP       87           ; PC := 87
- 63 [-]: SELF      R4 R0 K10    ; R5 := R0; R4 := R0[0xd5a1ad5f]
- 64 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 65 [-]: SELF      R4 R4 K11    ; R5 := R4; R4 := R4[0x1ff0012a]
- 66 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 67 [-]: LT        0 R4 R1      ; if R4 >= R1 then PC := 87
- 68 [-]: JMP       87           ; PC := 87
- 69 [-]: SELF      R4 R2 K16    ; R5 := R2; R4 := R2[0x751f061d]
- 70 [-]: GETTABLE  R6 R0 K5     ; R6 := R0["NV_PVPEVENT_STATE"]
- 71 [-]: GETTABLE  R7 R0 K17    ; R7 := R0["PVPSTATE_STARTED"]
- 72 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
- 73 [-]: JMP       87           ; PC := 87
- 74 [-]: GETTABLE  R4 R0 K17    ; R4 := R0["PVPSTATE_STARTED"]
- 75 [-]: EQ        0 R3 R4      ; if R3 ~= R4 then PC := 87
- 76 [-]: JMP       87           ; PC := 87
- 77 [-]: SELF      R4 R0 K10    ; R5 := R0; R4 := R0[0xd5a1ad5f]
- 78 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 79 [-]: SELF      R4 R4 K11    ; R5 := R4; R4 := R4[0x1ff0012a]
- 80 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 81 [-]: LT        0 R1 R4      ; if R1 >= R4 then PC := 87
- 82 [-]: JMP       87           ; PC := 87
- 83 [-]: SELF      R4 R2 K16    ; R5 := R2; R4 := R2[0x751f061d]
- 84 [-]: GETTABLE  R6 R0 K5     ; R6 := R0["NV_PVPEVENT_STATE"]
- 85 [-]: GETTABLE  R7 R0 K18    ; R7 := R0["PVPSTATE_FINISHED"]
- 86 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
- 87 [-]: SELF      R4 R2 K4     ; R5 := R2; R4 := R2[0x0eb34c69]
- 88 [-]: GETTABLE  R6 R0 K5     ; R6 := R0["NV_PVPEVENT_STATE"]
- 89 [-]: GETTABLE  R7 R0 K6     ; R7 := R0["PVPSTATE_NOTSTARTED"]
- 90 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
- 91 [-]: MOVE      R3 R4        ; R3 := R4
- 92 [-]: GETTABLE  R4 R0 K19    ; R4 := R0["lastKnownPVPEventState"]
- 93 [-]: EQ        1 R3 R4      ; if R3 == R4 then PC := 109
- 94 [-]: JMP       109          ; PC := 109
- 95 [-]: SETTABLE  R0 K19 R3    ; R0["lastKnownPVPEventState"] := R3
- 96 [-]: GETTABLE  R4 R0 K17    ; R4 := R0["PVPSTATE_STARTED"]
- 97 [-]: EQ        0 R3 R4      ; if R3 ~= R4 then PC := 103
- 98 [-]: JMP       103          ; PC := 103
- 99 [-]: SELF      R4 R0 K20    ; R5 := R0; R4 := R0[0xc40da7b8]
-100 [-]: LOADKB    R6 1 0       ; R6 := true
-101 [-]: CALL      R4 3 1       ; R4(R5,R6)
-102 [-]: JMP       109          ; PC := 109
-103 [-]: GETTABLE  R4 R0 K18    ; R4 := R0["PVPSTATE_FINISHED"]
-104 [-]: EQ        0 R3 R4      ; if R3 ~= R4 then PC := 109
-105 [-]: JMP       109          ; PC := 109
-106 [-]: SELF      R4 R0 K20    ; R5 := R0; R4 := R0[0xc40da7b8]
-107 [-]: LOADKB    R6 0 0       ; R6 := false
-108 [-]: CALL      R4 3 1       ; R4(R5,R6)
-109 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETTABLEKS R2 R0 K0 ["pvpEventData"]
+       1 [-]: FASTCALL1 62 R2 L0
+       2 [-]: GETIMPORT R1 2 [nil]
+       3 [-]: CALL R1 1 1  
+L 0:   4 [-]: JUMPIFNOT R1 L1
+       5 [-]: RETURN R0 0  
+L 1:   6 [-]: LOADN R2 30  
+       7 [-]: NAMECALL R3 R0 K3 [0x39406D2F]
+       8 [-]: CALL R3 1 1  
+       9 [-]: ADD R1 R2 R3 
+      10 [-]: GETIMPORT R2 5 [nil]
+      11 [-]: FASTCALL1 62 R2 L2
+      12 [-]: MOVE R4 R2   
+      13 [-]: GETIMPORT R3 2 [nil]
+      14 [-]: CALL R3 1 1  
+L 2:  15 [-]: JUMPIF R3 L7 
+      16 [-]: GETTABLEKS R5 R0 K6 ["NV_PVPEVENT_STATE"]
+      17 [-]: GETTABLEKS R6 R0 K7 ["PVPSTATE_NOTSTARTED"]
+      18 [-]: NAMECALL R3 R2 K8 [0x0EB34C69]
+      19 [-]: CALL R3 3 1  
+      20 [-]: GETIMPORT R4 10 [nil]
+      21 [-]: NAMECALL R4 R4 K11 [0x18D05D30]
+      22 [-]: CALL R4 1 1  
+      23 [-]: JUMPIFNOT R4 L5
+      24 [-]: GETTABLEKS R4 R0 K7 ["PVPSTATE_NOTSTARTED"]
+      25 [-]: JUMPIFNOTEQ R3 R4 L4
+      26 [-]: GETTABLEKS R4 R0 K12 ["playedIntroTransYet"]
+      27 [-]: JUMPIF R4 L3 
+      28 [-]: NAMECALL R4 R0 K13 [0xD5A1AD5F]
+      29 [-]: CALL R4 1 1  
+      30 [-]: NAMECALL R4 R4 K14 [0x1FF0012A]
+      31 [-]: CALL R4 1 1  
+      32 [-]: LOADN R5 10  
+      33 [-]: JUMPIFNOTLT R5 R4 L3
+      34 [-]: NAMECALL R4 R0 K13 [0xD5A1AD5F]
+      35 [-]: CALL R4 1 1  
+      36 [-]: NAMECALL R4 R4 K14 [0x1FF0012A]
+      37 [-]: CALL R4 1 1  
+      38 [-]: LOADN R5 30  
+      39 [-]: JUMPIFNOTLT R4 R5 L3
+      40 [-]: LOADB R4 1   
+      41 [-]: SETTABLEKS R4 R0 K12 ["playedIntroTransYet"]
+      42 [-]: NAMECALL R4 R0 K13 [0xD5A1AD5F]
+      43 [-]: CALL R4 1 1  
+      44 [-]: LOADK R6 K15 [""]
+      45 [-]: GETTABLEKS R7 R0 K16 ["introTransRes"]
+      46 [-]: LOADB R8 1   
+      47 [-]: NAMECALL R4 R4 K17 [0x6B9EEBAC]
+      48 [-]: CALL R4 4 0  
+L 3:  49 [-]: NAMECALL R4 R0 K13 [0xD5A1AD5F]
+      50 [-]: CALL R4 1 1  
+      51 [-]: NAMECALL R4 R4 K14 [0x1FF0012A]
+      52 [-]: CALL R4 1 1  
+      53 [-]: LOADN R5 30  
+      54 [-]: JUMPIFNOTLT R5 R4 L5
+      55 [-]: NAMECALL R4 R0 K13 [0xD5A1AD5F]
+      56 [-]: CALL R4 1 1  
+      57 [-]: NAMECALL R4 R4 K14 [0x1FF0012A]
+      58 [-]: CALL R4 1 1  
+      59 [-]: JUMPIFNOTLT R4 R1 L5
+      60 [-]: GETTABLEKS R6 R0 K6 ["NV_PVPEVENT_STATE"]
+      61 [-]: GETTABLEKS R7 R0 K18 ["PVPSTATE_STARTED"]
+      62 [-]: NAMECALL R4 R2 K19 [0x751F061D]
+      63 [-]: CALL R4 3 0  
+      64 [-]: JUMP L5
+     
+L 4:  65 [-]: GETTABLEKS R4 R0 K18 ["PVPSTATE_STARTED"]
+      66 [-]: JUMPIFNOTEQ R3 R4 L5
+      67 [-]: NAMECALL R4 R0 K13 [0xD5A1AD5F]
+      68 [-]: CALL R4 1 1  
+      69 [-]: NAMECALL R4 R4 K14 [0x1FF0012A]
+      70 [-]: CALL R4 1 1  
+      71 [-]: JUMPIFNOTLT R1 R4 L5
+      72 [-]: GETTABLEKS R6 R0 K6 ["NV_PVPEVENT_STATE"]
+      73 [-]: GETTABLEKS R7 R0 K20 ["PVPSTATE_FINISHED"]
+      74 [-]: NAMECALL R4 R2 K19 [0x751F061D]
+      75 [-]: CALL R4 3 0  
+L 5:  76 [-]: GETTABLEKS R6 R0 K6 ["NV_PVPEVENT_STATE"]
+      77 [-]: GETTABLEKS R7 R0 K7 ["PVPSTATE_NOTSTARTED"]
+      78 [-]: NAMECALL R4 R2 K8 [0x0EB34C69]
+      79 [-]: CALL R4 3 1  
+      80 [-]: MOVE R3 R4   
+      81 [-]: GETTABLEKS R4 R0 K21 ["lastKnownPVPEventState"]
+      82 [-]: JUMPIFEQ R3 R4 L7
+      83 [-]: SETTABLEKS R3 R0 K21 ["lastKnownPVPEventState"]
+      84 [-]: GETTABLEKS R4 R0 K18 ["PVPSTATE_STARTED"]
+      85 [-]: JUMPIFNOTEQ R3 R4 L6
+      86 [-]: LOADB R6 1   
+      87 [-]: NAMECALL R4 R0 K22 [0xC40DA7B8]
+      88 [-]: CALL R4 2 0  
+      89 [-]: RETURN R0 0  
+L 6:  90 [-]: GETTABLEKS R4 R0 K20 ["PVPSTATE_FINISHED"]
+      91 [-]: JUMPIFNOTEQ R3 R4 L7
+      92 [-]: LOADB R6 0   
+      93 [-]: NAMECALL R4 R0 K22 [0xC40DA7B8]
+      94 [-]: CALL R4 2 0  
+L 7:  95 [-]: RETURN R0 0  
 
 
-; Function #6:
-;
 ; Name:            
 ; Defined at line: 90
-; #Upvalues:       1
+; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
 ; Max Stack Size:  18
 
-  1 [-]: GETGLOBAL R2 K0        ; R2 := 0xbe190284
-  2 [-]: GETGLOBAL R3 K1        ; R3 := 0x3d106989
-  3 [-]: LOADK     R4 K2        ; R4 := "OnEventActivateChange isActivated="
-  4 [-]: GETGLOBAL R5 K3        ; R5 := 0x64fb1586
-  5 [-]: MOVE      R6 R1        ; R6 := R1
-  6 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-  7 [-]: CONCAT    R4 R4 R5     ; R4 := R4 .. R5
-  8 [-]: CALL      R3 2 1       ; R3(R4)
-  9 [-]: GETGLOBAL R3 K4        ; R3 := 0x89326c93
- 10 [-]: SELF      R3 R3 K5     ; R4 := R3; R3 := R3[0x18d05d30]
- 11 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 12 [-]: TEST      R3 0         ; if not R3 then PC := 69
- 13 [-]: JMP       69           ; PC := 69
- 14 [-]: TEST      R1 0         ; if not R1 then PC := 69
- 15 [-]: JMP       69           ; PC := 69
- 16 [-]: SELF      R3 R0 K6     ; R4 := R0; R3 := R0[0xd5a1ad5f]
- 17 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 18 [-]: SELF      R3 R3 K7     ; R4 := R3; R3 := R3[0x1ff0012a]
- 19 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 20 [-]: GETUPVAL  R4 U0        ; R4 := U0
- 21 [-]: SUB       R3 R3 R4     ; R3 := R3 - R4
- 22 [-]: GETGLOBAL R4 K8        ; R4 := 0x2d0fad09
- 23 [-]: LOADK     R5 K9        ; R5 := "Lotus.Interface.LotusUtilities"
- 24 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 25 [-]: GETGLOBAL R5 K10       ; R5 := _T
- 26 [-]: GETTABLE  R5 R5 K11    ; R5 := R5[0x8ee923fe]
- 27 [-]: LOADK     R6 K12       ; R6 := "PvpEventTimer"
- 28 [-]: GETTABLE  R7 R4 K13    ; R7 := R4["HT_TIMER"]
- 29 [-]: CONST     R8 0         ; R8 := 0.250000
- 30 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
- 31 [-]: GETTABLE  R6 R5 K14    ; R6 := R5[0xa9136b2f]
- 32 [-]: MOVE      R7 R0        ; R7 := R0
- 33 [-]: CALL      R7 1 2       ; R7 := R7()
- 34 [-]: SELF      R7 R7 K15    ; R8 := R7; R7 := R7[0x39406d2f]
- 35 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 36 [-]: SUB       R7 R7 R3     ; R7 := R7 - R3
- 37 [-]: LOADKB    R8 0 0       ; R8 := false
- 38 [-]: LOADKB    R9 1 0       ; R9 := true
- 39 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
- 40 [-]: SELF      R6 R0 K6     ; R7 := R0; R6 := R0[0xd5a1ad5f]
- 41 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 42 [-]: SELF      R6 R6 K16    ; R7 := R6; R6 := R6[0x6b9eebac]
- 43 [-]: LOADK     R8 K17       ; R8 := ""
- 44 [-]: GETTABLE  R9 R0 K18    ; R9 := R0["startTransRes"]
- 45 [-]: LOADKB    R10 1 0      ; R10 := true
- 46 [-]: CALL      R6 5 1       ; R6(R7,R8,R9,R10)
- 47 [-]: LOADK     R6 K19       ; R6 := "<p><font color=\"#FFFFFF\"> "
- 48 [-]: LOADK     R7 K20       ; R7 := "$$"
- 49 [-]: GETTABLE  R8 R0 K21    ; R8 := R0["pvpEventData"]
- 50 [-]: GETTABLE  R8 R8 K22    ; R8 := R8["mLocName"]
- 51 [-]: LOADK     R9 K20       ; R9 := "$$"
- 52 [-]: LOADK     R10 K23      ; R10 := " </font>"
- 53 [-]: LOADK     R11 K24      ; R11 := "</p>"
- 54 [-]: CONCAT    R6 R6 R11    ; R6 := R6 .. R7 .. R8 .. R9 .. R10 .. R11
- 55 [-]: GETGLOBAL R7 K25       ; R7 := 0xc8802016
- 56 [-]: GETGLOBAL R8 K4        ; R8 := 0x89326c93
- 57 [-]: SELF      R8 R8 K26    ; R9 := R8; R8 := R8[0x7d108ddb]
- 58 [-]: CALL      R8 2 0       ; R8,... := R8(R9)
- 59 [-]: CALL      R7 0 4       ; R7,R8,R9 := R7(R8,...)
- 60 [-]: JMP       67           ; PC := 67
- 61 [-]: SELF      R12 R2 K27   ; R13 := R2; R12 := R2[0x03b99283]
- 62 [-]: MOVE      R14 R11      ; R14 := R11
- 63 [-]: MOVE      R15 R6       ; R15 := R6
- 64 [-]: LOADK     R16 K17      ; R16 := ""
- 65 [-]: LOADK     R17 K17      ; R17 := ""
- 66 [-]: CALL      R12 6 1      ; R12(R13,R14,R15,R16,R17)
- 67 [-]: TFORLOOP  R7 2         ; R10,R11 :=  R7(R8,R9); if R10 ~= nil then begin PC = 61; R9 := R10 end
- 68 [-]: JMP       61           ; PC := 61
- 69 [-]: GETGLOBAL R12 K1       ; R12 := 0x3d106989
- 70 [-]: LOADK     R13 K28      ; R13 := "OnEventActivateChange fix up mode"
- 71 [-]: CALL      R12 2 1      ; R12(R13)
- 72 [-]: SELF      R12 R2 K29   ; R13 := R2; R12 := R2[0x7d73251e]
- 73 [-]: NOT       R14 R1       ; R14 :=  R1
- 74 [-]: CALL      R12 3 1      ; R12(R13,R14)
- 75 [-]: SELF      R12 R0 K6    ; R13 := R0; R12 := R0[0xd5a1ad5f]
- 76 [-]: CALL      R12 2 2      ; R12 := R12(R13)
- 77 [-]: NOT       R13 R1       ; R13 :=  R1
- 78 [-]: SETTABLE  R12 K30 R13  ; R12["defaultHUDHandling"] := R13
- 79 [-]: SELF      R12 R0 K6    ; R13 := R0; R12 := R0[0xd5a1ad5f]
- 80 [-]: CALL      R12 2 2      ; R12 := R12(R13)
- 81 [-]: SELF      R12 R12 K31  ; R13 := R12; R12 := R12[0x2827e3ee]
- 82 [-]: NOT       R14 R1       ; R14 :=  R1
- 83 [-]: CALL      R12 3 1      ; R12(R13,R14)
- 84 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R2 1 [nil]
+       1 [-]: GETIMPORT R3 3 [nil]
+       2 [-]: LOADK R5 K4 ["OnEventActivateChange isActivated="]
+       3 [-]: GETIMPORT R6 6 [nil]
+       4 [-]: MOVE R7 R1   
+       5 [-]: CALL R6 1 1  
+       6 [-]: CONCAT R4 R5 R6
+       7 [-]: CALL R3 1 0  
+       8 [-]: GETIMPORT R3 8 [nil]
+       9 [-]: NAMECALL R3 R3 K9 [0x18D05D30]
+      10 [-]: CALL R3 1 1  
+      11 [-]: JUMPIFNOT R3 L2
+      12 [-]: JUMPIFNOT R1 L2
+      13 [-]: NAMECALL R4 R0 K11 [0xD5A1AD5F]
+      14 [-]: CALL R4 1 1  
+      15 [-]: NAMECALL R4 R4 K12 [0x1FF0012A]
+      16 [-]: CALL R4 1 1  
+      17 [-]: SUBK R3 R4 K10 [30]
+      18 [-]: GETIMPORT R4 14 [nil]
+      19 [-]: LOADK R5 K15 ["Lotus.Interface.LotusUtilities"]
+      20 [-]: CALL R4 1 1  
+      21 [-]: GETIMPORT R5 18 [nil]
+      22 [-]: LOADK R6 K19 ["PvpEventTimer"]
+      23 [-]: GETTABLEKS R7 R4 K20 ["HT_TIMER"]
+      24 [-]: LOADK R8 K21 [0.25]
+      25 [-]: CALL R5 3 1  
+      26 [-]: GETTABLEKS R6 R5 K22 ["StartTimer"]
+      27 [-]: MOVE R8 R0   
+      28 [-]: CALL R8 0 1  
+      29 [-]: NAMECALL R8 R8 K23 [0x39406D2F]
+      30 [-]: CALL R8 1 1  
+      31 [-]: SUB R7 R8 R3 
+      32 [-]: LOADB R8 0   
+      33 [-]: LOADB R9 1   
+      34 [-]: CALL R6 3 0  
+      35 [-]: NAMECALL R6 R0 K11 [0xD5A1AD5F]
+      36 [-]: CALL R6 1 1  
+      37 [-]: LOADK R8 K24 [""]
+      38 [-]: GETTABLEKS R9 R0 K25 ["startTransRes"]
+      39 [-]: LOADB R10 1  
+      40 [-]: NAMECALL R6 R6 K26 [0x6B9EEBAC]
+      41 [-]: CALL R6 4 0  
+      42 [-]: LOADK R7 K27 ["<p><font color=\"#FFFFFF\"> "]
+      43 [-]: LOADK R8 K28 ["$$"]
+      44 [-]: GETTABLEKS R13 R0 K29 ["pvpEventData"]
+      45 [-]: GETTABLEKS R9 R13 K30 ["mLocName"]
+      46 [-]: LOADK R10 K28 ["$$"]
+      47 [-]: LOADK R11 K31 [" </font>"]
+      48 [-]: LOADK R12 K32 ["</p>"]
+      49 [-]: CONCAT R6 R7 R12
+      50 [-]: GETIMPORT R7 34 [nil]
+      51 [-]: GETIMPORT R8 8 [nil]
+      52 [-]: NAMECALL R8 R8 K35 [0x7D108DDB]
+      53 [-]: CALL R8 1 -1 
+      54 [-]: CALL R7 -1 3 
+      55 [-]: FORGPREP_INEXT R7 L1
+L 0:  56 [-]: MOVE R14 R11 
+      57 [-]: MOVE R15 R6  
+      58 [-]: LOADK R16 K24 [""]
+      59 [-]: LOADK R17 K24 [""]
+      60 [-]: NAMECALL R12 R2 K36 [0x03B99283]
+      61 [-]: CALL R12 5 0 
+L 1:  62 [-]: FORGLOOP R7 L0 2 [inext]
+L 2:  63 [-]: GETIMPORT R3 3 [nil]
+      64 [-]: LOADK R4 K37 ["OnEventActivateChange fix up mode"]
+      65 [-]: CALL R3 1 0  
+      66 [-]: NOT R5 R1    
+      67 [-]: NAMECALL R3 R2 K38 [0x7D73251E]
+      68 [-]: CALL R3 2 0  
+      69 [-]: NAMECALL R3 R0 K11 [0xD5A1AD5F]
+      70 [-]: CALL R3 1 1  
+      71 [-]: NOT R4 R1    
+      72 [-]: SETTABLEKS R4 R3 K39 ["defaultHUDHandling"]
+      73 [-]: NAMECALL R3 R0 K11 [0xD5A1AD5F]
+      74 [-]: CALL R3 1 1  
+      75 [-]: NOT R5 R1    
+      76 [-]: NAMECALL R3 R3 K40 [0x2827E3EE]
+      77 [-]: CALL R3 2 0  
+      78 [-]: RETURN R0 0  
+
 
 

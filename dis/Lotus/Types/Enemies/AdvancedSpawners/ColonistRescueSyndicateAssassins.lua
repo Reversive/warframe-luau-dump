@@ -1,50 +1,48 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
+; Is_vararg:       1
 ; Max Stack Size:  9
 
-  1 [-]: GETGLOBAL R0 K0        ; R0 := 0x7ed0a956
-  2 [-]: LOADK     R1 K1        ; R1 := "/Lotus/Types/Enemies/TennoReplicants/SyndicateAllies/ColonyRescueAllies/ColonistRescueBaseAvatar"
-  3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: GETGLOBAL R1 K2        ; R1 := 0x0469f296
-  5 [-]: LOADK     R2 K3        ; R2 := "ColonistRescueAvatar"
-  6 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  7 [-]: GETGLOBAL R2 K2        ; R2 := 0x0469f296
-  8 [-]: LOADK     R3 K4        ; R3 := "AdvancedAiDirSpawnId"
-  9 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 10 [-]: GETGLOBAL R3 K2        ; R3 := 0x0469f296
- 11 [-]: LOADK     R4 K5        ; R4 := "ColonistRescueMissionStatus"
- 12 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 13 [-]: GETGLOBAL R4 K6        ; R4 := 0x2d0fad09
- 14 [-]: LOADK     R5 K7        ; R5 := "Lotus.Interface.LotusUtilities"
- 15 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 16 [-]: NEWTABLE  R5 0 1       ; R5 := {}
- 17 [-]: NEWTABLE  R6 0 3       ; R6 := {}
- 18 [-]: SETTABLE  R6 K9 K10    ; R6["tag"] := "UnderFire"
- 19 [-]: SETTABLE  R6 K11 K12   ; R6["id"] := 35.000000
- 20 [-]: SETTABLE  R6 K13 K14   ; R6["event"] := "REDVEILATTACK"
- 21 [-]: SETTABLE  R5 K8 R6     ; R5["RedVeilAttack"] := R6
- 22 [-]: CLOSURE   R6 0         ; R6 := closure(Function #1)
- 23 [-]: CLOSURE   R7 1         ; R7 := closure(Function #2)
- 24 [-]: MOVE      R0 R4        ; R0 := R4
- 25 [-]: MOVE      R0 R6        ; R0 := R6
- 26 [-]: CLOSURE   R8 2         ; R8 := closure(Function #3)
- 27 [-]: MOVE      R0 R3        ; R0 := R3
- 28 [-]: MOVE      R0 R2        ; R0 := R2
- 29 [-]: MOVE      R0 R0        ; R0 := R0
- 30 [-]: MOVE      R0 R1        ; R0 := R1
- 31 [-]: MOVE      R0 R7        ; R0 := R7
- 32 [-]: MOVE      R0 R5        ; R0 := R5
- 33 [-]: SETGLOBAL R8 K15       ; ColonistRescueCustomSyndicateAssassin := R8
- 34 [-]: RETURN    R0 1         ; return 
+            1 [-]: GETIMPORT R0 1 [nil]
+       2 [-]: LOADK R1 K2 ["/Lotus/Types/Enemies/TennoReplicants/SyndicateAllies/ColonyRescueAllies/ColonistRescueBaseAvatar"]
+       3 [-]: CALL R0 1 1  
+       4 [-]: GETIMPORT R1 4 [nil]
+       5 [-]: LOADK R2 K5 ["ColonistRescueAvatar"]
+       6 [-]: CALL R1 1 1  
+       7 [-]: GETIMPORT R2 4 [nil]
+       8 [-]: LOADK R3 K6 ["AdvancedAiDirSpawnId"]
+       9 [-]: CALL R2 1 1  
+      10 [-]: GETIMPORT R3 4 [nil]
+      11 [-]: LOADK R4 K7 ["ColonistRescueMissionStatus"]
+      12 [-]: CALL R3 1 1  
+      13 [-]: GETIMPORT R4 9 [nil]
+      14 [-]: LOADK R5 K10 ["Lotus.Interface.LotusUtilities"]
+      15 [-]: CALL R4 1 1  
+      16 [-]: NEWTABLE R5 1 0
+      17 [-]: DUPTABLE R6 14
+      18 [-]: LOADK R7 K15 ["UnderFire"]
+      19 [-]: SETTABLEKS R7 R6 K11 ["tag"]
+      20 [-]: LOADN R7 35  
+      21 [-]: SETTABLEKS R7 R6 K12 ["id"]
+      22 [-]: LOADK R7 K16 ["REDVEILATTACK"]
+      23 [-]: SETTABLEKS R7 R6 K13 ["event"]
+      24 [-]: SETTABLEKS R6 R5 K17 ["RedVeilAttack"]
+      25 [-]: DUPCLOSURE R6 K18 []
+      26 [-]: DUPCLOSURE R7 K19 []
+      27 [-]: MOVE R0 R4   
+      28 [-]: DUPCLOSURE R8 K20 []
+      29 [-]: MOVE R0 R3   
+      30 [-]: MOVE R0 R2   
+      31 [-]: MOVE R0 R0   
+      32 [-]: MOVE R0 R1   
+      33 [-]: MOVE R0 R7   
+      34 [-]: MOVE R0 R5   
+      35 [-]: SETGLOBAL R8 K21 ["ColonistRescueCustomSyndicateAssassin"]
+      36 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 23
 ; #Upvalues:       0
@@ -52,251 +50,257 @@
 ; Is_vararg:       0
 ; Max Stack Size:  7
 
-  1 [-]: GETGLOBAL R2 K0        ; R2 := 0x7b998233
-  2 [-]: MOVE      R3 R0        ; R3 := R0
-  3 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  4 [-]: TEST      R2 1         ; if R2 then PC := 17
-  5 [-]: JMP       17           ; PC := 17
-  6 [-]: SELF      R2 R0 K1     ; R3 := R0; R2 := R0[0xfa9e477f]
-  7 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  8 [-]: GETTABLE  R3 R1 K2     ; R3 := R1["id"]
-  9 [-]: GETGLOBAL R4 K0        ; R4 := 0x7b998233
- 10 [-]: MOVE      R5 R2        ; R5 := R2
- 11 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 12 [-]: TEST      R4 1         ; if R4 then PC := 17
- 13 [-]: JMP       17           ; PC := 17
- 14 [-]: SELF      R4 R2 K3     ; R5 := R2; R4 := R2[0x31a3964d]
- 15 [-]: MOVE      R6 R3        ; R6 := R3
- 16 [-]: CALL      R4 3 1       ; R4(R5,R6)
- 17 [-]: RETURN    R0 1         ; return 
+       0 [-]: FASTCALL1 62 R0 L0
+       1 [-]: MOVE R3 R0   
+       2 [-]: GETIMPORT R2 1 [nil]
+       3 [-]: CALL R2 1 1  
+L 0:   4 [-]: JUMPIF R2 L2 
+       5 [-]: NAMECALL R2 R0 K2 [0xFA9E477F]
+       6 [-]: CALL R2 1 1  
+       7 [-]: GETTABLEKS R3 R1 K3 ["id"]
+       8 [-]: FASTCALL1 62 R2 L1
+       9 [-]: MOVE R5 R2   
+      10 [-]: GETIMPORT R4 1 [nil]
+      11 [-]: CALL R4 1 1  
+L 1:  12 [-]: JUMPIF R4 L2 
+      13 [-]: MOVE R6 R3   
+      14 [-]: NAMECALL R4 R2 K4 [0x31A3964D]
+      15 [-]: CALL R4 2 0  
+L 2:  16 [-]: RETURN R0 0  
 
 
-; Function #2:
-;
 ; Name:            
 ; Defined at line: 34
-; #Upvalues:       2
+; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
-; Max Stack Size:  15
+; Max Stack Size:  14
 
-  1 [-]: TEST      R1 0         ; if not R1 then PC := 11
-  2 [-]: JMP       11           ; PC := 11
-  3 [-]: GETGLOBAL R2 K0        ; R2 := 0xcbd666e1
-  4 [-]: LOADK     R3 K1        ; R3 := 0.200000
-  5 [-]: CALL      R2 2 1       ; R2(R3)
-  6 [-]: GETUPVAL  R2 U0        ; R2 := U0
-  7 [-]: GETTABLE  R2 R2 K2     ; R2 := R2[0x0deacd54]
-  8 [-]: CALL      R2 1 2       ; R2 := R2()
-  9 [-]: TEST      R2 1         ; if R2 then PC := 3
- 10 [-]: JMP       3            ; PC := 3
- 11 [-]: GETGLOBAL R2 K3        ; R2 := 0x7ed0a956
- 12 [-]: LOADK     R3 K4        ; R3 := "/Lotus/Types/Enemies/TennoReplicants/SyndicateAllies/ColonyRescueAllies/ColonistRescueBaseAvatar"
- 13 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 14 [-]: GETGLOBAL R3 K5        ; R3 := 0x89326c93
- 15 [-]: SELF      R3 R3 K6     ; R4 := R3; R3 := R3[0xfb669000]
- 16 [-]: MOVE      R5 R2        ; R5 := R2
- 17 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
- 18 [-]: MOVE      R4 R3        ; R4 := R3
- 19 [-]: LEN       R5 R3        ; R5 := # R3
- 20 [-]: CONST     R6 1         ; R6 := 1.000000
- 21 [-]: CONST     R7 -1        ; R7 := -1.000000
- 22 [-]: FORPREP   R5 42        ; R5 -= R7; PC := 42
- 23 [-]: GETTABLE  R9 R3 R8     ; R9 := R3[R8]
- 24 [-]: SELF      R9 R9 K7     ; R10 := R9; R9 := R9[0xd1586535]
- 25 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 26 [-]: GETGLOBAL R10 K5       ; R10 := 0x89326c93
- 27 [-]: SELF      R10 R10 K8   ; R11 := R10; R10 := R10[0x4e5939a5]
- 28 [-]: GETGLOBAL R12 K9       ; R12 := gTennoAvatarType
- 29 [-]: MOVE      R13 R9       ; R13 := R9
- 30 [-]: CONST     R14 50       ; R14 := 50.000000
- 31 [-]: CALL      R10 5 2      ; R10 := R10(R11,R12,R13,R14)
- 32 [-]: GETGLOBAL R11 K10      ; R11 := 0x7b998233
- 33 [-]: MOVE      R12 R10      ; R12 := R10
- 34 [-]: CALL      R11 2 2      ; R11 := R11(R12)
- 35 [-]: TEST      R11 0        ; if not R11 then PC := 42
- 36 [-]: JMP       42           ; PC := 42
- 37 [-]: GETGLOBAL R11 K11      ; R11 := 0x33bdd652
- 38 [-]: GETTABLE  R11 R11 K12  ; R11 := R11[0x9c1f3b5a]
- 39 [-]: MOVE      R12 R3       ; R12 := R3
- 40 [-]: MOVE      R13 R8       ; R13 := R8
- 41 [-]: CALL      R11 3 1      ; R11(R12,R13)
- 42 [-]: FORLOOP   R5 23        ; R5 += R7; if R5 <= R6 then begin PC := 23; R8 := R5 end
- 43 [-]: GETGLOBAL R11 K10      ; R11 := 0x7b998233
- 44 [-]: MOVE      R12 R3       ; R12 := R3
- 45 [-]: CALL      R11 2 2      ; R11 := R11(R12)
- 46 [-]: TEST      R11 1        ; if R11 then PC := 51
- 47 [-]: JMP       51           ; PC := 51
- 48 [-]: LEN       R11 R3       ; R11 := # R3
- 49 [-]: EQ        0 R11 K13    ; if R11 ~= 0.000000 then PC := 52
- 50 [-]: JMP       52           ; PC := 52
- 51 [-]: MOVE      R3 R4        ; R3 := R4
- 52 [-]: GETGLOBAL R11 K10      ; R11 := 0x7b998233
- 53 [-]: MOVE      R12 R3       ; R12 := R3
- 54 [-]: CALL      R11 2 2      ; R11 := R11(R12)
- 55 [-]: TEST      R11 1        ; if R11 then PC := 65
- 56 [-]: JMP       65           ; PC := 65
- 57 [-]: GETGLOBAL R11 K14      ; R11 := 0x55730e1a
- 58 [-]: CONST     R12 1        ; R12 := 1.000000
- 59 [-]: LEN       R13 R3       ; R13 := # R3
- 60 [-]: CALL      R11 3 2      ; R11 := R11(R12,R13)
- 61 [-]: GETUPVAL  R12 U1       ; R12 := U1
- 62 [-]: GETTABLE  R13 R3 R11   ; R13 := R3[R11]
- 63 [-]: MOVE      R14 R0       ; R14 := R0
- 64 [-]: CALL      R12 3 1      ; R12(R13,R14)
- 65 [-]: RETURN    R0 1         ; return 
+       0 [-]: JUMPIFNOT R1 L1
+L 0:   1 [-]: GETIMPORT R2 1 [nil]
+       2 [-]: LOADK R3 K2 [0.20000000000000001]
+       3 [-]: CALL R2 1 0  
+       4 [-]: GETUPVAL R3 0
+       5 [-]: GETTABLEKS R2 R3 K3 [0x0DEACD54]
+       6 [-]: CALL R2 0 1  
+       7 [-]: JUMPIFNOT R2 L1
+       8 [-]: JUMPBACK L0  
+L 1:   9 [-]: GETIMPORT R2 5 [nil]
+      10 [-]: LOADK R3 K6 ["/Lotus/Types/Enemies/TennoReplicants/SyndicateAllies/ColonyRescueAllies/ColonistRescueBaseAvatar"]
+      11 [-]: CALL R2 1 1  
+      12 [-]: GETIMPORT R3 8 [nil]
+      13 [-]: MOVE R5 R2   
+      14 [-]: NAMECALL R3 R3 K9 [0xFB669000]
+      15 [-]: CALL R3 2 1  
+      16 [-]: MOVE R4 R3   
+      17 [-]: LENGTH R7 R3 
+      18 [-]: LOADN R5 1   
+      19 [-]: LOADN R6 -1  
+      20 [-]: FORNPREP R5 L5
+L 2:  21 [-]: GETTABLE R8 R3 R7
+      22 [-]: NAMECALL R8 R8 K10 [0xD1586535]
+      23 [-]: CALL R8 1 1  
+      24 [-]: GETIMPORT R9 8 [nil]
+      25 [-]: GETIMPORT R11 12 [nil]
+      26 [-]: MOVE R12 R8  
+      27 [-]: LOADN R13 50 
+      28 [-]: NAMECALL R9 R9 K13 [0x4E5939A5]
+      29 [-]: CALL R9 4 1  
+      30 [-]: FASTCALL1 62 R9 L3
+      31 [-]: MOVE R11 R9  
+      32 [-]: GETIMPORT R10 15 [nil]
+      33 [-]: CALL R10 1 1 
+L 3:  34 [-]: JUMPIFNOT R10 L4
+      35 [-]: GETIMPORT R10 18 [nil]
+      36 [-]: MOVE R11 R3  
+      37 [-]: MOVE R12 R7  
+      38 [-]: CALL R10 2 0 
+L 4:  39 [-]: FORNLOOP R5 L2
+L 5:  40 [-]: FASTCALL1 62 R3 L6
+      41 [-]: MOVE R6 R3   
+      42 [-]: GETIMPORT R5 15 [nil]
+      43 [-]: CALL R5 1 1  
+L 6:  44 [-]: JUMPIF R5 L7 
+      45 [-]: LENGTH R5 R3 
+      46 [-]: JUMPXEQKN R5 K19 L8 NOT [0]
+L 7:  47 [-]: MOVE R3 R4   
+L 8:  48 [-]: FASTCALL1 62 R3 L9
+      49 [-]: MOVE R6 R3   
+      50 [-]: GETIMPORT R5 15 [nil]
+      51 [-]: CALL R5 1 1  
+L 9:  52 [-]: JUMPIF R5 L12
+      53 [-]: GETIMPORT R5 21 [nil]
+      54 [-]: LOADN R6 1   
+      55 [-]: LENGTH R7 R3 
+      56 [-]: CALL R5 2 1  
+      57 [-]: GETTABLE R6 R3 R5
+      58 [-]: FASTCALL1 62 R6 L10
+      59 [-]: MOVE R8 R6   
+      60 [-]: GETIMPORT R7 15 [nil]
+      61 [-]: CALL R7 1 1  
+L10:  62 [-]: JUMPIF R7 L12
+      63 [-]: NAMECALL R7 R6 K22 [0xFA9E477F]
+      64 [-]: CALL R7 1 1  
+      65 [-]: GETTABLEKS R8 R0 K23 ["id"]
+      66 [-]: FASTCALL1 62 R7 L11
+      67 [-]: MOVE R10 R7  
+      68 [-]: GETIMPORT R9 15 [nil]
+      69 [-]: CALL R9 1 1  
+L11:  70 [-]: JUMPIF R9 L12
+      71 [-]: MOVE R11 R8  
+      72 [-]: NAMECALL R9 R7 K24 [0x31A3964D]
+      73 [-]: CALL R9 2 0  
+L12:  74 [-]: RETURN R0 0  
 
 
-; Function #3:
-;
 ; Name:            
 ; Defined at line: 60
 ; #Upvalues:       6
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  18
+; Max Stack Size:  14
 
-  1 [-]: GETGLOBAL R1 K0        ; R1 := 0xbe190284
-  2 [-]: SELF      R2 R1 K1     ; R3 := R1; R2 := R1[0x0eb34c69]
-  3 [-]: GETUPVAL  R4 U0        ; R4 := U0
-  4 [-]: CONST     R5 0         ; R5 := 0.000000
-  5 [-]: CALL      R2 4 2       ; R2 := R2(R3,R4,R5)
-  6 [-]: LT        0 R2 K2      ; if R2 >= 2.000000 then PC := 142
-  7 [-]: JMP       142          ; PC := 142
-  8 [-]: LOADKB    R3 0 0       ; R3 := false
-  9 [-]: CONST     R4 0         ; R4 := 0.000000
- 10 [-]: TEST      R3 1         ; if R3 then PC := 32
- 11 [-]: JMP       32           ; PC := 32
- 12 [-]: SELF      R5 R1 K1     ; R6 := R1; R5 := R1[0x0eb34c69]
- 13 [-]: GETUPVAL  R7 U1        ; R7 := U1
- 14 [-]: CONST     R8 0         ; R8 := 0.000000
- 15 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
- 16 [-]: MOVE      R4 R5        ; R4 := R5
- 17 [-]: CONST     R5 1         ; R5 := 1.000000
- 18 [-]: GETGLOBAL R6 K3        ; R6 := 0x4078c0ee
- 19 [-]: LEN       R6 R6        ; R6 := # R6
- 20 [-]: CONST     R7 1         ; R7 := 1.000000
- 21 [-]: FORPREP   R5 27        ; R5 -= R7; PC := 27
- 22 [-]: GETGLOBAL R9 K3        ; R9 := 0x4078c0ee
- 23 [-]: GETTABLE  R9 R9 R8     ; R9 := R9[R8]
- 24 [-]: EQ        0 R4 R9      ; if R4 ~= R9 then PC := 27
- 25 [-]: JMP       27           ; PC := 27
- 26 [-]: LOADKB    R3 1 0       ; R3 := true
- 27 [-]: FORLOOP   R5 22        ; R5 += R7; if R5 <= R6 then begin PC := 22; R8 := R5 end
- 28 [-]: GETGLOBAL R9 K4        ; R9 := 0xcbd666e1
- 29 [-]: CONST     R10 1        ; R10 := 1.000000
- 30 [-]: CALL      R9 2 1       ; R9(R10)
- 31 [-]: JMP       10           ; PC := 10
- 32 [-]: GETGLOBAL R9 K4        ; R9 := 0xcbd666e1
- 33 [-]: CONST     R10 10       ; R10 := 10.000000
- 34 [-]: CALL      R9 2 1       ; R9(R10)
- 35 [-]: GETGLOBAL R9 K5        ; R9 := 0x89326c93
- 36 [-]: SELF      R9 R9 K6     ; R10 := R9; R9 := R9[0xc7fcada9]
- 37 [-]: GETGLOBAL R11 K7       ; R11 := 0x0469f296
- 38 [-]: LOADK     R12 K8       ; R12 := "RedVeilBoss"
- 39 [-]: CALL      R11 2 0      ; R11,... := R11(R12)
- 40 [-]: CALL      R9 0 2       ; R9 := R9(R10,...)
- 41 [-]: GETGLOBAL R10 K5       ; R10 := 0x89326c93
- 42 [-]: SELF      R10 R10 K9   ; R11 := R10; R10 := R10[0x46a0ebf5]
- 43 [-]: GETGLOBAL R12 K7       ; R12 := 0x0469f296
- 44 [-]: LOADK     R13 K10      ; R13 := "ColonistRescueDefVol"
- 45 [-]: CALL      R12 2 0      ; R12,... := R12(R13)
- 46 [-]: CALL      R10 0 2      ; R10 := R10(R11,...)
- 47 [-]: GETGLOBAL R11 K5       ; R11 := 0x89326c93
- 48 [-]: SELF      R11 R11 K11  ; R12 := R11; R11 := R11[0x61be252a]
- 49 [-]: CALL      R11 2 2      ; R11 := R11(R12)
- 50 [-]: GETGLOBAL R12 K12      ; R12 := 0x9ba7909f
- 51 [-]: SELF      R12 R12 K13  ; R13 := R12; R12 := R12[0x8151451d]
- 52 [-]: LOADK     R14 K14      ; R14 := "Server.NumVirtualTestClients"
- 53 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
- 54 [-]: ADD       R11 R11 R12  ; R11 := R11 + R12
- 55 [-]: SELF      R12 R0 K15   ; R13 := R0; R12 := R0[0x6189cb44]
- 56 [-]: CALL      R12 2 2      ; R12 := R12(R13)
- 57 [-]: GETGLOBAL R13 K16      ; R13 := 0x7b998233
- 58 [-]: MOVE      R14 R12      ; R14 := R12
- 59 [-]: CALL      R13 2 2      ; R13 := R13(R14)
- 60 [-]: TEST      R13 1        ; if R13 then PC := 65
- 61 [-]: JMP       65           ; PC := 65
- 62 [-]: LEN       R13 R12      ; R13 := # R12
- 63 [-]: LT        0 R13 K17    ; if R13 >= 1.000000 then PC := 66
- 64 [-]: JMP       66           ; PC := 66
- 65 [-]: RETURN    R0 1         ; return 
- 66 [-]: GETGLOBAL R13 K16      ; R13 := 0x7b998233
- 67 [-]: MOVE      R14 R9       ; R14 := R9
- 68 [-]: CALL      R13 2 2      ; R13 := R13(R14)
- 69 [-]: TEST      R13 1        ; if R13 then PC := 130
- 70 [-]: JMP       130          ; PC := 130
- 71 [-]: GETGLOBAL R13 K16      ; R13 := 0x7b998233
- 72 [-]: GETTABLE  R14 R9 K17   ; R14 := R9[1.000000]
- 73 [-]: CALL      R13 2 2      ; R13 := R13(R14)
- 74 [-]: TEST      R13 1        ; if R13 then PC := 130
- 75 [-]: JMP       130          ; PC := 130
- 76 [-]: GETGLOBAL R13 K18      ; R13 := _T
- 77 [-]: SETTABLE  R13 K19 K20  ; R13["CustomSyndicateAssassinIdx"] := 5.000000
- 78 [-]: GETGLOBAL R13 K21      ; R13 := 0x5bced4c4
- 79 [-]: GETTABLE  R13 R13 K22  ; R13 := R13[0xac1b386a]
- 80 [-]: CONST     R14 3        ; R14 := 3.000000
- 81 [-]: MOVE      R15 R11      ; R15 := R11
- 82 [-]: CALL      R13 3 2      ; R13 := R13(R14,R15)
- 83 [-]: ADD       R13 K2 R13   ; R13 := 2.000000 + R13
- 84 [-]: GETGLOBAL R14 K3       ; R14 := 0x4078c0ee
- 85 [-]: GETTABLE  R14 R14 K17  ; R14 := R14[1.000000]
- 86 [-]: EQ        1 R4 R14     ; if R4 == R14 then PC := 94
- 87 [-]: JMP       94           ; PC := 94
- 88 [-]: GETGLOBAL R14 K21      ; R14 := 0x5bced4c4
- 89 [-]: GETTABLE  R14 R14 K22  ; R14 := R14[0xac1b386a]
- 90 [-]: CONST     R15 3        ; R15 := 3.000000
- 91 [-]: MOVE      R16 R11      ; R16 := R11
- 92 [-]: CALL      R14 3 2      ; R14 := R14(R15,R16)
- 93 [-]: ADD       R13 R13 R14  ; R13 := R13 + R14
- 94 [-]: GETGLOBAL R14 K18      ; R14 := _T
- 95 [-]: SETTABLE  R14 K23 R13  ; R14["CustomSyndicateAssassinCount"] := R13
- 96 [-]: GETGLOBAL R14 K18      ; R14 := _T
- 97 [-]: SETTABLE  R14 K24 R12  ; R14["CustomSyndicateAssassinAgents"] := R12
- 98 [-]: GETGLOBAL R14 K18      ; R14 := _T
- 99 [-]: GETGLOBAL R15 K26      ; R15 := 0xcc3139af
-100 [-]: SETTABLE  R14 K25 R15  ; R14["CustomSyndicateAssassinTransmission"] := R15
-101 [-]: GETGLOBAL R14 K18      ; R14 := _T
-102 [-]: GETGLOBAL R15 K28      ; R15 := 0xfba359e6
-103 [-]: SETTABLE  R14 K27 R15  ; R14["CustomSyndicateAssassinColorCorrection"] := R15
-104 [-]: GETGLOBAL R14 K18      ; R14 := _T
-105 [-]: GETGLOBAL R15 K30      ; R15 := 0xacc765c0
-106 [-]: SETTABLE  R14 K29 R15  ; R14["CustomSyndicateAssassinSpawnIn"] := R15
-107 [-]: GETGLOBAL R14 K18      ; R14 := _T
-108 [-]: GETGLOBAL R15 K32      ; R15 := 0x7c9394ea
-109 [-]: SETTABLE  R14 K31 R15  ; R14["CustomSyndicateAssassinTease"] := R15
-110 [-]: GETGLOBAL R14 K18      ; R14 := _T
-111 [-]: GETGLOBAL R15 K34      ; R15 := 0x1eec0d5e
-112 [-]: SETTABLE  R14 K33 R15  ; R14["CustomSyndicateAssassinMusic"] := R15
-113 [-]: GETGLOBAL R14 K18      ; R14 := _T
-114 [-]: SETTABLE  R14 K35 R10  ; R14["CustomSyndicateAssassinSpawnNearEntity"] := R10
-115 [-]: GETGLOBAL R14 K18      ; R14 := _T
-116 [-]: GETUPVAL  R15 U2       ; R15 := U2
-117 [-]: SETTABLE  R14 K36 R15  ; R14["CustomSyndicateAssassinPersistentTargetType"] := R15
-118 [-]: GETGLOBAL R14 K18      ; R14 := _T
-119 [-]: GETUPVAL  R15 U3       ; R15 := U3
-120 [-]: SETTABLE  R14 K37 R15  ; R14["CustomSyndicateAssassinPersistentTargetTag"] := R15
-121 [-]: GETTABLE  R14 R9 K17   ; R14 := R9[1.000000]
-122 [-]: SELF      R14 R14 K38  ; R15 := R14; R14 := R14[0x8eb2112d]
-123 [-]: LOADK     R16 K39      ; R16 := "Execute"
-124 [-]: CALL      R14 3 1      ; R14(R15,R16)
-125 [-]: GETUPVAL  R14 U4       ; R14 := U4
-126 [-]: GETUPVAL  R15 U5       ; R15 := U5
-127 [-]: GETTABLE  R15 R15 K40  ; R15 := R15["RedVeilAttack"]
-128 [-]: LOADKB    R16 1 0      ; R16 := true
-129 [-]: CALL      R14 3 1      ; R14(R15,R16)
-130 [-]: SELF      R14 R1 K41   ; R15 := R1; R14 := R1[0x751f061d]
-131 [-]: GETUPVAL  R16 U1       ; R16 := U1
-132 [-]: CONST     R17 0        ; R17 := 0.000000
-133 [-]: CALL      R14 4 1      ; R14(R15,R16,R17)
-134 [-]: GETGLOBAL R14 K4       ; R14 := 0xcbd666e1
-135 [-]: CONST     R15 10       ; R15 := 10.000000
-136 [-]: CALL      R14 2 1      ; R14(R15)
-137 [-]: SELF      R14 R1 K1    ; R15 := R1; R14 := R1[0x0eb34c69]
-138 [-]: GETUPVAL  R16 U0       ; R16 := U0
-139 [-]: CALL      R14 3 2      ; R14 := R14(R15,R16)
-140 [-]: MOVE      R2 R14       ; R2 := R14
-141 [-]: JMP       6            ; PC := 6
-142 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R1 1 [nil]
+       1 [-]: GETUPVAL R4 0
+       2 [-]: LOADN R5 0   
+       3 [-]: NAMECALL R2 R1 K2 [0x0EB34C69]
+       4 [-]: CALL R2 3 1  
+L 0:   5 [-]: LOADN R3 2   
+       6 [-]: JUMPIFNOTLT R2 R3 L15
+       7 [-]: LOADB R3 0   
+       8 [-]: LOADN R4 0   
+L 1:   9 [-]: JUMPIF R3 L5 
+      10 [-]: GETUPVAL R7 1
+      11 [-]: LOADN R8 0   
+      12 [-]: NAMECALL R5 R1 K2 [0x0EB34C69]
+      13 [-]: CALL R5 3 1  
+      14 [-]: MOVE R4 R5   
+      15 [-]: LOADN R7 1   
+      16 [-]: GETIMPORT R8 4 [nil]
+      17 [-]: LENGTH R5 R8 
+      18 [-]: LOADN R6 1   
+      19 [-]: FORNPREP R5 L4
+L 2:  20 [-]: GETIMPORT R9 4 [nil]
+      21 [-]: GETTABLE R8 R9 R7
+      22 [-]: JUMPIFNOTEQ R4 R8 L3
+      23 [-]: LOADB R3 1   
+L 3:  24 [-]: FORNLOOP R5 L2
+L 4:  25 [-]: GETIMPORT R5 6 [nil]
+      26 [-]: LOADN R6 1   
+      27 [-]: CALL R5 1 0  
+      28 [-]: JUMPBACK L1  
+L 5:  29 [-]: GETIMPORT R5 6 [nil]
+      30 [-]: LOADN R6 10  
+      31 [-]: CALL R5 1 0  
+      32 [-]: GETIMPORT R5 8 [nil]
+      33 [-]: GETIMPORT R7 10 [nil]
+      34 [-]: LOADK R8 K11 ["RedVeilBoss"]
+      35 [-]: CALL R7 1 -1 
+      36 [-]: NAMECALL R5 R5 K12 [0xC7FCADA9]
+      37 [-]: CALL R5 -1 1 
+      38 [-]: GETIMPORT R6 8 [nil]
+      39 [-]: GETIMPORT R8 10 [nil]
+      40 [-]: LOADK R9 K13 ["ColonistRescueDefVol"]
+      41 [-]: CALL R8 1 -1 
+      42 [-]: NAMECALL R6 R6 K14 [0x46A0EBF5]
+      43 [-]: CALL R6 -1 1 
+      44 [-]: GETIMPORT R8 8 [nil]
+      45 [-]: NAMECALL R8 R8 K15 [0x61BE252A]
+      46 [-]: CALL R8 1 1  
+      47 [-]: GETIMPORT R9 17 [nil]
+      48 [-]: LOADK R11 K18 ["Server.NumVirtualTestClients"]
+      49 [-]: NAMECALL R9 R9 K19 [0x8151451D]
+      50 [-]: CALL R9 2 1  
+      51 [-]: ADD R7 R8 R9 
+      52 [-]: NAMECALL R8 R0 K20 [0x6189CB44]
+      53 [-]: CALL R8 1 1  
+      54 [-]: FASTCALL1 62 R8 L6
+      55 [-]: MOVE R10 R8  
+      56 [-]: GETIMPORT R9 22 [nil]
+      57 [-]: CALL R9 1 1  
+L 6:  58 [-]: JUMPIF R9 L7 
+      59 [-]: LENGTH R9 R8 
+      60 [-]: LOADN R10 1  
+      61 [-]: JUMPIFNOTLT R9 R10 L8
+L 7:  62 [-]: RETURN R0 0  
+L 8:  63 [-]: FASTCALL1 62 R5 L9
+      64 [-]: MOVE R10 R5  
+      65 [-]: GETIMPORT R9 22 [nil]
+      66 [-]: CALL R9 1 1  
+L 9:  67 [-]: JUMPIF R9 L14
+      68 [-]: GETTABLEN R10 R5 1
+      69 [-]: FASTCALL1 62 R10 L10
+      70 [-]: GETIMPORT R9 22 [nil]
+      71 [-]: CALL R9 1 1  
+L10:  72 [-]: JUMPIF R9 L14
+      73 [-]: GETIMPORT R9 24 [nil]
+      74 [-]: LOADN R10 5  
+      75 [-]: SETTABLEKS R10 R9 K25 ["CustomSyndicateAssassinIdx"]
+      76 [-]: LOADN R10 2  
+      77 [-]: LOADN R12 3  
+      78 [-]: FASTCALL2 19 R12 R7 L11
+      79 [-]: MOVE R13 R7  
+      80 [-]: GETIMPORT R11 28 [nil]
+      81 [-]: CALL R11 2 1 
+L11:  82 [-]: ADD R9 R10 R11
+      83 [-]: GETIMPORT R11 4 [nil]
+      84 [-]: GETTABLEN R10 R11 1
+      85 [-]: JUMPIFEQ R4 R10 L13
+      86 [-]: LOADN R11 3  
+      87 [-]: FASTCALL2 19 R11 R7 L12
+      88 [-]: MOVE R12 R7  
+      89 [-]: GETIMPORT R10 28 [nil]
+      90 [-]: CALL R10 2 1 
+L12:  91 [-]: ADD R9 R9 R10
+L13:  92 [-]: GETIMPORT R10 24 [nil]
+      93 [-]: SETTABLEKS R9 R10 K29 ["CustomSyndicateAssassinCount"]
+      94 [-]: GETIMPORT R10 24 [nil]
+      95 [-]: SETTABLEKS R8 R10 K30 ["CustomSyndicateAssassinAgents"]
+      96 [-]: GETIMPORT R10 24 [nil]
+      97 [-]: GETIMPORT R11 32 [nil]
+      98 [-]: SETTABLEKS R11 R10 K33 ["CustomSyndicateAssassinTransmission"]
+      99 [-]: GETIMPORT R10 24 [nil]
+     100 [-]: GETIMPORT R11 35 [nil]
+     101 [-]: SETTABLEKS R11 R10 K36 ["CustomSyndicateAssassinColorCorrection"]
+     102 [-]: GETIMPORT R10 24 [nil]
+     103 [-]: GETIMPORT R11 38 [nil]
+     104 [-]: SETTABLEKS R11 R10 K39 ["CustomSyndicateAssassinSpawnIn"]
+     105 [-]: GETIMPORT R10 24 [nil]
+     106 [-]: GETIMPORT R11 41 [nil]
+     107 [-]: SETTABLEKS R11 R10 K42 ["CustomSyndicateAssassinTease"]
+     108 [-]: GETIMPORT R10 24 [nil]
+     109 [-]: GETIMPORT R11 44 [nil]
+     110 [-]: SETTABLEKS R11 R10 K45 ["CustomSyndicateAssassinMusic"]
+     111 [-]: GETIMPORT R10 24 [nil]
+     112 [-]: SETTABLEKS R6 R10 K46 ["CustomSyndicateAssassinSpawnNearEntity"]
+     113 [-]: GETIMPORT R10 24 [nil]
+     114 [-]: GETUPVAL R11 2
+     115 [-]: SETTABLEKS R11 R10 K47 ["CustomSyndicateAssassinPersistentTargetType"]
+     116 [-]: GETIMPORT R10 24 [nil]
+     117 [-]: GETUPVAL R11 3
+     118 [-]: SETTABLEKS R11 R10 K48 ["CustomSyndicateAssassinPersistentTargetTag"]
+     119 [-]: GETTABLEN R10 R5 1
+     120 [-]: LOADK R12 K49 ["Execute"]
+     121 [-]: NAMECALL R10 R10 K50 [0x8EB2112D]
+     122 [-]: CALL R10 2 0 
+     123 [-]: GETUPVAL R10 4
+     124 [-]: GETUPVAL R12 5
+     125 [-]: GETTABLEKS R11 R12 K51 ["RedVeilAttack"]
+     126 [-]: LOADB R12 1  
+     127 [-]: CALL R10 2 0 
+L14: 128 [-]: GETUPVAL R11 1
+     129 [-]: LOADN R12 0  
+     130 [-]: NAMECALL R9 R1 K52 [0x751F061D]
+     131 [-]: CALL R9 3 0  
+     132 [-]: GETIMPORT R9 6 [nil]
+     133 [-]: LOADN R10 10 
+     134 [-]: CALL R9 1 0  
+     135 [-]: GETUPVAL R11 0
+     136 [-]: NAMECALL R9 R1 K2 [0x0EB34C69]
+     137 [-]: CALL R9 2 1  
+     138 [-]: MOVE R2 R9   
+     139 [-]: JUMPBACK L0  
+L15: 140 [-]: RETURN R0 0  
+
 
 

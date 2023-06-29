@@ -1,34 +1,29 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
+; Is_vararg:       1
 ; Max Stack Size:  3
 
-  1 [-]: GETGLOBAL R0 K0        ; R0 := 0xaeabecda
-  2 [-]: VARARG    R1 R2        ; R1 := R2 := ...
-  3 [-]: GETGLOBAL R2 K1        ; R2 := package
-  4 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["seeall"]
-  5 [-]: CALL      R0 3 1       ; R0(R1,R2)
-  6 [-]: CLOSURE   R0 0         ; R0 := closure(Function #1)
-  7 [-]: SETGLOBAL R0 K3        ; CreateUserData := R0
-  8 [-]: CLOSURE   R0 1         ; R0 := closure(Function #2)
-  9 [-]: SETGLOBAL R0 K4        ; DestroyUserData := R0
- 10 [-]: CLOSURE   R0 2         ; R0 := closure(Function #3)
- 11 [-]: SETGLOBAL R0 K5        ; GetUserData := R0
- 12 [-]: CLOSURE   R0 3         ; R0 := closure(Function #4)
- 13 [-]: CLOSURE   R1 4         ; R1 := closure(Function #5)
- 14 [-]: CLOSURE   R2 5         ; R2 := closure(Function #6)
- 15 [-]: MOVE      R0 R1        ; R0 := R1
- 16 [-]: MOVE      R0 R0        ; R0 := R0
- 17 [-]: SETGLOBAL R2 K6        ; GetWeaponSale := R2
- 18 [-]: RETURN    R0 1         ; return 
+            1 [-]: GETIMPORT R0 1 [nil]
+       2 [-]: GETVARARGS R1 1
+       3 [-]: GETIMPORT R2 4 [nil]
+       4 [-]: CALL R0 2 0  
+       5 [-]: DUPCLOSURE R0 K5 []
+       6 [-]: SETGLOBAL R0 K6 ["CreateUserData"]
+       7 [-]: DUPCLOSURE R0 K7 []
+       8 [-]: SETGLOBAL R0 K8 ["DestroyUserData"]
+       9 [-]: DUPCLOSURE R0 K9 []
+      10 [-]: SETGLOBAL R0 K10 ["GetUserData"]
+      11 [-]: DUPCLOSURE R0 K11 []
+      12 [-]: DUPCLOSURE R1 K12 []
+      13 [-]: DUPCLOSURE R2 K13 []
+      14 [-]: MOVE R0 R1   
+      15 [-]: MOVE R0 R0   
+      16 [-]: SETGLOBAL R2 K14 ["GetWeaponSale"]
+      17 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 3
 ; #Upvalues:       0
@@ -36,53 +31,44 @@
 ; Is_vararg:       0
 ; Max Stack Size:  7
 
-  1 [-]: GETGLOBAL R2 K0        ; R2 := 0x7b998233
-  2 [-]: MOVE      R3 R0        ; R3 := R0
-  3 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  4 [-]: TEST      R2 0         ; if not R2 then PC := 8
-  5 [-]: JMP       8            ; PC := 8
-  6 [-]: LOADNIL   R2 R2        ; R2 := nil
-  7 [-]: RETURN    R2 2         ; return R2
-  8 [-]: SELF      R2 R0 K1     ; R3 := R0; R2 := R0[0x5163741e]
-  9 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 10 [-]: GETGLOBAL R3 K0        ; R3 := 0x7b998233
- 11 [-]: MOVE      R4 R2        ; R4 := R2
- 12 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 13 [-]: TEST      R3 0         ; if not R3 then PC := 17
- 14 [-]: JMP       17           ; PC := 17
- 15 [-]: LOADNIL   R3 R3        ; R3 := nil
- 16 [-]: RETURN    R3 2         ; return R3
- 17 [-]: SELF      R3 R0 K2     ; R4 := R0; R3 := R0[0xe223e2b1]
- 18 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 19 [-]: SELF      R4 R2 K3     ; R5 := R2; R4 := R2[0x388577d5]
- 20 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 21 [-]: GETGLOBAL R5 K4        ; R5 := _T
- 22 [-]: GETTABLE  R5 R5 K5     ; R5 := R5["Weapons"]
- 23 [-]: EQ        0 R5 K6      ; if R5 ~= nil then PC := 28
- 24 [-]: JMP       28           ; PC := 28
- 25 [-]: GETGLOBAL R5 K4        ; R5 := _T
- 26 [-]: NEWTABLE  R6 0 0       ; R6 := {}
- 27 [-]: SETTABLE  R5 K5 R6     ; R5["Weapons"] := R6
- 28 [-]: GETGLOBAL R5 K4        ; R5 := _T
- 29 [-]: GETTABLE  R5 R5 K5     ; R5 := R5["Weapons"]
- 30 [-]: GETTABLE  R5 R5 R3     ; R5 := R5[R3]
- 31 [-]: EQ        0 R5 K6      ; if R5 ~= nil then PC := 37
- 32 [-]: JMP       37           ; PC := 37
- 33 [-]: GETGLOBAL R5 K4        ; R5 := _T
- 34 [-]: GETTABLE  R5 R5 K5     ; R5 := R5["Weapons"]
- 35 [-]: NEWTABLE  R6 0 0       ; R6 := {}
- 36 [-]: SETTABLE  R5 R3 R6     ; R5[R3] := R6
- 37 [-]: GETGLOBAL R5 K4        ; R5 := _T
- 38 [-]: GETTABLE  R5 R5 K5     ; R5 := R5["Weapons"]
- 39 [-]: GETTABLE  R5 R5 R3     ; R5 := R5[R3]
- 40 [-]: SETTABLE  R5 R4 R1     ; R5[R4] := R1
- 41 [-]: GETTABLE  R6 R5 R4     ; R6 := R5[R4]
- 42 [-]: RETURN    R6 2         ; return R6
- 43 [-]: RETURN    R0 1         ; return 
+       0 [-]: FASTCALL1 62 R0 L0
+       1 [-]: MOVE R3 R0   
+       2 [-]: GETIMPORT R2 1 [nil]
+       3 [-]: CALL R2 1 1  
+L 0:   4 [-]: JUMPIFNOT R2 L1
+       5 [-]: LOADNIL R2   
+       6 [-]: RETURN R2 1  
+L 1:   7 [-]: NAMECALL R2 R0 K2 [0x5163741E]
+       8 [-]: CALL R2 1 1  
+       9 [-]: FASTCALL1 62 R2 L2
+      10 [-]: MOVE R4 R2   
+      11 [-]: GETIMPORT R3 1 [nil]
+      12 [-]: CALL R3 1 1  
+L 2:  13 [-]: JUMPIFNOT R3 L3
+      14 [-]: LOADNIL R3   
+      15 [-]: RETURN R3 1  
+L 3:  16 [-]: NAMECALL R3 R0 K3 [0xE223E2B1]
+      17 [-]: CALL R3 1 1  
+      18 [-]: NAMECALL R4 R2 K4 [0x388577D5]
+      19 [-]: CALL R4 1 1  
+      20 [-]: GETIMPORT R5 7 [nil]
+      21 [-]: JUMPXEQKNIL R5 L4 NOT
+      22 [-]: GETIMPORT R5 8 [nil]
+      23 [-]: NEWTABLE R6 0 0
+      24 [-]: SETTABLEKS R6 R5 K6 ["Weapons"]
+L 4:  25 [-]: GETIMPORT R6 7 [nil]
+      26 [-]: GETTABLE R5 R6 R3
+      27 [-]: JUMPXEQKNIL R5 L5 NOT
+      28 [-]: GETIMPORT R5 7 [nil]
+      29 [-]: NEWTABLE R6 0 0
+      30 [-]: SETTABLE R6 R5 R3
+L 5:  31 [-]: GETIMPORT R6 7 [nil]
+      32 [-]: GETTABLE R5 R6 R3
+      33 [-]: SETTABLE R1 R5 R4
+      34 [-]: GETTABLE R6 R5 R4
+      35 [-]: RETURN R6 1  
 
 
-; Function #2:
-;
 ; Name:            
 ; Defined at line: 25
 ; #Upvalues:       0
@@ -90,105 +76,89 @@
 ; Is_vararg:       0
 ; Max Stack Size:  6
 
-  1 [-]: GETGLOBAL R1 K0        ; R1 := 0x7b998233
-  2 [-]: MOVE      R2 R0        ; R2 := R0
-  3 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  4 [-]: TEST      R1 0         ; if not R1 then PC := 8
-  5 [-]: JMP       8            ; PC := 8
-  6 [-]: LOADNIL   R1 R1        ; R1 := nil
-  7 [-]: RETURN    R1 2         ; return R1
-  8 [-]: SELF      R1 R0 K1     ; R2 := R0; R1 := R0[0x5163741e]
-  9 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 10 [-]: GETGLOBAL R2 K0        ; R2 := 0x7b998233
- 11 [-]: MOVE      R3 R1        ; R3 := R1
- 12 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 13 [-]: TEST      R2 0         ; if not R2 then PC := 17
- 14 [-]: JMP       17           ; PC := 17
- 15 [-]: LOADNIL   R2 R2        ; R2 := nil
- 16 [-]: RETURN    R2 2         ; return R2
- 17 [-]: SELF      R2 R0 K2     ; R3 := R0; R2 := R0[0xe223e2b1]
- 18 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 19 [-]: GETGLOBAL R3 K3        ; R3 := _T
- 20 [-]: GETTABLE  R3 R3 K4     ; R3 := R3["Weapons"]
- 21 [-]: EQ        1 R3 K5      ; if R3 == nil then PC := 28
- 22 [-]: JMP       28           ; PC := 28
- 23 [-]: GETGLOBAL R3 K3        ; R3 := _T
- 24 [-]: GETTABLE  R3 R3 K4     ; R3 := R3["Weapons"]
- 25 [-]: GETTABLE  R3 R3 R2     ; R3 := R3[R2]
- 26 [-]: EQ        0 R3 K5      ; if R3 ~= nil then PC := 29
- 27 [-]: JMP       29           ; PC := 29
- 28 [-]: RETURN    R0 1         ; return 
- 29 [-]: GETGLOBAL R3 K3        ; R3 := _T
- 30 [-]: GETTABLE  R3 R3 K4     ; R3 := R3["Weapons"]
- 31 [-]: GETTABLE  R3 R3 R2     ; R3 := R3[R2]
- 32 [-]: SELF      R4 R1 K6     ; R5 := R1; R4 := R1[0x388577d5]
- 33 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 34 [-]: SETTABLE  R3 R4 K5     ; R3[R4] := nil
- 35 [-]: RETURN    R0 1         ; return 
+       0 [-]: FASTCALL1 62 R0 L0
+       1 [-]: MOVE R2 R0   
+       2 [-]: GETIMPORT R1 1 [nil]
+       3 [-]: CALL R1 1 1  
+L 0:   4 [-]: JUMPIFNOT R1 L1
+       5 [-]: LOADNIL R1   
+       6 [-]: RETURN R1 1  
+L 1:   7 [-]: NAMECALL R1 R0 K2 [0x5163741E]
+       8 [-]: CALL R1 1 1  
+       9 [-]: FASTCALL1 62 R1 L2
+      10 [-]: MOVE R3 R1   
+      11 [-]: GETIMPORT R2 1 [nil]
+      12 [-]: CALL R2 1 1  
+L 2:  13 [-]: JUMPIFNOT R2 L3
+      14 [-]: LOADNIL R2   
+      15 [-]: RETURN R2 1  
+L 3:  16 [-]: NAMECALL R2 R0 K3 [0xE223E2B1]
+      17 [-]: CALL R2 1 1  
+      18 [-]: GETIMPORT R3 6 [nil]
+      19 [-]: JUMPXEQKNIL R3 L4
+      20 [-]: GETIMPORT R4 6 [nil]
+      21 [-]: GETTABLE R3 R4 R2
+      22 [-]: JUMPXEQKNIL R3 L5 NOT
+L 4:  23 [-]: RETURN R0 0  
+L 5:  24 [-]: GETIMPORT R4 6 [nil]
+      25 [-]: GETTABLE R3 R4 R2
+      26 [-]: NAMECALL R4 R1 K7 [0x388577D5]
+      27 [-]: CALL R4 1 1  
+      28 [-]: LOADNIL R5   
+      29 [-]: SETTABLE R5 R3 R4
+      30 [-]: RETURN R0 0  
 
 
-; Function #3:
-;
 ; Name:            
 ; Defined at line: 41
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  6
+; Max Stack Size:  7
 
-  1 [-]: GETGLOBAL R1 K0        ; R1 := 0x7b998233
-  2 [-]: MOVE      R2 R0        ; R2 := R0
-  3 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  4 [-]: TEST      R1 0         ; if not R1 then PC := 8
-  5 [-]: JMP       8            ; PC := 8
-  6 [-]: LOADNIL   R1 R1        ; R1 := nil
-  7 [-]: RETURN    R1 2         ; return R1
-  8 [-]: SELF      R1 R0 K1     ; R2 := R0; R1 := R0[0x5163741e]
-  9 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 10 [-]: GETGLOBAL R2 K0        ; R2 := 0x7b998233
- 11 [-]: MOVE      R3 R1        ; R3 := R1
- 12 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 13 [-]: TEST      R2 0         ; if not R2 then PC := 17
- 14 [-]: JMP       17           ; PC := 17
- 15 [-]: LOADNIL   R2 R2        ; R2 := nil
- 16 [-]: RETURN    R2 2         ; return R2
- 17 [-]: SELF      R2 R0 K2     ; R3 := R0; R2 := R0[0xe223e2b1]
- 18 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 19 [-]: GETGLOBAL R3 K3        ; R3 := _T
- 20 [-]: GETTABLE  R3 R3 K4     ; R3 := R3["Weapons"]
- 21 [-]: EQ        1 R3 K5      ; if R3 == nil then PC := 28
- 22 [-]: JMP       28           ; PC := 28
- 23 [-]: GETGLOBAL R3 K3        ; R3 := _T
- 24 [-]: GETTABLE  R3 R3 K4     ; R3 := R3["Weapons"]
- 25 [-]: GETTABLE  R3 R3 R2     ; R3 := R3[R2]
- 26 [-]: EQ        0 R3 K5      ; if R3 ~= nil then PC := 30
- 27 [-]: JMP       30           ; PC := 30
- 28 [-]: LOADNIL   R3 R3        ; R3 := nil
- 29 [-]: RETURN    R3 2         ; return R3
- 30 [-]: GETGLOBAL R3 K3        ; R3 := _T
- 31 [-]: GETTABLE  R3 R3 K4     ; R3 := R3["Weapons"]
- 32 [-]: GETTABLE  R3 R3 R2     ; R3 := R3[R2]
- 33 [-]: SELF      R4 R1 K6     ; R5 := R1; R4 := R1[0x388577d5]
- 34 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 35 [-]: GETTABLE  R3 R3 R4     ; R3 := R3[R4]
- 36 [-]: RETURN    R3 2         ; return R3
- 37 [-]: RETURN    R0 1         ; return 
+       0 [-]: FASTCALL1 62 R0 L0
+       1 [-]: MOVE R2 R0   
+       2 [-]: GETIMPORT R1 1 [nil]
+       3 [-]: CALL R1 1 1  
+L 0:   4 [-]: JUMPIFNOT R1 L1
+       5 [-]: LOADNIL R1   
+       6 [-]: RETURN R1 1  
+L 1:   7 [-]: NAMECALL R1 R0 K2 [0x5163741E]
+       8 [-]: CALL R1 1 1  
+       9 [-]: FASTCALL1 62 R1 L2
+      10 [-]: MOVE R3 R1   
+      11 [-]: GETIMPORT R2 1 [nil]
+      12 [-]: CALL R2 1 1  
+L 2:  13 [-]: JUMPIFNOT R2 L3
+      14 [-]: LOADNIL R2   
+      15 [-]: RETURN R2 1  
+L 3:  16 [-]: NAMECALL R2 R0 K3 [0xE223E2B1]
+      17 [-]: CALL R2 1 1  
+      18 [-]: GETIMPORT R3 6 [nil]
+      19 [-]: JUMPXEQKNIL R3 L4
+      20 [-]: GETIMPORT R4 6 [nil]
+      21 [-]: GETTABLE R3 R4 R2
+      22 [-]: JUMPXEQKNIL R3 L5 NOT
+L 4:  23 [-]: LOADNIL R3   
+      24 [-]: RETURN R3 1  
+L 5:  25 [-]: GETIMPORT R5 6 [nil]
+      26 [-]: GETTABLE R4 R5 R2
+      27 [-]: NAMECALL R5 R1 K7 [0x388577D5]
+      28 [-]: CALL R5 1 1  
+      29 [-]: GETTABLE R3 R4 R5
+      30 [-]: RETURN R3 1  
 
 
-; Function #4:
-;
 ; Name:            
 ; Defined at line: 58
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  2
+; Max Stack Size:  1
 
-  1 [-]: RETURN    R0 1         ; return 
+       0 [-]: RETURN R0 0  
 
 
-; Function #5:
-;
 ; Name:            
 ; Defined at line: 60
 ; #Upvalues:       0
@@ -196,22 +166,18 @@
 ; Is_vararg:       0
 ; Max Stack Size:  4
 
-  1 [-]: GETTABLE  R2 R0 K0     ; R2 := R0["mEnabled"]
-  2 [-]: EQ        1 R2 R1      ; if R2 == R1 then PC := 12
-  3 [-]: JMP       12           ; PC := 12
-  4 [-]: SETTABLE  R0 K0 R1     ; R0["mEnabled"] := R1
-  5 [-]: TEST      R1 0         ; if not R1 then PC := 10
-  6 [-]: JMP       10           ; PC := 10
-  7 [-]: SELF      R2 R0 K1     ; R3 := R0; R2 := R0[0xd5d45305]
-  8 [-]: CALL      R2 2 1       ; R2(R3)
-  9 [-]: JMP       12           ; PC := 12
- 10 [-]: SELF      R2 R0 K2     ; R3 := R0; R2 := R0[0xc85e86cb]
- 11 [-]: CALL      R2 2 1       ; R2(R3)
- 12 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETTABLEKS R2 R0 K0 ["mEnabled"]
+       1 [-]: JUMPIFEQ R2 R1 L1
+       2 [-]: SETTABLEKS R1 R0 K0 ["mEnabled"]
+       3 [-]: JUMPIFNOT R1 L0
+       4 [-]: NAMECALL R2 R0 K1 [0xD5D45305]
+       5 [-]: CALL R2 1 0  
+       6 [-]: RETURN R0 0  
+L 0:   7 [-]: NAMECALL R2 R0 K2 [0xC85E86CB]
+       8 [-]: CALL R2 1 0  
+L 1:   9 [-]: RETURN R0 0  
 
 
-; Function #6:
-;
 ; Name:            
 ; Defined at line: 71
 ; #Upvalues:       2
@@ -219,40 +185,39 @@
 ; Is_vararg:       0
 ; Max Stack Size:  4
 
-  1 [-]: EQ        0 R0 K0      ; if R0 ~= nil then PC := 5
-  2 [-]: JMP       5            ; PC := 5
-  3 [-]: LOADNIL   R1 R1        ; R1 := nil
-  4 [-]: RETURN    R1 2         ; return R1
-  5 [-]: LOADNIL   R1 R1        ; R1 := nil
-  6 [-]: GETGLOBAL R2 K1        ; R2 := _T
-  7 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["WeaponSale"]
-  8 [-]: EQ        0 R2 K0      ; if R2 ~= nil then PC := 13
-  9 [-]: JMP       13           ; PC := 13
- 10 [-]: GETGLOBAL R2 K1        ; R2 := _T
- 11 [-]: NEWTABLE  R3 0 0       ; R3 := {}
- 12 [-]: SETTABLE  R2 K2 R3     ; R2["WeaponSale"] := R3
- 13 [-]: GETGLOBAL R2 K1        ; R2 := _T
- 14 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["WeaponSale"]
- 15 [-]: GETTABLE  R1 R2 R0     ; R1 := R2[R0]
- 16 [-]: EQ        0 R1 K0      ; if R1 ~= nil then PC := 34
- 17 [-]: JMP       34           ; PC := 34
- 18 [-]: NEWTABLE  R2 0 8       ; R2 := {}
- 19 [-]: SETTABLE  R2 K3 K0     ; R2["mEntity"] := nil
- 20 [-]: SETTABLE  R2 K4 K0     ; R2["mAvatar"] := nil
- 21 [-]: SETTABLE  R2 K5 K0     ; R2["mWeapon"] := nil
- 22 [-]: SETTABLE  R2 K6 K7     ; R2["mEnabled"] := true
- 23 [-]: SETTABLE  R2 K8 K0     ; R2["mSaleData"] := nil
- 24 [-]: GETUPVAL  R3 U0        ; R3 := U0
- 25 [-]: SETTABLE  R2 K9 R3     ; R2["SetEnabled"] := R3
- 26 [-]: GETUPVAL  R3 U1        ; R3 := U1
- 27 [-]: SETTABLE  R2 K10 R3    ; R2["CreateSaleWeapon"] := R3
- 28 [-]: GETUPVAL  R3 U1        ; R3 := U1
- 29 [-]: SETTABLE  R2 K11 R3    ; R2["DestroySaleWeapon"] := R3
- 30 [-]: MOVE      R1 R2        ; R1 := R2
- 31 [-]: GETGLOBAL R2 K1        ; R2 := _T
- 32 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["WeaponSale"]
- 33 [-]: SETTABLE  R2 R0 R1     ; R2[R0] := R1
- 34 [-]: RETURN    R1 2         ; return R1
- 35 [-]: RETURN    R0 1         ; return 
+       0 [-]: JUMPXEQKNIL R0 L0 NOT
+       1 [-]: LOADNIL R1   
+       2 [-]: RETURN R1 1  
+L 0:   3 [-]: LOADNIL R1   
+       4 [-]: GETIMPORT R2 2 [nil]
+       5 [-]: JUMPXEQKNIL R2 L1 NOT
+       6 [-]: GETIMPORT R2 3 [nil]
+       7 [-]: NEWTABLE R3 0 0
+       8 [-]: SETTABLEKS R3 R2 K1 ["WeaponSale"]
+L 1:   9 [-]: GETIMPORT R2 2 [nil]
+      10 [-]: GETTABLE R1 R2 R0
+      11 [-]: JUMPXEQKNIL R1 L2 NOT
+      12 [-]: DUPTABLE R2 12
+      13 [-]: LOADNIL R3   
+      14 [-]: SETTABLEKS R3 R2 K4 ["mEntity"]
+      15 [-]: LOADNIL R3   
+      16 [-]: SETTABLEKS R3 R2 K5 ["mAvatar"]
+      17 [-]: LOADNIL R3   
+      18 [-]: SETTABLEKS R3 R2 K6 ["mWeapon"]
+      19 [-]: LOADB R3 1   
+      20 [-]: SETTABLEKS R3 R2 K7 ["mEnabled"]
+      21 [-]: LOADNIL R3   
+      22 [-]: SETTABLEKS R3 R2 K8 ["mSaleData"]
+      23 [-]: GETUPVAL R3 0
+      24 [-]: SETTABLEKS R3 R2 K9 ["SetEnabled"]
+      25 [-]: GETUPVAL R3 1
+      26 [-]: SETTABLEKS R3 R2 K10 ["CreateSaleWeapon"]
+      27 [-]: GETUPVAL R3 1
+      28 [-]: SETTABLEKS R3 R2 K11 ["DestroySaleWeapon"]
+      29 [-]: MOVE R1 R2   
+      30 [-]: GETIMPORT R2 2 [nil]
+      31 [-]: SETTABLE R1 R2 R0
+L 2:  32 [-]: RETURN R1 1  
+
 
 

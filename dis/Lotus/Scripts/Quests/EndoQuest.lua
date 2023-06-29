@@ -1,35 +1,31 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
+; Is_vararg:       1
 ; Max Stack Size:  3
 
-  1 [-]: GETGLOBAL R0 K0        ; R0 := 0x2d0fad09
-  2 [-]: LOADK     R1 K1        ; R1 := "Lotus.Scripts.Libs.TransmissionSet"
-  3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: GETGLOBAL R1 K0        ; R1 := 0x2d0fad09
-  5 [-]: LOADK     R2 K2        ; R2 := "Lotus.Scripts.Libs.ObjectiveText"
-  6 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  7 [-]: CLOSURE   R2 0         ; R2 := closure(Function #1)
-  8 [-]: MOVE      R0 R0        ; R0 := R0
-  9 [-]: MOVE      R0 R1        ; R0 := R1
- 10 [-]: SETGLOBAL R2 K3        ; EnterPracticeArea := R2
- 11 [-]: CLOSURE   R2 1         ; R2 := closure(Function #2)
- 12 [-]: MOVE      R0 R1        ; R0 := R1
- 13 [-]: SETGLOBAL R2 K4        ; LeavePracticeArea := R2
- 14 [-]: CLOSURE   R2 2         ; R2 := closure(Function #3)
- 15 [-]: SETGLOBAL R2 K5        ; SetStageOne := R2
- 16 [-]: CLOSURE   R2 3         ; R2 := closure(Function #4)
- 17 [-]: MOVE      R0 R1        ; R0 := R1
- 18 [-]: SETGLOBAL R2 K6        ; SetupStageTwo := R2
- 19 [-]: RETURN    R0 1         ; return 
+            1 [-]: GETIMPORT R0 1 [nil]
+       2 [-]: LOADK R1 K2 ["Lotus.Scripts.Libs.TransmissionSet"]
+       3 [-]: CALL R0 1 1  
+       4 [-]: GETIMPORT R1 1 [nil]
+       5 [-]: LOADK R2 K3 ["Lotus.Scripts.Libs.ObjectiveText"]
+       6 [-]: CALL R1 1 1  
+       7 [-]: DUPCLOSURE R2 K4 []
+       8 [-]: MOVE R0 R0   
+       9 [-]: MOVE R0 R1   
+      10 [-]: SETGLOBAL R2 K5 ["EnterPracticeArea"]
+      11 [-]: DUPCLOSURE R2 K6 []
+      12 [-]: MOVE R0 R1   
+      13 [-]: SETGLOBAL R2 K7 ["LeavePracticeArea"]
+      14 [-]: DUPCLOSURE R2 K8 []
+      15 [-]: SETGLOBAL R2 K9 ["SetStageOne"]
+      16 [-]: DUPCLOSURE R2 K10 []
+      17 [-]: MOVE R0 R1   
+      18 [-]: SETGLOBAL R2 K11 ["SetupStageTwo"]
+      19 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 6
 ; #Upvalues:       2
@@ -37,28 +33,25 @@
 ; Is_vararg:       0
 ; Max Stack Size:  4
 
-  1 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  2 [-]: GETTABLE  R0 R0 K0     ; R0 := R0[0x9742b85b]
-  3 [-]: GETGLOBAL R1 K1        ; R1 := _T
-  4 [-]: GETTABLE  R1 R1 K2     ; R1 := R1["MissionTransmissionSet"]
-  5 [-]: GETGLOBAL R2 K3        ; R2 := 0x0469f296
-  6 [-]: LOADK     R3 K4        ; R3 := "ReachedPracticeArea"
-  7 [-]: CALL      R2 2 0       ; R2,... := R2(R3)
-  8 [-]: CALL      R0 0 1       ; R0(R1,...)
-  9 [-]: GETUPVAL  R0 U1        ; R0 := U1
- 10 [-]: GETTABLE  R0 R0 K5     ; R0 := R0[0x118e5c26]
- 11 [-]: LOADK     R1 K6        ; R1 := "[HC] PRACTICE AREA"
- 12 [-]: CONST     R2 0         ; R2 := 0.000000
- 13 [-]: CALL      R0 3 1       ; R0(R1,R2)
- 14 [-]: GETUPVAL  R0 U1        ; R0 := U1
- 15 [-]: GETTABLE  R0 R0 K7     ; R0 := R0[0x2beb71d2]
- 16 [-]: LOADK     R1 K8        ; R1 := "[TEMP] Lotus: Use this area to practice your parkour skills before proceeding through the portal"
- 17 [-]: CALL      R0 2 1       ; R0(R1)
- 18 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETUPVAL R1 0
+       1 [-]: GETTABLEKS R0 R1 K0 [0x9742B85B]
+       2 [-]: GETIMPORT R1 3 [nil]
+       3 [-]: GETIMPORT R2 5 [nil]
+       4 [-]: LOADK R3 K6 ["ReachedPracticeArea"]
+       5 [-]: CALL R2 1 -1 
+       6 [-]: CALL R0 -1 0 
+       7 [-]: GETUPVAL R1 1
+       8 [-]: GETTABLEKS R0 R1 K7 [0x118E5C26]
+       9 [-]: LOADK R1 K8 ["[HC] PRACTICE AREA"]
+      10 [-]: LOADN R2 0   
+      11 [-]: CALL R0 2 0  
+      12 [-]: GETUPVAL R1 1
+      13 [-]: GETTABLEKS R0 R1 K9 [0x2BEB71D2]
+      14 [-]: LOADK R1 K10 ["[TEMP] Lotus: Use this area to practice your parkour skills before proceeding through the portal"]
+      15 [-]: CALL R0 1 0  
+      16 [-]: RETURN R0 0  
 
 
-; Function #2:
-;
 ; Name:            
 ; Defined at line: 13
 ; #Upvalues:       1
@@ -66,17 +59,15 @@
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
-  1 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  2 [-]: GETTABLE  R0 R0 K0     ; R0 := R0[0xf94b7537]
-  3 [-]: CALL      R0 1 1       ; R0()
-  4 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  5 [-]: GETTABLE  R0 R0 K1     ; R0 := R0[0xf158d74d]
-  6 [-]: CALL      R0 1 1       ; R0()
-  7 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETUPVAL R1 0
+       1 [-]: GETTABLEKS R0 R1 K0 [0xF94B7537]
+       2 [-]: CALL R0 0 0  
+       3 [-]: GETUPVAL R1 0
+       4 [-]: GETTABLEKS R0 R1 K1 [0xF158D74D]
+       5 [-]: CALL R0 0 0  
+       6 [-]: RETURN R0 0  
 
 
-; Function #3:
-;
 ; Name:            
 ; Defined at line: 20
 ; #Upvalues:       0
@@ -84,75 +75,72 @@
 ; Is_vararg:       0
 ; Max Stack Size:  9
 
-  1 [-]: GETGLOBAL R0 K0        ; R0 := 0x89326c93
-  2 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0xc7fcada9]
-  3 [-]: GETGLOBAL R2 K2        ; R2 := 0x0469f296
-  4 [-]: LOADK     R3 K3        ; R3 := "EndoQuestHint"
-  5 [-]: CALL      R2 2 0       ; R2,... := R2(R3)
-  6 [-]: CALL      R0 0 2       ; R0 := R0(R1,...)
-  7 [-]: GETGLOBAL R1 K4        ; R1 := 0xc8802016
-  8 [-]: MOVE      R2 R0        ; R2 := R0
-  9 [-]: CALL      R1 2 4       ; R1,R2,R3 := R1(R2)
- 10 [-]: JMP       14           ; PC := 14
- 11 [-]: SELF      R6 R5 K5     ; R7 := R5; R6 := R5[0x8eb2112d]
- 12 [-]: LOADK     R8 K6        ; R8 := "Open"
- 13 [-]: CALL      R6 3 1       ; R6(R7,R8)
- 14 [-]: TFORLOOP  R1 2         ; R4,R5 :=  R1(R2,R3); if R4 ~= nil then begin PC = 11; R3 := R4 end
- 15 [-]: JMP       11           ; PC := 11
- 16 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R2 3 [nil]
+       2 [-]: LOADK R3 K4 ["EndoQuestHint"]
+       3 [-]: CALL R2 1 -1 
+       4 [-]: NAMECALL R0 R0 K5 [0xC7FCADA9]
+       5 [-]: CALL R0 -1 1 
+       6 [-]: GETIMPORT R1 7 [nil]
+       7 [-]: MOVE R2 R0   
+       8 [-]: CALL R1 1 3  
+       9 [-]: FORGPREP_INEXT R1 L1
+L 0:  10 [-]: LOADK R8 K8 ["Open"]
+      11 [-]: NAMECALL R6 R5 K9 [0x8EB2112D]
+      12 [-]: CALL R6 2 0  
+L 1:  13 [-]: FORGLOOP R1 L0 2 [inext]
+      14 [-]: RETURN R0 0  
 
 
-; Function #4:
-;
 ; Name:            
 ; Defined at line: 27
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
-; Max Stack Size:  11
+; Max Stack Size:  10
 
-  1 [-]: GETGLOBAL R0 K0        ; R0 := 0x89326c93
-  2 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0x29ef273d]
-  3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: SELF      R0 R0 K2     ; R1 := R0; R0 := R0[0x66905cb0]
-  5 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  6 [-]: GETGLOBAL R1 K0        ; R1 := 0x89326c93
-  7 [-]: SELF      R1 R1 K3     ; R2 := R1; R1 := R1[0xc7fcada9]
-  8 [-]: GETGLOBAL R3 K4        ; R3 := 0x0469f296
-  9 [-]: LOADK     R4 K5        ; R4 := "EndoMissionStage2"
- 10 [-]: CALL      R3 2 0       ; R3,... := R3(R4)
- 11 [-]: CALL      R1 0 2       ; R1 := R1(R2,...)
- 12 [-]: GETGLOBAL R2 K6        ; R2 := 0xc8802016
- 13 [-]: MOVE      R3 R1        ; R3 := R1
- 14 [-]: CALL      R2 2 4       ; R2,R3,R4 := R2(R3)
- 15 [-]: JMP       19           ; PC := 19
- 16 [-]: SELF      R7 R6 K7     ; R8 := R6; R7 := R6[0x8eb2112d]
- 17 [-]: LOADK     R9 K8        ; R9 := "TriggerPort"
- 18 [-]: CALL      R7 3 1       ; R7(R8,R9)
- 19 [-]: TFORLOOP  R2 2         ; R5,R6 :=  R2(R3,R4); if R5 ~= nil then begin PC = 16; R4 := R5 end
- 20 [-]: JMP       16           ; PC := 16
- 21 [-]: GETGLOBAL R7 K0        ; R7 := 0x89326c93
- 22 [-]: SELF      R7 R7 K9     ; R8 := R7; R7 := R7[0x46a0ebf5]
- 23 [-]: GETGLOBAL R9 K4        ; R9 := 0x0469f296
- 24 [-]: LOADK     R10 K10      ; R10 := "EndoMissionStage2Marker"
- 25 [-]: CALL      R9 2 0       ; R9,... := R9(R10)
- 26 [-]: CALL      R7 0 2       ; R7 := R7(R8,...)
- 27 [-]: GETGLOBAL R8 K11       ; R8 := 0x7b998233
- 28 [-]: MOVE      R9 R7        ; R9 := R7
- 29 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 30 [-]: TEST      R8 1         ; if R8 then PC := 35
- 31 [-]: JMP       35           ; PC := 35
- 32 [-]: SELF      R8 R7 K7     ; R9 := R7; R8 := R7[0x8eb2112d]
- 33 [-]: LOADK     R10 K12      ; R10 := "Enable"
- 34 [-]: CALL      R8 3 1       ; R8(R9,R10)
- 35 [-]: SELF      R8 R0 K13    ; R9 := R0; R8 := R0[0xe2871589]
- 36 [-]: MOVE      R10 R7       ; R10 := R7
- 37 [-]: CALL      R8 3 1       ; R8(R9,R10)
- 38 [-]: GETUPVAL  R8 U0        ; R8 := U0
- 39 [-]: GETTABLE  R8 R8 K14    ; R8 := R8[0xa1df01d6]
- 40 [-]: LOADK     R9 K15       ; R9 := "[HC] RETRIEVE THE CREDITS CACHE"
- 41 [-]: CONST     R10 1        ; R10 := 1.000000
- 42 [-]: CALL      R8 3 1       ; R8(R9,R10)
- 43 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: NAMECALL R0 R0 K2 [0x29EF273D]
+       2 [-]: CALL R0 1 1  
+       3 [-]: NAMECALL R0 R0 K3 [0x66905CB0]
+       4 [-]: CALL R0 1 1  
+       5 [-]: GETIMPORT R1 1 [nil]
+       6 [-]: GETIMPORT R3 5 [nil]
+       7 [-]: LOADK R4 K6 ["EndoMissionStage2"]
+       8 [-]: CALL R3 1 -1 
+       9 [-]: NAMECALL R1 R1 K7 [0xC7FCADA9]
+      10 [-]: CALL R1 -1 1 
+      11 [-]: GETIMPORT R2 9 [nil]
+      12 [-]: MOVE R3 R1   
+      13 [-]: CALL R2 1 3  
+      14 [-]: FORGPREP_INEXT R2 L1
+L 0:  15 [-]: LOADK R9 K10 ["TriggerPort"]
+      16 [-]: NAMECALL R7 R6 K11 [0x8EB2112D]
+      17 [-]: CALL R7 2 0  
+L 1:  18 [-]: FORGLOOP R2 L0 2 [inext]
+      19 [-]: GETIMPORT R2 1 [nil]
+      20 [-]: GETIMPORT R4 5 [nil]
+      21 [-]: LOADK R5 K12 ["EndoMissionStage2Marker"]
+      22 [-]: CALL R4 1 -1 
+      23 [-]: NAMECALL R2 R2 K13 [0x46A0EBF5]
+      24 [-]: CALL R2 -1 1 
+      25 [-]: FASTCALL1 62 R2 L2
+      26 [-]: MOVE R4 R2   
+      27 [-]: GETIMPORT R3 15 [nil]
+      28 [-]: CALL R3 1 1  
+L 2:  29 [-]: JUMPIF R3 L3 
+      30 [-]: LOADK R5 K16 ["Enable"]
+      31 [-]: NAMECALL R3 R2 K11 [0x8EB2112D]
+      32 [-]: CALL R3 2 0  
+L 3:  33 [-]: MOVE R5 R2   
+      34 [-]: NAMECALL R3 R0 K17 [0xE2871589]
+      35 [-]: CALL R3 2 0  
+      36 [-]: GETUPVAL R4 0
+      37 [-]: GETTABLEKS R3 R4 K18 [0xA1DF01D6]
+      38 [-]: LOADK R4 K19 ["[HC] RETRIEVE THE CREDITS CACHE"]
+      39 [-]: LOADN R5 1   
+      40 [-]: CALL R3 2 0  
+      41 [-]: RETURN R0 0  
+
 
 

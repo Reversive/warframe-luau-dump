@@ -1,95 +1,85 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
-; Max Stack Size:  2
+; Is_vararg:       1
+; Max Stack Size:  1
 
-  1 [-]: CONST     R0 16        ; R0 := 16.000000
-  2 [-]: CLOSURE   R1 0         ; R1 := closure(Function #1)
-  3 [-]: MOVE      R0 R0        ; R0 := R0
-  4 [-]: SETGLOBAL R1 K0        ; TurretActivation := R1
-  5 [-]: CLOSURE   R1 1         ; R1 := closure(Function #2)
-  6 [-]: SETGLOBAL R1 K1        ; StartTurrets := R1
-  7 [-]: RETURN    R0 1         ; return 
+            1 [-]: DUPCLOSURE R0 K0 []
+       2 [-]: SETGLOBAL R0 K1 ["TurretActivation"]
+       3 [-]: DUPCLOSURE R0 K2 []
+       4 [-]: SETGLOBAL R0 K3 ["StartTurrets"]
+       5 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 4
-; #Upvalues:       1
+; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  16
+; Max Stack Size:  8
 
-  1 [-]: CONST     R1 1         ; R1 := 1.000000
-  2 [-]: GETGLOBAL R2 K0        ; R2 := 0xa8235864
-  3 [-]: LEN       R2 R2        ; R2 := # R2
-  4 [-]: CONST     R3 1         ; R3 := 1.000000
-  5 [-]: FORPREP   R1 21        ; R1 -= R3; PC := 21
-  6 [-]: GETGLOBAL R5 K0        ; R5 := 0xa8235864
-  7 [-]: GETTABLE  R5 R5 R4     ; R5 := R5[R4]
-  8 [-]: SELF      R5 R5 K1     ; R6 := R5; R5 := R5[0x1e3535e5]
-  9 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 10 [-]: GETGLOBAL R6 K2        ; R6 := 0x7b998233
- 11 [-]: MOVE      R7 R5        ; R7 := R5
- 12 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 13 [-]: TEST      R6 1         ; if R6 then PC := 21
- 14 [-]: JMP       21           ; PC := 21
- 15 [-]: SELF      R6 R5 K3     ; R7 := R5; R6 := R5[0xedb2efd9]
- 16 [-]: CALL      R6 2 1       ; R6(R7)
- 17 [-]: SELF      R6 R5 K4     ; R7 := R5; R6 := R5[0x8623cf14]
- 18 [-]: GETGLOBAL R8 K5        ; R8 := _T
- 19 [-]: GETTABLE  R8 R8 K6     ; R8 := R8["TurretSpawnLevel"]
- 20 [-]: CALL      R6 3 1       ; R6(R7,R8)
- 21 [-]: FORLOOP   R1 6         ; R1 += R3; if R1 <= R2 then begin PC := 6; R4 := R1 end
- 22 [-]: SELF      R6 R0 K7     ; R7 := R0; R6 := R0[0x8eb2112d]
- 23 [-]: LOADK     R8 K8        ; R8 := "Disable"
- 24 [-]: CALL      R6 3 1       ; R6(R7,R8)
- 25 [-]: GETUPVAL  R6 U0        ; R6 := U0
- 26 [-]: LT        0 K9 R6      ; if 0.000000 >= R6 then PC := 41
- 27 [-]: JMP       41           ; PC := 41
- 28 [-]: GETGLOBAL R7 K10       ; R7 := 0x67652851
- 29 [-]: CALL      R7 1 2       ; R7 := R7()
- 30 [-]: SUB       R6 R6 R7     ; R6 := R6 - R7
- 31 [-]: GETGLOBAL R7 K11       ; R7 := 0xbe190284
- 32 [-]: SELF      R7 R7 K12    ; R8 := R7; R7 := R7[0x9eb5d656]
- 33 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 34 [-]: EQ        0 R7 K14     ; if R7 ~= 1.000000 then PC := 37
- 35 [-]: JMP       37           ; PC := 37
- 36 [-]: JMP       41           ; PC := 41
- 37 [-]: GETGLOBAL R8 K15       ; R8 := 0xcbd666e1
- 38 [-]: CONST     R9 0         ; R9 := 0.000000
- 39 [-]: CALL      R8 2 1       ; R8(R9)
- 40 [-]: JMP       26           ; PC := 26
- 41 [-]: CONST     R8 1         ; R8 := 1.000000
- 42 [-]: GETGLOBAL R9 K0        ; R9 := 0xa8235864
- 43 [-]: LEN       R9 R9        ; R9 := # R9
- 44 [-]: CONST     R10 1        ; R10 := 1.000000
- 45 [-]: FORPREP   R8 57        ; R8 -= R10; PC := 57
- 46 [-]: GETGLOBAL R12 K0       ; R12 := 0xa8235864
- 47 [-]: GETTABLE  R12 R12 R11  ; R12 := R12[R11]
- 48 [-]: SELF      R12 R12 K1   ; R13 := R12; R12 := R12[0x1e3535e5]
- 49 [-]: CALL      R12 2 2      ; R12 := R12(R13)
- 50 [-]: GETGLOBAL R13 K2       ; R13 := 0x7b998233
- 51 [-]: MOVE      R14 R12      ; R14 := R12
- 52 [-]: CALL      R13 2 2      ; R13 := R13(R14)
- 53 [-]: TEST      R13 1        ; if R13 then PC := 57
- 54 [-]: JMP       57           ; PC := 57
- 55 [-]: SELF      R13 R12 K16  ; R14 := R12; R13 := R12[0xf05afc29]
- 56 [-]: CALL      R13 2 1      ; R13(R14)
- 57 [-]: FORLOOP   R8 46        ; R8 += R10; if R8 <= R9 then begin PC := 46; R11 := R8 end
- 58 [-]: SELF      R13 R0 K7    ; R14 := R0; R13 := R0[0x8eb2112d]
- 59 [-]: LOADK     R15 K17      ; R15 := "Enable"
- 60 [-]: CALL      R13 3 1      ; R13(R14,R15)
- 61 [-]: RETURN    R0 1         ; return 
+       0 [-]: LOADN R3 1   
+       1 [-]: GETIMPORT R4 1 [nil]
+       2 [-]: LENGTH R1 R4 
+       3 [-]: LOADN R2 1   
+       4 [-]: FORNPREP R1 L3
+L 0:   5 [-]: GETIMPORT R5 1 [nil]
+       6 [-]: GETTABLE R4 R5 R3
+       7 [-]: NAMECALL R4 R4 K2 [0x1E3535E5]
+       8 [-]: CALL R4 1 1  
+       9 [-]: FASTCALL1 62 R4 L1
+      10 [-]: MOVE R6 R4   
+      11 [-]: GETIMPORT R5 4 [nil]
+      12 [-]: CALL R5 1 1  
+L 1:  13 [-]: JUMPIF R5 L2 
+      14 [-]: NAMECALL R5 R4 K5 [0xEDB2EFD9]
+      15 [-]: CALL R5 1 0  
+      16 [-]: GETIMPORT R7 8 [nil]
+      17 [-]: NAMECALL R5 R4 K9 [0x8623CF14]
+      18 [-]: CALL R5 2 0  
+L 2:  19 [-]: FORNLOOP R1 L0
+L 3:  20 [-]: LOADK R3 K10 ["Disable"]
+      21 [-]: NAMECALL R1 R0 K11 [0x8EB2112D]
+      22 [-]: CALL R1 2 0  
+      23 [-]: LOADN R1 16  
+L 4:  24 [-]: LOADN R2 0   
+      25 [-]: JUMPIFNOTLT R2 R1 L5
+      26 [-]: GETIMPORT R2 13 [nil]
+      27 [-]: CALL R2 0 1  
+      28 [-]: SUB R1 R1 R2 
+      29 [-]: GETIMPORT R2 15 [nil]
+      30 [-]: NAMECALL R2 R2 K16 [0x9EB5D656]
+      31 [-]: CALL R2 1 1  
+      32 [-]: LOADN R3 1   
+      33 [-]: JUMPIFEQ R2 R3 L5
+      34 [-]: GETIMPORT R3 18 [nil]
+      35 [-]: LOADN R4 0   
+      36 [-]: CALL R3 1 0  
+      37 [-]: JUMPBACK L4  
+L 5:  38 [-]: LOADN R4 1   
+      39 [-]: GETIMPORT R5 1 [nil]
+      40 [-]: LENGTH R2 R5 
+      41 [-]: LOADN R3 1   
+      42 [-]: FORNPREP R2 L9
+L 6:  43 [-]: GETIMPORT R6 1 [nil]
+      44 [-]: GETTABLE R5 R6 R4
+      45 [-]: NAMECALL R5 R5 K2 [0x1E3535E5]
+      46 [-]: CALL R5 1 1  
+      47 [-]: FASTCALL1 62 R5 L7
+      48 [-]: MOVE R7 R5   
+      49 [-]: GETIMPORT R6 4 [nil]
+      50 [-]: CALL R6 1 1  
+L 7:  51 [-]: JUMPIF R6 L8 
+      52 [-]: NAMECALL R6 R5 K19 [0xF05AFC29]
+      53 [-]: CALL R6 1 0  
+L 8:  54 [-]: FORNLOOP R2 L6
+L 9:  55 [-]: LOADK R4 K20 ["Enable"]
+      56 [-]: NAMECALL R2 R0 K11 [0x8EB2112D]
+      57 [-]: CALL R2 2 0  
+      58 [-]: RETURN R0 0  
 
 
-; Function #2:
-;
 ; Name:            
 ; Defined at line: 37
 ; #Upvalues:       0
@@ -97,4 +87,38 @@
 ; Is_vararg:       0
 ; Max Stack Size:  8
 
-  1 [-]: GETGLOBAL R3 K0        ; R3 :=
+       0 [-]: GETIMPORT R4 1 [nil]
+       1 [-]: LENGTH R3 R4 
+       2 [-]: JUMPXEQKN R3 K2 L0 NOT [0]
+       3 [-]: RETURN R0 0  
+L 0:   4 [-]: FASTCALL1 62 R0 L1
+       5 [-]: MOVE R4 R0   
+       6 [-]: GETIMPORT R3 4 [nil]
+       7 [-]: CALL R3 1 1  
+L 1:   8 [-]: JUMPIFNOT R3 L2
+       9 [-]: RETURN R0 0  
+L 2:  10 [-]: NAMECALL R3 R0 K5 [0xFA9E477F]
+      11 [-]: CALL R3 1 1  
+      12 [-]: FASTCALL1 62 R3 L3
+      13 [-]: MOVE R5 R3   
+      14 [-]: GETIMPORT R4 4 [nil]
+      15 [-]: CALL R4 1 1  
+L 3:  16 [-]: JUMPIF R4 L4 
+      17 [-]: LOADN R1 1   
+L 4:  18 [-]: JUMPXEQKNIL R1 L5 NOT
+      19 [-]: LOADN R1 1   
+L 5:  20 [-]: JUMPXEQKN R1 K6 L6 NOT [1]
+      21 [-]: GETIMPORT R4 8 [nil]
+      22 [-]: NAMECALL R5 R3 K9 [0xC45C884B]
+      23 [-]: CALL R5 1 1  
+      24 [-]: SETTABLEKS R5 R4 K10 ["TurretSpawnLevel"]
+      25 [-]: GETIMPORT R6 12 [nil]
+      26 [-]: LOADK R7 K13 ["TurretActivation"]
+      27 [-]: CALL R6 1 1  
+      28 [-]: LOADB R7 0   
+      29 [-]: NAMECALL R4 R2 K14 [0xD5F7912B]
+      30 [-]: CALL R4 3 0  
+L 6:  31 [-]: RETURN R0 0  
+
+
+

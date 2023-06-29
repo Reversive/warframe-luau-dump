@@ -1,124 +1,103 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
-; Max Stack Size:  3
+; Is_vararg:       1
+; Max Stack Size:  2
 
-  1 [-]: CONST     R0 5         ; R0 := 5.000000
-  2 [-]: GETGLOBAL R1 K0        ; R1 := 0x0469f296
-  3 [-]: LOADK     R2 K1        ; R2 := "ASSIST_CHALLENGE"
-  4 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  5 [-]: CLOSURE   R2 0         ; R2 := closure(Function #1)
-  6 [-]: MOVE      R0 R0        ; R0 := R0
-  7 [-]: MOVE      R0 R1        ; R0 := R1
-  8 [-]: SETGLOBAL R2 K2        ; MatchAttackEvent := R2
-  9 [-]: RETURN    R0 1         ; return 
+            1 [-]: GETIMPORT R0 1 [nil]
+       2 [-]: LOADK R1 K2 ["ASSIST_CHALLENGE"]
+       3 [-]: CALL R0 1 1  
+       4 [-]: DUPCLOSURE R1 K3 []
+       5 [-]: MOVE R0 R0   
+       6 [-]: SETGLOBAL R1 K4 ["MatchAttackEvent"]
+       7 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 4
-; #Upvalues:       2
+; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
-; Max Stack Size:  17
+; Max Stack Size:  16
 
-  1 [-]: SELF      R2 R1 K0     ; R3 := R1; R2 := R1[0x5ca33548]
-  2 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  3 [-]: SELF      R3 R0 K1     ; R4 := R0; R3 := R0[0x01145f7a]
-  4 [-]: CALL      R3 2 2       ; R3 := R3(R4)
-  5 [-]: GETGLOBAL R4 K2        ; R4 := _T
-  6 [-]: GETTABLE  R4 R4 K3     ; R4 := R4["gAssistChallengeData"]
-  7 [-]: EQ        0 R4 K4      ; if R4 ~= nil then PC := 12
-  8 [-]: JMP       12           ; PC := 12
-  9 [-]: GETGLOBAL R4 K2        ; R4 := _T
- 10 [-]: NEWTABLE  R5 0 0       ; R5 := {}
- 11 [-]: SETTABLE  R4 K3 R5     ; R4["gAssistChallengeData"] := R5
- 12 [-]: GETGLOBAL R4 K5        ; R4 := 0x7b998233
- 13 [-]: SELF      R5 R3 K6     ; R6 := R3; R5 := R3[0x5e651723]
- 14 [-]: CALL      R5 2 0       ; R5,... := R5(R6)
- 15 [-]: CALL      R4 0 2       ; R4 := R4(R5,...)
- 16 [-]: TEST      R4 1         ; if R4 then PC := 91
- 17 [-]: JMP       91           ; PC := 91
- 18 [-]: SELF      R4 R3 K6     ; R5 := R3; R4 := R3[0x5e651723]
- 19 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 20 [-]: SELF      R4 R4 K0     ; R5 := R4; R4 := R4[0x5ca33548]
- 21 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 22 [-]: SELF      R5 R0 K7     ; R6 := R0; R5 := R0[0x36822477]
- 23 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 24 [-]: TEST      R5 0         ; if not R5 then PC := 69
- 25 [-]: JMP       69           ; PC := 69
- 26 [-]: GETGLOBAL R5 K8        ; R5 := 0x0a8f62a7
- 27 [-]: CALL      R5 1 2       ; R5 := R5()
- 28 [-]: GETGLOBAL R6 K9        ; R6 := 0xbe190284
- 29 [-]: SELF      R6 R6 K10    ; R7 := R6; R6 := R6[0x909ac4cb]
- 30 [-]: SELF      R8 R1 K11    ; R9 := R1; R8 := R1[0xad1e0b4b]
- 31 [-]: CALL      R8 2 0       ; R8,... := R8(R9)
- 32 [-]: CALL      R6 0 2       ; R6 := R6(R7,...)
- 33 [-]: CONST     R7 1         ; R7 := 1.000000
- 34 [-]: LEN       R8 R6        ; R8 := # R6
- 35 [-]: CONST     R9 1         ; R9 := 1.000000
- 36 [-]: FORPREP   R7 67        ; R7 -= R9; PC := 67
- 37 [-]: GETTABLE  R11 R6 R10   ; R11 := R6[R10]
- 38 [-]: SELF      R11 R11 K0   ; R12 := R11; R11 := R11[0x5ca33548]
- 39 [-]: CALL      R11 2 2      ; R11 := R11(R12)
- 40 [-]: EQ        1 R11 R2     ; if R11 == R2 then PC := 67
- 41 [-]: JMP       67           ; PC := 67
- 42 [-]: GETGLOBAL R12 K2       ; R12 := _T
- 43 [-]: GETTABLE  R12 R12 K3   ; R12 := R12["gAssistChallengeData"]
- 44 [-]: GETTABLE  R12 R12 R11  ; R12 := R12[R11]
- 45 [-]: EQ        1 R12 K4     ; if R12 == nil then PC := 67
- 46 [-]: JMP       67           ; PC := 67
- 47 [-]: GETGLOBAL R12 K2       ; R12 := _T
- 48 [-]: GETTABLE  R12 R12 K3   ; R12 := R12["gAssistChallengeData"]
- 49 [-]: GETTABLE  R12 R12 R11  ; R12 := R12[R11]
- 50 [-]: GETTABLE  R12 R12 R4   ; R12 := R12[R4]
- 51 [-]: EQ        1 R12 K4     ; if R12 == nil then PC := 67
- 52 [-]: JMP       67           ; PC := 67
- 53 [-]: GETGLOBAL R12 K2       ; R12 := _T
- 54 [-]: GETTABLE  R12 R12 K3   ; R12 := R12["gAssistChallengeData"]
- 55 [-]: GETTABLE  R12 R12 R11  ; R12 := R12[R11]
- 56 [-]: GETTABLE  R12 R12 R4   ; R12 := R12[R4]
- 57 [-]: SUB       R12 R5 R12   ; R12 := R5 - R12
- 58 [-]: GETUPVAL  R13 U0       ; R13 := U0
- 59 [-]: LE        0 R12 R13    ; if R12 > R13 then PC := 67
- 60 [-]: JMP       67           ; PC := 67
- 61 [-]: GETGLOBAL R12 K12      ; R12 := 0xba7dfcd2
- 62 [-]: SELF      R12 R12 K13  ; R13 := R12; R12 := R12[0xf056b179]
- 63 [-]: GETTABLE  R14 R6 R10   ; R14 := R6[R10]
- 64 [-]: GETUPVAL  R15 U1       ; R15 := U1
- 65 [-]: MOVE      R16 R3       ; R16 := R3
- 66 [-]: CALL      R12 5 1      ; R12(R13,R14,R15,R16)
- 67 [-]: FORLOOP   R7 37        ; R7 += R9; if R7 <= R8 then begin PC := 37; R10 := R7 end
- 68 [-]: JMP       91           ; PC := 91
- 69 [-]: GETGLOBAL R12 K2       ; R12 := _T
- 70 [-]: GETTABLE  R12 R12 K3   ; R12 := R12["gAssistChallengeData"]
- 71 [-]: EQ        0 R12 K4     ; if R12 ~= nil then PC := 76
- 72 [-]: JMP       76           ; PC := 76
- 73 [-]: GETGLOBAL R12 K2       ; R12 := _T
- 74 [-]: NEWTABLE  R13 0 0      ; R13 := {}
- 75 [-]: SETTABLE  R12 K3 R13   ; R12["gAssistChallengeData"] := R13
- 76 [-]: GETGLOBAL R12 K2       ; R12 := _T
- 77 [-]: GETTABLE  R12 R12 K3   ; R12 := R12["gAssistChallengeData"]
- 78 [-]: GETTABLE  R12 R12 R2   ; R12 := R12[R2]
- 79 [-]: EQ        0 R12 K4     ; if R12 ~= nil then PC := 85
- 80 [-]: JMP       85           ; PC := 85
- 81 [-]: GETGLOBAL R12 K2       ; R12 := _T
- 82 [-]: GETTABLE  R12 R12 K3   ; R12 := R12["gAssistChallengeData"]
- 83 [-]: NEWTABLE  R13 0 0      ; R13 := {}
- 84 [-]: SETTABLE  R12 R2 R13   ; R12[R2] := R13
- 85 [-]: GETGLOBAL R12 K2       ; R12 := _T
- 86 [-]: GETTABLE  R12 R12 K3   ; R12 := R12["gAssistChallengeData"]
- 87 [-]: GETTABLE  R12 R12 R2   ; R12 := R12[R2]
- 88 [-]: GETGLOBAL R13 K8       ; R13 := 0x0a8f62a7
- 89 [-]: CALL      R13 1 2      ; R13 := R13()
- 90 [-]: SETTABLE  R12 R4 R13   ; R12[R4] := R13
- 91 [-]: LOADKB    R12 0 0      ; R12 := false
- 92 [-]: RETURN    R12 2        ; return R12
- 93 [-]: RETURN    R0 1         ; return 
+       0 [-]: NAMECALL R2 R1 K0 [0x5CA33548]
+       1 [-]: CALL R2 1 1  
+       2 [-]: NAMECALL R3 R0 K1 [0x01145F7A]
+       3 [-]: CALL R3 1 1  
+       4 [-]: GETIMPORT R4 4 [nil]
+       5 [-]: JUMPXEQKNIL R4 L0 NOT
+       6 [-]: GETIMPORT R4 5 [nil]
+       7 [-]: NEWTABLE R5 0 0
+       8 [-]: SETTABLEKS R5 R4 K3 ["gAssistChallengeData"]
+L 0:   9 [-]: NAMECALL R5 R3 K6 [0x5E651723]
+      10 [-]: CALL R5 1 -1 
+      11 [-]: FASTCALL 62 L1
+      12 [-]: GETIMPORT R4 8 [nil]
+      13 [-]: CALL R4 -1 1 
+L 1:  14 [-]: JUMPIF R4 L7 
+      15 [-]: NAMECALL R4 R3 K6 [0x5E651723]
+      16 [-]: CALL R4 1 1  
+      17 [-]: NAMECALL R4 R4 K0 [0x5CA33548]
+      18 [-]: CALL R4 1 1  
+      19 [-]: NAMECALL R5 R0 K9 [0x36822477]
+      20 [-]: CALL R5 1 1  
+      21 [-]: JUMPIFNOT R5 L4
+      22 [-]: GETIMPORT R5 11 [nil]
+      23 [-]: CALL R5 0 1  
+      24 [-]: GETIMPORT R6 13 [nil]
+      25 [-]: NAMECALL R8 R1 K14 [0xAD1E0B4B]
+      26 [-]: CALL R8 1 -1 
+      27 [-]: NAMECALL R6 R6 K15 [0x909AC4CB]
+      28 [-]: CALL R6 -1 1 
+      29 [-]: LOADN R9 1   
+      30 [-]: LENGTH R7 R6 
+      31 [-]: LOADN R8 1   
+      32 [-]: FORNPREP R7 L7
+L 2:  33 [-]: GETTABLE R10 R6 R9
+      34 [-]: NAMECALL R10 R10 K0 [0x5CA33548]
+      35 [-]: CALL R10 1 1 
+      36 [-]: JUMPIFEQ R10 R2 L3
+      37 [-]: GETIMPORT R12 4 [nil]
+      38 [-]: GETTABLE R11 R12 R10
+      39 [-]: JUMPXEQKNIL R11 L3
+      40 [-]: GETIMPORT R13 4 [nil]
+      41 [-]: GETTABLE R12 R13 R10
+      42 [-]: GETTABLE R11 R12 R4
+      43 [-]: JUMPXEQKNIL R11 L3
+      44 [-]: GETIMPORT R14 4 [nil]
+      45 [-]: GETTABLE R13 R14 R10
+      46 [-]: GETTABLE R12 R13 R4
+      47 [-]: SUB R11 R5 R12
+      48 [-]: LOADN R12 5  
+      49 [-]: JUMPIFNOTLE R11 R12 L3
+      50 [-]: GETIMPORT R11 17 [nil]
+      51 [-]: GETTABLE R13 R6 R9
+      52 [-]: GETUPVAL R14 0
+      53 [-]: MOVE R15 R3  
+      54 [-]: NAMECALL R11 R11 K18 [0xF056B179]
+      55 [-]: CALL R11 4 0 
+L 3:  56 [-]: FORNLOOP R7 L2
+      57 [-]: JUMP L7
+     
+L 4:  58 [-]: GETIMPORT R5 4 [nil]
+      59 [-]: JUMPXEQKNIL R5 L5 NOT
+      60 [-]: GETIMPORT R5 5 [nil]
+      61 [-]: NEWTABLE R6 0 0
+      62 [-]: SETTABLEKS R6 R5 K3 ["gAssistChallengeData"]
+L 5:  63 [-]: GETIMPORT R6 4 [nil]
+      64 [-]: GETTABLE R5 R6 R2
+      65 [-]: JUMPXEQKNIL R5 L6 NOT
+      66 [-]: GETIMPORT R5 4 [nil]
+      67 [-]: NEWTABLE R6 0 0
+      68 [-]: SETTABLE R6 R5 R2
+L 6:  69 [-]: GETIMPORT R6 4 [nil]
+      70 [-]: GETTABLE R5 R6 R2
+      71 [-]: GETIMPORT R6 11 [nil]
+      72 [-]: CALL R6 0 1  
+      73 [-]: SETTABLE R6 R5 R4
+L 7:  74 [-]: LOADB R4 0   
+      75 [-]: RETURN R4 1  
+
 
 

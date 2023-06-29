@@ -1,90 +1,81 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
-; Max Stack Size:  2
+; Is_vararg:       1
+; Max Stack Size:  1
 
-  1 [-]: CLOSURE   R0 0         ; R0 := closure(Function #1)
-  2 [-]: SETGLOBAL R0 K0        ; MatchTagEvent := R0
-  3 [-]: RETURN    R0 1         ; return 
+            1 [-]: DUPCLOSURE R0 K0 []
+       2 [-]: SETGLOBAL R0 K1 ["MatchTagEvent"]
+       3 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
-; Max Stack Size:  8
+; Max Stack Size:  11
 
-  1 [-]: GETGLOBAL R3 K0        ; R3 := 0x7b998233
-  2 [-]: MOVE      R4 R0        ; R4 := R0
-  3 [-]: CALL      R3 2 2       ; R3 := R3(R4)
-  4 [-]: TEST      R3 0         ; if not R3 then PC := 7
-  5 [-]: JMP       7            ; PC := 7
-  6 [-]: RETURN    R0 1         ; return 
-  7 [-]: SELF      R3 R0 K1     ; R4 := R0; R3 := R0[0xbb610e5b]
-  8 [-]: CALL      R3 2 2       ; R3 := R3(R4)
-  9 [-]: GETGLOBAL R4 K0        ; R4 := 0x7b998233
- 10 [-]: MOVE      R5 R3        ; R5 := R3
- 11 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 12 [-]: TEST      R4 0         ; if not R4 then PC := 15
- 13 [-]: JMP       15           ; PC := 15
- 14 [-]: RETURN    R0 1         ; return 
- 15 [-]: SELF      R4 R3 K2     ; R5 := R3; R4 := R3[0x5e651723]
- 16 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 17 [-]: GETGLOBAL R5 K0        ; R5 := 0x7b998233
- 18 [-]: MOVE      R6 R4        ; R6 := R4
- 19 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 20 [-]: TEST      R5 0         ; if not R5 then PC := 23
- 21 [-]: JMP       23           ; PC := 23
- 22 [-]: RETURN    R0 1         ; return 
- 23 [-]: SELF      R5 R4 K3     ; R6 := R4; R5 := R4[0x5ca33548]
- 24 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 25 [-]: GETGLOBAL R6 K4        ; R6 := _T
- 26 [-]: GETTABLE  R6 R6 K5     ; R6 := R6["PerrinEffects"]
- 27 [-]: EQ        0 R6 K6      ; if R6 ~= nil then PC := 32
- 28 [-]: JMP       32           ; PC := 32
- 29 [-]: GETGLOBAL R6 K4        ; R6 := _T
- 30 [-]: NEWTABLE  R7 0 0       ; R7 := {}
- 31 [-]: SETTABLE  R6 K5 R7     ; R6["PerrinEffects"] := R7
- 32 [-]: GETGLOBAL R6 K4        ; R6 := _T
- 33 [-]: GETTABLE  R6 R6 K5     ; R6 := R6["PerrinEffects"]
- 34 [-]: GETTABLE  R6 R6 R5     ; R6 := R6[R5]
- 35 [-]: EQ        0 R6 K6      ; if R6 ~= nil then PC := 45
- 36 [-]: JMP       45           ; PC := 45
- 37 [-]: GETGLOBAL R6 K4        ; R6 := _T
- 38 [-]: GETTABLE  R6 R6 K5     ; R6 := R6["PerrinEffects"]
- 39 [-]: NEWTABLE  R7 0 4       ; R7 := {}
- 40 [-]: SETTABLE  R7 K7 K8     ; R7["Flash"] := 0.000000
- 41 [-]: SETTABLE  R7 K9 K8     ; R7["Total"] := 0.000000
- 42 [-]: SETTABLE  R7 K10 K8    ; R7["BloodFlash"] := 0.000000
- 43 [-]: SETTABLE  R7 K11 K8    ; R7["BloodTotal"] := 0.000000
- 44 [-]: SETTABLE  R6 R5 R7     ; R6[R5] := R7
- 45 [-]: GETGLOBAL R6 K4        ; R6 := _T
- 46 [-]: GETTABLE  R6 R6 K5     ; R6 := R6["PerrinEffects"]
- 47 [-]: GETTABLE  R6 R6 R5     ; R6 := R6[R5]
- 48 [-]: GETGLOBAL R7 K4        ; R7 := _T
- 49 [-]: GETTABLE  R7 R7 K5     ; R7 := R7["PerrinEffects"]
- 50 [-]: GETTABLE  R7 R7 R5     ; R7 := R7[R5]
- 51 [-]: GETTABLE  R7 R7 K7     ; R7 := R7["Flash"]
- 52 [-]: ADD       R7 R7 R2     ; R7 := R7 + R2
- 53 [-]: SETTABLE  R6 K7 R7     ; R6["Flash"] := R7
- 54 [-]: GETGLOBAL R6 K4        ; R6 := _T
- 55 [-]: GETTABLE  R6 R6 K5     ; R6 := R6["PerrinEffects"]
- 56 [-]: GETTABLE  R6 R6 R5     ; R6 := R6[R5]
- 57 [-]: GETGLOBAL R7 K4        ; R7 := _T
- 58 [-]: GETTABLE  R7 R7 K5     ; R7 := R7["PerrinEffects"]
- 59 [-]: GETTABLE  R7 R7 R5     ; R7 := R7[R5]
- 60 [-]: GETTABLE  R7 R7 K9     ; R7 := R7["Total"]
- 61 [-]: ADD       R7 R7 R2     ; R7 := R7 + R2
- 62 [-]: SETTABLE  R6 K9 R7     ; R6["Total"] := R7
- 63 [-]: LOADKB    R6 0 0       ; R6 := false
- 64 [-]: RETURN    R6 2         ; return R6
- 65 [-]: RETURN    R0 1         ; return 
+       0 [-]: FASTCALL1 62 R0 L0
+       1 [-]: MOVE R4 R0   
+       2 [-]: GETIMPORT R3 1 [nil]
+       3 [-]: CALL R3 1 1  
+L 0:   4 [-]: JUMPIFNOT R3 L1
+       5 [-]: RETURN R0 0  
+L 1:   6 [-]: NAMECALL R3 R0 K2 [0xBB610E5B]
+       7 [-]: CALL R3 1 1  
+       8 [-]: FASTCALL1 62 R3 L2
+       9 [-]: MOVE R5 R3   
+      10 [-]: GETIMPORT R4 1 [nil]
+      11 [-]: CALL R4 1 1  
+L 2:  12 [-]: JUMPIFNOT R4 L3
+      13 [-]: RETURN R0 0  
+L 3:  14 [-]: NAMECALL R4 R3 K3 [0x5E651723]
+      15 [-]: CALL R4 1 1  
+      16 [-]: FASTCALL1 62 R4 L4
+      17 [-]: MOVE R6 R4   
+      18 [-]: GETIMPORT R5 1 [nil]
+      19 [-]: CALL R5 1 1  
+L 4:  20 [-]: JUMPIFNOT R5 L5
+      21 [-]: RETURN R0 0  
+L 5:  22 [-]: NAMECALL R5 R4 K4 [0x5CA33548]
+      23 [-]: CALL R5 1 1  
+      24 [-]: GETIMPORT R6 7 [nil]
+      25 [-]: JUMPXEQKNIL R6 L6 NOT
+      26 [-]: GETIMPORT R6 8 [nil]
+      27 [-]: NEWTABLE R7 0 0
+      28 [-]: SETTABLEKS R7 R6 K6 ["PerrinEffects"]
+L 6:  29 [-]: GETIMPORT R7 7 [nil]
+      30 [-]: GETTABLE R6 R7 R5
+      31 [-]: JUMPXEQKNIL R6 L7 NOT
+      32 [-]: GETIMPORT R6 7 [nil]
+      33 [-]: DUPTABLE R7 13
+      34 [-]: LOADN R8 0   
+      35 [-]: SETTABLEKS R8 R7 K9 ["Flash"]
+      36 [-]: LOADN R8 0   
+      37 [-]: SETTABLEKS R8 R7 K10 ["Total"]
+      38 [-]: LOADN R8 0   
+      39 [-]: SETTABLEKS R8 R7 K11 ["BloodFlash"]
+      40 [-]: LOADN R8 0   
+      41 [-]: SETTABLEKS R8 R7 K12 ["BloodTotal"]
+      42 [-]: SETTABLE R7 R6 R5
+L 7:  43 [-]: GETIMPORT R7 7 [nil]
+      44 [-]: GETTABLE R6 R7 R5
+      45 [-]: GETIMPORT R10 7 [nil]
+      46 [-]: GETTABLE R9 R10 R5
+      47 [-]: GETTABLEKS R8 R9 K9 ["Flash"]
+      48 [-]: ADD R7 R8 R2 
+      49 [-]: SETTABLEKS R7 R6 K9 ["Flash"]
+      50 [-]: GETIMPORT R7 7 [nil]
+      51 [-]: GETTABLE R6 R7 R5
+      52 [-]: GETIMPORT R10 7 [nil]
+      53 [-]: GETTABLE R9 R10 R5
+      54 [-]: GETTABLEKS R8 R9 K10 ["Total"]
+      55 [-]: ADD R7 R8 R2 
+      56 [-]: SETTABLEKS R7 R6 K10 ["Total"]
+      57 [-]: LOADB R6 0   
+      58 [-]: RETURN R6 1  
+
 
 

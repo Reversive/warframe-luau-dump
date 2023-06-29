@@ -1,23 +1,19 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
+; Is_vararg:       1
 ; Max Stack Size:  2
 
-  1 [-]: GETGLOBAL R0 K0        ; R0 := 0x2d0fad09
-  2 [-]: LOADK     R1 K1        ; R1 := "EE.Interface.Utilities"
-  3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: CLOSURE   R1 0         ; R1 := closure(Function #1)
-  5 [-]: MOVE      R0 R0        ; R0 := R0
-  6 [-]: SETGLOBAL R1 K2        ; DuviriAbandonTimer := R1
-  7 [-]: RETURN    R0 1         ; return 
+            1 [-]: GETIMPORT R0 1 [nil]
+       2 [-]: LOADK R1 K2 ["EE.Interface.Utilities"]
+       3 [-]: CALL R0 1 1  
+       4 [-]: DUPCLOSURE R1 K3 []
+       5 [-]: MOVE R0 R0   
+       6 [-]: SETGLOBAL R1 K4 ["DuviriAbandonTimer"]
+       7 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 3
 ; #Upvalues:       1
@@ -25,66 +21,67 @@
 ; Is_vararg:       0
 ; Max Stack Size:  24
 
-  1 [-]: CONST     R1 0         ; R1 := 0.000000
-  2 [-]: CONST     R2 15        ; R2 := 15.000000
-  3 [-]: LOADNIL   R3 R3        ; R3 := nil
-  4 [-]: GETGLOBAL R4 K0        ; R4 := 0x89326c93
-  5 [-]: SELF      R4 R4 K1     ; R5 := R4; R4 := R4[0x7d108ddb]
-  6 [-]: CALL      R4 2 2       ; R4 := R4(R5)
-  7 [-]: MOVE      R3 R4        ; R3 := R4
-  8 [-]: GETGLOBAL R4 K0        ; R4 := 0x89326c93
-  9 [-]: SELF      R4 R4 K2     ; R5 := R4; R4 := R4[0x29ef273d]
- 10 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 11 [-]: SELF      R4 R4 K3     ; R5 := R4; R4 := R4[0x66905cb0]
- 12 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 13 [-]: SELF      R4 R4 K4     ; R5 := R4; R4 := R4[0xefc92a3e]
- 14 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 15 [-]: MOVE      R1 R4        ; R1 := R4
- 16 [-]: SELF      R4 R0 K5     ; R5 := R0; R4 := R0[0x8e303322]
- 17 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 18 [-]: GETGLOBAL R5 K6        ; R5 := 0x5bced4c4
- 19 [-]: GETTABLE  R5 R5 K7     ; R5 := R5[0xb62ecfe0]
- 20 [-]: SUB       R6 R4 R1     ; R6 := R4 - R1
- 21 [-]: CONST     R7 0         ; R7 := 0.000000
- 22 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
- 23 [-]: MOVE      R2 R5        ; R2 := R5
- 24 [-]: LT        0 K8 R2      ; if 0.000000 >= R2 then PC := 56
- 25 [-]: JMP       56           ; PC := 56
- 26 [-]: GETGLOBAL R5 K9        ; R5 := 0xc8802016
- 27 [-]: MOVE      R6 R3        ; R6 := R3
- 28 [-]: CALL      R5 2 4       ; R5,R6,R7 := R5(R6)
- 29 [-]: JMP       54           ; PC := 54
- 30 [-]: GETGLOBAL R10 K10      ; R10 := 0xbe190284
- 31 [-]: SELF      R10 R10 K11  ; R11 := R10; R10 := R10[0x06d4c9eb]
- 32 [-]: MOVE      R12 R9       ; R12 := R9
- 33 [-]: LOADK     R13 K12      ; R13 := "/Lotus/Language/Duviri/TimeComposite"
- 34 [-]: LOADK     R14 K13      ; R14 := ""
- 35 [-]: CONST     R15 0        ; R15 := 0.000000
- 36 [-]: CONST     R16 2        ; R16 := 2.000000
- 37 [-]: LOADKB    R17 1 0      ; R17 := true
- 38 [-]: LOADK     R18 K14      ; R18 := "MESSAGE,TIME"
- 39 [-]: LOADK     R19 K15      ; R19 := "/Lotus/Language/Duviri/AbandonWarning,"
- 40 [-]: GETUPVAL  R20 U0       ; R20 := U0
- 41 [-]: GETTABLE  R20 R20 K16  ; R20 := R20[0x1142c7a8]
- 42 [-]: GETGLOBAL R21 K6       ; R21 := 0x5bced4c4
- 43 [-]: GETTABLE  R21 R21 K17  ; R21 := R21[0x55f27c30]
- 44 [-]: MOVE      R22 R2       ; R22 := R2
- 45 [-]: CALL      R21 2 2      ; R21 := R21(R22)
- 46 [-]: CONST     R22 0        ; R22 := 0.000000
- 47 [-]: CALL      R20 3 2      ; R20 := R20(R21,R22)
- 48 [-]: CONCAT    R19 R19 R20  ; R19 := R19 .. R20
- 49 [-]: LOADNIL   R20 R20      ; R20 := nil
- 50 [-]: LOADKB    R21 1 0      ; R21 := true
- 51 [-]: CONST     R22 4        ; R22 := 4.000000
- 52 [-]: LOADK     R23 K18      ; R23 := "DuviriAbandon"
- 53 [-]: CALL      R10 14 1     ; R10(R11,R12,R13,R14,R15,R16,R17,R18,R19,R20,R21,R22,R23)
- 54 [-]: TFORLOOP  R5 2         ; R8,R9 :=  R5(R6,R7); if R8 ~= nil then begin PC = 30; R7 := R8 end
- 55 [-]: JMP       30           ; PC := 30
- 56 [-]: GETGLOBAL R10 K19      ; R10 := 0xcbd666e1
- 57 [-]: CONST     R11 0        ; R11 := 0.500000
- 58 [-]: CALL      R10 2 1      ; R10(R11)
- 59 [-]: LE        0 R2 K8      ; if R2 > 0.000000 then PC := 4
- 60 [-]: JMP       4            ; PC := 4
- 61 [-]: RETURN    R0 1         ; return 
+       0 [-]: LOADN R1 0   
+       1 [-]: LOADN R2 15  
+       2 [-]: LOADNIL R3   
+L 0:   3 [-]: GETIMPORT R4 1 [nil]
+       4 [-]: NAMECALL R4 R4 K2 [0x7D108DDB]
+       5 [-]: CALL R4 1 1  
+       6 [-]: MOVE R3 R4   
+       7 [-]: GETIMPORT R4 1 [nil]
+       8 [-]: NAMECALL R4 R4 K3 [0x29EF273D]
+       9 [-]: CALL R4 1 1  
+      10 [-]: NAMECALL R4 R4 K4 [0x66905CB0]
+      11 [-]: CALL R4 1 1  
+      12 [-]: NAMECALL R4 R4 K5 [0xEFC92A3E]
+      13 [-]: CALL R4 1 1  
+      14 [-]: MOVE R1 R4   
+      15 [-]: NAMECALL R4 R0 K6 [0x8E303322]
+      16 [-]: CALL R4 1 1  
+      17 [-]: SUB R6 R4 R1 
+      18 [-]: FASTCALL2K 18 R6 K7 L1 [0]
+      19 [-]: LOADK R7 K7 [0]
+      20 [-]: GETIMPORT R5 10 [nil]
+      21 [-]: CALL R5 2 1  
+L 1:  22 [-]: MOVE R2 R5   
+      23 [-]: LOADN R5 0   
+      24 [-]: JUMPIFNOTLT R5 R2 L5
+      25 [-]: GETIMPORT R5 12 [nil]
+      26 [-]: MOVE R6 R3   
+      27 [-]: CALL R5 1 3  
+      28 [-]: FORGPREP_INEXT R5 L4
+L 2:  29 [-]: GETIMPORT R10 14 [nil]
+      30 [-]: MOVE R12 R9  
+      31 [-]: LOADK R13 K15 ["/Lotus/Language/Duviri/TimeComposite"]
+      32 [-]: LOADK R14 K16 [""]
+      33 [-]: LOADN R15 0  
+      34 [-]: LOADN R16 2  
+      35 [-]: LOADB R17 1  
+      36 [-]: LOADK R18 K17 ["MESSAGE,TIME"]
+      37 [-]: LOADK R20 K18 ["/Lotus/Language/Duviri/AbandonWarning,"]
+      38 [-]: GETUPVAL R22 0
+      39 [-]: GETTABLEKS R21 R22 K19 [0x1142C7A8]
+      40 [-]: FASTCALL1 12 R2 L3
+      41 [-]: MOVE R23 R2  
+      42 [-]: GETIMPORT R22 21 [nil]
+      43 [-]: CALL R22 1 1 
+L 3:  44 [-]: LOADN R23 0  
+      45 [-]: CALL R21 2 1 
+      46 [-]: CONCAT R19 R20 R21
+      47 [-]: LOADNIL R20  
+      48 [-]: LOADB R21 1  
+      49 [-]: LOADN R22 4  
+      50 [-]: LOADK R23 K22 ["DuviriAbandon"]
+      51 [-]: NAMECALL R10 R10 K23 [0x06D4C9EB]
+      52 [-]: CALL R10 13 0
+L 4:  53 [-]: FORGLOOP R5 L2 2 [inext]
+L 5:  54 [-]: GETIMPORT R5 25 [nil]
+      55 [-]: LOADK R6 K26 [0.5]
+      56 [-]: CALL R5 1 0  
+      57 [-]: LOADN R5 0   
+      58 [-]: JUMPIFLE R2 R5 L6
+      59 [-]: JUMPBACK L0  
+L 6:  60 [-]: RETURN R0 0  
+
 
 

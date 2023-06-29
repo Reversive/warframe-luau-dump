@@ -1,27 +1,23 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
-; Max Stack Size:  2
+; Is_vararg:       1
+; Max Stack Size:  1
 
-  1 [-]: CLOSURE   R0 0         ; R0 := closure(Function #1)
-  2 [-]: SETGLOBAL R0 K0        ; FireDestroyOnParent := R0
-  3 [-]: CLOSURE   R0 1         ; R0 := closure(Function #2)
-  4 [-]: SETGLOBAL R0 K1        ; ChangeParentTint := R0
-  5 [-]: CLOSURE   R0 2         ; R0 := closure(Function #3)
-  6 [-]: SETGLOBAL R0 K2        ; RemoveParentTint := R0
-  7 [-]: CLOSURE   R0 3         ; R0 := closure(Function #4)
-  8 [-]: SETGLOBAL R0 K3        ; ChangeEmissiveTint := R0
-  9 [-]: CLOSURE   R0 4         ; R0 := closure(Function #5)
- 10 [-]: SETGLOBAL R0 K4        ; SwapMultipleMaterials := R0
- 11 [-]: RETURN    R0 1         ; return 
+            1 [-]: DUPCLOSURE R0 K0 []
+       2 [-]: SETGLOBAL R0 K1 ["FireDestroyOnParent"]
+       3 [-]: DUPCLOSURE R0 K2 []
+       4 [-]: SETGLOBAL R0 K3 ["ChangeParentTint"]
+       5 [-]: DUPCLOSURE R0 K4 []
+       6 [-]: SETGLOBAL R0 K5 ["RemoveParentTint"]
+       7 [-]: DUPCLOSURE R0 K6 []
+       8 [-]: SETGLOBAL R0 K7 ["ChangeEmissiveTint"]
+       9 [-]: DUPCLOSURE R0 K8 []
+      10 [-]: SETGLOBAL R0 K9 ["SwapMultipleMaterials"]
+      11 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 5
 ; #Upvalues:       0
@@ -29,22 +25,20 @@
 ; Is_vararg:       0
 ; Max Stack Size:  5
 
-  1 [-]: SELF      R1 R0 K0     ; R2 := R0; R1 := R0[0x2b54251b]
-  2 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  3 [-]: GETGLOBAL R2 K1        ; R2 := 0x7b998233
-  4 [-]: MOVE      R3 R1        ; R3 := R1
-  5 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  6 [-]: TEST      R2 0         ; if not R2 then PC := 9
-  7 [-]: JMP       9            ; PC := 9
-  8 [-]: RETURN    R0 1         ; return 
-  9 [-]: SELF      R2 R1 K2     ; R3 := R1; R2 := R1[0x8eb2112d]
- 10 [-]: LOADK     R4 K3        ; R4 := "Destroy"
- 11 [-]: CALL      R2 3 1       ; R2(R3,R4)
- 12 [-]: RETURN    R0 1         ; return 
+       0 [-]: NAMECALL R1 R0 K0 [0x2B54251B]
+       1 [-]: CALL R1 1 1  
+       2 [-]: FASTCALL1 62 R1 L0
+       3 [-]: MOVE R3 R1   
+       4 [-]: GETIMPORT R2 2 [nil]
+       5 [-]: CALL R2 1 1  
+L 0:   6 [-]: JUMPIFNOT R2 L1
+       7 [-]: RETURN R0 0  
+L 1:   8 [-]: LOADK R4 K3 ["Destroy"]
+       9 [-]: NAMECALL R2 R1 K4 [0x8EB2112D]
+      10 [-]: CALL R2 2 0  
+      11 [-]: RETURN R0 0  
 
 
-; Function #2:
-;
 ; Name:            
 ; Defined at line: 15
 ; #Upvalues:       0
@@ -52,29 +46,23 @@
 ; Is_vararg:       0
 ; Max Stack Size:  9
 
-  1 [-]: GETGLOBAL R1 K0        ; R1 := 0x7b998233
-  2 [-]: MOVE      R2 R0        ; R2 := R0
-  3 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  4 [-]: TEST      R1 0         ; if not R1 then PC := 7
-  5 [-]: JMP       7            ; PC := 7
-  6 [-]: RETURN    R0 1         ; return 
-  7 [-]: SELF      R1 R0 K1     ; R2 := R0; R1 := R0[0x986d2ab8]
-  8 [-]: GETGLOBAL R3 K2        ; R3 := 0x6c97a788
-  9 [-]: GETTABLE  R3 R3 K3     ; R3 := R3["TINT_COLOR"]
- 10 [-]: GETGLOBAL R4 K4        ; R4 := 0x82bf2571
- 11 [-]: GETTABLE  R4 R4 K5     ; R4 := R4["red"]
- 12 [-]: GETGLOBAL R5 K4        ; R5 := 0x82bf2571
- 13 [-]: GETTABLE  R5 R5 K6     ; R5 := R5["blue"]
- 14 [-]: GETGLOBAL R6 K4        ; R6 := 0x82bf2571
- 15 [-]: GETTABLE  R6 R6 K7     ; R6 := R6["green"]
- 16 [-]: CONST     R7 0         ; R7 := 0.500000
- 17 [-]: LOADKB    R8 1 0       ; R8 := true
- 18 [-]: CALL      R1 8 1       ; R1(R2,R3,R4,R5,R6,R7,R8)
- 19 [-]: RETURN    R0 1         ; return 
+       0 [-]: FASTCALL1 62 R0 L0
+       1 [-]: MOVE R2 R0   
+       2 [-]: GETIMPORT R1 1 [nil]
+       3 [-]: CALL R1 1 1  
+L 0:   4 [-]: JUMPIFNOT R1 L1
+       5 [-]: RETURN R0 0  
+L 1:   6 [-]: GETIMPORT R3 4 [nil]
+       7 [-]: GETIMPORT R4 7 [nil]
+       8 [-]: GETIMPORT R5 9 [nil]
+       9 [-]: GETIMPORT R6 11 [nil]
+      10 [-]: LOADK R7 K12 [0.5]
+      11 [-]: LOADB R8 1   
+      12 [-]: NAMECALL R1 R0 K13 [0x986D2AB8]
+      13 [-]: CALL R1 7 0  
+      14 [-]: RETURN R0 0  
 
 
-; Function #3:
-;
 ; Name:            
 ; Defined at line: 25
 ; #Upvalues:       0
@@ -82,21 +70,18 @@
 ; Is_vararg:       0
 ; Max Stack Size:  4
 
-  1 [-]: GETGLOBAL R1 K0        ; R1 := 0x7b998233
-  2 [-]: MOVE      R2 R0        ; R2 := R0
-  3 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  4 [-]: TEST      R1 0         ; if not R1 then PC := 7
-  5 [-]: JMP       7            ; PC := 7
-  6 [-]: RETURN    R0 1         ; return 
-  7 [-]: SELF      R1 R0 K1     ; R2 := R0; R1 := R0[0x5b65edac]
-  8 [-]: GETGLOBAL R3 K2        ; R3 := 0x6c97a788
-  9 [-]: GETTABLE  R3 R3 K3     ; R3 := R3["TINT_COLOR"]
- 10 [-]: CALL      R1 3 1       ; R1(R2,R3)
- 11 [-]: RETURN    R0 1         ; return 
+       0 [-]: FASTCALL1 62 R0 L0
+       1 [-]: MOVE R2 R0   
+       2 [-]: GETIMPORT R1 1 [nil]
+       3 [-]: CALL R1 1 1  
+L 0:   4 [-]: JUMPIFNOT R1 L1
+       5 [-]: RETURN R0 0  
+L 1:   6 [-]: GETIMPORT R3 4 [nil]
+       7 [-]: NAMECALL R1 R0 K5 [0x5B65EDAC]
+       8 [-]: CALL R1 2 0  
+       9 [-]: RETURN R0 0  
 
 
-; Function #4:
-;
 ; Name:            
 ; Defined at line: 34
 ; #Upvalues:       0
@@ -104,38 +89,30 @@
 ; Is_vararg:       0
 ; Max Stack Size:  9
 
-  1 [-]: GETGLOBAL R1 K0        ; R1 := 0x7b998233
-  2 [-]: MOVE      R2 R0        ; R2 := R0
-  3 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  4 [-]: TEST      R1 0         ; if not R1 then PC := 7
-  5 [-]: JMP       7            ; PC := 7
-  6 [-]: RETURN    R0 1         ; return 
-  7 [-]: SELF      R1 R0 K1     ; R2 := R0; R1 := R0[0x5b65edac]
-  8 [-]: GETGLOBAL R3 K2        ; R3 := 0x6c97a788
-  9 [-]: GETTABLE  R3 R3 K3     ; R3 := R3["EMISSIVE_TINT_COLOR"]
- 10 [-]: CALL      R1 3 1       ; R1(R2,R3)
- 11 [-]: SELF      R1 R0 K4     ; R2 := R0; R1 := R0[0x986d2ab8]
- 12 [-]: GETGLOBAL R3 K2        ; R3 := 0x6c97a788
- 13 [-]: GETTABLE  R3 R3 K3     ; R3 := R3["EMISSIVE_TINT_COLOR"]
- 14 [-]: GETGLOBAL R4 K5        ; R4 := 0x82bf2571
- 15 [-]: GETTABLE  R4 R4 K6     ; R4 := R4["red"]
- 16 [-]: DIV       R4 R4 K7     ; R4 := R4 / 255.000000
- 17 [-]: GETGLOBAL R5 K5        ; R5 := 0x82bf2571
- 18 [-]: GETTABLE  R5 R5 K8     ; R5 := R5["blue"]
- 19 [-]: DIV       R5 R5 K7     ; R5 := R5 / 255.000000
- 20 [-]: GETGLOBAL R6 K5        ; R6 := 0x82bf2571
- 21 [-]: GETTABLE  R6 R6 K9     ; R6 := R6["green"]
- 22 [-]: DIV       R6 R6 K7     ; R6 := R6 / 255.000000
- 23 [-]: GETGLOBAL R7 K5        ; R7 := 0x82bf2571
- 24 [-]: GETTABLE  R7 R7 K10    ; R7 := R7["alpha"]
- 25 [-]: DIV       R7 R7 K7     ; R7 := R7 / 255.000000
- 26 [-]: LOADKB    R8 1 0       ; R8 := true
- 27 [-]: CALL      R1 8 1       ; R1(R2,R3,R4,R5,R6,R7,R8)
- 28 [-]: RETURN    R0 1         ; return 
+       0 [-]: FASTCALL1 62 R0 L0
+       1 [-]: MOVE R2 R0   
+       2 [-]: GETIMPORT R1 1 [nil]
+       3 [-]: CALL R1 1 1  
+L 0:   4 [-]: JUMPIFNOT R1 L1
+       5 [-]: RETURN R0 0  
+L 1:   6 [-]: GETIMPORT R3 4 [nil]
+       7 [-]: NAMECALL R1 R0 K5 [0x5B65EDAC]
+       8 [-]: CALL R1 2 0  
+       9 [-]: GETIMPORT R3 4 [nil]
+      10 [-]: GETIMPORT R5 9 [nil]
+      11 [-]: DIVK R4 R5 K6 [255]
+      12 [-]: GETIMPORT R6 11 [nil]
+      13 [-]: DIVK R5 R6 K6 [255]
+      14 [-]: GETIMPORT R7 13 [nil]
+      15 [-]: DIVK R6 R7 K6 [255]
+      16 [-]: GETIMPORT R8 15 [nil]
+      17 [-]: DIVK R7 R8 K6 [255]
+      18 [-]: LOADB R8 1   
+      19 [-]: NAMECALL R1 R0 K16 [0x986D2AB8]
+      20 [-]: CALL R1 7 0  
+      21 [-]: RETURN R0 0  
 
 
-; Function #5:
-;
 ; Name:            
 ; Defined at line: 46
 ; #Upvalues:       0
@@ -143,30 +120,29 @@
 ; Is_vararg:       0
 ; Max Stack Size:  11
 
-  1 [-]: GETGLOBAL R1 K0        ; R1 := 0x7b998233
-  2 [-]: MOVE      R2 R0        ; R2 := R0
-  3 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  4 [-]: TEST      R1 0         ; if not R1 then PC := 7
-  5 [-]: JMP       7            ; PC := 7
-  6 [-]: RETURN    R0 1         ; return 
-  7 [-]: GETGLOBAL R1 K1        ; R1 := 0xd913c032
-  8 [-]: TEST      R1 1         ; if R1 then PC := 22
-  9 [-]: JMP       22           ; PC := 22
- 10 [-]: GETGLOBAL R1 K2        ; R1 := 0xc8802016
- 11 [-]: GETGLOBAL R2 K3        ; R2 := 0x7137fa82
- 12 [-]: CALL      R1 2 4       ; R1,R2,R3 := R1(R2)
- 13 [-]: JMP       19           ; PC := 19
- 14 [-]: SELF      R6 R0 K4     ; R7 := R0; R6 := R0[0xcddc3abb]
- 15 [-]: SUB       R8 R4 K5     ; R8 := R4 - 1.000000
- 16 [-]: MOVE      R9 R5        ; R9 := R5
- 17 [-]: LOADKB    R10 0 0      ; R10 := false
- 18 [-]: CALL      R6 5 1       ; R6(R7,R8,R9,R10)
- 19 [-]: TFORLOOP  R1 2         ; R4,R5 :=  R1(R2,R3); if R4 ~= nil then begin PC = 14; R3 := R4 end
- 20 [-]: JMP       14           ; PC := 14
- 21 [-]: JMP       25           ; PC := 25
- 22 [-]: SELF      R6 R0 K6     ; R7 := R0; R6 := R0[0x043dad9d]
- 23 [-]: LOADKB    R8 0 0       ; R8 := false
- 24 [-]: CALL      R6 3 1       ; R6(R7,R8)
- 25 [-]: RETURN    R0 1         ; return 
+       0 [-]: FASTCALL1 62 R0 L0
+       1 [-]: MOVE R2 R0   
+       2 [-]: GETIMPORT R1 1 [nil]
+       3 [-]: CALL R1 1 1  
+L 0:   4 [-]: JUMPIFNOT R1 L1
+       5 [-]: RETURN R0 0  
+L 1:   6 [-]: GETIMPORT R1 3 [nil]
+       7 [-]: JUMPIF R1 L4 
+       8 [-]: GETIMPORT R1 5 [nil]
+       9 [-]: GETIMPORT R2 7 [nil]
+      10 [-]: CALL R1 1 3  
+      11 [-]: FORGPREP_INEXT R1 L3
+L 2:  12 [-]: SUBK R8 R4 K8 [1]
+      13 [-]: MOVE R9 R5   
+      14 [-]: LOADB R10 0  
+      15 [-]: NAMECALL R6 R0 K9 [0xCDDC3ABB]
+      16 [-]: CALL R6 4 0  
+L 3:  17 [-]: FORGLOOP R1 L2 2 [inext]
+      18 [-]: RETURN R0 0  
+L 4:  19 [-]: LOADB R3 0   
+      20 [-]: NAMECALL R1 R0 K10 [0x043DAD9D]
+      21 [-]: CALL R1 2 0  
+      22 [-]: RETURN R0 0  
+
 
 

@@ -1,1443 +1,1481 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
+; Is_vararg:       1
 ; Max Stack Size:  28
 
-  1 [-]: GETGLOBAL R0 K0        ; R0 := 0xaeabecda
-  2 [-]: VARARG    R1 R2        ; R1 := R2 := ...
-  3 [-]: GETGLOBAL R2 K1        ; R2 := package
-  4 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["seeall"]
-  5 [-]: CALL      R0 3 1       ; R0(R1,R2)
-  6 [-]: GETGLOBAL R0 K3        ; R0 := 0x5bced4c4
-  7 [-]: GETTABLE  R0 R0 K4     ; R0 := R0["pow"]
-  8 [-]: GETGLOBAL R1 K3        ; R1 := 0x5bced4c4
-  9 [-]: GETTABLE  R1 R1 K5     ; R1 := R1["sin"]
- 10 [-]: GETGLOBAL R2 K3        ; R2 := 0x5bced4c4
- 11 [-]: GETTABLE  R2 R2 K6     ; R2 := R2["cos"]
- 12 [-]: LOADK     R3 K7        ; R3 := 3.141593
- 13 [-]: GETGLOBAL R4 K3        ; R4 := 0x5bced4c4
- 14 [-]: GETTABLE  R4 R4 K8     ; R4 := R4["sqrt"]
- 15 [-]: GETGLOBAL R5 K3        ; R5 := 0x5bced4c4
- 16 [-]: GETTABLE  R5 R5 K9     ; R5 := R5["abs"]
- 17 [-]: GETGLOBAL R6 K3        ; R6 := 0x5bced4c4
- 18 [-]: GETTABLE  R6 R6 K10    ; R6 := R6["asin"]
- 19 [-]: CLOSURE   R7 0         ; R7 := closure(Function #1)
- 20 [-]: SETGLOBAL R7 K11       ; linear := R7
- 21 [-]: CLOSURE   R7 1         ; R7 := closure(Function #2)
- 22 [-]: MOVE      R0 R0        ; R0 := R0
- 23 [-]: CLOSURE   R8 2         ; R8 := closure(Function #3)
- 24 [-]: CLOSURE   R9 3         ; R9 := closure(Function #4)
- 25 [-]: MOVE      R0 R7        ; R0 := R7
- 26 [-]: SETGLOBAL R9 K12       ; inQuad := R9
- 27 [-]: CLOSURE   R9 4         ; R9 := closure(Function #5)
- 28 [-]: MOVE      R0 R8        ; R0 := R8
- 29 [-]: SETGLOBAL R9 K13       ; outQuad := R9
- 30 [-]: CLOSURE   R9 5         ; R9 := closure(Function #6)
- 31 [-]: MOVE      R0 R0        ; R0 := R0
- 32 [-]: SETGLOBAL R9 K14       ; inOutQuad := R9
- 33 [-]: CLOSURE   R9 6         ; R9 := closure(Function #7)
- 34 [-]: SETGLOBAL R9 K15       ; inOutQuadIntegral := R9
- 35 [-]: CLOSURE   R9 7         ; R9 := closure(Function #8)
- 36 [-]: MOVE      R0 R8        ; R0 := R8
- 37 [-]: MOVE      R0 R7        ; R0 := R7
- 38 [-]: SETGLOBAL R9 K16       ; outInQuad := R9
- 39 [-]: CLOSURE   R9 8         ; R9 := closure(Function #9)
- 40 [-]: MOVE      R0 R0        ; R0 := R0
- 41 [-]: CLOSURE   R10 9        ; R10 := closure(Function #10)
- 42 [-]: MOVE      R0 R0        ; R0 := R0
- 43 [-]: CLOSURE   R11 10       ; R11 := closure(Function #11)
- 44 [-]: MOVE      R0 R9        ; R0 := R9
- 45 [-]: SETGLOBAL R11 K17      ; inCubic := R11
- 46 [-]: CLOSURE   R11 11       ; R11 := closure(Function #12)
- 47 [-]: MOVE      R0 R10       ; R0 := R10
- 48 [-]: SETGLOBAL R11 K18      ; outCubic := R11
- 49 [-]: CLOSURE   R11 12       ; R11 := closure(Function #13)
- 50 [-]: SETGLOBAL R11 K19      ; inOutCubic := R11
- 51 [-]: CLOSURE   R11 13       ; R11 := closure(Function #14)
- 52 [-]: MOVE      R0 R10       ; R0 := R10
- 53 [-]: MOVE      R0 R9        ; R0 := R9
- 54 [-]: SETGLOBAL R11 K20      ; outInCubic := R11
- 55 [-]: CLOSURE   R11 14       ; R11 := closure(Function #15)
- 56 [-]: MOVE      R0 R0        ; R0 := R0
- 57 [-]: CLOSURE   R12 15       ; R12 := closure(Function #16)
- 58 [-]: MOVE      R0 R0        ; R0 := R0
- 59 [-]: CLOSURE   R13 16       ; R13 := closure(Function #17)
- 60 [-]: MOVE      R0 R11       ; R0 := R11
- 61 [-]: SETGLOBAL R13 K21      ; inQuart := R13
- 62 [-]: CLOSURE   R13 17       ; R13 := closure(Function #18)
- 63 [-]: MOVE      R0 R12       ; R0 := R12
- 64 [-]: SETGLOBAL R13 K22      ; outQuart := R13
- 65 [-]: CLOSURE   R13 18       ; R13 := closure(Function #19)
- 66 [-]: MOVE      R0 R0        ; R0 := R0
- 67 [-]: SETGLOBAL R13 K23      ; inOutQuart := R13
- 68 [-]: CLOSURE   R13 19       ; R13 := closure(Function #20)
- 69 [-]: MOVE      R0 R12       ; R0 := R12
- 70 [-]: MOVE      R0 R11       ; R0 := R11
- 71 [-]: SETGLOBAL R13 K24      ; outInQuart := R13
- 72 [-]: CLOSURE   R13 20       ; R13 := closure(Function #21)
- 73 [-]: MOVE      R0 R0        ; R0 := R0
- 74 [-]: CLOSURE   R14 21       ; R14 := closure(Function #22)
- 75 [-]: MOVE      R0 R0        ; R0 := R0
- 76 [-]: CLOSURE   R15 22       ; R15 := closure(Function #23)
- 77 [-]: MOVE      R0 R13       ; R0 := R13
- 78 [-]: SETGLOBAL R15 K25      ; inQuint := R15
- 79 [-]: CLOSURE   R15 23       ; R15 := closure(Function #24)
- 80 [-]: MOVE      R0 R14       ; R0 := R14
- 81 [-]: SETGLOBAL R15 K26      ; outQuint := R15
- 82 [-]: CLOSURE   R15 24       ; R15 := closure(Function #25)
- 83 [-]: MOVE      R0 R0        ; R0 := R0
- 84 [-]: SETGLOBAL R15 K27      ; inOutQuint := R15
- 85 [-]: CLOSURE   R15 25       ; R15 := closure(Function #26)
- 86 [-]: MOVE      R0 R14       ; R0 := R14
- 87 [-]: MOVE      R0 R13       ; R0 := R13
- 88 [-]: SETGLOBAL R15 K28      ; outInQuint := R15
- 89 [-]: CLOSURE   R15 26       ; R15 := closure(Function #27)
- 90 [-]: MOVE      R0 R2        ; R0 := R2
- 91 [-]: MOVE      R0 R3        ; R0 := R3
- 92 [-]: CLOSURE   R16 27       ; R16 := closure(Function #28)
- 93 [-]: MOVE      R0 R1        ; R0 := R1
- 94 [-]: MOVE      R0 R3        ; R0 := R3
- 95 [-]: CLOSURE   R17 28       ; R17 := closure(Function #29)
- 96 [-]: MOVE      R0 R15       ; R0 := R15
- 97 [-]: SETGLOBAL R17 K29      ; inSine := R17
- 98 [-]: CLOSURE   R17 29       ; R17 := closure(Function #30)
- 99 [-]: MOVE      R0 R16       ; R0 := R16
-100 [-]: SETGLOBAL R17 K30      ; outSine := R17
-101 [-]: CLOSURE   R17 30       ; R17 := closure(Function #31)
-102 [-]: MOVE      R0 R2        ; R0 := R2
-103 [-]: MOVE      R0 R3        ; R0 := R3
-104 [-]: SETGLOBAL R17 K31      ; inOutSine := R17
-105 [-]: CLOSURE   R17 31       ; R17 := closure(Function #32)
-106 [-]: MOVE      R0 R16       ; R0 := R16
-107 [-]: MOVE      R0 R15       ; R0 := R15
-108 [-]: SETGLOBAL R17 K32      ; outInSine := R17
-109 [-]: CLOSURE   R17 32       ; R17 := closure(Function #33)
-110 [-]: MOVE      R0 R0        ; R0 := R0
-111 [-]: CLOSURE   R18 33       ; R18 := closure(Function #34)
-112 [-]: MOVE      R0 R0        ; R0 := R0
-113 [-]: CLOSURE   R19 34       ; R19 := closure(Function #35)
-114 [-]: MOVE      R0 R17       ; R0 := R17
-115 [-]: SETGLOBAL R19 K33      ; inExpo := R19
-116 [-]: CLOSURE   R19 35       ; R19 := closure(Function #36)
-117 [-]: MOVE      R0 R18       ; R0 := R18
-118 [-]: SETGLOBAL R19 K34      ; outExpo := R19
-119 [-]: CLOSURE   R19 36       ; R19 := closure(Function #37)
-120 [-]: MOVE      R0 R0        ; R0 := R0
-121 [-]: SETGLOBAL R19 K35      ; inOutExpo := R19
-122 [-]: CLOSURE   R19 37       ; R19 := closure(Function #38)
-123 [-]: MOVE      R0 R18       ; R0 := R18
-124 [-]: MOVE      R0 R17       ; R0 := R17
-125 [-]: SETGLOBAL R19 K36      ; outInExpo := R19
-126 [-]: CLOSURE   R19 38       ; R19 := closure(Function #39)
-127 [-]: MOVE      R0 R4        ; R0 := R4
-128 [-]: MOVE      R0 R0        ; R0 := R0
-129 [-]: CLOSURE   R20 39       ; R20 := closure(Function #40)
-130 [-]: MOVE      R0 R4        ; R0 := R4
-131 [-]: MOVE      R0 R0        ; R0 := R0
-132 [-]: CLOSURE   R21 40       ; R21 := closure(Function #41)
-133 [-]: MOVE      R0 R19       ; R0 := R19
-134 [-]: SETGLOBAL R21 K37      ; inCirc := R21
-135 [-]: CLOSURE   R21 41       ; R21 := closure(Function #42)
-136 [-]: MOVE      R0 R20       ; R0 := R20
-137 [-]: SETGLOBAL R21 K38      ; outCirc := R21
-138 [-]: CLOSURE   R21 42       ; R21 := closure(Function #43)
-139 [-]: MOVE      R0 R4        ; R0 := R4
-140 [-]: SETGLOBAL R21 K39      ; inOutCirc := R21
-141 [-]: CLOSURE   R21 43       ; R21 := closure(Function #44)
-142 [-]: MOVE      R0 R20       ; R0 := R20
-143 [-]: MOVE      R0 R19       ; R0 := R19
-144 [-]: SETGLOBAL R21 K40      ; outInCirc := R21
-145 [-]: CLOSURE   R21 44       ; R21 := closure(Function #45)
-146 [-]: MOVE      R0 R5        ; R0 := R5
-147 [-]: MOVE      R0 R3        ; R0 := R3
-148 [-]: MOVE      R0 R6        ; R0 := R6
-149 [-]: MOVE      R0 R0        ; R0 := R0
-150 [-]: MOVE      R0 R1        ; R0 := R1
-151 [-]: CLOSURE   R22 45       ; R22 := closure(Function #46)
-152 [-]: MOVE      R0 R5        ; R0 := R5
-153 [-]: MOVE      R0 R3        ; R0 := R3
-154 [-]: MOVE      R0 R6        ; R0 := R6
-155 [-]: MOVE      R0 R0        ; R0 := R0
-156 [-]: MOVE      R0 R1        ; R0 := R1
-157 [-]: CLOSURE   R23 46       ; R23 := closure(Function #47)
-158 [-]: MOVE      R0 R21       ; R0 := R21
-159 [-]: SETGLOBAL R23 K41      ; inElastic := R23
-160 [-]: CLOSURE   R23 47       ; R23 := closure(Function #48)
-161 [-]: MOVE      R0 R22       ; R0 := R22
-162 [-]: SETGLOBAL R23 K42      ; outElastic := R23
-163 [-]: CLOSURE   R23 48       ; R23 := closure(Function #49)
-164 [-]: MOVE      R0 R5        ; R0 := R5
-165 [-]: MOVE      R0 R3        ; R0 := R3
-166 [-]: MOVE      R0 R6        ; R0 := R6
-167 [-]: MOVE      R0 R0        ; R0 := R0
-168 [-]: MOVE      R0 R1        ; R0 := R1
-169 [-]: SETGLOBAL R23 K43      ; inOutElastic := R23
-170 [-]: CLOSURE   R23 49       ; R23 := closure(Function #50)
-171 [-]: MOVE      R0 R22       ; R0 := R22
-172 [-]: MOVE      R0 R21       ; R0 := R21
-173 [-]: SETGLOBAL R23 K44      ; outInElastic := R23
-174 [-]: CLOSURE   R23 50       ; R23 := closure(Function #51)
-175 [-]: CLOSURE   R24 51       ; R24 := closure(Function #52)
-176 [-]: CLOSURE   R25 52       ; R25 := closure(Function #53)
-177 [-]: MOVE      R0 R23       ; R0 := R23
-178 [-]: SETGLOBAL R25 K45      ; inBack := R25
-179 [-]: CLOSURE   R25 53       ; R25 := closure(Function #54)
-180 [-]: MOVE      R0 R24       ; R0 := R24
-181 [-]: SETGLOBAL R25 K46      ; outBack := R25
-182 [-]: CLOSURE   R25 54       ; R25 := closure(Function #55)
-183 [-]: SETGLOBAL R25 K47      ; inOutBack := R25
-184 [-]: CLOSURE   R25 55       ; R25 := closure(Function #56)
-185 [-]: MOVE      R0 R24       ; R0 := R24
-186 [-]: MOVE      R0 R23       ; R0 := R23
-187 [-]: SETGLOBAL R25 K48      ; outInBack := R25
-188 [-]: CLOSURE   R25 56       ; R25 := closure(Function #57)
-189 [-]: CLOSURE   R26 57       ; R26 := closure(Function #58)
-190 [-]: MOVE      R0 R25       ; R0 := R25
-191 [-]: CLOSURE   R27 58       ; R27 := closure(Function #59)
-192 [-]: MOVE      R0 R25       ; R0 := R25
-193 [-]: SETGLOBAL R27 K49      ; outBounce := R27
-194 [-]: CLOSURE   R27 59       ; R27 := closure(Function #60)
-195 [-]: MOVE      R0 R26       ; R0 := R26
-196 [-]: SETGLOBAL R27 K50      ; inBounce := R27
-197 [-]: CLOSURE   R27 60       ; R27 := closure(Function #61)
-198 [-]: MOVE      R0 R26       ; R0 := R26
-199 [-]: MOVE      R0 R25       ; R0 := R25
-200 [-]: SETGLOBAL R27 K51      ; inOutBounce := R27
-201 [-]: CLOSURE   R27 61       ; R27 := closure(Function #62)
-202 [-]: MOVE      R0 R25       ; R0 := R25
-203 [-]: MOVE      R0 R26       ; R0 := R26
-204 [-]: SETGLOBAL R27 K52      ; outInBounce := R27
-205 [-]: RETURN    R0 1         ; return 
+            1 [-]: GETIMPORT R0 1 [nil]
+       2 [-]: GETVARARGS R1 1
+       3 [-]: GETIMPORT R2 4 [nil]
+       4 [-]: CALL R0 2 0  
+       5 [-]: GETIMPORT R0 7 [nil]
+       6 [-]: GETIMPORT R1 9 [nil]
+       7 [-]: GETIMPORT R2 11 [nil]
+       8 [-]: LOADK R3 K12 [3.1415927410125732]
+       9 [-]: GETIMPORT R4 14 [nil]
+      10 [-]: GETIMPORT R5 16 [nil]
+      11 [-]: GETIMPORT R6 18 [nil]
+      12 [-]: DUPCLOSURE R7 K19 []
+      13 [-]: SETGLOBAL R7 K20 ["linear"]
+      14 [-]: DUPCLOSURE R7 K21 []
+      15 [-]: MOVE R0 R0   
+      16 [-]: DUPCLOSURE R8 K22 []
+      17 [-]: DUPCLOSURE R9 K23 []
+      18 [-]: MOVE R0 R0   
+      19 [-]: SETGLOBAL R9 K24 ["inQuad"]
+      20 [-]: DUPCLOSURE R9 K25 []
+      21 [-]: SETGLOBAL R9 K26 ["outQuad"]
+      22 [-]: DUPCLOSURE R9 K27 []
+      23 [-]: MOVE R0 R0   
+      24 [-]: SETGLOBAL R9 K28 ["inOutQuad"]
+      25 [-]: DUPCLOSURE R9 K29 []
+      26 [-]: SETGLOBAL R9 K30 ["inOutQuadIntegral"]
+      27 [-]: DUPCLOSURE R9 K31 []
+      28 [-]: MOVE R0 R0   
+      29 [-]: SETGLOBAL R9 K32 ["outInQuad"]
+      30 [-]: DUPCLOSURE R9 K33 []
+      31 [-]: MOVE R0 R0   
+      32 [-]: DUPCLOSURE R10 K34 []
+      33 [-]: MOVE R0 R0   
+      34 [-]: DUPCLOSURE R11 K35 []
+      35 [-]: MOVE R0 R0   
+      36 [-]: SETGLOBAL R11 K36 ["inCubic"]
+      37 [-]: DUPCLOSURE R11 K37 []
+      38 [-]: MOVE R0 R0   
+      39 [-]: SETGLOBAL R11 K38 ["outCubic"]
+      40 [-]: DUPCLOSURE R11 K39 []
+      41 [-]: SETGLOBAL R11 K40 ["inOutCubic"]
+      42 [-]: DUPCLOSURE R11 K41 []
+      43 [-]: MOVE R0 R0   
+      44 [-]: SETGLOBAL R11 K42 ["outInCubic"]
+      45 [-]: DUPCLOSURE R11 K43 []
+      46 [-]: MOVE R0 R0   
+      47 [-]: DUPCLOSURE R12 K44 []
+      48 [-]: MOVE R0 R0   
+      49 [-]: DUPCLOSURE R13 K45 []
+      50 [-]: MOVE R0 R0   
+      51 [-]: SETGLOBAL R13 K46 ["inQuart"]
+      52 [-]: DUPCLOSURE R13 K47 []
+      53 [-]: MOVE R0 R0   
+      54 [-]: SETGLOBAL R13 K48 ["outQuart"]
+      55 [-]: DUPCLOSURE R13 K49 []
+      56 [-]: MOVE R0 R0   
+      57 [-]: SETGLOBAL R13 K50 ["inOutQuart"]
+      58 [-]: DUPCLOSURE R13 K51 []
+      59 [-]: MOVE R0 R0   
+      60 [-]: SETGLOBAL R13 K52 ["outInQuart"]
+      61 [-]: DUPCLOSURE R13 K53 []
+      62 [-]: MOVE R0 R0   
+      63 [-]: DUPCLOSURE R14 K54 []
+      64 [-]: MOVE R0 R0   
+      65 [-]: DUPCLOSURE R15 K55 []
+      66 [-]: MOVE R0 R0   
+      67 [-]: SETGLOBAL R15 K56 ["inQuint"]
+      68 [-]: DUPCLOSURE R15 K57 []
+      69 [-]: MOVE R0 R0   
+      70 [-]: SETGLOBAL R15 K58 ["outQuint"]
+      71 [-]: DUPCLOSURE R15 K59 []
+      72 [-]: MOVE R0 R0   
+      73 [-]: SETGLOBAL R15 K60 ["inOutQuint"]
+      74 [-]: DUPCLOSURE R15 K61 []
+      75 [-]: MOVE R0 R0   
+      76 [-]: SETGLOBAL R15 K62 ["outInQuint"]
+      77 [-]: DUPCLOSURE R15 K63 []
+      78 [-]: MOVE R0 R3   
+      79 [-]: MOVE R0 R2   
+      80 [-]: DUPCLOSURE R16 K64 []
+      81 [-]: MOVE R0 R3   
+      82 [-]: MOVE R0 R1   
+      83 [-]: DUPCLOSURE R17 K65 []
+      84 [-]: MOVE R0 R3   
+      85 [-]: MOVE R0 R2   
+      86 [-]: SETGLOBAL R17 K66 ["inSine"]
+      87 [-]: DUPCLOSURE R17 K67 []
+      88 [-]: MOVE R0 R3   
+      89 [-]: MOVE R0 R1   
+      90 [-]: SETGLOBAL R17 K68 ["outSine"]
+      91 [-]: DUPCLOSURE R17 K69 []
+      92 [-]: MOVE R0 R3   
+      93 [-]: MOVE R0 R2   
+      94 [-]: SETGLOBAL R17 K70 ["inOutSine"]
+      95 [-]: DUPCLOSURE R17 K71 []
+      96 [-]: MOVE R0 R3   
+      97 [-]: MOVE R0 R1   
+      98 [-]: MOVE R0 R2   
+      99 [-]: SETGLOBAL R17 K72 ["outInSine"]
+     100 [-]: DUPCLOSURE R17 K73 []
+     101 [-]: MOVE R0 R0   
+     102 [-]: DUPCLOSURE R18 K74 []
+     103 [-]: MOVE R0 R0   
+     104 [-]: DUPCLOSURE R19 K75 []
+     105 [-]: MOVE R0 R0   
+     106 [-]: SETGLOBAL R19 K76 ["inExpo"]
+     107 [-]: DUPCLOSURE R19 K77 []
+     108 [-]: MOVE R0 R0   
+     109 [-]: SETGLOBAL R19 K78 ["outExpo"]
+     110 [-]: DUPCLOSURE R19 K79 []
+     111 [-]: MOVE R0 R0   
+     112 [-]: SETGLOBAL R19 K80 ["inOutExpo"]
+     113 [-]: DUPCLOSURE R19 K81 []
+     114 [-]: MOVE R0 R0   
+     115 [-]: SETGLOBAL R19 K82 ["outInExpo"]
+     116 [-]: DUPCLOSURE R19 K83 []
+     117 [-]: MOVE R0 R0   
+     118 [-]: MOVE R0 R4   
+     119 [-]: DUPCLOSURE R20 K84 []
+     120 [-]: MOVE R0 R0   
+     121 [-]: MOVE R0 R4   
+     122 [-]: DUPCLOSURE R21 K85 []
+     123 [-]: MOVE R0 R0   
+     124 [-]: MOVE R0 R4   
+     125 [-]: SETGLOBAL R21 K86 ["inCirc"]
+     126 [-]: DUPCLOSURE R21 K87 []
+     127 [-]: MOVE R0 R0   
+     128 [-]: MOVE R0 R4   
+     129 [-]: SETGLOBAL R21 K88 ["outCirc"]
+     130 [-]: DUPCLOSURE R21 K89 []
+     131 [-]: MOVE R0 R4   
+     132 [-]: SETGLOBAL R21 K90 ["inOutCirc"]
+     133 [-]: DUPCLOSURE R21 K91 []
+     134 [-]: MOVE R0 R0   
+     135 [-]: MOVE R0 R4   
+     136 [-]: SETGLOBAL R21 K92 ["outInCirc"]
+     137 [-]: DUPCLOSURE R21 K93 []
+     138 [-]: MOVE R0 R5   
+     139 [-]: MOVE R0 R3   
+     140 [-]: MOVE R0 R6   
+     141 [-]: MOVE R0 R0   
+     142 [-]: MOVE R0 R1   
+     143 [-]: DUPCLOSURE R22 K94 []
+     144 [-]: MOVE R0 R5   
+     145 [-]: MOVE R0 R3   
+     146 [-]: MOVE R0 R6   
+     147 [-]: MOVE R0 R0   
+     148 [-]: MOVE R0 R1   
+     149 [-]: DUPCLOSURE R23 K95 []
+     150 [-]: MOVE R0 R21  
+     151 [-]: SETGLOBAL R23 K96 ["inElastic"]
+     152 [-]: DUPCLOSURE R23 K97 []
+     153 [-]: MOVE R0 R22  
+     154 [-]: SETGLOBAL R23 K98 ["outElastic"]
+     155 [-]: DUPCLOSURE R23 K99 []
+     156 [-]: MOVE R0 R5   
+     157 [-]: MOVE R0 R3   
+     158 [-]: MOVE R0 R6   
+     159 [-]: MOVE R0 R0   
+     160 [-]: MOVE R0 R1   
+     161 [-]: SETGLOBAL R23 K100 ["inOutElastic"]
+     162 [-]: DUPCLOSURE R23 K101 []
+     163 [-]: MOVE R0 R22  
+     164 [-]: MOVE R0 R21  
+     165 [-]: SETGLOBAL R23 K102 ["outInElastic"]
+     166 [-]: DUPCLOSURE R23 K103 []
+     167 [-]: DUPCLOSURE R24 K104 []
+     168 [-]: DUPCLOSURE R25 K105 []
+     169 [-]: SETGLOBAL R25 K106 ["inBack"]
+     170 [-]: DUPCLOSURE R25 K107 []
+     171 [-]: SETGLOBAL R25 K108 ["outBack"]
+     172 [-]: DUPCLOSURE R25 K109 []
+     173 [-]: SETGLOBAL R25 K110 ["inOutBack"]
+     174 [-]: DUPCLOSURE R25 K111 []
+     175 [-]: SETGLOBAL R25 K112 ["outInBack"]
+     176 [-]: DUPCLOSURE R25 K113 []
+     177 [-]: DUPCLOSURE R26 K114 []
+     178 [-]: MOVE R0 R25  
+     179 [-]: DUPCLOSURE R27 K115 []
+     180 [-]: MOVE R0 R25  
+     181 [-]: SETGLOBAL R27 K116 ["outBounce"]
+     182 [-]: DUPCLOSURE R27 K117 []
+     183 [-]: MOVE R0 R25  
+     184 [-]: SETGLOBAL R27 K118 ["inBounce"]
+     185 [-]: DUPCLOSURE R27 K119 []
+     186 [-]: MOVE R0 R25  
+     187 [-]: SETGLOBAL R27 K120 ["inOutBounce"]
+     188 [-]: DUPCLOSURE R27 K121 []
+     189 [-]: MOVE R0 R25  
+     190 [-]: SETGLOBAL R27 K122 ["outInBounce"]
+     191 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 41
 ; #Upvalues:       0
 ; #Parameters:     4
 ; Is_vararg:       0
-; Max Stack Size:  5
+; Max Stack Size:  7
 
-  1 [-]: MUL       R4 R2 R0     ; R4 := R2 * R0
-  2 [-]: DIV       R4 R4 R3     ; R4 := R4 / R3
-  3 [-]: ADD       R4 R4 R1     ; R4 := R4 + R1
-  4 [-]: RETURN    R4 2         ; return R4
-  5 [-]: RETURN    R0 1         ; return 
+       0 [-]: MUL R6 R2 R0 
+       1 [-]: DIV R5 R6 R3 
+       2 [-]: ADD R4 R5 R1 
+       3 [-]: RETURN R4 1  
 
 
-; Function #2:
-;
 ; Name:            
 ; Defined at line: 45
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
-; Max Stack Size:  7
+; Max Stack Size:  9
 
-  1 [-]: DIV       R0 R0 R3     ; R0 := R0 / R3
-  2 [-]: GETUPVAL  R4 U0        ; R4 := U0
-  3 [-]: MOVE      R5 R0        ; R5 := R0
-  4 [-]: CONST     R6 2         ; R6 := 2.000000
-  5 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
-  6 [-]: MUL       R4 R2 R4     ; R4 := R2 * R4
-  7 [-]: ADD       R4 R4 R1     ; R4 := R4 + R1
-  8 [-]: RETURN    R4 2         ; return R4
-  9 [-]: RETURN    R0 1         ; return 
+       0 [-]: DIV R0 R0 R3 
+       1 [-]: FASTCALL2K 21 R0 K0 L0 [2]
+       2 [-]: MOVE R7 R0   
+       3 [-]: LOADK R8 K0 [2]
+       4 [-]: GETUPVAL R6 0
+       5 [-]: CALL R6 2 1  
+L 0:   6 [-]: MUL R5 R2 R6 
+       7 [-]: ADD R4 R5 R1 
+       8 [-]: RETURN R4 1  
 
 
-; Function #3:
-;
 ; Name:            
 ; Defined at line: 50
 ; #Upvalues:       0
 ; #Parameters:     4
 ; Is_vararg:       0
-; Max Stack Size:  6
+; Max Stack Size:  8
 
-  1 [-]: DIV       R0 R0 R3     ; R0 := R0 / R3
-  2 [-]: UNM       R4 R2        ; R4 :=  R2
-  3 [-]: MUL       R4 R4 R0     ; R4 := R4 * R0
-  4 [-]: SUB       R5 R0 K0     ; R5 := R0 - 2.000000
-  5 [-]: MUL       R4 R4 R5     ; R4 := R4 * R5
-  6 [-]: ADD       R4 R4 R1     ; R4 := R4 + R1
-  7 [-]: RETURN    R4 2         ; return R4
-  8 [-]: RETURN    R0 1         ; return 
+       0 [-]: DIV R0 R0 R3 
+       1 [-]: MINUS R7 R2  
+       2 [-]: MUL R6 R7 R0 
+       3 [-]: SUBK R7 R0 K0 [2]
+       4 [-]: MUL R5 R6 R7 
+       5 [-]: ADD R4 R5 R1 
+       6 [-]: RETURN R4 1  
 
 
-; Function #4:
-;
 ; Name:            
 ; Defined at line: 55
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
-; Max Stack Size:  9
+; Max Stack Size:  10
 
-  1 [-]: GETUPVAL  R4 U0        ; R4 := U0
-  2 [-]: MOVE      R5 R0        ; R5 := R0
-  3 [-]: MOVE      R6 R1        ; R6 := R1
-  4 [-]: MOVE      R7 R2        ; R7 := R2
-  5 [-]: MOVE      R8 R3        ; R8 := R3
-  6 [-]: TAILCALL  R4 5 0       ; R4,... := R4(R5,R6,R7,R8)
-  7 [-]: RETURN    R4 0         ; return R4,...
-  8 [-]: RETURN    R0 1         ; return 
+       0 [-]: MOVE R5 R0   
+       1 [-]: DIV R5 R5 R3 
+       2 [-]: FASTCALL2K 21 R5 K0 L0 [2]
+       3 [-]: MOVE R8 R5   
+       4 [-]: LOADK R9 K0 [2]
+       5 [-]: GETUPVAL R7 0
+       6 [-]: CALL R7 2 1  
+L 0:   7 [-]: MUL R6 R2 R7 
+       8 [-]: ADD R4 R6 R1 
+       9 [-]: RETURN R4 1  
 
 
-; Function #5:
-;
 ; Name:            
 ; Defined at line: 59
-; #Upvalues:       1
+; #Upvalues:       0
 ; #Parameters:     4
 ; Is_vararg:       0
 ; Max Stack Size:  9
 
-  1 [-]: GETUPVAL  R4 U0        ; R4 := U0
-  2 [-]: MOVE      R5 R0        ; R5 := R0
-  3 [-]: MOVE      R6 R1        ; R6 := R1
-  4 [-]: MOVE      R7 R2        ; R7 := R2
-  5 [-]: MOVE      R8 R3        ; R8 := R3
-  6 [-]: TAILCALL  R4 5 0       ; R4,... := R4(R5,R6,R7,R8)
-  7 [-]: RETURN    R4 0         ; return R4,...
-  8 [-]: RETURN    R0 1         ; return 
+       0 [-]: MOVE R5 R0   
+       1 [-]: DIV R5 R5 R3 
+       2 [-]: MINUS R8 R2  
+       3 [-]: MUL R7 R8 R5 
+       4 [-]: SUBK R8 R5 K0 [2]
+       5 [-]: MUL R6 R7 R8 
+       6 [-]: ADD R4 R6 R1 
+       7 [-]: RETURN R4 1  
 
 
-; Function #6:
-;
 ; Name:            
 ; Defined at line: 63
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
-; Max Stack Size:  8
+; Max Stack Size:  11
 
-  1 [-]: DIV       R4 R0 R3     ; R4 := R0 / R3
-  2 [-]: MUL       R0 R4 K0     ; R0 := R4 * 2.000000
-  3 [-]: LT        0 R0 K1      ; if R0 >= 1.000000 then PC := 14
-  4 [-]: JMP       14           ; PC := 14
-  5 [-]: DIV       R4 R2 K0     ; R4 := R2 / 2.000000
-  6 [-]: GETUPVAL  R5 U0        ; R5 := U0
-  7 [-]: MOVE      R6 R0        ; R6 := R0
-  8 [-]: CONST     R7 2         ; R7 := 2.000000
-  9 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
- 10 [-]: MUL       R4 R4 R5     ; R4 := R4 * R5
- 11 [-]: ADD       R4 R4 R1     ; R4 := R4 + R1
- 12 [-]: RETURN    R4 2         ; return R4
- 13 [-]: JMP       23           ; PC := 23
- 14 [-]: UNM       R4 R2        ; R4 :=  R2
- 15 [-]: DIV       R4 R4 K0     ; R4 := R4 / 2.000000
- 16 [-]: SUB       R5 R0 K1     ; R5 := R0 - 1.000000
- 17 [-]: SUB       R6 R0 K2     ; R6 := R0 - 3.000000
- 18 [-]: MUL       R5 R5 R6     ; R5 := R5 * R6
- 19 [-]: SUB       R5 R5 K1     ; R5 := R5 - 1.000000
- 20 [-]: MUL       R4 R4 R5     ; R4 := R4 * R5
- 21 [-]: ADD       R4 R4 R1     ; R4 := R4 + R1
- 22 [-]: RETURN    R4 2         ; return R4
- 23 [-]: RETURN    R0 1         ; return 
+       0 [-]: DIV R4 R0 R3 
+       1 [-]: MULK R0 R4 K0 [2]
+       2 [-]: LOADN R4 1   
+       3 [-]: JUMPIFNOTLT R0 R4 L1
+       4 [-]: DIVK R6 R2 K0 [2]
+       5 [-]: FASTCALL2K 21 R0 K0 L0 [2]
+       6 [-]: MOVE R8 R0   
+       7 [-]: LOADK R9 K0 [2]
+       8 [-]: GETUPVAL R7 0
+       9 [-]: CALL R7 2 1  
+L 0:  10 [-]: MUL R5 R6 R7 
+      11 [-]: ADD R4 R5 R1 
+      12 [-]: RETURN R4 1  
+L 1:  13 [-]: MINUS R7 R2  
+      14 [-]: DIVK R6 R7 K0 [2]
+      15 [-]: SUBK R9 R0 K1 [1]
+      16 [-]: SUBK R10 R0 K2 [3]
+      17 [-]: MUL R8 R9 R10
+      18 [-]: SUBK R7 R8 K1 [1]
+      19 [-]: MUL R5 R6 R7 
+      20 [-]: ADD R4 R5 R1 
+      21 [-]: RETURN R4 1  
 
 
-; Function #7:
-;
 ; Name:            
 ; Defined at line: 72
 ; #Upvalues:       0
 ; #Parameters:     4
 ; Is_vararg:       0
-; Max Stack Size:  6
+; Max Stack Size:  15
 
-  1 [-]: DIV       R4 R0 R3     ; R4 := R0 / R3
-  2 [-]: MUL       R4 R4 K0     ; R4 := R4 * 2.000000
-  3 [-]: LT        0 R4 K1      ; if R4 >= 1.000000 then PC := 15
-  4 [-]: JMP       15           ; PC := 15
-  5 [-]: MUL       R4 K0 R2     ; R4 := 2.000000 * R2
-  6 [-]: MUL       R4 R4 R0     ; R4 := R4 * R0
-  7 [-]: MUL       R4 R4 R0     ; R4 := R4 * R0
-  8 [-]: MUL       R5 K2 R3     ; R5 := 3.000000 * R3
-  9 [-]: MUL       R5 R5 R3     ; R5 := R5 * R3
- 10 [-]: DIV       R4 R4 R5     ; R4 := R4 / R5
- 11 [-]: ADD       R4 R1 R4     ; R4 := R1 + R4
- 12 [-]: MUL       R4 R0 R4     ; R4 := R0 * R4
- 13 [-]: RETURN    R4 2         ; return R4
- 14 [-]: JMP       31           ; PC := 31
- 15 [-]: MUL       R4 K0 R0     ; R4 := 2.000000 * R0
- 16 [-]: MUL       R4 R4 R0     ; R4 := R4 * R0
- 17 [-]: MUL       R5 K2 R3     ; R5 := 3.000000 * R3
- 18 [-]: MUL       R5 R5 R3     ; R5 := R5 * R3
- 19 [-]: DIV       R4 R4 R5     ; R4 := R4 / R5
- 20 [-]: MUL       R5 K0 R0     ; R5 := 2.000000 * R0
- 21 [-]: DIV       R5 R5 R3     ; R5 := R5 / R3
- 22 [-]: SUB       R4 R4 R5     ; R4 := R4 - R5
- 23 [-]: ADD       R4 R4 K1     ; R4 := R4 + 1.000000
- 24 [-]: MUL       R4 R2 R4     ; R4 := R2 * R4
- 25 [-]: SUB       R4 R1 R4     ; R4 := R1 - R4
- 26 [-]: MUL       R4 R0 R4     ; R4 := R0 * R4
- 27 [-]: MUL       R5 R2 R3     ; R5 := R2 * R3
- 28 [-]: DIV       R5 R5 K3     ; R5 := R5 / 6.000000
- 29 [-]: ADD       R4 R4 R5     ; R4 := R4 + R5
- 30 [-]: RETURN    R4 2         ; return R4
- 31 [-]: RETURN    R0 1         ; return 
+       0 [-]: DIV R5 R0 R3 
+       1 [-]: MULK R4 R5 K0 [2]
+       2 [-]: LOADN R5 1   
+       3 [-]: JUMPIFNOTLT R4 R5 L0
+       4 [-]: LOADN R10 2  
+       5 [-]: MUL R9 R10 R2
+       6 [-]: MUL R8 R9 R0 
+       7 [-]: MUL R7 R8 R0 
+       8 [-]: LOADN R10 3  
+       9 [-]: MUL R9 R10 R3
+      10 [-]: MUL R8 R9 R3 
+      11 [-]: DIV R6 R7 R8 
+      12 [-]: ADD R5 R1 R6 
+      13 [-]: MUL R4 R0 R5 
+      14 [-]: RETURN R4 1  
+L 0:  15 [-]: LOADN R13 2  
+      16 [-]: MUL R12 R13 R0
+      17 [-]: MUL R11 R12 R0
+      18 [-]: LOADN R14 3  
+      19 [-]: MUL R13 R14 R3
+      20 [-]: MUL R12 R13 R3
+      21 [-]: DIV R10 R11 R12
+      22 [-]: LOADN R13 2  
+      23 [-]: MUL R12 R13 R0
+      24 [-]: DIV R11 R12 R3
+      25 [-]: SUB R9 R10 R11
+      26 [-]: ADDK R8 R9 K1 [1]
+      27 [-]: MUL R7 R2 R8 
+      28 [-]: SUB R6 R1 R7 
+      29 [-]: MUL R5 R0 R6 
+      30 [-]: MUL R7 R2 R3 
+      31 [-]: DIVK R6 R7 K2 [6]
+      32 [-]: ADD R4 R5 R6 
+      33 [-]: RETURN R4 1  
 
 
-; Function #8:
-;
 ; Name:            
 ; Defined at line: 80
-; #Upvalues:       2
+; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
-; Max Stack Size:  9
+; Max Stack Size:  12
 
-  1 [-]: DIV       R4 R3 K0     ; R4 := R3 / 2.000000
-  2 [-]: LT        0 R0 R4      ; if R0 >= R4 then PC := 12
-  3 [-]: JMP       12           ; PC := 12
-  4 [-]: GETUPVAL  R4 U0        ; R4 := U0
-  5 [-]: MUL       R5 R0 K0     ; R5 := R0 * 2.000000
-  6 [-]: MOVE      R6 R1        ; R6 := R1
-  7 [-]: DIV       R7 R2 K0     ; R7 := R2 / 2.000000
-  8 [-]: MOVE      R8 R3        ; R8 := R3
-  9 [-]: TAILCALL  R4 5 0       ; R4,... := R4(R5,R6,R7,R8)
- 10 [-]: RETURN    R4 0         ; return R4,...
- 11 [-]: JMP       21           ; PC := 21
- 12 [-]: GETUPVAL  R4 U1        ; R4 := U1
- 13 [-]: MUL       R5 R0 K0     ; R5 := R0 * 2.000000
- 14 [-]: SUB       R5 R5 R3     ; R5 := R5 - R3
- 15 [-]: DIV       R6 R2 K0     ; R6 := R2 / 2.000000
- 16 [-]: ADD       R6 R1 R6     ; R6 := R1 + R6
- 17 [-]: DIV       R7 R2 K0     ; R7 := R2 / 2.000000
- 18 [-]: MOVE      R8 R3        ; R8 := R3
- 19 [-]: TAILCALL  R4 5 0       ; R4,... := R4(R5,R6,R7,R8)
- 20 [-]: RETURN    R4 0         ; return R4,...
- 21 [-]: RETURN    R0 1         ; return 
+       0 [-]: DIVK R4 R3 K0 [2]
+       1 [-]: JUMPIFNOTLT R0 R4 L0
+       2 [-]: MULK R5 R0 K0 [2]
+       3 [-]: DIVK R6 R2 K0 [2]
+       4 [-]: DIV R5 R5 R3 
+       5 [-]: MINUS R9 R6  
+       6 [-]: MUL R8 R9 R5 
+       7 [-]: SUBK R9 R5 K0 [2]
+       8 [-]: MUL R7 R8 R9 
+       9 [-]: ADD R4 R7 R1 
+      10 [-]: RETURN R4 1  
+L 0:  11 [-]: MULK R6 R0 K0 [2]
+      12 [-]: SUB R5 R6 R3 
+      13 [-]: DIVK R7 R2 K0 [2]
+      14 [-]: ADD R6 R1 R7 
+      15 [-]: DIVK R7 R2 K0 [2]
+      16 [-]: DIV R5 R5 R3 
+      17 [-]: FASTCALL2K 21 R5 K0 L1 [2]
+      18 [-]: MOVE R10 R5  
+      19 [-]: LOADK R11 K0 [2]
+      20 [-]: GETUPVAL R9 0
+      21 [-]: CALL R9 2 1  
+L 1:  22 [-]: MUL R8 R7 R9 
+      23 [-]: ADD R4 R8 R6 
+      24 [-]: RETURN R4 1  
 
 
-; Function #9:
-;
 ; Name:            
 ; Defined at line: 88
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
-; Max Stack Size:  7
+; Max Stack Size:  9
 
-  1 [-]: DIV       R0 R0 R3     ; R0 := R0 / R3
-  2 [-]: GETUPVAL  R4 U0        ; R4 := U0
-  3 [-]: MOVE      R5 R0        ; R5 := R0
-  4 [-]: CONST     R6 3         ; R6 := 3.000000
-  5 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
-  6 [-]: MUL       R4 R2 R4     ; R4 := R2 * R4
-  7 [-]: ADD       R4 R4 R1     ; R4 := R4 + R1
-  8 [-]: RETURN    R4 2         ; return R4
-  9 [-]: RETURN    R0 1         ; return 
+       0 [-]: DIV R0 R0 R3 
+       1 [-]: FASTCALL2K 21 R0 K0 L0 [3]
+       2 [-]: MOVE R7 R0   
+       3 [-]: LOADK R8 K0 [3]
+       4 [-]: GETUPVAL R6 0
+       5 [-]: CALL R6 2 1  
+L 0:   6 [-]: MUL R5 R2 R6 
+       7 [-]: ADD R4 R5 R1 
+       8 [-]: RETURN R4 1  
 
 
-; Function #10:
-;
 ; Name:            
 ; Defined at line: 93
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
-; Max Stack Size:  7
+; Max Stack Size:  10
 
-  1 [-]: DIV       R4 R0 R3     ; R4 := R0 / R3
-  2 [-]: SUB       R0 R4 K0     ; R0 := R4 - 1.000000
-  3 [-]: GETUPVAL  R4 U0        ; R4 := U0
-  4 [-]: MOVE      R5 R0        ; R5 := R0
-  5 [-]: CONST     R6 3         ; R6 := 3.000000
-  6 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
-  7 [-]: ADD       R4 R4 K0     ; R4 := R4 + 1.000000
-  8 [-]: MUL       R4 R2 R4     ; R4 := R2 * R4
-  9 [-]: ADD       R4 R4 R1     ; R4 := R4 + R1
- 10 [-]: RETURN    R4 2         ; return R4
- 11 [-]: RETURN    R0 1         ; return 
+       0 [-]: DIV R4 R0 R3 
+       1 [-]: SUBK R0 R4 K0 [1]
+       2 [-]: FASTCALL2K 21 R0 K1 L0 [3]
+       3 [-]: MOVE R8 R0   
+       4 [-]: LOADK R9 K1 [3]
+       5 [-]: GETUPVAL R7 0
+       6 [-]: CALL R7 2 1  
+L 0:   7 [-]: ADDK R6 R7 K0 [1]
+       8 [-]: MUL R5 R2 R6 
+       9 [-]: ADD R4 R5 R1 
+      10 [-]: RETURN R4 1  
 
 
-; Function #11:
-;
 ; Name:            
 ; Defined at line: 98
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
-; Max Stack Size:  9
+; Max Stack Size:  10
 
-  1 [-]: GETUPVAL  R4 U0        ; R4 := U0
-  2 [-]: MOVE      R5 R0        ; R5 := R0
-  3 [-]: MOVE      R6 R1        ; R6 := R1
-  4 [-]: MOVE      R7 R2        ; R7 := R2
-  5 [-]: MOVE      R8 R3        ; R8 := R3
-  6 [-]: TAILCALL  R4 5 0       ; R4,... := R4(R5,R6,R7,R8)
-  7 [-]: RETURN    R4 0         ; return R4,...
-  8 [-]: RETURN    R0 1         ; return 
+       0 [-]: MOVE R5 R0   
+       1 [-]: DIV R5 R5 R3 
+       2 [-]: FASTCALL2K 21 R5 K0 L0 [3]
+       3 [-]: MOVE R8 R5   
+       4 [-]: LOADK R9 K0 [3]
+       5 [-]: GETUPVAL R7 0
+       6 [-]: CALL R7 2 1  
+L 0:   7 [-]: MUL R6 R2 R7 
+       8 [-]: ADD R4 R6 R1 
+       9 [-]: RETURN R4 1  
 
 
-; Function #12:
-;
 ; Name:            
 ; Defined at line: 102
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
-; Max Stack Size:  9
+; Max Stack Size:  11
 
-  1 [-]: GETUPVAL  R4 U0        ; R4 := U0
-  2 [-]: MOVE      R5 R0        ; R5 := R0
-  3 [-]: MOVE      R6 R1        ; R6 := R1
-  4 [-]: MOVE      R7 R2        ; R7 := R2
-  5 [-]: MOVE      R8 R3        ; R8 := R3
-  6 [-]: TAILCALL  R4 5 0       ; R4,... := R4(R5,R6,R7,R8)
-  7 [-]: RETURN    R4 0         ; return R4,...
-  8 [-]: RETURN    R0 1         ; return 
+       0 [-]: MOVE R5 R0   
+       1 [-]: DIV R6 R5 R3 
+       2 [-]: SUBK R5 R6 K0 [1]
+       3 [-]: FASTCALL2K 21 R5 K1 L0 [3]
+       4 [-]: MOVE R9 R5   
+       5 [-]: LOADK R10 K1 [3]
+       6 [-]: GETUPVAL R8 0
+       7 [-]: CALL R8 2 1  
+L 0:   8 [-]: ADDK R7 R8 K0 [1]
+       9 [-]: MUL R6 R2 R7 
+      10 [-]: ADD R4 R6 R1 
+      11 [-]: RETURN R4 1  
 
 
-; Function #13:
-;
 ; Name:            
 ; Defined at line: 106
 ; #Upvalues:       0
 ; #Parameters:     4
 ; Is_vararg:       0
-; Max Stack Size:  6
+; Max Stack Size:  10
 
-  1 [-]: DIV       R4 R0 R3     ; R4 := R0 / R3
-  2 [-]: MUL       R0 R4 K0     ; R0 := R4 * 2.000000
-  3 [-]: LT        0 R0 K1      ; if R0 >= 1.000000 then PC := 12
-  4 [-]: JMP       12           ; PC := 12
-  5 [-]: DIV       R4 R2 K0     ; R4 := R2 / 2.000000
-  6 [-]: MUL       R4 R4 R0     ; R4 := R4 * R0
-  7 [-]: MUL       R4 R4 R0     ; R4 := R4 * R0
-  8 [-]: MUL       R4 R4 R0     ; R4 := R4 * R0
-  9 [-]: ADD       R4 R4 R1     ; R4 := R4 + R1
- 10 [-]: RETURN    R4 2         ; return R4
- 11 [-]: JMP       20           ; PC := 20
- 12 [-]: SUB       R0 R0 K0     ; R0 := R0 - 2.000000
- 13 [-]: DIV       R4 R2 K0     ; R4 := R2 / 2.000000
- 14 [-]: MUL       R5 R0 R0     ; R5 := R0 * R0
- 15 [-]: MUL       R5 R5 R0     ; R5 := R5 * R0
- 16 [-]: ADD       R5 R5 K0     ; R5 := R5 + 2.000000
- 17 [-]: MUL       R4 R4 R5     ; R4 := R4 * R5
- 18 [-]: ADD       R4 R4 R1     ; R4 := R4 + R1
- 19 [-]: RETURN    R4 2         ; return R4
- 20 [-]: RETURN    R0 1         ; return 
+       0 [-]: DIV R4 R0 R3 
+       1 [-]: MULK R0 R4 K0 [2]
+       2 [-]: LOADN R4 1   
+       3 [-]: JUMPIFNOTLT R0 R4 L0
+       4 [-]: DIVK R8 R2 K0 [2]
+       5 [-]: MUL R7 R8 R0 
+       6 [-]: MUL R6 R7 R0 
+       7 [-]: MUL R5 R6 R0 
+       8 [-]: ADD R4 R5 R1 
+       9 [-]: RETURN R4 1  
+L 0:  10 [-]: SUBK R0 R0 K0 [2]
+      11 [-]: DIVK R6 R2 K0 [2]
+      12 [-]: MUL R9 R0 R0 
+      13 [-]: MUL R8 R9 R0 
+      14 [-]: ADDK R7 R8 K0 [2]
+      15 [-]: MUL R5 R6 R7 
+      16 [-]: ADD R4 R5 R1 
+      17 [-]: RETURN R4 1  
 
 
-; Function #14:
-;
 ; Name:            
 ; Defined at line: 116
-; #Upvalues:       2
+; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
-; Max Stack Size:  9
+; Max Stack Size:  12
 
-  1 [-]: DIV       R4 R3 K0     ; R4 := R3 / 2.000000
-  2 [-]: LT        0 R0 R4      ; if R0 >= R4 then PC := 12
-  3 [-]: JMP       12           ; PC := 12
-  4 [-]: GETUPVAL  R4 U0        ; R4 := U0
-  5 [-]: MUL       R5 R0 K0     ; R5 := R0 * 2.000000
-  6 [-]: MOVE      R6 R1        ; R6 := R1
-  7 [-]: DIV       R7 R2 K0     ; R7 := R2 / 2.000000
-  8 [-]: MOVE      R8 R3        ; R8 := R3
-  9 [-]: TAILCALL  R4 5 0       ; R4,... := R4(R5,R6,R7,R8)
- 10 [-]: RETURN    R4 0         ; return R4,...
- 11 [-]: JMP       21           ; PC := 21
- 12 [-]: GETUPVAL  R4 U1        ; R4 := U1
- 13 [-]: MUL       R5 R0 K0     ; R5 := R0 * 2.000000
- 14 [-]: SUB       R5 R5 R3     ; R5 := R5 - R3
- 15 [-]: DIV       R6 R2 K0     ; R6 := R2 / 2.000000
- 16 [-]: ADD       R6 R1 R6     ; R6 := R1 + R6
- 17 [-]: DIV       R7 R2 K0     ; R7 := R2 / 2.000000
- 18 [-]: MOVE      R8 R3        ; R8 := R3
- 19 [-]: TAILCALL  R4 5 0       ; R4,... := R4(R5,R6,R7,R8)
- 20 [-]: RETURN    R4 0         ; return R4,...
- 21 [-]: RETURN    R0 1         ; return 
+       0 [-]: DIVK R4 R3 K0 [2]
+       1 [-]: JUMPIFNOTLT R0 R4 L1
+       2 [-]: MULK R5 R0 K0 [2]
+       3 [-]: DIVK R6 R2 K0 [2]
+       4 [-]: DIV R7 R5 R3 
+       5 [-]: SUBK R5 R7 K1 [1]
+       6 [-]: FASTCALL2K 21 R5 K2 L0 [3]
+       7 [-]: MOVE R10 R5  
+       8 [-]: LOADK R11 K2 [3]
+       9 [-]: GETUPVAL R9 0
+      10 [-]: CALL R9 2 1  
+L 0:  11 [-]: ADDK R8 R9 K1 [1]
+      12 [-]: MUL R7 R6 R8 
+      13 [-]: ADD R4 R7 R1 
+      14 [-]: RETURN R4 1  
+L 1:  15 [-]: MULK R6 R0 K0 [2]
+      16 [-]: SUB R5 R6 R3 
+      17 [-]: DIVK R7 R2 K0 [2]
+      18 [-]: ADD R6 R1 R7 
+      19 [-]: DIVK R7 R2 K0 [2]
+      20 [-]: DIV R5 R5 R3 
+      21 [-]: FASTCALL2K 21 R5 K2 L2 [3]
+      22 [-]: MOVE R10 R5  
+      23 [-]: LOADK R11 K2 [3]
+      24 [-]: GETUPVAL R9 0
+      25 [-]: CALL R9 2 1  
+L 2:  26 [-]: MUL R8 R7 R9 
+      27 [-]: ADD R4 R8 R6 
+      28 [-]: RETURN R4 1  
 
 
-; Function #15:
-;
 ; Name:            
 ; Defined at line: 124
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
-; Max Stack Size:  7
+; Max Stack Size:  9
 
-  1 [-]: DIV       R0 R0 R3     ; R0 := R0 / R3
-  2 [-]: GETUPVAL  R4 U0        ; R4 := U0
-  3 [-]: MOVE      R5 R0        ; R5 := R0
-  4 [-]: CONST     R6 4         ; R6 := 4.000000
-  5 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
-  6 [-]: MUL       R4 R2 R4     ; R4 := R2 * R4
-  7 [-]: ADD       R4 R4 R1     ; R4 := R4 + R1
-  8 [-]: RETURN    R4 2         ; return R4
-  9 [-]: RETURN    R0 1         ; return 
+       0 [-]: DIV R0 R0 R3 
+       1 [-]: FASTCALL2K 21 R0 K0 L0 [4]
+       2 [-]: MOVE R7 R0   
+       3 [-]: LOADK R8 K0 [4]
+       4 [-]: GETUPVAL R6 0
+       5 [-]: CALL R6 2 1  
+L 0:   6 [-]: MUL R5 R2 R6 
+       7 [-]: ADD R4 R5 R1 
+       8 [-]: RETURN R4 1  
 
 
-; Function #16:
-;
 ; Name:            
 ; Defined at line: 129
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
-; Max Stack Size:  8
+; Max Stack Size:  11
 
-  1 [-]: DIV       R4 R0 R3     ; R4 := R0 / R3
-  2 [-]: SUB       R0 R4 K0     ; R0 := R4 - 1.000000
-  3 [-]: UNM       R4 R2        ; R4 :=  R2
-  4 [-]: GETUPVAL  R5 U0        ; R5 := U0
-  5 [-]: MOVE      R6 R0        ; R6 := R0
-  6 [-]: CONST     R7 4         ; R7 := 4.000000
-  7 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
-  8 [-]: SUB       R5 R5 K0     ; R5 := R5 - 1.000000
-  9 [-]: MUL       R4 R4 R5     ; R4 := R4 * R5
- 10 [-]: ADD       R4 R4 R1     ; R4 := R4 + R1
- 11 [-]: RETURN    R4 2         ; return R4
- 12 [-]: RETURN    R0 1         ; return 
+       0 [-]: DIV R4 R0 R3 
+       1 [-]: SUBK R0 R4 K0 [1]
+       2 [-]: MINUS R6 R2  
+       3 [-]: FASTCALL2K 21 R0 K1 L0 [4]
+       4 [-]: MOVE R9 R0   
+       5 [-]: LOADK R10 K1 [4]
+       6 [-]: GETUPVAL R8 0
+       7 [-]: CALL R8 2 1  
+L 0:   8 [-]: SUBK R7 R8 K0 [1]
+       9 [-]: MUL R5 R6 R7 
+      10 [-]: ADD R4 R5 R1 
+      11 [-]: RETURN R4 1  
 
 
-; Function #17:
-;
 ; Name:            
 ; Defined at line: 134
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
-; Max Stack Size:  9
+; Max Stack Size:  10
 
-  1 [-]: GETUPVAL  R4 U0        ; R4 := U0
-  2 [-]: MOVE      R5 R0        ; R5 := R0
-  3 [-]: MOVE      R6 R1        ; R6 := R1
-  4 [-]: MOVE      R7 R2        ; R7 := R2
-  5 [-]: MOVE      R8 R3        ; R8 := R3
-  6 [-]: TAILCALL  R4 5 0       ; R4,... := R4(R5,R6,R7,R8)
-  7 [-]: RETURN    R4 0         ; return R4,...
-  8 [-]: RETURN    R0 1         ; return 
+       0 [-]: MOVE R5 R0   
+       1 [-]: DIV R5 R5 R3 
+       2 [-]: FASTCALL2K 21 R5 K0 L0 [4]
+       3 [-]: MOVE R8 R5   
+       4 [-]: LOADK R9 K0 [4]
+       5 [-]: GETUPVAL R7 0
+       6 [-]: CALL R7 2 1  
+L 0:   7 [-]: MUL R6 R2 R7 
+       8 [-]: ADD R4 R6 R1 
+       9 [-]: RETURN R4 1  
 
 
-; Function #18:
-;
 ; Name:            
 ; Defined at line: 138
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
-; Max Stack Size:  9
+; Max Stack Size:  12
 
-  1 [-]: GETUPVAL  R4 U0        ; R4 := U0
-  2 [-]: MOVE      R5 R0        ; R5 := R0
-  3 [-]: MOVE      R6 R1        ; R6 := R1
-  4 [-]: MOVE      R7 R2        ; R7 := R2
-  5 [-]: MOVE      R8 R3        ; R8 := R3
-  6 [-]: TAILCALL  R4 5 0       ; R4,... := R4(R5,R6,R7,R8)
-  7 [-]: RETURN    R4 0         ; return R4,...
-  8 [-]: RETURN    R0 1         ; return 
+       0 [-]: MOVE R5 R0   
+       1 [-]: DIV R6 R5 R3 
+       2 [-]: SUBK R5 R6 K0 [1]
+       3 [-]: MINUS R7 R2  
+       4 [-]: FASTCALL2K 21 R5 K1 L0 [4]
+       5 [-]: MOVE R10 R5  
+       6 [-]: LOADK R11 K1 [4]
+       7 [-]: GETUPVAL R9 0
+       8 [-]: CALL R9 2 1  
+L 0:   9 [-]: SUBK R8 R9 K0 [1]
+      10 [-]: MUL R6 R7 R8 
+      11 [-]: ADD R4 R6 R1 
+      12 [-]: RETURN R4 1  
 
 
-; Function #19:
-;
 ; Name:            
 ; Defined at line: 142
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
-; Max Stack Size:  8
+; Max Stack Size:  11
 
-  1 [-]: DIV       R4 R0 R3     ; R4 := R0 / R3
-  2 [-]: MUL       R0 R4 K0     ; R0 := R4 * 2.000000
-  3 [-]: LT        0 R0 K1      ; if R0 >= 1.000000 then PC := 14
-  4 [-]: JMP       14           ; PC := 14
-  5 [-]: DIV       R4 R2 K0     ; R4 := R2 / 2.000000
-  6 [-]: GETUPVAL  R5 U0        ; R5 := U0
-  7 [-]: MOVE      R6 R0        ; R6 := R0
-  8 [-]: CONST     R7 4         ; R7 := 4.000000
-  9 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
- 10 [-]: MUL       R4 R4 R5     ; R4 := R4 * R5
- 11 [-]: ADD       R4 R4 R1     ; R4 := R4 + R1
- 12 [-]: RETURN    R4 2         ; return R4
- 13 [-]: JMP       25           ; PC := 25
- 14 [-]: SUB       R0 R0 K0     ; R0 := R0 - 2.000000
- 15 [-]: UNM       R4 R2        ; R4 :=  R2
- 16 [-]: DIV       R4 R4 K0     ; R4 := R4 / 2.000000
- 17 [-]: GETUPVAL  R5 U0        ; R5 := U0
- 18 [-]: MOVE      R6 R0        ; R6 := R0
- 19 [-]: CONST     R7 4         ; R7 := 4.000000
- 20 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
- 21 [-]: SUB       R5 R5 K0     ; R5 := R5 - 2.000000
- 22 [-]: MUL       R4 R4 R5     ; R4 := R4 * R5
- 23 [-]: ADD       R4 R4 R1     ; R4 := R4 + R1
- 24 [-]: RETURN    R4 2         ; return R4
- 25 [-]: RETURN    R0 1         ; return 
+       0 [-]: DIV R4 R0 R3 
+       1 [-]: MULK R0 R4 K0 [2]
+       2 [-]: LOADN R4 1   
+       3 [-]: JUMPIFNOTLT R0 R4 L1
+       4 [-]: DIVK R6 R2 K0 [2]
+       5 [-]: FASTCALL2K 21 R0 K1 L0 [4]
+       6 [-]: MOVE R8 R0   
+       7 [-]: LOADK R9 K1 [4]
+       8 [-]: GETUPVAL R7 0
+       9 [-]: CALL R7 2 1  
+L 0:  10 [-]: MUL R5 R6 R7 
+      11 [-]: ADD R4 R5 R1 
+      12 [-]: RETURN R4 1  
+L 1:  13 [-]: SUBK R0 R0 K0 [2]
+      14 [-]: MINUS R7 R2  
+      15 [-]: DIVK R6 R7 K0 [2]
+      16 [-]: FASTCALL2K 21 R0 K1 L2 [4]
+      17 [-]: MOVE R9 R0   
+      18 [-]: LOADK R10 K1 [4]
+      19 [-]: GETUPVAL R8 0
+      20 [-]: CALL R8 2 1  
+L 2:  21 [-]: SUBK R7 R8 K0 [2]
+      22 [-]: MUL R5 R6 R7 
+      23 [-]: ADD R4 R5 R1 
+      24 [-]: RETURN R4 1  
 
 
-; Function #20:
-;
 ; Name:            
 ; Defined at line: 152
-; #Upvalues:       2
+; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
-; Max Stack Size:  9
+; Max Stack Size:  13
 
-  1 [-]: DIV       R4 R3 K0     ; R4 := R3 / 2.000000
-  2 [-]: LT        0 R0 R4      ; if R0 >= R4 then PC := 12
-  3 [-]: JMP       12           ; PC := 12
-  4 [-]: GETUPVAL  R4 U0        ; R4 := U0
-  5 [-]: MUL       R5 R0 K0     ; R5 := R0 * 2.000000
-  6 [-]: MOVE      R6 R1        ; R6 := R1
-  7 [-]: DIV       R7 R2 K0     ; R7 := R2 / 2.000000
-  8 [-]: MOVE      R8 R3        ; R8 := R3
-  9 [-]: TAILCALL  R4 5 0       ; R4,... := R4(R5,R6,R7,R8)
- 10 [-]: RETURN    R4 0         ; return R4,...
- 11 [-]: JMP       21           ; PC := 21
- 12 [-]: GETUPVAL  R4 U1        ; R4 := U1
- 13 [-]: MUL       R5 R0 K0     ; R5 := R0 * 2.000000
- 14 [-]: SUB       R5 R5 R3     ; R5 := R5 - R3
- 15 [-]: DIV       R6 R2 K0     ; R6 := R2 / 2.000000
- 16 [-]: ADD       R6 R1 R6     ; R6 := R1 + R6
- 17 [-]: DIV       R7 R2 K0     ; R7 := R2 / 2.000000
- 18 [-]: MOVE      R8 R3        ; R8 := R3
- 19 [-]: TAILCALL  R4 5 0       ; R4,... := R4(R5,R6,R7,R8)
- 20 [-]: RETURN    R4 0         ; return R4,...
- 21 [-]: RETURN    R0 1         ; return 
+       0 [-]: DIVK R4 R3 K0 [2]
+       1 [-]: JUMPIFNOTLT R0 R4 L1
+       2 [-]: MULK R5 R0 K0 [2]
+       3 [-]: DIVK R6 R2 K0 [2]
+       4 [-]: DIV R7 R5 R3 
+       5 [-]: SUBK R5 R7 K1 [1]
+       6 [-]: MINUS R8 R6  
+       7 [-]: FASTCALL2K 21 R5 K2 L0 [4]
+       8 [-]: MOVE R11 R5  
+       9 [-]: LOADK R12 K2 [4]
+      10 [-]: GETUPVAL R10 0
+      11 [-]: CALL R10 2 1 
+L 0:  12 [-]: SUBK R9 R10 K1 [1]
+      13 [-]: MUL R7 R8 R9 
+      14 [-]: ADD R4 R7 R1 
+      15 [-]: RETURN R4 1  
+L 1:  16 [-]: MULK R6 R0 K0 [2]
+      17 [-]: SUB R5 R6 R3 
+      18 [-]: DIVK R7 R2 K0 [2]
+      19 [-]: ADD R6 R1 R7 
+      20 [-]: DIVK R7 R2 K0 [2]
+      21 [-]: DIV R5 R5 R3 
+      22 [-]: FASTCALL2K 21 R5 K2 L2 [4]
+      23 [-]: MOVE R10 R5  
+      24 [-]: LOADK R11 K2 [4]
+      25 [-]: GETUPVAL R9 0
+      26 [-]: CALL R9 2 1  
+L 2:  27 [-]: MUL R8 R7 R9 
+      28 [-]: ADD R4 R8 R6 
+      29 [-]: RETURN R4 1  
 
 
-; Function #21:
-;
 ; Name:            
 ; Defined at line: 160
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
-; Max Stack Size:  7
+; Max Stack Size:  9
 
-  1 [-]: DIV       R0 R0 R3     ; R0 := R0 / R3
-  2 [-]: GETUPVAL  R4 U0        ; R4 := U0
-  3 [-]: MOVE      R5 R0        ; R5 := R0
-  4 [-]: CONST     R6 5         ; R6 := 5.000000
-  5 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
-  6 [-]: MUL       R4 R2 R4     ; R4 := R2 * R4
-  7 [-]: ADD       R4 R4 R1     ; R4 := R4 + R1
-  8 [-]: RETURN    R4 2         ; return R4
-  9 [-]: RETURN    R0 1         ; return 
+       0 [-]: DIV R0 R0 R3 
+       1 [-]: FASTCALL2K 21 R0 K0 L0 [5]
+       2 [-]: MOVE R7 R0   
+       3 [-]: LOADK R8 K0 [5]
+       4 [-]: GETUPVAL R6 0
+       5 [-]: CALL R6 2 1  
+L 0:   6 [-]: MUL R5 R2 R6 
+       7 [-]: ADD R4 R5 R1 
+       8 [-]: RETURN R4 1  
 
 
-; Function #22:
-;
 ; Name:            
 ; Defined at line: 165
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
-; Max Stack Size:  7
+; Max Stack Size:  10
 
-  1 [-]: DIV       R4 R0 R3     ; R4 := R0 / R3
-  2 [-]: SUB       R0 R4 K0     ; R0 := R4 - 1.000000
-  3 [-]: GETUPVAL  R4 U0        ; R4 := U0
-  4 [-]: MOVE      R5 R0        ; R5 := R0
-  5 [-]: CONST     R6 5         ; R6 := 5.000000
-  6 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
-  7 [-]: ADD       R4 R4 K0     ; R4 := R4 + 1.000000
-  8 [-]: MUL       R4 R2 R4     ; R4 := R2 * R4
-  9 [-]: ADD       R4 R4 R1     ; R4 := R4 + R1
- 10 [-]: RETURN    R4 2         ; return R4
- 11 [-]: RETURN    R0 1         ; return 
+       0 [-]: DIV R4 R0 R3 
+       1 [-]: SUBK R0 R4 K0 [1]
+       2 [-]: FASTCALL2K 21 R0 K1 L0 [5]
+       3 [-]: MOVE R8 R0   
+       4 [-]: LOADK R9 K1 [5]
+       5 [-]: GETUPVAL R7 0
+       6 [-]: CALL R7 2 1  
+L 0:   7 [-]: ADDK R6 R7 K0 [1]
+       8 [-]: MUL R5 R2 R6 
+       9 [-]: ADD R4 R5 R1 
+      10 [-]: RETURN R4 1  
 
 
-; Function #23:
-;
 ; Name:            
 ; Defined at line: 170
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
-; Max Stack Size:  9
+; Max Stack Size:  10
 
-  1 [-]: GETUPVAL  R4 U0        ; R4 := U0
-  2 [-]: MOVE      R5 R0        ; R5 := R0
-  3 [-]: MOVE      R6 R1        ; R6 := R1
-  4 [-]: MOVE      R7 R2        ; R7 := R2
-  5 [-]: MOVE      R8 R3        ; R8 := R3
-  6 [-]: TAILCALL  R4 5 0       ; R4,... := R4(R5,R6,R7,R8)
-  7 [-]: RETURN    R4 0         ; return R4,...
-  8 [-]: RETURN    R0 1         ; return 
+       0 [-]: MOVE R5 R0   
+       1 [-]: DIV R5 R5 R3 
+       2 [-]: FASTCALL2K 21 R5 K0 L0 [5]
+       3 [-]: MOVE R8 R5   
+       4 [-]: LOADK R9 K0 [5]
+       5 [-]: GETUPVAL R7 0
+       6 [-]: CALL R7 2 1  
+L 0:   7 [-]: MUL R6 R2 R7 
+       8 [-]: ADD R4 R6 R1 
+       9 [-]: RETURN R4 1  
 
 
-; Function #24:
-;
 ; Name:            
 ; Defined at line: 174
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
-; Max Stack Size:  9
+; Max Stack Size:  11
 
-  1 [-]: GETUPVAL  R4 U0        ; R4 := U0
-  2 [-]: MOVE      R5 R0        ; R5 := R0
-  3 [-]: MOVE      R6 R1        ; R6 := R1
-  4 [-]: MOVE      R7 R2        ; R7 := R2
-  5 [-]: MOVE      R8 R3        ; R8 := R3
-  6 [-]: TAILCALL  R4 5 0       ; R4,... := R4(R5,R6,R7,R8)
-  7 [-]: RETURN    R4 0         ; return R4,...
-  8 [-]: RETURN    R0 1         ; return 
+       0 [-]: MOVE R5 R0   
+       1 [-]: DIV R6 R5 R3 
+       2 [-]: SUBK R5 R6 K0 [1]
+       3 [-]: FASTCALL2K 21 R5 K1 L0 [5]
+       4 [-]: MOVE R9 R5   
+       5 [-]: LOADK R10 K1 [5]
+       6 [-]: GETUPVAL R8 0
+       7 [-]: CALL R8 2 1  
+L 0:   8 [-]: ADDK R7 R8 K0 [1]
+       9 [-]: MUL R6 R2 R7 
+      10 [-]: ADD R4 R6 R1 
+      11 [-]: RETURN R4 1  
 
 
-; Function #25:
-;
 ; Name:            
 ; Defined at line: 178
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
-; Max Stack Size:  8
+; Max Stack Size:  11
 
-  1 [-]: DIV       R4 R0 R3     ; R4 := R0 / R3
-  2 [-]: MUL       R0 R4 K0     ; R0 := R4 * 2.000000
-  3 [-]: LT        0 R0 K1      ; if R0 >= 1.000000 then PC := 14
-  4 [-]: JMP       14           ; PC := 14
-  5 [-]: DIV       R4 R2 K0     ; R4 := R2 / 2.000000
-  6 [-]: GETUPVAL  R5 U0        ; R5 := U0
-  7 [-]: MOVE      R6 R0        ; R6 := R0
-  8 [-]: CONST     R7 5         ; R7 := 5.000000
-  9 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
- 10 [-]: MUL       R4 R4 R5     ; R4 := R4 * R5
- 11 [-]: ADD       R4 R4 R1     ; R4 := R4 + R1
- 12 [-]: RETURN    R4 2         ; return R4
- 13 [-]: JMP       24           ; PC := 24
- 14 [-]: SUB       R0 R0 K0     ; R0 := R0 - 2.000000
- 15 [-]: DIV       R4 R2 K0     ; R4 := R2 / 2.000000
- 16 [-]: GETUPVAL  R5 U0        ; R5 := U0
- 17 [-]: MOVE      R6 R0        ; R6 := R0
- 18 [-]: CONST     R7 5         ; R7 := 5.000000
- 19 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
- 20 [-]: ADD       R5 R5 K0     ; R5 := R5 + 2.000000
- 21 [-]: MUL       R4 R4 R5     ; R4 := R4 * R5
- 22 [-]: ADD       R4 R4 R1     ; R4 := R4 + R1
- 23 [-]: RETURN    R4 2         ; return R4
- 24 [-]: RETURN    R0 1         ; return 
+       0 [-]: DIV R4 R0 R3 
+       1 [-]: MULK R0 R4 K0 [2]
+       2 [-]: LOADN R4 1   
+       3 [-]: JUMPIFNOTLT R0 R4 L1
+       4 [-]: DIVK R6 R2 K0 [2]
+       5 [-]: FASTCALL2K 21 R0 K1 L0 [5]
+       6 [-]: MOVE R8 R0   
+       7 [-]: LOADK R9 K1 [5]
+       8 [-]: GETUPVAL R7 0
+       9 [-]: CALL R7 2 1  
+L 0:  10 [-]: MUL R5 R6 R7 
+      11 [-]: ADD R4 R5 R1 
+      12 [-]: RETURN R4 1  
+L 1:  13 [-]: SUBK R0 R0 K0 [2]
+      14 [-]: DIVK R6 R2 K0 [2]
+      15 [-]: FASTCALL2K 21 R0 K1 L2 [5]
+      16 [-]: MOVE R9 R0   
+      17 [-]: LOADK R10 K1 [5]
+      18 [-]: GETUPVAL R8 0
+      19 [-]: CALL R8 2 1  
+L 2:  20 [-]: ADDK R7 R8 K0 [2]
+      21 [-]: MUL R5 R6 R7 
+      22 [-]: ADD R4 R5 R1 
+      23 [-]: RETURN R4 1  
 
 
-; Function #26:
-;
 ; Name:            
 ; Defined at line: 188
-; #Upvalues:       2
+; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
-; Max Stack Size:  9
+; Max Stack Size:  12
 
-  1 [-]: DIV       R4 R3 K0     ; R4 := R3 / 2.000000
-  2 [-]: LT        0 R0 R4      ; if R0 >= R4 then PC := 12
-  3 [-]: JMP       12           ; PC := 12
-  4 [-]: GETUPVAL  R4 U0        ; R4 := U0
-  5 [-]: MUL       R5 R0 K0     ; R5 := R0 * 2.000000
-  6 [-]: MOVE      R6 R1        ; R6 := R1
-  7 [-]: DIV       R7 R2 K0     ; R7 := R2 / 2.000000
-  8 [-]: MOVE      R8 R3        ; R8 := R3
-  9 [-]: TAILCALL  R4 5 0       ; R4,... := R4(R5,R6,R7,R8)
- 10 [-]: RETURN    R4 0         ; return R4,...
- 11 [-]: JMP       21           ; PC := 21
- 12 [-]: GETUPVAL  R4 U1        ; R4 := U1
- 13 [-]: MUL       R5 R0 K0     ; R5 := R0 * 2.000000
- 14 [-]: SUB       R5 R5 R3     ; R5 := R5 - R3
- 15 [-]: DIV       R6 R2 K0     ; R6 := R2 / 2.000000
- 16 [-]: ADD       R6 R1 R6     ; R6 := R1 + R6
- 17 [-]: DIV       R7 R2 K0     ; R7 := R2 / 2.000000
- 18 [-]: MOVE      R8 R3        ; R8 := R3
- 19 [-]: TAILCALL  R4 5 0       ; R4,... := R4(R5,R6,R7,R8)
- 20 [-]: RETURN    R4 0         ; return R4,...
- 21 [-]: RETURN    R0 1         ; return 
+       0 [-]: DIVK R4 R3 K0 [2]
+       1 [-]: JUMPIFNOTLT R0 R4 L1
+       2 [-]: MULK R5 R0 K0 [2]
+       3 [-]: DIVK R6 R2 K0 [2]
+       4 [-]: DIV R7 R5 R3 
+       5 [-]: SUBK R5 R7 K1 [1]
+       6 [-]: FASTCALL2K 21 R5 K2 L0 [5]
+       7 [-]: MOVE R10 R5  
+       8 [-]: LOADK R11 K2 [5]
+       9 [-]: GETUPVAL R9 0
+      10 [-]: CALL R9 2 1  
+L 0:  11 [-]: ADDK R8 R9 K1 [1]
+      12 [-]: MUL R7 R6 R8 
+      13 [-]: ADD R4 R7 R1 
+      14 [-]: RETURN R4 1  
+L 1:  15 [-]: MULK R6 R0 K0 [2]
+      16 [-]: SUB R5 R6 R3 
+      17 [-]: DIVK R7 R2 K0 [2]
+      18 [-]: ADD R6 R1 R7 
+      19 [-]: DIVK R7 R2 K0 [2]
+      20 [-]: DIV R5 R5 R3 
+      21 [-]: FASTCALL2K 21 R5 K2 L2 [5]
+      22 [-]: MOVE R10 R5  
+      23 [-]: LOADK R11 K2 [5]
+      24 [-]: GETUPVAL R9 0
+      25 [-]: CALL R9 2 1  
+L 2:  26 [-]: MUL R8 R7 R9 
+      27 [-]: ADD R4 R8 R6 
+      28 [-]: RETURN R4 1  
 
 
-; Function #27:
-;
 ; Name:            
 ; Defined at line: 196
 ; #Upvalues:       2
 ; #Parameters:     4
 ; Is_vararg:       0
-; Max Stack Size:  8
+; Max Stack Size:  13
 
-  1 [-]: UNM       R4 R2        ; R4 :=  R2
-  2 [-]: GETUPVAL  R5 U0        ; R5 := U0
-  3 [-]: DIV       R6 R0 R3     ; R6 := R0 / R3
-  4 [-]: GETUPVAL  R7 U1        ; R7 := U1
-  5 [-]: DIV       R7 R7 K0     ; R7 := R7 / 2.000000
-  6 [-]: MUL       R6 R6 R7     ; R6 := R6 * R7
-  7 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-  8 [-]: MUL       R4 R4 R5     ; R4 := R4 * R5
-  9 [-]: ADD       R4 R4 R2     ; R4 := R4 + R2
- 10 [-]: ADD       R4 R4 R1     ; R4 := R4 + R1
- 11 [-]: RETURN    R4 2         ; return R4
- 12 [-]: RETURN    R0 1         ; return 
+       0 [-]: MINUS R7 R2  
+       1 [-]: DIV R10 R0 R3
+       2 [-]: GETUPVAL R12 0
+       3 [-]: DIVK R11 R12 K0 [2]
+       4 [-]: MUL R9 R10 R11
+       5 [-]: FASTCALL1 9 R9 L0
+       6 [-]: GETUPVAL R8 1
+       7 [-]: CALL R8 1 1  
+L 0:   8 [-]: MUL R6 R7 R8 
+       9 [-]: ADD R5 R6 R2 
+      10 [-]: ADD R4 R5 R1 
+      11 [-]: RETURN R4 1  
 
 
-; Function #28:
-;
 ; Name:            
 ; Defined at line: 200
 ; #Upvalues:       2
 ; #Parameters:     4
 ; Is_vararg:       0
-; Max Stack Size:  7
+; Max Stack Size:  11
 
-  1 [-]: GETUPVAL  R4 U0        ; R4 := U0
-  2 [-]: DIV       R5 R0 R3     ; R5 := R0 / R3
-  3 [-]: GETUPVAL  R6 U1        ; R6 := U1
-  4 [-]: DIV       R6 R6 K0     ; R6 := R6 / 2.000000
-  5 [-]: MUL       R5 R5 R6     ; R5 := R5 * R6
-  6 [-]: CALL      R4 2 2       ; R4 := R4(R5)
-  7 [-]: MUL       R4 R2 R4     ; R4 := R2 * R4
-  8 [-]: ADD       R4 R4 R1     ; R4 := R4 + R1
-  9 [-]: RETURN    R4 2         ; return R4
- 10 [-]: RETURN    R0 1         ; return 
+       0 [-]: DIV R8 R0 R3 
+       1 [-]: GETUPVAL R10 0
+       2 [-]: DIVK R9 R10 K0 [2]
+       3 [-]: MUL R7 R8 R9 
+       4 [-]: FASTCALL1 24 R7 L0
+       5 [-]: GETUPVAL R6 1
+       6 [-]: CALL R6 1 1  
+L 0:   7 [-]: MUL R5 R2 R6 
+       8 [-]: ADD R4 R5 R1 
+       9 [-]: RETURN R4 1  
 
 
-; Function #29:
-;
 ; Name:            
 ; Defined at line: 204
-; #Upvalues:       1
+; #Upvalues:       2
 ; #Parameters:     4
 ; Is_vararg:       0
-; Max Stack Size:  9
+; Max Stack Size:  13
 
-  1 [-]: GETUPVAL  R4 U0        ; R4 := U0
-  2 [-]: MOVE      R5 R0        ; R5 := R0
-  3 [-]: MOVE      R6 R1        ; R6 := R1
-  4 [-]: MOVE      R7 R2        ; R7 := R2
-  5 [-]: MOVE      R8 R3        ; R8 := R3
-  6 [-]: TAILCALL  R4 5 0       ; R4,... := R4(R5,R6,R7,R8)
-  7 [-]: RETURN    R4 0         ; return R4,...
-  8 [-]: RETURN    R0 1         ; return 
+       0 [-]: MINUS R7 R2  
+       1 [-]: DIV R10 R0 R3
+       2 [-]: GETUPVAL R12 0
+       3 [-]: DIVK R11 R12 K0 [2]
+       4 [-]: MUL R9 R10 R11
+       5 [-]: FASTCALL1 9 R9 L0
+       6 [-]: GETUPVAL R8 1
+       7 [-]: CALL R8 1 1  
+L 0:   8 [-]: MUL R6 R7 R8 
+       9 [-]: ADD R5 R6 R2 
+      10 [-]: ADD R4 R5 R1 
+      11 [-]: RETURN R4 1  
 
 
-; Function #30:
-;
 ; Name:            
 ; Defined at line: 208
-; #Upvalues:       1
+; #Upvalues:       2
 ; #Parameters:     4
 ; Is_vararg:       0
-; Max Stack Size:  9
+; Max Stack Size:  11
 
-  1 [-]: GETUPVAL  R4 U0        ; R4 := U0
-  2 [-]: MOVE      R5 R0        ; R5 := R0
-  3 [-]: MOVE      R6 R1        ; R6 := R1
-  4 [-]: MOVE      R7 R2        ; R7 := R2
-  5 [-]: MOVE      R8 R3        ; R8 := R3
-  6 [-]: TAILCALL  R4 5 0       ; R4,... := R4(R5,R6,R7,R8)
-  7 [-]: RETURN    R4 0         ; return R4,...
-  8 [-]: RETURN    R0 1         ; return 
+       0 [-]: DIV R8 R0 R3 
+       1 [-]: GETUPVAL R10 0
+       2 [-]: DIVK R9 R10 K0 [2]
+       3 [-]: MUL R7 R8 R9 
+       4 [-]: FASTCALL1 24 R7 L0
+       5 [-]: GETUPVAL R6 1
+       6 [-]: CALL R6 1 1  
+L 0:   7 [-]: MUL R5 R2 R6 
+       8 [-]: ADD R4 R5 R1 
+       9 [-]: RETURN R4 1  
 
 
-; Function #31:
-;
 ; Name:            
 ; Defined at line: 212
 ; #Upvalues:       2
 ; #Parameters:     4
 ; Is_vararg:       0
-; Max Stack Size:  7
+; Max Stack Size:  12
 
-  1 [-]: UNM       R4 R2        ; R4 :=  R2
-  2 [-]: DIV       R4 R4 K0     ; R4 := R4 / 2.000000
-  3 [-]: GETUPVAL  R5 U0        ; R5 := U0
-  4 [-]: GETUPVAL  R6 U1        ; R6 := U1
-  5 [-]: MUL       R6 R6 R0     ; R6 := R6 * R0
-  6 [-]: DIV       R6 R6 R3     ; R6 := R6 / R3
-  7 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-  8 [-]: SUB       R5 R5 K1     ; R5 := R5 - 1.000000
-  9 [-]: MUL       R4 R4 R5     ; R4 := R4 * R5
- 10 [-]: ADD       R4 R4 R1     ; R4 := R4 + R1
- 11 [-]: RETURN    R4 2         ; return R4
- 12 [-]: RETURN    R0 1         ; return 
+       0 [-]: MINUS R7 R2  
+       1 [-]: DIVK R6 R7 K0 [2]
+       2 [-]: GETUPVAL R11 0
+       3 [-]: MUL R10 R11 R0
+       4 [-]: DIV R9 R10 R3
+       5 [-]: FASTCALL1 9 R9 L0
+       6 [-]: GETUPVAL R8 1
+       7 [-]: CALL R8 1 1  
+L 0:   8 [-]: SUBK R7 R8 K1 [1]
+       9 [-]: MUL R5 R6 R7 
+      10 [-]: ADD R4 R5 R1 
+      11 [-]: RETURN R4 1  
 
 
-; Function #32:
-;
 ; Name:            
 ; Defined at line: 216
-; #Upvalues:       2
+; #Upvalues:       3
 ; #Parameters:     4
 ; Is_vararg:       0
-; Max Stack Size:  9
+; Max Stack Size:  16
 
-  1 [-]: DIV       R4 R3 K0     ; R4 := R3 / 2.000000
-  2 [-]: LT        0 R0 R4      ; if R0 >= R4 then PC := 12
-  3 [-]: JMP       12           ; PC := 12
-  4 [-]: GETUPVAL  R4 U0        ; R4 := U0
-  5 [-]: MUL       R5 R0 K0     ; R5 := R0 * 2.000000
-  6 [-]: MOVE      R6 R1        ; R6 := R1
-  7 [-]: DIV       R7 R2 K0     ; R7 := R2 / 2.000000
-  8 [-]: MOVE      R8 R3        ; R8 := R3
-  9 [-]: TAILCALL  R4 5 0       ; R4,... := R4(R5,R6,R7,R8)
- 10 [-]: RETURN    R4 0         ; return R4,...
- 11 [-]: JMP       21           ; PC := 21
- 12 [-]: GETUPVAL  R4 U1        ; R4 := U1
- 13 [-]: MUL       R5 R0 K0     ; R5 := R0 * 2.000000
- 14 [-]: SUB       R5 R5 R3     ; R5 := R5 - R3
- 15 [-]: DIV       R6 R2 K0     ; R6 := R2 / 2.000000
- 16 [-]: ADD       R6 R1 R6     ; R6 := R1 + R6
- 17 [-]: DIV       R7 R2 K0     ; R7 := R2 / 2.000000
- 18 [-]: MOVE      R8 R3        ; R8 := R3
- 19 [-]: TAILCALL  R4 5 0       ; R4,... := R4(R5,R6,R7,R8)
- 20 [-]: RETURN    R4 0         ; return R4,...
- 21 [-]: RETURN    R0 1         ; return 
+       0 [-]: DIVK R4 R3 K0 [2]
+       1 [-]: JUMPIFNOTLT R0 R4 L1
+       2 [-]: MULK R5 R0 K0 [2]
+       3 [-]: DIVK R6 R2 K0 [2]
+       4 [-]: DIV R10 R5 R3
+       5 [-]: GETUPVAL R12 0
+       6 [-]: DIVK R11 R12 K0 [2]
+       7 [-]: MUL R9 R10 R11
+       8 [-]: FASTCALL1 24 R9 L0
+       9 [-]: GETUPVAL R8 1
+      10 [-]: CALL R8 1 1  
+L 0:  11 [-]: MUL R7 R6 R8 
+      12 [-]: ADD R4 R7 R1 
+      13 [-]: RETURN R4 1  
+L 1:  14 [-]: MULK R6 R0 K0 [2]
+      15 [-]: SUB R5 R6 R3 
+      16 [-]: DIVK R7 R2 K0 [2]
+      17 [-]: ADD R6 R1 R7 
+      18 [-]: DIVK R7 R2 K0 [2]
+      19 [-]: MINUS R10 R7 
+      20 [-]: DIV R13 R5 R3
+      21 [-]: GETUPVAL R15 0
+      22 [-]: DIVK R14 R15 K0 [2]
+      23 [-]: MUL R12 R13 R14
+      24 [-]: FASTCALL1 9 R12 L2
+      25 [-]: GETUPVAL R11 2
+      26 [-]: CALL R11 1 1 
+L 2:  27 [-]: MUL R9 R10 R11
+      28 [-]: ADD R8 R9 R7 
+      29 [-]: ADD R4 R8 R6 
+      30 [-]: RETURN R4 1  
 
 
-; Function #33:
-;
 ; Name:            
 ; Defined at line: 224
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
-; Max Stack Size:  7
+; Max Stack Size:  13
 
-  1 [-]: EQ        0 R0 K0      ; if R0 ~= 0.000000 then PC := 5
-  2 [-]: JMP       5            ; PC := 5
-  3 [-]: RETURN    R1 2         ; return R1
-  4 [-]: JMP       16           ; PC := 16
-  5 [-]: GETUPVAL  R4 U0        ; R4 := U0
-  6 [-]: CONST     R5 2         ; R5 := 2.000000
-  7 [-]: DIV       R6 R0 R3     ; R6 := R0 / R3
-  8 [-]: SUB       R6 R6 K1     ; R6 := R6 - 1.000000
-  9 [-]: MUL       R6 K2 R6     ; R6 := 10.000000 * R6
- 10 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
- 11 [-]: MUL       R4 R2 R4     ; R4 := R2 * R4
- 12 [-]: ADD       R4 R4 R1     ; R4 := R4 + R1
- 13 [-]: MUL       R5 R2 K3     ; R5 := R2 * 0.001000
- 14 [-]: SUB       R4 R4 R5     ; R4 := R4 - R5
- 15 [-]: RETURN    R4 2         ; return R4
- 16 [-]: RETURN    R0 1         ; return 
+       0 [-]: JUMPXEQKN R0 K0 L0 NOT [0]
+       1 [-]: RETURN R1 1  
+L 0:   2 [-]: LOADN R8 2   
+       3 [-]: LOADN R10 10 
+       4 [-]: DIV R12 R0 R3
+       5 [-]: SUBK R11 R12 K1 [1]
+       6 [-]: MUL R9 R10 R11
+       7 [-]: FASTCALL2 21 R8 R9 L1
+       8 [-]: GETUPVAL R7 0
+       9 [-]: CALL R7 2 1  
+L 1:  10 [-]: MUL R6 R2 R7 
+      11 [-]: ADD R5 R6 R1 
+      12 [-]: MULK R6 R2 K2 [0.001]
+      13 [-]: SUB R4 R5 R6 
+      14 [-]: RETURN R4 1  
 
 
-; Function #34:
-;
 ; Name:            
 ; Defined at line: 232
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
-; Max Stack Size:  8
+; Max Stack Size:  14
 
-  1 [-]: EQ        0 R0 R3      ; if R0 ~= R3 then PC := 6
-  2 [-]: JMP       6            ; PC := 6
-  3 [-]: ADD       R4 R1 R2     ; R4 := R1 + R2
-  4 [-]: RETURN    R4 2         ; return R4
-  5 [-]: JMP       17           ; PC := 17
-  6 [-]: MUL       R4 R2 K0     ; R4 := R2 * 1.001000
-  7 [-]: GETUPVAL  R5 U0        ; R5 := U0
-  8 [-]: CONST     R6 2         ; R6 := 2.000000
-  9 [-]: MUL       R7 K1 R0     ; R7 := -10.000000 * R0
- 10 [-]: DIV       R7 R7 R3     ; R7 := R7 / R3
- 11 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
- 12 [-]: UNM       R5 R5        ; R5 :=  R5
- 13 [-]: ADD       R5 R5 K2     ; R5 := R5 + 1.000000
- 14 [-]: MUL       R4 R4 R5     ; R4 := R4 * R5
- 15 [-]: ADD       R4 R4 R1     ; R4 := R4 + R1
- 16 [-]: RETURN    R4 2         ; return R4
- 17 [-]: RETURN    R0 1         ; return 
+       0 [-]: JUMPIFNOTEQ R0 R3 L0
+       1 [-]: ADD R4 R1 R2 
+       2 [-]: RETURN R4 1  
+L 0:   3 [-]: MULK R6 R2 K0 [1.0009999999999999]
+       4 [-]: LOADN R10 2  
+       5 [-]: LOADN R13 -10
+       6 [-]: MUL R12 R13 R0
+       7 [-]: DIV R11 R12 R3
+       8 [-]: FASTCALL2 21 R10 R11 L1
+       9 [-]: GETUPVAL R9 0
+      10 [-]: CALL R9 2 1  
+L 1:  11 [-]: MINUS R8 R9  
+      12 [-]: ADDK R7 R8 K1 [1]
+      13 [-]: MUL R5 R6 R7 
+      14 [-]: ADD R4 R5 R1 
+      15 [-]: RETURN R4 1  
 
 
-; Function #35:
-;
 ; Name:            
 ; Defined at line: 240
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
-; Max Stack Size:  9
+; Max Stack Size:  13
 
-  1 [-]: GETUPVAL  R4 U0        ; R4 := U0
-  2 [-]: MOVE      R5 R0        ; R5 := R0
-  3 [-]: MOVE      R6 R1        ; R6 := R1
-  4 [-]: MOVE      R7 R2        ; R7 := R2
-  5 [-]: MOVE      R8 R3        ; R8 := R3
-  6 [-]: TAILCALL  R4 5 0       ; R4,... := R4(R5,R6,R7,R8)
-  7 [-]: RETURN    R4 0         ; return R4,...
-  8 [-]: RETURN    R0 1         ; return 
+       0 [-]: JUMPXEQKN R0 K0 L0 NOT [0]
+       1 [-]: MOVE R4 R1   
+       2 [-]: RETURN R4 1  
+L 0:   3 [-]: LOADN R8 2   
+       4 [-]: LOADN R10 10 
+       5 [-]: DIV R12 R0 R3
+       6 [-]: SUBK R11 R12 K1 [1]
+       7 [-]: MUL R9 R10 R11
+       8 [-]: FASTCALL2 21 R8 R9 L1
+       9 [-]: GETUPVAL R7 0
+      10 [-]: CALL R7 2 1  
+L 1:  11 [-]: MUL R6 R2 R7 
+      12 [-]: ADD R5 R6 R1 
+      13 [-]: MULK R6 R2 K2 [0.001]
+      14 [-]: SUB R4 R5 R6 
+      15 [-]: RETURN R4 1  
+      16 [-]: RETURN R4 1  
 
 
-; Function #36:
-;
 ; Name:            
 ; Defined at line: 244
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
-; Max Stack Size:  9
+; Max Stack Size:  14
 
-  1 [-]: GETUPVAL  R4 U0        ; R4 := U0
-  2 [-]: MOVE      R5 R0        ; R5 := R0
-  3 [-]: MOVE      R6 R1        ; R6 := R1
-  4 [-]: MOVE      R7 R2        ; R7 := R2
-  5 [-]: MOVE      R8 R3        ; R8 := R3
-  6 [-]: TAILCALL  R4 5 0       ; R4,... := R4(R5,R6,R7,R8)
-  7 [-]: RETURN    R4 0         ; return R4,...
-  8 [-]: RETURN    R0 1         ; return 
+       0 [-]: JUMPIFNOTEQ R0 R3 L0
+       1 [-]: ADD R4 R1 R2 
+       2 [-]: RETURN R4 1  
+L 0:   3 [-]: MULK R6 R2 K0 [1.0009999999999999]
+       4 [-]: LOADN R10 2  
+       5 [-]: LOADN R13 -10
+       6 [-]: MUL R12 R13 R0
+       7 [-]: DIV R11 R12 R3
+       8 [-]: FASTCALL2 21 R10 R11 L1
+       9 [-]: GETUPVAL R9 0
+      10 [-]: CALL R9 2 1  
+L 1:  11 [-]: MINUS R8 R9  
+      12 [-]: ADDK R7 R8 K1 [1]
+      13 [-]: MUL R5 R6 R7 
+      14 [-]: ADD R4 R5 R1 
+      15 [-]: RETURN R4 1  
+      16 [-]: RETURN R4 1  
 
 
-; Function #37:
-;
 ; Name:            
 ; Defined at line: 248
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
-; Max Stack Size:  8
+; Max Stack Size:  13
 
-  1 [-]: EQ        0 R0 K0      ; if R0 ~= 0.000000 then PC := 4
-  2 [-]: JMP       4            ; PC := 4
-  3 [-]: RETURN    R1 2         ; return R1
-  4 [-]: EQ        0 R0 R3      ; if R0 ~= R3 then PC := 8
-  5 [-]: JMP       8            ; PC := 8
-  6 [-]: ADD       R4 R1 R2     ; R4 := R1 + R2
-  7 [-]: RETURN    R4 2         ; return R4
-  8 [-]: DIV       R4 R0 R3     ; R4 := R0 / R3
-  9 [-]: MUL       R0 R4 K1     ; R0 := R4 * 2.000000
- 10 [-]: LT        0 R0 K2      ; if R0 >= 1.000000 then PC := 24
- 11 [-]: JMP       24           ; PC := 24
- 12 [-]: DIV       R4 R2 K1     ; R4 := R2 / 2.000000
- 13 [-]: GETUPVAL  R5 U0        ; R5 := U0
- 14 [-]: CONST     R6 2         ; R6 := 2.000000
- 15 [-]: SUB       R7 R0 K2     ; R7 := R0 - 1.000000
- 16 [-]: MUL       R7 K3 R7     ; R7 := 10.000000 * R7
- 17 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
- 18 [-]: MUL       R4 R4 R5     ; R4 := R4 * R5
- 19 [-]: ADD       R4 R4 R1     ; R4 := R4 + R1
- 20 [-]: MUL       R5 R2 K4     ; R5 := R2 * 0.000500
- 21 [-]: SUB       R4 R4 R5     ; R4 := R4 - R5
- 22 [-]: RETURN    R4 2         ; return R4
- 23 [-]: JMP       36           ; PC := 36
- 24 [-]: SUB       R0 R0 K2     ; R0 := R0 - 1.000000
- 25 [-]: DIV       R4 R2 K1     ; R4 := R2 / 2.000000
- 26 [-]: MUL       R4 R4 K5     ; R4 := R4 * 1.000500
- 27 [-]: GETUPVAL  R5 U0        ; R5 := U0
- 28 [-]: CONST     R6 2         ; R6 := 2.000000
- 29 [-]: MUL       R7 K6 R0     ; R7 := -10.000000 * R0
- 30 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
- 31 [-]: UNM       R5 R5        ; R5 :=  R5
- 32 [-]: ADD       R5 R5 K1     ; R5 := R5 + 2.000000
- 33 [-]: MUL       R4 R4 R5     ; R4 := R4 * R5
- 34 [-]: ADD       R4 R4 R1     ; R4 := R4 + R1
- 35 [-]: RETURN    R4 2         ; return R4
- 36 [-]: RETURN    R0 1         ; return 
+       0 [-]: JUMPXEQKN R0 K0 L0 NOT [0]
+       1 [-]: RETURN R1 1  
+L 0:   2 [-]: JUMPIFNOTEQ R0 R3 L1
+       3 [-]: ADD R4 R1 R2 
+       4 [-]: RETURN R4 1  
+L 1:   5 [-]: DIV R4 R0 R3 
+       6 [-]: MULK R0 R4 K1 [2]
+       7 [-]: LOADN R4 1   
+       8 [-]: JUMPIFNOTLT R0 R4 L3
+       9 [-]: DIVK R7 R2 K1 [2]
+      10 [-]: LOADN R9 2   
+      11 [-]: LOADN R11 10 
+      12 [-]: SUBK R12 R0 K2 [1]
+      13 [-]: MUL R10 R11 R12
+      14 [-]: FASTCALL2 21 R9 R10 L2
+      15 [-]: GETUPVAL R8 0
+      16 [-]: CALL R8 2 1  
+L 2:  17 [-]: MUL R6 R7 R8 
+      18 [-]: ADD R5 R6 R1 
+      19 [-]: MULK R6 R2 K3 [0.00050000000000000001]
+      20 [-]: SUB R4 R5 R6 
+      21 [-]: RETURN R4 1  
+L 3:  22 [-]: SUBK R0 R0 K2 [1]
+      23 [-]: DIVK R7 R2 K1 [2]
+      24 [-]: MULK R6 R7 K4 [1.0004999999999999]
+      25 [-]: LOADN R10 2  
+      26 [-]: LOADN R12 -10
+      27 [-]: MUL R11 R12 R0
+      28 [-]: FASTCALL2 21 R10 R11 L4
+      29 [-]: GETUPVAL R9 0
+      30 [-]: CALL R9 2 1  
+L 4:  31 [-]: MINUS R8 R9  
+      32 [-]: ADDK R7 R8 K1 [2]
+      33 [-]: MUL R5 R6 R7 
+      34 [-]: ADD R4 R5 R1 
+      35 [-]: RETURN R4 1  
 
 
-; Function #38:
-;
 ; Name:            
 ; Defined at line: 260
-; #Upvalues:       2
+; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
-; Max Stack Size:  9
+; Max Stack Size:  16
 
-  1 [-]: DIV       R4 R3 K0     ; R4 := R3 / 2.000000
-  2 [-]: LT        0 R0 R4      ; if R0 >= R4 then PC := 12
-  3 [-]: JMP       12           ; PC := 12
-  4 [-]: GETUPVAL  R4 U0        ; R4 := U0
-  5 [-]: MUL       R5 R0 K0     ; R5 := R0 * 2.000000
-  6 [-]: MOVE      R6 R1        ; R6 := R1
-  7 [-]: DIV       R7 R2 K0     ; R7 := R2 / 2.000000
-  8 [-]: MOVE      R8 R3        ; R8 := R3
-  9 [-]: TAILCALL  R4 5 0       ; R4,... := R4(R5,R6,R7,R8)
- 10 [-]: RETURN    R4 0         ; return R4,...
- 11 [-]: JMP       21           ; PC := 21
- 12 [-]: GETUPVAL  R4 U1        ; R4 := U1
- 13 [-]: MUL       R5 R0 K0     ; R5 := R0 * 2.000000
- 14 [-]: SUB       R5 R5 R3     ; R5 := R5 - R3
- 15 [-]: DIV       R6 R2 K0     ; R6 := R2 / 2.000000
- 16 [-]: ADD       R6 R1 R6     ; R6 := R1 + R6
- 17 [-]: DIV       R7 R2 K0     ; R7 := R2 / 2.000000
- 18 [-]: MOVE      R8 R3        ; R8 := R3
- 19 [-]: TAILCALL  R4 5 0       ; R4,... := R4(R5,R6,R7,R8)
- 20 [-]: RETURN    R4 0         ; return R4,...
- 21 [-]: RETURN    R0 1         ; return 
+       0 [-]: DIVK R4 R3 K0 [2]
+       1 [-]: JUMPIFNOTLT R0 R4 L2
+       2 [-]: MULK R5 R0 K0 [2]
+       3 [-]: DIVK R6 R2 K0 [2]
+       4 [-]: JUMPIFNOTEQ R5 R3 L0
+       5 [-]: ADD R4 R1 R6 
+       6 [-]: RETURN R4 1  
+L 0:   7 [-]: MULK R8 R6 K1 [1.0009999999999999]
+       8 [-]: LOADN R12 2  
+       9 [-]: LOADN R15 -10
+      10 [-]: MUL R14 R15 R5
+      11 [-]: DIV R13 R14 R3
+      12 [-]: FASTCALL2 21 R12 R13 L1
+      13 [-]: GETUPVAL R11 0
+      14 [-]: CALL R11 2 1 
+L 1:  15 [-]: MINUS R10 R11
+      16 [-]: ADDK R9 R10 K2 [1]
+      17 [-]: MUL R7 R8 R9 
+      18 [-]: ADD R4 R7 R1 
+      19 [-]: RETURN R4 1  
+      20 [-]: RETURN R4 1  
+L 2:  21 [-]: MULK R6 R0 K0 [2]
+      22 [-]: SUB R5 R6 R3 
+      23 [-]: DIVK R7 R2 K0 [2]
+      24 [-]: ADD R6 R1 R7 
+      25 [-]: DIVK R7 R2 K0 [2]
+      26 [-]: JUMPXEQKN R5 K3 L3 NOT [0]
+      27 [-]: MOVE R4 R6   
+      28 [-]: RETURN R4 1  
+L 3:  29 [-]: LOADN R11 2  
+      30 [-]: LOADN R13 10 
+      31 [-]: DIV R15 R5 R3
+      32 [-]: SUBK R14 R15 K2 [1]
+      33 [-]: MUL R12 R13 R14
+      34 [-]: FASTCALL2 21 R11 R12 L4
+      35 [-]: GETUPVAL R10 0
+      36 [-]: CALL R10 2 1 
+L 4:  37 [-]: MUL R9 R7 R10
+      38 [-]: ADD R8 R9 R6 
+      39 [-]: MULK R9 R7 K4 [0.001]
+      40 [-]: SUB R4 R8 R9 
+      41 [-]: RETURN R4 1  
+      42 [-]: RETURN R4 1  
 
 
-; Function #39:
-;
 ; Name:            
 ; Defined at line: 268
 ; #Upvalues:       2
 ; #Parameters:     4
 ; Is_vararg:       0
-; Max Stack Size:  9
+; Max Stack Size:  14
 
-  1 [-]: DIV       R0 R0 R3     ; R0 := R0 / R3
-  2 [-]: UNM       R4 R2        ; R4 :=  R2
-  3 [-]: GETUPVAL  R5 U0        ; R5 := U0
-  4 [-]: GETUPVAL  R6 U1        ; R6 := U1
-  5 [-]: MOVE      R7 R0        ; R7 := R0
-  6 [-]: CONST     R8 2         ; R8 := 2.000000
-  7 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
-  8 [-]: SUB       R6 K0 R6     ; R6 := 1.000000 - R6
-  9 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 10 [-]: SUB       R5 R5 K0     ; R5 := R5 - 1.000000
- 11 [-]: MUL       R4 R4 R5     ; R4 := R4 * R5
- 12 [-]: ADD       R4 R4 R1     ; R4 := R4 + R1
- 13 [-]: RETURN    R4 2         ; return R4
- 14 [-]: RETURN    R0 1         ; return 
+       0 [-]: DIV R0 R0 R3 
+       1 [-]: MINUS R6 R2  
+       2 [-]: LOADN R10 1  
+       3 [-]: FASTCALL2K 21 R0 K1 L0 [2]
+       4 [-]: MOVE R12 R0  
+       5 [-]: LOADK R13 K1 [2]
+       6 [-]: GETUPVAL R11 0
+       7 [-]: CALL R11 2 1 
+L 0:   8 [-]: SUB R9 R10 R11
+       9 [-]: FASTCALL1 25 R9 L1
+      10 [-]: GETUPVAL R8 1
+      11 [-]: CALL R8 1 1  
+L 1:  12 [-]: SUBK R7 R8 K0 [1]
+      13 [-]: MUL R5 R6 R7 
+      14 [-]: ADD R4 R5 R1 
+      15 [-]: RETURN R4 1  
 
 
-; Function #40:
-;
 ; Name:            
 ; Defined at line: 273
 ; #Upvalues:       2
 ; #Parameters:     4
 ; Is_vararg:       0
-; Max Stack Size:  8
+; Max Stack Size:  12
 
-  1 [-]: DIV       R4 R0 R3     ; R4 := R0 / R3
-  2 [-]: SUB       R0 R4 K0     ; R0 := R4 - 1.000000
-  3 [-]: GETUPVAL  R4 U0        ; R4 := U0
-  4 [-]: GETUPVAL  R5 U1        ; R5 := U1
-  5 [-]: MOVE      R6 R0        ; R6 := R0
-  6 [-]: CONST     R7 2         ; R7 := 2.000000
-  7 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
-  8 [-]: SUB       R5 K0 R5     ; R5 := 1.000000 - R5
-  9 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 10 [-]: MUL       R4 R2 R4     ; R4 := R2 * R4
- 11 [-]: ADD       R4 R4 R1     ; R4 := R4 + R1
- 12 [-]: RETURN    R4 2         ; return R4
- 13 [-]: RETURN    R0 1         ; return 
+       0 [-]: DIV R4 R0 R3 
+       1 [-]: SUBK R0 R4 K0 [1]
+       2 [-]: LOADN R8 1   
+       3 [-]: FASTCALL2K 21 R0 K1 L0 [2]
+       4 [-]: MOVE R10 R0  
+       5 [-]: LOADK R11 K1 [2]
+       6 [-]: GETUPVAL R9 0
+       7 [-]: CALL R9 2 1  
+L 0:   8 [-]: SUB R7 R8 R9 
+       9 [-]: FASTCALL1 25 R7 L1
+      10 [-]: GETUPVAL R6 1
+      11 [-]: CALL R6 1 1  
+L 1:  12 [-]: MUL R5 R2 R6 
+      13 [-]: ADD R4 R5 R1 
+      14 [-]: RETURN R4 1  
 
 
-; Function #41:
-;
 ; Name:            
 ; Defined at line: 278
-; #Upvalues:       1
+; #Upvalues:       2
 ; #Parameters:     4
 ; Is_vararg:       0
-; Max Stack Size:  9
+; Max Stack Size:  15
 
-  1 [-]: GETUPVAL  R4 U0        ; R4 := U0
-  2 [-]: MOVE      R5 R0        ; R5 := R0
-  3 [-]: MOVE      R6 R1        ; R6 := R1
-  4 [-]: MOVE      R7 R2        ; R7 := R2
-  5 [-]: MOVE      R8 R3        ; R8 := R3
-  6 [-]: TAILCALL  R4 5 0       ; R4,... := R4(R5,R6,R7,R8)
-  7 [-]: RETURN    R4 0         ; return R4,...
-  8 [-]: RETURN    R0 1         ; return 
+       0 [-]: MOVE R5 R0   
+       1 [-]: DIV R5 R5 R3 
+       2 [-]: MINUS R7 R2  
+       3 [-]: LOADN R11 1  
+       4 [-]: FASTCALL2K 21 R5 K1 L0 [2]
+       5 [-]: MOVE R13 R5  
+       6 [-]: LOADK R14 K1 [2]
+       7 [-]: GETUPVAL R12 0
+       8 [-]: CALL R12 2 1 
+L 0:   9 [-]: SUB R10 R11 R12
+      10 [-]: FASTCALL1 25 R10 L1
+      11 [-]: GETUPVAL R9 1
+      12 [-]: CALL R9 1 1  
+L 1:  13 [-]: SUBK R8 R9 K0 [1]
+      14 [-]: MUL R6 R7 R8 
+      15 [-]: ADD R4 R6 R1 
+      16 [-]: RETURN R4 1  
 
 
-; Function #42:
-;
 ; Name:            
 ; Defined at line: 282
-; #Upvalues:       1
+; #Upvalues:       2
 ; #Parameters:     4
 ; Is_vararg:       0
-; Max Stack Size:  9
+; Max Stack Size:  13
 
-  1 [-]: GETUPVAL  R4 U0        ; R4 := U0
-  2 [-]: MOVE      R5 R0        ; R5 := R0
-  3 [-]: MOVE      R6 R1        ; R6 := R1
-  4 [-]: MOVE      R7 R2        ; R7 := R2
-  5 [-]: MOVE      R8 R3        ; R8 := R3
-  6 [-]: TAILCALL  R4 5 0       ; R4,... := R4(R5,R6,R7,R8)
-  7 [-]: RETURN    R4 0         ; return R4,...
-  8 [-]: RETURN    R0 1         ; return 
+       0 [-]: MOVE R5 R0   
+       1 [-]: DIV R6 R5 R3 
+       2 [-]: SUBK R5 R6 K0 [1]
+       3 [-]: LOADN R9 1   
+       4 [-]: FASTCALL2K 21 R5 K1 L0 [2]
+       5 [-]: MOVE R11 R5  
+       6 [-]: LOADK R12 K1 [2]
+       7 [-]: GETUPVAL R10 0
+       8 [-]: CALL R10 2 1 
+L 0:   9 [-]: SUB R8 R9 R10
+      10 [-]: FASTCALL1 25 R8 L1
+      11 [-]: GETUPVAL R7 1
+      12 [-]: CALL R7 1 1  
+L 1:  13 [-]: MUL R6 R2 R7 
+      14 [-]: ADD R4 R6 R1 
+      15 [-]: RETURN R4 1  
 
 
-; Function #43:
-;
 ; Name:            
 ; Defined at line: 286
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
-; Max Stack Size:  7
+; Max Stack Size:  12
 
-  1 [-]: DIV       R4 R0 R3     ; R4 := R0 / R3
-  2 [-]: MUL       R0 R4 K0     ; R0 := R4 * 2.000000
-  3 [-]: LT        0 R0 K1      ; if R0 >= 1.000000 then PC := 16
-  4 [-]: JMP       16           ; PC := 16
-  5 [-]: UNM       R4 R2        ; R4 :=  R2
-  6 [-]: DIV       R4 R4 K0     ; R4 := R4 / 2.000000
-  7 [-]: GETUPVAL  R5 U0        ; R5 := U0
-  8 [-]: MUL       R6 R0 R0     ; R6 := R0 * R0
-  9 [-]: SUB       R6 K1 R6     ; R6 := 1.000000 - R6
- 10 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 11 [-]: SUB       R5 R5 K1     ; R5 := R5 - 1.000000
- 12 [-]: MUL       R4 R4 R5     ; R4 := R4 * R5
- 13 [-]: ADD       R4 R4 R1     ; R4 := R4 + R1
- 14 [-]: RETURN    R4 2         ; return R4
- 15 [-]: JMP       26           ; PC := 26
- 16 [-]: SUB       R0 R0 K0     ; R0 := R0 - 2.000000
- 17 [-]: DIV       R4 R2 K0     ; R4 := R2 / 2.000000
- 18 [-]: GETUPVAL  R5 U0        ; R5 := U0
- 19 [-]: MUL       R6 R0 R0     ; R6 := R0 * R0
- 20 [-]: SUB       R6 K1 R6     ; R6 := 1.000000 - R6
- 21 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 22 [-]: ADD       R5 R5 K1     ; R5 := R5 + 1.000000
- 23 [-]: MUL       R4 R4 R5     ; R4 := R4 * R5
- 24 [-]: ADD       R4 R4 R1     ; R4 := R4 + R1
- 25 [-]: RETURN    R4 2         ; return R4
- 26 [-]: RETURN    R0 1         ; return 
+       0 [-]: DIV R4 R0 R3 
+       1 [-]: MULK R0 R4 K0 [2]
+       2 [-]: LOADN R4 1   
+       3 [-]: JUMPIFNOTLT R0 R4 L1
+       4 [-]: MINUS R7 R2  
+       5 [-]: DIVK R6 R7 K0 [2]
+       6 [-]: LOADN R10 1  
+       7 [-]: MUL R11 R0 R0
+       8 [-]: SUB R9 R10 R11
+       9 [-]: FASTCALL1 25 R9 L0
+      10 [-]: GETUPVAL R8 0
+      11 [-]: CALL R8 1 1  
+L 0:  12 [-]: SUBK R7 R8 K1 [1]
+      13 [-]: MUL R5 R6 R7 
+      14 [-]: ADD R4 R5 R1 
+      15 [-]: RETURN R4 1  
+L 1:  16 [-]: SUBK R0 R0 K0 [2]
+      17 [-]: DIVK R6 R2 K0 [2]
+      18 [-]: LOADN R10 1  
+      19 [-]: MUL R11 R0 R0
+      20 [-]: SUB R9 R10 R11
+      21 [-]: FASTCALL1 25 R9 L2
+      22 [-]: GETUPVAL R8 0
+      23 [-]: CALL R8 1 1  
+L 2:  24 [-]: ADDK R7 R8 K1 [1]
+      25 [-]: MUL R5 R6 R7 
+      26 [-]: ADD R4 R5 R1 
+      27 [-]: RETURN R4 1  
 
 
-; Function #44:
-;
 ; Name:            
 ; Defined at line: 296
 ; #Upvalues:       2
 ; #Parameters:     4
 ; Is_vararg:       0
-; Max Stack Size:  9
+; Max Stack Size:  17
 
-  1 [-]: DIV       R4 R3 K0     ; R4 := R3 / 2.000000
-  2 [-]: LT        0 R0 R4      ; if R0 >= R4 then PC := 12
-  3 [-]: JMP       12           ; PC := 12
-  4 [-]: GETUPVAL  R4 U0        ; R4 := U0
-  5 [-]: MUL       R5 R0 K0     ; R5 := R0 * 2.000000
-  6 [-]: MOVE      R6 R1        ; R6 := R1
-  7 [-]: DIV       R7 R2 K0     ; R7 := R2 / 2.000000
-  8 [-]: MOVE      R8 R3        ; R8 := R3
-  9 [-]: TAILCALL  R4 5 0       ; R4,... := R4(R5,R6,R7,R8)
- 10 [-]: RETURN    R4 0         ; return R4,...
- 11 [-]: JMP       21           ; PC := 21
- 12 [-]: GETUPVAL  R4 U1        ; R4 := U1
- 13 [-]: MUL       R5 R0 K0     ; R5 := R0 * 2.000000
- 14 [-]: SUB       R5 R5 R3     ; R5 := R5 - R3
- 15 [-]: DIV       R6 R2 K0     ; R6 := R2 / 2.000000
- 16 [-]: ADD       R6 R1 R6     ; R6 := R1 + R6
- 17 [-]: DIV       R7 R2 K0     ; R7 := R2 / 2.000000
- 18 [-]: MOVE      R8 R3        ; R8 := R3
- 19 [-]: TAILCALL  R4 5 0       ; R4,... := R4(R5,R6,R7,R8)
- 20 [-]: RETURN    R4 0         ; return R4,...
- 21 [-]: RETURN    R0 1         ; return 
+       0 [-]: DIVK R4 R3 K0 [2]
+       1 [-]: JUMPIFNOTLT R0 R4 L2
+       2 [-]: MULK R5 R0 K0 [2]
+       3 [-]: DIVK R6 R2 K0 [2]
+       4 [-]: DIV R7 R5 R3 
+       5 [-]: SUBK R5 R7 K1 [1]
+       6 [-]: LOADN R10 1  
+       7 [-]: FASTCALL2K 21 R5 K0 L0 [2]
+       8 [-]: MOVE R12 R5  
+       9 [-]: LOADK R13 K0 [2]
+      10 [-]: GETUPVAL R11 0
+      11 [-]: CALL R11 2 1 
+L 0:  12 [-]: SUB R9 R10 R11
+      13 [-]: FASTCALL1 25 R9 L1
+      14 [-]: GETUPVAL R8 1
+      15 [-]: CALL R8 1 1  
+L 1:  16 [-]: MUL R7 R6 R8 
+      17 [-]: ADD R4 R7 R1 
+      18 [-]: RETURN R4 1  
+L 2:  19 [-]: MULK R6 R0 K0 [2]
+      20 [-]: SUB R5 R6 R3 
+      21 [-]: DIVK R7 R2 K0 [2]
+      22 [-]: ADD R6 R1 R7 
+      23 [-]: DIVK R7 R2 K0 [2]
+      24 [-]: DIV R5 R5 R3 
+      25 [-]: MINUS R9 R7  
+      26 [-]: LOADN R13 1  
+      27 [-]: FASTCALL2K 21 R5 K0 L3 [2]
+      28 [-]: MOVE R15 R5  
+      29 [-]: LOADK R16 K0 [2]
+      30 [-]: GETUPVAL R14 0
+      31 [-]: CALL R14 2 1 
+L 3:  32 [-]: SUB R12 R13 R14
+      33 [-]: FASTCALL1 25 R12 L4
+      34 [-]: GETUPVAL R11 1
+      35 [-]: CALL R11 1 1 
+L 4:  36 [-]: SUBK R10 R11 K1 [1]
+      37 [-]: MUL R8 R9 R10
+      38 [-]: ADD R4 R8 R6 
+      39 [-]: RETURN R4 1  
 
 
-; Function #45:
-;
 ; Name:            
 ; Defined at line: 304
 ; #Upvalues:       5
 ; #Parameters:     6
 ; Is_vararg:       0
-; Max Stack Size:  11
+; Max Stack Size:  18
 
-  1 [-]: EQ        0 R0 K0      ; if R0 ~= 0.000000 then PC := 4
-  2 [-]: JMP       4            ; PC := 4
-  3 [-]: RETURN    R1 2         ; return R1
-  4 [-]: DIV       R0 R0 R3     ; R0 := R0 / R3
-  5 [-]: EQ        0 R0 K1      ; if R0 ~= 1.000000 then PC := 9
-  6 [-]: JMP       9            ; PC := 9
-  7 [-]: ADD       R6 R1 R2     ; R6 := R1 + R2
-  8 [-]: RETURN    R6 2         ; return R6
-  9 [-]: TEST      R5 1         ; if R5 then PC := 12
- 10 [-]: JMP       12           ; PC := 12
- 11 [-]: MUL       R5 R3 K2     ; R5 := R3 * 0.300000
- 12 [-]: CONST     R6 0         ; R6 := 0.000000
- 13 [-]: TEST      R4 0         ; if not R4 then PC := 20
- 14 [-]: JMP       20           ; PC := 20
- 15 [-]: GETUPVAL  R7 U0        ; R7 := U0
- 16 [-]: MOVE      R8 R2        ; R8 := R2
- 17 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 18 [-]: LT        0 R4 R7      ; if R4 >= R7 then PC := 23
- 19 [-]: JMP       23           ; PC := 23
- 20 [-]: MOVE      R4 R2        ; R4 := R2
- 21 [-]: DIV       R6 R5 K3     ; R6 := R5 / 4.000000
- 22 [-]: JMP       30           ; PC := 30
- 23 [-]: GETUPVAL  R7 U1        ; R7 := U1
- 24 [-]: MUL       R7 K4 R7     ; R7 := 2.000000 * R7
- 25 [-]: DIV       R7 R5 R7     ; R7 := R5 / R7
- 26 [-]: GETUPVAL  R8 U2        ; R8 := U2
- 27 [-]: DIV       R9 R2 R4     ; R9 := R2 / R4
- 28 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 29 [-]: MUL       R6 R7 R8     ; R6 := R7 * R8
- 30 [-]: SUB       R0 R0 K1     ; R0 := R0 - 1.000000
- 31 [-]: GETUPVAL  R7 U3        ; R7 := U3
- 32 [-]: CONST     R8 2         ; R8 := 2.000000
- 33 [-]: MUL       R9 K5 R0     ; R9 := 10.000000 * R0
- 34 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
- 35 [-]: MUL       R7 R4 R7     ; R7 := R4 * R7
- 36 [-]: GETUPVAL  R8 U4        ; R8 := U4
- 37 [-]: MUL       R9 R0 R3     ; R9 := R0 * R3
- 38 [-]: SUB       R9 R9 R6     ; R9 := R9 - R6
- 39 [-]: GETUPVAL  R10 U1       ; R10 := U1
- 40 [-]: MUL       R10 K4 R10   ; R10 := 2.000000 * R10
- 41 [-]: MUL       R9 R9 R10    ; R9 := R9 * R10
- 42 [-]: DIV       R9 R9 R5     ; R9 := R9 / R5
- 43 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 44 [-]: MUL       R7 R7 R8     ; R7 := R7 * R8
- 45 [-]: UNM       R7 R7        ; R7 :=  R7
- 46 [-]: ADD       R7 R7 R1     ; R7 := R7 + R1
- 47 [-]: RETURN    R7 2         ; return R7
- 48 [-]: RETURN    R0 1         ; return 
+       0 [-]: JUMPXEQKN R0 K0 L0 NOT [0]
+       1 [-]: RETURN R1 1  
+L 0:   2 [-]: DIV R0 R0 R3 
+       3 [-]: JUMPXEQKN R0 K1 L1 NOT [1]
+       4 [-]: ADD R6 R1 R2 
+       5 [-]: RETURN R6 1  
+L 1:   6 [-]: JUMPIF R5 L2 
+       7 [-]: MULK R5 R3 K2 [0.29999999999999999]
+L 2:   8 [-]: LOADN R6 0   
+       9 [-]: JUMPIFNOT R4 L4
+      10 [-]: FASTCALL1 2 R2 L3
+      11 [-]: MOVE R8 R2   
+      12 [-]: GETUPVAL R7 0
+      13 [-]: CALL R7 1 1  
+L 3:  14 [-]: JUMPIFNOTLT R4 R7 L5
+L 4:  15 [-]: MOVE R4 R2   
+      16 [-]: DIVK R6 R5 K3 [4]
+      17 [-]: JUMP L7
+     
+L 5:  18 [-]: LOADN R9 2   
+      19 [-]: GETUPVAL R10 1
+      20 [-]: MUL R8 R9 R10
+      21 [-]: DIV R7 R5 R8 
+      22 [-]: DIV R9 R2 R4 
+      23 [-]: FASTCALL1 4 R9 L6
+      24 [-]: GETUPVAL R8 2
+      25 [-]: CALL R8 1 1  
+L 6:  26 [-]: MUL R6 R7 R8 
+L 7:  27 [-]: SUBK R0 R0 K1 [1]
+      28 [-]: LOADN R12 2  
+      29 [-]: LOADN R14 10 
+      30 [-]: MUL R13 R14 R0
+      31 [-]: FASTCALL2 21 R12 R13 L8
+      32 [-]: GETUPVAL R11 3
+      33 [-]: CALL R11 2 1 
+L 8:  34 [-]: MUL R10 R4 R11
+      35 [-]: MUL R15 R0 R3
+      36 [-]: SUB R14 R15 R6
+      37 [-]: LOADN R16 2  
+      38 [-]: GETUPVAL R17 1
+      39 [-]: MUL R15 R16 R17
+      40 [-]: MUL R13 R14 R15
+      41 [-]: DIV R12 R13 R5
+      42 [-]: FASTCALL1 24 R12 L9
+      43 [-]: GETUPVAL R11 4
+      44 [-]: CALL R11 1 1 
+L 9:  45 [-]: MUL R9 R10 R11
+      46 [-]: MINUS R8 R9  
+      47 [-]: ADD R7 R8 R1 
+      48 [-]: RETURN R7 1  
 
 
-; Function #46:
-;
 ; Name:            
 ; Defined at line: 329
 ; #Upvalues:       5
 ; #Parameters:     6
 ; Is_vararg:       0
-; Max Stack Size:  11
+; Max Stack Size:  18
 
-  1 [-]: EQ        0 R0 K0      ; if R0 ~= 0.000000 then PC := 4
-  2 [-]: JMP       4            ; PC := 4
-  3 [-]: RETURN    R1 2         ; return R1
-  4 [-]: DIV       R0 R0 R3     ; R0 := R0 / R3
-  5 [-]: EQ        0 R0 K1      ; if R0 ~= 1.000000 then PC := 9
-  6 [-]: JMP       9            ; PC := 9
-  7 [-]: ADD       R6 R1 R2     ; R6 := R1 + R2
-  8 [-]: RETURN    R6 2         ; return R6
-  9 [-]: TEST      R5 1         ; if R5 then PC := 12
- 10 [-]: JMP       12           ; PC := 12
- 11 [-]: MUL       R5 R3 K2     ; R5 := R3 * 0.300000
- 12 [-]: CONST     R6 0         ; R6 := 0.000000
- 13 [-]: TEST      R4 0         ; if not R4 then PC := 20
- 14 [-]: JMP       20           ; PC := 20
- 15 [-]: GETUPVAL  R7 U0        ; R7 := U0
- 16 [-]: MOVE      R8 R2        ; R8 := R2
- 17 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 18 [-]: LT        0 R4 R7      ; if R4 >= R7 then PC := 23
- 19 [-]: JMP       23           ; PC := 23
- 20 [-]: MOVE      R4 R2        ; R4 := R2
- 21 [-]: DIV       R6 R5 K3     ; R6 := R5 / 4.000000
- 22 [-]: JMP       30           ; PC := 30
- 23 [-]: GETUPVAL  R7 U1        ; R7 := U1
- 24 [-]: MUL       R7 K4 R7     ; R7 := 2.000000 * R7
- 25 [-]: DIV       R7 R5 R7     ; R7 := R5 / R7
- 26 [-]: GETUPVAL  R8 U2        ; R8 := U2
- 27 [-]: DIV       R9 R2 R4     ; R9 := R2 / R4
- 28 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 29 [-]: MUL       R6 R7 R8     ; R6 := R7 * R8
- 30 [-]: GETUPVAL  R7 U3        ; R7 := U3
- 31 [-]: CONST     R8 2         ; R8 := 2.000000
- 32 [-]: MUL       R9 K5 R0     ; R9 := -10.000000 * R0
- 33 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
- 34 [-]: MUL       R7 R4 R7     ; R7 := R4 * R7
- 35 [-]: GETUPVAL  R8 U4        ; R8 := U4
- 36 [-]: MUL       R9 R0 R3     ; R9 := R0 * R3
- 37 [-]: SUB       R9 R9 R6     ; R9 := R9 - R6
- 38 [-]: GETUPVAL  R10 U1       ; R10 := U1
- 39 [-]: MUL       R10 K4 R10   ; R10 := 2.000000 * R10
- 40 [-]: MUL       R9 R9 R10    ; R9 := R9 * R10
- 41 [-]: DIV       R9 R9 R5     ; R9 := R9 / R5
- 42 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 43 [-]: MUL       R7 R7 R8     ; R7 := R7 * R8
- 44 [-]: ADD       R7 R7 R2     ; R7 := R7 + R2
- 45 [-]: ADD       R7 R7 R1     ; R7 := R7 + R1
- 46 [-]: RETURN    R7 2         ; return R7
- 47 [-]: RETURN    R0 1         ; return 
+       0 [-]: JUMPXEQKN R0 K0 L0 NOT [0]
+       1 [-]: RETURN R1 1  
+L 0:   2 [-]: DIV R0 R0 R3 
+       3 [-]: JUMPXEQKN R0 K1 L1 NOT [1]
+       4 [-]: ADD R6 R1 R2 
+       5 [-]: RETURN R6 1  
+L 1:   6 [-]: JUMPIF R5 L2 
+       7 [-]: MULK R5 R3 K2 [0.29999999999999999]
+L 2:   8 [-]: LOADN R6 0   
+       9 [-]: JUMPIFNOT R4 L4
+      10 [-]: FASTCALL1 2 R2 L3
+      11 [-]: MOVE R8 R2   
+      12 [-]: GETUPVAL R7 0
+      13 [-]: CALL R7 1 1  
+L 3:  14 [-]: JUMPIFNOTLT R4 R7 L5
+L 4:  15 [-]: MOVE R4 R2   
+      16 [-]: DIVK R6 R5 K3 [4]
+      17 [-]: JUMP L7
+     
+L 5:  18 [-]: LOADN R9 2   
+      19 [-]: GETUPVAL R10 1
+      20 [-]: MUL R8 R9 R10
+      21 [-]: DIV R7 R5 R8 
+      22 [-]: DIV R9 R2 R4 
+      23 [-]: FASTCALL1 4 R9 L6
+      24 [-]: GETUPVAL R8 2
+      25 [-]: CALL R8 1 1  
+L 6:  26 [-]: MUL R6 R7 R8 
+L 7:  27 [-]: LOADN R12 2  
+      28 [-]: LOADN R14 -10
+      29 [-]: MUL R13 R14 R0
+      30 [-]: FASTCALL2 21 R12 R13 L8
+      31 [-]: GETUPVAL R11 3
+      32 [-]: CALL R11 2 1 
+L 8:  33 [-]: MUL R10 R4 R11
+      34 [-]: MUL R15 R0 R3
+      35 [-]: SUB R14 R15 R6
+      36 [-]: LOADN R16 2  
+      37 [-]: GETUPVAL R17 1
+      38 [-]: MUL R15 R16 R17
+      39 [-]: MUL R13 R14 R15
+      40 [-]: DIV R12 R13 R5
+      41 [-]: FASTCALL1 24 R12 L9
+      42 [-]: GETUPVAL R11 4
+      43 [-]: CALL R11 1 1 
+L 9:  44 [-]: MUL R9 R10 R11
+      45 [-]: ADD R8 R9 R2 
+      46 [-]: ADD R7 R8 R1 
+      47 [-]: RETURN R7 1  
 
 
-; Function #47:
-;
 ; Name:            
 ; Defined at line: 350
 ; #Upvalues:       1
@@ -1445,20 +1483,17 @@
 ; Is_vararg:       0
 ; Max Stack Size:  13
 
-  1 [-]: GETUPVAL  R6 U0        ; R6 := U0
-  2 [-]: MOVE      R7 R0        ; R7 := R0
-  3 [-]: MOVE      R8 R1        ; R8 := R1
-  4 [-]: MOVE      R9 R2        ; R9 := R2
-  5 [-]: MOVE      R10 R3       ; R10 := R3
-  6 [-]: MOVE      R11 R4       ; R11 := R4
-  7 [-]: MOVE      R12 R5       ; R12 := R5
-  8 [-]: TAILCALL  R6 7 0       ; R6,... := R6(R7,R8,R9,R10,R11,R12)
-  9 [-]: RETURN    R6 0         ; return R6,...
- 10 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETUPVAL R6 0
+       1 [-]: MOVE R7 R0   
+       2 [-]: MOVE R8 R1   
+       3 [-]: MOVE R9 R2   
+       4 [-]: MOVE R10 R3  
+       5 [-]: MOVE R11 R4  
+       6 [-]: MOVE R12 R5  
+       7 [-]: CALL R6 6 1  
+       8 [-]: RETURN R6 1  
 
 
-; Function #48:
-;
 ; Name:            
 ; Defined at line: 356
 ; #Upvalues:       1
@@ -1466,105 +1501,105 @@
 ; Is_vararg:       0
 ; Max Stack Size:  13
 
-  1 [-]: GETUPVAL  R6 U0        ; R6 := U0
-  2 [-]: MOVE      R7 R0        ; R7 := R0
-  3 [-]: MOVE      R8 R1        ; R8 := R1
-  4 [-]: MOVE      R9 R2        ; R9 := R2
-  5 [-]: MOVE      R10 R3       ; R10 := R3
-  6 [-]: MOVE      R11 R4       ; R11 := R4
-  7 [-]: MOVE      R12 R5       ; R12 := R5
-  8 [-]: TAILCALL  R6 7 0       ; R6,... := R6(R7,R8,R9,R10,R11,R12)
-  9 [-]: RETURN    R6 0         ; return R6,...
- 10 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETUPVAL R6 0
+       1 [-]: MOVE R7 R0   
+       2 [-]: MOVE R8 R1   
+       3 [-]: MOVE R9 R2   
+       4 [-]: MOVE R10 R3  
+       5 [-]: MOVE R11 R4  
+       6 [-]: MOVE R12 R5  
+       7 [-]: CALL R6 6 1  
+       8 [-]: RETURN R6 1  
 
 
-; Function #49:
-;
 ; Name:            
 ; Defined at line: 362
 ; #Upvalues:       5
 ; #Parameters:     6
 ; Is_vararg:       0
-; Max Stack Size:  11
+; Max Stack Size:  19
 
-  1 [-]: EQ        0 R0 K0      ; if R0 ~= 0.000000 then PC := 4
-  2 [-]: JMP       4            ; PC := 4
-  3 [-]: RETURN    R1 2         ; return R1
-  4 [-]: DIV       R6 R0 R3     ; R6 := R0 / R3
-  5 [-]: MUL       R0 R6 K1     ; R0 := R6 * 2.000000
-  6 [-]: EQ        0 R0 K1      ; if R0 ~= 2.000000 then PC := 10
-  7 [-]: JMP       10           ; PC := 10
-  8 [-]: ADD       R6 R1 R2     ; R6 := R1 + R2
-  9 [-]: RETURN    R6 2         ; return R6
- 10 [-]: TEST      R5 1         ; if R5 then PC := 13
- 11 [-]: JMP       13           ; PC := 13
- 12 [-]: MUL       R5 R3 K2     ; R5 := R3 * 0.450000
- 13 [-]: TEST      R4 1         ; if R4 then PC := 16
- 14 [-]: JMP       16           ; PC := 16
- 15 [-]: CONST     R4 0         ; R4 := 0.000000
- 16 [-]: CONST     R6 0         ; R6 := 0.000000
- 17 [-]: TEST      R4 0         ; if not R4 then PC := 24
- 18 [-]: JMP       24           ; PC := 24
- 19 [-]: GETUPVAL  R7 U0        ; R7 := U0
- 20 [-]: MOVE      R8 R2        ; R8 := R2
- 21 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 22 [-]: LT        0 R4 R7      ; if R4 >= R7 then PC := 27
- 23 [-]: JMP       27           ; PC := 27
- 24 [-]: MOVE      R4 R2        ; R4 := R2
- 25 [-]: DIV       R6 R5 K3     ; R6 := R5 / 4.000000
- 26 [-]: JMP       34           ; PC := 34
- 27 [-]: GETUPVAL  R7 U1        ; R7 := U1
- 28 [-]: MUL       R7 K1 R7     ; R7 := 2.000000 * R7
- 29 [-]: DIV       R7 R5 R7     ; R7 := R5 / R7
- 30 [-]: GETUPVAL  R8 U2        ; R8 := U2
- 31 [-]: DIV       R9 R2 R4     ; R9 := R2 / R4
- 32 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 33 [-]: MUL       R6 R7 R8     ; R6 := R7 * R8
- 34 [-]: LT        0 R0 K4      ; if R0 >= 1.000000 then PC := 55
- 35 [-]: JMP       55           ; PC := 55
- 36 [-]: SUB       R0 R0 K4     ; R0 := R0 - 1.000000
- 37 [-]: GETUPVAL  R7 U3        ; R7 := U3
- 38 [-]: CONST     R8 2         ; R8 := 2.000000
- 39 [-]: MUL       R9 K5 R0     ; R9 := 10.000000 * R0
- 40 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
- 41 [-]: MUL       R7 R4 R7     ; R7 := R4 * R7
- 42 [-]: GETUPVAL  R8 U4        ; R8 := U4
- 43 [-]: MUL       R9 R0 R3     ; R9 := R0 * R3
- 44 [-]: SUB       R9 R9 R6     ; R9 := R9 - R6
- 45 [-]: GETUPVAL  R10 U1       ; R10 := U1
- 46 [-]: MUL       R10 K1 R10   ; R10 := 2.000000 * R10
- 47 [-]: MUL       R9 R9 R10    ; R9 := R9 * R10
- 48 [-]: DIV       R9 R9 R5     ; R9 := R9 / R5
- 49 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 50 [-]: MUL       R7 R7 R8     ; R7 := R7 * R8
- 51 [-]: MUL       R7 K6 R7     ; R7 := -0.500000 * R7
- 52 [-]: ADD       R7 R7 R1     ; R7 := R7 + R1
- 53 [-]: RETURN    R7 2         ; return R7
- 54 [-]: JMP       74           ; PC := 74
- 55 [-]: SUB       R0 R0 K4     ; R0 := R0 - 1.000000
- 56 [-]: GETUPVAL  R7 U3        ; R7 := U3
- 57 [-]: CONST     R8 2         ; R8 := 2.000000
- 58 [-]: MUL       R9 K7 R0     ; R9 := -10.000000 * R0
- 59 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
- 60 [-]: MUL       R7 R4 R7     ; R7 := R4 * R7
- 61 [-]: GETUPVAL  R8 U4        ; R8 := U4
- 62 [-]: MUL       R9 R0 R3     ; R9 := R0 * R3
- 63 [-]: SUB       R9 R9 R6     ; R9 := R9 - R6
- 64 [-]: GETUPVAL  R10 U1       ; R10 := U1
- 65 [-]: MUL       R10 K1 R10   ; R10 := 2.000000 * R10
- 66 [-]: MUL       R9 R9 R10    ; R9 := R9 * R10
- 67 [-]: DIV       R9 R9 R5     ; R9 := R9 / R5
- 68 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 69 [-]: MUL       R7 R7 R8     ; R7 := R7 * R8
- 70 [-]: MUL       R7 R7 K8     ; R7 := R7 * 0.500000
- 71 [-]: ADD       R7 R7 R2     ; R7 := R7 + R2
- 72 [-]: ADD       R7 R7 R1     ; R7 := R7 + R1
- 73 [-]: RETURN    R7 2         ; return R7
- 74 [-]: RETURN    R0 1         ; return 
+       0 [-]: JUMPXEQKN R0 K0 L0 NOT [0]
+       1 [-]: RETURN R1 1  
+L 0:   2 [-]: DIV R6 R0 R3 
+       3 [-]: MULK R0 R6 K1 [2]
+       4 [-]: JUMPXEQKN R0 K1 L1 NOT [2]
+       5 [-]: ADD R6 R1 R2 
+       6 [-]: RETURN R6 1  
+L 1:   7 [-]: JUMPIF R5 L2 
+       8 [-]: MULK R5 R3 K2 [0.44999999999999996]
+L 2:   9 [-]: JUMPIF R4 L3 
+      10 [-]: LOADN R4 0   
+L 3:  11 [-]: LOADN R6 0   
+      12 [-]: JUMPIFNOT R4 L5
+      13 [-]: FASTCALL1 2 R2 L4
+      14 [-]: MOVE R8 R2   
+      15 [-]: GETUPVAL R7 0
+      16 [-]: CALL R7 1 1  
+L 4:  17 [-]: JUMPIFNOTLT R4 R7 L6
+L 5:  18 [-]: MOVE R4 R2   
+      19 [-]: DIVK R6 R5 K3 [4]
+      20 [-]: JUMP L8
+     
+L 6:  21 [-]: LOADN R9 2   
+      22 [-]: GETUPVAL R10 1
+      23 [-]: MUL R8 R9 R10
+      24 [-]: DIV R7 R5 R8 
+      25 [-]: DIV R9 R2 R4 
+      26 [-]: FASTCALL1 4 R9 L7
+      27 [-]: GETUPVAL R8 2
+      28 [-]: CALL R8 1 1  
+L 7:  29 [-]: MUL R6 R7 R8 
+L 8:  30 [-]: LOADN R7 1   
+      31 [-]: JUMPIFNOTLT R0 R7 L11
+      32 [-]: SUBK R0 R0 K4 [1]
+      33 [-]: LOADK R9 K5 [-0.5]
+      34 [-]: LOADN R13 2  
+      35 [-]: LOADN R15 10 
+      36 [-]: MUL R14 R15 R0
+      37 [-]: FASTCALL2 21 R13 R14 L9
+      38 [-]: GETUPVAL R12 3
+      39 [-]: CALL R12 2 1 
+L 9:  40 [-]: MUL R11 R4 R12
+      41 [-]: MUL R16 R0 R3
+      42 [-]: SUB R15 R16 R6
+      43 [-]: LOADN R17 2  
+      44 [-]: GETUPVAL R18 1
+      45 [-]: MUL R16 R17 R18
+      46 [-]: MUL R14 R15 R16
+      47 [-]: DIV R13 R14 R5
+      48 [-]: FASTCALL1 24 R13 L10
+      49 [-]: GETUPVAL R12 4
+      50 [-]: CALL R12 1 1 
+L10:  51 [-]: MUL R10 R11 R12
+      52 [-]: MUL R8 R9 R10
+      53 [-]: ADD R7 R8 R1 
+      54 [-]: RETURN R7 1  
+L11:  55 [-]: SUBK R0 R0 K4 [1]
+      56 [-]: LOADN R13 2  
+      57 [-]: LOADN R15 -10
+      58 [-]: MUL R14 R15 R0
+      59 [-]: FASTCALL2 21 R13 R14 L12
+      60 [-]: GETUPVAL R12 3
+      61 [-]: CALL R12 2 1 
+L12:  62 [-]: MUL R11 R4 R12
+      63 [-]: MUL R16 R0 R3
+      64 [-]: SUB R15 R16 R6
+      65 [-]: LOADN R17 2  
+      66 [-]: GETUPVAL R18 1
+      67 [-]: MUL R16 R17 R18
+      68 [-]: MUL R14 R15 R16
+      69 [-]: DIV R13 R14 R5
+      70 [-]: FASTCALL1 24 R13 L13
+      71 [-]: GETUPVAL R12 4
+      72 [-]: CALL R12 1 1 
+L13:  73 [-]: MUL R10 R11 R12
+      74 [-]: MULK R9 R10 K6 [0.5]
+      75 [-]: ADD R8 R9 R2 
+      76 [-]: ADD R7 R8 R1 
+      77 [-]: RETURN R7 1  
 
 
-; Function #50:
-;
 ; Name:            
 ; Defined at line: 392
 ; #Upvalues:       2
@@ -1572,269 +1607,262 @@
 ; Is_vararg:       0
 ; Max Stack Size:  13
 
-  1 [-]: DIV       R6 R3 K0     ; R6 := R3 / 2.000000
-  2 [-]: LT        0 R0 R6      ; if R0 >= R6 then PC := 14
-  3 [-]: JMP       14           ; PC := 14
-  4 [-]: GETUPVAL  R6 U0        ; R6 := U0
-  5 [-]: MUL       R7 R0 K0     ; R7 := R0 * 2.000000
-  6 [-]: MOVE      R8 R1        ; R8 := R1
-  7 [-]: DIV       R9 R2 K0     ; R9 := R2 / 2.000000
-  8 [-]: MOVE      R10 R3       ; R10 := R3
-  9 [-]: MOVE      R11 R4       ; R11 := R4
- 10 [-]: MOVE      R12 R5       ; R12 := R5
- 11 [-]: TAILCALL  R6 7 0       ; R6,... := R6(R7,R8,R9,R10,R11,R12)
- 12 [-]: RETURN    R6 0         ; return R6,...
- 13 [-]: JMP       25           ; PC := 25
- 14 [-]: GETUPVAL  R6 U1        ; R6 := U1
- 15 [-]: MUL       R7 R0 K0     ; R7 := R0 * 2.000000
- 16 [-]: SUB       R7 R7 R3     ; R7 := R7 - R3
- 17 [-]: DIV       R8 R2 K0     ; R8 := R2 / 2.000000
- 18 [-]: ADD       R8 R1 R8     ; R8 := R1 + R8
- 19 [-]: DIV       R9 R2 K0     ; R9 := R2 / 2.000000
- 20 [-]: MOVE      R10 R3       ; R10 := R3
- 21 [-]: MOVE      R11 R4       ; R11 := R4
- 22 [-]: MOVE      R12 R5       ; R12 := R5
- 23 [-]: TAILCALL  R6 7 0       ; R6,... := R6(R7,R8,R9,R10,R11,R12)
- 24 [-]: RETURN    R6 0         ; return R6,...
- 25 [-]: RETURN    R0 1         ; return 
+       0 [-]: DIVK R6 R3 K0 [2]
+       1 [-]: JUMPIFNOTLT R0 R6 L0
+       2 [-]: GETUPVAL R6 0
+       3 [-]: MULK R7 R0 K0 [2]
+       4 [-]: MOVE R8 R1   
+       5 [-]: DIVK R9 R2 K0 [2]
+       6 [-]: MOVE R10 R3  
+       7 [-]: MOVE R11 R4  
+       8 [-]: MOVE R12 R5  
+       9 [-]: CALL R6 6 1  
+      10 [-]: RETURN R6 1  
+L 0:  11 [-]: GETUPVAL R6 1
+      12 [-]: MULK R8 R0 K0 [2]
+      13 [-]: SUB R7 R8 R3 
+      14 [-]: DIVK R9 R2 K0 [2]
+      15 [-]: ADD R8 R1 R9 
+      16 [-]: DIVK R9 R2 K0 [2]
+      17 [-]: MOVE R10 R3  
+      18 [-]: MOVE R11 R4  
+      19 [-]: MOVE R12 R5  
+      20 [-]: CALL R6 6 1  
+      21 [-]: RETURN R6 1  
 
 
-; Function #51:
-;
 ; Name:            
 ; Defined at line: 400
 ; #Upvalues:       0
 ; #Parameters:     5
 ; Is_vararg:       0
-; Max Stack Size:  7
+; Max Stack Size:  11
 
-  1 [-]: TEST      R4 1         ; if R4 then PC := 4
-  2 [-]: JMP       4            ; PC := 4
-  3 [-]: LOADK     R4 K0        ; R4 := 1.701580
-  4 [-]: DIV       R0 R0 R3     ; R0 := R0 / R3
-  5 [-]: MUL       R5 R2 R0     ; R5 := R2 * R0
-  6 [-]: MUL       R5 R5 R0     ; R5 := R5 * R0
-  7 [-]: ADD       R6 R4 K1     ; R6 := R4 + 1.000000
-  8 [-]: MUL       R6 R6 R0     ; R6 := R6 * R0
-  9 [-]: SUB       R6 R6 R4     ; R6 := R6 - R4
- 10 [-]: MUL       R5 R5 R6     ; R5 := R5 * R6
- 11 [-]: ADD       R5 R5 R1     ; R5 := R5 + R1
- 12 [-]: RETURN    R5 2         ; return R5
- 13 [-]: RETURN    R0 1         ; return 
+       0 [-]: JUMPIF R4 L0 
+       1 [-]: LOADK R4 K0 [1.7015800000000001]
+L 0:   2 [-]: DIV R0 R0 R3 
+       3 [-]: MUL R8 R2 R0 
+       4 [-]: MUL R7 R8 R0 
+       5 [-]: ADDK R10 R4 K1 [1]
+       6 [-]: MUL R9 R10 R0
+       7 [-]: SUB R8 R9 R4 
+       8 [-]: MUL R6 R7 R8 
+       9 [-]: ADD R5 R6 R1 
+      10 [-]: RETURN R5 1  
 
 
-; Function #52:
-;
 ; Name:            
 ; Defined at line: 406
 ; #Upvalues:       0
 ; #Parameters:     5
 ; Is_vararg:       0
-; Max Stack Size:  7
+; Max Stack Size:  13
 
-  1 [-]: TEST      R4 1         ; if R4 then PC := 4
-  2 [-]: JMP       4            ; PC := 4
-  3 [-]: LOADK     R4 K0        ; R4 := 1.701580
-  4 [-]: DIV       R5 R0 R3     ; R5 := R0 / R3
-  5 [-]: SUB       R0 R5 K1     ; R0 := R5 - 1.000000
-  6 [-]: MUL       R5 R0 R0     ; R5 := R0 * R0
-  7 [-]: ADD       R6 R4 K1     ; R6 := R4 + 1.000000
-  8 [-]: MUL       R6 R6 R0     ; R6 := R6 * R0
-  9 [-]: ADD       R6 R6 R4     ; R6 := R6 + R4
- 10 [-]: MUL       R5 R5 R6     ; R5 := R5 * R6
- 11 [-]: ADD       R5 R5 K1     ; R5 := R5 + 1.000000
- 12 [-]: MUL       R5 R2 R5     ; R5 := R2 * R5
- 13 [-]: ADD       R5 R5 R1     ; R5 := R5 + R1
- 14 [-]: RETURN    R5 2         ; return R5
- 15 [-]: RETURN    R0 1         ; return 
+       0 [-]: JUMPIF R4 L0 
+       1 [-]: LOADK R4 K0 [1.7015800000000001]
+L 0:   2 [-]: DIV R5 R0 R3 
+       3 [-]: SUBK R0 R5 K1 [1]
+       4 [-]: MUL R9 R0 R0 
+       5 [-]: ADDK R12 R4 K1 [1]
+       6 [-]: MUL R11 R12 R0
+       7 [-]: ADD R10 R11 R4
+       8 [-]: MUL R8 R9 R10
+       9 [-]: ADDK R7 R8 K1 [1]
+      10 [-]: MUL R6 R2 R7 
+      11 [-]: ADD R5 R6 R1 
+      12 [-]: RETURN R5 1  
 
 
-; Function #53:
-;
 ; Name:            
 ; Defined at line: 412
-; #Upvalues:       1
+; #Upvalues:       0
 ; #Parameters:     5
 ; Is_vararg:       0
-; Max Stack Size:  11
+; Max Stack Size:  13
 
-  1 [-]: GETUPVAL  R5 U0        ; R5 := U0
-  2 [-]: MOVE      R6 R0        ; R6 := R0
-  3 [-]: MOVE      R7 R1        ; R7 := R1
-  4 [-]: MOVE      R8 R2        ; R8 := R2
-  5 [-]: MOVE      R9 R3        ; R9 := R3
-  6 [-]: MOVE      R10 R4       ; R10 := R4
-  7 [-]: TAILCALL  R5 6 0       ; R5,... := R5(R6,R7,R8,R9,R10)
-  8 [-]: RETURN    R5 0         ; return R5,...
-  9 [-]: RETURN    R0 1         ; return 
+       0 [-]: MOVE R6 R0   
+       1 [-]: MOVE R7 R4   
+       2 [-]: JUMPIF R7 L0 
+       3 [-]: LOADK R7 K0 [1.7015800000000001]
+L 0:   4 [-]: DIV R6 R6 R3 
+       5 [-]: MUL R10 R2 R6
+       6 [-]: MUL R9 R10 R6
+       7 [-]: ADDK R12 R7 K1 [1]
+       8 [-]: MUL R11 R12 R6
+       9 [-]: SUB R10 R11 R7
+      10 [-]: MUL R8 R9 R10
+      11 [-]: ADD R5 R8 R1 
+      12 [-]: RETURN R5 1  
 
 
-; Function #54:
-;
 ; Name:            
 ; Defined at line: 416
-; #Upvalues:       1
+; #Upvalues:       0
 ; #Parameters:     5
 ; Is_vararg:       0
-; Max Stack Size:  11
+; Max Stack Size:  15
 
-  1 [-]: GETUPVAL  R5 U0        ; R5 := U0
-  2 [-]: MOVE      R6 R0        ; R6 := R0
-  3 [-]: MOVE      R7 R1        ; R7 := R1
-  4 [-]: MOVE      R8 R2        ; R8 := R2
-  5 [-]: MOVE      R9 R3        ; R9 := R3
-  6 [-]: MOVE      R10 R4       ; R10 := R4
-  7 [-]: TAILCALL  R5 6 0       ; R5,... := R5(R6,R7,R8,R9,R10)
-  8 [-]: RETURN    R5 0         ; return R5,...
-  9 [-]: RETURN    R0 1         ; return 
+       0 [-]: MOVE R6 R0   
+       1 [-]: MOVE R7 R4   
+       2 [-]: JUMPIF R7 L0 
+       3 [-]: LOADK R7 K0 [1.7015800000000001]
+L 0:   4 [-]: DIV R8 R6 R3 
+       5 [-]: SUBK R6 R8 K1 [1]
+       6 [-]: MUL R11 R6 R6
+       7 [-]: ADDK R14 R7 K1 [1]
+       8 [-]: MUL R13 R14 R6
+       9 [-]: ADD R12 R13 R7
+      10 [-]: MUL R10 R11 R12
+      11 [-]: ADDK R9 R10 K1 [1]
+      12 [-]: MUL R8 R2 R9 
+      13 [-]: ADD R5 R8 R1 
+      14 [-]: RETURN R5 1  
 
 
-; Function #55:
-;
 ; Name:            
 ; Defined at line: 420
 ; #Upvalues:       0
 ; #Parameters:     5
 ; Is_vararg:       0
-; Max Stack Size:  8
+; Max Stack Size:  14
 
-  1 [-]: TEST      R4 1         ; if R4 then PC := 4
-  2 [-]: JMP       4            ; PC := 4
-  3 [-]: LOADK     R4 K0        ; R4 := 1.701580
-  4 [-]: MUL       R4 R4 K1     ; R4 := R4 * 1.525000
-  5 [-]: DIV       R5 R0 R3     ; R5 := R0 / R3
-  6 [-]: MUL       R0 R5 K2     ; R0 := R5 * 2.000000
-  7 [-]: LT        0 R0 K3      ; if R0 >= 1.000000 then PC := 19
-  8 [-]: JMP       19           ; PC := 19
-  9 [-]: DIV       R5 R2 K2     ; R5 := R2 / 2.000000
- 10 [-]: MUL       R6 R0 R0     ; R6 := R0 * R0
- 11 [-]: ADD       R7 R4 K3     ; R7 := R4 + 1.000000
- 12 [-]: MUL       R7 R7 R0     ; R7 := R7 * R0
- 13 [-]: SUB       R7 R7 R4     ; R7 := R7 - R4
- 14 [-]: MUL       R6 R6 R7     ; R6 := R6 * R7
- 15 [-]: MUL       R5 R5 R6     ; R5 := R5 * R6
- 16 [-]: ADD       R5 R5 R1     ; R5 := R5 + R1
- 17 [-]: RETURN    R5 2         ; return R5
- 18 [-]: JMP       30           ; PC := 30
- 19 [-]: SUB       R0 R0 K2     ; R0 := R0 - 2.000000
- 20 [-]: DIV       R5 R2 K2     ; R5 := R2 / 2.000000
- 21 [-]: MUL       R6 R0 R0     ; R6 := R0 * R0
- 22 [-]: ADD       R7 R4 K3     ; R7 := R4 + 1.000000
- 23 [-]: MUL       R7 R7 R0     ; R7 := R7 * R0
- 24 [-]: ADD       R7 R7 R4     ; R7 := R7 + R4
- 25 [-]: MUL       R6 R6 R7     ; R6 := R6 * R7
- 26 [-]: ADD       R6 R6 K2     ; R6 := R6 + 2.000000
- 27 [-]: MUL       R5 R5 R6     ; R5 := R5 * R6
- 28 [-]: ADD       R5 R5 R1     ; R5 := R5 + R1
- 29 [-]: RETURN    R5 2         ; return R5
- 30 [-]: RETURN    R0 1         ; return 
+       0 [-]: JUMPIF R4 L0 
+       1 [-]: LOADK R4 K0 [1.7015800000000001]
+L 0:   2 [-]: MULK R4 R4 K1 [1.5249999999999999]
+       3 [-]: DIV R5 R0 R3 
+       4 [-]: MULK R0 R5 K2 [2]
+       5 [-]: LOADN R5 1   
+       6 [-]: JUMPIFNOTLT R0 R5 L1
+       7 [-]: DIVK R7 R2 K2 [2]
+       8 [-]: MUL R9 R0 R0 
+       9 [-]: ADDK R12 R4 K3 [1]
+      10 [-]: MUL R11 R12 R0
+      11 [-]: SUB R10 R11 R4
+      12 [-]: MUL R8 R9 R10
+      13 [-]: MUL R6 R7 R8 
+      14 [-]: ADD R5 R6 R1 
+      15 [-]: RETURN R5 1  
+L 1:  16 [-]: SUBK R0 R0 K2 [2]
+      17 [-]: DIVK R7 R2 K2 [2]
+      18 [-]: MUL R10 R0 R0
+      19 [-]: ADDK R13 R4 K3 [1]
+      20 [-]: MUL R12 R13 R0
+      21 [-]: ADD R11 R12 R4
+      22 [-]: MUL R9 R10 R11
+      23 [-]: ADDK R8 R9 K2 [2]
+      24 [-]: MUL R6 R7 R8 
+      25 [-]: ADD R5 R6 R1 
+      26 [-]: RETURN R5 1  
 
 
-; Function #56:
-;
 ; Name:            
 ; Defined at line: 432
-; #Upvalues:       2
+; #Upvalues:       0
 ; #Parameters:     5
 ; Is_vararg:       0
-; Max Stack Size:  11
+; Max Stack Size:  16
 
-  1 [-]: DIV       R5 R3 K0     ; R5 := R3 / 2.000000
-  2 [-]: LT        0 R0 R5      ; if R0 >= R5 then PC := 13
-  3 [-]: JMP       13           ; PC := 13
-  4 [-]: GETUPVAL  R5 U0        ; R5 := U0
-  5 [-]: MUL       R6 R0 K0     ; R6 := R0 * 2.000000
-  6 [-]: MOVE      R7 R1        ; R7 := R1
-  7 [-]: DIV       R8 R2 K0     ; R8 := R2 / 2.000000
-  8 [-]: MOVE      R9 R3        ; R9 := R3
-  9 [-]: MOVE      R10 R4       ; R10 := R4
- 10 [-]: TAILCALL  R5 6 0       ; R5,... := R5(R6,R7,R8,R9,R10)
- 11 [-]: RETURN    R5 0         ; return R5,...
- 12 [-]: JMP       23           ; PC := 23
- 13 [-]: GETUPVAL  R5 U1        ; R5 := U1
- 14 [-]: MUL       R6 R0 K0     ; R6 := R0 * 2.000000
- 15 [-]: SUB       R6 R6 R3     ; R6 := R6 - R3
- 16 [-]: DIV       R7 R2 K0     ; R7 := R2 / 2.000000
- 17 [-]: ADD       R7 R1 R7     ; R7 := R1 + R7
- 18 [-]: DIV       R8 R2 K0     ; R8 := R2 / 2.000000
- 19 [-]: MOVE      R9 R3        ; R9 := R3
- 20 [-]: MOVE      R10 R4       ; R10 := R4
- 21 [-]: TAILCALL  R5 6 0       ; R5,... := R5(R6,R7,R8,R9,R10)
- 22 [-]: RETURN    R5 0         ; return R5,...
- 23 [-]: RETURN    R0 1         ; return 
+       0 [-]: DIVK R5 R3 K0 [2]
+       1 [-]: JUMPIFNOTLT R0 R5 L1
+       2 [-]: MULK R6 R0 K0 [2]
+       3 [-]: DIVK R7 R2 K0 [2]
+       4 [-]: MOVE R8 R4   
+       5 [-]: JUMPIF R8 L0 
+       6 [-]: LOADK R8 K1 [1.7015800000000001]
+L 0:   7 [-]: DIV R9 R6 R3 
+       8 [-]: SUBK R6 R9 K2 [1]
+       9 [-]: MUL R12 R6 R6
+      10 [-]: ADDK R15 R8 K2 [1]
+      11 [-]: MUL R14 R15 R6
+      12 [-]: ADD R13 R14 R8
+      13 [-]: MUL R11 R12 R13
+      14 [-]: ADDK R10 R11 K2 [1]
+      15 [-]: MUL R9 R7 R10
+      16 [-]: ADD R5 R9 R1 
+      17 [-]: RETURN R5 1  
+L 1:  18 [-]: MULK R7 R0 K0 [2]
+      19 [-]: SUB R6 R7 R3 
+      20 [-]: DIVK R8 R2 K0 [2]
+      21 [-]: ADD R7 R1 R8 
+      22 [-]: DIVK R8 R2 K0 [2]
+      23 [-]: MOVE R9 R4   
+      24 [-]: JUMPIF R9 L2 
+      25 [-]: LOADK R9 K1 [1.7015800000000001]
+L 2:  26 [-]: DIV R6 R6 R3 
+      27 [-]: MUL R12 R8 R6
+      28 [-]: MUL R11 R12 R6
+      29 [-]: ADDK R14 R9 K2 [1]
+      30 [-]: MUL R13 R14 R6
+      31 [-]: SUB R12 R13 R9
+      32 [-]: MUL R10 R11 R12
+      33 [-]: ADD R5 R10 R7
+      34 [-]: RETURN R5 1  
 
 
-; Function #57:
-;
 ; Name:            
 ; Defined at line: 440
 ; #Upvalues:       0
 ; #Parameters:     4
 ; Is_vararg:       0
-; Max Stack Size:  5
+; Max Stack Size:  10
 
-  1 [-]: DIV       R0 R0 R3     ; R0 := R0 / R3
-  2 [-]: LT        0 R0 K0      ; if R0 >= 0.363636 then PC := 10
-  3 [-]: JMP       10           ; PC := 10
-  4 [-]: MUL       R4 K1 R0     ; R4 := 7.562500 * R0
-  5 [-]: MUL       R4 R4 R0     ; R4 := R4 * R0
-  6 [-]: MUL       R4 R2 R4     ; R4 := R2 * R4
-  7 [-]: ADD       R4 R4 R1     ; R4 := R4 + R1
-  8 [-]: RETURN    R4 2         ; return R4
-  9 [-]: JMP       37           ; PC := 37
- 10 [-]: LT        0 R0 K2      ; if R0 >= 0.727273 then PC := 20
- 11 [-]: JMP       20           ; PC := 20
- 12 [-]: SUB       R0 R0 K3     ; R0 := R0 - 0.545455
- 13 [-]: MUL       R4 K1 R0     ; R4 := 7.562500 * R0
- 14 [-]: MUL       R4 R4 R0     ; R4 := R4 * R0
- 15 [-]: ADD       R4 R4 K4     ; R4 := R4 + 0.750000
- 16 [-]: MUL       R4 R2 R4     ; R4 := R2 * R4
- 17 [-]: ADD       R4 R4 R1     ; R4 := R4 + R1
- 18 [-]: RETURN    R4 2         ; return R4
- 19 [-]: JMP       37           ; PC := 37
- 20 [-]: LT        0 R0 K5      ; if R0 >= 0.909091 then PC := 30
- 21 [-]: JMP       30           ; PC := 30
- 22 [-]: SUB       R0 R0 K6     ; R0 := R0 - 0.818182
- 23 [-]: MUL       R4 K1 R0     ; R4 := 7.562500 * R0
- 24 [-]: MUL       R4 R4 R0     ; R4 := R4 * R0
- 25 [-]: ADD       R4 R4 K7     ; R4 := R4 + 0.937500
- 26 [-]: MUL       R4 R2 R4     ; R4 := R2 * R4
- 27 [-]: ADD       R4 R4 R1     ; R4 := R4 + R1
- 28 [-]: RETURN    R4 2         ; return R4
- 29 [-]: JMP       37           ; PC := 37
- 30 [-]: SUB       R0 R0 K8     ; R0 := R0 - 0.954545
- 31 [-]: MUL       R4 K1 R0     ; R4 := 7.562500 * R0
- 32 [-]: MUL       R4 R4 R0     ; R4 := R4 * R0
- 33 [-]: ADD       R4 R4 K9     ; R4 := R4 + 0.984375
- 34 [-]: MUL       R4 R2 R4     ; R4 := R2 * R4
- 35 [-]: ADD       R4 R4 R1     ; R4 := R4 + R1
- 36 [-]: RETURN    R4 2         ; return R4
- 37 [-]: RETURN    R0 1         ; return 
+       0 [-]: DIV R0 R0 R3 
+       1 [-]: LOADK R4 K0 [0.36363636363636365]
+       2 [-]: JUMPIFNOTLT R0 R4 L0
+       3 [-]: LOADK R8 K1 [7.5625]
+       4 [-]: MUL R7 R8 R0 
+       5 [-]: MUL R6 R7 R0 
+       6 [-]: MUL R5 R2 R6 
+       7 [-]: ADD R4 R5 R1 
+       8 [-]: RETURN R4 1  
+L 0:   9 [-]: LOADK R4 K2 [0.72727272727272729]
+      10 [-]: JUMPIFNOTLT R0 R4 L1
+      11 [-]: SUBK R0 R0 K3 [0.54545454545454541]
+      12 [-]: LOADK R9 K1 [7.5625]
+      13 [-]: MUL R8 R9 R0 
+      14 [-]: MUL R7 R8 R0 
+      15 [-]: ADDK R6 R7 K4 [0.75]
+      16 [-]: MUL R5 R2 R6 
+      17 [-]: ADD R4 R5 R1 
+      18 [-]: RETURN R4 1  
+L 1:  19 [-]: LOADK R4 K5 [0.90909090909090906]
+      20 [-]: JUMPIFNOTLT R0 R4 L2
+      21 [-]: SUBK R0 R0 K6 [0.81818181818181823]
+      22 [-]: LOADK R9 K1 [7.5625]
+      23 [-]: MUL R8 R9 R0 
+      24 [-]: MUL R7 R8 R0 
+      25 [-]: ADDK R6 R7 K7 [0.9375]
+      26 [-]: MUL R5 R2 R6 
+      27 [-]: ADD R4 R5 R1 
+      28 [-]: RETURN R4 1  
+L 2:  29 [-]: SUBK R0 R0 K8 [0.95454545454545459]
+      30 [-]: LOADK R9 K1 [7.5625]
+      31 [-]: MUL R8 R9 R0 
+      32 [-]: MUL R7 R8 R0 
+      33 [-]: ADDK R6 R7 K9 [0.984375]
+      34 [-]: MUL R5 R2 R6 
+      35 [-]: ADD R4 R5 R1 
+      36 [-]: RETURN R4 1  
 
 
-; Function #58:
-;
 ; Name:            
 ; Defined at line: 456
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
-; Max Stack Size:  9
+; Max Stack Size:  11
 
-  1 [-]: GETUPVAL  R4 U0        ; R4 := U0
-  2 [-]: SUB       R5 R3 R0     ; R5 := R3 - R0
-  3 [-]: CONST     R6 0         ; R6 := 0.000000
-  4 [-]: MOVE      R7 R2        ; R7 := R2
-  5 [-]: MOVE      R8 R3        ; R8 := R3
-  6 [-]: CALL      R4 5 2       ; R4 := R4(R5,R6,R7,R8)
-  7 [-]: SUB       R4 R2 R4     ; R4 := R2 - R4
-  8 [-]: ADD       R4 R4 R1     ; R4 := R4 + R1
-  9 [-]: RETURN    R4 2         ; return R4
- 10 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETUPVAL R6 0
+       1 [-]: SUB R7 R3 R0 
+       2 [-]: LOADN R8 0   
+       3 [-]: MOVE R9 R2   
+       4 [-]: MOVE R10 R3  
+       5 [-]: CALL R6 4 1  
+       6 [-]: SUB R5 R2 R6 
+       7 [-]: ADD R4 R5 R1 
+       8 [-]: RETURN R4 1  
 
 
-; Function #59:
-;
 ; Name:            
 ; Defined at line: 460
 ; #Upvalues:       1
@@ -1842,101 +1870,98 @@
 ; Is_vararg:       0
 ; Max Stack Size:  9
 
-  1 [-]: GETUPVAL  R4 U0        ; R4 := U0
-  2 [-]: MOVE      R5 R0        ; R5 := R0
-  3 [-]: MOVE      R6 R1        ; R6 := R1
-  4 [-]: MOVE      R7 R2        ; R7 := R2
-  5 [-]: MOVE      R8 R3        ; R8 := R3
-  6 [-]: TAILCALL  R4 5 0       ; R4,... := R4(R5,R6,R7,R8)
-  7 [-]: RETURN    R4 0         ; return R4,...
-  8 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETUPVAL R4 0
+       1 [-]: MOVE R5 R0   
+       2 [-]: MOVE R6 R1   
+       3 [-]: MOVE R7 R2   
+       4 [-]: MOVE R8 R3   
+       5 [-]: CALL R4 4 1  
+       6 [-]: RETURN R4 1  
 
 
-; Function #60:
-;
 ; Name:            
 ; Defined at line: 464
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
-; Max Stack Size:  9
+; Max Stack Size:  11
 
-  1 [-]: GETUPVAL  R4 U0        ; R4 := U0
-  2 [-]: MOVE      R5 R0        ; R5 := R0
-  3 [-]: MOVE      R6 R1        ; R6 := R1
-  4 [-]: MOVE      R7 R2        ; R7 := R2
-  5 [-]: MOVE      R8 R3        ; R8 := R3
-  6 [-]: TAILCALL  R4 5 0       ; R4,... := R4(R5,R6,R7,R8)
-  7 [-]: RETURN    R4 0         ; return R4,...
-  8 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETUPVAL R6 0
+       1 [-]: SUB R7 R3 R0 
+       2 [-]: LOADN R8 0   
+       3 [-]: MOVE R9 R2   
+       4 [-]: MOVE R10 R3  
+       5 [-]: CALL R6 4 1  
+       6 [-]: SUB R5 R2 R6 
+       7 [-]: ADD R4 R5 R1 
+       8 [-]: RETURN R4 1  
 
 
-; Function #61:
-;
 ; Name:            
 ; Defined at line: 468
-; #Upvalues:       2
+; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
-; Max Stack Size:  9
+; Max Stack Size:  14
 
-  1 [-]: DIV       R4 R3 K0     ; R4 := R3 / 2.000000
-  2 [-]: LT        0 R0 R4      ; if R0 >= R4 then PC := 14
-  3 [-]: JMP       14           ; PC := 14
-  4 [-]: GETUPVAL  R4 U0        ; R4 := U0
-  5 [-]: MUL       R5 R0 K0     ; R5 := R0 * 2.000000
-  6 [-]: CONST     R6 0         ; R6 := 0.000000
-  7 [-]: MOVE      R7 R2        ; R7 := R2
-  8 [-]: MOVE      R8 R3        ; R8 := R3
-  9 [-]: CALL      R4 5 2       ; R4 := R4(R5,R6,R7,R8)
- 10 [-]: MUL       R4 R4 K1     ; R4 := R4 * 0.500000
- 11 [-]: ADD       R4 R4 R1     ; R4 := R4 + R1
- 12 [-]: RETURN    R4 2         ; return R4
- 13 [-]: JMP       26           ; PC := 26
- 14 [-]: GETUPVAL  R4 U1        ; R4 := U1
- 15 [-]: MUL       R5 R0 K0     ; R5 := R0 * 2.000000
- 16 [-]: SUB       R5 R5 R3     ; R5 := R5 - R3
- 17 [-]: CONST     R6 0         ; R6 := 0.000000
- 18 [-]: MOVE      R7 R2        ; R7 := R2
- 19 [-]: MOVE      R8 R3        ; R8 := R3
- 20 [-]: CALL      R4 5 2       ; R4 := R4(R5,R6,R7,R8)
- 21 [-]: MUL       R4 R4 K1     ; R4 := R4 * 0.500000
- 22 [-]: MUL       R5 R2 K1     ; R5 := R2 * 0.500000
- 23 [-]: ADD       R4 R4 R5     ; R4 := R4 + R5
- 24 [-]: ADD       R4 R4 R1     ; R4 := R4 + R1
- 25 [-]: RETURN    R4 2         ; return R4
- 26 [-]: RETURN    R0 1         ; return 
+       0 [-]: DIVK R4 R3 K0 [2]
+       1 [-]: JUMPIFNOTLT R0 R4 L0
+       2 [-]: MULK R7 R0 K0 [2]
+       3 [-]: GETUPVAL R9 0
+       4 [-]: SUB R10 R3 R7
+       5 [-]: LOADN R11 0  
+       6 [-]: MOVE R12 R2  
+       7 [-]: MOVE R13 R3  
+       8 [-]: CALL R9 4 1  
+       9 [-]: SUB R8 R2 R9 
+      10 [-]: ADDK R6 R8 K2 [0]
+      11 [-]: MULK R5 R6 K1 [0.5]
+      12 [-]: ADD R4 R5 R1 
+      13 [-]: RETURN R4 1  
+L 0:  14 [-]: GETUPVAL R7 0
+      15 [-]: MULK R9 R0 K0 [2]
+      16 [-]: SUB R8 R9 R3 
+      17 [-]: LOADN R9 0   
+      18 [-]: MOVE R10 R2  
+      19 [-]: MOVE R11 R3  
+      20 [-]: CALL R7 4 1  
+      21 [-]: MULK R6 R7 K1 [0.5]
+      22 [-]: MULK R7 R2 K1 [0.5]
+      23 [-]: ADD R5 R6 R7 
+      24 [-]: ADD R4 R5 R1 
+      25 [-]: RETURN R4 1  
 
 
-; Function #62:
-;
 ; Name:            
 ; Defined at line: 476
-; #Upvalues:       2
+; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
-; Max Stack Size:  9
+; Max Stack Size:  14
 
-  1 [-]: DIV       R4 R3 K0     ; R4 := R3 / 2.000000
-  2 [-]: LT        0 R0 R4      ; if R0 >= R4 then PC := 12
-  3 [-]: JMP       12           ; PC := 12
-  4 [-]: GETUPVAL  R4 U0        ; R4 := U0
-  5 [-]: MUL       R5 R0 K0     ; R5 := R0 * 2.000000
-  6 [-]: MOVE      R6 R1        ; R6 := R1
-  7 [-]: DIV       R7 R2 K0     ; R7 := R2 / 2.000000
-  8 [-]: MOVE      R8 R3        ; R8 := R3
-  9 [-]: TAILCALL  R4 5 0       ; R4,... := R4(R5,R6,R7,R8)
- 10 [-]: RETURN    R4 0         ; return R4,...
- 11 [-]: JMP       21           ; PC := 21
- 12 [-]: GETUPVAL  R4 U1        ; R4 := U1
- 13 [-]: MUL       R5 R0 K0     ; R5 := R0 * 2.000000
- 14 [-]: SUB       R5 R5 R3     ; R5 := R5 - R3
- 15 [-]: DIV       R6 R2 K0     ; R6 := R2 / 2.000000
- 16 [-]: ADD       R6 R1 R6     ; R6 := R1 + R6
- 17 [-]: DIV       R7 R2 K0     ; R7 := R2 / 2.000000
- 18 [-]: MOVE      R8 R3        ; R8 := R3
- 19 [-]: TAILCALL  R4 5 0       ; R4,... := R4(R5,R6,R7,R8)
- 20 [-]: RETURN    R4 0         ; return R4,...
- 21 [-]: RETURN    R0 1         ; return 
+       0 [-]: DIVK R4 R3 K0 [2]
+       1 [-]: JUMPIFNOTLT R0 R4 L0
+       2 [-]: GETUPVAL R4 0
+       3 [-]: MULK R5 R0 K0 [2]
+       4 [-]: MOVE R6 R1   
+       5 [-]: DIVK R7 R2 K0 [2]
+       6 [-]: MOVE R8 R3   
+       7 [-]: CALL R4 4 1  
+       8 [-]: RETURN R4 1  
+L 0:   9 [-]: MULK R6 R0 K0 [2]
+      10 [-]: SUB R5 R6 R3 
+      11 [-]: DIVK R7 R2 K0 [2]
+      12 [-]: ADD R6 R1 R7 
+      13 [-]: DIVK R7 R2 K0 [2]
+      14 [-]: GETUPVAL R9 0
+      15 [-]: SUB R10 R3 R5
+      16 [-]: LOADN R11 0  
+      17 [-]: MOVE R12 R7  
+      18 [-]: MOVE R13 R3  
+      19 [-]: CALL R9 4 1  
+      20 [-]: SUB R8 R7 R9 
+      21 [-]: ADD R4 R8 R6 
+      22 [-]: RETURN R4 1  
+
 
 

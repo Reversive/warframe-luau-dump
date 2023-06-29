@@ -1,31 +1,29 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
+; Is_vararg:       1
 ; Max Stack Size:  5
 
-  1 [-]: CONST     R0 0         ; R0 := 0.000000
-  2 [-]: CONST     R1 1         ; R1 := 1.000000
-  3 [-]: LOADNIL   R2 R3        ; R2 := R3 := nil
-  4 [-]: CLOSURE   R4 0         ; R4 := closure(Function #1)
-  5 [-]: MOVE      R0 R2        ; R0 := R2
-  6 [-]: MOVE      R0 R3        ; R0 := R3
-  7 [-]: MOVE      R0 R0        ; R0 := R0
-  8 [-]: MOVE      R0 R1        ; R0 := R1
-  9 [-]: SETGLOBAL R4 K0        ; Start := R4
- 10 [-]: CLOSURE   R4 1         ; R4 := closure(Function #2)
- 11 [-]: MOVE      R0 R0        ; R0 := R0
- 12 [-]: MOVE      R0 R3        ; R0 := R3
- 13 [-]: MOVE      R0 R1        ; R0 := R1
- 14 [-]: SETGLOBAL R4 K1        ; MatchTagEvent := R4
- 15 [-]: RETURN    R0 1         ; return 
+            1 [-]: LOADN R0 0   
+       2 [-]: LOADN R1 1   
+       3 [-]: LOADNIL R2   
+       4 [-]: LOADNIL R3   
+       5 [-]: NEWCLOSURE R4 P0
+       6 [-]: MOVE R1 R2   
+       7 [-]: MOVE R1 R3   
+       8 [-]: MOVE R1 R0   
+       9 [-]: MOVE R1 R1   
+      10 [-]: SETGLOBAL R4 K0 ["Start"]
+      11 [-]: NEWCLOSURE R4 P1
+      12 [-]: MOVE R1 R0   
+      13 [-]: MOVE R1 R3   
+      14 [-]: MOVE R1 R1   
+      15 [-]: SETGLOBAL R4 K1 ["MatchTagEvent"]
+      16 [-]: CLOSEUPVALS R0
+      17 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 9
 ; #Upvalues:       4
@@ -33,86 +31,82 @@
 ; Is_vararg:       0
 ; Max Stack Size:  4
 
-  1 [-]: GETGLOBAL R0 K0        ; R0 := 0xba7dfcd2
-  2 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0xd31cfac0]
-  3 [-]: GETGLOBAL R2 K2        ; R2 := 0x83062d09
-  4 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
-  5 [-]: SETUPVAL  R0 U0        ; U82 := R0
-  6 [-]: GETGLOBAL R0 K3        ; R0 := 0x7b998233
-  7 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  8 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  9 [-]: TEST      R0 0         ; if not R0 then PC := 12
- 10 [-]: JMP       12           ; PC := 12
- 11 [-]: RETURN    R0 1         ; return 
- 12 [-]: GETGLOBAL R0 K0        ; R0 := 0xba7dfcd2
- 13 [-]: SELF      R0 R0 K4     ; R1 := R0; R0 := R0[0xc97b7a44]
- 14 [-]: GETGLOBAL R2 K2        ; R2 := 0x83062d09
- 15 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
- 16 [-]: SETUPVAL  R0 U1        ; U82 := R1
- 17 [-]: GETGLOBAL R0 K3        ; R0 := 0x7b998233
- 18 [-]: GETUPVAL  R1 U1        ; R1 := U1
- 19 [-]: CALL      R0 2 2       ; R0 := R0(R1)
- 20 [-]: TEST      R0 0         ; if not R0 then PC := 23
- 21 [-]: JMP       23           ; PC := 23
- 22 [-]: RETURN    R0 1         ; return 
- 23 [-]: GETUPVAL  R0 U1        ; R0 := U1
- 24 [-]: SELF      R0 R0 K5     ; R1 := R0; R0 := R0[0xfabe7bff]
- 25 [-]: LOADK     R2 K6        ; R2 := "curNum"
- 26 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
- 27 [-]: TEST      R0 1         ; if R0 then PC := 34
- 28 [-]: JMP       34           ; PC := 34
- 29 [-]: GETUPVAL  R0 U1        ; R0 := U1
- 30 [-]: SELF      R0 R0 K7     ; R1 := R0; R0 := R0[0x2373e028]
- 31 [-]: LOADK     R2 K6        ; R2 := "curNum"
- 32 [-]: CONST     R3 0         ; R3 := 0.000000
- 33 [-]: CALL      R0 4 1       ; R0(R1,R2,R3)
- 34 [-]: GETUPVAL  R0 U1        ; R0 := U1
- 35 [-]: SELF      R0 R0 K8     ; R1 := R0; R0 := R0[0xbf0268f4]
- 36 [-]: LOADK     R2 K6        ; R2 := "curNum"
- 37 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
- 38 [-]: SETUPVAL  R0 U2        ; U82 := R2
- 39 [-]: GETUPVAL  R0 U0        ; R0 := U0
- 40 [-]: SELF      R0 R0 K8     ; R1 := R0; R0 := R0[0xbf0268f4]
- 41 [-]: LOADK     R2 K9        ; R2 := "ScriptParamValue"
- 42 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
- 43 [-]: SETUPVAL  R0 U3        ; U82 := R3
- 44 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R2 3 [nil]
+       2 [-]: NAMECALL R0 R0 K4 [0xD31CFAC0]
+       3 [-]: CALL R0 2 1  
+       4 [-]: SETUPVAL R0 0
+       5 [-]: GETUPVAL R1 0
+       6 [-]: FASTCALL1 62 R1 L0
+       7 [-]: GETIMPORT R0 6 [nil]
+       8 [-]: CALL R0 1 1  
+L 0:   9 [-]: JUMPIFNOT R0 L1
+      10 [-]: RETURN R0 0  
+L 1:  11 [-]: GETIMPORT R0 1 [nil]
+      12 [-]: GETIMPORT R2 3 [nil]
+      13 [-]: NAMECALL R0 R0 K7 [0xC97B7A44]
+      14 [-]: CALL R0 2 1  
+      15 [-]: SETUPVAL R0 1
+      16 [-]: GETUPVAL R1 1
+      17 [-]: FASTCALL1 62 R1 L2
+      18 [-]: GETIMPORT R0 6 [nil]
+      19 [-]: CALL R0 1 1  
+L 2:  20 [-]: JUMPIFNOT R0 L3
+      21 [-]: RETURN R0 0  
+L 3:  22 [-]: GETUPVAL R0 1
+      23 [-]: LOADK R2 K8 ["curNum"]
+      24 [-]: NAMECALL R0 R0 K9 [0xFABE7BFF]
+      25 [-]: CALL R0 2 1  
+      26 [-]: JUMPIF R0 L4 
+      27 [-]: GETUPVAL R0 1
+      28 [-]: LOADK R2 K8 ["curNum"]
+      29 [-]: LOADN R3 0   
+      30 [-]: NAMECALL R0 R0 K10 [0x2373E028]
+      31 [-]: CALL R0 3 0  
+L 4:  32 [-]: GETUPVAL R0 1
+      33 [-]: LOADK R2 K8 ["curNum"]
+      34 [-]: NAMECALL R0 R0 K11 [0xBF0268F4]
+      35 [-]: CALL R0 2 1  
+      36 [-]: SETUPVAL R0 2
+      37 [-]: GETUPVAL R0 0
+      38 [-]: LOADK R2 K12 ["ScriptParamValue"]
+      39 [-]: NAMECALL R0 R0 K11 [0xBF0268F4]
+      40 [-]: CALL R0 2 1  
+      41 [-]: SETUPVAL R0 3
+      42 [-]: RETURN R0 0  
 
 
-; Function #2:
-;
 ; Name:            
 ; Defined at line: 26
 ; #Upvalues:       3
 ; #Parameters:     4
 ; Is_vararg:       0
-; Max Stack Size:  8
+; Max Stack Size:  9
 
-  1 [-]: EQ        0 R1 K0      ; if R1 ~= "FLAG_RETURN" then PC := 26
-  2 [-]: JMP       26           ; PC := 26
-  3 [-]: SELF      R4 R0 K1     ; R5 := R0; R4 := R0[0x420402a9]
-  4 [-]: CALL      R4 2 2       ; R4 := R4(R5)
-  5 [-]: TEST      R4 0         ; if not R4 then PC := 26
-  6 [-]: JMP       26           ; PC := 26
-  7 [-]: GETUPVAL  R4 U0        ; R4 := U0
-  8 [-]: ADD       R4 R4 K2     ; R4 := R4 + 1.000000
-  9 [-]: SETUPVAL  R4 U0        ; U82 := R0
- 10 [-]: GETGLOBAL R4 K3        ; R4 := 0x7b998233
- 11 [-]: GETUPVAL  R5 U1        ; R5 := U1
- 12 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 13 [-]: TEST      R4 1         ; if R4 then PC := 26
- 14 [-]: JMP       26           ; PC := 26
- 15 [-]: GETUPVAL  R4 U1        ; R4 := U1
- 16 [-]: SELF      R4 R4 K4     ; R5 := R4; R4 := R4[0x2373e028]
- 17 [-]: LOADK     R6 K5        ; R6 := "curNum"
- 18 [-]: GETUPVAL  R7 U0        ; R7 := U0
- 19 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
- 20 [-]: GETUPVAL  R4 U1        ; R4 := U1
- 21 [-]: SELF      R4 R4 K6     ; R5 := R4; R4 := R4[0x99dac1e9]
- 22 [-]: GETUPVAL  R6 U0        ; R6 := U0
- 23 [-]: GETUPVAL  R7 U2        ; R7 := U2
- 24 [-]: DIV       R6 R6 R7     ; R6 := R6 / R7
- 25 [-]: CALL      R4 3 1       ; R4(R5,R6)
- 26 [-]: RETURN    R0 1         ; return 
+       0 [-]: JUMPXEQKS R1 K0 L1 NOT ["FLAG_RETURN"]
+       1 [-]: NAMECALL R4 R0 K1 [0x420402A9]
+       2 [-]: CALL R4 1 1  
+       3 [-]: JUMPIFNOT R4 L1
+       4 [-]: GETUPVAL R5 0
+       5 [-]: ADDK R4 R5 K2 [1]
+       6 [-]: SETUPVAL R4 0
+       7 [-]: GETUPVAL R5 1
+       8 [-]: FASTCALL1 62 R5 L0
+       9 [-]: GETIMPORT R4 4 [nil]
+      10 [-]: CALL R4 1 1  
+L 0:  11 [-]: JUMPIF R4 L1 
+      12 [-]: GETUPVAL R4 1
+      13 [-]: LOADK R6 K5 ["curNum"]
+      14 [-]: GETUPVAL R7 0
+      15 [-]: NAMECALL R4 R4 K6 [0x2373E028]
+      16 [-]: CALL R4 3 0  
+      17 [-]: GETUPVAL R4 1
+      18 [-]: GETUPVAL R7 0
+      19 [-]: GETUPVAL R8 2
+      20 [-]: DIV R6 R7 R8 
+      21 [-]: NAMECALL R4 R4 K7 [0x99DAC1E9]
+      22 [-]: CALL R4 2 0  
+L 1:  23 [-]: RETURN R0 0  
+
 
 

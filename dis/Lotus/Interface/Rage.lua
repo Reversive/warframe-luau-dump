@@ -1,35 +1,33 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
+; Is_vararg:       1
 ; Max Stack Size:  5
 
-  1 [-]: GETGLOBAL R0 K0        ; R0 := 0x2d0fad09
-  2 [-]: LOADK     R1 K1        ; R1 := "EE.Interface.Utilities"
-  3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: GETGLOBAL R1 K0        ; R1 := 0x2d0fad09
-  5 [-]: LOADK     R2 K2        ; R2 := "EE.Interface.AnchorMgr"
-  6 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  7 [-]: LOADNIL   R2 R2        ; R2 := nil
-  8 [-]: CLOSURE   R3 0         ; R3 := closure(Function #1)
-  9 [-]: MOVE      R0 R0        ; R0 := R0
- 10 [-]: MOVE      R0 R2        ; R0 := R2
- 11 [-]: CLOSURE   R4 1         ; R4 := closure(Function #2)
- 12 [-]: MOVE      R0 R2        ; R0 := R2
- 13 [-]: MOVE      R0 R1        ; R0 := R1
- 14 [-]: MOVE      R0 R3        ; R0 := R3
- 15 [-]: SETGLOBAL R4 K3        ; Initialize := R4
- 16 [-]: CLOSURE   R4 2         ; R4 := closure(Function #3)
- 17 [-]: MOVE      R0 R3        ; R0 := R3
- 18 [-]: SETGLOBAL R4 K4        ; onViewportSizeChanged := R4
- 19 [-]: RETURN    R0 1         ; return 
+            1 [-]: GETIMPORT R0 1 [nil]
+       2 [-]: LOADK R1 K2 ["EE.Interface.Utilities"]
+       3 [-]: CALL R0 1 1  
+       4 [-]: GETIMPORT R1 1 [nil]
+       5 [-]: LOADK R2 K3 ["EE.Interface.AnchorMgr"]
+       6 [-]: CALL R1 1 1  
+       7 [-]: LOADNIL R2   
+       8 [-]: NEWCLOSURE R3 P0
+       9 [-]: MOVE R0 R0   
+      10 [-]: MOVE R1 R2   
+      11 [-]: NEWCLOSURE R4 P1
+      12 [-]: MOVE R1 R2   
+      13 [-]: MOVE R0 R1   
+      14 [-]: MOVE R0 R0   
+      15 [-]: SETGLOBAL R4 K4 ["Initialize"]
+      16 [-]: NEWCLOSURE R4 P2
+      17 [-]: MOVE R0 R0   
+      18 [-]: MOVE R1 R2   
+      19 [-]: SETGLOBAL R4 K5 ["onViewportSizeChanged"]
+      20 [-]: CLOSEUPVALS R2
+      21 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 8
 ; #Upvalues:       2
@@ -37,69 +35,91 @@
 ; Is_vararg:       0
 ; Max Stack Size:  7
 
-  1 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  2 [-]: GETTABLE  R0 R0 K0     ; R0 := R0[0x44537adf]
-  3 [-]: GETGLOBAL R1 K1        ; R1 := 0xae91e43b
-  4 [-]: CALL      R0 2 3       ; R0,R1 := R0(R1)
-  5 [-]: GETUPVAL  R2 U1        ; R2 := U1
-  6 [-]: EQ        1 R2 K2      ; if R2 == nil then PC := 17
-  7 [-]: JMP       17           ; PC := 17
-  8 [-]: GETUPVAL  R2 U1        ; R2 := U1
-  9 [-]: SELF      R2 R2 K3     ; R3 := R2; R2 := R2[0xfaa69527]
- 10 [-]: GETGLOBAL R4 K1        ; R4 := 0xae91e43b
- 11 [-]: SELF      R4 R4 K4     ; R5 := R4; R4 := R4[0x6b837788]
- 12 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 13 [-]: GETGLOBAL R5 K1        ; R5 := 0xae91e43b
- 14 [-]: SELF      R5 R5 K5     ; R6 := R5; R5 := R5[0xaf9fda9f]
- 15 [-]: CALL      R5 2 0       ; R5,... := R5(R6)
- 16 [-]: CALL      R2 0 1       ; R2(R3,...)
- 17 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETUPVAL R1 0
+       1 [-]: GETTABLEKS R0 R1 K0 [0x44537ADF]
+       2 [-]: GETIMPORT R1 2 [nil]
+       3 [-]: CALL R0 1 2  
+       4 [-]: GETUPVAL R2 1
+       5 [-]: JUMPXEQKNIL R2 L0
+       6 [-]: GETUPVAL R2 1
+       7 [-]: GETIMPORT R4 2 [nil]
+       8 [-]: NAMECALL R4 R4 K3 [0x6B837788]
+       9 [-]: CALL R4 1 1  
+      10 [-]: GETIMPORT R5 2 [nil]
+      11 [-]: NAMECALL R5 R5 K4 [0xAF9FDA9F]
+      12 [-]: CALL R5 1 -1 
+      13 [-]: NAMECALL R2 R2 K5 [0xFAA69527]
+      14 [-]: CALL R2 -1 0 
+L 0:  15 [-]: RETURN R0 0  
 
 
-; Function #2:
-;
 ; Name:            
 ; Defined at line: 15
 ; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       0
-; Max Stack Size:  5
+; Max Stack Size:  7
 
-  1 [-]: GETUPVAL  R0 U1        ; R0 := U1
-  2 [-]: GETTABLE  R0 R0 K0     ; R0 := R0[0xae6791ba]
-  3 [-]: GETGLOBAL R1 K1        ; R1 := 0xae91e43b
-  4 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  5 [-]: SETUPVAL  R0 U0        ; U82 := R0
-  6 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  7 [-]: SELF      R0 R0 K2     ; R1 := R0; R0 := R0[0xfaa69527]
-  8 [-]: GETGLOBAL R2 K1        ; R2 := 0xae91e43b
-  9 [-]: SELF      R2 R2 K3     ; R3 := R2; R2 := R2[0x6b837788]
- 10 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 11 [-]: GETGLOBAL R3 K1        ; R3 := 0xae91e43b
- 12 [-]: SELF      R3 R3 K4     ; R4 := R3; R3 := R3[0xaf9fda9f]
- 13 [-]: CALL      R3 2 0       ; R3,... := R3(R4)
- 14 [-]: CALL      R0 0 1       ; R0(R1,...)
- 15 [-]: GETGLOBAL R0 K1        ; R0 := 0xae91e43b
- 16 [-]: SELF      R0 R0 K5     ; R1 := R0; R0 := R0[0xd5181643]
- 17 [-]: LOADK     R2 K6        ; R2 := "Quad"
- 18 [-]: GETGLOBAL R3 K7        ; R3 := 0xdda6d683
- 19 [-]: CALL      R0 4 1       ; R0(R1,R2,R3)
- 20 [-]: GETUPVAL  R0 U2        ; R0 := U2
- 21 [-]: CALL      R0 1 1       ; R0()
- 22 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETUPVAL R1 1
+       1 [-]: GETTABLEKS R0 R1 K0 [0xAE6791BA]
+       2 [-]: GETIMPORT R1 2 [nil]
+       3 [-]: CALL R0 1 1  
+       4 [-]: SETUPVAL R0 0
+       5 [-]: GETUPVAL R0 0
+       6 [-]: GETIMPORT R2 2 [nil]
+       7 [-]: NAMECALL R2 R2 K3 [0x6B837788]
+       8 [-]: CALL R2 1 1  
+       9 [-]: GETIMPORT R3 2 [nil]
+      10 [-]: NAMECALL R3 R3 K4 [0xAF9FDA9F]
+      11 [-]: CALL R3 1 -1 
+      12 [-]: NAMECALL R0 R0 K5 [0xFAA69527]
+      13 [-]: CALL R0 -1 0 
+      14 [-]: GETIMPORT R0 2 [nil]
+      15 [-]: LOADK R2 K6 ["Quad"]
+      16 [-]: GETIMPORT R3 8 [nil]
+      17 [-]: NAMECALL R0 R0 K9 [0xD5181643]
+      18 [-]: CALL R0 3 0  
+      19 [-]: GETUPVAL R1 2
+      20 [-]: GETTABLEKS R0 R1 K10 [0x44537ADF]
+      21 [-]: GETIMPORT R1 2 [nil]
+      22 [-]: CALL R0 1 2  
+      23 [-]: GETUPVAL R2 0
+      24 [-]: JUMPXEQKNIL R2 L0
+      25 [-]: GETUPVAL R2 0
+      26 [-]: GETIMPORT R4 2 [nil]
+      27 [-]: NAMECALL R4 R4 K3 [0x6B837788]
+      28 [-]: CALL R4 1 1  
+      29 [-]: GETIMPORT R5 2 [nil]
+      30 [-]: NAMECALL R5 R5 K4 [0xAF9FDA9F]
+      31 [-]: CALL R5 1 -1 
+      32 [-]: NAMECALL R2 R2 K5 [0xFAA69527]
+      33 [-]: CALL R2 -1 0 
+L 0:  34 [-]: RETURN R0 0  
 
 
-; Function #3:
-;
 ; Name:            
 ; Defined at line: 23
-; #Upvalues:       1
+; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0
-; Max Stack Size:  3
+; Max Stack Size:  9
 
-  1 [-]: GETUPVAL  R2 U0        ; R2 := U0
-  2 [-]: CALL      R2 1 1       ; R2()
-  3 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETUPVAL R3 0
+       1 [-]: GETTABLEKS R2 R3 K0 [0x44537ADF]
+       2 [-]: GETIMPORT R3 2 [nil]
+       3 [-]: CALL R2 1 2  
+       4 [-]: GETUPVAL R4 1
+       5 [-]: JUMPXEQKNIL R4 L0
+       6 [-]: GETUPVAL R4 1
+       7 [-]: GETIMPORT R6 2 [nil]
+       8 [-]: NAMECALL R6 R6 K3 [0x6B837788]
+       9 [-]: CALL R6 1 1  
+      10 [-]: GETIMPORT R7 2 [nil]
+      11 [-]: NAMECALL R7 R7 K4 [0xAF9FDA9F]
+      12 [-]: CALL R7 1 -1 
+      13 [-]: NAMECALL R4 R4 K5 [0xFAA69527]
+      14 [-]: CALL R4 -1 0 
+L 0:  15 [-]: RETURN R0 0  
+
 
 

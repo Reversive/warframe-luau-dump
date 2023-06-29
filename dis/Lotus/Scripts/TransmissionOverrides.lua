@@ -1,143 +1,138 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
-; Max Stack Size:  2
+; Is_vararg:       1
+; Max Stack Size:  1
 
-  1 [-]: CLOSURE   R0 0         ; R0 := closure(Function #1)
-  2 [-]: SETGLOBAL R0 K0        ; OnPlayerSpawned := R0
-  3 [-]: CLOSURE   R0 1         ; R0 := closure(Function #2)
-  4 [-]: SETGLOBAL R0 K1        ; TransmissionOverrides := R0
-  5 [-]: RETURN    R0 1         ; return 
+            1 [-]: DUPCLOSURE R0 K0 []
+       2 [-]: SETGLOBAL R0 K1 ["OnPlayerSpawned"]
+       3 [-]: DUPCLOSURE R0 K2 []
+       4 [-]: SETGLOBAL R0 K3 ["TransmissionOverrides"]
+       5 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 14
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
-; Max Stack Size:  12
+; Max Stack Size:  11
 
-  1 [-]: GETGLOBAL R2 K0        ; R2 := _T
-  2 [-]: GETGLOBAL R3 K2        ; R3 := 0x8fa717b0
-  3 [-]: SETTABLE  R2 K1 R3     ; R2["EndOfMissionVoiceOverride"] := R3
-  4 [-]: CONST     R2 1         ; R2 := 1.000000
-  5 [-]: GETGLOBAL R3 K3        ; R3 := 0xa142fde2
-  6 [-]: LEN       R3 R3        ; R3 := # R3
-  7 [-]: CONST     R4 1         ; R4 := 1.000000
-  8 [-]: FORPREP   R2 25        ; R2 -= R4; PC := 25
-  9 [-]: CONST     R6 0         ; R6 := 0.000000
- 10 [-]: GETGLOBAL R7 K4        ; R7 := 0x7b998233
- 11 [-]: GETGLOBAL R8 K5        ; R8 := 0x8bb9aacf
- 12 [-]: GETTABLE  R8 R8 R5     ; R8 := R8[R5]
- 13 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 14 [-]: TEST      R7 1         ; if R7 then PC := 18
- 15 [-]: JMP       18           ; PC := 18
- 16 [-]: GETGLOBAL R7 K5        ; R7 := 0x8bb9aacf
- 17 [-]: GETTABLE  R6 R7 R5     ; R6 := R7[R5]
- 18 [-]: SELF      R7 R0 K6     ; R8 := R0; R7 := R0[0xe42ed075]
- 19 [-]: GETGLOBAL R9 K3        ; R9 := 0xa142fde2
- 20 [-]: GETTABLE  R9 R9 R5     ; R9 := R9[R5]
- 21 [-]: GETGLOBAL R10 K7       ; R10 := 0x94df1b43
- 22 [-]: GETTABLE  R10 R10 R5   ; R10 := R10[R5]
- 23 [-]: MOVE      R11 R6       ; R11 := R6
- 24 [-]: CALL      R7 5 1       ; R7(R8,R9,R10,R11)
- 25 [-]: FORLOOP   R2 9         ; R2 += R4; if R2 <= R3 then begin PC := 9; R5 := R2 end
- 26 [-]: GETGLOBAL R7 K8        ; R7 := 0xfd724408
- 27 [-]: TEST      R7 0         ; if not R7 then PC := 32
- 28 [-]: JMP       32           ; PC := 32
- 29 [-]: GETGLOBAL R7 K0        ; R7 := _T
- 30 [-]: GETGLOBAL R8 K9        ; R8 := 0xf22374ea
- 31 [-]: SETTABLE  R7 K1 R8     ; R7["EndOfMissionVoiceOverride"] := R8
- 32 [-]: GETGLOBAL R7 K4        ; R7 := 0x7b998233
- 33 [-]: GETGLOBAL R8 K10       ; R8 := 0x59b77966
- 34 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 35 [-]: TEST      R7 1         ; if R7 then PC := 40
- 36 [-]: JMP       40           ; PC := 40
- 37 [-]: GETGLOBAL R7 K0        ; R7 := _T
- 38 [-]: GETGLOBAL R8 K10       ; R8 := 0x59b77966
- 39 [-]: SETTABLE  R7 K11 R8    ; R7["MissionTransmissionSet"] := R8
- 40 [-]: GETGLOBAL R7 K4        ; R7 := 0x7b998233
- 41 [-]: GETGLOBAL R8 K12       ; R8 := 0xf9f7b152
- 42 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 43 [-]: TEST      R7 1         ; if R7 then PC := 48
- 44 [-]: JMP       48           ; PC := 48
- 45 [-]: GETGLOBAL R7 K0        ; R7 := _T
- 46 [-]: GETGLOBAL R8 K12       ; R8 := 0xf9f7b152
- 47 [-]: SETTABLE  R7 K13 R8    ; R7["AmbientMissionTransmissionSet"] := R8
- 48 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R2 1 [nil]
+       1 [-]: GETIMPORT R3 3 [nil]
+       2 [-]: SETTABLEKS R3 R2 K4 ["EndOfMissionVoiceOverride"]
+       3 [-]: LOADN R4 1   
+       4 [-]: GETIMPORT R5 6 [nil]
+       5 [-]: LENGTH R2 R5 
+       6 [-]: LOADN R3 1   
+       7 [-]: FORNPREP R2 L3
+L 0:   8 [-]: LOADN R5 0   
+       9 [-]: GETIMPORT R8 8 [nil]
+      10 [-]: GETTABLE R7 R8 R4
+      11 [-]: FASTCALL1 62 R7 L1
+      12 [-]: GETIMPORT R6 10 [nil]
+      13 [-]: CALL R6 1 1  
+L 1:  14 [-]: JUMPIF R6 L2 
+      15 [-]: GETIMPORT R6 8 [nil]
+      16 [-]: GETTABLE R5 R6 R4
+L 2:  17 [-]: GETIMPORT R9 6 [nil]
+      18 [-]: GETTABLE R8 R9 R4
+      19 [-]: GETIMPORT R10 12 [nil]
+      20 [-]: GETTABLE R9 R10 R4
+      21 [-]: MOVE R10 R5  
+      22 [-]: NAMECALL R6 R0 K13 [0xE42ED075]
+      23 [-]: CALL R6 4 0  
+      24 [-]: FORNLOOP R2 L0
+L 3:  25 [-]: GETIMPORT R2 15 [nil]
+      26 [-]: JUMPIFNOT R2 L4
+      27 [-]: GETIMPORT R2 1 [nil]
+      28 [-]: GETIMPORT R3 17 [nil]
+      29 [-]: SETTABLEKS R3 R2 K4 ["EndOfMissionVoiceOverride"]
+L 4:  30 [-]: GETIMPORT R3 19 [nil]
+      31 [-]: FASTCALL1 62 R3 L5
+      32 [-]: GETIMPORT R2 10 [nil]
+      33 [-]: CALL R2 1 1  
+L 5:  34 [-]: JUMPIF R2 L6 
+      35 [-]: GETIMPORT R2 1 [nil]
+      36 [-]: GETIMPORT R3 19 [nil]
+      37 [-]: SETTABLEKS R3 R2 K20 ["MissionTransmissionSet"]
+L 6:  38 [-]: GETIMPORT R3 22 [nil]
+      39 [-]: FASTCALL1 62 R3 L7
+      40 [-]: GETIMPORT R2 10 [nil]
+      41 [-]: CALL R2 1 1  
+L 7:  42 [-]: JUMPIF R2 L8 
+      43 [-]: GETIMPORT R2 1 [nil]
+      44 [-]: GETIMPORT R3 22 [nil]
+      45 [-]: SETTABLEKS R3 R2 K23 ["AmbientMissionTransmissionSet"]
+L 8:  46 [-]: RETURN R0 0  
 
 
-; Function #2:
-;
 ; Name:            
 ; Defined at line: 37
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
-; Max Stack Size:  11
+; Max Stack Size:  10
 
-  1 [-]: GETGLOBAL R0 K0        ; R0 := 0xbe190284
-  2 [-]: GETGLOBAL R1 K1        ; R1 := 0x7b998233
-  3 [-]: GETGLOBAL R2 K2        ; R2 := 0x8fa717b0
-  4 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  5 [-]: TEST      R1 1         ; if R1 then PC := 11
-  6 [-]: JMP       11           ; PC := 11
-  7 [-]: GETGLOBAL R1 K3        ; R1 := _T
-  8 [-]: GETGLOBAL R2 K2        ; R2 := 0x8fa717b0
-  9 [-]: SETTABLE  R1 K4 R2     ; R1["EndOfMissionVoiceOverride"] := R2
- 10 [-]: JMP       13           ; PC := 13
- 11 [-]: GETGLOBAL R1 K3        ; R1 := _T
- 12 [-]: SETTABLE  R1 K4 K5     ; R1["EndOfMissionVoiceOverride"] := ""
- 13 [-]: CONST     R1 1         ; R1 := 1.000000
- 14 [-]: GETGLOBAL R2 K6        ; R2 := 0xa142fde2
- 15 [-]: LEN       R2 R2        ; R2 := # R2
- 16 [-]: CONST     R3 1         ; R3 := 1.000000
- 17 [-]: FORPREP   R1 34        ; R1 -= R3; PC := 34
- 18 [-]: CONST     R5 0         ; R5 := 0.000000
- 19 [-]: GETGLOBAL R6 K1        ; R6 := 0x7b998233
- 20 [-]: GETGLOBAL R7 K7        ; R7 := 0x8bb9aacf
- 21 [-]: GETTABLE  R7 R7 R4     ; R7 := R7[R4]
- 22 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 23 [-]: TEST      R6 1         ; if R6 then PC := 27
- 24 [-]: JMP       27           ; PC := 27
- 25 [-]: GETGLOBAL R6 K7        ; R6 := 0x8bb9aacf
- 26 [-]: GETTABLE  R5 R6 R4     ; R5 := R6[R4]
- 27 [-]: SELF      R6 R0 K8     ; R7 := R0; R6 := R0[0xe42ed075]
- 28 [-]: GETGLOBAL R8 K6        ; R8 := 0xa142fde2
- 29 [-]: GETTABLE  R8 R8 R4     ; R8 := R8[R4]
- 30 [-]: GETGLOBAL R9 K9        ; R9 := 0x94df1b43
- 31 [-]: GETTABLE  R9 R9 R4     ; R9 := R9[R4]
- 32 [-]: MOVE      R10 R5       ; R10 := R5
- 33 [-]: CALL      R6 5 1       ; R6(R7,R8,R9,R10)
- 34 [-]: FORLOOP   R1 18        ; R1 += R3; if R1 <= R2 then begin PC := 18; R4 := R1 end
- 35 [-]: GETGLOBAL R6 K10       ; R6 := 0xfd724408
- 36 [-]: TEST      R6 0         ; if not R6 then PC := 41
- 37 [-]: JMP       41           ; PC := 41
- 38 [-]: GETGLOBAL R6 K3        ; R6 := _T
- 39 [-]: GETGLOBAL R7 K11       ; R7 := 0xf22374ea
- 40 [-]: SETTABLE  R6 K4 R7     ; R6["EndOfMissionVoiceOverride"] := R7
- 41 [-]: GETGLOBAL R6 K1        ; R6 := 0x7b998233
- 42 [-]: GETGLOBAL R7 K12       ; R7 := 0x59b77966
- 43 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 44 [-]: TEST      R6 1         ; if R6 then PC := 49
- 45 [-]: JMP       49           ; PC := 49
- 46 [-]: GETGLOBAL R6 K3        ; R6 := _T
- 47 [-]: GETGLOBAL R7 K12       ; R7 := 0x59b77966
- 48 [-]: SETTABLE  R6 K13 R7    ; R6["MissionTransmissionSet"] := R7
- 49 [-]: GETGLOBAL R6 K1        ; R6 := 0x7b998233
- 50 [-]: GETGLOBAL R7 K14       ; R7 := 0xf9f7b152
- 51 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 52 [-]: TEST      R6 1         ; if R6 then PC := 57
- 53 [-]: JMP       57           ; PC := 57
- 54 [-]: GETGLOBAL R6 K3        ; R6 := _T
- 55 [-]: GETGLOBAL R7 K14       ; R7 := 0xf9f7b152
- 56 [-]: SETTABLE  R6 K15 R7    ; R6["AmbientMissionTransmissionSet"] := R7
- 57 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R2 3 [nil]
+       2 [-]: FASTCALL1 62 R2 L0
+       3 [-]: GETIMPORT R1 5 [nil]
+       4 [-]: CALL R1 1 1  
+L 0:   5 [-]: JUMPIF R1 L1 
+       6 [-]: GETIMPORT R1 7 [nil]
+       7 [-]: GETIMPORT R2 3 [nil]
+       8 [-]: SETTABLEKS R2 R1 K8 ["EndOfMissionVoiceOverride"]
+       9 [-]: JUMP L2
+     
+L 1:  10 [-]: GETIMPORT R1 7 [nil]
+      11 [-]: LOADK R2 K9 [""]
+      12 [-]: SETTABLEKS R2 R1 K8 ["EndOfMissionVoiceOverride"]
+L 2:  13 [-]: LOADN R3 1   
+      14 [-]: GETIMPORT R4 11 [nil]
+      15 [-]: LENGTH R1 R4 
+      16 [-]: LOADN R2 1   
+      17 [-]: FORNPREP R1 L6
+L 3:  18 [-]: LOADN R4 0   
+      19 [-]: GETIMPORT R7 13 [nil]
+      20 [-]: GETTABLE R6 R7 R3
+      21 [-]: FASTCALL1 62 R6 L4
+      22 [-]: GETIMPORT R5 5 [nil]
+      23 [-]: CALL R5 1 1  
+L 4:  24 [-]: JUMPIF R5 L5 
+      25 [-]: GETIMPORT R5 13 [nil]
+      26 [-]: GETTABLE R4 R5 R3
+L 5:  27 [-]: GETIMPORT R8 11 [nil]
+      28 [-]: GETTABLE R7 R8 R3
+      29 [-]: GETIMPORT R9 15 [nil]
+      30 [-]: GETTABLE R8 R9 R3
+      31 [-]: MOVE R9 R4   
+      32 [-]: NAMECALL R5 R0 K16 [0xE42ED075]
+      33 [-]: CALL R5 4 0  
+      34 [-]: FORNLOOP R1 L3
+L 6:  35 [-]: GETIMPORT R1 18 [nil]
+      36 [-]: JUMPIFNOT R1 L7
+      37 [-]: GETIMPORT R1 7 [nil]
+      38 [-]: GETIMPORT R2 20 [nil]
+      39 [-]: SETTABLEKS R2 R1 K8 ["EndOfMissionVoiceOverride"]
+L 7:  40 [-]: GETIMPORT R2 22 [nil]
+      41 [-]: FASTCALL1 62 R2 L8
+      42 [-]: GETIMPORT R1 5 [nil]
+      43 [-]: CALL R1 1 1  
+L 8:  44 [-]: JUMPIF R1 L9 
+      45 [-]: GETIMPORT R1 7 [nil]
+      46 [-]: GETIMPORT R2 22 [nil]
+      47 [-]: SETTABLEKS R2 R1 K23 ["MissionTransmissionSet"]
+L 9:  48 [-]: GETIMPORT R2 25 [nil]
+      49 [-]: FASTCALL1 62 R2 L10
+      50 [-]: GETIMPORT R1 5 [nil]
+      51 [-]: CALL R1 1 1  
+L10:  52 [-]: JUMPIF R1 L11
+      53 [-]: GETIMPORT R1 7 [nil]
+      54 [-]: GETIMPORT R2 25 [nil]
+      55 [-]: SETTABLEKS R2 R1 K26 ["AmbientMissionTransmissionSet"]
+L11:  56 [-]: RETURN R0 0  
+
 
 

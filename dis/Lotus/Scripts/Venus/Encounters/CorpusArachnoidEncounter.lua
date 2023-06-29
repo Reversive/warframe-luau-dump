@@ -1,262 +1,228 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
+; Is_vararg:       1
 ; Max Stack Size:  7
 
-  1 [-]: GETGLOBAL R0 K0        ; R0 := 0x89326c93
-  2 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0x29ef273d]
-  3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: SELF      R0 R0 K2     ; R1 := R0; R0 := R0[0x66905cb0]
-  5 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  6 [-]: GETGLOBAL R1 K3        ; R1 := 0x0469f296
-  7 [-]: LOADK     R2 K4        ; R2 := "CamperKilled"
-  8 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  9 [-]: GETGLOBAL R2 K3        ; R2 := 0x0469f296
- 10 [-]: LOADK     R3 K5        ; R3 := "CamperSpawned"
- 11 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 12 [-]: GETGLOBAL R3 K3        ; R3 := 0x0469f296
- 13 [-]: LOADK     R4 K6        ; R4 := "PostWar"
- 14 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 15 [-]: LOADNIL   R4 R4        ; R4 := nil
- 16 [-]: CLOSURE   R5 0         ; R5 := closure(Function #1)
- 17 [-]: MOVE      R0 R3        ; R0 := R3
- 18 [-]: MOVE      R0 R4        ; R0 := R4
- 19 [-]: MOVE      R0 R2        ; R0 := R2
- 20 [-]: MOVE      R0 R0        ; R0 := R0
- 21 [-]: CLOSURE   R6 1         ; R6 := closure(Function #2)
- 22 [-]: MOVE      R0 R4        ; R0 := R4
- 23 [-]: MOVE      R0 R2        ; R0 := R2
- 24 [-]: MOVE      R0 R1        ; R0 := R1
- 25 [-]: MOVE      R0 R5        ; R0 := R5
- 26 [-]: SETGLOBAL R6 K7        ; CamperEncounterManager := R6
- 27 [-]: RETURN    R0 1         ; return 
+            1 [-]: GETIMPORT R0 1 [nil]
+       2 [-]: NAMECALL R0 R0 K2 [0x29EF273D]
+       3 [-]: CALL R0 1 1  
+       4 [-]: NAMECALL R0 R0 K3 [0x66905CB0]
+       5 [-]: CALL R0 1 1  
+       6 [-]: GETIMPORT R1 5 [nil]
+       7 [-]: LOADK R2 K6 ["CamperKilled"]
+       8 [-]: CALL R1 1 1  
+       9 [-]: GETIMPORT R2 5 [nil]
+      10 [-]: LOADK R3 K7 ["CamperSpawned"]
+      11 [-]: CALL R2 1 1  
+      12 [-]: GETIMPORT R3 5 [nil]
+      13 [-]: LOADK R4 K8 ["PostWar"]
+      14 [-]: CALL R3 1 1  
+      15 [-]: LOADNIL R4   
+      16 [-]: NEWCLOSURE R5 P0
+      17 [-]: MOVE R0 R3   
+      18 [-]: MOVE R1 R4   
+      19 [-]: MOVE R0 R2   
+      20 [-]: MOVE R0 R0   
+      21 [-]: NEWCLOSURE R6 P1
+      22 [-]: MOVE R1 R4   
+      23 [-]: MOVE R0 R2   
+      24 [-]: MOVE R0 R1   
+      25 [-]: MOVE R0 R5   
+      26 [-]: SETGLOBAL R6 K9 ["CamperEncounterManager"]
+      27 [-]: CLOSEUPVALS R4
+      28 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 13
 ; #Upvalues:       4
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  14
+; Max Stack Size:  13
 
-  1 [-]: GETGLOBAL R1 K0        ; R1 := 0x3d106989
-  2 [-]: LOADK     R2 K1        ; R2 := "Starting Camper Encounter"
-  3 [-]: CALL      R1 2 1       ; R1(R2)
-  4 [-]: LOADNIL   R1 R1        ; R1 := nil
-  5 [-]: GETGLOBAL R2 K2        ; R2 := 0xbe190284
-  6 [-]: SELF      R2 R2 K3     ; R3 := R2; R2 := R2[0xef893aec]
-  7 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  8 [-]: GETTABLE  R2 R2 K4     ; R2 := R2["goalTag"]
-  9 [-]: SELF      R3 R2 K5     ; R4 := R2; R3 := R2[0x56c01834]
- 10 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 11 [-]: TEST      R3 0         ; if not R3 then PC := 18
- 12 [-]: JMP       18           ; PC := 18
- 13 [-]: GETUPVAL  R3 U0        ; R3 := U0
- 14 [-]: EQ        1 R2 R3      ; if R2 == R3 then PC := 18
- 15 [-]: JMP       18           ; PC := 18
- 16 [-]: RETURN    R0 1         ; return 
- 17 [-]: JMP       23           ; PC := 23
- 18 [-]: GETGLOBAL R3 K6        ; R3 := 0x89326c93
- 19 [-]: SELF      R3 R3 K7     ; R4 := R3; R3 := R3[0xfb669000]
- 20 [-]: GETGLOBAL R5 K8        ; R5 := 0x111fdb38
- 21 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
- 22 [-]: MOVE      R1 R3        ; R1 := R3
- 23 [-]: LOADNIL   R3 R6        ; R3 := R4 := R5 := R6 := nil
- 24 [-]: CONST     R7 50        ; R7 := 50.000000
- 25 [-]: GETGLOBAL R8 K9        ; R8 := 0x7b998233
- 26 [-]: MOVE      R9 R0        ; R9 := R0
- 27 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 28 [-]: TEST      R8 1         ; if R8 then PC := 32
- 29 [-]: JMP       32           ; PC := 32
- 30 [-]: MOVE      R6 R0        ; R6 := R0
- 31 [-]: JMP       51           ; PC := 51
- 32 [-]: LEN       R8 R1        ; R8 := # R1
- 33 [-]: LT        0 K10 R8     ; if 0.000000 >= R8 then PC := 42
- 34 [-]: JMP       42           ; PC := 42
- 35 [-]: GETGLOBAL R8 K11       ; R8 := 0x0c5e62f9
- 36 [-]: CONST     R9 1         ; R9 := 1.000000
- 37 [-]: LEN       R10 R1       ; R10 := # R1
- 38 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
- 39 [-]: MOVE      R5 R8        ; R5 := R8
- 40 [-]: GETTABLE  R6 R1 R5     ; R6 := R1[R5]
- 41 [-]: JMP       51           ; PC := 51
- 42 [-]: GETGLOBAL R8 K0        ; R8 := 0x3d106989
- 43 [-]: LOADK     R9 K12       ; R9 := "Couldn't find any camper spawns, so not spawning one."
- 44 [-]: CALL      R8 2 1       ; R8(R9)
- 45 [-]: GETUPVAL  R8 U1        ; R8 := U1
- 46 [-]: SELF      R8 R8 K13    ; R9 := R8; R8 := R8[0x751f061d]
- 47 [-]: GETUPVAL  R10 U2       ; R10 := U2
- 48 [-]: CONST     R11 0        ; R11 := 0.000000
- 49 [-]: CALL      R8 4 1       ; R8(R9,R10,R11)
- 50 [-]: RETURN    R0 1         ; return 
- 51 [-]: GETUPVAL  R8 U3        ; R8 := U3
- 52 [-]: SELF      R8 R8 K14    ; R9 := R8; R8 := R8[0x33fc842f]
- 53 [-]: GETGLOBAL R10 K15      ; R10 := 0x511fa51d
- 54 [-]: MOVE      R11 R6       ; R11 := R6
- 55 [-]: GETGLOBAL R12 K16      ; R12 := 0x0469f296
- 56 [-]: LOADK     R13 K17      ; R13 := "Corpus"
- 57 [-]: CALL      R12 2 2      ; R12 := R12(R13)
- 58 [-]: MOVE      R13 R7       ; R13 := R7
- 59 [-]: CALL      R8 6 2       ; R8 := R8(R9,R10,R11,R12,R13)
- 60 [-]: MOVE      R4 R8        ; R4 := R8
- 61 [-]: GETUPVAL  R8 U1        ; R8 := U1
- 62 [-]: SELF      R8 R8 K13    ; R9 := R8; R8 := R8[0x751f061d]
- 63 [-]: GETUPVAL  R10 U2       ; R10 := U2
- 64 [-]: CONST     R11 1        ; R11 := 1.000000
- 65 [-]: CALL      R8 4 1       ; R8(R9,R10,R11)
- 66 [-]: GETGLOBAL R8 K9        ; R8 := 0x7b998233
- 67 [-]: MOVE      R9 R4        ; R9 := R4
- 68 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 69 [-]: TEST      R8 1         ; if R8 then PC := 85
- 70 [-]: JMP       85           ; PC := 85
- 71 [-]: SELF      R8 R4 K18    ; R9 := R4; R8 := R4[0xbb610e5b]
- 72 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 73 [-]: MOVE      R3 R8        ; R3 := R8
- 74 [-]: GETGLOBAL R8 K9        ; R8 := 0x7b998233
- 75 [-]: MOVE      R9 R3        ; R9 := R3
- 76 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 77 [-]: TEST      R8 1         ; if R8 then PC := 81
- 78 [-]: JMP       81           ; PC := 81
- 79 [-]: SELF      R8 R3 K19    ; R9 := R3; R8 := R3[0x0a12d915]
- 80 [-]: CALL      R8 2 1       ; R8(R9)
- 81 [-]: GETGLOBAL R8 K0        ; R8 := 0x3d106989
- 82 [-]: LOADK     R9 K20       ; R9 := "Camper spawned"
- 83 [-]: CALL      R8 2 1       ; R8(R9)
- 84 [-]: JMP       88           ; PC := 88
- 85 [-]: GETGLOBAL R8 K0        ; R8 := 0x3d106989
- 86 [-]: LOADK     R9 K21       ; R9 := "Camper didn't spawn, but should have"
- 87 [-]: CALL      R8 2 1       ; R8(R9)
- 88 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R1 1 [nil]
+       1 [-]: LOADK R2 K2 ["Starting Camper Encounter"]
+       2 [-]: CALL R1 1 0  
+       3 [-]: LOADNIL R1   
+       4 [-]: GETIMPORT R3 4 [nil]
+       5 [-]: NAMECALL R3 R3 K5 [0xEF893AEC]
+       6 [-]: CALL R3 1 1  
+       7 [-]: GETTABLEKS R2 R3 K6 ["goalTag"]
+       8 [-]: NAMECALL R3 R2 K7 [0x56C01834]
+       9 [-]: CALL R3 1 1  
+      10 [-]: JUMPIFNOT R3 L0
+      11 [-]: GETUPVAL R3 0
+      12 [-]: JUMPIFEQ R2 R3 L0
+      13 [-]: RETURN R0 0  
+L 0:  14 [-]: GETIMPORT R3 9 [nil]
+      15 [-]: GETIMPORT R5 11 [nil]
+      16 [-]: NAMECALL R3 R3 K12 [0xFB669000]
+      17 [-]: CALL R3 2 1  
+      18 [-]: MOVE R1 R3   
+      19 [-]: LOADNIL R3   
+      20 [-]: LOADNIL R4   
+      21 [-]: LOADNIL R5   
+      22 [-]: LOADNIL R6   
+      23 [-]: FASTCALL1 62 R0 L1
+      24 [-]: MOVE R8 R0   
+      25 [-]: GETIMPORT R7 14 [nil]
+      26 [-]: CALL R7 1 1  
+L 1:  27 [-]: JUMPIF R7 L2 
+      28 [-]: MOVE R6 R0   
+      29 [-]: JUMP L4
+     
+L 2:  30 [-]: LENGTH R7 R1 
+      31 [-]: LOADN R8 0   
+      32 [-]: JUMPIFNOTLT R8 R7 L3
+      33 [-]: GETIMPORT R7 16 [nil]
+      34 [-]: LOADN R8 1   
+      35 [-]: LENGTH R9 R1 
+      36 [-]: CALL R7 2 1  
+      37 [-]: MOVE R5 R7   
+      38 [-]: GETTABLE R6 R1 R5
+      39 [-]: JUMP L4
+     
+L 3:  40 [-]: GETIMPORT R7 1 [nil]
+      41 [-]: LOADK R8 K17 ["Couldn't find any camper spawns, so not spawning one."]
+      42 [-]: CALL R7 1 0  
+      43 [-]: GETUPVAL R7 1
+      44 [-]: GETUPVAL R9 2
+      45 [-]: LOADN R10 0  
+      46 [-]: NAMECALL R7 R7 K18 [0x751F061D]
+      47 [-]: CALL R7 3 0  
+      48 [-]: RETURN R0 0  
+L 4:  49 [-]: GETUPVAL R7 3
+      50 [-]: GETIMPORT R9 20 [nil]
+      51 [-]: MOVE R10 R6  
+      52 [-]: GETIMPORT R11 22 [nil]
+      53 [-]: LOADK R12 K23 ["Corpus"]
+      54 [-]: CALL R11 1 1 
+      55 [-]: LOADN R12 50 
+      56 [-]: NAMECALL R7 R7 K24 [0x33FC842F]
+      57 [-]: CALL R7 5 1  
+      58 [-]: MOVE R4 R7   
+      59 [-]: GETUPVAL R7 1
+      60 [-]: GETUPVAL R9 2
+      61 [-]: LOADN R10 1  
+      62 [-]: NAMECALL R7 R7 K18 [0x751F061D]
+      63 [-]: CALL R7 3 0  
+      64 [-]: FASTCALL1 62 R4 L5
+      65 [-]: MOVE R8 R4   
+      66 [-]: GETIMPORT R7 14 [nil]
+      67 [-]: CALL R7 1 1  
+L 5:  68 [-]: JUMPIF R7 L8 
+      69 [-]: NAMECALL R7 R4 K25 [0xBB610E5B]
+      70 [-]: CALL R7 1 1  
+      71 [-]: MOVE R3 R7   
+      72 [-]: FASTCALL1 62 R3 L6
+      73 [-]: MOVE R8 R3   
+      74 [-]: GETIMPORT R7 14 [nil]
+      75 [-]: CALL R7 1 1  
+L 6:  76 [-]: JUMPIF R7 L7 
+      77 [-]: NAMECALL R7 R3 K26 [0x0A12D915]
+      78 [-]: CALL R7 1 0  
+L 7:  79 [-]: GETIMPORT R7 1 [nil]
+      80 [-]: LOADK R8 K27 ["Camper spawned"]
+      81 [-]: CALL R7 1 0  
+      82 [-]: RETURN R0 0  
+L 8:  83 [-]: GETIMPORT R7 1 [nil]
+      84 [-]: LOADK R8 K28 ["Camper didn't spawn, but should have"]
+      85 [-]: CALL R7 1 0  
+      86 [-]: RETURN R0 0  
 
 
-; Function #2:
-;
 ; Name:            
 ; Defined at line: 56
 ; #Upvalues:       4
 ; #Parameters:     0
 ; Is_vararg:       0
-; Max Stack Size:  7
+; Max Stack Size:  4
 
-  1 [-]: GETGLOBAL R0 K0        ; R0 := 0x7b998233
-  2 [-]: GETGLOBAL R1 K1        ; R1 := 0x89326c93
-  3 [-]: SELF      R1 R1 K2     ; R2 := R1; R1 := R1[0x7c1a0374]
-  4 [-]: CALL      R1 2 0       ; R1,... := R1(R2)
-  5 [-]: CALL      R0 0 2       ; R0 := R0(R1,...)
-  6 [-]: TEST      R0 0         ; if not R0 then PC := 12
-  7 [-]: JMP       12           ; PC := 12
-  8 [-]: GETGLOBAL R0 K3        ; R0 := 0xcbd666e1
-  9 [-]: CONST     R1 0         ; R1 := 0.000000
- 10 [-]: CALL      R0 2 1       ; R0(R1)
- 11 [-]: JMP       1            ; PC := 1
- 12 [-]: GETGLOBAL R0 K0        ; R0 := 0x7b998233
- 13 [-]: GETUPVAL  R1 U0        ; R1 := U0
- 14 [-]: CALL      R0 2 2       ; R0 := R0(R1)
- 15 [-]: TEST      R0 1         ; if R0 then PC := 22
- 16 [-]: JMP       22           ; PC := 22
- 17 [-]: GETUPVAL  R0 U0        ; R0 := U0
- 18 [-]: SELF      R0 R0 K4     ; R1 := R0; R0 := R0[0xffe25891]
- 19 [-]: CALL      R0 2 2       ; R0 := R0(R1)
- 20 [-]: TEST      R0 0         ; if not R0 then PC := 28
- 21 [-]: JMP       28           ; PC := 28
- 22 [-]: GETGLOBAL R0 K3        ; R0 := 0xcbd666e1
- 23 [-]: CONST     R1 0         ; R1 := 0.000000
- 24 [-]: CALL      R0 2 1       ; R0(R1)
- 25 [-]: GETGLOBAL R0 K5        ; R0 := 0xbe190284
- 26 [-]: SETUPVAL  R0 U0        ; U82 := R0
- 27 [-]: JMP       12           ; PC := 12
- 28 [-]: GETUPVAL  R0 U0        ; R0 := U0
- 29 [-]: SELF      R0 R0 K6     ; R1 := R0; R0 := R0[0xf2deaf69]
- 30 [-]: GETGLOBAL R2 K7        ; R2 := gLotusPhotoBoothGameRulesType
- 31 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
- 32 [-]: TEST      R0 0         ; if not R0 then PC := 35
- 33 [-]: JMP       35           ; PC := 35
- 34 [-]: RETURN    R0 1         ; return 
- 35 [-]: GETGLOBAL R0 K1        ; R0 := 0x89326c93
- 36 [-]: SELF      R0 R0 K8     ; R1 := R0; R0 := R0[0x18d05d30]
- 37 [-]: CALL      R0 2 2       ; R0 := R0(R1)
- 38 [-]: TEST      R0 0         ; if not R0 then PC := 45
- 39 [-]: JMP       45           ; PC := 45
- 40 [-]: GETUPVAL  R0 U0        ; R0 := U0
- 41 [-]: SELF      R0 R0 K9     ; R1 := R0; R0 := R0[0x751f061d]
- 42 [-]: GETUPVAL  R2 U1        ; R2 := U1
- 43 [-]: CONST     R3 0         ; R3 := 0.000000
- 44 [-]: CALL      R0 4 1       ; R0(R1,R2,R3)
- 45 [-]: GETGLOBAL R0 K1        ; R0 := 0x89326c93
- 46 [-]: SELF      R0 R0 K8     ; R1 := R0; R0 := R0[0x18d05d30]
- 47 [-]: CALL      R0 2 2       ; R0 := R0(R1)
- 48 [-]: TEST      R0 1         ; if R0 then PC := 70
- 49 [-]: JMP       70           ; PC := 70
- 50 [-]: GETGLOBAL R0 K1        ; R0 := 0x89326c93
- 51 [-]: SELF      R0 R0 K8     ; R1 := R0; R0 := R0[0x18d05d30]
- 52 [-]: CALL      R0 2 2       ; R0 := R0(R1)
- 53 [-]: TEST      R0 1         ; if R0 then PC := 59
- 54 [-]: JMP       59           ; PC := 59
- 55 [-]: GETGLOBAL R0 K3        ; R0 := 0xcbd666e1
- 56 [-]: CONST     R1 2         ; R1 := 2.000000
- 57 [-]: CALL      R0 2 1       ; R0(R1)
- 58 [-]: JMP       50           ; PC := 50
- 59 [-]: GETGLOBAL R0 K0        ; R0 := 0x7b998233
- 60 [-]: GETUPVAL  R1 U0        ; R1 := U0
- 61 [-]: CALL      R0 2 2       ; R0 := R0(R1)
- 62 [-]: TEST      R0 0         ; if not R0 then PC := 70
- 63 [-]: JMP       70           ; PC := 70
- 64 [-]: GETGLOBAL R0 K3        ; R0 := 0xcbd666e1
- 65 [-]: CONST     R1 0         ; R1 := 0.000000
- 66 [-]: CALL      R0 2 1       ; R0(R1)
- 67 [-]: GETGLOBAL R0 K5        ; R0 := 0xbe190284
- 68 [-]: SETUPVAL  R0 U0        ; U82 := R0
- 69 [-]: JMP       59           ; PC := 59
- 70 [-]: LOADNIL   R0 R0        ; R0 := nil
- 71 [-]: LOADKB    R1 0 0       ; R1 := false
- 72 [-]: TEST      R1 0         ; if not R1 then PC := 96
- 73 [-]: JMP       96           ; PC := 96
- 74 [-]: GETGLOBAL R1 K10       ; R1 := 0x8a39bf8b
- 75 [-]: TEST      R1 0         ; if not R1 then PC := 96
- 76 [-]: JMP       96           ; PC := 96
- 77 [-]: GETGLOBAL R1 K1        ; R1 := 0x89326c93
- 78 [-]: SELF      R1 R1 K11    ; R2 := R1; R1 := R1[0x46a0ebf5]
- 79 [-]: GETGLOBAL R3 K12       ; R3 := 0x0469f296
- 80 [-]: LOADK     R4 K13       ; R4 := "CamperSpawnDebugPoint"
- 81 [-]: CALL      R3 2 0       ; R3,... := R3(R4)
- 82 [-]: CALL      R1 0 2       ; R1 := R1(R2,...)
- 83 [-]: GETGLOBAL R2 K0        ; R2 := 0x7b998233
- 84 [-]: MOVE      R3 R1        ; R3 := R1
- 85 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 86 [-]: TEST      R2 1         ; if R2 then PC := 96
- 87 [-]: JMP       96           ; PC := 96
- 88 [-]: GETGLOBAL R2 K1        ; R2 := 0x89326c93
- 89 [-]: SELF      R2 R2 K14    ; R3 := R2; R2 := R2[0x4e5939a5]
- 90 [-]: GETGLOBAL R4 K15       ; R4 := 0x111fdb38
- 91 [-]: SELF      R5 R1 K16    ; R6 := R1; R5 := R1[0xd1586535]
- 92 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 93 [-]: CONST     R6 50        ; R6 := 50.000000
- 94 [-]: CALL      R2 5 2       ; R2 := R2(R3,R4,R5,R6)
- 95 [-]: MOVE      R0 R2        ; R0 := R2
- 96 [-]: GETGLOBAL R2 K3        ; R2 := 0xcbd666e1
- 97 [-]: CONST     R3 3         ; R3 := 3.000000
- 98 [-]: CALL      R2 2 1       ; R2(R3)
- 99 [-]: GETUPVAL  R2 U0        ; R2 := U0
-100 [-]: SELF      R2 R2 K17    ; R3 := R2; R2 := R2[0x0eb34c69]
-101 [-]: GETUPVAL  R4 U1        ; R4 := U1
-102 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
-103 [-]: EQ        0 R2 K18     ; if R2 ~= 0.000000 then PC := 114
-104 [-]: JMP       114          ; PC := 114
-105 [-]: GETUPVAL  R2 U0        ; R2 := U0
-106 [-]: SELF      R2 R2 K17    ; R3 := R2; R2 := R2[0x0eb34c69]
-107 [-]: GETUPVAL  R4 U2        ; R4 := U2
-108 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
-109 [-]: LT        0 R2 K19     ; if R2 >= 1.000000 then PC := 114
-110 [-]: JMP       114          ; PC := 114
-111 [-]: GETUPVAL  R2 U3        ; R2 := U3
-112 [-]: MOVE      R3 R0        ; R3 := R0
-113 [-]: CALL      R2 2 1       ; R2(R3)
-114 [-]: RETURN    R0 1         ; return 
+L 0:   0 [-]: GETIMPORT R1 1 [nil]
+       1 [-]: NAMECALL R1 R1 K2 [0x7C1A0374]
+       2 [-]: CALL R1 1 -1 
+       3 [-]: FASTCALL 62 L1
+       4 [-]: GETIMPORT R0 4 [nil]
+       5 [-]: CALL R0 -1 1 
+L 1:   6 [-]: JUMPIFNOT R0 L2
+       7 [-]: GETIMPORT R0 6 [nil]
+       8 [-]: LOADN R1 0   
+       9 [-]: CALL R0 1 0  
+      10 [-]: JUMPBACK L0  
+L 2:  11 [-]: GETUPVAL R1 0
+      12 [-]: FASTCALL1 62 R1 L3
+      13 [-]: GETIMPORT R0 4 [nil]
+      14 [-]: CALL R0 1 1  
+L 3:  15 [-]: JUMPIF R0 L4 
+      16 [-]: GETUPVAL R0 0
+      17 [-]: NAMECALL R0 R0 K7 [0xFFE25891]
+      18 [-]: CALL R0 1 1  
+      19 [-]: JUMPIFNOT R0 L5
+L 4:  20 [-]: GETIMPORT R0 6 [nil]
+      21 [-]: LOADN R1 0   
+      22 [-]: CALL R0 1 0  
+      23 [-]: GETIMPORT R0 9 [nil]
+      24 [-]: SETUPVAL R0 0
+      25 [-]: JUMPBACK L2  
+L 5:  26 [-]: GETUPVAL R0 0
+      27 [-]: GETIMPORT R2 11 [nil]
+      28 [-]: NAMECALL R0 R0 K12 [0xF2DEAF69]
+      29 [-]: CALL R0 2 1  
+      30 [-]: JUMPIFNOT R0 L6
+      31 [-]: RETURN R0 0  
+L 6:  32 [-]: GETIMPORT R0 1 [nil]
+      33 [-]: NAMECALL R0 R0 K13 [0x18D05D30]
+      34 [-]: CALL R0 1 1  
+      35 [-]: JUMPIFNOT R0 L7
+      36 [-]: GETUPVAL R0 0
+      37 [-]: GETUPVAL R2 1
+      38 [-]: LOADN R3 0   
+      39 [-]: NAMECALL R0 R0 K14 [0x751F061D]
+      40 [-]: CALL R0 3 0  
+L 7:  41 [-]: GETIMPORT R0 1 [nil]
+      42 [-]: NAMECALL R0 R0 K13 [0x18D05D30]
+      43 [-]: CALL R0 1 1  
+      44 [-]: JUMPIF R0 L11
+L 8:  45 [-]: GETIMPORT R0 1 [nil]
+      46 [-]: NAMECALL R0 R0 K13 [0x18D05D30]
+      47 [-]: CALL R0 1 1  
+      48 [-]: JUMPIF R0 L9 
+      49 [-]: GETIMPORT R0 6 [nil]
+      50 [-]: LOADN R1 2   
+      51 [-]: CALL R0 1 0  
+      52 [-]: JUMPBACK L8  
+L 9:  53 [-]: GETUPVAL R1 0
+      54 [-]: FASTCALL1 62 R1 L10
+      55 [-]: GETIMPORT R0 4 [nil]
+      56 [-]: CALL R0 1 1  
+L10:  57 [-]: JUMPIFNOT R0 L11
+      58 [-]: GETIMPORT R0 6 [nil]
+      59 [-]: LOADN R1 0   
+      60 [-]: CALL R0 1 0  
+      61 [-]: GETIMPORT R0 9 [nil]
+      62 [-]: SETUPVAL R0 0
+      63 [-]: JUMPBACK L9  
+L11:  64 [-]: LOADNIL R0   
+      65 [-]: GETIMPORT R1 6 [nil]
+      66 [-]: LOADN R2 3   
+      67 [-]: CALL R1 1 0  
+      68 [-]: GETUPVAL R1 0
+      69 [-]: GETUPVAL R3 1
+      70 [-]: NAMECALL R1 R1 K15 [0x0EB34C69]
+      71 [-]: CALL R1 2 1  
+      72 [-]: JUMPXEQKN R1 K16 L12 NOT [0]
+      73 [-]: GETUPVAL R1 0
+      74 [-]: GETUPVAL R3 2
+      75 [-]: NAMECALL R1 R1 K15 [0x0EB34C69]
+      76 [-]: CALL R1 2 1  
+      77 [-]: LOADN R2 1   
+      78 [-]: JUMPIFNOTLT R1 R2 L12
+      79 [-]: GETUPVAL R1 3
+      80 [-]: MOVE R2 R0   
+      81 [-]: CALL R1 1 0  
+L12:  82 [-]: RETURN R0 0  
+
 
 

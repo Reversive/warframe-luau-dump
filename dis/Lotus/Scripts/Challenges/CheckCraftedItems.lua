@@ -1,50 +1,45 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
-; Max Stack Size:  2
+; Is_vararg:       1
+; Max Stack Size:  1
 
-  1 [-]: CLOSURE   R0 0         ; R0 := closure(Function #1)
-  2 [-]: SETGLOBAL R0 K0        ; MatchTagEvent := R0
-  3 [-]: RETURN    R0 1         ; return 
+            1 [-]: DUPCLOSURE R0 K0 []
+       2 [-]: SETGLOBAL R0 K1 ["MatchTagEvent"]
+       3 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 3
 ; #Upvalues:       0
 ; #Parameters:     5
 ; Is_vararg:       0
-; Max Stack Size:  13
+; Max Stack Size:  12
 
-  1 [-]: GETGLOBAL R5 K0        ; R5 := 0x7b998233
-  2 [-]: MOVE      R6 R4        ; R6 := R4
-  3 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-  4 [-]: TEST      R5 0         ; if not R5 then PC := 8
-  5 [-]: JMP       8            ; PC := 8
-  6 [-]: LOADKB    R5 0 0       ; R5 := false
-  7 [-]: RETURN    R5 2         ; return R5
-  8 [-]: CONST     R5 1         ; R5 := 1.000000
-  9 [-]: GETGLOBAL R6 K1        ; R6 := 0xd1b24cb9
- 10 [-]: LEN       R6 R6        ; R6 := # R6
- 11 [-]: CONST     R7 1         ; R7 := 1.000000
- 12 [-]: FORPREP   R5 22        ; R5 -= R7; PC := 22
- 13 [-]: GETGLOBAL R9 K1        ; R9 := 0xd1b24cb9
- 14 [-]: GETTABLE  R9 R9 R8     ; R9 := R9[R8]
- 15 [-]: SELF      R10 R4 K2    ; R11 := R4; R10 := R4[0xf2deaf69]
- 16 [-]: MOVE      R12 R9       ; R12 := R9
- 17 [-]: CALL      R10 3 2      ; R10 := R10(R11,R12)
- 18 [-]: TEST      R10 0        ; if not R10 then PC := 22
- 19 [-]: JMP       22           ; PC := 22
- 20 [-]: LOADKB    R10 1 0      ; R10 := true
- 21 [-]: RETURN    R10 2        ; return R10
- 22 [-]: FORLOOP   R5 13        ; R5 += R7; if R5 <= R6 then begin PC := 13; R8 := R5 end
- 23 [-]: LOADKB    R10 0 0      ; R10 := false
- 24 [-]: RETURN    R10 2        ; return R10
- 25 [-]: RETURN    R0 1         ; return 
+       0 [-]: FASTCALL1 62 R4 L0
+       1 [-]: MOVE R6 R4   
+       2 [-]: GETIMPORT R5 1 [nil]
+       3 [-]: CALL R5 1 1  
+L 0:   4 [-]: JUMPIFNOT R5 L1
+       5 [-]: LOADB R5 0   
+       6 [-]: RETURN R5 1  
+L 1:   7 [-]: LOADN R7 1   
+       8 [-]: GETIMPORT R8 3 [nil]
+       9 [-]: LENGTH R5 R8 
+      10 [-]: LOADN R6 1   
+      11 [-]: FORNPREP R5 L4
+L 2:  12 [-]: GETIMPORT R9 3 [nil]
+      13 [-]: GETTABLE R8 R9 R7
+      14 [-]: MOVE R11 R8  
+      15 [-]: NAMECALL R9 R4 K4 [0xF2DEAF69]
+      16 [-]: CALL R9 2 1  
+      17 [-]: JUMPIFNOT R9 L3
+      18 [-]: LOADB R9 1   
+      19 [-]: RETURN R9 1  
+L 3:  20 [-]: FORNLOOP R5 L2
+L 4:  21 [-]: LOADB R5 0   
+      22 [-]: RETURN R5 1  
+
 
 

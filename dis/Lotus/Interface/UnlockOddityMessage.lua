@@ -1,275 +1,528 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
-; Max Stack Size:  5
+; Is_vararg:       1
+; Max Stack Size:  12
 
-  1 [-]: LOADK     R0 K0        ; R0 := "/Lotus/Language/Oddities/"
-  2 [-]: GETGLOBAL R1 K1        ; R1 := 0x2d0fad09
-  3 [-]: LOADK     R2 K2        ; R2 := "EE.Interface.Utilities"
-  4 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  5 [-]: CONST     R2 35        ; R2 := 35.000000
-  6 [-]: CLOSURE   R3 0         ; R3 := closure(Function #1)
-  7 [-]: MOVE      R0 R0        ; R0 := R0
-  8 [-]: MOVE      R0 R2        ; R0 := R2
-  9 [-]: MOVE      R0 R1        ; R0 := R1
- 10 [-]: CLOSURE   R4 1         ; R4 := closure(Function #2)
- 11 [-]: MOVE      R0 R2        ; R0 := R2
- 12 [-]: SETGLOBAL R4 K3        ; Initialize := R4
- 13 [-]: CLOSURE   R4 2         ; R4 := closure(Function #3)
- 14 [-]: SETGLOBAL R4 K4        ; Update := R4
- 15 [-]: CLOSURE   R4 3         ; R4 := closure(Function #4)
- 16 [-]: MOVE      R0 R3        ; R0 := R3
- 17 [-]: SETGLOBAL R4 K5        ; ShowInscription := R4
- 18 [-]: RETURN    R0 1         ; return 
+            1 [-]: GETIMPORT R0 1 [nil]
+       2 [-]: LOADK R1 K2 ["Lotus.Scripts.Duviri.Encounters.DuviriRewardsLib"]
+       3 [-]: CALL R0 1 1  
+       4 [-]: NEWTABLE R1 0 10
+       5 [-]: LOADK R2 K3 ["A"]
+       6 [-]: LOADK R3 K4 ["B"]
+       7 [-]: LOADK R4 K5 ["C"]
+       8 [-]: LOADK R5 K6 ["D"]
+       9 [-]: LOADK R6 K7 ["E"]
+      10 [-]: LOADK R7 K8 ["F"]
+      11 [-]: LOADK R8 K9 ["G"]
+      12 [-]: LOADK R9 K10 ["H"]
+      13 [-]: LOADK R10 K11 ["I"]
+      14 [-]: LOADK R11 K12 ["J"]
+      15 [-]: SETLIST R1 R2 10 [1]
+      16 [-]: GETIMPORT R2 14 [nil]
+      17 [-]: LOADK R3 K15 ["/Lotus/Types/Lore/Fragments/DuviriFragments/DuviriCollectibleDeco"]
+      18 [-]: CALL R2 1 1  
+      19 [-]: LOADB R3 0   
+      20 [-]: LOADNIL R4   
+      21 [-]: LOADNIL R5   
+      22 [-]: GETIMPORT R6 1 [nil]
+      23 [-]: LOADK R7 K16 ["EE.Interface.Utilities"]
+      24 [-]: CALL R6 1 1  
+      25 [-]: GETIMPORT R7 1 [nil]
+      26 [-]: LOADK R8 K17 ["Lotus.Interface.UIUtilities"]
+      27 [-]: CALL R7 1 1  
+      28 [-]: NEWCLOSURE R8 P0
+      29 [-]: MOVE R0 R6   
+      30 [-]: MOVE R1 R3   
+      31 [-]: MOVE R0 R2   
+      32 [-]: MOVE R0 R1   
+      33 [-]: MOVE R1 R4   
+      34 [-]: NEWCLOSURE R9 P1
+      35 [-]: MOVE R1 R5   
+      36 [-]: MOVE R1 R3   
+      37 [-]: MOVE R0 R6   
+      38 [-]: MOVE R1 R4   
+      39 [-]: MOVE R0 R7   
+      40 [-]: MOVE R0 R0   
+      41 [-]: SETGLOBAL R9 K18 ["Initialize"]
+      42 [-]: NEWCLOSURE R9 P2
+      43 [-]: MOVE R1 R5   
+      44 [-]: MOVE R1 R4   
+      45 [-]: SETGLOBAL R9 K19 ["Update"]
+      46 [-]: NEWCLOSURE R9 P3
+      47 [-]: MOVE R1 R4   
+      48 [-]: SETGLOBAL R9 K20 ["Shutdown"]
+      49 [-]: DUPCLOSURE R9 K21 []
+      50 [-]: MOVE R0 R8   
+      51 [-]: SETGLOBAL R9 K22 ["ShowInscription"]
+      52 [-]: DUPCLOSURE R9 K23 []
+      53 [-]: SETGLOBAL R9 K24 ["OpenFileFlashMovie"]
+      54 [-]: CLOSEUPVALS R3
+      55 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
-; Defined at line: 10
-; #Upvalues:       3
+; Defined at line: 25
+; #Upvalues:       5
 ; #Parameters:     2
 ; Is_vararg:       0
-; Max Stack Size:  15
+; Max Stack Size:  19
 
-  1 [-]: CONST     R2 1         ; R2 := 1.500000
-  2 [-]: GETUPVAL  R3 U0        ; R3 := U0
-  3 [-]: MOVE      R4 R0        ; R4 := R0
-  4 [-]: LOADK     R5 K0        ; R5 := "_Line_"
-  5 [-]: MOVE      R6 R1        ; R6 := R1
-  6 [-]: CONCAT    R3 R3 R6     ; R3 := R3 .. R4 .. R5 .. R6
-  7 [-]: GETGLOBAL R4 K1        ; R4 := 0xae91e43b
-  8 [-]: SELF      R4 R4 K2     ; R5 := R4; R4 := R4[0x42b04007]
-  9 [-]: MOVE      R6 R3        ; R6 := R3
- 10 [-]: LOADKB    R7 1 0       ; R7 := true
- 11 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
- 12 [-]: GETGLOBAL R5 K1        ; R5 := 0xae91e43b
- 13 [-]: SELF      R5 R5 K3     ; R6 := R5; R5 := R5[0x5f56eeab]
- 14 [-]: LOADK     R7 K4        ; R7 := "Message.Line"
- 15 [-]: CONST     R8 29        ; R8 := 29.000000
- 16 [-]: LOADK     R9 K5        ; R9 := "\""
- 17 [-]: GETGLOBAL R10 K6       ; R10 := 0x7f5022cf
- 18 [-]: GETTABLE  R10 R10 K7   ; R10 := R10[0x3f3e4d12]
- 19 [-]: MOVE      R11 R4       ; R11 := R4
- 20 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 21 [-]: LOADK     R11 K5       ; R11 := "\""
- 22 [-]: CONCAT    R9 R9 R11    ; R9 := R9 .. R10 .. R11
- 23 [-]: CALL      R5 5 1       ; R5(R6,R7,R8,R9)
- 24 [-]: CLOSURE   R5 0         ; R5 := closure(Function #1.1)
- 25 [-]: GETUPVAL  R0 U1        ; R0 := U1
- 26 [-]: GETGLOBAL R6 K8        ; R6 := 0x25312c9b
- 27 [-]: GETGLOBAL R7 K1        ; R7 := 0xae91e43b
- 28 [-]: LOADK     R8 K9        ; R8 := "_root"
- 29 [-]: CONST     R9 2         ; R9 := 2.000000
- 30 [-]: NEWTABLE  R10 1 0      ; R10 := {}
- 31 [-]: CONST     R11 10       ; R11 := 10.000000
- 32 [-]: SETLIST   R10 1 1      ; R10[(1-1)*FPF+i] := R(10+i), 1 <= i <= 1
- 33 [-]: NEWTABLE  R11 1 0      ; R11 := {}
- 34 [-]: CONST     R12 100      ; R12 := 100.000000
- 35 [-]: SETLIST   R11 1 1      ; R11[(1-1)*FPF+i] := R(11+i), 1 <= i <= 1
- 36 [-]: MOVE      R12 R2       ; R12 := R2
- 37 [-]: CONST     R13 0        ; R13 := 0.000000
- 38 [-]: CLOSURE   R14 1        ; R14 := closure(Function #1.2)
- 39 [-]: GETUPVAL  R0 U2        ; R0 := U2
- 40 [-]: MOVE      R0 R5        ; R0 := R5
- 41 [-]: CALL      R6 9 1       ; R6(R7,R8,R9,R10,R11,R12,R13,R14)
- 42 [-]: LOADKB    R6 1 0       ; R6 := true
- 43 [-]: RETURN    R6 2         ; return R6
- 44 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETUPVAL R3 0
+       1 [-]: GETTABLEKS R2 R3 K0 [0x06D055F9]
+       2 [-]: GETUPVAL R3 1
+       3 [-]: LOADK R4 K1 [0.5]
+       4 [-]: LOADK R5 K2 [1.5]
+       5 [-]: CALL R2 3 1  
+       6 [-]: GETUPVAL R3 1
+       7 [-]: JUMPIFNOT R3 L9
+       8 [-]: DIVK R4 R1 K3 [9]
+       9 [-]: FASTCALL1 12 R4 L0
+      10 [-]: GETIMPORT R3 6 [nil]
+      11 [-]: CALL R3 1 1  
+L 0:  12 [-]: GETIMPORT R4 8 [nil]
+      13 [-]: NAMECALL R4 R4 K9 [0x2C8EA509]
+      14 [-]: CALL R4 1 1  
+      15 [-]: LOADNIL R5   
+      16 [-]: GETIMPORT R6 11 [nil]
+      17 [-]: MOVE R7 R4   
+      18 [-]: CALL R6 1 3  
+      19 [-]: FORGPREP_INEXT R6 L2
+L 1:  20 [-]: GETTABLEKS R11 R10 K12 ["mCollectibleType"]
+      21 [-]: GETUPVAL R13 2
+      22 [-]: NAMECALL R11 R11 K13 [0xF2DEAF69]
+      23 [-]: CALL R11 2 1 
+      24 [-]: JUMPIFNOT R11 L2
+      25 [-]: MOVE R5 R10  
+      26 [-]: JUMP L3
+     
+L 2:  27 [-]: FORGLOOP R6 L1 2 [inext]
+L 3:  28 [-]: FASTCALL1 62 R5 L4
+      29 [-]: MOVE R7 R5   
+      30 [-]: GETIMPORT R6 15 [nil]
+      31 [-]: CALL R6 1 1  
+L 4:  32 [-]: JUMPIF R6 L8 
+      33 [-]: LOADK R7 K16 ["<p><font size=\"19\" face=\"Flareserif 821 BT\">"]
+      34 [-]: GETIMPORT R10 19 [nil]
+      35 [-]: GETIMPORT R11 21 [nil]
+      36 [-]: LOADK R14 K22 ["/Lotus/Language/Fragments/DuviriSet"]
+      37 [-]: GETUPVAL R17 3
+      38 [-]: ADDK R18 R3 K23 [1]
+      39 [-]: GETTABLE R15 R17 R18
+      40 [-]: LOADK R16 K24 ["Name"]
+      41 [-]: CONCAT R13 R14 R16
+      42 [-]: LOADB R14 0  
+      43 [-]: NAMECALL R11 R11 K25 [0x42B04007]
+      44 [-]: CALL R11 3 -1
+      45 [-]: CALL R10 -1 1
+      46 [-]: MOVE R8 R10  
+      47 [-]: LOADK R9 K26 ["</font><font face=\"Roboto\">"]
+      48 [-]: CONCAT R6 R7 R9
+      49 [-]: GETIMPORT R10 21 [nil]
+      50 [-]: LOADK R12 K27 ["/Lotus/Language/Duviri/FragmentFound"]
+      51 [-]: LOADB R13 1  
+      52 [-]: DUPTABLE R14 29
+      53 [-]: SETTABLEKS R6 R14 K28 ["REGION"]
+      54 [-]: NAMECALL R10 R10 K25 [0x42B04007]
+      55 [-]: CALL R10 4 1 
+      56 [-]: MOVE R8 R10  
+      57 [-]: LOADK R9 K30 ["</font></p>"]
+      58 [-]: CONCAT R7 R8 R9
+      59 [-]: GETIMPORT R8 21 [nil]
+      60 [-]: LOADK R10 K31 ["Message.DuviriBottom.Label"]
+      61 [-]: LOADN R11 66 
+      62 [-]: LOADN R12 -6 
+      63 [-]: NAMECALL R8 R8 K32 [0x67BC869F]
+      64 [-]: CALL R8 4 0  
+      65 [-]: GETIMPORT R8 21 [nil]
+      66 [-]: LOADK R10 K31 ["Message.DuviriBottom.Label"]
+      67 [-]: LOADN R11 29 
+      68 [-]: MOVE R12 R7  
+      69 [-]: NAMECALL R8 R8 K33 [0x5F56EEAB]
+      70 [-]: CALL R8 4 0  
+      71 [-]: MULK R8 R3 K3 [9]
+      72 [-]: ADDK R9 R8 K34 [8]
+      73 [-]: MOVE R12 R8  
+      74 [-]: MOVE R10 R9  
+      75 [-]: LOADN R11 1  
+      76 [-]: FORNPREP R10 L8
+L 5:  77 [-]: DUPTABLE R13 37
+      78 [-]: LOADB R14 0  
+      79 [-]: SETTABLEKS R14 R13 K35 ["Scanned"]
+      80 [-]: LOADB R14 0  
+      81 [-]: SETTABLEKS R14 R13 K36 ["IsCurrScan"]
+      82 [-]: JUMPIFNOTEQ R12 R1 L6
+      83 [-]: LOADB R14 1  
+      84 [-]: SETTABLEKS R14 R13 K36 ["IsCurrScan"]
+      85 [-]: LOADB R14 1  
+      86 [-]: SETTABLEKS R14 R13 K35 ["Scanned"]
+      87 [-]: JUMP L7
+     
+L 6:  88 [-]: MOVE R16 R12 
+      89 [-]: NAMECALL R14 R5 K38 [0x1B533DDF]
+      90 [-]: CALL R14 2 1 
+      91 [-]: JUMPIFNOT R14 L7
+      92 [-]: LOADB R14 1  
+      93 [-]: SETTABLEKS R14 R13 K35 ["Scanned"]
+L 7:  94 [-]: GETUPVAL R14 4
+      95 [-]: MOVE R16 R13 
+      96 [-]: LOADB R17 1  
+      97 [-]: NAMECALL R14 R14 K39 [0xBAD4316F]
+      98 [-]: CALL R14 3 0 
+      99 [-]: FORNLOOP R10 L5
+L 8: 100 [-]: GETUPVAL R6 4
+     101 [-]: NAMECALL R6 R6 K40 [0x71E9AC81]
+     102 [-]: CALL R6 1 0  
+     103 [-]: GETIMPORT R6 21 [nil]
+     104 [-]: LOADK R8 K41 ["Message.DuviriBottom.PipList"]
+     105 [-]: LOADN R9 0   
+     106 [-]: GETUPVAL R13 4
+     107 [-]: NAMECALL R13 R13 K43 [0x5FBDDC1A]
+     108 [-]: CALL R13 1 1 
+     109 [-]: GETUPVAL R15 4
+     110 [-]: GETTABLEKS R14 R15 K44 ["mForcedHorizontalSeparation"]
+     111 [-]: MUL R12 R13 R14
+     112 [-]: MINUS R11 R12
+     113 [-]: DIVK R10 R11 K42 [2]
+     114 [-]: NAMECALL R6 R6 K32 [0x67BC869F]
+     115 [-]: CALL R6 4 0  
+     116 [-]: JUMP L10
+    
+L 9: 117 [-]: LOADK R4 K45 ["/Lotus/Language/Oddities/"]
+     118 [-]: MOVE R5 R0   
+     119 [-]: LOADK R6 K46 ["_Line_"]
+     120 [-]: MOVE R7 R1   
+     121 [-]: CONCAT R3 R4 R7
+     122 [-]: GETIMPORT R4 21 [nil]
+     123 [-]: MOVE R6 R3   
+     124 [-]: LOADB R7 1   
+     125 [-]: NAMECALL R4 R4 K25 [0x42B04007]
+     126 [-]: CALL R4 3 1  
+     127 [-]: GETIMPORT R5 21 [nil]
+     128 [-]: LOADK R7 K47 ["Message.NormalBottom.Line"]
+     129 [-]: LOADN R8 29  
+     130 [-]: LOADK R10 K48 ["\""]
+     131 [-]: GETIMPORT R13 19 [nil]
+     132 [-]: MOVE R14 R4  
+     133 [-]: CALL R13 1 1 
+     134 [-]: MOVE R11 R13 
+     135 [-]: LOADK R12 K48 ["\""]
+     136 [-]: CONCAT R9 R10 R12
+     137 [-]: NAMECALL R5 R5 K33 [0x5F56EEAB]
+     138 [-]: CALL R5 4 0  
+L10: 139 [-]: GETUPVAL R4 0
+     140 [-]: GETTABLEKS R3 R4 K0 [0x06D055F9]
+     141 [-]: GETUPVAL R4 1
+     142 [-]: LOADN R5 -42 
+     143 [-]: LOADN R6 0   
+     144 [-]: CALL R3 3 1  
+     145 [-]: NEWCLOSURE R4 P0
+     146 [-]: MOVE R0 R3   
+     147 [-]: GETIMPORT R5 50 [nil]
+     148 [-]: GETIMPORT R6 21 [nil]
+     149 [-]: LOADK R7 K51 ["_root"]
+     150 [-]: LOADN R8 2   
+     151 [-]: NEWTABLE R9 0 1
+     152 [-]: LOADN R10 10 
+     153 [-]: SETLIST R9 R10 1 [1]
+     154 [-]: NEWTABLE R10 0 1
+     155 [-]: LOADN R11 100
+     156 [-]: SETLIST R10 R11 1 [1]
+     157 [-]: MOVE R11 R2  
+     158 [-]: LOADN R12 0  
+     159 [-]: NEWCLOSURE R13 P1
+     160 [-]: MOVE R2 R1   
+     161 [-]: MOVE R2 R0   
+     162 [-]: MOVE R0 R4   
+     163 [-]: CALL R5 8 0  
+     164 [-]: LOADB R5 1   
+     165 [-]: RETURN R5 1  
 
 
-; Function #1.1:
-;
 ; Name:            
-; Defined at line: 18
-; #Upvalues:       1
-; #Parameters:     1
+; Defined at line: 95
+; #Upvalues:       6
+; #Parameters:     0
 ; Is_vararg:       0
-; Max Stack Size:  7
+; Max Stack Size:  9
 
-  1 [-]: GETGLOBAL R1 K0        ; R1 := 0xae91e43b
-  2 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1[0x67bc869f]
-  3 [-]: LOADK     R3 K2        ; R3 := "Message.Icon"
-  4 [-]: CONST     R4 1         ; R4 := 1.000000
-  5 [-]: SUB       R5 K3 R0     ; R5 := 1.000000 - R0
-  6 [-]: GETUPVAL  R6 U0        ; R6 := U0
-  7 [-]: MUL       R5 R5 R6     ; R5 := R5 * R6
-  8 [-]: CALL      R1 5 1       ; R1(R2,R3,R4,R5)
-  9 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: LOADK R1 K2 ["Lotus.Interface.Libs.TimerMgr"]
+       2 [-]: CALL R0 1 1  
+       3 [-]: GETTABLEKS R1 R0 K3 [0xDE474187]
+       4 [-]: CALL R1 0 1  
+       5 [-]: SETUPVAL R1 0
+       6 [-]: GETIMPORT R3 5 [nil]
+       7 [-]: FASTCALL1 62 R3 L0
+       8 [-]: GETIMPORT R2 7 [nil]
+       9 [-]: CALL R2 1 1  
+L 0:  10 [-]: NOT R1 R2    
+      11 [-]: JUMPIFNOT R1 L1
+      12 [-]: GETIMPORT R1 5 [nil]
+      13 [-]: GETIMPORT R3 9 [nil]
+      14 [-]: NAMECALL R1 R1 K10 [0xF2DEAF69]
+      15 [-]: CALL R1 2 1  
+L 1:  16 [-]: SETUPVAL R1 1
+      17 [-]: GETIMPORT R1 12 [nil]
+      18 [-]: LOADK R3 K13 ["Message"]
+      19 [-]: LOADN R4 10  
+      20 [-]: LOADN R5 0   
+      21 [-]: NAMECALL R1 R1 K14 [0x67BC869F]
+      22 [-]: CALL R1 4 0  
+      23 [-]: GETIMPORT R1 12 [nil]
+      24 [-]: LOADK R3 K15 ["Message.Icon"]
+      25 [-]: GETUPVAL R5 2
+      26 [-]: GETTABLEKS R4 R5 K16 [0x06D055F9]
+      27 [-]: GETUPVAL R5 1
+      28 [-]: GETIMPORT R6 18 [nil]
+      29 [-]: GETIMPORT R7 20 [nil]
+      30 [-]: CALL R4 3 -1 
+      31 [-]: NAMECALL R1 R1 K21 [0x1CB415C1]
+      32 [-]: CALL R1 -1 0 
+      33 [-]: GETIMPORT R1 12 [nil]
+      34 [-]: LOADK R3 K15 ["Message.Icon"]
+      35 [-]: LOADN R4 1   
+      36 [-]: LOADN R5 35  
+      37 [-]: NAMECALL R1 R1 K14 [0x67BC869F]
+      38 [-]: CALL R1 4 0  
+      39 [-]: GETIMPORT R1 12 [nil]
+      40 [-]: LOADK R3 K22 ["Message.NormalBottom"]
+      41 [-]: LOADN R4 11  
+      42 [-]: GETUPVAL R6 1
+      43 [-]: NOT R5 R6    
+      44 [-]: NAMECALL R1 R1 K23 [0xAADE900E]
+      45 [-]: CALL R1 4 0  
+      46 [-]: GETIMPORT R1 12 [nil]
+      47 [-]: LOADK R3 K24 ["Message.DuviriBottom"]
+      48 [-]: LOADN R4 11  
+      49 [-]: GETUPVAL R5 1
+      50 [-]: NAMECALL R1 R1 K23 [0xAADE900E]
+      51 [-]: CALL R1 4 0  
+      52 [-]: GETIMPORT R1 12 [nil]
+      53 [-]: LOADK R3 K25 ["Message.DuviriIconBg"]
+      54 [-]: LOADN R4 11  
+      55 [-]: GETUPVAL R5 1
+      56 [-]: NAMECALL R1 R1 K23 [0xAADE900E]
+      57 [-]: CALL R1 4 0  
+      58 [-]: GETIMPORT R1 12 [nil]
+      59 [-]: LOADK R3 K26 ["Message.DuviriUnderGlow"]
+      60 [-]: LOADN R4 11  
+      61 [-]: GETUPVAL R5 1
+      62 [-]: NAMECALL R1 R1 K23 [0xAADE900E]
+      63 [-]: CALL R1 4 0  
+      64 [-]: GETUPVAL R1 1
+      65 [-]: JUMPIFNOT R1 L3
+      66 [-]: GETIMPORT R1 12 [nil]
+      67 [-]: LOADK R3 K27 ["Message.DuviriBottom.BgBottom"]
+      68 [-]: GETIMPORT R5 29 [nil]
+      69 [-]: GETTABLEN R4 R5 1
+      70 [-]: NAMECALL R1 R1 K21 [0x1CB415C1]
+      71 [-]: CALL R1 3 0  
+      72 [-]: GETIMPORT R1 12 [nil]
+      73 [-]: LOADK R3 K30 ["Message.DuviriBottom.BgTop"]
+      74 [-]: GETIMPORT R5 29 [nil]
+      75 [-]: GETTABLEN R4 R5 2
+      76 [-]: GETIMPORT R5 32 [nil]
+      77 [-]: NAMECALL R1 R1 K33 [0xEF99134F]
+      78 [-]: CALL R1 4 0  
+      79 [-]: GETIMPORT R1 12 [nil]
+      80 [-]: LOADK R3 K34 ["Message.DuviriBottom.LineLeft"]
+      81 [-]: GETIMPORT R5 29 [nil]
+      82 [-]: GETTABLEN R4 R5 3
+      83 [-]: NAMECALL R1 R1 K21 [0x1CB415C1]
+      84 [-]: CALL R1 3 0  
+      85 [-]: GETIMPORT R1 12 [nil]
+      86 [-]: LOADK R3 K35 ["Message.DuviriBottom.LineRight"]
+      87 [-]: GETIMPORT R5 29 [nil]
+      88 [-]: GETTABLEN R4 R5 3
+      89 [-]: NAMECALL R1 R1 K21 [0x1CB415C1]
+      90 [-]: CALL R1 3 0  
+      91 [-]: GETIMPORT R1 12 [nil]
+      92 [-]: LOADK R3 K36 ["Message.DuviriUnderGlow.Sparkles"]
+      93 [-]: LOADN R4 9   
+      94 [-]: LOADK R5 K37 [15263976]
+      95 [-]: NAMECALL R1 R1 K14 [0x67BC869F]
+      96 [-]: CALL R1 4 0  
+      97 [-]: GETIMPORT R1 12 [nil]
+      98 [-]: LOADK R3 K38 ["Message.DuviriUnderGlow.StarburstOne"]
+      99 [-]: LOADN R4 9   
+     100 [-]: LOADK R5 K39 [14726172]
+     101 [-]: NAMECALL R1 R1 K14 [0x67BC869F]
+     102 [-]: CALL R1 4 0  
+     103 [-]: GETIMPORT R1 12 [nil]
+     104 [-]: LOADK R3 K40 ["Message.DuviriUnderGlow.StarburstTwo"]
+     105 [-]: LOADN R4 9   
+     106 [-]: LOADK R5 K37 [15263976]
+     107 [-]: NAMECALL R1 R1 K14 [0x67BC869F]
+     108 [-]: CALL R1 4 0  
+     109 [-]: GETIMPORT R1 1 [nil]
+     110 [-]: LOADK R2 K41 ["EE.Interface.Components.List"]
+     111 [-]: CALL R1 1 1  
+     112 [-]: GETTABLEKS R2 R1 K42 [0x9383BC56]
+     113 [-]: GETIMPORT R3 12 [nil]
+     114 [-]: LOADK R4 K43 ["Message.DuviriBottom.PipList.Element"]
+     115 [-]: LOADN R5 9   
+     116 [-]: CALL R2 3 1  
+     117 [-]: SETUPVAL R2 3
+     118 [-]: GETUPVAL R2 3
+     119 [-]: LOADN R3 0   
+     120 [-]: SETTABLEKS R3 R2 K44 ["mForcedVerticalSeparation"]
+     121 [-]: GETUPVAL R2 3
+     122 [-]: LOADN R3 23  
+     123 [-]: SETTABLEKS R3 R2 K45 ["mForcedHorizontalSeparation"]
+     124 [-]: GETUPVAL R2 3
+     125 [-]: NEWCLOSURE R3 P0
+     126 [-]: MOVE R2 R2   
+     127 [-]: MOVE R2 R0   
+     128 [-]: SETTABLEKS R3 R2 K46 ["mElementDrawCallback"]
+     129 [-]: GETIMPORT R2 12 [nil]
+     130 [-]: LOADK R4 K47 ["Message.DuviriBottom.Label"]
+     131 [-]: LOADN R5 29  
+     132 [-]: LOADK R6 K48 [""]
+     133 [-]: NAMECALL R2 R2 K49 [0x5F56EEAB]
+     134 [-]: CALL R2 4 0  
+     135 [-]: GETUPVAL R3 4
+     136 [-]: GETTABLEKS R2 R3 K50 [0x9457B1E3]
+     137 [-]: GETUPVAL R4 5
+     138 [-]: GETTABLEKS R3 R4 K51 ["COLLECTIBLE_DECO_REWARD_INTRINSICS"]
+     139 [-]: LOADN R4 1   
+     140 [-]: CALL R2 2 1  
+     141 [-]: LOADN R3 0   
+     142 [-]: JUMPIFNOTLT R3 R2 L2
+     143 [-]: GETIMPORT R3 12 [nil]
+     144 [-]: LOADK R5 K52 ["Message.DuviriBottom.IntrinsicIcon"]
+     145 [-]: GETIMPORT R7 29 [nil]
+     146 [-]: GETTABLEN R6 R7 7
+     147 [-]: NAMECALL R3 R3 K21 [0x1CB415C1]
+     148 [-]: CALL R3 3 0  
+     149 [-]: GETIMPORT R3 54 [nil]
+     150 [-]: LOADK R4 K55 ["/Lotus/Language/Intrinsics/FragmentIntrinsicsEarned"]
+     151 [-]: DUPTABLE R5 57
+     152 [-]: DIVK R6 R2 K58 [1000]
+     153 [-]: SETTABLEKS R6 R5 K56 ["COUNT"]
+     154 [-]: CALL R3 2 1  
+     155 [-]: GETIMPORT R4 12 [nil]
+     156 [-]: LOADK R6 K59 ["Message.DuviriBottom.IntrinsicLabel"]
+     157 [-]: LOADN R7 29  
+     158 [-]: MOVE R8 R3   
+     159 [-]: NAMECALL R4 R4 K49 [0x5F56EEAB]
+     160 [-]: CALL R4 4 0  
+     161 [-]: RETURN R0 0  
+L 2: 162 [-]: GETIMPORT R3 12 [nil]
+     163 [-]: LOADK R5 K52 ["Message.DuviriBottom.IntrinsicIcon"]
+     164 [-]: LOADN R6 11  
+     165 [-]: LOADB R7 0   
+     166 [-]: NAMECALL R3 R3 K23 [0xAADE900E]
+     167 [-]: CALL R3 4 0  
+     168 [-]: GETIMPORT R3 12 [nil]
+     169 [-]: LOADK R5 K59 ["Message.DuviriBottom.IntrinsicLabel"]
+     170 [-]: LOADN R6 11  
+     171 [-]: LOADB R7 0   
+     172 [-]: NAMECALL R3 R3 K23 [0xAADE900E]
+     173 [-]: CALL R3 4 0  
+     174 [-]: GETIMPORT R3 12 [nil]
+     175 [-]: LOADK R5 K30 ["Message.DuviriBottom.BgTop"]
+     176 [-]: LOADN R6 13  
+     177 [-]: LOADN R7 100 
+     178 [-]: NAMECALL R3 R3 K14 [0x67BC869F]
+     179 [-]: CALL R3 4 0  
+     180 [-]: RETURN R0 0  
+L 3: 181 [-]: GETIMPORT R1 12 [nil]
+     182 [-]: LOADK R3 K60 ["Message.NormalBottom.Found.text"]
+     183 [-]: LOADK R4 K61 ["/Lotus/Language/Oddities/OddityFound"]
+     184 [-]: NAMECALL R1 R1 K62 [0x20B98DB3]
+     185 [-]: CALL R1 3 0  
+     186 [-]: RETURN R0 0  
 
 
-; Function #1.2:
-;
 ; Name:            
-; Defined at line: 23
+; Defined at line: 153
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
-; Max Stack Size:  9
+; Max Stack Size:  4
 
-  1 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  2 [-]: GETTABLE  R0 R0 K0     ; R0 := R0[0x659d451f]
-  3 [-]: GETGLOBAL R1 K1        ; R1 := 0x933a3fdd
-  4 [-]: CALL      R0 2 1       ; R0(R1)
-  5 [-]: GETGLOBAL R0 K2        ; R0 := 0x25312c9b
-  6 [-]: GETGLOBAL R1 K3        ; R1 := 0xae91e43b
-  7 [-]: LOADK     R2 K4        ; R2 := "Message.Line"
-  8 [-]: CONST     R3 2         ; R3 := 2.000000
-  9 [-]: NEWTABLE  R4 1 0       ; R4 := {}
- 10 [-]: CONST     R5 65        ; R5 := 65.000000
- 11 [-]: SETLIST   R4 1 1       ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 1
- 12 [-]: NEWTABLE  R5 1 0       ; R5 := {}
- 13 [-]: CONST     R6 10        ; R6 := 10.000000
- 14 [-]: SETLIST   R5 1 1       ; R5[(1-1)*FPF+i] := R(5+i), 1 <= i <= 1
- 15 [-]: CONST     R6 6         ; R6 := 6.000000
- 16 [-]: CALL      R0 7 1       ; R0(R1,R2,R3,R4,R5,R6)
- 17 [-]: GETGLOBAL R0 K2        ; R0 := 0x25312c9b
- 18 [-]: GETGLOBAL R1 K3        ; R1 := 0xae91e43b
- 19 [-]: LOADK     R2 K6        ; R2 := "Message.Icon"
- 20 [-]: CONST     R3 2         ; R3 := 2.000000
- 21 [-]: NEWTABLE  R4 1 0       ; R4 := {}
- 22 [-]: GETUPVAL  R5 U1        ; R5 := U1
- 23 [-]: SETLIST   R4 1 1       ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 1
- 24 [-]: NEWTABLE  R5 1 0       ; R5 := {}
- 25 [-]: CONST     R6 1         ; R6 := 1.000000
- 26 [-]: SETLIST   R5 1 1       ; R5[(1-1)*FPF+i] := R(5+i), 1 <= i <= 1
- 27 [-]: CONST     R6 8         ; R6 := 8.000000
- 28 [-]: CONST     R7 0         ; R7 := 0.000000
- 29 [-]: CALL      R0 8 1       ; R0(R1,R2,R3,R4,R5,R6,R7)
- 30 [-]: GETGLOBAL R0 K2        ; R0 := 0x25312c9b
- 31 [-]: GETGLOBAL R1 K3        ; R1 := 0xae91e43b
- 32 [-]: LOADK     R2 K7        ; R2 := "Message"
- 33 [-]: CONST     R3 0         ; R3 := 0.000000
- 34 [-]: NEWTABLE  R4 1 0       ; R4 := {}
- 35 [-]: CONST     R5 10        ; R5 := 10.000000
- 36 [-]: SETLIST   R4 1 1       ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 1
- 37 [-]: NEWTABLE  R5 1 0       ; R5 := {}
- 38 [-]: CONST     R6 100       ; R6 := 100.000000
- 39 [-]: SETLIST   R5 1 1       ; R5[(1-1)*FPF+i] := R(5+i), 1 <= i <= 1
- 40 [-]: CONST     R6 1         ; R6 := 1.500000
- 41 [-]: CONST     R7 0         ; R7 := 0.000000
- 42 [-]: CLOSURE   R8 0         ; R8 := closure(Function #1.2.1)
- 43 [-]: CALL      R0 9 1       ; R0(R1,R2,R3,R4,R5,R6,R7,R8)
- 44 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: CALL R0 0 1  
+       2 [-]: GETIMPORT R1 3 [nil]
+       3 [-]: MOVE R3 R0   
+       4 [-]: NAMECALL R1 R1 K4 [0x8A8C8D5A]
+       5 [-]: CALL R1 2 0  
+       6 [-]: GETUPVAL R2 0
+       7 [-]: FASTCALL1 62 R2 L0
+       8 [-]: GETIMPORT R1 6 [nil]
+       9 [-]: CALL R1 1 1  
+L 0:  10 [-]: JUMPIF R1 L1 
+      11 [-]: GETUPVAL R1 0
+      12 [-]: MOVE R3 R0   
+      13 [-]: NAMECALL R1 R1 K7 [0xFAA69527]
+      14 [-]: CALL R1 2 0  
+L 1:  15 [-]: GETUPVAL R2 1
+      16 [-]: FASTCALL1 62 R2 L2
+      17 [-]: GETIMPORT R1 6 [nil]
+      18 [-]: CALL R1 1 1  
+L 2:  19 [-]: JUMPIF R1 L3 
+      20 [-]: GETUPVAL R1 1
+      21 [-]: NEWCLOSURE R3 P0
+      22 [-]: MOVE R0 R0   
+      23 [-]: NAMECALL R1 R1 K8 [0xEA061E98]
+      24 [-]: CALL R1 2 0  
+L 3:  25 [-]: RETURN R0 0  
 
 
-; Function #1.2.1:
-;
 ; Name:            
-; Defined at line: 28
-; #Upvalues:       0
-; #Parameters:     0
-; Is_vararg:       0
-; Max Stack Size:  9
-
-  1 [-]: GETGLOBAL R0 K0        ; R0 := 0x25312c9b
-  2 [-]: GETGLOBAL R1 K1        ; R1 := 0xae91e43b
-  3 [-]: LOADK     R2 K2        ; R2 := "Message"
-  4 [-]: CONST     R3 0         ; R3 := 0.000000
-  5 [-]: NEWTABLE  R4 1 0       ; R4 := {}
-  6 [-]: CONST     R5 10        ; R5 := 10.000000
-  7 [-]: SETLIST   R4 1 1       ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 1
-  8 [-]: NEWTABLE  R5 1 0       ; R5 := {}
-  9 [-]: CONST     R6 0         ; R6 := 0.000000
- 10 [-]: SETLIST   R5 1 1       ; R5[(1-1)*FPF+i] := R(5+i), 1 <= i <= 1
- 11 [-]: CONST     R6 1         ; R6 := 1.000000
- 12 [-]: CONST     R7 5         ; R7 := 5.000000
- 13 [-]: CLOSURE   R8 0         ; R8 := closure(Function #1.2.1.1)
- 14 [-]: CALL      R0 9 1       ; R0(R1,R2,R3,R4,R5,R6,R7,R8)
- 15 [-]: RETURN    R0 1         ; return 
-
-
-; Function #1.2.1.1:
-;
-; Name:            
-; Defined at line: 30
-; #Upvalues:       0
-; #Parameters:     0
-; Is_vararg:       0
-; Max Stack Size:  2
-
-  1 [-]: GETGLOBAL R0 K0        ; R0 := 0xae91e43b
-  2 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0x32302b4a]
-  3 [-]: CALL      R0 2 1       ; R0(R1)
-  4 [-]: RETURN    R0 1         ; return 
-
-
-; Function #2:
-;
-; Name:            
-; Defined at line: 38
+; Defined at line: 172
 ; #Upvalues:       1
-; #Parameters:     0
-; Is_vararg:       0
-; Max Stack Size:  5
-
-  1 [-]: GETGLOBAL R0 K0        ; R0 := 0xae91e43b
-  2 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0x67bc869f]
-  3 [-]: LOADK     R2 K2        ; R2 := "Message"
-  4 [-]: CONST     R3 10        ; R3 := 10.000000
-  5 [-]: CONST     R4 0         ; R4 := 0.000000
-  6 [-]: CALL      R0 5 1       ; R0(R1,R2,R3,R4)
-  7 [-]: GETGLOBAL R0 K0        ; R0 := 0xae91e43b
-  8 [-]: SELF      R0 R0 K3     ; R1 := R0; R0 := R0[0x1cb415c1]
-  9 [-]: LOADK     R2 K4        ; R2 := "Message.Icon"
- 10 [-]: GETGLOBAL R3 K5        ; R3 := 0x24832020
- 11 [-]: CALL      R0 4 1       ; R0(R1,R2,R3)
- 12 [-]: GETGLOBAL R0 K0        ; R0 := 0xae91e43b
- 13 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0x67bc869f]
- 14 [-]: LOADK     R2 K4        ; R2 := "Message.Icon"
- 15 [-]: CONST     R3 1         ; R3 := 1.000000
- 16 [-]: GETUPVAL  R4 U0        ; R4 := U0
- 17 [-]: CALL      R0 5 1       ; R0(R1,R2,R3,R4)
- 18 [-]: GETGLOBAL R0 K0        ; R0 := 0xae91e43b
- 19 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0x67bc869f]
- 20 [-]: LOADK     R2 K4        ; R2 := "Message.Icon"
- 21 [-]: CONST     R3 10        ; R3 := 10.000000
- 22 [-]: CONST     R4 100       ; R4 := 100.000000
- 23 [-]: CALL      R0 5 1       ; R0(R1,R2,R3,R4)
- 24 [-]: GETGLOBAL R0 K0        ; R0 := 0xae91e43b
- 25 [-]: SELF      R0 R0 K6     ; R1 := R0; R0 := R0[0x20b98db3]
- 26 [-]: LOADK     R2 K7        ; R2 := "Message.Found.text"
- 27 [-]: LOADK     R3 K8        ; R3 := "/Lotus/Language/Oddities/OddityFound"
- 28 [-]: CALL      R0 4 1       ; R0(R1,R2,R3)
- 29 [-]: RETURN    R0 1         ; return 
-
-
-; Function #3:
-;
-; Name:            
-; Defined at line: 46
-; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
 ; Max Stack Size:  3
 
-  1 [-]: GETGLOBAL R0 K0        ; R0 := 0xae91e43b
-  2 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0x8a8c8d5a]
-  3 [-]: GETGLOBAL R2 K2        ; R2 := 0xb693b6c1
-  4 [-]: CALL      R2 1 0       ; R2,... := R2()
-  5 [-]: CALL      R0 0 1       ; R0(R1,...)
-  6 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETUPVAL R1 0
+       1 [-]: FASTCALL1 62 R1 L0
+       2 [-]: GETIMPORT R0 1 [nil]
+       3 [-]: CALL R0 1 1  
+L 0:   4 [-]: JUMPIF R0 L1 
+       5 [-]: GETUPVAL R0 0
+       6 [-]: DUPCLOSURE R2 K2 []
+       7 [-]: NAMECALL R0 R0 K3 [0xEA061E98]
+       8 [-]: CALL R0 2 0  
+L 1:   9 [-]: RETURN R0 0  
 
 
-; Function #4:
-;
 ; Name:            
-; Defined at line: 50
+; Defined at line: 184
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
-; Max Stack Size:  5
+; Max Stack Size:  6
 
-  1 [-]: GETUPVAL  R2 U0        ; R2 := U0
-  2 [-]: MOVE      R3 R0        ; R3 := R0
-  3 [-]: MOVE      R4 R1        ; R4 := R1
-  4 [-]: CALL      R2 3 1       ; R2(R3,R4)
-  5 [-]: LOADKB    R2 1 0       ; R2 := true
-  6 [-]: RETURN    R2 2         ; return R2
-  7 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETUPVAL R2 0
+       1 [-]: MOVE R3 R0   
+       2 [-]: GETIMPORT R4 1 [nil]
+       3 [-]: MOVE R5 R1   
+       4 [-]: CALL R4 1 -1 
+       5 [-]: CALL R2 -1 0 
+       6 [-]: LOADB R2 1   
+       7 [-]: RETURN R2 1  
+
+
+; Name:            
+; Defined at line: 189
+; #Upvalues:       0
+; #Parameters:     0
+; Is_vararg:       0
+; Max Stack Size:  6
+
+       0 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: LOADK R2 K2 ["ShowInscription"]
+       2 [-]: NEWTABLE R3 0 2
+       3 [-]: LOADK R4 K3 ["Temp"]
+       4 [-]: LOADK R5 K4 ["83"]
+       5 [-]: SETLIST R3 R4 2 [1]
+       6 [-]: NAMECALL R0 R0 K5 [0xF56F3887]
+       7 [-]: CALL R0 3 0  
+       8 [-]: RETURN R0 0  
+
 
 

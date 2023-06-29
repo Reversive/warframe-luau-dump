@@ -1,19 +1,15 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
-; Max Stack Size:  2
+; Is_vararg:       1
+; Max Stack Size:  1
 
-  1 [-]: CLOSURE   R0 0         ; R0 := closure(Function #1)
-  2 [-]: SETGLOBAL R0 K0        ; AttachMarker := R0
-  3 [-]: RETURN    R0 1         ; return 
+            1 [-]: DUPCLOSURE R0 K0 []
+       2 [-]: SETGLOBAL R0 K1 ["AttachMarker"]
+       3 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 7
 ; #Upvalues:       0
@@ -21,44 +17,44 @@
 ; Is_vararg:       0
 ; Max Stack Size:  7
 
-  1 [-]: GETGLOBAL R1 K0        ; R1 := 0x7b998233
-  2 [-]: MOVE      R2 R0        ; R2 := R0
-  3 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  4 [-]: TEST      R1 1         ; if R1 then PC := 39
-  5 [-]: JMP       39           ; PC := 39
-  6 [-]: GETGLOBAL R1 K1        ; R1 := 0x6aa330f6
-  7 [-]: LT        0 K2 R1      ; if 0.000000 >= R1 then PC := 12
-  8 [-]: JMP       12           ; PC := 12
-  9 [-]: GETGLOBAL R1 K3        ; R1 := 0xcbd666e1
- 10 [-]: GETGLOBAL R2 K1        ; R2 := 0x6aa330f6
- 11 [-]: CALL      R1 2 1       ; R1(R2)
- 12 [-]: GETGLOBAL R1 K0        ; R1 := 0x7b998233
- 13 [-]: GETGLOBAL R2 K4        ; R2 := 0x656d204c
- 14 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 15 [-]: TEST      R1 1         ; if R1 then PC := 39
- 16 [-]: JMP       39           ; PC := 39
- 17 [-]: SELF      R1 R0 K5     ; R2 := R0; R1 := R0[0xbb610e5b]
- 18 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 19 [-]: GETGLOBAL R2 K0        ; R2 := 0x7b998233
- 20 [-]: MOVE      R3 R1        ; R3 := R1
- 21 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 22 [-]: TEST      R2 1         ; if R2 then PC := 39
- 23 [-]: JMP       39           ; PC := 39
- 24 [-]: SELF      R2 R1 K6     ; R3 := R1; R2 := R1[0x2047cfe7]
- 25 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 26 [-]: TEST      R2 1         ; if R2 then PC := 39
- 27 [-]: JMP       39           ; PC := 39
- 28 [-]: SELF      R2 R1 K7     ; R3 := R1; R2 := R1[0x47901f07]
- 29 [-]: GETGLOBAL R4 K4        ; R4 := 0x656d204c
- 30 [-]: GETGLOBAL R5 K8        ; R5 := 0x6980aacd
- 31 [-]: GETGLOBAL R6 K9        ; R6 := 0x4e02a25c
- 32 [-]: CALL      R2 5 2       ; R2 := R2(R3,R4,R5,R6)
- 33 [-]: SELF      R3 R2 K10    ; R4 := R2; R3 := R2[0xa69ce1e5]
- 34 [-]: LOADKB    R5 0 0       ; R5 := false
- 35 [-]: CALL      R3 3 1       ; R3(R4,R5)
- 36 [-]: SELF      R3 R2 K11    ; R4 := R2; R3 := R2[0x53bc0559]
- 37 [-]: GETGLOBAL R5 K12       ; R5 := 0x279900b1
- 38 [-]: CALL      R3 3 1       ; R3(R4,R5)
- 39 [-]: RETURN    R0 1         ; return 
+       0 [-]: FASTCALL1 62 R0 L0
+       1 [-]: MOVE R2 R0   
+       2 [-]: GETIMPORT R1 1 [nil]
+       3 [-]: CALL R1 1 1  
+L 0:   4 [-]: JUMPIF R1 L4 
+       5 [-]: GETIMPORT R1 3 [nil]
+       6 [-]: LOADN R2 0   
+       7 [-]: JUMPIFNOTLT R2 R1 L1
+       8 [-]: GETIMPORT R1 5 [nil]
+       9 [-]: GETIMPORT R2 3 [nil]
+      10 [-]: CALL R1 1 0  
+L 1:  11 [-]: GETIMPORT R2 7 [nil]
+      12 [-]: FASTCALL1 62 R2 L2
+      13 [-]: GETIMPORT R1 1 [nil]
+      14 [-]: CALL R1 1 1  
+L 2:  15 [-]: JUMPIF R1 L4 
+      16 [-]: NAMECALL R1 R0 K8 [0xBB610E5B]
+      17 [-]: CALL R1 1 1  
+      18 [-]: FASTCALL1 62 R1 L3
+      19 [-]: MOVE R3 R1   
+      20 [-]: GETIMPORT R2 1 [nil]
+      21 [-]: CALL R2 1 1  
+L 3:  22 [-]: JUMPIF R2 L4 
+      23 [-]: NAMECALL R2 R1 K9 [0x2047CFE7]
+      24 [-]: CALL R2 1 1  
+      25 [-]: JUMPIF R2 L4 
+      26 [-]: GETIMPORT R4 7 [nil]
+      27 [-]: GETIMPORT R5 11 [nil]
+      28 [-]: GETIMPORT R6 13 [nil]
+      29 [-]: NAMECALL R2 R1 K14 [0x47901F07]
+      30 [-]: CALL R2 4 1  
+      31 [-]: LOADB R5 0   
+      32 [-]: NAMECALL R3 R2 K15 [0xA69CE1E5]
+      33 [-]: CALL R3 2 0  
+      34 [-]: GETIMPORT R5 17 [nil]
+      35 [-]: NAMECALL R3 R2 K18 [0x53BC0559]
+      36 [-]: CALL R3 2 0  
+L 4:  37 [-]: RETURN R0 0  
+
 
 

@@ -1,80 +1,77 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
+; Is_vararg:       1
 ; Max Stack Size:  8
 
-  1 [-]: GETGLOBAL R0 K0        ; R0 := 0xaeabecda
-  2 [-]: VARARG    R1 R2        ; R1 := R2 := ...
-  3 [-]: GETGLOBAL R2 K1        ; R2 := package
-  4 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["seeall"]
-  5 [-]: CALL      R0 3 1       ; R0(R1,R2)
-  6 [-]: GETGLOBAL R0 K3        ; R0 := 0x2d0fad09
-  7 [-]: LOADK     R1 K4        ; R1 := "Lotus.Interface.Libs.TimerMgr"
-  8 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  9 [-]: NEWTABLE  R1 4 0       ; R1 := {}
- 10 [-]: NEWTABLE  R2 0 2       ; R2 := {}
- 11 [-]: GETGLOBAL R3 K6        ; R3 := 0x7ed0a956
- 12 [-]: LOADK     R4 K7        ; R4 := "/Lotus/Types/Boosters/AffinityBooster"
- 13 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 14 [-]: SETTABLE  R2 K5 R3     ; R2["TimedType"] := R3
- 15 [-]: GETGLOBAL R3 K6        ; R3 := 0x7ed0a956
- 16 [-]: LOADK     R4 K9        ; R4 := "/Lotus/Types/Boosters/Changyou/CyAffinityBooster"
- 17 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 18 [-]: SETTABLE  R2 K8 R3     ; R2["UsageType"] := R3
- 19 [-]: NEWTABLE  R3 0 2       ; R3 := {}
- 20 [-]: GETGLOBAL R4 K6        ; R4 := 0x7ed0a956
- 21 [-]: LOADK     R5 K10       ; R5 := "/Lotus/Types/Boosters/CreditBooster"
- 22 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 23 [-]: SETTABLE  R3 K5 R4     ; R3["TimedType"] := R4
- 24 [-]: GETGLOBAL R4 K6        ; R4 := 0x7ed0a956
- 25 [-]: LOADK     R5 K11       ; R5 := "/Lotus/Types/Boosters/Changyou/CyCreditBooster"
- 26 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 27 [-]: SETTABLE  R3 K8 R4     ; R3["UsageType"] := R4
- 28 [-]: NEWTABLE  R4 0 2       ; R4 := {}
- 29 [-]: GETGLOBAL R5 K6        ; R5 := 0x7ed0a956
- 30 [-]: LOADK     R6 K12       ; R6 := "/Lotus/Types/Boosters/ResourceAmountBooster"
- 31 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 32 [-]: SETTABLE  R4 K5 R5     ; R4["TimedType"] := R5
- 33 [-]: GETGLOBAL R5 K6        ; R5 := 0x7ed0a956
- 34 [-]: LOADK     R6 K13       ; R6 := "/Lotus/Types/Boosters/Changyou/CyResourceAmountBooster"
- 35 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 36 [-]: SETTABLE  R4 K8 R5     ; R4["UsageType"] := R5
- 37 [-]: NEWTABLE  R5 0 2       ; R5 := {}
- 38 [-]: GETGLOBAL R6 K6        ; R6 := 0x7ed0a956
- 39 [-]: LOADK     R7 K14       ; R7 := "/Lotus/Types/Boosters/ResourceDropChanceBooster"
- 40 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 41 [-]: SETTABLE  R5 K5 R6     ; R5["TimedType"] := R6
- 42 [-]: GETGLOBAL R6 K6        ; R6 := 0x7ed0a956
- 43 [-]: LOADK     R7 K15       ; R7 := "/Lotus/Types/Boosters/Changyou/CyResourceDropChanceBooster"
- 44 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 45 [-]: SETTABLE  R5 K8 R6     ; R5["UsageType"] := R6
- 46 [-]: SETLIST   R1 4 1       ; R1[(1-1)*FPF+i] := R(1+i), 1 <= i <= 4
- 47 [-]: NEWTABLE  R2 0 8       ; R2 := {}
- 48 [-]: SETTABLE  R2 K16 K17   ; R2["mMovie"] := nil
- 49 [-]: NEWTABLE  R3 0 0       ; R3 := {}
- 50 [-]: SETTABLE  R2 K18 R3    ; R2["mActiveBoosters"] := R3
- 51 [-]: SETTABLE  R2 K19 K20   ; R2["mDirty"] := false
- 52 [-]: SETTABLE  R2 K21 K17   ; R2["mTimerMgr"] := nil
- 53 [-]: CLOSURE   R3 0         ; R3 := closure(Function #1)
- 54 [-]: MOVE      R0 R0        ; R0 := R0
- 55 [-]: SETTABLE  R2 K22 R3    ; R2["Initialize"] := R3
- 56 [-]: CLOSURE   R3 1         ; R3 := closure(Function #2)
- 57 [-]: MOVE      R0 R1        ; R0 := R1
- 58 [-]: SETTABLE  R2 K23 R3    ; R2["Populate"] := R3
- 59 [-]: CLOSURE   R3 2         ; R3 := closure(Function #3)
- 60 [-]: SETTABLE  R2 K24 R3    ; R2["FastUpdate"] := R3
- 61 [-]: CLOSURE   R3 3         ; R3 := closure(Function #4)
- 62 [-]: SETTABLE  R2 K25 R3    ; R2["Update"] := R3
- 63 [-]: RETURN    R2 2         ; return R2
- 64 [-]: RETURN    R0 1         ; return 
+            1 [-]: GETIMPORT R0 1 [nil]
+       2 [-]: GETVARARGS R1 1
+       3 [-]: GETIMPORT R2 4 [nil]
+       4 [-]: CALL R0 2 0  
+       5 [-]: GETIMPORT R0 6 [nil]
+       6 [-]: LOADK R1 K7 ["Lotus.Interface.Libs.TimerMgr"]
+       7 [-]: CALL R0 1 1  
+       8 [-]: NEWTABLE R1 0 4
+       9 [-]: DUPTABLE R2 10
+      10 [-]: GETIMPORT R3 12 [nil]
+      11 [-]: LOADK R4 K13 ["/Lotus/Types/Boosters/AffinityBooster"]
+      12 [-]: CALL R3 1 1  
+      13 [-]: SETTABLEKS R3 R2 K8 ["TimedType"]
+      14 [-]: GETIMPORT R3 12 [nil]
+      15 [-]: LOADK R4 K14 ["/Lotus/Types/Boosters/Changyou/CyAffinityBooster"]
+      16 [-]: CALL R3 1 1  
+      17 [-]: SETTABLEKS R3 R2 K9 ["UsageType"]
+      18 [-]: DUPTABLE R3 10
+      19 [-]: GETIMPORT R4 12 [nil]
+      20 [-]: LOADK R5 K15 ["/Lotus/Types/Boosters/CreditBooster"]
+      21 [-]: CALL R4 1 1  
+      22 [-]: SETTABLEKS R4 R3 K8 ["TimedType"]
+      23 [-]: GETIMPORT R4 12 [nil]
+      24 [-]: LOADK R5 K16 ["/Lotus/Types/Boosters/Changyou/CyCreditBooster"]
+      25 [-]: CALL R4 1 1  
+      26 [-]: SETTABLEKS R4 R3 K9 ["UsageType"]
+      27 [-]: DUPTABLE R4 10
+      28 [-]: GETIMPORT R5 12 [nil]
+      29 [-]: LOADK R6 K17 ["/Lotus/Types/Boosters/ResourceAmountBooster"]
+      30 [-]: CALL R5 1 1  
+      31 [-]: SETTABLEKS R5 R4 K8 ["TimedType"]
+      32 [-]: GETIMPORT R5 12 [nil]
+      33 [-]: LOADK R6 K18 ["/Lotus/Types/Boosters/Changyou/CyResourceAmountBooster"]
+      34 [-]: CALL R5 1 1  
+      35 [-]: SETTABLEKS R5 R4 K9 ["UsageType"]
+      36 [-]: DUPTABLE R5 10
+      37 [-]: GETIMPORT R6 12 [nil]
+      38 [-]: LOADK R7 K19 ["/Lotus/Types/Boosters/ResourceDropChanceBooster"]
+      39 [-]: CALL R6 1 1  
+      40 [-]: SETTABLEKS R6 R5 K8 ["TimedType"]
+      41 [-]: GETIMPORT R6 12 [nil]
+      42 [-]: LOADK R7 K20 ["/Lotus/Types/Boosters/Changyou/CyResourceDropChanceBooster"]
+      43 [-]: CALL R6 1 1  
+      44 [-]: SETTABLEKS R6 R5 K9 ["UsageType"]
+      45 [-]: SETLIST R1 R2 4 [1]
+      46 [-]: DUPTABLE R2 29
+      47 [-]: LOADNIL R3   
+      48 [-]: SETTABLEKS R3 R2 K21 ["mMovie"]
+      49 [-]: NEWTABLE R3 0 0
+      50 [-]: SETTABLEKS R3 R2 K22 ["mActiveBoosters"]
+      51 [-]: LOADB R3 0   
+      52 [-]: SETTABLEKS R3 R2 K23 ["mDirty"]
+      53 [-]: LOADNIL R3   
+      54 [-]: SETTABLEKS R3 R2 K24 ["mTimerMgr"]
+      55 [-]: DUPCLOSURE R3 K30 []
+      56 [-]: MOVE R0 R0   
+      57 [-]: SETTABLEKS R3 R2 K25 ["Initialize"]
+      58 [-]: DUPCLOSURE R3 K31 []
+      59 [-]: MOVE R0 R1   
+      60 [-]: SETTABLEKS R3 R2 K26 ["Populate"]
+      61 [-]: DUPCLOSURE R3 K32 []
+      62 [-]: SETTABLEKS R3 R2 K27 ["FastUpdate"]
+      63 [-]: DUPCLOSURE R3 K33 []
+      64 [-]: SETTABLEKS R3 R2 K28 ["Update"]
+      65 [-]: RETURN R2 1  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 21
 ; #Upvalues:       1
@@ -82,326 +79,308 @@
 ; Is_vararg:       0
 ; Max Stack Size:  4
 
-  1 [-]: SETTABLE  R0 K0 R1     ; R0["mMovie"] := R1
-  2 [-]: NEWTABLE  R2 0 0       ; R2 := {}
-  3 [-]: SETTABLE  R0 K1 R2     ; R0["mActiveBoosters"] := R2
-  4 [-]: GETUPVAL  R2 U0        ; R2 := U0
-  5 [-]: GETTABLE  R2 R2 K3     ; R2 := R2[0xde474187]
-  6 [-]: CALL      R2 1 2       ; R2 := R2()
-  7 [-]: SETTABLE  R0 K2 R2     ; R0["mTimerMgr"] := R2
-  8 [-]: SELF      R2 R0 K4     ; R3 := R0; R2 := R0[0x431e8984]
-  9 [-]: CALL      R2 2 1       ; R2(R3)
- 10 [-]: RETURN    R0 1         ; return 
+       0 [-]: SETTABLEKS R1 R0 K0 ["mMovie"]
+       1 [-]: NEWTABLE R2 0 0
+       2 [-]: SETTABLEKS R2 R0 K1 ["mActiveBoosters"]
+       3 [-]: GETUPVAL R3 0
+       4 [-]: GETTABLEKS R2 R3 K2 [0xDE474187]
+       5 [-]: CALL R2 0 1  
+       6 [-]: SETTABLEKS R2 R0 K3 ["mTimerMgr"]
+       7 [-]: NAMECALL R2 R0 K4 [0x431E8984]
+       8 [-]: CALL R2 1 0  
+       9 [-]: RETURN R0 0  
 
 
-; Function #2:
-;
 ; Name:            
 ; Defined at line: 27
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  52
+; Max Stack Size:  21
 
-  1 [-]: NEWTABLE  R1 0 0       ; R1 := {}
-  2 [-]: SETTABLE  R0 K0 R1     ; R0[0x7b998233] := R1
-  3 [-]: SETTABLE  R0 K1 K2     ; R0["mRefreshDelay"] := nil
-  4 [-]: GETGLOBAL R1 K3        ; R1 := 0x76ea806b
-  5 [-]: SELF      R1 R1 K4     ; R2 := R1; R1 := R1[0x3f3ae64c]
-  6 [-]: CONST     R3 0         ; R3 := 0.000000
-  7 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
-  8 [-]: GETGLOBAL R2 K5        ; R2 := 0x7b998233
-  9 [-]: MOVE      R3 R1        ; R3 := R1
- 10 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 11 [-]: TEST      R2 0         ; if not R2 then PC := 14
- 12 [-]: JMP       14           ; PC := 14
- 13 [-]: RETURN    R0 1         ; return 
- 14 [-]: SELF      R2 R1 K7     ; R3 := R1; R2 := R1[0x80563238]
- 15 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 16 [-]: SETTABLE  R0 K6 R2     ; R0[0xfaa69527] := R2
- 17 [-]: GETGLOBAL R2 K5        ; R2 := 0x7b998233
- 18 [-]: GETTABLE  R3 R0 K6     ; R3 := R0["mGameData"]
- 19 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 20 [-]: TEST      R2 0         ; if not R2 then PC := 23
- 21 [-]: JMP       23           ; PC := 23
- 22 [-]: RETURN    R0 1         ; return 
- 23 [-]: NEWTABLE  R2 0 0       ; R2 := {}
- 24 [-]: GETTABLE  R3 R0 K6     ; R3 := R0["mGameData"]
- 25 [-]: SELF      R3 R3 K8     ; R4 := R3; R3 := R3[0x25a6e75e]
- 26 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 27 [-]: SELF      R3 R3 K9     ; R4 := R3; R3 := R3[0x498c31a3]
- 28 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 29 [-]: CONST     R4 1         ; R4 := 1.000000
- 30 [-]: LEN       R5 R3        ; R5 := # R3
- 31 [-]: CONST     R6 1         ; R6 := 1.000000
- 32 [-]: FORPREP   R4 105       ; R4 -= R6; PC := 105
- 33 [-]: LOADNIL   R8 R8        ; R8 := nil
- 34 [-]: GETGLOBAL R9 K5        ; R9 := 0x7b998233
- 35 [-]: GETTABLE  R10 R3 R7    ; R10 := R3[R7]
- 36 [-]: GETTABLE  R10 R10 K10  ; R10 := R10["mItemType"]
- 37 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 38 [-]: TEST      R9 1         ; if R9 then PC := 105
- 39 [-]: JMP       105          ; PC := 105
- 40 [-]: GETTABLE  R9 R3 R7     ; R9 := R3[R7]
- 41 [-]: GETTABLE  R9 R9 K10    ; R9 := R9["mItemType"]
- 42 [-]: SELF      R9 R9 K11    ; R10 := R9; R9 := R9[0x4bcc0a75]
- 43 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 44 [-]: TEST      R9 0         ; if not R9 then PC := 60
- 45 [-]: JMP       60           ; PC := 60
- 46 [-]: GETGLOBAL R9 K12       ; R9 := 0x34291f5c
- 47 [-]: GETTABLE  R9 R9 K13    ; R9 := R9[0x397b920f]
- 48 [-]: GETTABLE  R10 R3 R7    ; R10 := R3[R7]
- 49 [-]: GETTABLE  R10 R10 K14  ; R10 := R10["mExpiryDate"]
- 50 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 51 [-]: LT        0 K15 R9     ; if 0.000000 >= R9 then PC := 69
- 52 [-]: JMP       69           ; PC := 69
- 53 [-]: NEWTABLE  R10 0 2      ; R10 := {}
- 54 [-]: GETTABLE  R11 R3 R7    ; R11 := R3[R7]
- 55 [-]: GETTABLE  R11 R11 K14  ; R11 := R11["mExpiryDate"]
- 56 [-]: SETTABLE  R10 K14 R11  ; R10["mExpiryDate"] := R11
- 57 [-]: SETTABLE  R10 K16 K15  ; R10["mUsesRemaining"] := 0.000000
- 58 [-]: MOVE      R8 R10       ; R8 := R10
- 59 [-]: JMP       69           ; PC := 69
- 60 [-]: GETTABLE  R10 R3 R7    ; R10 := R3[R7]
- 61 [-]: GETTABLE  R10 R10 K16  ; R10 := R10["mUsesRemaining"]
- 62 [-]: LT        0 K15 R10    ; if 0.000000 >= R10 then PC := 69
- 63 [-]: JMP       69           ; PC := 69
- 64 [-]: NEWTABLE  R10 0 1      ; R10 := {}
- 65 [-]: GETTABLE  R11 R3 R7    ; R11 := R3[R7]
- 66 [-]: GETTABLE  R11 R11 K16  ; R11 := R11["mUsesRemaining"]
- 67 [-]: SETTABLE  R10 K16 R11  ; R10["mUsesRemaining"] := R11
- 68 [-]: MOVE      R8 R10       ; R8 := R10
- 69 [-]: EQ        1 R8 K2      ; if R8 == nil then PC := 105
- 70 [-]: JMP       105          ; PC := 105
- 71 [-]: GETTABLE  R10 R3 R7    ; R10 := R3[R7]
- 72 [-]: GETTABLE  R10 R10 K10  ; R10 := R10["mItemType"]
- 73 [-]: SELF      R10 R10 K18  ; R11 := R10; R10 := R10[0xd3a9d01f]
- 74 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 75 [-]: SETTABLE  R8 K17 R10   ; R8["mLocalizeTag"] := R10
- 76 [-]: GETTABLE  R10 R3 R7    ; R10 := R3[R7]
- 77 [-]: GETTABLE  R10 R10 K10  ; R10 := R10["mItemType"]
- 78 [-]: SELF      R10 R10 K20  ; R11 := R10; R10 := R10[0x5ba460ac]
- 79 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 80 [-]: SETTABLE  R8 K19 R10   ; R8["mLocalizeDescTag"] := R10
- 81 [-]: GETTABLE  R10 R3 R7    ; R10 := R3[R7]
- 82 [-]: GETTABLE  R10 R10 K10  ; R10 := R10["mItemType"]
- 83 [-]: SELF      R10 R10 K22  ; R11 := R10; R10 := R10[0x056dcf06]
- 84 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 85 [-]: SETTABLE  R8 K21 R10   ; R8["mIconTexture"] := R10
- 86 [-]: GETTABLE  R10 R3 R7    ; R10 := R3[R7]
- 87 [-]: GETTABLE  R10 R10 K10  ; R10 := R10["mItemType"]
- 88 [-]: SETTABLE  R8 K10 R10   ; R8["mItemType"] := R10
- 89 [-]: GETTABLE  R10 R8 K10   ; R10 := R8["mItemType"]
- 90 [-]: SELF      R10 R10 K11  ; R11 := R10; R10 := R10[0x4bcc0a75]
- 91 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 92 [-]: TEST      R10 1        ; if R10 then PC := 100
- 93 [-]: JMP       100          ; PC := 100
- 94 [-]: GETGLOBAL R10 K23      ; R10 := 0x33bdd652
- 95 [-]: GETTABLE  R10 R10 K24  ; R10 := R10[0x23d5322f]
- 96 [-]: MOVE      R11 R2       ; R11 := R2
- 97 [-]: MOVE      R12 R8       ; R12 := R8
- 98 [-]: CALL      R10 3 1      ; R10(R11,R12)
- 99 [-]: JMP       105          ; PC := 105
-100 [-]: GETGLOBAL R10 K23      ; R10 := 0x33bdd652
-101 [-]: GETTABLE  R10 R10 K24  ; R10 := R10[0x23d5322f]
-102 [-]: GETTABLE  R11 R0 K0    ; R11 := R0["mActiveBoosters"]
-103 [-]: MOVE      R12 R8       ; R12 := R8
-104 [-]: CALL      R10 3 1      ; R10(R11,R12)
-105 [-]: FORLOOP   R4 33        ; R4 += R6; if R4 <= R5 then begin PC := 33; R7 := R4 end
-106 [-]: CONST     R10 1        ; R10 := 1.000000
-107 [-]: LEN       R11 R2       ; R11 := # R2
-108 [-]: CONST     R12 1        ; R12 := 1.000000
-109 [-]: FORPREP   R10 154      ; R10 -= R12; PC := 154
-110 [-]: GETTABLE  R14 R2 R13   ; R14 := R2[R13]
-111 [-]: GETTABLE  R14 R14 K10  ; R14 := R14["mItemType"]
-112 [-]: LOADKB    R15 0 0      ; R15 := false
-113 [-]: CONST     R16 1        ; R16 := 1.000000
-114 [-]: GETTABLE  R17 R0 K0    ; R17 := R0["mActiveBoosters"]
-115 [-]: LEN       R17 R17      ; R17 := # R17
-116 [-]: CONST     R18 1        ; R18 := 1.000000
-117 [-]: FORPREP   R16 148      ; R16 -= R18; PC := 148
-118 [-]: GETTABLE  R20 R0 K0    ; R20 := R0["mActiveBoosters"]
-119 [-]: GETTABLE  R20 R20 R19  ; R20 := R20[R19]
-120 [-]: GETTABLE  R20 R20 K10  ; R20 := R20["mItemType"]
-121 [-]: CONST     R21 1        ; R21 := 1.000000
-122 [-]: GETUPVAL  R22 U0       ; R22 := U0
-123 [-]: LEN       R22 R22      ; R22 := # R22
-124 [-]: CONST     R23 1        ; R23 := 1.000000
-125 [-]: FORPREP   R21 142      ; R21 -= R23; PC := 142
-126 [-]: SELF      R25 R14 K25  ; R26 := R14; R25 := R14[0xf2deaf69]
-127 [-]: GETUPVAL  R27 U0       ; R27 := U0
-128 [-]: GETTABLE  R27 R27 R24  ; R27 := R27[R24]
-129 [-]: GETTABLE  R27 R27 K26  ; R27 := R27["UsageType"]
-130 [-]: CALL      R25 3 2      ; R25 := R25(R26,R27)
-131 [-]: TEST      R25 0        ; if not R25 then PC := 142
-132 [-]: JMP       142          ; PC := 142
-133 [-]: SELF      R25 R20 K25  ; R26 := R20; R25 := R20[0xf2deaf69]
-134 [-]: GETUPVAL  R27 U0       ; R27 := U0
-135 [-]: GETTABLE  R27 R27 R24  ; R27 := R27[R24]
-136 [-]: GETTABLE  R27 R27 K27  ; R27 := R27["TimedType"]
-137 [-]: CALL      R25 3 2      ; R25 := R25(R26,R27)
-138 [-]: TEST      R25 0        ; if not R25 then PC := 143
-139 [-]: JMP       143          ; PC := 143
-140 [-]: LOADKB    R15 1 0      ; R15 := true
-141 [-]: JMP       143          ; PC := 143
-142 [-]: FORLOOP   R21 126      ; R21 += R23; if R21 <= R22 then begin PC := 126; R24 := R21 end
-143 [-]: TEST      R15 0        ; if not R15 then PC := 148
-144 [-]: JMP       148          ; PC := 148
-145 [-]: GETTABLE  R25 R2 R13   ; R25 := R2[R13]
-146 [-]: SETTABLE  R25 K28 K29  ; R25["mInactive"] := true
-147 [-]: JMP       149          ; PC := 149
-148 [-]: FORLOOP   R16 118      ; R16 += R18; if R16 <= R17 then begin PC := 118; R19 := R16 end
-149 [-]: GETGLOBAL R25 K23      ; R25 := 0x33bdd652
-150 [-]: GETTABLE  R25 R25 K24  ; R25 := R25[0x23d5322f]
-151 [-]: GETTABLE  R26 R0 K0    ; R26 := R0["mActiveBoosters"]
-152 [-]: GETTABLE  R27 R2 R13   ; R27 := R2[R13]
-153 [-]: CALL      R25 3 1      ; R25(R26,R27)
-154 [-]: FORLOOP   R10 110      ; R10 += R12; if R10 <= R11 then begin PC := 110; R13 := R10 end
-155 [-]: GETTABLE  R25 R0 K6    ; R25 := R0["mGameData"]
-156 [-]: SELF      R25 R25 K30  ; R26 := R25; R25 := R25[0x69727e0b]
-157 [-]: CALL      R25 2 2      ; R25 := R25(R26)
-158 [-]: CONST     R26 1        ; R26 := 1.000000
-159 [-]: GETTABLE  R27 R25 K31  ; R27 := R25["mGlobalUpgrades"]
-160 [-]: LEN       R27 R27      ; R27 := # R27
-161 [-]: CONST     R28 1        ; R28 := 1.000000
-162 [-]: FORPREP   R26 177      ; R26 -= R28; PC := 177
-163 [-]: GETTABLE  R30 R25 K31  ; R30 := R25["mGlobalUpgrades"]
-164 [-]: GETTABLE  R30 R30 R29  ; R30 := R30[R29]
-165 [-]: GETGLOBAL R31 K12      ; R31 := 0x34291f5c
-166 [-]: GETTABLE  R31 R31 K13  ; R31 := R31[0x397b920f]
-167 [-]: GETTABLE  R32 R30 K32  ; R32 := R30["mActivation"]
-168 [-]: CALL      R31 2 2      ; R31 := R31(R32)
-169 [-]: GETGLOBAL R32 K12      ; R32 := 0x34291f5c
-170 [-]: GETTABLE  R32 R32 K13  ; R32 := R32[0x397b920f]
-171 [-]: GETTABLE  R33 R30 K14  ; R33 := R30["mExpiryDate"]
-172 [-]: CALL      R32 2 2      ; R32 := R32(R33)
-173 [-]: LT        0 R31 K15    ; if R31 >= 0.000000 then PC := 177
-174 [-]: JMP       177          ; PC := 177
-175 [-]: LT        0 K15 R32    ; if 0.000000 >= R32 then PC := 177
-176 [-]: JMP       177          ; PC := 177
-177 [-]: FORLOOP   R26 163      ; R26 += R28; if R26 <= R27 then begin PC := 163; R29 := R26 end
-178 [-]: GETGLOBAL R33 K33      ; R33 := _T
-179 [-]: GETTABLE  R33 R33 K34  ; R33 := R33["HubBlessings"]
-180 [-]: TEST      R33 0        ; if not R33 then PC := 239
-181 [-]: JMP       239          ; PC := 239
-182 [-]: GETGLOBAL R33 K35      ; R33 := 0xcfc01047
-183 [-]: GETGLOBAL R34 K33      ; R34 := _T
-184 [-]: GETTABLE  R34 R34 K34  ; R34 := R34["HubBlessings"]
-185 [-]: CALL      R33 2 4      ; R33,R34,R35 := R33(R34)
-186 [-]: JMP       237          ; PC := 237
-187 [-]: LOADKB    R38 0 0      ; R38 := false
-188 [-]: CONST     R39 1        ; R39 := 1.000000
-189 [-]: GETTABLE  R40 R0 K0    ; R40 := R0["mActiveBoosters"]
-190 [-]: LEN       R40 R40      ; R40 := # R40
-191 [-]: CONST     R41 1        ; R41 := 1.000000
-192 [-]: FORPREP   R39 205      ; R39 -= R41; PC := 205
-193 [-]: GETTABLE  R43 R0 K0    ; R43 := R0["mActiveBoosters"]
-194 [-]: GETTABLE  R43 R43 R42  ; R43 := R43[R42]
-195 [-]: GETTABLE  R44 R43 K10  ; R44 := R43["mItemType"]
-196 [-]: SELF      R44 R44 K25  ; R45 := R44; R44 := R44[0xf2deaf69]
-197 [-]: GETTABLE  R46 R37 K10  ; R46 := R37["mItemType"]
-198 [-]: CALL      R44 3 2      ; R44 := R44(R45,R46)
-199 [-]: TEST      R44 0        ; if not R44 then PC := 205
-200 [-]: JMP       205          ; PC := 205
-201 [-]: GETTABLE  R44 R37 K14  ; R44 := R37["mExpiryDate"]
-202 [-]: SETTABLE  R43 K14 R44  ; R43["mExpiryDate"] := R44
-203 [-]: LOADKB    R38 1 0      ; R38 := true
-204 [-]: JMP       206          ; PC := 206
-205 [-]: FORLOOP   R39 193      ; R39 += R41; if R39 <= R40 then begin PC := 193; R42 := R39 end
-206 [-]: TEST      R38 1        ; if R38 then PC := 237
-207 [-]: JMP       237          ; PC := 237
-208 [-]: GETGLOBAL R44 K12      ; R44 := 0x34291f5c
-209 [-]: GETTABLE  R44 R44 K13  ; R44 := R44[0x397b920f]
-210 [-]: GETTABLE  R45 R37 K14  ; R45 := R37["mExpiryDate"]
-211 [-]: CALL      R44 2 2      ; R44 := R44(R45)
-212 [-]: LT        0 K15 R44    ; if 0.000000 >= R44 then PC := 237
-213 [-]: JMP       237          ; PC := 237
-214 [-]: NEWTABLE  R45 0 2      ; R45 := {}
-215 [-]: GETTABLE  R46 R37 K14  ; R46 := R37["mExpiryDate"]
-216 [-]: SETTABLE  R45 K14 R46  ; R45["mExpiryDate"] := R46
-217 [-]: SETTABLE  R45 K16 K15  ; R45["mUsesRemaining"] := 0.000000
-218 [-]: GETTABLE  R46 R37 K10  ; R46 := R37["mItemType"]
-219 [-]: SELF      R46 R46 K18  ; R47 := R46; R46 := R46[0xd3a9d01f]
-220 [-]: CALL      R46 2 2      ; R46 := R46(R47)
-221 [-]: SETTABLE  R45 K17 R46  ; R45["mLocalizeTag"] := R46
-222 [-]: GETTABLE  R46 R37 K10  ; R46 := R37["mItemType"]
-223 [-]: SELF      R46 R46 K20  ; R47 := R46; R46 := R46[0x5ba460ac]
-224 [-]: CALL      R46 2 2      ; R46 := R46(R47)
-225 [-]: SETTABLE  R45 K19 R46  ; R45["mLocalizeDescTag"] := R46
-226 [-]: GETTABLE  R46 R37 K10  ; R46 := R37["mItemType"]
-227 [-]: SELF      R46 R46 K22  ; R47 := R46; R46 := R46[0x056dcf06]
-228 [-]: CALL      R46 2 2      ; R46 := R46(R47)
-229 [-]: SETTABLE  R45 K21 R46  ; R45["mIconTexture"] := R46
-230 [-]: GETTABLE  R46 R37 K10  ; R46 := R37["mItemType"]
-231 [-]: SETTABLE  R45 K10 R46  ; R45["mItemType"] := R46
-232 [-]: GETGLOBAL R46 K23      ; R46 := 0x33bdd652
-233 [-]: GETTABLE  R46 R46 K24  ; R46 := R46[0x23d5322f]
-234 [-]: GETTABLE  R47 R0 K0    ; R47 := R0["mActiveBoosters"]
-235 [-]: MOVE      R48 R45      ; R48 := R45
-236 [-]: CALL      R46 3 1      ; R46(R47,R48)
-237 [-]: TFORLOOP  R33 2        ; R36,R37 :=  R33(R34,R35); if R36 ~= nil then begin PC = 187; R35 := R36 end
-238 [-]: JMP       187          ; PC := 187
-239 [-]: CONST     R46 1        ; R46 := 1.000000
-240 [-]: CONST     R47 4        ; R47 := 4.000000
-241 [-]: CONST     R48 1        ; R48 := 1.000000
-242 [-]: FORPREP   R46 267      ; R46 -= R48; PC := 267
-243 [-]: GETTABLE  R50 R0 K0    ; R50 := R0["mActiveBoosters"]
-244 [-]: LEN       R50 R50      ; R50 := # R50
-245 [-]: LE        0 R49 R50    ; if R49 > R50 then PC := 267
-246 [-]: JMP       267          ; PC := 267
-247 [-]: GETTABLE  R50 R0 K0    ; R50 := R0["mActiveBoosters"]
-248 [-]: GETTABLE  R50 R50 R49  ; R50 := R50[R49]
-249 [-]: GETTABLE  R50 R50 K14  ; R50 := R50["mExpiryDate"]
-250 [-]: EQ        1 R50 K2     ; if R50 == nil then PC := 267
-251 [-]: JMP       267          ; PC := 267
-252 [-]: GETGLOBAL R50 K12      ; R50 := 0x34291f5c
-253 [-]: GETTABLE  R50 R50 K13  ; R50 := R50[0x397b920f]
-254 [-]: GETTABLE  R51 R0 K0    ; R51 := R0["mActiveBoosters"]
-255 [-]: GETTABLE  R51 R51 R49  ; R51 := R51[R49]
-256 [-]: GETTABLE  R51 R51 K14  ; R51 := R51["mExpiryDate"]
-257 [-]: CALL      R50 2 2      ; R50 := R50(R51)
-258 [-]: LT        0 K15 R50    ; if 0.000000 >= R50 then PC := 267
-259 [-]: JMP       267          ; PC := 267
-260 [-]: GETTABLE  R51 R0 K1    ; R51 := R0["mRefreshDelay"]
-261 [-]: EQ        1 R51 K2     ; if R51 == nil then PC := 266
-262 [-]: JMP       266          ; PC := 266
-263 [-]: GETTABLE  R51 R0 K1    ; R51 := R0["mRefreshDelay"]
-264 [-]: LT        0 R50 R51    ; if R50 >= R51 then PC := 267
-265 [-]: JMP       267          ; PC := 267
-266 [-]: SETTABLE  R0 K1 R50    ; R0["mRefreshDelay"] := R50
-267 [-]: FORLOOP   R46 243      ; R46 += R48; if R46 <= R47 then begin PC := 243; R49 := R46 end
-268 [-]: SETTABLE  R0 K36 K29   ; R0["mDirty"] := true
-269 [-]: RETURN    R0 1         ; return 
+       0 [-]: NEWTABLE R1 0 0
+       1 [-]: SETTABLEKS R1 R0 K0 ["mActiveBoosters"]
+       2 [-]: LOADNIL R1   
+       3 [-]: SETTABLEKS R1 R0 K1 ["mRefreshDelay"]
+       4 [-]: GETIMPORT R1 3 [nil]
+       5 [-]: LOADN R3 0   
+       6 [-]: NAMECALL R1 R1 K4 [0x3F3AE64C]
+       7 [-]: CALL R1 2 1  
+       8 [-]: FASTCALL1 62 R1 L0
+       9 [-]: MOVE R3 R1   
+      10 [-]: GETIMPORT R2 6 [nil]
+      11 [-]: CALL R2 1 1  
+L 0:  12 [-]: JUMPIFNOT R2 L1
+      13 [-]: RETURN R0 0  
+L 1:  14 [-]: NAMECALL R2 R1 K7 [0x80563238]
+      15 [-]: CALL R2 1 1  
+      16 [-]: SETTABLEKS R2 R0 K8 ["mGameData"]
+      17 [-]: GETTABLEKS R3 R0 K8 ["mGameData"]
+      18 [-]: FASTCALL1 62 R3 L2
+      19 [-]: GETIMPORT R2 6 [nil]
+      20 [-]: CALL R2 1 1  
+L 2:  21 [-]: JUMPIFNOT R2 L3
+      22 [-]: RETURN R0 0  
+L 3:  23 [-]: NEWTABLE R2 0 0
+      24 [-]: GETTABLEKS R3 R0 K8 ["mGameData"]
+      25 [-]: NAMECALL R3 R3 K9 [0x25A6E75E]
+      26 [-]: CALL R3 1 1  
+      27 [-]: NAMECALL R3 R3 K10 [0x498C31A3]
+      28 [-]: CALL R3 1 1  
+      29 [-]: LOADN R6 1   
+      30 [-]: LENGTH R4 R3 
+      31 [-]: LOADN R5 1   
+      32 [-]: FORNPREP R4 L11
+L 4:  33 [-]: LOADNIL R7   
+      34 [-]: GETTABLE R10 R3 R6
+      35 [-]: GETTABLEKS R9 R10 K11 ["mItemType"]
+      36 [-]: FASTCALL1 62 R9 L5
+      37 [-]: GETIMPORT R8 6 [nil]
+      38 [-]: CALL R8 1 1  
+L 5:  39 [-]: JUMPIF R8 L10
+      40 [-]: GETTABLE R9 R3 R6
+      41 [-]: GETTABLEKS R8 R9 K11 ["mItemType"]
+      42 [-]: NAMECALL R8 R8 K12 [0x4BCC0A75]
+      43 [-]: CALL R8 1 1  
+      44 [-]: JUMPIFNOT R8 L6
+      45 [-]: GETIMPORT R8 15 [nil]
+      46 [-]: GETTABLE R10 R3 R6
+      47 [-]: GETTABLEKS R9 R10 K16 ["mExpiryDate"]
+      48 [-]: CALL R8 1 1  
+      49 [-]: LOADN R9 0   
+      50 [-]: JUMPIFNOTLT R9 R8 L7
+      51 [-]: DUPTABLE R9 18
+      52 [-]: GETTABLE R11 R3 R6
+      53 [-]: GETTABLEKS R10 R11 K16 ["mExpiryDate"]
+      54 [-]: SETTABLEKS R10 R9 K16 ["mExpiryDate"]
+      55 [-]: LOADN R10 0  
+      56 [-]: SETTABLEKS R10 R9 K17 ["mUsesRemaining"]
+      57 [-]: MOVE R7 R9   
+      58 [-]: JUMP L7
+     
+L 6:  59 [-]: GETTABLE R9 R3 R6
+      60 [-]: GETTABLEKS R8 R9 K17 ["mUsesRemaining"]
+      61 [-]: LOADN R9 0   
+      62 [-]: JUMPIFNOTLT R9 R8 L7
+      63 [-]: DUPTABLE R8 19
+      64 [-]: GETTABLE R10 R3 R6
+      65 [-]: GETTABLEKS R9 R10 K17 ["mUsesRemaining"]
+      66 [-]: SETTABLEKS R9 R8 K17 ["mUsesRemaining"]
+      67 [-]: MOVE R7 R8   
+L 7:  68 [-]: JUMPXEQKNIL R7 L10
+      69 [-]: GETTABLE R9 R3 R6
+      70 [-]: GETTABLEKS R8 R9 K11 ["mItemType"]
+      71 [-]: NAMECALL R8 R8 K20 [0xD3A9D01F]
+      72 [-]: CALL R8 1 1  
+      73 [-]: SETTABLEKS R8 R7 K21 ["mLocalizeTag"]
+      74 [-]: GETTABLE R9 R3 R6
+      75 [-]: GETTABLEKS R8 R9 K11 ["mItemType"]
+      76 [-]: NAMECALL R8 R8 K22 [0x5BA460AC]
+      77 [-]: CALL R8 1 1  
+      78 [-]: SETTABLEKS R8 R7 K23 ["mLocalizeDescTag"]
+      79 [-]: GETTABLE R9 R3 R6
+      80 [-]: GETTABLEKS R8 R9 K11 ["mItemType"]
+      81 [-]: NAMECALL R8 R8 K24 [0x056DCF06]
+      82 [-]: CALL R8 1 1  
+      83 [-]: SETTABLEKS R8 R7 K25 ["mIconTexture"]
+      84 [-]: GETTABLE R9 R3 R6
+      85 [-]: GETTABLEKS R8 R9 K11 ["mItemType"]
+      86 [-]: SETTABLEKS R8 R7 K11 ["mItemType"]
+      87 [-]: GETTABLEKS R8 R7 K11 ["mItemType"]
+      88 [-]: NAMECALL R8 R8 K12 [0x4BCC0A75]
+      89 [-]: CALL R8 1 1  
+      90 [-]: JUMPIF R8 L9 
+      91 [-]: FASTCALL2 52 R2 R7 L8
+      92 [-]: MOVE R9 R2   
+      93 [-]: MOVE R10 R7  
+      94 [-]: GETIMPORT R8 28 [nil]
+      95 [-]: CALL R8 2 0  
+L 8:  96 [-]: JUMP L10
+    
+L 9:  97 [-]: GETTABLEKS R9 R0 K0 ["mActiveBoosters"]
+      98 [-]: FASTCALL2 52 R9 R7 L10
+      99 [-]: MOVE R10 R7  
+     100 [-]: GETIMPORT R8 28 [nil]
+     101 [-]: CALL R8 2 0  
+L10: 102 [-]: FORNLOOP R4 L4
+L11: 103 [-]: LOADN R6 1   
+     104 [-]: LENGTH R4 R2 
+     105 [-]: LOADN R5 1   
+     106 [-]: FORNPREP R4 L20
+L12: 107 [-]: GETTABLE R8 R2 R6
+     108 [-]: GETTABLEKS R7 R8 K11 ["mItemType"]
+     109 [-]: LOADB R8 0   
+     110 [-]: LOADN R11 1  
+     111 [-]: GETTABLEKS R12 R0 K0 ["mActiveBoosters"]
+     112 [-]: LENGTH R9 R12
+     113 [-]: LOADN R10 1  
+     114 [-]: FORNPREP R9 L18
+L13: 115 [-]: GETTABLEKS R14 R0 K0 ["mActiveBoosters"]
+     116 [-]: GETTABLE R13 R14 R11
+     117 [-]: GETTABLEKS R12 R13 K11 ["mItemType"]
+     118 [-]: LOADN R15 1  
+     119 [-]: GETUPVAL R16 0
+     120 [-]: LENGTH R13 R16
+     121 [-]: LOADN R14 1  
+     122 [-]: FORNPREP R13 L16
+L14: 123 [-]: GETUPVAL R20 0
+     124 [-]: GETTABLE R19 R20 R15
+     125 [-]: GETTABLEKS R18 R19 K29 ["UsageType"]
+     126 [-]: NAMECALL R16 R7 K30 [0xF2DEAF69]
+     127 [-]: CALL R16 2 1 
+     128 [-]: JUMPIFNOT R16 L15
+     129 [-]: GETUPVAL R20 0
+     130 [-]: GETTABLE R19 R20 R15
+     131 [-]: GETTABLEKS R18 R19 K31 ["TimedType"]
+     132 [-]: NAMECALL R16 R12 K30 [0xF2DEAF69]
+     133 [-]: CALL R16 2 1 
+     134 [-]: JUMPIFNOT R16 L16
+     135 [-]: LOADB R8 1   
+     136 [-]: JUMP L16
+    
+L15: 137 [-]: FORNLOOP R13 L14
+L16: 138 [-]: JUMPIFNOT R8 L17
+     139 [-]: GETTABLE R13 R2 R6
+     140 [-]: LOADB R14 1  
+     141 [-]: SETTABLEKS R14 R13 K32 ["mInactive"]
+     142 [-]: JUMP L18
+    
+L17: 143 [-]: FORNLOOP R9 L13
+L18: 144 [-]: GETTABLEKS R10 R0 K0 ["mActiveBoosters"]
+     145 [-]: GETTABLE R11 R2 R6
+     146 [-]: FASTCALL2 52 R10 R11 L19
+     147 [-]: GETIMPORT R9 28 [nil]
+     148 [-]: CALL R9 2 0  
+L19: 149 [-]: FORNLOOP R4 L12
+L20: 150 [-]: GETTABLEKS R4 R0 K8 ["mGameData"]
+     151 [-]: NAMECALL R4 R4 K33 [0x69727E0B]
+     152 [-]: CALL R4 1 1  
+     153 [-]: LOADN R7 1   
+     154 [-]: GETTABLEKS R8 R4 K34 ["mGlobalUpgrades"]
+     155 [-]: LENGTH R5 R8 
+     156 [-]: LOADN R6 1   
+     157 [-]: FORNPREP R5 L23
+L21: 158 [-]: GETTABLEKS R9 R4 K34 ["mGlobalUpgrades"]
+     159 [-]: GETTABLE R8 R9 R7
+     160 [-]: GETIMPORT R9 15 [nil]
+     161 [-]: GETTABLEKS R10 R8 K35 ["mActivation"]
+     162 [-]: CALL R9 1 1  
+     163 [-]: GETIMPORT R10 15 [nil]
+     164 [-]: GETTABLEKS R11 R8 K16 ["mExpiryDate"]
+     165 [-]: CALL R10 1 1 
+     166 [-]: LOADN R11 0  
+     167 [-]: JUMPIFNOTLT R9 R11 L22
+     168 [-]: LOADN R11 0  
+     169 [-]: JUMPIFNOTLT R11 R10 L22
+L22: 170 [-]: FORNLOOP R5 L21
+L23: 171 [-]: GETIMPORT R5 38 [nil]
+     172 [-]: JUMPIFNOT R5 L29
+     173 [-]: GETIMPORT R5 40 [nil]
+     174 [-]: GETIMPORT R6 38 [nil]
+     175 [-]: CALL R5 1 3  
+     176 [-]: FORGPREP_NEXT R5 L28
+L24: 177 [-]: LOADB R10 0  
+     178 [-]: LOADN R13 1  
+     179 [-]: GETTABLEKS R14 R0 K0 ["mActiveBoosters"]
+     180 [-]: LENGTH R11 R14
+     181 [-]: LOADN R12 1  
+     182 [-]: FORNPREP R11 L27
+L25: 183 [-]: GETTABLEKS R15 R0 K0 ["mActiveBoosters"]
+     184 [-]: GETTABLE R14 R15 R13
+     185 [-]: GETTABLEKS R15 R14 K11 ["mItemType"]
+     186 [-]: GETTABLEKS R17 R9 K11 ["mItemType"]
+     187 [-]: NAMECALL R15 R15 K30 [0xF2DEAF69]
+     188 [-]: CALL R15 2 1 
+     189 [-]: JUMPIFNOT R15 L26
+     190 [-]: GETTABLEKS R15 R9 K16 ["mExpiryDate"]
+     191 [-]: SETTABLEKS R15 R14 K16 ["mExpiryDate"]
+     192 [-]: LOADB R10 1  
+     193 [-]: JUMP L27
+    
+L26: 194 [-]: FORNLOOP R11 L25
+L27: 195 [-]: JUMPIF R10 L28
+     196 [-]: GETIMPORT R11 15 [nil]
+     197 [-]: GETTABLEKS R12 R9 K16 ["mExpiryDate"]
+     198 [-]: CALL R11 1 1 
+     199 [-]: LOADN R12 0  
+     200 [-]: JUMPIFNOTLT R12 R11 L28
+     201 [-]: DUPTABLE R12 18
+     202 [-]: GETTABLEKS R13 R9 K16 ["mExpiryDate"]
+     203 [-]: SETTABLEKS R13 R12 K16 ["mExpiryDate"]
+     204 [-]: LOADN R13 0  
+     205 [-]: SETTABLEKS R13 R12 K17 ["mUsesRemaining"]
+     206 [-]: GETTABLEKS R13 R9 K11 ["mItemType"]
+     207 [-]: NAMECALL R13 R13 K20 [0xD3A9D01F]
+     208 [-]: CALL R13 1 1 
+     209 [-]: SETTABLEKS R13 R12 K21 ["mLocalizeTag"]
+     210 [-]: GETTABLEKS R13 R9 K11 ["mItemType"]
+     211 [-]: NAMECALL R13 R13 K22 [0x5BA460AC]
+     212 [-]: CALL R13 1 1 
+     213 [-]: SETTABLEKS R13 R12 K23 ["mLocalizeDescTag"]
+     214 [-]: GETTABLEKS R13 R9 K11 ["mItemType"]
+     215 [-]: NAMECALL R13 R13 K24 [0x056DCF06]
+     216 [-]: CALL R13 1 1 
+     217 [-]: SETTABLEKS R13 R12 K25 ["mIconTexture"]
+     218 [-]: GETTABLEKS R13 R9 K11 ["mItemType"]
+     219 [-]: SETTABLEKS R13 R12 K11 ["mItemType"]
+     220 [-]: GETTABLEKS R14 R0 K0 ["mActiveBoosters"]
+     221 [-]: FASTCALL2 52 R14 R12 L28
+     222 [-]: MOVE R15 R12 
+     223 [-]: GETIMPORT R13 28 [nil]
+     224 [-]: CALL R13 2 0 
+L28: 225 [-]: FORGLOOP R5 L24 2
+L29: 226 [-]: LOADN R7 1   
+     227 [-]: LOADN R5 4   
+     228 [-]: LOADN R6 1   
+     229 [-]: FORNPREP R5 L33
+L30: 230 [-]: GETTABLEKS R9 R0 K0 ["mActiveBoosters"]
+     231 [-]: LENGTH R8 R9 
+     232 [-]: JUMPIFNOTLE R7 R8 L32
+     233 [-]: GETTABLEKS R10 R0 K0 ["mActiveBoosters"]
+     234 [-]: GETTABLE R9 R10 R7
+     235 [-]: GETTABLEKS R8 R9 K16 ["mExpiryDate"]
+     236 [-]: JUMPXEQKNIL R8 L32
+     237 [-]: GETIMPORT R8 15 [nil]
+     238 [-]: GETTABLEKS R11 R0 K0 ["mActiveBoosters"]
+     239 [-]: GETTABLE R10 R11 R7
+     240 [-]: GETTABLEKS R9 R10 K16 ["mExpiryDate"]
+     241 [-]: CALL R8 1 1  
+     242 [-]: LOADN R9 0   
+     243 [-]: JUMPIFNOTLT R9 R8 L32
+     244 [-]: GETTABLEKS R9 R0 K1 ["mRefreshDelay"]
+     245 [-]: JUMPXEQKNIL R9 L31
+     246 [-]: GETTABLEKS R9 R0 K1 ["mRefreshDelay"]
+     247 [-]: JUMPIFNOTLT R8 R9 L32
+L31: 248 [-]: SETTABLEKS R8 R0 K1 ["mRefreshDelay"]
+L32: 249 [-]: FORNLOOP R5 L30
+L33: 250 [-]: LOADB R5 1   
+     251 [-]: SETTABLEKS R5 R0 K41 ["mDirty"]
+     252 [-]: RETURN R0 0  
 
 
-; Function #3:
-;
 ; Name:            
 ; Defined at line: 159
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  3
+; Max Stack Size:  4
 
-  1 [-]: GETTABLE  R1 R0 K0     ; R1 := R0["mRefreshDelay"]
-  2 [-]: EQ        0 R1 K1      ; if R1 ~= nil then PC := 5
-  3 [-]: JMP       5            ; PC := 5
-  4 [-]: RETURN    R0 1         ; return 
-  5 [-]: GETTABLE  R1 R0 K0     ; R1 := R0["mRefreshDelay"]
-  6 [-]: GETGLOBAL R2 K2        ; R2 := 0xb693b6c1
-  7 [-]: CALL      R2 1 2       ; R2 := R2()
-  8 [-]: SUB       R1 R1 R2     ; R1 := R1 - R2
-  9 [-]: SETTABLE  R0 K0 R1     ; R0["mRefreshDelay"] := R1
- 10 [-]: GETTABLE  R1 R0 K0     ; R1 := R0["mRefreshDelay"]
- 11 [-]: LT        0 R1 K3      ; if R1 >= 0.000000 then PC := 15
- 12 [-]: JMP       15           ; PC := 15
- 13 [-]: SELF      R1 R0 K4     ; R2 := R0; R1 := R0[0x431e8984]
- 14 [-]: CALL      R1 2 1       ; R1(R2)
- 15 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETTABLEKS R1 R0 K0 ["mRefreshDelay"]
+       1 [-]: JUMPXEQKNIL R1 L0 NOT
+       2 [-]: RETURN R0 0  
+L 0:   3 [-]: GETTABLEKS R2 R0 K0 ["mRefreshDelay"]
+       4 [-]: GETIMPORT R3 2 [nil]
+       5 [-]: CALL R3 0 1  
+       6 [-]: SUB R1 R2 R3 
+       7 [-]: SETTABLEKS R1 R0 K0 ["mRefreshDelay"]
+       8 [-]: GETTABLEKS R1 R0 K0 ["mRefreshDelay"]
+       9 [-]: LOADN R2 0   
+      10 [-]: JUMPIFNOTLT R1 R2 L1
+      11 [-]: NAMECALL R1 R0 K3 [0x431E8984]
+      12 [-]: CALL R1 1 0  
+L 1:  13 [-]: RETURN R0 0  
 
 
-; Function #4:
-;
 ; Name:            
 ; Defined at line: 172
 ; #Upvalues:       0
@@ -409,27 +388,27 @@
 ; Is_vararg:       0
 ; Max Stack Size:  4
 
-  1 [-]: GETGLOBAL R1 K0        ; R1 := 0x7b998233
-  2 [-]: GETTABLE  R2 R0 K1     ; R2 := R0["mGameData"]
-  3 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  4 [-]: TEST      R1 0         ; if not R1 then PC := 7
-  5 [-]: JMP       7            ; PC := 7
-  6 [-]: RETURN    R0 1         ; return 
-  7 [-]: GETTABLE  R1 R0 K1     ; R1 := R0["mGameData"]
-  8 [-]: SELF      R1 R1 K2     ; R2 := R1; R1 := R1[0x3121c0fe]
-  9 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 10 [-]: TEST      R1 0         ; if not R1 then PC := 17
- 11 [-]: JMP       17           ; PC := 17
- 12 [-]: SELF      R1 R0 K3     ; R2 := R0; R1 := R0[0x431e8984]
- 13 [-]: CALL      R1 2 1       ; R1(R2)
- 14 [-]: GETTABLE  R1 R0 K1     ; R1 := R0["mGameData"]
- 15 [-]: SELF      R1 R1 K4     ; R2 := R1; R1 := R1[0xd860a7bb]
- 16 [-]: CALL      R1 2 1       ; R1(R2)
- 17 [-]: GETTABLE  R1 R0 K5     ; R1 := R0["mTimerMgr"]
- 18 [-]: SELF      R1 R1 K6     ; R2 := R1; R1 := R1[0xfaa69527]
- 19 [-]: GETGLOBAL R3 K7        ; R3 := 0xb693b6c1
- 20 [-]: CALL      R3 1 0       ; R3,... := R3()
- 21 [-]: CALL      R1 0 1       ; R1(R2,...)
- 22 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETTABLEKS R2 R0 K0 ["mGameData"]
+       1 [-]: FASTCALL1 62 R2 L0
+       2 [-]: GETIMPORT R1 2 [nil]
+       3 [-]: CALL R1 1 1  
+L 0:   4 [-]: JUMPIFNOT R1 L1
+       5 [-]: RETURN R0 0  
+L 1:   6 [-]: GETTABLEKS R1 R0 K0 ["mGameData"]
+       7 [-]: NAMECALL R1 R1 K3 [0x3121C0FE]
+       8 [-]: CALL R1 1 1  
+       9 [-]: JUMPIFNOT R1 L2
+      10 [-]: NAMECALL R1 R0 K4 [0x431E8984]
+      11 [-]: CALL R1 1 0  
+      12 [-]: GETTABLEKS R1 R0 K0 ["mGameData"]
+      13 [-]: NAMECALL R1 R1 K5 [0xD860A7BB]
+      14 [-]: CALL R1 1 0  
+L 2:  15 [-]: GETTABLEKS R1 R0 K6 ["mTimerMgr"]
+      16 [-]: GETIMPORT R3 8 [nil]
+      17 [-]: CALL R3 0 -1 
+      18 [-]: NAMECALL R1 R1 K9 [0xFAA69527]
+      19 [-]: CALL R1 -1 0 
+      20 [-]: RETURN R0 0  
+
 
 

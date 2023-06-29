@@ -1,155 +1,141 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
+; Is_vararg:       1
 ; Max Stack Size:  9
 
-  1 [-]: GETGLOBAL R0 K0        ; R0 := 0x0469f296
-  2 [-]: LOADK     R1 K1        ; R1 := "PurgatoryDifficulty"
-  3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: GETGLOBAL R1 K0        ; R1 := 0x0469f296
-  5 [-]: LOADK     R2 K2        ; R2 := "PurgatoryComplete"
-  6 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  7 [-]: GETGLOBAL R2 K0        ; R2 := 0x0469f296
-  8 [-]: LOADK     R3 K3        ; R3 := "PurgatoryRewardTier"
-  9 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 10 [-]: GETGLOBAL R3 K0        ; R3 := 0x0469f296
- 11 [-]: LOADK     R4 K4        ; R4 := "LawyerTreasurerSpawn"
- 12 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 13 [-]: CLOSURE   R4 0         ; R4 := closure(Function #1)
- 14 [-]: CLOSURE   R5 1         ; R5 := closure(Function #2)
- 15 [-]: CLOSURE   R6 2         ; R6 := closure(Function #3)
- 16 [-]: CLOSURE   R7 3         ; R7 := closure(Function #4)
- 17 [-]: MOVE      R0 R6        ; R0 := R6
- 18 [-]: MOVE      R0 R4        ; R0 := R4
- 19 [-]: MOVE      R0 R3        ; R0 := R3
- 20 [-]: CLOSURE   R8 4         ; R8 := closure(Function #5)
- 21 [-]: MOVE      R0 R3        ; R0 := R3
- 22 [-]: MOVE      R0 R7        ; R0 := R7
- 23 [-]: MOVE      R0 R0        ; R0 := R0
- 24 [-]: MOVE      R0 R1        ; R0 := R1
- 25 [-]: MOVE      R0 R2        ; R0 := R2
- 26 [-]: SETGLOBAL R8 K5        ; LawyerTreasurerSpawner := R8
- 27 [-]: RETURN    R0 1         ; return 
+            1 [-]: GETIMPORT R0 1 [nil]
+       2 [-]: LOADK R1 K2 ["PurgatoryDifficulty"]
+       3 [-]: CALL R0 1 1  
+       4 [-]: GETIMPORT R1 1 [nil]
+       5 [-]: LOADK R2 K3 ["PurgatoryComplete"]
+       6 [-]: CALL R1 1 1  
+       7 [-]: GETIMPORT R2 1 [nil]
+       8 [-]: LOADK R3 K4 ["PurgatoryRewardTier"]
+       9 [-]: CALL R2 1 1  
+      10 [-]: GETIMPORT R3 1 [nil]
+      11 [-]: LOADK R4 K5 ["LawyerTreasurerSpawn"]
+      12 [-]: CALL R3 1 1  
+      13 [-]: DUPCLOSURE R4 K6 []
+      14 [-]: DUPCLOSURE R5 K7 []
+      15 [-]: DUPCLOSURE R6 K8 []
+      16 [-]: DUPCLOSURE R7 K9 []
+      17 [-]: MOVE R0 R6   
+      18 [-]: MOVE R0 R4   
+      19 [-]: MOVE R0 R3   
+      20 [-]: DUPCLOSURE R8 K10 []
+      21 [-]: MOVE R0 R3   
+      22 [-]: MOVE R0 R7   
+      23 [-]: MOVE R0 R0   
+      24 [-]: MOVE R0 R1   
+      25 [-]: MOVE R0 R2   
+      26 [-]: SETGLOBAL R8 K11 ["LawyerTreasurerSpawner"]
+      27 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 22
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  11
+; Max Stack Size:  10
 
-  1 [-]: GETGLOBAL R1 K0        ; R1 := 0x7b998233
-  2 [-]: MOVE      R2 R0        ; R2 := R0
-  3 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  4 [-]: TEST      R1 0         ; if not R1 then PC := 7
-  5 [-]: JMP       7            ; PC := 7
-  6 [-]: RETURN    R0 1         ; return 
-  7 [-]: GETGLOBAL R1 K1        ; R1 := 0x89326c93
-  8 [-]: SELF      R1 R1 K2     ; R2 := R1; R1 := R1[0x7d108ddb]
-  9 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 10 [-]: GETGLOBAL R2 K0        ; R2 := 0x7b998233
- 11 [-]: MOVE      R3 R1        ; R3 := R1
- 12 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 13 [-]: TEST      R2 1         ; if R2 then PC := 32
- 14 [-]: JMP       32           ; PC := 32
- 15 [-]: CONST     R2 1         ; R2 := 1.000000
- 16 [-]: LEN       R3 R1        ; R3 := # R1
- 17 [-]: CONST     R4 1         ; R4 := 1.000000
- 18 [-]: FORPREP   R2 31        ; R2 -= R4; PC := 31
- 19 [-]: GETTABLE  R6 R1 R5     ; R6 := R1[R5]
- 20 [-]: SELF      R6 R6 K3     ; R7 := R6; R6 := R6[0xbb610e5b]
- 21 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 22 [-]: GETGLOBAL R7 K0        ; R7 := 0x7b998233
- 23 [-]: MOVE      R8 R6        ; R8 := R6
- 24 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 25 [-]: TEST      R7 1         ; if R7 then PC := 31
- 26 [-]: JMP       31           ; PC := 31
- 27 [-]: SELF      R7 R6 K4     ; R8 := R6; R7 := R6[0x511d26b8]
- 28 [-]: MOVE      R9 R0        ; R9 := R0
- 29 [-]: LOADKB    R10 1 0      ; R10 := true
- 30 [-]: CALL      R7 4 1       ; R7(R8,R9,R10)
- 31 [-]: FORLOOP   R2 19        ; R2 += R4; if R2 <= R3 then begin PC := 19; R5 := R2 end
- 32 [-]: RETURN    R0 1         ; return 
+       0 [-]: FASTCALL1 62 R0 L0
+       1 [-]: MOVE R2 R0   
+       2 [-]: GETIMPORT R1 1 [nil]
+       3 [-]: CALL R1 1 1  
+L 0:   4 [-]: JUMPIFNOT R1 L1
+       5 [-]: RETURN R0 0  
+L 1:   6 [-]: GETIMPORT R1 3 [nil]
+       7 [-]: NAMECALL R1 R1 K4 [0x7D108DDB]
+       8 [-]: CALL R1 1 1  
+       9 [-]: FASTCALL1 62 R1 L2
+      10 [-]: MOVE R3 R1   
+      11 [-]: GETIMPORT R2 1 [nil]
+      12 [-]: CALL R2 1 1  
+L 2:  13 [-]: JUMPIF R2 L6 
+      14 [-]: LOADN R4 1   
+      15 [-]: LENGTH R2 R1 
+      16 [-]: LOADN R3 1   
+      17 [-]: FORNPREP R2 L6
+L 3:  18 [-]: GETTABLE R5 R1 R4
+      19 [-]: NAMECALL R5 R5 K5 [0xBB610E5B]
+      20 [-]: CALL R5 1 1  
+      21 [-]: FASTCALL1 62 R5 L4
+      22 [-]: MOVE R7 R5   
+      23 [-]: GETIMPORT R6 1 [nil]
+      24 [-]: CALL R6 1 1  
+L 4:  25 [-]: JUMPIF R6 L5 
+      26 [-]: MOVE R8 R0   
+      27 [-]: LOADB R9 1   
+      28 [-]: NAMECALL R6 R5 K6 [0x511D26B8]
+      29 [-]: CALL R6 3 0  
+L 5:  30 [-]: FORNLOOP R2 L3
+L 6:  31 [-]: RETURN R0 0  
 
 
-; Function #2:
-;
 ; Name:            
 ; Defined at line: 37
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
-; Max Stack Size:  12
+; Max Stack Size:  8
 
-  1 [-]: GETGLOBAL R0 K0        ; R0 := 0x89326c93
-  2 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0x7d108ddb]
-  3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: CONST     R1 1         ; R1 := 1.000000
-  5 [-]: LEN       R2 R0        ; R2 := # R0
-  6 [-]: CONST     R3 1         ; R3 := 1.000000
-  7 [-]: FORPREP   R1 12        ; R1 -= R3; PC := 12
-  8 [-]: GETTABLE  R5 R0 R4     ; R5 := R0[R4]
-  9 [-]: SELF      R5 R5 K2     ; R6 := R5; R5 := R5[0xbfef315d]
- 10 [-]: LOADK     R7 K3        ; R7 := 1.600000
- 11 [-]: CALL      R5 3 1       ; R5(R6,R7)
- 12 [-]: FORLOOP   R1 8         ; R1 += R3; if R1 <= R2 then begin PC := 8; R4 := R1 end
- 13 [-]: GETGLOBAL R5 K0        ; R5 := 0x89326c93
- 14 [-]: SELF      R5 R5 K4     ; R6 := R5; R5 := R5[0xa128259d]
- 15 [-]: GETGLOBAL R7 K5        ; R7 := 0xec4f990f
- 16 [-]: LOADK     R8 K6        ; R8 := 0.200000
- 17 [-]: CONST     R9 2         ; R9 := 2.000000
- 18 [-]: CONST     R10 2        ; R10 := 2.000000
- 19 [-]: LOADKB    R11 1 0      ; R11 := true
- 20 [-]: CALL      R5 7 1       ; R5(R6,R7,R8,R9,R10,R11)
- 21 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: NAMECALL R0 R0 K2 [0x7D108DDB]
+       2 [-]: CALL R0 1 1  
+       3 [-]: LOADN R3 1   
+       4 [-]: LENGTH R1 R0 
+       5 [-]: LOADN R2 1   
+       6 [-]: FORNPREP R1 L1
+L 0:   7 [-]: GETTABLE R4 R0 R3
+       8 [-]: LOADK R6 K3 [1.6000000000000001]
+       9 [-]: NAMECALL R4 R4 K4 [0xBFEF315D]
+      10 [-]: CALL R4 2 0  
+      11 [-]: FORNLOOP R1 L0
+L 1:  12 [-]: GETIMPORT R1 1 [nil]
+      13 [-]: GETIMPORT R3 6 [nil]
+      14 [-]: LOADK R4 K7 [0.20000000000000001]
+      15 [-]: LOADN R5 2   
+      16 [-]: LOADN R6 2   
+      17 [-]: LOADB R7 1   
+      18 [-]: NAMECALL R1 R1 K8 [0xA128259D]
+      19 [-]: CALL R1 6 0  
+      20 [-]: RETURN R0 0  
 
 
-; Function #3:
-;
 ; Name:            
 ; Defined at line: 45
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
-; Max Stack Size:  10
+; Max Stack Size:  9
 
-  1 [-]: GETGLOBAL R0 K0        ; R0 := 0x89326c93
-  2 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0[0x7d108ddb]
-  3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: CONST     R1 1         ; R1 := 1.000000
-  5 [-]: LEN       R2 R0        ; R2 := # R0
-  6 [-]: CONST     R3 1         ; R3 := 1.000000
-  7 [-]: FORPREP   R1 23        ; R1 -= R3; PC := 23
-  8 [-]: GETTABLE  R5 R0 R4     ; R5 := R0[R4]
-  9 [-]: SELF      R5 R5 K2     ; R6 := R5; R5 := R5[0x62c81b76]
- 10 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 11 [-]: GETTABLE  R6 R5 K3     ; R6 := R5["mHasActiveNemesis"]
- 12 [-]: SELF      R7 R5 K4     ; R8 := R5; R7 := R5[0x9094066e]
- 13 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 14 [-]: GETTABLE  R8 R5 K5     ; R8 := R5["mWraithQuestCompleted"]
- 15 [-]: TEST      R6 1         ; if R6 then PC := 23
- 16 [-]: JMP       23           ; PC := 23
- 17 [-]: TEST      R7 0         ; if not R7 then PC := 23
- 18 [-]: JMP       23           ; PC := 23
- 19 [-]: TEST      R8 0         ; if not R8 then PC := 23
- 20 [-]: JMP       23           ; PC := 23
- 21 [-]: LOADKB    R9 1 0       ; R9 := true
- 22 [-]: RETURN    R9 2         ; return R9
- 23 [-]: FORLOOP   R1 8         ; R1 += R3; if R1 <= R2 then begin PC := 8; R4 := R1 end
- 24 [-]: LOADKB    R9 0 0       ; R9 := false
- 25 [-]: RETURN    R9 2         ; return R9
- 26 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: NAMECALL R0 R0 K2 [0x7D108DDB]
+       2 [-]: CALL R0 1 1  
+       3 [-]: LOADN R3 1   
+       4 [-]: LENGTH R1 R0 
+       5 [-]: LOADN R2 1   
+       6 [-]: FORNPREP R1 L2
+L 0:   7 [-]: GETTABLE R4 R0 R3
+       8 [-]: NAMECALL R4 R4 K3 [0x62C81B76]
+       9 [-]: CALL R4 1 1  
+      10 [-]: GETTABLEKS R5 R4 K4 ["mHasActiveNemesis"]
+      11 [-]: NAMECALL R6 R4 K5 [0x9094066E]
+      12 [-]: CALL R6 1 1  
+      13 [-]: GETTABLEKS R7 R4 K6 ["mWraithQuestCompleted"]
+      14 [-]: JUMPIF R5 L1 
+      15 [-]: JUMPIFNOT R6 L1
+      16 [-]: JUMPIFNOT R7 L1
+      17 [-]: LOADB R8 1   
+      18 [-]: RETURN R8 1  
+L 1:  19 [-]: FORNLOOP R1 L0
+L 2:  20 [-]: LOADB R1 0   
+      21 [-]: RETURN R1 1  
 
 
-; Function #4:
-;
 ; Name:            
 ; Defined at line: 60
 ; #Upvalues:       3
@@ -157,327 +143,313 @@
 ; Is_vararg:       0
 ; Max Stack Size:  26
 
-  1 [-]: GETUPVAL  R2 U0        ; R2 := U0
-  2 [-]: CALL      R2 1 2       ; R2 := R2()
-  3 [-]: TEST      R2 1         ; if R2 then PC := 9
-  4 [-]: JMP       9            ; PC := 9
-  5 [-]: GETGLOBAL R2 K0        ; R2 := 0x3d106989
-  6 [-]: LOADK     R3 K1        ; R3 := "bailing on lawyer treasurer spawn because no one is eligible"
-  7 [-]: CALL      R2 2 1       ; R2(R3)
-  8 [-]: RETURN    R0 1         ; return 
-  9 [-]: GETGLOBAL R2 K0        ; R2 := 0x3d106989
- 10 [-]: LOADK     R3 K2        ; R3 := "starting lawyer treasurer spawn..."
- 11 [-]: CALL      R2 2 1       ; R2(R3)
- 12 [-]: GETGLOBAL R2 K3        ; R2 := 0x89326c93
- 13 [-]: SELF      R2 R2 K4     ; R3 := R2; R2 := R2[0x29ef273d]
- 14 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 15 [-]: SELF      R2 R2 K5     ; R3 := R2; R2 := R2[0x66905cb0]
- 16 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 17 [-]: GETGLOBAL R3 K6        ; R3 := 0x55730e1a
- 18 [-]: GETGLOBAL R4 K7        ; R4 := 0xdd5435ff
- 19 [-]: GETGLOBAL R5 K8        ; R5 := 0x4f265429
- 20 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
- 21 [-]: TEST      R1 0         ; if not R1 then PC := 24
- 22 [-]: JMP       24           ; PC := 24
- 23 [-]: CONST     R3 3         ; R3 := 3.000000
- 24 [-]: GETGLOBAL R4 K9        ; R4 := 0xcbd666e1
- 25 [-]: MOVE      R5 R3        ; R5 := R3
- 26 [-]: CALL      R4 2 1       ; R4(R5)
- 27 [-]: CONST     R4 0         ; R4 := 0.000000
- 28 [-]: CONST     R5 0         ; R5 := 0.000000
- 29 [-]: SELF      R6 R2 K10    ; R7 := R2; R6 := R2[0x6968ea36]
- 30 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 31 [-]: SELF      R7 R2 K11    ; R8 := R2; R7 := R2[0xcea36880]
- 32 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 33 [-]: SELF      R8 R0 K12    ; R9 := R0; R8 := R0[0x6189cb44]
- 34 [-]: MOVE      R10 R7       ; R10 := R7
- 35 [-]: MOVE      R11 R6       ; R11 := R6
- 36 [-]: CALL      R8 4 2       ; R8 := R8(R9,R10,R11)
- 37 [-]: LOADKB    R9 0 0       ; R9 := false
- 38 [-]: GETGLOBAL R10 K6       ; R10 := 0x55730e1a
- 39 [-]: CONST     R11 1        ; R11 := 1.000000
- 40 [-]: LEN       R12 R8       ; R12 := # R8
- 41 [-]: CALL      R10 3 2      ; R10 := R10(R11,R12)
- 42 [-]: GETTABLE  R10 R8 R10   ; R10 := R8[R10]
- 43 [-]: GETGLOBAL R11 K13      ; R11 := 0x21a5b9ad
- 44 [-]: LT        0 R5 R11     ; if R5 >= R11 then PC := 177
- 45 [-]: JMP       177          ; PC := 177
- 46 [-]: GETGLOBAL R11 K0       ; R11 := 0x3d106989
- 47 [-]: LOADK     R12 K14      ; R12 := "lawyer treasurer attempt "
- 48 [-]: MOVE      R13 R5       ; R13 := R5
- 49 [-]: CONCAT    R12 R12 R13  ; R12 := R12 .. R13
- 50 [-]: CALL      R11 2 1      ; R11(R12)
- 51 [-]: GETGLOBAL R11 K3       ; R11 := 0x89326c93
- 52 [-]: SELF      R11 R11 K15  ; R12 := R11; R11 := R11[0xe3a0bbca]
- 53 [-]: CALL      R11 2 2      ; R11 := R11(R12)
- 54 [-]: GETGLOBAL R12 K16      ; R12 := 0x7b998233
- 55 [-]: MOVE      R13 R11      ; R13 := R11
- 56 [-]: CALL      R12 2 2      ; R12 := R12(R13)
- 57 [-]: TEST      R12 1        ; if R12 then PC := 63
- 58 [-]: JMP       63           ; PC := 63
- 59 [-]: SELF      R12 R11 K17  ; R13 := R11; R12 := R11[0x659d451f]
- 60 [-]: GETGLOBAL R14 K18      ; R14 := 0x5a66f097
- 61 [-]: LOADKB    R15 0 0      ; R15 := false
- 62 [-]: CALL      R12 4 1      ; R12(R13,R14,R15)
- 63 [-]: ADD       R5 R5 K19    ; R5 := R5 + 1.000000
- 64 [-]: GETGLOBAL R12 K9       ; R12 := 0xcbd666e1
- 65 [-]: CONST     R13 3        ; R13 := 3.000000
- 66 [-]: CALL      R12 2 1      ; R12(R13)
- 67 [-]: GETGLOBAL R12 K16      ; R12 := 0x7b998233
- 68 [-]: GETGLOBAL R13 K20      ; R13 := 0xc516eb74
- 69 [-]: CALL      R12 2 2      ; R12 := R12(R13)
- 70 [-]: TEST      R12 1        ; if R12 then PC := 75
- 71 [-]: JMP       75           ; PC := 75
- 72 [-]: GETUPVAL  R12 U1       ; R12 := U1
- 73 [-]: GETGLOBAL R13 K20      ; R13 := 0xc516eb74
- 74 [-]: CALL      R12 2 1      ; R12(R13)
- 75 [-]: SELF      R12 R2 K21   ; R13 := R2; R12 := R2[0xc9eaf3c4]
- 76 [-]: CALL      R12 2 2      ; R12 := R12(R13)
- 77 [-]: LEN       R13 R12      ; R13 := # R12
- 78 [-]: GETGLOBAL R14 K22      ; R14 := 0x1ce39d5a
- 79 [-]: SUB       R14 R14 K19  ; R14 := R14 - 1.000000
- 80 [-]: MUL       R14 R14 K23  ; R14 := R14 * 2.000000
- 81 [-]: ADD       R14 R14 K19  ; R14 := R14 + 1.000000
- 82 [-]: GETGLOBAL R15 K0       ; R15 := 0x3d106989
- 83 [-]: LOADK     R16 K24      ; R16 := "found  "
- 84 [-]: MOVE      R17 R13      ; R17 := R13
- 85 [-]: LOADK     R18 K25      ; R18 := " choke points, "
- 86 [-]: MOVE      R19 R14      ; R19 := R14
- 87 [-]: LOADK     R20 K26      ; R20 := " idx"
- 88 [-]: CONCAT    R16 R16 R20  ; R16 := R16 .. R17 .. R18 .. R19 .. R20
- 89 [-]: CALL      R15 2 1      ; R15(R16)
- 90 [-]: LT        0 R14 R13    ; if R14 >= R13 then PC := 43
- 91 [-]: JMP       43           ; PC := 43
- 92 [-]: GETTABLE  R15 R12 R14  ; R15 := R12[R14]
- 93 [-]: ADD       R16 R14 K19  ; R16 := R14 + 1.000000
- 94 [-]: GETTABLE  R16 R12 R16  ; R16 := R12[R16]
- 95 [-]: SELF      R17 R2 K27   ; R18 := R2; R17 := R2[0x018db83a]
- 96 [-]: MOVE      R19 R10      ; R19 := R10
- 97 [-]: MOVE      R20 R15      ; R20 := R15
- 98 [-]: MOVE      R21 R16      ; R21 := R16
- 99 [-]: CONST     R22 2        ; R22 := 2.000000
-100 [-]: GETGLOBAL R23 K28      ; R23 := 0x0469f296
-101 [-]: LOADK     R24 K29      ; R24 := "RandomTeam"
-102 [-]: CALL      R23 2 2      ; R23 := R23(R24)
-103 [-]: SELF      R24 R2 K10   ; R25 := R2; R24 := R2[0x6968ea36]
-104 [-]: CALL      R24 2 0      ; R24,... := R24(R25)
-105 [-]: CALL      R17 0 2      ; R17 := R17(R18,...)
-106 [-]: GETGLOBAL R18 K0       ; R18 := 0x3d106989
-107 [-]: LOADK     R19 K30      ; R19 := "spawning in choke point..."
-108 [-]: CALL      R18 2 1      ; R18(R19)
-109 [-]: GETGLOBAL R18 K16      ; R18 := 0x7b998233
-110 [-]: MOVE      R19 R17      ; R19 := R17
-111 [-]: CALL      R18 2 2      ; R18 := R18(R19)
-112 [-]: TEST      R18 1        ; if R18 then PC := 154
-113 [-]: JMP       154          ; PC := 154
-114 [-]: GETGLOBAL R18 K0       ; R18 := 0x3d106989
-115 [-]: LOADK     R19 K31      ; R19 := "spawn successful."
-116 [-]: CALL      R18 2 1      ; R18(R19)
-117 [-]: GETGLOBAL R18 K32      ; R18 := 0xbe190284
-118 [-]: SELF      R18 R18 K33  ; R19 := R18; R18 := R18[0x751f061d]
-119 [-]: GETUPVAL  R20 U2       ; R20 := U2
-120 [-]: CONST     R21 2        ; R21 := 2.000000
-121 [-]: CALL      R18 4 1      ; R18(R19,R20,R21)
-122 [-]: SELF      R18 R17 K34  ; R19 := R17; R18 := R17[0x9e21e394]
-123 [-]: CALL      R18 2 1      ; R18(R19)
-124 [-]: GETGLOBAL R18 K3       ; R18 := 0x89326c93
-125 [-]: SELF      R18 R18 K15  ; R19 := R18; R18 := R18[0xe3a0bbca]
-126 [-]: CALL      R18 2 2      ; R18 := R18(R19)
-127 [-]: MOVE      R11 R18      ; R11 := R18
-128 [-]: GETGLOBAL R18 K16      ; R18 := 0x7b998233
-129 [-]: MOVE      R19 R11      ; R19 := R11
-130 [-]: CALL      R18 2 2      ; R18 := R18(R19)
-131 [-]: TEST      R18 1        ; if R18 then PC := 137
-132 [-]: JMP       137          ; PC := 137
-133 [-]: SELF      R18 R11 K17  ; R19 := R11; R18 := R11[0x659d451f]
-134 [-]: GETGLOBAL R20 K35      ; R20 := 0x5c152bfc
-135 [-]: LOADKB    R21 1 0      ; R21 := true
-136 [-]: CALL      R18 4 1      ; R18(R19,R20,R21)
-137 [-]: GETGLOBAL R18 K16      ; R18 := 0x7b998233
-138 [-]: GETGLOBAL R19 K36      ; R19 := 0x86279ab4
-139 [-]: CALL      R18 2 2      ; R18 := R18(R19)
-140 [-]: TEST      R18 1        ; if R18 then PC := 148
-141 [-]: JMP       148          ; PC := 148
-142 [-]: GETGLOBAL R18 K9       ; R18 := 0xcbd666e1
-143 [-]: CONST     R19 1        ; R19 := 1.000000
-144 [-]: CALL      R18 2 1      ; R18(R19)
-145 [-]: GETUPVAL  R18 U1       ; R18 := U1
-146 [-]: GETGLOBAL R19 K36      ; R19 := 0x86279ab4
-147 [-]: CALL      R18 2 1      ; R18(R19)
-148 [-]: SELF      R18 R2 K37   ; R19 := R2; R18 := R2[0xf2d6020e]
-149 [-]: CONST     R20 1        ; R20 := 1.000000
-150 [-]: CALL      R18 3 1      ; R18(R19,R20)
-151 [-]: ADD       R4 R4 K19    ; R4 := R4 + 1.000000
-152 [-]: LOADKB    R9 1 0       ; R9 := true
-153 [-]: JMP       177          ; PC := 177
-154 [-]: GETGLOBAL R18 K0       ; R18 := 0x3d106989
-155 [-]: LOADK     R19 K38      ; R19 := "lawyer treasurer failed to spawn"
-156 [-]: CALL      R18 2 1      ; R18(R19)
-157 [-]: GETGLOBAL R18 K3       ; R18 := 0x89326c93
-158 [-]: SELF      R18 R18 K15  ; R19 := R18; R18 := R18[0xe3a0bbca]
-159 [-]: CALL      R18 2 2      ; R18 := R18(R19)
-160 [-]: MOVE      R11 R18      ; R11 := R18
-161 [-]: GETGLOBAL R18 K16      ; R18 := 0x7b998233
-162 [-]: MOVE      R19 R11      ; R19 := R11
-163 [-]: CALL      R18 2 2      ; R18 := R18(R19)
-164 [-]: TEST      R18 1        ; if R18 then PC := 170
-165 [-]: JMP       170          ; PC := 170
-166 [-]: SELF      R18 R11 K17  ; R19 := R11; R18 := R11[0x659d451f]
-167 [-]: GETGLOBAL R20 K39      ; R20 := 0x17100174
-168 [-]: LOADKB    R21 1 0      ; R21 := true
-169 [-]: CALL      R18 4 1      ; R18(R19,R20,R21)
-170 [-]: GETGLOBAL R18 K9       ; R18 := 0xcbd666e1
-171 [-]: GETGLOBAL R19 K6       ; R19 := 0x55730e1a
-172 [-]: GETGLOBAL R20 K7       ; R20 := 0xdd5435ff
-173 [-]: GETGLOBAL R21 K8       ; R21 := 0x4f265429
-174 [-]: CALL      R19 3 0      ; R19,... := R19(R20,R21)
-175 [-]: CALL      R18 0 1      ; R18(R19,...)
-176 [-]: JMP       43           ; PC := 43
-177 [-]: GETGLOBAL R18 K0       ; R18 := 0x3d106989
-178 [-]: LOADK     R19 K40      ; R19 := "lawyer treasurer: out of attempts"
-179 [-]: CALL      R18 2 1      ; R18(R19)
-180 [-]: TEST      R9 1         ; if R9 then PC := 204
-181 [-]: JMP       204          ; PC := 204
-182 [-]: GETGLOBAL R18 K0       ; R18 := 0x3d106989
-183 [-]: LOADK     R19 K41      ; R19 := "lawyer treasurer: last resort spawn"
-184 [-]: CALL      R18 2 1      ; R18(R19)
-185 [-]: SELF      R18 R2 K42   ; R19 := R2; R18 := R2[0x234ba63b]
-186 [-]: GETGLOBAL R20 K43      ; R20 := EMPTY_SYMBOL
-187 [-]: CALL      R18 3 2      ; R18 := R18(R19,R20)
-188 [-]: GETGLOBAL R19 K16      ; R19 := 0x7b998233
-189 [-]: MOVE      R20 R18      ; R20 := R18
-190 [-]: CALL      R19 2 2      ; R19 := R19(R20)
-191 [-]: TEST      R19 1        ; if R19 then PC := 201
-192 [-]: JMP       201          ; PC := 201
-193 [-]: SELF      R19 R2 K44   ; R20 := R2; R19 := R2[0x33fc842f]
-194 [-]: MOVE      R21 R10      ; R21 := R10
-195 [-]: MOVE      R22 R18      ; R22 := R18
-196 [-]: GETGLOBAL R23 K28      ; R23 := 0x0469f296
-197 [-]: LOADK     R24 K29      ; R24 := "RandomTeam"
-198 [-]: CALL      R23 2 0      ; R23,... := R23(R24)
-199 [-]: CALL      R19 0 2      ; R19 := R19(R20,...)
-200 [-]: JMP       204          ; PC := 204
-201 [-]: GETGLOBAL R20 K0       ; R20 := 0x3d106989
-202 [-]: LOADK     R21 K45      ; R21 := "failed to find spawn point"
-203 [-]: CALL      R20 2 1      ; R20(R21)
-204 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETUPVAL R2 0
+       1 [-]: CALL R2 0 1  
+       2 [-]: JUMPIF R2 L0 
+       3 [-]: GETIMPORT R2 1 [nil]
+       4 [-]: LOADK R3 K2 ["bailing on lawyer treasurer spawn because no one is eligible"]
+       5 [-]: CALL R2 1 0  
+       6 [-]: RETURN R0 0  
+L 0:   7 [-]: GETIMPORT R2 1 [nil]
+       8 [-]: LOADK R3 K3 ["starting lawyer treasurer spawn..."]
+       9 [-]: CALL R2 1 0  
+      10 [-]: GETIMPORT R2 5 [nil]
+      11 [-]: NAMECALL R2 R2 K6 [0x29EF273D]
+      12 [-]: CALL R2 1 1  
+      13 [-]: NAMECALL R2 R2 K7 [0x66905CB0]
+      14 [-]: CALL R2 1 1  
+      15 [-]: GETIMPORT R3 9 [nil]
+      16 [-]: GETIMPORT R4 11 [nil]
+      17 [-]: GETIMPORT R5 13 [nil]
+      18 [-]: CALL R3 2 1  
+      19 [-]: JUMPIFNOT R1 L1
+      20 [-]: LOADN R3 3   
+L 1:  21 [-]: GETIMPORT R4 15 [nil]
+      22 [-]: MOVE R5 R3   
+      23 [-]: CALL R4 1 0  
+      24 [-]: LOADN R4 0   
+      25 [-]: LOADN R5 0   
+      26 [-]: NAMECALL R6 R2 K16 [0x6968EA36]
+      27 [-]: CALL R6 1 1  
+      28 [-]: NAMECALL R7 R2 K17 [0xCEA36880]
+      29 [-]: CALL R7 1 1  
+      30 [-]: MOVE R10 R7  
+      31 [-]: MOVE R11 R6  
+      32 [-]: NAMECALL R8 R0 K18 [0x6189CB44]
+      33 [-]: CALL R8 3 1  
+      34 [-]: LOADB R9 0   
+      35 [-]: GETIMPORT R11 9 [nil]
+      36 [-]: LOADN R12 1  
+      37 [-]: LENGTH R13 R8
+      38 [-]: CALL R11 2 1 
+      39 [-]: GETTABLE R10 R8 R11
+L 2:  40 [-]: GETIMPORT R11 20 [nil]
+      41 [-]: JUMPIFNOTLT R5 R11 L16
+      42 [-]: GETIMPORT R11 1 [nil]
+      43 [-]: LOADK R13 K21 ["lawyer treasurer attempt "]
+      44 [-]: MOVE R14 R5  
+      45 [-]: CONCAT R12 R13 R14
+      46 [-]: CALL R11 1 0 
+      47 [-]: GETIMPORT R11 5 [nil]
+      48 [-]: NAMECALL R11 R11 K22 [0xE3A0BBCA]
+      49 [-]: CALL R11 1 1 
+      50 [-]: FASTCALL1 62 R11 L3
+      51 [-]: MOVE R13 R11 
+      52 [-]: GETIMPORT R12 24 [nil]
+      53 [-]: CALL R12 1 1 
+L 3:  54 [-]: JUMPIF R12 L4
+      55 [-]: GETIMPORT R14 26 [nil]
+      56 [-]: LOADB R15 0  
+      57 [-]: NAMECALL R12 R11 K27 [0x659D451F]
+      58 [-]: CALL R12 3 0 
+L 4:  59 [-]: ADDK R5 R5 K28 [1]
+      60 [-]: GETIMPORT R12 15 [nil]
+      61 [-]: LOADN R13 3  
+      62 [-]: CALL R12 1 0 
+      63 [-]: GETIMPORT R13 30 [nil]
+      64 [-]: FASTCALL1 62 R13 L5
+      65 [-]: GETIMPORT R12 24 [nil]
+      66 [-]: CALL R12 1 1 
+L 5:  67 [-]: JUMPIF R12 L6
+      68 [-]: GETUPVAL R12 1
+      69 [-]: GETIMPORT R13 30 [nil]
+      70 [-]: CALL R12 1 0 
+L 6:  71 [-]: NAMECALL R12 R2 K31 [0xC9EAF3C4]
+      72 [-]: CALL R12 1 1 
+      73 [-]: LENGTH R13 R12
+      74 [-]: GETIMPORT R17 34 [nil]
+      75 [-]: SUBK R16 R17 K28 [1]
+      76 [-]: MULK R15 R16 K32 [2]
+      77 [-]: ADDK R14 R15 K28 [1]
+      78 [-]: GETIMPORT R15 1 [nil]
+      79 [-]: LOADK R17 K35 ["found  "]
+      80 [-]: MOVE R18 R13 
+      81 [-]: LOADK R19 K36 [" choke points, "]
+      82 [-]: MOVE R20 R14 
+      83 [-]: LOADK R21 K37 [" idx"]
+      84 [-]: CONCAT R16 R17 R21
+      85 [-]: CALL R15 1 0 
+      86 [-]: JUMPIFNOTLT R14 R13 L15
+      87 [-]: GETTABLE R15 R12 R14
+      88 [-]: ADDK R17 R14 K28 [1]
+      89 [-]: GETTABLE R16 R12 R17
+      90 [-]: MOVE R19 R10 
+      91 [-]: MOVE R20 R15 
+      92 [-]: MOVE R21 R16 
+      93 [-]: LOADN R22 2  
+      94 [-]: GETIMPORT R23 39 [nil]
+      95 [-]: LOADK R24 K40 ["RandomTeam"]
+      96 [-]: CALL R23 1 1 
+      97 [-]: NAMECALL R24 R2 K16 [0x6968EA36]
+      98 [-]: CALL R24 1 -1
+      99 [-]: NAMECALL R17 R2 K41 [0x018DB83A]
+     100 [-]: CALL R17 -1 1
+     101 [-]: GETIMPORT R18 1 [nil]
+     102 [-]: LOADK R19 K42 ["spawning in choke point..."]
+     103 [-]: CALL R18 1 0 
+     104 [-]: FASTCALL1 62 R17 L7
+     105 [-]: MOVE R19 R17 
+     106 [-]: GETIMPORT R18 24 [nil]
+     107 [-]: CALL R18 1 1 
+L 7: 108 [-]: JUMPIF R18 L12
+     109 [-]: GETIMPORT R18 1 [nil]
+     110 [-]: LOADK R19 K43 ["spawn successful."]
+     111 [-]: CALL R18 1 0 
+     112 [-]: GETIMPORT R18 45 [nil]
+     113 [-]: GETUPVAL R20 2
+     114 [-]: LOADN R21 2  
+     115 [-]: NAMECALL R18 R18 K46 [0x751F061D]
+     116 [-]: CALL R18 3 0 
+     117 [-]: NAMECALL R18 R17 K47 [0x9E21E394]
+     118 [-]: CALL R18 1 0 
+     119 [-]: GETIMPORT R18 5 [nil]
+     120 [-]: NAMECALL R18 R18 K22 [0xE3A0BBCA]
+     121 [-]: CALL R18 1 1 
+     122 [-]: MOVE R11 R18 
+     123 [-]: FASTCALL1 62 R11 L8
+     124 [-]: MOVE R19 R11 
+     125 [-]: GETIMPORT R18 24 [nil]
+     126 [-]: CALL R18 1 1 
+L 8: 127 [-]: JUMPIF R18 L9
+     128 [-]: GETIMPORT R20 49 [nil]
+     129 [-]: LOADB R21 1  
+     130 [-]: NAMECALL R18 R11 K27 [0x659D451F]
+     131 [-]: CALL R18 3 0 
+L 9: 132 [-]: GETIMPORT R19 51 [nil]
+     133 [-]: FASTCALL1 62 R19 L10
+     134 [-]: GETIMPORT R18 24 [nil]
+     135 [-]: CALL R18 1 1 
+L10: 136 [-]: JUMPIF R18 L11
+     137 [-]: GETIMPORT R18 15 [nil]
+     138 [-]: LOADN R19 1  
+     139 [-]: CALL R18 1 0 
+     140 [-]: GETUPVAL R18 1
+     141 [-]: GETIMPORT R19 51 [nil]
+     142 [-]: CALL R18 1 0 
+L11: 143 [-]: LOADN R20 1  
+     144 [-]: NAMECALL R18 R2 K52 [0xF2D6020E]
+     145 [-]: CALL R18 2 0 
+     146 [-]: ADDK R4 R4 K28 [1]
+     147 [-]: LOADB R9 1   
+     148 [-]: JUMP L16
+    
+L12: 149 [-]: GETIMPORT R18 1 [nil]
+     150 [-]: LOADK R19 K53 ["lawyer treasurer failed to spawn"]
+     151 [-]: CALL R18 1 0 
+     152 [-]: GETIMPORT R18 5 [nil]
+     153 [-]: NAMECALL R18 R18 K22 [0xE3A0BBCA]
+     154 [-]: CALL R18 1 1 
+     155 [-]: MOVE R11 R18 
+     156 [-]: FASTCALL1 62 R11 L13
+     157 [-]: MOVE R19 R11 
+     158 [-]: GETIMPORT R18 24 [nil]
+     159 [-]: CALL R18 1 1 
+L13: 160 [-]: JUMPIF R18 L14
+     161 [-]: GETIMPORT R20 55 [nil]
+     162 [-]: LOADB R21 1  
+     163 [-]: NAMECALL R18 R11 K27 [0x659D451F]
+     164 [-]: CALL R18 3 0 
+L14: 165 [-]: GETIMPORT R18 15 [nil]
+     166 [-]: GETIMPORT R19 9 [nil]
+     167 [-]: GETIMPORT R20 11 [nil]
+     168 [-]: GETIMPORT R21 13 [nil]
+     169 [-]: CALL R19 2 -1
+     170 [-]: CALL R18 -1 0
+L15: 171 [-]: JUMPBACK L2  
+L16: 172 [-]: GETIMPORT R11 1 [nil]
+     173 [-]: LOADK R12 K56 ["lawyer treasurer: out of attempts"]
+     174 [-]: CALL R11 1 0 
+     175 [-]: JUMPIF R9 L19
+     176 [-]: GETIMPORT R11 1 [nil]
+     177 [-]: LOADK R12 K57 ["lawyer treasurer: last resort spawn"]
+     178 [-]: CALL R11 1 0 
+     179 [-]: GETIMPORT R13 59 [nil]
+     180 [-]: NAMECALL R11 R2 K60 [0x234BA63B]
+     181 [-]: CALL R11 2 1 
+     182 [-]: FASTCALL1 62 R11 L17
+     183 [-]: MOVE R13 R11 
+     184 [-]: GETIMPORT R12 24 [nil]
+     185 [-]: CALL R12 1 1 
+L17: 186 [-]: JUMPIF R12 L18
+     187 [-]: MOVE R14 R10 
+     188 [-]: MOVE R15 R11 
+     189 [-]: GETIMPORT R16 39 [nil]
+     190 [-]: LOADK R17 K40 ["RandomTeam"]
+     191 [-]: CALL R16 1 -1
+     192 [-]: NAMECALL R12 R2 K61 [0x33FC842F]
+     193 [-]: CALL R12 -1 0
+     194 [-]: RETURN R0 0  
+L18: 195 [-]: GETIMPORT R12 1 [nil]
+     196 [-]: LOADK R13 K62 ["failed to find spawn point"]
+     197 [-]: CALL R12 1 0 
+L19: 198 [-]: RETURN R0 0  
 
 
-; Function #5:
-;
 ; Name:            
 ; Defined at line: 169
 ; #Upvalues:       5
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  11
+; Max Stack Size:  10
 
-  1 [-]: GETGLOBAL R1 K0        ; R1 := 0xbe190284
-  2 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1[0xef893aec]
-  3 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  4 [-]: GETTABLE  R1 R1 K2     ; R1 := R1["alertTag"]
-  5 [-]: GETGLOBAL R2 K3        ; R2 := 0x0469f296
-  6 [-]: LOADK     R3 K4        ; R3 := "LawyerMeUp"
-  7 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  8 [-]: EQ        0 R1 R2      ; if R1 ~= R2 then PC := 20
-  9 [-]: JMP       20           ; PC := 20
- 10 [-]: GETGLOBAL R1 K0        ; R1 := 0xbe190284
- 11 [-]: SELF      R1 R1 K5     ; R2 := R1; R1 := R1[0x751f061d]
- 12 [-]: GETUPVAL  R3 U0        ; R3 := U0
- 13 [-]: CONST     R4 1         ; R4 := 1.000000
- 14 [-]: CALL      R1 4 1       ; R1(R2,R3,R4)
- 15 [-]: GETUPVAL  R1 U1        ; R1 := U1
- 16 [-]: MOVE      R2 R0        ; R2 := R0
- 17 [-]: LOADKB    R3 1 0       ; R3 := true
- 18 [-]: CALL      R1 3 1       ; R1(R2,R3)
- 19 [-]: RETURN    R0 1         ; return 
- 20 [-]: GETGLOBAL R1 K0        ; R1 := 0xbe190284
- 21 [-]: SELF      R1 R1 K6     ; R2 := R1; R1 := R1[0x5c390f04]
- 22 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 23 [-]: EQ        1 R1 K8      ; if R1 == 30.000000 then PC := 26
- 24 [-]: JMP       26           ; PC := 26
- 25 [-]: LOADKB    R1 0 1       ; R1 := false; PC := 26
- 26 [-]: LOADKB    R1 1 0       ; R1 := true
- 27 [-]: GETGLOBAL R2 K9        ; R2 := 0x7b998233
- 28 [-]: GETGLOBAL R3 K10       ; R3 := 0x89326c93
- 29 [-]: SELF      R3 R3 K11    ; R4 := R3; R3 := R3[0x46a0ebf5]
- 30 [-]: GETGLOBAL R5 K3        ; R5 := 0x0469f296
- 31 [-]: LOADK     R6 K12       ; R6 := "PurgatoryZone"
- 32 [-]: CALL      R5 2 0       ; R5,... := R5(R6)
- 33 [-]: CALL      R3 0 0       ; R3,... := R3(R4,...)
- 34 [-]: CALL      R2 0 2       ; R2 := R2(R3,...)
- 35 [-]: TEST      R1 1         ; if R1 then PC := 39
- 36 [-]: JMP       39           ; PC := 39
- 37 [-]: TEST      R2 0         ; if not R2 then PC := 40
- 38 [-]: JMP       40           ; PC := 40
- 39 [-]: RETURN    R0 1         ; return 
- 40 [-]: GETGLOBAL R3 K0        ; R3 := 0xbe190284
- 41 [-]: SELF      R3 R3 K13    ; R4 := R3; R3 := R3[0x0eb34c69]
- 42 [-]: GETUPVAL  R5 U0        ; R5 := U0
- 43 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
- 44 [-]: EQ        0 R3 K14     ; if R3 ~= 0.000000 then PC := 98
- 45 [-]: JMP       98           ; PC := 98
- 46 [-]: GETGLOBAL R3 K0        ; R3 := 0xbe190284
- 47 [-]: SELF      R3 R3 K13    ; R4 := R3; R3 := R3[0x0eb34c69]
- 48 [-]: GETUPVAL  R5 U2        ; R5 := U2
- 49 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
- 50 [-]: EQ        0 R3 K14     ; if R3 ~= 0.000000 then PC := 56
- 51 [-]: JMP       56           ; PC := 56
- 52 [-]: GETGLOBAL R3 K15       ; R3 := 0xcbd666e1
- 53 [-]: CONST     R4 0         ; R4 := 0.000000
- 54 [-]: CALL      R3 2 1       ; R3(R4)
- 55 [-]: JMP       46           ; PC := 46
- 56 [-]: GETGLOBAL R3 K0        ; R3 := 0xbe190284
- 57 [-]: SELF      R3 R3 K13    ; R4 := R3; R3 := R3[0x0eb34c69]
- 58 [-]: GETUPVAL  R5 U2        ; R5 := U2
- 59 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
- 60 [-]: GETGLOBAL R4 K16       ; R4 := 0xfc2f1878
- 61 [-]: LT        0 R3 R4      ; if R3 >= R4 then PC := 67
- 62 [-]: JMP       67           ; PC := 67
- 63 [-]: GETGLOBAL R4 K17       ; R4 := 0x3d106989
- 64 [-]: LOADK     R5 K18       ; R5 := "no law-treasurer spawn, difficulty tier too low"
- 65 [-]: CALL      R4 2 1       ; R4(R5)
- 66 [-]: RETURN    R0 1         ; return 
- 67 [-]: CONST     R4 0         ; R4 := 0.000000
- 68 [-]: GETGLOBAL R5 K0        ; R5 := 0xbe190284
- 69 [-]: SELF      R5 R5 K13    ; R6 := R5; R5 := R5[0x0eb34c69]
- 70 [-]: GETUPVAL  R7 U3        ; R7 := U3
- 71 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
- 72 [-]: EQ        1 R5 K19     ; if R5 == 1.000000 then PC := 85
- 73 [-]: JMP       85           ; PC := 85
- 74 [-]: GETGLOBAL R5 K0        ; R5 := 0xbe190284
- 75 [-]: SELF      R5 R5 K13    ; R6 := R5; R5 := R5[0x0eb34c69]
- 76 [-]: GETUPVAL  R7 U4        ; R7 := U4
- 77 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
- 78 [-]: LT        0 R4 R5      ; if R4 >= R5 then PC := 81
- 79 [-]: JMP       81           ; PC := 81
- 80 [-]: MOVE      R4 R5        ; R4 := R5
- 81 [-]: GETGLOBAL R6 K15       ; R6 := 0xcbd666e1
- 82 [-]: CONST     R7 0         ; R7 := 0.000000
- 83 [-]: CALL      R6 2 1       ; R6(R7)
- 84 [-]: JMP       68           ; PC := 68
- 85 [-]: GETGLOBAL R6 K20       ; R6 := 0x24678072
- 86 [-]: GETTABLE  R6 R6 R3     ; R6 := R6[R3]
- 87 [-]: LT        0 R4 R6      ; if R4 >= R6 then PC := 93
- 88 [-]: JMP       93           ; PC := 93
- 89 [-]: GETGLOBAL R7 K17       ; R7 := 0x3d106989
- 90 [-]: LOADK     R8 K21       ; R8 := "no law-treasurer spawn, reward tier too low"
- 91 [-]: CALL      R7 2 1       ; R7(R8)
- 92 [-]: RETURN    R0 1         ; return 
- 93 [-]: GETGLOBAL R7 K0        ; R7 := 0xbe190284
- 94 [-]: SELF      R7 R7 K5     ; R8 := R7; R7 := R7[0x751f061d]
- 95 [-]: GETUPVAL  R9 U0        ; R9 := U0
- 96 [-]: CONST     R10 1        ; R10 := 1.000000
- 97 [-]: CALL      R7 4 1       ; R7(R8,R9,R10)
- 98 [-]: GETGLOBAL R7 K0        ; R7 := 0xbe190284
- 99 [-]: SELF      R7 R7 K13    ; R8 := R7; R7 := R7[0x0eb34c69]
-100 [-]: GETUPVAL  R9 U0        ; R9 := U0
-101 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
-102 [-]: EQ        0 R7 K19     ; if R7 ~= 1.000000 then PC := 107
-103 [-]: JMP       107          ; PC := 107
-104 [-]: GETUPVAL  R7 U1        ; R7 := U1
-105 [-]: MOVE      R8 R0        ; R8 := R0
-106 [-]: CALL      R7 2 1       ; R7(R8)
-107 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R2 1 [nil]
+       1 [-]: NAMECALL R2 R2 K2 [0xEF893AEC]
+       2 [-]: CALL R2 1 1  
+       3 [-]: GETTABLEKS R1 R2 K3 ["alertTag"]
+       4 [-]: GETIMPORT R2 5 [nil]
+       5 [-]: LOADK R3 K6 ["LawyerMeUp"]
+       6 [-]: CALL R2 1 1  
+       7 [-]: JUMPIFNOTEQ R1 R2 L0
+       8 [-]: GETIMPORT R1 1 [nil]
+       9 [-]: GETUPVAL R3 0
+      10 [-]: LOADN R4 1   
+      11 [-]: NAMECALL R1 R1 K7 [0x751F061D]
+      12 [-]: CALL R1 3 0  
+      13 [-]: GETUPVAL R1 1
+      14 [-]: MOVE R2 R0   
+      15 [-]: LOADB R3 1   
+      16 [-]: CALL R1 2 0  
+      17 [-]: RETURN R0 0  
+L 0:  18 [-]: GETIMPORT R2 1 [nil]
+      19 [-]: NAMECALL R2 R2 K8 [0x5C390F04]
+      20 [-]: CALL R2 1 1  
+      21 [-]: LOADN R3 30  
+      22 [-]: JUMPIFEQ R2 R3 L1
+      23 [-]: LOADB R1 0 +1
+L 1:  24 [-]: LOADB R1 1   
+L 2:  25 [-]: GETIMPORT R3 10 [nil]
+      26 [-]: GETIMPORT R5 5 [nil]
+      27 [-]: LOADK R6 K11 ["PurgatoryZone"]
+      28 [-]: CALL R5 1 -1 
+      29 [-]: NAMECALL R3 R3 K12 [0x46A0EBF5]
+      30 [-]: CALL R3 -1 -1
+      31 [-]: FASTCALL 62 L3
+      32 [-]: GETIMPORT R2 14 [nil]
+      33 [-]: CALL R2 -1 1 
+L 3:  34 [-]: JUMPIF R1 L4 
+      35 [-]: JUMPIFNOT R2 L5
+L 4:  36 [-]: RETURN R0 0  
+L 5:  37 [-]: GETIMPORT R3 1 [nil]
+      38 [-]: GETUPVAL R5 0
+      39 [-]: NAMECALL R3 R3 K15 [0x0EB34C69]
+      40 [-]: CALL R3 2 1  
+      41 [-]: JUMPXEQKN R3 K16 L13 NOT [0]
+L 6:  42 [-]: GETIMPORT R3 1 [nil]
+      43 [-]: GETUPVAL R5 2
+      44 [-]: NAMECALL R3 R3 K15 [0x0EB34C69]
+      45 [-]: CALL R3 2 1  
+      46 [-]: JUMPXEQKN R3 K16 L7 NOT [0]
+      47 [-]: GETIMPORT R3 18 [nil]
+      48 [-]: LOADN R4 0   
+      49 [-]: CALL R3 1 0  
+      50 [-]: JUMPBACK L6  
+L 7:  51 [-]: GETIMPORT R3 1 [nil]
+      52 [-]: GETUPVAL R5 2
+      53 [-]: NAMECALL R3 R3 K15 [0x0EB34C69]
+      54 [-]: CALL R3 2 1  
+      55 [-]: GETIMPORT R4 20 [nil]
+      56 [-]: JUMPIFNOTLT R3 R4 L8
+      57 [-]: GETIMPORT R4 22 [nil]
+      58 [-]: LOADK R5 K23 ["no law-treasurer spawn, difficulty tier too low"]
+      59 [-]: CALL R4 1 0  
+      60 [-]: RETURN R0 0  
+L 8:  61 [-]: LOADN R4 0   
+L 9:  62 [-]: GETIMPORT R5 1 [nil]
+      63 [-]: GETUPVAL R7 3
+      64 [-]: NAMECALL R5 R5 K15 [0x0EB34C69]
+      65 [-]: CALL R5 2 1  
+      66 [-]: JUMPXEQKN R5 K24 L11 [1]
+      67 [-]: GETIMPORT R5 1 [nil]
+      68 [-]: GETUPVAL R7 4
+      69 [-]: NAMECALL R5 R5 K15 [0x0EB34C69]
+      70 [-]: CALL R5 2 1  
+      71 [-]: JUMPIFNOTLT R4 R5 L10
+      72 [-]: MOVE R4 R5   
+L10:  73 [-]: GETIMPORT R6 18 [nil]
+      74 [-]: LOADN R7 0   
+      75 [-]: CALL R6 1 0  
+      76 [-]: JUMPBACK L9  
+L11:  77 [-]: GETIMPORT R6 26 [nil]
+      78 [-]: GETTABLE R5 R6 R3
+      79 [-]: JUMPIFNOTLT R4 R5 L12
+      80 [-]: GETIMPORT R6 22 [nil]
+      81 [-]: LOADK R7 K27 ["no law-treasurer spawn, reward tier too low"]
+      82 [-]: CALL R6 1 0  
+      83 [-]: RETURN R0 0  
+L12:  84 [-]: GETIMPORT R6 1 [nil]
+      85 [-]: GETUPVAL R8 0
+      86 [-]: LOADN R9 1   
+      87 [-]: NAMECALL R6 R6 K7 [0x751F061D]
+      88 [-]: CALL R6 3 0  
+L13:  89 [-]: GETIMPORT R3 1 [nil]
+      90 [-]: GETUPVAL R5 0
+      91 [-]: NAMECALL R3 R3 K15 [0x0EB34C69]
+      92 [-]: CALL R3 2 1  
+      93 [-]: JUMPXEQKN R3 K24 L14 NOT [1]
+      94 [-]: GETUPVAL R3 1
+      95 [-]: MOVE R4 R0   
+      96 [-]: CALL R3 1 0  
+L14:  97 [-]: RETURN R0 0  
+
 
 

@@ -1,2027 +1,2038 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
-; Max Stack Size:  58
+; Is_vararg:       1
+; Max Stack Size:  25
 
-  1 [-]: NEWTABLE  R0 6 0       ; R0 := {}
-  2 [-]: NEWTABLE  R1 2 0       ; R1 := {}
-  3 [-]: CONST     R2 0         ; R2 := 0.500000
-  4 [-]: NEWTABLE  R3 31 0      ; R3 := {}
-  5 [-]: LOADK     R4 K0        ; R4 := "Experimental"
-  6 [-]: LOADK     R5 K1        ; R5 := "Consulting"
-  7 [-]: LOADK     R6 K2        ; R6 := "Honorary"
-  8 [-]: LOADK     R7 K3        ; R7 := "Probationary"
-  9 [-]: LOADK     R8 K4        ; R8 := "Dynamic"
- 10 [-]: LOADK     R9 K5        ; R9 := "Lead"
- 11 [-]: LOADK     R10 K6       ; R10 := "Future"
- 12 [-]: LOADK     R11 K7       ; R11 := "Product"
- 13 [-]: LOADK     R12 K8       ; R12 := "Investment"
- 14 [-]: LOADK     R13 K9       ; R13 := "Legacy"
- 15 [-]: LOADK     R14 K10      ; R14 := "Forward"
- 16 [-]: LOADK     R15 K11      ; R15 := "Internal"
- 17 [-]: LOADK     R16 K12      ; R16 := "Outsourced"
- 18 [-]: LOADK     R17 K13      ; R17 := "Remote"
- 19 [-]: LOADK     R18 K14      ; R18 := "Principal"
- 20 [-]: LOADK     R19 K15      ; R19 := "Supervisory"
- 21 [-]: LOADK     R20 K16      ; R20 := "Associate"
- 22 [-]: LOADK     R21 K17      ; R21 := "Liasing"
- 23 [-]: LOADK     R22 K18      ; R22 := "Coordinating"
- 24 [-]: LOADK     R23 K19      ; R23 := "Directing"
- 25 [-]: LOADK     R24 K20      ; R24 := "Specialist"
- 26 [-]: LOADK     R25 K21      ; R25 := "Strategic"
- 27 [-]: LOADK     R26 K22      ; R26 := "Assistant"
- 28 [-]: LOADK     R27 K23      ; R27 := "Technical"
- 29 [-]: LOADK     R28 K24      ; R28 := "Military"
- 30 [-]: LOADK     R29 K25      ; R29 := "Corporate"
- 31 [-]: LOADK     R30 K26      ; R30 := "Medical"
- 32 [-]: LOADK     R31 K27      ; R31 := "Psychological Operatons"
- 33 [-]: LOADK     R32 K28      ; R32 := "Analytical"
- 34 [-]: LOADK     R33 K29      ; R33 := "Administrative"
- 35 [-]: LOADK     R34 K25      ; R34 := "Corporate"
- 36 [-]: LOADK     R35 K30      ; R35 := "Student"
- 37 [-]: LOADK     R36 K31      ; R36 := "Defending"
- 38 [-]: LOADK     R37 K32      ; R37 := "Acting"
- 39 [-]: LOADK     R38 K33      ; R38 := "Temporary"
- 40 [-]: LOADK     R39 K34      ; R39 := "Matrix-Oriented"
- 41 [-]: LOADK     R40 K35      ; R40 := "Industrial"
- 42 [-]: LOADK     R41 K36      ; R41 := "Developing"
- 43 [-]: LOADK     R42 K37      ; R42 := "Multidisciplinary"
- 44 [-]: LOADK     R43 K38      ; R43 := "Intrinsic"
- 45 [-]: LOADK     R44 K39      ; R44 := "Certified"
- 46 [-]: LOADK     R45 K40      ; R45 := "Field-Tested"
- 47 [-]: LOADK     R46 K41      ; R46 := "Traditional"
- 48 [-]: LOADK     R47 K42      ; R47 := "Enmeshed"
- 49 [-]: LOADK     R48 K43      ; R48 := "Adaptive"
- 50 [-]: LOADK     R49 K44      ; R49 := "Cross-Functional"
- 51 [-]: LOADK     R50 K45      ; R50 := "Economic"
- 52 [-]: LOADK     R51 K46      ; R51 := "Void-Oriented"
- 53 [-]: LOADK     R52 K47      ; R52 := "Dogma-Oriented"
- 54 [-]: LOADK     R53 K48      ; R53 := "Scripture-Focussed"
- 55 [-]: SETLIST   R3 50 1      ; R3[(1-1)*FPF+i] := R(3+i), 1 <= i <= 50
- 56 [-]: LOADK     R4 K49       ; R4 := "Tenno-Prioritized"
- 57 [-]: LOADK     R5 K50       ; R5 := "Board-Certified"
- 58 [-]: LOADK     R6 K51       ; R6 := "Specter-Tech"
- 59 [-]: LOADK     R7 K52       ; R7 := "Licensed"
- 60 [-]: LOADK     R8 K53       ; R8 := "Parvosian"
- 61 [-]: LOADK     R9 K54       ; R9 := "Augmented"
- 62 [-]: LOADK     R10 K55      ; R10 := "Hereditary"
- 63 [-]: LOADK     R11 K56      ; R11 := "Emergency"
- 64 [-]: LOADK     R12 K57      ; R12 := "Visiting"
- 65 [-]: SETLIST   R3 9 2       ; R3[(2-1)*FPF+i] := R(3+i), 1 <= i <= 9
- 66 [-]: SETLIST   R1 2 1       ; R1[(1-1)*FPF+i] := R(1+i), 1 <= i <= 2
- 67 [-]: NEWTABLE  R2 2 0       ; R2 := {}
- 68 [-]: CONST     R3 1         ; R3 := 1.000000
- 69 [-]: NEWTABLE  R4 38 0      ; R4 := {}
- 70 [-]: LOADK     R5 K58       ; R5 := "Trainee Assistant"
- 71 [-]: LOADK     R6 K59       ; R6 := "Junior Assistant"
- 72 [-]: LOADK     R7 K22       ; R7 := "Assistant"
- 73 [-]: LOADK     R8 K60       ; R8 := "Senior Assistant"
- 74 [-]: LOADK     R9 K61       ; R9 := "Head Assistant"
- 75 [-]: LOADK     R10 K62      ; R10 := "Trainee Deputy"
- 76 [-]: LOADK     R11 K63      ; R11 := "Junior Deputy"
- 77 [-]: LOADK     R12 K64      ; R12 := "Deputy"
- 78 [-]: LOADK     R13 K65      ; R13 := "Senior Deputy"
- 79 [-]: LOADK     R14 K66      ; R14 := "Head Deputy"
- 80 [-]: LOADK     R15 K67      ; R15 := "Trainee Executive"
- 81 [-]: LOADK     R16 K68      ; R16 := "Junior Executive"
- 82 [-]: LOADK     R17 K69      ; R17 := "Executive"
- 83 [-]: LOADK     R18 K70      ; R18 := "Senior Executive"
- 84 [-]: LOADK     R19 K71      ; R19 := "Head Executive"
- 85 [-]: LOADK     R20 K72      ; R20 := "Trainee Associate"
- 86 [-]: LOADK     R21 K73      ; R21 := "Junior Associate"
- 87 [-]: LOADK     R22 K16      ; R22 := "Associate"
- 88 [-]: LOADK     R23 K74      ; R23 := "Senior Associate"
- 89 [-]: LOADK     R24 K75      ; R24 := "Head Associate"
- 90 [-]: LOADK     R25 K76      ; R25 := "Trainee Representative"
- 91 [-]: LOADK     R26 K77      ; R26 := "Junior Representative"
- 92 [-]: LOADK     R27 K78      ; R27 := "Representative"
- 93 [-]: LOADK     R28 K79      ; R28 := "Senior Representative"
- 94 [-]: LOADK     R29 K80      ; R29 := "Head Representative"
- 95 [-]: LOADK     R30 K81      ; R30 := "Trainee Trust"
- 96 [-]: LOADK     R31 K82      ; R31 := "Junior Trust"
- 97 [-]: LOADK     R32 K83      ; R32 := "Trust"
- 98 [-]: LOADK     R33 K84      ; R33 := "Senior Trust"
- 99 [-]: LOADK     R34 K85      ; R34 := "Head Trust"
-100 [-]: LOADK     R35 K86      ; R35 := "Trainee Technical"
-101 [-]: LOADK     R36 K87      ; R36 := "Junior Technical"
-102 [-]: LOADK     R37 K23      ; R37 := "Technical"
-103 [-]: LOADK     R38 K88      ; R38 := "Senior Technical"
-104 [-]: LOADK     R39 K89      ; R39 := "Head Technical"
-105 [-]: LOADK     R40 K90      ; R40 := "Trainee Supervising"
-106 [-]: LOADK     R41 K91      ; R41 := "Junior Supervising"
-107 [-]: LOADK     R42 K92      ; R42 := "Supervising"
-108 [-]: LOADK     R43 K93      ; R43 := "Senior Supervising"
-109 [-]: LOADK     R44 K94      ; R44 := "Head Supervising"
-110 [-]: LOADK     R45 K95      ; R45 := "Trainee Lead"
-111 [-]: LOADK     R46 K96      ; R46 := "Junior Lead"
-112 [-]: LOADK     R47 K5       ; R47 := "Lead"
-113 [-]: LOADK     R48 K97      ; R48 := "Senior Lead"
-114 [-]: LOADK     R49 K98      ; R49 := "Head Lead"
-115 [-]: LOADK     R50 K99      ; R50 := "Trainee Coordinating"
-116 [-]: LOADK     R51 K100     ; R51 := "Junior Coordinating"
-117 [-]: LOADK     R52 K18      ; R52 := "Coordinating"
-118 [-]: LOADK     R53 K101     ; R53 := "Senior Coordinating"
-119 [-]: LOADK     R54 K102     ; R54 := "Head Coordinating"
-120 [-]: SETLIST   R4 50 1      ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 50
-121 [-]: LOADK     R5 K103      ; R5 := "Trainee Specialist"
-122 [-]: LOADK     R6 K104      ; R6 := "Junior Specialist"
-123 [-]: LOADK     R7 K20       ; R7 := "Specialist"
-124 [-]: LOADK     R8 K105      ; R8 := "Senior Specialist"
-125 [-]: LOADK     R9 K106      ; R9 := "Head Specialist"
-126 [-]: LOADK     R10 K107     ; R10 := "Trainee Synergist"
-127 [-]: LOADK     R11 K108     ; R11 := "Junior Synergist"
-128 [-]: LOADK     R12 K109     ; R12 := "Synergist"
-129 [-]: LOADK     R13 K110     ; R13 := "Senior Synergist"
-130 [-]: LOADK     R14 K111     ; R14 := "Head Synergist"
-131 [-]: LOADK     R15 K112     ; R15 := "Trainee Creative"
-132 [-]: LOADK     R16 K113     ; R16 := "Junion Creative"
-133 [-]: LOADK     R17 K114     ; R17 := "Creative"
-134 [-]: LOADK     R18 K115     ; R18 := "Senior Creative"
-135 [-]: LOADK     R19 K116     ; R19 := "Head Creative"
-136 [-]: LOADK     R20 K117     ; R20 := "Trainee Visionholder"
-137 [-]: LOADK     R21 K118     ; R21 := "Junior Visionholder"
-138 [-]: LOADK     R22 K119     ; R22 := "Visionholder"
-139 [-]: LOADK     R23 K120     ; R23 := "Senior Visionholder"
-140 [-]: LOADK     R24 K121     ; R24 := "Head Visionholder"
-141 [-]: LOADK     R25 K122     ; R25 := "Trainee Fiscal"
-142 [-]: LOADK     R26 K123     ; R26 := "Junior Fiscal"
-143 [-]: LOADK     R27 K124     ; R27 := "Fiscal"
-144 [-]: LOADK     R28 K125     ; R28 := "Senior Fiscal"
-145 [-]: LOADK     R29 K126     ; R29 := "Head Fiscal"
-146 [-]: LOADK     R30 K127     ; R30 := "Trainee Advising"
-147 [-]: LOADK     R31 K128     ; R31 := "Junior Advising"
-148 [-]: LOADK     R32 K129     ; R32 := "Advising"
-149 [-]: LOADK     R33 K130     ; R33 := "Senior Advising"
-150 [-]: LOADK     R34 K131     ; R34 := "Head Advising"
-151 [-]: LOADK     R35 K132     ; R35 := "Trainee Honorary"
-152 [-]: LOADK     R36 K133     ; R36 := "Junior Honorary"
-153 [-]: LOADK     R37 K2       ; R37 := "Honorary"
-154 [-]: LOADK     R38 K134     ; R38 := "Senior Honorary"
-155 [-]: LOADK     R39 K135     ; R39 := "Head Honorary"
-156 [-]: LOADK     R40 K136     ; R40 := "Trainee Affiliate"
-157 [-]: LOADK     R41 K137     ; R41 := "Junior Affiliate"
-158 [-]: LOADK     R42 K138     ; R42 := "Affiliate"
-159 [-]: LOADK     R43 K139     ; R43 := "Senior Affiliate"
-160 [-]: LOADK     R44 K140     ; R44 := "Head Affiliate"
-161 [-]: LOADK     R45 K141     ; R45 := "Trainee Adjunct"
-162 [-]: LOADK     R46 K142     ; R46 := "Junior Adjunct"
-163 [-]: LOADK     R47 K143     ; R47 := "Adjunct"
-164 [-]: LOADK     R48 K144     ; R48 := "Senior Adjunct"
-165 [-]: LOADK     R49 K145     ; R49 := "Head Adjunct"
-166 [-]: LOADK     R50 K146     ; R50 := "Trainee Fiduciary"
-167 [-]: LOADK     R51 K147     ; R51 := "Junior Fiduciary"
-168 [-]: LOADK     R52 K148     ; R52 := "Fiduciary"
-169 [-]: LOADK     R53 K149     ; R53 := "Senior Fiduciary"
-170 [-]: LOADK     R54 K150     ; R54 := "Head Fiduciary"
-171 [-]: SETLIST   R4 50 2      ; R4[(2-1)*FPF+i] := R(4+i), 1 <= i <= 50
-172 [-]: LOADK     R5 K151      ; R5 := "Trainee Academic"
-173 [-]: LOADK     R6 K152      ; R6 := "Junior Academic"
-174 [-]: LOADK     R7 K153      ; R7 := "Academic"
-175 [-]: LOADK     R8 K154      ; R8 := "Senior Academic"
-176 [-]: LOADK     R9 K155      ; R9 := "Head Academic"
-177 [-]: LOADK     R10 K156     ; R10 := "Trainee Appointed"
-178 [-]: LOADK     R11 K157     ; R11 := "Junior Appointed"
-179 [-]: LOADK     R12 K158     ; R12 := "Appointed"
-180 [-]: LOADK     R13 K159     ; R13 := "Senior Appointed"
-181 [-]: LOADK     R14 K160     ; R14 := "Head Appointed"
-182 [-]: SETLIST   R4 10 3      ; R4[(3-1)*FPF+i] := R(4+i), 1 <= i <= 10
-183 [-]: SETLIST   R2 2 1       ; R2[(1-1)*FPF+i] := R(2+i), 1 <= i <= 2
-184 [-]: NEWTABLE  R3 2 0       ; R3 := {}
-185 [-]: CONST     R4 1         ; R4 := 1.000000
-186 [-]: NEWTABLE  R5 26 0      ; R5 := {}
-187 [-]: LOADK     R6 K161      ; R6 := "Head of"
-188 [-]: LOADK     R7 K162      ; R7 := "Overseer of"
-189 [-]: LOADK     R8 K163      ; R8 := "Leader of"
-190 [-]: LOADK     R9 K164      ; R9 := "Coordinator of"
-191 [-]: LOADK     R10 K165     ; R10 := "Inspector of"
-192 [-]: LOADK     R11 K166     ; R11 := "Visionary in charge of"
-193 [-]: LOADK     R12 K167     ; R12 := "Imagineer in charge of"
-194 [-]: LOADK     R13 K168     ; R13 := "Engineer in charge of"
-195 [-]: LOADK     R14 K169     ; R14 := "Clerk in charge of"
-196 [-]: LOADK     R15 K170     ; R15 := "Officer in charge of"
-197 [-]: LOADK     R16 K171     ; R16 := "Functionary in charge of"
-198 [-]: LOADK     R17 K172     ; R17 := "Supervisor of"
-199 [-]: LOADK     R18 K173     ; R18 := "Liason to"
-200 [-]: LOADK     R19 K174     ; R19 := "Manager of"
-201 [-]: LOADK     R20 K175     ; R20 := "Administrator of"
-202 [-]: LOADK     R21 K176     ; R21 := "Director of"
-203 [-]: LOADK     R22 K177     ; R22 := "Architect of"
-204 [-]: LOADK     R23 K178     ; R23 := "Analyst of"
-205 [-]: LOADK     R24 K179     ; R24 := "Designer of"
-206 [-]: LOADK     R25 K180     ; R25 := "Planner of"
-207 [-]: LOADK     R26 K181     ; R26 := "Synergist for"
-208 [-]: LOADK     R27 K182     ; R27 := "Orchestrator of"
-209 [-]: LOADK     R28 K183     ; R28 := "Technician for"
-210 [-]: LOADK     R29 K184     ; R29 := "Developer of"
-211 [-]: LOADK     R30 K185     ; R30 := "Producer for"
-212 [-]: LOADK     R31 K186     ; R31 := "Consultant to"
-213 [-]: LOADK     R32 K187     ; R32 := "Facilitator of"
-214 [-]: LOADK     R33 K188     ; R33 := "Agent for"
-215 [-]: LOADK     R34 K189     ; R34 := "Investor for"
-216 [-]: LOADK     R35 K190     ; R35 := "Artist for"
-217 [-]: LOADK     R36 K191     ; R36 := "Member for"
-218 [-]: LOADK     R37 K192     ; R37 := "Specialist in"
-219 [-]: LOADK     R38 K193     ; R38 := "Passionpreneur in charge of"
-220 [-]: LOADK     R39 K194     ; R39 := "Champion for "
-221 [-]: LOADK     R40 K195     ; R40 := "Expert in"
-222 [-]: LOADK     R41 K196     ; R41 := "Conceptualizer for"
-223 [-]: LOADK     R42 K197     ; R42 := "Driver for"
-224 [-]: LOADK     R43 K198     ; R43 := "Proactivator for"
-225 [-]: LOADK     R44 K199     ; R44 := "Secretary of"
-226 [-]: LOADK     R45 K200     ; R45 := "Auditor for"
-227 [-]: SETLIST   R5 40 1      ; R5[(1-1)*FPF+i] := R(5+i), 1 <= i <= 40
-228 [-]: SETLIST   R3 2 1       ; R3[(1-1)*FPF+i] := R(3+i), 1 <= i <= 2
-229 [-]: NEWTABLE  R4 2 0       ; R4 := {}
-230 [-]: CONST     R5 0         ; R5 := 0.500000
-231 [-]: NEWTABLE  R6 40 0      ; R6 := {}
-232 [-]: LOADK     R7 K201      ; R7 := "Administration"
-233 [-]: LOADK     R8 K202      ; R8 := "Analytics"
-234 [-]: LOADK     R9 K203      ; R9 := "Profit"
-235 [-]: LOADK     R10 K204     ; R10 := "Business"
-236 [-]: LOADK     R11 K26      ; R11 := "Medical"
-237 [-]: LOADK     R12 K205     ; R12 := "Data"
-238 [-]: LOADK     R13 K25      ; R13 := "Corporate"
-239 [-]: LOADK     R14 K8       ; R14 := "Investment"
-240 [-]: LOADK     R15 K206     ; R15 := "Training"
-241 [-]: LOADK     R16 K207     ; R16 := "Legal"
-242 [-]: LOADK     R17 K208     ; R17 := "Section"
-243 [-]: LOADK     R18 K209     ; R18 := "Sector"
-244 [-]: LOADK     R19 K210     ; R19 := "Planetary"
-245 [-]: LOADK     R20 K211     ; R20 := "System"
-246 [-]: LOADK     R21 K212     ; R21 := "Mental"
-247 [-]: LOADK     R22 K213     ; R22 := "Physical"
-248 [-]: LOADK     R23 K214     ; R23 := "Commercial"
-249 [-]: LOADK     R24 K24      ; R24 := "Military"
-250 [-]: LOADK     R25 K215     ; R25 := "Weapons"
-251 [-]: LOADK     R26 K216     ; R26 := "Technological"
-252 [-]: LOADK     R27 K35      ; R27 := "Industrial"
-253 [-]: LOADK     R28 K217     ; R28 := "Tactical"
-254 [-]: LOADK     R29 K218     ; R29 := "Paradigm"
-255 [-]: LOADK     R30 K219     ; R30 := "Identity"
-256 [-]: LOADK     R31 K220     ; R31 := "Market"
-257 [-]: LOADK     R32 K221     ; R32 := "Group"
-258 [-]: LOADK     R33 K222     ; R33 := "Infrastructure"
-259 [-]: LOADK     R34 K223     ; R34 := "Quality"
-260 [-]: LOADK     R35 K114     ; R35 := "Creative"
-261 [-]: LOADK     R36 K224     ; R36 := "Team"
-262 [-]: LOADK     R37 K225     ; R37 := "Prophecy"
-263 [-]: LOADK     R38 K34      ; R38 := "Matrix-Oriented"
-264 [-]: LOADK     R39 K226     ; R39 := "Mid-term"
-265 [-]: LOADK     R40 K227     ; R40 := "In-house"
-266 [-]: LOADK     R41 K228     ; R41 := "Interdepartmental"
-267 [-]: LOADK     R42 K229     ; R42 := "Confidential"
-268 [-]: LOADK     R43 K230     ; R43 := "Forensic"
-269 [-]: LOADK     R44 K124     ; R44 := "Fiscal"
-270 [-]: LOADK     R45 K231     ; R45 := "Wholistic"
-271 [-]: LOADK     R46 K37      ; R46 := "Multidisciplinary"
-272 [-]: LOADK     R47 K232     ; R47 := "Interactive"
-273 [-]: LOADK     R48 K38      ; R48 := "Intrinsic"
-274 [-]: LOADK     R49 K233     ; R49 := "Objective"
-275 [-]: LOADK     R50 K234     ; R50 := "Monotonal"
-276 [-]: LOADK     R51 K235     ; R51 := "Proactive"
-277 [-]: LOADK     R52 K236     ; R52 := "Professional"
-278 [-]: LOADK     R53 K237     ; R53 := "Progressive"
-279 [-]: LOADK     R54 K238     ; R54 := "Rapid"
-280 [-]: LOADK     R55 K239     ; R55 := "Seamless"
-281 [-]: LOADK     R56 K240     ; R56 := "Focused"
-282 [-]: SETLIST   R6 50 1      ; R6[(1-1)*FPF+i] := R(6+i), 1 <= i <= 50
-283 [-]: LOADK     R7 K241      ; R7 := "Proprietary"
-284 [-]: LOADK     R8 K242      ; R8 := "Synergistical"
-285 [-]: LOADK     R9 K243      ; R9 := "Unique"
-286 [-]: LOADK     R10 K244     ; R10 := "Actualized"
-287 [-]: LOADK     R11 K245     ; R11 := "Intellectual"
-288 [-]: LOADK     R12 K246     ; R12 := "Aggregate"
-289 [-]: LOADK     R13 K247     ; R13 := "Benchmarking"
-290 [-]: LOADK     R14 K39      ; R14 := "Certified"
-291 [-]: LOADK     R15 K248     ; R15 := "Multi-level"
-292 [-]: LOADK     R16 K249     ; R16 := "Building"
-293 [-]: LOADK     R17 K250     ; R17 := "Inclusive"
-294 [-]: LOADK     R18 K251     ; R18 := "Heirarchical"
-295 [-]: LOADK     R19 K40      ; R19 := "Field-Tested"
-296 [-]: LOADK     R20 K41      ; R20 := "Traditional"
-297 [-]: LOADK     R21 K252     ; R21 := "Groundbreaking"
-298 [-]: LOADK     R22 K253     ; R22 := "Realistic"
-299 [-]: LOADK     R23 K254     ; R23 := "Expedited"
-300 [-]: LOADK     R24 K255     ; R24 := "Mediated"
-301 [-]: LOADK     R25 K256     ; R25 := "Enabled"
-302 [-]: LOADK     R26 K257     ; R26 := "Envisioned"
-303 [-]: LOADK     R27 K258     ; R27 := "Incentivized"
-304 [-]: LOADK     R28 K259     ; R28 := "Incepted"
-305 [-]: LOADK     R29 K260     ; R29 := "Integrated"
-306 [-]: LOADK     R30 K261     ; R30 := "Initiated"
-307 [-]: LOADK     R31 K262     ; R31 := "Iterated"
-308 [-]: LOADK     R32 K263     ; R32 := "Leveraged"
-309 [-]: LOADK     R33 K264     ; R33 := "Maintained"
-310 [-]: LOADK     R34 K265     ; R34 := "Maximized"
-311 [-]: LOADK     R35 K266     ; R35 := "Monetized"
-312 [-]: LOADK     R36 K42      ; R36 := "Enmeshed"
-313 [-]: LOADK     R37 K267     ; R37 := "Negotiated"
-314 [-]: LOADK     R38 K268     ; R38 := "Networked"
-315 [-]: LOADK     R39 K269     ; R39 := "Optimized"
-316 [-]: LOADK     R40 K270     ; R40 := "Parallel"
-317 [-]: LOADK     R41 K271     ; R41 := "Scalable"
-318 [-]: LOADK     R42 K272     ; R42 := "Simplified"
-319 [-]: LOADK     R43 K273     ; R43 := "Streamlined"
-320 [-]: LOADK     R44 K274     ; R44 := "Cost-effective"
-321 [-]: LOADK     R45 K43      ; R45 := "Adaptive"
-322 [-]: LOADK     R46 K44      ; R46 := "Cross-Functional"
-323 [-]: LOADK     R47 K275     ; R47 := "Covalent"
-324 [-]: LOADK     R48 K276     ; R48 := "Compelling"
-325 [-]: LOADK     R49 K277     ; R49 := "Competitive"
-326 [-]: LOADK     R50 K278     ; R50 := "Customer-Facing"
-327 [-]: LOADK     R51 K279     ; R51 := "Customer-Directed"
-328 [-]: LOADK     R52 K280     ; R52 := "Community"
-329 [-]: LOADK     R53 K281     ; R53 := "Economical"
-330 [-]: LOADK     R54 K282     ; R54 := "Void"
-331 [-]: LOADK     R55 K283     ; R55 := "Specter Particle"
-332 [-]: LOADK     R56 K284     ; R56 := "Solar Rail"
-333 [-]: SETLIST   R6 50 2      ; R6[(2-1)*FPF+i] := R(6+i), 1 <= i <= 50
-334 [-]: LOADK     R7 K285      ; R7 := "Counter-Tenno"
-335 [-]: LOADK     R8 K286      ; R8 := "Counter-Sentient"
-336 [-]: LOADK     R9 K287      ; R9 := "Cybernetic"
-337 [-]: LOADK     R10 K288     ; R10 := "Automated"
-338 [-]: LOADK     R11 K289     ; R11 := "Robotic"
-339 [-]: LOADK     R12 K290     ; R12 := "Kuva Science"
-340 [-]: LOADK     R13 K291     ; R13 := "Thought"
-341 [-]: LOADK     R14 K292     ; R14 := "Frictionless"
-342 [-]: LOADK     R15 K240     ; R15 := "Focused"
-343 [-]: LOADK     R16 K53      ; R16 := "Parvosian"
-344 [-]: LOADK     R17 K293     ; R17 := "Hyperscale"
-345 [-]: LOADK     R18 K294     ; R18 := "Catalytic"
-346 [-]: LOADK     R19 K295     ; R19 := "Desire-oriented"
-347 [-]: LOADK     R20 K296     ; R20 := "Grineer-resistant"
-348 [-]: LOADK     R21 K297     ; R21 := "Reverse-engineered"
-349 [-]: LOADK     R22 K298     ; R22 := "Orokin-derived"
-350 [-]: LOADK     R23 K54      ; R23 := "Augmented"
-351 [-]: LOADK     R24 K299     ; R24 := "Decentralized"
-352 [-]: LOADK     R25 K300     ; R25 := "Cognitive"
-353 [-]: LOADK     R26 K301     ; R26 := "Neural"
-354 [-]: LOADK     R27 K302     ; R27 := "Leading-Edge"
-355 [-]: LOADK     R28 K303     ; R28 := "Interdependent"
-356 [-]: LOADK     R29 K304     ; R29 := "Orthogonal"
-357 [-]: LOADK     R30 K305     ; R30 := "Supercharged"
-358 [-]: LOADK     R31 K306     ; R31 := "Trans-temporal"
-359 [-]: SETLIST   R6 25 3      ; R6[(3-1)*FPF+i] := R(6+i), 1 <= i <= 25
-360 [-]: SETLIST   R4 2 1       ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 2
-361 [-]: NEWTABLE  R5 2 0       ; R5 := {}
-362 [-]: CONST     R6 1         ; R6 := 1.000000
-363 [-]: NEWTABLE  R7 42 0      ; R7 := {}
-364 [-]: LOADK     R8 K307      ; R8 := "Development"
-365 [-]: LOADK     R9 K308      ; R9 := "Security"
-366 [-]: LOADK     R10 K309     ; R10 := "Growth"
-367 [-]: LOADK     R11 K310     ; R11 := "Compliance"
-368 [-]: LOADK     R12 K311     ; R12 := "Intelligence"
-369 [-]: LOADK     R13 K312     ; R13 := "Information"
-370 [-]: LOADK     R14 K313     ; R14 := "Innovation"
-371 [-]: LOADK     R15 K206     ; R15 := "Training"
-372 [-]: LOADK     R16 K314     ; R16 := "Knowledge"
-373 [-]: LOADK     R17 K315     ; R17 := "Affairs"
-374 [-]: LOADK     R18 K316     ; R18 := "Propaganda"
-375 [-]: LOADK     R19 K317     ; R19 := "Research"
-376 [-]: LOADK     R20 K318     ; R20 := "Communications"
-377 [-]: LOADK     R21 K319     ; R21 := "Leverage"
-378 [-]: LOADK     R22 K320     ; R22 := "Solutions"
-379 [-]: LOADK     R23 K321     ; R23 := "Marketing"
-380 [-]: LOADK     R24 K322     ; R24 := "Directives"
-381 [-]: LOADK     R25 K323     ; R25 := "Integration"
-382 [-]: LOADK     R26 K324     ; R26 := "Functionality"
-383 [-]: LOADK     R27 K325     ; R27 := "Response"
-384 [-]: LOADK     R28 K326     ; R28 := "Resonance"
-385 [-]: LOADK     R29 K327     ; R29 := "Applications"
-386 [-]: LOADK     R30 K328     ; R30 := "Optimization"
-387 [-]: LOADK     R31 K329     ; R31 := "Operations"
-388 [-]: LOADK     R32 K330     ; R32 := "Assurance"
-389 [-]: LOADK     R33 K331     ; R33 := "Impact"
-390 [-]: LOADK     R34 K332     ; R34 := "Mobility"
-391 [-]: LOADK     R35 K333     ; R35 := "Configurations"
-392 [-]: LOADK     R36 K334     ; R36 := "Accountability"
-393 [-]: LOADK     R37 K335     ; R37 := "Factors"
-394 [-]: LOADK     R38 K336     ; R38 := "Metrics"
-395 [-]: LOADK     R39 K337     ; R39 := "Systematization"
-396 [-]: LOADK     R40 K338     ; R40 := "Efficiency"
-397 [-]: LOADK     R41 K339     ; R41 := "Harmonics"
-398 [-]: LOADK     R42 K340     ; R42 := "Restructuring"
-399 [-]: LOADK     R43 K341     ; R43 := "Aglomeration"
-400 [-]: LOADK     R44 K342     ; R44 := "Rebranding"
-401 [-]: LOADK     R45 K343     ; R45 := "Morale"
-402 [-]: LOADK     R46 K344     ; R46 := "Fine-tuning"
-403 [-]: LOADK     R47 K345     ; R47 := "Thinking"
-404 [-]: LOADK     R48 K346     ; R48 := "Initiatives"
-405 [-]: LOADK     R49 K347     ; R49 := "Emergence"
-406 [-]: LOADK     R50 K348     ; R50 := "Progression"
-407 [-]: LOADK     R51 K349     ; R51 := "Purchasing"
-408 [-]: LOADK     R52 K350     ; R52 := "Expenditure"
-409 [-]: LOADK     R53 K351     ; R53 := "Dynamics"
-410 [-]: LOADK     R54 K352     ; R54 := "Planning"
-411 [-]: LOADK     R55 K353     ; R55 := "Protocols"
-412 [-]: LOADK     R56 K354     ; R56 := "Zoning"
-413 [-]: LOADK     R57 K355     ; R57 := "Implementation"
-414 [-]: SETLIST   R7 50 1      ; R7[(1-1)*FPF+i] := R(7+i), 1 <= i <= 50
-415 [-]: LOADK     R8 K356      ; R8 := "Differentiation"
-416 [-]: LOADK     R9 K357      ; R9 := "Transformation"
-417 [-]: LOADK     R10 K358     ; R10 := "Negotiation"
-418 [-]: LOADK     R11 K359     ; R11 := "Collaboration"
-419 [-]: LOADK     R12 K360     ; R12 := "Authorization"
-420 [-]: LOADK     R13 K361     ; R13 := "Competence"
-421 [-]: LOADK     R14 K362     ; R14 := "Distinction"
-422 [-]: LOADK     R15 K363     ; R15 := "Convenience"
-423 [-]: LOADK     R16 K364     ; R16 := "Excellence"
-424 [-]: LOADK     R17 K362     ; R17 := "Distinction"
-425 [-]: LOADK     R18 K365     ; R18 := "Synergy"
-426 [-]: LOADK     R19 K366     ; R19 := "Concepts"
-427 [-]: LOADK     R20 K367     ; R20 := "Coordination"
-428 [-]: LOADK     R21 K368     ; R21 := "Cultivation"
-429 [-]: LOADK     R22 K369     ; R22 := "Customization"
-430 [-]: LOADK     R23 K370     ; R23 := "Delivery"
-431 [-]: LOADK     R24 K371     ; R24 := "Deployment"
-432 [-]: LOADK     R25 K372     ; R25 := "Dissemination"
-433 [-]: LOADK     R26 K373     ; R26 := "Teambuilding"
-434 [-]: LOADK     R27 K374     ; R27 := "Resolution"
-435 [-]: LOADK     R28 K375     ; R28 := "Re-imagination"
-436 [-]: LOADK     R29 K376     ; R29 := "Correction"
-437 [-]: LOADK     R30 K377     ; R30 := "Relationships"
-438 [-]: LOADK     R31 K378     ; R31 := "Retraining"
-439 [-]: LOADK     R32 K379     ; R32 := "Diversification"
-440 [-]: LOADK     R33 K380     ; R33 := "Acquisition"
-441 [-]: LOADK     R34 K381     ; R34 := "Exploitation"
-442 [-]: LOADK     R35 K382     ; R35 := "Takeovers"
-443 [-]: LOADK     R36 K383     ; R36 := "Headhunting"
-444 [-]: LOADK     R37 K384     ; R37 := "Outsourcing"
-445 [-]: LOADK     R38 K385     ; R38 := "Recruitment"
-446 [-]: LOADK     R39 K386     ; R39 := "Motivation"
-447 [-]: LOADK     R40 K387     ; R40 := "Discipline"
-448 [-]: LOADK     R41 K388     ; R41 := "Assessment"
-449 [-]: LOADK     R42 K389     ; R42 := "Monetization"
-450 [-]: LOADK     R43 K390     ; R43 := "Evolution"
-451 [-]: LOADK     R44 K391     ; R44 := "Extension"
-452 [-]: LOADK     R45 K392     ; R45 := "Fabrication"
-453 [-]: LOADK     R46 K393     ; R46 := "Facilitation"
-454 [-]: LOADK     R47 K394     ; R47 := "Formulation"
-455 [-]: LOADK     R48 K395     ; R48 := "Generation"
-456 [-]: LOADK     R49 K309     ; R49 := "Growth"
-457 [-]: LOADK     R50 K396     ; R50 := "Onboarding"
-458 [-]: LOADK     R51 K397     ; R51 := "Supply Chains"
-459 [-]: LOADK     R52 K398     ; R52 := "Communities"
-460 [-]: LOADK     R53 K399     ; R53 := "Economies"
-461 [-]: LOADK     R54 K400     ; R54 := "Future-Proofing"
-462 [-]: LOADK     R55 K401     ; R55 := "Enterprise"
-463 [-]: LOADK     R56 K402     ; R56 := "Exceptionalism"
-464 [-]: LOADK     R57 K403     ; R57 := "Portals"
-465 [-]: SETLIST   R7 50 2      ; R7[(2-1)*FPF+i] := R(7+i), 1 <= i <= 50
-466 [-]: LOADK     R8 K404      ; R8 := "Adoption"
-467 [-]: LOADK     R9 K405      ; R9 := "Alignment"
-468 [-]: LOADK     R10 K406     ; R10 := "Architectures"
-469 [-]: LOADK     R11 K407     ; R11 := "Bandwidth"
-470 [-]: LOADK     R12 K408     ; R12 := "Benefits"
-471 [-]: LOADK     R13 K409     ; R13 := "Best Practices"
-472 [-]: LOADK     R14 K410     ; R14 := "Catalyzation"
-473 [-]: LOADK     R15 K411     ; R15 := "Prosthetics"
-474 [-]: LOADK     R16 K412     ; R16 := "Channels"
-475 [-]: LOADK     R17 K413     ; R17 := "Content"
-476 [-]: LOADK     R18 K414     ; R18 := "Conversion"
-477 [-]: LOADK     R19 K415     ; R19 := "Core Competencies"
-478 [-]: LOADK     R20 K416     ; R20 := "Customer Service"
-479 [-]: LOADK     R21 K417     ; R21 := "Deliverables"
-480 [-]: LOADK     R22 K418     ; R22 := "Corpus Capital"
-481 [-]: LOADK     R23 K419     ; R23 := "Ideas"
-482 [-]: LOADK     R24 K420     ; R24 := "Intermediaries"
-483 [-]: LOADK     R25 K421     ; R25 := "Infrastructures"
-484 [-]: LOADK     R26 K422     ; R26 := "Intellectual Capital"
-485 [-]: LOADK     R27 K423     ; R27 := "Interfaces"
-486 [-]: LOADK     R28 K424     ; R28 := "Internal Sources"
-487 [-]: LOADK     R29 K425     ; R29 := "Leadership"
-488 [-]: LOADK     R30 K426     ; R30 := "Manufacture"
-489 [-]: LOADK     R31 K427     ; R31 := "Market Resources"
-490 [-]: LOADK     R32 K428     ; R32 := "Materials"
-491 [-]: LOADK     R33 K429     ; R33 := "Methodologies"
-492 [-]: LOADK     R34 K430     ; R34 := "Empowerment"
-493 [-]: LOADK     R35 K431     ; R35 := "Mindshare"
-494 [-]: LOADK     R36 K432     ; R36 := "Models"
-495 [-]: LOADK     R37 K433     ; R37 := "Niches"
-496 [-]: LOADK     R38 K434     ; R38 := "Opportunities"
-497 [-]: LOADK     R39 K435     ; R39 := "Paradigms"
-498 [-]: LOADK     R40 K436     ; R40 := "Partnerships"
-499 [-]: LOADK     R41 K437     ; R41 := "Platforms"
-500 [-]: LOADK     R42 K438     ; R42 := "Improvements"
-501 [-]: LOADK     R43 K439     ; R43 := "Processes"
-502 [-]: LOADK     R44 K440     ; R44 := "Vectors"
-503 [-]: LOADK     R45 K441     ; R45 := "Resources"
-504 [-]: LOADK     R46 K442     ; R46 := "Results"
-505 [-]: LOADK     R47 K443     ; R47 := "Scenarios"
-506 [-]: LOADK     R48 K444     ; R48 := "Schemas"
-507 [-]: LOADK     R49 K445     ; R49 := "Services"
-508 [-]: LOADK     R50 K446     ; R50 := "Storage"
-509 [-]: LOADK     R51 K447     ; R51 := "Systems"
-510 [-]: LOADK     R52 K448     ; R52 := "Linkage"
-511 [-]: LOADK     R53 K449     ; R53 := "Users"
-512 [-]: LOADK     R54 K450     ; R54 := "Value"
-513 [-]: LOADK     R55 K451     ; R55 := "Weapons Systems"
-514 [-]: LOADK     R56 K452     ; R56 := "Plasma Technologies"
-515 [-]: LOADK     R57 K453     ; R57 := "Reactive Defense Systems"
-516 [-]: SETLIST   R7 50 3      ; R7[(3-1)*FPF+i] := R(7+i), 1 <= i <= 50
-517 [-]: LOADK     R8 K454      ; R8 := "Space Travel"
-518 [-]: SETLIST   R7 1 4       ; R7[(4-1)*FPF+i] := R(7+i), 1 <= i <= 1
-519 [-]: SETLIST   R5 2 1       ; R5[(1-1)*FPF+i] := R(5+i), 1 <= i <= 2
-520 [-]: NEWTABLE  R6 2 0       ; R6 := {}
-521 [-]: CONST     R7 0         ; R7 := 0.500000
-522 [-]: NEWTABLE  R8 25 0      ; R8 := {}
-523 [-]: LOADK     R9 K455      ; R9 := "(Earth Sector)"
-524 [-]: LOADK     R10 K456     ; R10 := "(Mars Sector)"
-525 [-]: LOADK     R11 K457     ; R11 := "(Neptune Sector)"
-526 [-]: LOADK     R12 K458     ; R12 := "(Venus Sector)"
-527 [-]: LOADK     R13 K459     ; R13 := "(Saturn Sector)"
-528 [-]: LOADK     R14 K460     ; R14 := "(Planetary)"
-529 [-]: LOADK     R15 K461     ; R15 := "(Interplanetary)"
-530 [-]: LOADK     R16 K462     ; R16 := "(Ceres Sector)"
-531 [-]: LOADK     R17 K463     ; R17 := "(Europa Sector)"
-532 [-]: LOADK     R18 K464     ; R18 := "(Jupiter Sector)"
-533 [-]: LOADK     R19 K465     ; R19 := "(Mercury Sector)"
-534 [-]: LOADK     R20 K466     ; R20 := "(Phobos Sector)"
-535 [-]: LOADK     R21 K467     ; R21 := "(Uranus Sector)"
-536 [-]: LOADK     R22 K468     ; R22 := "(Pluto Sector)"
-537 [-]: LOADK     R23 K469     ; R23 := "(Administration)"
-538 [-]: LOADK     R24 K470     ; R24 := "(Analytics)"
-539 [-]: LOADK     R25 K471     ; R25 := "(Department of Profit)"
-540 [-]: LOADK     R26 K472     ; R26 := "(Business Affairs)"
-541 [-]: LOADK     R27 K473     ; R27 := "(Medical Applications)"
-542 [-]: LOADK     R28 K474     ; R28 := "(Data Insights)"
-543 [-]: LOADK     R29 K475     ; R29 := "(Corporate Affairs)"
-544 [-]: LOADK     R30 K476     ; R30 := "(Investment Logistics)"
-545 [-]: LOADK     R31 K477     ; R31 := "(in training)"
-546 [-]: LOADK     R32 K478     ; R32 := "(Legal Department)"
-547 [-]: LOADK     R33 K479     ; R33 := "(Council Affairs)"
-548 [-]: LOADK     R34 K480     ; R34 := "(Psychological Operations)"
-549 [-]: LOADK     R35 K481     ; R35 := "(Practical Applications)"
-550 [-]: LOADK     R36 K482     ; R36 := "(Marketing)"
-551 [-]: LOADK     R37 K483     ; R37 := "(Trust Division)"
-552 [-]: LOADK     R38 K484     ; R38 := "(Defence)"
-553 [-]: LOADK     R39 K485     ; R39 := "(Quality Assurance)"
-554 [-]: LOADK     R40 K486     ; R40 := "(Passionpreneurial Division)"
-555 [-]: LOADK     R41 K487     ; R41 := "(Acting)"
-556 [-]: LOADK     R42 K488     ; R42 := "(Temporary)"
-557 [-]: LOADK     R43 K489     ; R43 := "(Probationary)"
-558 [-]: SETLIST   R8 35 1      ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 35
-559 [-]: SETLIST   R6 2 1       ; R6[(1-1)*FPF+i] := R(6+i), 1 <= i <= 2
-560 [-]: SETLIST   R0 6 1       ; R0[(1-1)*FPF+i] := R(0+i), 1 <= i <= 6
-561 [-]: NEWTABLE  R1 1 0       ; R1 := {}
-562 [-]: NEWTABLE  R2 2 0       ; R2 := {}
-563 [-]: CONST     R3 1         ; R3 := 1.000000
-564 [-]: NEWTABLE  R4 51 0      ; R4 := {}
-565 [-]: LOADK     R5 K490      ; R5 := "Tech"
-566 [-]: LOADK     R6 K491      ; R6 := "Engineer"
-567 [-]: LOADK     R7 K492      ; R7 := "Overseer"
-568 [-]: LOADK     R8 K493      ; R8 := "Functionary"
-569 [-]: LOADK     R9 K494      ; R9 := "Clerk"
-570 [-]: LOADK     R10 K495     ; R10 := "Slave"
-571 [-]: LOADK     R11 K496     ; R11 := "Drone"
-572 [-]: LOADK     R12 K497     ; R12 := "Pilot"
-573 [-]: LOADK     R13 K498     ; R13 := "Test Subject"
-574 [-]: LOADK     R14 K499     ; R14 := "Accountant"
-575 [-]: LOADK     R15 K500     ; R15 := "Administrator"
-576 [-]: LOADK     R16 K501     ; R16 := "Apprentice"
-577 [-]: LOADK     R17 K502     ; R17 := "Instructor"
-578 [-]: LOADK     R18 K503     ; R18 := "Comptroller"
-579 [-]: LOADK     R19 K504     ; R19 := "Technician"
-580 [-]: LOADK     R20 K505     ; R20 := "Meaning Authority"
-581 [-]: LOADK     R21 K506     ; R21 := "Dispatcher"
-582 [-]: LOADK     R22 K507     ; R22 := "Analyst"
-583 [-]: LOADK     R23 K508     ; R23 := "Developer"
-584 [-]: LOADK     R24 K509     ; R24 := "Architect"
-585 [-]: LOADK     R25 K22      ; R25 := "Assistant"
-586 [-]: LOADK     R26 K510     ; R26 := "Artist"
-587 [-]: LOADK     R27 K511     ; R27 := "Director"
-588 [-]: LOADK     R28 K512     ; R28 := "Officer"
-589 [-]: LOADK     R29 K513     ; R29 := "Manager"
-590 [-]: LOADK     R30 K514     ; R30 := "Assistant Manager"
-591 [-]: LOADK     R31 K20      ; R31 := "Specialist"
-592 [-]: LOADK     R32 K515     ; R32 := "Expansion Contractor"
-593 [-]: LOADK     R33 K516     ; R33 := "Leader"
-594 [-]: LOADK     R34 K517     ; R34 := "Coordinator "
-595 [-]: LOADK     R35 K518     ; R35 := "Inspector "
-596 [-]: LOADK     R36 K519     ; R36 := "Visionary "
-597 [-]: LOADK     R37 K520     ; R37 := "Imagineer "
-598 [-]: LOADK     R38 K521     ; R38 := "Engineer "
-599 [-]: LOADK     R39 K522     ; R39 := "Oversight Overseer"
-600 [-]: LOADK     R40 K523     ; R40 := "Officer "
-601 [-]: LOADK     R41 K524     ; R41 := "Functionary "
-602 [-]: LOADK     R42 K525     ; R42 := "Supervisor "
-603 [-]: LOADK     R43 K526     ; R43 := "Liason "
-604 [-]: LOADK     R44 K527     ; R44 := "Manager "
-605 [-]: LOADK     R45 K528     ; R45 := "Administrator "
-606 [-]: LOADK     R46 K529     ; R46 := "Director "
-607 [-]: LOADK     R47 K530     ; R47 := "Architect "
-608 [-]: LOADK     R48 K531     ; R48 := "Analyst "
-609 [-]: LOADK     R49 K532     ; R49 := "Designer "
-610 [-]: LOADK     R50 K533     ; R50 := "Planner "
-611 [-]: LOADK     R51 K534     ; R51 := "Synergist "
-612 [-]: LOADK     R52 K535     ; R52 := "Orchestrator "
-613 [-]: LOADK     R53 K536     ; R53 := "Technician "
-614 [-]: LOADK     R54 K537     ; R54 := "Developer "
-615 [-]: SETLIST   R4 50 1      ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 50
-616 [-]: LOADK     R5 K538      ; R5 := "Producer "
-617 [-]: LOADK     R6 K539      ; R6 := "Consultant "
-618 [-]: LOADK     R7 K540      ; R7 := "Facilitator "
-619 [-]: LOADK     R8 K541      ; R8 := "Agent "
-620 [-]: LOADK     R9 K542      ; R9 := "Investor "
-621 [-]: LOADK     R10 K543     ; R10 := "Artist "
-622 [-]: LOADK     R11 K544     ; R11 := "Member "
-623 [-]: LOADK     R12 K20      ; R12 := "Specialist"
-624 [-]: LOADK     R13 K545     ; R13 := "Passionpreneur "
-625 [-]: LOADK     R14 K546     ; R14 := "Champion  "
-626 [-]: LOADK     R15 K547     ; R15 := "Expert"
-627 [-]: LOADK     R16 K548     ; R16 := "Conceptualizer "
-628 [-]: LOADK     R17 K549     ; R17 := "Driver "
-629 [-]: LOADK     R18 K550     ; R18 := "Proactivator "
-630 [-]: LOADK     R19 K551     ; R19 := "Secretary "
-631 [-]: LOADK     R20 K552     ; R20 := "Auditor "
-632 [-]: LOADK     R21 K553     ; R21 := "Protege "
-633 [-]: LOADK     R22 K554     ; R22 := "Adviser "
-634 [-]: LOADK     R23 K555     ; R23 := "Authority"
-635 [-]: LOADK     R24 K556     ; R24 := "Contractor "
-636 [-]: LOADK     R25 K557     ; R25 := "Appointee "
-637 [-]: LOADK     R26 K558     ; R26 := "Scholar"
-638 [-]: LOADK     R27 K559     ; R27 := "Intern"
-639 [-]: LOADK     R28 K560     ; R28 := "Soldier"
-640 [-]: LOADK     R29 K561     ; R29 := "Scientist"
-641 [-]: LOADK     R30 K562     ; R30 := "Indentured Servant"
-642 [-]: LOADK     R31 K563     ; R31 := "Convict"
-643 [-]: LOADK     R32 K564     ; R32 := "Innovator"
-644 [-]: LOADK     R33 K565     ; R33 := "Evangelist"
-645 [-]: LOADK     R34 K566     ; R34 := "Concierge"
-646 [-]: LOADK     R35 K567     ; R35 := "Happiness Concierge"
-647 [-]: LOADK     R36 K568     ; R36 := "Trust Engineer"
-648 [-]: LOADK     R37 K569     ; R37 := "Happiness Engineer"
-649 [-]: LOADK     R38 K570     ; R38 := "Conformity Engineer"
-650 [-]: LOADK     R39 K571     ; R39 := "Librarian"
-651 [-]: LOADK     R40 K572     ; R40 := "Optimizer"
-652 [-]: LOADK     R41 K573     ; R41 := "Converter"
-653 [-]: LOADK     R42 K574     ; R42 := "Researcher"
-654 [-]: LOADK     R43 K575     ; R43 := "Security Officer"
-655 [-]: LOADK     R44 K576     ; R44 := "Infosec"
-656 [-]: LOADK     R45 K577     ; R45 := "Philosopher"
-657 [-]: LOADK     R46 K578     ; R46 := "Curator"
-658 [-]: LOADK     R47 K579     ; R47 := "Historian"
-659 [-]: LOADK     R48 K580     ; R48 := "Weapons Tech"
-660 [-]: LOADK     R49 K581     ; R49 := "Info Tech"
-661 [-]: LOADK     R50 K582     ; R50 := "Astrogation Tech"
-662 [-]: LOADK     R51 K583     ; R51 := "Fiduciary Tech"
-663 [-]: LOADK     R52 K584     ; R52 := "Lawyer"
-664 [-]: LOADK     R53 K585     ; R53 := "Hacker"
-665 [-]: LOADK     R54 K586     ; R54 := "Quartermaster"
-666 [-]: SETLIST   R4 50 2      ; R4[(2-1)*FPF+i] := R(4+i), 1 <= i <= 50
-667 [-]: LOADK     R5 K587      ; R5 := "Observer"
-668 [-]: LOADK     R6 K588      ; R6 := "Accelerator"
-669 [-]: LOADK     R7 K589      ; R7 := "Field Agent"
-670 [-]: LOADK     R8 K590      ; R8 := "Qualifier"
-671 [-]: LOADK     R9 K591      ; R9 := "Evaluator"
-672 [-]: LOADK     R10 K592     ; R10 := "Quality Assurance"
-673 [-]: LOADK     R11 K593     ; R11 := "Expunger"
-674 [-]: LOADK     R12 K594     ; R12 := "Aggregator"
-675 [-]: LOADK     R13 K507     ; R13 := "Analyst"
-676 [-]: LOADK     R14 K595     ; R14 := "Extrapolator"
-677 [-]: LOADK     R15 K596     ; R15 := "Diplomat"
-678 [-]: LOADK     R16 K597     ; R16 := "Negotiator"
-679 [-]: LOADK     R17 K598     ; R17 := "Assembler"
-680 [-]: LOADK     R18 K599     ; R18 := "Fabricator"
-681 [-]: LOADK     R19 K600     ; R19 := "Reconciliation"
-682 [-]: LOADK     R20 K601     ; R20 := "Authenticator"
-683 [-]: LOADK     R21 K602     ; R21 := "Finalization"
-684 [-]: LOADK     R22 K603     ; R22 := "Automation"
-685 [-]: LOADK     R23 K604     ; R23 := "Data Recovery"
-686 [-]: LOADK     R24 K605     ; R24 := "Rectifier"
-687 [-]: LOADK     R25 K606     ; R25 := "Value Reinforcement"
-688 [-]: LOADK     R26 K607     ; R26 := "Branch Manager"
-689 [-]: LOADK     R27 K514     ; R27 := "Assistant Manager"
-690 [-]: LOADK     R28 K608     ; R28 := "Rehabilitation"
-691 [-]: LOADK     R29 K609     ; R29 := "Initializer"
-692 [-]: LOADK     R30 K610     ; R30 := "Bundler"
-693 [-]: LOADK     R31 K611     ; R31 := "Installer"
-694 [-]: LOADK     R32 K612     ; R32 := "Replicator"
-695 [-]: LOADK     R33 K613     ; R33 := "Integrator"
-696 [-]: LOADK     R34 K614     ; R34 := "Certifier"
-697 [-]: LOADK     R35 K615     ; R35 := "Licensing"
-698 [-]: LOADK     R36 K616     ; R36 := "Classification"
-699 [-]: LOADK     R37 K617     ; R37 := "Revisionary"
-700 [-]: LOADK     R38 K618     ; R38 := "Cleaner"
-701 [-]: LOADK     R39 K619     ; R39 := "Maintenance"
-702 [-]: LOADK     R40 K620     ; R40 := "Cartographer"
-703 [-]: LOADK     R41 K621     ; R41 := "Mechanization"
-704 [-]: LOADK     R42 K622     ; R42 := "Collater"
-705 [-]: LOADK     R43 K623     ; R43 := "Data Salvage"
-706 [-]: LOADK     R44 K624     ; R44 := "Hazmat Worker"
-707 [-]: LOADK     R45 K625     ; R45 := "Crewman"
-708 [-]: LOADK     R46 K626     ; R46 := "Scanner"
-709 [-]: LOADK     R47 K627     ; R47 := "Geographer"
-710 [-]: LOADK     R48 K628     ; R48 := "Encryption Specialist"
-711 [-]: LOADK     R49 K629     ; R49 := "Sequencer"
-712 [-]: LOADK     R50 K630     ; R50 := "Network Official"
-713 [-]: LOADK     R51 K631     ; R51 := "Optimization Manager"
-714 [-]: LOADK     R52 K632     ; R52 := "Systemization"
-715 [-]: LOADK     R53 K633     ; R53 := "Tracer"
-716 [-]: LOADK     R54 K634     ; R54 := "Toggler"
-717 [-]: SETLIST   R4 50 3      ; R4[(3-1)*FPF+i] := R(4+i), 1 <= i <= 50
-718 [-]: LOADK     R5 K635      ; R5 := "Digitizer"
-719 [-]: LOADK     R6 K636      ; R6 := "Distribution Slave"
-720 [-]: LOADK     R7 K637      ; R7 := "Prioritization"
-721 [-]: LOADK     R8 K638      ; R8 := "Enhancement Clerk"
-722 [-]: LOADK     R9 K639      ; R9 := "Eradication"
-723 [-]: LOADK     R10 K640     ; R10 := "Protection"
-724 [-]: LOADK     R11 K641     ; R11 := "Prototyping"
-725 [-]: LOADK     R12 K642     ; R12 := "Estimator"
-726 [-]: LOADK     R13 K643     ; R13 := "Obedience Instructor"
-727 [-]: LOADK     R14 K644     ; R14 := "Ambassador"
-728 [-]: LOADK     R15 K645     ; R15 := "Novelist"
-729 [-]: LOADK     R16 K646     ; R16 := "Playwright"
-730 [-]: LOADK     R17 K647     ; R17 := "Conversion Optimization"
-731 [-]: LOADK     R18 K648     ; R18 := "Marketing Manager"
-732 [-]: LOADK     R19 K649     ; R19 := "Marketing Clerk"
-733 [-]: LOADK     R20 K650     ; R20 := "Marketing Drone"
-734 [-]: LOADK     R21 K651     ; R21 := "Editor"
-735 [-]: LOADK     R22 K309     ; R22 := "Growth"
-736 [-]: LOADK     R23 K652     ; R23 := "Secretary"
-737 [-]: LOADK     R24 K653     ; R24 := "Educator"
-738 [-]: LOADK     R25 K654     ; R25 := "Guide"
-739 [-]: LOADK     R26 K655     ; R26 := "Sales"
-740 [-]: LOADK     R27 K656     ; R27 := "Outbound Sales"
-741 [-]: LOADK     R28 K657     ; R28 := "Sales Associate"
-742 [-]: LOADK     R29 K318     ; R29 := "Communications"
-743 [-]: LOADK     R30 K658     ; R30 := "Communications Manager"
-744 [-]: LOADK     R31 K659     ; R31 := "Communications Drone"
-745 [-]: LOADK     R32 K660     ; R32 := "Inspiration Officer"
-746 [-]: LOADK     R33 K661     ; R33 := "Head of Operations"
-747 [-]: LOADK     R34 K662     ; R34 := "Obedience Officer"
-748 [-]: LOADK     R35 K663     ; R35 := "Operations Manager"
-749 [-]: LOADK     R36 K664     ; R36 := "Operations Generalist"
-750 [-]: LOADK     R37 K416     ; R37 := "Customer Service"
-751 [-]: LOADK     R38 K665     ; R38 := "Happiness Officer"
-752 [-]: LOADK     R39 K666     ; R39 := "Corpus Resources"
-753 [-]: LOADK     R40 K667     ; R40 := "Experience Designer"
-754 [-]: LOADK     R41 K668     ; R41 := "Resource Manager"
-755 [-]: LOADK     R42 K669     ; R42 := "Resource Drone"
-756 [-]: LOADK     R43 K441     ; R43 := "Resources"
-757 [-]: LOADK     R44 K670     ; R44 := "Recruiter"
-758 [-]: LOADK     R45 K671     ; R45 := "People Operations"
-759 [-]: LOADK     R46 K672     ; R46 := "Mechanic"
-760 [-]: LOADK     R47 K673     ; R47 := "Logic"
-761 [-]: LOADK     R48 K674     ; R48 := "Propagation Manager"
-762 [-]: LOADK     R49 K675     ; R49 := "Propagation Drone"
-763 [-]: LOADK     R50 K676     ; R50 := "Paranoia Propagation"
-764 [-]: LOADK     R51 K677     ; R51 := "Signal"
-765 [-]: LOADK     R52 K678     ; R52 := "Signal Manager"
-766 [-]: LOADK     R53 K679     ; R53 := "Signal Drone"
-767 [-]: LOADK     R54 K680     ; R54 := "Signal Expert"
-768 [-]: SETLIST   R4 50 4      ; R4[(4-1)*FPF+i] := R(4+i), 1 <= i <= 50
-769 [-]: LOADK     R5 K681      ; R5 := "Support"
-770 [-]: LOADK     R6 K682      ; R6 := "Underling"
-771 [-]: LOADK     R7 K493      ; R7 := "Functionary"
-772 [-]: LOADK     R8 K683      ; R8 := "Plebe"
-773 [-]: LOADK     R9 K684      ; R9 := "Dogsbody"
-774 [-]: LOADK     R10 K685     ; R10 := "Paranoia Influencer"
-775 [-]: LOADK     R11 K686     ; R11 := "Community Figure"
-776 [-]: LOADK     R12 K687     ; R12 := "Social Integration"
-777 [-]: LOADK     R13 K688     ; R13 := "Social Integrator"
-778 [-]: LOADK     R14 K689     ; R14 := "Media Control"
-779 [-]: LOADK     R15 K690     ; R15 := "Solutionist"
-780 [-]: LOADK     R16 K691     ; R16 := "Head of Fun"
-781 [-]: LOADK     R17 K692     ; R17 := "Image Officer"
-782 [-]: LOADK     R18 K693     ; R18 := "Enabler"
-783 [-]: LOADK     R19 K694     ; R19 := "Lead Enabler"
-784 [-]: LOADK     R20 K695     ; R20 := "Manager of Codependence"
-785 [-]: LOADK     R21 K696     ; R21 := "Workflow Optimizer"
-786 [-]: LOADK     R22 K338     ; R22 := "Efficiency"
-787 [-]: LOADK     R23 K697     ; R23 := "Efficiency Lead"
-788 [-]: LOADK     R24 K698     ; R24 := "Office Manager"
-789 [-]: LOADK     R25 K699     ; R25 := "Admin Assistant"
-790 [-]: LOADK     R26 K69      ; R26 := "Executive"
-791 [-]: LOADK     R27 K700     ; R27 := "Herder"
-792 [-]: LOADK     R28 K701     ; R28 := "CEO"
-793 [-]: LOADK     R29 K702     ; R29 := "Ego Operations"
-794 [-]: LOADK     R30 K703     ; R30 := "Happiness Control"
-795 [-]: LOADK     R31 K704     ; R31 := "Listener"
-796 [-]: LOADK     R32 K705     ; R32 := "Social Engineering"
-797 [-]: LOADK     R33 K706     ; R33 := "Financial Officer"
-798 [-]: LOADK     R34 K707     ; R34 := "Banking"
-799 [-]: LOADK     R35 K708     ; R35 := "Kerning"
-800 [-]: LOADK     R36 K709     ; R36 := "Shredding"
-801 [-]: LOADK     R37 K710     ; R37 := "Folder"
-802 [-]: LOADK     R38 K711     ; R38 := "Judge"
-803 [-]: LOADK     R39 K712     ; R39 := "Assassin"
-804 [-]: LOADK     R40 K713     ; R40 := "Infiltrator"
-805 [-]: LOADK     R41 K714     ; R41 := "Tester"
-806 [-]: LOADK     R42 K715     ; R42 := "Test Pilot"
-807 [-]: LOADK     R43 K716     ; R43 := "Generalist"
-808 [-]: LOADK     R44 K717     ; R44 := "Polymath"
-809 [-]: LOADK     R45 K718     ; R45 := "Problem Solver"
-810 [-]: LOADK     R46 K719     ; R46 := "Development Associate"
-811 [-]: LOADK     R47 K720     ; R47 := "Development Exec"
-812 [-]: LOADK     R48 K721     ; R48 := "Sniffer"
-813 [-]: LOADK     R49 K722     ; R49 := "Feeler"
-814 [-]: LOADK     R50 K723     ; R50 := "Excavator"
-815 [-]: LOADK     R51 K724     ; R51 := "Dissemnination"
-816 [-]: LOADK     R52 K725     ; R52 := "Dissemninator"
-817 [-]: LOADK     R53 K726     ; R53 := "Problem Development"
-818 [-]: LOADK     R54 K727     ; R54 := "Inspiration Mechanic"
-819 [-]: SETLIST   R4 50 5      ; R4[(5-1)*FPF+i] := R(4+i), 1 <= i <= 50
-820 [-]: LOADK     R5 K153      ; R5 := "Academic"
-821 [-]: LOADK     R6 K728      ; R6 := "Floater"
-822 [-]: LOADK     R7 K729      ; R7 := "Sprayer"
-823 [-]: LOADK     R8 K682      ; R8 := "Underling"
-824 [-]: LOADK     R9 K730      ; R9 := "Undersecretary"
-825 [-]: LOADK     R10 K731     ; R10 := "Junior Assistant Manager"
-826 [-]: LOADK     R11 K732     ; R11 := "Repercussion Control"
-827 [-]: LOADK     R12 K733     ; R12 := "Mismanagement Management"
-828 [-]: LOADK     R13 K734     ; R13 := "Optics"
-829 [-]: LOADK     R14 K735     ; R14 := "Vision Focuser"
-830 [-]: LOADK     R15 K736     ; R15 := "Creator"
-831 [-]: LOADK     R16 K737     ; R16 := "Dunker"
-832 [-]: LOADK     R17 K738     ; R17 := "Serf"
-833 [-]: LOADK     R18 K739     ; R18 := "Surrender Manager"
-834 [-]: LOADK     R19 K740     ; R19 := "Conflict Auditor"
-835 [-]: LOADK     R20 K741     ; R20 := "Conflict Synergist"
-836 [-]: LOADK     R21 K742     ; R21 := "Failure Appointee"
-837 [-]: LOADK     R22 K743     ; R22 := "Failure Planner"
-838 [-]: LOADK     R23 K744     ; R23 := "Bomb Pilot"
-839 [-]: LOADK     R24 K745     ; R24 := "Meaning Comptroller"
-840 [-]: LOADK     R25 K746     ; R25 := "Luck Administrator"
-841 [-]: LOADK     R26 K747     ; R26 := "Life Accountant"
-842 [-]: LOADK     R27 K748     ; R27 := "Inspiration Drone"
-843 [-]: LOADK     R28 K749     ; R28 := "Collapse Developer"
-844 [-]: LOADK     R29 K750     ; R29 := "Outcomes"
-845 [-]: LOADK     R30 K751     ; R30 := "Obedience Leader"
-846 [-]: LOADK     R31 K752     ; R31 := "Vision Overseer"
-847 [-]: LOADK     R32 K753     ; R32 := "Deniability"
-848 [-]: LOADK     R33 K754     ; R33 := "Proactivity Slave"
-849 [-]: LOADK     R34 K755     ; R34 := "Innovation Drone"
-850 [-]: LOADK     R35 K756     ; R35 := "Cruelty Administrator"
-851 [-]: LOADK     R36 K757     ; R36 := "Ignorance Specialist"
-852 [-]: LOADK     R37 K758     ; R37 := "Expert Apprentice"
-853 [-]: LOADK     R38 K759     ; R38 := "Failure Instructor"
-854 [-]: LOADK     R39 K760     ; R39 := "Dream Technician"
-855 [-]: LOADK     R40 K761     ; R40 := "Scapegoat Dispatcher"
-856 [-]: LOADK     R41 K762     ; R41 := "Confusion Analyst"
-857 [-]: LOADK     R42 K763     ; R42 := "Chaos Architect"
-858 [-]: LOADK     R43 K764     ; R43 := "Brutality Artist"
-859 [-]: LOADK     R44 K765     ; R44 := "Loss Director"
-860 [-]: LOADK     R45 K766     ; R45 := "Misinformation Director"
-861 [-]: LOADK     R46 K767     ; R46 := "Chaos Director"
-862 [-]: LOADK     R47 K768     ; R47 := "Chaos Manager"
-863 [-]: LOADK     R48 K769     ; R48 := "Confusion Manager"
-864 [-]: LOADK     R49 K770     ; R49 := "Confusion Visionary"
-865 [-]: LOADK     R50 K771     ; R50 := "Generalist Specialist"
-866 [-]: LOADK     R51 K772     ; R51 := "Redaction Overseer"
-867 [-]: LOADK     R52 K752     ; R52 := "Vision Overseer"
-868 [-]: LOADK     R53 K773     ; R53 := "Failure Leader"
-869 [-]: LOADK     R54 K774     ; R54 := "Misinformation Coordinator"
-870 [-]: SETLIST   R4 50 6      ; R4[(6-1)*FPF+i] := R(4+i), 1 <= i <= 50
-871 [-]: LOADK     R5 K775      ; R5 := "Randomality Coordinator"
-872 [-]: LOADK     R6 K776      ; R6 := "Coordination Coordinator"
-873 [-]: LOADK     R7 K777      ; R7 := "Growth Inspector"
-874 [-]: LOADK     R8 K778      ; R8 := "Obfuscation"
-875 [-]: LOADK     R9 K779      ; R9 := "Obfuscation Visionary"
-876 [-]: LOADK     R10 K780     ; R10 := "Conformity Imagineer"
-877 [-]: LOADK     R11 K781     ; R11 := "Harmony Liason"
-878 [-]: LOADK     R12 K782     ; R12 := "Chaos Analyst"
-879 [-]: LOADK     R13 K783     ; R13 := "Entropy Designer"
-880 [-]: LOADK     R14 K784     ; R14 := "Orchestration Synergist"
-881 [-]: LOADK     R15 K785     ; R15 := "Ignorance Consultant"
-882 [-]: LOADK     R16 K786     ; R16 := "Apathy Investor"
-883 [-]: LOADK     R17 K787     ; R17 := "Ignorance Expert"
-884 [-]: LOADK     R18 K788     ; R18 := "Reaction Proactivator"
-885 [-]: LOADK     R19 K789     ; R19 := "Stasis Reactionary"
-886 [-]: LOADK     R20 K790     ; R20 := "Stasis Clerk"
-887 [-]: LOADK     R21 K791     ; R21 := "Permanent Contractor"
-888 [-]: LOADK     R22 K792     ; R22 := "Ignorance Scholar"
-889 [-]: LOADK     R23 K793     ; R23 := "Stasis Innovator"
-890 [-]: LOADK     R24 K794     ; R24 := "Efficiency Drone"
-891 [-]: LOADK     R25 K795     ; R25 := "Efficiency Evangelist"
-892 [-]: LOADK     R26 K796     ; R26 := "Surrender Innovator"
-893 [-]: LOADK     R27 K797     ; R27 := "Dissemnination Concierge"
-894 [-]: LOADK     R28 K798     ; R28 := "Creation Auditor"
-895 [-]: LOADK     R29 K799     ; R29 := "Efficiency Auditor"
-896 [-]: LOADK     R30 K800     ; R30 := "Efficiency Synergist"
-897 [-]: LOADK     R31 K801     ; R31 := "Ego Developer"
-898 [-]: LOADK     R32 K802     ; R32 := "Social Control"
-899 [-]: LOADK     R33 K803     ; R33 := "Chaos Integration"
-900 [-]: SETLIST   R4 29 7      ; R4[(7-1)*FPF+i] := R(4+i), 1 <= i <= 29
-901 [-]: SETLIST   R2 2 1       ; R2[(1-1)*FPF+i] := R(2+i), 1 <= i <= 2
-902 [-]: SETLIST   R1 1 1       ; R1[(1-1)*FPF+i] := R(1+i), 1 <= i <= 1
-903 [-]: NEWTABLE  R2 1 0       ; R2 := {}
-904 [-]: NEWTABLE  R3 2 0       ; R3 := {}
-905 [-]: LOADK     R4 K804      ; R4 := 0.200000
-906 [-]: NEWTABLE  R5 32 0      ; R5 := {}
-907 [-]: LOADK     R6 K805      ; R6 := "Dirty"
-908 [-]: LOADK     R7 K806      ; R7 := "Smilin'"
-909 [-]: LOADK     R8 K807      ; R8 := "Ramblin'"
-910 [-]: LOADK     R9 K808      ; R9 := "Big"
-911 [-]: LOADK     R10 K809     ; R10 := "Old"
-912 [-]: LOADK     R11 K810     ; R11 := "Long"
-913 [-]: LOADK     R12 K811     ; R12 := "Slim"
-914 [-]: LOADK     R13 K812     ; R13 := "Little"
-915 [-]: LOADK     R14 K813     ; R14 := "Rude"
-916 [-]: LOADK     R15 K814     ; R15 := "The"
-917 [-]: LOADK     R16 K815     ; R16 := "Boss"
-918 [-]: LOADK     R17 K816     ; R17 := "Howlin'"
-919 [-]: LOADK     R18 K817     ; R18 := "Lightnin'"
-920 [-]: LOADK     R19 K818     ; R19 := "Jumpin'"
-921 [-]: LOADK     R20 K819     ; R20 := "Crazy"
-922 [-]: LOADK     R21 K820     ; R21 := "Crazy Old"
-923 [-]: LOADK     R22 K821     ; R22 := "Big Old"
-924 [-]: LOADK     R23 K822     ; R23 := "Long Tall"
-925 [-]: LOADK     R24 K823     ; R24 := "Blind"
-926 [-]: LOADK     R25 K824     ; R25 := "Deaf"
-927 [-]: LOADK     R26 K825     ; R26 := "Vallis"
-928 [-]: LOADK     R27 K826     ; R27 := "Fortuna"
-929 [-]: LOADK     R28 K827     ; R28 := "Rattlin'"
-930 [-]: LOADK     R29 K828     ; R29 := "Shakin'"
-931 [-]: LOADK     R30 K829     ; R30 := "Scrapper"
-932 [-]: LOADK     R31 K830     ; R31 := "Doc"
-933 [-]: LOADK     R32 K831     ; R32 := "Bumblin'"
-934 [-]: LOADK     R33 K832     ; R33 := "Dancin'"
-935 [-]: LOADK     R34 K833     ; R34 := "Whistlin'"
-936 [-]: LOADK     R35 K834     ; R35 := "Sleepy"
-937 [-]: LOADK     R36 K835     ; R36 := "Second-Chance"
-938 [-]: LOADK     R37 K836     ; R37 := "Li'l"
-939 [-]: LOADK     R38 K837     ; R38 := "Good Time"
-940 [-]: LOADK     R39 K838     ; R39 := "Lowbrow"
-941 [-]: LOADK     R40 K839     ; R40 := "Funny Ol'"
-942 [-]: LOADK     R41 K840     ; R41 := "Lefty"
-943 [-]: LOADK     R42 K811     ; R42 := "Slim"
-944 [-]: LOADK     R43 K841     ; R43 := "Bad"
-945 [-]: LOADK     R44 K842     ; R44 := "Lonesome"
-946 [-]: LOADK     R45 K843     ; R45 := "Wanderin'"
-947 [-]: LOADK     R46 K844     ; R46 := "Barkin'"
-948 [-]: LOADK     R47 K845     ; R47 := "Youngblood"
-949 [-]: LOADK     R48 K846     ; R48 := "Sad"
-950 [-]: LOADK     R49 K847     ; R49 := "Odd"
-951 [-]: LOADK     R50 K848     ; R50 := "New"
-952 [-]: LOADK     R51 K849     ; R51 := "Wild"
-953 [-]: LOADK     R52 K850     ; R52 := "Cool"
-954 [-]: LOADK     R53 K851     ; R53 := "Laughin'"
-955 [-]: LOADK     R54 K852     ; R54 := "Free"
-956 [-]: LOADK     R55 K853     ; R55 := "Hot"
-957 [-]: SETLIST   R5 50 1      ; R5[(1-1)*FPF+i] := R(5+i), 1 <= i <= 50
-958 [-]: LOADK     R6 K854      ; R6 := "Cold"
-959 [-]: LOADK     R7 K855      ; R7 := "Rough"
-960 [-]: LOADK     R8 K856      ; R8 := "Heavy"
-961 [-]: LOADK     R9 K857      ; R9 := "Chill"
-962 [-]: LOADK     R10 K814     ; R10 := "The"
-963 [-]: LOADK     R11 K814     ; R11 := "The"
-964 [-]: LOADK     R12 K814     ; R12 := "The"
-965 [-]: LOADK     R13 K814     ; R13 := "The"
-966 [-]: LOADK     R14 K858     ; R14 := "Quiet"
-967 [-]: LOADK     R15 K859     ; R15 := "Tombstone"
-968 [-]: LOADK     R16 K860     ; R16 := "Thick"
-969 [-]: LOADK     R17 K861     ; R17 := "Low-Down"
-970 [-]: LOADK     R18 K862     ; R18 := "Lucky"
-971 [-]: SETLIST   R5 13 2      ; R5[(2-1)*FPF+i] := R(5+i), 1 <= i <= 13
-972 [-]: SETLIST   R3 2 1       ; R3[(1-1)*FPF+i] := R(3+i), 1 <= i <= 2
-973 [-]: SETLIST   R2 1 1       ; R2[(1-1)*FPF+i] := R(2+i), 1 <= i <= 1
-974 [-]: NEWTABLE  R3 1 0       ; R3 := {}
-975 [-]: NEWTABLE  R4 2 0       ; R4 := {}
-976 [-]: CONST     R5 1         ; R5 := 1.000000
-977 [-]: NEWTABLE  R6 50 0      ; R6 := {}
-978 [-]: LOADK     R7 K863      ; R7 := "Lug"
-979 [-]: LOADK     R8 K864      ; R8 := "Grease"
-980 [-]: LOADK     R9 K865      ; R9 := "Thread"
-981 [-]: LOADK     R10 K866     ; R10 := "Smooth"
-982 [-]: LOADK     R11 K855     ; R11 := "Rough"
-983 [-]: LOADK     R12 K867     ; R12 := "Smoke"
-984 [-]: LOADK     R13 K868     ; R13 := "King"
-985 [-]: LOADK     R14 K869     ; R14 := "Gate"
-986 [-]: LOADK     R15 K857     ; R15 := "Chill"
-987 [-]: LOADK     R16 K870     ; R16 := "Rattle"
-988 [-]: LOADK     R17 K871     ; R17 := "Valve"
-989 [-]: LOADK     R18 K872     ; R18 := "Spin"
-990 [-]: LOADK     R19 K873     ; R19 := "Plate"
-991 [-]: LOADK     R20 K874     ; R20 := "Snake"
-992 [-]: LOADK     R21 K875     ; R21 := "Vent"
-993 [-]: LOADK     R22 K876     ; R22 := "Star"
-994 [-]: LOADK     R23 K282     ; R23 := "Void"
-995 [-]: LOADK     R24 K877     ; R24 := "Steam"
-996 [-]: LOADK     R25 K878     ; R25 := "Zip"
-997 [-]: LOADK     R26 K879     ; R26 := "Boom"
-998 [-]: LOADK     R27 K880     ; R27 := "Grim"
-999 [-]: LOADK     R28 K881     ; R28 := "Sump"
-1000 [-]: LOADK     R29 K882     ; R29 := "Shot"
-1001 [-]: LOADK     R30 K883     ; R30 := "Trigger"
-1002 [-]: LOADK     R31 K884     ; R31 := "Zero"
-1003 [-]: LOADK     R32 K849     ; R32 := "Wild"
-1004 [-]: LOADK     R33 K885     ; R33 := "Chain"
-1005 [-]: LOADK     R34 K886     ; R34 := "Kit"
-1006 [-]: LOADK     R35 K887     ; R35 := "Core"
-1007 [-]: LOADK     R36 K888     ; R36 := "Fuse"
-1008 [-]: LOADK     R37 K889     ; R37 := "Point"
-1009 [-]: LOADK     R38 K890     ; R38 := "Echo"
-1010 [-]: LOADK     R39 K891     ; R39 := "Hitch"
-1011 [-]: LOADK     R40 K892     ; R40 := "Kick"
-1012 [-]: LOADK     R41 K893     ; R41 := "Punch"
-1013 [-]: LOADK     R42 K894     ; R42 := "Fist"
-1014 [-]: LOADK     R43 K895     ; R43 := "Gear"
-1015 [-]: LOADK     R44 K896     ; R44 := "Motor"
-1016 [-]: LOADK     R45 K897     ; R45 := "Mud"
-1017 [-]: LOADK     R46 K898     ; R46 := "Pay"
-1018 [-]: LOADK     R47 K899     ; R47 := "Track"
-1019 [-]: LOADK     R48 K900     ; R48 := "Worm"
-1020 [-]: LOADK     R49 K901     ; R49 := "Pain"
-1021 [-]: LOADK     R50 K902     ; R50 := "Blaze"
-1022 [-]: LOADK     R51 K903     ; R51 := "Dead"
-1023 [-]: LOADK     R52 K904     ; R52 := "Dice"
-1024 [-]: LOADK     R53 K905     ; R53 := "Duck"
-1025 [-]: LOADK     R54 K906     ; R54 := "Electro"
-1026 [-]: LOADK     R55 K852     ; R55 := "Free"
-1027 [-]: LOADK     R56 K907     ; R56 := "Flow"
-1028 [-]: SETLIST   R6 50 1      ; R6[(1-1)*FPF+i] := R(6+i), 1 <= i <= 50
-1029 [-]: LOADK     R7 K908      ; R7 := "Flat"
-1030 [-]: LOADK     R8 K909      ; R8 := "Ghost"
-1031 [-]: LOADK     R9 K910      ; R9 := "High"
-1032 [-]: LOADK     R10 K911     ; R10 := "Low"
-1033 [-]: LOADK     R11 K912     ; R11 := "Fast"
-1034 [-]: LOADK     R12 K913     ; R12 := "Slow"
-1035 [-]: LOADK     R13 K914     ; R13 := "Iron"
-1036 [-]: LOADK     R14 K915     ; R14 := "Steel"
-1037 [-]: LOADK     R15 K916     ; R15 := "Saw"
-1038 [-]: LOADK     R16 K917     ; R16 := "Barrel"
-1039 [-]: LOADK     R17 K918     ; R17 := "Ice"
-1040 [-]: LOADK     R18 K919     ; R18 := "Zone"
-1041 [-]: LOADK     R19 K920     ; R19 := "Pyro"
-1042 [-]: LOADK     R20 K819     ; R20 := "Crazy"
-1043 [-]: LOADK     R21 K921     ; R21 := "Mad"
-1044 [-]: LOADK     R22 K922     ; R22 := "Rush"
-1045 [-]: LOADK     R23 K923     ; R23 := "Gravity"
-1046 [-]: LOADK     R24 K924     ; R24 := "Tumble"
-1047 [-]: LOADK     R25 K925     ; R25 := "Weed"
-1048 [-]: LOADK     R26 K926     ; R26 := "Viper"
-1049 [-]: LOADK     R27 K927     ; R27 := "Hammer"
-1050 [-]: LOADK     R28 K928     ; R28 := "Storm"
-1051 [-]: LOADK     R29 K929     ; R29 := "Spike"
-1052 [-]: LOADK     R30 K930     ; R30 := "Razor"
-1053 [-]: LOADK     R31 K931     ; R31 := "Silent"
-1054 [-]: LOADK     R32 K932     ; R32 := "Proud"
-1055 [-]: LOADK     R33 K933     ; R33 := "Nimble"
-1056 [-]: LOADK     R34 K934     ; R34 := "Swift"
-1057 [-]: LOADK     R35 K935     ; R35 := "Grip"
-1058 [-]: LOADK     R36 K936     ; R36 := "Smudge"
-1059 [-]: LOADK     R37 K937     ; R37 := "Squid"
-1060 [-]: LOADK     R38 K938     ; R38 := "Ace"
-1061 [-]: LOADK     R39 K939     ; R39 := "Fix"
-1062 [-]: LOADK     R40 K940     ; R40 := "Alpha"
-1063 [-]: LOADK     R41 K941     ; R41 := "Axe"
-1064 [-]: LOADK     R42 K942     ; R42 := "Watch"
-1065 [-]: LOADK     R43 K868     ; R43 := "King"
-1066 [-]: LOADK     R44 K943     ; R44 := "Head"
-1067 [-]: LOADK     R45 K944     ; R45 := "Belly"
-1068 [-]: LOADK     R46 K945     ; R46 := "Bent"
-1069 [-]: LOADK     R47 K946     ; R47 := "Brick"
-1070 [-]: LOADK     R48 K947     ; R48 := "Broke"
-1071 [-]: LOADK     R49 K948     ; R49 := "Bug"
-1072 [-]: LOADK     R50 K949     ; R50 := "Bull"
-1073 [-]: LOADK     R51 K950     ; R51 := "Burn"
-1074 [-]: LOADK     R52 K951     ; R52 := "Candy"
-1075 [-]: LOADK     R53 K952     ; R53 := "Cash"
-1076 [-]: LOADK     R54 K953     ; R54 := "Chief"
-1077 [-]: LOADK     R55 K954     ; R55 := "Chaos"
-1078 [-]: LOADK     R56 K955     ; R56 := "Cherry"
-1079 [-]: SETLIST   R6 50 2      ; R6[(2-1)*FPF+i] := R(6+i), 1 <= i <= 50
-1080 [-]: LOADK     R7 K956      ; R7 := "Circle"
-1081 [-]: LOADK     R8 K957      ; R8 := "Cosmo"
-1082 [-]: LOADK     R9 K958      ; R9 := "Clown"
-1083 [-]: LOADK     R10 K959     ; R10 := "Crisp"
-1084 [-]: LOADK     R11 K960     ; R11 := "Crew"
-1085 [-]: LOADK     R12 K961     ; R12 := "Cruise"
-1086 [-]: LOADK     R13 K962     ; R13 := "Crypt"
-1087 [-]: LOADK     R14 K963     ; R14 := "Curse"
-1088 [-]: LOADK     R15 K964     ; R15 := "Cypher"
-1089 [-]: LOADK     R16 K965     ; R16 := "Crash"
-1090 [-]: LOADK     R17 K966     ; R17 := "Dash"
-1091 [-]: LOADK     R18 K967     ; R18 := "Dust"
-1092 [-]: LOADK     R19 K205     ; R19 := "Data"
-1093 [-]: LOADK     R20 K968     ; R20 := "Lock"
-1094 [-]: LOADK     R21 K969     ; R21 := "Dig"
-1095 [-]: LOADK     R22 K970     ; R22 := "Dip"
-1096 [-]: LOADK     R23 K971     ; R23 := "Dirt"
-1097 [-]: LOADK     R24 K972     ; R24 := "Ditch"
-1098 [-]: LOADK     R25 K973     ; R25 := "Dizzy"
-1099 [-]: LOADK     R26 K974     ; R26 := "Double"
-1100 [-]: LOADK     R27 K975     ; R27 := "Doodle"
-1101 [-]: LOADK     R28 K976     ; R28 := "Fly"
-1102 [-]: LOADK     R29 K977     ; R29 := "Evil"
-1103 [-]: LOADK     R30 K978     ; R30 := "Fire"
-1104 [-]: LOADK     R31 K979     ; R31 := "Fan"
-1105 [-]: LOADK     R32 K980     ; R32 := "Feet"
-1106 [-]: LOADK     R33 K981     ; R33 := "Fender"
-1107 [-]: LOADK     R34 K982     ; R34 := "Fester"
-1108 [-]: LOADK     R35 K983     ; R35 := "Flash"
-1109 [-]: LOADK     R36 K984     ; R36 := "Flea"
-1110 [-]: LOADK     R37 K985     ; R37 := "Flex"
-1111 [-]: LOADK     R38 K986     ; R38 := "Flint"
-1112 [-]: LOADK     R39 K987     ; R39 := "Game"
-1113 [-]: LOADK     R40 K988     ; R40 := "Glory"
-1114 [-]: LOADK     R41 K989     ; R41 := "Gonzo"
-1115 [-]: LOADK     R42 K990     ; R42 := "Grass"
-1116 [-]: LOADK     R43 K935     ; R43 := "Grip"
-1117 [-]: LOADK     R44 K991     ; R44 := "Garbage"
-1118 [-]: LOADK     R45 K992     ; R45 := "Gold"
-1119 [-]: LOADK     R46 K993     ; R46 := "Grin"
-1120 [-]: LOADK     R47 K994     ; R47 := "Grit"
-1121 [-]: LOADK     R48 K995     ; R48 := "Gun"
-1122 [-]: LOADK     R49 K996     ; R49 := "Hang"
-1123 [-]: LOADK     R50 K997     ; R50 := "Hip"
-1124 [-]: LOADK     R51 K998     ; R51 := "Hook"
-1125 [-]: LOADK     R52 K999     ; R52 := "Hulk"
-1126 [-]: LOADK     R53 K1000    ; R53 := "Husk"
-1127 [-]: LOADK     R54 K1001    ; R54 := "Happy"
-1128 [-]: LOADK     R55 K1002    ; R55 := "Jugger"
-1129 [-]: LOADK     R56 K1003    ; R56 := "Key"
-1130 [-]: SETLIST   R6 50 3      ; R6[(3-1)*FPF+i] := R(6+i), 1 <= i <= 50
-1131 [-]: LOADK     R7 K1004     ; R7 := "Lab"
-1132 [-]: LOADK     R8 K1005     ; R8 := "Leather"
-1133 [-]: LOADK     R9 K1006     ; R9 := "Link"
-1134 [-]: LOADK     R10 K1007    ; R10 := "Lunch"
-1135 [-]: LOADK     R11 K1008    ; R11 := "Wrench"
-1136 [-]: LOADK     R12 K927     ; R12 := "Hammer"
-1137 [-]: LOADK     R13 K871     ; R13 := "Valve"
-1138 [-]: LOADK     R14 K1009    ; R14 := "Mace"
-1139 [-]: LOADK     R15 K1010    ; R15 := "Magnet"
-1140 [-]: LOADK     R16 K1011    ; R16 := "Max"
-1141 [-]: LOADK     R17 K1012    ; R17 := "Monk"
-1142 [-]: LOADK     R18 K1013    ; R18 := "Nail"
-1143 [-]: LOADK     R19 K1014    ; R19 := "Neutron"
-1144 [-]: LOADK     R20 K1015    ; R20 := "Split"
-1145 [-]: LOADK     R21 K1016    ; R21 := "Dive"
-1146 [-]: LOADK     R22 K1017    ; R22 := "Nozzle"
-1147 [-]: LOADK     R23 K1018    ; R23 := "Ozone"
-1148 [-]: LOADK     R24 K1019    ; R24 := "Pack"
-1149 [-]: LOADK     R25 K1020    ; R25 := "Paint"
-1150 [-]: LOADK     R26 K1021    ; R26 := "Pan"
-1151 [-]: LOADK     R27 K1022    ; R27 := "Cake"
-1152 [-]: LOADK     R28 K1023    ; R28 := "Pipe"
-1153 [-]: LOADK     R29 K1024    ; R29 := "Patch"
-1154 [-]: LOADK     R30 K1025    ; R30 := "Quick"
-1155 [-]: LOADK     R31 K1026    ; R31 := "Tip"
-1156 [-]: LOADK     R32 K1027    ; R32 := "Rocket"
-1157 [-]: LOADK     R33 K1028    ; R33 := "Rotor"
-1158 [-]: LOADK     R34 K1029    ; R34 := "Rudder"
-1159 [-]: LOADK     R35 K922     ; R35 := "Rush"
-1160 [-]: LOADK     R36 K1030    ; R36 := "Rag"
-1161 [-]: LOADK     R37 K1031    ; R37 := "Riddle"
-1162 [-]: LOADK     R38 K1032    ; R38 := "Stack"
-1163 [-]: LOADK     R39 K1033    ; R39 := "Bag"
-1164 [-]: LOADK     R40 K1034    ; R40 := "Sand"
-1165 [-]: LOADK     R41 K1035    ; R41 := "Shackle"
-1166 [-]: LOADK     R42 K1036    ; R42 := "Shade"
-1167 [-]: LOADK     R43 K1037    ; R43 := "Shake"
-1168 [-]: LOADK     R44 K1038    ; R44 := "Short"
-1169 [-]: LOADK     R45 K1039    ; R45 := "Tall"
-1170 [-]: LOADK     R46 K810     ; R46 := "Long"
-1171 [-]: LOADK     R47 K1040    ; R47 := "Shuttle"
-1172 [-]: LOADK     R48 K1041    ; R48 := "Silver"
-1173 [-]: LOADK     R49 K1042    ; R49 := "Skid"
-1174 [-]: LOADK     R50 K1043    ; R50 := "Slag"
-1175 [-]: LOADK     R51 K1044    ; R51 := "Slap"
-1176 [-]: LOADK     R52 K1045    ; R52 := "Slip"
-1177 [-]: LOADK     R53 K1046    ; R53 := "Sly"
-1178 [-]: LOADK     R54 K1047    ; R54 := "Snap"
-1179 [-]: LOADK     R55 K1048    ; R55 := "Spark"
-1180 [-]: LOADK     R56 K1049    ; R56 := "Spanner"
-1181 [-]: SETLIST   R6 50 4      ; R6[(4-1)*FPF+i] := R(6+i), 1 <= i <= 50
-1182 [-]: LOADK     R7 K1050     ; R7 := "Stink"
-1183 [-]: LOADK     R8 K1051     ; R8 := "Stone"
-1184 [-]: LOADK     R9 K1052     ; R9 := "Super"
-1185 [-]: LOADK     R10 K1053    ; R10 := "Scar"
-1186 [-]: LOADK     R11 K1054    ; R11 := "Shadow"
-1187 [-]: LOADK     R12 K1055    ; R12 := "Skull"
-1188 [-]: LOADK     R13 K1056    ; R13 := "Tread"
-1189 [-]: LOADK     R14 K1057    ; R14 := "Tank"
-1190 [-]: LOADK     R15 K1058    ; R15 := "Tax"
-1191 [-]: LOADK     R16 K1059    ; R16 := "Test"
-1192 [-]: LOADK     R17 K1060    ; R17 := "Thump"
-1193 [-]: LOADK     R18 K1061    ; R18 := "Thunder"
-1194 [-]: LOADK     R19 K1062    ; R19 := "Trash"
-1195 [-]: LOADK     R20 K1063    ; R20 := "Tap"
-1196 [-]: LOADK     R21 K1064    ; R21 := "Snow"
-1197 [-]: LOADK     R22 K825     ; R22 := "Vallis"
-1198 [-]: LOADK     R23 K1065    ; R23 := "Vapor"
-1199 [-]: LOADK     R24 K1066    ; R24 := "Venom"
-1200 [-]: LOADK     R25 K1067    ; R25 := "Vandal"
-1201 [-]: LOADK     R26 K1068    ; R26 := "War"
-1202 [-]: LOADK     R27 K1069    ; R27 := "Whisker"
-1203 [-]: LOADK     R28 K1070    ; R28 := "Wise"
-1204 [-]: LOADK     R29 K1071    ; R29 := "Wheel"
-1205 [-]: LOADK     R30 K1072    ; R30 := "Air"
-1206 [-]: LOADK     R31 K1073    ; R31 := "Angle"
-1207 [-]: LOADK     R32 K331     ; R32 := "Impact"
-1208 [-]: LOADK     R33 K1074    ; R33 := "Plane"
-1209 [-]: LOADK     R34 K916     ; R34 := "Saw"
-1210 [-]: LOADK     R35 K1075    ; R35 := "Radial"
-1211 [-]: LOADK     R36 K1076    ; R36 := "Band"
-1212 [-]: LOADK     R37 K1077    ; R37 := "Jig"
-1213 [-]: LOADK     R38 K1078    ; R38 := "Chop"
-1214 [-]: LOADK     R39 K1079    ; R39 := "Vac"
-1215 [-]: LOADK     R40 K1080    ; R40 := "Disc"
-1216 [-]: LOADK     R41 K1081    ; R41 := "Scum"
-1217 [-]: LOADK     R42 K908     ; R42 := "Flat"
-1218 [-]: LOADK     R43 K1082    ; R43 := "Wide"
-1219 [-]: LOADK     R44 K1083    ; R44 := "Thin"
-1220 [-]: LOADK     R45 K1084    ; R45 := "Greed"
-1221 [-]: LOADK     R46 K1085    ; R46 := "Acid"
-1222 [-]: LOADK     R47 K1086    ; R47 := "Live"
-1223 [-]: LOADK     R48 K1087    ; R48 := "Atomic"
-1224 [-]: LOADK     R49 K1088    ; R49 := "Blue"
-1225 [-]: LOADK     R50 K815     ; R50 := "Boss"
-1226 [-]: LOADK     R51 K1089    ; R51 := "Tough"
-1227 [-]: LOADK     R52 K1090    ; R52 := "Cheap"
-1228 [-]: LOADK     R53 K1078    ; R53 := "Chop"
-1229 [-]: LOADK     R54 K1091    ; R54 := "Load"
-1230 [-]: LOADK     R55 K1092    ; R55 := "Chunk"
-1231 [-]: LOADK     R56 K1093    ; R56 := "Giggle"
-1232 [-]: SETLIST   R6 50 5      ; R6[(5-1)*FPF+i] := R(6+i), 1 <= i <= 50
-1233 [-]: LOADK     R7 K1094     ; R7 := "Clear"
-1234 [-]: LOADK     R8 K1095     ; R8 := "Crude"
-1235 [-]: LOADK     R9 K1096     ; R9 := "Crust"
-1236 [-]: LOADK     R10 K813     ; R10 := "Rude"
-1237 [-]: LOADK     R11 K1097    ; R11 := "Loud"
-1238 [-]: LOADK     R12 K1098    ; R12 := "Soft"
-1239 [-]: LOADK     R13 K1099    ; R13 := "Hard"
-1240 [-]: LOADK     R14 K1100    ; R14 := "Cute"
-1241 [-]: LOADK     R15 K1101    ; R15 := "Damp"
-1242 [-]: LOADK     R16 K1102    ; R16 := "Dark"
-1243 [-]: LOADK     R17 K1103    ; R17 := "Light"
-1244 [-]: LOADK     R18 K1104    ; R18 := "Bright"
-1245 [-]: LOADK     R19 K1105    ; R19 := "Day"
-1246 [-]: LOADK     R20 K1106    ; R20 := "Night"
-1247 [-]: LOADK     R21 K1107    ; R21 := "Deep"
-1248 [-]: LOADK     R22 K1108    ; R22 := "Dim"
-1249 [-]: LOADK     R23 K1109    ; R23 := "Dull"
-1250 [-]: LOADK     R24 K1110    ; R24 := "Rage"
-1251 [-]: LOADK     R25 K1111    ; R25 := "Straight"
-1252 [-]: LOADK     R26 K1112    ; R26 := "Exo"
-1253 [-]: LOADK     R27 K1113    ; R27 := "Far"
-1254 [-]: LOADK     R28 K1114    ; R28 := "Fancy"
-1255 [-]: LOADK     R29 K912     ; R29 := "Fast"
-1256 [-]: LOADK     R30 K1115    ; R30 := "Form"
-1257 [-]: LOADK     R31 K1116    ; R31 := "Frag"
-1258 [-]: LOADK     R32 K852     ; R32 := "Free"
-1259 [-]: LOADK     R33 K1117    ; R33 := "Frost"
-1260 [-]: LOADK     R34 K1118    ; R34 := "Full"
-1261 [-]: LOADK     R35 K1119    ; R35 := "Fuzz"
-1262 [-]: LOADK     R36 K1120    ; R36 := "Glad"
-1263 [-]: LOADK     R37 K1121    ; R37 := "Groan"
-1264 [-]: LOADK     R38 K1122    ; R38 := "Groove"
-1265 [-]: LOADK     R39 K1123    ; R39 := "Growl"
-1266 [-]: LOADK     R40 K1124    ; R40 := "Hydro"
-1267 [-]: LOADK     R41 K1125    ; R41 := "Thermo"
-1268 [-]: LOADK     R42 K1126    ; R42 := "Charge"
-1269 [-]: LOADK     R43 K1127    ; R43 := "Jiggle"
-1270 [-]: LOADK     R44 K1128    ; R44 := "Lax"
-1271 [-]: LOADK     R45 K968     ; R45 := "Lock"
-1272 [-]: LOADK     R46 K1129    ; R46 := "Mid"
-1273 [-]: LOADK     R47 K1130    ; R47 := "Mini"
-1274 [-]: LOADK     R48 K1131    ; R48 := "Mix"
-1275 [-]: LOADK     R49 K1132    ; R49 := "Murk"
-1276 [-]: LOADK     R50 K1133    ; R50 := "Swamp"
-1277 [-]: LOADK     R51 K1134    ; R51 := "Shunt"
-1278 [-]: LOADK     R52 K1135    ; R52 := "Scorn"
-1279 [-]: LOADK     R53 K1136    ; R53 := "Hop"
-1280 [-]: LOADK     R54 K1137    ; R54 := "Jump"
-1281 [-]: LOADK     R55 K1138    ; R55 := "Thrash"
-1282 [-]: LOADK     R56 K847     ; R56 := "Odd"
-1283 [-]: SETLIST   R6 50 6      ; R6[(6-1)*FPF+i] := R(6+i), 1 <= i <= 50
-1284 [-]: LOADK     R7 K1139     ; R7 := "Oxy"
-1285 [-]: LOADK     R8 K1025     ; R8 := "Quick"
-1286 [-]: LOADK     R9 K1140     ; R9 := "Rank"
-1287 [-]: LOADK     R10 K1141    ; R10 := "Rash"
-1288 [-]: LOADK     R11 K1142    ; R11 := "Rasp"
-1289 [-]: LOADK     R12 K1143    ; R12 := "Retro"
-1290 [-]: LOADK     R13 K1144    ; R13 := "Ultra"
-1291 [-]: LOADK     R14 K1145    ; R14 := "Atom"
-1292 [-]: LOADK     R15 K1146    ; R15 := "Nuke"
-1293 [-]: SETLIST   R6 9 7       ; R6[(7-1)*FPF+i] := R(6+i), 1 <= i <= 9
-1294 [-]: SETLIST   R4 2 1       ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 2
-1295 [-]: SETLIST   R3 1 1       ; R3[(1-1)*FPF+i] := R(3+i), 1 <= i <= 1
-1296 [-]: NEWTABLE  R4 1 0       ; R4 := {}
-1297 [-]: NEWTABLE  R5 2 0       ; R5 := {}
-1298 [-]: LOADK     R6 K1147     ; R6 := 0.800000
-1299 [-]: NEWTABLE  R7 50 0      ; R7 := {}
-1300 [-]: LOADK     R8 K1148     ; R8 := "-Scooter"
-1301 [-]: LOADK     R9 K1149     ; R9 := "-Slick"
-1302 [-]: LOADK     R10 K1150    ; R10 := "-Skids"
-1303 [-]: LOADK     R11 K1151    ; R11 := "Charger"
-1304 [-]: LOADK     R12 K1152    ; R12 := "Diver"
-1305 [-]: LOADK     R13 K1153    ; R13 := "Fuel"
-1306 [-]: LOADK     R14 K1154    ; R14 := "Hand"
-1307 [-]: LOADK     R15 K1155    ; R15 := "Eyes"
-1308 [-]: LOADK     R16 K1156    ; R16 := "Teeth"
-1309 [-]: LOADK     R17 K1157    ; R17 := "Ears"
-1310 [-]: LOADK     R18 K1158    ; R18 := "Face"
-1311 [-]: LOADK     R19 K943     ; R19 := "Head"
-1312 [-]: LOADK     R20 K1159    ; R20 := "Spinner"
-1313 [-]: LOADK     R21 K873     ; R21 := "Plate"
-1314 [-]: LOADK     R22 K863     ; R22 := "Lug"
-1315 [-]: LOADK     R23 K864     ; R23 := "Grease"
-1316 [-]: LOADK     R24 K865     ; R24 := "Thread"
-1317 [-]: LOADK     R25 K867     ; R25 := "Smoke"
-1318 [-]: LOADK     R26 K1160    ; R26 := "Rattler"
-1319 [-]: LOADK     R27 K874     ; R27 := "Snake"
-1320 [-]: LOADK     R28 K935     ; R28 := "Grip"
-1321 [-]: LOADK     R29 K929     ; R29 := "Spike"
-1322 [-]: LOADK     R30 K1161    ; R30 := "Killer"
-1323 [-]: LOADK     R31 K1162    ; R31 := "Legs"
-1324 [-]: LOADK     R32 K879     ; R32 := "Boom"
-1325 [-]: LOADK     R33 K880     ; R33 := "Grim"
-1326 [-]: LOADK     R34 K882     ; R34 := "Shot"
-1327 [-]: LOADK     R35 K883     ; R35 := "Trigger"
-1328 [-]: LOADK     R36 K884     ; R36 := "Zero"
-1329 [-]: LOADK     R37 K1163    ; R37 := "Neck"
-1330 [-]: LOADK     R38 K1164    ; R38 := "Bell"
-1331 [-]: LOADK     R39 K1165    ; R39 := "Driver"
-1332 [-]: LOADK     R40 K881     ; R40 := "Sump"
-1333 [-]: LOADK     R41 K1166    ; R41 := "Lifter"
-1334 [-]: LOADK     R42 K1167    ; R42 := "Stringer"
-1335 [-]: LOADK     R43 K1168    ; R43 := "Stinger"
-1336 [-]: LOADK     R44 K1169    ; R44 := "Fish"
-1337 [-]: LOADK     R45 K888     ; R45 := "Fuse"
-1338 [-]: LOADK     R46 K889     ; R46 := "Point"
-1339 [-]: LOADK     R47 K1170    ; R47 := "Hanger"
-1340 [-]: LOADK     R48 K1171    ; R48 := "Puncher"
-1341 [-]: LOADK     R49 K1172    ; R49 := "Kicker"
-1342 [-]: LOADK     R50 K1173    ; R50 := "Hitcher"
-1343 [-]: LOADK     R51 K1105    ; R51 := "Day"
-1344 [-]: LOADK     R52 K1174    ; R52 := "Gears"
-1345 [-]: LOADK     R53 K1175    ; R53 := "Pig"
-1346 [-]: LOADK     R54 K1176    ; R54 := "Puller"
-1347 [-]: LOADK     R55 K1177    ; R55 := "Side"
-1348 [-]: LOADK     R56 K1178    ; R56 := "Tracker"
-1349 [-]: LOADK     R57 K1179    ; R57 := "Salt"
-1350 [-]: SETLIST   R7 50 1      ; R7[(1-1)*FPF+i] := R(7+i), 1 <= i <= 50
-1351 [-]: LOADK     R8 K900      ; R8 := "Worm"
-1352 [-]: LOADK     R9 K901      ; R9 := "Pain"
-1353 [-]: LOADK     R10 K902     ; R10 := "Blaze"
-1354 [-]: LOADK     R11 K905     ; R11 := "Duck"
-1355 [-]: LOADK     R12 K1180    ; R12 := "Line"
-1356 [-]: LOADK     R13 K1181    ; R13 := "Down"
-1357 [-]: LOADK     R14 K1182    ; R14 := "Riser"
-1358 [-]: LOADK     R15 K1183    ; R15 := "Knife"
-1359 [-]: LOADK     R16 K1184    ; R16 := "Blade"
-1360 [-]: LOADK     R17 K916     ; R17 := "Saw"
-1361 [-]: LOADK     R18 K917     ; R18 := "Barrel"
-1362 [-]: LOADK     R19 K914     ; R19 := "Iron"
-1363 [-]: LOADK     R20 K915     ; R20 := "Steel"
-1364 [-]: LOADK     R21 K1185    ; R21 := "Jaws"
-1365 [-]: LOADK     R22 K711     ; R22 := "Judge"
-1366 [-]: LOADK     R23 K919     ; R23 := "Zone"
-1367 [-]: LOADK     R24 K922     ; R24 := "Rush"
-1368 [-]: LOADK     R25 K925     ; R25 := "Weed"
-1369 [-]: LOADK     R26 K926     ; R26 := "Viper"
-1370 [-]: LOADK     R27 K1186    ; R27 := "Bones"
-1371 [-]: LOADK     R28 K927     ; R28 := "Hammer"
-1372 [-]: LOADK     R29 K928     ; R29 := "Storm"
-1373 [-]: LOADK     R30 K929     ; R30 := "Spike"
-1374 [-]: LOADK     R31 K1187    ; R31 := "Back"
-1375 [-]: LOADK     R32 K930     ; R32 := "Razor"
-1376 [-]: LOADK     R33 K1188    ; R33 := "Nomad"
-1377 [-]: LOADK     R34 K935     ; R34 := "Grip"
-1378 [-]: LOADK     R35 K936     ; R35 := "Smudge"
-1379 [-]: LOADK     R36 K937     ; R36 := "Squid"
-1380 [-]: LOADK     R37 K1189    ; R37 := "Bait"
-1381 [-]: LOADK     R38 K1190    ; R38 := "Snooper"
-1382 [-]: LOADK     R39 K938     ; R39 := "Ace"
-1383 [-]: LOADK     R40 K1191    ; R40 := "Fixer"
-1384 [-]: LOADK     R41 K1192    ; R41 := "Man"
-1385 [-]: LOADK     R42 K868     ; R42 := "King"
-1386 [-]: LOADK     R43 K1193    ; R43 := "Lord"
-1387 [-]: LOADK     R44 K1194    ; R44 := "Jack"
-1388 [-]: LOADK     R45 K1195    ; R45 := "Ringer"
-1389 [-]: LOADK     R46 K1196    ; R46 := "Sign"
-1390 [-]: LOADK     R47 K1197    ; R47 := "Singer"
-1391 [-]: LOADK     R48 K1198    ; R48 := "Bard"
-1392 [-]: LOADK     R49 K1199    ; R49 := "Beeper"
-1393 [-]: LOADK     R50 K1200    ; R50 := "Beaker"
-1394 [-]: LOADK     R51 K944     ; R51 := "Belly"
-1395 [-]: LOADK     R52 K1201    ; R52 := "Bird"
-1396 [-]: LOADK     R53 K1202    ; R53 := "Money"
-1397 [-]: LOADK     R54 K1203    ; R54 := "Biscuit"
-1398 [-]: LOADK     R55 K1204    ; R55 := "Berry"
-1399 [-]: LOADK     R56 K1205    ; R56 := "Blaster"
-1400 [-]: LOADK     R57 K1206    ; R57 := "Boo"
-1401 [-]: SETLIST   R7 50 2      ; R7[(2-1)*FPF+i] := R(7+i), 1 <= i <= 50
-1402 [-]: LOADK     R8 K1207     ; R8 := "Brain"
-1403 [-]: LOADK     R9 K1208     ; R9 := "Breaker"
-1404 [-]: LOADK     R10 K946     ; R10 := "Brick"
-1405 [-]: LOADK     R11 K948     ; R11 := "Bug"
-1406 [-]: LOADK     R12 K949     ; R12 := "Bull"
-1407 [-]: LOADK     R13 K1209    ; R13 := "Burner"
-1408 [-]: LOADK     R14 K1210    ; R14 := "Buster"
-1409 [-]: LOADK     R15 K1211    ; R15 := "Butcher"
-1410 [-]: LOADK     R16 K951     ; R16 := "Candy"
-1411 [-]: LOADK     R17 K952     ; R17 := "Cash"
-1412 [-]: LOADK     R18 K1212    ; R18 := "Jockey"
-1413 [-]: LOADK     R19 K953     ; R19 := "Chief"
-1414 [-]: LOADK     R20 K1213    ; R20 := "Chip"
-1415 [-]: LOADK     R21 K1214    ; R21 := "Cheeks"
-1416 [-]: LOADK     R22 K1215    ; R22 := "Chocks"
-1417 [-]: LOADK     R23 K1216    ; R23 := "Clang"
-1418 [-]: LOADK     R24 K1217    ; R24 := "Cooler"
-1419 [-]: LOADK     R25 K1218    ; R25 := "Crisper"
-1420 [-]: LOADK     R26 K961     ; R26 := "Cruise"
-1421 [-]: LOADK     R27 K964     ; R27 := "Cypher"
-1422 [-]: LOADK     R28 K1219    ; R28 := "Smasher"
-1423 [-]: LOADK     R29 K1220    ; R29 := "Dasher"
-1424 [-]: LOADK     R30 K1221    ; R30 := "Duster"
-1425 [-]: LOADK     R31 K205     ; R31 := "Data"
-1426 [-]: LOADK     R32 K968     ; R32 := "Lock"
-1427 [-]: LOADK     R33 K1222    ; R33 := "Digger"
-1428 [-]: LOADK     R34 K1223    ; R34 := "Dipper"
-1429 [-]: LOADK     R35 K975     ; R35 := "Doodle"
-1430 [-]: LOADK     R36 K976     ; R36 := "Fly"
-1431 [-]: LOADK     R37 K978     ; R37 := "Fire"
-1432 [-]: LOADK     R38 K979     ; R38 := "Fan"
-1433 [-]: LOADK     R39 K980     ; R39 := "Feet"
-1434 [-]: LOADK     R40 K981     ; R40 := "Fender"
-1435 [-]: LOADK     R41 K982     ; R41 := "Fester"
-1436 [-]: LOADK     R42 K983     ; R42 := "Flash"
-1437 [-]: LOADK     R43 K984     ; R43 := "Flea"
-1438 [-]: LOADK     R44 K985     ; R44 := "Flex"
-1439 [-]: LOADK     R45 K986     ; R45 := "Flint"
-1440 [-]: LOADK     R46 K1224    ; R46 := "Fridge"
-1441 [-]: LOADK     R47 K1225    ; R47 := "Flip"
-1442 [-]: LOADK     R48 K987     ; R48 := "Game"
-1443 [-]: LOADK     R49 K988     ; R49 := "Glory"
-1444 [-]: LOADK     R50 K935     ; R50 := "Grip"
-1445 [-]: LOADK     R51 K1226    ; R51 := "Gripper"
-1446 [-]: LOADK     R52 K994     ; R52 := "Grit"
-1447 [-]: LOADK     R53 K993     ; R53 := "Grin"
-1448 [-]: LOADK     R54 K995     ; R54 := "Gun"
-1449 [-]: LOADK     R55 K585     ; R55 := "Hacker"
-1450 [-]: LOADK     R56 K1170    ; R56 := "Hanger"
-1451 [-]: LOADK     R57 K997     ; R57 := "Hip"
-1452 [-]: SETLIST   R7 50 3      ; R7[(3-1)*FPF+i] := R(7+i), 1 <= i <= 50
-1453 [-]: LOADK     R8 K998      ; R8 := "Hook"
-1454 [-]: LOADK     R9 K999      ; R9 := "Hulk"
-1455 [-]: LOADK     R10 K1000    ; R10 := "Husk"
-1456 [-]: LOADK     R11 K1227    ; R11 := "Husker"
-1457 [-]: LOADK     R12 K1228    ; R12 := "Juggler"
-1458 [-]: LOADK     R13 K1229    ; R13 := "Jammer"
-1459 [-]: LOADK     R14 K1230    ; R14 := "Hawk"
-1460 [-]: LOADK     R15 K1003    ; R15 := "Key"
-1461 [-]: LOADK     R16 K1231    ; R16 := "Knuckles"
-1462 [-]: LOADK     R17 K1006    ; R17 := "Link"
-1463 [-]: LOADK     R18 K1007    ; R18 := "Lunch"
-1464 [-]: LOADK     R19 K1008    ; R19 := "Wrench"
-1465 [-]: LOADK     R20 K927     ; R20 := "Hammer"
-1466 [-]: LOADK     R21 K871     ; R21 := "Valve"
-1467 [-]: LOADK     R22 K1009    ; R22 := "Mace"
-1468 [-]: LOADK     R23 K1010    ; R23 := "Magnet"
-1469 [-]: LOADK     R24 K1232    ; R24 := "Mangler"
-1470 [-]: LOADK     R25 K1233    ; R25 := "Mark"
-1471 [-]: LOADK     R26 K1011    ; R26 := "Max"
-1472 [-]: LOADK     R27 K1234    ; R27 := "Eater"
-1473 [-]: LOADK     R28 K1235    ; R28 := "Nails"
-1474 [-]: LOADK     R29 K1236    ; R29 := "Notch"
-1475 [-]: LOADK     R30 K1152    ; R30 := "Diver"
-1476 [-]: LOADK     R31 K1017    ; R31 := "Nozzle"
-1477 [-]: LOADK     R32 K1018    ; R32 := "Ozone"
-1478 [-]: LOADK     R33 K1019    ; R33 := "Pack"
-1479 [-]: LOADK     R34 K1020    ; R34 := "Paint"
-1480 [-]: LOADK     R35 K1021    ; R35 := "Pan"
-1481 [-]: LOADK     R36 K1022    ; R36 := "Cake"
-1482 [-]: LOADK     R37 K1237    ; R37 := "Poker"
-1483 [-]: LOADK     R38 K1024    ; R38 := "Patch"
-1484 [-]: LOADK     R39 K1023    ; R39 := "Pipe"
-1485 [-]: LOADK     R40 K1238    ; R40 := "Piper"
-1486 [-]: LOADK     R41 K1026    ; R41 := "Tip"
-1487 [-]: LOADK     R42 K1239    ; R42 := "Tipper"
-1488 [-]: LOADK     R43 K1240    ; R43 := "Draw"
-1489 [-]: LOADK     R44 K1241    ; R44 := "Ranger"
-1490 [-]: LOADK     R45 K1242    ; R45 := "Roach"
-1491 [-]: LOADK     R46 K1027    ; R46 := "Rocket"
-1492 [-]: LOADK     R47 K1028    ; R47 := "Rotor"
-1493 [-]: LOADK     R48 K1029    ; R48 := "Rudder"
-1494 [-]: LOADK     R49 K922     ; R49 := "Rush"
-1495 [-]: LOADK     R50 K1243    ; R50 := "Rags"
-1496 [-]: LOADK     R51 K1244    ; R51 := "Breath"
-1497 [-]: LOADK     R52 K1245    ; R52 := "Riddler"
-1498 [-]: LOADK     R53 K1032    ; R53 := "Stack"
-1499 [-]: LOADK     R54 K1033    ; R54 := "Bag"
-1500 [-]: LOADK     R55 K1246    ; R55 := "Mouth"
-1501 [-]: LOADK     R56 K1247    ; R56 := "Shackler"
-1502 [-]: LOADK     R57 K1036    ; R57 := "Shade"
-1503 [-]: SETLIST   R7 50 4      ; R7[(4-1)*FPF+i] := R(7+i), 1 <= i <= 50
-1504 [-]: LOADK     R8 K1248     ; R8 := "Shaker"
-1505 [-]: LOADK     R9 K1249     ; R9 := "Shooter"
-1506 [-]: LOADK     R10 K1040    ; R10 := "Shuttle"
-1507 [-]: LOADK     R11 K1085    ; R11 := "Acid"
-1508 [-]: LOADK     R12 K1043    ; R12 := "Slag"
-1509 [-]: LOADK     R13 K1250    ; R13 := "Slagger"
-1510 [-]: LOADK     R14 K1251    ; R14 := "Slapper"
-1511 [-]: LOADK     R15 K1252    ; R15 := "Snapper"
-1512 [-]: LOADK     R16 K1253    ; R16 := "Greaser"
-1513 [-]: LOADK     R17 K1049    ; R17 := "Spanner"
-1514 [-]: LOADK     R18 K1048    ; R18 := "Spark"
-1515 [-]: LOADK     R19 K1254    ; R19 := "Sparker"
-1516 [-]: LOADK     R20 K1255    ; R20 := "Stinker"
-1517 [-]: LOADK     R21 K1051    ; R21 := "Stone"
-1518 [-]: LOADK     R22 K1053    ; R22 := "Scar"
-1519 [-]: LOADK     R23 K1256    ; R23 := "Scars"
-1520 [-]: LOADK     R24 K1054    ; R24 := "Shadow"
-1521 [-]: LOADK     R25 K1055    ; R25 := "Skull"
-1522 [-]: LOADK     R26 K1056    ; R26 := "Tread"
-1523 [-]: LOADK     R27 K1257    ; R27 := "Treads"
-1524 [-]: LOADK     R28 K1258    ; R28 := "Tally"
-1525 [-]: LOADK     R29 K1057    ; R29 := "Tank"
-1526 [-]: LOADK     R30 K1059    ; R30 := "Test"
-1527 [-]: LOADK     R31 K1259    ; R31 := "Thumper"
-1528 [-]: LOADK     R32 K1061    ; R32 := "Thunder"
-1529 [-]: LOADK     R33 K1062    ; R33 := "Trash"
-1530 [-]: LOADK     R34 K1260    ; R34 := "Tapper"
-1531 [-]: LOADK     R35 K1261    ; R35 := "Pod"
-1532 [-]: LOADK     R36 K1065    ; R36 := "Vapor"
-1533 [-]: LOADK     R37 K1066    ; R37 := "Venom"
-1534 [-]: LOADK     R38 K1067    ; R38 := "Vandal"
-1535 [-]: LOADK     R39 K1201    ; R39 := "Bird"
-1536 [-]: LOADK     R40 K1262    ; R40 := "Wash"
-1537 [-]: LOADK     R41 K1263    ; R41 := "Water"
-1538 [-]: LOADK     R42 K1264    ; R42 := "Wax"
-1539 [-]: LOADK     R43 K1265    ; R43 := "Well"
-1540 [-]: LOADK     R44 K1266    ; R44 := "Web"
-1541 [-]: LOADK     R45 K1069    ; R45 := "Whisker"
-1542 [-]: LOADK     R46 K1267    ; R46 := "Wheels"
-1543 [-]: LOADK     R47 K1073    ; R47 := "Angle"
-1544 [-]: LOADK     R48 K916     ; R48 := "Saw"
-1545 [-]: LOADK     R49 K1268    ; R49 := "Radius"
-1546 [-]: LOADK     R50 K1076    ; R50 := "Band"
-1547 [-]: LOADK     R51 K1077    ; R51 := "Jig"
-1548 [-]: LOADK     R52 K1078    ; R52 := "Chop"
-1549 [-]: LOADK     R53 K1079    ; R53 := "Vac"
-1550 [-]: LOADK     R54 K1080    ; R54 := "Disc"
-1551 [-]: LOADK     R55 K1084    ; R55 := "Greed"
-1552 [-]: LOADK     R56 K1088    ; R56 := "Blue"
-1553 [-]: LOADK     R57 K815     ; R57 := "Boss"
-1554 [-]: SETLIST   R7 50 5      ; R7[(5-1)*FPF+i] := R(7+i), 1 <= i <= 50
-1555 [-]: LOADK     R8 K1269     ; R8 := "Brute"
-1556 [-]: LOADK     R9 K1270     ; R9 := "Cage"
-1557 [-]: LOADK     R10 K1271    ; R10 := "Chewer"
-1558 [-]: LOADK     R11 K1078    ; R11 := "Chop"
-1559 [-]: LOADK     R12 K1272    ; R12 := "Chopper"
-1560 [-]: LOADK     R13 K1273    ; R13 := "Rider"
-1561 [-]: LOADK     R14 K1274    ; R14 := "Bomber"
-1562 [-]: LOADK     R15 K1275    ; R15 := "Loader"
-1563 [-]: LOADK     R16 K1276    ; R16 := "Chunker"
-1564 [-]: LOADK     R17 K1277    ; R17 := "Cruster"
-1565 [-]: LOADK     R18 K1278    ; R18 := "Dandy"
-1566 [-]: LOADK     R19 K1102    ; R19 := "Dark"
-1567 [-]: LOADK     R20 K1103    ; R20 := "Light"
-1568 [-]: LOADK     R21 K1104    ; R21 := "Bright"
-1569 [-]: LOADK     R22 K1105    ; R22 := "Day"
-1570 [-]: LOADK     R23 K1106    ; R23 := "Night"
-1571 [-]: LOADK     R24 K1107    ; R24 := "Deep"
-1572 [-]: LOADK     R25 K1279    ; R25 := "Dome"
-1573 [-]: LOADK     R26 K1280    ; R26 := "Edge"
-1574 [-]: LOADK     R27 K1110    ; R27 := "Rage"
-1575 [-]: LOADK     R28 K1281    ; R28 := "Fragger"
-1576 [-]: LOADK     R29 K1282    ; R29 := "Gas"
-1577 [-]: LOADK     R30 K1119    ; R30 := "Fuzz"
-1578 [-]: LOADK     R31 K1117    ; R31 := "Frost"
-1579 [-]: LOADK     R32 K1115    ; R32 := "Form"
-1580 [-]: LOADK     R33 K987     ; R33 := "Game"
-1581 [-]: LOADK     R34 K1283    ; R34 := "Gasser"
-1582 [-]: LOADK     R35 K1284    ; R35 := "Glob"
-1583 [-]: LOADK     R36 K1285    ; R36 := "Glue"
-1584 [-]: LOADK     R37 K1286    ; R37 := "Groover"
-1585 [-]: LOADK     R38 K1287    ; R38 := "Growler"
-1586 [-]: LOADK     R39 K1151    ; R39 := "Charger"
-1587 [-]: LOADK     R40 K968     ; R40 := "Lock"
-1588 [-]: LOADK     R41 K1288    ; R41 := "Scoper"
-1589 [-]: LOADK     R42 K1289    ; R42 := "Mixer"
-1590 [-]: LOADK     R43 K1290    ; R43 := "Modder"
-1591 [-]: LOADK     R44 K1291    ; R44 := "Grubber"
-1592 [-]: LOADK     R45 K1292    ; R45 := "Shunter"
-1593 [-]: LOADK     R46 K1293    ; R46 := "Swamper"
-1594 [-]: LOADK     R47 K1294    ; R47 := "Stopper"
-1595 [-]: LOADK     R48 K1295    ; R48 := "Hopper"
-1596 [-]: LOADK     R49 K1296    ; R49 := "Jumper"
-1597 [-]: LOADK     R50 K1297    ; R50 := "Thrasher"
-1598 [-]: LOADK     R51 K1141    ; R51 := "Rash"
-1599 [-]: LOADK     R52 K1298    ; R52 := "Rasper"
-1600 [-]: LOADK     R53 K1299    ; R53 := "Sounder"
-1601 [-]: LOADK     R54 K1300    ; R54 := "Tooth"
-1602 [-]: LOADK     R55 K1156    ; R55 := "Teeth"
-1603 [-]: SETLIST   R7 48 6      ; R7[(6-1)*FPF+i] := R(7+i), 1 <= i <= 48
-1604 [-]: SETLIST   R5 2 1       ; R5[(1-1)*FPF+i] := R(5+i), 1 <= i <= 2
-1605 [-]: SETLIST   R4 1 1       ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 1
-1606 [-]: NEWTABLE  R5 1 0       ; R5 := {}
-1607 [-]: NEWTABLE  R6 2 0       ; R6 := {}
-1608 [-]: CONST     R7 1         ; R7 := 1.000000
-1609 [-]: NEWTABLE  R8 11 0      ; R8 := {}
-1610 [-]: LOADK     R9 K1301     ; R9 := "Res-Arc"
-1611 [-]: LOADK     R10 K1302    ; R10 := "Surv-Tel"
-1612 [-]: LOADK     R11 K1303    ; R11 := "Arch-Mem"
-1613 [-]: LOADK     R12 K1304    ; R12 := "Cura-Phano"
-1614 [-]: LOADK     R13 K1305    ; R13 := "Inves-Resp"
-1615 [-]: LOADK     R14 K1306    ; R14 := "Expi-Dyna"
-1616 [-]: LOADK     R15 K1307    ; R15 := "Pion-Rec"
-1617 [-]: LOADK     R16 K1308    ; R16 := "Seek-Loc"
-1618 [-]: LOADK     R17 K1309    ; R17 := "Disp-Arch"
-1619 [-]: LOADK     R18 K1310    ; R18 := "Log-Rec"
-1620 [-]: LOADK     R19 K1311    ; R19 := "Ult-Pho"
-1621 [-]: SETLIST   R8 11 1      ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 11
-1622 [-]: SETLIST   R6 2 1       ; R6[(1-1)*FPF+i] := R(6+i), 1 <= i <= 2
-1623 [-]: SETLIST   R5 1 1       ; R5[(1-1)*FPF+i] := R(5+i), 1 <= i <= 1
-1624 [-]: NEWTABLE  R6 1 0       ; R6 := {}
-1625 [-]: NEWTABLE  R7 2 0       ; R7 := {}
-1626 [-]: CONST     R8 1         ; R8 := 1.000000
-1627 [-]: NEWTABLE  R9 12 0      ; R9 := {}
-1628 [-]: LOADK     R10 K1312    ; R10 := "Arbiter Princeps"
-1629 [-]: LOADK     R11 K1313    ; R11 := "Arbiter"
-1630 [-]: LOADK     R12 K1314    ; R12 := "Arbiter Rex"
-1631 [-]: LOADK     R13 K1315    ; R13 := "Adept"
-1632 [-]: LOADK     R14 K1316    ; R14 := "Probate"
-1633 [-]: LOADK     R15 K1317    ; R15 := "Seneschal"
-1634 [-]: LOADK     R16 K1318    ; R16 := "Vigilant"
-1635 [-]: LOADK     R17 K1319    ; R17 := "Centurion"
-1636 [-]: LOADK     R18 K1320    ; R18 := "Armsman"
-1637 [-]: LOADK     R19 K558     ; R19 := "Scholar"
-1638 [-]: LOADK     R20 K1321    ; R20 := "Strategist"
-1639 [-]: LOADK     R21 K1322    ; R21 := "Venator"
-1640 [-]: SETLIST   R9 12 1      ; R9[(1-1)*FPF+i] := R(9+i), 1 <= i <= 12
-1641 [-]: SETLIST   R7 2 1       ; R7[(1-1)*FPF+i] := R(7+i), 1 <= i <= 2
-1642 [-]: SETLIST   R6 1 1       ; R6[(1-1)*FPF+i] := R(6+i), 1 <= i <= 1
-1643 [-]: CLOSURE   R7 0         ; R7 := closure(Function #1)
-1644 [-]: CLOSURE   R8 1         ; R8 := closure(Function #2)
-1645 [-]: CLOSURE   R9 2         ; R9 := closure(Function #3)
-1646 [-]: CLOSURE   R10 3        ; R10 := closure(Function #4)
-1647 [-]: CLOSURE   R11 4        ; R11 := closure(Function #5)
-1648 [-]: LOADKB    R12 0 0      ; R12 := false
-1649 [-]: TEST      R12 0        ; if not R12 then PC := 1653
-1650 [-]: JMP       1653         ; PC := 1653
-1651 [-]: MOVE      R13 R11      ; R13 := R11
-1652 [-]: CALL      R13 1 1      ; R13()
-1653 [-]: NEWTABLE  R13 0 13     ; R13 := {}
-1654 [-]: LOADK     R14 K1323    ; R14 := "GenerateCorpusTitle"
-1655 [-]: CLOSURE   R15 5        ; R15 := closure(Function #6)
-1656 [-]: MOVE      R0 R7        ; R0 := R7
-1657 [-]: MOVE      R0 R0        ; R0 := R0
-1658 [-]: SETTABLE  R13 R14 R15  ; R13[R14] := R15
-1659 [-]: LOADK     R14 K1324    ; R14 := "GenerateSolarisTitle"
-1660 [-]: CLOSURE   R15 6        ; R15 := closure(Function #7)
-1661 [-]: MOVE      R0 R8        ; R0 := R8
-1662 [-]: MOVE      R0 R2        ; R0 := R2
-1663 [-]: SETTABLE  R13 R14 R15  ; R13[R14] := R15
-1664 [-]: LOADK     R14 K1325    ; R14 := "GenerateSolarisFirstName"
-1665 [-]: CLOSURE   R15 7        ; R15 := closure(Function #8)
-1666 [-]: MOVE      R0 R8        ; R0 := R8
-1667 [-]: MOVE      R0 R3        ; R0 := R3
-1668 [-]: SETTABLE  R13 R14 R15  ; R13[R14] := R15
-1669 [-]: LOADK     R14 K1326    ; R14 := "GenerateSolarisLastName"
-1670 [-]: CLOSURE   R15 8        ; R15 := closure(Function #9)
-1671 [-]: MOVE      R0 R8        ; R0 := R8
-1672 [-]: MOVE      R0 R4        ; R0 := R4
-1673 [-]: SETTABLE  R13 R14 R15  ; R13[R14] := R15
-1674 [-]: LOADK     R14 K1327    ; R14 := "GenerateCephSudaTitle"
-1675 [-]: CLOSURE   R15 9        ; R15 := closure(Function #10)
-1676 [-]: MOVE      R0 R7        ; R0 := R7
-1677 [-]: MOVE      R0 R5        ; R0 := R5
-1678 [-]: SETTABLE  R13 R14 R15  ; R13[R14] := R15
-1679 [-]: LOADK     R14 K1328    ; R14 := "GenerateHexisTitle"
-1680 [-]: CLOSURE   R15 10       ; R15 := closure(Function #11)
-1681 [-]: MOVE      R0 R8        ; R0 := R8
-1682 [-]: MOVE      R0 R6        ; R0 := R6
-1683 [-]: SETTABLE  R13 R14 R15  ; R13[R14] := R15
-1684 [-]: LOADK     R14 K1329    ; R14 := "GenerateCorpusPrisonerTitle"
-1685 [-]: CLOSURE   R15 11       ; R15 := closure(Function #12)
-1686 [-]: MOVE      R0 R8        ; R0 := R8
-1687 [-]: MOVE      R0 R1        ; R0 := R1
-1688 [-]: SETTABLE  R13 R14 R15  ; R13[R14] := R15
-1689 [-]: LOADK     R14 K1330    ; R14 := "NonSeededGenerateCorpusTitle"
-1690 [-]: CLOSURE   R15 12       ; R15 := closure(Function #13)
-1691 [-]: MOVE      R0 R9        ; R0 := R9
-1692 [-]: MOVE      R0 R0        ; R0 := R0
-1693 [-]: SETTABLE  R13 R14 R15  ; R13[R14] := R15
-1694 [-]: LOADK     R14 K1331    ; R14 := "NonSeededGenerateSolarisTitle"
-1695 [-]: CLOSURE   R15 13       ; R15 := closure(Function #14)
-1696 [-]: MOVE      R0 R9        ; R0 := R9
-1697 [-]: MOVE      R0 R2        ; R0 := R2
-1698 [-]: SETTABLE  R13 R14 R15  ; R13[R14] := R15
-1699 [-]: LOADK     R14 K1332    ; R14 := "NonSeededGenerateSolarisName"
-1700 [-]: CLOSURE   R15 14       ; R15 := closure(Function #15)
-1701 [-]: MOVE      R0 R9        ; R0 := R9
-1702 [-]: MOVE      R0 R3        ; R0 := R3
-1703 [-]: MOVE      R0 R4        ; R0 := R4
-1704 [-]: SETTABLE  R13 R14 R15  ; R13[R14] := R15
-1705 [-]: LOADK     R14 K1333    ; R14 := "NonSeededGenerateCephSudaTitle"
-1706 [-]: CLOSURE   R15 15       ; R15 := closure(Function #16)
-1707 [-]: MOVE      R0 R9        ; R0 := R9
-1708 [-]: MOVE      R0 R5        ; R0 := R5
-1709 [-]: SETTABLE  R13 R14 R15  ; R13[R14] := R15
-1710 [-]: LOADK     R14 K1334    ; R14 := "NonSeededGenerateHexisTitle"
-1711 [-]: CLOSURE   R15 16       ; R15 := closure(Function #17)
-1712 [-]: MOVE      R0 R9        ; R0 := R9
-1713 [-]: MOVE      R0 R6        ; R0 := R6
-1714 [-]: SETTABLE  R13 R14 R15  ; R13[R14] := R15
-1715 [-]: LOADK     R14 K1335    ; R14 := "NonSeededGenerateCorpusPrisonerTitle"
-1716 [-]: CLOSURE   R15 17       ; R15 := closure(Function #18)
-1717 [-]: MOVE      R0 R9        ; R0 := R9
-1718 [-]: MOVE      R0 R1        ; R0 := R1
-1719 [-]: SETTABLE  R13 R14 R15  ; R13[R14] := R15
-1720 [-]: RETURN    R13 2        ; return R13
-1721 [-]: RETURN    R0 1         ; return 
+            1 [-]: NEWTABLE R0 0 6
+       2 [-]: NEWTABLE R1 0 2
+       3 [-]: LOADK R2 K0 [0.5]
+       4 [-]: NEWTABLE R3 0 59
+       5 [-]: LOADK R4 K1 ["Experimental"]
+       6 [-]: LOADK R5 K2 ["Consulting"]
+       7 [-]: LOADK R6 K3 ["Honorary"]
+       8 [-]: LOADK R7 K4 ["Probationary"]
+       9 [-]: LOADK R8 K5 ["Dynamic"]
+      10 [-]: LOADK R9 K6 ["Lead"]
+      11 [-]: LOADK R10 K7 ["Future"]
+      12 [-]: LOADK R11 K8 ["Product"]
+      13 [-]: LOADK R12 K9 ["Investment"]
+      14 [-]: LOADK R13 K10 ["Legacy"]
+      15 [-]: LOADK R14 K11 ["Forward"]
+      16 [-]: LOADK R15 K12 ["Internal"]
+      17 [-]: LOADK R16 K13 ["Outsourced"]
+      18 [-]: LOADK R17 K14 ["Remote"]
+      19 [-]: LOADK R18 K15 ["Principal"]
+      20 [-]: LOADK R19 K16 ["Supervisory"]
+      21 [-]: SETLIST R3 R4 16 [1]
+      22 [-]: LOADK R4 K17 ["Associate"]
+      23 [-]: LOADK R5 K18 ["Liasing"]
+      24 [-]: LOADK R6 K19 ["Coordinating"]
+      25 [-]: LOADK R7 K20 ["Directing"]
+      26 [-]: LOADK R8 K21 ["Specialist"]
+      27 [-]: LOADK R9 K22 ["Strategic"]
+      28 [-]: LOADK R10 K23 ["Assistant"]
+      29 [-]: LOADK R11 K24 ["Technical"]
+      30 [-]: LOADK R12 K25 ["Military"]
+      31 [-]: LOADK R13 K26 ["Corporate"]
+      32 [-]: LOADK R14 K27 ["Medical"]
+      33 [-]: LOADK R15 K28 ["Psychological Operatons"]
+      34 [-]: LOADK R16 K29 ["Analytical"]
+      35 [-]: LOADK R17 K30 ["Administrative"]
+      36 [-]: LOADK R18 K26 ["Corporate"]
+      37 [-]: LOADK R19 K31 ["Student"]
+      38 [-]: SETLIST R3 R4 16 [17]
+      39 [-]: LOADK R4 K32 ["Defending"]
+      40 [-]: LOADK R5 K33 ["Acting"]
+      41 [-]: LOADK R6 K34 ["Temporary"]
+      42 [-]: LOADK R7 K35 ["Matrix-Oriented"]
+      43 [-]: LOADK R8 K36 ["Industrial"]
+      44 [-]: LOADK R9 K37 ["Developing"]
+      45 [-]: LOADK R10 K38 ["Multidisciplinary"]
+      46 [-]: LOADK R11 K39 ["Intrinsic"]
+      47 [-]: LOADK R12 K40 ["Certified"]
+      48 [-]: LOADK R13 K41 ["Field-Tested"]
+      49 [-]: LOADK R14 K42 ["Traditional"]
+      50 [-]: LOADK R15 K43 ["Enmeshed"]
+      51 [-]: LOADK R16 K44 ["Adaptive"]
+      52 [-]: LOADK R17 K45 ["Cross-Functional"]
+      53 [-]: LOADK R18 K46 ["Economic"]
+      54 [-]: LOADK R19 K47 ["Void-Oriented"]
+      55 [-]: SETLIST R3 R4 16 [33]
+      56 [-]: LOADK R4 K48 ["Dogma-Oriented"]
+      57 [-]: LOADK R5 K49 ["Scripture-Focussed"]
+      58 [-]: LOADK R6 K50 ["Tenno-Prioritized"]
+      59 [-]: LOADK R7 K51 ["Board-Certified"]
+      60 [-]: LOADK R8 K52 ["Specter-Tech"]
+      61 [-]: LOADK R9 K53 ["Licensed"]
+      62 [-]: LOADK R10 K54 ["Parvosian"]
+      63 [-]: LOADK R11 K55 ["Augmented"]
+      64 [-]: LOADK R12 K56 ["Hereditary"]
+      65 [-]: LOADK R13 K57 ["Emergency"]
+      66 [-]: LOADK R14 K58 ["Visiting"]
+      67 [-]: SETLIST R3 R4 11 [49]
+      68 [-]: SETLIST R1 R2 2 [1]
+      69 [-]: NEWTABLE R2 0 2
+      70 [-]: LOADN R3 1   
+      71 [-]: NEWTABLE R4 0 110
+      72 [-]: LOADK R5 K59 ["Trainee Assistant"]
+      73 [-]: LOADK R6 K60 ["Junior Assistant"]
+      74 [-]: LOADK R7 K23 ["Assistant"]
+      75 [-]: LOADK R8 K61 ["Senior Assistant"]
+      76 [-]: LOADK R9 K62 ["Head Assistant"]
+      77 [-]: LOADK R10 K63 ["Trainee Deputy"]
+      78 [-]: LOADK R11 K64 ["Junior Deputy"]
+      79 [-]: LOADK R12 K65 ["Deputy"]
+      80 [-]: LOADK R13 K66 ["Senior Deputy"]
+      81 [-]: LOADK R14 K67 ["Head Deputy"]
+      82 [-]: LOADK R15 K68 ["Trainee Executive"]
+      83 [-]: LOADK R16 K69 ["Junior Executive"]
+      84 [-]: LOADK R17 K70 ["Executive"]
+      85 [-]: LOADK R18 K71 ["Senior Executive"]
+      86 [-]: LOADK R19 K72 ["Head Executive"]
+      87 [-]: LOADK R20 K73 ["Trainee Associate"]
+      88 [-]: SETLIST R4 R5 16 [1]
+      89 [-]: LOADK R5 K74 ["Junior Associate"]
+      90 [-]: LOADK R6 K17 ["Associate"]
+      91 [-]: LOADK R7 K75 ["Senior Associate"]
+      92 [-]: LOADK R8 K76 ["Head Associate"]
+      93 [-]: LOADK R9 K77 ["Trainee Representative"]
+      94 [-]: LOADK R10 K78 ["Junior Representative"]
+      95 [-]: LOADK R11 K79 ["Representative"]
+      96 [-]: LOADK R12 K80 ["Senior Representative"]
+      97 [-]: LOADK R13 K81 ["Head Representative"]
+      98 [-]: LOADK R14 K82 ["Trainee Trust"]
+      99 [-]: LOADK R15 K83 ["Junior Trust"]
+     100 [-]: LOADK R16 K84 ["Trust"]
+     101 [-]: LOADK R17 K85 ["Senior Trust"]
+     102 [-]: LOADK R18 K86 ["Head Trust"]
+     103 [-]: LOADK R19 K87 ["Trainee Technical"]
+     104 [-]: LOADK R20 K88 ["Junior Technical"]
+     105 [-]: SETLIST R4 R5 16 [17]
+     106 [-]: LOADK R5 K24 ["Technical"]
+     107 [-]: LOADK R6 K89 ["Senior Technical"]
+     108 [-]: LOADK R7 K90 ["Head Technical"]
+     109 [-]: LOADK R8 K91 ["Trainee Supervising"]
+     110 [-]: LOADK R9 K92 ["Junior Supervising"]
+     111 [-]: LOADK R10 K93 ["Supervising"]
+     112 [-]: LOADK R11 K94 ["Senior Supervising"]
+     113 [-]: LOADK R12 K95 ["Head Supervising"]
+     114 [-]: LOADK R13 K96 ["Trainee Lead"]
+     115 [-]: LOADK R14 K97 ["Junior Lead"]
+     116 [-]: LOADK R15 K6 ["Lead"]
+     117 [-]: LOADK R16 K98 ["Senior Lead"]
+     118 [-]: LOADK R17 K99 ["Head Lead"]
+     119 [-]: LOADK R18 K100 ["Trainee Coordinating"]
+     120 [-]: LOADK R19 K101 ["Junior Coordinating"]
+     121 [-]: LOADK R20 K19 ["Coordinating"]
+     122 [-]: SETLIST R4 R5 16 [33]
+     123 [-]: LOADK R5 K102 ["Senior Coordinating"]
+     124 [-]: LOADK R6 K103 ["Head Coordinating"]
+     125 [-]: LOADK R7 K104 ["Trainee Specialist"]
+     126 [-]: LOADK R8 K105 ["Junior Specialist"]
+     127 [-]: LOADK R9 K21 ["Specialist"]
+     128 [-]: LOADK R10 K106 ["Senior Specialist"]
+     129 [-]: LOADK R11 K107 ["Head Specialist"]
+     130 [-]: LOADK R12 K108 ["Trainee Synergist"]
+     131 [-]: LOADK R13 K109 ["Junior Synergist"]
+     132 [-]: LOADK R14 K110 ["Synergist"]
+     133 [-]: LOADK R15 K111 ["Senior Synergist"]
+     134 [-]: LOADK R16 K112 ["Head Synergist"]
+     135 [-]: LOADK R17 K113 ["Trainee Creative"]
+     136 [-]: LOADK R18 K114 ["Junion Creative"]
+     137 [-]: LOADK R19 K115 ["Creative"]
+     138 [-]: LOADK R20 K116 ["Senior Creative"]
+     139 [-]: SETLIST R4 R5 16 [49]
+     140 [-]: LOADK R5 K117 ["Head Creative"]
+     141 [-]: LOADK R6 K118 ["Trainee Visionholder"]
+     142 [-]: LOADK R7 K119 ["Junior Visionholder"]
+     143 [-]: LOADK R8 K120 ["Visionholder"]
+     144 [-]: LOADK R9 K121 ["Senior Visionholder"]
+     145 [-]: LOADK R10 K122 ["Head Visionholder"]
+     146 [-]: LOADK R11 K123 ["Trainee Fiscal"]
+     147 [-]: LOADK R12 K124 ["Junior Fiscal"]
+     148 [-]: LOADK R13 K125 ["Fiscal"]
+     149 [-]: LOADK R14 K126 ["Senior Fiscal"]
+     150 [-]: LOADK R15 K127 ["Head Fiscal"]
+     151 [-]: LOADK R16 K128 ["Trainee Advising"]
+     152 [-]: LOADK R17 K129 ["Junior Advising"]
+     153 [-]: LOADK R18 K130 ["Advising"]
+     154 [-]: LOADK R19 K131 ["Senior Advising"]
+     155 [-]: LOADK R20 K132 ["Head Advising"]
+     156 [-]: SETLIST R4 R5 16 [65]
+     157 [-]: LOADK R5 K133 ["Trainee Honorary"]
+     158 [-]: LOADK R6 K134 ["Junior Honorary"]
+     159 [-]: LOADK R7 K3 ["Honorary"]
+     160 [-]: LOADK R8 K135 ["Senior Honorary"]
+     161 [-]: LOADK R9 K136 ["Head Honorary"]
+     162 [-]: LOADK R10 K137 ["Trainee Affiliate"]
+     163 [-]: LOADK R11 K138 ["Junior Affiliate"]
+     164 [-]: LOADK R12 K139 ["Affiliate"]
+     165 [-]: LOADK R13 K140 ["Senior Affiliate"]
+     166 [-]: LOADK R14 K141 ["Head Affiliate"]
+     167 [-]: LOADK R15 K142 ["Trainee Adjunct"]
+     168 [-]: LOADK R16 K143 ["Junior Adjunct"]
+     169 [-]: LOADK R17 K144 ["Adjunct"]
+     170 [-]: LOADK R18 K145 ["Senior Adjunct"]
+     171 [-]: LOADK R19 K146 ["Head Adjunct"]
+     172 [-]: LOADK R20 K147 ["Trainee Fiduciary"]
+     173 [-]: SETLIST R4 R5 16 [81]
+     174 [-]: LOADK R5 K148 ["Junior Fiduciary"]
+     175 [-]: LOADK R6 K149 ["Fiduciary"]
+     176 [-]: LOADK R7 K150 ["Senior Fiduciary"]
+     177 [-]: LOADK R8 K151 ["Head Fiduciary"]
+     178 [-]: LOADK R9 K152 ["Trainee Academic"]
+     179 [-]: LOADK R10 K153 ["Junior Academic"]
+     180 [-]: LOADK R11 K154 ["Academic"]
+     181 [-]: LOADK R12 K155 ["Senior Academic"]
+     182 [-]: LOADK R13 K156 ["Head Academic"]
+     183 [-]: LOADK R14 K157 ["Trainee Appointed"]
+     184 [-]: LOADK R15 K158 ["Junior Appointed"]
+     185 [-]: LOADK R16 K159 ["Appointed"]
+     186 [-]: LOADK R17 K160 ["Senior Appointed"]
+     187 [-]: LOADK R18 K161 ["Head Appointed"]
+     188 [-]: SETLIST R4 R5 14 [97]
+     189 [-]: SETLIST R2 R3 2 [1]
+     190 [-]: NEWTABLE R3 0 2
+     191 [-]: LOADN R4 1   
+     192 [-]: NEWTABLE R5 0 40
+     193 [-]: LOADK R6 K162 ["Head of"]
+     194 [-]: LOADK R7 K163 ["Overseer of"]
+     195 [-]: LOADK R8 K164 ["Leader of"]
+     196 [-]: LOADK R9 K165 ["Coordinator of"]
+     197 [-]: LOADK R10 K166 ["Inspector of"]
+     198 [-]: LOADK R11 K167 ["Visionary in charge of"]
+     199 [-]: LOADK R12 K168 ["Imagineer in charge of"]
+     200 [-]: LOADK R13 K169 ["Engineer in charge of"]
+     201 [-]: LOADK R14 K170 ["Clerk in charge of"]
+     202 [-]: LOADK R15 K171 ["Officer in charge of"]
+     203 [-]: LOADK R16 K172 ["Functionary in charge of"]
+     204 [-]: LOADK R17 K173 ["Supervisor of"]
+     205 [-]: LOADK R18 K174 ["Liason to"]
+     206 [-]: LOADK R19 K175 ["Manager of"]
+     207 [-]: LOADK R20 K176 ["Administrator of"]
+     208 [-]: LOADK R21 K177 ["Director of"]
+     209 [-]: SETLIST R5 R6 16 [1]
+     210 [-]: LOADK R6 K178 ["Architect of"]
+     211 [-]: LOADK R7 K179 ["Analyst of"]
+     212 [-]: LOADK R8 K180 ["Designer of"]
+     213 [-]: LOADK R9 K181 ["Planner of"]
+     214 [-]: LOADK R10 K182 ["Synergist for"]
+     215 [-]: LOADK R11 K183 ["Orchestrator of"]
+     216 [-]: LOADK R12 K184 ["Technician for"]
+     217 [-]: LOADK R13 K185 ["Developer of"]
+     218 [-]: LOADK R14 K186 ["Producer for"]
+     219 [-]: LOADK R15 K187 ["Consultant to"]
+     220 [-]: LOADK R16 K188 ["Facilitator of"]
+     221 [-]: LOADK R17 K189 ["Agent for"]
+     222 [-]: LOADK R18 K190 ["Investor for"]
+     223 [-]: LOADK R19 K191 ["Artist for"]
+     224 [-]: LOADK R20 K192 ["Member for"]
+     225 [-]: LOADK R21 K193 ["Specialist in"]
+     226 [-]: SETLIST R5 R6 16 [17]
+     227 [-]: LOADK R6 K194 ["Passionpreneur in charge of"]
+     228 [-]: LOADK R7 K195 ["Champion for "]
+     229 [-]: LOADK R8 K196 ["Expert in"]
+     230 [-]: LOADK R9 K197 ["Conceptualizer for"]
+     231 [-]: LOADK R10 K198 ["Driver for"]
+     232 [-]: LOADK R11 K199 ["Proactivator for"]
+     233 [-]: LOADK R12 K200 ["Secretary of"]
+     234 [-]: LOADK R13 K201 ["Auditor for"]
+     235 [-]: SETLIST R5 R6 8 [33]
+     236 [-]: SETLIST R3 R4 2 [1]
+     237 [-]: NEWTABLE R4 0 2
+     238 [-]: LOADK R5 K0 [0.5]
+     239 [-]: NEWTABLE R6 0 125
+     240 [-]: LOADK R7 K202 ["Administration"]
+     241 [-]: LOADK R8 K203 ["Analytics"]
+     242 [-]: LOADK R9 K204 ["Profit"]
+     243 [-]: LOADK R10 K205 ["Business"]
+     244 [-]: LOADK R11 K27 ["Medical"]
+     245 [-]: LOADK R12 K206 ["Data"]
+     246 [-]: LOADK R13 K26 ["Corporate"]
+     247 [-]: LOADK R14 K9 ["Investment"]
+     248 [-]: LOADK R15 K207 ["Training"]
+     249 [-]: LOADK R16 K208 ["Legal"]
+     250 [-]: LOADK R17 K209 ["Section"]
+     251 [-]: LOADK R18 K210 ["Sector"]
+     252 [-]: LOADK R19 K211 ["Planetary"]
+     253 [-]: LOADK R20 K212 ["System"]
+     254 [-]: LOADK R21 K213 ["Mental"]
+     255 [-]: LOADK R22 K214 ["Physical"]
+     256 [-]: SETLIST R6 R7 16 [1]
+     257 [-]: LOADK R7 K215 ["Commercial"]
+     258 [-]: LOADK R8 K25 ["Military"]
+     259 [-]: LOADK R9 K216 ["Weapons"]
+     260 [-]: LOADK R10 K217 ["Technological"]
+     261 [-]: LOADK R11 K36 ["Industrial"]
+     262 [-]: LOADK R12 K218 ["Tactical"]
+     263 [-]: LOADK R13 K219 ["Paradigm"]
+     264 [-]: LOADK R14 K220 ["Identity"]
+     265 [-]: LOADK R15 K221 ["Market"]
+     266 [-]: LOADK R16 K222 ["Group"]
+     267 [-]: LOADK R17 K223 ["Infrastructure"]
+     268 [-]: LOADK R18 K224 ["Quality"]
+     269 [-]: LOADK R19 K115 ["Creative"]
+     270 [-]: LOADK R20 K225 ["Team"]
+     271 [-]: LOADK R21 K226 ["Prophecy"]
+     272 [-]: LOADK R22 K35 ["Matrix-Oriented"]
+     273 [-]: SETLIST R6 R7 16 [17]
+     274 [-]: LOADK R7 K227 ["Mid-term"]
+     275 [-]: LOADK R8 K228 ["In-house"]
+     276 [-]: LOADK R9 K229 ["Interdepartmental"]
+     277 [-]: LOADK R10 K230 ["Confidential"]
+     278 [-]: LOADK R11 K231 ["Forensic"]
+     279 [-]: LOADK R12 K125 ["Fiscal"]
+     280 [-]: LOADK R13 K232 ["Wholistic"]
+     281 [-]: LOADK R14 K38 ["Multidisciplinary"]
+     282 [-]: LOADK R15 K233 ["Interactive"]
+     283 [-]: LOADK R16 K39 ["Intrinsic"]
+     284 [-]: LOADK R17 K234 ["Objective"]
+     285 [-]: LOADK R18 K235 ["Monotonal"]
+     286 [-]: LOADK R19 K236 ["Proactive"]
+     287 [-]: LOADK R20 K237 ["Professional"]
+     288 [-]: LOADK R21 K238 ["Progressive"]
+     289 [-]: LOADK R22 K239 ["Rapid"]
+     290 [-]: SETLIST R6 R7 16 [33]
+     291 [-]: LOADK R7 K240 ["Seamless"]
+     292 [-]: LOADK R8 K241 ["Focused"]
+     293 [-]: LOADK R9 K242 ["Proprietary"]
+     294 [-]: LOADK R10 K243 ["Synergistical"]
+     295 [-]: LOADK R11 K244 ["Unique"]
+     296 [-]: LOADK R12 K245 ["Actualized"]
+     297 [-]: LOADK R13 K246 ["Intellectual"]
+     298 [-]: LOADK R14 K247 ["Aggregate"]
+     299 [-]: LOADK R15 K248 ["Benchmarking"]
+     300 [-]: LOADK R16 K40 ["Certified"]
+     301 [-]: LOADK R17 K249 ["Multi-level"]
+     302 [-]: LOADK R18 K250 ["Building"]
+     303 [-]: LOADK R19 K251 ["Inclusive"]
+     304 [-]: LOADK R20 K252 ["Heirarchical"]
+     305 [-]: LOADK R21 K41 ["Field-Tested"]
+     306 [-]: LOADK R22 K42 ["Traditional"]
+     307 [-]: SETLIST R6 R7 16 [49]
+     308 [-]: LOADK R7 K253 ["Groundbreaking"]
+     309 [-]: LOADK R8 K254 ["Realistic"]
+     310 [-]: LOADK R9 K255 ["Expedited"]
+     311 [-]: LOADK R10 K256 ["Mediated"]
+     312 [-]: LOADK R11 K257 ["Enabled"]
+     313 [-]: LOADK R12 K258 ["Envisioned"]
+     314 [-]: LOADK R13 K259 ["Incentivized"]
+     315 [-]: LOADK R14 K260 ["Incepted"]
+     316 [-]: LOADK R15 K261 ["Integrated"]
+     317 [-]: LOADK R16 K262 ["Initiated"]
+     318 [-]: LOADK R17 K263 ["Iterated"]
+     319 [-]: LOADK R18 K264 ["Leveraged"]
+     320 [-]: LOADK R19 K265 ["Maintained"]
+     321 [-]: LOADK R20 K266 ["Maximized"]
+     322 [-]: LOADK R21 K267 ["Monetized"]
+     323 [-]: LOADK R22 K43 ["Enmeshed"]
+     324 [-]: SETLIST R6 R7 16 [65]
+     325 [-]: LOADK R7 K268 ["Negotiated"]
+     326 [-]: LOADK R8 K269 ["Networked"]
+     327 [-]: LOADK R9 K270 ["Optimized"]
+     328 [-]: LOADK R10 K271 ["Parallel"]
+     329 [-]: LOADK R11 K272 ["Scalable"]
+     330 [-]: LOADK R12 K273 ["Simplified"]
+     331 [-]: LOADK R13 K274 ["Streamlined"]
+     332 [-]: LOADK R14 K275 ["Cost-effective"]
+     333 [-]: LOADK R15 K44 ["Adaptive"]
+     334 [-]: LOADK R16 K45 ["Cross-Functional"]
+     335 [-]: LOADK R17 K276 ["Covalent"]
+     336 [-]: LOADK R18 K277 ["Compelling"]
+     337 [-]: LOADK R19 K278 ["Competitive"]
+     338 [-]: LOADK R20 K279 ["Customer-Facing"]
+     339 [-]: LOADK R21 K280 ["Customer-Directed"]
+     340 [-]: LOADK R22 K281 ["Community"]
+     341 [-]: SETLIST R6 R7 16 [81]
+     342 [-]: LOADK R7 K282 ["Economical"]
+     343 [-]: LOADK R8 K283 ["Void"]
+     344 [-]: LOADK R9 K284 ["Specter Particle"]
+     345 [-]: LOADK R10 K285 ["Solar Rail"]
+     346 [-]: LOADK R11 K286 ["Counter-Tenno"]
+     347 [-]: LOADK R12 K287 ["Counter-Sentient"]
+     348 [-]: LOADK R13 K288 ["Cybernetic"]
+     349 [-]: LOADK R14 K289 ["Automated"]
+     350 [-]: LOADK R15 K290 ["Robotic"]
+     351 [-]: LOADK R16 K291 ["Kuva Science"]
+     352 [-]: LOADK R17 K292 ["Thought"]
+     353 [-]: LOADK R18 K293 ["Frictionless"]
+     354 [-]: LOADK R19 K241 ["Focused"]
+     355 [-]: LOADK R20 K54 ["Parvosian"]
+     356 [-]: LOADK R21 K294 ["Hyperscale"]
+     357 [-]: LOADK R22 K295 ["Catalytic"]
+     358 [-]: SETLIST R6 R7 16 [97]
+     359 [-]: LOADK R7 K296 ["Desire-oriented"]
+     360 [-]: LOADK R8 K297 ["Grineer-resistant"]
+     361 [-]: LOADK R9 K298 ["Reverse-engineered"]
+     362 [-]: LOADK R10 K299 ["Orokin-derived"]
+     363 [-]: LOADK R11 K55 ["Augmented"]
+     364 [-]: LOADK R12 K300 ["Decentralized"]
+     365 [-]: LOADK R13 K301 ["Cognitive"]
+     366 [-]: LOADK R14 K302 ["Neural"]
+     367 [-]: LOADK R15 K303 ["Leading-Edge"]
+     368 [-]: LOADK R16 K304 ["Interdependent"]
+     369 [-]: LOADK R17 K305 ["Orthogonal"]
+     370 [-]: LOADK R18 K306 ["Supercharged"]
+     371 [-]: LOADK R19 K307 ["Trans-temporal"]
+     372 [-]: SETLIST R6 R7 13 [113]
+     373 [-]: SETLIST R4 R5 2 [1]
+     374 [-]: NEWTABLE R5 0 2
+     375 [-]: LOADN R6 1   
+     376 [-]: NEWTABLE R7 0 151
+     377 [-]: LOADK R8 K308 ["Development"]
+     378 [-]: LOADK R9 K309 ["Security"]
+     379 [-]: LOADK R10 K310 ["Growth"]
+     380 [-]: LOADK R11 K311 ["Compliance"]
+     381 [-]: LOADK R12 K312 ["Intelligence"]
+     382 [-]: LOADK R13 K313 ["Information"]
+     383 [-]: LOADK R14 K314 ["Innovation"]
+     384 [-]: LOADK R15 K207 ["Training"]
+     385 [-]: LOADK R16 K315 ["Knowledge"]
+     386 [-]: LOADK R17 K316 ["Affairs"]
+     387 [-]: LOADK R18 K317 ["Propaganda"]
+     388 [-]: LOADK R19 K318 ["Research"]
+     389 [-]: LOADK R20 K319 ["Communications"]
+     390 [-]: LOADK R21 K320 ["Leverage"]
+     391 [-]: LOADK R22 K321 ["Solutions"]
+     392 [-]: LOADK R23 K322 ["Marketing"]
+     393 [-]: SETLIST R7 R8 16 [1]
+     394 [-]: LOADK R8 K323 ["Directives"]
+     395 [-]: LOADK R9 K324 ["Integration"]
+     396 [-]: LOADK R10 K325 ["Functionality"]
+     397 [-]: LOADK R11 K326 ["Response"]
+     398 [-]: LOADK R12 K327 ["Resonance"]
+     399 [-]: LOADK R13 K328 ["Applications"]
+     400 [-]: LOADK R14 K329 ["Optimization"]
+     401 [-]: LOADK R15 K330 ["Operations"]
+     402 [-]: LOADK R16 K331 ["Assurance"]
+     403 [-]: LOADK R17 K332 ["Impact"]
+     404 [-]: LOADK R18 K333 ["Mobility"]
+     405 [-]: LOADK R19 K334 ["Configurations"]
+     406 [-]: LOADK R20 K335 ["Accountability"]
+     407 [-]: LOADK R21 K336 ["Factors"]
+     408 [-]: LOADK R22 K337 ["Metrics"]
+     409 [-]: LOADK R23 K338 ["Systematization"]
+     410 [-]: SETLIST R7 R8 16 [17]
+     411 [-]: LOADK R8 K339 ["Efficiency"]
+     412 [-]: LOADK R9 K340 ["Harmonics"]
+     413 [-]: LOADK R10 K341 ["Restructuring"]
+     414 [-]: LOADK R11 K342 ["Aglomeration"]
+     415 [-]: LOADK R12 K343 ["Rebranding"]
+     416 [-]: LOADK R13 K344 ["Morale"]
+     417 [-]: LOADK R14 K345 ["Fine-tuning"]
+     418 [-]: LOADK R15 K346 ["Thinking"]
+     419 [-]: LOADK R16 K347 ["Initiatives"]
+     420 [-]: LOADK R17 K348 ["Emergence"]
+     421 [-]: LOADK R18 K349 ["Progression"]
+     422 [-]: LOADK R19 K350 ["Purchasing"]
+     423 [-]: LOADK R20 K351 ["Expenditure"]
+     424 [-]: LOADK R21 K352 ["Dynamics"]
+     425 [-]: LOADK R22 K353 ["Planning"]
+     426 [-]: LOADK R23 K354 ["Protocols"]
+     427 [-]: SETLIST R7 R8 16 [33]
+     428 [-]: LOADK R8 K355 ["Zoning"]
+     429 [-]: LOADK R9 K356 ["Implementation"]
+     430 [-]: LOADK R10 K357 ["Differentiation"]
+     431 [-]: LOADK R11 K358 ["Transformation"]
+     432 [-]: LOADK R12 K359 ["Negotiation"]
+     433 [-]: LOADK R13 K360 ["Collaboration"]
+     434 [-]: LOADK R14 K361 ["Authorization"]
+     435 [-]: LOADK R15 K362 ["Competence"]
+     436 [-]: LOADK R16 K363 ["Distinction"]
+     437 [-]: LOADK R17 K364 ["Convenience"]
+     438 [-]: LOADK R18 K365 ["Excellence"]
+     439 [-]: LOADK R19 K363 ["Distinction"]
+     440 [-]: LOADK R20 K366 ["Synergy"]
+     441 [-]: LOADK R21 K367 ["Concepts"]
+     442 [-]: LOADK R22 K368 ["Coordination"]
+     443 [-]: LOADK R23 K369 ["Cultivation"]
+     444 [-]: SETLIST R7 R8 16 [49]
+     445 [-]: LOADK R8 K370 ["Customization"]
+     446 [-]: LOADK R9 K371 ["Delivery"]
+     447 [-]: LOADK R10 K372 ["Deployment"]
+     448 [-]: LOADK R11 K373 ["Dissemination"]
+     449 [-]: LOADK R12 K374 ["Teambuilding"]
+     450 [-]: LOADK R13 K375 ["Resolution"]
+     451 [-]: LOADK R14 K376 ["Re-imagination"]
+     452 [-]: LOADK R15 K377 ["Correction"]
+     453 [-]: LOADK R16 K378 ["Relationships"]
+     454 [-]: LOADK R17 K379 ["Retraining"]
+     455 [-]: LOADK R18 K380 ["Diversification"]
+     456 [-]: LOADK R19 K381 ["Acquisition"]
+     457 [-]: LOADK R20 K382 ["Exploitation"]
+     458 [-]: LOADK R21 K383 ["Takeovers"]
+     459 [-]: LOADK R22 K384 ["Headhunting"]
+     460 [-]: LOADK R23 K385 ["Outsourcing"]
+     461 [-]: SETLIST R7 R8 16 [65]
+     462 [-]: LOADK R8 K386 ["Recruitment"]
+     463 [-]: LOADK R9 K387 ["Motivation"]
+     464 [-]: LOADK R10 K388 ["Discipline"]
+     465 [-]: LOADK R11 K389 ["Assessment"]
+     466 [-]: LOADK R12 K390 ["Monetization"]
+     467 [-]: LOADK R13 K391 ["Evolution"]
+     468 [-]: LOADK R14 K392 ["Extension"]
+     469 [-]: LOADK R15 K393 ["Fabrication"]
+     470 [-]: LOADK R16 K394 ["Facilitation"]
+     471 [-]: LOADK R17 K395 ["Formulation"]
+     472 [-]: LOADK R18 K396 ["Generation"]
+     473 [-]: LOADK R19 K310 ["Growth"]
+     474 [-]: LOADK R20 K397 ["Onboarding"]
+     475 [-]: LOADK R21 K398 ["Supply Chains"]
+     476 [-]: LOADK R22 K399 ["Communities"]
+     477 [-]: LOADK R23 K400 ["Economies"]
+     478 [-]: SETLIST R7 R8 16 [81]
+     479 [-]: LOADK R8 K401 ["Future-Proofing"]
+     480 [-]: LOADK R9 K402 ["Enterprise"]
+     481 [-]: LOADK R10 K403 ["Exceptionalism"]
+     482 [-]: LOADK R11 K404 ["Portals"]
+     483 [-]: LOADK R12 K405 ["Adoption"]
+     484 [-]: LOADK R13 K406 ["Alignment"]
+     485 [-]: LOADK R14 K407 ["Architectures"]
+     486 [-]: LOADK R15 K408 ["Bandwidth"]
+     487 [-]: LOADK R16 K409 ["Benefits"]
+     488 [-]: LOADK R17 K410 ["Best Practices"]
+     489 [-]: LOADK R18 K411 ["Catalyzation"]
+     490 [-]: LOADK R19 K412 ["Prosthetics"]
+     491 [-]: LOADK R20 K413 ["Channels"]
+     492 [-]: LOADK R21 K414 ["Content"]
+     493 [-]: LOADK R22 K415 ["Conversion"]
+     494 [-]: LOADK R23 K416 ["Core Competencies"]
+     495 [-]: SETLIST R7 R8 16 [97]
+     496 [-]: LOADK R8 K417 ["Customer Service"]
+     497 [-]: LOADK R9 K418 ["Deliverables"]
+     498 [-]: LOADK R10 K419 ["Corpus Capital"]
+     499 [-]: LOADK R11 K420 ["Ideas"]
+     500 [-]: LOADK R12 K421 ["Intermediaries"]
+     501 [-]: LOADK R13 K422 ["Infrastructures"]
+     502 [-]: LOADK R14 K423 ["Intellectual Capital"]
+     503 [-]: LOADK R15 K424 ["Interfaces"]
+     504 [-]: LOADK R16 K425 ["Internal Sources"]
+     505 [-]: LOADK R17 K426 ["Leadership"]
+     506 [-]: LOADK R18 K427 ["Manufacture"]
+     507 [-]: LOADK R19 K428 ["Market Resources"]
+     508 [-]: LOADK R20 K429 ["Materials"]
+     509 [-]: LOADK R21 K430 ["Methodologies"]
+     510 [-]: LOADK R22 K431 ["Empowerment"]
+     511 [-]: LOADK R23 K432 ["Mindshare"]
+     512 [-]: SETLIST R7 R8 16 [113]
+     513 [-]: LOADK R8 K433 ["Models"]
+     514 [-]: LOADK R9 K434 ["Niches"]
+     515 [-]: LOADK R10 K435 ["Opportunities"]
+     516 [-]: LOADK R11 K436 ["Paradigms"]
+     517 [-]: LOADK R12 K437 ["Partnerships"]
+     518 [-]: LOADK R13 K438 ["Platforms"]
+     519 [-]: LOADK R14 K439 ["Improvements"]
+     520 [-]: LOADK R15 K440 ["Processes"]
+     521 [-]: LOADK R16 K441 ["Vectors"]
+     522 [-]: LOADK R17 K442 ["Resources"]
+     523 [-]: LOADK R18 K443 ["Results"]
+     524 [-]: LOADK R19 K444 ["Scenarios"]
+     525 [-]: LOADK R20 K445 ["Schemas"]
+     526 [-]: LOADK R21 K446 ["Services"]
+     527 [-]: LOADK R22 K447 ["Storage"]
+     528 [-]: LOADK R23 K448 ["Systems"]
+     529 [-]: SETLIST R7 R8 16 [129]
+     530 [-]: LOADK R8 K449 ["Linkage"]
+     531 [-]: LOADK R9 K450 ["Users"]
+     532 [-]: LOADK R10 K451 ["Value"]
+     533 [-]: LOADK R11 K452 ["Weapons Systems"]
+     534 [-]: LOADK R12 K453 ["Plasma Technologies"]
+     535 [-]: LOADK R13 K454 ["Reactive Defense Systems"]
+     536 [-]: LOADK R14 K455 ["Space Travel"]
+     537 [-]: SETLIST R7 R8 7 [145]
+     538 [-]: SETLIST R5 R6 2 [1]
+     539 [-]: NEWTABLE R6 0 2
+     540 [-]: LOADK R7 K0 [0.5]
+     541 [-]: NEWTABLE R8 0 35
+     542 [-]: LOADK R9 K456 ["(Earth Sector)"]
+     543 [-]: LOADK R10 K457 ["(Mars Sector)"]
+     544 [-]: LOADK R11 K458 ["(Neptune Sector)"]
+     545 [-]: LOADK R12 K459 ["(Venus Sector)"]
+     546 [-]: LOADK R13 K460 ["(Saturn Sector)"]
+     547 [-]: LOADK R14 K461 ["(Planetary)"]
+     548 [-]: LOADK R15 K462 ["(Interplanetary)"]
+     549 [-]: LOADK R16 K463 ["(Ceres Sector)"]
+     550 [-]: LOADK R17 K464 ["(Europa Sector)"]
+     551 [-]: LOADK R18 K465 ["(Jupiter Sector)"]
+     552 [-]: LOADK R19 K466 ["(Mercury Sector)"]
+     553 [-]: LOADK R20 K467 ["(Phobos Sector)"]
+     554 [-]: LOADK R21 K468 ["(Uranus Sector)"]
+     555 [-]: LOADK R22 K469 ["(Pluto Sector)"]
+     556 [-]: LOADK R23 K470 ["(Administration)"]
+     557 [-]: LOADK R24 K471 ["(Analytics)"]
+     558 [-]: SETLIST R8 R9 16 [1]
+     559 [-]: LOADK R9 K472 ["(Department of Profit)"]
+     560 [-]: LOADK R10 K473 ["(Business Affairs)"]
+     561 [-]: LOADK R11 K474 ["(Medical Applications)"]
+     562 [-]: LOADK R12 K475 ["(Data Insights)"]
+     563 [-]: LOADK R13 K476 ["(Corporate Affairs)"]
+     564 [-]: LOADK R14 K477 ["(Investment Logistics)"]
+     565 [-]: LOADK R15 K478 ["(in training)"]
+     566 [-]: LOADK R16 K479 ["(Legal Department)"]
+     567 [-]: LOADK R17 K480 ["(Council Affairs)"]
+     568 [-]: LOADK R18 K481 ["(Psychological Operations)"]
+     569 [-]: LOADK R19 K482 ["(Practical Applications)"]
+     570 [-]: LOADK R20 K483 ["(Marketing)"]
+     571 [-]: LOADK R21 K484 ["(Trust Division)"]
+     572 [-]: LOADK R22 K485 ["(Defence)"]
+     573 [-]: LOADK R23 K486 ["(Quality Assurance)"]
+     574 [-]: LOADK R24 K487 ["(Passionpreneurial Division)"]
+     575 [-]: SETLIST R8 R9 16 [17]
+     576 [-]: LOADK R9 K488 ["(Acting)"]
+     577 [-]: LOADK R10 K489 ["(Temporary)"]
+     578 [-]: LOADK R11 K490 ["(Probationary)"]
+     579 [-]: SETLIST R8 R9 3 [33]
+     580 [-]: SETLIST R6 R7 2 [1]
+     581 [-]: SETLIST R0 R1 6 [1]
+     582 [-]: NEWTABLE R1 0 1
+     583 [-]: NEWTABLE R2 0 2
+     584 [-]: LOADN R3 1   
+     585 [-]: NEWTABLE R4 0 329
+     586 [-]: LOADK R5 K491 ["Tech"]
+     587 [-]: LOADK R6 K492 ["Engineer"]
+     588 [-]: LOADK R7 K493 ["Overseer"]
+     589 [-]: LOADK R8 K494 ["Functionary"]
+     590 [-]: LOADK R9 K495 ["Clerk"]
+     591 [-]: LOADK R10 K496 ["Slave"]
+     592 [-]: LOADK R11 K497 ["Drone"]
+     593 [-]: LOADK R12 K498 ["Pilot"]
+     594 [-]: LOADK R13 K499 ["Test Subject"]
+     595 [-]: LOADK R14 K500 ["Accountant"]
+     596 [-]: LOADK R15 K501 ["Administrator"]
+     597 [-]: LOADK R16 K502 ["Apprentice"]
+     598 [-]: LOADK R17 K503 ["Instructor"]
+     599 [-]: LOADK R18 K504 ["Comptroller"]
+     600 [-]: LOADK R19 K505 ["Technician"]
+     601 [-]: LOADK R20 K506 ["Meaning Authority"]
+     602 [-]: SETLIST R4 R5 16 [1]
+     603 [-]: LOADK R5 K507 ["Dispatcher"]
+     604 [-]: LOADK R6 K508 ["Analyst"]
+     605 [-]: LOADK R7 K509 ["Developer"]
+     606 [-]: LOADK R8 K510 ["Architect"]
+     607 [-]: LOADK R9 K23 ["Assistant"]
+     608 [-]: LOADK R10 K511 ["Artist"]
+     609 [-]: LOADK R11 K512 ["Director"]
+     610 [-]: LOADK R12 K513 ["Officer"]
+     611 [-]: LOADK R13 K514 ["Manager"]
+     612 [-]: LOADK R14 K515 ["Assistant Manager"]
+     613 [-]: LOADK R15 K21 ["Specialist"]
+     614 [-]: LOADK R16 K516 ["Expansion Contractor"]
+     615 [-]: LOADK R17 K517 ["Leader"]
+     616 [-]: LOADK R18 K518 ["Coordinator "]
+     617 [-]: LOADK R19 K519 ["Inspector "]
+     618 [-]: LOADK R20 K520 ["Visionary "]
+     619 [-]: SETLIST R4 R5 16 [17]
+     620 [-]: LOADK R5 K521 ["Imagineer "]
+     621 [-]: LOADK R6 K522 ["Engineer "]
+     622 [-]: LOADK R7 K523 ["Oversight Overseer"]
+     623 [-]: LOADK R8 K524 ["Officer "]
+     624 [-]: LOADK R9 K525 ["Functionary "]
+     625 [-]: LOADK R10 K526 ["Supervisor "]
+     626 [-]: LOADK R11 K527 ["Liason "]
+     627 [-]: LOADK R12 K528 ["Manager "]
+     628 [-]: LOADK R13 K529 ["Administrator "]
+     629 [-]: LOADK R14 K530 ["Director "]
+     630 [-]: LOADK R15 K531 ["Architect "]
+     631 [-]: LOADK R16 K532 ["Analyst "]
+     632 [-]: LOADK R17 K533 ["Designer "]
+     633 [-]: LOADK R18 K534 ["Planner "]
+     634 [-]: LOADK R19 K535 ["Synergist "]
+     635 [-]: LOADK R20 K536 ["Orchestrator "]
+     636 [-]: SETLIST R4 R5 16 [33]
+     637 [-]: LOADK R5 K537 ["Technician "]
+     638 [-]: LOADK R6 K538 ["Developer "]
+     639 [-]: LOADK R7 K539 ["Producer "]
+     640 [-]: LOADK R8 K540 ["Consultant "]
+     641 [-]: LOADK R9 K541 ["Facilitator "]
+     642 [-]: LOADK R10 K542 ["Agent "]
+     643 [-]: LOADK R11 K543 ["Investor "]
+     644 [-]: LOADK R12 K544 ["Artist "]
+     645 [-]: LOADK R13 K545 ["Member "]
+     646 [-]: LOADK R14 K21 ["Specialist"]
+     647 [-]: LOADK R15 K546 ["Passionpreneur "]
+     648 [-]: LOADK R16 K547 ["Champion  "]
+     649 [-]: LOADK R17 K548 ["Expert"]
+     650 [-]: LOADK R18 K549 ["Conceptualizer "]
+     651 [-]: LOADK R19 K550 ["Driver "]
+     652 [-]: LOADK R20 K551 ["Proactivator "]
+     653 [-]: SETLIST R4 R5 16 [49]
+     654 [-]: LOADK R5 K552 ["Secretary "]
+     655 [-]: LOADK R6 K553 ["Auditor "]
+     656 [-]: LOADK R7 K554 ["Protege "]
+     657 [-]: LOADK R8 K555 ["Adviser "]
+     658 [-]: LOADK R9 K556 ["Authority"]
+     659 [-]: LOADK R10 K557 ["Contractor "]
+     660 [-]: LOADK R11 K558 ["Appointee "]
+     661 [-]: LOADK R12 K559 ["Scholar"]
+     662 [-]: LOADK R13 K560 ["Intern"]
+     663 [-]: LOADK R14 K561 ["Soldier"]
+     664 [-]: LOADK R15 K562 ["Scientist"]
+     665 [-]: LOADK R16 K563 ["Indentured Servant"]
+     666 [-]: LOADK R17 K564 ["Convict"]
+     667 [-]: LOADK R18 K565 ["Innovator"]
+     668 [-]: LOADK R19 K566 ["Evangelist"]
+     669 [-]: LOADK R20 K567 ["Concierge"]
+     670 [-]: SETLIST R4 R5 16 [65]
+     671 [-]: LOADK R5 K568 ["Happiness Concierge"]
+     672 [-]: LOADK R6 K569 ["Trust Engineer"]
+     673 [-]: LOADK R7 K570 ["Happiness Engineer"]
+     674 [-]: LOADK R8 K571 ["Conformity Engineer"]
+     675 [-]: LOADK R9 K572 ["Librarian"]
+     676 [-]: LOADK R10 K573 ["Optimizer"]
+     677 [-]: LOADK R11 K574 ["Converter"]
+     678 [-]: LOADK R12 K575 ["Researcher"]
+     679 [-]: LOADK R13 K576 ["Security Officer"]
+     680 [-]: LOADK R14 K577 ["Infosec"]
+     681 [-]: LOADK R15 K578 ["Philosopher"]
+     682 [-]: LOADK R16 K579 ["Curator"]
+     683 [-]: LOADK R17 K580 ["Historian"]
+     684 [-]: LOADK R18 K581 ["Weapons Tech"]
+     685 [-]: LOADK R19 K582 ["Info Tech"]
+     686 [-]: LOADK R20 K583 ["Astrogation Tech"]
+     687 [-]: SETLIST R4 R5 16 [81]
+     688 [-]: LOADK R5 K584 ["Fiduciary Tech"]
+     689 [-]: LOADK R6 K585 ["Lawyer"]
+     690 [-]: LOADK R7 K586 ["Hacker"]
+     691 [-]: LOADK R8 K587 ["Quartermaster"]
+     692 [-]: LOADK R9 K588 ["Observer"]
+     693 [-]: LOADK R10 K589 ["Accelerator"]
+     694 [-]: LOADK R11 K590 ["Field Agent"]
+     695 [-]: LOADK R12 K591 ["Qualifier"]
+     696 [-]: LOADK R13 K592 ["Evaluator"]
+     697 [-]: LOADK R14 K593 ["Quality Assurance"]
+     698 [-]: LOADK R15 K594 ["Expunger"]
+     699 [-]: LOADK R16 K595 ["Aggregator"]
+     700 [-]: LOADK R17 K508 ["Analyst"]
+     701 [-]: LOADK R18 K596 ["Extrapolator"]
+     702 [-]: LOADK R19 K597 ["Diplomat"]
+     703 [-]: LOADK R20 K598 ["Negotiator"]
+     704 [-]: SETLIST R4 R5 16 [97]
+     705 [-]: LOADK R5 K599 ["Assembler"]
+     706 [-]: LOADK R6 K600 ["Fabricator"]
+     707 [-]: LOADK R7 K601 ["Reconciliation"]
+     708 [-]: LOADK R8 K602 ["Authenticator"]
+     709 [-]: LOADK R9 K603 ["Finalization"]
+     710 [-]: LOADK R10 K604 ["Automation"]
+     711 [-]: LOADK R11 K605 ["Data Recovery"]
+     712 [-]: LOADK R12 K606 ["Rectifier"]
+     713 [-]: LOADK R13 K607 ["Value Reinforcement"]
+     714 [-]: LOADK R14 K608 ["Branch Manager"]
+     715 [-]: LOADK R15 K515 ["Assistant Manager"]
+     716 [-]: LOADK R16 K609 ["Rehabilitation"]
+     717 [-]: LOADK R17 K610 ["Initializer"]
+     718 [-]: LOADK R18 K611 ["Bundler"]
+     719 [-]: LOADK R19 K612 ["Installer"]
+     720 [-]: LOADK R20 K613 ["Replicator"]
+     721 [-]: SETLIST R4 R5 16 [113]
+     722 [-]: LOADK R5 K614 ["Integrator"]
+     723 [-]: LOADK R6 K615 ["Certifier"]
+     724 [-]: LOADK R7 K616 ["Licensing"]
+     725 [-]: LOADK R8 K617 ["Classification"]
+     726 [-]: LOADK R9 K618 ["Revisionary"]
+     727 [-]: LOADK R10 K619 ["Cleaner"]
+     728 [-]: LOADK R11 K620 ["Maintenance"]
+     729 [-]: LOADK R12 K621 ["Cartographer"]
+     730 [-]: LOADK R13 K622 ["Mechanization"]
+     731 [-]: LOADK R14 K623 ["Collater"]
+     732 [-]: LOADK R15 K624 ["Data Salvage"]
+     733 [-]: LOADK R16 K625 ["Hazmat Worker"]
+     734 [-]: LOADK R17 K626 ["Crewman"]
+     735 [-]: LOADK R18 K627 ["Scanner"]
+     736 [-]: LOADK R19 K628 ["Geographer"]
+     737 [-]: LOADK R20 K629 ["Encryption Specialist"]
+     738 [-]: SETLIST R4 R5 16 [129]
+     739 [-]: LOADK R5 K630 ["Sequencer"]
+     740 [-]: LOADK R6 K631 ["Network Official"]
+     741 [-]: LOADK R7 K632 ["Optimization Manager"]
+     742 [-]: LOADK R8 K633 ["Systemization"]
+     743 [-]: LOADK R9 K634 ["Tracer"]
+     744 [-]: LOADK R10 K635 ["Toggler"]
+     745 [-]: LOADK R11 K636 ["Digitizer"]
+     746 [-]: LOADK R12 K637 ["Distribution Slave"]
+     747 [-]: LOADK R13 K638 ["Prioritization"]
+     748 [-]: LOADK R14 K639 ["Enhancement Clerk"]
+     749 [-]: LOADK R15 K640 ["Eradication"]
+     750 [-]: LOADK R16 K641 ["Protection"]
+     751 [-]: LOADK R17 K642 ["Prototyping"]
+     752 [-]: LOADK R18 K643 ["Estimator"]
+     753 [-]: LOADK R19 K644 ["Obedience Instructor"]
+     754 [-]: LOADK R20 K645 ["Ambassador"]
+     755 [-]: SETLIST R4 R5 16 [145]
+     756 [-]: LOADK R5 K646 ["Novelist"]
+     757 [-]: LOADK R6 K647 ["Playwright"]
+     758 [-]: LOADK R7 K648 ["Conversion Optimization"]
+     759 [-]: LOADK R8 K649 ["Marketing Manager"]
+     760 [-]: LOADK R9 K650 ["Marketing Clerk"]
+     761 [-]: LOADK R10 K651 ["Marketing Drone"]
+     762 [-]: LOADK R11 K652 ["Editor"]
+     763 [-]: LOADK R12 K310 ["Growth"]
+     764 [-]: LOADK R13 K653 ["Secretary"]
+     765 [-]: LOADK R14 K654 ["Educator"]
+     766 [-]: LOADK R15 K655 ["Guide"]
+     767 [-]: LOADK R16 K656 ["Sales"]
+     768 [-]: LOADK R17 K657 ["Outbound Sales"]
+     769 [-]: LOADK R18 K658 ["Sales Associate"]
+     770 [-]: LOADK R19 K319 ["Communications"]
+     771 [-]: LOADK R20 K659 ["Communications Manager"]
+     772 [-]: SETLIST R4 R5 16 [161]
+     773 [-]: LOADK R5 K660 ["Communications Drone"]
+     774 [-]: LOADK R6 K661 ["Inspiration Officer"]
+     775 [-]: LOADK R7 K662 ["Head of Operations"]
+     776 [-]: LOADK R8 K663 ["Obedience Officer"]
+     777 [-]: LOADK R9 K664 ["Operations Manager"]
+     778 [-]: LOADK R10 K665 ["Operations Generalist"]
+     779 [-]: LOADK R11 K417 ["Customer Service"]
+     780 [-]: LOADK R12 K666 ["Happiness Officer"]
+     781 [-]: LOADK R13 K667 ["Corpus Resources"]
+     782 [-]: LOADK R14 K668 ["Experience Designer"]
+     783 [-]: LOADK R15 K669 ["Resource Manager"]
+     784 [-]: LOADK R16 K670 ["Resource Drone"]
+     785 [-]: LOADK R17 K442 ["Resources"]
+     786 [-]: LOADK R18 K671 ["Recruiter"]
+     787 [-]: LOADK R19 K672 ["People Operations"]
+     788 [-]: LOADK R20 K673 ["Mechanic"]
+     789 [-]: SETLIST R4 R5 16 [177]
+     790 [-]: LOADK R5 K674 ["Logic"]
+     791 [-]: LOADK R6 K675 ["Propagation Manager"]
+     792 [-]: LOADK R7 K676 ["Propagation Drone"]
+     793 [-]: LOADK R8 K677 ["Paranoia Propagation"]
+     794 [-]: LOADK R9 K678 ["Signal"]
+     795 [-]: LOADK R10 K679 ["Signal Manager"]
+     796 [-]: LOADK R11 K680 ["Signal Drone"]
+     797 [-]: LOADK R12 K681 ["Signal Expert"]
+     798 [-]: LOADK R13 K682 ["Support"]
+     799 [-]: LOADK R14 K683 ["Underling"]
+     800 [-]: LOADK R15 K494 ["Functionary"]
+     801 [-]: LOADK R16 K684 ["Plebe"]
+     802 [-]: LOADK R17 K685 ["Dogsbody"]
+     803 [-]: LOADK R18 K686 ["Paranoia Influencer"]
+     804 [-]: LOADK R19 K687 ["Community Figure"]
+     805 [-]: LOADK R20 K688 ["Social Integration"]
+     806 [-]: SETLIST R4 R5 16 [193]
+     807 [-]: LOADK R5 K689 ["Social Integrator"]
+     808 [-]: LOADK R6 K690 ["Media Control"]
+     809 [-]: LOADK R7 K691 ["Solutionist"]
+     810 [-]: LOADK R8 K692 ["Head of Fun"]
+     811 [-]: LOADK R9 K693 ["Image Officer"]
+     812 [-]: LOADK R10 K694 ["Enabler"]
+     813 [-]: LOADK R11 K695 ["Lead Enabler"]
+     814 [-]: LOADK R12 K696 ["Manager of Codependence"]
+     815 [-]: LOADK R13 K697 ["Workflow Optimizer"]
+     816 [-]: LOADK R14 K339 ["Efficiency"]
+     817 [-]: LOADK R15 K698 ["Efficiency Lead"]
+     818 [-]: LOADK R16 K699 ["Office Manager"]
+     819 [-]: LOADK R17 K700 ["Admin Assistant"]
+     820 [-]: LOADK R18 K70 ["Executive"]
+     821 [-]: LOADK R19 K701 ["Herder"]
+     822 [-]: LOADK R20 K702 ["CEO"]
+     823 [-]: SETLIST R4 R5 16 [209]
+     824 [-]: LOADK R5 K703 ["Ego Operations"]
+     825 [-]: LOADK R6 K704 ["Happiness Control"]
+     826 [-]: LOADK R7 K705 ["Listener"]
+     827 [-]: LOADK R8 K706 ["Social Engineering"]
+     828 [-]: LOADK R9 K707 ["Financial Officer"]
+     829 [-]: LOADK R10 K708 ["Banking"]
+     830 [-]: LOADK R11 K709 ["Kerning"]
+     831 [-]: LOADK R12 K710 ["Shredding"]
+     832 [-]: LOADK R13 K711 ["Folder"]
+     833 [-]: LOADK R14 K712 ["Judge"]
+     834 [-]: LOADK R15 K713 ["Assassin"]
+     835 [-]: LOADK R16 K714 ["Infiltrator"]
+     836 [-]: LOADK R17 K715 ["Tester"]
+     837 [-]: LOADK R18 K716 ["Test Pilot"]
+     838 [-]: LOADK R19 K717 ["Generalist"]
+     839 [-]: LOADK R20 K718 ["Polymath"]
+     840 [-]: SETLIST R4 R5 16 [225]
+     841 [-]: LOADK R5 K719 ["Problem Solver"]
+     842 [-]: LOADK R6 K720 ["Development Associate"]
+     843 [-]: LOADK R7 K721 ["Development Exec"]
+     844 [-]: LOADK R8 K722 ["Sniffer"]
+     845 [-]: LOADK R9 K723 ["Feeler"]
+     846 [-]: LOADK R10 K724 ["Excavator"]
+     847 [-]: LOADK R11 K725 ["Dissemnination"]
+     848 [-]: LOADK R12 K726 ["Dissemninator"]
+     849 [-]: LOADK R13 K727 ["Problem Development"]
+     850 [-]: LOADK R14 K728 ["Inspiration Mechanic"]
+     851 [-]: LOADK R15 K154 ["Academic"]
+     852 [-]: LOADK R16 K729 ["Floater"]
+     853 [-]: LOADK R17 K730 ["Sprayer"]
+     854 [-]: LOADK R18 K683 ["Underling"]
+     855 [-]: LOADK R19 K731 ["Undersecretary"]
+     856 [-]: LOADK R20 K732 ["Junior Assistant Manager"]
+     857 [-]: SETLIST R4 R5 16 [241]
+     858 [-]: LOADK R5 K733 ["Repercussion Control"]
+     859 [-]: LOADK R6 K734 ["Mismanagement Management"]
+     860 [-]: LOADK R7 K735 ["Optics"]
+     861 [-]: LOADK R8 K736 ["Vision Focuser"]
+     862 [-]: LOADK R9 K737 ["Creator"]
+     863 [-]: LOADK R10 K738 ["Dunker"]
+     864 [-]: LOADK R11 K739 ["Serf"]
+     865 [-]: LOADK R12 K740 ["Surrender Manager"]
+     866 [-]: LOADK R13 K741 ["Conflict Auditor"]
+     867 [-]: LOADK R14 K742 ["Conflict Synergist"]
+     868 [-]: LOADK R15 K743 ["Failure Appointee"]
+     869 [-]: LOADK R16 K744 ["Failure Planner"]
+     870 [-]: LOADK R17 K745 ["Bomb Pilot"]
+     871 [-]: LOADK R18 K746 ["Meaning Comptroller"]
+     872 [-]: LOADK R19 K747 ["Luck Administrator"]
+     873 [-]: LOADK R20 K748 ["Life Accountant"]
+     874 [-]: SETLIST R4 R5 16 [257]
+     875 [-]: LOADK R5 K749 ["Inspiration Drone"]
+     876 [-]: LOADK R6 K750 ["Collapse Developer"]
+     877 [-]: LOADK R7 K751 ["Outcomes"]
+     878 [-]: LOADK R8 K752 ["Obedience Leader"]
+     879 [-]: LOADK R9 K753 ["Vision Overseer"]
+     880 [-]: LOADK R10 K754 ["Deniability"]
+     881 [-]: LOADK R11 K755 ["Proactivity Slave"]
+     882 [-]: LOADK R12 K756 ["Innovation Drone"]
+     883 [-]: LOADK R13 K757 ["Cruelty Administrator"]
+     884 [-]: LOADK R14 K758 ["Ignorance Specialist"]
+     885 [-]: LOADK R15 K759 ["Expert Apprentice"]
+     886 [-]: LOADK R16 K760 ["Failure Instructor"]
+     887 [-]: LOADK R17 K761 ["Dream Technician"]
+     888 [-]: LOADK R18 K762 ["Scapegoat Dispatcher"]
+     889 [-]: LOADK R19 K763 ["Confusion Analyst"]
+     890 [-]: LOADK R20 K764 ["Chaos Architect"]
+     891 [-]: SETLIST R4 R5 16 [273]
+     892 [-]: LOADK R5 K765 ["Brutality Artist"]
+     893 [-]: LOADK R6 K766 ["Loss Director"]
+     894 [-]: LOADK R7 K767 ["Misinformation Director"]
+     895 [-]: LOADK R8 K768 ["Chaos Director"]
+     896 [-]: LOADK R9 K769 ["Chaos Manager"]
+     897 [-]: LOADK R10 K770 ["Confusion Manager"]
+     898 [-]: LOADK R11 K771 ["Confusion Visionary"]
+     899 [-]: LOADK R12 K772 ["Generalist Specialist"]
+     900 [-]: LOADK R13 K773 ["Redaction Overseer"]
+     901 [-]: LOADK R14 K753 ["Vision Overseer"]
+     902 [-]: LOADK R15 K774 ["Failure Leader"]
+     903 [-]: LOADK R16 K775 ["Misinformation Coordinator"]
+     904 [-]: LOADK R17 K776 ["Randomality Coordinator"]
+     905 [-]: LOADK R18 K777 ["Coordination Coordinator"]
+     906 [-]: LOADK R19 K778 ["Growth Inspector"]
+     907 [-]: LOADK R20 K779 ["Obfuscation"]
+     908 [-]: SETLIST R4 R5 16 [289]
+     909 [-]: LOADK R5 K780 ["Obfuscation Visionary"]
+     910 [-]: LOADK R6 K781 ["Conformity Imagineer"]
+     911 [-]: LOADK R7 K782 ["Harmony Liason"]
+     912 [-]: LOADK R8 K783 ["Chaos Analyst"]
+     913 [-]: LOADK R9 K784 ["Entropy Designer"]
+     914 [-]: LOADK R10 K785 ["Orchestration Synergist"]
+     915 [-]: LOADK R11 K786 ["Ignorance Consultant"]
+     916 [-]: LOADK R12 K787 ["Apathy Investor"]
+     917 [-]: LOADK R13 K788 ["Ignorance Expert"]
+     918 [-]: LOADK R14 K789 ["Reaction Proactivator"]
+     919 [-]: LOADK R15 K790 ["Stasis Reactionary"]
+     920 [-]: LOADK R16 K791 ["Stasis Clerk"]
+     921 [-]: LOADK R17 K792 ["Permanent Contractor"]
+     922 [-]: LOADK R18 K793 ["Ignorance Scholar"]
+     923 [-]: LOADK R19 K794 ["Stasis Innovator"]
+     924 [-]: LOADK R20 K795 ["Efficiency Drone"]
+     925 [-]: SETLIST R4 R5 16 [305]
+     926 [-]: LOADK R5 K796 ["Efficiency Evangelist"]
+     927 [-]: LOADK R6 K797 ["Surrender Innovator"]
+     928 [-]: LOADK R7 K798 ["Dissemnination Concierge"]
+     929 [-]: LOADK R8 K799 ["Creation Auditor"]
+     930 [-]: LOADK R9 K800 ["Efficiency Auditor"]
+     931 [-]: LOADK R10 K801 ["Efficiency Synergist"]
+     932 [-]: LOADK R11 K802 ["Ego Developer"]
+     933 [-]: LOADK R12 K803 ["Social Control"]
+     934 [-]: LOADK R13 K804 ["Chaos Integration"]
+     935 [-]: SETLIST R4 R5 9 [321]
+     936 [-]: SETLIST R2 R3 2 [1]
+     937 [-]: SETLIST R1 R2 1 [1]
+     938 [-]: NEWTABLE R2 0 1
+     939 [-]: NEWTABLE R3 0 2
+     940 [-]: LOADK R4 K805 [0.20000000000000001]
+     941 [-]: NEWTABLE R5 0 63
+     942 [-]: LOADK R6 K806 ["Dirty"]
+     943 [-]: LOADK R7 K807 ["Smilin'"]
+     944 [-]: LOADK R8 K808 ["Ramblin'"]
+     945 [-]: LOADK R9 K809 ["Big"]
+     946 [-]: LOADK R10 K810 ["Old"]
+     947 [-]: LOADK R11 K811 ["Long"]
+     948 [-]: LOADK R12 K812 ["Slim"]
+     949 [-]: LOADK R13 K813 ["Little"]
+     950 [-]: LOADK R14 K814 ["Rude"]
+     951 [-]: LOADK R15 K815 ["The"]
+     952 [-]: LOADK R16 K816 ["Boss"]
+     953 [-]: LOADK R17 K817 ["Howlin'"]
+     954 [-]: LOADK R18 K818 ["Lightnin'"]
+     955 [-]: LOADK R19 K819 ["Jumpin'"]
+     956 [-]: LOADK R20 K820 ["Crazy"]
+     957 [-]: LOADK R21 K821 ["Crazy Old"]
+     958 [-]: SETLIST R5 R6 16 [1]
+     959 [-]: LOADK R6 K822 ["Big Old"]
+     960 [-]: LOADK R7 K823 ["Long Tall"]
+     961 [-]: LOADK R8 K824 ["Blind"]
+     962 [-]: LOADK R9 K825 ["Deaf"]
+     963 [-]: LOADK R10 K826 ["Vallis"]
+     964 [-]: LOADK R11 K827 ["Fortuna"]
+     965 [-]: LOADK R12 K828 ["Rattlin'"]
+     966 [-]: LOADK R13 K829 ["Shakin'"]
+     967 [-]: LOADK R14 K830 ["Scrapper"]
+     968 [-]: LOADK R15 K831 ["Doc"]
+     969 [-]: LOADK R16 K832 ["Bumblin'"]
+     970 [-]: LOADK R17 K833 ["Dancin'"]
+     971 [-]: LOADK R18 K834 ["Whistlin'"]
+     972 [-]: LOADK R19 K835 ["Sleepy"]
+     973 [-]: LOADK R20 K836 ["Second-Chance"]
+     974 [-]: LOADK R21 K837 ["Li'l"]
+     975 [-]: SETLIST R5 R6 16 [17]
+     976 [-]: LOADK R6 K838 ["Good Time"]
+     977 [-]: LOADK R7 K839 ["Lowbrow"]
+     978 [-]: LOADK R8 K840 ["Funny Ol'"]
+     979 [-]: LOADK R9 K841 ["Lefty"]
+     980 [-]: LOADK R10 K812 ["Slim"]
+     981 [-]: LOADK R11 K842 ["Bad"]
+     982 [-]: LOADK R12 K843 ["Lonesome"]
+     983 [-]: LOADK R13 K844 ["Wanderin'"]
+     984 [-]: LOADK R14 K845 ["Barkin'"]
+     985 [-]: LOADK R15 K846 ["Youngblood"]
+     986 [-]: LOADK R16 K847 ["Sad"]
+     987 [-]: LOADK R17 K848 ["Odd"]
+     988 [-]: LOADK R18 K849 ["New"]
+     989 [-]: LOADK R19 K850 ["Wild"]
+     990 [-]: LOADK R20 K851 ["Cool"]
+     991 [-]: LOADK R21 K852 ["Laughin'"]
+     992 [-]: SETLIST R5 R6 16 [33]
+     993 [-]: LOADK R6 K853 ["Free"]
+     994 [-]: LOADK R7 K854 ["Hot"]
+     995 [-]: LOADK R8 K855 ["Cold"]
+     996 [-]: LOADK R9 K856 ["Rough"]
+     997 [-]: LOADK R10 K857 ["Heavy"]
+     998 [-]: LOADK R11 K858 ["Chill"]
+     999 [-]: LOADK R12 K815 ["The"]
+     1000 [-]: LOADK R13 K815 ["The"]
+     1001 [-]: LOADK R14 K815 ["The"]
+     1002 [-]: LOADK R15 K815 ["The"]
+     1003 [-]: LOADK R16 K859 ["Quiet"]
+     1004 [-]: LOADK R17 K860 ["Tombstone"]
+     1005 [-]: LOADK R18 K861 ["Thick"]
+     1006 [-]: LOADK R19 K862 ["Low-Down"]
+     1007 [-]: LOADK R20 K863 ["Lucky"]
+     1008 [-]: SETLIST R5 R6 15 [49]
+     1009 [-]: SETLIST R3 R4 2 [1]
+     1010 [-]: SETLIST R2 R3 1 [1]
+     1011 [-]: NEWTABLE R3 0 1
+     1012 [-]: NEWTABLE R4 0 2
+     1013 [-]: LOADN R5 1   
+     1014 [-]: NEWTABLE R6 0 309
+     1015 [-]: LOADK R7 K864 ["Lug"]
+     1016 [-]: LOADK R8 K865 ["Grease"]
+     1017 [-]: LOADK R9 K866 ["Thread"]
+     1018 [-]: LOADK R10 K867 ["Smooth"]
+     1019 [-]: LOADK R11 K856 ["Rough"]
+     1020 [-]: LOADK R12 K868 ["Smoke"]
+     1021 [-]: LOADK R13 K869 ["King"]
+     1022 [-]: LOADK R14 K870 ["Gate"]
+     1023 [-]: LOADK R15 K858 ["Chill"]
+     1024 [-]: LOADK R16 K871 ["Rattle"]
+     1025 [-]: LOADK R17 K872 ["Valve"]
+     1026 [-]: LOADK R18 K873 ["Spin"]
+     1027 [-]: LOADK R19 K874 ["Plate"]
+     1028 [-]: LOADK R20 K875 ["Snake"]
+     1029 [-]: LOADK R21 K876 ["Vent"]
+     1030 [-]: LOADK R22 K877 ["Star"]
+     1031 [-]: SETLIST R6 R7 16 [1]
+     1032 [-]: LOADK R7 K283 ["Void"]
+     1033 [-]: LOADK R8 K878 ["Steam"]
+     1034 [-]: LOADK R9 K879 ["Zip"]
+     1035 [-]: LOADK R10 K880 ["Boom"]
+     1036 [-]: LOADK R11 K881 ["Grim"]
+     1037 [-]: LOADK R12 K882 ["Sump"]
+     1038 [-]: LOADK R13 K883 ["Shot"]
+     1039 [-]: LOADK R14 K884 ["Trigger"]
+     1040 [-]: LOADK R15 K885 ["Zero"]
+     1041 [-]: LOADK R16 K850 ["Wild"]
+     1042 [-]: LOADK R17 K886 ["Chain"]
+     1043 [-]: LOADK R18 K887 ["Kit"]
+     1044 [-]: LOADK R19 K888 ["Core"]
+     1045 [-]: LOADK R20 K889 ["Fuse"]
+     1046 [-]: LOADK R21 K890 ["Point"]
+     1047 [-]: LOADK R22 K891 ["Echo"]
+     1048 [-]: SETLIST R6 R7 16 [17]
+     1049 [-]: LOADK R7 K892 ["Hitch"]
+     1050 [-]: LOADK R8 K893 ["Kick"]
+     1051 [-]: LOADK R9 K894 ["Punch"]
+     1052 [-]: LOADK R10 K895 ["Fist"]
+     1053 [-]: LOADK R11 K896 ["Gear"]
+     1054 [-]: LOADK R12 K897 ["Motor"]
+     1055 [-]: LOADK R13 K898 ["Mud"]
+     1056 [-]: LOADK R14 K899 ["Pay"]
+     1057 [-]: LOADK R15 K900 ["Track"]
+     1058 [-]: LOADK R16 K901 ["Worm"]
+     1059 [-]: LOADK R17 K902 ["Pain"]
+     1060 [-]: LOADK R18 K903 ["Blaze"]
+     1061 [-]: LOADK R19 K904 ["Dead"]
+     1062 [-]: LOADK R20 K905 ["Dice"]
+     1063 [-]: LOADK R21 K906 ["Duck"]
+     1064 [-]: LOADK R22 K907 ["Electro"]
+     1065 [-]: SETLIST R6 R7 16 [33]
+     1066 [-]: LOADK R7 K853 ["Free"]
+     1067 [-]: LOADK R8 K908 ["Flow"]
+     1068 [-]: LOADK R9 K909 ["Flat"]
+     1069 [-]: LOADK R10 K910 ["Ghost"]
+     1070 [-]: LOADK R11 K911 ["High"]
+     1071 [-]: LOADK R12 K912 ["Low"]
+     1072 [-]: LOADK R13 K913 ["Fast"]
+     1073 [-]: LOADK R14 K914 ["Slow"]
+     1074 [-]: LOADK R15 K915 ["Iron"]
+     1075 [-]: LOADK R16 K916 ["Steel"]
+     1076 [-]: LOADK R17 K917 ["Saw"]
+     1077 [-]: LOADK R18 K918 ["Barrel"]
+     1078 [-]: LOADK R19 K919 ["Ice"]
+     1079 [-]: LOADK R20 K920 ["Zone"]
+     1080 [-]: LOADK R21 K921 ["Pyro"]
+     1081 [-]: LOADK R22 K820 ["Crazy"]
+     1082 [-]: SETLIST R6 R7 16 [49]
+     1083 [-]: LOADK R7 K922 ["Mad"]
+     1084 [-]: LOADK R8 K923 ["Rush"]
+     1085 [-]: LOADK R9 K924 ["Gravity"]
+     1086 [-]: LOADK R10 K925 ["Tumble"]
+     1087 [-]: LOADK R11 K926 ["Weed"]
+     1088 [-]: LOADK R12 K927 ["Viper"]
+     1089 [-]: LOADK R13 K928 ["Hammer"]
+     1090 [-]: LOADK R14 K929 ["Storm"]
+     1091 [-]: LOADK R15 K930 ["Spike"]
+     1092 [-]: LOADK R16 K931 ["Razor"]
+     1093 [-]: LOADK R17 K932 ["Silent"]
+     1094 [-]: LOADK R18 K933 ["Proud"]
+     1095 [-]: LOADK R19 K934 ["Nimble"]
+     1096 [-]: LOADK R20 K935 ["Swift"]
+     1097 [-]: LOADK R21 K936 ["Grip"]
+     1098 [-]: LOADK R22 K937 ["Smudge"]
+     1099 [-]: SETLIST R6 R7 16 [65]
+     1100 [-]: LOADK R7 K938 ["Squid"]
+     1101 [-]: LOADK R8 K939 ["Ace"]
+     1102 [-]: LOADK R9 K940 ["Fix"]
+     1103 [-]: LOADK R10 K941 ["Alpha"]
+     1104 [-]: LOADK R11 K942 ["Axe"]
+     1105 [-]: LOADK R12 K943 ["Watch"]
+     1106 [-]: LOADK R13 K869 ["King"]
+     1107 [-]: LOADK R14 K944 ["Head"]
+     1108 [-]: LOADK R15 K945 ["Belly"]
+     1109 [-]: LOADK R16 K946 ["Bent"]
+     1110 [-]: LOADK R17 K947 ["Brick"]
+     1111 [-]: LOADK R18 K948 ["Broke"]
+     1112 [-]: LOADK R19 K949 ["Bug"]
+     1113 [-]: LOADK R20 K950 ["Bull"]
+     1114 [-]: LOADK R21 K951 ["Burn"]
+     1115 [-]: LOADK R22 K952 ["Candy"]
+     1116 [-]: SETLIST R6 R7 16 [81]
+     1117 [-]: LOADK R7 K953 ["Cash"]
+     1118 [-]: LOADK R8 K954 ["Chief"]
+     1119 [-]: LOADK R9 K955 ["Chaos"]
+     1120 [-]: LOADK R10 K956 ["Cherry"]
+     1121 [-]: LOADK R11 K957 ["Circle"]
+     1122 [-]: LOADK R12 K958 ["Cosmo"]
+     1123 [-]: LOADK R13 K959 ["Clown"]
+     1124 [-]: LOADK R14 K960 ["Crisp"]
+     1125 [-]: LOADK R15 K961 ["Crew"]
+     1126 [-]: LOADK R16 K962 ["Cruise"]
+     1127 [-]: LOADK R17 K963 ["Crypt"]
+     1128 [-]: LOADK R18 K964 ["Curse"]
+     1129 [-]: LOADK R19 K965 ["Cypher"]
+     1130 [-]: LOADK R20 K966 ["Crash"]
+     1131 [-]: LOADK R21 K967 ["Dash"]
+     1132 [-]: LOADK R22 K968 ["Dust"]
+     1133 [-]: SETLIST R6 R7 16 [97]
+     1134 [-]: LOADK R7 K206 ["Data"]
+     1135 [-]: LOADK R8 K969 ["Lock"]
+     1136 [-]: LOADK R9 K970 ["Dig"]
+     1137 [-]: LOADK R10 K971 ["Dip"]
+     1138 [-]: LOADK R11 K972 ["Dirt"]
+     1139 [-]: LOADK R12 K973 ["Ditch"]
+     1140 [-]: LOADK R13 K974 ["Dizzy"]
+     1141 [-]: LOADK R14 K975 ["Double"]
+     1142 [-]: LOADK R15 K976 ["Doodle"]
+     1143 [-]: LOADK R16 K977 ["Fly"]
+     1144 [-]: LOADK R17 K978 ["Evil"]
+     1145 [-]: LOADK R18 K979 ["Fire"]
+     1146 [-]: LOADK R19 K980 ["Fan"]
+     1147 [-]: LOADK R20 K981 ["Feet"]
+     1148 [-]: LOADK R21 K982 ["Fender"]
+     1149 [-]: LOADK R22 K983 ["Fester"]
+     1150 [-]: SETLIST R6 R7 16 [113]
+     1151 [-]: LOADK R7 K984 ["Flash"]
+     1152 [-]: LOADK R8 K985 ["Flea"]
+     1153 [-]: LOADK R9 K986 ["Flex"]
+     1154 [-]: LOADK R10 K987 ["Flint"]
+     1155 [-]: LOADK R11 K988 ["Game"]
+     1156 [-]: LOADK R12 K989 ["Glory"]
+     1157 [-]: LOADK R13 K990 ["Gonzo"]
+     1158 [-]: LOADK R14 K991 ["Grass"]
+     1159 [-]: LOADK R15 K936 ["Grip"]
+     1160 [-]: LOADK R16 K992 ["Garbage"]
+     1161 [-]: LOADK R17 K993 ["Gold"]
+     1162 [-]: LOADK R18 K994 ["Grin"]
+     1163 [-]: LOADK R19 K995 ["Grit"]
+     1164 [-]: LOADK R20 K996 ["Gun"]
+     1165 [-]: LOADK R21 K997 ["Hang"]
+     1166 [-]: LOADK R22 K998 ["Hip"]
+     1167 [-]: SETLIST R6 R7 16 [129]
+     1168 [-]: LOADK R7 K999 ["Hook"]
+     1169 [-]: LOADK R8 K1000 ["Hulk"]
+     1170 [-]: LOADK R9 K1001 ["Husk"]
+     1171 [-]: LOADK R10 K1002 ["Happy"]
+     1172 [-]: LOADK R11 K1003 ["Jugger"]
+     1173 [-]: LOADK R12 K1004 ["Key"]
+     1174 [-]: LOADK R13 K1005 ["Lab"]
+     1175 [-]: LOADK R14 K1006 ["Leather"]
+     1176 [-]: LOADK R15 K1007 ["Link"]
+     1177 [-]: LOADK R16 K1008 ["Lunch"]
+     1178 [-]: LOADK R17 K1009 ["Wrench"]
+     1179 [-]: LOADK R18 K928 ["Hammer"]
+     1180 [-]: LOADK R19 K872 ["Valve"]
+     1181 [-]: LOADK R20 K1010 ["Mace"]
+     1182 [-]: LOADK R21 K1011 ["Magnet"]
+     1183 [-]: LOADK R22 K1012 ["Max"]
+     1184 [-]: SETLIST R6 R7 16 [145]
+     1185 [-]: LOADK R7 K1013 ["Monk"]
+     1186 [-]: LOADK R8 K1014 ["Nail"]
+     1187 [-]: LOADK R9 K1015 ["Neutron"]
+     1188 [-]: LOADK R10 K1016 ["Split"]
+     1189 [-]: LOADK R11 K1017 ["Dive"]
+     1190 [-]: LOADK R12 K1018 ["Nozzle"]
+     1191 [-]: LOADK R13 K1019 ["Ozone"]
+     1192 [-]: LOADK R14 K1020 ["Pack"]
+     1193 [-]: LOADK R15 K1021 ["Paint"]
+     1194 [-]: LOADK R16 K1022 ["Pan"]
+     1195 [-]: LOADK R17 K1023 ["Cake"]
+     1196 [-]: LOADK R18 K1024 ["Pipe"]
+     1197 [-]: LOADK R19 K1025 ["Patch"]
+     1198 [-]: LOADK R20 K1026 ["Quick"]
+     1199 [-]: LOADK R21 K1027 ["Tip"]
+     1200 [-]: LOADK R22 K1028 ["Rocket"]
+     1201 [-]: SETLIST R6 R7 16 [161]
+     1202 [-]: LOADK R7 K1029 ["Rotor"]
+     1203 [-]: LOADK R8 K1030 ["Rudder"]
+     1204 [-]: LOADK R9 K923 ["Rush"]
+     1205 [-]: LOADK R10 K1031 ["Rag"]
+     1206 [-]: LOADK R11 K1032 ["Riddle"]
+     1207 [-]: LOADK R12 K1033 ["Stack"]
+     1208 [-]: LOADK R13 K1034 ["Bag"]
+     1209 [-]: LOADK R14 K1035 ["Sand"]
+     1210 [-]: LOADK R15 K1036 ["Shackle"]
+     1211 [-]: LOADK R16 K1037 ["Shade"]
+     1212 [-]: LOADK R17 K1038 ["Shake"]
+     1213 [-]: LOADK R18 K1039 ["Short"]
+     1214 [-]: LOADK R19 K1040 ["Tall"]
+     1215 [-]: LOADK R20 K811 ["Long"]
+     1216 [-]: LOADK R21 K1041 ["Shuttle"]
+     1217 [-]: LOADK R22 K1042 ["Silver"]
+     1218 [-]: SETLIST R6 R7 16 [177]
+     1219 [-]: LOADK R7 K1043 ["Skid"]
+     1220 [-]: LOADK R8 K1044 ["Slag"]
+     1221 [-]: LOADK R9 K1045 ["Slap"]
+     1222 [-]: LOADK R10 K1046 ["Slip"]
+     1223 [-]: LOADK R11 K1047 ["Sly"]
+     1224 [-]: LOADK R12 K1048 ["Snap"]
+     1225 [-]: LOADK R13 K1049 ["Spark"]
+     1226 [-]: LOADK R14 K1050 ["Spanner"]
+     1227 [-]: LOADK R15 K1051 ["Stink"]
+     1228 [-]: LOADK R16 K1052 ["Stone"]
+     1229 [-]: LOADK R17 K1053 ["Super"]
+     1230 [-]: LOADK R18 K1054 ["Scar"]
+     1231 [-]: LOADK R19 K1055 ["Shadow"]
+     1232 [-]: LOADK R20 K1056 ["Skull"]
+     1233 [-]: LOADK R21 K1057 ["Tread"]
+     1234 [-]: LOADK R22 K1058 ["Tank"]
+     1235 [-]: SETLIST R6 R7 16 [193]
+     1236 [-]: LOADK R7 K1059 ["Tax"]
+     1237 [-]: LOADK R8 K1060 ["Test"]
+     1238 [-]: LOADK R9 K1061 ["Thump"]
+     1239 [-]: LOADK R10 K1062 ["Thunder"]
+     1240 [-]: LOADK R11 K1063 ["Trash"]
+     1241 [-]: LOADK R12 K1064 ["Tap"]
+     1242 [-]: LOADK R13 K1065 ["Snow"]
+     1243 [-]: LOADK R14 K826 ["Vallis"]
+     1244 [-]: LOADK R15 K1066 ["Vapor"]
+     1245 [-]: LOADK R16 K1067 ["Venom"]
+     1246 [-]: LOADK R17 K1068 ["Vandal"]
+     1247 [-]: LOADK R18 K1069 ["War"]
+     1248 [-]: LOADK R19 K1070 ["Whisker"]
+     1249 [-]: LOADK R20 K1071 ["Wise"]
+     1250 [-]: LOADK R21 K1072 ["Wheel"]
+     1251 [-]: LOADK R22 K1073 ["Air"]
+     1252 [-]: SETLIST R6 R7 16 [209]
+     1253 [-]: LOADK R7 K1074 ["Angle"]
+     1254 [-]: LOADK R8 K332 ["Impact"]
+     1255 [-]: LOADK R9 K1075 ["Plane"]
+     1256 [-]: LOADK R10 K917 ["Saw"]
+     1257 [-]: LOADK R11 K1076 ["Radial"]
+     1258 [-]: LOADK R12 K1077 ["Band"]
+     1259 [-]: LOADK R13 K1078 ["Jig"]
+     1260 [-]: LOADK R14 K1079 ["Chop"]
+     1261 [-]: LOADK R15 K1080 ["Vac"]
+     1262 [-]: LOADK R16 K1081 ["Disc"]
+     1263 [-]: LOADK R17 K1082 ["Scum"]
+     1264 [-]: LOADK R18 K909 ["Flat"]
+     1265 [-]: LOADK R19 K1083 ["Wide"]
+     1266 [-]: LOADK R20 K1084 ["Thin"]
+     1267 [-]: LOADK R21 K1085 ["Greed"]
+     1268 [-]: LOADK R22 K1086 ["Acid"]
+     1269 [-]: SETLIST R6 R7 16 [225]
+     1270 [-]: LOADK R7 K1087 ["Live"]
+     1271 [-]: LOADK R8 K1088 ["Atomic"]
+     1272 [-]: LOADK R9 K1089 ["Blue"]
+     1273 [-]: LOADK R10 K816 ["Boss"]
+     1274 [-]: LOADK R11 K1090 ["Tough"]
+     1275 [-]: LOADK R12 K1091 ["Cheap"]
+     1276 [-]: LOADK R13 K1079 ["Chop"]
+     1277 [-]: LOADK R14 K1092 ["Load"]
+     1278 [-]: LOADK R15 K1093 ["Chunk"]
+     1279 [-]: LOADK R16 K1094 ["Giggle"]
+     1280 [-]: LOADK R17 K1095 ["Clear"]
+     1281 [-]: LOADK R18 K1096 ["Crude"]
+     1282 [-]: LOADK R19 K1097 ["Crust"]
+     1283 [-]: LOADK R20 K814 ["Rude"]
+     1284 [-]: LOADK R21 K1098 ["Loud"]
+     1285 [-]: LOADK R22 K1099 ["Soft"]
+     1286 [-]: SETLIST R6 R7 16 [241]
+     1287 [-]: LOADK R7 K1100 ["Hard"]
+     1288 [-]: LOADK R8 K1101 ["Cute"]
+     1289 [-]: LOADK R9 K1102 ["Damp"]
+     1290 [-]: LOADK R10 K1103 ["Dark"]
+     1291 [-]: LOADK R11 K1104 ["Light"]
+     1292 [-]: LOADK R12 K1105 ["Bright"]
+     1293 [-]: LOADK R13 K1106 ["Day"]
+     1294 [-]: LOADK R14 K1107 ["Night"]
+     1295 [-]: LOADK R15 K1108 ["Deep"]
+     1296 [-]: LOADK R16 K1109 ["Dim"]
+     1297 [-]: LOADK R17 K1110 ["Dull"]
+     1298 [-]: LOADK R18 K1111 ["Rage"]
+     1299 [-]: LOADK R19 K1112 ["Straight"]
+     1300 [-]: LOADK R20 K1113 ["Exo"]
+     1301 [-]: LOADK R21 K1114 ["Far"]
+     1302 [-]: LOADK R22 K1115 ["Fancy"]
+     1303 [-]: SETLIST R6 R7 16 [257]
+     1304 [-]: LOADK R7 K913 ["Fast"]
+     1305 [-]: LOADK R8 K1116 ["Form"]
+     1306 [-]: LOADK R9 K1117 ["Frag"]
+     1307 [-]: LOADK R10 K853 ["Free"]
+     1308 [-]: LOADK R11 K1118 ["Frost"]
+     1309 [-]: LOADK R12 K1119 ["Full"]
+     1310 [-]: LOADK R13 K1120 ["Fuzz"]
+     1311 [-]: LOADK R14 K1121 ["Glad"]
+     1312 [-]: LOADK R15 K1122 ["Groan"]
+     1313 [-]: LOADK R16 K1123 ["Groove"]
+     1314 [-]: LOADK R17 K1124 ["Growl"]
+     1315 [-]: LOADK R18 K1125 ["Hydro"]
+     1316 [-]: LOADK R19 K1126 ["Thermo"]
+     1317 [-]: LOADK R20 K1127 ["Charge"]
+     1318 [-]: LOADK R21 K1128 ["Jiggle"]
+     1319 [-]: LOADK R22 K1129 ["Lax"]
+     1320 [-]: SETLIST R6 R7 16 [273]
+     1321 [-]: LOADK R7 K969 ["Lock"]
+     1322 [-]: LOADK R8 K1130 ["Mid"]
+     1323 [-]: LOADK R9 K1131 ["Mini"]
+     1324 [-]: LOADK R10 K1132 ["Mix"]
+     1325 [-]: LOADK R11 K1133 ["Murk"]
+     1326 [-]: LOADK R12 K1134 ["Swamp"]
+     1327 [-]: LOADK R13 K1135 ["Shunt"]
+     1328 [-]: LOADK R14 K1136 ["Scorn"]
+     1329 [-]: LOADK R15 K1137 ["Hop"]
+     1330 [-]: LOADK R16 K1138 ["Jump"]
+     1331 [-]: LOADK R17 K1139 ["Thrash"]
+     1332 [-]: LOADK R18 K848 ["Odd"]
+     1333 [-]: LOADK R19 K1140 ["Oxy"]
+     1334 [-]: LOADK R20 K1026 ["Quick"]
+     1335 [-]: LOADK R21 K1141 ["Rank"]
+     1336 [-]: LOADK R22 K1142 ["Rash"]
+     1337 [-]: SETLIST R6 R7 16 [289]
+     1338 [-]: LOADK R7 K1143 ["Rasp"]
+     1339 [-]: LOADK R8 K1144 ["Retro"]
+     1340 [-]: LOADK R9 K1145 ["Ultra"]
+     1341 [-]: LOADK R10 K1146 ["Atom"]
+     1342 [-]: LOADK R11 K1147 ["Nuke"]
+     1343 [-]: SETLIST R6 R7 5 [305]
+     1344 [-]: SETLIST R4 R5 2 [1]
+     1345 [-]: SETLIST R3 R4 1 [1]
+     1346 [-]: NEWTABLE R4 0 1
+     1347 [-]: NEWTABLE R5 0 2
+     1348 [-]: LOADK R6 K1148 [0.80000000000000004]
+     1349 [-]: NEWTABLE R7 0 298
+     1350 [-]: LOADK R8 K1149 ["-Scooter"]
+     1351 [-]: LOADK R9 K1150 ["-Slick"]
+     1352 [-]: LOADK R10 K1151 ["-Skids"]
+     1353 [-]: LOADK R11 K1152 ["Charger"]
+     1354 [-]: LOADK R12 K1153 ["Diver"]
+     1355 [-]: LOADK R13 K1154 ["Fuel"]
+     1356 [-]: LOADK R14 K1155 ["Hand"]
+     1357 [-]: LOADK R15 K1156 ["Eyes"]
+     1358 [-]: LOADK R16 K1157 ["Teeth"]
+     1359 [-]: LOADK R17 K1158 ["Ears"]
+     1360 [-]: LOADK R18 K1159 ["Face"]
+     1361 [-]: LOADK R19 K944 ["Head"]
+     1362 [-]: LOADK R20 K1160 ["Spinner"]
+     1363 [-]: LOADK R21 K874 ["Plate"]
+     1364 [-]: LOADK R22 K864 ["Lug"]
+     1365 [-]: LOADK R23 K865 ["Grease"]
+     1366 [-]: SETLIST R7 R8 16 [1]
+     1367 [-]: LOADK R8 K866 ["Thread"]
+     1368 [-]: LOADK R9 K868 ["Smoke"]
+     1369 [-]: LOADK R10 K1161 ["Rattler"]
+     1370 [-]: LOADK R11 K875 ["Snake"]
+     1371 [-]: LOADK R12 K936 ["Grip"]
+     1372 [-]: LOADK R13 K930 ["Spike"]
+     1373 [-]: LOADK R14 K1162 ["Killer"]
+     1374 [-]: LOADK R15 K1163 ["Legs"]
+     1375 [-]: LOADK R16 K880 ["Boom"]
+     1376 [-]: LOADK R17 K881 ["Grim"]
+     1377 [-]: LOADK R18 K883 ["Shot"]
+     1378 [-]: LOADK R19 K884 ["Trigger"]
+     1379 [-]: LOADK R20 K885 ["Zero"]
+     1380 [-]: LOADK R21 K1164 ["Neck"]
+     1381 [-]: LOADK R22 K1165 ["Bell"]
+     1382 [-]: LOADK R23 K1166 ["Driver"]
+     1383 [-]: SETLIST R7 R8 16 [17]
+     1384 [-]: LOADK R8 K882 ["Sump"]
+     1385 [-]: LOADK R9 K1167 ["Lifter"]
+     1386 [-]: LOADK R10 K1168 ["Stringer"]
+     1387 [-]: LOADK R11 K1169 ["Stinger"]
+     1388 [-]: LOADK R12 K1170 ["Fish"]
+     1389 [-]: LOADK R13 K889 ["Fuse"]
+     1390 [-]: LOADK R14 K890 ["Point"]
+     1391 [-]: LOADK R15 K1171 ["Hanger"]
+     1392 [-]: LOADK R16 K1172 ["Puncher"]
+     1393 [-]: LOADK R17 K1173 ["Kicker"]
+     1394 [-]: LOADK R18 K1174 ["Hitcher"]
+     1395 [-]: LOADK R19 K1106 ["Day"]
+     1396 [-]: LOADK R20 K1175 ["Gears"]
+     1397 [-]: LOADK R21 K1176 ["Pig"]
+     1398 [-]: LOADK R22 K1177 ["Puller"]
+     1399 [-]: LOADK R23 K1178 ["Side"]
+     1400 [-]: SETLIST R7 R8 16 [33]
+     1401 [-]: LOADK R8 K1179 ["Tracker"]
+     1402 [-]: LOADK R9 K1180 ["Salt"]
+     1403 [-]: LOADK R10 K901 ["Worm"]
+     1404 [-]: LOADK R11 K902 ["Pain"]
+     1405 [-]: LOADK R12 K903 ["Blaze"]
+     1406 [-]: LOADK R13 K906 ["Duck"]
+     1407 [-]: LOADK R14 K1181 ["Line"]
+     1408 [-]: LOADK R15 K1182 ["Down"]
+     1409 [-]: LOADK R16 K1183 ["Riser"]
+     1410 [-]: LOADK R17 K1184 ["Knife"]
+     1411 [-]: LOADK R18 K1185 ["Blade"]
+     1412 [-]: LOADK R19 K917 ["Saw"]
+     1413 [-]: LOADK R20 K918 ["Barrel"]
+     1414 [-]: LOADK R21 K915 ["Iron"]
+     1415 [-]: LOADK R22 K916 ["Steel"]
+     1416 [-]: LOADK R23 K1186 ["Jaws"]
+     1417 [-]: SETLIST R7 R8 16 [49]
+     1418 [-]: LOADK R8 K712 ["Judge"]
+     1419 [-]: LOADK R9 K920 ["Zone"]
+     1420 [-]: LOADK R10 K923 ["Rush"]
+     1421 [-]: LOADK R11 K926 ["Weed"]
+     1422 [-]: LOADK R12 K927 ["Viper"]
+     1423 [-]: LOADK R13 K1187 ["Bones"]
+     1424 [-]: LOADK R14 K928 ["Hammer"]
+     1425 [-]: LOADK R15 K929 ["Storm"]
+     1426 [-]: LOADK R16 K930 ["Spike"]
+     1427 [-]: LOADK R17 K1188 ["Back"]
+     1428 [-]: LOADK R18 K931 ["Razor"]
+     1429 [-]: LOADK R19 K1189 ["Nomad"]
+     1430 [-]: LOADK R20 K936 ["Grip"]
+     1431 [-]: LOADK R21 K937 ["Smudge"]
+     1432 [-]: LOADK R22 K938 ["Squid"]
+     1433 [-]: LOADK R23 K1190 ["Bait"]
+     1434 [-]: SETLIST R7 R8 16 [65]
+     1435 [-]: LOADK R8 K1191 ["Snooper"]
+     1436 [-]: LOADK R9 K939 ["Ace"]
+     1437 [-]: LOADK R10 K1192 ["Fixer"]
+     1438 [-]: LOADK R11 K1193 ["Man"]
+     1439 [-]: LOADK R12 K869 ["King"]
+     1440 [-]: LOADK R13 K1194 ["Lord"]
+     1441 [-]: LOADK R14 K1195 ["Jack"]
+     1442 [-]: LOADK R15 K1196 ["Ringer"]
+     1443 [-]: LOADK R16 K1197 ["Sign"]
+     1444 [-]: LOADK R17 K1198 ["Singer"]
+     1445 [-]: LOADK R18 K1199 ["Bard"]
+     1446 [-]: LOADK R19 K1200 ["Beeper"]
+     1447 [-]: LOADK R20 K1201 ["Beaker"]
+     1448 [-]: LOADK R21 K945 ["Belly"]
+     1449 [-]: LOADK R22 K1202 ["Bird"]
+     1450 [-]: LOADK R23 K1203 ["Money"]
+     1451 [-]: SETLIST R7 R8 16 [81]
+     1452 [-]: LOADK R8 K1204 ["Biscuit"]
+     1453 [-]: LOADK R9 K1205 ["Berry"]
+     1454 [-]: LOADK R10 K1206 ["Blaster"]
+     1455 [-]: LOADK R11 K1207 ["Boo"]
+     1456 [-]: LOADK R12 K1208 ["Brain"]
+     1457 [-]: LOADK R13 K1209 ["Breaker"]
+     1458 [-]: LOADK R14 K947 ["Brick"]
+     1459 [-]: LOADK R15 K949 ["Bug"]
+     1460 [-]: LOADK R16 K950 ["Bull"]
+     1461 [-]: LOADK R17 K1210 ["Burner"]
+     1462 [-]: LOADK R18 K1211 ["Buster"]
+     1463 [-]: LOADK R19 K1212 ["Butcher"]
+     1464 [-]: LOADK R20 K952 ["Candy"]
+     1465 [-]: LOADK R21 K953 ["Cash"]
+     1466 [-]: LOADK R22 K1213 ["Jockey"]
+     1467 [-]: LOADK R23 K954 ["Chief"]
+     1468 [-]: SETLIST R7 R8 16 [97]
+     1469 [-]: LOADK R8 K1214 ["Chip"]
+     1470 [-]: LOADK R9 K1215 ["Cheeks"]
+     1471 [-]: LOADK R10 K1216 ["Chocks"]
+     1472 [-]: LOADK R11 K1217 ["Clang"]
+     1473 [-]: LOADK R12 K1218 ["Cooler"]
+     1474 [-]: LOADK R13 K1219 ["Crisper"]
+     1475 [-]: LOADK R14 K962 ["Cruise"]
+     1476 [-]: LOADK R15 K965 ["Cypher"]
+     1477 [-]: LOADK R16 K1220 ["Smasher"]
+     1478 [-]: LOADK R17 K1221 ["Dasher"]
+     1479 [-]: LOADK R18 K1222 ["Duster"]
+     1480 [-]: LOADK R19 K206 ["Data"]
+     1481 [-]: LOADK R20 K969 ["Lock"]
+     1482 [-]: LOADK R21 K1223 ["Digger"]
+     1483 [-]: LOADK R22 K1224 ["Dipper"]
+     1484 [-]: LOADK R23 K976 ["Doodle"]
+     1485 [-]: SETLIST R7 R8 16 [113]
+     1486 [-]: LOADK R8 K977 ["Fly"]
+     1487 [-]: LOADK R9 K979 ["Fire"]
+     1488 [-]: LOADK R10 K980 ["Fan"]
+     1489 [-]: LOADK R11 K981 ["Feet"]
+     1490 [-]: LOADK R12 K982 ["Fender"]
+     1491 [-]: LOADK R13 K983 ["Fester"]
+     1492 [-]: LOADK R14 K984 ["Flash"]
+     1493 [-]: LOADK R15 K985 ["Flea"]
+     1494 [-]: LOADK R16 K986 ["Flex"]
+     1495 [-]: LOADK R17 K987 ["Flint"]
+     1496 [-]: LOADK R18 K1225 ["Fridge"]
+     1497 [-]: LOADK R19 K1226 ["Flip"]
+     1498 [-]: LOADK R20 K988 ["Game"]
+     1499 [-]: LOADK R21 K989 ["Glory"]
+     1500 [-]: LOADK R22 K936 ["Grip"]
+     1501 [-]: LOADK R23 K1227 ["Gripper"]
+     1502 [-]: SETLIST R7 R8 16 [129]
+     1503 [-]: LOADK R8 K995 ["Grit"]
+     1504 [-]: LOADK R9 K994 ["Grin"]
+     1505 [-]: LOADK R10 K996 ["Gun"]
+     1506 [-]: LOADK R11 K586 ["Hacker"]
+     1507 [-]: LOADK R12 K1171 ["Hanger"]
+     1508 [-]: LOADK R13 K998 ["Hip"]
+     1509 [-]: LOADK R14 K999 ["Hook"]
+     1510 [-]: LOADK R15 K1000 ["Hulk"]
+     1511 [-]: LOADK R16 K1001 ["Husk"]
+     1512 [-]: LOADK R17 K1228 ["Husker"]
+     1513 [-]: LOADK R18 K1229 ["Juggler"]
+     1514 [-]: LOADK R19 K1230 ["Jammer"]
+     1515 [-]: LOADK R20 K1231 ["Hawk"]
+     1516 [-]: LOADK R21 K1004 ["Key"]
+     1517 [-]: LOADK R22 K1232 ["Knuckles"]
+     1518 [-]: LOADK R23 K1007 ["Link"]
+     1519 [-]: SETLIST R7 R8 16 [145]
+     1520 [-]: LOADK R8 K1008 ["Lunch"]
+     1521 [-]: LOADK R9 K1009 ["Wrench"]
+     1522 [-]: LOADK R10 K928 ["Hammer"]
+     1523 [-]: LOADK R11 K872 ["Valve"]
+     1524 [-]: LOADK R12 K1010 ["Mace"]
+     1525 [-]: LOADK R13 K1011 ["Magnet"]
+     1526 [-]: LOADK R14 K1233 ["Mangler"]
+     1527 [-]: LOADK R15 K1234 ["Mark"]
+     1528 [-]: LOADK R16 K1012 ["Max"]
+     1529 [-]: LOADK R17 K1235 ["Eater"]
+     1530 [-]: LOADK R18 K1236 ["Nails"]
+     1531 [-]: LOADK R19 K1237 ["Notch"]
+     1532 [-]: LOADK R20 K1153 ["Diver"]
+     1533 [-]: LOADK R21 K1018 ["Nozzle"]
+     1534 [-]: LOADK R22 K1019 ["Ozone"]
+     1535 [-]: LOADK R23 K1020 ["Pack"]
+     1536 [-]: SETLIST R7 R8 16 [161]
+     1537 [-]: LOADK R8 K1021 ["Paint"]
+     1538 [-]: LOADK R9 K1022 ["Pan"]
+     1539 [-]: LOADK R10 K1023 ["Cake"]
+     1540 [-]: LOADK R11 K1238 ["Poker"]
+     1541 [-]: LOADK R12 K1025 ["Patch"]
+     1542 [-]: LOADK R13 K1024 ["Pipe"]
+     1543 [-]: LOADK R14 K1239 ["Piper"]
+     1544 [-]: LOADK R15 K1027 ["Tip"]
+     1545 [-]: LOADK R16 K1240 ["Tipper"]
+     1546 [-]: LOADK R17 K1241 ["Draw"]
+     1547 [-]: LOADK R18 K1242 ["Ranger"]
+     1548 [-]: LOADK R19 K1243 ["Roach"]
+     1549 [-]: LOADK R20 K1028 ["Rocket"]
+     1550 [-]: LOADK R21 K1029 ["Rotor"]
+     1551 [-]: LOADK R22 K1030 ["Rudder"]
+     1552 [-]: LOADK R23 K923 ["Rush"]
+     1553 [-]: SETLIST R7 R8 16 [177]
+     1554 [-]: LOADK R8 K1244 ["Rags"]
+     1555 [-]: LOADK R9 K1245 ["Breath"]
+     1556 [-]: LOADK R10 K1246 ["Riddler"]
+     1557 [-]: LOADK R11 K1033 ["Stack"]
+     1558 [-]: LOADK R12 K1034 ["Bag"]
+     1559 [-]: LOADK R13 K1247 ["Mouth"]
+     1560 [-]: LOADK R14 K1248 ["Shackler"]
+     1561 [-]: LOADK R15 K1037 ["Shade"]
+     1562 [-]: LOADK R16 K1249 ["Shaker"]
+     1563 [-]: LOADK R17 K1250 ["Shooter"]
+     1564 [-]: LOADK R18 K1041 ["Shuttle"]
+     1565 [-]: LOADK R19 K1086 ["Acid"]
+     1566 [-]: LOADK R20 K1044 ["Slag"]
+     1567 [-]: LOADK R21 K1251 ["Slagger"]
+     1568 [-]: LOADK R22 K1252 ["Slapper"]
+     1569 [-]: LOADK R23 K1253 ["Snapper"]
+     1570 [-]: SETLIST R7 R8 16 [193]
+     1571 [-]: LOADK R8 K1254 ["Greaser"]
+     1572 [-]: LOADK R9 K1050 ["Spanner"]
+     1573 [-]: LOADK R10 K1049 ["Spark"]
+     1574 [-]: LOADK R11 K1255 ["Sparker"]
+     1575 [-]: LOADK R12 K1256 ["Stinker"]
+     1576 [-]: LOADK R13 K1052 ["Stone"]
+     1577 [-]: LOADK R14 K1054 ["Scar"]
+     1578 [-]: LOADK R15 K1257 ["Scars"]
+     1579 [-]: LOADK R16 K1055 ["Shadow"]
+     1580 [-]: LOADK R17 K1056 ["Skull"]
+     1581 [-]: LOADK R18 K1057 ["Tread"]
+     1582 [-]: LOADK R19 K1258 ["Treads"]
+     1583 [-]: LOADK R20 K1259 ["Tally"]
+     1584 [-]: LOADK R21 K1058 ["Tank"]
+     1585 [-]: LOADK R22 K1060 ["Test"]
+     1586 [-]: LOADK R23 K1260 ["Thumper"]
+     1587 [-]: SETLIST R7 R8 16 [209]
+     1588 [-]: LOADK R8 K1062 ["Thunder"]
+     1589 [-]: LOADK R9 K1063 ["Trash"]
+     1590 [-]: LOADK R10 K1261 ["Tapper"]
+     1591 [-]: LOADK R11 K1262 ["Pod"]
+     1592 [-]: LOADK R12 K1066 ["Vapor"]
+     1593 [-]: LOADK R13 K1067 ["Venom"]
+     1594 [-]: LOADK R14 K1068 ["Vandal"]
+     1595 [-]: LOADK R15 K1202 ["Bird"]
+     1596 [-]: LOADK R16 K1263 ["Wash"]
+     1597 [-]: LOADK R17 K1264 ["Water"]
+     1598 [-]: LOADK R18 K1265 ["Wax"]
+     1599 [-]: LOADK R19 K1266 ["Well"]
+     1600 [-]: LOADK R20 K1267 ["Web"]
+     1601 [-]: LOADK R21 K1070 ["Whisker"]
+     1602 [-]: LOADK R22 K1268 ["Wheels"]
+     1603 [-]: LOADK R23 K1074 ["Angle"]
+     1604 [-]: SETLIST R7 R8 16 [225]
+     1605 [-]: LOADK R8 K917 ["Saw"]
+     1606 [-]: LOADK R9 K1269 ["Radius"]
+     1607 [-]: LOADK R10 K1077 ["Band"]
+     1608 [-]: LOADK R11 K1078 ["Jig"]
+     1609 [-]: LOADK R12 K1079 ["Chop"]
+     1610 [-]: LOADK R13 K1080 ["Vac"]
+     1611 [-]: LOADK R14 K1081 ["Disc"]
+     1612 [-]: LOADK R15 K1085 ["Greed"]
+     1613 [-]: LOADK R16 K1089 ["Blue"]
+     1614 [-]: LOADK R17 K816 ["Boss"]
+     1615 [-]: LOADK R18 K1270 ["Brute"]
+     1616 [-]: LOADK R19 K1271 ["Cage"]
+     1617 [-]: LOADK R20 K1272 ["Chewer"]
+     1618 [-]: LOADK R21 K1079 ["Chop"]
+     1619 [-]: LOADK R22 K1273 ["Chopper"]
+     1620 [-]: LOADK R23 K1274 ["Rider"]
+     1621 [-]: SETLIST R7 R8 16 [241]
+     1622 [-]: LOADK R8 K1275 ["Bomber"]
+     1623 [-]: LOADK R9 K1276 ["Loader"]
+     1624 [-]: LOADK R10 K1277 ["Chunker"]
+     1625 [-]: LOADK R11 K1278 ["Cruster"]
+     1626 [-]: LOADK R12 K1279 ["Dandy"]
+     1627 [-]: LOADK R13 K1103 ["Dark"]
+     1628 [-]: LOADK R14 K1104 ["Light"]
+     1629 [-]: LOADK R15 K1105 ["Bright"]
+     1630 [-]: LOADK R16 K1106 ["Day"]
+     1631 [-]: LOADK R17 K1107 ["Night"]
+     1632 [-]: LOADK R18 K1108 ["Deep"]
+     1633 [-]: LOADK R19 K1280 ["Dome"]
+     1634 [-]: LOADK R20 K1281 ["Edge"]
+     1635 [-]: LOADK R21 K1111 ["Rage"]
+     1636 [-]: LOADK R22 K1282 ["Fragger"]
+     1637 [-]: LOADK R23 K1283 ["Gas"]
+     1638 [-]: SETLIST R7 R8 16 [257]
+     1639 [-]: LOADK R8 K1120 ["Fuzz"]
+     1640 [-]: LOADK R9 K1118 ["Frost"]
+     1641 [-]: LOADK R10 K1116 ["Form"]
+     1642 [-]: LOADK R11 K988 ["Game"]
+     1643 [-]: LOADK R12 K1284 ["Gasser"]
+     1644 [-]: LOADK R13 K1285 ["Glob"]
+     1645 [-]: LOADK R14 K1286 ["Glue"]
+     1646 [-]: LOADK R15 K1287 ["Groover"]
+     1647 [-]: LOADK R16 K1288 ["Growler"]
+     1648 [-]: LOADK R17 K1152 ["Charger"]
+     1649 [-]: LOADK R18 K969 ["Lock"]
+     1650 [-]: LOADK R19 K1289 ["Scoper"]
+     1651 [-]: LOADK R20 K1290 ["Mixer"]
+     1652 [-]: LOADK R21 K1291 ["Modder"]
+     1653 [-]: LOADK R22 K1292 ["Grubber"]
+     1654 [-]: LOADK R23 K1293 ["Shunter"]
+     1655 [-]: SETLIST R7 R8 16 [273]
+     1656 [-]: LOADK R8 K1294 ["Swamper"]
+     1657 [-]: LOADK R9 K1295 ["Stopper"]
+     1658 [-]: LOADK R10 K1296 ["Hopper"]
+     1659 [-]: LOADK R11 K1297 ["Jumper"]
+     1660 [-]: LOADK R12 K1298 ["Thrasher"]
+     1661 [-]: LOADK R13 K1142 ["Rash"]
+     1662 [-]: LOADK R14 K1299 ["Rasper"]
+     1663 [-]: LOADK R15 K1300 ["Sounder"]
+     1664 [-]: LOADK R16 K1301 ["Tooth"]
+     1665 [-]: LOADK R17 K1157 ["Teeth"]
+     1666 [-]: SETLIST R7 R8 10 [289]
+     1667 [-]: SETLIST R5 R6 2 [1]
+     1668 [-]: SETLIST R4 R5 1 [1]
+     1669 [-]: NEWTABLE R5 0 1
+     1670 [-]: NEWTABLE R6 0 2
+     1671 [-]: LOADN R7 1   
+     1672 [-]: NEWTABLE R8 0 11
+     1673 [-]: LOADK R9 K1302 ["Res-Arc"]
+     1674 [-]: LOADK R10 K1303 ["Surv-Tel"]
+     1675 [-]: LOADK R11 K1304 ["Arch-Mem"]
+     1676 [-]: LOADK R12 K1305 ["Cura-Phano"]
+     1677 [-]: LOADK R13 K1306 ["Inves-Resp"]
+     1678 [-]: LOADK R14 K1307 ["Expi-Dyna"]
+     1679 [-]: LOADK R15 K1308 ["Pion-Rec"]
+     1680 [-]: LOADK R16 K1309 ["Seek-Loc"]
+     1681 [-]: LOADK R17 K1310 ["Disp-Arch"]
+     1682 [-]: LOADK R18 K1311 ["Log-Rec"]
+     1683 [-]: LOADK R19 K1312 ["Ult-Pho"]
+     1684 [-]: SETLIST R8 R9 11 [1]
+     1685 [-]: SETLIST R6 R7 2 [1]
+     1686 [-]: SETLIST R5 R6 1 [1]
+     1687 [-]: NEWTABLE R6 0 1
+     1688 [-]: NEWTABLE R7 0 2
+     1689 [-]: LOADN R8 1   
+     1690 [-]: NEWTABLE R9 0 12
+     1691 [-]: LOADK R10 K1313 ["Arbiter Princeps"]
+     1692 [-]: LOADK R11 K1314 ["Arbiter"]
+     1693 [-]: LOADK R12 K1315 ["Arbiter Rex"]
+     1694 [-]: LOADK R13 K1316 ["Adept"]
+     1695 [-]: LOADK R14 K1317 ["Probate"]
+     1696 [-]: LOADK R15 K1318 ["Seneschal"]
+     1697 [-]: LOADK R16 K1319 ["Vigilant"]
+     1698 [-]: LOADK R17 K1320 ["Centurion"]
+     1699 [-]: LOADK R18 K1321 ["Armsman"]
+     1700 [-]: LOADK R19 K559 ["Scholar"]
+     1701 [-]: LOADK R20 K1322 ["Strategist"]
+     1702 [-]: LOADK R21 K1323 ["Venator"]
+     1703 [-]: SETLIST R9 R10 12 [1]
+     1704 [-]: SETLIST R7 R8 2 [1]
+     1705 [-]: SETLIST R6 R7 1 [1]
+     1706 [-]: DUPCLOSURE R7 K1324 []
+     1707 [-]: DUPCLOSURE R8 K1325 []
+     1708 [-]: DUPCLOSURE R9 K1326 []
+     1709 [-]: DUPCLOSURE R10 K1327 []
+     1710 [-]: DUPCLOSURE R11 K1328 []
+     1711 [-]: DUPTABLE R12 1342
+     1712 [-]: DUPCLOSURE R13 K1343 []
+     1713 [-]: MOVE R0 R7   
+     1714 [-]: MOVE R0 R0   
+     1715 [-]: SETTABLEKS R13 R12 K1329 ["GenerateCorpusTitle"]
+     1716 [-]: DUPCLOSURE R13 K1344 []
+     1717 [-]: MOVE R0 R8   
+     1718 [-]: MOVE R0 R2   
+     1719 [-]: SETTABLEKS R13 R12 K1330 ["GenerateSolarisTitle"]
+     1720 [-]: DUPCLOSURE R13 K1345 []
+     1721 [-]: MOVE R0 R8   
+     1722 [-]: MOVE R0 R3   
+     1723 [-]: SETTABLEKS R13 R12 K1331 ["GenerateSolarisFirstName"]
+     1724 [-]: DUPCLOSURE R13 K1346 []
+     1725 [-]: MOVE R0 R8   
+     1726 [-]: MOVE R0 R4   
+     1727 [-]: SETTABLEKS R13 R12 K1332 ["GenerateSolarisLastName"]
+     1728 [-]: DUPCLOSURE R13 K1347 []
+     1729 [-]: MOVE R0 R7   
+     1730 [-]: MOVE R0 R5   
+     1731 [-]: SETTABLEKS R13 R12 K1333 ["GenerateCephSudaTitle"]
+     1732 [-]: DUPCLOSURE R13 K1348 []
+     1733 [-]: MOVE R0 R8   
+     1734 [-]: MOVE R0 R6   
+     1735 [-]: SETTABLEKS R13 R12 K1334 ["GenerateHexisTitle"]
+     1736 [-]: DUPCLOSURE R13 K1349 []
+     1737 [-]: MOVE R0 R8   
+     1738 [-]: MOVE R0 R1   
+     1739 [-]: SETTABLEKS R13 R12 K1335 ["GenerateCorpusPrisonerTitle"]
+     1740 [-]: DUPCLOSURE R13 K1350 []
+     1741 [-]: MOVE R0 R9   
+     1742 [-]: MOVE R0 R0   
+     1743 [-]: SETTABLEKS R13 R12 K1336 ["NonSeededGenerateCorpusTitle"]
+     1744 [-]: DUPCLOSURE R13 K1351 []
+     1745 [-]: MOVE R0 R9   
+     1746 [-]: MOVE R0 R2   
+     1747 [-]: SETTABLEKS R13 R12 K1337 ["NonSeededGenerateSolarisTitle"]
+     1748 [-]: DUPCLOSURE R13 K1352 []
+     1749 [-]: MOVE R0 R9   
+     1750 [-]: MOVE R0 R3   
+     1751 [-]: MOVE R0 R4   
+     1752 [-]: SETTABLEKS R13 R12 K1338 ["NonSeededGenerateSolarisName"]
+     1753 [-]: DUPCLOSURE R13 K1353 []
+     1754 [-]: MOVE R0 R9   
+     1755 [-]: MOVE R0 R5   
+     1756 [-]: SETTABLEKS R13 R12 K1339 ["NonSeededGenerateCephSudaTitle"]
+     1757 [-]: DUPCLOSURE R13 K1354 []
+     1758 [-]: MOVE R0 R9   
+     1759 [-]: MOVE R0 R6   
+     1760 [-]: SETTABLEKS R13 R12 K1340 ["NonSeededGenerateHexisTitle"]
+     1761 [-]: DUPCLOSURE R13 K1355 []
+     1762 [-]: MOVE R0 R9   
+     1763 [-]: MOVE R0 R1   
+     1764 [-]: SETTABLEKS R13 R12 K1341 ["NonSeededGenerateCorpusPrisonerTitle"]
+     1765 [-]: RETURN R12 1 
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 54
 ; #Upvalues:       0
 ; #Parameters:     6
 ; Is_vararg:       0
-; Max Stack Size:  37
+; Max Stack Size:  19
 
-  1 [-]: LOADK     R6 K0        ; R6 := ""
-  2 [-]: EQ        1 R2 K1      ; if R2 == nil then PC := 11
-  3 [-]: JMP       11           ; PC := 11
-  4 [-]: MOVE      R7 R6        ; R7 := R6
-  5 [-]: GETGLOBAL R8 K2        ; R8 := 0x7f5022cf
-  6 [-]: GETTABLE  R8 R8 K3     ; R8 := R8[0xe8072ded]
-  7 [-]: LOADK     R9 K4        ; R9 := "<font color=\"#%s\">"
-  8 [-]: MOVE      R10 R2       ; R10 := R2
-  9 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
- 10 [-]: CONCAT    R6 R7 R8     ; R6 := R7 .. R8
- 11 [-]: NEWTABLE  R7 0 0       ; R7 := {}
- 12 [-]: CONST     R8 1         ; R8 := 1.000000
- 13 [-]: LEN       R9 R0        ; R9 := # R0
- 14 [-]: CONST     R10 1        ; R10 := 1.000000
- 15 [-]: FORPREP   R8 33        ; R8 -= R10; PC := 33
- 16 [-]: GETTABLE  R12 R0 R11   ; R12 := R0[R11]
- 17 [-]: GETTABLE  R12 R12 K5   ; R12 := R12[1.000000]
- 18 [-]: GETTABLE  R13 R0 R11   ; R13 := R0[R11]
- 19 [-]: GETTABLE  R13 R13 K6   ; R13 := R13[2.000000]
- 20 [-]: LOADK     R14 K7       ; R14 := "-"
- 21 [-]: GETGLOBAL R15 K8       ; R15 := 0xdd6e4cf8
- 22 [-]: CONST     R16 0        ; R16 := 0.000000
- 23 [-]: CONST     R17 1        ; R17 := 1.000000
- 24 [-]: CALL      R15 3 2      ; R15 := R15(R16,R17)
- 25 [-]: LE        0 R15 R12    ; if R15 > R12 then PC := 32
- 26 [-]: JMP       32           ; PC := 32
- 27 [-]: GETGLOBAL R15 K9       ; R15 := 0x0c5e62f9
- 28 [-]: CONST     R16 1        ; R16 := 1.000000
- 29 [-]: LEN       R17 R13      ; R17 := # R13
- 30 [-]: CALL      R15 3 2      ; R15 := R15(R16,R17)
- 31 [-]: GETTABLE  R14 R13 R15  ; R14 := R13[R15]
- 32 [-]: SETTABLE  R7 R11 R14   ; R7[R11] := R14
- 33 [-]: FORLOOP   R8 16        ; R8 += R10; if R8 <= R9 then begin PC := 16; R11 := R8 end
- 34 [-]: TEST      R5 0         ; if not R5 then PC := 88
- 35 [-]: JMP       88           ; PC := 88
- 36 [-]: GETGLOBAL R16 K10      ; R16 := 0x603636ad
- 37 [-]: MOVE      R17 R5       ; R17 := R5
- 38 [-]: LOADK     R18 K11      ; R18 := "WordOrder"
- 39 [-]: CONCAT    R17 R17 R18  ; R17 := R17 .. R18
- 40 [-]: NEWTABLE  R18 0 0      ; R18 := {}
- 41 [-]: CALL      R16 3 2      ; R16 := R16(R17,R18)
- 42 [-]: NEWTABLE  R17 0 0      ; R17 := {}
- 43 [-]: SELF      R18 R16 K12  ; R19 := R16; R18 := R16[0x3675281c]
- 44 [-]: LOADK     R20 K13      ; R20 := "%S+"
- 45 [-]: CALL      R18 3 4      ; R18,R19,R20 := R18(R19,R20)
- 46 [-]: JMP       54           ; PC := 54
- 47 [-]: GETGLOBAL R22 K14      ; R22 := 0x33bdd652
- 48 [-]: GETTABLE  R22 R22 K15  ; R22 := R22[0x23d5322f]
- 49 [-]: MOVE      R23 R17      ; R23 := R17
- 50 [-]: GETGLOBAL R24 K16      ; R24 := 0x03f57322
- 51 [-]: MOVE      R25 R21      ; R25 := R21
- 52 [-]: CALL      R24 2 0      ; R24,... := R24(R25)
- 53 [-]: CALL      R22 0 1      ; R22(R23,...)
- 54 [-]: TFORLOOP  R18 1        ; R21 :=  R18(R19,R20); if R21 ~= nil then begin PC = 47; R20 := R21 end
- 55 [-]: JMP       47           ; PC := 47
- 56 [-]: LEN       R22 R17      ; R22 := # R17
- 57 [-]: LEN       R23 R7       ; R23 := # R7
- 58 [-]: EQ        1 R22 R23    ; if R22 == R23 then PC := 64
- 59 [-]: JMP       64           ; PC := 64
- 60 [-]: GETGLOBAL R22 K17      ; R22 := 0x3d106989
- 61 [-]: LOADK     R23 K18      ; R23 := "CANNOT REMAP - NOT ENOUGH REMAP INDICES!"
- 62 [-]: CALL      R22 2 1      ; R22(R23)
- 63 [-]: JMP       88           ; PC := 88
- 64 [-]: NEWTABLE  R22 0 0      ; R22 := {}
- 65 [-]: CONST     R23 1        ; R23 := 1.000000
- 66 [-]: LEN       R24 R7       ; R24 := # R7
- 67 [-]: CONST     R25 1        ; R25 := 1.000000
- 68 [-]: FORPREP   R23 86       ; R23 -= R25; PC := 86
- 69 [-]: GETTABLE  R27 R17 R26  ; R27 := R17[R26]
- 70 [-]: GETTABLE  R27 R7 R27   ; R27 := R7[R27]
- 71 [-]: EQ        1 R27 K7     ; if R27 == "-" then PC := 85
- 72 [-]: JMP       85           ; PC := 85
- 73 [-]: SELF      R28 R27 K19  ; R29 := R27; R28 := R27[0x66edf04f]
- 74 [-]: LOADK     R30 K20      ; R30 := "%s+"
- 75 [-]: LOADK     R31 K0       ; R31 := ""
- 76 [-]: CALL      R28 4 2      ; R28 := R28(R29,R30,R31)
- 77 [-]: MOVE      R27 R28      ; R27 := R28
- 78 [-]: GETGLOBAL R28 K10      ; R28 := 0x603636ad
- 79 [-]: MOVE      R29 R5       ; R29 := R5
- 80 [-]: MOVE      R30 R27      ; R30 := R27
- 81 [-]: CONCAT    R29 R29 R30  ; R29 := R29 .. R30
- 82 [-]: NEWTABLE  R30 0 0      ; R30 := {}
- 83 [-]: CALL      R28 3 2      ; R28 := R28(R29,R30)
- 84 [-]: MOVE      R27 R28      ; R27 := R28
- 85 [-]: SETTABLE  R22 R26 R27  ; R22[R26] := R27
- 86 [-]: FORLOOP   R23 69       ; R23 += R25; if R23 <= R24 then begin PC := 69; R26 := R23 end
- 87 [-]: MOVE      R7 R22       ; R7 := R22
- 88 [-]: CONST     R28 1        ; R28 := 1.000000
- 89 [-]: LEN       R29 R7       ; R29 := # R7
- 90 [-]: CONST     R30 1        ; R30 := 1.000000
- 91 [-]: FORPREP   R28 127      ; R28 -= R30; PC := 127
- 92 [-]: GETTABLE  R32 R7 R31   ; R32 := R7[R31]
- 93 [-]: EQ        1 R32 K7     ; if R32 == "-" then PC := 127
- 94 [-]: JMP       127          ; PC := 127
- 95 [-]: EQ        0 R31 R3     ; if R31 ~= R3 then PC := 109
- 96 [-]: JMP       109          ; PC := 109
- 97 [-]: MOVE      R33 R6       ; R33 := R6
- 98 [-]: LOADK     R34 K21      ; R34 := "<br>"
- 99 [-]: CONCAT    R6 R33 R34   ; R6 := R33 .. R34
-100 [-]: EQ        1 R4 K1      ; if R4 == nil then PC := 109
-101 [-]: JMP       109          ; PC := 109
-102 [-]: MOVE      R33 R6       ; R33 := R6
-103 [-]: GETGLOBAL R34 K2       ; R34 := 0x7f5022cf
-104 [-]: GETTABLE  R34 R34 K3   ; R34 := R34[0xe8072ded]
-105 [-]: LOADK     R35 K4       ; R35 := "<font color=\"#%s\">"
-106 [-]: MOVE      R36 R4       ; R36 := R4
-107 [-]: CALL      R34 3 2      ; R34 := R34(R35,R36)
-108 [-]: CONCAT    R6 R33 R34   ; R6 := R33 .. R34
-109 [-]: GETGLOBAL R33 K2       ; R33 := 0x7f5022cf
-110 [-]: GETTABLE  R33 R33 K22  ; R33 := R33[0x41e2ae25]
-111 [-]: MOVE      R34 R6       ; R34 := R6
-112 [-]: CALL      R33 2 2      ; R33 := R33(R34)
-113 [-]: EQ        0 R33 K23    ; if R33 ~= 0.000000 then PC := 117
-114 [-]: JMP       117          ; PC := 117
-115 [-]: MOVE      R6 R32       ; R6 := R32
-116 [-]: JMP       127          ; PC := 127
-117 [-]: EQ        0 R1 K24     ; if R1 ~= true then PC := 124
-118 [-]: JMP       124          ; PC := 124
-119 [-]: MOVE      R33 R6       ; R33 := R6
-120 [-]: LOADK     R34 K25      ; R34 := " "
-121 [-]: MOVE      R35 R32      ; R35 := R32
-122 [-]: CONCAT    R6 R33 R35   ; R6 := R33 .. R34 .. R35
-123 [-]: JMP       127          ; PC := 127
-124 [-]: MOVE      R33 R6       ; R33 := R6
-125 [-]: MOVE      R34 R32      ; R34 := R32
-126 [-]: CONCAT    R6 R33 R34   ; R6 := R33 .. R34
-127 [-]: FORLOOP   R28 92       ; R28 += R30; if R28 <= R29 then begin PC := 92; R31 := R28 end
-128 [-]: EQ        1 R4 K1      ; if R4 == nil then PC := 133
-129 [-]: JMP       133          ; PC := 133
-130 [-]: MOVE      R33 R6       ; R33 := R6
-131 [-]: LOADK     R34 K26      ; R34 := "</font>"
-132 [-]: CONCAT    R6 R33 R34   ; R6 := R33 .. R34
-133 [-]: EQ        1 R2 K1      ; if R2 == nil then PC := 138
-134 [-]: JMP       138          ; PC := 138
-135 [-]: MOVE      R33 R6       ; R33 := R6
-136 [-]: LOADK     R34 K26      ; R34 := "</font>"
-137 [-]: CONCAT    R6 R33 R34   ; R6 := R33 .. R34
-138 [-]: RETURN    R6 2         ; return R6
-139 [-]: RETURN    R0 1         ; return 
+       0 [-]: LOADK R6 K0 [""]
+       1 [-]: JUMPXEQKNIL R2 L0
+       2 [-]: MOVE R7 R6   
+       3 [-]: GETIMPORT R8 3 [nil]
+       4 [-]: LOADK R9 K4 ["<font color=\"#%s\">"]
+       5 [-]: MOVE R10 R2  
+       6 [-]: CALL R8 2 1  
+       7 [-]: CONCAT R6 R7 R8
+L 0:   8 [-]: NEWTABLE R7 0 0
+       9 [-]: LOADN R10 1  
+      10 [-]: LENGTH R8 R0 
+      11 [-]: LOADN R9 1   
+      12 [-]: FORNPREP R8 L3
+L 1:  13 [-]: GETTABLE R12 R0 R10
+      14 [-]: GETTABLEN R11 R12 1
+      15 [-]: GETTABLE R13 R0 R10
+      16 [-]: GETTABLEN R12 R13 2
+      17 [-]: LOADK R13 K5 ["-"]
+      18 [-]: GETIMPORT R14 7 [nil]
+      19 [-]: LOADN R15 0  
+      20 [-]: LOADN R16 1  
+      21 [-]: CALL R14 2 1 
+      22 [-]: JUMPIFNOTLE R14 R11 L2
+      23 [-]: GETIMPORT R14 9 [nil]
+      24 [-]: LOADN R15 1  
+      25 [-]: LENGTH R16 R12
+      26 [-]: CALL R14 2 1 
+      27 [-]: GETTABLE R13 R12 R14
+L 2:  28 [-]: SETTABLE R13 R7 R10
+      29 [-]: FORNLOOP R8 L1
+L 3:  30 [-]: JUMPIFNOT R5 L10
+      31 [-]: GETIMPORT R8 11 [nil]
+      32 [-]: MOVE R10 R5  
+      33 [-]: LOADK R11 K12 ["WordOrder"]
+      34 [-]: CONCAT R9 R10 R11
+      35 [-]: NEWTABLE R10 0 0
+      36 [-]: CALL R8 2 1  
+      37 [-]: NEWTABLE R9 0 0
+      38 [-]: LOADK R12 K13 ["%S+"]
+      39 [-]: NAMECALL R10 R8 K14 [0x3675281C]
+      40 [-]: CALL R10 2 3 
+      41 [-]: FORGPREP R10 L5
+L 4:  42 [-]: MOVE R16 R9  
+      43 [-]: GETIMPORT R17 16 [nil]
+      44 [-]: MOVE R18 R13 
+      45 [-]: CALL R17 1 -1
+      46 [-]: FASTCALL 52 L5
+      47 [-]: GETIMPORT R15 19 [nil]
+      48 [-]: CALL R15 -1 0
+L 5:  49 [-]: FORGLOOP R10 L4 1
+      50 [-]: LENGTH R10 R9
+      51 [-]: LENGTH R11 R7
+      52 [-]: JUMPIFEQ R10 R11 L6
+      53 [-]: GETIMPORT R10 21 [nil]
+      54 [-]: LOADK R11 K22 ["CANNOT REMAP - NOT ENOUGH REMAP INDICES!"]
+      55 [-]: CALL R10 1 0 
+      56 [-]: JUMP L10
+    
+L 6:  57 [-]: NEWTABLE R10 0 0
+      58 [-]: LOADN R13 1  
+      59 [-]: LENGTH R11 R7
+      60 [-]: LOADN R12 1  
+      61 [-]: FORNPREP R11 L9
+L 7:  62 [-]: GETTABLE R15 R9 R13
+      63 [-]: GETTABLE R14 R7 R15
+      64 [-]: JUMPXEQKS R14 K5 L8 ["-"]
+      65 [-]: LOADK R17 K23 ["%s+"]
+      66 [-]: LOADK R18 K0 [""]
+      67 [-]: NAMECALL R15 R14 K24 [0x66EDF04F]
+      68 [-]: CALL R15 3 1 
+      69 [-]: MOVE R14 R15 
+      70 [-]: GETIMPORT R15 11 [nil]
+      71 [-]: MOVE R17 R5  
+      72 [-]: MOVE R18 R14 
+      73 [-]: CONCAT R16 R17 R18
+      74 [-]: NEWTABLE R17 0 0
+      75 [-]: CALL R15 2 1 
+      76 [-]: MOVE R14 R15 
+L 8:  77 [-]: SETTABLE R14 R10 R13
+      78 [-]: FORNLOOP R11 L7
+L 9:  79 [-]: MOVE R7 R10  
+L10:  80 [-]: LOADN R10 1  
+      81 [-]: LENGTH R8 R7 
+      82 [-]: LOADN R9 1   
+      83 [-]: FORNPREP R8 L17
+L11:  84 [-]: GETTABLE R11 R7 R10
+      85 [-]: JUMPXEQKS R11 K5 L16 ["-"]
+      86 [-]: JUMPIFNOTEQ R10 R3 L12
+      87 [-]: MOVE R12 R6  
+      88 [-]: LOADK R13 K25 ["<br>"]
+      89 [-]: CONCAT R6 R12 R13
+      90 [-]: JUMPXEQKNIL R4 L12
+      91 [-]: MOVE R12 R6  
+      92 [-]: GETIMPORT R13 3 [nil]
+      93 [-]: LOADK R14 K4 ["<font color=\"#%s\">"]
+      94 [-]: MOVE R15 R4  
+      95 [-]: CALL R13 2 1 
+      96 [-]: CONCAT R6 R12 R13
+L12:  97 [-]: FASTCALL1 43 R6 L13
+      98 [-]: MOVE R13 R6  
+      99 [-]: GETIMPORT R12 27 [nil]
+     100 [-]: CALL R12 1 1 
+L13: 101 [-]: JUMPXEQKN R12 K28 L14 NOT [0]
+     102 [-]: MOVE R6 R11  
+     103 [-]: JUMP L16
+    
+L14: 104 [-]: JUMPXEQKB R1 1 L15 NOT
+     105 [-]: MOVE R12 R6  
+     106 [-]: LOADK R13 K29 [" "]
+     107 [-]: MOVE R14 R11 
+     108 [-]: CONCAT R6 R12 R14
+     109 [-]: JUMP L16
+    
+L15: 110 [-]: MOVE R12 R6  
+     111 [-]: MOVE R13 R11 
+     112 [-]: CONCAT R6 R12 R13
+L16: 113 [-]: FORNLOOP R8 L11
+L17: 114 [-]: JUMPXEQKNIL R4 L18
+     115 [-]: MOVE R8 R6   
+     116 [-]: LOADK R9 K30 ["</font>"]
+     117 [-]: CONCAT R6 R8 R9
+L18: 118 [-]: JUMPXEQKNIL R2 L19
+     119 [-]: MOVE R8 R6   
+     120 [-]: LOADK R9 K30 ["</font>"]
+     121 [-]: CONCAT R6 R8 R9
+L19: 122 [-]: RETURN R6 1  
 
 
-; Function #2:
-;
 ; Name:            
 ; Defined at line: 132
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
-; Max Stack Size:  12
+; Max Stack Size:  11
 
-  1 [-]: LOADK     R2 K0        ; R2 := ""
-  2 [-]: CONST     R3 1         ; R3 := 1.000000
-  3 [-]: LEN       R4 R0        ; R4 := # R0
-  4 [-]: CONST     R5 1         ; R5 := 1.000000
-  5 [-]: FORPREP   R3 23        ; R3 -= R5; PC := 23
-  6 [-]: GETTABLE  R7 R0 R6     ; R7 := R0[R6]
-  7 [-]: GETTABLE  R7 R7 K1     ; R7 := R7[1.000000]
-  8 [-]: GETTABLE  R8 R0 R6     ; R8 := R0[R6]
-  9 [-]: GETTABLE  R8 R8 K2     ; R8 := R8[2.000000]
- 10 [-]: GETGLOBAL R9 K3        ; R9 := 0xdd6e4cf8
- 11 [-]: CONST     R10 0        ; R10 := 0.000000
- 12 [-]: CONST     R11 1        ; R11 := 1.000000
- 13 [-]: CALL      R9 3 2       ; R9 := R9(R10,R11)
- 14 [-]: LE        0 R9 R7      ; if R9 > R7 then PC := 23
- 15 [-]: JMP       23           ; PC := 23
- 16 [-]: GETGLOBAL R9 K4        ; R9 := 0x0c5e62f9
- 17 [-]: CONST     R10 1        ; R10 := 1.000000
- 18 [-]: LEN       R11 R8       ; R11 := # R8
- 19 [-]: CALL      R9 3 2       ; R9 := R9(R10,R11)
- 20 [-]: MOVE      R10 R1       ; R10 := R1
- 21 [-]: MOVE      R11 R9       ; R11 := R9
- 22 [-]: CONCAT    R2 R10 R11   ; R2 := R10 .. R11
- 23 [-]: FORLOOP   R3 6         ; R3 += R5; if R3 <= R4 then begin PC := 6; R6 := R3 end
- 24 [-]: RETURN    R2 2         ; return R2
- 25 [-]: RETURN    R0 1         ; return 
+       0 [-]: LOADK R2 K0 [""]
+       1 [-]: LOADN R5 1   
+       2 [-]: LENGTH R3 R0 
+       3 [-]: LOADN R4 1   
+       4 [-]: FORNPREP R3 L2
+L 0:   5 [-]: GETTABLE R7 R0 R5
+       6 [-]: GETTABLEN R6 R7 1
+       7 [-]: GETTABLE R8 R0 R5
+       8 [-]: GETTABLEN R7 R8 2
+       9 [-]: GETIMPORT R8 2 [nil]
+      10 [-]: LOADN R9 0   
+      11 [-]: LOADN R10 1  
+      12 [-]: CALL R8 2 1  
+      13 [-]: JUMPIFNOTLE R8 R6 L1
+      14 [-]: GETIMPORT R8 4 [nil]
+      15 [-]: LOADN R9 1   
+      16 [-]: LENGTH R10 R7
+      17 [-]: CALL R8 2 1  
+      18 [-]: MOVE R9 R1   
+      19 [-]: MOVE R10 R8  
+      20 [-]: CONCAT R2 R9 R10
+L 1:  21 [-]: FORNLOOP R3 L0
+L 2:  22 [-]: RETURN R2 1  
 
 
-; Function #3:
-;
 ; Name:            
 ; Defined at line: 148
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
-; Max Stack Size:  13
+; Max Stack Size:  12
 
-  1 [-]: LOADK     R2 K0        ; R2 := ""
-  2 [-]: CONST     R3 1         ; R3 := 1.000000
-  3 [-]: LEN       R4 R0        ; R4 := # R0
-  4 [-]: CONST     R5 1         ; R5 := 1.000000
-  5 [-]: FORPREP   R3 38        ; R3 -= R5; PC := 38
-  6 [-]: GETTABLE  R7 R0 R6     ; R7 := R0[R6]
-  7 [-]: GETTABLE  R7 R7 K1     ; R7 := R7[1.000000]
-  8 [-]: GETTABLE  R8 R0 R6     ; R8 := R0[R6]
-  9 [-]: GETTABLE  R8 R8 K2     ; R8 := R8[2.000000]
- 10 [-]: GETGLOBAL R9 K3        ; R9 := 0x5bced4c4
- 11 [-]: GETTABLE  R9 R9 K4     ; R9 := R9[0x3630e649]
- 12 [-]: CALL      R9 1 2       ; R9 := R9()
- 13 [-]: LE        0 R9 R7      ; if R9 > R7 then PC := 38
- 14 [-]: JMP       38           ; PC := 38
- 15 [-]: GETGLOBAL R9 K3        ; R9 := 0x5bced4c4
- 16 [-]: GETTABLE  R9 R9 K4     ; R9 := R9[0x3630e649]
- 17 [-]: CONST     R10 1        ; R10 := 1.000000
- 18 [-]: LEN       R11 R8       ; R11 := # R8
- 19 [-]: CALL      R9 3 2       ; R9 := R9(R10,R11)
- 20 [-]: GETGLOBAL R10 K5       ; R10 := 0x7f5022cf
- 21 [-]: GETTABLE  R10 R10 K6   ; R10 := R10[0x41e2ae25]
- 22 [-]: MOVE      R11 R2       ; R11 := R2
- 23 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 24 [-]: EQ        0 R10 K7     ; if R10 ~= 0.000000 then PC := 28
- 25 [-]: JMP       28           ; PC := 28
- 26 [-]: GETTABLE  R2 R8 R9     ; R2 := R8[R9]
- 27 [-]: JMP       38           ; PC := 38
- 28 [-]: EQ        0 R1 K8      ; if R1 ~= true then PC := 35
- 29 [-]: JMP       35           ; PC := 35
- 30 [-]: MOVE      R10 R2       ; R10 := R2
- 31 [-]: LOADK     R11 K9       ; R11 := " "
- 32 [-]: GETTABLE  R12 R8 R9    ; R12 := R8[R9]
- 33 [-]: CONCAT    R2 R10 R12   ; R2 := R10 .. R11 .. R12
- 34 [-]: JMP       38           ; PC := 38
- 35 [-]: MOVE      R10 R2       ; R10 := R2
- 36 [-]: GETTABLE  R11 R8 R9    ; R11 := R8[R9]
- 37 [-]: CONCAT    R2 R10 R11   ; R2 := R10 .. R11
- 38 [-]: FORLOOP   R3 6         ; R3 += R5; if R3 <= R4 then begin PC := 6; R6 := R3 end
- 39 [-]: RETURN    R2 2         ; return R2
- 40 [-]: RETURN    R0 1         ; return 
+       0 [-]: LOADK R2 K0 [""]
+       1 [-]: LOADN R5 1   
+       2 [-]: LENGTH R3 R0 
+       3 [-]: LOADN R4 1   
+       4 [-]: FORNPREP R3 L5
+L 0:   5 [-]: GETTABLE R7 R0 R5
+       6 [-]: GETTABLEN R6 R7 1
+       7 [-]: GETTABLE R8 R0 R5
+       8 [-]: GETTABLEN R7 R8 2
+       9 [-]: GETIMPORT R8 3 [nil]
+      10 [-]: CALL R8 0 1  
+      11 [-]: JUMPIFNOTLE R8 R6 L4
+      12 [-]: GETIMPORT R8 3 [nil]
+      13 [-]: LOADN R9 1   
+      14 [-]: LENGTH R10 R7
+      15 [-]: CALL R8 2 1  
+      16 [-]: FASTCALL1 43 R2 L1
+      17 [-]: MOVE R10 R2  
+      18 [-]: GETIMPORT R9 6 [nil]
+      19 [-]: CALL R9 1 1  
+L 1:  20 [-]: JUMPXEQKN R9 K7 L2 NOT [0]
+      21 [-]: GETTABLE R2 R7 R8
+      22 [-]: JUMP L4
+     
+L 2:  23 [-]: JUMPXEQKB R1 1 L3 NOT
+      24 [-]: MOVE R9 R2   
+      25 [-]: LOADK R10 K8 [" "]
+      26 [-]: GETTABLE R11 R7 R8
+      27 [-]: CONCAT R2 R9 R11
+      28 [-]: JUMP L4
+     
+L 3:  29 [-]: MOVE R9 R2   
+      30 [-]: GETTABLE R10 R7 R8
+      31 [-]: CONCAT R2 R9 R10
+L 4:  32 [-]: FORNLOOP R3 L0
+L 5:  33 [-]: RETURN R2 1  
 
 
-; Function #4:
-;
 ; Name:            
 ; Defined at line: 172
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
-; Max Stack Size:  16
+; Max Stack Size:  15
 
-  1 [-]: CONST     R2 1         ; R2 := 1.000000
-  2 [-]: CONST     R3 1         ; R3 := 1.000000
-  3 [-]: LEN       R4 R0        ; R4 := # R0
-  4 [-]: CONST     R5 1         ; R5 := 1.000000
-  5 [-]: FORPREP   R3 29        ; R3 -= R5; PC := 29
-  6 [-]: GETTABLE  R7 R0 R6     ; R7 := R0[R6]
-  7 [-]: GETTABLE  R7 R7 K0     ; R7 := R7[2.000000]
-  8 [-]: CONST     R8 1         ; R8 := 1.000000
-  9 [-]: LEN       R9 R7        ; R9 := # R7
- 10 [-]: CONST     R10 1        ; R10 := 1.000000
- 11 [-]: FORPREP   R8 28        ; R8 -= R10; PC := 28
- 12 [-]: GETGLOBAL R12 K1       ; R12 := 0x3d106989
- 13 [-]: MOVE      R13 R1       ; R13 := R1
- 14 [-]: MOVE      R14 R2       ; R14 := R2
- 15 [-]: LOADK     R15 K2       ; R15 := "]"
- 16 [-]: CONCAT    R13 R13 R15  ; R13 := R13 .. R14 .. R15
- 17 [-]: CALL      R12 2 1      ; R12(R13)
- 18 [-]: GETGLOBAL R12 K1       ; R12 := 0x3d106989
- 19 [-]: LOADK     R13 K3       ; R13 := "En=\""
- 20 [-]: GETTABLE  R14 R7 R11   ; R14 := R7[R11]
- 21 [-]: LOADK     R15 K4       ; R15 := "\""
- 22 [-]: CONCAT    R13 R13 R15  ; R13 := R13 .. R14 .. R15
- 23 [-]: CALL      R12 2 1      ; R12(R13)
- 24 [-]: GETGLOBAL R12 K1       ; R12 := 0x3d106989
- 25 [-]: LOADK     R13 K5       ; R13 := "Translated=0\n"
- 26 [-]: CALL      R12 2 1      ; R12(R13)
- 27 [-]: ADD       R2 R2 K6     ; R2 := R2 + 1.000000
- 28 [-]: FORLOOP   R8 12        ; R8 += R10; if R8 <= R9 then begin PC := 12; R11 := R8 end
- 29 [-]: FORLOOP   R3 6         ; R3 += R5; if R3 <= R4 then begin PC := 6; R6 := R3 end
- 30 [-]: RETURN    R0 1         ; return 
+       0 [-]: LOADN R2 1   
+       1 [-]: LOADN R5 1   
+       2 [-]: LENGTH R3 R0 
+       3 [-]: LOADN R4 1   
+       4 [-]: FORNPREP R3 L3
+L 0:   5 [-]: GETTABLE R7 R0 R5
+       6 [-]: GETTABLEN R6 R7 2
+       7 [-]: LOADN R9 1   
+       8 [-]: LENGTH R7 R6 
+       9 [-]: LOADN R8 1   
+      10 [-]: FORNPREP R7 L2
+L 1:  11 [-]: GETIMPORT R10 1 [nil]
+      12 [-]: MOVE R12 R1  
+      13 [-]: MOVE R13 R2  
+      14 [-]: LOADK R14 K2 ["]"]
+      15 [-]: CONCAT R11 R12 R14
+      16 [-]: CALL R10 1 0 
+      17 [-]: GETIMPORT R10 1 [nil]
+      18 [-]: LOADK R12 K3 ["En=\""]
+      19 [-]: GETTABLE R13 R6 R9
+      20 [-]: LOADK R14 K4 ["\""]
+      21 [-]: CONCAT R11 R12 R14
+      22 [-]: CALL R10 1 0 
+      23 [-]: GETIMPORT R10 1 [nil]
+      24 [-]: LOADK R11 K5 ["Translated=0\n"]
+      25 [-]: CALL R10 1 0 
+      26 [-]: ADDK R2 R2 K6 [1]
+      27 [-]: FORNLOOP R7 L1
+L 2:  28 [-]: FORNLOOP R3 L0
+L 3:  29 [-]: RETURN R0 0  
 
 
-; Function #5:
-;
 ; Name:            
 ; Defined at line: 187
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
-; Max Stack Size:  2
+; Max Stack Size:  0
 
-  1 [-]: RETURN    R0 1         ; return 
+       0 [-]: RETURN R0 0  
 
 
-; Function #6:
-;
 ; Name:            
 ; Defined at line: 202
 ; #Upvalues:       2
@@ -2029,20 +2040,17 @@
 ; Is_vararg:       0
 ; Max Stack Size:  7
 
-  1 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  2 [-]: GETUPVAL  R1 U1        ; R1 := U1
-  3 [-]: LOADKB    R2 1 0       ; R2 := true
-  4 [-]: LOADK     R3 K0        ; R3 := "23C9F5"
-  5 [-]: CONST     R4 6         ; R4 := 6.000000
-  6 [-]: LOADK     R5 K1        ; R5 := "006493"
-  7 [-]: LOADK     R6 K2        ; R6 := "/Lotus/Language/SistersOfParvos/"
-  8 [-]: TAILCALL  R0 7 0       ; R0,... := R0(R1,R2,R3,R4,R5,R6)
-  9 [-]: RETURN    R0 0         ; return R0,...
- 10 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETUPVAL R0 0
+       1 [-]: GETUPVAL R1 1
+       2 [-]: LOADB R2 1   
+       3 [-]: LOADK R3 K0 ["23C9F5"]
+       4 [-]: LOADN R4 6   
+       5 [-]: LOADK R5 K1 ["006493"]
+       6 [-]: LOADK R6 K2 ["/Lotus/Language/SistersOfParvos/"]
+       7 [-]: CALL R0 6 1  
+       8 [-]: RETURN R0 1  
 
 
-; Function #7:
-;
 ; Name:            
 ; Defined at line: 206
 ; #Upvalues:       2
@@ -2050,16 +2058,13 @@
 ; Is_vararg:       0
 ; Max Stack Size:  3
 
-  1 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  2 [-]: GETUPVAL  R1 U1        ; R1 := U1
-  3 [-]: LOADK     R2 K0        ; R2 := "/Lotus/Language/CrewMember/SolarisTitle_"
-  4 [-]: TAILCALL  R0 3 0       ; R0,... := R0(R1,R2)
-  5 [-]: RETURN    R0 0         ; return R0,...
-  6 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETUPVAL R0 0
+       1 [-]: GETUPVAL R1 1
+       2 [-]: LOADK R2 K0 ["/Lotus/Language/CrewMember/SolarisTitle_"]
+       3 [-]: CALL R0 2 1  
+       4 [-]: RETURN R0 1  
 
 
-; Function #8:
-;
 ; Name:            
 ; Defined at line: 210
 ; #Upvalues:       2
@@ -2067,16 +2072,13 @@
 ; Is_vararg:       0
 ; Max Stack Size:  3
 
-  1 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  2 [-]: GETUPVAL  R1 U1        ; R1 := U1
-  3 [-]: LOADK     R2 K0        ; R2 := "/Lotus/Language/CrewMember/SolarisFirstName_"
-  4 [-]: TAILCALL  R0 3 0       ; R0,... := R0(R1,R2)
-  5 [-]: RETURN    R0 0         ; return R0,...
-  6 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETUPVAL R0 0
+       1 [-]: GETUPVAL R1 1
+       2 [-]: LOADK R2 K0 ["/Lotus/Language/CrewMember/SolarisFirstName_"]
+       3 [-]: CALL R0 2 1  
+       4 [-]: RETURN R0 1  
 
 
-; Function #9:
-;
 ; Name:            
 ; Defined at line: 214
 ; #Upvalues:       2
@@ -2084,16 +2086,13 @@
 ; Is_vararg:       0
 ; Max Stack Size:  3
 
-  1 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  2 [-]: GETUPVAL  R1 U1        ; R1 := U1
-  3 [-]: LOADK     R2 K0        ; R2 := "/Lotus/Language/CrewMember/SolarisLastName_"
-  4 [-]: TAILCALL  R0 3 0       ; R0,... := R0(R1,R2)
-  5 [-]: RETURN    R0 0         ; return R0,...
-  6 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETUPVAL R0 0
+       1 [-]: GETUPVAL R1 1
+       2 [-]: LOADK R2 K0 ["/Lotus/Language/CrewMember/SolarisLastName_"]
+       3 [-]: CALL R0 2 1  
+       4 [-]: RETURN R0 1  
 
 
-; Function #10:
-;
 ; Name:            
 ; Defined at line: 218
 ; #Upvalues:       2
@@ -2101,15 +2100,12 @@
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
-  1 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  2 [-]: GETUPVAL  R1 U1        ; R1 := U1
-  3 [-]: TAILCALL  R0 2 0       ; R0,... := R0(R1)
-  4 [-]: RETURN    R0 0         ; return R0,...
-  5 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETUPVAL R0 0
+       1 [-]: GETUPVAL R1 1
+       2 [-]: CALL R0 1 1  
+       3 [-]: RETURN R0 1  
 
 
-; Function #11:
-;
 ; Name:            
 ; Defined at line: 222
 ; #Upvalues:       2
@@ -2117,16 +2113,13 @@
 ; Is_vararg:       0
 ; Max Stack Size:  3
 
-  1 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  2 [-]: GETUPVAL  R1 U1        ; R1 := U1
-  3 [-]: LOADK     R2 K0        ; R2 := "/Lotus/Language/CrewMember/ArbiterOfHexisTitle_"
-  4 [-]: TAILCALL  R0 3 0       ; R0,... := R0(R1,R2)
-  5 [-]: RETURN    R0 0         ; return R0,...
-  6 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETUPVAL R0 0
+       1 [-]: GETUPVAL R1 1
+       2 [-]: LOADK R2 K0 ["/Lotus/Language/CrewMember/ArbiterOfHexisTitle_"]
+       3 [-]: CALL R0 2 1  
+       4 [-]: RETURN R0 1  
 
 
-; Function #12:
-;
 ; Name:            
 ; Defined at line: 226
 ; #Upvalues:       2
@@ -2134,16 +2127,13 @@
 ; Is_vararg:       0
 ; Max Stack Size:  3
 
-  1 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  2 [-]: GETUPVAL  R1 U1        ; R1 := U1
-  3 [-]: LOADK     R2 K0        ; R2 := "/Lotus/Language/NarmerPrisoner/CorpusPrisonerTitle_"
-  4 [-]: TAILCALL  R0 3 0       ; R0,... := R0(R1,R2)
-  5 [-]: RETURN    R0 0         ; return R0,...
-  6 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETUPVAL R0 0
+       1 [-]: GETUPVAL R1 1
+       2 [-]: LOADK R2 K0 ["/Lotus/Language/NarmerPrisoner/CorpusPrisonerTitle_"]
+       3 [-]: CALL R0 2 1  
+       4 [-]: RETURN R0 1  
 
 
-; Function #13:
-;
 ; Name:            
 ; Defined at line: 231
 ; #Upvalues:       2
@@ -2151,16 +2141,13 @@
 ; Is_vararg:       0
 ; Max Stack Size:  3
 
-  1 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  2 [-]: GETUPVAL  R1 U1        ; R1 := U1
-  3 [-]: LOADKB    R2 1 0       ; R2 := true
-  4 [-]: TAILCALL  R0 3 0       ; R0,... := R0(R1,R2)
-  5 [-]: RETURN    R0 0         ; return R0,...
-  6 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETUPVAL R0 0
+       1 [-]: GETUPVAL R1 1
+       2 [-]: LOADB R2 1   
+       3 [-]: CALL R0 2 1  
+       4 [-]: RETURN R0 1  
 
 
-; Function #14:
-;
 ; Name:            
 ; Defined at line: 235
 ; #Upvalues:       2
@@ -2168,15 +2155,12 @@
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
-  1 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  2 [-]: GETUPVAL  R1 U1        ; R1 := U1
-  3 [-]: TAILCALL  R0 2 0       ; R0,... := R0(R1)
-  4 [-]: RETURN    R0 0         ; return R0,...
-  5 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETUPVAL R0 0
+       1 [-]: GETUPVAL R1 1
+       2 [-]: CALL R0 1 1  
+       3 [-]: RETURN R0 1  
 
 
-; Function #15:
-;
 ; Name:            
 ; Defined at line: 239
 ; #Upvalues:       3
@@ -2184,31 +2168,26 @@
 ; Is_vararg:       0
 ; Max Stack Size:  5
 
-  1 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  2 [-]: GETUPVAL  R1 U1        ; R1 := U1
-  3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  5 [-]: GETUPVAL  R2 U2        ; R2 := U2
-  6 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  7 [-]: SELF      R2 R1 K0     ; R3 := R1; R2 := R1[0xa5c556b9]
-  8 [-]: LOADK     R4 K1        ; R4 := "-"
-  9 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
- 10 [-]: TEST      R2 1         ; if R2 then PC := 17
- 11 [-]: JMP       17           ; PC := 17
- 12 [-]: GETGLOBAL R2 K2        ; R2 := 0x7f5022cf
- 13 [-]: GETTABLE  R2 R2 K3     ; R2 := R2[0x04981ab3]
- 14 [-]: MOVE      R3 R1        ; R3 := R1
- 15 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 16 [-]: MOVE      R1 R2        ; R1 := R2
- 17 [-]: MOVE      R2 R0        ; R2 := R0
- 18 [-]: MOVE      R3 R1        ; R3 := R1
- 19 [-]: CONCAT    R2 R2 R3     ; R2 := R2 .. R3
- 20 [-]: RETURN    R2 2         ; return R2
- 21 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETUPVAL R0 0
+       1 [-]: GETUPVAL R1 1
+       2 [-]: CALL R0 1 1  
+       3 [-]: GETUPVAL R1 0
+       4 [-]: GETUPVAL R2 2
+       5 [-]: CALL R1 1 1  
+       6 [-]: LOADK R4 K0 ["-"]
+       7 [-]: NAMECALL R2 R1 K1 [0xA5C556B9]
+       8 [-]: CALL R2 2 1  
+       9 [-]: JUMPIF R2 L0 
+      10 [-]: GETIMPORT R2 4 [nil]
+      11 [-]: MOVE R3 R1   
+      12 [-]: CALL R2 1 1  
+      13 [-]: MOVE R1 R2   
+L 0:  14 [-]: MOVE R3 R0   
+      15 [-]: MOVE R4 R1   
+      16 [-]: CONCAT R2 R3 R4
+      17 [-]: RETURN R2 1  
 
 
-; Function #16:
-;
 ; Name:            
 ; Defined at line: 250
 ; #Upvalues:       2
@@ -2216,15 +2195,12 @@
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
-  1 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  2 [-]: GETUPVAL  R1 U1        ; R1 := U1
-  3 [-]: TAILCALL  R0 2 0       ; R0,... := R0(R1)
-  4 [-]: RETURN    R0 0         ; return R0,...
-  5 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETUPVAL R0 0
+       1 [-]: GETUPVAL R1 1
+       2 [-]: CALL R0 1 1  
+       3 [-]: RETURN R0 1  
 
 
-; Function #17:
-;
 ; Name:            
 ; Defined at line: 254
 ; #Upvalues:       2
@@ -2232,15 +2208,12 @@
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
-  1 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  2 [-]: GETUPVAL  R1 U1        ; R1 := U1
-  3 [-]: TAILCALL  R0 2 0       ; R0,... := R0(R1)
-  4 [-]: RETURN    R0 0         ; return R0,...
-  5 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETUPVAL R0 0
+       1 [-]: GETUPVAL R1 1
+       2 [-]: CALL R0 1 1  
+       3 [-]: RETURN R0 1  
 
 
-; Function #18:
-;
 ; Name:            
 ; Defined at line: 258
 ; #Upvalues:       2
@@ -2248,11 +2221,11 @@
 ; Is_vararg:       0
 ; Max Stack Size:  3
 
-  1 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  2 [-]: GETUPVAL  R1 U1        ; R1 := U1
-  3 [-]: LOADKB    R2 1 0       ; R2 := true
-  4 [-]: TAILCALL  R0 3 0       ; R0,... := R0(R1,R2)
-  5 [-]: RETURN    R0 0         ; return R0,...
-  6 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETUPVAL R0 0
+       1 [-]: GETUPVAL R1 1
+       2 [-]: LOADB R2 1   
+       3 [-]: CALL R0 2 1  
+       4 [-]: RETURN R0 1  
+
 
 

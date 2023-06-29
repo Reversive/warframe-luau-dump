@@ -1,57 +1,61 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
+; Is_vararg:       1
 ; Max Stack Size:  13
 
-  1 [-]: LOADKB    R0 0 0       ; R0 := false
-  2 [-]: LOADNIL   R1 R2        ; R1 := R2 := nil
-  3 [-]: LOADKB    R3 0 0       ; R3 := false
-  4 [-]: GETGLOBAL R4 K0        ; R4 := 0x2d0fad09
-  5 [-]: LOADK     R5 K1        ; R5 := "EE.Interface.Utilities"
-  6 [-]: CALL      R4 2 2       ; R4 := R4(R5)
-  7 [-]: GETGLOBAL R5 K0        ; R5 := 0x2d0fad09
-  8 [-]: LOADK     R6 K2        ; R6 := "Lotus.Interface.LotusUtilities"
-  9 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 10 [-]: CLOSURE   R6 0         ; R6 := closure(Function #1)
- 11 [-]: MOVE      R0 R1        ; R0 := R1
- 12 [-]: SETGLOBAL R6 K3        ; OnGuildTech := R6
- 13 [-]: NEWTABLE  R6 0 6       ; R6 := {}
- 14 [-]: SETTABLE  R6 K4 K5     ; R6["CANCEL"] := 0.000000
- 15 [-]: SETTABLE  R6 K6 K7     ; R6["CONTRIBUTE"] := 1.000000
- 16 [-]: SETTABLE  R6 K8 K9     ; R6["RUSH"] := 2.000000
- 17 [-]: SETTABLE  R6 K10 K11   ; R6["PREVIEW_COLOURS"] := 3.000000
- 18 [-]: SETTABLE  R6 K12 K13   ; R6["SET_COLOURS"] := 4.000000
- 19 [-]: SETTABLE  R6 K14 K15   ; R6["SET_LIGHTS"] := 5.000000
- 20 [-]: CLOSURE   R7 1         ; R7 := closure(Function #2)
- 21 [-]: CLOSURE   R8 2         ; R8 := closure(Function #3)
- 22 [-]: CLOSURE   R9 3         ; R9 := closure(Function #4)
- 23 [-]: MOVE      R0 R4        ; R0 := R4
- 24 [-]: MOVE      R0 R3        ; R0 := R3
- 25 [-]: CLOSURE   R10 4        ; R10 := closure(Function #5)
- 26 [-]: CLOSURE   R11 5        ; R11 := closure(Function #6)
- 27 [-]: CLOSURE   R12 6        ; R12 := closure(Function #7)
- 28 [-]: MOVE      R0 R7        ; R0 := R7
- 29 [-]: MOVE      R0 R8        ; R0 := R8
- 30 [-]: MOVE      R0 R2        ; R0 := R2
- 31 [-]: MOVE      R0 R6        ; R0 := R6
- 32 [-]: MOVE      R0 R4        ; R0 := R4
- 33 [-]: MOVE      R0 R5        ; R0 := R5
- 34 [-]: MOVE      R0 R1        ; R0 := R1
- 35 [-]: MOVE      R0 R0        ; R0 := R0
- 36 [-]: MOVE      R0 R11       ; R0 := R11
- 37 [-]: MOVE      R0 R10       ; R0 := R10
- 38 [-]: MOVE      R0 R3        ; R0 := R3
- 39 [-]: MOVE      R0 R9        ; R0 := R9
- 40 [-]: SETGLOBAL R12 K16      ; PaintBot := R12
- 41 [-]: RETURN    R0 1         ; return 
+            1 [-]: LOADB R0 0   
+       2 [-]: LOADNIL R1   
+       3 [-]: LOADNIL R2   
+       4 [-]: LOADB R3 0   
+       5 [-]: GETIMPORT R4 1 [nil]
+       6 [-]: LOADK R5 K2 ["EE.Interface.Utilities"]
+       7 [-]: CALL R4 1 1  
+       8 [-]: GETIMPORT R5 1 [nil]
+       9 [-]: LOADK R6 K3 ["Lotus.Interface.LotusUtilities"]
+      10 [-]: CALL R5 1 1  
+      11 [-]: NEWCLOSURE R6 P0
+      12 [-]: MOVE R1 R1   
+      13 [-]: SETGLOBAL R6 K4 ["OnGuildTech"]
+      14 [-]: DUPTABLE R6 11
+      15 [-]: LOADN R7 0   
+      16 [-]: SETTABLEKS R7 R6 K5 ["CANCEL"]
+      17 [-]: LOADN R7 1   
+      18 [-]: SETTABLEKS R7 R6 K6 ["CONTRIBUTE"]
+      19 [-]: LOADN R7 2   
+      20 [-]: SETTABLEKS R7 R6 K7 ["RUSH"]
+      21 [-]: LOADN R7 3   
+      22 [-]: SETTABLEKS R7 R6 K8 ["PREVIEW_COLOURS"]
+      23 [-]: LOADN R7 4   
+      24 [-]: SETTABLEKS R7 R6 K9 ["SET_COLOURS"]
+      25 [-]: LOADN R7 5   
+      26 [-]: SETTABLEKS R7 R6 K10 ["SET_LIGHTS"]
+      27 [-]: DUPCLOSURE R7 K12 []
+      28 [-]: DUPCLOSURE R8 K13 []
+      29 [-]: NEWCLOSURE R9 P3
+      30 [-]: MOVE R0 R4   
+      31 [-]: MOVE R1 R3   
+      32 [-]: DUPCLOSURE R10 K14 []
+      33 [-]: DUPCLOSURE R11 K15 []
+      34 [-]: NEWCLOSURE R12 P6
+      35 [-]: MOVE R0 R7   
+      36 [-]: MOVE R0 R8   
+      37 [-]: MOVE R1 R2   
+      38 [-]: MOVE R0 R6   
+      39 [-]: MOVE R0 R4   
+      40 [-]: MOVE R0 R5   
+      41 [-]: MOVE R1 R1   
+      42 [-]: MOVE R1 R0   
+      43 [-]: MOVE R0 R11  
+      44 [-]: MOVE R0 R10  
+      45 [-]: MOVE R1 R3   
+      46 [-]: MOVE R0 R9   
+      47 [-]: SETGLOBAL R12 K16 ["PaintBot"]
+      48 [-]: CLOSEUPVALS R0
+      49 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 17
 ; #Upvalues:       1
@@ -59,102 +63,93 @@
 ; Is_vararg:       0
 ; Max Stack Size:  3
 
-  1 [-]: NEWTABLE  R2 0 2       ; R2 := {}
-  2 [-]: SETTABLE  R2 K0 R0     ; R2["Result"] := R0
-  3 [-]: SETTABLE  R2 K1 R1     ; R2["Body"] := R1
-  4 [-]: SETUPVAL  R2 U0        ; U82 := R0
-  5 [-]: RETURN    R0 1         ; return 
+       0 [-]: DUPTABLE R2 2
+       1 [-]: SETTABLEKS R0 R2 K0 ["Result"]
+       2 [-]: SETTABLEKS R1 R2 K1 ["Body"]
+       3 [-]: SETUPVAL R2 0
+       4 [-]: RETURN R0 0  
 
 
-; Function #2:
-;
 ; Name:            
 ; Defined at line: 23
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
-; Max Stack Size:  11
+; Max Stack Size:  9
 
-  1 [-]: GETGLOBAL R2 K0        ; R2 := 0x7b998233
-  2 [-]: GETTABLE  R3 R1 K1     ; R3 := R1["colors"]
-  3 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  4 [-]: TEST      R2 1         ; if R2 then PC := 13
-  5 [-]: JMP       13           ; PC := 13
-  6 [-]: GETGLOBAL R2 K2        ; R2 := _T
-  7 [-]: GETTABLE  R2 R2 K3     ; R2 := R2["DojoMgr"]
-  8 [-]: SELF      R2 R2 K4     ; R3 := R2; R2 := R2[0x193134d5]
-  9 [-]: MOVE      R4 R0        ; R4 := R0
- 10 [-]: GETTABLE  R5 R1 K1     ; R5 := R1["colors"]
- 11 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
- 12 [-]: JMP       34           ; PC := 34
- 13 [-]: NEWTABLE  R2 0 0       ; R2 := {}
- 14 [-]: CONST     R3 1         ; R3 := 1.000000
- 15 [-]: GETGLOBAL R4 K2        ; R4 := _T
- 16 [-]: GETTABLE  R4 R4 K3     ; R4 := R4["DojoMgr"]
- 17 [-]: GETTABLE  R4 R4 K5     ; R4 := R4["TINT_NAMES"]
- 18 [-]: LEN       R4 R4        ; R4 := # R4
- 19 [-]: CONST     R5 1         ; R5 := 1.000000
- 20 [-]: FORPREP   R3 27        ; R3 -= R5; PC := 27
- 21 [-]: GETGLOBAL R7 K6        ; R7 := 0x33bdd652
- 22 [-]: GETTABLE  R7 R7 K7     ; R7 := R7[0x23d5322f]
- 23 [-]: MOVE      R8 R2        ; R8 := R2
- 24 [-]: GETGLOBAL R9 K8        ; R9 := 0x6c97a788
- 25 [-]: GETTABLE  R9 R9 K9     ; R9 := R9["CustomizationColorPalette_sDefaultColor"]
- 26 [-]: CALL      R7 3 1       ; R7(R8,R9)
- 27 [-]: FORLOOP   R3 21        ; R3 += R5; if R3 <= R4 then begin PC := 21; R6 := R3 end
- 28 [-]: GETGLOBAL R7 K2        ; R7 := _T
- 29 [-]: GETTABLE  R7 R7 K3     ; R7 := R7["DojoMgr"]
- 30 [-]: SELF      R7 R7 K4     ; R8 := R7; R7 := R7[0x193134d5]
- 31 [-]: MOVE      R9 R0        ; R9 := R0
- 32 [-]: MOVE      R10 R2       ; R10 := R2
- 33 [-]: CALL      R7 4 1       ; R7(R8,R9,R10)
- 34 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETTABLEKS R3 R1 K0 ["colors"]
+       1 [-]: FASTCALL1 62 R3 L0
+       2 [-]: GETIMPORT R2 2 [nil]
+       3 [-]: CALL R2 1 1  
+L 0:   4 [-]: JUMPIF R2 L1 
+       5 [-]: GETIMPORT R2 5 [nil]
+       6 [-]: MOVE R4 R0   
+       7 [-]: GETTABLEKS R5 R1 K0 ["colors"]
+       8 [-]: NAMECALL R2 R2 K6 [0x193134D5]
+       9 [-]: CALL R2 3 0  
+      10 [-]: RETURN R0 0  
+L 1:  11 [-]: NEWTABLE R2 0 0
+      12 [-]: LOADN R5 1   
+      13 [-]: GETIMPORT R6 8 [nil]
+      14 [-]: LENGTH R3 R6 
+      15 [-]: LOADN R4 1   
+      16 [-]: FORNPREP R3 L4
+L 2:  17 [-]: GETIMPORT R8 11 [nil]
+      18 [-]: FASTCALL2 52 R2 R8 L3
+      19 [-]: MOVE R7 R2   
+      20 [-]: GETIMPORT R6 14 [nil]
+      21 [-]: CALL R6 2 0  
+L 3:  22 [-]: FORNLOOP R3 L2
+L 4:  23 [-]: GETIMPORT R3 5 [nil]
+      24 [-]: MOVE R5 R0   
+      25 [-]: MOVE R6 R2   
+      26 [-]: NAMECALL R3 R3 K6 [0x193134D5]
+      27 [-]: CALL R3 3 0  
+      28 [-]: RETURN R0 0  
 
 
-; Function #3:
-;
 ; Name:            
 ; Defined at line: 36
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
-; Max Stack Size:  11
+; Max Stack Size:  7
 
-  1 [-]: GETGLOBAL R2 K0        ; R2 := 0x7b998233
-  2 [-]: GETTABLE  R3 R1 K1     ; R3 := R1["lights"]
-  3 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  4 [-]: TEST      R2 1         ; if R2 then PC := 13
-  5 [-]: JMP       13           ; PC := 13
-  6 [-]: GETGLOBAL R2 K2        ; R2 := _T
-  7 [-]: GETTABLE  R2 R2 K3     ; R2 := R2["DojoMgr"]
-  8 [-]: SELF      R2 R2 K4     ; R3 := R2; R2 := R2[0xa38ded0f]
-  9 [-]: MOVE      R4 R0        ; R4 := R0
- 10 [-]: GETTABLE  R5 R1 K1     ; R5 := R1["lights"]
- 11 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
- 12 [-]: JMP       31           ; PC := 31
- 13 [-]: NEWTABLE  R2 0 0       ; R2 := {}
- 14 [-]: CONST     R3 1         ; R3 := 1.000000
- 15 [-]: CONST     R4 3         ; R4 := 3.000000
- 16 [-]: CONST     R5 1         ; R5 := 1.000000
- 17 [-]: FORPREP   R3 24        ; R3 -= R5; PC := 24
- 18 [-]: GETGLOBAL R7 K5        ; R7 := 0x33bdd652
- 19 [-]: GETTABLE  R7 R7 K6     ; R7 := R7[0x23d5322f]
- 20 [-]: MOVE      R8 R2        ; R8 := R2
- 21 [-]: GETGLOBAL R9 K7        ; R9 := 0x6c97a788
- 22 [-]: GETTABLE  R9 R9 K8     ; R9 := R9["CustomizationColorPalette_sDefaultColor"]
- 23 [-]: CALL      R7 3 1       ; R7(R8,R9)
- 24 [-]: FORLOOP   R3 18        ; R3 += R5; if R3 <= R4 then begin PC := 18; R6 := R3 end
- 25 [-]: GETGLOBAL R7 K2        ; R7 := _T
- 26 [-]: GETTABLE  R7 R7 K3     ; R7 := R7["DojoMgr"]
- 27 [-]: SELF      R7 R7 K4     ; R8 := R7; R7 := R7[0xa38ded0f]
- 28 [-]: MOVE      R9 R0        ; R9 := R0
- 29 [-]: MOVE      R10 R2       ; R10 := R2
- 30 [-]: CALL      R7 4 1       ; R7(R8,R9,R10)
- 31 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETTABLEKS R3 R1 K0 ["lights"]
+       1 [-]: FASTCALL1 62 R3 L0
+       2 [-]: GETIMPORT R2 2 [nil]
+       3 [-]: CALL R2 1 1  
+L 0:   4 [-]: JUMPIF R2 L1 
+       5 [-]: GETIMPORT R2 5 [nil]
+       6 [-]: MOVE R4 R0   
+       7 [-]: GETTABLEKS R5 R1 K0 ["lights"]
+       8 [-]: NAMECALL R2 R2 K6 [0xA38DED0F]
+       9 [-]: CALL R2 3 0  
+      10 [-]: RETURN R0 0  
+L 1:  11 [-]: NEWTABLE R2 0 0
+      12 [-]: GETIMPORT R5 9 [nil]
+      13 [-]: FASTCALL2 52 R2 R5 L2
+      14 [-]: MOVE R4 R2   
+      15 [-]: GETIMPORT R3 12 [nil]
+      16 [-]: CALL R3 2 0  
+L 2:  17 [-]: GETIMPORT R5 9 [nil]
+      18 [-]: FASTCALL2 52 R2 R5 L3
+      19 [-]: MOVE R4 R2   
+      20 [-]: GETIMPORT R3 12 [nil]
+      21 [-]: CALL R3 2 0  
+L 3:  22 [-]: GETIMPORT R5 9 [nil]
+      23 [-]: FASTCALL2 52 R2 R5 L4
+      24 [-]: MOVE R4 R2   
+      25 [-]: GETIMPORT R3 12 [nil]
+      26 [-]: CALL R3 2 0  
+L 4:  27 [-]: GETIMPORT R3 5 [nil]
+      28 [-]: MOVE R5 R0   
+      29 [-]: MOVE R6 R2   
+      30 [-]: NAMECALL R3 R3 K6 [0xA38DED0F]
+      31 [-]: CALL R3 3 0  
+      32 [-]: RETURN R0 0  
 
 
-; Function #4:
-;
 ; Name:            
 ; Defined at line: 49
 ; #Upvalues:       2
@@ -162,937 +157,606 @@
 ; Is_vararg:       0
 ; Max Stack Size:  4
 
-  1 [-]: EQ        1 R0 K0      ; if R0 == 0.000000 then PC := 7
-  2 [-]: JMP       7            ; PC := 7
-  3 [-]: GETUPVAL  R2 U0        ; R2 := U0
-  4 [-]: GETTABLE  R2 R2 K1     ; R2 := R2[0xe0cba3ca]
-  5 [-]: LOADK     R3 K2        ; R3 := "/Lotus/Language/Dojo/PaintBotColorsUpdateFailed"
-  6 [-]: CALL      R2 2 1       ; R2(R3)
-  7 [-]: LOADKB    R2 0 0       ; R2 := false
-  8 [-]: SETUPVAL  R2 U1        ; U82 := R1
-  9 [-]: RETURN    R0 1         ; return 
+       0 [-]: JUMPXEQKN R0 K0 L0 [0]
+       1 [-]: GETUPVAL R3 0
+       2 [-]: GETTABLEKS R2 R3 K1 [0xE0CBA3CA]
+       3 [-]: LOADK R3 K2 ["/Lotus/Language/Dojo/PaintBotColorsUpdateFailed"]
+       4 [-]: CALL R2 1 0  
+L 0:   5 [-]: LOADB R2 0   
+       6 [-]: SETUPVAL R2 1
+       7 [-]: RETURN R0 0  
 
 
-; Function #5:
-;
 ; Name:            
 ; Defined at line: 57
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  13
+; Max Stack Size:  12
 
-  1 [-]: GETTABLE  R1 R0 K0     ; R1 := R0["pendingColors"]
-  2 [-]: GETGLOBAL R2 K1        ; R2 := 0x7b998233
-  3 [-]: MOVE      R3 R1        ; R3 := R1
-  4 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  5 [-]: TEST      R2 0         ; if not R2 then PC := 8
-  6 [-]: JMP       8            ; PC := 8
-  7 [-]: GETTABLE  R1 R0 K2     ; R1 := R0["colors"]
-  8 [-]: GETGLOBAL R2 K1        ; R2 := 0x7b998233
-  9 [-]: MOVE      R3 R1        ; R3 := R1
- 10 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 11 [-]: NEWTABLE  R3 0 0       ; R3 := {}
- 12 [-]: CONST     R4 1         ; R4 := 1.000000
- 13 [-]: GETGLOBAL R5 K3        ; R5 := _T
- 14 [-]: GETTABLE  R5 R5 K4     ; R5 := R5["DojoMgr"]
- 15 [-]: GETTABLE  R5 R5 K5     ; R5 := R5["TINT_NAMES"]
- 16 [-]: LEN       R5 R5        ; R5 := # R5
- 17 [-]: CONST     R6 1         ; R6 := 1.000000
- 18 [-]: FORPREP   R4 46        ; R4 -= R6; PC := 46
- 19 [-]: TESTSET   R8 R2 1      ; if R2 then PC := 28 else R8 := R2
- 20 [-]: JMP       28           ; PC := 28
- 21 [-]: GETTABLE  R8 R1 R7     ; R8 := R1[R7]
- 22 [-]: GETGLOBAL R9 K6        ; R9 := 0x6c97a788
- 23 [-]: GETTABLE  R9 R9 K7     ; R9 := R9["CustomizationColorPalette_sDefaultColor"]
- 24 [-]: EQ        1 R8 R9      ; if R8 == R9 then PC := 27
- 25 [-]: JMP       27           ; PC := 27
- 26 [-]: LOADKB    R8 0 1       ; R8 := false; PC := 27
- 27 [-]: LOADKB    R8 1 0       ; R8 := true
- 28 [-]: LOADNIL   R9 R9        ; R9 := nil
- 29 [-]: TEST      R8 0         ; if not R8 then PC := 37
- 30 [-]: JMP       37           ; PC := 37
- 31 [-]: GETGLOBAL R10 K8       ; R10 := 0x60130201
- 32 [-]: GETGLOBAL R11 K6       ; R11 := 0x6c97a788
- 33 [-]: GETTABLE  R11 R11 K7   ; R11 := R11["CustomizationColorPalette_sDefaultColor"]
- 34 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 35 [-]: MOVE      R9 R10       ; R9 := R10
- 36 [-]: JMP       41           ; PC := 41
- 37 [-]: GETGLOBAL R10 K8       ; R10 := 0x60130201
- 38 [-]: GETTABLE  R11 R1 R7    ; R11 := R1[R7]
- 39 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 40 [-]: MOVE      R9 R10       ; R9 := R10
- 41 [-]: GETGLOBAL R10 K9       ; R10 := 0x33bdd652
- 42 [-]: GETTABLE  R10 R10 K10  ; R10 := R10[0x23d5322f]
- 43 [-]: MOVE      R11 R3       ; R11 := R3
- 44 [-]: MOVE      R12 R9       ; R12 := R9
- 45 [-]: CALL      R10 3 1      ; R10(R11,R12)
- 46 [-]: FORLOOP   R4 19        ; R4 += R6; if R4 <= R5 then begin PC := 19; R7 := R4 end
- 47 [-]: RETURN    R3 2         ; return R3
- 48 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETTABLEKS R1 R0 K0 ["pendingColors"]
+       1 [-]: FASTCALL1 62 R1 L0
+       2 [-]: MOVE R3 R1   
+       3 [-]: GETIMPORT R2 2 [nil]
+       4 [-]: CALL R2 1 1  
+L 0:   5 [-]: JUMPIFNOT R2 L1
+       6 [-]: GETTABLEKS R1 R0 K3 ["colors"]
+L 1:   7 [-]: FASTCALL1 62 R1 L2
+       8 [-]: MOVE R3 R1   
+       9 [-]: GETIMPORT R2 2 [nil]
+      10 [-]: CALL R2 1 1  
+L 2:  11 [-]: NEWTABLE R3 0 0
+      12 [-]: LOADN R6 1   
+      13 [-]: GETIMPORT R7 7 [nil]
+      14 [-]: LENGTH R4 R7 
+      15 [-]: LOADN R5 1   
+      16 [-]: FORNPREP R4 L9
+L 3:  17 [-]: MOVE R7 R2   
+      18 [-]: JUMPIF R7 L5 
+      19 [-]: GETTABLE R8 R1 R6
+      20 [-]: GETIMPORT R9 10 [nil]
+      21 [-]: JUMPIFEQ R8 R9 L4
+      22 [-]: LOADB R7 0 +1
+L 4:  23 [-]: LOADB R7 1   
+L 5:  24 [-]: LOADNIL R8   
+      25 [-]: JUMPIFNOT R7 L6
+      26 [-]: GETIMPORT R9 12 [nil]
+      27 [-]: GETIMPORT R10 10 [nil]
+      28 [-]: CALL R9 1 1  
+      29 [-]: MOVE R8 R9   
+      30 [-]: JUMP L7
+     
+L 6:  31 [-]: GETIMPORT R9 12 [nil]
+      32 [-]: GETTABLE R10 R1 R6
+      33 [-]: CALL R9 1 1  
+      34 [-]: MOVE R8 R9   
+L 7:  35 [-]: FASTCALL2 52 R3 R8 L8
+      36 [-]: MOVE R10 R3  
+      37 [-]: MOVE R11 R8  
+      38 [-]: GETIMPORT R9 15 [nil]
+      39 [-]: CALL R9 2 0  
+L 8:  40 [-]: FORNLOOP R4 L3
+L 9:  41 [-]: RETURN R3 1  
 
 
-; Function #6:
-;
 ; Name:            
 ; Defined at line: 81
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  13
+; Max Stack Size:  12
 
-  1 [-]: GETTABLE  R1 R0 K0     ; R1 := R0["pendingLights"]
-  2 [-]: GETGLOBAL R2 K1        ; R2 := 0x7b998233
-  3 [-]: MOVE      R3 R1        ; R3 := R1
-  4 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  5 [-]: TEST      R2 0         ; if not R2 then PC := 8
-  6 [-]: JMP       8            ; PC := 8
-  7 [-]: GETTABLE  R1 R0 K2     ; R1 := R0["lights"]
-  8 [-]: GETGLOBAL R2 K1        ; R2 := 0x7b998233
-  9 [-]: MOVE      R3 R1        ; R3 := R1
- 10 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 11 [-]: NEWTABLE  R3 0 0       ; R3 := {}
- 12 [-]: CONST     R4 1         ; R4 := 1.000000
- 13 [-]: CONST     R5 3         ; R5 := 3.000000
- 14 [-]: CONST     R6 1         ; R6 := 1.000000
- 15 [-]: FORPREP   R4 43        ; R4 -= R6; PC := 43
- 16 [-]: TESTSET   R8 R2 1      ; if R2 then PC := 25 else R8 := R2
- 17 [-]: JMP       25           ; PC := 25
- 18 [-]: GETTABLE  R8 R1 R7     ; R8 := R1[R7]
- 19 [-]: GETGLOBAL R9 K3        ; R9 := 0x6c97a788
- 20 [-]: GETTABLE  R9 R9 K4     ; R9 := R9["CustomizationColorPalette_sDefaultColor"]
- 21 [-]: EQ        1 R8 R9      ; if R8 == R9 then PC := 24
- 22 [-]: JMP       24           ; PC := 24
- 23 [-]: LOADKB    R8 0 1       ; R8 := false; PC := 24
- 24 [-]: LOADKB    R8 1 0       ; R8 := true
- 25 [-]: LOADNIL   R9 R9        ; R9 := nil
- 26 [-]: TEST      R8 0         ; if not R8 then PC := 34
- 27 [-]: JMP       34           ; PC := 34
- 28 [-]: GETGLOBAL R10 K5       ; R10 := 0x60130201
- 29 [-]: GETGLOBAL R11 K3       ; R11 := 0x6c97a788
- 30 [-]: GETTABLE  R11 R11 K4   ; R11 := R11["CustomizationColorPalette_sDefaultColor"]
- 31 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 32 [-]: MOVE      R9 R10       ; R9 := R10
- 33 [-]: JMP       38           ; PC := 38
- 34 [-]: GETGLOBAL R10 K5       ; R10 := 0x60130201
- 35 [-]: GETTABLE  R11 R1 R7    ; R11 := R1[R7]
- 36 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 37 [-]: MOVE      R9 R10       ; R9 := R10
- 38 [-]: GETGLOBAL R10 K6       ; R10 := 0x33bdd652
- 39 [-]: GETTABLE  R10 R10 K7   ; R10 := R10[0x23d5322f]
- 40 [-]: MOVE      R11 R3       ; R11 := R3
- 41 [-]: MOVE      R12 R9       ; R12 := R9
- 42 [-]: CALL      R10 3 1      ; R10(R11,R12)
- 43 [-]: FORLOOP   R4 16        ; R4 += R6; if R4 <= R5 then begin PC := 16; R7 := R4 end
- 44 [-]: RETURN    R3 2         ; return R3
- 45 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETTABLEKS R1 R0 K0 ["pendingLights"]
+       1 [-]: FASTCALL1 62 R1 L0
+       2 [-]: MOVE R3 R1   
+       3 [-]: GETIMPORT R2 2 [nil]
+       4 [-]: CALL R2 1 1  
+L 0:   5 [-]: JUMPIFNOT R2 L1
+       6 [-]: GETTABLEKS R1 R0 K3 ["lights"]
+L 1:   7 [-]: FASTCALL1 62 R1 L2
+       8 [-]: MOVE R3 R1   
+       9 [-]: GETIMPORT R2 2 [nil]
+      10 [-]: CALL R2 1 1  
+L 2:  11 [-]: NEWTABLE R3 0 0
+      12 [-]: LOADN R6 1   
+      13 [-]: LOADN R4 3   
+      14 [-]: LOADN R5 1   
+      15 [-]: FORNPREP R4 L9
+L 3:  16 [-]: MOVE R7 R2   
+      17 [-]: JUMPIF R7 L5 
+      18 [-]: GETTABLE R8 R1 R6
+      19 [-]: GETIMPORT R9 6 [nil]
+      20 [-]: JUMPIFEQ R8 R9 L4
+      21 [-]: LOADB R7 0 +1
+L 4:  22 [-]: LOADB R7 1   
+L 5:  23 [-]: LOADNIL R8   
+      24 [-]: JUMPIFNOT R7 L6
+      25 [-]: GETIMPORT R9 8 [nil]
+      26 [-]: GETIMPORT R10 6 [nil]
+      27 [-]: CALL R9 1 1  
+      28 [-]: MOVE R8 R9   
+      29 [-]: JUMP L7
+     
+L 6:  30 [-]: GETIMPORT R9 8 [nil]
+      31 [-]: GETTABLE R10 R1 R6
+      32 [-]: CALL R9 1 1  
+      33 [-]: MOVE R8 R9   
+L 7:  34 [-]: FASTCALL2 52 R3 R8 L8
+      35 [-]: MOVE R10 R3  
+      36 [-]: MOVE R11 R8  
+      37 [-]: GETIMPORT R9 11 [nil]
+      38 [-]: CALL R9 2 0  
+L 8:  39 [-]: FORNLOOP R4 L3
+L 9:  40 [-]: RETURN R3 1  
 
 
-; Function #7:
-;
 ; Name:            
 ; Defined at line: 105
 ; #Upvalues:       12
 ; #Parameters:     2
 ; Is_vararg:       0
-; Max Stack Size:  33
+; Max Stack Size:  21
 
-  1 [-]: SELF      R2 R1 K0     ; R3 := R1; R2 := R1[0xa5e492d4]
-  2 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  3 [-]: TEST      R2 1         ; if R2 then PC := 6
-  4 [-]: JMP       6            ; PC := 6
-  5 [-]: RETURN    R0 1         ; return 
-  6 [-]: GETGLOBAL R2 K1        ; R2 := 0x89326c93
-  7 [-]: SELF      R2 R2 K2     ; R3 := R2; R2 := R2[0x4e5939a5]
-  8 [-]: GETGLOBAL R4 K3        ; R4 := 0x4d7bfdca
-  9 [-]: SELF      R5 R0 K4     ; R6 := R0; R5 := R0[0xd1586535]
- 10 [-]: CALL      R5 2 0       ; R5,... := R5(R6)
- 11 [-]: CALL      R2 0 2       ; R2 := R2(R3,...)
- 12 [-]: GETGLOBAL R3 K5        ; R3 := 0x7b998233
- 13 [-]: MOVE      R4 R2        ; R4 := R2
- 14 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 15 [-]: TEST      R3 1         ; if R3 then PC := 21
- 16 [-]: JMP       21           ; PC := 21
- 17 [-]: SELF      R3 R2 K6     ; R4 := R2; R3 := R2[0xf537cfc7]
- 18 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 19 [-]: EQ        0 R3 K7      ; if R3 ~= "" then PC := 22
- 20 [-]: JMP       22           ; PC := 22
- 21 [-]: RETURN    R0 1         ; return 
- 22 [-]: GETGLOBAL R3 K8        ; R3 := _T
- 23 [-]: GETTABLE  R3 R3 K9     ; R3 := R3["DojoMgr"]
- 24 [-]: GETTABLE  R3 R3 K10    ; R3 := R3["mDojo"]
- 25 [-]: SELF      R3 R3 K11    ; R4 := R3; R3 := R3[0xfce0784e]
- 26 [-]: SELF      R5 R2 K6     ; R6 := R2; R5 := R2[0xf537cfc7]
- 27 [-]: CALL      R5 2 0       ; R5,... := R5(R6)
- 28 [-]: CALL      R3 0 2       ; R3 := R3(R4,...)
- 29 [-]: SELF      R4 R3 K6     ; R5 := R3; R4 := R3[0xf537cfc7]
- 30 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 31 [-]: SELF      R5 R2 K6     ; R6 := R2; R5 := R2[0xf537cfc7]
- 32 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 33 [-]: EQ        1 R4 R5      ; if R4 == R5 then PC := 36
- 34 [-]: JMP       36           ; PC := 36
- 35 [-]: RETURN    R0 1         ; return 
- 36 [-]: SELF      R4 R2 K12    ; R5 := R2; R4 := R2[0xe79e7ef4]
- 37 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 38 [-]: SELF      R4 R4 K13    ; R5 := R4; R4 := R4[0x7d05e45f]
- 39 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 40 [-]: GETGLOBAL R5 K8        ; R5 := _T
- 41 [-]: GETTABLE  R5 R5 K9     ; R5 := R5["DojoMgr"]
- 42 [-]: SELF      R5 R5 K14    ; R6 := R5; R5 := R5[0xd1964243]
- 43 [-]: MOVE      R7 R4        ; R7 := R4
- 44 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
- 45 [-]: GETGLOBAL R6 K8        ; R6 := _T
- 46 [-]: GETTABLE  R6 R6 K9     ; R6 := R6["DojoMgr"]
- 47 [-]: GETTABLE  R6 R6 K10    ; R6 := R6["mDojo"]
- 48 [-]: SELF      R6 R6 K15    ; R7 := R6; R6 := R6[0x40063309]
- 49 [-]: GETTABLE  R8 R5 K16    ; R8 := R5["id"]
- 50 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
- 51 [-]: GETGLOBAL R7 K8        ; R7 := _T
- 52 [-]: GETTABLE  R7 R7 K9     ; R7 := R7["DojoMgr"]
- 53 [-]: GETTABLE  R7 R7 K17    ; R7 := R7["mIdToZoneMap"]
- 54 [-]: GETTABLE  R8 R5 K16    ; R8 := R5["id"]
- 55 [-]: GETTABLE  R7 R7 R8     ; R7 := R7[R8]
- 56 [-]: GETGLOBAL R8 K8        ; R8 := _T
- 57 [-]: GETTABLE  R8 R8 K18    ; R8 := R8["PaintBotColorsActive"]
- 58 [-]: TEST      R8 0         ; if not R8 then PC := 79
- 59 [-]: JMP       79           ; PC := 79
- 60 [-]: SELF      R8 R1 K19    ; R9 := R1; R8 := R1[0x5e651723]
- 61 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 62 [-]: SELF      R8 R8 K20    ; R9 := R8; R8 := R8[0x0803eee1]
- 63 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 64 [-]: SELF      R8 R8 K21    ; R9 := R8; R8 := R8[0x89212ed6]
- 65 [-]: LOADK     R10 K7       ; R10 := ""
- 66 [-]: CALL      R8 3 1       ; R8(R9,R10)
- 67 [-]: GETUPVAL  R8 U0        ; R8 := U0
- 68 [-]: MOVE      R9 R7        ; R9 := R7
- 69 [-]: MOVE      R10 R6       ; R10 := R6
- 70 [-]: CALL      R8 3 1       ; R8(R9,R10)
- 71 [-]: GETUPVAL  R8 U1        ; R8 := U1
- 72 [-]: MOVE      R9 R7        ; R9 := R7
- 73 [-]: MOVE      R10 R6       ; R10 := R6
- 74 [-]: CALL      R8 3 1       ; R8(R9,R10)
- 75 [-]: GETGLOBAL R8 K8        ; R8 := _T
- 76 [-]: SETTABLE  R8 K18 K22   ; R8["PaintBotColorsActive"] := false
- 77 [-]: GETGLOBAL R8 K8        ; R8 := _T
- 78 [-]: SETTABLE  R8 K23 K22   ; R8["GenericMessageNoAnimateTyping"] := false
- 79 [-]: GETGLOBAL R8 K24       ; R8 := 0x9ba7909f
- 80 [-]: SELF      R8 R8 K25    ; R9 := R8; R8 := R8[0xcfba257f]
- 81 [-]: GETGLOBAL R10 K26      ; R10 := 0x08a5afb4
- 82 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
- 83 [-]: SETUPVAL  R8 U2        ; U82 := R2
- 84 [-]: GETUPVAL  R8 U2        ; R8 := U2
- 85 [-]: SELF      R8 R8 K27    ; R9 := R8; R8 := R8[0xe4162eed]
- 86 [-]: LOADK     R10 K28      ; R10 := "SetTitle"
- 87 [-]: LOADK     R11 K29      ; R11 := "/Lotus/Language/Dojo/TnoPaintBotDecoName"
- 88 [-]: CALL      R8 4 1       ; R8(R9,R10,R11)
- 89 [-]: LOADNIL   R8 R8        ; R8 := nil
- 90 [-]: GETGLOBAL R9 K8        ; R9 := _T
- 91 [-]: CLOSURE   R10 0        ; R10 := closure(Function #7.1)
- 92 [-]: MOVE      R0 R8        ; R0 := R8
- 93 [-]: GETUPVAL  R0 U3        ; R0 := U3
- 94 [-]: SETTABLE  R9 K30 R10   ; R9["MenuSelectionDone"] := R10
- 95 [-]: GETUPVAL  R9 U2        ; R9 := U2
- 96 [-]: SELF      R9 R9 K27    ; R10 := R9; R9 := R9[0xe4162eed]
- 97 [-]: LOADK     R11 K31      ; R11 := "SetCallBack"
- 98 [-]: LOADK     R12 K30      ; R12 := "MenuSelectionDone"
- 99 [-]: CALL      R9 4 1       ; R9(R10,R11,R12)
-100 [-]: GETGLOBAL R9 K8        ; R9 := _T
-101 [-]: CLOSURE   R10 1        ; R10 := closure(Function #7.2)
-102 [-]: MOVE      R0 R3        ; R0 := R3
-103 [-]: GETUPVAL  R0 U3        ; R0 := U3
-104 [-]: SETTABLE  R9 K32 R10   ; R9["GetMenuEntries"] := R10
-105 [-]: GETUPVAL  R9 U2        ; R9 := U2
-106 [-]: SELF      R9 R9 K27    ; R10 := R9; R9 := R9[0xe4162eed]
-107 [-]: LOADK     R11 K33      ; R11 := "SetElementsFunction"
-108 [-]: LOADK     R12 K32      ; R12 := "GetMenuEntries"
-109 [-]: CALL      R9 4 1       ; R9(R10,R11,R12)
-110 [-]: EQ        0 R8 K34     ; if R8 ~= nil then PC := 116
-111 [-]: JMP       116          ; PC := 116
-112 [-]: GETGLOBAL R9 K35       ; R9 := 0xcbd666e1
-113 [-]: CONST     R10 0        ; R10 := 0.000000
-114 [-]: CALL      R9 2 1       ; R9(R10)
-115 [-]: JMP       110          ; PC := 110
-116 [-]: LOADNIL   R9 R9        ; R9 := nil
-117 [-]: GETUPVAL  R10 U3       ; R10 := U3
-118 [-]: GETTABLE  R10 R10 K36  ; R10 := R10["CANCEL"]
-119 [-]: EQ        0 R8 R10     ; if R8 ~= R10 then PC := 123
-120 [-]: JMP       123          ; PC := 123
-121 [-]: RETURN    R0 1         ; return 
-122 [-]: JMP       155          ; PC := 155
-123 [-]: GETUPVAL  R10 U3       ; R10 := U3
-124 [-]: GETTABLE  R10 R10 K37  ; R10 := R10["CONTRIBUTE"]
-125 [-]: EQ        0 R8 R10     ; if R8 ~= R10 then PC := 147
-126 [-]: JMP       147          ; PC := 147
-127 [-]: GETGLOBAL R10 K5       ; R10 := 0x7b998233
-128 [-]: GETTABLE  R11 R6 K38   ; R11 := R6["pendingColors"]
-129 [-]: CALL      R10 2 2      ; R10 := R10(R11)
-130 [-]: TEST      R10 0        ; if not R10 then PC := 142
-131 [-]: JMP       142          ; PC := 142
-132 [-]: GETGLOBAL R10 K5       ; R10 := 0x7b998233
-133 [-]: GETTABLE  R11 R6 K39   ; R11 := R6["pendingLights"]
-134 [-]: CALL      R10 2 2      ; R10 := R10(R11)
-135 [-]: TEST      R10 0        ; if not R10 then PC := 142
-136 [-]: JMP       142          ; PC := 142
-137 [-]: GETUPVAL  R10 U4       ; R10 := U4
-138 [-]: GETTABLE  R10 R10 K40  ; R10 := R10[0xe0cba3ca]
-139 [-]: LOADK     R11 K41      ; R11 := "/Lotus/Language/Dojo/PaintBotNoContributionsYet"
-140 [-]: CALL      R10 2 1      ; R10(R11)
-141 [-]: RETURN    R0 1         ; return 
-142 [-]: GETGLOBAL R10 K42      ; R10 := 0xb009bbc6
-143 [-]: GETGLOBAL R11 K43      ; R11 := 0x5e9a35db
-144 [-]: CALL      R10 2 2      ; R10 := R10(R11)
-145 [-]: MOVE      R9 R10       ; R9 := R10
-146 [-]: JMP       155          ; PC := 155
-147 [-]: GETUPVAL  R10 U3       ; R10 := U3
-148 [-]: GETTABLE  R10 R10 K44  ; R10 := R10["RUSH"]
-149 [-]: EQ        0 R8 R10     ; if R8 ~= R10 then PC := 155
-150 [-]: JMP       155          ; PC := 155
-151 [-]: GETGLOBAL R10 K42      ; R10 := 0xb009bbc6
-152 [-]: GETGLOBAL R11 K45      ; R11 := 0x225828fd
-153 [-]: CALL      R10 2 2      ; R10 := R10(R11)
-154 [-]: MOVE      R9 R10       ; R9 := R10
-155 [-]: GETGLOBAL R10 K5       ; R10 := 0x7b998233
-156 [-]: MOVE      R11 R9       ; R11 := R9
-157 [-]: CALL      R10 2 2      ; R10 := R10(R11)
-158 [-]: TEST      R10 1        ; if R10 then PC := 184
-159 [-]: JMP       184          ; PC := 184
-160 [-]: GETGLOBAL R10 K24      ; R10 := 0x9ba7909f
-161 [-]: SELF      R10 R10 K25  ; R11 := R10; R10 := R10[0xcfba257f]
-162 [-]: MOVE      R12 R9       ; R12 := R9
-163 [-]: CALL      R10 3 2      ; R10 := R10(R11,R12)
-164 [-]: GETGLOBAL R11 K5       ; R11 := 0x7b998233
-165 [-]: MOVE      R12 R10      ; R12 := R10
-166 [-]: CALL      R11 2 2      ; R11 := R11(R12)
-167 [-]: TEST      R11 1        ; if R11 then PC := 183
-168 [-]: JMP       183          ; PC := 183
-169 [-]: GETGLOBAL R11 K8       ; R11 := _T
-170 [-]: SETTABLE  R11 K46 R5   ; R11["ComponentParams"] := R5
-171 [-]: GETGLOBAL R11 K8       ; R11 := _T
-172 [-]: SELF      R12 R3 K6    ; R13 := R3; R12 := R3[0xf537cfc7]
-173 [-]: CALL      R12 2 2      ; R12 := R12(R13)
-174 [-]: SETTABLE  R11 K47 R12  ; R11["DecoId"] := R12
-175 [-]: GETGLOBAL R11 K8       ; R11 := _T
-176 [-]: SETTABLE  R11 K48 K49  ; R11["ShowDecorationContribution"] := true
-177 [-]: SELF      R11 R10 K27  ; R12 := R10; R11 := R10[0xe4162eed]
-178 [-]: LOADK     R13 K50      ; R13 := "ReadDojoVars"
-179 [-]: LOADK     R14 K7       ; R14 := ""
-180 [-]: CALL      R11 4 1      ; R11(R12,R13,R14)
-181 [-]: GETGLOBAL R11 K8       ; R11 := _T
-182 [-]: SETTABLE  R11 K48 K22  ; R11["ShowDecorationContribution"] := false
-183 [-]: RETURN    R0 1         ; return 
-184 [-]: GETUPVAL  R11 U3       ; R11 := U3
-185 [-]: GETTABLE  R11 R11 K51  ; R11 := R11["PREVIEW_COLOURS"]
-186 [-]: EQ        0 R8 R11     ; if R8 ~= R11 then PC := 283
-187 [-]: JMP       283          ; PC := 283
-188 [-]: SELF      R11 R1 K52   ; R12 := R1; R11 := R1[0x5b89142c]
-189 [-]: CALL      R11 2 2      ; R11 := R11(R12)
-190 [-]: GETGLOBAL R12 K5       ; R12 := 0x7b998233
-191 [-]: GETTABLE  R13 R6 K38   ; R13 := R6["pendingColors"]
-192 [-]: CALL      R12 2 2      ; R12 := R12(R13)
-193 [-]: TEST      R12 0        ; if not R12 then PC := 205
-194 [-]: JMP       205          ; PC := 205
-195 [-]: GETGLOBAL R12 K5       ; R12 := 0x7b998233
-196 [-]: GETTABLE  R13 R6 K39   ; R13 := R6["pendingLights"]
-197 [-]: CALL      R12 2 2      ; R12 := R12(R13)
-198 [-]: TEST      R12 0        ; if not R12 then PC := 205
-199 [-]: JMP       205          ; PC := 205
-200 [-]: GETUPVAL  R12 U4       ; R12 := U4
-201 [-]: GETTABLE  R12 R12 K40  ; R12 := R12[0xe0cba3ca]
-202 [-]: LOADK     R13 K53      ; R13 := "/Lotus/Language/Dojo/PaintBotNoPreviewColours"
-203 [-]: CALL      R12 2 1      ; R12(R13)
-204 [-]: RETURN    R0 1         ; return 
-205 [-]: GETGLOBAL R12 K5       ; R12 := 0x7b998233
-206 [-]: GETTABLE  R13 R6 K38   ; R13 := R6["pendingColors"]
-207 [-]: CALL      R12 2 2      ; R12 := R12(R13)
-208 [-]: TEST      R12 1        ; if R12 then PC := 216
-209 [-]: JMP       216          ; PC := 216
-210 [-]: GETGLOBAL R12 K8       ; R12 := _T
-211 [-]: GETTABLE  R12 R12 K9   ; R12 := R12["DojoMgr"]
-212 [-]: SELF      R12 R12 K54  ; R13 := R12; R12 := R12[0x193134d5]
-213 [-]: MOVE      R14 R7       ; R14 := R7
-214 [-]: GETTABLE  R15 R6 K38   ; R15 := R6["pendingColors"]
-215 [-]: CALL      R12 4 1      ; R12(R13,R14,R15)
-216 [-]: GETGLOBAL R12 K5       ; R12 := 0x7b998233
-217 [-]: GETTABLE  R13 R6 K39   ; R13 := R6["pendingLights"]
-218 [-]: CALL      R12 2 2      ; R12 := R12(R13)
-219 [-]: TEST      R12 1        ; if R12 then PC := 227
-220 [-]: JMP       227          ; PC := 227
-221 [-]: GETGLOBAL R12 K8       ; R12 := _T
-222 [-]: GETTABLE  R12 R12 K9   ; R12 := R12["DojoMgr"]
-223 [-]: SELF      R12 R12 K55  ; R13 := R12; R12 := R12[0xa38ded0f]
-224 [-]: MOVE      R14 R7       ; R14 := R7
-225 [-]: GETTABLE  R15 R6 K39   ; R15 := R6["pendingLights"]
-226 [-]: CALL      R12 4 1      ; R12(R13,R14,R15)
-227 [-]: GETGLOBAL R12 K8       ; R12 := _T
-228 [-]: SETTABLE  R12 K18 K49  ; R12["PaintBotColorsActive"] := true
-229 [-]: CONST     R12 20       ; R12 := 20.000000
-230 [-]: LT        0 K56 R12    ; if 0.000000 >= R12 then PC := 254
-231 [-]: JMP       254          ; PC := 254
-232 [-]: SELF      R13 R11 K20  ; R14 := R11; R13 := R11[0x0803eee1]
-233 [-]: CALL      R13 2 2      ; R13 := R13(R14)
-234 [-]: SELF      R13 R13 K21  ; R14 := R13; R13 := R13[0x89212ed6]
-235 [-]: GETGLOBAL R15 K57      ; R15 := 0x603636ad
-236 [-]: LOADK     R16 K58      ; R16 := "/Lotus/Language/Dojo/PaintBotPreviewActive"
-237 [-]: NEWTABLE  R17 0 1      ; R17 := {}
-238 [-]: GETGLOBAL R18 K60      ; R18 := 0x5bced4c4
-239 [-]: GETTABLE  R18 R18 K61  ; R18 := R18[0x55f27c30]
-240 [-]: MOVE      R19 R12      ; R19 := R12
-241 [-]: CALL      R18 2 2      ; R18 := R18(R19)
-242 [-]: SETTABLE  R17 K59 R18  ; R17["TIME"] := R18
-243 [-]: CALL      R15 3 0      ; R15,... := R15(R16,R17)
-244 [-]: CALL      R13 0 1      ; R13(R14,...)
-245 [-]: GETGLOBAL R13 K35      ; R13 := 0xcbd666e1
-246 [-]: CONST     R14 0        ; R14 := 0.000000
-247 [-]: CALL      R13 2 1      ; R13(R14)
-248 [-]: GETGLOBAL R13 K62      ; R13 := 0x67652851
-249 [-]: CALL      R13 1 2      ; R13 := R13()
-250 [-]: SUB       R12 R12 R13  ; R12 := R12 - R13
-251 [-]: GETGLOBAL R13 K8       ; R13 := _T
-252 [-]: SETTABLE  R13 K23 K49  ; R13["GenericMessageNoAnimateTyping"] := true
-253 [-]: JMP       230          ; PC := 230
-254 [-]: GETGLOBAL R13 K8       ; R13 := _T
-255 [-]: SETTABLE  R13 K23 K22  ; R13["GenericMessageNoAnimateTyping"] := false
-256 [-]: SELF      R13 R11 K20  ; R14 := R11; R13 := R11[0x0803eee1]
-257 [-]: CALL      R13 2 2      ; R13 := R13(R14)
-258 [-]: SELF      R13 R13 K21  ; R14 := R13; R13 := R13[0x89212ed6]
-259 [-]: LOADK     R15 K7       ; R15 := ""
-260 [-]: CALL      R13 3 1      ; R13(R14,R15)
-261 [-]: GETGLOBAL R13 K8       ; R13 := _T
-262 [-]: SETTABLE  R13 K18 K22  ; R13["PaintBotColorsActive"] := false
-263 [-]: GETGLOBAL R13 K5       ; R13 := 0x7b998233
-264 [-]: GETTABLE  R14 R6 K38   ; R14 := R6["pendingColors"]
-265 [-]: CALL      R13 2 2      ; R13 := R13(R14)
-266 [-]: TEST      R13 1        ; if R13 then PC := 272
-267 [-]: JMP       272          ; PC := 272
-268 [-]: GETUPVAL  R13 U0       ; R13 := U0
-269 [-]: MOVE      R14 R7       ; R14 := R7
-270 [-]: MOVE      R15 R6       ; R15 := R6
-271 [-]: CALL      R13 3 1      ; R13(R14,R15)
-272 [-]: GETGLOBAL R13 K5       ; R13 := 0x7b998233
-273 [-]: GETTABLE  R14 R6 K39   ; R14 := R6["pendingLights"]
-274 [-]: CALL      R13 2 2      ; R13 := R13(R14)
-275 [-]: TEST      R13 1        ; if R13 then PC := 281
-276 [-]: JMP       281          ; PC := 281
-277 [-]: GETUPVAL  R13 U1       ; R13 := U1
-278 [-]: MOVE      R14 R7       ; R14 := R7
-279 [-]: MOVE      R15 R6       ; R15 := R6
-280 [-]: CALL      R13 3 1      ; R13(R14,R15)
-281 [-]: RETURN    R0 1         ; return 
-282 [-]: JMP       314          ; PC := 314
-283 [-]: GETUPVAL  R13 U3       ; R13 := U3
-284 [-]: GETTABLE  R13 R13 K63  ; R13 := R13["SET_COLOURS"]
-285 [-]: EQ        1 R8 R13     ; if R8 == R13 then PC := 291
-286 [-]: JMP       291          ; PC := 291
-287 [-]: GETUPVAL  R13 U3       ; R13 := U3
-288 [-]: GETTABLE  R13 R13 K64  ; R13 := R13["SET_LIGHTS"]
-289 [-]: EQ        0 R8 R13     ; if R8 ~= R13 then PC := 313
-290 [-]: JMP       313          ; PC := 313
-291 [-]: GETUPVAL  R13 U5       ; R13 := U5
-292 [-]: GETTABLE  R13 R13 K65  ; R13 := R13[0x334af2b4]
-293 [-]: LOADKB    R14 1 0      ; R14 := true
-294 [-]: LOADKB    R15 0 0      ; R15 := false
-295 [-]: CALL      R13 3 2      ; R13 := R13(R14,R15)
-296 [-]: TEST      R13 1        ; if R13 then PC := 303
-297 [-]: JMP       303          ; PC := 303
-298 [-]: GETUPVAL  R14 U4       ; R14 := U4
-299 [-]: GETTABLE  R14 R14 K40  ; R14 := R14[0xe0cba3ca]
-300 [-]: LOADK     R15 K66      ; R15 := "/Lotus/Language/Dojo/PaintBotNoPermission"
-301 [-]: CALL      R14 2 1      ; R14(R15)
-302 [-]: RETURN    R0 1         ; return 
-303 [-]: GETUPVAL  R14 U3       ; R14 := U3
-304 [-]: GETTABLE  R14 R14 K64  ; R14 := R14["SET_LIGHTS"]
-305 [-]: EQ        0 R8 R14     ; if R8 ~= R14 then PC := 310
-306 [-]: JMP       310          ; PC := 310
-307 [-]: GETGLOBAL R14 K8       ; R14 := _T
-308 [-]: SETTABLE  R14 K67 K49  ; R14["changingDojoLights"] := true
-309 [-]: JMP       314          ; PC := 314
-310 [-]: GETGLOBAL R14 K8       ; R14 := _T
-311 [-]: SETTABLE  R14 K67 K34  ; R14["changingDojoLights"] := nil
-312 [-]: JMP       314          ; PC := 314
-313 [-]: RETURN    R0 1         ; return 
-314 [-]: GETGLOBAL R14 K8       ; R14 := _T
-315 [-]: GETTABLE  R14 R14 K9   ; R14 := R14["DojoMgr"]
-316 [-]: GETTABLE  R14 R14 K68  ; R14 := R14["mGameRules"]
-317 [-]: SELF      R14 R14 K69  ; R15 := R14; R14 := R14[0x802f7dd8]
-318 [-]: LOADK     R16 K70      ; R16 := "OnGuildTech"
-319 [-]: CALL      R14 3 1      ; R14(R15,R16)
-320 [-]: GETGLOBAL R14 K5       ; R14 := 0x7b998233
-321 [-]: GETUPVAL  R15 U6       ; R15 := U6
-322 [-]: CALL      R14 2 2      ; R14 := R14(R15)
-323 [-]: TEST      R14 0        ; if not R14 then PC := 329
-324 [-]: JMP       329          ; PC := 329
-325 [-]: GETGLOBAL R14 K35      ; R14 := 0xcbd666e1
-326 [-]: CONST     R15 0        ; R15 := 0.000000
-327 [-]: CALL      R14 2 1      ; R14(R15)
-328 [-]: JMP       320          ; PC := 320
-329 [-]: GETUPVAL  R14 U6       ; R14 := U6
-330 [-]: GETTABLE  R14 R14 K71  ; R14 := R14["Result"]
-331 [-]: TEST      R14 0        ; if not R14 then PC := 498
-332 [-]: JMP       498          ; PC := 498
-333 [-]: GETGLOBAL R14 K24      ; R14 := 0x9ba7909f
-334 [-]: SELF      R14 R14 K72  ; R15 := R14; R14 := R14[0x6dd7aa66]
-335 [-]: GETGLOBAL R16 K73      ; R16 := 0x9e024073
-336 [-]: CALL      R14 3 2      ; R14 := R14(R15,R16)
-337 [-]: GETGLOBAL R15 K5       ; R15 := 0x7b998233
-338 [-]: MOVE      R16 R14      ; R16 := R14
-339 [-]: CALL      R15 2 2      ; R15 := R15(R16)
-340 [-]: TEST      R15 1        ; if R15 then PC := 498
-341 [-]: JMP       498          ; PC := 498
-342 [-]: LOADKB    R15 1 0      ; R15 := true
-343 [-]: SETUPVAL  R15 U7       ; U82 := R7
-344 [-]: NEWTABLE  R15 0 0      ; R15 := {}
-345 [-]: GETGLOBAL R16 K8       ; R16 := _T
-346 [-]: CLOSURE   R17 2        ; R17 := closure(Function #7.3)
-347 [-]: GETUPVAL  R0 U8        ; R0 := U8
-348 [-]: MOVE      R0 R6        ; R0 := R6
-349 [-]: GETUPVAL  R0 U4        ; R0 := U4
-350 [-]: MOVE      R0 R7        ; R0 := R7
-351 [-]: GETUPVAL  R0 U9        ; R0 := U9
-352 [-]: SETTABLE  R16 K74 R17  ; R16["GetRoomInfo"] := R17
-353 [-]: SELF      R16 R14 K27  ; R17 := R14; R16 := R14[0xe4162eed]
-354 [-]: LOADK     R18 K75      ; R18 := "SetRoomInfoFunction"
-355 [-]: LOADK     R19 K74      ; R19 := "GetRoomInfo"
-356 [-]: CALL      R16 4 1      ; R16(R17,R18,R19)
-357 [-]: GETGLOBAL R16 K8       ; R16 := _T
-358 [-]: CLOSURE   R17 3        ; R17 := closure(Function #7.4)
-359 [-]: MOVE      R0 R7        ; R0 := R7
-360 [-]: SETTABLE  R16 K76 R17  ; R16["ColorPickedCallback"] := R17
-361 [-]: SELF      R16 R14 K27  ; R17 := R14; R16 := R14[0xe4162eed]
-362 [-]: LOADK     R18 K77      ; R18 := "SetColorPickedCallback"
-363 [-]: LOADK     R19 K76      ; R19 := "ColorPickedCallback"
-364 [-]: CALL      R16 4 1      ; R16(R17,R18,R19)
-365 [-]: GETGLOBAL R16 K8       ; R16 := _T
-366 [-]: CLOSURE   R17 4        ; R17 := closure(Function #7.5)
-367 [-]: MOVE      R0 R7        ; R0 := R7
-368 [-]: SETTABLE  R16 K78 R17  ; R16["LightPickedCallback"] := R17
-369 [-]: SELF      R16 R14 K27  ; R17 := R14; R16 := R14[0xe4162eed]
-370 [-]: LOADK     R18 K79      ; R18 := "SetLightPickedCallback"
-371 [-]: LOADK     R19 K78      ; R19 := "LightPickedCallback"
-372 [-]: CALL      R16 4 1      ; R16(R17,R18,R19)
-373 [-]: GETGLOBAL R16 K8       ; R16 := _T
-374 [-]: CLOSURE   R17 5        ; R17 := closure(Function #7.6)
-375 [-]: GETUPVAL  R0 U7        ; R0 := U7
-376 [-]: MOVE      R0 R15       ; R0 := R15
-377 [-]: SETTABLE  R16 K80 R17  ; R16["OnClosedCallback"] := R17
-378 [-]: SELF      R16 R14 K27  ; R17 := R14; R16 := R14[0xe4162eed]
-379 [-]: LOADK     R18 K81      ; R18 := "SetOnClosedCallback"
-380 [-]: LOADK     R19 K80      ; R19 := "OnClosedCallback"
-381 [-]: CALL      R16 4 1      ; R16(R17,R18,R19)
-382 [-]: GETUPVAL  R16 U7       ; R16 := U7
-383 [-]: TEST      R16 0        ; if not R16 then PC := 389
-384 [-]: JMP       389          ; PC := 389
-385 [-]: GETGLOBAL R16 K35      ; R16 := 0xcbd666e1
-386 [-]: CONST     R17 0        ; R17 := 0.000000
-387 [-]: CALL      R16 2 1      ; R16(R17)
-388 [-]: JMP       382          ; PC := 382
-389 [-]: GETUPVAL  R16 U0       ; R16 := U0
-390 [-]: MOVE      R17 R7       ; R17 := R7
-391 [-]: MOVE      R18 R6       ; R18 := R6
-392 [-]: CALL      R16 3 1      ; R16(R17,R18)
-393 [-]: GETUPVAL  R16 U1       ; R16 := U1
-394 [-]: MOVE      R17 R7       ; R17 := R7
-395 [-]: MOVE      R18 R6       ; R18 := R6
-396 [-]: CALL      R16 3 1      ; R16(R17,R18)
-397 [-]: LEN       R16 R15      ; R16 := # R15
-398 [-]: LT        0 K56 R16    ; if 0.000000 >= R16 then PC := 497
-399 [-]: JMP       497          ; PC := 497
-400 [-]: GETTABLE  R16 R6 K82   ; R16 := R6["colors"]
-401 [-]: GETTABLE  R17 R6 K38   ; R17 := R6["pendingColors"]
-402 [-]: GETGLOBAL R18 K8       ; R18 := _T
-403 [-]: GETTABLE  R18 R18 K67  ; R18 := R18["changingDojoLights"]
-404 [-]: TEST      R18 0        ; if not R18 then PC := 408
-405 [-]: JMP       408          ; PC := 408
-406 [-]: GETTABLE  R16 R6 K83   ; R16 := R6["lights"]
-407 [-]: GETTABLE  R17 R6 K39   ; R17 := R6["pendingLights"]
-408 [-]: LOADKB    R18 0 0      ; R18 := false
-409 [-]: GETGLOBAL R19 K5       ; R19 := 0x7b998233
-410 [-]: MOVE      R20 R17      ; R20 := R17
-411 [-]: CALL      R19 2 2      ; R19 := R19(R20)
-412 [-]: TEST      R19 0        ; if not R19 then PC := 441
-413 [-]: JMP       441          ; PC := 441
-414 [-]: CONST     R19 1        ; R19 := 1.000000
-415 [-]: LEN       R20 R15      ; R20 := # R15
-416 [-]: CONST     R21 1        ; R21 := 1.000000
-417 [-]: FORPREP   R19 439      ; R19 -= R21; PC := 439
-418 [-]: GETTABLE  R23 R15 R22  ; R23 := R15[R22]
-419 [-]: SELF      R23 R23 K84  ; R24 := R23; R23 := R23[0xa5d5c8f6]
-420 [-]: CALL      R23 2 2      ; R23 := R23(R24)
-421 [-]: GETGLOBAL R24 K85      ; R24 := 0x6c97a788
-422 [-]: GETTABLE  R24 R24 K86  ; R24 := R24["CustomizationColorPalette_sDefaultColor"]
-423 [-]: SELF      R24 R24 K84  ; R25 := R24; R24 := R24[0xa5d5c8f6]
-424 [-]: CALL      R24 2 2      ; R24 := R24(R25)
-425 [-]: EQ        0 R23 R24    ; if R23 ~= R24 then PC := 437
-426 [-]: JMP       437          ; PC := 437
-427 [-]: EQ        1 R16 K34    ; if R16 == nil then PC := 439
-428 [-]: JMP       439          ; PC := 439
-429 [-]: GETTABLE  R23 R15 R22  ; R23 := R15[R22]
-430 [-]: SELF      R23 R23 K84  ; R24 := R23; R23 := R23[0xa5d5c8f6]
-431 [-]: CALL      R23 2 2      ; R23 := R23(R24)
-432 [-]: GETTABLE  R24 R16 R22  ; R24 := R16[R22]
-433 [-]: SELF      R24 R24 K84  ; R25 := R24; R24 := R24[0xa5d5c8f6]
-434 [-]: CALL      R24 2 2      ; R24 := R24(R25)
-435 [-]: EQ        1 R23 R24    ; if R23 == R24 then PC := 439
-436 [-]: JMP       439          ; PC := 439
-437 [-]: LOADKB    R18 1 0      ; R18 := true
-438 [-]: JMP       456          ; PC := 456
-439 [-]: FORLOOP   R19 418      ; R19 += R21; if R19 <= R20 then begin PC := 418; R22 := R19 end
-440 [-]: JMP       456          ; PC := 456
-441 [-]: CONST     R23 1        ; R23 := 1.000000
-442 [-]: LEN       R24 R15      ; R24 := # R15
-443 [-]: CONST     R25 1        ; R25 := 1.000000
-444 [-]: FORPREP   R23 455      ; R23 -= R25; PC := 455
-445 [-]: GETTABLE  R27 R15 R26  ; R27 := R15[R26]
-446 [-]: SELF      R27 R27 K84  ; R28 := R27; R27 := R27[0xa5d5c8f6]
-447 [-]: CALL      R27 2 2      ; R27 := R27(R28)
-448 [-]: GETTABLE  R28 R17 R26  ; R28 := R17[R26]
-449 [-]: SELF      R28 R28 K84  ; R29 := R28; R28 := R28[0xa5d5c8f6]
-450 [-]: CALL      R28 2 2      ; R28 := R28(R29)
-451 [-]: EQ        1 R27 R28    ; if R27 == R28 then PC := 455
-452 [-]: JMP       455          ; PC := 455
-453 [-]: LOADKB    R18 1 0      ; R18 := true
-454 [-]: JMP       456          ; PC := 456
-455 [-]: FORLOOP   R23 445      ; R23 += R25; if R23 <= R24 then begin PC := 445; R26 := R23 end
-456 [-]: TEST      R18 0        ; if not R18 then PC := 497
-457 [-]: JMP       497          ; PC := 497
-458 [-]: LOADKB    R27 1 0      ; R27 := true
-459 [-]: SETUPVAL  R27 U10      ; U82 := R10
-460 [-]: GETGLOBAL R27 K8       ; R27 := _T
-461 [-]: GETTABLE  R27 R27 K67  ; R27 := R27["changingDojoLights"]
-462 [-]: TEST      R27 0        ; if not R27 then PC := 474
-463 [-]: JMP       474          ; PC := 474
-464 [-]: GETGLOBAL R27 K8       ; R27 := _T
-465 [-]: GETTABLE  R27 R27 K9   ; R27 := R27["DojoMgr"]
-466 [-]: SELF      R27 R27 K87  ; R28 := R27; R27 := R27[0x85663e44]
-467 [-]: GETTABLE  R29 R5 K16   ; R29 := R5["id"]
-468 [-]: SELF      R30 R2 K6    ; R31 := R2; R30 := R2[0xf537cfc7]
-469 [-]: CALL      R30 2 2      ; R30 := R30(R31)
-470 [-]: MOVE      R31 R15      ; R31 := R15
-471 [-]: GETUPVAL  R32 U11      ; R32 := U11
-472 [-]: CALL      R27 6 1      ; R27(R28,R29,R30,R31,R32)
-473 [-]: JMP       483          ; PC := 483
-474 [-]: GETGLOBAL R27 K8       ; R27 := _T
-475 [-]: GETTABLE  R27 R27 K9   ; R27 := R27["DojoMgr"]
-476 [-]: SELF      R27 R27 K88  ; R28 := R27; R27 := R27[0x5a3e9f61]
-477 [-]: GETTABLE  R29 R5 K16   ; R29 := R5["id"]
-478 [-]: SELF      R30 R2 K6    ; R31 := R2; R30 := R2[0xf537cfc7]
-479 [-]: CALL      R30 2 2      ; R30 := R30(R31)
-480 [-]: MOVE      R31 R15      ; R31 := R15
-481 [-]: GETUPVAL  R32 U11      ; R32 := U11
-482 [-]: CALL      R27 6 1      ; R27(R28,R29,R30,R31,R32)
-483 [-]: CONST     R27 0        ; R27 := 0.000000
-484 [-]: GETUPVAL  R28 U10      ; R28 := U10
-485 [-]: TEST      R28 0        ; if not R28 then PC := 497
-486 [-]: JMP       497          ; PC := 497
-487 [-]: GETGLOBAL R28 K35      ; R28 := 0xcbd666e1
-488 [-]: CONST     R29 0        ; R29 := 0.000000
-489 [-]: CALL      R28 2 1      ; R28(R29)
-490 [-]: GETGLOBAL R28 K89      ; R28 := 0xb693b6c1
-491 [-]: CALL      R28 1 2      ; R28 := R28()
-492 [-]: ADD       R27 R27 R28  ; R27 := R27 + R28
-493 [-]: LT        0 K90 R27    ; if 10.000000 >= R27 then PC := 484
-494 [-]: JMP       484          ; PC := 484
-495 [-]: JMP       497          ; PC := 497
-496 [-]: JMP       484          ; PC := 484
-497 [-]: CLOSE     R15          ; SAVE R15,...
-498 [-]: RETURN    R0 1         ; return 
+       0 [-]: NAMECALL R2 R1 K0 [0xA5E492D4]
+       1 [-]: CALL R2 1 1  
+       2 [-]: JUMPIF R2 L0 
+       3 [-]: RETURN R0 0  
+L 0:   4 [-]: GETIMPORT R2 2 [nil]
+       5 [-]: GETIMPORT R4 4 [nil]
+       6 [-]: NAMECALL R5 R0 K5 [0xD1586535]
+       7 [-]: CALL R5 1 -1 
+       8 [-]: NAMECALL R2 R2 K6 [0x4E5939A5]
+       9 [-]: CALL R2 -1 1 
+      10 [-]: FASTCALL1 62 R2 L1
+      11 [-]: MOVE R4 R2   
+      12 [-]: GETIMPORT R3 8 [nil]
+      13 [-]: CALL R3 1 1  
+L 1:  14 [-]: JUMPIF R3 L2 
+      15 [-]: NAMECALL R3 R2 K9 [0xF537CFC7]
+      16 [-]: CALL R3 1 1  
+      17 [-]: JUMPXEQKS R3 K10 L3 NOT [""]
+L 2:  18 [-]: RETURN R0 0  
+L 3:  19 [-]: GETIMPORT R3 14 [nil]
+      20 [-]: NAMECALL R5 R2 K9 [0xF537CFC7]
+      21 [-]: CALL R5 1 -1 
+      22 [-]: NAMECALL R3 R3 K15 [0xFCE0784E]
+      23 [-]: CALL R3 -1 1 
+      24 [-]: NAMECALL R4 R3 K9 [0xF537CFC7]
+      25 [-]: CALL R4 1 1  
+      26 [-]: NAMECALL R5 R2 K9 [0xF537CFC7]
+      27 [-]: CALL R5 1 1  
+      28 [-]: JUMPIFEQ R4 R5 L4
+      29 [-]: RETURN R0 0  
+L 4:  30 [-]: NAMECALL R4 R2 K16 [0xE79E7EF4]
+      31 [-]: CALL R4 1 1  
+      32 [-]: NAMECALL R4 R4 K17 [0x7D05E45F]
+      33 [-]: CALL R4 1 1  
+      34 [-]: GETIMPORT R5 18 [nil]
+      35 [-]: MOVE R7 R4   
+      36 [-]: NAMECALL R5 R5 K19 [0xD1964243]
+      37 [-]: CALL R5 2 1  
+      38 [-]: GETIMPORT R6 14 [nil]
+      39 [-]: GETTABLEKS R8 R5 K20 ["id"]
+      40 [-]: NAMECALL R6 R6 K21 [0x40063309]
+      41 [-]: CALL R6 2 1  
+      42 [-]: GETIMPORT R8 23 [nil]
+      43 [-]: GETTABLEKS R9 R5 K20 ["id"]
+      44 [-]: GETTABLE R7 R8 R9
+      45 [-]: GETIMPORT R8 25 [nil]
+      46 [-]: JUMPIFNOT R8 L5
+      47 [-]: NAMECALL R8 R1 K26 [0x5E651723]
+      48 [-]: CALL R8 1 1  
+      49 [-]: NAMECALL R8 R8 K27 [0x0803EEE1]
+      50 [-]: CALL R8 1 1  
+      51 [-]: LOADK R10 K10 [""]
+      52 [-]: NAMECALL R8 R8 K28 [0x89212ED6]
+      53 [-]: CALL R8 2 0  
+      54 [-]: GETUPVAL R8 0
+      55 [-]: MOVE R9 R7   
+      56 [-]: MOVE R10 R6  
+      57 [-]: CALL R8 2 0  
+      58 [-]: GETUPVAL R8 1
+      59 [-]: MOVE R9 R7   
+      60 [-]: MOVE R10 R6  
+      61 [-]: CALL R8 2 0  
+      62 [-]: GETIMPORT R8 29 [nil]
+      63 [-]: LOADB R9 0   
+      64 [-]: SETTABLEKS R9 R8 K24 ["PaintBotColorsActive"]
+      65 [-]: GETIMPORT R8 29 [nil]
+      66 [-]: LOADB R9 0   
+      67 [-]: SETTABLEKS R9 R8 K30 ["GenericMessageNoAnimateTyping"]
+L 5:  68 [-]: GETIMPORT R8 32 [nil]
+      69 [-]: GETIMPORT R10 34 [nil]
+      70 [-]: NAMECALL R8 R8 K35 [0xCFBA257F]
+      71 [-]: CALL R8 2 1  
+      72 [-]: SETUPVAL R8 2
+      73 [-]: GETUPVAL R8 2
+      74 [-]: LOADK R10 K36 ["SetTitle"]
+      75 [-]: LOADK R11 K37 ["/Lotus/Language/Dojo/TnoPaintBotDecoName"]
+      76 [-]: NAMECALL R8 R8 K38 [0xE4162EED]
+      77 [-]: CALL R8 3 0  
+      78 [-]: LOADNIL R8   
+      79 [-]: GETIMPORT R9 29 [nil]
+      80 [-]: NEWCLOSURE R10 P0
+      81 [-]: MOVE R1 R8   
+      82 [-]: MOVE R2 R3   
+      83 [-]: SETTABLEKS R10 R9 K39 ["MenuSelectionDone"]
+      84 [-]: GETUPVAL R9 2
+      85 [-]: LOADK R11 K40 ["SetCallBack"]
+      86 [-]: LOADK R12 K39 ["MenuSelectionDone"]
+      87 [-]: NAMECALL R9 R9 K38 [0xE4162EED]
+      88 [-]: CALL R9 3 0  
+      89 [-]: GETIMPORT R9 29 [nil]
+      90 [-]: NEWCLOSURE R10 P1
+      91 [-]: MOVE R0 R3   
+      92 [-]: MOVE R2 R3   
+      93 [-]: SETTABLEKS R10 R9 K41 ["GetMenuEntries"]
+      94 [-]: GETUPVAL R9 2
+      95 [-]: LOADK R11 K42 ["SetElementsFunction"]
+      96 [-]: LOADK R12 K41 ["GetMenuEntries"]
+      97 [-]: NAMECALL R9 R9 K38 [0xE4162EED]
+      98 [-]: CALL R9 3 0  
+L 6:  99 [-]: JUMPXEQKNIL R8 L7 NOT
+     100 [-]: GETIMPORT R9 44 [nil]
+     101 [-]: LOADN R10 0  
+     102 [-]: CALL R9 1 0  
+     103 [-]: JUMPBACK L6  
+L 7: 104 [-]: LOADNIL R9   
+     105 [-]: GETUPVAL R11 3
+     106 [-]: GETTABLEKS R10 R11 K45 ["CANCEL"]
+     107 [-]: JUMPIFNOTEQ R8 R10 L8
+     108 [-]: CLOSEUPVALS R8
+     109 [-]: RETURN R0 0  
+L 8: 110 [-]: GETUPVAL R11 3
+     111 [-]: GETTABLEKS R10 R11 K46 ["CONTRIBUTE"]
+     112 [-]: JUMPIFNOTEQ R8 R10 L12
+     113 [-]: GETTABLEKS R11 R6 K47 ["pendingColors"]
+     114 [-]: FASTCALL1 62 R11 L9
+     115 [-]: GETIMPORT R10 8 [nil]
+     116 [-]: CALL R10 1 1 
+L 9: 117 [-]: JUMPIFNOT R10 L11
+     118 [-]: GETTABLEKS R11 R6 K48 ["pendingLights"]
+     119 [-]: FASTCALL1 62 R11 L10
+     120 [-]: GETIMPORT R10 8 [nil]
+     121 [-]: CALL R10 1 1 
+L10: 122 [-]: JUMPIFNOT R10 L11
+     123 [-]: GETUPVAL R11 4
+     124 [-]: GETTABLEKS R10 R11 K49 [0xE0CBA3CA]
+     125 [-]: LOADK R11 K50 ["/Lotus/Language/Dojo/PaintBotNoContributionsYet"]
+     126 [-]: CALL R10 1 0 
+     127 [-]: CLOSEUPVALS R8
+     128 [-]: RETURN R0 0  
+L11: 129 [-]: GETIMPORT R10 52 [nil]
+     130 [-]: GETIMPORT R11 54 [nil]
+     131 [-]: CALL R10 1 1 
+     132 [-]: MOVE R9 R10  
+     133 [-]: JUMP L13
+    
+L12: 134 [-]: GETUPVAL R11 3
+     135 [-]: GETTABLEKS R10 R11 K55 ["RUSH"]
+     136 [-]: JUMPIFNOTEQ R8 R10 L13
+     137 [-]: GETIMPORT R10 52 [nil]
+     138 [-]: GETIMPORT R11 57 [nil]
+     139 [-]: CALL R10 1 1 
+     140 [-]: MOVE R9 R10  
+L13: 141 [-]: FASTCALL1 62 R9 L14
+     142 [-]: MOVE R11 R9  
+     143 [-]: GETIMPORT R10 8 [nil]
+     144 [-]: CALL R10 1 1 
+L14: 145 [-]: JUMPIF R10 L17
+     146 [-]: GETIMPORT R10 32 [nil]
+     147 [-]: MOVE R12 R9  
+     148 [-]: NAMECALL R10 R10 K35 [0xCFBA257F]
+     149 [-]: CALL R10 2 1 
+     150 [-]: FASTCALL1 62 R10 L15
+     151 [-]: MOVE R12 R10 
+     152 [-]: GETIMPORT R11 8 [nil]
+     153 [-]: CALL R11 1 1 
+L15: 154 [-]: JUMPIF R11 L16
+     155 [-]: GETIMPORT R11 29 [nil]
+     156 [-]: SETTABLEKS R5 R11 K58 ["ComponentParams"]
+     157 [-]: GETIMPORT R11 29 [nil]
+     158 [-]: NAMECALL R12 R3 K9 [0xF537CFC7]
+     159 [-]: CALL R12 1 1 
+     160 [-]: SETTABLEKS R12 R11 K59 ["DecoId"]
+     161 [-]: GETIMPORT R11 29 [nil]
+     162 [-]: LOADB R12 1  
+     163 [-]: SETTABLEKS R12 R11 K60 ["ShowDecorationContribution"]
+     164 [-]: LOADK R13 K61 ["ReadDojoVars"]
+     165 [-]: LOADK R14 K10 [""]
+     166 [-]: NAMECALL R11 R10 K38 [0xE4162EED]
+     167 [-]: CALL R11 3 0 
+     168 [-]: GETIMPORT R11 29 [nil]
+     169 [-]: LOADB R12 0  
+     170 [-]: SETTABLEKS R12 R11 K60 ["ShowDecorationContribution"]
+L16: 171 [-]: CLOSEUPVALS R8
+     172 [-]: RETURN R0 0  
+L17: 173 [-]: GETUPVAL R11 3
+     174 [-]: GETTABLEKS R10 R11 K62 ["PREVIEW_COLOURS"]
+     175 [-]: JUMPIFNOTEQ R8 R10 L32
+     176 [-]: NAMECALL R10 R1 K63 [0x5B89142C]
+     177 [-]: CALL R10 1 1 
+     178 [-]: GETTABLEKS R12 R6 K47 ["pendingColors"]
+     179 [-]: FASTCALL1 62 R12 L18
+     180 [-]: GETIMPORT R11 8 [nil]
+     181 [-]: CALL R11 1 1 
+L18: 182 [-]: JUMPIFNOT R11 L20
+     183 [-]: GETTABLEKS R12 R6 K48 ["pendingLights"]
+     184 [-]: FASTCALL1 62 R12 L19
+     185 [-]: GETIMPORT R11 8 [nil]
+     186 [-]: CALL R11 1 1 
+L19: 187 [-]: JUMPIFNOT R11 L20
+     188 [-]: GETUPVAL R12 4
+     189 [-]: GETTABLEKS R11 R12 K49 [0xE0CBA3CA]
+     190 [-]: LOADK R12 K64 ["/Lotus/Language/Dojo/PaintBotNoPreviewColours"]
+     191 [-]: CALL R11 1 0 
+     192 [-]: CLOSEUPVALS R8
+     193 [-]: RETURN R0 0  
+L20: 194 [-]: GETTABLEKS R12 R6 K47 ["pendingColors"]
+     195 [-]: FASTCALL1 62 R12 L21
+     196 [-]: GETIMPORT R11 8 [nil]
+     197 [-]: CALL R11 1 1 
+L21: 198 [-]: JUMPIF R11 L22
+     199 [-]: GETIMPORT R11 18 [nil]
+     200 [-]: MOVE R13 R7  
+     201 [-]: GETTABLEKS R14 R6 K47 ["pendingColors"]
+     202 [-]: NAMECALL R11 R11 K65 [0x193134D5]
+     203 [-]: CALL R11 3 0 
+L22: 204 [-]: GETTABLEKS R12 R6 K48 ["pendingLights"]
+     205 [-]: FASTCALL1 62 R12 L23
+     206 [-]: GETIMPORT R11 8 [nil]
+     207 [-]: CALL R11 1 1 
+L23: 208 [-]: JUMPIF R11 L24
+     209 [-]: GETIMPORT R11 18 [nil]
+     210 [-]: MOVE R13 R7  
+     211 [-]: GETTABLEKS R14 R6 K48 ["pendingLights"]
+     212 [-]: NAMECALL R11 R11 K66 [0xA38DED0F]
+     213 [-]: CALL R11 3 0 
+L24: 214 [-]: GETIMPORT R11 29 [nil]
+     215 [-]: LOADB R12 1  
+     216 [-]: SETTABLEKS R12 R11 K24 ["PaintBotColorsActive"]
+     217 [-]: LOADN R11 20 
+L25: 218 [-]: LOADN R12 0  
+     219 [-]: JUMPIFNOTLT R12 R11 L27
+     220 [-]: NAMECALL R12 R10 K27 [0x0803EEE1]
+     221 [-]: CALL R12 1 1 
+     222 [-]: GETIMPORT R14 68 [nil]
+     223 [-]: LOADK R15 K69 ["/Lotus/Language/Dojo/PaintBotPreviewActive"]
+     224 [-]: DUPTABLE R16 71
+     225 [-]: FASTCALL1 12 R11 L26
+     226 [-]: MOVE R18 R11 
+     227 [-]: GETIMPORT R17 74 [nil]
+     228 [-]: CALL R17 1 1 
+L26: 229 [-]: SETTABLEKS R17 R16 K70 ["TIME"]
+     230 [-]: CALL R14 2 -1
+     231 [-]: NAMECALL R12 R12 K28 [0x89212ED6]
+     232 [-]: CALL R12 -1 0
+     233 [-]: GETIMPORT R12 44 [nil]
+     234 [-]: LOADN R13 0  
+     235 [-]: CALL R12 1 0 
+     236 [-]: GETIMPORT R12 76 [nil]
+     237 [-]: CALL R12 0 1 
+     238 [-]: SUB R11 R11 R12
+     239 [-]: GETIMPORT R12 29 [nil]
+     240 [-]: LOADB R13 1  
+     241 [-]: SETTABLEKS R13 R12 K30 ["GenericMessageNoAnimateTyping"]
+     242 [-]: JUMPBACK L25 
+L27: 243 [-]: GETIMPORT R12 29 [nil]
+     244 [-]: LOADB R13 0  
+     245 [-]: SETTABLEKS R13 R12 K30 ["GenericMessageNoAnimateTyping"]
+     246 [-]: NAMECALL R12 R10 K27 [0x0803EEE1]
+     247 [-]: CALL R12 1 1 
+     248 [-]: LOADK R14 K10 [""]
+     249 [-]: NAMECALL R12 R12 K28 [0x89212ED6]
+     250 [-]: CALL R12 2 0 
+     251 [-]: GETIMPORT R12 29 [nil]
+     252 [-]: LOADB R13 0  
+     253 [-]: SETTABLEKS R13 R12 K24 ["PaintBotColorsActive"]
+     254 [-]: GETTABLEKS R13 R6 K47 ["pendingColors"]
+     255 [-]: FASTCALL1 62 R13 L28
+     256 [-]: GETIMPORT R12 8 [nil]
+     257 [-]: CALL R12 1 1 
+L28: 258 [-]: JUMPIF R12 L29
+     259 [-]: GETUPVAL R12 0
+     260 [-]: MOVE R13 R7  
+     261 [-]: MOVE R14 R6  
+     262 [-]: CALL R12 2 0 
+L29: 263 [-]: GETTABLEKS R13 R6 K48 ["pendingLights"]
+     264 [-]: FASTCALL1 62 R13 L30
+     265 [-]: GETIMPORT R12 8 [nil]
+     266 [-]: CALL R12 1 1 
+L30: 267 [-]: JUMPIF R12 L31
+     268 [-]: GETUPVAL R12 1
+     269 [-]: MOVE R13 R7  
+     270 [-]: MOVE R14 R6  
+     271 [-]: CALL R12 2 0 
+L31: 272 [-]: CLOSEUPVALS R8
+     273 [-]: RETURN R0 0  
+L32: 274 [-]: GETUPVAL R11 3
+     275 [-]: GETTABLEKS R10 R11 K77 ["SET_COLOURS"]
+     276 [-]: JUMPIFEQ R8 R10 L33
+     277 [-]: GETUPVAL R11 3
+     278 [-]: GETTABLEKS R10 R11 K78 ["SET_LIGHTS"]
+     279 [-]: JUMPIFNOTEQ R8 R10 L36
+L33: 280 [-]: GETUPVAL R11 5
+     281 [-]: GETTABLEKS R10 R11 K79 [0x334AF2B4]
+     282 [-]: LOADB R11 1  
+     283 [-]: LOADB R12 0  
+     284 [-]: CALL R10 2 1 
+     285 [-]: JUMPIF R10 L34
+     286 [-]: GETUPVAL R12 4
+     287 [-]: GETTABLEKS R11 R12 K49 [0xE0CBA3CA]
+     288 [-]: LOADK R12 K80 ["/Lotus/Language/Dojo/PaintBotNoPermission"]
+     289 [-]: CALL R11 1 0 
+     290 [-]: CLOSEUPVALS R8
+     291 [-]: RETURN R0 0  
+L34: 292 [-]: GETUPVAL R12 3
+     293 [-]: GETTABLEKS R11 R12 K78 ["SET_LIGHTS"]
+     294 [-]: JUMPIFNOTEQ R8 R11 L35
+     295 [-]: GETIMPORT R11 29 [nil]
+     296 [-]: LOADB R12 1  
+     297 [-]: SETTABLEKS R12 R11 K81 ["changingDojoLights"]
+     298 [-]: JUMP L37
+    
+L35: 299 [-]: GETIMPORT R11 29 [nil]
+     300 [-]: LOADNIL R12  
+     301 [-]: SETTABLEKS R12 R11 K81 ["changingDojoLights"]
+     302 [-]: JUMP L37
+    
+L36: 303 [-]: CLOSEUPVALS R8
+     304 [-]: RETURN R0 0  
+L37: 305 [-]: GETIMPORT R10 83 [nil]
+     306 [-]: LOADK R12 K84 ["OnGuildTech"]
+     307 [-]: NAMECALL R10 R10 K85 [0x802F7DD8]
+     308 [-]: CALL R10 2 0 
+L38: 309 [-]: GETUPVAL R11 6
+     310 [-]: FASTCALL1 62 R11 L39
+     311 [-]: GETIMPORT R10 8 [nil]
+     312 [-]: CALL R10 1 1 
+L39: 313 [-]: JUMPIFNOT R10 L40
+     314 [-]: GETIMPORT R10 44 [nil]
+     315 [-]: LOADN R11 0  
+     316 [-]: CALL R10 1 0 
+     317 [-]: JUMPBACK L38 
+L40: 318 [-]: GETUPVAL R11 6
+     319 [-]: GETTABLEKS R10 R11 K86 ["Result"]
+     320 [-]: JUMPIFNOT R10 L57
+     321 [-]: GETIMPORT R10 32 [nil]
+     322 [-]: GETIMPORT R12 88 [nil]
+     323 [-]: NAMECALL R10 R10 K89 [0x6DD7AA66]
+     324 [-]: CALL R10 2 1 
+     325 [-]: FASTCALL1 62 R10 L41
+     326 [-]: MOVE R12 R10 
+     327 [-]: GETIMPORT R11 8 [nil]
+     328 [-]: CALL R11 1 1 
+L41: 329 [-]: JUMPIF R11 L57
+     330 [-]: LOADB R11 1  
+     331 [-]: SETUPVAL R11 7
+     332 [-]: NEWTABLE R11 0 0
+     333 [-]: GETIMPORT R12 29 [nil]
+     334 [-]: NEWCLOSURE R13 P2
+     335 [-]: MOVE R2 R8   
+     336 [-]: MOVE R0 R6   
+     337 [-]: MOVE R2 R4   
+     338 [-]: MOVE R0 R7   
+     339 [-]: MOVE R2 R9   
+     340 [-]: SETTABLEKS R13 R12 K90 ["GetRoomInfo"]
+     341 [-]: LOADK R14 K91 ["SetRoomInfoFunction"]
+     342 [-]: LOADK R15 K90 ["GetRoomInfo"]
+     343 [-]: NAMECALL R12 R10 K38 [0xE4162EED]
+     344 [-]: CALL R12 3 0 
+     345 [-]: GETIMPORT R12 29 [nil]
+     346 [-]: NEWCLOSURE R13 P3
+     347 [-]: MOVE R0 R7   
+     348 [-]: SETTABLEKS R13 R12 K92 ["ColorPickedCallback"]
+     349 [-]: LOADK R14 K93 ["SetColorPickedCallback"]
+     350 [-]: LOADK R15 K92 ["ColorPickedCallback"]
+     351 [-]: NAMECALL R12 R10 K38 [0xE4162EED]
+     352 [-]: CALL R12 3 0 
+     353 [-]: GETIMPORT R12 29 [nil]
+     354 [-]: NEWCLOSURE R13 P4
+     355 [-]: MOVE R0 R7   
+     356 [-]: SETTABLEKS R13 R12 K94 ["LightPickedCallback"]
+     357 [-]: LOADK R14 K95 ["SetLightPickedCallback"]
+     358 [-]: LOADK R15 K94 ["LightPickedCallback"]
+     359 [-]: NAMECALL R12 R10 K38 [0xE4162EED]
+     360 [-]: CALL R12 3 0 
+     361 [-]: GETIMPORT R12 29 [nil]
+     362 [-]: NEWCLOSURE R13 P5
+     363 [-]: MOVE R2 R7   
+     364 [-]: MOVE R1 R11  
+     365 [-]: SETTABLEKS R13 R12 K96 ["OnClosedCallback"]
+     366 [-]: LOADK R14 K97 ["SetOnClosedCallback"]
+     367 [-]: LOADK R15 K96 ["OnClosedCallback"]
+     368 [-]: NAMECALL R12 R10 K38 [0xE4162EED]
+     369 [-]: CALL R12 3 0 
+L42: 370 [-]: GETUPVAL R12 7
+     371 [-]: JUMPIFNOT R12 L43
+     372 [-]: GETIMPORT R12 44 [nil]
+     373 [-]: LOADN R13 0  
+     374 [-]: CALL R12 1 0 
+     375 [-]: JUMPBACK L42 
+L43: 376 [-]: GETUPVAL R12 0
+     377 [-]: MOVE R13 R7  
+     378 [-]: MOVE R14 R6  
+     379 [-]: CALL R12 2 0 
+     380 [-]: GETUPVAL R12 1
+     381 [-]: MOVE R13 R7  
+     382 [-]: MOVE R14 R6  
+     383 [-]: CALL R12 2 0 
+     384 [-]: LENGTH R12 R11
+     385 [-]: LOADN R13 0  
+     386 [-]: JUMPIFNOTLT R13 R12 L56
+     387 [-]: GETTABLEKS R12 R6 K98 ["colors"]
+     388 [-]: GETTABLEKS R13 R6 K47 ["pendingColors"]
+     389 [-]: GETIMPORT R14 99 [nil]
+     390 [-]: JUMPIFNOT R14 L44
+     391 [-]: GETTABLEKS R12 R6 K100 ["lights"]
+     392 [-]: GETTABLEKS R13 R6 K48 ["pendingLights"]
+L44: 393 [-]: LOADB R14 0  
+     394 [-]: FASTCALL1 62 R13 L45
+     395 [-]: MOVE R16 R13 
+     396 [-]: GETIMPORT R15 8 [nil]
+     397 [-]: CALL R15 1 1 
+L45: 398 [-]: JUMPIFNOT R15 L49
+     399 [-]: LOADN R17 1  
+     400 [-]: LENGTH R15 R11
+     401 [-]: LOADN R16 1  
+     402 [-]: FORNPREP R15 L52
+L46: 403 [-]: GETTABLE R18 R11 R17
+     404 [-]: NAMECALL R18 R18 K101 [0xA5D5C8F6]
+     405 [-]: CALL R18 1 1 
+     406 [-]: GETIMPORT R19 104 [nil]
+     407 [-]: NAMECALL R19 R19 K101 [0xA5D5C8F6]
+     408 [-]: CALL R19 1 1 
+     409 [-]: JUMPIFNOTEQ R18 R19 L47
+     410 [-]: JUMPXEQKNIL R12 L48
+     411 [-]: GETTABLE R18 R11 R17
+     412 [-]: NAMECALL R18 R18 K101 [0xA5D5C8F6]
+     413 [-]: CALL R18 1 1 
+     414 [-]: GETTABLE R19 R12 R17
+     415 [-]: NAMECALL R19 R19 K101 [0xA5D5C8F6]
+     416 [-]: CALL R19 1 1 
+     417 [-]: JUMPIFEQ R18 R19 L48
+L47: 418 [-]: LOADB R14 1  
+     419 [-]: JUMP L52
+    
+L48: 420 [-]: FORNLOOP R15 L46
+     421 [-]: JUMP L52
+    
+L49: 422 [-]: LOADN R17 1  
+     423 [-]: LENGTH R15 R11
+     424 [-]: LOADN R16 1  
+     425 [-]: FORNPREP R15 L52
+L50: 426 [-]: GETTABLE R18 R11 R17
+     427 [-]: NAMECALL R18 R18 K101 [0xA5D5C8F6]
+     428 [-]: CALL R18 1 1 
+     429 [-]: GETTABLE R19 R13 R17
+     430 [-]: NAMECALL R19 R19 K101 [0xA5D5C8F6]
+     431 [-]: CALL R19 1 1 
+     432 [-]: JUMPIFEQ R18 R19 L51
+     433 [-]: LOADB R14 1  
+     434 [-]: JUMP L52
+    
+L51: 435 [-]: FORNLOOP R15 L50
+L52: 436 [-]: JUMPIFNOT R14 L56
+     437 [-]: LOADB R15 1  
+     438 [-]: SETUPVAL R15 10
+     439 [-]: GETIMPORT R15 99 [nil]
+     440 [-]: JUMPIFNOT R15 L53
+     441 [-]: GETIMPORT R15 18 [nil]
+     442 [-]: GETTABLEKS R17 R5 K20 ["id"]
+     443 [-]: NAMECALL R18 R2 K9 [0xF537CFC7]
+     444 [-]: CALL R18 1 1 
+     445 [-]: MOVE R19 R11 
+     446 [-]: GETUPVAL R20 11
+     447 [-]: NAMECALL R15 R15 K105 [0x85663E44]
+     448 [-]: CALL R15 5 0 
+     449 [-]: JUMP L54
+    
+L53: 450 [-]: GETIMPORT R15 18 [nil]
+     451 [-]: GETTABLEKS R17 R5 K20 ["id"]
+     452 [-]: NAMECALL R18 R2 K9 [0xF537CFC7]
+     453 [-]: CALL R18 1 1 
+     454 [-]: MOVE R19 R11 
+     455 [-]: GETUPVAL R20 11
+     456 [-]: NAMECALL R15 R15 K106 [0x5A3E9F61]
+     457 [-]: CALL R15 5 0 
+L54: 458 [-]: LOADN R15 0  
+L55: 459 [-]: GETUPVAL R16 10
+     460 [-]: JUMPIFNOT R16 L56
+     461 [-]: GETIMPORT R16 44 [nil]
+     462 [-]: LOADN R17 0  
+     463 [-]: CALL R16 1 0 
+     464 [-]: GETIMPORT R16 108 [nil]
+     465 [-]: CALL R16 0 1 
+     466 [-]: ADD R15 R15 R16
+     467 [-]: LOADN R16 10 
+     468 [-]: JUMPIFLT R16 R15 L56
+     469 [-]: JUMPBACK L55 
+L56: 470 [-]: CLOSEUPVALS R11
+L57: 471 [-]: CLOSEUPVALS R8
+     472 [-]: RETURN R0 0  
 
-
-; Function #7.1:
-;
-; Name:            
-; Defined at line: 141
-; #Upvalues:       2
-; #Parameters:     1
-; Is_vararg:       0
-; Max Stack Size:  2
-
-  1 [-]: GETTABLE  R1 R0 K0     ; R1 := R0[1.000000]
-  2 [-]: EQ        1 R1 K1      ; if R1 == nil then PC := 8
-  3 [-]: JMP       8            ; PC := 8
-  4 [-]: GETTABLE  R1 R0 K0     ; R1 := R0[1.000000]
-  5 [-]: GETTABLE  R1 R1 K2     ; R1 := R1["mChoice"]
-  6 [-]: SETUPVAL  R1 U0        ; U82 := R0
-  7 [-]: JMP       11           ; PC := 11
-  8 [-]: GETUPVAL  R1 U1        ; R1 := U1
-  9 [-]: GETTABLE  R1 R1 K3     ; R1 := R1["CANCEL"]
- 10 [-]: SETUPVAL  R1 U0        ; U82 := R0
- 11 [-]: RETURN    R0 1         ; return 
-
-
-; Function #7.2:
-;
-; Name:            
-; Defined at line: 152
-; #Upvalues:       2
-; #Parameters:     0
-; Is_vararg:       0
-; Max Stack Size:  7
-
-  1 [-]: NEWTABLE  R0 0 0       ; R0 := {}
-  2 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  3 [-]: SELF      R1 R1 K0     ; R2 := R1; R1 := R1[0x3ae915ba]
-  4 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  5 [-]: TEST      R1 0         ; if not R1 then PC := 21
-  6 [-]: JMP       21           ; PC := 21
-  7 [-]: GETGLOBAL R1 K1        ; R1 := 0x33bdd652
-  8 [-]: GETTABLE  R1 R1 K2     ; R1 := R1[0x23d5322f]
-  9 [-]: MOVE      R2 R0        ; R2 := R0
- 10 [-]: NEWTABLE  R3 0 2       ; R3 := {}
- 11 [-]: GETGLOBAL R4 K4        ; R4 := 0x603636ad
- 12 [-]: LOADK     R5 K5        ; R5 := "/Lotus/Language/Dojo/ContributeTitle"
- 13 [-]: NEWTABLE  R6 0 0       ; R6 := {}
- 14 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
- 15 [-]: SETTABLE  R3 K3 R4     ; R3["mName"] := R4
- 16 [-]: GETUPVAL  R4 U1        ; R4 := U1
- 17 [-]: GETTABLE  R4 R4 K7     ; R4 := R4["CONTRIBUTE"]
- 18 [-]: SETTABLE  R3 K6 R4     ; R3["mChoice"] := R4
- 19 [-]: CALL      R1 3 1       ; R1(R2,R3)
- 20 [-]: JMP       39           ; PC := 39
- 21 [-]: GETUPVAL  R1 U0        ; R1 := U0
- 22 [-]: SELF      R1 R1 K8     ; R2 := R1; R1 := R1[0x04de00e9]
- 23 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 24 [-]: TEST      R1 0         ; if not R1 then PC := 39
- 25 [-]: JMP       39           ; PC := 39
- 26 [-]: GETGLOBAL R1 K1        ; R1 := 0x33bdd652
- 27 [-]: GETTABLE  R1 R1 K2     ; R1 := R1[0x23d5322f]
- 28 [-]: MOVE      R2 R0        ; R2 := R0
- 29 [-]: NEWTABLE  R3 0 2       ; R3 := {}
- 30 [-]: GETGLOBAL R4 K4        ; R4 := 0x603636ad
- 31 [-]: LOADK     R5 K9        ; R5 := "/Lotus/Language/Dojo/Rush"
- 32 [-]: NEWTABLE  R6 0 0       ; R6 := {}
- 33 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
- 34 [-]: SETTABLE  R3 K3 R4     ; R3["mName"] := R4
- 35 [-]: GETUPVAL  R4 U1        ; R4 := U1
- 36 [-]: GETTABLE  R4 R4 K10    ; R4 := R4["RUSH"]
- 37 [-]: SETTABLE  R3 K6 R4     ; R3["mChoice"] := R4
- 38 [-]: CALL      R1 3 1       ; R1(R2,R3)
- 39 [-]: GETGLOBAL R1 K1        ; R1 := 0x33bdd652
- 40 [-]: GETTABLE  R1 R1 K2     ; R1 := R1[0x23d5322f]
- 41 [-]: MOVE      R2 R0        ; R2 := R0
- 42 [-]: NEWTABLE  R3 0 2       ; R3 := {}
- 43 [-]: GETGLOBAL R4 K4        ; R4 := 0x603636ad
- 44 [-]: LOADK     R5 K11       ; R5 := "/Lotus/Language/Dojo/PaintBotPreviewColours"
- 45 [-]: NEWTABLE  R6 0 0       ; R6 := {}
- 46 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
- 47 [-]: SETTABLE  R3 K3 R4     ; R3["mName"] := R4
- 48 [-]: GETUPVAL  R4 U1        ; R4 := U1
- 49 [-]: GETTABLE  R4 R4 K12    ; R4 := R4["PREVIEW_COLOURS"]
- 50 [-]: SETTABLE  R3 K6 R4     ; R3["mChoice"] := R4
- 51 [-]: CALL      R1 3 1       ; R1(R2,R3)
- 52 [-]: GETGLOBAL R1 K1        ; R1 := 0x33bdd652
- 53 [-]: GETTABLE  R1 R1 K2     ; R1 := R1[0x23d5322f]
- 54 [-]: MOVE      R2 R0        ; R2 := R0
- 55 [-]: NEWTABLE  R3 0 2       ; R3 := {}
- 56 [-]: GETGLOBAL R4 K4        ; R4 := 0x603636ad
- 57 [-]: LOADK     R5 K13       ; R5 := "/Lotus/Language/Dojo/PaintBotChangeColours"
- 58 [-]: NEWTABLE  R6 0 0       ; R6 := {}
- 59 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
- 60 [-]: SETTABLE  R3 K3 R4     ; R3["mName"] := R4
- 61 [-]: GETUPVAL  R4 U1        ; R4 := U1
- 62 [-]: GETTABLE  R4 R4 K14    ; R4 := R4["SET_COLOURS"]
- 63 [-]: SETTABLE  R3 K6 R4     ; R3["mChoice"] := R4
- 64 [-]: CALL      R1 3 1       ; R1(R2,R3)
- 65 [-]: GETGLOBAL R1 K1        ; R1 := 0x33bdd652
- 66 [-]: GETTABLE  R1 R1 K2     ; R1 := R1[0x23d5322f]
- 67 [-]: MOVE      R2 R0        ; R2 := R0
- 68 [-]: NEWTABLE  R3 0 2       ; R3 := {}
- 69 [-]: GETGLOBAL R4 K4        ; R4 := 0x603636ad
- 70 [-]: LOADK     R5 K15       ; R5 := "/Lotus/Language/Dojo/PaintBotChangeLights"
- 71 [-]: NEWTABLE  R6 0 0       ; R6 := {}
- 72 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
- 73 [-]: SETTABLE  R3 K3 R4     ; R3["mName"] := R4
- 74 [-]: GETUPVAL  R4 U1        ; R4 := U1
- 75 [-]: GETTABLE  R4 R4 K16    ; R4 := R4["SET_LIGHTS"]
- 76 [-]: SETTABLE  R3 K6 R4     ; R3["mChoice"] := R4
- 77 [-]: CALL      R1 3 1       ; R1(R2,R3)
- 78 [-]: RETURN    R0 2         ; return R0
- 79 [-]: RETURN    R0 1         ; return 
-
-
-; Function #7.3:
-;
-; Name:            
-; Defined at line: 277
-; #Upvalues:       5
-; #Parameters:     0
-; Is_vararg:       0
-; Max Stack Size:  22
-
-  1 [-]: NEWTABLE  R0 0 0       ; R0 := {}
-  2 [-]: GETGLOBAL R1 K0        ; R1 := _T
-  3 [-]: GETTABLE  R1 R1 K1     ; R1 := R1["changingDojoLights"]
-  4 [-]: TEST      R1 0         ; if not R1 then PC := 60
-  5 [-]: JMP       60           ; PC := 60
-  6 [-]: NEWTABLE  R1 3 0       ; R1 := {}
-  7 [-]: LOADK     R2 K2        ; R2 := "/Lotus/Language/Dojo/PaintBotKeyLights"
-  8 [-]: LOADK     R3 K3        ; R3 := "/Lotus/Language/Dojo/PaintBotAccentLights"
-  9 [-]: LOADK     R4 K4        ; R4 := "/Lotus/Language/Dojo/PaintBotFog"
- 10 [-]: SETLIST   R1 3 1       ; R1[(1-1)*FPF+i] := R(1+i), 1 <= i <= 3
- 11 [-]: GETUPVAL  R2 U0        ; R2 := U0
- 12 [-]: GETUPVAL  R3 U1        ; R3 := U1
- 13 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 14 [-]: CONST     R3 1         ; R3 := 1.000000
- 15 [-]: CONST     R4 3         ; R4 := 3.000000
- 16 [-]: CONST     R5 1         ; R5 := 1.000000
- 17 [-]: FORPREP   R3 44        ; R3 -= R5; PC := 44
- 18 [-]: GETGLOBAL R7 K5        ; R7 := 0x33bdd652
- 19 [-]: GETTABLE  R7 R7 K6     ; R7 := R7[0x23d5322f]
- 20 [-]: MOVE      R8 R0        ; R8 := R0
- 21 [-]: NEWTABLE  R9 0 3       ; R9 := {}
- 22 [-]: GETTABLE  R10 R1 R6    ; R10 := R1[R6]
- 23 [-]: SETTABLE  R9 K7 R10    ; R9["NameTag"] := R10
- 24 [-]: GETGLOBAL R10 K0       ; R10 := _T
- 25 [-]: GETTABLE  R10 R10 K9   ; R10 := R10["DojoMgr"]
- 26 [-]: GETTABLE  R10 R10 K10  ; R10 := R10["TINT_NAMES"]
- 27 [-]: GETTABLE  R10 R10 R6   ; R10 := R10[R6]
- 28 [-]: SETTABLE  R9 K8 R10    ; R9["TintType"] := R10
- 29 [-]: GETGLOBAL R10 K12      ; R10 := 0x03f57322
- 30 [-]: LOADK     R11 K13      ; R11 := "0x"
- 31 [-]: GETUPVAL  R12 U2       ; R12 := U2
- 32 [-]: GETTABLE  R12 R12 K14  ; R12 := R12[0x2d56ab0b]
- 33 [-]: GETTABLE  R13 R2 R6    ; R13 := R2[R6]
- 34 [-]: GETTABLE  R13 R13 K15  ; R13 := R13["red"]
- 35 [-]: GETTABLE  R14 R2 R6    ; R14 := R2[R6]
- 36 [-]: GETTABLE  R14 R14 K16  ; R14 := R14["green"]
- 37 [-]: GETTABLE  R15 R2 R6    ; R15 := R2[R6]
- 38 [-]: GETTABLE  R15 R15 K17  ; R15 := R15["blue"]
- 39 [-]: CALL      R12 4 2      ; R12 := R12(R13,R14,R15)
- 40 [-]: CONCAT    R11 R11 R12  ; R11 := R11 .. R12
- 41 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 42 [-]: SETTABLE  R9 K11 R10   ; R9["InitColor"] := R10
- 43 [-]: CALL      R7 3 1       ; R7(R8,R9)
- 44 [-]: FORLOOP   R3 18        ; R3 += R5; if R3 <= R4 then begin PC := 18; R6 := R3 end
- 45 [-]: GETGLOBAL R7 K0        ; R7 := _T
- 46 [-]: GETTABLE  R7 R7 K9     ; R7 := R7["DojoMgr"]
- 47 [-]: SELF      R7 R7 K18    ; R8 := R7; R7 := R7[0xa38ded0f]
- 48 [-]: GETUPVAL  R9 U3        ; R9 := U3
- 49 [-]: MOVE      R10 R2       ; R10 := R2
- 50 [-]: CALL      R7 4 1       ; R7(R8,R9,R10)
- 51 [-]: GETGLOBAL R7 K0        ; R7 := _T
- 52 [-]: GETTABLE  R7 R7 K9     ; R7 := R7["DojoMgr"]
- 53 [-]: SELF      R7 R7 K19    ; R8 := R7; R7 := R7[0x193134d5]
- 54 [-]: GETUPVAL  R9 U3        ; R9 := U3
- 55 [-]: GETUPVAL  R10 U4       ; R10 := U4
- 56 [-]: GETUPVAL  R11 U1       ; R11 := U1
- 57 [-]: CALL      R10 2 0      ; R10,... := R10(R11)
- 58 [-]: CALL      R7 0 1       ; R7(R8,...)
- 59 [-]: JMP       118          ; PC := 118
- 60 [-]: NEWTABLE  R7 5 0       ; R7 := {}
- 61 [-]: LOADK     R8 K20       ; R8 := "/Lotus/Language/Menu/Arsenal_Primary"
- 62 [-]: LOADK     R9 K21       ; R9 := "/Lotus/Language/Menu/Arsenal_Secondary"
- 63 [-]: LOADK     R10 K22      ; R10 := "/Lotus/Language/Menu/Arsenal_TintColor3"
- 64 [-]: LOADK     R11 K23      ; R11 := "/Lotus/Language/Menu/Arsenal_TintColor4"
- 65 [-]: LOADK     R12 K24      ; R12 := "/Lotus/Language/Menu/TintDojoEnergyColour"
- 66 [-]: SETLIST   R7 5 1       ; R7[(1-1)*FPF+i] := R(7+i), 1 <= i <= 5
- 67 [-]: GETUPVAL  R8 U4        ; R8 := U4
- 68 [-]: GETUPVAL  R9 U1        ; R9 := U1
- 69 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 70 [-]: CONST     R9 1         ; R9 := 1.000000
- 71 [-]: GETGLOBAL R10 K0       ; R10 := _T
- 72 [-]: GETTABLE  R10 R10 K9   ; R10 := R10["DojoMgr"]
- 73 [-]: GETTABLE  R10 R10 K10  ; R10 := R10["TINT_NAMES"]
- 74 [-]: LEN       R10 R10      ; R10 := # R10
- 75 [-]: CONST     R11 1        ; R11 := 1.000000
- 76 [-]: FORPREP   R9 103       ; R9 -= R11; PC := 103
- 77 [-]: GETGLOBAL R13 K5       ; R13 := 0x33bdd652
- 78 [-]: GETTABLE  R13 R13 K6   ; R13 := R13[0x23d5322f]
- 79 [-]: MOVE      R14 R0       ; R14 := R0
- 80 [-]: NEWTABLE  R15 0 3      ; R15 := {}
- 81 [-]: GETTABLE  R16 R7 R12   ; R16 := R7[R12]
- 82 [-]: SETTABLE  R15 K7 R16   ; R15["NameTag"] := R16
- 83 [-]: GETGLOBAL R16 K0       ; R16 := _T
- 84 [-]: GETTABLE  R16 R16 K9   ; R16 := R16["DojoMgr"]
- 85 [-]: GETTABLE  R16 R16 K10  ; R16 := R16["TINT_NAMES"]
- 86 [-]: GETTABLE  R16 R16 R12  ; R16 := R16[R12]
- 87 [-]: SETTABLE  R15 K8 R16   ; R15["TintType"] := R16
- 88 [-]: GETGLOBAL R16 K12      ; R16 := 0x03f57322
- 89 [-]: LOADK     R17 K13      ; R17 := "0x"
- 90 [-]: GETUPVAL  R18 U2       ; R18 := U2
- 91 [-]: GETTABLE  R18 R18 K14  ; R18 := R18[0x2d56ab0b]
- 92 [-]: GETTABLE  R19 R8 R12   ; R19 := R8[R12]
- 93 [-]: GETTABLE  R19 R19 K15  ; R19 := R19["red"]
- 94 [-]: GETTABLE  R20 R8 R12   ; R20 := R8[R12]
- 95 [-]: GETTABLE  R20 R20 K16  ; R20 := R20["green"]
- 96 [-]: GETTABLE  R21 R8 R12   ; R21 := R8[R12]
- 97 [-]: GETTABLE  R21 R21 K17  ; R21 := R21["blue"]
- 98 [-]: CALL      R18 4 2      ; R18 := R18(R19,R20,R21)
- 99 [-]: CONCAT    R17 R17 R18  ; R17 := R17 .. R18
-100 [-]: CALL      R16 2 2      ; R16 := R16(R17)
-101 [-]: SETTABLE  R15 K11 R16  ; R15["InitColor"] := R16
-102 [-]: CALL      R13 3 1      ; R13(R14,R15)
-103 [-]: FORLOOP   R9 77        ; R9 += R11; if R9 <= R10 then begin PC := 77; R12 := R9 end
-104 [-]: GETGLOBAL R13 K0       ; R13 := _T
-105 [-]: GETTABLE  R13 R13 K9   ; R13 := R13["DojoMgr"]
-106 [-]: SELF      R13 R13 K19  ; R14 := R13; R13 := R13[0x193134d5]
-107 [-]: GETUPVAL  R15 U3       ; R15 := U3
-108 [-]: MOVE      R16 R8       ; R16 := R8
-109 [-]: CALL      R13 4 1      ; R13(R14,R15,R16)
-110 [-]: GETGLOBAL R13 K0       ; R13 := _T
-111 [-]: GETTABLE  R13 R13 K9   ; R13 := R13["DojoMgr"]
-112 [-]: SELF      R13 R13 K18  ; R14 := R13; R13 := R13[0xa38ded0f]
-113 [-]: GETUPVAL  R15 U3       ; R15 := U3
-114 [-]: GETUPVAL  R16 U0       ; R16 := U0
-115 [-]: GETUPVAL  R17 U1       ; R17 := U1
-116 [-]: CALL      R16 2 0      ; R16,... := R16(R17)
-117 [-]: CALL      R13 0 1      ; R13(R14,...)
-118 [-]: RETURN    R0 2         ; return R0
-119 [-]: RETURN    R0 1         ; return 
-
-
-; Function #7.4:
-;
-; Name:            
-; Defined at line: 317
-; #Upvalues:       1
-; #Parameters:     2
-; Is_vararg:       0
-; Max Stack Size:  8
-
-  1 [-]: GETGLOBAL R2 K0        ; R2 := _T
-  2 [-]: GETTABLE  R2 R2 K1     ; R2 := R2["DojoMgr"]
-  3 [-]: SELF      R2 R2 K2     ; R3 := R2; R2 := R2[0x208d3ebf]
-  4 [-]: GETUPVAL  R4 U0        ; R4 := U0
-  5 [-]: MOVE      R5 R0        ; R5 := R0
-  6 [-]: GETGLOBAL R6 K3        ; R6 := 0x60130201
-  7 [-]: MOVE      R7 R1        ; R7 := R1
-  8 [-]: CALL      R6 2 0       ; R6,... := R6(R7)
-  9 [-]: CALL      R2 0 1       ; R2(R3,...)
- 10 [-]: RETURN    R0 1         ; return 
-
-
-; Function #7.5:
-;
-; Name:            
-; Defined at line: 323
-; #Upvalues:       1
-; #Parameters:     2
-; Is_vararg:       0
-; Max Stack Size:  8
-
-  1 [-]: GETGLOBAL R2 K0        ; R2 := _T
-  2 [-]: GETTABLE  R2 R2 K1     ; R2 := R2["DojoMgr"]
-  3 [-]: SELF      R2 R2 K2     ; R3 := R2; R2 := R2[0x259d6c9d]
-  4 [-]: GETUPVAL  R4 U0        ; R4 := U0
-  5 [-]: MOVE      R5 R0        ; R5 := R0
-  6 [-]: GETGLOBAL R6 K3        ; R6 := 0x60130201
-  7 [-]: MOVE      R7 R1        ; R7 := R1
-  8 [-]: CALL      R6 2 0       ; R6,... := R6(R7)
-  9 [-]: CALL      R2 0 1       ; R2(R3,...)
- 10 [-]: RETURN    R0 1         ; return 
-
-
-; Function #7.6:
-;
-; Name:            
-; Defined at line: 329
-; #Upvalues:       2
-; #Parameters:     1
-; Is_vararg:       0
-; Max Stack Size:  2
-
-  1 [-]: LOADKB    R1 0 0       ; R1 := false
-  2 [-]: SETUPVAL  R1 U0        ; U82 := R0
-  3 [-]: SETUPVAL  R0 U1        ; U82 := R1
-  4 [-]: RETURN    R0 1         ; return 
 
 

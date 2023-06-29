@@ -1,394 +1,428 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
-; Max Stack Size:  8
+; Is_vararg:       1
+; Max Stack Size:  9
 
-  1 [-]: GETGLOBAL R0 K0        ; R0 := 0x0469f296
-  2 [-]: LOADK     R1 K1        ; R1 := "ZarimanSyndicate"
-  3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: NEWTABLE  R1 6 0       ; R1 := {}
-  5 [-]: NEWTABLE  R2 0 2       ; R2 := {}
-  6 [-]: SETTABLE  R2 K2 K3     ; R2["depth"] := 1.000000
-  7 [-]: SETTABLE  R2 K4 K3     ; R2["metalness"] := 1.000000
-  8 [-]: NEWTABLE  R3 0 2       ; R3 := {}
-  9 [-]: SETTABLE  R3 K2 K5     ; R3["depth"] := 0.800000
- 10 [-]: SETTABLE  R3 K4 K3     ; R3["metalness"] := 1.000000
- 11 [-]: NEWTABLE  R4 0 2       ; R4 := {}
- 12 [-]: SETTABLE  R4 K2 K6     ; R4["depth"] := 0.600000
- 13 [-]: SETTABLE  R4 K4 K3     ; R4["metalness"] := 1.000000
- 14 [-]: NEWTABLE  R5 0 2       ; R5 := {}
- 15 [-]: SETTABLE  R5 K2 K7     ; R5["depth"] := 0.400000
- 16 [-]: SETTABLE  R5 K4 K3     ; R5["metalness"] := 1.000000
- 17 [-]: NEWTABLE  R6 0 2       ; R6 := {}
- 18 [-]: SETTABLE  R6 K2 K8     ; R6["depth"] := 0.200000
- 19 [-]: SETTABLE  R6 K4 K3     ; R6["metalness"] := 1.000000
- 20 [-]: NEWTABLE  R7 0 2       ; R7 := {}
- 21 [-]: SETTABLE  R7 K2 K9     ; R7["depth"] := 0.000000
- 22 [-]: SETTABLE  R7 K4 K9     ; R7["metalness"] := 0.000000
- 23 [-]: SETLIST   R1 6 1       ; R1[(1-1)*FPF+i] := R(1+i), 1 <= i <= 6
- 24 [-]: CLOSURE   R2 0         ; R2 := closure(Function #1)
- 25 [-]: MOVE      R0 R1        ; R0 := R1
- 26 [-]: CLOSURE   R3 1         ; R3 := closure(Function #2)
- 27 [-]: MOVE      R0 R0        ; R0 := R0
- 28 [-]: MOVE      R0 R1        ; R0 := R1
- 29 [-]: MOVE      R0 R2        ; R0 := R2
- 30 [-]: SETGLOBAL R3 K10       ; ApplySyndicateBlendingToNpcs := R3
- 31 [-]: CLOSURE   R3 2         ; R3 := closure(Function #3)
- 32 [-]: MOVE      R0 R1        ; R0 := R1
- 33 [-]: MOVE      R0 R2        ; R0 := R2
- 34 [-]: SETGLOBAL R3 K11       ; CycleSyndicateBlendingStages := R3
- 35 [-]: CLOSURE   R3 3         ; R3 := closure(Function #4)
- 36 [-]: MOVE      R0 R0        ; R0 := R0
- 37 [-]: MOVE      R0 R1        ; R0 := R1
- 38 [-]: MOVE      R0 R2        ; R0 := R2
- 39 [-]: SETGLOBAL R3 K12       ; FactionDiorama := R3
- 40 [-]: CLOSURE   R3 4         ; R3 := closure(Function #5)
- 41 [-]: MOVE      R0 R0        ; R0 := R0
- 42 [-]: MOVE      R0 R1        ; R0 := R1
- 43 [-]: SETGLOBAL R3 K13       ; FactionDioramaTransmission := R3
- 44 [-]: RETURN    R0 1         ; return 
+            1 [-]: GETIMPORT R0 1 [nil]
+       2 [-]: LOADK R1 K2 ["ZarimanSyndicate"]
+       3 [-]: CALL R0 1 1  
+       4 [-]: NEWTABLE R1 0 6
+       5 [-]: DUPTABLE R2 5
+       6 [-]: LOADN R3 1   
+       7 [-]: SETTABLEKS R3 R2 K3 ["depth"]
+       8 [-]: LOADN R3 1   
+       9 [-]: SETTABLEKS R3 R2 K4 ["metalness"]
+      10 [-]: DUPTABLE R3 5
+      11 [-]: LOADK R4 K6 [0.80000000000000004]
+      12 [-]: SETTABLEKS R4 R3 K3 ["depth"]
+      13 [-]: LOADN R4 1   
+      14 [-]: SETTABLEKS R4 R3 K4 ["metalness"]
+      15 [-]: DUPTABLE R4 5
+      16 [-]: LOADK R5 K7 [0.59999999999999998]
+      17 [-]: SETTABLEKS R5 R4 K3 ["depth"]
+      18 [-]: LOADN R5 1   
+      19 [-]: SETTABLEKS R5 R4 K4 ["metalness"]
+      20 [-]: DUPTABLE R5 5
+      21 [-]: LOADK R6 K8 [0.40000000000000002]
+      22 [-]: SETTABLEKS R6 R5 K3 ["depth"]
+      23 [-]: LOADN R6 1   
+      24 [-]: SETTABLEKS R6 R5 K4 ["metalness"]
+      25 [-]: DUPTABLE R6 5
+      26 [-]: LOADK R7 K9 [0.20000000000000001]
+      27 [-]: SETTABLEKS R7 R6 K3 ["depth"]
+      28 [-]: LOADN R7 1   
+      29 [-]: SETTABLEKS R7 R6 K4 ["metalness"]
+      30 [-]: DUPTABLE R7 5
+      31 [-]: LOADN R8 0   
+      32 [-]: SETTABLEKS R8 R7 K3 ["depth"]
+      33 [-]: LOADN R8 0   
+      34 [-]: SETTABLEKS R8 R7 K4 ["metalness"]
+      35 [-]: SETLIST R1 R2 6 [1]
+      36 [-]: DUPCLOSURE R2 K10 []
+      37 [-]: MOVE R0 R1   
+      38 [-]: DUPCLOSURE R3 K11 []
+      39 [-]: MOVE R0 R0   
+      40 [-]: MOVE R0 R1   
+      41 [-]: SETGLOBAL R3 K12 ["ApplySyndicateBlendingToNpcs"]
+      42 [-]: DUPCLOSURE R3 K13 []
+      43 [-]: MOVE R0 R1   
+      44 [-]: SETGLOBAL R3 K14 ["CycleSyndicateBlendingStages"]
+      45 [-]: DUPCLOSURE R3 K15 []
+      46 [-]: MOVE R0 R0   
+      47 [-]: MOVE R0 R1   
+      48 [-]: SETGLOBAL R3 K16 ["FactionDiorama"]
+      49 [-]: DUPCLOSURE R3 K17 []
+      50 [-]: MOVE R0 R1   
+      51 [-]: SETGLOBAL R3 K18 ["FactionDioramaTransmission"]
+      52 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 13
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
-; Max Stack Size:  9
+; Max Stack Size:  8
 
-  1 [-]: GETGLOBAL R2 K0        ; R2 := 0x7b998233
-  2 [-]: MOVE      R3 R0        ; R3 := R0
-  3 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  4 [-]: TEST      R2 1         ; if R2 then PC := 22
-  5 [-]: JMP       22           ; PC := 22
-  6 [-]: GETUPVAL  R2 U0        ; R2 := U0
-  7 [-]: GETTABLE  R2 R2 R1     ; R2 := R2[R1]
-  8 [-]: LOADK     R3 K1        ; R3 := 0.150000
-  9 [-]: SELF      R4 R0 K2     ; R5 := R0; R4 := R0[0x986d2ab8]
- 10 [-]: GETGLOBAL R6 K3        ; R6 := 0x0469f296
- 11 [-]: LOADK     R7 K4        ; R7 := "HeightMapDepth_HeightMapThreshold"
- 12 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 13 [-]: GETTABLE  R7 R2 K5     ; R7 := R2["depth"]
- 14 [-]: MOVE      R8 R3        ; R8 := R3
- 15 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
- 16 [-]: SELF      R4 R0 K2     ; R5 := R0; R4 := R0[0x986d2ab8]
- 17 [-]: GETGLOBAL R6 K3        ; R6 := 0x0469f296
- 18 [-]: LOADK     R7 K6        ; R7 := "HeightMapMetalness"
- 19 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 20 [-]: GETTABLE  R7 R2 K7     ; R7 := R2["metalness"]
- 21 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
- 22 [-]: RETURN    R0 1         ; return 
+       0 [-]: FASTCALL1 62 R0 L0
+       1 [-]: MOVE R3 R0   
+       2 [-]: GETIMPORT R2 1 [nil]
+       3 [-]: CALL R2 1 1  
+L 0:   4 [-]: JUMPIF R2 L1 
+       5 [-]: GETUPVAL R3 0
+       6 [-]: GETTABLE R2 R3 R1
+       7 [-]: GETIMPORT R5 3 [nil]
+       8 [-]: LOADK R6 K4 ["HeightMapDepth_HeightMapThreshold"]
+       9 [-]: CALL R5 1 1  
+      10 [-]: GETTABLEKS R6 R2 K5 ["depth"]
+      11 [-]: LOADK R7 K6 [0.14999999999999999]
+      12 [-]: NAMECALL R3 R0 K7 [0x986D2AB8]
+      13 [-]: CALL R3 4 0  
+      14 [-]: GETIMPORT R5 3 [nil]
+      15 [-]: LOADK R6 K8 ["HeightMapMetalness"]
+      16 [-]: CALL R5 1 1  
+      17 [-]: GETTABLEKS R6 R2 K9 ["metalness"]
+      18 [-]: NAMECALL R3 R0 K7 [0x986D2AB8]
+      19 [-]: CALL R3 3 0  
+L 1:  20 [-]: RETURN R0 0  
 
 
-; Function #2:
-;
 ; Name:            
 ; Defined at line: 22
-; #Upvalues:       3
+; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
-; Max Stack Size:  10
+; Max Stack Size:  12
 
-  1 [-]: GETGLOBAL R0 K0        ; R0 := 0x7b998233
-  2 [-]: GETGLOBAL R1 K1        ; R1 := 0x25d99d89
-  3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: TEST      R0 1         ; if R0 then PC := 36
-  5 [-]: JMP       36           ; PC := 36
-  6 [-]: GETGLOBAL R0 K1        ; R0 := 0x25d99d89
-  7 [-]: SELF      R0 R0 K2     ; R1 := R0; R0 := R0[0xa4d581dc]
-  8 [-]: GETUPVAL  R2 U0        ; R2 := U0
-  9 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
- 10 [-]: GETGLOBAL R1 K3        ; R1 := 0x5bced4c4
- 11 [-]: GETTABLE  R1 R1 K4     ; R1 := R1[0xb62ecfe0]
- 12 [-]: CONST     R2 1         ; R2 := 1.000000
- 13 [-]: GETGLOBAL R3 K3        ; R3 := 0x5bced4c4
- 14 [-]: GETTABLE  R3 R3 K5     ; R3 := R3[0xac1b386a]
- 15 [-]: GETTABLE  R4 R0 K6     ; R4 := R0["mTitle"]
- 16 [-]: ADD       R4 R4 K7     ; R4 := R4 + 1.000000
- 17 [-]: GETUPVAL  R5 U1        ; R5 := U1
- 18 [-]: LEN       R5 R5        ; R5 := # R5
- 19 [-]: CALL      R3 3 0       ; R3,... := R3(R4,R5)
- 20 [-]: CALL      R1 0 2       ; R1 := R1(R2,...)
- 21 [-]: CONST     R2 1         ; R2 := 1.000000
- 22 [-]: GETGLOBAL R3 K8        ; R3 := 0x30172ea5
- 23 [-]: LEN       R3 R3        ; R3 := # R3
- 24 [-]: CONST     R4 1         ; R4 := 1.000000
- 25 [-]: FORPREP   R2 34        ; R2 -= R4; PC := 34
- 26 [-]: GETUPVAL  R6 U2        ; R6 := U2
- 27 [-]: GETGLOBAL R7 K9        ; R7 := 0x89326c93
- 28 [-]: SELF      R7 R7 K10    ; R8 := R7; R7 := R7[0x46a0ebf5]
- 29 [-]: GETGLOBAL R9 K8        ; R9 := 0x30172ea5
- 30 [-]: GETTABLE  R9 R9 R5     ; R9 := R9[R5]
- 31 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
- 32 [-]: MOVE      R8 R1        ; R8 := R1
- 33 [-]: CALL      R6 3 1       ; R6(R7,R8)
- 34 [-]: FORLOOP   R2 26        ; R2 += R4; if R2 <= R3 then begin PC := 26; R5 := R2 end
- 35 [-]: JMP       39           ; PC := 39
- 36 [-]: GETGLOBAL R6 K11       ; R6 := 0x3d106989
- 37 [-]: LOADK     R7 K12       ; R7 := "Warning: No game data for blending"
- 38 [-]: CALL      R6 2 1       ; R6(R7)
- 39 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R1 1 [nil]
+       1 [-]: FASTCALL1 62 R1 L0
+       2 [-]: GETIMPORT R0 3 [nil]
+       3 [-]: CALL R0 1 1  
+L 0:   4 [-]: JUMPIF R0 L6 
+       5 [-]: GETIMPORT R0 1 [nil]
+       6 [-]: GETUPVAL R2 0
+       7 [-]: NAMECALL R0 R0 K4 [0xA4D581DC]
+       8 [-]: CALL R0 2 1  
+       9 [-]: LOADN R2 1   
+      10 [-]: GETTABLEKS R5 R0 K6 ["mTitle"]
+      11 [-]: ADDK R4 R5 K5 [1]
+      12 [-]: GETUPVAL R6 1
+      13 [-]: LENGTH R5 R6 
+      14 [-]: FASTCALL2 19 R4 R5 L1
+      15 [-]: GETIMPORT R3 9 [nil]
+      16 [-]: CALL R3 2 -1 
+L 1:  17 [-]: FASTCALL 18 L2
+      18 [-]: GETIMPORT R1 11 [nil]
+      19 [-]: CALL R1 -1 1 
+L 2:  20 [-]: LOADN R4 1   
+      21 [-]: GETIMPORT R5 13 [nil]
+      22 [-]: LENGTH R2 R5 
+      23 [-]: LOADN R3 1   
+      24 [-]: FORNPREP R2 L7
+L 3:  25 [-]: GETIMPORT R5 15 [nil]
+      26 [-]: GETIMPORT R8 13 [nil]
+      27 [-]: GETTABLE R7 R8 R4
+      28 [-]: NAMECALL R5 R5 K16 [0x46A0EBF5]
+      29 [-]: CALL R5 2 1  
+      30 [-]: FASTCALL1 62 R5 L4
+      31 [-]: MOVE R7 R5   
+      32 [-]: GETIMPORT R6 3 [nil]
+      33 [-]: CALL R6 1 1  
+L 4:  34 [-]: JUMPIF R6 L5 
+      35 [-]: GETUPVAL R7 1
+      36 [-]: GETTABLE R6 R7 R1
+      37 [-]: GETIMPORT R9 18 [nil]
+      38 [-]: LOADK R10 K19 ["HeightMapDepth_HeightMapThreshold"]
+      39 [-]: CALL R9 1 1  
+      40 [-]: GETTABLEKS R10 R6 K20 ["depth"]
+      41 [-]: LOADK R11 K21 [0.14999999999999999]
+      42 [-]: NAMECALL R7 R5 K22 [0x986D2AB8]
+      43 [-]: CALL R7 4 0  
+      44 [-]: GETIMPORT R9 18 [nil]
+      45 [-]: LOADK R10 K23 ["HeightMapMetalness"]
+      46 [-]: CALL R9 1 1  
+      47 [-]: GETTABLEKS R10 R6 K24 ["metalness"]
+      48 [-]: NAMECALL R7 R5 K22 [0x986D2AB8]
+      49 [-]: CALL R7 3 0  
+L 5:  50 [-]: FORNLOOP R2 L3
+      51 [-]: RETURN R0 0  
+L 6:  52 [-]: GETIMPORT R0 26 [nil]
+      53 [-]: LOADK R1 K27 ["Warning: No game data for blending"]
+      54 [-]: CALL R0 1 0  
+L 7:  55 [-]: RETURN R0 0  
 
 
-; Function #3:
-;
 ; Name:            
 ; Defined at line: 34
-; #Upvalues:       2
+; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
-; Max Stack Size:  10
+; Max Stack Size:  14
 
-  1 [-]: GETGLOBAL R0 K0        ; R0 := 0x7b998233
-  2 [-]: GETGLOBAL R1 K1        ; R1 := _T
-  3 [-]: GETTABLE  R1 R1 K2     ; R1 := R1["ZarimanFaceBlendStage"]
-  4 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  5 [-]: TEST      R0 0         ; if not R0 then PC := 10
-  6 [-]: JMP       10           ; PC := 10
-  7 [-]: GETGLOBAL R0 K1        ; R0 := _T
-  8 [-]: SETTABLE  R0 K2 K3     ; R0["ZarimanFaceBlendStage"] := 1.000000
-  9 [-]: JMP       27           ; PC := 27
- 10 [-]: GETGLOBAL R0 K1        ; R0 := _T
- 11 [-]: GETGLOBAL R1 K1        ; R1 := _T
- 12 [-]: GETTABLE  R1 R1 K2     ; R1 := R1["ZarimanFaceBlendStage"]
- 13 [-]: ADD       R1 R1 K3     ; R1 := R1 + 1.000000
- 14 [-]: SETTABLE  R0 K2 R1     ; R0["ZarimanFaceBlendStage"] := R1
- 15 [-]: GETGLOBAL R0 K1        ; R0 := _T
- 16 [-]: GETTABLE  R0 R0 K2     ; R0 := R0["ZarimanFaceBlendStage"]
- 17 [-]: GETUPVAL  R1 U0        ; R1 := U0
- 18 [-]: LEN       R1 R1        ; R1 := # R1
- 19 [-]: LT        1 R1 R0      ; if R1 < R0 then PC := 25
- 20 [-]: JMP       25           ; PC := 25
- 21 [-]: GETGLOBAL R0 K1        ; R0 := _T
- 22 [-]: GETTABLE  R0 R0 K2     ; R0 := R0["ZarimanFaceBlendStage"]
- 23 [-]: LT        0 R0 K3      ; if R0 >= 1.000000 then PC := 27
- 24 [-]: JMP       27           ; PC := 27
- 25 [-]: GETGLOBAL R0 K1        ; R0 := _T
- 26 [-]: SETTABLE  R0 K2 K3     ; R0["ZarimanFaceBlendStage"] := 1.000000
- 27 [-]: NEWTABLE  R0 3 0       ; R0 := {}
- 28 [-]: GETGLOBAL R1 K4        ; R1 := 0x0469f296
- 29 [-]: LOADK     R2 K5        ; R2 := "ZarimanQuestGiverNpc"
- 30 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 31 [-]: GETGLOBAL R2 K4        ; R2 := 0x0469f296
- 32 [-]: LOADK     R3 K6        ; R3 := "ZarimanArchimedeanNpc"
- 33 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 34 [-]: GETGLOBAL R3 K4        ; R3 := 0x0469f296
- 35 [-]: LOADK     R4 K7        ; R4 := "ZarimanWeaponsNpc"
- 36 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 37 [-]: GETGLOBAL R4 K4        ; R4 := 0x0469f296
- 38 [-]: LOADK     R5 K8        ; R5 := "ZarimanCosmeticsNpc"
- 39 [-]: CALL      R4 2 0       ; R4,... := R4(R5)
- 40 [-]: SETLIST   R0 0 1       ; R0[(1-1)*FPF+i] := R(0+i), 1 <= i <= 0
- 41 [-]: GETGLOBAL R1 K9        ; R1 := 0xc8802016
- 42 [-]: MOVE      R2 R0        ; R2 := R0
- 43 [-]: CALL      R1 2 4       ; R1,R2,R3 := R1(R2)
- 44 [-]: JMP       69           ; PC := 69
- 45 [-]: GETGLOBAL R6 K10       ; R6 := 0x89326c93
- 46 [-]: SELF      R6 R6 K11    ; R7 := R6; R6 := R6[0x46a0ebf5]
- 47 [-]: MOVE      R8 R5        ; R8 := R5
- 48 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
- 49 [-]: GETGLOBAL R7 K0        ; R7 := 0x7b998233
- 50 [-]: MOVE      R8 R6        ; R8 := R6
- 51 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 52 [-]: TEST      R7 1         ; if R7 then PC := 69
- 53 [-]: JMP       69           ; PC := 69
- 54 [-]: SELF      R7 R6 K12    ; R8 := R6; R7 := R6[0xf2deaf69]
- 55 [-]: GETGLOBAL R9 K13       ; R9 := gLotusHubNpcEntityType
- 56 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
- 57 [-]: TEST      R7 0         ; if not R7 then PC := 64
- 58 [-]: JMP       64           ; PC := 64
- 59 [-]: SELF      R7 R6 K14    ; R8 := R6; R7 := R6[0x8eb2112d]
- 60 [-]: LOADK     R9 K15       ; R9 := "Show"
- 61 [-]: CALL      R7 3 1       ; R7(R8,R9)
- 62 [-]: SELF      R7 R6 K16    ; R8 := R6; R7 := R6[0x383d2e7d]
- 63 [-]: CALL      R7 2 1       ; R7(R8)
- 64 [-]: GETUPVAL  R7 U1        ; R7 := U1
- 65 [-]: MOVE      R8 R6        ; R8 := R6
- 66 [-]: GETGLOBAL R9 K1        ; R9 := _T
- 67 [-]: GETTABLE  R9 R9 K2     ; R9 := R9["ZarimanFaceBlendStage"]
- 68 [-]: CALL      R7 3 1       ; R7(R8,R9)
- 69 [-]: TFORLOOP  R1 2         ; R4,R5 :=  R1(R2,R3); if R4 ~= nil then begin PC = 45; R3 := R4 end
- 70 [-]: JMP       45           ; PC := 45
- 71 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R1 2 [nil]
+       1 [-]: FASTCALL1 62 R1 L0
+       2 [-]: GETIMPORT R0 4 [nil]
+       3 [-]: CALL R0 1 1  
+L 0:   4 [-]: JUMPIFNOT R0 L1
+       5 [-]: GETIMPORT R0 5 [nil]
+       6 [-]: LOADN R1 1   
+       7 [-]: SETTABLEKS R1 R0 K1 ["ZarimanFaceBlendStage"]
+       8 [-]: JUMP L3
+     
+L 1:   9 [-]: GETIMPORT R0 5 [nil]
+      10 [-]: GETIMPORT R2 2 [nil]
+      11 [-]: ADDK R1 R2 K6 [1]
+      12 [-]: SETTABLEKS R1 R0 K1 ["ZarimanFaceBlendStage"]
+      13 [-]: GETIMPORT R0 2 [nil]
+      14 [-]: GETUPVAL R2 0
+      15 [-]: LENGTH R1 R2 
+      16 [-]: JUMPIFLT R1 R0 L2
+      17 [-]: GETIMPORT R0 2 [nil]
+      18 [-]: LOADN R1 1   
+      19 [-]: JUMPIFNOTLT R0 R1 L3
+L 2:  20 [-]: GETIMPORT R0 5 [nil]
+      21 [-]: LOADN R1 1   
+      22 [-]: SETTABLEKS R1 R0 K1 ["ZarimanFaceBlendStage"]
+L 3:  23 [-]: NEWTABLE R0 0 4
+      24 [-]: GETIMPORT R1 8 [nil]
+      25 [-]: LOADK R2 K9 ["ZarimanQuestGiverNpc"]
+      26 [-]: CALL R1 1 1  
+      27 [-]: GETIMPORT R2 8 [nil]
+      28 [-]: LOADK R3 K10 ["ZarimanArchimedeanNpc"]
+      29 [-]: CALL R2 1 1  
+      30 [-]: GETIMPORT R3 8 [nil]
+      31 [-]: LOADK R4 K11 ["ZarimanWeaponsNpc"]
+      32 [-]: CALL R3 1 1  
+      33 [-]: GETIMPORT R4 8 [nil]
+      34 [-]: LOADK R5 K12 ["ZarimanCosmeticsNpc"]
+      35 [-]: CALL R4 1 -1 
+      36 [-]: SETLIST R0 R1 -1 [1]
+      37 [-]: GETIMPORT R1 14 [nil]
+      38 [-]: MOVE R2 R0   
+      39 [-]: CALL R1 1 3  
+      40 [-]: FORGPREP_INEXT R1 L8
+L 4:  41 [-]: GETIMPORT R6 16 [nil]
+      42 [-]: MOVE R8 R5   
+      43 [-]: NAMECALL R6 R6 K17 [0x46A0EBF5]
+      44 [-]: CALL R6 2 1  
+      45 [-]: FASTCALL1 62 R6 L5
+      46 [-]: MOVE R8 R6   
+      47 [-]: GETIMPORT R7 4 [nil]
+      48 [-]: CALL R7 1 1  
+L 5:  49 [-]: JUMPIF R7 L8 
+      50 [-]: GETIMPORT R9 19 [nil]
+      51 [-]: NAMECALL R7 R6 K20 [0xF2DEAF69]
+      52 [-]: CALL R7 2 1  
+      53 [-]: JUMPIFNOT R7 L6
+      54 [-]: LOADK R9 K21 ["Show"]
+      55 [-]: NAMECALL R7 R6 K22 [0x8EB2112D]
+      56 [-]: CALL R7 2 0  
+      57 [-]: NAMECALL R7 R6 K23 [0x383D2E7D]
+      58 [-]: CALL R7 1 0  
+L 6:  59 [-]: GETIMPORT R7 2 [nil]
+      60 [-]: FASTCALL1 62 R6 L7
+      61 [-]: MOVE R9 R6   
+      62 [-]: GETIMPORT R8 4 [nil]
+      63 [-]: CALL R8 1 1  
+L 7:  64 [-]: JUMPIF R8 L8 
+      65 [-]: GETUPVAL R9 0
+      66 [-]: GETTABLE R8 R9 R7
+      67 [-]: GETIMPORT R11 8 [nil]
+      68 [-]: LOADK R12 K24 ["HeightMapDepth_HeightMapThreshold"]
+      69 [-]: CALL R11 1 1 
+      70 [-]: GETTABLEKS R12 R8 K25 ["depth"]
+      71 [-]: LOADK R13 K26 [0.14999999999999999]
+      72 [-]: NAMECALL R9 R6 K27 [0x986D2AB8]
+      73 [-]: CALL R9 4 0  
+      74 [-]: GETIMPORT R11 8 [nil]
+      75 [-]: LOADK R12 K28 ["HeightMapMetalness"]
+      76 [-]: CALL R11 1 1 
+      77 [-]: GETTABLEKS R12 R8 K29 ["metalness"]
+      78 [-]: NAMECALL R9 R6 K27 [0x986D2AB8]
+      79 [-]: CALL R9 3 0  
+L 8:  80 [-]: FORGLOOP R1 L4 2 [inext]
+      81 [-]: RETURN R0 0  
 
 
-; Function #4:
-;
 ; Name:            
 ; Defined at line: 57
-; #Upvalues:       3
-; #Parameters:     1
-; Is_vararg:       0
-; Max Stack Size:  7
-
-  1 [-]: GETGLOBAL R1 K0        ; R1 := 0x7b998233
-  2 [-]: GETGLOBAL R2 K1        ; R2 := 0x25d99d89
-  3 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  4 [-]: TEST      R1 0         ; if not R1 then PC := 10
-  5 [-]: JMP       10           ; PC := 10
-  6 [-]: GETGLOBAL R1 K2        ; R1 := 0xcbd666e1
-  7 [-]: CONST     R2 0         ; R2 := 0.000000
-  8 [-]: CALL      R1 2 1       ; R1(R2)
-  9 [-]: JMP       1            ; PC := 1
- 10 [-]: GETGLOBAL R1 K0        ; R1 := 0x7b998233
- 11 [-]: GETGLOBAL R2 K1        ; R2 := 0x25d99d89
- 12 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 13 [-]: TEST      R1 1         ; if R1 then PC := 34
- 14 [-]: JMP       34           ; PC := 34
- 15 [-]: GETGLOBAL R1 K1        ; R1 := 0x25d99d89
- 16 [-]: SELF      R1 R1 K3     ; R2 := R1; R1 := R1[0xa4d581dc]
- 17 [-]: GETUPVAL  R3 U0        ; R3 := U0
- 18 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
- 19 [-]: GETGLOBAL R2 K4        ; R2 := 0x5bced4c4
- 20 [-]: GETTABLE  R2 R2 K5     ; R2 := R2[0xb62ecfe0]
- 21 [-]: CONST     R3 1         ; R3 := 1.000000
- 22 [-]: GETGLOBAL R4 K4        ; R4 := 0x5bced4c4
- 23 [-]: GETTABLE  R4 R4 K6     ; R4 := R4[0xac1b386a]
- 24 [-]: GETTABLE  R5 R1 K7     ; R5 := R1["mTitle"]
- 25 [-]: ADD       R5 R5 K8     ; R5 := R5 + 1.000000
- 26 [-]: GETUPVAL  R6 U1        ; R6 := U1
- 27 [-]: LEN       R6 R6        ; R6 := # R6
- 28 [-]: CALL      R4 3 0       ; R4,... := R4(R5,R6)
- 29 [-]: CALL      R2 0 2       ; R2 := R2(R3,...)
- 30 [-]: GETUPVAL  R3 U2        ; R3 := U2
- 31 [-]: MOVE      R4 R0        ; R4 := R0
- 32 [-]: MOVE      R5 R2        ; R5 := R2
- 33 [-]: CALL      R3 3 1       ; R3(R4,R5)
- 34 [-]: RETURN    R0 1         ; return 
-
-
-; Function #5:
-;
-; Name:            
-; Defined at line: 68
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  16
+; Max Stack Size:  9
 
-  1 [-]: GETGLOBAL R1 K0        ; R1 := 0x7b998233
-  2 [-]: GETGLOBAL R2 K1        ; R2 := 0x25d99d89
-  3 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  4 [-]: TEST      R1 0         ; if not R1 then PC := 10
-  5 [-]: JMP       10           ; PC := 10
-  6 [-]: GETGLOBAL R1 K2        ; R1 := 0xcbd666e1
-  7 [-]: CONST     R2 0         ; R2 := 0.000000
-  8 [-]: CALL      R1 2 1       ; R1(R2)
-  9 [-]: JMP       1            ; PC := 1
- 10 [-]: GETGLOBAL R1 K3        ; R1 := 0x78ca68a2
- 11 [-]: CONST     R2 0         ; R2 := 0.000000
- 12 [-]: LOADK     R3 K4        ; R3 := 0.300000
- 13 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
- 14 [-]: LOADK     R2 K4        ; R2 := 0.300000
- 15 [-]: GETGLOBAL R3 K0        ; R3 := 0x7b998233
- 16 [-]: GETGLOBAL R4 K1        ; R4 := 0x25d99d89
- 17 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 18 [-]: TEST      R3 1         ; if R3 then PC := 118
- 19 [-]: JMP       118          ; PC := 118
- 20 [-]: GETGLOBAL R3 K1        ; R3 := 0x25d99d89
- 21 [-]: SELF      R3 R3 K5     ; R4 := R3; R3 := R3[0xa4d581dc]
- 22 [-]: GETUPVAL  R5 U0        ; R5 := U0
- 23 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
- 24 [-]: CONST     R4 1         ; R4 := 1.000000
- 25 [-]: GETGLOBAL R5 K0        ; R5 := 0x7b998233
- 26 [-]: MOVE      R6 R0        ; R6 := R0
- 27 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 28 [-]: TEST      R5 1         ; if R5 then PC := 118
- 29 [-]: JMP       118          ; PC := 118
- 30 [-]: GETUPVAL  R5 U1        ; R5 := U1
- 31 [-]: GETTABLE  R5 R5 R4     ; R5 := R5[R4]
- 32 [-]: NEWTABLE  R6 0 2       ; R6 := {}
- 33 [-]: GETGLOBAL R7 K7        ; R7 := 0x42dcc9f5
- 34 [-]: GETTABLE  R8 R5 K6     ; R8 := R5["depth"]
- 35 [-]: ADD       R8 R8 K4     ; R8 := R8 + 0.300000
- 36 [-]: CONST     R9 0         ; R9 := 0.000000
- 37 [-]: CONST     R10 1        ; R10 := 1.000000
- 38 [-]: CALL      R7 4 2       ; R7 := R7(R8,R9,R10)
- 39 [-]: SETTABLE  R6 K6 R7     ; R6["depth"] := R7
- 40 [-]: SETTABLE  R6 K8 K9     ; R6["metalness"] := 1.000000
- 41 [-]: EQ        0 R4 K9      ; if R4 ~= 1.000000 then PC := 45
- 42 [-]: JMP       45           ; PC := 45
- 43 [-]: SETTABLE  R5 K6 K10    ; R5["depth"] := 0.700000
- 44 [-]: SETTABLE  R6 K6 K9     ; R6["depth"] := 1.000000
- 45 [-]: CONST     R7 0         ; R7 := 0.000000
- 46 [-]: LT        0 R7 K9      ; if R7 >= 1.000000 then PC := 118
- 47 [-]: JMP       118          ; PC := 118
- 48 [-]: GETGLOBAL R8 K0        ; R8 := 0x7b998233
- 49 [-]: MOVE      R9 R0        ; R9 := R0
- 50 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 51 [-]: TEST      R8 1         ; if R8 then PC := 118
- 52 [-]: JMP       118          ; PC := 118
- 53 [-]: GETGLOBAL R8 K7        ; R8 := 0x42dcc9f5
- 54 [-]: GETGLOBAL R9 K11       ; R9 := 0x67652851
- 55 [-]: CALL      R9 1 2       ; R9 := R9()
- 56 [-]: MUL       R9 R9 K12    ; R9 := R9 * 0.010000
- 57 [-]: ADD       R9 R7 R9     ; R9 := R7 + R9
- 58 [-]: CONST     R10 0        ; R10 := 0.000000
- 59 [-]: CONST     R11 1        ; R11 := 1.000000
- 60 [-]: CALL      R8 4 2       ; R8 := R8(R9,R10,R11)
- 61 [-]: MOVE      R7 R8        ; R7 := R8
- 62 [-]: CONST     R8 1         ; R8 := 1.000000
- 63 [-]: GETGLOBAL R9 K0        ; R9 := 0x7b998233
- 64 [-]: GETGLOBAL R10 K13      ; R10 := _T
- 65 [-]: GETTABLE  R10 R10 K14  ; R10 := R10["TransmissionSoundInstance"]
- 66 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 67 [-]: TEST      R9 1         ; if R9 then PC := 77
- 68 [-]: JMP       77           ; PC := 77
- 69 [-]: GETGLOBAL R9 K15       ; R9 := 0x5bced4c4
- 70 [-]: GETTABLE  R9 R9 K16    ; R9 := R9[0x34e9f45c]
- 71 [-]: GETGLOBAL R10 K13      ; R10 := _T
- 72 [-]: GETTABLE  R10 R10 K14  ; R10 := R10["TransmissionSoundInstance"]
- 73 [-]: SELF      R10 R10 K17  ; R11 := R10; R10 := R10[0xdae5bcb5]
- 74 [-]: CALL      R10 2 0      ; R10,... := R10(R11)
- 75 [-]: CALL      R9 0 2       ; R9 := R9(R10,...)
- 76 [-]: MOVE      R8 R9        ; R8 := R9
- 77 [-]: SELF      R9 R1 K18    ; R10 := R1; R9 := R1[0x188e2bee]
- 78 [-]: MOVE      R11 R8       ; R11 := R8
- 79 [-]: CALL      R9 3 1       ; R9(R10,R11)
- 80 [-]: SELF      R9 R1 K19    ; R10 := R1; R9 := R1[0xfaa69527]
- 81 [-]: GETGLOBAL R11 K11      ; R11 := 0x67652851
- 82 [-]: CALL      R11 1 0      ; R11,... := R11()
- 83 [-]: CALL      R9 0 1       ; R9(R10,...)
- 84 [-]: GETGLOBAL R9 K7        ; R9 := 0x42dcc9f5
- 85 [-]: GETGLOBAL R10 K20      ; R10 := 0xa533083a
- 86 [-]: SELF      R11 R1 K21   ; R12 := R1; R11 := R1[0x54ab95f9]
- 87 [-]: CALL      R11 2 0      ; R11,... := R11(R12)
- 88 [-]: CALL      R10 0 2      ; R10 := R10(R11,...)
- 89 [-]: CONST     R11 0        ; R11 := 0.000000
- 90 [-]: CONST     R12 1        ; R12 := 1.000000
- 91 [-]: CALL      R9 4 2       ; R9 := R9(R10,R11,R12)
- 92 [-]: MOVE      R8 R9        ; R8 := R9
- 93 [-]: SELF      R9 R0 K22    ; R10 := R0; R9 := R0[0x986d2ab8]
- 94 [-]: GETGLOBAL R11 K23      ; R11 := 0x0469f296
- 95 [-]: LOADK     R12 K24      ; R12 := "HeightMapDepth_HeightMapThreshold"
- 96 [-]: CALL      R11 2 2      ; R11 := R11(R12)
- 97 [-]: GETGLOBAL R12 K25      ; R12 := 0x9bafffe3
- 98 [-]: GETTABLE  R13 R6 K6    ; R13 := R6["depth"]
- 99 [-]: GETTABLE  R14 R5 K6    ; R14 := R5["depth"]
-100 [-]: MOVE      R15 R8       ; R15 := R8
-101 [-]: CALL      R12 4 2      ; R12 := R12(R13,R14,R15)
-102 [-]: MOVE      R13 R2       ; R13 := R2
-103 [-]: CALL      R9 5 1       ; R9(R10,R11,R12,R13)
-104 [-]: SELF      R9 R0 K22    ; R10 := R0; R9 := R0[0x986d2ab8]
-105 [-]: GETGLOBAL R11 K23      ; R11 := 0x0469f296
-106 [-]: LOADK     R12 K26      ; R12 := "HeightMapMetalness"
-107 [-]: CALL      R11 2 2      ; R11 := R11(R12)
-108 [-]: GETGLOBAL R12 K25      ; R12 := 0x9bafffe3
-109 [-]: GETTABLE  R13 R6 K8    ; R13 := R6["metalness"]
-110 [-]: GETTABLE  R14 R5 K8    ; R14 := R5["metalness"]
-111 [-]: MOVE      R15 R8       ; R15 := R8
-112 [-]: CALL      R12 4 0      ; R12,... := R12(R13,R14,R15)
-113 [-]: CALL      R9 0 1       ; R9(R10,...)
-114 [-]: GETGLOBAL R9 K2        ; R9 := 0xcbd666e1
-115 [-]: CONST     R10 0        ; R10 := 0.000000
-116 [-]: CALL      R9 2 1       ; R9(R10)
-117 [-]: JMP       46           ; PC := 46
-118 [-]: RETURN    R0 1         ; return 
+L 0:   0 [-]: GETIMPORT R2 1 [nil]
+       1 [-]: FASTCALL1 62 R2 L1
+       2 [-]: GETIMPORT R1 3 [nil]
+       3 [-]: CALL R1 1 1  
+L 1:   4 [-]: JUMPIFNOT R1 L2
+       5 [-]: GETIMPORT R1 5 [nil]
+       6 [-]: LOADN R2 0   
+       7 [-]: CALL R1 1 0  
+       8 [-]: JUMPBACK L0  
+L 2:   9 [-]: GETIMPORT R2 1 [nil]
+      10 [-]: FASTCALL1 62 R2 L3
+      11 [-]: GETIMPORT R1 3 [nil]
+      12 [-]: CALL R1 1 1  
+L 3:  13 [-]: JUMPIF R1 L7 
+      14 [-]: GETIMPORT R1 1 [nil]
+      15 [-]: GETUPVAL R3 0
+      16 [-]: NAMECALL R1 R1 K6 [0xA4D581DC]
+      17 [-]: CALL R1 2 1  
+      18 [-]: LOADN R3 1   
+      19 [-]: GETTABLEKS R6 R1 K8 ["mTitle"]
+      20 [-]: ADDK R5 R6 K7 [1]
+      21 [-]: GETUPVAL R7 1
+      22 [-]: LENGTH R6 R7 
+      23 [-]: FASTCALL2 19 R5 R6 L4
+      24 [-]: GETIMPORT R4 11 [nil]
+      25 [-]: CALL R4 2 -1 
+L 4:  26 [-]: FASTCALL 18 L5
+      27 [-]: GETIMPORT R2 13 [nil]
+      28 [-]: CALL R2 -1 1 
+L 5:  29 [-]: FASTCALL1 62 R0 L6
+      30 [-]: MOVE R4 R0   
+      31 [-]: GETIMPORT R3 3 [nil]
+      32 [-]: CALL R3 1 1  
+L 6:  33 [-]: JUMPIF R3 L7 
+      34 [-]: GETUPVAL R4 1
+      35 [-]: GETTABLE R3 R4 R2
+      36 [-]: GETIMPORT R6 15 [nil]
+      37 [-]: LOADK R7 K16 ["HeightMapDepth_HeightMapThreshold"]
+      38 [-]: CALL R6 1 1  
+      39 [-]: GETTABLEKS R7 R3 K17 ["depth"]
+      40 [-]: LOADK R8 K18 [0.14999999999999999]
+      41 [-]: NAMECALL R4 R0 K19 [0x986D2AB8]
+      42 [-]: CALL R4 4 0  
+      43 [-]: GETIMPORT R6 15 [nil]
+      44 [-]: LOADK R7 K20 ["HeightMapMetalness"]
+      45 [-]: CALL R6 1 1  
+      46 [-]: GETTABLEKS R7 R3 K21 ["metalness"]
+      47 [-]: NAMECALL R4 R0 K19 [0x986D2AB8]
+      48 [-]: CALL R4 3 0  
+L 7:  49 [-]: RETURN R0 0  
+
+
+; Name:            
+; Defined at line: 68
+; #Upvalues:       1
+; #Parameters:     1
+; Is_vararg:       0
+; Max Stack Size:  13
+
+L 0:   0 [-]: GETIMPORT R2 1 [nil]
+       1 [-]: FASTCALL1 62 R2 L1
+       2 [-]: GETIMPORT R1 3 [nil]
+       3 [-]: CALL R1 1 1  
+L 1:   4 [-]: JUMPIFNOT R1 L2
+       5 [-]: GETIMPORT R1 5 [nil]
+       6 [-]: LOADN R2 0   
+       7 [-]: CALL R1 1 0  
+       8 [-]: JUMPBACK L0  
+L 2:   9 [-]: GETIMPORT R1 7 [nil]
+      10 [-]: LOADN R2 0   
+      11 [-]: LOADK R3 K8 [0.29999999999999999]
+      12 [-]: CALL R1 2 1  
+      13 [-]: GETIMPORT R3 1 [nil]
+      14 [-]: FASTCALL1 62 R3 L3
+      15 [-]: GETIMPORT R2 3 [nil]
+      16 [-]: CALL R2 1 1  
+L 3:  17 [-]: JUMPIF R2 L10
+      18 [-]: FASTCALL1 62 R0 L4
+      19 [-]: MOVE R3 R0   
+      20 [-]: GETIMPORT R2 3 [nil]
+      21 [-]: CALL R2 1 1  
+L 4:  22 [-]: JUMPIF R2 L10
+      23 [-]: GETUPVAL R3 0
+      24 [-]: GETTABLEN R2 R3 1
+      25 [-]: DUPTABLE R3 11
+      26 [-]: GETIMPORT R4 13 [nil]
+      27 [-]: GETTABLEKS R6 R2 K9 ["depth"]
+      28 [-]: ADDK R5 R6 K8 [0.29999999999999999]
+      29 [-]: LOADN R6 0   
+      30 [-]: LOADN R7 1   
+      31 [-]: CALL R4 3 1  
+      32 [-]: SETTABLEKS R4 R3 K9 ["depth"]
+      33 [-]: LOADN R4 1   
+      34 [-]: SETTABLEKS R4 R3 K10 ["metalness"]
+      35 [-]: LOADK R4 K14 [0.69999999999999996]
+      36 [-]: SETTABLEKS R4 R2 K9 ["depth"]
+      37 [-]: LOADN R4 1   
+      38 [-]: SETTABLEKS R4 R3 K9 ["depth"]
+      39 [-]: LOADN R4 0   
+L 5:  40 [-]: LOADN R5 1   
+      41 [-]: JUMPIFNOTLT R4 R5 L10
+      42 [-]: FASTCALL1 62 R0 L6
+      43 [-]: MOVE R6 R0   
+      44 [-]: GETIMPORT R5 3 [nil]
+      45 [-]: CALL R5 1 1  
+L 6:  46 [-]: JUMPIF R5 L10
+      47 [-]: GETIMPORT R5 13 [nil]
+      48 [-]: GETIMPORT R8 17 [nil]
+      49 [-]: CALL R8 0 1  
+      50 [-]: MULK R7 R8 K15 [0.01]
+      51 [-]: ADD R6 R4 R7 
+      52 [-]: LOADN R7 0   
+      53 [-]: LOADN R8 1   
+      54 [-]: CALL R5 3 1  
+      55 [-]: MOVE R4 R5   
+      56 [-]: LOADN R5 1   
+      57 [-]: GETIMPORT R7 20 [nil]
+      58 [-]: FASTCALL1 62 R7 L7
+      59 [-]: GETIMPORT R6 3 [nil]
+      60 [-]: CALL R6 1 1  
+L 7:  61 [-]: JUMPIF R6 L9 
+      62 [-]: GETIMPORT R7 20 [nil]
+      63 [-]: NAMECALL R7 R7 K21 [0xDAE5BCB5]
+      64 [-]: CALL R7 1 -1 
+      65 [-]: FASTCALL 25 L8
+      66 [-]: GETIMPORT R6 24 [nil]
+      67 [-]: CALL R6 -1 1 
+L 8:  68 [-]: MOVE R5 R6   
+L 9:  69 [-]: MOVE R8 R5   
+      70 [-]: NAMECALL R6 R1 K25 [0x188E2BEE]
+      71 [-]: CALL R6 2 0  
+      72 [-]: GETIMPORT R8 17 [nil]
+      73 [-]: CALL R8 0 -1 
+      74 [-]: NAMECALL R6 R1 K26 [0xFAA69527]
+      75 [-]: CALL R6 -1 0 
+      76 [-]: GETIMPORT R6 13 [nil]
+      77 [-]: GETIMPORT R7 28 [nil]
+      78 [-]: NAMECALL R8 R1 K29 [0x54AB95F9]
+      79 [-]: CALL R8 1 -1 
+      80 [-]: CALL R7 -1 1 
+      81 [-]: LOADN R8 0   
+      82 [-]: LOADN R9 1   
+      83 [-]: CALL R6 3 1  
+      84 [-]: MOVE R5 R6   
+      85 [-]: GETIMPORT R8 31 [nil]
+      86 [-]: LOADK R9 K32 ["HeightMapDepth_HeightMapThreshold"]
+      87 [-]: CALL R8 1 1  
+      88 [-]: GETIMPORT R9 34 [nil]
+      89 [-]: GETTABLEKS R10 R3 K9 ["depth"]
+      90 [-]: GETTABLEKS R11 R2 K9 ["depth"]
+      91 [-]: MOVE R12 R5  
+      92 [-]: CALL R9 3 1  
+      93 [-]: LOADK R10 K8 [0.29999999999999999]
+      94 [-]: NAMECALL R6 R0 K35 [0x986D2AB8]
+      95 [-]: CALL R6 4 0  
+      96 [-]: GETIMPORT R8 31 [nil]
+      97 [-]: LOADK R9 K36 ["HeightMapMetalness"]
+      98 [-]: CALL R8 1 1  
+      99 [-]: GETIMPORT R9 34 [nil]
+     100 [-]: GETTABLEKS R10 R3 K10 ["metalness"]
+     101 [-]: GETTABLEKS R11 R2 K10 ["metalness"]
+     102 [-]: MOVE R12 R5  
+     103 [-]: CALL R9 3 -1 
+     104 [-]: NAMECALL R6 R0 K35 [0x986D2AB8]
+     105 [-]: CALL R6 -1 0 
+     106 [-]: GETIMPORT R6 5 [nil]
+     107 [-]: LOADN R7 0   
+     108 [-]: CALL R6 1 0  
+     109 [-]: JUMPBACK L5  
+L10: 110 [-]: RETURN R0 0  
+
 
 

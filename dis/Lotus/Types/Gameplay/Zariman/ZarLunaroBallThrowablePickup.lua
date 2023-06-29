@@ -1,21 +1,17 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
-; Max Stack Size:  2
+; Is_vararg:       1
+; Max Stack Size:  1
 
-  1 [-]: CLOSURE   R0 0         ; R0 := closure(Function #1)
-  2 [-]: SETGLOBAL R0 K0        ; OnPickUpSpawned := R0
-  3 [-]: CLOSURE   R0 1         ; R0 := closure(Function #2)
-  4 [-]: SETGLOBAL R0 K1        ; OnProjectileStop := R0
-  5 [-]: RETURN    R0 1         ; return 
+            1 [-]: DUPCLOSURE R0 K0 []
+       2 [-]: SETGLOBAL R0 K1 ["OnPickUpSpawned"]
+       3 [-]: DUPCLOSURE R0 K2 []
+       4 [-]: SETGLOBAL R0 K3 ["OnProjectileStop"]
+       5 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 2
 ; #Upvalues:       0
@@ -23,16 +19,14 @@
 ; Is_vararg:       0
 ; Max Stack Size:  4
 
-  1 [-]: GETGLOBAL R1 K0        ; R1 := _T
-  2 [-]: GETGLOBAL R2 K2        ; R2 := 0x88efc25e
-  3 [-]: MOVE      R3 R0        ; R3 := R0
-  4 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  5 [-]: SETTABLE  R1 K1 R2     ; R1["ZarimanBallPickUpType"] := R2
-  6 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R1 1 [nil]
+       1 [-]: GETIMPORT R2 3 [nil]
+       2 [-]: MOVE R3 R0   
+       3 [-]: CALL R2 1 1  
+       4 [-]: SETTABLEKS R2 R1 K4 ["ZarimanBallPickUpType"]
+       5 [-]: RETURN R0 0  
 
 
-; Function #2:
-;
 ; Name:            
 ; Defined at line: 6
 ; #Upvalues:       0
@@ -40,21 +34,20 @@
 ; Is_vararg:       0
 ; Max Stack Size:  7
 
-  1 [-]: GETGLOBAL R1 K0        ; R1 := 0x7b998233
-  2 [-]: GETGLOBAL R2 K1        ; R2 := _T
-  3 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["ZarimanBallPickUpType"]
-  4 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  5 [-]: TEST      R1 1         ; if R1 then PC := 16
-  6 [-]: JMP       16           ; PC := 16
-  7 [-]: GETGLOBAL R1 K3        ; R1 := 0x89326c93
-  8 [-]: SELF      R1 R1 K4     ; R2 := R1; R1 := R1[0x05909209]
-  9 [-]: GETGLOBAL R3 K1        ; R3 := _T
- 10 [-]: GETTABLE  R3 R3 K2     ; R3 := R3["ZarimanBallPickUpType"]
- 11 [-]: SELF      R4 R0 K5     ; R5 := R0; R4 := R0[0xd1586535]
- 12 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 13 [-]: SELF      R5 R0 K6     ; R6 := R0; R5 := R0[0xcb3851b8]
- 14 [-]: CALL      R5 2 0       ; R5,... := R5(R6)
- 15 [-]: CALL      R1 0 1       ; R1(R2,...)
- 16 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R2 2 [nil]
+       1 [-]: FASTCALL1 62 R2 L0
+       2 [-]: GETIMPORT R1 4 [nil]
+       3 [-]: CALL R1 1 1  
+L 0:   4 [-]: JUMPIF R1 L1 
+       5 [-]: GETIMPORT R1 6 [nil]
+       6 [-]: GETIMPORT R3 2 [nil]
+       7 [-]: NAMECALL R4 R0 K7 [0xD1586535]
+       8 [-]: CALL R4 1 1  
+       9 [-]: NAMECALL R5 R0 K8 [0xCB3851B8]
+      10 [-]: CALL R5 1 -1 
+      11 [-]: NAMECALL R1 R1 K9 [0x05909209]
+      12 [-]: CALL R1 -1 0 
+L 1:  13 [-]: RETURN R0 0  
+
 
 

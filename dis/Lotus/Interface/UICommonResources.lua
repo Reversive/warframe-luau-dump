@@ -1,459 +1,701 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
+; Is_vararg:       1
 ; Max Stack Size:  5
 
-  1 [-]: GETGLOBAL R0 K0        ; R0 := 0x2d0fad09
-  2 [-]: LOADK     R1 K1        ; R1 := "EE.Interface.Utilities"
-  3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: LOADKB    R1 0 0       ; R1 := false
-  5 [-]: CLOSURE   R2 0         ; R2 := closure(Function #1)
-  6 [-]: CLOSURE   R3 1         ; R3 := closure(Function #2)
-  7 [-]: MOVE      R0 R2        ; R0 := R2
-  8 [-]: MOVE      R0 R0        ; R0 := R0
-  9 [-]: CLOSURE   R4 2         ; R4 := closure(Function #3)
- 10 [-]: MOVE      R0 R3        ; R0 := R3
- 11 [-]: MOVE      R0 R1        ; R0 := R1
- 12 [-]: SETGLOBAL R4 K2        ; Initialize := R4
- 13 [-]: CLOSURE   R4 3         ; R4 := closure(Function #4)
- 14 [-]: MOVE      R0 R1        ; R0 := R1
- 15 [-]: SETGLOBAL R4 K3        ; Update := R4
- 16 [-]: RETURN    R0 1         ; return 
+            1 [-]: GETIMPORT R0 1 [nil]
+       2 [-]: LOADK R1 K2 ["EE.Interface.Utilities"]
+       3 [-]: CALL R0 1 1  
+       4 [-]: LOADB R1 0   
+       5 [-]: DUPCLOSURE R2 K3 []
+       6 [-]: DUPCLOSURE R3 K4 []
+       7 [-]: MOVE R0 R0   
+       8 [-]: NEWCLOSURE R4 P2
+       9 [-]: MOVE R0 R3   
+      10 [-]: MOVE R1 R1   
+      11 [-]: SETGLOBAL R4 K5 ["Initialize"]
+      12 [-]: NEWCLOSURE R4 P3
+      13 [-]: MOVE R1 R1   
+      14 [-]: SETGLOBAL R4 K6 ["Update"]
+      15 [-]: CLOSEUPVALS R1
+      16 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
-; Defined at line: 182
+; Defined at line: 183
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
 ; Max Stack Size:  9
 
-  1 [-]: NEWTABLE  R2 0 0       ; R2 := {}
-  2 [-]: GETGLOBAL R3 K0        ; R3 := 0xc8802016
-  3 [-]: MOVE      R4 R0        ; R4 := R0
-  4 [-]: CALL      R3 2 4       ; R3,R4,R5 := R3(R4)
-  5 [-]: JMP       8            ; PC := 8
-  6 [-]: GETTABLE  R8 R1 R6     ; R8 := R1[R6]
-  7 [-]: SETTABLE  R2 R7 R8     ; R2[R7] := R8
-  8 [-]: TFORLOOP  R3 2         ; R6,R7 :=  R3(R4,R5); if R6 ~= nil then begin PC = 6; R5 := R6 end
-  9 [-]: JMP       6            ; PC := 6
- 10 [-]: RETURN    R2 2         ; return R2
- 11 [-]: RETURN    R0 1         ; return 
+       0 [-]: NEWTABLE R2 0 0
+       1 [-]: GETIMPORT R3 1 [nil]
+       2 [-]: MOVE R4 R0   
+       3 [-]: CALL R3 1 3  
+       4 [-]: FORGPREP_INEXT R3 L1
+L 0:   5 [-]: GETTABLE R8 R1 R6
+       6 [-]: SETTABLE R8 R2 R7
+L 1:   7 [-]: FORGLOOP R3 L0 2 [inext]
+       8 [-]: RETURN R2 1  
 
 
-; Function #2:
-;
 ; Name:            
-; Defined at line: 190
-; #Upvalues:       2
+; Defined at line: 191
+; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  55
+; Max Stack Size:  21
 
-  1 [-]: GETGLOBAL R1 K0        ; R1 := 0x7b998233
-  2 [-]: GETTABLE  R2 R0 K1     ; R2 := R0["CommonResourcesType"]
-  3 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  4 [-]: TEST      R1 1         ; if R1 then PC := 7
-  5 [-]: JMP       7            ; PC := 7
-  6 [-]: RETURN    R0 1         ; return 
-  7 [-]: GETGLOBAL R1 K2        ; R1 := 0x88efc25e
-  8 [-]: GETGLOBAL R2 K3        ; R2 := 0xae91e43b
-  9 [-]: SELF      R2 R2 K4     ; R3 := R2; R2 := R2[0x492f9da2]
- 10 [-]: CALL      R2 2 0       ; R2,... := R2(R3)
- 11 [-]: CALL      R1 0 2       ; R1 := R1(R2,...)
- 12 [-]: SETTABLE  R0 K1 R1     ; R0["CommonResourcesType"] := R1
- 13 [-]: GETGLOBAL R1 K6        ; R1 := 0x9d4c0c40
- 14 [-]: SETTABLE  R0 K5 R1     ; R0["UIFx_ConsolePress"] := R1
- 15 [-]: GETGLOBAL R1 K8        ; R1 := 0x8dcb9b0c
- 16 [-]: SETTABLE  R0 K7 R1     ; R0["UIFx_PCPress"] := R1
- 17 [-]: GETGLOBAL R1 K10       ; R1 := 0x560d28bd
- 18 [-]: SETTABLE  R0 K9 R1     ; R0["UIFx_LeftBumperPress"] := R1
- 19 [-]: GETGLOBAL R1 K12       ; R1 := 0x3c6c61fa
- 20 [-]: SETTABLE  R0 K11 R1    ; R0["UIFx_LeftBumperPress3d"] := R1
- 21 [-]: GETGLOBAL R1 K14       ; R1 := 0x03c19938
- 22 [-]: SETTABLE  R0 K13 R1    ; R0["UIFx_RightBumperPress"] := R1
- 23 [-]: GETGLOBAL R1 K16       ; R1 := 0x7bc65267
- 24 [-]: SETTABLE  R0 K15 R1    ; R0[0x4bc83635] := R1
- 25 [-]: GETGLOBAL R1 K18       ; R1 := 0x3255839e
- 26 [-]: SETTABLE  R0 K17 R1    ; R0[0x8bcd12b6] := R1
- 27 [-]: GETGLOBAL R1 K20       ; R1 := 0xcc976b0e
- 28 [-]: SETTABLE  R0 K19 R1    ; R0["UIMovie_TransmissionMovie"] := R1
- 29 [-]: GETGLOBAL R1 K22       ; R1 := 0x6bb68d1c
- 30 [-]: SETTABLE  R0 K21 R1    ; R0["UIMovie_ItemBrowsingMovie"] := R1
- 31 [-]: GETGLOBAL R1 K24       ; R1 := 0xd647d3d6
- 32 [-]: SETTABLE  R0 K23 R1    ; R0["UIMovie_PlatBrowsingMovie"] := R1
- 33 [-]: GETGLOBAL R1 K26       ; R1 := 0xe9fb59e2
- 34 [-]: SETTABLE  R0 K25 R1    ; R0["UIMovie_ChatReduxMovie"] := R1
- 35 [-]: GETGLOBAL R1 K28       ; R1 := 0x8fa91b7b
- 36 [-]: SETTABLE  R0 K27 R1    ; R0["UIMovie_InputCountMovie"] := R1
- 37 [-]: GETGLOBAL R1 K30       ; R1 := 0x420fe829
- 38 [-]: SETTABLE  R0 K29 R1    ; R0["UIMovie_ColorPicker"] := R1
- 39 [-]: GETGLOBAL R1 K32       ; R1 := 0xaa3d7c8a
- 40 [-]: SETTABLE  R0 K31 R1    ; R0["UIMovie_InputDialogMovie"] := R1
- 41 [-]: GETGLOBAL R1 K34       ; R1 := 0x4938670b
- 42 [-]: SETTABLE  R0 K33 R1    ; R0["UIMovie_MeleeCombosMovie"] := R1
- 43 [-]: GETGLOBAL R1 K36       ; R1 := 0xc121b912
- 44 [-]: SETTABLE  R0 K35 R1    ; R0["UIMovie_ArcWingHudMovie"] := R1
- 45 [-]: GETGLOBAL R1 K38       ; R1 := 0x40cd098c
- 46 [-]: SETTABLE  R0 K37 R1    ; R0["UIMovie_EndOfQuestMovie"] := R1
- 47 [-]: GETGLOBAL R1 K40       ; R1 := 0xcc20f3b2
- 48 [-]: SETTABLE  R0 K39 R1    ; R0["UIMovie_ShipDecoHUD"] := R1
- 49 [-]: GETGLOBAL R1 K42       ; R1 := 0xe4914265
- 50 [-]: SETTABLE  R0 K41 R1    ; R0["UIMovie_DetailedPurchaseDialog"] := R1
- 51 [-]: GETGLOBAL R1 K44       ; R1 := 0xa626be44
- 52 [-]: SETTABLE  R0 K43 R1    ; R0["UIMovie_SolarMap"] := R1
- 53 [-]: GETGLOBAL R1 K46       ; R1 := 0x08a5afb4
- 54 [-]: SETTABLE  R0 K45 R1    ; R0["UIMovie_GenericMenu"] := R1
- 55 [-]: GETGLOBAL R1 K48       ; R1 := 0x4baca03a
- 56 [-]: SETTABLE  R0 K47 R1    ; R0["UIMovie_GenericSettings"] := R1
- 57 [-]: GETGLOBAL R1 K50       ; R1 := 0x026148a2
- 58 [-]: SETTABLE  R0 K49 R1    ; R0["UIMovie_LoadoutSelectMovie"] := R1
- 59 [-]: GETGLOBAL R1 K52       ; R1 := 0x96540e3a
- 60 [-]: SETTABLE  R0 K51 R1    ; R0["UIMovie_NemesisInfoMovie"] := R1
- 61 [-]: GETGLOBAL R1 K54       ; R1 := 0xfeaecd0f
- 62 [-]: SETTABLE  R0 K53 R1    ; R0["UIMaterial_Plain"] := R1
- 63 [-]: GETGLOBAL R1 K56       ; R1 := 0x184ed60c
- 64 [-]: SETTABLE  R0 K55 R1    ; R0["UIMaterial_PlainText"] := R1
- 65 [-]: GETGLOBAL R1 K58       ; R1 := 0xf9ff722d
- 66 [-]: SETTABLE  R0 K57 R1    ; R0["UIMaterial_DepthTestText"] := R1
- 67 [-]: GETGLOBAL R1 K60       ; R1 := 0x41595962
- 68 [-]: SETTABLE  R0 K59 R1    ; R0["UIMaterial_VisibilityRange"] := R1
- 69 [-]: GETGLOBAL R1 K62       ; R1 := 0x3cd0b578
- 70 [-]: SETTABLE  R0 K61 R1    ; R0["UIMaterial_VerticalVisibilityRange"] := R1
- 71 [-]: GETGLOBAL R1 K64       ; R1 := 0xe952576b
- 72 [-]: SETTABLE  R0 K63 R1    ; R0["UIMaterial_VerticalVisibilityRangeText"] := R1
- 73 [-]: GETGLOBAL R1 K66       ; R1 := 0x934ebb71
- 74 [-]: SETTABLE  R0 K65 R1    ; R0["UIMaterial_Plasma"] := R1
- 75 [-]: GETGLOBAL R1 K68       ; R1 := 0xa511a942
- 76 [-]: SETTABLE  R0 K67 R1    ; R0["UIMaterial_Icon"] := R1
- 77 [-]: GETGLOBAL R1 K70       ; R1 := 0xde65e390
- 78 [-]: SETTABLE  R0 K69 R1    ; R0["UIMaterial_MiniMap"] := R1
- 79 [-]: GETGLOBAL R1 K72       ; R1 := 0xca614d6d
- 80 [-]: SETTABLE  R0 K71 R1    ; R0["UIMaterial_Diegetic"] := R1
- 81 [-]: GETGLOBAL R1 K74       ; R1 := 0x809832f8
- 82 [-]: SETTABLE  R0 K73 R1    ; R0["UIMaterial_SmoothEdge"] := R1
- 83 [-]: GETGLOBAL R1 K76       ; R1 := 0x3f241954
- 84 [-]: SETTABLE  R0 K75 R1    ; R0["UIMaterial_SmoothEdgeNoDepthTest"] := R1
- 85 [-]: GETGLOBAL R1 K78       ; R1 := 0xa3b20be5
- 86 [-]: SETTABLE  R0 K77 R1    ; R0[0x838ff7e8] := R1
- 87 [-]: GETGLOBAL R1 K80       ; R1 := 0xaa68857d
- 88 [-]: SETTABLE  R0 K79 R1    ; R0[0xb55410a8] := R1
- 89 [-]: GETGLOBAL R1 K82       ; R1 := 0x4016a66f
- 90 [-]: SETTABLE  R0 K81 R1    ; R0[0x59b1a107] := R1
- 91 [-]: GETGLOBAL R1 K84       ; R1 := 0xbbdf618c
- 92 [-]: SETTABLE  R0 K83 R1    ; R0[0x850f881a] := R1
- 93 [-]: GETGLOBAL R1 K86       ; R1 := 0xa69575f5
- 94 [-]: SETTABLE  R0 K85 R1    ; R0[0xb2c85602] := R1
- 95 [-]: GETGLOBAL R1 K88       ; R1 := 0x9f916ce3
- 96 [-]: SETTABLE  R0 K87 R1    ; R0[0xb8670e8d] := R1
- 97 [-]: GETGLOBAL R1 K90       ; R1 := 0x257fe04c
- 98 [-]: SETTABLE  R0 K89 R1    ; R0[0x4463625f] := R1
- 99 [-]: NEWTABLE  R1 20 0      ; R1 := {}
-100 [-]: LOADK     R2 K91       ; R2 := "Icon"
-101 [-]: LOADK     R3 K92       ; R3 := "Background"
-102 [-]: LOADK     R4 K93       ; R4 := "Energy"
-103 [-]: LOADK     R5 K94       ; R5 := "BottomFrame"
-104 [-]: LOADK     R6 K95       ; R6 := "TopFrame"
-105 [-]: LOADK     R7 K96       ; R7 := "Content"
-106 [-]: LOADK     R8 K97       ; R8 := "EmptySlot"
-107 [-]: LOADK     R9 K98       ; R9 := "OmegaIcon"
-108 [-]: LOADK     R10 K99      ; R10 := "Text"
-109 [-]: LOADK     R11 K100     ; R11 := "PeculiarEnergy"
-110 [-]: LOADK     R12 K101     ; R12 := "PeculiarBottomFrame"
-111 [-]: LOADK     R13 K102     ; R13 := "PeculiarTopFrame"
-112 [-]: LOADK     R14 K103     ; R14 := "GalvanizedBottomFrame"
-113 [-]: LOADK     R15 K104     ; R15 := "GalvanizedTopFrame"
-114 [-]: LOADK     R16 K105     ; R16 := "ImmortalIcon"
-115 [-]: LOADK     R17 K106     ; R17 := "ImmortalBackground"
-116 [-]: LOADK     R18 K107     ; R18 := "ImmortalBottomFrame"
-117 [-]: LOADK     R19 K108     ; R19 := "ImmortalTopFrame"
-118 [-]: LOADK     R20 K109     ; R20 := "SmoothEdge"
-119 [-]: LOADK     R21 K110     ; R21 := "AvionicBottomFrame"
-120 [-]: LOADK     R22 K111     ; R22 := "AvionicTopFrame"
-121 [-]: LOADK     R23 K112     ; R23 := "ImmortalWildcardIcon"
-122 [-]: LOADK     R24 K113     ; R24 := "KahlTopFrame"
-123 [-]: LOADK     R25 K114     ; R25 := "KahlBottomFrame"
-124 [-]: SETLIST   R1 24 1      ; R1[(1-1)*FPF+i] := R(1+i), 1 <= i <= 24
-125 [-]: NEWTABLE  R2 3 0       ; R2 := {}
-126 [-]: GETUPVAL  R3 U0        ; R3 := U0
-127 [-]: MOVE      R4 R1        ; R4 := R1
-128 [-]: GETGLOBAL R5 K116      ; R5 := 0xa22384cc
-129 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
-130 [-]: GETUPVAL  R4 U0        ; R4 := U0
-131 [-]: MOVE      R5 R1        ; R5 := R1
-132 [-]: GETGLOBAL R6 K117      ; R6 := 0x245c1590
-133 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
-134 [-]: GETUPVAL  R5 U0        ; R5 := U0
-135 [-]: MOVE      R6 R1        ; R6 := R1
-136 [-]: GETGLOBAL R7 K118      ; R7 := 0x84325264
-137 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
-138 [-]: GETUPVAL  R6 U0        ; R6 := U0
-139 [-]: MOVE      R7 R1        ; R7 := R1
-140 [-]: GETGLOBAL R8 K119      ; R8 := 0xd1968670
-141 [-]: CALL      R6 3 0       ; R6,... := R6(R7,R8)
-142 [-]: SETLIST   R2 0 1       ; R2[(1-1)*FPF+i] := R(2+i), 1 <= i <= 0
-143 [-]: SETTABLE  R0 K115 R2   ; R0[0x783188df] := R2
-144 [-]: NEWTABLE  R2 6 0       ; R2 := {}
-145 [-]: LOADK     R3 K120      ; R3 := "ArbitersSyndicate"
-146 [-]: LOADK     R4 K121      ; R4 := "SteelMeridianSyndicate"
-147 [-]: LOADK     R5 K122      ; R5 := "PerrinSyndicate"
-148 [-]: LOADK     R6 K123      ; R6 := "RedVeilSyndicate"
-149 [-]: LOADK     R7 K124      ; R7 := "CephalonSudaSyndicate"
-150 [-]: LOADK     R8 K125      ; R8 := "NewLokaSyndicate"
-151 [-]: SETLIST   R2 6 1       ; R2[(1-1)*FPF+i] := R(2+i), 1 <= i <= 6
-152 [-]: NEWTABLE  R3 3 0       ; R3 := {}
-153 [-]: GETUPVAL  R4 U0        ; R4 := U0
-154 [-]: MOVE      R5 R2        ; R5 := R2
-155 [-]: GETGLOBAL R6 K127      ; R6 := 0x94672442
-156 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
-157 [-]: GETUPVAL  R5 U0        ; R5 := U0
-158 [-]: MOVE      R6 R2        ; R6 := R2
-159 [-]: GETGLOBAL R7 K128      ; R7 := 0xd42752be
-160 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
-161 [-]: GETUPVAL  R6 U0        ; R6 := U0
-162 [-]: MOVE      R7 R2        ; R7 := R2
-163 [-]: GETGLOBAL R8 K129      ; R8 := 0xc18f118e
-164 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
-165 [-]: GETUPVAL  R7 U0        ; R7 := U0
-166 [-]: MOVE      R8 R2        ; R8 := R2
-167 [-]: GETGLOBAL R9 K130      ; R9 := 0xeeb43622
-168 [-]: CALL      R7 3 0       ; R7,... := R7(R8,R9)
-169 [-]: SETLIST   R3 0 1       ; R3[(1-1)*FPF+i] := R(3+i), 1 <= i <= 0
-170 [-]: SETTABLE  R0 K126 R3   ; R0["UIMaterial_ModsSyndicateIcons"] := R3
-171 [-]: NEWTABLE  R3 5 0       ; R3 := {}
-172 [-]: CONST     R4 1         ; R4 := 1.000000
-173 [-]: CONST     R5 2         ; R5 := 2.000000
-174 [-]: CONST     R6 3         ; R6 := 3.000000
-175 [-]: CONST     R7 4         ; R7 := 4.000000
-176 [-]: CONST     R8 7         ; R8 := 7.000000
-177 [-]: SETLIST   R3 5 1       ; R3[(1-1)*FPF+i] := R(3+i), 1 <= i <= 5
-178 [-]: GETUPVAL  R4 U0        ; R4 := U0
-179 [-]: MOVE      R5 R3        ; R5 := R3
-180 [-]: GETGLOBAL R6 K133      ; R6 := 0x8b2b30a0
-181 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
-182 [-]: SETTABLE  R0 K132 R4   ; R0["UIMaterial_FocusLens"] := R4
-183 [-]: GETUPVAL  R4 U0        ; R4 := U0
-184 [-]: MOVE      R5 R3        ; R5 := R3
-185 [-]: GETGLOBAL R6 K135      ; R6 := 0x88025e2f
-186 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
-187 [-]: SETTABLE  R0 K134 R4   ; R0["UIMaterial_FocusLensStore"] := R4
-188 [-]: GETUPVAL  R4 U0        ; R4 := U0
-189 [-]: MOVE      R5 R3        ; R5 := R3
-190 [-]: GETGLOBAL R6 K137      ; R6 := 0x6819c9f0
-191 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
-192 [-]: SETTABLE  R0 K136 R4   ; R0["UIMaterial_FocusLensStoreDepth"] := R4
-193 [-]: GETGLOBAL R4 K139      ; R4 := 0x8c10d3d5
-194 [-]: SETTABLE  R0 K138 R4   ; R0["UIMaterial_ArchonShards"] := R4
-195 [-]: GETGLOBAL R4 K141      ; R4 := 0xd37bbfac
-196 [-]: SETTABLE  R0 K140 R4   ; R0["UIMaterial_ArchonShardsStore"] := R4
-197 [-]: GETGLOBAL R4 K143      ; R4 := 0xf3f93819
-198 [-]: SETTABLE  R0 K142 R4   ; R0["UIMaterial_ArchonShardsStoreDepth"] := R4
-199 [-]: GETGLOBAL R4 K145      ; R4 := 0x9b377e78
-200 [-]: SETTABLE  R0 K144 R4   ; R0["UIMaterial_CosmeticEnhancers"] := R4
-201 [-]: GETGLOBAL R4 K147      ; R4 := 0x7fb69c67
-202 [-]: SETTABLE  R0 K146 R4   ; R0["UIMaterial_CosmeticEnhancersStore"] := R4
-203 [-]: GETGLOBAL R4 K149      ; R4 := 0xdcd7d608
-204 [-]: SETTABLE  R0 K148 R4   ; R0["UIMaterial_CosmeticEnhancersStoreDepth"] := R4
-205 [-]: GETGLOBAL R4 K151      ; R4 := 0xa9df9127
-206 [-]: SETTABLE  R0 K150 R4   ; R0["UIMaterial_CosmeticEnhancersStoreHorizontal"] := R4
-207 [-]: GETGLOBAL R4 K153      ; R4 := 0xa0c9a518
-208 [-]: SETTABLE  R0 K152 R4   ; R0["UIMaterial_CosmeticEnhancersStoreDepthHorizontal"] := R4
-209 [-]: GETGLOBAL R4 K155      ; R4 := 0x9712ebbf
-210 [-]: SETTABLE  R0 K154 R4   ; R0["UIMaterial_RailjackMod"] := R4
-211 [-]: GETGLOBAL R4 K157      ; R4 := 0x15de1326
-212 [-]: SETTABLE  R0 K156 R4   ; R0["UIMaterial_RailjackModStore"] := R4
-213 [-]: GETGLOBAL R4 K159      ; R4 := 0x9e23747b
-214 [-]: SETTABLE  R0 K158 R4   ; R0["UIMaterial_RailjackModStoreDepth"] := R4
-215 [-]: GETGLOBAL R4 K161      ; R4 := 0xa6341ac0
-216 [-]: SETTABLE  R0 K160 R4   ; R0["UIMaterial_SpaceMarker"] := R4
-217 [-]: GETGLOBAL R4 K163      ; R4 := 0x7ba2eba1
-218 [-]: SETTABLE  R0 K162 R4   ; R0["UIMaterial_SpaceMarkerCrewShip"] := R4
-219 [-]: GETGLOBAL R4 K165      ; R4 := 0xc484c89c
-220 [-]: SETTABLE  R0 K164 R4   ; R0["UIMaterial_SpaceMarkerCircle"] := R4
-221 [-]: GETGLOBAL R4 K167      ; R4 := 0x88a26c1a
-222 [-]: SETTABLE  R0 K166 R4   ; R0["UIMaterial_RailjackModStoreHorizontal"] := R4
-223 [-]: GETGLOBAL R4 K169      ; R4 := 0xc2362593
-224 [-]: SETTABLE  R0 K168 R4   ; R0["UIMaterial_RailjackModStoreDepthHorizontal"] := R4
-225 [-]: GETGLOBAL R4 K171      ; R4 := 0x4336afff
-226 [-]: SETTABLE  R0 K170 R4   ; R0["UIMaterial_EmojiColors"] := R4
-227 [-]: GETGLOBAL R4 K173      ; R4 := 0xbc9e35d7
-228 [-]: SETTABLE  R0 K172 R4   ; R0["UIMaterial_SalvageMaterials"] := R4
-229 [-]: GETGLOBAL R4 K175      ; R4 := 0xe6a9c4a7
-230 [-]: SETTABLE  R0 K174 R4   ; R0["UIMaterial_Mastery"] := R4
-231 [-]: GETGLOBAL R4 K177      ; R4 := 0xaedf43a0
-232 [-]: SETTABLE  R0 K176 R4   ; R0["UITexture_CreditsIcon"] := R4
-233 [-]: GETGLOBAL R4 K179      ; R4 := 0x81c9506e
-234 [-]: SETTABLE  R0 K178 R4   ; R0["UITexture_PlatinumIcon"] := R4
-235 [-]: GETGLOBAL R4 K181      ; R4 := 0x8da2d17b
-236 [-]: SETTABLE  R0 K180 R4   ; R0["UITexture_ProfilePlaceHolder"] := R4
-237 [-]: GETGLOBAL R4 K183      ; R4 := 0xeb4576f0
-238 [-]: SETTABLE  R0 K182 R4   ; R0["UITexture_Blueprint"] := R4
-239 [-]: GETGLOBAL R4 K185      ; R4 := 0x9fb7bf9d
-240 [-]: SETTABLE  R0 K184 R4   ; R0["UITexture_ReusableBlueprint"] := R4
-241 [-]: GETGLOBAL R4 K187      ; R4 := 0xc967d4eb
-242 [-]: SETTABLE  R0 K186 R4   ; R0["UITexture_Search"] := R4
-243 [-]: GETGLOBAL R4 K189      ; R4 := 0xe691552e
-244 [-]: SETTABLE  R0 K188 R4   ; R0["UITexture_ClearSearch"] := R4
-245 [-]: GETGLOBAL R4 K191      ; R4 := 0x37f15156
-246 [-]: SETTABLE  R0 K190 R4   ; R0["UITexture_Polarity"] := R4
-247 [-]: GETGLOBAL R4 K193      ; R4 := 0xd54b6ec7
-248 [-]: SETTABLE  R0 K192 R4   ; R0["UITexture_Wishlist"] := R4
-249 [-]: GETGLOBAL R4 K195      ; R4 := 0x1a9787ca
-250 [-]: SETTABLE  R0 K194 R4   ; R0["UITexture_Bundle"] := R4
-251 [-]: GETGLOBAL R4 K197      ; R4 := 0x15a5135f
-252 [-]: SETTABLE  R0 K196 R4   ; R0["UITexture_Mastery"] := R4
-253 [-]: GETGLOBAL R4 K199      ; R4 := 0xa404332a
-254 [-]: SETTABLE  R0 K198 R4   ; R0["UITexture_ClanClass"] := R4
-255 [-]: GETGLOBAL R4 K201      ; R4 := 0xe07c557e
-256 [-]: SETTABLE  R0 K200 R4   ; R0["UITexture_EmptySlot"] := R4
-257 [-]: GETGLOBAL R4 K203      ; R4 := 0x8cdab715
-258 [-]: SETTABLE  R0 K202 R4   ; R0["UITexture_LabelIcons"] := R4
-259 [-]: GETGLOBAL R4 K205      ; R4 := 0xe211a1ad
-260 [-]: SETTABLE  R0 K204 R4   ; R0["UITexture_CircleGradientBacker"] := R4
-261 [-]: GETGLOBAL R4 K207      ; R4 := 0x19a30339
-262 [-]: SETTABLE  R0 K206 R4   ; R0["UITexture_CompanionIcons"] := R4
-263 [-]: GETGLOBAL R4 K209      ; R4 := 0x20306506
-264 [-]: SETTABLE  R0 K208 R4   ; R0["UITexture_GenderIcons"] := R4
-265 [-]: GETGLOBAL R4 K211      ; R4 := 0x9594f5ab
-266 [-]: SETTABLE  R0 K210 R4   ; R0["UITexture_SettingsIcons"] := R4
-267 [-]: GETGLOBAL R4 K213      ; R4 := 0xd0dd9166
-268 [-]: SETTABLE  R0 K212 R4   ; R0["UITexture_Salvage"] := R4
-269 [-]: GETGLOBAL R4 K215      ; R4 := 0x68cdc9b2
-270 [-]: SETTABLE  R0 K214 R4   ; R0["UITexture_FavoriteIcons"] := R4
-271 [-]: SETTABLE  R0 K216 K217 ; R0["UIColor_Blue"] := 1405683.000000
-272 [-]: SETTABLE  R0 K218 K219 ; R0["UIColor_LightBlue"] := 12769497.000000
-273 [-]: SETTABLE  R0 K220 K221 ; R0["UIColor_MediumBlue"] := 8100006.000000
-274 [-]: SETTABLE  R0 K222 K223 ; R0["UIColor_DarkBlue"] := 4546669.000000
-275 [-]: SETTABLE  R0 K224 K225 ; R0["UIColor_MediumGrey"] := 8421504.000000
-276 [-]: SETTABLE  R0 K226 K227 ; R0["UIColor_DarkGrey"] := 2368548.000000
-277 [-]: SETTABLE  R0 K228 K229 ; R0["UIColor_Yellow"] := 15258973.000000
-278 [-]: SETTABLE  R0 K230 K231 ; R0["UIColor_Orange"] := 13466625.000000
-279 [-]: SETTABLE  R0 K232 K233 ; R0["UIColor_Gold"] := 16763904.000000
-280 [-]: SETTABLE  R0 K234 K235 ; R0["UIColor_Health"] := 13379881.000000
-281 [-]: SETTABLE  R0 K236 K237 ; R0["UIColor_Shield"] := 54783.000000
-282 [-]: SETTABLE  R0 K238 K239 ; R0["UIColor_Overshield"] := 11731199.000000
-283 [-]: SETTABLE  R0 K240 K241 ; R0["UIColor_Stamina"] := 4502359.000000
-284 [-]: SETTABLE  R0 K242 K243 ; R0["UIColor_Armor"] := 14591541.000000
-285 [-]: SETTABLE  R0 K244 K245 ; R0["UIColor_Red"] := 13108230.000000
-286 [-]: SETTABLE  R0 K246 K247 ; R0["UIColor_Green"] := 9298982.000000
-287 [-]: SETTABLE  R0 K248 K249 ; R0["UIColor_LightGreen"] := 12118144.000000
-288 [-]: SETTABLE  R0 K250 K251 ; R0["UIColor_White"] := 15724527.000000
-289 [-]: SETTABLE  R0 K252 K253 ; R0["UIColor_Black"] := 0.000000
-290 [-]: SETTABLE  R0 K254 K255 ; R0["UIColor_PositiveReputation"] := 5030911.000000
-291 [-]: LOADK     R4 K256      ; R4 := "UIColor_NegativeReputation"
-292 [-]: LOADK     R5 K257      ; R5 := 16731212.000000
-293 [-]: SETTABLE  R0 R4 R5     ; R0[R4] := R5
-294 [-]: LOADK     R4 K258      ; R4 := "UIColor_OpposedReputation"
-295 [-]: LOADK     R5 K259      ; R5 := 15647744.000000
-296 [-]: SETTABLE  R0 R4 R5     ; R0[R4] := R5
-297 [-]: LOADK     R4 K260      ; R4 := "UIColor_PvpTeamOne"
-298 [-]: LOADK     R5 K261      ; R5 := 15044409.000000
-299 [-]: SETTABLE  R0 R4 R5     ; R0[R4] := R5
-300 [-]: LOADK     R4 K262      ; R4 := "UIColor_PvpTeamTwo"
-301 [-]: LOADK     R5 K263      ; R5 := 3000544.000000
-302 [-]: SETTABLE  R0 R4 R5     ; R0[R4] := R5
-303 [-]: LOADK     R4 K264      ; R4 := "UIColor_PvpKill"
-304 [-]: LOADK     R5 K265      ; R5 := 15945236.000000
-305 [-]: SETTABLE  R0 R4 R5     ; R0[R4] := R5
-306 [-]: LOADK     R4 K266      ; R4 := "UIColor_Hyperlink"
-307 [-]: LOADK     R5 K267      ; R5 := 3394815.000000
-308 [-]: SETTABLE  R0 R4 R5     ; R0[R4] := R5
-309 [-]: LOADK     R4 K268      ; R4 := "UIColor_UnlimitedUseBP"
-310 [-]: LOADK     R5 K269      ; R5 := 15714870.000000
-311 [-]: SETTABLE  R0 R4 R5     ; R0[R4] := R5
-312 [-]: LOADK     R4 K270      ; R4 := "UIColor_RGB_White"
-313 [-]: GETUPVAL  R5 U1        ; R5 := U1
-314 [-]: LOADK     R6 K271      ; R6 := true
-315 [-]: GETTABLE  R5 R5 R6     ; R5 := R5[R6]
-316 [-]: GETTABLE  R6 R0 K250   ; R6 := R0["UIColor_White"]
-317 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-318 [-]: SETTABLE  R0 R4 R5     ; R0[R4] := R5
-319 [-]: LOADK     R4 K272      ; R4 := "UIColorObject_White"
-320 [-]: GETUPVAL  R5 U1        ; R5 := U1
-321 [-]: LOADK     R6 K273      ; R6 := true
-322 [-]: GETTABLE  R5 R5 R6     ; R5 := R5[R6]
-323 [-]: GETTABLE  R6 R0 K250   ; R6 := R0["UIColor_White"]
-324 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-325 [-]: SETTABLE  R0 R4 R5     ; R0[R4] := R5
-326 [-]: LOADK     R4 K274      ; R4 := "UIColorObject_Black"
-327 [-]: GETUPVAL  R5 U1        ; R5 := U1
-328 [-]: LOADK     R6 K273      ; R6 := true
-329 [-]: GETTABLE  R5 R5 R6     ; R5 := R5[R6]
-330 [-]: GETTABLE  R6 R0 K252   ; R6 := R0["UIColor_Black"]
-331 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-332 [-]: SETTABLE  R0 R4 R5     ; R0[R4] := R5
-333 [-]: LOADK     R4 K275      ; R4 := "UIColorObject_Yellow"
-334 [-]: GETUPVAL  R5 U1        ; R5 := U1
-335 [-]: LOADK     R6 K273      ; R6 := true
-336 [-]: GETTABLE  R5 R5 R6     ; R5 := R5[R6]
-337 [-]: GETTABLE  R6 R0 K228   ; R6 := R0["UIColor_Yellow"]
-338 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-339 [-]: SETTABLE  R0 R4 R5     ; R0[R4] := R5
-340 [-]: LOADK     R4 K276      ; R4 := "UIColorObject_DarkBlue"
-341 [-]: GETUPVAL  R5 U1        ; R5 := U1
-342 [-]: LOADK     R6 K273      ; R6 := true
-343 [-]: GETTABLE  R5 R5 R6     ; R5 := R5[R6]
-344 [-]: GETTABLE  R6 R0 K222   ; R6 := R0["UIColor_DarkBlue"]
-345 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-346 [-]: SETTABLE  R0 R4 R5     ; R0[R4] := R5
-347 [-]: NEWTABLE  R4 30 0      ; R4 := {}
-348 [-]: LOADK     R5 K277      ; R5 := "All"
-349 [-]: LOADK     R6 K278      ; R6 := "Installed"
-350 [-]: LOADK     R7 K279      ; R7 := "Warframe"
-351 [-]: LOADK     R8 K280      ; R8 := "Rifle"
-352 [-]: LOADK     R9 K281      ; R9 := "HandGun"
-353 [-]: LOADK     R10 K282     ; R10 := "Melee"
-354 [-]: LOADK     R11 K283     ; R11 := "Stance"
-355 [-]: LOADK     R12 K284     ; R12 := "Sentinel"
-356 [-]: LOADK     R13 K285     ; R13 := "Kubrow"
-357 [-]: LOADK     R14 K286     ; R14 := "Aura"
-358 [-]: LOADK     R15 K287     ; R15 := "Misc"
-359 [-]: LOADK     R16 K288     ; R16 := "Cores"
-360 [-]: LOADK     R17 K289     ; R17 := "Build"
-361 [-]: LOADK     R18 K290     ; R18 := "Materials"
-362 [-]: LOADK     R19 K291     ; R19 := "Skins"
-363 [-]: LOADK     R20 K292     ; R20 := "Corpus"
-364 [-]: LOADK     R21 K293     ; R21 := "Grineer"
-365 [-]: LOADK     R22 K294     ; R22 := "Infested"
-366 [-]: LOADK     R23 K295     ; R23 := "Wild"
-367 [-]: LOADK     R24 K296     ; R24 := "Orokin"
-368 [-]: LOADK     R25 K297     ; R25 := "Sentient"
-369 [-]: LOADK     R26 K298     ; R26 := "Stalker"
-370 [-]: LOADK     R27 K299     ; R27 := "Duplicates"
-371 [-]: LOADK     R28 K300     ; R28 := "Archwing"
-372 [-]: LOADK     R29 K301     ; R29 := "ArchwingPrimary"
-373 [-]: LOADK     R30 K302     ; R30 := "ArchwingSecondary"
-374 [-]: LOADK     R31 K303     ; R31 := "Mods"
-375 [-]: LOADK     R32 K304     ; R32 := "Sigils"
-376 [-]: LOADK     R33 K305     ; R33 := "Augment"
-377 [-]: LOADK     R34 K306     ; R34 := "Utility"
-378 [-]: LOADK     R35 K307     ; R35 := "Omega"
-379 [-]: LOADK     R36 K308     ; R36 := "Companions"
-380 [-]: LOADK     R37 K309     ; R37 := "Amps"
-381 [-]: LOADK     R38 K310     ; R38 := "Cephalon"
-382 [-]: LOADK     R39 K311     ; R39 := "Cetus"
-383 [-]: LOADK     R40 K312     ; R40 := "Glass"
-384 [-]: LOADK     R41 K313     ; R41 := "Ghouls"
-385 [-]: LOADK     R42 K314     ; R42 := "Solaris"
-386 [-]: LOADK     R43 K315     ; R43 := "FusionTreasures"
-387 [-]: LOADK     R44 K316     ; R44 := "Displays"
-388 [-]: LOADK     R45 K317     ; R45 := "Noggles"
-389 [-]: LOADK     R46 K318     ; R46 := "Vehicles"
-390 [-]: LOADK     R47 K319     ; R47 := "Recipes"
-391 [-]: LOADK     R48 K320     ; R48 := "Imprints"
-392 [-]: LOADK     R49 K321     ; R49 := "Immortal"
-393 [-]: LOADK     R50 K322     ; R50 := "DataKnife"
-394 [-]: LOADK     R51 K323     ; R51 := "Incomplete"
-395 [-]: LOADK     R52 K324     ; R52 := "Railjack"
-396 [-]: LOADK     R53 K325     ; R53 := "RailjackDefensive"
-397 [-]: LOADK     R54 K326     ; R54 := "RailjackOffensive"
-398 [-]: SETLIST   R4 50 1      ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 50
-399 [-]: LOADK     R5 K327      ; R5 := "RailjackSuper"
-400 [-]: LOADK     R6 K328      ; R6 := "RailjackTactical"
-401 [-]: LOADK     R
+       0 [-]: GETTABLEKS R2 R0 K0 ["CommonResourcesType"]
+       1 [-]: FASTCALL1 62 R2 L0
+       2 [-]: GETIMPORT R1 2 [nil]
+       3 [-]: CALL R1 1 1  
+L 0:   4 [-]: JUMPIF R1 L1 
+       5 [-]: RETURN R0 0  
+L 1:   6 [-]: GETIMPORT R1 4 [nil]
+       7 [-]: GETIMPORT R2 6 [nil]
+       8 [-]: NAMECALL R2 R2 K7 [0x492F9DA2]
+       9 [-]: CALL R2 1 -1 
+      10 [-]: CALL R1 -1 1 
+      11 [-]: SETTABLEKS R1 R0 K0 ["CommonResourcesType"]
+      12 [-]: GETIMPORT R1 9 [nil]
+      13 [-]: SETTABLEKS R1 R0 K10 ["UIFx_ConsolePress"]
+      14 [-]: GETIMPORT R1 12 [nil]
+      15 [-]: SETTABLEKS R1 R0 K13 ["UIFx_PCPress"]
+      16 [-]: GETIMPORT R1 15 [nil]
+      17 [-]: SETTABLEKS R1 R0 K16 ["UIFx_LeftBumperPress"]
+      18 [-]: GETIMPORT R1 18 [nil]
+      19 [-]: SETTABLEKS R1 R0 K19 ["UIFx_LeftBumperPress3d"]
+      20 [-]: GETIMPORT R1 21 [nil]
+      21 [-]: SETTABLEKS R1 R0 K22 ["UIFx_RightBumperPress"]
+      22 [-]: GETIMPORT R1 24 [nil]
+      23 [-]: SETTABLEKS R1 R0 K25 ["UIFx_RightBumperPress3d"]
+      24 [-]: GETIMPORT R1 27 [nil]
+      25 [-]: SETTABLEKS R1 R0 K28 ["UIMovie_ConfirmMovie"]
+      26 [-]: GETIMPORT R1 30 [nil]
+      27 [-]: SETTABLEKS R1 R0 K31 ["UIMovie_TransmissionMovie"]
+      28 [-]: GETIMPORT R1 33 [nil]
+      29 [-]: SETTABLEKS R1 R0 K34 ["UIMovie_ItemBrowsingMovie"]
+      30 [-]: GETIMPORT R1 36 [nil]
+      31 [-]: SETTABLEKS R1 R0 K37 ["UIMovie_PlatBrowsingMovie"]
+      32 [-]: GETIMPORT R1 39 [nil]
+      33 [-]: SETTABLEKS R1 R0 K40 ["UIMovie_ChatReduxMovie"]
+      34 [-]: GETIMPORT R1 42 [nil]
+      35 [-]: SETTABLEKS R1 R0 K43 ["UIMovie_InputCountMovie"]
+      36 [-]: GETIMPORT R1 45 [nil]
+      37 [-]: SETTABLEKS R1 R0 K46 ["UIMovie_ColorPicker"]
+      38 [-]: GETIMPORT R1 48 [nil]
+      39 [-]: SETTABLEKS R1 R0 K49 ["UIMovie_InputDialogMovie"]
+      40 [-]: GETIMPORT R1 51 [nil]
+      41 [-]: SETTABLEKS R1 R0 K52 ["UIMovie_MeleeCombosMovie"]
+      42 [-]: GETIMPORT R1 54 [nil]
+      43 [-]: SETTABLEKS R1 R0 K55 ["UIMovie_ArcWingHudMovie"]
+      44 [-]: GETIMPORT R1 57 [nil]
+      45 [-]: SETTABLEKS R1 R0 K58 ["UIMovie_EndOfQuestMovie"]
+      46 [-]: GETIMPORT R1 60 [nil]
+      47 [-]: SETTABLEKS R1 R0 K61 ["UIMovie_ShipDecoHUD"]
+      48 [-]: GETIMPORT R1 63 [nil]
+      49 [-]: SETTABLEKS R1 R0 K64 ["UIMovie_DetailedPurchaseDialog"]
+      50 [-]: GETIMPORT R1 66 [nil]
+      51 [-]: SETTABLEKS R1 R0 K67 ["UIMovie_SolarMap"]
+      52 [-]: GETIMPORT R1 69 [nil]
+      53 [-]: SETTABLEKS R1 R0 K70 ["UIMovie_GenericMenu"]
+      54 [-]: GETIMPORT R1 72 [nil]
+      55 [-]: SETTABLEKS R1 R0 K73 ["UIMovie_GenericSettings"]
+      56 [-]: GETIMPORT R1 75 [nil]
+      57 [-]: SETTABLEKS R1 R0 K76 ["UIMovie_LoadoutSelectMovie"]
+      58 [-]: GETIMPORT R1 78 [nil]
+      59 [-]: SETTABLEKS R1 R0 K79 ["UIMovie_NemesisInfoMovie"]
+      60 [-]: GETIMPORT R1 81 [nil]
+      61 [-]: SETTABLEKS R1 R0 K82 ["UIMaterial_Plain"]
+      62 [-]: GETIMPORT R1 84 [nil]
+      63 [-]: SETTABLEKS R1 R0 K85 ["UIMaterial_PlainText"]
+      64 [-]: GETIMPORT R1 87 [nil]
+      65 [-]: SETTABLEKS R1 R0 K88 ["UIMaterial_DepthTestText"]
+      66 [-]: GETIMPORT R1 90 [nil]
+      67 [-]: SETTABLEKS R1 R0 K91 ["UIMaterial_VisibilityRange"]
+      68 [-]: GETIMPORT R1 93 [nil]
+      69 [-]: SETTABLEKS R1 R0 K94 ["UIMaterial_VerticalVisibilityRange"]
+      70 [-]: GETIMPORT R1 96 [nil]
+      71 [-]: SETTABLEKS R1 R0 K97 ["UIMaterial_VerticalVisibilityRangeText"]
+      72 [-]: GETIMPORT R1 99 [nil]
+      73 [-]: SETTABLEKS R1 R0 K100 ["UIMaterial_Plasma"]
+      74 [-]: GETIMPORT R1 102 [nil]
+      75 [-]: SETTABLEKS R1 R0 K103 ["UIMaterial_Icon"]
+      76 [-]: GETIMPORT R1 105 [nil]
+      77 [-]: SETTABLEKS R1 R0 K106 ["UIMaterial_MiniMap"]
+      78 [-]: GETIMPORT R1 108 [nil]
+      79 [-]: SETTABLEKS R1 R0 K109 ["UIMaterial_Diegetic"]
+      80 [-]: GETIMPORT R1 111 [nil]
+      81 [-]: SETTABLEKS R1 R0 K112 ["UIMaterial_SmoothEdge"]
+      82 [-]: GETIMPORT R1 114 [nil]
+      83 [-]: SETTABLEKS R1 R0 K115 ["UIMaterial_SmoothEdgeNoDepthTest"]
+      84 [-]: GETIMPORT R1 117 [nil]
+      85 [-]: SETTABLEKS R1 R0 K118 ["UIMaterial_Rectangle"]
+      86 [-]: GETIMPORT R1 120 [nil]
+      87 [-]: SETTABLEKS R1 R0 K121 ["UIMaterial_RectangleNoDepth"]
+      88 [-]: GETIMPORT R1 123 [nil]
+      89 [-]: SETTABLEKS R1 R0 K124 ["UIMaterial_Pigment"]
+      90 [-]: GETIMPORT R1 126 [nil]
+      91 [-]: SETTABLEKS R1 R0 K127 ["UIMaterial_PigmentVisibilityRange"]
+      92 [-]: GETIMPORT R1 129 [nil]
+      93 [-]: SETTABLEKS R1 R0 K130 ["UIMaterial_Bluer"]
+      94 [-]: GETIMPORT R1 132 [nil]
+      95 [-]: SETTABLEKS R1 R0 K133 ["UIMaterial_Button"]
+      96 [-]: GETIMPORT R1 135 [nil]
+      97 [-]: SETTABLEKS R1 R0 K136 ["UIMaterial_VitruvianLines"]
+      98 [-]: NEWTABLE R1 0 24
+      99 [-]: LOADK R2 K137 ["Icon"]
+     100 [-]: LOADK R3 K138 ["Background"]
+     101 [-]: LOADK R4 K139 ["Energy"]
+     102 [-]: LOADK R5 K140 ["BottomFrame"]
+     103 [-]: LOADK R6 K141 ["TopFrame"]
+     104 [-]: LOADK R7 K142 ["Content"]
+     105 [-]: LOADK R8 K143 ["EmptySlot"]
+     106 [-]: LOADK R9 K144 ["OmegaIcon"]
+     107 [-]: LOADK R10 K145 ["Text"]
+     108 [-]: LOADK R11 K146 ["PeculiarEnergy"]
+     109 [-]: LOADK R12 K147 ["PeculiarBottomFrame"]
+     110 [-]: LOADK R13 K148 ["PeculiarTopFrame"]
+     111 [-]: LOADK R14 K149 ["GalvanizedBottomFrame"]
+     112 [-]: LOADK R15 K150 ["GalvanizedTopFrame"]
+     113 [-]: LOADK R16 K151 ["ImmortalIcon"]
+     114 [-]: LOADK R17 K152 ["ImmortalBackground"]
+     115 [-]: SETLIST R1 R2 16 [1]
+     116 [-]: LOADK R2 K153 ["ImmortalBottomFrame"]
+     117 [-]: LOADK R3 K154 ["ImmortalTopFrame"]
+     118 [-]: LOADK R4 K155 ["SmoothEdge"]
+     119 [-]: LOADK R5 K156 ["AvionicBottomFrame"]
+     120 [-]: LOADK R6 K157 ["AvionicTopFrame"]
+     121 [-]: LOADK R7 K158 ["ImmortalWildcardIcon"]
+     122 [-]: LOADK R8 K159 ["KahlTopFrame"]
+     123 [-]: LOADK R9 K160 ["KahlBottomFrame"]
+     124 [-]: SETLIST R1 R2 8 [17]
+     125 [-]: NEWTABLE R2 0 4
+     126 [-]: GETIMPORT R4 162 [nil]
+     127 [-]: NEWTABLE R5 0 0
+     128 [-]: GETIMPORT R6 164 [nil]
+     129 [-]: MOVE R7 R1   
+     130 [-]: CALL R6 1 3  
+     131 [-]: FORGPREP_INEXT R6 L3
+L 2: 132 [-]: GETTABLE R11 R4 R9
+     133 [-]: SETTABLE R11 R5 R10
+L 3: 134 [-]: FORGLOOP R6 L2 2 [inext]
+     135 [-]: MOVE R3 R5   
+     136 [-]: GETIMPORT R5 166 [nil]
+     137 [-]: NEWTABLE R6 0 0
+     138 [-]: GETIMPORT R7 164 [nil]
+     139 [-]: MOVE R8 R1   
+     140 [-]: CALL R7 1 3  
+     141 [-]: FORGPREP_INEXT R7 L5
+L 4: 142 [-]: GETTABLE R12 R5 R10
+     143 [-]: SETTABLE R12 R6 R11
+L 5: 144 [-]: FORGLOOP R7 L4 2 [inext]
+     145 [-]: MOVE R4 R6   
+     146 [-]: GETIMPORT R6 168 [nil]
+     147 [-]: NEWTABLE R7 0 0
+     148 [-]: GETIMPORT R8 164 [nil]
+     149 [-]: MOVE R9 R1   
+     150 [-]: CALL R8 1 3  
+     151 [-]: FORGPREP_INEXT R8 L7
+L 6: 152 [-]: GETTABLE R13 R6 R11
+     153 [-]: SETTABLE R13 R7 R12
+L 7: 154 [-]: FORGLOOP R8 L6 2 [inext]
+     155 [-]: MOVE R5 R7   
+     156 [-]: GETIMPORT R7 170 [nil]
+     157 [-]: NEWTABLE R8 0 0
+     158 [-]: GETIMPORT R9 164 [nil]
+     159 [-]: MOVE R10 R1  
+     160 [-]: CALL R9 1 3  
+     161 [-]: FORGPREP_INEXT R9 L9
+L 8: 162 [-]: GETTABLE R14 R7 R12
+     163 [-]: SETTABLE R14 R8 R13
+L 9: 164 [-]: FORGLOOP R9 L8 2 [inext]
+     165 [-]: MOVE R6 R8   
+     166 [-]: SETLIST R2 R3 4 [1]
+     167 [-]: SETTABLEKS R2 R0 K171 ["UIMaterial_Mods"]
+     168 [-]: NEWTABLE R2 0 6
+     169 [-]: LOADK R3 K172 ["ArbitersSyndicate"]
+     170 [-]: LOADK R4 K173 ["SteelMeridianSyndicate"]
+     171 [-]: LOADK R5 K174 ["PerrinSyndicate"]
+     172 [-]: LOADK R6 K175 ["RedVeilSyndicate"]
+     173 [-]: LOADK R7 K176 ["CephalonSudaSyndicate"]
+     174 [-]: LOADK R8 K177 ["NewLokaSyndicate"]
+     175 [-]: SETLIST R2 R3 6 [1]
+     176 [-]: NEWTABLE R3 0 4
+     177 [-]: GETIMPORT R5 179 [nil]
+     178 [-]: NEWTABLE R6 0 0
+     179 [-]: GETIMPORT R7 164 [nil]
+     180 [-]: MOVE R8 R2   
+     181 [-]: CALL R7 1 3  
+     182 [-]: FORGPREP_INEXT R7 L11
+L10: 183 [-]: GETTABLE R12 R5 R10
+     184 [-]: SETTABLE R12 R6 R11
+L11: 185 [-]: FORGLOOP R7 L10 2 [inext]
+     186 [-]: MOVE R4 R6   
+     187 [-]: GETIMPORT R6 181 [nil]
+     188 [-]: NEWTABLE R7 0 0
+     189 [-]: GETIMPORT R8 164 [nil]
+     190 [-]: MOVE R9 R2   
+     191 [-]: CALL R8 1 3  
+     192 [-]: FORGPREP_INEXT R8 L13
+L12: 193 [-]: GETTABLE R13 R6 R11
+     194 [-]: SETTABLE R13 R7 R12
+L13: 195 [-]: FORGLOOP R8 L12 2 [inext]
+     196 [-]: MOVE R5 R7   
+     197 [-]: GETIMPORT R7 183 [nil]
+     198 [-]: NEWTABLE R8 0 0
+     199 [-]: GETIMPORT R9 164 [nil]
+     200 [-]: MOVE R10 R2  
+     201 [-]: CALL R9 1 3  
+     202 [-]: FORGPREP_INEXT R9 L15
+L14: 203 [-]: GETTABLE R14 R7 R12
+     204 [-]: SETTABLE R14 R8 R13
+L15: 205 [-]: FORGLOOP R9 L14 2 [inext]
+     206 [-]: MOVE R6 R8   
+     207 [-]: GETIMPORT R8 185 [nil]
+     208 [-]: NEWTABLE R9 0 0
+     209 [-]: GETIMPORT R10 164 [nil]
+     210 [-]: MOVE R11 R2  
+     211 [-]: CALL R10 1 3 
+     212 [-]: FORGPREP_INEXT R10 L17
+L16: 213 [-]: GETTABLE R15 R8 R13
+     214 [-]: SETTABLE R15 R9 R14
+L17: 215 [-]: FORGLOOP R10 L16 2 [inext]
+     216 [-]: MOVE R7 R9   
+     217 [-]: SETLIST R3 R4 4 [1]
+     218 [-]: SETTABLEKS R3 R0 K186 ["UIMaterial_ModsSyndicateIcons"]
+     219 [-]: NEWTABLE R3 0 5
+     220 [-]: LOADN R4 1   
+     221 [-]: LOADN R5 2   
+     222 [-]: LOADN R6 3   
+     223 [-]: LOADN R7 4   
+     224 [-]: LOADN R8 7   
+     225 [-]: SETLIST R3 R4 5 [1]
+     226 [-]: GETIMPORT R5 188 [nil]
+     227 [-]: NEWTABLE R6 0 0
+     228 [-]: GETIMPORT R7 164 [nil]
+     229 [-]: MOVE R8 R3   
+     230 [-]: CALL R7 1 3  
+     231 [-]: FORGPREP_INEXT R7 L19
+L18: 232 [-]: GETTABLE R12 R5 R10
+     233 [-]: SETTABLE R12 R6 R11
+L19: 234 [-]: FORGLOOP R7 L18 2 [inext]
+     235 [-]: MOVE R4 R6   
+     236 [-]: SETTABLEKS R4 R0 K189 ["UIMaterial_FocusLens"]
+     237 [-]: GETIMPORT R5 191 [nil]
+     238 [-]: NEWTABLE R6 0 0
+     239 [-]: GETIMPORT R7 164 [nil]
+     240 [-]: MOVE R8 R3   
+     241 [-]: CALL R7 1 3  
+     242 [-]: FORGPREP_INEXT R7 L21
+L20: 243 [-]: GETTABLE R12 R5 R10
+     244 [-]: SETTABLE R12 R6 R11
+L21: 245 [-]: FORGLOOP R7 L20 2 [inext]
+     246 [-]: MOVE R4 R6   
+     247 [-]: SETTABLEKS R4 R0 K192 ["UIMaterial_FocusLensStore"]
+     248 [-]: GETIMPORT R5 194 [nil]
+     249 [-]: NEWTABLE R6 0 0
+     250 [-]: GETIMPORT R7 164 [nil]
+     251 [-]: MOVE R8 R3   
+     252 [-]: CALL R7 1 3  
+     253 [-]: FORGPREP_INEXT R7 L23
+L22: 254 [-]: GETTABLE R12 R5 R10
+     255 [-]: SETTABLE R12 R6 R11
+L23: 256 [-]: FORGLOOP R7 L22 2 [inext]
+     257 [-]: MOVE R4 R6   
+     258 [-]: SETTABLEKS R4 R0 K195 ["UIMaterial_FocusLensStoreDepth"]
+     259 [-]: GETIMPORT R4 197 [nil]
+     260 [-]: SETTABLEKS R4 R0 K198 ["UIMaterial_ArchonShards"]
+     261 [-]: GETIMPORT R4 200 [nil]
+     262 [-]: SETTABLEKS R4 R0 K201 ["UIMaterial_ArchonShardsStore"]
+     263 [-]: GETIMPORT R4 203 [nil]
+     264 [-]: SETTABLEKS R4 R0 K204 ["UIMaterial_ArchonShardsStoreDepth"]
+     265 [-]: GETIMPORT R4 206 [nil]
+     266 [-]: SETTABLEKS R4 R0 K207 ["UIMaterial_CosmeticEnhancers"]
+     267 [-]: GETIMPORT R4 209 [nil]
+     268 [-]: SETTABLEKS R4 R0 K210 ["UIMaterial_CosmeticEnhancersStore"]
+     269 [-]: GETIMPORT R4 212 [nil]
+     270 [-]: SETTABLEKS R4 R0 K213 ["UIMaterial_CosmeticEnhancersStoreDepth"]
+     271 [-]: GETIMPORT R4 215 [nil]
+     272 [-]: SETTABLEKS R4 R0 K216 ["UIMaterial_CosmeticEnhancersStoreHorizontal"]
+     273 [-]: GETIMPORT R4 218 [nil]
+     274 [-]: SETTABLEKS R4 R0 K219 ["UIMaterial_CosmeticEnhancersStoreDepthHorizontal"]
+     275 [-]: GETIMPORT R4 221 [nil]
+     276 [-]: SETTABLEKS R4 R0 K222 ["UIMaterial_RailjackMod"]
+     277 [-]: GETIMPORT R4 224 [nil]
+     278 [-]: SETTABLEKS R4 R0 K225 ["UIMaterial_RailjackModStore"]
+     279 [-]: GETIMPORT R4 227 [nil]
+     280 [-]: SETTABLEKS R4 R0 K228 ["UIMaterial_RailjackModStoreDepth"]
+     281 [-]: GETIMPORT R4 230 [nil]
+     282 [-]: SETTABLEKS R4 R0 K231 ["UIMaterial_SpaceMarker"]
+     283 [-]: GETIMPORT R4 233 [nil]
+     284 [-]: SETTABLEKS R4 R0 K234 ["UIMaterial_SpaceMarkerCrewShip"]
+     285 [-]: GETIMPORT R4 236 [nil]
+     286 [-]: SETTABLEKS R4 R0 K237 ["UIMaterial_SpaceMarkerCircle"]
+     287 [-]: GETIMPORT R4 239 [nil]
+     288 [-]: SETTABLEKS R4 R0 K240 ["UIMaterial_RailjackModStoreHorizontal"]
+     289 [-]: GETIMPORT R4 242 [nil]
+     290 [-]: SETTABLEKS R4 R0 K243 ["UIMaterial_RailjackModStoreDepthHorizontal"]
+     291 [-]: GETIMPORT R4 245 [nil]
+     292 [-]: SETTABLEKS R4 R0 K246 ["UIMaterial_EmojiColors"]
+     293 [-]: GETIMPORT R4 248 [nil]
+     294 [-]: SETTABLEKS R4 R0 K249 ["UIMaterial_SalvageMaterials"]
+     295 [-]: GETIMPORT R4 251 [nil]
+     296 [-]: SETTABLEKS R4 R0 K252 ["UIMaterial_Mastery"]
+     297 [-]: GETIMPORT R4 254 [nil]
+     298 [-]: SETTABLEKS R4 R0 K255 ["UITexture_CreditsIcon"]
+     299 [-]: GETIMPORT R4 257 [nil]
+     300 [-]: SETTABLEKS R4 R0 K258 ["UITexture_PlatinumIcon"]
+     301 [-]: GETIMPORT R4 260 [nil]
+     302 [-]: SETTABLEKS R4 R0 K261 ["UITexture_ProfilePlaceHolder"]
+     303 [-]: GETIMPORT R4 263 [nil]
+     304 [-]: SETTABLEKS R4 R0 K264 ["UITexture_Blueprint"]
+     305 [-]: GETIMPORT R4 266 [nil]
+     306 [-]: SETTABLEKS R4 R0 K267 ["UITexture_ReusableBlueprint"]
+     307 [-]: GETIMPORT R4 269 [nil]
+     308 [-]: SETTABLEKS R4 R0 K270 ["UITexture_Search"]
+     309 [-]: GETIMPORT R4 272 [nil]
+     310 [-]: SETTABLEKS R4 R0 K273 ["UITexture_ClearSearch"]
+     311 [-]: GETIMPORT R4 275 [nil]
+     312 [-]: SETTABLEKS R4 R0 K276 ["UITexture_Polarity"]
+     313 [-]: GETIMPORT R4 278 [nil]
+     314 [-]: SETTABLEKS R4 R0 K279 ["UITexture_Wishlist"]
+     315 [-]: GETIMPORT R4 281 [nil]
+     316 [-]: SETTABLEKS R4 R0 K282 ["UITexture_Bundle"]
+     317 [-]: GETIMPORT R4 284 [nil]
+     318 [-]: SETTABLEKS R4 R0 K285 ["UITexture_Mastery"]
+     319 [-]: GETIMPORT R4 287 [nil]
+     320 [-]: SETTABLEKS R4 R0 K288 ["UITexture_ClanClass"]
+     321 [-]: GETIMPORT R4 290 [nil]
+     322 [-]: SETTABLEKS R4 R0 K291 ["UITexture_EmptySlot"]
+     323 [-]: GETIMPORT R4 293 [nil]
+     324 [-]: SETTABLEKS R4 R0 K294 ["UITexture_LabelIcons"]
+     325 [-]: GETIMPORT R4 296 [nil]
+     326 [-]: SETTABLEKS R4 R0 K297 ["UITexture_EvolutionLabelIcon"]
+     327 [-]: GETIMPORT R4 299 [nil]
+     328 [-]: SETTABLEKS R4 R0 K300 ["UITexture_CircleGradientBacker"]
+     329 [-]: GETIMPORT R4 302 [nil]
+     330 [-]: SETTABLEKS R4 R0 K303 ["UITexture_CompanionIcons"]
+     331 [-]: GETIMPORT R4 305 [nil]
+     332 [-]: SETTABLEKS R4 R0 K306 ["UITexture_GenderIcons"]
+     333 [-]: GETIMPORT R4 308 [nil]
+     334 [-]: SETTABLEKS R4 R0 K309 ["UITexture_SettingsIcons"]
+     335 [-]: GETIMPORT R4 311 [nil]
+     336 [-]: SETTABLEKS R4 R0 K312 ["UITexture_Salvage"]
+     337 [-]: GETIMPORT R4 314 [nil]
+     338 [-]: SETTABLEKS R4 R0 K315 ["UITexture_FavoriteIcons"]
+     339 [-]: LOADK R4 K316 [1405683]
+     340 [-]: SETTABLEKS R4 R0 K317 ["UIColor_Blue"]
+     341 [-]: LOADK R4 K318 [12769497]
+     342 [-]: SETTABLEKS R4 R0 K319 ["UIColor_LightBlue"]
+     343 [-]: LOADK R4 K320 [8100006]
+     344 [-]: SETTABLEKS R4 R0 K321 ["UIColor_MediumBlue"]
+     345 [-]: LOADK R4 K322 [4546669]
+     346 [-]: SETTABLEKS R4 R0 K323 ["UIColor_DarkBlue"]
+     347 [-]: LOADK R4 K324 [8421504]
+     348 [-]: SETTABLEKS R4 R0 K325 ["UIColor_MediumGrey"]
+     349 [-]: LOADK R4 K326 [2368548]
+     350 [-]: SETTABLEKS R4 R0 K327 ["UIColor_DarkGrey"]
+     351 [-]: LOADK R4 K328 [15258973]
+     352 [-]: SETTABLEKS R4 R0 K329 ["UIColor_Yellow"]
+     353 [-]: LOADK R4 K330 [13466625]
+     354 [-]: SETTABLEKS R4 R0 K331 ["UIColor_Orange"]
+     355 [-]: LOADK R4 K332 [16763904]
+     356 [-]: SETTABLEKS R4 R0 K333 ["UIColor_Gold"]
+     357 [-]: LOADK R4 K334 [13379881]
+     358 [-]: SETTABLEKS R4 R0 K335 ["UIColor_Health"]
+     359 [-]: LOADK R4 K336 [54783]
+     360 [-]: SETTABLEKS R4 R0 K337 ["UIColor_Shield"]
+     361 [-]: LOADK R4 K338 [11731199]
+     362 [-]: SETTABLEKS R4 R0 K339 ["UIColor_Overshield"]
+     363 [-]: LOADK R4 K340 [4502359]
+     364 [-]: SETTABLEKS R4 R0 K341 ["UIColor_Stamina"]
+     365 [-]: LOADK R4 K342 [14591541]
+     366 [-]: SETTABLEKS R4 R0 K343 ["UIColor_Armor"]
+     367 [-]: LOADK R4 K344 [13108230]
+     368 [-]: SETTABLEKS R4 R0 K345 ["UIColor_Red"]
+     369 [-]: LOADK R4 K346 [9298982]
+     370 [-]: SETTABLEKS R4 R0 K347 ["UIColor_Green"]
+     371 [-]: LOADK R4 K348 [12118144]
+     372 [-]: SETTABLEKS R4 R0 K349 ["UIColor_LightGreen"]
+     373 [-]: LOADK R4 K350 [15724527]
+     374 [-]: SETTABLEKS R4 R0 K351 ["UIColor_White"]
+     375 [-]: LOADN R4 0   
+     376 [-]: SETTABLEKS R4 R0 K352 ["UIColor_Black"]
+     377 [-]: LOADK R4 K353 [5030911]
+     378 [-]: SETTABLEKS R4 R0 K354 ["UIColor_PositiveReputation"]
+     379 [-]: LOADK R4 K355 [16731212]
+     380 [-]: SETTABLEKS R4 R0 K356 ["UIColor_NegativeReputation"]
+     381 [-]: LOADK R4 K357 [15647744]
+     382 [-]: SETTABLEKS R4 R0 K358 ["UIColor_OpposedReputation"]
+     383 [-]: LOADK R4 K359 [15044409]
+     384 [-]: SETTABLEKS R4 R0 K360 ["UIColor_PvpTeamOne"]
+     385 [-]: LOADK R4 K361 [3000544]
+     386 [-]: SETTABLEKS R4 R0 K362 ["UIColor_PvpTeamTwo"]
+     387 [-]: LOADK R4 K363 [15945236]
+     388 [-]: SETTABLEKS R4 R0 K364 ["UIColor_PvpKill"]
+     389 [-]: LOADK R4 K365 [3394815]
+     390 [-]: SETTABLEKS R4 R0 K366 ["UIColor_Hyperlink"]
+     391 [-]: LOADK R4 K367 [15714870]
+     392 [-]: SETTABLEKS R4 R0 K368 ["UIColor_UnlimitedUseBP"]
+     393 [-]: GETUPVAL R5 0
+     394 [-]: GETTABLEKS R4 R5 K369 [0x4BC83635]
+     395 [-]: GETTABLEKS R5 R0 K351 ["UIColor_White"]
+     396 [-]: CALL R4 1 1  
+     397 [-]: SETTABLEKS R4 R0 K370 ["UIColor_RGB_White"]
+     398 [-]: GETUPVAL R5 0
+     399 [-]: GETTABLEKS R4 R5 K371 [0x8BCD12B6]
+     400 [-]: GETTABLEKS R5 R0 K351 ["UIColor_White"]
+     401 [-]: CALL R4 1 1  
+     402 [-]: SETTABLEKS R4 R0 K372 ["UIColorObject_White"]
+     403 [-]: GETUPVAL R5 0
+     404 [-]: GETTABLEKS R4 R5 K371 [0x8BCD12B6]
+     405 [-]: GETTABLEKS R5 R0 K352 ["UIColor_Black"]
+     406 [-]: CALL R4 1 1  
+     407 [-]: SETTABLEKS R4 R0 K373 ["UIColorObject_Black"]
+     408 [-]: GETUPVAL R5 0
+     409 [-]: GETTABLEKS R4 R5 K371 [0x8BCD12B6]
+     410 [-]: GETTABLEKS R5 R0 K329 ["UIColor_Yellow"]
+     411 [-]: CALL R4 1 1  
+     412 [-]: SETTABLEKS R4 R0 K374 ["UIColorObject_Yellow"]
+     413 [-]: GETUPVAL R5 0
+     414 [-]: GETTABLEKS R4 R5 K371 [0x8BCD12B6]
+     415 [-]: GETTABLEKS R5 R0 K323 ["UIColor_DarkBlue"]
+     416 [-]: CALL R4 1 1  
+     417 [-]: SETTABLEKS R4 R0 K375 ["UIColorObject_DarkBlue"]
+     418 [-]: NEWTABLE R4 0 55
+     419 [-]: LOADK R5 K376 ["All"]
+     420 [-]: LOADK R6 K377 ["Installed"]
+     421 [-]: LOADK R7 K378 ["Warframe"]
+     422 [-]: LOADK R8 K379 ["Rifle"]
+     423 [-]: LOADK R9 K380 ["HandGun"]
+     424 [-]: LOADK R10 K381 ["Melee"]
+     425 [-]: LOADK R11 K382 ["Stance"]
+     426 [-]: LOADK R12 K383 ["Sentinel"]
+     427 [-]: LOADK R13 K384 ["Kubrow"]
+     428 [-]: LOADK R14 K385 ["Aura"]
+     429 [-]: LOADK R15 K386 ["Misc"]
+     430 [-]: LOADK R16 K387 ["Cores"]
+     431 [-]: LOADK R17 K388 ["Build"]
+     432 [-]: LOADK R18 K389 ["Materials"]
+     433 [-]: LOADK R19 K390 ["Skins"]
+     434 [-]: LOADK R20 K391 ["Corpus"]
+     435 [-]: SETLIST R4 R5 16 [1]
+     436 [-]: LOADK R5 K392 ["Grineer"]
+     437 [-]: LOADK R6 K393 ["Infested"]
+     438 [-]: LOADK R7 K394 ["Wild"]
+     439 [-]: LOADK R8 K395 ["Orokin"]
+     440 [-]: LOADK R9 K396 ["Sentient"]
+     441 [-]: LOADK R10 K397 ["Stalker"]
+     442 [-]: LOADK R11 K398 ["Duplicates"]
+     443 [-]: LOADK R12 K399 ["Archwing"]
+     444 [-]: LOADK R13 K400 ["ArchwingPrimary"]
+     445 [-]: LOADK R14 K401 ["ArchwingSecondary"]
+     446 [-]: LOADK R15 K402 ["Mods"]
+     447 [-]: LOADK R16 K403 ["Sigils"]
+     448 [-]: LOADK R17 K404 ["Augment"]
+     449 [-]: LOADK R18 K405 ["Utility"]
+     450 [-]: LOADK R19 K406 ["Omega"]
+     451 [-]: LOADK R20 K407 ["Companions"]
+     452 [-]: SETLIST R4 R5 16 [17]
+     453 [-]: LOADK R5 K408 ["Amps"]
+     454 [-]: LOADK R6 K409 ["Cephalon"]
+     455 [-]: LOADK R7 K410 ["Cetus"]
+     456 [-]: LOADK R8 K411 ["Glass"]
+     457 [-]: LOADK R9 K412 ["Ghouls"]
+     458 [-]: LOADK R10 K413 ["Solaris"]
+     459 [-]: LOADK R11 K414 ["FusionTreasures"]
+     460 [-]: LOADK R12 K415 ["Displays"]
+     461 [-]: LOADK R13 K416 ["Noggles"]
+     462 [-]: LOADK R14 K417 ["Vehicles"]
+     463 [-]: LOADK R15 K418 ["Recipes"]
+     464 [-]: LOADK R16 K419 ["Imprints"]
+     465 [-]: LOADK R17 K420 ["Immortal"]
+     466 [-]: LOADK R18 K421 ["DataKnife"]
+     467 [-]: LOADK R19 K422 ["Incomplete"]
+     468 [-]: LOADK R20 K423 ["Railjack"]
+     469 [-]: SETLIST R4 R5 16 [33]
+     470 [-]: LOADK R5 K424 ["RailjackDefensive"]
+     471 [-]: LOADK R6 K425 ["RailjackOffensive"]
+     472 [-]: LOADK R7 K426 ["RailjackSuper"]
+     473 [-]: LOADK R8 K427 ["RailjackTactical"]
+     474 [-]: LOADK R9 K428 ["Narmer"]
+     475 [-]: LOADK R10 K429 ["Duviri"]
+     476 [-]: LOADK R11 K430 ["EvoWeapons"]
+     477 [-]: SETLIST R4 R5 7 [49]
+     478 [-]: GETIMPORT R5 164 [nil]
+     479 [-]: MOVE R6 R4   
+     480 [-]: CALL R5 1 3  
+     481 [-]: FORGPREP_INEXT R5 L25
+L24: 482 [-]: LOADK R11 K431 ["UICategoryIcon_"]
+     483 [-]: MOVE R12 R9  
+     484 [-]: LOADK R13 K432 ["On"]
+     485 [-]: CONCAT R10 R11 R13
+     486 [-]: GETIMPORT R12 434 [nil]
+     487 [-]: GETTABLE R11 R12 R8
+     488 [-]: SETTABLE R11 R0 R10
+L25: 489 [-]: FORGLOOP R5 L24 2 [inext]
+     490 [-]: GETIMPORT R5 436 [nil]
+     491 [-]: SETTABLEKS R5 R0 K437 ["UITexture_Portrait"]
+     492 [-]: GETIMPORT R5 439 [nil]
+     493 [-]: SETTABLEKS R5 R0 K440 ["UITexture_Alert"]
+     494 [-]: GETIMPORT R5 442 [nil]
+     495 [-]: SETTABLEKS R5 R0 K443 ["UITexture_Story"]
+     496 [-]: GETIMPORT R5 445 [nil]
+     497 [-]: SETTABLEKS R5 R0 K446 ["UITexture_Skull"]
+     498 [-]: GETIMPORT R5 448 [nil]
+     499 [-]: SETTABLEKS R5 R0 K449 ["UITexture_SkullLarge"]
+     500 [-]: GETIMPORT R5 451 [nil]
+     501 [-]: SETTABLEKS R5 R0 K452 ["UITexture_VoidTear"]
+     502 [-]: GETIMPORT R5 454 [nil]
+     503 [-]: SETTABLEKS R5 R0 K455 ["UITexture_Locked"]
+     504 [-]: GETIMPORT R5 457 [nil]
+     505 [-]: SETTABLEKS R5 R0 K458 ["UITexture_Event"]
+     506 [-]: GETIMPORT R5 460 [nil]
+     507 [-]: SETTABLEKS R5 R0 K461 ["UITexture_Pvp"]
+     508 [-]: GETIMPORT R5 463 [nil]
+     509 [-]: SETTABLEKS R5 R0 K464 ["UITexture_PvpChallenges"]
+     510 [-]: GETIMPORT R5 466 [nil]
+     511 [-]: SETTABLEKS R5 R0 K467 ["UITexture_PvpWeeklyChallenges"]
+     512 [-]: GETIMPORT R5 469 [nil]
+     513 [-]: SETTABLEKS R5 R0 K470 ["UITexture_Hub"]
+     514 [-]: GETIMPORT R5 472 [nil]
+     515 [-]: SETTABLEKS R5 R0 K473 ["UITexture_BossNode"]
+     516 [-]: GETIMPORT R5 475 [nil]
+     517 [-]: SETTABLEKS R5 R0 K476 ["UITexture_Invasion"]
+     518 [-]: GETIMPORT R5 478 [nil]
+     519 [-]: SETTABLEKS R5 R0 K479 ["UITexture_Syndicate"]
+     520 [-]: GETIMPORT R5 481 [nil]
+     521 [-]: SETTABLEKS R5 R0 K482 ["UITexture_Darvo"]
+     522 [-]: GETIMPORT R5 484 [nil]
+     523 [-]: SETTABLEKS R5 R0 K485 ["UITexture_DefaultClan"]
+     524 [-]: GETIMPORT R5 487 [nil]
+     525 [-]: SETTABLEKS R5 R0 K488 ["UITexture_DefaultAlliance"]
+     526 [-]: GETIMPORT R5 490 [nil]
+     527 [-]: SETTABLEKS R5 R0 K491 ["UITexture_BadlandConflict"]
+     528 [-]: GETIMPORT R5 493 [nil]
+     529 [-]: SETTABLEKS R5 R0 K494 ["UITexture_Archwing"]
+     530 [-]: GETIMPORT R5 496 [nil]
+     531 [-]: SETTABLEKS R5 R0 K497 ["UITexture_SortieEasy"]
+     532 [-]: GETIMPORT R5 499 [nil]
+     533 [-]: SETTABLEKS R5 R0 K500 ["UITexture_SortieHard"]
+     534 [-]: GETIMPORT R5 502 [nil]
+     535 [-]: SETTABLEKS R5 R0 K503 ["UITexture_SortieFinal"]
+     536 [-]: GETIMPORT R5 505 [nil]
+     537 [-]: SETTABLEKS R5 R0 K506 ["UITexture_SortieGeneric"]
+     538 [-]: GETIMPORT R5 508 [nil]
+     539 [-]: SETTABLEKS R5 R0 K509 ["UITexture_Acolyte"]
+     540 [-]: GETIMPORT R5 511 [nil]
+     541 [-]: SETTABLEKS R5 R0 K512 ["UITexture_Arena"]
+     542 [-]: GETIMPORT R5 514 [nil]
+     543 [-]: SETTABLEKS R5 R0 K515 ["UITexture_EliteAlert"]
+     544 [-]: GETIMPORT R5 517 [nil]
+     545 [-]: SETTABLEKS R5 R0 K518 ["UITextures_FactionInvasion"]
+     546 [-]: GETIMPORT R5 520 [nil]
+     547 [-]: SETTABLEKS R5 R0 K521 ["UITextures_CorpusShip"]
+     548 [-]: GETIMPORT R5 523 [nil]
+     549 [-]: SETTABLEKS R5 R0 K524 ["UITextures_GrineerAsteroid"]
+     550 [-]: GETIMPORT R5 526 [nil]
+     551 [-]: SETTABLEKS R5 R0 K527 ["UITextures_GrineerShip"]
+     552 [-]: GETIMPORT R5 529 [nil]
+     553 [-]: SETTABLEKS R5 R0 K530 ["UITextures_Outpost"]
+     554 [-]: GETIMPORT R5 532 [nil]
+     555 [-]: SETTABLEKS R5 R0 K533 ["UITextures_Settlement"]
+     556 [-]: GETIMPORT R5 535 [nil]
+     557 [-]: SETTABLEKS R5 R0 K536 ["UITextures_NarmerSettlement"]
+     558 [-]: GETIMPORT R5 538 [nil]
+     559 [-]: SETTABLEKS R5 R0 K539 ["UITextures_GasCity"]
+     560 [-]: GETIMPORT R5 541 [nil]
+     561 [-]: SETTABLEKS R5 R0 K542 ["UITextures_NarmerGasCity"]
+     562 [-]: GETIMPORT R5 544 [nil]
+     563 [-]: SETTABLEKS R5 R0 K545 ["UITextures_GrineerForest"]
+     564 [-]: GETIMPORT R5 547 [nil]
+     565 [-]: SETTABLEKS R5 R0 K548 ["UITextures_NarmerGrineerForest"]
+     566 [-]: GETIMPORT R5 550 [nil]
+     567 [-]: SETTABLEKS R5 R0 K551 ["UITextures_GrineerShipyard"]
+     568 [-]: GETIMPORT R5 553 [nil]
+     569 [-]: SETTABLEKS R5 R0 K554 ["UITextures_InfestedCorpusShip"]
+     570 [-]: GETIMPORT R5 556 [nil]
+     571 [-]: SETTABLEKS R5 R0 K557 ["UITextures_GameModeTextures"]
+     572 [-]: GETIMPORT R5 559 [nil]
+     573 [-]: SETTABLEKS R5 R0 K560 ["UITextures_IcePlanet"]
+     574 [-]: GETIMPORT R5 562 [nil]
+     575 [-]: SETTABLEKS R5 R0 K563 ["UITextures_ArchwingFreeFlight"]
+     576 [-]: GETIMPORT R5 565 [nil]
+     577 [-]: SETTABLEKS R5 R0 K566 ["UITextures_ArchwingTrench"]
+     578 [-]: GETIMPORT R5 568 [nil]
+     579 [-]: SETTABLEKS R5 R0 K569 ["UITextures_GrineerOcean"]
+     580 [-]: GETIMPORT R5 571 [nil]
+     581 [-]: SETTABLEKS R5 R0 K572 ["UITextures_OrokinMoon"]
+     582 [-]: GETIMPORT R5 574 [nil]
+     583 [-]: SETTABLEKS R5 R0 K575 ["UITextures_OrokinTower"]
+     584 [-]: GETIMPORT R5 577 [nil]
+     585 [-]: SETTABLEKS R5 R0 K578 ["UITextures_pvpGameModesTextures"]
+     586 [-]: GETIMPORT R5 580 [nil]
+     587 [-]: SETTABLEKS R5 R0 K581 ["UITextures_ArenaLocation"]
+     588 [-]: GETIMPORT R5 583 [nil]
+     589 [-]: SETTABLEKS R5 R0 K584 ["UITextures_GhostTower"]
+     590 [-]: GETIMPORT R5 586 [nil]
+     591 [-]: SETTABLEKS R5 R0 K587 ["UITextures_GhostTowerVariant"]
+     592 [-]: GETIMPORT R5 589 [nil]
+     593 [-]: SETTABLEKS R5 R0 K590 ["UITextures_GrineerFortress"]
+     594 [-]: GETIMPORT R5 592 [nil]
+     595 [-]: SETTABLEKS R5 R0 K593 ["UITextures_JunctionLocation"]
+     596 [-]: GETIMPORT R5 595 [nil]
+     597 [-]: SETTABLEKS R5 R0 K596 ["UITextures_EidolonPlains"]
+     598 [-]: GETIMPORT R5 598 [nil]
+     599 [-]: SETTABLEKS R5 R0 K599 ["UITypes_DojoKeyBlueprint"]
+     600 [-]: GETIMPORT R5 601 [nil]
+     601 [-]: SETTABLEKS R5 R0 K602 ["UITypes_UGCKeys"]
+     602 [-]: GETIMPORT R5 604 [nil]
+     603 [-]: SETTABLEKS R5 R0 K605 ["UITypes_OwnershipRequiredCapturaTile"]
+     604 [-]: GETIMPORT R5 607 [nil]
+     605 [-]: SETTABLEKS R5 R0 K608 ["UITypes_QuestRequiredCapturaTile"]
+     606 [-]: RETURN R0 0  
+
+
+; Name:            
+; Defined at line: 446
+; #Upvalues:       2
+; #Parameters:     0
+; Is_vararg:       0
+; Max Stack Size:  5
+
+       0 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: LOADK R2 K2 ["_root"]
+       2 [-]: LOADN R3 10  
+       3 [-]: LOADN R4 0   
+       4 [-]: NAMECALL R0 R0 K3 [0x67BC869F]
+       5 [-]: CALL R0 4 0  
+       6 [-]: GETUPVAL R0 0
+       7 [-]: GETIMPORT R1 5 [nil]
+       8 [-]: CALL R0 1 0  
+       9 [-]: LOADB R0 1   
+      10 [-]: SETUPVAL R0 1
+      11 [-]: RETURN R0 0  
+
+
+; Name:            
+; Defined at line: 452
+; #Upvalues:       1
+; #Parameters:     0
+; Is_vararg:       0
+; Max Stack Size:  4
+
+       0 [-]: GETUPVAL R0 0
+       1 [-]: JUMPIFNOT R0 L0
+       2 [-]: GETIMPORT R0 1 [nil]
+       3 [-]: LOADK R2 K2 ["CommonResourcesReady"]
+       4 [-]: LOADK R3 K3 [""]
+       5 [-]: NAMECALL R0 R0 K4 [0x7E17AE26]
+       6 [-]: CALL R0 3 0  
+       7 [-]: GETIMPORT R0 6 [nil]
+       8 [-]: NAMECALL R0 R0 K7 [0x32302B4A]
+       9 [-]: CALL R0 1 0  
+L 0:  10 [-]: RETURN R0 0  
+
+
+

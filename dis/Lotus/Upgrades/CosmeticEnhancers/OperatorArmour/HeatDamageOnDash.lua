@@ -1,147 +1,131 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
-; Max Stack Size:  2
+; Is_vararg:       1
+; Max Stack Size:  1
 
-  1 [-]: CLOSURE   R0 0         ; R0 := closure(Function #1)
-  2 [-]: SETGLOBAL R0 K0        ; GetDescription := R0
-  3 [-]: CLOSURE   R0 1         ; R0 := closure(Function #2)
-  4 [-]: SETGLOBAL R0 K1        ; HeatDamageLoop := R0
-  5 [-]: CLOSURE   R0 2         ; R0 := closure(Function #3)
-  6 [-]: SETGLOBAL R0 K2        ; IncreaseHeatDamage := R0
-  7 [-]: RETURN    R0 1         ; return 
+            1 [-]: DUPCLOSURE R0 K0 []
+       2 [-]: SETGLOBAL R0 K1 ["GetDescription"]
+       3 [-]: DUPCLOSURE R0 K2 []
+       4 [-]: SETGLOBAL R0 K3 ["HeatDamageLoop"]
+       5 [-]: DUPCLOSURE R0 K4 []
+       6 [-]: SETGLOBAL R0 K5 ["IncreaseHeatDamage"]
+       7 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 5
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  7
+; Max Stack Size:  9
 
-  1 [-]: NEWTABLE  R1 0 3       ; R1 := {}
-  2 [-]: GETGLOBAL R2 K1        ; R2 := 0xe15169d2
-  3 [-]: GETGLOBAL R3 K2        ; R3 := 0x5bced4c4
-  4 [-]: GETTABLE  R3 R3 K3     ; R3 := R3[0xac1b386a]
-  5 [-]: GETGLOBAL R4 K1        ; R4 := 0xe15169d2
-  6 [-]: LEN       R4 R4        ; R4 := # R4
-  7 [-]: MOVE      R5 R0        ; R5 := R0
-  8 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
-  9 [-]: GETTABLE  R2 R2 R3     ; R2 := R2[R3]
- 10 [-]: SETTABLE  R1 K0 R2     ; R1["DURATION"] := R2
- 11 [-]: GETGLOBAL R2 K2        ; R2 := 0x5bced4c4
- 12 [-]: GETTABLE  R2 R2 K5     ; R2 := R2[0x55f27c30]
- 13 [-]: GETGLOBAL R3 K6        ; R3 := 0x9b5ddf0b
- 14 [-]: GETGLOBAL R4 K2        ; R4 := 0x5bced4c4
- 15 [-]: GETTABLE  R4 R4 K3     ; R4 := R4[0xac1b386a]
- 16 [-]: GETGLOBAL R5 K6        ; R5 := 0x9b5ddf0b
- 17 [-]: LEN       R5 R5        ; R5 := # R5
- 18 [-]: MOVE      R6 R0        ; R6 := R0
- 19 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
- 20 [-]: GETTABLE  R3 R3 R4     ; R3 := R3[R4]
- 21 [-]: MUL       R3 R3 K7     ; R3 := R3 * 100.000000
- 22 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 23 [-]: SETTABLE  R1 K4 R2     ; R1[0x440fdee7] := R2
- 24 [-]: GETGLOBAL R2 K9        ; R2 := 0x440fdee7
- 25 [-]: GETGLOBAL R3 K2        ; R3 := 0x5bced4c4
- 26 [-]: GETTABLE  R3 R3 K3     ; R3 := R3[0xac1b386a]
- 27 [-]: GETGLOBAL R4 K9        ; R4 := 0x440fdee7
- 28 [-]: LEN       R4 R4        ; R4 := # R4
- 29 [-]: MOVE      R5 R0        ; R5 := R0
- 30 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
- 31 [-]: GETTABLE  R2 R2 R3     ; R2 := R2[R3]
- 32 [-]: SETTABLE  R1 K8 R2     ; R1["COUNT"] := R2
- 33 [-]: GETGLOBAL R2 K10       ; R2 := cjson
- 34 [-]: GETTABLE  R2 R2 K11    ; R2 := R2[0xb139d7bc]
- 35 [-]: MOVE      R3 R1        ; R3 := R1
- 36 [-]: TAILCALL  R2 2 0       ; R2,... := R2(R3)
- 37 [-]: RETURN    R2 0         ; return R2,...
- 38 [-]: RETURN    R0 1         ; return 
+       0 [-]: DUPTABLE R1 3
+       1 [-]: GETIMPORT R3 5 [nil]
+       2 [-]: GETIMPORT R6 5 [nil]
+       3 [-]: LENGTH R5 R6 
+       4 [-]: FASTCALL2 19 R5 R0 L0
+       5 [-]: MOVE R6 R0   
+       6 [-]: GETIMPORT R4 8 [nil]
+       7 [-]: CALL R4 2 1  
+L 0:   8 [-]: GETTABLE R2 R3 R4
+       9 [-]: SETTABLEKS R2 R1 K0 ["DURATION"]
+      10 [-]: GETIMPORT R5 11 [nil]
+      11 [-]: GETIMPORT R8 11 [nil]
+      12 [-]: LENGTH R7 R8 
+      13 [-]: FASTCALL2 19 R7 R0 L1
+      14 [-]: MOVE R8 R0   
+      15 [-]: GETIMPORT R6 8 [nil]
+      16 [-]: CALL R6 2 1  
+L 1:  17 [-]: GETTABLE R4 R5 R6
+      18 [-]: MULK R3 R4 K9 [100]
+      19 [-]: FASTCALL1 12 R3 L2
+      20 [-]: GETIMPORT R2 13 [nil]
+      21 [-]: CALL R2 1 1  
+L 2:  22 [-]: SETTABLEKS R2 R1 K1 ["AMOUNT"]
+      23 [-]: GETIMPORT R3 15 [nil]
+      24 [-]: GETIMPORT R6 15 [nil]
+      25 [-]: LENGTH R5 R6 
+      26 [-]: FASTCALL2 19 R5 R0 L3
+      27 [-]: MOVE R6 R0   
+      28 [-]: GETIMPORT R4 8 [nil]
+      29 [-]: CALL R4 2 1  
+L 3:  30 [-]: GETTABLE R2 R3 R4
+      31 [-]: SETTABLEKS R2 R1 K2 ["COUNT"]
+      32 [-]: GETIMPORT R2 18 [nil]
+      33 [-]: MOVE R3 R1   
+      34 [-]: CALL R2 1 -1 
+      35 [-]: RETURN R2 -1 
 
 
-; Function #2:
-;
 ; Name:            
 ; Defined at line: 15
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  15
+; Max Stack Size:  14
 
-  1 [-]: GETGLOBAL R1 K0        ; R1 := 0x7b998233
-  2 [-]: GETGLOBAL R2 K1        ; R2 := _T
-  3 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["heatDashDamage"]
-  4 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  5 [-]: TEST      R1 0         ; if not R1 then PC := 8
-  6 [-]: JMP       8            ; PC := 8
-  7 [-]: RETURN    R0 1         ; return 
-  8 [-]: SELF      R1 R0 K3     ; R2 := R0; R1 := R0[0x388577d5]
-  9 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 10 [-]: GETGLOBAL R2 K1        ; R2 := _T
- 11 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["heatDashDamage"]
- 12 [-]: GETTABLE  R2 R2 R1     ; R2 := R2[R1]
- 13 [-]: GETTABLE  R2 R2 K4     ; R2 := R2["timer"]
- 14 [-]: LT        0 K5 R2      ; if 0.000000 >= R2 then PC := 40
- 15 [-]: JMP       40           ; PC := 40
- 16 [-]: GETGLOBAL R2 K0        ; R2 := 0x7b998233
- 17 [-]: MOVE      R3 R0        ; R3 := R0
- 18 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 19 [-]: TEST      R2 1         ; if R2 then PC := 40
- 20 [-]: JMP       40           ; PC := 40
- 21 [-]: SELF      R2 R0 K6     ; R3 := R0; R2 := R0[0x2047cfe7]
- 22 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 23 [-]: TEST      R2 1         ; if R2 then PC := 40
- 24 [-]: JMP       40           ; PC := 40
- 25 [-]: GETGLOBAL R2 K1        ; R2 := _T
- 26 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["heatDashDamage"]
- 27 [-]: GETTABLE  R2 R2 R1     ; R2 := R2[R1]
- 28 [-]: GETGLOBAL R3 K1        ; R3 := _T
- 29 [-]: GETTABLE  R3 R3 K2     ; R3 := R3["heatDashDamage"]
- 30 [-]: GETTABLE  R3 R3 R1     ; R3 := R3[R1]
- 31 [-]: GETTABLE  R3 R3 K4     ; R3 := R3["timer"]
- 32 [-]: GETGLOBAL R4 K7        ; R4 := 0x67652851
- 33 [-]: CALL      R4 1 2       ; R4 := R4()
- 34 [-]: SUB       R3 R3 R4     ; R3 := R3 - R4
- 35 [-]: SETTABLE  R2 K4 R3     ; R2["timer"] := R3
- 36 [-]: GETGLOBAL R2 K8        ; R2 := 0xcbd666e1
- 37 [-]: CONST     R3 0         ; R3 := 0.000000
- 38 [-]: CALL      R2 2 1       ; R2(R3)
- 39 [-]: JMP       10           ; PC := 10
- 40 [-]: GETGLOBAL R2 K1        ; R2 := _T
- 41 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["heatDashDamage"]
- 42 [-]: GETTABLE  R2 R2 R1     ; R2 := R2[R1]
- 43 [-]: GETTABLE  R2 R2 K9     ; R2 := R2["damage"]
- 44 [-]: CONST     R3 1         ; R3 := 1.000000
- 45 [-]: GETGLOBAL R4 K1        ; R4 := _T
- 46 [-]: GETTABLE  R4 R4 K2     ; R4 := R4["heatDashDamage"]
- 47 [-]: GETTABLE  R4 R4 R1     ; R4 := R4[R1]
- 48 [-]: GETTABLE  R4 R4 K10    ; R4 := R4["stacks"]
- 49 [-]: CONST     R5 1         ; R5 := 1.000000
- 50 [-]: FORPREP   R3 60        ; R3 -= R5; PC := 60
- 51 [-]: SELF      R7 R0 K11    ; R8 := R0; R7 := R0[0xde321e6f]
- 52 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 53 [-]: SELF      R7 R7 K12    ; R8 := R7; R7 := R7[0x12dd9da2]
- 54 [-]: CONST     R9 306       ; R9 := 306.000000
- 55 [-]: CONST     R10 0        ; R10 := 0.000000
- 56 [-]: MOVE      R11 R2       ; R11 := R2
- 57 [-]: LOADNIL   R12 R13      ; R12 := R13 := nil
- 58 [-]: CONST     R14 3        ; R14 := 3.000000
- 59 [-]: CALL      R7 8 1       ; R7(R8,R9,R10,R11,R12,R13,R14)
- 60 [-]: FORLOOP   R3 51        ; R3 += R5; if R3 <= R4 then begin PC := 51; R6 := R3 end
- 61 [-]: GETGLOBAL R7 K1        ; R7 := _T
- 62 [-]: GETTABLE  R7 R7 K2     ; R7 := R7["heatDashDamage"]
- 63 [-]: SETTABLE  R7 R1 K15    ; R7[R1] := nil
- 64 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R2 2 [nil]
+       1 [-]: FASTCALL1 62 R2 L0
+       2 [-]: GETIMPORT R1 4 [nil]
+       3 [-]: CALL R1 1 1  
+L 0:   4 [-]: JUMPIFNOT R1 L1
+       5 [-]: RETURN R0 0  
+L 1:   6 [-]: NAMECALL R1 R0 K5 [0x388577D5]
+       7 [-]: CALL R1 1 1  
+L 2:   8 [-]: GETIMPORT R4 2 [nil]
+       9 [-]: GETTABLE R3 R4 R1
+      10 [-]: GETTABLEKS R2 R3 K6 ["timer"]
+      11 [-]: LOADN R3 0   
+      12 [-]: JUMPIFNOTLT R3 R2 L4
+      13 [-]: FASTCALL1 62 R0 L3
+      14 [-]: MOVE R3 R0   
+      15 [-]: GETIMPORT R2 4 [nil]
+      16 [-]: CALL R2 1 1  
+L 3:  17 [-]: JUMPIF R2 L4 
+      18 [-]: NAMECALL R2 R0 K7 [0x2047CFE7]
+      19 [-]: CALL R2 1 1  
+      20 [-]: JUMPIF R2 L4 
+      21 [-]: GETIMPORT R3 2 [nil]
+      22 [-]: GETTABLE R2 R3 R1
+      23 [-]: GETIMPORT R6 2 [nil]
+      24 [-]: GETTABLE R5 R6 R1
+      25 [-]: GETTABLEKS R4 R5 K6 ["timer"]
+      26 [-]: GETIMPORT R5 9 [nil]
+      27 [-]: CALL R5 0 1  
+      28 [-]: SUB R3 R4 R5 
+      29 [-]: SETTABLEKS R3 R2 K6 ["timer"]
+      30 [-]: GETIMPORT R2 11 [nil]
+      31 [-]: LOADN R3 0   
+      32 [-]: CALL R2 1 0  
+      33 [-]: JUMPBACK L2  
+L 4:  34 [-]: GETIMPORT R4 2 [nil]
+      35 [-]: GETTABLE R3 R4 R1
+      36 [-]: GETTABLEKS R2 R3 K12 ["damage"]
+      37 [-]: LOADN R5 1   
+      38 [-]: GETIMPORT R7 2 [nil]
+      39 [-]: GETTABLE R6 R7 R1
+      40 [-]: GETTABLEKS R3 R6 K13 ["stacks"]
+      41 [-]: LOADN R4 1   
+      42 [-]: FORNPREP R3 L6
+L 5:  43 [-]: NAMECALL R6 R0 K14 [0xDE321E6F]
+      44 [-]: CALL R6 1 1  
+      45 [-]: LOADN R8 320 
+      46 [-]: LOADN R9 0   
+      47 [-]: MOVE R10 R2  
+      48 [-]: LOADNIL R11  
+      49 [-]: LOADNIL R12  
+      50 [-]: LOADN R13 3  
+      51 [-]: NAMECALL R6 R6 K15 [0x12DD9DA2]
+      52 [-]: CALL R6 7 0  
+      53 [-]: FORNLOOP R3 L5
+L 6:  54 [-]: GETIMPORT R3 2 [nil]
+      55 [-]: LOADNIL R4   
+      56 [-]: SETTABLE R4 R3 R1
+      57 [-]: RETURN R0 0  
 
 
-; Function #3:
-;
 ; Name:            
 ; Defined at line: 34
 ; #Upvalues:       0
@@ -149,138 +133,126 @@
 ; Is_vararg:       0
 ; Max Stack Size:  18
 
-  1 [-]: GETGLOBAL R5 K0        ; R5 := 0x89326c93
-  2 [-]: SELF      R5 R5 K1     ; R6 := R5; R5 := R5[0x18d05d30]
-  3 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-  4 [-]: TEST      R5 1         ; if R5 then PC := 7
-  5 [-]: JMP       7            ; PC := 7
-  6 [-]: RETURN    R0 1         ; return 
-  7 [-]: GETGLOBAL R5 K2        ; R5 := 0x7b998233
-  8 [-]: GETGLOBAL R6 K3        ; R6 := _T
-  9 [-]: GETTABLE  R6 R6 K4     ; R6 := R6["heatDashDamage"]
- 10 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 11 [-]: TEST      R5 0         ; if not R5 then PC := 16
- 12 [-]: JMP       16           ; PC := 16
- 13 [-]: GETGLOBAL R5 K3        ; R5 := _T
- 14 [-]: NEWTABLE  R6 0 0       ; R6 := {}
- 15 [-]: SETTABLE  R5 K4 R6     ; R5["heatDashDamage"] := R6
- 16 [-]: GETGLOBAL R5 K5        ; R5 := 0x9b5ddf0b
- 17 [-]: GETGLOBAL R6 K6        ; R6 := 0x5bced4c4
- 18 [-]: GETTABLE  R6 R6 K7     ; R6 := R6[0xac1b386a]
- 19 [-]: GETGLOBAL R7 K5        ; R7 := 0x9b5ddf0b
- 20 [-]: LEN       R7 R7        ; R7 := # R7
- 21 [-]: MOVE      R8 R2        ; R8 := R2
- 22 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
- 23 [-]: GETTABLE  R5 R5 R6     ; R5 := R5[R6]
- 24 [-]: GETGLOBAL R6 K8        ; R6 := 0xe15169d2
- 25 [-]: GETGLOBAL R7 K6        ; R7 := 0x5bced4c4
- 26 [-]: GETTABLE  R7 R7 K7     ; R7 := R7[0xac1b386a]
- 27 [-]: GETGLOBAL R8 K8        ; R8 := 0xe15169d2
- 28 [-]: LEN       R8 R8        ; R8 := # R8
- 29 [-]: MOVE      R9 R2        ; R9 := R2
- 30 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
- 31 [-]: GETTABLE  R6 R6 R7     ; R6 := R6[R7]
- 32 [-]: SELF      R7 R0 K9     ; R8 := R0; R7 := R0[0x388577d5]
- 33 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 34 [-]: LOADKB    R8 0 0       ; R8 := false
- 35 [-]: GETGLOBAL R9 K2        ; R9 := 0x7b998233
- 36 [-]: GETGLOBAL R10 K3       ; R10 := _T
- 37 [-]: GETTABLE  R10 R10 K4   ; R10 := R10["heatDashDamage"]
- 38 [-]: GETTABLE  R10 R10 R7   ; R10 := R10[R7]
- 39 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 40 [-]: TEST      R9 0         ; if not R9 then PC := 65
- 41 [-]: JMP       65           ; PC := 65
- 42 [-]: GETGLOBAL R9 K3        ; R9 := _T
- 43 [-]: GETTABLE  R9 R9 K4     ; R9 := R9["heatDashDamage"]
- 44 [-]: NEWTABLE  R10 0 0      ; R10 := {}
- 45 [-]: SETTABLE  R9 R7 R10    ; R9[R7] := R10
- 46 [-]: GETGLOBAL R9 K3        ; R9 := _T
- 47 [-]: GETTABLE  R9 R9 K4     ; R9 := R9["heatDashDamage"]
- 48 [-]: GETTABLE  R9 R9 R7     ; R9 := R9[R7]
- 49 [-]: SETTABLE  R9 K10 R6    ; R9["timer"] := R6
- 50 [-]: GETGLOBAL R9 K3        ; R9 := _T
- 51 [-]: GETTABLE  R9 R9 K4     ; R9 := R9["heatDashDamage"]
- 52 [-]: GETTABLE  R9 R9 R7     ; R9 := R9[R7]
- 53 [-]: SETTABLE  R9 K11 R5    ; R9["damage"] := R5
- 54 [-]: GETGLOBAL R9 K3        ; R9 := _T
- 55 [-]: GETTABLE  R9 R9 K4     ; R9 := R9["heatDashDamage"]
- 56 [-]: GETTABLE  R9 R9 R7     ; R9 := R9[R7]
- 57 [-]: SETTABLE  R9 K12 K13   ; R9["stacks"] := 1.000000
- 58 [-]: SELF      R9 R0 K14    ; R10 := R0; R9 := R0[0xd5f7912b]
- 59 [-]: GETGLOBAL R11 K15      ; R11 := 0x0469f296
- 60 [-]: LOADK     R12 K16      ; R12 := "HeatDamageLoop"
- 61 [-]: CALL      R11 2 2      ; R11 := R11(R12)
- 62 [-]: LOADKB    R12 0 0      ; R12 := false
- 63 [-]: CALL      R9 4 1       ; R9(R10,R11,R12)
- 64 [-]: JMP       96           ; PC := 96
- 65 [-]: GETGLOBAL R9 K3        ; R9 := _T
- 66 [-]: GETTABLE  R9 R9 K4     ; R9 := R9["heatDashDamage"]
- 67 [-]: GETTABLE  R9 R9 R7     ; R9 := R9[R7]
- 68 [-]: GETTABLE  R9 R9 K12    ; R9 := R9["stacks"]
- 69 [-]: GETGLOBAL R10 K17      ; R10 := 0x440fdee7
- 70 [-]: GETGLOBAL R11 K6       ; R11 := 0x5bced4c4
- 71 [-]: GETTABLE  R11 R11 K7   ; R11 := R11[0xac1b386a]
- 72 [-]: GETGLOBAL R12 K17      ; R12 := 0x440fdee7
- 73 [-]: LEN       R12 R12      ; R12 := # R12
- 74 [-]: MOVE      R13 R2       ; R13 := R2
- 75 [-]: CALL      R11 3 2      ; R11 := R11(R12,R13)
- 76 [-]: GETTABLE  R10 R10 R11  ; R10 := R10[R11]
- 77 [-]: LE        1 R10 R9     ; if R10 <= R9 then PC := 80
- 78 [-]: JMP       80           ; PC := 80
- 79 [-]: LOADKB    R8 0 1       ; R8 := false; PC := 80
- 80 [-]: LOADKB    R8 1 0       ; R8 := true
- 81 [-]: GETGLOBAL R9 K3        ; R9 := _T
- 82 [-]: GETTABLE  R9 R9 K4     ; R9 := R9["heatDashDamage"]
- 83 [-]: GETTABLE  R9 R9 R7     ; R9 := R9[R7]
- 84 [-]: SETTABLE  R9 K10 R6    ; R9["timer"] := R6
- 85 [-]: TEST      R8 1         ; if R8 then PC := 96
- 86 [-]: JMP       96           ; PC := 96
- 87 [-]: GETGLOBAL R9 K3        ; R9 := _T
- 88 [-]: GETTABLE  R9 R9 K4     ; R9 := R9["heatDashDamage"]
- 89 [-]: GETTABLE  R9 R9 R7     ; R9 := R9[R7]
- 90 [-]: GETGLOBAL R10 K3       ; R10 := _T
- 91 [-]: GETTABLE  R10 R10 K4   ; R10 := R10["heatDashDamage"]
- 92 [-]: GETTABLE  R10 R10 R7   ; R10 := R10[R7]
- 93 [-]: GETTABLE  R10 R10 K12  ; R10 := R10["stacks"]
- 94 [-]: ADD       R10 R10 K13  ; R10 := R10 + 1.000000
- 95 [-]: SETTABLE  R9 K12 R10   ; R9["stacks"] := R10
- 96 [-]: GETGLOBAL R9 K18       ; R9 := 0x6c97a788
- 97 [-]: GETTABLE  R9 R9 K19    ; R9 := R9[0x608bc054]
- 98 [-]: CALL      R9 1 2       ; R9 := R9()
- 99 [-]: SETTABLE  R9 K20 R0    ; R9["instigator"] := R0
-100 [-]: NEWTABLE  R10 1 0      ; R10 := {}
-101 [-]: MOVE      R11 R0       ; R11 := R0
-102 [-]: SETLIST   R10 1 1      ; R10[(1-1)*FPF+i] := R(10+i), 1 <= i <= 1
-103 [-]: SETTABLE  R9 K21 R10   ; R9["affected"] := R10
-104 [-]: SETTABLE  R9 K22 K23   ; R9["buffType"] := 13.000000
-105 [-]: SETTABLE  R9 K24 R4    ; R9["abilityType"] := R4
-106 [-]: GETGLOBAL R10 K3       ; R10 := _T
-107 [-]: GETTABLE  R10 R10 K4   ; R10 := R10["heatDashDamage"]
-108 [-]: GETTABLE  R10 R10 R7   ; R10 := R10[R7]
-109 [-]: GETTABLE  R10 R10 K10  ; R10 := R10["timer"]
-110 [-]: SETTABLE  R9 K25 R10   ; R9["buffData"] := R10
-111 [-]: GETGLOBAL R10 K3       ; R10 := _T
-112 [-]: GETTABLE  R10 R10 K4   ; R10 := R10["heatDashDamage"]
-113 [-]: GETTABLE  R10 R10 R7   ; R10 := R10[R7]
-114 [-]: GETTABLE  R10 R10 K12  ; R10 := R10["stacks"]
-115 [-]: SETTABLE  R9 K26 R10   ; R9["buffDataExtra"] := R10
-116 [-]: SELF      R10 R0 K27   ; R11 := R0; R10 := R0[0x37e45fb5]
-117 [-]: MOVE      R12 R9       ; R12 := R9
-118 [-]: LOADKB    R13 1 0      ; R13 := true
-119 [-]: LOADKB    R14 1 0      ; R14 := true
-120 [-]: CALL      R10 5 1      ; R10(R11,R12,R13,R14)
-121 [-]: TEST      R8 0         ; if not R8 then PC := 124
-122 [-]: JMP       124          ; PC := 124
-123 [-]: RETURN    R0 1         ; return 
-124 [-]: SELF      R10 R0 K28   ; R11 := R0; R10 := R0[0xde321e6f]
-125 [-]: CALL      R10 2 2      ; R10 := R10(R11)
-126 [-]: SELF      R10 R10 K29  ; R11 := R10; R10 := R10[0x5e6704ff]
-127 [-]: CONST     R12 306      ; R12 := 306.000000
-128 [-]: CONST     R13 0        ; R13 := 0.000000
-129 [-]: MOVE      R14 R5       ; R14 := R5
-130 [-]: LOADNIL   R15 R16      ; R15 := R16 := nil
-131 [-]: CONST     R17 3        ; R17 := 3.000000
-132 [-]: CALL      R10 8 1      ; R10(R11,R12,R13,R14,R15,R16,R17)
-133 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R5 1 [nil]
+       1 [-]: NAMECALL R5 R5 K2 [0x18D05D30]
+       2 [-]: CALL R5 1 1  
+       3 [-]: JUMPIF R5 L0 
+       4 [-]: RETURN R0 0  
+L 0:   5 [-]: GETIMPORT R6 5 [nil]
+       6 [-]: FASTCALL1 62 R6 L1
+       7 [-]: GETIMPORT R5 7 [nil]
+       8 [-]: CALL R5 1 1  
+L 1:   9 [-]: JUMPIFNOT R5 L2
+      10 [-]: GETIMPORT R5 8 [nil]
+      11 [-]: NEWTABLE R6 0 0
+      12 [-]: SETTABLEKS R6 R5 K4 ["heatDashDamage"]
+L 2:  13 [-]: GETIMPORT R6 10 [nil]
+      14 [-]: GETIMPORT R9 10 [nil]
+      15 [-]: LENGTH R8 R9 
+      16 [-]: FASTCALL2 19 R8 R2 L3
+      17 [-]: MOVE R9 R2   
+      18 [-]: GETIMPORT R7 13 [nil]
+      19 [-]: CALL R7 2 1  
+L 3:  20 [-]: GETTABLE R5 R6 R7
+      21 [-]: GETIMPORT R7 15 [nil]
+      22 [-]: GETIMPORT R10 15 [nil]
+      23 [-]: LENGTH R9 R10
+      24 [-]: FASTCALL2 19 R9 R2 L4
+      25 [-]: MOVE R10 R2  
+      26 [-]: GETIMPORT R8 13 [nil]
+      27 [-]: CALL R8 2 1  
+L 4:  28 [-]: GETTABLE R6 R7 R8
+      29 [-]: NAMECALL R7 R0 K16 [0x388577D5]
+      30 [-]: CALL R7 1 1  
+      31 [-]: LOADB R8 0   
+      32 [-]: GETIMPORT R11 5 [nil]
+      33 [-]: GETTABLE R10 R11 R7
+      34 [-]: FASTCALL1 62 R10 L5
+      35 [-]: GETIMPORT R9 7 [nil]
+      36 [-]: CALL R9 1 1  
+L 5:  37 [-]: JUMPIFNOT R9 L6
+      38 [-]: GETIMPORT R9 5 [nil]
+      39 [-]: NEWTABLE R10 0 0
+      40 [-]: SETTABLE R10 R9 R7
+      41 [-]: GETIMPORT R10 5 [nil]
+      42 [-]: GETTABLE R9 R10 R7
+      43 [-]: SETTABLEKS R6 R9 K17 ["timer"]
+      44 [-]: GETIMPORT R10 5 [nil]
+      45 [-]: GETTABLE R9 R10 R7
+      46 [-]: SETTABLEKS R5 R9 K18 ["damage"]
+      47 [-]: GETIMPORT R10 5 [nil]
+      48 [-]: GETTABLE R9 R10 R7
+      49 [-]: LOADN R10 1  
+      50 [-]: SETTABLEKS R10 R9 K19 ["stacks"]
+      51 [-]: GETIMPORT R11 21 [nil]
+      52 [-]: LOADK R12 K22 ["HeatDamageLoop"]
+      53 [-]: CALL R11 1 1 
+      54 [-]: LOADB R12 0  
+      55 [-]: NAMECALL R9 R0 K23 [0xD5F7912B]
+      56 [-]: CALL R9 3 0  
+      57 [-]: JUMP L10
+    
+L 6:  58 [-]: GETIMPORT R11 5 [nil]
+      59 [-]: GETTABLE R10 R11 R7
+      60 [-]: GETTABLEKS R9 R10 K19 ["stacks"]
+      61 [-]: GETIMPORT R11 25 [nil]
+      62 [-]: GETIMPORT R14 25 [nil]
+      63 [-]: LENGTH R13 R14
+      64 [-]: FASTCALL2 19 R13 R2 L7
+      65 [-]: MOVE R14 R2  
+      66 [-]: GETIMPORT R12 13 [nil]
+      67 [-]: CALL R12 2 1 
+L 7:  68 [-]: GETTABLE R10 R11 R12
+      69 [-]: JUMPIFLE R10 R9 L8
+      70 [-]: LOADB R8 0 +1
+L 8:  71 [-]: LOADB R8 1   
+L 9:  72 [-]: GETIMPORT R10 5 [nil]
+      73 [-]: GETTABLE R9 R10 R7
+      74 [-]: SETTABLEKS R6 R9 K17 ["timer"]
+      75 [-]: JUMPIF R8 L10
+      76 [-]: GETIMPORT R10 5 [nil]
+      77 [-]: GETTABLE R9 R10 R7
+      78 [-]: GETIMPORT R13 5 [nil]
+      79 [-]: GETTABLE R12 R13 R7
+      80 [-]: GETTABLEKS R11 R12 K19 ["stacks"]
+      81 [-]: ADDK R10 R11 K26 [1]
+      82 [-]: SETTABLEKS R10 R9 K19 ["stacks"]
+L10:  83 [-]: GETIMPORT R9 29 [nil]
+      84 [-]: CALL R9 0 1  
+      85 [-]: SETTABLEKS R0 R9 K30 ["instigator"]
+      86 [-]: NEWTABLE R10 0 1
+      87 [-]: MOVE R11 R0  
+      88 [-]: SETLIST R10 R11 1 [1]
+      89 [-]: SETTABLEKS R10 R9 K31 ["affected"]
+      90 [-]: LOADN R10 13 
+      91 [-]: SETTABLEKS R10 R9 K32 ["buffType"]
+      92 [-]: SETTABLEKS R4 R9 K33 ["abilityType"]
+      93 [-]: GETIMPORT R12 5 [nil]
+      94 [-]: GETTABLE R11 R12 R7
+      95 [-]: GETTABLEKS R10 R11 K17 ["timer"]
+      96 [-]: SETTABLEKS R10 R9 K34 ["buffData"]
+      97 [-]: GETIMPORT R12 5 [nil]
+      98 [-]: GETTABLE R11 R12 R7
+      99 [-]: GETTABLEKS R10 R11 K19 ["stacks"]
+     100 [-]: SETTABLEKS R10 R9 K35 ["buffDataExtra"]
+     101 [-]: MOVE R12 R9  
+     102 [-]: LOADB R13 1  
+     103 [-]: LOADB R14 1  
+     104 [-]: NAMECALL R10 R0 K36 [0x37E45FB5]
+     105 [-]: CALL R10 4 0 
+     106 [-]: JUMPIFNOT R8 L11
+     107 [-]: RETURN R0 0  
+L11: 108 [-]: NAMECALL R10 R0 K37 [0xDE321E6F]
+     109 [-]: CALL R10 1 1 
+     110 [-]: LOADN R12 320
+     111 [-]: LOADN R13 0  
+     112 [-]: MOVE R14 R5  
+     113 [-]: LOADNIL R15  
+     114 [-]: LOADNIL R16  
+     115 [-]: LOADN R17 3  
+     116 [-]: NAMECALL R10 R10 K38 [0x5E6704FF]
+     117 [-]: CALL R10 7 0 
+     118 [-]: RETURN R0 0  
+
 
 

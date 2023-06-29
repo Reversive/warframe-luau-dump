@@ -1,19 +1,15 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
-; Max Stack Size:  2
+; Is_vararg:       1
+; Max Stack Size:  1
 
-  1 [-]: CLOSURE   R0 0         ; R0 := closure(Function #1)
-  2 [-]: SETGLOBAL R0 K0        ; AttachToPlayer := R0
-  3 [-]: RETURN    R0 1         ; return 
+            1 [-]: DUPCLOSURE R0 K0 []
+       2 [-]: SETGLOBAL R0 K1 ["AttachToPlayer"]
+       3 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 6
 ; #Upvalues:       0
@@ -21,29 +17,30 @@
 ; Is_vararg:       0
 ; Max Stack Size:  7
 
-  1 [-]: GETGLOBAL R2 K0        ; R2 := 0x89326c93
-  2 [-]: SELF      R2 R2 K1     ; R3 := R2; R2 := R2[0x78298275]
-  3 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  4 [-]: EQ        1 R2 R1      ; if R2 == R1 then PC := 20
-  5 [-]: JMP       20           ; PC := 20
-  6 [-]: MOVE      R1 R2        ; R1 := R2
-  7 [-]: GETGLOBAL R3 K2        ; R3 := 0x7b998233
-  8 [-]: MOVE      R4 R1        ; R4 := R1
-  9 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 10 [-]: TEST      R3 1         ; if R3 then PC := 20
- 11 [-]: JMP       20           ; PC := 20
- 12 [-]: SELF      R3 R0 K3     ; R4 := R0; R3 := R0[0xb6b094b2]
- 13 [-]: MOVE      R5 R1        ; R5 := R1
- 14 [-]: GETGLOBAL R6 K4        ; R6 := 0x39885d68
- 15 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
- 16 [-]: SELF      R3 R0 K5     ; R4 := R0; R3 := R0[0xe28aa928]
- 17 [-]: GETGLOBAL R5 K6        ; R5 := 0x5ca213a9
- 18 [-]: GETGLOBAL R6 K7        ; R6 := 0x52482344
- 19 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
- 20 [-]: GETGLOBAL R3 K8        ; R3 := 0xcbd666e1
- 21 [-]: CONST     R4 0         ; R4 := 0.000000
- 22 [-]: CALL      R3 2 1       ; R3(R4)
- 23 [-]: JMP       1            ; PC := 1
- 24 [-]: RETURN    R0 1         ; return 
+       0 [-]: LOADNIL R1   
+L 0:   1 [-]: GETIMPORT R2 1 [nil]
+       2 [-]: NAMECALL R2 R2 K2 [0x78298275]
+       3 [-]: CALL R2 1 1  
+       4 [-]: JUMPIFEQ R2 R1 L2
+       5 [-]: MOVE R1 R2   
+       6 [-]: FASTCALL1 62 R1 L1
+       7 [-]: MOVE R4 R1   
+       8 [-]: GETIMPORT R3 4 [nil]
+       9 [-]: CALL R3 1 1  
+L 1:  10 [-]: JUMPIF R3 L2 
+      11 [-]: MOVE R5 R1   
+      12 [-]: GETIMPORT R6 6 [nil]
+      13 [-]: NAMECALL R3 R0 K7 [0xB6B094B2]
+      14 [-]: CALL R3 3 0  
+      15 [-]: GETIMPORT R5 9 [nil]
+      16 [-]: GETIMPORT R6 11 [nil]
+      17 [-]: NAMECALL R3 R0 K12 [0xE28AA928]
+      18 [-]: CALL R3 3 0  
+L 2:  19 [-]: GETIMPORT R3 14 [nil]
+      20 [-]: LOADN R4 0   
+      21 [-]: CALL R3 1 0  
+      22 [-]: JUMPBACK L0  
+      23 [-]: RETURN R0 0  
+
 
 

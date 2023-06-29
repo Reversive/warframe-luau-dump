@@ -1,40 +1,35 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
+; Is_vararg:       1
 ; Max Stack Size:  4
 
-  1 [-]: GETGLOBAL R0 K0        ; R0 := 0xaeabecda
-  2 [-]: VARARG    R1 R2        ; R1 := R2 := ...
-  3 [-]: GETGLOBAL R2 K1        ; R2 := package
-  4 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["seeall"]
-  5 [-]: CALL      R0 3 1       ; R0(R1,R2)
-  6 [-]: GETGLOBAL R0 K3        ; R0 := 0x7ed0a956
-  7 [-]: LOADK     R1 K4        ; R1 := "/Lotus/Fx/PowersuitAbilities/Necro/CloneTheDeadTeleportIn"
-  8 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  9 [-]: GETGLOBAL R1 K5        ; R1 := 0x2d0fad09
- 10 [-]: LOADK     R2 K6        ; R2 := "Lotus.Scripts.Libs.AbilitiesLib"
- 11 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 12 [-]: CLOSURE   R2 0         ; R2 := closure(Function #1)
- 13 [-]: SETGLOBAL R2 K7        ; IsCloneTheDeadEntity := R2
- 14 [-]: CLOSURE   R2 1         ; R2 := closure(Function #2)
- 15 [-]: CLOSURE   R3 2         ; R3 := closure(Function #3)
- 16 [-]: MOVE      R0 R2        ; R0 := R2
- 17 [-]: MOVE      R0 R0        ; R0 := R0
- 18 [-]: SETGLOBAL R3 K8        ; ApplyCloneTheDeadMods := R3
- 19 [-]: CLOSURE   R3 3         ; R3 := closure(Function #4)
- 20 [-]: MOVE      R0 R2        ; R0 := R2
- 21 [-]: MOVE      R0 R1        ; R0 := R1
- 22 [-]: MOVE      R0 R0        ; R0 := R0
- 23 [-]: SETGLOBAL R3 K9        ; ApplyCloneTheDeadModsForAmalgam := R3
- 24 [-]: RETURN    R0 1         ; return 
+            1 [-]: GETIMPORT R0 1 [nil]
+       2 [-]: GETVARARGS R1 1
+       3 [-]: GETIMPORT R2 4 [nil]
+       4 [-]: CALL R0 2 0  
+       5 [-]: GETIMPORT R0 6 [nil]
+       6 [-]: LOADK R1 K7 ["/Lotus/Fx/PowersuitAbilities/Necro/CloneTheDeadTeleportIn"]
+       7 [-]: CALL R0 1 1  
+       8 [-]: GETIMPORT R1 9 [nil]
+       9 [-]: LOADK R2 K10 ["Lotus.Scripts.Libs.AbilitiesLib"]
+      10 [-]: CALL R1 1 1  
+      11 [-]: DUPCLOSURE R2 K11 []
+      12 [-]: SETGLOBAL R2 K12 ["IsCloneTheDeadEntity"]
+      13 [-]: DUPCLOSURE R2 K13 []
+      14 [-]: DUPCLOSURE R3 K14 []
+      15 [-]: MOVE R0 R2   
+      16 [-]: MOVE R0 R0   
+      17 [-]: SETGLOBAL R3 K15 ["ApplyCloneTheDeadMods"]
+      18 [-]: DUPCLOSURE R3 K16 []
+      19 [-]: MOVE R0 R2   
+      20 [-]: MOVE R0 R1   
+      21 [-]: MOVE R0 R0   
+      22 [-]: SETGLOBAL R3 K17 ["ApplyCloneTheDeadModsForAmalgam"]
+      23 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 5
 ; #Upvalues:       0
@@ -42,45 +37,37 @@
 ; Is_vararg:       0
 ; Max Stack Size:  13
 
-  1 [-]: GETGLOBAL R1 K0        ; R1 := 0x7b998233
-  2 [-]: GETGLOBAL R2 K1        ; R2 := _T
-  3 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["cloneTheDeadAbility"]
-  4 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  5 [-]: TEST      R1 1         ; if R1 then PC := 12
-  6 [-]: JMP       12           ; PC := 12
-  7 [-]: GETGLOBAL R1 K0        ; R1 := 0x7b998233
-  8 [-]: MOVE      R2 R0        ; R2 := R0
-  9 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 10 [-]: TEST      R1 0         ; if not R1 then PC := 14
- 11 [-]: JMP       14           ; PC := 14
- 12 [-]: LOADKB    R1 0 0       ; R1 := false
- 13 [-]: RETURN    R1 2         ; return R1
- 14 [-]: GETGLOBAL R1 K3        ; R1 := 0xcfc01047
- 15 [-]: GETGLOBAL R2 K1        ; R2 := _T
- 16 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["cloneTheDeadAbility"]
- 17 [-]: CALL      R1 2 4       ; R1,R2,R3 := R1(R2)
- 18 [-]: JMP       31           ; PC := 31
- 19 [-]: GETTABLE  R6 R5 K4     ; R6 := R5["clones"]
- 20 [-]: GETGLOBAL R7 K5        ; R7 := 0xc8802016
- 21 [-]: MOVE      R8 R6        ; R8 := R6
- 22 [-]: CALL      R7 2 4       ; R7,R8,R9 := R7(R8)
- 23 [-]: JMP       29           ; PC := 29
- 24 [-]: GETTABLE  R12 R11 K6   ; R12 := R11["entity"]
- 25 [-]: EQ        0 R12 R0     ; if R12 ~= R0 then PC := 29
- 26 [-]: JMP       29           ; PC := 29
- 27 [-]: LOADKB    R12 1 0      ; R12 := true
- 28 [-]: RETURN    R12 2        ; return R12
- 29 [-]: TFORLOOP  R7 2         ; R10,R11 :=  R7(R8,R9); if R10 ~= nil then begin PC = 24; R9 := R10 end
- 30 [-]: JMP       24           ; PC := 24
- 31 [-]: TFORLOOP  R1 2         ; R4,R5 :=  R1(R2,R3); if R4 ~= nil then begin PC = 19; R3 := R4 end
- 32 [-]: JMP       19           ; PC := 19
- 33 [-]: LOADKB    R12 0 0      ; R12 := false
- 34 [-]: RETURN    R12 2        ; return R12
- 35 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R2 2 [nil]
+       1 [-]: FASTCALL1 62 R2 L0
+       2 [-]: GETIMPORT R1 4 [nil]
+       3 [-]: CALL R1 1 1  
+L 0:   4 [-]: JUMPIF R1 L2 
+       5 [-]: FASTCALL1 62 R0 L1
+       6 [-]: MOVE R2 R0   
+       7 [-]: GETIMPORT R1 4 [nil]
+       8 [-]: CALL R1 1 1  
+L 1:   9 [-]: JUMPIFNOT R1 L3
+L 2:  10 [-]: LOADB R1 0   
+      11 [-]: RETURN R1 1  
+L 3:  12 [-]: GETIMPORT R1 6 [nil]
+      13 [-]: GETIMPORT R2 2 [nil]
+      14 [-]: CALL R1 1 3  
+      15 [-]: FORGPREP_NEXT R1 L7
+L 4:  16 [-]: GETTABLEKS R6 R5 K7 ["clones"]
+      17 [-]: GETIMPORT R7 9 [nil]
+      18 [-]: MOVE R8 R6   
+      19 [-]: CALL R7 1 3  
+      20 [-]: FORGPREP_INEXT R7 L6
+L 5:  21 [-]: GETTABLEKS R12 R11 K10 ["entity"]
+      22 [-]: JUMPIFNOTEQ R12 R0 L6
+      23 [-]: LOADB R12 1  
+      24 [-]: RETURN R12 1 
+L 6:  25 [-]: FORGLOOP R7 L5 2 [inext]
+L 7:  26 [-]: FORGLOOP R1 L4 2
+      27 [-]: LOADB R1 0   
+      28 [-]: RETURN R1 1  
 
 
-; Function #2:
-;
 ; Name:            
 ; Defined at line: 22
 ; #Upvalues:       0
@@ -88,58 +75,48 @@
 ; Is_vararg:       0
 ; Max Stack Size:  14
 
-  1 [-]: GETGLOBAL R1 K0        ; R1 := 0x7b998233
-  2 [-]: GETGLOBAL R2 K1        ; R2 := _T
-  3 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["cloneTheDeadAbility"]
-  4 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  5 [-]: TEST      R1 0         ; if not R1 then PC := 9
-  6 [-]: JMP       9            ; PC := 9
-  7 [-]: LOADNIL   R1 R1        ; R1 := nil
-  8 [-]: RETURN    R1 2         ; return R1
-  9 [-]: GETGLOBAL R1 K0        ; R1 := 0x7b998233
- 10 [-]: GETGLOBAL R2 K1        ; R2 := _T
- 11 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["cloneTheDeadAbility"]
- 12 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 13 [-]: TEST      R1 1         ; if R1 then PC := 46
- 14 [-]: JMP       46           ; PC := 46
- 15 [-]: GETGLOBAL R1 K3        ; R1 := 0x89326c93
- 16 [-]: SELF      R1 R1 K4     ; R2 := R1; R1 := R1[0x8b5b1f58]
- 17 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 18 [-]: GETGLOBAL R2 K5        ; R2 := 0xc8802016
- 19 [-]: MOVE      R3 R1        ; R3 := R1
- 20 [-]: CALL      R2 2 4       ; R2,R3,R4 := R2(R3)
- 21 [-]: JMP       44           ; PC := 44
- 22 [-]: SELF      R7 R6 K6     ; R8 := R6; R7 := R6[0x388577d5]
- 23 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 24 [-]: GETGLOBAL R8 K0        ; R8 := 0x7b998233
- 25 [-]: GETGLOBAL R9 K1        ; R9 := _T
- 26 [-]: GETTABLE  R9 R9 K2     ; R9 := R9["cloneTheDeadAbility"]
- 27 [-]: GETTABLE  R9 R9 R7     ; R9 := R9[R7]
- 28 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 29 [-]: TEST      R8 1         ; if R8 then PC := 44
- 30 [-]: JMP       44           ; PC := 44
- 31 [-]: GETGLOBAL R8 K5        ; R8 := 0xc8802016
- 32 [-]: GETGLOBAL R9 K1        ; R9 := _T
- 33 [-]: GETTABLE  R9 R9 K2     ; R9 := R9["cloneTheDeadAbility"]
- 34 [-]: GETTABLE  R9 R9 R7     ; R9 := R9[R7]
- 35 [-]: GETTABLE  R9 R9 K7     ; R9 := R9["clones"]
- 36 [-]: CALL      R8 2 4       ; R8,R9,R10 := R8(R9)
- 37 [-]: JMP       42           ; PC := 42
- 38 [-]: GETTABLE  R13 R12 K8   ; R13 := R12["entity"]
- 39 [-]: EQ        0 R13 R0     ; if R13 ~= R0 then PC := 42
- 40 [-]: JMP       42           ; PC := 42
- 41 [-]: RETURN    R6 2         ; return R6
- 42 [-]: TFORLOOP  R8 2         ; R11,R12 :=  R8(R9,R10); if R11 ~= nil then begin PC = 38; R10 := R11 end
- 43 [-]: JMP       38           ; PC := 38
- 44 [-]: TFORLOOP  R2 2         ; R5,R6 :=  R2(R3,R4); if R5 ~= nil then begin PC = 22; R4 := R5 end
- 45 [-]: JMP       22           ; PC := 22
- 46 [-]: LOADNIL   R13 R13      ; R13 := nil
- 47 [-]: RETURN    R13 2        ; return R13
- 48 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R2 2 [nil]
+       1 [-]: FASTCALL1 62 R2 L0
+       2 [-]: GETIMPORT R1 4 [nil]
+       3 [-]: CALL R1 1 1  
+L 0:   4 [-]: JUMPIFNOT R1 L1
+       5 [-]: LOADNIL R1   
+       6 [-]: RETURN R1 1  
+L 1:   7 [-]: GETIMPORT R2 2 [nil]
+       8 [-]: FASTCALL1 62 R2 L2
+       9 [-]: GETIMPORT R1 4 [nil]
+      10 [-]: CALL R1 1 1  
+L 2:  11 [-]: JUMPIF R1 L8 
+      12 [-]: GETIMPORT R1 6 [nil]
+      13 [-]: NAMECALL R1 R1 K7 [0x8B5B1F58]
+      14 [-]: CALL R1 1 1  
+      15 [-]: GETIMPORT R2 9 [nil]
+      16 [-]: MOVE R3 R1   
+      17 [-]: CALL R2 1 3  
+      18 [-]: FORGPREP_INEXT R2 L7
+L 3:  19 [-]: NAMECALL R7 R6 K10 [0x388577D5]
+      20 [-]: CALL R7 1 1  
+      21 [-]: GETIMPORT R10 2 [nil]
+      22 [-]: GETTABLE R9 R10 R7
+      23 [-]: FASTCALL1 62 R9 L4
+      24 [-]: GETIMPORT R8 4 [nil]
+      25 [-]: CALL R8 1 1  
+L 4:  26 [-]: JUMPIF R8 L7 
+      27 [-]: GETIMPORT R8 9 [nil]
+      28 [-]: GETIMPORT R12 2 [nil]
+      29 [-]: GETTABLE R11 R12 R7
+      30 [-]: GETTABLEKS R9 R11 K11 ["clones"]
+      31 [-]: CALL R8 1 3  
+      32 [-]: FORGPREP_INEXT R8 L6
+L 5:  33 [-]: GETTABLEKS R13 R12 K12 ["entity"]
+      34 [-]: JUMPIFNOTEQ R13 R0 L6
+      35 [-]: RETURN R6 1  
+L 6:  36 [-]: FORGLOOP R8 L5 2 [inext]
+L 7:  37 [-]: FORGLOOP R2 L3 2 [inext]
+L 8:  38 [-]: LOADNIL R1   
+      39 [-]: RETURN R1 1  
 
 
-; Function #3:
-;
 ; Name:            
 ; Defined at line: 45
 ; #Upvalues:       2
@@ -147,71 +124,65 @@
 ; Is_vararg:       0
 ; Max Stack Size:  10
 
-  1 [-]: GETGLOBAL R2 K0        ; R2 := 0x89326c93
-  2 [-]: SELF      R2 R2 K1     ; R3 := R2; R2 := R2[0x18d05d30]
-  3 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  4 [-]: TEST      R2 0         ; if not R2 then PC := 16
-  5 [-]: JMP       16           ; PC := 16
-  6 [-]: GETGLOBAL R2 K2        ; R2 := 0x7b998233
-  7 [-]: MOVE      R3 R0        ; R3 := R0
-  8 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  9 [-]: TEST      R2 1         ; if R2 then PC := 16
- 10 [-]: JMP       16           ; PC := 16
- 11 [-]: GETGLOBAL R2 K2        ; R2 := 0x7b998233
- 12 [-]: MOVE      R3 R1        ; R3 := R1
- 13 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 14 [-]: TEST      R2 0         ; if not R2 then PC := 17
- 15 [-]: JMP       17           ; PC := 17
- 16 [-]: RETURN    R0 1         ; return 
- 17 [-]: SELF      R2 R0 K3     ; R3 := R0; R2 := R0[0xf2deaf69]
- 18 [-]: GETGLOBAL R4 K4        ; R4 := gLotusNpcAvatarType
- 19 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
- 20 [-]: TEST      R2 0         ; if not R2 then PC := 36
- 21 [-]: JMP       36           ; PC := 36
- 22 [-]: SELF      R2 R1 K3     ; R3 := R1; R2 := R1[0xf2deaf69]
- 23 [-]: GETGLOBAL R4 K4        ; R4 := gLotusNpcAvatarType
- 24 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
- 25 [-]: TEST      R2 0         ; if not R2 then PC := 36
- 26 [-]: JMP       36           ; PC := 36
- 27 [-]: GETGLOBAL R2 K2        ; R2 := 0x7b998233
- 28 [-]: SELF      R3 R0 K5     ; R4 := R0; R3 := R0[0xe4b9db64]
- 29 [-]: CALL      R3 2 0       ; R3,... := R3(R4)
- 30 [-]: CALL      R2 0 2       ; R2 := R2(R3,...)
- 31 [-]: TEST      R2 1         ; if R2 then PC := 36
- 32 [-]: JMP       36           ; PC := 36
- 33 [-]: SELF      R2 R1 K6     ; R3 := R1; R2 := R1[0x0c023c22]
- 34 [-]: LOADKB    R4 1 0       ; R4 := true
- 35 [-]: CALL      R2 3 1       ; R2(R3,R4)
- 36 [-]: GETUPVAL  R2 U0        ; R2 := U0
- 37 [-]: MOVE      R3 R0        ; R3 := R0
- 38 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 39 [-]: GETGLOBAL R3 K2        ; R3 := 0x7b998233
- 40 [-]: MOVE      R4 R2        ; R4 := R2
- 41 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 42 [-]: TEST      R3 1         ; if R3 then PC := 61
- 43 [-]: JMP       61           ; PC := 61
- 44 [-]: SELF      R3 R1 K7     ; R4 := R1; R3 := R1[0x47901f07]
- 45 [-]: GETGLOBAL R5 K8        ; R5 := 0x88efc25e
- 46 [-]: GETUPVAL  R6 U1        ; R6 := U1
- 47 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 48 [-]: GETGLOBAL R6 K9        ; R6 := EMPTY_SYMBOL
- 49 [-]: GETGLOBAL R7 K10       ; R7 := ZERO_VECTOR
- 50 [-]: GETGLOBAL R8 K11       ; R8 := ZERO_ROTATION
- 51 [-]: MOVE      R9 R2        ; R9 := R2
- 52 [-]: CALL      R3 7 1       ; R3(R4,R5,R6,R7,R8,R9)
- 53 [-]: SELF      R3 R1 K3     ; R4 := R1; R3 := R1[0xf2deaf69]
- 54 [-]: GETGLOBAL R5 K4        ; R5 := gLotusNpcAvatarType
- 55 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
- 56 [-]: TEST      R3 0         ; if not R3 then PC := 61
- 57 [-]: JMP       61           ; PC := 61
- 58 [-]: SELF      R3 R1 K6     ; R4 := R1; R3 := R1[0x0c023c22]
- 59 [-]: LOADKB    R5 0 0       ; R5 := false
- 60 [-]: CALL      R3 3 1       ; R3(R4,R5)
- 61 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R2 1 [nil]
+       1 [-]: NAMECALL R2 R2 K2 [0x18D05D30]
+       2 [-]: CALL R2 1 1  
+       3 [-]: JUMPIFNOT R2 L2
+       4 [-]: FASTCALL1 62 R0 L0
+       5 [-]: MOVE R3 R0   
+       6 [-]: GETIMPORT R2 4 [nil]
+       7 [-]: CALL R2 1 1  
+L 0:   8 [-]: JUMPIF R2 L2 
+       9 [-]: FASTCALL1 62 R1 L1
+      10 [-]: MOVE R3 R1   
+      11 [-]: GETIMPORT R2 4 [nil]
+      12 [-]: CALL R2 1 1  
+L 1:  13 [-]: JUMPIFNOT R2 L3
+L 2:  14 [-]: RETURN R0 0  
+L 3:  15 [-]: GETIMPORT R4 6 [nil]
+      16 [-]: NAMECALL R2 R0 K7 [0xF2DEAF69]
+      17 [-]: CALL R2 2 1  
+      18 [-]: JUMPIFNOT R2 L5
+      19 [-]: GETIMPORT R4 6 [nil]
+      20 [-]: NAMECALL R2 R1 K7 [0xF2DEAF69]
+      21 [-]: CALL R2 2 1  
+      22 [-]: JUMPIFNOT R2 L5
+      23 [-]: NAMECALL R3 R0 K8 [0xE4B9DB64]
+      24 [-]: CALL R3 1 -1 
+      25 [-]: FASTCALL 62 L4
+      26 [-]: GETIMPORT R2 4 [nil]
+      27 [-]: CALL R2 -1 1 
+L 4:  28 [-]: JUMPIF R2 L5 
+      29 [-]: LOADB R4 1   
+      30 [-]: NAMECALL R2 R1 K9 [0x0C023C22]
+      31 [-]: CALL R2 2 0  
+L 5:  32 [-]: GETUPVAL R2 0
+      33 [-]: MOVE R3 R0   
+      34 [-]: CALL R2 1 1  
+      35 [-]: FASTCALL1 62 R2 L6
+      36 [-]: MOVE R4 R2   
+      37 [-]: GETIMPORT R3 4 [nil]
+      38 [-]: CALL R3 1 1  
+L 6:  39 [-]: JUMPIF R3 L7 
+      40 [-]: GETIMPORT R5 11 [nil]
+      41 [-]: GETUPVAL R6 1
+      42 [-]: CALL R5 1 1  
+      43 [-]: GETIMPORT R6 13 [nil]
+      44 [-]: GETIMPORT R7 15 [nil]
+      45 [-]: GETIMPORT R8 17 [nil]
+      46 [-]: MOVE R9 R2   
+      47 [-]: NAMECALL R3 R1 K18 [0x47901F07]
+      48 [-]: CALL R3 6 0  
+      49 [-]: GETIMPORT R5 6 [nil]
+      50 [-]: NAMECALL R3 R1 K7 [0xF2DEAF69]
+      51 [-]: CALL R3 2 1  
+      52 [-]: JUMPIFNOT R3 L7
+      53 [-]: LOADB R5 0   
+      54 [-]: NAMECALL R3 R1 K9 [0x0C023C22]
+      55 [-]: CALL R3 2 0  
+L 7:  56 [-]: RETURN R0 0  
 
 
-; Function #4:
-;
 ; Name:            
 ; Defined at line: 68
 ; #Upvalues:       3
@@ -219,75 +190,73 @@
 ; Is_vararg:       0
 ; Max Stack Size:  10
 
-  1 [-]: GETGLOBAL R2 K0        ; R2 := 0x89326c93
-  2 [-]: SELF      R2 R2 K1     ; R3 := R2; R2 := R2[0x18d05d30]
-  3 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  4 [-]: TEST      R2 0         ; if not R2 then PC := 16
-  5 [-]: JMP       16           ; PC := 16
-  6 [-]: GETGLOBAL R2 K2        ; R2 := 0x7b998233
-  7 [-]: MOVE      R3 R0        ; R3 := R0
-  8 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  9 [-]: TEST      R2 1         ; if R2 then PC := 16
- 10 [-]: JMP       16           ; PC := 16
- 11 [-]: GETGLOBAL R2 K2        ; R2 := 0x7b998233
- 12 [-]: MOVE      R3 R1        ; R3 := R1
- 13 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 14 [-]: TEST      R2 0         ; if not R2 then PC := 17
- 15 [-]: JMP       17           ; PC := 17
- 16 [-]: RETURN    R0 1         ; return 
- 17 [-]: SELF      R2 R0 K3     ; R3 := R0; R2 := R0[0xf2deaf69]
- 18 [-]: GETGLOBAL R4 K4        ; R4 := gLotusNpcAvatarType
- 19 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
- 20 [-]: TEST      R2 0         ; if not R2 then PC := 36
- 21 [-]: JMP       36           ; PC := 36
- 22 [-]: SELF      R2 R1 K3     ; R3 := R1; R2 := R1[0xf2deaf69]
- 23 [-]: GETGLOBAL R4 K4        ; R4 := gLotusNpcAvatarType
- 24 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
- 25 [-]: TEST      R2 0         ; if not R2 then PC := 36
- 26 [-]: JMP       36           ; PC := 36
- 27 [-]: GETGLOBAL R2 K2        ; R2 := 0x7b998233
- 28 [-]: SELF      R3 R0 K5     ; R4 := R0; R3 := R0[0xe4b9db64]
- 29 [-]: CALL      R3 2 0       ; R3,... := R3(R4)
- 30 [-]: CALL      R2 0 2       ; R2 := R2(R3,...)
- 31 [-]: TEST      R2 1         ; if R2 then PC := 36
- 32 [-]: JMP       36           ; PC := 36
- 33 [-]: SELF      R2 R1 K6     ; R3 := R1; R2 := R1[0x0c023c22]
- 34 [-]: LOADKB    R4 1 0       ; R4 := true
- 35 [-]: CALL      R2 3 1       ; R2(R3,R4)
- 36 [-]: GETUPVAL  R2 U0        ; R2 := U0
- 37 [-]: MOVE      R3 R0        ; R3 := R0
- 38 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 39 [-]: GETGLOBAL R3 K2        ; R3 := 0x7b998233
- 40 [-]: MOVE      R4 R2        ; R4 := R2
- 41 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 42 [-]: TEST      R3 1         ; if R3 then PC := 70
- 43 [-]: JMP       70           ; PC := 70
- 44 [-]: GETUPVAL  R3 U1        ; R3 := U1
- 45 [-]: GETTABLE  R3 R3 K7     ; R3 := R3[0x70f835f7]
- 46 [-]: MOVE      R4 R1        ; R4 := R1
- 47 [-]: LOADKB    R5 0 0       ; R5 := false
- 48 [-]: CALL      R3 3 1       ; R3(R4,R5)
- 49 [-]: SELF      R3 R1 K8     ; R4 := R1; R3 := R1[0x47901f07]
- 50 [-]: GETGLOBAL R5 K9        ; R5 := 0x88efc25e
- 51 [-]: GETUPVAL  R6 U2        ; R6 := U2
- 52 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 53 [-]: GETGLOBAL R6 K10       ; R6 := EMPTY_SYMBOL
- 54 [-]: GETGLOBAL R7 K11       ; R7 := ZERO_VECTOR
- 55 [-]: GETGLOBAL R8 K12       ; R8 := ZERO_ROTATION
- 56 [-]: MOVE      R9 R0        ; R9 := R0
- 57 [-]: CALL      R3 7 1       ; R3(R4,R5,R6,R7,R8,R9)
- 58 [-]: GETGLOBAL R3 K13       ; R3 := 0x33bdd652
- 59 [-]: GETTABLE  R3 R3 K14    ; R3 := R3[0x23d5322f]
- 60 [-]: GETGLOBAL R4 K15       ; R4 := _T
- 61 [-]: GETTABLE  R4 R4 K16    ; R4 := R4["cloneTheDeadAbility"]
- 62 [-]: SELF      R5 R2 K17    ; R6 := R2; R5 := R2[0x388577d5]
- 63 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 64 [-]: GETTABLE  R4 R4 R5     ; R4 := R4[R5]
- 65 [-]: GETTABLE  R4 R4 K18    ; R4 := R4["clones"]
- 66 [-]: NEWTABLE  R5 0 2       ; R5 := {}
- 67 [-]: SETTABLE  R5 K19 R1    ; R5["entity"] := R1
- 68 [-]: SETTABLE  R5 K20 K21   ; R5["healthDrain"] := 0.000000
- 69 [-]: CALL      R3 3 1       ; R3(R4,R5)
- 70 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R2 1 [nil]
+       1 [-]: NAMECALL R2 R2 K2 [0x18D05D30]
+       2 [-]: CALL R2 1 1  
+       3 [-]: JUMPIFNOT R2 L2
+       4 [-]: FASTCALL1 62 R0 L0
+       5 [-]: MOVE R3 R0   
+       6 [-]: GETIMPORT R2 4 [nil]
+       7 [-]: CALL R2 1 1  
+L 0:   8 [-]: JUMPIF R2 L2 
+       9 [-]: FASTCALL1 62 R1 L1
+      10 [-]: MOVE R3 R1   
+      11 [-]: GETIMPORT R2 4 [nil]
+      12 [-]: CALL R2 1 1  
+L 1:  13 [-]: JUMPIFNOT R2 L3
+L 2:  14 [-]: RETURN R0 0  
+L 3:  15 [-]: GETIMPORT R4 6 [nil]
+      16 [-]: NAMECALL R2 R0 K7 [0xF2DEAF69]
+      17 [-]: CALL R2 2 1  
+      18 [-]: JUMPIFNOT R2 L5
+      19 [-]: GETIMPORT R4 6 [nil]
+      20 [-]: NAMECALL R2 R1 K7 [0xF2DEAF69]
+      21 [-]: CALL R2 2 1  
+      22 [-]: JUMPIFNOT R2 L5
+      23 [-]: NAMECALL R3 R0 K8 [0xE4B9DB64]
+      24 [-]: CALL R3 1 -1 
+      25 [-]: FASTCALL 62 L4
+      26 [-]: GETIMPORT R2 4 [nil]
+      27 [-]: CALL R2 -1 1 
+L 4:  28 [-]: JUMPIF R2 L5 
+      29 [-]: LOADB R4 1   
+      30 [-]: NAMECALL R2 R1 K9 [0x0C023C22]
+      31 [-]: CALL R2 2 0  
+L 5:  32 [-]: GETUPVAL R2 0
+      33 [-]: MOVE R3 R0   
+      34 [-]: CALL R2 1 1  
+      35 [-]: FASTCALL1 62 R2 L6
+      36 [-]: MOVE R4 R2   
+      37 [-]: GETIMPORT R3 4 [nil]
+      38 [-]: CALL R3 1 1  
+L 6:  39 [-]: JUMPIF R3 L7 
+      40 [-]: GETUPVAL R4 1
+      41 [-]: GETTABLEKS R3 R4 K10 [0x70F835F7]
+      42 [-]: MOVE R4 R1   
+      43 [-]: LOADB R5 0   
+      44 [-]: CALL R3 2 0  
+      45 [-]: GETIMPORT R5 12 [nil]
+      46 [-]: GETUPVAL R6 2
+      47 [-]: CALL R5 1 1  
+      48 [-]: GETIMPORT R6 14 [nil]
+      49 [-]: GETIMPORT R7 16 [nil]
+      50 [-]: GETIMPORT R8 18 [nil]
+      51 [-]: MOVE R9 R0   
+      52 [-]: NAMECALL R3 R1 K19 [0x47901F07]
+      53 [-]: CALL R3 6 0  
+      54 [-]: GETIMPORT R6 22 [nil]
+      55 [-]: NAMECALL R7 R2 K23 [0x388577D5]
+      56 [-]: CALL R7 1 1  
+      57 [-]: GETTABLE R5 R6 R7
+      58 [-]: GETTABLEKS R4 R5 K24 ["clones"]
+      59 [-]: DUPTABLE R5 27
+      60 [-]: SETTABLEKS R1 R5 K25 ["entity"]
+      61 [-]: LOADN R6 0   
+      62 [-]: SETTABLEKS R6 R5 K26 ["healthDrain"]
+      63 [-]: FASTCALL2 52 R4 R5 L7
+      64 [-]: GETIMPORT R3 30 [nil]
+      65 [-]: CALL R3 2 0  
+L 7:  66 [-]: RETURN R0 0  
+
 
 

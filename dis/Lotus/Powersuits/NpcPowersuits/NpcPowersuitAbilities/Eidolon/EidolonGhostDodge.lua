@@ -1,19 +1,15 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
-; Max Stack Size:  2
+; Is_vararg:       1
+; Max Stack Size:  1
 
-  1 [-]: CLOSURE   R0 0         ; R0 := closure(Function #1)
-  2 [-]: SETGLOBAL R0 K0        ; Dodge := R0
-  3 [-]: RETURN    R0 1         ; return 
+            1 [-]: DUPCLOSURE R0 K0 []
+       2 [-]: SETGLOBAL R0 K1 ["Dodge"]
+       3 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 6
 ; #Upvalues:       0
@@ -21,41 +17,40 @@
 ; Is_vararg:       0
 ; Max Stack Size:  12
 
-  1 [-]: GETGLOBAL R2 K0        ; R2 := 0x89326c93
-  2 [-]: SELF      R2 R2 K1     ; R3 := R2; R2 := R2[0x18d05d30]
-  3 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  4 [-]: TEST      R2 1         ; if R2 then PC := 7
-  5 [-]: JMP       7            ; PC := 7
-  6 [-]: RETURN    R0 1         ; return 
-  7 [-]: SELF      R2 R0 K2     ; R3 := R0; R2 := R0[0x28e744cf]
-  8 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  9 [-]: EQ        0 R2 R0      ; if R2 ~= R0 then PC := 12
- 10 [-]: JMP       12           ; PC := 12
- 11 [-]: RETURN    R0 1         ; return 
- 12 [-]: SELF      R3 R2 K3     ; R4 := R2; R3 := R2[0x47901f07]
- 13 [-]: GETGLOBAL R5 K4        ; R5 := 0x93682447
- 14 [-]: GETGLOBAL R6 K5        ; R6 := 0x26887b76
- 15 [-]: GETGLOBAL R7 K6        ; R7 := 0xa421af95
- 16 [-]: LOADK     R8 K7        ; R8 := 0.200000
- 17 [-]: CONST     R9 0         ; R9 := 0.000000
- 18 [-]: CONST     R10 0        ; R10 := 0.000000
- 19 [-]: CALL      R7 4 2       ; R7 := R7(R8,R9,R10)
- 20 [-]: GETGLOBAL R8 K8        ; R8 := 0x00046924
- 21 [-]: CONST     R9 -90       ; R9 := -90.000000
- 22 [-]: CONST     R10 0        ; R10 := 0.000000
- 23 [-]: CONST     R11 0        ; R11 := 0.000000
- 24 [-]: CALL      R8 4 0       ; R8,... := R8(R9,R10,R11)
- 25 [-]: CALL      R3 0 2       ; R3 := R3(R4,...)
- 26 [-]: GETGLOBAL R4 K9        ; R4 := 0xcbd666e1
- 27 [-]: GETGLOBAL R5 K10       ; R5 := 0x53bcec47
- 28 [-]: CALL      R4 2 1       ; R4(R5)
- 29 [-]: GETGLOBAL R4 K11       ; R4 := 0x7b998233
- 30 [-]: MOVE      R5 R3        ; R5 := R3
- 31 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 32 [-]: TEST      R4 1         ; if R4 then PC := 36
- 33 [-]: JMP       36           ; PC := 36
- 34 [-]: SELF      R4 R3 K12    ; R5 := R3; R4 := R3[0xa2880940]
- 35 [-]: CALL      R4 2 1       ; R4(R5)
- 36 [-]: RETURN    R0 1         ; return 
+       0 [-]: GETIMPORT R2 1 [nil]
+       1 [-]: NAMECALL R2 R2 K2 [0x18D05D30]
+       2 [-]: CALL R2 1 1  
+       3 [-]: JUMPIF R2 L0 
+       4 [-]: RETURN R0 0  
+L 0:   5 [-]: NAMECALL R2 R0 K3 [0x28E744CF]
+       6 [-]: CALL R2 1 1  
+       7 [-]: JUMPIFNOTEQ R2 R0 L1
+       8 [-]: RETURN R0 0  
+L 1:   9 [-]: GETIMPORT R5 5 [nil]
+      10 [-]: GETIMPORT R6 7 [nil]
+      11 [-]: GETIMPORT R7 9 [nil]
+      12 [-]: LOADK R8 K10 [0.20000000000000001]
+      13 [-]: LOADN R9 0   
+      14 [-]: LOADN R10 0  
+      15 [-]: CALL R7 3 1  
+      16 [-]: GETIMPORT R8 12 [nil]
+      17 [-]: LOADN R9 -90 
+      18 [-]: LOADN R10 0  
+      19 [-]: LOADN R11 0  
+      20 [-]: CALL R8 3 -1 
+      21 [-]: NAMECALL R3 R2 K13 [0x47901F07]
+      22 [-]: CALL R3 -1 1 
+      23 [-]: GETIMPORT R4 15 [nil]
+      24 [-]: GETIMPORT R5 17 [nil]
+      25 [-]: CALL R4 1 0  
+      26 [-]: FASTCALL1 62 R3 L2
+      27 [-]: MOVE R5 R3   
+      28 [-]: GETIMPORT R4 19 [nil]
+      29 [-]: CALL R4 1 1  
+L 2:  30 [-]: JUMPIF R4 L3 
+      31 [-]: NAMECALL R4 R3 K20 [0xA2880940]
+      32 [-]: CALL R4 1 0  
+L 3:  33 [-]: RETURN R0 0  
+
 
 

@@ -1,45 +1,41 @@
-; This file has been disassembled using luadec 2.0.2 by sztupy (modified by Reversive)
-
 ; Name:            
-; Defined at line: 0
+; Defined at line: 1
 ; #Upvalues:       0
 ; #Parameters:     0
-; Is_vararg:       2
-; Max Stack Size:  2
+; Is_vararg:       1
+; Max Stack Size:  1
 
-  1 [-]: CLOSURE   R0 0         ; R0 := closure(Function #1)
-  2 [-]: SETGLOBAL R0 K0        ; GetDescription := R0
-  3 [-]: RETURN    R0 1         ; return 
+            1 [-]: DUPCLOSURE R0 K0 []
+       2 [-]: SETGLOBAL R0 K1 ["GetDescription"]
+       3 [-]: RETURN R0 0  
 
 
-; Function #1:
-;
 ; Name:            
 ; Defined at line: 5
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  4
+; Max Stack Size:  10
 
-  1 [-]: NEWTABLE  R1 0 2       ; R1 := {}
-  2 [-]: GETGLOBAL R2 K1        ; R2 := 0x5bced4c4
-  3 [-]: GETTABLE  R2 R2 K2     ; R2 := R2[0x55f27c30]
-  4 [-]: GETGLOBAL R3 K3        ; R3 := 0x66fc7392
-  5 [-]: MUL       R3 R3 R0     ; R3 := R3 * R0
-  6 [-]: MUL       R3 R3 K4     ; R3 := R3 * 100.000000
-  7 [-]: ADD       R3 R3 K5     ; R3 := R3 + 0.500000
-  8 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  9 [-]: LOADK     R3 K6        ; R3 := "%"
- 10 [-]: CONCAT    R2 R2 R3     ; R2 := R2 .. R3
- 11 [-]: SETTABLE  R1 K0 R2     ; R1["val"] := R2
- 12 [-]: GETGLOBAL R2 K8        ; R2 := 0x26fd6197
- 13 [-]: MUL       R2 R2 R0     ; R2 := R2 * R0
- 14 [-]: SETTABLE  R1 K7 R2     ; R1["duration"] := R2
- 15 [-]: GETGLOBAL R2 K9        ; R2 := cjson
- 16 [-]: GETTABLE  R2 R2 K10    ; R2 := R2[0xb139d7bc]
- 17 [-]: MOVE      R3 R1        ; R3 := R1
- 18 [-]: TAILCALL  R2 2 0       ; R2,... := R2(R3)
- 19 [-]: RETURN    R2 0         ; return R2,...
- 20 [-]: RETURN    R0 1         ; return 
+       0 [-]: DUPTABLE R1 2
+       1 [-]: GETIMPORT R9 6 [nil]
+       2 [-]: MUL R8 R9 R0 
+       3 [-]: MULK R7 R8 K4 [100]
+       4 [-]: ADDK R6 R7 K3 [0.5]
+       5 [-]: FASTCALL1 12 R6 L0
+       6 [-]: GETIMPORT R5 9 [nil]
+       7 [-]: CALL R5 1 1  
+L 0:   8 [-]: MOVE R3 R5   
+       9 [-]: LOADK R4 K10 ["%"]
+      10 [-]: CONCAT R2 R3 R4
+      11 [-]: SETTABLEKS R2 R1 K0 ["val"]
+      12 [-]: GETIMPORT R3 12 [nil]
+      13 [-]: MUL R2 R3 R0 
+      14 [-]: SETTABLEKS R2 R1 K1 ["duration"]
+      15 [-]: GETIMPORT R2 15 [nil]
+      16 [-]: MOVE R3 R1   
+      17 [-]: CALL R2 1 -1 
+      18 [-]: RETURN R2 -1 
+
 
 
