@@ -5,13 +5,13 @@
 ; Is_vararg:       1
 ; Max Stack Size:  33
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x2D0FAD09]
        2 [-]: LOADK R1 K2 ["Lotus.Scripts.Libs.CommonGamemodeFunctions"]
        3 [-]: CALL R0 1 1  
-       4 [-]: GETIMPORT R1 1 [nil]
+       4 [-]: GETIMPORT R1 1 [0x2D0FAD09]
        5 [-]: LOADK R2 K3 ["Lotus.Scripts.Libs.ObjectiveText"]
        6 [-]: CALL R1 1 1  
-       7 [-]: GETIMPORT R2 5 [nil]
+       7 [-]: GETIMPORT R2 5 [0x0469F296]
        8 [-]: LOADK R3 K6 ["VomvalystSpectralForm"]
        9 [-]: CALL R2 1 1  
       10 [-]: LOADNIL R3   
@@ -50,16 +50,16 @@
       43 [-]: SETTABLEKS R17 R16 K18 ["MISSION_COMPLETE"]
       44 [-]: LOADN R17 6  
       45 [-]: SETTABLEKS R17 R16 K19 ["MISSION_FAILED"]
-      46 [-]: GETIMPORT R17 5 [nil]
+      46 [-]: GETIMPORT R17 5 [0x0469F296]
       47 [-]: LOADK R18 K21 ["SwarmAreaStage"]
       48 [-]: CALL R17 1 1 
-      49 [-]: GETIMPORT R18 5 [nil]
+      49 [-]: GETIMPORT R18 5 [0x0469F296]
       50 [-]: LOADK R19 K22 ["SwarmCaptureCount"]
       51 [-]: CALL R18 1 1 
-      52 [-]: GETIMPORT R19 5 [nil]
+      52 [-]: GETIMPORT R19 5 [0x0469F296]
       53 [-]: LOADK R20 K23 ["SwarmNpcsSpawned"]
       54 [-]: CALL R19 1 1 
-      55 [-]: GETIMPORT R20 5 [nil]
+      55 [-]: GETIMPORT R20 5 [0x0469F296]
       56 [-]: LOADK R21 K24 ["SwarmEscapeCount"]
       57 [-]: CALL R20 1 1 
       58 [-]: DUPCLOSURE R21 K25 []
@@ -166,14 +166,14 @@
 ; Is_vararg:       0
 ; Max Stack Size:  17
 
-       0 [-]: GETIMPORT R0 1 [nil]
-       1 [-]: GETIMPORT R2 3 [nil]
+       0 [-]: GETIMPORT R0 1 [0x89326C93]
+       1 [-]: GETIMPORT R2 3 [0x0469F296]
        2 [-]: LOADK R3 K4 ["SentientSwarmWaypoint"]
        3 [-]: CALL R2 1 -1 
        4 [-]: NAMECALL R0 R0 K5 [0xC7FCADA9]
        5 [-]: CALL R0 -1 1 
-       6 [-]: GETIMPORT R1 1 [nil]
-       7 [-]: GETIMPORT R3 3 [nil]
+       6 [-]: GETIMPORT R1 1 [0x89326C93]
+       7 [-]: GETIMPORT R3 3 [0x0469F296]
        8 [-]: LOADK R4 K6 ["SentientSwarmEscapeWaypoint"]
        9 [-]: CALL R3 1 -1 
       10 [-]: NAMECALL R1 R1 K5 [0xC7FCADA9]
@@ -187,16 +187,16 @@ L 0:  16 [-]: GETTABLE R5 R0 R4
       18 [-]: CALL R5 1 1  
       19 [-]: FASTCALL1 62 R5 L1
       20 [-]: MOVE R7 R5   
-      21 [-]: GETIMPORT R6 9 [nil]
+      21 [-]: GETIMPORT R6 9 [0x7B998233]
       22 [-]: CALL R6 1 1  
 L 1:  23 [-]: JUMPIF R6 L2 
       24 [-]: NAMECALL R6 R5 K10 [0x22DA1852]
       25 [-]: CALL R6 1 1  
-      26 [-]: GETIMPORT R7 3 [nil]
+      26 [-]: GETIMPORT R7 3 [0x0469F296]
       27 [-]: LOADK R8 K11 ["Intermediate"]
       28 [-]: CALL R7 1 1  
       29 [-]: JUMPIFEQ R6 R7 L3
-L 2:  30 [-]: GETIMPORT R6 14 [nil]
+L 2:  30 [-]: GETIMPORT R6 14 [0x9C1F3B5A]
       31 [-]: MOVE R7 R0   
       32 [-]: MOVE R8 R4   
       33 [-]: CALL R6 2 0  
@@ -248,7 +248,7 @@ L12:  77 [-]: ADDK R2 R2 K19 [1]
 L13:  78 [-]: GETUPVAL R8 0
       79 [-]: GETTABLE R7 R8 R2
       80 [-]: FASTCALL1 62 R7 L14
-      81 [-]: GETIMPORT R6 9 [nil]
+      81 [-]: GETIMPORT R6 9 [0x7B998233]
       82 [-]: CALL R6 1 1  
 L14:  83 [-]: JUMPIFNOT R6 L15
       84 [-]: DUPTABLE R6 25
@@ -264,7 +264,7 @@ L14:  83 [-]: JUMPIFNOT R6 L15
       94 [-]: GETUPVAL R8 0
       95 [-]: FASTCALL2 52 R8 R6 L15
       96 [-]: MOVE R9 R6   
-      97 [-]: GETIMPORT R7 27 [nil]
+      97 [-]: GETIMPORT R7 27 [0x23D5322F]
       98 [-]: CALL R7 2 0  
 L15:  99 [-]: GETTABLE R7 R0 R5
      100 [-]: GETTABLEKS R6 R7 K16 ["index"]
@@ -278,7 +278,7 @@ L15:  99 [-]: GETTABLE R7 R0 R5
      108 [-]: GETTABLE R9 R0 R5
      109 [-]: GETTABLEKS R8 R9 K15 ["wp"]
      110 [-]: FASTCALL2 52 R7 R8 L16
-     111 [-]: GETIMPORT R6 27 [nil]
+     111 [-]: GETIMPORT R6 27 [0x23D5322F]
      112 [-]: CALL R6 2 0  
 L16: 113 [-]: FORNLOOP R3 L11
 L17: 114 [-]: LOADN R5 1   
@@ -286,7 +286,7 @@ L17: 114 [-]: LOADN R5 1
      116 [-]: LENGTH R3 R6 
      117 [-]: LOADN R4 1   
      118 [-]: FORNPREP R3 L24
-L18: 119 [-]: GETIMPORT R6 29 [nil]
+L18: 119 [-]: GETIMPORT R6 29 [0x55730E1A]
      120 [-]: LOADN R7 1   
      121 [-]: GETUPVAL R11 0
      122 [-]: GETTABLE R10 R11 R5
@@ -309,7 +309,7 @@ L19: 137 [-]: GETTABLE R10 R1 R9
      139 [-]: CALL R10 1 1 
      140 [-]: FASTCALL1 62 R10 L20
      141 [-]: MOVE R12 R10 
-     142 [-]: GETIMPORT R11 9 [nil]
+     142 [-]: GETIMPORT R11 9 [0x7B998233]
      143 [-]: CALL R11 1 1 
 L20: 144 [-]: JUMPIF R11 L22
      145 [-]: NAMECALL R11 R10 K18 [0x9435EB6D]
@@ -335,9 +335,9 @@ L20: 144 [-]: JUMPIF R11 L22
      165 [-]: GETTABLEKS R14 R15 K23 ["escapePoints"]
      166 [-]: GETTABLE R15 R1 R9
      167 [-]: FASTCALL2 52 R14 R15 L21
-     168 [-]: GETIMPORT R13 27 [nil]
+     168 [-]: GETIMPORT R13 27 [0x23D5322F]
      169 [-]: CALL R13 2 0 
-L21: 170 [-]: GETIMPORT R13 14 [nil]
+L21: 170 [-]: GETIMPORT R13 14 [0x9C1F3B5A]
      171 [-]: MOVE R14 R1  
      172 [-]: MOVE R15 R9  
      173 [-]: CALL R13 2 0 
@@ -353,13 +353,13 @@ L24: 176 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  6
 
-       0 [-]: GETIMPORT R1 1 [nil]
+       0 [-]: GETIMPORT R1 1 [0xBE190284]
        1 [-]: MOVE R3 R0   
        2 [-]: LOADN R4 0   
        3 [-]: NAMECALL R1 R1 K2 [0x0EB34C69]
        4 [-]: CALL R1 3 1  
        5 [-]: ADDK R1 R1 K3 [1]
-       6 [-]: GETIMPORT R2 1 [nil]
+       6 [-]: GETIMPORT R2 1 [0xBE190284]
        7 [-]: MOVE R4 R0   
        8 [-]: MOVE R5 R1   
        9 [-]: NAMECALL R2 R2 K4 [0x751F061D]
@@ -376,17 +376,17 @@ L24: 176 [-]: RETURN R0 0
 
        0 [-]: FASTCALL1 62 R1 L0
        1 [-]: MOVE R3 R1   
-       2 [-]: GETIMPORT R2 1 [nil]
+       2 [-]: GETIMPORT R2 1 [0x7B998233]
        3 [-]: CALL R2 1 1  
 L 0:   4 [-]: JUMPIF R2 L7 
        5 [-]: GETUPVAL R3 0
        6 [-]: FASTCALL1 62 R3 L1
-       7 [-]: GETIMPORT R2 1 [nil]
+       7 [-]: GETIMPORT R2 1 [0x7B998233]
        8 [-]: CALL R2 1 1  
 L 1:   9 [-]: JUMPIFNOT R2 L2
       10 [-]: GETUPVAL R3 1
       11 [-]: GETTABLEKS R2 R3 K2 [0x4F02AB17]
-      12 [-]: GETIMPORT R3 4 [nil]
+      12 [-]: GETIMPORT R3 4 [0xEA8498D5]
       13 [-]: MOVE R4 R1   
       14 [-]: LOADN R5 30  
       15 [-]: LOADN R6 10  
@@ -404,28 +404,28 @@ L 2:  19 [-]: GETUPVAL R3 1
 L 3:  26 [-]: LENGTH R2 R1 
       27 [-]: LOADN R3 2   
       28 [-]: JUMPIFNOTLE R2 R3 L7
-      29 [-]: GETIMPORT R2 7 [nil]
+      29 [-]: GETIMPORT R2 7 [0xC8802016]
       30 [-]: MOVE R3 R1   
       31 [-]: CALL R2 1 3  
       32 [-]: FORGPREP_INEXT R2 L6
-L 4:  33 [-]: GETIMPORT R9 9 [nil]
+L 4:  33 [-]: GETIMPORT R9 9 [0xBA3D59B8]
       34 [-]: NAMECALL R7 R6 K10 [0xC1595BD5]
       35 [-]: CALL R7 2 1  
       36 [-]: FASTCALL1 62 R7 L5
       37 [-]: MOVE R9 R7   
-      38 [-]: GETIMPORT R8 1 [nil]
+      38 [-]: GETIMPORT R8 1 [0x7B998233]
       39 [-]: CALL R8 1 1  
 L 5:  40 [-]: JUMPIFNOT R8 L6
-      41 [-]: GETIMPORT R10 9 [nil]
-      42 [-]: GETIMPORT R11 12 [nil]
-      43 [-]: GETIMPORT R12 14 [nil]
+      41 [-]: GETIMPORT R10 9 [0xBA3D59B8]
+      42 [-]: GETIMPORT R11 12 ["EMPTY_SYMBOL"]
+      43 [-]: GETIMPORT R12 14 [0xA421AF95]
       44 [-]: LOADN R13 0  
       45 [-]: LOADK R14 K15 [0.5]
       46 [-]: LOADN R15 0  
       47 [-]: CALL R12 3 -1
       48 [-]: NAMECALL R8 R6 K16 [0x47901F07]
       49 [-]: CALL R8 -1 1 
-      50 [-]: GETIMPORT R11 18 [nil]
+      50 [-]: GETIMPORT R11 18 [0xB7CBD06B]
       51 [-]: LOADN R12 5  
       52 [-]: LOADN R13 5000
       53 [-]: CALL R11 2 -1
@@ -457,11 +457,11 @@ L 7:  57 [-]: RETURN R0 0
       12 [-]: GETTABLEKS R3 R6 K3 ["areaSwarmSize"]
       13 [-]: LOADN R4 1   
       14 [-]: FORNPREP R3 L6
-L 0:  15 [-]: GETIMPORT R6 5 [nil]
+L 0:  15 [-]: GETIMPORT R6 5 [0xDB6F3B17]
       16 [-]: GETUPVAL R8 2
       17 [-]: GETTABLEKS R7 R8 K6 ["numDefenders"]
       18 [-]: JUMPIFNOTLE R5 R7 L1
-      19 [-]: GETIMPORT R6 8 [nil]
+      19 [-]: GETIMPORT R6 8 [0xEBA4A5E0]
       20 [-]: JUMP L2
      
 L 1:  21 [-]: GETUPVAL R9 2
@@ -470,19 +470,19 @@ L 1:  21 [-]: GETUPVAL R9 2
       24 [-]: GETTABLEKS R9 R10 K9 ["numAttackers"]
       25 [-]: ADD R7 R8 R9 
       26 [-]: JUMPIFNOTLE R5 R7 L2
-      27 [-]: GETIMPORT R6 11 [nil]
+      27 [-]: GETIMPORT R6 11 [0xB74D2034]
 L 2:  28 [-]: GETUPVAL R7 3
       29 [-]: MOVE R9 R6   
       30 [-]: MOVE R10 R0  
       31 [-]: LOADN R11 10 
-      32 [-]: GETIMPORT R12 13 [nil]
+      32 [-]: GETIMPORT R12 13 [0x0469F296]
       33 [-]: LOADK R13 K14 ["SentientSwarmTeam"]
       34 [-]: CALL R12 1 -1
       35 [-]: NAMECALL R7 R7 K15 [0x2883E796]
       36 [-]: CALL R7 -1 1 
       37 [-]: FASTCALL1 62 R7 L3
       38 [-]: MOVE R9 R7   
-      39 [-]: GETIMPORT R8 17 [nil]
+      39 [-]: GETIMPORT R8 17 [0x7B998233]
       40 [-]: CALL R8 1 1  
 L 3:  41 [-]: JUMPIF R8 L5 
       42 [-]: NAMECALL R8 R7 K18 [0xBB610E5B]
@@ -490,9 +490,9 @@ L 3:  41 [-]: JUMPIF R8 L5
       44 [-]: GETUPVAL R10 4
       45 [-]: FASTCALL2 52 R10 R8 L4
       46 [-]: MOVE R11 R8  
-      47 [-]: GETIMPORT R9 21 [nil]
+      47 [-]: GETIMPORT R9 21 [0x23D5322F]
       48 [-]: CALL R9 2 0  
-L 4:  49 [-]: GETIMPORT R9 23 [nil]
+L 4:  49 [-]: GETIMPORT R9 23 [0x11A19C5E]
       50 [-]: MOVE R10 R8  
       51 [-]: LOADK R11 K24 ["OnKilled"]
       52 [-]: CALL R9 2 0  
@@ -502,17 +502,17 @@ L 6:  54 [-]: LOADN R5 1
       56 [-]: LOADN R4 1   
       57 [-]: FORNPREP R3 L14
 L 7:  58 [-]: LOADNIL R6   
-      59 [-]: GETIMPORT R7 26 [nil]
+      59 [-]: GETIMPORT R7 26 ["ZERO_ROTATION"]
       60 [-]: LOADNIL R8   
       61 [-]: FASTCALL1 62 R1 L8
       62 [-]: MOVE R10 R1  
-      63 [-]: GETIMPORT R9 17 [nil]
+      63 [-]: GETIMPORT R9 17 [0x7B998233]
       64 [-]: CALL R9 1 1  
 L 8:  65 [-]: JUMPIF R9 L9 
       66 [-]: LENGTH R9 R1 
       67 [-]: LOADN R10 0  
       68 [-]: JUMPIFNOTLT R10 R9 L9
-      69 [-]: GETIMPORT R9 28 [nil]
+      69 [-]: GETIMPORT R9 28 [0x55730E1A]
       70 [-]: LOADN R10 1  
       71 [-]: LENGTH R11 R1
       72 [-]: CALL R9 2 1  
@@ -525,7 +525,7 @@ L 8:  65 [-]: JUMPIF R9 L9
       79 [-]: CALL R10 1 1 
       80 [-]: MOVE R7 R10  
       81 [-]: LOADK R8 K30 ["[ESCAPE POINT]"]
-      82 [-]: GETIMPORT R10 32 [nil]
+      82 [-]: GETIMPORT R10 32 [0x9C1F3B5A]
       83 [-]: MOVE R11 R1  
       84 [-]: MOVE R12 R9  
       85 [-]: CALL R10 2 0 
@@ -543,12 +543,12 @@ L 9:  87 [-]: GETUPVAL R9 3
       96 [-]: LOADK R8 K34 ["[GENERATED ESCAPE POINT]"]
 L10:  97 [-]: FASTCALL1 62 R6 L11
       98 [-]: MOVE R10 R6  
-      99 [-]: GETIMPORT R9 17 [nil]
+      99 [-]: GETIMPORT R9 17 [0x7B998233]
      100 [-]: CALL R9 1 1  
 L11: 101 [-]: JUMPIF R9 L12
-     102 [-]: GETIMPORT R9 36 [nil]
-     103 [-]: GETIMPORT R11 38 [nil]
-     104 [-]: GETIMPORT R13 40 [nil]
+     102 [-]: GETIMPORT R9 36 [0x89326C93]
+     103 [-]: GETIMPORT R11 38 [0xA325BBF2]
+     104 [-]: GETIMPORT R13 40 [0xA421AF95]
      105 [-]: LOADN R14 0  
      106 [-]: LOADK R15 K41 [-0.5]
      107 [-]: LOADN R16 0  
@@ -559,7 +559,7 @@ L11: 101 [-]: JUMPIF R9 L12
      112 [-]: CALL R9 4 0  
      113 [-]: JUMP L13
     
-L12: 114 [-]: GETIMPORT R9 44 [nil]
+L12: 114 [-]: GETIMPORT R9 44 [0x3D106989]
      115 [-]: LOADK R10 K45 ["Vomvalyst Capture: No spawn position found for escape point!"]
      116 [-]: CALL R9 1 0  
 L13: 117 [-]: FORNLOOP R3 L7
@@ -591,7 +591,7 @@ L14: 118 [-]: GETUPVAL R4 5
        5 [-]: LOADN R3 1   
        6 [-]: FORNPREP R2 L1
 L 0:   7 [-]: GETUPVAL R5 0
-       8 [-]: GETIMPORT R7 3 [nil]
+       8 [-]: GETIMPORT R7 3 ["faction"]
        9 [-]: MOVE R8 R1   
       10 [-]: LOADB R9 1   
       11 [-]: LOADB R10 0  
@@ -603,7 +603,7 @@ L 0:   7 [-]: GETUPVAL R5 0
       17 [-]: MOVE R8 R5   
       18 [-]: MOVE R9 R0   
       19 [-]: LOADN R10 40 
-      20 [-]: GETIMPORT R11 6 [nil]
+      20 [-]: GETIMPORT R11 6 [0x0469F296]
       21 [-]: LOADK R12 K7 ["SentientSwarmTeam"]
       22 [-]: CALL R11 1 -1
       23 [-]: NAMECALL R6 R6 K8 [0x2883E796]
@@ -619,28 +619,28 @@ L 1:  26 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  7
 
-       0 [-]: GETIMPORT R1 1 [nil]
+       0 [-]: GETIMPORT R1 1 [0x3D106989]
        1 [-]: LOADK R2 K2 ["Vomvalyst Capture: Initializing host..."]
        2 [-]: CALL R1 1 0  
-       3 [-]: GETIMPORT R1 4 [nil]
+       3 [-]: GETIMPORT R1 4 [0xBE190284]
        4 [-]: SETUPVAL R1 0
-       5 [-]: GETIMPORT R1 6 [nil]
+       5 [-]: GETIMPORT R1 6 [0x89326C93]
        6 [-]: NAMECALL R1 R1 K7 [0x29EF273D]
        7 [-]: CALL R1 1 1  
        8 [-]: NAMECALL R1 R1 K8 [0x66905CB0]
        9 [-]: CALL R1 1 1  
       10 [-]: SETUPVAL R1 1
-      11 [-]: GETIMPORT R3 6 [nil]
+      11 [-]: GETIMPORT R3 6 [0x89326C93]
       12 [-]: NAMECALL R3 R3 K9 [0x61BE252A]
       13 [-]: CALL R3 1 1  
-      14 [-]: GETIMPORT R4 11 [nil]
+      14 [-]: GETIMPORT R4 11 [0x9BA7909F]
       15 [-]: LOADK R6 K12 ["Server.NumVirtualTestClients"]
       16 [-]: NAMECALL R4 R4 K13 [0x8151451D]
       17 [-]: CALL R4 2 1  
       18 [-]: ADD R2 R3 R4 
       19 [-]: FASTCALL2K 19 R2 K14 L0 [4]
       20 [-]: LOADK R3 K14 [4]
-      21 [-]: GETIMPORT R1 17 [nil]
+      21 [-]: GETIMPORT R1 17 [0xAC1B386A]
       22 [-]: CALL R1 2 1  
 L 0:  23 [-]: SETUPVAL R1 2
       24 [-]: GETUPVAL R1 0
@@ -653,13 +653,13 @@ L 0:  23 [-]: SETUPVAL R1 2
       31 [-]: NAMECALL R1 R1 K18 [0x0EB34C69]
       32 [-]: CALL R1 2 1  
       33 [-]: SETUPVAL R1 5
-      34 [-]: GETIMPORT R1 20 [nil]
+      34 [-]: GETIMPORT R1 20 ["_T"]
       35 [-]: GETUPVAL R2 0
       36 [-]: GETUPVAL R4 7
       37 [-]: NAMECALL R2 R2 K18 [0x0EB34C69]
       38 [-]: CALL R2 2 1  
       39 [-]: SETTABLEKS R2 R1 K21 ["SwarmEnemiesCaptured"]
-      40 [-]: GETIMPORT R1 20 [nil]
+      40 [-]: GETIMPORT R1 20 ["_T"]
       41 [-]: GETUPVAL R2 0
       42 [-]: GETUPVAL R4 8
       43 [-]: NAMECALL R2 R2 K18 [0x0EB34C69]
@@ -670,10 +670,10 @@ L 0:  23 [-]: SETUPVAL R1 2
       48 [-]: JUMPIFNOT R0 L1
 L 1:  49 [-]: GETUPVAL R1 10
       50 [-]: CALL R1 0 0  
-      51 [-]: GETIMPORT R1 1 [nil]
+      51 [-]: GETIMPORT R1 1 [0x3D106989]
       52 [-]: LOADK R2 K23 ["Vomvalyst Capture: Initialize host complete"]
       53 [-]: CALL R1 1 0  
-      54 [-]: GETIMPORT R1 25 [nil]
+      54 [-]: GETIMPORT R1 25 [0x14459A1C]
       55 [-]: JUMPIF R1 L2 
       56 [-]: GETUPVAL R1 11
       57 [-]: GETUPVAL R4 12
@@ -690,14 +690,14 @@ L 2:  61 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 [0x3D106989]
        1 [-]: LOADK R1 K2 ["Vomvalyst Capture: Initializing host/client..."]
        2 [-]: CALL R0 1 0  
-       3 [-]: GETIMPORT R0 4 [nil]
+       3 [-]: GETIMPORT R0 4 [0x89326C93]
        4 [-]: NAMECALL R0 R0 K5 [0xFB64E76C]
        5 [-]: CALL R0 1 1  
        6 [-]: SETUPVAL R0 0
-       7 [-]: GETIMPORT R0 1 [nil]
+       7 [-]: GETIMPORT R0 1 [0x3D106989]
        8 [-]: LOADK R1 K6 ["Vomvalyst Capture: Initialize host/client complete"]
        9 [-]: CALL R0 1 0  
       10 [-]: RETURN R0 0  
@@ -712,12 +712,12 @@ L 2:  61 [-]: RETURN R0 0
 
        0 [-]: GETUPVAL R2 0
        1 [-]: FASTCALL1 62 R2 L0
-       2 [-]: GETIMPORT R1 1 [nil]
+       2 [-]: GETIMPORT R1 1 [0x7B998233]
        3 [-]: CALL R1 1 1  
 L 0:   4 [-]: JUMPIF R1 L2 
        5 [-]: GETUPVAL R2 1
        6 [-]: FASTCALL1 62 R2 L1
-       7 [-]: GETIMPORT R1 1 [nil]
+       7 [-]: GETIMPORT R1 1 [0x7B998233]
        8 [-]: CALL R1 1 1  
 L 1:   9 [-]: JUMPIFNOT R1 L3
 L 2:  10 [-]: RETURN R0 0  
@@ -745,7 +745,7 @@ L 4:  28 [-]: GETUPVAL R1 2
       31 [-]: JUMPIFNOTEQ R1 R2 L6
       32 [-]: GETUPVAL R2 7
       33 [-]: FASTCALL1 62 R2 L5
-      34 [-]: GETIMPORT R1 1 [nil]
+      34 [-]: GETIMPORT R1 1 [0x7B998233]
       35 [-]: CALL R1 1 1  
 L 5:  36 [-]: JUMPIF R1 L11
       37 [-]: GETUPVAL R1 8
@@ -768,7 +768,7 @@ L 6:  49 [-]: GETUPVAL R1 2
       53 [-]: GETUPVAL R2 9
       54 [-]: GETTABLEKS R1 R2 K9 [0x118E5C26]
       55 [-]: LOADK R3 K10 ["[TEMP] CAPTURED: "]
-      56 [-]: GETIMPORT R4 13 [nil]
+      56 [-]: GETIMPORT R4 13 ["SwarmEnemiesCaptured"]
       57 [-]: LOADK R5 K14 [" / "]
       58 [-]: GETUPVAL R8 10
       59 [-]: GETTABLEKS R7 R8 K15 ["areaSwarmSize"]
@@ -783,14 +783,14 @@ L 6:  49 [-]: GETUPVAL R1 2
       68 [-]: GETUPVAL R2 9
       69 [-]: GETTABLEKS R1 R2 K9 [0x118E5C26]
       70 [-]: LOADK R3 K16 ["[TEMP] ESCAPED: "]
-      71 [-]: GETIMPORT R4 18 [nil]
+      71 [-]: GETIMPORT R4 18 ["SwarmEnemiesEscaped"]
       72 [-]: CONCAT R2 R3 R4
       73 [-]: LOADN R3 0   
       74 [-]: LOADNIL R4   
       75 [-]: LOADN R5 2   
       76 [-]: CALL R1 4 0  
-      77 [-]: GETIMPORT R2 13 [nil]
-      78 [-]: GETIMPORT R3 18 [nil]
+      77 [-]: GETIMPORT R2 13 ["SwarmEnemiesCaptured"]
+      78 [-]: GETIMPORT R3 18 ["SwarmEnemiesEscaped"]
       79 [-]: ADD R1 R2 R3 
       80 [-]: GETUPVAL R4 10
       81 [-]: GETTABLEKS R3 R4 K15 ["areaSwarmSize"]
@@ -854,17 +854,17 @@ L10: 135 [-]: GETUPVAL R1 2
      136 [-]: GETUPVAL R3 3
      137 [-]: GETTABLEKS R2 R3 K21 ["MISSION_COMPLETE"]
      138 [-]: JUMPIFNOTEQ R1 R2 L11
-L11: 139 [-]: GETIMPORT R3 24 [nil]
+L11: 139 [-]: GETIMPORT R3 24 [0x89326C93]
      140 [-]: NAMECALL R3 R3 K25 [0x61BE252A]
      141 [-]: CALL R3 1 1  
-     142 [-]: GETIMPORT R4 27 [nil]
+     142 [-]: GETIMPORT R4 27 [0x9BA7909F]
      143 [-]: LOADK R6 K28 ["Server.NumVirtualTestClients"]
      144 [-]: NAMECALL R4 R4 K29 [0x8151451D]
      145 [-]: CALL R4 2 1  
      146 [-]: ADD R2 R3 R4 
      147 [-]: FASTCALL2K 19 R2 K30 L12 [4]
      148 [-]: LOADK R3 K30 [4]
-     149 [-]: GETIMPORT R1 33 [nil]
+     149 [-]: GETIMPORT R1 33 [0xAC1B386A]
      150 [-]: CALL R1 2 1  
 L12: 151 [-]: SETUPVAL R1 16
      152 [-]: RETURN R0 0  
@@ -887,14 +887,14 @@ L12: 151 [-]: SETUPVAL R1 16
 ; Is_vararg:       0
 ; Max Stack Size:  8
 
-       0 [-]: GETIMPORT R1 1 [nil]
+       0 [-]: GETIMPORT R1 1 [0x89326C93]
        1 [-]: NAMECALL R1 R1 K2 [0x18D05D30]
        2 [-]: CALL R1 1 1  
        3 [-]: JUMPIFNOT R1 L12
        4 [-]: GETUPVAL R2 0
        5 [-]: GETTABLEKS R1 R2 K3 ["MISSION_SETUP"]
        6 [-]: JUMPIFNOTEQ R0 R1 L0
-       7 [-]: GETIMPORT R1 5 [nil]
+       7 [-]: GETIMPORT R1 5 [0x3D106989]
        8 [-]: LOADK R3 K6 ["Vomvalyst Capture: State change: MISSION_SETUP "]
        9 [-]: MOVE R4 R0   
       10 [-]: CONCAT R2 R3 R4
@@ -909,7 +909,7 @@ L12: 151 [-]: SETUPVAL R1 16
 L 0:  18 [-]: GETUPVAL R2 0
       19 [-]: GETTABLEKS R1 R2 K7 ["REACH_AREA"]
       20 [-]: JUMPIFNOTEQ R0 R1 L3
-      21 [-]: GETIMPORT R1 5 [nil]
+      21 [-]: GETIMPORT R1 5 [0x3D106989]
       22 [-]: LOADK R3 K9 ["Vomvalyst Capture: State change: REACH_AREA "]
       23 [-]: MOVE R4 R0   
       24 [-]: CONCAT R2 R3 R4
@@ -920,21 +920,21 @@ L 0:  18 [-]: GETUPVAL R2 0
       29 [-]: CALL R1 1 0  
       30 [-]: GETUPVAL R2 3
       31 [-]: FASTCALL1 62 R2 L1
-      32 [-]: GETIMPORT R1 13 [nil]
+      32 [-]: GETIMPORT R1 13 [0x7B998233]
       33 [-]: CALL R1 1 1  
 L 1:  34 [-]: JUMPIF R1 L2 
       35 [-]: GETUPVAL R1 3
       36 [-]: NAMECALL R1 R1 K14 [0xA2880940]
       37 [-]: CALL R1 1 0  
-L 2:  38 [-]: GETIMPORT R1 1 [nil]
-      39 [-]: GETIMPORT R3 16 [nil]
+L 2:  38 [-]: GETIMPORT R1 1 [0x89326C93]
+      39 [-]: GETIMPORT R3 16 [0xBB76409B]
       40 [-]: GETUPVAL R6 4
       41 [-]: GETUPVAL R7 5
       42 [-]: GETTABLE R5 R6 R7
       43 [-]: GETTABLEKS R4 R5 K17 ["chosenWp"]
       44 [-]: NAMECALL R4 R4 K18 [0xD1586535]
       45 [-]: CALL R4 1 1  
-      46 [-]: GETIMPORT R5 20 [nil]
+      46 [-]: GETIMPORT R5 20 ["ZERO_ROTATION"]
       47 [-]: NAMECALL R1 R1 K21 [0x05909209]
       48 [-]: CALL R1 4 1  
       49 [-]: SETUPVAL R1 3
@@ -959,7 +959,7 @@ L 3:  55 [-]: GETUPVAL R2 0
 L 4:  66 [-]: GETUPVAL R2 0
       67 [-]: GETTABLEKS R1 R2 K24 ["CAPTURE_SWARM"]
       68 [-]: JUMPIFNOTEQ R0 R1 L7
-      69 [-]: GETIMPORT R1 5 [nil]
+      69 [-]: GETIMPORT R1 5 [0x3D106989]
       70 [-]: LOADK R3 K25 ["Vomvalyst Capture: State change: CAPTURE_SWARM "]
       71 [-]: MOVE R4 R0   
       72 [-]: CONCAT R2 R3 R4
@@ -971,7 +971,7 @@ L 4:  66 [-]: GETUPVAL R2 0
       78 [-]: CALL R1 2 0  
       79 [-]: GETUPVAL R2 3
       80 [-]: FASTCALL1 62 R2 L5
-      81 [-]: GETIMPORT R1 13 [nil]
+      81 [-]: GETIMPORT R1 13 [0x7B998233]
       82 [-]: CALL R1 1 1  
 L 5:  83 [-]: JUMPIF R1 L6 
       84 [-]: GETUPVAL R1 3
@@ -979,7 +979,7 @@ L 5:  83 [-]: JUMPIF R1 L6
       86 [-]: CALL R1 1 0  
 L 6:  87 [-]: GETUPVAL R2 8
       88 [-]: GETTABLEKS R1 R2 K27 [0xCDCBD25D]
-      89 [-]: GETIMPORT R2 29 [nil]
+      89 [-]: GETIMPORT R2 29 [0xEA8498D5]
       90 [-]: GETUPVAL R5 4
       91 [-]: GETUPVAL R6 5
       92 [-]: GETTABLE R4 R5 R6
@@ -998,7 +998,7 @@ L 6:  87 [-]: GETUPVAL R2 8
 L 7: 104 [-]: GETUPVAL R2 0
      105 [-]: GETTABLEKS R1 R2 K30 ["MISSION_COMPLETE"]
      106 [-]: JUMPIFNOTEQ R0 R1 L8
-     107 [-]: GETIMPORT R1 5 [nil]
+     107 [-]: GETIMPORT R1 5 [0x3D106989]
      108 [-]: LOADK R3 K31 ["Vomvalyst Capture: State change: MISSION_COMPLETE "]
      109 [-]: MOVE R4 R0   
      110 [-]: CONCAT R2 R3 R4
@@ -1008,7 +1008,7 @@ L 7: 104 [-]: GETUPVAL R2 0
 L 8: 113 [-]: GETUPVAL R2 0
      114 [-]: GETTABLEKS R1 R2 K32 ["MISSION_FAILED"]
      115 [-]: JUMPIFNOTEQ R0 R1 L9
-     116 [-]: GETIMPORT R1 5 [nil]
+     116 [-]: GETIMPORT R1 5 [0x3D106989]
      117 [-]: LOADK R3 K33 ["Vomvalyst Capture: State change: MISSION_FAILED "]
      118 [-]: MOVE R4 R0   
      119 [-]: CONCAT R2 R3 R4
@@ -1028,7 +1028,7 @@ L10: 127 [-]: GETUPVAL R2 8
      133 [-]: CALL R1 0 0  
      134 [-]: GETUPVAL R2 3
      135 [-]: FASTCALL1 62 R2 L11
-     136 [-]: GETIMPORT R1 13 [nil]
+     136 [-]: GETIMPORT R1 13 [0x7B998233]
      137 [-]: CALL R1 1 1  
 L11: 138 [-]: JUMPIF R1 L12
      139 [-]: GETUPVAL R1 3
@@ -1046,7 +1046,7 @@ L12: 142 [-]: RETURN R0 0
 
        0 [-]: NAMECALL R1 R0 K0 [0xED4E0128]
        1 [-]: CALL R1 1 1  
-       2 [-]: GETIMPORT R2 2 [nil]
+       2 [-]: GETIMPORT R2 2 [0x3D106989]
        3 [-]: LOADK R4 K3 ["Vomvalyst Capture: Starting script on object "]
        4 [-]: MOVE R5 R1   
        5 [-]: CONCAT R3 R4 R5
@@ -1056,39 +1056,39 @@ L12: 142 [-]: RETURN R0 0
        9 [-]: GETUPVAL R3 2
       10 [-]: CALL R2 1 1  
       11 [-]: SETUPVAL R2 0
-      12 [-]: GETIMPORT R2 6 [nil]
+      12 [-]: GETIMPORT R2 6 [0x89326C93]
       13 [-]: NAMECALL R2 R2 K7 [0x18D05D30]
       14 [-]: CALL R2 1 1  
       15 [-]: JUMPIFNOT R2 L0
       16 [-]: GETUPVAL R2 3
       17 [-]: CALL R2 0 0  
-L 0:  18 [-]: GETIMPORT R2 2 [nil]
+L 0:  18 [-]: GETIMPORT R2 2 [0x3D106989]
       19 [-]: LOADK R3 K8 ["Vomvalyst Capture: Initializing host/client..."]
       20 [-]: CALL R2 1 0  
-      21 [-]: GETIMPORT R2 6 [nil]
+      21 [-]: GETIMPORT R2 6 [0x89326C93]
       22 [-]: NAMECALL R2 R2 K9 [0xFB64E76C]
       23 [-]: CALL R2 1 1  
       24 [-]: SETUPVAL R2 4
-      25 [-]: GETIMPORT R2 2 [nil]
+      25 [-]: GETIMPORT R2 2 [0x3D106989]
       26 [-]: LOADK R3 K10 ["Vomvalyst Capture: Initialize host/client complete"]
       27 [-]: CALL R2 1 0  
       28 [-]: LOADB R2 0   
-L 1:  29 [-]: GETIMPORT R3 12 [nil]
+L 1:  29 [-]: GETIMPORT R3 12 [0xCBD666E1]
       30 [-]: LOADN R4 0   
       31 [-]: CALL R3 1 0  
 L 2:  32 [-]: GETUPVAL R4 5
       33 [-]: FASTCALL1 62 R4 L3
-      34 [-]: GETIMPORT R3 14 [nil]
+      34 [-]: GETIMPORT R3 14 [0x7B998233]
       35 [-]: CALL R3 1 1  
 L 3:  36 [-]: JUMPIFNOT R3 L7
-      37 [-]: GETIMPORT R3 12 [nil]
+      37 [-]: GETIMPORT R3 12 [0xCBD666E1]
       38 [-]: LOADN R4 0   
       39 [-]: CALL R3 1 0  
-      40 [-]: GETIMPORT R3 16 [nil]
+      40 [-]: GETIMPORT R3 16 [0xBE190284]
       41 [-]: SETUPVAL R3 5
       42 [-]: GETUPVAL R4 5
       43 [-]: FASTCALL1 62 R4 L4
-      44 [-]: GETIMPORT R3 14 [nil]
+      44 [-]: GETIMPORT R3 14 [0x7B998233]
       45 [-]: CALL R3 1 1  
 L 4:  46 [-]: JUMPIF R3 L6 
       47 [-]: LOADB R2 1   
@@ -1096,29 +1096,29 @@ L 5:  48 [-]: GETUPVAL R3 5
       49 [-]: NAMECALL R3 R3 K17 [0xC1F9F0D9]
       50 [-]: CALL R3 1 1  
       51 [-]: JUMPIF R3 L6 
-      52 [-]: GETIMPORT R3 12 [nil]
+      52 [-]: GETIMPORT R3 12 [0xCBD666E1]
       53 [-]: LOADN R4 0   
       54 [-]: CALL R3 1 0  
       55 [-]: JUMPBACK L5  
 L 6:  56 [-]: JUMPBACK L2  
 L 7:  57 [-]: JUMPIFNOT R2 L9
-      58 [-]: GETIMPORT R3 2 [nil]
+      58 [-]: GETIMPORT R3 2 [0x3D106989]
       59 [-]: LOADK R4 K18 ["Vomvalyst Capture: Host migration"]
       60 [-]: CALL R3 1 0  
-      61 [-]: GETIMPORT R3 20 [nil]
+      61 [-]: GETIMPORT R3 20 [0x14459A1C]
       62 [-]: JUMPIFNOT R3 L8
       63 [-]: GETUPVAL R3 3
       64 [-]: LOADB R4 1   
       65 [-]: CALL R3 1 0  
       66 [-]: LOADB R3 1   
-      67 [-]: GETIMPORT R3 2 [nil]
+      67 [-]: GETIMPORT R3 2 [0x3D106989]
       68 [-]: LOADK R4 K8 ["Vomvalyst Capture: Initializing host/client..."]
       69 [-]: CALL R3 1 0  
-      70 [-]: GETIMPORT R3 6 [nil]
+      70 [-]: GETIMPORT R3 6 [0x89326C93]
       71 [-]: NAMECALL R3 R3 K9 [0xFB64E76C]
       72 [-]: CALL R3 1 1  
       73 [-]: SETUPVAL R3 4
-      74 [-]: GETIMPORT R3 2 [nil]
+      74 [-]: GETIMPORT R3 2 [0x3D106989]
       75 [-]: LOADK R4 K10 ["Vomvalyst Capture: Initialize host/client complete"]
       76 [-]: CALL R3 1 0  
 L 8:  77 [-]: LOADB R2 0   
@@ -1127,15 +1127,15 @@ L 9:  78 [-]: GETUPVAL R3 0
       80 [-]: NAMECALL R3 R3 K21 [0x209398C2]
       81 [-]: CALL R3 2 1  
       82 [-]: SETUPVAL R3 6
-      83 [-]: GETIMPORT R3 6 [nil]
+      83 [-]: GETIMPORT R3 6 [0x89326C93]
       84 [-]: NAMECALL R3 R3 K7 [0x18D05D30]
       85 [-]: CALL R3 1 1  
       86 [-]: JUMPIFNOT R3 L10
       87 [-]: GETUPVAL R3 7
-      88 [-]: GETIMPORT R4 23 [nil]
+      88 [-]: GETIMPORT R4 23 [0x67652851]
       89 [-]: CALL R4 0 -1 
       90 [-]: CALL R3 -1 0 
-L10:  91 [-]: GETIMPORT R3 23 [nil]
+L10:  91 [-]: GETIMPORT R3 23 [0x67652851]
       92 [-]: CALL R3 0 1  
       93 [-]: JUMPBACK L1  
       94 [-]: RETURN R0 0  
@@ -1150,25 +1150,25 @@ L10:  91 [-]: GETIMPORT R3 23 [nil]
 
        0 [-]: FASTCALL1 62 R0 L0
        1 [-]: MOVE R2 R0   
-       2 [-]: GETIMPORT R1 1 [nil]
+       2 [-]: GETIMPORT R1 1 [0x7B998233]
        3 [-]: CALL R1 1 1  
 L 0:   4 [-]: JUMPIFNOT R1 L1
        5 [-]: RETURN R0 0  
-L 1:   6 [-]: GETIMPORT R2 4 [nil]
+L 1:   6 [-]: GETIMPORT R2 4 ["SwarmEnemiesCaptured"]
        7 [-]: FASTCALL1 62 R2 L2
-       8 [-]: GETIMPORT R1 1 [nil]
+       8 [-]: GETIMPORT R1 1 [0x7B998233]
        9 [-]: CALL R1 1 1  
 L 2:  10 [-]: JUMPIFNOT R1 L3
-      11 [-]: GETIMPORT R1 5 [nil]
+      11 [-]: GETIMPORT R1 5 ["_T"]
       12 [-]: LOADN R2 0   
       13 [-]: SETTABLEKS R2 R1 K3 ["SwarmEnemiesCaptured"]
-L 3:  14 [-]: GETIMPORT R1 5 [nil]
-      15 [-]: GETIMPORT R3 4 [nil]
+L 3:  14 [-]: GETIMPORT R1 5 ["_T"]
+      15 [-]: GETIMPORT R3 4 ["SwarmEnemiesCaptured"]
       16 [-]: ADDK R2 R3 K6 [1]
       17 [-]: SETTABLEKS R2 R1 K3 ["SwarmEnemiesCaptured"]
-      18 [-]: GETIMPORT R1 8 [nil]
+      18 [-]: GETIMPORT R1 8 [0xBE190284]
       19 [-]: GETUPVAL R3 0
-      20 [-]: GETIMPORT R4 4 [nil]
+      20 [-]: GETIMPORT R4 4 ["SwarmEnemiesCaptured"]
       21 [-]: NAMECALL R1 R1 K9 [0x751F061D]
       22 [-]: CALL R1 3 0  
       23 [-]: RETURN R0 0  
@@ -1184,15 +1184,15 @@ L 3:  14 [-]: GETIMPORT R1 5 [nil]
        0 [-]: LOADN R1 2   
 L 0:   1 [-]: LOADN R2 0   
        2 [-]: JUMPIFNOTLT R2 R1 L4
-       3 [-]: GETIMPORT R2 1 [nil]
+       3 [-]: GETIMPORT R2 1 [0x67652851]
        4 [-]: CALL R2 0 1  
        5 [-]: SUB R1 R1 R2 
-       6 [-]: GETIMPORT R2 3 [nil]
+       6 [-]: GETIMPORT R2 3 [0xCBD666E1]
        7 [-]: LOADN R3 0   
        8 [-]: CALL R2 1 0  
        9 [-]: FASTCALL1 62 R0 L1
       10 [-]: MOVE R3 R0   
-      11 [-]: GETIMPORT R2 5 [nil]
+      11 [-]: GETIMPORT R2 5 [0x7B998233]
       12 [-]: CALL R2 1 1  
 L 1:  13 [-]: JUMPIF R2 L2 
       14 [-]: NAMECALL R2 R0 K6 [0x1AC1655C]
@@ -1201,7 +1201,7 @@ L 1:  13 [-]: JUMPIF R2 L2
       17 [-]: NAMECALL R2 R2 K7 [0x8733746A]
       18 [-]: CALL R2 2 1  
       19 [-]: JUMPIF R2 L3 
-L 2:  20 [-]: GETIMPORT R2 9 [nil]
+L 2:  20 [-]: GETIMPORT R2 9 [0xD644C2F1]
       21 [-]: NAMECALL R6 R0 K10 [0xE223E2B1]
       22 [-]: CALL R6 1 1  
       23 [-]: MOVE R4 R6   
@@ -1210,31 +1210,31 @@ L 2:  20 [-]: GETIMPORT R2 9 [nil]
       26 [-]: CALL R2 1 0  
       27 [-]: RETURN R0 0  
 L 3:  28 [-]: JUMPBACK L0  
-L 4:  29 [-]: GETIMPORT R3 14 [nil]
+L 4:  29 [-]: GETIMPORT R3 14 ["SwarmEnemiesEscaped"]
       30 [-]: FASTCALL1 62 R3 L5
-      31 [-]: GETIMPORT R2 5 [nil]
+      31 [-]: GETIMPORT R2 5 [0x7B998233]
       32 [-]: CALL R2 1 1  
 L 5:  33 [-]: JUMPIFNOT R2 L6
-      34 [-]: GETIMPORT R2 15 [nil]
+      34 [-]: GETIMPORT R2 15 ["_T"]
       35 [-]: LOADN R3 0   
       36 [-]: SETTABLEKS R3 R2 K13 ["SwarmEnemiesEscaped"]
 L 6:  37 [-]: GETUPVAL R2 1
-      38 [-]: GETIMPORT R3 17 [nil]
+      38 [-]: GETIMPORT R3 17 [0xBE190284]
       39 [-]: MOVE R5 R2   
       40 [-]: LOADN R6 0   
       41 [-]: NAMECALL R3 R3 K18 [0x0EB34C69]
       42 [-]: CALL R3 3 1  
       43 [-]: ADDK R3 R3 K19 [1]
-      44 [-]: GETIMPORT R4 17 [nil]
+      44 [-]: GETIMPORT R4 17 [0xBE190284]
       45 [-]: MOVE R6 R2   
       46 [-]: MOVE R7 R3   
       47 [-]: NAMECALL R4 R4 K20 [0x751F061D]
       48 [-]: CALL R4 3 0  
-      49 [-]: GETIMPORT R2 15 [nil]
-      50 [-]: GETIMPORT R4 14 [nil]
+      49 [-]: GETIMPORT R2 15 ["_T"]
+      50 [-]: GETIMPORT R4 14 ["SwarmEnemiesEscaped"]
       51 [-]: ADDK R3 R4 K19 [1]
       52 [-]: SETTABLEKS R3 R2 K13 ["SwarmEnemiesEscaped"]
-      53 [-]: GETIMPORT R2 9 [nil]
+      53 [-]: GETIMPORT R2 9 [0xD644C2F1]
       54 [-]: NAMECALL R6 R0 K10 [0xE223E2B1]
       55 [-]: CALL R6 1 1  
       56 [-]: MOVE R4 R6   
@@ -1255,7 +1255,7 @@ L 6:  37 [-]: GETUPVAL R2 1
 
        0 [-]: FASTCALL1 62 R1 L0
        1 [-]: MOVE R3 R1   
-       2 [-]: GETIMPORT R2 1 [nil]
+       2 [-]: GETIMPORT R2 1 [0x7B998233]
        3 [-]: CALL R2 1 1  
 L 0:   4 [-]: JUMPIF R2 L1 
        5 [-]: NAMECALL R2 R1 K2 [0x1AC1655C]
@@ -1265,13 +1265,13 @@ L 0:   4 [-]: JUMPIF R2 L1
        9 [-]: CALL R2 2 1  
       10 [-]: JUMPIF R2 L2 
 L 1:  11 [-]: RETURN R0 0  
-L 2:  12 [-]: GETIMPORT R4 5 [nil]
+L 2:  12 [-]: GETIMPORT R4 5 [0x0469F296]
       13 [-]: LOADK R5 K6 ["SwarmalystEscapeScript"]
       14 [-]: CALL R4 1 1  
       15 [-]: LOADB R5 0   
       16 [-]: NAMECALL R2 R1 K7 [0xD5F7912B]
       17 [-]: CALL R2 3 0  
-      18 [-]: GETIMPORT R2 9 [nil]
+      18 [-]: GETIMPORT R2 9 [0xD644C2F1]
       19 [-]: NAMECALL R7 R1 K10 [0xE223E2B1]
       20 [-]: CALL R7 1 1  
       21 [-]: MOVE R4 R7   

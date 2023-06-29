@@ -5,11 +5,11 @@
 ; Is_vararg:       1
 ; Max Stack Size:  6
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x78CA68A2]
        2 [-]: LOADN R1 0   
        3 [-]: LOADK R2 K2 [0.14999999999999999]
        4 [-]: CALL R0 2 1  
-       5 [-]: GETIMPORT R1 1 [nil]
+       5 [-]: GETIMPORT R1 1 [0x78CA68A2]
        6 [-]: LOADN R2 0   
        7 [-]: LOADK R3 K2 [0.14999999999999999]
        8 [-]: CALL R1 2 1  
@@ -34,12 +34,12 @@
 ; Is_vararg:       0
 ; Max Stack Size:  8
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 [0xAE91E43B]
        1 [-]: LOADK R2 K2 ["Entry1.Icon"]
-       2 [-]: GETIMPORT R3 4 [nil]
+       2 [-]: GETIMPORT R3 4 [0xA3C1F371]
        3 [-]: NAMECALL R0 R0 K5 [0xD5181643]
        4 [-]: CALL R0 3 0  
-       5 [-]: GETIMPORT R0 1 [nil]
+       5 [-]: GETIMPORT R0 1 [0xAE91E43B]
        6 [-]: LOADK R2 K2 ["Entry1.Icon"]
        7 [-]: LOADK R3 K6 ["TunnelFade"]
        8 [-]: LOADN R4 0   
@@ -48,9 +48,9 @@
       11 [-]: LOADN R7 0   
       12 [-]: NAMECALL R0 R0 K7 [0x91E13703]
       13 [-]: CALL R0 7 0  
-      14 [-]: GETIMPORT R0 9 [nil]
-      15 [-]: GETIMPORT R2 11 [nil]
-      16 [-]: GETIMPORT R3 13 [nil]
+      14 [-]: GETIMPORT R0 9 [0x89326C93]
+      15 [-]: GETIMPORT R2 11 [0x25CAA611]
+      16 [-]: GETIMPORT R3 13 ["ZERO_VECTOR"]
       17 [-]: LOADB R4 0   
       18 [-]: NAMECALL R0 R0 K14 [0x659D451F]
       19 [-]: CALL R0 4 0  
@@ -70,12 +70,12 @@
        3 [-]: SETUPVAL R0 0
        4 [-]: RETURN R0 0  
 L 0:   5 [-]: GETUPVAL R1 1
-       6 [-]: GETIMPORT R3 2 [nil]
+       6 [-]: GETIMPORT R3 2 [0xB693B6C1]
        7 [-]: CALL R3 0 1  
        8 [-]: DIVK R2 R3 K0 [4]
        9 [-]: ADD R0 R1 R2 
       10 [-]: SETUPVAL R0 1
-      11 [-]: GETIMPORT R0 4 [nil]
+      11 [-]: GETIMPORT R0 4 [0x42DCC9F5]
       12 [-]: GETUPVAL R1 1
       13 [-]: LOADN R2 0   
       14 [-]: LOADN R3 1   
@@ -84,32 +84,32 @@ L 0:   5 [-]: GETUPVAL R1 1
       17 [-]: GETUPVAL R1 1
       18 [-]: GETUPVAL R2 1
       19 [-]: MUL R0 R1 R2 
-      20 [-]: GETIMPORT R1 6 [nil]
+      20 [-]: GETIMPORT R1 6 [0x9BAFFFE3]
       21 [-]: LOADN R2 0   
       22 [-]: LOADN R3 1   
       23 [-]: MOVE R4 R0   
       24 [-]: CALL R1 3 1  
       25 [-]: GETUPVAL R3 2
-      26 [-]: GETIMPORT R5 2 [nil]
+      26 [-]: GETIMPORT R5 2 [0xB693B6C1]
       27 [-]: CALL R5 0 1  
       28 [-]: MUL R4 R5 R1 
       29 [-]: ADD R2 R3 R4 
       30 [-]: SETUPVAL R2 2
-      31 [-]: GETIMPORT R3 9 [nil]
+      31 [-]: GETIMPORT R3 9 [0xDEF8AEAE]
       32 [-]: LOADN R4 3   
       33 [-]: LOADK R5 K10 [0.75]
       34 [-]: GETUPVAL R6 2
       35 [-]: LOADK R7 K11 [0.5]
       36 [-]: CALL R3 4 1  
       37 [-]: MULK R2 R3 K7 [0.25]
-      38 [-]: GETIMPORT R4 9 [nil]
+      38 [-]: GETIMPORT R4 9 [0xDEF8AEAE]
       39 [-]: LOADN R5 3   
       40 [-]: LOADK R6 K10 [0.75]
       41 [-]: GETUPVAL R7 2
       42 [-]: LOADK R8 K10 [0.75]
       43 [-]: CALL R4 4 1  
       44 [-]: MULK R3 R4 K7 [0.25]
-      45 [-]: GETIMPORT R4 13 [nil]
+      45 [-]: GETIMPORT R4 13 [0xAE91E43B]
       46 [-]: LOADK R6 K14 ["Entry1.Icon"]
       47 [-]: LOADK R7 K15 ["TunnelFade"]
       48 [-]: MOVE R8 R0   
@@ -121,7 +121,7 @@ L 0:   5 [-]: GETUPVAL R1 1
       54 [-]: GETUPVAL R4 1
       55 [-]: LOADN R5 1   
       56 [-]: JUMPIFNOTLE R5 R4 L1
-      57 [-]: GETIMPORT R4 13 [nil]
+      57 [-]: GETIMPORT R4 13 [0xAE91E43B]
       58 [-]: NAMECALL R4 R4 K17 [0x32302B4A]
       59 [-]: CALL R4 1 0  
 L 1:  60 [-]: RETURN R0 0  

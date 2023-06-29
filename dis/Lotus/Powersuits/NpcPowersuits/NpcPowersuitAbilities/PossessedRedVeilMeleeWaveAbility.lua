@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  2
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x2D0FAD09]
        2 [-]: LOADK R1 K2 ["Lotus.Scripts.Libs.AbilitiesLib"]
        3 [-]: CALL R0 1 1  
        4 [-]: DUPCLOSURE R1 K3 []
@@ -28,7 +28,7 @@
        4 [-]: GETTABLEKS R6 R4 K1 ["y"]
        5 [-]: SETTABLEKS R6 R5 K1 ["y"]
        6 [-]: MOVE R8 R4   
-       7 [-]: GETIMPORT R9 3 [nil]
+       7 [-]: GETIMPORT R9 3 [0x20B7F774]
        8 [-]: MOVE R10 R4  
        9 [-]: MOVE R11 R5  
       10 [-]: CALL R9 2 -1 
@@ -37,7 +37,7 @@
       13 [-]: GETUPVAL R7 0
       14 [-]: GETTABLEKS R6 R7 K5 [0x8D11E79E]
       15 [-]: MOVE R7 R0   
-      16 [-]: GETIMPORT R8 7 [nil]
+      16 [-]: GETIMPORT R8 7 [0xCC19770E]
       17 [-]: LOADK R9 K8 ["StartMeleeSweep"]
       18 [-]: LOADB R10 0  
       19 [-]: LOADN R11 3  
@@ -46,22 +46,22 @@
       22 [-]: CALL R6 7 0  
       23 [-]: NAMECALL R6 R1 K9 [0x5280B883]
       24 [-]: CALL R6 1 1  
-      25 [-]: GETIMPORT R7 11 [nil]
-      26 [-]: GETIMPORT R8 13 [nil]
+      25 [-]: GETIMPORT R7 11 [0x492C7F2A]
+      26 [-]: GETIMPORT R8 13 [0xA421AF95]
       27 [-]: LOADN R9 0   
       28 [-]: LOADK R10 K14 [1.3]
       29 [-]: LOADN R11 1  
       30 [-]: CALL R8 3 1  
       31 [-]: MOVE R9 R6   
       32 [-]: CALL R7 2 1  
-      33 [-]: GETIMPORT R8 16 [nil]
-      34 [-]: GETIMPORT R10 18 [nil]
+      33 [-]: GETIMPORT R8 16 [0x89326C93]
+      34 [-]: GETIMPORT R10 18 [0x78403F35]
       35 [-]: NAMECALL R12 R1 K0 [0xF6EBD926]
       36 [-]: CALL R12 1 1 
       37 [-]: ADD R11 R12 R7
-      38 [-]: GETIMPORT R12 20 [nil]
+      38 [-]: GETIMPORT R12 20 [0x20E8CA12]
       39 [-]: MOVE R13 R6  
-      40 [-]: GETIMPORT R14 22 [nil]
+      40 [-]: GETIMPORT R14 22 [0x00046924]
       41 [-]: LOADN R15 0  
       42 [-]: LOADK R16 K23 [0.5]
       43 [-]: LOADN R17 0  

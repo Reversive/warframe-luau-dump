@@ -5,13 +5,13 @@
 ; Is_vararg:       1
 ; Max Stack Size:  4
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x2D0FAD09]
        2 [-]: LOADK R1 K2 ["Lotus.Interface.Libs.DuviriUtil"]
        3 [-]: CALL R0 1 1  
-       4 [-]: GETIMPORT R1 1 [nil]
+       4 [-]: GETIMPORT R1 1 [0x2D0FAD09]
        5 [-]: LOADK R2 K3 ["Lotus.Powersuits.PowersuitAbilities.OperatorTransference"]
        6 [-]: CALL R1 1 1  
-       7 [-]: GETIMPORT R2 1 [nil]
+       7 [-]: GETIMPORT R2 1 [0x2D0FAD09]
        8 [-]: LOADK R3 K4 ["Lotus.Scripts.Libs.IntrinsicsSkillSymbolsLib"]
        9 [-]: CALL R2 1 1  
       10 [-]: DUPCLOSURE R3 K5 []
@@ -33,12 +33,12 @@
 
        0 [-]: FASTCALL1 62 R0 L0
        1 [-]: MOVE R6 R0   
-       2 [-]: GETIMPORT R5 1 [nil]
+       2 [-]: GETIMPORT R5 1 [0x7B998233]
        3 [-]: CALL R5 1 1  
 L 0:   4 [-]: JUMPIFNOT R5 L1
        5 [-]: RETURN R0 0  
 L 1:   6 [-]: MOVE R7 R0   
-       7 [-]: GETIMPORT R8 3 [nil]
+       7 [-]: GETIMPORT R8 3 [0xD286FC1E]
        8 [-]: MOVE R9 R0   
        9 [-]: NAMECALL R5 R0 K4 [0x1F135DE0]
       10 [-]: CALL R5 4 0  
@@ -54,12 +54,12 @@ L 1:   6 [-]: MOVE R7 R0
 
        0 [-]: FASTCALL1 62 R0 L0
        1 [-]: MOVE R6 R0   
-       2 [-]: GETIMPORT R5 1 [nil]
+       2 [-]: GETIMPORT R5 1 [0x7B998233]
        3 [-]: CALL R5 1 1  
 L 0:   4 [-]: JUMPIFNOT R5 L1
        5 [-]: RETURN R0 0  
 L 1:   6 [-]: MOVE R7 R0   
-       7 [-]: GETIMPORT R8 3 [nil]
+       7 [-]: GETIMPORT R8 3 [0xCFB78D09]
        8 [-]: MOVE R9 R0   
        9 [-]: NAMECALL R5 R0 K4 [0x1F135DE0]
       10 [-]: CALL R5 4 0  
@@ -73,7 +73,7 @@ L 1:   6 [-]: MOVE R7 R0
       18 [-]: GETUPVAL R6 2
       19 [-]: GETTABLEKS R5 R6 K7 [0x88C021F7]
       20 [-]: MOVE R6 R0   
-      21 [-]: GETIMPORT R7 9 [nil]
+      21 [-]: GETIMPORT R7 9 [0x460582D4]
       22 [-]: CALL R5 2 0  
 L 2:  23 [-]: RETURN R0 0  
 

@@ -5,9 +5,9 @@
 ; Is_vararg:       1
 ; Max Stack Size:  3
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0xAEABECDA]
        2 [-]: GETVARARGS R1 1
-       3 [-]: GETIMPORT R2 4 [nil]
+       3 [-]: GETIMPORT R2 4 ["seeall"]
        4 [-]: CALL R0 2 0  
        5 [-]: DUPCLOSURE R0 K5 []
        6 [-]: SETGLOBAL R0 K6 ["CreateCircularText"]
@@ -21,7 +21,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  8
 
-       0 [-]: GETIMPORT R2 1 [nil]
+       0 [-]: GETIMPORT R2 1 [0x2D0FAD09]
        1 [-]: LOADK R3 K2 ["EE.Interface.Utilities"]
        2 [-]: CALL R2 1 1  
        3 [-]: DUPTABLE R3 29

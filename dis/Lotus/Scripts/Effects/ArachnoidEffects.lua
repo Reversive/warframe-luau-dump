@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  2
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x0469F296]
        2 [-]: LOADK R1 K2 ["uvOffsets"]
        3 [-]: CALL R0 1 1  
        4 [-]: DUPCLOSURE R1 K3 []
@@ -27,20 +27,20 @@ L 0:   1 [-]: LOADN R2 1
        3 [-]: GETUPVAL R4 0
        4 [-]: LOADN R5 0   
        5 [-]: LOADN R6 0   
-       6 [-]: GETIMPORT R7 1 [nil]
-       7 [-]: GETIMPORT R8 3 [nil]
-       8 [-]: GETIMPORT R9 5 [nil]
+       6 [-]: GETIMPORT R7 1 [0x9BAFFFE3]
+       7 [-]: GETIMPORT R8 3 [0xC3B973B7]
+       8 [-]: GETIMPORT R9 5 [0xDC981C12]
        9 [-]: MOVE R10 R1  
       10 [-]: CALL R7 3 1  
       11 [-]: LOADN R8 0   
       12 [-]: NAMECALL R2 R0 K6 [0x986D2AB8]
       13 [-]: CALL R2 6 0  
-      14 [-]: GETIMPORT R3 8 [nil]
+      14 [-]: GETIMPORT R3 8 [0x67652851]
       15 [-]: CALL R3 0 1  
-      16 [-]: GETIMPORT R4 10 [nil]
+      16 [-]: GETIMPORT R4 10 [0x9A9C248A]
       17 [-]: DIV R2 R3 R4 
       18 [-]: ADD R1 R1 R2 
-      19 [-]: GETIMPORT R2 12 [nil]
+      19 [-]: GETIMPORT R2 12 [0xCBD666E1]
       20 [-]: LOADN R3 0   
       21 [-]: CALL R2 1 0  
       22 [-]: JUMPBACK L0  

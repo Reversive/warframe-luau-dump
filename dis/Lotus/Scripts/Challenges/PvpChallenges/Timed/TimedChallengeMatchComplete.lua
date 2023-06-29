@@ -5,8 +5,8 @@
 ; Is_vararg:       1
 ; Max Stack Size:  3
 
-            1 [-]: LOADNIL R0   
-       2 [-]: GETIMPORT R1 1 [nil]
+       1 [-]: LOADNIL R0   
+       2 [-]: GETIMPORT R1 1 [0x2D0FAD09]
        3 [-]: LOADK R2 K2 ["Lotus.Scripts.Challenges.PvpChallenges.Timed.TimedChallengeSimpleCounter"]
        4 [-]: CALL R1 1 1  
        5 [-]: NEWCLOSURE R2 P0
@@ -30,8 +30,8 @@
 
        0 [-]: GETUPVAL R1 1
        1 [-]: GETTABLEKS R0 R1 K0 [0xB8AE375D]
-       2 [-]: GETIMPORT R1 2 [nil]
-       3 [-]: GETIMPORT R2 4 [nil]
+       2 [-]: GETIMPORT R1 2 [0x83062D09]
+       3 [-]: GETIMPORT R2 4 [0x5BF84945]
        4 [-]: CALL R0 2 1  
        5 [-]: SETUPVAL R0 0
        6 [-]: RETURN R0 0  

@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  1
 
-            1 [-]: DUPCLOSURE R0 K0 []
+       1 [-]: DUPCLOSURE R0 K0 []
        2 [-]: SETGLOBAL R0 K1 ["NpcEvaluateAbility"]
        3 [-]: DUPCLOSURE R0 K2 []
        4 [-]: SETGLOBAL R0 K3 ["ActivateAbility"]
@@ -31,7 +31,7 @@
 ; Max Stack Size:  14
 
        0 [-]: LOADK R6 K0 ["Fire"]
-       1 [-]: GETIMPORT R9 2 [nil]
+       1 [-]: GETIMPORT R9 2 [0x0ED8B456]
        2 [-]: LOADB R10 0  
        3 [-]: LOADN R11 3  
        4 [-]: LOADN R12 1  
@@ -40,24 +40,24 @@
        7 [-]: CALL R7 6 -1 
        8 [-]: NAMECALL R4 R1 K4 [0x21B4C60E]
        9 [-]: CALL R4 -1 0 
-      10 [-]: GETIMPORT R6 6 [nil]
+      10 [-]: GETIMPORT R6 6 [0xDB106B8B]
       11 [-]: NAMECALL R4 R1 K7 [0x003C792F]
       12 [-]: CALL R4 2 1  
       13 [-]: NAMECALL R5 R1 K8 [0x5280B883]
       14 [-]: CALL R5 1 1  
-      15 [-]: GETIMPORT R8 10 [nil]
+      15 [-]: GETIMPORT R8 10 [0xAEC1ADA0]
       16 [-]: LOADB R9 0   
       17 [-]: NAMECALL R6 R1 K11 [0x659D451F]
       18 [-]: CALL R6 3 0  
-      19 [-]: GETIMPORT R6 13 [nil]
-      20 [-]: GETIMPORT R8 15 [nil]
+      19 [-]: GETIMPORT R6 13 [0x89326C93]
+      20 [-]: GETIMPORT R8 15 [0x3D0A4865]
       21 [-]: MOVE R9 R4   
       22 [-]: MOVE R10 R5  
       23 [-]: MOVE R11 R1  
       24 [-]: NAMECALL R6 R6 K16 [0x21DBE06C]
       25 [-]: CALL R6 5 0  
-      26 [-]: GETIMPORT R6 13 [nil]
-      27 [-]: GETIMPORT R8 18 [nil]
+      26 [-]: GETIMPORT R6 13 [0x89326C93]
+      27 [-]: GETIMPORT R8 18 [0x78403F35]
       28 [-]: MOVE R9 R4   
       29 [-]: MOVE R10 R5  
       30 [-]: MOVE R11 R1  
@@ -65,7 +65,7 @@
       32 [-]: CALL R6 5 1  
       33 [-]: FASTCALL1 62 R6 L0
       34 [-]: MOVE R8 R6   
-      35 [-]: GETIMPORT R7 21 [nil]
+      35 [-]: GETIMPORT R7 21 [0x7B998233]
       36 [-]: CALL R7 1 1  
 L 0:  37 [-]: JUMPIF R7 L2 
       38 [-]: MOVE R9 R1   
@@ -73,7 +73,7 @@ L 0:  37 [-]: JUMPIF R7 L2
       40 [-]: CALL R7 2 0  
       41 [-]: FASTCALL1 62 R2 L1
       42 [-]: MOVE R8 R2   
-      43 [-]: GETIMPORT R7 21 [nil]
+      43 [-]: GETIMPORT R7 21 [0x7B998233]
       44 [-]: CALL R7 1 1  
 L 1:  45 [-]: JUMPIF R7 L2 
 L 2:  46 [-]: RETURN R0 0  

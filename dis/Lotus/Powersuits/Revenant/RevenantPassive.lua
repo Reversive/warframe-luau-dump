@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  2
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x2D0FAD09]
        2 [-]: LOADK R1 K2 ["Lotus.Scripts.Libs.AbilitiesLib"]
        3 [-]: CALL R0 1 1  
        4 [-]: DUPCLOSURE R1 K3 []
@@ -28,7 +28,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  3
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 ["_T"]
        1 [-]: DUPTABLE R1 4
        2 [-]: LOADK R2 K5 [7.5]
        3 [-]: SETTABLEKS R2 R1 K2 ["RADIUS"]
@@ -55,11 +55,11 @@ L 0:   6 [-]: NAMECALL R1 R0 K1 [0x5163741E]
        7 [-]: CALL R1 1 1  
        8 [-]: FASTCALL1 62 R1 L1
        9 [-]: MOVE R3 R1   
-      10 [-]: GETIMPORT R2 3 [nil]
+      10 [-]: GETIMPORT R2 3 [0x7B998233]
       11 [-]: CALL R2 1 1  
 L 1:  12 [-]: JUMPIFNOT R2 L2
       13 [-]: RETURN R0 0  
-L 2:  14 [-]: GETIMPORT R4 5 [nil]
+L 2:  14 [-]: GETIMPORT R4 5 [0x0469F296]
       15 [-]: LOADK R5 K6 ["MagneticWaterImmunity"]
       16 [-]: CALL R4 1 -1 
       17 [-]: NAMECALL R2 R1 K7 [0xB6FD75DB]
@@ -68,7 +68,7 @@ L 2:  14 [-]: GETIMPORT R4 5 [nil]
       20 [-]: CALL R2 1 1  
       21 [-]: JUMPIF R2 L3 
       22 [-]: RETURN R0 0  
-L 3:  23 [-]: GETIMPORT R2 11 [nil]
+L 3:  23 [-]: GETIMPORT R2 11 [0x5CB2ADF8]
       24 [-]: CALL R2 0 1  
       25 [-]: LOADN R3 100 
       26 [-]: SETTABLEKS R3 R2 K12 ["baseAmount"]
@@ -94,11 +94,11 @@ L 3:  23 [-]: GETIMPORT R2 11 [nil]
       46 [-]: CALL R3 1 1  
       47 [-]: NAMECALL R4 R3 K21 [0xF456C2D7]
       48 [-]: CALL R4 1 1  
-      49 [-]: GETIMPORT R5 23 [nil]
+      49 [-]: GETIMPORT R5 23 [0xA421AF95]
       50 [-]: CALL R5 0 1  
 L 4:  51 [-]: FASTCALL1 62 R1 L5
       52 [-]: MOVE R7 R1   
-      53 [-]: GETIMPORT R6 3 [nil]
+      53 [-]: GETIMPORT R6 3 [0x7B998233]
       54 [-]: CALL R6 1 1  
 L 5:  55 [-]: JUMPIF R6 L7 
       56 [-]: NAMECALL R6 R1 K24 [0x2047CFE7]
@@ -115,19 +115,19 @@ L 5:  55 [-]: JUMPIF R6 L7
       67 [-]: MOVE R9 R5   
       68 [-]: NAMECALL R7 R2 K27 [0x618938F0]
       69 [-]: CALL R7 2 0  
-      70 [-]: GETIMPORT R7 29 [nil]
+      70 [-]: GETIMPORT R7 29 [0x89326C93]
       71 [-]: MOVE R9 R2   
       72 [-]: NAMECALL R7 R7 K30 [0x97DCFF30]
       73 [-]: CALL R7 2 0  
-      74 [-]: GETIMPORT R7 29 [nil]
-      75 [-]: GETIMPORT R9 32 [nil]
+      74 [-]: GETIMPORT R7 29 [0x89326C93]
+      75 [-]: GETIMPORT R9 32 [0x4F468D45]
       76 [-]: MOVE R10 R5  
-      77 [-]: GETIMPORT R11 34 [nil]
+      77 [-]: GETIMPORT R11 34 ["ZERO_ROTATION"]
       78 [-]: MOVE R12 R0  
       79 [-]: NAMECALL R7 R7 K35 [0x05909209]
       80 [-]: CALL R7 5 0  
 L 6:  81 [-]: MOVE R4 R6   
-      82 [-]: GETIMPORT R7 37 [nil]
+      82 [-]: GETIMPORT R7 37 [0xCBD666E1]
       83 [-]: LOADN R8 0   
       84 [-]: CALL R7 1 0  
       85 [-]: JUMPBACK L4  
@@ -151,11 +151,11 @@ L 0:   6 [-]: NAMECALL R1 R0 K1 [0x5163741E]
        7 [-]: CALL R1 1 1  
        8 [-]: FASTCALL1 62 R1 L1
        9 [-]: MOVE R3 R1   
-      10 [-]: GETIMPORT R2 3 [nil]
+      10 [-]: GETIMPORT R2 3 [0x7B998233]
       11 [-]: CALL R2 1 1  
 L 1:  12 [-]: JUMPIFNOT R2 L2
       13 [-]: RETURN R0 0  
-L 2:  14 [-]: GETIMPORT R4 5 [nil]
+L 2:  14 [-]: GETIMPORT R4 5 [0x0469F296]
       15 [-]: LOADK R5 K6 ["MagneticWaterImmunity"]
       16 [-]: CALL R4 1 -1 
       17 [-]: NAMECALL R2 R1 K7 [0xA3A0F1C2]
@@ -170,55 +170,55 @@ L 2:  14 [-]: GETIMPORT R4 5 [nil]
 ; Is_vararg:       0
 ; Max Stack Size:  13
 
-       0 [-]: GETIMPORT R1 1 [nil]
+       0 [-]: GETIMPORT R1 1 [0xCBD666E1]
        1 [-]: LOADN R2 0   
        2 [-]: CALL R1 1 0  
        3 [-]: NAMECALL R1 R0 K2 [0x647915F6]
        4 [-]: CALL R1 1 1  
        5 [-]: FASTCALL1 62 R1 L0
        6 [-]: MOVE R3 R1   
-       7 [-]: GETIMPORT R2 4 [nil]
+       7 [-]: GETIMPORT R2 4 [0x7B998233]
        8 [-]: CALL R2 1 1  
 L 0:   9 [-]: JUMPIFNOT R2 L1
       10 [-]: RETURN R0 0  
-L 1:  11 [-]: GETIMPORT R2 6 [nil]
+L 1:  11 [-]: GETIMPORT R2 6 [0x0469F296]
       12 [-]: LOADK R3 K7 ["RevenantCapeHide"]
       13 [-]: CALL R2 1 1  
-      14 [-]: GETIMPORT R5 9 [nil]
+      14 [-]: GETIMPORT R5 9 ["gSkeletalClothExType"]
       15 [-]: NAMECALL R3 R1 K10 [0xC1595BD5]
       16 [-]: CALL R3 2 1  
-      17 [-]: GETIMPORT R4 12 [nil]
+      17 [-]: GETIMPORT R4 12 [0xC8802016]
       18 [-]: MOVE R5 R3   
       19 [-]: CALL R4 1 3  
       20 [-]: FORGPREP_INEXT R4 L4
 L 2:  21 [-]: FASTCALL1 62 R8 L3
       22 [-]: MOVE R10 R8  
-      23 [-]: GETIMPORT R9 4 [nil]
+      23 [-]: GETIMPORT R9 4 [0x7B998233]
       24 [-]: CALL R9 1 1  
 L 3:  25 [-]: JUMPIF R9 L4 
       26 [-]: MOVE R11 R2  
       27 [-]: NAMECALL R9 R8 K13 [0x08DB51DE]
       28 [-]: CALL R9 2 1  
       29 [-]: JUMPIFNOT R9 L4
-      30 [-]: GETIMPORT R11 6 [nil]
+      30 [-]: GETIMPORT R11 6 [0x0469F296]
       31 [-]: LOADK R12 K14 ["UnlitAtten"]
       32 [-]: CALL R11 1 1 
       33 [-]: LOADN R12 0  
       34 [-]: NAMECALL R9 R8 K15 [0x986D2AB8]
       35 [-]: CALL R9 3 0  
 L 4:  36 [-]: FORGLOOP R4 L2 2 [inext]
-      37 [-]: GETIMPORT R6 17 [nil]
+      37 [-]: GETIMPORT R6 17 [0x7ED0A956]
       38 [-]: LOADK R7 K18 ["/Lotus/Fx/Sigils/BasicSigil"]
       39 [-]: CALL R6 1 -1 
       40 [-]: NAMECALL R4 R0 K10 [0xC1595BD5]
       41 [-]: CALL R4 -1 1 
-      42 [-]: GETIMPORT R5 12 [nil]
+      42 [-]: GETIMPORT R5 12 [0xC8802016]
       43 [-]: MOVE R6 R4   
       44 [-]: CALL R5 1 3  
       45 [-]: FORGPREP_INEXT R5 L7
 L 5:  46 [-]: FASTCALL1 62 R9 L6
       47 [-]: MOVE R11 R9  
-      48 [-]: GETIMPORT R10 4 [nil]
+      48 [-]: GETIMPORT R10 4 [0x7B998233]
       49 [-]: CALL R10 1 1 
 L 6:  50 [-]: JUMPIF R10 L7
       51 [-]: NAMECALL R10 R9 K19 [0xA2880940]

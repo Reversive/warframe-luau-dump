@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  2
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x2D0FAD09]
        2 [-]: LOADK R1 K2 ["Lotus.Interface.LotusUtilities"]
        3 [-]: CALL R0 1 1  
        4 [-]: DUPCLOSURE R1 K3 []
@@ -21,27 +21,27 @@
 ; Is_vararg:       0
 ; Max Stack Size:  8
 
-       0 [-]: GETIMPORT R0 1 [nil]
-       1 [-]: GETIMPORT R1 3 [nil]
+       0 [-]: GETIMPORT R0 1 ["_T"]
+       1 [-]: GETIMPORT R1 3 ["FoundryClaimCallbacks"]
        2 [-]: JUMPIF R1 L0 
        3 [-]: NEWTABLE R1 0 0
 L 0:   4 [-]: SETTABLEKS R1 R0 K2 ["FoundryClaimCallbacks"]
-       5 [-]: GETIMPORT R0 5 [nil]
-       6 [-]: GETIMPORT R1 7 [nil]
+       5 [-]: GETIMPORT R0 5 [0xC8802016]
+       6 [-]: GETIMPORT R1 7 [0x1EA8D1E1]
        7 [-]: CALL R0 1 3  
        8 [-]: FORGPREP_INEXT R0 L4
 L 1:   9 [-]: FASTCALL1 62 R4 L2
       10 [-]: MOVE R6 R4   
-      11 [-]: GETIMPORT R5 9 [nil]
+      11 [-]: GETIMPORT R5 9 [0x7B998233]
       12 [-]: CALL R5 1 1  
 L 2:  13 [-]: JUMPIF R5 L4 
-      14 [-]: GETIMPORT R7 11 [nil]
+      14 [-]: GETIMPORT R7 11 [0x605C3CFB]
       15 [-]: GETTABLE R6 R7 R3
       16 [-]: FASTCALL1 62 R6 L3
-      17 [-]: GETIMPORT R5 9 [nil]
+      17 [-]: GETIMPORT R5 9 [0x7B998233]
       18 [-]: CALL R5 1 1  
 L 3:  19 [-]: JUMPIF R5 L4 
-      20 [-]: GETIMPORT R5 3 [nil]
+      20 [-]: GETIMPORT R5 3 ["FoundryClaimCallbacks"]
       21 [-]: NAMECALL R6 R4 K12 [0xED4E0128]
       22 [-]: CALL R6 1 1  
       23 [-]: NEWCLOSURE R7 P0

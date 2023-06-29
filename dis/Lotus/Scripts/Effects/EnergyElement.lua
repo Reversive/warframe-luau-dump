@@ -5,9 +5,9 @@
 ; Is_vararg:       1
 ; Max Stack Size:  3
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0xAEABECDA]
        2 [-]: GETVARARGS R1 1
-       3 [-]: GETIMPORT R2 4 [nil]
+       3 [-]: GETIMPORT R2 4 ["seeall"]
        4 [-]: CALL R0 2 0  
        5 [-]: DUPCLOSURE R0 K5 []
        6 [-]: DUPCLOSURE R1 K6 []
@@ -38,19 +38,19 @@
        1 [-]: GETTABLEKS R4 R0 K1 ["green"]
        2 [-]: GETTABLEKS R5 R0 K2 ["blue"]
        3 [-]: FASTCALL2 18 R4 R5 L0
-       4 [-]: GETIMPORT R3 5 [nil]
+       4 [-]: GETIMPORT R3 5 [0xB62ECFE0]
        5 [-]: CALL R3 2 -1 
 L 0:   6 [-]: FASTCALL 18 L1
-       7 [-]: GETIMPORT R1 5 [nil]
+       7 [-]: GETIMPORT R1 5 [0xB62ECFE0]
        8 [-]: CALL R1 -1 1 
 L 1:   9 [-]: GETTABLEKS R3 R0 K0 ["red"]
       10 [-]: GETTABLEKS R5 R0 K1 ["green"]
       11 [-]: GETTABLEKS R6 R0 K2 ["blue"]
       12 [-]: FASTCALL2 19 R5 R6 L2
-      13 [-]: GETIMPORT R4 7 [nil]
+      13 [-]: GETIMPORT R4 7 [0xAC1B386A]
       14 [-]: CALL R4 2 -1 
 L 2:  15 [-]: FASTCALL 19 L3
-      16 [-]: GETIMPORT R2 7 [nil]
+      16 [-]: GETIMPORT R2 7 [0xAC1B386A]
       17 [-]: CALL R2 -1 1 
 L 3:  18 [-]: SUB R3 R1 R2 
       19 [-]: LOADN R4 0   
@@ -109,7 +109,7 @@ L 7:  35 [-]: LOADN R5 5
        2 [-]: MOVE R2 R1   
 L 0:   3 [-]: FASTCALL1 62 R0 L1
        4 [-]: MOVE R4 R0   
-       5 [-]: GETIMPORT R3 1 [nil]
+       5 [-]: GETIMPORT R3 1 [0x7B998233]
        6 [-]: CALL R3 1 1  
 L 1:   7 [-]: JUMPIF R3 L6 
        8 [-]: NAMECALL R3 R0 K2 [0x68D708A7]
@@ -122,17 +122,17 @@ L 1:   7 [-]: JUMPIF R3 L6
       15 [-]: CALL R5 2 1  
       16 [-]: JUMPIFNOT R5 L6
       17 [-]: LOADNIL R5   
-      18 [-]: GETIMPORT R7 6 [nil]
+      18 [-]: GETIMPORT R7 6 [0xBE190284]
       19 [-]: FASTCALL1 62 R7 L2
-      20 [-]: GETIMPORT R6 1 [nil]
+      20 [-]: GETIMPORT R6 1 [0x7B998233]
       21 [-]: CALL R6 1 1  
 L 2:  22 [-]: JUMPIF R6 L3 
-      23 [-]: GETIMPORT R6 6 [nil]
-      24 [-]: GETIMPORT R8 8 [nil]
+      23 [-]: GETIMPORT R6 6 [0xBE190284]
+      24 [-]: GETIMPORT R8 8 ["gLotusAttractModeGameRulesType"]
       25 [-]: NAMECALL R6 R6 K9 [0xF2DEAF69]
       26 [-]: CALL R6 2 1  
       27 [-]: JUMPIF R6 L3 
-      28 [-]: GETIMPORT R6 12 [nil]
+      28 [-]: GETIMPORT R6 12 ["InSimulacrum"]
       29 [-]: JUMPIFNOT R6 L4
 L 3:  30 [-]: GETTABLEKS R5 R4 K13 ["mEmissiveColor0"]
       31 [-]: JUMP L5

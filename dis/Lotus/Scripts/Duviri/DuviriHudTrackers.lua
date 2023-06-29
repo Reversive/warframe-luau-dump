@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  2
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x2D0FAD09]
        2 [-]: LOADK R1 K2 ["Lotus.Scripts.Libs.DuviriActivityLib"]
        3 [-]: CALL R0 1 1  
        4 [-]: DUPCLOSURE R1 K3 []
@@ -21,7 +21,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  7
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 [0xBE190284]
        1 [-]: NAMECALL R0 R0 K2 [0x5C390F04]
        2 [-]: CALL R0 1 1  
        3 [-]: LOADN R1 31  
@@ -30,7 +30,7 @@
 L 0:   6 [-]: GETUPVAL R1 0
        7 [-]: GETTABLEKS R0 R1 K3 [0x63E995B3]
        8 [-]: CALL R0 0 0  
-       9 [-]: GETIMPORT R0 5 [nil]
+       9 [-]: GETIMPORT R0 5 [0x89326C93]
       10 [-]: NAMECALL R0 R0 K6 [0xFB64E76C]
       11 [-]: CALL R0 1 1  
       12 [-]: NAMECALL R1 R0 K7 [0x8B72B36E]
@@ -38,14 +38,14 @@ L 0:   6 [-]: GETUPVAL R1 0
       14 [-]: LOADNIL R2   
 L 1:  15 [-]: FASTCALL1 62 R0 L2
       16 [-]: MOVE R4 R0   
-      17 [-]: GETIMPORT R3 9 [nil]
+      17 [-]: GETIMPORT R3 9 [0x7B998233]
       18 [-]: CALL R3 1 1  
 L 2:  19 [-]: JUMPIFNOT R3 L3
-      20 [-]: GETIMPORT R3 5 [nil]
+      20 [-]: GETIMPORT R3 5 [0x89326C93]
       21 [-]: NAMECALL R3 R3 K6 [0xFB64E76C]
       22 [-]: CALL R3 1 1  
       23 [-]: MOVE R0 R3   
-      24 [-]: GETIMPORT R3 11 [nil]
+      24 [-]: GETIMPORT R3 11 [0x14459A1C]
       25 [-]: JUMPIFNOT R3 L5
       26 [-]: LOADNIL R2   
       27 [-]: GETUPVAL R4 0
@@ -65,7 +65,7 @@ L 4:  37 [-]: GETUPVAL R5 0
       40 [-]: MOVE R6 R3   
       41 [-]: CALL R4 2 0  
       42 [-]: MOVE R2 R3   
-L 5:  43 [-]: GETIMPORT R3 15 [nil]
+L 5:  43 [-]: GETIMPORT R3 15 [0xCBD666E1]
       44 [-]: LOADN R4 0   
       45 [-]: CALL R3 1 0  
       46 [-]: JUMPBACK L1  

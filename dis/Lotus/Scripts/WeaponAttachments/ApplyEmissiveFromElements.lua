@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  1
 
-            1 [-]: DUPCLOSURE R0 K0 []
+       1 [-]: DUPCLOSURE R0 K0 []
        2 [-]: SETGLOBAL R0 K1 ["UpgradeApplied"]
        3 [-]: RETURN R0 0  
 
@@ -17,7 +17,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  19
 
-       0 [-]: GETIMPORT R5 1 [nil]
+       0 [-]: GETIMPORT R5 1 [0xCBD666E1]
        1 [-]: LOADN R6 0   
        2 [-]: CALL R5 1 0  
        3 [-]: NAMECALL R5 R1 K2 [0x68D708A7]
@@ -30,9 +30,9 @@
       10 [-]: CALL R7 2 1  
       11 [-]: JUMPIFNOT R7 L0
       12 [-]: RETURN R0 0  
-L 0:  13 [-]: GETIMPORT R7 6 [nil]
+L 0:  13 [-]: GETIMPORT R7 6 [0x60130201]
       14 [-]: CALL R7 0 1  
-      15 [-]: GETIMPORT R8 6 [nil]
+      15 [-]: GETIMPORT R8 6 [0x60130201]
       16 [-]: CALL R8 0 1  
       17 [-]: NAMECALL R9 R4 K7 [0x0AD758CB]
       18 [-]: CALL R9 1 1  
@@ -46,23 +46,23 @@ L 1:  23 [-]: SUBK R15 R12 K8 [1]
       26 [-]: NAMECALL R15 R13 K10 [0x14BE127F]
       27 [-]: CALL R15 1 1 
       28 [-]: ADDK R14 R15 K8 [1]
-      29 [-]: GETIMPORT R17 12 [nil]
+      29 [-]: GETIMPORT R17 12 [0x47083EDE]
       30 [-]: LENGTH R16 R17
-      31 [-]: GETIMPORT R18 14 [nil]
+      31 [-]: GETIMPORT R18 14 [0x49113C60]
       32 [-]: LENGTH R17 R18
       33 [-]: FASTCALL2 19 R16 R17 L2
-      34 [-]: GETIMPORT R15 17 [nil]
+      34 [-]: GETIMPORT R15 17 [0xAC1B386A]
       35 [-]: CALL R15 2 1 
 L 2:  36 [-]: JUMPIFNOTLT R15 R14 L3
       37 [-]: RETURN R0 0  
-L 3:  38 [-]: GETIMPORT R15 12 [nil]
+L 3:  38 [-]: GETIMPORT R15 12 [0x47083EDE]
       39 [-]: GETTABLE R7 R15 R14
-      40 [-]: GETIMPORT R15 14 [nil]
+      40 [-]: GETIMPORT R15 14 [0x49113C60]
       41 [-]: GETTABLE R8 R15 R14
       42 [-]: JUMP L4
      
       43 [-]: FORNLOOP R10 L1
-L 4:  44 [-]: GETIMPORT R12 19 [nil]
+L 4:  44 [-]: GETIMPORT R12 19 ["gLotusWeaponType"]
       45 [-]: NAMECALL R10 R1 K20 [0xF2DEAF69]
       46 [-]: CALL R10 2 1 
       47 [-]: JUMPIFNOT R10 L5

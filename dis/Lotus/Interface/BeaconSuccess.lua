@@ -5,13 +5,13 @@
 ; Is_vararg:       1
 ; Max Stack Size:  12
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x2D0FAD09]
        2 [-]: LOADK R1 K2 ["Lotus.Interface.StoreItemUtilities"]
        3 [-]: CALL R0 1 1  
-       4 [-]: GETIMPORT R1 1 [nil]
+       4 [-]: GETIMPORT R1 1 [0x2D0FAD09]
        5 [-]: LOADK R2 K3 ["Lotus.Interface.UIStyleUtilities"]
        6 [-]: CALL R1 1 1  
-       7 [-]: GETIMPORT R2 1 [nil]
+       7 [-]: GETIMPORT R2 1 [0x2D0FAD09]
        8 [-]: LOADK R3 K4 ["Lotus.Interface.UIUtilities"]
        9 [-]: CALL R2 1 1  
       10 [-]: LOADNIL R3   
@@ -58,16 +58,16 @@
 
        0 [-]: GETUPVAL R1 0
        1 [-]: FASTCALL1 62 R1 L0
-       2 [-]: GETIMPORT R0 1 [nil]
+       2 [-]: GETIMPORT R0 1 [0x7B998233]
        3 [-]: CALL R0 1 1  
 L 0:   4 [-]: JUMPIF R0 L1 
        5 [-]: GETUPVAL R0 0
        6 [-]: NAMECALL R0 R0 K2 [0x7076B095]
        7 [-]: CALL R0 1 0  
-L 1:   8 [-]: GETIMPORT R0 4 [nil]
-       9 [-]: GETIMPORT R1 6 [nil]
+L 1:   8 [-]: GETIMPORT R0 4 [0x25312C9B]
+       9 [-]: GETIMPORT R1 6 [0xAE91E43B]
       10 [-]: LOADK R2 K7 ["_root"]
-      11 [-]: GETIMPORT R3 10 [nil]
+      11 [-]: GETIMPORT R3 10 ["FlashInterpolate_SMOOTH_STEP"]
       12 [-]: NEWTABLE R4 0 1
       13 [-]: LOADN R5 10  
       14 [-]: SETLIST R4 R5 1 [1]
@@ -89,11 +89,11 @@ L 1:   8 [-]: GETIMPORT R0 4 [nil]
 ; Is_vararg:       0
 ; Max Stack Size:  6
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 [0x2D0FAD09]
        1 [-]: LOADK R1 K2 ["Lotus.Interface.Components.CategorizedGrid"]
        2 [-]: CALL R0 1 1  
        3 [-]: GETTABLEKS R1 R0 K3 [0x67D7B715]
-       4 [-]: GETIMPORT R2 5 [nil]
+       4 [-]: GETIMPORT R2 5 [0xAE91E43B]
        5 [-]: LOADK R3 K6 ["RewardContainer.RewardItem"]
        6 [-]: LOADN R4 1   
        7 [-]: LOADN R5 1   
@@ -149,7 +149,7 @@ L 1:   8 [-]: GETIMPORT R0 4 [nil]
 
        0 [-]: GETUPVAL R2 0
        1 [-]: GETTABLEKS R1 R2 K0 [0x08681F50]
-       2 [-]: GETIMPORT R2 2 [nil]
+       2 [-]: GETIMPORT R2 2 [0xAE91E43B]
        3 [-]: MOVE R3 R0   
        4 [-]: LOADNIL R4   
        5 [-]: LOADNIL R5   
@@ -181,7 +181,7 @@ L 1:   8 [-]: GETIMPORT R0 4 [nil]
        2 [-]: LOADN R1 9   
        3 [-]: LOADB R2 1   
        4 [-]: CALL R0 2 1  
-       5 [-]: GETIMPORT R1 2 [nil]
+       5 [-]: GETIMPORT R1 2 [0xAE91E43B]
        6 [-]: LOADK R3 K3 ["RewardContainer.Name"]
        7 [-]: LOADN R4 36  
        8 [-]: MOVE R5 R0   
@@ -197,31 +197,31 @@ L 1:   8 [-]: GETIMPORT R0 4 [nil]
 ; Is_vararg:       0
 ; Max Stack Size:  5
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 [0xAE91E43B]
        1 [-]: LOADK R2 K2 ["RewardContainer"]
        2 [-]: LOADN R3 11  
        3 [-]: LOADB R4 0   
        4 [-]: NAMECALL R0 R0 K3 [0xAADE900E]
        5 [-]: CALL R0 4 0  
-       6 [-]: GETIMPORT R0 1 [nil]
+       6 [-]: GETIMPORT R0 1 [0xAE91E43B]
        7 [-]: LOADK R2 K4 ["RewardArrowLeft1"]
        8 [-]: LOADN R3 11  
        9 [-]: LOADB R4 0   
       10 [-]: NAMECALL R0 R0 K3 [0xAADE900E]
       11 [-]: CALL R0 4 0  
-      12 [-]: GETIMPORT R0 1 [nil]
+      12 [-]: GETIMPORT R0 1 [0xAE91E43B]
       13 [-]: LOADK R2 K5 ["RewardArrowLeft2"]
       14 [-]: LOADN R3 11  
       15 [-]: LOADB R4 0   
       16 [-]: NAMECALL R0 R0 K3 [0xAADE900E]
       17 [-]: CALL R0 4 0  
-      18 [-]: GETIMPORT R0 1 [nil]
+      18 [-]: GETIMPORT R0 1 [0xAE91E43B]
       19 [-]: LOADK R2 K6 ["RewardArrowRight1"]
       20 [-]: LOADN R3 11  
       21 [-]: LOADB R4 0   
       22 [-]: NAMECALL R0 R0 K3 [0xAADE900E]
       23 [-]: CALL R0 4 0  
-      24 [-]: GETIMPORT R0 1 [nil]
+      24 [-]: GETIMPORT R0 1 [0xAE91E43B]
       25 [-]: LOADK R2 K7 ["RewardArrowRight2"]
       26 [-]: LOADN R3 11  
       27 [-]: LOADB R4 0   
@@ -237,7 +237,7 @@ L 1:   8 [-]: GETIMPORT R0 4 [nil]
 ; Is_vararg:       0
 ; Max Stack Size:  10
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 [0x2D0FAD09]
        1 [-]: LOADK R1 K2 ["Lotus.Interface.Libs.TimerMgr"]
        2 [-]: CALL R0 1 1  
        3 [-]: GETTABLEKS R1 R0 K3 [0xDE474187]
@@ -250,16 +250,16 @@ L 1:   8 [-]: GETIMPORT R0 4 [nil]
       10 [-]: LOADN R2 9   
       11 [-]: LOADB R3 1   
       12 [-]: CALL R1 2 1  
-      13 [-]: GETIMPORT R2 6 [nil]
+      13 [-]: GETIMPORT R2 6 [0xAE91E43B]
       14 [-]: LOADK R4 K7 ["RewardContainer.Name"]
       15 [-]: LOADN R5 36  
       16 [-]: MOVE R6 R1   
       17 [-]: NAMECALL R2 R2 K8 [0x67BC869F]
       18 [-]: CALL R2 4 0  
       19 [-]: LOADB R1 0   
-      20 [-]: GETIMPORT R2 11 [nil]
+      20 [-]: GETIMPORT R2 11 ["ScenarioInitiator"]
       21 [-]: JUMPIFNOT R2 L2
-      22 [-]: GETIMPORT R2 13 [nil]
+      22 [-]: GETIMPORT R2 13 [0x89326C93]
       23 [-]: NAMECALL R2 R2 K14 [0x7D108DDB]
       24 [-]: CALL R2 1 1  
       25 [-]: LOADN R5 1   
@@ -269,7 +269,7 @@ L 1:   8 [-]: GETIMPORT R0 4 [nil]
 L 0:  29 [-]: GETTABLE R6 R2 R5
       30 [-]: NAMECALL R6 R6 K15 [0x5CA33548]
       31 [-]: CALL R6 1 1  
-      32 [-]: GETIMPORT R7 11 [nil]
+      32 [-]: GETIMPORT R7 11 ["ScenarioInitiator"]
       33 [-]: JUMPIFNOTEQ R6 R7 L1
       34 [-]: LOADB R1 1   
       35 [-]: JUMP L2
@@ -280,12 +280,12 @@ L 2:  37 [-]: JUMPIFNOT R1 L3
       39 [-]: CALL R2 0 0  
       40 [-]: JUMP L4
      
-L 3:  41 [-]: GETIMPORT R2 17 [nil]
+L 3:  41 [-]: GETIMPORT R2 17 [0xB009BBC6]
       42 [-]: LOADK R3 K18 ["/Lotus/StoreItems/Types/Items/MiscItems/AlloyPlate"]
       43 [-]: CALL R2 1 1  
       44 [-]: GETUPVAL R4 4
       45 [-]: GETTABLEKS R3 R4 K19 [0x08681F50]
-      46 [-]: GETIMPORT R4 6 [nil]
+      46 [-]: GETIMPORT R4 6 [0xAE91E43B]
       47 [-]: MOVE R5 R2   
       48 [-]: LOADNIL R6   
       49 [-]: LOADNIL R7   
@@ -307,17 +307,17 @@ L 4:  63 [-]: GETUPVAL R2 0
       65 [-]: GETUPVAL R5 6
       66 [-]: NAMECALL R2 R2 K22 [0xBD2E96EA]
       67 [-]: CALL R2 3 0  
-      68 [-]: GETIMPORT R2 6 [nil]
+      68 [-]: GETIMPORT R2 6 [0xAE91E43B]
       69 [-]: LOADK R4 K23 ["MissionName.Label.text"]
       70 [-]: LOADK R5 K24 ["/Lotus/Language/SquadLink/SquadLink"]
       71 [-]: NAMECALL R2 R2 K25 [0x20B98DB3]
       72 [-]: CALL R2 3 0  
-      73 [-]: GETIMPORT R2 6 [nil]
+      73 [-]: GETIMPORT R2 6 [0xAE91E43B]
       74 [-]: LOADK R4 K26 ["Success.Label.text"]
       75 [-]: LOADK R5 K27 ["/Lotus/Language/SquadLink/Success"]
       76 [-]: NAMECALL R2 R2 K25 [0x20B98DB3]
       77 [-]: CALL R2 3 0  
-      78 [-]: GETIMPORT R2 6 [nil]
+      78 [-]: GETIMPORT R2 6 [0xAE91E43B]
       79 [-]: LOADK R4 K28 ["Description.Label.text"]
       80 [-]: LOADK R5 K29 ["/Lotus/Language/SquadLink/SuccessDesc"]
       81 [-]: NAMECALL R2 R2 K25 [0x20B98DB3]
@@ -332,15 +332,15 @@ L 4:  63 [-]: GETUPVAL R2 0
 ; Is_vararg:       0
 ; Max Stack Size:  4
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 [0xB693B6C1]
        1 [-]: CALL R0 0 1  
-       2 [-]: GETIMPORT R1 3 [nil]
+       2 [-]: GETIMPORT R1 3 [0xAE91E43B]
        3 [-]: MOVE R3 R0   
        4 [-]: NAMECALL R1 R1 K4 [0x8A8C8D5A]
        5 [-]: CALL R1 2 0  
        6 [-]: GETUPVAL R2 0
        7 [-]: FASTCALL1 62 R2 L0
-       8 [-]: GETIMPORT R1 6 [nil]
+       8 [-]: GETIMPORT R1 6 [0x7B998233]
        9 [-]: CALL R1 1 1  
 L 0:  10 [-]: JUMPIF R1 L1 
       11 [-]: GETUPVAL R1 0
@@ -349,7 +349,7 @@ L 0:  10 [-]: JUMPIF R1 L1
       14 [-]: CALL R1 2 0  
 L 1:  15 [-]: GETUPVAL R1 1
       16 [-]: JUMPIFNOT R1 L2
-      17 [-]: GETIMPORT R1 3 [nil]
+      17 [-]: GETIMPORT R1 3 [0xAE91E43B]
       18 [-]: NAMECALL R1 R1 K8 [0x32302B4A]
       19 [-]: CALL R1 1 0  
 L 2:  20 [-]: RETURN R0 0  
@@ -365,12 +365,12 @@ L 2:  20 [-]: RETURN R0 0
        0 [-]: JUMPXEQKS R0 K0 L0 NOT ["true"]
        1 [-]: GETUPVAL R1 0
        2 [-]: CALL R1 0 0  
-       3 [-]: GETIMPORT R1 2 [nil]
+       3 [-]: GETIMPORT R1 2 [0xAE91E43B]
        4 [-]: LOADK R3 K3 ["Success.Label.text"]
        5 [-]: LOADK R4 K4 ["/Lotus/Language/SquadLink/Failed"]
        6 [-]: NAMECALL R1 R1 K5 [0x20B98DB3]
        7 [-]: CALL R1 3 0  
-       8 [-]: GETIMPORT R1 2 [nil]
+       8 [-]: GETIMPORT R1 2 [0xAE91E43B]
        9 [-]: LOADK R3 K6 ["Description.Label"]
       10 [-]: LOADN R4 29  
       11 [-]: LOADK R5 K7 [""]

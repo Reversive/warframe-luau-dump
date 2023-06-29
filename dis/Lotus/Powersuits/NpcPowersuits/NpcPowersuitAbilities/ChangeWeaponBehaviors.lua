@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  1
 
-            1 [-]: DUPCLOSURE R0 K0 []
+       1 [-]: DUPCLOSURE R0 K0 []
        2 [-]: SETGLOBAL R0 K1 ["ActivateAbility"]
        3 [-]: DUPCLOSURE R0 K2 []
        4 [-]: SETGLOBAL R0 K3 ["ChangeWeaponBehavior"]
@@ -19,10 +19,10 @@
 ; Is_vararg:       0
 ; Max Stack Size:  8
 
-       0 [-]: GETIMPORT R4 1 [nil]
-       1 [-]: GETIMPORT R5 3 [nil]
+       0 [-]: GETIMPORT R4 1 [0xCBD666E1]
+       1 [-]: GETIMPORT R5 3 [0xD7ED01E0]
        2 [-]: CALL R4 1 0  
-       3 [-]: GETIMPORT R6 5 [nil]
+       3 [-]: GETIMPORT R6 5 [0x0469F296]
        4 [-]: LOADK R7 K6 ["ChangeWeaponBehavior"]
        5 [-]: CALL R6 1 1  
        6 [-]: LOADB R7 0   
@@ -45,18 +45,18 @@
        4 [-]: CALL R1 2 1  
        5 [-]: FASTCALL1 62 R1 L0
        6 [-]: MOVE R3 R1   
-       7 [-]: GETIMPORT R2 3 [nil]
+       7 [-]: GETIMPORT R2 3 [0x7B998233]
        8 [-]: CALL R2 1 1  
 L 0:   9 [-]: JUMPIF R2 L1 
       10 [-]: LOADN R4 1   
       11 [-]: NAMECALL R2 R1 K4 [0x7C68DB20]
       12 [-]: CALL R2 2 0  
-L 1:  13 [-]: GETIMPORT R2 6 [nil]
-      14 [-]: GETIMPORT R3 8 [nil]
+L 1:  13 [-]: GETIMPORT R2 6 [0xCBD666E1]
+      14 [-]: GETIMPORT R3 8 [0x6DCA1A37]
       15 [-]: CALL R2 1 0  
       16 [-]: FASTCALL1 62 R0 L2
       17 [-]: MOVE R3 R0   
-      18 [-]: GETIMPORT R2 3 [nil]
+      18 [-]: GETIMPORT R2 3 [0x7B998233]
       19 [-]: CALL R2 1 1  
 L 2:  20 [-]: JUMPIF R2 L3 
       21 [-]: NAMECALL R2 R0 K0 [0xDE321E6F]
@@ -65,7 +65,7 @@ L 2:  20 [-]: JUMPIF R2 L3
       24 [-]: CALL R2 1 0  
 L 3:  25 [-]: FASTCALL1 62 R1 L4
       26 [-]: MOVE R3 R1   
-      27 [-]: GETIMPORT R2 3 [nil]
+      27 [-]: GETIMPORT R2 3 [0x7B998233]
       28 [-]: CALL R2 1 1  
 L 4:  29 [-]: JUMPIF R2 L5 
       30 [-]: LOADN R4 0   

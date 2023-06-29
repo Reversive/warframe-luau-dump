@@ -5,10 +5,10 @@
 ; Is_vararg:       1
 ; Max Stack Size:  8
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x0469F296]
        2 [-]: LOADK R1 K2 ["RandomTeam"]
        3 [-]: CALL R0 1 1  
-       4 [-]: GETIMPORT R1 4 [nil]
+       4 [-]: GETIMPORT R1 4 [0x2D0FAD09]
        5 [-]: LOADK R2 K5 ["EE.Interface.Utilities"]
        6 [-]: CALL R1 1 1  
        7 [-]: LOADNIL R2   
@@ -36,13 +36,13 @@
 ; Is_vararg:       0
 ; Max Stack Size:  21
 
-       0 [-]: GETIMPORT R1 1 [nil]
+       0 [-]: GETIMPORT R1 1 [0x89326C93]
        1 [-]: NAMECALL R1 R1 K2 [0x29EF273D]
        2 [-]: CALL R1 1 1  
        3 [-]: NAMECALL R1 R1 K3 [0x66905CB0]
        4 [-]: CALL R1 1 1  
        5 [-]: SETUPVAL R1 0
-       6 [-]: GETIMPORT R1 5 [nil]
+       6 [-]: GETIMPORT R1 5 [0xBE190284]
        7 [-]: SETUPVAL R1 1
        8 [-]: NAMECALL R1 R0 K6 [0xD1586535]
        9 [-]: CALL R1 1 1  
@@ -58,21 +58,21 @@
       19 [-]: NAMECALL R1 R1 K9 [0x1677897A]
       20 [-]: CALL R1 -1 1 
       21 [-]: SETUPVAL R1 4
-      22 [-]: GETIMPORT R1 11 [nil]
+      22 [-]: GETIMPORT R1 11 [0x3D106989]
       23 [-]: LOADK R3 K12 ["Spawning ground reinforcements at Tier "]
       24 [-]: GETUPVAL R4 4
       25 [-]: CONCAT R2 R3 R4
       26 [-]: CALL R1 1 0  
-      27 [-]: GETIMPORT R1 14 [nil]
+      27 [-]: GETIMPORT R1 14 [0x769197D7]
       28 [-]: NEWTABLE R2 0 0
       29 [-]: NEWTABLE R3 0 0
       30 [-]: GETUPVAL R4 0
-      31 [-]: GETIMPORT R6 16 [nil]
-      32 [-]: GETIMPORT R7 18 [nil]
+      31 [-]: GETIMPORT R6 16 [0x3621C550]
+      32 [-]: GETIMPORT R7 18 [0x2C0E2DDA]
       33 [-]: NAMECALL R4 R4 K19 [0x8FD103FD]
       34 [-]: CALL R4 3 1  
-      35 [-]: GETIMPORT R5 1 [nil]
-      36 [-]: GETIMPORT R7 21 [nil]
+      35 [-]: GETIMPORT R5 1 [0x89326C93]
+      36 [-]: GETIMPORT R7 21 ["gDefenseVolumeType"]
       37 [-]: GETUPVAL R8 3
       38 [-]: NAMECALL R8 R8 K6 [0xD1586535]
       39 [-]: CALL R8 1 1  
@@ -90,7 +90,7 @@ L 0:  47 [-]: GETUPVAL R9 0
       51 [-]: NAMECALL R9 R9 K23 [0xC1088746]
       52 [-]: CALL R9 -1 1 
       53 [-]: GETUPVAL R10 0
-      54 [-]: GETIMPORT R12 25 [nil]
+      54 [-]: GETIMPORT R12 25 [0x5AA2084E]
       55 [-]: MOVE R13 R9  
       56 [-]: LOADB R14 1  
       57 [-]: LOADB R15 0  
@@ -100,14 +100,14 @@ L 0:  47 [-]: GETUPVAL R9 0
       61 [-]: CALL R10 7 1 
       62 [-]: FASTCALL1 62 R10 L1
       63 [-]: MOVE R12 R10 
-      64 [-]: GETIMPORT R11 28 [nil]
+      64 [-]: GETIMPORT R11 28 [0x7B998233]
       65 [-]: CALL R11 1 1 
 L 1:  66 [-]: JUMPIF R11 L3
       67 [-]: NAMECALL R13 R10 K29 [0xE223E2B1]
       68 [-]: CALL R13 1 1 
       69 [-]: GETTABLE R12 R3 R13
       70 [-]: FASTCALL1 62 R12 L2
-      71 [-]: GETIMPORT R11 28 [nil]
+      71 [-]: GETIMPORT R11 28 [0x7B998233]
       72 [-]: CALL R11 1 1 
 L 2:  73 [-]: JUMPIF R11 L3
       74 [-]: NAMECALL R11 R10 K29 [0xE223E2B1]
@@ -144,17 +144,17 @@ L 6:  92 [-]: LOADN R13 1
      104 [-]: CALL R12 8 1 
      105 [-]: FASTCALL1 62 R12 L7
      106 [-]: MOVE R14 R12 
-     107 [-]: GETIMPORT R13 28 [nil]
+     107 [-]: GETIMPORT R13 28 [0x7B998233]
      108 [-]: CALL R13 1 1 
 L 7: 109 [-]: JUMPIF R13 L12
      110 [-]: FASTCALL2 52 R2 R12 L8
      111 [-]: MOVE R14 R2  
      112 [-]: MOVE R15 R12 
-     113 [-]: GETIMPORT R13 35 [nil]
+     113 [-]: GETIMPORT R13 35 [0x23D5322F]
      114 [-]: CALL R13 2 0 
 L 8: 115 [-]: FASTCALL1 62 R5 L9
      116 [-]: MOVE R14 R5  
-     117 [-]: GETIMPORT R13 28 [nil]
+     117 [-]: GETIMPORT R13 28 [0x7B998233]
      118 [-]: CALL R13 1 1 
 L 9: 119 [-]: JUMPIF R13 L10
      120 [-]: MOVE R15 R5  
@@ -175,15 +175,15 @@ L11: 130 [-]: GETUPVAL R13 3
      134 [-]: LOADN R13 0  
      135 [-]: JUMPIFNOTLT R13 R1 L12
      136 [-]: SUBK R1 R1 K30 [1]
-L12: 137 [-]: GETIMPORT R13 41 [nil]
+L12: 137 [-]: GETIMPORT R13 41 [0xCBD666E1]
      138 [-]: LOADN R14 0  
      139 [-]: CALL R13 1 0 
      140 [-]: FORNLOOP R6 L0
-L13: 141 [-]: GETIMPORT R6 43 [nil]
+L13: 141 [-]: GETIMPORT R6 43 [0xCFC01047]
      142 [-]: MOVE R7 R3   
      143 [-]: CALL R6 1 3  
      144 [-]: FORGPREP_NEXT R6 L15
-L14: 145 [-]: GETIMPORT R11 11 [nil]
+L14: 145 [-]: GETIMPORT R11 11 [0x3D106989]
      146 [-]: MOVE R13 R10 
      147 [-]: LOADK R14 K44 [" of type "]
      148 [-]: MOVE R15 R9  

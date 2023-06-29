@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  1
 
-            1 [-]: DUPCLOSURE R0 K0 []
+       1 [-]: DUPCLOSURE R0 K0 []
        2 [-]: SETGLOBAL R0 K1 ["Initialize"]
        3 [-]: DUPCLOSURE R0 K2 []
        4 [-]: SETGLOBAL R0 K3 ["Shutdown"]
@@ -19,11 +19,11 @@
 ; Is_vararg:       0
 ; Max Stack Size:  4
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 [0xAE91E43B]
        1 [-]: LOADN R2 0   
        2 [-]: NAMECALL R0 R0 K2 [0x58BEC6D6]
        3 [-]: CALL R0 2 0  
-       4 [-]: GETIMPORT R0 1 [nil]
+       4 [-]: GETIMPORT R0 1 [0xAE91E43B]
        5 [-]: LOADK R2 K3 ["connectionErrorMsg.text"]
        6 [-]: LOADK R3 K4 ["/Lotus/Language/Menu/ConnectionDelay"]
        7 [-]: NAMECALL R0 R0 K5 [0x20B98DB3]

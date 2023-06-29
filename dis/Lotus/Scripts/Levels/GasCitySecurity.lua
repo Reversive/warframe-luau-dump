@@ -5,24 +5,24 @@
 ; Is_vararg:       1
 ; Max Stack Size:  8
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x0469F296]
        2 [-]: LOADK R1 K2 ["GasTrap"]
        3 [-]: CALL R0 1 1  
-       4 [-]: GETIMPORT R1 1 [nil]
+       4 [-]: GETIMPORT R1 1 [0x0469F296]
        5 [-]: LOADK R2 K3 ["LightningTurretON"]
        6 [-]: CALL R1 1 1  
-       7 [-]: GETIMPORT R2 1 [nil]
+       7 [-]: GETIMPORT R2 1 [0x0469F296]
        8 [-]: LOADK R3 K4 ["LightningTurretBase"]
        9 [-]: CALL R2 1 1  
-      10 [-]: GETIMPORT R3 6 [nil]
+      10 [-]: GETIMPORT R3 6 [0x7ED0A956]
       11 [-]: LOADK R4 K7 ["/Lotus/Levels/CorpusGasCityRemaster/Prefabs/CrpLightningTurret/MultiAvatarTriggerLightningTurret"]
       12 [-]: CALL R3 1 1  
-      13 [-]: GETIMPORT R4 9 [nil]
+      13 [-]: GETIMPORT R4 9 [0x89326C93]
       14 [-]: NAMECALL R4 R4 K10 [0x29EF273D]
       15 [-]: CALL R4 1 1  
       16 [-]: NAMECALL R4 R4 K11 [0x66905CB0]
       17 [-]: CALL R4 1 1  
-      18 [-]: GETIMPORT R5 1 [nil]
+      18 [-]: GETIMPORT R5 1 [0x0469F296]
       19 [-]: LOADK R6 K12 ["NV_GAS_ALERT"]
       20 [-]: CALL R5 1 1  
       21 [-]: DUPCLOSURE R6 K13 []
@@ -50,20 +50,20 @@
 
        0 [-]: NAMECALL R1 R0 K0 [0xD1586535]
        1 [-]: CALL R1 1 1  
-       2 [-]: GETIMPORT R3 3 [nil]
+       2 [-]: GETIMPORT R3 3 ["alarmDoorPosition"]
        3 [-]: FASTCALL1 62 R3 L0
-       4 [-]: GETIMPORT R2 5 [nil]
+       4 [-]: GETIMPORT R2 5 [0x7B998233]
        5 [-]: CALL R2 1 1  
 L 0:   6 [-]: JUMPIF R2 L1 
-       7 [-]: GETIMPORT R1 3 [nil]
-L 1:   8 [-]: GETIMPORT R2 7 [nil]
+       7 [-]: GETIMPORT R1 3 ["alarmDoorPosition"]
+L 1:   8 [-]: GETIMPORT R2 7 [0x89326C93]
        9 [-]: GETUPVAL R4 0
       10 [-]: MOVE R5 R1   
       11 [-]: LOADN R6 0   
       12 [-]: LOADN R7 80  
       13 [-]: NAMECALL R2 R2 K8 [0xF16592C8]
       14 [-]: CALL R2 5 1  
-      15 [-]: GETIMPORT R3 7 [nil]
+      15 [-]: GETIMPORT R3 7 [0x89326C93]
       16 [-]: GETUPVAL R5 1
       17 [-]: MOVE R6 R1   
       18 [-]: LOADN R7 0   
@@ -119,12 +119,12 @@ L 5:  56 [-]: GETTABLE R11 R3 R10
       68 [-]: SETTABLE R11 R6 R7
       69 [-]: ADDK R7 R7 K10 [1]
 L 6:  70 [-]: FORNLOOP R8 L5
-L 7:  71 [-]: GETIMPORT R8 12 [nil]
+L 7:  71 [-]: GETIMPORT R8 12 [0xD644C2F1]
       72 [-]: LOADK R10 K13 ["GasCitySecurity.lua -- # of Gas Traps: "]
       73 [-]: LENGTH R11 R5
       74 [-]: CONCAT R9 R10 R11
       75 [-]: CALL R8 1 0  
-      76 [-]: GETIMPORT R8 15 [nil]
+      76 [-]: GETIMPORT R8 15 [0xBE190284]
       77 [-]: GETUPVAL R10 3
       78 [-]: LOADN R11 0  
       79 [-]: NAMECALL R8 R8 K16 [0x751F061D]
@@ -134,11 +134,11 @@ L 7:  71 [-]: GETIMPORT R8 12 [nil]
       83 [-]: LOADN R9 1   
       84 [-]: FORNPREP R8 L17
 L 8:  85 [-]: GETTABLE R11 R5 R10
-      86 [-]: GETIMPORT R13 18 [nil]
+      86 [-]: GETIMPORT R13 18 ["gEffectType"]
       87 [-]: NAMECALL R11 R11 K19 [0xC1595BD5]
       88 [-]: CALL R11 2 1 
       89 [-]: GETTABLE R12 R5 R10
-      90 [-]: GETIMPORT R14 21 [nil]
+      90 [-]: GETIMPORT R14 21 ["gScriptTriggerType"]
       91 [-]: NAMECALL R12 R12 K19 [0xC1595BD5]
       92 [-]: CALL R12 2 1 
       93 [-]: LOADN R15 1  
@@ -147,7 +147,7 @@ L 8:  85 [-]: GETTABLE R11 R5 R10
       96 [-]: FORNPREP R13 L12
 L 9:  97 [-]: GETTABLE R17 R11 R15
       98 [-]: FASTCALL1 62 R17 L10
-      99 [-]: GETIMPORT R16 5 [nil]
+      99 [-]: GETIMPORT R16 5 [0x7B998233]
      100 [-]: CALL R16 1 1 
 L10: 101 [-]: JUMPIF R16 L11
      102 [-]: GETTABLE R16 R11 R15
@@ -161,14 +161,14 @@ L12: 107 [-]: LOADN R15 1
      110 [-]: FORNPREP R13 L16
 L13: 111 [-]: GETTABLE R17 R12 R15
      112 [-]: FASTCALL1 62 R17 L14
-     113 [-]: GETIMPORT R16 5 [nil]
+     113 [-]: GETIMPORT R16 5 [0x7B998233]
      114 [-]: CALL R16 1 1 
 L14: 115 [-]: JUMPIF R16 L15
 L15: 116 [-]: FORNLOOP R13 L13
 L16: 117 [-]: FORNLOOP R8 L8
 L17: 118 [-]: FASTCALL1 62 R6 L18
      119 [-]: MOVE R9 R6   
-     120 [-]: GETIMPORT R8 5 [nil]
+     120 [-]: GETIMPORT R8 5 [0x7B998233]
      121 [-]: CALL R8 1 1  
 L18: 122 [-]: JUMPIFNOT R8 L19
      123 [-]: RETURN R0 0  
@@ -182,13 +182,13 @@ L20: 127 [-]: LOADN R8 0
      131 [-]: FORNPREP R9 L25
 L21: 132 [-]: GETTABLE R13 R6 R11
      133 [-]: FASTCALL1 62 R13 L22
-     134 [-]: GETIMPORT R12 5 [nil]
+     134 [-]: GETIMPORT R12 5 [0x7B998233]
      135 [-]: CALL R12 1 1 
 L22: 136 [-]: JUMPIF R12 L25
      137 [-]: GETTABLE R12 R6 R11
      138 [-]: NAMECALL R12 R12 K0 [0xD1586535]
      139 [-]: CALL R12 1 1 
-     140 [-]: GETIMPORT R13 7 [nil]
+     140 [-]: GETIMPORT R13 7 [0x89326C93]
      141 [-]: GETUPVAL R15 4
      142 [-]: MOVE R16 R12 
      143 [-]: NAMECALL R13 R13 K25 [0xC7B81E8D]
@@ -198,7 +198,7 @@ L22: 136 [-]: JUMPIF R12 L25
      147 [-]: CALL R14 2 1 
      148 [-]: FASTCALL1 62 R14 L23
      149 [-]: MOVE R16 R14 
-     150 [-]: GETIMPORT R15 5 [nil]
+     150 [-]: GETIMPORT R15 5 [0x7B998233]
      151 [-]: CALL R15 1 1 
 L23: 152 [-]: JUMPIF R15 L24
      153 [-]: NAMECALL R15 R14 K27 [0xF37943FF]
@@ -210,7 +210,7 @@ L23: 152 [-]: JUMPIF R15 L24
      159 [-]: CALL R15 2 0 
      160 [-]: ADDK R8 R8 K10 [1]
 L24: 161 [-]: FORNLOOP R9 L21
-L25: 162 [-]: GETIMPORT R9 12 [nil]
+L25: 162 [-]: GETIMPORT R9 12 [0xD644C2F1]
      163 [-]: LOADK R11 K29 ["GasCitySecurity.lua -- # of Shock Turrets: "]
      164 [-]: MOVE R12 R8  
      165 [-]: CONCAT R10 R11 R12
@@ -225,23 +225,23 @@ L25: 162 [-]: GETIMPORT R9 12 [nil]
 ; Is_vararg:       0
 ; Max Stack Size:  5
 
-L 0:   0 [-]: GETIMPORT R2 1 [nil]
+L 0:   0 [-]: GETIMPORT R2 1 [0xBE190284]
        1 [-]: FASTCALL1 62 R2 L1
-       2 [-]: GETIMPORT R1 3 [nil]
+       2 [-]: GETIMPORT R1 3 [0x7B998233]
        3 [-]: CALL R1 1 1  
 L 1:   4 [-]: JUMPIFNOT R1 L3
-       5 [-]: GETIMPORT R3 5 [nil]
+       5 [-]: GETIMPORT R3 5 [0x89326C93]
        6 [-]: NAMECALL R3 R3 K6 [0x18D05D30]
        7 [-]: CALL R3 1 1  
        8 [-]: NOT R2 R3    
        9 [-]: FASTCALL1 1 R2 L2
-      10 [-]: GETIMPORT R1 8 [nil]
+      10 [-]: GETIMPORT R1 8 [0x60CCE7B4]
       11 [-]: CALL R1 1 0  
-L 2:  12 [-]: GETIMPORT R1 10 [nil]
+L 2:  12 [-]: GETIMPORT R1 10 [0xCBD666E1]
       13 [-]: LOADN R2 0   
       14 [-]: CALL R1 1 0  
       15 [-]: JUMPBACK L0  
-L 3:  16 [-]: GETIMPORT R1 1 [nil]
+L 3:  16 [-]: GETIMPORT R1 1 [0xBE190284]
       17 [-]: GETUPVAL R3 0
       18 [-]: LOADN R4 0   
       19 [-]: NAMECALL R1 R1 K11 [0x0EB34C69]
@@ -250,7 +250,7 @@ L 3:  16 [-]: GETIMPORT R1 1 [nil]
       22 [-]: GETUPVAL R2 1
       23 [-]: MOVE R3 R0   
       24 [-]: CALL R2 1 0  
-L 4:  25 [-]: GETIMPORT R2 10 [nil]
+L 4:  25 [-]: GETIMPORT R2 10 [0xCBD666E1]
       26 [-]: LOADN R3 0   
       27 [-]: CALL R2 1 0  
       28 [-]: JUMPBACK L3  
@@ -264,7 +264,7 @@ L 4:  25 [-]: GETIMPORT R2 10 [nil]
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 ["_T"]
        1 [-]: LOADB R1 1   
        2 [-]: SETTABLEKS R1 R0 K2 ["alarmTriggered"]
        3 [-]: RETURN R0 0  

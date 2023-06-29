@@ -5,9 +5,9 @@
 ; Is_vararg:       1
 ; Max Stack Size:  3
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0xAEABECDA]
        2 [-]: GETVARARGS R1 1
-       3 [-]: GETIMPORT R2 4 [nil]
+       3 [-]: GETIMPORT R2 4 ["seeall"]
        4 [-]: CALL R0 2 0  
        5 [-]: DUPCLOSURE R0 K5 []
        6 [-]: SETGLOBAL R0 K6 ["Create"]
@@ -21,11 +21,11 @@
 ; Is_vararg:       0
 ; Max Stack Size:  9
 
-       0 [-]: GETIMPORT R4 1 [nil]
+       0 [-]: GETIMPORT R4 1 [0x2D0FAD09]
        1 [-]: LOADK R5 K2 ["EE.Interface.Utilities"]
        2 [-]: CALL R4 1 1  
        3 [-]: JUMPXEQKNIL R2 L0 NOT
-       4 [-]: GETIMPORT R5 4 [nil]
+       4 [-]: GETIMPORT R5 4 [0xB009BBC6]
        5 [-]: LOADK R6 K5 ["/Lotus/Interface/RailJackSystemsCameraSpot"]
        6 [-]: CALL R5 1 1  
        7 [-]: MOVE R2 R5   
@@ -45,19 +45,19 @@ L 1:  13 [-]: DUPTABLE R5 23
       21 [-]: SETTABLEKS R6 R5 K12 ["mOldCameraSpot"]
       22 [-]: LOADK R6 K24 [0.20000000000000001]
       23 [-]: SETTABLEKS R6 R5 K13 ["mTransitionTime"]
-      24 [-]: GETIMPORT R6 26 [nil]
+      24 [-]: GETIMPORT R6 26 [0xA421AF95]
       25 [-]: CALL R6 0 1  
       26 [-]: SETTABLEKS R6 R5 K14 ["mCameraOffset"]
-      27 [-]: GETIMPORT R6 28 [nil]
+      27 [-]: GETIMPORT R6 28 [0x00046924]
       28 [-]: CALL R6 0 1  
       29 [-]: SETTABLEKS R6 R5 K15 ["mCameraRotationOffset"]
       30 [-]: SETTABLEKS R2 R5 K16 ["mCameraSpotType"]
-      31 [-]: GETIMPORT R6 30 [nil]
+      31 [-]: GETIMPORT R6 30 [0x78CA68A2]
       32 [-]: LOADN R7 0   
       33 [-]: LOADK R8 K31 [0.25]
       34 [-]: CALL R6 2 1  
       35 [-]: SETTABLEKS R6 R5 K17 ["mSmoothCursorX"]
-      36 [-]: GETIMPORT R6 30 [nil]
+      36 [-]: GETIMPORT R6 30 [0x78CA68A2]
       37 [-]: LOADN R7 0   
       38 [-]: LOADK R8 K31 [0.25]
       39 [-]: CALL R6 2 1  

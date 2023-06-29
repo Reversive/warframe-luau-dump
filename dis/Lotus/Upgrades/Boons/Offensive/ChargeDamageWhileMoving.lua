@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  3
 
-            1 [-]: DUPCLOSURE R0 K0 []
+       1 [-]: DUPCLOSURE R0 K0 []
        2 [-]: SETGLOBAL R0 K1 ["GetDescription"]
        3 [-]: DUPCLOSURE R0 K2 []
        4 [-]: DUPCLOSURE R1 K3 []
@@ -31,7 +31,7 @@
        4 [-]: GETGLOBAL R3 K4 [0xF943F3C1]
        5 [-]: MUL R2 R3 R0 
        6 [-]: SETTABLEKS R2 R1 K1 ["val1"]
-       7 [-]: GETIMPORT R2 7 [nil]
+       7 [-]: GETIMPORT R2 7 [0xB139D7BC]
        8 [-]: MOVE R3 R1   
        9 [-]: CALL R2 1 -1 
       10 [-]: RETURN R2 -1 
@@ -80,7 +80,7 @@ L 2:  16 [-]: LOADN R4 5
       19 [-]: JUMPIFNOT R2 L3
       20 [-]: LOADB R2 0   
       21 [-]: RETURN R2 1  
-L 3:  22 [-]: GETIMPORT R3 3 [nil]
+L 3:  22 [-]: GETIMPORT R3 3 [0xAE2294FA]
       23 [-]: NAMECALL R4 R0 K4 [0xD3A01177]
       24 [-]: CALL R4 1 1  
       25 [-]: NAMECALL R4 R4 K5 [0x8CE53CA3]
@@ -119,7 +119,7 @@ L 7:  43 [-]: LOADB R3 0
 L 0:   4 [-]: LOADN R5 0   
        5 [-]: NAMECALL R6 R0 K1 [0xDE321E6F]
        6 [-]: CALL R6 1 1  
-       7 [-]: GETIMPORT R7 4 [nil]
+       7 [-]: GETIMPORT R7 4 [0x608BC054]
        8 [-]: CALL R7 0 1  
        9 [-]: SETTABLEKS R0 R7 K5 ["instigator"]
       10 [-]: NEWTABLE R8 0 1
@@ -137,16 +137,16 @@ L 0:   4 [-]: LOADN R5 0
       22 [-]: MUL R9 R10 R2
       23 [-]: SETGLOBAL R8 K10 [0xF943F3C1]
       24 [-]: SETGLOBAL R9 K11 [0x672A45AB]
-      25 [-]: GETIMPORT R8 14 [nil]
+      25 [-]: GETIMPORT R8 14 ["chargeDamageWhileMoving"]
       26 [-]: JUMPIF R8 L1 
-      27 [-]: GETIMPORT R8 15 [nil]
+      27 [-]: GETIMPORT R8 15 ["_T"]
       28 [-]: NEWTABLE R9 0 0
       29 [-]: SETTABLEKS R9 R8 K13 ["chargeDamageWhileMoving"]
 L 1:  30 [-]: NAMECALL R8 R0 K16 [0x388577D5]
       31 [-]: CALL R8 1 1  
 L 2:  32 [-]: FASTCALL1 62 R0 L3
       33 [-]: MOVE R10 R0  
-      34 [-]: GETIMPORT R9 18 [nil]
+      34 [-]: GETIMPORT R9 18 [0x7B998233]
       35 [-]: CALL R9 1 1  
 L 3:  36 [-]: JUMPIF R9 L14
       37 [-]: GETUPVAL R10 0
@@ -155,19 +155,19 @@ L 3:  36 [-]: JUMPIF R9 L14
       40 [-]: JUMPIFNOT R10 L4
       41 [-]: GETGLOBAL R9 K11 [0x672A45AB]
       42 [-]: JUMPIF R9 L6 
-L 4:  43 [-]: GETIMPORT R11 20 [nil]
-      44 [-]: GETIMPORT R13 22 [nil]
+L 4:  43 [-]: GETIMPORT R11 20 [0xDB32BCC2]
+      44 [-]: GETIMPORT R13 22 [0xD8D08C75]
       45 [-]: MUL R12 R13 R5
       46 [-]: FASTCALL2 18 R11 R12 L5
-      47 [-]: GETIMPORT R10 25 [nil]
+      47 [-]: GETIMPORT R10 25 [0xB62ECFE0]
       48 [-]: CALL R10 2 1 
 L 5:  49 [-]: MINUS R9 R10 
 L 6:  50 [-]: FASTCALL1 12 R5 L7
       51 [-]: MOVE R11 R5  
-      52 [-]: GETIMPORT R10 27 [nil]
+      52 [-]: GETIMPORT R10 27 [0x55F27C30]
       53 [-]: CALL R10 1 1 
-L 7:  54 [-]: GETIMPORT R11 29 [nil]
-      55 [-]: GETIMPORT R14 31 [nil]
+L 7:  54 [-]: GETIMPORT R11 29 [0x42DCC9F5]
+      55 [-]: GETIMPORT R14 31 [0x67652851]
       56 [-]: CALL R14 0 1 
       57 [-]: MUL R13 R9 R14
       58 [-]: ADD R12 R5 R13
@@ -176,7 +176,7 @@ L 7:  54 [-]: GETIMPORT R11 29 [nil]
       61 [-]: CALL R11 3 1 
       62 [-]: FASTCALL1 12 R11 L8
       63 [-]: MOVE R13 R11 
-      64 [-]: GETIMPORT R12 27 [nil]
+      64 [-]: GETIMPORT R12 27 [0x55F27C30]
       65 [-]: CALL R12 1 1 
 L 8:  66 [-]: JUMPIFEQ R10 R12 L13
       67 [-]: LOADN R13 0  
@@ -187,7 +187,7 @@ L 8:  66 [-]: JUMPIFEQ R10 R12 L13
       72 [-]: LOADNIL R18  
       73 [-]: LOADNIL R19  
       74 [-]: LOADN R20 25 
-      75 [-]: GETIMPORT R21 34 [nil]
+      75 [-]: GETIMPORT R21 34 ["EMPTY_SYMBOL"]
       76 [-]: LOADB R22 1  
       77 [-]: NAMECALL R13 R6 K35 [0x12DD9DA2]
       78 [-]: CALL R13 9 0 
@@ -197,7 +197,7 @@ L 8:  66 [-]: JUMPIFEQ R10 R12 L13
       82 [-]: LOADNIL R18  
       83 [-]: LOADNIL R19  
       84 [-]: LOADN R20 25 
-      85 [-]: GETIMPORT R21 34 [nil]
+      85 [-]: GETIMPORT R21 34 ["EMPTY_SYMBOL"]
       86 [-]: LOADB R22 1  
       87 [-]: NAMECALL R13 R6 K35 [0x12DD9DA2]
       88 [-]: CALL R13 9 0 
@@ -209,7 +209,7 @@ L 9:  89 [-]: LOADN R13 0
       94 [-]: LOADNIL R18  
       95 [-]: LOADNIL R19  
       96 [-]: LOADN R20 25 
-      97 [-]: GETIMPORT R21 34 [nil]
+      97 [-]: GETIMPORT R21 34 ["EMPTY_SYMBOL"]
       98 [-]: LOADB R22 1  
       99 [-]: NAMECALL R13 R6 K36 [0x5E6704FF]
      100 [-]: CALL R13 9 0 
@@ -219,11 +219,11 @@ L 9:  89 [-]: LOADN R13 0
      104 [-]: LOADNIL R18  
      105 [-]: LOADNIL R19  
      106 [-]: LOADN R20 25 
-     107 [-]: GETIMPORT R21 34 [nil]
+     107 [-]: GETIMPORT R21 34 ["EMPTY_SYMBOL"]
      108 [-]: LOADB R22 1  
      109 [-]: NAMECALL R13 R6 K36 [0x5E6704FF]
      110 [-]: CALL R13 9 0 
-L10: 111 [-]: GETIMPORT R13 14 [nil]
+L10: 111 [-]: GETIMPORT R13 14 ["chargeDamageWhileMoving"]
      112 [-]: SETTABLE R12 R13 R8
      113 [-]: SETTABLEKS R12 R7 K37 ["buffData"]
      114 [-]: MOVE R15 R7  
@@ -235,7 +235,7 @@ L12: 119 [-]: LOADB R17 0
      120 [-]: NAMECALL R13 R0 K38 [0x37E45FB5]
      121 [-]: CALL R13 4 0 
 L13: 122 [-]: MOVE R5 R11  
-     123 [-]: GETIMPORT R13 40 [nil]
+     123 [-]: GETIMPORT R13 40 [0xCBD666E1]
      124 [-]: LOADN R14 0  
      125 [-]: CALL R13 1 0 
      126 [-]: JUMPBACK L2  
@@ -253,12 +253,12 @@ L14: 127 [-]: RETURN R0 0
        1 [-]: CALL R5 1 1  
        2 [-]: JUMPIF R5 L0 
        3 [-]: RETURN R0 0  
-L 0:   4 [-]: GETIMPORT R5 3 [nil]
+L 0:   4 [-]: GETIMPORT R5 3 ["chargeDamageWhileMoving"]
        5 [-]: JUMPIF R5 L1 
        6 [-]: RETURN R0 0  
 L 1:   7 [-]: NAMECALL R5 R0 K4 [0x388577D5]
        8 [-]: CALL R5 1 1  
-       9 [-]: GETIMPORT R7 3 [nil]
+       9 [-]: GETIMPORT R7 3 ["chargeDamageWhileMoving"]
       10 [-]: GETTABLE R6 R7 R5
       11 [-]: JUMPIFNOT R6 L2
       12 [-]: LOADN R7 0   
@@ -271,7 +271,7 @@ L 1:   7 [-]: NAMECALL R5 R0 K4 [0x388577D5]
       19 [-]: LOADNIL R13  
       20 [-]: LOADNIL R14  
       21 [-]: LOADN R15 25 
-      22 [-]: GETIMPORT R16 8 [nil]
+      22 [-]: GETIMPORT R16 8 ["EMPTY_SYMBOL"]
       23 [-]: LOADB R17 1  
       24 [-]: NAMECALL R8 R7 K9 [0x12DD9DA2]
       25 [-]: CALL R8 9 0  
@@ -281,11 +281,11 @@ L 1:   7 [-]: NAMECALL R5 R0 K4 [0x388577D5]
       29 [-]: LOADNIL R13  
       30 [-]: LOADNIL R14  
       31 [-]: LOADN R15 25 
-      32 [-]: GETIMPORT R16 8 [nil]
+      32 [-]: GETIMPORT R16 8 ["EMPTY_SYMBOL"]
       33 [-]: LOADB R17 1  
       34 [-]: NAMECALL R8 R7 K9 [0x12DD9DA2]
       35 [-]: CALL R8 9 0  
-L 2:  36 [-]: GETIMPORT R7 3 [nil]
+L 2:  36 [-]: GETIMPORT R7 3 ["chargeDamageWhileMoving"]
       37 [-]: LOADNIL R8   
       38 [-]: SETTABLE R8 R7 R5
       39 [-]: RETURN R0 0  

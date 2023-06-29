@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  12
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x2D0FAD09]
        2 [-]: LOADK R1 K2 ["EE.Interface.Utilities"]
        3 [-]: CALL R0 1 1  
        4 [-]: NEWTABLE R1 0 7
@@ -27,44 +27,44 @@
       20 [-]: LOADK R9 K16 ["/Lotus/Language/Zariman/ZarimanDogTag"]
       21 [-]: SETLIST R2 R3 7 [1]
       22 [-]: NEWTABLE R3 0 7
-      23 [-]: GETIMPORT R4 18 [nil]
+      23 [-]: GETIMPORT R4 18 [0x0469F296]
       24 [-]: LOADK R5 K19 ["SteelMeridianSyndicate"]
       25 [-]: CALL R4 1 1  
-      26 [-]: GETIMPORT R5 18 [nil]
+      26 [-]: GETIMPORT R5 18 [0x0469F296]
       27 [-]: LOADK R6 K20 ["ArbitersSyndicate"]
       28 [-]: CALL R5 1 1  
-      29 [-]: GETIMPORT R6 18 [nil]
+      29 [-]: GETIMPORT R6 18 [0x0469F296]
       30 [-]: LOADK R7 K21 ["CephalonSudaSyndicate"]
       31 [-]: CALL R6 1 1  
-      32 [-]: GETIMPORT R7 18 [nil]
+      32 [-]: GETIMPORT R7 18 [0x0469F296]
       33 [-]: LOADK R8 K22 ["PerrinSyndicate"]
       34 [-]: CALL R7 1 1  
-      35 [-]: GETIMPORT R8 18 [nil]
+      35 [-]: GETIMPORT R8 18 [0x0469F296]
       36 [-]: LOADK R9 K23 ["RedVeilSyndicate"]
       37 [-]: CALL R8 1 1  
-      38 [-]: GETIMPORT R9 18 [nil]
+      38 [-]: GETIMPORT R9 18 [0x0469F296]
       39 [-]: LOADK R10 K24 ["NewLokaSyndicate"]
       40 [-]: CALL R9 1 1  
-      41 [-]: GETIMPORT R10 18 [nil]
+      41 [-]: GETIMPORT R10 18 [0x0469F296]
       42 [-]: LOADK R11 K25 ["ZarimanSyndicate"]
       43 [-]: CALL R10 1 -1
       44 [-]: SETLIST R3 R4 -1 [1]
-      45 [-]: GETIMPORT R4 1 [nil]
+      45 [-]: GETIMPORT R4 1 [0x2D0FAD09]
       46 [-]: LOADK R5 K26 ["Lotus.Interface.CrossPlatformUtilities"]
       47 [-]: CALL R4 1 1  
-      48 [-]: GETIMPORT R5 18 [nil]
+      48 [-]: GETIMPORT R5 18 [0x0469F296]
       49 [-]: LOADK R6 K27 ["FIND_SYNDICATE_PICKUP"]
       50 [-]: CALL R5 1 1  
-      51 [-]: GETIMPORT R6 18 [nil]
+      51 [-]: GETIMPORT R6 18 [0x0469F296]
       52 [-]: LOADK R7 K28 ["SyndicatePickupTag"]
       53 [-]: CALL R6 1 1  
-      54 [-]: GETIMPORT R7 18 [nil]
+      54 [-]: GETIMPORT R7 18 [0x0469F296]
       55 [-]: LOADK R8 K29 ["ZarimanPickupTag"]
       56 [-]: CALL R7 1 1  
-      57 [-]: GETIMPORT R8 31 [nil]
+      57 [-]: GETIMPORT R8 31 [0x7ED0A956]
       58 [-]: LOADK R9 K32 ["/Lotus/Types/Items/SyndicateDogTags/DogTag"]
       59 [-]: CALL R8 1 1  
-      60 [-]: GETIMPORT R9 31 [nil]
+      60 [-]: GETIMPORT R9 31 [0x7ED0A956]
       61 [-]: LOADK R10 K33 ["/Lotus/Types/Gameplay/Zariman/Resources/ZarimanDogTag"]
       62 [-]: CALL R9 1 1  
       63 [-]: DUPCLOSURE R10 K34 []
@@ -112,25 +112,25 @@ L 2:  10 [-]: LOADN R1 -1
 ; Is_vararg:       0
 ; Max Stack Size:  41
 
-       0 [-]: GETIMPORT R6 3 [nil]
+       0 [-]: GETIMPORT R6 3 ["ImpactMessageTexturePacks"]
        1 [-]: GETTABLEKS R5 R6 K0 ["VoidplumePickup"]
        2 [-]: FASTCALL1 62 R5 L0
-       3 [-]: GETIMPORT R4 5 [nil]
+       3 [-]: GETIMPORT R4 5 [0x7B998233]
        4 [-]: CALL R4 1 1  
 L 0:   5 [-]: JUMPIFNOT R4 L1
-       6 [-]: GETIMPORT R4 3 [nil]
+       6 [-]: GETIMPORT R4 3 ["ImpactMessageTexturePacks"]
        7 [-]: DUPTABLE R5 30
-       8 [-]: GETIMPORT R6 32 [nil]
+       8 [-]: GETIMPORT R6 32 [0x60C7F0EA]
        9 [-]: SETTABLEKS R6 R5 K6 ["IconBgLeft"]
-      10 [-]: GETIMPORT R6 34 [nil]
+      10 [-]: GETIMPORT R6 34 [0x7C3B3822]
       11 [-]: SETTABLEKS R6 R5 K7 ["IconBgLeftMaterial"]
-      12 [-]: GETIMPORT R6 32 [nil]
+      12 [-]: GETIMPORT R6 32 [0x60C7F0EA]
       13 [-]: SETTABLEKS R6 R5 K8 ["IconBgRight"]
-      14 [-]: GETIMPORT R6 34 [nil]
+      14 [-]: GETIMPORT R6 34 [0x7C3B3822]
       15 [-]: SETTABLEKS R6 R5 K9 ["IconBgRightMaterial"]
-      16 [-]: GETIMPORT R6 36 [nil]
+      16 [-]: GETIMPORT R6 36 [0xC9F02F81]
       17 [-]: SETTABLEKS R6 R5 K10 ["IconBg"]
-      18 [-]: GETIMPORT R6 38 [nil]
+      18 [-]: GETIMPORT R6 38 [0xA055C303]
       19 [-]: SETTABLEKS R6 R5 K11 ["IconBgMaterial"]
       20 [-]: DUPTABLE R6 42
       21 [-]: LOADN R7 512 
@@ -140,7 +140,7 @@ L 0:   5 [-]: JUMPIFNOT R4 L1
       25 [-]: LOADN R7 20  
       26 [-]: SETTABLEKS R7 R6 K41 ["Y"]
       27 [-]: SETTABLEKS R6 R5 K12 ["IconBgAdjust"]
-      28 [-]: GETIMPORT R6 44 [nil]
+      28 [-]: GETIMPORT R6 44 [0xDAEE045F]
       29 [-]: SETTABLEKS R6 R5 K13 ["LineDeco"]
       30 [-]: DUPTABLE R6 42
       31 [-]: LOADN R7 600 
@@ -181,29 +181,29 @@ L 0:   5 [-]: JUMPIFNOT R4 L1
       66 [-]: LOADK R6 K48 [11376988]
       67 [-]: SETTABLEKS R6 R5 K29 ["LabelColorOverride2"]
       68 [-]: SETTABLEKS R5 R4 K0 ["VoidplumePickup"]
-L 1:  69 [-]: GETIMPORT R4 50 [nil]
-      70 [-]: GETIMPORT R5 52 [nil]
+L 1:  69 [-]: GETIMPORT R4 50 [0xC8802016]
+      70 [-]: GETIMPORT R5 52 [0x2BC194A9]
       71 [-]: CALL R4 1 3  
       72 [-]: FORGPREP_INEXT R4 L7
 L 2:  73 [-]: FASTCALL1 62 R8 L3
       74 [-]: MOVE R10 R8  
-      75 [-]: GETIMPORT R9 5 [nil]
+      75 [-]: GETIMPORT R9 5 [0x7B998233]
       76 [-]: CALL R9 1 1  
 L 3:  77 [-]: JUMPIF R9 L7 
       78 [-]: LOADN R9 7   
       79 [-]: JUMPIFNOTLT R7 R9 L7
       80 [-]: NAMECALL R9 R8 K53 [0xEC3ED714]
       81 [-]: CALL R9 1 1  
-      82 [-]: GETIMPORT R13 55 [nil]
+      82 [-]: GETIMPORT R13 55 [0x64FB1586]
       83 [-]: MOVE R14 R9  
       84 [-]: CALL R13 1 1 
       85 [-]: MOVE R11 R13 
       86 [-]: LOADK R12 K56 ["Pickup"]
       87 [-]: CONCAT R10 R11 R12
-      88 [-]: GETIMPORT R13 3 [nil]
+      88 [-]: GETIMPORT R13 3 ["ImpactMessageTexturePacks"]
       89 [-]: GETTABLE R12 R13 R10
       90 [-]: FASTCALL1 62 R12 L4
-      91 [-]: GETIMPORT R11 5 [nil]
+      91 [-]: GETIMPORT R11 5 [0x7B998233]
       92 [-]: CALL R11 1 1 
 L 4:  93 [-]: JUMPIFNOT R11 L7
       94 [-]: NAMECALL R11 R8 K57 [0x056DCF06]
@@ -212,9 +212,9 @@ L 4:  93 [-]: JUMPIFNOT R11 L7
       97 [-]: CALL R12 1 1 
       98 [-]: NAMECALL R13 R8 K59 [0xF36B7A3D]
       99 [-]: CALL R13 1 1 
-     100 [-]: GETIMPORT R14 3 [nil]
+     100 [-]: GETIMPORT R14 3 ["ImpactMessageTexturePacks"]
      101 [-]: NEWTABLE R15 64 0
-     102 [-]: GETIMPORT R16 61 [nil]
+     102 [-]: GETIMPORT R16 61 [0x360847C0]
      103 [-]: SETTABLEKS R16 R15 K62 ["StaticIconBgLeft"]
      104 [-]: DUPTABLE R16 66
      105 [-]: LOADN R17 -14
@@ -228,7 +228,7 @@ L 4:  93 [-]: JUMPIFNOT R11 L7
      113 [-]: LOADN R17 200
      114 [-]: SETTABLEKS R17 R16 K40 ["Height"]
      115 [-]: SETTABLEKS R16 R15 K68 ["StaticIconBgLeftAdjust"]
-     116 [-]: GETIMPORT R16 70 [nil]
+     116 [-]: GETIMPORT R16 70 [0x322E1F1C]
      117 [-]: SETTABLEKS R16 R15 K71 ["StaticIconBgLeftMaterial"]
      118 [-]: DUPTABLE R16 75
      119 [-]: NEWTABLE R17 0 4
@@ -273,7 +273,7 @@ L 4:  93 [-]: JUMPIFNOT R11 L7
      158 [-]: SETLIST R17 R18 5 [1]
      159 [-]: SETLIST R16 R17 1 [1]
      160 [-]: SETTABLEKS R16 R15 K79 ["StaticIconBgLeftMaterialInterp"]
-     161 [-]: GETIMPORT R16 61 [nil]
+     161 [-]: GETIMPORT R16 61 [0x360847C0]
      162 [-]: SETTABLEKS R16 R15 K80 ["StaticIconBgRight"]
      163 [-]: DUPTABLE R16 66
      164 [-]: LOADN R17 14 
@@ -287,7 +287,7 @@ L 4:  93 [-]: JUMPIFNOT R11 L7
      172 [-]: LOADN R17 200
      173 [-]: SETTABLEKS R17 R16 K40 ["Height"]
      174 [-]: SETTABLEKS R16 R15 K81 ["StaticIconBgRightAdjust"]
-     175 [-]: GETIMPORT R16 70 [nil]
+     175 [-]: GETIMPORT R16 70 [0x322E1F1C]
      176 [-]: SETTABLEKS R16 R15 K82 ["StaticIconBgRightMaterial"]
      177 [-]: DUPTABLE R16 75
      178 [-]: NEWTABLE R17 0 4
@@ -332,9 +332,9 @@ L 4:  93 [-]: JUMPIFNOT R11 L7
      217 [-]: SETLIST R17 R18 5 [1]
      218 [-]: SETLIST R16 R17 1 [1]
      219 [-]: SETTABLEKS R16 R15 K84 ["StaticIconBgRightMaterialInterp"]
-     220 [-]: GETIMPORT R16 86 [nil]
+     220 [-]: GETIMPORT R16 86 [0x3CC18A53]
      221 [-]: SETTABLEKS R16 R15 K87 ["StaticIconBg2"]
-     222 [-]: GETIMPORT R16 89 [nil]
+     222 [-]: GETIMPORT R16 89 [0x37A8B1C1]
      223 [-]: SETTABLEKS R16 R15 K90 ["StaticIconBg2Material"]
      224 [-]: DUPTABLE R16 42
      225 [-]: LOADN R17 512
@@ -386,7 +386,7 @@ L 6: 269 [-]: LOADN R19 -20
      271 [-]: CALL R17 3 1 
      272 [-]: SETTABLEKS R17 R16 K41 ["Y"]
      273 [-]: SETTABLEKS R16 R15 K107 ["IconWhiteAdjust"]
-     274 [-]: GETIMPORT R16 109 [nil]
+     274 [-]: GETIMPORT R16 109 [0x623F45F4]
      275 [-]: SETTABLEKS R16 R15 K110 ["IconWhiteMaterial"]
      276 [-]: DUPTABLE R16 112
      277 [-]: NEWTABLE R17 0 4
@@ -400,7 +400,7 @@ L 6: 269 [-]: LOADN R19 -20
      285 [-]: SETLIST R17 R18 4 [1]
      286 [-]: SETTABLEKS R17 R16 K111 ["RipplesColor"]
      287 [-]: SETTABLEKS R16 R15 K113 ["IconWhiteMaterialAdjust"]
-     288 [-]: GETIMPORT R16 115 [nil]
+     288 [-]: GETIMPORT R16 115 [0x98C6160D]
      289 [-]: SETTABLEKS R16 R15 K13 ["LineDeco"]
      290 [-]: DUPTABLE R16 42
      291 [-]: LOADN R17 600
@@ -442,30 +442,30 @@ L 6: 269 [-]: LOADN R19 -20
      327 [-]: SETTABLEKS R16 R15 K29 ["LabelColorOverride2"]
      328 [-]: SETTABLE R15 R14 R10
 L 7: 329 [-]: FORGLOOP R4 L2 2 [inext]
-     330 [-]: GETIMPORT R4 117 [nil]
+     330 [-]: GETIMPORT R4 117 [0x89326C93]
      331 [-]: NAMECALL R4 R4 K118 [0x18D05D30]
      332 [-]: CALL R4 1 1  
      333 [-]: JUMPIFNOT R4 L25
-     334 [-]: GETIMPORT R4 120 [nil]
+     334 [-]: GETIMPORT R4 120 [0xBE190284]
      335 [-]: NAMECALL R4 R4 K121 [0xEF893AEC]
      336 [-]: CALL R4 1 1  
      337 [-]: GETTABLEKS R5 R4 K122 ["syndicateTag"]
      338 [-]: LOADB R6 0   
-     339 [-]: GETIMPORT R7 124 [nil]
+     339 [-]: GETIMPORT R7 124 ["EMPTY_SYMBOL"]
      340 [-]: JUMPIFNOTEQ R5 R7 L11
      341 [-]: GETTABLEKS R8 R4 K125 ["levelOverride"]
      342 [-]: FASTCALL1 62 R8 L8
-     343 [-]: GETIMPORT R7 5 [nil]
+     343 [-]: GETIMPORT R7 5 [0x7B998233]
      344 [-]: CALL R7 1 1  
 L 8: 345 [-]: NOT R6 R7    
      346 [-]: JUMPIFNOT R6 L11
      347 [-]: GETTABLEKS R7 R4 K126 ["keyChainName"]
      348 [-]: FASTCALL1 62 R7 L9
-     349 [-]: GETIMPORT R6 5 [nil]
+     349 [-]: GETIMPORT R6 5 [0x7B998233]
      350 [-]: CALL R6 1 1  
 L 9: 351 [-]: JUMPIFNOT R6 L11
-     352 [-]: GETIMPORT R7 129 [nil]
-     353 [-]: GETIMPORT R8 55 [nil]
+     352 [-]: GETIMPORT R7 129 [0xA5C556B9]
+     353 [-]: GETIMPORT R8 55 [0x64FB1586]
      354 [-]: GETTABLEKS R9 R4 K125 ["levelOverride"]
      355 [-]: NAMECALL R9 R9 K130 [0xED4E0128]
      356 [-]: CALL R9 1 -1 
@@ -476,7 +476,7 @@ L 9: 351 [-]: JUMPIFNOT R6 L11
      361 [-]: LOADB R6 0 +1
 L10: 362 [-]: LOADB R6 1   
 L11: 363 [-]: JUMPIFNOT R6 L12
-     364 [-]: GETIMPORT R7 133 [nil]
+     364 [-]: GETIMPORT R7 133 [0x0469F296]
      365 [-]: LOADK R8 K134 ["ZarimanSyndicate"]
      366 [-]: CALL R7 1 1  
      367 [-]: MOVE R5 R7   
@@ -497,14 +497,14 @@ L13: 376 [-]: GETUPVAL R15 1
 L14: 381 [-]: FORNLOOP R11 L13
 L15: 382 [-]: LOADN R9 -1  
 L16: 383 [-]: JUMPXEQKN R9 K136 L17 [-1]
-     384 [-]: GETIMPORT R10 137 [nil]
+     384 [-]: GETIMPORT R10 137 ["_T"]
      385 [-]: LOADB R11 1  
      386 [-]: SETTABLEKS R11 R10 K138 ["idleTimoutReset"]
      387 [-]: GETUPVAL R10 2
      388 [-]: GETTABLE R7 R10 R9
      389 [-]: GETUPVAL R10 3
      390 [-]: GETTABLE R8 R10 R9
-L17: 391 [-]: GETIMPORT R10 117 [nil]
+L17: 391 [-]: GETIMPORT R10 117 [0x89326C93]
      392 [-]: NAMECALL R10 R10 K139 [0x7D108DDB]
      393 [-]: CALL R10 1 1 
      394 [-]: LOADN R13 1  
@@ -516,7 +516,7 @@ L18: 398 [-]: GETTABLE R14 R10 R13
      400 [-]: CALL R15 1 1 
      401 [-]: FASTCALL1 62 R15 L19
      402 [-]: MOVE R17 R15 
-     403 [-]: GETIMPORT R16 5 [nil]
+     403 [-]: GETIMPORT R16 5 [0x7B998233]
      404 [-]: CALL R16 1 1 
 L19: 405 [-]: JUMPIF R16 L24
      406 [-]: LOADB R16 0  
@@ -562,14 +562,14 @@ L22: 430 [-]: MOVE R21 R17
      445 [-]: LOADB R23 0  
      446 [-]: NAMECALL R20 R20 K149 [0xEF24651D]
      447 [-]: CALL R20 3 1 
-     448 [-]: GETIMPORT R23 117 [nil]
+     448 [-]: GETIMPORT R23 117 [0x89326C93]
      449 [-]: MOVE R25 R18 
      450 [-]: NAMECALL R23 R23 K151 [0xC7FCADA9]
      451 [-]: CALL R23 2 1 
      452 [-]: LENGTH R22 R23
      453 [-]: SUBK R21 R22 K150 [1]
      454 [-]: JUMPIFNOT R6 L23
-     455 [-]: GETIMPORT R22 120 [nil]
+     455 [-]: GETIMPORT R22 120 [0xBE190284]
      456 [-]: MOVE R24 R14 
      457 [-]: LOADK R25 K152 ["/Lotus/Language/SystemMessages/SyndicateDogTagPickup"]
      458 [-]: LOADK R26 K135 [""]
@@ -594,13 +594,13 @@ L22: 430 [-]: MOVE R21 R17
      477 [-]: CALL R22 13 0
      478 [-]: JUMP L24
     
-L23: 479 [-]: GETIMPORT R25 55 [nil]
+L23: 479 [-]: GETIMPORT R25 55 [0x64FB1586]
      480 [-]: MOVE R26 R5  
      481 [-]: CALL R25 1 1 
      482 [-]: MOVE R23 R25 
      483 [-]: LOADK R24 K56 ["Pickup"]
      484 [-]: CONCAT R22 R23 R24
-     485 [-]: GETIMPORT R23 120 [nil]
+     485 [-]: GETIMPORT R23 120 [0xBE190284]
      486 [-]: MOVE R25 R14 
      487 [-]: LOADK R26 K152 ["/Lotus/Language/SystemMessages/SyndicateDogTagPickup"]
      488 [-]: LOADK R27 K135 [""]
@@ -624,20 +624,20 @@ L23: 479 [-]: GETIMPORT R25 55 [nil]
      506 [-]: NAMECALL R23 R23 K157 [0x06D4C9EB]
      507 [-]: CALL R23 13 0
 L24: 508 [-]: FORNLOOP R11 L18
-L25: 509 [-]: GETIMPORT R5 159 [nil]
+L25: 509 [-]: GETIMPORT R5 159 [0xCB79539E]
      510 [-]: FASTCALL1 62 R5 L26
-     511 [-]: GETIMPORT R4 5 [nil]
+     511 [-]: GETIMPORT R4 5 [0x7B998233]
      512 [-]: CALL R4 1 1  
 L26: 513 [-]: JUMPIF R4 L28
      514 [-]: FASTCALL1 62 R0 L27
      515 [-]: MOVE R5 R0   
-     516 [-]: GETIMPORT R4 5 [nil]
+     516 [-]: GETIMPORT R4 5 [0x7B998233]
      517 [-]: CALL R4 1 1  
 L27: 518 [-]: JUMPIF R4 L28
      519 [-]: NAMECALL R4 R0 K160 [0x420402A9]
      520 [-]: CALL R4 1 1  
      521 [-]: JUMPIFNOT R4 L28
-     522 [-]: GETIMPORT R4 159 [nil]
+     522 [-]: GETIMPORT R4 159 [0xCB79539E]
      523 [-]: GETUPVAL R6 9
      524 [-]: LOADK R7 K135 [""]
      525 [-]: LOADN R8 1   

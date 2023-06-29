@@ -5,11 +5,11 @@
 ; Is_vararg:       1
 ; Max Stack Size:  3
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0xAEABECDA]
        2 [-]: GETVARARGS R1 1
-       3 [-]: GETIMPORT R2 4 [nil]
+       3 [-]: GETIMPORT R2 4 ["seeall"]
        4 [-]: CALL R0 2 0  
-       5 [-]: GETIMPORT R0 6 [nil]
+       5 [-]: GETIMPORT R0 6 [0x2D0FAD09]
        6 [-]: LOADK R1 K7 ["EE.Interface.Utilities"]
        7 [-]: CALL R0 1 1  
        8 [-]: DUPCLOSURE R1 K8 []
@@ -31,12 +31,12 @@
 L 0:   3 [-]: LOADK R5 K1 [""]
        4 [-]: FASTCALL1 62 R4 L1
        5 [-]: MOVE R7 R4   
-       6 [-]: GETIMPORT R6 3 [nil]
+       6 [-]: GETIMPORT R6 3 [0x7B998233]
        7 [-]: CALL R6 1 1  
 L 1:   8 [-]: JUMPIFNOT R6 L4
        9 [-]: GETUPVAL R7 0
       10 [-]: GETTABLEKS R6 R7 K4 [0x06D055F9]
-      11 [-]: GETIMPORT R8 6 [nil]
+      11 [-]: GETIMPORT R8 6 [0x0C5E62F9]
       12 [-]: LOADN R9 0   
       13 [-]: LOADN R10 1  
       14 [-]: CALL R8 2 1  
@@ -63,7 +63,7 @@ L 5:  30 [-]: NEWTABLE R6 0 0
       34 [-]: FORNPREP R7 L35
 L 6:  35 [-]: GETTABLE R10 R2 R9
       36 [-]: LOADK R11 K1 [""]
-      37 [-]: GETIMPORT R12 6 [nil]
+      37 [-]: GETIMPORT R12 6 [0x0C5E62F9]
       38 [-]: GETTABLEKS R14 R10 K9 ["mNumToUse"]
       39 [-]: GETTABLEKS R13 R14 K10 ["minValue"]
       40 [-]: GETTABLEKS R15 R10 K9 ["mNumToUse"]
@@ -74,20 +74,20 @@ L 6:  35 [-]: GETTABLE R10 R2 R9
       45 [-]: GETTABLEKS R14 R15 K11 ["maxValue"]
       46 [-]: GETTABLEKS R15 R10 K12 ["mMaxLocTagSuffix"]
       47 [-]: JUMPIFNOTLT R15 R14 L7
-      48 [-]: GETIMPORT R14 14 [nil]
+      48 [-]: GETIMPORT R14 14 [0x3D106989]
       49 [-]: LOADK R15 K15 ["Vendor flavour loc text data not set up correctly! NumToUse max value must be less than equal to MaxLocTagSuffix!"]
       50 [-]: CALL R14 1 0 
       51 [-]: LOADB R15 0  
       52 [-]: FASTCALL1 1 R15 L7
-      53 [-]: GETIMPORT R14 17 [nil]
+      53 [-]: GETIMPORT R14 17 [0x60CCE7B4]
       54 [-]: CALL R14 1 0 
 L 7:  55 [-]: LOADN R14 1  
 L 8:  56 [-]: JUMPIFNOTLE R14 R12 L34
-      57 [-]: GETIMPORT R15 6 [nil]
+      57 [-]: GETIMPORT R15 6 [0x0C5E62F9]
       58 [-]: LOADN R16 1  
       59 [-]: GETTABLEKS R17 R10 K12 ["mMaxLocTagSuffix"]
       60 [-]: CALL R15 2 1 
-      61 [-]: GETIMPORT R16 19 [nil]
+      61 [-]: GETIMPORT R16 19 [0x64FB1586]
       62 [-]: MOVE R17 R15 
       63 [-]: CALL R16 1 1 
       64 [-]: GETTABLE R17 R13 R16
@@ -114,7 +114,7 @@ L10:  77 [-]: LOADK R18 K1 [""]
       83 [-]: CONCAT R19 R20 R22
       84 [-]: FASTCALL1 62 R0 L11
       85 [-]: MOVE R21 R0  
-      86 [-]: GETIMPORT R20 3 [nil]
+      86 [-]: GETIMPORT R20 3 [0x7B998233]
       87 [-]: CALL R20 1 1 
 L11:  88 [-]: JUMPIF R20 L12
       89 [-]: MOVE R22 R19 
@@ -124,7 +124,7 @@ L11:  88 [-]: JUMPIF R20 L12
       93 [-]: MOVE R18 R20 
       94 [-]: JUMP L13
     
-L12:  95 [-]: GETIMPORT R20 26 [nil]
+L12:  95 [-]: GETIMPORT R20 26 [0x603636AD]
       96 [-]: MOVE R21 R19 
       97 [-]: NEWTABLE R22 0 0
       98 [-]: CALL R20 2 1 
@@ -132,7 +132,7 @@ L12:  95 [-]: GETIMPORT R20 26 [nil]
 L13: 100 [-]: JUMPIFNOTEQ R18 R19 L19
      101 [-]: FASTCALL1 62 R0 L14
      102 [-]: MOVE R21 R0  
-     103 [-]: GETIMPORT R20 3 [nil]
+     103 [-]: GETIMPORT R20 3 [0x7B998233]
      104 [-]: CALL R20 1 1 
 L14: 105 [-]: JUMPIF R20 L15
      106 [-]: MOVE R23 R17 
@@ -144,7 +144,7 @@ L14: 105 [-]: JUMPIF R20 L15
      112 [-]: MOVE R18 R20 
      113 [-]: JUMP L19
     
-L15: 114 [-]: GETIMPORT R20 26 [nil]
+L15: 114 [-]: GETIMPORT R20 26 [0x603636AD]
      115 [-]: MOVE R22 R17 
      116 [-]: MOVE R23 R16 
      117 [-]: CONCAT R21 R22 R23
@@ -155,7 +155,7 @@ L15: 114 [-]: GETIMPORT R20 26 [nil]
     
 L16: 122 [-]: FASTCALL1 62 R0 L17
      123 [-]: MOVE R20 R0  
-     124 [-]: GETIMPORT R19 3 [nil]
+     124 [-]: GETIMPORT R19 3 [0x7B998233]
      125 [-]: CALL R19 1 1 
 L17: 126 [-]: JUMPIF R19 L18
      127 [-]: MOVE R22 R17 
@@ -167,7 +167,7 @@ L17: 126 [-]: JUMPIF R19 L18
      133 [-]: MOVE R18 R19 
      134 [-]: JUMP L19
     
-L18: 135 [-]: GETIMPORT R19 26 [nil]
+L18: 135 [-]: GETIMPORT R19 26 [0x603636AD]
      136 [-]: MOVE R21 R17 
      137 [-]: MOVE R22 R16 
      138 [-]: CONCAT R20 R21 R22
@@ -178,7 +178,7 @@ L19: 142 [-]: LOADN R19 1
      143 [-]: JUMPIFNOTLT R19 R14 L20
      144 [-]: GETTABLEKS R19 R10 K27 ["mTrailingLocLowercase"]
      145 [-]: JUMPIFNOT R19 L20
-     146 [-]: GETIMPORT R19 30 [nil]
+     146 [-]: GETIMPORT R19 30 [0x04981AB3]
      147 [-]: MOVE R20 R18 
      148 [-]: CALL R19 1 1 
      149 [-]: MOVE R18 R19 
@@ -189,7 +189,7 @@ L21: 153 [-]: JUMPIFEQ R14 R12 L25
      154 [-]: LOADK R18 K1 [""]
      155 [-]: FASTCALL1 62 R0 L22
      156 [-]: MOVE R20 R0  
-     157 [-]: GETIMPORT R19 3 [nil]
+     157 [-]: GETIMPORT R19 3 [0x7B998233]
      158 [-]: CALL R19 1 1 
 L22: 159 [-]: JUMPIF R19 L23
      160 [-]: GETTABLEKS R21 R10 K31 ["mElementSeparatorLocTag"]
@@ -201,7 +201,7 @@ L22: 159 [-]: JUMPIF R19 L23
      166 [-]: MOVE R18 R19 
      167 [-]: JUMP L24
     
-L23: 168 [-]: GETIMPORT R19 26 [nil]
+L23: 168 [-]: GETIMPORT R19 26 [0x603636AD]
      169 [-]: GETTABLEKS R20 R10 K31 ["mElementSeparatorLocTag"]
      170 [-]: NAMECALL R20 R20 K21 [0x6D604BA7]
      171 [-]: CALL R20 1 1 
@@ -236,7 +236,7 @@ L29: 197 [-]: JUMPIFNOT R23 L31
      199 [-]: LENGTH R24 R22
      200 [-]: LOADN R25 1  
      201 [-]: FORNPREP R24 L31
-L30: 202 [-]: GETIMPORT R27 19 [nil]
+L30: 202 [-]: GETIMPORT R27 19 [0x64FB1586]
      203 [-]: GETTABLE R28 R22 R26
      204 [-]: CALL R27 1 1 
      205 [-]: LOADB R28 1  
@@ -252,7 +252,7 @@ L34: 211 [-]: GETTABLEKS R15 R10 K35 ["mReplacementLocTagKey"]
      215 [-]: FORNLOOP R7 L6
 L35: 216 [-]: FASTCALL1 62 R0 L36
      217 [-]: MOVE R8 R0   
-     218 [-]: GETIMPORT R7 3 [nil]
+     218 [-]: GETIMPORT R7 3 [0x7B998233]
      219 [-]: CALL R7 1 1  
 L36: 220 [-]: JUMPIF R7 L37
      221 [-]: NAMECALL R9 R3 K21 [0x6D604BA7]
@@ -262,7 +262,7 @@ L36: 220 [-]: JUMPIF R7 L37
      225 [-]: NAMECALL R7 R0 K24 [0x42B04007]
      226 [-]: CALL R7 4 1  
      227 [-]: RETURN R7 1  
-L37: 228 [-]: GETIMPORT R7 26 [nil]
+L37: 228 [-]: GETIMPORT R7 26 [0x603636AD]
      229 [-]: NAMECALL R8 R3 K21 [0x6D604BA7]
      230 [-]: CALL R8 1 1  
      231 [-]: MOVE R9 R6   

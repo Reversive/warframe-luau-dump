@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  1
 
-            1 [-]: DUPCLOSURE R0 K0 []
+       1 [-]: DUPCLOSURE R0 K0 []
        2 [-]: SETGLOBAL R0 K1 ["Start"]
        3 [-]: DUPCLOSURE R0 K2 []
        4 [-]: SETGLOBAL R0 K3 ["End"]
@@ -21,15 +21,15 @@
 
        0 [-]: FASTCALL1 62 R1 L0
        1 [-]: MOVE R3 R1   
-       2 [-]: GETIMPORT R2 1 [nil]
+       2 [-]: GETIMPORT R2 1 [0x7B998233]
        3 [-]: CALL R2 1 1  
 L 0:   4 [-]: JUMPIFNOT R2 L1
        5 [-]: RETURN R0 0  
-L 1:   6 [-]: GETIMPORT R4 3 [nil]
+L 1:   6 [-]: GETIMPORT R4 3 [0x987A8F47]
        7 [-]: LOADB R5 0   
        8 [-]: NAMECALL R2 R1 K4 [0x5D985C7E]
        9 [-]: CALL R2 3 0  
-      10 [-]: GETIMPORT R2 6 [nil]
+      10 [-]: GETIMPORT R2 6 [0x94EFF72B]
       11 [-]: JUMPIFNOT R2 L2
       12 [-]: LOADN R4 4   
       13 [-]: NAMECALL R2 R1 K7 [0xEA2890BE]
@@ -46,7 +46,7 @@ L 2:  15 [-]: RETURN R0 0
 
        0 [-]: FASTCALL1 62 R1 L0
        1 [-]: MOVE R3 R1   
-       2 [-]: GETIMPORT R2 1 [nil]
+       2 [-]: GETIMPORT R2 1 [0x7B998233]
        3 [-]: CALL R2 1 1  
 L 0:   4 [-]: JUMPIFNOT R2 L1
        5 [-]: RETURN R0 0  

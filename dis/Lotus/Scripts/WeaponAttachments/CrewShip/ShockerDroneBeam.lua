@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  1
 
-            1 [-]: DUPCLOSURE R0 K0 []
+       1 [-]: DUPCLOSURE R0 K0 []
        2 [-]: SETGLOBAL R0 K1 ["OnDamageDone"]
        3 [-]: RETURN R0 0  
 
@@ -19,10 +19,10 @@
 
        0 [-]: FASTCALL1 62 R2 L0
        1 [-]: MOVE R4 R2   
-       2 [-]: GETIMPORT R3 1 [nil]
+       2 [-]: GETIMPORT R3 1 [0x7B998233]
        3 [-]: CALL R3 1 1  
 L 0:   4 [-]: JUMPIF R3 L3 
-       5 [-]: GETIMPORT R5 3 [nil]
+       5 [-]: GETIMPORT R5 3 ["gLotusAvatarType"]
        6 [-]: NAMECALL R3 R2 K4 [0xF2DEAF69]
        7 [-]: CALL R3 2 1  
        8 [-]: JUMPIFNOT R3 L3
@@ -35,29 +35,29 @@ L 0:   4 [-]: JUMPIF R3 L3
       15 [-]: LOADNIL R5   
       16 [-]: FASTCALL1 62 R4 L1
       17 [-]: MOVE R7 R4   
-      18 [-]: GETIMPORT R6 1 [nil]
+      18 [-]: GETIMPORT R6 1 [0x7B998233]
       19 [-]: CALL R6 1 1  
 L 1:  20 [-]: JUMPIF R6 L3 
-      21 [-]: GETIMPORT R7 10 [nil]
+      21 [-]: GETIMPORT R7 10 [0x3630E649]
       22 [-]: LOADN R8 1   
       23 [-]: LENGTH R9 R4 
       24 [-]: CALL R7 2 1  
       25 [-]: GETTABLE R6 R4 R7
       26 [-]: GETTABLEKS R5 R6 K11 ["mBoneName"]
-      27 [-]: GETIMPORT R9 13 [nil]
+      27 [-]: GETIMPORT R9 13 [0x39761BF3]
       28 [-]: MOVE R10 R5  
-      29 [-]: GETIMPORT R11 15 [nil]
-      30 [-]: GETIMPORT R12 17 [nil]
+      29 [-]: GETIMPORT R11 15 ["ZERO_VECTOR"]
+      30 [-]: GETIMPORT R12 17 ["ZERO_ROTATION"]
       31 [-]: MOVE R13 R0  
       32 [-]: NAMECALL R7 R2 K18 [0x47901F07]
       33 [-]: CALL R7 6 1  
       34 [-]: FASTCALL1 62 R7 L2
       35 [-]: MOVE R9 R7   
-      36 [-]: GETIMPORT R8 1 [nil]
+      36 [-]: GETIMPORT R8 1 [0x7B998233]
       37 [-]: CALL R8 1 1  
 L 2:  38 [-]: JUMPIF R8 L3 
       39 [-]: MOVE R10 R3  
-      40 [-]: GETIMPORT R11 20 [nil]
+      40 [-]: GETIMPORT R11 20 [0xFEAA1BF9]
       41 [-]: NAMECALL R8 R7 K21 [0xB94B0AB4]
       42 [-]: CALL R8 3 0  
 L 3:  43 [-]: RETURN R0 0  

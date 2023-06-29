@@ -5,37 +5,37 @@
 ; Is_vararg:       1
 ; Max Stack Size:  43
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x2D0FAD09]
        2 [-]: LOADK R1 K2 ["Lotus.Scripts.Libs.TransmissionSet"]
        3 [-]: CALL R0 1 1  
-       4 [-]: GETIMPORT R1 1 [nil]
+       4 [-]: GETIMPORT R1 1 [0x2D0FAD09]
        5 [-]: LOADK R2 K3 ["EE.Interface.Utilities"]
        6 [-]: CALL R1 1 1  
-       7 [-]: GETIMPORT R2 1 [nil]
+       7 [-]: GETIMPORT R2 1 [0x2D0FAD09]
        8 [-]: LOADK R3 K4 ["Lotus.Scripts.Libs.LandscapeLib"]
        9 [-]: CALL R2 1 1  
-      10 [-]: GETIMPORT R3 1 [nil]
+      10 [-]: GETIMPORT R3 1 [0x2D0FAD09]
       11 [-]: LOADK R4 K5 ["Lotus.Scripts.Libs.CommonGamemodeFunctions"]
       12 [-]: CALL R3 1 1  
-      13 [-]: GETIMPORT R4 1 [nil]
+      13 [-]: GETIMPORT R4 1 [0x2D0FAD09]
       14 [-]: LOADK R5 K6 ["Lotus.Interface.Libs.TimerMgr"]
       15 [-]: CALL R4 1 1  
-      16 [-]: GETIMPORT R5 1 [nil]
+      16 [-]: GETIMPORT R5 1 [0x2D0FAD09]
       17 [-]: LOADK R6 K7 ["Lotus.Scripts.Libs.DuviriStoryQuestLib"]
       18 [-]: CALL R5 1 1  
-      19 [-]: GETIMPORT R6 1 [nil]
+      19 [-]: GETIMPORT R6 1 [0x2D0FAD09]
       20 [-]: LOADK R7 K8 ["Lotus.Scripts.Libs.DuviriActivityLib"]
       21 [-]: CALL R6 1 1  
-      22 [-]: GETIMPORT R7 1 [nil]
+      22 [-]: GETIMPORT R7 1 [0x2D0FAD09]
       23 [-]: LOADK R8 K9 ["Lotus.Scripts.Duviri.Encounters.DuviriRewardsLib"]
       24 [-]: CALL R7 1 1  
-      25 [-]: GETIMPORT R8 11 [nil]
+      25 [-]: GETIMPORT R8 11 [0x88EFC25E]
       26 [-]: LOADK R9 K12 ["/Lotus/Types/Gameplay/Duviri/SideActivities/Encounters/DuviriHorseTimeTrial/DuvHorseRaceHudTrackers"]
       27 [-]: CALL R8 1 1  
-      28 [-]: GETIMPORT R9 14 [nil]
+      28 [-]: GETIMPORT R9 14 [0x0469F296]
       29 [-]: LOADK R10 K15 ["DuviriRacePath"]
       30 [-]: CALL R9 1 1  
-      31 [-]: GETIMPORT R10 14 [nil]
+      31 [-]: GETIMPORT R10 14 [0x0469F296]
       32 [-]: LOADK R11 K16 ["DuviriHorseHintWP"]
       33 [-]: CALL R10 1 1 
       34 [-]: LOADNIL R11  
@@ -168,22 +168,22 @@
 ; Max Stack Size:  13
 
        0 [-]: LOADB R0 1   
-       1 [-]: GETIMPORT R1 1 [nil]
+       1 [-]: GETIMPORT R1 1 [0x89326C93]
        2 [-]: NAMECALL R1 R1 K2 [0x8B5B1F58]
        3 [-]: CALL R1 1 1  
        4 [-]: SETUPVAL R1 0
        5 [-]: GETUPVAL R2 1
        6 [-]: FASTCALL1 62 R2 L0
-       7 [-]: GETIMPORT R1 4 [nil]
+       7 [-]: GETIMPORT R1 4 [0x7B998233]
        8 [-]: CALL R1 1 1  
 L 0:   9 [-]: JUMPIFNOT R1 L1
-      10 [-]: GETIMPORT R1 1 [nil]
+      10 [-]: GETIMPORT R1 1 [0x89326C93]
       11 [-]: GETUPVAL R3 2
       12 [-]: GETUPVAL R4 3
       13 [-]: NAMECALL R1 R1 K5 [0xC7B81E8D]
       14 [-]: CALL R1 3 1  
       15 [-]: SETUPVAL R1 1
-L 1:  16 [-]: GETIMPORT R1 7 [nil]
+L 1:  16 [-]: GETIMPORT R1 7 [0xC8802016]
       17 [-]: GETUPVAL R2 0
       18 [-]: CALL R1 1 3  
       19 [-]: FORGPREP_INEXT R1 L4
@@ -239,19 +239,19 @@ L 4:  46 [-]: FORGLOOP R1 L2 2 [inext]
       12 [-]: LOADN R3 0   
       13 [-]: NAMECALL R0 R0 K0 [0x751F061D]
       14 [-]: CALL R0 3 0  
-      15 [-]: GETIMPORT R0 2 [nil]
+      15 [-]: GETIMPORT R0 2 [0x7846E12C]
       16 [-]: JUMPIFNOT R0 L0
       17 [-]: GETUPVAL R0 0
       18 [-]: GETUPVAL R2 4
       19 [-]: LOADN R3 1   
       20 [-]: NAMECALL R0 R0 K0 [0x751F061D]
       21 [-]: CALL R0 3 0  
-L 0:  22 [-]: GETIMPORT R0 5 [nil]
+L 0:  22 [-]: GETIMPORT R0 5 ["HorseActivityHint"]
       23 [-]: JUMPXEQKNIL R0 L1 NOT
-      24 [-]: GETIMPORT R0 6 [nil]
+      24 [-]: GETIMPORT R0 6 ["_T"]
       25 [-]: NEWTABLE R1 0 0
       26 [-]: SETTABLEKS R1 R0 K4 ["HorseActivityHint"]
-L 1:  27 [-]: GETIMPORT R0 5 [nil]
+L 1:  27 [-]: GETIMPORT R0 5 ["HorseActivityHint"]
       28 [-]: GETUPVAL R1 5
       29 [-]: GETUPVAL R2 6
       30 [-]: SETTABLE R2 R0 R1
@@ -264,23 +264,23 @@ L 1:  27 [-]: GETIMPORT R0 5 [nil]
       37 [-]: GETTABLEKS R3 R4 K9 ["TOP_PRIORITY"]
       38 [-]: CALL R0 3 1  
       39 [-]: SETUPVAL R0 7
-      40 [-]: GETIMPORT R0 11 [nil]
+      40 [-]: GETIMPORT R0 11 ["HorseActivityHudTracker"]
       41 [-]: JUMPXEQKNIL R0 L2 NOT
-      42 [-]: GETIMPORT R0 6 [nil]
+      42 [-]: GETIMPORT R0 6 ["_T"]
       43 [-]: NEWTABLE R1 0 0
       44 [-]: SETTABLEKS R1 R0 K10 ["HorseActivityHudTracker"]
-L 2:  45 [-]: GETIMPORT R0 11 [nil]
+L 2:  45 [-]: GETIMPORT R0 11 ["HorseActivityHudTracker"]
       46 [-]: GETUPVAL R1 5
       47 [-]: GETUPVAL R2 7
       48 [-]: SETTABLE R2 R0 R1
-      49 [-]: GETIMPORT R0 13 [nil]
+      49 [-]: GETIMPORT R0 13 [0x89326C93]
       50 [-]: GETUPVAL R2 10
       51 [-]: GETUPVAL R3 11
       52 [-]: NAMECALL R0 R0 K14 [0xC7B81E8D]
       53 [-]: CALL R0 3 1  
       54 [-]: SETUPVAL R0 9
-      55 [-]: GETIMPORT R0 13 [nil]
-      56 [-]: GETIMPORT R2 16 [nil]
+      55 [-]: GETIMPORT R0 13 [0x89326C93]
+      56 [-]: GETIMPORT R2 16 [0xF1BAF565]
       57 [-]: GETUPVAL R3 11
       58 [-]: GETUPVAL R4 13
       59 [-]: NAMECALL R0 R0 K17 [0x4E5939A5]
@@ -288,13 +288,13 @@ L 2:  45 [-]: GETIMPORT R0 11 [nil]
       61 [-]: SETUPVAL R0 12
       62 [-]: GETUPVAL R1 12
       63 [-]: FASTCALL1 62 R1 L3
-      64 [-]: GETIMPORT R0 19 [nil]
+      64 [-]: GETIMPORT R0 19 [0x7B998233]
       65 [-]: CALL R0 1 1  
 L 3:  66 [-]: JUMPIFNOT R0 L4
-      67 [-]: GETIMPORT R0 13 [nil]
-      68 [-]: GETIMPORT R2 16 [nil]
+      67 [-]: GETIMPORT R0 13 [0x89326C93]
+      68 [-]: GETIMPORT R2 16 [0xF1BAF565]
       69 [-]: GETUPVAL R3 11
-      70 [-]: GETIMPORT R4 21 [nil]
+      70 [-]: GETIMPORT R4 21 ["ZERO_ROTATION"]
       71 [-]: GETUPVAL R5 6
       72 [-]: GETUPVAL R6 6
       73 [-]: NAMECALL R0 R0 K22 [0x05909209]
@@ -302,15 +302,15 @@ L 3:  66 [-]: JUMPIFNOT R0 L4
       75 [-]: SETUPVAL R0 12
 L 4:  76 [-]: GETUPVAL R1 12
       77 [-]: FASTCALL1 62 R1 L5
-      78 [-]: GETIMPORT R0 19 [nil]
+      78 [-]: GETIMPORT R0 19 [0x7B998233]
       79 [-]: CALL R0 1 1  
 L 5:  80 [-]: JUMPIFNOT R0 L6
-      81 [-]: GETIMPORT R0 24 [nil]
+      81 [-]: GETIMPORT R0 24 [0x3D106989]
       82 [-]: LOADK R1 K25 ["WARNING: Null race trigger script!"]
       83 [-]: CALL R0 1 0  
 L 6:  84 [-]: GETUPVAL R1 9
       85 [-]: FASTCALL1 62 R1 L7
-      86 [-]: GETIMPORT R0 19 [nil]
+      86 [-]: GETIMPORT R0 19 [0x7B998233]
       87 [-]: CALL R0 1 1  
 L 7:  88 [-]: JUMPIFNOT R0 L8
       89 [-]: GETUPVAL R0 14
@@ -342,24 +342,24 @@ L 0:   5 [-]: JUMPXEQKN R0 K2 L1 NOT [1]
 L 1:   7 [-]: JUMPXEQKN R0 K3 L4 NOT [2]
        8 [-]: GETUPVAL R1 1
        9 [-]: CALL R1 0 0  
-      10 [-]: GETIMPORT R2 5 [nil]
+      10 [-]: GETIMPORT R2 5 [0x89326C93]
       11 [-]: FASTCALL1 62 R2 L2
-      12 [-]: GETIMPORT R1 7 [nil]
+      12 [-]: GETIMPORT R1 7 [0x7B998233]
       13 [-]: CALL R1 1 1  
 L 2:  14 [-]: JUMPIF R1 L19
-      15 [-]: GETIMPORT R1 5 [nil]
+      15 [-]: GETIMPORT R1 5 [0x89326C93]
       16 [-]: NAMECALL R1 R1 K8 [0xFB64E76C]
       17 [-]: CALL R1 1 1  
       18 [-]: FASTCALL1 62 R1 L3
       19 [-]: MOVE R3 R1   
-      20 [-]: GETIMPORT R2 7 [nil]
+      20 [-]: GETIMPORT R2 7 [0x7B998233]
       21 [-]: CALL R2 1 1  
 L 3:  22 [-]: JUMPIF R2 L19
-      23 [-]: GETIMPORT R2 5 [nil]
+      23 [-]: GETIMPORT R2 5 [0x89326C93]
       24 [-]: NAMECALL R2 R2 K9 [0x18D05D30]
       25 [-]: CALL R2 1 1  
       26 [-]: JUMPIFNOT R2 L19
-      27 [-]: GETIMPORT R4 11 [nil]
+      27 [-]: GETIMPORT R4 11 [0x0469F296]
       28 [-]: LOADK R5 K12 ["DUVIRI_MINIGAME_PLAYED"]
       29 [-]: CALL R4 1 1  
       30 [-]: LOADK R5 K13 ["DuviriHorseTimeTrial"]
@@ -369,7 +369,7 @@ L 3:  22 [-]: JUMPIF R2 L19
 L 4:  34 [-]: JUMPXEQKN R0 K15 L10 NOT [3]
       35 [-]: GETUPVAL R2 2
       36 [-]: FASTCALL1 62 R2 L5
-      37 [-]: GETIMPORT R1 7 [nil]
+      37 [-]: GETIMPORT R1 7 [0x7B998233]
       38 [-]: CALL R1 1 1  
 L 5:  39 [-]: JUMPIF R1 L6 
       40 [-]: GETUPVAL R2 3
@@ -378,7 +378,7 @@ L 5:  39 [-]: JUMPIF R1 L6
       43 [-]: CALL R1 1 0  
 L 6:  44 [-]: GETUPVAL R2 4
       45 [-]: FASTCALL1 62 R2 L7
-      46 [-]: GETIMPORT R1 7 [nil]
+      46 [-]: GETIMPORT R1 7 [0x7B998233]
       47 [-]: CALL R1 1 1  
 L 7:  48 [-]: JUMPIF R1 L8 
       49 [-]: GETUPVAL R1 4
@@ -387,7 +387,7 @@ L 7:  48 [-]: JUMPIF R1 L8
       52 [-]: CALL R1 2 0  
       53 [-]: JUMP L9
      
-L 8:  54 [-]: GETIMPORT R1 20 [nil]
+L 8:  54 [-]: GETIMPORT R1 20 [0x3D106989]
       55 [-]: LOADK R2 K21 ["Warning: No matching race trigger found"]
       56 [-]: CALL R1 1 0  
 L 9:  57 [-]: GETUPVAL R1 5
@@ -401,35 +401,35 @@ L10:  63 [-]: JUMPXEQKN R0 K23 L14 NOT [6]
       65 [-]: LOADN R3 4   
       66 [-]: NAMECALL R1 R1 K24 [0xFE9DC265]
       67 [-]: CALL R1 2 0  
-      68 [-]: GETIMPORT R2 5 [nil]
+      68 [-]: GETIMPORT R2 5 [0x89326C93]
       69 [-]: FASTCALL1 62 R2 L11
-      70 [-]: GETIMPORT R1 7 [nil]
+      70 [-]: GETIMPORT R1 7 [0x7B998233]
       71 [-]: CALL R1 1 1  
 L11:  72 [-]: JUMPIF R1 L13
-      73 [-]: GETIMPORT R1 5 [nil]
+      73 [-]: GETIMPORT R1 5 [0x89326C93]
       74 [-]: NAMECALL R1 R1 K8 [0xFB64E76C]
       75 [-]: CALL R1 1 1  
       76 [-]: FASTCALL1 62 R1 L12
       77 [-]: MOVE R3 R1   
-      78 [-]: GETIMPORT R2 7 [nil]
+      78 [-]: GETIMPORT R2 7 [0x7B998233]
       79 [-]: CALL R2 1 1  
 L12:  80 [-]: JUMPIF R2 L13
-      81 [-]: GETIMPORT R2 5 [nil]
+      81 [-]: GETIMPORT R2 5 [0x89326C93]
       82 [-]: NAMECALL R2 R2 K9 [0x18D05D30]
       83 [-]: CALL R2 1 1  
       84 [-]: JUMPIFNOT R2 L13
-      85 [-]: GETIMPORT R4 11 [nil]
+      85 [-]: GETIMPORT R4 11 [0x0469F296]
       86 [-]: LOADK R5 K25 ["DUVIRI_MINIGAME_COMPLETE"]
       87 [-]: CALL R4 1 1  
       88 [-]: LOADK R5 K13 ["DuviriHorseTimeTrial"]
       89 [-]: NAMECALL R2 R1 K14 [0x7802279D]
       90 [-]: CALL R2 3 0  
-L13:  91 [-]: GETIMPORT R1 27 [nil]
+L13:  91 [-]: GETIMPORT R1 27 [0x7846E12C]
       92 [-]: JUMPIF R1 L19
       93 [-]: GETUPVAL R2 8
       94 [-]: GETTABLEKS R1 R2 K28 [0x9742B85B]
       95 [-]: GETUPVAL R2 9
-      96 [-]: GETIMPORT R3 11 [nil]
+      96 [-]: GETIMPORT R3 11 [0x0469F296]
       97 [-]: LOADK R4 K29 ["PlayerSucceed"]
       98 [-]: CALL R3 1 -1 
       99 [-]: CALL R1 -1 0 
@@ -437,17 +437,17 @@ L13:  91 [-]: GETIMPORT R1 27 [nil]
 L14: 101 [-]: JUMPXEQKN R0 K30 L18 NOT [7]
      102 [-]: GETUPVAL R2 10
      103 [-]: FASTCALL1 62 R2 L15
-     104 [-]: GETIMPORT R1 7 [nil]
+     104 [-]: GETIMPORT R1 7 [0x7B998233]
      105 [-]: CALL R1 1 1  
 L15: 106 [-]: JUMPIFNOT R1 L16
-     107 [-]: GETIMPORT R1 27 [nil]
+     107 [-]: GETIMPORT R1 27 [0x7846E12C]
      108 [-]: JUMPIF R1 L17
-L16: 109 [-]: GETIMPORT R1 27 [nil]
+L16: 109 [-]: GETIMPORT R1 27 [0x7846E12C]
      110 [-]: JUMPIF R1 L17
      111 [-]: GETUPVAL R2 8
      112 [-]: GETTABLEKS R1 R2 K28 [0x9742B85B]
      113 [-]: GETUPVAL R2 9
-     114 [-]: GETIMPORT R3 11 [nil]
+     114 [-]: GETIMPORT R3 11 [0x0469F296]
      115 [-]: LOADK R4 K31 ["PlayerFailed"]
      116 [-]: CALL R3 1 -1 
      117 [-]: CALL R1 -1 0 
@@ -461,11 +461,11 @@ L17: 118 [-]: GETUPVAL R1 0
      125 [-]: CALL R1 2 0  
      126 [-]: RETURN R0 0  
 L18: 127 [-]: JUMPXEQKN R0 K33 L19 NOT [8]
-     128 [-]: GETIMPORT R1 20 [nil]
+     128 [-]: GETIMPORT R1 20 [0x3D106989]
      129 [-]: LOADK R2 K34 ["RACE IS MISSING ANIMPATH TO CREATE GATES"]
      130 [-]: CALL R1 1 0  
-     131 [-]: GETIMPORT R1 37 [nil]
-     132 [-]: GETIMPORT R2 39 [nil]
+     131 [-]: GETIMPORT R1 37 ["ShowImpactMessage"]
+     132 [-]: GETIMPORT R2 39 [0x603636AD]
      133 [-]: LOADK R3 K40 ["[DEV] NO ANIMPATH FOUND FOR RACE GATES"]
      134 [-]: NEWTABLE R4 0 0
      135 [-]: CALL R2 2 1  
@@ -476,10 +476,10 @@ L18: 127 [-]: JUMPXEQKN R0 K33 L19 NOT [8]
      140 [-]: LOADNIL R7   
      141 [-]: LOADN R8 3   
      142 [-]: CALL R1 7 0  
-     143 [-]: GETIMPORT R1 42 [nil]
+     143 [-]: GETIMPORT R1 42 [0xCBD666E1]
      144 [-]: LOADN R2 5   
      145 [-]: CALL R1 1 0  
-     146 [-]: GETIMPORT R1 44 [nil]
+     146 [-]: GETIMPORT R1 44 ["HideImpactMessage"]
      147 [-]: CALL R1 0 0  
      148 [-]: GETUPVAL R1 7
      149 [-]: LOADN R3 5   
@@ -497,12 +497,12 @@ L19: 152 [-]: RETURN R0 0
 
        0 [-]: NAMECALL R1 R0 K0 [0xED4E0128]
        1 [-]: CALL R1 1 1  
-       2 [-]: GETIMPORT R2 2 [nil]
+       2 [-]: GETIMPORT R2 2 [0x3D106989]
        3 [-]: LOADK R4 K3 ["Starting encounter script on object "]
        4 [-]: MOVE R5 R1   
        5 [-]: CONCAT R3 R4 R5
        6 [-]: CALL R2 1 0  
-       7 [-]: GETIMPORT R2 5 [nil]
+       7 [-]: GETIMPORT R2 5 [0x89326C93]
        8 [-]: NAMECALL R2 R2 K6 [0x29EF273D]
        9 [-]: CALL R2 1 1  
       10 [-]: NAMECALL R2 R2 K7 [0x66905CB0]
@@ -512,11 +512,11 @@ L 0:  13 [-]: GETUPVAL R2 0
       14 [-]: NAMECALL R2 R2 K8 [0xA2D83ED4]
       15 [-]: CALL R2 1 1  
       16 [-]: JUMPIF R2 L1 
-      17 [-]: GETIMPORT R2 10 [nil]
+      17 [-]: GETIMPORT R2 10 [0xCBD666E1]
       18 [-]: LOADN R3 0   
       19 [-]: CALL R2 1 0  
       20 [-]: JUMPBACK L0  
-L 1:  21 [-]: GETIMPORT R2 12 [nil]
+L 1:  21 [-]: GETIMPORT R2 12 [0xBE190284]
       22 [-]: SETUPVAL R2 1
       23 [-]: SETUPVAL R0 2
       24 [-]: NAMECALL R2 R0 K13 [0x891629FA]
@@ -536,7 +536,7 @@ L 1:  21 [-]: GETIMPORT R2 12 [nil]
       38 [-]: NAMECALL R2 R2 K18 [0xE4C355E2]
       39 [-]: CALL R2 1 1  
       40 [-]: SETUPVAL R2 7
-      41 [-]: GETIMPORT R2 5 [nil]
+      41 [-]: GETIMPORT R2 5 [0x89326C93]
       42 [-]: LOADK R4 K19 ["OnPlayersChanged"]
       43 [-]: NAMECALL R2 R2 K20 [0xB7D33840]
       44 [-]: CALL R2 2 0  
@@ -551,7 +551,7 @@ L 1:  21 [-]: GETIMPORT R2 12 [nil]
       53 [-]: GETTABLEKS R2 R3 K22 [0xDE474187]
       54 [-]: CALL R2 0 1  
       55 [-]: SETUPVAL R2 11
-      56 [-]: GETIMPORT R2 5 [nil]
+      56 [-]: GETIMPORT R2 5 [0x89326C93]
       57 [-]: GETUPVAL R4 13
       58 [-]: GETUPVAL R5 4
       59 [-]: LOADN R6 0   
@@ -560,7 +560,7 @@ L 1:  21 [-]: GETIMPORT R2 12 [nil]
       62 [-]: CALL R2 5 1  
       63 [-]: FASTCALL1 62 R2 L2
       64 [-]: MOVE R4 R2   
-      65 [-]: GETIMPORT R3 25 [nil]
+      65 [-]: GETIMPORT R3 25 [0x7B998233]
       66 [-]: CALL R3 1 1  
 L 2:  67 [-]: JUMPIF R3 L3 
       68 [-]: NAMECALL R3 R2 K14 [0xD1586535]
@@ -569,33 +569,33 @@ L 2:  67 [-]: JUMPIF R3 L3
 L 3:  71 [-]: NAMECALL R3 R2 K0 [0xED4E0128]
       72 [-]: CALL R3 1 1  
       73 [-]: SETUPVAL R3 14
-      74 [-]: GETIMPORT R3 27 [nil]
+      74 [-]: GETIMPORT R3 27 [0x0469F296]
       75 [-]: LOADK R5 K28 ["DuvRaceStarted_"]
       76 [-]: GETUPVAL R6 14
       77 [-]: CONCAT R4 R5 R6
       78 [-]: CALL R3 1 1  
       79 [-]: SETUPVAL R3 15
-      80 [-]: GETIMPORT R3 27 [nil]
+      80 [-]: GETIMPORT R3 27 [0x0469F296]
       81 [-]: LOADK R5 K29 ["DuvRaceComplete_"]
       82 [-]: GETUPVAL R6 14
       83 [-]: CONCAT R4 R5 R6
       84 [-]: CALL R3 1 1  
       85 [-]: SETUPVAL R3 16
-      86 [-]: GETIMPORT R3 27 [nil]
+      86 [-]: GETIMPORT R3 27 [0x0469F296]
       87 [-]: LOADK R5 K30 ["DuvRaceFailed_"]
       88 [-]: GETUPVAL R6 14
       89 [-]: CONCAT R4 R5 R6
       90 [-]: CALL R3 1 1  
       91 [-]: SETUPVAL R3 17
-      92 [-]: GETIMPORT R3 27 [nil]
+      92 [-]: GETIMPORT R3 27 [0x0469F296]
       93 [-]: LOADK R5 K31 ["DuvRaceStory_"]
       94 [-]: GETUPVAL R6 14
       95 [-]: CONCAT R4 R5 R6
       96 [-]: CALL R3 1 1  
       97 [-]: SETUPVAL R3 18
-      98 [-]: GETIMPORT R3 33 [nil]
+      98 [-]: GETIMPORT R3 33 [0x7846E12C]
       99 [-]: JUMPIF R3 L7 
-     100 [-]: GETIMPORT R3 27 [nil]
+     100 [-]: GETIMPORT R3 27 [0x0469F296]
      101 [-]: LOADK R4 K34 ["HorseTimeTrialGiver"]
      102 [-]: CALL R3 1 1  
      103 [-]: GETUPVAL R5 20
@@ -607,13 +607,13 @@ L 3:  71 [-]: NAMECALL R3 R2 K0 [0xED4E0128]
      109 [-]: SETUPVAL R4 19
      110 [-]: GETUPVAL R5 19
      111 [-]: FASTCALL1 62 R5 L4
-     112 [-]: GETIMPORT R4 25 [nil]
+     112 [-]: GETIMPORT R4 25 [0x7B998233]
      113 [-]: CALL R4 1 1  
 L 4: 114 [-]: JUMPIFNOT R4 L5
-     115 [-]: GETIMPORT R4 2 [nil]
+     115 [-]: GETIMPORT R4 2 [0x3D106989]
      116 [-]: LOADK R5 K36 ["Something Fishy going on here, Cant find a viable NPC hint. To avoid infinite loops we are just going to disable horse races for this hint"]
      117 [-]: CALL R4 1 0  
-     118 [-]: GETIMPORT R6 27 [nil]
+     118 [-]: GETIMPORT R6 27 [0x0469F296]
      119 [-]: LOADK R7 K37 ["DisableHorseTimeTrialEncounter"]
      120 [-]: CALL R6 1 -1 
      121 [-]: NAMECALL R4 R0 K38 [0xFA1A049A]
@@ -626,7 +626,7 @@ L 4: 114 [-]: JUMPIFNOT R4 L5
      128 [-]: NAMECALL R4 R4 K40 [0x8ABFF40E]
      129 [-]: CALL R4 2 0  
      130 [-]: RETURN R0 0  
-L 5: 131 [-]: GETIMPORT R4 5 [nil]
+L 5: 131 [-]: GETIMPORT R4 5 [0x89326C93]
      132 [-]: GETUPVAL R6 13
      133 [-]: GETUPVAL R7 4
      134 [-]: LOADN R8 0   
@@ -635,67 +635,67 @@ L 5: 131 [-]: GETIMPORT R4 5 [nil]
      137 [-]: CALL R4 5 1  
      138 [-]: FASTCALL1 62 R4 L6
      139 [-]: MOVE R6 R4   
-     140 [-]: GETIMPORT R5 25 [nil]
+     140 [-]: GETIMPORT R5 25 [0x7B998233]
      141 [-]: CALL R5 1 1  
 L 6: 142 [-]: JUMPIF R5 L7 
      143 [-]: GETUPVAL R6 20
      144 [-]: GETTABLEKS R5 R6 K41 [0x1D009439]
      145 [-]: NAMECALL R6 R4 K14 [0xD1586535]
      146 [-]: CALL R6 1 1  
-     147 [-]: GETIMPORT R7 43 [nil]
+     147 [-]: GETIMPORT R7 43 ["ZERO_ROTATION"]
      148 [-]: CALL R5 2 1  
      149 [-]: SETUPVAL R5 21
-L 7: 150 [-]: GETIMPORT R3 33 [nil]
+L 7: 150 [-]: GETIMPORT R3 33 [0x7846E12C]
      151 [-]: JUMPIF R3 L8 
      152 [-]: GETUPVAL R4 20
      153 [-]: GETTABLEKS R3 R4 K44 [0xCAF8A8D0]
      154 [-]: MOVE R4 R0   
-     155 [-]: GETIMPORT R5 46 [nil]
+     155 [-]: GETIMPORT R5 46 [0x4A092DC6]
      156 [-]: CALL R3 2 0  
      157 [-]: NAMECALL R5 R0 K17 [0x4C976EDA]
      158 [-]: CALL R5 1 -1 
      159 [-]: NAMECALL R3 R0 K47 [0x97680C06]
      160 [-]: CALL R3 -1 0 
-L 8: 161 [-]: GETIMPORT R4 50 [nil]
+L 8: 161 [-]: GETIMPORT R4 50 ["FailHorseRace"]
      162 [-]: FASTCALL1 62 R4 L9
-     163 [-]: GETIMPORT R3 25 [nil]
+     163 [-]: GETIMPORT R3 25 [0x7B998233]
      164 [-]: CALL R3 1 1  
 L 9: 165 [-]: JUMPIFNOT R3 L10
-     166 [-]: GETIMPORT R3 51 [nil]
+     166 [-]: GETIMPORT R3 51 ["_T"]
      167 [-]: NEWTABLE R4 0 0
      168 [-]: SETTABLEKS R4 R3 K49 ["FailHorseRace"]
-L10: 169 [-]: GETIMPORT R5 50 [nil]
+L10: 169 [-]: GETIMPORT R5 50 ["FailHorseRace"]
      170 [-]: GETUPVAL R6 14
      171 [-]: GETTABLE R4 R5 R6
      172 [-]: FASTCALL1 62 R4 L11
-     173 [-]: GETIMPORT R3 25 [nil]
+     173 [-]: GETIMPORT R3 25 [0x7B998233]
      174 [-]: CALL R3 1 1  
 L11: 175 [-]: JUMPIFNOT R3 L12
-     176 [-]: GETIMPORT R3 50 [nil]
+     176 [-]: GETIMPORT R3 50 ["FailHorseRace"]
      177 [-]: GETUPVAL R4 14
      178 [-]: LOADNIL R5   
      179 [-]: SETTABLE R5 R3 R4
-L12: 180 [-]: GETIMPORT R4 53 [nil]
+L12: 180 [-]: GETIMPORT R4 53 ["DuviriHorseRaceStartTime"]
      181 [-]: FASTCALL1 62 R4 L13
-     182 [-]: GETIMPORT R3 25 [nil]
+     182 [-]: GETIMPORT R3 25 [0x7B998233]
      183 [-]: CALL R3 1 1  
 L13: 184 [-]: JUMPIFNOT R3 L14
-     185 [-]: GETIMPORT R3 51 [nil]
+     185 [-]: GETIMPORT R3 51 ["_T"]
      186 [-]: NEWTABLE R4 0 0
      187 [-]: SETTABLEKS R4 R3 K52 ["DuviriHorseRaceStartTime"]
-L14: 188 [-]: GETIMPORT R5 53 [nil]
+L14: 188 [-]: GETIMPORT R5 53 ["DuviriHorseRaceStartTime"]
      189 [-]: GETUPVAL R6 14
      190 [-]: GETTABLE R4 R5 R6
      191 [-]: FASTCALL1 62 R4 L15
-     192 [-]: GETIMPORT R3 25 [nil]
+     192 [-]: GETIMPORT R3 25 [0x7B998233]
      193 [-]: CALL R3 1 1  
 L15: 194 [-]: JUMPIFNOT R3 L16
-     195 [-]: GETIMPORT R3 53 [nil]
+     195 [-]: GETIMPORT R3 53 ["DuviriHorseRaceStartTime"]
      196 [-]: GETUPVAL R4 14
      197 [-]: LOADNIL R5   
      198 [-]: SETTABLE R5 R3 R4
-L16: 199 [-]: GETIMPORT R3 5 [nil]
-     200 [-]: GETIMPORT R5 27 [nil]
+L16: 199 [-]: GETIMPORT R3 5 [0x89326C93]
+     200 [-]: GETIMPORT R5 27 [0x0469F296]
      201 [-]: LOADK R6 K54 ["StartAutonomousHudTrackers"]
      202 [-]: CALL R5 1 -1 
      203 [-]: NAMECALL R3 R3 K55 [0x46A0EBF5]
@@ -703,13 +703,13 @@ L16: 199 [-]: GETIMPORT R3 5 [nil]
      205 [-]: SETUPVAL R3 22
      206 [-]: GETUPVAL R4 22
      207 [-]: FASTCALL1 62 R4 L17
-     208 [-]: GETIMPORT R3 25 [nil]
+     208 [-]: GETIMPORT R3 25 [0x7B998233]
      209 [-]: CALL R3 1 1  
 L17: 210 [-]: JUMPIFNOT R3 L18
-     211 [-]: GETIMPORT R3 5 [nil]
+     211 [-]: GETIMPORT R3 5 [0x89326C93]
      212 [-]: GETUPVAL R5 23
      213 [-]: GETUPVAL R6 4
-     214 [-]: GETIMPORT R7 43 [nil]
+     214 [-]: GETIMPORT R7 43 ["ZERO_ROTATION"]
      215 [-]: GETUPVAL R8 2
      216 [-]: GETUPVAL R9 2
      217 [-]: NAMECALL R3 R3 K56 [0x05909209]
@@ -717,7 +717,7 @@ L17: 210 [-]: JUMPIFNOT R3 L18
      219 [-]: SETUPVAL R3 22
 L18: 220 [-]: GETUPVAL R4 22
      221 [-]: FASTCALL1 62 R4 L19
-     222 [-]: GETIMPORT R3 25 [nil]
+     222 [-]: GETIMPORT R3 25 [0x7B998233]
      223 [-]: CALL R3 1 1  
 L19: 224 [-]: JUMPIF R3 L20
      225 [-]: GETUPVAL R3 22
@@ -726,15 +726,15 @@ L19: 224 [-]: JUMPIF R3 L20
      228 [-]: CALL R3 2 0  
 L20: 229 [-]: GETUPVAL R4 19
      230 [-]: FASTCALL1 62 R4 L21
-     231 [-]: GETIMPORT R3 25 [nil]
+     231 [-]: GETIMPORT R3 25 [0x7B998233]
      232 [-]: CALL R3 1 1  
 L21: 233 [-]: JUMPIFNOT R3 L22
-     234 [-]: GETIMPORT R3 33 [nil]
+     234 [-]: GETIMPORT R3 33 [0x7846E12C]
      235 [-]: JUMPIF R3 L22
-     236 [-]: GETIMPORT R3 2 [nil]
+     236 [-]: GETIMPORT R3 2 [0x3D106989]
      237 [-]: LOADK R4 K59 ["Couldn't find or start an NPC encounter, abort and disable activity"]
      238 [-]: CALL R3 1 0  
-     239 [-]: GETIMPORT R5 27 [nil]
+     239 [-]: GETIMPORT R5 27 [0x0469F296]
      240 [-]: LOADK R6 K37 ["DisableHorseTimeTrialEncounter"]
      241 [-]: CALL R5 1 -1 
      242 [-]: NAMECALL R3 R0 K38 [0xFA1A049A]
@@ -791,12 +791,12 @@ L27: 285 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 [0x3D106989]
        1 [-]: LOADK R1 K2 ["Clean Up: Hint"]
        2 [-]: CALL R0 1 0  
        3 [-]: GETUPVAL R1 0
        4 [-]: FASTCALL1 62 R1 L0
-       5 [-]: GETIMPORT R0 4 [nil]
+       5 [-]: GETIMPORT R0 4 [0x7B998233]
        6 [-]: CALL R0 1 1  
 L 0:   7 [-]: JUMPIF R0 L1 
        8 [-]: GETUPVAL R1 0
@@ -812,7 +812,7 @@ L 1:  15 [-]: GETUPVAL R1 1
       18 [-]: CALL R0 1 0  
       19 [-]: GETUPVAL R1 3
       20 [-]: FASTCALL1 62 R1 L2
-      21 [-]: GETIMPORT R0 4 [nil]
+      21 [-]: GETIMPORT R0 4 [0x7B998233]
       22 [-]: CALL R0 1 1  
 L 2:  23 [-]: JUMPIF R0 L3 
       24 [-]: GETUPVAL R0 3
@@ -832,20 +832,20 @@ L 3:  27 [-]: RETURN R0 0
        1 [-]: CALL R1 1 1  
        2 [-]: FASTCALL1 62 R1 L0
        3 [-]: MOVE R3 R1   
-       4 [-]: GETIMPORT R2 2 [nil]
+       4 [-]: GETIMPORT R2 2 [0x7B998233]
        5 [-]: CALL R2 1 1  
 L 0:   6 [-]: JUMPIF R2 L1 
-       7 [-]: GETIMPORT R2 4 [nil]
+       7 [-]: GETIMPORT R2 4 [0x3D106989]
        8 [-]: LOADK R4 K5 ["Ending encounter script on object "]
        9 [-]: MOVE R5 R1   
       10 [-]: CONCAT R3 R4 R5
       11 [-]: CALL R2 1 0  
-L 1:  12 [-]: GETIMPORT R3 7 [nil]
+L 1:  12 [-]: GETIMPORT R3 7 [0x7846E12C]
       13 [-]: JUMPIFNOT R3 L2
       14 [-]: GETUPVAL R2 0
       15 [-]: JUMPIF R2 L3 
 L 2:  16 [-]: MOVE R2 R0   
-L 3:  17 [-]: GETIMPORT R3 10 [nil]
+L 3:  17 [-]: GETIMPORT R3 10 ["DebugPersistentSideActivities"]
       18 [-]: JUMPIF R3 L4 
       19 [-]: NAMECALL R3 R0 K11 [0xEFE6CAD1]
       20 [-]: CALL R3 1 1  
@@ -858,7 +858,7 @@ L 3:  17 [-]: GETIMPORT R3 10 [nil]
       27 [-]: CALL R3 2 0  
 L 4:  28 [-]: GETUPVAL R4 1
       29 [-]: FASTCALL1 62 R4 L5
-      30 [-]: GETIMPORT R3 2 [nil]
+      30 [-]: GETIMPORT R3 2 [0x7B998233]
       31 [-]: CALL R3 1 1  
 L 5:  32 [-]: JUMPIF R3 L6 
       33 [-]: GETUPVAL R4 2
@@ -885,7 +885,7 @@ L 0:   5 [-]: NAMECALL R3 R0 K0 [0xEFE6CAD1]
        6 [-]: CALL R3 1 1  
        7 [-]: LOADN R4 4   
        8 [-]: JUMPIFNOTLT R3 R4 L31
-       9 [-]: GETIMPORT R3 2 [nil]
+       9 [-]: GETIMPORT R3 2 [0xFFF641AF]
       10 [-]: CALL R3 0 1  
       11 [-]: MOVE R1 R3   
       12 [-]: GETUPVAL R3 1
@@ -893,7 +893,7 @@ L 0:   5 [-]: NAMECALL R3 R0 K0 [0xEFE6CAD1]
       14 [-]: CALL R3 1 1  
       15 [-]: MOVE R2 R3   
       16 [-]: JUMPXEQKN R2 K4 L4 NOT [50]
-      17 [-]: GETIMPORT R3 6 [nil]
+      17 [-]: GETIMPORT R3 6 [0x7846E12C]
       18 [-]: JUMPIFNOT R3 L1
       19 [-]: GETUPVAL R3 1
       20 [-]: LOADN R5 2   
@@ -912,7 +912,7 @@ L 1:  23 [-]: GETUPVAL R3 2
     
 L 2:  33 [-]: GETUPVAL R4 3
       34 [-]: FASTCALL1 62 R4 L3
-      35 [-]: GETIMPORT R3 9 [nil]
+      35 [-]: GETIMPORT R3 9 [0x7B998233]
       36 [-]: CALL R3 1 1  
 L 3:  37 [-]: JUMPIF R3 L17
       38 [-]: GETUPVAL R3 3
@@ -932,10 +932,10 @@ L 4:  48 [-]: JUMPXEQKN R2 K10 L5 NOT [2]
 L 5:  50 [-]: JUMPXEQKN R2 K11 L11 NOT [3]
       51 [-]: GETUPVAL R4 4
       52 [-]: FASTCALL1 62 R4 L6
-      53 [-]: GETIMPORT R3 9 [nil]
+      53 [-]: GETIMPORT R3 9 [0x7B998233]
       54 [-]: CALL R3 1 1  
 L 6:  55 [-]: JUMPIFNOT R3 L7
-      56 [-]: GETIMPORT R3 13 [nil]
+      56 [-]: GETIMPORT R3 13 [0x3D106989]
       57 [-]: LOADK R4 K14 ["Race trigger has gone null. This shouldnt happen. Restarting the encounter to recover"]
       58 [-]: CALL R3 1 0  
       59 [-]: GETUPVAL R3 1
@@ -948,7 +948,7 @@ L 6:  55 [-]: JUMPIFNOT R3 L7
       66 [-]: CALL R3 2 0  
       67 [-]: JUMP L17
     
-L 7:  68 [-]: GETIMPORT R3 17 [nil]
+L 7:  68 [-]: GETIMPORT R3 17 [0x89326C93]
       69 [-]: NAMECALL R3 R3 K18 [0x5D971903]
       70 [-]: CALL R3 1 1  
       71 [-]: GETUPVAL R4 5
@@ -1000,16 +1000,16 @@ L15: 109 [-]: GETUPVAL R3 5
      112 [-]: NAMECALL R3 R3 K19 [0x0EB34C69]
      113 [-]: CALL R3 3 1  
      114 [-]: JUMPXEQKN R3 K20 L16 NOT [1]
-     115 [-]: GETIMPORT R3 6 [nil]
+     115 [-]: GETIMPORT R3 6 [0x7846E12C]
      116 [-]: JUMPIFNOT R3 L16
-     117 [-]: GETIMPORT R3 25 [nil]
+     117 [-]: GETIMPORT R3 25 [0xCBD666E1]
      118 [-]: LOADN R4 0   
      119 [-]: CALL R3 1 0  
      120 [-]: JUMPBACK L15 
 L16: 121 [-]: GETUPVAL R3 1
      122 [-]: GETUPVAL R6 8
      123 [-]: GETTABLEKS R5 R6 K26 [0x06D055F9]
-     124 [-]: GETIMPORT R6 6 [nil]
+     124 [-]: GETIMPORT R6 6 [0x7846E12C]
      125 [-]: LOADN R7 2   
      126 [-]: LOADN R8 50  
      127 [-]: CALL R5 3 -1 
@@ -1019,7 +1019,7 @@ L17: 130 [-]: GETUPVAL R3 9
      131 [-]: MOVE R5 R1   
      132 [-]: NAMECALL R3 R3 K27 [0xFAA69527]
      133 [-]: CALL R3 2 0  
-     134 [-]: GETIMPORT R3 6 [nil]
+     134 [-]: GETIMPORT R3 6 [0x7846E12C]
      135 [-]: JUMPIF R3 L23
      136 [-]: GETUPVAL R3 10
      137 [-]: CALL R3 0 1  
@@ -1028,7 +1028,7 @@ L17: 130 [-]: GETUPVAL R3 9
      140 [-]: CALL R3 1 1  
      141 [-]: LOADN R4 2   
      142 [-]: JUMPIFNOTLE R4 R3 L23
-     143 [-]: GETIMPORT R3 17 [nil]
+     143 [-]: GETIMPORT R3 17 [0x89326C93]
      144 [-]: NAMECALL R3 R3 K28 [0x29EF273D]
      145 [-]: CALL R3 1 1  
      146 [-]: NAMECALL R3 R3 K29 [0x66905CB0]
@@ -1054,23 +1054,23 @@ L18: 162 [-]: NAMECALL R4 R0 K34 [0x8E303322]
      166 [-]: JUMPIFNOTLE R4 R3 L24
      167 [-]: GETUPVAL R5 3
      168 [-]: FASTCALL1 62 R5 L19
-     169 [-]: GETIMPORT R4 9 [nil]
+     169 [-]: GETIMPORT R4 9 [0x7B998233]
      170 [-]: CALL R4 1 1  
 L19: 171 [-]: JUMPIF R4 L20
      172 [-]: GETUPVAL R5 12
      173 [-]: GETTABLEKS R4 R5 K35 [0xD712B9DB]
      174 [-]: CALL R4 0 0  
-L20: 175 [-]: GETIMPORT R4 13 [nil]
+L20: 175 [-]: GETIMPORT R4 13 [0x3D106989]
      176 [-]: LOADK R5 K36 ["Players abandoned the activity"]
      177 [-]: CALL R4 1 0  
-     178 [-]: GETIMPORT R6 39 [nil]
+     178 [-]: GETIMPORT R6 39 ["FailHorseRace"]
      179 [-]: GETUPVAL R7 14
      180 [-]: GETTABLE R5 R6 R7
      181 [-]: FASTCALL1 62 R5 L21
-     182 [-]: GETIMPORT R4 9 [nil]
+     182 [-]: GETIMPORT R4 9 [0x7B998233]
      183 [-]: CALL R4 1 1  
 L21: 184 [-]: JUMPIF R4 L22
-     185 [-]: GETIMPORT R5 39 [nil]
+     185 [-]: GETIMPORT R5 39 ["FailHorseRace"]
      186 [-]: GETUPVAL R6 14
      187 [-]: GETTABLE R4 R5 R6
      188 [-]: CALL R4 0 0  
@@ -1096,17 +1096,17 @@ L24: 206 [-]: NAMECALL R3 R0 K0 [0xEFE6CAD1]
      207 [-]: CALL R3 1 1  
      208 [-]: LOADN R4 4   
      209 [-]: JUMPIFNOTEQ R3 R4 L30
-     210 [-]: GETIMPORT R3 6 [nil]
+     210 [-]: GETIMPORT R3 6 [0x7846E12C]
      211 [-]: JUMPIF R3 L28
      212 [-]: LOADN R3 0   
      213 [-]: LOADB R4 0   
-     214 [-]: GETIMPORT R7 41 [nil]
+     214 [-]: GETIMPORT R7 41 ["DuviriHorseRaceStartTime"]
      215 [-]: GETUPVAL R8 14
      216 [-]: GETTABLE R6 R7 R8
-     217 [-]: GETIMPORT R7 43 [nil]
+     217 [-]: GETIMPORT R7 43 [0x878BB4D3]
      218 [-]: MUL R5 R6 R7 
-     219 [-]: GETIMPORT R6 45 [nil]
-     220 [-]: GETIMPORT R9 47 [nil]
+     219 [-]: GETIMPORT R6 45 [0xCFC01047]
+     220 [-]: GETIMPORT R9 47 ["DuviriHorseRacerInfo"]
      221 [-]: GETUPVAL R10 14
      222 [-]: GETTABLE R7 R9 R10
      223 [-]: CALL R6 1 3  
@@ -1125,19 +1125,19 @@ L26: 233 [-]: FORGLOOP R6 L25 2
      236 [-]: FASTCALL2K 19 R3 K51 L27 [4]
      237 [-]: MOVE R8 R3   
      238 [-]: LOADK R9 K51 [4]
-     239 [-]: GETIMPORT R7 54 [nil]
+     239 [-]: GETIMPORT R7 54 [0xAC1B386A]
      240 [-]: CALL R7 2 1  
 L27: 241 [-]: CALL R6 1 0  
 L28: 242 [-]: GETUPVAL R4 16
      243 [-]: FASTCALL1 62 R4 L29
-     244 [-]: GETIMPORT R3 9 [nil]
+     244 [-]: GETIMPORT R3 9 [0x7B998233]
      245 [-]: CALL R3 1 1  
 L29: 246 [-]: JUMPIF R3 L30
      247 [-]: GETUPVAL R4 15
      248 [-]: GETTABLEKS R3 R4 K55 [0xDCB808FC]
      249 [-]: GETUPVAL R4 16
      250 [-]: CALL R3 1 0  
-L30: 251 [-]: GETIMPORT R3 25 [nil]
+L30: 251 [-]: GETIMPORT R3 25 [0xCBD666E1]
      252 [-]: LOADN R4 0   
      253 [-]: CALL R3 1 0  
      254 [-]: JUMPBACK L0  

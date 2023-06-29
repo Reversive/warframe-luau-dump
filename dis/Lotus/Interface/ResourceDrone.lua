@@ -5,19 +5,19 @@
 ; Is_vararg:       1
 ; Max Stack Size:  73
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x2D0FAD09]
        2 [-]: LOADK R1 K2 ["Lotus.Interface.StoreItemUtilities"]
        3 [-]: CALL R0 1 1  
-       4 [-]: GETIMPORT R1 1 [nil]
+       4 [-]: GETIMPORT R1 1 [0x2D0FAD09]
        5 [-]: LOADK R2 K3 ["Lotus.Interface.UIStyleUtilities"]
        6 [-]: CALL R1 1 1  
-       7 [-]: GETIMPORT R2 1 [nil]
+       7 [-]: GETIMPORT R2 1 [0x2D0FAD09]
        8 [-]: LOADK R3 K4 ["Lotus.Interface.LotusUtilities"]
        9 [-]: CALL R2 1 1  
-      10 [-]: GETIMPORT R3 1 [nil]
+      10 [-]: GETIMPORT R3 1 [0x2D0FAD09]
       11 [-]: LOADK R4 K5 ["Lotus.Interface.UIUtilities"]
       12 [-]: CALL R3 1 1  
-      13 [-]: GETIMPORT R4 1 [nil]
+      13 [-]: GETIMPORT R4 1 [0x2D0FAD09]
       14 [-]: LOADK R5 K6 ["EE.Interface.Utilities"]
       15 [-]: CALL R4 1 1  
       16 [-]: DUPTABLE R5 11
@@ -502,19 +502,19 @@ L 1:   4 [-]: RETURN R0 1
       37 [-]: JUMPIF R8 L1 
 L 0:  38 [-]: MOVE R8 R2   
 L 1:  39 [-]: MOVE R7 R8   
-L 2:  40 [-]: GETIMPORT R8 5 [nil]
+L 2:  40 [-]: GETIMPORT R8 5 [0xAE91E43B]
       41 [-]: LOADK R10 K6 ["Drone.Info.Underline"]
       42 [-]: LOADN R11 9  
       43 [-]: MOVE R12 R2  
       44 [-]: NAMECALL R8 R8 K7 [0x67BC869F]
       45 [-]: CALL R8 4 0  
-      46 [-]: GETIMPORT R8 5 [nil]
+      46 [-]: GETIMPORT R8 5 [0xAE91E43B]
       47 [-]: LOADK R10 K8 ["Drone.DroneIcon.Icon"]
       48 [-]: LOADN R11 9  
       49 [-]: MOVE R12 R7  
       50 [-]: NAMECALL R8 R8 K7 [0x67BC869F]
       51 [-]: CALL R8 4 0  
-      52 [-]: GETIMPORT R8 5 [nil]
+      52 [-]: GETIMPORT R8 5 [0xAE91E43B]
       53 [-]: LOADK R10 K9 ["Drone.DroneIcon.Progress"]
       54 [-]: LOADN R11 9  
       55 [-]: GETUPVAL R13 3
@@ -524,25 +524,25 @@ L 2:  40 [-]: GETIMPORT R8 5 [nil]
 L 3:  59 [-]: MOVE R12 R2  
 L 4:  60 [-]: NAMECALL R8 R8 K7 [0x67BC869F]
       61 [-]: CALL R8 4 0  
-      62 [-]: GETIMPORT R8 5 [nil]
+      62 [-]: GETIMPORT R8 5 [0xAE91E43B]
       63 [-]: LOADK R10 K10 ["Drone.DroneIcon.Bg"]
       64 [-]: LOADN R11 9  
       65 [-]: MOVE R12 R0  
       66 [-]: NAMECALL R8 R8 K7 [0x67BC869F]
       67 [-]: CALL R8 4 0  
-      68 [-]: GETIMPORT R8 5 [nil]
+      68 [-]: GETIMPORT R8 5 [0xAE91E43B]
       69 [-]: LOADK R10 K11 ["Drone.Info.Hint"]
       70 [-]: LOADN R11 9  
       71 [-]: MOVE R12 R2  
       72 [-]: NAMECALL R8 R8 K7 [0x67BC869F]
       73 [-]: CALL R8 4 0  
-      74 [-]: GETIMPORT R8 5 [nil]
+      74 [-]: GETIMPORT R8 5 [0xAE91E43B]
       75 [-]: LOADK R10 K12 ["Drone.Info.Info"]
       76 [-]: LOADN R11 9  
       77 [-]: MOVE R12 R5  
       78 [-]: NAMECALL R8 R8 K7 [0x67BC869F]
       79 [-]: CALL R8 4 0  
-      80 [-]: GETIMPORT R8 5 [nil]
+      80 [-]: GETIMPORT R8 5 [0xAE91E43B]
       81 [-]: LOADK R10 K13 ["Drone.Info.CollectedRes.Bg"]
       82 [-]: LOADK R11 K14 ["RectInnerColor"]
       83 [-]: GETTABLEKS R12 R1 K15 ["r"]
@@ -551,7 +551,7 @@ L 4:  60 [-]: NAMECALL R8 R8 K7 [0x67BC869F]
       86 [-]: LOADK R15 K18 [0.80000000000000004]
       87 [-]: NAMECALL R8 R8 K19 [0x91E13703]
       88 [-]: CALL R8 7 0  
-      89 [-]: GETIMPORT R8 5 [nil]
+      89 [-]: GETIMPORT R8 5 [0xAE91E43B]
       90 [-]: LOADK R10 K13 ["Drone.Info.CollectedRes.Bg"]
       91 [-]: LOADK R11 K20 ["RectEdgeColor"]
       92 [-]: GETTABLEKS R12 R3 K15 ["r"]
@@ -560,7 +560,7 @@ L 4:  60 [-]: NAMECALL R8 R8 K7 [0x67BC869F]
       95 [-]: LOADK R15 K21 [0.40000000000000002]
       96 [-]: NAMECALL R8 R8 K19 [0x91E13703]
       97 [-]: CALL R8 7 0  
-      98 [-]: GETIMPORT R8 5 [nil]
+      98 [-]: GETIMPORT R8 5 [0xAE91E43B]
       99 [-]: LOADK R10 K22 ["Drone.Bg"]
      100 [-]: LOADK R11 K14 ["RectInnerColor"]
      101 [-]: GETTABLEKS R12 R1 K15 ["r"]
@@ -569,7 +569,7 @@ L 4:  60 [-]: NAMECALL R8 R8 K7 [0x67BC869F]
      104 [-]: LOADK R15 K18 [0.80000000000000004]
      105 [-]: NAMECALL R8 R8 K19 [0x91E13703]
      106 [-]: CALL R8 7 0  
-     107 [-]: GETIMPORT R8 5 [nil]
+     107 [-]: GETIMPORT R8 5 [0xAE91E43B]
      108 [-]: LOADK R10 K22 ["Drone.Bg"]
      109 [-]: LOADK R11 K20 ["RectEdgeColor"]
      110 [-]: GETTABLEKS R12 R3 K15 ["r"]
@@ -582,12 +582,12 @@ L 4:  60 [-]: NAMECALL R8 R8 K7 [0x67BC869F]
      117 [-]: LOADK R10 K23 ["Drone.Resources.Res"]
      118 [-]: MOVE R11 R8  
      119 [-]: CONCAT R9 R10 R11
-L 5: 120 [-]: GETIMPORT R10 5 [nil]
+L 5: 120 [-]: GETIMPORT R10 5 [0xAE91E43B]
      121 [-]: MOVE R12 R9  
      122 [-]: NAMECALL R10 R10 K24 [0xA7EC3E8A]
      123 [-]: CALL R10 2 1 
      124 [-]: JUMPIFNOT R10 L6
-     125 [-]: GETIMPORT R10 5 [nil]
+     125 [-]: GETIMPORT R10 5 [0xAE91E43B]
      126 [-]: MOVE R13 R9  
      127 [-]: LOADK R14 K25 [".Bg"]
      128 [-]: CONCAT R12 R13 R14
@@ -598,7 +598,7 @@ L 5: 120 [-]: GETIMPORT R10 5 [nil]
      133 [-]: LOADK R17 K18 [0.80000000000000004]
      134 [-]: NAMECALL R10 R10 K19 [0x91E13703]
      135 [-]: CALL R10 7 0 
-     136 [-]: GETIMPORT R10 5 [nil]
+     136 [-]: GETIMPORT R10 5 [0xAE91E43B]
      137 [-]: MOVE R13 R9  
      138 [-]: LOADK R14 K25 [".Bg"]
      139 [-]: CONCAT R12 R13 R14
@@ -609,7 +609,7 @@ L 5: 120 [-]: GETIMPORT R10 5 [nil]
      144 [-]: LOADK R17 K21 [0.40000000000000002]
      145 [-]: NAMECALL R10 R10 K19 [0x91E13703]
      146 [-]: CALL R10 7 0 
-     147 [-]: GETIMPORT R10 5 [nil]
+     147 [-]: GETIMPORT R10 5 [0xAE91E43B]
      148 [-]: MOVE R12 R9  
      149 [-]: LOADK R13 K26 ["Name"]
      150 [-]: LOADN R14 9  
@@ -627,7 +627,7 @@ L 6: 159 [-]: GETUPVAL R10 4
      162 [-]: GETUPVAL R11 5
      163 [-]: GETTABLEKS R10 R11 K26 ["Name"]
      164 [-]: JUMPXEQKNIL R10 L7
-     165 [-]: GETIMPORT R10 5 [nil]
+     165 [-]: GETIMPORT R10 5 [0xAE91E43B]
      166 [-]: LOADK R12 K30 ["Drone.Info.CollectedRes.Name"]
      167 [-]: LOADN R13 29 
      168 [-]: LOADK R15 K31 ["<p><font color=\""]
@@ -657,7 +657,7 @@ L 7: 182 [-]: RETURN R0 0
        0 [-]: JUMPXEQKNIL R0 L2
        1 [-]: GETTABLEKS R1 R0 K0 ["mDamageTime"]
        2 [-]: GETTABLEKS R2 R0 K1 ["mCurrentHP"]
-       3 [-]: GETIMPORT R3 4 [nil]
+       3 [-]: GETIMPORT R3 4 [0x397B920F]
        4 [-]: MOVE R4 R1   
        5 [-]: CALL R3 1 1  
        6 [-]: LOADN R4 0   
@@ -685,7 +685,7 @@ L 2:  17 [-]: LOADN R1 100
        0 [-]: GETUPVAL R1 0
        1 [-]: GETTABLEKS R0 R1 K0 ["mIsVisible"]
        2 [-]: JUMPIFNOT R0 L0
-       3 [-]: GETIMPORT R2 3 [nil]
+       3 [-]: GETIMPORT R2 3 [0xAE91E43B]
        4 [-]: LOADK R4 K4 ["Drone.Info.Btn"]
        5 [-]: LOADN R5 0   
        6 [-]: NAMECALL R2 R2 K5 [0x91A24E4B]
@@ -693,7 +693,7 @@ L 2:  17 [-]: LOADN R1 100
        8 [-]: MINUS R1 R2  
        9 [-]: ADDK R0 R1 K1 [40]
       10 [-]: RETURN R0 1  
-L 0:  11 [-]: GETIMPORT R2 3 [nil]
+L 0:  11 [-]: GETIMPORT R2 3 [0xAE91E43B]
       12 [-]: LOADK R4 K7 ["Drone.Info.Hint"]
       13 [-]: LOADN R5 0   
       14 [-]: NAMECALL R2 R2 K5 [0x91A24E4B]
@@ -714,7 +714,7 @@ L 0:  11 [-]: GETIMPORT R2 3 [nil]
        1 [-]: GETUPVAL R2 1
        2 [-]: GETTABLEKS R1 R2 K0 ["mIsVisible"]
        3 [-]: JUMPIF R1 L0 
-       4 [-]: GETIMPORT R1 3 [nil]
+       4 [-]: GETIMPORT R1 3 [0xAE91E43B]
        5 [-]: LOADK R3 K4 ["Drone.Info.Hint"]
        6 [-]: LOADN R4 34  
        7 [-]: NAMECALL R1 R1 K5 [0x91A24E4B]
@@ -725,14 +725,14 @@ L 0:  11 [-]: GETIMPORT R2 3 [nil]
 L 0:  11 [-]: GETUPVAL R3 2
       12 [-]: GETTABLEKS R2 R3 K6 ["Drone"]
       13 [-]: FASTCALL1 62 R2 L1
-      14 [-]: GETIMPORT R1 8 [nil]
+      14 [-]: GETIMPORT R1 8 [0x7B998233]
       15 [-]: CALL R1 1 1  
 L 1:  16 [-]: JUMPIF R1 L2 
       17 [-]: GETUPVAL R3 2
       18 [-]: GETTABLEKS R2 R3 K6 ["Drone"]
       19 [-]: GETTABLEKS R1 R2 K9 ["mItemType"]
       20 [-]: JUMPXEQKNIL R1 L2
-      21 [-]: GETIMPORT R1 3 [nil]
+      21 [-]: GETIMPORT R1 3 [0xAE91E43B]
       22 [-]: LOADK R3 K11 ["Drone.Info.Info"]
       23 [-]: LOADN R4 42  
       24 [-]: NAMECALL R1 R1 K5 [0x91A24E4B]
@@ -741,18 +741,18 @@ L 1:  16 [-]: JUMPIF R1 L2
 L 2:  27 [-]: GETUPVAL R4 0
       28 [-]: FASTCALL2 18 R4 R0 L3
       29 [-]: MOVE R5 R0   
-      30 [-]: GETIMPORT R3 15 [nil]
+      30 [-]: GETIMPORT R3 15 [0xB62ECFE0]
       31 [-]: CALL R3 2 1  
 L 3:  32 [-]: ADDK R2 R3 K12 [0.5]
       33 [-]: FASTCALL1 12 R2 L4
-      34 [-]: GETIMPORT R1 17 [nil]
+      34 [-]: GETIMPORT R1 17 [0x55F27C30]
       35 [-]: CALL R1 1 1  
 L 4:  36 [-]: MOVE R0 R1   
       37 [-]: MOVE R1 R0   
       38 [-]: DIVK R3 R0 K18 [2]
       39 [-]: FASTCALL2K 19 R3 K19 L5 [38]
       40 [-]: LOADK R4 K19 [38]
-      41 [-]: GETIMPORT R2 21 [nil]
+      41 [-]: GETIMPORT R2 21 [0xAC1B386A]
       42 [-]: CALL R2 2 1  
 L 5:  43 [-]: RETURN R1 2  
 
@@ -776,12 +776,12 @@ L 1:   7 [-]: GETUPVAL R2 2
        9 [-]: GETUPVAL R3 3
       10 [-]: GETTABLEKS R2 R3 K3 ["READY_TO_CLAIM"]
       11 [-]: JUMPIFNOTEQ R1 R2 L3
-      12 [-]: GETIMPORT R4 6 [nil]
+      12 [-]: GETIMPORT R4 6 [0xAE91E43B]
       13 [-]: LOADK R6 K7 ["Drone.Info.CollectedRes"]
       14 [-]: LOADN R7 13  
       15 [-]: NAMECALL R4 R4 K8 [0x91A24E4B]
       16 [-]: CALL R4 3 1  
-      17 [-]: GETIMPORT R5 6 [nil]
+      17 [-]: GETIMPORT R5 6 [0xAE91E43B]
       18 [-]: LOADK R7 K9 ["Drone.Info.Info"]
       19 [-]: LOADN R8 42  
       20 [-]: NAMECALL R5 R5 K8 [0x91A24E4B]
@@ -789,25 +789,25 @@ L 1:   7 [-]: GETUPVAL R2 2
       22 [-]: SUB R3 R4 R5 
       23 [-]: ADDK R2 R3 K4 [0.5]
       24 [-]: FASTCALL1 12 R2 L2
-      25 [-]: GETIMPORT R1 12 [nil]
+      25 [-]: GETIMPORT R1 12 [0x55F27C30]
       26 [-]: CALL R1 1 1  
 L 2:  27 [-]: RETURN R1 1  
 L 3:  28 [-]: GETUPVAL R3 4
       29 [-]: GETTABLEKS R2 R3 K13 ["Drone"]
       30 [-]: FASTCALL1 62 R2 L4
-      31 [-]: GETIMPORT R1 15 [nil]
+      31 [-]: GETIMPORT R1 15 [0x7B998233]
       32 [-]: CALL R1 1 1  
 L 4:  33 [-]: JUMPIF R1 L6 
       34 [-]: GETUPVAL R3 4
       35 [-]: GETTABLEKS R2 R3 K13 ["Drone"]
       36 [-]: GETTABLEKS R1 R2 K16 ["mItemType"]
       37 [-]: JUMPXEQKNIL R1 L6
-      38 [-]: GETIMPORT R4 6 [nil]
+      38 [-]: GETIMPORT R4 6 [0xAE91E43B]
       39 [-]: LOADK R6 K9 ["Drone.Info.Info"]
       40 [-]: LOADN R7 34  
       41 [-]: NAMECALL R4 R4 K8 [0x91A24E4B]
       42 [-]: CALL R4 3 1  
-      43 [-]: GETIMPORT R5 6 [nil]
+      43 [-]: GETIMPORT R5 6 [0xAE91E43B]
       44 [-]: LOADK R7 K9 ["Drone.Info.Info"]
       45 [-]: LOADN R8 42  
       46 [-]: NAMECALL R5 R5 K8 [0x91A24E4B]
@@ -815,7 +815,7 @@ L 4:  33 [-]: JUMPIF R1 L6
       48 [-]: SUB R3 R4 R5 
       49 [-]: ADDK R2 R3 K4 [0.5]
       50 [-]: FASTCALL1 12 R2 L5
-      51 [-]: GETIMPORT R1 12 [nil]
+      51 [-]: GETIMPORT R1 12 [0x55F27C30]
       52 [-]: CALL R1 1 1  
 L 5:  53 [-]: RETURN R1 1  
 L 6:  54 [-]: JUMPIFNOT R0 L7
@@ -834,19 +834,19 @@ L 7:  57 [-]: LOADN R1 -10
 
        0 [-]: GETUPVAL R0 0
        1 [-]: CALL R0 0 2  
-       2 [-]: GETIMPORT R2 1 [nil]
+       2 [-]: GETIMPORT R2 1 [0xAE91E43B]
        3 [-]: LOADK R4 K2 ["Drone.Bg"]
        4 [-]: LOADN R5 1   
        5 [-]: MOVE R6 R1   
        6 [-]: NAMECALL R2 R2 K3 [0x67BC869F]
        7 [-]: CALL R2 4 0  
-       8 [-]: GETIMPORT R2 1 [nil]
+       8 [-]: GETIMPORT R2 1 [0xAE91E43B]
        9 [-]: LOADK R4 K4 ["Drone.Blurer"]
       10 [-]: LOADN R5 1   
       11 [-]: MOVE R6 R1   
       12 [-]: NAMECALL R2 R2 K3 [0x67BC869F]
       13 [-]: CALL R2 4 0  
-      14 [-]: GETIMPORT R2 1 [nil]
+      14 [-]: GETIMPORT R2 1 [0xAE91E43B]
       15 [-]: LOADK R4 K5 ["Drone.Info.Hint"]
       16 [-]: LOADN R5 1   
       17 [-]: SUB R7 R1 R0 
@@ -864,13 +864,13 @@ L 7:  57 [-]: LOADN R1 -10
 L 0:  29 [-]: GETUPVAL R2 4
       30 [-]: CALL R2 0 1  
       31 [-]: ADD R0 R0 R2 
-      32 [-]: GETIMPORT R2 1 [nil]
+      32 [-]: GETIMPORT R2 1 [0xAE91E43B]
       33 [-]: LOADK R4 K2 ["Drone.Bg"]
       34 [-]: LOADN R5 13  
       35 [-]: MOVE R6 R0   
       36 [-]: NAMECALL R2 R2 K3 [0x67BC869F]
       37 [-]: CALL R2 4 0  
-      38 [-]: GETIMPORT R2 1 [nil]
+      38 [-]: GETIMPORT R2 1 [0xAE91E43B]
       39 [-]: LOADK R4 K4 ["Drone.Blurer"]
       40 [-]: LOADN R5 13  
       41 [-]: MOVE R6 R0   
@@ -881,7 +881,7 @@ L 0:  29 [-]: GETUPVAL R2 4
       46 [-]: GETUPVAL R4 5
       47 [-]: GETTABLEKS R3 R4 K8 ["mIsVisible"]
       48 [-]: JUMPIFNOT R3 L1
-      49 [-]: GETIMPORT R4 1 [nil]
+      49 [-]: GETIMPORT R4 1 [0xAE91E43B]
       50 [-]: LOADK R6 K10 ["Drone.Info.Btn"]
       51 [-]: LOADN R7 0   
       52 [-]: NAMECALL R4 R4 K11 [0x91A24E4B]
@@ -890,20 +890,20 @@ L 0:  29 [-]: GETUPVAL R2 4
       55 [-]: ADDK R2 R3 K9 [40]
       56 [-]: JUMP L2
      
-L 1:  57 [-]: GETIMPORT R4 1 [nil]
+L 1:  57 [-]: GETIMPORT R4 1 [0xAE91E43B]
       58 [-]: LOADK R6 K5 ["Drone.Info.Hint"]
       59 [-]: LOADN R7 0   
       60 [-]: NAMECALL R4 R4 K11 [0x91A24E4B]
       61 [-]: CALL R4 3 1  
       62 [-]: MINUS R3 R4  
       63 [-]: ADDK R2 R3 K12 [10]
-L 2:  64 [-]: GETIMPORT R3 1 [nil]
+L 2:  64 [-]: GETIMPORT R3 1 [0xAE91E43B]
       65 [-]: LOADK R5 K2 ["Drone.Bg"]
       66 [-]: LOADN R6 12  
       67 [-]: MOVE R7 R2   
       68 [-]: NAMECALL R3 R3 K3 [0x67BC869F]
       69 [-]: CALL R3 4 0  
-      70 [-]: GETIMPORT R3 1 [nil]
+      70 [-]: GETIMPORT R3 1 [0xAE91E43B]
       71 [-]: LOADK R5 K4 ["Drone.Blurer"]
       72 [-]: LOADN R6 12  
       73 [-]: MOVE R7 R2   
@@ -928,7 +928,7 @@ L 3:  76 [-]: RETURN R0 0
        6 [-]: GETTABLEKS R2 R0 K1 ["name"]
        7 [-]: JUMPXEQKS R2 K3 L5 NOT ["/Lotus/Language/Zariman/ZarimanRegionName"]
 L 0:   8 [-]: LOADB R2 1   
-       9 [-]: GETIMPORT R3 5 [nil]
+       9 [-]: GETIMPORT R3 5 [0xCFC01047]
       10 [-]: GETTABLEKS R4 R0 K6 ["sectors"]
       11 [-]: CALL R3 1 3  
       12 [-]: FORGPREP_NEXT R3 L3
@@ -941,12 +941,12 @@ L 1:  13 [-]: LOADB R10 0
       19 [-]: GETTABLEKS R10 R7 K10 ["mission"]
       20 [-]: GETTABLEKS R9 R10 K11 ["questReq"]
       21 [-]: FASTCALL1 62 R9 L2
-      22 [-]: GETIMPORT R8 13 [nil]
+      22 [-]: GETIMPORT R8 13 [0x7B998233]
       23 [-]: CALL R8 1 1  
 L 2:  24 [-]: JUMPIFNOT R8 L3
       25 [-]: GETUPVAL R9 0
       26 [-]: GETTABLEKS R8 R9 K14 [0x57620945]
-      27 [-]: GETIMPORT R9 16 [nil]
+      27 [-]: GETIMPORT R9 16 [0x64FB1586]
       28 [-]: GETTABLEKS R10 R7 K1 ["name"]
       29 [-]: CALL R9 1 -1 
       30 [-]: CALL R8 -1 1 
@@ -987,7 +987,7 @@ L 7:  41 [-]: RETURN R2 1
       13 [-]: GETTABLE R3 R4 R5
       14 [-]: FASTCALL1 62 R3 L0
       15 [-]: MOVE R5 R3   
-      16 [-]: GETIMPORT R4 4 [nil]
+      16 [-]: GETIMPORT R4 4 [0x7B998233]
       17 [-]: CALL R4 1 1  
 L 0:  18 [-]: JUMPIF R4 L2 
       19 [-]: GETUPVAL R5 2
@@ -1012,7 +1012,7 @@ L 2:  33 [-]: LOADB R2 0
       38 [-]: JUMPIFNOT R1 L4
       39 [-]: FASTCALL1 62 R0 L3
       40 [-]: MOVE R4 R0   
-      41 [-]: GETIMPORT R3 4 [nil]
+      41 [-]: GETIMPORT R3 4 [0x7B998233]
       42 [-]: CALL R3 1 1  
 L 3:  43 [-]: JUMPIF R3 L4 
       44 [-]: LOADB R2 0   
@@ -1026,7 +1026,7 @@ L 6:  51 [-]: GETUPVAL R3 5
       52 [-]: NOT R5 R2    
       53 [-]: NAMECALL R3 R3 K10 [0x368AD758]
       54 [-]: CALL R3 2 0  
-      55 [-]: GETIMPORT R3 12 [nil]
+      55 [-]: GETIMPORT R3 12 [0xAE91E43B]
       56 [-]: LOADK R5 K13 ["Drone.Info.Hint"]
       57 [-]: LOADN R6 11  
       58 [-]: MOVE R7 R2   
@@ -1049,10 +1049,10 @@ L 7:  70 [-]: GETUPVAL R5 6
       74 [-]: LOADK R7 K19 ["/Lotus/Language/Menu/DeployResourceDrone_NoAvailDrones"]
       75 [-]: CALL R4 3 1  
       76 [-]: MOVE R3 R4   
-L 8:  77 [-]: GETIMPORT R4 12 [nil]
+L 8:  77 [-]: GETIMPORT R4 12 [0xAE91E43B]
       78 [-]: LOADK R6 K13 ["Drone.Info.Hint"]
       79 [-]: LOADN R7 12  
-      80 [-]: GETIMPORT R10 12 [nil]
+      80 [-]: GETIMPORT R10 12 [0xAE91E43B]
       81 [-]: LOADK R12 K13 ["Drone.Info.Hint"]
       82 [-]: LOADN R13 0  
       83 [-]: NAMECALL R10 R10 K21 [0x91A24E4B]
@@ -1061,7 +1061,7 @@ L 8:  77 [-]: GETIMPORT R4 12 [nil]
       86 [-]: SUBK R8 R9 K20 [40]
       87 [-]: NAMECALL R4 R4 K22 [0x67BC869F]
       88 [-]: CALL R4 4 0  
-      89 [-]: GETIMPORT R4 12 [nil]
+      89 [-]: GETIMPORT R4 12 [0xAE91E43B]
       90 [-]: LOADK R6 K23 ["Drone.Info.Hint.text"]
       91 [-]: MOVE R7 R3   
       92 [-]: NAMECALL R4 R4 K24 [0x20B98DB3]
@@ -1074,7 +1074,7 @@ L 9:  94 [-]: NOT R3 R2
       99 [-]: JUMPXEQKNIL R4 L10 NOT
      100 [-]: LOADB R3 0 +1
 L10: 101 [-]: LOADB R3 1   
-L11: 102 [-]: GETIMPORT R4 12 [nil]
+L11: 102 [-]: GETIMPORT R4 12 [0xAE91E43B]
      103 [-]: LOADK R6 K25 ["Drone.Info.Info"]
      104 [-]: LOADN R7 11  
      105 [-]: MOVE R8 R3   
@@ -1088,7 +1088,7 @@ L11: 102 [-]: GETIMPORT R4 12 [nil]
 L12: 113 [-]: LOADB R8 1   
 L13: 114 [-]: NAMECALL R4 R4 K14 [0xAADE900E]
      115 [-]: CALL R4 4 0  
-     116 [-]: GETIMPORT R4 12 [nil]
+     116 [-]: GETIMPORT R4 12 [0xAE91E43B]
      117 [-]: LOADK R6 K28 ["Drone.Info.CollectedRes"]
      118 [-]: LOADN R7 11  
      119 [-]: MOVE R8 R3   
@@ -1112,7 +1112,7 @@ L15: 128 [-]: NAMECALL R4 R4 K14 [0xAADE900E]
      137 [-]: JUMPXEQKNIL R5 L16 NOT
      138 [-]: LOADB R4 0 +1
 L16: 139 [-]: LOADB R4 1   
-L17: 140 [-]: GETIMPORT R5 12 [nil]
+L17: 140 [-]: GETIMPORT R5 12 [0xAE91E43B]
      141 [-]: LOADK R7 K30 ["Drone.Info.Underline"]
      142 [-]: LOADN R8 11  
      143 [-]: MOVE R9 R4   
@@ -1130,7 +1130,7 @@ L17: 140 [-]: GETIMPORT R5 12 [nil]
 
        0 [-]: LOADB R0 1   
        1 [-]: SETUPVAL R0 0
-       2 [-]: GETIMPORT R0 1 [nil]
+       2 [-]: GETIMPORT R0 1 [0x223FFEC2]
        3 [-]: LOADN R1 40  
        4 [-]: LOADN R2 40  
        5 [-]: GETUPVAL R5 1
@@ -1149,23 +1149,23 @@ L17: 140 [-]: GETIMPORT R5 12 [nil]
       18 [-]: LOADN R2 64  
       19 [-]: JUMP L1
      
-L 0:  20 [-]: GETIMPORT R3 6 [nil]
-      21 [-]: GETIMPORT R4 8 [nil]
+L 0:  20 [-]: GETIMPORT R3 6 [0x38F10E85]
+      21 [-]: GETIMPORT R4 8 [0xAE91E43B]
       22 [-]: LOADK R5 K9 ["Drone.DroneIcon.Progress.gotoAndStop"]
       23 [-]: LOADN R6 1001
       24 [-]: CALL R3 3 0  
-L 1:  25 [-]: GETIMPORT R3 8 [nil]
+L 1:  25 [-]: GETIMPORT R3 8 [0xAE91E43B]
       26 [-]: LOADK R5 K10 ["Drone.DroneIcon.Icon"]
       27 [-]: MOVE R6 R0   
       28 [-]: NAMECALL R3 R3 K11 [0x1CB415C1]
       29 [-]: CALL R3 3 0  
-      30 [-]: GETIMPORT R3 8 [nil]
+      30 [-]: GETIMPORT R3 8 [0xAE91E43B]
       31 [-]: LOADK R5 K10 ["Drone.DroneIcon.Icon"]
       32 [-]: LOADN R6 12  
       33 [-]: MOVE R7 R1   
       34 [-]: NAMECALL R3 R3 K12 [0x67BC869F]
       35 [-]: CALL R3 4 0  
-      36 [-]: GETIMPORT R3 8 [nil]
+      36 [-]: GETIMPORT R3 8 [0xAE91E43B]
       37 [-]: LOADK R5 K10 ["Drone.DroneIcon.Icon"]
       38 [-]: LOADN R6 13  
       39 [-]: MOVE R7 R2   
@@ -1191,7 +1191,7 @@ L 1:  25 [-]: GETIMPORT R3 8 [nil]
        5 [-]: JUMPIFNOTLT R2 R1 L2
        6 [-]: GETUPVAL R1 2
        7 [-]: JUMPXEQKN R1 K1 L2 NOT [-1]
-       8 [-]: GETIMPORT R1 3 [nil]
+       8 [-]: GETIMPORT R1 3 [0xAE91E43B]
        9 [-]: LOADK R4 K4 ["/Lotus/Language/Menu/"]
       10 [-]: GETUPVAL R6 3
       11 [-]: GETTABLEKS R5 R6 K5 [0x06D055F9]
@@ -1212,7 +1212,7 @@ L 1:  16 [-]: LOADK R7 K7 ["ResourceDrone_SingleExtractorReady"]
       26 [-]: MOVE R0 R1   
       27 [-]: JUMP L3
      
-L 2:  28 [-]: GETIMPORT R1 3 [nil]
+L 2:  28 [-]: GETIMPORT R1 3 [0xAE91E43B]
       29 [-]: LOADK R3 K12 ["/Lotus/Language/Menu/DeployResourceDrone"]
       30 [-]: LOADB R4 0   
       31 [-]: NAMECALL R1 R1 K11 [0x42B04007]
@@ -1272,7 +1272,7 @@ L 0:   9 [-]: GETTABLE R4 R0 R3
       24 [-]: CALL R8 1 1  
       25 [-]: SETTABLEKS R8 R7 K4 ["BinCount"]
       26 [-]: FASTCALL2 52 R6 R7 L1
-      27 [-]: GETIMPORT R5 14 [nil]
+      27 [-]: GETIMPORT R5 14 [0x23D5322F]
       28 [-]: CALL R5 2 0  
 L 1:  29 [-]: FORNLOOP R1 L0
 L 2:  30 [-]: RETURN R0 0  
@@ -1291,7 +1291,7 @@ L 2:  30 [-]: RETURN R0 0
        3 [-]: SETUPVAL R0 1
        4 [-]: GETUPVAL R1 2
        5 [-]: FASTCALL1 62 R1 L0
-       6 [-]: GETIMPORT R0 1 [nil]
+       6 [-]: GETIMPORT R0 1 [0x7B998233]
        7 [-]: CALL R0 1 1  
 L 0:   8 [-]: JUMPIFNOT R0 L1
        9 [-]: RETURN R0 0  
@@ -1339,7 +1339,7 @@ L 2:  42 [-]: RETURN R0 0
 
        0 [-]: GETUPVAL R2 0
        1 [-]: FASTCALL1 62 R2 L0
-       2 [-]: GETIMPORT R1 1 [nil]
+       2 [-]: GETIMPORT R1 1 [0x7B998233]
        3 [-]: CALL R1 1 1  
 L 0:   4 [-]: JUMPIFNOT R1 L1
        5 [-]: RETURN R0 0  
@@ -1364,7 +1364,7 @@ L 3:  22 [-]: GETUPVAL R3 5
       24 [-]: JUMPXEQKNIL R2 L6
       25 [-]: GETTABLEKS R3 R2 K4 ["mDamageTime"]
       26 [-]: GETTABLEKS R4 R2 K5 ["mCurrentHP"]
-      27 [-]: GETIMPORT R5 8 [nil]
+      27 [-]: GETIMPORT R5 8 [0x397B920F]
       28 [-]: MOVE R6 R3   
       29 [-]: CALL R5 1 1  
       30 [-]: LOADN R6 0   
@@ -1393,7 +1393,7 @@ L 7:  43 [-]: SETUPVAL R1 7
       50 [-]: CALL R1 2 1  
       51 [-]: GETUPVAL R3 9
       52 [-]: GETTABLEKS R2 R3 K11 [0x4EEC6D11]
-      53 [-]: GETIMPORT R3 13 [nil]
+      53 [-]: GETIMPORT R3 13 [0xAE91E43B]
       54 [-]: MOVE R4 R1   
       55 [-]: LOADNIL R5   
       56 [-]: LOADB R6 1   
@@ -1420,7 +1420,7 @@ L 7:  43 [-]: SETUPVAL R1 7
       77 [-]: SETTABLEKS R4 R3 K20 ["State"]
       78 [-]: GETUPVAL R3 11
       79 [-]: JUMPXEQKNIL R3 L8
-      80 [-]: GETIMPORT R3 13 [nil]
+      80 [-]: GETIMPORT R3 13 [0xAE91E43B]
       81 [-]: LOADK R5 K21 ["/Lotus/Language/Menu/CollectResourceDrone"]
       82 [-]: LOADB R6 0   
       83 [-]: NAMECALL R3 R3 K22 [0x42B04007]
@@ -1466,7 +1466,7 @@ L 8:  96 [-]: LOADB R3 1
 
        0 [-]: GETUPVAL R2 0
        1 [-]: FASTCALL1 62 R2 L0
-       2 [-]: GETIMPORT R1 1 [nil]
+       2 [-]: GETIMPORT R1 1 [0x7B998233]
        3 [-]: CALL R1 1 1  
 L 0:   4 [-]: JUMPIFNOT R1 L1
        5 [-]: RETURN R0 0  
@@ -1488,7 +1488,7 @@ L 2:  12 [-]: GETUPVAL R1 1
 ; Is_vararg:       0
 ; Max Stack Size:  7
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 [0xAE91E43B]
        1 [-]: LOADK R2 K2 ["Drone.DroneIcon.Bg"]
        2 [-]: LOADK R3 K3 ["DroneIconFocused"]
        3 [-]: LOADK R4 K4 ["DroneIconUnfocused"]
@@ -1496,12 +1496,12 @@ L 2:  12 [-]: GETUPVAL R1 1
        5 [-]: LOADK R6 K5 [""]
        6 [-]: NAMECALL R0 R0 K6 [0x1E5B5CFE]
        7 [-]: CALL R0 6 0  
-       8 [-]: GETIMPORT R0 1 [nil]
+       8 [-]: GETIMPORT R0 1 [0xAE91E43B]
        9 [-]: LOADK R2 K7 ["Drone.DroneIcon.Icon"]
-      10 [-]: GETIMPORT R3 9 [nil]
+      10 [-]: GETIMPORT R3 9 [0x223FFEC2]
       11 [-]: NAMECALL R0 R0 K10 [0x1CB415C1]
       12 [-]: CALL R0 3 0  
-      13 [-]: GETIMPORT R0 1 [nil]
+      13 [-]: GETIMPORT R0 1 [0xAE91E43B]
       14 [-]: LOADK R2 K2 ["Drone.DroneIcon.Bg"]
       15 [-]: LOADN R3 10  
       16 [-]: LOADN R4 80  
@@ -1517,7 +1517,7 @@ L 2:  12 [-]: GETUPVAL R1 1
 ; Is_vararg:       0
 ; Max Stack Size:  7
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 [0xAE91E43B]
        1 [-]: LOADK R2 K2 ["Drone.Bg"]
        2 [-]: LOADK R3 K3 ["DroneInfoFocused"]
        3 [-]: LOADK R4 K4 ["DroneInfoUnfocused"]
@@ -1525,7 +1525,7 @@ L 2:  12 [-]: GETUPVAL R1 1
        5 [-]: LOADK R6 K5 [""]
        6 [-]: NAMECALL R0 R0 K6 [0x1E5B5CFE]
        7 [-]: CALL R0 6 0  
-       8 [-]: GETIMPORT R0 1 [nil]
+       8 [-]: GETIMPORT R0 1 [0xAE91E43B]
        9 [-]: LOADK R2 K7 ["Drone.Blurer"]
       10 [-]: LOADN R3 12  
       11 [-]: NAMECALL R0 R0 K8 [0x91A24E4B]
@@ -1534,73 +1534,73 @@ L 2:  12 [-]: GETUPVAL R1 1
       14 [-]: LOADN R0 0   
       15 [-]: GETUPVAL R2 2
       16 [-]: GETTABLEKS R1 R2 K9 [0xB5BE5D4A]
-      17 [-]: GETIMPORT R2 1 [nil]
+      17 [-]: GETIMPORT R2 1 [0xAE91E43B]
       18 [-]: LOADK R3 K10 ["Drone.Info"]
       19 [-]: CALL R1 2 2  
       20 [-]: SETUPVAL R1 1
       21 [-]: MOVE R0 R2   
-      22 [-]: GETIMPORT R1 1 [nil]
+      22 [-]: GETIMPORT R1 1 [0xAE91E43B]
       23 [-]: LOADK R3 K2 ["Drone.Bg"]
       24 [-]: LOADN R4 13  
       25 [-]: NAMECALL R1 R1 K8 [0x91A24E4B]
       26 [-]: CALL R1 3 1  
       27 [-]: SETUPVAL R1 3
-      28 [-]: GETIMPORT R1 1 [nil]
+      28 [-]: GETIMPORT R1 1 [0xAE91E43B]
       29 [-]: LOADK R3 K11 ["Drone.Info.Info"]
       30 [-]: LOADN R4 38  
       31 [-]: LOADK R5 K12 ["bottom"]
       32 [-]: NAMECALL R1 R1 K13 [0x5F56EEAB]
       33 [-]: CALL R1 4 0  
-      34 [-]: GETIMPORT R1 1 [nil]
+      34 [-]: GETIMPORT R1 1 [0xAE91E43B]
       35 [-]: LOADK R3 K14 ["Drone.Info.CollectedRes.Name"]
       36 [-]: LOADN R4 38  
       37 [-]: LOADK R5 K15 ["center"]
       38 [-]: NAMECALL R1 R1 K13 [0x5F56EEAB]
       39 [-]: CALL R1 4 0  
-      40 [-]: GETIMPORT R1 1 [nil]
+      40 [-]: GETIMPORT R1 1 [0xAE91E43B]
       41 [-]: LOADK R3 K2 ["Drone.Bg"]
       42 [-]: LOADN R4 12  
       43 [-]: NAMECALL R1 R1 K8 [0x91A24E4B]
       44 [-]: CALL R1 3 1  
-      45 [-]: GETIMPORT R2 1 [nil]
+      45 [-]: GETIMPORT R2 1 [0xAE91E43B]
       46 [-]: LOADK R4 K10 ["Drone.Info"]
       47 [-]: LOADN R5 11  
       48 [-]: LOADB R6 0   
       49 [-]: NAMECALL R2 R2 K16 [0xAADE900E]
       50 [-]: CALL R2 4 0  
-      51 [-]: GETIMPORT R2 1 [nil]
+      51 [-]: GETIMPORT R2 1 [0xAE91E43B]
       52 [-]: LOADK R4 K10 ["Drone.Info"]
       53 [-]: LOADN R5 0   
       54 [-]: MOVE R6 R1   
       55 [-]: NAMECALL R2 R2 K17 [0x67BC869F]
       56 [-]: CALL R2 4 0  
-      57 [-]: GETIMPORT R2 1 [nil]
+      57 [-]: GETIMPORT R2 1 [0xAE91E43B]
       58 [-]: LOADK R4 K18 ["Drone.Info.Underline"]
       59 [-]: LOADN R5 10  
       60 [-]: LOADN R6 0   
       61 [-]: NAMECALL R2 R2 K17 [0x67BC869F]
       62 [-]: CALL R2 4 0  
-      63 [-]: GETIMPORT R2 1 [nil]
+      63 [-]: GETIMPORT R2 1 [0xAE91E43B]
       64 [-]: LOADK R4 K7 ["Drone.Blurer"]
       65 [-]: LOADN R5 12  
       66 [-]: LOADK R6 K19 [0.01]
       67 [-]: NAMECALL R2 R2 K17 [0x67BC869F]
       68 [-]: CALL R2 4 0  
-      69 [-]: GETIMPORT R2 1 [nil]
+      69 [-]: GETIMPORT R2 1 [0xAE91E43B]
       70 [-]: LOADK R4 K2 ["Drone.Bg"]
       71 [-]: LOADN R5 12  
       72 [-]: LOADK R6 K19 [0.01]
       73 [-]: NAMECALL R2 R2 K17 [0x67BC869F]
       74 [-]: CALL R2 4 0  
-      75 [-]: GETIMPORT R2 1 [nil]
+      75 [-]: GETIMPORT R2 1 [0xAE91E43B]
       76 [-]: LOADK R4 K2 ["Drone.Bg"]
-      77 [-]: GETIMPORT R6 21 [nil]
+      77 [-]: GETIMPORT R6 21 [0x0032441C]
       78 [-]: GETTABLEKS R5 R6 K22 ["UIMaterial_RectangleNoDepth"]
       79 [-]: NAMECALL R2 R2 K23 [0xD5181643]
       80 [-]: CALL R2 3 0  
-      81 [-]: GETIMPORT R2 1 [nil]
+      81 [-]: GETIMPORT R2 1 [0xAE91E43B]
       82 [-]: LOADK R4 K24 ["Drone.Info.CollectedRes.Bg"]
-      83 [-]: GETIMPORT R6 21 [nil]
+      83 [-]: GETIMPORT R6 21 [0x0032441C]
       84 [-]: GETTABLEKS R5 R6 K22 ["UIMaterial_RectangleNoDepth"]
       85 [-]: NAMECALL R2 R2 K23 [0xD5181643]
       86 [-]: CALL R2 3 0  
@@ -1615,14 +1615,14 @@ L 2:  12 [-]: GETUPVAL R1 1
 ; Max Stack Size:  13
 
        0 [-]: NEWTABLE R0 0 3
-       1 [-]: GETIMPORT R1 1 [nil]
-       2 [-]: GETIMPORT R2 3 [nil]
-       3 [-]: GETIMPORT R3 5 [nil]
+       1 [-]: GETIMPORT R1 1 [0x03C431FF]
+       2 [-]: GETIMPORT R2 3 [0x1B9BE1D9]
+       3 [-]: GETIMPORT R3 5 [0x565A3913]
        4 [-]: SETLIST R0 R1 3 [1]
        5 [-]: GETUPVAL R2 0
        6 [-]: GETTABLEKS R1 R2 K6 [0xE5E5A417]
-       7 [-]: GETIMPORT R2 8 [nil]
-       8 [-]: GETIMPORT R6 8 [nil]
+       7 [-]: GETIMPORT R2 8 [0xAE91E43B]
+       8 [-]: GETIMPORT R6 8 [0xAE91E43B]
        9 [-]: LOADK R8 K11 ["Drone"]
       10 [-]: LOADN R9 1   
       11 [-]: NAMECALL R6 R6 K12 [0x91A24E4B]
@@ -1634,27 +1634,27 @@ L 2:  12 [-]: GETUPVAL R1 1
       17 [-]: CALL R1 2 1  
       18 [-]: GETUPVAL R3 0
       19 [-]: GETTABLEKS R2 R3 K13 [0xD718F59B]
-      20 [-]: GETIMPORT R3 8 [nil]
+      20 [-]: GETIMPORT R3 8 [0xAE91E43B]
       21 [-]: LOADN R4 500 
       22 [-]: CALL R2 2 1  
       23 [-]: GETUPVAL R4 0
       24 [-]: GETTABLEKS R3 R4 K14 [0x0DB7934D]
-      25 [-]: GETIMPORT R4 8 [nil]
+      25 [-]: GETIMPORT R4 8 [0xAE91E43B]
       26 [-]: LOADN R5 10  
       27 [-]: CALL R3 2 1  
-      28 [-]: GETIMPORT R4 16 [nil]
+      28 [-]: GETIMPORT R4 16 [0xC8802016]
       29 [-]: MOVE R5 R0   
       30 [-]: CALL R4 1 3  
       31 [-]: FORGPREP_INEXT R4 L1
-L 0:  32 [-]: GETIMPORT R11 19 [nil]
+L 0:  32 [-]: GETIMPORT R11 19 ["VISIBILITY_CENTER"]
       33 [-]: MOVE R12 R1  
       34 [-]: NAMECALL R9 R8 K20 [0x830EEA67]
       35 [-]: CALL R9 3 0  
-      36 [-]: GETIMPORT R11 22 [nil]
+      36 [-]: GETIMPORT R11 22 ["VISIBILITY_SIZE"]
       37 [-]: MOVE R12 R2  
       38 [-]: NAMECALL R9 R8 K20 [0x830EEA67]
       39 [-]: CALL R9 3 0  
-      40 [-]: GETIMPORT R11 24 [nil]
+      40 [-]: GETIMPORT R11 24 ["VISIBILITY_FADE_SIZE"]
       41 [-]: MOVE R12 R3  
       42 [-]: NAMECALL R9 R8 K20 [0x830EEA67]
       43 [-]: CALL R9 3 0  
@@ -1671,14 +1671,14 @@ L 1:  44 [-]: FORGLOOP R4 L0 2 [inext]
 
        0 [-]: GETUPVAL R0 0
        1 [-]: CALL R0 0 0  
-       2 [-]: GETIMPORT R0 1 [nil]
+       2 [-]: GETIMPORT R0 1 [0xAE91E43B]
        3 [-]: LOADK R2 K2 ["Drone.Resources.Res1.Name"]
-       4 [-]: GETIMPORT R3 4 [nil]
+       4 [-]: GETIMPORT R3 4 [0x565A3913]
        5 [-]: NAMECALL R0 R0 K5 [0xD5181643]
        6 [-]: CALL R0 3 0  
-       7 [-]: GETIMPORT R0 1 [nil]
+       7 [-]: GETIMPORT R0 1 [0xAE91E43B]
        8 [-]: LOADK R2 K6 ["Drone.Resources.Res1.Bg"]
-       9 [-]: GETIMPORT R3 8 [nil]
+       9 [-]: GETIMPORT R3 8 [0x03C431FF]
       10 [-]: NAMECALL R0 R0 K5 [0xD5181643]
       11 [-]: CALL R0 3 0  
       12 [-]: RETURN R0 0  
@@ -1691,21 +1691,21 @@ L 1:  44 [-]: FORGLOOP R4 L0 2 [inext]
 ; Is_vararg:       0
 ; Max Stack Size:  9
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 [0xAE91E43B]
        1 [-]: LOADN R2 0   
        2 [-]: NAMECALL R0 R0 K2 [0x58BEC6D6]
        3 [-]: CALL R0 2 0  
-       4 [-]: GETIMPORT R0 1 [nil]
+       4 [-]: GETIMPORT R0 1 [0xAE91E43B]
        5 [-]: NAMECALL R0 R0 K3 [0x33ABEE92]
        6 [-]: CALL R0 1 1  
        7 [-]: SETUPVAL R0 0
-       8 [-]: GETIMPORT R0 5 [nil]
+       8 [-]: GETIMPORT R0 5 [0x76EA806B]
        9 [-]: LOADN R2 0   
       10 [-]: NAMECALL R0 R0 K6 [0x3F3AE64C]
       11 [-]: CALL R0 2 1  
       12 [-]: FASTCALL1 62 R0 L0
       13 [-]: MOVE R2 R0   
-      14 [-]: GETIMPORT R1 8 [nil]
+      14 [-]: GETIMPORT R1 8 [0x7B998233]
       15 [-]: CALL R1 1 1  
 L 0:  16 [-]: JUMPIFNOT R1 L1
       17 [-]: RETURN R0 0  
@@ -1714,48 +1714,48 @@ L 1:  18 [-]: NAMECALL R1 R0 K9 [0x80563238]
       20 [-]: SETUPVAL R1 1
       21 [-]: GETUPVAL R2 1
       22 [-]: FASTCALL1 62 R2 L2
-      23 [-]: GETIMPORT R1 8 [nil]
+      23 [-]: GETIMPORT R1 8 [0x7B998233]
       24 [-]: CALL R1 1 1  
 L 2:  25 [-]: JUMPIFNOT R1 L3
       26 [-]: RETURN R0 0  
-L 3:  27 [-]: GETIMPORT R1 11 [nil]
+L 3:  27 [-]: GETIMPORT R1 11 [0x0A8F62A7]
       28 [-]: CALL R1 0 1  
-      29 [-]: GETIMPORT R3 13 [nil]
+      29 [-]: GETIMPORT R3 13 [0x25D99D89]
       30 [-]: FASTCALL1 62 R3 L4
-      31 [-]: GETIMPORT R2 8 [nil]
+      31 [-]: GETIMPORT R2 8 [0x7B998233]
       32 [-]: CALL R2 1 1  
 L 4:  33 [-]: JUMPIF R2 L6 
-      34 [-]: GETIMPORT R2 16 [nil]
+      34 [-]: GETIMPORT R2 16 ["LastCheckedResourceDrones"]
       35 [-]: JUMPXEQKNIL R2 L5
-      36 [-]: GETIMPORT R3 16 [nil]
+      36 [-]: GETIMPORT R3 16 ["LastCheckedResourceDrones"]
       37 [-]: ADDK R2 R3 K17 [120]
       38 [-]: JUMPIFNOTLT R2 R1 L6
-L 5:  39 [-]: GETIMPORT R2 18 [nil]
+L 5:  39 [-]: GETIMPORT R2 18 ["_T"]
       40 [-]: SETTABLEKS R1 R2 K15 ["LastCheckedResourceDrones"]
-      41 [-]: GETIMPORT R2 13 [nil]
+      41 [-]: GETIMPORT R2 13 [0x25D99D89]
       42 [-]: LOADK R4 K19 ["OnCheckActiveResourceDrones"]
       43 [-]: NAMECALL R2 R2 K20 [0xB6AB331F]
       44 [-]: CALL R2 2 0  
       45 [-]: JUMP L7
      
-L 6:  46 [-]: GETIMPORT R2 22 [nil]
+L 6:  46 [-]: GETIMPORT R2 22 [0x3D106989]
       47 [-]: LOADK R3 K23 ["Using cached active resource drone data"]
       48 [-]: CALL R2 1 0  
 L 7:  49 [-]: GETUPVAL R2 2
       50 [-]: CALL R2 0 0  
-      51 [-]: GETIMPORT R2 1 [nil]
+      51 [-]: GETIMPORT R2 1 [0xAE91E43B]
       52 [-]: LOADK R4 K24 ["Drone"]
       53 [-]: LOADN R5 11  
       54 [-]: LOADB R6 0   
       55 [-]: NAMECALL R2 R2 K25 [0xAADE900E]
       56 [-]: CALL R2 4 0  
-      57 [-]: GETIMPORT R2 1 [nil]
+      57 [-]: GETIMPORT R2 1 [0xAE91E43B]
       58 [-]: LOADK R4 K26 ["Drone.Resources"]
       59 [-]: LOADN R5 11  
       60 [-]: LOADB R6 0   
       61 [-]: NAMECALL R2 R2 K25 [0xAADE900E]
       62 [-]: CALL R2 4 0  
-      63 [-]: GETIMPORT R2 1 [nil]
+      63 [-]: GETIMPORT R2 1 [0xAE91E43B]
       64 [-]: LOADK R4 K27 ["Drone.DroneIcon.Bg"]
       65 [-]: LOADK R5 K28 ["DroneIconFocused"]
       66 [-]: LOADK R6 K29 ["DroneIconUnfocused"]
@@ -1763,12 +1763,12 @@ L 7:  49 [-]: GETUPVAL R2 2
       68 [-]: LOADK R8 K30 [""]
       69 [-]: NAMECALL R2 R2 K31 [0x1E5B5CFE]
       70 [-]: CALL R2 6 0  
-      71 [-]: GETIMPORT R2 1 [nil]
+      71 [-]: GETIMPORT R2 1 [0xAE91E43B]
       72 [-]: LOADK R4 K32 ["Drone.DroneIcon.Icon"]
-      73 [-]: GETIMPORT R5 34 [nil]
+      73 [-]: GETIMPORT R5 34 [0x223FFEC2]
       74 [-]: NAMECALL R2 R2 K35 [0x1CB415C1]
       75 [-]: CALL R2 3 0  
-      76 [-]: GETIMPORT R2 1 [nil]
+      76 [-]: GETIMPORT R2 1 [0xAE91E43B]
       77 [-]: LOADK R4 K27 ["Drone.DroneIcon.Bg"]
       78 [-]: LOADN R5 10  
       79 [-]: LOADN R6 80  
@@ -1778,27 +1778,27 @@ L 7:  49 [-]: GETUPVAL R2 2
       83 [-]: CALL R2 0 0  
       84 [-]: GETUPVAL R2 4
       85 [-]: CALL R2 0 0  
-      86 [-]: GETIMPORT R2 1 [nil]
+      86 [-]: GETIMPORT R2 1 [0xAE91E43B]
       87 [-]: LOADK R4 K37 ["Drone.Resources.Res1.Name"]
-      88 [-]: GETIMPORT R5 39 [nil]
+      88 [-]: GETIMPORT R5 39 [0x565A3913]
       89 [-]: NAMECALL R2 R2 K40 [0xD5181643]
       90 [-]: CALL R2 3 0  
-      91 [-]: GETIMPORT R2 1 [nil]
+      91 [-]: GETIMPORT R2 1 [0xAE91E43B]
       92 [-]: LOADK R4 K41 ["Drone.Resources.Res1.Bg"]
-      93 [-]: GETIMPORT R5 43 [nil]
+      93 [-]: GETIMPORT R5 43 [0x03C431FF]
       94 [-]: NAMECALL R2 R2 K40 [0xD5181643]
       95 [-]: CALL R2 3 0  
-      96 [-]: GETIMPORT R2 1 [nil]
+      96 [-]: GETIMPORT R2 1 [0xAE91E43B]
       97 [-]: LOADK R4 K26 ["Drone.Resources"]
       98 [-]: LOADN R5 1   
       99 [-]: GETUPVAL R6 5
      100 [-]: NAMECALL R2 R2 K36 [0x67BC869F]
      101 [-]: CALL R2 4 0  
-     102 [-]: GETIMPORT R2 45 [nil]
+     102 [-]: GETIMPORT R2 45 [0x2D0FAD09]
      103 [-]: LOADK R3 K46 ["Lotus.Interface.Components.ThemedButton"]
      104 [-]: CALL R2 1 1  
      105 [-]: GETTABLEKS R3 R2 K47 [0xAE6791BA]
-     106 [-]: GETIMPORT R4 1 [nil]
+     106 [-]: GETIMPORT R4 1 [0xAE91E43B]
      107 [-]: LOADK R5 K48 ["Drone.Info.Btn"]
      108 [-]: LOADK R6 K49 ["/Lotus/Language/Menu/DeployResourceDrone"]
      109 [-]: LOADK R7 K50 ["OnDeployResourceDronePressed"]
@@ -1825,20 +1825,20 @@ L 7:  49 [-]: GETUPVAL R2 2
      130 [-]: CALL R3 1 0  
      131 [-]: LOADB R3 0   
      132 [-]: SETUPVAL R3 9
-     133 [-]: GETIMPORT R3 1 [nil]
+     133 [-]: GETIMPORT R3 1 [0xAE91E43B]
      134 [-]: LOADK R5 K57 ["Drone.ToggleCallout.text"]
      135 [-]: LOADK R6 K51 ["<MENU_RTHUMB>"]
      136 [-]: NAMECALL R3 R3 K58 [0x20B98DB3]
      137 [-]: CALL R3 3 0  
-     138 [-]: GETIMPORT R3 1 [nil]
+     138 [-]: GETIMPORT R3 1 [0xAE91E43B]
      139 [-]: LOADK R5 K59 ["Drone.ToggleCallout"]
      140 [-]: LOADN R6 11  
-     141 [-]: GETIMPORT R7 62 [nil]
+     141 [-]: GETIMPORT R7 62 [0x1467D5F4]
      142 [-]: CALL R7 0 -1 
      143 [-]: NAMECALL R3 R3 K25 [0xAADE900E]
      144 [-]: CALL R3 -1 0 
-     145 [-]: GETIMPORT R3 64 [nil]
-     146 [-]: GETIMPORT R4 1 [nil]
+     145 [-]: GETIMPORT R3 64 [0x38F10E85]
+     146 [-]: GETIMPORT R4 1 [0xAE91E43B]
      147 [-]: LOADK R5 K65 ["Drone.DroneIcon.Progress.gotoAndStop"]
      148 [-]: LOADN R6 1001
      149 [-]: CALL R3 3 0  
@@ -1856,7 +1856,7 @@ L 7:  49 [-]: GETUPVAL R2 2
 
        0 [-]: GETUPVAL R1 0
        1 [-]: FASTCALL1 62 R1 L0
-       2 [-]: GETIMPORT R0 1 [nil]
+       2 [-]: GETIMPORT R0 1 [0x7B998233]
        3 [-]: CALL R0 1 1  
 L 0:   4 [-]: JUMPIF R0 L1 
        5 [-]: GETUPVAL R0 0
@@ -1884,10 +1884,10 @@ L 1:  15 [-]: RETURN R0 0
        2 [-]: RETURN R0 0  
 L 0:   3 [-]: GETUPVAL R1 1
        4 [-]: GETTABLEKS R0 R1 K1 [0x659D451F]
-       5 [-]: GETIMPORT R1 3 [nil]
+       5 [-]: GETIMPORT R1 3 [0xB12E75E7]
        6 [-]: CALL R0 1 0  
-       7 [-]: GETIMPORT R0 5 [nil]
-       8 [-]: GETIMPORT R1 7 [nil]
+       7 [-]: GETIMPORT R0 5 [0x38F10E85]
+       8 [-]: GETIMPORT R1 7 [0xAE91E43B]
        9 [-]: LOADK R2 K8 ["Drone.DroneIcon.Progress.gotoAndStop"]
       10 [-]: LOADN R3 1001
       11 [-]: CALL R0 3 0  
@@ -1905,14 +1905,14 @@ L 0:   3 [-]: GETUPVAL R1 1
 ; Is_vararg:       0
 ; Max Stack Size:  8
 
-       0 [-]: GETIMPORT R1 1 [nil]
+       0 [-]: GETIMPORT R1 1 [0x03F57322]
        1 [-]: MOVE R2 R0   
        2 [-]: CALL R1 1 1  
        3 [-]: LOADN R2 4   
        4 [-]: JUMPIFNOTEQ R1 R2 L2
        5 [-]: GETUPVAL R2 0
        6 [-]: FASTCALL1 62 R2 L0
-       7 [-]: GETIMPORT R1 3 [nil]
+       7 [-]: GETIMPORT R1 3 [0x7B998233]
        8 [-]: CALL R1 1 1  
 L 0:   9 [-]: JUMPIFNOT R1 L1
       10 [-]: LOADB R1 0   
@@ -1964,8 +1964,8 @@ L 2:  11 [-]: LOADB R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  4
 
-       0 [-]: GETIMPORT R0 1 [nil]
-       1 [-]: GETIMPORT R1 3 [nil]
+       0 [-]: GETIMPORT R0 1 [0x38F10E85]
+       1 [-]: GETIMPORT R1 3 [0xAE91E43B]
        2 [-]: LOADK R2 K4 ["Drone.DroneIcon.Progress.gotoAndStop"]
        3 [-]: LOADN R3 1001
        4 [-]: CALL R0 3 0  
@@ -1981,14 +1981,14 @@ L 2:  11 [-]: LOADB R0 0
       14 [-]: SETTABLEKS R1 R0 K9 ["TimeLabel"]
       15 [-]: GETUPVAL R1 2
       16 [-]: FASTCALL1 62 R1 L0
-      17 [-]: GETIMPORT R0 11 [nil]
+      17 [-]: GETIMPORT R0 11 [0x7B998233]
       18 [-]: CALL R0 1 1  
 L 0:  19 [-]: JUMPIFNOT R0 L1
       20 [-]: JUMP L2
      
 L 1:  21 [-]: GETUPVAL R0 3
       22 [-]: CALL R0 0 0  
-L 2:  23 [-]: GETIMPORT R0 3 [nil]
+L 2:  23 [-]: GETIMPORT R0 3 [0xAE91E43B]
       24 [-]: LOADK R2 K12 ["/Lotus/Language/Menu/CollectResourceDrone"]
       25 [-]: LOADB R3 0   
       26 [-]: NAMECALL R0 R0 K13 [0x42B04007]
@@ -2000,7 +2000,7 @@ L 2:  23 [-]: GETIMPORT R0 3 [nil]
       32 [-]: CALL R1 1 0  
       33 [-]: GETUPVAL R2 5
       34 [-]: GETTABLEKS R1 R2 K16 [0x659D451F]
-      35 [-]: GETIMPORT R2 18 [nil]
+      35 [-]: GETIMPORT R2 18 [0x6980ED30]
       36 [-]: CALL R1 1 0  
       37 [-]: GETUPVAL R1 4
       38 [-]: LOADB R3 1   
@@ -2023,12 +2023,12 @@ L 2:  23 [-]: GETIMPORT R0 3 [nil]
        2 [-]: JUMPIFNOTLE R1 R0 L2
        3 [-]: GETUPVAL R1 1
        4 [-]: FASTCALL1 62 R1 L0
-       5 [-]: GETIMPORT R0 1 [nil]
+       5 [-]: GETIMPORT R0 1 [0x7B998233]
        6 [-]: CALL R0 1 1  
 L 0:   7 [-]: JUMPIF R0 L2 
        8 [-]: GETUPVAL R1 2
        9 [-]: FASTCALL1 62 R1 L1
-      10 [-]: GETIMPORT R0 1 [nil]
+      10 [-]: GETIMPORT R0 1 [0x7B998233]
       11 [-]: CALL R0 1 1  
 L 1:  12 [-]: JUMPIF R0 L2 
       13 [-]: GETUPVAL R0 2
@@ -2054,7 +2054,7 @@ L 2:  24 [-]: LOADB R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  4
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 [0xAE91E43B]
        1 [-]: LOADK R2 K2 ["DeployResourceDrone"]
        2 [-]: LOADK R3 K3 [""]
        3 [-]: NAMECALL R0 R0 K4 [0xE4162EED]
@@ -2071,26 +2071,26 @@ L 2:  24 [-]: LOADB R0 0
 
        0 [-]: LOADB R0 1   
        1 [-]: SETUPVAL R0 0
-       2 [-]: GETIMPORT R0 1 [nil]
-       3 [-]: GETIMPORT R3 3 [nil]
+       2 [-]: GETIMPORT R0 1 [0xAE91E43B]
+       3 [-]: GETIMPORT R3 3 [0x0032441C]
        4 [-]: GETTABLEKS R2 R3 K4 ["UIMovie_ItemBrowsingMovie"]
        5 [-]: NAMECALL R0 R0 K5 [0x1FD6ABD0]
        6 [-]: CALL R0 2 1  
        7 [-]: SETUPVAL R0 1
        8 [-]: GETUPVAL R1 1
        9 [-]: FASTCALL1 62 R1 L0
-      10 [-]: GETIMPORT R0 7 [nil]
+      10 [-]: GETIMPORT R0 7 [0x7B998233]
       11 [-]: CALL R0 1 1  
 L 0:  12 [-]: JUMPIFNOT R0 L1
       13 [-]: RETURN R0 0  
 L 1:  14 [-]: GETUPVAL R1 2
       15 [-]: GETTABLEKS R0 R1 K8 [0x659D451F]
-      16 [-]: GETIMPORT R2 3 [nil]
+      16 [-]: GETIMPORT R2 3 [0x0032441C]
       17 [-]: GETTABLEKS R1 R2 K9 ["UISound_GridOpen"]
       18 [-]: CALL R0 1 0  
       19 [-]: GETUPVAL R0 1
       20 [-]: LOADK R2 K10 ["SetTitle"]
-      21 [-]: GETIMPORT R3 1 [nil]
+      21 [-]: GETIMPORT R3 1 [0xAE91E43B]
       22 [-]: LOADK R5 K11 ["/Lotus/Language/Menu/SelectDroneTitle"]
       23 [-]: LOADB R6 0   
       24 [-]: NAMECALL R3 R3 K12 [0x42B04007]
@@ -2117,7 +2117,7 @@ L 1:  14 [-]: GETUPVAL R1 2
       45 [-]: LOADK R3 K20 ["true"]
       46 [-]: NAMECALL R0 R0 K13 [0xE4162EED]
       47 [-]: CALL R0 3 0  
-      48 [-]: GETIMPORT R0 22 [nil]
+      48 [-]: GETIMPORT R0 22 ["_T"]
       49 [-]: NEWCLOSURE R1 P0
       50 [-]: MOVE R2 R3   
       51 [-]: MOVE R2 R4   
@@ -2129,7 +2129,7 @@ L 1:  14 [-]: GETUPVAL R1 2
       57 [-]: LOADK R3 K23 ["BrowseDronesDone"]
       58 [-]: NAMECALL R0 R0 K13 [0xE4162EED]
       59 [-]: CALL R0 3 0  
-      60 [-]: GETIMPORT R0 22 [nil]
+      60 [-]: GETIMPORT R0 22 ["_T"]
       61 [-]: NEWCLOSURE R1 P1
       62 [-]: MOVE R2 R6   
       63 [-]: MOVE R2 R2   
@@ -2156,7 +2156,7 @@ L 1:  14 [-]: GETUPVAL R1 2
 ; Is_vararg:       0
 ; Max Stack Size:  9
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 [0x4EC73E73]
        1 [-]: GETUPVAL R1 0
        2 [-]: GETUPVAL R3 1
        3 [-]: GETTABLEKS R2 R3 K2 ["system"]
@@ -2167,7 +2167,7 @@ L 1:  14 [-]: GETUPVAL R1 2
        8 [-]: SETTABLEKS R1 R2 K3 ["value"]
        9 [-]: GETUPVAL R3 2
       10 [-]: FASTCALL1 62 R3 L0
-      11 [-]: GETIMPORT R2 5 [nil]
+      11 [-]: GETIMPORT R2 5 [0x7B998233]
       12 [-]: CALL R2 1 1  
 L 0:  13 [-]: JUMPIF R2 L1 
       14 [-]: GETUPVAL R2 2
@@ -2183,7 +2183,7 @@ L 0:  13 [-]: JUMPIF R2 L1
       24 [-]: NAMECALL R3 R3 K10 [0x7292133E]
       25 [-]: CALL R3 5 0  
       26 [-]: RETURN R0 0  
-L 1:  27 [-]: GETIMPORT R2 13 [nil]
+L 1:  27 [-]: GETIMPORT R2 13 ["BackgroundMovie"]
       28 [-]: LOADK R4 K14 ["ShowBlockingMessage"]
       29 [-]: LOADK R5 K15 ["0"]
       30 [-]: NAMECALL R2 R2 K16 [0xE4162EED]
@@ -2198,7 +2198,7 @@ L 1:  27 [-]: GETIMPORT R2 13 [nil]
 ; Is_vararg:       0
 ; Max Stack Size:  5
 
-       0 [-]: GETIMPORT R1 1 [nil]
+       0 [-]: GETIMPORT R1 1 [0x4EC73E73]
        1 [-]: GETUPVAL R2 0
        2 [-]: GETUPVAL R4 1
        3 [-]: GETTABLEKS R3 R4 K2 ["system"]
@@ -2206,25 +2206,25 @@ L 1:  27 [-]: GETIMPORT R2 13 [nil]
        5 [-]: JUMPXEQKNIL R1 L2 NOT
        6 [-]: GETUPVAL R2 2
        7 [-]: FASTCALL1 62 R2 L0
-       8 [-]: GETIMPORT R1 4 [nil]
+       8 [-]: GETIMPORT R1 4 [0x7B998233]
        9 [-]: CALL R1 1 1  
 L 0:  10 [-]: JUMPIF R1 L1 
-      11 [-]: GETIMPORT R1 6 [nil]
-      12 [-]: GETIMPORT R2 8 [nil]
+      11 [-]: GETIMPORT R1 6 ["_T"]
+      12 [-]: GETIMPORT R2 8 [0x0A8F62A7]
       13 [-]: CALL R2 0 1  
       14 [-]: SETTABLEKS R2 R1 K9 ["LastCheckedResourceDrones"]
       15 [-]: GETUPVAL R1 2
       16 [-]: LOADK R3 K10 ["OnCheckActiveResourceDrones"]
       17 [-]: NAMECALL R1 R1 K11 [0xB6AB331F]
       18 [-]: CALL R1 2 0  
-L 1:  19 [-]: GETIMPORT R1 13 [nil]
+L 1:  19 [-]: GETIMPORT R1 13 ["BackgroundMovie"]
       20 [-]: LOADK R3 K14 ["ShowBlockingMessage"]
       21 [-]: LOADK R4 K15 ["0"]
       22 [-]: NAMECALL R1 R1 K16 [0xE4162EED]
       23 [-]: CALL R1 3 0  
       24 [-]: GETUPVAL R2 3
       25 [-]: GETTABLEKS R1 R2 K17 [0x659D451F]
-      26 [-]: GETIMPORT R2 19 [nil]
+      26 [-]: GETIMPORT R2 19 [0xB12E75E7]
       27 [-]: CALL R1 1 0  
       28 [-]: RETURN R0 0  
 L 2:  29 [-]: GETUPVAL R1 4
@@ -2243,21 +2243,21 @@ L 2:  29 [-]: GETUPVAL R1 4
        1 [-]: SETUPVAL R1 0
        2 [-]: GETUPVAL R2 1
        3 [-]: FASTCALL1 62 R2 L0
-       4 [-]: GETIMPORT R1 1 [nil]
+       4 [-]: GETIMPORT R1 1 [0x7B998233]
        5 [-]: CALL R1 1 1  
 L 0:   6 [-]: JUMPIF R1 L1 
-       7 [-]: GETIMPORT R1 3 [nil]
+       7 [-]: GETIMPORT R1 3 [0x03F57322]
        8 [-]: MOVE R2 R0   
        9 [-]: CALL R1 1 1  
       10 [-]: LOADN R2 4   
       11 [-]: JUMPIFNOTEQ R1 R2 L1
       12 [-]: NEWTABLE R1 0 0
       13 [-]: SETUPVAL R1 2
-      14 [-]: GETIMPORT R1 5 [nil]
+      14 [-]: GETIMPORT R1 5 [0x4EC73E73]
       15 [-]: GETUPVAL R2 3
       16 [-]: CALL R1 1 1  
       17 [-]: JUMPXEQKNIL R1 L1
-      18 [-]: GETIMPORT R1 8 [nil]
+      18 [-]: GETIMPORT R1 8 ["BackgroundMovie"]
       19 [-]: LOADK R3 K9 ["ShowBlockingMessage"]
       20 [-]: LOADK R4 K10 ["1"]
       21 [-]: NAMECALL R1 R1 K11 [0xE4162EED]
@@ -2275,11 +2275,11 @@ L 1:  25 [-]: RETURN R0 0
 ; Max Stack Size:  14
 
        0 [-]: NEWTABLE R0 0 0
-       1 [-]: GETIMPORT R1 1 [nil]
+       1 [-]: GETIMPORT R1 1 [0xCFC01047]
        2 [-]: GETUPVAL R2 0
        3 [-]: CALL R1 1 3  
        4 [-]: FORGPREP_NEXT R1 L3
-L 0:   5 [-]: GETIMPORT R6 3 [nil]
+L 0:   5 [-]: GETIMPORT R6 3 [0xC8802016]
        6 [-]: GETTABLEKS R7 R5 K4 ["bins"]
        7 [-]: CALL R6 1 3  
        8 [-]: FORGPREP_INEXT R6 L2
@@ -2297,9 +2297,9 @@ L 1:   9 [-]: LENGTH R12 R0
       20 [-]: SETTABLE R12 R0 R11
 L 2:  21 [-]: FORGLOOP R6 L1 2 [inext]
 L 3:  22 [-]: FORGLOOP R1 L0 2
-      23 [-]: GETIMPORT R1 16 [nil]
+      23 [-]: GETIMPORT R1 16 ["_T"]
       24 [-]: DUPTABLE R2 21
-      25 [-]: GETIMPORT R3 23 [nil]
+      25 [-]: GETIMPORT R3 23 [0xAE91E43B]
       26 [-]: LOADK R6 K24 ["/Lotus/Language/Menu/"]
       27 [-]: GETUPVAL R8 1
       28 [-]: GETTABLEKS R7 R8 K25 [0x06D055F9]
@@ -2318,7 +2318,7 @@ L 5:  33 [-]: LOADK R9 K26 ["ResourceDrone_SingleExtractorReady"]
       41 [-]: NAMECALL R3 R3 K30 [0x42B04007]
       42 [-]: CALL R3 4 1  
       43 [-]: SETTABLEKS R3 R2 K17 ["TITLE"]
-      44 [-]: GETIMPORT R3 23 [nil]
+      44 [-]: GETIMPORT R3 23 [0xAE91E43B]
       45 [-]: LOADK R5 K31 ["/Lotus/Language/Menu/ResourceDrone_ManifestTip"]
       46 [-]: LOADB R6 0   
       47 [-]: NAMECALL R3 R3 K30 [0x42B04007]
@@ -2328,8 +2328,8 @@ L 5:  33 [-]: LOADK R9 K26 ["ResourceDrone_SingleExtractorReady"]
       51 [-]: SETTABLEKS R3 R2 K19 ["CONFIRM_LABEL"]
       52 [-]: SETTABLEKS R0 R2 K20 ["mITEMS"]
       53 [-]: SETTABLEKS R2 R1 K33 ["Manifest"]
-      54 [-]: GETIMPORT R1 23 [nil]
-      55 [-]: GETIMPORT R3 35 [nil]
+      54 [-]: GETIMPORT R1 23 [0xAE91E43B]
+      55 [-]: GETIMPORT R3 35 [0x0E7E9601]
       56 [-]: NAMECALL R1 R1 K36 [0x1FD6ABD0]
       57 [-]: CALL R1 2 1  
       58 [-]: SETUPVAL R1 3
@@ -2350,7 +2350,7 @@ L 5:  33 [-]: LOADK R9 K26 ["ResourceDrone_SingleExtractorReady"]
 
        0 [-]: NEWTABLE R0 0 0
        1 [-]: SETUPVAL R0 0
-       2 [-]: GETIMPORT R0 1 [nil]
+       2 [-]: GETIMPORT R0 1 [0xCFC01047]
        3 [-]: GETUPVAL R1 1
        4 [-]: CALL R0 1 3  
        5 [-]: FORGPREP_NEXT R0 L1
@@ -2371,14 +2371,14 @@ L 1:   8 [-]: FORGLOOP R0 L0 2
 
        0 [-]: GETUPVAL R1 0
        1 [-]: FASTCALL1 62 R1 L0
-       2 [-]: GETIMPORT R0 1 [nil]
+       2 [-]: GETIMPORT R0 1 [0x7B998233]
        3 [-]: CALL R0 1 1  
 L 0:   4 [-]: JUMPIF R0 L1 
        5 [-]: GETUPVAL R0 1
        6 [-]: JUMPIFNOT R0 L2
 L 1:   7 [-]: RETURN R0 0  
-L 2:   8 [-]: GETIMPORT R0 3 [nil]
-       9 [-]: GETIMPORT R3 5 [nil]
+L 2:   8 [-]: GETIMPORT R0 3 [0x9BA7909F]
+       9 [-]: GETIMPORT R3 5 [0x0032441C]
       10 [-]: GETTABLEKS R2 R3 K6 ["UIMovie_ItemBrowsingMovie"]
       11 [-]: NAMECALL R0 R0 K7 [0x5374B92E]
       12 [-]: CALL R0 2 1  
@@ -2391,7 +2391,7 @@ L 3:  15 [-]: GETUPVAL R0 2
       19 [-]: JUMPIFNOTLT R1 R0 L6
       20 [-]: NEWTABLE R0 0 0
       21 [-]: SETUPVAL R0 4
-      22 [-]: GETIMPORT R0 10 [nil]
+      22 [-]: GETIMPORT R0 10 [0xCFC01047]
       23 [-]: GETUPVAL R1 5
       24 [-]: CALL R0 1 3  
       25 [-]: FORGPREP_NEXT R0 L5
@@ -2446,21 +2446,21 @@ L11:  69 [-]: GETUPVAL R0 13
       73 [-]: JUMPIFNOTLT R1 R0 L12
       74 [-]: GETUPVAL R1 12
       75 [-]: GETTABLEKS R0 R1 K19 [0xF76783E5]
-      76 [-]: GETIMPORT R1 21 [nil]
+      76 [-]: GETIMPORT R1 21 [0xAE91E43B]
       77 [-]: LOADK R2 K22 ["Drone.Info.CollectedRes.Icon"]
-      78 [-]: GETIMPORT R3 24 [nil]
+      78 [-]: GETIMPORT R3 24 [0x76FADE7A]
       79 [-]: LOADN R4 0   
       80 [-]: LOADN R5 0   
       81 [-]: CALL R0 5 0  
       82 [-]: GETUPVAL R1 12
       83 [-]: GETTABLEKS R0 R1 K25 [0x659D451F]
-      84 [-]: GETIMPORT R1 27 [nil]
+      84 [-]: GETIMPORT R1 27 [0x897AFBDB]
       85 [-]: CALL R0 1 0  
       86 [-]: JUMP L13
     
 L12:  87 [-]: GETUPVAL R1 12
       88 [-]: GETTABLEKS R0 R1 K25 [0x659D451F]
-      89 [-]: GETIMPORT R1 29 [nil]
+      89 [-]: GETIMPORT R1 29 [0x3CE58BD6]
       90 [-]: CALL R0 1 0  
 L13:  91 [-]: GETUPVAL R0 0
       92 [-]: GETUPVAL R2 2
@@ -2502,12 +2502,12 @@ L16: 127 [-]: GETUPVAL R3 15
      128 [-]: CALL R3 0 0  
      129 [-]: GETUPVAL R4 12
      130 [-]: GETTABLEKS R3 R4 K25 [0x659D451F]
-     131 [-]: GETIMPORT R5 5 [nil]
+     131 [-]: GETIMPORT R5 5 [0x0032441C]
      132 [-]: GETTABLEKS R4 R5 K40 ["UISound_Select"]
      133 [-]: CALL R3 1 0  
      134 [-]: GETUPVAL R4 12
      135 [-]: GETTABLEKS R3 R4 K25 [0x659D451F]
-     136 [-]: GETIMPORT R5 5 [nil]
+     136 [-]: GETIMPORT R5 5 [0x0032441C]
      137 [-]: GETTABLEKS R4 R5 K41 ["UISound_ButtonSelect"]
      138 [-]: CALL R3 1 0  
 L17: 139 [-]: RETURN R0 0  
@@ -2525,7 +2525,7 @@ L17: 139 [-]: RETURN R0 0
        2 [-]: GETUPVAL R3 0
        3 [-]: FASTCALL2 18 R3 R1 L0
        4 [-]: MOVE R4 R1   
-       5 [-]: GETIMPORT R2 3 [nil]
+       5 [-]: GETIMPORT R2 3 [0xB62ECFE0]
        6 [-]: CALL R2 2 1  
 L 0:   7 [-]: SETUPVAL R2 0
        8 [-]: LOADB R2 0   
@@ -2538,7 +2538,7 @@ L 1:  13 [-]: MOVE R8 R5
       15 [-]: CALL R6 2 1  
       16 [-]: GETUPVAL R8 1
       17 [-]: GETTABLEKS R7 R8 K5 [0x08681F50]
-      18 [-]: GETIMPORT R8 7 [nil]
+      18 [-]: GETIMPORT R8 7 [0xAE91E43B]
       19 [-]: MOVE R9 R6   
       20 [-]: LOADNIL R10  
       21 [-]: LOADNIL R11  
@@ -2548,56 +2548,56 @@ L 1:  13 [-]: MOVE R8 R5
       25 [-]: LOADK R9 K8 ["Drone.Resources.Res"]
       26 [-]: MOVE R10 R5  
       27 [-]: CONCAT R8 R9 R10
-      28 [-]: GETIMPORT R9 7 [nil]
+      28 [-]: GETIMPORT R9 7 [0xAE91E43B]
       29 [-]: MOVE R11 R8  
       30 [-]: NAMECALL R9 R9 K9 [0xA7EC3E8A]
       31 [-]: CALL R9 2 1  
       32 [-]: JUMPIF R9 L2 
       33 [-]: LOADB R2 1   
-      34 [-]: GETIMPORT R9 11 [nil]
-      35 [-]: GETIMPORT R10 7 [nil]
+      34 [-]: GETIMPORT R9 11 [0x38F10E85]
+      35 [-]: GETIMPORT R10 7 [0xAE91E43B]
       36 [-]: LOADK R11 K12 ["Drone.Resources.Res1.duplicateMovieClip"]
       37 [-]: LOADK R13 K13 ["Res"]
       38 [-]: MOVE R14 R5  
       39 [-]: CONCAT R12 R13 R14
       40 [-]: MOVE R13 R5  
       41 [-]: CALL R9 4 0  
-      42 [-]: GETIMPORT R9 7 [nil]
+      42 [-]: GETIMPORT R9 7 [0xAE91E43B]
       43 [-]: MOVE R12 R8  
       44 [-]: LOADK R13 K14 [".Name"]
       45 [-]: CONCAT R11 R12 R13
-      46 [-]: GETIMPORT R12 16 [nil]
+      46 [-]: GETIMPORT R12 16 [0x565A3913]
       47 [-]: NAMECALL R9 R9 K17 [0xD5181643]
       48 [-]: CALL R9 3 0  
-      49 [-]: GETIMPORT R9 7 [nil]
+      49 [-]: GETIMPORT R9 7 [0xAE91E43B]
       50 [-]: MOVE R12 R8  
       51 [-]: LOADK R13 K18 [".Bg"]
       52 [-]: CONCAT R11 R12 R13
-      53 [-]: GETIMPORT R12 20 [nil]
+      53 [-]: GETIMPORT R12 20 [0x03C431FF]
       54 [-]: NAMECALL R9 R9 K17 [0xD5181643]
       55 [-]: CALL R9 3 0  
-      56 [-]: GETIMPORT R9 7 [nil]
+      56 [-]: GETIMPORT R9 7 [0xAE91E43B]
       57 [-]: LOADK R11 K21 ["Drone.Resources.Res1"]
       58 [-]: LOADN R12 0  
       59 [-]: NAMECALL R9 R9 K22 [0x91A24E4B]
       60 [-]: CALL R9 3 1  
-      61 [-]: GETIMPORT R10 7 [nil]
+      61 [-]: GETIMPORT R10 7 [0xAE91E43B]
       62 [-]: LOADK R12 K21 ["Drone.Resources.Res1"]
       63 [-]: LOADN R13 1  
       64 [-]: NAMECALL R10 R10 K22 [0x91A24E4B]
       65 [-]: CALL R10 3 1 
-      66 [-]: GETIMPORT R11 7 [nil]
+      66 [-]: GETIMPORT R11 7 [0xAE91E43B]
       67 [-]: LOADK R13 K23 ["Drone.Resources.Res1.Bg"]
       68 [-]: LOADN R14 13 
       69 [-]: NAMECALL R11 R11 K22 [0x91A24E4B]
       70 [-]: CALL R11 3 1 
-      71 [-]: GETIMPORT R12 7 [nil]
+      71 [-]: GETIMPORT R12 7 [0xAE91E43B]
       72 [-]: MOVE R14 R8  
       73 [-]: LOADN R15 0  
       74 [-]: MOVE R16 R9  
       75 [-]: NAMECALL R12 R12 K24 [0x67BC869F]
       76 [-]: CALL R12 4 0 
-      77 [-]: GETIMPORT R12 7 [nil]
+      77 [-]: GETIMPORT R12 7 [0xAE91E43B]
       78 [-]: MOVE R14 R8  
       79 [-]: LOADN R15 1  
       80 [-]: ADD R18 R10 R11
@@ -2605,15 +2605,15 @@ L 1:  13 [-]: MOVE R8 R5
       82 [-]: SUB R16 R17 R11
       83 [-]: NAMECALL R12 R12 K24 [0x67BC869F]
       84 [-]: CALL R12 4 0 
-L 2:  85 [-]: GETIMPORT R9 7 [nil]
+L 2:  85 [-]: GETIMPORT R9 7 [0xAE91E43B]
       86 [-]: MOVE R12 R8  
       87 [-]: LOADK R13 K25 [".Icon"]
       88 [-]: CONCAT R11 R12 R13
       89 [-]: GETTABLEKS R12 R7 K26 ["Icon"]
-      90 [-]: GETIMPORT R13 28 [nil]
+      90 [-]: GETIMPORT R13 28 [0x1B9BE1D9]
       91 [-]: NAMECALL R9 R9 K29 [0xEF99134F]
       92 [-]: CALL R9 4 0  
-      93 [-]: GETIMPORT R9 7 [nil]
+      93 [-]: GETIMPORT R9 7 [0xAE91E43B]
       94 [-]: MOVE R11 R8  
       95 [-]: LOADK R12 K26 ["Icon"]
       96 [-]: LOADN R13 12 
@@ -2625,14 +2625,14 @@ L 2:  85 [-]: GETIMPORT R9 7 [nil]
      102 [-]: CALL R14 3 -1
      103 [-]: NAMECALL R9 R9 K32 [0xF64B7262]
      104 [-]: CALL R9 -1 0 
-     105 [-]: GETIMPORT R9 7 [nil]
+     105 [-]: GETIMPORT R9 7 [0xAE91E43B]
      106 [-]: MOVE R11 R8  
      107 [-]: LOADK R12 K33 ["Name"]
      108 [-]: LOADN R13 38 
      109 [-]: LOADK R14 K34 ["center"]
      110 [-]: NAMECALL R9 R9 K35 [0xE261AA96]
      111 [-]: CALL R9 5 0  
-     112 [-]: GETIMPORT R9 7 [nil]
+     112 [-]: GETIMPORT R9 7 [0xAE91E43B]
      113 [-]: MOVE R11 R8  
      114 [-]: LOADK R12 K33 ["Name"]
      115 [-]: LOADN R13 29 
@@ -2643,13 +2643,13 @@ L 2:  85 [-]: GETIMPORT R9 7 [nil]
 L 3: 120 [-]: ADDK R6 R1 K36 [1]
      121 [-]: FASTCALL2K 18 R6 K37 L4 [2]
      122 [-]: LOADK R7 K37 [2]
-     123 [-]: GETIMPORT R5 3 [nil]
+     123 [-]: GETIMPORT R5 3 [0xB62ECFE0]
      124 [-]: CALL R5 2 1  
 L 4: 125 [-]: GETUPVAL R3 0
      126 [-]: LOADN R4 1   
      127 [-]: FORNPREP R3 L6
-L 5: 128 [-]: GETIMPORT R6 11 [nil]
-     129 [-]: GETIMPORT R7 7 [nil]
+L 5: 128 [-]: GETIMPORT R6 11 [0x38F10E85]
+     129 [-]: GETIMPORT R7 7 [0xAE91E43B]
      130 [-]: LOADK R9 K8 ["Drone.Resources.Res"]
      131 [-]: MOVE R10 R5  
      132 [-]: LOADK R11 K38 [".removeMovieClip"]
@@ -2671,14 +2671,14 @@ L 7: 139 [-]: RETURN R0 0
 
        0 [-]: LOADB R0 1   
        1 [-]: SETUPVAL R0 0
-       2 [-]: GETIMPORT R0 1 [nil]
+       2 [-]: GETIMPORT R0 1 [0xAE91E43B]
        3 [-]: LOADK R2 K2 ["Drone"]
        4 [-]: LOADN R3 11  
        5 [-]: LOADB R4 1   
        6 [-]: NAMECALL R0 R0 K3 [0xAADE900E]
        7 [-]: CALL R0 4 0  
-       8 [-]: GETIMPORT R0 5 [nil]
-       9 [-]: GETIMPORT R1 1 [nil]
+       8 [-]: GETIMPORT R0 5 [0x25312C9B]
+       9 [-]: GETIMPORT R1 1 [0xAE91E43B]
       10 [-]: LOADK R2 K2 ["Drone"]
       11 [-]: LOADN R3 2   
       12 [-]: NEWTABLE R4 0 1
@@ -2705,17 +2705,17 @@ L 7: 139 [-]: RETURN R0 0
 
        0 [-]: GETUPVAL R3 0
        1 [-]: FASTCALL1 62 R3 L0
-       2 [-]: GETIMPORT R2 1 [nil]
+       2 [-]: GETIMPORT R2 1 [0x7B998233]
        3 [-]: CALL R2 1 1  
 L 0:   4 [-]: JUMPIF R2 L1 
        5 [-]: JUMPIF R1 L2 
        6 [-]: GETUPVAL R2 1
-       7 [-]: GETIMPORT R3 3 [nil]
+       7 [-]: GETIMPORT R3 3 [0x03F57322]
        8 [-]: MOVE R4 R0   
        9 [-]: CALL R3 1 1  
       10 [-]: JUMPIFNOTEQ R2 R3 L2
 L 1:  11 [-]: RETURN R0 0  
-L 2:  12 [-]: GETIMPORT R2 5 [nil]
+L 2:  12 [-]: GETIMPORT R2 5 [0xAE91E43B]
       13 [-]: LOADK R4 K6 ["Drone.Resources"]
       14 [-]: LOADN R5 11  
       15 [-]: LOADB R6 1   
@@ -2723,7 +2723,7 @@ L 2:  12 [-]: GETIMPORT R2 5 [nil]
       17 [-]: CALL R2 4 0  
       18 [-]: GETUPVAL R2 2
       19 [-]: CALL R2 0 0  
-      20 [-]: GETIMPORT R2 3 [nil]
+      20 [-]: GETIMPORT R2 3 [0x03F57322]
       21 [-]: MOVE R3 R0   
       22 [-]: CALL R2 1 1  
       23 [-]: SETUPVAL R2 1
@@ -2750,7 +2750,7 @@ L 4:  34 [-]: LOADB R3 0
       44 [-]: GETTABLE R5 R6 R7
       45 [-]: FASTCALL1 62 R5 L5
       46 [-]: MOVE R7 R5   
-      47 [-]: GETIMPORT R6 1 [nil]
+      47 [-]: GETIMPORT R6 1 [0x7B998233]
       48 [-]: CALL R6 1 1  
 L 5:  49 [-]: JUMPIF R6 L8 
       50 [-]: GETUPVAL R7 4
@@ -2774,7 +2774,7 @@ L 8:  67 [-]: JUMPIFNOT R2 L12
       68 [-]: JUMPIFNOT R3 L12
       69 [-]: GETUPVAL R5 0
       70 [-]: FASTCALL1 62 R5 L9
-      71 [-]: GETIMPORT R4 1 [nil]
+      71 [-]: GETIMPORT R4 1 [0x7B998233]
       72 [-]: CALL R4 1 1  
 L 9:  73 [-]: JUMPIFNOT R4 L10
       74 [-]: RETURN R0 0  
@@ -2801,8 +2801,8 @@ L12:  84 [-]: GETUPVAL R4 9
 
        0 [-]: LOADB R0 0   
        1 [-]: SETUPVAL R0 0
-       2 [-]: GETIMPORT R0 1 [nil]
-       3 [-]: GETIMPORT R1 3 [nil]
+       2 [-]: GETIMPORT R0 1 [0x25312C9B]
+       3 [-]: GETIMPORT R1 3 [0xAE91E43B]
        4 [-]: LOADK R2 K4 ["Drone"]
        5 [-]: LOADN R3 2   
        6 [-]: NEWTABLE R4 0 1
@@ -2832,14 +2832,14 @@ L12:  84 [-]: GETUPVAL R4 9
        0 [-]: GETUPVAL R0 0
        1 [-]: JUMPXEQKN R0 K0 L0 NOT [-1]
        2 [-]: RETURN R0 0  
-L 0:   3 [-]: GETIMPORT R0 2 [nil]
+L 0:   3 [-]: GETIMPORT R0 2 [0xAE91E43B]
        4 [-]: LOADK R2 K3 ["Drone.Resources"]
        5 [-]: LOADN R3 11  
        6 [-]: LOADB R4 0   
        7 [-]: NAMECALL R0 R0 K4 [0xAADE900E]
        8 [-]: CALL R0 4 0  
-       9 [-]: GETIMPORT R0 6 [nil]
-      10 [-]: GETIMPORT R1 2 [nil]
+       9 [-]: GETIMPORT R0 6 [0x38F10E85]
+      10 [-]: GETIMPORT R1 2 [0xAE91E43B]
       11 [-]: LOADK R2 K7 ["Drone.DroneIcon.Progress.gotoAndStop"]
       12 [-]: LOADN R3 1001
       13 [-]: CALL R0 3 0  
@@ -2910,7 +2910,7 @@ L 1:  25 [-]: GETUPVAL R0 5
 L 0:   4 [-]: RETURN R0 0  
 L 1:   5 [-]: GETUPVAL R1 1
        6 [-]: FASTCALL1 62 R1 L2
-       7 [-]: GETIMPORT R0 2 [nil]
+       7 [-]: GETIMPORT R0 2 [0x7B998233]
        8 [-]: CALL R0 1 1  
 L 2:   9 [-]: JUMPIFNOT R0 L3
       10 [-]: RETURN R0 0  
@@ -2929,14 +2929,14 @@ L 3:  11 [-]: GETUPVAL R2 2
       23 [-]: DIV R3 R4 R0 
       24 [-]: MULK R2 R3 K7 [100]
       25 [-]: CALL R1 1 1  
-      26 [-]: GETIMPORT R5 9 [nil]
+      26 [-]: GETIMPORT R5 9 [0x64FB1586]
       27 [-]: MOVE R6 R1   
       28 [-]: CALL R5 1 1  
       29 [-]: MOVE R3 R5   
       30 [-]: LOADK R4 K10 ["%"]
       31 [-]: CONCAT R2 R3 R4
-      32 [-]: GETIMPORT R3 12 [nil]
-      33 [-]: GETIMPORT R4 14 [nil]
+      32 [-]: GETIMPORT R3 12 ["_T"]
+      33 [-]: GETIMPORT R4 14 [0xAE91E43B]
       34 [-]: MOVE R6 R2   
       35 [-]: LOADB R7 0   
       36 [-]: NAMECALL R4 R4 K15 [0x42B04007]
@@ -2952,7 +2952,7 @@ L 4:  39 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 ["_T"]
        1 [-]: LOADNIL R1   
        2 [-]: SETTABLEKS R1 R0 K2 ["gToolTip"]
        3 [-]: RETURN R0 0  
@@ -2974,7 +2974,7 @@ L 4:  39 [-]: RETURN R0 0
        6 [-]: JUMPIF R0 L1 
 L 0:   7 [-]: LOADN R0 0   
        8 [-]: RETURN R0 1  
-L 1:   9 [-]: GETIMPORT R1 4 [nil]
+L 1:   9 [-]: GETIMPORT R1 4 [0xAE91E43B]
       10 [-]: LOADK R3 K5 ["Drone.Resources"]
       11 [-]: LOADN R4 13  
       12 [-]: NAMECALL R1 R1 K6 [0x91A24E4B]
@@ -3004,7 +3004,7 @@ L 0:   6 [-]: LOADK R1 K0 [0.10000000000000001]
 L 1:  11 [-]: GETUPVAL R5 2
       12 [-]: GETTABLEKS R4 R5 K2 ["mIsVisible"]
       13 [-]: JUMPIFNOT R4 L2
-      14 [-]: GETIMPORT R5 5 [nil]
+      14 [-]: GETIMPORT R5 5 [0xAE91E43B]
       15 [-]: LOADK R7 K6 ["Drone.Info.Btn"]
       16 [-]: LOADN R8 0   
       17 [-]: NAMECALL R5 R5 K7 [0x91A24E4B]
@@ -3013,7 +3013,7 @@ L 1:  11 [-]: GETUPVAL R5 2
       20 [-]: ADDK R3 R4 K3 [40]
       21 [-]: JUMP L3
      
-L 2:  22 [-]: GETIMPORT R5 5 [nil]
+L 2:  22 [-]: GETIMPORT R5 5 [0xAE91E43B]
       23 [-]: LOADK R7 K9 ["Drone.Info.Hint"]
       24 [-]: LOADN R8 0   
       25 [-]: NAMECALL R5 R5 K7 [0x91A24E4B]
@@ -3022,14 +3022,14 @@ L 2:  22 [-]: GETIMPORT R5 5 [nil]
       28 [-]: ADDK R3 R4 K8 [10]
 L 3:  29 [-]: GETUPVAL R4 3
       30 [-]: CALL R4 0 2  
-      31 [-]: GETIMPORT R6 5 [nil]
+      31 [-]: GETIMPORT R6 5 [0xAE91E43B]
       32 [-]: LOADK R8 K10 ["Drone.Info.Info"]
       33 [-]: LOADN R9 0   
       34 [-]: MINUS R11 R3 
       35 [-]: ADDK R10 R11 K11 [9]
       36 [-]: NAMECALL R6 R6 K12 [0x67BC869F]
       37 [-]: CALL R6 4 0  
-      38 [-]: GETIMPORT R6 5 [nil]
+      38 [-]: GETIMPORT R6 5 [0xAE91E43B]
       39 [-]: LOADK R8 K10 ["Drone.Info.Info"]
       40 [-]: LOADN R9 12  
       41 [-]: SUBK R10 R3 K3 [40]
@@ -3042,45 +3042,45 @@ L 3:  29 [-]: GETUPVAL R4 3
       48 [-]: SETUPVAL R6 4
       49 [-]: GETUPVAL R6 6
       50 [-]: CALL R6 0 0  
-      51 [-]: GETIMPORT R6 5 [nil]
+      51 [-]: GETIMPORT R6 5 [0xAE91E43B]
       52 [-]: LOADK R8 K13 ["Drone.Info"]
       53 [-]: LOADN R9 11  
       54 [-]: LOADB R10 1  
       55 [-]: NAMECALL R6 R6 K14 [0xAADE900E]
       56 [-]: CALL R6 4 0  
-      57 [-]: GETIMPORT R6 5 [nil]
+      57 [-]: GETIMPORT R6 5 [0xAE91E43B]
       58 [-]: LOADK R8 K15 ["Drone.ToggleCallout"]
       59 [-]: LOADN R9 11  
       60 [-]: LOADB R10 0  
       61 [-]: NAMECALL R6 R6 K14 [0xAADE900E]
       62 [-]: CALL R6 4 0  
-      63 [-]: GETIMPORT R6 5 [nil]
+      63 [-]: GETIMPORT R6 5 [0xAE91E43B]
       64 [-]: LOADK R8 K16 ["Drone.Resources"]
       65 [-]: LOADN R9 0   
       66 [-]: MINUS R10 R3 
       67 [-]: NAMECALL R6 R6 K12 [0x67BC869F]
       68 [-]: CALL R6 4 0  
-      69 [-]: GETIMPORT R6 5 [nil]
+      69 [-]: GETIMPORT R6 5 [0xAE91E43B]
       70 [-]: LOADK R8 K16 ["Drone.Resources"]
       71 [-]: LOADN R9 1   
       72 [-]: GETUPVAL R10 4
       73 [-]: NAMECALL R6 R6 K12 [0x67BC869F]
       74 [-]: CALL R6 4 0  
-      75 [-]: GETIMPORT R6 5 [nil]
+      75 [-]: GETIMPORT R6 5 [0xAE91E43B]
       76 [-]: LOADK R8 K17 ["Drone.Info.CollectedRes"]
       77 [-]: LOADN R9 0   
       78 [-]: MINUS R11 R3 
       79 [-]: ADDK R10 R11 K18 [8]
       80 [-]: NAMECALL R6 R6 K12 [0x67BC869F]
       81 [-]: CALL R6 4 0  
-      82 [-]: GETIMPORT R6 5 [nil]
+      82 [-]: GETIMPORT R6 5 [0xAE91E43B]
       83 [-]: LOADK R8 K19 ["Drone.Info.Underline"]
       84 [-]: LOADN R9 0   
       85 [-]: MINUS R11 R3 
       86 [-]: ADDK R10 R11 K18 [8]
       87 [-]: NAMECALL R6 R6 K12 [0x67BC869F]
       88 [-]: CALL R6 4 0  
-      89 [-]: GETIMPORT R6 5 [nil]
+      89 [-]: GETIMPORT R6 5 [0xAE91E43B]
       90 [-]: LOADK R8 K19 ["Drone.Info.Underline"]
       91 [-]: LOADN R9 1   
       92 [-]: GETUPVAL R10 4
@@ -3088,12 +3088,12 @@ L 3:  29 [-]: GETUPVAL R4 3
       94 [-]: CALL R6 4 0  
       95 [-]: GETUPVAL R7 7
       96 [-]: GETTABLEKS R6 R7 K20 [0x00FA676F]
-      97 [-]: GETIMPORT R7 5 [nil]
+      97 [-]: GETIMPORT R7 5 [0xAE91E43B]
       98 [-]: LOADK R8 K19 ["Drone.Info.Underline"]
       99 [-]: SUBK R9 R3 K21 [16]
      100 [-]: CALL R6 3 0  
-     101 [-]: GETIMPORT R6 23 [nil]
-     102 [-]: GETIMPORT R7 5 [nil]
+     101 [-]: GETIMPORT R6 23 [0x25312C9B]
+     102 [-]: GETIMPORT R7 5 [0xAE91E43B]
      103 [-]: LOADK R8 K13 ["Drone.Info"]
      104 [-]: LOADN R9 8   
      105 [-]: NEWTABLE R10 0 1
@@ -3104,8 +3104,8 @@ L 3:  29 [-]: GETUPVAL R4 3
      110 [-]: SETLIST R11 R12 1 [1]
      111 [-]: MOVE R12 R1  
      112 [-]: CALL R6 6 0  
-     113 [-]: GETIMPORT R6 23 [nil]
-     114 [-]: GETIMPORT R7 5 [nil]
+     113 [-]: GETIMPORT R6 23 [0x25312C9B]
+     114 [-]: GETIMPORT R7 5 [0xAE91E43B]
      115 [-]: LOADK R8 K24 ["Drone.Blurer"]
      116 [-]: LOADN R9 8   
      117 [-]: NEWTABLE R10 0 1
@@ -3116,8 +3116,8 @@ L 3:  29 [-]: GETUPVAL R4 3
      122 [-]: SETLIST R11 R12 1 [1]
      123 [-]: MOVE R12 R1  
      124 [-]: CALL R6 6 0  
-     125 [-]: GETIMPORT R6 23 [nil]
-     126 [-]: GETIMPORT R7 5 [nil]
+     125 [-]: GETIMPORT R6 23 [0x25312C9B]
+     126 [-]: GETIMPORT R7 5 [0xAE91E43B]
      127 [-]: LOADK R8 K25 ["Drone.Bg"]
      128 [-]: LOADN R9 8   
      129 [-]: NEWTABLE R10 0 1
@@ -3138,7 +3138,7 @@ L 3:  29 [-]: GETUPVAL R4 3
      144 [-]: CALL R6 8 0  
      145 [-]: GETUPVAL R7 11
      146 [-]: GETTABLEKS R6 R7 K26 [0x659D451F]
-     147 [-]: GETIMPORT R8 28 [nil]
+     147 [-]: GETIMPORT R8 28 [0x0032441C]
      148 [-]: GETTABLEKS R7 R8 K29 ["UISound_ItemTip"]
      149 [-]: CALL R6 1 0  
      150 [-]: LOADB R6 1   
@@ -3156,7 +3156,7 @@ L 3:  29 [-]: GETUPVAL R4 3
 ; Is_vararg:       0
 ; Max Stack Size:  12
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 [0xAE91E43B]
        1 [-]: LOADK R2 K2 ["Drone.Bg"]
        2 [-]: LOADN R3 12  
        3 [-]: NAMECALL R0 R0 K3 [0x91A24E4B]
@@ -3166,8 +3166,8 @@ L 3:  29 [-]: GETUPVAL R4 3
        7 [-]: GETUPVAL R2 1
        8 [-]: LOADB R3 1   
        9 [-]: CALL R2 1 1  
-      10 [-]: GETIMPORT R3 5 [nil]
-      11 [-]: GETIMPORT R4 1 [nil]
+      10 [-]: GETIMPORT R3 5 [0x25312C9B]
+      11 [-]: GETIMPORT R4 1 [0xAE91E43B]
       12 [-]: LOADK R5 K6 ["Drone.Info.Underline"]
       13 [-]: LOADN R6 8   
       14 [-]: NEWTABLE R7 0 1
@@ -3178,8 +3178,8 @@ L 3:  29 [-]: GETUPVAL R4 3
       19 [-]: SETLIST R8 R9 1 [1]
       20 [-]: LOADK R9 K7 [0.14999999999999999]
       21 [-]: CALL R3 6 0  
-      22 [-]: GETIMPORT R3 5 [nil]
-      23 [-]: GETIMPORT R4 1 [nil]
+      22 [-]: GETIMPORT R3 5 [0x25312C9B]
+      23 [-]: GETIMPORT R4 1 [0xAE91E43B]
       24 [-]: LOADK R5 K8 ["Drone.Resources"]
       25 [-]: LOADN R6 8   
       26 [-]: NEWTABLE R7 0 1
@@ -3190,8 +3190,8 @@ L 3:  29 [-]: GETUPVAL R4 3
       31 [-]: SETLIST R8 R9 1 [1]
       32 [-]: LOADK R9 K7 [0.14999999999999999]
       33 [-]: CALL R3 6 0  
-      34 [-]: GETIMPORT R3 5 [nil]
-      35 [-]: GETIMPORT R4 1 [nil]
+      34 [-]: GETIMPORT R3 5 [0x25312C9B]
+      35 [-]: GETIMPORT R4 1 [0xAE91E43B]
       36 [-]: LOADK R5 K9 ["Drone.Blurer"]
       37 [-]: LOADN R6 8   
       38 [-]: NEWTABLE R7 0 1
@@ -3202,8 +3202,8 @@ L 3:  29 [-]: GETUPVAL R4 3
       43 [-]: SETLIST R8 R9 1 [1]
       44 [-]: LOADK R9 K7 [0.14999999999999999]
       45 [-]: CALL R3 6 0  
-      46 [-]: GETIMPORT R3 5 [nil]
-      47 [-]: GETIMPORT R4 1 [nil]
+      46 [-]: GETIMPORT R3 5 [0x25312C9B]
+      47 [-]: GETIMPORT R4 1 [0xAE91E43B]
       48 [-]: LOADK R5 K2 ["Drone.Bg"]
       49 [-]: LOADN R6 8   
       50 [-]: NEWTABLE R7 0 1
@@ -3217,10 +3217,10 @@ L 3:  29 [-]: GETUPVAL R4 3
       58 [-]: NEWCLOSURE R11 P0
       59 [-]: MOVE R0 R0   
       60 [-]: CALL R3 8 0  
-      61 [-]: GETIMPORT R3 1 [nil]
+      61 [-]: GETIMPORT R3 1 [0xAE91E43B]
       62 [-]: LOADK R5 K10 ["Drone.ToggleCallout"]
       63 [-]: LOADN R6 11  
-      64 [-]: GETIMPORT R7 13 [nil]
+      64 [-]: GETIMPORT R7 13 [0x1467D5F4]
       65 [-]: CALL R7 0 -1 
       66 [-]: NAMECALL R3 R3 K14 [0xAADE900E]
       67 [-]: CALL R3 -1 0 
@@ -3278,7 +3278,7 @@ L 0:   4 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  4
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 [0xAE91E43B]
        1 [-]: LOADK R2 K2 ["_root"]
        2 [-]: LOADN R3 25  
        3 [-]: NAMECALL R0 R0 K3 [0x91A24E4B]
@@ -3326,15 +3326,15 @@ L 0:   9 [-]: RETURN R0 0
        2 [-]: GETUPVAL R0 0
        3 [-]: NAMECALL R0 R0 K0 [0x71E9AC81]
        4 [-]: CALL R0 1 0  
-L 0:   5 [-]: GETIMPORT R0 2 [nil]
+L 0:   5 [-]: GETIMPORT R0 2 [0xAE91E43B]
        6 [-]: LOADK R2 K3 ["Drone.ToggleCallout.text"]
        7 [-]: LOADK R3 K4 ["<MENU_RTHUMB>"]
        8 [-]: NAMECALL R0 R0 K5 [0x20B98DB3]
        9 [-]: CALL R0 3 0  
-      10 [-]: GETIMPORT R0 2 [nil]
+      10 [-]: GETIMPORT R0 2 [0xAE91E43B]
       11 [-]: LOADK R2 K6 ["Drone.ToggleCallout"]
       12 [-]: LOADN R3 11  
-      13 [-]: GETIMPORT R4 9 [nil]
+      13 [-]: GETIMPORT R4 9 [0x1467D5F4]
       14 [-]: CALL R4 0 1  
       15 [-]: JUMPIFNOT R4 L1
       16 [-]: GETUPVAL R5 1
@@ -3380,10 +3380,10 @@ L 1:  18 [-]: NAMECALL R0 R0 K10 [0xAADE900E]
        2 [-]: SETUPVAL R1 0
        3 [-]: GETUPVAL R2 1
        4 [-]: FASTCALL1 62 R2 L0
-       5 [-]: GETIMPORT R1 1 [nil]
+       5 [-]: GETIMPORT R1 1 [0x7B998233]
        6 [-]: CALL R1 1 1  
 L 0:   7 [-]: JUMPIF R1 L9 
-       8 [-]: GETIMPORT R1 3 [nil]
+       8 [-]: GETIMPORT R1 3 [0x9BA7909F]
        9 [-]: LOADK R3 K4 ["Lotus.ResourceDroneDebugSpeed"]
       10 [-]: NAMECALL R1 R1 K5 [0xBF9494FC]
       11 [-]: CALL R1 2 1  
@@ -3405,7 +3405,7 @@ L 1:  17 [-]: GETUPVAL R7 2
       27 [-]: CALL R8 3 1  
       28 [-]: MULK R7 R8 K7 [60]
       29 [-]: MULK R6 R7 K7 [60]
-      30 [-]: GETIMPORT R10 13 [nil]
+      30 [-]: GETIMPORT R10 13 [0xC6FA2EBA]
       31 [-]: GETUPVAL R13 2
       32 [-]: GETTABLE R12 R13 R4
       33 [-]: GETTABLEKS R11 R12 K14 ["StartTime"]
@@ -3424,7 +3424,7 @@ L 3:  41 [-]: JUMPIFNOT R7 L8
       46 [-]: GETUPVAL R11 4
       47 [-]: GETTABLE R10 R11 R8
       48 [-]: FASTCALL1 62 R10 L4
-      49 [-]: GETIMPORT R9 1 [nil]
+      49 [-]: GETIMPORT R9 1 [0x7B998233]
       50 [-]: CALL R9 1 1  
 L 4:  51 [-]: JUMPIFNOT R9 L8
       52 [-]: GETUPVAL R9 4
@@ -3434,7 +3434,7 @@ L 4:  51 [-]: JUMPIFNOT R9 L8
       56 [-]: GETTABLE R11 R12 R8
       57 [-]: GETTABLEKS R10 R11 K17 ["bins"]
       58 [-]: FASTCALL1 62 R10 L5
-      59 [-]: GETIMPORT R9 1 [nil]
+      59 [-]: GETIMPORT R9 1 [0x7B998233]
       60 [-]: CALL R9 1 1  
 L 5:  61 [-]: JUMPIFNOT R9 L6
       62 [-]: GETUPVAL R10 4
@@ -3453,7 +3453,7 @@ L 7:  73 [-]: MOVE R15 R12
       75 [-]: CALL R13 2 1 
       76 [-]: GETUPVAL R15 5
       77 [-]: GETTABLEKS R14 R15 K20 [0x4EEC6D11]
-      78 [-]: GETIMPORT R15 22 [nil]
+      78 [-]: GETIMPORT R15 22 [0xAE91E43B]
       79 [-]: MOVE R16 R13 
       80 [-]: LOADNIL R17  
       81 [-]: LOADB R18 1  
@@ -3492,7 +3492,7 @@ L10: 111 [-]: GETUPVAL R1 0
      114 [-]: CALL R1 0 0  
      115 [-]: RETURN R0 0  
 L11: 116 [-]: GETUPVAL R1 10
-     117 [-]: GETIMPORT R3 22 [nil]
+     117 [-]: GETIMPORT R3 22 [0xAE91E43B]
      118 [-]: LOADK R6 K34 ["/Lotus/Language/Menu/"]
      119 [-]: GETUPVAL R8 3
      120 [-]: GETTABLEKS R7 R8 K8 [0x06D055F9]
@@ -3522,9 +3522,9 @@ L14: 137 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  23
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 [0xB693B6C1]
        1 [-]: CALL R0 0 1  
-       2 [-]: GETIMPORT R1 3 [nil]
+       2 [-]: GETIMPORT R1 3 [0xAE91E43B]
        3 [-]: MOVE R3 R0   
        4 [-]: NAMECALL R1 R1 K4 [0x8A8C8D5A]
        5 [-]: CALL R1 2 0  
@@ -3542,16 +3542,16 @@ L 0:  16 [-]: GETUPVAL R1 2
       17 [-]: CALL R1 0 0  
       18 [-]: GETUPVAL R2 3
       19 [-]: FASTCALL1 62 R2 L1
-      20 [-]: GETIMPORT R1 7 [nil]
+      20 [-]: GETIMPORT R1 7 [0x7B998233]
       21 [-]: CALL R1 1 1  
 L 1:  22 [-]: JUMPIFNOT R1 L2
-      23 [-]: GETIMPORT R1 3 [nil]
+      23 [-]: GETIMPORT R1 3 [0xAE91E43B]
       24 [-]: NAMECALL R1 R1 K8 [0x33ABEE92]
       25 [-]: CALL R1 1 1  
       26 [-]: SETUPVAL R1 3
 L 2:  27 [-]: GETUPVAL R3 3
       28 [-]: FASTCALL1 62 R3 L3
-      29 [-]: GETIMPORT R2 7 [nil]
+      29 [-]: GETIMPORT R2 7 [0x7B998233]
       30 [-]: CALL R2 1 1  
 L 3:  31 [-]: NOT R1 R2    
       32 [-]: JUMPIFNOT R1 L5
@@ -3560,22 +3560,22 @@ L 3:  31 [-]: NOT R1 R2
       35 [-]: CALL R1 1 1  
       36 [-]: JUMPIFNOT R1 L5
       37 [-]: GETUPVAL R2 3
-      38 [-]: GETIMPORT R3 11 [nil]
+      38 [-]: GETIMPORT R3 11 [0x9BA7909F]
       39 [-]: NAMECALL R3 R3 K12 [0xC12C4F71]
       40 [-]: CALL R3 1 1  
       41 [-]: JUMPIFEQ R2 R3 L4
       42 [-]: LOADB R1 0 +1
 L 4:  43 [-]: LOADB R1 1   
-L 5:  44 [-]: GETIMPORT R3 14 [nil]
+L 5:  44 [-]: GETIMPORT R3 14 [0x0032441C]
       45 [-]: GETTABLEKS R2 R3 K15 ["StalkerMode"]
       46 [-]: JUMPIF R2 L6 
-      47 [-]: GETIMPORT R2 18 [nil]
-L 6:  48 [-]: GETIMPORT R3 20 [nil]
-      49 [-]: GETIMPORT R5 22 [nil]
+      47 [-]: GETIMPORT R2 18 ["WareframeChallenge"]
+L 6:  48 [-]: GETIMPORT R3 20 ["TopMenuOpen"]
+      49 [-]: GETIMPORT R5 22 ["QuickSelectTutorialName"]
       50 [-]: JUMPXEQKNIL R5 L7 NOT
       51 [-]: LOADB R4 0 +1
 L 7:  52 [-]: LOADB R4 1   
-L 8:  53 [-]: GETIMPORT R6 24 [nil]
+L 8:  53 [-]: GETIMPORT R6 24 ["ResourceDroneVisible"]
       54 [-]: JUMPXEQKB R6 1 L9
       55 [-]: LOADB R5 0 +1
 L 9:  56 [-]: LOADB R5 1   
@@ -3587,18 +3587,18 @@ L10:  57 [-]: MOVE R6 R1
       62 [-]: JUMPIFNOT R6 L11
       63 [-]: NOT R6 R4    
       64 [-]: JUMPIFNOT R6 L11
-      65 [-]: GETIMPORT R7 26 [nil]
+      65 [-]: GETIMPORT R7 26 ["BackgroundVisible"]
       66 [-]: NOT R6 R7    
       67 [-]: JUMPIFNOT R6 L11
       68 [-]: MOVE R6 R5   
 L11:  69 [-]: GETUPVAL R7 4
       70 [-]: JUMPIFEQ R7 R6 L12
       71 [-]: SETUPVAL R6 4
-      72 [-]: GETIMPORT R7 3 [nil]
+      72 [-]: GETIMPORT R7 3 [0xAE91E43B]
       73 [-]: MOVE R9 R6   
       74 [-]: NAMECALL R7 R7 K27 [0x368AD758]
       75 [-]: CALL R7 2 0  
-      76 [-]: GETIMPORT R7 3 [nil]
+      76 [-]: GETIMPORT R7 3 [0xAE91E43B]
       77 [-]: LOADK R9 K28 ["_root"]
       78 [-]: LOADN R10 11 
       79 [-]: MOVE R11 R6  
@@ -3609,7 +3609,7 @@ L12:  82 [-]: GETUPVAL R7 5
       84 [-]: JUMPIFNOT R6 L14
       85 [-]: GETUPVAL R8 6
       86 [-]: FASTCALL1 62 R8 L13
-      87 [-]: GETIMPORT R7 7 [nil]
+      87 [-]: GETIMPORT R7 7 [0x7B998233]
       88 [-]: CALL R7 1 1  
 L13:  89 [-]: JUMPIF R7 L14
       90 [-]: GETUPVAL R8 7
@@ -3622,7 +3622,7 @@ L13:  89 [-]: JUMPIF R7 L14
 L14:  97 [-]: RETURN R0 0  
 L15:  98 [-]: GETUPVAL R10 8
       99 [-]: GETTABLEKS R9 R10 K33 [0x06D055F9]
-     100 [-]: GETIMPORT R10 11 [nil]
+     100 [-]: GETIMPORT R10 11 [0x9BA7909F]
      101 [-]: LOADK R12 K34 ["Lotus.ResourceDroneDebugSpeed"]
      102 [-]: NAMECALL R10 R10 K35 [0xBF9494FC]
      103 [-]: CALL R10 2 1 
@@ -3637,7 +3637,7 @@ L15:  98 [-]: GETUPVAL R10 8
      112 [-]: JUMPXEQKNIL R9 L18
      113 [-]: GETTABLEKS R10 R9 K38 ["mDamageTime"]
      114 [-]: GETTABLEKS R11 R9 K39 ["mCurrentHP"]
-     115 [-]: GETIMPORT R12 42 [nil]
+     115 [-]: GETIMPORT R12 42 [0x397B920F]
      116 [-]: MOVE R13 R10 
      117 [-]: CALL R12 1 1 
      118 [-]: LOADN R13 0  
@@ -3658,7 +3658,7 @@ L17: 128 [-]: MOVE R8 R11
 L18: 130 [-]: LOADN R8 100 
 L19: 131 [-]: SETUPVAL R8 9
      132 [-]: LOADB R8 0   
-     133 [-]: GETIMPORT R10 45 [nil]
+     133 [-]: GETIMPORT R10 45 [0xC6FA2EBA]
      134 [-]: GETUPVAL R12 7
      135 [-]: GETTABLEKS R11 R12 K46 ["StartTime"]
      136 [-]: CALL R10 1 1 
@@ -3700,15 +3700,15 @@ L24: 165 [-]: GETUPVAL R12 11
      170 [-]: SETTABLEKS R13 R12 K54 ["Progress"]
      171 [-]: GETUPVAL R12 11
      172 [-]: SETTABLEKS R11 R12 K52 ["State"]
-     173 [-]: GETIMPORT R12 56 [nil]
-     174 [-]: GETIMPORT R13 3 [nil]
+     173 [-]: GETIMPORT R12 56 [0x38F10E85]
+     174 [-]: GETIMPORT R13 3 [0xAE91E43B]
      175 [-]: LOADK R14 K57 ["Drone.DroneIcon.Progress.gotoAndStop"]
      176 [-]: GETUPVAL R16 11
      177 [-]: GETTABLEKS R15 R16 K54 ["Progress"]
      178 [-]: CALL R12 3 0 
      179 [-]: LOADK R12 K58 ["/Lotus/Language/Menu/ResourceDrone_Pending"]
      180 [-]: JUMPIFNOT R8 L29
-     181 [-]: GETIMPORT R13 3 [nil]
+     181 [-]: GETIMPORT R13 3 [0xAE91E43B]
      182 [-]: LOADK R15 K59 ["Drone.Info.Info"]
      183 [-]: LOADN R16 11 
      184 [-]: GETUPVAL R19 10
@@ -3718,7 +3718,7 @@ L24: 165 [-]: GETUPVAL R12 11
 L25: 188 [-]: LOADB R17 1  
 L26: 189 [-]: NAMECALL R13 R13 K29 [0xAADE900E]
      190 [-]: CALL R13 4 0 
-     191 [-]: GETIMPORT R13 3 [nil]
+     191 [-]: GETIMPORT R13 3 [0xAE91E43B]
      192 [-]: LOADK R15 K60 ["Drone.Info.CollectedRes"]
      193 [-]: LOADN R16 11 
      194 [-]: GETUPVAL R19 10
@@ -3738,7 +3738,7 @@ L29: 201 [-]: GETUPVAL R14 10
      208 [-]: JUMPIFNOTLT R13 R7 L30
      209 [-]: GETUPVAL R16 12
      210 [-]: GETTABLEKS R15 R16 K62 [0x817B1503]
-     211 [-]: GETIMPORT R16 3 [nil]
+     211 [-]: GETIMPORT R16 3 [0xAE91E43B]
      212 [-]: MOVE R17 R13 
      213 [-]: LOADB R18 0  
      214 [-]: CALL R15 3 1 
@@ -3751,19 +3751,19 @@ L30: 216 [-]: GETUPVAL R16 8
      221 [-]: DIV R17 R18 R19
      222 [-]: MULK R16 R17 K63 [100]
      223 [-]: CALL R15 1 1 
-     224 [-]: GETIMPORT R16 3 [nil]
+     224 [-]: GETIMPORT R16 3 [0xAE91E43B]
      225 [-]: LOADK R18 K65 ["/Lotus/Language/Menu/ResourceDrone_TimeAndHealth"]
      226 [-]: LOADB R19 0  
      227 [-]: DUPTABLE R20 68
      228 [-]: SETTABLEKS R14 R20 K66 ["TIME"]
-     229 [-]: GETIMPORT R21 70 [nil]
+     229 [-]: GETIMPORT R21 70 [0x64FB1586]
      230 [-]: MOVE R22 R15 
      231 [-]: CALL R21 1 1 
      232 [-]: SETTABLEKS R21 R20 K67 ["HEALTH"]
      233 [-]: NAMECALL R16 R16 K71 [0x42B04007]
      234 [-]: CALL R16 4 1 
      235 [-]: MOVE R12 R16 
-     236 [-]: GETIMPORT R16 3 [nil]
+     236 [-]: GETIMPORT R16 3 [0xAE91E43B]
      237 [-]: LOADK R18 K72 ["Drone.Info.Info.text"]
      238 [-]: MOVE R19 R12 
      239 [-]: NAMECALL R16 R16 K73 [0x20B98DB3]
@@ -3784,7 +3784,7 @@ L31: 245 [-]: JUMPIFNOT R8 L35
      254 [-]: NAMECALL R13 R13 K27 [0x368AD758]
      255 [-]: CALL R13 2 0 
      256 [-]: GETUPVAL R13 14
-     257 [-]: GETIMPORT R15 3 [nil]
+     257 [-]: GETIMPORT R15 3 [0xAE91E43B]
      258 [-]: LOADK R17 K75 ["/Lotus/Language/Menu/ResourceDrone_Scrap"]
      259 [-]: LOADB R18 0  
      260 [-]: NAMECALL R15 R15 K71 [0x42B04007]
@@ -3798,13 +3798,13 @@ L32: 265 [-]: GETUPVAL R14 10
      267 [-]: JUMPIFNOTEQ R11 R13 L34
      268 [-]: GETUPVAL R13 14
      269 [-]: JUMPXEQKNIL R13 L33
-     270 [-]: GETIMPORT R13 3 [nil]
+     270 [-]: GETIMPORT R13 3 [0xAE91E43B]
      271 [-]: LOADK R15 K77 ["Drone.Info.CollectedRes.Icon"]
      272 [-]: GETUPVAL R17 11
      273 [-]: GETTABLEKS R16 R17 K78 ["Icon"]
      274 [-]: NAMECALL R13 R13 K79 [0x1CB415C1]
      275 [-]: CALL R13 3 0 
-     276 [-]: GETIMPORT R13 3 [nil]
+     276 [-]: GETIMPORT R13 3 [0xAE91E43B]
      277 [-]: LOADK R15 K77 ["Drone.Info.CollectedRes.Icon"]
      278 [-]: LOADN R16 12 
      279 [-]: GETUPVAL R18 8
@@ -3821,7 +3821,7 @@ L32: 265 [-]: GETUPVAL R14 10
      290 [-]: NAMECALL R13 R13 K27 [0x368AD758]
      291 [-]: CALL R13 2 0 
      292 [-]: GETUPVAL R13 14
-     293 [-]: GETIMPORT R15 3 [nil]
+     293 [-]: GETIMPORT R15 3 [0xAE91E43B]
      294 [-]: LOADK R17 K82 ["/Lotus/Language/Menu/ResourceDrone_Claim"]
      295 [-]: LOADB R18 0  
      296 [-]: NAMECALL R15 R15 K71 [0x42B04007]
@@ -3830,7 +3830,7 @@ L32: 265 [-]: GETUPVAL R14 10
      299 [-]: CALL R13 -1 0
 L33: 300 [-]: GETUPVAL R13 15
      301 [-]: CALL R13 0 0 
-L34: 302 [-]: GETIMPORT R13 3 [nil]
+L34: 302 [-]: GETIMPORT R13 3 [0xAE91E43B]
      303 [-]: LOADK R15 K72 ["Drone.Info.Info.text"]
      304 [-]: MOVE R16 R12 
      305 [-]: NAMECALL R13 R13 K73 [0x20B98DB3]
@@ -3872,7 +3872,7 @@ L 1:   8 [-]: GETUPVAL R0 3
        0 [-]: JUMPXEQKS R0 K0 L0 ["true"]
        1 [-]: LOADB R1 0 +1
 L 0:   2 [-]: LOADB R1 1   
-L 1:   3 [-]: GETIMPORT R2 3 [nil]
+L 1:   3 [-]: GETIMPORT R2 3 [0x1467D5F4]
        4 [-]: CALL R2 0 1  
        5 [-]: JUMPIFNOT R2 L2
        6 [-]: JUMPIFNOT R1 L2

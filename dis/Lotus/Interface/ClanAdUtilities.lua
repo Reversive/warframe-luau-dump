@@ -5,9 +5,9 @@
 ; Is_vararg:       1
 ; Max Stack Size:  3
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0xAEABECDA]
        2 [-]: GETVARARGS R1 1
-       3 [-]: GETIMPORT R2 4 [nil]
+       3 [-]: GETIMPORT R2 4 ["seeall"]
        4 [-]: CALL R0 2 0  
        5 [-]: DUPCLOSURE R0 K5 []
        6 [-]: SETGLOBAL R0 K6 ["GetClanAdFeatures"]
@@ -39,7 +39,7 @@ L 0:   6 [-]: LOADN R4 11
       13 [-]: SETTABLEKS R7 R6 K2 ["LocTag"]
       14 [-]: FASTCALL2 52 R0 R6 L1
       15 [-]: MOVE R5 R0   
-      16 [-]: GETIMPORT R4 7 [nil]
+      16 [-]: GETIMPORT R4 7 [0x23D5322F]
       17 [-]: CALL R4 2 0  
 L 1:  18 [-]: FORNLOOP R1 L0
 L 2:  19 [-]: NEWTABLE R1 0 15
@@ -119,7 +119,7 @@ L 2:  19 [-]: NEWTABLE R1 0 15
       93 [-]: LOADK R17 K40 ["/Lotus/Language/Clan/Thai"]
       94 [-]: SETTABLEKS R17 R16 K9 ["Loc"]
       95 [-]: SETLIST R1 R2 15 [1]
-      96 [-]: GETIMPORT R2 42 [nil]
+      96 [-]: GETIMPORT R2 42 [0xC8802016]
       97 [-]: MOVE R3 R1   
       98 [-]: CALL R2 1 3  
       99 [-]: FORGPREP_INEXT R2 L4
@@ -130,7 +130,7 @@ L 3: 100 [-]: DUPTABLE R9 44
      104 [-]: SETTABLEKS R10 R9 K2 ["LocTag"]
      105 [-]: FASTCALL2 52 R0 R9 L4
      106 [-]: MOVE R8 R0   
-     107 [-]: GETIMPORT R7 7 [nil]
+     107 [-]: GETIMPORT R7 7 [0x23D5322F]
      108 [-]: CALL R7 2 0  
 L 4: 109 [-]: FORGLOOP R2 L3 2 [inext]
      110 [-]: RETURN R0 1  

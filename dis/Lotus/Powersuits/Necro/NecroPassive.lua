@@ -5,10 +5,10 @@
 ; Is_vararg:       1
 ; Max Stack Size:  3
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x2D0FAD09]
        2 [-]: LOADK R1 K2 ["Lotus.Scripts.Libs.AbilitiesLib"]
        3 [-]: CALL R0 1 1  
-       4 [-]: GETIMPORT R1 1 [nil]
+       4 [-]: GETIMPORT R1 1 [0x2D0FAD09]
        5 [-]: LOADK R2 K3 ["Lotus.Powersuits.PowersuitAbilities.PVPLib"]
        6 [-]: CALL R1 1 1  
        7 [-]: DUPCLOSURE R2 K4 []
@@ -33,7 +33,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  3
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 ["_T"]
        1 [-]: DUPTABLE R1 4
        2 [-]: LOADN R2 5   
        3 [-]: SETTABLEKS R2 R1 K2 ["HEALTH"]
@@ -56,7 +56,7 @@
        3 [-]: CALL R1 1 1  
        4 [-]: JUMPIFNOT R1 L0
        5 [-]: RETURN R0 0  
-L 0:   6 [-]: GETIMPORT R1 2 [nil]
+L 0:   6 [-]: GETIMPORT R1 2 [0x89326C93]
        7 [-]: NAMECALL R1 R1 K3 [0x18D05D30]
        8 [-]: CALL R1 1 1  
        9 [-]: JUMPIF R1 L1 
@@ -65,7 +65,7 @@ L 1:  11 [-]: NAMECALL R1 R0 K4 [0x5163741E]
       12 [-]: CALL R1 1 1  
       13 [-]: FASTCALL1 62 R1 L2
       14 [-]: MOVE R3 R1   
-      15 [-]: GETIMPORT R2 6 [nil]
+      15 [-]: GETIMPORT R2 6 [0x7B998233]
       16 [-]: CALL R2 1 1  
 L 2:  17 [-]: JUMPIFNOT R2 L3
       18 [-]: RETURN R0 0  
@@ -76,24 +76,24 @@ L 3:  19 [-]: GETUPVAL R3 1
       23 [-]: NEWTABLE R2 0 0
 L 4:  24 [-]: FASTCALL1 62 R1 L5
       25 [-]: MOVE R4 R1   
-      26 [-]: GETIMPORT R3 6 [nil]
+      26 [-]: GETIMPORT R3 6 [0x7B998233]
       27 [-]: CALL R3 1 1  
 L 5:  28 [-]: JUMPIF R3 L14
       29 [-]: NAMECALL R3 R1 K8 [0x2047CFE7]
       30 [-]: CALL R3 1 1  
       31 [-]: JUMPIF R3 L14
-      32 [-]: GETIMPORT R4 2 [nil]
+      32 [-]: GETIMPORT R4 2 [0x89326C93]
       33 [-]: FASTCALL1 62 R4 L6
-      34 [-]: GETIMPORT R3 6 [nil]
+      34 [-]: GETIMPORT R3 6 [0x7B998233]
       35 [-]: CALL R3 1 1  
 L 6:  36 [-]: JUMPIF R3 L14
-      37 [-]: GETIMPORT R3 10 [nil]
+      37 [-]: GETIMPORT R3 10 [0xC8802016]
       38 [-]: MOVE R4 R2   
       39 [-]: CALL R3 1 3  
       40 [-]: FORGPREP_INEXT R3 L9
 L 7:  41 [-]: FASTCALL1 62 R7 L8
       42 [-]: MOVE R9 R7   
-      43 [-]: GETIMPORT R8 6 [nil]
+      43 [-]: GETIMPORT R8 6 [0x7B998233]
       44 [-]: CALL R8 1 1  
 L 8:  45 [-]: JUMPIF R8 L9 
       46 [-]: NAMECALL R8 R7 K8 [0x2047CFE7]
@@ -109,8 +109,8 @@ L 8:  45 [-]: JUMPIF R8 L9
       56 [-]: NAMECALL R8 R1 K12 [0x1F135DE0]
       57 [-]: CALL R8 4 0  
 L 9:  58 [-]: FORGLOOP R3 L7 2 [inext]
-      59 [-]: GETIMPORT R3 2 [nil]
-      60 [-]: GETIMPORT R5 14 [nil]
+      59 [-]: GETIMPORT R3 2 [0x89326C93]
+      60 [-]: GETIMPORT R5 14 ["gLotusAvatarType"]
       61 [-]: NAMECALL R6 R1 K15 [0xD1586535]
       62 [-]: CALL R6 1 1  
       63 [-]: LOADN R7 0   
@@ -118,31 +118,31 @@ L 9:  58 [-]: FORGLOOP R3 L7 2 [inext]
       65 [-]: NAMECALL R3 R3 K16 [0xFB669000]
       66 [-]: CALL R3 5 1  
       67 [-]: MOVE R2 R3   
-      68 [-]: GETIMPORT R3 18 [nil]
+      68 [-]: GETIMPORT R3 18 [0xCBD666E1]
       69 [-]: LOADK R4 K19 [0.10000000000000001]
       70 [-]: CALL R3 1 0  
       71 [-]: JUMPBACK L4  
       72 [-]: RETURN R0 0  
-L10:  73 [-]: GETIMPORT R2 18 [nil]
+L10:  73 [-]: GETIMPORT R2 18 [0xCBD666E1]
       74 [-]: LOADN R3 0   
       75 [-]: CALL R2 1 0  
-      76 [-]: GETIMPORT R4 21 [nil]
+      76 [-]: GETIMPORT R4 21 [0x7ED0A956]
       77 [-]: LOADK R5 K22 ["/Lotus/Powersuits/PowersuitAbilities/SoulPunchAbility"]
       78 [-]: CALL R4 1 1  
-      79 [-]: GETIMPORT R5 24 [nil]
+      79 [-]: GETIMPORT R5 24 [0x0469F296]
       80 [-]: LOADK R6 K25 ["OnKillPvP"]
       81 [-]: CALL R5 1 1  
       82 [-]: LOADB R6 1   
       83 [-]: NAMECALL R2 R0 K26 [0x855EB96D]
       84 [-]: CALL R2 4 0  
-      85 [-]: GETIMPORT R2 29 [nil]
+      85 [-]: GETIMPORT R2 29 [0x608BC054]
       86 [-]: CALL R2 0 1  
       87 [-]: SETTABLEKS R1 R2 K30 ["instigator"]
       88 [-]: NEWTABLE R3 0 1
       89 [-]: MOVE R4 R1   
       90 [-]: SETLIST R3 R4 1 [1]
       91 [-]: SETTABLEKS R3 R2 K31 ["affected"]
-      92 [-]: GETIMPORT R3 33 [nil]
+      92 [-]: GETIMPORT R3 33 [0xACD99A15]
       93 [-]: SETTABLEKS R3 R2 K34 ["abilityType"]
       94 [-]: NAMECALL R3 R1 K35 [0xDE321E6F]
       95 [-]: CALL R3 1 1  
@@ -150,7 +150,7 @@ L10:  73 [-]: GETIMPORT R2 18 [nil]
       97 [-]: CALL R4 1 1  
 L11:  98 [-]: FASTCALL1 62 R1 L12
       99 [-]: MOVE R6 R1   
-     100 [-]: GETIMPORT R5 6 [nil]
+     100 [-]: GETIMPORT R5 6 [0x7B998233]
      101 [-]: CALL R5 1 1  
 L12: 102 [-]: JUMPIF R5 L14
      103 [-]: NAMECALL R5 R1 K8 [0x2047CFE7]
@@ -177,7 +177,7 @@ L12: 102 [-]: JUMPIF R5 L14
      124 [-]: NAMECALL R6 R1 K39 [0x37E45FB5]
      125 [-]: CALL R6 4 0  
 L13: 126 [-]: MOVE R4 R5   
-     127 [-]: GETIMPORT R6 18 [nil]
+     127 [-]: GETIMPORT R6 18 [0xCBD666E1]
      128 [-]: LOADN R7 0   
      129 [-]: CALL R6 1 0  
      130 [-]: JUMPBACK L11 
@@ -197,7 +197,7 @@ L14: 131 [-]: RETURN R0 0
        3 [-]: CALL R1 1 1  
        4 [-]: JUMPIFNOT R1 L0
        5 [-]: RETURN R0 0  
-L 0:   6 [-]: GETIMPORT R1 2 [nil]
+L 0:   6 [-]: GETIMPORT R1 2 [0x89326C93]
        7 [-]: NAMECALL R1 R1 K3 [0x18D05D30]
        8 [-]: CALL R1 1 1  
        9 [-]: JUMPIFNOT R1 L3
@@ -209,7 +209,7 @@ L 0:   6 [-]: GETIMPORT R1 2 [nil]
       15 [-]: CALL R1 1 1  
       16 [-]: FASTCALL1 62 R1 L1
       17 [-]: MOVE R3 R1   
-      18 [-]: GETIMPORT R2 7 [nil]
+      18 [-]: GETIMPORT R2 7 [0x7B998233]
       19 [-]: CALL R2 1 1  
 L 1:  20 [-]: JUMPIF R2 L3 
       21 [-]: NAMECALL R2 R1 K8 [0xDE321E6F]
@@ -226,24 +226,24 @@ L 1:  20 [-]: JUMPIF R2 L3
       32 [-]: LOADN R8 5   
       33 [-]: NAMECALL R3 R2 K10 [0x617A63C6]
       34 [-]: CALL R3 5 0  
-      35 [-]: GETIMPORT R3 13 [nil]
+      35 [-]: GETIMPORT R3 13 [0x608BC054]
       36 [-]: CALL R3 0 1  
       37 [-]: SETTABLEKS R1 R3 K14 ["instigator"]
       38 [-]: NEWTABLE R4 0 1
       39 [-]: MOVE R5 R1   
       40 [-]: SETLIST R4 R5 1 [1]
       41 [-]: SETTABLEKS R4 R3 K15 ["affected"]
-      42 [-]: GETIMPORT R4 17 [nil]
+      42 [-]: GETIMPORT R4 17 [0xACD99A15]
       43 [-]: SETTABLEKS R4 R3 K18 ["abilityType"]
       44 [-]: MOVE R6 R3   
       45 [-]: LOADB R7 0   
       46 [-]: LOADB R8 1   
       47 [-]: NAMECALL R4 R1 K19 [0x37E45FB5]
       48 [-]: CALL R4 4 0  
-L 2:  49 [-]: GETIMPORT R5 21 [nil]
+L 2:  49 [-]: GETIMPORT R5 21 [0x7ED0A956]
       50 [-]: LOADK R6 K22 ["/Lotus/Powersuits/PowersuitAbilities/SoulPunchAbility"]
       51 [-]: CALL R5 1 1  
-      52 [-]: GETIMPORT R6 24 [nil]
+      52 [-]: GETIMPORT R6 24 [0x0469F296]
       53 [-]: LOADK R7 K25 ["OnKillPvP"]
       54 [-]: CALL R6 1 1  
       55 [-]: LOADB R7 0   
@@ -269,14 +269,14 @@ L 3:  58 [-]: RETURN R0 0
        7 [-]: LOADN R7 5   
        8 [-]: NAMECALL R2 R2 K2 [0x617A63C6]
        9 [-]: CALL R2 5 0  
-      10 [-]: GETIMPORT R2 5 [nil]
+      10 [-]: GETIMPORT R2 5 [0x608BC054]
       11 [-]: CALL R2 0 1  
       12 [-]: SETTABLEKS R1 R2 K6 ["instigator"]
       13 [-]: NEWTABLE R3 0 1
       14 [-]: MOVE R4 R1   
       15 [-]: SETLIST R3 R4 1 [1]
       16 [-]: SETTABLEKS R3 R2 K7 ["affected"]
-      17 [-]: GETIMPORT R3 9 [nil]
+      17 [-]: GETIMPORT R3 9 [0xACD99A15]
       18 [-]: SETTABLEKS R3 R2 K10 ["abilityType"]
       19 [-]: LOADN R3 1   
       20 [-]: SETTABLEKS R3 R2 K11 ["buffType"]

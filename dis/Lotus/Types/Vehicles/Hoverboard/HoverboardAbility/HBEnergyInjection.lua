@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  12
 
-            1 [-]: NEWTABLE R0 0 10
+       1 [-]: NEWTABLE R0 0 10
        2 [-]: LOADN R1 10  
        3 [-]: LOADN R2 10  
        4 [-]: LOADN R3 10  
@@ -55,7 +55,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  6
 
-       0 [-]: GETIMPORT R1 1 [nil]
+       0 [-]: GETIMPORT R1 1 [0x42DCC9F5]
        1 [-]: MOVE R2 R0   
        2 [-]: LOADN R3 1   
        3 [-]: GETUPVAL R5 0
@@ -74,7 +74,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  6
 
-       0 [-]: GETIMPORT R1 1 [nil]
+       0 [-]: GETIMPORT R1 1 [0x42DCC9F5]
        1 [-]: MOVE R2 R0   
        2 [-]: LOADN R3 1   
        3 [-]: GETUPVAL R5 0
@@ -95,7 +95,7 @@
 
        0 [-]: DUPTABLE R1 2
        1 [-]: MOVE R3 R0   
-       2 [-]: GETIMPORT R4 4 [nil]
+       2 [-]: GETIMPORT R4 4 [0x42DCC9F5]
        3 [-]: MOVE R5 R3   
        4 [-]: LOADN R6 1   
        5 [-]: GETUPVAL R8 0
@@ -106,7 +106,7 @@
       10 [-]: GETTABLE R2 R4 R3
       11 [-]: SETTABLEKS R2 R1 K0 ["SPEED"]
       12 [-]: MOVE R3 R0   
-      13 [-]: GETIMPORT R4 4 [nil]
+      13 [-]: GETIMPORT R4 4 [0x42DCC9F5]
       14 [-]: MOVE R5 R3   
       15 [-]: LOADN R6 1   
       16 [-]: GETUPVAL R8 1
@@ -116,7 +116,7 @@
       20 [-]: GETUPVAL R4 1
       21 [-]: GETTABLE R2 R4 R3
       22 [-]: SETTABLEKS R2 R1 K1 ["ENERGY"]
-      23 [-]: GETIMPORT R2 7 [nil]
+      23 [-]: GETIMPORT R2 7 [0xB139D7BC]
       24 [-]: MOVE R3 R1   
       25 [-]: CALL R2 1 -1 
       26 [-]: RETURN R2 -1 
@@ -131,27 +131,27 @@
 
        0 [-]: FASTCALL1 62 R0 L0
        1 [-]: MOVE R5 R0   
-       2 [-]: GETIMPORT R4 1 [nil]
+       2 [-]: GETIMPORT R4 1 [0x7B998233]
        3 [-]: CALL R4 1 1  
 L 0:   4 [-]: JUMPIF R4 L3 
        5 [-]: FASTCALL1 62 R1 L1
        6 [-]: MOVE R5 R1   
-       7 [-]: GETIMPORT R4 1 [nil]
+       7 [-]: GETIMPORT R4 1 [0x7B998233]
        8 [-]: CALL R4 1 1  
 L 1:   9 [-]: JUMPIF R4 L3 
       10 [-]: NAMECALL R4 R0 K2 [0x020D4331]
       11 [-]: CALL R4 1 1  
       12 [-]: FASTCALL1 62 R4 L2
       13 [-]: MOVE R6 R4   
-      14 [-]: GETIMPORT R5 1 [nil]
+      14 [-]: GETIMPORT R5 1 [0x7B998233]
       15 [-]: CALL R5 1 1  
 L 2:  16 [-]: JUMPIF R5 L3 
-      17 [-]: GETIMPORT R7 4 [nil]
+      17 [-]: GETIMPORT R7 4 ["gHoverboardMotionControllerType"]
       18 [-]: NAMECALL R5 R4 K5 [0xF2DEAF69]
       19 [-]: CALL R5 2 1  
       20 [-]: JUMPIFNOT R5 L3
       21 [-]: MOVE R6 R2   
-      22 [-]: GETIMPORT R7 7 [nil]
+      22 [-]: GETIMPORT R7 7 [0x42DCC9F5]
       23 [-]: MOVE R8 R6   
       24 [-]: LOADN R9 1   
       25 [-]: GETUPVAL R11 0
@@ -161,7 +161,7 @@ L 2:  16 [-]: JUMPIF R5 L3
       29 [-]: GETUPVAL R7 0
       30 [-]: GETTABLE R5 R7 R6
       31 [-]: MOVE R7 R2   
-      32 [-]: GETIMPORT R8 7 [nil]
+      32 [-]: GETIMPORT R8 7 [0x42DCC9F5]
       33 [-]: MOVE R9 R7   
       34 [-]: LOADN R10 1  
       35 [-]: GETUPVAL R12 1
@@ -179,7 +179,7 @@ L 2:  16 [-]: JUMPIF R5 L3
       47 [-]: CALL R12 1 1 
       48 [-]: MOVE R13 R1  
       49 [-]: LOADN R14 25 
-      50 [-]: GETIMPORT R15 11 [nil]
+      50 [-]: GETIMPORT R15 11 [0x0469F296]
       51 [-]: LOADK R16 K12 ["RiderEnergySpeed"]
       52 [-]: CALL R15 1 -1
       53 [-]: NAMECALL R7 R7 K13 [0x5E6704FF]
@@ -193,7 +193,7 @@ L 2:  16 [-]: JUMPIF R5 L3
       61 [-]: CALL R12 1 1 
       62 [-]: MOVE R13 R1  
       63 [-]: LOADN R14 25 
-      64 [-]: GETIMPORT R15 11 [nil]
+      64 [-]: GETIMPORT R15 11 [0x0469F296]
       65 [-]: LOADK R16 K14 ["RiderEnergyCost"]
       66 [-]: CALL R15 1 -1
       67 [-]: NAMECALL R7 R7 K13 [0x5E6704FF]
@@ -210,27 +210,27 @@ L 3:  69 [-]: RETURN R0 0
 
        0 [-]: FASTCALL1 62 R0 L0
        1 [-]: MOVE R5 R0   
-       2 [-]: GETIMPORT R4 1 [nil]
+       2 [-]: GETIMPORT R4 1 [0x7B998233]
        3 [-]: CALL R4 1 1  
 L 0:   4 [-]: JUMPIF R4 L3 
        5 [-]: FASTCALL1 62 R1 L1
        6 [-]: MOVE R5 R1   
-       7 [-]: GETIMPORT R4 1 [nil]
+       7 [-]: GETIMPORT R4 1 [0x7B998233]
        8 [-]: CALL R4 1 1  
 L 1:   9 [-]: JUMPIF R4 L3 
       10 [-]: NAMECALL R4 R0 K2 [0x020D4331]
       11 [-]: CALL R4 1 1  
       12 [-]: FASTCALL1 62 R4 L2
       13 [-]: MOVE R6 R4   
-      14 [-]: GETIMPORT R5 1 [nil]
+      14 [-]: GETIMPORT R5 1 [0x7B998233]
       15 [-]: CALL R5 1 1  
 L 2:  16 [-]: JUMPIF R5 L3 
-      17 [-]: GETIMPORT R7 4 [nil]
+      17 [-]: GETIMPORT R7 4 ["gHoverboardMotionControllerType"]
       18 [-]: NAMECALL R5 R4 K5 [0xF2DEAF69]
       19 [-]: CALL R5 2 1  
       20 [-]: JUMPIFNOT R5 L3
       21 [-]: MOVE R6 R2   
-      22 [-]: GETIMPORT R7 7 [nil]
+      22 [-]: GETIMPORT R7 7 [0x42DCC9F5]
       23 [-]: MOVE R8 R6   
       24 [-]: LOADN R9 1   
       25 [-]: GETUPVAL R11 0
@@ -240,7 +240,7 @@ L 2:  16 [-]: JUMPIF R5 L3
       29 [-]: GETUPVAL R7 0
       30 [-]: GETTABLE R5 R7 R6
       31 [-]: MOVE R7 R2   
-      32 [-]: GETIMPORT R8 7 [nil]
+      32 [-]: GETIMPORT R8 7 [0x42DCC9F5]
       33 [-]: MOVE R9 R7   
       34 [-]: LOADN R10 1  
       35 [-]: GETUPVAL R12 1
@@ -258,7 +258,7 @@ L 2:  16 [-]: JUMPIF R5 L3
       47 [-]: CALL R12 1 1 
       48 [-]: MOVE R13 R1  
       49 [-]: LOADN R14 25 
-      50 [-]: GETIMPORT R15 11 [nil]
+      50 [-]: GETIMPORT R15 11 [0x0469F296]
       51 [-]: LOADK R16 K12 ["RiderEnergySpeed"]
       52 [-]: CALL R15 1 -1
       53 [-]: NAMECALL R7 R7 K13 [0x12DD9DA2]
@@ -272,7 +272,7 @@ L 2:  16 [-]: JUMPIF R5 L3
       61 [-]: CALL R12 1 1 
       62 [-]: MOVE R13 R1  
       63 [-]: LOADN R14 25 
-      64 [-]: GETIMPORT R15 11 [nil]
+      64 [-]: GETIMPORT R15 11 [0x0469F296]
       65 [-]: LOADK R16 K14 ["RiderEnergyCost"]
       66 [-]: CALL R15 1 -1
       67 [-]: NAMECALL R7 R7 K13 [0x12DD9DA2]

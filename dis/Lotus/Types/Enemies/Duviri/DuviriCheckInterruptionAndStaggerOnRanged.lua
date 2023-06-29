@@ -5,10 +5,10 @@
 ; Is_vararg:       1
 ; Max Stack Size:  3
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x2D0FAD09]
        2 [-]: LOADK R1 K2 ["Lotus.Powersuits.NpcPowersuits.NpcPowersuitAbilities.Duviri.DuviriAbilityUtility"]
        3 [-]: CALL R0 1 1  
-       4 [-]: GETIMPORT R1 4 [nil]
+       4 [-]: GETIMPORT R1 4 [0x0469F296]
        5 [-]: LOADK R2 K5 ["StaggerDD"]
        6 [-]: CALL R1 1 1  
        7 [-]: DUPCLOSURE R2 K6 []
@@ -31,7 +31,7 @@
        1 [-]: GETTABLEKS R1 R2 K0 [0x05CB652C]
        2 [-]: MOVE R2 R0   
        3 [-]: CALL R1 1 0  
-       4 [-]: GETIMPORT R1 2 [nil]
+       4 [-]: GETIMPORT R1 2 [0x89326C93]
        5 [-]: NAMECALL R1 R1 K3 [0x18D05D30]
        6 [-]: CALL R1 1 1  
        7 [-]: JUMPIF R1 L0 
@@ -40,10 +40,10 @@ L 0:   9 [-]: NAMECALL R1 R0 K4 [0xBD1405A3]
       10 [-]: CALL R1 1 1  
       11 [-]: FASTCALL1 62 R1 L1
       12 [-]: MOVE R3 R1   
-      13 [-]: GETIMPORT R2 6 [nil]
+      13 [-]: GETIMPORT R2 6 [0x7B998233]
       14 [-]: CALL R2 1 1  
 L 1:  15 [-]: JUMPIF R2 L2 
-      16 [-]: GETIMPORT R4 8 [nil]
+      16 [-]: GETIMPORT R4 8 ["gScriptDamageDataType"]
       17 [-]: NAMECALL R2 R1 K9 [0xF2DEAF69]
       18 [-]: CALL R2 2 1  
       19 [-]: JUMPIF R2 L3 
@@ -52,7 +52,7 @@ L 3:  21 [-]: NAMECALL R2 R1 K10 [0x52DE0ED7]
       22 [-]: CALL R2 1 1  
       23 [-]: FASTCALL1 62 R2 L4
       24 [-]: MOVE R4 R2   
-      25 [-]: GETIMPORT R3 6 [nil]
+      25 [-]: GETIMPORT R3 6 [0x7B998233]
       26 [-]: CALL R3 1 1  
 L 4:  27 [-]: JUMPIF R3 L5 
       28 [-]: JUMPIFEQ R2 R0 L5
@@ -65,11 +65,11 @@ L 4:  27 [-]: JUMPIF R3 L5
       35 [-]: LOADN R4 1   
       36 [-]: JUMPIFEQ R3 R4 L6
 L 5:  37 [-]: RETURN R0 0  
-L 6:  38 [-]: GETIMPORT R3 13 [nil]
+L 6:  38 [-]: GETIMPORT R3 13 [0xC163F229]
       39 [-]: LOADN R4 0   
       40 [-]: LOADN R5 1   
       41 [-]: CALL R3 2 1  
-      42 [-]: GETIMPORT R4 15 [nil]
+      42 [-]: GETIMPORT R4 15 [0x0E573E29]
       43 [-]: JUMPIFNOTLT R4 R3 L7
       44 [-]: RETURN R0 0  
 L 7:  45 [-]: GETGLOBAL R3 K16 [0x4935F44D]
@@ -88,10 +88,10 @@ L 7:  45 [-]: GETGLOBAL R3 K16 [0x4935F44D]
 ; Is_vararg:       0
 ; Max Stack Size:  6
 
-       0 [-]: GETIMPORT R1 1 [nil]
+       0 [-]: GETIMPORT R1 1 [0xCBD666E1]
        1 [-]: LOADN R2 0   
        2 [-]: CALL R1 1 0  
-       3 [-]: GETIMPORT R1 4 [nil]
+       3 [-]: GETIMPORT R1 4 [0x35C16153]
        4 [-]: CALL R1 0 1  
        5 [-]: LOADN R2 0   
        6 [-]: SETTABLEKS R2 R1 K5 ["hitType"]

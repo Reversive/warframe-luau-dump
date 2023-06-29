@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  3
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x2D0FAD09]
        2 [-]: LOADK R1 K2 ["Lotus.Interface.LotusUtilities"]
        3 [-]: CALL R0 1 1  
        4 [-]: DUPCLOSURE R1 K3 []
@@ -59,19 +59,19 @@ L 0:  10 [-]: GETUPVAL R2 0
        5 [-]: GETTABLEKS R0 R1 K1 [0x15DEABB1]
        6 [-]: LOADB R1 1   
        7 [-]: CALL R0 1 0  
-       8 [-]: GETIMPORT R0 3 [nil]
-       9 [-]: GETIMPORT R1 5 [nil]
+       8 [-]: GETIMPORT R0 3 ["_T"]
+       9 [-]: GETIMPORT R1 5 [0x1E9E5BC8]
       10 [-]: SETTABLEKS R1 R0 K6 ["VitruvianStage"]
-      11 [-]: GETIMPORT R0 8 [nil]
-      12 [-]: GETIMPORT R2 10 [nil]
+      11 [-]: GETIMPORT R0 8 [0x9BA7909F]
+      12 [-]: GETIMPORT R2 10 [0xB70284F2]
       13 [-]: NAMECALL R0 R0 K11 [0xCFBA257F]
       14 [-]: CALL R0 2 1  
 L 0:  15 [-]: FASTCALL1 62 R0 L1
       16 [-]: MOVE R2 R0   
-      17 [-]: GETIMPORT R1 13 [nil]
+      17 [-]: GETIMPORT R1 13 [0x7B998233]
       18 [-]: CALL R1 1 1  
 L 1:  19 [-]: JUMPIF R1 L2 
-      20 [-]: GETIMPORT R1 15 [nil]
+      20 [-]: GETIMPORT R1 15 [0xCBD666E1]
       21 [-]: LOADN R2 0   
       22 [-]: CALL R1 1 0  
       23 [-]: JUMPBACK L0  

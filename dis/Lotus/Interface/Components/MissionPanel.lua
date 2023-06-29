@@ -5,14 +5,14 @@
 ; Is_vararg:       1
 ; Max Stack Size:  7
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0xAEABECDA]
        2 [-]: GETVARARGS R1 1
-       3 [-]: GETIMPORT R2 4 [nil]
+       3 [-]: GETIMPORT R2 4 ["seeall"]
        4 [-]: CALL R0 2 0  
-       5 [-]: GETIMPORT R0 6 [nil]
+       5 [-]: GETIMPORT R0 6 [0x2D0FAD09]
        6 [-]: LOADK R1 K7 ["Lotus.Interface.LotusUtilities"]
        7 [-]: CALL R0 1 1  
-       8 [-]: GETIMPORT R1 6 [nil]
+       8 [-]: GETIMPORT R1 6 [0x2D0FAD09]
        9 [-]: LOADK R2 K8 ["EE.Interface.Utilities"]
       10 [-]: CALL R1 1 1  
       11 [-]: DUPCLOSURE R2 K9 []
@@ -91,7 +91,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  8
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 [0x67513231]
        1 [-]: CALL R0 0 1  
        2 [-]: NAMECALL R0 R0 K2 [0x6D604BA7]
        3 [-]: CALL R0 1 1  

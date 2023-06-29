@@ -5,10 +5,10 @@
 ; Is_vararg:       1
 ; Max Stack Size:  38
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x2D0FAD09]
        2 [-]: LOADK R1 K2 ["EE.Interface.Utilities"]
        3 [-]: CALL R0 1 1  
-       4 [-]: GETIMPORT R1 1 [nil]
+       4 [-]: GETIMPORT R1 1 [0x2D0FAD09]
        5 [-]: LOADK R2 K3 ["Lotus.Interface.UIStyleUtilities"]
        6 [-]: CALL R1 1 1  
        7 [-]: LOADNIL R2   
@@ -904,24 +904,24 @@
 ; Is_vararg:       0
 ; Max Stack Size:  9
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 [0xAE91E43B]
        1 [-]: LOADN R2 0   
        2 [-]: NAMECALL R0 R0 K2 [0x58BEC6D6]
        3 [-]: CALL R0 2 0  
-       4 [-]: GETIMPORT R0 1 [nil]
+       4 [-]: GETIMPORT R0 1 [0xAE91E43B]
        5 [-]: LOADK R2 K3 ["_root"]
        6 [-]: LOADN R3 10  
        7 [-]: LOADN R4 0   
        8 [-]: NAMECALL R0 R0 K4 [0x67BC869F]
        9 [-]: CALL R0 4 0  
-      10 [-]: GETIMPORT R0 1 [nil]
+      10 [-]: GETIMPORT R0 1 [0xAE91E43B]
       11 [-]: LOADK R2 K3 ["_root"]
       12 [-]: LOADN R3 4   
       13 [-]: LOADN R4 -5000
       14 [-]: NAMECALL R0 R0 K4 [0x67BC869F]
       15 [-]: CALL R0 4 0  
-      16 [-]: GETIMPORT R0 6 [nil]
-      17 [-]: GETIMPORT R1 1 [nil]
+      16 [-]: GETIMPORT R0 6 [0x25312C9B]
+      17 [-]: GETIMPORT R1 1 [0xAE91E43B]
       18 [-]: LOADK R2 K3 ["_root"]
       19 [-]: LOADN R3 2   
       20 [-]: NEWTABLE R4 0 2
@@ -962,7 +962,7 @@
 L 0:  13 [-]: LOADNIL R4   
       14 [-]: LOADB R5 0   
       15 [-]: GETTABLEKS R6 R1 K7 ["InputFilter"]
-      16 [-]: GETIMPORT R7 9 [nil]
+      16 [-]: GETIMPORT R7 9 [0xD5892F66]
       17 [-]: JUMPIFNOTEQ R6 R7 L3
       18 [-]: GETTABLEKS R6 R1 K0 ["Action"]
       19 [-]: JUMPXEQKS R6 K10 L2 NOT ["MOVE_Z"]
@@ -985,7 +985,7 @@ L 2:  31 [-]: MOVE R6 R3
       34 [-]: JUMP L16
     
 L 3:  35 [-]: GETTABLEKS R6 R1 K7 ["InputFilter"]
-      36 [-]: GETIMPORT R7 14 [nil]
+      36 [-]: GETIMPORT R7 14 [0xC3C8C187]
       37 [-]: JUMPIFNOTEQ R6 R7 L4
       38 [-]: GETTABLEKS R6 R1 K0 ["Action"]
       39 [-]: JUMPXEQKS R6 K15 L4 NOT ["MOVE_Y"]
@@ -1003,13 +1003,13 @@ L 4:  45 [-]: GETTABLEKS R6 R1 K17 ["IsRailJack"]
       50 [-]: CONCAT R4 R6 R8
       51 [-]: JUMP L16
     
-L 5:  52 [-]: GETIMPORT R7 20 [nil]
+L 5:  52 [-]: GETIMPORT R7 20 [0x23B0B1B3]
       53 [-]: FASTCALL1 62 R7 L6
-      54 [-]: GETIMPORT R6 22 [nil]
+      54 [-]: GETIMPORT R6 22 [0x7B998233]
       55 [-]: CALL R6 1 1  
 L 6:  56 [-]: JUMPIF R6 L12
       57 [-]: GETTABLEKS R6 R1 K7 ["InputFilter"]
-      58 [-]: GETIMPORT R7 20 [nil]
+      58 [-]: GETIMPORT R7 20 [0x23B0B1B3]
       59 [-]: JUMPIFNOTEQ R6 R7 L12
       60 [-]: GETTABLEKS R6 R1 K0 ["Action"]
       61 [-]: JUMPXEQKS R6 K23 L7 NOT ["SECONDARY_FIRE"]
@@ -1052,9 +1052,9 @@ L11:  90 [-]: MOVE R6 R3
       93 [-]: JUMP L16
     
 L12:  94 [-]: GETTABLEKS R6 R1 K7 ["InputFilter"]
-      95 [-]: GETIMPORT R7 34 [nil]
+      95 [-]: GETIMPORT R7 34 [0xCDD5E125]
       96 [-]: JUMPIFNOTEQ R6 R7 L14
-      97 [-]: GETIMPORT R6 37 [nil]
+      97 [-]: GETIMPORT R6 37 [0xA5C556B9]
       98 [-]: GETTABLEKS R7 R1 K0 ["Action"]
       99 [-]: LOADK R8 K38 ["DOJO_"]
      100 [-]: CALL R6 2 1  
@@ -1083,14 +1083,14 @@ L16: 117 [-]: JUMPIF R5 L17
      120 [-]: MOVE R6 R4   
      121 [-]: LOADK R7 K42 ["_Invert"]
      122 [-]: CONCAT R4 R6 R7
-L17: 123 [-]: GETIMPORT R6 44 [nil]
+L17: 123 [-]: GETIMPORT R6 44 [0xAE91E43B]
      124 [-]: MOVE R8 R4   
      125 [-]: LOADB R9 1   
      126 [-]: NAMECALL R6 R6 K45 [0x42B04007]
      127 [-]: CALL R6 3 1  
      128 [-]: MOVE R4 R6   
      129 [-]: SETTABLEKS R4 R1 K46 ["Name"]
-     130 [-]: GETIMPORT R6 48 [nil]
+     130 [-]: GETIMPORT R6 48 [0x9BA7909F]
      131 [-]: GETTABLEKS R8 R1 K0 ["Action"]
      132 [-]: GETTABLEKS R9 R1 K2 ["Invert"]
      133 [-]: GETTABLEKS R10 R1 K7 ["InputFilter"]
@@ -1101,7 +1101,7 @@ L17: 123 [-]: GETIMPORT R6 44 [nil]
      138 [-]: JUMPIF R6 L18
      139 [-]: NEWTABLE R6 0 0
 L18: 140 [-]: SETTABLEKS R6 R1 K50 ["Binds"]
-     141 [-]: GETIMPORT R6 48 [nil]
+     141 [-]: GETIMPORT R6 48 [0x9BA7909F]
      142 [-]: GETTABLEKS R8 R1 K0 ["Action"]
      143 [-]: GETTABLEKS R9 R1 K2 ["Invert"]
      144 [-]: GETTABLEKS R10 R1 K7 ["InputFilter"]
@@ -1168,22 +1168,22 @@ L28: 201 [-]: GETTABLEN R7 R6 1
      203 [-]: LOADK R8 K54 ["/Lotus/Language/Menu/InputBindings_"]
      204 [-]: GETTABLEN R9 R6 1
      205 [-]: CONCAT R7 R8 R9
-     206 [-]: GETIMPORT R8 44 [nil]
+     206 [-]: GETIMPORT R8 44 [0xAE91E43B]
      207 [-]: MOVE R10 R7  
      208 [-]: LOADB R11 0  
      209 [-]: NAMECALL R8 R8 K45 [0x42B04007]
      210 [-]: CALL R8 3 1  
      211 [-]: JUMPIFNOTEQ R7 R8 L30
-     212 [-]: GETIMPORT R9 57 [nil]
+     212 [-]: GETIMPORT R9 57 [0x9AD21AE9]
      213 [-]: CALL R9 0 1  
      214 [-]: JUMPIFNOT R9 L29
-     215 [-]: GETIMPORT R9 59 [nil]
+     215 [-]: GETIMPORT R9 59 [0x66EDF04F]
      216 [-]: GETTABLEN R10 R6 1
      217 [-]: LOADK R11 K60 ["EN_"]
      218 [-]: LOADK R12 K61 [""]
      219 [-]: CALL R9 3 1  
      220 [-]: MOVE R8 R9   
-     221 [-]: GETIMPORT R9 59 [nil]
+     221 [-]: GETIMPORT R9 59 [0x66EDF04F]
      222 [-]: MOVE R10 R8  
      223 [-]: LOADK R11 K62 ["_"]
      224 [-]: LOADK R12 K61 [""]
@@ -1202,22 +1202,22 @@ L31: 233 [-]: GETTABLEN R7 R6 2
      235 [-]: LOADK R8 K54 ["/Lotus/Language/Menu/InputBindings_"]
      236 [-]: GETTABLEN R9 R6 2
      237 [-]: CONCAT R7 R8 R9
-     238 [-]: GETIMPORT R8 44 [nil]
+     238 [-]: GETIMPORT R8 44 [0xAE91E43B]
      239 [-]: MOVE R10 R7  
      240 [-]: LOADB R11 0  
      241 [-]: NAMECALL R8 R8 K45 [0x42B04007]
      242 [-]: CALL R8 3 1  
      243 [-]: JUMPIFNOTEQ R7 R8 L33
-     244 [-]: GETIMPORT R9 57 [nil]
+     244 [-]: GETIMPORT R9 57 [0x9AD21AE9]
      245 [-]: CALL R9 0 1  
      246 [-]: JUMPIFNOT R9 L32
-     247 [-]: GETIMPORT R9 59 [nil]
+     247 [-]: GETIMPORT R9 59 [0x66EDF04F]
      248 [-]: GETTABLEN R10 R6 2
      249 [-]: LOADK R11 K60 ["EN_"]
      250 [-]: LOADK R12 K61 [""]
      251 [-]: CALL R9 3 1  
      252 [-]: MOVE R8 R9   
-     253 [-]: GETIMPORT R9 59 [nil]
+     253 [-]: GETIMPORT R9 59 [0x66EDF04F]
      254 [-]: MOVE R10 R8  
      255 [-]: LOADK R11 K62 ["_"]
      256 [-]: LOADK R12 K61 [""]
@@ -1250,8 +1250,8 @@ L35: 269 [-]: LENGTH R8 R0
 
        0 [-]: LOADB R0 1   
        1 [-]: SETUPVAL R0 0
-       2 [-]: GETIMPORT R0 1 [nil]
-       3 [-]: GETIMPORT R1 3 [nil]
+       2 [-]: GETIMPORT R0 1 [0x25312C9B]
+       3 [-]: GETIMPORT R1 3 [0xAE91E43B]
        4 [-]: LOADK R2 K4 ["_root"]
        5 [-]: LOADN R3 0   
        6 [-]: NEWTABLE R4 0 2
@@ -1277,13 +1277,13 @@ L35: 269 [-]: LENGTH R8 R0
 ; Is_vararg:       0
 ; Max Stack Size:  15
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 [0xCFC01047]
        1 [-]: GETUPVAL R1 0
        2 [-]: CALL R0 1 3  
        3 [-]: FORGPREP_NEXT R0 L1
 L 0:   4 [-]: GETUPVAL R6 0
        5 [-]: GETTABLE R5 R6 R3
-       6 [-]: GETIMPORT R6 3 [nil]
+       6 [-]: GETIMPORT R6 3 [0x9BA7909F]
        7 [-]: GETTABLEKS R8 R4 K4 ["InputCode"]
        8 [-]: NAMECALL R6 R6 K5 [0xFBDF1860]
        9 [-]: CALL R6 2 1  
@@ -1296,7 +1296,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
       16 [-]: GETUPVAL R5 0
       17 [-]: GETTABLEKS R4 R5 K10 ["JUMP"]
       18 [-]: SETTABLEKS R4 R3 K7 ["Action"]
-      19 [-]: GETIMPORT R4 12 [nil]
+      19 [-]: GETIMPORT R4 12 [0xAC3BCB6D]
       20 [-]: SETTABLEKS R4 R3 K8 ["InputFilter"]
       21 [-]: CALL R1 2 0  
       22 [-]: GETUPVAL R1 1
@@ -1305,7 +1305,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
       25 [-]: GETUPVAL R5 0
       26 [-]: GETTABLEKS R4 R5 K13 ["MOVE_FORWARD"]
       27 [-]: SETTABLEKS R4 R3 K7 ["Action"]
-      28 [-]: GETIMPORT R4 12 [nil]
+      28 [-]: GETIMPORT R4 12 [0xAC3BCB6D]
       29 [-]: SETTABLEKS R4 R3 K8 ["InputFilter"]
       30 [-]: CALL R1 2 0  
       31 [-]: GETUPVAL R1 1
@@ -1314,7 +1314,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
       34 [-]: GETUPVAL R5 0
       35 [-]: GETTABLEKS R4 R5 K14 ["MOVE_LEFT"]
       36 [-]: SETTABLEKS R4 R3 K7 ["Action"]
-      37 [-]: GETIMPORT R4 12 [nil]
+      37 [-]: GETIMPORT R4 12 [0xAC3BCB6D]
       38 [-]: SETTABLEKS R4 R3 K8 ["InputFilter"]
       39 [-]: CALL R1 2 0  
       40 [-]: GETUPVAL R1 1
@@ -1323,7 +1323,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
       43 [-]: GETUPVAL R5 0
       44 [-]: GETTABLEKS R4 R5 K15 ["MOVE_BACKWARD"]
       45 [-]: SETTABLEKS R4 R3 K7 ["Action"]
-      46 [-]: GETIMPORT R4 12 [nil]
+      46 [-]: GETIMPORT R4 12 [0xAC3BCB6D]
       47 [-]: SETTABLEKS R4 R3 K8 ["InputFilter"]
       48 [-]: CALL R1 2 0  
       49 [-]: GETUPVAL R1 1
@@ -1332,7 +1332,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
       52 [-]: GETUPVAL R5 0
       53 [-]: GETTABLEKS R4 R5 K16 ["MOVE_RIGHT"]
       54 [-]: SETTABLEKS R4 R3 K7 ["Action"]
-      55 [-]: GETIMPORT R4 12 [nil]
+      55 [-]: GETIMPORT R4 12 [0xAC3BCB6D]
       56 [-]: SETTABLEKS R4 R3 K8 ["InputFilter"]
       57 [-]: CALL R1 2 0  
       58 [-]: GETUPVAL R1 1
@@ -1341,7 +1341,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
       61 [-]: GETUPVAL R5 0
       62 [-]: GETTABLEKS R4 R5 K17 ["MOVE_UP"]
       63 [-]: SETTABLEKS R4 R3 K7 ["Action"]
-      64 [-]: GETIMPORT R4 19 [nil]
+      64 [-]: GETIMPORT R4 19 [0xC3C8C187]
       65 [-]: SETTABLEKS R4 R3 K8 ["InputFilter"]
       66 [-]: CALL R1 2 0  
       67 [-]: GETUPVAL R1 1
@@ -1350,7 +1350,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
       70 [-]: GETUPVAL R5 0
       71 [-]: GETTABLEKS R4 R5 K20 ["MOVE_DOWN"]
       72 [-]: SETTABLEKS R4 R3 K7 ["Action"]
-      73 [-]: GETIMPORT R4 19 [nil]
+      73 [-]: GETIMPORT R4 19 [0xC3C8C187]
       74 [-]: SETTABLEKS R4 R3 K8 ["InputFilter"]
       75 [-]: CALL R1 2 0  
       76 [-]: GETUPVAL R1 1
@@ -1359,7 +1359,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
       79 [-]: GETUPVAL R5 0
       80 [-]: GETTABLEKS R4 R5 K21 ["FIRE_WEAPON"]
       81 [-]: SETTABLEKS R4 R3 K7 ["Action"]
-      82 [-]: GETIMPORT R4 12 [nil]
+      82 [-]: GETIMPORT R4 12 [0xAC3BCB6D]
       83 [-]: SETTABLEKS R4 R3 K8 ["InputFilter"]
       84 [-]: CALL R1 2 0  
       85 [-]: GETUPVAL R1 1
@@ -1368,7 +1368,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
       88 [-]: GETUPVAL R5 0
       89 [-]: GETTABLEKS R4 R5 K22 ["AIM_WEAPON"]
       90 [-]: SETTABLEKS R4 R3 K7 ["Action"]
-      91 [-]: GETIMPORT R4 12 [nil]
+      91 [-]: GETIMPORT R4 12 [0xAC3BCB6D]
       92 [-]: SETTABLEKS R4 R3 K8 ["InputFilter"]
       93 [-]: CALL R1 2 0  
       94 [-]: GETUPVAL R1 1
@@ -1377,7 +1377,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
       97 [-]: GETUPVAL R5 0
       98 [-]: GETTABLEKS R4 R5 K23 ["SECONDARY_FIRE"]
       99 [-]: SETTABLEKS R4 R3 K7 ["Action"]
-     100 [-]: GETIMPORT R4 12 [nil]
+     100 [-]: GETIMPORT R4 12 [0xAC3BCB6D]
      101 [-]: SETTABLEKS R4 R3 K8 ["InputFilter"]
      102 [-]: CALL R1 2 0  
      103 [-]: GETUPVAL R1 1
@@ -1386,7 +1386,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      106 [-]: GETUPVAL R5 0
      107 [-]: GETTABLEKS R4 R5 K24 ["RELOAD"]
      108 [-]: SETTABLEKS R4 R3 K7 ["Action"]
-     109 [-]: GETIMPORT R4 12 [nil]
+     109 [-]: GETIMPORT R4 12 [0xAC3BCB6D]
      110 [-]: SETTABLEKS R4 R3 K8 ["InputFilter"]
      111 [-]: CALL R1 2 0  
      112 [-]: GETUPVAL R1 1
@@ -1395,7 +1395,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      115 [-]: GETUPVAL R5 0
      116 [-]: GETTABLEKS R4 R5 K25 ["TOGGLE_CROUCH"]
      117 [-]: SETTABLEKS R4 R3 K7 ["Action"]
-     118 [-]: GETIMPORT R4 12 [nil]
+     118 [-]: GETIMPORT R4 12 [0xAC3BCB6D]
      119 [-]: SETTABLEKS R4 R3 K8 ["InputFilter"]
      120 [-]: CALL R1 2 0  
      121 [-]: GETUPVAL R1 1
@@ -1404,7 +1404,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      124 [-]: GETUPVAL R5 0
      125 [-]: GETTABLEKS R4 R5 K26 ["HOLD_TO_CROUCH"]
      126 [-]: SETTABLEKS R4 R3 K7 ["Action"]
-     127 [-]: GETIMPORT R4 12 [nil]
+     127 [-]: GETIMPORT R4 12 [0xAC3BCB6D]
      128 [-]: SETTABLEKS R4 R3 K8 ["InputFilter"]
      129 [-]: CALL R1 2 0  
      130 [-]: GETUPVAL R1 1
@@ -1413,7 +1413,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      133 [-]: GETUPVAL R5 0
      134 [-]: GETTABLEKS R4 R5 K27 ["SPRINT_ROLL"]
      135 [-]: SETTABLEKS R4 R3 K7 ["Action"]
-     136 [-]: GETIMPORT R4 12 [nil]
+     136 [-]: GETIMPORT R4 12 [0xAC3BCB6D]
      137 [-]: SETTABLEKS R4 R3 K8 ["InputFilter"]
      138 [-]: CALL R1 2 0  
      139 [-]: GETUPVAL R1 1
@@ -1422,7 +1422,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      142 [-]: GETUPVAL R5 0
      143 [-]: GETTABLEKS R4 R5 K28 ["SPRINT"]
      144 [-]: SETTABLEKS R4 R3 K7 ["Action"]
-     145 [-]: GETIMPORT R4 12 [nil]
+     145 [-]: GETIMPORT R4 12 [0xAC3BCB6D]
      146 [-]: SETTABLEKS R4 R3 K8 ["InputFilter"]
      147 [-]: CALL R1 2 0  
      148 [-]: GETUPVAL R1 1
@@ -1431,7 +1431,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      151 [-]: GETUPVAL R5 0
      152 [-]: GETTABLEKS R4 R5 K29 ["ROLL"]
      153 [-]: SETTABLEKS R4 R3 K7 ["Action"]
-     154 [-]: GETIMPORT R4 12 [nil]
+     154 [-]: GETIMPORT R4 12 [0xAC3BCB6D]
      155 [-]: SETTABLEKS R4 R3 K8 ["InputFilter"]
      156 [-]: CALL R1 2 0  
      157 [-]: GETUPVAL R1 1
@@ -1440,7 +1440,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      160 [-]: GETUPVAL R5 0
      161 [-]: GETTABLEKS R4 R5 K30 ["USE"]
      162 [-]: SETTABLEKS R4 R3 K7 ["Action"]
-     163 [-]: GETIMPORT R4 12 [nil]
+     163 [-]: GETIMPORT R4 12 [0xAC3BCB6D]
      164 [-]: SETTABLEKS R4 R3 K8 ["InputFilter"]
      165 [-]: CALL R1 2 0  
      166 [-]: GETUPVAL R1 1
@@ -1449,7 +1449,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      169 [-]: GETUPVAL R5 0
      170 [-]: GETTABLEKS R4 R5 K31 ["QUICK_MELEE"]
      171 [-]: SETTABLEKS R4 R3 K7 ["Action"]
-     172 [-]: GETIMPORT R4 12 [nil]
+     172 [-]: GETIMPORT R4 12 [0xAC3BCB6D]
      173 [-]: SETTABLEKS R4 R3 K8 ["InputFilter"]
      174 [-]: CALL R1 2 0  
      175 [-]: GETUPVAL R1 1
@@ -1458,7 +1458,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      178 [-]: GETUPVAL R5 0
      179 [-]: GETTABLEKS R4 R5 K32 ["MELEE_CHANNEL"]
      180 [-]: SETTABLEKS R4 R3 K7 ["Action"]
-     181 [-]: GETIMPORT R4 34 [nil]
+     181 [-]: GETIMPORT R4 34 [0xA94B0360]
      182 [-]: SETTABLEKS R4 R3 K8 ["InputFilter"]
      183 [-]: CALL R1 2 0  
      184 [-]: GETUPVAL R1 1
@@ -1467,7 +1467,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      187 [-]: GETUPVAL R5 0
      188 [-]: GETTABLEKS R4 R5 K35 ["SWITCH_WEAPON"]
      189 [-]: SETTABLEKS R4 R3 K7 ["Action"]
-     190 [-]: GETIMPORT R4 12 [nil]
+     190 [-]: GETIMPORT R4 12 [0xAC3BCB6D]
      191 [-]: SETTABLEKS R4 R3 K8 ["InputFilter"]
      192 [-]: CALL R1 2 0  
      193 [-]: GETUPVAL R1 1
@@ -1476,7 +1476,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      196 [-]: GETUPVAL R5 0
      197 [-]: GETTABLEKS R4 R5 K36 ["SWITCH_GUN"]
      198 [-]: SETTABLEKS R4 R3 K7 ["Action"]
-     199 [-]: GETIMPORT R4 12 [nil]
+     199 [-]: GETIMPORT R4 12 [0xAC3BCB6D]
      200 [-]: SETTABLEKS R4 R3 K8 ["InputFilter"]
      201 [-]: CALL R1 2 0  
      202 [-]: GETUPVAL R1 1
@@ -1485,7 +1485,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      205 [-]: GETUPVAL R5 0
      206 [-]: GETTABLEKS R4 R5 K37 ["ITEM_POPUP"]
      207 [-]: SETTABLEKS R4 R3 K7 ["Action"]
-     208 [-]: GETIMPORT R4 12 [nil]
+     208 [-]: GETIMPORT R4 12 [0xAC3BCB6D]
      209 [-]: SETTABLEKS R4 R3 K8 ["InputFilter"]
      210 [-]: CALL R1 2 0  
      211 [-]: GETUPVAL R1 1
@@ -1494,7 +1494,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      214 [-]: GETUPVAL R5 0
      215 [-]: GETTABLEKS R4 R5 K38 ["CHAT"]
      216 [-]: SETTABLEKS R4 R3 K7 ["Action"]
-     217 [-]: GETIMPORT R4 12 [nil]
+     217 [-]: GETIMPORT R4 12 [0xAC3BCB6D]
      218 [-]: SETTABLEKS R4 R3 K8 ["InputFilter"]
      219 [-]: CALL R1 2 0  
      220 [-]: GETUPVAL R1 1
@@ -1503,7 +1503,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      223 [-]: GETUPVAL R5 0
      224 [-]: GETTABLEKS R4 R5 K39 ["POWER_A"]
      225 [-]: SETTABLEKS R4 R3 K7 ["Action"]
-     226 [-]: GETIMPORT R4 12 [nil]
+     226 [-]: GETIMPORT R4 12 [0xAC3BCB6D]
      227 [-]: SETTABLEKS R4 R3 K8 ["InputFilter"]
      228 [-]: CALL R1 2 0  
      229 [-]: GETUPVAL R1 1
@@ -1512,7 +1512,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      232 [-]: GETUPVAL R5 0
      233 [-]: GETTABLEKS R4 R5 K40 ["POWER_B"]
      234 [-]: SETTABLEKS R4 R3 K7 ["Action"]
-     235 [-]: GETIMPORT R4 12 [nil]
+     235 [-]: GETIMPORT R4 12 [0xAC3BCB6D]
      236 [-]: SETTABLEKS R4 R3 K8 ["InputFilter"]
      237 [-]: CALL R1 2 0  
      238 [-]: GETUPVAL R1 1
@@ -1521,7 +1521,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      241 [-]: GETUPVAL R5 0
      242 [-]: GETTABLEKS R4 R5 K41 ["POWER_C"]
      243 [-]: SETTABLEKS R4 R3 K7 ["Action"]
-     244 [-]: GETIMPORT R4 12 [nil]
+     244 [-]: GETIMPORT R4 12 [0xAC3BCB6D]
      245 [-]: SETTABLEKS R4 R3 K8 ["InputFilter"]
      246 [-]: CALL R1 2 0  
      247 [-]: GETUPVAL R1 1
@@ -1530,7 +1530,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      250 [-]: GETUPVAL R5 0
      251 [-]: GETTABLEKS R4 R5 K42 ["POWER_D"]
      252 [-]: SETTABLEKS R4 R3 K7 ["Action"]
-     253 [-]: GETIMPORT R4 12 [nil]
+     253 [-]: GETIMPORT R4 12 [0xAC3BCB6D]
      254 [-]: SETTABLEKS R4 R3 K8 ["InputFilter"]
      255 [-]: CALL R1 2 0  
      256 [-]: GETUPVAL R1 1
@@ -1539,7 +1539,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      259 [-]: GETUPVAL R5 0
      260 [-]: GETTABLEKS R4 R5 K43 ["POWER_E"]
      261 [-]: SETTABLEKS R4 R3 K7 ["Action"]
-     262 [-]: GETIMPORT R4 12 [nil]
+     262 [-]: GETIMPORT R4 12 [0xAC3BCB6D]
      263 [-]: SETTABLEKS R4 R3 K8 ["InputFilter"]
      264 [-]: CALL R1 2 0  
      265 [-]: GETUPVAL R1 1
@@ -1548,7 +1548,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      268 [-]: GETUPVAL R5 0
      269 [-]: GETTABLEKS R4 R5 K44 ["NEXT_POWER"]
      270 [-]: SETTABLEKS R4 R3 K7 ["Action"]
-     271 [-]: GETIMPORT R4 12 [nil]
+     271 [-]: GETIMPORT R4 12 [0xAC3BCB6D]
      272 [-]: SETTABLEKS R4 R3 K8 ["InputFilter"]
      273 [-]: CALL R1 2 0  
      274 [-]: GETUPVAL R1 1
@@ -1557,7 +1557,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      277 [-]: GETUPVAL R5 0
      278 [-]: GETTABLEKS R4 R5 K45 ["PREVIOUS_POWER"]
      279 [-]: SETTABLEKS R4 R3 K7 ["Action"]
-     280 [-]: GETIMPORT R4 12 [nil]
+     280 [-]: GETIMPORT R4 12 [0xAC3BCB6D]
      281 [-]: SETTABLEKS R4 R3 K8 ["InputFilter"]
      282 [-]: CALL R1 2 0  
      283 [-]: GETUPVAL R1 1
@@ -1566,7 +1566,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      286 [-]: GETUPVAL R5 0
      287 [-]: GETTABLEKS R4 R5 K46 ["USE_SELECTED_POWER"]
      288 [-]: SETTABLEKS R4 R3 K7 ["Action"]
-     289 [-]: GETIMPORT R4 12 [nil]
+     289 [-]: GETIMPORT R4 12 [0xAC3BCB6D]
      290 [-]: SETTABLEKS R4 R3 K8 ["InputFilter"]
      291 [-]: CALL R1 2 0  
      292 [-]: GETUPVAL R1 1
@@ -1575,7 +1575,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      295 [-]: GETUPVAL R5 0
      296 [-]: GETTABLEKS R4 R5 K47 ["PLACE_MARKER"]
      297 [-]: SETTABLEKS R4 R3 K7 ["Action"]
-     298 [-]: GETIMPORT R4 12 [nil]
+     298 [-]: GETIMPORT R4 12 [0xAC3BCB6D]
      299 [-]: SETTABLEKS R4 R3 K8 ["InputFilter"]
      300 [-]: CALL R1 2 0  
      301 [-]: GETUPVAL R1 1
@@ -1584,7 +1584,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      304 [-]: GETUPVAL R5 0
      305 [-]: GETTABLEKS R4 R5 K48 ["REVERSE_CAMERA"]
      306 [-]: SETTABLEKS R4 R3 K7 ["Action"]
-     307 [-]: GETIMPORT R4 12 [nil]
+     307 [-]: GETIMPORT R4 12 [0xAC3BCB6D]
      308 [-]: SETTABLEKS R4 R3 K8 ["InputFilter"]
      309 [-]: CALL R1 2 0  
      310 [-]: GETUPVAL R1 1
@@ -1593,7 +1593,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      313 [-]: GETUPVAL R5 0
      314 [-]: GETTABLEKS R4 R5 K49 ["SPECTATE_NEXT_PLAYER"]
      315 [-]: SETTABLEKS R4 R3 K7 ["Action"]
-     316 [-]: GETIMPORT R4 51 [nil]
+     316 [-]: GETIMPORT R4 51 [0x938C11AE]
      317 [-]: SETTABLEKS R4 R3 K8 ["InputFilter"]
      318 [-]: CALL R1 2 0  
      319 [-]: GETUPVAL R1 1
@@ -1602,7 +1602,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      322 [-]: GETUPVAL R5 0
      323 [-]: GETTABLEKS R4 R5 K52 ["SPECTATE_PREV_PLAYER"]
      324 [-]: SETTABLEKS R4 R3 K7 ["Action"]
-     325 [-]: GETIMPORT R4 51 [nil]
+     325 [-]: GETIMPORT R4 51 [0x938C11AE]
      326 [-]: SETTABLEKS R4 R3 K8 ["InputFilter"]
      327 [-]: CALL R1 2 0  
      328 [-]: GETUPVAL R1 1
@@ -1611,7 +1611,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      331 [-]: GETUPVAL R5 0
      332 [-]: GETTABLEKS R4 R5 K53 ["SHOW_PLAYER_LIST"]
      333 [-]: SETTABLEKS R4 R3 K7 ["Action"]
-     334 [-]: GETIMPORT R4 12 [nil]
+     334 [-]: GETIMPORT R4 12 [0xAC3BCB6D]
      335 [-]: SETTABLEKS R4 R3 K8 ["InputFilter"]
      336 [-]: CALL R1 2 0  
      337 [-]: GETUPVAL R1 1
@@ -1620,7 +1620,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      340 [-]: GETUPVAL R5 0
      341 [-]: GETTABLEKS R4 R5 K54 ["PUSH_TO_TALK"]
      342 [-]: SETTABLEKS R4 R3 K7 ["Action"]
-     343 [-]: GETIMPORT R4 12 [nil]
+     343 [-]: GETIMPORT R4 12 [0xAC3BCB6D]
      344 [-]: SETTABLEKS R4 R3 K8 ["InputFilter"]
      345 [-]: CALL R1 2 0  
      346 [-]: GETUPVAL R1 1
@@ -1629,7 +1629,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      349 [-]: GETUPVAL R5 0
      350 [-]: GETTABLEKS R4 R5 K55 ["INSPECT"]
      351 [-]: SETTABLEKS R4 R3 K7 ["Action"]
-     352 [-]: GETIMPORT R4 12 [nil]
+     352 [-]: GETIMPORT R4 12 [0xAC3BCB6D]
      353 [-]: SETTABLEKS R4 R3 K8 ["InputFilter"]
      354 [-]: CALL R1 2 0  
      355 [-]: GETUPVAL R1 1
@@ -1638,7 +1638,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      358 [-]: GETUPVAL R5 0
      359 [-]: GETTABLEKS R4 R5 K56 ["GEAR_HOTKEY_0"]
      360 [-]: SETTABLEKS R4 R3 K7 ["Action"]
-     361 [-]: GETIMPORT R4 12 [nil]
+     361 [-]: GETIMPORT R4 12 [0xAC3BCB6D]
      362 [-]: SETTABLEKS R4 R3 K8 ["InputFilter"]
      363 [-]: CALL R1 2 0  
      364 [-]: GETUPVAL R1 1
@@ -1647,7 +1647,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      367 [-]: GETUPVAL R5 0
      368 [-]: GETTABLEKS R4 R5 K57 ["GEAR_HOTKEY_1"]
      369 [-]: SETTABLEKS R4 R3 K7 ["Action"]
-     370 [-]: GETIMPORT R4 12 [nil]
+     370 [-]: GETIMPORT R4 12 [0xAC3BCB6D]
      371 [-]: SETTABLEKS R4 R3 K8 ["InputFilter"]
      372 [-]: CALL R1 2 0  
      373 [-]: GETUPVAL R1 1
@@ -1656,7 +1656,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      376 [-]: GETUPVAL R5 0
      377 [-]: GETTABLEKS R4 R5 K58 ["GEAR_HOTKEY_2"]
      378 [-]: SETTABLEKS R4 R3 K7 ["Action"]
-     379 [-]: GETIMPORT R4 12 [nil]
+     379 [-]: GETIMPORT R4 12 [0xAC3BCB6D]
      380 [-]: SETTABLEKS R4 R3 K8 ["InputFilter"]
      381 [-]: CALL R1 2 0  
      382 [-]: GETUPVAL R1 1
@@ -1665,7 +1665,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      385 [-]: GETUPVAL R5 0
      386 [-]: GETTABLEKS R4 R5 K59 ["GEAR_HOTKEY_3"]
      387 [-]: SETTABLEKS R4 R3 K7 ["Action"]
-     388 [-]: GETIMPORT R4 12 [nil]
+     388 [-]: GETIMPORT R4 12 [0xAC3BCB6D]
      389 [-]: SETTABLEKS R4 R3 K8 ["InputFilter"]
      390 [-]: CALL R1 2 0  
      391 [-]: GETUPVAL R1 1
@@ -1674,7 +1674,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      394 [-]: GETUPVAL R5 0
      395 [-]: GETTABLEKS R4 R5 K60 ["GEAR_HOTKEY_4"]
      396 [-]: SETTABLEKS R4 R3 K7 ["Action"]
-     397 [-]: GETIMPORT R4 12 [nil]
+     397 [-]: GETIMPORT R4 12 [0xAC3BCB6D]
      398 [-]: SETTABLEKS R4 R3 K8 ["InputFilter"]
      399 [-]: CALL R1 2 0  
      400 [-]: GETUPVAL R1 1
@@ -1683,7 +1683,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      403 [-]: GETUPVAL R5 0
      404 [-]: GETTABLEKS R4 R5 K61 ["GEAR_HOTKEY_5"]
      405 [-]: SETTABLEKS R4 R3 K7 ["Action"]
-     406 [-]: GETIMPORT R4 12 [nil]
+     406 [-]: GETIMPORT R4 12 [0xAC3BCB6D]
      407 [-]: SETTABLEKS R4 R3 K8 ["InputFilter"]
      408 [-]: CALL R1 2 0  
      409 [-]: GETUPVAL R1 1
@@ -1692,7 +1692,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      412 [-]: GETUPVAL R5 0
      413 [-]: GETTABLEKS R4 R5 K62 ["GEAR_HOTKEY_6"]
      414 [-]: SETTABLEKS R4 R3 K7 ["Action"]
-     415 [-]: GETIMPORT R4 12 [nil]
+     415 [-]: GETIMPORT R4 12 [0xAC3BCB6D]
      416 [-]: SETTABLEKS R4 R3 K8 ["InputFilter"]
      417 [-]: CALL R1 2 0  
      418 [-]: GETUPVAL R1 1
@@ -1701,7 +1701,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      421 [-]: GETUPVAL R5 0
      422 [-]: GETTABLEKS R4 R5 K63 ["GEAR_HOTKEY_7"]
      423 [-]: SETTABLEKS R4 R3 K7 ["Action"]
-     424 [-]: GETIMPORT R4 12 [nil]
+     424 [-]: GETIMPORT R4 12 [0xAC3BCB6D]
      425 [-]: SETTABLEKS R4 R3 K8 ["InputFilter"]
      426 [-]: CALL R1 2 0  
      427 [-]: GETUPVAL R1 1
@@ -1710,7 +1710,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      430 [-]: GETUPVAL R5 0
      431 [-]: GETTABLEKS R4 R5 K64 ["GEAR_HOTKEY_8"]
      432 [-]: SETTABLEKS R4 R3 K7 ["Action"]
-     433 [-]: GETIMPORT R4 12 [nil]
+     433 [-]: GETIMPORT R4 12 [0xAC3BCB6D]
      434 [-]: SETTABLEKS R4 R3 K8 ["InputFilter"]
      435 [-]: CALL R1 2 0  
      436 [-]: GETUPVAL R1 1
@@ -1719,7 +1719,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      439 [-]: GETUPVAL R5 0
      440 [-]: GETTABLEKS R4 R5 K65 ["GEAR_HOTKEY_9"]
      441 [-]: SETTABLEKS R4 R3 K7 ["Action"]
-     442 [-]: GETIMPORT R4 12 [nil]
+     442 [-]: GETIMPORT R4 12 [0xAC3BCB6D]
      443 [-]: SETTABLEKS R4 R3 K8 ["InputFilter"]
      444 [-]: CALL R1 2 0  
      445 [-]: GETUPVAL R1 1
@@ -1728,7 +1728,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      448 [-]: GETUPVAL R5 0
      449 [-]: GETTABLEKS R4 R5 K66 ["GEAR_HOTKEY_10"]
      450 [-]: SETTABLEKS R4 R3 K7 ["Action"]
-     451 [-]: GETIMPORT R4 12 [nil]
+     451 [-]: GETIMPORT R4 12 [0xAC3BCB6D]
      452 [-]: SETTABLEKS R4 R3 K8 ["InputFilter"]
      453 [-]: CALL R1 2 0  
      454 [-]: GETUPVAL R1 1
@@ -1737,7 +1737,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      457 [-]: GETUPVAL R5 0
      458 [-]: GETTABLEKS R4 R5 K67 ["GEAR_HOTKEY_11"]
      459 [-]: SETTABLEKS R4 R3 K7 ["Action"]
-     460 [-]: GETIMPORT R4 12 [nil]
+     460 [-]: GETIMPORT R4 12 [0xAC3BCB6D]
      461 [-]: SETTABLEKS R4 R3 K8 ["InputFilter"]
      462 [-]: CALL R1 2 0  
      463 [-]: GETUPVAL R1 1
@@ -1746,7 +1746,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      466 [-]: GETUPVAL R5 0
      467 [-]: GETTABLEKS R4 R5 K68 ["EMOTE_HOTKEY_0"]
      468 [-]: SETTABLEKS R4 R3 K7 ["Action"]
-     469 [-]: GETIMPORT R4 12 [nil]
+     469 [-]: GETIMPORT R4 12 [0xAC3BCB6D]
      470 [-]: SETTABLEKS R4 R3 K8 ["InputFilter"]
      471 [-]: CALL R1 2 0  
      472 [-]: GETUPVAL R1 1
@@ -1755,7 +1755,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      475 [-]: GETUPVAL R5 0
      476 [-]: GETTABLEKS R4 R5 K69 ["EMOTE_HOTKEY_1"]
      477 [-]: SETTABLEKS R4 R3 K7 ["Action"]
-     478 [-]: GETIMPORT R4 12 [nil]
+     478 [-]: GETIMPORT R4 12 [0xAC3BCB6D]
      479 [-]: SETTABLEKS R4 R3 K8 ["InputFilter"]
      480 [-]: CALL R1 2 0  
      481 [-]: GETUPVAL R1 1
@@ -1764,7 +1764,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      484 [-]: GETUPVAL R5 0
      485 [-]: GETTABLEKS R4 R5 K70 ["EMOTE_HOTKEY_2"]
      486 [-]: SETTABLEKS R4 R3 K7 ["Action"]
-     487 [-]: GETIMPORT R4 12 [nil]
+     487 [-]: GETIMPORT R4 12 [0xAC3BCB6D]
      488 [-]: SETTABLEKS R4 R3 K8 ["InputFilter"]
      489 [-]: CALL R1 2 0  
      490 [-]: GETUPVAL R1 1
@@ -1773,7 +1773,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      493 [-]: GETUPVAL R5 0
      494 [-]: GETTABLEKS R4 R5 K71 ["EMOTE_HOTKEY_3"]
      495 [-]: SETTABLEKS R4 R3 K7 ["Action"]
-     496 [-]: GETIMPORT R4 12 [nil]
+     496 [-]: GETIMPORT R4 12 [0xAC3BCB6D]
      497 [-]: SETTABLEKS R4 R3 K8 ["InputFilter"]
      498 [-]: CALL R1 2 0  
      499 [-]: GETUPVAL R1 1
@@ -1782,7 +1782,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      502 [-]: GETUPVAL R5 0
      503 [-]: GETTABLEKS R4 R5 K72 ["EMOTE_HOTKEY_4"]
      504 [-]: SETTABLEKS R4 R3 K7 ["Action"]
-     505 [-]: GETIMPORT R4 12 [nil]
+     505 [-]: GETIMPORT R4 12 [0xAC3BCB6D]
      506 [-]: SETTABLEKS R4 R3 K8 ["InputFilter"]
      507 [-]: CALL R1 2 0  
      508 [-]: GETUPVAL R1 1
@@ -1791,7 +1791,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      511 [-]: GETUPVAL R5 0
      512 [-]: GETTABLEKS R4 R5 K73 ["EMOTE_HOTKEY_5"]
      513 [-]: SETTABLEKS R4 R3 K7 ["Action"]
-     514 [-]: GETIMPORT R4 12 [nil]
+     514 [-]: GETIMPORT R4 12 [0xAC3BCB6D]
      515 [-]: SETTABLEKS R4 R3 K8 ["InputFilter"]
      516 [-]: CALL R1 2 0  
      517 [-]: GETUPVAL R1 1
@@ -1800,7 +1800,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      520 [-]: GETUPVAL R5 0
      521 [-]: GETTABLEKS R4 R5 K74 ["EMOTE_HOTKEY_6"]
      522 [-]: SETTABLEKS R4 R3 K7 ["Action"]
-     523 [-]: GETIMPORT R4 12 [nil]
+     523 [-]: GETIMPORT R4 12 [0xAC3BCB6D]
      524 [-]: SETTABLEKS R4 R3 K8 ["InputFilter"]
      525 [-]: CALL R1 2 0  
      526 [-]: GETUPVAL R1 1
@@ -1809,7 +1809,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      529 [-]: GETUPVAL R5 0
      530 [-]: GETTABLEKS R4 R5 K75 ["EMOTE_HOTKEY_7"]
      531 [-]: SETTABLEKS R4 R3 K7 ["Action"]
-     532 [-]: GETIMPORT R4 12 [nil]
+     532 [-]: GETIMPORT R4 12 [0xAC3BCB6D]
      533 [-]: SETTABLEKS R4 R3 K8 ["InputFilter"]
      534 [-]: CALL R1 2 0  
      535 [-]: GETUPVAL R1 1
@@ -1818,7 +1818,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      538 [-]: GETUPVAL R5 0
      539 [-]: GETTABLEKS R4 R5 K76 ["EMOTE_HOTKEY_8"]
      540 [-]: SETTABLEKS R4 R3 K7 ["Action"]
-     541 [-]: GETIMPORT R4 12 [nil]
+     541 [-]: GETIMPORT R4 12 [0xAC3BCB6D]
      542 [-]: SETTABLEKS R4 R3 K8 ["InputFilter"]
      543 [-]: CALL R1 2 0  
      544 [-]: GETUPVAL R1 1
@@ -1827,7 +1827,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      547 [-]: GETUPVAL R5 0
      548 [-]: GETTABLEKS R4 R5 K77 ["EMOTE_HOTKEY_9"]
      549 [-]: SETTABLEKS R4 R3 K7 ["Action"]
-     550 [-]: GETIMPORT R4 12 [nil]
+     550 [-]: GETIMPORT R4 12 [0xAC3BCB6D]
      551 [-]: SETTABLEKS R4 R3 K8 ["InputFilter"]
      552 [-]: CALL R1 2 0  
      553 [-]: GETUPVAL R1 1
@@ -1836,7 +1836,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      556 [-]: GETUPVAL R5 0
      557 [-]: GETTABLEKS R4 R5 K78 ["EMOTE_HOTKEY_10"]
      558 [-]: SETTABLEKS R4 R3 K7 ["Action"]
-     559 [-]: GETIMPORT R4 12 [nil]
+     559 [-]: GETIMPORT R4 12 [0xAC3BCB6D]
      560 [-]: SETTABLEKS R4 R3 K8 ["InputFilter"]
      561 [-]: CALL R1 2 0  
      562 [-]: GETUPVAL R1 1
@@ -1845,7 +1845,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      565 [-]: GETUPVAL R5 0
      566 [-]: GETTABLEKS R4 R5 K79 ["EMOTE_HOTKEY_11"]
      567 [-]: SETTABLEKS R4 R3 K7 ["Action"]
-     568 [-]: GETIMPORT R4 12 [nil]
+     568 [-]: GETIMPORT R4 12 [0xAC3BCB6D]
      569 [-]: SETTABLEKS R4 R3 K8 ["InputFilter"]
      570 [-]: CALL R1 2 0  
      571 [-]: GETUPVAL R1 1
@@ -1854,7 +1854,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      574 [-]: GETUPVAL R5 0
      575 [-]: GETTABLEKS R4 R5 K80 ["SHOW_LEVEL_MAP"]
      576 [-]: SETTABLEKS R4 R3 K7 ["Action"]
-     577 [-]: GETIMPORT R4 12 [nil]
+     577 [-]: GETIMPORT R4 12 [0xAC3BCB6D]
      578 [-]: SETTABLEKS R4 R3 K8 ["InputFilter"]
      579 [-]: CALL R1 2 0  
      580 [-]: GETUPVAL R1 1
@@ -1863,7 +1863,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      583 [-]: GETUPVAL R5 0
      584 [-]: GETTABLEKS R4 R5 K81 ["VIEW_MISSION_PROGRESS"]
      585 [-]: SETTABLEKS R4 R3 K7 ["Action"]
-     586 [-]: GETIMPORT R4 12 [nil]
+     586 [-]: GETIMPORT R4 12 [0xAC3BCB6D]
      587 [-]: SETTABLEKS R4 R3 K8 ["InputFilter"]
      588 [-]: CALL R1 2 0  
      589 [-]: GETUPVAL R1 1
@@ -1872,7 +1872,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      592 [-]: GETUPVAL R5 0
      593 [-]: GETTABLEKS R4 R5 K82 ["VIEW_QUICK_PROGRESS"]
      594 [-]: SETTABLEKS R4 R3 K7 ["Action"]
-     595 [-]: GETIMPORT R4 12 [nil]
+     595 [-]: GETIMPORT R4 12 [0xAC3BCB6D]
      596 [-]: SETTABLEKS R4 R3 K8 ["InputFilter"]
      597 [-]: CALL R1 2 0  
      598 [-]: GETUPVAL R1 1
@@ -1881,7 +1881,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      601 [-]: GETUPVAL R5 0
      602 [-]: GETTABLEKS R4 R5 K83 ["EQUIP_RAILJACK_REPAIR_TOOL"]
      603 [-]: SETTABLEKS R4 R3 K7 ["Action"]
-     604 [-]: GETIMPORT R4 12 [nil]
+     604 [-]: GETIMPORT R4 12 [0xAC3BCB6D]
      605 [-]: SETTABLEKS R4 R3 K8 ["InputFilter"]
      606 [-]: CALL R1 2 0  
      607 [-]: GETUPVAL R1 1
@@ -1890,7 +1890,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      610 [-]: GETUPVAL R5 0
      611 [-]: GETTABLEKS R4 R5 K84 ["VIEW_RAILJACK_SYSTEMS"]
      612 [-]: SETTABLEKS R4 R3 K7 ["Action"]
-     613 [-]: GETIMPORT R4 12 [nil]
+     613 [-]: GETIMPORT R4 12 [0xAC3BCB6D]
      614 [-]: SETTABLEKS R4 R3 K8 ["InputFilter"]
      615 [-]: CALL R1 2 0  
      616 [-]: GETUPVAL R1 1
@@ -1899,7 +1899,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      619 [-]: GETUPVAL R5 0
      620 [-]: GETTABLEKS R4 R5 K85 ["SELECT_SUB_GEAR_0"]
      621 [-]: SETTABLEKS R4 R3 K7 ["Action"]
-     622 [-]: GETIMPORT R4 87 [nil]
+     622 [-]: GETIMPORT R4 87 [0xC27D7442]
      623 [-]: SETTABLEKS R4 R3 K8 ["InputFilter"]
      624 [-]: CALL R1 2 0  
      625 [-]: GETUPVAL R1 1
@@ -1908,7 +1908,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      628 [-]: GETUPVAL R5 0
      629 [-]: GETTABLEKS R4 R5 K88 ["SELECT_SUB_GEAR_1"]
      630 [-]: SETTABLEKS R4 R3 K7 ["Action"]
-     631 [-]: GETIMPORT R4 87 [nil]
+     631 [-]: GETIMPORT R4 87 [0xC27D7442]
      632 [-]: SETTABLEKS R4 R3 K8 ["InputFilter"]
      633 [-]: CALL R1 2 0  
      634 [-]: GETUPVAL R1 1
@@ -1917,7 +1917,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      637 [-]: GETUPVAL R5 0
      638 [-]: GETTABLEKS R4 R5 K89 ["SELECT_SUB_GEAR_2"]
      639 [-]: SETTABLEKS R4 R3 K7 ["Action"]
-     640 [-]: GETIMPORT R4 87 [nil]
+     640 [-]: GETIMPORT R4 87 [0xC27D7442]
      641 [-]: SETTABLEKS R4 R3 K8 ["InputFilter"]
      642 [-]: CALL R1 2 0  
      643 [-]: NEWTABLE R1 0 0
@@ -1927,7 +1927,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      647 [-]: GETUPVAL R6 0
      648 [-]: GETTABLEKS R5 R6 K90 ["CHECK"]
      649 [-]: SETTABLEKS R5 R4 K7 ["Action"]
-     650 [-]: GETIMPORT R5 92 [nil]
+     650 [-]: GETIMPORT R5 92 [0x3F360319]
      651 [-]: SETTABLEKS R5 R4 K8 ["InputFilter"]
      652 [-]: CALL R2 2 0  
      653 [-]: GETUPVAL R2 1
@@ -1936,7 +1936,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      656 [-]: GETUPVAL R6 0
      657 [-]: GETTABLEKS R5 R6 K93 ["BALL_MAGNET"]
      658 [-]: SETTABLEKS R5 R4 K7 ["Action"]
-     659 [-]: GETIMPORT R5 92 [nil]
+     659 [-]: GETIMPORT R5 92 [0x3F360319]
      660 [-]: SETTABLEKS R5 R4 K8 ["InputFilter"]
      661 [-]: CALL R2 2 0  
      662 [-]: GETUPVAL R2 1
@@ -1945,7 +1945,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      665 [-]: GETUPVAL R6 0
      666 [-]: GETTABLEKS R5 R6 K94 ["THROW"]
      667 [-]: SETTABLEKS R5 R4 K7 ["Action"]
-     668 [-]: GETIMPORT R5 92 [nil]
+     668 [-]: GETIMPORT R5 92 [0x3F360319]
      669 [-]: SETTABLEKS R5 R4 K8 ["InputFilter"]
      670 [-]: CALL R2 2 0  
      671 [-]: GETUPVAL R2 1
@@ -1954,7 +1954,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      674 [-]: GETUPVAL R6 0
      675 [-]: GETTABLEKS R5 R6 K95 ["PASS"]
      676 [-]: SETTABLEKS R5 R4 K7 ["Action"]
-     677 [-]: GETIMPORT R5 92 [nil]
+     677 [-]: GETIMPORT R5 92 [0x3F360319]
      678 [-]: SETTABLEKS R5 R4 K8 ["InputFilter"]
      679 [-]: CALL R2 2 0  
      680 [-]: GETUPVAL R2 1
@@ -1963,7 +1963,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      683 [-]: GETUPVAL R6 0
      684 [-]: GETTABLEKS R5 R6 K10 ["JUMP"]
      685 [-]: SETTABLEKS R5 R4 K7 ["Action"]
-     686 [-]: GETIMPORT R5 92 [nil]
+     686 [-]: GETIMPORT R5 92 [0x3F360319]
      687 [-]: SETTABLEKS R5 R4 K8 ["InputFilter"]
      688 [-]: CALL R2 2 0  
      689 [-]: GETUPVAL R2 1
@@ -1972,7 +1972,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      692 [-]: GETUPVAL R6 0
      693 [-]: GETTABLEKS R5 R6 K13 ["MOVE_FORWARD"]
      694 [-]: SETTABLEKS R5 R4 K7 ["Action"]
-     695 [-]: GETIMPORT R5 92 [nil]
+     695 [-]: GETIMPORT R5 92 [0x3F360319]
      696 [-]: SETTABLEKS R5 R4 K8 ["InputFilter"]
      697 [-]: CALL R2 2 0  
      698 [-]: GETUPVAL R2 1
@@ -1981,7 +1981,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      701 [-]: GETUPVAL R6 0
      702 [-]: GETTABLEKS R5 R6 K14 ["MOVE_LEFT"]
      703 [-]: SETTABLEKS R5 R4 K7 ["Action"]
-     704 [-]: GETIMPORT R5 92 [nil]
+     704 [-]: GETIMPORT R5 92 [0x3F360319]
      705 [-]: SETTABLEKS R5 R4 K8 ["InputFilter"]
      706 [-]: CALL R2 2 0  
      707 [-]: GETUPVAL R2 1
@@ -1990,7 +1990,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      710 [-]: GETUPVAL R6 0
      711 [-]: GETTABLEKS R5 R6 K15 ["MOVE_BACKWARD"]
      712 [-]: SETTABLEKS R5 R4 K7 ["Action"]
-     713 [-]: GETIMPORT R5 92 [nil]
+     713 [-]: GETIMPORT R5 92 [0x3F360319]
      714 [-]: SETTABLEKS R5 R4 K8 ["InputFilter"]
      715 [-]: CALL R2 2 0  
      716 [-]: GETUPVAL R2 1
@@ -1999,7 +1999,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      719 [-]: GETUPVAL R6 0
      720 [-]: GETTABLEKS R5 R6 K16 ["MOVE_RIGHT"]
      721 [-]: SETTABLEKS R5 R4 K7 ["Action"]
-     722 [-]: GETIMPORT R5 92 [nil]
+     722 [-]: GETIMPORT R5 92 [0x3F360319]
      723 [-]: SETTABLEKS R5 R4 K8 ["InputFilter"]
      724 [-]: CALL R2 2 0  
      725 [-]: GETUPVAL R2 1
@@ -2008,7 +2008,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      728 [-]: GETUPVAL R6 0
      729 [-]: GETTABLEKS R5 R6 K25 ["TOGGLE_CROUCH"]
      730 [-]: SETTABLEKS R5 R4 K7 ["Action"]
-     731 [-]: GETIMPORT R5 92 [nil]
+     731 [-]: GETIMPORT R5 92 [0x3F360319]
      732 [-]: SETTABLEKS R5 R4 K8 ["InputFilter"]
      733 [-]: CALL R2 2 0  
      734 [-]: GETUPVAL R2 1
@@ -2017,7 +2017,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      737 [-]: GETUPVAL R6 0
      738 [-]: GETTABLEKS R5 R6 K26 ["HOLD_TO_CROUCH"]
      739 [-]: SETTABLEKS R5 R4 K7 ["Action"]
-     740 [-]: GETIMPORT R5 92 [nil]
+     740 [-]: GETIMPORT R5 92 [0x3F360319]
      741 [-]: SETTABLEKS R5 R4 K8 ["InputFilter"]
      742 [-]: CALL R2 2 0  
      743 [-]: GETUPVAL R2 1
@@ -2026,7 +2026,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      746 [-]: GETUPVAL R6 0
      747 [-]: GETTABLEKS R5 R6 K27 ["SPRINT_ROLL"]
      748 [-]: SETTABLEKS R5 R4 K7 ["Action"]
-     749 [-]: GETIMPORT R5 92 [nil]
+     749 [-]: GETIMPORT R5 92 [0x3F360319]
      750 [-]: SETTABLEKS R5 R4 K8 ["InputFilter"]
      751 [-]: CALL R2 2 0  
      752 [-]: GETUPVAL R2 1
@@ -2035,7 +2035,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      755 [-]: GETUPVAL R6 0
      756 [-]: GETTABLEKS R5 R6 K28 ["SPRINT"]
      757 [-]: SETTABLEKS R5 R4 K7 ["Action"]
-     758 [-]: GETIMPORT R5 92 [nil]
+     758 [-]: GETIMPORT R5 92 [0x3F360319]
      759 [-]: SETTABLEKS R5 R4 K8 ["InputFilter"]
      760 [-]: CALL R2 2 0  
      761 [-]: GETUPVAL R2 1
@@ -2044,7 +2044,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      764 [-]: GETUPVAL R6 0
      765 [-]: GETTABLEKS R5 R6 K29 ["ROLL"]
      766 [-]: SETTABLEKS R5 R4 K7 ["Action"]
-     767 [-]: GETIMPORT R5 92 [nil]
+     767 [-]: GETIMPORT R5 92 [0x3F360319]
      768 [-]: SETTABLEKS R5 R4 K8 ["InputFilter"]
      769 [-]: CALL R2 2 0  
      770 [-]: GETUPVAL R2 1
@@ -2053,7 +2053,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      773 [-]: GETUPVAL R6 0
      774 [-]: GETTABLEKS R5 R6 K30 ["USE"]
      775 [-]: SETTABLEKS R5 R4 K7 ["Action"]
-     776 [-]: GETIMPORT R5 92 [nil]
+     776 [-]: GETIMPORT R5 92 [0x3F360319]
      777 [-]: SETTABLEKS R5 R4 K8 ["InputFilter"]
      778 [-]: CALL R2 2 0  
      779 [-]: GETUPVAL R2 1
@@ -2062,7 +2062,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      782 [-]: GETUPVAL R6 0
      783 [-]: GETTABLEKS R5 R6 K37 ["ITEM_POPUP"]
      784 [-]: SETTABLEKS R5 R4 K7 ["Action"]
-     785 [-]: GETIMPORT R5 92 [nil]
+     785 [-]: GETIMPORT R5 92 [0x3F360319]
      786 [-]: SETTABLEKS R5 R4 K8 ["InputFilter"]
      787 [-]: CALL R2 2 0  
      788 [-]: GETUPVAL R2 1
@@ -2071,7 +2071,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      791 [-]: GETUPVAL R6 0
      792 [-]: GETTABLEKS R5 R6 K38 ["CHAT"]
      793 [-]: SETTABLEKS R5 R4 K7 ["Action"]
-     794 [-]: GETIMPORT R5 92 [nil]
+     794 [-]: GETIMPORT R5 92 [0x3F360319]
      795 [-]: SETTABLEKS R5 R4 K8 ["InputFilter"]
      796 [-]: CALL R2 2 0  
      797 [-]: GETUPVAL R2 1
@@ -2080,7 +2080,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      800 [-]: GETUPVAL R6 0
      801 [-]: GETTABLEKS R5 R6 K47 ["PLACE_MARKER"]
      802 [-]: SETTABLEKS R5 R4 K7 ["Action"]
-     803 [-]: GETIMPORT R5 92 [nil]
+     803 [-]: GETIMPORT R5 92 [0x3F360319]
      804 [-]: SETTABLEKS R5 R4 K8 ["InputFilter"]
      805 [-]: CALL R2 2 0  
      806 [-]: GETUPVAL R2 1
@@ -2089,7 +2089,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      809 [-]: GETUPVAL R6 0
      810 [-]: GETTABLEKS R5 R6 K48 ["REVERSE_CAMERA"]
      811 [-]: SETTABLEKS R5 R4 K7 ["Action"]
-     812 [-]: GETIMPORT R5 92 [nil]
+     812 [-]: GETIMPORT R5 92 [0x3F360319]
      813 [-]: SETTABLEKS R5 R4 K8 ["InputFilter"]
      814 [-]: CALL R2 2 0  
      815 [-]: GETUPVAL R2 1
@@ -2098,7 +2098,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      818 [-]: GETUPVAL R6 0
      819 [-]: GETTABLEKS R5 R6 K81 ["VIEW_MISSION_PROGRESS"]
      820 [-]: SETTABLEKS R5 R4 K7 ["Action"]
-     821 [-]: GETIMPORT R5 92 [nil]
+     821 [-]: GETIMPORT R5 92 [0x3F360319]
      822 [-]: SETTABLEKS R5 R4 K8 ["InputFilter"]
      823 [-]: CALL R2 2 0  
      824 [-]: GETUPVAL R2 1
@@ -2107,7 +2107,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      827 [-]: GETUPVAL R6 0
      828 [-]: GETTABLEKS R5 R6 K82 ["VIEW_QUICK_PROGRESS"]
      829 [-]: SETTABLEKS R5 R4 K7 ["Action"]
-     830 [-]: GETIMPORT R5 92 [nil]
+     830 [-]: GETIMPORT R5 92 [0x3F360319]
      831 [-]: SETTABLEKS R5 R4 K8 ["InputFilter"]
      832 [-]: CALL R2 2 0  
      833 [-]: NEWTABLE R2 0 0
@@ -2117,7 +2117,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      837 [-]: GETUPVAL R7 0
      838 [-]: GETTABLEKS R6 R7 K96 ["PLACEMENT_ADD"]
      839 [-]: SETTABLEKS R6 R5 K7 ["Action"]
-     840 [-]: GETIMPORT R6 98 [nil]
+     840 [-]: GETIMPORT R6 98 [0xCDD5E125]
      841 [-]: SETTABLEKS R6 R5 K8 ["InputFilter"]
      842 [-]: CALL R3 2 0  
      843 [-]: GETUPVAL R3 1
@@ -2126,7 +2126,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      846 [-]: GETUPVAL R7 0
      847 [-]: GETTABLEKS R6 R7 K99 ["PLACEMENT_EDIT"]
      848 [-]: SETTABLEKS R6 R5 K7 ["Action"]
-     849 [-]: GETIMPORT R6 98 [nil]
+     849 [-]: GETIMPORT R6 98 [0xCDD5E125]
      850 [-]: SETTABLEKS R6 R5 K8 ["InputFilter"]
      851 [-]: CALL R3 2 0  
      852 [-]: GETUPVAL R3 1
@@ -2135,7 +2135,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      855 [-]: GETUPVAL R7 0
      856 [-]: GETTABLEKS R6 R7 K100 ["PLACEMENT_PLACE"]
      857 [-]: SETTABLEKS R6 R5 K7 ["Action"]
-     858 [-]: GETIMPORT R6 98 [nil]
+     858 [-]: GETIMPORT R6 98 [0xCDD5E125]
      859 [-]: SETTABLEKS R6 R5 K8 ["InputFilter"]
      860 [-]: CALL R3 2 0  
      861 [-]: GETUPVAL R3 1
@@ -2144,7 +2144,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      864 [-]: GETUPVAL R7 0
      865 [-]: GETTABLEKS R6 R7 K101 ["PLACEMENT_ROTATE"]
      866 [-]: SETTABLEKS R6 R5 K7 ["Action"]
-     867 [-]: GETIMPORT R6 98 [nil]
+     867 [-]: GETIMPORT R6 98 [0xCDD5E125]
      868 [-]: SETTABLEKS R6 R5 K8 ["InputFilter"]
      869 [-]: CALL R3 2 0  
      870 [-]: GETUPVAL R3 1
@@ -2153,7 +2153,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      873 [-]: GETUPVAL R7 0
      874 [-]: GETTABLEKS R6 R7 K102 ["PLACEMENT_CHANGE_ROTATION"]
      875 [-]: SETTABLEKS R6 R5 K7 ["Action"]
-     876 [-]: GETIMPORT R6 98 [nil]
+     876 [-]: GETIMPORT R6 98 [0xCDD5E125]
      877 [-]: SETTABLEKS R6 R5 K8 ["InputFilter"]
      878 [-]: CALL R3 2 0  
      879 [-]: GETUPVAL R3 1
@@ -2162,7 +2162,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      882 [-]: GETUPVAL R7 0
      883 [-]: GETTABLEKS R6 R7 K103 ["PLACEMENT_SCALE"]
      884 [-]: SETTABLEKS R6 R5 K7 ["Action"]
-     885 [-]: GETIMPORT R6 98 [nil]
+     885 [-]: GETIMPORT R6 98 [0xCDD5E125]
      886 [-]: SETTABLEKS R6 R5 K8 ["InputFilter"]
      887 [-]: CALL R3 2 0  
      888 [-]: GETUPVAL R3 1
@@ -2171,7 +2171,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      891 [-]: GETUPVAL R7 0
      892 [-]: GETTABLEKS R6 R7 K104 ["PLACEMENT_SCALE_UP"]
      893 [-]: SETTABLEKS R6 R5 K7 ["Action"]
-     894 [-]: GETIMPORT R6 98 [nil]
+     894 [-]: GETIMPORT R6 98 [0xCDD5E125]
      895 [-]: SETTABLEKS R6 R5 K8 ["InputFilter"]
      896 [-]: CALL R3 2 0  
      897 [-]: GETUPVAL R3 1
@@ -2180,7 +2180,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      900 [-]: GETUPVAL R7 0
      901 [-]: GETTABLEKS R6 R7 K105 ["PLACEMENT_SCALE_DOWN"]
      902 [-]: SETTABLEKS R6 R5 K7 ["Action"]
-     903 [-]: GETIMPORT R6 98 [nil]
+     903 [-]: GETIMPORT R6 98 [0xCDD5E125]
      904 [-]: SETTABLEKS R6 R5 K8 ["InputFilter"]
      905 [-]: CALL R3 2 0  
      906 [-]: GETUPVAL R3 1
@@ -2189,7 +2189,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      909 [-]: GETUPVAL R7 0
      910 [-]: GETTABLEKS R6 R7 K106 ["PLACEMENT_SNAP"]
      911 [-]: SETTABLEKS R6 R5 K7 ["Action"]
-     912 [-]: GETIMPORT R6 98 [nil]
+     912 [-]: GETIMPORT R6 98 [0xCDD5E125]
      913 [-]: SETTABLEKS R6 R5 K8 ["InputFilter"]
      914 [-]: CALL R3 2 0  
      915 [-]: GETUPVAL R3 1
@@ -2198,7 +2198,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      918 [-]: GETUPVAL R7 0
      919 [-]: GETTABLEKS R6 R7 K107 ["PLACEMENT_SURFACE_SNAP"]
      920 [-]: SETTABLEKS R6 R5 K7 ["Action"]
-     921 [-]: GETIMPORT R6 98 [nil]
+     921 [-]: GETIMPORT R6 98 [0xCDD5E125]
      922 [-]: SETTABLEKS R6 R5 K8 ["InputFilter"]
      923 [-]: CALL R3 2 0  
      924 [-]: GETUPVAL R3 1
@@ -2207,7 +2207,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      927 [-]: GETUPVAL R7 0
      928 [-]: GETTABLEKS R6 R7 K108 ["PLACEMENT_PUSH_PULL"]
      929 [-]: SETTABLEKS R6 R5 K7 ["Action"]
-     930 [-]: GETIMPORT R6 98 [nil]
+     930 [-]: GETIMPORT R6 98 [0xCDD5E125]
      931 [-]: SETTABLEKS R6 R5 K8 ["InputFilter"]
      932 [-]: CALL R3 2 0  
      933 [-]: GETUPVAL R3 1
@@ -2216,7 +2216,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      936 [-]: GETUPVAL R7 0
      937 [-]: GETTABLEKS R6 R7 K109 ["PLACEMENT_RESET"]
      938 [-]: SETTABLEKS R6 R5 K7 ["Action"]
-     939 [-]: GETIMPORT R6 98 [nil]
+     939 [-]: GETIMPORT R6 98 [0xCDD5E125]
      940 [-]: SETTABLEKS R6 R5 K8 ["InputFilter"]
      941 [-]: CALL R3 2 0  
      942 [-]: GETUPVAL R3 1
@@ -2225,7 +2225,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      945 [-]: GETUPVAL R7 0
      946 [-]: GETTABLEKS R6 R7 K110 ["PLACEMENT_ADVANCED"]
      947 [-]: SETTABLEKS R6 R5 K7 ["Action"]
-     948 [-]: GETIMPORT R6 98 [nil]
+     948 [-]: GETIMPORT R6 98 [0xCDD5E125]
      949 [-]: SETTABLEKS R6 R5 K8 ["InputFilter"]
      950 [-]: CALL R3 2 0  
      951 [-]: GETUPVAL R3 1
@@ -2234,7 +2234,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      954 [-]: GETUPVAL R7 0
      955 [-]: GETTABLEKS R6 R7 K13 ["MOVE_FORWARD"]
      956 [-]: SETTABLEKS R6 R5 K7 ["Action"]
-     957 [-]: GETIMPORT R6 98 [nil]
+     957 [-]: GETIMPORT R6 98 [0xCDD5E125]
      958 [-]: SETTABLEKS R6 R5 K8 ["InputFilter"]
      959 [-]: CALL R3 2 0  
      960 [-]: GETUPVAL R3 1
@@ -2243,7 +2243,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      963 [-]: GETUPVAL R7 0
      964 [-]: GETTABLEKS R6 R7 K14 ["MOVE_LEFT"]
      965 [-]: SETTABLEKS R6 R5 K7 ["Action"]
-     966 [-]: GETIMPORT R6 98 [nil]
+     966 [-]: GETIMPORT R6 98 [0xCDD5E125]
      967 [-]: SETTABLEKS R6 R5 K8 ["InputFilter"]
      968 [-]: CALL R3 2 0  
      969 [-]: GETUPVAL R3 1
@@ -2252,7 +2252,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      972 [-]: GETUPVAL R7 0
      973 [-]: GETTABLEKS R6 R7 K15 ["MOVE_BACKWARD"]
      974 [-]: SETTABLEKS R6 R5 K7 ["Action"]
-     975 [-]: GETIMPORT R6 98 [nil]
+     975 [-]: GETIMPORT R6 98 [0xCDD5E125]
      976 [-]: SETTABLEKS R6 R5 K8 ["InputFilter"]
      977 [-]: CALL R3 2 0  
      978 [-]: GETUPVAL R3 1
@@ -2261,7 +2261,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      981 [-]: GETUPVAL R7 0
      982 [-]: GETTABLEKS R6 R7 K16 ["MOVE_RIGHT"]
      983 [-]: SETTABLEKS R6 R5 K7 ["Action"]
-     984 [-]: GETIMPORT R6 98 [nil]
+     984 [-]: GETIMPORT R6 98 [0xCDD5E125]
      985 [-]: SETTABLEKS R6 R5 K8 ["InputFilter"]
      986 [-]: CALL R3 2 0  
      987 [-]: GETUPVAL R3 1
@@ -2270,7 +2270,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      990 [-]: GETUPVAL R7 0
      991 [-]: GETTABLEKS R6 R7 K17 ["MOVE_UP"]
      992 [-]: SETTABLEKS R6 R5 K7 ["Action"]
-     993 [-]: GETIMPORT R6 98 [nil]
+     993 [-]: GETIMPORT R6 98 [0xCDD5E125]
      994 [-]: SETTABLEKS R6 R5 K8 ["InputFilter"]
      995 [-]: CALL R3 2 0  
      996 [-]: GETUPVAL R3 1
@@ -2279,7 +2279,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      999 [-]: GETUPVAL R7 0
      1000 [-]: GETTABLEKS R6 R7 K20 ["MOVE_DOWN"]
      1001 [-]: SETTABLEKS R6 R5 K7 ["Action"]
-     1002 [-]: GETIMPORT R6 98 [nil]
+     1002 [-]: GETIMPORT R6 98 [0xCDD5E125]
      1003 [-]: SETTABLEKS R6 R5 K8 ["InputFilter"]
      1004 [-]: CALL R3 2 0  
      1005 [-]: NEWTABLE R3 0 0
@@ -2289,7 +2289,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      1009 [-]: GETUPVAL R8 0
      1010 [-]: GETTABLEKS R7 R8 K13 ["MOVE_FORWARD"]
      1011 [-]: SETTABLEKS R7 R6 K7 ["Action"]
-     1012 [-]: GETIMPORT R7 112 [nil]
+     1012 [-]: GETIMPORT R7 112 [0xD5892F66]
      1013 [-]: SETTABLEKS R7 R6 K8 ["InputFilter"]
      1014 [-]: CALL R4 2 0  
      1015 [-]: GETUPVAL R4 1
@@ -2298,7 +2298,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      1018 [-]: GETUPVAL R8 0
      1019 [-]: GETTABLEKS R7 R8 K14 ["MOVE_LEFT"]
      1020 [-]: SETTABLEKS R7 R6 K7 ["Action"]
-     1021 [-]: GETIMPORT R7 112 [nil]
+     1021 [-]: GETIMPORT R7 112 [0xD5892F66]
      1022 [-]: SETTABLEKS R7 R6 K8 ["InputFilter"]
      1023 [-]: CALL R4 2 0  
      1024 [-]: GETUPVAL R4 1
@@ -2307,7 +2307,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      1027 [-]: GETUPVAL R8 0
      1028 [-]: GETTABLEKS R7 R8 K15 ["MOVE_BACKWARD"]
      1029 [-]: SETTABLEKS R7 R6 K7 ["Action"]
-     1030 [-]: GETIMPORT R7 112 [nil]
+     1030 [-]: GETIMPORT R7 112 [0xD5892F66]
      1031 [-]: SETTABLEKS R7 R6 K8 ["InputFilter"]
      1032 [-]: CALL R4 2 0  
      1033 [-]: GETUPVAL R4 1
@@ -2316,7 +2316,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      1036 [-]: GETUPVAL R8 0
      1037 [-]: GETTABLEKS R7 R8 K16 ["MOVE_RIGHT"]
      1038 [-]: SETTABLEKS R7 R6 K7 ["Action"]
-     1039 [-]: GETIMPORT R7 112 [nil]
+     1039 [-]: GETIMPORT R7 112 [0xD5892F66]
      1040 [-]: SETTABLEKS R7 R6 K8 ["InputFilter"]
      1041 [-]: CALL R4 2 0  
      1042 [-]: GETUPVAL R4 1
@@ -2325,7 +2325,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      1045 [-]: GETUPVAL R8 0
      1046 [-]: GETTABLEKS R7 R8 K113 ["FIGHTER_SWING"]
      1047 [-]: SETTABLEKS R7 R6 K7 ["Action"]
-     1048 [-]: GETIMPORT R7 112 [nil]
+     1048 [-]: GETIMPORT R7 112 [0xD5892F66]
      1049 [-]: SETTABLEKS R7 R6 K8 ["InputFilter"]
      1050 [-]: CALL R4 2 0  
      1051 [-]: GETUPVAL R4 1
@@ -2334,7 +2334,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      1054 [-]: GETUPVAL R8 0
      1055 [-]: GETTABLEKS R7 R8 K114 ["FIGHTER_SWING_MEDIUM"]
      1056 [-]: SETTABLEKS R7 R6 K7 ["Action"]
-     1057 [-]: GETIMPORT R7 112 [nil]
+     1057 [-]: GETIMPORT R7 112 [0xD5892F66]
      1058 [-]: SETTABLEKS R7 R6 K8 ["InputFilter"]
      1059 [-]: CALL R4 2 0  
      1060 [-]: GETUPVAL R4 1
@@ -2343,7 +2343,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      1063 [-]: GETUPVAL R8 0
      1064 [-]: GETTABLEKS R7 R8 K115 ["FIGHTER_SWING_HEAVY"]
      1065 [-]: SETTABLEKS R7 R6 K7 ["Action"]
-     1066 [-]: GETIMPORT R7 112 [nil]
+     1066 [-]: GETIMPORT R7 112 [0xD5892F66]
      1067 [-]: SETTABLEKS R7 R6 K8 ["InputFilter"]
      1068 [-]: CALL R4 2 0  
      1069 [-]: GETUPVAL R4 1
@@ -2352,7 +2352,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      1072 [-]: GETUPVAL R8 0
      1073 [-]: GETTABLEKS R7 R8 K116 ["FIGHTER_PARRY"]
      1074 [-]: SETTABLEKS R7 R6 K7 ["Action"]
-     1075 [-]: GETIMPORT R7 112 [nil]
+     1075 [-]: GETIMPORT R7 112 [0xD5892F66]
      1076 [-]: SETTABLEKS R7 R6 K8 ["InputFilter"]
      1077 [-]: CALL R4 2 0  
      1078 [-]: GETUPVAL R4 1
@@ -2361,7 +2361,7 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      1081 [-]: GETUPVAL R8 0
      1082 [-]: GETTABLEKS R7 R8 K117 ["FIGHTER_GRAB"]
      1083 [-]: SETTABLEKS R7 R6 K7 ["Action"]
-     1084 [-]: GETIMPORT R7 112 [nil]
+     1084 [-]: GETIMPORT R7 112 [0xD5892F66]
      1085 [-]: SETTABLEKS R7 R6 K8 ["InputFilter"]
      1086 [-]: CALL R4 2 0  
      1087 [-]: GETUPVAL R4 1
@@ -2370,13 +2370,13 @@ L 1:  11 [-]: FORGLOOP R0 L0 2
      1090 [-]: GETUPVAL R8 0
      1091 [-]: GETTABLEKS R7 R8 K118 ["FIGHTER_POWER"]
      1092 [-]: SETTABLEKS R7 R6 K7 ["Action"]
-     1093 [-]: GETIMPORT R7 112 [nil]
+     1093 [-]: GETIMPORT R7 112 [0xD5892F66]
      1094 [-]: SETTABLEKS R7 R6 K8 ["InputFilter"]
      1095 [-]: CALL R4 2 0  
      1096 [-]: NEWTABLE R4 0 0
-     1097 [-]: GETIMPORT R6 120 [nil]
+     1097 [-]: GETIMPORT R6 120 [0x23B0B1B3]
      1098 [-]: FASTCALL1 62 R6 L2
-     1099 [-]: GETIMPORT R5 122 [nil]
+     1099 [-]: GETIMPORT R5 122 [0x7B998233]
      1100 [-]: CALL R5 1 1  
 L 2: 1101 [-]: JUMPIF R5 L3 
      1102 [-]: GETUPVAL R5 1
@@ -2385,7 +2385,7 @@ L 2: 1101 [-]: JUMPIF R5 L3
      1105 [-]: GETUPVAL R9 0
      1106 [-]: GETTABLEKS R8 R9 K13 ["MOVE_FORWARD"]
      1107 [-]: SETTABLEKS R8 R7 K7 ["Action"]
-     1108 [-]: GETIMPORT R8 120 [nil]
+     1108 [-]: GETIMPORT R8 120 [0x23B0B1B3]
      1109 [-]: SETTABLEKS R8 R7 K8 ["InputFilter"]
      1110 [-]: CALL R5 2 0  
      1111 [-]: GETUPVAL R5 1
@@ -2394,7 +2394,7 @@ L 2: 1101 [-]: JUMPIF R5 L3
      1114 [-]: GETUPVAL R9 0
      1115 [-]: GETTABLEKS R8 R9 K14 ["MOVE_LEFT"]
      1116 [-]: SETTABLEKS R8 R7 K7 ["Action"]
-     1117 [-]: GETIMPORT R8 120 [nil]
+     1117 [-]: GETIMPORT R8 120 [0x23B0B1B3]
      1118 [-]: SETTABLEKS R8 R7 K8 ["InputFilter"]
      1119 [-]: CALL R5 2 0  
      1120 [-]: GETUPVAL R5 1
@@ -2403,7 +2403,7 @@ L 2: 1101 [-]: JUMPIF R5 L3
      1123 [-]: GETUPVAL R9 0
      1124 [-]: GETTABLEKS R8 R9 K15 ["MOVE_BACKWARD"]
      1125 [-]: SETTABLEKS R8 R7 K7 ["Action"]
-     1126 [-]: GETIMPORT R8 120 [nil]
+     1126 [-]: GETIMPORT R8 120 [0x23B0B1B3]
      1127 [-]: SETTABLEKS R8 R7 K8 ["InputFilter"]
      1128 [-]: CALL R5 2 0  
      1129 [-]: GETUPVAL R5 1
@@ -2412,7 +2412,7 @@ L 2: 1101 [-]: JUMPIF R5 L3
      1132 [-]: GETUPVAL R9 0
      1133 [-]: GETTABLEKS R8 R9 K16 ["MOVE_RIGHT"]
      1134 [-]: SETTABLEKS R8 R7 K7 ["Action"]
-     1135 [-]: GETIMPORT R8 120 [nil]
+     1135 [-]: GETIMPORT R8 120 [0x23B0B1B3]
      1136 [-]: SETTABLEKS R8 R7 K8 ["InputFilter"]
      1137 [-]: CALL R5 2 0  
      1138 [-]: GETUPVAL R5 1
@@ -2421,7 +2421,7 @@ L 2: 1101 [-]: JUMPIF R5 L3
      1141 [-]: GETUPVAL R9 0
      1142 [-]: GETTABLEKS R8 R9 K17 ["MOVE_UP"]
      1143 [-]: SETTABLEKS R8 R7 K7 ["Action"]
-     1144 [-]: GETIMPORT R8 120 [nil]
+     1144 [-]: GETIMPORT R8 120 [0x23B0B1B3]
      1145 [-]: SETTABLEKS R8 R7 K8 ["InputFilter"]
      1146 [-]: CALL R5 2 0  
      1147 [-]: GETUPVAL R5 1
@@ -2430,7 +2430,7 @@ L 2: 1101 [-]: JUMPIF R5 L3
      1150 [-]: GETUPVAL R9 0
      1151 [-]: GETTABLEKS R8 R9 K20 ["MOVE_DOWN"]
      1152 [-]: SETTABLEKS R8 R7 K7 ["Action"]
-     1153 [-]: GETIMPORT R8 120 [nil]
+     1153 [-]: GETIMPORT R8 120 [0x23B0B1B3]
      1154 [-]: SETTABLEKS R8 R7 K8 ["InputFilter"]
      1155 [-]: CALL R5 2 0  
      1156 [-]: GETUPVAL R5 1
@@ -2439,7 +2439,7 @@ L 2: 1101 [-]: JUMPIF R5 L3
      1159 [-]: GETUPVAL R9 0
      1160 [-]: GETTABLEKS R8 R9 K123 ["ROLL_LEFT"]
      1161 [-]: SETTABLEKS R8 R7 K7 ["Action"]
-     1162 [-]: GETIMPORT R8 120 [nil]
+     1162 [-]: GETIMPORT R8 120 [0x23B0B1B3]
      1163 [-]: SETTABLEKS R8 R7 K8 ["InputFilter"]
      1164 [-]: CALL R5 2 0  
      1165 [-]: GETUPVAL R5 1
@@ -2448,7 +2448,7 @@ L 2: 1101 [-]: JUMPIF R5 L3
      1168 [-]: GETUPVAL R9 0
      1169 [-]: GETTABLEKS R8 R9 K124 ["ROLL_RIGHT"]
      1170 [-]: SETTABLEKS R8 R7 K7 ["Action"]
-     1171 [-]: GETIMPORT R8 120 [nil]
+     1171 [-]: GETIMPORT R8 120 [0x23B0B1B3]
      1172 [-]: SETTABLEKS R8 R7 K8 ["InputFilter"]
      1173 [-]: CALL R5 2 0  
      1174 [-]: GETUPVAL R5 1
@@ -2457,7 +2457,7 @@ L 2: 1101 [-]: JUMPIF R5 L3
      1177 [-]: GETUPVAL R9 0
      1178 [-]: GETTABLEKS R8 R9 K27 ["SPRINT_ROLL"]
      1179 [-]: SETTABLEKS R8 R7 K7 ["Action"]
-     1180 [-]: GETIMPORT R8 120 [nil]
+     1180 [-]: GETIMPORT R8 120 [0x23B0B1B3]
      1181 [-]: SETTABLEKS R8 R7 K8 ["InputFilter"]
      1182 [-]: LOADB R8 1   
      1183 [-]: SETTABLEKS R8 R7 K125 ["IsRailJack"]
@@ -2468,7 +2468,7 @@ L 2: 1101 [-]: JUMPIF R5 L3
      1188 [-]: GETUPVAL R9 0
      1189 [-]: GETTABLEKS R8 R9 K28 ["SPRINT"]
      1190 [-]: SETTABLEKS R8 R7 K7 ["Action"]
-     1191 [-]: GETIMPORT R8 120 [nil]
+     1191 [-]: GETIMPORT R8 120 [0x23B0B1B3]
      1192 [-]: SETTABLEKS R8 R7 K8 ["InputFilter"]
      1193 [-]: LOADB R8 1   
      1194 [-]: SETTABLEKS R8 R7 K125 ["IsRailJack"]
@@ -2479,7 +2479,7 @@ L 2: 1101 [-]: JUMPIF R5 L3
      1199 [-]: GETUPVAL R9 0
      1200 [-]: GETTABLEKS R8 R9 K29 ["ROLL"]
      1201 [-]: SETTABLEKS R8 R7 K7 ["Action"]
-     1202 [-]: GETIMPORT R8 120 [nil]
+     1202 [-]: GETIMPORT R8 120 [0x23B0B1B3]
      1203 [-]: SETTABLEKS R8 R7 K8 ["InputFilter"]
      1204 [-]: LOADB R8 1   
      1205 [-]: SETTABLEKS R8 R7 K125 ["IsRailJack"]
@@ -2490,7 +2490,7 @@ L 2: 1101 [-]: JUMPIF R5 L3
      1210 [-]: GETUPVAL R9 0
      1211 [-]: GETTABLEKS R8 R9 K30 ["USE"]
      1212 [-]: SETTABLEKS R8 R7 K7 ["Action"]
-     1213 [-]: GETIMPORT R8 120 [nil]
+     1213 [-]: GETIMPORT R8 120 [0x23B0B1B3]
      1214 [-]: SETTABLEKS R8 R7 K8 ["InputFilter"]
      1215 [-]: LOADB R8 1   
      1216 [-]: SETTABLEKS R8 R7 K125 ["IsRailJack"]
@@ -2501,7 +2501,7 @@ L 2: 1101 [-]: JUMPIF R5 L3
      1221 [-]: GETUPVAL R9 0
      1222 [-]: GETTABLEKS R8 R9 K21 ["FIRE_WEAPON"]
      1223 [-]: SETTABLEKS R8 R7 K7 ["Action"]
-     1224 [-]: GETIMPORT R8 120 [nil]
+     1224 [-]: GETIMPORT R8 120 [0x23B0B1B3]
      1225 [-]: SETTABLEKS R8 R7 K8 ["InputFilter"]
      1226 [-]: CALL R5 2 0  
      1227 [-]: GETUPVAL R5 1
@@ -2510,7 +2510,7 @@ L 2: 1101 [-]: JUMPIF R5 L3
      1230 [-]: GETUPVAL R9 0
      1231 [-]: GETTABLEKS R8 R9 K22 ["AIM_WEAPON"]
      1232 [-]: SETTABLEKS R8 R7 K7 ["Action"]
-     1233 [-]: GETIMPORT R8 120 [nil]
+     1233 [-]: GETIMPORT R8 120 [0x23B0B1B3]
      1234 [-]: SETTABLEKS R8 R7 K8 ["InputFilter"]
      1235 [-]: CALL R5 2 0  
      1236 [-]: GETUPVAL R5 1
@@ -2519,7 +2519,7 @@ L 2: 1101 [-]: JUMPIF R5 L3
      1239 [-]: GETUPVAL R9 0
      1240 [-]: GETTABLEKS R8 R9 K23 ["SECONDARY_FIRE"]
      1241 [-]: SETTABLEKS R8 R7 K7 ["Action"]
-     1242 [-]: GETIMPORT R8 120 [nil]
+     1242 [-]: GETIMPORT R8 120 [0x23B0B1B3]
      1243 [-]: SETTABLEKS R8 R7 K8 ["InputFilter"]
      1244 [-]: CALL R5 2 0  
      1245 [-]: GETUPVAL R5 1
@@ -2528,7 +2528,7 @@ L 2: 1101 [-]: JUMPIF R5 L3
      1248 [-]: GETUPVAL R9 0
      1249 [-]: GETTABLEKS R8 R9 K24 ["RELOAD"]
      1250 [-]: SETTABLEKS R8 R7 K7 ["Action"]
-     1251 [-]: GETIMPORT R8 120 [nil]
+     1251 [-]: GETIMPORT R8 120 [0x23B0B1B3]
      1252 [-]: SETTABLEKS R8 R7 K8 ["InputFilter"]
      1253 [-]: CALL R5 2 0  
      1254 [-]: GETUPVAL R5 1
@@ -2537,7 +2537,7 @@ L 2: 1101 [-]: JUMPIF R5 L3
      1257 [-]: GETUPVAL R9 0
      1258 [-]: GETTABLEKS R8 R9 K127 ["TOGGLE_RAILJACK_CAMERA"]
      1259 [-]: SETTABLEKS R8 R7 K7 ["Action"]
-     1260 [-]: GETIMPORT R8 120 [nil]
+     1260 [-]: GETIMPORT R8 120 [0x23B0B1B3]
      1261 [-]: SETTABLEKS R8 R7 K8 ["InputFilter"]
      1262 [-]: CALL R5 2 0  
      1263 [-]: GETUPVAL R5 1
@@ -2546,7 +2546,7 @@ L 2: 1101 [-]: JUMPIF R5 L3
      1266 [-]: GETUPVAL R9 0
      1267 [-]: GETTABLEKS R8 R9 K54 ["PUSH_TO_TALK"]
      1268 [-]: SETTABLEKS R8 R7 K7 ["Action"]
-     1269 [-]: GETIMPORT R8 120 [nil]
+     1269 [-]: GETIMPORT R8 120 [0x23B0B1B3]
      1270 [-]: SETTABLEKS R8 R7 K8 ["InputFilter"]
      1271 [-]: CALL R5 2 0  
      1272 [-]: GETUPVAL R5 1
@@ -2555,7 +2555,7 @@ L 2: 1101 [-]: JUMPIF R5 L3
      1275 [-]: GETUPVAL R9 0
      1276 [-]: GETTABLEKS R8 R9 K39 ["POWER_A"]
      1277 [-]: SETTABLEKS R8 R7 K7 ["Action"]
-     1278 [-]: GETIMPORT R8 120 [nil]
+     1278 [-]: GETIMPORT R8 120 [0x23B0B1B3]
      1279 [-]: SETTABLEKS R8 R7 K8 ["InputFilter"]
      1280 [-]: CALL R5 2 0  
      1281 [-]: GETUPVAL R5 1
@@ -2564,7 +2564,7 @@ L 2: 1101 [-]: JUMPIF R5 L3
      1284 [-]: GETUPVAL R9 0
      1285 [-]: GETTABLEKS R8 R9 K40 ["POWER_B"]
      1286 [-]: SETTABLEKS R8 R7 K7 ["Action"]
-     1287 [-]: GETIMPORT R8 120 [nil]
+     1287 [-]: GETIMPORT R8 120 [0x23B0B1B3]
      1288 [-]: SETTABLEKS R8 R7 K8 ["InputFilter"]
      1289 [-]: CALL R5 2 0  
      1290 [-]: GETUPVAL R5 1
@@ -2573,7 +2573,7 @@ L 2: 1101 [-]: JUMPIF R5 L3
      1293 [-]: GETUPVAL R9 0
      1294 [-]: GETTABLEKS R8 R9 K41 ["POWER_C"]
      1295 [-]: SETTABLEKS R8 R7 K7 ["Action"]
-     1296 [-]: GETIMPORT R8 120 [nil]
+     1296 [-]: GETIMPORT R8 120 [0x23B0B1B3]
      1297 [-]: SETTABLEKS R8 R7 K8 ["InputFilter"]
      1298 [-]: CALL R5 2 0  
      1299 [-]: GETUPVAL R5 1
@@ -2582,7 +2582,7 @@ L 2: 1101 [-]: JUMPIF R5 L3
      1302 [-]: GETUPVAL R9 0
      1303 [-]: GETTABLEKS R8 R9 K42 ["POWER_D"]
      1304 [-]: SETTABLEKS R8 R7 K7 ["Action"]
-     1305 [-]: GETIMPORT R8 120 [nil]
+     1305 [-]: GETIMPORT R8 120 [0x23B0B1B3]
      1306 [-]: SETTABLEKS R8 R7 K8 ["InputFilter"]
      1307 [-]: CALL R5 2 0  
      1308 [-]: GETUPVAL R5 1
@@ -2591,7 +2591,7 @@ L 2: 1101 [-]: JUMPIF R5 L3
      1311 [-]: GETUPVAL R9 0
      1312 [-]: GETTABLEKS R8 R9 K43 ["POWER_E"]
      1313 [-]: SETTABLEKS R8 R7 K7 ["Action"]
-     1314 [-]: GETIMPORT R8 120 [nil]
+     1314 [-]: GETIMPORT R8 120 [0x23B0B1B3]
      1315 [-]: SETTABLEKS R8 R7 K8 ["InputFilter"]
      1316 [-]: CALL R5 2 0  
      1317 [-]: GETUPVAL R5 1
@@ -2600,7 +2600,7 @@ L 2: 1101 [-]: JUMPIF R5 L3
      1320 [-]: GETUPVAL R9 0
      1321 [-]: GETTABLEKS R8 R9 K44 ["NEXT_POWER"]
      1322 [-]: SETTABLEKS R8 R7 K7 ["Action"]
-     1323 [-]: GETIMPORT R8 120 [nil]
+     1323 [-]: GETIMPORT R8 120 [0x23B0B1B3]
      1324 [-]: SETTABLEKS R8 R7 K8 ["InputFilter"]
      1325 [-]: CALL R5 2 0  
      1326 [-]: GETUPVAL R5 1
@@ -2609,7 +2609,7 @@ L 2: 1101 [-]: JUMPIF R5 L3
      1329 [-]: GETUPVAL R9 0
      1330 [-]: GETTABLEKS R8 R9 K45 ["PREVIOUS_POWER"]
      1331 [-]: SETTABLEKS R8 R7 K7 ["Action"]
-     1332 [-]: GETIMPORT R8 120 [nil]
+     1332 [-]: GETIMPORT R8 120 [0x23B0B1B3]
      1333 [-]: SETTABLEKS R8 R7 K8 ["InputFilter"]
      1334 [-]: CALL R5 2 0  
      1335 [-]: GETUPVAL R5 1
@@ -2618,7 +2618,7 @@ L 2: 1101 [-]: JUMPIF R5 L3
      1338 [-]: GETUPVAL R9 0
      1339 [-]: GETTABLEKS R8 R9 K46 ["USE_SELECTED_POWER"]
      1340 [-]: SETTABLEKS R8 R7 K7 ["Action"]
-     1341 [-]: GETIMPORT R8 120 [nil]
+     1341 [-]: GETIMPORT R8 120 [0x23B0B1B3]
      1342 [-]: SETTABLEKS R8 R7 K8 ["InputFilter"]
      1343 [-]: CALL R5 2 0  
      1344 [-]: GETUPVAL R5 1
@@ -2627,7 +2627,7 @@ L 2: 1101 [-]: JUMPIF R5 L3
      1347 [-]: GETUPVAL R9 0
      1348 [-]: GETTABLEKS R8 R9 K84 ["VIEW_RAILJACK_SYSTEMS"]
      1349 [-]: SETTABLEKS R8 R7 K7 ["Action"]
-     1350 [-]: GETIMPORT R8 120 [nil]
+     1350 [-]: GETIMPORT R8 120 [0x23B0B1B3]
      1351 [-]: SETTABLEKS R8 R7 K8 ["InputFilter"]
      1352 [-]: CALL R5 2 0  
 L 3: 1353 [-]: NEWTABLE R5 0 0
@@ -2637,7 +2637,7 @@ L 3: 1353 [-]: NEWTABLE R5 0 0
      1357 [-]: GETUPVAL R10 0
      1358 [-]: GETTABLEKS R9 R10 K128 ["SHAWZIN_NOTE_1"]
      1359 [-]: SETTABLEKS R9 R8 K7 ["Action"]
-     1360 [-]: GETIMPORT R9 130 [nil]
+     1360 [-]: GETIMPORT R9 130 [0x83EB30E4]
      1361 [-]: SETTABLEKS R9 R8 K8 ["InputFilter"]
      1362 [-]: CALL R6 2 0  
      1363 [-]: GETUPVAL R6 1
@@ -2646,7 +2646,7 @@ L 3: 1353 [-]: NEWTABLE R5 0 0
      1366 [-]: GETUPVAL R10 0
      1367 [-]: GETTABLEKS R9 R10 K131 ["SHAWZIN_NOTE_2"]
      1368 [-]: SETTABLEKS R9 R8 K7 ["Action"]
-     1369 [-]: GETIMPORT R9 130 [nil]
+     1369 [-]: GETIMPORT R9 130 [0x83EB30E4]
      1370 [-]: SETTABLEKS R9 R8 K8 ["InputFilter"]
      1371 [-]: CALL R6 2 0  
      1372 [-]: GETUPVAL R6 1
@@ -2655,7 +2655,7 @@ L 3: 1353 [-]: NEWTABLE R5 0 0
      1375 [-]: GETUPVAL R10 0
      1376 [-]: GETTABLEKS R9 R10 K132 ["SHAWZIN_NOTE_3"]
      1377 [-]: SETTABLEKS R9 R8 K7 ["Action"]
-     1378 [-]: GETIMPORT R9 130 [nil]
+     1378 [-]: GETIMPORT R9 130 [0x83EB30E4]
      1379 [-]: SETTABLEKS R9 R8 K8 ["InputFilter"]
      1380 [-]: CALL R6 2 0  
      1381 [-]: GETUPVAL R6 1
@@ -2664,7 +2664,7 @@ L 3: 1353 [-]: NEWTABLE R5 0 0
      1384 [-]: GETUPVAL R10 0
      1385 [-]: GETTABLEKS R9 R10 K133 ["SHAWZIN_WHAMMY"]
      1386 [-]: SETTABLEKS R9 R8 K7 ["Action"]
-     1387 [-]: GETIMPORT R9 130 [nil]
+     1387 [-]: GETIMPORT R9 130 [0x83EB30E4]
      1388 [-]: SETTABLEKS R9 R8 K8 ["InputFilter"]
      1389 [-]: CALL R6 2 0  
      1390 [-]: GETUPVAL R6 1
@@ -2673,7 +2673,7 @@ L 3: 1353 [-]: NEWTABLE R5 0 0
      1393 [-]: GETUPVAL R10 0
      1394 [-]: GETTABLEKS R9 R10 K134 ["SHAWZIN_FRET_1"]
      1395 [-]: SETTABLEKS R9 R8 K7 ["Action"]
-     1396 [-]: GETIMPORT R9 130 [nil]
+     1396 [-]: GETIMPORT R9 130 [0x83EB30E4]
      1397 [-]: SETTABLEKS R9 R8 K8 ["InputFilter"]
      1398 [-]: CALL R6 2 0  
      1399 [-]: GETUPVAL R6 1
@@ -2682,7 +2682,7 @@ L 3: 1353 [-]: NEWTABLE R5 0 0
      1402 [-]: GETUPVAL R10 0
      1403 [-]: GETTABLEKS R9 R10 K135 ["SHAWZIN_FRET_2"]
      1404 [-]: SETTABLEKS R9 R8 K7 ["Action"]
-     1405 [-]: GETIMPORT R9 130 [nil]
+     1405 [-]: GETIMPORT R9 130 [0x83EB30E4]
      1406 [-]: SETTABLEKS R9 R8 K8 ["InputFilter"]
      1407 [-]: CALL R6 2 0  
      1408 [-]: GETUPVAL R6 1
@@ -2691,7 +2691,7 @@ L 3: 1353 [-]: NEWTABLE R5 0 0
      1411 [-]: GETUPVAL R10 0
      1412 [-]: GETTABLEKS R9 R10 K136 ["SHAWZIN_FRET_3"]
      1413 [-]: SETTABLEKS R9 R8 K7 ["Action"]
-     1414 [-]: GETIMPORT R9 130 [nil]
+     1414 [-]: GETIMPORT R9 130 [0x83EB30E4]
      1415 [-]: SETTABLEKS R9 R8 K8 ["InputFilter"]
      1416 [-]: CALL R6 2 0  
      1417 [-]: GETUPVAL R6 1
@@ -2700,7 +2700,7 @@ L 3: 1353 [-]: NEWTABLE R5 0 0
      1420 [-]: GETUPVAL R10 0
      1421 [-]: GETTABLEKS R9 R10 K137 ["SHAWZIN_CHANGE_SCALE"]
      1422 [-]: SETTABLEKS R9 R8 K7 ["Action"]
-     1423 [-]: GETIMPORT R9 130 [nil]
+     1423 [-]: GETIMPORT R9 130 [0x83EB30E4]
      1424 [-]: SETTABLEKS R9 R8 K8 ["InputFilter"]
      1425 [-]: CALL R6 2 0  
      1426 [-]: GETUPVAL R6 1
@@ -2709,7 +2709,7 @@ L 3: 1353 [-]: NEWTABLE R5 0 0
      1429 [-]: GETUPVAL R10 0
      1430 [-]: GETTABLEKS R9 R10 K138 ["SHAWZIN_SONG_LIST"]
      1431 [-]: SETTABLEKS R9 R8 K7 ["Action"]
-     1432 [-]: GETIMPORT R9 130 [nil]
+     1432 [-]: GETIMPORT R9 130 [0x83EB30E4]
      1433 [-]: SETTABLEKS R9 R8 K8 ["InputFilter"]
      1434 [-]: CALL R6 2 0  
      1435 [-]: GETUPVAL R6 1
@@ -2718,7 +2718,7 @@ L 3: 1353 [-]: NEWTABLE R5 0 0
      1438 [-]: GETUPVAL R10 0
      1439 [-]: GETTABLEKS R9 R10 K139 ["SHAWZIN_CHANGE_INSTRUMENT"]
      1440 [-]: SETTABLEKS R9 R8 K7 ["Action"]
-     1441 [-]: GETIMPORT R9 130 [nil]
+     1441 [-]: GETIMPORT R9 130 [0x83EB30E4]
      1442 [-]: SETTABLEKS R9 R8 K8 ["InputFilter"]
      1443 [-]: CALL R6 2 0  
      1444 [-]: NEWTABLE R6 0 0
@@ -2728,7 +2728,7 @@ L 3: 1353 [-]: NEWTABLE R5 0 0
      1448 [-]: GETUPVAL R11 0
      1449 [-]: GETTABLEKS R10 R11 K10 ["JUMP"]
      1450 [-]: SETTABLEKS R10 R9 K7 ["Action"]
-     1451 [-]: GETIMPORT R10 141 [nil]
+     1451 [-]: GETIMPORT R10 141 [0xA073F1F3]
      1452 [-]: SETTABLEKS R10 R9 K8 ["InputFilter"]
      1453 [-]: CALL R7 2 0  
      1454 [-]: GETUPVAL R7 1
@@ -2737,7 +2737,7 @@ L 3: 1353 [-]: NEWTABLE R5 0 0
      1457 [-]: GETUPVAL R11 0
      1458 [-]: GETTABLEKS R10 R11 K13 ["MOVE_FORWARD"]
      1459 [-]: SETTABLEKS R10 R9 K7 ["Action"]
-     1460 [-]: GETIMPORT R10 141 [nil]
+     1460 [-]: GETIMPORT R10 141 [0xA073F1F3]
      1461 [-]: SETTABLEKS R10 R9 K8 ["InputFilter"]
      1462 [-]: CALL R7 2 0  
      1463 [-]: GETUPVAL R7 1
@@ -2746,7 +2746,7 @@ L 3: 1353 [-]: NEWTABLE R5 0 0
      1466 [-]: GETUPVAL R11 0
      1467 [-]: GETTABLEKS R10 R11 K14 ["MOVE_LEFT"]
      1468 [-]: SETTABLEKS R10 R9 K7 ["Action"]
-     1469 [-]: GETIMPORT R10 141 [nil]
+     1469 [-]: GETIMPORT R10 141 [0xA073F1F3]
      1470 [-]: SETTABLEKS R10 R9 K8 ["InputFilter"]
      1471 [-]: CALL R7 2 0  
      1472 [-]: GETUPVAL R7 1
@@ -2755,7 +2755,7 @@ L 3: 1353 [-]: NEWTABLE R5 0 0
      1475 [-]: GETUPVAL R11 0
      1476 [-]: GETTABLEKS R10 R11 K15 ["MOVE_BACKWARD"]
      1477 [-]: SETTABLEKS R10 R9 K7 ["Action"]
-     1478 [-]: GETIMPORT R10 141 [nil]
+     1478 [-]: GETIMPORT R10 141 [0xA073F1F3]
      1479 [-]: SETTABLEKS R10 R9 K8 ["InputFilter"]
      1480 [-]: CALL R7 2 0  
      1481 [-]: GETUPVAL R7 1
@@ -2764,7 +2764,7 @@ L 3: 1353 [-]: NEWTABLE R5 0 0
      1484 [-]: GETUPVAL R11 0
      1485 [-]: GETTABLEKS R10 R11 K16 ["MOVE_RIGHT"]
      1486 [-]: SETTABLEKS R10 R9 K7 ["Action"]
-     1487 [-]: GETIMPORT R10 141 [nil]
+     1487 [-]: GETIMPORT R10 141 [0xA073F1F3]
      1488 [-]: SETTABLEKS R10 R9 K8 ["InputFilter"]
      1489 [-]: CALL R7 2 0  
      1490 [-]: GETUPVAL R7 1
@@ -2773,7 +2773,7 @@ L 3: 1353 [-]: NEWTABLE R5 0 0
      1493 [-]: GETUPVAL R11 0
      1494 [-]: GETTABLEKS R10 R11 K21 ["FIRE_WEAPON"]
      1495 [-]: SETTABLEKS R10 R9 K7 ["Action"]
-     1496 [-]: GETIMPORT R10 141 [nil]
+     1496 [-]: GETIMPORT R10 141 [0xA073F1F3]
      1497 [-]: SETTABLEKS R10 R9 K8 ["InputFilter"]
      1498 [-]: CALL R7 2 0  
      1499 [-]: GETUPVAL R7 1
@@ -2782,7 +2782,7 @@ L 3: 1353 [-]: NEWTABLE R5 0 0
      1502 [-]: GETUPVAL R11 0
      1503 [-]: GETTABLEKS R10 R11 K22 ["AIM_WEAPON"]
      1504 [-]: SETTABLEKS R10 R9 K7 ["Action"]
-     1505 [-]: GETIMPORT R10 141 [nil]
+     1505 [-]: GETIMPORT R10 141 [0xA073F1F3]
      1506 [-]: SETTABLEKS R10 R9 K8 ["InputFilter"]
      1507 [-]: CALL R7 2 0  
      1508 [-]: GETUPVAL R7 1
@@ -2791,7 +2791,7 @@ L 3: 1353 [-]: NEWTABLE R5 0 0
      1511 [-]: GETUPVAL R11 0
      1512 [-]: GETTABLEKS R10 R11 K24 ["RELOAD"]
      1513 [-]: SETTABLEKS R10 R9 K7 ["Action"]
-     1514 [-]: GETIMPORT R10 141 [nil]
+     1514 [-]: GETIMPORT R10 141 [0xA073F1F3]
      1515 [-]: SETTABLEKS R10 R9 K8 ["InputFilter"]
      1516 [-]: CALL R7 2 0  
      1517 [-]: GETUPVAL R7 1
@@ -2800,7 +2800,7 @@ L 3: 1353 [-]: NEWTABLE R5 0 0
      1520 [-]: GETUPVAL R11 0
      1521 [-]: GETTABLEKS R10 R11 K25 ["TOGGLE_CROUCH"]
      1522 [-]: SETTABLEKS R10 R9 K7 ["Action"]
-     1523 [-]: GETIMPORT R10 141 [nil]
+     1523 [-]: GETIMPORT R10 141 [0xA073F1F3]
      1524 [-]: SETTABLEKS R10 R9 K8 ["InputFilter"]
      1525 [-]: CALL R7 2 0  
      1526 [-]: GETUPVAL R7 1
@@ -2809,7 +2809,7 @@ L 3: 1353 [-]: NEWTABLE R5 0 0
      1529 [-]: GETUPVAL R11 0
      1530 [-]: GETTABLEKS R10 R11 K26 ["HOLD_TO_CROUCH"]
      1531 [-]: SETTABLEKS R10 R9 K7 ["Action"]
-     1532 [-]: GETIMPORT R10 141 [nil]
+     1532 [-]: GETIMPORT R10 141 [0xA073F1F3]
      1533 [-]: SETTABLEKS R10 R9 K8 ["InputFilter"]
      1534 [-]: CALL R7 2 0  
      1535 [-]: GETUPVAL R7 1
@@ -2818,7 +2818,7 @@ L 3: 1353 [-]: NEWTABLE R5 0 0
      1538 [-]: GETUPVAL R11 0
      1539 [-]: GETTABLEKS R10 R11 K27 ["SPRINT_ROLL"]
      1540 [-]: SETTABLEKS R10 R9 K7 ["Action"]
-     1541 [-]: GETIMPORT R10 141 [nil]
+     1541 [-]: GETIMPORT R10 141 [0xA073F1F3]
      1542 [-]: SETTABLEKS R10 R9 K8 ["InputFilter"]
      1543 [-]: CALL R7 2 0  
      1544 [-]: GETUPVAL R7 1
@@ -2827,7 +2827,7 @@ L 3: 1353 [-]: NEWTABLE R5 0 0
      1547 [-]: GETUPVAL R11 0
      1548 [-]: GETTABLEKS R10 R11 K28 ["SPRINT"]
      1549 [-]: SETTABLEKS R10 R9 K7 ["Action"]
-     1550 [-]: GETIMPORT R10 141 [nil]
+     1550 [-]: GETIMPORT R10 141 [0xA073F1F3]
      1551 [-]: SETTABLEKS R10 R9 K8 ["InputFilter"]
      1552 [-]: CALL R7 2 0  
      1553 [-]: GETUPVAL R7 1
@@ -2836,7 +2836,7 @@ L 3: 1353 [-]: NEWTABLE R5 0 0
      1556 [-]: GETUPVAL R11 0
      1557 [-]: GETTABLEKS R10 R11 K29 ["ROLL"]
      1558 [-]: SETTABLEKS R10 R9 K7 ["Action"]
-     1559 [-]: GETIMPORT R10 141 [nil]
+     1559 [-]: GETIMPORT R10 141 [0xA073F1F3]
      1560 [-]: SETTABLEKS R10 R9 K8 ["InputFilter"]
      1561 [-]: CALL R7 2 0  
      1562 [-]: GETUPVAL R7 1
@@ -2845,7 +2845,7 @@ L 3: 1353 [-]: NEWTABLE R5 0 0
      1565 [-]: GETUPVAL R11 0
      1566 [-]: GETTABLEKS R10 R11 K30 ["USE"]
      1567 [-]: SETTABLEKS R10 R9 K7 ["Action"]
-     1568 [-]: GETIMPORT R10 141 [nil]
+     1568 [-]: GETIMPORT R10 141 [0xA073F1F3]
      1569 [-]: SETTABLEKS R10 R9 K8 ["InputFilter"]
      1570 [-]: CALL R7 2 0  
      1571 [-]: GETUPVAL R7 1
@@ -2854,7 +2854,7 @@ L 3: 1353 [-]: NEWTABLE R5 0 0
      1574 [-]: GETUPVAL R11 0
      1575 [-]: GETTABLEKS R10 R11 K31 ["QUICK_MELEE"]
      1576 [-]: SETTABLEKS R10 R9 K7 ["Action"]
-     1577 [-]: GETIMPORT R10 141 [nil]
+     1577 [-]: GETIMPORT R10 141 [0xA073F1F3]
      1578 [-]: SETTABLEKS R10 R9 K8 ["InputFilter"]
      1579 [-]: CALL R7 2 0  
      1580 [-]: GETUPVAL R7 1
@@ -2863,7 +2863,7 @@ L 3: 1353 [-]: NEWTABLE R5 0 0
      1583 [-]: GETUPVAL R11 0
      1584 [-]: GETTABLEKS R10 R11 K32 ["MELEE_CHANNEL"]
      1585 [-]: SETTABLEKS R10 R9 K7 ["Action"]
-     1586 [-]: GETIMPORT R10 143 [nil]
+     1586 [-]: GETIMPORT R10 143 [0x88E8A541]
      1587 [-]: SETTABLEKS R10 R9 K8 ["InputFilter"]
      1588 [-]: CALL R7 2 0  
      1589 [-]: GETUPVAL R7 1
@@ -2872,7 +2872,7 @@ L 3: 1353 [-]: NEWTABLE R5 0 0
      1592 [-]: GETUPVAL R11 0
      1593 [-]: GETTABLEKS R10 R11 K35 ["SWITCH_WEAPON"]
      1594 [-]: SETTABLEKS R10 R9 K7 ["Action"]
-     1595 [-]: GETIMPORT R10 141 [nil]
+     1595 [-]: GETIMPORT R10 141 [0xA073F1F3]
      1596 [-]: SETTABLEKS R10 R9 K8 ["InputFilter"]
      1597 [-]: CALL R7 2 0  
      1598 [-]: GETUPVAL R7 1
@@ -2881,7 +2881,7 @@ L 3: 1353 [-]: NEWTABLE R5 0 0
      1601 [-]: GETUPVAL R11 0
      1602 [-]: GETTABLEKS R10 R11 K36 ["SWITCH_GUN"]
      1603 [-]: SETTABLEKS R10 R9 K7 ["Action"]
-     1604 [-]: GETIMPORT R10 141 [nil]
+     1604 [-]: GETIMPORT R10 141 [0xA073F1F3]
      1605 [-]: SETTABLEKS R10 R9 K8 ["InputFilter"]
      1606 [-]: CALL R7 2 0  
      1607 [-]: GETUPVAL R7 1
@@ -2890,7 +2890,7 @@ L 3: 1353 [-]: NEWTABLE R5 0 0
      1610 [-]: GETUPVAL R11 0
      1611 [-]: GETTABLEKS R10 R11 K37 ["ITEM_POPUP"]
      1612 [-]: SETTABLEKS R10 R9 K7 ["Action"]
-     1613 [-]: GETIMPORT R10 141 [nil]
+     1613 [-]: GETIMPORT R10 141 [0xA073F1F3]
      1614 [-]: SETTABLEKS R10 R9 K8 ["InputFilter"]
      1615 [-]: CALL R7 2 0  
      1616 [-]: GETUPVAL R7 1
@@ -2899,7 +2899,7 @@ L 3: 1353 [-]: NEWTABLE R5 0 0
      1619 [-]: GETUPVAL R11 0
      1620 [-]: GETTABLEKS R10 R11 K38 ["CHAT"]
      1621 [-]: SETTABLEKS R10 R9 K7 ["Action"]
-     1622 [-]: GETIMPORT R10 141 [nil]
+     1622 [-]: GETIMPORT R10 141 [0xA073F1F3]
      1623 [-]: SETTABLEKS R10 R9 K8 ["InputFilter"]
      1624 [-]: CALL R7 2 0  
      1625 [-]: GETUPVAL R7 1
@@ -2908,7 +2908,7 @@ L 3: 1353 [-]: NEWTABLE R5 0 0
      1628 [-]: GETUPVAL R11 0
      1629 [-]: GETTABLEKS R10 R11 K39 ["POWER_A"]
      1630 [-]: SETTABLEKS R10 R9 K7 ["Action"]
-     1631 [-]: GETIMPORT R10 141 [nil]
+     1631 [-]: GETIMPORT R10 141 [0xA073F1F3]
      1632 [-]: SETTABLEKS R10 R9 K8 ["InputFilter"]
      1633 [-]: CALL R7 2 0  
      1634 [-]: GETUPVAL R7 1
@@ -2917,7 +2917,7 @@ L 3: 1353 [-]: NEWTABLE R5 0 0
      1637 [-]: GETUPVAL R11 0
      1638 [-]: GETTABLEKS R10 R11 K40 ["POWER_B"]
      1639 [-]: SETTABLEKS R10 R9 K7 ["Action"]
-     1640 [-]: GETIMPORT R10 141 [nil]
+     1640 [-]: GETIMPORT R10 141 [0xA073F1F3]
      1641 [-]: SETTABLEKS R10 R9 K8 ["InputFilter"]
      1642 [-]: CALL R7 2 0  
      1643 [-]: GETUPVAL R7 1
@@ -2926,7 +2926,7 @@ L 3: 1353 [-]: NEWTABLE R5 0 0
      1646 [-]: GETUPVAL R11 0
      1647 [-]: GETTABLEKS R10 R11 K41 ["POWER_C"]
      1648 [-]: SETTABLEKS R10 R9 K7 ["Action"]
-     1649 [-]: GETIMPORT R10 141 [nil]
+     1649 [-]: GETIMPORT R10 141 [0xA073F1F3]
      1650 [-]: SETTABLEKS R10 R9 K8 ["InputFilter"]
      1651 [-]: CALL R7 2 0  
      1652 [-]: GETUPVAL R7 1
@@ -2935,7 +2935,7 @@ L 3: 1353 [-]: NEWTABLE R5 0 0
      1655 [-]: GETUPVAL R11 0
      1656 [-]: GETTABLEKS R10 R11 K42 ["POWER_D"]
      1657 [-]: SETTABLEKS R10 R9 K7 ["Action"]
-     1658 [-]: GETIMPORT R10 141 [nil]
+     1658 [-]: GETIMPORT R10 141 [0xA073F1F3]
      1659 [-]: SETTABLEKS R10 R9 K8 ["InputFilter"]
      1660 [-]: CALL R7 2 0  
      1661 [-]: GETUPVAL R7 1
@@ -2944,7 +2944,7 @@ L 3: 1353 [-]: NEWTABLE R5 0 0
      1664 [-]: GETUPVAL R11 0
      1665 [-]: GETTABLEKS R10 R11 K43 ["POWER_E"]
      1666 [-]: SETTABLEKS R10 R9 K7 ["Action"]
-     1667 [-]: GETIMPORT R10 141 [nil]
+     1667 [-]: GETIMPORT R10 141 [0xA073F1F3]
      1668 [-]: SETTABLEKS R10 R9 K8 ["InputFilter"]
      1669 [-]: CALL R7 2 0  
      1670 [-]: GETUPVAL R7 1
@@ -2953,7 +2953,7 @@ L 3: 1353 [-]: NEWTABLE R5 0 0
      1673 [-]: GETUPVAL R11 0
      1674 [-]: GETTABLEKS R10 R11 K44 ["NEXT_POWER"]
      1675 [-]: SETTABLEKS R10 R9 K7 ["Action"]
-     1676 [-]: GETIMPORT R10 141 [nil]
+     1676 [-]: GETIMPORT R10 141 [0xA073F1F3]
      1677 [-]: SETTABLEKS R10 R9 K8 ["InputFilter"]
      1678 [-]: CALL R7 2 0  
      1679 [-]: GETUPVAL R7 1
@@ -2962,7 +2962,7 @@ L 3: 1353 [-]: NEWTABLE R5 0 0
      1682 [-]: GETUPVAL R11 0
      1683 [-]: GETTABLEKS R10 R11 K45 ["PREVIOUS_POWER"]
      1684 [-]: SETTABLEKS R10 R9 K7 ["Action"]
-     1685 [-]: GETIMPORT R10 141 [nil]
+     1685 [-]: GETIMPORT R10 141 [0xA073F1F3]
      1686 [-]: SETTABLEKS R10 R9 K8 ["InputFilter"]
      1687 [-]: CALL R7 2 0  
      1688 [-]: GETUPVAL R7 1
@@ -2971,7 +2971,7 @@ L 3: 1353 [-]: NEWTABLE R5 0 0
      1691 [-]: GETUPVAL R11 0
      1692 [-]: GETTABLEKS R10 R11 K46 ["USE_SELECTED_POWER"]
      1693 [-]: SETTABLEKS R10 R9 K7 ["Action"]
-     1694 [-]: GETIMPORT R10 141 [nil]
+     1694 [-]: GETIMPORT R10 141 [0xA073F1F3]
      1695 [-]: SETTABLEKS R10 R9 K8 ["InputFilter"]
      1696 [-]: CALL R7 2 0  
      1697 [-]: GETUPVAL R7 1
@@ -2980,7 +2980,7 @@ L 3: 1353 [-]: NEWTABLE R5 0 0
      1700 [-]: GETUPVAL R11 0
      1701 [-]: GETTABLEKS R10 R11 K47 ["PLACE_MARKER"]
      1702 [-]: SETTABLEKS R10 R9 K7 ["Action"]
-     1703 [-]: GETIMPORT R10 141 [nil]
+     1703 [-]: GETIMPORT R10 141 [0xA073F1F3]
      1704 [-]: SETTABLEKS R10 R9 K8 ["InputFilter"]
      1705 [-]: CALL R7 2 0  
      1706 [-]: GETUPVAL R7 1
@@ -2989,7 +2989,7 @@ L 3: 1353 [-]: NEWTABLE R5 0 0
      1709 [-]: GETUPVAL R11 0
      1710 [-]: GETTABLEKS R10 R11 K48 ["REVERSE_CAMERA"]
      1711 [-]: SETTABLEKS R10 R9 K7 ["Action"]
-     1712 [-]: GETIMPORT R10 141 [nil]
+     1712 [-]: GETIMPORT R10 141 [0xA073F1F3]
      1713 [-]: SETTABLEKS R10 R9 K8 ["InputFilter"]
      1714 [-]: CALL R7 2 0  
      1715 [-]: GETUPVAL R7 1
@@ -2998,7 +2998,7 @@ L 3: 1353 [-]: NEWTABLE R5 0 0
      1718 [-]: GETUPVAL R11 0
      1719 [-]: GETTABLEKS R10 R11 K53 ["SHOW_PLAYER_LIST"]
      1720 [-]: SETTABLEKS R10 R9 K7 ["Action"]
-     1721 [-]: GETIMPORT R10 141 [nil]
+     1721 [-]: GETIMPORT R10 141 [0xA073F1F3]
      1722 [-]: SETTABLEKS R10 R9 K8 ["InputFilter"]
      1723 [-]: CALL R7 2 0  
      1724 [-]: GETUPVAL R7 1
@@ -3007,7 +3007,7 @@ L 3: 1353 [-]: NEWTABLE R5 0 0
      1727 [-]: GETUPVAL R11 0
      1728 [-]: GETTABLEKS R10 R11 K54 ["PUSH_TO_TALK"]
      1729 [-]: SETTABLEKS R10 R9 K7 ["Action"]
-     1730 [-]: GETIMPORT R10 141 [nil]
+     1730 [-]: GETIMPORT R10 141 [0xA073F1F3]
      1731 [-]: SETTABLEKS R10 R9 K8 ["InputFilter"]
      1732 [-]: CALL R7 2 0  
      1733 [-]: GETUPVAL R7 1
@@ -3016,7 +3016,7 @@ L 3: 1353 [-]: NEWTABLE R5 0 0
      1736 [-]: GETUPVAL R11 0
      1737 [-]: GETTABLEKS R10 R11 K55 ["INSPECT"]
      1738 [-]: SETTABLEKS R10 R9 K7 ["Action"]
-     1739 [-]: GETIMPORT R10 141 [nil]
+     1739 [-]: GETIMPORT R10 141 [0xA073F1F3]
      1740 [-]: SETTABLEKS R10 R9 K8 ["InputFilter"]
      1741 [-]: CALL R7 2 0  
      1742 [-]: GETUPVAL R7 1
@@ -3025,7 +3025,7 @@ L 3: 1353 [-]: NEWTABLE R5 0 0
      1745 [-]: GETUPVAL R11 0
      1746 [-]: GETTABLEKS R10 R11 K68 ["EMOTE_HOTKEY_0"]
      1747 [-]: SETTABLEKS R10 R9 K7 ["Action"]
-     1748 [-]: GETIMPORT R10 141 [nil]
+     1748 [-]: GETIMPORT R10 141 [0xA073F1F3]
      1749 [-]: SETTABLEKS R10 R9 K8 ["InputFilter"]
      1750 [-]: CALL R7 2 0  
      1751 [-]: GETUPVAL R7 1
@@ -3034,7 +3034,7 @@ L 3: 1353 [-]: NEWTABLE R5 0 0
      1754 [-]: GETUPVAL R11 0
      1755 [-]: GETTABLEKS R10 R11 K69 ["EMOTE_HOTKEY_1"]
      1756 [-]: SETTABLEKS R10 R9 K7 ["Action"]
-     1757 [-]: GETIMPORT R10 141 [nil]
+     1757 [-]: GETIMPORT R10 141 [0xA073F1F3]
      1758 [-]: SETTABLEKS R10 R9 K8 ["InputFilter"]
      1759 [-]: CALL R7 2 0  
      1760 [-]: GETUPVAL R7 1
@@ -3043,7 +3043,7 @@ L 3: 1353 [-]: NEWTABLE R5 0 0
      1763 [-]: GETUPVAL R11 0
      1764 [-]: GETTABLEKS R10 R11 K70 ["EMOTE_HOTKEY_2"]
      1765 [-]: SETTABLEKS R10 R9 K7 ["Action"]
-     1766 [-]: GETIMPORT R10 141 [nil]
+     1766 [-]: GETIMPORT R10 141 [0xA073F1F3]
      1767 [-]: SETTABLEKS R10 R9 K8 ["InputFilter"]
      1768 [-]: CALL R7 2 0  
      1769 [-]: GETUPVAL R7 1
@@ -3052,7 +3052,7 @@ L 3: 1353 [-]: NEWTABLE R5 0 0
      1772 [-]: GETUPVAL R11 0
      1773 [-]: GETTABLEKS R10 R11 K71 ["EMOTE_HOTKEY_3"]
      1774 [-]: SETTABLEKS R10 R9 K7 ["Action"]
-     1775 [-]: GETIMPORT R10 141 [nil]
+     1775 [-]: GETIMPORT R10 141 [0xA073F1F3]
      1776 [-]: SETTABLEKS R10 R9 K8 ["InputFilter"]
      1777 [-]: CALL R7 2 0  
      1778 [-]: GETUPVAL R7 1
@@ -3061,7 +3061,7 @@ L 3: 1353 [-]: NEWTABLE R5 0 0
      1781 [-]: GETUPVAL R11 0
      1782 [-]: GETTABLEKS R10 R11 K72 ["EMOTE_HOTKEY_4"]
      1783 [-]: SETTABLEKS R10 R9 K7 ["Action"]
-     1784 [-]: GETIMPORT R10 141 [nil]
+     1784 [-]: GETIMPORT R10 141 [0xA073F1F3]
      1785 [-]: SETTABLEKS R10 R9 K8 ["InputFilter"]
      1786 [-]: CALL R7 2 0  
      1787 [-]: GETUPVAL R7 1
@@ -3070,7 +3070,7 @@ L 3: 1353 [-]: NEWTABLE R5 0 0
      1790 [-]: GETUPVAL R11 0
      1791 [-]: GETTABLEKS R10 R11 K73 ["EMOTE_HOTKEY_5"]
      1792 [-]: SETTABLEKS R10 R9 K7 ["Action"]
-     1793 [-]: GETIMPORT R10 141 [nil]
+     1793 [-]: GETIMPORT R10 141 [0xA073F1F3]
      1794 [-]: SETTABLEKS R10 R9 K8 ["InputFilter"]
      1795 [-]: CALL R7 2 0  
      1796 [-]: GETUPVAL R7 1
@@ -3079,7 +3079,7 @@ L 3: 1353 [-]: NEWTABLE R5 0 0
      1799 [-]: GETUPVAL R11 0
      1800 [-]: GETTABLEKS R10 R11 K74 ["EMOTE_HOTKEY_6"]
      1801 [-]: SETTABLEKS R10 R9 K7 ["Action"]
-     1802 [-]: GETIMPORT R10 141 [nil]
+     1802 [-]: GETIMPORT R10 141 [0xA073F1F3]
      1803 [-]: SETTABLEKS R10 R9 K8 ["InputFilter"]
      1804 [-]: CALL R7 2 0  
      1805 [-]: GETUPVAL R7 1
@@ -3088,7 +3088,7 @@ L 3: 1353 [-]: NEWTABLE R5 0 0
      1808 [-]: GETUPVAL R11 0
      1809 [-]: GETTABLEKS R10 R11 K75 ["EMOTE_HOTKEY_7"]
      1810 [-]: SETTABLEKS R10 R9 K7 ["Action"]
-     1811 [-]: GETIMPORT R10 141 [nil]
+     1811 [-]: GETIMPORT R10 141 [0xA073F1F3]
      1812 [-]: SETTABLEKS R10 R9 K8 ["InputFilter"]
      1813 [-]: CALL R7 2 0  
      1814 [-]: GETUPVAL R7 1
@@ -3097,7 +3097,7 @@ L 3: 1353 [-]: NEWTABLE R5 0 0
      1817 [-]: GETUPVAL R11 0
      1818 [-]: GETTABLEKS R10 R11 K76 ["EMOTE_HOTKEY_8"]
      1819 [-]: SETTABLEKS R10 R9 K7 ["Action"]
-     1820 [-]: GETIMPORT R10 141 [nil]
+     1820 [-]: GETIMPORT R10 141 [0xA073F1F3]
      1821 [-]: SETTABLEKS R10 R9 K8 ["InputFilter"]
      1822 [-]: CALL R7 2 0  
      1823 [-]: GETUPVAL R7 1
@@ -3106,7 +3106,7 @@ L 3: 1353 [-]: NEWTABLE R5 0 0
      1826 [-]: GETUPVAL R11 0
      1827 [-]: GETTABLEKS R10 R11 K77 ["EMOTE_HOTKEY_9"]
      1828 [-]: SETTABLEKS R10 R9 K7 ["Action"]
-     1829 [-]: GETIMPORT R10 141 [nil]
+     1829 [-]: GETIMPORT R10 141 [0xA073F1F3]
      1830 [-]: SETTABLEKS R10 R9 K8 ["InputFilter"]
      1831 [-]: CALL R7 2 0  
      1832 [-]: GETUPVAL R7 1
@@ -3115,7 +3115,7 @@ L 3: 1353 [-]: NEWTABLE R5 0 0
      1835 [-]: GETUPVAL R11 0
      1836 [-]: GETTABLEKS R10 R11 K78 ["EMOTE_HOTKEY_10"]
      1837 [-]: SETTABLEKS R10 R9 K7 ["Action"]
-     1838 [-]: GETIMPORT R10 141 [nil]
+     1838 [-]: GETIMPORT R10 141 [0xA073F1F3]
      1839 [-]: SETTABLEKS R10 R9 K8 ["InputFilter"]
      1840 [-]: CALL R7 2 0  
      1841 [-]: GETUPVAL R7 1
@@ -3124,7 +3124,7 @@ L 3: 1353 [-]: NEWTABLE R5 0 0
      1844 [-]: GETUPVAL R11 0
      1845 [-]: GETTABLEKS R10 R11 K79 ["EMOTE_HOTKEY_11"]
      1846 [-]: SETTABLEKS R10 R9 K7 ["Action"]
-     1847 [-]: GETIMPORT R10 141 [nil]
+     1847 [-]: GETIMPORT R10 141 [0xA073F1F3]
      1848 [-]: SETTABLEKS R10 R9 K8 ["InputFilter"]
      1849 [-]: CALL R7 2 0  
      1850 [-]: GETUPVAL R7 1
@@ -3133,7 +3133,7 @@ L 3: 1353 [-]: NEWTABLE R5 0 0
      1853 [-]: GETUPVAL R11 0
      1854 [-]: GETTABLEKS R10 R11 K80 ["SHOW_LEVEL_MAP"]
      1855 [-]: SETTABLEKS R10 R9 K7 ["Action"]
-     1856 [-]: GETIMPORT R10 141 [nil]
+     1856 [-]: GETIMPORT R10 141 [0xA073F1F3]
      1857 [-]: SETTABLEKS R10 R9 K8 ["InputFilter"]
      1858 [-]: CALL R7 2 0  
      1859 [-]: GETUPVAL R7 1
@@ -3142,7 +3142,7 @@ L 3: 1353 [-]: NEWTABLE R5 0 0
      1862 [-]: GETUPVAL R11 0
      1863 [-]: GETTABLEKS R10 R11 K81 ["VIEW_MISSION_PROGRESS"]
      1864 [-]: SETTABLEKS R10 R9 K7 ["Action"]
-     1865 [-]: GETIMPORT R10 141 [nil]
+     1865 [-]: GETIMPORT R10 141 [0xA073F1F3]
      1866 [-]: SETTABLEKS R10 R9 K8 ["InputFilter"]
      1867 [-]: CALL R7 2 0  
      1868 [-]: GETUPVAL R7 1
@@ -3151,7 +3151,7 @@ L 3: 1353 [-]: NEWTABLE R5 0 0
      1871 [-]: GETUPVAL R11 0
      1872 [-]: GETTABLEKS R10 R11 K82 ["VIEW_QUICK_PROGRESS"]
      1873 [-]: SETTABLEKS R10 R9 K7 ["Action"]
-     1874 [-]: GETIMPORT R10 141 [nil]
+     1874 [-]: GETIMPORT R10 141 [0xA073F1F3]
      1875 [-]: SETTABLEKS R10 R9 K8 ["InputFilter"]
      1876 [-]: CALL R7 2 0  
      1877 [-]: GETUPVAL R7 1
@@ -3160,7 +3160,7 @@ L 3: 1353 [-]: NEWTABLE R5 0 0
      1880 [-]: GETUPVAL R11 0
      1881 [-]: GETTABLEKS R10 R11 K146 ["CAMERA_TARGET_NEXT"]
      1882 [-]: SETTABLEKS R10 R9 K7 ["Action"]
-     1883 [-]: GETIMPORT R10 143 [nil]
+     1883 [-]: GETIMPORT R10 143 [0x88E8A541]
      1884 [-]: SETTABLEKS R10 R9 K8 ["InputFilter"]
      1885 [-]: LOADK R10 K147 ["/Lotus/Language/Input/"]
      1886 [-]: SETTABLEKS R10 R9 K144 ["InputPrefixOverride"]
@@ -3171,7 +3171,7 @@ L 3: 1353 [-]: NEWTABLE R5 0 0
      1891 [-]: GETUPVAL R11 0
      1892 [-]: GETTABLEKS R10 R11 K148 ["CAMERA_TARGET_PREV"]
      1893 [-]: SETTABLEKS R10 R9 K7 ["Action"]
-     1894 [-]: GETIMPORT R10 143 [nil]
+     1894 [-]: GETIMPORT R10 143 [0x88E8A541]
      1895 [-]: SETTABLEKS R10 R9 K8 ["InputFilter"]
      1896 [-]: LOADK R10 K147 ["/Lotus/Language/Input/"]
      1897 [-]: SETTABLEKS R10 R9 K144 ["InputPrefixOverride"]
@@ -3182,7 +3182,7 @@ L 3: 1353 [-]: NEWTABLE R5 0 0
      1902 [-]: GETUPVAL R11 0
      1903 [-]: GETTABLEKS R10 R11 K149 ["CAMERA_TARGET_TOGGLE"]
      1904 [-]: SETTABLEKS R10 R9 K7 ["Action"]
-     1905 [-]: GETIMPORT R10 143 [nil]
+     1905 [-]: GETIMPORT R10 143 [0x88E8A541]
      1906 [-]: SETTABLEKS R10 R9 K8 ["InputFilter"]
      1907 [-]: LOADK R10 K147 ["/Lotus/Language/Input/"]
      1908 [-]: SETTABLEKS R10 R9 K144 ["InputPrefixOverride"]
@@ -3192,37 +3192,37 @@ L 3: 1353 [-]: NEWTABLE R5 0 0
      1912 [-]: GETUPVAL R8 2
      1913 [-]: FASTCALL2 52 R8 R0 L4
      1914 [-]: MOVE R9 R0   
-     1915 [-]: GETIMPORT R7 152 [nil]
+     1915 [-]: GETIMPORT R7 152 [0x23D5322F]
      1916 [-]: CALL R7 2 0  
 L 4: 1917 [-]: GETUPVAL R8 2
      1918 [-]: FASTCALL2 52 R8 R4 L5
      1919 [-]: MOVE R9 R4   
-     1920 [-]: GETIMPORT R7 152 [nil]
+     1920 [-]: GETIMPORT R7 152 [0x23D5322F]
      1921 [-]: CALL R7 2 0  
 L 5: 1922 [-]: GETUPVAL R8 2
      1923 [-]: FASTCALL2 52 R8 R1 L6
      1924 [-]: MOVE R9 R1   
-     1925 [-]: GETIMPORT R7 152 [nil]
+     1925 [-]: GETIMPORT R7 152 [0x23D5322F]
      1926 [-]: CALL R7 2 0  
 L 6: 1927 [-]: GETUPVAL R8 2
      1928 [-]: FASTCALL2 52 R8 R2 L7
      1929 [-]: MOVE R9 R2   
-     1930 [-]: GETIMPORT R7 152 [nil]
+     1930 [-]: GETIMPORT R7 152 [0x23D5322F]
      1931 [-]: CALL R7 2 0  
 L 7: 1932 [-]: GETUPVAL R8 2
      1933 [-]: FASTCALL2 52 R8 R3 L8
      1934 [-]: MOVE R9 R3   
-     1935 [-]: GETIMPORT R7 152 [nil]
+     1935 [-]: GETIMPORT R7 152 [0x23D5322F]
      1936 [-]: CALL R7 2 0  
 L 8: 1937 [-]: GETUPVAL R8 2
      1938 [-]: FASTCALL2 52 R8 R5 L9
      1939 [-]: MOVE R9 R5   
-     1940 [-]: GETIMPORT R7 152 [nil]
+     1940 [-]: GETIMPORT R7 152 [0x23D5322F]
      1941 [-]: CALL R7 2 0  
 L 9: 1942 [-]: GETUPVAL R8 2
      1943 [-]: FASTCALL2 52 R8 R6 L10
      1944 [-]: MOVE R9 R6   
-     1945 [-]: GETIMPORT R7 152 [nil]
+     1945 [-]: GETIMPORT R7 152 [0x23D5322F]
      1946 [-]: CALL R7 2 0  
 L10: 1947 [-]: GETUPVAL R7 3
      1948 [-]: LOADB R9 1   
@@ -3283,7 +3283,7 @@ L12: 1965 [-]: GETUPVAL R8 3
        1 [-]: JUMPIFNOT R1 L16
        2 [-]: GETUPVAL R2 1
        3 [-]: FASTCALL1 62 R2 L0
-       4 [-]: GETIMPORT R1 1 [nil]
+       4 [-]: GETIMPORT R1 1 [0x7B998233]
        5 [-]: CALL R1 1 1  
 L 0:   6 [-]: JUMPIF R1 L1 
        7 [-]: GETUPVAL R1 2
@@ -3297,12 +3297,12 @@ L 1:  11 [-]: LOADB R1 0
       15 [-]: CALL R1 1 0  
       16 [-]: JUMPXEQKNIL R0 L16
       17 [-]: JUMPXEQKS R0 K4 L16 [""]
-      18 [-]: GETIMPORT R1 7 [nil]
+      18 [-]: GETIMPORT R1 7 [0xA5C556B9]
       19 [-]: MOVE R2 R0   
       20 [-]: LOADK R3 K8 ["error:"]
       21 [-]: CALL R1 2 1  
       22 [-]: JUMPIFNOT R1 L2
-      23 [-]: GETIMPORT R1 10 [nil]
+      23 [-]: GETIMPORT R1 10 [0x66EDF04F]
       24 [-]: MOVE R2 R0   
       25 [-]: LOADK R3 K8 ["error:"]
       26 [-]: LOADK R4 K4 [""]
@@ -3356,7 +3356,7 @@ L 6:  69 [-]: GETTABLEKS R12 R8 K18 ["Binds"]
       74 [-]: GETTABLEKS R13 R8 K18 ["Binds"]
       75 [-]: GETTABLEN R12 R13 2
       76 [-]: JUMPIFEQ R12 R0 L7
-      77 [-]: GETIMPORT R12 20 [nil]
+      77 [-]: GETIMPORT R12 20 [0xAE91E43B]
       78 [-]: GETTABLEKS R14 R8 K12 ["Action"]
       79 [-]: GETTABLEKS R16 R8 K18 ["Binds"]
       80 [-]: GETTABLEN R15 R16 2
@@ -3381,7 +3381,7 @@ L 8:  94 [-]: GETTABLEKS R12 R8 K18 ["Binds"]
       99 [-]: GETTABLEKS R13 R8 K18 ["Binds"]
      100 [-]: GETTABLEN R12 R13 1
      101 [-]: JUMPIFEQ R12 R0 L12
-     102 [-]: GETIMPORT R12 20 [nil]
+     102 [-]: GETIMPORT R12 20 [0xAE91E43B]
      103 [-]: GETTABLEKS R14 R8 K12 ["Action"]
      104 [-]: GETTABLEKS R16 R8 K18 ["Binds"]
      105 [-]: GETTABLEN R15 R16 1
@@ -3402,7 +3402,7 @@ L 9: 114 [-]: LOADN R14 1
 L10: 119 [-]: GETTABLEKS R16 R8 K18 ["Binds"]
      120 [-]: GETTABLE R15 R16 R14
      121 [-]: JUMPXEQKNIL R15 L11
-     122 [-]: GETIMPORT R15 20 [nil]
+     122 [-]: GETIMPORT R15 20 [0xAE91E43B]
      123 [-]: GETTABLEKS R17 R8 K12 ["Action"]
      124 [-]: GETTABLEKS R19 R8 K18 ["Binds"]
      125 [-]: GETTABLE R18 R19 R14
@@ -3448,11 +3448,11 @@ L16: 140 [-]: RETURN R0 0
        2 [-]: GETTABLEKS R3 R4 K0 ["FloatingContent"]
        3 [-]: FASTCALL1 62 R1 L0
        4 [-]: MOVE R5 R1   
-       5 [-]: GETIMPORT R4 2 [nil]
+       5 [-]: GETIMPORT R4 2 [0x7B998233]
        6 [-]: CALL R4 1 1  
 L 0:   7 [-]: JUMPIF R4 L1 
        8 [-]: JUMPXEQKS R1 K3 L2 NOT [""]
-L 1:   9 [-]: GETIMPORT R4 5 [nil]
+L 1:   9 [-]: GETIMPORT R4 5 [0xAE91E43B]
       10 [-]: LOADK R6 K6 ["/Lotus/Language/Menu/InputBinding_NotBound"]
       11 [-]: LOADB R7 0   
       12 [-]: NAMECALL R4 R4 K7 [0x42B04007]
@@ -3460,13 +3460,13 @@ L 1:   9 [-]: GETIMPORT R4 5 [nil]
       14 [-]: MOVE R2 R4   
       15 [-]: GETUPVAL R4 0
       16 [-]: GETTABLEKS R3 R4 K8 ["ContentDisabled"]
-L 2:  17 [-]: GETIMPORT R4 5 [nil]
+L 2:  17 [-]: GETIMPORT R4 5 [0xAE91E43B]
       18 [-]: MOVE R6 R0   
       19 [-]: LOADN R7 29  
       20 [-]: MOVE R8 R2   
       21 [-]: NAMECALL R4 R4 K9 [0x5F56EEAB]
       22 [-]: CALL R4 4 0  
-      23 [-]: GETIMPORT R4 5 [nil]
+      23 [-]: GETIMPORT R4 5 [0xAE91E43B]
       24 [-]: MOVE R6 R0   
       25 [-]: LOADN R7 36  
       26 [-]: MOVE R8 R3   
@@ -3485,67 +3485,67 @@ L 2:  17 [-]: GETIMPORT R4 5 [nil]
        0 [-]: NEWTABLE R0 0 0
        1 [-]: SETUPVAL R0 0
        2 [-]: GETUPVAL R0 0
-       3 [-]: GETIMPORT R1 1 [nil]
+       3 [-]: GETIMPORT R1 1 [0xAC3BCB6D]
        4 [-]: DUPTABLE R2 3
        5 [-]: NEWTABLE R3 0 4
-       6 [-]: GETIMPORT R4 5 [nil]
-       7 [-]: GETIMPORT R5 7 [nil]
-       8 [-]: GETIMPORT R6 9 [nil]
-       9 [-]: GETIMPORT R7 11 [nil]
+       6 [-]: GETIMPORT R4 5 [0xA94B0360]
+       7 [-]: GETIMPORT R5 7 [0xC3C8C187]
+       8 [-]: GETIMPORT R6 9 [0xC27D7442]
+       9 [-]: GETIMPORT R7 11 [0x938C11AE]
       10 [-]: SETLIST R3 R4 4 [1]
       11 [-]: SETTABLEKS R3 R2 K2 ["ChildFilters"]
       12 [-]: SETTABLE R2 R0 R1
       13 [-]: GETUPVAL R0 0
-      14 [-]: GETIMPORT R1 5 [nil]
+      14 [-]: GETIMPORT R1 5 [0xA94B0360]
       15 [-]: DUPTABLE R2 13
-      16 [-]: GETIMPORT R3 1 [nil]
+      16 [-]: GETIMPORT R3 1 [0xAC3BCB6D]
       17 [-]: SETTABLEKS R3 R2 K12 ["ParentFilter"]
       18 [-]: SETTABLE R2 R0 R1
       19 [-]: GETUPVAL R0 0
-      20 [-]: GETIMPORT R1 7 [nil]
+      20 [-]: GETIMPORT R1 7 [0xC3C8C187]
       21 [-]: DUPTABLE R2 13
-      22 [-]: GETIMPORT R3 1 [nil]
+      22 [-]: GETIMPORT R3 1 [0xAC3BCB6D]
       23 [-]: SETTABLEKS R3 R2 K12 ["ParentFilter"]
       24 [-]: SETTABLE R2 R0 R1
       25 [-]: GETUPVAL R0 0
-      26 [-]: GETIMPORT R1 9 [nil]
+      26 [-]: GETIMPORT R1 9 [0xC27D7442]
       27 [-]: DUPTABLE R2 13
-      28 [-]: GETIMPORT R3 1 [nil]
+      28 [-]: GETIMPORT R3 1 [0xAC3BCB6D]
       29 [-]: SETTABLEKS R3 R2 K12 ["ParentFilter"]
       30 [-]: SETTABLE R2 R0 R1
       31 [-]: GETUPVAL R0 0
-      32 [-]: GETIMPORT R1 11 [nil]
+      32 [-]: GETIMPORT R1 11 [0x938C11AE]
       33 [-]: DUPTABLE R2 13
-      34 [-]: GETIMPORT R3 1 [nil]
+      34 [-]: GETIMPORT R3 1 [0xAC3BCB6D]
       35 [-]: SETTABLEKS R3 R2 K12 ["ParentFilter"]
       36 [-]: SETTABLE R2 R0 R1
       37 [-]: GETUPVAL R0 0
-      38 [-]: GETIMPORT R1 15 [nil]
+      38 [-]: GETIMPORT R1 15 [0x3F360319]
       39 [-]: NEWTABLE R2 0 0
       40 [-]: SETTABLE R2 R0 R1
       41 [-]: GETUPVAL R0 0
-      42 [-]: GETIMPORT R1 17 [nil]
+      42 [-]: GETIMPORT R1 17 [0xCDD5E125]
       43 [-]: NEWTABLE R2 0 0
       44 [-]: SETTABLE R2 R0 R1
       45 [-]: GETUPVAL R0 0
-      46 [-]: GETIMPORT R1 19 [nil]
+      46 [-]: GETIMPORT R1 19 [0xD5892F66]
       47 [-]: NEWTABLE R2 0 0
       48 [-]: SETTABLE R2 R0 R1
       49 [-]: GETUPVAL R0 0
-      50 [-]: GETIMPORT R1 21 [nil]
+      50 [-]: GETIMPORT R1 21 [0xA073F1F3]
       51 [-]: NEWTABLE R2 0 0
       52 [-]: SETTABLE R2 R0 R1
       53 [-]: GETUPVAL R0 0
-      54 [-]: GETIMPORT R1 23 [nil]
+      54 [-]: GETIMPORT R1 23 [0x88E8A541]
       55 [-]: DUPTABLE R2 13
-      56 [-]: GETIMPORT R3 21 [nil]
+      56 [-]: GETIMPORT R3 21 [0xA073F1F3]
       57 [-]: SETTABLEKS R3 R2 K12 ["ParentFilter"]
       58 [-]: SETTABLE R2 R0 R1
-      59 [-]: GETIMPORT R0 25 [nil]
+      59 [-]: GETIMPORT R0 25 [0x2D0FAD09]
       60 [-]: LOADK R1 K26 ["EE.Interface.Components.List"]
       61 [-]: CALL R0 1 1  
       62 [-]: GETTABLEKS R1 R0 K27 [0x9383BC56]
-      63 [-]: GETIMPORT R2 29 [nil]
+      63 [-]: GETIMPORT R2 29 [0xAE91E43B]
       64 [-]: LOADK R3 K30 ["BindingList.Binding1"]
       65 [-]: CALL R1 2 1  
       66 [-]: SETUPVAL R1 1
@@ -3618,8 +3618,8 @@ L 2:  17 [-]: GETIMPORT R4 5 [nil]
      133 [-]: LOADN R4 -4  
      134 [-]: NAMECALL R1 R1 K47 [0x3BC79F4F]
      135 [-]: CALL R1 3 0  
-     136 [-]: GETIMPORT R1 49 [nil]
-     137 [-]: GETIMPORT R2 29 [nil]
+     136 [-]: GETIMPORT R1 49 [0x38F10E85]
+     137 [-]: GETIMPORT R2 29 [0xAE91E43B]
      138 [-]: LOADK R3 K50 ["BindingList.ScrollBar.swapDepths"]
      139 [-]: LOADN R4 1500
      140 [-]: CALL R1 3 0  
@@ -3633,11 +3633,11 @@ L 2:  17 [-]: GETIMPORT R4 5 [nil]
 ; Is_vararg:       0
 ; Max Stack Size:  6
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 [0x2D0FAD09]
        1 [-]: LOADK R1 K2 ["Lotus.Interface.Components.ThemedCategoriesMenu"]
        2 [-]: CALL R0 1 1  
        3 [-]: GETTABLEKS R1 R0 K3 [0xAE6791BA]
-       4 [-]: GETIMPORT R2 5 [nil]
+       4 [-]: GETIMPORT R2 5 [0xAE91E43B]
        5 [-]: LOADK R3 K6 ["CategoryMenu"]
        6 [-]: CALL R1 2 1  
        7 [-]: SETUPVAL R1 0
@@ -3749,13 +3749,13 @@ L 2:  17 [-]: GETIMPORT R4 5 [nil]
 ; Is_vararg:       0
 ; Max Stack Size:  10
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 [0x2D0FAD09]
        1 [-]: LOADK R1 K2 ["Lotus.Interface.Libs.TimerMgr"]
        2 [-]: CALL R0 1 1  
        3 [-]: GETTABLEKS R1 R0 K3 [0xDE474187]
        4 [-]: CALL R1 0 1  
        5 [-]: SETUPVAL R1 0
-       6 [-]: GETIMPORT R1 5 [nil]
+       6 [-]: GETIMPORT R1 5 [0x76EA806B]
        7 [-]: LOADN R3 0   
        8 [-]: NAMECALL R1 R1 K6 [0x3F3AE64C]
        9 [-]: CALL R1 2 1  
@@ -3816,15 +3816,15 @@ L 2:  17 [-]: GETIMPORT R4 5 [nil]
       64 [-]: LOADB R4 1   
       65 [-]: CALL R2 2 1  
       66 [-]: SETTABLEKS R2 R1 K16 ["FloatingContentHighlight"]
-      67 [-]: GETIMPORT R1 1 [nil]
+      67 [-]: GETIMPORT R1 1 [0x2D0FAD09]
       68 [-]: LOADK R2 K17 ["EE.Interface.AnchorMgr"]
       69 [-]: CALL R1 1 1  
       70 [-]: GETTABLEKS R2 R1 K18 [0xAE6791BA]
-      71 [-]: GETIMPORT R3 20 [nil]
+      71 [-]: GETIMPORT R3 20 [0xAE91E43B]
       72 [-]: CALL R2 1 1  
       73 [-]: SETUPVAL R2 5
       74 [-]: GETUPVAL R2 5
-      75 [-]: GETIMPORT R4 20 [nil]
+      75 [-]: GETIMPORT R4 20 [0xAE91E43B]
       76 [-]: LOADK R5 K21 ["CategoryMenu"]
       77 [-]: NEWTABLE R6 0 2
       78 [-]: GETUPVAL R8 5
@@ -3835,7 +3835,7 @@ L 2:  17 [-]: GETIMPORT R4 5 [nil]
       83 [-]: NAMECALL R2 R2 K24 [0x20FF29F7]
       84 [-]: CALL R2 4 0  
       85 [-]: GETUPVAL R2 5
-      86 [-]: GETIMPORT R4 20 [nil]
+      86 [-]: GETIMPORT R4 20 [0xAE91E43B]
       87 [-]: LOADK R5 K25 ["BindingList"]
       88 [-]: NEWTABLE R6 0 2
       89 [-]: GETUPVAL R8 5
@@ -3846,10 +3846,10 @@ L 2:  17 [-]: GETIMPORT R4 5 [nil]
       94 [-]: NAMECALL R2 R2 K24 [0x20FF29F7]
       95 [-]: CALL R2 4 0  
       96 [-]: GETUPVAL R2 5
-      97 [-]: GETIMPORT R4 20 [nil]
+      97 [-]: GETIMPORT R4 20 [0xAE91E43B]
       98 [-]: NAMECALL R4 R4 K26 [0x6B837788]
       99 [-]: CALL R4 1 1  
-     100 [-]: GETIMPORT R5 20 [nil]
+     100 [-]: GETIMPORT R5 20 [0xAE91E43B]
      101 [-]: NAMECALL R5 R5 K27 [0xAF9FDA9F]
      102 [-]: CALL R5 1 -1 
      103 [-]: NAMECALL R2 R2 K28 [0xFAA69527]
@@ -3858,20 +3858,20 @@ L 2:  17 [-]: GETIMPORT R4 5 [nil]
      106 [-]: CALL R2 0 0  
      107 [-]: GETUPVAL R2 7
      108 [-]: CALL R2 0 0  
-     109 [-]: GETIMPORT R2 20 [nil]
-     110 [-]: GETIMPORT R5 31 [nil]
+     109 [-]: GETIMPORT R2 20 [0xAE91E43B]
+     110 [-]: GETIMPORT R5 31 ["RadialSolarMapOpen"]
      111 [-]: JUMPXEQKB R5 1 L0
      112 [-]: LOADB R4 0 +1
 L 0: 113 [-]: LOADB R4 1   
 L 1: 114 [-]: NAMECALL R2 R2 K32 [0x2002E1DC]
      115 [-]: CALL R2 2 0  
-     116 [-]: GETIMPORT R3 34 [nil]
+     116 [-]: GETIMPORT R3 34 ["SetSquadOverlayTitle"]
      117 [-]: FASTCALL1 62 R3 L2
-     118 [-]: GETIMPORT R2 36 [nil]
+     118 [-]: GETIMPORT R2 36 [0x7B998233]
      119 [-]: CALL R2 1 1  
 L 2: 120 [-]: JUMPIF R2 L3 
-     121 [-]: GETIMPORT R2 34 [nil]
-     122 [-]: GETIMPORT R3 20 [nil]
+     121 [-]: GETIMPORT R2 34 ["SetSquadOverlayTitle"]
+     122 [-]: GETIMPORT R3 20 [0xAE91E43B]
      123 [-]: LOADK R5 K37 ["/Lotus/Language/Menu/SettingsControls"]
      124 [-]: LOADB R6 0   
      125 [-]: NAMECALL R3 R3 K38 [0x42B04007]
@@ -3888,7 +3888,7 @@ L 3: 128 [-]: GETUPVAL R3 8
      136 [-]: LOADK R5 K46 ["MENU_CANCEL"]
      137 [-]: SETTABLEKS R5 R4 K42 ["mCallout"]
      138 [-]: FASTCALL2 52 R3 R4 L4
-     139 [-]: GETIMPORT R2 49 [nil]
+     139 [-]: GETIMPORT R2 49 [0x23D5322F]
      140 [-]: CALL R2 2 0  
 L 4: 141 [-]: GETUPVAL R3 8
      142 [-]: DUPTABLE R4 43
@@ -3901,7 +3901,7 @@ L 4: 141 [-]: GETUPVAL R3 8
      149 [-]: LOADK R5 K52 ["MENU_GENERIC1"]
      150 [-]: SETTABLEKS R5 R4 K42 ["mCallout"]
      151 [-]: FASTCALL2 52 R3 R4 L5
-     152 [-]: GETIMPORT R2 49 [nil]
+     152 [-]: GETIMPORT R2 49 [0x23D5322F]
      153 [-]: CALL R2 2 0  
 L 5: 154 [-]: GETUPVAL R2 9
      155 [-]: CALL R2 0 0  
@@ -3919,9 +3919,9 @@ L 5: 154 [-]: GETUPVAL R2 9
 ; Is_vararg:       0
 ; Max Stack Size:  3
 
-       0 [-]: GETIMPORT R1 1 [nil]
+       0 [-]: GETIMPORT R1 1 [0xAE91E43B]
        1 [-]: FASTCALL1 62 R1 L0
-       2 [-]: GETIMPORT R0 3 [nil]
+       2 [-]: GETIMPORT R0 3 [0x7B998233]
        3 [-]: CALL R0 1 1  
 L 0:   4 [-]: JUMPIF R0 L1 
        5 [-]: GETUPVAL R0 0
@@ -3929,22 +3929,22 @@ L 0:   4 [-]: JUMPIF R0 L1
 L 1:   7 [-]: RETURN R0 0  
 L 2:   8 [-]: GETUPVAL R0 1
        9 [-]: JUMPIFNOT R0 L3
-      10 [-]: GETIMPORT R0 1 [nil]
+      10 [-]: GETIMPORT R0 1 [0xAE91E43B]
       11 [-]: NAMECALL R0 R0 K4 [0x32302B4A]
       12 [-]: CALL R0 1 0  
       13 [-]: RETURN R0 0  
-L 3:  14 [-]: GETIMPORT R0 1 [nil]
-      15 [-]: GETIMPORT R2 6 [nil]
+L 3:  14 [-]: GETIMPORT R0 1 [0xAE91E43B]
+      15 [-]: GETIMPORT R2 6 [0xB693B6C1]
       16 [-]: CALL R2 0 -1 
       17 [-]: NAMECALL R0 R0 K7 [0x8A8C8D5A]
       18 [-]: CALL R0 -1 0 
       19 [-]: GETUPVAL R1 2
       20 [-]: FASTCALL1 62 R1 L4
-      21 [-]: GETIMPORT R0 3 [nil]
+      21 [-]: GETIMPORT R0 3 [0x7B998233]
       22 [-]: CALL R0 1 1  
 L 4:  23 [-]: JUMPIF R0 L5 
       24 [-]: GETUPVAL R0 2
-      25 [-]: GETIMPORT R2 6 [nil]
+      25 [-]: GETIMPORT R2 6 [0xB693B6C1]
       26 [-]: CALL R2 0 -1 
       27 [-]: NAMECALL R0 R0 K8 [0xFAA69527]
       28 [-]: CALL R0 -1 0 
@@ -3974,7 +3974,7 @@ L 5:  29 [-]: RETURN R0 0
        1 [-]: JUMPIF R0 L0 
        2 [-]: GETUPVAL R1 1
        3 [-]: GETTABLEKS R0 R1 K0 [0x659D451F]
-       4 [-]: GETIMPORT R1 2 [nil]
+       4 [-]: GETIMPORT R1 2 [0x620D6B95]
        5 [-]: CALL R0 1 0  
 L 0:   6 [-]: RETURN R0 0  
 
@@ -3990,15 +3990,15 @@ L 0:   6 [-]: RETURN R0 0
        1 [-]: JUMPIF R1 L1 
        2 [-]: GETUPVAL R2 1
        3 [-]: FASTCALL1 62 R2 L0
-       4 [-]: GETIMPORT R1 1 [nil]
+       4 [-]: GETIMPORT R1 1 [0x7B998233]
        5 [-]: CALL R1 1 1  
 L 0:   6 [-]: JUMPIF R1 L1 
        7 [-]: GETUPVAL R2 2
        8 [-]: GETTABLEKS R1 R2 K2 [0x659D451F]
-       9 [-]: GETIMPORT R2 4 [nil]
+       9 [-]: GETIMPORT R2 4 [0x620D6B95]
       10 [-]: CALL R1 1 0  
       11 [-]: GETUPVAL R1 1
-      12 [-]: GETIMPORT R3 6 [nil]
+      12 [-]: GETIMPORT R3 6 [0x03F57322]
       13 [-]: MOVE R4 R0   
       14 [-]: CALL R3 1 -1 
       15 [-]: NAMECALL R1 R1 K7 [0xDF42446E]
@@ -4017,11 +4017,11 @@ L 1:  17 [-]: RETURN R0 0
        1 [-]: JUMPIF R1 L1 
        2 [-]: GETUPVAL R2 1
        3 [-]: FASTCALL1 62 R2 L0
-       4 [-]: GETIMPORT R1 1 [nil]
+       4 [-]: GETIMPORT R1 1 [0x7B998233]
        5 [-]: CALL R1 1 1  
 L 0:   6 [-]: JUMPIF R1 L1 
        7 [-]: GETUPVAL R1 1
-       8 [-]: GETIMPORT R3 3 [nil]
+       8 [-]: GETIMPORT R3 3 [0x03F57322]
        9 [-]: MOVE R4 R0   
       10 [-]: CALL R3 1 -1 
       11 [-]: NAMECALL R1 R1 K4 [0xBCE5A201]
@@ -4040,11 +4040,11 @@ L 1:  13 [-]: RETURN R0 0
        1 [-]: JUMPIF R1 L1 
        2 [-]: GETUPVAL R2 1
        3 [-]: FASTCALL1 62 R2 L0
-       4 [-]: GETIMPORT R1 1 [nil]
+       4 [-]: GETIMPORT R1 1 [0x7B998233]
        5 [-]: CALL R1 1 1  
 L 0:   6 [-]: JUMPIF R1 L1 
        7 [-]: GETUPVAL R1 1
-       8 [-]: GETIMPORT R3 3 [nil]
+       8 [-]: GETIMPORT R3 3 [0x03F57322]
        9 [-]: MOVE R4 R0   
       10 [-]: CALL R3 1 -1 
       11 [-]: NAMECALL R1 R1 K4 [0x070DAA5A]
@@ -4063,15 +4063,15 @@ L 1:  13 [-]: RETURN R0 0
        1 [-]: JUMPIF R1 L1 
        2 [-]: GETUPVAL R2 1
        3 [-]: FASTCALL1 62 R2 L0
-       4 [-]: GETIMPORT R1 1 [nil]
+       4 [-]: GETIMPORT R1 1 [0x7B998233]
        5 [-]: CALL R1 1 1  
 L 0:   6 [-]: JUMPIF R1 L1 
        7 [-]: GETUPVAL R2 2
        8 [-]: GETTABLEKS R1 R2 K2 [0x659D451F]
-       9 [-]: GETIMPORT R2 4 [nil]
+       9 [-]: GETIMPORT R2 4 [0x620D6B95]
       10 [-]: CALL R1 1 0  
       11 [-]: GETUPVAL R1 1
-      12 [-]: GETIMPORT R3 6 [nil]
+      12 [-]: GETIMPORT R3 6 [0x03F57322]
       13 [-]: MOVE R4 R0   
       14 [-]: CALL R3 1 -1 
       15 [-]: NAMECALL R1 R1 K7 [0xCA30DFB6]
@@ -4094,11 +4094,11 @@ L 1:  21 [-]: RETURN R0 0
        1 [-]: JUMPIF R1 L1 
        2 [-]: GETUPVAL R2 1
        3 [-]: FASTCALL1 62 R2 L0
-       4 [-]: GETIMPORT R1 1 [nil]
+       4 [-]: GETIMPORT R1 1 [0x7B998233]
        5 [-]: CALL R1 1 1  
 L 0:   6 [-]: JUMPIF R1 L1 
        7 [-]: GETUPVAL R1 1
-       8 [-]: GETIMPORT R3 3 [nil]
+       8 [-]: GETIMPORT R3 3 [0x03F57322]
        9 [-]: MOVE R4 R0   
       10 [-]: CALL R3 1 -1 
       11 [-]: NAMECALL R1 R1 K4 [0xCA30DFB6]
@@ -4121,11 +4121,11 @@ L 1:  17 [-]: RETURN R0 0
        1 [-]: JUMPIF R1 L1 
        2 [-]: GETUPVAL R2 1
        3 [-]: FASTCALL1 62 R2 L0
-       4 [-]: GETIMPORT R1 1 [nil]
+       4 [-]: GETIMPORT R1 1 [0x7B998233]
        5 [-]: CALL R1 1 1  
 L 0:   6 [-]: JUMPIF R1 L1 
        7 [-]: GETUPVAL R1 1
-       8 [-]: GETIMPORT R3 3 [nil]
+       8 [-]: GETIMPORT R3 3 [0x03F57322]
        9 [-]: MOVE R4 R0   
       10 [-]: CALL R3 1 -1 
       11 [-]: NAMECALL R1 R1 K4 [0xCA30DFB6]
@@ -4148,16 +4148,16 @@ L 1:  17 [-]: RETURN R0 0
        1 [-]: JUMPIF R1 L1 
        2 [-]: GETUPVAL R2 1
        3 [-]: FASTCALL1 62 R2 L0
-       4 [-]: GETIMPORT R1 1 [nil]
+       4 [-]: GETIMPORT R1 1 [0x7B998233]
        5 [-]: CALL R1 1 1  
 L 0:   6 [-]: JUMPIF R1 L1 
        7 [-]: GETUPVAL R1 1
-       8 [-]: GETIMPORT R3 3 [nil]
+       8 [-]: GETIMPORT R3 3 [0x03F57322]
        9 [-]: MOVE R4 R0   
       10 [-]: CALL R3 1 -1 
       11 [-]: NAMECALL R1 R1 K4 [0xCA30DFB6]
       12 [-]: CALL R1 -1 1 
-      13 [-]: GETIMPORT R2 6 [nil]
+      13 [-]: GETIMPORT R2 6 ["_T"]
       14 [-]: GETTABLEKS R3 R1 K7 ["Name"]
       15 [-]: SETTABLEKS R3 R2 K8 ["gToolTip"]
 L 1:  16 [-]: RETURN R0 0  
@@ -4170,7 +4170,7 @@ L 1:  16 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  3
 
-       0 [-]: GETIMPORT R1 1 [nil]
+       0 [-]: GETIMPORT R1 1 ["_T"]
        1 [-]: LOADNIL R2   
        2 [-]: SETTABLEKS R2 R1 K2 ["gToolTip"]
        3 [-]: RETURN R0 0  
@@ -4199,7 +4199,7 @@ L 0:   7 [-]: GETUPVAL R3 0
       13 [-]: LENGTH R4 R7 
       14 [-]: LOADN R5 1   
       15 [-]: FORNPREP R4 L2
-L 1:  16 [-]: GETIMPORT R7 4 [nil]
+L 1:  16 [-]: GETIMPORT R7 4 [0xAE91E43B]
       17 [-]: GETTABLEKS R9 R3 K5 ["Action"]
       18 [-]: SUBK R10 R6 K6 [1]
       19 [-]: GETTABLEKS R11 R3 K7 ["Invert"]
@@ -4220,7 +4220,7 @@ L 4:  33 [-]: GETUPVAL R3 0
       34 [-]: MOVE R5 R2   
       35 [-]: NAMECALL R3 R3 K1 [0x5465F8F3]
       36 [-]: CALL R3 2 1  
-      37 [-]: GETIMPORT R4 11 [nil]
+      37 [-]: GETIMPORT R4 11 [0x9BA7909F]
       38 [-]: GETTABLEKS R6 R3 K5 ["Action"]
       39 [-]: GETTABLEKS R7 R3 K7 ["Invert"]
       40 [-]: GETTABLEKS R8 R3 K8 ["InputFilter"]
@@ -4243,7 +4243,7 @@ L 5:  56 [-]: LOADN R10 1
       57 [-]: LENGTH R8 R4 
       58 [-]: LOADN R9 1   
       59 [-]: FORNPREP R8 L7
-L 6:  60 [-]: GETIMPORT R11 4 [nil]
+L 6:  60 [-]: GETIMPORT R11 4 [0xAE91E43B]
       61 [-]: GETTABLEKS R13 R3 K5 ["Action"]
       62 [-]: GETTABLE R14 R4 R10
       63 [-]: SUBK R15 R10 K6 [1]
@@ -4289,7 +4289,7 @@ L10:  96 [-]: GETUPVAL R19 3
 L11: 103 [-]: GETTABLEKS R23 R15 K2 ["Binds"]
      104 [-]: GETTABLE R22 R23 R21
      105 [-]: JUMPXEQKNIL R22 L12
-     106 [-]: GETIMPORT R22 4 [nil]
+     106 [-]: GETIMPORT R22 4 [0xAE91E43B]
      107 [-]: GETTABLEKS R24 R15 K5 ["Action"]
      108 [-]: GETTABLEKS R26 R15 K2 ["Binds"]
      109 [-]: GETTABLE R25 R26 R21
@@ -4316,10 +4316,10 @@ L16: 121 [-]: GETUPVAL R0 4
 ; Is_vararg:       0
 ; Max Stack Size:  6
 
-       0 [-]: GETIMPORT R3 2 [nil]
+       0 [-]: GETIMPORT R3 2 [0x2F84B0C9]
        1 [-]: GETTABLE R2 R3 R0
        2 [-]: ORK R1 R2 K0 [""]
-       3 [-]: GETIMPORT R2 4 [nil]
+       3 [-]: GETIMPORT R2 4 [0xAE91E43B]
        4 [-]: MOVE R4 R1   
        5 [-]: LOADB R5 0   
        6 [-]: NAMECALL R2 R2 K5 [0x42B04007]
@@ -4347,13 +4347,13 @@ L 0:   6 [-]: GETTABLE R9 R5 R8
       10 [-]: JUMPIFNOTEQ R10 R1 L5
       11 [-]: GETTABLEKS R11 R9 K2 ["PrimaryBinding"]
       12 [-]: FASTCALL1 62 R11 L1
-      13 [-]: GETIMPORT R10 4 [nil]
+      13 [-]: GETIMPORT R10 4 [0x7B998233]
       14 [-]: CALL R10 1 1 
 L 1:  15 [-]: JUMPIFNOT R10 L4
       16 [-]: JUMPIFNOT R2 L2
       17 [-]: GETUPVAL R11 1
       18 [-]: GETTABLEKS R10 R11 K5 [0xA53F5E12]
-      19 [-]: GETIMPORT R11 7 [nil]
+      19 [-]: GETIMPORT R11 7 [0xAE91E43B]
       20 [-]: LOADK R13 K8 ["/Lotus/Language/Settings/InputBinding_ActionNotbound"]
       21 [-]: LOADB R14 1  
       22 [-]: DUPTABLE R15 11
@@ -4370,7 +4370,7 @@ L 2:  32 [-]: JUMPXEQKNIL R3 L3
       33 [-]: GETTABLEKS R12 R9 K12 ["Name"]
       34 [-]: FASTCALL2 52 R3 R12 L3
       35 [-]: MOVE R11 R3  
-      36 [-]: GETIMPORT R10 16 [nil]
+      36 [-]: GETIMPORT R10 16 [0x23D5322F]
       37 [-]: CALL R10 2 0 
 L 3:  38 [-]: LOADB R10 0  
       39 [-]: RETURN R10 1 
@@ -4395,85 +4395,85 @@ L 6:  43 [-]: LOADB R6 0
        4 [-]: GETTABLEKS R5 R6 K0 ["JUMP"]
        5 [-]: FASTCALL2 52 R0 R5 L0
        6 [-]: MOVE R4 R0   
-       7 [-]: GETIMPORT R3 3 [nil]
+       7 [-]: GETIMPORT R3 3 [0x23D5322F]
        8 [-]: CALL R3 2 0  
 L 0:   9 [-]: GETUPVAL R6 0
       10 [-]: GETTABLEKS R5 R6 K4 ["MOVE_FORWARD"]
       11 [-]: FASTCALL2 52 R0 R5 L1
       12 [-]: MOVE R4 R0   
-      13 [-]: GETIMPORT R3 3 [nil]
+      13 [-]: GETIMPORT R3 3 [0x23D5322F]
       14 [-]: CALL R3 2 0  
 L 1:  15 [-]: GETUPVAL R6 0
       16 [-]: GETTABLEKS R5 R6 K5 ["MOVE_LEFT"]
       17 [-]: FASTCALL2 52 R0 R5 L2
       18 [-]: MOVE R4 R0   
-      19 [-]: GETIMPORT R3 3 [nil]
+      19 [-]: GETIMPORT R3 3 [0x23D5322F]
       20 [-]: CALL R3 2 0  
 L 2:  21 [-]: GETUPVAL R6 0
       22 [-]: GETTABLEKS R5 R6 K6 ["MOVE_BACKWARD"]
       23 [-]: FASTCALL2 52 R0 R5 L3
       24 [-]: MOVE R4 R0   
-      25 [-]: GETIMPORT R3 3 [nil]
+      25 [-]: GETIMPORT R3 3 [0x23D5322F]
       26 [-]: CALL R3 2 0  
 L 3:  27 [-]: GETUPVAL R6 0
       28 [-]: GETTABLEKS R5 R6 K7 ["MOVE_RIGHT"]
       29 [-]: FASTCALL2 52 R0 R5 L4
       30 [-]: MOVE R4 R0   
-      31 [-]: GETIMPORT R3 3 [nil]
+      31 [-]: GETIMPORT R3 3 [0x23D5322F]
       32 [-]: CALL R3 2 0  
 L 4:  33 [-]: GETUPVAL R6 0
       34 [-]: GETTABLEKS R5 R6 K8 ["SPRINT_ROLL"]
       35 [-]: FASTCALL2 52 R0 R5 L5
       36 [-]: MOVE R4 R0   
-      37 [-]: GETIMPORT R3 3 [nil]
+      37 [-]: GETIMPORT R3 3 [0x23D5322F]
       38 [-]: CALL R3 2 0  
 L 5:  39 [-]: GETUPVAL R6 0
       40 [-]: GETTABLEKS R5 R6 K9 ["USE"]
       41 [-]: FASTCALL2 52 R0 R5 L6
       42 [-]: MOVE R4 R0   
-      43 [-]: GETIMPORT R3 3 [nil]
+      43 [-]: GETIMPORT R3 3 [0x23D5322F]
       44 [-]: CALL R3 2 0  
 L 6:  45 [-]: GETUPVAL R6 0
       46 [-]: GETTABLEKS R5 R6 K10 ["FIRE_WEAPON"]
       47 [-]: FASTCALL2 52 R0 R5 L7
       48 [-]: MOVE R4 R0   
-      49 [-]: GETIMPORT R3 3 [nil]
+      49 [-]: GETIMPORT R3 3 [0x23D5322F]
       50 [-]: CALL R3 2 0  
 L 7:  51 [-]: GETUPVAL R6 0
       52 [-]: GETTABLEKS R5 R6 K11 ["AIM_WEAPON"]
       53 [-]: FASTCALL2 52 R0 R5 L8
       54 [-]: MOVE R4 R0   
-      55 [-]: GETIMPORT R3 3 [nil]
+      55 [-]: GETIMPORT R3 3 [0x23D5322F]
       56 [-]: CALL R3 2 0  
 L 8:  57 [-]: GETUPVAL R6 0
       58 [-]: GETTABLEKS R5 R6 K12 ["SECONDARY_FIRE"]
       59 [-]: FASTCALL2 52 R0 R5 L9
       60 [-]: MOVE R4 R0   
-      61 [-]: GETIMPORT R3 3 [nil]
+      61 [-]: GETIMPORT R3 3 [0x23D5322F]
       62 [-]: CALL R3 2 0  
 L 9:  63 [-]: GETUPVAL R6 0
       64 [-]: GETTABLEKS R5 R6 K13 ["RELOAD"]
       65 [-]: FASTCALL2 52 R0 R5 L10
       66 [-]: MOVE R4 R0   
-      67 [-]: GETIMPORT R3 3 [nil]
+      67 [-]: GETIMPORT R3 3 [0x23D5322F]
       68 [-]: CALL R3 2 0  
 L10:  69 [-]: GETUPVAL R6 0
       70 [-]: GETTABLEKS R5 R6 K14 ["QUICK_MELEE"]
       71 [-]: FASTCALL2 52 R0 R5 L11
       72 [-]: MOVE R4 R0   
-      73 [-]: GETIMPORT R3 3 [nil]
+      73 [-]: GETIMPORT R3 3 [0x23D5322F]
       74 [-]: CALL R3 2 0  
 L11:  75 [-]: GETUPVAL R6 0
       76 [-]: GETTABLEKS R5 R6 K15 ["MELEE_CHANNEL"]
       77 [-]: FASTCALL2 52 R0 R5 L12
       78 [-]: MOVE R4 R0   
-      79 [-]: GETIMPORT R3 3 [nil]
+      79 [-]: GETIMPORT R3 3 [0x23D5322F]
       80 [-]: CALL R3 2 0  
 L12:  81 [-]: GETUPVAL R6 0
       82 [-]: GETTABLEKS R5 R6 K16 ["SWITCH_WEAPON"]
       83 [-]: FASTCALL2 52 R0 R5 L13
       84 [-]: MOVE R4 R0   
-      85 [-]: GETIMPORT R3 3 [nil]
+      85 [-]: GETIMPORT R3 3 [0x23D5322F]
       86 [-]: CALL R3 2 0  
 L13:  87 [-]: GETUPVAL R3 1
       88 [-]: LOADK R4 K17 ["CYCLE_POWER_NEXT"]
@@ -4500,31 +4500,31 @@ L14: 108 [-]: GETUPVAL R6 0
      109 [-]: GETTABLEKS R5 R6 K20 ["POWER_A"]
      110 [-]: FASTCALL2 52 R0 R5 L15
      111 [-]: MOVE R4 R0   
-     112 [-]: GETIMPORT R3 3 [nil]
+     112 [-]: GETIMPORT R3 3 [0x23D5322F]
      113 [-]: CALL R3 2 0  
 L15: 114 [-]: GETUPVAL R6 0
      115 [-]: GETTABLEKS R5 R6 K21 ["POWER_B"]
      116 [-]: FASTCALL2 52 R0 R5 L16
      117 [-]: MOVE R4 R0   
-     118 [-]: GETIMPORT R3 3 [nil]
+     118 [-]: GETIMPORT R3 3 [0x23D5322F]
      119 [-]: CALL R3 2 0  
 L16: 120 [-]: GETUPVAL R6 0
      121 [-]: GETTABLEKS R5 R6 K22 ["POWER_C"]
      122 [-]: FASTCALL2 52 R0 R5 L17
      123 [-]: MOVE R4 R0   
-     124 [-]: GETIMPORT R3 3 [nil]
+     124 [-]: GETIMPORT R3 3 [0x23D5322F]
      125 [-]: CALL R3 2 0  
 L17: 126 [-]: GETUPVAL R6 0
      127 [-]: GETTABLEKS R5 R6 K23 ["POWER_D"]
      128 [-]: FASTCALL2 52 R0 R5 L18
      129 [-]: MOVE R4 R0   
-     130 [-]: GETIMPORT R3 3 [nil]
+     130 [-]: GETIMPORT R3 3 [0x23D5322F]
      131 [-]: CALL R3 2 0  
 L18: 132 [-]: GETUPVAL R6 0
      133 [-]: GETTABLEKS R5 R6 K24 ["POWER_E"]
      134 [-]: FASTCALL2 52 R0 R5 L19
      135 [-]: MOVE R4 R0   
-     136 [-]: GETIMPORT R3 3 [nil]
+     136 [-]: GETIMPORT R3 3 [0x23D5322F]
      137 [-]: CALL R3 2 0  
 L19: 138 [-]: NEWTABLE R3 0 1
      139 [-]: NEWTABLE R4 0 2
@@ -4542,74 +4542,74 @@ L19: 138 [-]: NEWTABLE R3 0 1
      151 [-]: SETTABLEKS R6 R5 K29 ["BindingIndex"]
      152 [-]: FASTCALL2 52 R2 R5 L20
      153 [-]: MOVE R4 R2   
-     154 [-]: GETIMPORT R3 3 [nil]
+     154 [-]: GETIMPORT R3 3 [0x23D5322F]
      155 [-]: CALL R3 2 0  
 L20: 156 [-]: NEWTABLE R0 0 0
      157 [-]: GETUPVAL R6 0
      158 [-]: GETTABLEKS R5 R6 K0 ["JUMP"]
      159 [-]: FASTCALL2 52 R0 R5 L21
      160 [-]: MOVE R4 R0   
-     161 [-]: GETIMPORT R3 3 [nil]
+     161 [-]: GETIMPORT R3 3 [0x23D5322F]
      162 [-]: CALL R3 2 0  
 L21: 163 [-]: GETUPVAL R6 0
      164 [-]: GETTABLEKS R5 R6 K4 ["MOVE_FORWARD"]
      165 [-]: FASTCALL2 52 R0 R5 L22
      166 [-]: MOVE R4 R0   
-     167 [-]: GETIMPORT R3 3 [nil]
+     167 [-]: GETIMPORT R3 3 [0x23D5322F]
      168 [-]: CALL R3 2 0  
 L22: 169 [-]: GETUPVAL R6 0
      170 [-]: GETTABLEKS R5 R6 K5 ["MOVE_LEFT"]
      171 [-]: FASTCALL2 52 R0 R5 L23
      172 [-]: MOVE R4 R0   
-     173 [-]: GETIMPORT R3 3 [nil]
+     173 [-]: GETIMPORT R3 3 [0x23D5322F]
      174 [-]: CALL R3 2 0  
 L23: 175 [-]: GETUPVAL R6 0
      176 [-]: GETTABLEKS R5 R6 K6 ["MOVE_BACKWARD"]
      177 [-]: FASTCALL2 52 R0 R5 L24
      178 [-]: MOVE R4 R0   
-     179 [-]: GETIMPORT R3 3 [nil]
+     179 [-]: GETIMPORT R3 3 [0x23D5322F]
      180 [-]: CALL R3 2 0  
 L24: 181 [-]: GETUPVAL R6 0
      182 [-]: GETTABLEKS R5 R6 K7 ["MOVE_RIGHT"]
      183 [-]: FASTCALL2 52 R0 R5 L25
      184 [-]: MOVE R4 R0   
-     185 [-]: GETIMPORT R3 3 [nil]
+     185 [-]: GETIMPORT R3 3 [0x23D5322F]
      186 [-]: CALL R3 2 0  
 L25: 187 [-]: GETUPVAL R6 0
      188 [-]: GETTABLEKS R5 R6 K8 ["SPRINT_ROLL"]
      189 [-]: FASTCALL2 52 R0 R5 L26
      190 [-]: MOVE R4 R0   
-     191 [-]: GETIMPORT R3 3 [nil]
+     191 [-]: GETIMPORT R3 3 [0x23D5322F]
      192 [-]: CALL R3 2 0  
 L26: 193 [-]: GETUPVAL R6 0
      194 [-]: GETTABLEKS R5 R6 K9 ["USE"]
      195 [-]: FASTCALL2 52 R0 R5 L27
      196 [-]: MOVE R4 R0   
-     197 [-]: GETIMPORT R3 3 [nil]
+     197 [-]: GETIMPORT R3 3 [0x23D5322F]
      198 [-]: CALL R3 2 0  
 L27: 199 [-]: GETUPVAL R6 0
      200 [-]: GETTABLEKS R5 R6 K31 ["CHECK"]
      201 [-]: FASTCALL2 52 R0 R5 L28
      202 [-]: MOVE R4 R0   
-     203 [-]: GETIMPORT R3 3 [nil]
+     203 [-]: GETIMPORT R3 3 [0x23D5322F]
      204 [-]: CALL R3 2 0  
 L28: 205 [-]: GETUPVAL R6 0
      206 [-]: GETTABLEKS R5 R6 K32 ["BALL_MAGNET"]
      207 [-]: FASTCALL2 52 R0 R5 L29
      208 [-]: MOVE R4 R0   
-     209 [-]: GETIMPORT R3 3 [nil]
+     209 [-]: GETIMPORT R3 3 [0x23D5322F]
      210 [-]: CALL R3 2 0  
 L29: 211 [-]: GETUPVAL R6 0
      212 [-]: GETTABLEKS R5 R6 K33 ["THROW"]
      213 [-]: FASTCALL2 52 R0 R5 L30
      214 [-]: MOVE R4 R0   
-     215 [-]: GETIMPORT R3 3 [nil]
+     215 [-]: GETIMPORT R3 3 [0x23D5322F]
      216 [-]: CALL R3 2 0  
 L30: 217 [-]: GETUPVAL R6 0
      218 [-]: GETTABLEKS R5 R6 K34 ["PASS"]
      219 [-]: FASTCALL2 52 R0 R5 L31
      220 [-]: MOVE R4 R0   
-     221 [-]: GETIMPORT R3 3 [nil]
+     221 [-]: GETIMPORT R3 3 [0x23D5322F]
      222 [-]: CALL R3 2 0  
 L31: 223 [-]: NEWTABLE R3 0 1
      224 [-]: NEWTABLE R4 0 2
@@ -4627,98 +4627,98 @@ L31: 223 [-]: NEWTABLE R3 0 1
      236 [-]: SETTABLEKS R6 R5 K29 ["BindingIndex"]
      237 [-]: FASTCALL2 52 R2 R5 L32
      238 [-]: MOVE R4 R2   
-     239 [-]: GETIMPORT R3 3 [nil]
+     239 [-]: GETIMPORT R3 3 [0x23D5322F]
      240 [-]: CALL R3 2 0  
 L32: 241 [-]: NEWTABLE R0 0 0
      242 [-]: GETUPVAL R6 0
      243 [-]: GETTABLEKS R5 R6 K35 ["PLACEMENT_ADD"]
      244 [-]: FASTCALL2 52 R0 R5 L33
      245 [-]: MOVE R4 R0   
-     246 [-]: GETIMPORT R3 3 [nil]
+     246 [-]: GETIMPORT R3 3 [0x23D5322F]
      247 [-]: CALL R3 2 0  
 L33: 248 [-]: GETUPVAL R6 0
      249 [-]: GETTABLEKS R5 R6 K36 ["PLACEMENT_EDIT"]
      250 [-]: FASTCALL2 52 R0 R5 L34
      251 [-]: MOVE R4 R0   
-     252 [-]: GETIMPORT R3 3 [nil]
+     252 [-]: GETIMPORT R3 3 [0x23D5322F]
      253 [-]: CALL R3 2 0  
 L34: 254 [-]: GETUPVAL R6 0
      255 [-]: GETTABLEKS R5 R6 K37 ["PLACEMENT_PLACE"]
      256 [-]: FASTCALL2 52 R0 R5 L35
      257 [-]: MOVE R4 R0   
-     258 [-]: GETIMPORT R3 3 [nil]
+     258 [-]: GETIMPORT R3 3 [0x23D5322F]
      259 [-]: CALL R3 2 0  
 L35: 260 [-]: GETUPVAL R6 0
      261 [-]: GETTABLEKS R5 R6 K38 ["PLACEMENT_ROTATE"]
      262 [-]: FASTCALL2 52 R0 R5 L36
      263 [-]: MOVE R4 R0   
-     264 [-]: GETIMPORT R3 3 [nil]
+     264 [-]: GETIMPORT R3 3 [0x23D5322F]
      265 [-]: CALL R3 2 0  
 L36: 266 [-]: GETUPVAL R6 0
      267 [-]: GETTABLEKS R5 R6 K39 ["PLACEMENT_CHANGE_ROTATION"]
      268 [-]: FASTCALL2 52 R0 R5 L37
      269 [-]: MOVE R4 R0   
-     270 [-]: GETIMPORT R3 3 [nil]
+     270 [-]: GETIMPORT R3 3 [0x23D5322F]
      271 [-]: CALL R3 2 0  
 L37: 272 [-]: GETUPVAL R6 0
      273 [-]: GETTABLEKS R5 R6 K40 ["PLACEMENT_SNAP"]
      274 [-]: FASTCALL2 52 R0 R5 L38
      275 [-]: MOVE R4 R0   
-     276 [-]: GETIMPORT R3 3 [nil]
+     276 [-]: GETIMPORT R3 3 [0x23D5322F]
      277 [-]: CALL R3 2 0  
 L38: 278 [-]: GETUPVAL R6 0
      279 [-]: GETTABLEKS R5 R6 K41 ["PLACEMENT_SURFACE_SNAP"]
      280 [-]: FASTCALL2 52 R0 R5 L39
      281 [-]: MOVE R4 R0   
-     282 [-]: GETIMPORT R3 3 [nil]
+     282 [-]: GETIMPORT R3 3 [0x23D5322F]
      283 [-]: CALL R3 2 0  
 L39: 284 [-]: GETUPVAL R6 0
      285 [-]: GETTABLEKS R5 R6 K42 ["PLACEMENT_PUSH_PULL"]
      286 [-]: FASTCALL2 52 R0 R5 L40
      287 [-]: MOVE R4 R0   
-     288 [-]: GETIMPORT R3 3 [nil]
+     288 [-]: GETIMPORT R3 3 [0x23D5322F]
      289 [-]: CALL R3 2 0  
 L40: 290 [-]: GETUPVAL R6 0
      291 [-]: GETTABLEKS R5 R6 K43 ["PLACEMENT_RESET"]
      292 [-]: FASTCALL2 52 R0 R5 L41
      293 [-]: MOVE R4 R0   
-     294 [-]: GETIMPORT R3 3 [nil]
+     294 [-]: GETIMPORT R3 3 [0x23D5322F]
      295 [-]: CALL R3 2 0  
 L41: 296 [-]: GETUPVAL R6 0
      297 [-]: GETTABLEKS R5 R6 K4 ["MOVE_FORWARD"]
      298 [-]: FASTCALL2 52 R0 R5 L42
      299 [-]: MOVE R4 R0   
-     300 [-]: GETIMPORT R3 3 [nil]
+     300 [-]: GETIMPORT R3 3 [0x23D5322F]
      301 [-]: CALL R3 2 0  
 L42: 302 [-]: GETUPVAL R6 0
      303 [-]: GETTABLEKS R5 R6 K5 ["MOVE_LEFT"]
      304 [-]: FASTCALL2 52 R0 R5 L43
      305 [-]: MOVE R4 R0   
-     306 [-]: GETIMPORT R3 3 [nil]
+     306 [-]: GETIMPORT R3 3 [0x23D5322F]
      307 [-]: CALL R3 2 0  
 L43: 308 [-]: GETUPVAL R6 0
      309 [-]: GETTABLEKS R5 R6 K6 ["MOVE_BACKWARD"]
      310 [-]: FASTCALL2 52 R0 R5 L44
      311 [-]: MOVE R4 R0   
-     312 [-]: GETIMPORT R3 3 [nil]
+     312 [-]: GETIMPORT R3 3 [0x23D5322F]
      313 [-]: CALL R3 2 0  
 L44: 314 [-]: GETUPVAL R6 0
      315 [-]: GETTABLEKS R5 R6 K7 ["MOVE_RIGHT"]
      316 [-]: FASTCALL2 52 R0 R5 L45
      317 [-]: MOVE R4 R0   
-     318 [-]: GETIMPORT R3 3 [nil]
+     318 [-]: GETIMPORT R3 3 [0x23D5322F]
      319 [-]: CALL R3 2 0  
 L45: 320 [-]: GETUPVAL R6 0
      321 [-]: GETTABLEKS R5 R6 K44 ["MOVE_UP"]
      322 [-]: FASTCALL2 52 R0 R5 L46
      323 [-]: MOVE R4 R0   
-     324 [-]: GETIMPORT R3 3 [nil]
+     324 [-]: GETIMPORT R3 3 [0x23D5322F]
      325 [-]: CALL R3 2 0  
 L46: 326 [-]: GETUPVAL R6 0
      327 [-]: GETTABLEKS R5 R6 K45 ["MOVE_DOWN"]
      328 [-]: FASTCALL2 52 R0 R5 L47
      329 [-]: MOVE R4 R0   
-     330 [-]: GETIMPORT R3 3 [nil]
+     330 [-]: GETIMPORT R3 3 [0x23D5322F]
      331 [-]: CALL R3 2 0  
 L47: 332 [-]: NEWTABLE R3 0 1
      333 [-]: NEWTABLE R4 0 3
@@ -4738,68 +4738,68 @@ L47: 332 [-]: NEWTABLE R3 0 1
      347 [-]: SETTABLEKS R6 R5 K29 ["BindingIndex"]
      348 [-]: FASTCALL2 52 R2 R5 L48
      349 [-]: MOVE R4 R2   
-     350 [-]: GETIMPORT R3 3 [nil]
+     350 [-]: GETIMPORT R3 3 [0x23D5322F]
      351 [-]: CALL R3 2 0  
 L48: 352 [-]: NEWTABLE R0 0 0
      353 [-]: GETUPVAL R6 0
      354 [-]: GETTABLEKS R5 R6 K4 ["MOVE_FORWARD"]
      355 [-]: FASTCALL2 52 R0 R5 L49
      356 [-]: MOVE R4 R0   
-     357 [-]: GETIMPORT R3 3 [nil]
+     357 [-]: GETIMPORT R3 3 [0x23D5322F]
      358 [-]: CALL R3 2 0  
 L49: 359 [-]: GETUPVAL R6 0
      360 [-]: GETTABLEKS R5 R6 K5 ["MOVE_LEFT"]
      361 [-]: FASTCALL2 52 R0 R5 L50
      362 [-]: MOVE R4 R0   
-     363 [-]: GETIMPORT R3 3 [nil]
+     363 [-]: GETIMPORT R3 3 [0x23D5322F]
      364 [-]: CALL R3 2 0  
 L50: 365 [-]: GETUPVAL R6 0
      366 [-]: GETTABLEKS R5 R6 K6 ["MOVE_BACKWARD"]
      367 [-]: FASTCALL2 52 R0 R5 L51
      368 [-]: MOVE R4 R0   
-     369 [-]: GETIMPORT R3 3 [nil]
+     369 [-]: GETIMPORT R3 3 [0x23D5322F]
      370 [-]: CALL R3 2 0  
 L51: 371 [-]: GETUPVAL R6 0
      372 [-]: GETTABLEKS R5 R6 K7 ["MOVE_RIGHT"]
      373 [-]: FASTCALL2 52 R0 R5 L52
      374 [-]: MOVE R4 R0   
-     375 [-]: GETIMPORT R3 3 [nil]
+     375 [-]: GETIMPORT R3 3 [0x23D5322F]
      376 [-]: CALL R3 2 0  
 L52: 377 [-]: GETUPVAL R6 0
      378 [-]: GETTABLEKS R5 R6 K49 ["FIGHTER_SWING"]
      379 [-]: FASTCALL2 52 R0 R5 L53
      380 [-]: MOVE R4 R0   
-     381 [-]: GETIMPORT R3 3 [nil]
+     381 [-]: GETIMPORT R3 3 [0x23D5322F]
      382 [-]: CALL R3 2 0  
 L53: 383 [-]: GETUPVAL R6 0
      384 [-]: GETTABLEKS R5 R6 K50 ["FIGHTER_SWING_MEDIUM"]
      385 [-]: FASTCALL2 52 R0 R5 L54
      386 [-]: MOVE R4 R0   
-     387 [-]: GETIMPORT R3 3 [nil]
+     387 [-]: GETIMPORT R3 3 [0x23D5322F]
      388 [-]: CALL R3 2 0  
 L54: 389 [-]: GETUPVAL R6 0
      390 [-]: GETTABLEKS R5 R6 K51 ["FIGHTER_SWING_HEAVY"]
      391 [-]: FASTCALL2 52 R0 R5 L55
      392 [-]: MOVE R4 R0   
-     393 [-]: GETIMPORT R3 3 [nil]
+     393 [-]: GETIMPORT R3 3 [0x23D5322F]
      394 [-]: CALL R3 2 0  
 L55: 395 [-]: GETUPVAL R6 0
      396 [-]: GETTABLEKS R5 R6 K52 ["FIGHTER_PARRY"]
      397 [-]: FASTCALL2 52 R0 R5 L56
      398 [-]: MOVE R4 R0   
-     399 [-]: GETIMPORT R3 3 [nil]
+     399 [-]: GETIMPORT R3 3 [0x23D5322F]
      400 [-]: CALL R3 2 0  
 L56: 401 [-]: GETUPVAL R6 0
      402 [-]: GETTABLEKS R5 R6 K53 ["FIGHTER_GRAB"]
      403 [-]: FASTCALL2 52 R0 R5 L57
      404 [-]: MOVE R4 R0   
-     405 [-]: GETIMPORT R3 3 [nil]
+     405 [-]: GETIMPORT R3 3 [0x23D5322F]
      406 [-]: CALL R3 2 0  
 L57: 407 [-]: GETUPVAL R6 0
      408 [-]: GETTABLEKS R5 R6 K54 ["FIGHTER_POWER"]
      409 [-]: FASTCALL2 52 R0 R5 L58
      410 [-]: MOVE R4 R0   
-     411 [-]: GETIMPORT R3 3 [nil]
+     411 [-]: GETIMPORT R3 3 [0x23D5322F]
      412 [-]: CALL R3 2 0  
 L58: 413 [-]: NEWTABLE R1 0 0
      414 [-]: DUPTABLE R5 30
@@ -4809,68 +4809,68 @@ L58: 413 [-]: NEWTABLE R1 0 0
      418 [-]: SETTABLEKS R6 R5 K29 ["BindingIndex"]
      419 [-]: FASTCALL2 52 R2 R5 L59
      420 [-]: MOVE R4 R2   
-     421 [-]: GETIMPORT R3 3 [nil]
+     421 [-]: GETIMPORT R3 3 [0x23D5322F]
      422 [-]: CALL R3 2 0  
 L59: 423 [-]: NEWTABLE R0 0 0
      424 [-]: GETUPVAL R6 0
      425 [-]: GETTABLEKS R5 R6 K4 ["MOVE_FORWARD"]
      426 [-]: FASTCALL2 52 R0 R5 L60
      427 [-]: MOVE R4 R0   
-     428 [-]: GETIMPORT R3 3 [nil]
+     428 [-]: GETIMPORT R3 3 [0x23D5322F]
      429 [-]: CALL R3 2 0  
 L60: 430 [-]: GETUPVAL R6 0
      431 [-]: GETTABLEKS R5 R6 K5 ["MOVE_LEFT"]
      432 [-]: FASTCALL2 52 R0 R5 L61
      433 [-]: MOVE R4 R0   
-     434 [-]: GETIMPORT R3 3 [nil]
+     434 [-]: GETIMPORT R3 3 [0x23D5322F]
      435 [-]: CALL R3 2 0  
 L61: 436 [-]: GETUPVAL R6 0
      437 [-]: GETTABLEKS R5 R6 K6 ["MOVE_BACKWARD"]
      438 [-]: FASTCALL2 52 R0 R5 L62
      439 [-]: MOVE R4 R0   
-     440 [-]: GETIMPORT R3 3 [nil]
+     440 [-]: GETIMPORT R3 3 [0x23D5322F]
      441 [-]: CALL R3 2 0  
 L62: 442 [-]: GETUPVAL R6 0
      443 [-]: GETTABLEKS R5 R6 K7 ["MOVE_RIGHT"]
      444 [-]: FASTCALL2 52 R0 R5 L63
      445 [-]: MOVE R4 R0   
-     446 [-]: GETIMPORT R3 3 [nil]
+     446 [-]: GETIMPORT R3 3 [0x23D5322F]
      447 [-]: CALL R3 2 0  
 L63: 448 [-]: GETUPVAL R6 0
      449 [-]: GETTABLEKS R5 R6 K44 ["MOVE_UP"]
      450 [-]: FASTCALL2 52 R0 R5 L64
      451 [-]: MOVE R4 R0   
-     452 [-]: GETIMPORT R3 3 [nil]
+     452 [-]: GETIMPORT R3 3 [0x23D5322F]
      453 [-]: CALL R3 2 0  
 L64: 454 [-]: GETUPVAL R6 0
      455 [-]: GETTABLEKS R5 R6 K45 ["MOVE_DOWN"]
      456 [-]: FASTCALL2 52 R0 R5 L65
      457 [-]: MOVE R4 R0   
-     458 [-]: GETIMPORT R3 3 [nil]
+     458 [-]: GETIMPORT R3 3 [0x23D5322F]
      459 [-]: CALL R3 2 0  
 L65: 460 [-]: GETUPVAL R6 0
      461 [-]: GETTABLEKS R5 R6 K9 ["USE"]
      462 [-]: FASTCALL2 52 R0 R5 L66
      463 [-]: MOVE R4 R0   
-     464 [-]: GETIMPORT R3 3 [nil]
+     464 [-]: GETIMPORT R3 3 [0x23D5322F]
      465 [-]: CALL R3 2 0  
 L66: 466 [-]: GETUPVAL R6 0
      467 [-]: GETTABLEKS R5 R6 K10 ["FIRE_WEAPON"]
      468 [-]: FASTCALL2 52 R0 R5 L67
      469 [-]: MOVE R4 R0   
-     470 [-]: GETIMPORT R3 3 [nil]
+     470 [-]: GETIMPORT R3 3 [0x23D5322F]
      471 [-]: CALL R3 2 0  
 L67: 472 [-]: GETUPVAL R6 0
      473 [-]: GETTABLEKS R5 R6 K11 ["AIM_WEAPON"]
      474 [-]: FASTCALL2 52 R0 R5 L68
      475 [-]: MOVE R4 R0   
-     476 [-]: GETIMPORT R3 3 [nil]
+     476 [-]: GETIMPORT R3 3 [0x23D5322F]
      477 [-]: CALL R3 2 0  
 L68: 478 [-]: GETUPVAL R6 0
      479 [-]: GETTABLEKS R5 R6 K12 ["SECONDARY_FIRE"]
      480 [-]: FASTCALL2 52 R0 R5 L69
      481 [-]: MOVE R4 R0   
-     482 [-]: GETIMPORT R3 3 [nil]
+     482 [-]: GETIMPORT R3 3 [0x23D5322F]
      483 [-]: CALL R3 2 0  
 L69: 484 [-]: NEWTABLE R3 0 2
      485 [-]: NEWTABLE R4 0 2
@@ -4894,74 +4894,74 @@ L69: 484 [-]: NEWTABLE R3 0 2
      503 [-]: SETTABLEKS R6 R5 K29 ["BindingIndex"]
      504 [-]: FASTCALL2 52 R2 R5 L70
      505 [-]: MOVE R4 R2   
-     506 [-]: GETIMPORT R3 3 [nil]
+     506 [-]: GETIMPORT R3 3 [0x23D5322F]
      507 [-]: CALL R3 2 0  
 L70: 508 [-]: NEWTABLE R0 0 0
      509 [-]: GETUPVAL R6 0
      510 [-]: GETTABLEKS R5 R6 K57 ["SHAWZIN_NOTE_1"]
      511 [-]: FASTCALL2 52 R0 R5 L71
      512 [-]: MOVE R4 R0   
-     513 [-]: GETIMPORT R3 3 [nil]
+     513 [-]: GETIMPORT R3 3 [0x23D5322F]
      514 [-]: CALL R3 2 0  
 L71: 515 [-]: GETUPVAL R6 0
      516 [-]: GETTABLEKS R5 R6 K58 ["SHAWZIN_NOTE_2"]
      517 [-]: FASTCALL2 52 R0 R5 L72
      518 [-]: MOVE R4 R0   
-     519 [-]: GETIMPORT R3 3 [nil]
+     519 [-]: GETIMPORT R3 3 [0x23D5322F]
      520 [-]: CALL R3 2 0  
 L72: 521 [-]: GETUPVAL R6 0
      522 [-]: GETTABLEKS R5 R6 K59 ["SHAWZIN_NOTE_3"]
      523 [-]: FASTCALL2 52 R0 R5 L73
      524 [-]: MOVE R4 R0   
-     525 [-]: GETIMPORT R3 3 [nil]
+     525 [-]: GETIMPORT R3 3 [0x23D5322F]
      526 [-]: CALL R3 2 0  
 L73: 527 [-]: GETUPVAL R6 0
      528 [-]: GETTABLEKS R5 R6 K60 ["SHAWZIN_NOTE_4"]
      529 [-]: FASTCALL2 52 R0 R5 L74
      530 [-]: MOVE R4 R0   
-     531 [-]: GETIMPORT R3 3 [nil]
+     531 [-]: GETIMPORT R3 3 [0x23D5322F]
      532 [-]: CALL R3 2 0  
 L74: 533 [-]: GETUPVAL R6 0
      534 [-]: GETTABLEKS R5 R6 K61 ["SHAWZIN_WHAMMY"]
      535 [-]: FASTCALL2 52 R0 R5 L75
      536 [-]: MOVE R4 R0   
-     537 [-]: GETIMPORT R3 3 [nil]
+     537 [-]: GETIMPORT R3 3 [0x23D5322F]
      538 [-]: CALL R3 2 0  
 L75: 539 [-]: GETUPVAL R6 0
      540 [-]: GETTABLEKS R5 R6 K62 ["SHAWZIN_FRET_1"]
      541 [-]: FASTCALL2 52 R0 R5 L76
      542 [-]: MOVE R4 R0   
-     543 [-]: GETIMPORT R3 3 [nil]
+     543 [-]: GETIMPORT R3 3 [0x23D5322F]
      544 [-]: CALL R3 2 0  
 L76: 545 [-]: GETUPVAL R6 0
      546 [-]: GETTABLEKS R5 R6 K63 ["SHAWZIN_FRET_2"]
      547 [-]: FASTCALL2 52 R0 R5 L77
      548 [-]: MOVE R4 R0   
-     549 [-]: GETIMPORT R3 3 [nil]
+     549 [-]: GETIMPORT R3 3 [0x23D5322F]
      550 [-]: CALL R3 2 0  
 L77: 551 [-]: GETUPVAL R6 0
      552 [-]: GETTABLEKS R5 R6 K64 ["SHAWZIN_FRET_3"]
      553 [-]: FASTCALL2 52 R0 R5 L78
      554 [-]: MOVE R4 R0   
-     555 [-]: GETIMPORT R3 3 [nil]
+     555 [-]: GETIMPORT R3 3 [0x23D5322F]
      556 [-]: CALL R3 2 0  
 L78: 557 [-]: GETUPVAL R6 0
      558 [-]: GETTABLEKS R5 R6 K65 ["SHAWZIN_CHANGE_SCALE"]
      559 [-]: FASTCALL2 52 R0 R5 L79
      560 [-]: MOVE R4 R0   
-     561 [-]: GETIMPORT R3 3 [nil]
+     561 [-]: GETIMPORT R3 3 [0x23D5322F]
      562 [-]: CALL R3 2 0  
 L79: 563 [-]: GETUPVAL R6 0
      564 [-]: GETTABLEKS R5 R6 K66 ["SHAWZIN_SONG_LIST"]
      565 [-]: FASTCALL2 52 R0 R5 L80
      566 [-]: MOVE R4 R0   
-     567 [-]: GETIMPORT R3 3 [nil]
+     567 [-]: GETIMPORT R3 3 [0x23D5322F]
      568 [-]: CALL R3 2 0  
 L80: 569 [-]: GETUPVAL R6 0
      570 [-]: GETTABLEKS R5 R6 K67 ["SHAWZIN_CHANGE_INSTRUMENT"]
      571 [-]: FASTCALL2 52 R0 R5 L81
      572 [-]: MOVE R4 R0   
-     573 [-]: GETIMPORT R3 3 [nil]
+     573 [-]: GETIMPORT R3 3 [0x23D5322F]
      574 [-]: CALL R3 2 0  
 L81: 575 [-]: NEWTABLE R1 0 0
      576 [-]: DUPTABLE R5 30
@@ -4971,7 +4971,7 @@ L81: 575 [-]: NEWTABLE R1 0 0
      580 [-]: SETTABLEKS R6 R5 K29 ["BindingIndex"]
      581 [-]: FASTCALL2 52 R2 R5 L82
      582 [-]: MOVE R4 R2   
-     583 [-]: GETIMPORT R3 3 [nil]
+     583 [-]: GETIMPORT R3 3 [0x23D5322F]
      584 [-]: CALL R3 2 0  
 L82: 585 [-]: LOADN R5 1   
      586 [-]: LENGTH R3 R2 
@@ -5038,7 +5038,7 @@ L91: 642 [-]: MOVE R17 R13
      646 [-]: FORNLOOP R14 L91
 L92: 647 [-]: GETUPVAL R15 2
      648 [-]: GETTABLEKS R14 R15 K72 [0xA53F5E12]
-     649 [-]: GETIMPORT R15 74 [nil]
+     649 [-]: GETIMPORT R15 74 [0xAE91E43B]
      650 [-]: LOADK R17 K75 ["/Lotus/Language/Settings/InputBinding_ActionGroupNotBound"]
      651 [-]: LOADB R18 0  
      652 [-]: DUPTABLE R19 78
@@ -5072,25 +5072,25 @@ L95: 665 [-]: LOADB R3 1
        4 [-]: JUMPIFNOT R0 L8
        5 [-]: GETUPVAL R2 2
        6 [-]: GETTABLEKS R1 R2 K0 [0x659D451F]
-       7 [-]: GETIMPORT R2 2 [nil]
+       7 [-]: GETIMPORT R2 2 [0x75AB212C]
        8 [-]: CALL R1 1 0  
-       9 [-]: GETIMPORT R1 4 [nil]
+       9 [-]: GETIMPORT R1 4 [0x9BA7909F]
       10 [-]: NAMECALL R1 R1 K5 [0x05EF28A4]
       11 [-]: CALL R1 1 0  
       12 [-]: LOADNIL R1   
       13 [-]: GETUPVAL R3 3
       14 [-]: FASTCALL1 62 R3 L0
-      15 [-]: GETIMPORT R2 7 [nil]
+      15 [-]: GETIMPORT R2 7 [0x7B998233]
       16 [-]: CALL R2 1 1  
 L 0:  17 [-]: JUMPIF R2 L7 
-      18 [-]: GETIMPORT R2 10 [nil]
+      18 [-]: GETIMPORT R2 10 [0x9AD21AE9]
       19 [-]: CALL R2 0 1  
       20 [-]: JUMPIFNOT R2 L7
       21 [-]: GETUPVAL R2 3
       22 [-]: NAMECALL R2 R2 K11 [0x40E9C32B]
       23 [-]: CALL R2 1 1  
       24 [-]: MOVE R1 R2   
-      25 [-]: GETIMPORT R4 13 [nil]
+      25 [-]: GETIMPORT R4 13 [0xA94DF70B]
       26 [-]: NAMECALL R4 R4 K14 [0xAA3C124F]
       27 [-]: CALL R4 1 1  
       28 [-]: LOADB R5 0   
@@ -5118,7 +5118,7 @@ L 3:  48 [-]: GETTABLEKS R15 R9 K17 ["Action"]
       50 [-]: GETTABLE R16 R17 R12
       51 [-]: GETTABLEKS R17 R9 K18 ["Invert"]
       52 [-]: GETTABLEKS R18 R9 K19 ["InputFilter"]
-      53 [-]: GETIMPORT R19 13 [nil]
+      53 [-]: GETIMPORT R19 13 [0xA94DF70B]
       54 [-]: NAMECALL R19 R19 K14 [0xAA3C124F]
       55 [-]: CALL R19 1 1 
       56 [-]: LOADB R20 0  
@@ -5131,7 +5131,7 @@ L 5:  62 [-]: FORNLOOP R2 L1
 L 6:  63 [-]: LOADB R4 0   
       64 [-]: NAMECALL R2 R1 K22 [0x12CEFDB8]
       65 [-]: CALL R2 2 0  
-L 7:  66 [-]: GETIMPORT R2 24 [nil]
+L 7:  66 [-]: GETIMPORT R2 24 ["_T"]
       67 [-]: LOADB R3 1   
       68 [-]: SETTABLEKS R3 R2 K25 ["controlsChanged"]
       69 [-]: GETUPVAL R2 5
@@ -5146,23 +5146,23 @@ L 8:  71 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 ["_T"]
        1 [-]: LOADNIL R1   
        2 [-]: SETTABLEKS R1 R0 K2 ["gToolTip"]
        3 [-]: GETUPVAL R1 0
        4 [-]: FASTCALL1 62 R1 L0
-       5 [-]: GETIMPORT R0 4 [nil]
+       5 [-]: GETIMPORT R0 4 [0x7B998233]
        6 [-]: CALL R0 1 1  
 L 0:   7 [-]: JUMPIF R0 L1 
        8 [-]: GETUPVAL R0 0
        9 [-]: NAMECALL R0 R0 K5 [0x32302B4A]
       10 [-]: CALL R0 1 0  
-L 1:  11 [-]: GETIMPORT R1 7 [nil]
+L 1:  11 [-]: GETIMPORT R1 7 ["SetSquadOverlayTitle"]
       12 [-]: FASTCALL1 62 R1 L2
-      13 [-]: GETIMPORT R0 4 [nil]
+      13 [-]: GETIMPORT R0 4 [0x7B998233]
       14 [-]: CALL R0 1 1  
 L 2:  15 [-]: JUMPIF R0 L3 
-      16 [-]: GETIMPORT R0 7 [nil]
+      16 [-]: GETIMPORT R0 7 ["SetSquadOverlayTitle"]
       17 [-]: CALL R0 0 0  
 L 3:  18 [-]: RETURN R0 0  
 
@@ -5186,7 +5186,7 @@ L 3:  18 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  3
 
-       0 [-]: GETIMPORT R1 1 [nil]
+       0 [-]: GETIMPORT R1 1 [0x03F57322]
        1 [-]: MOVE R2 R0   
        2 [-]: CALL R1 1 1  
        3 [-]: LOADN R2 4   
@@ -5223,15 +5223,15 @@ L 0:   7 [-]: RETURN R0 0
        2 [-]: GETUPVAL R4 1
        3 [-]: GETTABLEKS R3 R4 K0 ["mScrollBar"]
        4 [-]: FASTCALL1 62 R3 L0
-       5 [-]: GETIMPORT R2 2 [nil]
+       5 [-]: GETIMPORT R2 2 [0x7B998233]
        6 [-]: CALL R2 1 1  
 L 0:   7 [-]: JUMPIF R2 L1 
        8 [-]: GETUPVAL R3 1
        9 [-]: GETTABLEKS R2 R3 K0 ["mScrollBar"]
-      10 [-]: GETIMPORT R4 4 [nil]
+      10 [-]: GETIMPORT R4 4 [0x03F57322]
       11 [-]: MOVE R5 R1   
       12 [-]: CALL R4 1 1  
-      13 [-]: GETIMPORT R6 6 [nil]
+      13 [-]: GETIMPORT R6 6 [0x0032441C]
       14 [-]: GETTABLEKS R5 R6 K7 ["UISound_Scroll"]
       15 [-]: NAMECALL R2 R2 K8 [0x30456F58]
       16 [-]: CALL R2 3 0  
@@ -5264,18 +5264,18 @@ L 0:   6 [-]: GETUPVAL R5 0
       16 [-]: SETTABLEKS R8 R7 K3 ["CallOut"]
       17 [-]: FASTCALL2 52 R0 R7 L1
       18 [-]: MOVE R6 R0   
-      19 [-]: GETIMPORT R5 10 [nil]
+      19 [-]: GETIMPORT R5 10 [0x23D5322F]
       20 [-]: CALL R5 2 0  
 L 1:  21 [-]: FORNLOOP R1 L0
-L 2:  22 [-]: GETIMPORT R2 13 [nil]
+L 2:  22 [-]: GETIMPORT R2 13 ["SetButtons"]
       23 [-]: FASTCALL1 62 R2 L3
-      24 [-]: GETIMPORT R1 15 [nil]
+      24 [-]: GETIMPORT R1 15 [0x7B998233]
       25 [-]: CALL R1 1 1  
 L 3:  26 [-]: JUMPIF R1 L4 
-      27 [-]: GETIMPORT R1 13 [nil]
-      28 [-]: GETIMPORT R2 17 [nil]
+      27 [-]: GETIMPORT R1 13 ["SetButtons"]
+      28 [-]: GETIMPORT R2 17 [0xAE91E43B]
       29 [-]: MOVE R3 R0   
-      30 [-]: GETIMPORT R4 19 [nil]
+      30 [-]: GETIMPORT R4 19 [0xCD0165A3]
       31 [-]: LOADN R5 1   
       32 [-]: CALL R4 1 -1 
       33 [-]: CALL R1 -1 0 
@@ -5291,11 +5291,11 @@ L 4:  34 [-]: RETURN R0 0
 
        0 [-]: GETUPVAL R2 0
        1 [-]: FASTCALL1 62 R2 L0
-       2 [-]: GETIMPORT R1 1 [nil]
+       2 [-]: GETIMPORT R1 1 [0x7B998233]
        3 [-]: CALL R1 1 1  
 L 0:   4 [-]: JUMPIF R1 L1 
        5 [-]: GETUPVAL R1 0
-       6 [-]: GETIMPORT R3 3 [nil]
+       6 [-]: GETIMPORT R3 3 [0x03F57322]
        7 [-]: MOVE R4 R0   
        8 [-]: CALL R3 1 -1 
        9 [-]: NAMECALL R1 R1 K4 [0xDF42446E]
@@ -5312,11 +5312,11 @@ L 1:  11 [-]: RETURN R0 0
 
        0 [-]: GETUPVAL R2 0
        1 [-]: FASTCALL1 62 R2 L0
-       2 [-]: GETIMPORT R1 1 [nil]
+       2 [-]: GETIMPORT R1 1 [0x7B998233]
        3 [-]: CALL R1 1 1  
 L 0:   4 [-]: JUMPIF R1 L1 
        5 [-]: GETUPVAL R1 0
-       6 [-]: GETIMPORT R3 3 [nil]
+       6 [-]: GETIMPORT R3 3 [0x03F57322]
        7 [-]: MOVE R4 R0   
        8 [-]: CALL R3 1 -1 
        9 [-]: NAMECALL R1 R1 K4 [0xBCE5A201]
@@ -5335,11 +5335,11 @@ L 1:  11 [-]: RETURN R0 0
        1 [-]: JUMPIF R1 L1 
        2 [-]: GETUPVAL R2 1
        3 [-]: FASTCALL1 62 R2 L0
-       4 [-]: GETIMPORT R1 1 [nil]
+       4 [-]: GETIMPORT R1 1 [0x7B998233]
        5 [-]: CALL R1 1 1  
 L 0:   6 [-]: JUMPIF R1 L1 
        7 [-]: GETUPVAL R1 1
-       8 [-]: GETIMPORT R3 3 [nil]
+       8 [-]: GETIMPORT R3 3 [0x03F57322]
        9 [-]: MOVE R4 R0   
       10 [-]: CALL R3 1 -1 
       11 [-]: NAMECALL R1 R1 K4 [0x070DAA5A]
@@ -5356,7 +5356,7 @@ L 1:  13 [-]: RETURN R0 0
 
        0 [-]: GETUPVAL R5 0
        1 [-]: FASTCALL1 62 R5 L0
-       2 [-]: GETIMPORT R4 1 [nil]
+       2 [-]: GETIMPORT R4 1 [0x7B998233]
        3 [-]: CALL R4 1 1  
 L 0:   4 [-]: JUMPIF R4 L1 
        5 [-]: GETUPVAL R4 0
@@ -5378,7 +5378,7 @@ L 1:  10 [-]: RETURN R0 0
        1 [-]: JUMPIF R0 L1 
        2 [-]: GETUPVAL R1 1
        3 [-]: FASTCALL1 62 R1 L0
-       4 [-]: GETIMPORT R0 1 [nil]
+       4 [-]: GETIMPORT R0 1 [0x7B998233]
        5 [-]: CALL R0 1 1  
 L 0:   6 [-]: JUMPIF R0 L1 
        7 [-]: GETUPVAL R0 1
@@ -5401,7 +5401,7 @@ L 1:  12 [-]: LOADB R0 1
        1 [-]: JUMPIF R0 L1 
        2 [-]: GETUPVAL R1 1
        3 [-]: FASTCALL1 62 R1 L0
-       4 [-]: GETIMPORT R0 1 [nil]
+       4 [-]: GETIMPORT R0 1 [0x7B998233]
        5 [-]: CALL R0 1 1  
 L 0:   6 [-]: JUMPIF R0 L1 
        7 [-]: GETUPVAL R0 1

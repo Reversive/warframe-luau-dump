@@ -5,10 +5,10 @@
 ; Is_vararg:       1
 ; Max Stack Size:  3
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x2D0FAD09]
        2 [-]: LOADK R1 K2 ["Lotus.Scripts.Libs.TransmissionSet"]
        3 [-]: CALL R0 1 1  
-       4 [-]: GETIMPORT R1 1 [nil]
+       4 [-]: GETIMPORT R1 1 [0x2D0FAD09]
        5 [-]: LOADK R2 K3 ["EE.Interface.Utilities"]
        6 [-]: CALL R1 1 1  
        7 [-]: DUPCLOSURE R2 K4 []
@@ -29,7 +29,7 @@
 
        0 [-]: GETUPVAL R1 0
        1 [-]: GETTABLEKS R0 R1 K0 [0x11DCFE97]
-       2 [-]: GETIMPORT R1 2 [nil]
+       2 [-]: GETIMPORT R1 2 [0xA2B4BEBE]
        3 [-]: LOADB R2 0   
        4 [-]: LOADB R3 0   
        5 [-]: LOADN R4 4   
@@ -44,22 +44,22 @@
 ; Is_vararg:       0
 ; Max Stack Size:  25
 
-       0 [-]: GETIMPORT R2 1 [nil]
+       0 [-]: GETIMPORT R2 1 [0x25D99D89]
        1 [-]: FASTCALL1 62 R2 L0
-       2 [-]: GETIMPORT R1 3 [nil]
+       2 [-]: GETIMPORT R1 3 [0x7B998233]
        3 [-]: CALL R1 1 1  
 L 0:   4 [-]: JUMPIFNOT R1 L1
-       5 [-]: GETIMPORT R1 5 [nil]
+       5 [-]: GETIMPORT R1 5 [0x3D106989]
        6 [-]: LOADK R2 K6 ["Unable to get customization"]
        7 [-]: CALL R1 1 0  
        8 [-]: RETURN R0 0  
-L 1:   9 [-]: GETIMPORT R1 8 [nil]
+L 1:   9 [-]: GETIMPORT R1 8 [0x7ED0A956]
       10 [-]: LOADK R2 K9 ["/Lotus/Powersuits/Operator/OperatorSuitFemale"]
       11 [-]: CALL R1 1 1  
-      12 [-]: GETIMPORT R2 8 [nil]
+      12 [-]: GETIMPORT R2 8 [0x7ED0A956]
       13 [-]: LOADK R3 K10 ["/Lotus/Powersuits/Operator/OperatorSuitMale"]
       14 [-]: CALL R2 1 1  
-      15 [-]: GETIMPORT R4 1 [nil]
+      15 [-]: GETIMPORT R4 1 [0x25D99D89]
       16 [-]: NAMECALL R4 R4 K11 [0x62C81B76]
       17 [-]: CALL R4 1 1  
       18 [-]: GETTABLEKS R3 R4 K12 ["mAdultOperatorCustomization"]
@@ -70,13 +70,13 @@ L 1:   9 [-]: GETIMPORT R1 8 [nil]
       23 [-]: MOVE R6 R2   
       24 [-]: MOVE R7 R1   
       25 [-]: CALL R4 3 1  
-      26 [-]: GETIMPORT R5 16 [nil]
-      27 [-]: GETIMPORT R7 18 [nil]
+      26 [-]: GETIMPORT R5 16 [0x89326C93]
+      27 [-]: GETIMPORT R7 18 [0x88EFC25E]
       28 [-]: MOVE R8 R4   
       29 [-]: CALL R7 1 -1 
       30 [-]: NAMECALL R5 R5 K19 [0x765DAD71]
       31 [-]: CALL R5 -1 1 
-      32 [-]: GETIMPORT R6 22 [nil]
+      32 [-]: GETIMPORT R6 22 [0xAED8235F]
       33 [-]: CALL R6 0 1  
       34 [-]: NEWTABLE R7 0 0
       35 [-]: LOADK R8 K23 ["/Lotus/Upgrades/Skins/Operator/Heads/FemaleHeadA"]
@@ -156,7 +156,7 @@ L 1:   9 [-]: GETIMPORT R1 8 [nil]
      109 [-]: LOADN R23 22 
      110 [-]: LOADN R24 23 
      111 [-]: SETLIST R9 R10 15 [1]
-     112 [-]: GETIMPORT R10 77 [nil]
+     112 [-]: GETIMPORT R10 77 [0xC8802016]
      113 [-]: MOVE R11 R8  
      114 [-]: CALL R10 1 3 
      115 [-]: FORGPREP_INEXT R10 L4
@@ -169,7 +169,7 @@ L 2: 116 [-]: GETTABLEKS R15 R3 K78 ["mCustomization"]
      122 [-]: CALL R17 1 1 
      123 [-]: GETTABLE R16 R7 R17
      124 [-]: JUMPXEQKNIL R16 L3
-     125 [-]: GETIMPORT R16 8 [nil]
+     125 [-]: GETIMPORT R16 8 [0x7ED0A956]
      126 [-]: NAMECALL R18 R15 K80 [0xED4E0128]
      127 [-]: CALL R18 1 1 
      128 [-]: GETTABLE R17 R7 R18
@@ -181,7 +181,7 @@ L 3: 131 [-]: GETTABLEKS R16 R6 K78 ["mCustomization"]
      134 [-]: NAMECALL R16 R16 K81 [0xEDD0B8C3]
      135 [-]: CALL R16 3 0 
 L 4: 136 [-]: FORGLOOP R10 L2 2 [inext]
-     137 [-]: GETIMPORT R10 77 [nil]
+     137 [-]: GETIMPORT R10 77 [0xC8802016]
      138 [-]: MOVE R11 R9  
      139 [-]: CALL R10 1 3 
      140 [-]: FORGPREP_INEXT R10 L6

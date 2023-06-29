@@ -5,10 +5,10 @@
 ; Is_vararg:       1
 ; Max Stack Size:  12
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x2D0FAD09]
        2 [-]: LOADK R1 K2 ["Lotus.Interface.LotusUtilities"]
        3 [-]: CALL R0 1 1  
-       4 [-]: GETIMPORT R1 1 [nil]
+       4 [-]: GETIMPORT R1 1 [0x2D0FAD09]
        5 [-]: LOADK R2 K3 ["EE.Interface.Utilities"]
        6 [-]: CALL R1 1 1  
        7 [-]: LOADB R2 0   
@@ -59,7 +59,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  8
 
-       0 [-]: GETIMPORT R1 1 [nil]
+       0 [-]: GETIMPORT R1 1 [0xAE91E43B]
        1 [-]: LOADK R3 K2 ["Score"]
        2 [-]: LOADN R4 29  
        3 [-]: GETUPVAL R6 0
@@ -79,10 +79,10 @@
 ; Is_vararg:       0
 ; Max Stack Size:  9
 
-       0 [-]: GETIMPORT R1 1 [nil]
+       0 [-]: GETIMPORT R1 1 [0x03F57322]
        1 [-]: MOVE R2 R0   
        2 [-]: CALL R1 1 1  
-       3 [-]: GETIMPORT R2 3 [nil]
+       3 [-]: GETIMPORT R2 3 [0xAE91E43B]
        4 [-]: LOADK R4 K4 ["Score"]
        5 [-]: LOADN R5 29  
        6 [-]: GETUPVAL R7 0
@@ -102,9 +102,9 @@
 ; Is_vararg:       0
 ; Max Stack Size:  13
 
-       0 [-]: GETIMPORT R1 1 [nil]
+       0 [-]: GETIMPORT R1 1 [0x3D106989]
        1 [-]: LOADK R3 K2 ["_SetLives("]
-       2 [-]: GETIMPORT R6 4 [nil]
+       2 [-]: GETIMPORT R6 4 [0x64FB1586]
        3 [-]: MOVE R7 R0   
        4 [-]: CALL R6 1 1  
        5 [-]: MOVE R4 R6   
@@ -117,7 +117,7 @@
       12 [-]: GETUPVAL R5 0
       13 [-]: FASTCALL2 18 R5 R0 L0
       14 [-]: MOVE R6 R0   
-      15 [-]: GETIMPORT R4 8 [nil]
+      15 [-]: GETIMPORT R4 8 [0xB62ECFE0]
       16 [-]: CALL R4 2 1  
 L 0:  17 [-]: MOVE R1 R4   
       18 [-]: LOADN R2 1   
@@ -128,7 +128,7 @@ L 1:  20 [-]: LOADK R5 K9 ["Life"]
       23 [-]: GETUPVAL R5 0
       24 [-]: JUMPIFNOTLT R5 R3 L4
       25 [-]: JUMPXEQKN R3 K10 L2 NOT [1]
-      26 [-]: GETIMPORT R5 12 [nil]
+      26 [-]: GETIMPORT R5 12 [0xAE91E43B]
       27 [-]: MOVE R7 R4   
       28 [-]: LOADN R8 11  
       29 [-]: LOADB R9 1   
@@ -136,19 +136,19 @@ L 1:  20 [-]: LOADK R5 K9 ["Life"]
       31 [-]: CALL R5 4 0  
       32 [-]: JUMP L3
      
-L 2:  33 [-]: GETIMPORT R5 12 [nil]
+L 2:  33 [-]: GETIMPORT R5 12 [0xAE91E43B]
       34 [-]: MOVE R7 R4   
       35 [-]: NAMECALL R5 R5 K14 [0xA7EC3E8A]
       36 [-]: CALL R5 2 1  
       37 [-]: JUMPIF R5 L3 
-      38 [-]: GETIMPORT R5 16 [nil]
-      39 [-]: GETIMPORT R6 12 [nil]
+      38 [-]: GETIMPORT R5 16 [0x38F10E85]
+      39 [-]: GETIMPORT R6 12 [0xAE91E43B]
       40 [-]: LOADK R7 K17 ["Life1.duplicateMovieClip"]
       41 [-]: MOVE R8 R4   
       42 [-]: LOADN R10 1000
       43 [-]: ADD R9 R10 R3
       44 [-]: CALL R5 4 0  
-      45 [-]: GETIMPORT R5 12 [nil]
+      45 [-]: GETIMPORT R5 12 [0xAE91E43B]
       46 [-]: MOVE R7 R4   
       47 [-]: LOADN R8 0   
       48 [-]: GETUPVAL R10 1
@@ -161,21 +161,21 @@ L 3:  54 [-]: GETUPVAL R5 0
       55 [-]: JUMPXEQKN R5 K20 L6 [-1]
       56 [-]: GETUPVAL R6 2
       57 [-]: GETTABLEKS R5 R6 K21 [0xF76783E5]
-      58 [-]: GETIMPORT R6 12 [nil]
+      58 [-]: GETIMPORT R6 12 [0xAE91E43B]
       59 [-]: MOVE R7 R4   
-      60 [-]: GETIMPORT R8 23 [nil]
+      60 [-]: GETIMPORT R8 23 [0xD82D9B3A]
       61 [-]: CALL R5 3 0  
       62 [-]: JUMP L6
      
 L 4:  63 [-]: JUMPIFNOTLT R0 R3 L6
       64 [-]: GETUPVAL R6 2
       65 [-]: GETTABLEKS R5 R6 K21 [0xF76783E5]
-      66 [-]: GETIMPORT R6 12 [nil]
+      66 [-]: GETIMPORT R6 12 [0xAE91E43B]
       67 [-]: MOVE R7 R4   
-      68 [-]: GETIMPORT R8 25 [nil]
+      68 [-]: GETIMPORT R8 25 [0x4ABE720E]
       69 [-]: CALL R5 3 0  
       70 [-]: JUMPXEQKN R3 K10 L5 NOT [1]
-      71 [-]: GETIMPORT R5 12 [nil]
+      71 [-]: GETIMPORT R5 12 [0xAE91E43B]
       72 [-]: MOVE R7 R4   
       73 [-]: LOADN R8 11  
       74 [-]: LOADB R9 0   
@@ -183,8 +183,8 @@ L 4:  63 [-]: JUMPIFNOTLT R0 R3 L6
       76 [-]: CALL R5 4 0  
       77 [-]: JUMP L6
      
-L 5:  78 [-]: GETIMPORT R5 16 [nil]
-      79 [-]: GETIMPORT R6 12 [nil]
+L 5:  78 [-]: GETIMPORT R5 16 [0x38F10E85]
+      79 [-]: GETIMPORT R6 12 [0xAE91E43B]
       80 [-]: MOVE R8 R4   
       81 [-]: LOADK R9 K26 [".removeMovieClip"]
       82 [-]: CONCAT R7 R8 R9
@@ -202,7 +202,7 @@ L 8:  86 [-]: RETURN R0 0
 ; Max Stack Size:  4
 
        0 [-]: GETUPVAL R1 0
-       1 [-]: GETIMPORT R2 1 [nil]
+       1 [-]: GETIMPORT R2 1 [0x03F57322]
        2 [-]: MOVE R3 R0   
        3 [-]: CALL R2 1 -1 
        4 [-]: CALL R1 -1 0 
@@ -218,11 +218,11 @@ L 8:  86 [-]: RETURN R0 0
 
        0 [-]: GETUPVAL R0 0
        1 [-]: JUMPXEQKNIL R0 L0 NOT
-       2 [-]: GETIMPORT R0 1 [nil]
+       2 [-]: GETIMPORT R0 1 [0x2D0FAD09]
        3 [-]: LOADK R1 K2 ["Lotus.Interface.Components.HealthAndShieldDisplay"]
        4 [-]: CALL R0 1 1  
        5 [-]: GETTABLEKS R1 R0 K3 [0xAE6791BA]
-       6 [-]: GETIMPORT R2 5 [nil]
+       6 [-]: GETIMPORT R2 5 [0xAE91E43B]
        7 [-]: LOADNIL R3   
        8 [-]: LOADN R4 300 
        9 [-]: LOADK R5 K6 ["BossHealth"]
@@ -235,13 +235,13 @@ L 8:  86 [-]: RETURN R0 0
 L 0:  16 [-]: GETUPVAL R2 0
       17 [-]: GETTABLEKS R1 R2 K8 ["mAvatar"]
       18 [-]: FASTCALL1 62 R1 L1
-      19 [-]: GETIMPORT R0 10 [nil]
+      19 [-]: GETIMPORT R0 10 [0x7B998233]
       20 [-]: CALL R0 1 1  
 L 1:  21 [-]: JUMPIF R0 L3 
       22 [-]: GETUPVAL R0 0
       23 [-]: NAMECALL R0 R0 K11 [0xFAA69527]
       24 [-]: CALL R0 1 0  
-      25 [-]: GETIMPORT R0 5 [nil]
+      25 [-]: GETIMPORT R0 5 [0xAE91E43B]
       26 [-]: LOADK R2 K6 ["BossHealth"]
       27 [-]: LOADN R3 11  
       28 [-]: LOADB R4 1   
@@ -251,14 +251,14 @@ L 1:  21 [-]: JUMPIF R0 L3
       32 [-]: JUMPIF R0 L2 
       33 [-]: LOADB R0 1   
       34 [-]: SETUPVAL R0 1
-      35 [-]: GETIMPORT R0 5 [nil]
+      35 [-]: GETIMPORT R0 5 [0xAE91E43B]
       36 [-]: LOADK R2 K6 ["BossHealth"]
       37 [-]: LOADN R3 4   
       38 [-]: LOADN R4 -15000
       39 [-]: NAMECALL R0 R0 K13 [0x67BC869F]
       40 [-]: CALL R0 4 0  
-      41 [-]: GETIMPORT R0 15 [nil]
-      42 [-]: GETIMPORT R1 5 [nil]
+      41 [-]: GETIMPORT R0 15 [0x25312C9B]
+      42 [-]: GETIMPORT R1 5 [0xAE91E43B]
       43 [-]: LOADK R2 K6 ["BossHealth"]
       44 [-]: LOADN R3 2   
       45 [-]: NEWTABLE R4 0 2
@@ -275,8 +275,8 @@ L 2:  55 [-]: GETUPVAL R1 0
       56 [-]: GETTABLEKS R0 R1 K17 ["mHealth"]
       57 [-]: LOADN R1 0   
       58 [-]: JUMPIFNOTLE R0 R1 L4
-      59 [-]: GETIMPORT R0 15 [nil]
-      60 [-]: GETIMPORT R1 5 [nil]
+      59 [-]: GETIMPORT R0 15 [0x25312C9B]
+      60 [-]: GETIMPORT R1 5 [0xAE91E43B]
       61 [-]: LOADK R2 K6 ["BossHealth"]
       62 [-]: LOADN R3 2   
       63 [-]: NEWTABLE R4 0 1
@@ -293,7 +293,7 @@ L 2:  55 [-]: GETUPVAL R1 0
       74 [-]: RETURN R0 0  
 L 3:  75 [-]: LOADB R0 0   
       76 [-]: SETUPVAL R0 1
-      77 [-]: GETIMPORT R0 5 [nil]
+      77 [-]: GETIMPORT R0 5 [0xAE91E43B]
       78 [-]: LOADK R2 K6 ["BossHealth"]
       79 [-]: LOADN R3 11  
       80 [-]: LOADB R4 0   
@@ -331,36 +331,36 @@ L 4:  83 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  9
 
-       0 [-]: GETIMPORT R1 1 [nil]
+       0 [-]: GETIMPORT R1 1 [0xAE91E43B]
        1 [-]: FASTCALL1 62 R1 L0
-       2 [-]: GETIMPORT R0 3 [nil]
+       2 [-]: GETIMPORT R0 3 [0x7B998233]
        3 [-]: CALL R0 1 1  
 L 0:   4 [-]: JUMPIF R0 L1 
        5 [-]: GETUPVAL R0 0
        6 [-]: JUMPIF R0 L2 
 L 1:   7 [-]: RETURN R0 0  
-L 2:   8 [-]: GETIMPORT R0 5 [nil]
+L 2:   8 [-]: GETIMPORT R0 5 [0x67652851]
        9 [-]: CALL R0 0 1  
-      10 [-]: GETIMPORT R2 7 [nil]
+      10 [-]: GETIMPORT R2 7 [0xBE190284]
       11 [-]: FASTCALL1 62 R2 L3
-      12 [-]: GETIMPORT R1 3 [nil]
+      12 [-]: GETIMPORT R1 3 [0x7B998233]
       13 [-]: CALL R1 1 1  
 L 3:  14 [-]: JUMPIF R1 L4 
-      15 [-]: GETIMPORT R1 7 [nil]
+      15 [-]: GETIMPORT R1 7 [0xBE190284]
       16 [-]: LOADB R3 1   
       17 [-]: NAMECALL R1 R1 K8 [0xC02F2CB8]
       18 [-]: CALL R1 2 0  
-L 4:  19 [-]: GETIMPORT R1 1 [nil]
+L 4:  19 [-]: GETIMPORT R1 1 [0xAE91E43B]
       20 [-]: MOVE R3 R0   
       21 [-]: NAMECALL R1 R1 K9 [0x8A8C8D5A]
       22 [-]: CALL R1 2 0  
-      23 [-]: GETIMPORT R2 12 [nil]
+      23 [-]: GETIMPORT R2 12 ["SecretMiniGameScore"]
       24 [-]: FASTCALL1 62 R2 L5
-      25 [-]: GETIMPORT R1 3 [nil]
+      25 [-]: GETIMPORT R1 3 [0x7B998233]
       26 [-]: CALL R1 1 1  
 L 5:  27 [-]: JUMPIF R1 L6 
-      28 [-]: GETIMPORT R1 12 [nil]
-      29 [-]: GETIMPORT R2 1 [nil]
+      28 [-]: GETIMPORT R1 12 ["SecretMiniGameScore"]
+      29 [-]: GETIMPORT R2 1 [0xAE91E43B]
       30 [-]: LOADK R4 K13 ["Score"]
       31 [-]: LOADN R5 29  
       32 [-]: GETUPVAL R7 1
@@ -382,7 +382,7 @@ L 6:  39 [-]: GETUPVAL R1 2
 ; Is_vararg:       0
 ; Max Stack Size:  9
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 [0xAE91E43B]
        1 [-]: LOADK R2 K2 ["_root"]
        2 [-]: LOADN R3 10  
        3 [-]: LOADN R4 0   
@@ -390,52 +390,52 @@ L 6:  39 [-]: GETUPVAL R1 2
        5 [-]: CALL R0 4 0  
        6 [-]: LOADB R0 1   
        7 [-]: SETUPVAL R0 0
-       8 [-]: GETIMPORT R0 5 [nil]
+       8 [-]: GETIMPORT R0 5 ["_T"]
        9 [-]: GETUPVAL R1 1
       10 [-]: SETTABLEKS R1 R0 K6 ["SetWyrmiusHealthBarTarget"]
-      11 [-]: GETIMPORT R0 1 [nil]
+      11 [-]: GETIMPORT R0 1 [0xAE91E43B]
       12 [-]: LOADK R2 K7 ["ScoreLabel.text"]
       13 [-]: LOADK R3 K8 ["/Lotus/Language/Menu/WyrmiusScore"]
       14 [-]: NAMECALL R0 R0 K9 [0x20B98DB3]
       15 [-]: CALL R0 3 0  
-      16 [-]: GETIMPORT R3 1 [nil]
+      16 [-]: GETIMPORT R3 1 [0xAE91E43B]
       17 [-]: LOADK R5 K11 ["ScoreLabel"]
       18 [-]: LOADN R6 0   
       19 [-]: NAMECALL R3 R3 K12 [0x91A24E4B]
       20 [-]: CALL R3 3 1  
-      21 [-]: GETIMPORT R4 1 [nil]
+      21 [-]: GETIMPORT R4 1 [0xAE91E43B]
       22 [-]: LOADK R6 K11 ["ScoreLabel"]
       23 [-]: LOADN R7 12  
       24 [-]: NAMECALL R4 R4 K12 [0x91A24E4B]
       25 [-]: CALL R4 3 1  
       26 [-]: ADD R2 R3 R4 
-      27 [-]: GETIMPORT R3 1 [nil]
+      27 [-]: GETIMPORT R3 1 [0xAE91E43B]
       28 [-]: LOADK R5 K11 ["ScoreLabel"]
       29 [-]: LOADN R6 33  
       30 [-]: NAMECALL R3 R3 K12 [0x91A24E4B]
       31 [-]: CALL R3 3 1  
       32 [-]: SUB R1 R2 R3 
       33 [-]: SUBK R0 R1 K10 [20]
-      34 [-]: GETIMPORT R1 1 [nil]
+      34 [-]: GETIMPORT R1 1 [0xAE91E43B]
       35 [-]: LOADK R3 K13 ["ScoreArrow"]
       36 [-]: LOADN R4 0   
       37 [-]: MOVE R5 R0   
       38 [-]: NAMECALL R1 R1 K3 [0x67BC869F]
       39 [-]: CALL R1 4 0  
       40 [-]: SUBK R2 R0 K14 [10]
-      41 [-]: GETIMPORT R3 1 [nil]
+      41 [-]: GETIMPORT R3 1 [0xAE91E43B]
       42 [-]: LOADK R5 K15 ["Score"]
       43 [-]: LOADN R6 12  
       44 [-]: NAMECALL R3 R3 K12 [0x91A24E4B]
       45 [-]: CALL R3 3 1  
       46 [-]: SUB R1 R2 R3 
-      47 [-]: GETIMPORT R2 1 [nil]
+      47 [-]: GETIMPORT R2 1 [0xAE91E43B]
       48 [-]: LOADK R4 K15 ["Score"]
       49 [-]: LOADN R5 0   
       50 [-]: MOVE R6 R1   
       51 [-]: NAMECALL R2 R2 K3 [0x67BC869F]
       52 [-]: CALL R2 4 0  
-      53 [-]: GETIMPORT R2 1 [nil]
+      53 [-]: GETIMPORT R2 1 [0xAE91E43B]
       54 [-]: LOADK R4 K15 ["Score"]
       55 [-]: LOADN R5 29  
       56 [-]: GETUPVAL R7 2
@@ -445,24 +445,24 @@ L 6:  39 [-]: GETUPVAL R1 2
       60 [-]: CALL R6 2 -1 
       61 [-]: NAMECALL R2 R2 K17 [0x5F56EEAB]
       62 [-]: CALL R2 -1 0 
-      63 [-]: GETIMPORT R2 1 [nil]
+      63 [-]: GETIMPORT R2 1 [0xAE91E43B]
       64 [-]: LOADK R4 K18 ["LivesLabel.text"]
       65 [-]: LOADK R5 K19 ["/Lotus/Language/Menu/WyrmiusLives"]
       66 [-]: NAMECALL R2 R2 K9 [0x20B98DB3]
       67 [-]: CALL R2 3 0  
-      68 [-]: GETIMPORT R3 1 [nil]
+      68 [-]: GETIMPORT R3 1 [0xAE91E43B]
       69 [-]: LOADK R5 K20 ["LivesLabel"]
       70 [-]: LOADN R6 0   
       71 [-]: NAMECALL R3 R3 K12 [0x91A24E4B]
       72 [-]: CALL R3 3 1  
-      73 [-]: GETIMPORT R4 1 [nil]
+      73 [-]: GETIMPORT R4 1 [0xAE91E43B]
       74 [-]: LOADK R6 K20 ["LivesLabel"]
       75 [-]: LOADN R7 33  
       76 [-]: NAMECALL R4 R4 K12 [0x91A24E4B]
       77 [-]: CALL R4 3 1  
       78 [-]: ADD R2 R3 R4 
       79 [-]: ADDK R0 R2 K10 [20]
-      80 [-]: GETIMPORT R2 1 [nil]
+      80 [-]: GETIMPORT R2 1 [0xAE91E43B]
       81 [-]: LOADK R4 K21 ["LivesArrow"]
       82 [-]: LOADN R5 0   
       83 [-]: MOVE R6 R0   
@@ -471,14 +471,14 @@ L 6:  39 [-]: GETUPVAL R1 2
       86 [-]: ADDK R3 R0 K10 [20]
       87 [-]: ADDK R2 R3 K14 [10]
       88 [-]: SETUPVAL R2 3
-      89 [-]: GETIMPORT R2 1 [nil]
+      89 [-]: GETIMPORT R2 1 [0xAE91E43B]
       90 [-]: LOADK R4 K22 ["Life1"]
       91 [-]: LOADN R5 0   
       92 [-]: GETUPVAL R6 3
       93 [-]: NAMECALL R2 R2 K3 [0x67BC869F]
       94 [-]: CALL R2 4 0  
-      95 [-]: GETIMPORT R2 24 [nil]
-      96 [-]: GETIMPORT R3 1 [nil]
+      95 [-]: GETIMPORT R2 24 [0x25312C9B]
+      96 [-]: GETIMPORT R3 1 [0xAE91E43B]
       97 [-]: LOADK R4 K2 ["_root"]
       98 [-]: LOADN R5 0   
       99 [-]: NEWTABLE R6 0 1
@@ -501,21 +501,21 @@ L 6:  39 [-]: GETUPVAL R1 2
 
        0 [-]: LOADB R0 0   
        1 [-]: LOADN R1 10  
-L 0:   2 [-]: GETIMPORT R2 1 [nil]
-       3 [-]: GETIMPORT R4 3 [nil]
+L 0:   2 [-]: GETIMPORT R2 1 [0x89326C93]
+       3 [-]: GETIMPORT R4 3 [0x1021CDF7]
        4 [-]: NAMECALL R2 R2 K4 [0xFB669000]
        5 [-]: CALL R2 2 1  
        6 [-]: FASTCALL1 62 R2 L1
        7 [-]: MOVE R4 R2   
-       8 [-]: GETIMPORT R3 6 [nil]
+       8 [-]: GETIMPORT R3 6 [0x7B998233]
        9 [-]: CALL R3 1 1  
 L 1:  10 [-]: JUMPIF R3 L3 
       11 [-]: GETTABLEN R4 R2 1
       12 [-]: FASTCALL1 62 R4 L2
-      13 [-]: GETIMPORT R3 6 [nil]
+      13 [-]: GETIMPORT R3 6 [0x7B998233]
       14 [-]: CALL R3 1 1  
 L 2:  15 [-]: JUMPIF R3 L3 
-      16 [-]: GETIMPORT R3 9 [nil]
+      16 [-]: GETIMPORT R3 9 ["SetWyrmiusHealthBarTarget"]
       17 [-]: GETTABLEN R4 R2 1
       18 [-]: CALL R3 1 0  
       19 [-]: LOADB R0 1   
@@ -527,7 +527,7 @@ L 3:  21 [-]: SUBK R1 R1 K10 [1]
       24 [-]: LOADB R0 1   
       25 [-]: JUMP L5
      
-L 4:  26 [-]: GETIMPORT R3 12 [nil]
+L 4:  26 [-]: GETIMPORT R3 12 [0xCBD666E1]
       27 [-]: LOADN R4 1   
       28 [-]: CALL R3 1 0  
 L 5:  29 [-]: JUMPIF R0 L6 

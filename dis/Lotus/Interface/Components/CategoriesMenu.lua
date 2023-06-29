@@ -5,14 +5,14 @@
 ; Is_vararg:       1
 ; Max Stack Size:  3
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0xAEABECDA]
        2 [-]: GETVARARGS R1 1
-       3 [-]: GETIMPORT R2 4 [nil]
+       3 [-]: GETIMPORT R2 4 ["seeall"]
        4 [-]: CALL R0 2 0  
-       5 [-]: GETIMPORT R0 6 [nil]
+       5 [-]: GETIMPORT R0 6 [0x2D0FAD09]
        6 [-]: LOADK R1 K7 ["EE.Interface.Utilities"]
        7 [-]: CALL R0 1 1  
-       8 [-]: GETIMPORT R1 6 [nil]
+       8 [-]: GETIMPORT R1 6 [0x2D0FAD09]
        9 [-]: LOADK R2 K8 ["Lotus.Interface.UIStyleUtilities"]
       10 [-]: CALL R1 1 1  
       11 [-]: DUPCLOSURE R2 K9 []
@@ -29,7 +29,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  10
 
-       0 [-]: GETIMPORT R3 1 [nil]
+       0 [-]: GETIMPORT R3 1 [0x2D0FAD09]
        1 [-]: LOADK R4 K2 ["EE.Interface.Components.List"]
        2 [-]: CALL R3 1 1  
        3 [-]: GETTABLEKS R4 R3 K3 [0x9383BC56]
@@ -66,7 +66,7 @@
       34 [-]: SETTABLEKS R5 R4 K19 ["mIconOverZ"]
       35 [-]: LOADB R5 1   
       36 [-]: SETTABLEKS R5 R4 K20 ["mUseOriginalDimensions"]
-      37 [-]: GETIMPORT R6 22 [nil]
+      37 [-]: GETIMPORT R6 22 [0x0032441C]
       38 [-]: GETTABLEKS R5 R6 K23 ["UIMaterial_SmoothEdgeNoDepthTest"]
       39 [-]: SETTABLEKS R5 R4 K24 ["mSmoothEdgeMaterial"]
       40 [-]: LOADB R5 0   

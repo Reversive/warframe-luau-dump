@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  2
 
-            1 [-]: DUPCLOSURE R0 K0 []
+       1 [-]: DUPCLOSURE R0 K0 []
        2 [-]: DUPCLOSURE R1 K1 []
        3 [-]: SETGLOBAL R1 K2 ["MatchTagEvent"]
        4 [-]: DUPCLOSURE R1 K3 []
@@ -26,7 +26,7 @@
        1 [-]: CALL R1 1 1  
        2 [-]: FASTCALL1 62 R1 L0
        3 [-]: MOVE R3 R1   
-       4 [-]: GETIMPORT R2 2 [nil]
+       4 [-]: GETIMPORT R2 2 [0x7B998233]
        5 [-]: CALL R2 1 1  
 L 0:   6 [-]: JUMPIF R2 L1 
        7 [-]: NAMECALL R2 R1 K3 [0xDE321E6F]
@@ -51,7 +51,7 @@ L 1:  14 [-]: LOADB R2 0
        1 [-]: CALL R3 1 1  
        2 [-]: FASTCALL1 62 R3 L0
        3 [-]: MOVE R5 R3   
-       4 [-]: GETIMPORT R4 2 [nil]
+       4 [-]: GETIMPORT R4 2 [0x7B998233]
        5 [-]: CALL R4 1 1  
 L 0:   6 [-]: JUMPIF R4 L1 
        7 [-]: NAMECALL R4 R3 K3 [0xDE321E6F]
@@ -76,7 +76,7 @@ L 1:  14 [-]: LOADB R2 0
        1 [-]: CALL R3 1 1  
        2 [-]: FASTCALL1 62 R3 L0
        3 [-]: MOVE R5 R3   
-       4 [-]: GETIMPORT R4 2 [nil]
+       4 [-]: GETIMPORT R4 2 [0x7B998233]
        5 [-]: CALL R4 1 1  
 L 0:   6 [-]: JUMPIF R4 L1 
        7 [-]: NAMECALL R4 R3 K3 [0xDE321E6F]
@@ -89,67 +89,67 @@ L 0:   6 [-]: JUMPIF R4 L1
      
 L 1:  14 [-]: LOADB R2 0   
 L 2:  15 [-]: JUMPIFNOT R2 L13
-      16 [-]: GETIMPORT R2 6 [nil]
+      16 [-]: GETIMPORT R2 6 [0x1C15C9EB]
       17 [-]: LOADN R3 1   
       18 [-]: JUMPIFNOTLT R3 R2 L12
       19 [-]: NAMECALL R2 R1 K0 [0xA534C3AC]
       20 [-]: CALL R2 1 1  
       21 [-]: FASTCALL1 62 R2 L3
       22 [-]: MOVE R4 R2   
-      23 [-]: GETIMPORT R3 2 [nil]
+      23 [-]: GETIMPORT R3 2 [0x7B998233]
       24 [-]: CALL R3 1 1  
 L 3:  25 [-]: JUMPIF R3 L12
       26 [-]: NAMECALL R3 R2 K7 [0x388577D5]
       27 [-]: CALL R3 1 1  
-      28 [-]: GETIMPORT R5 10 [nil]
+      28 [-]: GETIMPORT R5 10 ["finisherHitsRemaining"]
       29 [-]: FASTCALL1 62 R5 L4
-      30 [-]: GETIMPORT R4 2 [nil]
+      30 [-]: GETIMPORT R4 2 [0x7B998233]
       31 [-]: CALL R4 1 1  
 L 4:  32 [-]: JUMPIF R4 L9 
-      33 [-]: GETIMPORT R6 10 [nil]
+      33 [-]: GETIMPORT R6 10 ["finisherHitsRemaining"]
       34 [-]: GETTABLE R5 R6 R3
       35 [-]: FASTCALL1 62 R5 L5
-      36 [-]: GETIMPORT R4 2 [nil]
+      36 [-]: GETIMPORT R4 2 [0x7B998233]
       37 [-]: CALL R4 1 1  
 L 5:  38 [-]: JUMPIF R4 L9 
-      39 [-]: GETIMPORT R5 10 [nil]
+      39 [-]: GETIMPORT R5 10 ["finisherHitsRemaining"]
       40 [-]: GETTABLE R4 R5 R3
       41 [-]: LOADN R5 0   
       42 [-]: JUMPIFNOTLT R5 R4 L9
-      43 [-]: GETIMPORT R6 10 [nil]
+      43 [-]: GETIMPORT R6 10 ["finisherHitsRemaining"]
       44 [-]: GETTABLE R5 R6 R3
       45 [-]: SUBK R4 R5 K11 [1]
       46 [-]: LOADN R5 0   
       47 [-]: JUMPIFNOTLT R5 R4 L6
-      48 [-]: GETIMPORT R5 10 [nil]
+      48 [-]: GETIMPORT R5 10 ["finisherHitsRemaining"]
       49 [-]: SETTABLE R4 R5 R3
       50 [-]: JUMP L8
      
-L 6:  51 [-]: GETIMPORT R5 10 [nil]
+L 6:  51 [-]: GETIMPORT R5 10 ["finisherHitsRemaining"]
       52 [-]: LOADNIL R6   
       53 [-]: SETTABLE R6 R5 R3
-      54 [-]: GETIMPORT R6 13 [nil]
-      55 [-]: GETIMPORT R7 10 [nil]
+      54 [-]: GETIMPORT R6 13 [0x4EC73E73]
+      55 [-]: GETIMPORT R7 10 ["finisherHitsRemaining"]
       56 [-]: CALL R6 1 -1 
       57 [-]: FASTCALL 62 L7
-      58 [-]: GETIMPORT R5 2 [nil]
+      58 [-]: GETIMPORT R5 2 [0x7B998233]
       59 [-]: CALL R5 -1 1 
 L 7:  60 [-]: JUMPIFNOT R5 L8
-      61 [-]: GETIMPORT R5 14 [nil]
+      61 [-]: GETIMPORT R5 14 ["_T"]
       62 [-]: LOADNIL R6   
       63 [-]: SETTABLEKS R6 R5 K9 ["finisherHitsRemaining"]
 L 8:  64 [-]: LOADB R5 0   
       65 [-]: RETURN R5 1  
-L 9:  66 [-]: GETIMPORT R5 10 [nil]
+L 9:  66 [-]: GETIMPORT R5 10 ["finisherHitsRemaining"]
       67 [-]: FASTCALL1 62 R5 L10
-      68 [-]: GETIMPORT R4 2 [nil]
+      68 [-]: GETIMPORT R4 2 [0x7B998233]
       69 [-]: CALL R4 1 1  
 L10:  70 [-]: JUMPIFNOT R4 L11
-      71 [-]: GETIMPORT R4 14 [nil]
+      71 [-]: GETIMPORT R4 14 ["_T"]
       72 [-]: NEWTABLE R5 0 0
       73 [-]: SETTABLEKS R5 R4 K9 ["finisherHitsRemaining"]
-L11:  74 [-]: GETIMPORT R4 10 [nil]
-      75 [-]: GETIMPORT R6 6 [nil]
+L11:  74 [-]: GETIMPORT R4 10 ["finisherHitsRemaining"]
+      75 [-]: GETIMPORT R6 6 [0x1C15C9EB]
       76 [-]: SUBK R5 R6 K11 [1]
       77 [-]: SETTABLE R5 R4 R3
 L12:  78 [-]: LOADB R2 1   
@@ -169,7 +169,7 @@ L13:  80 [-]: LOADB R2 0
        1 [-]: CALL R3 1 1  
        2 [-]: FASTCALL1 62 R3 L0
        3 [-]: MOVE R5 R3   
-       4 [-]: GETIMPORT R4 2 [nil]
+       4 [-]: GETIMPORT R4 2 [0x7B998233]
        5 [-]: CALL R4 1 1  
 L 0:   6 [-]: JUMPIF R4 L1 
        7 [-]: NAMECALL R4 R3 K3 [0xDE321E6F]

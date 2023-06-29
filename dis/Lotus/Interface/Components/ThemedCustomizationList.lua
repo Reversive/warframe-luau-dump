@@ -5,50 +5,50 @@
 ; Is_vararg:       1
 ; Max Stack Size:  15
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0xAEABECDA]
        2 [-]: GETVARARGS R1 1
-       3 [-]: GETIMPORT R2 4 [nil]
+       3 [-]: GETIMPORT R2 4 ["seeall"]
        4 [-]: CALL R0 2 0  
-       5 [-]: GETIMPORT R0 6 [nil]
+       5 [-]: GETIMPORT R0 6 [0x2D0FAD09]
        6 [-]: LOADK R1 K7 ["EE.Interface.Utilities"]
        7 [-]: CALL R0 1 1  
-       8 [-]: GETIMPORT R1 6 [nil]
+       8 [-]: GETIMPORT R1 6 [0x2D0FAD09]
        9 [-]: LOADK R2 K8 ["Lotus.Interface.LotusUtilities"]
       10 [-]: CALL R1 1 1  
-      11 [-]: GETIMPORT R2 6 [nil]
+      11 [-]: GETIMPORT R2 6 [0x2D0FAD09]
       12 [-]: LOADK R3 K9 ["Lotus.Interface.UIStyleUtilities"]
       13 [-]: CALL R2 1 1  
-      14 [-]: GETIMPORT R3 6 [nil]
+      14 [-]: GETIMPORT R3 6 [0x2D0FAD09]
       15 [-]: LOADK R4 K10 ["Lotus.Interface.UIUtilities"]
       16 [-]: CALL R3 1 1  
-      17 [-]: GETIMPORT R4 6 [nil]
+      17 [-]: GETIMPORT R4 6 [0x2D0FAD09]
       18 [-]: LOADK R5 K11 ["Lotus.Interface.StoreItemUtilities"]
       19 [-]: CALL R4 1 1  
-      20 [-]: GETIMPORT R5 13 [nil]
+      20 [-]: GETIMPORT R5 13 [0xB009BBC6]
       21 [-]: LOADK R6 K14 ["/Lotus/Interface/Materials/CustomizationListVisRangeMaterial"]
       22 [-]: CALL R5 1 1  
-      23 [-]: GETIMPORT R6 13 [nil]
+      23 [-]: GETIMPORT R6 13 [0xB009BBC6]
       24 [-]: LOADK R7 K15 ["/Lotus/Interface/Materials/CustomizationListTextVisRangeMaterial"]
       25 [-]: CALL R6 1 1  
-      26 [-]: GETIMPORT R7 13 [nil]
+      26 [-]: GETIMPORT R7 13 [0xB009BBC6]
       27 [-]: LOADK R8 K16 ["/Lotus/Interface/Materials/CustomizationListNoDepthMaterial"]
       28 [-]: CALL R7 1 1  
-      29 [-]: GETIMPORT R8 13 [nil]
+      29 [-]: GETIMPORT R8 13 [0xB009BBC6]
       30 [-]: LOADK R9 K17 ["/Lotus/Interface/Materials/VisibleRangeMarketShadow"]
       31 [-]: CALL R8 1 1  
-      32 [-]: GETIMPORT R9 6 [nil]
+      32 [-]: GETIMPORT R9 6 [0x2D0FAD09]
       33 [-]: LOADK R10 K18 ["Lotus.Interface.Components.ThemedCustomizationButton"]
       34 [-]: CALL R9 1 1  
-      35 [-]: GETIMPORT R10 6 [nil]
+      35 [-]: GETIMPORT R10 6 [0x2D0FAD09]
       36 [-]: LOADK R11 K19 ["EE.Interface.Components.List"]
       37 [-]: CALL R10 1 1 
-      38 [-]: GETIMPORT R11 6 [nil]
+      38 [-]: GETIMPORT R11 6 [0x2D0FAD09]
       39 [-]: LOADK R12 K20 ["Lotus.Interface.Components.CategorizedGrid"]
       40 [-]: CALL R11 1 1 
-      41 [-]: GETIMPORT R12 13 [nil]
+      41 [-]: GETIMPORT R12 13 [0xB009BBC6]
       42 [-]: LOADK R13 K21 ["/Lotus/Types/StoreItems/SuitCustomizations/ColourPickerItem"]
       43 [-]: CALL R12 1 1 
-      44 [-]: GETIMPORT R13 13 [nil]
+      44 [-]: GETIMPORT R13 13 [0xB009BBC6]
       45 [-]: LOADK R14 K22 ["/Lotus/Interface/Icons/LockIconStroke.png"]
       46 [-]: CALL R13 1 1 
       47 [-]: DUPCLOSURE R14 K23 []
@@ -235,7 +235,7 @@ L 0: 154 [-]: LOADB R5 1
      155 [-]: SETTABLEKS R5 R4 K63 ["mCategoryOffset"]
      156 [-]: LOADB R5 0   
      157 [-]: SETTABLEKS R5 R4 K64 ["mCategoryHideBar"]
-     158 [-]: GETIMPORT R5 67 [nil]
+     158 [-]: GETIMPORT R5 67 [0xE6B41ADB]
      159 [-]: CALL R5 0 1  
      160 [-]: JUMPIFNOT R5 L1
      161 [-]: NAMECALL R5 R4 K68 [0xF4FED7FE]
@@ -392,7 +392,7 @@ L 1: 163 [-]: GETTABLEKS R5 R4 K0 ["mMovie"]
      312 [-]: DUPCLOSURE R5 K153 []
      313 [-]: SETTABLEKS R5 R4 K154 ["RunEnabledChecks"]
      314 [-]: SETTABLEKS R4 R3 K155 ["CustomizationList"]
-     315 [-]: GETIMPORT R5 157 [nil]
+     315 [-]: GETIMPORT R5 157 [0x38F10E85]
      316 [-]: GETTABLEKS R6 R3 K0 ["mMovie"]
      317 [-]: GETTABLEKS R8 R3 K1 ["mClipName"]
      318 [-]: LOADK R9 K158 [".CustomizationPanel.List.MenuItem.swapDepths"]
@@ -419,7 +419,7 @@ L 1: 163 [-]: GETTABLEKS R5 R4 K0 ["mMovie"]
      339 [-]: CALL R5 1 0  
      340 [-]: JUMP L3
      
-L 2: 341 [-]: GETIMPORT R5 166 [nil]
+L 2: 341 [-]: GETIMPORT R5 166 [0x2D0FAD09]
      342 [-]: LOADK R6 K167 ["EE.Interface.Components.ScrollBar"]
      343 [-]: CALL R5 1 1  
      344 [-]: GETTABLEKS R6 R5 K168 [0x3B3EA08C]
@@ -489,7 +489,7 @@ L 3: 362 [-]: MOVE R7 R1
      408 [-]: GETTABLEKS R4 R3 K177 ["ItemSelectionGrid"]
      409 [-]: NAMECALL R4 R4 K164 [0x7220ACB6]
      410 [-]: CALL R4 1 0  
-     411 [-]: GETIMPORT R4 67 [nil]
+     411 [-]: GETIMPORT R4 67 [0xE6B41ADB]
      412 [-]: CALL R4 0 1  
      413 [-]: JUMPIFNOT R4 L4
      414 [-]: GETTABLEKS R4 R3 K177 ["ItemSelectionGrid"]
@@ -638,7 +638,7 @@ L 4: 417 [-]: GETTABLEKS R4 R3 K177 ["ItemSelectionGrid"]
      557 [-]: LOADB R7 0   
      558 [-]: NAMECALL R4 R0 K10 [0x42B04007]
      559 [-]: CALL R4 3 1  
-     560 [-]: GETIMPORT R5 166 [nil]
+     560 [-]: GETIMPORT R5 166 [0x2D0FAD09]
      561 [-]: LOADK R6 K221 ["Lotus.Interface.Components.ThemedInputField"]
      562 [-]: CALL R5 1 1  
      563 [-]: GETTABLEKS R6 R3 K177 ["ItemSelectionGrid"]
@@ -676,7 +676,7 @@ L 4: 417 [-]: GETTABLEKS R4 R3 K177 ["ItemSelectionGrid"]
      595 [-]: SETTABLEKS R7 R6 K230 ["mTextBuffer"]
      596 [-]: GETTABLEKS R7 R3 K177 ["ItemSelectionGrid"]
      597 [-]: GETTABLEKS R6 R7 K224 ["mSearchBox"]
-     598 [-]: GETIMPORT R8 232 [nil]
+     598 [-]: GETIMPORT R8 232 [0x0032441C]
      599 [-]: GETTABLEKS R7 R8 K233 ["UITexture_Search"]
      600 [-]: SETTABLEKS R7 R6 K234 ["mAltButtonIcon"]
      601 [-]: GETTABLEKS R7 R3 K177 ["ItemSelectionGrid"]

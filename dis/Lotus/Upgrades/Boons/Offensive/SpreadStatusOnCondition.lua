@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  2
 
-            1 [-]: DUPCLOSURE R0 K0 []
+       1 [-]: DUPCLOSURE R0 K0 []
        2 [-]: SETGLOBAL R0 K1 ["GetDescription"]
        3 [-]: DUPCLOSURE R0 K2 []
        4 [-]: DUPCLOSURE R1 K3 []
@@ -21,15 +21,15 @@
 ; Max Stack Size:  5
 
        0 [-]: DUPTABLE R1 2
-       1 [-]: GETIMPORT R2 4 [nil]
+       1 [-]: GETIMPORT R2 4 [0x1E9434AC]
        2 [-]: SETTABLEKS R2 R1 K0 ["range"]
-       3 [-]: GETIMPORT R4 7 [nil]
+       3 [-]: GETIMPORT R4 7 [0x9257A971]
        4 [-]: MULK R3 R4 K5 [100]
        5 [-]: FASTCALL1 12 R3 L0
-       6 [-]: GETIMPORT R2 10 [nil]
+       6 [-]: GETIMPORT R2 10 [0x55F27C30]
        7 [-]: CALL R2 1 1  
 L 0:   8 [-]: SETTABLEKS R2 R1 K1 ["val"]
-       9 [-]: GETIMPORT R2 13 [nil]
+       9 [-]: GETIMPORT R2 13 [0xB139D7BC]
       10 [-]: MOVE R3 R1   
       11 [-]: CALL R2 1 -1 
       12 [-]: RETURN R2 -1 
@@ -44,7 +44,7 @@ L 0:   8 [-]: SETTABLEKS R2 R1 K1 ["val"]
 
        0 [-]: FASTCALL1 62 R1 L0
        1 [-]: MOVE R4 R1   
-       2 [-]: GETIMPORT R3 1 [nil]
+       2 [-]: GETIMPORT R3 1 [0x7B998233]
        3 [-]: CALL R3 1 1  
 L 0:   4 [-]: JUMPIF R3 L1 
        5 [-]: NAMECALL R3 R1 K2 [0x2047CFE7]
@@ -73,32 +73,32 @@ L 1:  18 [-]: NOT R2 R3
 
        0 [-]: FASTCALL1 62 R0 L0
        1 [-]: MOVE R6 R0   
-       2 [-]: GETIMPORT R5 1 [nil]
+       2 [-]: GETIMPORT R5 1 [0x7B998233]
        3 [-]: CALL R5 1 1  
 L 0:   4 [-]: JUMPIF R5 L1 
-       5 [-]: GETIMPORT R5 4 [nil]
+       5 [-]: GETIMPORT R5 4 ["TempSpreadAroundVictim"]
        6 [-]: JUMPIFNOT R5 L2
 L 1:   7 [-]: RETURN R0 0  
 L 2:   8 [-]: NAMECALL R5 R4 K5 [0x5EFCA02D]
        9 [-]: CALL R5 1 1  
       10 [-]: FASTCALL1 62 R5 L3
       11 [-]: MOVE R7 R5   
-      12 [-]: GETIMPORT R6 1 [nil]
+      12 [-]: GETIMPORT R6 1 [0x7B998233]
       13 [-]: CALL R6 1 1  
 L 3:  14 [-]: JUMPIF R6 L5 
       15 [-]: GETTABLEKS R7 R5 K6 ["victim"]
       16 [-]: FASTCALL1 62 R7 L4
-      17 [-]: GETIMPORT R6 1 [nil]
+      17 [-]: GETIMPORT R6 1 [0x7B998233]
       18 [-]: CALL R6 1 1  
 L 4:  19 [-]: JUMPIFNOT R6 L6
 L 5:  20 [-]: RETURN R0 0  
-L 6:  21 [-]: GETIMPORT R6 7 [nil]
+L 6:  21 [-]: GETIMPORT R6 7 ["_T"]
       22 [-]: LOADB R7 1   
       23 [-]: SETTABLEKS R7 R6 K3 ["TempSpreadAroundVictim"]
       24 [-]: GETTABLEKS R6 R5 K6 ["victim"]
       25 [-]: NAMECALL R7 R6 K8 [0x1AC1655C]
       26 [-]: CALL R7 1 1  
-      27 [-]: GETIMPORT R8 11 [nil]
+      27 [-]: GETIMPORT R8 11 [0x35C16153]
       28 [-]: CALL R8 0 1  
       29 [-]: MOVE R11 R0  
       30 [-]: NAMECALL R9 R8 K12 [0x86CD00CB]
@@ -140,7 +140,7 @@ L 7:  43 [-]: MOVE R16 R13
       66 [-]: SETTABLE R16 R10 R13
 L 8:  67 [-]: FORNLOOP R11 L7
 L 9:  68 [-]: SETTABLEKS R9 R8 K20 ["baseAmount"]
-      69 [-]: GETIMPORT R11 22 [nil]
+      69 [-]: GETIMPORT R11 22 [0xCFC01047]
       70 [-]: MOVE R12 R10 
       71 [-]: CALL R11 1 3 
       72 [-]: FORGPREP_NEXT R11 L11
@@ -149,12 +149,12 @@ L10:  73 [-]: MOVE R18 R14
       75 [-]: NAMECALL R16 R8 K23 [0x1586E35E]
       76 [-]: CALL R16 3 0 
 L11:  77 [-]: FORGLOOP R11 L10 2
-      78 [-]: GETIMPORT R11 25 [nil]
-      79 [-]: GETIMPORT R13 27 [nil]
+      78 [-]: GETIMPORT R11 25 [0x89326C93]
+      79 [-]: GETIMPORT R13 27 ["gLotusNpcAvatarType"]
       80 [-]: NAMECALL R14 R6 K28 [0xF6EBD926]
       81 [-]: CALL R14 1 1 
       82 [-]: LOADN R15 0  
-      83 [-]: GETIMPORT R16 30 [nil]
+      83 [-]: GETIMPORT R16 30 [0x1E9434AC]
       84 [-]: NAMECALL R11 R11 K31 [0xFB669000]
       85 [-]: CALL R11 5 1 
       86 [-]: LOADN R14 1  
@@ -166,7 +166,7 @@ L12:  90 [-]: GETTABLE R15 R11 R14
       92 [-]: GETTABLE R16 R11 R14
       93 [-]: FASTCALL1 62 R16 L13
       94 [-]: MOVE R18 R16 
-      95 [-]: GETIMPORT R17 1 [nil]
+      95 [-]: GETIMPORT R17 1 [0x7B998233]
       96 [-]: CALL R17 1 1 
 L13:  97 [-]: JUMPIF R17 L14
       98 [-]: NAMECALL R17 R16 K32 [0x2047CFE7]
@@ -189,7 +189,7 @@ L14: 111 [-]: NOT R15 R17
      115 [-]: NAMECALL R15 R15 K36 [0x479483BB]
      116 [-]: CALL R15 2 0 
 L15: 117 [-]: FORNLOOP R12 L12
-L16: 118 [-]: GETIMPORT R12 7 [nil]
+L16: 118 [-]: GETIMPORT R12 7 ["_T"]
      119 [-]: LOADNIL R13  
      120 [-]: SETTABLEKS R13 R12 K3 ["TempSpreadAroundVictim"]
      121 [-]: RETURN R0 0  

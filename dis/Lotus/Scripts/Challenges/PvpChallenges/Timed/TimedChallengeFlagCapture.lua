@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  5
 
-            1 [-]: LOADN R0 0   
+       1 [-]: LOADN R0 0   
        2 [-]: LOADN R1 1   
        3 [-]: LOADNIL R2   
        4 [-]: LOADNIL R3   
@@ -31,28 +31,28 @@
 ; Is_vararg:       0
 ; Max Stack Size:  4
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 [0x3D106989]
        1 [-]: LOADK R1 K2 ["PVPChallengeFlagCapture Start"]
        2 [-]: CALL R0 1 0  
-       3 [-]: GETIMPORT R0 4 [nil]
-       4 [-]: GETIMPORT R2 6 [nil]
+       3 [-]: GETIMPORT R0 4 [0xBA7DFCD2]
+       4 [-]: GETIMPORT R2 6 [0x83062D09]
        5 [-]: NAMECALL R0 R0 K7 [0xD31CFAC0]
        6 [-]: CALL R0 2 1  
        7 [-]: SETUPVAL R0 0
        8 [-]: GETUPVAL R1 0
        9 [-]: FASTCALL1 62 R1 L0
-      10 [-]: GETIMPORT R0 9 [nil]
+      10 [-]: GETIMPORT R0 9 [0x7B998233]
       11 [-]: CALL R0 1 1  
 L 0:  12 [-]: JUMPIFNOT R0 L1
       13 [-]: RETURN R0 0  
-L 1:  14 [-]: GETIMPORT R0 4 [nil]
-      15 [-]: GETIMPORT R2 6 [nil]
+L 1:  14 [-]: GETIMPORT R0 4 [0xBA7DFCD2]
+      15 [-]: GETIMPORT R2 6 [0x83062D09]
       16 [-]: NAMECALL R0 R0 K10 [0xC97B7A44]
       17 [-]: CALL R0 2 1  
       18 [-]: SETUPVAL R0 1
       19 [-]: GETUPVAL R1 1
       20 [-]: FASTCALL1 62 R1 L2
-      21 [-]: GETIMPORT R0 9 [nil]
+      21 [-]: GETIMPORT R0 9 [0x7B998233]
       22 [-]: CALL R0 1 1  
 L 2:  23 [-]: JUMPIFNOT R0 L3
       24 [-]: RETURN R0 0  
@@ -90,7 +90,7 @@ L 4:  35 [-]: GETUPVAL R0 1
        1 [-]: NAMECALL R4 R0 K1 [0x420402A9]
        2 [-]: CALL R4 1 1  
        3 [-]: JUMPIFNOT R4 L1
-       4 [-]: GETIMPORT R4 3 [nil]
+       4 [-]: GETIMPORT R4 3 [0x3D106989]
        5 [-]: LOADK R5 K4 ["PVPChallengeFlagCapture advance the number!"]
        6 [-]: CALL R4 1 0  
        7 [-]: GETUPVAL R5 0
@@ -98,7 +98,7 @@ L 4:  35 [-]: GETUPVAL R0 1
        9 [-]: SETUPVAL R4 0
       10 [-]: GETUPVAL R5 1
       11 [-]: FASTCALL1 62 R5 L0
-      12 [-]: GETIMPORT R4 7 [nil]
+      12 [-]: GETIMPORT R4 7 [0x7B998233]
       13 [-]: CALL R4 1 1  
 L 0:  14 [-]: JUMPIF R4 L1 
       15 [-]: GETUPVAL R4 1

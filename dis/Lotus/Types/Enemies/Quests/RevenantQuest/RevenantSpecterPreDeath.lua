@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  1
 
-            1 [-]: DUPCLOSURE R0 K0 []
+       1 [-]: DUPCLOSURE R0 K0 []
        2 [-]: SETGLOBAL R0 K1 ["OnPreDeath"]
        3 [-]: DUPCLOSURE R0 K2 []
        4 [-]: SETGLOBAL R0 K3 ["RevenantAvatar"]
@@ -28,17 +28,17 @@
        6 [-]: LOADB R3 0   
        7 [-]: NAMECALL R1 R1 K2 [0xD7ADAEA7]
        8 [-]: CALL R1 2 0  
-       9 [-]: GETIMPORT R1 4 [nil]
+       9 [-]: GETIMPORT R1 4 [0xCBD666E1]
       10 [-]: LOADN R2 0   
       11 [-]: CALL R1 1 0  
-      12 [-]: GETIMPORT R3 6 [nil]
+      12 [-]: GETIMPORT R3 6 [0xF88E4337]
       13 [-]: LOADB R4 1   
       14 [-]: LOADN R5 4   
       15 [-]: LOADN R6 1   
       16 [-]: LOADB R7 1   
       17 [-]: NAMECALL R1 R0 K7 [0x5D985C7E]
       18 [-]: CALL R1 6 0  
-      19 [-]: GETIMPORT R3 9 [nil]
+      19 [-]: GETIMPORT R3 9 [0xBA16F1C9]
       20 [-]: LOADB R4 0   
       21 [-]: LOADN R5 4   
       22 [-]: LOADN R6 2   
@@ -59,7 +59,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
-       0 [-]: GETIMPORT R1 1 [nil]
+       0 [-]: GETIMPORT R1 1 ["_T"]
        1 [-]: SETTABLEKS R0 R1 K2 ["RevenantQuestSpecter"]
        2 [-]: RETURN R0 0  
 

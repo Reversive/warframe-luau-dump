@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  32
 
-            1 [-]: NEWTABLE R0 64 0
+       1 [-]: NEWTABLE R0 64 0
        2 [-]: NEWTABLE R1 0 1
        3 [-]: LOADK R2 K0 ["nor"]
        4 [-]: SETLIST R1 R2 1 [1]
@@ -48712,14 +48712,14 @@
 ; Is_vararg:       0
 ; Max Stack Size:  17
 
-       0 [-]: GETIMPORT R2 2 [nil]
+       0 [-]: GETIMPORT R2 2 [0x04981AB3]
        1 [-]: MOVE R3 R0   
        2 [-]: CALL R2 1 1  
-       3 [-]: GETIMPORT R3 4 [nil]
+       3 [-]: GETIMPORT R3 4 [0xCFC01047]
        4 [-]: GETUPVAL R4 0
        5 [-]: CALL R3 1 3  
        6 [-]: FORGPREP_NEXT R3 L3
-L 0:   7 [-]: GETIMPORT R8 6 [nil]
+L 0:   7 [-]: GETIMPORT R8 6 [0xA5C556B9]
        8 [-]: MOVE R9 R2   
        9 [-]: MOVE R10 R6  
       10 [-]: CALL R8 2 2  
@@ -48728,10 +48728,10 @@ L 0:   7 [-]: GETIMPORT R8 6 [nil]
       13 [-]: LOADN R15 1  
       14 [-]: SUBK R16 R8 K7 [1]
       15 [-]: FASTCALL 45 L1
-      16 [-]: GETIMPORT R13 9 [nil]
+      16 [-]: GETIMPORT R13 9 [0x1A94C9CC]
       17 [-]: CALL R13 3 1 
 L 1:  18 [-]: MOVE R10 R13 
-      19 [-]: GETIMPORT R13 11 [nil]
+      19 [-]: GETIMPORT R13 11 [0x0C5E62F9]
       20 [-]: LOADN R14 1  
       21 [-]: LENGTH R15 R7
       22 [-]: CALL R13 2 1 
@@ -48739,23 +48739,23 @@ L 1:  18 [-]: MOVE R10 R13
       24 [-]: ADDK R14 R9 K7 [1]
       25 [-]: FASTCALL2 45 R0 R14 L2
       26 [-]: MOVE R13 R0  
-      27 [-]: GETIMPORT R12 9 [nil]
+      27 [-]: GETIMPORT R12 9 [0x1A94C9CC]
       28 [-]: CALL R12 2 1 
 L 2:  29 [-]: CONCAT R0 R10 R12
 L 3:  30 [-]: FORGLOOP R3 L0 2
-      31 [-]: GETIMPORT R5 13 [nil]
+      31 [-]: GETIMPORT R5 13 [0x3F3E4D12]
       32 [-]: MOVE R7 R0   
       33 [-]: LOADN R8 1   
       34 [-]: LOADN R9 1   
       35 [-]: FASTCALL 45 L4
-      36 [-]: GETIMPORT R6 9 [nil]
+      36 [-]: GETIMPORT R6 9 [0x1A94C9CC]
       37 [-]: CALL R6 3 -1 
 L 4:  38 [-]: CALL R5 -1 1 
       39 [-]: MOVE R3 R5   
       40 [-]: FASTCALL2K 45 R0 K14 L5 [2]
       41 [-]: MOVE R5 R0   
       42 [-]: LOADK R6 K14 [2]
-      43 [-]: GETIMPORT R4 9 [nil]
+      43 [-]: GETIMPORT R4 9 [0x1A94C9CC]
       44 [-]: CALL R4 2 1  
 L 5:  45 [-]: CONCAT R0 R3 R4
       46 [-]: RETURN R0 1  
@@ -48772,7 +48772,7 @@ L 5:  45 [-]: CONCAT R0 R3 R4
        1 [-]: JUMPIF R2 L0 
        2 [-]: LOADNIL R3   
        3 [-]: RETURN R3 1  
-L 0:   4 [-]: GETIMPORT R3 1 [nil]
+L 0:   4 [-]: GETIMPORT R3 1 [0xDD6E4CF8]
        5 [-]: LOADN R4 0   
        6 [-]: LOADN R5 1   
        7 [-]: CALL R3 2 1  
@@ -48806,7 +48806,7 @@ L 0:   1 [-]: ADDK R2 R2 K0 [1]
        5 [-]: CALL R3 2 1  
        6 [-]: MUL R5 R3 R1 
        7 [-]: FASTCALL1 7 R5 L1
-       8 [-]: GETIMPORT R4 4 [nil]
+       8 [-]: GETIMPORT R4 4 [0x99675E23]
        9 [-]: CALL R4 1 1  
 L 1:  10 [-]: MOVE R3 R4   
       11 [-]: GETUPVAL R4 0
@@ -48832,12 +48832,12 @@ L 3:  30 [-]: GETUPVAL R6 1
       31 [-]: MOVE R7 R4   
       32 [-]: CALL R6 1 1  
       33 [-]: MOVE R4 R6   
-      34 [-]: GETIMPORT R6 8 [nil]
+      34 [-]: GETIMPORT R6 8 [0xA7A2E381]
       35 [-]: CALL R6 0 1  
       36 [-]: JUMPIFNOT R6 L4
       37 [-]: LOADN R6 100 
       38 [-]: JUMPIFNOTLE R2 R6 L4
-      39 [-]: GETIMPORT R6 10 [nil]
+      39 [-]: GETIMPORT R6 10 [0x09423272]
       40 [-]: MOVE R7 R4   
       41 [-]: LOADN R8 1   
       42 [-]: CALL R6 2 1  
@@ -49117,7 +49117,7 @@ L 5:  47 [-]: JUMPBACK L0
 ; Is_vararg:       0
 ; Max Stack Size:  7
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 [0xDD6E4CF8]
        1 [-]: LOADN R1 0   
        2 [-]: LOADN R2 1   
        3 [-]: CALL R0 2 1  
@@ -49138,12 +49138,12 @@ L 0:  15 [-]: GETUPVAL R4 0
       18 [-]: CALL R4 2 1  
       19 [-]: MOVE R1 R4   
       20 [-]: LOADK R2 K3 ["-"]
-      21 [-]: GETIMPORT R4 5 [nil]
+      21 [-]: GETIMPORT R4 5 [0x0C5E62F9]
       22 [-]: LOADN R5 65  
       23 [-]: LOADN R6 90  
       24 [-]: CALL R4 2 -1 
       25 [-]: FASTCALL 42 L1
-      26 [-]: GETIMPORT R3 8 [nil]
+      26 [-]: GETIMPORT R3 8 [0x0DA4ACB2]
       27 [-]: CALL R3 -1 1 
 L 1:  28 [-]: CONCAT R0 R1 R3
       29 [-]: LOADNIL R1   

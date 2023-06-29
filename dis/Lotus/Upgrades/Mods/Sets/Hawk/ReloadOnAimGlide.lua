@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  1
 
-            1 [-]: DUPCLOSURE R0 K0 []
+       1 [-]: DUPCLOSURE R0 K0 []
        2 [-]: SETGLOBAL R0 K1 ["GetDescription"]
        3 [-]: DUPCLOSURE R0 K2 []
        4 [-]: SETGLOBAL R0 K3 ["ModApplied"]
@@ -20,14 +20,14 @@
 ; Max Stack Size:  6
 
        0 [-]: DUPTABLE R1 1
-       1 [-]: GETIMPORT R5 4 [nil]
+       1 [-]: GETIMPORT R5 4 [0x10295ECE]
        2 [-]: MUL R4 R5 R0 
        3 [-]: MULK R3 R4 K2 [100]
        4 [-]: FASTCALL1 12 R3 L0
-       5 [-]: GETIMPORT R2 7 [nil]
+       5 [-]: GETIMPORT R2 7 [0x55F27C30]
        6 [-]: CALL R2 1 1  
 L 0:   7 [-]: SETTABLEKS R2 R1 K0 ["val"]
-       8 [-]: GETIMPORT R2 10 [nil]
+       8 [-]: GETIMPORT R2 10 [0xB139D7BC]
        9 [-]: MOVE R3 R1   
       10 [-]: CALL R2 1 -1 
       11 [-]: RETURN R2 -1 
@@ -46,7 +46,7 @@ L 0:   7 [-]: SETTABLEKS R2 R1 K0 ["val"]
        3 [-]: RETURN R0 0  
 L 0:   4 [-]: NAMECALL R5 R0 K1 [0xDE321E6F]
        5 [-]: CALL R5 1 1  
-       6 [-]: GETIMPORT R7 3 [nil]
+       6 [-]: GETIMPORT R7 3 [0x10295ECE]
        7 [-]: MUL R6 R7 R2 
        8 [-]: LOADB R7 0   
 L 1:   9 [-]: NAMECALL R8 R0 K0 [0xA5E492D4]
@@ -66,7 +66,7 @@ L 1:   9 [-]: NAMECALL R8 R0 K0 [0xA5E492D4]
       23 [-]: JUMPIFNOT R10 L4
       24 [-]: FASTCALL1 62 R9 L2
       25 [-]: MOVE R11 R9  
-      26 [-]: GETIMPORT R10 9 [nil]
+      26 [-]: GETIMPORT R10 9 [0x7B998233]
       27 [-]: CALL R10 1 1 
 L 2:  28 [-]: JUMPIF R10 L3
       29 [-]: NAMECALL R10 R9 K10 [0x5869A941]
@@ -79,7 +79,7 @@ L 3:  32 [-]: JUMPIF R7 L6
       36 [-]: LOADNIL R15  
       37 [-]: LOADNIL R16  
       38 [-]: LOADN R17 25 
-      39 [-]: GETIMPORT R18 12 [nil]
+      39 [-]: GETIMPORT R18 12 ["EMPTY_SYMBOL"]
       40 [-]: LOADB R19 1  
       41 [-]: NAMECALL R10 R5 K13 [0x5E6704FF]
       42 [-]: CALL R10 9 0 
@@ -98,12 +98,12 @@ L 5:  51 [-]: LOADN R12 346
       54 [-]: LOADNIL R15  
       55 [-]: LOADNIL R16  
       56 [-]: LOADN R17 25 
-      57 [-]: GETIMPORT R18 12 [nil]
+      57 [-]: GETIMPORT R18 12 ["EMPTY_SYMBOL"]
       58 [-]: LOADB R19 1  
       59 [-]: NAMECALL R10 R5 K14 [0x12DD9DA2]
       60 [-]: CALL R10 9 0 
       61 [-]: LOADB R7 0   
-L 6:  62 [-]: GETIMPORT R8 16 [nil]
+L 6:  62 [-]: GETIMPORT R8 16 [0xCBD666E1]
       63 [-]: LOADN R9 0   
       64 [-]: CALL R8 1 0  
       65 [-]: JUMPBACK L1  

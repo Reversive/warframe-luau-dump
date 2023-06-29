@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  1
 
-            1 [-]: DUPCLOSURE R0 K0 []
+       1 [-]: DUPCLOSURE R0 K0 []
        2 [-]: SETGLOBAL R0 K1 ["DestroyArcTraps"]
        3 [-]: RETURN R0 0  
 
@@ -18,15 +18,15 @@
 ; Max Stack Size:  7
 
        0 [-]: NEWTABLE R0 0 0
-       1 [-]: GETIMPORT R1 1 [nil]
-       2 [-]: GETIMPORT R2 3 [nil]
+       1 [-]: GETIMPORT R1 1 [0xE8A1FA59]
+       2 [-]: GETIMPORT R2 3 [0x89326C93]
        3 [-]: MOVE R4 R1   
        4 [-]: NAMECALL R2 R2 K4 [0xFB669000]
        5 [-]: CALL R2 2 1  
        6 [-]: MOVE R0 R2   
        7 [-]: FASTCALL1 62 R0 L0
        8 [-]: MOVE R3 R0   
-       9 [-]: GETIMPORT R2 6 [nil]
+       9 [-]: GETIMPORT R2 6 [0x7B998233]
       10 [-]: CALL R2 1 1  
 L 0:  11 [-]: JUMPIF R2 L2 
       12 [-]: LOADN R4 1   

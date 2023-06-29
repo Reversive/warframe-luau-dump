@@ -5,27 +5,27 @@
 ; Is_vararg:       1
 ; Max Stack Size:  8
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0xAEABECDA]
        2 [-]: GETVARARGS R1 1
-       3 [-]: GETIMPORT R2 4 [nil]
+       3 [-]: GETIMPORT R2 4 ["seeall"]
        4 [-]: CALL R0 2 0  
-       5 [-]: GETIMPORT R0 6 [nil]
+       5 [-]: GETIMPORT R0 6 [0x2D0FAD09]
        6 [-]: LOADK R1 K7 ["Lotus.Interface.LotusUtilities"]
        7 [-]: CALL R0 1 1  
-       8 [-]: GETIMPORT R1 9 [nil]
+       8 [-]: GETIMPORT R1 9 [0x0469F296]
        9 [-]: LOADK R2 K10 ["SandBoxInv"]
       10 [-]: CALL R1 1 1  
-      11 [-]: GETIMPORT R2 12 [nil]
+      11 [-]: GETIMPORT R2 12 [0x60130201]
       12 [-]: LOADN R3 181 
       13 [-]: LOADN R4 220 
       14 [-]: LOADN R5 80  
       15 [-]: CALL R2 3 1  
-      16 [-]: GETIMPORT R3 12 [nil]
+      16 [-]: GETIMPORT R3 12 [0x60130201]
       17 [-]: LOADN R4 196 
       18 [-]: LOADN R5 255 
       19 [-]: LOADN R6 196 
       20 [-]: CALL R3 3 1  
-      21 [-]: GETIMPORT R4 14 [nil]
+      21 [-]: GETIMPORT R4 14 [0x7ED0A956]
       22 [-]: LOADK R5 K15 ["/Lotus/Levels/ClanDojo/ClanDojoProcLevel"]
       23 [-]: CALL R4 1 1  
       24 [-]: DUPCLOSURE R5 K16 []
@@ -54,15 +54,15 @@
 ; Is_vararg:       0
 ; Max Stack Size:  11
 
-       0 [-]: GETIMPORT R0 2 [nil]
+       0 [-]: GETIMPORT R0 2 ["EnvRadiationGlowActive"]
        1 [-]: JUMPIFNOT R0 L2
-       2 [-]: GETIMPORT R1 4 [nil]
+       2 [-]: GETIMPORT R1 4 [0x89326C93]
        3 [-]: NAMECALL R1 R1 K5 [0x7C1A0374]
        4 [-]: CALL R1 1 1  
        5 [-]: GETTABLEKS R0 R1 K6 ["postProcess"]
        6 [-]: LOADK R2 K7 [0.25]
-       7 [-]: GETIMPORT R8 11 [nil]
-       8 [-]: GETIMPORT R10 14 [nil]
+       7 [-]: GETIMPORT R8 11 [0x107BF6DA]
+       8 [-]: GETIMPORT R10 14 [0x55156FF7]
        9 [-]: CALL R10 0 1 
       10 [-]: MULK R9 R10 K12 [0.10000000000000001]
       11 [-]: CALL R8 1 1  
@@ -70,10 +70,10 @@
       13 [-]: MUL R7 R8 R9 
       14 [-]: MULK R6 R7 K9 [2]
       15 [-]: FASTCALL1 24 R6 L0
-      16 [-]: GETIMPORT R5 18 [nil]
+      16 [-]: GETIMPORT R5 18 [0x3EDA26FC]
       17 [-]: CALL R5 1 1  
 L 0:  18 [-]: FASTCALL1 2 R5 L1
-      19 [-]: GETIMPORT R4 20 [nil]
+      19 [-]: GETIMPORT R4 20 [0xE4A5B3CA]
       20 [-]: CALL R4 1 1  
 L 1:  21 [-]: MULK R3 R4 K8 [0.75]
       22 [-]: ADD R1 R2 R3 
@@ -143,23 +143,23 @@ L 2:  32 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  6
 
-       0 [-]: GETIMPORT R2 1 [nil]
+       0 [-]: GETIMPORT R2 1 [0x9BA7909F]
        1 [-]: FASTCALL1 62 R2 L0
-       2 [-]: GETIMPORT R1 3 [nil]
+       2 [-]: GETIMPORT R1 3 [0x7B998233]
        3 [-]: CALL R1 1 1  
 L 0:   4 [-]: JUMPIF R1 L3 
        5 [-]: FASTCALL1 62 R0 L1
        6 [-]: MOVE R2 R0   
-       7 [-]: GETIMPORT R1 3 [nil]
+       7 [-]: GETIMPORT R1 3 [0x7B998233]
        8 [-]: CALL R1 1 1  
 L 1:   9 [-]: JUMPIF R1 L3 
-      10 [-]: GETIMPORT R1 1 [nil]
+      10 [-]: GETIMPORT R1 1 [0x9BA7909F]
       11 [-]: MOVE R3 R0   
       12 [-]: NAMECALL R1 R1 K4 [0xBCFB64AB]
       13 [-]: CALL R1 2 1  
       14 [-]: FASTCALL1 62 R1 L2
       15 [-]: MOVE R3 R1   
-      16 [-]: GETIMPORT R2 3 [nil]
+      16 [-]: GETIMPORT R2 3 [0x7B998233]
       17 [-]: CALL R2 1 1  
 L 2:  18 [-]: JUMPIF R2 L3 
       19 [-]: LOADK R4 K5 ["ToggleControl"]

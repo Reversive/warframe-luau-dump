@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  1
 
-            1 [-]: DUPCLOSURE R0 K0 []
+       1 [-]: DUPCLOSURE R0 K0 []
        2 [-]: SETGLOBAL R0 K1 ["Start"]
        3 [-]: RETURN R0 0  
 
@@ -17,12 +17,12 @@
 ; Is_vararg:       0
 ; Max Stack Size:  9
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 [0x89326C93]
        1 [-]: NAMECALL R0 R0 K2 [0xB4364067]
        2 [-]: CALL R0 1 1  
-       3 [-]: GETIMPORT R3 4 [nil]
-       4 [-]: GETIMPORT R4 6 [nil]
-       5 [-]: GETIMPORT R5 8 [nil]
+       3 [-]: GETIMPORT R3 4 [0xBB23EE62]
+       4 [-]: GETIMPORT R4 6 ["EMPTY_SYMBOL"]
+       5 [-]: GETIMPORT R5 8 [0xA421AF95]
        6 [-]: LOADN R6 0   
        7 [-]: LOADK R7 K9 [-0.5]
        8 [-]: LOADN R8 0   

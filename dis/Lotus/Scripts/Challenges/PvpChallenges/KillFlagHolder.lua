@@ -5,10 +5,10 @@
 ; Is_vararg:       1
 ; Max Stack Size:  3
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x7ED0A956]
        2 [-]: LOADK R1 K2 ["/Lotus/Types/PickUps/CaptureFlagPvpItem"]
        3 [-]: CALL R0 1 1  
-       4 [-]: GETIMPORT R1 1 [nil]
+       4 [-]: GETIMPORT R1 1 [0x7ED0A956]
        5 [-]: LOADK R2 K3 ["/Lotus/Types/PickUps/CaptureFlagPvpItemB"]
        6 [-]: CALL R1 1 1  
        7 [-]: DUPCLOSURE R2 K4 []
@@ -30,10 +30,10 @@
        2 [-]: NAMECALL R4 R2 K1 [0x5E651723]
        3 [-]: CALL R4 1 -1 
        4 [-]: FASTCALL 62 L0
-       5 [-]: GETIMPORT R3 3 [nil]
+       5 [-]: GETIMPORT R3 3 [0x7B998233]
        6 [-]: CALL R3 -1 1 
 L 0:   7 [-]: JUMPIF R3 L3 
-       8 [-]: GETIMPORT R3 6 [nil]
+       8 [-]: GETIMPORT R3 6 ["gCaptureFlagKilledHolder"]
        9 [-]: JUMPXEQKNIL R3 L3
       10 [-]: NAMECALL R3 R2 K1 [0x5E651723]
       11 [-]: CALL R3 1 1  
@@ -46,7 +46,7 @@ L 0:   7 [-]: JUMPIF R3 L3
      
 L 1:  18 [-]: JUMPXEQKN R3 K9 L2 NOT [1]
       19 [-]: GETUPVAL R4 1
-L 2:  20 [-]: GETIMPORT R6 6 [nil]
+L 2:  20 [-]: GETIMPORT R6 6 ["gCaptureFlagKilledHolder"]
       21 [-]: NAMECALL R7 R4 K10 [0xE223E2B1]
       22 [-]: CALL R7 1 1  
       23 [-]: GETTABLE R5 R6 R7

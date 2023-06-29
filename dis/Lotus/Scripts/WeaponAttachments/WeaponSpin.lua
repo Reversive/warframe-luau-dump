@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  2
 
-            1 [-]: DUPCLOSURE R0 K0 []
+       1 [-]: DUPCLOSURE R0 K0 []
        2 [-]: DUPCLOSURE R1 K1 []
        3 [-]: MOVE R0 R0   
        4 [-]: SETGLOBAL R1 K2 ["Update"]
@@ -25,15 +25,15 @@
        3 [-]: JUMPXEQKS R2 K1 L0 ["bank"]
        4 [-]: JUMPXEQKS R2 K2 L0 ["pitch"]
        5 [-]: JUMPXEQKS R2 K3 L0 ["heading"]
-       6 [-]: GETIMPORT R8 5 [nil]
+       6 [-]: GETIMPORT R8 5 [0x3D106989]
        7 [-]: LOADK R9 K6 ["WeaponSpin Error - Invalid axis value, defaulting to bank"]
        8 [-]: CALL R8 1 0  
        9 [-]: LOADK R2 K1 ["bank"]
-L 0:  10 [-]: GETIMPORT R8 9 [nil]
+L 0:  10 [-]: GETIMPORT R8 9 [0xB62ECFE0]
       11 [-]: LOADN R9 0   
-      12 [-]: GETIMPORT R10 11 [nil]
-      13 [-]: GETIMPORT R11 13 [nil]
-      14 [-]: GETIMPORT R12 15 [nil]
+      12 [-]: GETIMPORT R10 11 [0x7B998233]
+      13 [-]: GETIMPORT R11 13 [0x67652851]
+      14 [-]: GETIMPORT R12 15 [0x00046924]
       15 [-]: CALL R12 0 1 
       16 [-]: LOADN R13 0  
       17 [-]: MOVE R14 R3  
@@ -135,7 +135,7 @@ L17: 108 [-]: MOVE R23 R1
      109 [-]: MOVE R24 R12 
      110 [-]: NAMECALL R21 R0 K25 [0x9437C71B]
      111 [-]: CALL R21 3 0 
-     112 [-]: GETIMPORT R21 27 [nil]
+     112 [-]: GETIMPORT R21 27 [0xCBD666E1]
      113 [-]: LOADN R22 0  
      114 [-]: CALL R21 1 0 
      115 [-]: JUMPBACK L6  
@@ -149,18 +149,18 @@ L18: 116 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  10
 
-       0 [-]: GETIMPORT R1 1 [nil]
+       0 [-]: GETIMPORT R1 1 [0xCBD666E1]
        1 [-]: LOADN R2 0   
        2 [-]: CALL R1 1 0  
        3 [-]: GETUPVAL R1 0
        4 [-]: MOVE R2 R0   
-       5 [-]: GETIMPORT R3 3 [nil]
-       6 [-]: GETIMPORT R4 5 [nil]
-       7 [-]: GETIMPORT R5 7 [nil]
-       8 [-]: GETIMPORT R6 9 [nil]
-       9 [-]: GETIMPORT R7 11 [nil]
-      10 [-]: GETIMPORT R8 13 [nil]
-      11 [-]: GETIMPORT R9 15 [nil]
+       5 [-]: GETIMPORT R3 3 [0x30F7A4E8]
+       6 [-]: GETIMPORT R4 5 [0x1EC07853]
+       7 [-]: GETIMPORT R5 7 [0xD03A5C03]
+       8 [-]: GETIMPORT R6 9 [0x95EBC361]
+       9 [-]: GETIMPORT R7 11 [0xC81DE940]
+      10 [-]: GETIMPORT R8 13 [0xEC926E00]
+      11 [-]: GETIMPORT R9 15 [0xABE66CC7]
       12 [-]: CALL R1 8 0  
       13 [-]: RETURN R0 0  
 

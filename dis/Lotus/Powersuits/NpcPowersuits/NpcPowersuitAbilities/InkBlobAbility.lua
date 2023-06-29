@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  1
 
-            1 [-]: DUPCLOSURE R0 K0 []
+       1 [-]: DUPCLOSURE R0 K0 []
        2 [-]: SETGLOBAL R0 K1 ["NpcEvaluateAbility"]
        3 [-]: DUPCLOSURE R0 K2 []
        4 [-]: SETGLOBAL R0 K3 ["ActivateAbility"]
@@ -38,16 +38,16 @@ L 2:  11 [-]: NAMECALL R3 R1 K0 [0xFA9E477F]
       14 [-]: CALL R3 1 1  
       15 [-]: FASTCALL1 62 R3 L3
       16 [-]: MOVE R5 R3   
-      17 [-]: GETIMPORT R4 4 [nil]
+      17 [-]: GETIMPORT R4 4 [0x7B998233]
       18 [-]: CALL R4 1 1  
 L 3:  19 [-]: JUMPIF R4 L5 
       20 [-]: GETTABLEKS R5 R3 K5 ["entity"]
       21 [-]: FASTCALL1 62 R5 L4
-      22 [-]: GETIMPORT R4 4 [nil]
+      22 [-]: GETIMPORT R4 4 [0x7B998233]
       23 [-]: CALL R4 1 1  
 L 4:  24 [-]: JUMPIF R4 L5 
       25 [-]: GETTABLEKS R4 R3 K6 ["distanceToTarget"]
-      26 [-]: GETIMPORT R5 8 [nil]
+      26 [-]: GETIMPORT R5 8 [0xF4C4639B]
       27 [-]: JUMPIFNOTLE R4 R5 L5
       28 [-]: GETTABLEKS R6 R3 K5 ["entity"]
       29 [-]: NAMECALL R4 R0 K9 [0x48D05257]
@@ -65,30 +65,30 @@ L 5:  33 [-]: LOADN R4 0
 ; Is_vararg:       0
 ; Max Stack Size:  13
 
-       0 [-]: GETIMPORT R4 1 [nil]
+       0 [-]: GETIMPORT R4 1 [0x89326C93]
        1 [-]: NAMECALL R4 R4 K2 [0x18D05D30]
        2 [-]: CALL R4 1 1  
        3 [-]: JUMPIF R4 L0 
        4 [-]: RETURN R0 0  
 L 0:   5 [-]: NAMECALL R4 R1 K3 [0xD1586535]
        6 [-]: CALL R4 1 1  
-       7 [-]: GETIMPORT R5 1 [nil]
-       8 [-]: GETIMPORT R7 5 [nil]
+       7 [-]: GETIMPORT R5 1 [0x89326C93]
+       8 [-]: GETIMPORT R7 5 [0x1065E1CE]
        9 [-]: MOVE R8 R4   
-      10 [-]: GETIMPORT R9 7 [nil]
+      10 [-]: GETIMPORT R9 7 ["ZERO_ROTATION"]
       11 [-]: MOVE R10 R1  
       12 [-]: NAMECALL R5 R5 K8 [0x05909209]
       13 [-]: CALL R5 5 1  
       14 [-]: FASTCALL1 62 R5 L1
       15 [-]: MOVE R7 R5   
-      16 [-]: GETIMPORT R6 10 [nil]
+      16 [-]: GETIMPORT R6 10 [0x7B998233]
       17 [-]: CALL R6 1 1  
 L 1:  18 [-]: JUMPIFNOT R6 L2
       19 [-]: RETURN R0 0  
 L 2:  20 [-]: MOVE R8 R1   
       21 [-]: NAMECALL R6 R5 K11 [0xA9365339]
       22 [-]: CALL R6 2 0  
-      23 [-]: GETIMPORT R8 13 [nil]
+      23 [-]: GETIMPORT R8 13 ["gEntityType"]
       24 [-]: NAMECALL R6 R5 K14 [0xC1595BD5]
       25 [-]: CALL R6 2 1  
       26 [-]: LOADN R9 1   
@@ -97,7 +97,7 @@ L 2:  20 [-]: MOVE R8 R1
       29 [-]: FORNPREP R7 L6
 L 3:  30 [-]: GETTABLE R11 R6 R9
       31 [-]: FASTCALL1 62 R11 L4
-      32 [-]: GETIMPORT R10 10 [nil]
+      32 [-]: GETIMPORT R10 10 [0x7B998233]
       33 [-]: CALL R10 1 1 
 L 4:  34 [-]: JUMPIF R10 L5
       35 [-]: GETTABLE R10 R6 R9

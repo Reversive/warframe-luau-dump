@@ -5,47 +5,47 @@
 ; Is_vararg:       1
 ; Max Stack Size:  8
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0xAEABECDA]
        2 [-]: GETVARARGS R1 1
-       3 [-]: GETIMPORT R2 4 [nil]
+       3 [-]: GETIMPORT R2 4 ["seeall"]
        4 [-]: CALL R0 2 0  
-       5 [-]: GETIMPORT R0 6 [nil]
+       5 [-]: GETIMPORT R0 6 [0x2D0FAD09]
        6 [-]: LOADK R1 K7 ["Lotus.Interface.Libs.TimerMgr"]
        7 [-]: CALL R0 1 1  
        8 [-]: NEWTABLE R1 0 4
        9 [-]: DUPTABLE R2 10
-      10 [-]: GETIMPORT R3 12 [nil]
+      10 [-]: GETIMPORT R3 12 [0x7ED0A956]
       11 [-]: LOADK R4 K13 ["/Lotus/Types/Boosters/AffinityBooster"]
       12 [-]: CALL R3 1 1  
       13 [-]: SETTABLEKS R3 R2 K8 ["TimedType"]
-      14 [-]: GETIMPORT R3 12 [nil]
+      14 [-]: GETIMPORT R3 12 [0x7ED0A956]
       15 [-]: LOADK R4 K14 ["/Lotus/Types/Boosters/Changyou/CyAffinityBooster"]
       16 [-]: CALL R3 1 1  
       17 [-]: SETTABLEKS R3 R2 K9 ["UsageType"]
       18 [-]: DUPTABLE R3 10
-      19 [-]: GETIMPORT R4 12 [nil]
+      19 [-]: GETIMPORT R4 12 [0x7ED0A956]
       20 [-]: LOADK R5 K15 ["/Lotus/Types/Boosters/CreditBooster"]
       21 [-]: CALL R4 1 1  
       22 [-]: SETTABLEKS R4 R3 K8 ["TimedType"]
-      23 [-]: GETIMPORT R4 12 [nil]
+      23 [-]: GETIMPORT R4 12 [0x7ED0A956]
       24 [-]: LOADK R5 K16 ["/Lotus/Types/Boosters/Changyou/CyCreditBooster"]
       25 [-]: CALL R4 1 1  
       26 [-]: SETTABLEKS R4 R3 K9 ["UsageType"]
       27 [-]: DUPTABLE R4 10
-      28 [-]: GETIMPORT R5 12 [nil]
+      28 [-]: GETIMPORT R5 12 [0x7ED0A956]
       29 [-]: LOADK R6 K17 ["/Lotus/Types/Boosters/ResourceAmountBooster"]
       30 [-]: CALL R5 1 1  
       31 [-]: SETTABLEKS R5 R4 K8 ["TimedType"]
-      32 [-]: GETIMPORT R5 12 [nil]
+      32 [-]: GETIMPORT R5 12 [0x7ED0A956]
       33 [-]: LOADK R6 K18 ["/Lotus/Types/Boosters/Changyou/CyResourceAmountBooster"]
       34 [-]: CALL R5 1 1  
       35 [-]: SETTABLEKS R5 R4 K9 ["UsageType"]
       36 [-]: DUPTABLE R5 10
-      37 [-]: GETIMPORT R6 12 [nil]
+      37 [-]: GETIMPORT R6 12 [0x7ED0A956]
       38 [-]: LOADK R7 K19 ["/Lotus/Types/Boosters/ResourceDropChanceBooster"]
       39 [-]: CALL R6 1 1  
       40 [-]: SETTABLEKS R6 R5 K8 ["TimedType"]
-      41 [-]: GETIMPORT R6 12 [nil]
+      41 [-]: GETIMPORT R6 12 [0x7ED0A956]
       42 [-]: LOADK R7 K20 ["/Lotus/Types/Boosters/Changyou/CyResourceDropChanceBooster"]
       43 [-]: CALL R6 1 1  
       44 [-]: SETTABLEKS R6 R5 K9 ["UsageType"]
@@ -102,13 +102,13 @@
        1 [-]: SETTABLEKS R1 R0 K0 ["mActiveBoosters"]
        2 [-]: LOADNIL R1   
        3 [-]: SETTABLEKS R1 R0 K1 ["mRefreshDelay"]
-       4 [-]: GETIMPORT R1 3 [nil]
+       4 [-]: GETIMPORT R1 3 [0x76EA806B]
        5 [-]: LOADN R3 0   
        6 [-]: NAMECALL R1 R1 K4 [0x3F3AE64C]
        7 [-]: CALL R1 2 1  
        8 [-]: FASTCALL1 62 R1 L0
        9 [-]: MOVE R3 R1   
-      10 [-]: GETIMPORT R2 6 [nil]
+      10 [-]: GETIMPORT R2 6 [0x7B998233]
       11 [-]: CALL R2 1 1  
 L 0:  12 [-]: JUMPIFNOT R2 L1
       13 [-]: RETURN R0 0  
@@ -117,7 +117,7 @@ L 1:  14 [-]: NAMECALL R2 R1 K7 [0x80563238]
       16 [-]: SETTABLEKS R2 R0 K8 ["mGameData"]
       17 [-]: GETTABLEKS R3 R0 K8 ["mGameData"]
       18 [-]: FASTCALL1 62 R3 L2
-      19 [-]: GETIMPORT R2 6 [nil]
+      19 [-]: GETIMPORT R2 6 [0x7B998233]
       20 [-]: CALL R2 1 1  
 L 2:  21 [-]: JUMPIFNOT R2 L3
       22 [-]: RETURN R0 0  
@@ -135,7 +135,7 @@ L 4:  33 [-]: LOADNIL R7
       34 [-]: GETTABLE R10 R3 R6
       35 [-]: GETTABLEKS R9 R10 K11 ["mItemType"]
       36 [-]: FASTCALL1 62 R9 L5
-      37 [-]: GETIMPORT R8 6 [nil]
+      37 [-]: GETIMPORT R8 6 [0x7B998233]
       38 [-]: CALL R8 1 1  
 L 5:  39 [-]: JUMPIF R8 L10
       40 [-]: GETTABLE R9 R3 R6
@@ -143,7 +143,7 @@ L 5:  39 [-]: JUMPIF R8 L10
       42 [-]: NAMECALL R8 R8 K12 [0x4BCC0A75]
       43 [-]: CALL R8 1 1  
       44 [-]: JUMPIFNOT R8 L6
-      45 [-]: GETIMPORT R8 15 [nil]
+      45 [-]: GETIMPORT R8 15 [0x397B920F]
       46 [-]: GETTABLE R10 R3 R6
       47 [-]: GETTABLEKS R9 R10 K16 ["mExpiryDate"]
       48 [-]: CALL R8 1 1  
@@ -193,14 +193,14 @@ L 7:  68 [-]: JUMPXEQKNIL R7 L10
       91 [-]: FASTCALL2 52 R2 R7 L8
       92 [-]: MOVE R9 R2   
       93 [-]: MOVE R10 R7  
-      94 [-]: GETIMPORT R8 28 [nil]
+      94 [-]: GETIMPORT R8 28 [0x23D5322F]
       95 [-]: CALL R8 2 0  
 L 8:  96 [-]: JUMP L10
     
 L 9:  97 [-]: GETTABLEKS R9 R0 K0 ["mActiveBoosters"]
       98 [-]: FASTCALL2 52 R9 R7 L10
       99 [-]: MOVE R10 R7  
-     100 [-]: GETIMPORT R8 28 [nil]
+     100 [-]: GETIMPORT R8 28 [0x23D5322F]
      101 [-]: CALL R8 2 0  
 L10: 102 [-]: FORNLOOP R4 L4
 L11: 103 [-]: LOADN R6 1   
@@ -249,7 +249,7 @@ L17: 143 [-]: FORNLOOP R9 L13
 L18: 144 [-]: GETTABLEKS R10 R0 K0 ["mActiveBoosters"]
      145 [-]: GETTABLE R11 R2 R6
      146 [-]: FASTCALL2 52 R10 R11 L19
-     147 [-]: GETIMPORT R9 28 [nil]
+     147 [-]: GETIMPORT R9 28 [0x23D5322F]
      148 [-]: CALL R9 2 0  
 L19: 149 [-]: FORNLOOP R4 L12
 L20: 150 [-]: GETTABLEKS R4 R0 K8 ["mGameData"]
@@ -262,10 +262,10 @@ L20: 150 [-]: GETTABLEKS R4 R0 K8 ["mGameData"]
      157 [-]: FORNPREP R5 L23
 L21: 158 [-]: GETTABLEKS R9 R4 K34 ["mGlobalUpgrades"]
      159 [-]: GETTABLE R8 R9 R7
-     160 [-]: GETIMPORT R9 15 [nil]
+     160 [-]: GETIMPORT R9 15 [0x397B920F]
      161 [-]: GETTABLEKS R10 R8 K35 ["mActivation"]
      162 [-]: CALL R9 1 1  
-     163 [-]: GETIMPORT R10 15 [nil]
+     163 [-]: GETIMPORT R10 15 [0x397B920F]
      164 [-]: GETTABLEKS R11 R8 K16 ["mExpiryDate"]
      165 [-]: CALL R10 1 1 
      166 [-]: LOADN R11 0  
@@ -273,10 +273,10 @@ L21: 158 [-]: GETTABLEKS R9 R4 K34 ["mGlobalUpgrades"]
      168 [-]: LOADN R11 0  
      169 [-]: JUMPIFNOTLT R11 R10 L22
 L22: 170 [-]: FORNLOOP R5 L21
-L23: 171 [-]: GETIMPORT R5 38 [nil]
+L23: 171 [-]: GETIMPORT R5 38 ["HubBlessings"]
      172 [-]: JUMPIFNOT R5 L29
-     173 [-]: GETIMPORT R5 40 [nil]
-     174 [-]: GETIMPORT R6 38 [nil]
+     173 [-]: GETIMPORT R5 40 [0xCFC01047]
+     174 [-]: GETIMPORT R6 38 ["HubBlessings"]
      175 [-]: CALL R5 1 3  
      176 [-]: FORGPREP_NEXT R5 L28
 L24: 177 [-]: LOADB R10 0  
@@ -299,7 +299,7 @@ L25: 183 [-]: GETTABLEKS R15 R0 K0 ["mActiveBoosters"]
     
 L26: 194 [-]: FORNLOOP R11 L25
 L27: 195 [-]: JUMPIF R10 L28
-     196 [-]: GETIMPORT R11 15 [nil]
+     196 [-]: GETIMPORT R11 15 [0x397B920F]
      197 [-]: GETTABLEKS R12 R9 K16 ["mExpiryDate"]
      198 [-]: CALL R11 1 1 
      199 [-]: LOADN R12 0  
@@ -326,7 +326,7 @@ L27: 195 [-]: JUMPIF R10 L28
      220 [-]: GETTABLEKS R14 R0 K0 ["mActiveBoosters"]
      221 [-]: FASTCALL2 52 R14 R12 L28
      222 [-]: MOVE R15 R12 
-     223 [-]: GETIMPORT R13 28 [nil]
+     223 [-]: GETIMPORT R13 28 [0x23D5322F]
      224 [-]: CALL R13 2 0 
 L28: 225 [-]: FORGLOOP R5 L24 2
 L29: 226 [-]: LOADN R7 1   
@@ -340,7 +340,7 @@ L30: 230 [-]: GETTABLEKS R9 R0 K0 ["mActiveBoosters"]
      234 [-]: GETTABLE R9 R10 R7
      235 [-]: GETTABLEKS R8 R9 K16 ["mExpiryDate"]
      236 [-]: JUMPXEQKNIL R8 L32
-     237 [-]: GETIMPORT R8 15 [nil]
+     237 [-]: GETIMPORT R8 15 [0x397B920F]
      238 [-]: GETTABLEKS R11 R0 K0 ["mActiveBoosters"]
      239 [-]: GETTABLE R10 R11 R7
      240 [-]: GETTABLEKS R9 R10 K16 ["mExpiryDate"]
@@ -369,7 +369,7 @@ L33: 250 [-]: LOADB R5 1
        1 [-]: JUMPXEQKNIL R1 L0 NOT
        2 [-]: RETURN R0 0  
 L 0:   3 [-]: GETTABLEKS R2 R0 K0 ["mRefreshDelay"]
-       4 [-]: GETIMPORT R3 2 [nil]
+       4 [-]: GETIMPORT R3 2 [0xB693B6C1]
        5 [-]: CALL R3 0 1  
        6 [-]: SUB R1 R2 R3 
        7 [-]: SETTABLEKS R1 R0 K0 ["mRefreshDelay"]
@@ -390,7 +390,7 @@ L 1:  13 [-]: RETURN R0 0
 
        0 [-]: GETTABLEKS R2 R0 K0 ["mGameData"]
        1 [-]: FASTCALL1 62 R2 L0
-       2 [-]: GETIMPORT R1 2 [nil]
+       2 [-]: GETIMPORT R1 2 [0x7B998233]
        3 [-]: CALL R1 1 1  
 L 0:   4 [-]: JUMPIFNOT R1 L1
        5 [-]: RETURN R0 0  
@@ -404,7 +404,7 @@ L 1:   6 [-]: GETTABLEKS R1 R0 K0 ["mGameData"]
       13 [-]: NAMECALL R1 R1 K5 [0xD860A7BB]
       14 [-]: CALL R1 1 0  
 L 2:  15 [-]: GETTABLEKS R1 R0 K6 ["mTimerMgr"]
-      16 [-]: GETIMPORT R3 8 [nil]
+      16 [-]: GETIMPORT R3 8 [0xB693B6C1]
       17 [-]: CALL R3 0 -1 
       18 [-]: NAMECALL R1 R1 K9 [0xFAA69527]
       19 [-]: CALL R1 -1 0 

@@ -5,10 +5,10 @@
 ; Is_vararg:       1
 ; Max Stack Size:  4
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x7ED0A956]
        2 [-]: LOADK R1 K2 ["/Lotus/Weapons/Tenno/Pistol/LotusPistol"]
        3 [-]: CALL R0 1 1  
-       4 [-]: GETIMPORT R1 1 [nil]
+       4 [-]: GETIMPORT R1 1 [0x7ED0A956]
        5 [-]: LOADK R2 K3 ["/Lotus/Weapons/Tenno/Melee/LotusGlaiveWeapon"]
        6 [-]: CALL R1 1 1  
        7 [-]: DUPCLOSURE R2 K4 []
@@ -31,27 +31,27 @@
        1 [-]: CALL R1 1 1  
        2 [-]: FASTCALL1 62 R1 L0
        3 [-]: MOVE R3 R1   
-       4 [-]: GETIMPORT R2 2 [nil]
+       4 [-]: GETIMPORT R2 2 [0x7B998233]
        5 [-]: CALL R2 1 1  
 L 0:   6 [-]: JUMPIF R2 L8 
        7 [-]: NAMECALL R2 R1 K3 [0xDE321E6F]
        8 [-]: CALL R2 1 1  
        9 [-]: FASTCALL1 62 R2 L1
       10 [-]: MOVE R4 R2   
-      11 [-]: GETIMPORT R3 2 [nil]
+      11 [-]: GETIMPORT R3 2 [0x7B998233]
       12 [-]: CALL R3 1 1  
 L 1:  13 [-]: JUMPIF R3 L8 
       14 [-]: LOADN R6 1   
       15 [-]: NAMECALL R4 R2 K4 [0xE85A2361]
       16 [-]: CALL R4 2 -1 
       17 [-]: FASTCALL 62 L2
-      18 [-]: GETIMPORT R3 2 [nil]
+      18 [-]: GETIMPORT R3 2 [0x7B998233]
       19 [-]: CALL R3 -1 1 
 L 2:  20 [-]: LOADN R8 0   
       21 [-]: NAMECALL R6 R2 K4 [0xE85A2361]
       22 [-]: CALL R6 2 -1 
       23 [-]: FASTCALL 62 L3
-      24 [-]: GETIMPORT R5 2 [nil]
+      24 [-]: GETIMPORT R5 2 [0x7B998233]
       25 [-]: CALL R5 -1 1 
 L 3:  26 [-]: NOT R4 R5    
       27 [-]: JUMPIFNOT R4 L4
@@ -65,7 +65,7 @@ L 4:  34 [-]: LOADN R9 5
       35 [-]: NAMECALL R7 R2 K4 [0xE85A2361]
       36 [-]: CALL R7 2 -1 
       37 [-]: FASTCALL 62 L5
-      38 [-]: GETIMPORT R6 2 [nil]
+      38 [-]: GETIMPORT R6 2 [0x7B998233]
       39 [-]: CALL R6 -1 1 
 L 5:  40 [-]: NOT R5 R6    
       41 [-]: JUMPIFNOT R5 L6

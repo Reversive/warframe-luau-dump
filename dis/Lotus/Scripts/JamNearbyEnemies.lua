@@ -5,22 +5,22 @@
 ; Is_vararg:       1
 ; Max Stack Size:  10
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x0469F296]
        2 [-]: LOADK R1 K2 ["COWGIRL_JAM"]
        3 [-]: CALL R0 1 1  
-       4 [-]: GETIMPORT R1 1 [nil]
+       4 [-]: GETIMPORT R1 1 [0x0469F296]
        5 [-]: LOADK R2 K3 ["GAME_R1_WEAPON1"]
        6 [-]: CALL R1 1 1  
-       7 [-]: GETIMPORT R2 1 [nil]
+       7 [-]: GETIMPORT R2 1 [0x0469F296]
        8 [-]: LOADK R3 K4 ["GAME_C1_HIP1"]
        9 [-]: CALL R2 1 1  
-      10 [-]: GETIMPORT R3 6 [nil]
+      10 [-]: GETIMPORT R3 6 [0x7ED0A956]
       11 [-]: LOADK R4 K7 ["/Lotus/Types/Enemies/Infested/AiWeek/Quadrupeds/RusherAvatar"]
       12 [-]: CALL R3 1 1  
-      13 [-]: GETIMPORT R4 9 [nil]
+      13 [-]: GETIMPORT R4 9 [0x2D0FAD09]
       14 [-]: LOADK R5 K10 ["Lotus.Powersuits.PowersuitAbilities.PVPLib"]
       15 [-]: CALL R4 1 1  
-      16 [-]: GETIMPORT R5 9 [nil]
+      16 [-]: GETIMPORT R5 9 [0x2D0FAD09]
       17 [-]: LOADK R6 K11 ["EE.Interface.Utilities"]
       18 [-]: CALL R5 1 1  
       19 [-]: DUPCLOSURE R6 K12 []
@@ -50,12 +50,12 @@
 ; Is_vararg:       0
 ; Max Stack Size:  6
 
-       0 [-]: GETIMPORT R2 1 [nil]
-       1 [-]: GETIMPORT R5 1 [nil]
+       0 [-]: GETIMPORT R2 1 [0x18DD75AF]
+       1 [-]: GETIMPORT R5 1 [0x18DD75AF]
        2 [-]: LENGTH R4 R5 
        3 [-]: FASTCALL2 19 R4 R0 L0
        4 [-]: MOVE R5 R0   
-       5 [-]: GETIMPORT R3 4 [nil]
+       5 [-]: GETIMPORT R3 4 [0xAC1B386A]
        6 [-]: CALL R3 2 1  
 L 0:   7 [-]: GETTABLE R1 R2 R3
        8 [-]: RETURN R1 1  
@@ -71,12 +71,12 @@ L 0:   7 [-]: GETTABLE R1 R2 R3
        0 [-]: DUPTABLE R1 2
        1 [-]: GETUPVAL R3 0
        2 [-]: GETTABLEKS R2 R3 K3 [0x1142C7A8]
-       3 [-]: GETIMPORT R4 5 [nil]
-       4 [-]: GETIMPORT R7 5 [nil]
+       3 [-]: GETIMPORT R4 5 [0x18DD75AF]
+       4 [-]: GETIMPORT R7 5 [0x18DD75AF]
        5 [-]: LENGTH R6 R7 
        6 [-]: FASTCALL2 19 R6 R0 L0
        7 [-]: MOVE R7 R0   
-       8 [-]: GETIMPORT R5 8 [nil]
+       8 [-]: GETIMPORT R5 8 [0xAC1B386A]
        9 [-]: CALL R5 2 1  
 L 0:  10 [-]: GETTABLE R3 R4 R5
       11 [-]: LOADN R4 0   
@@ -85,12 +85,12 @@ L 0:  10 [-]: GETTABLE R3 R4 R5
       14 [-]: SETTABLEKS R2 R1 K0 ["COOLDOWN"]
       15 [-]: GETUPVAL R3 0
       16 [-]: GETTABLEKS R2 R3 K3 [0x1142C7A8]
-      17 [-]: GETIMPORT R3 10 [nil]
+      17 [-]: GETIMPORT R3 10 [0x7873D4EB]
       18 [-]: LOADN R4 0   
       19 [-]: LOADB R5 0   
       20 [-]: CALL R2 3 1  
       21 [-]: SETTABLEKS R2 R1 K1 ["JAM_RANGE"]
-      22 [-]: GETIMPORT R2 13 [nil]
+      22 [-]: GETIMPORT R2 13 [0xB139D7BC]
       23 [-]: MOVE R3 R1   
       24 [-]: CALL R2 1 -1 
       25 [-]: RETURN R2 -1 
@@ -105,7 +105,7 @@ L 0:  10 [-]: GETTABLE R3 R4 R5
 
        0 [-]: NAMECALL R2 R0 K0 [0x388577D5]
        1 [-]: CALL R2 1 1  
-       2 [-]: GETIMPORT R4 3 [nil]
+       2 [-]: GETIMPORT R4 3 ["JamNearbyEnemies"]
        3 [-]: GETTABLE R3 R4 R2
        4 [-]: GETTABLEKS R4 R3 K4 ["buffStatus"]
        5 [-]: GETTABLEKS R5 R3 K5 ["cooldownRemaining"]
@@ -129,21 +129,21 @@ L 1:  16 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  19
 
-       0 [-]: GETIMPORT R3 1 [nil]
-       1 [-]: GETIMPORT R5 3 [nil]
+       0 [-]: GETIMPORT R3 1 [0x89326C93]
+       1 [-]: GETIMPORT R5 3 ["gLotusAvatarType"]
        2 [-]: NAMECALL R6 R1 K4 [0xF6EBD926]
        3 [-]: CALL R6 1 1  
        4 [-]: LOADN R7 0   
-       5 [-]: GETIMPORT R8 6 [nil]
+       5 [-]: GETIMPORT R8 6 [0x7873D4EB]
        6 [-]: NAMECALL R3 R3 K7 [0xFB669000]
        7 [-]: CALL R3 5 1  
-       8 [-]: GETIMPORT R4 9 [nil]
+       8 [-]: GETIMPORT R4 9 [0xC8802016]
        9 [-]: MOVE R5 R3   
       10 [-]: CALL R4 1 3  
       11 [-]: FORGPREP_INEXT R4 L2
 L 0:  12 [-]: FASTCALL1 62 R8 L1
       13 [-]: MOVE R10 R8  
-      14 [-]: GETIMPORT R9 11 [nil]
+      14 [-]: GETIMPORT R9 11 [0x7B998233]
       15 [-]: CALL R9 1 1  
 L 1:  16 [-]: JUMPIF R9 L2 
       17 [-]: NAMECALL R9 R8 K12 [0x2047CFE7]
@@ -168,7 +168,7 @@ L 1:  16 [-]: JUMPIF R9 L2
       36 [-]: LOADN R13 3  
       37 [-]: LOADN R14 1  
       38 [-]: LOADB R15 1  
-      39 [-]: GETIMPORT R16 18 [nil]
+      39 [-]: GETIMPORT R16 18 [0x55730E1A]
       40 [-]: LOADN R17 0  
       41 [-]: LOADN R18 2  
       42 [-]: CALL R16 2 -1
@@ -185,8 +185,8 @@ L 1:  16 [-]: JUMPIF R9 L2
       53 [-]: NAMECALL R12 R8 K23 [0xEF8E8F7F]
       54 [-]: CALL R12 1 -1
       55 [-]: CALL R9 -1 1 
-      56 [-]: GETIMPORT R10 1 [nil]
-      57 [-]: GETIMPORT R12 25 [nil]
+      56 [-]: GETIMPORT R10 1 [0x89326C93]
+      57 [-]: GETIMPORT R12 25 [0x59628C09]
       58 [-]: MOVE R13 R9  
       59 [-]: LOADB R14 0  
       60 [-]: LOADN R15 0  
@@ -205,37 +205,37 @@ L 2:  64 [-]: FORGLOOP R4 L0 2 [inext]
       73 [-]: NAMECALL R7 R1 K23 [0xEF8E8F7F]
       74 [-]: CALL R7 1 -1 
       75 [-]: CALL R4 -1 1 
-      76 [-]: GETIMPORT R5 1 [nil]
-      77 [-]: GETIMPORT R7 28 [nil]
+      76 [-]: GETIMPORT R5 1 [0x89326C93]
+      77 [-]: GETIMPORT R7 28 [0x6AA4D1EF]
       78 [-]: MOVE R8 R4   
-      79 [-]: GETIMPORT R9 30 [nil]
+      79 [-]: GETIMPORT R9 30 ["ZERO_ROTATION"]
       80 [-]: MOVE R10 R0  
       81 [-]: NAMECALL R5 R5 K31 [0x05909209]
       82 [-]: CALL R5 5 0  
-      83 [-]: GETIMPORT R5 1 [nil]
-      84 [-]: GETIMPORT R7 33 [nil]
+      83 [-]: GETIMPORT R5 1 [0x89326C93]
+      84 [-]: GETIMPORT R7 33 [0x8645F61D]
       85 [-]: MOVE R8 R4   
       86 [-]: LOADB R9 0   
       87 [-]: LOADN R10 0  
       88 [-]: MOVE R11 R1  
       89 [-]: NAMECALL R5 R5 K26 [0x659D451F]
       90 [-]: CALL R5 6 0  
-      91 [-]: GETIMPORT R6 36 [nil]
+      91 [-]: GETIMPORT R6 36 ["JamNearbyEnemies"]
       92 [-]: NAMECALL R7 R0 K37 [0x388577D5]
       93 [-]: CALL R7 1 1  
       94 [-]: GETTABLE R5 R6 R7
-      95 [-]: GETIMPORT R7 39 [nil]
-      96 [-]: GETIMPORT R10 39 [nil]
+      95 [-]: GETIMPORT R7 39 [0x18DD75AF]
+      96 [-]: GETIMPORT R10 39 [0x18DD75AF]
       97 [-]: LENGTH R9 R10
       98 [-]: FASTCALL2 19 R9 R2 L3
       99 [-]: MOVE R10 R2  
-     100 [-]: GETIMPORT R8 42 [nil]
+     100 [-]: GETIMPORT R8 42 [0xAC1B386A]
      101 [-]: CALL R8 2 1  
 L 3: 102 [-]: GETTABLE R6 R7 R8
      103 [-]: SETTABLEKS R6 R5 K43 ["cooldownRemaining"]
      104 [-]: NAMECALL R5 R0 K37 [0x388577D5]
      105 [-]: CALL R5 1 1  
-     106 [-]: GETIMPORT R7 36 [nil]
+     106 [-]: GETIMPORT R7 36 ["JamNearbyEnemies"]
      107 [-]: GETTABLE R6 R7 R5
      108 [-]: GETTABLEKS R7 R6 K44 ["buffStatus"]
      109 [-]: GETTABLEKS R8 R6 K43 ["cooldownRemaining"]
@@ -261,30 +261,30 @@ L 4: 113 [-]: GETTABLEKS R9 R6 K44 ["buffStatus"]
 
        0 [-]: FASTCALL1 62 R0 L0
        1 [-]: MOVE R2 R0   
-       2 [-]: GETIMPORT R1 1 [nil]
+       2 [-]: GETIMPORT R1 1 [0x7B998233]
        3 [-]: CALL R1 1 1  
 L 0:   4 [-]: JUMPIFNOT R1 L1
        5 [-]: RETURN R0 0  
 L 1:   6 [-]: NAMECALL R1 R0 K2 [0x388577D5]
        7 [-]: CALL R1 1 1  
-       8 [-]: GETIMPORT R3 5 [nil]
+       8 [-]: GETIMPORT R3 5 ["JamNearbyEnemies"]
        9 [-]: GETTABLE R2 R3 R1
 L 2:  10 [-]: NAMECALL R3 R0 K6 [0x2047CFE7]
       11 [-]: CALL R3 1 1  
       12 [-]: JUMPIF R3 L8 
       13 [-]: GETTABLEKS R5 R2 K7 ["cooldownRemaining"]
-      14 [-]: GETIMPORT R6 9 [nil]
+      14 [-]: GETIMPORT R6 9 [0x67652851]
       15 [-]: CALL R6 0 1  
       16 [-]: SUB R4 R5 R6 
       17 [-]: FASTCALL2K 18 R4 K10 L3 [0]
       18 [-]: LOADK R5 K10 [0]
-      19 [-]: GETIMPORT R3 13 [nil]
+      19 [-]: GETIMPORT R3 13 [0xB62ECFE0]
       20 [-]: CALL R3 2 1  
 L 3:  21 [-]: SETTABLEKS R3 R2 K7 ["cooldownRemaining"]
       22 [-]: LOADB R3 1   
       23 [-]: GETTABLEKS R5 R2 K7 ["cooldownRemaining"]
       24 [-]: FASTCALL1 2 R5 L4
-      25 [-]: GETIMPORT R4 15 [nil]
+      25 [-]: GETIMPORT R4 15 [0xE4A5B3CA]
       26 [-]: CALL R4 1 1  
 L 4:  27 [-]: LOADK R5 K16 [9.9999999999999995e-07]
       28 [-]: JUMPIFNOTLT R4 R5 L5
@@ -292,7 +292,7 @@ L 4:  27 [-]: LOADK R5 K16 [9.9999999999999995e-07]
 L 5:  30 [-]: MOVE R4 R3   
       31 [-]: NAMECALL R5 R0 K2 [0x388577D5]
       32 [-]: CALL R5 1 1  
-      33 [-]: GETIMPORT R7 5 [nil]
+      33 [-]: GETIMPORT R7 5 ["JamNearbyEnemies"]
       34 [-]: GETTABLE R6 R7 R5
       35 [-]: GETTABLEKS R7 R6 K17 ["buffStatus"]
       36 [-]: GETTABLEKS R8 R6 K7 ["cooldownRemaining"]
@@ -306,11 +306,11 @@ L 6:  41 [-]: GETTABLEKS R9 R6 K17 ["buffStatus"]
       44 [-]: NAMECALL R7 R0 K20 [0x37E45FB5]
       45 [-]: CALL R7 4 0  
       46 [-]: SETTABLEKS R4 R6 K19 ["isBuffVisible"]
-L 7:  47 [-]: GETIMPORT R4 22 [nil]
+L 7:  47 [-]: GETIMPORT R4 22 [0xCBD666E1]
       48 [-]: LOADN R5 0   
       49 [-]: CALL R4 1 0  
       50 [-]: JUMPBACK L2  
-L 8:  51 [-]: GETIMPORT R3 5 [nil]
+L 8:  51 [-]: GETIMPORT R3 5 ["JamNearbyEnemies"]
       52 [-]: LOADNIL R4   
       53 [-]: SETTABLE R4 R3 R1
       54 [-]: RETURN R0 0  
@@ -323,7 +323,7 @@ L 8:  51 [-]: GETIMPORT R3 5 [nil]
 ; Is_vararg:       0
 ; Max Stack Size:  11
 
-       0 [-]: GETIMPORT R5 1 [nil]
+       0 [-]: GETIMPORT R5 1 [0x89326C93]
        1 [-]: NAMECALL R5 R5 K2 [0x18D05D30]
        2 [-]: CALL R5 1 1  
        3 [-]: JUMPIFNOT R5 L7
@@ -333,21 +333,21 @@ L 8:  51 [-]: GETIMPORT R3 5 [nil]
        7 [-]: JUMPIF R5 L7 
        8 [-]: NAMECALL R5 R0 K4 [0x388577D5]
        9 [-]: CALL R5 1 1  
-      10 [-]: GETIMPORT R7 7 [nil]
+      10 [-]: GETIMPORT R7 7 ["JamNearbyEnemies"]
       11 [-]: FASTCALL1 62 R7 L0
-      12 [-]: GETIMPORT R6 9 [nil]
+      12 [-]: GETIMPORT R6 9 [0x7B998233]
       13 [-]: CALL R6 1 1  
 L 0:  14 [-]: JUMPIFNOT R6 L1
-      15 [-]: GETIMPORT R6 10 [nil]
+      15 [-]: GETIMPORT R6 10 ["_T"]
       16 [-]: NEWTABLE R7 0 0
       17 [-]: SETTABLEKS R7 R6 K6 ["JamNearbyEnemies"]
-L 1:  18 [-]: GETIMPORT R8 7 [nil]
+L 1:  18 [-]: GETIMPORT R8 7 ["JamNearbyEnemies"]
       19 [-]: GETTABLE R7 R8 R5
       20 [-]: FASTCALL1 62 R7 L2
-      21 [-]: GETIMPORT R6 9 [nil]
+      21 [-]: GETIMPORT R6 9 [0x7B998233]
       22 [-]: CALL R6 1 1  
 L 2:  23 [-]: JUMPIFNOT R6 L3
-      24 [-]: GETIMPORT R6 13 [nil]
+      24 [-]: GETIMPORT R6 13 [0x608BC054]
       25 [-]: CALL R6 0 1  
       26 [-]: SETTABLEKS R0 R6 K14 ["instigator"]
       27 [-]: NEWTABLE R7 0 1
@@ -361,7 +361,7 @@ L 2:  23 [-]: JUMPIFNOT R6 L3
       35 [-]: SETTABLEKS R7 R6 K18 ["buffData"]
       36 [-]: LOADB R7 1   
       37 [-]: SETTABLEKS R7 R6 K19 ["isDebuff"]
-      38 [-]: GETIMPORT R7 7 [nil]
+      38 [-]: GETIMPORT R7 7 ["JamNearbyEnemies"]
       39 [-]: DUPTABLE R8 23
       40 [-]: LOADN R9 0   
       41 [-]: SETTABLEKS R9 R8 K20 ["cooldownRemaining"]
@@ -369,7 +369,7 @@ L 2:  23 [-]: JUMPIFNOT R6 L3
       43 [-]: SETTABLEKS R9 R8 K21 ["isBuffVisible"]
       44 [-]: SETTABLEKS R6 R8 K22 ["buffStatus"]
       45 [-]: SETTABLE R8 R7 R5
-      46 [-]: GETIMPORT R9 25 [nil]
+      46 [-]: GETIMPORT R9 25 [0x0469F296]
       47 [-]: LOADK R10 K26 ["Update"]
       48 [-]: CALL R9 1 1  
       49 [-]: LOADB R10 0  
@@ -379,15 +379,15 @@ L 3:  52 [-]: NAMECALL R6 R4 K28 [0x5EFCA02D]
       53 [-]: CALL R6 1 1  
       54 [-]: GETTABLEKS R8 R6 K29 ["victim"]
       55 [-]: FASTCALL1 62 R8 L4
-      56 [-]: GETIMPORT R7 9 [nil]
+      56 [-]: GETIMPORT R7 9 [0x7B998233]
       57 [-]: CALL R7 1 1  
 L 4:  58 [-]: JUMPIFNOT R7 L5
       59 [-]: RETURN R0 0  
-L 5:  60 [-]: GETIMPORT R10 7 [nil]
+L 5:  60 [-]: GETIMPORT R10 7 ["JamNearbyEnemies"]
       61 [-]: GETTABLE R9 R10 R5
       62 [-]: GETTABLEKS R8 R9 K20 ["cooldownRemaining"]
       63 [-]: FASTCALL1 2 R8 L6
-      64 [-]: GETIMPORT R7 32 [nil]
+      64 [-]: GETIMPORT R7 32 [0xE4A5B3CA]
       65 [-]: CALL R7 1 1  
 L 6:  66 [-]: LOADK R8 K33 [9.9999999999999995e-07]
       67 [-]: JUMPIFNOTLT R7 R8 L7

@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  3
 
-            1 [-]: LOADB R0 0   
+       1 [-]: LOADB R0 0   
        2 [-]: LOADB R1 0   
        3 [-]: NEWCLOSURE R2 P0
        4 [-]: MOVE R1 R1   
@@ -26,26 +26,26 @@
 ; Is_vararg:       0
 ; Max Stack Size:  16
 
-       0 [-]: GETIMPORT R1 1 [nil]
+       0 [-]: GETIMPORT R1 1 [0x25D99D89]
        1 [-]: FASTCALL1 62 R1 L0
-       2 [-]: GETIMPORT R0 3 [nil]
+       2 [-]: GETIMPORT R0 3 [0x7B998233]
        3 [-]: CALL R0 1 1  
 L 0:   4 [-]: JUMPIF R0 L1 
-       5 [-]: GETIMPORT R0 1 [nil]
+       5 [-]: GETIMPORT R0 1 [0x25D99D89]
        6 [-]: NAMECALL R0 R0 K4 [0x69789D1A]
        7 [-]: CALL R0 1 1  
        8 [-]: JUMPIFNOT R0 L2
-L 1:   9 [-]: GETIMPORT R0 6 [nil]
+L 1:   9 [-]: GETIMPORT R0 6 ["_T"]
       10 [-]: LOADB R1 1   
       11 [-]: SETTABLEKS R1 R0 K7 ["StartingGearGiven"]
       12 [-]: RETURN R0 0  
-L 2:  13 [-]: GETIMPORT R0 9 [nil]
+L 2:  13 [-]: GETIMPORT R0 9 [0x76EA806B]
       14 [-]: LOADN R2 0   
       15 [-]: NAMECALL R0 R0 K10 [0x3F3AE64C]
       16 [-]: CALL R0 2 1  
       17 [-]: NAMECALL R1 R0 K11 [0x80563238]
       18 [-]: CALL R1 1 1  
-      19 [-]: GETIMPORT R3 13 [nil]
+      19 [-]: GETIMPORT R3 13 [0x89326C93]
       20 [-]: NAMECALL R3 R3 K14 [0xDED7D5CD]
       21 [-]: CALL R3 1 1  
       22 [-]: GETTABLEN R2 R3 1
@@ -83,7 +83,7 @@ L 3:  49 [-]: GETUPVAL R9 0
       54 [-]: LOADB R9 0   
       55 [-]: SETUPVAL R9 1
       56 [-]: LOADN R8 0   
-      57 [-]: GETIMPORT R9 23 [nil]
+      57 [-]: GETIMPORT R9 23 [0x3D106989]
       58 [-]: LOADK R10 K24 ["Retrying GiveStartingGear"]
       59 [-]: CALL R9 1 0  
       60 [-]: MOVE R11 R3  
@@ -96,17 +96,17 @@ L 3:  49 [-]: GETUPVAL R9 0
       67 [-]: MULK R10 R7 K25 [2]
       68 [-]: FASTCALL2K 19 R10 K26 L4 [30]
       69 [-]: LOADK R11 K26 [30]
-      70 [-]: GETIMPORT R9 29 [nil]
+      70 [-]: GETIMPORT R9 29 [0xAC1B386A]
       71 [-]: CALL R9 2 1  
 L 4:  72 [-]: MOVE R7 R9   
-L 5:  73 [-]: GETIMPORT R9 31 [nil]
+L 5:  73 [-]: GETIMPORT R9 31 [0xCBD666E1]
       74 [-]: LOADN R10 0  
       75 [-]: CALL R9 1 0  
-      76 [-]: GETIMPORT R9 33 [nil]
+      76 [-]: GETIMPORT R9 33 [0xB693B6C1]
       77 [-]: CALL R9 0 1  
       78 [-]: ADD R8 R8 R9 
       79 [-]: JUMPBACK L3  
-L 6:  80 [-]: GETIMPORT R9 6 [nil]
+L 6:  80 [-]: GETIMPORT R9 6 ["_T"]
       81 [-]: LOADB R10 1  
       82 [-]: SETTABLEKS R10 R9 K7 ["StartingGearGiven"]
       83 [-]: RETURN R0 0  
@@ -119,9 +119,9 @@ L 6:  80 [-]: GETIMPORT R9 6 [nil]
 ; Is_vararg:       0
 ; Max Stack Size:  10
 
-       0 [-]: GETIMPORT R2 1 [nil]
+       0 [-]: GETIMPORT R2 1 [0x3D106989]
        1 [-]: LOADK R4 K2 ["Tutorial result="]
-       2 [-]: GETIMPORT R8 4 [nil]
+       2 [-]: GETIMPORT R8 4 [0x64FB1586]
        3 [-]: MOVE R9 R0   
        4 [-]: CALL R8 1 1  
        5 [-]: MOVE R5 R8   
@@ -132,9 +132,9 @@ L 6:  80 [-]: GETIMPORT R9 6 [nil]
       10 [-]: JUMPIFNOT R0 L0
       11 [-]: LOADB R2 1   
       12 [-]: SETUPVAL R2 0
-      13 [-]: GETIMPORT R2 8 [nil]
+      13 [-]: GETIMPORT R2 8 [0x68D83431]
       14 [-]: CALL R2 0 1  
-      15 [-]: GETIMPORT R3 10 [nil]
+      15 [-]: GETIMPORT R3 10 [0x25D99D89]
       16 [-]: MOVE R5 R2   
       17 [-]: LOADK R6 K11 [""]
       18 [-]: NAMECALL R3 R3 K12 [0xE4B15C4A]

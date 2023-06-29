@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  1
 
-            1 [-]: DUPCLOSURE R0 K0 []
+       1 [-]: DUPCLOSURE R0 K0 []
        2 [-]: SETGLOBAL R0 K1 ["HackAction"]
        3 [-]: DUPCLOSURE R0 K2 []
        4 [-]: SETGLOBAL R0 K3 ["HackPanel"]
@@ -21,14 +21,14 @@
 
        0 [-]: FASTCALL1 62 R0 L0
        1 [-]: MOVE R4 R0   
-       2 [-]: GETIMPORT R3 1 [nil]
+       2 [-]: GETIMPORT R3 1 [0x7B998233]
        3 [-]: CALL R3 1 1  
 L 0:   4 [-]: JUMPIFNOT R3 L1
        5 [-]: RETURN R0 0  
 L 1:   6 [-]: NAMECALL R4 R0 K2 [0xFA9E477F]
        7 [-]: CALL R4 1 -1 
        8 [-]: FASTCALL 62 L2
-       9 [-]: GETIMPORT R3 1 [nil]
+       9 [-]: GETIMPORT R3 1 [0x7B998233]
       10 [-]: CALL R3 -1 1 
 L 2:  11 [-]: JUMPIF R3 L3 
       12 [-]: LOADN R1 1   
@@ -41,29 +41,29 @@ L 4:  15 [-]: NAMECALL R3 R2 K3 [0x2B54251B]
       19 [-]: JUMPXEQKN R1 K5 L23 NOT [1]
       20 [-]: FASTCALL1 62 R2 L5
       21 [-]: MOVE R6 R2   
-      22 [-]: GETIMPORT R5 1 [nil]
+      22 [-]: GETIMPORT R5 1 [0x7B998233]
       23 [-]: CALL R5 1 1  
 L 5:  24 [-]: JUMPIF R5 L20
-      25 [-]: GETIMPORT R6 8 [nil]
+      25 [-]: GETIMPORT R6 8 ["harlequinObjectChange"]
       26 [-]: FASTCALL1 62 R6 L6
-      27 [-]: GETIMPORT R5 1 [nil]
+      27 [-]: GETIMPORT R5 1 [0x7B998233]
       28 [-]: CALL R5 1 1  
 L 6:  29 [-]: JUMPIF R5 L20
       30 [-]: NAMECALL R6 R0 K2 [0xFA9E477F]
       31 [-]: CALL R6 1 -1 
       32 [-]: FASTCALL 62 L7
-      33 [-]: GETIMPORT R5 1 [nil]
+      33 [-]: GETIMPORT R5 1 [0x7B998233]
       34 [-]: CALL R5 -1 1 
 L 7:  35 [-]: JUMPIF R5 L20
-      36 [-]: GETIMPORT R7 10 [nil]
+      36 [-]: GETIMPORT R7 10 ["gDecorationType"]
       37 [-]: NAMECALL R5 R2 K11 [0xC1595BD5]
       38 [-]: CALL R5 2 1  
       39 [-]: FASTCALL1 62 R5 L8
       40 [-]: MOVE R7 R5   
-      41 [-]: GETIMPORT R6 1 [nil]
+      41 [-]: GETIMPORT R6 1 [0x7B998233]
       42 [-]: CALL R6 1 1  
 L 8:  43 [-]: JUMPIF R6 L20
-      44 [-]: GETIMPORT R6 13 [nil]
+      44 [-]: GETIMPORT R6 13 [0x89326C93]
       45 [-]: NAMECALL R6 R6 K14 [0x7D108DDB]
       46 [-]: CALL R6 1 1  
       47 [-]: LOADN R9 1   
@@ -73,17 +73,17 @@ L 8:  43 [-]: JUMPIF R6 L20
 L 9:  51 [-]: GETTABLE R10 R6 R9
       52 [-]: NAMECALL R10 R10 K15 [0x8B72B36E]
       53 [-]: CALL R10 1 1 
-      54 [-]: GETIMPORT R13 8 [nil]
+      54 [-]: GETIMPORT R13 8 ["harlequinObjectChange"]
       55 [-]: GETTABLE R12 R13 R10
       56 [-]: FASTCALL1 62 R12 L10
-      57 [-]: GETIMPORT R11 1 [nil]
+      57 [-]: GETIMPORT R11 1 [0x7B998233]
       58 [-]: CALL R11 1 1 
 L10:  59 [-]: JUMPIF R11 L19
       60 [-]: LOADN R13 1  
       61 [-]: LENGTH R11 R5
       62 [-]: LOADN R12 1  
       63 [-]: FORNPREP R11 L19
-L11:  64 [-]: GETIMPORT R15 8 [nil]
+L11:  64 [-]: GETIMPORT R15 8 ["harlequinObjectChange"]
       65 [-]: GETTABLE R14 R15 R10
       66 [-]: LOADN R17 1  
       67 [-]: LENGTH R15 R14
@@ -93,13 +93,13 @@ L12:  70 [-]: GETTABLE R18 R5 R13
       71 [-]: GETTABLE R20 R14 R17
       72 [-]: GETTABLEKS R19 R20 K16 ["object"]
       73 [-]: JUMPIFNOTEQ R18 R19 L17
-      74 [-]: GETIMPORT R18 13 [nil]
+      74 [-]: GETIMPORT R18 13 [0x89326C93]
       75 [-]: GETTABLE R22 R14 R17
       76 [-]: GETTABLEKS R21 R22 K17 ["params"]
       77 [-]: GETTABLEKS R20 R21 K18 ["consoleExplosion"]
       78 [-]: NAMECALL R21 R2 K19 [0xD1586535]
       79 [-]: CALL R21 1 1 
-      80 [-]: GETIMPORT R22 21 [nil]
+      80 [-]: GETIMPORT R22 21 ["ZERO_ROTATION"]
       81 [-]: NAMECALL R18 R18 K22 [0x05909209]
       82 [-]: CALL R18 4 0 
       83 [-]: GETTABLE R18 R5 R13
@@ -107,7 +107,7 @@ L12:  70 [-]: GETTABLE R18 R5 R13
       85 [-]: NAMECALL R20 R20 K23 [0xBB610E5B]
       86 [-]: CALL R20 1 -1
       87 [-]: FASTCALL 62 L13
-      88 [-]: GETIMPORT R19 1 [nil]
+      88 [-]: GETIMPORT R19 1 [0x7B998233]
       89 [-]: CALL R19 -1 1
 L13:  90 [-]: JUMPIF R19 L14
       91 [-]: GETTABLE R19 R6 R9
@@ -118,23 +118,23 @@ L13:  90 [-]: JUMPIF R19 L14
       96 [-]: NAMECALL R19 R19 K25 [0xF7D48EE0]
       97 [-]: CALL R19 1 1 
       98 [-]: MOVE R18 R19 
-L14:  99 [-]: GETIMPORT R24 8 [nil]
+L14:  99 [-]: GETIMPORT R24 8 ["harlequinObjectChange"]
      100 [-]: GETTABLE R23 R24 R10
      101 [-]: GETTABLE R22 R23 R17
      102 [-]: GETTABLEKS R21 R22 K17 ["params"]
      103 [-]: GETTABLEKS R20 R21 K26 ["consoleAgent"]
      104 [-]: FASTCALL1 62 R20 L15
-     105 [-]: GETIMPORT R19 1 [nil]
+     105 [-]: GETIMPORT R19 1 [0x7B998233]
      106 [-]: CALL R19 1 1 
 L15: 107 [-]: JUMPIF R19 L16
-     108 [-]: GETIMPORT R23 8 [nil]
+     108 [-]: GETIMPORT R23 8 ["harlequinObjectChange"]
      109 [-]: GETTABLE R22 R23 R10
      110 [-]: GETTABLE R21 R22 R17
      111 [-]: GETTABLEKS R20 R21 K17 ["params"]
      112 [-]: GETTABLEKS R19 R20 K26 ["consoleAgent"]
      113 [-]: NAMECALL R19 R19 K27 [0xAC41835F]
      114 [-]: CALL R19 1 0 
-L16: 115 [-]: GETIMPORT R19 13 [nil]
+L16: 115 [-]: GETIMPORT R19 13 [0x89326C93]
      116 [-]: GETTABLE R21 R6 R9
      117 [-]: NAMECALL R21 R21 K23 [0xBB610E5B]
      118 [-]: CALL R21 1 1 
@@ -167,30 +167,30 @@ L20: 144 [-]: NAMECALL R5 R0 K24 [0xDE321E6F]
      145 [-]: CALL R5 1 1  
      146 [-]: LOADN R7 50  
      147 [-]: MOVE R8 R0   
-     148 [-]: GETIMPORT R9 32 [nil]
+     148 [-]: GETIMPORT R9 32 [0x0469F296]
      149 [-]: LOADK R10 K33 ["/Lotus/Language/Actions/HackXP"]
      150 [-]: CALL R9 1 -1 
      151 [-]: NAMECALL R5 R5 K34 [0x8DB2624F]
      152 [-]: CALL R5 -1 0 
-     153 [-]: GETIMPORT R5 36 [nil]
+     153 [-]: GETIMPORT R5 36 [0xBA7DFCD2]
      154 [-]: NAMECALL R7 R0 K37 [0x5E651723]
      155 [-]: CALL R7 1 1  
-     156 [-]: GETIMPORT R8 32 [nil]
+     156 [-]: GETIMPORT R8 32 [0x0469F296]
      157 [-]: LOADK R9 K38 ["CONSOLE_HACKED"]
      158 [-]: CALL R8 1 -1 
      159 [-]: NAMECALL R5 R5 K39 [0xF056B179]
      160 [-]: CALL R5 -1 0 
-     161 [-]: GETIMPORT R5 13 [nil]
+     161 [-]: GETIMPORT R5 13 [0x89326C93]
      162 [-]: NAMECALL R5 R5 K40 [0x18D05D30]
      163 [-]: CALL R5 1 1  
      164 [-]: JUMPIFNOT R5 L23
      165 [-]: NAMECALL R6 R0 K2 [0xFA9E477F]
      166 [-]: CALL R6 1 -1 
      167 [-]: FASTCALL 62 L21
-     168 [-]: GETIMPORT R5 1 [nil]
+     168 [-]: GETIMPORT R5 1 [0x7B998233]
      169 [-]: CALL R5 -1 1 
 L21: 170 [-]: JUMPIF R5 L22
-     171 [-]: GETIMPORT R7 42 [nil]
+     171 [-]: GETIMPORT R7 42 ["gLotusMoaPetAvatarType"]
      172 [-]: NAMECALL R5 R0 K43 [0xF2DEAF69]
      173 [-]: CALL R5 2 1  
      174 [-]: JUMPIF R5 L22
@@ -211,12 +211,12 @@ L23: 182 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  4
 
-       0 [-]: GETIMPORT R3 1 [nil]
+       0 [-]: GETIMPORT R3 1 ["gContextActionType"]
        1 [-]: NAMECALL R1 R0 K2 [0xC9F6A7D7]
        2 [-]: CALL R1 2 1  
        3 [-]: FASTCALL1 62 R1 L0
        4 [-]: MOVE R3 R1   
-       5 [-]: GETIMPORT R2 4 [nil]
+       5 [-]: GETIMPORT R2 4 [0x7B998233]
        6 [-]: CALL R2 1 1  
 L 0:   7 [-]: JUMPIFNOT R2 L1
        8 [-]: RETURN R0 0  
@@ -225,7 +225,7 @@ L 1:   9 [-]: NAMECALL R2 R1 K5 [0x383D2E7D]
 L 2:  11 [-]: NAMECALL R2 R0 K6 [0xF37943FF]
       12 [-]: CALL R2 1 1  
       13 [-]: JUMPIFNOT R2 L3
-      14 [-]: GETIMPORT R2 8 [nil]
+      14 [-]: GETIMPORT R2 8 [0xCBD666E1]
       15 [-]: LOADN R3 0   
       16 [-]: CALL R2 1 0  
       17 [-]: JUMPBACK L2  

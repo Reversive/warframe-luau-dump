@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  2
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x2D0FAD09]
        2 [-]: LOADK R1 K2 ["Lotus.Scripts.Libs.AbilitiesLib"]
        3 [-]: CALL R0 1 1  
        4 [-]: DUPCLOSURE R1 K3 []
@@ -26,7 +26,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  3
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 ["_T"]
        1 [-]: DUPTABLE R1 3
        2 [-]: LOADN R2 20  
        3 [-]: SETTABLEKS R2 R1 K2 ["RADIUS"]
@@ -47,7 +47,7 @@
        3 [-]: CALL R1 1 1  
        4 [-]: JUMPIFNOT R1 L0
        5 [-]: RETURN R0 0  
-L 0:   6 [-]: GETIMPORT R1 2 [nil]
+L 0:   6 [-]: GETIMPORT R1 2 [0x89326C93]
        7 [-]: NAMECALL R1 R1 K3 [0x18D05D30]
        8 [-]: CALL R1 1 1  
        9 [-]: JUMPIFNOT R1 L2
@@ -55,7 +55,7 @@ L 0:   6 [-]: GETIMPORT R1 2 [nil]
       11 [-]: CALL R1 1 1  
       12 [-]: FASTCALL1 62 R1 L1
       13 [-]: MOVE R3 R1   
-      14 [-]: GETIMPORT R2 6 [nil]
+      14 [-]: GETIMPORT R2 6 [0x7B998233]
       15 [-]: CALL R2 1 1  
 L 1:  16 [-]: JUMPIF R2 L2 
       17 [-]: NAMECALL R2 R1 K7 [0xDE321E6F]
@@ -81,7 +81,7 @@ L 2:  24 [-]: RETURN R0 0
        3 [-]: CALL R1 1 1  
        4 [-]: JUMPIFNOT R1 L0
        5 [-]: RETURN R0 0  
-L 0:   6 [-]: GETIMPORT R1 2 [nil]
+L 0:   6 [-]: GETIMPORT R1 2 [0x89326C93]
        7 [-]: NAMECALL R1 R1 K3 [0x18D05D30]
        8 [-]: CALL R1 1 1  
        9 [-]: JUMPIFNOT R1 L2
@@ -89,7 +89,7 @@ L 0:   6 [-]: GETIMPORT R1 2 [nil]
       11 [-]: CALL R1 1 1  
       12 [-]: FASTCALL1 62 R1 L1
       13 [-]: MOVE R3 R1   
-      14 [-]: GETIMPORT R2 6 [nil]
+      14 [-]: GETIMPORT R2 6 [0x7B998233]
       15 [-]: CALL R2 1 1  
 L 1:  16 [-]: JUMPIF R2 L2 
       17 [-]: NAMECALL R2 R1 K7 [0xDE321E6F]

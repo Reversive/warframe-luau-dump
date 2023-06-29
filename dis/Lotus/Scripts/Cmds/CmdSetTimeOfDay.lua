@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  1
 
-            1 [-]: DUPCLOSURE R0 K0 []
+       1 [-]: DUPCLOSURE R0 K0 []
        2 [-]: SETGLOBAL R0 K1 ["SetTimeOfDay"]
        3 [-]: RETURN R0 0  
 
@@ -19,12 +19,12 @@
 
        0 [-]: FASTCALL1 40 R0 L0
        1 [-]: MOVE R3 R0   
-       2 [-]: GETIMPORT R2 1 [nil]
+       2 [-]: GETIMPORT R2 1 [0x0B96777E]
        3 [-]: CALL R2 1 1  
 L 0:   4 [-]: JUMPXEQKS R2 K2 L1 ["number"]
        5 [-]: RETURN R0 0  
-L 1:   6 [-]: GETIMPORT R2 4 [nil]
-       7 [-]: GETIMPORT R4 6 [nil]
+L 1:   6 [-]: GETIMPORT R2 4 [0x89326C93]
+       7 [-]: GETIMPORT R4 6 ["gDynamicSkyType"]
        8 [-]: NAMECALL R2 R2 K7 [0xFB669000]
        9 [-]: CALL R2 2 1  
       10 [-]: LOADN R5 1   

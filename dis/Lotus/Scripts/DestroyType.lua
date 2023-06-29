@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  1
 
-            1 [-]: DUPCLOSURE R0 K0 []
+       1 [-]: DUPCLOSURE R0 K0 []
        2 [-]: SETGLOBAL R0 K1 ["DestroyType"]
        3 [-]: DUPCLOSURE R0 K2 []
        4 [-]: SETGLOBAL R0 K3 ["ContextActionDestroyType"]
@@ -23,11 +23,11 @@
 
        0 [-]: NAMECALL R1 R0 K0 [0xD1586535]
        1 [-]: CALL R1 1 1  
-       2 [-]: GETIMPORT R2 2 [nil]
-       3 [-]: GETIMPORT R4 4 [nil]
+       2 [-]: GETIMPORT R2 2 [0x89326C93]
+       3 [-]: GETIMPORT R4 4 [0xDE8EB47B]
        4 [-]: MOVE R5 R1   
-       5 [-]: GETIMPORT R6 6 [nil]
-       6 [-]: GETIMPORT R7 8 [nil]
+       5 [-]: GETIMPORT R6 6 [0xB2412CB1]
+       6 [-]: GETIMPORT R7 8 [0xF4C4639B]
        7 [-]: NAMECALL R2 R2 K9 [0xFB669000]
        8 [-]: CALL R2 5 1  
        9 [-]: LOADN R5 1   
@@ -50,11 +50,11 @@ L 1:  17 [-]: RETURN R0 0
 
        0 [-]: NAMECALL R2 R1 K0 [0xD1586535]
        1 [-]: CALL R2 1 1  
-       2 [-]: GETIMPORT R3 2 [nil]
-       3 [-]: GETIMPORT R5 4 [nil]
+       2 [-]: GETIMPORT R3 2 [0x89326C93]
+       3 [-]: GETIMPORT R5 4 [0xDE8EB47B]
        4 [-]: MOVE R6 R2   
-       5 [-]: GETIMPORT R7 6 [nil]
-       6 [-]: GETIMPORT R8 8 [nil]
+       5 [-]: GETIMPORT R7 6 [0xB2412CB1]
+       6 [-]: GETIMPORT R8 8 [0xF4C4639B]
        7 [-]: NAMECALL R3 R3 K9 [0xFB669000]
        8 [-]: CALL R3 5 1  
        9 [-]: LOADN R6 1   
@@ -75,12 +75,12 @@ L 1:  17 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  4
 
-       0 [-]: GETIMPORT R3 1 [nil]
+       0 [-]: GETIMPORT R3 1 [0xDE8EB47B]
        1 [-]: NAMECALL R1 R0 K2 [0xC9F6A7D7]
        2 [-]: CALL R1 2 1  
        3 [-]: FASTCALL1 62 R1 L0
        4 [-]: MOVE R3 R1   
-       5 [-]: GETIMPORT R2 4 [nil]
+       5 [-]: GETIMPORT R2 4 [0x7B998233]
        6 [-]: CALL R2 1 1  
 L 0:   7 [-]: JUMPIF R2 L1 
        8 [-]: NAMECALL R2 R1 K5 [0xA2880940]

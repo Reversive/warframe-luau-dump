@@ -5,9 +5,9 @@
 ; Is_vararg:       1
 ; Max Stack Size:  3
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0xAEABECDA]
        2 [-]: GETVARARGS R1 1
-       3 [-]: GETIMPORT R2 4 [nil]
+       3 [-]: GETIMPORT R2 4 ["seeall"]
        4 [-]: CALL R0 2 0  
        5 [-]: DUPCLOSURE R0 K5 []
        6 [-]: SETGLOBAL R0 K6 ["Create"]
@@ -51,7 +51,7 @@
       27 [-]: SETTABLEKS R3 R2 K14 ["HorizontalPadding"]
       28 [-]: LOADN R3 0   
       29 [-]: SETTABLEKS R3 R2 K15 ["VerticalPadding"]
-      30 [-]: GETIMPORT R3 17 [nil]
+      30 [-]: GETIMPORT R3 17 [0x2D0FAD09]
       31 [-]: LOADK R4 K18 ["EE.Interface.Utilities"]
       32 [-]: CALL R3 1 1  
       33 [-]: NAMECALL R4 R0 K19 [0x095251AF]
@@ -85,7 +85,7 @@ L 0:  48 [-]: DUPCLOSURE R4 K27 []
       61 [-]: SETTABLEKS R4 R2 K34 ["ChangeOriginalCoords"]
       62 [-]: DUPCLOSURE R4 K35 []
       63 [-]: SETTABLEKS R4 R2 K36 ["ChangeAnchorPoints"]
-      64 [-]: GETIMPORT R4 39 [nil]
+      64 [-]: GETIMPORT R4 39 [0xE6B41ADB]
       65 [-]: CALL R4 0 1  
       66 [-]: JUMPIFNOT R4 L1
       67 [-]: NEWCLOSURE R4 P10

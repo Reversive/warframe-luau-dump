@@ -5,22 +5,22 @@
 ; Is_vararg:       1
 ; Max Stack Size:  27
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x2D0FAD09]
        2 [-]: LOADK R1 K2 ["EE.Interface.Utilities"]
        3 [-]: CALL R0 1 1  
-       4 [-]: GETIMPORT R1 1 [nil]
+       4 [-]: GETIMPORT R1 1 [0x2D0FAD09]
        5 [-]: LOADK R2 K3 ["Lotus.Scripts.Libs.LandscapeLib"]
        6 [-]: CALL R1 1 1  
-       7 [-]: GETIMPORT R2 1 [nil]
+       7 [-]: GETIMPORT R2 1 [0x2D0FAD09]
        8 [-]: LOADK R3 K4 ["Lotus.Scripts.Libs.TransmissionSet"]
        9 [-]: CALL R2 1 1  
-      10 [-]: GETIMPORT R3 1 [nil]
+      10 [-]: GETIMPORT R3 1 [0x2D0FAD09]
       11 [-]: LOADK R4 K5 ["Lotus.Interface.Libs.TimerMgr"]
       12 [-]: CALL R3 1 1  
-      13 [-]: GETIMPORT R4 1 [nil]
+      13 [-]: GETIMPORT R4 1 [0x2D0FAD09]
       14 [-]: LOADK R5 K6 ["Lotus.Scripts.Libs.RailjackUtilities"]
       15 [-]: CALL R4 1 1  
-      16 [-]: GETIMPORT R5 8 [nil]
+      16 [-]: GETIMPORT R5 8 [0x0469F296]
       17 [-]: LOADK R6 K9 ["CometShredder"]
       18 [-]: CALL R5 1 1  
       19 [-]: LOADNIL R6   
@@ -143,14 +143,14 @@ L 0:  11 [-]: RETURN R0 0
        1 [-]: GETTABLEKS R0 R1 K0 [0x6696A66C]
        2 [-]: GETUPVAL R1 1
        3 [-]: CALL R0 1 1  
-       4 [-]: GETIMPORT R1 2 [nil]
+       4 [-]: GETIMPORT R1 2 [0xC8802016]
        5 [-]: MOVE R2 R0   
        6 [-]: CALL R1 1 3  
        7 [-]: FORGPREP_INEXT R1 L1
 L 0:   8 [-]: GETUPVAL R7 2
        9 [-]: GETTABLEKS R6 R7 K3 [0xF22CFC77]
       10 [-]: GETUPVAL R7 3
-      11 [-]: GETIMPORT R8 5 [nil]
+      11 [-]: GETIMPORT R8 5 [0x0469F296]
       12 [-]: LOADK R9 K6 ["ConsoleLocated"]
       13 [-]: CALL R8 1 1  
       14 [-]: MOVE R9 R5   
@@ -180,15 +180,15 @@ L 1:  16 [-]: FORGLOOP R1 L0 2 [inext]
 ; Is_vararg:       0
 ; Max Stack Size:  9
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 [0x3D106989]
        1 [-]: LOADK R2 K2 ["COMETSHREDDER: CrewShipInitialize, state="]
-       2 [-]: GETIMPORT R3 4 [nil]
+       2 [-]: GETIMPORT R3 4 [0x64FB1586]
        3 [-]: GETUPVAL R4 0
        4 [-]: CALL R3 1 1  
        5 [-]: CONCAT R1 R2 R3
        6 [-]: CALL R0 1 0  
-       7 [-]: GETIMPORT R0 6 [nil]
-       8 [-]: GETIMPORT R2 8 [nil]
+       7 [-]: GETIMPORT R0 6 [0x89326C93]
+       8 [-]: GETIMPORT R2 8 [0x0469F296]
        9 [-]: LOADK R3 K9 ["PoiSetupScript"]
       10 [-]: CALL R2 1 1  
       11 [-]: GETUPVAL R3 1
@@ -196,7 +196,7 @@ L 1:  16 [-]: FORGLOOP R1 L0 2 [inext]
       13 [-]: CALL R0 3 1  
       14 [-]: FASTCALL1 62 R0 L0
       15 [-]: MOVE R2 R0   
-      16 [-]: GETIMPORT R1 12 [nil]
+      16 [-]: GETIMPORT R1 12 [0x7B998233]
       17 [-]: CALL R1 1 1  
 L 0:  18 [-]: JUMPIF R1 L1 
       19 [-]: LOADK R3 K13 ["Execute"]
@@ -204,13 +204,13 @@ L 0:  18 [-]: JUMPIF R1 L1
       21 [-]: CALL R1 2 0  
       22 [-]: JUMP L2
      
-L 1:  23 [-]: GETIMPORT R1 1 [nil]
+L 1:  23 [-]: GETIMPORT R1 1 [0x3D106989]
       24 [-]: LOADK R2 K15 ["POI - Could not find setup script"]
       25 [-]: CALL R1 1 0  
 L 2:  26 [-]: GETUPVAL R1 2
       27 [-]: NAMECALL R1 R1 K16 [0x1AC1655C]
       28 [-]: CALL R1 1 1  
-      29 [-]: GETIMPORT R3 8 [nil]
+      29 [-]: GETIMPORT R3 8 [0x0469F296]
       30 [-]: LOADK R4 K17 ["CrewshipInvuln"]
       31 [-]: CALL R3 1 1  
       32 [-]: LOADN R4 25  
@@ -218,7 +218,7 @@ L 2:  26 [-]: GETUPVAL R1 2
       34 [-]: LOADN R6 0   
       35 [-]: NAMECALL R1 R1 K18 [0xA383DE31]
       36 [-]: CALL R1 5 0  
-      37 [-]: GETIMPORT R1 6 [nil]
+      37 [-]: GETIMPORT R1 6 [0x89326C93]
       38 [-]: GETUPVAL R4 4
       39 [-]: GETTABLEKS R3 R4 K19 ["SYM_POI_MISSION_HINT_TAG"]
       40 [-]: GETUPVAL R4 1
@@ -235,7 +235,7 @@ L 2:  26 [-]: GETUPVAL R1 2
       51 [-]: NAMECALL R1 R1 K22 [0xA2D83ED4]
       52 [-]: CALL R1 1 1  
       53 [-]: JUMPIF R1 L4 
-L 3:  54 [-]: GETIMPORT R1 1 [nil]
+L 3:  54 [-]: GETIMPORT R1 1 [0x3D106989]
       55 [-]: LOADK R2 K23 ["Host left while starting POI Interior!!"]
       56 [-]: CALL R1 1 0  
       57 [-]: JUMP L6
@@ -254,14 +254,14 @@ L 4:  58 [-]: GETUPVAL R1 5
       69 [-]: CALL R1 6 1  
       70 [-]: FASTCALL1 62 R1 L5
       71 [-]: MOVE R3 R1   
-      72 [-]: GETIMPORT R2 12 [nil]
+      72 [-]: GETIMPORT R2 12 [0x7B998233]
       73 [-]: CALL R2 1 1  
 L 5:  74 [-]: JUMPIFNOT R2 L6
-      75 [-]: GETIMPORT R2 1 [nil]
+      75 [-]: GETIMPORT R2 1 [0x3D106989]
       76 [-]: LOADK R3 K26 ["Starting default POI mission encounter"]
       77 [-]: CALL R2 1 0  
       78 [-]: GETUPVAL R2 3
-      79 [-]: GETIMPORT R4 8 [nil]
+      79 [-]: GETIMPORT R4 8 [0x0469F296]
       80 [-]: LOADK R5 K27 ["DefaultPoiMission"]
       81 [-]: CALL R4 1 -1 
       82 [-]: NAMECALL R2 R2 K28 [0xFA1A049A]
@@ -296,7 +296,7 @@ L 6:  97 [-]: GETUPVAL R1 3
 
        0 [-]: FASTCALL1 62 R0 L0
        1 [-]: MOVE R2 R0   
-       2 [-]: GETIMPORT R1 1 [nil]
+       2 [-]: GETIMPORT R1 1 [0x7B998233]
        3 [-]: CALL R1 1 1  
 L 0:   4 [-]: JUMPIF R1 L1 
        5 [-]: SETUPVAL R0 0
@@ -325,7 +325,7 @@ L 0:   4 [-]: JUMPIF R1 L1
       28 [-]: NAMECALL R2 R2 K9 [0x589EF1C1]
       29 [-]: CALL R2 3 0  
       30 [-]: RETURN R0 0  
-L 1:  31 [-]: GETIMPORT R1 11 [nil]
+L 1:  31 [-]: GETIMPORT R1 11 [0x484742B6]
       32 [-]: LOADK R2 K12 ["Failed to create ship!"]
       33 [-]: CALL R1 1 0  
       34 [-]: RETURN R0 0  
@@ -347,7 +347,7 @@ L 1:  31 [-]: GETIMPORT R1 11 [nil]
        6 [-]: LOADNIL R0   
        7 [-]: GETUPVAL R2 2
        8 [-]: GETTABLEKS R1 R2 K2 [0x2DF8B2BA]
-       9 [-]: GETIMPORT R2 4 [nil]
+       9 [-]: GETIMPORT R2 4 [0x0469F296]
       10 [-]: LOADK R3 K5 ["Objective"]
       11 [-]: CALL R2 1 1  
       12 [-]: GETUPVAL R3 3
@@ -394,7 +394,7 @@ L 3:  39 [-]: GETUPVAL R0 0
       53 [-]: GETUPVAL R1 7
       54 [-]: GETTABLEKS R0 R1 K15 [0x9742B85B]
       55 [-]: GETUPVAL R1 8
-      56 [-]: GETIMPORT R2 4 [nil]
+      56 [-]: GETIMPORT R2 4 [0x0469F296]
       57 [-]: LOADK R3 K16 ["ObjectiveComplete"]
       58 [-]: CALL R2 1 -1 
       59 [-]: CALL R0 -1 0 
@@ -408,7 +408,7 @@ L 4:  60 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  8
 
-       0 [-]: GETIMPORT R1 1 [nil]
+       0 [-]: GETIMPORT R1 1 [0x89326C93]
        1 [-]: NAMECALL R1 R1 K2 [0x29EF273D]
        2 [-]: CALL R1 1 1  
        3 [-]: NAMECALL R1 R1 K3 [0x66905CB0]
@@ -418,14 +418,14 @@ L 0:   6 [-]: GETUPVAL R1 0
        7 [-]: NAMECALL R1 R1 K4 [0xA2D83ED4]
        8 [-]: CALL R1 1 1  
        9 [-]: JUMPIF R1 L1 
-      10 [-]: GETIMPORT R1 6 [nil]
+      10 [-]: GETIMPORT R1 6 [0xCBD666E1]
       11 [-]: LOADN R2 0   
       12 [-]: CALL R1 1 0  
       13 [-]: JUMPBACK L0  
-L 1:  14 [-]: GETIMPORT R1 8 [nil]
+L 1:  14 [-]: GETIMPORT R1 8 [0x3D106989]
       15 [-]: LOADK R2 K9 ["COMETSHREDDER: Initialize (1)"]
       16 [-]: CALL R1 1 0  
-      17 [-]: GETIMPORT R1 11 [nil]
+      17 [-]: GETIMPORT R1 11 [0xBE190284]
       18 [-]: SETUPVAL R1 1
       19 [-]: SETUPVAL R0 2
       20 [-]: NAMECALL R1 R0 K12 [0x891629FA]
@@ -452,7 +452,7 @@ L 1:  14 [-]: GETIMPORT R1 8 [nil]
       41 [-]: SETUPVAL R1 9
       42 [-]: GETUPVAL R2 12
       43 [-]: GETTABLEKS R1 R2 K18 [0xD2C39E3E]
-      44 [-]: GETIMPORT R2 20 [nil]
+      44 [-]: GETIMPORT R2 20 [0x0469F296]
       45 [-]: LOADK R3 K21 ["EnterPoiAction"]
       46 [-]: CALL R2 1 1  
       47 [-]: GETUPVAL R3 2
@@ -464,9 +464,9 @@ L 1:  14 [-]: GETIMPORT R1 8 [nil]
       53 [-]: NAMECALL R1 R1 K23 [0xABE61691]
       54 [-]: CALL R1 1 1  
       55 [-]: SETUPVAL R1 13
-      56 [-]: GETIMPORT R1 8 [nil]
+      56 [-]: GETIMPORT R1 8 [0x3D106989]
       57 [-]: LOADK R3 K24 ["COMETSHREDDER: Current state="]
-      58 [-]: GETIMPORT R4 26 [nil]
+      58 [-]: GETIMPORT R4 26 [0x64FB1586]
       59 [-]: GETUPVAL R5 13
       60 [-]: CALL R4 1 1  
       61 [-]: CONCAT R2 R3 R4
@@ -482,7 +482,7 @@ L 1:  14 [-]: GETIMPORT R1 8 [nil]
       71 [-]: SETUPVAL R2 15
       72 [-]: GETUPVAL R2 14
       73 [-]: FASTCALL1 62 R2 L2
-      74 [-]: GETIMPORT R1 29 [nil]
+      74 [-]: GETIMPORT R1 29 [0x7B998233]
       75 [-]: CALL R1 1 1  
 L 2:  76 [-]: JUMPIF R1 L5 
       77 [-]: GETUPVAL R1 14
@@ -490,7 +490,7 @@ L 2:  76 [-]: JUMPIF R1 L5
       79 [-]: CALL R1 1 1  
       80 [-]: FASTCALL1 62 R1 L3
       81 [-]: MOVE R3 R1   
-      82 [-]: GETIMPORT R2 29 [nil]
+      82 [-]: GETIMPORT R2 29 [0x7B998233]
       83 [-]: CALL R2 1 1  
 L 3:  84 [-]: JUMPIF R2 L5 
       85 [-]: GETUPVAL R4 2
@@ -498,15 +498,15 @@ L 3:  84 [-]: JUMPIF R2 L5
       87 [-]: CALL R2 2 0  
       88 [-]: JUMP L5
      
-L 4:  89 [-]: GETIMPORT R1 8 [nil]
+L 4:  89 [-]: GETIMPORT R1 8 [0x3D106989]
       90 [-]: LOADK R2 K32 ["COMETSHREDDER: Creating a crew ship"]
       91 [-]: CALL R1 1 0  
-      92 [-]: GETIMPORT R1 11 [nil]
+      92 [-]: GETIMPORT R1 11 [0xBE190284]
       93 [-]: NAMECALL R1 R1 K33 [0xD7D79B74]
       94 [-]: CALL R1 1 1  
       95 [-]: SETUPVAL R1 16
       96 [-]: GETUPVAL R1 16
-      97 [-]: GETIMPORT R3 35 [nil]
+      97 [-]: GETIMPORT R3 35 [0x93CD7BE9]
       98 [-]: LOADNIL R4   
       99 [-]: LOADB R5 0   
      100 [-]: LOADB R6 1   
@@ -515,14 +515,14 @@ L 4:  89 [-]: GETIMPORT R1 8 [nil]
      103 [-]: CALL R1 6 0  
 L 5: 104 [-]: GETUPVAL R2 15
      105 [-]: FASTCALL1 62 R2 L6
-     106 [-]: GETIMPORT R1 29 [nil]
+     106 [-]: GETIMPORT R1 29 [0x7B998233]
      107 [-]: CALL R1 1 1  
 L 6: 108 [-]: JUMPIFNOT R1 L7
-     109 [-]: GETIMPORT R1 6 [nil]
+     109 [-]: GETIMPORT R1 6 [0xCBD666E1]
      110 [-]: LOADN R2 0   
      111 [-]: CALL R1 1 0  
      112 [-]: JUMPBACK L5  
-L 7: 113 [-]: GETIMPORT R1 8 [nil]
+L 7: 113 [-]: GETIMPORT R1 8 [0x3D106989]
      114 [-]: LOADK R2 K38 ["COMETSHREDDER: Crwship ready"]
      115 [-]: CALL R1 1 0  
      116 [-]: GETUPVAL R1 17
@@ -570,26 +570,26 @@ L 9: 143 [-]: LOADN R5 1
 ; Is_vararg:       0
 ; Max Stack Size:  6
 
-       0 [-]: GETIMPORT R1 1 [nil]
+       0 [-]: GETIMPORT R1 1 [0x3D106989]
        1 [-]: LOADK R2 K2 ["COMETSHREDDER: Start"]
        2 [-]: CALL R1 1 0  
        3 [-]: GETUPVAL R1 0
        4 [-]: MOVE R2 R0   
        5 [-]: CALL R1 1 0  
-       6 [-]: GETIMPORT R1 1 [nil]
+       6 [-]: GETIMPORT R1 1 [0x3D106989]
        7 [-]: LOADK R2 K3 ["COMETSHREDDER: Initialize done"]
        8 [-]: CALL R1 1 0  
        9 [-]: LOADN R1 0   
 L 0:  10 [-]: FASTCALL1 62 R0 L1
       11 [-]: MOVE R3 R0   
-      12 [-]: GETIMPORT R2 5 [nil]
+      12 [-]: GETIMPORT R2 5 [0x7B998233]
       13 [-]: CALL R2 1 1  
 L 1:  14 [-]: JUMPIF R2 L8 
-      15 [-]: GETIMPORT R2 7 [nil]
+      15 [-]: GETIMPORT R2 7 [0xBE190284]
       16 [-]: NAMECALL R2 R2 K8 [0x3790D299]
       17 [-]: CALL R2 1 1  
       18 [-]: JUMPIF R2 L2 
-      19 [-]: GETIMPORT R2 7 [nil]
+      19 [-]: GETIMPORT R2 7 [0xBE190284]
       20 [-]: NAMECALL R2 R2 K9 [0x5D204145]
       21 [-]: CALL R2 1 1  
       22 [-]: JUMPIF R2 L2 
@@ -597,12 +597,12 @@ L 1:  14 [-]: JUMPIF R2 L8
       24 [-]: CALL R2 1 1  
       25 [-]: LOADN R3 4   
       26 [-]: JUMPIFNOTLE R3 R2 L3
-L 2:  27 [-]: GETIMPORT R2 1 [nil]
+L 2:  27 [-]: GETIMPORT R2 1 [0x3D106989]
       28 [-]: LOADK R3 K11 ["COMETSHREDDER: Completed"]
       29 [-]: CALL R2 1 0  
       30 [-]: JUMP L8
      
-L 3:  31 [-]: GETIMPORT R2 13 [nil]
+L 3:  31 [-]: GETIMPORT R2 13 [0x67652851]
       32 [-]: CALL R2 0 1  
       33 [-]: MOVE R1 R2   
       34 [-]: GETUPVAL R2 2
@@ -651,7 +651,7 @@ L 7:  73 [-]: GETUPVAL R2 5
       74 [-]: MOVE R4 R1   
       75 [-]: NAMECALL R2 R2 K23 [0xFAA69527]
       76 [-]: CALL R2 2 0  
-      77 [-]: GETIMPORT R2 25 [nil]
+      77 [-]: GETIMPORT R2 25 [0xCBD666E1]
       78 [-]: LOADN R3 0   
       79 [-]: CALL R2 1 0  
       80 [-]: JUMPBACK L0  

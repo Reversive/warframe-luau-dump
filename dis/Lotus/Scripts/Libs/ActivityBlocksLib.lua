@@ -5,9 +5,9 @@
 ; Is_vararg:       1
 ; Max Stack Size:  3
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0xAEABECDA]
        2 [-]: GETVARARGS R1 1
-       3 [-]: GETIMPORT R2 4 [nil]
+       3 [-]: GETIMPORT R2 4 ["seeall"]
        4 [-]: CALL R0 2 0  
        5 [-]: DUPTABLE R0 9
        6 [-]: LOADN R1 0   
@@ -80,14 +80,14 @@ L 0:   3 [-]: RETURN R0 0
        2 [-]: SETTABLEKS R1 R0 K2 ["mCurrentState"]
        3 [-]: GETTABLEKS R2 R0 K3 ["OnInit"]
        4 [-]: FASTCALL1 62 R2 L0
-       5 [-]: GETIMPORT R1 5 [nil]
+       5 [-]: GETIMPORT R1 5 [0x7B998233]
        6 [-]: CALL R1 1 1  
 L 0:   7 [-]: JUMPIF R1 L1 
        8 [-]: NAMECALL R1 R0 K6 [0x95BB66C1]
        9 [-]: CALL R1 1 0  
 L 1:  10 [-]: GETTABLEKS R2 R0 K7 ["OnStateChange"]
       11 [-]: FASTCALL1 62 R2 L2
-      12 [-]: GETIMPORT R1 5 [nil]
+      12 [-]: GETIMPORT R1 5 [0x7B998233]
       13 [-]: CALL R1 1 1  
 L 2:  14 [-]: JUMPIF R1 L3 
       15 [-]: GETGLOBAL R4 K0 ["STATE"]
@@ -106,7 +106,7 @@ L 3:  19 [-]: RETURN R0 1
 
        0 [-]: GETTABLEKS R2 R0 K0 ["OnStart"]
        1 [-]: FASTCALL1 62 R2 L0
-       2 [-]: GETIMPORT R1 2 [nil]
+       2 [-]: GETIMPORT R1 2 [0x7B998233]
        3 [-]: CALL R1 1 1  
 L 0:   4 [-]: JUMPIF R1 L1 
        5 [-]: NAMECALL R1 R0 K3 [0xB8AE375D]
@@ -127,7 +127,7 @@ L 1:   7 [-]: GETGLOBAL R4 K4 ["STATE"]
 
        0 [-]: GETTABLEKS R3 R0 K0 ["OnUpdate"]
        1 [-]: FASTCALL1 62 R3 L0
-       2 [-]: GETIMPORT R2 2 [nil]
+       2 [-]: GETIMPORT R2 2 [0x7B998233]
        3 [-]: CALL R2 1 1  
 L 0:   4 [-]: JUMPIF R2 L1 
        5 [-]: MOVE R4 R1   
@@ -157,12 +157,12 @@ L 2:  20 [-]: NAMECALL R2 R0 K5 [0x53C3399F]
       28 [-]: CALL R2 2 0  
 L 3:  29 [-]: GETTABLEKS R3 R0 K11 ["mPendingState"]
       30 [-]: FASTCALL1 62 R3 L4
-      31 [-]: GETIMPORT R2 2 [nil]
+      31 [-]: GETIMPORT R2 2 [0x7B998233]
       32 [-]: CALL R2 1 1  
 L 4:  33 [-]: JUMPIF R2 L7 
       34 [-]: GETTABLEKS R3 R0 K12 ["OnStateChange"]
       35 [-]: FASTCALL1 62 R3 L5
-      36 [-]: GETIMPORT R2 2 [nil]
+      36 [-]: GETIMPORT R2 2 [0x7B998233]
       37 [-]: CALL R2 1 1  
 L 5:  38 [-]: JUMPIF R2 L6 
       39 [-]: GETTABLEKS R4 R0 K11 ["mPendingState"]
@@ -182,7 +182,7 @@ L 7:  44 [-]: RETURN R0 0
 
        0 [-]: GETTABLEKS R2 R0 K0 ["OnComplete"]
        1 [-]: FASTCALL1 62 R2 L0
-       2 [-]: GETIMPORT R1 2 [nil]
+       2 [-]: GETIMPORT R1 2 [0x7B998233]
        3 [-]: CALL R1 1 1  
 L 0:   4 [-]: JUMPIF R1 L1 
        5 [-]: NAMECALL R1 R0 K3 [0x41564714]
@@ -219,7 +219,7 @@ L 1:   6 [-]: RETURN R1 1
 
        0 [-]: GETTABLEKS R2 R0 K0 ["OnClear"]
        1 [-]: FASTCALL1 62 R2 L0
-       2 [-]: GETIMPORT R1 2 [nil]
+       2 [-]: GETIMPORT R1 2 [0x7B998233]
        3 [-]: CALL R1 1 1  
 L 0:   4 [-]: JUMPIF R1 L1 
        5 [-]: NAMECALL R1 R0 K3 [0xB0010528]
@@ -272,7 +272,7 @@ L 8:  34 [-]: GETTABLEKS R2 R0 K16 ["OnStateChange"]
       35 [-]: JUMPXEQKNIL R2 L9 NOT
       36 [-]: GETTABLEKS R2 R0 K17 ["OnStateChanged"]
       37 [-]: JUMPXEQKNIL R2 L9
-      38 [-]: GETIMPORT R2 19 [nil]
+      38 [-]: GETIMPORT R2 19 [0x3D106989]
       39 [-]: LOADK R3 K20 ["WARNING: activityBlock common typo: OnStateChanged used instead of OnStateChange"]
       40 [-]: CALL R2 1 0  
 L 9:  41 [-]: JUMPIFNOT R1 L10
@@ -288,7 +288,7 @@ L10:  44 [-]: RETURN R0 1
 ; Is_vararg:       1
 ; Max Stack Size:  3
 
-            1 [-]: DUPTABLE R0 9
+       1 [-]: DUPTABLE R0 9
        2 [-]: NEWTABLE R1 0 0
        3 [-]: GETVARARGS R2 -1
        4 [-]: SETLIST R1 R2 -1 [1]
@@ -321,7 +321,7 @@ L10:  44 [-]: RETURN R0 1
 ; Is_vararg:       1
 ; Max Stack Size:  3
 
-            1 [-]: DUPTABLE R0 18
+       1 [-]: DUPTABLE R0 18
        2 [-]: NEWTABLE R1 0 0
        3 [-]: GETVARARGS R2 -1
        4 [-]: SETLIST R1 R2 -1 [1]

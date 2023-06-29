@@ -5,10 +5,10 @@
 ; Is_vararg:       1
 ; Max Stack Size:  12
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x2D0FAD09]
        2 [-]: LOADK R1 K2 ["Lotus.Interface.UIUtilities"]
        3 [-]: CALL R0 1 1  
-       4 [-]: GETIMPORT R1 1 [nil]
+       4 [-]: GETIMPORT R1 1 [0x2D0FAD09]
        5 [-]: LOADK R2 K3 ["EE.Interface.Utilities"]
        6 [-]: CALL R1 1 1  
        7 [-]: LOADB R2 0   
@@ -58,8 +58,8 @@
 ; Max Stack Size:  12
 
        0 [-]: JUMPXEQKN R0 K0 L2 NOT [0]
-       1 [-]: GETIMPORT R1 2 [nil]
-       2 [-]: GETIMPORT R2 4 [nil]
+       1 [-]: GETIMPORT R1 2 [0x25312C9B]
+       2 [-]: GETIMPORT R2 4 [0xAE91E43B]
        3 [-]: LOADK R3 K5 ["Combo"]
        4 [-]: LOADN R4 0   
        5 [-]: NEWTABLE R5 0 1
@@ -81,8 +81,8 @@ L 1:  17 [-]: LOADN R9 0
       21 [-]: SETUPVAL R0 1
       22 [-]: RETURN R0 0  
 L 2:  23 [-]: JUMPXEQKN R0 K8 L3 NOT [1]
-      24 [-]: GETIMPORT R1 2 [nil]
-      25 [-]: GETIMPORT R2 4 [nil]
+      24 [-]: GETIMPORT R1 2 [0x25312C9B]
+      25 [-]: GETIMPORT R2 4 [0xAE91E43B]
       26 [-]: LOADK R3 K5 ["Combo"]
       27 [-]: LOADN R4 0   
       28 [-]: NEWTABLE R5 0 1
@@ -93,7 +93,7 @@ L 2:  23 [-]: JUMPXEQKN R0 K8 L3 NOT [1]
       33 [-]: SETLIST R6 R7 1 [1]
       34 [-]: LOADK R7 K9 [0.14999999999999999]
       35 [-]: CALL R1 6 0  
-L 3:  36 [-]: GETIMPORT R1 11 [nil]
+L 3:  36 [-]: GETIMPORT R1 11 [0x42DCC9F5]
       37 [-]: MULK R2 R0 K12 [2]
       38 [-]: LOADN R3 0   
       39 [-]: LOADN R4 4   
@@ -101,7 +101,7 @@ L 3:  36 [-]: GETIMPORT R1 11 [nil]
       41 [-]: LOADK R2 K13 [""]
       42 [-]: LOADN R3 0   
       43 [-]: JUMPIFNOTLT R3 R1 L4
-      44 [-]: GETIMPORT R3 4 [nil]
+      44 [-]: GETIMPORT R3 4 [0xAE91E43B]
       45 [-]: LOADK R5 K14 ["/Lotus/Language/Game/UNIT_MULTIPLIER"]
       46 [-]: LOADB R6 0   
       47 [-]: DUPTABLE R7 16
@@ -109,8 +109,8 @@ L 3:  36 [-]: GETIMPORT R1 11 [nil]
       49 [-]: NAMECALL R3 R3 K17 [0x42B04007]
       50 [-]: CALL R3 4 1  
       51 [-]: MOVE R2 R3   
-      52 [-]: GETIMPORT R3 2 [nil]
-      53 [-]: GETIMPORT R4 4 [nil]
+      52 [-]: GETIMPORT R3 2 [0x25312C9B]
+      53 [-]: GETIMPORT R4 4 [0xAE91E43B]
       54 [-]: LOADK R5 K18 ["Combo.Step"]
       55 [-]: LOADN R6 2   
       56 [-]: NEWTABLE R7 0 2
@@ -125,7 +125,7 @@ L 3:  36 [-]: GETIMPORT R1 11 [nil]
       65 [-]: LOADN R10 0  
       66 [-]: DUPCLOSURE R11 K20 []
       67 [-]: CALL R3 8 0  
-L 4:  68 [-]: GETIMPORT R3 4 [nil]
+L 4:  68 [-]: GETIMPORT R3 4 [0xAE91E43B]
       69 [-]: LOADK R5 K21 ["Combo.Step.Multiplier"]
       70 [-]: LOADN R6 29  
       71 [-]: MOVE R7 R2   
@@ -143,7 +143,7 @@ L 4:  68 [-]: GETIMPORT R3 4 [nil]
 ; Max Stack Size:  7
 
        0 [-]: MULK R1 R0 K0 [100]
-       1 [-]: GETIMPORT R2 2 [nil]
+       1 [-]: GETIMPORT R2 2 [0xAE91E43B]
        2 [-]: LOADK R4 K3 ["Combo.Focus"]
        3 [-]: LOADN R5 5   
        4 [-]: MOVE R6 R1   
@@ -159,26 +159,26 @@ L 4:  68 [-]: GETIMPORT R3 4 [nil]
 ; Is_vararg:       0
 ; Max Stack Size:  9
 
-       0 [-]: GETIMPORT R1 1 [nil]
+       0 [-]: GETIMPORT R1 1 [0xAE91E43B]
        1 [-]: FASTCALL1 62 R1 L0
-       2 [-]: GETIMPORT R0 3 [nil]
+       2 [-]: GETIMPORT R0 3 [0x7B998233]
        3 [-]: CALL R0 1 1  
 L 0:   4 [-]: JUMPIF R0 L1 
        5 [-]: GETUPVAL R0 0
        6 [-]: JUMPIF R0 L2 
 L 1:   7 [-]: RETURN R0 0  
-L 2:   8 [-]: GETIMPORT R0 5 [nil]
+L 2:   8 [-]: GETIMPORT R0 5 [0x67652851]
        9 [-]: CALL R0 0 1  
-      10 [-]: GETIMPORT R1 1 [nil]
+      10 [-]: GETIMPORT R1 1 [0xAE91E43B]
       11 [-]: MOVE R3 R0   
       12 [-]: NAMECALL R1 R1 K6 [0x8A8C8D5A]
       13 [-]: CALL R1 2 0  
       14 [-]: GETUPVAL R2 1
       15 [-]: FASTCALL1 62 R2 L3
-      16 [-]: GETIMPORT R1 3 [nil]
+      16 [-]: GETIMPORT R1 3 [0x7B998233]
       17 [-]: CALL R1 1 1  
 L 3:  18 [-]: JUMPIFNOT R1 L4
-      19 [-]: GETIMPORT R1 8 [nil]
+      19 [-]: GETIMPORT R1 8 [0xBE190284]
       20 [-]: NAMECALL R1 R1 K9 [0x33307F92]
       21 [-]: CALL R1 1 1  
       22 [-]: SETUPVAL R1 1
@@ -228,7 +228,7 @@ L 7:  47 [-]: LOADB R1 0
 ; Is_vararg:       1
 ; Max Stack Size:  6
 
-            1 [-]: GETUPVAL R1 0
+       1 [-]: GETUPVAL R1 0
        2 [-]: JUMPIFNOT R1 L0
        3 [-]: MOVE R1 R0   
        4 [-]: GETVARARGS R2 -1
@@ -240,7 +240,7 @@ L 0:   7 [-]: GETUPVAL R2 1
       10 [-]: GETVARARGS R5 -1
       11 [-]: SETLIST R3 R4 -1 [1]
       12 [-]: FASTCALL2 52 R2 R3 L1
-      13 [-]: GETIMPORT R1 2 [nil]
+      13 [-]: GETIMPORT R1 2 [0x23D5322F]
       14 [-]: CALL R1 2 0  
 L 1:  15 [-]: RETURN R0 0  
 
@@ -258,8 +258,8 @@ L 1:  15 [-]: RETURN R0 0
        3 [-]: GETUPVAL R2 0
        4 [-]: LOADN R3 1   
        5 [-]: CALL R2 1 0  
-       6 [-]: GETIMPORT R2 2 [nil]
-       7 [-]: GETIMPORT R3 4 [nil]
+       6 [-]: GETIMPORT R2 2 [0x25312C9B]
+       7 [-]: GETIMPORT R3 4 [0xAE91E43B]
        8 [-]: LOADK R4 K5 ["_root"]
        9 [-]: LOADN R5 0   
       10 [-]: NEWTABLE R6 0 1
@@ -287,21 +287,21 @@ L 1:  15 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  5
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 ["_T"]
        1 [-]: LOADNIL R1   
        2 [-]: SETTABLEKS R1 R0 K2 ["VALKYR_SetComboStep"]
-       3 [-]: GETIMPORT R0 1 [nil]
+       3 [-]: GETIMPORT R0 1 ["_T"]
        4 [-]: LOADNIL R1   
        5 [-]: SETTABLEKS R1 R0 K3 ["VALKYR_SetComboTimerProp"]
-       6 [-]: GETIMPORT R1 5 [nil]
+       6 [-]: GETIMPORT R1 5 ["HUD_GetAnchorMgr"]
        7 [-]: FASTCALL1 62 R1 L0
-       8 [-]: GETIMPORT R0 7 [nil]
+       8 [-]: GETIMPORT R0 7 [0x7B998233]
        9 [-]: CALL R0 1 1  
 L 0:  10 [-]: JUMPIF R0 L1 
-      11 [-]: GETIMPORT R0 5 [nil]
+      11 [-]: GETIMPORT R0 5 ["HUD_GetAnchorMgr"]
       12 [-]: CALL R0 0 1  
       13 [-]: JUMPXEQKNIL R0 L1
-      14 [-]: GETIMPORT R3 9 [nil]
+      14 [-]: GETIMPORT R3 9 [0xAE91E43B]
       15 [-]: LOADK R4 K10 ["Combo"]
       16 [-]: NAMECALL R1 R0 K11 [0x7F19C438]
       17 [-]: CALL R1 3 0  
@@ -315,19 +315,19 @@ L 1:  18 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  8
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 ["_T"]
        1 [-]: DUPCLOSURE R1 K2 []
        2 [-]: MOVE R2 R0   
        3 [-]: MOVE R2 R1   
        4 [-]: SETTABLEKS R1 R0 K3 ["VALKYR_SetComboStep"]
-       5 [-]: GETIMPORT R0 1 [nil]
+       5 [-]: GETIMPORT R0 1 ["_T"]
        6 [-]: DUPCLOSURE R1 K4 []
        7 [-]: MOVE R2 R0   
        8 [-]: MOVE R2 R2   
        9 [-]: SETTABLEKS R1 R0 K5 ["VALKYR_SetComboTimerProp"]
-      10 [-]: GETIMPORT R0 7 [nil]
+      10 [-]: GETIMPORT R0 7 ["HUD_GetAnchorMgr"]
       11 [-]: CALL R0 0 1  
-      12 [-]: GETIMPORT R3 9 [nil]
+      12 [-]: GETIMPORT R3 9 [0xAE91E43B]
       13 [-]: LOADK R4 K10 ["Combo"]
       14 [-]: NEWTABLE R5 0 2
       15 [-]: GETTABLEKS R6 R0 K11 ["ANCHOR_V_CENTRE"]
@@ -335,10 +335,10 @@ L 1:  18 [-]: RETURN R0 0
       17 [-]: SETLIST R5 R6 2 [1]
       18 [-]: NAMECALL R1 R0 K13 [0x20FF29F7]
       19 [-]: CALL R1 4 0  
-      20 [-]: GETIMPORT R3 9 [nil]
+      20 [-]: GETIMPORT R3 9 [0xAE91E43B]
       21 [-]: NAMECALL R3 R3 K14 [0x6B837788]
       22 [-]: CALL R3 1 1  
-      23 [-]: GETIMPORT R4 9 [nil]
+      23 [-]: GETIMPORT R4 9 [0xAE91E43B]
       24 [-]: NAMECALL R4 R4 K15 [0xAF9FDA9F]
       25 [-]: CALL R4 1 1  
       26 [-]: LOADB R5 1   
@@ -348,12 +348,12 @@ L 1:  18 [-]: RETURN R0 0
       30 [-]: GETUPVAL R1 1
       31 [-]: LOADN R2 0   
       32 [-]: CALL R1 1 0  
-      33 [-]: GETIMPORT R1 9 [nil]
+      33 [-]: GETIMPORT R1 9 [0xAE91E43B]
       34 [-]: LOADK R3 K18 ["Combo.AbilityIcon"]
-      35 [-]: GETIMPORT R4 20 [nil]
+      35 [-]: GETIMPORT R4 20 [0x606811BD]
       36 [-]: NAMECALL R1 R1 K21 [0x1CB415C1]
       37 [-]: CALL R1 3 0  
-      38 [-]: GETIMPORT R1 9 [nil]
+      38 [-]: GETIMPORT R1 9 [0xAE91E43B]
       39 [-]: LOADK R3 K22 ["Combo.Step.Flare"]
       40 [-]: LOADN R4 9   
       41 [-]: LOADN R5 0   
@@ -373,8 +373,8 @@ L 1:  18 [-]: RETURN R0 0
 
        0 [-]: GETUPVAL R2 0
        1 [-]: GETTABLEKS R1 R2 K0 [0xFA221145]
-       2 [-]: GETIMPORT R2 2 [nil]
-       3 [-]: GETIMPORT R3 4 [nil]
+       2 [-]: GETIMPORT R2 2 [0xAE91E43B]
+       3 [-]: GETIMPORT R3 4 [0x03F57322]
        4 [-]: MOVE R4 R0   
        5 [-]: CALL R3 1 -1 
        6 [-]: CALL R1 -1 0 

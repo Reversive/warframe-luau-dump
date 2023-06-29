@@ -5,10 +5,10 @@
 ; Is_vararg:       1
 ; Max Stack Size:  7
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x2D0FAD09]
        2 [-]: LOADK R1 K2 ["EE.Interface.Utilities"]
        3 [-]: CALL R0 1 1  
-       4 [-]: GETIMPORT R1 4 [nil]
+       4 [-]: GETIMPORT R1 4 [0x0469F296]
        5 [-]: LOADK R2 K5 ["PvpEscalationStage"]
        6 [-]: CALL R1 1 1  
        7 [-]: NEWTABLE R2 0 8
@@ -49,7 +49,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  6
 
-       0 [-]: GETIMPORT R1 1 [nil]
+       0 [-]: GETIMPORT R1 1 [0xBE190284]
        1 [-]: GETUPVAL R3 0
        2 [-]: LOADN R4 0   
        3 [-]: NAMECALL R1 R1 K2 [0x0EB34C69]
@@ -72,7 +72,7 @@ L 1:  10 [-]: LOADB R4 1
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 [0x89326C93]
        1 [-]: NAMECALL R0 R0 K2 [0x7D108DDB]
        2 [-]: CALL R0 1 1  
        3 [-]: LENGTH R1 R0 
@@ -86,57 +86,57 @@ L 1:  10 [-]: LOADB R4 1
 ; Is_vararg:       0
 ; Max Stack Size:  20
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 [0x3D106989]
        1 [-]: LOADK R1 K2 ["Energy Spawner Begin!"]
        2 [-]: CALL R0 1 0  
-       3 [-]: GETIMPORT R0 4 [nil]
-       4 [-]: GETIMPORT R2 6 [nil]
+       3 [-]: GETIMPORT R0 4 [0x89326C93]
+       4 [-]: GETIMPORT R2 6 [0x0469F296]
        5 [-]: LOADK R3 K7 ["EnergySpawn"]
        6 [-]: CALL R2 1 -1 
        7 [-]: NAMECALL R0 R0 K8 [0xC7FCADA9]
        8 [-]: CALL R0 -1 1 
        9 [-]: NEWTABLE R1 0 0
-      10 [-]: GETIMPORT R2 10 [nil]
+      10 [-]: GETIMPORT R2 10 [0xCBD666E1]
       11 [-]: LOADN R3 1   
       12 [-]: CALL R2 1 0  
-      13 [-]: GETIMPORT R2 12 [nil]
+      13 [-]: GETIMPORT R2 12 [0xBE190284]
       14 [-]: NAMECALL R2 R2 K13 [0xA52237BC]
       15 [-]: CALL R2 1 1  
       16 [-]: JUMPIFNOT R2 L0
-      17 [-]: GETIMPORT R2 12 [nil]
+      17 [-]: GETIMPORT R2 12 [0xBE190284]
       18 [-]: NAMECALL R2 R2 K14 [0x87BDE14D]
       19 [-]: CALL R2 1 1  
       20 [-]: GETTABLEKS R3 R2 K15 ["mDisableEnergyPickups"]
       21 [-]: JUMPIFNOT R3 L0
-      22 [-]: GETIMPORT R3 1 [nil]
+      22 [-]: GETIMPORT R3 1 [0x3D106989]
       23 [-]: LOADK R4 K16 ["No energy spawners here"]
       24 [-]: CALL R3 1 0  
       25 [-]: RETURN R0 0  
-L 0:  26 [-]: GETIMPORT R2 18 [nil]
+L 0:  26 [-]: GETIMPORT R2 18 [0x14459A1C]
       27 [-]: JUMPIFNOT R2 L5
-      28 [-]: GETIMPORT R2 4 [nil]
-      29 [-]: GETIMPORT R4 20 [nil]
+      28 [-]: GETIMPORT R2 4 [0x89326C93]
+      29 [-]: GETIMPORT R4 20 [0x39E34214]
       30 [-]: NAMECALL R2 R2 K21 [0xFB669000]
       31 [-]: CALL R2 2 1  
-      32 [-]: GETIMPORT R3 4 [nil]
-      33 [-]: GETIMPORT R5 23 [nil]
+      32 [-]: GETIMPORT R3 4 [0x89326C93]
+      33 [-]: GETIMPORT R5 23 [0xA50F466C]
       34 [-]: NAMECALL R3 R3 K21 [0xFB669000]
       35 [-]: CALL R3 2 1  
-      36 [-]: GETIMPORT R4 25 [nil]
+      36 [-]: GETIMPORT R4 25 [0xC8802016]
       37 [-]: MOVE R5 R2   
       38 [-]: CALL R4 1 3  
       39 [-]: FORGPREP_INEXT R4 L2
 L 1:  40 [-]: NAMECALL R9 R8 K26 [0xA2880940]
       41 [-]: CALL R9 1 0  
 L 2:  42 [-]: FORGLOOP R4 L1 2 [inext]
-      43 [-]: GETIMPORT R4 25 [nil]
+      43 [-]: GETIMPORT R4 25 [0xC8802016]
       44 [-]: MOVE R5 R3   
       45 [-]: CALL R4 1 3  
       46 [-]: FORGPREP_INEXT R4 L4
 L 3:  47 [-]: NAMECALL R9 R8 K26 [0xA2880940]
       48 [-]: CALL R9 1 0  
 L 4:  49 [-]: FORGLOOP R4 L3 2 [inext]
-L 5:  50 [-]: GETIMPORT R2 25 [nil]
+L 5:  50 [-]: GETIMPORT R2 25 [0xC8802016]
       51 [-]: MOVE R3 R0   
       52 [-]: CALL R2 1 3  
       53 [-]: FORGPREP_INEXT R2 L7
@@ -145,7 +145,7 @@ L 6:  54 [-]: DUPTABLE R7 31
       56 [-]: CALL R8 1 1  
       57 [-]: SETTABLEKS R8 R7 K27 ["loc"]
       58 [-]: LOADN R9 60  
-      59 [-]: GETIMPORT R10 34 [nil]
+      59 [-]: GETIMPORT R10 34 [0x55730E1A]
       60 [-]: LOADN R11 1  
       61 [-]: LOADN R12 20 
       62 [-]: CALL R10 2 1 
@@ -162,7 +162,7 @@ L 7:  70 [-]: FORGLOOP R2 L6 2 [inext]
       73 [-]: SETTABLEN R2 R3 7
       74 [-]: GETUPVAL R3 0
       75 [-]: SETTABLEN R2 R3 8
-      76 [-]: GETIMPORT R4 12 [nil]
+      76 [-]: GETIMPORT R4 12 [0xBE190284]
       77 [-]: GETUPVAL R6 1
       78 [-]: LOADN R7 0   
       79 [-]: NAMECALL R4 R4 K35 [0x0EB34C69]
@@ -177,7 +177,7 @@ L 9:  86 [-]: LOADB R7 1
       88 [-]: CALL R5 3 1  
       89 [-]: MOVE R3 R5   
       90 [-]: LOADN R4 8   
-L10:  91 [-]: GETIMPORT R6 4 [nil]
+L10:  91 [-]: GETIMPORT R6 4 [0x89326C93]
       92 [-]: NAMECALL R6 R6 K38 [0x7D108DDB]
       93 [-]: CALL R6 1 1  
       94 [-]: LENGTH R5 R6 
@@ -209,10 +209,10 @@ L14: 118 [-]: LENGTH R11 R8
      120 [-]: MOVE R12 R11 
      121 [-]: LOADN R13 1  
      122 [-]: FORNPREP R12 L16
-L15: 123 [-]: GETIMPORT R15 41 [nil]
+L15: 123 [-]: GETIMPORT R15 41 [0x3630E649]
      124 [-]: MOVE R16 R11 
      125 [-]: CALL R15 1 1 
-     126 [-]: GETIMPORT R16 41 [nil]
+     126 [-]: GETIMPORT R16 41 [0x3630E649]
      127 [-]: MOVE R17 R11 
      128 [-]: CALL R16 1 1 
      129 [-]: GETTABLE R17 R8 R16
@@ -222,11 +222,11 @@ L15: 123 [-]: GETIMPORT R15 41 [nil]
      133 [-]: FORNLOOP R12 L15
 L16: 134 [-]: SUB R14 R6 R7
      135 [-]: FASTCALL1 2 R14 L17
-     136 [-]: GETIMPORT R13 43 [nil]
+     136 [-]: GETIMPORT R13 43 [0xE4A5B3CA]
      137 [-]: CALL R13 1 1 
 L17: 138 [-]: FASTCALL2 19 R13 R11 L18
      139 [-]: MOVE R14 R11 
-     140 [-]: GETIMPORT R12 45 [nil]
+     140 [-]: GETIMPORT R12 45 [0xAC1B386A]
      141 [-]: CALL R12 2 1 
 L18: 142 [-]: LOADN R15 1  
      143 [-]: MOVE R13 R12 
@@ -237,7 +237,7 @@ L19: 146 [-]: GETTABLE R17 R8 R15
      148 [-]: SETTABLEKS R10 R16 K30 ["enabled"]
      149 [-]: FORNLOOP R13 L19
 L20: 150 [-]: MOVE R4 R5   
-L21: 151 [-]: GETIMPORT R7 12 [nil]
+L21: 151 [-]: GETIMPORT R7 12 [0xBE190284]
      152 [-]: GETUPVAL R9 1
      153 [-]: LOADN R10 0  
      154 [-]: NAMECALL R7 R7 K35 [0x0EB34C69]
@@ -252,29 +252,29 @@ L23: 161 [-]: LOADB R10 1
      163 [-]: CALL R8 3 1  
      164 [-]: MOVE R6 R8   
      165 [-]: JUMPIFEQ R6 R3 L30
-     166 [-]: GETIMPORT R7 4 [nil]
-     167 [-]: GETIMPORT R9 20 [nil]
+     166 [-]: GETIMPORT R7 4 [0x89326C93]
+     167 [-]: GETIMPORT R9 20 [0x39E34214]
      168 [-]: NAMECALL R7 R7 K21 [0xFB669000]
      169 [-]: CALL R7 2 1  
-     170 [-]: GETIMPORT R8 4 [nil]
-     171 [-]: GETIMPORT R10 23 [nil]
+     170 [-]: GETIMPORT R8 4 [0x89326C93]
+     171 [-]: GETIMPORT R10 23 [0xA50F466C]
      172 [-]: NAMECALL R8 R8 K21 [0xFB669000]
      173 [-]: CALL R8 2 1  
-     174 [-]: GETIMPORT R9 25 [nil]
+     174 [-]: GETIMPORT R9 25 [0xC8802016]
      175 [-]: MOVE R10 R7  
      176 [-]: CALL R9 1 3  
      177 [-]: FORGPREP_INEXT R9 L25
 L24: 178 [-]: NAMECALL R14 R13 K26 [0xA2880940]
      179 [-]: CALL R14 1 0 
 L25: 180 [-]: FORGLOOP R9 L24 2 [inext]
-     181 [-]: GETIMPORT R9 25 [nil]
+     181 [-]: GETIMPORT R9 25 [0xC8802016]
      182 [-]: MOVE R10 R8  
      183 [-]: CALL R9 1 3  
      184 [-]: FORGPREP_INEXT R9 L27
 L26: 185 [-]: NAMECALL R14 R13 K26 [0xA2880940]
      186 [-]: CALL R14 1 0 
 L27: 187 [-]: FORGLOOP R9 L26 2 [inext]
-     188 [-]: GETIMPORT R9 25 [nil]
+     188 [-]: GETIMPORT R9 25 [0xC8802016]
      189 [-]: MOVE R10 R1  
      190 [-]: CALL R9 1 3  
      191 [-]: FORGPREP_INEXT R9 L29
@@ -282,8 +282,8 @@ L28: 192 [-]: LOADN R14 0
      193 [-]: SETTABLEKS R14 R13 K28 ["respawnTime"]
 L29: 194 [-]: FORGLOOP R9 L28 2 [inext]
      195 [-]: MOVE R3 R6   
-L30: 196 [-]: GETIMPORT R7 12 [nil]
-     197 [-]: GETIMPORT R10 6 [nil]
+L30: 196 [-]: GETIMPORT R7 12 [0xBE190284]
+     197 [-]: GETIMPORT R10 6 [0x0469F296]
      198 [-]: LOADK R11 K46 ["PvpSuperEnergyMode"]
      199 [-]: CALL R10 1 1 
      200 [-]: LOADN R11 0  
@@ -294,8 +294,8 @@ L30: 196 [-]: GETIMPORT R7 12 [nil]
      205 [-]: GETUPVAL R11 2
      206 [-]: GETTABLEKS R10 R11 K36 [0x06D055F9]
      207 [-]: MOVE R11 R6  
-     208 [-]: GETIMPORT R12 49 [nil]
-     209 [-]: GETIMPORT R13 23 [nil]
+     208 [-]: GETIMPORT R12 49 [0x53EC68E0]
+     209 [-]: GETIMPORT R13 23 [0xA50F466C]
      210 [-]: CALL R10 3 1 
      211 [-]: MOVE R9 R10  
      212 [-]: JUMP L32
@@ -303,13 +303,13 @@ L30: 196 [-]: GETIMPORT R7 12 [nil]
 L31: 213 [-]: GETUPVAL R11 2
      214 [-]: GETTABLEKS R10 R11 K36 [0x06D055F9]
      215 [-]: MOVE R11 R6  
-     216 [-]: GETIMPORT R12 23 [nil]
-     217 [-]: GETIMPORT R13 20 [nil]
+     216 [-]: GETIMPORT R12 23 [0xA50F466C]
+     217 [-]: GETIMPORT R13 20 [0x39E34214]
      218 [-]: CALL R10 3 1 
      219 [-]: MOVE R9 R10  
 L32: 220 [-]: LOADN R10 0  
      221 [-]: JUMPIFNOTLT R10 R5 L37
-     222 [-]: GETIMPORT R10 25 [nil]
+     222 [-]: GETIMPORT R10 25 [0xC8802016]
      223 [-]: MOVE R11 R1  
      224 [-]: CALL R10 1 3 
      225 [-]: FORGPREP_INEXT R10 L36
@@ -317,16 +317,16 @@ L33: 226 [-]: GETTABLEKS R15 R14 K30 ["enabled"]
      227 [-]: JUMPIFNOT R15 L36
      228 [-]: GETTABLEKS R16 R14 K29 ["pickup"]
      229 [-]: FASTCALL1 62 R16 L34
-     230 [-]: GETIMPORT R15 51 [nil]
+     230 [-]: GETIMPORT R15 51 [0x7B998233]
      231 [-]: CALL R15 1 1 
 L34: 232 [-]: JUMPIFNOT R15 L36
      233 [-]: GETTABLEKS R15 R14 K28 ["respawnTime"]
      234 [-]: LOADN R16 0  
      235 [-]: JUMPIFNOTLE R15 R16 L35
-     236 [-]: GETIMPORT R15 4 [nil]
+     236 [-]: GETIMPORT R15 4 [0x89326C93]
      237 [-]: MOVE R17 R9  
      238 [-]: GETTABLEKS R18 R14 K27 ["loc"]
-     239 [-]: GETIMPORT R19 53 [nil]
+     239 [-]: GETIMPORT R19 53 ["ZERO_ROTATION"]
      240 [-]: NAMECALL R15 R15 K54 [0x05909209]
      241 [-]: CALL R15 4 1 
      242 [-]: SETTABLEKS R15 R14 K29 ["pickup"]
@@ -335,7 +335,7 @@ L34: 232 [-]: JUMPIFNOT R15 L36
      245 [-]: JUMP L36
     
 L35: 246 [-]: GETTABLEKS R16 R14 K28 ["respawnTime"]
-     247 [-]: GETIMPORT R17 56 [nil]
+     247 [-]: GETIMPORT R17 56 [0x67652851]
      248 [-]: CALL R17 0 1 
      249 [-]: SUB R15 R16 R17
      250 [-]: SETTABLEKS R15 R14 K28 ["respawnTime"]
@@ -346,11 +346,11 @@ L37: 252 [-]: NAMECALL R10 R7 K57 [0x529B110D]
      255 [-]: JUMPIFEQ R10 R11 L38
      256 [-]: LOADN R11 6  
      257 [-]: JUMPIFEQ R10 R11 L38
-     258 [-]: GETIMPORT R11 10 [nil]
+     258 [-]: GETIMPORT R11 10 [0xCBD666E1]
      259 [-]: LOADN R12 0  
      260 [-]: CALL R11 1 0 
      261 [-]: JUMPBACK L10 
-L38: 262 [-]: GETIMPORT R5 1 [nil]
+L38: 262 [-]: GETIMPORT R5 1 [0x3D106989]
      263 [-]: LOADK R6 K58 ["Energy Spawner End!"]
      264 [-]: CALL R5 1 0  
      265 [-]: RETURN R0 0  
@@ -363,16 +363,16 @@ L38: 262 [-]: GETIMPORT R5 1 [nil]
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 [0x89326C93]
        1 [-]: NAMECALL R0 R0 K2 [0x18D05D30]
        2 [-]: CALL R0 1 1  
        3 [-]: JUMPIFNOT R0 L3
-L 0:   4 [-]: GETIMPORT R1 4 [nil]
+L 0:   4 [-]: GETIMPORT R1 4 [0xBE190284]
        5 [-]: FASTCALL1 62 R1 L1
-       6 [-]: GETIMPORT R0 6 [nil]
+       6 [-]: GETIMPORT R0 6 [0x7B998233]
        7 [-]: CALL R0 1 1  
 L 1:   8 [-]: JUMPIFNOT R0 L2
-       9 [-]: GETIMPORT R0 8 [nil]
+       9 [-]: GETIMPORT R0 8 [0xCBD666E1]
       10 [-]: LOADK R1 K9 [0.10000000000000001]
       11 [-]: CALL R0 1 0  
       12 [-]: JUMPBACK L0  

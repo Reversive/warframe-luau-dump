@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  1
 
-            1 [-]: DUPCLOSURE R0 K0 []
+       1 [-]: DUPCLOSURE R0 K0 []
        2 [-]: SETGLOBAL R0 K1 ["DisablePreDeathOnProjectileHit"]
        3 [-]: RETURN R0 0  
 
@@ -17,7 +17,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  6
 
-       0 [-]: GETIMPORT R5 1 [nil]
+       0 [-]: GETIMPORT R5 1 ["gBaseAvatarType"]
        1 [-]: NAMECALL R3 R1 K2 [0xF2DEAF69]
        2 [-]: CALL R3 2 1  
        3 [-]: JUMPIF R3 L0 

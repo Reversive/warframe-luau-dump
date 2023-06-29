@@ -5,25 +5,25 @@
 ; Is_vararg:       1
 ; Max Stack Size:  15
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x7ED0A956]
        2 [-]: LOADK R1 K2 ["/Lotus/Types/Keys/DragonQuest/DragonQuestKeyChain"]
        3 [-]: CALL R0 1 1  
-       4 [-]: GETIMPORT R1 1 [nil]
+       4 [-]: GETIMPORT R1 1 [0x7ED0A956]
        5 [-]: LOADK R2 K3 ["/Lotus/Types/Recipes/WarframeRecipes/ChromaBeaconAComponent"]
        6 [-]: CALL R1 1 1  
-       7 [-]: GETIMPORT R2 1 [nil]
+       7 [-]: GETIMPORT R2 1 [0x7ED0A956]
        8 [-]: LOADK R3 K4 ["/Lotus/Types/Recipes/WarframeRecipes/ChromaBeaconABlueprint"]
        9 [-]: CALL R2 1 1  
-      10 [-]: GETIMPORT R3 1 [nil]
+      10 [-]: GETIMPORT R3 1 [0x7ED0A956]
       11 [-]: LOADK R4 K5 ["/Lotus/Types/Recipes/WarframeRecipes/ChromaBeaconBComponent"]
       12 [-]: CALL R3 1 1  
-      13 [-]: GETIMPORT R4 1 [nil]
+      13 [-]: GETIMPORT R4 1 [0x7ED0A956]
       14 [-]: LOADK R5 K6 ["/Lotus/Types/Recipes/WarframeRecipes/ChromaBeaconBBlueprint"]
       15 [-]: CALL R4 1 1  
-      16 [-]: GETIMPORT R5 1 [nil]
+      16 [-]: GETIMPORT R5 1 [0x7ED0A956]
       17 [-]: LOADK R6 K7 ["/Lotus/Types/Recipes/WarframeRecipes/ChromaBeaconCComponent"]
       18 [-]: CALL R5 1 1  
-      19 [-]: GETIMPORT R6 1 [nil]
+      19 [-]: GETIMPORT R6 1 [0x7ED0A956]
       20 [-]: LOADK R7 K8 ["/Lotus/Types/Recipes/WarframeRecipes/ChromaBeaconCBlueprint"]
       21 [-]: CALL R6 1 1  
       22 [-]: LOADNIL R7   
@@ -31,7 +31,7 @@
       24 [-]: LOADB R9 0   
       25 [-]: LOADB R10 0  
       26 [-]: LOADB R11 0  
-      27 [-]: GETIMPORT R12 10 [nil]
+      27 [-]: GETIMPORT R12 10 [0x2D0FAD09]
       28 [-]: LOADK R13 K11 ["Lotus.Interface.LotusUtilities"]
       29 [-]: CALL R12 1 1 
       30 [-]: NEWCLOSURE R13 P0
@@ -85,7 +85,7 @@
 ; Max Stack Size:  4
 
        0 [-]: JUMPIF R0 L0 
-       1 [-]: GETIMPORT R2 1 [nil]
+       1 [-]: GETIMPORT R2 1 [0x3D106989]
        2 [-]: LOADK R3 K2 ["Failed to give missing chroma beacon!"]
        3 [-]: CALL R2 1 0  
        4 [-]: LOADB R2 1   
@@ -102,7 +102,7 @@ L 0:   6 [-]: LOADB R2 1
 ; Is_vararg:       0
 ; Max Stack Size:  7
 
-       0 [-]: GETIMPORT R1 1 [nil]
+       0 [-]: GETIMPORT R1 1 [0xB009BBC6]
        1 [-]: GETUPVAL R2 0
        2 [-]: CALL R1 1 1  
        3 [-]: LOADB R2 0   
@@ -117,15 +117,15 @@ L 0:   6 [-]: LOADB R2 1
       12 [-]: CALL R2 4 0  
 L 0:  13 [-]: GETUPVAL R2 1
       14 [-]: JUMPIF R2 L1 
-      15 [-]: GETIMPORT R2 5 [nil]
+      15 [-]: GETIMPORT R2 5 [0xCBD666E1]
       16 [-]: LOADK R3 K6 [0.25]
       17 [-]: CALL R2 1 0  
       18 [-]: JUMPBACK L0  
 L 1:  19 [-]: GETUPVAL R2 2
       20 [-]: JUMPIFNOT R2 L2
-      21 [-]: GETIMPORT R2 8 [nil]
+      21 [-]: GETIMPORT R2 8 [0x3D106989]
       22 [-]: LOADK R4 K9 ["Failed getting items for The New Strange stage "]
-      23 [-]: GETIMPORT R5 11 [nil]
+      23 [-]: GETIMPORT R5 11 [0x64FB1586]
       24 [-]: MOVE R6 R0   
       25 [-]: CALL R5 1 1  
       26 [-]: CONCAT R3 R4 R5
@@ -142,7 +142,7 @@ L 2:  30 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  22
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 [0x76EA806B]
        1 [-]: LOADN R2 0   
        2 [-]: NAMECALL R0 R0 K2 [0x3F3AE64C]
        3 [-]: CALL R0 2 1  
@@ -151,13 +151,13 @@ L 2:  30 [-]: RETURN R0 0
        6 [-]: SETUPVAL R0 0
 L 0:   7 [-]: GETUPVAL R1 0
        8 [-]: FASTCALL1 62 R1 L1
-       9 [-]: GETIMPORT R0 5 [nil]
+       9 [-]: GETIMPORT R0 5 [0x7B998233]
       10 [-]: CALL R0 1 1  
 L 1:  11 [-]: JUMPIFNOT R0 L2
-      12 [-]: GETIMPORT R0 7 [nil]
+      12 [-]: GETIMPORT R0 7 [0xCBD666E1]
       13 [-]: LOADK R1 K8 [0.25]
       14 [-]: CALL R0 1 0  
-      15 [-]: GETIMPORT R0 1 [nil]
+      15 [-]: GETIMPORT R0 1 [0x76EA806B]
       16 [-]: LOADN R2 0   
       17 [-]: NAMECALL R0 R0 K2 [0x3F3AE64C]
       18 [-]: CALL R0 2 1  
@@ -196,7 +196,7 @@ L 4:  49 [-]: GETTABLE R18 R4 R16
       51 [-]: FASTCALL2 52 R12 R17 L5
       52 [-]: MOVE R19 R12 
       53 [-]: MOVE R20 R17 
-      54 [-]: GETIMPORT R18 16 [nil]
+      54 [-]: GETIMPORT R18 16 [0x23D5322F]
       55 [-]: CALL R18 2 0 
 L 5:  56 [-]: GETUPVAL R20 2
       57 [-]: NAMECALL R18 R17 K17 [0xF2DEAF69]
@@ -227,7 +227,7 @@ L10:  78 [-]: GETTABLE R18 R5 R16
       80 [-]: FASTCALL2 52 R13 R17 L11
       81 [-]: MOVE R19 R13 
       82 [-]: MOVE R20 R17 
-      83 [-]: GETIMPORT R18 16 [nil]
+      83 [-]: GETIMPORT R18 16 [0x23D5322F]
       84 [-]: CALL R18 2 0 
 L11:  85 [-]: GETUPVAL R20 5
       86 [-]: NAMECALL R18 R17 K17 [0xF2DEAF69]
@@ -249,7 +249,7 @@ L13:  97 [-]: GETUPVAL R20 7
      100 [-]: JUMPIFNOT R18 L14
      101 [-]: LOADB R8 1   
 L14: 102 [-]: FORNLOOP R14 L10
-L15: 103 [-]: GETIMPORT R14 19 [nil]
+L15: 103 [-]: GETIMPORT R14 19 [0x77784A32]
      104 [-]: JUMPXEQKN R14 K20 L16 NOT [1]
      105 [-]: JUMPIF R6 L21
      106 [-]: JUMPIF R9 L21
@@ -258,7 +258,7 @@ L15: 103 [-]: GETIMPORT R14 19 [nil]
      109 [-]: CALL R14 1 0 
      110 [-]: JUMP L21
     
-L16: 111 [-]: GETIMPORT R14 19 [nil]
+L16: 111 [-]: GETIMPORT R14 19 [0x77784A32]
      112 [-]: JUMPXEQKN R14 K21 L18 NOT [2]
      113 [-]: JUMPIF R7 L17
      114 [-]: JUMPIF R10 L17
@@ -272,7 +272,7 @@ L17: 118 [-]: JUMPIF R6 L21
      122 [-]: CALL R14 1 0 
      123 [-]: JUMP L21
     
-L18: 124 [-]: GETIMPORT R14 19 [nil]
+L18: 124 [-]: GETIMPORT R14 19 [0x77784A32]
      125 [-]: JUMPXEQKN R14 K22 L21 NOT [3]
      126 [-]: JUMPIF R8 L21
      127 [-]: JUMPIF R11 L19
@@ -295,12 +295,12 @@ L21: 141 [-]: GETUPVAL R15 1
      144 [-]: CALL R14 1 3 
      145 [-]: GETUPVAL R17 9
      146 [-]: JUMPIFNOT R17 L31
-     147 [-]: GETIMPORT R18 24 [nil]
+     147 [-]: GETIMPORT R18 24 [0x0032441C]
      148 [-]: GETTABLEKS R17 R18 K25 ["LastQuestTransmission"]
 L22: 149 [-]: JUMPXEQKNIL R17 L24
      150 [-]: GETTABLEKS R19 R17 K26 ["quest"]
      151 [-]: FASTCALL1 62 R19 L23
-     152 [-]: GETIMPORT R18 5 [nil]
+     152 [-]: GETIMPORT R18 5 [0x7B998233]
      153 [-]: CALL R18 1 1 
 L23: 154 [-]: JUMPIF R18 L24
      155 [-]: GETTABLEKS R18 R17 K26 ["quest"]
@@ -311,22 +311,22 @@ L23: 154 [-]: JUMPIF R18 L24
      160 [-]: GETTABLEKS R18 R17 K27 ["stage"]
      161 [-]: ADDK R19 R15 K20 [1]
      162 [-]: JUMPIFEQ R18 R19 L25
-L24: 163 [-]: GETIMPORT R18 7 [nil]
+L24: 163 [-]: GETIMPORT R18 7 [0xCBD666E1]
      164 [-]: LOADN R19 0  
      165 [-]: CALL R18 1 0 
-     166 [-]: GETIMPORT R18 24 [nil]
+     166 [-]: GETIMPORT R18 24 [0x0032441C]
      167 [-]: GETTABLEKS R17 R18 K25 ["LastQuestTransmission"]
      168 [-]: JUMPBACK L22 
-L25: 169 [-]: GETIMPORT R19 29 [nil]
+L25: 169 [-]: GETIMPORT R19 29 [0x89326C93]
      170 [-]: NAMECALL R19 R19 K30 [0x78298275]
      171 [-]: CALL R19 1 1 
      172 [-]: FASTCALL1 62 R19 L26
-     173 [-]: GETIMPORT R18 5 [nil]
+     173 [-]: GETIMPORT R18 5 [0x7B998233]
      174 [-]: CALL R18 1 1 
 L26: 175 [-]: JUMPIF R18 L27
-     176 [-]: GETIMPORT R18 33 [nil]
+     176 [-]: GETIMPORT R18 33 ["TransmissionConvoDone"]
      177 [-]: JUMPIF R18 L28
-L27: 178 [-]: GETIMPORT R18 7 [nil]
+L27: 178 [-]: GETIMPORT R18 7 [0xCBD666E1]
      179 [-]: LOADN R19 0  
      180 [-]: CALL R18 1 0 
      181 [-]: JUMPBACK L25 
@@ -337,7 +337,7 @@ L28: 182 [-]: GETUPVAL R18 0
      186 [-]: CALL R18 3 0 
 L29: 187 [-]: GETUPVAL R18 11
      188 [-]: JUMPIF R18 L30
-     189 [-]: GETIMPORT R18 7 [nil]
+     189 [-]: GETIMPORT R18 7 [0xCBD666E1]
      190 [-]: LOADN R19 0  
      191 [-]: CALL R18 1 0 
      192 [-]: JUMPBACK L29 

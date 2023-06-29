@@ -5,16 +5,16 @@
 ; Is_vararg:       1
 ; Max Stack Size:  5
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x7ED0A956]
        2 [-]: LOADK R1 K2 ["/Lotus/Fx/Corpus/Arachnoids/SpiderCoolantCarryVesselDeco"]
        3 [-]: CALL R0 1 1  
-       4 [-]: GETIMPORT R1 1 [nil]
+       4 [-]: GETIMPORT R1 1 [0x7ED0A956]
        5 [-]: LOADK R2 K3 ["/Lotus/Fx/Corpus/Arachnoids/SpiderHeatCarryVesselDeco"]
        6 [-]: CALL R1 1 1  
-       7 [-]: GETIMPORT R2 1 [nil]
+       7 [-]: GETIMPORT R2 1 [0x7ED0A956]
        8 [-]: LOADK R3 K4 ["/Lotus/Types/Gameplay/Venus/Objects/FissureHarvesterItem"]
        9 [-]: CALL R2 1 1  
-      10 [-]: GETIMPORT R3 6 [nil]
+      10 [-]: GETIMPORT R3 6 [0x0469F296]
       11 [-]: LOADK R4 K7 ["FillAmount"]
       12 [-]: CALL R3 1 1  
       13 [-]: DUPCLOSURE R4 K8 []
@@ -44,10 +44,10 @@
        2 [-]: CALL R1 2 1  
 L 0:   3 [-]: FASTCALL1 62 R1 L1
        4 [-]: MOVE R3 R1   
-       5 [-]: GETIMPORT R2 2 [nil]
+       5 [-]: GETIMPORT R2 2 [0x7B998233]
        6 [-]: CALL R2 1 1  
 L 1:   7 [-]: JUMPIFNOT R2 L2
-       8 [-]: GETIMPORT R2 4 [nil]
+       8 [-]: GETIMPORT R2 4 [0xCBD666E1]
        9 [-]: LOADN R3 0   
       10 [-]: CALL R2 1 0  
       11 [-]: GETUPVAL R4 0
@@ -59,33 +59,33 @@ L 2:  16 [-]: GETUPVAL R4 1
       17 [-]: LOADN R5 0   
       18 [-]: NAMECALL R2 R1 K5 [0x986D2AB8]
       19 [-]: CALL R2 3 0  
-      20 [-]: GETIMPORT R2 8 [nil]
+      20 [-]: GETIMPORT R2 8 ["gHeatFissureHarvesters"]
       21 [-]: JUMPXEQKNIL R2 L3 NOT
       22 [-]: RETURN R0 0  
 L 3:  23 [-]: LOADNIL R2   
       24 [-]: LOADNIL R3   
-      25 [-]: GETIMPORT R6 10 [nil]
+      25 [-]: GETIMPORT R6 10 ["gPickUpType"]
       26 [-]: NAMECALL R4 R0 K11 [0xF2DEAF69]
       27 [-]: CALL R4 2 1  
       28 [-]: JUMPIFNOT R4 L6
-      29 [-]: GETIMPORT R4 13 [nil]
+      29 [-]: GETIMPORT R4 13 [0x11A19C5E]
       30 [-]: MOVE R5 R0   
       31 [-]: LOADK R6 K14 ["OnPickedUp"]
       32 [-]: CALL R4 2 0  
-      33 [-]: GETIMPORT R4 8 [nil]
+      33 [-]: GETIMPORT R4 8 ["gHeatFissureHarvesters"]
       34 [-]: MOVE R6 R0   
       35 [-]: NAMECALL R4 R4 K15 [0x4E10BDC4]
       36 [-]: CALL R4 2 1  
       37 [-]: MOVE R2 R4   
 L 4:  38 [-]: FASTCALL1 62 R2 L5
       39 [-]: MOVE R5 R2   
-      40 [-]: GETIMPORT R4 2 [nil]
+      40 [-]: GETIMPORT R4 2 [0x7B998233]
       41 [-]: CALL R4 1 1  
 L 5:  42 [-]: JUMPIFNOT R4 L22
-      43 [-]: GETIMPORT R4 4 [nil]
+      43 [-]: GETIMPORT R4 4 [0xCBD666E1]
       44 [-]: LOADN R5 0   
       45 [-]: CALL R4 1 0  
-      46 [-]: GETIMPORT R4 8 [nil]
+      46 [-]: GETIMPORT R4 8 ["gHeatFissureHarvesters"]
       47 [-]: MOVE R6 R0   
       48 [-]: NAMECALL R4 R4 K15 [0x4E10BDC4]
       49 [-]: CALL R4 2 1  
@@ -93,34 +93,34 @@ L 5:  42 [-]: JUMPIFNOT R4 L22
       51 [-]: JUMPBACK L4  
       52 [-]: JUMP L22
     
-L 6:  53 [-]: GETIMPORT R6 17 [nil]
+L 6:  53 [-]: GETIMPORT R6 17 ["gAvatarType"]
       54 [-]: NAMECALL R4 R0 K11 [0xF2DEAF69]
       55 [-]: CALL R4 2 1  
       56 [-]: JUMPIFNOT R4 L9
-      57 [-]: GETIMPORT R4 19 [nil]
+      57 [-]: GETIMPORT R4 19 [0x3D106989]
       58 [-]: LOADK R5 K20 ["harvester avatar created"]
       59 [-]: CALL R4 1 0  
       60 [-]: LOADB R3 1   
-      61 [-]: GETIMPORT R6 22 [nil]
+      61 [-]: GETIMPORT R6 22 ["gLotusFissureHarvesterStateType"]
       62 [-]: NAMECALL R4 R0 K0 [0xC9F6A7D7]
       63 [-]: CALL R4 2 1  
       64 [-]: MOVE R2 R4   
 L 7:  65 [-]: FASTCALL1 62 R2 L8
       66 [-]: MOVE R5 R2   
-      67 [-]: GETIMPORT R4 2 [nil]
+      67 [-]: GETIMPORT R4 2 [0x7B998233]
       68 [-]: CALL R4 1 1  
 L 8:  69 [-]: JUMPIFNOT R4 L22
-      70 [-]: GETIMPORT R4 4 [nil]
+      70 [-]: GETIMPORT R4 4 [0xCBD666E1]
       71 [-]: LOADN R5 0   
       72 [-]: CALL R4 1 0  
-      73 [-]: GETIMPORT R6 22 [nil]
+      73 [-]: GETIMPORT R6 22 ["gLotusFissureHarvesterStateType"]
       74 [-]: NAMECALL R4 R0 K0 [0xC9F6A7D7]
       75 [-]: CALL R4 2 1  
       76 [-]: MOVE R2 R4   
       77 [-]: JUMPBACK L7  
       78 [-]: JUMP L22
     
-L 9:  79 [-]: GETIMPORT R6 24 [nil]
+L 9:  79 [-]: GETIMPORT R6 24 ["gProjectileType"]
       80 [-]: NAMECALL R4 R0 K11 [0xF2DEAF69]
       81 [-]: CALL R4 2 1  
       82 [-]: JUMPIFNOT R4 L17
@@ -128,10 +128,10 @@ L 9:  79 [-]: GETIMPORT R6 24 [nil]
       84 [-]: CALL R4 1 1  
 L10:  85 [-]: FASTCALL1 62 R4 L11
       86 [-]: MOVE R6 R4   
-      87 [-]: GETIMPORT R5 2 [nil]
+      87 [-]: GETIMPORT R5 2 [0x7B998233]
       88 [-]: CALL R5 1 1  
 L11:  89 [-]: JUMPIFNOT R5 L12
-      90 [-]: GETIMPORT R5 4 [nil]
+      90 [-]: GETIMPORT R5 4 [0xCBD666E1]
       91 [-]: LOADN R6 0   
       92 [-]: CALL R5 1 0  
       93 [-]: NAMECALL R5 R0 K25 [0xCD73323E]
@@ -142,23 +142,23 @@ L12:  97 [-]: LOADN R7 1
       98 [-]: LOADN R5 5   
       99 [-]: LOADN R6 1   
      100 [-]: FORNPREP R5 L15
-L13: 101 [-]: GETIMPORT R8 4 [nil]
+L13: 101 [-]: GETIMPORT R8 4 [0xCBD666E1]
      102 [-]: LOADN R9 0   
      103 [-]: CALL R8 1 0  
-     104 [-]: GETIMPORT R8 8 [nil]
+     104 [-]: GETIMPORT R8 8 ["gHeatFissureHarvesters"]
      105 [-]: MOVE R10 R4  
      106 [-]: NAMECALL R8 R8 K26 [0x4D8F4EC4]
      107 [-]: CALL R8 2 1  
      108 [-]: MOVE R2 R8   
      109 [-]: FASTCALL1 62 R2 L14
      110 [-]: MOVE R9 R2   
-     111 [-]: GETIMPORT R8 2 [nil]
+     111 [-]: GETIMPORT R8 2 [0x7B998233]
      112 [-]: CALL R8 1 1  
 L14: 113 [-]: JUMPIFNOT R8 L15
      114 [-]: FORNLOOP R5 L13
 L15: 115 [-]: FASTCALL1 62 R2 L16
      116 [-]: MOVE R6 R2   
-     117 [-]: GETIMPORT R5 2 [nil]
+     117 [-]: GETIMPORT R5 2 [0x7B998233]
      118 [-]: CALL R5 1 1  
 L16: 119 [-]: JUMPIF R5 L22
      120 [-]: LOADNIL R7   
@@ -173,7 +173,7 @@ L17: 127 [-]: NAMECALL R4 R0 K29 [0x2B54251B]
      128 [-]: CALL R4 1 1  
      129 [-]: FASTCALL1 62 R4 L18
      130 [-]: MOVE R6 R4   
-     131 [-]: GETIMPORT R5 2 [nil]
+     131 [-]: GETIMPORT R5 2 [0x7B998233]
      132 [-]: CALL R5 1 1  
 L18: 133 [-]: JUMPIF R5 L19
      134 [-]: NAMECALL R5 R4 K30 [0xDE321E6F]
@@ -182,20 +182,20 @@ L18: 133 [-]: JUMPIF R5 L19
      137 [-]: GETUPVAL R8 2
      138 [-]: NAMECALL R5 R5 K32 [0xFC2CD4F2]
      139 [-]: CALL R5 3 0  
-L19: 140 [-]: GETIMPORT R5 8 [nil]
+L19: 140 [-]: GETIMPORT R5 8 ["gHeatFissureHarvesters"]
      141 [-]: MOVE R7 R4   
      142 [-]: NAMECALL R5 R5 K26 [0x4D8F4EC4]
      143 [-]: CALL R5 2 1  
      144 [-]: MOVE R2 R5   
 L20: 145 [-]: FASTCALL1 62 R2 L21
      146 [-]: MOVE R6 R2   
-     147 [-]: GETIMPORT R5 2 [nil]
+     147 [-]: GETIMPORT R5 2 [0x7B998233]
      148 [-]: CALL R5 1 1  
 L21: 149 [-]: JUMPIFNOT R5 L22
-     150 [-]: GETIMPORT R5 4 [nil]
+     150 [-]: GETIMPORT R5 4 [0xCBD666E1]
      151 [-]: LOADN R6 0   
      152 [-]: CALL R5 1 0  
-     153 [-]: GETIMPORT R5 8 [nil]
+     153 [-]: GETIMPORT R5 8 ["gHeatFissureHarvesters"]
      154 [-]: MOVE R7 R4   
      155 [-]: NAMECALL R5 R5 K26 [0x4D8F4EC4]
      156 [-]: CALL R5 2 1  
@@ -206,10 +206,10 @@ L22: 159 [-]: GETUPVAL R6 3
      161 [-]: CALL R4 2 1  
 L23: 162 [-]: FASTCALL1 62 R4 L24
      163 [-]: MOVE R6 R4   
-     164 [-]: GETIMPORT R5 2 [nil]
+     164 [-]: GETIMPORT R5 2 [0x7B998233]
      165 [-]: CALL R5 1 1  
 L24: 166 [-]: JUMPIFNOT R5 L25
-     167 [-]: GETIMPORT R5 4 [nil]
+     167 [-]: GETIMPORT R5 4 [0xCBD666E1]
      168 [-]: LOADN R6 0   
      169 [-]: CALL R5 1 0  
      170 [-]: GETUPVAL R7 3
@@ -220,7 +220,7 @@ L24: 166 [-]: JUMPIFNOT R5 L25
 L25: 175 [-]: LOADNIL R5   
      176 [-]: FASTCALL1 62 R2 L26
      177 [-]: MOVE R7 R2   
-     178 [-]: GETIMPORT R6 2 [nil]
+     178 [-]: GETIMPORT R6 2 [0x7B998233]
      179 [-]: CALL R6 1 1  
 L26: 180 [-]: JUMPIFNOT R6 L27
      181 [-]: LOADN R5 0   
@@ -242,7 +242,7 @@ L28: 186 [-]: GETUPVAL R8 1
 L29: 196 [-]: JUMPIFNOT R3 L32
      197 [-]: FASTCALL1 62 R2 L30
      198 [-]: MOVE R8 R2   
-     199 [-]: GETIMPORT R7 2 [nil]
+     199 [-]: GETIMPORT R7 2 [0x7B998233]
      200 [-]: CALL R7 1 1  
 L30: 201 [-]: JUMPIF R7 L32
      202 [-]: NAMECALL R7 R2 K34 [0x958B6075]
@@ -259,7 +259,7 @@ L30: 201 [-]: JUMPIF R7 L32
      213 [-]: NAMECALL R7 R1 K5 [0x986D2AB8]
      214 [-]: CALL R7 3 0  
      215 [-]: MOVE R6 R5   
-L31: 216 [-]: GETIMPORT R7 4 [nil]
+L31: 216 [-]: GETIMPORT R7 4 [0xCBD666E1]
      217 [-]: LOADN R8 0   
      218 [-]: CALL R7 1 0  
      219 [-]: JUMPBACK L29 
@@ -273,7 +273,7 @@ L32: 220 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  4
 
-       0 [-]: GETIMPORT R1 2 [nil]
+       0 [-]: GETIMPORT R1 2 ["gHeatFissureHarvesters"]
        1 [-]: MOVE R3 R0   
        2 [-]: NAMECALL R1 R1 K3 [0x5F98CAB3]
        3 [-]: CALL R1 2 0  
@@ -287,7 +287,7 @@ L32: 220 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  6
 
-       0 [-]: GETIMPORT R2 2 [nil]
+       0 [-]: GETIMPORT R2 2 ["gHeatFissureHarvesters"]
        1 [-]: MOVE R4 R0   
        2 [-]: MOVE R5 R1   
        3 [-]: NAMECALL R2 R2 K3 [0x7F34D4C0]
@@ -302,24 +302,24 @@ L32: 220 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  6
 
-       0 [-]: GETIMPORT R1 1 [nil]
+       0 [-]: GETIMPORT R1 1 [0x89326C93]
        1 [-]: NAMECALL R1 R1 K2 [0x18D05D30]
        2 [-]: CALL R1 1 1  
        3 [-]: JUMPIF R1 L0 
        4 [-]: RETURN R0 0  
-L 0:   5 [-]: GETIMPORT R2 5 [nil]
+L 0:   5 [-]: GETIMPORT R2 5 ["gHeatFissureHarvesters"]
        6 [-]: FASTCALL1 62 R2 L1
-       7 [-]: GETIMPORT R1 7 [nil]
+       7 [-]: GETIMPORT R1 7 [0x7B998233]
        8 [-]: CALL R1 1 1  
 L 1:   9 [-]: JUMPIFNOT R1 L2
       10 [-]: RETURN R0 0  
-L 2:  11 [-]: GETIMPORT R1 5 [nil]
+L 2:  11 [-]: GETIMPORT R1 5 ["gHeatFissureHarvesters"]
       12 [-]: MOVE R3 R0   
       13 [-]: NAMECALL R1 R1 K8 [0xF1B9BF0F]
       14 [-]: CALL R1 2 1  
       15 [-]: FASTCALL1 62 R1 L3
       16 [-]: MOVE R3 R1   
-      17 [-]: GETIMPORT R2 7 [nil]
+      17 [-]: GETIMPORT R2 7 [0x7B998233]
       18 [-]: CALL R2 1 1  
 L 3:  19 [-]: JUMPIF R2 L4 
       20 [-]: NAMECALL R2 R0 K9 [0x55DDD66E]

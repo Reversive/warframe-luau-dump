@@ -5,11 +5,11 @@
 ; Is_vararg:       1
 ; Max Stack Size:  5
 
-            1 [-]: LOADK R0 K0 [0.25]
-       2 [-]: GETIMPORT R1 2 [nil]
+       1 [-]: LOADK R0 K0 [0.25]
+       2 [-]: GETIMPORT R1 2 [0x2D0FAD09]
        3 [-]: LOADK R2 K3 ["Lotus.Scripts.Libs.AbilitiesLib"]
        4 [-]: CALL R1 1 1  
-       5 [-]: GETIMPORT R2 2 [nil]
+       5 [-]: GETIMPORT R2 2 [0x2D0FAD09]
        6 [-]: LOADK R3 K4 ["EE.Interface.Utilities"]
        7 [-]: CALL R2 1 1  
        8 [-]: NEWCLOSURE R3 P0
@@ -115,17 +115,17 @@ L 7:  30 [-]: DUPTABLE R3 16
       31 [-]: GETUPVAL R6 0
       32 [-]: MULK R5 R6 K17 [100]
       33 [-]: FASTCALL1 12 R5 L8
-      34 [-]: GETIMPORT R4 20 [nil]
+      34 [-]: GETIMPORT R4 20 [0x55F27C30]
       35 [-]: CALL R4 1 1  
 L 8:  36 [-]: SETTABLEKS R4 R3 K14 ["VAL"]
       37 [-]: LOADN R4 300 
       38 [-]: SETTABLEKS R4 R3 K15 ["COOLDOWN"]
-      39 [-]: GETIMPORT R4 22 [nil]
+      39 [-]: GETIMPORT R4 22 [0x89326C93]
       40 [-]: NAMECALL R4 R4 K23 [0x78298275]
       41 [-]: CALL R4 1 1  
       42 [-]: FASTCALL1 62 R4 L9
       43 [-]: MOVE R6 R4   
-      44 [-]: GETIMPORT R5 25 [nil]
+      44 [-]: GETIMPORT R5 25 [0x7B998233]
       45 [-]: CALL R5 1 1  
 L 9:  46 [-]: JUMPIF R5 L10
       47 [-]: GETUPVAL R6 1
@@ -137,7 +137,7 @@ L 9:  46 [-]: JUMPIF R5 L10
       53 [-]: CALL R6 2 -1 
       54 [-]: CALL R5 -1 1 
       55 [-]: SETTABLEKS R5 R3 K15 ["COOLDOWN"]
-L10:  56 [-]: GETIMPORT R5 30 [nil]
+L10:  56 [-]: GETIMPORT R5 30 [0xB139D7BC]
       57 [-]: MOVE R6 R3   
       58 [-]: CALL R5 1 -1 
       59 [-]: RETURN R5 -1 
@@ -150,7 +150,7 @@ L10:  56 [-]: GETIMPORT R5 30 [nil]
 ; Is_vararg:       0
 ; Max Stack Size:  20
 
-       0 [-]: GETIMPORT R8 1 [nil]
+       0 [-]: GETIMPORT R8 1 [0x6687F6E0]
        1 [-]: GETUPVAL R11 0
        2 [-]: GETTABLEKS R10 R11 K2 [0x516B7980]
        3 [-]: MOVE R11 R7  
@@ -158,7 +158,7 @@ L10:  56 [-]: GETIMPORT R5 30 [nil]
        5 [-]: CALL R10 2 -1
        6 [-]: NAMECALL R8 R8 K3 [0x8B28808B]
        7 [-]: CALL R8 -1 0 
-       8 [-]: GETIMPORT R8 5 [nil]
+       8 [-]: GETIMPORT R8 5 [0x89326C93]
        9 [-]: NAMECALL R8 R8 K6 [0x18D05D30]
       10 [-]: CALL R8 1 1  
       11 [-]: JUMPIF R8 L0 
@@ -200,11 +200,11 @@ L 6:  37 [-]: JUMPXEQKN R3 K19 L7 NOT [7]
      
 L 7:  41 [-]: LOADN R8 1   
       42 [-]: SETUPVAL R8 1
-L 8:  43 [-]: GETIMPORT R8 5 [nil]
-      44 [-]: GETIMPORT R10 22 [nil]
+L 8:  43 [-]: GETIMPORT R8 5 [0x89326C93]
+      44 [-]: GETIMPORT R10 22 ["gLotusAvatarType"]
       45 [-]: NAMECALL R8 R8 K23 [0x7F8E810C]
       46 [-]: CALL R8 2 1  
-      47 [-]: GETIMPORT R9 25 [nil]
+      47 [-]: GETIMPORT R9 25 [0xC8802016]
       48 [-]: MOVE R10 R8  
       49 [-]: CALL R9 1 3  
       50 [-]: FORGPREP_INEXT R9 L10

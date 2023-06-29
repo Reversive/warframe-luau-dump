@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  1
 
-            1 [-]: DUPCLOSURE R0 K0 []
+       1 [-]: DUPCLOSURE R0 K0 []
        2 [-]: SETGLOBAL R0 K1 ["OnContact"]
        3 [-]: RETURN R0 0  
 
@@ -23,7 +23,7 @@
        3 [-]: CALL R2 1 1  
        4 [-]: FASTCALL1 62 R2 L0
        5 [-]: MOVE R4 R2   
-       6 [-]: GETIMPORT R3 3 [nil]
+       6 [-]: GETIMPORT R3 3 [0x7B998233]
        7 [-]: CALL R3 1 1  
 L 0:   8 [-]: JUMPIFNOT R3 L1
        9 [-]: RETURN R0 0  
@@ -36,26 +36,26 @@ L 1:  10 [-]: NAMECALL R3 R2 K4 [0xCD73323E]
 L 2:  16 [-]: GETTABLE R7 R1 R6
       17 [-]: FASTCALL1 62 R7 L3
       18 [-]: MOVE R9 R7   
-      19 [-]: GETIMPORT R8 3 [nil]
+      19 [-]: GETIMPORT R8 3 [0x7B998233]
       20 [-]: CALL R8 1 1  
 L 3:  21 [-]: JUMPIF R8 L9 
-      22 [-]: GETIMPORT R9 6 [nil]
+      22 [-]: GETIMPORT R9 6 [0xEC2F36D6]
       23 [-]: FASTCALL1 62 R9 L4
-      24 [-]: GETIMPORT R8 3 [nil]
+      24 [-]: GETIMPORT R8 3 [0x7B998233]
       25 [-]: CALL R8 1 1  
 L 4:  26 [-]: JUMPIF R8 L5 
-      27 [-]: GETIMPORT R10 6 [nil]
+      27 [-]: GETIMPORT R10 6 [0xEC2F36D6]
       28 [-]: NAMECALL R8 R7 K7 [0xF2DEAF69]
       29 [-]: CALL R8 2 1  
       30 [-]: JUMPIFNOT R8 L5
       31 [-]: JUMP L9
      
-L 5:  32 [-]: GETIMPORT R9 9 [nil]
+L 5:  32 [-]: GETIMPORT R9 9 [0x1021CDF7]
       33 [-]: FASTCALL1 62 R9 L6
-      34 [-]: GETIMPORT R8 3 [nil]
+      34 [-]: GETIMPORT R8 3 [0x7B998233]
       35 [-]: CALL R8 1 1  
 L 6:  36 [-]: JUMPIF R8 L8 
-      37 [-]: GETIMPORT R10 9 [nil]
+      37 [-]: GETIMPORT R10 9 [0x1021CDF7]
       38 [-]: NAMECALL R8 R7 K7 [0xF2DEAF69]
       39 [-]: CALL R8 2 1  
       40 [-]: JUMPIFNOT R8 L8

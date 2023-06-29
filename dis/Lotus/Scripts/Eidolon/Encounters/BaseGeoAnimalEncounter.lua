@@ -5,10 +5,10 @@
 ; Is_vararg:       1
 ; Max Stack Size:  19
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x2D0FAD09]
        2 [-]: LOADK R1 K2 ["Lotus.Scripts.Libs.Query"]
        3 [-]: CALL R0 1 1  
-       4 [-]: GETIMPORT R1 1 [nil]
+       4 [-]: GETIMPORT R1 1 [0x2D0FAD09]
        5 [-]: LOADK R2 K3 ["Lotus.Scripts.Libs.ConservationLib"]
        6 [-]: CALL R1 1 1  
        7 [-]: LOADNIL R2   
@@ -88,7 +88,7 @@
        1 [-]: CALL R1 1 1  
        2 [-]: NAMECALL R2 R0 K1 [0xEFE6CAD1]
        3 [-]: CALL R2 1 1  
-       4 [-]: GETIMPORT R5 3 [nil]
+       4 [-]: GETIMPORT R5 3 [0xE4556B3C]
        5 [-]: NAMECALL R3 R1 K4 [0xF2DEAF69]
        6 [-]: CALL R3 2 1  
        7 [-]: JUMPIFNOT R3 L1
@@ -125,7 +125,7 @@ L 1:  31 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  4
 
-       0 [-]: GETIMPORT R1 1 [nil]
+       0 [-]: GETIMPORT R1 1 [0x3D106989]
        1 [-]: LOADK R2 K2 ["SHUTTING DOWN GEO"]
        2 [-]: CALL R1 1 0  
        3 [-]: GETUPVAL R1 0
@@ -140,7 +140,7 @@ L 0:   9 [-]: GETUPVAL R1 2
       12 [-]: CALL R1 2 0  
       13 [-]: FASTCALL1 62 R0 L1
       14 [-]: MOVE R2 R0   
-      15 [-]: GETIMPORT R1 6 [nil]
+      15 [-]: GETIMPORT R1 6 [0x7B998233]
       16 [-]: CALL R1 1 1  
 L 1:  17 [-]: JUMPIF R1 L2 
       18 [-]: NAMECALL R1 R0 K7 [0xA2880940]
@@ -155,15 +155,15 @@ L 2:  20 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  7
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 [0x89326C93]
        1 [-]: NAMECALL R0 R0 K2 [0x78298275]
        2 [-]: CALL R0 1 1  
-       3 [-]: GETIMPORT R1 4 [nil]
+       3 [-]: GETIMPORT R1 4 ["_T"]
        4 [-]: LOADNIL R2   
        5 [-]: SETTABLEKS R2 R1 K5 ["conservationGeoEncounterHint"]
        6 [-]: GETUPVAL R2 0
        7 [-]: FASTCALL1 62 R2 L0
-       8 [-]: GETIMPORT R1 7 [nil]
+       8 [-]: GETIMPORT R1 7 [0x7B998233]
        9 [-]: CALL R1 1 1  
 L 0:  10 [-]: JUMPIF R1 L3 
       11 [-]: GETUPVAL R1 0
@@ -175,18 +175,18 @@ L 0:  10 [-]: JUMPIF R1 L3
       17 [-]: FORNPREP R2 L3
 L 1:  18 [-]: GETTABLE R5 R1 R4
       19 [-]: JUMPIFNOTEQ R5 R0 L2
-      20 [-]: GETIMPORT R5 4 [nil]
+      20 [-]: GETIMPORT R5 4 ["_T"]
       21 [-]: GETUPVAL R6 0
       22 [-]: SETTABLEKS R6 R5 K5 ["conservationGeoEncounterHint"]
       23 [-]: JUMP L3
      
 L 2:  24 [-]: FORNLOOP R2 L1
-L 3:  25 [-]: GETIMPORT R1 4 [nil]
+L 3:  25 [-]: GETIMPORT R1 4 ["_T"]
       26 [-]: LOADNIL R2   
       27 [-]: SETTABLEKS R2 R1 K9 ["conservationTrailEncounterHint"]
       28 [-]: GETUPVAL R2 1
       29 [-]: FASTCALL1 62 R2 L4
-      30 [-]: GETIMPORT R1 7 [nil]
+      30 [-]: GETIMPORT R1 7 [0x7B998233]
       31 [-]: CALL R1 1 1  
 L 4:  32 [-]: JUMPIF R1 L7 
       33 [-]: GETUPVAL R1 1
@@ -198,18 +198,18 @@ L 4:  32 [-]: JUMPIF R1 L7
       39 [-]: FORNPREP R2 L7
 L 5:  40 [-]: GETTABLE R5 R1 R4
       41 [-]: JUMPIFNOTEQ R5 R0 L6
-      42 [-]: GETIMPORT R5 4 [nil]
+      42 [-]: GETIMPORT R5 4 ["_T"]
       43 [-]: GETUPVAL R6 1
       44 [-]: SETTABLEKS R6 R5 K9 ["conservationTrailEncounterHint"]
       45 [-]: JUMP L7
      
 L 6:  46 [-]: FORNLOOP R2 L5
-L 7:  47 [-]: GETIMPORT R1 4 [nil]
+L 7:  47 [-]: GETIMPORT R1 4 ["_T"]
       48 [-]: LOADNIL R2   
       49 [-]: SETTABLEKS R2 R1 K10 ["conservationAnimalEncounterHint"]
       50 [-]: GETUPVAL R2 2
       51 [-]: FASTCALL1 62 R2 L8
-      52 [-]: GETIMPORT R1 7 [nil]
+      52 [-]: GETIMPORT R1 7 [0x7B998233]
       53 [-]: CALL R1 1 1  
 L 8:  54 [-]: JUMPIF R1 L11
       55 [-]: GETUPVAL R1 2
@@ -221,7 +221,7 @@ L 8:  54 [-]: JUMPIF R1 L11
       61 [-]: FORNPREP R2 L11
 L 9:  62 [-]: GETTABLE R5 R1 R4
       63 [-]: JUMPIFNOTEQ R5 R0 L10
-      64 [-]: GETIMPORT R5 4 [nil]
+      64 [-]: GETIMPORT R5 4 ["_T"]
       65 [-]: GETUPVAL R6 2
       66 [-]: SETTABLEKS R6 R5 K10 ["conservationAnimalEncounterHint"]
       67 [-]: RETURN R0 0  
@@ -238,7 +238,7 @@ L11:  69 [-]: RETURN R0 0
 
        0 [-]: GETUPVAL R1 0
        1 [-]: FASTCALL1 62 R1 L0
-       2 [-]: GETIMPORT R0 1 [nil]
+       2 [-]: GETIMPORT R0 1 [0x7B998233]
        3 [-]: CALL R0 1 1  
 L 0:   4 [-]: JUMPIF R0 L2 
        5 [-]: GETUPVAL R0 0
@@ -253,7 +253,7 @@ L 0:   4 [-]: JUMPIF R0 L2
       14 [-]: RETURN R0 0  
 L 1:  15 [-]: LOADN R1 2   
       16 [-]: JUMPIFNOTLT R1 R0 L2
-      17 [-]: GETIMPORT R1 5 [nil]
+      17 [-]: GETIMPORT R1 5 [0x3D106989]
       18 [-]: LOADK R3 K6 ["BaseGeo: Trail failed with status "]
       19 [-]: MOVE R4 R0   
       20 [-]: LOADK R5 K7 [", shutting down"]
@@ -275,7 +275,7 @@ L 2:  27 [-]: RETURN R0 0
 
        0 [-]: GETUPVAL R1 0
        1 [-]: FASTCALL1 62 R1 L0
-       2 [-]: GETIMPORT R0 1 [nil]
+       2 [-]: GETIMPORT R0 1 [0x7B998233]
        3 [-]: CALL R0 1 1  
 L 0:   4 [-]: JUMPIF R0 L4 
        5 [-]: GETUPVAL R0 0
@@ -283,7 +283,7 @@ L 0:   4 [-]: JUMPIF R0 L4
        7 [-]: CALL R0 1 1  
        8 [-]: LOADN R1 3   
        9 [-]: JUMPIFNOTEQ R0 R1 L1
-      10 [-]: GETIMPORT R1 4 [nil]
+      10 [-]: GETIMPORT R1 4 [0x3D106989]
       11 [-]: LOADK R2 K5 ["BaseGeo: Animal encounter complete, completing"]
       12 [-]: CALL R1 1 0  
       13 [-]: GETUPVAL R1 1
@@ -294,7 +294,7 @@ L 0:   4 [-]: JUMPIF R0 L4
      
 L 1:  18 [-]: LOADN R1 4   
       19 [-]: JUMPIFNOTEQ R0 R1 L2
-      20 [-]: GETIMPORT R1 4 [nil]
+      20 [-]: GETIMPORT R1 4 [0x3D106989]
       21 [-]: LOADK R2 K7 ["BaseGeo: Animal encounter succeeded, finishing"]
       22 [-]: CALL R1 1 0  
       23 [-]: GETUPVAL R1 1
@@ -305,7 +305,7 @@ L 1:  18 [-]: LOADN R1 4
      
 L 2:  28 [-]: LOADN R1 5   
       29 [-]: JUMPIFNOTEQ R0 R1 L3
-      30 [-]: GETIMPORT R1 4 [nil]
+      30 [-]: GETIMPORT R1 4 [0x3D106989]
       31 [-]: LOADK R2 K8 ["BaseGeo: Animal encounter failed, finishing"]
       32 [-]: CALL R1 1 0  
       33 [-]: GETUPVAL R1 1
@@ -314,7 +314,7 @@ L 2:  28 [-]: LOADN R1 5
       36 [-]: CALL R1 2 0  
 L 3:  37 [-]: LOADN R1 2   
       38 [-]: JUMPIFNOTLT R1 R0 L6
-      39 [-]: GETIMPORT R1 4 [nil]
+      39 [-]: GETIMPORT R1 4 [0x3D106989]
       40 [-]: LOADK R2 K9 ["BaseGeo: Animal encounter failed, shutting down"]
       41 [-]: CALL R1 1 0  
       42 [-]: GETUPVAL R1 1
@@ -331,7 +331,7 @@ L 4:  47 [-]: GETUPVAL R0 1
       53 [-]: JUMPXEQKN R0 K11 L5 NOT [3]
       54 [-]: LOADN R2 4   
       55 [-]: JUMPIFEQ R1 R2 L5
-      56 [-]: GETIMPORT R2 4 [nil]
+      56 [-]: GETIMPORT R2 4 [0x3D106989]
       57 [-]: LOADK R3 K7 ["BaseGeo: Animal encounter succeeded, finishing"]
       58 [-]: CALL R2 1 0  
       59 [-]: GETUPVAL R2 1
@@ -342,7 +342,7 @@ L 4:  47 [-]: GETUPVAL R0 1
 L 5:  64 [-]: JUMPXEQKN R0 K12 L6 NOT [4]
       65 [-]: LOADN R2 5   
       66 [-]: JUMPIFEQ R1 R2 L6
-      67 [-]: GETIMPORT R2 4 [nil]
+      67 [-]: GETIMPORT R2 4 [0x3D106989]
       68 [-]: LOADK R3 K8 ["BaseGeo: Animal encounter failed, finishing"]
       69 [-]: CALL R2 1 0  
       70 [-]: GETUPVAL R2 1
@@ -359,25 +359,25 @@ L 6:  74 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  8
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 [0x3D106989]
        1 [-]: LOADK R1 K2 ["BaseGeo: Starting"]
        2 [-]: CALL R0 1 0  
        3 [-]: GETUPVAL R1 0
        4 [-]: FASTCALL1 62 R1 L0
-       5 [-]: GETIMPORT R0 4 [nil]
+       5 [-]: GETIMPORT R0 4 [0x7B998233]
        6 [-]: CALL R0 1 1  
 L 0:   7 [-]: JUMPIFNOT R0 L1
-       8 [-]: GETIMPORT R0 1 [nil]
+       8 [-]: GETIMPORT R0 1 [0x3D106989]
        9 [-]: LOADK R1 K5 ["BaseGeo: Failed to select an encounter type"]
       10 [-]: CALL R0 1 0  
       11 [-]: RETURN R0 0  
 L 1:  12 [-]: GETUPVAL R0 1
       13 [-]: JUMPXEQKNIL R0 L2 NOT
-      14 [-]: GETIMPORT R0 1 [nil]
+      14 [-]: GETIMPORT R0 1 [0x3D106989]
       15 [-]: LOADK R1 K6 ["BaseGeo: Failed to choose an animal location"]
       16 [-]: CALL R0 1 0  
       17 [-]: RETURN R0 0  
-L 2:  18 [-]: GETIMPORT R0 8 [nil]
+L 2:  18 [-]: GETIMPORT R0 8 [0x89326C93]
       19 [-]: NAMECALL R0 R0 K9 [0x29EF273D]
       20 [-]: CALL R0 1 1  
       21 [-]: NAMECALL R1 R0 K10 [0x66905CB0]
@@ -413,11 +413,11 @@ L 2:  18 [-]: GETIMPORT R0 8 [nil]
        3 [-]: JUMPXEQKNIL R0 L0
        4 [-]: GETUPVAL R0 2
        5 [-]: JUMPXEQKNIL R0 L1 NOT
-L 0:   6 [-]: GETIMPORT R0 1 [nil]
+L 0:   6 [-]: GETIMPORT R0 1 [0x3D106989]
        7 [-]: LOADK R1 K2 ["BaseGeo: Failed to activate animal encounter"]
        8 [-]: CALL R0 1 0  
        9 [-]: RETURN R0 0  
-L 1:  10 [-]: GETIMPORT R0 4 [nil]
+L 1:  10 [-]: GETIMPORT R0 4 [0x89326C93]
       11 [-]: NAMECALL R0 R0 K5 [0x29EF273D]
       12 [-]: CALL R0 1 1  
       13 [-]: NAMECALL R0 R0 K6 [0x66905CB0]
@@ -430,7 +430,7 @@ L 1:  10 [-]: GETIMPORT R0 4 [nil]
       20 [-]: CALL R1 5 1  
       21 [-]: FASTCALL1 62 R1 L2
       22 [-]: MOVE R3 R1   
-      23 [-]: GETIMPORT R2 9 [nil]
+      23 [-]: GETIMPORT R2 9 [0x7B998233]
       24 [-]: CALL R2 1 1  
 L 2:  25 [-]: JUMPIF R2 L3 
       26 [-]: GETUPVAL R2 2
@@ -442,11 +442,11 @@ L 2:  25 [-]: JUMPIF R2 L3
       32 [-]: LOADN R4 2   
       33 [-]: NAMECALL R2 R2 K11 [0x5B18BB5D]
       34 [-]: CALL R2 2 0  
-      35 [-]: GETIMPORT R2 1 [nil]
+      35 [-]: GETIMPORT R2 1 [0x3D106989]
       36 [-]: LOADK R3 K12 ["BaseGeo: Activated animal encounter"]
       37 [-]: CALL R2 1 0  
       38 [-]: RETURN R0 0  
-L 3:  39 [-]: GETIMPORT R2 1 [nil]
+L 3:  39 [-]: GETIMPORT R2 1 [0x3D106989]
       40 [-]: LOADK R3 K13 ["BaseGeo: Couldn't create dynamic animal encounter hint"]
       41 [-]: CALL R2 1 0  
       42 [-]: RETURN R0 0  
@@ -464,7 +464,7 @@ L 3:  39 [-]: GETIMPORT R2 1 [nil]
        2 [-]: CALL R0 1 1  
        3 [-]: FASTCALL1 62 R0 L0
        4 [-]: MOVE R2 R0   
-       5 [-]: GETIMPORT R1 2 [nil]
+       5 [-]: GETIMPORT R1 2 [0x7B998233]
        6 [-]: CALL R1 1 1  
 L 0:   7 [-]: JUMPIF R1 L1 
        8 [-]: NAMECALL R1 R0 K3 [0xD9531187]
@@ -474,7 +474,7 @@ L 0:   7 [-]: JUMPIF R1 L1
       12 [-]: RETURN R1 1  
 L 1:  13 [-]: FASTCALL1 62 R0 L2
       14 [-]: MOVE R2 R0   
-      15 [-]: GETIMPORT R1 2 [nil]
+      15 [-]: GETIMPORT R1 2 [0x7B998233]
       16 [-]: CALL R1 1 1  
 L 2:  17 [-]: JUMPIFNOT R1 L3
       18 [-]: GETUPVAL R1 0
@@ -491,7 +491,7 @@ L 3:  24 [-]: GETUPVAL R1 0
       29 [-]: CALL R2 1 1  
       30 [-]: LOADN R3 2   
       31 [-]: JUMPIFNOTLT R3 R1 L4
-      32 [-]: GETIMPORT R3 7 [nil]
+      32 [-]: GETIMPORT R3 7 [0x3D106989]
       33 [-]: LOADK R4 K8 ["GEO WANTS TO SHUT DOWN"]
       34 [-]: CALL R3 1 0  
       35 [-]: LOADB R3 1   
@@ -499,7 +499,7 @@ L 3:  24 [-]: GETUPVAL R1 0
 L 4:  37 [-]: JUMPXEQKN R2 K9 L6 NOT [0]
       38 [-]: GETUPVAL R4 1
       39 [-]: FASTCALL1 62 R4 L5
-      40 [-]: GETIMPORT R3 2 [nil]
+      40 [-]: GETIMPORT R3 2 [0x7B998233]
       41 [-]: CALL R3 1 1  
 L 5:  42 [-]: JUMPIFNOT R3 L6
       43 [-]: LOADB R3 1   
@@ -507,7 +507,7 @@ L 5:  42 [-]: JUMPIFNOT R3 L6
 L 6:  45 [-]: JUMPXEQKN R2 K10 L8 NOT [2]
       46 [-]: GETUPVAL R4 2
       47 [-]: FASTCALL1 62 R4 L7
-      48 [-]: GETIMPORT R3 2 [nil]
+      48 [-]: GETIMPORT R3 2 [0x7B998233]
       49 [-]: CALL R3 1 1  
 L 7:  50 [-]: JUMPIFNOT R3 L8
       51 [-]: LOADB R3 1   
@@ -553,7 +553,7 @@ L 4:  20 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  12
 
-       0 [-]: GETIMPORT R1 1 [nil]
+       0 [-]: GETIMPORT R1 1 [0x89326C93]
        1 [-]: NAMECALL R1 R1 K2 [0x29EF273D]
        2 [-]: CALL R1 1 1  
        3 [-]: NAMECALL R1 R1 K3 [0x66905CB0]
@@ -567,10 +567,10 @@ L 4:  20 [-]: RETURN R0 0
       11 [-]: MOVE R6 R0   
       12 [-]: NAMECALL R4 R4 K6 [0x1F420A3A]
       13 [-]: CALL R4 2 1  
-      14 [-]: GETIMPORT R7 8 [nil]
+      14 [-]: GETIMPORT R7 8 [0x0469F296]
       15 [-]: LOADK R8 K9 ["AnimalLocation"]
       16 [-]: CALL R7 1 1  
-      17 [-]: GETIMPORT R8 11 [nil]
+      17 [-]: GETIMPORT R8 11 [0x60130201]
       18 [-]: LOADN R9 0   
       19 [-]: LOADN R10 255
       20 [-]: LOADN R11 0  
@@ -578,11 +578,11 @@ L 4:  20 [-]: RETURN R0 0
       22 [-]: NAMECALL R5 R2 K12 [0x0406179E]
       23 [-]: CALL R5 -1 0 
       24 [-]: MOVE R7 R0   
-      25 [-]: GETIMPORT R8 14 [nil]
+      25 [-]: GETIMPORT R8 14 [0xB7CBD06B]
       26 [-]: LOADN R10 0  
       27 [-]: SUB R11 R4 R3
       28 [-]: FASTCALL2 18 R10 R11 L0
-      29 [-]: GETIMPORT R9 17 [nil]
+      29 [-]: GETIMPORT R9 17 [0xB62ECFE0]
       30 [-]: CALL R9 2 1  
 L 0:  31 [-]: ADD R10 R4 R3
       32 [-]: CALL R8 2 1  
@@ -603,7 +603,7 @@ L 0:  31 [-]: ADD R10 R4 R3
       47 [-]: GETUPVAL R7 0
       48 [-]: NAMECALL R7 R7 K24 [0xD1586535]
       49 [-]: CALL R7 1 1  
-      50 [-]: GETIMPORT R8 14 [nil]
+      50 [-]: GETIMPORT R8 14 [0xB7CBD06B]
       51 [-]: LOADN R9 0   
       52 [-]: MOVE R10 R3  
       53 [-]: CALL R8 2 -1 
@@ -621,17 +621,17 @@ L 0:  31 [-]: ADD R10 R4 R3
 
        0 [-]: FASTCALL1 62 R0 L0
        1 [-]: MOVE R2 R0   
-       2 [-]: GETIMPORT R1 1 [nil]
+       2 [-]: GETIMPORT R1 1 [0x7B998233]
        3 [-]: CALL R1 1 1  
 L 0:   4 [-]: JUMPIFNOT R1 L1
-       5 [-]: GETIMPORT R1 3 [nil]
+       5 [-]: GETIMPORT R1 3 [0x3D106989]
        6 [-]: LOADK R2 K4 ["BaseGeo: received null hint"]
        7 [-]: CALL R1 1 0  
        8 [-]: LOADN R3 6   
        9 [-]: NAMECALL R1 R0 K5 [0xFE9DC265]
       10 [-]: CALL R1 2 0  
       11 [-]: RETURN R0 0  
-L 1:  12 [-]: GETIMPORT R1 7 [nil]
+L 1:  12 [-]: GETIMPORT R1 7 [0x89326C93]
       13 [-]: NAMECALL R1 R1 K8 [0x29EF273D]
       14 [-]: CALL R1 1 1  
       15 [-]: NAMECALL R1 R1 K9 [0x66905CB0]
@@ -639,26 +639,26 @@ L 1:  12 [-]: GETIMPORT R1 7 [nil]
 L 2:  17 [-]: NAMECALL R2 R1 K10 [0xA2D83ED4]
       18 [-]: CALL R2 1 1  
       19 [-]: JUMPIF R2 L3 
-      20 [-]: GETIMPORT R2 12 [nil]
+      20 [-]: GETIMPORT R2 12 [0xCBD666E1]
       21 [-]: LOADN R3 0   
       22 [-]: CALL R2 1 0  
       23 [-]: JUMPBACK L2  
 L 3:  24 [-]: SETUPVAL R0 0
       25 [-]: GETUPVAL R2 0
       26 [-]: LOADK R4 K13 ["OnChildStatusChanged"]
-      27 [-]: GETIMPORT R5 15 [nil]
+      27 [-]: GETIMPORT R5 15 [0x0469F296]
       28 [-]: LOADK R6 K16 ["AnimalEncounterChildStatusChanged"]
       29 [-]: CALL R5 1 -1 
       30 [-]: NAMECALL R2 R2 K17 [0x7C55F498]
       31 [-]: CALL R2 -1 0 
       32 [-]: LOADNIL R2   
-      33 [-]: GETIMPORT R3 19 [nil]
+      33 [-]: GETIMPORT R3 19 [0x14459A1C]
       34 [-]: JUMPIFNOT R3 L10
       35 [-]: NAMECALL R3 R0 K20 [0xEFE6CAD1]
       36 [-]: CALL R3 1 1  
       37 [-]: LOADN R4 2   
       38 [-]: JUMPIFNOTLE R4 R3 L10
-      39 [-]: GETIMPORT R3 3 [nil]
+      39 [-]: GETIMPORT R3 3 [0x3D106989]
       40 [-]: LOADK R4 K21 ["BaseGeo: Resuming encounter after host migration"]
       41 [-]: CALL R3 1 0  
       42 [-]: GETUPVAL R3 0
@@ -671,17 +671,17 @@ L 3:  24 [-]: SETUPVAL R0 0
 L 4:  49 [-]: GETTABLE R7 R3 R6
       50 [-]: FASTCALL1 62 R7 L5
       51 [-]: MOVE R9 R7   
-      52 [-]: GETIMPORT R8 1 [nil]
+      52 [-]: GETIMPORT R8 1 [0x7B998233]
       53 [-]: CALL R8 1 1  
 L 5:  54 [-]: JUMPIF R8 L9 
       55 [-]: NAMECALL R8 R7 K23 [0x4C976EDA]
       56 [-]: CALL R8 1 1  
       57 [-]: FASTCALL1 62 R8 L6
       58 [-]: MOVE R10 R8  
-      59 [-]: GETIMPORT R9 1 [nil]
+      59 [-]: GETIMPORT R9 1 [0x7B998233]
       60 [-]: CALL R9 1 1  
 L 6:  61 [-]: JUMPIF R9 L8 
-      62 [-]: GETIMPORT R11 25 [nil]
+      62 [-]: GETIMPORT R11 25 [0x224C1B8E]
       63 [-]: NAMECALL R9 R8 K26 [0xF2DEAF69]
       64 [-]: CALL R9 2 1  
       65 [-]: JUMPIFNOT R9 L7
@@ -691,7 +691,7 @@ L 6:  61 [-]: JUMPIF R9 L8
       69 [-]: SETUPVAL R9 2
       70 [-]: JUMP L8
      
-L 7:  71 [-]: GETIMPORT R11 29 [nil]
+L 7:  71 [-]: GETIMPORT R11 29 [0xE4556B3C]
       72 [-]: NAMECALL R9 R8 K26 [0xF2DEAF69]
       73 [-]: CALL R9 2 1  
       74 [-]: JUMPIFNOT R9 L8
@@ -705,11 +705,11 @@ L 8:  79 [-]: NAMECALL R9 R7 K30 [0xD1586535]
 L 9:  82 [-]: FORNLOOP R4 L4
       83 [-]: JUMP L25
     
-L10:  84 [-]: GETIMPORT R3 3 [nil]
+L10:  84 [-]: GETIMPORT R3 3 [0x3D106989]
       85 [-]: LOADK R4 K31 ["BaseGeo: Starting encounter"]
       86 [-]: CALL R3 1 0  
       87 [-]: SETUPVAL R0 0
-      88 [-]: GETIMPORT R3 12 [nil]
+      88 [-]: GETIMPORT R3 12 [0xCBD666E1]
       89 [-]: LOADN R4 0   
       90 [-]: CALL R3 1 0  
       91 [-]: GETUPVAL R3 0
@@ -721,25 +721,25 @@ L10:  84 [-]: GETIMPORT R3 3 [nil]
       97 [-]: FORNPREP R4 L16
 L11:  98 [-]: GETTABLE R7 R3 R6
       99 [-]: LOADN R10 1  
-     100 [-]: GETIMPORT R11 34 [nil]
+     100 [-]: GETIMPORT R11 34 [0x909B1296]
      101 [-]: LENGTH R8 R11
      102 [-]: LOADN R9 1   
      103 [-]: FORNPREP R8 L15
 L12: 104 [-]: FASTCALL1 62 R7 L13
      105 [-]: MOVE R12 R7  
-     106 [-]: GETIMPORT R11 1 [nil]
+     106 [-]: GETIMPORT R11 1 [0x7B998233]
      107 [-]: CALL R11 1 1 
 L13: 108 [-]: JUMPIF R11 L14
-     109 [-]: GETIMPORT R14 34 [nil]
+     109 [-]: GETIMPORT R14 34 [0x909B1296]
      110 [-]: GETTABLE R13 R14 R10
      111 [-]: NAMECALL R11 R7 K26 [0xF2DEAF69]
      112 [-]: CALL R11 2 1 
      113 [-]: JUMPIFNOT R11 L14
      114 [-]: MOVE R2 R7   
-     115 [-]: GETIMPORT R12 36 [nil]
+     115 [-]: GETIMPORT R12 36 [0x0CBD24A2]
      116 [-]: GETTABLE R11 R12 R10
      117 [-]: SETUPVAL R11 4
-     118 [-]: GETIMPORT R12 38 [nil]
+     118 [-]: GETIMPORT R12 38 [0xC31602C4]
      119 [-]: GETTABLE R11 R12 R10
      120 [-]: SETUPVAL R11 2
      121 [-]: JUMP L15
@@ -748,13 +748,13 @@ L14: 122 [-]: FORNLOOP R8 L12
 L15: 123 [-]: FORNLOOP R4 L11
 L16: 124 [-]: FASTCALL1 62 R2 L17
      125 [-]: MOVE R5 R2   
-     126 [-]: GETIMPORT R4 1 [nil]
+     126 [-]: GETIMPORT R4 1 [0x7B998233]
      127 [-]: CALL R4 1 1  
 L17: 128 [-]: JUMPIFNOT R4 L21
-     129 [-]: GETIMPORT R4 3 [nil]
+     129 [-]: GETIMPORT R4 3 [0x3D106989]
      130 [-]: LOADK R5 K39 ["BaseGeoAnimalEncounter: couldn't find the starting gameplay object!"]
      131 [-]: CALL R4 1 0  
-     132 [-]: GETIMPORT R4 3 [nil]
+     132 [-]: GETIMPORT R4 3 [0x3D106989]
      133 [-]: LOADK R5 K40 ["SHUTTING DOWN GEO"]
      134 [-]: CALL R4 1 0  
      135 [-]: GETUPVAL R4 6
@@ -769,15 +769,15 @@ L18: 141 [-]: GETUPVAL R4 0
      144 [-]: CALL R4 2 0  
      145 [-]: LOADNIL R5   
      146 [-]: FASTCALL1 62 R5 L19
-     147 [-]: GETIMPORT R4 1 [nil]
+     147 [-]: GETIMPORT R4 1 [0x7B998233]
      148 [-]: CALL R4 1 1  
 L19: 149 [-]: JUMPIF R4 L20
      150 [-]: LOADNIL R4   
      151 [-]: NAMECALL R4 R4 K42 [0xA2880940]
      152 [-]: CALL R4 1 0  
 L20: 153 [-]: RETURN R0 0  
-L21: 154 [-]: GETIMPORT R6 44 [nil]
-     155 [-]: GETIMPORT R7 46 [nil]
+L21: 154 [-]: GETIMPORT R6 44 [0x20254AA4]
+     155 [-]: GETIMPORT R7 46 ["EMPTY_SYMBOL"]
      156 [-]: NAMECALL R4 R2 K47 [0x47901F07]
      157 [-]: CALL R4 3 1  
      158 [-]: GETUPVAL R6 7
@@ -809,24 +809,24 @@ L21: 154 [-]: GETIMPORT R6 44 [nil]
      184 [-]: CALL R7 2 1  
      185 [-]: FASTCALL1 62 R7 L22
      186 [-]: MOVE R9 R7   
-     187 [-]: GETIMPORT R8 1 [nil]
+     187 [-]: GETIMPORT R8 1 [0x7B998233]
      188 [-]: CALL R8 1 1  
 L22: 189 [-]: JUMPIFNOT R8 L23
-     190 [-]: GETIMPORT R8 3 [nil]
+     190 [-]: GETIMPORT R8 3 [0x3D106989]
      191 [-]: LOADK R10 K54 ["BaseGeo: Animal Location Query failed on "]
      192 [-]: GETUPVAL R17 0
      193 [-]: NAMECALL R17 R17 K55 [0xE223E2B1]
      194 [-]: CALL R17 1 1 
      195 [-]: MOVE R11 R17 
      196 [-]: LOADK R12 K56 [" at "]
-     197 [-]: GETIMPORT R17 58 [nil]
+     197 [-]: GETIMPORT R17 58 [0x64FB1586]
      198 [-]: GETUPVAL R18 0
      199 [-]: NAMECALL R18 R18 K30 [0xD1586535]
      200 [-]: CALL R18 1 -1
      201 [-]: CALL R17 -1 1
      202 [-]: MOVE R13 R17 
      203 [-]: LOADK R14 K59 [" from start point "]
-     204 [-]: GETIMPORT R17 58 [nil]
+     204 [-]: GETIMPORT R17 58 [0x64FB1586]
      205 [-]: MOVE R18 R5  
      206 [-]: CALL R17 1 1 
      207 [-]: MOVE R15 R17 
@@ -835,7 +835,7 @@ L22: 189 [-]: JUMPIFNOT R8 L23
      210 [-]: CALL R8 1 0  
      211 [-]: JUMP L24
     
-L23: 212 [-]: GETIMPORT R9 63 [nil]
+L23: 212 [-]: GETIMPORT R9 63 [0x3630E649]
      213 [-]: LOADN R10 1  
      214 [-]: LENGTH R11 R7
      215 [-]: CALL R9 2 1  
@@ -849,12 +849,12 @@ L25: 220 [-]: GETUPVAL R3 11
      223 [-]: GETUPVAL R3 12
      224 [-]: LOADK R4 K64 [0.10000000000000001]
      225 [-]: CALL R3 1 0  
-     226 [-]: GETIMPORT R3 12 [nil]
+     226 [-]: GETIMPORT R3 12 [0xCBD666E1]
      227 [-]: LOADK R4 K64 [0.10000000000000001]
      228 [-]: CALL R3 1 0  
      229 [-]: JUMPBACK L25 
 L26: 230 [-]: MOVE R3 R2   
-     231 [-]: GETIMPORT R4 3 [nil]
+     231 [-]: GETIMPORT R4 3 [0x3D106989]
      232 [-]: LOADK R5 K40 ["SHUTTING DOWN GEO"]
      233 [-]: CALL R4 1 0  
      234 [-]: GETUPVAL R4 6
@@ -869,7 +869,7 @@ L27: 240 [-]: GETUPVAL R4 0
      243 [-]: CALL R4 2 0  
      244 [-]: FASTCALL1 62 R3 L28
      245 [-]: MOVE R5 R3   
-     246 [-]: GETIMPORT R4 1 [nil]
+     246 [-]: GETIMPORT R4 1 [0x7B998233]
      247 [-]: CALL R4 1 1  
 L28: 248 [-]: JUMPIF R4 L29
      249 [-]: NAMECALL R4 R3 K42 [0xA2880940]

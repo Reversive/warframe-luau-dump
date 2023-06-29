@@ -5,9 +5,9 @@
 ; Is_vararg:       1
 ; Max Stack Size:  3
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0xAEABECDA]
        2 [-]: GETVARARGS R1 1
-       3 [-]: GETIMPORT R2 4 [nil]
+       3 [-]: GETIMPORT R2 4 ["seeall"]
        4 [-]: CALL R0 2 0  
        5 [-]: DUPCLOSURE R0 K5 []
        6 [-]: SETGLOBAL R0 K6 ["CreateCategorizedGrid"]
@@ -21,7 +21,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  19
 
-       0 [-]: GETIMPORT R9 1 [nil]
+       0 [-]: GETIMPORT R9 1 [0x2D0FAD09]
        1 [-]: LOADK R10 K2 ["EE.Interface.Components.Grid"]
        2 [-]: CALL R9 1 1  
        3 [-]: GETTABLEKS R10 R9 K3 [0xDA0C93A2]
@@ -36,11 +36,11 @@
       12 [-]: LOADK R14 K5 [")::"]
       13 [-]: CONCAT R11 R12 R14
       14 [-]: SETTABLEKS R11 R10 K6 ["mPrefix"]
-      15 [-]: GETIMPORT R11 1 [nil]
+      15 [-]: GETIMPORT R11 1 [0x2D0FAD09]
       16 [-]: LOADK R12 K7 ["Lotus.Interface.LotusUtilities"]
       17 [-]: CALL R11 1 1 
       18 [-]: SETTABLEKS R11 R10 K8 ["LOTUS_UTIL"]
-      19 [-]: GETIMPORT R11 1 [nil]
+      19 [-]: GETIMPORT R11 1 [0x2D0FAD09]
       20 [-]: LOADK R12 K9 ["EE.Interface.Utilities"]
       21 [-]: CALL R11 1 1 
       22 [-]: SETTABLEKS R11 R10 K10 ["UTIL"]
@@ -236,13 +236,13 @@ L 1:  89 [-]: DUPCLOSURE R11 K48 []
      212 [-]: NAMECALL R12 R0 K14 [0xE4162EED]
      213 [-]: CALL R12 3 1 
      214 [-]: JUMPIF R12 L2
-     215 [-]: GETIMPORT R12 1 [nil]
+     215 [-]: GETIMPORT R12 1 [0x2D0FAD09]
      216 [-]: LOADK R13 K147 ["Lotus.Interface.Components.ThemedCategoriesMenu"]
      217 [-]: CALL R12 1 1 
      218 [-]: MOVE R11 R12 
      219 [-]: JUMP L3
      
-L 2: 220 [-]: GETIMPORT R12 1 [nil]
+L 2: 220 [-]: GETIMPORT R12 1 [0x2D0FAD09]
      221 [-]: LOADK R13 K148 ["Lotus.Interface.Components.CategoriesMenu"]
      222 [-]: CALL R12 1 1 
      223 [-]: MOVE R11 R12 
@@ -293,7 +293,7 @@ L 5: 262 [-]: GETTABLEKS R11 R10 K18 ["mSortClipName"]
      268 [-]: NAMECALL R11 R11 K169 [0xA7EC3E8A]
      269 [-]: CALL R11 2 1 
      270 [-]: JUMPIFNOT R11 L6
-     271 [-]: GETIMPORT R12 1 [nil]
+     271 [-]: GETIMPORT R12 1 [0x2D0FAD09]
      272 [-]: LOADK R13 K170 ["Lotus.Interface.Components.DropDownMenu"]
      273 [-]: CALL R12 1 1 
      274 [-]: GETTABLEKS R13 R12 K171 [0xAE6791BA]
@@ -307,7 +307,7 @@ L 5: 262 [-]: GETTABLEKS R11 R10 K18 ["mSortClipName"]
      282 [-]: CALL R13 2 0 
      283 [-]: JUMP L7
      
-L 6: 284 [-]: GETIMPORT R12 1 [nil]
+L 6: 284 [-]: GETIMPORT R12 1 [0x2D0FAD09]
      285 [-]: LOADK R13 K174 ["EE.Interface.Components.DropDownMenu"]
      286 [-]: CALL R12 1 1 
      287 [-]: GETTABLEKS R13 R12 K175 [0xF3BB403C]
@@ -341,8 +341,8 @@ L 7: 298 [-]: GETTABLEKS R12 R10 K172 ["mSortMenu"]
      315 [-]: LOADN R13 1  
      316 [-]: SETTABLEKS R13 R12 K19 ["mDepthDirection"]
      317 [-]: GETTABLEKS R12 R10 K172 ["mSortMenu"]
-     318 [-]: GETIMPORT R13 187 [nil]
-     319 [-]: GETIMPORT R14 189 [nil]
+     318 [-]: GETIMPORT R13 187 [0x03F57322]
+     319 [-]: GETIMPORT R14 189 [0x38F10E85]
      320 [-]: GETTABLEKS R15 R10 K150 ["mMovie"]
      321 [-]: GETTABLEKS R17 R10 K18 ["mSortClipName"]
      322 [-]: LOADK R18 K190 [".getDepth"]
@@ -371,10 +371,10 @@ L 7: 298 [-]: GETTABLEKS R12 R10 K172 ["mSortMenu"]
      345 [-]: NAMECALL R13 R13 K194 [0x204423D8]
      346 [-]: CALL R13 1 1 
      347 [-]: JUMPIFNOT R13 L8
-     348 [-]: GETIMPORT R13 196 [nil]
+     348 [-]: GETIMPORT R13 196 [0x0032441C]
      349 [-]: GETTABLEKS R12 R13 K197 ["UIMaterial_DepthTestText"]
      350 [-]: JUMPIF R12 L9
-L 8: 351 [-]: GETIMPORT R13 196 [nil]
+L 8: 351 [-]: GETIMPORT R13 196 [0x0032441C]
      352 [-]: GETTABLEKS R12 R13 K198 ["UIMaterial_PlainText"]
 L 9: 353 [-]: GETTABLEKS R16 R10 K18 ["mSortClipName"]
      354 [-]: LOADK R17 K199 [".Selected"]

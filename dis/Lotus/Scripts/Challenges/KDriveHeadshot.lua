@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  2
 
-            1 [-]: DUPCLOSURE R0 K0 []
+       1 [-]: DUPCLOSURE R0 K0 []
        2 [-]: DUPCLOSURE R1 K1 []
        3 [-]: SETGLOBAL R1 K2 ["MatchAttackEvent"]
        4 [-]: RETURN R0 0  
@@ -20,14 +20,14 @@
 
        0 [-]: FASTCALL1 62 R0 L0
        1 [-]: MOVE R2 R0   
-       2 [-]: GETIMPORT R1 1 [nil]
+       2 [-]: GETIMPORT R1 1 [0x7B998233]
        3 [-]: CALL R1 1 1  
 L 0:   4 [-]: JUMPIF R1 L2 
-       5 [-]: GETIMPORT R3 3 [nil]
+       5 [-]: GETIMPORT R3 3 ["gLotusWeaponType"]
        6 [-]: NAMECALL R1 R0 K4 [0xF2DEAF69]
        7 [-]: CALL R1 2 1  
        8 [-]: JUMPIF R1 L1 
-       9 [-]: GETIMPORT R3 6 [nil]
+       9 [-]: GETIMPORT R3 6 ["gBaseAvatarType"]
       10 [-]: NAMECALL R1 R0 K4 [0xF2DEAF69]
       11 [-]: CALL R1 2 1  
       12 [-]: JUMPIFNOT R1 L2
@@ -51,10 +51,10 @@ L 2:  15 [-]: LOADB R1 0
        4 [-]: JUMPIFNOT R3 L7
        5 [-]: FASTCALL1 62 R2 L0
        6 [-]: MOVE R4 R2   
-       7 [-]: GETIMPORT R3 3 [nil]
+       7 [-]: GETIMPORT R3 3 [0x7B998233]
        8 [-]: CALL R3 1 1  
 L 0:   9 [-]: JUMPIF R3 L7 
-      10 [-]: GETIMPORT R5 5 [nil]
+      10 [-]: GETIMPORT R5 5 ["gLotusVehicleAvatarType"]
       11 [-]: NAMECALL R3 R2 K6 [0xF2DEAF69]
       12 [-]: CALL R3 2 1  
       13 [-]: JUMPIFNOT R3 L7
@@ -71,16 +71,16 @@ L 0:   9 [-]: JUMPIF R3 L7
       24 [-]: CALL R5 1 1  
       25 [-]: FASTCALL1 62 R3 L1
       26 [-]: MOVE R7 R3   
-      27 [-]: GETIMPORT R6 3 [nil]
+      27 [-]: GETIMPORT R6 3 [0x7B998233]
       28 [-]: CALL R6 1 1  
 L 1:  29 [-]: JUMPIF R6 L7 
-      30 [-]: GETIMPORT R8 13 [nil]
+      30 [-]: GETIMPORT R8 13 ["gTennoAvatarType"]
       31 [-]: NAMECALL R6 R3 K6 [0xF2DEAF69]
       32 [-]: CALL R6 2 1  
       33 [-]: JUMPIFNOT R6 L7
       34 [-]: FASTCALL1 62 R4 L2
       35 [-]: MOVE R7 R4   
-      36 [-]: GETIMPORT R6 3 [nil]
+      36 [-]: GETIMPORT R6 3 [0x7B998233]
       37 [-]: CALL R6 1 1  
 L 2:  38 [-]: JUMPIF R6 L7 
       39 [-]: JUMPIFEQ R3 R4 L7
@@ -90,14 +90,14 @@ L 2:  38 [-]: JUMPIF R6 L7
       43 [-]: JUMPIFNOTEQ R6 R7 L7
       44 [-]: FASTCALL1 62 R5 L3
       45 [-]: MOVE R8 R5   
-      46 [-]: GETIMPORT R7 3 [nil]
+      46 [-]: GETIMPORT R7 3 [0x7B998233]
       47 [-]: CALL R7 1 1  
 L 3:  48 [-]: JUMPIF R7 L5 
-      49 [-]: GETIMPORT R9 16 [nil]
+      49 [-]: GETIMPORT R9 16 ["gLotusWeaponType"]
       50 [-]: NAMECALL R7 R5 K6 [0xF2DEAF69]
       51 [-]: CALL R7 2 1  
       52 [-]: JUMPIF R7 L4 
-      53 [-]: GETIMPORT R9 18 [nil]
+      53 [-]: GETIMPORT R9 18 ["gBaseAvatarType"]
       54 [-]: NAMECALL R7 R5 K6 [0xF2DEAF69]
       55 [-]: CALL R7 2 1  
       56 [-]: JUMPIFNOT R7 L5

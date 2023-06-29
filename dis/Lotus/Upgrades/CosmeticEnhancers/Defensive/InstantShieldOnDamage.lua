@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  1
 
-            1 [-]: DUPCLOSURE R0 K0 []
+       1 [-]: DUPCLOSURE R0 K0 []
        2 [-]: SETGLOBAL R0 K1 ["ApplyUpgrade"]
        3 [-]: DUPCLOSURE R0 K2 []
        4 [-]: SETGLOBAL R0 K3 ["UnapplyUpgrade"]
@@ -39,11 +39,11 @@
       15 [-]: NAMECALL R6 R6 K5 [0xF456C2D7]
       16 [-]: CALL R6 1 1  
       17 [-]: JUMPIFNOTLT R6 R5 L0
-      18 [-]: GETIMPORT R8 7 [nil]
-      19 [-]: GETIMPORT R9 9 [nil]
+      18 [-]: GETIMPORT R8 7 [0x55BA2EEB]
+      19 [-]: GETIMPORT R9 9 ["EMPTY_SYMBOL"]
       20 [-]: NAMECALL R6 R0 K10 [0x47901F07]
       21 [-]: CALL R6 3 0  
-L 0:  22 [-]: GETIMPORT R5 12 [nil]
+L 0:  22 [-]: GETIMPORT R5 12 [0x89326C93]
       23 [-]: NAMECALL R5 R5 K13 [0x18D05D30]
       24 [-]: CALL R5 1 1  
       25 [-]: JUMPIFNOT R5 L1

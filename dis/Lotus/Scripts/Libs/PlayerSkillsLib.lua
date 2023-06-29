@@ -5,11 +5,11 @@
 ; Is_vararg:       1
 ; Max Stack Size:  23
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0xAEABECDA]
        2 [-]: GETVARARGS R1 1
-       3 [-]: GETIMPORT R2 4 [nil]
+       3 [-]: GETIMPORT R2 4 ["seeall"]
        4 [-]: CALL R0 2 0  
-       5 [-]: GETIMPORT R0 6 [nil]
+       5 [-]: GETIMPORT R0 6 [0x2D0FAD09]
        6 [-]: LOADK R1 K7 ["Lotus.Scripts.Libs.IntrinsicsSkillSymbolsLib"]
        7 [-]: CALL R0 1 1  
        8 [-]: LOADN R1 10  
@@ -32,28 +32,28 @@
       25 [-]: SETGLOBAL R1 K16 ["CATEGORY_HORSE"]
       26 [-]: LOADN R1 9   
       27 [-]: SETGLOBAL R1 K17 ["CATEGORY_DUVIRI_WF"]
-      28 [-]: GETIMPORT R1 19 [nil]
+      28 [-]: GETIMPORT R1 19 [0x7ED0A956]
       29 [-]: LOADK R2 K20 ["/Lotus/Types/Game/CrewShip/CrewShipArchwingCannonEmplacement"]
       30 [-]: CALL R1 1 1  
-      31 [-]: GETIMPORT R2 19 [nil]
+      31 [-]: GETIMPORT R2 19 [0x7ED0A956]
       32 [-]: LOADK R3 K21 ["/Lotus/Types/Game/CrewShip/CrewShipAvatar"]
       33 [-]: CALL R2 1 1  
-      34 [-]: GETIMPORT R3 19 [nil]
+      34 [-]: GETIMPORT R3 19 [0x7ED0A956]
       35 [-]: LOADK R4 K22 ["/Lotus/Weapons/Tenno/Archwing/Melee/ArchMeleeWeapon"]
       36 [-]: CALL R3 1 1  
-      37 [-]: GETIMPORT R4 19 [nil]
+      37 [-]: GETIMPORT R4 19 [0x7ED0A956]
       38 [-]: LOADK R5 K23 ["/Lotus/Weapons/Tenno/Archwing/Primary/ArchGun"]
       39 [-]: CALL R4 1 1  
-      40 [-]: GETIMPORT R5 19 [nil]
+      40 [-]: GETIMPORT R5 19 [0x7ED0A956]
       41 [-]: LOADK R6 K24 ["/Lotus/Types/Restoratives/LisetAirSupport"]
       42 [-]: CALL R5 1 1  
-      43 [-]: GETIMPORT R6 19 [nil]
+      43 [-]: GETIMPORT R6 19 [0x7ED0A956]
       44 [-]: LOADK R7 K25 ["/Lotus/Types/Restoratives/LoadoutTechSummon"]
       45 [-]: CALL R6 1 1  
-      46 [-]: GETIMPORT R7 19 [nil]
+      46 [-]: GETIMPORT R7 19 [0x7ED0A956]
       47 [-]: LOADK R8 K26 ["/Lotus/Types/Game/CrewShip/CrewShipHarness"]
       48 [-]: CALL R7 1 1  
-      49 [-]: GETIMPORT R8 19 [nil]
+      49 [-]: GETIMPORT R8 19 [0x7ED0A956]
       50 [-]: LOADK R9 K27 ["/Lotus/Types/NeutralCreatures/ErsatzHorse/ErsatzHorseAvatar"]
       51 [-]: CALL R8 1 1  
       52 [-]: NEWTABLE R9 0 10
@@ -660,7 +660,7 @@
      653 [-]: SETTABLEKS R17 R16 K38 ["operationType"]
      654 [-]: LOADK R17 K84 [0.69999999999999996]
      655 [-]: SETTABLEKS R17 R16 K37 ["value"]
-     656 [-]: GETIMPORT R17 86 [nil]
+     656 [-]: GETIMPORT R17 86 ["gLotusMeleeWeaponType"]
      657 [-]: SETTABLEKS R17 R16 K41 ["validType"]
      658 [-]: GETGLOBAL R17 K14 ["CATEGORY_DRIFTER"]
      659 [-]: SETTABLEKS R17 R16 K44 ["category"]
@@ -737,7 +737,7 @@
      730 [-]: SETTABLEN R15 R14 9
      731 [-]: NEWTABLE R15 0 1
      732 [-]: DUPTABLE R16 92
-     733 [-]: GETIMPORT R17 94 [nil]
+     733 [-]: GETIMPORT R17 94 [0x88EFC25E]
      734 [-]: LOADK R18 K95 ["/Lotus/Upgrades/Intrinsics/OnAbilityIncreaseDamage"]
      735 [-]: CALL R17 1 1 
      736 [-]: SETTABLEKS R17 R16 K91 ["upgradeObjectType"]
@@ -987,14 +987,14 @@
      980 [-]: SETTABLEN R18 R17 1
      981 [-]: NEWTABLE R18 0 2
      982 [-]: DUPTABLE R19 92
-     983 [-]: GETIMPORT R20 94 [nil]
+     983 [-]: GETIMPORT R20 94 [0x88EFC25E]
      984 [-]: LOADK R21 K112 ["/Lotus/Upgrades/Intrinsics/OnBoonPickupFullyRegenerate"]
      985 [-]: CALL R20 1 1 
      986 [-]: SETTABLEKS R20 R19 K91 ["upgradeObjectType"]
      987 [-]: GETGLOBAL R20 K14 ["CATEGORY_DRIFTER"]
      988 [-]: SETTABLEKS R20 R19 K44 ["category"]
      989 [-]: DUPTABLE R20 92
-     990 [-]: GETIMPORT R21 94 [nil]
+     990 [-]: GETIMPORT R21 94 [0x88EFC25E]
      991 [-]: LOADK R22 K112 ["/Lotus/Upgrades/Intrinsics/OnBoonPickupFullyRegenerate"]
      992 [-]: CALL R21 1 1 
      993 [-]: SETTABLEKS R21 R20 K91 ["upgradeObjectType"]
@@ -1016,14 +1016,14 @@
      1009 [-]: SETTABLEN R18 R17 3
      1010 [-]: NEWTABLE R18 0 2
      1011 [-]: DUPTABLE R19 92
-     1012 [-]: GETIMPORT R20 94 [nil]
+     1012 [-]: GETIMPORT R20 94 [0x88EFC25E]
      1013 [-]: LOADK R21 K113 ["/Lotus/Upgrades/Intrinsics/OnParryHeal"]
      1014 [-]: CALL R20 1 1 
      1015 [-]: SETTABLEKS R20 R19 K91 ["upgradeObjectType"]
      1016 [-]: GETGLOBAL R20 K14 ["CATEGORY_DRIFTER"]
      1017 [-]: SETTABLEKS R20 R19 K44 ["category"]
      1018 [-]: DUPTABLE R20 92
-     1019 [-]: GETIMPORT R21 94 [nil]
+     1019 [-]: GETIMPORT R21 94 [0x88EFC25E]
      1020 [-]: LOADK R22 K114 ["/Lotus/Upgrades/Intrinsics/OnSuperiorCounterRecover"]
      1021 [-]: CALL R21 1 1 
      1022 [-]: SETTABLEKS R21 R20 K91 ["upgradeObjectType"]
@@ -1055,14 +1055,14 @@
      1048 [-]: SETTABLEN R18 R17 6
      1049 [-]: NEWTABLE R18 0 2
      1050 [-]: DUPTABLE R19 92
-     1051 [-]: GETIMPORT R20 94 [nil]
+     1051 [-]: GETIMPORT R20 94 [0x88EFC25E]
      1052 [-]: LOADK R21 K116 ["/Lotus/Upgrades/Intrinsics/OnHeadshotHeal"]
      1053 [-]: CALL R20 1 1 
      1054 [-]: SETTABLEKS R20 R19 K91 ["upgradeObjectType"]
      1055 [-]: GETGLOBAL R20 K14 ["CATEGORY_DRIFTER"]
      1056 [-]: SETTABLEKS R20 R19 K44 ["category"]
      1057 [-]: DUPTABLE R20 92
-     1058 [-]: GETIMPORT R21 94 [nil]
+     1058 [-]: GETIMPORT R21 94 [0x88EFC25E]
      1059 [-]: LOADK R22 K116 ["/Lotus/Upgrades/Intrinsics/OnHeadshotHeal"]
      1060 [-]: CALL R21 1 1 
      1061 [-]: SETTABLEKS R21 R20 K91 ["upgradeObjectType"]
@@ -1105,7 +1105,7 @@
      1098 [-]: SETTABLEN R18 R17 9
      1099 [-]: NEWTABLE R18 0 1
      1100 [-]: DUPTABLE R19 92
-     1101 [-]: GETIMPORT R20 94 [nil]
+     1101 [-]: GETIMPORT R20 94 [0x88EFC25E]
      1102 [-]: LOADK R21 K117 ["/Lotus/Upgrades/Intrinsics/OnFatalDamageInvulnerabilityAndRecover"]
      1103 [-]: CALL R20 1 1 
      1104 [-]: SETTABLEKS R20 R19 K91 ["upgradeObjectType"]
@@ -1149,24 +1149,24 @@
 
        0 [-]: FASTCALL1 62 R0 L0
        1 [-]: MOVE R2 R0   
-       2 [-]: GETIMPORT R1 1 [nil]
+       2 [-]: GETIMPORT R1 1 [0x7B998233]
        3 [-]: CALL R1 1 1  
 L 0:   4 [-]: JUMPIF R1 L2 
        5 [-]: GETTABLEKS R2 R0 K2 ["upgradeType"]
        6 [-]: FASTCALL1 62 R2 L1
-       7 [-]: GETIMPORT R1 1 [nil]
+       7 [-]: GETIMPORT R1 1 [0x7B998233]
        8 [-]: CALL R1 1 1  
 L 1:   9 [-]: JUMPIFNOT R1 L3
 L 2:  10 [-]: LOADNIL R1   
       11 [-]: RETURN R1 1  
-L 3:  12 [-]: GETIMPORT R1 5 [nil]
+L 3:  12 [-]: GETIMPORT R1 5 [0x449A507E]
       13 [-]: CALL R1 0 1  
       14 [-]: GETTABLEKS R4 R0 K2 ["upgradeType"]
       15 [-]: NAMECALL R2 R1 K6 [0x14894DE6]
       16 [-]: CALL R2 2 0  
       17 [-]: GETTABLEKS R3 R0 K7 ["operationType"]
       18 [-]: FASTCALL1 62 R3 L4
-      19 [-]: GETIMPORT R2 1 [nil]
+      19 [-]: GETIMPORT R2 1 [0x7B998233]
       20 [-]: CALL R2 1 1  
 L 4:  21 [-]: JUMPIFNOT R2 L5
       22 [-]: LOADN R4 4   
@@ -1179,7 +1179,7 @@ L 5:  26 [-]: GETTABLEKS R4 R0 K7 ["operationType"]
       28 [-]: CALL R2 2 0  
 L 6:  29 [-]: GETTABLEKS R3 R0 K9 ["value"]
       30 [-]: FASTCALL1 62 R3 L7
-      31 [-]: GETIMPORT R2 1 [nil]
+      31 [-]: GETIMPORT R2 1 [0x7B998233]
       32 [-]: CALL R2 1 1  
 L 7:  33 [-]: JUMPIFNOT R2 L8
       34 [-]: LOADN R4 1   
@@ -1192,7 +1192,7 @@ L 8:  38 [-]: GETTABLEKS R4 R0 K9 ["value"]
       40 [-]: CALL R2 2 0  
 L 9:  41 [-]: GETTABLEKS R3 R0 K11 ["validType"]
       42 [-]: FASTCALL1 62 R3 L10
-      43 [-]: GETIMPORT R2 1 [nil]
+      43 [-]: GETIMPORT R2 1 [0x7B998233]
       44 [-]: CALL R2 1 1  
 L10:  45 [-]: JUMPIF R2 L11
       46 [-]: GETTABLEKS R4 R0 K11 ["validType"]
@@ -1200,14 +1200,14 @@ L10:  45 [-]: JUMPIF R2 L11
       48 [-]: CALL R2 2 0  
 L11:  49 [-]: GETTABLEKS R3 R0 K13 ["validPosture"]
       50 [-]: FASTCALL1 62 R3 L12
-      51 [-]: GETIMPORT R2 1 [nil]
+      51 [-]: GETIMPORT R2 1 [0x7B998233]
       52 [-]: CALL R2 1 1  
 L12:  53 [-]: JUMPIF R2 L13
       54 [-]: GETTABLEKS R4 R0 K13 ["validPosture"]
       55 [-]: LOADB R5 1   
       56 [-]: NAMECALL R2 R1 K14 [0xF0952E00]
       57 [-]: CALL R2 3 0  
-L13:  58 [-]: GETIMPORT R2 16 [nil]
+L13:  58 [-]: GETIMPORT R2 16 [0xC8802016]
       59 [-]: GETTABLEKS R3 R0 K17 ["validModifiers"]
       60 [-]: CALL R2 1 3  
       61 [-]: FORGPREP_INEXT R2 L15
@@ -1218,7 +1218,7 @@ L14:  62 [-]: MOVE R9 R6
 L15:  66 [-]: FORGLOOP R2 L14 2 [inext]
       67 [-]: GETTABLEKS R3 R0 K19 ["filter"]
       68 [-]: FASTCALL1 62 R3 L16
-      69 [-]: GETIMPORT R2 1 [nil]
+      69 [-]: GETIMPORT R2 1 [0x7B998233]
       70 [-]: CALL R2 1 1  
 L16:  71 [-]: JUMPIF R2 L17
       72 [-]: GETTABLEKS R4 R0 K19 ["filter"]
@@ -1238,7 +1238,7 @@ L17:  75 [-]: RETURN R1 1
        1 [-]: JUMPIFLT R1 R4 L0
        2 [-]: GETGLOBAL R4 K0 ["MAX_SKILL_RANK"]
        3 [-]: JUMPIFNOTLT R4 R1 L1
-L 0:   4 [-]: GETIMPORT R4 2 [nil]
+L 0:   4 [-]: GETIMPORT R4 2 [0x3D106989]
        5 [-]: LOADK R5 K3 ["PLAYER_SKILL_LIB rank arg is incorrect"]
        6 [-]: CALL R4 1 0  
        7 [-]: LOADNIL R4   
@@ -1247,10 +1247,10 @@ L 1:   9 [-]: GETUPVAL R5 0
       10 [-]: GETTABLE R4 R5 R0
       11 [-]: FASTCALL1 62 R4 L2
       12 [-]: MOVE R6 R4   
-      13 [-]: GETIMPORT R5 5 [nil]
+      13 [-]: GETIMPORT R5 5 [0x7B998233]
       14 [-]: CALL R5 1 1  
 L 2:  15 [-]: JUMPIFNOT R5 L3
-      16 [-]: GETIMPORT R5 2 [nil]
+      16 [-]: GETIMPORT R5 2 [0x3D106989]
       17 [-]: LOADK R6 K6 ["PLAYER_SKILL_LIB skill arg is incorrect"]
       18 [-]: CALL R5 1 0  
       19 [-]: LOADNIL R5   
@@ -1262,7 +1262,7 @@ L 3:  21 [-]: NEWTABLE R5 0 0
       25 [-]: MOVE R7 R1   
 L 4:  26 [-]: FASTCALL1 62 R3 L5
       27 [-]: MOVE R9 R3   
-      28 [-]: GETIMPORT R8 5 [nil]
+      28 [-]: GETIMPORT R8 5 [0x7B998233]
       29 [-]: CALL R8 1 1  
 L 5:  30 [-]: JUMPIFNOT R8 L6
       31 [-]: GETGLOBAL R3 K7 ["CATEGORY_ALL"]
@@ -1284,7 +1284,7 @@ L 8:  41 [-]: LOADB R15 0
 L 9:  46 [-]: GETTABLE R18 R11 R14
       47 [-]: GETTABLEKS R17 R18 K8 ["category"]
       48 [-]: FASTCALL1 62 R17 L10
-      49 [-]: GETIMPORT R16 5 [nil]
+      49 [-]: GETIMPORT R16 5 [0x7B998233]
       50 [-]: CALL R16 1 1 
 L10:  51 [-]: JUMPIF R16 L13
       52 [-]: GETTABLE R17 R11 R14
@@ -1304,27 +1304,27 @@ L15:  62 [-]: JUMPIFNOT R15 L20
       65 [-]: CALL R16 1 1 
       66 [-]: FASTCALL1 62 R16 L16
       67 [-]: MOVE R18 R16 
-      68 [-]: GETIMPORT R17 5 [nil]
+      68 [-]: GETIMPORT R17 5 [0x7B998233]
       69 [-]: CALL R17 1 1 
 L16:  70 [-]: JUMPIF R17 L18
       71 [-]: FASTCALL2 52 R5 R16 L17
       72 [-]: MOVE R18 R5  
       73 [-]: MOVE R19 R16 
-      74 [-]: GETIMPORT R17 12 [nil]
+      74 [-]: GETIMPORT R17 12 [0x23D5322F]
       75 [-]: CALL R17 2 0 
 L17:  76 [-]: JUMP L20
     
 L18:  77 [-]: GETTABLE R19 R11 R14
       78 [-]: GETTABLEKS R18 R19 K13 ["upgradeObjectType"]
       79 [-]: FASTCALL1 62 R18 L19
-      80 [-]: GETIMPORT R17 5 [nil]
+      80 [-]: GETIMPORT R17 5 [0x7B998233]
       81 [-]: CALL R17 1 1 
 L19:  82 [-]: JUMPIF R17 L20
       83 [-]: GETTABLE R20 R11 R14
       84 [-]: GETTABLEKS R19 R20 K13 ["upgradeObjectType"]
       85 [-]: FASTCALL2 52 R6 R19 L20
       86 [-]: MOVE R18 R6  
-      87 [-]: GETIMPORT R17 12 [nil]
+      87 [-]: GETIMPORT R17 12 [0x23D5322F]
       88 [-]: CALL R17 2 0 
 L20:  89 [-]: FORNLOOP R12 L8
 L21:  90 [-]: FORNLOOP R8 L7

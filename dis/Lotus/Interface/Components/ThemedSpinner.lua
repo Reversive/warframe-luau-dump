@@ -5,17 +5,17 @@
 ; Is_vararg:       1
 ; Max Stack Size:  4
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0xAEABECDA]
        2 [-]: GETVARARGS R1 1
-       3 [-]: GETIMPORT R2 4 [nil]
+       3 [-]: GETIMPORT R2 4 ["seeall"]
        4 [-]: CALL R0 2 0  
-       5 [-]: GETIMPORT R0 6 [nil]
+       5 [-]: GETIMPORT R0 6 [0x2D0FAD09]
        6 [-]: LOADK R1 K7 ["EE.Interface.Utilities"]
        7 [-]: CALL R0 1 1  
-       8 [-]: GETIMPORT R1 6 [nil]
+       8 [-]: GETIMPORT R1 6 [0x2D0FAD09]
        9 [-]: LOADK R2 K8 ["Lotus.Interface.UIStyleUtilities"]
       10 [-]: CALL R1 1 1  
-      11 [-]: GETIMPORT R2 10 [nil]
+      11 [-]: GETIMPORT R2 10 [0xB009BBC6]
       12 [-]: LOADK R3 K11 ["/Lotus/Interface/Materials/SpinnerLoomMaterial"]
       13 [-]: CALL R2 1 1  
       14 [-]: DUPCLOSURE R3 K12 []
@@ -109,7 +109,7 @@
       73 [-]: MOVE R7 R1   
       74 [-]: LOADK R8 K35 [".Darkener"]
       75 [-]: CONCAT R6 R7 R8
-      76 [-]: GETIMPORT R8 37 [nil]
+      76 [-]: GETIMPORT R8 37 [0x0032441C]
       77 [-]: GETTABLEKS R7 R8 K38 ["UITexture_CircleGradientBacker"]
       78 [-]: NAMECALL R4 R0 K39 [0x1CB415C1]
       79 [-]: CALL R4 3 0  
@@ -125,25 +125,25 @@
       89 [-]: GETUPVAL R7 2
       90 [-]: NAMECALL R4 R0 K41 [0xD5181643]
       91 [-]: CALL R4 3 0  
-      92 [-]: GETIMPORT R4 44 [nil]
+      92 [-]: GETIMPORT R4 44 [0x38F10E85]
       93 [-]: MOVE R5 R0   
       94 [-]: MOVE R7 R1   
       95 [-]: LOADK R8 K45 [".Diamonds.stop"]
       96 [-]: CONCAT R6 R7 R8
       97 [-]: CALL R4 2 0  
-      98 [-]: GETIMPORT R4 44 [nil]
+      98 [-]: GETIMPORT R4 44 [0x38F10E85]
       99 [-]: MOVE R5 R0   
      100 [-]: MOVE R7 R1   
      101 [-]: LOADK R8 K46 [".LeftLoom.stop"]
      102 [-]: CONCAT R6 R7 R8
      103 [-]: CALL R4 2 0  
-     104 [-]: GETIMPORT R4 44 [nil]
+     104 [-]: GETIMPORT R4 44 [0x38F10E85]
      105 [-]: MOVE R5 R0   
      106 [-]: MOVE R7 R1   
      107 [-]: LOADK R8 K47 [".RightLoom.stop"]
      108 [-]: CONCAT R6 R7 R8
      109 [-]: CALL R4 2 0  
-     110 [-]: GETIMPORT R7 50 [nil]
+     110 [-]: GETIMPORT R7 50 [0x1467D5F4]
      111 [-]: CALL R7 0 1  
      112 [-]: NOT R6 R7    
      113 [-]: NAMECALL R4 R3 K51 [0x557B7601]

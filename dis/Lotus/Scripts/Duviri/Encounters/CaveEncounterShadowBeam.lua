@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  3
 
-            1 [-]: LOADNIL R0   
+       1 [-]: LOADNIL R0   
        2 [-]: NEWCLOSURE R1 P0
        3 [-]: MOVE R1 R0   
        4 [-]: DUPCLOSURE R2 K0 []
@@ -24,23 +24,23 @@
 
        0 [-]: FASTCALL1 62 R0 L0
        1 [-]: MOVE R3 R0   
-       2 [-]: GETIMPORT R2 1 [nil]
+       2 [-]: GETIMPORT R2 1 [0x7B998233]
        3 [-]: CALL R2 1 1  
 L 0:   4 [-]: JUMPIF R2 L2 
        5 [-]: FASTCALL1 62 R1 L1
        6 [-]: MOVE R3 R1   
-       7 [-]: GETIMPORT R2 1 [nil]
+       7 [-]: GETIMPORT R2 1 [0x7B998233]
        8 [-]: CALL R2 1 1  
 L 1:   9 [-]: JUMPIFNOT R2 L3
 L 2:  10 [-]: RETURN R0 0  
-L 3:  11 [-]: GETIMPORT R2 3 [nil]
+L 3:  11 [-]: GETIMPORT R2 3 ["_T"]
       12 [-]: SETTABLEKS R1 R2 K4 ["CondrixExplicitSource"]
-      13 [-]: GETIMPORT R4 6 [nil]
-      14 [-]: GETIMPORT R5 8 [nil]
-      15 [-]: GETIMPORT R6 10 [nil]
-      16 [-]: GETIMPORT R7 12 [nil]
-      17 [-]: GETIMPORT R8 10 [nil]
-      18 [-]: GETIMPORT R9 14 [nil]
+      13 [-]: GETIMPORT R4 6 [0xD6C9F44C]
+      14 [-]: GETIMPORT R5 8 ["EMPTY_SYMBOL"]
+      15 [-]: GETIMPORT R6 10 ["ZERO_VECTOR"]
+      16 [-]: GETIMPORT R7 12 [0x20B7F774]
+      17 [-]: GETIMPORT R8 10 ["ZERO_VECTOR"]
+      18 [-]: GETIMPORT R9 14 [0xA421AF95]
       19 [-]: LOADN R10 0  
       20 [-]: LOADN R11 1  
       21 [-]: LOADN R12 0  
@@ -59,8 +59,8 @@ L 3:  11 [-]: GETIMPORT R2 3 [nil]
 ; Is_vararg:       0
 ; Max Stack Size:  8
 
-       0 [-]: GETIMPORT R1 1 [nil]
-       1 [-]: GETIMPORT R3 3 [nil]
+       0 [-]: GETIMPORT R1 1 [0x89326C93]
+       1 [-]: GETIMPORT R3 3 [0x3B83CBF5]
        2 [-]: NAMECALL R4 R0 K4 [0xD1586535]
        3 [-]: CALL R4 1 1  
        4 [-]: LOADN R5 30  
@@ -70,7 +70,7 @@ L 3:  11 [-]: GETIMPORT R2 3 [nil]
        8 [-]: CALL R1 6 1  
        9 [-]: FASTCALL1 62 R1 L0
       10 [-]: MOVE R3 R1   
-      11 [-]: GETIMPORT R2 7 [nil]
+      11 [-]: GETIMPORT R2 7 [0x7B998233]
       12 [-]: CALL R2 1 1  
 L 0:  13 [-]: JUMPIF R2 L1 
       14 [-]: GETUPVAL R2 0

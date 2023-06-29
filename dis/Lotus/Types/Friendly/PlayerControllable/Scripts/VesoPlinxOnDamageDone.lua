@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  1
 
-            1 [-]: DUPCLOSURE R0 K0 []
+       1 [-]: DUPCLOSURE R0 K0 []
        2 [-]: SETGLOBAL R0 K1 ["OnDamageDone"]
        3 [-]: RETURN R0 0  
 
@@ -19,21 +19,21 @@
 
        0 [-]: FASTCALL1 62 R2 L0
        1 [-]: MOVE R4 R2   
-       2 [-]: GETIMPORT R3 1 [nil]
+       2 [-]: GETIMPORT R3 1 [0x7B998233]
        3 [-]: CALL R3 1 1  
 L 0:   4 [-]: JUMPIF R3 L3 
        5 [-]: FASTCALL1 62 R1 L1
        6 [-]: MOVE R4 R1   
-       7 [-]: GETIMPORT R3 1 [nil]
+       7 [-]: GETIMPORT R3 1 [0x7B998233]
        8 [-]: CALL R3 1 1  
 L 1:   9 [-]: JUMPIF R3 L3 
-      10 [-]: GETIMPORT R4 4 [nil]
+      10 [-]: GETIMPORT R4 4 ["VesoMoas"]
       11 [-]: FASTCALL1 62 R4 L2
-      12 [-]: GETIMPORT R3 1 [nil]
+      12 [-]: GETIMPORT R3 1 [0x7B998233]
       13 [-]: CALL R3 1 1  
 L 2:  14 [-]: JUMPIFNOT R3 L4
 L 3:  15 [-]: RETURN R0 0  
-L 4:  16 [-]: GETIMPORT R3 6 [nil]
+L 4:  16 [-]: GETIMPORT R3 6 [0x7ED0A956]
       17 [-]: LOADK R4 K7 ["/Lotus/Types/Friendly/PlayerControllable/VesoDummyBipedAvatar"]
       18 [-]: CALL R3 1 1  
       19 [-]: MOVE R6 R3   
@@ -51,11 +51,11 @@ L 5:  24 [-]: NAMECALL R4 R1 K9 [0x36E85886]
       31 [-]: CALL R4 1 1  
       32 [-]: JUMPIFNOT R4 L9
       33 [-]: LOADN R6 1   
-      34 [-]: GETIMPORT R7 4 [nil]
+      34 [-]: GETIMPORT R7 4 ["VesoMoas"]
       35 [-]: LENGTH R4 R7 
       36 [-]: LOADN R5 1   
       37 [-]: FORNPREP R4 L9
-L 6:  38 [-]: GETIMPORT R9 4 [nil]
+L 6:  38 [-]: GETIMPORT R9 4 ["VesoMoas"]
       39 [-]: GETTABLE R8 R9 R6
       40 [-]: GETTABLEKS R7 R8 K12 ["avatar"]
       41 [-]: JUMPIFNOTEQ R2 R7 L8
@@ -68,7 +68,7 @@ L 6:  38 [-]: GETIMPORT R9 4 [nil]
       48 [-]: NAMECALL R7 R7 K15 [0xE6F43518]
       49 [-]: CALL R7 2 1  
       50 [-]: JUMPIF R7 L7 
-      51 [-]: GETIMPORT R8 4 [nil]
+      51 [-]: GETIMPORT R8 4 ["VesoMoas"]
       52 [-]: GETTABLE R7 R8 R6
       53 [-]: LOADB R8 1   
       54 [-]: SETTABLEKS R8 R7 K16 ["triggerSD"]

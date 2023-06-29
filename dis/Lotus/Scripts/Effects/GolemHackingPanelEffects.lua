@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  2
 
-            1 [-]: DUPCLOSURE R0 K0 []
+       1 [-]: DUPCLOSURE R0 K0 []
        2 [-]: DUPCLOSURE R1 K1 []
        3 [-]: SETGLOBAL R1 K2 ["shrinkTumor"]
        4 [-]: RETURN R0 0  
@@ -54,24 +54,24 @@ L 1:  16 [-]: SUBK R0 R0 K2 [2]
 ; Is_vararg:       0
 ; Max Stack Size:  18
 
-       0 [-]: GETIMPORT R1 1 [nil]
-       1 [-]: GETIMPORT R2 3 [nil]
+       0 [-]: GETIMPORT R1 1 [0xCBD666E1]
+       1 [-]: GETIMPORT R2 3 [0xE8489591]
        2 [-]: CALL R1 1 0  
        3 [-]: LOADN R1 0   
-       4 [-]: GETIMPORT R2 5 [nil]
+       4 [-]: GETIMPORT R2 5 [0x4E43474B]
        5 [-]: JUMPIFNOT R2 L0
        6 [-]: NAMECALL R2 R0 K6 [0x65D389CB]
        7 [-]: CALL R2 1 1  
        8 [-]: SETGLOBAL R2 K7 [0xF96894AC]
-L 0:   9 [-]: GETIMPORT R2 9 [nil]
+L 0:   9 [-]: GETIMPORT R2 9 [0x07E9D557]
       10 [-]: JUMPIFNOTLT R1 R2 L5
       11 [-]: LOADK R3 K10 [0.01]
       12 [-]: MOVE R5 R1   
       13 [-]: GETGLOBAL R6 K7 [0xF96894AC]
-      14 [-]: GETIMPORT R8 12 [nil]
+      14 [-]: GETIMPORT R8 12 [0x65448093]
       15 [-]: GETGLOBAL R9 K7 [0xF96894AC]
       16 [-]: SUB R7 R8 R9 
-      17 [-]: GETIMPORT R8 9 [nil]
+      17 [-]: GETIMPORT R8 9 [0x07E9D557]
       18 [-]: LOADK R9 K13 [1.1000000000000001]
       19 [-]: JUMPIF R9 L1 
       20 [-]: LOADK R9 K14 [1.7015800000000001]
@@ -103,15 +103,15 @@ L 2:  35 [-]: SUBK R5 R5 K16 [2]
       45 [-]: JUMP L3
      
 L 3:  46 [-]: FASTCALL2 18 R3 R4 L4
-      47 [-]: GETIMPORT R2 20 [nil]
+      47 [-]: GETIMPORT R2 20 [0xB62ECFE0]
       48 [-]: CALL R2 2 1  
 L 4:  49 [-]: MOVE R5 R2   
       50 [-]: NAMECALL R3 R0 K21 [0x2D9BA74F]
       51 [-]: CALL R3 2 0  
-      52 [-]: GETIMPORT R3 23 [nil]
+      52 [-]: GETIMPORT R3 23 [0x67652851]
       53 [-]: CALL R3 0 1  
       54 [-]: ADD R1 R1 R3 
-      55 [-]: GETIMPORT R3 1 [nil]
+      55 [-]: GETIMPORT R3 1 [0xCBD666E1]
       56 [-]: LOADN R4 0   
       57 [-]: CALL R3 1 0  
       58 [-]: JUMPBACK L0  

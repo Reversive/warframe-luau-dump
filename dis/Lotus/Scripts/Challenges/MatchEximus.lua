@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  1
 
-            1 [-]: DUPCLOSURE R0 K0 []
+       1 [-]: DUPCLOSURE R0 K0 []
        2 [-]: SETGLOBAL R0 K1 ["MatchAttackEvent"]
        3 [-]: RETURN R0 0  
 
@@ -19,16 +19,16 @@
 
        0 [-]: NAMECALL R2 R0 K0 [0x01145F7A]
        1 [-]: CALL R2 1 1  
-       2 [-]: GETIMPORT R3 2 [nil]
+       2 [-]: GETIMPORT R3 2 [0x2B88FD53]
        3 [-]: JUMPIFNOT R3 L1
        4 [-]: NAMECALL R3 R0 K3 [0x14A55974]
        5 [-]: CALL R3 1 1  
        6 [-]: FASTCALL1 62 R3 L0
        7 [-]: MOVE R5 R3   
-       8 [-]: GETIMPORT R4 5 [nil]
+       8 [-]: GETIMPORT R4 5 [0x7B998233]
        9 [-]: CALL R4 1 1  
 L 0:  10 [-]: JUMPIF R4 L1 
-      11 [-]: GETIMPORT R6 7 [nil]
+      11 [-]: GETIMPORT R6 7 ["gLotusWeaponType"]
       12 [-]: NAMECALL R4 R3 K8 [0xF2DEAF69]
       13 [-]: CALL R4 2 1  
       14 [-]: JUMPIFNOT R4 L1
@@ -39,7 +39,7 @@ L 0:  10 [-]: JUMPIF R4 L1
       19 [-]: RETURN R4 1  
 L 1:  20 [-]: FASTCALL1 62 R2 L2
       21 [-]: MOVE R5 R2   
-      22 [-]: GETIMPORT R4 5 [nil]
+      22 [-]: GETIMPORT R4 5 [0x7B998233]
       23 [-]: CALL R4 1 1  
 L 2:  24 [-]: NOT R3 R4    
       25 [-]: JUMPIFNOT R3 L5
@@ -48,7 +48,7 @@ L 2:  24 [-]: NOT R3 R4
       28 [-]: JUMPIFNOT R3 L5
       29 [-]: NAMECALL R5 R2 K12 [0x2D0A291F]
       30 [-]: CALL R5 1 1  
-      31 [-]: GETIMPORT R6 14 [nil]
+      31 [-]: GETIMPORT R6 14 [0x0469F296]
       32 [-]: LOADK R7 K15 ["NIGHTMARE_BERSERKER"]
       33 [-]: CALL R6 1 1  
       34 [-]: JUMPIFEQ R5 R6 L3

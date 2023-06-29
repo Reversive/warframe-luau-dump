@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  1
 
-            1 [-]: DUPCLOSURE R0 K0 []
+       1 [-]: DUPCLOSURE R0 K0 []
        2 [-]: SETGLOBAL R0 K1 ["SolarisEmissives"]
        3 [-]: RETURN R0 0  
 
@@ -17,27 +17,27 @@
 ; Is_vararg:       0
 ; Max Stack Size:  17
 
-       0 [-]: GETIMPORT R1 2 [nil]
+       0 [-]: GETIMPORT R1 2 ["SolarisEmissivesEntities"]
        1 [-]: JUMPIFNOT R1 L2
-       2 [-]: GETIMPORT R3 2 [nil]
+       2 [-]: GETIMPORT R3 2 ["SolarisEmissivesEntities"]
        3 [-]: GETTABLEN R2 R3 1
        4 [-]: FASTCALL1 62 R2 L0
-       5 [-]: GETIMPORT R1 4 [nil]
+       5 [-]: GETIMPORT R1 4 [0x7B998233]
        6 [-]: CALL R1 1 1  
 L 0:   7 [-]: JUMPIF R1 L2 
-       8 [-]: GETIMPORT R2 2 [nil]
+       8 [-]: GETIMPORT R2 2 ["SolarisEmissivesEntities"]
        9 [-]: FASTCALL2 52 R2 R0 L1
       10 [-]: MOVE R3 R0   
-      11 [-]: GETIMPORT R1 7 [nil]
+      11 [-]: GETIMPORT R1 7 [0x23D5322F]
       12 [-]: CALL R1 2 0  
 L 1:  13 [-]: RETURN R0 0  
-L 2:  14 [-]: GETIMPORT R1 9 [nil]
+L 2:  14 [-]: GETIMPORT R1 9 [0x0469F296]
       15 [-]: LOADK R2 K10 ["EmissiveMapAtten"]
       16 [-]: CALL R1 1 1  
       17 [-]: NEWTABLE R2 0 1
       18 [-]: MOVE R3 R0   
       19 [-]: SETLIST R2 R3 1 [1]
-      20 [-]: GETIMPORT R3 11 [nil]
+      20 [-]: GETIMPORT R3 11 ["_T"]
       21 [-]: SETTABLEKS R2 R3 K1 ["SolarisEmissivesEntities"]
 L 3:  22 [-]: LOADN R5 1   
       23 [-]: LENGTH R3 R2 
@@ -46,7 +46,7 @@ L 3:  22 [-]: LOADN R5 1
 L 4:  26 [-]: GETTABLE R6 R2 R5
       27 [-]: FASTCALL1 62 R6 L5
       28 [-]: MOVE R8 R6   
-      29 [-]: GETIMPORT R7 4 [nil]
+      29 [-]: GETIMPORT R7 4 [0x7B998233]
       30 [-]: CALL R7 1 1  
 L 5:  31 [-]: JUMPIF R7 L11
       32 [-]: LOADK R9 K12 [0.5]
@@ -58,32 +58,32 @@ L 5:  31 [-]: JUMPIF R7 L11
       38 [-]: LOADK R8 K15 [0.10000000000000001]
       39 [-]: FASTCALL1 62 R7 L6
       40 [-]: MOVE R10 R7  
-      41 [-]: GETIMPORT R9 4 [nil]
+      41 [-]: GETIMPORT R9 4 [0x7B998233]
       42 [-]: CALL R9 1 1  
 L 6:  43 [-]: JUMPIFNOT R9 L8
-      44 [-]: GETIMPORT R9 17 [nil]
+      44 [-]: GETIMPORT R9 17 [0xF36BD7A6]
       45 [-]: JUMPIFNOT R9 L8
-      46 [-]: GETIMPORT R10 19 [nil]
+      46 [-]: GETIMPORT R10 19 ["curTransmission"]
       47 [-]: FASTCALL1 62 R10 L7
-      48 [-]: GETIMPORT R9 4 [nil]
+      48 [-]: GETIMPORT R9 4 [0x7B998233]
       49 [-]: CALL R9 1 1  
 L 7:  50 [-]: JUMPIF R9 L8 
-      51 [-]: GETIMPORT R9 19 [nil]
+      51 [-]: GETIMPORT R9 19 ["curTransmission"]
       52 [-]: NAMECALL R9 R9 K20 [0x22DA1852]
       53 [-]: CALL R9 1 1  
-      54 [-]: GETIMPORT R10 22 [nil]
+      54 [-]: GETIMPORT R10 22 [0xA2B4BEBE]
       55 [-]: JUMPIFNOTEQ R9 R10 L8
-      56 [-]: GETIMPORT R7 24 [nil]
+      56 [-]: GETIMPORT R7 24 ["TransmissionSoundInstance"]
 L 8:  57 [-]: FASTCALL1 62 R7 L9
       58 [-]: MOVE R10 R7  
-      59 [-]: GETIMPORT R9 4 [nil]
+      59 [-]: GETIMPORT R9 4 [0x7B998233]
       60 [-]: CALL R9 1 1  
 L 9:  61 [-]: JUMPIF R9 L10
       62 [-]: NAMECALL R9 R7 K25 [0xDAE5BCB5]
       63 [-]: CALL R9 1 1  
       64 [-]: MOVE R8 R9   
       65 [-]: MUL R8 R8 R8 
-      66 [-]: GETIMPORT R9 27 [nil]
+      66 [-]: GETIMPORT R9 27 [0x9BAFFFE3]
       67 [-]: LOADK R10 K15 [0.10000000000000001]
       68 [-]: LOADN R11 6  
       69 [-]: MOVE R12 R8  
@@ -98,7 +98,7 @@ L10:  72 [-]: MOVE R11 R1
       78 [-]: NAMECALL R9 R6 K28 [0x986D2AB8]
       79 [-]: CALL R9 7 0  
 L11:  80 [-]: FORNLOOP R3 L4
-L12:  81 [-]: GETIMPORT R3 30 [nil]
+L12:  81 [-]: GETIMPORT R3 30 [0xCBD666E1]
       82 [-]: LOADN R4 0   
       83 [-]: CALL R3 1 0  
       84 [-]: JUMPBACK L3  

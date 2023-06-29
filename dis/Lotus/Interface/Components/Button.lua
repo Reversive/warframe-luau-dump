@@ -5,9 +5,9 @@
 ; Is_vararg:       1
 ; Max Stack Size:  3
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0xAEABECDA]
        2 [-]: GETVARARGS R1 1
-       3 [-]: GETIMPORT R2 4 [nil]
+       3 [-]: GETIMPORT R2 4 ["seeall"]
        4 [-]: CALL R0 2 0  
        5 [-]: DUPCLOSURE R0 K5 []
        6 [-]: SETGLOBAL R0 K6 ["CreateButton"]
@@ -53,7 +53,7 @@
       29 [-]: SETTABLEKS R9 R8 K16 ["mOnFocusedCallback"]
       30 [-]: LOADNIL R9   
       31 [-]: SETTABLEKS R9 R8 K17 ["mOnUnfocusedCallback"]
-      32 [-]: GETIMPORT R9 19 [nil]
+      32 [-]: GETIMPORT R9 19 [0x2D0FAD09]
       33 [-]: LOADK R10 K20 ["EE.Interface.Utilities"]
       34 [-]: CALL R9 1 1  
       35 [-]: SETTABLEKS R9 R8 K21 ["UTIL"]
@@ -89,7 +89,7 @@
       65 [-]: SETTABLEKS R9 R8 K40 ["mFittedPadding"]
       66 [-]: LOADN R9 45  
       67 [-]: SETTABLEKS R9 R8 K41 ["mFittedPaddingWithController"]
-      68 [-]: GETIMPORT R10 43 [nil]
+      68 [-]: GETIMPORT R10 43 [0x0032441C]
       69 [-]: GETTABLEKS R9 R10 K44 ["UISound_Focus"]
       70 [-]: SETTABLEKS R9 R8 K45 ["mRollOverSound"]
       71 [-]: LOADB R9 0   
@@ -128,12 +128,12 @@
      104 [-]: SETTABLEKS R9 R8 K77 ["Pressed"]
      105 [-]: GETTABLEKS R10 R8 K21 ["UTIL"]
      106 [-]: GETTABLEKS R9 R10 K78 ["Ternary"]
-     107 [-]: GETIMPORT R12 43 [nil]
+     107 [-]: GETIMPORT R12 43 [0x0032441C]
      108 [-]: GETTABLEKS R11 R12 K79 ["UIColor_Black"]
      109 [-]: JUMPXEQKNIL R11 L0 NOT
      110 [-]: LOADB R10 0 +1
 L 0: 111 [-]: LOADB R10 1  
-L 1: 112 [-]: GETIMPORT R12 43 [nil]
+L 1: 112 [-]: GETIMPORT R12 43 [0x0032441C]
      113 [-]: GETTABLEKS R11 R12 K79 ["UIColor_Black"]
      114 [-]: LOADN R12 0  
      115 [-]: CALL R9 3 1  
@@ -142,36 +142,36 @@ L 1: 112 [-]: GETIMPORT R12 43 [nil]
      118 [-]: JUMPIFNOT R9 L8
      119 [-]: GETTABLEKS R10 R8 K21 ["UTIL"]
      120 [-]: GETTABLEKS R9 R10 K78 ["Ternary"]
-     121 [-]: GETIMPORT R12 43 [nil]
+     121 [-]: GETIMPORT R12 43 [0x0032441C]
      122 [-]: GETTABLEKS R11 R12 K80 ["UIColor_DarkGrey"]
      123 [-]: JUMPXEQKNIL R11 L2 NOT
      124 [-]: LOADB R10 0 +1
 L 2: 125 [-]: LOADB R10 1  
-L 3: 126 [-]: GETIMPORT R12 43 [nil]
+L 3: 126 [-]: GETIMPORT R12 43 [0x0032441C]
      127 [-]: GETTABLEKS R11 R12 K80 ["UIColor_DarkGrey"]
      128 [-]: LOADK R12 K81 [2368548]
      129 [-]: CALL R9 3 1  
      130 [-]: SETTABLEKS R9 R8 K12 ["mLabelOffColor"]
      131 [-]: GETTABLEKS R10 R8 K21 ["UTIL"]
      132 [-]: GETTABLEKS R9 R10 K78 ["Ternary"]
-     133 [-]: GETIMPORT R12 43 [nil]
+     133 [-]: GETIMPORT R12 43 [0x0032441C]
      134 [-]: GETTABLEKS R11 R12 K82 ["UIColor_Yellow"]
      135 [-]: JUMPXEQKNIL R11 L4 NOT
      136 [-]: LOADB R10 0 +1
 L 4: 137 [-]: LOADB R10 1  
-L 5: 138 [-]: GETIMPORT R12 43 [nil]
+L 5: 138 [-]: GETIMPORT R12 43 [0x0032441C]
      139 [-]: GETTABLEKS R11 R12 K82 ["UIColor_Yellow"]
      140 [-]: LOADK R12 K83 [14276480]
      141 [-]: CALL R9 3 1  
      142 [-]: SETTABLEKS R9 R8 K13 ["mButtonOnColor"]
      143 [-]: GETTABLEKS R10 R8 K21 ["UTIL"]
      144 [-]: GETTABLEKS R9 R10 K78 ["Ternary"]
-     145 [-]: GETIMPORT R12 43 [nil]
+     145 [-]: GETIMPORT R12 43 [0x0032441C]
      146 [-]: GETTABLEKS R11 R12 K84 ["UIColor_White"]
      147 [-]: JUMPXEQKNIL R11 L6 NOT
      148 [-]: LOADB R10 0 +1
 L 6: 149 [-]: LOADB R10 1  
-L 7: 150 [-]: GETIMPORT R12 43 [nil]
+L 7: 150 [-]: GETIMPORT R12 43 [0x0032441C]
      151 [-]: GETTABLEKS R11 R12 K84 ["UIColor_White"]
      152 [-]: LOADK R12 K85 [16777215]
      153 [-]: CALL R9 3 1  
@@ -179,36 +179,36 @@ L 7: 150 [-]: GETIMPORT R12 43 [nil]
      155 [-]: RETURN R8 1  
 L 8: 156 [-]: GETTABLEKS R10 R8 K21 ["UTIL"]
      157 [-]: GETTABLEKS R9 R10 K78 ["Ternary"]
-     158 [-]: GETIMPORT R12 43 [nil]
+     158 [-]: GETIMPORT R12 43 [0x0032441C]
      159 [-]: GETTABLEKS R11 R12 K86 ["UIColor_LightBlue"]
      160 [-]: JUMPXEQKNIL R11 L9 NOT
      161 [-]: LOADB R10 0 +1
 L 9: 162 [-]: LOADB R10 1  
-L10: 163 [-]: GETIMPORT R12 43 [nil]
+L10: 163 [-]: GETIMPORT R12 43 [0x0032441C]
      164 [-]: GETTABLEKS R11 R12 K86 ["UIColor_LightBlue"]
      165 [-]: LOADK R12 K87 [12769497]
      166 [-]: CALL R9 3 1  
      167 [-]: SETTABLEKS R9 R8 K12 ["mLabelOffColor"]
      168 [-]: GETTABLEKS R10 R8 K21 ["UTIL"]
      169 [-]: GETTABLEKS R9 R10 K78 ["Ternary"]
-     170 [-]: GETIMPORT R12 43 [nil]
+     170 [-]: GETIMPORT R12 43 [0x0032441C]
      171 [-]: GETTABLEKS R11 R12 K88 ["UIColor_Orange"]
      172 [-]: JUMPXEQKNIL R11 L11 NOT
      173 [-]: LOADB R10 0 +1
 L11: 174 [-]: LOADB R10 1  
-L12: 175 [-]: GETIMPORT R12 43 [nil]
+L12: 175 [-]: GETIMPORT R12 43 [0x0032441C]
      176 [-]: GETTABLEKS R11 R12 K88 ["UIColor_Orange"]
      177 [-]: LOADK R12 K89 [13466625]
      178 [-]: CALL R9 3 1  
      179 [-]: SETTABLEKS R9 R8 K13 ["mButtonOnColor"]
      180 [-]: GETTABLEKS R10 R8 K21 ["UTIL"]
      181 [-]: GETTABLEKS R9 R10 K78 ["Ternary"]
-     182 [-]: GETIMPORT R12 43 [nil]
+     182 [-]: GETIMPORT R12 43 [0x0032441C]
      183 [-]: GETTABLEKS R11 R12 K90 ["UIColor_DarkBlue"]
      184 [-]: JUMPXEQKNIL R11 L13 NOT
      185 [-]: LOADB R10 0 +1
 L13: 186 [-]: LOADB R10 1  
-L14: 187 [-]: GETIMPORT R12 43 [nil]
+L14: 187 [-]: GETIMPORT R12 43 [0x0032441C]
      188 [-]: GETTABLEKS R11 R12 K90 ["UIColor_DarkBlue"]
      189 [-]: LOADK R12 K91 [4546669]
      190 [-]: CALL R9 3 1  

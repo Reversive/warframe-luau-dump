@@ -5,82 +5,82 @@
 ; Is_vararg:       1
 ; Max Stack Size:  20
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0xAEABECDA]
        2 [-]: GETVARARGS R1 1
-       3 [-]: GETIMPORT R2 4 [nil]
+       3 [-]: GETIMPORT R2 4 ["seeall"]
        4 [-]: CALL R0 2 0  
-       5 [-]: GETIMPORT R0 6 [nil]
+       5 [-]: GETIMPORT R0 6 [0x7ED0A956]
        6 [-]: LOADK R1 K7 ["/Lotus/Types/GameRules/LotusObstacleCourseGameRules"]
        7 [-]: CALL R0 1 1  
        8 [-]: SETGLOBAL R0 K8 ["dojoCustomObstacleCourseGameRules"]
-       9 [-]: GETIMPORT R0 10 [nil]
+       9 [-]: GETIMPORT R0 10 [0x2D0FAD09]
       10 [-]: LOADK R1 K11 ["Lotus.Scripts.Effects.EffectsColorUtilities"]
       11 [-]: CALL R0 1 1  
-      12 [-]: GETIMPORT R1 10 [nil]
+      12 [-]: GETIMPORT R1 10 [0x2D0FAD09]
       13 [-]: LOADK R2 K12 ["EE.Interface.Utilities"]
       14 [-]: CALL R1 1 1  
-      15 [-]: GETIMPORT R2 10 [nil]
+      15 [-]: GETIMPORT R2 10 [0x2D0FAD09]
       16 [-]: LOADK R3 K13 ["Lotus.Interface.WorldStateUtilities"]
       17 [-]: CALL R2 1 1  
-      18 [-]: GETIMPORT R3 10 [nil]
+      18 [-]: GETIMPORT R3 10 [0x2D0FAD09]
       19 [-]: LOADK R4 K14 ["Lotus.Scripts.Libs.PlayerShipUtilities"]
       20 [-]: CALL R3 1 1  
-      21 [-]: GETIMPORT R4 6 [nil]
+      21 [-]: GETIMPORT R4 6 [0x7ED0A956]
       22 [-]: LOADK R5 K15 ["/Lotus/Types/Player/TennoAvatar"]
       23 [-]: CALL R4 1 1  
       24 [-]: SETGLOBAL R4 K16 ["playerAvatarType"]
-      25 [-]: GETIMPORT R4 6 [nil]
+      25 [-]: GETIMPORT R4 6 [0x7ED0A956]
       26 [-]: LOADK R5 K17 ["/Lotus/Types/Game/DojoPlaceableDecorations/ShipPlaceableLight"]
       27 [-]: CALL R4 1 1  
-      28 [-]: GETIMPORT R5 6 [nil]
+      28 [-]: GETIMPORT R5 6 [0x7ED0A956]
       29 [-]: LOADK R6 K18 ["/Lotus/Types/Game/DojoPlaceableDecorations/ShipPlaceableTextLight"]
       30 [-]: CALL R5 1 1  
       31 [-]: NEWTABLE R6 0 12
-      32 [-]: GETIMPORT R7 6 [nil]
+      32 [-]: GETIMPORT R7 6 [0x7ED0A956]
       33 [-]: LOADK R8 K19 ["/Lotus/Levels/ClanDojo/DojoBlankSlate.level"]
       34 [-]: CALL R7 1 1  
-      35 [-]: GETIMPORT R8 6 [nil]
+      35 [-]: GETIMPORT R8 6 [0x7ED0A956]
       36 [-]: LOADK R9 K20 ["/Lotus/Levels/ClanDojo/DojoInspirationHall.level"]
       37 [-]: CALL R8 1 1  
-      38 [-]: GETIMPORT R9 6 [nil]
+      38 [-]: GETIMPORT R9 6 [0x7ED0A956]
       39 [-]: LOADK R10 K21 ["/Lotus/Levels/ClanDojo/Observatory.level"]
       40 [-]: CALL R9 1 1  
-      41 [-]: GETIMPORT R10 6 [nil]
+      41 [-]: GETIMPORT R10 6 [0x7ED0A956]
       42 [-]: LOADK R11 K22 ["/Lotus/Levels/ClanDojo/ClanDojoCorpus.level"]
       43 [-]: CALL R10 1 1 
-      44 [-]: GETIMPORT R11 6 [nil]
+      44 [-]: GETIMPORT R11 6 [0x7ED0A956]
       45 [-]: LOADK R12 K23 ["/Lotus/Levels/ClanDojo/ClanDojoGrineerForest.level"]
       46 [-]: CALL R11 1 1 
-      47 [-]: GETIMPORT R12 6 [nil]
+      47 [-]: GETIMPORT R12 6 [0x7ED0A956]
       48 [-]: LOADK R13 K24 ["/Lotus/Levels/ClanDojo/ClanDojoGrineerFortress.level"]
       49 [-]: CALL R12 1 1 
-      50 [-]: GETIMPORT R13 6 [nil]
+      50 [-]: GETIMPORT R13 6 [0x7ED0A956]
       51 [-]: LOADK R14 K25 ["/Lotus/Levels/ClanDojo/ClanDojoGrineerOcean.level"]
       52 [-]: CALL R13 1 1 
-      53 [-]: GETIMPORT R14 6 [nil]
+      53 [-]: GETIMPORT R14 6 [0x7ED0A956]
       54 [-]: LOADK R15 K26 ["/Lotus/Levels/ClanDojo/ClanDojoGrineerSettlement.level"]
       55 [-]: CALL R14 1 1 
-      56 [-]: GETIMPORT R15 6 [nil]
+      56 [-]: GETIMPORT R15 6 [0x7ED0A956]
       57 [-]: LOADK R16 K27 ["/Lotus/Levels/ClanDojo/ClanDojoOrokinMoon.level"]
       58 [-]: CALL R15 1 1 
-      59 [-]: GETIMPORT R16 6 [nil]
+      59 [-]: GETIMPORT R16 6 [0x7ED0A956]
       60 [-]: LOADK R17 K28 ["/Lotus/Levels/ClanDojo/ClanDojoOstron.level"]
       61 [-]: CALL R16 1 1 
-      62 [-]: GETIMPORT R17 6 [nil]
+      62 [-]: GETIMPORT R17 6 [0x7ED0A956]
       63 [-]: LOADK R18 K29 ["/Lotus/Levels/ClanDojo/ClanDojoVenus.level"]
       64 [-]: CALL R17 1 1 
-      65 [-]: GETIMPORT R18 6 [nil]
+      65 [-]: GETIMPORT R18 6 [0x7ED0A956]
       66 [-]: LOADK R19 K30 ["/Lotus/Levels/ClanDojo/ClanDojoGrnGalleon.level"]
       67 [-]: CALL R18 1 -1
       68 [-]: SETLIST R6 R7 -1 [1]
-      69 [-]: GETIMPORT R7 6 [nil]
+      69 [-]: GETIMPORT R7 6 [0x7ED0A956]
       70 [-]: LOADK R8 K31 ["/Lotus/Objects/Tenno/Props/TennoPlaceables/TnoSpawnPad"]
       71 [-]: CALL R7 1 1  
-      72 [-]: GETIMPORT R8 6 [nil]
+      72 [-]: GETIMPORT R8 6 [0x7ED0A956]
       73 [-]: LOADK R9 K32 ["/Lotus/Types/Game/Store/DojoRecipeManifest"]
       74 [-]: CALL R8 1 1  
       75 [-]: SETGLOBAL R8 K33 ["dojoRecipeManifest"]
-      76 [-]: GETIMPORT R8 6 [nil]
+      76 [-]: GETIMPORT R8 6 [0x7ED0A956]
       77 [-]: LOADK R9 K34 ["/Lotus/Levels/ClanDojo/ClanDojoZoneAttribs"]
       78 [-]: CALL R8 1 1  
       79 [-]: SETGLOBAL R8 K35 ["dojoZoneAttribsType"]
@@ -137,7 +137,7 @@ L 1:   6 [-]: RETURN R1 1
 
        0 [-]: GETTABLE R4 R0 R1
        1 [-]: FASTCALL1 62 R4 L0
-       2 [-]: GETIMPORT R3 1 [nil]
+       2 [-]: GETIMPORT R3 1 [0x7B998233]
        3 [-]: CALL R3 1 1  
 L 0:   4 [-]: JUMPIFNOT R3 L1
        5 [-]: NEWTABLE R3 0 0
@@ -159,7 +159,7 @@ L 4:  19 [-]: JUMPIF R3 L5
       20 [-]: GETTABLE R5 R0 R1
       21 [-]: FASTCALL2 52 R5 R2 L5
       22 [-]: MOVE R6 R2   
-      23 [-]: GETIMPORT R4 4 [nil]
+      23 [-]: GETIMPORT R4 4 [0x23D5322F]
       24 [-]: CALL R4 2 0  
 L 5:  25 [-]: RETURN R0 0  
 
@@ -173,7 +173,7 @@ L 5:  25 [-]: RETURN R0 0
 
        0 [-]: GETTABLE R4 R0 R1
        1 [-]: FASTCALL1 62 R4 L0
-       2 [-]: GETIMPORT R3 1 [nil]
+       2 [-]: GETIMPORT R3 1 [0x7B998233]
        3 [-]: CALL R3 1 1  
 L 0:   4 [-]: JUMPIF R3 L3 
        5 [-]: GETTABLE R6 R0 R1
@@ -184,7 +184,7 @@ L 0:   4 [-]: JUMPIF R3 L3
 L 1:  10 [-]: GETTABLE R7 R0 R1
       11 [-]: GETTABLE R6 R7 R5
       12 [-]: JUMPIFNOTEQ R6 R2 L2
-      13 [-]: GETIMPORT R6 4 [nil]
+      13 [-]: GETIMPORT R6 4 [0x9C1F3B5A]
       14 [-]: GETTABLE R7 R0 R1
       15 [-]: MOVE R8 R5   
       16 [-]: CALL R6 2 0  
@@ -201,7 +201,7 @@ L 3:  19 [-]: RETURN R0 0
 ; Max Stack Size:  10
 
        0 [-]: JUMPXEQKS R1 K0 L0 NOT [""]
-       1 [-]: GETIMPORT R4 3 [nil]
+       1 [-]: GETIMPORT R4 3 [0xA2BB0AAD]
        2 [-]: CALL R4 0 1  
        3 [-]: MOVE R5 R2   
        4 [-]: MOVE R6 R4   
@@ -209,7 +209,7 @@ L 3:  19 [-]: RETURN R0 0
        6 [-]: RETURN R0 0  
 L 0:   7 [-]: LOADNIL R4   
        8 [-]: JUMPIFNOT R3 L1
-       9 [-]: GETIMPORT R5 5 [nil]
+       9 [-]: GETIMPORT R5 5 [0xA94DF70B]
       10 [-]: GETTABLEKS R7 R0 K6 ["mDojo"]
       11 [-]: NAMECALL R7 R7 K7 [0xF9E7A4B4]
       12 [-]: CALL R7 1 -1 
@@ -219,7 +219,7 @@ L 0:   7 [-]: LOADNIL R4
       16 [-]: LOADN R4 1800
 L 1:  17 [-]: FASTCALL1 62 R4 L2
       18 [-]: MOVE R6 R4   
-      19 [-]: GETIMPORT R5 10 [nil]
+      19 [-]: GETIMPORT R5 10 [0x7B998233]
       20 [-]: CALL R5 1 1  
 L 2:  21 [-]: JUMPIF R5 L7 
       22 [-]: GETTABLEKS R6 R0 K11 ["mDojoRequests"]
@@ -227,23 +227,23 @@ L 2:  21 [-]: JUMPIF R5 L7
       24 [-]: LOADN R6 0   
       25 [-]: JUMPIFNOTLT R6 R5 L3
       26 [-]: RETURN R0 0  
-L 3:  27 [-]: GETIMPORT R6 13 [nil]
+L 3:  27 [-]: GETIMPORT R6 13 [0x0A8F62A7]
       28 [-]: CALL R6 0 1  
       29 [-]: GETTABLEKS R7 R0 K14 ["mLastDojoRefreshTime"]
       30 [-]: SUB R5 R6 R7 
       31 [-]: JUMPIFNOTLE R4 R5 L7
       32 [-]: GETTABLEKS R6 R0 K15 ["mLastRefreshTimes"]
       33 [-]: FASTCALL1 62 R6 L4
-      34 [-]: GETIMPORT R5 10 [nil]
+      34 [-]: GETIMPORT R5 10 [0x7B998233]
       35 [-]: CALL R5 1 1  
 L 4:  36 [-]: JUMPIF R5 L6 
       37 [-]: GETTABLEKS R7 R0 K15 ["mLastRefreshTimes"]
       38 [-]: GETTABLE R6 R7 R1
       39 [-]: FASTCALL1 62 R6 L5
-      40 [-]: GETIMPORT R5 10 [nil]
+      40 [-]: GETIMPORT R5 10 [0x7B998233]
       41 [-]: CALL R5 1 1  
 L 5:  42 [-]: JUMPIF R5 L6 
-      43 [-]: GETIMPORT R6 13 [nil]
+      43 [-]: GETIMPORT R6 13 [0x0A8F62A7]
       44 [-]: CALL R6 0 1  
       45 [-]: GETTABLEKS R8 R0 K15 ["mLastRefreshTimes"]
       46 [-]: GETTABLE R7 R8 R1
@@ -293,7 +293,7 @@ L 7:  58 [-]: GETTABLEKS R5 R0 K6 ["mDojo"]
 L 0:   9 [-]: NAMECALL R2 R1 K4 [0x9E1E1929]
       10 [-]: CALL R2 1 1  
       11 [-]: JUMPIFNOT R2 L1
-      12 [-]: GETIMPORT R2 6 [nil]
+      12 [-]: GETIMPORT R2 6 [0x89326C93]
       13 [-]: NAMECALL R2 R2 K7 [0x18D05D30]
       14 [-]: CALL R2 1 1  
       15 [-]: JUMPIFNOT R2 L1
@@ -318,7 +318,7 @@ L 2:  26 [-]: GETTABLE R6 R2 R5
       34 [-]: CALL R10 1 -1
       35 [-]: NAMECALL R7 R7 K11 [0x93B0DAFB]
       36 [-]: CALL R7 -1 0 
-L 3:  37 [-]: GETIMPORT R7 13 [nil]
+L 3:  37 [-]: GETIMPORT R7 13 [0xCE225EFA]
       38 [-]: LOADN R8 0   
       39 [-]: CALL R7 1 0  
       40 [-]: FORNLOOP R3 L2
@@ -332,10 +332,10 @@ L 4:  41 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  10
 
-       0 [-]: GETIMPORT R1 1 [nil]
+       0 [-]: GETIMPORT R1 1 [0x7ED0A956]
        1 [-]: LOADK R2 K2 ["/Lotus/Types/LevelObjects/DojoRoomCameraSpot"]
        2 [-]: CALL R1 1 1  
-       3 [-]: GETIMPORT R2 4 [nil]
+       3 [-]: GETIMPORT R2 4 [0x89326C93]
        4 [-]: MOVE R4 R1   
        5 [-]: NAMECALL R2 R2 K5 [0xFB669000]
        6 [-]: CALL R2 2 1  
@@ -363,32 +363,32 @@ L 2:  21 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  13
 
-       0 [-]: GETIMPORT R2 1 [nil]
-       1 [-]: GETIMPORT R4 3 [nil]
+       0 [-]: GETIMPORT R2 1 [0x89326C93]
+       1 [-]: GETIMPORT R4 3 ["gZoneAttribsType"]
        2 [-]: NAMECALL R2 R2 K4 [0xFB669000]
        3 [-]: CALL R2 2 1  
        4 [-]: LOADNIL R3   
-       5 [-]: GETIMPORT R5 7 [nil]
+       5 [-]: GETIMPORT R5 7 ["DojoMgr"]
        6 [-]: FASTCALL1 62 R5 L0
-       7 [-]: GETIMPORT R4 9 [nil]
+       7 [-]: GETIMPORT R4 9 [0x7B998233]
        8 [-]: CALL R4 1 1  
 L 0:   9 [-]: JUMPIF R4 L3 
-      10 [-]: GETIMPORT R5 11 [nil]
+      10 [-]: GETIMPORT R5 11 ["mIdToZoneAttribs"]
       11 [-]: FASTCALL1 62 R5 L1
-      12 [-]: GETIMPORT R4 9 [nil]
+      12 [-]: GETIMPORT R4 9 [0x7B998233]
       13 [-]: CALL R4 1 1  
 L 1:  14 [-]: JUMPIF R4 L3 
-      15 [-]: GETIMPORT R6 11 [nil]
+      15 [-]: GETIMPORT R6 11 ["mIdToZoneAttribs"]
       16 [-]: GETTABLE R5 R6 R1
       17 [-]: FASTCALL1 62 R5 L2
-      18 [-]: GETIMPORT R4 9 [nil]
+      18 [-]: GETIMPORT R4 9 [0x7B998233]
       19 [-]: CALL R4 1 1  
 L 2:  20 [-]: JUMPIF R4 L3 
-      21 [-]: GETIMPORT R4 11 [nil]
+      21 [-]: GETIMPORT R4 11 ["mIdToZoneAttribs"]
       22 [-]: GETTABLE R3 R4 R1
 L 3:  23 [-]: JUMPXEQKNIL R0 L4 NOT
       24 [-]: RETURN R0 0  
-L 4:  25 [-]: GETIMPORT R4 13 [nil]
+L 4:  25 [-]: GETIMPORT R4 13 [0x0469F296]
       26 [-]: MOVE R5 R0   
       27 [-]: CALL R4 1 1  
       28 [-]: LOADN R7 1   
@@ -402,17 +402,17 @@ L 5:  32 [-]: GETTABLE R8 R2 R7
       36 [-]: NAMECALL R9 R8 K15 [0xEFE29E59]
       37 [-]: CALL R9 1 1  
       38 [-]: JUMPIFEQ R9 R4 L7
-L 6:  39 [-]: GETIMPORT R9 17 [nil]
+L 6:  39 [-]: GETIMPORT R9 17 ["EMPTY_SYMBOL"]
       40 [-]: JUMPIFNOTEQ R4 R9 L9
       41 [-]: NAMECALL R9 R8 K15 [0xEFE29E59]
       42 [-]: CALL R9 1 1  
-      43 [-]: GETIMPORT R10 13 [nil]
+      43 [-]: GETIMPORT R10 13 [0x0469F296]
       44 [-]: LOADK R11 K18 ["BackDropSpace"]
       45 [-]: CALL R10 1 1 
       46 [-]: JUMPIFNOTEQ R9 R10 L9
 L 7:  47 [-]: FASTCALL1 62 R3 L8
       48 [-]: MOVE R10 R3  
-      49 [-]: GETIMPORT R9 9 [nil]
+      49 [-]: GETIMPORT R9 9 [0x7B998233]
       50 [-]: CALL R9 1 1  
 L 8:  51 [-]: JUMPIF R9 L9 
       52 [-]: MOVE R11 R4  
@@ -553,19 +553,19 @@ L10:  62 [-]: RETURN R0 0
      115 [-]: LOADNIL R1   
      116 [-]: SETTABLEKS R1 R0 K59 ["mGuildEmblem"]
      117 [-]: NEWTABLE R1 0 5
-     118 [-]: GETIMPORT R2 61 [nil]
+     118 [-]: GETIMPORT R2 61 [0x0469F296]
      119 [-]: LOADK R3 K62 ["TintColor0"]
      120 [-]: CALL R2 1 1  
-     121 [-]: GETIMPORT R3 61 [nil]
+     121 [-]: GETIMPORT R3 61 [0x0469F296]
      122 [-]: LOADK R4 K63 ["TintColor1"]
      123 [-]: CALL R3 1 1  
-     124 [-]: GETIMPORT R4 61 [nil]
+     124 [-]: GETIMPORT R4 61 [0x0469F296]
      125 [-]: LOADK R5 K64 ["TintColor2"]
      126 [-]: CALL R4 1 1  
-     127 [-]: GETIMPORT R5 61 [nil]
+     127 [-]: GETIMPORT R5 61 [0x0469F296]
      128 [-]: LOADK R6 K65 ["TintColor3"]
      129 [-]: CALL R5 1 1  
-     130 [-]: GETIMPORT R6 61 [nil]
+     130 [-]: GETIMPORT R6 61 [0x0469F296]
      131 [-]: LOADK R7 K66 ["EmissiveTintColor"]
      132 [-]: CALL R6 1 -1 
      133 [-]: SETLIST R1 R2 -1 [1]

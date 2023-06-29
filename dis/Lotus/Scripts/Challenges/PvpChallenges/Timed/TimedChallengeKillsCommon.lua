@@ -5,9 +5,9 @@
 ; Is_vararg:       1
 ; Max Stack Size:  3
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0xAEABECDA]
        2 [-]: GETVARARGS R1 1
-       3 [-]: GETIMPORT R2 4 [nil]
+       3 [-]: GETIMPORT R2 4 ["seeall"]
        4 [-]: CALL R0 2 0  
        5 [-]: LOADN R0 0   
        6 [-]: SETGLOBAL R0 K5 ["HITTYPE_MELEE"]
@@ -55,25 +55,25 @@
       11 [-]: NEWTABLE R3 0 0
       12 [-]: SETTABLEKS R3 R2 K5 ["LastKilledBy"]
       13 [-]: SETTABLEKS R1 R2 K6 ["MyPlayer"]
-      14 [-]: GETIMPORT R3 8 [nil]
+      14 [-]: GETIMPORT R3 8 [0xBA7DFCD2]
       15 [-]: MOVE R5 R0   
       16 [-]: NAMECALL R3 R3 K9 [0xD31CFAC0]
       17 [-]: CALL R3 2 1  
       18 [-]: SETTABLEKS R3 R2 K10 ["challengeInstance"]
       19 [-]: GETTABLEKS R4 R2 K10 ["challengeInstance"]
       20 [-]: FASTCALL1 62 R4 L0
-      21 [-]: GETIMPORT R3 12 [nil]
+      21 [-]: GETIMPORT R3 12 [0x7B998233]
       22 [-]: CALL R3 1 1  
 L 0:  23 [-]: JUMPIFNOT R3 L1
       24 [-]: RETURN R2 1  
-L 1:  25 [-]: GETIMPORT R3 8 [nil]
+L 1:  25 [-]: GETIMPORT R3 8 [0xBA7DFCD2]
       26 [-]: MOVE R5 R0   
       27 [-]: NAMECALL R3 R3 K13 [0xC97B7A44]
       28 [-]: CALL R3 2 1  
       29 [-]: SETTABLEKS R3 R2 K14 ["challengeUserState"]
       30 [-]: GETTABLEKS R4 R2 K14 ["challengeUserState"]
       31 [-]: FASTCALL1 62 R4 L2
-      32 [-]: GETIMPORT R3 12 [nil]
+      32 [-]: GETIMPORT R3 12 [0x7B998233]
       33 [-]: CALL R3 1 1  
 L 2:  34 [-]: JUMPIFNOT R3 L3
       35 [-]: RETURN R2 1  
@@ -119,12 +119,12 @@ L 4:  46 [-]: GETTABLEKS R3 R2 K14 ["challengeUserState"]
        1 [-]: CALL R4 1 1  
        2 [-]: FASTCALL1 62 R4 L0
        3 [-]: MOVE R6 R4   
-       4 [-]: GETIMPORT R5 2 [nil]
+       4 [-]: GETIMPORT R5 2 [0x7B998233]
        5 [-]: CALL R5 1 1  
 L 0:   6 [-]: JUMPIF R5 L2 
        7 [-]: FASTCALL1 62 R2 L1
        8 [-]: MOVE R6 R2   
-       9 [-]: GETIMPORT R5 2 [nil]
+       9 [-]: GETIMPORT R5 2 [0x7B998233]
       10 [-]: CALL R5 1 1  
 L 1:  11 [-]: JUMPIFNOT R5 L3
 L 2:  12 [-]: RETURN R0 0  
@@ -132,7 +132,7 @@ L 3:  13 [-]: NAMECALL R5 R4 K3 [0x5E651723]
       14 [-]: CALL R5 1 1  
       15 [-]: FASTCALL1 62 R5 L4
       16 [-]: MOVE R7 R5   
-      17 [-]: GETIMPORT R6 2 [nil]
+      17 [-]: GETIMPORT R6 2 [0x7B998233]
       18 [-]: CALL R6 1 1  
 L 4:  19 [-]: JUMPIFNOT R6 L5
       20 [-]: RETURN R0 0  
@@ -140,7 +140,7 @@ L 5:  21 [-]: NAMECALL R6 R1 K4 [0x14A55974]
       22 [-]: CALL R6 1 1  
       23 [-]: FASTCALL1 62 R6 L6
       24 [-]: MOVE R8 R6   
-      25 [-]: GETIMPORT R7 2 [nil]
+      25 [-]: GETIMPORT R7 2 [0x7B998233]
       26 [-]: CALL R7 1 1  
 L 6:  27 [-]: JUMPIFNOT R7 L7
       28 [-]: RETURN R0 0  
@@ -149,14 +149,14 @@ L 7:  29 [-]: NAMECALL R7 R2 K5 [0x5CA33548]
       31 [-]: NAMECALL R8 R5 K5 [0x5CA33548]
       32 [-]: CALL R8 1 1  
       33 [-]: MOVE R9 R6   
-      34 [-]: GETIMPORT R12 7 [nil]
+      34 [-]: GETIMPORT R12 7 ["gLotusWeaponType"]
       35 [-]: NAMECALL R10 R6 K8 [0xF2DEAF69]
       36 [-]: CALL R10 2 1 
       37 [-]: JUMPIFNOT R10 L9
       38 [-]: NAMECALL R11 R6 K9 [0xD2073B32]
       39 [-]: CALL R11 1 -1
       40 [-]: FASTCALL 62 L8
-      41 [-]: GETIMPORT R10 2 [nil]
+      41 [-]: GETIMPORT R10 2 [0x7B998233]
       42 [-]: CALL R10 -1 1
 L 8:  43 [-]: JUMPIF R10 L9
       44 [-]: NAMECALL R10 R6 K9 [0xD2073B32]
@@ -164,14 +164,14 @@ L 8:  43 [-]: JUMPIF R10 L9
       46 [-]: MOVE R9 R10  
 L 9:  47 [-]: LOADNIL R10  
       48 [-]: GETGLOBAL R11 K10 ["HITTYPE_EX_NONE"]
-      49 [-]: GETIMPORT R14 12 [nil]
+      49 [-]: GETIMPORT R14 12 ["gLotusMeleeWeaponType"]
       50 [-]: NAMECALL R12 R9 K8 [0xF2DEAF69]
       51 [-]: CALL R12 2 1 
       52 [-]: JUMPIFNOT R12 L10
       53 [-]: GETGLOBAL R10 K13 ["HITTYPE_MELEE"]
       54 [-]: JUMP L13
     
-L10:  55 [-]: GETIMPORT R14 15 [nil]
+L10:  55 [-]: GETIMPORT R14 15 ["gPowerSuitType"]
       56 [-]: NAMECALL R12 R9 K8 [0xF2DEAF69]
       57 [-]: CALL R12 2 1 
       58 [-]: JUMPIFNOT R12 L11
@@ -179,7 +179,7 @@ L10:  55 [-]: GETIMPORT R14 15 [nil]
       60 [-]: JUMP L13
     
 L11:  61 [-]: GETGLOBAL R10 K17 ["HITTYPE_WEAPON"]
-      62 [-]: GETIMPORT R14 19 [nil]
+      62 [-]: GETIMPORT R14 19 ["gLotusPistolType"]
       63 [-]: NAMECALL R12 R6 K8 [0xF2DEAF69]
       64 [-]: CALL R12 2 1 
       65 [-]: JUMPIFNOT R12 L12
@@ -211,11 +211,11 @@ L16:  84 [-]: GETTABLEKS R16 R0 K24 ["DamageHistory"]
       90 [-]: DUPTABLE R15 28
       91 [-]: NEWTABLE R16 0 0
       92 [-]: SETTABLEKS R16 R15 K25 ["hitTypes"]
-      93 [-]: GETIMPORT R17 31 [nil]
+      93 [-]: GETIMPORT R17 31 [0x0A8F62A7]
       94 [-]: CALL R17 0 1 
       95 [-]: SUBK R16 R17 K29 [10000]
       96 [-]: SETTABLEKS R16 R15 K26 ["lastHitTime"]
-      97 [-]: GETIMPORT R17 31 [nil]
+      97 [-]: GETIMPORT R17 31 [0x0A8F62A7]
       98 [-]: CALL R17 0 1 
       99 [-]: SUBK R16 R17 K29 [10000]
      100 [-]: SETTABLEKS R16 R15 K27 ["lastDeathTime"]
@@ -247,7 +247,7 @@ L18: 114 [-]: GETTABLEKS R17 R0 K24 ["DamageHistory"]
      126 [-]: GETTABLEKS R16 R0 K24 ["DamageHistory"]
      127 [-]: GETTABLE R15 R16 R7
      128 [-]: GETTABLE R14 R15 R8
-     129 [-]: GETIMPORT R15 31 [nil]
+     129 [-]: GETIMPORT R15 31 [0x0A8F62A7]
      130 [-]: CALL R15 0 1 
      131 [-]: SETTABLEKS R15 R14 K26 ["lastHitTime"]
      132 [-]: JUMP L20
@@ -255,12 +255,12 @@ L18: 114 [-]: GETTABLEKS R17 R0 K24 ["DamageHistory"]
 L19: 133 [-]: GETTABLEKS R16 R0 K24 ["DamageHistory"]
      134 [-]: GETTABLE R15 R16 R7
      135 [-]: GETTABLE R14 R15 R8
-     136 [-]: GETIMPORT R15 31 [nil]
+     136 [-]: GETIMPORT R15 31 [0x0A8F62A7]
      137 [-]: CALL R15 0 1 
      138 [-]: SETTABLEKS R15 R14 K27 ["lastDeathTime"]
 L20: 139 [-]: GETTABLEKS R14 R0 K33 ["CallBackOnDamageEx"]
      140 [-]: JUMPIFNOT R14 L22
-     141 [-]: GETIMPORT R14 35 [nil]
+     141 [-]: GETIMPORT R14 35 [0x89326C93]
      142 [-]: NAMECALL R14 R14 K36 [0x18D05D30]
      143 [-]: CALL R14 1 1 
      144 [-]: JUMPIFNOT R14 L21
@@ -373,7 +373,7 @@ L29: 242 [-]: GETTABLEKS R16 R0 K24 ["DamageHistory"]
      251 [-]: GETTABLEKS R16 R0 K24 ["DamageHistory"]
      252 [-]: GETTABLE R15 R16 R7
      253 [-]: GETTABLE R14 R15 R8
-     254 [-]: GETIMPORT R16 31 [nil]
+     254 [-]: GETIMPORT R16 31 [0x0A8F62A7]
      255 [-]: CALL R16 0 1 
      256 [-]: SUBK R15 R16 K29 [10000]
      257 [-]: SETTABLEKS R15 R14 K26 ["lastHitTime"]
@@ -434,7 +434,7 @@ L 0:   2 [-]: GETTABLEKS R3 R0 K0 ["curNumHits"]
        4 [-]: SETTABLEKS R2 R0 K0 ["curNumHits"]
        5 [-]: GETTABLEKS R3 R0 K1 ["challengeUserState"]
        6 [-]: FASTCALL1 62 R3 L1
-       7 [-]: GETIMPORT R2 3 [nil]
+       7 [-]: GETIMPORT R2 3 [0x7B998233]
        8 [-]: CALL R2 1 1  
 L 1:   9 [-]: JUMPIF R2 L2 
       10 [-]: GETTABLEKS R2 R0 K1 ["challengeUserState"]

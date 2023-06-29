@@ -5,17 +5,17 @@
 ; Is_vararg:       1
 ; Max Stack Size:  6
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x7ED0A956]
        2 [-]: LOADK R1 K2 ["/Lotus/Objects/Tenno/RelayTransmissionScreen"]
        3 [-]: CALL R0 1 1  
-       4 [-]: GETIMPORT R1 4 [nil]
+       4 [-]: GETIMPORT R1 4 [0x0469F296]
        5 [-]: LOADK R2 K5 ["TransmissionVolLight"]
        6 [-]: CALL R1 1 1  
        7 [-]: NEWTABLE R2 0 2
-       8 [-]: GETIMPORT R3 4 [nil]
+       8 [-]: GETIMPORT R3 4 [0x0469F296]
        9 [-]: LOADK R4 K6 ["WarWithinFirstQueens"]
       10 [-]: CALL R3 1 1  
-      11 [-]: GETIMPORT R4 4 [nil]
+      11 [-]: GETIMPORT R4 4 [0x0469F296]
       12 [-]: LOADK R5 K7 ["WarWithinQueensFight"]
       13 [-]: CALL R4 1 -1 
       14 [-]: SETLIST R2 R3 -1 [1]
@@ -40,17 +40,17 @@
 ; Is_vararg:       0
 ; Max Stack Size:  7
 
-       0 [-]: GETIMPORT R0 2 [nil]
+       0 [-]: GETIMPORT R0 2 ["lastWormQueenAnnouncementTime"]
        1 [-]: JUMPXEQKNIL R0 L0 NOT
-       2 [-]: GETIMPORT R0 3 [nil]
+       2 [-]: GETIMPORT R0 3 ["_T"]
        3 [-]: LOADN R1 0   
        4 [-]: SETTABLEKS R1 R0 K1 ["lastWormQueenAnnouncementTime"]
-L 0:   5 [-]: GETIMPORT R0 5 [nil]
+L 0:   5 [-]: GETIMPORT R0 5 [0x89326C93]
        6 [-]: NAMECALL R0 R0 K6 [0xA277037F]
        7 [-]: CALL R0 1 1  
        8 [-]: FASTCALL1 62 R0 L1
        9 [-]: MOVE R2 R0   
-      10 [-]: GETIMPORT R1 8 [nil]
+      10 [-]: GETIMPORT R1 8 [0x7B998233]
       11 [-]: CALL R1 1 1  
 L 1:  12 [-]: JUMPIFNOT R1 L2
       13 [-]: RETURN R0 0  
@@ -69,28 +69,28 @@ L 3:  22 [-]: GETUPVAL R6 0
 L 4:  26 [-]: FORNLOOP R2 L3
 L 5:  27 [-]: NAMECALL R2 R0 K11 [0x715C5D7F]
       28 [-]: CALL R2 1 1  
-      29 [-]: GETIMPORT R4 2 [nil]
+      29 [-]: GETIMPORT R4 2 ["lastWormQueenAnnouncementTime"]
       30 [-]: ADDK R3 R4 K12 [30]
       31 [-]: JUMPIFNOTLT R2 R3 L6
       32 [-]: RETURN R0 0  
-L 6:  33 [-]: GETIMPORT R3 3 [nil]
+L 6:  33 [-]: GETIMPORT R3 3 ["_T"]
       34 [-]: SETTABLEKS R2 R3 K1 ["lastWormQueenAnnouncementTime"]
-      35 [-]: GETIMPORT R3 14 [nil]
+      35 [-]: GETIMPORT R3 14 [0xDD6E4CF8]
       36 [-]: LOADN R4 0   
       37 [-]: LOADN R5 1   
       38 [-]: CALL R3 2 1  
       39 [-]: LOADK R4 K15 [0.25]
       40 [-]: JUMPIFNOTLT R4 R3 L7
       41 [-]: RETURN R0 0  
-L 7:  42 [-]: GETIMPORT R4 17 [nil]
+L 7:  42 [-]: GETIMPORT R4 17 ["InWorldTransmissionQueue"]
       43 [-]: JUMPXEQKNIL R4 L8 NOT
-      44 [-]: GETIMPORT R4 3 [nil]
+      44 [-]: GETIMPORT R4 3 ["_T"]
       45 [-]: NEWTABLE R5 0 0
       46 [-]: SETTABLEKS R5 R4 K16 ["InWorldTransmissionQueue"]
-L 8:  47 [-]: GETIMPORT R5 17 [nil]
-      48 [-]: GETIMPORT R6 19 [nil]
+L 8:  47 [-]: GETIMPORT R5 17 ["InWorldTransmissionQueue"]
+      48 [-]: GETIMPORT R6 19 [0xBB5B1BFE]
       49 [-]: FASTCALL2 52 R5 R6 L9
-      50 [-]: GETIMPORT R4 22 [nil]
+      50 [-]: GETIMPORT R4 22 [0x23D5322F]
       51 [-]: CALL R4 2 0  
 L 9:  52 [-]: RETURN R0 0  
 
@@ -102,15 +102,15 @@ L 9:  52 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  8
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 [0x89326C93]
        1 [-]: GETUPVAL R2 0
        2 [-]: NAMECALL R0 R0 K2 [0xFB669000]
        3 [-]: CALL R0 2 1  
-       4 [-]: GETIMPORT R1 1 [nil]
+       4 [-]: GETIMPORT R1 1 [0x89326C93]
        5 [-]: GETUPVAL R3 1
        6 [-]: NAMECALL R1 R1 K3 [0xC7FCADA9]
        7 [-]: CALL R1 2 1  
-       8 [-]: GETIMPORT R2 1 [nil]
+       8 [-]: GETIMPORT R2 1 [0x89326C93]
        9 [-]: NAMECALL R2 R2 K4 [0x18D05D30]
       10 [-]: CALL R2 1 1  
       11 [-]: JUMPIFNOT R2 L1
@@ -128,7 +128,7 @@ L 1:  21 [-]: LOADN R4 1
       23 [-]: LOADN R3 1   
       24 [-]: FORNPREP R2 L3
 L 2:  25 [-]: GETTABLE R5 R1 R4
-      26 [-]: GETIMPORT R7 7 [nil]
+      26 [-]: GETIMPORT R7 7 [0x646F04D7]
       27 [-]: NAMECALL R5 R5 K8 [0xFF96AF09]
       28 [-]: CALL R5 2 0  
       29 [-]: FORNLOOP R2 L2
@@ -142,15 +142,15 @@ L 3:  30 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  8
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 [0x89326C93]
        1 [-]: GETUPVAL R2 0
        2 [-]: NAMECALL R0 R0 K2 [0xFB669000]
        3 [-]: CALL R0 2 1  
-       4 [-]: GETIMPORT R1 1 [nil]
+       4 [-]: GETIMPORT R1 1 [0x89326C93]
        5 [-]: GETUPVAL R3 1
        6 [-]: NAMECALL R1 R1 K3 [0xC7FCADA9]
        7 [-]: CALL R1 2 1  
-       8 [-]: GETIMPORT R2 1 [nil]
+       8 [-]: GETIMPORT R2 1 [0x89326C93]
        9 [-]: NAMECALL R2 R2 K4 [0x18D05D30]
       10 [-]: CALL R2 1 1  
       11 [-]: JUMPIFNOT R2 L1
@@ -168,7 +168,7 @@ L 1:  21 [-]: LOADN R4 1
       23 [-]: LOADN R3 1   
       24 [-]: FORNPREP R2 L3
 L 2:  25 [-]: GETTABLE R5 R1 R4
-      26 [-]: GETIMPORT R7 7 [nil]
+      26 [-]: GETIMPORT R7 7 [0x646F04D7]
       27 [-]: NAMECALL R5 R5 K8 [0xFF96AF09]
       28 [-]: CALL R5 2 0  
       29 [-]: FORNLOOP R2 L2

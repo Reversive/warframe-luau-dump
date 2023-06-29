@@ -5,124 +5,124 @@
 ; Is_vararg:       1
 ; Max Stack Size:  21
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0xAEABECDA]
        2 [-]: GETVARARGS R1 1
-       3 [-]: GETIMPORT R2 4 [nil]
+       3 [-]: GETIMPORT R2 4 ["seeall"]
        4 [-]: CALL R0 2 0  
-       5 [-]: GETIMPORT R0 6 [nil]
+       5 [-]: GETIMPORT R0 6 [0x2D0FAD09]
        6 [-]: LOADK R1 K7 ["Lotus.Interface.UIStyleUtilities"]
        7 [-]: CALL R0 1 1  
-       8 [-]: GETIMPORT R1 6 [nil]
+       8 [-]: GETIMPORT R1 6 [0x2D0FAD09]
        9 [-]: LOADK R2 K8 ["EE.Interface.Utilities"]
       10 [-]: CALL R1 1 1  
       11 [-]: NEWTABLE R2 0 29
       12 [-]: DUPTABLE R3 11
-      13 [-]: GETIMPORT R4 13 [nil]
+      13 [-]: GETIMPORT R4 13 [0x7ED0A956]
       14 [-]: LOADK R5 K14 ["/Lotus/Types/Weapon/LotusWeaponBlade"]
       15 [-]: CALL R4 1 1  
       16 [-]: SETTABLEKS R4 R3 K9 ["Type"]
       17 [-]: LOADK R4 K15 ["/Lotus/Language/OstronCrafting/Crafting_PartBlade"]
       18 [-]: SETTABLEKS R4 R3 K10 ["Tag"]
       19 [-]: DUPTABLE R4 11
-      20 [-]: GETIMPORT R5 13 [nil]
+      20 [-]: GETIMPORT R5 13 [0x7ED0A956]
       21 [-]: LOADK R6 K16 ["/Lotus/Types/Weapon/LotusWeaponHilt"]
       22 [-]: CALL R5 1 1  
       23 [-]: SETTABLEKS R5 R4 K9 ["Type"]
       24 [-]: LOADK R5 K17 ["/Lotus/Language/OstronCrafting/Crafting_PartHilt"]
       25 [-]: SETTABLEKS R5 R4 K10 ["Tag"]
       26 [-]: DUPTABLE R5 11
-      27 [-]: GETIMPORT R6 13 [nil]
+      27 [-]: GETIMPORT R6 13 [0x7ED0A956]
       28 [-]: LOADK R7 K18 ["/Lotus/Types/Weapon/LotusWeaponWeight"]
       29 [-]: CALL R6 1 1  
       30 [-]: SETTABLEKS R6 R5 K9 ["Type"]
       31 [-]: LOADK R6 K19 ["/Lotus/Language/OstronCrafting/Crafting_PartBalance"]
       32 [-]: SETTABLEKS R6 R5 K10 ["Tag"]
       33 [-]: DUPTABLE R6 11
-      34 [-]: GETIMPORT R7 13 [nil]
+      34 [-]: GETIMPORT R7 13 [0x7ED0A956]
       35 [-]: LOADK R8 K20 ["/Lotus/Types/Weapon/LotusWeaponAmpOculus"]
       36 [-]: CALL R7 1 1  
       37 [-]: SETTABLEKS R7 R6 K9 ["Type"]
       38 [-]: LOADK R7 K21 ["/Lotus/Language/OstronCrafting/AmpMod_PartBarrel"]
       39 [-]: SETTABLEKS R7 R6 K10 ["Tag"]
       40 [-]: DUPTABLE R7 11
-      41 [-]: GETIMPORT R8 13 [nil]
+      41 [-]: GETIMPORT R8 13 [0x7ED0A956]
       42 [-]: LOADK R9 K22 ["/Lotus/Types/Weapon/LotusWeaponAmpCore"]
       43 [-]: CALL R8 1 1  
       44 [-]: SETTABLEKS R8 R7 K9 ["Type"]
       45 [-]: LOADK R8 K23 ["/Lotus/Language/OstronCrafting/AmpMod_PartChassis"]
       46 [-]: SETTABLEKS R8 R7 K10 ["Tag"]
       47 [-]: DUPTABLE R8 11
-      48 [-]: GETIMPORT R9 13 [nil]
+      48 [-]: GETIMPORT R9 13 [0x7ED0A956]
       49 [-]: LOADK R10 K24 ["/Lotus/Types/Weapon/LotusWeaponAmpBrace"]
       50 [-]: CALL R9 1 1  
       51 [-]: SETTABLEKS R9 R8 K9 ["Type"]
       52 [-]: LOADK R9 K25 ["/Lotus/Language/OstronCrafting/AmpMod_PartGrip"]
       53 [-]: SETTABLEKS R9 R8 K10 ["Tag"]
       54 [-]: DUPTABLE R9 11
-      55 [-]: GETIMPORT R10 13 [nil]
+      55 [-]: GETIMPORT R10 13 [0x7ED0A956]
       56 [-]: LOADK R11 K26 ["/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePetParts/KubrowPetMutagenBase"]
       57 [-]: CALL R10 1 1 
       58 [-]: SETTABLEKS R10 R9 K9 ["Type"]
       59 [-]: LOADK R10 K27 ["/Lotus/Language/InfestedMicroplanet/Pet_Mutagen"]
       60 [-]: SETTABLEKS R10 R9 K10 ["Tag"]
       61 [-]: DUPTABLE R10 11
-      62 [-]: GETIMPORT R11 13 [nil]
+      62 [-]: GETIMPORT R11 13 [0x7ED0A956]
       63 [-]: LOADK R12 K28 ["/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePetParts/KubrowPetAntigenBase"]
       64 [-]: CALL R11 1 1 
       65 [-]: SETTABLEKS R11 R10 K9 ["Type"]
       66 [-]: LOADK R11 K29 ["/Lotus/Language/InfestedMicroplanet/Pet_Antigen"]
       67 [-]: SETTABLEKS R11 R10 K10 ["Tag"]
       68 [-]: DUPTABLE R11 11
-      69 [-]: GETIMPORT R12 13 [nil]
+      69 [-]: GETIMPORT R12 13 [0x7ED0A956]
       70 [-]: LOADK R13 K30 ["/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePetParts/CatbrowPetMutagenBase"]
       71 [-]: CALL R12 1 1 
       72 [-]: SETTABLEKS R12 R11 K9 ["Type"]
       73 [-]: LOADK R12 K27 ["/Lotus/Language/InfestedMicroplanet/Pet_Mutagen"]
       74 [-]: SETTABLEKS R12 R11 K10 ["Tag"]
       75 [-]: DUPTABLE R12 11
-      76 [-]: GETIMPORT R13 13 [nil]
+      76 [-]: GETIMPORT R13 13 [0x7ED0A956]
       77 [-]: LOADK R14 K31 ["/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePetParts/CatbrowPetAntigenBase"]
       78 [-]: CALL R13 1 1 
       79 [-]: SETTABLEKS R13 R12 K9 ["Type"]
       80 [-]: LOADK R13 K29 ["/Lotus/Language/InfestedMicroplanet/Pet_Antigen"]
       81 [-]: SETTABLEKS R13 R12 K10 ["Tag"]
       82 [-]: DUPTABLE R13 11
-      83 [-]: GETIMPORT R14 13 [nil]
+      83 [-]: GETIMPORT R14 13 [0x7ED0A956]
       84 [-]: LOADK R15 K32 ["/Lotus/Types/Game/MoaPetParts/LotusMoaPetHead"]
       85 [-]: CALL R14 1 1 
       86 [-]: SETTABLEKS R14 R13 K9 ["Type"]
       87 [-]: LOADK R14 K33 ["/Lotus/Language/SolarisVenus/MoaPet_PartHead"]
       88 [-]: SETTABLEKS R14 R13 K10 ["Tag"]
       89 [-]: DUPTABLE R14 11
-      90 [-]: GETIMPORT R15 13 [nil]
+      90 [-]: GETIMPORT R15 13 [0x7ED0A956]
       91 [-]: LOADK R16 K34 ["/Lotus/Types/Game/MoaPetParts/LotusMoaPetEngine"]
       92 [-]: CALL R15 1 1 
       93 [-]: SETTABLEKS R15 R14 K9 ["Type"]
       94 [-]: LOADK R15 K35 ["/Lotus/Language/SolarisVenus/MoaPet_PartEngine"]
       95 [-]: SETTABLEKS R15 R14 K10 ["Tag"]
       96 [-]: DUPTABLE R15 11
-      97 [-]: GETIMPORT R16 13 [nil]
+      97 [-]: GETIMPORT R16 13 [0x7ED0A956]
       98 [-]: LOADK R17 K36 ["/Lotus/Types/Game/MoaPetParts/LotusMoaPetPayload"]
       99 [-]: CALL R16 1 1 
      100 [-]: SETTABLEKS R16 R15 K9 ["Type"]
      101 [-]: LOADK R16 K37 ["/Lotus/Language/SolarisVenus/MoaPet_PartPayload"]
      102 [-]: SETTABLEKS R16 R15 K10 ["Tag"]
      103 [-]: DUPTABLE R16 11
-     104 [-]: GETIMPORT R17 13 [nil]
+     104 [-]: GETIMPORT R17 13 [0x7ED0A956]
      105 [-]: LOADK R18 K38 ["/Lotus/Types/Game/ZanukaPetParts/LotusZanukaHeadPart"]
      106 [-]: CALL R17 1 1 
      107 [-]: SETTABLEKS R17 R16 K9 ["Type"]
      108 [-]: LOADK R17 K39 ["/Lotus/Language/SolarisVenus/ZanukaPet_PartHead"]
      109 [-]: SETTABLEKS R17 R16 K10 ["Tag"]
      110 [-]: DUPTABLE R17 11
-     111 [-]: GETIMPORT R18 13 [nil]
+     111 [-]: GETIMPORT R18 13 [0x7ED0A956]
      112 [-]: LOADK R19 K40 ["/Lotus/Types/Game/ZanukaPetParts/LotusZanukaBodyPart"]
      113 [-]: CALL R18 1 1 
      114 [-]: SETTABLEKS R18 R17 K9 ["Type"]
      115 [-]: LOADK R18 K41 ["/Lotus/Language/SolarisVenus/ZanukaPet_PartBody"]
      116 [-]: SETTABLEKS R18 R17 K10 ["Tag"]
      117 [-]: DUPTABLE R18 11
-     118 [-]: GETIMPORT R19 13 [nil]
+     118 [-]: GETIMPORT R19 13 [0x7ED0A956]
      119 [-]: LOADK R20 K42 ["/Lotus/Types/Game/ZanukaPetParts/LotusZanukaLegPart"]
      120 [-]: CALL R19 1 1 
      121 [-]: SETTABLEKS R19 R18 K9 ["Type"]
@@ -130,91 +130,91 @@
      123 [-]: SETTABLEKS R19 R18 K10 ["Tag"]
      124 [-]: SETLIST R2 R3 16 [1]
      125 [-]: DUPTABLE R3 11
-     126 [-]: GETIMPORT R4 13 [nil]
+     126 [-]: GETIMPORT R4 13 [0x7ED0A956]
      127 [-]: LOADK R5 K44 ["/Lotus/Types/Game/ZanukaPetParts/LotusZanukaTailPart"]
      128 [-]: CALL R4 1 1  
      129 [-]: SETTABLEKS R4 R3 K9 ["Type"]
      130 [-]: LOADK R4 K45 ["/Lotus/Language/SolarisVenus/ZanukaPet_PartTail"]
      131 [-]: SETTABLEKS R4 R3 K10 ["Tag"]
      132 [-]: DUPTABLE R4 11
-     133 [-]: GETIMPORT R5 13 [nil]
+     133 [-]: GETIMPORT R5 13 [0x7ED0A956]
      134 [-]: LOADK R6 K46 ["/Lotus/Types/Game/MoaPetParts/LotusMoaPetLeg"]
      135 [-]: CALL R5 1 1  
      136 [-]: SETTABLEKS R5 R4 K9 ["Type"]
      137 [-]: LOADK R5 K47 ["/Lotus/Language/SolarisVenus/MoaPet_PartLeg"]
      138 [-]: SETTABLEKS R5 R4 K10 ["Tag"]
      139 [-]: DUPTABLE R5 11
-     140 [-]: GETIMPORT R6 13 [nil]
+     140 [-]: GETIMPORT R6 13 [0x7ED0A956]
      141 [-]: LOADK R7 K48 ["/Lotus/Types/Game/HoverboardParts/LotusHoverboardDeck"]
      142 [-]: CALL R6 1 1  
      143 [-]: SETTABLEKS R6 R5 K9 ["Type"]
      144 [-]: LOADK R6 K49 ["/Lotus/Language/Hoverboards/HoverboardPartDeck"]
      145 [-]: SETTABLEKS R6 R5 K10 ["Tag"]
      146 [-]: DUPTABLE R6 11
-     147 [-]: GETIMPORT R7 13 [nil]
+     147 [-]: GETIMPORT R7 13 [0x7ED0A956]
      148 [-]: LOADK R8 K50 ["/Lotus/Types/Game/HoverboardParts/LotusHoverboardEngine"]
      149 [-]: CALL R7 1 1  
      150 [-]: SETTABLEKS R7 R6 K9 ["Type"]
      151 [-]: LOADK R7 K51 ["/Lotus/Language/Hoverboards/HoverboardPartEngine"]
      152 [-]: SETTABLEKS R7 R6 K10 ["Tag"]
      153 [-]: DUPTABLE R7 11
-     154 [-]: GETIMPORT R8 13 [nil]
+     154 [-]: GETIMPORT R8 13 [0x7ED0A956]
      155 [-]: LOADK R9 K52 ["/Lotus/Types/Game/HoverboardParts/LotusHoverboardFront"]
      156 [-]: CALL R8 1 1  
      157 [-]: SETTABLEKS R8 R7 K9 ["Type"]
      158 [-]: LOADK R8 K53 ["/Lotus/Language/Hoverboards/HoverboardPartFront"]
      159 [-]: SETTABLEKS R8 R7 K10 ["Tag"]
      160 [-]: DUPTABLE R8 11
-     161 [-]: GETIMPORT R9 13 [nil]
+     161 [-]: GETIMPORT R9 13 [0x7ED0A956]
      162 [-]: LOADK R10 K54 ["/Lotus/Types/Game/HoverboardParts/LotusHoverboardJet"]
      163 [-]: CALL R9 1 1  
      164 [-]: SETTABLEKS R9 R8 K9 ["Type"]
      165 [-]: LOADK R9 K55 ["/Lotus/Language/Hoverboards/HoverboardPartJet"]
      166 [-]: SETTABLEKS R9 R8 K10 ["Tag"]
      167 [-]: DUPTABLE R9 11
-     168 [-]: GETIMPORT R10 13 [nil]
+     168 [-]: GETIMPORT R10 13 [0x7ED0A956]
      169 [-]: LOADK R11 K56 ["/Lotus/Types/Weapon/LotusGunBarrel"]
      170 [-]: CALL R10 1 1 
      171 [-]: SETTABLEKS R10 R9 K9 ["Type"]
      172 [-]: LOADK R10 K57 ["/Lotus/Language/SolarisVenus/Gun_Barrels"]
      173 [-]: SETTABLEKS R10 R9 K10 ["Tag"]
      174 [-]: DUPTABLE R10 11
-     175 [-]: GETIMPORT R11 13 [nil]
+     175 [-]: GETIMPORT R11 13 [0x7ED0A956]
      176 [-]: LOADK R12 K58 ["/Lotus/Types/Weapon/LotusGunSecondaryHandle"]
      177 [-]: CALL R11 1 1 
      178 [-]: SETTABLEKS R11 R10 K9 ["Type"]
      179 [-]: LOADK R11 K59 ["/Lotus/Language/SolarisVenus/Gun_Handles"]
      180 [-]: SETTABLEKS R11 R10 K10 ["Tag"]
      181 [-]: DUPTABLE R11 11
-     182 [-]: GETIMPORT R12 13 [nil]
+     182 [-]: GETIMPORT R12 13 [0x7ED0A956]
      183 [-]: LOADK R13 K60 ["/Lotus/Types/Weapon/LotusGunPrimaryHandle"]
      184 [-]: CALL R12 1 1 
      185 [-]: SETTABLEKS R12 R11 K9 ["Type"]
      186 [-]: LOADK R12 K59 ["/Lotus/Language/SolarisVenus/Gun_Handles"]
      187 [-]: SETTABLEKS R12 R11 K10 ["Tag"]
      188 [-]: DUPTABLE R12 11
-     189 [-]: GETIMPORT R13 13 [nil]
+     189 [-]: GETIMPORT R13 13 [0x7ED0A956]
      190 [-]: LOADK R14 K61 ["/Lotus/Types/Weapon/LotusGunClip"]
      191 [-]: CALL R13 1 1 
      192 [-]: SETTABLEKS R13 R12 K9 ["Type"]
      193 [-]: LOADK R13 K62 ["/Lotus/Language/SolarisVenus/Gun_Clips"]
      194 [-]: SETTABLEKS R13 R12 K10 ["Tag"]
      195 [-]: DUPTABLE R13 11
-     196 [-]: GETIMPORT R14 13 [nil]
+     196 [-]: GETIMPORT R14 13 [0x7ED0A956]
      197 [-]: LOADK R15 K63 ["/Lotus/Types/Game/ArchwingParts/LotusArchwingEngine"]
      198 [-]: CALL R14 1 1 
      199 [-]: SETTABLEKS R14 R13 K9 ["Type"]
      200 [-]: LOADK R14 K64 ["/Lotus/Language/ModularArchwing/ModularAWCrafting_PartEngine"]
      201 [-]: SETTABLEKS R14 R13 K10 ["Tag"]
      202 [-]: DUPTABLE R14 11
-     203 [-]: GETIMPORT R15 13 [nil]
+     203 [-]: GETIMPORT R15 13 [0x7ED0A956]
      204 [-]: LOADK R16 K65 ["/Lotus/Types/Game/ArchwingParts/LotusArchwingGenerator"]
      205 [-]: CALL R15 1 1 
      206 [-]: SETTABLEKS R15 R14 K9 ["Type"]
      207 [-]: LOADK R15 K66 ["/Lotus/Language/ModularArchwing/ModularAWCrafting_PartGenerator"]
      208 [-]: SETTABLEKS R15 R14 K10 ["Tag"]
      209 [-]: DUPTABLE R15 11
-     210 [-]: GETIMPORT R19 13 [nil]
+     210 [-]: GETIMPORT R19 13 [0x7ED0A956]
      211 [-]: LOADK R20 K67 ["/Lotus/Types/Game/ArchwingParts/LotusArchwingWing"]
      212 [-]: CALL R19 1 1 
      213 [-]: SETTABLEKS R19 R15 K9 ["Type"]
@@ -223,107 +223,107 @@
      216 [-]: SETLIST R2 R3 13 [17]
      217 [-]: NEWTABLE R3 0 13
      218 [-]: DUPTABLE R4 70
-     219 [-]: GETIMPORT R5 13 [nil]
+     219 [-]: GETIMPORT R5 13 [0x7ED0A956]
      220 [-]: LOADK R6 K71 ["/Lotus/Weapons/Ostron/Melee/LotusModularWeapon"]
      221 [-]: CALL R5 1 1  
      222 [-]: SETTABLEKS R5 R4 K9 ["Type"]
      223 [-]: LOADN R5 3   
      224 [-]: SETTABLEKS R5 R4 K69 ["Parts"]
      225 [-]: DUPTABLE R5 70
-     226 [-]: GETIMPORT R6 13 [nil]
+     226 [-]: GETIMPORT R6 13 [0x7ED0A956]
      227 [-]: LOADK R7 K72 ["/Lotus/Weapons/SolarisUnited/Primary/LotusModularPrimary"]
      228 [-]: CALL R6 1 1  
      229 [-]: SETTABLEKS R6 R5 K9 ["Type"]
      230 [-]: LOADN R6 3   
      231 [-]: SETTABLEKS R6 R5 K69 ["Parts"]
      232 [-]: DUPTABLE R6 70
-     233 [-]: GETIMPORT R7 13 [nil]
+     233 [-]: GETIMPORT R7 13 [0x7ED0A956]
      234 [-]: LOADK R8 K73 ["/Lotus/Weapons/SolarisUnited/Primary/LotusModularPrimaryBeam"]
      235 [-]: CALL R7 1 1  
      236 [-]: SETTABLEKS R7 R6 K9 ["Type"]
      237 [-]: LOADN R7 3   
      238 [-]: SETTABLEKS R7 R6 K69 ["Parts"]
      239 [-]: DUPTABLE R7 70
-     240 [-]: GETIMPORT R8 13 [nil]
+     240 [-]: GETIMPORT R8 13 [0x7ED0A956]
      241 [-]: LOADK R9 K74 ["/Lotus/Weapons/SolarisUnited/Primary/LotusModularPrimaryShotgun"]
      242 [-]: CALL R8 1 1  
      243 [-]: SETTABLEKS R8 R7 K9 ["Type"]
      244 [-]: LOADN R8 3   
      245 [-]: SETTABLEKS R8 R7 K69 ["Parts"]
      246 [-]: DUPTABLE R8 70
-     247 [-]: GETIMPORT R9 13 [nil]
+     247 [-]: GETIMPORT R9 13 [0x7ED0A956]
      248 [-]: LOADK R10 K75 ["/Lotus/Weapons/SolarisUnited/Secondary/LotusModularSecondary"]
      249 [-]: CALL R9 1 1  
      250 [-]: SETTABLEKS R9 R8 K9 ["Type"]
      251 [-]: LOADN R9 3   
      252 [-]: SETTABLEKS R9 R8 K69 ["Parts"]
      253 [-]: DUPTABLE R9 70
-     254 [-]: GETIMPORT R10 13 [nil]
+     254 [-]: GETIMPORT R10 13 [0x7ED0A956]
      255 [-]: LOADK R11 K76 ["/Lotus/Weapons/SolarisUnited/Secondary/LotusModularSecondaryBeam"]
      256 [-]: CALL R10 1 1 
      257 [-]: SETTABLEKS R10 R9 K9 ["Type"]
      258 [-]: LOADN R10 3  
      259 [-]: SETTABLEKS R10 R9 K69 ["Parts"]
      260 [-]: DUPTABLE R10 70
-     261 [-]: GETIMPORT R11 13 [nil]
+     261 [-]: GETIMPORT R11 13 [0x7ED0A956]
      262 [-]: LOADK R12 K77 ["/Lotus/Weapons/SolarisUnited/Secondary/LotusModularSecondaryShotgun"]
      263 [-]: CALL R11 1 1 
      264 [-]: SETTABLEKS R11 R10 K9 ["Type"]
      265 [-]: LOADN R11 3  
      266 [-]: SETTABLEKS R11 R10 K69 ["Parts"]
      267 [-]: DUPTABLE R11 70
-     268 [-]: GETIMPORT R12 13 [nil]
+     268 [-]: GETIMPORT R12 13 [0x7ED0A956]
      269 [-]: LOADK R13 K78 ["/Lotus/Types/Vehicles/Hoverboard/HoverboardSuit"]
      270 [-]: CALL R12 1 1 
      271 [-]: SETTABLEKS R12 R11 K9 ["Type"]
      272 [-]: LOADN R12 4  
      273 [-]: SETTABLEKS R12 R11 K69 ["Parts"]
      274 [-]: DUPTABLE R12 70
-     275 [-]: GETIMPORT R13 13 [nil]
+     275 [-]: GETIMPORT R13 13 [0x7ED0A956]
      276 [-]: LOADK R14 K79 ["/Lotus/Types/Friendly/Pets/CreaturePets/BasePredatorKubrowPetPowerSuit"]
      277 [-]: CALL R13 1 1 
      278 [-]: SETTABLEKS R13 R12 K9 ["Type"]
      279 [-]: LOADN R13 2  
      280 [-]: SETTABLEKS R13 R12 K69 ["Parts"]
      281 [-]: DUPTABLE R13 70
-     282 [-]: GETIMPORT R14 13 [nil]
+     282 [-]: GETIMPORT R14 13 [0x7ED0A956]
      283 [-]: LOADK R15 K80 ["/Lotus/Types/Friendly/Pets/CreaturePets/BaseInfestedCatbrowPetPowerSuit"]
      284 [-]: CALL R14 1 1 
      285 [-]: SETTABLEKS R14 R13 K9 ["Type"]
      286 [-]: LOADN R14 2  
      287 [-]: SETTABLEKS R14 R13 K69 ["Parts"]
      288 [-]: DUPTABLE R14 70
-     289 [-]: GETIMPORT R15 13 [nil]
+     289 [-]: GETIMPORT R15 13 [0x7ED0A956]
      290 [-]: LOADK R16 K81 ["/Lotus/Types/Friendly/Pets/MoaPets/MoaPetPowerSuit"]
      291 [-]: CALL R15 1 1 
      292 [-]: SETTABLEKS R15 R14 K9 ["Type"]
      293 [-]: LOADN R15 4  
      294 [-]: SETTABLEKS R15 R14 K69 ["Parts"]
      295 [-]: DUPTABLE R15 70
-     296 [-]: GETIMPORT R16 13 [nil]
+     296 [-]: GETIMPORT R16 13 [0x7ED0A956]
      297 [-]: LOADK R17 K82 ["/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetPowerSuit"]
      298 [-]: CALL R16 1 1 
      299 [-]: SETTABLEKS R16 R15 K9 ["Type"]
      300 [-]: LOADN R16 4  
      301 [-]: SETTABLEKS R16 R15 K69 ["Parts"]
      302 [-]: DUPTABLE R16 70
-     303 [-]: GETIMPORT R17 13 [nil]
+     303 [-]: GETIMPORT R17 13 [0x7ED0A956]
      304 [-]: LOADK R18 K83 ["/Lotus/Powersuits/Archwing/ModularJetPack/ModularJetPack"]
      305 [-]: CALL R17 1 1 
      306 [-]: SETTABLEKS R17 R16 K9 ["Type"]
      307 [-]: LOADN R17 3  
      308 [-]: SETTABLEKS R17 R16 K69 ["Parts"]
      309 [-]: SETLIST R3 R4 13 [1]
-     310 [-]: GETIMPORT R4 13 [nil]
+     310 [-]: GETIMPORT R4 13 [0x7ED0A956]
      311 [-]: LOADK R5 K84 ["/Lotus/Types/Game/CreaturePetParts/LotusCreaturePetPart"]
      312 [-]: CALL R4 1 1  
-     313 [-]: GETIMPORT R5 13 [nil]
+     313 [-]: GETIMPORT R5 13 [0x7ED0A956]
      314 [-]: LOADK R6 K85 ["/Lotus/Types/Game/CreaturePetParts/LotusCreaturePetAntigen"]
      315 [-]: CALL R5 1 1  
-     316 [-]: GETIMPORT R6 13 [nil]
+     316 [-]: GETIMPORT R6 13 [0x7ED0A956]
      317 [-]: LOADK R7 K28 ["/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePetParts/KubrowPetAntigenBase"]
      318 [-]: CALL R6 1 1  
-     319 [-]: GETIMPORT R7 13 [nil]
+     319 [-]: GETIMPORT R7 13 [0x7ED0A956]
      320 [-]: LOADK R8 K26 ["/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePetParts/KubrowPetMutagenBase"]
      321 [-]: CALL R7 1 1  
      322 [-]: DUPCLOSURE R8 K86 []
@@ -383,17 +383,17 @@ L 2:  21 [-]: RETURN R2 1
 
        0 [-]: FASTCALL1 62 R0 L0
        1 [-]: MOVE R7 R0   
-       2 [-]: GETIMPORT R6 1 [nil]
+       2 [-]: GETIMPORT R6 1 [0x7B998233]
        3 [-]: CALL R6 1 1  
 L 0:   4 [-]: JUMPIF R6 L3 
        5 [-]: FASTCALL1 62 R1 L1
        6 [-]: MOVE R7 R1   
-       7 [-]: GETIMPORT R6 1 [nil]
+       7 [-]: GETIMPORT R6 1 [0x7B998233]
        8 [-]: CALL R6 1 1  
 L 1:   9 [-]: JUMPIF R6 L3 
       10 [-]: FASTCALL1 62 R2 L2
       11 [-]: MOVE R7 R2   
-      12 [-]: GETIMPORT R6 1 [nil]
+      12 [-]: GETIMPORT R6 1 [0x7B998233]
       13 [-]: CALL R6 1 1  
 L 2:  14 [-]: JUMPIFNOT R6 L4
 L 3:  15 [-]: LOADK R6 K2 [""]
@@ -439,7 +439,7 @@ L 5:  44 [-]: JUMPIFNOT R3 L6
       55 [-]: CONCAT R7 R10 R15
 L 6:  56 [-]: GETTABLEN R11 R1 1
       57 [-]: FASTCALL1 62 R11 L7
-      58 [-]: GETIMPORT R10 1 [nil]
+      58 [-]: GETIMPORT R10 1 [0x7B998233]
       59 [-]: CALL R10 1 1 
 L 7:  60 [-]: JUMPIF R10 L18
       61 [-]: GETTABLEN R10 R1 1
@@ -474,7 +474,7 @@ L 8:  87 [-]: GETTABLE R14 R1 R13
       90 [-]: CALL R15 2 1 
       91 [-]: FASTCALL1 62 R15 L9
       92 [-]: MOVE R17 R15 
-      93 [-]: GETIMPORT R16 1 [nil]
+      93 [-]: GETIMPORT R16 1 [0x7B998233]
       94 [-]: CALL R16 1 1 
 L 9:  95 [-]: JUMPIF R16 L16
       96 [-]: NAMECALL R18 R15 K23 [0xD3A9D01F]
@@ -487,7 +487,7 @@ L 9:  95 [-]: JUMPIF R16 L16
      103 [-]: FASTCALL2 52 R6 R16 L10
      104 [-]: MOVE R18 R6  
      105 [-]: MOVE R19 R16 
-     106 [-]: GETIMPORT R17 27 [nil]
+     106 [-]: GETIMPORT R17 27 [0x23D5322F]
      107 [-]: CALL R17 2 0 
 L10: 108 [-]: GETUPVAL R18 0
      109 [-]: GETTABLEKS R17 R18 K28 [0x06D055F9]
@@ -596,7 +596,7 @@ L19: 207 [-]: GETTABLE R13 R1 R12
      210 [-]: CALL R14 2 1 
      211 [-]: FASTCALL1 62 R14 L20
      212 [-]: MOVE R16 R14 
-     213 [-]: GETIMPORT R15 1 [nil]
+     213 [-]: GETIMPORT R15 1 [0x7B998233]
      214 [-]: CALL R15 1 1 
 L20: 215 [-]: JUMPIF R15 L24
      216 [-]: GETUPVAL R15 6
@@ -613,7 +613,7 @@ L20: 215 [-]: JUMPIF R15 L24
      227 [-]: FASTCALL2 52 R6 R16 L21
      228 [-]: MOVE R18 R6  
      229 [-]: MOVE R19 R16 
-     230 [-]: GETIMPORT R17 27 [nil]
+     230 [-]: GETIMPORT R17 27 [0x23D5322F]
      231 [-]: CALL R17 2 0 
 L21: 232 [-]: MOVE R17 R7  
      233 [-]: LOADK R18 K9 ["<font color=\""]
@@ -651,7 +651,7 @@ L26: 256 [-]: RETURN R7 1
 
        0 [-]: FASTCALL1 62 R0 L0
        1 [-]: MOVE R2 R0   
-       2 [-]: GETIMPORT R1 1 [nil]
+       2 [-]: GETIMPORT R1 1 [0x7B998233]
        3 [-]: CALL R1 1 1  
 L 0:   4 [-]: JUMPIF R1 L3 
        5 [-]: LOADN R3 1   

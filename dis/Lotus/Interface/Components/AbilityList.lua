@@ -5,36 +5,36 @@
 ; Is_vararg:       1
 ; Max Stack Size:  5
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0xAEABECDA]
        2 [-]: GETVARARGS R1 1
-       3 [-]: GETIMPORT R2 4 [nil]
+       3 [-]: GETIMPORT R2 4 ["seeall"]
        4 [-]: CALL R0 2 0  
-       5 [-]: GETIMPORT R0 6 [nil]
+       5 [-]: GETIMPORT R0 6 [0x2D0FAD09]
        6 [-]: LOADK R1 K7 ["Lotus.Interface.UIStyleUtilities"]
        7 [-]: CALL R0 1 1  
-       8 [-]: GETIMPORT R1 6 [nil]
+       8 [-]: GETIMPORT R1 6 [0x2D0FAD09]
        9 [-]: LOADK R2 K8 ["Lotus.Interface.UIUtilities"]
       10 [-]: CALL R1 1 1  
-      11 [-]: GETIMPORT R2 6 [nil]
+      11 [-]: GETIMPORT R2 6 [0x2D0FAD09]
       12 [-]: LOADK R3 K9 ["EE.Interface.Utilities"]
       13 [-]: CALL R2 1 1  
-      14 [-]: GETIMPORT R3 11 [nil]
+      14 [-]: GETIMPORT R3 11 [0xB009BBC6]
       15 [-]: LOADK R4 K12 ["/Lotus/Interface/Graphics/Arcanes/ArcaneGlow.png"]
       16 [-]: CALL R3 1 1  
       17 [-]: SETGLOBAL R3 K13 ["glowTexture"]
-      18 [-]: GETIMPORT R3 11 [nil]
+      18 [-]: GETIMPORT R3 11 [0xB009BBC6]
       19 [-]: LOADK R4 K14 ["/Lotus/Interface/Materials/ThemedAbilitySpots"]
       20 [-]: CALL R3 1 1  
       21 [-]: SETGLOBAL R3 K15 ["sparklesMaterial"]
-      22 [-]: GETIMPORT R3 11 [nil]
+      22 [-]: GETIMPORT R3 11 [0xB009BBC6]
       23 [-]: LOADK R4 K16 ["/Lotus/Interface/Materials/WarframeSelectVisibleRange"]
       24 [-]: CALL R3 1 1  
       25 [-]: SETGLOBAL R3 K17 ["visRangeMaterial"]
-      26 [-]: GETIMPORT R3 11 [nil]
+      26 [-]: GETIMPORT R3 11 [0xB009BBC6]
       27 [-]: LOADK R4 K18 ["/Lotus/Interface/Materials/AbilitiesIconShadow"]
       28 [-]: CALL R3 1 1  
       29 [-]: SETGLOBAL R3 K19 ["shadowMaterial"]
-      30 [-]: GETIMPORT R3 11 [nil]
+      30 [-]: GETIMPORT R3 11 [0xB009BBC6]
       31 [-]: LOADK R4 K20 ["/Lotus/Interface/Icons/Abilities/PassiveAbilityIcon.png"]
       32 [-]: CALL R3 1 1  
       33 [-]: SETGLOBAL R3 K21 ["passiveIcon"]
@@ -62,11 +62,11 @@
        0 [-]: LOADNIL R10  
        1 [-]: SUBK R1 R1 K0 [1]
        2 [-]: MOVE R11 R3  
-       3 [-]: GETIMPORT R12 2 [nil]
+       3 [-]: GETIMPORT R12 2 [0x6728FD22]
        4 [-]: MOVE R13 R3  
        5 [-]: CALL R12 1 1 
        6 [-]: JUMPIFNOT R12 L0
-       7 [-]: GETIMPORT R12 4 [nil]
+       7 [-]: GETIMPORT R12 4 [0xB009BBC6]
        8 [-]: MOVE R13 R3  
        9 [-]: CALL R12 1 1 
       10 [-]: MOVE R11 R12 
@@ -78,7 +78,7 @@ L 0:  11 [-]: JUMPIFNOT R2 L1
 L 1:  16 [-]: LOADNIL R12  
       17 [-]: FASTCALL1 62 R7 L2
       18 [-]: MOVE R14 R7  
-      19 [-]: GETIMPORT R13 7 [nil]
+      19 [-]: GETIMPORT R13 7 [0x7B998233]
       20 [-]: CALL R13 1 1 
 L 2:  21 [-]: JUMPIF R13 L3
       22 [-]: MOVE R12 R7  
@@ -97,7 +97,7 @@ L 4:  30 [-]: MOVE R15 R1
       33 [-]: MOVE R12 R13 
 L 5:  34 [-]: FASTCALL1 62 R12 L6
       35 [-]: MOVE R14 R12 
-      36 [-]: GETIMPORT R13 7 [nil]
+      36 [-]: GETIMPORT R13 7 [0x7B998233]
       37 [-]: CALL R13 1 1 
 L 6:  38 [-]: JUMPIFNOT R13 L7
       39 [-]: RETURN R10 1 
@@ -110,7 +110,7 @@ L 7:  40 [-]: NAMECALL R13 R11 K10 [0xCA9EA368]
       46 [-]: JUMPIFNOT R9 L8
       47 [-]: NAMECALL R16 R12 K12 [0x57CBF110]
       48 [-]: CALL R16 1 1 
-      49 [-]: GETIMPORT R17 14 [nil]
+      49 [-]: GETIMPORT R17 14 ["EMPTY_SYMBOL"]
       50 [-]: JUMPIFEQ R16 R17 L8
       51 [-]: NAMECALL R18 R12 K12 [0x57CBF110]
       52 [-]: CALL R18 1 1 
@@ -139,7 +139,7 @@ L 9:  68 [-]: DUPTABLE R16 34
       74 [-]: SETTABLEKS R3 R16 K21 ["Suit"]
       75 [-]: SETTABLEKS R1 R16 K22 ["AbilityIndex"]
       76 [-]: SETTABLEKS R12 R16 K23 ["Resource"]
-      77 [-]: GETIMPORT R17 37 [nil]
+      77 [-]: GETIMPORT R17 37 [0x3F3E4D12]
       78 [-]: NAMECALL R20 R12 K38 [0xD3A9D01F]
       79 [-]: CALL R20 1 1 
       80 [-]: NAMECALL R20 R20 K15 [0x6D604BA7]
@@ -210,7 +210,7 @@ L12: 116 [-]: RETURN R10 1
 ; Is_vararg:       0
 ; Max Stack Size:  9
 
-       0 [-]: GETIMPORT R2 1 [nil]
+       0 [-]: GETIMPORT R2 1 [0x2D0FAD09]
        1 [-]: LOADK R3 K2 ["EE.Interface.Components.List"]
        2 [-]: CALL R2 1 1  
        3 [-]: GETTABLEKS R3 R2 K3 [0x9383BC56]

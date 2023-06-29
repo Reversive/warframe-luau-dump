@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  9
 
-            1 [-]: NEWTABLE R0 0 0
+       1 [-]: NEWTABLE R0 0 0
        2 [-]: NEWTABLE R1 0 0
        3 [-]: NEWTABLE R2 0 0
        4 [-]: NEWTABLE R3 0 0
@@ -80,7 +80,7 @@
        3 [-]: LOADB R2 0 +1
 L 0:   4 [-]: LOADB R2 1   
 L 1:   5 [-]: FASTCALL1 1 R2 L2
-       6 [-]: GETIMPORT R1 2 [nil]
+       6 [-]: GETIMPORT R1 2 [0x60CCE7B4]
        7 [-]: CALL R1 1 0  
 L 2:   8 [-]: GETUPVAL R1 0
        9 [-]: LOADN R2 2   
@@ -88,7 +88,7 @@ L 2:   8 [-]: GETUPVAL R1 0
       11 [-]: GETUPVAL R2 1
       12 [-]: FASTCALL2 52 R2 R0 L3
       13 [-]: MOVE R3 R0   
-      14 [-]: GETIMPORT R1 5 [nil]
+      14 [-]: GETIMPORT R1 5 [0x23D5322F]
       15 [-]: CALL R1 2 0  
 L 3:  16 [-]: RETURN R0 0  
 
@@ -122,19 +122,19 @@ L 2:   9 [-]: LOADNIL R0
 
        0 [-]: FASTCALL1 62 R0 L0
        1 [-]: MOVE R6 R0   
-       2 [-]: GETIMPORT R5 1 [nil]
+       2 [-]: GETIMPORT R5 1 [0x7B998233]
        3 [-]: CALL R5 1 1  
 L 0:   4 [-]: NOT R4 R5    
        5 [-]: FASTCALL1 1 R4 L1
-       6 [-]: GETIMPORT R3 3 [nil]
+       6 [-]: GETIMPORT R3 3 [0x60CCE7B4]
        7 [-]: CALL R3 1 0  
 L 1:   8 [-]: MOVE R3 R1   
        9 [-]: JUMPIF R3 L2 
-      10 [-]: GETIMPORT R3 5 [nil]
+      10 [-]: GETIMPORT R3 5 ["ZERO_VECTOR"]
 L 2:  11 [-]: MOVE R1 R3   
       12 [-]: MOVE R3 R2   
       13 [-]: JUMPIF R3 L3 
-      14 [-]: GETIMPORT R3 7 [nil]
+      14 [-]: GETIMPORT R3 7 ["ZERO_ROTATION"]
 L 3:  15 [-]: MOVE R2 R3   
       16 [-]: LOADN R6 400 
       17 [-]: LOADN R4 415 
@@ -150,7 +150,7 @@ L 5:  25 [-]: FORNLOOP R4 L4
 L 6:  26 [-]: LOADNIL R3   
 L 7:  27 [-]: FASTCALL1 1 R3 L8
       28 [-]: MOVE R5 R3   
-      29 [-]: GETIMPORT R4 3 [nil]
+      29 [-]: GETIMPORT R4 3 [0x60CCE7B4]
       30 [-]: CALL R4 1 0  
 L 8:  31 [-]: GETUPVAL R4 0
       32 [-]: LOADN R5 1   
@@ -162,15 +162,15 @@ L 8:  31 [-]: GETUPVAL R4 0
       38 [-]: SETTABLEKS R0 R6 K8 ["level"]
       39 [-]: MOVE R7 R1   
       40 [-]: JUMPIF R7 L9 
-      41 [-]: GETIMPORT R7 5 [nil]
+      41 [-]: GETIMPORT R7 5 ["ZERO_VECTOR"]
 L 9:  42 [-]: SETTABLEKS R7 R6 K9 ["pos"]
       43 [-]: MOVE R7 R2   
       44 [-]: JUMPIF R7 L10
-      45 [-]: GETIMPORT R7 5 [nil]
+      45 [-]: GETIMPORT R7 5 ["ZERO_VECTOR"]
 L10:  46 [-]: SETTABLEKS R7 R6 K10 ["rot"]
       47 [-]: SETTABLEKS R3 R6 K11 ["layer"]
       48 [-]: FASTCALL2 52 R5 R6 L11
-      49 [-]: GETIMPORT R4 15 [nil]
+      49 [-]: GETIMPORT R4 15 [0x23D5322F]
       50 [-]: CALL R4 2 0  
 L11:  51 [-]: RETURN R3 1  
 
@@ -197,16 +197,16 @@ L 1:   5 [-]: RETURN R1 1
 ; Is_vararg:       0
 ; Max Stack Size:  9
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 ["_T"]
        1 [-]: GETUPVAL R1 0
        2 [-]: SETTABLEKS R1 R0 K2 ["RemoveShipQuestLayer"]
-       3 [-]: GETIMPORT R0 1 [nil]
+       3 [-]: GETIMPORT R0 1 ["_T"]
        4 [-]: GETUPVAL R1 1
        5 [-]: SETTABLEKS R1 R0 K3 ["StreamShipQuestLayer"]
-       6 [-]: GETIMPORT R0 1 [nil]
+       6 [-]: GETIMPORT R0 1 ["_T"]
        7 [-]: GETUPVAL R1 2
        8 [-]: SETTABLEKS R1 R0 K4 ["IsShipQuestLayerLoaded"]
-L 0:   9 [-]: GETIMPORT R0 6 [nil]
+L 0:   9 [-]: GETIMPORT R0 6 [0xCBD666E1]
       10 [-]: LOADN R1 0   
       11 [-]: CALL R0 1 0  
       12 [-]: GETUPVAL R3 3
@@ -216,7 +216,7 @@ L 0:   9 [-]: GETIMPORT R0 6 [nil]
       16 [-]: FORNPREP R0 L2
 L 1:  17 [-]: GETUPVAL R4 3
       18 [-]: GETTABLE R3 R4 R2
-      19 [-]: GETIMPORT R4 9 [nil]
+      19 [-]: GETIMPORT R4 9 [0x68D83431]
       20 [-]: CALL R4 0 1  
       21 [-]: GETTABLEKS R5 R3 K10 ["level"]
       22 [-]: SETTABLEKS R5 R4 K10 ["level"]
@@ -231,10 +231,10 @@ L 1:  17 [-]: GETUPVAL R4 3
       31 [-]: GETTABLEKS R8 R3 K17 ["rot"]
       32 [-]: NAMECALL R5 R4 K18 [0x691A3B2D]
       33 [-]: CALL R5 3 0  
-      34 [-]: GETIMPORT R5 20 [nil]
+      34 [-]: GETIMPORT R5 20 [0xA37DCA0A]
       35 [-]: MOVE R6 R4   
       36 [-]: CALL R5 1 0  
-      37 [-]: GETIMPORT R5 23 [nil]
+      37 [-]: GETIMPORT R5 23 [0x9C1F3B5A]
       38 [-]: GETUPVAL R6 3
       39 [-]: MOVE R7 R2   
       40 [-]: CALL R5 2 0  
@@ -246,7 +246,7 @@ L 2:  42 [-]: GETUPVAL R3 4
       46 [-]: FORNPREP R0 L4
 L 3:  47 [-]: GETUPVAL R4 4
       48 [-]: GETTABLE R3 R4 R2
-      49 [-]: GETIMPORT R4 9 [nil]
+      49 [-]: GETIMPORT R4 9 [0x68D83431]
       50 [-]: CALL R4 0 1  
       51 [-]: GETUPVAL R6 5
       52 [-]: GETTABLE R5 R6 R3
@@ -257,10 +257,10 @@ L 3:  47 [-]: GETUPVAL R4 4
       57 [-]: LOADK R7 K24 ["OnLayerRemoved"]
       58 [-]: NAMECALL R5 R4 K15 [0x30E5D39D]
       59 [-]: CALL R5 2 0  
-      60 [-]: GETIMPORT R5 26 [nil]
+      60 [-]: GETIMPORT R5 26 [0x47AA0F1B]
       61 [-]: MOVE R6 R4   
       62 [-]: CALL R5 1 0  
-      63 [-]: GETIMPORT R5 23 [nil]
+      63 [-]: GETIMPORT R5 23 [0x9C1F3B5A]
       64 [-]: GETUPVAL R6 4
       65 [-]: MOVE R7 R2   
       66 [-]: CALL R5 2 0  

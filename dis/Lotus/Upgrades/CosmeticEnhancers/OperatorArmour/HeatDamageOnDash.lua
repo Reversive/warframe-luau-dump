@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  1
 
-            1 [-]: DUPCLOSURE R0 K0 []
+       1 [-]: DUPCLOSURE R0 K0 []
        2 [-]: SETGLOBAL R0 K1 ["GetDescription"]
        3 [-]: DUPCLOSURE R0 K2 []
        4 [-]: SETGLOBAL R0 K3 ["HeatDamageLoop"]
@@ -22,38 +22,38 @@
 ; Max Stack Size:  9
 
        0 [-]: DUPTABLE R1 3
-       1 [-]: GETIMPORT R3 5 [nil]
-       2 [-]: GETIMPORT R6 5 [nil]
+       1 [-]: GETIMPORT R3 5 [0xE15169D2]
+       2 [-]: GETIMPORT R6 5 [0xE15169D2]
        3 [-]: LENGTH R5 R6 
        4 [-]: FASTCALL2 19 R5 R0 L0
        5 [-]: MOVE R6 R0   
-       6 [-]: GETIMPORT R4 8 [nil]
+       6 [-]: GETIMPORT R4 8 [0xAC1B386A]
        7 [-]: CALL R4 2 1  
 L 0:   8 [-]: GETTABLE R2 R3 R4
        9 [-]: SETTABLEKS R2 R1 K0 ["DURATION"]
-      10 [-]: GETIMPORT R5 11 [nil]
-      11 [-]: GETIMPORT R8 11 [nil]
+      10 [-]: GETIMPORT R5 11 [0x9B5DDF0B]
+      11 [-]: GETIMPORT R8 11 [0x9B5DDF0B]
       12 [-]: LENGTH R7 R8 
       13 [-]: FASTCALL2 19 R7 R0 L1
       14 [-]: MOVE R8 R0   
-      15 [-]: GETIMPORT R6 8 [nil]
+      15 [-]: GETIMPORT R6 8 [0xAC1B386A]
       16 [-]: CALL R6 2 1  
 L 1:  17 [-]: GETTABLE R4 R5 R6
       18 [-]: MULK R3 R4 K9 [100]
       19 [-]: FASTCALL1 12 R3 L2
-      20 [-]: GETIMPORT R2 13 [nil]
+      20 [-]: GETIMPORT R2 13 [0x55F27C30]
       21 [-]: CALL R2 1 1  
 L 2:  22 [-]: SETTABLEKS R2 R1 K1 ["AMOUNT"]
-      23 [-]: GETIMPORT R3 15 [nil]
-      24 [-]: GETIMPORT R6 15 [nil]
+      23 [-]: GETIMPORT R3 15 [0x440FDEE7]
+      24 [-]: GETIMPORT R6 15 [0x440FDEE7]
       25 [-]: LENGTH R5 R6 
       26 [-]: FASTCALL2 19 R5 R0 L3
       27 [-]: MOVE R6 R0   
-      28 [-]: GETIMPORT R4 8 [nil]
+      28 [-]: GETIMPORT R4 8 [0xAC1B386A]
       29 [-]: CALL R4 2 1  
 L 3:  30 [-]: GETTABLE R2 R3 R4
       31 [-]: SETTABLEKS R2 R1 K2 ["COUNT"]
-      32 [-]: GETIMPORT R2 18 [nil]
+      32 [-]: GETIMPORT R2 18 [0xB139D7BC]
       33 [-]: MOVE R3 R1   
       34 [-]: CALL R2 1 -1 
       35 [-]: RETURN R2 -1 
@@ -66,45 +66,45 @@ L 3:  30 [-]: GETTABLE R2 R3 R4
 ; Is_vararg:       0
 ; Max Stack Size:  14
 
-       0 [-]: GETIMPORT R2 2 [nil]
+       0 [-]: GETIMPORT R2 2 ["heatDashDamage"]
        1 [-]: FASTCALL1 62 R2 L0
-       2 [-]: GETIMPORT R1 4 [nil]
+       2 [-]: GETIMPORT R1 4 [0x7B998233]
        3 [-]: CALL R1 1 1  
 L 0:   4 [-]: JUMPIFNOT R1 L1
        5 [-]: RETURN R0 0  
 L 1:   6 [-]: NAMECALL R1 R0 K5 [0x388577D5]
        7 [-]: CALL R1 1 1  
-L 2:   8 [-]: GETIMPORT R4 2 [nil]
+L 2:   8 [-]: GETIMPORT R4 2 ["heatDashDamage"]
        9 [-]: GETTABLE R3 R4 R1
       10 [-]: GETTABLEKS R2 R3 K6 ["timer"]
       11 [-]: LOADN R3 0   
       12 [-]: JUMPIFNOTLT R3 R2 L4
       13 [-]: FASTCALL1 62 R0 L3
       14 [-]: MOVE R3 R0   
-      15 [-]: GETIMPORT R2 4 [nil]
+      15 [-]: GETIMPORT R2 4 [0x7B998233]
       16 [-]: CALL R2 1 1  
 L 3:  17 [-]: JUMPIF R2 L4 
       18 [-]: NAMECALL R2 R0 K7 [0x2047CFE7]
       19 [-]: CALL R2 1 1  
       20 [-]: JUMPIF R2 L4 
-      21 [-]: GETIMPORT R3 2 [nil]
+      21 [-]: GETIMPORT R3 2 ["heatDashDamage"]
       22 [-]: GETTABLE R2 R3 R1
-      23 [-]: GETIMPORT R6 2 [nil]
+      23 [-]: GETIMPORT R6 2 ["heatDashDamage"]
       24 [-]: GETTABLE R5 R6 R1
       25 [-]: GETTABLEKS R4 R5 K6 ["timer"]
-      26 [-]: GETIMPORT R5 9 [nil]
+      26 [-]: GETIMPORT R5 9 [0x67652851]
       27 [-]: CALL R5 0 1  
       28 [-]: SUB R3 R4 R5 
       29 [-]: SETTABLEKS R3 R2 K6 ["timer"]
-      30 [-]: GETIMPORT R2 11 [nil]
+      30 [-]: GETIMPORT R2 11 [0xCBD666E1]
       31 [-]: LOADN R3 0   
       32 [-]: CALL R2 1 0  
       33 [-]: JUMPBACK L2  
-L 4:  34 [-]: GETIMPORT R4 2 [nil]
+L 4:  34 [-]: GETIMPORT R4 2 ["heatDashDamage"]
       35 [-]: GETTABLE R3 R4 R1
       36 [-]: GETTABLEKS R2 R3 K12 ["damage"]
       37 [-]: LOADN R5 1   
-      38 [-]: GETIMPORT R7 2 [nil]
+      38 [-]: GETIMPORT R7 2 ["heatDashDamage"]
       39 [-]: GETTABLE R6 R7 R1
       40 [-]: GETTABLEKS R3 R6 K13 ["stacks"]
       41 [-]: LOADN R4 1   
@@ -120,7 +120,7 @@ L 5:  43 [-]: NAMECALL R6 R0 K14 [0xDE321E6F]
       51 [-]: NAMECALL R6 R6 K15 [0x12DD9DA2]
       52 [-]: CALL R6 7 0  
       53 [-]: FORNLOOP R3 L5
-L 6:  54 [-]: GETIMPORT R3 2 [nil]
+L 6:  54 [-]: GETIMPORT R3 2 ["heatDashDamage"]
       55 [-]: LOADNIL R4   
       56 [-]: SETTABLE R4 R3 R1
       57 [-]: RETURN R0 0  
@@ -133,58 +133,58 @@ L 6:  54 [-]: GETIMPORT R3 2 [nil]
 ; Is_vararg:       0
 ; Max Stack Size:  18
 
-       0 [-]: GETIMPORT R5 1 [nil]
+       0 [-]: GETIMPORT R5 1 [0x89326C93]
        1 [-]: NAMECALL R5 R5 K2 [0x18D05D30]
        2 [-]: CALL R5 1 1  
        3 [-]: JUMPIF R5 L0 
        4 [-]: RETURN R0 0  
-L 0:   5 [-]: GETIMPORT R6 5 [nil]
+L 0:   5 [-]: GETIMPORT R6 5 ["heatDashDamage"]
        6 [-]: FASTCALL1 62 R6 L1
-       7 [-]: GETIMPORT R5 7 [nil]
+       7 [-]: GETIMPORT R5 7 [0x7B998233]
        8 [-]: CALL R5 1 1  
 L 1:   9 [-]: JUMPIFNOT R5 L2
-      10 [-]: GETIMPORT R5 8 [nil]
+      10 [-]: GETIMPORT R5 8 ["_T"]
       11 [-]: NEWTABLE R6 0 0
       12 [-]: SETTABLEKS R6 R5 K4 ["heatDashDamage"]
-L 2:  13 [-]: GETIMPORT R6 10 [nil]
-      14 [-]: GETIMPORT R9 10 [nil]
+L 2:  13 [-]: GETIMPORT R6 10 [0x9B5DDF0B]
+      14 [-]: GETIMPORT R9 10 [0x9B5DDF0B]
       15 [-]: LENGTH R8 R9 
       16 [-]: FASTCALL2 19 R8 R2 L3
       17 [-]: MOVE R9 R2   
-      18 [-]: GETIMPORT R7 13 [nil]
+      18 [-]: GETIMPORT R7 13 [0xAC1B386A]
       19 [-]: CALL R7 2 1  
 L 3:  20 [-]: GETTABLE R5 R6 R7
-      21 [-]: GETIMPORT R7 15 [nil]
-      22 [-]: GETIMPORT R10 15 [nil]
+      21 [-]: GETIMPORT R7 15 [0xE15169D2]
+      22 [-]: GETIMPORT R10 15 [0xE15169D2]
       23 [-]: LENGTH R9 R10
       24 [-]: FASTCALL2 19 R9 R2 L4
       25 [-]: MOVE R10 R2  
-      26 [-]: GETIMPORT R8 13 [nil]
+      26 [-]: GETIMPORT R8 13 [0xAC1B386A]
       27 [-]: CALL R8 2 1  
 L 4:  28 [-]: GETTABLE R6 R7 R8
       29 [-]: NAMECALL R7 R0 K16 [0x388577D5]
       30 [-]: CALL R7 1 1  
       31 [-]: LOADB R8 0   
-      32 [-]: GETIMPORT R11 5 [nil]
+      32 [-]: GETIMPORT R11 5 ["heatDashDamage"]
       33 [-]: GETTABLE R10 R11 R7
       34 [-]: FASTCALL1 62 R10 L5
-      35 [-]: GETIMPORT R9 7 [nil]
+      35 [-]: GETIMPORT R9 7 [0x7B998233]
       36 [-]: CALL R9 1 1  
 L 5:  37 [-]: JUMPIFNOT R9 L6
-      38 [-]: GETIMPORT R9 5 [nil]
+      38 [-]: GETIMPORT R9 5 ["heatDashDamage"]
       39 [-]: NEWTABLE R10 0 0
       40 [-]: SETTABLE R10 R9 R7
-      41 [-]: GETIMPORT R10 5 [nil]
+      41 [-]: GETIMPORT R10 5 ["heatDashDamage"]
       42 [-]: GETTABLE R9 R10 R7
       43 [-]: SETTABLEKS R6 R9 K17 ["timer"]
-      44 [-]: GETIMPORT R10 5 [nil]
+      44 [-]: GETIMPORT R10 5 ["heatDashDamage"]
       45 [-]: GETTABLE R9 R10 R7
       46 [-]: SETTABLEKS R5 R9 K18 ["damage"]
-      47 [-]: GETIMPORT R10 5 [nil]
+      47 [-]: GETIMPORT R10 5 ["heatDashDamage"]
       48 [-]: GETTABLE R9 R10 R7
       49 [-]: LOADN R10 1  
       50 [-]: SETTABLEKS R10 R9 K19 ["stacks"]
-      51 [-]: GETIMPORT R11 21 [nil]
+      51 [-]: GETIMPORT R11 21 [0x0469F296]
       52 [-]: LOADK R12 K22 ["HeatDamageLoop"]
       53 [-]: CALL R11 1 1 
       54 [-]: LOADB R12 0  
@@ -192,32 +192,32 @@ L 5:  37 [-]: JUMPIFNOT R9 L6
       56 [-]: CALL R9 3 0  
       57 [-]: JUMP L10
     
-L 6:  58 [-]: GETIMPORT R11 5 [nil]
+L 6:  58 [-]: GETIMPORT R11 5 ["heatDashDamage"]
       59 [-]: GETTABLE R10 R11 R7
       60 [-]: GETTABLEKS R9 R10 K19 ["stacks"]
-      61 [-]: GETIMPORT R11 25 [nil]
-      62 [-]: GETIMPORT R14 25 [nil]
+      61 [-]: GETIMPORT R11 25 [0x440FDEE7]
+      62 [-]: GETIMPORT R14 25 [0x440FDEE7]
       63 [-]: LENGTH R13 R14
       64 [-]: FASTCALL2 19 R13 R2 L7
       65 [-]: MOVE R14 R2  
-      66 [-]: GETIMPORT R12 13 [nil]
+      66 [-]: GETIMPORT R12 13 [0xAC1B386A]
       67 [-]: CALL R12 2 1 
 L 7:  68 [-]: GETTABLE R10 R11 R12
       69 [-]: JUMPIFLE R10 R9 L8
       70 [-]: LOADB R8 0 +1
 L 8:  71 [-]: LOADB R8 1   
-L 9:  72 [-]: GETIMPORT R10 5 [nil]
+L 9:  72 [-]: GETIMPORT R10 5 ["heatDashDamage"]
       73 [-]: GETTABLE R9 R10 R7
       74 [-]: SETTABLEKS R6 R9 K17 ["timer"]
       75 [-]: JUMPIF R8 L10
-      76 [-]: GETIMPORT R10 5 [nil]
+      76 [-]: GETIMPORT R10 5 ["heatDashDamage"]
       77 [-]: GETTABLE R9 R10 R7
-      78 [-]: GETIMPORT R13 5 [nil]
+      78 [-]: GETIMPORT R13 5 ["heatDashDamage"]
       79 [-]: GETTABLE R12 R13 R7
       80 [-]: GETTABLEKS R11 R12 K19 ["stacks"]
       81 [-]: ADDK R10 R11 K26 [1]
       82 [-]: SETTABLEKS R10 R9 K19 ["stacks"]
-L10:  83 [-]: GETIMPORT R9 29 [nil]
+L10:  83 [-]: GETIMPORT R9 29 [0x608BC054]
       84 [-]: CALL R9 0 1  
       85 [-]: SETTABLEKS R0 R9 K30 ["instigator"]
       86 [-]: NEWTABLE R10 0 1
@@ -227,11 +227,11 @@ L10:  83 [-]: GETIMPORT R9 29 [nil]
       90 [-]: LOADN R10 13 
       91 [-]: SETTABLEKS R10 R9 K32 ["buffType"]
       92 [-]: SETTABLEKS R4 R9 K33 ["abilityType"]
-      93 [-]: GETIMPORT R12 5 [nil]
+      93 [-]: GETIMPORT R12 5 ["heatDashDamage"]
       94 [-]: GETTABLE R11 R12 R7
       95 [-]: GETTABLEKS R10 R11 K17 ["timer"]
       96 [-]: SETTABLEKS R10 R9 K34 ["buffData"]
-      97 [-]: GETIMPORT R12 5 [nil]
+      97 [-]: GETIMPORT R12 5 ["heatDashDamage"]
       98 [-]: GETTABLE R11 R12 R7
       99 [-]: GETTABLEKS R10 R11 K19 ["stacks"]
      100 [-]: SETTABLEKS R10 R9 K35 ["buffDataExtra"]

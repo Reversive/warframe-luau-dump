@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  1
 
-            1 [-]: DUPCLOSURE R0 K0 []
+       1 [-]: DUPCLOSURE R0 K0 []
        2 [-]: SETGLOBAL R0 K1 ["OnUpgradeApplied"]
        3 [-]: DUPCLOSURE R0 K2 []
        4 [-]: SETGLOBAL R0 K3 ["OnUpgradeUnapplied"]
@@ -26,12 +26,12 @@
        4 [-]: CALL R5 2 1  
        5 [-]: FASTCALL1 62 R5 L0
        6 [-]: MOVE R7 R5   
-       7 [-]: GETIMPORT R6 3 [nil]
+       7 [-]: GETIMPORT R6 3 [0x7B998233]
        8 [-]: CALL R6 1 1  
 L 0:   9 [-]: JUMPIF R6 L1 
       10 [-]: NAMECALL R6 R5 K4 [0xCDE10C4A]
       11 [-]: CALL R6 1 1  
-      12 [-]: GETIMPORT R8 6 [nil]
+      12 [-]: GETIMPORT R8 6 [0xD0E46297]
       13 [-]: NAMECALL R6 R6 K7 [0xF2DEAF69]
       14 [-]: CALL R6 2 1  
       15 [-]: JUMPIFNOT R6 L1
@@ -39,7 +39,7 @@ L 0:   9 [-]: JUMPIF R6 L1
       17 [-]: CALL R6 1 1  
       18 [-]: LOADN R8 214 
       19 [-]: LOADN R9 0   
-      20 [-]: GETIMPORT R10 9 [nil]
+      20 [-]: GETIMPORT R10 9 [0x4EA98FC4]
       21 [-]: NAMECALL R11 R1 K4 [0xCDE10C4A]
       22 [-]: CALL R11 1 1 
       23 [-]: MOVE R12 R1  
@@ -62,12 +62,12 @@ L 1:  26 [-]: RETURN R0 0
        4 [-]: CALL R5 2 1  
        5 [-]: FASTCALL1 62 R5 L0
        6 [-]: MOVE R7 R5   
-       7 [-]: GETIMPORT R6 3 [nil]
+       7 [-]: GETIMPORT R6 3 [0x7B998233]
        8 [-]: CALL R6 1 1  
 L 0:   9 [-]: JUMPIF R6 L1 
       10 [-]: NAMECALL R6 R5 K4 [0xCDE10C4A]
       11 [-]: CALL R6 1 1  
-      12 [-]: GETIMPORT R8 6 [nil]
+      12 [-]: GETIMPORT R8 6 [0xD0E46297]
       13 [-]: NAMECALL R6 R6 K7 [0xF2DEAF69]
       14 [-]: CALL R6 2 1  
       15 [-]: JUMPIFNOT R6 L1
@@ -75,7 +75,7 @@ L 0:   9 [-]: JUMPIF R6 L1
       17 [-]: CALL R6 1 1  
       18 [-]: LOADN R8 214 
       19 [-]: LOADN R9 0   
-      20 [-]: GETIMPORT R10 9 [nil]
+      20 [-]: GETIMPORT R10 9 [0x4EA98FC4]
       21 [-]: NAMECALL R11 R1 K4 [0xCDE10C4A]
       22 [-]: CALL R11 1 1 
       23 [-]: MOVE R12 R1  

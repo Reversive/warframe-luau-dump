@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  1
 
-            1 [-]: DUPCLOSURE R0 K0 []
+       1 [-]: DUPCLOSURE R0 K0 []
        2 [-]: SETGLOBAL R0 K1 ["MatchTagEvent"]
        3 [-]: RETURN R0 0  
 
@@ -20,11 +20,11 @@
        0 [-]: JUMPIFNOT R1 L2
        1 [-]: JUMPXEQKS R1 K0 L2 [""]
        2 [-]: LOADN R4 1   
-       3 [-]: GETIMPORT R5 2 [nil]
+       3 [-]: GETIMPORT R5 2 [0x51CB4E17]
        4 [-]: LENGTH R2 R5 
        5 [-]: LOADN R3 1   
        6 [-]: FORNPREP R2 L2
-L 0:   7 [-]: GETIMPORT R6 2 [nil]
+L 0:   7 [-]: GETIMPORT R6 2 [0x51CB4E17]
        8 [-]: GETTABLE R5 R6 R4
        9 [-]: NAMECALL R5 R5 K3 [0x6D604BA7]
       10 [-]: CALL R5 1 1  

@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  1
 
-            1 [-]: DUPCLOSURE R0 K0 []
+       1 [-]: DUPCLOSURE R0 K0 []
        2 [-]: SETGLOBAL R0 K1 ["StartMod"]
        3 [-]: RETURN R0 0  
 
@@ -19,24 +19,24 @@
 
        0 [-]: FASTCALL1 62 R0 L0
        1 [-]: MOVE R6 R0   
-       2 [-]: GETIMPORT R5 1 [nil]
+       2 [-]: GETIMPORT R5 1 [0x7B998233]
        3 [-]: CALL R5 1 1  
 L 0:   4 [-]: JUMPIF R5 L3 
        5 [-]: FASTCALL1 62 R4 L1
        6 [-]: MOVE R6 R4   
-       7 [-]: GETIMPORT R5 1 [nil]
+       7 [-]: GETIMPORT R5 1 [0x7B998233]
        8 [-]: CALL R5 1 1  
 L 1:   9 [-]: JUMPIF R5 L3 
-      10 [-]: GETIMPORT R6 3 [nil]
+      10 [-]: GETIMPORT R6 3 [0xBE190284]
       11 [-]: FASTCALL1 62 R6 L2
-      12 [-]: GETIMPORT R5 1 [nil]
+      12 [-]: GETIMPORT R5 1 [0x7B998233]
       13 [-]: CALL R5 1 1  
 L 2:  14 [-]: JUMPIF R5 L3 
-      15 [-]: GETIMPORT R5 3 [nil]
+      15 [-]: GETIMPORT R5 3 [0xBE190284]
       16 [-]: NAMECALL R5 R5 K4 [0x32316A21]
       17 [-]: CALL R5 1 1  
       18 [-]: JUMPIFNOT R5 L3
-      19 [-]: GETIMPORT R5 6 [nil]
+      19 [-]: GETIMPORT R5 6 [0x89326C93]
       20 [-]: NAMECALL R5 R5 K7 [0x18D05D30]
       21 [-]: CALL R5 1 1  
       22 [-]: JUMPIF R5 L4 
@@ -50,17 +50,17 @@ L 4:  24 [-]: NAMECALL R5 R0 K8 [0xDE321E6F]
       30 [-]: LOADB R8 1   
 L 5:  31 [-]: FASTCALL1 62 R1 L6
       32 [-]: MOVE R10 R1  
-      33 [-]: GETIMPORT R9 1 [nil]
+      33 [-]: GETIMPORT R9 1 [0x7B998233]
       34 [-]: CALL R9 1 1  
 L 6:  35 [-]: JUMPIF R9 L14
       36 [-]: FASTCALL1 62 R4 L7
       37 [-]: MOVE R10 R4  
-      38 [-]: GETIMPORT R9 1 [nil]
+      38 [-]: GETIMPORT R9 1 [0x7B998233]
       39 [-]: CALL R9 1 1  
 L 7:  40 [-]: JUMPIF R9 L14
       41 [-]: FASTCALL1 62 R5 L8
       42 [-]: MOVE R10 R5  
-      43 [-]: GETIMPORT R9 1 [nil]
+      43 [-]: GETIMPORT R9 1 [0x7B998233]
       44 [-]: CALL R9 1 1  
 L 8:  45 [-]: JUMPIF R9 L14
       46 [-]: LOADN R11 0  
@@ -102,7 +102,7 @@ L11:  72 [-]: SUBK R15 R12 K12 [1]
       81 [-]: CALL R14 2 0 
       82 [-]: FORNLOOP R10 L11
 L12:  83 [-]: MOVE R8 R9   
-L13:  84 [-]: GETIMPORT R10 18 [nil]
+L13:  84 [-]: GETIMPORT R10 18 [0xCBD666E1]
       85 [-]: LOADN R11 0  
       86 [-]: CALL R10 1 0 
       87 [-]: JUMPBACK L5  

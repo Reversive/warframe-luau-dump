@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  1
 
-            1 [-]: DUPCLOSURE R0 K0 []
+       1 [-]: DUPCLOSURE R0 K0 []
        2 [-]: SETGLOBAL R0 K1 ["ClosePolearm"]
        3 [-]: DUPCLOSURE R0 K2 []
        4 [-]: SETGLOBAL R0 K3 ["OpenPolearm"]
@@ -19,16 +19,16 @@
 ; Is_vararg:       0
 ; Max Stack Size:  13
 
-       0 [-]: GETIMPORT R3 2 [nil]
+       0 [-]: GETIMPORT R3 2 ["UNLIT_ATTEN"]
        1 [-]: LOADN R4 0   
        2 [-]: NAMECALL R1 R0 K3 [0x986D2AB8]
        3 [-]: CALL R1 3 0  
-       4 [-]: GETIMPORT R3 5 [nil]
+       4 [-]: GETIMPORT R3 5 ["gWeaponTrailType"]
        5 [-]: NAMECALL R1 R0 K6 [0xC1595BD5]
        6 [-]: CALL R1 2 1  
        7 [-]: FASTCALL1 62 R1 L0
        8 [-]: MOVE R3 R1   
-       9 [-]: GETIMPORT R2 8 [nil]
+       9 [-]: GETIMPORT R2 8 [0x7B998233]
       10 [-]: CALL R2 1 1  
 L 0:  11 [-]: JUMPIF R2 L2 
       12 [-]: LOADN R4 1   
@@ -36,7 +36,7 @@ L 0:  11 [-]: JUMPIF R2 L2
       14 [-]: LOADN R3 1   
       15 [-]: FORNPREP R2 L2
 L 1:  16 [-]: GETTABLE R5 R1 R4
-      17 [-]: GETIMPORT R8 10 [nil]
+      17 [-]: GETIMPORT R8 10 [0x79B325DB]
       18 [-]: LOADN R9 0   
       19 [-]: LOADN R10 0  
       20 [-]: LOADN R11 1  
@@ -54,16 +54,16 @@ L 2:  25 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  13
 
-       0 [-]: GETIMPORT R3 2 [nil]
+       0 [-]: GETIMPORT R3 2 ["UNLIT_ATTEN"]
        1 [-]: LOADN R4 1   
        2 [-]: NAMECALL R1 R0 K3 [0x986D2AB8]
        3 [-]: CALL R1 3 0  
-       4 [-]: GETIMPORT R3 5 [nil]
+       4 [-]: GETIMPORT R3 5 ["gWeaponTrailType"]
        5 [-]: NAMECALL R1 R0 K6 [0xC1595BD5]
        6 [-]: CALL R1 2 1  
        7 [-]: FASTCALL1 62 R1 L0
        8 [-]: MOVE R3 R1   
-       9 [-]: GETIMPORT R2 8 [nil]
+       9 [-]: GETIMPORT R2 8 [0x7B998233]
       10 [-]: CALL R2 1 1  
 L 0:  11 [-]: JUMPIF R2 L2 
       12 [-]: LOADN R4 1   
@@ -71,7 +71,7 @@ L 0:  11 [-]: JUMPIF R2 L2
       14 [-]: LOADN R3 1   
       15 [-]: FORNPREP R2 L2
 L 1:  16 [-]: GETTABLE R5 R1 R4
-      17 [-]: GETIMPORT R8 10 [nil]
+      17 [-]: GETIMPORT R8 10 [0x79B325DB]
       18 [-]: LOADN R9 0   
       19 [-]: LOADN R10 0  
       20 [-]: LOADN R11 1  

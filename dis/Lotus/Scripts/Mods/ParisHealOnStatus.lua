@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  2
 
-            1 [-]: DUPCLOSURE R0 K0 []
+       1 [-]: DUPCLOSURE R0 K0 []
        2 [-]: DUPCLOSURE R1 K1 []
        3 [-]: SETGLOBAL R1 K2 ["GetModDescriptionInfo"]
        4 [-]: DUPCLOSURE R1 K3 []
@@ -38,7 +38,7 @@
        3 [-]: SETTABLEKS R1 R2 K0 ["HEAL"]
        4 [-]: LOADN R3 3   
        5 [-]: SETTABLEKS R3 R2 K1 ["PROCS"]
-       6 [-]: GETIMPORT R3 5 [nil]
+       6 [-]: GETIMPORT R3 5 [0xB139D7BC]
        7 [-]: MOVE R4 R2   
        8 [-]: CALL R3 1 -1 
        9 [-]: RETURN R3 -1 
@@ -51,30 +51,30 @@
 ; Is_vararg:       0
 ; Max Stack Size:  13
 
-       0 [-]: GETIMPORT R5 1 [nil]
+       0 [-]: GETIMPORT R5 1 [0x89326C93]
        1 [-]: NAMECALL R5 R5 K2 [0x18D05D30]
        2 [-]: CALL R5 1 1  
        3 [-]: JUMPIFNOT R5 L1
        4 [-]: FASTCALL1 62 R0 L0
        5 [-]: MOVE R6 R0   
-       6 [-]: GETIMPORT R5 4 [nil]
+       6 [-]: GETIMPORT R5 4 [0x7B998233]
        7 [-]: CALL R5 1 1  
 L 0:   8 [-]: JUMPIFNOT R5 L2
 L 1:   9 [-]: RETURN R0 0  
-L 2:  10 [-]: GETIMPORT R5 7 [nil]
+L 2:  10 [-]: GETIMPORT R5 7 ["parisHealOnStatus"]
       11 [-]: JUMPIF R5 L3 
-      12 [-]: GETIMPORT R5 8 [nil]
+      12 [-]: GETIMPORT R5 8 ["_T"]
       13 [-]: NEWTABLE R6 0 0
       14 [-]: SETTABLEKS R6 R5 K6 ["parisHealOnStatus"]
 L 3:  15 [-]: NAMECALL R5 R0 K9 [0x388577D5]
       16 [-]: CALL R5 1 1  
-      17 [-]: GETIMPORT R6 7 [nil]
-      18 [-]: GETIMPORT R10 7 [nil]
+      17 [-]: GETIMPORT R6 7 ["parisHealOnStatus"]
+      18 [-]: GETIMPORT R10 7 ["parisHealOnStatus"]
       19 [-]: GETTABLE R9 R10 R5
       20 [-]: ORK R8 R9 K11 [0]
       21 [-]: ADDK R7 R8 K10 [1]
       22 [-]: SETTABLE R7 R6 R5
-      23 [-]: GETIMPORT R6 14 [nil]
+      23 [-]: GETIMPORT R6 14 [0x608BC054]
       24 [-]: CALL R6 0 1  
       25 [-]: SETTABLEKS R0 R6 K15 ["instigator"]
       26 [-]: NEWTABLE R7 0 1
@@ -83,12 +83,12 @@ L 3:  15 [-]: NAMECALL R5 R0 K9 [0x388577D5]
       29 [-]: SETTABLEKS R7 R6 K16 ["affected"]
       30 [-]: LOADN R7 5   
       31 [-]: SETTABLEKS R7 R6 K17 ["buffType"]
-      32 [-]: GETIMPORT R7 19 [nil]
+      32 [-]: GETIMPORT R7 19 [0x7ED7BE8E]
       33 [-]: SETTABLEKS R7 R6 K20 ["abilityType"]
-      34 [-]: GETIMPORT R8 7 [nil]
+      34 [-]: GETIMPORT R8 7 ["parisHealOnStatus"]
       35 [-]: GETTABLE R7 R8 R5
       36 [-]: SETTABLEKS R7 R6 K21 ["buffData"]
-      37 [-]: GETIMPORT R8 7 [nil]
+      37 [-]: GETIMPORT R8 7 ["parisHealOnStatus"]
       38 [-]: GETTABLE R7 R8 R5
       39 [-]: LOADN R8 3   
       40 [-]: JUMPIFNOTLE R8 R7 L4
@@ -98,20 +98,20 @@ L 3:  15 [-]: NAMECALL R5 R0 K9 [0x388577D5]
       44 [-]: MOVE R11 R7  
       45 [-]: NAMECALL R8 R0 K22 [0x1F135DE0]
       46 [-]: CALL R8 3 0  
-      47 [-]: GETIMPORT R8 7 [nil]
+      47 [-]: GETIMPORT R8 7 ["parisHealOnStatus"]
       48 [-]: LOADNIL R9   
       49 [-]: SETTABLE R9 R8 R5
-      50 [-]: GETIMPORT R8 24 [nil]
-      51 [-]: GETIMPORT R9 7 [nil]
+      50 [-]: GETIMPORT R8 24 [0x4EC73E73]
+      51 [-]: GETIMPORT R9 7 ["parisHealOnStatus"]
       52 [-]: CALL R8 1 1  
       53 [-]: JUMPIF R8 L4 
-      54 [-]: GETIMPORT R8 8 [nil]
+      54 [-]: GETIMPORT R8 8 ["_T"]
       55 [-]: LOADNIL R9   
       56 [-]: SETTABLEKS R9 R8 K6 ["parisHealOnStatus"]
 L 4:  57 [-]: LOADB R7 0   
-      58 [-]: GETIMPORT R8 7 [nil]
+      58 [-]: GETIMPORT R8 7 ["parisHealOnStatus"]
       59 [-]: JUMPXEQKNIL R8 L6
-      60 [-]: GETIMPORT R9 7 [nil]
+      60 [-]: GETIMPORT R9 7 ["parisHealOnStatus"]
       61 [-]: GETTABLE R8 R9 R5
       62 [-]: JUMPXEQKNIL R8 L5 NOT
       63 [-]: LOADB R7 0 +1

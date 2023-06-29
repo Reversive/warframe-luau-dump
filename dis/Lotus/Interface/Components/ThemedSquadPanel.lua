@@ -5,35 +5,35 @@
 ; Is_vararg:       1
 ; Max Stack Size:  14
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0xAEABECDA]
        2 [-]: GETVARARGS R1 1
-       3 [-]: GETIMPORT R2 4 [nil]
+       3 [-]: GETIMPORT R2 4 ["seeall"]
        4 [-]: CALL R0 2 0  
-       5 [-]: GETIMPORT R0 6 [nil]
+       5 [-]: GETIMPORT R0 6 [0x2D0FAD09]
        6 [-]: LOADK R1 K7 ["Lotus.Interface.CrossPlatformUtilities"]
        7 [-]: CALL R0 1 1  
-       8 [-]: GETIMPORT R1 6 [nil]
+       8 [-]: GETIMPORT R1 6 [0x2D0FAD09]
        9 [-]: LOADK R2 K8 ["Lotus.Interface.LotusUtilities"]
       10 [-]: CALL R1 1 1  
-      11 [-]: GETIMPORT R2 6 [nil]
+      11 [-]: GETIMPORT R2 6 [0x2D0FAD09]
       12 [-]: LOADK R3 K9 ["Lotus.Interface.LotusNetworkUtilities"]
       13 [-]: CALL R2 1 1  
-      14 [-]: GETIMPORT R3 6 [nil]
+      14 [-]: GETIMPORT R3 6 [0x2D0FAD09]
       15 [-]: LOADK R4 K10 ["Lotus.Interface.UIStyleUtilities"]
       16 [-]: CALL R3 1 1  
-      17 [-]: GETIMPORT R4 6 [nil]
+      17 [-]: GETIMPORT R4 6 [0x2D0FAD09]
       18 [-]: LOADK R5 K11 ["Lotus.Interface.UIUtilities"]
       19 [-]: CALL R4 1 1  
-      20 [-]: GETIMPORT R5 6 [nil]
+      20 [-]: GETIMPORT R5 6 [0x2D0FAD09]
       21 [-]: LOADK R6 K12 ["EE.Interface.Utilities"]
       22 [-]: CALL R5 1 1  
-      23 [-]: GETIMPORT R6 6 [nil]
+      23 [-]: GETIMPORT R6 6 [0x2D0FAD09]
       24 [-]: LOADK R7 K13 ["EE.Interface.Components.List"]
       25 [-]: CALL R6 1 1  
-      26 [-]: GETIMPORT R7 6 [nil]
+      26 [-]: GETIMPORT R7 6 [0x2D0FAD09]
       27 [-]: LOADK R8 K14 ["Lotus.Interface.Libs.TimerMgr"]
       28 [-]: CALL R7 1 1  
-      29 [-]: GETIMPORT R8 6 [nil]
+      29 [-]: GETIMPORT R8 6 [0x2D0FAD09]
       30 [-]: LOADK R9 K15 ["Lotus.Interface.Components.ThemedButton"]
       31 [-]: CALL R8 1 1  
       32 [-]: NEWTABLE R9 0 4
@@ -152,22 +152,22 @@
       85 [-]: CALL R6 0 1  
       86 [-]: NOT R5 R6    
       87 [-]: JUMPIFNOT R5 L2
-      88 [-]: GETIMPORT R6 38 [nil]
+      88 [-]: GETIMPORT R6 38 [0x89326C93]
       89 [-]: FASTCALL1 62 R6 L0
-      90 [-]: GETIMPORT R5 40 [nil]
+      90 [-]: GETIMPORT R5 40 [0x7B998233]
       91 [-]: CALL R5 1 1  
 L 0:  92 [-]: JUMPIF R5 L2 
-      93 [-]: GETIMPORT R6 38 [nil]
+      93 [-]: GETIMPORT R6 38 [0x89326C93]
       94 [-]: NAMECALL R6 R6 K41 [0x78298275]
       95 [-]: CALL R6 1 1  
       96 [-]: FASTCALL1 62 R6 L1
-      97 [-]: GETIMPORT R5 40 [nil]
+      97 [-]: GETIMPORT R5 40 [0x7B998233]
       98 [-]: CALL R5 1 1  
 L 1:  99 [-]: JUMPIF R5 L2 
-     100 [-]: GETIMPORT R6 38 [nil]
+     100 [-]: GETIMPORT R6 38 [0x89326C93]
      101 [-]: NAMECALL R6 R6 K41 [0x78298275]
      102 [-]: CALL R6 1 1  
-     103 [-]: GETIMPORT R8 43 [nil]
+     103 [-]: GETIMPORT R8 43 [0x7ED0A956]
      104 [-]: LOADK R9 K44 ["/Lotus/Levels/KahlMissions/KahlTypes/ControllableKahlTennoAvatar"]
      105 [-]: CALL R8 1 -1 
      106 [-]: NAMECALL R6 R6 K45 [0xF2DEAF69]

@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  0
 
-            1 [-]: RETURN R0 0  
+       1 [-]: RETURN R0 0  
 
 
 

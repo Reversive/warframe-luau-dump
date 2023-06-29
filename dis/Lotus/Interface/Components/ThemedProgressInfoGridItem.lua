@@ -5,9 +5,9 @@
 ; Is_vararg:       1
 ; Max Stack Size:  3
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0xAEABECDA]
        2 [-]: GETVARARGS R1 1
-       3 [-]: GETIMPORT R2 4 [nil]
+       3 [-]: GETIMPORT R2 4 ["seeall"]
        4 [-]: CALL R0 2 0  
        5 [-]: DUPCLOSURE R0 K5 []
        6 [-]: SETGLOBAL R0 K6 ["Create"]
@@ -21,16 +21,16 @@
 ; Is_vararg:       0
 ; Max Stack Size:  21
 
-       0 [-]: GETIMPORT R8 1 [nil]
+       0 [-]: GETIMPORT R8 1 [0x2D0FAD09]
        1 [-]: LOADK R9 K2 ["EE.Interface.Utilities"]
        2 [-]: CALL R8 1 1  
-       3 [-]: GETIMPORT R9 1 [nil]
+       3 [-]: GETIMPORT R9 1 [0x2D0FAD09]
        4 [-]: LOADK R10 K3 ["Lotus.Interface.UIStyleUtilities"]
        5 [-]: CALL R9 1 1  
-       6 [-]: GETIMPORT R10 1 [nil]
+       6 [-]: GETIMPORT R10 1 [0x2D0FAD09]
        7 [-]: LOADK R11 K4 ["Lotus.Interface.LotusUtilities"]
        8 [-]: CALL R10 1 1 
-       9 [-]: GETIMPORT R11 1 [nil]
+       9 [-]: GETIMPORT R11 1 [0x2D0FAD09]
       10 [-]: LOADK R12 K5 ["Lotus.Interface.Components.ThemedProgressInfo"]
       11 [-]: CALL R11 1 1 
       12 [-]: GETTABLEKS R12 R11 K6 [0xAE6791BA]
@@ -126,7 +126,7 @@ L 0:  32 [-]: ORK R13 R5 K7 [""]
      102 [-]: LOADK R18 K29 ["bottom"]
      103 [-]: NAMECALL R13 R0 K27 [0xE261AA96]
      104 [-]: CALL R13 5 0 
-     105 [-]: GETIMPORT R13 34 [nil]
+     105 [-]: GETIMPORT R13 34 [0xA7A2E381]
      106 [-]: CALL R13 0 1 
      107 [-]: JUMPIFNOT R13 L1
      108 [-]: MOVE R15 R1  

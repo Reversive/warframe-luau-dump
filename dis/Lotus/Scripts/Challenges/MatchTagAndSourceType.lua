@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  3
 
-            1 [-]: DUPCLOSURE R0 K0 []
+       1 [-]: DUPCLOSURE R0 K0 []
        2 [-]: DUPCLOSURE R1 K1 []
        3 [-]: DUPCLOSURE R2 K2 []
        4 [-]: MOVE R0 R0   
@@ -22,12 +22,12 @@
 ; Max Stack Size:  7
 
        0 [-]: LOADN R3 1   
-       1 [-]: GETIMPORT R4 1 [nil]
+       1 [-]: GETIMPORT R4 1 [0xE5826DC2]
        2 [-]: LENGTH R1 R4 
        3 [-]: LOADN R2 1   
        4 [-]: FORNPREP R1 L2
-L 0:   5 [-]: GETIMPORT R4 3 [nil]
-       6 [-]: GETIMPORT R6 1 [nil]
+L 0:   5 [-]: GETIMPORT R4 3 [0x64FB1586]
+       6 [-]: GETIMPORT R6 1 [0xE5826DC2]
        7 [-]: GETTABLE R5 R6 R3
        8 [-]: CALL R4 1 1  
        9 [-]: JUMPIFNOTEQ R0 R4 L1
@@ -45,8 +45,8 @@ L 2:  13 [-]: LOADB R1 0
 ; Is_vararg:       0
 ; Max Stack Size:  9
 
-       0 [-]: GETIMPORT R1 1 [nil]
-       1 [-]: GETIMPORT R2 3 [nil]
+       0 [-]: GETIMPORT R1 1 [0xCFC01047]
+       1 [-]: GETIMPORT R2 3 [0x46C57B9B]
        2 [-]: CALL R1 1 3  
        3 [-]: FORGPREP_NEXT R1 L1
 L 0:   4 [-]: MOVE R8 R5   
@@ -69,12 +69,12 @@ L 1:  10 [-]: FORGLOOP R1 L0 2
 
        0 [-]: FASTCALL1 62 R3 L0
        1 [-]: MOVE R5 R3   
-       2 [-]: GETIMPORT R4 1 [nil]
+       2 [-]: GETIMPORT R4 1 [0x7B998233]
        3 [-]: CALL R4 1 1  
 L 0:   4 [-]: JUMPIF R4 L2 
        5 [-]: FASTCALL1 62 R0 L1
        6 [-]: MOVE R5 R0   
-       7 [-]: GETIMPORT R4 1 [nil]
+       7 [-]: GETIMPORT R4 1 [0x7B998233]
        8 [-]: CALL R4 1 1  
 L 1:   9 [-]: JUMPIFNOT R4 L3
 L 2:  10 [-]: LOADB R4 0   

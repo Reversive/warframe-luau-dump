@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  1
 
-            1 [-]: DUPCLOSURE R0 K0 []
+       1 [-]: DUPCLOSURE R0 K0 []
        2 [-]: SETGLOBAL R0 K1 ["AnimDeco"]
        3 [-]: RETURN R0 0  
 
@@ -21,20 +21,20 @@
        1 [-]: CALL R1 1 1  
        2 [-]: FASTCALL1 62 R1 L0
        3 [-]: MOVE R3 R1   
-       4 [-]: GETIMPORT R2 2 [nil]
+       4 [-]: GETIMPORT R2 2 [0x7B998233]
        5 [-]: CALL R2 1 1  
 L 0:   6 [-]: JUMPIFNOT R2 L1
        7 [-]: RETURN R0 0  
-L 1:   8 [-]: GETIMPORT R4 4 [nil]
+L 1:   8 [-]: GETIMPORT R4 4 [0x74797CEB]
        9 [-]: NAMECALL R2 R1 K5 [0xC9F6A7D7]
       10 [-]: CALL R2 2 1  
       11 [-]: FASTCALL1 62 R2 L2
       12 [-]: MOVE R4 R2   
-      13 [-]: GETIMPORT R3 2 [nil]
+      13 [-]: GETIMPORT R3 2 [0x7B998233]
       14 [-]: CALL R3 1 1  
 L 2:  15 [-]: JUMPIFNOT R3 L3
       16 [-]: RETURN R0 0  
-L 3:  17 [-]: GETIMPORT R5 7 [nil]
+L 3:  17 [-]: GETIMPORT R5 7 [0x0B2F98E2]
       18 [-]: NAMECALL R6 R2 K8 [0x6162D901]
       19 [-]: CALL R6 1 1  
       20 [-]: NAMECALL R7 R2 K9 [0x89531483]
@@ -49,22 +49,22 @@ L 3:  17 [-]: GETIMPORT R5 7 [nil]
       29 [-]: CALL R4 3 0  
       30 [-]: FASTCALL1 62 R3 L4
       31 [-]: MOVE R5 R3   
-      32 [-]: GETIMPORT R4 2 [nil]
+      32 [-]: GETIMPORT R4 2 [0x7B998233]
       33 [-]: CALL R4 1 1  
 L 4:  34 [-]: JUMPIF R4 L6 
       35 [-]: FASTCALL1 62 R1 L5
       36 [-]: MOVE R5 R1   
-      37 [-]: GETIMPORT R4 2 [nil]
+      37 [-]: GETIMPORT R4 2 [0x7B998233]
       38 [-]: CALL R4 1 1  
 L 5:  39 [-]: JUMPIF R4 L6 
       40 [-]: MOVE R6 R1   
-      41 [-]: GETIMPORT R7 16 [nil]
+      41 [-]: GETIMPORT R7 16 [0x0469F296]
       42 [-]: LOADK R8 K17 ["GAME_L1_WEAPON1"]
       43 [-]: CALL R7 1 -1 
       44 [-]: NAMECALL R4 R3 K18 [0xB6B094B2]
       45 [-]: CALL R4 -1 0 
-      46 [-]: GETIMPORT R6 20 [nil]
-      47 [-]: GETIMPORT R7 22 [nil]
+      46 [-]: GETIMPORT R6 20 ["ZERO_VECTOR"]
+      47 [-]: GETIMPORT R7 22 ["ZERO_ROTATION"]
       48 [-]: NAMECALL R4 R3 K23 [0xE28AA928]
       49 [-]: CALL R4 3 0  
 L 6:  50 [-]: RETURN R0 0  

@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  8
 
-            1 [-]: NEWTABLE R0 0 6
+       1 [-]: NEWTABLE R0 0 6
        2 [-]: LOADK R1 K0 [1.05]
        3 [-]: LOADK R2 K1 [1.1000000000000001]
        4 [-]: LOADK R3 K2 [1.125]
@@ -106,7 +106,7 @@ L 1:  10 [-]: MOVE R6 R7
       12 [-]: MULK R4 R5 K5 [100]
       13 [-]: ADDK R3 R4 K4 [0.5]
       14 [-]: FASTCALL1 12 R3 L2
-      15 [-]: GETIMPORT R2 9 [nil]
+      15 [-]: GETIMPORT R2 9 [0x55F27C30]
       16 [-]: CALL R2 1 1  
 L 2:  17 [-]: SETTABLEKS R2 R1 K0 ["CAPACITY"]
       18 [-]: LOADNIL R3   
@@ -123,7 +123,7 @@ L 4:  27 [-]: MOVE R2 R3
       28 [-]: SETTABLEKS R2 R1 K1 ["DELAY"]
       29 [-]: LOADN R2 10  
       30 [-]: SETTABLEKS R2 R1 K2 ["PERCENT"]
-      31 [-]: GETIMPORT R2 12 [nil]
+      31 [-]: GETIMPORT R2 12 [0xB139D7BC]
       32 [-]: MOVE R3 R1   
       33 [-]: CALL R2 1 -1 
       34 [-]: RETURN R2 -1 
@@ -136,7 +136,7 @@ L 4:  27 [-]: MOVE R2 R3
 ; Is_vararg:       0
 ; Max Stack Size:  16
 
-       0 [-]: GETIMPORT R5 1 [nil]
+       0 [-]: GETIMPORT R5 1 [0x89326C93]
        1 [-]: NAMECALL R5 R5 K2 [0x18D05D30]
        2 [-]: CALL R5 1 1  
        3 [-]: JUMPIF R5 L0 
@@ -145,10 +145,10 @@ L 0:   5 [-]: NAMECALL R5 R0 K3 [0x1C881607]
        6 [-]: CALL R5 1 1  
        7 [-]: FASTCALL1 62 R5 L1
        8 [-]: MOVE R7 R5   
-       9 [-]: GETIMPORT R6 5 [nil]
+       9 [-]: GETIMPORT R6 5 [0x7B998233]
       10 [-]: CALL R6 1 1  
 L 1:  11 [-]: JUMPIFNOT R6 L2
-      12 [-]: GETIMPORT R6 7 [nil]
+      12 [-]: GETIMPORT R6 7 [0x3D106989]
       13 [-]: LOADK R7 K8 ["AmmoBuff.lua: ApplyUpgrades - Creator avatar is nil."]
       14 [-]: CALL R6 1 0  
       15 [-]: RETURN R0 0  
@@ -156,30 +156,30 @@ L 2:  16 [-]: NAMECALL R6 R5 K9 [0xDE321E6F]
       17 [-]: CALL R6 1 1  
       18 [-]: FASTCALL1 62 R6 L3
       19 [-]: MOVE R8 R6   
-      20 [-]: GETIMPORT R7 5 [nil]
+      20 [-]: GETIMPORT R7 5 [0x7B998233]
       21 [-]: CALL R7 1 1  
 L 3:  22 [-]: JUMPIFNOT R7 L4
-      23 [-]: GETIMPORT R7 7 [nil]
+      23 [-]: GETIMPORT R7 7 [0x3D106989]
       24 [-]: LOADK R8 K10 ["AmmoBuff.lua: ApplyUpgrades - Creator inventory is nil."]
       25 [-]: CALL R7 1 0  
       26 [-]: RETURN R0 0  
-L 4:  27 [-]: GETIMPORT R8 13 [nil]
+L 4:  27 [-]: GETIMPORT R8 13 ["ammoBuff"]
       28 [-]: FASTCALL1 62 R8 L5
-      29 [-]: GETIMPORT R7 5 [nil]
+      29 [-]: GETIMPORT R7 5 [0x7B998233]
       30 [-]: CALL R7 1 1  
 L 5:  31 [-]: JUMPIFNOT R7 L6
-      32 [-]: GETIMPORT R7 14 [nil]
+      32 [-]: GETIMPORT R7 14 ["_T"]
       33 [-]: NEWTABLE R8 0 0
       34 [-]: SETTABLEKS R8 R7 K12 ["ammoBuff"]
 L 6:  35 [-]: NAMECALL R7 R0 K15 [0x388577D5]
       36 [-]: CALL R7 1 1  
-      37 [-]: GETIMPORT R10 13 [nil]
+      37 [-]: GETIMPORT R10 13 ["ammoBuff"]
       38 [-]: GETTABLE R9 R10 R7
       39 [-]: FASTCALL1 62 R9 L7
-      40 [-]: GETIMPORT R8 5 [nil]
+      40 [-]: GETIMPORT R8 5 [0x7B998233]
       41 [-]: CALL R8 1 1  
 L 7:  42 [-]: JUMPIFNOT R8 L8
-      43 [-]: GETIMPORT R8 13 [nil]
+      43 [-]: GETIMPORT R8 13 ["ammoBuff"]
       44 [-]: SETTABLE R2 R8 R7
 L 8:  45 [-]: LOADN R10 200
       46 [-]: LOADN R11 2  
@@ -219,7 +219,7 @@ L12:  75 [-]: MOVE R12 R13
       78 [-]: LOADK R10 K17 ["OnDamaged"]
       79 [-]: NAMECALL R8 R0 K18 [0x05B9ABD3]
       80 [-]: CALL R8 2 0  
-      81 [-]: GETIMPORT R8 7 [nil]
+      81 [-]: GETIMPORT R8 7 [0x3D106989]
       82 [-]: LOADK R9 K19 ["AmmoBuff.lua: ApplyUpgrades - Applied."]
       83 [-]: CALL R8 1 0  
       84 [-]: RETURN R0 0  
@@ -232,7 +232,7 @@ L12:  75 [-]: MOVE R12 R13
 ; Is_vararg:       0
 ; Max Stack Size:  12
 
-       0 [-]: GETIMPORT R2 1 [nil]
+       0 [-]: GETIMPORT R2 1 [0x89326C93]
        1 [-]: NAMECALL R2 R2 K2 [0x18D05D30]
        2 [-]: CALL R2 1 1  
        3 [-]: JUMPIF R2 L0 
@@ -241,10 +241,10 @@ L 0:   5 [-]: NAMECALL R2 R0 K3 [0x1C881607]
        6 [-]: CALL R2 1 1  
        7 [-]: FASTCALL1 62 R2 L1
        8 [-]: MOVE R4 R2   
-       9 [-]: GETIMPORT R3 5 [nil]
+       9 [-]: GETIMPORT R3 5 [0x7B998233]
       10 [-]: CALL R3 1 1  
 L 1:  11 [-]: JUMPIFNOT R3 L2
-      12 [-]: GETIMPORT R3 7 [nil]
+      12 [-]: GETIMPORT R3 7 [0x3D106989]
       13 [-]: LOADK R4 K8 ["AmmoBuff.lua: UnapplyUpgrades - Creator is nil."]
       14 [-]: CALL R3 1 0  
       15 [-]: RETURN R0 0  
@@ -252,10 +252,10 @@ L 2:  16 [-]: NAMECALL R3 R2 K9 [0xDE321E6F]
       17 [-]: CALL R3 1 1  
       18 [-]: FASTCALL1 62 R3 L3
       19 [-]: MOVE R5 R3   
-      20 [-]: GETIMPORT R4 5 [nil]
+      20 [-]: GETIMPORT R4 5 [0x7B998233]
       21 [-]: CALL R4 1 1  
 L 3:  22 [-]: JUMPIFNOT R4 L4
-      23 [-]: GETIMPORT R4 7 [nil]
+      23 [-]: GETIMPORT R4 7 [0x3D106989]
       24 [-]: LOADK R5 K10 ["AmmoBuff.lua: UnapplyUpgrades - Creator inventory is nil."]
       25 [-]: CALL R4 1 0  
       26 [-]: RETURN R0 0  
@@ -294,7 +294,7 @@ L 7:  55 [-]: GETUPVAL R10 1
 L 8:  57 [-]: MOVE R8 R9   
       58 [-]: NAMECALL R4 R3 K11 [0x12DD9DA2]
       59 [-]: CALL R4 4 0  
-      60 [-]: GETIMPORT R4 7 [nil]
+      60 [-]: GETIMPORT R4 7 [0x3D106989]
       61 [-]: LOADK R5 K12 ["AmmoBuff.lua: UnapplyUpgrades - Unapplied."]
       62 [-]: CALL R4 1 0  
       63 [-]: RETURN R0 0  
@@ -313,24 +313,24 @@ L 8:  57 [-]: MOVE R8 R9
        3 [-]: RETURN R0 0  
 L 0:   4 [-]: NAMECALL R1 R0 K1 [0x388577D5]
        5 [-]: CALL R1 1 1  
-       6 [-]: GETIMPORT R3 4 [nil]
+       6 [-]: GETIMPORT R3 4 ["ammoBuff"]
        7 [-]: FASTCALL1 62 R3 L1
-       8 [-]: GETIMPORT R2 6 [nil]
+       8 [-]: GETIMPORT R2 6 [0x7B998233]
        9 [-]: CALL R2 1 1  
 L 1:  10 [-]: JUMPIF R2 L3 
-      11 [-]: GETIMPORT R4 4 [nil]
+      11 [-]: GETIMPORT R4 4 ["ammoBuff"]
       12 [-]: GETTABLE R3 R4 R1
       13 [-]: FASTCALL1 62 R3 L2
-      14 [-]: GETIMPORT R2 6 [nil]
+      14 [-]: GETIMPORT R2 6 [0x7B998233]
       15 [-]: CALL R2 1 1  
 L 2:  16 [-]: JUMPIFNOT R2 L4
 L 3:  17 [-]: RETURN R0 0  
 L 4:  18 [-]: GETUPVAL R2 0
       19 [-]: MOVE R3 R0   
-      20 [-]: GETIMPORT R5 4 [nil]
+      20 [-]: GETIMPORT R5 4 ["ammoBuff"]
       21 [-]: GETTABLE R4 R5 R1
       22 [-]: CALL R2 2 0  
-      23 [-]: GETIMPORT R2 4 [nil]
+      23 [-]: GETIMPORT R2 4 ["ammoBuff"]
       24 [-]: LOADNIL R3   
       25 [-]: SETTABLE R3 R2 R1
       26 [-]: RETURN R0 0  

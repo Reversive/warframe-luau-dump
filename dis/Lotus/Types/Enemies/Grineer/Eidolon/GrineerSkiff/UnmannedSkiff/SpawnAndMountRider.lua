@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  1
 
-            1 [-]: DUPCLOSURE R0 K0 []
+       1 [-]: DUPCLOSURE R0 K0 []
        2 [-]: SETGLOBAL R0 K1 ["OnCreated"]
        3 [-]: RETURN R0 0  
 
@@ -17,33 +17,33 @@
 ; Is_vararg:       0
 ; Max Stack Size:  12
 
-       0 [-]: GETIMPORT R1 1 [nil]
+       0 [-]: GETIMPORT R1 1 [0x89326C93]
        1 [-]: NAMECALL R1 R1 K2 [0x18D05D30]
        2 [-]: CALL R1 1 1  
        3 [-]: JUMPIFNOT R1 L2
-       4 [-]: GETIMPORT R1 4 [nil]
-L 0:   5 [-]: GETIMPORT R2 4 [nil]
+       4 [-]: GETIMPORT R1 4 ["EMPTY_SYMBOL"]
+L 0:   5 [-]: GETIMPORT R2 4 ["EMPTY_SYMBOL"]
        6 [-]: JUMPIFNOTEQ R1 R2 L1
-       7 [-]: GETIMPORT R2 6 [nil]
+       7 [-]: GETIMPORT R2 6 [0xCBD666E1]
        8 [-]: LOADN R3 0   
        9 [-]: CALL R2 1 0  
       10 [-]: NAMECALL R2 R0 K7 [0x9D5CDA55]
       11 [-]: CALL R2 1 1  
       12 [-]: MOVE R1 R2   
       13 [-]: JUMPBACK L0  
-L 1:  14 [-]: GETIMPORT R2 9 [nil]
+L 1:  14 [-]: GETIMPORT R2 9 [0x280D6FE7]
       15 [-]: JUMPIFNOTEQ R1 R2 L2
-      16 [-]: GETIMPORT R2 1 [nil]
+      16 [-]: GETIMPORT R2 1 [0x89326C93]
       17 [-]: NAMECALL R2 R2 K10 [0x29EF273D]
       18 [-]: CALL R2 1 1  
       19 [-]: NAMECALL R2 R2 K11 [0x66905CB0]
       20 [-]: CALL R2 1 1  
-      21 [-]: GETIMPORT R3 13 [nil]
+      21 [-]: GETIMPORT R3 13 [0x0469F296]
       22 [-]: LOADK R4 K14 ["RandomTeam"]
       23 [-]: CALL R3 1 1  
       24 [-]: NAMECALL R4 R0 K15 [0xC45C884B]
       25 [-]: CALL R4 1 1  
-      26 [-]: GETIMPORT R7 17 [nil]
+      26 [-]: GETIMPORT R7 17 [0x8FA0A612]
       27 [-]: NAMECALL R8 R0 K18 [0xD1586535]
       28 [-]: CALL R8 1 1  
       29 [-]: NAMECALL R9 R0 K19 [0xCB3851B8]

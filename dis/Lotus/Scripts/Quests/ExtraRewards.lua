@@ -5,13 +5,13 @@
 ; Is_vararg:       1
 ; Max Stack Size:  11
 
-            1 [-]: LOADNIL R0   
+       1 [-]: LOADNIL R0   
        2 [-]: LOADNIL R1   
        3 [-]: LOADNIL R2   
        4 [-]: LOADNIL R3   
        5 [-]: LOADNIL R4   
        6 [-]: LOADNIL R5   
-       7 [-]: GETIMPORT R6 1 [nil]
+       7 [-]: GETIMPORT R6 1 [0x2D0FAD09]
        8 [-]: LOADK R7 K2 ["Lotus.Interface.LotusUtilities"]
        9 [-]: CALL R6 1 1  
       10 [-]: NEWCLOSURE R7 P0
@@ -59,7 +59,7 @@
        3 [-]: RETURN R0 0  
 L 0:   4 [-]: LOADB R2 1   
        5 [-]: SETUPVAL R2 1
-       6 [-]: GETIMPORT R2 1 [nil]
+       6 [-]: GETIMPORT R2 1 [0x3D106989]
        7 [-]: LOADK R4 K2 ["Failed to trigger extra rewards mail: "]
        8 [-]: MOVE R5 R1   
        9 [-]: CONCAT R3 R4 R5
@@ -80,7 +80,7 @@ L 0:   4 [-]: LOADB R2 1
        3 [-]: RETURN R0 0  
 L 0:   4 [-]: LOADB R2 1   
        5 [-]: SETUPVAL R2 1
-       6 [-]: GETIMPORT R2 1 [nil]
+       6 [-]: GETIMPORT R2 1 [0x3D106989]
        7 [-]: LOADK R4 K2 ["Failed to advance quest: "]
        8 [-]: MOVE R5 R1   
        9 [-]: CONCAT R3 R4 R5
@@ -115,7 +115,7 @@ L 0:   4 [-]: LOADB R2 1
        1 [-]: SETUPVAL R1 0
        2 [-]: LOADB R1 0   
        3 [-]: SETUPVAL R1 1
-       4 [-]: GETIMPORT R3 1 [nil]
+       4 [-]: GETIMPORT R3 1 [0x1E9E5BC8]
        5 [-]: LOADK R4 K2 ["OnQuestAdvanced"]
        6 [-]: NAMECALL R1 R0 K3 [0x88CFAE95]
        7 [-]: CALL R1 3 0  
@@ -129,28 +129,28 @@ L 0:  10 [-]: GETUPVAL R3 1
       15 [-]: LOADB R3 0   
       16 [-]: SETUPVAL R3 0
       17 [-]: LOADN R2 0   
-      18 [-]: GETIMPORT R3 5 [nil]
+      18 [-]: GETIMPORT R3 5 [0x3D106989]
       19 [-]: LOADK R4 K6 ["Retrying advance quest"]
       20 [-]: CALL R3 1 0  
-      21 [-]: GETIMPORT R5 1 [nil]
+      21 [-]: GETIMPORT R5 1 [0x1E9E5BC8]
       22 [-]: LOADK R6 K2 ["OnQuestAdvanced"]
       23 [-]: NAMECALL R3 R0 K3 [0x88CFAE95]
       24 [-]: CALL R3 3 0  
       25 [-]: MULK R4 R1 K7 [2]
       26 [-]: FASTCALL2K 19 R4 K8 L1 [120]
       27 [-]: LOADK R5 K8 [120]
-      28 [-]: GETIMPORT R3 11 [nil]
+      28 [-]: GETIMPORT R3 11 [0xAC1B386A]
       29 [-]: CALL R3 2 1  
 L 1:  30 [-]: MOVE R1 R3   
-      31 [-]: GETIMPORT R3 14 [nil]
+      31 [-]: GETIMPORT R3 14 ["BackgroundMovie"]
       32 [-]: LOADK R5 K15 ["ShowBlockingMessage"]
       33 [-]: LOADK R6 K16 ["2"]
       34 [-]: NAMECALL R3 R3 K17 [0xE4162EED]
       35 [-]: CALL R3 3 0  
-L 2:  36 [-]: GETIMPORT R3 19 [nil]
+L 2:  36 [-]: GETIMPORT R3 19 [0xCBD666E1]
       37 [-]: LOADN R4 0   
       38 [-]: CALL R3 1 0  
-      39 [-]: GETIMPORT R3 21 [nil]
+      39 [-]: GETIMPORT R3 21 [0x67652851]
       40 [-]: CALL R3 0 1  
       41 [-]: ADD R2 R2 R3 
       42 [-]: JUMPBACK L0  
@@ -189,7 +189,7 @@ L 1:  17 [-]: GETUPVAL R5 1
       22 [-]: LOADB R5 0   
       23 [-]: SETUPVAL R5 0
       24 [-]: LOADN R4 0   
-      25 [-]: GETIMPORT R5 4 [nil]
+      25 [-]: GETIMPORT R5 4 [0x3D106989]
       26 [-]: LOADK R6 K5 ["Retrying trigger message"]
       27 [-]: CALL R5 1 0  
       28 [-]: MOVE R7 R1   
@@ -200,18 +200,18 @@ L 1:  17 [-]: GETUPVAL R5 1
       33 [-]: MULK R6 R3 K6 [2]
       34 [-]: FASTCALL2K 19 R6 K7 L2 [120]
       35 [-]: LOADK R7 K7 [120]
-      36 [-]: GETIMPORT R5 10 [nil]
+      36 [-]: GETIMPORT R5 10 [0xAC1B386A]
       37 [-]: CALL R5 2 1  
 L 2:  38 [-]: MOVE R3 R5   
-      39 [-]: GETIMPORT R5 13 [nil]
+      39 [-]: GETIMPORT R5 13 ["BackgroundMovie"]
       40 [-]: LOADK R7 K14 ["ShowBlockingMessage"]
       41 [-]: LOADK R8 K15 ["2"]
       42 [-]: NAMECALL R5 R5 K16 [0xE4162EED]
       43 [-]: CALL R5 3 0  
-L 3:  44 [-]: GETIMPORT R5 18 [nil]
+L 3:  44 [-]: GETIMPORT R5 18 [0xCBD666E1]
       45 [-]: LOADN R6 0   
       46 [-]: CALL R5 1 0  
-      47 [-]: GETIMPORT R5 20 [nil]
+      47 [-]: GETIMPORT R5 20 [0x67652851]
       48 [-]: CALL R5 0 1  
       49 [-]: ADD R4 R4 R5 
       50 [-]: JUMPBACK L1  
@@ -231,31 +231,31 @@ L 4:  51 [-]: RETURN R0 0
        3 [-]: MOVE R4 R1   
        4 [-]: LOADB R5 0   
        5 [-]: CALL R2 3 2  
-       6 [-]: GETIMPORT R5 3 [nil]
+       6 [-]: GETIMPORT R5 3 [0x1E9E5BC8]
        7 [-]: ADDK R4 R5 K1 [1]
        8 [-]: NAMECALL R5 R0 K4 [0x25A6E75E]
        9 [-]: CALL R5 1 1  
 L 0:  10 [-]: FASTCALL1 62 R5 L1
       11 [-]: MOVE R7 R5   
-      12 [-]: GETIMPORT R6 6 [nil]
+      12 [-]: GETIMPORT R6 6 [0x7B998233]
       13 [-]: CALL R6 1 1  
 L 1:  14 [-]: JUMPIFNOT R6 L2
-      15 [-]: GETIMPORT R6 8 [nil]
+      15 [-]: GETIMPORT R6 8 [0xCBD666E1]
       16 [-]: LOADN R7 0   
       17 [-]: CALL R6 1 0  
       18 [-]: NAMECALL R6 R0 K4 [0x25A6E75E]
       19 [-]: CALL R6 1 1  
       20 [-]: MOVE R5 R6   
       21 [-]: JUMPBACK L0  
-L 2:  22 [-]: GETIMPORT R9 10 [nil]
+L 2:  22 [-]: GETIMPORT R9 10 [0xB1223B06]
       23 [-]: FASTCALL1 62 R9 L3
-      24 [-]: GETIMPORT R8 6 [nil]
+      24 [-]: GETIMPORT R8 6 [0x7B998233]
       25 [-]: CALL R8 1 1  
 L 3:  26 [-]: NOT R7 R8    
       27 [-]: FASTCALL1 1 R7 L4
-      28 [-]: GETIMPORT R6 12 [nil]
+      28 [-]: GETIMPORT R6 12 [0x60CCE7B4]
       29 [-]: CALL R6 1 0  
-L 4:  30 [-]: GETIMPORT R8 10 [nil]
+L 4:  30 [-]: GETIMPORT R8 10 [0xB1223B06]
       31 [-]: NAMECALL R6 R5 K13 [0x5C624633]
       32 [-]: CALL R6 2 1  
       33 [-]: JUMPIFNOT R6 L5
@@ -265,32 +265,32 @@ L 4:  30 [-]: GETIMPORT R8 10 [nil]
       37 [-]: NAMECALL R7 R0 K15 [0xF8CFD9AC]
       38 [-]: CALL R7 3 1  
       39 [-]: JUMPIF R7 L5 
-      40 [-]: GETIMPORT R7 17 [nil]
+      40 [-]: GETIMPORT R7 17 [0xFD1055F2]
       41 [-]: LOADN R8 0   
       42 [-]: JUMPIFNOTLE R8 R7 L7
       43 [-]: MOVE R9 R1   
-      44 [-]: GETIMPORT R11 17 [nil]
+      44 [-]: GETIMPORT R11 17 [0xFD1055F2]
       45 [-]: ADDK R10 R11 K1 [1]
       46 [-]: NAMECALL R7 R0 K15 [0xF8CFD9AC]
       47 [-]: CALL R7 3 1  
       48 [-]: JUMPIFNOT R7 L7
-L 5:  49 [-]: GETIMPORT R7 17 [nil]
+L 5:  49 [-]: GETIMPORT R7 17 [0xFD1055F2]
       50 [-]: LOADN R8 0   
       51 [-]: JUMPIFNOTLE R8 R7 L6
       52 [-]: JUMPXEQKN R3 K14 L6 NOT [0]
       53 [-]: GETUPVAL R7 1
       54 [-]: MOVE R8 R0   
       55 [-]: MOVE R9 R1   
-      56 [-]: GETIMPORT R11 17 [nil]
+      56 [-]: GETIMPORT R11 17 [0xFD1055F2]
       57 [-]: ADDK R10 R11 K1 [1]
       58 [-]: CALL R7 3 0  
-L 6:  59 [-]: GETIMPORT R7 20 [nil]
+L 6:  59 [-]: GETIMPORT R7 20 ["BackgroundMovie"]
       60 [-]: LOADK R9 K21 ["ShowBlockingMessage"]
       61 [-]: LOADK R10 K22 ["0"]
       62 [-]: NAMECALL R7 R7 K23 [0xE4162EED]
       63 [-]: CALL R7 3 0  
       64 [-]: RETURN R0 0  
-L 7:  65 [-]: GETIMPORT R7 25 [nil]
+L 7:  65 [-]: GETIMPORT R7 25 [0x3D106989]
       66 [-]: LOADK R8 K26 ["Eligible for extra quest reward, triggering mail"]
       67 [-]: CALL R7 1 0  
       68 [-]: GETUPVAL R7 1
@@ -308,27 +308,27 @@ L 7:  65 [-]: GETIMPORT R7 25 [nil]
 ; Is_vararg:       0
 ; Max Stack Size:  7
 
-       0 [-]: GETIMPORT R2 1 [nil]
+       0 [-]: GETIMPORT R2 1 [0x1E9E5BC8]
        1 [-]: LOADN R3 0   
        2 [-]: JUMPIFLT R3 R2 L0
        3 [-]: LOADB R1 0 +1
 L 0:   4 [-]: LOADB R1 1   
 L 1:   5 [-]: FASTCALL1 1 R1 L2
-       6 [-]: GETIMPORT R0 3 [nil]
+       6 [-]: GETIMPORT R0 3 [0x60CCE7B4]
        7 [-]: CALL R0 1 0  
-L 2:   8 [-]: GETIMPORT R0 5 [nil]
+L 2:   8 [-]: GETIMPORT R0 5 [0x76EA806B]
        9 [-]: LOADN R2 0   
       10 [-]: NAMECALL R0 R0 K6 [0x3F3AE64C]
       11 [-]: CALL R0 2 1  
 L 3:  12 [-]: FASTCALL1 62 R0 L4
       13 [-]: MOVE R2 R0   
-      14 [-]: GETIMPORT R1 8 [nil]
+      14 [-]: GETIMPORT R1 8 [0x7B998233]
       15 [-]: CALL R1 1 1  
 L 4:  16 [-]: JUMPIFNOT R1 L5
-      17 [-]: GETIMPORT R1 10 [nil]
+      17 [-]: GETIMPORT R1 10 [0xCBD666E1]
       18 [-]: LOADN R2 0   
       19 [-]: CALL R1 1 0  
-      20 [-]: GETIMPORT R1 5 [nil]
+      20 [-]: GETIMPORT R1 5 [0x76EA806B]
       21 [-]: LOADN R3 0   
       22 [-]: NAMECALL R1 R1 K6 [0x3F3AE64C]
       23 [-]: CALL R1 2 1  
@@ -338,31 +338,31 @@ L 5:  26 [-]: NAMECALL R1 R0 K11 [0x80563238]
       27 [-]: CALL R1 1 1  
 L 6:  28 [-]: FASTCALL1 62 R1 L7
       29 [-]: MOVE R3 R1   
-      30 [-]: GETIMPORT R2 8 [nil]
+      30 [-]: GETIMPORT R2 8 [0x7B998233]
       31 [-]: CALL R2 1 1  
 L 7:  32 [-]: JUMPIFNOT R2 L8
-      33 [-]: GETIMPORT R2 10 [nil]
+      33 [-]: GETIMPORT R2 10 [0xCBD666E1]
       34 [-]: LOADN R3 0   
       35 [-]: CALL R2 1 0  
       36 [-]: NAMECALL R2 R0 K11 [0x80563238]
       37 [-]: CALL R2 1 1  
       38 [-]: MOVE R1 R2   
       39 [-]: JUMPBACK L6  
-L 8:  40 [-]: GETIMPORT R2 14 [nil]
+L 8:  40 [-]: GETIMPORT R2 14 ["WarWithinRewardsRunning"]
       41 [-]: JUMPIFNOT R2 L9
-      42 [-]: GETIMPORT R2 10 [nil]
+      42 [-]: GETIMPORT R2 10 [0xCBD666E1]
       43 [-]: LOADN R3 0   
       44 [-]: CALL R2 1 0  
       45 [-]: JUMPBACK L8  
-L 9:  46 [-]: GETIMPORT R2 16 [nil]
-      47 [-]: GETIMPORT R3 18 [nil]
+L 9:  46 [-]: GETIMPORT R2 16 [0xB009BBC6]
+      47 [-]: GETIMPORT R3 18 [0x46CEB9A3]
       48 [-]: CALL R2 1 1  
-      49 [-]: GETIMPORT R3 20 [nil]
+      49 [-]: GETIMPORT R3 20 [0x87E1EB35]
       50 [-]: JUMPIFNOT R3 L10
       51 [-]: GETUPVAL R3 0
       52 [-]: MOVE R4 R1   
       53 [-]: MOVE R5 R2   
-      54 [-]: GETIMPORT R6 1 [nil]
+      54 [-]: GETIMPORT R6 1 [0x1E9E5BC8]
       55 [-]: CALL R3 3 0  
 L10:  56 [-]: GETUPVAL R3 1
       57 [-]: MOVE R4 R1   
@@ -371,7 +371,7 @@ L10:  56 [-]: GETUPVAL R3 1
       60 [-]: GETUPVAL R3 2
       61 [-]: MOVE R4 R1   
       62 [-]: CALL R3 1 0  
-      63 [-]: GETIMPORT R3 22 [nil]
+      63 [-]: GETIMPORT R3 22 ["BackgroundMovie"]
       64 [-]: LOADK R5 K23 ["ShowBlockingMessage"]
       65 [-]: LOADK R6 K24 ["0"]
       66 [-]: NAMECALL R3 R3 K25 [0xE4162EED]

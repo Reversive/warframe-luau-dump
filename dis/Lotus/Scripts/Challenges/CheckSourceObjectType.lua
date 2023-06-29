@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  1
 
-            1 [-]: DUPCLOSURE R0 K0 []
+       1 [-]: DUPCLOSURE R0 K0 []
        2 [-]: SETGLOBAL R0 K1 ["MatchTagEvent"]
        3 [-]: RETURN R0 0  
 
@@ -19,13 +19,13 @@
 
        0 [-]: FASTCALL1 62 R3 L0
        1 [-]: MOVE R5 R3   
-       2 [-]: GETIMPORT R4 1 [nil]
+       2 [-]: GETIMPORT R4 1 [0x7B998233]
        3 [-]: CALL R4 1 1  
 L 0:   4 [-]: JUMPIFNOT R4 L1
        5 [-]: LOADB R4 0   
        6 [-]: RETURN R4 1  
-L 1:   7 [-]: GETIMPORT R4 3 [nil]
-       8 [-]: GETIMPORT R5 5 [nil]
+L 1:   7 [-]: GETIMPORT R4 3 [0xCFC01047]
+       8 [-]: GETIMPORT R5 5 [0xAFB92662]
        9 [-]: CALL R4 1 3  
       10 [-]: FORGPREP_NEXT R4 L3
 L 2:  11 [-]: MOVE R11 R8  

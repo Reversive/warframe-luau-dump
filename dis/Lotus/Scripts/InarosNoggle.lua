@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  5
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x7ED0A956]
        2 [-]: LOADK R1 K2 ["/Lotus/Objects/Tenno/Props/Ships/InarosSarcophagusSkelDeco"]
        3 [-]: CALL R0 1 1  
        4 [-]: LOADNIL R1   
@@ -44,19 +44,19 @@
        5 [-]: CALL R7 3 0  
 L 0:   6 [-]: LOADN R7 0   
 L 1:   7 [-]: JUMPIFNOTLT R7 R2 L3
-       8 [-]: GETIMPORT R8 2 [nil]
+       8 [-]: GETIMPORT R8 2 [0xCBD666E1]
        9 [-]: LOADN R9 0   
       10 [-]: CALL R8 1 0  
-      11 [-]: GETIMPORT R8 4 [nil]
+      11 [-]: GETIMPORT R8 4 [0x67652851]
       12 [-]: CALL R8 0 1  
       13 [-]: ADD R7 R7 R8 
       14 [-]: LOADN R9 1   
       15 [-]: DIV R10 R7 R2
       16 [-]: FASTCALL2 19 R9 R10 L2
-      17 [-]: GETIMPORT R8 7 [nil]
+      17 [-]: GETIMPORT R8 7 [0xAC1B386A]
       18 [-]: CALL R8 2 1  
 L 2:  19 [-]: GETUPVAL R9 1
-      20 [-]: GETIMPORT R11 9 [nil]
+      20 [-]: GETIMPORT R11 9 [0x9BAFFFE3]
       21 [-]: MOVE R12 R3  
       22 [-]: MOVE R13 R4  
       23 [-]: MOVE R14 R8  
@@ -65,7 +65,7 @@ L 2:  19 [-]: GETUPVAL R9 1
       26 [-]: NAMECALL R9 R9 K10 [0x2D9BA74F]
       27 [-]: CALL R9 3 0  
       28 [-]: GETUPVAL R9 1
-      29 [-]: GETIMPORT R11 9 [nil]
+      29 [-]: GETIMPORT R11 9 [0x9BAFFFE3]
       30 [-]: MOVE R12 R5  
       31 [-]: MOVE R13 R6  
       32 [-]: MOVE R14 R8  
@@ -73,7 +73,7 @@ L 2:  19 [-]: GETUPVAL R9 1
       34 [-]: NAMECALL R9 R9 K11 [0xFCAFC53A]
       35 [-]: CALL R9 -1 0 
       36 [-]: GETUPVAL R9 0
-      37 [-]: GETIMPORT R11 9 [nil]
+      37 [-]: GETIMPORT R11 9 [0x9BAFFFE3]
       38 [-]: MOVE R12 R0  
       39 [-]: MOVE R13 R1  
       40 [-]: MOVE R14 R8  
@@ -99,8 +99,8 @@ L 4:  52 [-]: RETURN R0 0
 ; Max Stack Size:  9
 
        0 [-]: SETUPVAL R0 0
-       1 [-]: GETIMPORT R3 1 [nil]
-       2 [-]: GETIMPORT R4 3 [nil]
+       1 [-]: GETIMPORT R3 1 [0x0A096234]
+       2 [-]: GETIMPORT R4 3 ["EMPTY_SYMBOL"]
        3 [-]: NAMECALL R1 R0 K4 [0x47901F07]
        4 [-]: CALL R1 3 0  
        5 [-]: GETUPVAL R3 2
@@ -113,7 +113,7 @@ L 4:  52 [-]: RETURN R0 0
       12 [-]: NAMECALL R1 R1 K6 [0x768274D6]
       13 [-]: CALL R1 3 0  
       14 [-]: GETUPVAL R1 1
-      15 [-]: GETIMPORT R3 8 [nil]
+      15 [-]: GETIMPORT R3 8 [0x1A0BBBF4]
       16 [-]: LOADB R4 0   
       17 [-]: NAMECALL R1 R1 K9 [0x5D985C7E]
       18 [-]: CALL R1 3 0  
@@ -137,8 +137,8 @@ L 4:  52 [-]: RETURN R0 0
 ; Max Stack Size:  9
 
        0 [-]: SETUPVAL R0 0
-       1 [-]: GETIMPORT R3 1 [nil]
-       2 [-]: GETIMPORT R4 3 [nil]
+       1 [-]: GETIMPORT R3 1 [0x0A096234]
+       2 [-]: GETIMPORT R4 3 ["EMPTY_SYMBOL"]
        3 [-]: NAMECALL R1 R0 K4 [0x47901F07]
        4 [-]: CALL R1 3 0  
        5 [-]: GETUPVAL R3 2
@@ -146,7 +146,7 @@ L 4:  52 [-]: RETURN R0 0
        7 [-]: CALL R1 2 1  
        8 [-]: SETUPVAL R1 1
        9 [-]: GETUPVAL R1 1
-      10 [-]: GETIMPORT R3 7 [nil]
+      10 [-]: GETIMPORT R3 7 [0x406FFB34]
       11 [-]: LOADB R4 0   
       12 [-]: NAMECALL R1 R1 K8 [0x5D985C7E]
       13 [-]: CALL R1 3 0  

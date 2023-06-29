@@ -5,11 +5,11 @@
 ; Is_vararg:       1
 ; Max Stack Size:  3
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0xAEABECDA]
        2 [-]: GETVARARGS R1 1
-       3 [-]: GETIMPORT R2 4 [nil]
+       3 [-]: GETIMPORT R2 4 ["seeall"]
        4 [-]: CALL R0 2 0  
-       5 [-]: GETIMPORT R0 6 [nil]
+       5 [-]: GETIMPORT R0 6 [0x2D0FAD09]
        6 [-]: LOADK R1 K7 ["Lotus.Interface.UIStyleUtilities"]
        7 [-]: CALL R0 1 1  
        8 [-]: DUPCLOSURE R1 K8 []
@@ -26,9 +26,9 @@
 ; Max Stack Size:  14
 
        0 [-]: JUMPXEQKNIL R3 L0 NOT
-       1 [-]: GETIMPORT R4 1 [nil]
+       1 [-]: GETIMPORT R4 1 [0x0032441C]
        2 [-]: GETTABLEKS R3 R4 K2 ["UIMaterial_RectangleNoDepth"]
-L 0:   3 [-]: GETIMPORT R4 4 [nil]
+L 0:   3 [-]: GETIMPORT R4 4 [0x2D0FAD09]
        4 [-]: LOADK R5 K5 ["EE.Interface.Components.List"]
        5 [-]: CALL R4 1 1  
        6 [-]: GETTABLEKS R5 R4 K6 [0x9383BC56]
@@ -57,7 +57,7 @@ L 0:   3 [-]: GETIMPORT R4 4 [nil]
       29 [-]: LOADB R6 0 +1
 L 1:  30 [-]: LOADB R6 1   
 L 2:  31 [-]: SETTABLEKS R6 R5 K16 ["mIsOldStyle"]
-      32 [-]: GETIMPORT R7 1 [nil]
+      32 [-]: GETIMPORT R7 1 [0x0032441C]
       33 [-]: GETTABLEKS R6 R7 K17 ["UIColorObject_White"]
       34 [-]: SETTABLEKS R6 R5 K18 ["mUnfocusedRectInnerColor"]
       35 [-]: LOADK R6 K19 [0.40000000000000002]
@@ -137,7 +137,7 @@ L 2:  31 [-]: SETTABLEKS R6 R5 K16 ["mIsOldStyle"]
      109 [-]: LOADNIL R12  
      110 [-]: NAMECALL R6 R0 K80 [0x1E5B5CFE]
      111 [-]: CALL R6 6 0  
-     112 [-]: GETIMPORT R6 83 [nil]
+     112 [-]: GETIMPORT R6 83 [0x1467D5F4]
      113 [-]: CALL R6 0 1  
      114 [-]: JUMPIFNOT R6 L4
      115 [-]: LOADB R6 0   
@@ -172,14 +172,14 @@ L 5: 132 [-]: MOVE R9 R1
      144 [-]: MOVE R10 R1  
      145 [-]: LOADK R11 K76 [".Bg"]
      146 [-]: CONCAT R9 R10 R11
-     147 [-]: GETIMPORT R11 1 [nil]
+     147 [-]: GETIMPORT R11 1 [0x0032441C]
      148 [-]: GETTABLEKS R10 R11 K91 ["UIMaterial_Button"]
      149 [-]: NAMECALL R7 R0 K92 [0xD5181643]
      150 [-]: CALL R7 3 0  
      151 [-]: MOVE R10 R1  
      152 [-]: LOADK R11 K93 [".BgHover"]
      153 [-]: CONCAT R9 R10 R11
-     154 [-]: GETIMPORT R11 1 [nil]
+     154 [-]: GETIMPORT R11 1 [0x0032441C]
      155 [-]: GETTABLEKS R10 R11 K91 ["UIMaterial_Button"]
      156 [-]: NAMECALL R7 R0 K92 [0xD5181643]
      157 [-]: CALL R7 3 0  

@@ -5,9 +5,9 @@
 ; Is_vararg:       1
 ; Max Stack Size:  3
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0xAEABECDA]
        2 [-]: GETVARARGS R1 1
-       3 [-]: GETIMPORT R2 4 [nil]
+       3 [-]: GETIMPORT R2 4 ["seeall"]
        4 [-]: CALL R0 2 0  
        5 [-]: DUPCLOSURE R0 K5 []
        6 [-]: SETGLOBAL R0 K6 ["Create"]
@@ -21,13 +21,13 @@
 ; Is_vararg:       0
 ; Max Stack Size:  20
 
-       0 [-]: GETIMPORT R8 1 [nil]
+       0 [-]: GETIMPORT R8 1 [0x2D0FAD09]
        1 [-]: LOADK R9 K2 ["EE.Interface.Utilities"]
        2 [-]: CALL R8 1 1  
-       3 [-]: GETIMPORT R9 1 [nil]
+       3 [-]: GETIMPORT R9 1 [0x2D0FAD09]
        4 [-]: LOADK R10 K3 ["Lotus.Interface.UIUtilities"]
        5 [-]: CALL R9 1 1  
-       6 [-]: GETIMPORT R10 1 [nil]
+       6 [-]: GETIMPORT R10 1 [0x2D0FAD09]
        7 [-]: LOADK R11 K4 ["Lotus.Interface.UIStyleUtilities"]
        8 [-]: CALL R10 1 1 
        9 [-]: NEWTABLE R11 128 0
@@ -116,7 +116,7 @@
       92 [-]: SETTABLEKS R12 R11 K51 ["mIconColor"]
       93 [-]: LOADNIL R12  
       94 [-]: SETTABLEKS R12 R11 K52 ["mIconBgColor"]
-      95 [-]: GETIMPORT R13 54 [nil]
+      95 [-]: GETIMPORT R13 54 [0x0032441C]
       96 [-]: GETTABLEKS R12 R13 K55 ["UIMaterial_RectangleNoDepth"]
       97 [-]: SETTABLEKS R12 R11 K56 ["mRectMaterial"]
       98 [-]: LOADNIL R12  
@@ -186,7 +186,7 @@
      162 [-]: MOVE R0 R1   
      163 [-]: MOVE R0 R9   
      164 [-]: SETTABLEKS R12 R11 K80 ["Redraw"]
-     165 [-]: GETIMPORT R12 1 [nil]
+     165 [-]: GETIMPORT R12 1 [0x2D0FAD09]
      166 [-]: LOADK R13 K81 ["Lotus.Interface.Components.ThemedProgressBar"]
      167 [-]: CALL R12 1 1 
      168 [-]: GETTABLEKS R13 R12 K82 [0xAE6791BA]

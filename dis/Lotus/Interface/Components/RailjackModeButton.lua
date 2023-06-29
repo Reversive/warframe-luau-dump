@@ -5,9 +5,9 @@
 ; Is_vararg:       1
 ; Max Stack Size:  3
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0xAEABECDA]
        2 [-]: GETVARARGS R1 1
-       3 [-]: GETIMPORT R2 4 [nil]
+       3 [-]: GETIMPORT R2 4 ["seeall"]
        4 [-]: CALL R0 2 0  
        5 [-]: DUPCLOSURE R0 K5 []
        6 [-]: SETGLOBAL R0 K6 ["Create"]
@@ -21,19 +21,19 @@
 ; Is_vararg:       0
 ; Max Stack Size:  16
 
-       0 [-]: GETIMPORT R4 1 [nil]
+       0 [-]: GETIMPORT R4 1 [0x2D0FAD09]
        1 [-]: LOADK R5 K2 ["EE.Interface.Utilities"]
        2 [-]: CALL R4 1 1  
-       3 [-]: GETIMPORT R5 1 [nil]
+       3 [-]: GETIMPORT R5 1 [0x2D0FAD09]
        4 [-]: LOADK R6 K3 ["Lotus.Interface.UIStyleUtilities"]
        5 [-]: CALL R5 1 1  
-       6 [-]: GETIMPORT R6 5 [nil]
+       6 [-]: GETIMPORT R6 5 [0xB009BBC6]
        7 [-]: LOADK R7 K6 ["/Lotus/Interface/Materials/RailjackButtonLinesMaterial"]
        8 [-]: CALL R6 1 1  
-       9 [-]: GETIMPORT R7 5 [nil]
+       9 [-]: GETIMPORT R7 5 [0xB009BBC6]
       10 [-]: LOADK R8 K7 ["/Lotus/Sounds/UI/RailjackPlayerShip/RailJackUIModScreenOpen"]
       11 [-]: CALL R7 1 1  
-      12 [-]: GETIMPORT R8 5 [nil]
+      12 [-]: GETIMPORT R8 5 [0xB009BBC6]
       13 [-]: LOADK R9 K8 ["/Lotus/Sounds/UI/RailjackPlayerShip/RailJackUIModScreenClose"]
       14 [-]: CALL R8 1 1  
       15 [-]: DUPTABLE R9 33

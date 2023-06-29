@@ -5,13 +5,13 @@
 ; Is_vararg:       1
 ; Max Stack Size:  32
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x2D0FAD09]
        2 [-]: LOADK R1 K2 ["Lotus.Scripts.Libs.CommonGamemodeFunctions"]
        3 [-]: CALL R0 1 1  
-       4 [-]: GETIMPORT R1 1 [nil]
+       4 [-]: GETIMPORT R1 1 [0x2D0FAD09]
        5 [-]: LOADK R2 K3 ["Lotus.Scripts.Libs.ObjectiveText"]
        6 [-]: CALL R1 1 1  
-       7 [-]: GETIMPORT R2 1 [nil]
+       7 [-]: GETIMPORT R2 1 [0x2D0FAD09]
        8 [-]: LOADK R3 K4 ["Lotus.Scripts.Libs.EndlessSpawnLib"]
        9 [-]: CALL R2 1 1  
       10 [-]: LOADNIL R3   
@@ -152,8 +152,8 @@
 ; Is_vararg:       0
 ; Max Stack Size:  13
 
-       0 [-]: GETIMPORT R0 1 [nil]
-       1 [-]: GETIMPORT R2 3 [nil]
+       0 [-]: GETIMPORT R0 1 [0x89326C93]
+       1 [-]: GETIMPORT R2 3 [0x0469F296]
        2 [-]: LOADK R3 K4 ["SentientMobDefSpawn"]
        3 [-]: CALL R2 1 -1 
        4 [-]: NAMECALL R0 R0 K5 [0xC7FCADA9]
@@ -162,7 +162,7 @@
 L 0:   7 [-]: LENGTH R2 R0 
        8 [-]: LOADN R3 0   
        9 [-]: JUMPIFNOTLT R3 R2 L6
-      10 [-]: GETIMPORT R2 7 [nil]
+      10 [-]: GETIMPORT R2 7 [0x55730E1A]
       11 [-]: LOADN R3 1   
       12 [-]: LENGTH R4 R0 
       13 [-]: CALL R2 2 1  
@@ -171,12 +171,12 @@ L 0:   7 [-]: LENGTH R2 R0
       16 [-]: CALL R3 1 1  
       17 [-]: FASTCALL1 62 R3 L1
       18 [-]: MOVE R5 R3   
-      19 [-]: GETIMPORT R4 10 [nil]
+      19 [-]: GETIMPORT R4 10 [0x7B998233]
       20 [-]: CALL R4 1 1  
 L 1:  21 [-]: JUMPIF R4 L5 
       22 [-]: NAMECALL R4 R3 K11 [0x22DA1852]
       23 [-]: CALL R4 1 1  
-      24 [-]: GETIMPORT R5 3 [nil]
+      24 [-]: GETIMPORT R5 3 [0x0469F296]
       25 [-]: LOADK R6 K12 ["Intermediate"]
       26 [-]: CALL R5 1 1  
       27 [-]: JUMPIFNOTEQ R4 R5 L5
@@ -199,8 +199,8 @@ L 4:  40 [-]: JUMPIF R5 L5
       44 [-]: GETTABLEN R6 R7 1
       45 [-]: NAMECALL R7 R6 K16 [0xD1586535]
       46 [-]: CALL R7 1 1  
-      47 [-]: GETIMPORT R8 1 [nil]
-      48 [-]: GETIMPORT R10 3 [nil]
+      47 [-]: GETIMPORT R8 1 [0x89326C93]
+      48 [-]: GETIMPORT R10 3 [0x0469F296]
       49 [-]: LOADK R11 K17 ["SentientMobDefPatrol"]
       50 [-]: CALL R10 1 1 
       51 [-]: MOVE R11 R7  
@@ -218,9 +218,9 @@ L 4:  40 [-]: JUMPIF R5 L5
       63 [-]: FASTCALL2 52 R1 R9 L5
       64 [-]: MOVE R11 R1  
       65 [-]: MOVE R12 R9  
-      66 [-]: GETIMPORT R10 27 [nil]
+      66 [-]: GETIMPORT R10 27 [0x23D5322F]
       67 [-]: CALL R10 2 0 
-L 5:  68 [-]: GETIMPORT R4 29 [nil]
+L 5:  68 [-]: GETIMPORT R4 29 [0x9C1F3B5A]
       69 [-]: MOVE R5 R0   
       70 [-]: MOVE R6 R2   
       71 [-]: CALL R4 2 0  
@@ -258,13 +258,13 @@ L11:  95 [-]: SETUPVAL R1 0
 ; Is_vararg:       0
 ; Max Stack Size:  6
 
-       0 [-]: GETIMPORT R1 1 [nil]
+       0 [-]: GETIMPORT R1 1 [0xBE190284]
        1 [-]: MOVE R3 R0   
        2 [-]: LOADN R4 0   
        3 [-]: NAMECALL R1 R1 K2 [0x0EB34C69]
        4 [-]: CALL R1 3 1  
        5 [-]: ADDK R1 R1 K3 [1]
-       6 [-]: GETIMPORT R2 1 [nil]
+       6 [-]: GETIMPORT R2 1 [0xBE190284]
        7 [-]: MOVE R4 R0   
        8 [-]: MOVE R5 R1   
        9 [-]: NAMECALL R2 R2 K4 [0x751F061D]
@@ -281,7 +281,7 @@ L11:  95 [-]: SETUPVAL R1 0
 
        0 [-]: FASTCALL1 62 R0 L0
        1 [-]: MOVE R2 R0   
-       2 [-]: GETIMPORT R1 1 [nil]
+       2 [-]: GETIMPORT R1 1 [0x7B998233]
        3 [-]: CALL R1 1 1  
 L 0:   4 [-]: JUMPIF R1 L1 
        5 [-]: NAMECALL R1 R0 K2 [0xA2880940]
@@ -306,15 +306,15 @@ L 1:   7 [-]: RETURN R0 0
        7 [-]: GETTABLEKS R2 R3 K1 ["patrol"]
        8 [-]: GETUPVAL R3 2
        9 [-]: GETUPVAL R4 3
-      10 [-]: GETIMPORT R6 3 [nil]
-      11 [-]: GETIMPORT R8 5 [nil]
+      10 [-]: GETIMPORT R6 3 [0x60F84AAD]
+      11 [-]: GETIMPORT R8 5 [0xA421AF95]
       12 [-]: LOADN R9 0   
       13 [-]: LOADK R10 K6 [2.5]
       14 [-]: LOADN R11 0  
       15 [-]: CALL R8 3 1  
       16 [-]: ADD R7 R1 R8 
-      17 [-]: GETIMPORT R8 8 [nil]
-      18 [-]: GETIMPORT R9 10 [nil]
+      17 [-]: GETIMPORT R8 8 ["ZERO_ROTATION"]
+      18 [-]: GETIMPORT R9 10 [0x0469F296]
       19 [-]: LOADK R10 K11 ["MobileDefense"]
       20 [-]: CALL R9 1 1  
       21 [-]: LOADN R10 50 
@@ -352,18 +352,18 @@ L 1:   7 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  3
 
-       0 [-]: GETIMPORT R0 2 [nil]
+       0 [-]: GETIMPORT R0 2 [0x056BFE8B]
        1 [-]: CALL R0 0 1  
        2 [-]: JUMPIFNOT R0 L0
 L 0:   3 [-]: GETUPVAL R2 0
        4 [-]: GETTABLEKS R1 R2 K3 ["numEnemies"]
        5 [-]: GETUPVAL R2 1
        6 [-]: GETTABLE R0 R1 R2
-       7 [-]: GETIMPORT R1 5 [nil]
+       7 [-]: GETIMPORT R1 5 ["_T"]
        8 [-]: SETTABLEKS R0 R1 K6 ["MaxSimAiCount"]
        9 [-]: FASTCALL1 12 R0 L1
       10 [-]: MOVE R2 R0   
-      11 [-]: GETIMPORT R1 9 [nil]
+      11 [-]: GETIMPORT R1 9 [0x55F27C30]
       12 [-]: CALL R1 1 1  
 L 1:  13 [-]: RETURN R1 1  
 
@@ -416,18 +416,18 @@ L 1:  13 [-]: RETURN R1 1
 ; Is_vararg:       0
 ; Max Stack Size:  5
 
-       0 [-]: GETIMPORT R1 2 [nil]
+       0 [-]: GETIMPORT R1 2 [0x056BFE8B]
        1 [-]: CALL R1 0 1  
        2 [-]: JUMPIFNOT R1 L0
 L 0:   3 [-]: GETUPVAL R3 0
        4 [-]: GETTABLEKS R2 R3 K3 ["numEnemies"]
        5 [-]: GETUPVAL R3 1
        6 [-]: GETTABLE R1 R2 R3
-       7 [-]: GETIMPORT R2 5 [nil]
+       7 [-]: GETIMPORT R2 5 ["_T"]
        8 [-]: SETTABLEKS R1 R2 K6 ["MaxSimAiCount"]
        9 [-]: FASTCALL1 12 R1 L1
       10 [-]: MOVE R3 R1   
-      11 [-]: GETIMPORT R2 9 [nil]
+      11 [-]: GETIMPORT R2 9 [0x55F27C30]
       12 [-]: CALL R2 1 1  
 L 1:  13 [-]: MOVE R0 R2   
       14 [-]: NEWTABLE R1 2 0
@@ -438,7 +438,7 @@ L 1:  13 [-]: MOVE R0 R2
       19 [-]: GETUPVAL R4 3
       20 [-]: GETTABLEKS R3 R4 K12 ["avatar"]
       21 [-]: FASTCALL1 62 R3 L2
-      22 [-]: GETIMPORT R2 14 [nil]
+      22 [-]: GETIMPORT R2 14 [0x7B998233]
       23 [-]: CALL R2 1 1  
 L 2:  24 [-]: JUMPIF R2 L3 
       25 [-]: NEWTABLE R2 0 1
@@ -461,35 +461,35 @@ L 3:  30 [-]: GETUPVAL R3 4
 ; Is_vararg:       0
 ; Max Stack Size:  7
 
-       0 [-]: GETIMPORT R1 1 [nil]
+       0 [-]: GETIMPORT R1 1 [0x3D106989]
        1 [-]: LOADK R2 K2 ["Sentient Mobile Defense: Initializing host..."]
        2 [-]: CALL R1 1 0  
-       3 [-]: GETIMPORT R1 4 [nil]
+       3 [-]: GETIMPORT R1 4 [0xBE190284]
        4 [-]: SETUPVAL R1 0
-       5 [-]: GETIMPORT R1 6 [nil]
+       5 [-]: GETIMPORT R1 6 [0x89326C93]
        6 [-]: NAMECALL R1 R1 K7 [0x29EF273D]
        7 [-]: CALL R1 1 1  
        8 [-]: NAMECALL R1 R1 K8 [0x66905CB0]
        9 [-]: CALL R1 1 1  
       10 [-]: SETUPVAL R1 1
-      11 [-]: GETIMPORT R3 6 [nil]
+      11 [-]: GETIMPORT R3 6 [0x89326C93]
       12 [-]: NAMECALL R3 R3 K9 [0x61BE252A]
       13 [-]: CALL R3 1 1  
-      14 [-]: GETIMPORT R4 11 [nil]
+      14 [-]: GETIMPORT R4 11 [0x9BA7909F]
       15 [-]: LOADK R6 K12 ["Server.NumVirtualTestClients"]
       16 [-]: NAMECALL R4 R4 K13 [0x8151451D]
       17 [-]: CALL R4 2 1  
       18 [-]: ADD R2 R3 R4 
       19 [-]: FASTCALL2K 19 R2 K14 L0 [4]
       20 [-]: LOADK R3 K14 [4]
-      21 [-]: GETIMPORT R1 17 [nil]
+      21 [-]: GETIMPORT R1 17 [0xAC1B386A]
       22 [-]: CALL R1 2 1  
 L 0:  23 [-]: SETUPVAL R1 2
       24 [-]: JUMPIFNOT R0 L1
-L 1:  25 [-]: GETIMPORT R1 1 [nil]
+L 1:  25 [-]: GETIMPORT R1 1 [0x3D106989]
       26 [-]: LOADK R2 K18 ["Sentient Mobile Defense: Initialize host complete"]
       27 [-]: CALL R1 1 0  
-      28 [-]: GETIMPORT R1 20 [nil]
+      28 [-]: GETIMPORT R1 20 [0x14459A1C]
       29 [-]: JUMPIF R1 L2 
       30 [-]: GETUPVAL R1 3
       31 [-]: GETUPVAL R4 4
@@ -506,14 +506,14 @@ L 2:  35 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 [0x3D106989]
        1 [-]: LOADK R1 K2 ["Sentient Mobile Defense: Initializing host/client..."]
        2 [-]: CALL R0 1 0  
-       3 [-]: GETIMPORT R0 4 [nil]
+       3 [-]: GETIMPORT R0 4 [0x89326C93]
        4 [-]: NAMECALL R0 R0 K5 [0xFB64E76C]
        5 [-]: CALL R0 1 1  
        6 [-]: SETUPVAL R0 0
-       7 [-]: GETIMPORT R0 1 [nil]
+       7 [-]: GETIMPORT R0 1 [0x3D106989]
        8 [-]: LOADK R1 K6 ["Sentient Mobile Defense: Initialize host/client complete"]
        9 [-]: CALL R0 1 0  
       10 [-]: RETURN R0 0  
@@ -528,12 +528,12 @@ L 2:  35 [-]: RETURN R0 0
 
        0 [-]: GETUPVAL R2 0
        1 [-]: FASTCALL1 62 R2 L0
-       2 [-]: GETIMPORT R1 1 [nil]
+       2 [-]: GETIMPORT R1 1 [0x7B998233]
        3 [-]: CALL R1 1 1  
 L 0:   4 [-]: JUMPIF R1 L2 
        5 [-]: GETUPVAL R2 1
        6 [-]: FASTCALL1 62 R2 L1
-       7 [-]: GETIMPORT R1 1 [nil]
+       7 [-]: GETIMPORT R1 1 [0x7B998233]
        8 [-]: CALL R1 1 1  
 L 1:   9 [-]: JUMPIFNOT R1 L3
 L 2:  10 [-]: RETURN R0 0  
@@ -554,22 +554,22 @@ L 4:  21 [-]: GETUPVAL R1 2
       24 [-]: JUMPIFNOTEQ R1 R2 L9
       25 [-]: GETUPVAL R2 5
       26 [-]: FASTCALL1 62 R2 L5
-      27 [-]: GETIMPORT R1 1 [nil]
+      27 [-]: GETIMPORT R1 1 [0x7B998233]
       28 [-]: CALL R1 1 1  
 L 5:  29 [-]: JUMPIFNOT R1 L6
-      30 [-]: GETIMPORT R1 6 [nil]
-      31 [-]: GETIMPORT R3 8 [nil]
+      30 [-]: GETIMPORT R1 6 [0x89326C93]
+      31 [-]: GETIMPORT R3 8 [0xBB76409B]
       32 [-]: GETUPVAL R7 6
       33 [-]: GETUPVAL R8 7
       34 [-]: GETTABLE R6 R7 R8
       35 [-]: GETTABLEKS R5 R6 K9 ["pos"]
-      36 [-]: GETIMPORT R6 11 [nil]
+      36 [-]: GETIMPORT R6 11 [0xA421AF95]
       37 [-]: LOADN R7 0   
       38 [-]: LOADN R8 1   
       39 [-]: LOADN R9 0   
       40 [-]: CALL R6 3 1  
       41 [-]: ADD R4 R5 R6 
-      42 [-]: GETIMPORT R5 13 [nil]
+      42 [-]: GETIMPORT R5 13 ["ZERO_ROTATION"]
       43 [-]: NAMECALL R1 R1 K14 [0x05909209]
       44 [-]: CALL R1 4 1  
       45 [-]: SETUPVAL R1 5
@@ -582,7 +582,7 @@ L 6:  50 [-]: GETUPVAL R4 6
       52 [-]: GETTABLE R3 R4 R5
       53 [-]: GETTABLEKS R2 R3 K16 ["action"]
       54 [-]: FASTCALL1 62 R2 L7
-      55 [-]: GETIMPORT R1 1 [nil]
+      55 [-]: GETIMPORT R1 1 [0x7B998233]
       56 [-]: CALL R1 1 1  
 L 7:  57 [-]: JUMPIF R1 L8 
       58 [-]: GETUPVAL R3 6
@@ -646,17 +646,17 @@ L13: 111 [-]: GETUPVAL R1 2
      112 [-]: GETUPVAL R3 3
      113 [-]: GETTABLEKS R2 R3 K21 ["MISSION_COMPLETE"]
      114 [-]: JUMPIFNOTEQ R1 R2 L14
-L14: 115 [-]: GETIMPORT R3 6 [nil]
+L14: 115 [-]: GETIMPORT R3 6 [0x89326C93]
      116 [-]: NAMECALL R3 R3 K24 [0x61BE252A]
      117 [-]: CALL R3 1 1  
-     118 [-]: GETIMPORT R4 26 [nil]
+     118 [-]: GETIMPORT R4 26 [0x9BA7909F]
      119 [-]: LOADK R6 K27 ["Server.NumVirtualTestClients"]
      120 [-]: NAMECALL R4 R4 K28 [0x8151451D]
      121 [-]: CALL R4 2 1  
      122 [-]: ADD R2 R3 R4 
      123 [-]: FASTCALL2K 19 R2 K29 L15 [4]
      124 [-]: LOADK R3 K29 [4]
-     125 [-]: GETIMPORT R1 32 [nil]
+     125 [-]: GETIMPORT R1 32 [0xAC1B386A]
      126 [-]: CALL R1 2 1  
 L15: 127 [-]: SETUPVAL R1 13
      128 [-]: RETURN R0 0  
@@ -679,14 +679,14 @@ L15: 127 [-]: SETUPVAL R1 13
 ; Is_vararg:       0
 ; Max Stack Size:  18
 
-       0 [-]: GETIMPORT R1 1 [nil]
+       0 [-]: GETIMPORT R1 1 [0x89326C93]
        1 [-]: NAMECALL R1 R1 K2 [0x18D05D30]
        2 [-]: CALL R1 1 1  
        3 [-]: JUMPIFNOT R1 L17
        4 [-]: GETUPVAL R2 0
        5 [-]: GETTABLEKS R1 R2 K3 ["MISSION_SETUP"]
        6 [-]: JUMPIFNOTEQ R0 R1 L2
-       7 [-]: GETIMPORT R1 5 [nil]
+       7 [-]: GETIMPORT R1 5 [0x3D106989]
        8 [-]: LOADK R3 K6 ["Sentient Mobile Defense: State change: MISSION_SETUP "]
        9 [-]: MOVE R4 R0   
       10 [-]: CONCAT R2 R3 R4
@@ -698,7 +698,7 @@ L15: 127 [-]: SETUPVAL R1 13
       16 [-]: LENGTH R1 R4 
       17 [-]: LOADN R2 1   
       18 [-]: FORNPREP R1 L1
-L 0:  19 [-]: GETIMPORT R4 8 [nil]
+L 0:  19 [-]: GETIMPORT R4 8 [0xA421AF95]
       20 [-]: LOADN R5 0   
       21 [-]: LOADN R6 4   
       22 [-]: LOADN R7 0   
@@ -711,23 +711,23 @@ L 0:  19 [-]: GETIMPORT R4 8 [nil]
       29 [-]: GETTABLE R8 R9 R3
       30 [-]: GETTABLEKS R7 R8 K9 ["pos"]
       31 [-]: SUB R6 R7 R4 
-      32 [-]: GETIMPORT R7 8 [nil]
+      32 [-]: GETIMPORT R7 8 [0xA421AF95]
       33 [-]: CALL R7 0 1  
-      34 [-]: GETIMPORT R8 1 [nil]
+      34 [-]: GETIMPORT R8 1 [0x89326C93]
       35 [-]: MOVE R10 R5  
       36 [-]: MOVE R11 R6  
       37 [-]: LOADNIL R12  
       38 [-]: LOADNIL R13  
       39 [-]: LOADNIL R14  
       40 [-]: MOVE R15 R7  
-      41 [-]: GETIMPORT R16 11 [nil]
+      41 [-]: GETIMPORT R16 11 [0x00046924]
       42 [-]: CALL R16 0 1 
       43 [-]: LOADB R17 1  
       44 [-]: NAMECALL R8 R8 K12 [0xDB88E2D9]
       45 [-]: CALL R8 9 0  
-      46 [-]: GETIMPORT R8 1 [nil]
-      47 [-]: GETIMPORT R10 14 [nil]
-      48 [-]: GETIMPORT R12 8 [nil]
+      46 [-]: GETIMPORT R8 1 [0x89326C93]
+      47 [-]: GETIMPORT R10 14 [0xDCAC4BEF]
+      48 [-]: GETIMPORT R12 8 [0xA421AF95]
       49 [-]: LOADN R13 0  
       50 [-]: LOADK R14 K15 [2.5]
       51 [-]: LOADN R15 0  
@@ -740,7 +740,7 @@ L 0:  19 [-]: GETIMPORT R4 8 [nil]
       58 [-]: CALL R8 4 1  
       59 [-]: GETUPVAL R10 2
       60 [-]: GETTABLE R9 R10 R3
-      61 [-]: GETIMPORT R12 19 [nil]
+      61 [-]: GETIMPORT R12 19 ["gContextActionType"]
       62 [-]: NAMECALL R10 R8 K20 [0xC9F6A7D7]
       63 [-]: CALL R10 2 1 
       64 [-]: SETTABLEKS R10 R9 K21 ["action"]
@@ -760,7 +760,7 @@ L 1:  71 [-]: GETUPVAL R1 3
 L 2:  77 [-]: GETUPVAL R2 0
       78 [-]: GETTABLEKS R1 R2 K23 ["REACH_AREA"]
       79 [-]: JUMPIFNOTEQ R0 R1 L6
-      80 [-]: GETIMPORT R1 5 [nil]
+      80 [-]: GETIMPORT R1 5 [0x3D106989]
       81 [-]: LOADK R3 K25 ["Sentient Mobile Defense: State change: REACH_AREA "]
       82 [-]: MOVE R4 R0   
       83 [-]: CONCAT R2 R3 R4
@@ -772,7 +772,7 @@ L 2:  77 [-]: GETUPVAL R2 0
       89 [-]: GETUPVAL R1 5
       90 [-]: FASTCALL1 62 R1 L3
       91 [-]: MOVE R3 R1   
-      92 [-]: GETIMPORT R2 29 [nil]
+      92 [-]: GETIMPORT R2 29 [0x7B998233]
       93 [-]: CALL R2 1 1  
 L 3:  94 [-]: JUMPIF R2 L4 
       95 [-]: NAMECALL R2 R1 K30 [0xA2880940]
@@ -804,7 +804,7 @@ L 4:  97 [-]: GETUPVAL R2 6
      121 [-]: GETUPVAL R3 9
      122 [-]: GETTABLEKS R2 R3 K38 ["avatar"]
      123 [-]: FASTCALL1 62 R2 L5
-     124 [-]: GETIMPORT R1 29 [nil]
+     124 [-]: GETIMPORT R1 29 [0x7B998233]
      125 [-]: CALL R1 1 1  
 L 5: 126 [-]: JUMPIF R1 L12
      127 [-]: GETUPVAL R2 9
@@ -816,7 +816,7 @@ L 5: 126 [-]: JUMPIF R1 L12
 L 6: 132 [-]: GETUPVAL R2 0
      133 [-]: GETTABLEKS R1 R2 K39 ["SPAWN_TARGET"]
      134 [-]: JUMPIFNOTEQ R0 R1 L7
-     135 [-]: GETIMPORT R1 5 [nil]
+     135 [-]: GETIMPORT R1 5 [0x3D106989]
      136 [-]: LOADK R3 K40 ["Sentient Mobile Defense: State change: SPAWN_TARGET "]
      137 [-]: MOVE R4 R0   
      138 [-]: CONCAT R2 R3 R4
@@ -826,7 +826,7 @@ L 6: 132 [-]: GETUPVAL R2 0
 L 7: 141 [-]: GETUPVAL R2 0
      142 [-]: GETTABLEKS R1 R2 K41 ["DEFEND_TARGET"]
      143 [-]: JUMPIFNOTEQ R0 R1 L10
-     144 [-]: GETIMPORT R1 5 [nil]
+     144 [-]: GETIMPORT R1 5 [0x3D106989]
      145 [-]: LOADK R3 K42 ["Sentient Mobile Defense: State change: DEFEND_TARGET "]
      146 [-]: MOVE R4 R0   
      147 [-]: CONCAT R2 R3 R4
@@ -834,7 +834,7 @@ L 7: 141 [-]: GETUPVAL R2 0
      149 [-]: GETUPVAL R1 5
      150 [-]: FASTCALL1 62 R1 L8
      151 [-]: MOVE R3 R1   
-     152 [-]: GETIMPORT R2 29 [nil]
+     152 [-]: GETIMPORT R2 29 [0x7B998233]
      153 [-]: CALL R2 1 1  
 L 8: 154 [-]: JUMPIF R2 L9 
      155 [-]: NAMECALL R2 R1 K30 [0xA2880940]
@@ -876,7 +876,7 @@ L 9: 157 [-]: GETUPVAL R2 4
 L10: 190 [-]: GETUPVAL R2 0
      191 [-]: GETTABLEKS R1 R2 K50 ["MISSION_COMPLETE"]
      192 [-]: JUMPIFNOTEQ R0 R1 L11
-     193 [-]: GETIMPORT R1 5 [nil]
+     193 [-]: GETIMPORT R1 5 [0x3D106989]
      194 [-]: LOADK R3 K51 ["Sentient Mobile Defense: State change: MISSION_COMPLETE "]
      195 [-]: MOVE R4 R0   
      196 [-]: CONCAT R2 R3 R4
@@ -892,7 +892,7 @@ L10: 190 [-]: GETUPVAL R2 0
 L11: 205 [-]: GETUPVAL R2 0
      206 [-]: GETTABLEKS R1 R2 K52 ["MISSION_FAILED"]
      207 [-]: JUMPIFNOTEQ R0 R1 L12
-     208 [-]: GETIMPORT R1 5 [nil]
+     208 [-]: GETIMPORT R1 5 [0x3D106989]
      209 [-]: LOADK R3 K53 ["Sentient Mobile Defense: State change: MISSION_FAILED "]
      210 [-]: MOVE R4 R0   
      211 [-]: CONCAT R2 R3 R4
@@ -912,7 +912,7 @@ L13: 219 [-]: GETUPVAL R2 11
      225 [-]: CALL R1 0 0  
      226 [-]: LOADNIL R2   
      227 [-]: FASTCALL1 62 R2 L14
-     228 [-]: GETIMPORT R1 29 [nil]
+     228 [-]: GETIMPORT R1 29 [0x7B998233]
      229 [-]: CALL R1 1 1  
 L14: 230 [-]: JUMPIF R1 L15
      231 [-]: LOADNIL R1   
@@ -932,7 +932,7 @@ L15: 234 [-]: GETUPVAL R2 7
      245 [-]: GETUPVAL R3 9
      246 [-]: GETTABLEKS R2 R3 K38 ["avatar"]
      247 [-]: FASTCALL1 62 R2 L16
-     248 [-]: GETIMPORT R1 29 [nil]
+     248 [-]: GETIMPORT R1 29 [0x7B998233]
      249 [-]: CALL R1 1 1  
 L16: 250 [-]: JUMPIF R1 L17
      251 [-]: GETUPVAL R2 9
@@ -951,7 +951,7 @@ L17: 255 [-]: RETURN R0 0
 
        0 [-]: NAMECALL R1 R0 K0 [0xED4E0128]
        1 [-]: CALL R1 1 1  
-       2 [-]: GETIMPORT R2 2 [nil]
+       2 [-]: GETIMPORT R2 2 [0x3D106989]
        3 [-]: LOADK R4 K3 ["Sentient Mobile Defense: Starting script on object "]
        4 [-]: MOVE R5 R1   
        5 [-]: CONCAT R3 R4 R5
@@ -961,39 +961,39 @@ L17: 255 [-]: RETURN R0 0
        9 [-]: GETUPVAL R3 2
       10 [-]: CALL R2 1 1  
       11 [-]: SETUPVAL R2 0
-      12 [-]: GETIMPORT R2 6 [nil]
+      12 [-]: GETIMPORT R2 6 [0x89326C93]
       13 [-]: NAMECALL R2 R2 K7 [0x18D05D30]
       14 [-]: CALL R2 1 1  
       15 [-]: JUMPIFNOT R2 L0
       16 [-]: GETUPVAL R2 3
       17 [-]: CALL R2 0 0  
-L 0:  18 [-]: GETIMPORT R2 2 [nil]
+L 0:  18 [-]: GETIMPORT R2 2 [0x3D106989]
       19 [-]: LOADK R3 K8 ["Sentient Mobile Defense: Initializing host/client..."]
       20 [-]: CALL R2 1 0  
-      21 [-]: GETIMPORT R2 6 [nil]
+      21 [-]: GETIMPORT R2 6 [0x89326C93]
       22 [-]: NAMECALL R2 R2 K9 [0xFB64E76C]
       23 [-]: CALL R2 1 1  
       24 [-]: SETUPVAL R2 4
-      25 [-]: GETIMPORT R2 2 [nil]
+      25 [-]: GETIMPORT R2 2 [0x3D106989]
       26 [-]: LOADK R3 K10 ["Sentient Mobile Defense: Initialize host/client complete"]
       27 [-]: CALL R2 1 0  
       28 [-]: LOADB R2 0   
-L 1:  29 [-]: GETIMPORT R3 12 [nil]
+L 1:  29 [-]: GETIMPORT R3 12 [0xCBD666E1]
       30 [-]: LOADN R4 0   
       31 [-]: CALL R3 1 0  
 L 2:  32 [-]: GETUPVAL R4 5
       33 [-]: FASTCALL1 62 R4 L3
-      34 [-]: GETIMPORT R3 14 [nil]
+      34 [-]: GETIMPORT R3 14 [0x7B998233]
       35 [-]: CALL R3 1 1  
 L 3:  36 [-]: JUMPIFNOT R3 L7
-      37 [-]: GETIMPORT R3 12 [nil]
+      37 [-]: GETIMPORT R3 12 [0xCBD666E1]
       38 [-]: LOADN R4 0   
       39 [-]: CALL R3 1 0  
-      40 [-]: GETIMPORT R3 16 [nil]
+      40 [-]: GETIMPORT R3 16 [0xBE190284]
       41 [-]: SETUPVAL R3 5
       42 [-]: GETUPVAL R4 5
       43 [-]: FASTCALL1 62 R4 L4
-      44 [-]: GETIMPORT R3 14 [nil]
+      44 [-]: GETIMPORT R3 14 [0x7B998233]
       45 [-]: CALL R3 1 1  
 L 4:  46 [-]: JUMPIF R3 L6 
       47 [-]: LOADB R2 1   
@@ -1001,29 +1001,29 @@ L 5:  48 [-]: GETUPVAL R3 5
       49 [-]: NAMECALL R3 R3 K17 [0xC1F9F0D9]
       50 [-]: CALL R3 1 1  
       51 [-]: JUMPIF R3 L6 
-      52 [-]: GETIMPORT R3 12 [nil]
+      52 [-]: GETIMPORT R3 12 [0xCBD666E1]
       53 [-]: LOADN R4 0   
       54 [-]: CALL R3 1 0  
       55 [-]: JUMPBACK L5  
 L 6:  56 [-]: JUMPBACK L2  
 L 7:  57 [-]: JUMPIFNOT R2 L9
-      58 [-]: GETIMPORT R3 2 [nil]
+      58 [-]: GETIMPORT R3 2 [0x3D106989]
       59 [-]: LOADK R4 K18 ["Sentient Mobile Defense: Host migration"]
       60 [-]: CALL R3 1 0  
-      61 [-]: GETIMPORT R3 20 [nil]
+      61 [-]: GETIMPORT R3 20 [0x14459A1C]
       62 [-]: JUMPIFNOT R3 L8
       63 [-]: GETUPVAL R3 3
       64 [-]: LOADB R4 1   
       65 [-]: CALL R3 1 0  
       66 [-]: LOADB R3 1   
-      67 [-]: GETIMPORT R3 2 [nil]
+      67 [-]: GETIMPORT R3 2 [0x3D106989]
       68 [-]: LOADK R4 K8 ["Sentient Mobile Defense: Initializing host/client..."]
       69 [-]: CALL R3 1 0  
-      70 [-]: GETIMPORT R3 6 [nil]
+      70 [-]: GETIMPORT R3 6 [0x89326C93]
       71 [-]: NAMECALL R3 R3 K9 [0xFB64E76C]
       72 [-]: CALL R3 1 1  
       73 [-]: SETUPVAL R3 4
-      74 [-]: GETIMPORT R3 2 [nil]
+      74 [-]: GETIMPORT R3 2 [0x3D106989]
       75 [-]: LOADK R4 K10 ["Sentient Mobile Defense: Initialize host/client complete"]
       76 [-]: CALL R3 1 0  
 L 8:  77 [-]: LOADB R2 0   
@@ -1032,15 +1032,15 @@ L 9:  78 [-]: GETUPVAL R3 0
       80 [-]: NAMECALL R3 R3 K21 [0x209398C2]
       81 [-]: CALL R3 2 1  
       82 [-]: SETUPVAL R3 6
-      83 [-]: GETIMPORT R3 6 [nil]
+      83 [-]: GETIMPORT R3 6 [0x89326C93]
       84 [-]: NAMECALL R3 R3 K7 [0x18D05D30]
       85 [-]: CALL R3 1 1  
       86 [-]: JUMPIFNOT R3 L10
       87 [-]: GETUPVAL R3 7
-      88 [-]: GETIMPORT R4 23 [nil]
+      88 [-]: GETIMPORT R4 23 [0x67652851]
       89 [-]: CALL R4 0 -1 
       90 [-]: CALL R3 -1 0 
-L10:  91 [-]: GETIMPORT R3 23 [nil]
+L10:  91 [-]: GETIMPORT R3 23 [0x67652851]
       92 [-]: CALL R3 0 1  
       93 [-]: JUMPBACK L1  
       94 [-]: RETURN R0 0  
@@ -1055,19 +1055,19 @@ L10:  91 [-]: GETIMPORT R3 23 [nil]
 
        0 [-]: NAMECALL R1 R0 K0 [0x2B54251B]
        1 [-]: CALL R1 1 1  
-       2 [-]: GETIMPORT R4 2 [nil]
+       2 [-]: GETIMPORT R4 2 ["gDecorationType"]
        3 [-]: NAMECALL R2 R1 K3 [0xC1595BD5]
        4 [-]: CALL R2 2 1  
-       5 [-]: GETIMPORT R5 5 [nil]
+       5 [-]: GETIMPORT R5 5 [0x7ED0A956]
        6 [-]: LOADK R6 K6 ["/Lotus/Types/LevelObjects/Sentient/Attachments/MobileDefenseHackB"]
        7 [-]: CALL R5 1 -1 
        8 [-]: NAMECALL R3 R1 K7 [0xC9F6A7D7]
        9 [-]: CALL R3 -1 1 
-      10 [-]: GETIMPORT R4 9 [nil]
+      10 [-]: GETIMPORT R4 9 [0xC8802016]
       11 [-]: MOVE R5 R2   
       12 [-]: CALL R4 1 3  
       13 [-]: FORGPREP_INEXT R4 L4
-L 0:  14 [-]: GETIMPORT R11 11 [nil]
+L 0:  14 [-]: GETIMPORT R11 11 ["gLotusEffectDecorationType"]
       15 [-]: NAMECALL R9 R8 K12 [0xF2DEAF69]
       16 [-]: CALL R9 2 1  
       17 [-]: JUMPIFNOT R9 L1
@@ -1083,7 +1083,7 @@ L 1:  21 [-]: JUMPIFEQ R8 R3 L4
       26 [-]: LOADN R11 1  
       27 [-]: FORNPREP R10 L3
 L 2:  28 [-]: SUBK R15 R12 K15 [1]
-      29 [-]: GETIMPORT R16 17 [nil]
+      29 [-]: GETIMPORT R16 17 [0xC8AC5AEB]
       30 [-]: NAMECALL R13 R8 K18 [0xCDDC3ABB]
       31 [-]: CALL R13 3 0 
       32 [-]: FORNLOOP R10 L2
@@ -1093,10 +1093,10 @@ L 3:  33 [-]: LOADB R12 0
 L 4:  36 [-]: FORGLOOP R4 L0 2 [inext]
       37 [-]: NAMECALL R4 R1 K20 [0xD1586535]
       38 [-]: CALL R4 1 1  
-      39 [-]: GETIMPORT R5 22 [nil]
-      40 [-]: GETIMPORT R7 24 [nil]
+      39 [-]: GETIMPORT R5 22 [0x89326C93]
+      40 [-]: GETIMPORT R7 24 [0xB7560D8C]
       41 [-]: MOVE R8 R4   
-      42 [-]: GETIMPORT R9 26 [nil]
+      42 [-]: GETIMPORT R9 26 ["ZERO_ROTATION"]
       43 [-]: NAMECALL R5 R5 K27 [0x05909209]
       44 [-]: CALL R5 4 0  
       45 [-]: RETURN R0 0  

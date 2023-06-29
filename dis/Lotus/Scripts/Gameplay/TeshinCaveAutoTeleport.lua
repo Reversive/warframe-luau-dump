@@ -5,13 +5,13 @@
 ; Is_vararg:       1
 ; Max Stack Size:  6
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x2D0FAD09]
        2 [-]: LOADK R1 K2 ["Lotus.Scripts.Libs.DuviriStoryQuestLib"]
        3 [-]: CALL R0 1 1  
-       4 [-]: GETIMPORT R1 1 [nil]
+       4 [-]: GETIMPORT R1 1 [0x2D0FAD09]
        5 [-]: LOADK R2 K3 ["Lotus.Scripts.Gameplay.TeshinCaveSelectionLib"]
        6 [-]: CALL R1 1 1  
-       7 [-]: GETIMPORT R2 5 [nil]
+       7 [-]: GETIMPORT R2 5 [0x7ED0A956]
        8 [-]: LOADK R3 K6 ["/Lotus/Types/Friendly/PlayerControllable/ControllableDuviriDrifterTennoAvatar"]
        9 [-]: CALL R2 1 1  
       10 [-]: DUPCLOSURE R3 K7 []
@@ -35,14 +35,14 @@
 ; Is_vararg:       0
 ; Max Stack Size:  5
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 [0x89326C93]
        1 [-]: NAMECALL R0 R0 K2 [0xFB64E76C]
        2 [-]: CALL R0 1 1  
        3 [-]: NAMECALL R1 R0 K3 [0xBB610E5B]
        4 [-]: CALL R1 1 1  
        5 [-]: FASTCALL1 62 R1 L0
        6 [-]: MOVE R3 R1   
-       7 [-]: GETIMPORT R2 5 [nil]
+       7 [-]: GETIMPORT R2 5 [0x7B998233]
        8 [-]: CALL R2 1 1  
 L 0:   9 [-]: JUMPIFNOT R2 L1
       10 [-]: LOADB R2 0   
@@ -66,13 +66,13 @@ L 1:  12 [-]: GETUPVAL R4 0
        1 [-]: CALL R1 1 1  
 L 0:   2 [-]: FASTCALL1 62 R1 L1
        3 [-]: MOVE R3 R1   
-       4 [-]: GETIMPORT R2 2 [nil]
+       4 [-]: GETIMPORT R2 2 [0x7B998233]
        5 [-]: CALL R2 1 1  
 L 1:   6 [-]: JUMPIFNOT R2 L2
        7 [-]: NAMECALL R2 R0 K0 [0xBB610E5B]
        8 [-]: CALL R2 1 1  
        9 [-]: MOVE R1 R2   
-      10 [-]: GETIMPORT R2 4 [nil]
+      10 [-]: GETIMPORT R2 4 [0xCBD666E1]
       11 [-]: LOADN R3 0   
       12 [-]: CALL R2 1 0  
       13 [-]: JUMPBACK L0  
@@ -86,12 +86,12 @@ L 2:  14 [-]: RETURN R1 1
 ; Is_vararg:       0
 ; Max Stack Size:  12
 
-       0 [-]: GETIMPORT R0 2 [nil]
+       0 [-]: GETIMPORT R0 2 ["EndlessDuviri"]
        1 [-]: JUMPXEQKNIL R0 L0
        2 [-]: LOADB R0 0   
        3 [-]: RETURN R0 1  
-L 0:   4 [-]: GETIMPORT R0 4 [nil]
-       5 [-]: GETIMPORT R2 6 [nil]
+L 0:   4 [-]: GETIMPORT R0 4 [0x89326C93]
+       5 [-]: GETIMPORT R2 6 [0x0469F296]
        6 [-]: LOADK R3 K7 ["CaveExitWP"]
        7 [-]: CALL R2 1 -1 
        8 [-]: NAMECALL R0 R0 K8 [0x46A0EBF5]
@@ -99,7 +99,7 @@ L 0:   4 [-]: GETIMPORT R0 4 [nil]
       10 [-]: LOADNIL R1   
       11 [-]: FASTCALL1 62 R0 L1
       12 [-]: MOVE R3 R0   
-      13 [-]: GETIMPORT R2 10 [nil]
+      13 [-]: GETIMPORT R2 10 [0x7B998233]
       14 [-]: CALL R2 1 1  
 L 1:  15 [-]: JUMPIF R2 L2 
       16 [-]: GETUPVAL R3 0
@@ -117,17 +117,17 @@ L 1:  15 [-]: JUMPIF R2 L2
       28 [-]: MOVE R1 R5   
 L 2:  29 [-]: FASTCALL1 62 R1 L3
       30 [-]: MOVE R3 R1   
-      31 [-]: GETIMPORT R2 10 [nil]
+      31 [-]: GETIMPORT R2 10 [0x7B998233]
       32 [-]: CALL R2 1 1  
 L 3:  33 [-]: JUMPIFNOT R2 L4
       34 [-]: LOADB R2 1   
       35 [-]: RETURN R2 1  
-L 4:  36 [-]: GETIMPORT R2 4 [nil]
+L 4:  36 [-]: GETIMPORT R2 4 [0x89326C93]
       37 [-]: NAMECALL R2 R2 K16 [0xFB64E76C]
       38 [-]: CALL R2 1 1  
       39 [-]: FASTCALL1 62 R2 L5
       40 [-]: MOVE R4 R2   
-      41 [-]: GETIMPORT R3 10 [nil]
+      41 [-]: GETIMPORT R3 10 [0x7B998233]
       42 [-]: CALL R3 1 1  
 L 5:  43 [-]: JUMPIFNOT R3 L6
       44 [-]: LOADB R3 1   
@@ -169,7 +169,7 @@ L 6:  46 [-]: GETUPVAL R3 1
       80 [-]: CALL R5 1 1  
       81 [-]: MOVE R4 R5   
       82 [-]: JUMPIFNOT R4 L7
-      83 [-]: GETIMPORT R5 25 [nil]
+      83 [-]: GETIMPORT R5 25 [0xBE190284]
       84 [-]: MOVE R7 R2   
       85 [-]: LOADN R8 0   
       86 [-]: MOVE R9 R4   
@@ -185,7 +185,7 @@ L 7:  89 [-]: GETUPVAL R5 1
       96 [-]: MOVE R7 R1   
       97 [-]: MOVE R8 R3   
       98 [-]: LOADNIL R9   
-      99 [-]: GETIMPORT R10 29 [nil]
+      99 [-]: GETIMPORT R10 29 [0x6074E636]
      100 [-]: LOADNIL R11  
      101 [-]: CALL R5 6 0  
 L 8: 102 [-]: LOADB R4 0   
@@ -204,7 +204,7 @@ L 0:   1 [-]: JUMPIFNOT R2 L1
        2 [-]: GETGLOBAL R3 K0 ["_AutoTeleportOut"]
        3 [-]: CALL R3 0 1  
        4 [-]: MOVE R2 R3   
-       5 [-]: GETIMPORT R3 2 [nil]
+       5 [-]: GETIMPORT R3 2 [0xCBD666E1]
        6 [-]: LOADN R4 0   
        7 [-]: CALL R3 1 0  
        8 [-]: JUMPBACK L0  

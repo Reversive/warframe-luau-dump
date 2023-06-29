@@ -5,9 +5,9 @@
 ; Is_vararg:       1
 ; Max Stack Size:  3
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0xAEABECDA]
        2 [-]: GETVARARGS R1 1
-       3 [-]: GETIMPORT R2 4 [nil]
+       3 [-]: GETIMPORT R2 4 ["seeall"]
        4 [-]: CALL R0 2 0  
        5 [-]: DUPCLOSURE R0 K5 []
        6 [-]: SETGLOBAL R0 K6 ["Create"]
@@ -21,10 +21,10 @@
 ; Is_vararg:       0
 ; Max Stack Size:  13
 
-       0 [-]: GETIMPORT R6 1 [nil]
+       0 [-]: GETIMPORT R6 1 [0x2D0FAD09]
        1 [-]: LOADK R7 K2 ["EE.Interface.Utilities"]
        2 [-]: CALL R6 1 1  
-       3 [-]: GETIMPORT R7 1 [nil]
+       3 [-]: GETIMPORT R7 1 [0x2D0FAD09]
        4 [-]: LOADK R8 K3 ["Lotus.Interface.UIStyleUtilities"]
        5 [-]: CALL R7 1 1  
        6 [-]: JUMPXEQKNIL R5 L0
@@ -46,7 +46,7 @@ L 2:  12 [-]: DUPTABLE R8 26
 L 3:  21 [-]: SETTABLEKS R9 R8 K7 ["mValues"]
       22 [-]: MOVE R9 R4   
       23 [-]: JUMPIF R9 L4 
-      24 [-]: GETIMPORT R10 29 [nil]
+      24 [-]: GETIMPORT R10 29 [0x0032441C]
       25 [-]: GETTABLEKS R9 R10 K30 ["UIMaterial_RectangleNoDepth"]
 L 4:  26 [-]: SETTABLEKS R9 R8 K8 ["mRectMaterial"]
       27 [-]: NEWTABLE R9 0 3

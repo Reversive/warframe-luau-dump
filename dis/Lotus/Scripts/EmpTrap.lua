@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  1
 
-            1 [-]: DUPCLOSURE R0 K0 []
+       1 [-]: DUPCLOSURE R0 K0 []
        2 [-]: SETGLOBAL R0 K1 ["Detonate"]
        3 [-]: RETURN R0 0  
 
@@ -19,10 +19,10 @@
 
        0 [-]: FASTCALL1 62 R1 L0
        1 [-]: MOVE R3 R1   
-       2 [-]: GETIMPORT R2 1 [nil]
+       2 [-]: GETIMPORT R2 1 [0x7B998233]
        3 [-]: CALL R2 1 1  
 L 0:   4 [-]: JUMPIF R2 L1 
-       5 [-]: GETIMPORT R4 3 [nil]
+       5 [-]: GETIMPORT R4 3 [0xC85463D2]
        6 [-]: NAMECALL R2 R1 K4 [0x9D6904C1]
        7 [-]: CALL R2 2 1  
        8 [-]: JUMPIFNOT R2 L2
@@ -33,22 +33,22 @@ L 2:  10 [-]: NAMECALL R2 R0 K5 [0xF4E253B6]
       13 [-]: CALL R2 1 1  
       14 [-]: FASTCALL1 62 R2 L3
       15 [-]: MOVE R4 R2   
-      16 [-]: GETIMPORT R3 1 [nil]
+      16 [-]: GETIMPORT R3 1 [0x7B998233]
       17 [-]: CALL R3 1 1  
 L 3:  18 [-]: JUMPIF R3 L5 
       19 [-]: NAMECALL R3 R2 K7 [0x3F384325]
       20 [-]: CALL R3 1 1  
       21 [-]: FASTCALL1 62 R3 L4
       22 [-]: MOVE R5 R3   
-      23 [-]: GETIMPORT R4 1 [nil]
+      23 [-]: GETIMPORT R4 1 [0x7B998233]
       24 [-]: CALL R4 1 1  
 L 4:  25 [-]: JUMPIF R4 L5 
-      26 [-]: GETIMPORT R4 9 [nil]
+      26 [-]: GETIMPORT R4 9 [0x89326C93]
       27 [-]: MOVE R6 R3   
       28 [-]: NAMECALL R7 R2 K10 [0xD1586535]
       29 [-]: CALL R7 1 1  
-      30 [-]: GETIMPORT R8 12 [nil]
-      31 [-]: GETIMPORT R9 14 [nil]
+      30 [-]: GETIMPORT R8 12 [0x9B5DDF0B]
+      31 [-]: GETIMPORT R9 14 [0x1E9434AC]
       32 [-]: LOADN R10 100
       33 [-]: LOADN R11 10 
       34 [-]: MOVE R12 R2  
@@ -56,12 +56,12 @@ L 4:  25 [-]: JUMPIF R4 L5
       36 [-]: LOADN R14 10 
       37 [-]: NAMECALL R4 R4 K15 [0x97DCFF30]
       38 [-]: CALL R4 10 0 
-L 5:  39 [-]: GETIMPORT R3 17 [nil]
+L 5:  39 [-]: GETIMPORT R3 17 [0xCBD666E1]
       40 [-]: LOADN R4 0   
       41 [-]: CALL R3 1 0  
       42 [-]: FASTCALL1 62 R2 L6
       43 [-]: MOVE R4 R2   
-      44 [-]: GETIMPORT R3 1 [nil]
+      44 [-]: GETIMPORT R3 1 [0x7B998233]
       45 [-]: CALL R3 1 1  
 L 6:  46 [-]: JUMPIF R3 L7 
       47 [-]: NAMECALL R3 R2 K18 [0xA2880940]

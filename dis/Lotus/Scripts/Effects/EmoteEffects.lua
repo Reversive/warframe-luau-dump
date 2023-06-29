@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  2
 
-            1 [-]: LOADNIL R0   
+       1 [-]: LOADNIL R0   
        2 [-]: NEWCLOSURE R1 P0
        3 [-]: MOVE R1 R0   
        4 [-]: SETGLOBAL R1 K0 ["EMO_START"]
@@ -28,7 +28,7 @@
 
        0 [-]: FASTCALL1 62 R0 L0
        1 [-]: MOVE R2 R0   
-       2 [-]: GETIMPORT R1 1 [nil]
+       2 [-]: GETIMPORT R1 1 [0x7B998233]
        3 [-]: CALL R1 1 1  
 L 0:   4 [-]: JUMPIFNOT R1 L1
        5 [-]: RETURN R0 0  
@@ -38,23 +38,23 @@ L 1:   6 [-]: NAMECALL R1 R0 K2 [0xDE321E6F]
        9 [-]: CALL R1 1 1  
       10 [-]: FASTCALL1 62 R1 L2
       11 [-]: MOVE R3 R1   
-      12 [-]: GETIMPORT R2 1 [nil]
+      12 [-]: GETIMPORT R2 1 [0x7B998233]
       13 [-]: CALL R2 1 1  
 L 2:  14 [-]: JUMPIFNOT R2 L3
       15 [-]: RETURN R0 0  
-L 3:  16 [-]: GETIMPORT R3 5 [nil]
+L 3:  16 [-]: GETIMPORT R3 5 [0x055E6EC5]
       17 [-]: FASTCALL1 62 R3 L4
-      18 [-]: GETIMPORT R2 1 [nil]
+      18 [-]: GETIMPORT R2 1 [0x7B998233]
       19 [-]: CALL R2 1 1  
 L 4:  20 [-]: JUMPIF R2 L5 
-      21 [-]: GETIMPORT R4 5 [nil]
+      21 [-]: GETIMPORT R4 5 [0x055E6EC5]
       22 [-]: LOADN R5 1   
       23 [-]: NAMECALL R2 R0 K6 [0x21B4C60E]
       24 [-]: CALL R2 3 0  
-L 5:  25 [-]: GETIMPORT R4 8 [nil]
-      26 [-]: GETIMPORT R5 10 [nil]
-      27 [-]: GETIMPORT R6 12 [nil]
-      28 [-]: GETIMPORT R7 14 [nil]
+L 5:  25 [-]: GETIMPORT R4 8 [0x55BA2EEB]
+      26 [-]: GETIMPORT R5 10 ["EMPTY_SYMBOL"]
+      27 [-]: GETIMPORT R6 12 ["ZERO_VECTOR"]
+      28 [-]: GETIMPORT R7 14 ["ZERO_ROTATION"]
       29 [-]: MOVE R8 R1   
       30 [-]: NAMECALL R2 R0 K15 [0x47901F07]
       31 [-]: CALL R2 6 1  
@@ -71,10 +71,10 @@ L 5:  25 [-]: GETIMPORT R4 8 [nil]
 
 L 0:   0 [-]: GETUPVAL R3 0
        1 [-]: FASTCALL1 62 R3 L1
-       2 [-]: GETIMPORT R2 1 [nil]
+       2 [-]: GETIMPORT R2 1 [0x7B998233]
        3 [-]: CALL R2 1 1  
 L 1:   4 [-]: JUMPIF R2 L2 
-       5 [-]: GETIMPORT R2 3 [nil]
+       5 [-]: GETIMPORT R2 3 [0xCBD666E1]
        6 [-]: LOADK R3 K4 [0.25]
        7 [-]: CALL R2 1 0  
        8 [-]: JUMPBACK L0  
@@ -90,7 +90,7 @@ L 2:   9 [-]: RETURN R0 0
 
        0 [-]: GETUPVAL R2 0
        1 [-]: FASTCALL1 62 R2 L0
-       2 [-]: GETIMPORT R1 1 [nil]
+       2 [-]: GETIMPORT R1 1 [0x7B998233]
        3 [-]: CALL R1 1 1  
 L 0:   4 [-]: JUMPIF R1 L1 
        5 [-]: GETUPVAL R1 0

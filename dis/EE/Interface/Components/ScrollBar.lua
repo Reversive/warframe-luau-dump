@@ -5,14 +5,14 @@
 ; Is_vararg:       1
 ; Max Stack Size:  3
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0xAEABECDA]
        2 [-]: GETVARARGS R1 1
-       3 [-]: GETIMPORT R2 4 [nil]
+       3 [-]: GETIMPORT R2 4 ["seeall"]
        4 [-]: CALL R0 2 0  
-       5 [-]: GETIMPORT R0 6 [nil]
+       5 [-]: GETIMPORT R0 6 [0x2D0FAD09]
        6 [-]: LOADK R1 K7 ["EE.Interface.Utilities"]
        7 [-]: CALL R0 1 1  
-       8 [-]: GETIMPORT R1 6 [nil]
+       8 [-]: GETIMPORT R1 6 [0x2D0FAD09]
        9 [-]: LOADK R2 K8 ["Lotus.Interface.UIStyleUtilities"]
       10 [-]: CALL R1 1 1  
       11 [-]: DUPCLOSURE R2 K9 []
@@ -31,12 +31,12 @@
 
        0 [-]: FASTCALL1 62 R2 L0
        1 [-]: MOVE R6 R2   
-       2 [-]: GETIMPORT R5 1 [nil]
+       2 [-]: GETIMPORT R5 1 [0x7B998233]
        3 [-]: CALL R5 1 1  
 L 0:   4 [-]: JUMPIF R5 L1 
        5 [-]: LOADN R5 30  
        6 [-]: JUMPIFNOTLT R2 R5 L2
-L 1:   7 [-]: GETIMPORT R5 3 [nil]
+L 1:   7 [-]: GETIMPORT R5 3 [0x3D106989]
        8 [-]: LOADK R7 K4 ["The height needs to be at least "]
        9 [-]: LOADN R8 30  
       10 [-]: LOADK R9 K5 [", which is the minimum size of the scrub"]
@@ -44,21 +44,21 @@ L 1:   7 [-]: GETIMPORT R5 3 [nil]
       12 [-]: CALL R5 1 0  
       13 [-]: LOADB R6 0   
       14 [-]: FASTCALL1 1 R6 L2
-      15 [-]: GETIMPORT R5 7 [nil]
+      15 [-]: GETIMPORT R5 7 [0x60CCE7B4]
       16 [-]: CALL R5 1 0  
 L 2:  17 [-]: FASTCALL1 62 R3 L3
       18 [-]: MOVE R6 R3   
-      19 [-]: GETIMPORT R5 1 [nil]
+      19 [-]: GETIMPORT R5 1 [0x7B998233]
       20 [-]: CALL R5 1 1  
 L 3:  21 [-]: JUMPIF R5 L4 
       22 [-]: LOADN R5 0   
       23 [-]: JUMPIFNOTLE R3 R5 L5
-L 4:  24 [-]: GETIMPORT R5 3 [nil]
+L 4:  24 [-]: GETIMPORT R5 3 [0x3D106989]
       25 [-]: LOADK R6 K8 ["The visible proportion is a number (> 0 and < 1)"]
       26 [-]: CALL R5 1 0  
       27 [-]: LOADB R6 0   
       28 [-]: FASTCALL1 1 R6 L5
-      29 [-]: GETIMPORT R5 7 [nil]
+      29 [-]: GETIMPORT R5 7 [0x60CCE7B4]
       30 [-]: CALL R5 1 0  
 L 5:  31 [-]: NEWTABLE R5 64 0
       32 [-]: SETTABLEKS R0 R5 K9 ["mMovie"]
@@ -75,7 +75,7 @@ L 5:  31 [-]: NEWTABLE R5 64 0
       43 [-]: SETTABLEKS R6 R5 K15 ["mActive"]
       44 [-]: LOADB R6 0   
       45 [-]: SETTABLEKS R6 R5 K16 ["mEnableSmoothScroll"]
-      46 [-]: GETIMPORT R6 18 [nil]
+      46 [-]: GETIMPORT R6 18 [0x78CA68A2]
       47 [-]: LOADN R7 0   
       48 [-]: LOADK R8 K19 [0.125]
       49 [-]: CALL R6 2 1  
@@ -197,7 +197,7 @@ L 5:  31 [-]: NEWTABLE R5 64 0
      165 [-]: DUPCLOSURE R6 K107 []
      166 [-]: MOVE R2 R0   
      167 [-]: SETTABLEKS R6 R5 K108 ["ApplyScale"]
-     168 [-]: GETIMPORT R6 111 [nil]
+     168 [-]: GETIMPORT R6 111 [0xE6B41ADB]
      169 [-]: CALL R6 0 1  
      170 [-]: JUMPIFNOT R6 L6
      171 [-]: GETTABLEKS R7 R5 K47 ["mScale"]
@@ -208,7 +208,7 @@ L 5:  31 [-]: NEWTABLE R5 64 0
      176 [-]: SETTABLEKS R6 R5 K48 ["mThemedScale"]
 L 6: 177 [-]: NAMECALL R6 R5 K113 [0x075502A4]
      178 [-]: CALL R6 1 0  
-     179 [-]: GETIMPORT R9 115 [nil]
+     179 [-]: GETIMPORT R9 115 [0x1467D5F4]
      180 [-]: CALL R9 0 1  
      181 [-]: NOT R8 R9    
      182 [-]: NAMECALL R6 R5 K116 [0x557B7601]

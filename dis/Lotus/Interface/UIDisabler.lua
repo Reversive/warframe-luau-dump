@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  4
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x2D0FAD09]
        2 [-]: LOADK R1 K2 ["EE.Interface.Utilities"]
        3 [-]: CALL R0 1 1  
        4 [-]: LOADN R1 0   
@@ -63,21 +63,21 @@
 
        0 [-]: GETUPVAL R1 0
        1 [-]: GETTABLEKS R0 R1 K0 [0x44537ADF]
-       2 [-]: GETIMPORT R1 2 [nil]
+       2 [-]: GETIMPORT R1 2 [0xAE91E43B]
        3 [-]: CALL R0 1 2  
-       4 [-]: GETIMPORT R2 2 [nil]
+       4 [-]: GETIMPORT R2 2 [0xAE91E43B]
        5 [-]: LOADK R4 K3 ["MouseCatcherBtn"]
        6 [-]: LOADN R5 10  
        7 [-]: LOADN R6 0   
        8 [-]: NAMECALL R2 R2 K4 [0x67BC869F]
        9 [-]: CALL R2 4 0  
-      10 [-]: GETIMPORT R2 2 [nil]
+      10 [-]: GETIMPORT R2 2 [0xAE91E43B]
       11 [-]: LOADK R4 K3 ["MouseCatcherBtn"]
       12 [-]: LOADN R5 12  
       13 [-]: MOVE R6 R0   
       14 [-]: NAMECALL R2 R2 K4 [0x67BC869F]
       15 [-]: CALL R2 4 0  
-      16 [-]: GETIMPORT R2 2 [nil]
+      16 [-]: GETIMPORT R2 2 [0xAE91E43B]
       17 [-]: LOADK R4 K3 ["MouseCatcherBtn"]
       18 [-]: LOADN R5 13  
       19 [-]: MOVE R6 R1   
@@ -93,7 +93,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  7
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 [0xAE91E43B]
        1 [-]: LOADK R2 K2 ["MouseCatcherBtn"]
        2 [-]: LOADNIL R3   
        3 [-]: LOADNIL R4   
@@ -103,13 +103,13 @@
        7 [-]: CALL R0 6 0  
        8 [-]: GETUPVAL R0 0
        9 [-]: CALL R0 0 0  
-      10 [-]: GETIMPORT R0 6 [nil]
-      11 [-]: GETIMPORT R2 8 [nil]
+      10 [-]: GETIMPORT R0 6 [0x9BA7909F]
+      11 [-]: GETIMPORT R2 8 [0x0BAD3AB5]
       12 [-]: NAMECALL R0 R0 K9 [0xBCFB64AB]
       13 [-]: CALL R0 2 1  
       14 [-]: FASTCALL1 62 R0 L0
       15 [-]: MOVE R2 R0   
-      16 [-]: GETIMPORT R1 11 [nil]
+      16 [-]: GETIMPORT R1 11 [0x7B998233]
       17 [-]: CALL R1 1 1  
 L 0:  18 [-]: JUMPIF R1 L1 
       19 [-]: LOADK R3 K12 ["_root"]
@@ -127,13 +127,13 @@ L 1:  24 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  6
 
-       0 [-]: GETIMPORT R0 1 [nil]
-       1 [-]: GETIMPORT R2 3 [nil]
+       0 [-]: GETIMPORT R0 1 [0x9BA7909F]
+       1 [-]: GETIMPORT R2 3 [0x0BAD3AB5]
        2 [-]: NAMECALL R0 R0 K4 [0xBCFB64AB]
        3 [-]: CALL R0 2 1  
        4 [-]: FASTCALL1 62 R0 L0
        5 [-]: MOVE R2 R0   
-       6 [-]: GETIMPORT R1 6 [nil]
+       6 [-]: GETIMPORT R1 6 [0x7B998233]
        7 [-]: CALL R1 1 1  
 L 0:   8 [-]: JUMPIF R1 L1 
        9 [-]: LOADK R3 K7 ["_root"]
@@ -152,14 +152,14 @@ L 1:  14 [-]: RETURN R0 0
 ; Max Stack Size:  3
 
        0 [-]: GETUPVAL R1 0
-       1 [-]: GETIMPORT R2 1 [nil]
+       1 [-]: GETIMPORT R2 1 [0xB693B6C1]
        2 [-]: CALL R2 0 1  
        3 [-]: ADD R0 R1 R2 
        4 [-]: SETUPVAL R0 0
        5 [-]: GETUPVAL R0 0
        6 [-]: LOADN R1 100 
        7 [-]: JUMPIFNOTLT R1 R0 L0
-       8 [-]: GETIMPORT R0 3 [nil]
+       8 [-]: GETIMPORT R0 3 [0xAE91E43B]
        9 [-]: NAMECALL R0 R0 K4 [0x32302B4A]
       10 [-]: CALL R0 1 0  
 L 0:  11 [-]: RETURN R0 0  

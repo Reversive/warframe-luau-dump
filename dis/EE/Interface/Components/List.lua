@@ -5,9 +5,9 @@
 ; Is_vararg:       1
 ; Max Stack Size:  3
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0xAEABECDA]
        2 [-]: GETVARARGS R1 1
-       3 [-]: GETIMPORT R2 4 [nil]
+       3 [-]: GETIMPORT R2 4 ["seeall"]
        4 [-]: CALL R0 2 0  
        5 [-]: DUPCLOSURE R0 K5 []
        6 [-]: SETGLOBAL R0 K6 ["CreateList"]
@@ -69,7 +69,7 @@
       45 [-]: SETTABLEKS R5 R3 K21 ["mOnDragFocusedCallback"]
       46 [-]: LOADNIL R5   
       47 [-]: SETTABLEKS R5 R3 K22 ["mOnDragUnfocusedCallback"]
-      48 [-]: GETIMPORT R5 24 [nil]
+      48 [-]: GETIMPORT R5 24 [0x2D0FAD09]
       49 [-]: LOADK R6 K25 ["EE.Interface.Utilities"]
       50 [-]: CALL R5 1 1  
       51 [-]: SETTABLEKS R5 R3 K26 ["UTIL"]

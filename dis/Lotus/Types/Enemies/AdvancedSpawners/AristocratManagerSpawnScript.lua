@@ -5,34 +5,34 @@
 ; Is_vararg:       1
 ; Max Stack Size:  16
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x0469F296]
        2 [-]: LOADK R1 K2 ["Corpus"]
        3 [-]: CALL R0 1 1  
-       4 [-]: GETIMPORT R1 1 [nil]
+       4 [-]: GETIMPORT R1 1 [0x0469F296]
        5 [-]: LOADK R2 K3 ["ShrineMarker"]
        6 [-]: CALL R1 1 1  
-       7 [-]: GETIMPORT R2 5 [nil]
+       7 [-]: GETIMPORT R2 5 [0x7ED0A956]
        8 [-]: LOADK R3 K6 ["/Lotus/Types/Game/AutoTurretAvatar"]
        9 [-]: CALL R2 1 1  
-      10 [-]: GETIMPORT R3 5 [nil]
+      10 [-]: GETIMPORT R3 5 [0x7ED0A956]
       11 [-]: LOADK R4 K7 ["/Lotus/Types/Game/SecurityCameraAvatar"]
       12 [-]: CALL R3 1 1  
-      13 [-]: GETIMPORT R4 5 [nil]
+      13 [-]: GETIMPORT R4 5 [0x7ED0A956]
       14 [-]: LOADK R5 K8 ["/Lotus/Types/Items/Tokens/GreedTokens/GreedTokenBasePickup"]
       15 [-]: CALL R4 1 1  
-      16 [-]: GETIMPORT R5 5 [nil]
+      16 [-]: GETIMPORT R5 5 [0x7ED0A956]
       17 [-]: LOADK R6 K9 ["/Lotus/Types/Enemies/Corpus/Aristocrats/Avatars/AristocratManagerAvatar"]
       18 [-]: CALL R5 1 1  
-      19 [-]: GETIMPORT R6 11 [nil]
+      19 [-]: GETIMPORT R6 11 [0x2D0FAD09]
       20 [-]: LOADK R7 K12 ["Lotus.Scripts.Libs.PanicLib"]
       21 [-]: CALL R6 1 1  
       22 [-]: LOADN R7 0   
       23 [-]: LOADN R8 0   
       24 [-]: LOADNIL R9   
-      25 [-]: GETIMPORT R10 1 [nil]
+      25 [-]: GETIMPORT R10 1 [0x0469F296]
       26 [-]: LOADK R11 K13 ["AristoManagerTimer"]
       27 [-]: CALL R10 1 1 
-      28 [-]: GETIMPORT R11 1 [nil]
+      28 [-]: GETIMPORT R11 1 [0x0469F296]
       29 [-]: LOADK R12 K14 ["AristoManagerKillCount"]
       30 [-]: CALL R11 1 1 
       31 [-]: DUPCLOSURE R12 K15 []
@@ -71,13 +71,13 @@
 ; Is_vararg:       0
 ; Max Stack Size:  8
 
-       0 [-]: GETIMPORT R0 1 [nil]
-       1 [-]: GETIMPORT R2 3 [nil]
+       0 [-]: GETIMPORT R0 1 [0x89326C93]
+       1 [-]: GETIMPORT R2 3 [0x0469F296]
        2 [-]: LOADK R3 K4 ["ShrineTokenAction"]
        3 [-]: CALL R2 1 -1 
        4 [-]: NAMECALL R0 R0 K5 [0xC7FCADA9]
        5 [-]: CALL R0 -1 1 
-       6 [-]: GETIMPORT R1 7 [nil]
+       6 [-]: GETIMPORT R1 7 [0xC8802016]
        7 [-]: MOVE R2 R0   
        8 [-]: CALL R1 1 3  
        9 [-]: FORGPREP_INEXT R1 L1
@@ -96,7 +96,7 @@ L 1:  12 [-]: FORGLOOP R1 L0 2 [inext]
 
        0 [-]: LOADN R1 2   
        1 [-]: JUMPIFEQ R0 R1 L0
-       2 [-]: GETIMPORT R1 2 [nil]
+       2 [-]: GETIMPORT R1 2 ["MT_DEFEND"]
        3 [-]: JUMPIFEQ R0 R1 L0
        4 [-]: LOADN R1 33  
        5 [-]: JUMPIFEQ R0 R1 L0
@@ -119,11 +119,11 @@ L 1:  10 [-]: LOADB R1 0
        1 [-]: CALL R1 1 1  
        2 [-]: FASTCALL1 62 R1 L0
        3 [-]: MOVE R3 R1   
-       4 [-]: GETIMPORT R2 2 [nil]
+       4 [-]: GETIMPORT R2 2 [0x7B998233]
        5 [-]: CALL R2 1 1  
 L 0:   6 [-]: JUMPIFNOT R2 L1
        7 [-]: RETURN R0 0  
-L 1:   8 [-]: GETIMPORT R4 4 [nil]
+L 1:   8 [-]: GETIMPORT R4 4 ["gLotusNpcAvatarType"]
        9 [-]: NAMECALL R2 R1 K5 [0xF2DEAF69]
       10 [-]: CALL R2 2 1  
       11 [-]: JUMPIFNOT R2 L2
@@ -142,7 +142,7 @@ L 1:   8 [-]: GETIMPORT R4 4 [nil]
       24 [-]: GETUPVAL R3 3
       25 [-]: ADDK R2 R3 K7 [1]
       26 [-]: SETUPVAL R2 3
-      27 [-]: GETIMPORT R2 9 [nil]
+      27 [-]: GETIMPORT R2 9 [0xBE190284]
       28 [-]: GETUPVAL R4 4
       29 [-]: GETUPVAL R5 3
       30 [-]: NAMECALL R2 R2 K10 [0x751F061D]
@@ -157,7 +157,7 @@ L 2:  32 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  12
 
-       0 [-]: GETIMPORT R1 1 [nil]
+       0 [-]: GETIMPORT R1 1 [0x89326C93]
        1 [-]: NAMECALL R1 R1 K2 [0x29EF273D]
        2 [-]: CALL R1 1 1  
        3 [-]: NAMECALL R1 R1 K3 [0x66905CB0]
@@ -166,9 +166,9 @@ L 2:  32 [-]: RETURN R0 0
        6 [-]: NEWTABLE R1 0 0
        7 [-]: NEWTABLE R2 0 0
        8 [-]: GETUPVAL R3 0
-       9 [-]: GETIMPORT R5 5 [nil]
-      10 [-]: GETIMPORT R6 7 [nil]
-      11 [-]: GETIMPORT R7 9 [nil]
+       9 [-]: GETIMPORT R5 5 ["gNpcSpawnPointType"]
+      10 [-]: GETIMPORT R6 7 [0x259D183F]
+      11 [-]: GETIMPORT R7 9 [0xDE28B675]
       12 [-]: LOADB R8 1   
       13 [-]: MOVE R9 R0   
       14 [-]: NAMECALL R3 R3 K10 [0xF0606E8B]
@@ -176,7 +176,7 @@ L 2:  32 [-]: RETURN R0 0
       16 [-]: MOVE R1 R3   
       17 [-]: FASTCALL1 62 R1 L0
       18 [-]: MOVE R4 R1   
-      19 [-]: GETIMPORT R3 12 [nil]
+      19 [-]: GETIMPORT R3 12 [0x7B998233]
       20 [-]: CALL R3 1 1  
 L 0:  21 [-]: JUMPIF R3 L3 
       22 [-]: LOADN R5 1   
@@ -186,7 +186,7 @@ L 0:  21 [-]: JUMPIF R3 L3
 L 1:  26 [-]: GETTABLE R6 R1 R5
       27 [-]: NAMECALL R6 R6 K13 [0x22DA1852]
       28 [-]: CALL R6 1 1  
-      29 [-]: GETIMPORT R7 15 [nil]
+      29 [-]: GETIMPORT R7 15 ["EMPTY_SYMBOL"]
       30 [-]: JUMPIFNOTEQ R6 R7 L2
       31 [-]: GETTABLE R9 R1 R5
       32 [-]: NAMECALL R7 R0 K16 [0x68D0CBED]
@@ -197,14 +197,14 @@ L 1:  26 [-]: GETTABLE R6 R1 R5
       37 [-]: SETTABLEKS R7 R10 K17 ["dist"]
       38 [-]: FASTCALL2 52 R2 R10 L2
       39 [-]: MOVE R9 R2   
-      40 [-]: GETIMPORT R8 20 [nil]
+      40 [-]: GETIMPORT R8 20 [0x23D5322F]
       41 [-]: CALL R8 2 0  
 L 2:  42 [-]: FORNLOOP R3 L1
 L 3:  43 [-]: LENGTH R3 R2 
       44 [-]: LOADN R4 1   
       45 [-]: JUMPIFNOTLT R4 R3 L4
       46 [-]: DUPCLOSURE R3 K21 []
-      47 [-]: GETIMPORT R4 23 [nil]
+      47 [-]: GETIMPORT R4 23 [0xF21B1D8E]
       48 [-]: MOVE R5 R2   
       49 [-]: MOVE R6 R3   
       50 [-]: CALL R4 2 0  
@@ -212,7 +212,7 @@ L 4:  51 [-]: LOADN R5 1
       52 [-]: LENGTH R3 R2 
       53 [-]: LOADN R4 1   
       54 [-]: FORNPREP R3 L7
-L 5:  55 [-]: GETIMPORT R6 1 [nil]
+L 5:  55 [-]: GETIMPORT R6 1 [0x89326C93]
       56 [-]: GETTABLE R9 R2 R5
       57 [-]: GETTABLEN R8 R9 1
       58 [-]: NAMECALL R6 R6 K24 [0xE5A34EAE]
@@ -222,7 +222,7 @@ L 5:  55 [-]: GETIMPORT R6 1 [nil]
       62 [-]: GETTABLEN R6 R7 1
       63 [-]: RETURN R6 1  
 L 6:  64 [-]: FORNLOOP R3 L5
-L 7:  65 [-]: GETIMPORT R3 26 [nil]
+L 7:  65 [-]: GETIMPORT R3 26 [0x3D106989]
       66 [-]: LOADK R4 K27 ["No valid spawnPoints found in given radius"]
       67 [-]: CALL R3 1 0  
       68 [-]: LOADNIL R3   
@@ -236,86 +236,86 @@ L 7:  65 [-]: GETIMPORT R3 26 [nil]
 ; Is_vararg:       0
 ; Max Stack Size:  33
 
-       0 [-]: GETIMPORT R1 1 [nil]
+       0 [-]: GETIMPORT R1 1 [0xBE190284]
 L 0:   1 [-]: FASTCALL1 62 R1 L1
        2 [-]: MOVE R3 R1   
-       3 [-]: GETIMPORT R2 3 [nil]
+       3 [-]: GETIMPORT R2 3 [0x7B998233]
        4 [-]: CALL R2 1 1  
 L 1:   5 [-]: JUMPIFNOT R2 L2
-       6 [-]: GETIMPORT R2 5 [nil]
+       6 [-]: GETIMPORT R2 5 [0xCBD666E1]
        7 [-]: LOADN R3 0   
        8 [-]: CALL R2 1 0  
-       9 [-]: GETIMPORT R1 1 [nil]
+       9 [-]: GETIMPORT R1 1 [0xBE190284]
       10 [-]: JUMPBACK L0  
-L 2:  11 [-]: GETIMPORT R2 7 [nil]
+L 2:  11 [-]: GETIMPORT R2 7 [0x89326C93]
       12 [-]: NAMECALL R2 R2 K8 [0x61BE252A]
       13 [-]: CALL R2 1 1  
       14 [-]: JUMPXEQKN R2 K9 L3 NOT [0]
-      15 [-]: GETIMPORT R2 5 [nil]
+      15 [-]: GETIMPORT R2 5 [0xCBD666E1]
       16 [-]: LOADN R3 0   
       17 [-]: CALL R2 1 0  
       18 [-]: JUMPBACK L2  
-L 3:  19 [-]: GETIMPORT R3 7 [nil]
+L 3:  19 [-]: GETIMPORT R3 7 [0x89326C93]
       20 [-]: NAMECALL R3 R3 K10 [0x78298275]
       21 [-]: CALL R3 1 -1 
       22 [-]: FASTCALL 62 L4
-      23 [-]: GETIMPORT R2 3 [nil]
+      23 [-]: GETIMPORT R2 3 [0x7B998233]
       24 [-]: CALL R2 -1 1 
 L 4:  25 [-]: JUMPIFNOT R2 L5
-      26 [-]: GETIMPORT R2 5 [nil]
+      26 [-]: GETIMPORT R2 5 [0xCBD666E1]
       27 [-]: LOADN R3 0   
       28 [-]: CALL R2 1 0  
       29 [-]: JUMPBACK L3  
-L 5:  30 [-]: GETIMPORT R2 7 [nil]
+L 5:  30 [-]: GETIMPORT R2 7 [0x89326C93]
       31 [-]: GETUPVAL R4 0
       32 [-]: NAMECALL R2 R2 K11 [0xFB669000]
       33 [-]: CALL R2 2 1  
       34 [-]: FASTCALL1 62 R2 L6
       35 [-]: MOVE R4 R2   
-      36 [-]: GETIMPORT R3 3 [nil]
+      36 [-]: GETIMPORT R3 3 [0x7B998233]
       37 [-]: CALL R3 1 1  
 L 6:  38 [-]: JUMPIF R3 L7 
       39 [-]: LENGTH R3 R2 
       40 [-]: LOADN R4 0   
       41 [-]: JUMPIFNOTLT R4 R3 L7
-      42 [-]: GETIMPORT R3 13 [nil]
+      42 [-]: GETIMPORT R3 13 [0x3D106989]
       43 [-]: LOADK R4 K14 ["Corpus Greed: Exiting, token already dropped."]
       44 [-]: CALL R3 1 0  
       45 [-]: RETURN R0 0  
-L 7:  46 [-]: GETIMPORT R3 7 [nil]
+L 7:  46 [-]: GETIMPORT R3 7 [0x89326C93]
       47 [-]: GETUPVAL R5 1
       48 [-]: NAMECALL R3 R3 K11 [0xFB669000]
       49 [-]: CALL R3 2 1  
       50 [-]: FASTCALL1 62 R3 L8
       51 [-]: MOVE R5 R3   
-      52 [-]: GETIMPORT R4 3 [nil]
+      52 [-]: GETIMPORT R4 3 [0x7B998233]
       53 [-]: CALL R4 1 1  
 L 8:  54 [-]: JUMPIF R4 L9 
-      55 [-]: GETIMPORT R4 13 [nil]
+      55 [-]: GETIMPORT R4 13 [0x3D106989]
       56 [-]: LOADK R5 K15 ["Corpus Greed: Exiting, Treasurer already active."]
       57 [-]: CALL R4 1 0  
       58 [-]: RETURN R0 0  
-L 9:  59 [-]: GETIMPORT R4 1 [nil]
+L 9:  59 [-]: GETIMPORT R4 1 [0xBE190284]
       60 [-]: NAMECALL R4 R4 K16 [0xEF893AEC]
       61 [-]: CALL R4 1 1  
       62 [-]: FASTCALL1 62 R4 L10
       63 [-]: MOVE R6 R4   
-      64 [-]: GETIMPORT R5 3 [nil]
+      64 [-]: GETIMPORT R5 3 [0x7B998233]
       65 [-]: CALL R5 1 1  
 L10:  66 [-]: JUMPIF R5 L12
       67 [-]: GETTABLEKS R6 R4 K17 ["levelOverride"]
       68 [-]: FASTCALL1 62 R6 L11
-      69 [-]: GETIMPORT R5 3 [nil]
+      69 [-]: GETIMPORT R5 3 [0x7B998233]
       70 [-]: CALL R5 1 1  
 L11:  71 [-]: JUMPIFNOT R5 L13
-L12:  72 [-]: GETIMPORT R5 13 [nil]
+L12:  72 [-]: GETIMPORT R5 13 [0x3D106989]
       73 [-]: LOADK R6 K18 ["Corpus Greed: Exiting, proc level loaded from editor."]
       74 [-]: CALL R5 1 0  
       75 [-]: RETURN R0 0  
-L13:  76 [-]: GETIMPORT R5 21 [nil]
+L13:  76 [-]: GETIMPORT R5 21 ["faction"]
       77 [-]: GETUPVAL R6 2
       78 [-]: JUMPIFEQ R5 R6 L14
-      79 [-]: GETIMPORT R5 13 [nil]
+      79 [-]: GETIMPORT R5 13 [0x3D106989]
       80 [-]: LOADK R6 K22 ["Corpus Greed: Exiting and disabling shrines, main faction isn't Corpus."]
       81 [-]: CALL R5 1 0  
       82 [-]: GETUPVAL R5 3
@@ -323,29 +323,29 @@ L13:  76 [-]: GETIMPORT R5 21 [nil]
       84 [-]: RETURN R0 0  
 L14:  85 [-]: GETTABLEKS R6 R4 K23 ["invasionId"]
       86 [-]: FASTCALL1 62 R6 L15
-      87 [-]: GETIMPORT R5 3 [nil]
+      87 [-]: GETIMPORT R5 3 [0x7B998233]
       88 [-]: CALL R5 1 1  
 L15:  89 [-]: JUMPIF R5 L16
       90 [-]: GETTABLEKS R5 R4 K23 ["invasionId"]
       91 [-]: JUMPXEQKS R5 K24 L16 [""]
-      92 [-]: GETIMPORT R5 13 [nil]
+      92 [-]: GETIMPORT R5 13 [0x3D106989]
       93 [-]: LOADK R6 K25 ["Corpus Greed: Exiting and disabling shrines since this is an invasion mission."]
       94 [-]: CALL R5 1 0  
       95 [-]: GETUPVAL R5 3
       96 [-]: CALL R5 0 0  
       97 [-]: RETURN R0 0  
-L16:  98 [-]: GETIMPORT R5 7 [nil]
-      99 [-]: GETIMPORT R7 27 [nil]
+L16:  98 [-]: GETIMPORT R5 7 [0x89326C93]
+      99 [-]: GETIMPORT R7 27 [0x0469F296]
      100 [-]: LOADK R8 K28 ["PurgatorySpawn"]
      101 [-]: CALL R7 1 -1 
      102 [-]: NAMECALL R5 R5 K29 [0x46A0EBF5]
      103 [-]: CALL R5 -1 1 
      104 [-]: FASTCALL1 62 R5 L17
      105 [-]: MOVE R7 R5   
-     106 [-]: GETIMPORT R6 3 [nil]
+     106 [-]: GETIMPORT R6 3 [0x7B998233]
      107 [-]: CALL R6 1 1  
 L17: 108 [-]: JUMPIFNOT R6 L18
-     109 [-]: GETIMPORT R6 13 [nil]
+     109 [-]: GETIMPORT R6 13 [0x3D106989]
      110 [-]: LOADK R7 K30 ["Corpus Greed: Disabling shrines, no purgatory tile present in this level."]
      111 [-]: CALL R6 1 0  
      112 [-]: GETUPVAL R6 3
@@ -353,20 +353,20 @@ L17: 108 [-]: JUMPIFNOT R6 L18
 L18: 114 [-]: GETTABLEKS R6 R4 K17 ["levelOverride"]
      115 [-]: NAMECALL R6 R6 K31 [0xED4E0128]
      116 [-]: CALL R6 1 1  
-     117 [-]: GETIMPORT R7 34 [nil]
-     118 [-]: GETIMPORT R8 36 [nil]
+     117 [-]: GETIMPORT R7 34 [0xA5C556B9]
+     118 [-]: GETIMPORT R8 36 [0x64FB1586]
      119 [-]: MOVE R9 R6   
      120 [-]: CALL R8 1 1  
      121 [-]: LOADK R9 K37 ["Protea"]
      122 [-]: CALL R7 2 1  
      123 [-]: JUMPIFNOT R7 L19
-     124 [-]: GETIMPORT R7 13 [nil]
+     124 [-]: GETIMPORT R7 13 [0x3D106989]
      125 [-]: LOADK R8 K38 ["Corpus Greed: Exiting, protea quest active."]
      126 [-]: CALL R7 1 0  
      127 [-]: RETURN R0 0  
-L19: 128 [-]: GETIMPORT R7 40 [nil]
+L19: 128 [-]: GETIMPORT R7 40 ["gQuestMission"]
      129 [-]: JUMPIFNOT R7 L20
-     130 [-]: GETIMPORT R7 13 [nil]
+     130 [-]: GETIMPORT R7 13 [0x3D106989]
      131 [-]: LOADK R8 K41 ["Corpus Greed: Exiting and disabling shrines, quest mission active."]
      132 [-]: CALL R7 1 0  
      133 [-]: GETUPVAL R7 3
@@ -380,25 +380,25 @@ L20: 136 [-]: NAMECALL R7 R1 K42 [0x5C390F04]
      141 [-]: LOADB R9 0 +1
 L21: 142 [-]: LOADB R9 1   
 L22: 143 [-]: JUMPIFNOT R9 L25
-     144 [-]: GETIMPORT R10 7 [nil]
+     144 [-]: GETIMPORT R10 7 [0x89326C93]
      145 [-]: GETUPVAL R12 4
      146 [-]: NAMECALL R10 R10 K43 [0xC7FCADA9]
      147 [-]: CALL R10 2 1 
      148 [-]: MOVE R8 R10  
      149 [-]: FASTCALL1 62 R8 L23
      150 [-]: MOVE R11 R8  
-     151 [-]: GETIMPORT R10 3 [nil]
+     151 [-]: GETIMPORT R10 3 [0x7B998233]
      152 [-]: CALL R10 1 1 
 L23: 153 [-]: JUMPIF R10 L24
      154 [-]: LENGTH R10 R8
      155 [-]: JUMPXEQKN R10 K9 L25 NOT [0]
-L24: 156 [-]: GETIMPORT R10 13 [nil]
+L24: 156 [-]: GETIMPORT R10 13 [0x3D106989]
      157 [-]: LOADK R11 K44 ["Corpus Greed: No shrines found!"]
      158 [-]: CALL R10 1 0 
      159 [-]: RETURN R0 0  
 L25: 160 [-]: LOADN R11 2  
      161 [-]: JUMPIFEQ R7 R11 L26
-     162 [-]: GETIMPORT R11 47 [nil]
+     162 [-]: GETIMPORT R11 47 ["MT_DEFEND"]
      163 [-]: JUMPIFEQ R7 R11 L26
      164 [-]: LOADN R11 33 
      165 [-]: JUMPIFEQ R7 R11 L26
@@ -410,22 +410,22 @@ L26: 168 [-]: LOADB R10 1
 L27: 170 [-]: LOADB R10 0  
 L28: 171 [-]: LOADNIL R11  
      172 [-]: JUMPIFNOT R10 L29
-     173 [-]: GETIMPORT R12 13 [nil]
+     173 [-]: GETIMPORT R12 13 [0x3D106989]
      174 [-]: LOADK R13 K48 ["Corpus Greed: Enless mission rules apply"]
      175 [-]: CALL R12 1 0 
-     176 [-]: GETIMPORT R12 50 [nil]
-     177 [-]: GETIMPORT R13 52 [nil]
-     178 [-]: GETIMPORT R14 54 [nil]
+     176 [-]: GETIMPORT R12 50 [0xC163F229]
+     177 [-]: GETIMPORT R13 52 [0x5597C2AA]
+     178 [-]: GETIMPORT R14 54 [0x5FAB5A20]
      179 [-]: CALL R12 2 1 
      180 [-]: MOVE R11 R12 
      181 [-]: JUMP L30
     
-L29: 182 [-]: GETIMPORT R12 50 [nil]
-     183 [-]: GETIMPORT R13 56 [nil]
-     184 [-]: GETIMPORT R14 58 [nil]
+L29: 182 [-]: GETIMPORT R12 50 [0xC163F229]
+     183 [-]: GETIMPORT R13 56 [0x16E7FC61]
+     184 [-]: GETIMPORT R14 58 [0x08FB6E0F]
      185 [-]: CALL R12 2 1 
      186 [-]: MOVE R11 R12 
-L30: 187 [-]: GETIMPORT R12 7 [nil]
+L30: 187 [-]: GETIMPORT R12 7 [0x89326C93]
      188 [-]: NAMECALL R12 R12 K59 [0x29EF273D]
      189 [-]: CALL R12 1 1 
      190 [-]: NAMECALL R12 R12 K60 [0x66905CB0]
@@ -445,7 +445,7 @@ L30: 187 [-]: GETIMPORT R12 7 [nil]
      204 [-]: GETUPVAL R13 6
      205 [-]: LOADN R14 1000
      206 [-]: JUMPIFNOTLE R14 R13 L31
-     207 [-]: GETIMPORT R13 13 [nil]
+     207 [-]: GETIMPORT R13 13 [0x3D106989]
      208 [-]: LOADK R14 K65 ["Corpus Greed: Exiting, Treasurer event has already concluded"]
      209 [-]: CALL R13 1 0 
      210 [-]: RETURN R0 0  
@@ -454,27 +454,27 @@ L31: 211 [-]: GETUPVAL R15 9
      213 [-]: NAMECALL R13 R1 K64 [0x0EB34C69]
      214 [-]: CALL R13 3 1 
      215 [-]: SETUPVAL R13 8
-     216 [-]: GETIMPORT R13 13 [nil]
+     216 [-]: GETIMPORT R13 13 [0x3D106989]
      217 [-]: LOADK R14 K66 ["Corpus Greed: Starting..."]
      218 [-]: CALL R13 1 0 
 L32: 219 [-]: GETUPVAL R13 6
      220 [-]: JUMPIFLE R13 R11 L33
      221 [-]: GETUPVAL R13 8
-     222 [-]: GETIMPORT R14 68 [nil]
+     222 [-]: GETIMPORT R14 68 [0xF0CB315A]
      223 [-]: JUMPIFNOTLE R13 R14 L35
-L33: 224 [-]: GETIMPORT R13 5 [nil]
+L33: 224 [-]: GETIMPORT R13 5 [0xCBD666E1]
      225 [-]: LOADK R14 K69 [0.5]
      226 [-]: CALL R13 1 0 
      227 [-]: GETUPVAL R15 6
      228 [-]: ADDK R14 R15 K69 [0.5]
-     229 [-]: GETIMPORT R15 71 [nil]
+     229 [-]: GETIMPORT R15 71 [0x67652851]
      230 [-]: CALL R15 0 1 
      231 [-]: ADD R13 R14 R15
      232 [-]: SETUPVAL R13 6
      233 [-]: GETUPVAL R15 7
      234 [-]: GETUPVAL R17 6
      235 [-]: FASTCALL1 12 R17 L34
-     236 [-]: GETIMPORT R16 74 [nil]
+     236 [-]: GETIMPORT R16 74 [0x55F27C30]
      237 [-]: CALL R16 1 -1
 L34: 238 [-]: NAMECALL R13 R1 K75 [0x751F061D]
      239 [-]: CALL R13 -1 0
@@ -485,11 +485,11 @@ L35: 241 [-]: NAMECALL R13 R0 K76 [0x6189CB44]
      244 [-]: LOADNIL R15  
      245 [-]: LOADB R16 0  
      246 [-]: LOADNIL R17  
-     247 [-]: GETIMPORT R18 78 [nil]
+     247 [-]: GETIMPORT R18 78 [0x990F0A25]
 L36: 248 [-]: JUMPIF R16 L61
      249 [-]: JUMPIFNOT R9 L37
      250 [-]: GETUPVAL R19 5
-     251 [-]: GETIMPORT R21 27 [nil]
+     251 [-]: GETIMPORT R21 27 [0x0469F296]
      252 [-]: CALL R21 0 1 
      253 [-]: LOADB R22 0  
      254 [-]: LOADB R23 0  
@@ -514,25 +514,25 @@ L38: 267 [-]: GETUPVAL R19 5
      272 [-]: JUMP L40
     
 L39: 273 [-]: ADDK R20 R18 K82 [1]
-     274 [-]: GETIMPORT R21 71 [nil]
+     274 [-]: GETIMPORT R21 71 [0x67652851]
      275 [-]: CALL R21 0 1 
      276 [-]: ADD R18 R20 R21
 L40: 277 [-]: FASTCALL1 62 R15 L41
      278 [-]: MOVE R21 R15 
-     279 [-]: GETIMPORT R20 3 [nil]
+     279 [-]: GETIMPORT R20 3 [0x7B998233]
      280 [-]: CALL R20 1 1 
 L41: 281 [-]: JUMPIFNOT R20 L59
      282 [-]: FASTCALL1 62 R17 L42
      283 [-]: MOVE R21 R17 
-     284 [-]: GETIMPORT R20 3 [nil]
+     284 [-]: GETIMPORT R20 3 [0x7B998233]
      285 [-]: CALL R20 1 1 
 L42: 286 [-]: JUMPIF R20 L59
      287 [-]: JUMPIF R19 L59
-     288 [-]: GETIMPORT R20 78 [nil]
+     288 [-]: GETIMPORT R20 78 [0x990F0A25]
      289 [-]: JUMPIFNOTLE R20 R18 L59
      290 [-]: FASTCALL1 62 R15 L43
      291 [-]: MOVE R21 R15 
-     292 [-]: GETIMPORT R20 3 [nil]
+     292 [-]: GETIMPORT R20 3 [0x7B998233]
      293 [-]: CALL R20 1 1 
 L43: 294 [-]: JUMPIFNOT R20 L44
      295 [-]: GETUPVAL R20 5
@@ -553,7 +553,7 @@ L43: 294 [-]: JUMPIFNOT R20 L44
      310 [-]: MOVE R15 R20 
 L44: 311 [-]: FASTCALL1 62 R15 L45
      312 [-]: MOVE R21 R15 
-     313 [-]: GETIMPORT R20 3 [nil]
+     313 [-]: GETIMPORT R20 3 [0x7B998233]
      314 [-]: CALL R20 1 1 
 L45: 315 [-]: JUMPIF R20 L58
      316 [-]: GETUPVAL R20 5
@@ -576,30 +576,30 @@ L45: 315 [-]: JUMPIF R20 L58
      333 [-]: FORNPREP R20 L49
 L46: 334 [-]: GETTABLE R24 R8 R22
      335 [-]: FASTCALL1 62 R24 L47
-     336 [-]: GETIMPORT R23 3 [nil]
+     336 [-]: GETIMPORT R23 3 [0x7B998233]
      337 [-]: CALL R23 1 1 
 L47: 338 [-]: JUMPIFNOT R23 L48
-     339 [-]: GETIMPORT R23 92 [nil]
+     339 [-]: GETIMPORT R23 92 [0x9C1F3B5A]
      340 [-]: MOVE R24 R8  
      341 [-]: MOVE R25 R22 
      342 [-]: CALL R23 2 0 
 L48: 343 [-]: FORNLOOP R20 L46
 L49: 344 [-]: FASTCALL1 62 R8 L50
      345 [-]: MOVE R21 R8  
-     346 [-]: GETIMPORT R20 3 [nil]
+     346 [-]: GETIMPORT R20 3 [0x7B998233]
      347 [-]: CALL R20 1 1 
 L50: 348 [-]: JUMPIF R20 L56
      349 [-]: LENGTH R20 R8
      350 [-]: LOADN R21 0  
      351 [-]: JUMPIFNOTLT R21 R20 L56
-     352 [-]: GETIMPORT R20 13 [nil]
+     352 [-]: GETIMPORT R20 13 [0x3D106989]
      353 [-]: LOADK R21 K93 ["Corpus Greed: Defense setup"]
      354 [-]: CALL R20 1 0 
      355 [-]: NAMECALL R20 R15 K94 [0xBB610E5B]
      356 [-]: CALL R20 1 1 
      357 [-]: FASTCALL1 62 R20 L51
      358 [-]: MOVE R22 R20 
-     359 [-]: GETIMPORT R21 3 [nil]
+     359 [-]: GETIMPORT R21 3 [0x7B998233]
      360 [-]: CALL R21 1 1 
 L51: 361 [-]: JUMPIF R21 L55
      362 [-]: NAMECALL R21 R20 K95 [0xD1586535]
@@ -629,32 +629,32 @@ L54: 383 [-]: NAMECALL R27 R24 K95 [0xD1586535]
      386 [-]: CALL R25 -1 0
      387 [-]: JUMP L57
     
-L55: 388 [-]: GETIMPORT R21 13 [nil]
+L55: 388 [-]: GETIMPORT R21 13 [0x3D106989]
      389 [-]: LOADK R22 K98 ["Corpus Greed: Avatar is nil!"]
      390 [-]: CALL R21 1 0 
      391 [-]: JUMP L57
     
-L56: 392 [-]: GETIMPORT R20 13 [nil]
+L56: 392 [-]: GETIMPORT R20 13 [0x3D106989]
      393 [-]: LOADK R21 K44 ["Corpus Greed: No shrines found!"]
      394 [-]: CALL R20 1 0 
 L57: 395 [-]: LOADB R16 1  
-     396 [-]: GETIMPORT R22 100 [nil]
+     396 [-]: GETIMPORT R22 100 [0x280EF87D]
      397 [-]: NAMECALL R20 R1 K101 [0xC19D05D7]
      398 [-]: CALL R20 2 0 
-     399 [-]: GETIMPORT R20 13 [nil]
+     399 [-]: GETIMPORT R20 13 [0x3D106989]
      400 [-]: LOADK R21 K102 ["Manager spawned"]
      401 [-]: CALL R20 1 0 
      402 [-]: JUMP L60
     
-L58: 403 [-]: GETIMPORT R20 5 [nil]
+L58: 403 [-]: GETIMPORT R20 5 [0xCBD666E1]
      404 [-]: LOADN R21 1  
      405 [-]: CALL R20 1 0 
      406 [-]: JUMP L60
     
-L59: 407 [-]: GETIMPORT R20 13 [nil]
+L59: 407 [-]: GETIMPORT R20 13 [0x3D106989]
      408 [-]: LOADK R21 K103 ["Aristocrat Treasurer: No valid spawnpoint, AI cap reached or VIP/after VIP timer is active."]
      409 [-]: CALL R20 1 0 
-     410 [-]: GETIMPORT R20 5 [nil]
+     410 [-]: GETIMPORT R20 5 [0xCBD666E1]
      411 [-]: LOADN R21 1  
      412 [-]: CALL R20 1 0 
 L60: 413 [-]: JUMPBACK L36 
@@ -662,9 +662,9 @@ L61: 414 [-]: GETUPVAL R21 7
      415 [-]: LOADN R22 1000
      416 [-]: NAMECALL R19 R1 K75 [0x751F061D]
      417 [-]: CALL R19 3 0 
-     418 [-]: GETIMPORT R19 13 [nil]
+     418 [-]: GETIMPORT R19 13 [0x3D106989]
      419 [-]: LOADK R21 K104 ["Corpus Greed: Aristocrat Treasurer Spawned at "]
-     420 [-]: GETIMPORT R22 36 [nil]
+     420 [-]: GETIMPORT R22 36 [0x64FB1586]
      421 [-]: NAMECALL R23 R15 K94 [0xBB610E5B]
      422 [-]: CALL R23 1 1 
      423 [-]: NAMECALL R23 R23 K95 [0xD1586535]
@@ -672,7 +672,7 @@ L61: 414 [-]: GETUPVAL R21 7
      425 [-]: CALL R22 -1 1
      426 [-]: CONCAT R20 R21 R22
      427 [-]: CALL R19 1 0 
-     428 [-]: GETIMPORT R19 13 [nil]
+     428 [-]: GETIMPORT R19 13 [0x3D106989]
      429 [-]: LOADK R20 K105 ["Corpus Greed: Ended"]
      430 [-]: CALL R19 1 0 
      431 [-]: RETURN R0 0  

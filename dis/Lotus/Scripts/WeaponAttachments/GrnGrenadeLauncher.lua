@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  1
 
-            1 [-]: DUPCLOSURE R0 K0 []
+       1 [-]: DUPCLOSURE R0 K0 []
        2 [-]: SETGLOBAL R0 K1 ["GetLocValues"]
        3 [-]: DUPCLOSURE R0 K2 []
        4 [-]: SETGLOBAL R0 K3 ["SmallEnableDelay"]
@@ -26,22 +26,22 @@
 ; Max Stack Size:  9
 
        0 [-]: DUPTABLE R1 2
-       1 [-]: GETIMPORT R5 5 [nil]
-       2 [-]: GETIMPORT R8 5 [nil]
+       1 [-]: GETIMPORT R5 5 [0x7F49B323]
+       2 [-]: GETIMPORT R8 5 [0x7F49B323]
        3 [-]: LENGTH R7 R8 
        4 [-]: FASTCALL2 19 R7 R0 L0
        5 [-]: MOVE R8 R0   
-       6 [-]: GETIMPORT R6 8 [nil]
+       6 [-]: GETIMPORT R6 8 [0xAC1B386A]
        7 [-]: CALL R6 2 1  
 L 0:   8 [-]: GETTABLE R4 R5 R6
        9 [-]: MULK R3 R4 K3 [100]
       10 [-]: FASTCALL1 12 R3 L1
-      11 [-]: GETIMPORT R2 10 [nil]
+      11 [-]: GETIMPORT R2 10 [0x55F27C30]
       12 [-]: CALL R2 1 1  
 L 1:  13 [-]: SETTABLEKS R2 R1 K0 ["VAL"]
-      14 [-]: GETIMPORT R2 12 [nil]
+      14 [-]: GETIMPORT R2 12 [0x74B63FB1]
       15 [-]: SETTABLEKS R2 R1 K1 ["DURATION"]
-      16 [-]: GETIMPORT R2 15 [nil]
+      16 [-]: GETIMPORT R2 15 [0xB139D7BC]
       17 [-]: MOVE R3 R1   
       18 [-]: CALL R2 1 -1 
       19 [-]: RETURN R2 -1 
@@ -54,7 +54,7 @@ L 1:  13 [-]: SETTABLEKS R2 R1 K0 ["VAL"]
 ; Is_vararg:       0
 ; Max Stack Size:  3
 
-       0 [-]: GETIMPORT R1 1 [nil]
+       0 [-]: GETIMPORT R1 1 [0xCBD666E1]
        1 [-]: LOADK R2 K2 [0.10000000000000001]
        2 [-]: CALL R1 1 0  
        3 [-]: NAMECALL R1 R0 K3 [0x383D2E7D]
@@ -75,7 +75,7 @@ L 1:  13 [-]: SETTABLEKS R2 R1 K0 ["VAL"]
        3 [-]: CALL R2 1 1  
        4 [-]: FASTCALL1 62 R2 L0
        5 [-]: MOVE R4 R2   
-       6 [-]: GETIMPORT R3 3 [nil]
+       6 [-]: GETIMPORT R3 3 [0x7B998233]
        7 [-]: CALL R3 1 1  
 L 0:   8 [-]: JUMPIFNOT R3 L1
        9 [-]: RETURN R0 0  
@@ -84,7 +84,7 @@ L 1:  10 [-]: LOADN R5 1
       12 [-]: LOADN R4 1   
       13 [-]: FORNPREP R3 L6
 L 2:  14 [-]: GETTABLE R6 R1 R5
-      15 [-]: GETIMPORT R9 5 [nil]
+      15 [-]: GETIMPORT R9 5 [0x1021CDF7]
       16 [-]: NAMECALL R7 R6 K6 [0xF2DEAF69]
       17 [-]: CALL R7 2 1  
       18 [-]: JUMPIFNOT R7 L4
@@ -118,21 +118,21 @@ L 6:  36 [-]: RETURN R0 0
 
        0 [-]: NAMECALL R1 R0 K0 [0x388577D5]
        1 [-]: CALL R1 1 1  
-       2 [-]: GETIMPORT R2 2 [nil]
-       3 [-]: GETIMPORT R4 5 [nil]
+       2 [-]: GETIMPORT R2 2 [0x74B63FB1]
+       3 [-]: GETIMPORT R4 5 ["tonkorNightwaveUpgrade"]
        4 [-]: GETTABLE R3 R4 R1
        5 [-]: LOADB R4 0   
        6 [-]: SETTABLEKS R4 R3 K6 ["interrupt"]
 L 0:   7 [-]: LOADN R3 0   
        8 [-]: JUMPIFNOTLT R3 R2 L1
-       9 [-]: GETIMPORT R5 5 [nil]
+       9 [-]: GETIMPORT R5 5 ["tonkorNightwaveUpgrade"]
       10 [-]: GETTABLE R4 R5 R1
       11 [-]: GETTABLEKS R3 R4 K6 ["interrupt"]
       12 [-]: JUMPIF R3 L1 
-      13 [-]: GETIMPORT R3 8 [nil]
+      13 [-]: GETIMPORT R3 8 [0xCBD666E1]
       14 [-]: LOADN R4 0   
       15 [-]: CALL R3 1 0  
-      16 [-]: GETIMPORT R3 10 [nil]
+      16 [-]: GETIMPORT R3 10 [0x67652851]
       17 [-]: CALL R3 0 1  
       18 [-]: SUB R2 R2 R3 
       19 [-]: JUMPBACK L0  
@@ -140,7 +140,7 @@ L 1:  20 [-]: NAMECALL R3 R0 K11 [0xDE321E6F]
       21 [-]: CALL R3 1 1  
       22 [-]: LOADN R5 346 
       23 [-]: LOADN R6 3   
-      24 [-]: GETIMPORT R9 5 [nil]
+      24 [-]: GETIMPORT R9 5 ["tonkorNightwaveUpgrade"]
       25 [-]: GETTABLE R8 R9 R1
       26 [-]: GETTABLEKS R7 R8 K12 ["upgVal"]
       27 [-]: NAMECALL R3 R3 K13 [0x12DD9DA2]
@@ -155,7 +155,7 @@ L 1:  20 [-]: NAMECALL R3 R0 K11 [0xDE321E6F]
 ; Is_vararg:       0
 ; Max Stack Size:  14
 
-       0 [-]: GETIMPORT R5 1 [nil]
+       0 [-]: GETIMPORT R5 1 [0x89326C93]
        1 [-]: NAMECALL R5 R5 K2 [0x18D05D30]
        2 [-]: CALL R5 1 1  
        3 [-]: JUMPIF R5 L0 
@@ -167,43 +167,43 @@ L 0:   5 [-]: NAMECALL R5 R0 K3 [0xDE321E6F]
        9 [-]: CALL R5 2 1  
       10 [-]: JUMPIFEQ R1 R5 L1
       11 [-]: RETURN R0 0  
-L 1:  12 [-]: GETIMPORT R7 7 [nil]
+L 1:  12 [-]: GETIMPORT R7 7 ["tonkorNightwaveUpgrade"]
       13 [-]: FASTCALL1 62 R7 L2
-      14 [-]: GETIMPORT R6 9 [nil]
+      14 [-]: GETIMPORT R6 9 [0x7B998233]
       15 [-]: CALL R6 1 1  
 L 2:  16 [-]: JUMPIFNOT R6 L3
-      17 [-]: GETIMPORT R6 10 [nil]
+      17 [-]: GETIMPORT R6 10 ["_T"]
       18 [-]: NEWTABLE R7 0 0
       19 [-]: SETTABLEKS R7 R6 K6 ["tonkorNightwaveUpgrade"]
 L 3:  20 [-]: NAMECALL R6 R0 K11 [0x388577D5]
       21 [-]: CALL R6 1 1  
-      22 [-]: GETIMPORT R9 7 [nil]
+      22 [-]: GETIMPORT R9 7 ["tonkorNightwaveUpgrade"]
       23 [-]: GETTABLE R8 R9 R6
       24 [-]: FASTCALL1 62 R8 L4
-      25 [-]: GETIMPORT R7 9 [nil]
+      25 [-]: GETIMPORT R7 9 [0x7B998233]
       26 [-]: CALL R7 1 1  
 L 4:  27 [-]: JUMPIFNOT R7 L5
-      28 [-]: GETIMPORT R7 7 [nil]
+      28 [-]: GETIMPORT R7 7 ["tonkorNightwaveUpgrade"]
       29 [-]: NEWTABLE R8 0 0
       30 [-]: SETTABLE R8 R7 R6
       31 [-]: JUMP L6
      
-L 5:  32 [-]: GETIMPORT R8 7 [nil]
+L 5:  32 [-]: GETIMPORT R8 7 ["tonkorNightwaveUpgrade"]
       33 [-]: GETTABLE R7 R8 R6
       34 [-]: LOADB R8 1   
       35 [-]: SETTABLEKS R8 R7 K12 ["interrupt"]
-      36 [-]: GETIMPORT R7 14 [nil]
+      36 [-]: GETIMPORT R7 14 [0xCBD666E1]
       37 [-]: LOADN R8 0   
       38 [-]: CALL R7 1 0  
-L 6:  39 [-]: GETIMPORT R8 16 [nil]
-      40 [-]: GETIMPORT R11 16 [nil]
+L 6:  39 [-]: GETIMPORT R8 16 [0x7F49B323]
+      40 [-]: GETIMPORT R11 16 [0x7F49B323]
       41 [-]: LENGTH R10 R11
       42 [-]: FASTCALL2 19 R10 R2 L7
       43 [-]: MOVE R11 R2  
-      44 [-]: GETIMPORT R9 19 [nil]
+      44 [-]: GETIMPORT R9 19 [0xAC1B386A]
       45 [-]: CALL R9 2 1  
 L 7:  46 [-]: GETTABLE R7 R8 R9
-      47 [-]: GETIMPORT R9 7 [nil]
+      47 [-]: GETIMPORT R9 7 ["tonkorNightwaveUpgrade"]
       48 [-]: GETTABLE R8 R9 R6
       49 [-]: SETTABLEKS R7 R8 K20 ["upgVal"]
       50 [-]: NAMECALL R8 R0 K3 [0xDE321E6F]
@@ -213,7 +213,7 @@ L 7:  46 [-]: GETTABLE R7 R8 R9
       54 [-]: MOVE R12 R7  
       55 [-]: NAMECALL R8 R8 K21 [0x5E6704FF]
       56 [-]: CALL R8 4 0  
-      57 [-]: GETIMPORT R8 24 [nil]
+      57 [-]: GETIMPORT R8 24 [0x608BC054]
       58 [-]: CALL R8 0 1  
       59 [-]: SETTABLEKS R0 R8 K25 ["instigator"]
       60 [-]: NEWTABLE R9 0 1
@@ -225,7 +225,7 @@ L 7:  46 [-]: GETTABLE R7 R8 R9
       66 [-]: NAMECALL R9 R4 K28 [0xCDE10C4A]
       67 [-]: CALL R9 1 1  
       68 [-]: SETTABLEKS R9 R8 K29 ["abilityType"]
-      69 [-]: GETIMPORT R9 31 [nil]
+      69 [-]: GETIMPORT R9 31 [0x74B63FB1]
       70 [-]: SETTABLEKS R9 R8 K32 ["buffData"]
       71 [-]: MULK R9 R7 K33 [100]
       72 [-]: SETTABLEKS R9 R8 K34 ["buffDataExtra"]
@@ -234,7 +234,7 @@ L 7:  46 [-]: GETTABLE R7 R8 R9
       75 [-]: LOADB R13 1  
       76 [-]: NAMECALL R9 R0 K35 [0x37E45FB5]
       77 [-]: CALL R9 4 0  
-      78 [-]: GETIMPORT R11 37 [nil]
+      78 [-]: GETIMPORT R11 37 [0x0469F296]
       79 [-]: LOADK R12 K38 ["NightwaveUpgrade"]
       80 [-]: CALL R11 1 1 
       81 [-]: LOADB R12 0  

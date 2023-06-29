@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  3
 
-            1 [-]: DUPCLOSURE R0 K0 []
+       1 [-]: DUPCLOSURE R0 K0 []
        2 [-]: SETGLOBAL R0 K1 ["EvaluateUseKey"]
        3 [-]: DUPCLOSURE R0 K2 []
        4 [-]: DUPCLOSURE R1 K3 []
@@ -40,22 +40,22 @@
 
        0 [-]: FASTCALL1 62 R0 L0
        1 [-]: MOVE R3 R0   
-       2 [-]: GETIMPORT R2 1 [nil]
+       2 [-]: GETIMPORT R2 1 [0x7B998233]
        3 [-]: CALL R2 1 1  
 L 0:   4 [-]: JUMPIF R2 L2 
        5 [-]: FASTCALL1 62 R1 L1
        6 [-]: MOVE R3 R1   
-       7 [-]: GETIMPORT R2 1 [nil]
+       7 [-]: GETIMPORT R2 1 [0x7B998233]
        8 [-]: CALL R2 1 1  
 L 1:   9 [-]: JUMPIFNOT R2 L3
 L 2:  10 [-]: RETURN R0 0  
-L 3:  11 [-]: GETIMPORT R3 3 [nil]
+L 3:  11 [-]: GETIMPORT R3 3 [0x35976473]
       12 [-]: FASTCALL1 62 R3 L4
-      13 [-]: GETIMPORT R2 1 [nil]
+      13 [-]: GETIMPORT R2 1 [0x7B998233]
       14 [-]: CALL R2 1 1  
 L 4:  15 [-]: JUMPIF R2 L5 
-      16 [-]: GETIMPORT R4 3 [nil]
-      17 [-]: GETIMPORT R5 5 [nil]
+      16 [-]: GETIMPORT R4 3 [0x35976473]
+      17 [-]: GETIMPORT R5 5 ["EMPTY_SYMBOL"]
       18 [-]: NAMECALL R2 R0 K6 [0x47901F07]
       19 [-]: CALL R2 3 0  
 L 5:  20 [-]: RETURN R0 0  
@@ -70,22 +70,22 @@ L 5:  20 [-]: RETURN R0 0
 
        0 [-]: FASTCALL1 62 R0 L0
        1 [-]: MOVE R3 R0   
-       2 [-]: GETIMPORT R2 1 [nil]
+       2 [-]: GETIMPORT R2 1 [0x7B998233]
        3 [-]: CALL R2 1 1  
 L 0:   4 [-]: JUMPIF R2 L4 
        5 [-]: FASTCALL1 62 R1 L1
        6 [-]: MOVE R3 R1   
-       7 [-]: GETIMPORT R2 1 [nil]
+       7 [-]: GETIMPORT R2 1 [0x7B998233]
        8 [-]: CALL R2 1 1  
 L 1:   9 [-]: JUMPIFNOT R2 L2
       10 [-]: RETURN R0 0  
-L 2:  11 [-]: GETIMPORT R3 3 [nil]
+L 2:  11 [-]: GETIMPORT R3 3 [0x35976473]
       12 [-]: FASTCALL1 62 R3 L3
-      13 [-]: GETIMPORT R2 1 [nil]
+      13 [-]: GETIMPORT R2 1 [0x7B998233]
       14 [-]: CALL R2 1 1  
 L 3:  15 [-]: JUMPIF R2 L4 
-      16 [-]: GETIMPORT R4 3 [nil]
-      17 [-]: GETIMPORT R5 5 [nil]
+      16 [-]: GETIMPORT R4 3 [0x35976473]
+      17 [-]: GETIMPORT R5 5 ["EMPTY_SYMBOL"]
       18 [-]: NAMECALL R2 R0 K6 [0x47901F07]
       19 [-]: CALL R2 3 0  
 L 4:  20 [-]: RETURN R0 0  
@@ -100,22 +100,22 @@ L 4:  20 [-]: RETURN R0 0
 
        0 [-]: FASTCALL1 62 R0 L0
        1 [-]: MOVE R3 R0   
-       2 [-]: GETIMPORT R2 1 [nil]
+       2 [-]: GETIMPORT R2 1 [0x7B998233]
        3 [-]: CALL R2 1 1  
 L 0:   4 [-]: JUMPIF R2 L4 
        5 [-]: FASTCALL1 62 R1 L1
        6 [-]: MOVE R3 R1   
-       7 [-]: GETIMPORT R2 1 [nil]
+       7 [-]: GETIMPORT R2 1 [0x7B998233]
        8 [-]: CALL R2 1 1  
 L 1:   9 [-]: JUMPIFNOT R2 L2
       10 [-]: RETURN R0 0  
-L 2:  11 [-]: GETIMPORT R3 3 [nil]
+L 2:  11 [-]: GETIMPORT R3 3 [0x35976473]
       12 [-]: FASTCALL1 62 R3 L3
-      13 [-]: GETIMPORT R2 1 [nil]
+      13 [-]: GETIMPORT R2 1 [0x7B998233]
       14 [-]: CALL R2 1 1  
 L 3:  15 [-]: JUMPIF R2 L4 
-      16 [-]: GETIMPORT R4 3 [nil]
-      17 [-]: GETIMPORT R5 5 [nil]
+      16 [-]: GETIMPORT R4 3 [0x35976473]
+      17 [-]: GETIMPORT R5 5 ["EMPTY_SYMBOL"]
       18 [-]: NAMECALL R2 R0 K6 [0x47901F07]
       19 [-]: CALL R2 3 0  
 L 4:  20 [-]: RETURN R0 0  
@@ -130,22 +130,22 @@ L 4:  20 [-]: RETURN R0 0
 
        0 [-]: FASTCALL1 62 R0 L0
        1 [-]: MOVE R3 R0   
-       2 [-]: GETIMPORT R2 1 [nil]
+       2 [-]: GETIMPORT R2 1 [0x7B998233]
        3 [-]: CALL R2 1 1  
 L 0:   4 [-]: JUMPIF R2 L4 
        5 [-]: FASTCALL1 62 R1 L1
        6 [-]: MOVE R3 R1   
-       7 [-]: GETIMPORT R2 1 [nil]
+       7 [-]: GETIMPORT R2 1 [0x7B998233]
        8 [-]: CALL R2 1 1  
 L 1:   9 [-]: JUMPIFNOT R2 L2
       10 [-]: RETURN R0 0  
-L 2:  11 [-]: GETIMPORT R3 3 [nil]
+L 2:  11 [-]: GETIMPORT R3 3 [0x35976473]
       12 [-]: FASTCALL1 62 R3 L3
-      13 [-]: GETIMPORT R2 1 [nil]
+      13 [-]: GETIMPORT R2 1 [0x7B998233]
       14 [-]: CALL R2 1 1  
 L 3:  15 [-]: JUMPIF R2 L4 
-      16 [-]: GETIMPORT R4 3 [nil]
-      17 [-]: GETIMPORT R5 5 [nil]
+      16 [-]: GETIMPORT R4 3 [0x35976473]
+      17 [-]: GETIMPORT R5 5 ["EMPTY_SYMBOL"]
       18 [-]: NAMECALL R2 R0 K6 [0x47901F07]
       19 [-]: CALL R2 3 0  
 L 4:  20 [-]: RETURN R0 0  
@@ -160,22 +160,22 @@ L 4:  20 [-]: RETURN R0 0
 
        0 [-]: FASTCALL1 62 R0 L0
        1 [-]: MOVE R3 R0   
-       2 [-]: GETIMPORT R2 1 [nil]
+       2 [-]: GETIMPORT R2 1 [0x7B998233]
        3 [-]: CALL R2 1 1  
 L 0:   4 [-]: JUMPIF R2 L4 
        5 [-]: FASTCALL1 62 R1 L1
        6 [-]: MOVE R3 R1   
-       7 [-]: GETIMPORT R2 1 [nil]
+       7 [-]: GETIMPORT R2 1 [0x7B998233]
        8 [-]: CALL R2 1 1  
 L 1:   9 [-]: JUMPIFNOT R2 L2
       10 [-]: RETURN R0 0  
-L 2:  11 [-]: GETIMPORT R3 3 [nil]
+L 2:  11 [-]: GETIMPORT R3 3 [0x35976473]
       12 [-]: FASTCALL1 62 R3 L3
-      13 [-]: GETIMPORT R2 1 [nil]
+      13 [-]: GETIMPORT R2 1 [0x7B998233]
       14 [-]: CALL R2 1 1  
 L 3:  15 [-]: JUMPIF R2 L4 
-      16 [-]: GETIMPORT R4 3 [nil]
-      17 [-]: GETIMPORT R5 5 [nil]
+      16 [-]: GETIMPORT R4 3 [0x35976473]
+      17 [-]: GETIMPORT R5 5 ["EMPTY_SYMBOL"]
       18 [-]: NAMECALL R2 R0 K6 [0x47901F07]
       19 [-]: CALL R2 3 0  
 L 4:  20 [-]: RETURN R0 0  
@@ -190,22 +190,22 @@ L 4:  20 [-]: RETURN R0 0
 
        0 [-]: FASTCALL1 62 R0 L0
        1 [-]: MOVE R3 R0   
-       2 [-]: GETIMPORT R2 1 [nil]
+       2 [-]: GETIMPORT R2 1 [0x7B998233]
        3 [-]: CALL R2 1 1  
 L 0:   4 [-]: JUMPIF R2 L4 
        5 [-]: FASTCALL1 62 R1 L1
        6 [-]: MOVE R3 R1   
-       7 [-]: GETIMPORT R2 1 [nil]
+       7 [-]: GETIMPORT R2 1 [0x7B998233]
        8 [-]: CALL R2 1 1  
 L 1:   9 [-]: JUMPIFNOT R2 L2
       10 [-]: RETURN R0 0  
-L 2:  11 [-]: GETIMPORT R3 3 [nil]
+L 2:  11 [-]: GETIMPORT R3 3 [0x35976473]
       12 [-]: FASTCALL1 62 R3 L3
-      13 [-]: GETIMPORT R2 1 [nil]
+      13 [-]: GETIMPORT R2 1 [0x7B998233]
       14 [-]: CALL R2 1 1  
 L 3:  15 [-]: JUMPIF R2 L4 
-      16 [-]: GETIMPORT R4 3 [nil]
-      17 [-]: GETIMPORT R5 5 [nil]
+      16 [-]: GETIMPORT R4 3 [0x35976473]
+      17 [-]: GETIMPORT R5 5 ["EMPTY_SYMBOL"]
       18 [-]: NAMECALL R2 R0 K6 [0x47901F07]
       19 [-]: CALL R2 3 0  
 L 4:  20 [-]: RETURN R0 0  

@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  8
 
-            1 [-]: DUPCLOSURE R0 K0 []
+       1 [-]: DUPCLOSURE R0 K0 []
        2 [-]: DUPCLOSURE R1 K1 []
        3 [-]: DUPCLOSURE R2 K2 []
        4 [-]: MOVE R0 R1   
@@ -35,16 +35,16 @@
 ; Is_vararg:       0
 ; Max Stack Size:  17
 
-       0 [-]: GETIMPORT R1 1 [nil]
+       0 [-]: GETIMPORT R1 1 [0x76EA806B]
        1 [-]: LOADN R3 0   
        2 [-]: NAMECALL R1 R1 K2 [0x3F3AE64C]
        3 [-]: CALL R1 2 1  
        4 [-]: FASTCALL1 62 R1 L0
        5 [-]: MOVE R3 R1   
-       6 [-]: GETIMPORT R2 4 [nil]
+       6 [-]: GETIMPORT R2 4 [0x7B998233]
        7 [-]: CALL R2 1 1  
 L 0:   8 [-]: JUMPIFNOT R2 L1
-       9 [-]: GETIMPORT R2 6 [nil]
+       9 [-]: GETIMPORT R2 6 [0x3D106989]
       10 [-]: LOADK R3 K7 ["ApplyDebuffs failed -- no player profile"]
       11 [-]: CALL R2 1 0  
       12 [-]: LOADNIL R2   
@@ -53,10 +53,10 @@ L 1:  14 [-]: NAMECALL R2 R1 K8 [0x80563238]
       15 [-]: CALL R2 1 1  
       16 [-]: FASTCALL1 62 R2 L2
       17 [-]: MOVE R4 R2   
-      18 [-]: GETIMPORT R3 4 [nil]
+      18 [-]: GETIMPORT R3 4 [0x7B998233]
       19 [-]: CALL R3 1 1  
 L 2:  20 [-]: JUMPIFNOT R3 L3
-      21 [-]: GETIMPORT R3 6 [nil]
+      21 [-]: GETIMPORT R3 6 [0x3D106989]
       22 [-]: LOADK R4 K9 ["ApplyDebuffs failed -- no game data"]
       23 [-]: CALL R3 1 0  
       24 [-]: LOADNIL R3   
@@ -74,7 +74,7 @@ L 4:  33 [-]: GETTABLEKS R8 R3 K11 ["mGoals"]
       36 [-]: GETTABLEKS R8 R9 K12 ["mId"]
       37 [-]: GETTABLEKS R9 R0 K13 ["goalId"]
       38 [-]: JUMPIFNOTEQ R8 R9 L11
-      39 [-]: GETIMPORT R8 15 [nil]
+      39 [-]: GETIMPORT R8 15 [0x64FB1586]
       40 [-]: GETTABLEKS R9 R0 K16 ["location"]
       41 [-]: CALL R8 1 1  
       42 [-]: GETTABLEKS R9 R7 K17 ["mConcurrentNodes"]
@@ -116,13 +116,13 @@ L 8:  65 [-]: GETTABLEKS R10 R7 K21 ["mNode"]
       78 [-]: RETURN R10 1 
 L 9:  79 [-]: LOADK R10 K20 [16777215]
       80 [-]: RETURN R10 1 
-L10:  81 [-]: GETIMPORT R10 6 [nil]
+L10:  81 [-]: GETIMPORT R10 6 [0x3D106989]
       82 [-]: LOADK R11 K22 ["ApplyDebuffs failed -- no matching mission"]
       83 [-]: CALL R10 1 0 
       84 [-]: LOADNIL R10  
       85 [-]: RETURN R10 1 
 L11:  86 [-]: FORNLOOP R4 L4
-L12:  87 [-]: GETIMPORT R4 6 [nil]
+L12:  87 [-]: GETIMPORT R4 6 [0x3D106989]
       88 [-]: LOADK R5 K23 ["ApplyDebuffs failed -- no matching goal"]
       89 [-]: CALL R4 1 0  
       90 [-]: LOADNIL R4   
@@ -149,7 +149,7 @@ L12:  87 [-]: GETIMPORT R4 6 [nil]
       10 [-]: CALL R3 1 1  
       11 [-]: FASTCALL1 62 R3 L0
       12 [-]: MOVE R5 R3   
-      13 [-]: GETIMPORT R4 4 [nil]
+      13 [-]: GETIMPORT R4 4 [0x7B998233]
       14 [-]: CALL R4 1 1  
 L 0:  15 [-]: JUMPIF R4 L1 
       16 [-]: NAMECALL R4 R3 K0 [0xDE321E6F]
@@ -169,12 +169,12 @@ L 1:  23 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  10
 
-       0 [-]: GETIMPORT R2 1 [nil]
+       0 [-]: GETIMPORT R2 1 [0x3D106989]
        1 [-]: LOADK R4 K2 ["ScaleShields "]
        2 [-]: LOADN R9 100 
        3 [-]: MUL R8 R9 R1 
        4 [-]: FASTCALL1 12 R8 L0
-       5 [-]: GETIMPORT R7 5 [nil]
+       5 [-]: GETIMPORT R7 5 [0x55F27C30]
        6 [-]: CALL R7 1 1  
 L 0:   7 [-]: MOVE R5 R7   
        8 [-]: LOADK R6 K6 ["%"]
@@ -200,12 +200,12 @@ L 0:   7 [-]: MOVE R5 R7
 ; Is_vararg:       0
 ; Max Stack Size:  10
 
-       0 [-]: GETIMPORT R2 1 [nil]
+       0 [-]: GETIMPORT R2 1 [0x3D106989]
        1 [-]: LOADK R4 K2 ["ScalePower "]
        2 [-]: LOADN R9 100 
        3 [-]: MUL R8 R9 R1 
        4 [-]: FASTCALL1 12 R8 L0
-       5 [-]: GETIMPORT R7 5 [nil]
+       5 [-]: GETIMPORT R7 5 [0x55F27C30]
        6 [-]: CALL R7 1 1  
 L 0:   7 [-]: MOVE R5 R7   
        8 [-]: LOADK R6 K6 ["%"]
@@ -236,12 +236,12 @@ L 0:   7 [-]: MOVE R5 R7
 ; Is_vararg:       0
 ; Max Stack Size:  10
 
-       0 [-]: GETIMPORT R2 1 [nil]
+       0 [-]: GETIMPORT R2 1 [0x3D106989]
        1 [-]: LOADK R4 K2 ["ScaleHealth "]
        2 [-]: LOADN R9 100 
        3 [-]: MUL R8 R9 R1 
        4 [-]: FASTCALL1 12 R8 L0
-       5 [-]: GETIMPORT R7 5 [nil]
+       5 [-]: GETIMPORT R7 5 [0x55F27C30]
        6 [-]: CALL R7 1 1  
 L 0:   7 [-]: MOVE R5 R7   
        8 [-]: LOADK R6 K6 ["%"]
@@ -262,12 +262,12 @@ L 0:   7 [-]: MOVE R5 R7
 ; Is_vararg:       0
 ; Max Stack Size:  10
 
-       0 [-]: GETIMPORT R2 1 [nil]
+       0 [-]: GETIMPORT R2 1 [0x3D106989]
        1 [-]: LOADK R4 K2 ["ScaleDamage "]
        2 [-]: LOADN R9 100 
        3 [-]: MUL R8 R9 R1 
        4 [-]: FASTCALL1 12 R8 L0
-       5 [-]: GETIMPORT R7 5 [nil]
+       5 [-]: GETIMPORT R7 5 [0x55F27C30]
        6 [-]: CALL R7 1 1  
 L 0:   7 [-]: MOVE R5 R7   
        8 [-]: LOADK R6 K6 ["%"]
@@ -308,7 +308,7 @@ L 0:   7 [-]: MOVE R5 R7
 ; Is_vararg:       0
 ; Max Stack Size:  12
 
-       0 [-]: GETIMPORT R3 1 [nil]
+       0 [-]: GETIMPORT R3 1 [0x3D106989]
        1 [-]: LOADK R5 K2 ["DebuffPlayer "]
        2 [-]: NAMECALL R9 R0 K3 [0x5CA33548]
        3 [-]: CALL R9 1 1  
@@ -321,17 +321,17 @@ L 0:   7 [-]: MOVE R5 R7
       10 [-]: FASTCALL2K 19 R2 K6 L0 [5]
       11 [-]: MOVE R6 R2   
       12 [-]: LOADK R7 K6 [5]
-      13 [-]: GETIMPORT R5 9 [nil]
+      13 [-]: GETIMPORT R5 9 [0xAC1B386A]
       14 [-]: CALL R5 2 1  
 L 0:  15 [-]: FASTCALL2 21 R4 R5 L1
-      16 [-]: GETIMPORT R3 11 [nil]
+      16 [-]: GETIMPORT R3 11 [0xA40531D8]
       17 [-]: CALL R3 2 1  
-L 1:  18 [-]: GETIMPORT R4 1 [nil]
+L 1:  18 [-]: GETIMPORT R4 1 [0x3D106989]
       19 [-]: LOADK R6 K12 ["ScaleShields "]
       20 [-]: LOADN R11 100
       21 [-]: MUL R10 R11 R3
       22 [-]: FASTCALL1 12 R10 L2
-      23 [-]: GETIMPORT R9 14 [nil]
+      23 [-]: GETIMPORT R9 14 [0x55F27C30]
       24 [-]: CALL R9 1 1  
 L 2:  25 [-]: MOVE R7 R9   
       26 [-]: LOADK R8 K15 ["%"]
@@ -356,7 +356,7 @@ L 3:  42 [-]: SUBK R2 R2 K6 [5]
       45 [-]: LOADK R6 K5 [0.75]
       46 [-]: FASTCALL2 21 R6 R2 L4
       47 [-]: MOVE R7 R2   
-      48 [-]: GETIMPORT R5 11 [nil]
+      48 [-]: GETIMPORT R5 11 [0xA40531D8]
       49 [-]: CALL R5 2 1  
 L 4:  50 [-]: CALL R3 2 0  
       51 [-]: LOADN R3 5   
@@ -367,17 +367,17 @@ L 5:  54 [-]: SUBK R2 R2 K6 [5]
       56 [-]: FASTCALL2K 19 R2 K6 L6 [5]
       57 [-]: MOVE R6 R2   
       58 [-]: LOADK R7 K6 [5]
-      59 [-]: GETIMPORT R5 9 [nil]
+      59 [-]: GETIMPORT R5 9 [0xAC1B386A]
       60 [-]: CALL R5 2 1  
 L 6:  61 [-]: FASTCALL2 21 R4 R5 L7
-      62 [-]: GETIMPORT R3 11 [nil]
+      62 [-]: GETIMPORT R3 11 [0xA40531D8]
       63 [-]: CALL R3 2 1  
-L 7:  64 [-]: GETIMPORT R4 1 [nil]
+L 7:  64 [-]: GETIMPORT R4 1 [0x3D106989]
       65 [-]: LOADK R6 K16 ["ScaleHealth "]
       66 [-]: LOADN R11 100
       67 [-]: MUL R10 R11 R3
       68 [-]: FASTCALL1 12 R10 L8
-      69 [-]: GETIMPORT R9 14 [nil]
+      69 [-]: GETIMPORT R9 14 [0x55F27C30]
       70 [-]: CALL R9 1 1  
 L 8:  71 [-]: MOVE R7 R9   
       72 [-]: LOADK R8 K15 ["%"]
@@ -397,7 +397,7 @@ L 9:  83 [-]: SUBK R2 R2 K6 [5]
       86 [-]: LOADK R6 K17 [0.90000000000000002]
       87 [-]: FASTCALL2 21 R6 R2 L10
       88 [-]: MOVE R7 R2   
-      89 [-]: GETIMPORT R5 11 [nil]
+      89 [-]: GETIMPORT R5 11 [0xA40531D8]
       90 [-]: CALL R5 2 1  
 L10:  91 [-]: CALL R3 2 0  
       92 [-]: RETURN R0 0  
@@ -410,7 +410,7 @@ L10:  91 [-]: CALL R3 2 0
 ; Is_vararg:       0
 ; Max Stack Size:  11
 
-       0 [-]: GETIMPORT R4 1 [nil]
+       0 [-]: GETIMPORT R4 1 [0xBE190284]
        1 [-]: NAMECALL R4 R4 K2 [0xEF893AEC]
        2 [-]: CALL R4 1 1  
        3 [-]: GETTABLEKS R5 R4 K3 ["goalId"]
@@ -418,16 +418,16 @@ L10:  91 [-]: CALL R3 2 0
        5 [-]: RETURN R0 0  
 L 0:   6 [-]: FASTCALL1 62 R1 L1
        7 [-]: MOVE R6 R1   
-       8 [-]: GETIMPORT R5 6 [nil]
+       8 [-]: GETIMPORT R5 6 [0x7B998233]
        9 [-]: CALL R5 1 1  
 L 1:  10 [-]: JUMPIF R5 L2 
-      11 [-]: GETIMPORT R5 8 [nil]
+      11 [-]: GETIMPORT R5 8 [0x7ED0A956]
       12 [-]: LOADK R6 K9 ["/Lotus/Scripts/SabotageOrokinEvent.lua"]
       13 [-]: CALL R5 1 1  
-      14 [-]: GETIMPORT R8 11 [nil]
+      14 [-]: GETIMPORT R8 11 [0xB009BBC6]
       15 [-]: MOVE R9 R5   
       16 [-]: CALL R8 1 1  
-      17 [-]: GETIMPORT R9 13 [nil]
+      17 [-]: GETIMPORT R9 13 [0x0469F296]
       18 [-]: LOADK R10 K14 ["ApplyDebuffsToAvatar"]
       19 [-]: CALL R9 1 1  
       20 [-]: LOADB R10 0  
@@ -443,15 +443,15 @@ L 2:  23 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  12
 
-       0 [-]: GETIMPORT R1 1 [nil]
+       0 [-]: GETIMPORT R1 1 [0xCBD666E1]
        1 [-]: LOADN R2 0   
        2 [-]: CALL R1 1 0  
        3 [-]: FASTCALL1 62 R0 L0
        4 [-]: MOVE R2 R0   
-       5 [-]: GETIMPORT R1 3 [nil]
+       5 [-]: GETIMPORT R1 3 [0x7B998233]
        6 [-]: CALL R1 1 1  
 L 0:   7 [-]: JUMPIFNOT R1 L1
-       8 [-]: GETIMPORT R1 5 [nil]
+       8 [-]: GETIMPORT R1 5 [0x3D106989]
        9 [-]: LOADK R2 K6 ["ApplyDebuffs failed -- no targetAvatar"]
       10 [-]: CALL R1 1 0  
       11 [-]: RETURN R0 0  
@@ -459,14 +459,14 @@ L 1:  12 [-]: NAMECALL R1 R0 K7 [0x5E651723]
       13 [-]: CALL R1 1 1  
       14 [-]: FASTCALL1 62 R1 L2
       15 [-]: MOVE R3 R1   
-      16 [-]: GETIMPORT R2 3 [nil]
+      16 [-]: GETIMPORT R2 3 [0x7B998233]
       17 [-]: CALL R2 1 1  
 L 2:  18 [-]: JUMPIFNOT R2 L3
-      19 [-]: GETIMPORT R2 5 [nil]
+      19 [-]: GETIMPORT R2 5 [0x3D106989]
       20 [-]: LOADK R3 K8 ["ApplyDebuffs failed -- no player"]
       21 [-]: CALL R2 1 0  
       22 [-]: RETURN R0 0  
-L 3:  23 [-]: GETIMPORT R2 10 [nil]
+L 3:  23 [-]: GETIMPORT R2 10 [0xBE190284]
       24 [-]: NAMECALL R2 R2 K11 [0xEF893AEC]
       25 [-]: CALL R2 1 1  
       26 [-]: GETUPVAL R3 0

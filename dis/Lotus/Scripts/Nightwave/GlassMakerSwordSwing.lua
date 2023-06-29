@@ -5,21 +5,21 @@
 ; Is_vararg:       1
 ; Max Stack Size:  11
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x0469F296]
        2 [-]: LOADK R1 K2 ["Glassmaker"]
        3 [-]: CALL R0 1 1  
        4 [-]: NEWTABLE R1 0 2
-       5 [-]: GETIMPORT R2 1 [nil]
+       5 [-]: GETIMPORT R2 1 [0x0469F296]
        6 [-]: LOADK R3 K3 ["SwordL"]
        7 [-]: CALL R2 1 1  
-       8 [-]: GETIMPORT R3 1 [nil]
+       8 [-]: GETIMPORT R3 1 [0x0469F296]
        9 [-]: LOADK R4 K4 ["SwordR"]
       10 [-]: CALL R3 1 -1 
       11 [-]: SETLIST R1 R2 -1 [1]
-      12 [-]: GETIMPORT R2 1 [nil]
+      12 [-]: GETIMPORT R2 1 [0x0469F296]
       13 [-]: LOADK R3 K5 ["SwordAttackTeleportPoint"]
       14 [-]: CALL R2 1 1  
-      15 [-]: GETIMPORT R3 7 [nil]
+      15 [-]: GETIMPORT R3 7 [0x393CA8AF]
       16 [-]: LOADK R4 K8 ["SwingAttackFinished"]
       17 [-]: CALL R3 1 1  
       18 [-]: LOADNIL R4   
@@ -54,71 +54,71 @@
 ; Is_vararg:       0
 ; Max Stack Size:  10
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 [0x3D106989]
        1 [-]: LOADK R1 K2 ["Initializing..."]
        2 [-]: CALL R0 1 0  
        3 [-]: GETUPVAL R1 0
        4 [-]: FASTCALL1 62 R1 L0
-       5 [-]: GETIMPORT R0 4 [nil]
+       5 [-]: GETIMPORT R0 4 [0x7B998233]
        6 [-]: CALL R0 1 1  
 L 0:   7 [-]: JUMPIFNOT R0 L3
-       8 [-]: GETIMPORT R0 6 [nil]
+       8 [-]: GETIMPORT R0 6 [0x89326C93]
        9 [-]: GETUPVAL R2 1
       10 [-]: NAMECALL R0 R0 K7 [0x46A0EBF5]
       11 [-]: CALL R0 2 1  
       12 [-]: SETUPVAL R0 0
       13 [-]: GETUPVAL R1 0
       14 [-]: FASTCALL1 62 R1 L1
-      15 [-]: GETIMPORT R0 4 [nil]
+      15 [-]: GETIMPORT R0 4 [0x7B998233]
       16 [-]: CALL R0 1 1  
 L 1:  17 [-]: JUMPIFNOT R0 L2
-      18 [-]: GETIMPORT R0 1 [nil]
+      18 [-]: GETIMPORT R0 1 [0x3D106989]
       19 [-]: LOADK R1 K8 ["ERROR: could not find Glassmaker boss"]
       20 [-]: CALL R0 1 0  
       21 [-]: RETURN R0 0  
-L 2:  22 [-]: GETIMPORT R0 1 [nil]
+L 2:  22 [-]: GETIMPORT R0 1 [0x3D106989]
       23 [-]: LOADK R1 K9 ["Cached Glassmaker boss"]
       24 [-]: CALL R0 1 0  
       25 [-]: JUMP L4
      
-L 3:  26 [-]: GETIMPORT R0 1 [nil]
+L 3:  26 [-]: GETIMPORT R0 1 [0x3D106989]
       27 [-]: LOADK R1 K10 ["Found Glassmaker already initialized"]
       28 [-]: CALL R0 1 0  
 L 4:  29 [-]: GETUPVAL R1 0
       30 [-]: FASTCALL1 62 R1 L5
-      31 [-]: GETIMPORT R0 4 [nil]
+      31 [-]: GETIMPORT R0 4 [0x7B998233]
       32 [-]: CALL R0 1 1  
 L 5:  33 [-]: JUMPIF R0 L11
       34 [-]: GETUPVAL R0 0
-      35 [-]: GETIMPORT R2 12 [nil]
+      35 [-]: GETIMPORT R2 12 ["gWeaponAttachmentType"]
       36 [-]: NAMECALL R0 R0 K13 [0xC9F6A7D7]
       37 [-]: CALL R0 2 1  
       38 [-]: SETUPVAL R0 2
       39 [-]: GETUPVAL R2 2
       40 [-]: FASTCALL1 62 R2 L6
-      41 [-]: GETIMPORT R1 4 [nil]
+      41 [-]: GETIMPORT R1 4 [0x7B998233]
       42 [-]: CALL R1 1 1  
 L 6:  43 [-]: JUMPIFNOT R1 L7
-      44 [-]: GETIMPORT R1 1 [nil]
+      44 [-]: GETIMPORT R1 1 [0x3D106989]
       45 [-]: LOADK R2 K14 ["ERROR: could not find boss sword!"]
       46 [-]: CALL R1 1 0  
       47 [-]: RETURN R0 0  
 L 7:  48 [-]: GETUPVAL R2 3
       49 [-]: FASTCALL1 62 R2 L8
-      50 [-]: GETIMPORT R1 4 [nil]
+      50 [-]: GETIMPORT R1 4 [0x7B998233]
       51 [-]: CALL R1 1 1  
 L 8:  52 [-]: JUMPIFNOT R1 L11
-      53 [-]: GETIMPORT R1 16 [nil]
+      53 [-]: GETIMPORT R1 16 [0x00046924]
       54 [-]: LOADN R2 0   
       55 [-]: LOADN R3 0   
       56 [-]: LOADN R4 0   
       57 [-]: CALL R1 3 1  
       58 [-]: GETUPVAL R2 0
-      59 [-]: GETIMPORT R4 18 [nil]
-      60 [-]: GETIMPORT R5 20 [nil]
+      59 [-]: GETIMPORT R4 18 [0x338A52F2]
+      60 [-]: GETIMPORT R5 20 [0x0469F296]
       61 [-]: LOADK R6 K21 ["GAME_L1_WEAPON1"]
       62 [-]: CALL R5 1 1  
-      63 [-]: GETIMPORT R6 23 [nil]
+      63 [-]: GETIMPORT R6 23 [0xA421AF95]
       64 [-]: LOADN R7 0   
       65 [-]: LOADN R8 0   
       66 [-]: LOADN R9 0   
@@ -128,10 +128,10 @@ L 8:  52 [-]: JUMPIFNOT R1 L11
       70 [-]: CALL R2 5 1  
       71 [-]: FASTCALL1 62 R2 L9
       72 [-]: MOVE R4 R2   
-      73 [-]: GETIMPORT R3 4 [nil]
+      73 [-]: GETIMPORT R3 4 [0x7B998233]
       74 [-]: CALL R3 1 1  
 L 9:  75 [-]: JUMPIFNOT R3 L10
-      76 [-]: GETIMPORT R3 1 [nil]
+      76 [-]: GETIMPORT R3 1 [0x3D106989]
       77 [-]: LOADK R4 K25 ["ERROR: could not attach damage trigger during sword attack"]
       78 [-]: CALL R3 1 0  
       79 [-]: RETURN R0 0  
@@ -177,10 +177,10 @@ L11:  85 [-]: RETURN R0 0
        1 [-]: CALL R1 0 0  
        2 [-]: GETUPVAL R2 1
        3 [-]: FASTCALL1 62 R2 L0
-       4 [-]: GETIMPORT R1 1 [nil]
+       4 [-]: GETIMPORT R1 1 [0x7B998233]
        5 [-]: CALL R1 1 1  
 L 0:   6 [-]: JUMPIFNOT R1 L1
-       7 [-]: GETIMPORT R1 3 [nil]
+       7 [-]: GETIMPORT R1 3 [0x3D106989]
        8 [-]: LOADK R2 K4 ["Glassmaker Boss could not be initialized!"]
        9 [-]: CALL R1 1 0  
       10 [-]: RETURN R0 0  
@@ -198,46 +198,46 @@ L 1:  11 [-]: GETUPVAL R1 1
       22 [-]: NAMECALL R1 R1 K7 [0x8FF7507F]
       23 [-]: CALL R1 2 0  
       24 [-]: LOADNIL R1   
-      25 [-]: GETIMPORT R2 9 [nil]
+      25 [-]: GETIMPORT R2 9 [0x89326C93]
       26 [-]: NAMECALL R2 R2 K10 [0x8B5B1F58]
       27 [-]: CALL R2 1 1  
-      28 [-]: GETIMPORT R3 12 [nil]
+      28 [-]: GETIMPORT R3 12 [0x4EC73E73]
       29 [-]: MOVE R4 R2   
       30 [-]: CALL R3 1 1  
       31 [-]: JUMPIFNOT R3 L2
-      32 [-]: GETIMPORT R3 14 [nil]
+      32 [-]: GETIMPORT R3 14 [0x55730E1A]
       33 [-]: LOADN R4 1   
       34 [-]: LENGTH R5 R2 
       35 [-]: CALL R3 2 1  
       36 [-]: GETTABLE R1 R2 R3
 L 2:  37 [-]: FASTCALL1 62 R1 L3
       38 [-]: MOVE R4 R1   
-      39 [-]: GETIMPORT R3 1 [nil]
+      39 [-]: GETIMPORT R3 1 [0x7B998233]
       40 [-]: CALL R3 1 1  
 L 3:  41 [-]: JUMPIFNOT R3 L4
-      42 [-]: GETIMPORT R3 3 [nil]
+      42 [-]: GETIMPORT R3 3 [0x3D106989]
       43 [-]: LOADK R4 K15 ["ERROR: couldn't find an valid target player"]
       44 [-]: CALL R3 1 0  
       45 [-]: RETURN R0 0  
-L 4:  46 [-]: GETIMPORT R3 3 [nil]
+L 4:  46 [-]: GETIMPORT R3 3 [0x3D106989]
       47 [-]: LOADK R5 K16 ["Selected target: "]
       48 [-]: NAMECALL R6 R1 K17 [0xE223E2B1]
       49 [-]: CALL R6 1 1  
       50 [-]: CONCAT R4 R5 R6
       51 [-]: CALL R3 1 0  
-      52 [-]: GETIMPORT R3 19 [nil]
+      52 [-]: GETIMPORT R3 19 [0xCBD666E1]
       53 [-]: LOADN R4 2   
       54 [-]: CALL R3 1 0  
       55 [-]: NAMECALL R3 R1 K20 [0xD1586535]
       56 [-]: CALL R3 1 1  
-      57 [-]: GETIMPORT R4 9 [nil]
+      57 [-]: GETIMPORT R4 9 [0x89326C93]
       58 [-]: GETUPVAL R6 2
       59 [-]: MOVE R7 R3   
       60 [-]: NAMECALL R4 R4 K21 [0xC7B81E8D]
       61 [-]: CALL R4 3 1  
       62 [-]: FASTCALL1 62 R4 L5
       63 [-]: MOVE R7 R4   
-      64 [-]: GETIMPORT R6 1 [nil]
+      64 [-]: GETIMPORT R6 1 [0x7B998233]
       65 [-]: CALL R6 1 1  
 L 5:  66 [-]: JUMPIF R6 L6 
       67 [-]: NAMECALL R5 R4 K20 [0xD1586535]
@@ -247,10 +247,10 @@ L 6:  70 [-]: GETUPVAL R5 1
       71 [-]: NAMECALL R5 R5 K20 [0xD1586535]
       72 [-]: CALL R5 1 1  
 L 7:  73 [-]: SUB R6 R3 R5 
-      74 [-]: GETIMPORT R7 23 [nil]
+      74 [-]: GETIMPORT R7 23 [0xC2892F65]
       75 [-]: MOVE R8 R6   
       76 [-]: CALL R7 1 0  
-      77 [-]: GETIMPORT R7 25 [nil]
+      77 [-]: GETIMPORT R7 25 [0x20B7F774]
       78 [-]: MOVE R8 R5   
       79 [-]: MOVE R9 R6   
       80 [-]: GETUPVAL R10 1
@@ -259,7 +259,7 @@ L 7:  73 [-]: SUB R6 R3 R5
       83 [-]: CALL R7 -1 1 
       84 [-]: FASTCALL1 62 R4 L8
       85 [-]: MOVE R9 R4   
-      86 [-]: GETIMPORT R8 1 [nil]
+      86 [-]: GETIMPORT R8 1 [0x7B998233]
       87 [-]: CALL R8 1 1  
 L 8:  88 [-]: JUMPIF R8 L9 
       89 [-]: GETUPVAL R8 1
@@ -271,7 +271,7 @@ L 9:  94 [-]: GETUPVAL R8 1
       95 [-]: MOVE R10 R7  
       96 [-]: NAMECALL R8 R8 K28 [0x89C6DBF7]
       97 [-]: CALL R8 2 0  
-      98 [-]: GETIMPORT R8 3 [nil]
+      98 [-]: GETIMPORT R8 3 [0x3D106989]
       99 [-]: LOADK R9 K29 ["Animation starting..."]
      100 [-]: CALL R8 1 0  
      101 [-]: GETUPVAL R8 3
@@ -279,7 +279,7 @@ L 9:  94 [-]: GETUPVAL R8 1
      103 [-]: CALL R8 1 0  
      104 [-]: GETUPVAL R8 1
      105 [-]: GETUPVAL R11 4
-     106 [-]: GETIMPORT R12 14 [nil]
+     106 [-]: GETIMPORT R12 14 [0x55730E1A]
      107 [-]: LOADN R13 1  
      108 [-]: GETUPVAL R15 4
      109 [-]: LENGTH R14 R15
@@ -287,7 +287,7 @@ L 9:  94 [-]: GETUPVAL R8 1
      111 [-]: GETTABLE R10 R11 R12
      112 [-]: NAMECALL R8 R8 K31 [0xB2532845]
      113 [-]: CALL R8 2 0  
-     114 [-]: GETIMPORT R8 19 [nil]
+     114 [-]: GETIMPORT R8 19 [0xCBD666E1]
      115 [-]: LOADK R9 K32 [1.5]
      116 [-]: CALL R8 1 0  
      117 [-]: GETUPVAL R8 1
@@ -311,16 +311,16 @@ L 9:  94 [-]: GETUPVAL R8 1
      135 [-]: GETUPVAL R8 3
      136 [-]: NAMECALL R8 R8 K34 [0xF4E253B6]
      137 [-]: CALL R8 1 0  
-     138 [-]: GETIMPORT R8 3 [nil]
+     138 [-]: GETIMPORT R8 3 [0x3D106989]
      139 [-]: LOADK R9 K35 ["Finished attacking..."]
      140 [-]: CALL R8 1 0  
-     141 [-]: GETIMPORT R8 9 [nil]
+     141 [-]: GETIMPORT R8 9 [0x89326C93]
      142 [-]: GETUPVAL R10 2
      143 [-]: NAMECALL R8 R8 K36 [0xC7FCADA9]
      144 [-]: CALL R8 2 1  
      145 [-]: FASTCALL1 62 R8 L10
      146 [-]: MOVE R10 R8  
-     147 [-]: GETIMPORT R9 1 [nil]
+     147 [-]: GETIMPORT R9 1 [0x7B998233]
      148 [-]: CALL R9 1 1  
 L10: 149 [-]: JUMPIF R9 L11
      150 [-]: GETUPVAL R9 1
@@ -336,7 +336,7 @@ L10: 149 [-]: JUMPIF R9 L11
      160 [-]: LOADB R11 0  
      161 [-]: NAMECALL R9 R9 K7 [0x8FF7507F]
      162 [-]: CALL R9 2 0  
-     163 [-]: GETIMPORT R10 14 [nil]
+     163 [-]: GETIMPORT R10 14 [0x55730E1A]
      164 [-]: LOADN R11 1  
      165 [-]: LENGTH R12 R8
      166 [-]: CALL R10 2 1 
@@ -350,7 +350,7 @@ L10: 149 [-]: JUMPIF R9 L11
      174 [-]: MOVE R12 R9  
      175 [-]: NAMECALL R10 R10 K27 [0x589EF1C1]
      176 [-]: CALL R10 2 0 
-     177 [-]: GETIMPORT R10 19 [nil]
+     177 [-]: GETIMPORT R10 19 [0xCBD666E1]
      178 [-]: LOADN R11 1  
      179 [-]: CALL R10 1 0 
      180 [-]: GETUPVAL R10 1

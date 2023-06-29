@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  1
 
-            1 [-]: DUPCLOSURE R0 K0 []
+       1 [-]: DUPCLOSURE R0 K0 []
        2 [-]: SETGLOBAL R0 K1 ["RefreshElementalPriority"]
        3 [-]: RETURN R0 0  
 
@@ -21,7 +21,7 @@
        1 [-]: CALL R1 1 1  
        2 [-]: FASTCALL1 62 R1 L0
        3 [-]: MOVE R3 R1   
-       4 [-]: GETIMPORT R2 2 [nil]
+       4 [-]: GETIMPORT R2 2 [0x7B998233]
        5 [-]: CALL R2 1 1  
 L 0:   6 [-]: JUMPIFNOT R2 L1
        7 [-]: RETURN R0 0  
@@ -32,7 +32,7 @@ L 1:   8 [-]: NAMECALL R2 R1 K3 [0xDE321E6F]
       12 [-]: CALL R2 2 1  
 L 2:  13 [-]: FASTCALL1 62 R1 L3
       14 [-]: MOVE R4 R1   
-      15 [-]: GETIMPORT R3 2 [nil]
+      15 [-]: GETIMPORT R3 2 [0x7B998233]
       16 [-]: CALL R3 1 1  
 L 3:  17 [-]: JUMPIF R3 L4 
       18 [-]: JUMPIFEQ R2 R0 L4
@@ -42,13 +42,13 @@ L 3:  17 [-]: JUMPIF R3 L4
       22 [-]: NAMECALL R3 R3 K4 [0x881B6B90]
       23 [-]: CALL R3 2 1  
       24 [-]: MOVE R2 R3   
-      25 [-]: GETIMPORT R3 6 [nil]
+      25 [-]: GETIMPORT R3 6 [0xCBD666E1]
       26 [-]: LOADN R4 0   
       27 [-]: CALL R3 1 0  
       28 [-]: JUMPBACK L2  
 L 4:  29 [-]: FASTCALL1 62 R1 L5
       30 [-]: MOVE R4 R1   
-      31 [-]: GETIMPORT R3 2 [nil]
+      31 [-]: GETIMPORT R3 2 [0x7B998233]
       32 [-]: CALL R3 1 1  
 L 5:  33 [-]: JUMPIFNOT R3 L6
       34 [-]: RETURN R0 0  
@@ -58,7 +58,7 @@ L 6:  35 [-]: NAMECALL R3 R1 K3 [0xDE321E6F]
       38 [-]: CALL R3 1 1  
       39 [-]: FASTCALL1 62 R3 L7
       40 [-]: MOVE R5 R3   
-      41 [-]: GETIMPORT R4 2 [nil]
+      41 [-]: GETIMPORT R4 2 [0x7B998233]
       42 [-]: CALL R4 1 1  
 L 7:  43 [-]: JUMPIFNOT R4 L8
       44 [-]: RETURN R0 0  

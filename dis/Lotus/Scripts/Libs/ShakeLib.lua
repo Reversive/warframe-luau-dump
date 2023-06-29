@@ -5,9 +5,9 @@
 ; Is_vararg:       1
 ; Max Stack Size:  3
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0xAEABECDA]
        2 [-]: GETVARARGS R1 1
-       3 [-]: GETIMPORT R2 4 [nil]
+       3 [-]: GETIMPORT R2 4 ["seeall"]
        4 [-]: CALL R0 2 0  
        5 [-]: DUPTABLE R0 15
        6 [-]: LOADN R1 12  
@@ -42,7 +42,7 @@
 
        0 [-]: GETTABLEKS R2 R0 K0 ["shakeArray"]
        1 [-]: FASTCALL1 62 R2 L0
-       2 [-]: GETIMPORT R1 2 [nil]
+       2 [-]: GETIMPORT R1 2 [0x7B998233]
        3 [-]: CALL R1 1 1  
 L 0:   4 [-]: JUMPIFNOT R1 L1
        5 [-]: NEWTABLE R1 0 0
@@ -85,7 +85,7 @@ L 2:  14 [-]: RETURN R0 0
        1 [-]: CALL R2 1 0  
        2 [-]: FASTCALL1 40 R1 L0
        3 [-]: MOVE R3 R1   
-       4 [-]: GETIMPORT R2 2 [nil]
+       4 [-]: GETIMPORT R2 2 [0x0B96777E]
        5 [-]: CALL R2 1 1  
 L 0:   6 [-]: JUMPXEQKS R2 K3 L1 NOT ["number"]
        7 [-]: LOADN R2 0   
@@ -97,7 +97,7 @@ L 1:  11 [-]: LOADB R2 0
 L 2:  13 [-]: GETTABLEKS R4 R0 K5 ["shakeArray"]
       14 [-]: GETTABLE R3 R4 R1
       15 [-]: FASTCALL1 62 R3 L3
-      16 [-]: GETIMPORT R2 7 [nil]
+      16 [-]: GETIMPORT R2 7 [0x7B998233]
       17 [-]: CALL R2 1 1  
 L 3:  18 [-]: JUMPIF R2 L4 
       19 [-]: GETTABLEKS R4 R0 K5 ["shakeArray"]
@@ -144,7 +144,7 @@ L 1:  20 [-]: GETTABLEKS R5 R0 K1 ["shakeArray"]
       22 [-]: GETTABLEKS R8 R0 K1 ["shakeArray"]
       23 [-]: GETTABLE R7 R8 R3
       24 [-]: GETTABLEKS R6 R7 K3 ["timeSinceLastUpdate"]
-      25 [-]: GETIMPORT R7 7 [nil]
+      25 [-]: GETIMPORT R7 7 [0x67652851]
       26 [-]: CALL R7 0 1  
       27 [-]: ADD R5 R6 R7 
       28 [-]: SETTABLEKS R5 R4 K3 ["timeSinceLastUpdate"]
@@ -171,7 +171,7 @@ L 4:  37 [-]: MOVE R8 R5
       49 [-]: FASTCALL2 18 R2 R7 L5
       50 [-]: MOVE R9 R2   
       51 [-]: MOVE R10 R7  
-      52 [-]: GETIMPORT R8 12 [nil]
+      52 [-]: GETIMPORT R8 12 [0xB62ECFE0]
       53 [-]: CALL R8 2 1  
 L 5:  54 [-]: MOVE R2 R8   
       55 [-]: JUMP L7
@@ -179,7 +179,7 @@ L 5:  54 [-]: MOVE R2 R8
 L 6:  56 [-]: MOVE R2 R7   
 L 7:  57 [-]: MOVE R1 R6   
 L 8:  58 [-]: FORNLOOP R3 L4
-L 9:  59 [-]: GETIMPORT R4 14 [nil]
+L 9:  59 [-]: GETIMPORT R4 14 [0x89326C93]
       60 [-]: NAMECALL R4 R4 K15 [0x7C1A0374]
       61 [-]: CALL R4 1 1  
       62 [-]: GETTABLEKS R3 R4 K16 ["postProcessBias"]
@@ -212,7 +212,7 @@ L 0:   6 [-]: MOVE R6 R3
       10 [-]: GETTABLEKS R6 R0 K3 ["shakeArray"]
       11 [-]: GETTABLE R5 R6 R3
       12 [-]: FASTCALL1 62 R5 L1
-      13 [-]: GETIMPORT R4 5 [nil]
+      13 [-]: GETIMPORT R4 5 [0x7B998233]
       14 [-]: CALL R4 1 1  
 L 1:  15 [-]: JUMPIFNOT R4 L2
       16 [-]: GETTABLEKS R4 R0 K3 ["shakeArray"]

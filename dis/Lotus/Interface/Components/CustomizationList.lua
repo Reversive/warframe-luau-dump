@@ -5,32 +5,32 @@
 ; Is_vararg:       1
 ; Max Stack Size:  10
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0xAEABECDA]
        2 [-]: GETVARARGS R1 1
-       3 [-]: GETIMPORT R2 4 [nil]
+       3 [-]: GETIMPORT R2 4 ["seeall"]
        4 [-]: CALL R0 2 0  
-       5 [-]: GETIMPORT R0 6 [nil]
+       5 [-]: GETIMPORT R0 6 [0x2D0FAD09]
        6 [-]: LOADK R1 K7 ["Lotus.Interface.StoreItemUtilities"]
        7 [-]: CALL R0 1 1  
-       8 [-]: GETIMPORT R1 6 [nil]
+       8 [-]: GETIMPORT R1 6 [0x2D0FAD09]
        9 [-]: LOADK R2 K8 ["EE.Interface.Utilities"]
       10 [-]: CALL R1 1 1  
-      11 [-]: GETIMPORT R2 6 [nil]
+      11 [-]: GETIMPORT R2 6 [0x2D0FAD09]
       12 [-]: LOADK R3 K9 ["Lotus.Interface.LotusUtilities"]
       13 [-]: CALL R2 1 1  
-      14 [-]: GETIMPORT R3 11 [nil]
+      14 [-]: GETIMPORT R3 11 [0xB009BBC6]
       15 [-]: LOADK R4 K12 ["/Lotus/Interface/Materials/CustomizationListVisRangeMaterial"]
       16 [-]: CALL R3 1 1  
-      17 [-]: GETIMPORT R4 11 [nil]
+      17 [-]: GETIMPORT R4 11 [0xB009BBC6]
       18 [-]: LOADK R5 K13 ["/Lotus/Interface/Materials/CustomizationListTextVisRangeMaterial"]
       19 [-]: CALL R4 1 1  
-      20 [-]: GETIMPORT R5 11 [nil]
+      20 [-]: GETIMPORT R5 11 [0xB009BBC6]
       21 [-]: LOADK R6 K14 ["/Lotus/Interface/Materials/CustomizationListNoDepthMaterial"]
       22 [-]: CALL R5 1 1  
-      23 [-]: GETIMPORT R6 11 [nil]
+      23 [-]: GETIMPORT R6 11 [0xB009BBC6]
       24 [-]: LOADK R7 K15 ["/Lotus/Interface/Materials/VisibleRangeMarketShadow"]
       25 [-]: CALL R6 1 1  
-      26 [-]: GETIMPORT R7 11 [nil]
+      26 [-]: GETIMPORT R7 11 [0xB009BBC6]
       27 [-]: LOADK R8 K16 ["/Lotus/Types/StoreItems/SuitCustomizations/ColourPickerItem"]
       28 [-]: CALL R7 1 1  
       29 [-]: DUPCLOSURE R8 K17 []
@@ -96,7 +96,7 @@ L 3:  15 [-]: MOVE R8 R1
       35 [-]: DIVK R12 R5 K10 [2]
       36 [-]: SUB R10 R11 R12
       37 [-]: FASTCALL2 18 R9 R10 L4
-      38 [-]: GETIMPORT R8 13 [nil]
+      38 [-]: GETIMPORT R8 13 [0xB62ECFE0]
       39 [-]: CALL R8 2 1  
 L 4:  40 [-]: MOVE R6 R8   
       41 [-]: MOVE R10 R1  
@@ -247,10 +247,10 @@ L 5:  99 [-]: MOVE R9 R1
       25 [-]: SETTABLEKS R4 R3 K15 ["PLATINUM_ICON"]
       26 [-]: LOADB R4 0   
       27 [-]: SETTABLEKS R4 R3 K16 ["mIsDiegetic"]
-      28 [-]: GETIMPORT R4 18 [nil]
+      28 [-]: GETIMPORT R4 18 [0x2D0FAD09]
       29 [-]: LOADK R5 K19 ["EE.Interface.Components.List"]
       30 [-]: CALL R4 1 1  
-      31 [-]: GETIMPORT R5 18 [nil]
+      31 [-]: GETIMPORT R5 18 [0x2D0FAD09]
       32 [-]: LOADK R6 K20 ["EE.Interface.Components.Grid"]
       33 [-]: CALL R5 1 1  
       34 [-]: MOVE R9 R1   
@@ -645,7 +645,7 @@ L 0: 191 [-]: GETTABLEKS R6 R3 K25 ["CustomizationList"]
      423 [-]: NEWCLOSURE R7 P48
      424 [-]: MOVE R0 R3   
      425 [-]: SETTABLEKS R7 R6 K171 ["NextCategory"]
-     426 [-]: GETIMPORT R6 174 [nil]
+     426 [-]: GETIMPORT R6 174 [0xE6B41ADB]
      427 [-]: CALL R6 0 1  
      428 [-]: JUMPIFNOT R6 L1
      429 [-]: GETTABLEKS R6 R3 K25 ["CustomizationList"]
@@ -656,7 +656,7 @@ L 0: 191 [-]: GETTABLEKS R6 R3 K25 ["CustomizationList"]
      434 [-]: LOADB R9 1   
      435 [-]: NAMECALL R6 R6 K176 [0x4C4F8717]
      436 [-]: CALL R6 3 0  
-L 1: 437 [-]: GETIMPORT R6 178 [nil]
+L 1: 437 [-]: GETIMPORT R6 178 [0x38F10E85]
      438 [-]: GETTABLEKS R7 R3 K0 ["mMovie"]
      439 [-]: GETTABLEKS R9 R3 K1 ["mClipName"]
      440 [-]: LOADK R10 K179 [".CustomizationPanel.List.MenuItem.swapDepths"]
@@ -670,7 +670,7 @@ L 1: 437 [-]: GETIMPORT R6 178 [nil]
      448 [-]: NAMECALL R6 R0 K22 [0xA7EC3E8A]
      449 [-]: CALL R6 2 1  
      450 [-]: JUMPIFNOT R6 L2
-     451 [-]: GETIMPORT R6 18 [nil]
+     451 [-]: GETIMPORT R6 18 [0x2D0FAD09]
      452 [-]: LOADK R7 K182 ["EE.Interface.Components.ScrollBar"]
      453 [-]: CALL R6 1 1  
      454 [-]: GETTABLEKS R7 R6 K183 [0x3B3EA08C]
@@ -861,7 +861,7 @@ L 3: 492 [-]: GETTABLEKS R6 R5 K195 [0xDA0C93A2]
      639 [-]: NEWCLOSURE R7 P59
      640 [-]: MOVE R0 R3   
      641 [-]: SETTABLEKS R7 R6 K225 ["onViewportSizeChanged"]
-     642 [-]: GETIMPORT R6 174 [nil]
+     642 [-]: GETIMPORT R6 174 [0xE6B41ADB]
      643 [-]: CALL R6 0 1  
      644 [-]: JUMPIFNOT R6 L4
      645 [-]: GETTABLEKS R6 R3 K197 ["ItemSelectionGrid"]
@@ -904,47 +904,47 @@ L 4: 653 [-]: GETTABLEKS R8 R3 K197 ["ItemSelectionGrid"]
      682 [-]: ADD R11 R12 R8
      683 [-]: CALL R9 2 1  
      684 [-]: GETUPVAL R10 3
-     685 [-]: GETIMPORT R12 235 [nil]
+     685 [-]: GETIMPORT R12 235 ["VISIBILITY_CENTER"]
      686 [-]: MOVE R13 R9  
      687 [-]: NAMECALL R10 R10 K236 [0x830EEA67]
      688 [-]: CALL R10 3 0 
      689 [-]: GETUPVAL R10 3
-     690 [-]: GETIMPORT R12 238 [nil]
+     690 [-]: GETIMPORT R12 238 ["VISIBILITY_SIZE"]
      691 [-]: MOVE R13 R7  
      692 [-]: NAMECALL R10 R10 K236 [0x830EEA67]
      693 [-]: CALL R10 3 0 
      694 [-]: GETUPVAL R10 4
-     695 [-]: GETIMPORT R12 235 [nil]
+     695 [-]: GETIMPORT R12 235 ["VISIBILITY_CENTER"]
      696 [-]: MOVE R13 R9  
      697 [-]: NAMECALL R10 R10 K236 [0x830EEA67]
      698 [-]: CALL R10 3 0 
      699 [-]: GETUPVAL R10 4
-     700 [-]: GETIMPORT R12 238 [nil]
+     700 [-]: GETIMPORT R12 238 ["VISIBILITY_SIZE"]
      701 [-]: MOVE R13 R7  
      702 [-]: NAMECALL R10 R10 K236 [0x830EEA67]
      703 [-]: CALL R10 3 0 
      704 [-]: GETUPVAL R10 5
-     705 [-]: GETIMPORT R12 235 [nil]
+     705 [-]: GETIMPORT R12 235 ["VISIBILITY_CENTER"]
      706 [-]: MOVE R13 R9  
      707 [-]: NAMECALL R10 R10 K236 [0x830EEA67]
      708 [-]: CALL R10 3 0 
      709 [-]: GETUPVAL R10 5
-     710 [-]: GETIMPORT R12 238 [nil]
+     710 [-]: GETIMPORT R12 238 ["VISIBILITY_SIZE"]
      711 [-]: MOVE R13 R7  
      712 [-]: NAMECALL R10 R10 K236 [0x830EEA67]
      713 [-]: CALL R10 3 0 
      714 [-]: GETUPVAL R10 6
-     715 [-]: GETIMPORT R12 235 [nil]
+     715 [-]: GETIMPORT R12 235 ["VISIBILITY_CENTER"]
      716 [-]: MOVE R13 R9  
      717 [-]: NAMECALL R10 R10 K236 [0x830EEA67]
      718 [-]: CALL R10 3 0 
      719 [-]: GETUPVAL R10 6
-     720 [-]: GETIMPORT R12 238 [nil]
+     720 [-]: GETIMPORT R12 238 ["VISIBILITY_SIZE"]
      721 [-]: MOVE R13 R7  
      722 [-]: NAMECALL R10 R10 K236 [0x830EEA67]
      723 [-]: CALL R10 3 0 
      724 [-]: GETUPVAL R10 6
-     725 [-]: GETIMPORT R12 240 [nil]
+     725 [-]: GETIMPORT R12 240 ["VISIBILITY_FADE_SIZE"]
      726 [-]: LOADN R13 0  
      727 [-]: NAMECALL R10 R10 K236 [0x830EEA67]
      728 [-]: CALL R10 3 0 
@@ -990,7 +990,7 @@ L 5: 729 [-]: DUPCLOSURE R6 K241 []
      768 [-]: SETTABLEKS R6 R3 K270 ["onKeyUp_MENU_CLICK"]
      769 [-]: DUPCLOSURE R6 K271 []
      770 [-]: SETTABLEKS R6 R3 K272 ["Update"]
-     771 [-]: GETIMPORT R6 174 [nil]
+     771 [-]: GETIMPORT R6 174 [0xE6B41ADB]
      772 [-]: CALL R6 0 1  
      773 [-]: JUMPIFNOT R6 L6
      774 [-]: DUPCLOSURE R6 K273 []

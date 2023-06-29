@@ -5,10 +5,10 @@
 ; Is_vararg:       1
 ; Max Stack Size:  3
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x0469F296]
        2 [-]: LOADK R1 K2 ["WolfInvul"]
        3 [-]: CALL R0 1 1  
-       4 [-]: GETIMPORT R1 1 [nil]
+       4 [-]: GETIMPORT R1 1 [0x0469F296]
        5 [-]: LOADK R2 K3 ["DropComplete"]
        6 [-]: CALL R1 1 1  
        7 [-]: DUPCLOSURE R2 K4 []
@@ -27,16 +27,16 @@
 
        0 [-]: FASTCALL1 62 R0 L0
        1 [-]: MOVE R2 R0   
-       2 [-]: GETIMPORT R1 1 [nil]
+       2 [-]: GETIMPORT R1 1 [0x7B998233]
        3 [-]: CALL R1 1 1  
 L 0:   4 [-]: JUMPIFNOT R1 L1
        5 [-]: RETURN R0 0  
-L 1:   6 [-]: GETIMPORT R1 3 [nil]
+L 1:   6 [-]: GETIMPORT R1 3 ["_T"]
        7 [-]: LOADB R2 1   
        8 [-]: SETTABLEKS R2 R1 K4 ["StalkerCustomDespawnActive"]
        9 [-]: NAMECALL R1 R0 K5 [0x18ADFFF0]
       10 [-]: CALL R1 1 0  
-      11 [-]: GETIMPORT R3 7 [nil]
+      11 [-]: GETIMPORT R3 7 [0xA421AF95]
       12 [-]: CALL R3 0 -1 
       13 [-]: NAMECALL R1 R0 K8 [0xC5B6A2D5]
       14 [-]: CALL R1 -1 0 
@@ -44,7 +44,7 @@ L 1:   6 [-]: GETIMPORT R1 3 [nil]
       16 [-]: CALL R1 1 1  
       17 [-]: FASTCALL1 62 R1 L2
       18 [-]: MOVE R3 R1   
-      19 [-]: GETIMPORT R2 1 [nil]
+      19 [-]: GETIMPORT R2 1 [0x7B998233]
       20 [-]: CALL R2 1 1  
 L 2:  21 [-]: JUMPIF R2 L3 
       22 [-]: NAMECALL R2 R1 K10 [0xAC41835F]
@@ -59,14 +59,14 @@ L 3:  26 [-]: NAMECALL R2 R0 K12 [0x1AC1655C]
       31 [-]: LOADN R7 0   
       32 [-]: NAMECALL R2 R2 K13 [0xA383DE31]
       33 [-]: CALL R2 5 0  
-      34 [-]: GETIMPORT R4 15 [nil]
-      35 [-]: GETIMPORT R5 17 [nil]
+      34 [-]: GETIMPORT R4 15 [0xF7888B52]
+      35 [-]: GETIMPORT R5 17 [0x1159EA12]
       36 [-]: NAMECALL R2 R0 K18 [0x47901F07]
       37 [-]: CALL R2 3 0  
-      38 [-]: GETIMPORT R2 20 [nil]
+      38 [-]: GETIMPORT R2 20 [0xCBD666E1]
       39 [-]: LOADK R3 K21 [0.80000000000000004]
       40 [-]: CALL R2 1 0  
-      41 [-]: GETIMPORT R2 23 [nil]
+      41 [-]: GETIMPORT R2 23 [0x89326C93]
       42 [-]: NAMECALL R2 R2 K24 [0x18D05D30]
       43 [-]: CALL R2 1 1  
       44 [-]: JUMPIFNOT R2 L4
@@ -83,7 +83,7 @@ L 3:  26 [-]: NAMECALL R2 R0 K12 [0x1AC1655C]
       55 [-]: CALL R2 1 0  
 L 4:  56 [-]: NAMECALL R2 R0 K29 [0xA2880940]
       57 [-]: CALL R2 1 0  
-      58 [-]: GETIMPORT R2 3 [nil]
+      58 [-]: GETIMPORT R2 3 ["_T"]
       59 [-]: LOADNIL R3   
       60 [-]: SETTABLEKS R3 R2 K4 ["StalkerCustomDespawnActive"]
       61 [-]: RETURN R0 0  

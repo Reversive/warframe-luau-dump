@@ -5,33 +5,33 @@
 ; Is_vararg:       1
 ; Max Stack Size:  21
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0xAEABECDA]
        2 [-]: GETVARARGS R1 1
-       3 [-]: GETIMPORT R2 4 [nil]
+       3 [-]: GETIMPORT R2 4 ["seeall"]
        4 [-]: CALL R0 2 0  
        5 [-]: NEWTABLE R0 0 8
-       6 [-]: GETIMPORT R1 6 [nil]
+       6 [-]: GETIMPORT R1 6 [0x7ED0A956]
        7 [-]: LOADK R2 K7 ["/Lotus/Characters/Tenno/Anima/AnimaHelmetDeco"]
        8 [-]: CALL R1 1 1  
-       9 [-]: GETIMPORT R2 6 [nil]
+       9 [-]: GETIMPORT R2 6 [0x7ED0A956]
       10 [-]: LOADK R3 K8 ["/Lotus/Characters/Tenno/Anima/AnimaAltHelmetDeco"]
       11 [-]: CALL R2 1 1  
-      12 [-]: GETIMPORT R3 6 [nil]
+      12 [-]: GETIMPORT R3 6 [0x7ED0A956]
       13 [-]: LOADK R4 K9 ["/Lotus/Characters/Tenno/Anima/AnimaAltHelmet2Deco"]
       14 [-]: CALL R3 1 1  
-      15 [-]: GETIMPORT R4 6 [nil]
+      15 [-]: GETIMPORT R4 6 [0x7ED0A956]
       16 [-]: LOADK R5 K10 ["/Lotus/Characters/Tenno/Anima/SWInsomnia/SWInsomniaCombinedHelmetDeco"]
       17 [-]: CALL R4 1 1  
-      18 [-]: GETIMPORT R5 6 [nil]
+      18 [-]: GETIMPORT R5 6 [0x7ED0A956]
       19 [-]: LOADK R6 K11 ["/Lotus/Characters/Tenno/Anima/SWDivisa/SWDivisaCombinedHelmetADeco"]
       20 [-]: CALL R5 1 1  
-      21 [-]: GETIMPORT R6 6 [nil]
+      21 [-]: GETIMPORT R6 6 [0x7ED0A956]
       22 [-]: LOADK R7 K12 ["/Lotus/Characters/Tenno/Anima/SWMegaera/SWMegaeraCombinedHelmetDeco"]
       23 [-]: CALL R6 1 1  
-      24 [-]: GETIMPORT R7 6 [nil]
+      24 [-]: GETIMPORT R7 6 [0x7ED0A956]
       25 [-]: LOADK R8 K13 ["/Lotus/Characters/Tenno/Anima/EquinoxPrimeCombinedHelmetDeco"]
       26 [-]: CALL R7 1 1  
-      27 [-]: GETIMPORT R8 6 [nil]
+      27 [-]: GETIMPORT R8 6 [0x7ED0A956]
       28 [-]: LOADK R9 K14 ["/Lotus/Characters/Tenno/Anima/EquinoxDeluxe/EquinoxDeluxeCombinedHelmetDeco"]
       29 [-]: CALL R8 1 -1 
       30 [-]: SETLIST R0 R1 -1 [1]
@@ -41,149 +41,149 @@
       34 [-]: NEWTABLE R4 0 0
       35 [-]: NEWTABLE R5 0 0
       36 [-]: NEWTABLE R6 0 2
-      37 [-]: GETIMPORT R7 6 [nil]
+      37 [-]: GETIMPORT R7 6 [0x7ED0A956]
       38 [-]: LOADK R8 K15 ["/Lotus/Characters/Tenno/Anima/SWDivisa/Cloth/SWDivisaNightHelmetPonyTailASkeletalCloth"]
       39 [-]: CALL R7 1 1  
-      40 [-]: GETIMPORT R8 6 [nil]
+      40 [-]: GETIMPORT R8 6 [0x7ED0A956]
       41 [-]: LOADK R9 K16 ["/Lotus/Characters/Tenno/Anima/SWDivisa/Cloth/SWDivisaDayHelmetPonyTailASkeletalCloth"]
       42 [-]: CALL R8 1 -1 
       43 [-]: SETLIST R6 R7 -1 [1]
       44 [-]: NEWTABLE R7 0 0
       45 [-]: NEWTABLE R8 0 0
       46 [-]: NEWTABLE R9 0 5
-      47 [-]: GETIMPORT R10 6 [nil]
+      47 [-]: GETIMPORT R10 6 [0x7ED0A956]
       48 [-]: LOADK R11 K17 ["/Lotus/Characters/Tenno/Anima/EquinoxDeluxe/Cloth/EquinoxDeluxeLightHelmetClothASkeletalCloth"]
       49 [-]: CALL R10 1 1 
-      50 [-]: GETIMPORT R11 6 [nil]
+      50 [-]: GETIMPORT R11 6 [0x7ED0A956]
       51 [-]: LOADK R12 K18 ["/Lotus/Characters/Tenno/Anima/EquinoxDeluxe/Cloth/EquinoxDeluxeLightHelmetClothBSkeletalCloth"]
       52 [-]: CALL R11 1 1 
-      53 [-]: GETIMPORT R12 6 [nil]
+      53 [-]: GETIMPORT R12 6 [0x7ED0A956]
       54 [-]: LOADK R13 K19 ["/Lotus/Characters/Tenno/Anima/EquinoxDeluxe/Cloth/EquinoxDeluxeNightHelmetClothSkeletalCloth"]
       55 [-]: CALL R12 1 1 
-      56 [-]: GETIMPORT R13 6 [nil]
+      56 [-]: GETIMPORT R13 6 [0x7ED0A956]
       57 [-]: LOADK R14 K20 ["/Lotus/Characters/Tenno/Anima/EquinoxDeluxe/Cloth/EquinoxDeluxeCombinedHelmetClothASkeletalCloth"]
       58 [-]: CALL R13 1 1 
-      59 [-]: GETIMPORT R14 6 [nil]
+      59 [-]: GETIMPORT R14 6 [0x7ED0A956]
       60 [-]: LOADK R15 K21 ["/Lotus/Characters/Tenno/Anima/EquinoxDeluxe/Cloth/EquinoxDeluxeCombinedHelmetClothBSkeletalCloth"]
       61 [-]: CALL R14 1 -1
       62 [-]: SETLIST R9 R10 -1 [1]
       63 [-]: SETLIST R1 R2 8 [1]
       64 [-]: NEWTABLE R2 0 6
-      65 [-]: GETIMPORT R3 6 [nil]
+      65 [-]: GETIMPORT R3 6 [0x7ED0A956]
       66 [-]: LOADK R4 K22 ["/Lotus/Upgrades/Skins/YinYang/YinYangSkin"]
       67 [-]: CALL R3 1 1  
-      68 [-]: GETIMPORT R4 6 [nil]
+      68 [-]: GETIMPORT R4 6 [0x7ED0A956]
       69 [-]: LOADK R5 K23 ["/Lotus/Upgrades/Skins/Anima/SWInsomniaSkin"]
       70 [-]: CALL R4 1 1  
-      71 [-]: GETIMPORT R5 6 [nil]
+      71 [-]: GETIMPORT R5 6 [0x7ED0A956]
       72 [-]: LOADK R6 K24 ["/Lotus/Upgrades/Skins/Anima/SWDivisaSkin"]
       73 [-]: CALL R5 1 1  
-      74 [-]: GETIMPORT R6 6 [nil]
+      74 [-]: GETIMPORT R6 6 [0x7ED0A956]
       75 [-]: LOADK R7 K25 ["/Lotus/Upgrades/Skins/Anima/SWMegaeraSkin"]
       76 [-]: CALL R6 1 1  
-      77 [-]: GETIMPORT R7 6 [nil]
+      77 [-]: GETIMPORT R7 6 [0x7ED0A956]
       78 [-]: LOADK R8 K26 ["/Lotus/Upgrades/Skins/YinYang/EquinoxPrimeSkin"]
       79 [-]: CALL R7 1 1  
-      80 [-]: GETIMPORT R8 6 [nil]
+      80 [-]: GETIMPORT R8 6 [0x7ED0A956]
       81 [-]: LOADK R9 K27 ["/Lotus/Upgrades/Skins/YinYang/EquinoxDeluxeSkin"]
       82 [-]: CALL R8 1 -1 
       83 [-]: SETLIST R2 R3 -1 [1]
       84 [-]: NEWTABLE R3 0 21
-      85 [-]: GETIMPORT R4 6 [nil]
+      85 [-]: GETIMPORT R4 6 [0x7ED0A956]
       86 [-]: LOADK R5 K28 ["/Lotus/Characters/Tenno/Anima/AnimaDressDeco"]
       87 [-]: CALL R4 1 1  
-      88 [-]: GETIMPORT R5 6 [nil]
+      88 [-]: GETIMPORT R5 6 [0x7ED0A956]
       89 [-]: LOADK R6 K29 ["/Lotus/Characters/Tenno/Anima/AnimaSleeveClothLDeco"]
       90 [-]: CALL R5 1 1  
-      91 [-]: GETIMPORT R6 6 [nil]
+      91 [-]: GETIMPORT R6 6 [0x7ED0A956]
       92 [-]: LOADK R7 K30 ["/Lotus/Characters/Tenno/Anima/AnimaSleeveClothRDeco"]
       93 [-]: CALL R6 1 1  
-      94 [-]: GETIMPORT R7 6 [nil]
+      94 [-]: GETIMPORT R7 6 [0x7ED0A956]
       95 [-]: LOADK R8 K31 ["/Lotus/Characters/Tenno/Anima/AnimusLegRingsDeco"]
       96 [-]: CALL R7 1 1  
-      97 [-]: GETIMPORT R8 6 [nil]
+      97 [-]: GETIMPORT R8 6 [0x7ED0A956]
       98 [-]: LOADK R9 K32 ["/Lotus/Characters/Tenno/Anima/AnimaAnimusHalfDressDeco"]
       99 [-]: CALL R8 1 1  
-     100 [-]: GETIMPORT R9 6 [nil]
+     100 [-]: GETIMPORT R9 6 [0x7ED0A956]
      101 [-]: LOADK R10 K33 ["/Lotus/Characters/Tenno/Anima/AnimaAnimusSleeveClothRDeco"]
      102 [-]: CALL R9 1 1  
-     103 [-]: GETIMPORT R10 6 [nil]
+     103 [-]: GETIMPORT R10 6 [0x7ED0A956]
      104 [-]: LOADK R11 K34 ["/Lotus/Characters/Tenno/Anima/Cloth/EquinoxPrimeNightDressDeco"]
      105 [-]: CALL R10 1 1 
-     106 [-]: GETIMPORT R11 6 [nil]
+     106 [-]: GETIMPORT R11 6 [0x7ED0A956]
      107 [-]: LOADK R12 K35 ["/Lotus/Characters/Tenno/Anima/Cloth/EquinoxPrimeNightSleeveClothLDeco"]
      108 [-]: CALL R11 1 1 
-     109 [-]: GETIMPORT R12 6 [nil]
+     109 [-]: GETIMPORT R12 6 [0x7ED0A956]
      110 [-]: LOADK R13 K36 ["/Lotus/Characters/Tenno/Anima/Cloth/EquinoxPrimeNightSleeveClothRDeco"]
      111 [-]: CALL R12 1 1 
-     112 [-]: GETIMPORT R13 6 [nil]
+     112 [-]: GETIMPORT R13 6 [0x7ED0A956]
      113 [-]: LOADK R14 K37 ["/Lotus/Characters/Tenno/Anima/Cloth/EquinoxPrimeCombinedDressDeco"]
      114 [-]: CALL R13 1 1 
-     115 [-]: GETIMPORT R14 6 [nil]
+     115 [-]: GETIMPORT R14 6 [0x7ED0A956]
      116 [-]: LOADK R15 K38 ["/Lotus/Characters/Tenno/Anima/EquinoxDeluxe/Cloth/EquinoxDeluxeCombinedArmClothLDeco"]
      117 [-]: CALL R14 1 1 
-     118 [-]: GETIMPORT R15 6 [nil]
+     118 [-]: GETIMPORT R15 6 [0x7ED0A956]
      119 [-]: LOADK R16 K39 ["/Lotus/Characters/Tenno/Anima/EquinoxDeluxe/Cloth/EquinoxDeluxeCombinedArmClothRDeco"]
      120 [-]: CALL R15 1 1 
-     121 [-]: GETIMPORT R16 6 [nil]
+     121 [-]: GETIMPORT R16 6 [0x7ED0A956]
      122 [-]: LOADK R17 K40 ["/Lotus/Characters/Tenno/Anima/EquinoxDeluxe/Cloth/EquinoxDeluxeCombinedBackDeco"]
      123 [-]: CALL R16 1 1 
-     124 [-]: GETIMPORT R17 6 [nil]
+     124 [-]: GETIMPORT R17 6 [0x7ED0A956]
      125 [-]: LOADK R18 K41 ["/Lotus/Characters/Tenno/Anima/EquinoxDeluxe/Cloth/EquinoxDeluxeCombinedSkirtDeco"]
      126 [-]: CALL R17 1 1 
-     127 [-]: GETIMPORT R18 6 [nil]
+     127 [-]: GETIMPORT R18 6 [0x7ED0A956]
      128 [-]: LOADK R19 K42 ["/Lotus/Characters/Tenno/Anima/EquinoxDeluxe/Cloth/EquinoxDeluxeDayArmClothLDeco"]
      129 [-]: CALL R18 1 1 
-     130 [-]: GETIMPORT R19 6 [nil]
+     130 [-]: GETIMPORT R19 6 [0x7ED0A956]
      131 [-]: LOADK R20 K43 ["/Lotus/Characters/Tenno/Anima/EquinoxDeluxe/Cloth/EquinoxDeluxeDayArmClothRDeco"]
      132 [-]: CALL R19 1 1 
      133 [-]: SETLIST R3 R4 16 [1]
-     134 [-]: GETIMPORT R4 6 [nil]
+     134 [-]: GETIMPORT R4 6 [0x7ED0A956]
      135 [-]: LOADK R5 K44 ["/Lotus/Characters/Tenno/Anima/EquinoxDeluxe/Cloth/EquinoxDeluxeDayBackDeco"]
      136 [-]: CALL R4 1 1  
-     137 [-]: GETIMPORT R5 6 [nil]
+     137 [-]: GETIMPORT R5 6 [0x7ED0A956]
      138 [-]: LOADK R6 K45 ["/Lotus/Characters/Tenno/Anima/EquinoxDeluxe/Cloth/EquinoxDeluxeDaySkirtDeco"]
      139 [-]: CALL R5 1 1  
-     140 [-]: GETIMPORT R6 6 [nil]
+     140 [-]: GETIMPORT R6 6 [0x7ED0A956]
      141 [-]: LOADK R7 K46 ["/Lotus/Characters/Tenno/Anima/EquinoxDeluxe/Cloth/EquinoxDeluxeNightArmClothLDeco"]
      142 [-]: CALL R6 1 1  
-     143 [-]: GETIMPORT R7 6 [nil]
+     143 [-]: GETIMPORT R7 6 [0x7ED0A956]
      144 [-]: LOADK R8 K47 ["/Lotus/Characters/Tenno/Anima/EquinoxDeluxe/Cloth/EquinoxDeluxeNightArmClothRDeco"]
      145 [-]: CALL R7 1 1  
-     146 [-]: GETIMPORT R8 6 [nil]
+     146 [-]: GETIMPORT R8 6 [0x7ED0A956]
      147 [-]: LOADK R9 K48 ["/Lotus/Characters/Tenno/Anima/EquinoxDeluxe/Cloth/EquinoxDeluxeNightBackDeco"]
      148 [-]: CALL R8 1 -1 
      149 [-]: SETLIST R3 R4 -1 [17]
-     150 [-]: GETIMPORT R4 6 [nil]
+     150 [-]: GETIMPORT R4 6 [0x7ED0A956]
      151 [-]: LOADK R5 K49 ["/Lotus/Characters/Tenno/EmptyUsePrimaryTint"]
      152 [-]: CALL R4 1 1  
-     153 [-]: GETIMPORT R5 51 [nil]
+     153 [-]: GETIMPORT R5 51 [0x0469F296]
      154 [-]: LOADK R6 K52 ["EmptyUsePrimaryTint"]
      155 [-]: CALL R5 1 1  
      156 [-]: DUPTABLE R6 67
      157 [-]: NEWTABLE R7 0 8
-     158 [-]: GETIMPORT R8 6 [nil]
+     158 [-]: GETIMPORT R8 6 [0x7ED0A956]
      159 [-]: LOADK R9 K68 ["/Lotus/Characters/Tenno/Anima/AnimaHelmet_skel.fbx"]
      160 [-]: CALL R8 1 1  
-     161 [-]: GETIMPORT R9 6 [nil]
+     161 [-]: GETIMPORT R9 6 [0x7ED0A956]
      162 [-]: LOADK R10 K69 ["/Lotus/Characters/Tenno/Anima/AnimaHelmetAlt_skel.fbx"]
      163 [-]: CALL R9 1 1  
-     164 [-]: GETIMPORT R10 6 [nil]
+     164 [-]: GETIMPORT R10 6 [0x7ED0A956]
      165 [-]: LOADK R11 K70 ["/Lotus/Characters/Tenno/Anima/AnimaAnimusAltHelmet2Dark_skel.fbx"]
      166 [-]: CALL R10 1 1 
-     167 [-]: GETIMPORT R11 6 [nil]
+     167 [-]: GETIMPORT R11 6 [0x7ED0A956]
      168 [-]: LOADK R12 K71 ["/Lotus/Characters/Tenno/Anima/SWInsomnia/SWInsomniaNightHelmet_skel.fbx"]
      169 [-]: CALL R11 1 1 
-     170 [-]: GETIMPORT R12 6 [nil]
+     170 [-]: GETIMPORT R12 6 [0x7ED0A956]
      171 [-]: LOADK R13 K72 ["/Lotus/Characters/Tenno/Anima/SWDivisa/SWDivisaNightHelmet_skel.fbx"]
      172 [-]: CALL R12 1 1 
-     173 [-]: GETIMPORT R13 6 [nil]
+     173 [-]: GETIMPORT R13 6 [0x7ED0A956]
      174 [-]: LOADK R14 K73 ["/Lotus/Characters/Tenno/Anima/SWMegaera/SWMegaeraNightHelmet_skel.fbx"]
      175 [-]: CALL R13 1 1 
-     176 [-]: GETIMPORT R14 6 [nil]
+     176 [-]: GETIMPORT R14 6 [0x7ED0A956]
      177 [-]: LOADK R15 K74 ["/Lotus/Characters/Tenno/Anima/EquinoxPrimeNightHelmet_skel.fbx"]
      178 [-]: CALL R14 1 1 
-     179 [-]: GETIMPORT R15 6 [nil]
+     179 [-]: GETIMPORT R15 6 [0x7ED0A956]
      180 [-]: LOADK R16 K75 ["/Lotus/Characters/Tenno/Anima/EquinoxDeluxe/EquinoxDeluxeNightHelmet_skel.fbx"]
      181 [-]: CALL R15 1 -1
      182 [-]: SETLIST R7 R8 -1 [1]
@@ -194,58 +194,58 @@
      187 [-]: NEWTABLE R10 0 0
      188 [-]: NEWTABLE R11 0 0
      189 [-]: NEWTABLE R12 0 1
-     190 [-]: GETIMPORT R13 6 [nil]
+     190 [-]: GETIMPORT R13 6 [0x7ED0A956]
      191 [-]: LOADK R14 K15 ["/Lotus/Characters/Tenno/Anima/SWDivisa/Cloth/SWDivisaNightHelmetPonyTailASkeletalCloth"]
      192 [-]: CALL R13 1 -1
      193 [-]: SETLIST R12 R13 -1 [1]
      194 [-]: NEWTABLE R13 0 0
      195 [-]: NEWTABLE R14 0 0
      196 [-]: NEWTABLE R15 0 1
-     197 [-]: GETIMPORT R16 6 [nil]
+     197 [-]: GETIMPORT R16 6 [0x7ED0A956]
      198 [-]: LOADK R17 K19 ["/Lotus/Characters/Tenno/Anima/EquinoxDeluxe/Cloth/EquinoxDeluxeNightHelmetClothSkeletalCloth"]
      199 [-]: CALL R16 1 -1
      200 [-]: SETLIST R15 R16 -1 [1]
      201 [-]: SETLIST R7 R8 8 [1]
      202 [-]: SETTABLEKS R7 R6 K54 ["helmAttachments"]
      203 [-]: NEWTABLE R7 0 6
-     204 [-]: GETIMPORT R8 6 [nil]
+     204 [-]: GETIMPORT R8 6 [0x7ED0A956]
      205 [-]: LOADK R9 K76 ["/Lotus/Characters/Tenno/Anima/Anima_skel.fbx"]
      206 [-]: CALL R8 1 1  
-     207 [-]: GETIMPORT R9 6 [nil]
+     207 [-]: GETIMPORT R9 6 [0x7ED0A956]
      208 [-]: LOADK R10 K76 ["/Lotus/Characters/Tenno/Anima/Anima_skel.fbx"]
      209 [-]: CALL R9 1 1  
-     210 [-]: GETIMPORT R10 6 [nil]
+     210 [-]: GETIMPORT R10 6 [0x7ED0A956]
      211 [-]: LOADK R11 K76 ["/Lotus/Characters/Tenno/Anima/Anima_skel.fbx"]
      212 [-]: CALL R10 1 1 
-     213 [-]: GETIMPORT R11 6 [nil]
+     213 [-]: GETIMPORT R11 6 [0x7ED0A956]
      214 [-]: LOADK R12 K76 ["/Lotus/Characters/Tenno/Anima/Anima_skel.fbx"]
      215 [-]: CALL R11 1 1 
-     216 [-]: GETIMPORT R12 6 [nil]
+     216 [-]: GETIMPORT R12 6 [0x7ED0A956]
      217 [-]: LOADK R13 K77 ["/Lotus/Characters/Tenno/Anima/EquinoxPrimeNightBody_skel.fbx"]
      218 [-]: CALL R12 1 1 
-     219 [-]: GETIMPORT R13 6 [nil]
+     219 [-]: GETIMPORT R13 6 [0x7ED0A956]
      220 [-]: LOADK R14 K78 ["/Lotus/Characters/Tenno/Anima/EquinoxDeluxe/EquinoxDeluxeNightBody_skel.fbx"]
      221 [-]: CALL R13 1 -1
      222 [-]: SETLIST R7 R8 -1 [1]
      223 [-]: SETTABLEKS R7 R6 K55 ["mesh"]
-     224 [-]: GETIMPORT R7 6 [nil]
+     224 [-]: GETIMPORT R7 6 [0x7ED0A956]
      225 [-]: LOADK R8 K77 ["/Lotus/Characters/Tenno/Anima/EquinoxPrimeNightBody_skel.fbx"]
      226 [-]: CALL R7 1 1  
      227 [-]: SETTABLEKS R7 R6 K56 ["meshUgly"]
      228 [-]: NEWTABLE R7 0 6
      229 [-]: NEWTABLE R8 0 0
      230 [-]: NEWTABLE R9 0 1
-     231 [-]: GETIMPORT R10 6 [nil]
+     231 [-]: GETIMPORT R10 6 [0x7ED0A956]
      232 [-]: LOADK R11 K79 ["/Lotus/Characters/Tenno/Anima/SWInsomnia/SWInsomniaNightBody"]
      233 [-]: CALL R10 1 -1
      234 [-]: SETLIST R9 R10 -1 [1]
      235 [-]: NEWTABLE R10 0 1
-     236 [-]: GETIMPORT R11 6 [nil]
+     236 [-]: GETIMPORT R11 6 [0x7ED0A956]
      237 [-]: LOADK R12 K80 ["/Lotus/Characters/Tenno/Anima/SWDivisa/SWDivisaNightBodyMat"]
      238 [-]: CALL R11 1 -1
      239 [-]: SETLIST R10 R11 -1 [1]
      240 [-]: NEWTABLE R11 0 1
-     241 [-]: GETIMPORT R12 6 [nil]
+     241 [-]: GETIMPORT R12 6 [0x7ED0A956]
      242 [-]: LOADK R13 K81 ["/Lotus/Characters/Tenno/Anima/SWMegaera/SWMegaeraNightBodyMat"]
      243 [-]: CALL R12 1 -1
      244 [-]: SETLIST R11 R12 -1 [1]
@@ -256,19 +256,19 @@
      249 [-]: NEWTABLE R7 0 6
      250 [-]: NEWTABLE R8 0 0
      251 [-]: NEWTABLE R9 0 2
-     252 [-]: GETIMPORT R10 6 [nil]
+     252 [-]: GETIMPORT R10 6 [0x7ED0A956]
      253 [-]: LOADK R11 K79 ["/Lotus/Characters/Tenno/Anima/SWInsomnia/SWInsomniaNightBody"]
      254 [-]: CALL R10 1 1 
      255 [-]: MOVE R11 R4  
      256 [-]: SETLIST R9 R10 2 [1]
      257 [-]: NEWTABLE R10 0 2
-     258 [-]: GETIMPORT R11 6 [nil]
+     258 [-]: GETIMPORT R11 6 [0x7ED0A956]
      259 [-]: LOADK R12 K80 ["/Lotus/Characters/Tenno/Anima/SWDivisa/SWDivisaNightBodyMat"]
      260 [-]: CALL R11 1 1 
      261 [-]: MOVE R12 R4  
      262 [-]: SETLIST R10 R11 2 [1]
      263 [-]: NEWTABLE R11 0 2
-     264 [-]: GETIMPORT R12 6 [nil]
+     264 [-]: GETIMPORT R12 6 [0x7ED0A956]
      265 [-]: LOADK R13 K81 ["/Lotus/Characters/Tenno/Anima/SWMegaera/SWMegaeraNightBodyMat"]
      266 [-]: CALL R12 1 1 
      267 [-]: MOVE R13 R4  
@@ -279,87 +279,87 @@
      272 [-]: SETTABLEKS R7 R6 K58 ["materialOverridesUgly"]
      273 [-]: NEWTABLE R7 0 6
      274 [-]: NEWTABLE R8 0 3
-     275 [-]: GETIMPORT R9 6 [nil]
+     275 [-]: GETIMPORT R9 6 [0x7ED0A956]
      276 [-]: LOADK R10 K28 ["/Lotus/Characters/Tenno/Anima/AnimaDressDeco"]
      277 [-]: CALL R9 1 1  
-     278 [-]: GETIMPORT R10 6 [nil]
+     278 [-]: GETIMPORT R10 6 [0x7ED0A956]
      279 [-]: LOADK R11 K29 ["/Lotus/Characters/Tenno/Anima/AnimaSleeveClothLDeco"]
      280 [-]: CALL R10 1 1 
-     281 [-]: GETIMPORT R11 6 [nil]
+     281 [-]: GETIMPORT R11 6 [0x7ED0A956]
      282 [-]: LOADK R12 K30 ["/Lotus/Characters/Tenno/Anima/AnimaSleeveClothRDeco"]
      283 [-]: CALL R11 1 -1
      284 [-]: SETLIST R8 R9 -1 [1]
      285 [-]: NEWTABLE R9 0 3
-     286 [-]: GETIMPORT R10 6 [nil]
+     286 [-]: GETIMPORT R10 6 [0x7ED0A956]
      287 [-]: LOADK R11 K28 ["/Lotus/Characters/Tenno/Anima/AnimaDressDeco"]
      288 [-]: CALL R10 1 1 
-     289 [-]: GETIMPORT R11 6 [nil]
+     289 [-]: GETIMPORT R11 6 [0x7ED0A956]
      290 [-]: LOADK R12 K29 ["/Lotus/Characters/Tenno/Anima/AnimaSleeveClothLDeco"]
      291 [-]: CALL R11 1 1 
-     292 [-]: GETIMPORT R12 6 [nil]
+     292 [-]: GETIMPORT R12 6 [0x7ED0A956]
      293 [-]: LOADK R13 K30 ["/Lotus/Characters/Tenno/Anima/AnimaSleeveClothRDeco"]
      294 [-]: CALL R12 1 -1
      295 [-]: SETLIST R9 R10 -1 [1]
      296 [-]: NEWTABLE R10 0 3
-     297 [-]: GETIMPORT R11 6 [nil]
+     297 [-]: GETIMPORT R11 6 [0x7ED0A956]
      298 [-]: LOADK R12 K28 ["/Lotus/Characters/Tenno/Anima/AnimaDressDeco"]
      299 [-]: CALL R11 1 1 
-     300 [-]: GETIMPORT R12 6 [nil]
+     300 [-]: GETIMPORT R12 6 [0x7ED0A956]
      301 [-]: LOADK R13 K29 ["/Lotus/Characters/Tenno/Anima/AnimaSleeveClothLDeco"]
      302 [-]: CALL R12 1 1 
-     303 [-]: GETIMPORT R13 6 [nil]
+     303 [-]: GETIMPORT R13 6 [0x7ED0A956]
      304 [-]: LOADK R14 K30 ["/Lotus/Characters/Tenno/Anima/AnimaSleeveClothRDeco"]
      305 [-]: CALL R13 1 -1
      306 [-]: SETLIST R10 R11 -1 [1]
      307 [-]: NEWTABLE R11 0 3
-     308 [-]: GETIMPORT R12 6 [nil]
+     308 [-]: GETIMPORT R12 6 [0x7ED0A956]
      309 [-]: LOADK R13 K28 ["/Lotus/Characters/Tenno/Anima/AnimaDressDeco"]
      310 [-]: CALL R12 1 1 
-     311 [-]: GETIMPORT R13 6 [nil]
+     311 [-]: GETIMPORT R13 6 [0x7ED0A956]
      312 [-]: LOADK R14 K29 ["/Lotus/Characters/Tenno/Anima/AnimaSleeveClothLDeco"]
      313 [-]: CALL R13 1 1 
-     314 [-]: GETIMPORT R14 6 [nil]
+     314 [-]: GETIMPORT R14 6 [0x7ED0A956]
      315 [-]: LOADK R15 K30 ["/Lotus/Characters/Tenno/Anima/AnimaSleeveClothRDeco"]
      316 [-]: CALL R14 1 -1
      317 [-]: SETLIST R11 R12 -1 [1]
      318 [-]: NEWTABLE R12 0 4
-     319 [-]: GETIMPORT R13 6 [nil]
+     319 [-]: GETIMPORT R13 6 [0x7ED0A956]
      320 [-]: LOADK R14 K34 ["/Lotus/Characters/Tenno/Anima/Cloth/EquinoxPrimeNightDressDeco"]
      321 [-]: CALL R13 1 1 
-     322 [-]: GETIMPORT R14 6 [nil]
+     322 [-]: GETIMPORT R14 6 [0x7ED0A956]
      323 [-]: LOADK R15 K37 ["/Lotus/Characters/Tenno/Anima/Cloth/EquinoxPrimeCombinedDressDeco"]
      324 [-]: CALL R14 1 1 
-     325 [-]: GETIMPORT R15 6 [nil]
+     325 [-]: GETIMPORT R15 6 [0x7ED0A956]
      326 [-]: LOADK R16 K35 ["/Lotus/Characters/Tenno/Anima/Cloth/EquinoxPrimeNightSleeveClothLDeco"]
      327 [-]: CALL R15 1 1 
-     328 [-]: GETIMPORT R16 6 [nil]
+     328 [-]: GETIMPORT R16 6 [0x7ED0A956]
      329 [-]: LOADK R17 K36 ["/Lotus/Characters/Tenno/Anima/Cloth/EquinoxPrimeNightSleeveClothRDeco"]
      330 [-]: CALL R16 1 -1
      331 [-]: SETLIST R12 R13 -1 [1]
      332 [-]: NEWTABLE R13 0 3
-     333 [-]: GETIMPORT R14 6 [nil]
+     333 [-]: GETIMPORT R14 6 [0x7ED0A956]
      334 [-]: LOADK R15 K46 ["/Lotus/Characters/Tenno/Anima/EquinoxDeluxe/Cloth/EquinoxDeluxeNightArmClothLDeco"]
      335 [-]: CALL R14 1 1 
-     336 [-]: GETIMPORT R15 6 [nil]
+     336 [-]: GETIMPORT R15 6 [0x7ED0A956]
      337 [-]: LOADK R16 K47 ["/Lotus/Characters/Tenno/Anima/EquinoxDeluxe/Cloth/EquinoxDeluxeNightArmClothRDeco"]
      338 [-]: CALL R15 1 1 
-     339 [-]: GETIMPORT R16 6 [nil]
+     339 [-]: GETIMPORT R16 6 [0x7ED0A956]
      340 [-]: LOADK R17 K48 ["/Lotus/Characters/Tenno/Anima/EquinoxDeluxe/Cloth/EquinoxDeluxeNightBackDeco"]
      341 [-]: CALL R16 1 -1
      342 [-]: SETLIST R13 R14 -1 [1]
      343 [-]: SETLIST R7 R8 6 [1]
      344 [-]: SETTABLEKS R7 R6 K59 ["attachments"]
      345 [-]: NEWTABLE R7 0 4
-     346 [-]: GETIMPORT R8 6 [nil]
+     346 [-]: GETIMPORT R8 6 [0x7ED0A956]
      347 [-]: LOADK R9 K34 ["/Lotus/Characters/Tenno/Anima/Cloth/EquinoxPrimeNightDressDeco"]
      348 [-]: CALL R8 1 1  
-     349 [-]: GETIMPORT R9 6 [nil]
+     349 [-]: GETIMPORT R9 6 [0x7ED0A956]
      350 [-]: LOADK R10 K37 ["/Lotus/Characters/Tenno/Anima/Cloth/EquinoxPrimeCombinedDressDeco"]
      351 [-]: CALL R9 1 1  
-     352 [-]: GETIMPORT R10 6 [nil]
+     352 [-]: GETIMPORT R10 6 [0x7ED0A956]
      353 [-]: LOADK R11 K35 ["/Lotus/Characters/Tenno/Anima/Cloth/EquinoxPrimeNightSleeveClothLDeco"]
      354 [-]: CALL R10 1 1 
-     355 [-]: GETIMPORT R11 6 [nil]
+     355 [-]: GETIMPORT R11 6 [0x7ED0A956]
      356 [-]: LOADK R12 K36 ["/Lotus/Characters/Tenno/Anima/Cloth/EquinoxPrimeNightSleeveClothRDeco"]
      357 [-]: CALL R11 1 -1
      358 [-]: SETLIST R7 R8 -1 [1]
@@ -367,53 +367,53 @@
      360 [-]: NEWTABLE R7 0 6
      361 [-]: NEWTABLE R8 0 0
      362 [-]: NEWTABLE R9 0 5
-     363 [-]: GETIMPORT R10 6 [nil]
+     363 [-]: GETIMPORT R10 6 [0x7ED0A956]
      364 [-]: LOADK R11 K82 ["/Lotus/Characters/Tenno/Anima/SWInsomnia/SWInsomniaNightCloth"]
      365 [-]: CALL R10 1 1 
-     366 [-]: GETIMPORT R11 6 [nil]
+     366 [-]: GETIMPORT R11 6 [0x7ED0A956]
      367 [-]: LOADK R12 K82 ["/Lotus/Characters/Tenno/Anima/SWInsomnia/SWInsomniaNightCloth"]
      368 [-]: CALL R11 1 1 
-     369 [-]: GETIMPORT R12 6 [nil]
+     369 [-]: GETIMPORT R12 6 [0x7ED0A956]
      370 [-]: LOADK R13 K82 ["/Lotus/Characters/Tenno/Anima/SWInsomnia/SWInsomniaNightCloth"]
      371 [-]: CALL R12 1 1 
-     372 [-]: GETIMPORT R13 6 [nil]
+     372 [-]: GETIMPORT R13 6 [0x7ED0A956]
      373 [-]: LOADK R14 K82 ["/Lotus/Characters/Tenno/Anima/SWInsomnia/SWInsomniaNightCloth"]
      374 [-]: CALL R13 1 1 
-     375 [-]: GETIMPORT R14 6 [nil]
+     375 [-]: GETIMPORT R14 6 [0x7ED0A956]
      376 [-]: LOADK R15 K82 ["/Lotus/Characters/Tenno/Anima/SWInsomnia/SWInsomniaNightCloth"]
      377 [-]: CALL R14 1 -1
      378 [-]: SETLIST R9 R10 -1 [1]
      379 [-]: NEWTABLE R10 0 5
-     380 [-]: GETIMPORT R11 6 [nil]
+     380 [-]: GETIMPORT R11 6 [0x7ED0A956]
      381 [-]: LOADK R12 K83 ["/Lotus/Characters/Tenno/Anima/SWDivisa/SWDivisaNightClothMat"]
      382 [-]: CALL R11 1 1 
-     383 [-]: GETIMPORT R12 6 [nil]
+     383 [-]: GETIMPORT R12 6 [0x7ED0A956]
      384 [-]: LOADK R13 K83 ["/Lotus/Characters/Tenno/Anima/SWDivisa/SWDivisaNightClothMat"]
      385 [-]: CALL R12 1 1 
-     386 [-]: GETIMPORT R13 6 [nil]
+     386 [-]: GETIMPORT R13 6 [0x7ED0A956]
      387 [-]: LOADK R14 K83 ["/Lotus/Characters/Tenno/Anima/SWDivisa/SWDivisaNightClothMat"]
      388 [-]: CALL R13 1 1 
-     389 [-]: GETIMPORT R14 6 [nil]
+     389 [-]: GETIMPORT R14 6 [0x7ED0A956]
      390 [-]: LOADK R15 K83 ["/Lotus/Characters/Tenno/Anima/SWDivisa/SWDivisaNightClothMat"]
      391 [-]: CALL R14 1 1 
-     392 [-]: GETIMPORT R15 6 [nil]
+     392 [-]: GETIMPORT R15 6 [0x7ED0A956]
      393 [-]: LOADK R16 K83 ["/Lotus/Characters/Tenno/Anima/SWDivisa/SWDivisaNightClothMat"]
      394 [-]: CALL R15 1 -1
      395 [-]: SETLIST R10 R11 -1 [1]
      396 [-]: NEWTABLE R11 0 5
-     397 [-]: GETIMPORT R12 6 [nil]
+     397 [-]: GETIMPORT R12 6 [0x7ED0A956]
      398 [-]: LOADK R13 K84 ["/Lotus/Characters/Tenno/Anima/SWMegaera/SWMegaeraNightColthMat"]
      399 [-]: CALL R12 1 1 
-     400 [-]: GETIMPORT R13 6 [nil]
+     400 [-]: GETIMPORT R13 6 [0x7ED0A956]
      401 [-]: LOADK R14 K84 ["/Lotus/Characters/Tenno/Anima/SWMegaera/SWMegaeraNightColthMat"]
      402 [-]: CALL R13 1 1 
-     403 [-]: GETIMPORT R14 6 [nil]
+     403 [-]: GETIMPORT R14 6 [0x7ED0A956]
      404 [-]: LOADK R15 K84 ["/Lotus/Characters/Tenno/Anima/SWMegaera/SWMegaeraNightColthMat"]
      405 [-]: CALL R14 1 1 
-     406 [-]: GETIMPORT R15 6 [nil]
+     406 [-]: GETIMPORT R15 6 [0x7ED0A956]
      407 [-]: LOADK R16 K84 ["/Lotus/Characters/Tenno/Anima/SWMegaera/SWMegaeraNightColthMat"]
      408 [-]: CALL R15 1 1 
-     409 [-]: GETIMPORT R16 6 [nil]
+     409 [-]: GETIMPORT R16 6 [0x7ED0A956]
      410 [-]: LOADK R17 K84 ["/Lotus/Characters/Tenno/Anima/SWMegaera/SWMegaeraNightColthMat"]
      411 [-]: CALL R16 1 -1
      412 [-]: SETLIST R11 R12 -1 [1]
@@ -424,27 +424,27 @@
      417 [-]: NEWTABLE R7 0 0
      418 [-]: SETTABLEKS R7 R6 K62 ["attachmentMaterialOverridesUgly"]
      419 [-]: NEWTABLE R7 0 6
-     420 [-]: GETIMPORT R8 6 [nil]
+     420 [-]: GETIMPORT R8 6 [0x7ED0A956]
      421 [-]: LOADK R9 K85 ["/Lotus/Powersuits/YinYang/YinCustomizationInfo"]
      422 [-]: CALL R8 1 1  
-     423 [-]: GETIMPORT R9 6 [nil]
+     423 [-]: GETIMPORT R9 6 [0x7ED0A956]
      424 [-]: LOADK R10 K85 ["/Lotus/Powersuits/YinYang/YinCustomizationInfo"]
      425 [-]: CALL R9 1 1  
-     426 [-]: GETIMPORT R10 6 [nil]
+     426 [-]: GETIMPORT R10 6 [0x7ED0A956]
      427 [-]: LOADK R11 K85 ["/Lotus/Powersuits/YinYang/YinCustomizationInfo"]
      428 [-]: CALL R10 1 1 
-     429 [-]: GETIMPORT R11 6 [nil]
+     429 [-]: GETIMPORT R11 6 [0x7ED0A956]
      430 [-]: LOADK R12 K85 ["/Lotus/Powersuits/YinYang/YinCustomizationInfo"]
      431 [-]: CALL R11 1 1 
-     432 [-]: GETIMPORT R12 6 [nil]
+     432 [-]: GETIMPORT R12 6 [0x7ED0A956]
      433 [-]: LOADK R13 K86 ["/Lotus/Powersuits/YinYang/EquinoxPrimeNightCustomizationInfo"]
      434 [-]: CALL R12 1 1 
-     435 [-]: GETIMPORT R13 6 [nil]
+     435 [-]: GETIMPORT R13 6 [0x7ED0A956]
      436 [-]: LOADK R14 K87 ["/Lotus/Powersuits/YinYang/EquinoxDeluxeNightCustomizationInfo"]
      437 [-]: CALL R13 1 -1
      438 [-]: SETLIST R7 R8 -1 [1]
      439 [-]: SETTABLEKS R7 R6 K63 ["customizationInfo"]
-     440 [-]: GETIMPORT R7 6 [nil]
+     440 [-]: GETIMPORT R7 6 [0x7ED0A956]
      441 [-]: LOADK R8 K86 ["/Lotus/Powersuits/YinYang/EquinoxPrimeNightCustomizationInfo"]
      442 [-]: CALL R7 1 1  
      443 [-]: SETTABLEKS R7 R6 K64 ["customizationInfoUgly"]
@@ -458,44 +458,44 @@
      451 [-]: SETLIST R7 R8 6 [1]
      452 [-]: SETTABLEKS R7 R6 K65 ["simCollisionOverride"]
      453 [-]: NEWTABLE R7 0 4
-     454 [-]: GETIMPORT R8 6 [nil]
+     454 [-]: GETIMPORT R8 6 [0x7ED0A956]
      455 [-]: LOADK R9 K88 ["/Lotus/Interface/Icons/Abilities/YinYangSwitch.png"]
      456 [-]: CALL R8 1 1  
-     457 [-]: GETIMPORT R9 6 [nil]
+     457 [-]: GETIMPORT R9 6 [0x7ED0A956]
      458 [-]: LOADK R10 K89 ["/Lotus/Interface/Icons/Abilities/YinYangTargetCalm.png"]
      459 [-]: CALL R9 1 1  
-     460 [-]: GETIMPORT R10 6 [nil]
+     460 [-]: GETIMPORT R10 6 [0x7ED0A956]
      461 [-]: LOADK R11 K90 ["/Lotus/Interface/Icons/Abilities/YinYangAuraEnemyDamage.png"]
      462 [-]: CALL R10 1 1 
-     463 [-]: GETIMPORT R11 6 [nil]
+     463 [-]: GETIMPORT R11 6 [0x7ED0A956]
      464 [-]: LOADK R12 K91 ["/Lotus/Interface/Icons/Abilities/YinYangBlastHeal.png"]
      465 [-]: CALL R11 1 -1
      466 [-]: SETLIST R7 R8 -1 [1]
      467 [-]: SETTABLEKS R7 R6 K66 ["abilityIcons"]
      468 [-]: DUPTABLE R7 93
      469 [-]: NEWTABLE R8 0 8
-     470 [-]: GETIMPORT R9 6 [nil]
+     470 [-]: GETIMPORT R9 6 [0x7ED0A956]
      471 [-]: LOADK R10 K94 ["/Lotus/Characters/Tenno/Anima/AnimusHelmet_skel.fbx"]
      472 [-]: CALL R9 1 1  
-     473 [-]: GETIMPORT R10 6 [nil]
+     473 [-]: GETIMPORT R10 6 [0x7ED0A956]
      474 [-]: LOADK R11 K95 ["/Lotus/Characters/Tenno/Anima/AnimusHelmetAlt_skel.fbx"]
      475 [-]: CALL R10 1 1 
-     476 [-]: GETIMPORT R11 6 [nil]
+     476 [-]: GETIMPORT R11 6 [0x7ED0A956]
      477 [-]: LOADK R12 K96 ["/Lotus/Characters/Tenno/Anima/AnimaAnimusAltHelmet2Light_skel.fbx"]
      478 [-]: CALL R11 1 1 
-     479 [-]: GETIMPORT R12 6 [nil]
+     479 [-]: GETIMPORT R12 6 [0x7ED0A956]
      480 [-]: LOADK R13 K97 ["/Lotus/Characters/Tenno/Anima/SWInsomnia/SWInsomniaDayHelmet_skel.fbx"]
      481 [-]: CALL R12 1 1 
-     482 [-]: GETIMPORT R13 6 [nil]
+     482 [-]: GETIMPORT R13 6 [0x7ED0A956]
      483 [-]: LOADK R14 K98 ["/Lotus/Characters/Tenno/Anima/SWDivisa/SWDivisaDayHelmet_skel.fbx"]
      484 [-]: CALL R13 1 1 
-     485 [-]: GETIMPORT R14 6 [nil]
+     485 [-]: GETIMPORT R14 6 [0x7ED0A956]
      486 [-]: LOADK R15 K99 ["/Lotus/Characters/Tenno/Anima/SWMegaera/SWMegaeraDayHelmet_skel.fbx"]
      487 [-]: CALL R14 1 1 
-     488 [-]: GETIMPORT R15 6 [nil]
+     488 [-]: GETIMPORT R15 6 [0x7ED0A956]
      489 [-]: LOADK R16 K100 ["/Lotus/Characters/Tenno/Anima/EquinoxPrimeDayHelmet_skel.fbx"]
      490 [-]: CALL R15 1 1 
-     491 [-]: GETIMPORT R16 6 [nil]
+     491 [-]: GETIMPORT R16 6 [0x7ED0A956]
      492 [-]: LOADK R17 K101 ["/Lotus/Characters/Tenno/Anima/EquinoxDeluxe/EquinoxDeluxeLightHelmet_skel.fbx"]
      493 [-]: CALL R16 1 -1
      494 [-]: SETLIST R8 R9 -1 [1]
@@ -506,61 +506,61 @@
      499 [-]: NEWTABLE R11 0 0
      500 [-]: NEWTABLE R12 0 0
      501 [-]: NEWTABLE R13 0 1
-     502 [-]: GETIMPORT R14 6 [nil]
+     502 [-]: GETIMPORT R14 6 [0x7ED0A956]
      503 [-]: LOADK R15 K16 ["/Lotus/Characters/Tenno/Anima/SWDivisa/Cloth/SWDivisaDayHelmetPonyTailASkeletalCloth"]
      504 [-]: CALL R14 1 -1
      505 [-]: SETLIST R13 R14 -1 [1]
      506 [-]: NEWTABLE R14 0 0
      507 [-]: NEWTABLE R15 0 0
      508 [-]: NEWTABLE R16 0 2
-     509 [-]: GETIMPORT R17 6 [nil]
+     509 [-]: GETIMPORT R17 6 [0x7ED0A956]
      510 [-]: LOADK R18 K17 ["/Lotus/Characters/Tenno/Anima/EquinoxDeluxe/Cloth/EquinoxDeluxeLightHelmetClothASkeletalCloth"]
      511 [-]: CALL R17 1 1 
-     512 [-]: GETIMPORT R18 6 [nil]
+     512 [-]: GETIMPORT R18 6 [0x7ED0A956]
      513 [-]: LOADK R19 K18 ["/Lotus/Characters/Tenno/Anima/EquinoxDeluxe/Cloth/EquinoxDeluxeLightHelmetClothBSkeletalCloth"]
      514 [-]: CALL R18 1 -1
      515 [-]: SETLIST R16 R17 -1 [1]
      516 [-]: SETLIST R8 R9 8 [1]
      517 [-]: SETTABLEKS R8 R7 K54 ["helmAttachments"]
      518 [-]: NEWTABLE R8 0 6
-     519 [-]: GETIMPORT R9 6 [nil]
+     519 [-]: GETIMPORT R9 6 [0x7ED0A956]
      520 [-]: LOADK R10 K102 ["/Lotus/Characters/Tenno/Anima/Animus_skel.fbx"]
      521 [-]: CALL R9 1 1  
-     522 [-]: GETIMPORT R10 6 [nil]
+     522 [-]: GETIMPORT R10 6 [0x7ED0A956]
      523 [-]: LOADK R11 K102 ["/Lotus/Characters/Tenno/Anima/Animus_skel.fbx"]
      524 [-]: CALL R10 1 1 
-     525 [-]: GETIMPORT R11 6 [nil]
+     525 [-]: GETIMPORT R11 6 [0x7ED0A956]
      526 [-]: LOADK R12 K102 ["/Lotus/Characters/Tenno/Anima/Animus_skel.fbx"]
      527 [-]: CALL R11 1 1 
-     528 [-]: GETIMPORT R12 6 [nil]
+     528 [-]: GETIMPORT R12 6 [0x7ED0A956]
      529 [-]: LOADK R13 K102 ["/Lotus/Characters/Tenno/Anima/Animus_skel.fbx"]
      530 [-]: CALL R12 1 1 
-     531 [-]: GETIMPORT R13 6 [nil]
+     531 [-]: GETIMPORT R13 6 [0x7ED0A956]
      532 [-]: LOADK R14 K103 ["/Lotus/Characters/Tenno/Anima/EquinoxPrimeDayBody_skel.fbx"]
      533 [-]: CALL R13 1 1 
-     534 [-]: GETIMPORT R14 6 [nil]
+     534 [-]: GETIMPORT R14 6 [0x7ED0A956]
      535 [-]: LOADK R15 K104 ["/Lotus/Characters/Tenno/Anima/EquinoxDeluxe/EquinoxDeluxeLightBody_skel.fbx"]
      536 [-]: CALL R14 1 -1
      537 [-]: SETLIST R8 R9 -1 [1]
      538 [-]: SETTABLEKS R8 R7 K55 ["mesh"]
-     539 [-]: GETIMPORT R8 6 [nil]
+     539 [-]: GETIMPORT R8 6 [0x7ED0A956]
      540 [-]: LOADK R9 K103 ["/Lotus/Characters/Tenno/Anima/EquinoxPrimeDayBody_skel.fbx"]
      541 [-]: CALL R8 1 1  
      542 [-]: SETTABLEKS R8 R7 K56 ["meshUgly"]
      543 [-]: NEWTABLE R8 0 6
      544 [-]: NEWTABLE R9 0 0
      545 [-]: NEWTABLE R10 0 1
-     546 [-]: GETIMPORT R11 6 [nil]
+     546 [-]: GETIMPORT R11 6 [0x7ED0A956]
      547 [-]: LOADK R12 K105 ["/Lotus/Characters/Tenno/Anima/SWInsomnia/SWInsomniaDayBody"]
      548 [-]: CALL R11 1 -1
      549 [-]: SETLIST R10 R11 -1 [1]
      550 [-]: NEWTABLE R11 0 1
-     551 [-]: GETIMPORT R12 6 [nil]
+     551 [-]: GETIMPORT R12 6 [0x7ED0A956]
      552 [-]: LOADK R13 K106 ["/Lotus/Characters/Tenno/Anima/SWDivisa/SWDivisaDayBodyMat"]
      553 [-]: CALL R12 1 -1
      554 [-]: SETLIST R11 R12 -1 [1]
      555 [-]: NEWTABLE R12 0 1
-     556 [-]: GETIMPORT R13 6 [nil]
+     556 [-]: GETIMPORT R13 6 [0x7ED0A956]
      557 [-]: LOADK R14 K107 ["/Lotus/Characters/Tenno/Anima/SWMegaera/SWMegaeraDayBodyMat"]
      558 [-]: CALL R13 1 -1
      559 [-]: SETLIST R12 R13 -1 [1]
@@ -571,19 +571,19 @@
      564 [-]: NEWTABLE R8 0 6
      565 [-]: NEWTABLE R9 0 0
      566 [-]: NEWTABLE R10 0 2
-     567 [-]: GETIMPORT R11 6 [nil]
+     567 [-]: GETIMPORT R11 6 [0x7ED0A956]
      568 [-]: LOADK R12 K105 ["/Lotus/Characters/Tenno/Anima/SWInsomnia/SWInsomniaDayBody"]
      569 [-]: CALL R11 1 1 
      570 [-]: MOVE R12 R4  
      571 [-]: SETLIST R10 R11 2 [1]
      572 [-]: NEWTABLE R11 0 2
-     573 [-]: GETIMPORT R12 6 [nil]
+     573 [-]: GETIMPORT R12 6 [0x7ED0A956]
      574 [-]: LOADK R13 K106 ["/Lotus/Characters/Tenno/Anima/SWDivisa/SWDivisaDayBodyMat"]
      575 [-]: CALL R12 1 1 
      576 [-]: MOVE R13 R4  
      577 [-]: SETLIST R11 R12 2 [1]
      578 [-]: NEWTABLE R12 0 2
-     579 [-]: GETIMPORT R13 6 [nil]
+     579 [-]: GETIMPORT R13 6 [0x7ED0A956]
      580 [-]: LOADK R14 K107 ["/Lotus/Characters/Tenno/Anima/SWMegaera/SWMegaeraDayBodyMat"]
      581 [-]: CALL R13 1 1 
      582 [-]: MOVE R14 R4  
@@ -594,37 +594,37 @@
      587 [-]: SETTABLEKS R8 R7 K58 ["materialOverridesUgly"]
      588 [-]: NEWTABLE R8 0 6
      589 [-]: NEWTABLE R9 0 1
-     590 [-]: GETIMPORT R10 6 [nil]
+     590 [-]: GETIMPORT R10 6 [0x7ED0A956]
      591 [-]: LOADK R11 K31 ["/Lotus/Characters/Tenno/Anima/AnimusLegRingsDeco"]
      592 [-]: CALL R10 1 -1
      593 [-]: SETLIST R9 R10 -1 [1]
      594 [-]: NEWTABLE R10 0 1
-     595 [-]: GETIMPORT R11 6 [nil]
+     595 [-]: GETIMPORT R11 6 [0x7ED0A956]
      596 [-]: LOADK R12 K31 ["/Lotus/Characters/Tenno/Anima/AnimusLegRingsDeco"]
      597 [-]: CALL R11 1 -1
      598 [-]: SETLIST R10 R11 -1 [1]
      599 [-]: NEWTABLE R11 0 1
-     600 [-]: GETIMPORT R12 6 [nil]
+     600 [-]: GETIMPORT R12 6 [0x7ED0A956]
      601 [-]: LOADK R13 K31 ["/Lotus/Characters/Tenno/Anima/AnimusLegRingsDeco"]
      602 [-]: CALL R12 1 -1
      603 [-]: SETLIST R11 R12 -1 [1]
      604 [-]: NEWTABLE R12 0 1
-     605 [-]: GETIMPORT R13 6 [nil]
+     605 [-]: GETIMPORT R13 6 [0x7ED0A956]
      606 [-]: LOADK R14 K31 ["/Lotus/Characters/Tenno/Anima/AnimusLegRingsDeco"]
      607 [-]: CALL R13 1 -1
      608 [-]: SETLIST R12 R13 -1 [1]
      609 [-]: NEWTABLE R13 0 0
      610 [-]: NEWTABLE R14 0 4
-     611 [-]: GETIMPORT R15 6 [nil]
+     611 [-]: GETIMPORT R15 6 [0x7ED0A956]
      612 [-]: LOADK R16 K42 ["/Lotus/Characters/Tenno/Anima/EquinoxDeluxe/Cloth/EquinoxDeluxeDayArmClothLDeco"]
      613 [-]: CALL R15 1 1 
-     614 [-]: GETIMPORT R16 6 [nil]
+     614 [-]: GETIMPORT R16 6 [0x7ED0A956]
      615 [-]: LOADK R17 K43 ["/Lotus/Characters/Tenno/Anima/EquinoxDeluxe/Cloth/EquinoxDeluxeDayArmClothRDeco"]
      616 [-]: CALL R16 1 1 
-     617 [-]: GETIMPORT R17 6 [nil]
+     617 [-]: GETIMPORT R17 6 [0x7ED0A956]
      618 [-]: LOADK R18 K44 ["/Lotus/Characters/Tenno/Anima/EquinoxDeluxe/Cloth/EquinoxDeluxeDayBackDeco"]
      619 [-]: CALL R17 1 1 
-     620 [-]: GETIMPORT R18 6 [nil]
+     620 [-]: GETIMPORT R18 6 [0x7ED0A956]
      621 [-]: LOADK R19 K45 ["/Lotus/Characters/Tenno/Anima/EquinoxDeluxe/Cloth/EquinoxDeluxeDaySkirtDeco"]
      622 [-]: CALL R18 1 -1
      623 [-]: SETLIST R14 R15 -1 [1]
@@ -635,17 +635,17 @@
      628 [-]: NEWTABLE R8 0 6
      629 [-]: NEWTABLE R9 0 0
      630 [-]: NEWTABLE R10 0 1
-     631 [-]: GETIMPORT R11 6 [nil]
+     631 [-]: GETIMPORT R11 6 [0x7ED0A956]
      632 [-]: LOADK R12 K105 ["/Lotus/Characters/Tenno/Anima/SWInsomnia/SWInsomniaDayBody"]
      633 [-]: CALL R11 1 -1
      634 [-]: SETLIST R10 R11 -1 [1]
      635 [-]: NEWTABLE R11 0 1
-     636 [-]: GETIMPORT R12 6 [nil]
+     636 [-]: GETIMPORT R12 6 [0x7ED0A956]
      637 [-]: LOADK R13 K106 ["/Lotus/Characters/Tenno/Anima/SWDivisa/SWDivisaDayBodyMat"]
      638 [-]: CALL R12 1 -1
      639 [-]: SETLIST R11 R12 -1 [1]
      640 [-]: NEWTABLE R12 0 1
-     641 [-]: GETIMPORT R13 6 [nil]
+     641 [-]: GETIMPORT R13 6 [0x7ED0A956]
      642 [-]: LOADK R14 K107 ["/Lotus/Characters/Tenno/Anima/SWMegaera/SWMegaeraDayBodyMat"]
      643 [-]: CALL R13 1 -1
      644 [-]: SETLIST R12 R13 -1 [1]
@@ -656,27 +656,27 @@
      649 [-]: NEWTABLE R8 0 0
      650 [-]: SETTABLEKS R8 R7 K62 ["attachmentMaterialOverridesUgly"]
      651 [-]: NEWTABLE R8 0 6
-     652 [-]: GETIMPORT R9 6 [nil]
+     652 [-]: GETIMPORT R9 6 [0x7ED0A956]
      653 [-]: LOADK R10 K108 ["/Lotus/Powersuits/YinYang/YangCustomizationInfo"]
      654 [-]: CALL R9 1 1  
-     655 [-]: GETIMPORT R10 6 [nil]
+     655 [-]: GETIMPORT R10 6 [0x7ED0A956]
      656 [-]: LOADK R11 K108 ["/Lotus/Powersuits/YinYang/YangCustomizationInfo"]
      657 [-]: CALL R10 1 1 
-     658 [-]: GETIMPORT R11 6 [nil]
+     658 [-]: GETIMPORT R11 6 [0x7ED0A956]
      659 [-]: LOADK R12 K108 ["/Lotus/Powersuits/YinYang/YangCustomizationInfo"]
      660 [-]: CALL R11 1 1 
-     661 [-]: GETIMPORT R12 6 [nil]
+     661 [-]: GETIMPORT R12 6 [0x7ED0A956]
      662 [-]: LOADK R13 K108 ["/Lotus/Powersuits/YinYang/YangCustomizationInfo"]
      663 [-]: CALL R12 1 1 
-     664 [-]: GETIMPORT R13 6 [nil]
+     664 [-]: GETIMPORT R13 6 [0x7ED0A956]
      665 [-]: LOADK R14 K109 ["/Lotus/Powersuits/YinYang/EquinoxPrimeDayCustomizationInfo"]
      666 [-]: CALL R13 1 1 
-     667 [-]: GETIMPORT R14 6 [nil]
+     667 [-]: GETIMPORT R14 6 [0x7ED0A956]
      668 [-]: LOADK R15 K110 ["/Lotus/Powersuits/YinYang/EquinoxDeluxeDayCustomizationInfo"]
      669 [-]: CALL R14 1 -1
      670 [-]: SETLIST R8 R9 -1 [1]
      671 [-]: SETTABLEKS R8 R7 K63 ["customizationInfo"]
-     672 [-]: GETIMPORT R8 6 [nil]
+     672 [-]: GETIMPORT R8 6 [0x7ED0A956]
      673 [-]: LOADK R9 K109 ["/Lotus/Powersuits/YinYang/EquinoxPrimeDayCustomizationInfo"]
      674 [-]: CALL R8 1 1  
      675 [-]: SETTABLEKS R8 R7 K64 ["customizationInfoUgly"]
@@ -685,55 +685,55 @@
      678 [-]: LOADNIL R10  
      679 [-]: LOADNIL R11  
      680 [-]: LOADNIL R12  
-     681 [-]: GETIMPORT R13 6 [nil]
+     681 [-]: GETIMPORT R13 6 [0x7ED0A956]
      682 [-]: LOADK R14 K111 ["/Lotus/Powersuits/YinYang/EquinoxPrimeDaySimCollision"]
      683 [-]: CALL R13 1 1 
      684 [-]: LOADNIL R14  
      685 [-]: SETLIST R8 R9 6 [1]
      686 [-]: SETTABLEKS R8 R7 K65 ["simCollisionOverride"]
-     687 [-]: GETIMPORT R8 6 [nil]
+     687 [-]: GETIMPORT R8 6 [0x7ED0A956]
      688 [-]: LOADK R9 K111 ["/Lotus/Powersuits/YinYang/EquinoxPrimeDaySimCollision"]
      689 [-]: CALL R8 1 1  
      690 [-]: SETTABLEKS R8 R7 K92 ["simCollisionOverrideUgly"]
      691 [-]: NEWTABLE R8 0 4
-     692 [-]: GETIMPORT R9 6 [nil]
+     692 [-]: GETIMPORT R9 6 [0x7ED0A956]
      693 [-]: LOADK R10 K88 ["/Lotus/Interface/Icons/Abilities/YinYangSwitch.png"]
      694 [-]: CALL R9 1 1  
-     695 [-]: GETIMPORT R10 6 [nil]
+     695 [-]: GETIMPORT R10 6 [0x7ED0A956]
      696 [-]: LOADK R11 K112 ["/Lotus/Interface/Icons/Abilities/YinYangTargetFury.png"]
      697 [-]: CALL R10 1 1 
-     698 [-]: GETIMPORT R11 6 [nil]
+     698 [-]: GETIMPORT R11 6 [0x7ED0A956]
      699 [-]: LOADK R12 K113 ["/Lotus/Interface/Icons/Abilities/YinYangAuraPowerStrength.png"]
      700 [-]: CALL R11 1 1 
-     701 [-]: GETIMPORT R12 6 [nil]
+     701 [-]: GETIMPORT R12 6 [0x7ED0A956]
      702 [-]: LOADK R13 K114 ["/Lotus/Interface/Icons/Abilities/YinYangBlastHarm.png"]
      703 [-]: CALL R12 1 -1
      704 [-]: SETLIST R8 R9 -1 [1]
      705 [-]: SETTABLEKS R8 R7 K66 ["abilityIcons"]
      706 [-]: DUPTABLE R8 115
      707 [-]: NEWTABLE R9 0 8
-     708 [-]: GETIMPORT R10 6 [nil]
+     708 [-]: GETIMPORT R10 6 [0x7ED0A956]
      709 [-]: LOADK R11 K116 ["/Lotus/Characters/Tenno/Anima/AnimaAnimusHelmet_skel.fbx"]
      710 [-]: CALL R10 1 1 
-     711 [-]: GETIMPORT R11 6 [nil]
+     711 [-]: GETIMPORT R11 6 [0x7ED0A956]
      712 [-]: LOADK R12 K117 ["/Lotus/Characters/Tenno/Anima/AnimaAnimusHelmetAlt_skel.fbx"]
      713 [-]: CALL R11 1 1 
-     714 [-]: GETIMPORT R12 6 [nil]
+     714 [-]: GETIMPORT R12 6 [0x7ED0A956]
      715 [-]: LOADK R13 K118 ["/Lotus/Characters/Tenno/Anima/AnimaAnimusAltHelmet2Combined_skel.fbx"]
      716 [-]: CALL R12 1 1 
-     717 [-]: GETIMPORT R13 6 [nil]
+     717 [-]: GETIMPORT R13 6 [0x7ED0A956]
      718 [-]: LOADK R14 K119 ["/Lotus/Characters/Tenno/Anima/SWInsomnia/SWInsomniaCombinedHelmet_skel.fbx"]
      719 [-]: CALL R13 1 1 
-     720 [-]: GETIMPORT R14 6 [nil]
+     720 [-]: GETIMPORT R14 6 [0x7ED0A956]
      721 [-]: LOADK R15 K120 ["/Lotus/Characters/Tenno/Anima/SWDivisa/SWDivisaCombinedHelmet_skel.fbx"]
      722 [-]: CALL R14 1 1 
-     723 [-]: GETIMPORT R15 6 [nil]
+     723 [-]: GETIMPORT R15 6 [0x7ED0A956]
      724 [-]: LOADK R16 K121 ["/Lotus/Characters/Tenno/Anima/SWMegaera/SWMegaeraCombinedHelmet_skel.fbx"]
      725 [-]: CALL R15 1 1 
-     726 [-]: GETIMPORT R16 6 [nil]
+     726 [-]: GETIMPORT R16 6 [0x7ED0A956]
      727 [-]: LOADK R17 K122 ["/Lotus/Characters/Tenno/Anima/EquinoxPrimeCombinedHelmet_skel.fbx"]
      728 [-]: CALL R16 1 1 
-     729 [-]: GETIMPORT R17 6 [nil]
+     729 [-]: GETIMPORT R17 6 [0x7ED0A956]
      730 [-]: LOADK R18 K123 ["/Lotus/Characters/Tenno/Anima/EquinoxDeluxe/EquinoxDeluxeCombinedHelmet_skel.fbx"]
      731 [-]: CALL R17 1 -1
      732 [-]: SETLIST R9 R10 -1 [1]
@@ -744,73 +744,73 @@
      737 [-]: NEWTABLE R12 0 0
      738 [-]: NEWTABLE R13 0 0
      739 [-]: NEWTABLE R14 0 2
-     740 [-]: GETIMPORT R15 6 [nil]
+     740 [-]: GETIMPORT R15 6 [0x7ED0A956]
      741 [-]: LOADK R16 K15 ["/Lotus/Characters/Tenno/Anima/SWDivisa/Cloth/SWDivisaNightHelmetPonyTailASkeletalCloth"]
      742 [-]: CALL R15 1 1 
-     743 [-]: GETIMPORT R16 6 [nil]
+     743 [-]: GETIMPORT R16 6 [0x7ED0A956]
      744 [-]: LOADK R17 K16 ["/Lotus/Characters/Tenno/Anima/SWDivisa/Cloth/SWDivisaDayHelmetPonyTailASkeletalCloth"]
      745 [-]: CALL R16 1 -1
      746 [-]: SETLIST R14 R15 -1 [1]
      747 [-]: NEWTABLE R15 0 0
      748 [-]: NEWTABLE R16 0 0
      749 [-]: NEWTABLE R17 0 2
-     750 [-]: GETIMPORT R18 6 [nil]
+     750 [-]: GETIMPORT R18 6 [0x7ED0A956]
      751 [-]: LOADK R19 K20 ["/Lotus/Characters/Tenno/Anima/EquinoxDeluxe/Cloth/EquinoxDeluxeCombinedHelmetClothASkeletalCloth"]
      752 [-]: CALL R18 1 1 
-     753 [-]: GETIMPORT R19 6 [nil]
+     753 [-]: GETIMPORT R19 6 [0x7ED0A956]
      754 [-]: LOADK R20 K21 ["/Lotus/Characters/Tenno/Anima/EquinoxDeluxe/Cloth/EquinoxDeluxeCombinedHelmetClothBSkeletalCloth"]
      755 [-]: CALL R19 1 -1
      756 [-]: SETLIST R17 R18 -1 [1]
      757 [-]: SETLIST R9 R10 8 [1]
      758 [-]: SETTABLEKS R9 R8 K54 ["helmAttachments"]
      759 [-]: NEWTABLE R9 0 6
-     760 [-]: GETIMPORT R10 6 [nil]
+     760 [-]: GETIMPORT R10 6 [0x7ED0A956]
      761 [-]: LOADK R11 K124 ["/Lotus/Characters/Tenno/Anima/AnimaAnimus_skel.fbx"]
      762 [-]: CALL R10 1 1 
-     763 [-]: GETIMPORT R11 6 [nil]
+     763 [-]: GETIMPORT R11 6 [0x7ED0A956]
      764 [-]: LOADK R12 K124 ["/Lotus/Characters/Tenno/Anima/AnimaAnimus_skel.fbx"]
      765 [-]: CALL R11 1 1 
-     766 [-]: GETIMPORT R12 6 [nil]
+     766 [-]: GETIMPORT R12 6 [0x7ED0A956]
      767 [-]: LOADK R13 K124 ["/Lotus/Characters/Tenno/Anima/AnimaAnimus_skel.fbx"]
      768 [-]: CALL R12 1 1 
-     769 [-]: GETIMPORT R13 6 [nil]
+     769 [-]: GETIMPORT R13 6 [0x7ED0A956]
      770 [-]: LOADK R14 K124 ["/Lotus/Characters/Tenno/Anima/AnimaAnimus_skel.fbx"]
      771 [-]: CALL R13 1 1 
-     772 [-]: GETIMPORT R14 6 [nil]
+     772 [-]: GETIMPORT R14 6 [0x7ED0A956]
      773 [-]: LOADK R15 K125 ["/Lotus/Characters/Tenno/Anima/EquinoxPrimeCombinedBody_skel.fbx"]
      774 [-]: CALL R14 1 1 
-     775 [-]: GETIMPORT R15 6 [nil]
+     775 [-]: GETIMPORT R15 6 [0x7ED0A956]
      776 [-]: LOADK R16 K126 ["/Lotus/Characters/Tenno/Anima/EquinoxDeluxe/EquinoxDeluxeCombinedBody_skel.fbx"]
      777 [-]: CALL R15 1 -1
      778 [-]: SETLIST R9 R10 -1 [1]
      779 [-]: SETTABLEKS R9 R8 K55 ["mesh"]
-     780 [-]: GETIMPORT R9 6 [nil]
+     780 [-]: GETIMPORT R9 6 [0x7ED0A956]
      781 [-]: LOADK R10 K125 ["/Lotus/Characters/Tenno/Anima/EquinoxPrimeCombinedBody_skel.fbx"]
      782 [-]: CALL R9 1 1  
      783 [-]: SETTABLEKS R9 R8 K56 ["meshUgly"]
      784 [-]: NEWTABLE R9 0 6
      785 [-]: NEWTABLE R10 0 0
      786 [-]: NEWTABLE R11 0 2
-     787 [-]: GETIMPORT R12 6 [nil]
+     787 [-]: GETIMPORT R12 6 [0x7ED0A956]
      788 [-]: LOADK R13 K127 ["/Lotus/Characters/Tenno/Anima/SWInsomnia/SWInsomniaCombinedTorso"]
      789 [-]: CALL R12 1 1 
-     790 [-]: GETIMPORT R13 6 [nil]
+     790 [-]: GETIMPORT R13 6 [0x7ED0A956]
      791 [-]: LOADK R14 K128 ["/Lotus/Characters/Tenno/Anima/SWInsomnia/SWInsomniaCombinedLegs"]
      792 [-]: CALL R13 1 -1
      793 [-]: SETLIST R11 R12 -1 [1]
      794 [-]: NEWTABLE R12 0 2
-     795 [-]: GETIMPORT R13 6 [nil]
+     795 [-]: GETIMPORT R13 6 [0x7ED0A956]
      796 [-]: LOADK R14 K129 ["/Lotus/Characters/Tenno/Anima/SWDivisa/SWDivisaNightDayBodyMat"]
      797 [-]: CALL R13 1 1 
-     798 [-]: GETIMPORT R14 6 [nil]
+     798 [-]: GETIMPORT R14 6 [0x7ED0A956]
      799 [-]: LOADK R15 K130 ["/Lotus/Characters/Tenno/Anima/SWDivisa/SWDivisaDayNightBodyMat"]
      800 [-]: CALL R14 1 -1
      801 [-]: SETLIST R12 R13 -1 [1]
      802 [-]: NEWTABLE R13 0 2
-     803 [-]: GETIMPORT R14 6 [nil]
+     803 [-]: GETIMPORT R14 6 [0x7ED0A956]
      804 [-]: LOADK R15 K131 ["/Lotus/Characters/Tenno/Anima/SWMegaera/SWMegaeraNightDayBodyMat"]
      805 [-]: CALL R14 1 1 
-     806 [-]: GETIMPORT R15 6 [nil]
+     806 [-]: GETIMPORT R15 6 [0x7ED0A956]
      807 [-]: LOADK R16 K132 ["/Lotus/Characters/Tenno/Anima/SWMegaera/SWMegaeraDayNightBodyMat"]
      808 [-]: CALL R15 1 -1
      809 [-]: SETLIST R13 R14 -1 [1]
@@ -821,31 +821,31 @@
      814 [-]: NEWTABLE R9 0 6
      815 [-]: NEWTABLE R10 0 0
      816 [-]: NEWTABLE R11 0 4
-     817 [-]: GETIMPORT R12 6 [nil]
+     817 [-]: GETIMPORT R12 6 [0x7ED0A956]
      818 [-]: LOADK R13 K128 ["/Lotus/Characters/Tenno/Anima/SWInsomnia/SWInsomniaCombinedLegs"]
      819 [-]: CALL R12 1 1 
      820 [-]: MOVE R13 R4  
-     821 [-]: GETIMPORT R14 6 [nil]
+     821 [-]: GETIMPORT R14 6 [0x7ED0A956]
      822 [-]: LOADK R15 K127 ["/Lotus/Characters/Tenno/Anima/SWInsomnia/SWInsomniaCombinedTorso"]
      823 [-]: CALL R14 1 1 
      824 [-]: MOVE R15 R4  
      825 [-]: SETLIST R11 R12 4 [1]
      826 [-]: NEWTABLE R12 0 4
-     827 [-]: GETIMPORT R13 6 [nil]
+     827 [-]: GETIMPORT R13 6 [0x7ED0A956]
      828 [-]: LOADK R14 K130 ["/Lotus/Characters/Tenno/Anima/SWDivisa/SWDivisaDayNightBodyMat"]
      829 [-]: CALL R13 1 1 
      830 [-]: MOVE R14 R4  
-     831 [-]: GETIMPORT R15 6 [nil]
+     831 [-]: GETIMPORT R15 6 [0x7ED0A956]
      832 [-]: LOADK R16 K129 ["/Lotus/Characters/Tenno/Anima/SWDivisa/SWDivisaNightDayBodyMat"]
      833 [-]: CALL R15 1 1 
      834 [-]: MOVE R16 R4  
      835 [-]: SETLIST R12 R13 4 [1]
      836 [-]: NEWTABLE R13 0 4
-     837 [-]: GETIMPORT R14 6 [nil]
+     837 [-]: GETIMPORT R14 6 [0x7ED0A956]
      838 [-]: LOADK R15 K132 ["/Lotus/Characters/Tenno/Anima/SWMegaera/SWMegaeraDayNightBodyMat"]
      839 [-]: CALL R14 1 1 
      840 [-]: MOVE R15 R4  
-     841 [-]: GETIMPORT R16 6 [nil]
+     841 [-]: GETIMPORT R16 6 [0x7ED0A956]
      842 [-]: LOADK R17 K131 ["/Lotus/Characters/Tenno/Anima/SWMegaera/SWMegaeraNightDayBodyMat"]
      843 [-]: CALL R16 1 1 
      844 [-]: MOVE R17 R4  
@@ -856,72 +856,72 @@
      849 [-]: SETTABLEKS R9 R8 K58 ["materialOverridesUgly"]
      850 [-]: NEWTABLE R9 0 6
      851 [-]: NEWTABLE R10 0 3
-     852 [-]: GETIMPORT R11 6 [nil]
+     852 [-]: GETIMPORT R11 6 [0x7ED0A956]
      853 [-]: LOADK R12 K29 ["/Lotus/Characters/Tenno/Anima/AnimaSleeveClothLDeco"]
      854 [-]: CALL R11 1 1 
-     855 [-]: GETIMPORT R12 6 [nil]
+     855 [-]: GETIMPORT R12 6 [0x7ED0A956]
      856 [-]: LOADK R13 K32 ["/Lotus/Characters/Tenno/Anima/AnimaAnimusHalfDressDeco"]
      857 [-]: CALL R12 1 1 
-     858 [-]: GETIMPORT R13 6 [nil]
+     858 [-]: GETIMPORT R13 6 [0x7ED0A956]
      859 [-]: LOADK R14 K33 ["/Lotus/Characters/Tenno/Anima/AnimaAnimusSleeveClothRDeco"]
      860 [-]: CALL R13 1 -1
      861 [-]: SETLIST R10 R11 -1 [1]
      862 [-]: NEWTABLE R11 0 3
-     863 [-]: GETIMPORT R12 6 [nil]
+     863 [-]: GETIMPORT R12 6 [0x7ED0A956]
      864 [-]: LOADK R13 K29 ["/Lotus/Characters/Tenno/Anima/AnimaSleeveClothLDeco"]
      865 [-]: CALL R12 1 1 
-     866 [-]: GETIMPORT R13 6 [nil]
+     866 [-]: GETIMPORT R13 6 [0x7ED0A956]
      867 [-]: LOADK R14 K32 ["/Lotus/Characters/Tenno/Anima/AnimaAnimusHalfDressDeco"]
      868 [-]: CALL R13 1 1 
-     869 [-]: GETIMPORT R14 6 [nil]
+     869 [-]: GETIMPORT R14 6 [0x7ED0A956]
      870 [-]: LOADK R15 K33 ["/Lotus/Characters/Tenno/Anima/AnimaAnimusSleeveClothRDeco"]
      871 [-]: CALL R14 1 -1
      872 [-]: SETLIST R11 R12 -1 [1]
      873 [-]: NEWTABLE R12 0 3
-     874 [-]: GETIMPORT R13 6 [nil]
+     874 [-]: GETIMPORT R13 6 [0x7ED0A956]
      875 [-]: LOADK R14 K29 ["/Lotus/Characters/Tenno/Anima/AnimaSleeveClothLDeco"]
      876 [-]: CALL R13 1 1 
-     877 [-]: GETIMPORT R14 6 [nil]
+     877 [-]: GETIMPORT R14 6 [0x7ED0A956]
      878 [-]: LOADK R15 K32 ["/Lotus/Characters/Tenno/Anima/AnimaAnimusHalfDressDeco"]
      879 [-]: CALL R14 1 1 
-     880 [-]: GETIMPORT R15 6 [nil]
+     880 [-]: GETIMPORT R15 6 [0x7ED0A956]
      881 [-]: LOADK R16 K33 ["/Lotus/Characters/Tenno/Anima/AnimaAnimusSleeveClothRDeco"]
      882 [-]: CALL R15 1 -1
      883 [-]: SETLIST R12 R13 -1 [1]
      884 [-]: NEWTABLE R13 0 3
-     885 [-]: GETIMPORT R14 6 [nil]
+     885 [-]: GETIMPORT R14 6 [0x7ED0A956]
      886 [-]: LOADK R15 K29 ["/Lotus/Characters/Tenno/Anima/AnimaSleeveClothLDeco"]
      887 [-]: CALL R14 1 1 
-     888 [-]: GETIMPORT R15 6 [nil]
+     888 [-]: GETIMPORT R15 6 [0x7ED0A956]
      889 [-]: LOADK R16 K32 ["/Lotus/Characters/Tenno/Anima/AnimaAnimusHalfDressDeco"]
      890 [-]: CALL R15 1 1 
-     891 [-]: GETIMPORT R16 6 [nil]
+     891 [-]: GETIMPORT R16 6 [0x7ED0A956]
      892 [-]: LOADK R17 K33 ["/Lotus/Characters/Tenno/Anima/AnimaAnimusSleeveClothRDeco"]
      893 [-]: CALL R16 1 -1
      894 [-]: SETLIST R13 R14 -1 [1]
      895 [-]: NEWTABLE R14 0 1
-     896 [-]: GETIMPORT R15 6 [nil]
+     896 [-]: GETIMPORT R15 6 [0x7ED0A956]
      897 [-]: LOADK R16 K37 ["/Lotus/Characters/Tenno/Anima/Cloth/EquinoxPrimeCombinedDressDeco"]
      898 [-]: CALL R15 1 -1
      899 [-]: SETLIST R14 R15 -1 [1]
      900 [-]: NEWTABLE R15 0 4
-     901 [-]: GETIMPORT R16 6 [nil]
+     901 [-]: GETIMPORT R16 6 [0x7ED0A956]
      902 [-]: LOADK R17 K38 ["/Lotus/Characters/Tenno/Anima/EquinoxDeluxe/Cloth/EquinoxDeluxeCombinedArmClothLDeco"]
      903 [-]: CALL R16 1 1 
-     904 [-]: GETIMPORT R17 6 [nil]
+     904 [-]: GETIMPORT R17 6 [0x7ED0A956]
      905 [-]: LOADK R18 K39 ["/Lotus/Characters/Tenno/Anima/EquinoxDeluxe/Cloth/EquinoxDeluxeCombinedArmClothRDeco"]
      906 [-]: CALL R17 1 1 
-     907 [-]: GETIMPORT R18 6 [nil]
+     907 [-]: GETIMPORT R18 6 [0x7ED0A956]
      908 [-]: LOADK R19 K40 ["/Lotus/Characters/Tenno/Anima/EquinoxDeluxe/Cloth/EquinoxDeluxeCombinedBackDeco"]
      909 [-]: CALL R18 1 1 
-     910 [-]: GETIMPORT R19 6 [nil]
+     910 [-]: GETIMPORT R19 6 [0x7ED0A956]
      911 [-]: LOADK R20 K41 ["/Lotus/Characters/Tenno/Anima/EquinoxDeluxe/Cloth/EquinoxDeluxeCombinedSkirtDeco"]
      912 [-]: CALL R19 1 -1
      913 [-]: SETLIST R15 R16 -1 [1]
      914 [-]: SETLIST R9 R10 6 [1]
      915 [-]: SETTABLEKS R9 R8 K59 ["attachments"]
      916 [-]: NEWTABLE R9 0 1
-     917 [-]: GETIMPORT R10 6 [nil]
+     917 [-]: GETIMPORT R10 6 [0x7ED0A956]
      918 [-]: LOADK R11 K37 ["/Lotus/Characters/Tenno/Anima/Cloth/EquinoxPrimeCombinedDressDeco"]
      919 [-]: CALL R10 1 -1
      920 [-]: SETLIST R9 R10 -1 [1]
@@ -929,17 +929,17 @@
      922 [-]: NEWTABLE R9 0 6
      923 [-]: NEWTABLE R10 0 0
      924 [-]: NEWTABLE R11 0 1
-     925 [-]: GETIMPORT R12 6 [nil]
+     925 [-]: GETIMPORT R12 6 [0x7ED0A956]
      926 [-]: LOADK R13 K133 ["/Lotus/Characters/Tenno/Anima/SWInsomnia/SWInsomniaCombinedCloth"]
      927 [-]: CALL R12 1 -1
      928 [-]: SETLIST R11 R12 -1 [1]
      929 [-]: NEWTABLE R12 0 1
-     930 [-]: GETIMPORT R13 6 [nil]
+     930 [-]: GETIMPORT R13 6 [0x7ED0A956]
      931 [-]: LOADK R14 K134 ["/Lotus/Characters/Tenno/Anima/SWDivisa/SWDivisaCombinedClothMat"]
      932 [-]: CALL R13 1 -1
      933 [-]: SETLIST R12 R13 -1 [1]
      934 [-]: NEWTABLE R13 0 1
-     935 [-]: GETIMPORT R14 6 [nil]
+     935 [-]: GETIMPORT R14 6 [0x7ED0A956]
      936 [-]: LOADK R15 K135 ["/Lotus/Characters/Tenno/Anima/SWMegaera/SWMegaeraCombinedClothMat"]
      937 [-]: CALL R14 1 -1
      938 [-]: SETLIST R13 R14 -1 [1]
@@ -956,13 +956,13 @@
      949 [-]: LOADNIL R11  
      950 [-]: LOADNIL R12  
      951 [-]: LOADNIL R13  
-     952 [-]: GETIMPORT R14 6 [nil]
+     952 [-]: GETIMPORT R14 6 [0x7ED0A956]
      953 [-]: LOADK R15 K111 ["/Lotus/Powersuits/YinYang/EquinoxPrimeDaySimCollision"]
      954 [-]: CALL R14 1 1 
      955 [-]: LOADNIL R15  
      956 [-]: SETLIST R9 R10 6 [1]
      957 [-]: SETTABLEKS R9 R8 K65 ["simCollisionOverride"]
-     958 [-]: GETIMPORT R9 6 [nil]
+     958 [-]: GETIMPORT R9 6 [0x7ED0A956]
      959 [-]: LOADK R10 K111 ["/Lotus/Powersuits/YinYang/EquinoxPrimeDaySimCollision"]
      960 [-]: CALL R9 1 1  
      961 [-]: SETTABLEKS R9 R8 K92 ["simCollisionOverrideUgly"]
@@ -1076,7 +1076,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  8
 
-       0 [-]: GETIMPORT R2 1 [nil]
+       0 [-]: GETIMPORT R2 1 [0xC8802016]
        1 [-]: MOVE R3 R1   
        2 [-]: CALL R2 1 3  
        3 [-]: FORGPREP_INEXT R2 L1
@@ -1095,14 +1095,14 @@ L 1:   7 [-]: FORGLOOP R2 L0 2 [inext]
 ; Is_vararg:       0
 ; Max Stack Size:  31
 
-       0 [-]: GETIMPORT R7 1 [nil]
+       0 [-]: GETIMPORT R7 1 [0xC8802016]
        1 [-]: MOVE R8 R1   
        2 [-]: CALL R7 1 3  
        3 [-]: FORGPREP_INEXT R7 L21
 L 0:   4 [-]: MOVE R14 R11 
        5 [-]: NAMECALL R12 R0 K2 [0xC9F6A7D7]
        6 [-]: CALL R12 2 1 
-       7 [-]: GETIMPORT R14 1 [nil]
+       7 [-]: GETIMPORT R14 1 [0xC8802016]
        8 [-]: MOVE R15 R2  
        9 [-]: CALL R14 1 3 
       10 [-]: FORGPREP_INEXT R14 L2
@@ -1115,10 +1115,10 @@ L 2:  14 [-]: FORGLOOP R14 L1 2 [inext]
 L 3:  16 [-]: JUMPIFNOT R13 L19
       17 [-]: FASTCALL1 62 R12 L4
       18 [-]: MOVE R15 R12 
-      19 [-]: GETIMPORT R14 4 [nil]
+      19 [-]: GETIMPORT R14 4 [0x7B998233]
       20 [-]: CALL R14 1 1 
 L 4:  21 [-]: JUMPIFNOT R14 L5
-      22 [-]: GETIMPORT R16 6 [nil]
+      22 [-]: GETIMPORT R16 6 [0x88EFC25E]
       23 [-]: MOVE R17 R11 
       24 [-]: CALL R16 1 1 
       25 [-]: MOVE R17 R3  
@@ -1127,10 +1127,10 @@ L 4:  21 [-]: JUMPIFNOT R14 L5
       28 [-]: MOVE R12 R14 
 L 5:  29 [-]: FASTCALL1 62 R12 L6
       30 [-]: MOVE R15 R12 
-      31 [-]: GETIMPORT R14 4 [nil]
+      31 [-]: GETIMPORT R14 4 [0x7B998233]
       32 [-]: CALL R14 1 1 
 L 6:  33 [-]: JUMPIF R14 L21
-      34 [-]: GETIMPORT R16 9 [nil]
+      34 [-]: GETIMPORT R16 9 ["gSkeletalClothExType"]
       35 [-]: NAMECALL R14 R12 K10 [0xC1595BD5]
       36 [-]: CALL R14 2 1 
       37 [-]: LENGTH R15 R4
@@ -1138,7 +1138,7 @@ L 6:  33 [-]: JUMPIF R14 L21
       39 [-]: LOADB R17 0  
       40 [-]: NAMECALL R15 R12 K12 [0x043DAD9D]
       41 [-]: CALL R15 2 0 
-      42 [-]: GETIMPORT R15 1 [nil]
+      42 [-]: GETIMPORT R15 1 [0xC8802016]
       43 [-]: MOVE R16 R14 
       44 [-]: CALL R15 1 3 
       45 [-]: FORGPREP_INEXT R15 L8
@@ -1148,11 +1148,11 @@ L 7:  46 [-]: LOADB R22 0
 L 8:  49 [-]: FORGLOOP R15 L7 2 [inext]
       50 [-]: JUMP L14
     
-L 9:  51 [-]: GETIMPORT R15 1 [nil]
+L 9:  51 [-]: GETIMPORT R15 1 [0xC8802016]
       52 [-]: MOVE R16 R4  
       53 [-]: CALL R15 1 3 
       54 [-]: FORGPREP_INEXT R15 L13
-L10:  55 [-]: GETIMPORT R20 14 [nil]
+L10:  55 [-]: GETIMPORT R20 14 [0xB009BBC6]
       56 [-]: MOVE R21 R19 
       57 [-]: CALL R20 1 1 
       58 [-]: SUBK R23 R18 K15 [1]
@@ -1160,7 +1160,7 @@ L10:  55 [-]: GETIMPORT R20 14 [nil]
       60 [-]: LOADB R25 0  
       61 [-]: NAMECALL R21 R12 K16 [0xCDDC3ABB]
       62 [-]: CALL R21 4 0 
-      63 [-]: GETIMPORT R21 1 [nil]
+      63 [-]: GETIMPORT R21 1 [0xC8802016]
       64 [-]: MOVE R22 R14 
       65 [-]: CALL R21 1 3 
       66 [-]: FORGPREP_INEXT R21 L12
@@ -1173,13 +1173,13 @@ L12:  72 [-]: FORGLOOP R21 L11 2 [inext]
 L13:  73 [-]: FORGLOOP R15 L10 2 [inext]
 L14:  74 [-]: FASTCALL1 62 R6 L15
       75 [-]: MOVE R16 R6  
-      76 [-]: GETIMPORT R15 4 [nil]
+      76 [-]: GETIMPORT R15 4 [0x7B998233]
       77 [-]: CALL R15 1 1 
 L15:  78 [-]: JUMPIF R15 L18
       79 [-]: MOVE R17 R6  
       80 [-]: NAMECALL R15 R12 K17 [0x5EE199F2]
       81 [-]: CALL R15 2 0 
-      82 [-]: GETIMPORT R15 1 [nil]
+      82 [-]: GETIMPORT R15 1 [0xC8802016]
       83 [-]: MOVE R16 R14 
       84 [-]: CALL R15 1 3 
       85 [-]: FORGPREP_INEXT R15 L17
@@ -1189,7 +1189,7 @@ L16:  86 [-]: MOVE R22 R6
 L17:  89 [-]: FORGLOOP R15 L16 2 [inext]
       90 [-]: JUMP L21
     
-L18:  91 [-]: GETIMPORT R15 20 [nil]
+L18:  91 [-]: GETIMPORT R15 20 [0xEF4FC55C]
       92 [-]: MOVE R16 R12 
       93 [-]: MOVE R17 R5  
       94 [-]: LOADB R18 1  
@@ -1198,7 +1198,7 @@ L18:  91 [-]: GETIMPORT R15 20 [nil]
     
 L19:  97 [-]: FASTCALL1 62 R12 L20
       98 [-]: MOVE R15 R12 
-      99 [-]: GETIMPORT R14 4 [nil]
+      99 [-]: GETIMPORT R14 4 [0x7B998233]
      100 [-]: CALL R14 1 1 
 L20: 101 [-]: JUMPIF R14 L21
      102 [-]: NAMECALL R14 R12 K21 [0xADBDC520]
@@ -1221,7 +1221,7 @@ L21: 107 [-]: FORGLOOP R7 L0 2 [inext]
        1 [-]: CALL R3 1 1  
        2 [-]: FASTCALL1 62 R3 L0
        3 [-]: MOVE R5 R3   
-       4 [-]: GETIMPORT R4 2 [nil]
+       4 [-]: GETIMPORT R4 2 [0x7B998233]
        5 [-]: CALL R4 1 1  
 L 0:   6 [-]: JUMPIFNOT R4 L1
        7 [-]: RETURN R0 0  
@@ -1232,7 +1232,7 @@ L 1:   8 [-]: NAMECALL R4 R0 K3 [0x68D708A7]
       12 [-]: LOADN R9 7   
       13 [-]: NAMECALL R7 R4 K4 [0x2540510F]
       14 [-]: CALL R7 2 1  
-      15 [-]: GETIMPORT R8 6 [nil]
+      15 [-]: GETIMPORT R8 6 [0xC8802016]
       16 [-]: GETUPVAL R9 0
       17 [-]: CALL R8 1 3  
       18 [-]: FORGPREP_INEXT R8 L4
@@ -1252,7 +1252,7 @@ L 5:  28 [-]: JUMPXEQKNIL R5 L7 NOT
 L 6:  31 [-]: MOVE R5 R6   
 L 7:  32 [-]: GETTABLEKS R8 R4 K8 ["mAllowUglyMode"]
       33 [-]: JUMPIFNOT R8 L8
-      34 [-]: GETIMPORT R8 10 [nil]
+      34 [-]: GETIMPORT R8 10 [0xB009BBC6]
       35 [-]: GETUPVAL R10 0
       36 [-]: GETTABLE R9 R10 R5
       37 [-]: CALL R8 1 1  
@@ -1262,22 +1262,22 @@ L 8:  40 [-]: LOADNIL R9
       41 [-]: JUMPIFNOT R8 L12
       42 [-]: FASTCALL1 62 R2 L9
       43 [-]: MOVE R11 R2  
-      44 [-]: GETIMPORT R10 2 [nil]
+      44 [-]: GETIMPORT R10 2 [0x7B998233]
       45 [-]: CALL R10 1 1 
 L 9:  46 [-]: JUMPIFNOT R10 L10
-      47 [-]: GETIMPORT R12 10 [nil]
+      47 [-]: GETIMPORT R12 10 [0xB009BBC6]
       48 [-]: GETTABLEKS R13 R1 K12 ["meshUgly"]
       49 [-]: CALL R12 1 -1
       50 [-]: NAMECALL R10 R0 K13 [0x74EF6FE7]
       51 [-]: CALL R10 -1 0
-      52 [-]: GETIMPORT R12 15 [nil]
+      52 [-]: GETIMPORT R12 15 [0x88EFC25E]
       53 [-]: GETTABLEKS R13 R1 K16 ["customizationInfoUgly"]
       54 [-]: CALL R12 1 -1
       55 [-]: NAMECALL R10 R0 K17 [0xB5F12D9F]
       56 [-]: CALL R10 -1 0
       57 [-]: JUMP L11
     
-L10:  58 [-]: GETIMPORT R12 10 [nil]
+L10:  58 [-]: GETIMPORT R12 10 [0xB009BBC6]
       59 [-]: GETTABLEKS R13 R1 K12 ["meshUgly"]
       60 [-]: CALL R12 1 1 
       61 [-]: LOADB R13 1  
@@ -1290,16 +1290,16 @@ L11:  65 [-]: GETTABLEKS R10 R1 K19 ["materialOverridesUgly"]
     
 L12:  68 [-]: FASTCALL1 62 R2 L13
       69 [-]: MOVE R11 R2  
-      70 [-]: GETIMPORT R10 2 [nil]
+      70 [-]: GETIMPORT R10 2 [0x7B998233]
       71 [-]: CALL R10 1 1 
 L13:  72 [-]: JUMPIFNOT R10 L14
-      73 [-]: GETIMPORT R12 10 [nil]
+      73 [-]: GETIMPORT R12 10 [0xB009BBC6]
       74 [-]: GETTABLEKS R14 R1 K20 ["mesh"]
       75 [-]: GETTABLE R13 R14 R5
       76 [-]: CALL R12 1 -1
       77 [-]: NAMECALL R10 R0 K13 [0x74EF6FE7]
       78 [-]: CALL R10 -1 0
-      79 [-]: GETIMPORT R12 15 [nil]
+      79 [-]: GETIMPORT R12 15 [0x88EFC25E]
       80 [-]: GETTABLEKS R14 R1 K21 ["customizationInfo"]
       81 [-]: GETTABLE R13 R14 R5
       82 [-]: CALL R12 1 -1
@@ -1307,7 +1307,7 @@ L13:  72 [-]: JUMPIFNOT R10 L14
       84 [-]: CALL R10 -1 0
       85 [-]: JUMP L15
     
-L14:  86 [-]: GETIMPORT R12 10 [nil]
+L14:  86 [-]: GETIMPORT R12 10 [0xB009BBC6]
       87 [-]: GETTABLEKS R14 R1 K20 ["mesh"]
       88 [-]: GETTABLE R13 R14 R5
       89 [-]: CALL R12 1 1 
@@ -1320,7 +1320,7 @@ L15:  94 [-]: GETTABLEKS R10 R1 K22 ["materialOverrides"]
 L16:  96 [-]: MOVE R10 R2  
       97 [-]: FASTCALL1 62 R10 L17
       98 [-]: MOVE R12 R10 
-      99 [-]: GETIMPORT R11 2 [nil]
+      99 [-]: GETIMPORT R11 2 [0x7B998233]
      100 [-]: CALL R11 1 1 
 L17: 101 [-]: JUMPIFNOT R11 L18
      102 [-]: NAMECALL R11 R0 K23 [0x30F852C0]
@@ -1332,7 +1332,7 @@ L18: 105 [-]: LOADNIL R13
      108 [-]: CALL R11 3 0 
      109 [-]: NAMECALL R11 R10 K25 [0xC8A45881]
      110 [-]: CALL R11 1 0 
-     111 [-]: GETIMPORT R11 6 [nil]
+     111 [-]: GETIMPORT R11 6 [0xC8802016]
      112 [-]: MOVE R12 R9  
      113 [-]: CALL R11 1 3 
      114 [-]: FORGPREP_INEXT R11 L21
@@ -1355,7 +1355,7 @@ L19: 115 [-]: GETUPVAL R16 1
      131 [-]: JUMP L21
     
 L20: 132 [-]: SUBK R18 R14 K26 [1]
-     133 [-]: GETIMPORT R19 10 [nil]
+     133 [-]: GETIMPORT R19 10 [0xB009BBC6]
      134 [-]: MOVE R20 R15 
      135 [-]: CALL R19 1 1 
      136 [-]: LOADB R20 0  
@@ -1407,13 +1407,13 @@ L25: 178 [-]: MOVE R17 R14
      180 [-]: NAMECALL R15 R11 K34 [0xFC5D7158]
      181 [-]: CALL R15 3 0 
 L26: 182 [-]: FORNLOOP R12 L22
-L27: 183 [-]: GETIMPORT R12 37 [nil]
+L27: 183 [-]: GETIMPORT R12 37 [0xEF4FC55C]
      184 [-]: MOVE R13 R10 
      185 [-]: MOVE R14 R11 
      186 [-]: LOADB R15 0  
      187 [-]: LOADB R16 0  
      188 [-]: CALL R12 4 0 
-     189 [-]: GETIMPORT R12 6 [nil]
+     189 [-]: GETIMPORT R12 6 [0xC8802016]
      190 [-]: GETUPVAL R13 3
      191 [-]: CALL R12 1 3 
      192 [-]: FORGPREP_INEXT R12 L32
@@ -1422,22 +1422,22 @@ L28: 193 [-]: MOVE R19 R16
      195 [-]: CALL R17 2 1 
      196 [-]: FASTCALL1 62 R17 L29
      197 [-]: MOVE R19 R17 
-     198 [-]: GETIMPORT R18 2 [nil]
+     198 [-]: GETIMPORT R18 2 [0x7B998233]
      199 [-]: CALL R18 1 1 
 L29: 200 [-]: JUMPIF R18 L32
      201 [-]: FASTCALL1 62 R2 L30
      202 [-]: MOVE R19 R2  
-     203 [-]: GETIMPORT R18 2 [nil]
+     203 [-]: GETIMPORT R18 2 [0x7B998233]
      204 [-]: CALL R18 1 1 
 L30: 205 [-]: JUMPIF R18 L31
-     206 [-]: GETIMPORT R20 15 [nil]
+     206 [-]: GETIMPORT R20 15 [0x88EFC25E]
      207 [-]: MOVE R21 R16 
      208 [-]: CALL R20 1 1 
-     209 [-]: GETIMPORT R21 40 [nil]
+     209 [-]: GETIMPORT R21 40 ["EMPTY_SYMBOL"]
      210 [-]: NAMECALL R18 R2 K41 [0x47901F07]
      211 [-]: CALL R18 3 1 
      212 [-]: MOVE R17 R18 
-L31: 213 [-]: GETIMPORT R20 10 [nil]
+L31: 213 [-]: GETIMPORT R20 10 [0xB009BBC6]
      214 [-]: GETTABLEKS R22 R1 K42 ["helmMeshes"]
      215 [-]: GETTABLE R21 R22 R15
      216 [-]: CALL R20 1 1 
@@ -1445,7 +1445,7 @@ L31: 213 [-]: GETIMPORT R20 10 [nil]
      218 [-]: LOADB R22 0  
      219 [-]: NAMECALL R18 R17 K18 [0x2970F52F]
      220 [-]: CALL R18 4 0 
-     221 [-]: GETIMPORT R18 37 [nil]
+     221 [-]: GETIMPORT R18 37 [0xEF4FC55C]
      222 [-]: MOVE R19 R17 
      223 [-]: MOVE R20 R11 
      224 [-]: LOADB R21 1  
@@ -1456,7 +1456,7 @@ L31: 213 [-]: GETIMPORT R20 10 [nil]
      229 [-]: GETTABLE R20 R21 R15
      230 [-]: GETTABLEKS R22 R1 K43 ["helmAttachments"]
      231 [-]: GETTABLE R21 R22 R15
-     232 [-]: GETIMPORT R22 45 [nil]
+     232 [-]: GETIMPORT R22 45 [0x0469F296]
      233 [-]: LOADK R23 K46 ["GAME_C1_HEAD1"]
      234 [-]: CALL R22 1 1 
      235 [-]: LOADNIL R23  
@@ -1469,7 +1469,7 @@ L32: 240 [-]: FORGLOOP R12 L28 2 [inext]
 L33: 241 [-]: MOVE R12 R10 
      242 [-]: FASTCALL1 62 R2 L34
      243 [-]: MOVE R14 R2  
-     244 [-]: GETIMPORT R13 2 [nil]
+     244 [-]: GETIMPORT R13 2 [0x7B998233]
      245 [-]: CALL R13 1 1 
 L34: 246 [-]: JUMPIFNOT R13 L36
      247 [-]: NAMECALL R13 R0 K47 [0x1C3517EC]
@@ -1481,7 +1481,7 @@ L34: 246 [-]: JUMPIFNOT R13 L36
      253 [-]: CALL R13 1 1 
      254 [-]: FASTCALL1 62 R13 L35
      255 [-]: MOVE R15 R13 
-     256 [-]: GETIMPORT R14 2 [nil]
+     256 [-]: GETIMPORT R14 2 [0x7B998233]
      257 [-]: CALL R14 1 1 
 L35: 258 [-]: JUMPIF R14 L36
      259 [-]: NAMECALL R14 R13 K23 [0x30F852C0]
@@ -1492,14 +1492,14 @@ L36: 262 [-]: JUMPIFNOT R8 L39
      264 [-]: MOVE R14 R12 
      265 [-]: GETUPVAL R15 6
      266 [-]: GETTABLEKS R16 R1 K50 ["attachmentsUgly"]
-     267 [-]: GETIMPORT R17 40 [nil]
+     267 [-]: GETIMPORT R17 40 ["EMPTY_SYMBOL"]
      268 [-]: GETTABLEKS R18 R1 K51 ["attachmentMaterialOverridesUgly"]
      269 [-]: MOVE R19 R11 
      270 [-]: LOADNIL R20  
      271 [-]: CALL R13 7 0 
      272 [-]: FASTCALL1 62 R2 L37
      273 [-]: MOVE R14 R2  
-     274 [-]: GETIMPORT R13 2 [nil]
+     274 [-]: GETIMPORT R13 2 [0x7B998233]
      275 [-]: CALL R13 1 1 
 L37: 276 [-]: JUMPIFNOT R13 L42
      277 [-]: GETTABLEKS R13 R1 K52 ["simCollisionOverrideUgly"]
@@ -1510,7 +1510,7 @@ L37: 276 [-]: JUMPIFNOT R13 L42
      282 [-]: CALL R13 -1 0
      283 [-]: JUMP L42
     
-L38: 284 [-]: GETIMPORT R15 10 [nil]
+L38: 284 [-]: GETIMPORT R15 10 [0xB009BBC6]
      285 [-]: GETTABLEKS R16 R1 K52 ["simCollisionOverrideUgly"]
      286 [-]: CALL R15 1 -1
      287 [-]: NAMECALL R13 R3 K54 [0x7D241D57]
@@ -1522,7 +1522,7 @@ L39: 290 [-]: GETUPVAL R13 4
      292 [-]: GETUPVAL R15 6
      293 [-]: GETTABLEKS R17 R1 K55 ["attachments"]
      294 [-]: GETTABLE R16 R17 R5
-     295 [-]: GETIMPORT R17 40 [nil]
+     295 [-]: GETIMPORT R17 40 ["EMPTY_SYMBOL"]
      296 [-]: GETTABLEKS R19 R1 K56 ["attachmentMaterialOverrides"]
      297 [-]: GETTABLE R18 R19 R5
      298 [-]: MOVE R19 R11 
@@ -1530,7 +1530,7 @@ L39: 290 [-]: GETUPVAL R13 4
      300 [-]: CALL R13 7 0 
      301 [-]: FASTCALL1 62 R2 L40
      302 [-]: MOVE R14 R2  
-     303 [-]: GETIMPORT R13 2 [nil]
+     303 [-]: GETIMPORT R13 2 [0x7B998233]
      304 [-]: CALL R13 1 1 
 L40: 305 [-]: JUMPIFNOT R13 L42
      306 [-]: GETTABLEKS R14 R1 K57 ["simCollisionOverride"]
@@ -1542,7 +1542,7 @@ L40: 305 [-]: JUMPIFNOT R13 L42
      312 [-]: CALL R13 -1 0
      313 [-]: JUMP L42
     
-L41: 314 [-]: GETIMPORT R15 10 [nil]
+L41: 314 [-]: GETIMPORT R15 10 [0xB009BBC6]
      315 [-]: GETTABLEKS R17 R1 K57 ["simCollisionOverride"]
      316 [-]: GETTABLE R16 R17 R5
      317 [-]: CALL R15 1 -1
@@ -1550,7 +1550,7 @@ L41: 314 [-]: GETIMPORT R15 10 [nil]
      319 [-]: CALL R13 -1 0
 L42: 320 [-]: FASTCALL1 62 R2 L43
      321 [-]: MOVE R14 R2  
-     322 [-]: GETIMPORT R13 2 [nil]
+     322 [-]: GETIMPORT R13 2 [0x7B998233]
      323 [-]: CALL R13 1 1 
 L43: 324 [-]: JUMPIFNOT R13 L48
      325 [-]: NAMECALL R13 R3 K58 [0xA5E492D4]
@@ -1568,17 +1568,17 @@ L43: 324 [-]: JUMPIFNOT R13 L48
      337 [-]: CALL R14 1 1 
      338 [-]: FASTCALL1 62 R14 L44
      339 [-]: MOVE R16 R14 
-     340 [-]: GETIMPORT R15 2 [nil]
+     340 [-]: GETIMPORT R15 2 [0x7B998233]
      341 [-]: CALL R15 1 1 
 L44: 342 [-]: JUMPIF R15 L45
-     343 [-]: GETIMPORT R17 61 [nil]
+     343 [-]: GETIMPORT R17 61 ["gFlightJetPackItemType"]
      344 [-]: NAMECALL R15 R14 K62 [0xF2DEAF69]
      345 [-]: CALL R15 2 1 
      346 [-]: MOVE R13 R15 
 L45: 347 [-]: JUMPIF R13 L48
      348 [-]: NAMECALL R14 R0 K63 [0x3C88E434]
      349 [-]: CALL R14 1 1 
-     350 [-]: GETIMPORT R15 6 [nil]
+     350 [-]: GETIMPORT R15 6 [0xC8802016]
      351 [-]: MOVE R16 R14 
      352 [-]: CALL R15 1 3 
      353 [-]: FORGPREP_INEXT R15 L47
@@ -2161,17 +2161,17 @@ L 3:  10 [-]: RETURN R1 1
 L 0:   0 [-]: NAMECALL R2 R0 K0 [0x5163741E]
        1 [-]: CALL R2 1 1  
        2 [-]: FASTCALL1 62 R2 L1
-       3 [-]: GETIMPORT R1 2 [nil]
+       3 [-]: GETIMPORT R1 2 [0x7B998233]
        4 [-]: CALL R1 1 1  
 L 1:   5 [-]: JUMPIFNOT R1 L2
-       6 [-]: GETIMPORT R1 4 [nil]
+       6 [-]: GETIMPORT R1 4 [0xCBD666E1]
        7 [-]: LOADN R2 0   
        8 [-]: CALL R1 1 0  
        9 [-]: JUMPBACK L0  
 L 2:  10 [-]: NAMECALL R2 R0 K0 [0x5163741E]
       11 [-]: CALL R2 1 1  
       12 [-]: FASTCALL1 62 R2 L3
-      13 [-]: GETIMPORT R1 2 [nil]
+      13 [-]: GETIMPORT R1 2 [0x7B998233]
       14 [-]: CALL R1 1 1  
 L 3:  15 [-]: JUMPIF R1 L4 
       16 [-]: NAMECALL R1 R0 K0 [0x5163741E]
@@ -2179,10 +2179,10 @@ L 3:  15 [-]: JUMPIF R1 L4
       18 [-]: NAMECALL R1 R1 K5 [0xA5E492D4]
       19 [-]: CALL R1 1 1  
       20 [-]: JUMPIFNOT R1 L4
-      21 [-]: GETIMPORT R1 4 [nil]
+      21 [-]: GETIMPORT R1 4 [0xCBD666E1]
       22 [-]: LOADN R2 0   
       23 [-]: CALL R1 1 0  
-L 4:  24 [-]: GETIMPORT R1 7 [nil]
+L 4:  24 [-]: GETIMPORT R1 7 [0x89326C93]
       25 [-]: NAMECALL R1 R1 K8 [0x18D05D30]
       26 [-]: CALL R1 1 1  
       27 [-]: JUMPIFNOT R1 L21
@@ -2206,22 +2206,22 @@ L 4:  24 [-]: GETIMPORT R1 7 [nil]
       45 [-]: JUMP L6
      
 L 5:  46 [-]: LOADN R1 0   
-L 6:  47 [-]: GETIMPORT R5 16 [nil]
+L 6:  47 [-]: GETIMPORT R5 16 [0xBE190284]
       48 [-]: FASTCALL1 62 R5 L7
-      49 [-]: GETIMPORT R4 2 [nil]
+      49 [-]: GETIMPORT R4 2 [0x7B998233]
       50 [-]: CALL R4 1 1  
 L 7:  51 [-]: JUMPIF R4 L8 
-      52 [-]: GETIMPORT R4 16 [nil]
+      52 [-]: GETIMPORT R4 16 [0xBE190284]
       53 [-]: NAMECALL R4 R4 K17 [0x99F38C13]
       54 [-]: CALL R4 1 1  
       55 [-]: JUMPIF R4 L8 
-      56 [-]: GETIMPORT R4 16 [nil]
-      57 [-]: GETIMPORT R6 19 [nil]
+      56 [-]: GETIMPORT R4 16 [0xBE190284]
+      57 [-]: GETIMPORT R6 19 ["gLotusAttractModeGameRulesType"]
       58 [-]: NAMECALL R4 R4 K20 [0xF2DEAF69]
       59 [-]: CALL R4 2 1  
       60 [-]: JUMPIF R4 L8 
-      61 [-]: GETIMPORT R4 16 [nil]
-      62 [-]: GETIMPORT R6 22 [nil]
+      61 [-]: GETIMPORT R4 16 [0xBE190284]
+      62 [-]: GETIMPORT R6 22 ["gLotusHubGameRulesType"]
       63 [-]: NAMECALL R4 R4 K20 [0xF2DEAF69]
       64 [-]: CALL R4 2 1  
       65 [-]: JUMPIFNOT R4 L17
@@ -2342,10 +2342,10 @@ L23: 165 [-]: GETUPVAL R2 0
        1 [-]: CALL R1 1 1  
        2 [-]: FASTCALL1 62 R1 L0
        3 [-]: MOVE R3 R1   
-       4 [-]: GETIMPORT R2 2 [nil]
+       4 [-]: GETIMPORT R2 2 [0x7B998233]
        5 [-]: CALL R2 1 1  
 L 0:   6 [-]: JUMPIF R2 L4 
-       7 [-]: GETIMPORT R2 4 [nil]
+       7 [-]: GETIMPORT R2 4 [0xC8802016]
        8 [-]: GETUPVAL R3 0
        9 [-]: CALL R2 1 3  
       10 [-]: FORGPREP_INEXT R2 L3
@@ -2354,7 +2354,7 @@ L 1:  11 [-]: MOVE R9 R6
       13 [-]: CALL R7 2 1  
       14 [-]: FASTCALL1 62 R7 L2
       15 [-]: MOVE R9 R7   
-      16 [-]: GETIMPORT R8 2 [nil]
+      16 [-]: GETIMPORT R8 2 [0x7B998233]
       17 [-]: CALL R8 1 1  
 L 2:  18 [-]: JUMPIF R8 L3 
       19 [-]: NAMECALL R8 R7 K6 [0xADBDC520]
@@ -2379,17 +2379,17 @@ L 4:  27 [-]: RETURN R0 0
        1 [-]: CALL R1 1 1  
        2 [-]: FASTCALL1 62 R1 L0
        3 [-]: MOVE R3 R1   
-       4 [-]: GETIMPORT R2 2 [nil]
+       4 [-]: GETIMPORT R2 2 [0x7B998233]
        5 [-]: CALL R2 1 1  
 L 0:   6 [-]: JUMPIF R2 L7 
-       7 [-]: GETIMPORT R4 4 [nil]
+       7 [-]: GETIMPORT R4 4 ["gBaseAvatarType"]
        8 [-]: NAMECALL R2 R1 K5 [0xF2DEAF69]
        9 [-]: CALL R2 2 1  
       10 [-]: JUMPIFNOT R2 L7
       11 [-]: NAMECALL R2 R1 K6 [0xA5E492D4]
       12 [-]: CALL R2 1 1  
       13 [-]: JUMPIFNOT R2 L1
-      14 [-]: GETIMPORT R2 8 [nil]
+      14 [-]: GETIMPORT R2 8 [0xCBD666E1]
       15 [-]: LOADN R3 0   
       16 [-]: CALL R2 1 0  
 L 1:  17 [-]: NAMECALL R2 R1 K9 [0xDE321E6F]
@@ -2398,12 +2398,12 @@ L 1:  17 [-]: NAMECALL R2 R1 K9 [0xDE321E6F]
       20 [-]: CALL R2 1 1  
       21 [-]: FASTCALL1 62 R2 L2
       22 [-]: MOVE R4 R2   
-      23 [-]: GETIMPORT R3 2 [nil]
+      23 [-]: GETIMPORT R3 2 [0x7B998233]
       24 [-]: CALL R3 1 1  
 L 2:  25 [-]: JUMPIF R3 L7 
       26 [-]: NAMECALL R3 R2 K11 [0x852DD818]
       27 [-]: CALL R3 1 1  
-      28 [-]: GETIMPORT R4 13 [nil]
+      28 [-]: GETIMPORT R4 13 [0xC8802016]
       29 [-]: GETUPVAL R5 0
       30 [-]: CALL R4 1 3  
       31 [-]: FORGPREP_INEXT R4 L6
@@ -2411,7 +2411,7 @@ L 3:  32 [-]: NAMECALL R9 R0 K14 [0xCDE10C4A]
       33 [-]: CALL R9 1 1  
       34 [-]: JUMPIFNOTEQ R9 R8 L6
       35 [-]: JUMPXEQKN R3 K15 L4 NOT [0]
-      36 [-]: GETIMPORT R11 17 [nil]
+      36 [-]: GETIMPORT R11 17 [0xB009BBC6]
       37 [-]: GETUPVAL R14 1
       38 [-]: GETTABLEKS R13 R14 K18 ["helmMeshes"]
       39 [-]: GETTABLE R12 R13 R7
@@ -2422,7 +2422,7 @@ L 3:  32 [-]: NAMECALL R9 R0 K14 [0xCDE10C4A]
       44 [-]: CALL R9 4 0  
       45 [-]: RETURN R0 0  
 L 4:  46 [-]: JUMPXEQKN R3 K20 L5 NOT [1]
-      47 [-]: GETIMPORT R11 17 [nil]
+      47 [-]: GETIMPORT R11 17 [0xB009BBC6]
       48 [-]: GETUPVAL R14 2
       49 [-]: GETTABLEKS R13 R14 K18 ["helmMeshes"]
       50 [-]: GETTABLE R12 R13 R7
@@ -2432,7 +2432,7 @@ L 4:  46 [-]: JUMPXEQKN R3 K20 L5 NOT [1]
       54 [-]: NAMECALL R9 R0 K19 [0x2970F52F]
       55 [-]: CALL R9 4 0  
       56 [-]: RETURN R0 0  
-L 5:  57 [-]: GETIMPORT R11 17 [nil]
+L 5:  57 [-]: GETIMPORT R11 17 [0xB009BBC6]
       58 [-]: GETUPVAL R14 3
       59 [-]: GETTABLEKS R13 R14 K18 ["helmMeshes"]
       60 [-]: GETTABLE R12 R13 R7

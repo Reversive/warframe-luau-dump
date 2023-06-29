@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  1
 
-            1 [-]: DUPCLOSURE R0 K0 []
+       1 [-]: DUPCLOSURE R0 K0 []
        2 [-]: SETGLOBAL R0 K1 ["setDirections"]
        3 [-]: RETURN R0 0  
 
@@ -19,7 +19,7 @@
 
        0 [-]: FASTCALL1 62 R0 L0
        1 [-]: MOVE R2 R0   
-       2 [-]: GETIMPORT R1 1 [nil]
+       2 [-]: GETIMPORT R1 1 [0x7B998233]
        3 [-]: CALL R1 1 1  
 L 0:   4 [-]: JUMPIFNOT R1 L1
        5 [-]: RETURN R0 0  
@@ -27,31 +27,31 @@ L 1:   6 [-]: NAMECALL R1 R0 K2 [0xD1586535]
        7 [-]: CALL R1 1 1  
        8 [-]: LOADN R2 0   
        9 [-]: SETTABLEKS R2 R1 K3 ["y"]
-      10 [-]: GETIMPORT R2 5 [nil]
+      10 [-]: GETIMPORT R2 5 [0x3D106989]
       11 [-]: LOADK R4 K6 ["Eye Position: "]
-      12 [-]: GETIMPORT R5 8 [nil]
+      12 [-]: GETIMPORT R5 8 [0x64FB1586]
       13 [-]: MOVE R6 R1   
       14 [-]: CALL R5 1 1  
       15 [-]: CONCAT R3 R4 R5
       16 [-]: CALL R2 1 0  
-      17 [-]: GETIMPORT R2 5 [nil]
+      17 [-]: GETIMPORT R2 5 [0x3D106989]
       18 [-]: LOADK R4 K9 ["Clockwise: "]
-      19 [-]: GETIMPORT R5 8 [nil]
-      20 [-]: GETIMPORT R6 11 [nil]
+      19 [-]: GETIMPORT R5 8 [0x64FB1586]
+      20 [-]: GETIMPORT R6 11 [0x7B2D1CD0]
       21 [-]: CALL R5 1 1  
       22 [-]: CONCAT R3 R4 R5
       23 [-]: CALL R2 1 0  
-      24 [-]: GETIMPORT R2 13 [nil]
-      25 [-]: GETIMPORT R4 15 [nil]
+      24 [-]: GETIMPORT R2 13 [0x89326C93]
+      25 [-]: GETIMPORT R4 15 ["gZoneAttribsType"]
       26 [-]: NAMECALL R2 R2 K16 [0xFB669000]
       27 [-]: CALL R2 2 1  
-      28 [-]: GETIMPORT R3 13 [nil]
-      29 [-]: GETIMPORT R5 18 [nil]
+      28 [-]: GETIMPORT R3 13 [0x89326C93]
+      29 [-]: GETIMPORT R5 18 ["gDynamicSkyType"]
       30 [-]: NAMECALL R3 R3 K16 [0xFB669000]
       31 [-]: CALL R3 2 1  
       32 [-]: LENGTH R4 R3 
       33 [-]: JUMPXEQKN R4 K19 L2 NOT [0]
-      34 [-]: GETIMPORT R4 5 [nil]
+      34 [-]: GETIMPORT R4 5 [0x3D106989]
       35 [-]: LOADK R5 K20 ["SetVortexWindPerZone.lua: could not find dynamic sky!"]
       36 [-]: CALL R4 1 0  
 L 2:  37 [-]: LOADN R6 1   
@@ -71,9 +71,9 @@ L 5:  50 [-]: LOADN R6 1
       51 [-]: LENGTH R4 R2 
       52 [-]: LOADN R5 1   
       53 [-]: FORNPREP R4 L9
-L 6:  54 [-]: GETIMPORT R7 5 [nil]
+L 6:  54 [-]: GETIMPORT R7 5 [0x3D106989]
       55 [-]: LOADK R9 K23 ["Zone attribs "]
-      56 [-]: GETIMPORT R12 8 [nil]
+      56 [-]: GETIMPORT R12 8 [0x64FB1586]
       57 [-]: GETTABLE R13 R2 R6
       58 [-]: NAMECALL R13 R13 K24 [0xE223E2B1]
       59 [-]: CALL R13 1 -1
@@ -87,43 +87,43 @@ L 6:  54 [-]: GETIMPORT R7 5 [nil]
       67 [-]: CALL R7 1 1  
       68 [-]: LOADN R8 0   
       69 [-]: SETTABLEKS R8 R7 K3 ["y"]
-      70 [-]: GETIMPORT R8 27 [nil]
+      70 [-]: GETIMPORT R8 27 [0xA421AF95]
       71 [-]: LOADN R9 0   
       72 [-]: LOADN R10 1  
       73 [-]: LOADN R11 0  
       74 [-]: CALL R8 3 1  
       75 [-]: SUB R9 R7 R1 
-      76 [-]: GETIMPORT R10 5 [nil]
+      76 [-]: GETIMPORT R10 5 [0x3D106989]
       77 [-]: LOADK R12 K28 ["    To Eye: "]
-      78 [-]: GETIMPORT R13 8 [nil]
+      78 [-]: GETIMPORT R13 8 [0x64FB1586]
       79 [-]: MOVE R14 R9  
       80 [-]: CALL R13 1 1 
       81 [-]: CONCAT R11 R12 R13
       82 [-]: CALL R10 1 0 
-      83 [-]: GETIMPORT R10 11 [nil]
+      83 [-]: GETIMPORT R10 11 [0x7B2D1CD0]
       84 [-]: JUMPIF R10 L7
-      85 [-]: GETIMPORT R10 30 [nil]
+      85 [-]: GETIMPORT R10 30 [0x78487225]
       86 [-]: MOVE R11 R9  
       87 [-]: MOVE R12 R8  
       88 [-]: CALL R10 2 1 
       89 [-]: MOVE R9 R10  
       90 [-]: JUMP L8
      
-L 7:  91 [-]: GETIMPORT R10 30 [nil]
+L 7:  91 [-]: GETIMPORT R10 30 [0x78487225]
       92 [-]: MOVE R11 R8  
       93 [-]: MOVE R12 R9  
       94 [-]: CALL R10 2 1 
       95 [-]: MOVE R9 R10  
-L 8:  96 [-]: GETIMPORT R10 32 [nil]
+L 8:  96 [-]: GETIMPORT R10 32 [0xC2892F65]
       97 [-]: MOVE R11 R9  
       98 [-]: CALL R10 1 0 
       99 [-]: GETTABLE R10 R2 R6
      100 [-]: MOVE R12 R9  
      101 [-]: NAMECALL R10 R10 K33 [0xE034FBAD]
      102 [-]: CALL R10 2 0 
-     103 [-]: GETIMPORT R10 5 [nil]
+     103 [-]: GETIMPORT R10 5 [0x3D106989]
      104 [-]: LOADK R12 K34 ["    Cross: "]
-     105 [-]: GETIMPORT R13 8 [nil]
+     105 [-]: GETIMPORT R13 8 [0x64FB1586]
      106 [-]: MOVE R14 R9  
      107 [-]: CALL R13 1 1 
      108 [-]: CONCAT R11 R12 R13

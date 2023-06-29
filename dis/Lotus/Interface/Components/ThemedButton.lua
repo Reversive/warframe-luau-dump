@@ -5,9 +5,9 @@
 ; Is_vararg:       1
 ; Max Stack Size:  3
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0xAEABECDA]
        2 [-]: GETVARARGS R1 1
-       3 [-]: GETIMPORT R2 4 [nil]
+       3 [-]: GETIMPORT R2 4 ["seeall"]
        4 [-]: CALL R0 2 0  
        5 [-]: DUPCLOSURE R0 K5 []
        6 [-]: SETGLOBAL R0 K6 ["Create"]
@@ -21,10 +21,10 @@
 ; Is_vararg:       0
 ; Max Stack Size:  20
 
-       0 [-]: GETIMPORT R10 1 [nil]
+       0 [-]: GETIMPORT R10 1 [0x2D0FAD09]
        1 [-]: LOADK R11 K2 ["EE.Interface.Utilities"]
        2 [-]: CALL R10 1 1 
-       3 [-]: GETIMPORT R11 1 [nil]
+       3 [-]: GETIMPORT R11 1 [0x2D0FAD09]
        4 [-]: LOADK R12 K3 ["Lotus.Interface.UIStyleUtilities"]
        5 [-]: CALL R11 1 1 
        6 [-]: NEWTABLE R12 128 0
@@ -67,7 +67,7 @@
       43 [-]: LOADNIL R13  
       44 [-]: SETTABLEKS R13 R12 K25 ["mWidth"]
       45 [-]: GETTABLEKS R13 R10 K26 [0x06D055F9]
-      46 [-]: GETIMPORT R14 29 [nil]
+      46 [-]: GETIMPORT R14 29 [0xE6B41ADB]
       47 [-]: CALL R14 0 1 
       48 [-]: LOADN R15 50 
       49 [-]: LOADN R16 32 
@@ -258,7 +258,7 @@ L 3: 111 [-]: SETTABLEKS R13 R12 K61 ["mForceCallout"]
      234 [-]: SETTABLEKS R13 R12 K139 ["SetPressedCallback"]
      235 [-]: DUPCLOSURE R13 K140 []
      236 [-]: SETTABLEKS R13 R12 K141 ["SetReleasedCallback"]
-     237 [-]: GETIMPORT R13 143 [nil]
+     237 [-]: GETIMPORT R13 143 [0xCFC01047]
      238 [-]: MOVE R14 R8  
      239 [-]: CALL R13 1 3 
      240 [-]: FORGPREP_NEXT R13 L5

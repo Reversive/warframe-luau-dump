@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  4
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x2D0FAD09]
        2 [-]: LOADK R1 K2 ["Lotus.Scripts.Libs.AbilitiesLib"]
        3 [-]: CALL R0 1 1  
        4 [-]: LOADK R1 K3 [0.25]
@@ -55,7 +55,7 @@ L 2:  12 [-]: LOADN R1 1
 ; Is_vararg:       0
 ; Max Stack Size:  8
 
-       0 [-]: GETIMPORT R0 3 [nil]
+       0 [-]: GETIMPORT R0 3 ["Level"]
        1 [-]: JUMPXEQKN R0 K4 L0 NOT [1]
        2 [-]: LOADK R1 K5 [0.25]
        3 [-]: SETUPVAL R1 0
@@ -80,18 +80,18 @@ L 3:  15 [-]: NEWTABLE R1 1 0
       19 [-]: GETUPVAL R7 0
       20 [-]: MULK R6 R7 K15 [100]
       21 [-]: FASTCALL1 12 R6 L4
-      22 [-]: GETIMPORT R5 18 [nil]
+      22 [-]: GETIMPORT R5 18 [0x55F27C30]
       23 [-]: CALL R5 1 1  
 L 4:  24 [-]: SETTABLEKS R5 R4 K11 ["Value"]
       25 [-]: LOADK R5 K19 ["/Lotus/Language/Game/UNIT_PERCENT"]
       26 [-]: SETTABLEKS R5 R4 K12 ["ValueUnit"]
       27 [-]: FASTCALL2 52 R1 R4 L5
       28 [-]: MOVE R3 R1   
-      29 [-]: GETIMPORT R2 22 [nil]
+      29 [-]: GETIMPORT R2 22 [0x23D5322F]
       30 [-]: CALL R2 2 0  
-L 5:  31 [-]: GETIMPORT R2 24 [nil]
+L 5:  31 [-]: GETIMPORT R2 24 ["Modded"]
       32 [-]: SETTABLEKS R2 R1 K23 ["Modded"]
-      33 [-]: GETIMPORT R2 25 [nil]
+      33 [-]: GETIMPORT R2 25 ["_T"]
       34 [-]: SETTABLEKS R1 R2 K26 ["AbilityUpgradeLevelInfo"]
       35 [-]: RETURN R0 0  
 
@@ -110,7 +110,7 @@ L 5:  31 [-]: GETIMPORT R2 24 [nil]
        4 [-]: NAMECALL R5 R3 K2 [0xB87F958D]
        5 [-]: CALL R5 1 1  
        6 [-]: JUMPIFNOTLE R5 R4 L0
-       7 [-]: GETIMPORT R6 4 [nil]
+       7 [-]: GETIMPORT R6 4 [0x0469F296]
        8 [-]: LOADK R7 K5 ["/Lotus/Language/Game/AbilityErrorNotReady"]
        9 [-]: CALL R6 1 -1 
       10 [-]: NAMECALL R4 R1 K6 [0xD7091D77]
@@ -145,12 +145,12 @@ L 1:   8 [-]: JUMPXEQKN R3 K4 L2 NOT [3]
      
 L 2:  12 [-]: LOADN R4 1   
       13 [-]: SETUPVAL R4 0
-L 3:  14 [-]: GETIMPORT R6 7 [nil]
-      15 [-]: GETIMPORT R7 9 [nil]
+L 3:  14 [-]: GETIMPORT R6 7 [0x17C91A14]
+      15 [-]: GETIMPORT R7 9 [0x0469F296]
       16 [-]: LOADK R8 K10 ["GAME_L1_WEAPON1"]
       17 [-]: CALL R7 1 1  
-      18 [-]: GETIMPORT R8 12 [nil]
-      19 [-]: GETIMPORT R9 14 [nil]
+      18 [-]: GETIMPORT R8 12 ["ZERO_VECTOR"]
+      19 [-]: GETIMPORT R9 14 ["ZERO_ROTATION"]
       20 [-]: MOVE R10 R0  
       21 [-]: NAMECALL R4 R1 K15 [0x47901F07]
       22 [-]: CALL R4 6 0  
@@ -160,24 +160,24 @@ L 3:  14 [-]: GETIMPORT R6 7 [nil]
       26 [-]: GETUPVAL R5 1
       27 [-]: GETTABLEKS R4 R5 K17 [0x8D11E79E]
       28 [-]: MOVE R5 R0   
-      29 [-]: GETIMPORT R6 19 [nil]
+      29 [-]: GETIMPORT R6 19 [0x0ED8B456]
       30 [-]: LOADK R7 K20 ["PowerCast"]
       31 [-]: LOADB R8 0   
       32 [-]: LOADN R9 2   
       33 [-]: LOADN R10 1  
       34 [-]: LOADB R11 1  
       35 [-]: CALL R4 7 0  
-      36 [-]: GETIMPORT R6 22 [nil]
-      37 [-]: GETIMPORT R7 24 [nil]
-      38 [-]: GETIMPORT R8 12 [nil]
-      39 [-]: GETIMPORT R9 14 [nil]
+      36 [-]: GETIMPORT R6 22 [0xABA1FA60]
+      37 [-]: GETIMPORT R7 24 ["EMPTY_SYMBOL"]
+      38 [-]: GETIMPORT R8 12 ["ZERO_VECTOR"]
+      39 [-]: GETIMPORT R9 14 ["ZERO_ROTATION"]
       40 [-]: MOVE R10 R0  
       41 [-]: NAMECALL R4 R1 K15 [0x47901F07]
       42 [-]: CALL R4 6 0  
       43 [-]: LOADB R6 0   
       44 [-]: NAMECALL R4 R0 K16 [0x68B88E58]
       45 [-]: CALL R4 2 0  
-      46 [-]: GETIMPORT R4 26 [nil]
+      46 [-]: GETIMPORT R4 26 [0x89326C93]
       47 [-]: NAMECALL R4 R4 K27 [0x18D05D30]
       48 [-]: CALL R4 1 1  
       49 [-]: JUMPIFNOT R4 L4

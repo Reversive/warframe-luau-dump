@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  1
 
-            1 [-]: DUPCLOSURE R0 K0 []
+       1 [-]: DUPCLOSURE R0 K0 []
        2 [-]: SETGLOBAL R0 K1 ["MatchTagEvent"]
        3 [-]: RETURN R0 0  
 
@@ -17,7 +17,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  6
 
-       0 [-]: GETIMPORT R4 1 [nil]
+       0 [-]: GETIMPORT R4 1 [0xBE190284]
        1 [-]: NAMECALL R4 R4 K2 [0xEF893AEC]
        2 [-]: CALL R4 1 1  
        3 [-]: GETTABLEKS R3 R4 K3 ["missionType"]

@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  1
 
-            1 [-]: DUPCLOSURE R0 K0 []
+       1 [-]: DUPCLOSURE R0 K0 []
        2 [-]: SETGLOBAL R0 K1 ["AvatarEntered"]
        3 [-]: DUPCLOSURE R0 K2 []
        4 [-]: SETGLOBAL R0 K3 ["AvatarExited"]
@@ -19,7 +19,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  10
 
-       0 [-]: GETIMPORT R2 2 [nil]
+       0 [-]: GETIMPORT R2 2 ["GasCityWindPushedAvatars"]
        1 [-]: JUMPIF R2 L0 
        2 [-]: NEWTABLE R3 0 1
        3 [-]: NEWTABLE R4 0 2
@@ -28,10 +28,10 @@
        6 [-]: SETLIST R4 R5 2 [1]
        7 [-]: SETLIST R3 R4 1 [1]
        8 [-]: MOVE R2 R3   
-       9 [-]: GETIMPORT R3 3 [nil]
+       9 [-]: GETIMPORT R3 3 ["_T"]
       10 [-]: SETTABLEKS R2 R3 K1 ["GasCityWindPushedAvatars"]
       11 [-]: RETURN R0 0  
-L 0:  12 [-]: GETIMPORT R3 5 [nil]
+L 0:  12 [-]: GETIMPORT R3 5 [0xC8802016]
       13 [-]: MOVE R4 R2   
       14 [-]: CALL R3 1 3  
       15 [-]: FORGPREP_INEXT R3 L2
@@ -48,7 +48,7 @@ L 2:  22 [-]: FORGLOOP R3 L1 2 [inext]
       26 [-]: SETLIST R5 R6 2 [1]
       27 [-]: FASTCALL2 52 R2 R5 L3
       28 [-]: MOVE R4 R2   
-      29 [-]: GETIMPORT R3 9 [nil]
+      29 [-]: GETIMPORT R3 9 [0x23D5322F]
       30 [-]: CALL R3 2 0  
 L 3:  31 [-]: RETURN R0 0  
 
@@ -60,10 +60,10 @@ L 3:  31 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  11
 
-       0 [-]: GETIMPORT R2 2 [nil]
+       0 [-]: GETIMPORT R2 2 ["GasCityWindPushedAvatars"]
        1 [-]: JUMPIF R2 L0 
        2 [-]: RETURN R0 0  
-L 0:   3 [-]: GETIMPORT R3 4 [nil]
+L 0:   3 [-]: GETIMPORT R3 4 [0xC8802016]
        4 [-]: MOVE R4 R2   
        5 [-]: CALL R3 1 3  
        6 [-]: FORGPREP_INEXT R3 L3
@@ -72,7 +72,7 @@ L 1:   7 [-]: GETTABLEN R8 R7 1
        9 [-]: GETTABLEN R8 R7 2
       10 [-]: LOADN R9 1   
       11 [-]: JUMPIFNOTLE R8 R9 L2
-      12 [-]: GETIMPORT R8 7 [nil]
+      12 [-]: GETIMPORT R8 7 [0x9C1F3B5A]
       13 [-]: MOVE R9 R2   
       14 [-]: MOVE R10 R6  
       15 [-]: CALL R8 2 0  

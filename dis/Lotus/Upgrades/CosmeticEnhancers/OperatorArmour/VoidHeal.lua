@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  1
 
-            1 [-]: DUPCLOSURE R0 K0 []
+       1 [-]: DUPCLOSURE R0 K0 []
        2 [-]: SETGLOBAL R0 K1 ["GetDescription"]
        3 [-]: DUPCLOSURE R0 K2 []
        4 [-]: SETGLOBAL R0 K3 ["VoidHeal"]
@@ -20,29 +20,29 @@
 ; Max Stack Size:  9
 
        0 [-]: DUPTABLE R1 2
-       1 [-]: GETIMPORT R3 4 [nil]
-       2 [-]: GETIMPORT R6 4 [nil]
+       1 [-]: GETIMPORT R3 4 [0x443A8D0B]
+       2 [-]: GETIMPORT R6 4 [0x443A8D0B]
        3 [-]: LENGTH R5 R6 
        4 [-]: FASTCALL2 19 R5 R0 L0
        5 [-]: MOVE R6 R0   
-       6 [-]: GETIMPORT R4 7 [nil]
+       6 [-]: GETIMPORT R4 7 [0xAC1B386A]
        7 [-]: CALL R4 2 1  
 L 0:   8 [-]: GETTABLE R2 R3 R4
        9 [-]: SETTABLEKS R2 R1 K0 ["RANGE"]
-      10 [-]: GETIMPORT R5 10 [nil]
-      11 [-]: GETIMPORT R8 10 [nil]
+      10 [-]: GETIMPORT R5 10 [0x1C139F5C]
+      11 [-]: GETIMPORT R8 10 [0x1C139F5C]
       12 [-]: LENGTH R7 R8 
       13 [-]: FASTCALL2 19 R7 R0 L1
       14 [-]: MOVE R8 R0   
-      15 [-]: GETIMPORT R6 7 [nil]
+      15 [-]: GETIMPORT R6 7 [0xAC1B386A]
       16 [-]: CALL R6 2 1  
 L 1:  17 [-]: GETTABLE R4 R5 R6
       18 [-]: MULK R3 R4 K8 [100]
       19 [-]: FASTCALL1 12 R3 L2
-      20 [-]: GETIMPORT R2 12 [nil]
+      20 [-]: GETIMPORT R2 12 [0x55F27C30]
       21 [-]: CALL R2 1 1  
 L 2:  22 [-]: SETTABLEKS R2 R1 K1 ["AMOUNT"]
-      23 [-]: GETIMPORT R2 15 [nil]
+      23 [-]: GETIMPORT R2 15 [0xB139D7BC]
       24 [-]: MOVE R3 R1   
       25 [-]: CALL R2 1 -1 
       26 [-]: RETURN R2 -1 
@@ -55,25 +55,25 @@ L 2:  22 [-]: SETTABLEKS R2 R1 K1 ["AMOUNT"]
 ; Is_vararg:       0
 ; Max Stack Size:  20
 
-       0 [-]: GETIMPORT R5 1 [nil]
+       0 [-]: GETIMPORT R5 1 [0x89326C93]
        1 [-]: NAMECALL R5 R5 K2 [0x18D05D30]
        2 [-]: CALL R5 1 1  
        3 [-]: JUMPIF R5 L0 
        4 [-]: RETURN R0 0  
-L 0:   5 [-]: GETIMPORT R6 4 [nil]
-       6 [-]: GETIMPORT R9 4 [nil]
+L 0:   5 [-]: GETIMPORT R6 4 [0x443A8D0B]
+       6 [-]: GETIMPORT R9 4 [0x443A8D0B]
        7 [-]: LENGTH R8 R9 
        8 [-]: FASTCALL2 19 R8 R2 L1
        9 [-]: MOVE R9 R2   
-      10 [-]: GETIMPORT R7 7 [nil]
+      10 [-]: GETIMPORT R7 7 [0xAC1B386A]
       11 [-]: CALL R7 2 1  
 L 1:  12 [-]: GETTABLE R5 R6 R7
-      13 [-]: GETIMPORT R7 9 [nil]
-      14 [-]: GETIMPORT R10 9 [nil]
+      13 [-]: GETIMPORT R7 9 [0x1C139F5C]
+      14 [-]: GETIMPORT R10 9 [0x1C139F5C]
       15 [-]: LENGTH R9 R10
       16 [-]: FASTCALL2 19 R9 R2 L2
       17 [-]: MOVE R10 R2  
-      18 [-]: GETIMPORT R8 7 [nil]
+      18 [-]: GETIMPORT R8 7 [0xAC1B386A]
       19 [-]: CALL R8 2 1  
 L 2:  20 [-]: GETTABLE R6 R7 R8
       21 [-]: LOADNIL R7   
@@ -82,12 +82,12 @@ L 2:  20 [-]: GETTABLE R6 R7 R8
       24 [-]: MOVE R1 R7   
       25 [-]: MOVE R1 R8   
       26 [-]: MOVE R0 R6   
-      27 [-]: GETIMPORT R10 11 [nil]
+      27 [-]: GETIMPORT R10 11 [0xCBD666E1]
       28 [-]: LOADN R11 0  
       29 [-]: CALL R10 1 0 
 L 3:  30 [-]: FASTCALL1 62 R0 L4
       31 [-]: MOVE R11 R0  
-      32 [-]: GETIMPORT R10 13 [nil]
+      32 [-]: GETIMPORT R10 13 [0x7B998233]
       33 [-]: CALL R10 1 1 
 L 4:  34 [-]: JUMPIF R10 L12
       35 [-]: NAMECALL R10 R0 K14 [0x73901ACF]
@@ -102,19 +102,19 @@ L 4:  34 [-]: JUMPIF R10 L12
       44 [-]: NAMECALL R11 R0 K17 [0x5E651723]
       45 [-]: CALL R11 1 -1
       46 [-]: FASTCALL 62 L5
-      47 [-]: GETIMPORT R10 13 [nil]
+      47 [-]: GETIMPORT R10 13 [0x7B998233]
       48 [-]: CALL R10 -1 1
 L 5:  49 [-]: JUMPIF R10 L12
-      50 [-]: GETIMPORT R10 1 [nil]
-      51 [-]: GETIMPORT R12 19 [nil]
+      50 [-]: GETIMPORT R10 1 [0x89326C93]
+      51 [-]: GETIMPORT R12 19 ["gTennoAvatarType"]
       52 [-]: NAMECALL R13 R0 K20 [0xF6EBD926]
       53 [-]: CALL R13 1 1 
       54 [-]: LOADN R14 0  
       55 [-]: MOVE R15 R5  
       56 [-]: NAMECALL R10 R10 K21 [0xFB669000]
       57 [-]: CALL R10 5 1 
-      58 [-]: GETIMPORT R11 1 [nil]
-      59 [-]: GETIMPORT R13 23 [nil]
+      58 [-]: GETIMPORT R11 1 [0x89326C93]
+      59 [-]: GETIMPORT R13 23 [0xCBBF34FB]
       60 [-]: NAMECALL R14 R0 K20 [0xF6EBD926]
       61 [-]: CALL R14 1 1 
       62 [-]: LOADN R15 0  
@@ -134,7 +134,7 @@ L 6:  70 [-]: GETTABLE R15 R10 R14
       76 [-]: CALL R15 1 1 
       77 [-]: JUMPIF R15 L7
       78 [-]: GETTABLE R15 R10 R14
-      79 [-]: GETIMPORT R17 25 [nil]
+      79 [-]: GETIMPORT R17 25 ["gLotusOperatorAvatarType"]
       80 [-]: NAMECALL R15 R15 K26 [0xF2DEAF69]
       81 [-]: CALL R15 2 1 
       82 [-]: JUMPIF R15 L7
@@ -150,8 +150,8 @@ L 6:  70 [-]: GETTABLE R15 R10 R14
       92 [-]: ADD R18 R7 R19
       93 [-]: NAMECALL R16 R15 K29 [0x014DB014]
       94 [-]: CALL R16 2 0 
-      95 [-]: GETIMPORT R18 31 [nil]
-      96 [-]: GETIMPORT R19 33 [nil]
+      95 [-]: GETIMPORT R18 31 [0x967198B1]
+      96 [-]: GETIMPORT R19 33 ["EMPTY_SYMBOL"]
       97 [-]: NAMECALL R16 R15 K34 [0x47901F07]
       98 [-]: CALL R16 3 0 
 L 7:  99 [-]: FORNLOOP R12 L6
@@ -185,12 +185,12 @@ L 9: 104 [-]: GETTABLE R15 R11 R14
      127 [-]: ADD R18 R7 R19
      128 [-]: NAMECALL R16 R15 K29 [0x014DB014]
      129 [-]: CALL R16 2 0 
-     130 [-]: GETIMPORT R18 31 [nil]
-     131 [-]: GETIMPORT R19 33 [nil]
+     130 [-]: GETIMPORT R18 31 [0x967198B1]
+     131 [-]: GETIMPORT R19 33 ["EMPTY_SYMBOL"]
      132 [-]: NAMECALL R16 R15 K34 [0x47901F07]
      133 [-]: CALL R16 3 0 
 L10: 134 [-]: FORNLOOP R12 L9
-L11: 135 [-]: GETIMPORT R12 11 [nil]
+L11: 135 [-]: GETIMPORT R12 11 [0xCBD666E1]
      136 [-]: LOADN R13 1  
      137 [-]: CALL R12 1 0 
      138 [-]: JUMPBACK L3  

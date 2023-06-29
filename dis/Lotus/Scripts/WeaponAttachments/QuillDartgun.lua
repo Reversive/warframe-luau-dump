@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  1
 
-            1 [-]: DUPCLOSURE R0 K0 []
+       1 [-]: DUPCLOSURE R0 K0 []
        2 [-]: SETGLOBAL R0 K1 ["OnFire"]
        3 [-]: DUPCLOSURE R0 K2 []
        4 [-]: SETGLOBAL R0 K3 ["OnReload"]
@@ -23,7 +23,7 @@
        1 [-]: CALL R1 1 1  
        2 [-]: FASTCALL1 62 R1 L0
        3 [-]: MOVE R3 R1   
-       4 [-]: GETIMPORT R2 2 [nil]
+       4 [-]: GETIMPORT R2 2 [0x7B998233]
        5 [-]: CALL R2 1 1  
 L 0:   6 [-]: JUMPIFNOT R2 L1
        7 [-]: RETURN R0 0  
@@ -31,27 +31,27 @@ L 1:   8 [-]: NAMECALL R2 R1 K3 [0x5163741E]
        9 [-]: CALL R2 1 1  
       10 [-]: FASTCALL1 62 R2 L2
       11 [-]: MOVE R4 R2   
-      12 [-]: GETIMPORT R3 2 [nil]
+      12 [-]: GETIMPORT R3 2 [0x7B998233]
       13 [-]: CALL R3 1 1  
 L 2:  14 [-]: JUMPIFNOT R3 L3
       15 [-]: RETURN R0 0  
-L 3:  16 [-]: GETIMPORT R3 5 [nil]
+L 3:  16 [-]: GETIMPORT R3 5 [0xDDEAF972]
       17 [-]: JUMPIFNOT R3 L4
       18 [-]: NAMECALL R3 R2 K6 [0xA5E492D4]
       19 [-]: CALL R3 1 1  
       20 [-]: JUMPIF R3 L4 
       21 [-]: RETURN R0 0  
-L 4:  22 [-]: GETIMPORT R5 8 [nil]
+L 4:  22 [-]: GETIMPORT R5 8 [0x1EE7CC80]
       23 [-]: NAMECALL R3 R0 K9 [0xC9F6A7D7]
       24 [-]: CALL R3 2 1  
       25 [-]: FASTCALL1 62 R3 L5
       26 [-]: MOVE R5 R3   
-      27 [-]: GETIMPORT R4 2 [nil]
+      27 [-]: GETIMPORT R4 2 [0x7B998233]
       28 [-]: CALL R4 1 1  
 L 5:  29 [-]: JUMPIF R4 L9 
       30 [-]: FASTCALL1 62 R1 L6
       31 [-]: MOVE R5 R1   
-      32 [-]: GETIMPORT R4 2 [nil]
+      32 [-]: GETIMPORT R4 2 [0x7B998233]
       33 [-]: CALL R4 1 1  
 L 6:  34 [-]: JUMPIF R4 L9 
       35 [-]: NAMECALL R5 R1 K10 [0x7A7373F5]
@@ -62,18 +62,18 @@ L 6:  34 [-]: JUMPIF R4 L9
       40 [-]: LOADN R6 16  
       41 [-]: MULK R8 R4 K12 [16]
       42 [-]: FASTCALL1 12 R8 L7
-      43 [-]: GETIMPORT R7 15 [nil]
+      43 [-]: GETIMPORT R7 15 [0x55F27C30]
       44 [-]: CALL R7 1 1  
 L 7:  45 [-]: SUB R5 R6 R7 
-      46 [-]: GETIMPORT R6 17 [nil]
+      46 [-]: GETIMPORT R6 17 [0x00046924]
       47 [-]: CALL R6 0 1  
-      48 [-]: GETIMPORT R7 19 [nil]
+      48 [-]: GETIMPORT R7 19 [0xA421AF95]
       49 [-]: CALL R7 0 1  
       50 [-]: LOADN R10 1  
       51 [-]: MOVE R8 R5   
       52 [-]: LOADN R9 1   
       53 [-]: FORNPREP R8 L9
-L 8:  54 [-]: GETIMPORT R11 21 [nil]
+L 8:  54 [-]: GETIMPORT R11 21 [0x0469F296]
       55 [-]: LOADK R13 K22 ["GAME_C1_DARTNEEDLE"]
       56 [-]: MOVE R14 R10 
       57 [-]: CONCAT R12 R13 R14
@@ -103,7 +103,7 @@ L 9:  70 [-]: RETURN R0 0
        1 [-]: CALL R1 1 1  
        2 [-]: FASTCALL1 62 R1 L0
        3 [-]: MOVE R3 R1   
-       4 [-]: GETIMPORT R2 2 [nil]
+       4 [-]: GETIMPORT R2 2 [0x7B998233]
        5 [-]: CALL R2 1 1  
 L 0:   6 [-]: JUMPIFNOT R2 L1
        7 [-]: RETURN R0 0  
@@ -111,29 +111,29 @@ L 1:   8 [-]: NAMECALL R2 R1 K3 [0x5163741E]
        9 [-]: CALL R2 1 1  
       10 [-]: FASTCALL1 62 R2 L2
       11 [-]: MOVE R4 R2   
-      12 [-]: GETIMPORT R3 2 [nil]
+      12 [-]: GETIMPORT R3 2 [0x7B998233]
       13 [-]: CALL R3 1 1  
 L 2:  14 [-]: JUMPIFNOT R3 L3
       15 [-]: RETURN R0 0  
-L 3:  16 [-]: GETIMPORT R3 5 [nil]
+L 3:  16 [-]: GETIMPORT R3 5 [0xDDEAF972]
       17 [-]: JUMPIFNOT R3 L4
       18 [-]: NAMECALL R3 R2 K6 [0xA5E492D4]
       19 [-]: CALL R3 1 1  
       20 [-]: JUMPIF R3 L4 
       21 [-]: RETURN R0 0  
-L 4:  22 [-]: GETIMPORT R5 8 [nil]
+L 4:  22 [-]: GETIMPORT R5 8 [0x1EE7CC80]
       23 [-]: NAMECALL R3 R0 K9 [0xC9F6A7D7]
       24 [-]: CALL R3 2 1  
       25 [-]: FASTCALL1 62 R3 L5
       26 [-]: MOVE R5 R3   
-      27 [-]: GETIMPORT R4 2 [nil]
+      27 [-]: GETIMPORT R4 2 [0x7B998233]
       28 [-]: CALL R4 1 1  
 L 5:  29 [-]: JUMPIF R4 L7 
-      30 [-]: GETIMPORT R4 11 [nil]
+      30 [-]: GETIMPORT R4 11 [0x00046924]
       31 [-]: CALL R4 0 1  
-      32 [-]: GETIMPORT R5 13 [nil]
+      32 [-]: GETIMPORT R5 13 [0xA421AF95]
       33 [-]: CALL R5 0 1  
-      34 [-]: GETIMPORT R6 13 [nil]
+      34 [-]: GETIMPORT R6 13 [0xA421AF95]
       35 [-]: LOADN R7 1   
       36 [-]: LOADN R8 1   
       37 [-]: LOADN R9 1   
@@ -142,7 +142,7 @@ L 5:  29 [-]: JUMPIF R4 L7
       40 [-]: LOADN R7 16  
       41 [-]: LOADN R8 1   
       42 [-]: FORNPREP R7 L7
-L 6:  43 [-]: GETIMPORT R10 15 [nil]
+L 6:  43 [-]: GETIMPORT R10 15 [0x0469F296]
       44 [-]: LOADK R12 K16 ["GAME_C1_DARTNEEDLE"]
       45 [-]: MOVE R13 R9  
       46 [-]: CONCAT R11 R12 R13

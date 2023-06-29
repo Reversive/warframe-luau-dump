@@ -5,9 +5,9 @@
 ; Is_vararg:       1
 ; Max Stack Size:  3
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0xAEABECDA]
        2 [-]: GETVARARGS R1 1
-       3 [-]: GETIMPORT R2 4 [nil]
+       3 [-]: GETIMPORT R2 4 ["seeall"]
        4 [-]: CALL R0 2 0  
        5 [-]: DUPCLOSURE R0 K5 []
        6 [-]: SETGLOBAL R0 K6 ["OnStart"]
@@ -30,25 +30,25 @@
        4 [-]: SETTABLEKS R3 R2 K2 ["curNumHits"]
        5 [-]: LOADN R3 1   
        6 [-]: SETTABLEKS R3 R2 K3 ["maxNumHits"]
-       7 [-]: GETIMPORT R3 5 [nil]
+       7 [-]: GETIMPORT R3 5 [0xBA7DFCD2]
        8 [-]: MOVE R5 R0   
        9 [-]: NAMECALL R3 R3 K6 [0xD31CFAC0]
       10 [-]: CALL R3 2 1  
       11 [-]: SETTABLEKS R3 R2 K7 ["challengeInstance"]
       12 [-]: GETTABLEKS R4 R2 K7 ["challengeInstance"]
       13 [-]: FASTCALL1 62 R4 L0
-      14 [-]: GETIMPORT R3 9 [nil]
+      14 [-]: GETIMPORT R3 9 [0x7B998233]
       15 [-]: CALL R3 1 1  
 L 0:  16 [-]: JUMPIFNOT R3 L1
       17 [-]: RETURN R2 1  
-L 1:  18 [-]: GETIMPORT R3 5 [nil]
+L 1:  18 [-]: GETIMPORT R3 5 [0xBA7DFCD2]
       19 [-]: MOVE R5 R0   
       20 [-]: NAMECALL R3 R3 K10 [0xC97B7A44]
       21 [-]: CALL R3 2 1  
       22 [-]: SETTABLEKS R3 R2 K11 ["challengeUserState"]
       23 [-]: GETTABLEKS R4 R2 K11 ["challengeUserState"]
       24 [-]: FASTCALL1 62 R4 L2
-      25 [-]: GETIMPORT R3 9 [nil]
+      25 [-]: GETIMPORT R3 9 [0x7B998233]
       26 [-]: CALL R3 1 1  
 L 2:  27 [-]: JUMPIFNOT R3 L3
       28 [-]: RETURN R2 1  
@@ -87,14 +87,14 @@ L 4:  39 [-]: GETTABLEKS R3 R2 K11 ["challengeUserState"]
 L 0:   2 [-]: GETTABLEKS R3 R0 K0 ["curNumHits"]
        3 [-]: ADD R2 R3 R1 
        4 [-]: SETTABLEKS R2 R0 K0 ["curNumHits"]
-       5 [-]: GETIMPORT R2 2 [nil]
+       5 [-]: GETIMPORT R2 2 [0xBA7DFCD2]
        6 [-]: GETTABLEKS R4 R0 K3 ["ChallengeInstanceID"]
        7 [-]: NAMECALL R2 R2 K4 [0xC97B7A44]
        8 [-]: CALL R2 2 1  
        9 [-]: SETTABLEKS R2 R0 K5 ["challengeUserState"]
       10 [-]: GETTABLEKS R3 R0 K5 ["challengeUserState"]
       11 [-]: FASTCALL1 62 R3 L1
-      12 [-]: GETIMPORT R2 7 [nil]
+      12 [-]: GETIMPORT R2 7 [0x7B998233]
       13 [-]: CALL R2 1 1  
 L 1:  14 [-]: JUMPIF R2 L2 
       15 [-]: GETTABLEKS R2 R0 K5 ["challengeUserState"]

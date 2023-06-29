@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  1
 
-            1 [-]: DUPCLOSURE R0 K0 []
+       1 [-]: DUPCLOSURE R0 K0 []
        2 [-]: SETGLOBAL R0 K1 ["GetDescriptionInfo"]
        3 [-]: DUPCLOSURE R0 K2 []
        4 [-]: SETGLOBAL R0 K3 ["StartMod"]
@@ -22,11 +22,11 @@
 ; Max Stack Size:  5
 
        0 [-]: DUPTABLE R1 1
-       1 [-]: GETIMPORT R3 3 [nil]
-       2 [-]: GETIMPORT R4 5 [nil]
+       1 [-]: GETIMPORT R3 3 [0x5925187A]
+       2 [-]: GETIMPORT R4 5 [0x9AA797E1]
        3 [-]: ADD R2 R3 R4 
        4 [-]: SETTABLEKS R2 R1 K0 ["val"]
-       5 [-]: GETIMPORT R2 8 [nil]
+       5 [-]: GETIMPORT R2 8 [0xB139D7BC]
        6 [-]: MOVE R3 R1   
        7 [-]: CALL R2 1 -1 
        8 [-]: RETURN R2 -1 
@@ -41,17 +41,17 @@
 
        0 [-]: FASTCALL1 62 R0 L0
        1 [-]: MOVE R6 R0   
-       2 [-]: GETIMPORT R5 1 [nil]
+       2 [-]: GETIMPORT R5 1 [0x7B998233]
        3 [-]: CALL R5 1 1  
 L 0:   4 [-]: JUMPIF R5 L2 
        5 [-]: FASTCALL1 62 R4 L1
        6 [-]: MOVE R6 R4   
-       7 [-]: GETIMPORT R5 1 [nil]
+       7 [-]: GETIMPORT R5 1 [0x7B998233]
        8 [-]: CALL R5 1 1  
 L 1:   9 [-]: JUMPIFNOT R5 L3
 L 2:  10 [-]: RETURN R0 0  
 L 3:  11 [-]: LOADN R7 1   
-      12 [-]: GETIMPORT R5 3 [nil]
+      12 [-]: GETIMPORT R5 3 [0x5925187A]
       13 [-]: LOADN R6 1   
       14 [-]: FORNPREP R5 L5
 L 4:  15 [-]: NAMECALL R8 R1 K4 [0x327F2778]
@@ -74,10 +74,10 @@ L 5:  20 [-]: RETURN R0 0
        2 [-]: CALL R5 1 1  
        3 [-]: FASTCALL1 62 R5 L0
        4 [-]: MOVE R7 R5   
-       5 [-]: GETIMPORT R6 2 [nil]
+       5 [-]: GETIMPORT R6 2 [0x7B998233]
        6 [-]: CALL R6 1 1  
 L 0:   7 [-]: JUMPIF R6 L1 
-       8 [-]: GETIMPORT R8 4 [nil]
+       8 [-]: GETIMPORT R8 4 ["gLotusNpcAvatarType"]
        9 [-]: NAMECALL R6 R5 K5 [0xF2DEAF69]
       10 [-]: CALL R6 2 1  
       11 [-]: JUMPIF R6 L2 
@@ -87,7 +87,7 @@ L 2:  14 [-]: NAMECALL R6 R0 K6 [0xBC617E0F]
       15 [-]: CALL R6 1 1  
       16 [-]: FASTCALL1 62 R6 L3
       17 [-]: MOVE R8 R6   
-      18 [-]: GETIMPORT R7 2 [nil]
+      18 [-]: GETIMPORT R7 2 [0x7B998233]
       19 [-]: CALL R7 1 1  
 L 3:  20 [-]: JUMPIF R7 L5 
       21 [-]: NAMECALL R7 R6 K7 [0xFBE77371]

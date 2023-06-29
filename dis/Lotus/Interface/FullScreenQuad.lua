@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  3
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x2D0FAD09]
        2 [-]: LOADK R1 K2 ["EE.Interface.Utilities"]
        3 [-]: CALL R0 1 1  
        4 [-]: DUPCLOSURE R1 K3 []
@@ -40,18 +40,18 @@
 
        0 [-]: GETUPVAL R2 0
        1 [-]: GETTABLEKS R1 R2 K0 [0x44537ADF]
-       2 [-]: GETIMPORT R2 2 [nil]
+       2 [-]: GETIMPORT R2 2 [0xAE91E43B]
        3 [-]: CALL R1 1 -1 
        4 [-]: FASTCALL 18 L0
-       5 [-]: GETIMPORT R0 5 [nil]
+       5 [-]: GETIMPORT R0 5 [0xB62ECFE0]
        6 [-]: CALL R0 -1 1 
-L 0:   7 [-]: GETIMPORT R1 2 [nil]
+L 0:   7 [-]: GETIMPORT R1 2 [0xAE91E43B]
        8 [-]: LOADK R3 K6 ["Quad"]
        9 [-]: LOADN R4 12  
       10 [-]: MOVE R5 R0   
       11 [-]: NAMECALL R1 R1 K7 [0x67BC869F]
       12 [-]: CALL R1 4 0  
-      13 [-]: GETIMPORT R1 2 [nil]
+      13 [-]: GETIMPORT R1 2 [0xAE91E43B]
       14 [-]: LOADK R3 K6 ["Quad"]
       15 [-]: LOADN R4 13  
       16 [-]: MOVE R5 R0   
@@ -67,17 +67,17 @@ L 0:   7 [-]: GETIMPORT R1 2 [nil]
 ; Is_vararg:       0
 ; Max Stack Size:  5
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 [0xBE190284]
        1 [-]: LOADB R2 1   
        2 [-]: LOADB R3 1   
        3 [-]: NAMECALL R0 R0 K2 [0xC02F2CB8]
        4 [-]: CALL R0 3 0  
-       5 [-]: GETIMPORT R0 4 [nil]
+       5 [-]: GETIMPORT R0 4 [0xAE91E43B]
        6 [-]: LOADK R2 K5 ["Quad"]
-       7 [-]: GETIMPORT R3 7 [nil]
+       7 [-]: GETIMPORT R3 7 [0x1A996896]
        8 [-]: NAMECALL R0 R0 K8 [0xD5181643]
        9 [-]: CALL R0 3 0  
-      10 [-]: GETIMPORT R0 4 [nil]
+      10 [-]: GETIMPORT R0 4 [0xAE91E43B]
       11 [-]: LOADK R2 K5 ["Quad"]
       12 [-]: LOADN R3 10  
       13 [-]: LOADN R4 100 
@@ -95,8 +95,8 @@ L 0:   7 [-]: GETIMPORT R1 2 [nil]
 ; Is_vararg:       0
 ; Max Stack Size:  3
 
-       0 [-]: GETIMPORT R0 1 [nil]
-       1 [-]: GETIMPORT R2 3 [nil]
+       0 [-]: GETIMPORT R0 1 [0xAE91E43B]
+       1 [-]: GETIMPORT R2 3 [0xB693B6C1]
        2 [-]: CALL R2 0 -1 
        3 [-]: NAMECALL R0 R0 K4 [0x8A8C8D5A]
        4 [-]: CALL R0 -1 0 
@@ -110,8 +110,8 @@ L 0:   7 [-]: GETIMPORT R1 2 [nil]
 ; Is_vararg:       0
 ; Max Stack Size:  9
 
-       0 [-]: GETIMPORT R0 1 [nil]
-       1 [-]: GETIMPORT R1 3 [nil]
+       0 [-]: GETIMPORT R0 1 [0x25312C9B]
+       1 [-]: GETIMPORT R1 3 [0xAE91E43B]
        2 [-]: LOADK R2 K4 ["Quad"]
        3 [-]: LOADN R3 2   
        4 [-]: NEWTABLE R4 0 1
@@ -124,7 +124,7 @@ L 0:   7 [-]: GETIMPORT R1 2 [nil]
       11 [-]: GETGLOBAL R7 K6 [0x3B31938E]
       12 [-]: DUPCLOSURE R8 K7 []
       13 [-]: CALL R0 8 0  
-      14 [-]: GETIMPORT R0 9 [nil]
+      14 [-]: GETIMPORT R0 9 [0xBE190284]
       15 [-]: LOADB R2 0   
       16 [-]: LOADB R3 0   
       17 [-]: NAMECALL R0 R0 K10 [0xC02F2CB8]
@@ -151,26 +151,26 @@ L 0:   7 [-]: GETIMPORT R1 2 [nil]
 ; Is_vararg:       0
 ; Max Stack Size:  10
 
-       0 [-]: GETIMPORT R2 1 [nil]
+       0 [-]: GETIMPORT R2 1 [0x03F57322]
        1 [-]: MOVE R3 R0   
        2 [-]: CALL R2 1 1  
        3 [-]: JUMPIF R2 L0 
        4 [-]: GETGLOBAL R2 K2 [0x152A873E]
 L 0:   5 [-]: SETGLOBAL R2 K2 [0x152A873E]
-       6 [-]: GETIMPORT R2 1 [nil]
+       6 [-]: GETIMPORT R2 1 [0x03F57322]
        7 [-]: MOVE R3 R1   
        8 [-]: CALL R2 1 1  
        9 [-]: JUMPIF R2 L1 
       10 [-]: GETGLOBAL R2 K3 [0x3B31938E]
 L 1:  11 [-]: SETGLOBAL R2 K3 [0x3B31938E]
-      12 [-]: GETIMPORT R2 5 [nil]
+      12 [-]: GETIMPORT R2 5 [0xAE91E43B]
       13 [-]: LOADK R4 K6 ["Quad"]
       14 [-]: LOADN R5 10  
       15 [-]: LOADN R6 0   
       16 [-]: NAMECALL R2 R2 K7 [0x67BC869F]
       17 [-]: CALL R2 4 0  
-      18 [-]: GETIMPORT R2 9 [nil]
-      19 [-]: GETIMPORT R3 5 [nil]
+      18 [-]: GETIMPORT R2 9 [0x25312C9B]
+      19 [-]: GETIMPORT R3 5 [0xAE91E43B]
       20 [-]: LOADK R4 K6 ["Quad"]
       21 [-]: LOADN R5 1   
       22 [-]: NEWTABLE R6 0 1
@@ -192,13 +192,13 @@ L 1:  11 [-]: SETGLOBAL R2 K3 [0x3B31938E]
 ; Is_vararg:       0
 ; Max Stack Size:  4
 
-       0 [-]: GETIMPORT R2 1 [nil]
+       0 [-]: GETIMPORT R2 1 [0x03F57322]
        1 [-]: MOVE R3 R0   
        2 [-]: CALL R2 1 1  
        3 [-]: JUMPIF R2 L0 
        4 [-]: GETGLOBAL R2 K2 [0x152A873E]
 L 0:   5 [-]: SETGLOBAL R2 K2 [0x152A873E]
-       6 [-]: GETIMPORT R2 1 [nil]
+       6 [-]: GETIMPORT R2 1 [0x03F57322]
        7 [-]: MOVE R3 R1   
        8 [-]: CALL R2 1 1  
        9 [-]: JUMPIF R2 L1 
@@ -217,16 +217,16 @@ L 1:  11 [-]: SETGLOBAL R2 K3 [0x3B31938E]
 ; Max Stack Size:  5
 
        0 [-]: JUMPXEQKS R0 K0 L0 NOT ["Spiral"]
-       1 [-]: GETIMPORT R1 2 [nil]
+       1 [-]: GETIMPORT R1 2 [0xAE91E43B]
        2 [-]: LOADK R3 K3 ["Quad"]
-       3 [-]: GETIMPORT R4 5 [nil]
+       3 [-]: GETIMPORT R4 5 [0x1A996896]
        4 [-]: NAMECALL R1 R1 K6 [0xD5181643]
        5 [-]: CALL R1 3 0  
        6 [-]: RETURN R0 0  
 L 0:   7 [-]: JUMPXEQKS R0 K7 L1 NOT ["Smoke"]
-       8 [-]: GETIMPORT R1 2 [nil]
+       8 [-]: GETIMPORT R1 2 [0xAE91E43B]
        9 [-]: LOADK R3 K3 ["Quad"]
-      10 [-]: GETIMPORT R4 9 [nil]
+      10 [-]: GETIMPORT R4 9 [0x18BB94BA]
       11 [-]: NAMECALL R1 R1 K6 [0xD5181643]
       12 [-]: CALL R1 3 0  
 L 1:  13 [-]: RETURN R0 0  

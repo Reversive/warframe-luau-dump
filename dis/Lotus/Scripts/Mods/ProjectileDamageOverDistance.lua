@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  2
 
-            1 [-]: DUPCLOSURE R0 K0 []
+       1 [-]: DUPCLOSURE R0 K0 []
        2 [-]: DUPCLOSURE R1 K1 []
        3 [-]: SETGLOBAL R1 K2 ["GetDescriptionInfo"]
        4 [-]: DUPCLOSURE R1 K3 []
@@ -44,7 +44,7 @@
        4 [-]: MUL R4 R5 R6 
        5 [-]: SUB R2 R3 R4 
        6 [-]: SETTABLEKS R2 R1 K0 ["val"]
-       7 [-]: GETIMPORT R2 5 [nil]
+       7 [-]: GETIMPORT R2 5 [0xB139D7BC]
        8 [-]: MOVE R3 R1   
        9 [-]: CALL R2 1 -1 
       10 [-]: RETURN R2 -1 
@@ -57,14 +57,14 @@
 ; Is_vararg:       0
 ; Max Stack Size:  14
 
-       0 [-]: GETIMPORT R5 1 [nil]
+       0 [-]: GETIMPORT R5 1 [0x89326C93]
        1 [-]: NAMECALL R5 R5 K2 [0x18D05D30]
        2 [-]: CALL R5 1 1  
        3 [-]: JUMPIF R5 L0 
        4 [-]: RETURN R0 0  
 L 0:   5 [-]: FASTCALL1 62 R0 L1
        6 [-]: MOVE R6 R0   
-       7 [-]: GETIMPORT R5 4 [nil]
+       7 [-]: GETIMPORT R5 4 [0x7B998233]
        8 [-]: CALL R5 1 1  
 L 1:   9 [-]: JUMPIF R5 L2 
       10 [-]: NAMECALL R5 R0 K5 [0xDE321E6F]
@@ -91,14 +91,14 @@ L 2:  24 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  14
 
-       0 [-]: GETIMPORT R5 1 [nil]
+       0 [-]: GETIMPORT R5 1 [0x89326C93]
        1 [-]: NAMECALL R5 R5 K2 [0x18D05D30]
        2 [-]: CALL R5 1 1  
        3 [-]: JUMPIF R5 L0 
        4 [-]: RETURN R0 0  
 L 0:   5 [-]: FASTCALL1 62 R0 L1
        6 [-]: MOVE R6 R0   
-       7 [-]: GETIMPORT R5 4 [nil]
+       7 [-]: GETIMPORT R5 4 [0x7B998233]
        8 [-]: CALL R5 1 1  
 L 1:   9 [-]: JUMPIF R5 L2 
       10 [-]: NAMECALL R5 R0 K5 [0xDE321E6F]

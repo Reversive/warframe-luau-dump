@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  2
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x2D0FAD09]
        2 [-]: LOADK R1 K2 ["Lotus.Scripts.Generators.MarkovNameGenerator"]
        3 [-]: CALL R0 1 1  
        4 [-]: DUPCLOSURE R1 K3 []
@@ -26,7 +26,7 @@
        2 [-]: CALL R0 0 1  
        3 [-]: MOVE R1 R0   
        4 [-]: LOADK R2 K1 ["-"]
-       5 [-]: GETIMPORT R3 3 [nil]
+       5 [-]: GETIMPORT R3 3 [0x55730E1A]
        6 [-]: LOADN R4 5   
        7 [-]: LOADN R5 988 
        8 [-]: CALL R3 2 1  

@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  9
 
-            1 [-]: NEWTABLE R0 0 2
+       1 [-]: NEWTABLE R0 0 2
        2 [-]: DUPTABLE R1 4
        3 [-]: LOADN R2 340 
        4 [-]: SETTABLEKS R2 R1 K0 ["upgradeType"]
@@ -19,7 +19,7 @@
       12 [-]: LOADN R7 4   
       13 [-]: SETLIST R2 R3 5 [1]
       14 [-]: SETTABLEKS R2 R1 K2 ["amounts"]
-      15 [-]: GETIMPORT R2 6 [nil]
+      15 [-]: GETIMPORT R2 6 [0x7ED0A956]
       16 [-]: LOADK R3 K7 ["/Lotus/Upgrades/Evolutions/Shotgun/EvoShotgunShellReloadToggle"]
       17 [-]: CALL R2 1 1  
       18 [-]: SETTABLEKS R2 R1 K3 ["notificationType"]
@@ -36,7 +36,7 @@
       29 [-]: LOADN R8 1   
       30 [-]: SETLIST R3 R4 5 [1]
       31 [-]: SETTABLEKS R3 R2 K2 ["amounts"]
-      32 [-]: GETIMPORT R3 6 [nil]
+      32 [-]: GETIMPORT R3 6 [0x7ED0A956]
       33 [-]: LOADK R4 K8 ["/Lotus/Upgrades/Evolutions/Shotgun/EvoShotgunShellReloadToggleSubUpgrade"]
       34 [-]: CALL R3 1 1  
       35 [-]: SETTABLEKS R3 R2 K3 ["notificationType"]
@@ -54,17 +54,17 @@
 ; Is_vararg:       0
 ; Max Stack Size:  17
 
-       0 [-]: GETIMPORT R6 1 [nil]
+       0 [-]: GETIMPORT R6 1 [0x89326C93]
        1 [-]: NAMECALL R6 R6 K2 [0x18D05D30]
        2 [-]: CALL R6 1 1  
        3 [-]: NOT R5 R6    
        4 [-]: NAMECALL R6 R0 K3 [0x4ACCF179]
        5 [-]: CALL R6 1 1  
        6 [-]: JUMPIFNOT R6 L6
-       7 [-]: GETIMPORT R6 6 [nil]
+       7 [-]: GETIMPORT R6 6 ["EvoShotgunShellReloadToggle"]
        8 [-]: JUMPXEQKNIL R6 L0
        9 [-]: GETUPVAL R7 0
-      10 [-]: GETIMPORT R8 6 [nil]
+      10 [-]: GETIMPORT R8 6 ["EvoShotgunShellReloadToggle"]
       11 [-]: GETTABLE R6 R7 R8
       12 [-]: NAMECALL R7 R0 K7 [0xDE321E6F]
       13 [-]: CALL R7 1 1  
@@ -76,11 +76,11 @@
       19 [-]: CALL R12 1 1 
       20 [-]: MOVE R13 R1  
       21 [-]: LOADN R14 25 
-      22 [-]: GETIMPORT R15 13 [nil]
+      22 [-]: GETIMPORT R15 13 ["EMPTY_SYMBOL"]
       23 [-]: MOVE R16 R5  
       24 [-]: NAMECALL R7 R7 K14 [0x12DD9DA2]
       25 [-]: CALL R7 9 0  
-      26 [-]: GETIMPORT R7 17 [nil]
+      26 [-]: GETIMPORT R7 17 [0x608BC054]
       27 [-]: CALL R7 0 1  
       28 [-]: SETTABLEKS R0 R7 K18 ["instigator"]
       29 [-]: NEWTABLE R8 0 1
@@ -94,23 +94,23 @@
       37 [-]: LOADB R12 1  
       38 [-]: NAMECALL R8 R0 K22 [0x37E45FB5]
       39 [-]: CALL R8 4 0  
-L 0:  40 [-]: GETIMPORT R6 6 [nil]
+L 0:  40 [-]: GETIMPORT R6 6 ["EvoShotgunShellReloadToggle"]
       41 [-]: JUMPXEQKNIL R6 L1
-      42 [-]: GETIMPORT R6 6 [nil]
+      42 [-]: GETIMPORT R6 6 ["EvoShotgunShellReloadToggle"]
       43 [-]: GETUPVAL R8 0
       44 [-]: LENGTH R7 R8 
       45 [-]: JUMPIFNOTEQ R6 R7 L2
-L 1:  46 [-]: GETIMPORT R6 23 [nil]
+L 1:  46 [-]: GETIMPORT R6 23 ["_T"]
       47 [-]: LOADN R7 1   
       48 [-]: SETTABLEKS R7 R6 K5 ["EvoShotgunShellReloadToggle"]
       49 [-]: JUMP L3
      
-L 2:  50 [-]: GETIMPORT R6 23 [nil]
-      51 [-]: GETIMPORT R8 6 [nil]
+L 2:  50 [-]: GETIMPORT R6 23 ["_T"]
+      51 [-]: GETIMPORT R8 6 ["EvoShotgunShellReloadToggle"]
       52 [-]: ADDK R7 R8 K24 [1]
       53 [-]: SETTABLEKS R7 R6 K5 ["EvoShotgunShellReloadToggle"]
 L 3:  54 [-]: GETUPVAL R7 0
-      55 [-]: GETIMPORT R8 6 [nil]
+      55 [-]: GETIMPORT R8 6 ["EvoShotgunShellReloadToggle"]
       56 [-]: GETTABLE R6 R7 R8
       57 [-]: NAMECALL R7 R0 K7 [0xDE321E6F]
       58 [-]: CALL R7 1 1  
@@ -122,11 +122,11 @@ L 3:  54 [-]: GETUPVAL R7 0
       64 [-]: CALL R12 1 1 
       65 [-]: MOVE R13 R1  
       66 [-]: LOADN R14 25 
-      67 [-]: GETIMPORT R15 13 [nil]
+      67 [-]: GETIMPORT R15 13 ["EMPTY_SYMBOL"]
       68 [-]: MOVE R16 R5  
       69 [-]: NAMECALL R7 R7 K25 [0x5E6704FF]
       70 [-]: CALL R7 9 0  
-      71 [-]: GETIMPORT R7 17 [nil]
+      71 [-]: GETIMPORT R7 17 [0x608BC054]
       72 [-]: CALL R7 0 1  
       73 [-]: SETTABLEKS R0 R7 K18 ["instigator"]
       74 [-]: NEWTABLE R8 0 1

@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  3
 
-            1 [-]: LOADNIL R0   
+       1 [-]: LOADNIL R0   
        2 [-]: NEWCLOSURE R1 P0
        3 [-]: MOVE R1 R0   
        4 [-]: SETGLOBAL R1 K0 ["CheckForInstigator"]
@@ -24,7 +24,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  7
 
-       0 [-]: GETIMPORT R3 1 [nil]
+       0 [-]: GETIMPORT R3 1 ["gCipherActionType"]
        1 [-]: NAMECALL R1 R0 K2 [0xF2DEAF69]
        2 [-]: CALL R1 2 1  
        3 [-]: JUMPIFNOT R1 L10
@@ -32,7 +32,7 @@ L 0:   4 [-]: NAMECALL R1 R0 K3 [0x4DF189B1]
        5 [-]: CALL R1 1 1  
        6 [-]: FASTCALL1 62 R1 L1
        7 [-]: MOVE R3 R1   
-       8 [-]: GETIMPORT R2 5 [nil]
+       8 [-]: GETIMPORT R2 5 [0x7B998233]
        9 [-]: CALL R2 1 1  
 L 1:  10 [-]: JUMPIF R2 L2 
       11 [-]: NAMECALL R2 R1 K6 [0x2047CFE7]
@@ -40,7 +40,7 @@ L 1:  10 [-]: JUMPIF R2 L2
       13 [-]: JUMPIFNOT R2 L4
 L 2:  14 [-]: GETUPVAL R3 0
       15 [-]: FASTCALL1 62 R3 L3
-      16 [-]: GETIMPORT R2 5 [nil]
+      16 [-]: GETIMPORT R2 5 [0x7B998233]
       17 [-]: CALL R2 1 1  
 L 3:  18 [-]: JUMPIF R2 L4 
       19 [-]: GETUPVAL R2 0
@@ -54,7 +54,7 @@ L 3:  18 [-]: JUMPIF R2 L4
       27 [-]: SETUPVAL R2 0
 L 4:  28 [-]: FASTCALL1 62 R1 L5
       29 [-]: MOVE R3 R1   
-      30 [-]: GETIMPORT R2 5 [nil]
+      30 [-]: GETIMPORT R2 5 [0x7B998233]
       31 [-]: CALL R2 1 1  
 L 5:  32 [-]: JUMPIF R2 L6 
       33 [-]: NAMECALL R2 R1 K6 [0x2047CFE7]
@@ -76,7 +76,7 @@ L 5:  32 [-]: JUMPIF R2 L6
       49 [-]: SETUPVAL R1 0
 L 6:  50 [-]: FASTCALL1 62 R1 L7
       51 [-]: MOVE R3 R1   
-      52 [-]: GETIMPORT R2 5 [nil]
+      52 [-]: GETIMPORT R2 5 [0x7B998233]
       53 [-]: CALL R2 1 1  
 L 7:  54 [-]: JUMPIF R2 L9 
       55 [-]: NAMECALL R2 R1 K6 [0x2047CFE7]
@@ -86,10 +86,10 @@ L 7:  54 [-]: JUMPIF R2 L9
       59 [-]: CALL R2 1 1  
       60 [-]: FASTCALL1 62 R2 L8
       61 [-]: MOVE R4 R2   
-      62 [-]: GETIMPORT R3 5 [nil]
+      62 [-]: GETIMPORT R3 5 [0x7B998233]
       63 [-]: CALL R3 1 1  
 L 8:  64 [-]: JUMPIF R3 L9 
-      65 [-]: GETIMPORT R5 13 [nil]
+      65 [-]: GETIMPORT R5 13 ["gLotusSpaceFlightMotionControllerType"]
       66 [-]: NAMECALL R3 R2 K2 [0xF2DEAF69]
       67 [-]: CALL R3 2 1  
       68 [-]: JUMPIFNOT R3 L9
@@ -101,7 +101,7 @@ L 8:  64 [-]: JUMPIF R3 L9
       74 [-]: CALL R5 1 -1 
       75 [-]: NAMECALL R3 R1 K16 [0xB41A4158]
       76 [-]: CALL R3 -1 0 
-L 9:  77 [-]: GETIMPORT R2 18 [nil]
+L 9:  77 [-]: GETIMPORT R2 18 [0xCBD666E1]
       78 [-]: LOADN R3 0   
       79 [-]: CALL R2 1 0  
       80 [-]: JUMPBACK L0  
@@ -126,7 +126,7 @@ L10:  81 [-]: RETURN R0 0
        8 [-]: CALL R1 1 1  
        9 [-]: FASTCALL1 62 R1 L0
       10 [-]: MOVE R3 R1   
-      11 [-]: GETIMPORT R2 3 [nil]
+      11 [-]: GETIMPORT R2 3 [0x7B998233]
       12 [-]: CALL R2 1 1  
 L 0:  13 [-]: JUMPIF R2 L2 
       14 [-]: NAMECALL R2 R1 K4 [0xDE321E6F]
@@ -135,7 +135,7 @@ L 0:  13 [-]: JUMPIF R2 L2
       17 [-]: CALL R2 1 1  
       18 [-]: FASTCALL1 62 R2 L1
       19 [-]: MOVE R4 R2   
-      20 [-]: GETIMPORT R3 3 [nil]
+      20 [-]: GETIMPORT R3 3 [0x7B998233]
       21 [-]: CALL R3 1 1  
 L 1:  22 [-]: JUMPIF R3 L2 
       23 [-]: NAMECALL R3 R0 K6 [0xACB02D7B]

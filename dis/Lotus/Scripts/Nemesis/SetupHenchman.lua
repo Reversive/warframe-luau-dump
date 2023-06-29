@@ -5,10 +5,10 @@
 ; Is_vararg:       1
 ; Max Stack Size:  3
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x2D0FAD09]
        2 [-]: LOADK R1 K2 ["Lotus.Scripts.Nemesis.NemesisGenerator"]
        3 [-]: CALL R0 1 1  
-       4 [-]: GETIMPORT R1 4 [nil]
+       4 [-]: GETIMPORT R1 4 [0xB009BBC6]
        5 [-]: LOADK R2 K5 ["/Lotus/Types/DropTables/GrineerThrallMercyDropTable"]
        6 [-]: CALL R1 1 1  
        7 [-]: DUPCLOSURE R2 K6 []
@@ -26,40 +26,40 @@
 ; Max Stack Size:  15
 
        0 [-]: MOVE R1 R0   
-       1 [-]: GETIMPORT R4 1 [nil]
+       1 [-]: GETIMPORT R4 1 ["gBaseAvatarType"]
        2 [-]: NAMECALL R2 R0 K2 [0xF2DEAF69]
        3 [-]: CALL R2 2 1  
        4 [-]: JUMPIF R2 L3 
 L 0:   5 [-]: NAMECALL R3 R0 K3 [0x2B54251B]
        6 [-]: CALL R3 1 -1 
        7 [-]: FASTCALL 62 L1
-       8 [-]: GETIMPORT R2 5 [nil]
+       8 [-]: GETIMPORT R2 5 [0x7B998233]
        9 [-]: CALL R2 -1 1 
 L 1:  10 [-]: JUMPIFNOT R2 L2
-      11 [-]: GETIMPORT R2 7 [nil]
+      11 [-]: GETIMPORT R2 7 [0xCBD666E1]
       12 [-]: LOADN R3 0   
       13 [-]: CALL R2 1 0  
       14 [-]: JUMPBACK L0  
 L 2:  15 [-]: NAMECALL R2 R0 K3 [0x2B54251B]
       16 [-]: CALL R2 1 1  
       17 [-]: MOVE R1 R2   
-L 3:  18 [-]: GETIMPORT R4 9 [nil]
+L 3:  18 [-]: GETIMPORT R4 9 ["gRagdollType"]
       19 [-]: NAMECALL R2 R1 K2 [0xF2DEAF69]
       20 [-]: CALL R2 2 1  
       21 [-]: JUMPIFNOT R2 L4
-      22 [-]: GETIMPORT R2 11 [nil]
+      22 [-]: GETIMPORT R2 11 [0x3D106989]
       23 [-]: LOADK R3 K12 ["trying to apply henchman overrides to ragdoll. bailing."]
       24 [-]: CALL R2 1 0  
       25 [-]: RETURN R0 0  
 L 4:  26 [-]: NEWTABLE R2 0 0
-      27 [-]: GETIMPORT R3 14 [nil]
+      27 [-]: GETIMPORT R3 14 [0xE7F2B02F]
       28 [-]: NAMECALL R3 R3 K15 [0x6D0AA187]
       29 [-]: CALL R3 1 1  
-      30 [-]: GETIMPORT R4 17 [nil]
+      30 [-]: GETIMPORT R4 17 [0xCFC01047]
       31 [-]: MOVE R5 R3   
       32 [-]: CALL R4 1 3  
       33 [-]: FORGPREP_NEXT R4 L6
-L 5:  34 [-]: GETIMPORT R9 20 [nil]
+L 5:  34 [-]: GETIMPORT R9 20 [0x7AB914D8]
       35 [-]: GETTABLEKS R10 R8 K21 ["loadout"]
       36 [-]: CALL R9 1 1  
       37 [-]: JUMPIFNOT R9 L6
@@ -76,14 +76,14 @@ L 5:  34 [-]: GETIMPORT R9 20 [nil]
       48 [-]: SETTABLEKS R10 R13 K25 ["nemesis"]
       49 [-]: FASTCALL2 52 R2 R13 L6
       50 [-]: MOVE R12 R2  
-      51 [-]: GETIMPORT R11 30 [nil]
+      51 [-]: GETIMPORT R11 30 [0x23D5322F]
       52 [-]: CALL R11 2 0 
 L 6:  53 [-]: FORGLOOP R4 L5 2
       54 [-]: LOADNIL R4   
       55 [-]: LENGTH R5 R2 
       56 [-]: LOADN R6 0   
       57 [-]: JUMPIFNOTLT R6 R5 L10
-      58 [-]: GETIMPORT R5 32 [nil]
+      58 [-]: GETIMPORT R5 32 [0xF21B1D8E]
       59 [-]: MOVE R6 R2   
       60 [-]: DUPCLOSURE R7 K33 []
       61 [-]: CALL R5 2 0  
@@ -96,13 +96,13 @@ L 6:  53 [-]: FORGLOOP R4 L5 2
       68 [-]: GETTABLEKS R7 R8 K25 ["nemesis"]
       69 [-]: FASTCALL1 62 R7 L7
       70 [-]: MOVE R9 R7   
-      71 [-]: GETIMPORT R8 5 [nil]
+      71 [-]: GETIMPORT R8 5 [0x7B998233]
       72 [-]: CALL R8 1 1  
 L 7:  73 [-]: JUMPIF R8 L10
-      74 [-]: GETIMPORT R10 37 [nil]
+      74 [-]: GETIMPORT R10 37 [0x603636AD]
       75 [-]: LOADK R11 K38 ["/Lotus/Language/Kingpins/GrineerHenchmanName"]
       76 [-]: DUPTABLE R12 40
-      77 [-]: GETIMPORT R13 43 [nil]
+      77 [-]: GETIMPORT R13 43 [0x3F3E4D12]
       78 [-]: GETTABLEKS R14 R7 K44 ["mName"]
       79 [-]: CALL R13 1 1 
       80 [-]: SETTABLEKS R13 R12 K39 ["LICH_NAME"]
@@ -112,23 +112,23 @@ L 7:  73 [-]: JUMPIF R8 L10
       84 [-]: GETTABLEKS R8 R7 K46 ["mCustomization"]
       85 [-]: FASTCALL1 62 R8 L8
       86 [-]: MOVE R10 R8  
-      87 [-]: GETIMPORT R9 5 [nil]
+      87 [-]: GETIMPORT R9 5 [0x7B998233]
       88 [-]: CALL R9 1 1  
 L 8:  89 [-]: JUMPIF R9 L9 
       90 [-]: MOVE R11 R1  
       91 [-]: NAMECALL R9 R8 K47 [0x61B59A83]
       92 [-]: CALL R9 2 0  
-L 9:  93 [-]: GETIMPORT R9 49 [nil]
+L 9:  93 [-]: GETIMPORT R9 49 [0x88EFC25E]
       94 [-]: GETTABLEKS R10 R7 K50 ["mExtraAbility"]
       95 [-]: CALL R9 1 1  
       96 [-]: MOVE R4 R9   
-L10:  97 [-]: GETIMPORT R5 52 [nil]
+L10:  97 [-]: GETIMPORT R5 52 [0x89326C93]
       98 [-]: NAMECALL R5 R5 K53 [0x18D05D30]
       99 [-]: CALL R5 1 1  
      100 [-]: JUMPIF R5 L11
-     101 [-]: GETIMPORT R5 56 [nil]
+     101 [-]: GETIMPORT R5 56 ["NemesisApplyHenchmenImmunitiesAndHealthOverrides"]
      102 [-]: JUMPIFNOT R5 L11
-     103 [-]: GETIMPORT R5 56 [nil]
+     103 [-]: GETIMPORT R5 56 ["NemesisApplyHenchmenImmunitiesAndHealthOverrides"]
      104 [-]: MOVE R6 R1   
      105 [-]: CALL R5 1 0  
 L11: 106 [-]: GETUPVAL R7 1
@@ -136,7 +136,7 @@ L11: 106 [-]: GETUPVAL R7 1
      108 [-]: CALL R5 2 0  
      109 [-]: FASTCALL1 62 R4 L12
      110 [-]: MOVE R6 R4   
-     111 [-]: GETIMPORT R5 5 [nil]
+     111 [-]: GETIMPORT R5 5 [0x7B998233]
      112 [-]: CALL R5 1 1  
 L12: 113 [-]: JUMPIF R5 L20
      114 [-]: NAMECALL R5 R1 K58 [0xDE321E6F]
@@ -145,21 +145,21 @@ L12: 113 [-]: JUMPIF R5 L20
      117 [-]: CALL R6 1 1  
 L13: 118 [-]: FASTCALL1 62 R6 L14
      119 [-]: MOVE R8 R6   
-     120 [-]: GETIMPORT R7 5 [nil]
+     120 [-]: GETIMPORT R7 5 [0x7B998233]
      121 [-]: CALL R7 1 1  
 L14: 122 [-]: JUMPIFNOT R7 L19
-     123 [-]: GETIMPORT R7 7 [nil]
+     123 [-]: GETIMPORT R7 7 [0xCBD666E1]
      124 [-]: LOADN R8 0   
      125 [-]: CALL R7 1 0  
      126 [-]: FASTCALL1 62 R1 L15
      127 [-]: MOVE R8 R1   
-     128 [-]: GETIMPORT R7 5 [nil]
+     128 [-]: GETIMPORT R7 5 [0x7B998233]
      129 [-]: CALL R7 1 1  
 L15: 130 [-]: JUMPIFNOT R7 L16
      131 [-]: RETURN R0 0  
 L16: 132 [-]: FASTCALL1 62 R5 L17
      133 [-]: MOVE R8 R5   
-     134 [-]: GETIMPORT R7 5 [nil]
+     134 [-]: GETIMPORT R7 5 [0x7B998233]
      135 [-]: CALL R7 1 1  
 L17: 136 [-]: JUMPIF R7 L18
      137 [-]: NAMECALL R7 R5 K59 [0xF7D48EE0]
@@ -180,7 +180,7 @@ L20: 150 [-]: NAMECALL R5 R1 K63 [0x1F564532]
      152 [-]: LOADB R8 1   
      153 [-]: NAMECALL R6 R1 K64 [0xDFAC277A]
      154 [-]: CALL R6 2 0  
-     155 [-]: GETIMPORT R6 7 [nil]
+     155 [-]: GETIMPORT R6 7 [0xCBD666E1]
      156 [-]: LOADN R7 0   
      157 [-]: CALL R6 1 0  
      158 [-]: MOVE R8 R5   

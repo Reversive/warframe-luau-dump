@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  1
 
-            1 [-]: DUPCLOSURE R0 K0 []
+       1 [-]: DUPCLOSURE R0 K0 []
        2 [-]: SETGLOBAL R0 K1 ["Grab"]
        3 [-]: RETURN R0 0  
 
@@ -24,10 +24,10 @@
        4 [-]: RETURN R0 0  
 L 0:   5 [-]: FASTCALL1 62 R1 L1
        6 [-]: MOVE R3 R1   
-       7 [-]: GETIMPORT R2 2 [nil]
+       7 [-]: GETIMPORT R2 2 [0x7B998233]
        8 [-]: CALL R2 1 1  
 L 1:   9 [-]: JUMPIF R2 L2 
-      10 [-]: GETIMPORT R4 4 [nil]
+      10 [-]: GETIMPORT R4 4 ["gLotusAvatarType"]
       11 [-]: NAMECALL R2 R1 K5 [0xF2DEAF69]
       12 [-]: CALL R2 2 1  
       13 [-]: JUMPIFNOT R2 L2
@@ -43,7 +43,7 @@ L 1:   9 [-]: JUMPIF R2 L2
       23 [-]: CALL R2 1 1  
       24 [-]: JUMPIFNOT R2 L3
 L 2:  25 [-]: RETURN R0 0  
-L 3:  26 [-]: GETIMPORT R2 12 [nil]
+L 3:  26 [-]: GETIMPORT R2 12 ["gPuddleData"]
       27 [-]: JUMPIFNOT R2 L4
       28 [-]: NAMECALL R3 R1 K13 [0x388577D5]
       29 [-]: CALL R3 1 1  
@@ -59,10 +59,10 @@ L 4:  35 [-]: LOADN R5 1
       39 [-]: CALL R3 1 1  
       40 [-]: FASTCALL1 62 R3 L5
       41 [-]: MOVE R5 R3   
-      42 [-]: GETIMPORT R4 2 [nil]
+      42 [-]: GETIMPORT R4 2 [0x7B998233]
       43 [-]: CALL R4 1 1  
 L 5:  44 [-]: JUMPIF R4 L6 
-      45 [-]: GETIMPORT R6 18 [nil]
+      45 [-]: GETIMPORT R6 18 ["gRopalolystAvatarType"]
       46 [-]: NAMECALL R4 R3 K5 [0xF2DEAF69]
       47 [-]: CALL R4 2 1  
       48 [-]: JUMPIFNOT R4 L6
@@ -75,12 +75,12 @@ L 7:  53 [-]: NAMECALL R4 R0 K20 [0xF4E253B6]
       55 [-]: MOVE R6 R1   
       56 [-]: NAMECALL R4 R3 K21 [0x321CC9FD]
       57 [-]: CALL R4 2 0  
-      58 [-]: GETIMPORT R5 23 [nil]
+      58 [-]: GETIMPORT R5 23 [0x38078FD5]
       59 [-]: FASTCALL1 62 R5 L8
-      60 [-]: GETIMPORT R4 2 [nil]
+      60 [-]: GETIMPORT R4 2 [0x7B998233]
       61 [-]: CALL R4 1 1  
 L 8:  62 [-]: JUMPIF R4 L9 
-      63 [-]: GETIMPORT R6 23 [nil]
+      63 [-]: GETIMPORT R6 23 [0x38078FD5]
       64 [-]: LOADB R7 0   
       65 [-]: NAMECALL R4 R3 K24 [0x659D451F]
       66 [-]: CALL R4 3 0  

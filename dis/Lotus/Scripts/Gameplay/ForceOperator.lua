@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  5
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x2D0FAD09]
        2 [-]: LOADK R1 K2 ["Lotus.Scripts.Libs.TableLib"]
        3 [-]: CALL R0 1 1  
        4 [-]: NEWTABLE R1 0 0
@@ -63,15 +63,15 @@
        2 [-]: GETUPVAL R3 0
        3 [-]: FASTCALL2 52 R3 R1 L0
        4 [-]: MOVE R4 R1   
-       5 [-]: GETIMPORT R2 3 [nil]
+       5 [-]: GETIMPORT R2 3 [0x23D5322F]
        6 [-]: CALL R2 2 0  
-L 0:   7 [-]: GETIMPORT R2 5 [nil]
+L 0:   7 [-]: GETIMPORT R2 5 [0x08C1CCFD]
        8 [-]: JUMPIFNOT R2 L1
-       9 [-]: GETIMPORT R4 7 [nil]
+       9 [-]: GETIMPORT R4 7 ["gLotusOperatorAvatarType"]
       10 [-]: NAMECALL R2 R0 K8 [0xF2DEAF69]
       11 [-]: CALL R2 2 1  
       12 [-]: JUMPIFNOT R2 L1
-      13 [-]: GETIMPORT R2 10 [nil]
+      13 [-]: GETIMPORT R2 10 [0x3D106989]
       14 [-]: LOADK R3 K11 ["Player already is operator"]
       15 [-]: CALL R2 1 0  
       16 [-]: RETURN R0 0  
@@ -80,7 +80,7 @@ L 1:  17 [-]: NAMECALL R2 R0 K12 [0x18F03C5D]
 L 2:  19 [-]: NAMECALL R2 R0 K13 [0x449C4562]
       20 [-]: CALL R2 1 1  
       21 [-]: JUMPIFNOT R2 L3
-      22 [-]: GETIMPORT R2 15 [nil]
+      22 [-]: GETIMPORT R2 15 [0xCBD666E1]
       23 [-]: LOADN R3 0   
       24 [-]: CALL R2 1 0  
       25 [-]: JUMPBACK L2  
@@ -137,7 +137,7 @@ L 3:  26 [-]: NAMECALL R2 R1 K16 [0x5578D98B]
 
        0 [-]: FASTCALL1 62 R0 L0
        1 [-]: MOVE R2 R0   
-       2 [-]: GETIMPORT R1 1 [nil]
+       2 [-]: GETIMPORT R1 1 [0x7B998233]
        3 [-]: CALL R1 1 1  
 L 0:   4 [-]: JUMPIF R1 L1 
        5 [-]: NAMECALL R1 R0 K2 [0x5E651723]
@@ -172,14 +172,14 @@ L 1:  24 [-]: RETURN R0 0
        0 [-]: NAMECALL R2 R0 K0 [0x5E651723]
        1 [-]: CALL R2 1 -1 
        2 [-]: FASTCALL 62 L0
-       3 [-]: GETIMPORT R1 2 [nil]
+       3 [-]: GETIMPORT R1 2 [0x7B998233]
        4 [-]: CALL R1 -1 1 
 L 0:   5 [-]: JUMPIF R1 L1 
-       6 [-]: GETIMPORT R3 4 [nil]
+       6 [-]: GETIMPORT R3 4 ["gLotusOperatorAvatarType"]
        7 [-]: NAMECALL R1 R0 K5 [0xF2DEAF69]
        8 [-]: CALL R1 2 1  
        9 [-]: JUMPIF R1 L1 
-      10 [-]: GETIMPORT R1 8 [nil]
+      10 [-]: GETIMPORT R1 8 ["ForceToOperator"]
       11 [-]: MOVE R2 R0   
       12 [-]: CALL R1 1 0  
 L 1:  13 [-]: RETURN R0 0  
@@ -195,14 +195,14 @@ L 1:  13 [-]: RETURN R0 0
        0 [-]: NAMECALL R2 R0 K0 [0x5E651723]
        1 [-]: CALL R2 1 -1 
        2 [-]: FASTCALL 62 L0
-       3 [-]: GETIMPORT R1 2 [nil]
+       3 [-]: GETIMPORT R1 2 [0x7B998233]
        4 [-]: CALL R1 -1 1 
 L 0:   5 [-]: JUMPIF R1 L1 
-       6 [-]: GETIMPORT R3 4 [nil]
+       6 [-]: GETIMPORT R3 4 ["gLotusOperatorAvatarType"]
        7 [-]: NAMECALL R1 R0 K5 [0xF2DEAF69]
        8 [-]: CALL R1 2 1  
        9 [-]: JUMPIFNOT R1 L1
-      10 [-]: GETIMPORT R1 8 [nil]
+      10 [-]: GETIMPORT R1 8 ["RevertToWarframe"]
       11 [-]: MOVE R2 R0   
       12 [-]: CALL R1 1 0  
 L 1:  13 [-]: RETURN R0 0  
@@ -215,11 +215,11 @@ L 1:  13 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  3
 
-L 0:   0 [-]: GETIMPORT R1 1 [nil]
+L 0:   0 [-]: GETIMPORT R1 1 [0x89326C93]
        1 [-]: NAMECALL R1 R1 K2 [0x18D05D30]
        2 [-]: CALL R1 1 1  
        3 [-]: JUMPIF R1 L2 
-       4 [-]: GETIMPORT R1 4 [nil]
+       4 [-]: GETIMPORT R1 4 [0xCBD666E1]
        5 [-]: LOADN R2 0   
        6 [-]: CALL R1 1 0  
        7 [-]: NAMECALL R1 R0 K5 [0xF37943FF]
@@ -227,10 +227,10 @@ L 0:   0 [-]: GETIMPORT R1 1 [nil]
        9 [-]: JUMPIF R1 L1 
       10 [-]: RETURN R0 0  
 L 1:  11 [-]: JUMPBACK L0  
-L 2:  12 [-]: GETIMPORT R1 7 [nil]
+L 2:  12 [-]: GETIMPORT R1 7 ["_T"]
       13 [-]: DUPCLOSURE R2 K8 []
       14 [-]: SETTABLEKS R2 R1 K9 ["ForceToOperator"]
-      15 [-]: GETIMPORT R1 7 [nil]
+      15 [-]: GETIMPORT R1 7 ["_T"]
       16 [-]: DUPCLOSURE R2 K10 []
       17 [-]: MOVE R2 R0   
       18 [-]: MOVE R2 R1   
@@ -238,7 +238,7 @@ L 2:  12 [-]: GETIMPORT R1 7 [nil]
 L 3:  20 [-]: NAMECALL R1 R0 K5 [0xF37943FF]
       21 [-]: CALL R1 1 1  
       22 [-]: JUMPIFNOT R1 L4
-      23 [-]: GETIMPORT R1 4 [nil]
+      23 [-]: GETIMPORT R1 4 [0xCBD666E1]
       24 [-]: LOADN R2 0   
       25 [-]: CALL R1 1 0  
       26 [-]: JUMPBACK L3  

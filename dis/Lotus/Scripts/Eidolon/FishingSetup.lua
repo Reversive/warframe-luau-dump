@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  9
 
-            1 [-]: LOADNIL R0   
+       1 [-]: LOADNIL R0   
        2 [-]: NEWTABLE R1 0 0
        3 [-]: DUPCLOSURE R2 K0 []
        4 [-]: DUPTABLE R3 6
@@ -49,9 +49,9 @@
 ; Is_vararg:       0
 ; Max Stack Size:  5
 
-       0 [-]: GETIMPORT R1 1 [nil]
+       0 [-]: GETIMPORT R1 1 [0x00B28F44]
        1 [-]: JUMPIFNOT R1 L0
-       2 [-]: GETIMPORT R1 3 [nil]
+       2 [-]: GETIMPORT R1 3 [0x3D106989]
        3 [-]: LOADK R3 K4 ["Fishing hotspot: "]
        4 [-]: MOVE R4 R0   
        5 [-]: CONCAT R2 R3 R4
@@ -130,13 +130,13 @@ L 1:  18 [-]: GETTABLEKS R4 R0 K2 ["thing_q"]
        1 [-]: GETTABLE R1 R2 R0
        2 [-]: FASTCALL1 62 R1 L0
        3 [-]: MOVE R3 R1   
-       4 [-]: GETIMPORT R2 1 [nil]
+       4 [-]: GETIMPORT R2 1 [0x7B998233]
        5 [-]: CALL R2 1 1  
 L 0:   6 [-]: JUMPIF R2 L11
-       7 [-]: GETIMPORT R3 3 [nil]
+       7 [-]: GETIMPORT R3 3 [0x55156FF7]
        8 [-]: CALL R3 0 -1 
        9 [-]: FASTCALL 12 L1
-      10 [-]: GETIMPORT R2 6 [nil]
+      10 [-]: GETIMPORT R2 6 [0x55F27C30]
       11 [-]: CALL R2 -1 1 
 L 1:  12 [-]: LOADNIL R3   
       13 [-]: LOADB R4 1   
@@ -146,7 +146,7 @@ L 1:  12 [-]: LOADNIL R3
       17 [-]: GETUPVAL R7 1
       18 [-]: GETTABLE R6 R7 R0
       19 [-]: SUB R5 R2 R6 
-      20 [-]: GETIMPORT R7 8 [nil]
+      20 [-]: GETIMPORT R7 8 [0x1928DB13]
       21 [-]: SUB R6 R7 R5 
       22 [-]: LOADK R8 K9 ["hotspot "]
       23 [-]: MOVE R9 R0   
@@ -154,9 +154,9 @@ L 1:  12 [-]: LOADNIL R3
       25 [-]: GETUPVAL R12 1
       26 [-]: GETTABLE R11 R12 R0
       27 [-]: CONCAT R7 R8 R11
-      28 [-]: GETIMPORT R8 12 [nil]
+      28 [-]: GETIMPORT R8 12 [0x00B28F44]
       29 [-]: JUMPIFNOT R8 L2
-      30 [-]: GETIMPORT R8 14 [nil]
+      30 [-]: GETIMPORT R8 14 [0x3D106989]
       31 [-]: LOADK R10 K15 ["Fishing hotspot: "]
       32 [-]: MOVE R11 R7  
       33 [-]: CONCAT R9 R10 R11
@@ -164,9 +164,9 @@ L 1:  12 [-]: LOADNIL R3
 L 2:  35 [-]: LOADK R8 K16 ["it is now "]
       36 [-]: MOVE R9 R2   
       37 [-]: CONCAT R7 R8 R9
-      38 [-]: GETIMPORT R8 12 [nil]
+      38 [-]: GETIMPORT R8 12 [0x00B28F44]
       39 [-]: JUMPIFNOT R8 L3
-      40 [-]: GETIMPORT R8 14 [nil]
+      40 [-]: GETIMPORT R8 14 [0x3D106989]
       41 [-]: LOADK R10 K15 ["Fishing hotspot: "]
       42 [-]: MOVE R11 R7  
       43 [-]: CONCAT R9 R10 R11
@@ -179,18 +179,18 @@ L 3:  45 [-]: LOADN R7 0
       50 [-]: MOVE R9 R6   
       51 [-]: LOADK R10 K18 [" seconds"]
       52 [-]: CONCAT R7 R8 R10
-      53 [-]: GETIMPORT R8 12 [nil]
+      53 [-]: GETIMPORT R8 12 [0x00B28F44]
       54 [-]: JUMPIFNOT R8 L6
-      55 [-]: GETIMPORT R8 14 [nil]
+      55 [-]: GETIMPORT R8 14 [0x3D106989]
       56 [-]: LOADK R10 K15 ["Fishing hotspot: "]
       57 [-]: MOVE R11 R7  
       58 [-]: CONCAT R9 R10 R11
       59 [-]: CALL R8 1 0  
       60 [-]: JUMP L6
      
-L 4:  61 [-]: GETIMPORT R7 12 [nil]
+L 4:  61 [-]: GETIMPORT R7 12 [0x00B28F44]
       62 [-]: JUMPIFNOT R7 L5
-      63 [-]: GETIMPORT R7 14 [nil]
+      63 [-]: GETIMPORT R7 14 [0x3D106989]
       64 [-]: LOADK R9 K15 ["Fishing hotspot: "]
       65 [-]: LOADK R10 K19 ["but it's had its chance."]
       66 [-]: CONCAT R8 R9 R10
@@ -207,9 +207,9 @@ L 6:  71 [-]: JUMPIFNOT R4 L10
       77 [-]: LOADK R6 K22 ["disbled hotspot "]
       78 [-]: MOVE R7 R0   
       79 [-]: CONCAT R5 R6 R7
-      80 [-]: GETIMPORT R6 12 [nil]
+      80 [-]: GETIMPORT R6 12 [0x00B28F44]
       81 [-]: JUMPIFNOT R6 L8
-      82 [-]: GETIMPORT R6 14 [nil]
+      82 [-]: GETIMPORT R6 14 [0x3D106989]
       83 [-]: LOADK R8 K15 ["Fishing hotspot: "]
       84 [-]: MOVE R9 R5   
       85 [-]: CONCAT R7 R8 R9
@@ -221,25 +221,25 @@ L 7:  88 [-]: NAMECALL R5 R1 K23 [0x383D2E7D]
       90 [-]: LOADK R6 K24 ["enabled hotspot "]
       91 [-]: MOVE R7 R0   
       92 [-]: CONCAT R5 R6 R7
-      93 [-]: GETIMPORT R6 12 [nil]
+      93 [-]: GETIMPORT R6 12 [0x00B28F44]
       94 [-]: JUMPIFNOT R6 L8
-      95 [-]: GETIMPORT R6 14 [nil]
+      95 [-]: GETIMPORT R6 14 [0x3D106989]
       96 [-]: LOADK R8 K15 ["Fishing hotspot: "]
       97 [-]: MOVE R9 R5   
       98 [-]: CONCAT R7 R8 R9
       99 [-]: CALL R6 1 0  
-L 8: 100 [-]: GETIMPORT R5 27 [nil]
+L 8: 100 [-]: GETIMPORT R5 27 ["gFishing"]
      101 [-]: JUMPIFNOT R5 L9
-     102 [-]: GETIMPORT R6 29 [nil]
+     102 [-]: GETIMPORT R6 29 ["levelData"]
      103 [-]: GETTABLEKS R5 R6 K30 ["notifyHotspotChanged"]
      104 [-]: JUMPIFNOT R5 L9
-     105 [-]: GETIMPORT R6 29 [nil]
+     105 [-]: GETIMPORT R6 29 ["levelData"]
      106 [-]: GETTABLEKS R5 R6 K30 ["notifyHotspotChanged"]
      107 [-]: MOVE R6 R1   
      108 [-]: CALL R5 1 0  
-L 9: 109 [-]: GETIMPORT R5 32 [nil]
-     110 [-]: GETIMPORT R6 34 [nil]
-     111 [-]: GETIMPORT R7 36 [nil]
+L 9: 109 [-]: GETIMPORT R5 32 [0x55730E1A]
+     110 [-]: GETIMPORT R6 34 [0x0B74BD03]
+     111 [-]: GETIMPORT R7 36 [0x018834FD]
      112 [-]: CALL R5 2 1  
      113 [-]: ADD R3 R2 R5 
 L10: 114 [-]: GETUPVAL R5 2
@@ -252,9 +252,9 @@ L10: 114 [-]: GETUPVAL R5 2
      121 [-]: LOADK R8 K39 [" at "]
      122 [-]: MOVE R9 R3   
      123 [-]: CONCAT R5 R6 R9
-     124 [-]: GETIMPORT R6 12 [nil]
+     124 [-]: GETIMPORT R6 12 [0x00B28F44]
      125 [-]: JUMPIFNOT R6 L11
-     126 [-]: GETIMPORT R6 14 [nil]
+     126 [-]: GETIMPORT R6 14 [0x3D106989]
      127 [-]: LOADK R8 K15 ["Fishing hotspot: "]
      128 [-]: MOVE R9 R5   
      129 [-]: CONCAT R7 R8 R9
@@ -269,7 +269,7 @@ L11: 131 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  11
 
-       0 [-]: GETIMPORT R2 1 [nil]
+       0 [-]: GETIMPORT R2 1 [0xBE190284]
        1 [-]: NAMECALL R2 R2 K2 [0xEF893AEC]
        2 [-]: CALL R2 1 1  
        3 [-]: GETTABLEKS R1 R2 K3 ["sortieId"]
@@ -285,12 +285,12 @@ L 2:  12 [-]: GETUPVAL R5 0
       13 [-]: GETTABLE R4 R5 R3
       14 [-]: FASTCALL1 62 R4 L3
       15 [-]: MOVE R6 R4   
-      16 [-]: GETIMPORT R5 6 [nil]
+      16 [-]: GETIMPORT R5 6 [0x7B998233]
       17 [-]: CALL R5 1 1  
 L 3:  18 [-]: JUMPIF R5 L7 
-      19 [-]: GETIMPORT R5 9 [nil]
+      19 [-]: GETIMPORT R5 9 [0x3630E649]
       20 [-]: CALL R5 0 1  
-      21 [-]: GETIMPORT R6 11 [nil]
+      21 [-]: GETIMPORT R6 11 [0xAC8041DB]
       22 [-]: JUMPIFNOTLT R5 R6 L4
       23 [-]: JUMPIF R0 L4 
       24 [-]: NAMECALL R5 R4 K12 [0x383D2E7D]
@@ -298,9 +298,9 @@ L 3:  18 [-]: JUMPIF R5 L7
       26 [-]: LOADK R6 K13 ["enabled hotspot "]
       27 [-]: MOVE R7 R3   
       28 [-]: CONCAT R5 R6 R7
-      29 [-]: GETIMPORT R6 15 [nil]
+      29 [-]: GETIMPORT R6 15 [0x00B28F44]
       30 [-]: JUMPIFNOT R6 L5
-      31 [-]: GETIMPORT R6 17 [nil]
+      31 [-]: GETIMPORT R6 17 [0x3D106989]
       32 [-]: LOADK R8 K18 ["Fishing hotspot: "]
       33 [-]: MOVE R9 R5   
       34 [-]: CONCAT R7 R8 R9
@@ -312,21 +312,21 @@ L 4:  37 [-]: NAMECALL R5 R4 K19 [0xF4E253B6]
       39 [-]: LOADK R6 K20 ["disabled hotspot "]
       40 [-]: MOVE R7 R3   
       41 [-]: CONCAT R5 R6 R7
-      42 [-]: GETIMPORT R6 15 [nil]
+      42 [-]: GETIMPORT R6 15 [0x00B28F44]
       43 [-]: JUMPIFNOT R6 L5
-      44 [-]: GETIMPORT R6 17 [nil]
+      44 [-]: GETIMPORT R6 17 [0x3D106989]
       45 [-]: LOADK R8 K18 ["Fishing hotspot: "]
       46 [-]: MOVE R9 R5   
       47 [-]: CONCAT R7 R8 R9
       48 [-]: CALL R6 1 0  
-L 5:  49 [-]: GETIMPORT R7 22 [nil]
+L 5:  49 [-]: GETIMPORT R7 22 [0x55156FF7]
       50 [-]: CALL R7 0 -1 
       51 [-]: FASTCALL 12 L6
-      52 [-]: GETIMPORT R6 24 [nil]
+      52 [-]: GETIMPORT R6 24 [0x55F27C30]
       53 [-]: CALL R6 -1 1 
-L 6:  54 [-]: GETIMPORT R7 26 [nil]
-      55 [-]: GETIMPORT R8 28 [nil]
-      56 [-]: GETIMPORT R9 30 [nil]
+L 6:  54 [-]: GETIMPORT R7 26 [0x55730E1A]
+      55 [-]: GETIMPORT R8 28 [0x0B74BD03]
+      56 [-]: GETIMPORT R9 30 [0x018834FD]
       57 [-]: CALL R7 2 1  
       58 [-]: ADD R5 R6 R7 
       59 [-]: GETUPVAL R6 1
@@ -339,9 +339,9 @@ L 6:  54 [-]: GETIMPORT R7 26 [nil]
       66 [-]: LOADK R9 K33 [" at "]
       67 [-]: MOVE R10 R5  
       68 [-]: CONCAT R6 R7 R10
-      69 [-]: GETIMPORT R7 15 [nil]
+      69 [-]: GETIMPORT R7 15 [0x00B28F44]
       70 [-]: JUMPIFNOT R7 L7
-      71 [-]: GETIMPORT R7 17 [nil]
+      71 [-]: GETIMPORT R7 17 [0x3D106989]
       72 [-]: LOADK R9 K18 ["Fishing hotspot: "]
       73 [-]: MOVE R10 R6  
       74 [-]: CONCAT R8 R9 R10
@@ -374,9 +374,9 @@ L 2:  12 [-]: JUMPIFNOT R1 L6
       13 [-]: LOADK R3 K0 ["extending life of hotspot "]
       14 [-]: MOVE R4 R1   
       15 [-]: CONCAT R2 R3 R4
-      16 [-]: GETIMPORT R3 2 [nil]
+      16 [-]: GETIMPORT R3 2 [0x00B28F44]
       17 [-]: JUMPIFNOT R3 L3
-      18 [-]: GETIMPORT R3 4 [nil]
+      18 [-]: GETIMPORT R3 4 [0x3D106989]
       19 [-]: LOADK R5 K5 ["Fishing hotspot: "]
       20 [-]: MOVE R6 R2   
       21 [-]: CONCAT R4 R5 R6
@@ -385,27 +385,27 @@ L 3:  23 [-]: GETUPVAL R3 1
       24 [-]: GETTABLE R2 R3 R1
       25 [-]: JUMPXEQKNIL R2 L5 NOT
       26 [-]: GETUPVAL R2 1
-      27 [-]: GETIMPORT R4 7 [nil]
+      27 [-]: GETIMPORT R4 7 [0x55156FF7]
       28 [-]: CALL R4 0 -1 
       29 [-]: FASTCALL 12 L4
-      30 [-]: GETIMPORT R3 10 [nil]
+      30 [-]: GETIMPORT R3 10 [0x55F27C30]
       31 [-]: CALL R3 -1 1 
 L 4:  32 [-]: SETTABLE R3 R2 R1
       33 [-]: LOADK R3 K11 ["lifetime extended at "]
       34 [-]: GETUPVAL R5 1
       35 [-]: GETTABLE R4 R5 R1
       36 [-]: CONCAT R2 R3 R4
-      37 [-]: GETIMPORT R3 2 [nil]
+      37 [-]: GETIMPORT R3 2 [0x00B28F44]
       38 [-]: JUMPIFNOT R3 L6
-      39 [-]: GETIMPORT R3 4 [nil]
+      39 [-]: GETIMPORT R3 4 [0x3D106989]
       40 [-]: LOADK R5 K5 ["Fishing hotspot: "]
       41 [-]: MOVE R6 R2   
       42 [-]: CONCAT R4 R5 R6
       43 [-]: CALL R3 1 0  
       44 [-]: RETURN R0 0  
-L 5:  45 [-]: GETIMPORT R2 2 [nil]
+L 5:  45 [-]: GETIMPORT R2 2 [0x00B28F44]
       46 [-]: JUMPIFNOT R2 L6
-      47 [-]: GETIMPORT R2 4 [nil]
+      47 [-]: GETIMPORT R2 4 [0x3D106989]
       48 [-]: LOADK R4 K5 ["Fishing hotspot: "]
       49 [-]: LOADK R5 K12 ["but it was already extended, so ignoring"]
       50 [-]: CONCAT R3 R4 R5
@@ -420,12 +420,12 @@ L 6:  52 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  9
 
-       0 [-]: GETIMPORT R0 1 [nil]
-       1 [-]: GETIMPORT R2 3 [nil]
+       0 [-]: GETIMPORT R0 1 [0x89326C93]
+       1 [-]: GETIMPORT R2 3 [0xB7720AC7]
        2 [-]: NAMECALL R0 R0 K4 [0xC7FCADA9]
        3 [-]: CALL R0 2 1  
        4 [-]: SETUPVAL R0 0
-       5 [-]: GETIMPORT R0 6 [nil]
+       5 [-]: GETIMPORT R0 6 ["_T"]
        6 [-]: GETUPVAL R1 1
        7 [-]: SETTABLEKS R1 R0 K7 ["extendHotSpotLife"]
        8 [-]: GETUPVAL R0 2
@@ -434,37 +434,37 @@ L 0:  10 [-]: GETUPVAL R0 3
       11 [-]: NAMECALL R0 R0 K8 [0xA433C47C]
       12 [-]: CALL R0 1 2  
       13 [-]: JUMPIFNOT R0 L5
-      14 [-]: GETIMPORT R3 10 [nil]
+      14 [-]: GETIMPORT R3 10 [0x55156FF7]
       15 [-]: CALL R3 0 -1 
       16 [-]: FASTCALL 12 L1
-      17 [-]: GETIMPORT R2 13 [nil]
+      17 [-]: GETIMPORT R2 13 [0x55F27C30]
       18 [-]: CALL R2 -1 1 
 L 1:  19 [-]: SUB R4 R1 R2 
       20 [-]: FASTCALL2K 18 R4 K14 L2 [0]
       21 [-]: LOADK R5 K14 [0]
-      22 [-]: GETIMPORT R3 16 [nil]
+      22 [-]: GETIMPORT R3 16 [0xB62ECFE0]
       23 [-]: CALL R3 2 1  
 L 2:  24 [-]: LOADK R5 K17 ["sleeping for "]
       25 [-]: MOVE R6 R3   
       26 [-]: LOADK R7 K18 [" to reach "]
       27 [-]: MOVE R8 R1   
       28 [-]: CONCAT R4 R5 R8
-      29 [-]: GETIMPORT R5 20 [nil]
+      29 [-]: GETIMPORT R5 20 [0x00B28F44]
       30 [-]: JUMPIFNOT R5 L3
-      31 [-]: GETIMPORT R5 22 [nil]
+      31 [-]: GETIMPORT R5 22 [0x3D106989]
       32 [-]: LOADK R7 K23 ["Fishing hotspot: "]
       33 [-]: MOVE R8 R4   
       34 [-]: CONCAT R6 R7 R8
       35 [-]: CALL R5 1 0  
-L 3:  36 [-]: GETIMPORT R4 25 [nil]
+L 3:  36 [-]: GETIMPORT R4 25 [0xCBD666E1]
       37 [-]: MOVE R5 R3   
       38 [-]: CALL R4 1 0  
       39 [-]: LOADK R5 K26 ["the global time is now "]
       40 [-]: MOVE R6 R2   
       41 [-]: CONCAT R4 R5 R6
-      42 [-]: GETIMPORT R5 20 [nil]
+      42 [-]: GETIMPORT R5 20 [0x00B28F44]
       43 [-]: JUMPIFNOT R5 L4
-      44 [-]: GETIMPORT R5 22 [nil]
+      44 [-]: GETIMPORT R5 22 [0x3D106989]
       45 [-]: LOADK R7 K23 ["Fishing hotspot: "]
       46 [-]: MOVE R8 R4   
       47 [-]: CONCAT R6 R7 R8
@@ -474,9 +474,9 @@ L 4:  49 [-]: GETUPVAL R4 4
       51 [-]: CALL R4 1 0  
       52 [-]: JUMP L6
      
-L 5:  53 [-]: GETIMPORT R2 20 [nil]
+L 5:  53 [-]: GETIMPORT R2 20 [0x00B28F44]
       54 [-]: JUMPIFNOT R2 L7
-      55 [-]: GETIMPORT R2 22 [nil]
+      55 [-]: GETIMPORT R2 22 [0x3D106989]
       56 [-]: LOADK R4 K23 ["Fishing hotspot: "]
       57 [-]: LOADK R5 K27 ["out of things."]
       58 [-]: CONCAT R3 R4 R5
@@ -493,16 +493,16 @@ L 7:  62 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  4
 
-       0 [-]: GETIMPORT R0 2 [nil]
+       0 [-]: GETIMPORT R0 2 ["gFishing"]
        1 [-]: JUMPXEQKNIL R0 L0 NOT
-       2 [-]: GETIMPORT R0 3 [nil]
+       2 [-]: GETIMPORT R0 3 ["_T"]
        3 [-]: DUPTABLE R1 5
        4 [-]: DUPTABLE R2 7
        5 [-]: NEWTABLE R3 0 0
        6 [-]: SETTABLEKS R3 R2 K6 ["fishingState"]
        7 [-]: SETTABLEKS R2 R1 K4 ["gearData"]
        8 [-]: SETTABLEKS R1 R0 K1 ["gFishing"]
-       9 [-]: GETIMPORT R0 8 [nil]
+       9 [-]: GETIMPORT R0 8 ["gearData"]
       10 [-]: LOADN R1 1   
       11 [-]: SETTABLEKS R1 R0 K9 ["FS_STARTING"]
       12 [-]: LOADN R1 2   
@@ -511,24 +511,24 @@ L 7:  62 [-]: RETURN R0 0
       15 [-]: SETTABLEKS R1 R0 K11 ["FS_ACTIVE"]
       16 [-]: LOADN R1 4   
       17 [-]: SETTABLEKS R1 R0 K12 ["FS_STOPPING"]
-L 0:  18 [-]: GETIMPORT R0 14 [nil]
+L 0:  18 [-]: GETIMPORT R0 14 ["levelData"]
       19 [-]: JUMPXEQKNIL R0 L1 NOT
-      20 [-]: GETIMPORT R0 2 [nil]
+      20 [-]: GETIMPORT R0 2 ["gFishing"]
       21 [-]: NEWTABLE R1 0 0
       22 [-]: SETTABLEKS R1 R0 K13 ["levelData"]
-      23 [-]: GETIMPORT R0 14 [nil]
+      23 [-]: GETIMPORT R0 14 ["levelData"]
       24 [-]: DUPCLOSURE R1 K15 []
       25 [-]: SETTABLEKS R1 R0 K16 ["RegisterFishCaughtCallback"]
-L 1:  26 [-]: GETIMPORT R0 14 [nil]
+L 1:  26 [-]: GETIMPORT R0 14 ["levelData"]
       27 [-]: DUPCLOSURE R1 K17 []
       28 [-]: SETTABLEKS R1 R0 K18 ["UnrgisterFishCaughtCallback"]
-      29 [-]: GETIMPORT R0 14 [nil]
-      30 [-]: GETIMPORT R1 20 [nil]
+      29 [-]: GETIMPORT R0 14 ["levelData"]
+      30 [-]: GETIMPORT R1 20 [0xCE64B481]
       31 [-]: SETTABLEKS R1 R0 K21 ["fishInfoManifest"]
-      32 [-]: GETIMPORT R0 14 [nil]
-      33 [-]: GETIMPORT R1 23 [nil]
+      32 [-]: GETIMPORT R0 14 ["levelData"]
+      33 [-]: GETIMPORT R1 23 [0x09C09501]
       34 [-]: SETTABLEKS R1 R0 K24 ["waterType"]
-      35 [-]: GETIMPORT R0 26 [nil]
+      35 [-]: GETIMPORT R0 26 [0x89326C93]
       36 [-]: NAMECALL R0 R0 K27 [0x18D05D30]
       37 [-]: CALL R0 1 1  
       38 [-]: JUMPIFNOT R0 L2

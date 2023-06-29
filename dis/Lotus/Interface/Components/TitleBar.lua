@@ -5,26 +5,26 @@
 ; Is_vararg:       1
 ; Max Stack Size:  4
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0xAEABECDA]
        2 [-]: GETVARARGS R1 1
-       3 [-]: GETIMPORT R2 4 [nil]
+       3 [-]: GETIMPORT R2 4 ["seeall"]
        4 [-]: CALL R0 2 0  
-       5 [-]: GETIMPORT R0 6 [nil]
+       5 [-]: GETIMPORT R0 6 [0xB009BBC6]
        6 [-]: LOADK R1 K7 ["/Lotus/Interface/Graphics/Themes/TitleDividerBody.png"]
        7 [-]: CALL R0 1 1  
        8 [-]: SETGLOBAL R0 K8 ["UnderlineFillTexture"]
-       9 [-]: GETIMPORT R0 6 [nil]
+       9 [-]: GETIMPORT R0 6 [0xB009BBC6]
       10 [-]: LOADK R1 K9 ["/Lotus/Interface/Graphics/Themes/TitleDividerStart.png"]
       11 [-]: CALL R0 1 1  
       12 [-]: SETGLOBAL R0 K10 ["UnderlineStartTexture"]
-      13 [-]: GETIMPORT R0 6 [nil]
+      13 [-]: GETIMPORT R0 6 [0xB009BBC6]
       14 [-]: LOADK R1 K11 ["/Lotus/Interface/Graphics/Themes/TitleDividerEnd.png"]
       15 [-]: CALL R0 1 1  
       16 [-]: SETGLOBAL R0 K12 ["UnderlineCapTexture"]
-      17 [-]: GETIMPORT R0 14 [nil]
+      17 [-]: GETIMPORT R0 14 [0x2D0FAD09]
       18 [-]: LOADK R1 K15 ["Lotus.Interface.UIStyleUtilities"]
       19 [-]: CALL R0 1 1  
-      20 [-]: GETIMPORT R1 14 [nil]
+      20 [-]: GETIMPORT R1 14 [0x2D0FAD09]
       21 [-]: LOADK R2 K16 ["EE.Interface.Utilities"]
       22 [-]: CALL R1 1 1  
       23 [-]: DUPTABLE R2 21
@@ -73,7 +73,7 @@
       19 [-]: SETTABLEKS R6 R5 K8 ["mBookendPadding"]
       20 [-]: MOVE R6 R4   
       21 [-]: JUMPIF R6 L0 
-      22 [-]: GETIMPORT R6 26 [nil]
+      22 [-]: GETIMPORT R6 26 [0xB009BBC6]
       23 [-]: LOADK R7 K27 ["/Lotus/Interface/Graphics/Themes/TitleDecoration.png"]
       24 [-]: CALL R6 1 1  
 L 0:  25 [-]: SETTABLEKS R6 R5 K9 ["mBookendIcon"]

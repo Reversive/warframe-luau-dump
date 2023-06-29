@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  1
 
-            1 [-]: DUPCLOSURE R0 K0 []
+       1 [-]: DUPCLOSURE R0 K0 []
        2 [-]: SETGLOBAL R0 K1 ["NpcEvaluateAbility"]
        3 [-]: DUPCLOSURE R0 K2 []
        4 [-]: SETGLOBAL R0 K3 ["ActivateAbility"]
@@ -27,7 +27,7 @@
        5 [-]: JUMPIFNOT R3 L1
        6 [-]: GETTABLEKS R4 R2 K3 ["avatar"]
        7 [-]: FASTCALL1 62 R4 L0
-       8 [-]: GETIMPORT R3 5 [nil]
+       8 [-]: GETIMPORT R3 5 [0x7B998233]
        9 [-]: CALL R3 1 1  
 L 0:  10 [-]: JUMPIF R3 L1 
       11 [-]: GETTABLEKS R3 R2 K3 ["avatar"]
@@ -66,14 +66,14 @@ L 1:  36 [-]: LOADN R3 0
 ; Is_vararg:       0
 ; Max Stack Size:  14
 
-       0 [-]: GETIMPORT R6 1 [nil]
+       0 [-]: GETIMPORT R6 1 [0x520E413D]
        1 [-]: LOADB R7 0   
        2 [-]: LOADN R8 0   
        3 [-]: LOADB R9 1   
        4 [-]: NAMECALL R4 R1 K2 [0x659D451F]
        5 [-]: CALL R4 5 0  
        6 [-]: LOADK R6 K3 ["Push"]
-       7 [-]: GETIMPORT R9 5 [nil]
+       7 [-]: GETIMPORT R9 5 [0x0ED8B456]
        8 [-]: LOADB R10 0  
        9 [-]: LOADN R11 2  
       10 [-]: LOADN R12 1  
@@ -82,7 +82,7 @@ L 1:  36 [-]: LOADN R3 0
       13 [-]: CALL R7 6 -1 
       14 [-]: NAMECALL R4 R1 K7 [0x21B4C60E]
       15 [-]: CALL R4 -1 0 
-      16 [-]: GETIMPORT R6 1 [nil]
+      16 [-]: GETIMPORT R6 1 [0x520E413D]
       17 [-]: LOADB R7 0   
       18 [-]: LOADN R8 0   
       19 [-]: LOADB R9 1   
@@ -90,20 +90,20 @@ L 1:  36 [-]: LOADN R3 0
       21 [-]: CALL R4 5 0  
       22 [-]: NAMECALL R4 R1 K8 [0xF6EBD926]
       23 [-]: CALL R4 1 1  
-      24 [-]: GETIMPORT R5 10 [nil]
+      24 [-]: GETIMPORT R5 10 [0x5DB3CE80]
       25 [-]: MOVE R6 R4   
       26 [-]: NAMECALL R7 R2 K8 [0xF6EBD926]
       27 [-]: CALL R7 1 1  
       28 [-]: LOADK R8 K11 [0.98999999999999999]
       29 [-]: CALL R5 3 1  
-      30 [-]: GETIMPORT R8 1 [nil]
+      30 [-]: GETIMPORT R8 1 [0x520E413D]
       31 [-]: LOADB R9 0   
       32 [-]: LOADN R10 0  
       33 [-]: LOADB R11 1  
       34 [-]: NAMECALL R6 R1 K2 [0x659D451F]
       35 [-]: CALL R6 5 0  
-      36 [-]: GETIMPORT R6 13 [nil]
-      37 [-]: GETIMPORT R8 15 [nil]
+      36 [-]: GETIMPORT R6 13 [0x89326C93]
+      37 [-]: GETIMPORT R8 15 [0xF1E00E2A]
       38 [-]: MOVE R9 R5   
       39 [-]: NAMECALL R10 R2 K16 [0xCB3851B8]
       40 [-]: CALL R10 1 1 

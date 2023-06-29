@@ -5,11 +5,11 @@
 ; Is_vararg:       1
 ; Max Stack Size:  3
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0xAEABECDA]
        2 [-]: GETVARARGS R1 1
-       3 [-]: GETIMPORT R2 4 [nil]
+       3 [-]: GETIMPORT R2 4 ["seeall"]
        4 [-]: CALL R0 2 0  
-       5 [-]: GETIMPORT R0 6 [nil]
+       5 [-]: GETIMPORT R0 6 [0x2D0FAD09]
        6 [-]: LOADK R1 K7 ["EE.Interface.Utilities"]
        7 [-]: CALL R0 1 1  
        8 [-]: DUPCLOSURE R1 K8 []
@@ -38,7 +38,7 @@
       10 [-]: LOADB R6 0 +1
 L 0:  11 [-]: LOADB R6 1   
 L 1:  12 [-]: LOADK R7 K12 [""]
-      13 [-]: GETIMPORT R8 14 [nil]
+      13 [-]: GETIMPORT R8 14 [0x64FB1586]
       14 [-]: MOVE R9 R3   
       15 [-]: CALL R8 1 -1 
       16 [-]: CALL R5 -1 1 

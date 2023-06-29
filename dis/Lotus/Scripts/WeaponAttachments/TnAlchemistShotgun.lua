@@ -5,19 +5,19 @@
 ; Is_vararg:       1
 ; Max Stack Size:  9
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0xB009BBC6]
        2 [-]: LOADK R1 K2 ["/Lotus/Animations/Tenno/Movement/Rifle/TnAlchemistShotgun/TnAlchemistShotgunFireWEP_anim.fbx"]
        3 [-]: CALL R0 1 1  
-       4 [-]: GETIMPORT R1 1 [nil]
+       4 [-]: GETIMPORT R1 1 [0xB009BBC6]
        5 [-]: LOADK R2 K3 ["/Lotus/Animations/Tenno/Movement/Rifle/TnAlchemistShotgun/TnAlchemistShotgunFireOpenWEP_anim.fbx"]
        6 [-]: CALL R1 1 1  
-       7 [-]: GETIMPORT R2 1 [nil]
+       7 [-]: GETIMPORT R2 1 [0xB009BBC6]
        8 [-]: LOADK R3 K4 ["/Lotus/Animations/Tenno/Movement/Rifle/TnAlchemistShotgun/TnAlchemistShotgunGlaiveFireArmsWEP_anim.fbx"]
        9 [-]: CALL R2 1 1  
-      10 [-]: GETIMPORT R3 1 [nil]
+      10 [-]: GETIMPORT R3 1 [0xB009BBC6]
       11 [-]: LOADK R4 K5 ["/Lotus/Animations/Tenno/Movement/Rifle/TnAlchemistShotgun/TnAlchemistShotgunGlaiveCatchWEP_anim.fbx"]
       12 [-]: CALL R3 1 1  
-      13 [-]: GETIMPORT R4 1 [nil]
+      13 [-]: GETIMPORT R4 1 [0xB009BBC6]
       14 [-]: LOADK R5 K6 ["/Lotus/Fx/Common/HiddenNoPhysics"]
       15 [-]: CALL R4 1 1  
       16 [-]: DUPCLOSURE R5 K7 []
@@ -60,7 +60,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  15
 
-       0 [-]: GETIMPORT R2 1 [nil]
+       0 [-]: GETIMPORT R2 1 [0x7B8EAF08]
        1 [-]: LENGTH R1 R2 
        2 [-]: LOADN R2 0   
        3 [-]: JUMPIFNOTLT R2 R1 L6
@@ -77,7 +77,7 @@ L 0:  12 [-]: MOVE R8 R5
       14 [-]: CALL R6 2 1  
       15 [-]: FASTCALL1 62 R6 L1
       16 [-]: MOVE R8 R6   
-      17 [-]: GETIMPORT R7 7 [nil]
+      17 [-]: GETIMPORT R7 7 [0x7B998233]
       18 [-]: CALL R7 1 1  
 L 1:  19 [-]: JUMPIF R7 L5 
       20 [-]: MOVE R9 R2   
@@ -85,15 +85,15 @@ L 1:  19 [-]: JUMPIF R7 L5
       22 [-]: CALL R7 2 1  
       23 [-]: FASTCALL1 62 R7 L2
       24 [-]: MOVE R9 R7   
-      25 [-]: GETIMPORT R8 7 [nil]
+      25 [-]: GETIMPORT R8 7 [0x7B998233]
       26 [-]: CALL R8 1 1  
 L 2:  27 [-]: JUMPIF R8 L5 
       28 [-]: LOADN R10 1  
-      29 [-]: GETIMPORT R11 1 [nil]
+      29 [-]: GETIMPORT R11 1 [0x7B8EAF08]
       30 [-]: LENGTH R8 R11
       31 [-]: LOADN R9 1   
       32 [-]: FORNPREP R8 L5
-L 3:  33 [-]: GETIMPORT R14 1 [nil]
+L 3:  33 [-]: GETIMPORT R14 1 [0x7B8EAF08]
       34 [-]: GETTABLE R13 R14 R10
       35 [-]: NAMECALL R11 R7 K9 [0xF2DEAF69]
       36 [-]: CALL R11 2 1 
@@ -121,7 +121,7 @@ L 6:  42 [-]: LOADB R1 0
        5 [-]: LOADN R2 10  
 L 0:   6 [-]: FASTCALL1 62 R1 L1
        7 [-]: MOVE R4 R1   
-       8 [-]: GETIMPORT R3 3 [nil]
+       8 [-]: GETIMPORT R3 3 [0x7B998233]
        9 [-]: CALL R3 1 1  
 L 1:  10 [-]: JUMPIFNOT R3 L2
       11 [-]: LOADN R3 0   
@@ -130,13 +130,13 @@ L 1:  10 [-]: JUMPIFNOT R3 L2
       14 [-]: CALL R3 1 1  
       15 [-]: MOVE R1 R3   
       16 [-]: SUBK R2 R2 K4 [1]
-      17 [-]: GETIMPORT R3 6 [nil]
+      17 [-]: GETIMPORT R3 6 [0xCBD666E1]
       18 [-]: LOADN R4 0   
       19 [-]: CALL R3 1 0  
       20 [-]: JUMPBACK L0  
 L 2:  21 [-]: FASTCALL1 62 R1 L3
       22 [-]: MOVE R4 R1   
-      23 [-]: GETIMPORT R3 3 [nil]
+      23 [-]: GETIMPORT R3 3 [0x7B998233]
       24 [-]: CALL R3 1 1  
 L 3:  25 [-]: JUMPIF R3 L4 
       26 [-]: NAMECALL R3 R0 K7 [0xB2E49F6F]
@@ -150,10 +150,10 @@ L 5:  30 [-]: LOADB R5 0
       34 [-]: LOADK R2 K9 [0.75]
 L 6:  35 [-]: LOADN R3 0   
       36 [-]: JUMPIFNOTLT R3 R2 L7
-      37 [-]: GETIMPORT R3 11 [nil]
+      37 [-]: GETIMPORT R3 11 [0x67652851]
       38 [-]: CALL R3 0 1  
       39 [-]: SUB R2 R2 R3 
-      40 [-]: GETIMPORT R3 6 [nil]
+      40 [-]: GETIMPORT R3 6 [0xCBD666E1]
       41 [-]: LOADN R4 0   
       42 [-]: CALL R3 1 0  
       43 [-]: JUMPBACK L6  
@@ -177,7 +177,7 @@ L 7:  44 [-]: LOADB R5 1
        3 [-]: CALL R1 3 1  
        4 [-]: FASTCALL1 62 R1 L0
        5 [-]: MOVE R3 R1   
-       6 [-]: GETIMPORT R2 2 [nil]
+       6 [-]: GETIMPORT R2 2 [0x7B998233]
        7 [-]: CALL R2 1 1  
 L 0:   8 [-]: JUMPIF R2 L1 
        9 [-]: LOADN R4 1   
@@ -196,7 +196,7 @@ L 1:  14 [-]: LOADN R4 1
       22 [-]: FORNPREP R3 L5
 L 2:  23 [-]: GETTABLE R7 R2 R5
       24 [-]: FASTCALL1 62 R7 L3
-      25 [-]: GETIMPORT R6 2 [nil]
+      25 [-]: GETIMPORT R6 2 [0x7B998233]
       26 [-]: CALL R6 1 1  
 L 3:  27 [-]: JUMPIF R6 L4 
       28 [-]: GETTABLE R6 R2 R5
@@ -223,7 +223,7 @@ L 5:  38 [-]: RETURN R0 0
        1 [-]: CALL R1 1 1  
        2 [-]: FASTCALL1 62 R1 L0
        3 [-]: MOVE R3 R1   
-       4 [-]: GETIMPORT R2 2 [nil]
+       4 [-]: GETIMPORT R2 2 [0x7B998233]
        5 [-]: CALL R2 1 1  
 L 0:   6 [-]: JUMPIFNOT R2 L1
        7 [-]: RETURN R0 0  
@@ -247,7 +247,7 @@ L 1:   8 [-]: GETUPVAL R2 0
        4 [-]: CALL R1 2 1  
        5 [-]: FASTCALL1 62 R1 L0
        6 [-]: MOVE R3 R1   
-       7 [-]: GETIMPORT R2 3 [nil]
+       7 [-]: GETIMPORT R2 3 [0x7B998233]
        8 [-]: CALL R2 1 1  
 L 0:   9 [-]: JUMPIFNOT R2 L1
       10 [-]: RETURN R0 0  
@@ -257,7 +257,7 @@ L 1:  11 [-]: LOADN R4 1
       14 [-]: CALL R2 3 1  
       15 [-]: FASTCALL1 62 R2 L2
       16 [-]: MOVE R4 R2   
-      17 [-]: GETIMPORT R3 3 [nil]
+      17 [-]: GETIMPORT R3 3 [0x7B998233]
       18 [-]: CALL R3 1 1  
 L 2:  19 [-]: JUMPIF R3 L4 
       20 [-]: LOADN R5 1   
@@ -270,7 +270,7 @@ L 2:  19 [-]: JUMPIF R3 L4
       27 [-]: LOADN R5 1   
       28 [-]: NAMECALL R3 R1 K7 [0xC8E7E8F9]
       29 [-]: CALL R3 2 1  
-      30 [-]: GETIMPORT R5 9 [nil]
+      30 [-]: GETIMPORT R5 9 ["gGlaiveAlternateGrenadeStateBehaviorType"]
       31 [-]: NAMECALL R3 R3 K10 [0xF2DEAF69]
       32 [-]: CALL R3 2 1  
       33 [-]: JUMPIFNOT R3 L3
@@ -283,19 +283,19 @@ L 2:  19 [-]: JUMPIF R3 L4
 L 3:  40 [-]: GETUPVAL R5 0
       41 [-]: NAMECALL R3 R2 K12 [0x723026AB]
       42 [-]: CALL R3 2 0  
-L 4:  43 [-]: GETIMPORT R3 14 [nil]
+L 4:  43 [-]: GETIMPORT R3 14 [0xCBD666E1]
       44 [-]: LOADK R4 K15 [0.75]
       45 [-]: CALL R3 1 0  
       46 [-]: FASTCALL1 62 R1 L5
       47 [-]: MOVE R4 R1   
-      48 [-]: GETIMPORT R3 3 [nil]
+      48 [-]: GETIMPORT R3 3 [0x7B998233]
       49 [-]: CALL R3 1 1  
 L 5:  50 [-]: JUMPIFNOT R3 L6
       51 [-]: RETURN R0 0  
 L 6:  52 [-]: LOADN R5 1   
       53 [-]: NAMECALL R3 R1 K7 [0xC8E7E8F9]
       54 [-]: CALL R3 2 1  
-      55 [-]: GETIMPORT R5 9 [nil]
+      55 [-]: GETIMPORT R5 9 ["gGlaiveAlternateGrenadeStateBehaviorType"]
       56 [-]: NAMECALL R3 R3 K10 [0xF2DEAF69]
       57 [-]: CALL R3 2 1  
       58 [-]: JUMPIFNOT R3 L7
@@ -322,7 +322,7 @@ L 7:  65 [-]: RETURN R0 0
        4 [-]: CALL R1 2 1  
        5 [-]: FASTCALL1 62 R1 L0
        6 [-]: MOVE R3 R1   
-       7 [-]: GETIMPORT R2 3 [nil]
+       7 [-]: GETIMPORT R2 3 [0x7B998233]
        8 [-]: CALL R2 1 1  
 L 0:   9 [-]: JUMPIFNOT R2 L1
       10 [-]: RETURN R0 0  
@@ -332,7 +332,7 @@ L 1:  11 [-]: LOADN R4 1
       14 [-]: CALL R2 3 1  
       15 [-]: FASTCALL1 62 R2 L2
       16 [-]: MOVE R4 R2   
-      17 [-]: GETIMPORT R3 3 [nil]
+      17 [-]: GETIMPORT R3 3 [0x7B998233]
       18 [-]: CALL R3 1 1  
 L 2:  19 [-]: JUMPIF R3 L4 
       20 [-]: LOADN R5 1   
@@ -345,7 +345,7 @@ L 2:  19 [-]: JUMPIF R3 L4
       27 [-]: LOADN R5 1   
       28 [-]: NAMECALL R3 R1 K7 [0xC8E7E8F9]
       29 [-]: CALL R3 2 1  
-      30 [-]: GETIMPORT R5 9 [nil]
+      30 [-]: GETIMPORT R5 9 ["gGlaiveAlternateGrenadeStateBehaviorType"]
       31 [-]: NAMECALL R3 R3 K10 [0xF2DEAF69]
       32 [-]: CALL R3 2 1  
       33 [-]: JUMPIFNOT R3 L3
@@ -358,19 +358,19 @@ L 2:  19 [-]: JUMPIF R3 L4
 L 3:  40 [-]: GETUPVAL R5 0
       41 [-]: NAMECALL R3 R2 K12 [0x723026AB]
       42 [-]: CALL R3 2 0  
-L 4:  43 [-]: GETIMPORT R3 14 [nil]
+L 4:  43 [-]: GETIMPORT R3 14 [0xCBD666E1]
       44 [-]: LOADK R4 K15 [0.75]
       45 [-]: CALL R3 1 0  
       46 [-]: FASTCALL1 62 R1 L5
       47 [-]: MOVE R4 R1   
-      48 [-]: GETIMPORT R3 3 [nil]
+      48 [-]: GETIMPORT R3 3 [0x7B998233]
       49 [-]: CALL R3 1 1  
 L 5:  50 [-]: JUMPIFNOT R3 L6
       51 [-]: RETURN R0 0  
 L 6:  52 [-]: LOADN R5 1   
       53 [-]: NAMECALL R3 R1 K7 [0xC8E7E8F9]
       54 [-]: CALL R3 2 1  
-      55 [-]: GETIMPORT R5 9 [nil]
+      55 [-]: GETIMPORT R5 9 ["gGlaiveAlternateGrenadeStateBehaviorType"]
       56 [-]: NAMECALL R3 R3 K10 [0xF2DEAF69]
       57 [-]: CALL R3 2 1  
       58 [-]: JUMPIFNOT R3 L7
@@ -394,7 +394,7 @@ L 7:  65 [-]: RETURN R0 0
        1 [-]: CALL R1 1 1  
        2 [-]: FASTCALL1 62 R1 L0
        3 [-]: MOVE R3 R1   
-       4 [-]: GETIMPORT R2 2 [nil]
+       4 [-]: GETIMPORT R2 2 [0x7B998233]
        5 [-]: CALL R2 1 1  
 L 0:   6 [-]: JUMPIFNOT R2 L1
        7 [-]: RETURN R0 0  
@@ -406,10 +406,10 @@ L 1:   8 [-]: GETUPVAL R2 0
       13 [-]: CALL R3 1 1  
       14 [-]: FASTCALL1 62 R3 L2
       15 [-]: MOVE R5 R3   
-      16 [-]: GETIMPORT R4 2 [nil]
+      16 [-]: GETIMPORT R4 2 [0x7B998233]
       17 [-]: CALL R4 1 1  
 L 2:  18 [-]: JUMPIF R4 L3 
-      19 [-]: GETIMPORT R6 5 [nil]
+      19 [-]: GETIMPORT R6 5 [0x0469F296]
       20 [-]: LOADK R7 K6 ["FireGlaive"]
       21 [-]: CALL R6 1 1  
       22 [-]: LOADB R7 0   
@@ -430,7 +430,7 @@ L 3:  25 [-]: RETURN R0 0
        2 [-]: LOADN R2 10  
 L 0:   3 [-]: FASTCALL1 62 R1 L1
        4 [-]: MOVE R4 R1   
-       5 [-]: GETIMPORT R3 2 [nil]
+       5 [-]: GETIMPORT R3 2 [0x7B998233]
        6 [-]: CALL R3 1 1  
 L 1:   7 [-]: JUMPIFNOT R3 L2
        8 [-]: LOADN R3 0   
@@ -439,13 +439,13 @@ L 1:   7 [-]: JUMPIFNOT R3 L2
       11 [-]: CALL R3 1 1  
       12 [-]: MOVE R1 R3   
       13 [-]: SUBK R2 R2 K3 [1]
-      14 [-]: GETIMPORT R3 5 [nil]
+      14 [-]: GETIMPORT R3 5 [0xCBD666E1]
       15 [-]: LOADN R4 0   
       16 [-]: CALL R3 1 0  
       17 [-]: JUMPBACK L0  
 L 2:  18 [-]: FASTCALL1 62 R1 L3
       19 [-]: MOVE R4 R1   
-      20 [-]: GETIMPORT R3 2 [nil]
+      20 [-]: GETIMPORT R3 2 [0x7B998233]
       21 [-]: CALL R3 1 1  
 L 3:  22 [-]: JUMPIF R3 L4 
       23 [-]: NAMECALL R3 R0 K6 [0xB2E49F6F]
@@ -456,10 +456,10 @@ L 5:  27 [-]: NAMECALL R3 R1 K7 [0x5163741E]
       28 [-]: CALL R3 1 1  
       29 [-]: FASTCALL1 62 R3 L6
       30 [-]: MOVE R5 R3   
-      31 [-]: GETIMPORT R4 2 [nil]
+      31 [-]: GETIMPORT R4 2 [0x7B998233]
       32 [-]: CALL R4 1 1  
 L 6:  33 [-]: JUMPIF R4 L7 
-      34 [-]: GETIMPORT R6 9 [nil]
+      34 [-]: GETIMPORT R6 9 [0x0469F296]
       35 [-]: LOADK R7 K10 ["PlayCatchAnimation"]
       36 [-]: CALL R6 1 1  
       37 [-]: LOADB R7 0   
@@ -479,7 +479,7 @@ L 7:  40 [-]: RETURN R0 0
        1 [-]: CALL R1 1 1  
        2 [-]: FASTCALL1 62 R1 L0
        3 [-]: MOVE R3 R1   
-       4 [-]: GETIMPORT R2 2 [nil]
+       4 [-]: GETIMPORT R2 2 [0x7B998233]
        5 [-]: CALL R2 1 1  
 L 0:   6 [-]: JUMPIFNOT R2 L1
        7 [-]: RETURN R0 0  
@@ -494,7 +494,7 @@ L 1:   8 [-]: GETUPVAL R2 0
       16 [-]: CALL R3 1 1  
       17 [-]: FASTCALL1 62 R3 L2
       18 [-]: MOVE R5 R3   
-      19 [-]: GETIMPORT R4 2 [nil]
+      19 [-]: GETIMPORT R4 2 [0x7B998233]
       20 [-]: CALL R4 1 1  
 L 2:  21 [-]: JUMPIF R4 L3 
       22 [-]: LENGTH R4 R3 
@@ -533,14 +533,14 @@ L 5:  31 [-]: RETURN R0 0
        1 [-]: CALL R1 1 1  
        2 [-]: FASTCALL1 62 R1 L0
        3 [-]: MOVE R3 R1   
-       4 [-]: GETIMPORT R2 2 [nil]
+       4 [-]: GETIMPORT R2 2 [0x7B998233]
        5 [-]: CALL R2 1 1  
 L 0:   6 [-]: JUMPIFNOT R2 L1
        7 [-]: RETURN R0 0  
 L 1:   8 [-]: LOADN R4 1   
        9 [-]: NAMECALL R2 R1 K3 [0xC8E7E8F9]
       10 [-]: CALL R2 2 1  
-      11 [-]: GETIMPORT R4 5 [nil]
+      11 [-]: GETIMPORT R4 5 ["gGlaiveAlternateGrenadeStateBehaviorType"]
       12 [-]: NAMECALL R2 R2 K6 [0xF2DEAF69]
       13 [-]: CALL R2 2 1  
       14 [-]: JUMPIFNOT R2 L2
@@ -564,14 +564,14 @@ L 2:  21 [-]: RETURN R0 0
        1 [-]: CALL R1 1 1  
        2 [-]: FASTCALL1 62 R1 L0
        3 [-]: MOVE R3 R1   
-       4 [-]: GETIMPORT R2 2 [nil]
+       4 [-]: GETIMPORT R2 2 [0x7B998233]
        5 [-]: CALL R2 1 1  
 L 0:   6 [-]: JUMPIFNOT R2 L1
        7 [-]: RETURN R0 0  
 L 1:   8 [-]: LOADN R4 1   
        9 [-]: NAMECALL R2 R1 K3 [0xC8E7E8F9]
       10 [-]: CALL R2 2 1  
-      11 [-]: GETIMPORT R4 5 [nil]
+      11 [-]: GETIMPORT R4 5 ["gGlaiveAlternateGrenadeStateBehaviorType"]
       12 [-]: NAMECALL R2 R2 K6 [0xF2DEAF69]
       13 [-]: CALL R2 2 1  
       14 [-]: JUMPIFNOT R2 L2

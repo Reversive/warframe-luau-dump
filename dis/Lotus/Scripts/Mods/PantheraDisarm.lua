@@ -5,16 +5,16 @@
 ; Is_vararg:       1
 ; Max Stack Size:  5
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x0469F296]
        2 [-]: LOADK R1 K2 ["LOKI_DISARM"]
        3 [-]: CALL R0 1 1  
-       4 [-]: GETIMPORT R1 1 [nil]
+       4 [-]: GETIMPORT R1 1 [0x0469F296]
        5 [-]: LOADK R2 K3 ["Alpha"]
        6 [-]: CALL R1 1 1  
-       7 [-]: GETIMPORT R2 1 [nil]
+       7 [-]: GETIMPORT R2 1 [0x0469F296]
        8 [-]: LOADK R3 K4 ["ForceNpcMeleeOnly"]
        9 [-]: CALL R2 1 1  
-      10 [-]: GETIMPORT R3 1 [nil]
+      10 [-]: GETIMPORT R3 1 [0x0469F296]
       11 [-]: LOADK R4 K5 ["Disarm"]
       12 [-]: CALL R3 1 1  
       13 [-]: DUPCLOSURE R4 K6 []
@@ -45,10 +45,10 @@
        1 [-]: CALL R1 1 1  
        2 [-]: FASTCALL1 62 R1 L0
        3 [-]: MOVE R3 R1   
-       4 [-]: GETIMPORT R2 2 [nil]
+       4 [-]: GETIMPORT R2 2 [0x7B998233]
        5 [-]: CALL R2 1 1  
 L 0:   6 [-]: JUMPIF R2 L1 
-       7 [-]: GETIMPORT R4 4 [nil]
+       7 [-]: GETIMPORT R4 4 ["gLotusNpcAvatarType"]
        8 [-]: NAMECALL R2 R1 K5 [0xF2DEAF69]
        9 [-]: CALL R2 2 1  
       10 [-]: JUMPIF R2 L2 
@@ -60,17 +60,17 @@ L 2:  13 [-]: LOADN R4 0
       16 [-]: JUMPIFNOT R2 L3
       17 [-]: LOADB R2 0   
       18 [-]: RETURN R2 1  
-L 3:  19 [-]: GETIMPORT R2 9 [nil]
+L 3:  19 [-]: GETIMPORT R2 9 ["gPantheraDisarm"]
       20 [-]: JUMPIF R2 L4 
-      21 [-]: GETIMPORT R2 10 [nil]
+      21 [-]: GETIMPORT R2 10 ["_T"]
       22 [-]: NEWTABLE R3 0 0
       23 [-]: SETTABLEKS R3 R2 K8 ["gPantheraDisarm"]
 L 4:  24 [-]: NAMECALL R2 R1 K11 [0x388577D5]
       25 [-]: CALL R2 1 1  
-      26 [-]: GETIMPORT R5 9 [nil]
+      26 [-]: GETIMPORT R5 9 ["gPantheraDisarm"]
       27 [-]: GETTABLE R4 R5 R2
       28 [-]: FASTCALL1 62 R4 L5
-      29 [-]: GETIMPORT R3 2 [nil]
+      29 [-]: GETIMPORT R3 2 [0x7B998233]
       30 [-]: CALL R3 1 1  
 L 5:  31 [-]: JUMPIF R3 L6 
       32 [-]: LOADB R3 0   
@@ -102,7 +102,7 @@ L 1:   7 [-]: JUMPXEQKN R0 K2 L2 NOT [3]
 L 2:  10 [-]: LOADN R1 40  
 L 3:  11 [-]: DUPTABLE R2 4
       12 [-]: SETTABLEKS R1 R2 K3 ["val"]
-      13 [-]: GETIMPORT R3 7 [nil]
+      13 [-]: GETIMPORT R3 7 [0xB139D7BC]
       14 [-]: MOVE R4 R2   
       15 [-]: CALL R3 1 -1 
       16 [-]: RETURN R3 -1 
@@ -115,30 +115,30 @@ L 3:  11 [-]: DUPTABLE R2 4
 ; Is_vararg:       0
 ; Max Stack Size:  16
 
-       0 [-]: GETIMPORT R5 2 [nil]
+       0 [-]: GETIMPORT R5 2 ["gPantheraDisarm"]
        1 [-]: JUMPIF R5 L0 
-       2 [-]: GETIMPORT R5 3 [nil]
+       2 [-]: GETIMPORT R5 3 ["_T"]
        3 [-]: NEWTABLE R6 0 0
        4 [-]: SETTABLEKS R6 R5 K1 ["gPantheraDisarm"]
-L 0:   5 [-]: GETIMPORT R5 5 [nil]
-       6 [-]: GETIMPORT R6 7 [nil]
+L 0:   5 [-]: GETIMPORT R5 5 [0x51FE62F3]
+       6 [-]: GETIMPORT R6 7 [0x021C0996]
        7 [-]: NAMECALL R7 R4 K8 [0x5EFCA02D]
        8 [-]: CALL R7 1 1  
        9 [-]: GETTABLEKS R8 R7 K9 ["victim"]
       10 [-]: FASTCALL1 62 R8 L1
       11 [-]: MOVE R10 R8  
-      12 [-]: GETIMPORT R9 11 [nil]
+      12 [-]: GETIMPORT R9 11 [0x7B998233]
       13 [-]: CALL R9 1 1  
 L 1:  14 [-]: JUMPIF R9 L2 
-      15 [-]: GETIMPORT R11 13 [nil]
+      15 [-]: GETIMPORT R11 13 ["gLotusNpcAvatarType"]
       16 [-]: NAMECALL R9 R8 K14 [0xF2DEAF69]
       17 [-]: CALL R9 2 1  
       18 [-]: JUMPIFNOT R9 L2
       19 [-]: NAMECALL R9 R8 K15 [0x388577D5]
       20 [-]: CALL R9 1 1  
-      21 [-]: GETIMPORT R10 2 [nil]
+      21 [-]: GETIMPORT R10 2 ["gPantheraDisarm"]
       22 [-]: SETTABLE R8 R10 R9
-      23 [-]: GETIMPORT R10 17 [nil]
+      23 [-]: GETIMPORT R10 17 [0x89326C93]
       24 [-]: NAMECALL R10 R10 K18 [0x18D05D30]
       25 [-]: CALL R10 1 1 
       26 [-]: JUMPIFNOT R10 L2
@@ -146,16 +146,16 @@ L 1:  14 [-]: JUMPIF R9 L2
       28 [-]: LOADB R13 0  
       29 [-]: NAMECALL R10 R8 K19 [0xD5F7912B]
       30 [-]: CALL R10 3 0 
-L 2:  31 [-]: GETIMPORT R9 21 [nil]
-      32 [-]: GETIMPORT R10 2 [nil]
+L 2:  31 [-]: GETIMPORT R9 21 [0xCFC01047]
+      32 [-]: GETIMPORT R10 2 ["gPantheraDisarm"]
       33 [-]: CALL R9 1 3  
       34 [-]: FORGPREP_NEXT R9 L5
 L 3:  35 [-]: FASTCALL1 62 R13 L4
       36 [-]: MOVE R15 R13 
-      37 [-]: GETIMPORT R14 11 [nil]
+      37 [-]: GETIMPORT R14 11 [0x7B998233]
       38 [-]: CALL R14 1 1 
 L 4:  39 [-]: JUMPIFNOT R14 L5
-      40 [-]: GETIMPORT R14 2 [nil]
+      40 [-]: GETIMPORT R14 2 ["gPantheraDisarm"]
       41 [-]: LOADNIL R15  
       42 [-]: SETTABLE R15 R14 R12
 L 5:  43 [-]: FORGLOOP R9 L3 2
@@ -186,7 +186,7 @@ L 0:   5 [-]: NAMECALL R1 R0 K1 [0xC24805FA]
       14 [-]: CALL R2 1 1  
       15 [-]: FASTCALL1 62 R2 L1
       16 [-]: MOVE R4 R2   
-      17 [-]: GETIMPORT R3 4 [nil]
+      17 [-]: GETIMPORT R3 4 [0x7B998233]
       18 [-]: CALL R3 1 1  
 L 1:  19 [-]: JUMPIF R3 L9 
       20 [-]: NAMECALL R3 R0 K5 [0xDE321E6F]
@@ -197,7 +197,7 @@ L 1:  19 [-]: JUMPIF R3 L9
       25 [-]: CALL R3 1 1  
       26 [-]: NAMECALL R4 R0 K8 [0x3CC8EBE1]
       27 [-]: CALL R4 1 1  
-      28 [-]: GETIMPORT R7 10 [nil]
+      28 [-]: GETIMPORT R7 10 [0x51FE62F3]
       29 [-]: GETUPVAL R8 0
       30 [-]: NAMECALL R9 R0 K11 [0x2D0A291F]
       31 [-]: CALL R9 1 1  
@@ -208,7 +208,7 @@ L 1:  19 [-]: JUMPIF R3 L9
       36 [-]: CALL R5 1 1  
       37 [-]: FASTCALL1 62 R5 L2
       38 [-]: MOVE R7 R5   
-      39 [-]: GETIMPORT R6 4 [nil]
+      39 [-]: GETIMPORT R6 4 [0x7B998233]
       40 [-]: CALL R6 1 1  
 L 2:  41 [-]: JUMPIF R6 L3 
       42 [-]: MOVE R8 R3   
@@ -233,7 +233,7 @@ L 3:  48 [-]: GETUPVAL R8 1
       61 [-]: CALL R7 3 0  
       62 [-]: JUMP L5
      
-L 4:  63 [-]: GETIMPORT R9 19 [nil]
+L 4:  63 [-]: GETIMPORT R9 19 [0x021C0996]
       64 [-]: LOADB R10 1  
       65 [-]: NAMECALL R7 R0 K17 [0x511D26B8]
       66 [-]: CALL R7 3 0  
@@ -279,10 +279,10 @@ L 9:  97 [-]: RETURN R0 0
 
        0 [-]: FASTCALL1 62 R0 L0
        1 [-]: MOVE R2 R0   
-       2 [-]: GETIMPORT R1 1 [nil]
+       2 [-]: GETIMPORT R1 1 [0x7B998233]
        3 [-]: CALL R1 1 1  
 L 0:   4 [-]: JUMPIF R1 L1 
-       5 [-]: GETIMPORT R1 3 [nil]
+       5 [-]: GETIMPORT R1 3 [0x89326C93]
        6 [-]: NAMECALL R1 R1 K4 [0x18D05D30]
        7 [-]: CALL R1 1 1  
        8 [-]: JUMPIF R1 L2 
@@ -291,7 +291,7 @@ L 2:  10 [-]: NAMECALL R1 R0 K5 [0xDE321E6F]
       11 [-]: CALL R1 1 1  
       12 [-]: FASTCALL1 62 R1 L3
       13 [-]: MOVE R3 R1   
-      14 [-]: GETIMPORT R2 1 [nil]
+      14 [-]: GETIMPORT R2 1 [0x7B998233]
       15 [-]: CALL R2 1 1  
 L 3:  16 [-]: JUMPIFNOT R2 L4
       17 [-]: RETURN R0 0  
@@ -299,7 +299,7 @@ L 4:  18 [-]: NAMECALL R2 R0 K6 [0xFA9E477F]
       19 [-]: CALL R2 1 1  
       20 [-]: FASTCALL1 62 R2 L5
       21 [-]: MOVE R4 R2   
-      22 [-]: GETIMPORT R3 1 [nil]
+      22 [-]: GETIMPORT R3 1 [0x7B998233]
       23 [-]: CALL R3 1 1  
 L 5:  24 [-]: JUMPIFNOT R3 L6
       25 [-]: RETURN R0 0  
@@ -308,20 +308,20 @@ L 6:  26 [-]: LOADN R5 5
       28 [-]: CALL R3 2 1  
       29 [-]: FASTCALL1 62 R3 L7
       30 [-]: MOVE R5 R3   
-      31 [-]: GETIMPORT R4 1 [nil]
+      31 [-]: GETIMPORT R4 1 [0x7B998233]
       32 [-]: CALL R4 1 1  
 L 7:  33 [-]: JUMPIFNOT R4 L8
       34 [-]: RETURN R0 0  
 L 8:  35 [-]: NAMECALL R4 R2 K8 [0x24B019AC]
       36 [-]: CALL R4 1 1  
-      37 [-]: GETIMPORT R5 10 [nil]
+      37 [-]: GETIMPORT R5 10 [0x51FE62F3]
       38 [-]: JUMPIFNOTEQ R4 R5 L9
       39 [-]: RETURN R0 0  
 L 9:  40 [-]: NAMECALL R5 R2 K11 [0xAD1E0B4B]
       41 [-]: CALL R5 1 1  
       42 [-]: NAMECALL R6 R0 K12 [0x388577D5]
       43 [-]: CALL R6 1 1  
-      44 [-]: GETIMPORT R9 10 [nil]
+      44 [-]: GETIMPORT R9 10 [0x51FE62F3]
       45 [-]: MOVE R10 R5  
       46 [-]: NAMECALL R11 R0 K13 [0x2D0A291F]
       47 [-]: CALL R11 1 1 
@@ -332,10 +332,10 @@ L 9:  40 [-]: NAMECALL R5 R2 K11 [0xAD1E0B4B]
       52 [-]: CALL R7 1 1  
       53 [-]: FASTCALL1 62 R7 L10
       54 [-]: MOVE R9 R7   
-      55 [-]: GETIMPORT R8 1 [nil]
+      55 [-]: GETIMPORT R8 1 [0x7B998233]
       56 [-]: CALL R8 1 1  
 L10:  57 [-]: JUMPIF R8 L11
-      58 [-]: GETIMPORT R8 10 [nil]
+      58 [-]: GETIMPORT R8 10 [0x51FE62F3]
       59 [-]: JUMPIFEQ R4 R8 L11
       60 [-]: MOVE R10 R4  
       61 [-]: NAMECALL R8 R7 K15 [0x13308979]
@@ -358,19 +358,19 @@ L13:  77 [-]: LOADN R10 0
       78 [-]: JUMPIFNOTLT R10 R9 L15
       79 [-]: FASTCALL1 62 R1 L14
       80 [-]: MOVE R11 R1  
-      81 [-]: GETIMPORT R10 1 [nil]
+      81 [-]: GETIMPORT R10 1 [0x7B998233]
       82 [-]: CALL R10 1 1 
 L14:  83 [-]: JUMPIF R10 L15
-      84 [-]: GETIMPORT R10 20 [nil]
+      84 [-]: GETIMPORT R10 20 [0xCBD666E1]
       85 [-]: LOADN R11 0  
       86 [-]: CALL R10 1 0 
-      87 [-]: GETIMPORT R10 22 [nil]
+      87 [-]: GETIMPORT R10 22 [0x67652851]
       88 [-]: CALL R10 0 1 
       89 [-]: SUB R9 R9 R10
       90 [-]: JUMPBACK L13 
 L15:  91 [-]: FASTCALL1 62 R0 L16
       92 [-]: MOVE R11 R0  
-      93 [-]: GETIMPORT R10 1 [nil]
+      93 [-]: GETIMPORT R10 1 [0x7B998233]
       94 [-]: CALL R10 1 1 
 L16:  95 [-]: JUMPIF R10 L17
       96 [-]: NAMECALL R10 R0 K23 [0x2047CFE7]
@@ -385,13 +385,13 @@ L16:  95 [-]: JUMPIF R10 L17
      105 [-]: CALL R10 5 0 
 L17: 106 [-]: FASTCALL1 62 R1 L18
      107 [-]: MOVE R11 R1  
-     108 [-]: GETIMPORT R10 1 [nil]
+     108 [-]: GETIMPORT R10 1 [0x7B998233]
      109 [-]: CALL R10 1 1 
 L18: 110 [-]: JUMPIF R10 L19
      111 [-]: LOADB R12 1  
      112 [-]: NAMECALL R10 R1 K18 [0x0B5EC5B5]
      113 [-]: CALL R10 2 0 
-L19: 114 [-]: GETIMPORT R10 26 [nil]
+L19: 114 [-]: GETIMPORT R10 26 ["gPantheraDisarm"]
      115 [-]: LOADNIL R11  
      116 [-]: SETTABLE R11 R10 R6
      117 [-]: RETURN R0 0  

@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  1
 
-            1 [-]: DUPCLOSURE R0 K0 []
+       1 [-]: DUPCLOSURE R0 K0 []
        2 [-]: SETGLOBAL R0 K1 ["KahlFight"]
        3 [-]: RETURN R0 0  
 
@@ -18,7 +18,7 @@
 ; Max Stack Size:  6
 
        0 [-]: LOADNIL R1   
-L 0:   1 [-]: GETIMPORT R2 1 [nil]
+L 0:   1 [-]: GETIMPORT R2 1 [0xCBD666E1]
        2 [-]: LOADN R3 0   
        3 [-]: CALL R2 1 0  
        4 [-]: NAMECALL R2 R0 K2 [0xFA9E477F]
@@ -26,11 +26,11 @@ L 0:   1 [-]: GETIMPORT R2 1 [nil]
        6 [-]: MOVE R1 R2   
        7 [-]: FASTCALL1 62 R1 L1
        8 [-]: MOVE R3 R1   
-       9 [-]: GETIMPORT R2 4 [nil]
+       9 [-]: GETIMPORT R2 4 [0x7B998233]
       10 [-]: CALL R2 1 1  
 L 1:  11 [-]: JUMPIFNOT R2 L2
       12 [-]: JUMPBACK L0  
-L 2:  13 [-]: GETIMPORT R2 6 [nil]
+L 2:  13 [-]: GETIMPORT R2 6 [0x89326C93]
       14 [-]: NAMECALL R2 R2 K7 [0xE3A0BBCA]
       15 [-]: CALL R2 1 1  
       16 [-]: MOVE R5 R2   

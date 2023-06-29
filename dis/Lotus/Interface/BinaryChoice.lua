@@ -5,13 +5,13 @@
 ; Is_vararg:       1
 ; Max Stack Size:  27
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x2D0FAD09]
        2 [-]: LOADK R1 K2 ["EE.Interface.Utilities"]
        3 [-]: CALL R0 1 1  
-       4 [-]: GETIMPORT R1 1 [nil]
+       4 [-]: GETIMPORT R1 1 [0x2D0FAD09]
        5 [-]: LOADK R2 K3 ["Lotus.Interface.UIStyleUtilities"]
        6 [-]: CALL R1 1 1  
-       7 [-]: GETIMPORT R2 1 [nil]
+       7 [-]: GETIMPORT R2 1 [0x2D0FAD09]
        8 [-]: LOADK R3 K4 ["EE.Interface.AnchorMgr"]
        9 [-]: CALL R2 1 1  
       10 [-]: LOADNIL R3   
@@ -159,15 +159,15 @@
 ; Max Stack Size:  9
 
        0 [-]: JUMPIFNOT R0 L0
-       1 [-]: GETIMPORT R2 1 [nil]
+       1 [-]: GETIMPORT R2 1 [0xAE91E43B]
        2 [-]: LOADK R4 K2 ["SelectPanel.SelectLeft.Label"]
        3 [-]: LOADN R5 36  
        4 [-]: GETUPVAL R7 0
        5 [-]: GETTABLEKS R6 R7 K3 ["FloatingContent"]
        6 [-]: NAMECALL R2 R2 K4 [0x67BC869F]
        7 [-]: CALL R2 4 0  
-       8 [-]: GETIMPORT R2 6 [nil]
-       9 [-]: GETIMPORT R3 1 [nil]
+       8 [-]: GETIMPORT R2 6 [0x25312C9B]
+       9 [-]: GETIMPORT R3 1 [0xAE91E43B]
       10 [-]: LOADK R4 K2 ["SelectPanel.SelectLeft.Label"]
       11 [-]: LOADN R5 2   
       12 [-]: NEWTABLE R6 0 1
@@ -178,8 +178,8 @@
       17 [-]: SETLIST R7 R8 1 [1]
       18 [-]: LOADK R8 K7 [0.25]
       19 [-]: CALL R2 6 0  
-      20 [-]: GETIMPORT R2 6 [nil]
-      21 [-]: GETIMPORT R3 1 [nil]
+      20 [-]: GETIMPORT R2 6 [0x25312C9B]
+      21 [-]: GETIMPORT R3 1 [0xAE91E43B]
       22 [-]: LOADK R4 K8 ["SelectPanel.SelectLeft.Glow"]
       23 [-]: LOADN R5 2   
       24 [-]: NEWTABLE R6 0 1
@@ -190,8 +190,8 @@
       29 [-]: SETLIST R7 R8 1 [1]
       30 [-]: LOADK R8 K7 [0.25]
       31 [-]: CALL R2 6 0  
-      32 [-]: GETIMPORT R2 6 [nil]
-      33 [-]: GETIMPORT R3 1 [nil]
+      32 [-]: GETIMPORT R2 6 [0x25312C9B]
+      33 [-]: GETIMPORT R3 1 [0xAE91E43B]
       34 [-]: LOADK R4 K9 ["SelectPanel.Oval.ArrowLeft"]
       35 [-]: LOADN R5 2   
       36 [-]: NEWTABLE R6 0 1
@@ -202,8 +202,8 @@
       41 [-]: SETLIST R7 R8 1 [1]
       42 [-]: LOADK R8 K7 [0.25]
       43 [-]: CALL R2 6 0  
-      44 [-]: GETIMPORT R2 6 [nil]
-      45 [-]: GETIMPORT R3 1 [nil]
+      44 [-]: GETIMPORT R2 6 [0x25312C9B]
+      45 [-]: GETIMPORT R3 1 [0xAE91E43B]
       46 [-]: LOADK R4 K10 ["SelectPanel.Oval.CenterGlow"]
       47 [-]: LOADN R5 2   
       48 [-]: NEWTABLE R6 0 1
@@ -215,15 +215,15 @@
       54 [-]: LOADK R8 K11 [0.65000000000000002]
       55 [-]: CALL R2 6 0  
 L 0:  56 [-]: JUMPIFNOT R1 L1
-      57 [-]: GETIMPORT R2 1 [nil]
+      57 [-]: GETIMPORT R2 1 [0xAE91E43B]
       58 [-]: LOADK R4 K12 ["SelectPanel.SelectRight.Label"]
       59 [-]: LOADN R5 36  
       60 [-]: GETUPVAL R7 0
       61 [-]: GETTABLEKS R6 R7 K3 ["FloatingContent"]
       62 [-]: NAMECALL R2 R2 K4 [0x67BC869F]
       63 [-]: CALL R2 4 0  
-      64 [-]: GETIMPORT R2 6 [nil]
-      65 [-]: GETIMPORT R3 1 [nil]
+      64 [-]: GETIMPORT R2 6 [0x25312C9B]
+      65 [-]: GETIMPORT R3 1 [0xAE91E43B]
       66 [-]: LOADK R4 K12 ["SelectPanel.SelectRight.Label"]
       67 [-]: LOADN R5 2   
       68 [-]: NEWTABLE R6 0 1
@@ -234,8 +234,8 @@ L 0:  56 [-]: JUMPIFNOT R1 L1
       73 [-]: SETLIST R7 R8 1 [1]
       74 [-]: LOADK R8 K7 [0.25]
       75 [-]: CALL R2 6 0  
-      76 [-]: GETIMPORT R2 6 [nil]
-      77 [-]: GETIMPORT R3 1 [nil]
+      76 [-]: GETIMPORT R2 6 [0x25312C9B]
+      77 [-]: GETIMPORT R3 1 [0xAE91E43B]
       78 [-]: LOADK R4 K13 ["SelectPanel.SelectRight.Glow"]
       79 [-]: LOADN R5 2   
       80 [-]: NEWTABLE R6 0 1
@@ -246,8 +246,8 @@ L 0:  56 [-]: JUMPIFNOT R1 L1
       85 [-]: SETLIST R7 R8 1 [1]
       86 [-]: LOADK R8 K7 [0.25]
       87 [-]: CALL R2 6 0  
-      88 [-]: GETIMPORT R2 6 [nil]
-      89 [-]: GETIMPORT R3 1 [nil]
+      88 [-]: GETIMPORT R2 6 [0x25312C9B]
+      89 [-]: GETIMPORT R3 1 [0xAE91E43B]
       90 [-]: LOADK R4 K14 ["SelectPanel.Oval.ArrowRight"]
       91 [-]: LOADN R5 2   
       92 [-]: NEWTABLE R6 0 1
@@ -258,8 +258,8 @@ L 0:  56 [-]: JUMPIFNOT R1 L1
       97 [-]: SETLIST R7 R8 1 [1]
       98 [-]: LOADK R8 K7 [0.25]
       99 [-]: CALL R2 6 0  
-     100 [-]: GETIMPORT R2 6 [nil]
-     101 [-]: GETIMPORT R3 1 [nil]
+     100 [-]: GETIMPORT R2 6 [0x25312C9B]
+     101 [-]: GETIMPORT R3 1 [0xAE91E43B]
      102 [-]: LOADK R4 K10 ["SelectPanel.Oval.CenterGlow"]
      103 [-]: LOADN R5 2   
      104 [-]: NEWTABLE R6 0 1
@@ -281,13 +281,13 @@ L 1: 112 [-]: RETURN R0 0
 ; Max Stack Size:  13
 
        0 [-]: JUMPIFNOT R1 L0
-       1 [-]: GETIMPORT R4 1 [nil]
+       1 [-]: GETIMPORT R4 1 [0xAE91E43B]
        2 [-]: MOVE R6 R0   
        3 [-]: LOADN R7 10  
        4 [-]: LOADN R8 100 
        5 [-]: NAMECALL R4 R4 K2 [0x67BC869F]
        6 [-]: CALL R4 4 0  
-       7 [-]: GETIMPORT R4 1 [nil]
+       7 [-]: GETIMPORT R4 1 [0xAE91E43B]
        8 [-]: MOVE R6 R0   
        9 [-]: LOADN R7 11  
       10 [-]: LOADB R8 1   
@@ -297,14 +297,14 @@ L 1: 112 [-]: RETURN R0 0
       14 [-]: SETUPVAL R4 0
       15 [-]: JUMP L1
      
-L 0:  16 [-]: GETIMPORT R4 1 [nil]
+L 0:  16 [-]: GETIMPORT R4 1 [0xAE91E43B]
       17 [-]: MOVE R6 R0   
       18 [-]: LOADN R7 11  
       19 [-]: LOADB R8 1   
       20 [-]: NAMECALL R4 R4 K3 [0xAADE900E]
       21 [-]: CALL R4 4 0  
-      22 [-]: GETIMPORT R4 5 [nil]
-      23 [-]: GETIMPORT R5 1 [nil]
+      22 [-]: GETIMPORT R4 5 [0x25312C9B]
+      23 [-]: GETIMPORT R5 1 [0xAE91E43B]
       24 [-]: MOVE R6 R0   
       25 [-]: LOADN R7 2   
       26 [-]: NEWTABLE R8 0 1
@@ -322,17 +322,17 @@ L 1:  37 [-]: SETUPVAL R0 1
       38 [-]: JUMPXEQKS R0 K6 L2 NOT ["SelectPanel"]
       39 [-]: LOADB R4 0   
       40 [-]: SETUPVAL R4 2
-      41 [-]: GETIMPORT R4 1 [nil]
+      41 [-]: GETIMPORT R4 1 [0xAE91E43B]
       42 [-]: LOADK R6 K7 ["SelectPanel.Oval.Label.text"]
       43 [-]: GETUPVAL R7 3
       44 [-]: NAMECALL R4 R4 K8 [0x20B98DB3]
       45 [-]: CALL R4 3 0  
-      46 [-]: GETIMPORT R4 1 [nil]
+      46 [-]: GETIMPORT R4 1 [0xAE91E43B]
       47 [-]: LOADK R6 K9 ["SelectPanel.SelectLeft.Label.text"]
       48 [-]: GETUPVAL R7 4
       49 [-]: NAMECALL R4 R4 K8 [0x20B98DB3]
       50 [-]: CALL R4 3 0  
-      51 [-]: GETIMPORT R4 1 [nil]
+      51 [-]: GETIMPORT R4 1 [0xAE91E43B]
       52 [-]: LOADK R6 K10 ["SelectPanel.SelectRight.Label.text"]
       53 [-]: GETUPVAL R7 5
       54 [-]: NAMECALL R4 R4 K8 [0x20B98DB3]
@@ -373,17 +373,17 @@ L 3:  80 [-]: RETURN R0 0
 
        0 [-]: GETUPVAL R5 0
        1 [-]: FASTCALL1 62 R5 L0
-       2 [-]: GETIMPORT R4 1 [nil]
+       2 [-]: GETIMPORT R4 1 [0x7B998233]
        3 [-]: CALL R4 1 1  
 L 0:   4 [-]: JUMPIF R4 L3 
        5 [-]: JUMPIFNOT R1 L1
-       6 [-]: GETIMPORT R4 3 [nil]
+       6 [-]: GETIMPORT R4 3 [0xAE91E43B]
        7 [-]: GETUPVAL R6 0
        8 [-]: LOADN R7 10  
        9 [-]: LOADN R8 0   
       10 [-]: NAMECALL R4 R4 K4 [0x67BC869F]
       11 [-]: CALL R4 4 0  
-      12 [-]: GETIMPORT R4 3 [nil]
+      12 [-]: GETIMPORT R4 3 [0xAE91E43B]
       13 [-]: GETUPVAL R6 0
       14 [-]: LOADN R7 11  
       15 [-]: LOADB R8 0   
@@ -396,14 +396,14 @@ L 0:   4 [-]: JUMPIF R4 L3
       22 [-]: MOVE R8 R3   
       23 [-]: CALL R4 4 0  
       24 [-]: RETURN R0 0  
-L 1:  25 [-]: GETIMPORT R4 3 [nil]
+L 1:  25 [-]: GETIMPORT R4 3 [0xAE91E43B]
       26 [-]: GETUPVAL R6 0
       27 [-]: LOADN R7 11  
       28 [-]: NAMECALL R4 R4 K6 [0x5B0290D2]
       29 [-]: CALL R4 3 1  
       30 [-]: JUMPIFNOT R4 L2
-      31 [-]: GETIMPORT R4 8 [nil]
-      32 [-]: GETIMPORT R5 3 [nil]
+      31 [-]: GETIMPORT R4 8 [0x25312C9B]
+      32 [-]: GETIMPORT R5 3 [0xAE91E43B]
       33 [-]: GETUPVAL R6 0
       34 [-]: LOADN R7 2   
       35 [-]: NEWTABLE R8 0 1
@@ -446,7 +446,7 @@ L 3:  59 [-]: GETUPVAL R4 1
 ; Is_vararg:       0
 ; Max Stack Size:  14
 
-       0 [-]: GETIMPORT R9 1 [nil]
+       0 [-]: GETIMPORT R9 1 ["_T"]
        1 [-]: LOADNIL R10  
        2 [-]: SETTABLEKS R10 R9 K2 ["SelectedBinaryChoice"]
        3 [-]: SETUPVAL R2 0
@@ -461,15 +461,15 @@ L 3:  59 [-]: GETUPVAL R4 1
       12 [-]: CALL R9 4 0  
       13 [-]: FASTCALL1 62 R8 L0
       14 [-]: MOVE R10 R8  
-      15 [-]: GETIMPORT R9 4 [nil]
+      15 [-]: GETIMPORT R9 4 [0x7B998233]
       16 [-]: CALL R9 1 1  
 L 0:  17 [-]: JUMPIF R9 L1 
       18 [-]: SETUPVAL R8 5
       19 [-]: JUMP L2
      
-L 1:  20 [-]: GETIMPORT R9 6 [nil]
+L 1:  20 [-]: GETIMPORT R9 6 [0x2DB23C05]
       21 [-]: SETUPVAL R9 5
-L 2:  22 [-]: GETIMPORT R9 8 [nil]
+L 2:  22 [-]: GETIMPORT R9 8 [0xAE91E43B]
       23 [-]: LOADK R11 K9 ["SelectPanel.Oval.BackerEffects"]
       24 [-]: GETUPVAL R12 5
       25 [-]: NAMECALL R9 R9 K10 [0xD5181643]
@@ -490,11 +490,11 @@ L 0:   2 [-]: LOADB R4 1
 L 1:   3 [-]: JUMPXEQKS R5 K1 L2 NOT ["false"]
        4 [-]: LOADB R5 0 +1
 L 2:   5 [-]: LOADB R5 1   
-L 3:   6 [-]: GETIMPORT R9 4 [nil]
+L 3:   6 [-]: GETIMPORT R9 4 [0x03F57322]
        7 [-]: MOVE R10 R6  
        8 [-]: CALL R9 1 1  
        9 [-]: ORK R6 R9 K2 [0]
-      10 [-]: GETIMPORT R9 4 [nil]
+      10 [-]: GETIMPORT R9 4 [0x03F57322]
       11 [-]: MOVE R10 R7  
       12 [-]: CALL R9 1 1  
       13 [-]: ORK R7 R9 K5 [0.5]
@@ -502,10 +502,10 @@ L 3:   6 [-]: GETIMPORT R9 4 [nil]
       15 [-]: MOVE R10 R5  
       16 [-]: MOVE R11 R6  
       17 [-]: MOVE R12 R7  
-      18 [-]: GETIMPORT R13 7 [nil]
+      18 [-]: GETIMPORT R13 7 [0xB009BBC6]
       19 [-]: MOVE R14 R8  
       20 [-]: CALL R13 1 1 
-      21 [-]: GETIMPORT R14 9 [nil]
+      21 [-]: GETIMPORT R14 9 ["_T"]
       22 [-]: LOADNIL R15  
       23 [-]: SETTABLEKS R15 R14 K10 ["SelectedBinaryChoice"]
       24 [-]: SETUPVAL R2 0
@@ -520,15 +520,15 @@ L 3:   6 [-]: GETIMPORT R9 4 [nil]
       33 [-]: CALL R14 4 0 
       34 [-]: FASTCALL1 62 R13 L4
       35 [-]: MOVE R15 R13 
-      36 [-]: GETIMPORT R14 12 [nil]
+      36 [-]: GETIMPORT R14 12 [0x7B998233]
       37 [-]: CALL R14 1 1 
 L 4:  38 [-]: JUMPIF R14 L5
       39 [-]: SETUPVAL R13 5
       40 [-]: JUMP L6
      
-L 5:  41 [-]: GETIMPORT R14 14 [nil]
+L 5:  41 [-]: GETIMPORT R14 14 [0x2DB23C05]
       42 [-]: SETUPVAL R14 5
-L 6:  43 [-]: GETIMPORT R14 16 [nil]
+L 6:  43 [-]: GETIMPORT R14 16 [0xAE91E43B]
       44 [-]: LOADK R16 K17 ["SelectPanel.Oval.BackerEffects"]
       45 [-]: GETUPVAL R17 5
       46 [-]: NAMECALL R14 R14 K18 [0xD5181643]
@@ -589,166 +589,166 @@ L 6:  43 [-]: GETIMPORT R14 16 [nil]
       32 [-]: LOADB R3 1   
       33 [-]: CALL R1 2 1  
       34 [-]: SETTABLEKS R1 R0 K5 ["BackerHighlight"]
-      35 [-]: GETIMPORT R0 7 [nil]
+      35 [-]: GETIMPORT R0 7 [0xAE91E43B]
       36 [-]: LOADK R2 K8 ["SelectPanel.Oval.Label"]
       37 [-]: LOADN R3 36  
       38 [-]: GETUPVAL R5 0
       39 [-]: GETTABLEKS R4 R5 K4 ["FloatingContentHighlight"]
       40 [-]: NAMECALL R0 R0 K9 [0x67BC869F]
       41 [-]: CALL R0 4 0  
-      42 [-]: GETIMPORT R0 7 [nil]
+      42 [-]: GETIMPORT R0 7 [0xAE91E43B]
       43 [-]: LOADK R2 K10 ["SelectPanel.Oval.Lines"]
       44 [-]: LOADN R3 9   
       45 [-]: GETUPVAL R5 0
       46 [-]: GETTABLEKS R4 R5 K3 ["FloatingContent"]
       47 [-]: NAMECALL R0 R0 K9 [0x67BC869F]
       48 [-]: CALL R0 4 0  
-      49 [-]: GETIMPORT R0 7 [nil]
+      49 [-]: GETIMPORT R0 7 [0xAE91E43B]
       50 [-]: LOADK R2 K11 ["SelectPanel.Oval.CenterGlow"]
       51 [-]: LOADN R3 9   
       52 [-]: GETUPVAL R5 0
       53 [-]: GETTABLEKS R4 R5 K3 ["FloatingContent"]
       54 [-]: NAMECALL R0 R0 K9 [0x67BC869F]
       55 [-]: CALL R0 4 0  
-      56 [-]: GETIMPORT R0 7 [nil]
+      56 [-]: GETIMPORT R0 7 [0xAE91E43B]
       57 [-]: LOADK R2 K12 ["SelectPanel.Oval.ArrowLeft"]
       58 [-]: LOADN R3 9   
       59 [-]: GETUPVAL R5 0
       60 [-]: GETTABLEKS R4 R5 K3 ["FloatingContent"]
       61 [-]: NAMECALL R0 R0 K9 [0x67BC869F]
       62 [-]: CALL R0 4 0  
-      63 [-]: GETIMPORT R0 7 [nil]
+      63 [-]: GETIMPORT R0 7 [0xAE91E43B]
       64 [-]: LOADK R2 K13 ["SelectPanel.Oval.ArrowRight"]
       65 [-]: LOADN R3 9   
       66 [-]: GETUPVAL R5 0
       67 [-]: GETTABLEKS R4 R5 K3 ["FloatingContent"]
       68 [-]: NAMECALL R0 R0 K9 [0x67BC869F]
       69 [-]: CALL R0 4 0  
-      70 [-]: GETIMPORT R0 7 [nil]
+      70 [-]: GETIMPORT R0 7 [0xAE91E43B]
       71 [-]: LOADK R2 K14 ["SelectPanel.Oval.Backer"]
       72 [-]: LOADN R3 9   
       73 [-]: GETUPVAL R5 0
       74 [-]: GETTABLEKS R4 R5 K1 ["Background1"]
       75 [-]: NAMECALL R0 R0 K9 [0x67BC869F]
       76 [-]: CALL R0 4 0  
-      77 [-]: GETIMPORT R0 7 [nil]
+      77 [-]: GETIMPORT R0 7 [0xAE91E43B]
       78 [-]: LOADK R2 K15 ["SelectPanel.Oval.BackerEffects"]
       79 [-]: LOADN R3 9   
       80 [-]: GETUPVAL R5 0
       81 [-]: GETTABLEKS R4 R5 K4 ["FloatingContentHighlight"]
       82 [-]: NAMECALL R0 R0 K9 [0x67BC869F]
       83 [-]: CALL R0 4 0  
-      84 [-]: GETIMPORT R0 7 [nil]
+      84 [-]: GETIMPORT R0 7 [0xAE91E43B]
       85 [-]: LOADK R2 K16 ["SelectPanel.SelectRight.Label"]
       86 [-]: LOADN R3 36  
       87 [-]: GETUPVAL R5 0
       88 [-]: GETTABLEKS R4 R5 K3 ["FloatingContent"]
       89 [-]: NAMECALL R0 R0 K9 [0x67BC869F]
       90 [-]: CALL R0 4 0  
-      91 [-]: GETIMPORT R0 7 [nil]
+      91 [-]: GETIMPORT R0 7 [0xAE91E43B]
       92 [-]: LOADK R2 K17 ["SelectPanel.SelectRight.Lines"]
       93 [-]: LOADN R3 9   
       94 [-]: GETUPVAL R5 0
       95 [-]: GETTABLEKS R4 R5 K3 ["FloatingContent"]
       96 [-]: NAMECALL R0 R0 K9 [0x67BC869F]
       97 [-]: CALL R0 4 0  
-      98 [-]: GETIMPORT R0 7 [nil]
+      98 [-]: GETIMPORT R0 7 [0xAE91E43B]
       99 [-]: LOADK R2 K18 ["SelectPanel.SelectRight.Glow"]
      100 [-]: LOADN R3 9   
      101 [-]: GETUPVAL R5 0
      102 [-]: GETTABLEKS R4 R5 K5 ["BackerHighlight"]
      103 [-]: NAMECALL R0 R0 K9 [0x67BC869F]
      104 [-]: CALL R0 4 0  
-     105 [-]: GETIMPORT R0 7 [nil]
+     105 [-]: GETIMPORT R0 7 [0xAE91E43B]
      106 [-]: LOADK R2 K19 ["SelectPanel.SelectRight.Backer"]
      107 [-]: LOADN R3 9   
      108 [-]: GETUPVAL R5 0
      109 [-]: GETTABLEKS R4 R5 K1 ["Background1"]
      110 [-]: NAMECALL R0 R0 K9 [0x67BC869F]
      111 [-]: CALL R0 4 0  
-     112 [-]: GETIMPORT R0 7 [nil]
+     112 [-]: GETIMPORT R0 7 [0xAE91E43B]
      113 [-]: LOADK R2 K20 ["SelectPanel.SelectLeft.Label"]
      114 [-]: LOADN R3 36  
      115 [-]: GETUPVAL R5 0
      116 [-]: GETTABLEKS R4 R5 K3 ["FloatingContent"]
      117 [-]: NAMECALL R0 R0 K9 [0x67BC869F]
      118 [-]: CALL R0 4 0  
-     119 [-]: GETIMPORT R0 7 [nil]
+     119 [-]: GETIMPORT R0 7 [0xAE91E43B]
      120 [-]: LOADK R2 K21 ["SelectPanel.SelectLeft.Lines"]
      121 [-]: LOADN R3 9   
      122 [-]: GETUPVAL R5 0
      123 [-]: GETTABLEKS R4 R5 K3 ["FloatingContent"]
      124 [-]: NAMECALL R0 R0 K9 [0x67BC869F]
      125 [-]: CALL R0 4 0  
-     126 [-]: GETIMPORT R0 7 [nil]
+     126 [-]: GETIMPORT R0 7 [0xAE91E43B]
      127 [-]: LOADK R2 K22 ["SelectPanel.SelectLeft.Glow"]
      128 [-]: LOADN R3 9   
      129 [-]: GETUPVAL R5 0
      130 [-]: GETTABLEKS R4 R5 K5 ["BackerHighlight"]
      131 [-]: NAMECALL R0 R0 K9 [0x67BC869F]
      132 [-]: CALL R0 4 0  
-     133 [-]: GETIMPORT R0 7 [nil]
+     133 [-]: GETIMPORT R0 7 [0xAE91E43B]
      134 [-]: LOADK R2 K23 ["SelectPanel.SelectLeft.Backer"]
      135 [-]: LOADN R3 9   
      136 [-]: GETUPVAL R5 0
      137 [-]: GETTABLEKS R4 R5 K1 ["Background1"]
      138 [-]: NAMECALL R0 R0 K9 [0x67BC869F]
      139 [-]: CALL R0 4 0  
-     140 [-]: GETIMPORT R0 7 [nil]
+     140 [-]: GETIMPORT R0 7 [0xAE91E43B]
      141 [-]: LOADK R2 K11 ["SelectPanel.Oval.CenterGlow"]
      142 [-]: LOADN R3 10  
      143 [-]: LOADN R4 0   
      144 [-]: NAMECALL R0 R0 K9 [0x67BC869F]
      145 [-]: CALL R0 4 0  
-     146 [-]: GETIMPORT R0 7 [nil]
+     146 [-]: GETIMPORT R0 7 [0xAE91E43B]
      147 [-]: LOADK R2 K12 ["SelectPanel.Oval.ArrowLeft"]
      148 [-]: LOADN R3 10  
      149 [-]: LOADN R4 0   
      150 [-]: NAMECALL R0 R0 K9 [0x67BC869F]
      151 [-]: CALL R0 4 0  
-     152 [-]: GETIMPORT R0 7 [nil]
+     152 [-]: GETIMPORT R0 7 [0xAE91E43B]
      153 [-]: LOADK R2 K13 ["SelectPanel.Oval.ArrowRight"]
      154 [-]: LOADN R3 10  
      155 [-]: LOADN R4 0   
      156 [-]: NAMECALL R0 R0 K9 [0x67BC869F]
      157 [-]: CALL R0 4 0  
-     158 [-]: GETIMPORT R0 7 [nil]
+     158 [-]: GETIMPORT R0 7 [0xAE91E43B]
      159 [-]: LOADK R2 K22 ["SelectPanel.SelectLeft.Glow"]
      160 [-]: LOADN R3 10  
      161 [-]: LOADN R4 0   
      162 [-]: NAMECALL R0 R0 K9 [0x67BC869F]
      163 [-]: CALL R0 4 0  
-     164 [-]: GETIMPORT R0 7 [nil]
+     164 [-]: GETIMPORT R0 7 [0xAE91E43B]
      165 [-]: LOADK R2 K23 ["SelectPanel.SelectLeft.Backer"]
      166 [-]: LOADN R3 10  
      167 [-]: LOADN R4 90  
      168 [-]: NAMECALL R0 R0 K9 [0x67BC869F]
      169 [-]: CALL R0 4 0  
-     170 [-]: GETIMPORT R0 7 [nil]
+     170 [-]: GETIMPORT R0 7 [0xAE91E43B]
      171 [-]: LOADK R2 K20 ["SelectPanel.SelectLeft.Label"]
      172 [-]: LOADN R3 10  
      173 [-]: LOADN R4 25  
      174 [-]: NAMECALL R0 R0 K9 [0x67BC869F]
      175 [-]: CALL R0 4 0  
-     176 [-]: GETIMPORT R0 7 [nil]
+     176 [-]: GETIMPORT R0 7 [0xAE91E43B]
      177 [-]: LOADK R2 K18 ["SelectPanel.SelectRight.Glow"]
      178 [-]: LOADN R3 10  
      179 [-]: LOADN R4 0   
      180 [-]: NAMECALL R0 R0 K9 [0x67BC869F]
      181 [-]: CALL R0 4 0  
-     182 [-]: GETIMPORT R0 7 [nil]
+     182 [-]: GETIMPORT R0 7 [0xAE91E43B]
      183 [-]: LOADK R2 K19 ["SelectPanel.SelectRight.Backer"]
      184 [-]: LOADN R3 10  
      185 [-]: LOADN R4 90  
      186 [-]: NAMECALL R0 R0 K9 [0x67BC869F]
      187 [-]: CALL R0 4 0  
-     188 [-]: GETIMPORT R0 7 [nil]
+     188 [-]: GETIMPORT R0 7 [0xAE91E43B]
      189 [-]: LOADK R2 K16 ["SelectPanel.SelectRight.Label"]
      190 [-]: LOADN R3 10  
      191 [-]: LOADN R4 25  
      192 [-]: NAMECALL R0 R0 K9 [0x67BC869F]
      193 [-]: CALL R0 4 0  
-     194 [-]: GETIMPORT R0 7 [nil]
+     194 [-]: GETIMPORT R0 7 [0xAE91E43B]
      195 [-]: LOADK R2 K15 ["SelectPanel.Oval.BackerEffects"]
      196 [-]: GETUPVAL R3 2
      197 [-]: NAMECALL R0 R0 K24 [0xD5181643]
@@ -763,16 +763,16 @@ L 6:  43 [-]: GETIMPORT R14 16 [nil]
 ; Is_vararg:       0
 ; Max Stack Size:  8
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 ["_T"]
        1 [-]: LOADNIL R1   
        2 [-]: SETTABLEKS R1 R0 K2 ["SelectedBinaryChoice"]
        3 [-]: GETUPVAL R1 1
        4 [-]: GETTABLEKS R0 R1 K3 [0xAE6791BA]
-       5 [-]: GETIMPORT R1 5 [nil]
+       5 [-]: GETIMPORT R1 5 [0xAE91E43B]
        6 [-]: CALL R0 1 1  
        7 [-]: SETUPVAL R0 0
        8 [-]: GETUPVAL R0 0
-       9 [-]: GETIMPORT R2 5 [nil]
+       9 [-]: GETIMPORT R2 5 [0xAE91E43B]
       10 [-]: LOADK R3 K6 ["SelectPanel"]
       11 [-]: NEWTABLE R4 0 2
       12 [-]: GETUPVAL R6 0
@@ -783,7 +783,7 @@ L 6:  43 [-]: GETIMPORT R14 16 [nil]
       17 [-]: NAMECALL R0 R0 K9 [0x20FF29F7]
       18 [-]: CALL R0 4 0  
       19 [-]: GETUPVAL R0 0
-      20 [-]: GETIMPORT R2 5 [nil]
+      20 [-]: GETIMPORT R2 5 [0xAE91E43B]
       21 [-]: LOADK R3 K10 ["ConfirmPanel"]
       22 [-]: NEWTABLE R4 0 2
       23 [-]: GETUPVAL R6 0
@@ -794,29 +794,29 @@ L 6:  43 [-]: GETIMPORT R14 16 [nil]
       28 [-]: NAMECALL R0 R0 K9 [0x20FF29F7]
       29 [-]: CALL R0 4 0  
       30 [-]: GETUPVAL R0 0
-      31 [-]: GETIMPORT R2 5 [nil]
+      31 [-]: GETIMPORT R2 5 [0xAE91E43B]
       32 [-]: NAMECALL R2 R2 K11 [0x6B837788]
       33 [-]: CALL R2 1 1  
-      34 [-]: GETIMPORT R3 5 [nil]
+      34 [-]: GETIMPORT R3 5 [0xAE91E43B]
       35 [-]: NAMECALL R3 R3 K12 [0xAF9FDA9F]
       36 [-]: CALL R3 1 -1 
       37 [-]: NAMECALL R0 R0 K13 [0xFAA69527]
       38 [-]: CALL R0 -1 0 
-      39 [-]: GETIMPORT R0 15 [nil]
+      39 [-]: GETIMPORT R0 15 [0x2DB23C05]
       40 [-]: SETUPVAL R0 2
       41 [-]: GETUPVAL R0 3
       42 [-]: CALL R0 0 0  
-      43 [-]: GETIMPORT R0 17 [nil]
+      43 [-]: GETIMPORT R0 17 [0x2D0FAD09]
       44 [-]: LOADK R1 K18 ["Lotus.Interface.Components.ThemedButton"]
       45 [-]: CALL R0 1 1  
-      46 [-]: GETIMPORT R1 5 [nil]
+      46 [-]: GETIMPORT R1 5 [0xAE91E43B]
       47 [-]: LOADK R3 K19 ["ConfirmPanel.ConfirmBtn"]
       48 [-]: LOADN R4 0   
       49 [-]: LOADN R5 -140
       50 [-]: NAMECALL R1 R1 K20 [0x67BC869F]
       51 [-]: CALL R1 4 0  
       52 [-]: GETTABLEKS R1 R0 K3 [0xAE6791BA]
-      53 [-]: GETIMPORT R2 5 [nil]
+      53 [-]: GETIMPORT R2 5 [0xAE91E43B]
       54 [-]: LOADK R3 K19 ["ConfirmPanel.ConfirmBtn"]
       55 [-]: LOADK R4 K21 ["/Lotus/Language/Menu/Global_Confirm"]
       56 [-]: LOADK R5 K22 ["ConfirmPressed"]
@@ -839,14 +839,14 @@ L 6:  43 [-]: GETIMPORT R14 16 [nil]
       73 [-]: GETUPVAL R1 4
       74 [-]: NAMECALL R1 R1 K27 [0x71E9AC81]
       75 [-]: CALL R1 1 0  
-      76 [-]: GETIMPORT R1 5 [nil]
+      76 [-]: GETIMPORT R1 5 [0xAE91E43B]
       77 [-]: LOADK R3 K28 ["ConfirmPanel.BackBtn"]
       78 [-]: LOADN R4 0   
       79 [-]: LOADN R5 -160
       80 [-]: NAMECALL R1 R1 K20 [0x67BC869F]
       81 [-]: CALL R1 4 0  
       82 [-]: GETTABLEKS R1 R0 K3 [0xAE6791BA]
-      83 [-]: GETIMPORT R2 5 [nil]
+      83 [-]: GETIMPORT R2 5 [0xAE91E43B]
       84 [-]: LOADK R3 K28 ["ConfirmPanel.BackBtn"]
       85 [-]: LOADK R4 K29 ["/Lotus/Language/Menu/Global_Back"]
       86 [-]: LOADK R5 K30 ["BackPressed"]
@@ -866,7 +866,7 @@ L 6:  43 [-]: GETIMPORT R14 16 [nil]
      100 [-]: GETUPVAL R1 5
      101 [-]: NAMECALL R1 R1 K27 [0x71E9AC81]
      102 [-]: CALL R1 1 0  
-     103 [-]: GETIMPORT R1 5 [nil]
+     103 [-]: GETIMPORT R1 5 [0xAE91E43B]
      104 [-]: LOADK R3 K31 ["SelectPanel.SelectLeft.Btn"]
      105 [-]: LOADK R4 K32 ["LeftFocused"]
      106 [-]: LOADK R5 K33 ["LeftUnfocused"]
@@ -874,7 +874,7 @@ L 6:  43 [-]: GETIMPORT R14 16 [nil]
      108 [-]: LOADNIL R7   
      109 [-]: NAMECALL R1 R1 K35 [0x1E5B5CFE]
      110 [-]: CALL R1 6 0  
-     111 [-]: GETIMPORT R1 5 [nil]
+     111 [-]: GETIMPORT R1 5 [0xAE91E43B]
      112 [-]: LOADK R3 K36 ["SelectPanel.SelectRight.Btn"]
      113 [-]: LOADK R4 K37 ["RightFocused"]
      114 [-]: LOADK R5 K38 ["RightUnfocused"]
@@ -882,25 +882,25 @@ L 6:  43 [-]: GETIMPORT R14 16 [nil]
      116 [-]: LOADNIL R7   
      117 [-]: NAMECALL R1 R1 K35 [0x1E5B5CFE]
      118 [-]: CALL R1 6 0  
-     119 [-]: GETIMPORT R1 5 [nil]
+     119 [-]: GETIMPORT R1 5 [0xAE91E43B]
      120 [-]: LOADK R3 K6 ["SelectPanel"]
      121 [-]: LOADN R4 11  
      122 [-]: LOADB R5 0   
      123 [-]: NAMECALL R1 R1 K40 [0xAADE900E]
      124 [-]: CALL R1 4 0  
-     125 [-]: GETIMPORT R1 5 [nil]
+     125 [-]: GETIMPORT R1 5 [0xAE91E43B]
      126 [-]: LOADK R3 K6 ["SelectPanel"]
      127 [-]: LOADN R4 10  
      128 [-]: LOADN R5 0   
      129 [-]: NAMECALL R1 R1 K20 [0x67BC869F]
      130 [-]: CALL R1 4 0  
-     131 [-]: GETIMPORT R1 5 [nil]
+     131 [-]: GETIMPORT R1 5 [0xAE91E43B]
      132 [-]: LOADK R3 K10 ["ConfirmPanel"]
      133 [-]: LOADN R4 11  
      134 [-]: LOADB R5 0   
      135 [-]: NAMECALL R1 R1 K40 [0xAADE900E]
      136 [-]: CALL R1 4 0  
-     137 [-]: GETIMPORT R1 5 [nil]
+     137 [-]: GETIMPORT R1 5 [0xAE91E43B]
      138 [-]: LOADK R3 K10 ["ConfirmPanel"]
      139 [-]: LOADN R4 10  
      140 [-]: LOADN R5 0   
@@ -908,18 +908,18 @@ L 6:  43 [-]: GETIMPORT R14 16 [nil]
      142 [-]: CALL R1 4 0  
      143 [-]: GETUPVAL R2 6
      144 [-]: GETTABLEKS R1 R2 K41 [0x659D451F]
-     145 [-]: GETIMPORT R2 43 [nil]
+     145 [-]: GETIMPORT R2 43 [0x0856E17D]
      146 [-]: CALL R1 1 0  
-     147 [-]: GETIMPORT R2 45 [nil]
+     147 [-]: GETIMPORT R2 45 [0x40A0F74B]
      148 [-]: FASTCALL1 62 R2 L0
-     149 [-]: GETIMPORT R1 47 [nil]
+     149 [-]: GETIMPORT R1 47 [0x7B998233]
      150 [-]: CALL R1 1 1  
 L 0: 151 [-]: JUMPIF R1 L1 
      152 [-]: GETUPVAL R1 7
      153 [-]: JUMPXEQKNIL R1 L1 NOT
      154 [-]: GETUPVAL R2 6
      155 [-]: GETTABLEKS R1 R2 K41 [0x659D451F]
-     156 [-]: GETIMPORT R2 45 [nil]
+     156 [-]: GETIMPORT R2 45 [0x40A0F74B]
      157 [-]: CALL R1 1 1  
      158 [-]: SETUPVAL R1 7
 L 1: 159 [-]: RETURN R0 0  
@@ -932,8 +932,8 @@ L 1: 159 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  3
 
-       0 [-]: GETIMPORT R0 1 [nil]
-       1 [-]: GETIMPORT R2 3 [nil]
+       0 [-]: GETIMPORT R0 1 [0xAE91E43B]
+       1 [-]: GETIMPORT R2 3 [0xB693B6C1]
        2 [-]: CALL R2 0 -1 
        3 [-]: NAMECALL R0 R0 K4 [0x8A8C8D5A]
        4 [-]: CALL R0 -1 0 
@@ -957,8 +957,8 @@ L 1: 159 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  9
 
-       0 [-]: GETIMPORT R0 1 [nil]
-       1 [-]: GETIMPORT R1 3 [nil]
+       0 [-]: GETIMPORT R0 1 [0x25312C9B]
+       1 [-]: GETIMPORT R1 3 [0xAE91E43B]
        2 [-]: LOADK R2 K4 ["_root"]
        3 [-]: LOADN R3 2   
        4 [-]: NEWTABLE R4 0 1
@@ -995,7 +995,7 @@ L 1: 159 [-]: RETURN R0 0
 
        0 [-]: GETUPVAL R3 0
        1 [-]: FASTCALL1 62 R3 L0
-       2 [-]: GETIMPORT R2 1 [nil]
+       2 [-]: GETIMPORT R2 1 [0x7B998233]
        3 [-]: CALL R2 1 1  
 L 0:   4 [-]: JUMPIF R2 L1 
        5 [-]: GETUPVAL R2 0
@@ -1013,19 +1013,19 @@ L 1:  10 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  6
 
-       0 [-]: GETIMPORT R1 1 [nil]
+       0 [-]: GETIMPORT R1 1 ["_T"]
        1 [-]: SETTABLEKS R0 R1 K2 ["SelectedBinaryChoice"]
        2 [-]: GETUPVAL R2 0
        3 [-]: FASTCALL1 62 R2 L0
-       4 [-]: GETIMPORT R1 4 [nil]
+       4 [-]: GETIMPORT R1 4 [0x7B998233]
        5 [-]: CALL R1 1 1  
 L 0:   6 [-]: JUMPIF R1 L4 
-       7 [-]: GETIMPORT R1 6 [nil]
+       7 [-]: GETIMPORT R1 6 [0xAE91E43B]
        8 [-]: NAMECALL R1 R1 K7 [0x33ABEE92]
        9 [-]: CALL R1 1 1  
       10 [-]: FASTCALL1 62 R1 L1
       11 [-]: MOVE R3 R1   
-      12 [-]: GETIMPORT R2 4 [nil]
+      12 [-]: GETIMPORT R2 4 [0x7B998233]
       13 [-]: CALL R2 1 1  
 L 1:  14 [-]: JUMPIF R2 L2 
       15 [-]: GETUPVAL R4 0
@@ -1034,14 +1034,14 @@ L 1:  14 [-]: JUMPIF R2 L2
       18 [-]: CALL R2 3 0  
       19 [-]: JUMP L4
      
-L 2:  20 [-]: GETIMPORT R4 1 [nil]
+L 2:  20 [-]: GETIMPORT R4 1 ["_T"]
       21 [-]: GETUPVAL R5 0
       22 [-]: GETTABLE R3 R4 R5
       23 [-]: FASTCALL1 62 R3 L3
-      24 [-]: GETIMPORT R2 4 [nil]
+      24 [-]: GETIMPORT R2 4 [0x7B998233]
       25 [-]: CALL R2 1 1  
 L 3:  26 [-]: JUMPIF R2 L4 
-      27 [-]: GETIMPORT R3 1 [nil]
+      27 [-]: GETIMPORT R3 1 ["_T"]
       28 [-]: GETUPVAL R4 0
       29 [-]: GETTABLE R2 R3 R4
       30 [-]: MOVE R3 R0   
@@ -1067,17 +1067,17 @@ L 5:  36 [-]: RETURN R0 0
        4 [-]: RETURN R0 0  
 L 0:   5 [-]: GETUPVAL R1 2
        6 [-]: GETTABLEKS R0 R1 K0 [0x659D451F]
-       7 [-]: GETIMPORT R1 2 [nil]
+       7 [-]: GETIMPORT R1 2 [0x4CCC0EE9]
        8 [-]: CALL R0 1 0  
-       9 [-]: GETIMPORT R0 4 [nil]
+       9 [-]: GETIMPORT R0 4 [0xAE91E43B]
       10 [-]: LOADK R2 K5 ["SelectPanel.SelectLeft.Label"]
       11 [-]: LOADN R3 36  
       12 [-]: GETUPVAL R5 3
       13 [-]: GETTABLEKS R4 R5 K6 ["FloatingContentHighlight"]
       14 [-]: NAMECALL R0 R0 K7 [0x67BC869F]
       15 [-]: CALL R0 4 0  
-      16 [-]: GETIMPORT R0 9 [nil]
-      17 [-]: GETIMPORT R1 4 [nil]
+      16 [-]: GETIMPORT R0 9 [0x25312C9B]
+      17 [-]: GETIMPORT R1 4 [0xAE91E43B]
       18 [-]: LOADK R2 K5 ["SelectPanel.SelectLeft.Label"]
       19 [-]: LOADN R3 2   
       20 [-]: NEWTABLE R4 0 1
@@ -1088,8 +1088,8 @@ L 0:   5 [-]: GETUPVAL R1 2
       25 [-]: SETLIST R5 R6 1 [1]
       26 [-]: LOADK R6 K10 [0.25]
       27 [-]: CALL R0 6 0  
-      28 [-]: GETIMPORT R0 9 [nil]
-      29 [-]: GETIMPORT R1 4 [nil]
+      28 [-]: GETIMPORT R0 9 [0x25312C9B]
+      29 [-]: GETIMPORT R1 4 [0xAE91E43B]
       30 [-]: LOADK R2 K11 ["SelectPanel.SelectLeft.Glow"]
       31 [-]: LOADN R3 2   
       32 [-]: NEWTABLE R4 0 1
@@ -1100,8 +1100,8 @@ L 0:   5 [-]: GETUPVAL R1 2
       37 [-]: SETLIST R5 R6 1 [1]
       38 [-]: LOADK R6 K10 [0.25]
       39 [-]: CALL R0 6 0  
-      40 [-]: GETIMPORT R0 9 [nil]
-      41 [-]: GETIMPORT R1 4 [nil]
+      40 [-]: GETIMPORT R0 9 [0x25312C9B]
+      41 [-]: GETIMPORT R1 4 [0xAE91E43B]
       42 [-]: LOADK R2 K12 ["SelectPanel.Oval.ArrowLeft"]
       43 [-]: LOADN R3 2   
       44 [-]: NEWTABLE R4 0 1
@@ -1112,8 +1112,8 @@ L 0:   5 [-]: GETUPVAL R1 2
       49 [-]: SETLIST R5 R6 1 [1]
       50 [-]: LOADK R6 K10 [0.25]
       51 [-]: CALL R0 6 0  
-      52 [-]: GETIMPORT R0 9 [nil]
-      53 [-]: GETIMPORT R1 4 [nil]
+      52 [-]: GETIMPORT R0 9 [0x25312C9B]
+      53 [-]: GETIMPORT R1 4 [0xAE91E43B]
       54 [-]: LOADK R2 K13 ["SelectPanel.Oval.CenterGlow"]
       55 [-]: LOADN R3 2   
       56 [-]: NEWTABLE R4 0 1
@@ -1165,31 +1165,31 @@ L 0:   3 [-]: LOADB R0 1
        4 [-]: SETUPVAL R0 0
        5 [-]: LOADB R0 1   
        6 [-]: SETUPVAL R0 1
-       7 [-]: GETIMPORT R1 1 [nil]
+       7 [-]: GETIMPORT R1 1 [0x1741D328]
        8 [-]: FASTCALL1 62 R1 L1
-       9 [-]: GETIMPORT R0 3 [nil]
+       9 [-]: GETIMPORT R0 3 [0x7B998233]
       10 [-]: CALL R0 1 1  
 L 1:  11 [-]: JUMPIF R0 L2 
       12 [-]: GETUPVAL R1 2
       13 [-]: GETTABLEKS R0 R1 K4 [0x310355A7]
-      14 [-]: GETIMPORT R1 6 [nil]
+      14 [-]: GETIMPORT R1 6 [0xAE91E43B]
       15 [-]: LOADK R2 K7 ["SelectPanel.SelectLeft.FxAnchor"]
-      16 [-]: GETIMPORT R3 1 [nil]
+      16 [-]: GETIMPORT R3 1 [0x1741D328]
       17 [-]: CALL R0 3 0  
-L 2:  18 [-]: GETIMPORT R1 9 [nil]
+L 2:  18 [-]: GETIMPORT R1 9 [0x7E2B489D]
       19 [-]: FASTCALL1 62 R1 L3
-      20 [-]: GETIMPORT R0 3 [nil]
+      20 [-]: GETIMPORT R0 3 [0x7B998233]
       21 [-]: CALL R0 1 1  
 L 3:  22 [-]: JUMPIF R0 L4 
       23 [-]: GETUPVAL R1 2
       24 [-]: GETTABLEKS R0 R1 K4 [0x310355A7]
-      25 [-]: GETIMPORT R1 6 [nil]
+      25 [-]: GETIMPORT R1 6 [0xAE91E43B]
       26 [-]: LOADK R2 K10 ["SelectPanel.Oval.FxAnchor"]
-      27 [-]: GETIMPORT R3 9 [nil]
+      27 [-]: GETIMPORT R3 9 [0x7E2B489D]
       28 [-]: CALL R0 3 0  
 L 4:  29 [-]: GETUPVAL R1 2
       30 [-]: GETTABLEKS R0 R1 K11 [0x659D451F]
-      31 [-]: GETIMPORT R1 13 [nil]
+      31 [-]: GETIMPORT R1 13 [0xDD6B473C]
       32 [-]: CALL R0 1 0  
       33 [-]: GETUPVAL R0 3
       34 [-]: LOADN R1 0   
@@ -1211,17 +1211,17 @@ L 4:  29 [-]: GETUPVAL R1 2
        4 [-]: RETURN R0 0  
 L 0:   5 [-]: GETUPVAL R1 2
        6 [-]: GETTABLEKS R0 R1 K0 [0x659D451F]
-       7 [-]: GETIMPORT R1 2 [nil]
+       7 [-]: GETIMPORT R1 2 [0x4CCC0EE9]
        8 [-]: CALL R0 1 0  
-       9 [-]: GETIMPORT R0 4 [nil]
+       9 [-]: GETIMPORT R0 4 [0xAE91E43B]
       10 [-]: LOADK R2 K5 ["SelectPanel.SelectRight.Label"]
       11 [-]: LOADN R3 36  
       12 [-]: GETUPVAL R5 3
       13 [-]: GETTABLEKS R4 R5 K6 ["FloatingContentHighlight"]
       14 [-]: NAMECALL R0 R0 K7 [0x67BC869F]
       15 [-]: CALL R0 4 0  
-      16 [-]: GETIMPORT R0 9 [nil]
-      17 [-]: GETIMPORT R1 4 [nil]
+      16 [-]: GETIMPORT R0 9 [0x25312C9B]
+      17 [-]: GETIMPORT R1 4 [0xAE91E43B]
       18 [-]: LOADK R2 K5 ["SelectPanel.SelectRight.Label"]
       19 [-]: LOADN R3 2   
       20 [-]: NEWTABLE R4 0 1
@@ -1232,8 +1232,8 @@ L 0:   5 [-]: GETUPVAL R1 2
       25 [-]: SETLIST R5 R6 1 [1]
       26 [-]: LOADK R6 K10 [0.25]
       27 [-]: CALL R0 6 0  
-      28 [-]: GETIMPORT R0 9 [nil]
-      29 [-]: GETIMPORT R1 4 [nil]
+      28 [-]: GETIMPORT R0 9 [0x25312C9B]
+      29 [-]: GETIMPORT R1 4 [0xAE91E43B]
       30 [-]: LOADK R2 K11 ["SelectPanel.SelectRight.Glow"]
       31 [-]: LOADN R3 2   
       32 [-]: NEWTABLE R4 0 1
@@ -1244,8 +1244,8 @@ L 0:   5 [-]: GETUPVAL R1 2
       37 [-]: SETLIST R5 R6 1 [1]
       38 [-]: LOADK R6 K10 [0.25]
       39 [-]: CALL R0 6 0  
-      40 [-]: GETIMPORT R0 9 [nil]
-      41 [-]: GETIMPORT R1 4 [nil]
+      40 [-]: GETIMPORT R0 9 [0x25312C9B]
+      41 [-]: GETIMPORT R1 4 [0xAE91E43B]
       42 [-]: LOADK R2 K12 ["SelectPanel.Oval.ArrowRight"]
       43 [-]: LOADN R3 2   
       44 [-]: NEWTABLE R4 0 1
@@ -1256,8 +1256,8 @@ L 0:   5 [-]: GETUPVAL R1 2
       49 [-]: SETLIST R5 R6 1 [1]
       50 [-]: LOADK R6 K10 [0.25]
       51 [-]: CALL R0 6 0  
-      52 [-]: GETIMPORT R0 9 [nil]
-      53 [-]: GETIMPORT R1 4 [nil]
+      52 [-]: GETIMPORT R0 9 [0x25312C9B]
+      53 [-]: GETIMPORT R1 4 [0xAE91E43B]
       54 [-]: LOADK R2 K13 ["SelectPanel.Oval.CenterGlow"]
       55 [-]: LOADN R3 2   
       56 [-]: NEWTABLE R4 0 1
@@ -1309,31 +1309,31 @@ L 0:   3 [-]: LOADB R0 1
        4 [-]: SETUPVAL R0 0
        5 [-]: LOADB R0 1   
        6 [-]: SETUPVAL R0 1
-       7 [-]: GETIMPORT R1 1 [nil]
+       7 [-]: GETIMPORT R1 1 [0x1741D328]
        8 [-]: FASTCALL1 62 R1 L1
-       9 [-]: GETIMPORT R0 3 [nil]
+       9 [-]: GETIMPORT R0 3 [0x7B998233]
       10 [-]: CALL R0 1 1  
 L 1:  11 [-]: JUMPIF R0 L2 
       12 [-]: GETUPVAL R1 2
       13 [-]: GETTABLEKS R0 R1 K4 [0x310355A7]
-      14 [-]: GETIMPORT R1 6 [nil]
+      14 [-]: GETIMPORT R1 6 [0xAE91E43B]
       15 [-]: LOADK R2 K7 ["SelectPanel.SelectRight.FxAnchor"]
-      16 [-]: GETIMPORT R3 1 [nil]
+      16 [-]: GETIMPORT R3 1 [0x1741D328]
       17 [-]: CALL R0 3 0  
-L 2:  18 [-]: GETIMPORT R1 9 [nil]
+L 2:  18 [-]: GETIMPORT R1 9 [0x7E2B489D]
       19 [-]: FASTCALL1 62 R1 L3
-      20 [-]: GETIMPORT R0 3 [nil]
+      20 [-]: GETIMPORT R0 3 [0x7B998233]
       21 [-]: CALL R0 1 1  
 L 3:  22 [-]: JUMPIF R0 L4 
       23 [-]: GETUPVAL R1 2
       24 [-]: GETTABLEKS R0 R1 K4 [0x310355A7]
-      25 [-]: GETIMPORT R1 6 [nil]
+      25 [-]: GETIMPORT R1 6 [0xAE91E43B]
       26 [-]: LOADK R2 K10 ["SelectPanel.Oval.FxAnchor"]
-      27 [-]: GETIMPORT R3 9 [nil]
+      27 [-]: GETIMPORT R3 9 [0x7E2B489D]
       28 [-]: CALL R0 3 0  
 L 4:  29 [-]: GETUPVAL R1 2
       30 [-]: GETTABLEKS R0 R1 K11 [0x659D451F]
-      31 [-]: GETIMPORT R1 13 [nil]
+      31 [-]: GETIMPORT R1 13 [0xDD6B473C]
       32 [-]: CALL R0 1 0  
       33 [-]: GETUPVAL R0 3
       34 [-]: LOADN R1 1   
@@ -1363,15 +1363,15 @@ L 0:   3 [-]: LOADB R0 1
       12 [-]: CALL R0 2 0  
       13 [-]: GETUPVAL R1 3
       14 [-]: GETTABLEKS R0 R1 K1 [0x659D451F]
-      15 [-]: GETIMPORT R1 3 [nil]
+      15 [-]: GETIMPORT R1 3 [0xD942DE4D]
       16 [-]: CALL R0 1 0  
       17 [-]: GETUPVAL R1 3
       18 [-]: GETTABLEKS R0 R1 K1 [0x659D451F]
-      19 [-]: GETIMPORT R1 5 [nil]
+      19 [-]: GETIMPORT R1 5 [0x2E04D9C5]
       20 [-]: CALL R0 1 0  
       21 [-]: GETUPVAL R1 4
       22 [-]: FASTCALL1 62 R1 L1
-      23 [-]: GETIMPORT R0 7 [nil]
+      23 [-]: GETIMPORT R0 7 [0x7B998233]
       24 [-]: CALL R0 1 1  
 L 1:  25 [-]: JUMPIF R0 L2 
       26 [-]: GETUPVAL R0 4
@@ -1406,7 +1406,7 @@ L 0:   3 [-]: LOADB R0 1
       12 [-]: CALL R0 2 0  
       13 [-]: GETUPVAL R1 3
       14 [-]: GETTABLEKS R0 R1 K1 [0x659D451F]
-      15 [-]: GETIMPORT R1 3 [nil]
+      15 [-]: GETIMPORT R1 3 [0xB50E0375]
       16 [-]: CALL R0 1 0  
       17 [-]: GETUPVAL R0 4
       18 [-]: LOADN R1 1   
@@ -1432,12 +1432,12 @@ L 0:   3 [-]: LOADB R0 1
 ; Is_vararg:       0
 ; Max Stack Size:  5
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 [0xAE91E43B]
        1 [-]: NAMECALL R0 R0 K2 [0x33ABEE92]
        2 [-]: CALL R0 1 1  
        3 [-]: FASTCALL1 62 R0 L0
        4 [-]: MOVE R2 R0   
-       5 [-]: GETIMPORT R1 4 [nil]
+       5 [-]: GETIMPORT R1 4 [0x7B998233]
        6 [-]: CALL R1 1 1  
 L 0:   7 [-]: JUMPIF R1 L1 
        8 [-]: LOADK R3 K5 ["GoBack"]

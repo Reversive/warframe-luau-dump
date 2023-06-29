@@ -5,9 +5,9 @@
 ; Is_vararg:       1
 ; Max Stack Size:  3
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0xAEABECDA]
        2 [-]: GETVARARGS R1 1
-       3 [-]: GETIMPORT R2 4 [nil]
+       3 [-]: GETIMPORT R2 4 ["seeall"]
        4 [-]: CALL R0 2 0  
        5 [-]: DUPCLOSURE R0 K5 []
        6 [-]: SETGLOBAL R0 K6 ["Piecewise"]
@@ -33,7 +33,7 @@
 L 0:   7 [-]: JUMPIFNOTLT R5 R2 L2
        8 [-]: MUL R6 R3 R5 
        9 [-]: JUMPIFNOTLT R0 R6 L1
-      10 [-]: GETIMPORT R6 2 [nil]
+      10 [-]: GETIMPORT R6 2 [0x9BAFFFE3]
       11 [-]: GETTABLE R7 R1 R5
       12 [-]: ADDK R9 R5 K0 [1]
       13 [-]: GETTABLE R8 R1 R9
@@ -58,13 +58,13 @@ L 2:  22 [-]: GETTABLE R6 R1 R2
 
        0 [-]: FASTCALL1 62 R0 L0
        1 [-]: MOVE R3 R0   
-       2 [-]: GETIMPORT R2 1 [nil]
+       2 [-]: GETIMPORT R2 1 [0x7B998233]
        3 [-]: CALL R2 1 1  
 L 0:   4 [-]: JUMPIFNOT R2 L1
        5 [-]: RETURN R0 0  
 L 1:   6 [-]: FASTCALL1 62 R0 L2
        7 [-]: MOVE R3 R0   
-       8 [-]: GETIMPORT R2 1 [nil]
+       8 [-]: GETIMPORT R2 1 [0x7B998233]
        9 [-]: CALL R2 1 1  
 L 2:  10 [-]: JUMPIF R2 L3 
       11 [-]: NAMECALL R2 R0 K2 [0xF6EBD926]
@@ -75,7 +75,7 @@ L 2:  10 [-]: JUMPIF R2 L3
       16 [-]: GETTABLEKS R8 R2 K5 ["z"]
       17 [-]: NAMECALL R3 R0 K6 [0x986D2AB8]
       18 [-]: CALL R3 5 0  
-      19 [-]: GETIMPORT R3 8 [nil]
+      19 [-]: GETIMPORT R3 8 [0xCBD666E1]
       20 [-]: LOADN R4 0   
       21 [-]: CALL R3 1 0  
       22 [-]: JUMPBACK L1  

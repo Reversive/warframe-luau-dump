@@ -5,19 +5,19 @@
 ; Is_vararg:       1
 ; Max Stack Size:  6
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x0469F296]
        2 [-]: LOADK R1 K2 ["SLEEP_SHIELD"]
        3 [-]: CALL R0 1 1  
-       4 [-]: GETIMPORT R1 1 [nil]
+       4 [-]: GETIMPORT R1 1 [0x0469F296]
        5 [-]: LOADK R2 K3 ["SLEEP_START"]
        6 [-]: CALL R1 1 1  
-       7 [-]: GETIMPORT R2 1 [nil]
+       7 [-]: GETIMPORT R2 1 [0x0469F296]
        8 [-]: LOADK R3 K4 ["SLEEP_LOOP"]
        9 [-]: CALL R2 1 1  
-      10 [-]: GETIMPORT R3 1 [nil]
+      10 [-]: GETIMPORT R3 1 [0x0469F296]
       11 [-]: LOADK R4 K5 ["SLEEP_END"]
       12 [-]: CALL R3 1 1  
-      13 [-]: GETIMPORT R4 7 [nil]
+      13 [-]: GETIMPORT R4 7 [0x7ED0A956]
       14 [-]: LOADK R5 K8 ["/Lotus/Powersuits/Pacifist/PacifistBaseSuit"]
       15 [-]: CALL R4 1 1  
       16 [-]: DUPCLOSURE R5 K9 []
@@ -45,20 +45,20 @@
        3 [-]: CALL R5 1 1  
        4 [-]: FASTCALL1 62 R4 L0
        5 [-]: MOVE R7 R4   
-       6 [-]: GETIMPORT R6 3 [nil]
+       6 [-]: GETIMPORT R6 3 [0x7B998233]
        7 [-]: CALL R6 1 1  
 L 0:   8 [-]: JUMPIF R6 L3 
        9 [-]: FASTCALL1 62 R2 L1
       10 [-]: MOVE R7 R2   
-      11 [-]: GETIMPORT R6 3 [nil]
+      11 [-]: GETIMPORT R6 3 [0x7B998233]
       12 [-]: CALL R6 1 1  
 L 1:  13 [-]: JUMPIF R6 L3 
       14 [-]: FASTCALL1 62 R5 L2
       15 [-]: MOVE R7 R5   
-      16 [-]: GETIMPORT R6 3 [nil]
+      16 [-]: GETIMPORT R6 3 [0x7B998233]
       17 [-]: CALL R6 1 1  
 L 2:  18 [-]: JUMPIF R6 L3 
-      19 [-]: GETIMPORT R8 5 [nil]
+      19 [-]: GETIMPORT R8 5 ["gBaseAvatarType"]
       20 [-]: NAMECALL R6 R2 K6 [0xF2DEAF69]
       21 [-]: CALL R6 2 1  
       22 [-]: JUMPIFNOT R6 L3
@@ -73,7 +73,7 @@ L 4:  28 [-]: NAMECALL R6 R5 K8 [0xDE321E6F]
       31 [-]: CALL R6 1 1  
       32 [-]: FASTCALL1 62 R6 L5
       33 [-]: MOVE R8 R6   
-      34 [-]: GETIMPORT R7 3 [nil]
+      34 [-]: GETIMPORT R7 3 [0x7B998233]
       35 [-]: CALL R7 1 1  
 L 5:  36 [-]: JUMPIF R7 L6 
       37 [-]: GETUPVAL R9 0
@@ -85,7 +85,7 @@ L 7:  42 [-]: NAMECALL R7 R4 K10 [0xE3CA779E]
       43 [-]: CALL R7 1 1  
       44 [-]: FASTCALL1 62 R7 L8
       45 [-]: MOVE R9 R7   
-      46 [-]: GETIMPORT R8 3 [nil]
+      46 [-]: GETIMPORT R8 3 [0x7B998233]
       47 [-]: CALL R8 1 1  
 L 8:  48 [-]: JUMPIFNOT R8 L9
       49 [-]: RETURN R0 0  
@@ -99,11 +99,11 @@ L 9:  50 [-]: LOADN R10 0
       57 [-]: NAMECALL R8 R7 K11 [0x93D83685]
       58 [-]: CALL R8 3 1  
 L10:  59 [-]: JUMPIFNOT R8 L12
-      60 [-]: GETIMPORT R9 13 [nil]
+      60 [-]: GETIMPORT R9 13 [0x89326C93]
       61 [-]: NAMECALL R9 R9 K14 [0x18D05D30]
       62 [-]: CALL R9 1 1  
       63 [-]: JUMPIFNOT R9 L11
-      64 [-]: GETIMPORT R9 17 [nil]
+      64 [-]: GETIMPORT R9 17 [0x35C16153]
       65 [-]: CALL R9 0 1  
       66 [-]: LOADN R12 0  
       67 [-]: LOADB R13 1  
@@ -114,42 +114,42 @@ L10:  59 [-]: JUMPIFNOT R8 L12
       72 [-]: CALL R10 2 0 
 L11:  73 [-]: NAMECALL R9 R1 K20 [0x45E8EAFD]
       74 [-]: CALL R9 1 1  
-      75 [-]: GETIMPORT R10 22 [nil]
+      75 [-]: GETIMPORT R10 22 [0xC2892F65]
       76 [-]: MOVE R11 R9  
       77 [-]: CALL R10 1 0 
       78 [-]: NAMECALL R10 R2 K23 [0x020D4331]
       79 [-]: CALL R10 1 1 
-      80 [-]: GETIMPORT R13 25 [nil]
+      80 [-]: GETIMPORT R13 25 [0x99BD66CA]
       81 [-]: MUL R12 R9 R13
       82 [-]: NAMECALL R10 R10 K26 [0xCDADCD5D]
       83 [-]: CALL R10 2 0 
-L12:  84 [-]: GETIMPORT R10 29 [nil]
+L12:  84 [-]: GETIMPORT R10 29 ["PacifistSleepHit"]
       85 [-]: FASTCALL1 62 R10 L13
-      86 [-]: GETIMPORT R9 3 [nil]
+      86 [-]: GETIMPORT R9 3 [0x7B998233]
       87 [-]: CALL R9 1 1  
 L13:  88 [-]: JUMPIFNOT R9 L14
-      89 [-]: GETIMPORT R9 30 [nil]
+      89 [-]: GETIMPORT R9 30 ["_T"]
       90 [-]: NEWTABLE R10 0 0
       91 [-]: SETTABLEKS R10 R9 K28 ["PacifistSleepHit"]
 L14:  92 [-]: NAMECALL R9 R2 K31 [0x388577D5]
       93 [-]: CALL R9 1 1  
       94 [-]: JUMPIFNOT R8 L16
-      95 [-]: GETIMPORT R12 29 [nil]
+      95 [-]: GETIMPORT R12 29 ["PacifistSleepHit"]
       96 [-]: GETTABLE R11 R12 R9
       97 [-]: FASTCALL1 62 R11 L15
-      98 [-]: GETIMPORT R10 3 [nil]
+      98 [-]: GETIMPORT R10 3 [0x7B998233]
       99 [-]: CALL R10 1 1 
 L15: 100 [-]: JUMPIF R10 L17
 L16: 101 [-]: RETURN R0 0  
-L17: 102 [-]: GETIMPORT R10 29 [nil]
+L17: 102 [-]: GETIMPORT R10 29 ["PacifistSleepHit"]
      103 [-]: DUPTABLE R11 38
-     104 [-]: GETIMPORT R12 40 [nil]
+     104 [-]: GETIMPORT R12 40 [0x04CE8171]
      105 [-]: SETTABLEKS R12 R11 K32 ["duration"]
      106 [-]: LOADNIL R12  
      107 [-]: SETTABLEKS R12 R11 K33 ["lastHealth"]
      108 [-]: LOADNIL R12  
      109 [-]: SETTABLEKS R12 R11 K34 ["lastShield"]
-     110 [-]: GETIMPORT R12 43 [nil]
+     110 [-]: GETIMPORT R12 43 [0x3630E649]
      111 [-]: LOADN R13 1  
      112 [-]: LOADN R14 2  
      113 [-]: CALL R12 2 1 
@@ -158,7 +158,7 @@ L17: 102 [-]: GETIMPORT R10 29 [nil]
      116 [-]: SETTABLEKS R12 R11 K36 ["state"]
      117 [-]: SETTABLEKS R5 R11 K37 ["source"]
      118 [-]: SETTABLE R11 R10 R9
-     119 [-]: GETIMPORT R12 45 [nil]
+     119 [-]: GETIMPORT R12 45 [0x0469F296]
      120 [-]: LOADK R13 K46 ["DoSleepHit"]
      121 [-]: CALL R12 1 1 
      122 [-]: LOADB R13 0  
@@ -176,42 +176,42 @@ L17: 102 [-]: GETIMPORT R10 29 [nil]
 
        0 [-]: NAMECALL R1 R0 K0 [0x388577D5]
        1 [-]: CALL R1 1 1  
-       2 [-]: GETIMPORT R4 3 [nil]
+       2 [-]: GETIMPORT R4 3 ["PacifistSleepHit"]
        3 [-]: GETTABLE R3 R4 R1
        4 [-]: GETTABLEKS R2 R3 K4 ["source"]
        5 [-]: FASTCALL1 62 R2 L0
        6 [-]: MOVE R4 R2   
-       7 [-]: GETIMPORT R3 6 [nil]
+       7 [-]: GETIMPORT R3 6 [0x7B998233]
        8 [-]: CALL R3 1 1  
 L 0:   9 [-]: JUMPIFNOT R3 L1
       10 [-]: RETURN R0 0  
-L 1:  11 [-]: GETIMPORT R3 8 [nil]
+L 1:  11 [-]: GETIMPORT R3 8 [0xCBD666E1]
       12 [-]: LOADN R4 0   
       13 [-]: CALL R3 1 0  
-      14 [-]: GETIMPORT R6 3 [nil]
+      14 [-]: GETIMPORT R6 3 ["PacifistSleepHit"]
       15 [-]: GETTABLE R5 R6 R1
       16 [-]: GETTABLEKS R4 R5 K9 ["lastHealth"]
       17 [-]: FASTCALL1 62 R4 L2
-      18 [-]: GETIMPORT R3 6 [nil]
+      18 [-]: GETIMPORT R3 6 [0x7B998233]
       19 [-]: CALL R3 1 1  
 L 2:  20 [-]: JUMPIFNOT R3 L3
-      21 [-]: GETIMPORT R4 3 [nil]
+      21 [-]: GETIMPORT R4 3 ["PacifistSleepHit"]
       22 [-]: GETTABLE R3 R4 R1
       23 [-]: NAMECALL R4 R0 K10 [0xD2715720]
       24 [-]: CALL R4 1 1  
       25 [-]: SETTABLEKS R4 R3 K9 ["lastHealth"]
-      26 [-]: GETIMPORT R4 3 [nil]
+      26 [-]: GETIMPORT R4 3 ["PacifistSleepHit"]
       27 [-]: GETTABLE R3 R4 R1
       28 [-]: NAMECALL R4 R0 K11 [0x1AC1655C]
       29 [-]: CALL R4 1 1  
       30 [-]: NAMECALL R4 R4 K12 [0xF456C2D7]
       31 [-]: CALL R4 1 1  
       32 [-]: SETTABLEKS R4 R3 K13 ["lastShield"]
-L 3:  33 [-]: GETIMPORT R3 15 [nil]
+L 3:  33 [-]: GETIMPORT R3 15 [0x89326C93]
       34 [-]: NAMECALL R3 R3 K16 [0x18D05D30]
       35 [-]: CALL R3 1 1  
       36 [-]: JUMPIFNOT R3 L5
-      37 [-]: GETIMPORT R5 3 [nil]
+      37 [-]: GETIMPORT R5 3 ["PacifistSleepHit"]
       38 [-]: GETTABLE R4 R5 R1
       39 [-]: GETTABLEKS R3 R4 K17 ["state"]
       40 [-]: JUMPXEQKN R3 K18 L5 NOT [0]
@@ -220,7 +220,7 @@ L 3:  33 [-]: GETIMPORT R3 15 [nil]
       43 [-]: LOADN R7 4   
       44 [-]: LOADN R8 3   
       45 [-]: LOADB R9 1   
-      46 [-]: GETIMPORT R12 3 [nil]
+      46 [-]: GETIMPORT R12 3 ["PacifistSleepHit"]
       47 [-]: GETTABLE R11 R12 R1
       48 [-]: GETTABLEKS R10 R11 K19 ["reactionId"]
       49 [-]: NAMECALL R3 R0 K20 [0x0F89A4D4]
@@ -228,7 +228,7 @@ L 3:  33 [-]: GETIMPORT R3 15 [nil]
       51 [-]: NAMECALL R4 R0 K21 [0xFA9E477F]
       52 [-]: CALL R4 1 -1 
       53 [-]: FASTCALL 62 L4
-      54 [-]: GETIMPORT R3 6 [nil]
+      54 [-]: GETIMPORT R3 6 [0x7B998233]
       55 [-]: CALL R3 -1 1 
 L 4:  56 [-]: JUMPIF R3 L5 
       57 [-]: NAMECALL R3 R0 K21 [0xFA9E477F]
@@ -237,19 +237,19 @@ L 4:  56 [-]: JUMPIF R3 L5
       60 [-]: GETUPVAL R6 1
       61 [-]: NAMECALL R3 R3 K22 [0x55E9211C]
       62 [-]: CALL R3 3 0  
-L 5:  63 [-]: GETIMPORT R5 3 [nil]
+L 5:  63 [-]: GETIMPORT R5 3 ["PacifistSleepHit"]
       64 [-]: GETTABLE R4 R5 R1
       65 [-]: GETTABLEKS R3 R4 K23 ["duration"]
       66 [-]: LOADN R4 0   
       67 [-]: JUMPIFNOTLT R4 R3 L11
       68 [-]: FASTCALL1 62 R0 L6
       69 [-]: MOVE R4 R0   
-      70 [-]: GETIMPORT R3 6 [nil]
+      70 [-]: GETIMPORT R3 6 [0x7B998233]
       71 [-]: CALL R3 1 1  
 L 6:  72 [-]: JUMPIF R3 L11
       73 [-]: FASTCALL1 62 R2 L7
       74 [-]: MOVE R4 R2   
-      75 [-]: GETIMPORT R3 6 [nil]
+      75 [-]: GETIMPORT R3 6 [0x7B998233]
       76 [-]: CALL R3 1 1  
 L 7:  77 [-]: JUMPIF R3 L11
       78 [-]: NAMECALL R3 R0 K24 [0x2047CFE7]
@@ -258,15 +258,15 @@ L 7:  77 [-]: JUMPIF R3 L11
       81 [-]: NAMECALL R3 R2 K24 [0x2047CFE7]
       82 [-]: CALL R3 1 1  
       83 [-]: JUMPIF R3 L11
-      84 [-]: GETIMPORT R3 15 [nil]
+      84 [-]: GETIMPORT R3 15 [0x89326C93]
       85 [-]: NAMECALL R3 R3 K16 [0x18D05D30]
       86 [-]: CALL R3 1 1  
       87 [-]: JUMPIFNOT R3 L8
-      88 [-]: GETIMPORT R5 3 [nil]
+      88 [-]: GETIMPORT R5 3 ["PacifistSleepHit"]
       89 [-]: GETTABLE R4 R5 R1
       90 [-]: GETTABLEKS R3 R4 K17 ["state"]
       91 [-]: JUMPXEQKN R3 K18 L8 NOT [0]
-      92 [-]: GETIMPORT R5 26 [nil]
+      92 [-]: GETIMPORT R5 26 ["EMPTY_SYMBOL"]
       93 [-]: LOADB R6 0   
       94 [-]: NAMECALL R3 R0 K27 [0x444AE2C8]
       95 [-]: CALL R3 3 1  
@@ -276,63 +276,63 @@ L 7:  77 [-]: JUMPIF R3 L11
       99 [-]: LOADN R7 4   
      100 [-]: LOADN R8 2   
      101 [-]: LOADB R9 1   
-     102 [-]: GETIMPORT R12 3 [nil]
+     102 [-]: GETIMPORT R12 3 ["PacifistSleepHit"]
      103 [-]: GETTABLE R11 R12 R1
      104 [-]: GETTABLEKS R10 R11 K19 ["reactionId"]
      105 [-]: NAMECALL R3 R0 K20 [0x0F89A4D4]
      106 [-]: CALL R3 7 0  
-     107 [-]: GETIMPORT R4 3 [nil]
+     107 [-]: GETIMPORT R4 3 ["PacifistSleepHit"]
      108 [-]: GETTABLE R3 R4 R1
      109 [-]: LOADN R4 1   
      110 [-]: SETTABLEKS R4 R3 K17 ["state"]
 L 8: 111 [-]: NAMECALL R3 R0 K10 [0xD2715720]
      112 [-]: CALL R3 1 1  
-     113 [-]: GETIMPORT R6 3 [nil]
+     113 [-]: GETIMPORT R6 3 ["PacifistSleepHit"]
      114 [-]: GETTABLE R5 R6 R1
      115 [-]: GETTABLEKS R4 R5 K9 ["lastHealth"]
      116 [-]: JUMPIFNOTLT R3 R4 L9
-     117 [-]: GETIMPORT R7 3 [nil]
+     117 [-]: GETIMPORT R7 3 ["PacifistSleepHit"]
      118 [-]: GETTABLE R6 R7 R1
      119 [-]: GETTABLEKS R5 R6 K9 ["lastHealth"]
      120 [-]: SUB R4 R5 R3 
-     121 [-]: GETIMPORT R5 29 [nil]
+     121 [-]: GETIMPORT R5 29 [0x4D30CDCD]
      122 [-]: JUMPIFLE R5 R4 L11
 L 9: 123 [-]: NAMECALL R4 R0 K11 [0x1AC1655C]
      124 [-]: CALL R4 1 1  
      125 [-]: NAMECALL R4 R4 K12 [0xF456C2D7]
      126 [-]: CALL R4 1 1  
-     127 [-]: GETIMPORT R7 3 [nil]
+     127 [-]: GETIMPORT R7 3 ["PacifistSleepHit"]
      128 [-]: GETTABLE R6 R7 R1
      129 [-]: GETTABLEKS R5 R6 K13 ["lastShield"]
      130 [-]: JUMPIFNOTLT R4 R5 L10
-     131 [-]: GETIMPORT R8 3 [nil]
+     131 [-]: GETIMPORT R8 3 ["PacifistSleepHit"]
      132 [-]: GETTABLE R7 R8 R1
      133 [-]: GETTABLEKS R6 R7 K13 ["lastShield"]
      134 [-]: SUB R5 R6 R4 
-     135 [-]: GETIMPORT R6 29 [nil]
+     135 [-]: GETIMPORT R6 29 [0x4D30CDCD]
      136 [-]: JUMPIFLE R6 R5 L11
-L10: 137 [-]: GETIMPORT R5 8 [nil]
+L10: 137 [-]: GETIMPORT R5 8 [0xCBD666E1]
      138 [-]: LOADN R6 0   
      139 [-]: CALL R5 1 0  
-     140 [-]: GETIMPORT R6 3 [nil]
+     140 [-]: GETIMPORT R6 3 ["PacifistSleepHit"]
      141 [-]: GETTABLE R5 R6 R1
-     142 [-]: GETIMPORT R9 3 [nil]
+     142 [-]: GETIMPORT R9 3 ["PacifistSleepHit"]
      143 [-]: GETTABLE R8 R9 R1
      144 [-]: GETTABLEKS R7 R8 K23 ["duration"]
-     145 [-]: GETIMPORT R8 31 [nil]
+     145 [-]: GETIMPORT R8 31 [0x67652851]
      146 [-]: CALL R8 0 1  
      147 [-]: SUB R6 R7 R8 
      148 [-]: SETTABLEKS R6 R5 K23 ["duration"]
      149 [-]: JUMPBACK L5  
 L11: 150 [-]: FASTCALL1 62 R0 L12
      151 [-]: MOVE R4 R0   
-     152 [-]: GETIMPORT R3 6 [nil]
+     152 [-]: GETIMPORT R3 6 [0x7B998233]
      153 [-]: CALL R3 1 1  
 L12: 154 [-]: JUMPIF R3 L16
      155 [-]: NAMECALL R3 R0 K24 [0x2047CFE7]
      156 [-]: CALL R3 1 1  
      157 [-]: JUMPIF R3 L16
-     158 [-]: GETIMPORT R3 15 [nil]
+     158 [-]: GETIMPORT R3 15 [0x89326C93]
      159 [-]: NAMECALL R3 R3 K16 [0x18D05D30]
      160 [-]: CALL R3 1 1  
      161 [-]: JUMPIFNOT R3 L16
@@ -349,7 +349,7 @@ L13: 170 [-]: GETUPVAL R5 3
      172 [-]: LOADN R7 4   
      173 [-]: LOADN R8 1   
      174 [-]: LOADB R9 1   
-     175 [-]: GETIMPORT R12 3 [nil]
+     175 [-]: GETIMPORT R12 3 ["PacifistSleepHit"]
      176 [-]: GETTABLE R11 R12 R1
      177 [-]: GETTABLEKS R10 R11 K19 ["reactionId"]
      178 [-]: NAMECALL R3 R0 K20 [0x0F89A4D4]
@@ -357,7 +357,7 @@ L13: 170 [-]: GETUPVAL R5 3
 L14: 180 [-]: NAMECALL R4 R0 K21 [0xFA9E477F]
      181 [-]: CALL R4 1 -1 
      182 [-]: FASTCALL 62 L15
-     183 [-]: GETIMPORT R3 6 [nil]
+     183 [-]: GETIMPORT R3 6 [0x7B998233]
      184 [-]: CALL R3 -1 1 
 L15: 185 [-]: JUMPIF R3 L16
      186 [-]: NAMECALL R3 R0 K21 [0xFA9E477F]
@@ -371,7 +371,7 @@ L15: 185 [-]: JUMPIF R3 L16
      194 [-]: GETUPVAL R6 1
      195 [-]: NAMECALL R3 R3 K22 [0x55E9211C]
      196 [-]: CALL R3 3 0  
-L16: 197 [-]: GETIMPORT R3 3 [nil]
+L16: 197 [-]: GETIMPORT R3 3 ["PacifistSleepHit"]
      198 [-]: LOADNIL R4   
      199 [-]: SETTABLE R4 R3 R1
      200 [-]: RETURN R0 0  

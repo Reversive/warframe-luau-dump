@@ -5,9 +5,9 @@
 ; Is_vararg:       1
 ; Max Stack Size:  13
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0xAEABECDA]
        2 [-]: GETVARARGS R1 1
-       3 [-]: GETIMPORT R2 4 [nil]
+       3 [-]: GETIMPORT R2 4 ["seeall"]
        4 [-]: CALL R0 2 0  
        5 [-]: DUPTABLE R0 15
        6 [-]: LOADN R1 1   
@@ -57,40 +57,40 @@
       50 [-]: LOADN R1 12  
       51 [-]: SETTABLEKS R1 R0 K28 ["NO_ITEM"]
       52 [-]: SETGLOBAL R0 K30 ["IconTypes"]
-      53 [-]: GETIMPORT R0 32 [nil]
+      53 [-]: GETIMPORT R0 32 [0x2D0FAD09]
       54 [-]: LOADK R1 K33 ["EE.Interface.Utilities"]
       55 [-]: CALL R0 1 1  
-      56 [-]: GETIMPORT R1 32 [nil]
+      56 [-]: GETIMPORT R1 32 [0x2D0FAD09]
       57 [-]: LOADK R2 K34 ["Lotus.Interface.UIUtilities"]
       58 [-]: CALL R1 1 1  
-      59 [-]: GETIMPORT R2 32 [nil]
+      59 [-]: GETIMPORT R2 32 [0x2D0FAD09]
       60 [-]: LOADK R3 K35 ["Lotus.Interface.LotusUtilities"]
       61 [-]: CALL R2 1 1  
-      62 [-]: GETIMPORT R3 32 [nil]
+      62 [-]: GETIMPORT R3 32 [0x2D0FAD09]
       63 [-]: LOADK R4 K36 ["Lotus.Interface.UIStyleUtilities"]
       64 [-]: CALL R3 1 1  
-      65 [-]: GETIMPORT R4 32 [nil]
+      65 [-]: GETIMPORT R4 32 [0x2D0FAD09]
       66 [-]: LOADK R5 K37 ["Lotus.Interface.StoreItemUtilities"]
       67 [-]: CALL R4 1 1  
-      68 [-]: GETIMPORT R5 32 [nil]
+      68 [-]: GETIMPORT R5 32 [0x2D0FAD09]
       69 [-]: LOADK R6 K38 ["Lotus.Interface.Components.ThemedButton"]
       70 [-]: CALL R5 1 1  
-      71 [-]: GETIMPORT R6 32 [nil]
+      71 [-]: GETIMPORT R6 32 [0x2D0FAD09]
       72 [-]: LOADK R7 K39 ["Lotus.Interface.Components.ThemedSlider"]
       73 [-]: CALL R6 1 1  
-      74 [-]: GETIMPORT R7 32 [nil]
+      74 [-]: GETIMPORT R7 32 [0x2D0FAD09]
       75 [-]: LOADK R8 K40 ["Lotus.Interface.Components.ThemedCheckbox"]
       76 [-]: CALL R7 1 1  
-      77 [-]: GETIMPORT R8 32 [nil]
+      77 [-]: GETIMPORT R8 32 [0x2D0FAD09]
       78 [-]: LOADK R9 K41 ["Lotus.Interface.Components.ThemedToggle"]
       79 [-]: CALL R8 1 1  
-      80 [-]: GETIMPORT R9 32 [nil]
+      80 [-]: GETIMPORT R9 32 [0x2D0FAD09]
       81 [-]: LOADK R10 K42 ["Lotus.Interface.Components.DropDownMenu"]
       82 [-]: CALL R9 1 1  
-      83 [-]: GETIMPORT R10 32 [nil]
+      83 [-]: GETIMPORT R10 32 [0x2D0FAD09]
       84 [-]: LOADK R11 K43 ["Lotus.Interface.Components.ThemedProgressBar"]
       85 [-]: CALL R10 1 1 
-      86 [-]: GETIMPORT R12 45 [nil]
+      86 [-]: GETIMPORT R12 45 [0x0032441C]
       87 [-]: GETTABLEKS R11 R12 K46 ["UITexture_SettingsIcons"]
       88 [-]: DUPCLOSURE R12 K47 []
       89 [-]: MOVE R0 R5   
@@ -291,7 +291,7 @@
      172 [-]: SETTABLEKS R11 R6 K72 ["SetMultiline"]
      173 [-]: FASTCALL1 62 R5 L0
      174 [-]: MOVE R12 R5  
-     175 [-]: GETIMPORT R11 74 [nil]
+     175 [-]: GETIMPORT R11 74 [0x7B998233]
      176 [-]: CALL R11 1 1 
 L 0: 177 [-]: JUMPIF R11 L1
      178 [-]: GETTABLEKS R11 R5 K75 ["Multiline"]

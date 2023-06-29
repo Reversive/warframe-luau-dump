@@ -5,9 +5,9 @@
 ; Is_vararg:       1
 ; Max Stack Size:  3
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0xAEABECDA]
        2 [-]: GETVARARGS R1 1
-       3 [-]: GETIMPORT R2 4 [nil]
+       3 [-]: GETIMPORT R2 4 ["seeall"]
        4 [-]: CALL R0 2 0  
        5 [-]: DUPCLOSURE R0 K5 []
        6 [-]: SETGLOBAL R0 K6 ["Create"]
@@ -39,22 +39,22 @@
       15 [-]: SETTABLEKS R7 R6 K9 ["mIndicators"]
       16 [-]: LOADB R7 1   
       17 [-]: SETTABLEKS R7 R6 K10 ["mRightAligned"]
-      18 [-]: GETIMPORT R8 12 [nil]
+      18 [-]: GETIMPORT R8 12 [0x0032441C]
       19 [-]: GETTABLEKS R7 R8 K13 ["UIColor_White"]
       20 [-]: SETTABLEKS R7 R6 K14 ["mBgColor"]
       21 [-]: LOADN R7 20  
       22 [-]: SETTABLEKS R7 R6 K15 ["mBgAlpha"]
-      23 [-]: GETIMPORT R8 12 [nil]
+      23 [-]: GETIMPORT R8 12 [0x0032441C]
       24 [-]: GETTABLEKS R7 R8 K16 ["UIColor_Health"]
       25 [-]: SETTABLEKS R7 R6 K17 ["mHealthColor"]
       26 [-]: LOADN R7 100 
       27 [-]: SETTABLEKS R7 R6 K18 ["mHealthAlpha"]
-      28 [-]: GETIMPORT R8 12 [nil]
+      28 [-]: GETIMPORT R8 12 [0x0032441C]
       29 [-]: GETTABLEKS R7 R8 K19 ["UIColor_Shield"]
       30 [-]: SETTABLEKS R7 R6 K20 ["mShieldColor"]
       31 [-]: LOADN R7 100 
       32 [-]: SETTABLEKS R7 R6 K21 ["mShieldAlpha"]
-      33 [-]: GETIMPORT R8 12 [nil]
+      33 [-]: GETIMPORT R8 12 [0x0032441C]
       34 [-]: GETTABLEKS R7 R8 K22 ["UIColor_Overshield"]
       35 [-]: SETTABLEKS R7 R6 K23 ["mOvershieldColor"]
       36 [-]: LOADK R7 K24 [5855577]
@@ -65,18 +65,18 @@
       41 [-]: SETTABLEKS R7 R6 K28 ["mMaxHealth"]
       42 [-]: LOADN R7 0   
       43 [-]: SETTABLEKS R7 R6 K29 ["mMaxShield"]
-      44 [-]: GETIMPORT R8 12 [nil]
+      44 [-]: GETIMPORT R8 12 [0x0032441C]
       45 [-]: GETTABLEKS R7 R8 K30 ["UIColor_Armor"]
       46 [-]: SETTABLEKS R7 R6 K31 ["mArmorColor"]
       47 [-]: LOADB R7 0   
       48 [-]: SETTABLEKS R7 R6 K32 ["mTrackArmor"]
       49 [-]: LOADB R7 0   
       50 [-]: SETTABLEKS R7 R6 K33 ["mSkipNextDamageNotification"]
-      51 [-]: GETIMPORT R7 35 [nil]
+      51 [-]: GETIMPORT R7 35 [0x2D0FAD09]
       52 [-]: LOADK R8 K36 ["EE.Interface.Utilities"]
       53 [-]: CALL R7 1 1  
       54 [-]: SETTABLEKS R7 R6 K37 ["UTIL"]
-      55 [-]: GETIMPORT R7 35 [nil]
+      55 [-]: GETIMPORT R7 35 [0x2D0FAD09]
       56 [-]: LOADK R8 K38 ["Lotus.Interface.LotusUtilities"]
       57 [-]: CALL R7 1 1  
       58 [-]: SETTABLEKS R7 R6 K39 ["LOTUS_UTIL"]

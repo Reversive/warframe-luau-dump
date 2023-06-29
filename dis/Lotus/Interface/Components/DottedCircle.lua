@@ -5,9 +5,9 @@
 ; Is_vararg:       1
 ; Max Stack Size:  3
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0xAEABECDA]
        2 [-]: GETVARARGS R1 1
-       3 [-]: GETIMPORT R2 4 [nil]
+       3 [-]: GETIMPORT R2 4 ["seeall"]
        4 [-]: CALL R0 2 0  
        5 [-]: DUPCLOSURE R0 K5 []
        6 [-]: SETGLOBAL R0 K6 ["Create"]
@@ -22,7 +22,7 @@
 ; Max Stack Size:  10
 
        0 [-]: DUPTABLE R4 29
-       1 [-]: GETIMPORT R5 31 [nil]
+       1 [-]: GETIMPORT R5 31 [0x1211D00F]
        2 [-]: SETTABLEKS R5 R4 K0 ["mRegion"]
        3 [-]: NEWTABLE R5 0 0
        4 [-]: SETTABLEKS R5 R4 K1 ["mRings"]
@@ -40,7 +40,7 @@
       16 [-]: SETTABLEKS R5 R4 K9 ["mOnEffectDestroyedCallback"]
       17 [-]: LOADNIL R5   
       18 [-]: SETTABLEKS R5 R4 K10 ["mOnEffectUpdatedCallback"]
-      19 [-]: GETIMPORT R5 33 [nil]
+      19 [-]: GETIMPORT R5 33 [0x2D0FAD09]
       20 [-]: LOADK R6 K34 ["EE.Interface.Utilities"]
       21 [-]: CALL R5 1 1  
       22 [-]: SETTABLEKS R5 R4 K11 ["UTIL"]
@@ -72,21 +72,21 @@
       48 [-]: SETTABLEKS R5 R4 K18 ["mNextGenerationTime"]
       49 [-]: LOADN R5 30  
       50 [-]: SETTABLEKS R5 R4 K19 ["mMaxLife"]
-      51 [-]: GETIMPORT R5 43 [nil]
+      51 [-]: GETIMPORT R5 43 [0x60130201]
       52 [-]: LOADN R6 200 
       53 [-]: LOADN R7 200 
       54 [-]: LOADN R8 200 
       55 [-]: LOADN R9 255 
       56 [-]: CALL R5 4 1  
       57 [-]: SETTABLEKS R5 R4 K20 ["mColor"]
-      58 [-]: GETIMPORT R5 43 [nil]
+      58 [-]: GETIMPORT R5 43 [0x60130201]
       59 [-]: LOADN R6 0   
       60 [-]: LOADN R7 0   
       61 [-]: LOADN R8 0   
       62 [-]: LOADN R9 0   
       63 [-]: CALL R5 4 1  
       64 [-]: SETTABLEKS R5 R4 K21 ["mHiddenColor"]
-      65 [-]: GETIMPORT R5 45 [nil]
+      65 [-]: GETIMPORT R5 45 [0x0469F296]
       66 [-]: LOADK R6 K46 ["AlphaAtten"]
       67 [-]: CALL R5 1 1  
       68 [-]: SETTABLEKS R5 R4 K22 ["mAttenSymbol"]

@@ -5,9 +5,9 @@
 ; Is_vararg:       1
 ; Max Stack Size:  3
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0xAEABECDA]
        2 [-]: GETVARARGS R1 1
-       3 [-]: GETIMPORT R2 4 [nil]
+       3 [-]: GETIMPORT R2 4 ["seeall"]
        4 [-]: CALL R0 2 0  
        5 [-]: DUPCLOSURE R0 K5 []
        6 [-]: SETGLOBAL R0 K6 ["SpawnReinforcementsForHint"]
@@ -21,7 +21,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  24
 
-       0 [-]: GETIMPORT R8 1 [nil]
+       0 [-]: GETIMPORT R8 1 [0x89326C93]
        1 [-]: NAMECALL R8 R8 K2 [0x29EF273D]
        2 [-]: CALL R8 1 1  
        3 [-]: NAMECALL R8 R8 K3 [0x66905CB0]
@@ -31,21 +31,21 @@
        7 [-]: LOADN R10 8  
        8 [-]: JUMPIFNOTLE R10 R9 L0
        9 [-]: RETURN R0 0  
-L 0:  10 [-]: GETIMPORT R10 6 [nil]
+L 0:  10 [-]: GETIMPORT R10 6 [0x9BAFFFE3]
       11 [-]: LOADN R11 3  
       12 [-]: LOADN R12 5  
       13 [-]: LOADN R13 1  
       14 [-]: CALL R10 3 -1
       15 [-]: FASTCALL 12 L1
-      16 [-]: GETIMPORT R9 9 [nil]
+      16 [-]: GETIMPORT R9 9 [0x55F27C30]
       17 [-]: CALL R9 -1 1 
-L 1:  18 [-]: GETIMPORT R11 6 [nil]
+L 1:  18 [-]: GETIMPORT R11 6 [0x9BAFFFE3]
       19 [-]: LOADN R12 1  
       20 [-]: LOADN R13 1  
       21 [-]: LOADN R14 1  
       22 [-]: CALL R11 3 -1
       23 [-]: FASTCALL 12 L2
-      24 [-]: GETIMPORT R10 9 [nil]
+      24 [-]: GETIMPORT R10 9 [0x55F27C30]
       25 [-]: CALL R10 -1 1
 L 2:  26 [-]: NAMECALL R11 R8 K10 [0x6968EA36]
       27 [-]: CALL R11 1 1 
@@ -78,7 +78,7 @@ L 3:  31 [-]: MOVE R14 R6
 L 4:  54 [-]: LOADNIL R16  
       55 [-]: JUMPIFNOTLE R15 R10 L5
       56 [-]: LOADNIL R19  
-      57 [-]: GETIMPORT R20 16 [nil]
+      57 [-]: GETIMPORT R20 16 [0x0469F296]
       58 [-]: LOADK R21 K17 ["CaptureGuards"]
       59 [-]: CALL R20 1 1 
       60 [-]: MOVE R21 R11 
@@ -90,7 +90,7 @@ L 4:  54 [-]: LOADNIL R16
       66 [-]: JUMP L6
      
 L 5:  67 [-]: LOADNIL R19  
-      68 [-]: GETIMPORT R20 16 [nil]
+      68 [-]: GETIMPORT R20 16 [0x0469F296]
       69 [-]: LOADK R21 K17 ["CaptureGuards"]
       70 [-]: CALL R20 1 1 
       71 [-]: MOVE R21 R11 
@@ -101,7 +101,7 @@ L 5:  67 [-]: LOADNIL R19
       76 [-]: MOVE R16 R17 
 L 6:  77 [-]: FASTCALL1 62 R16 L7
       78 [-]: MOVE R18 R16 
-      79 [-]: GETIMPORT R17 20 [nil]
+      79 [-]: GETIMPORT R17 20 [0x7B998233]
       80 [-]: CALL R17 1 1 
 L 7:  81 [-]: JUMPIF R17 L10
       82 [-]: NAMECALL R17 R16 K21 [0x9E21E394]

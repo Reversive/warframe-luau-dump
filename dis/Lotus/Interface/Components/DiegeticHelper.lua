@@ -5,11 +5,11 @@
 ; Is_vararg:       1
 ; Max Stack Size:  3
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0xAEABECDA]
        2 [-]: GETVARARGS R1 1
-       3 [-]: GETIMPORT R2 4 [nil]
+       3 [-]: GETIMPORT R2 4 ["seeall"]
        4 [-]: CALL R0 2 0  
-       5 [-]: GETIMPORT R0 6 [nil]
+       5 [-]: GETIMPORT R0 6 [0x2D0FAD09]
        6 [-]: LOADK R1 K7 ["EE.Interface.Utilities"]
        7 [-]: CALL R0 1 1  
        8 [-]: DUPCLOSURE R1 K8 []
@@ -41,12 +41,12 @@
       13 [-]: CALL R3 1 1  
       14 [-]: DIVK R2 R3 K4 [2]
       15 [-]: SETTABLEKS R2 R1 K8 ["mHalfHeight"]
-      16 [-]: GETIMPORT R2 10 [nil]
+      16 [-]: GETIMPORT R2 10 [0x78CA68A2]
       17 [-]: LOADN R3 0   
       18 [-]: LOADK R4 K11 [0.14999999999999999]
       19 [-]: CALL R2 2 1  
       20 [-]: SETTABLEKS R2 R1 K12 ["mSmoothCursorX"]
-      21 [-]: GETIMPORT R2 10 [nil]
+      21 [-]: GETIMPORT R2 10 [0x78CA68A2]
       22 [-]: LOADN R3 0   
       23 [-]: LOADK R4 K11 [0.14999999999999999]
       24 [-]: CALL R2 2 1  
@@ -97,7 +97,7 @@
       69 [-]: SETTABLEKS R2 R1 K41 ["mMouseY"]
       70 [-]: LOADB R2 0   
       71 [-]: SETTABLEKS R2 R1 K42 ["mLiteMode"]
-      72 [-]: GETIMPORT R2 44 [nil]
+      72 [-]: GETIMPORT R2 44 [0xA421AF95]
       73 [-]: CALL R2 0 1  
       74 [-]: SETTABLEKS R2 R1 K45 ["mPositionOffset"]
       75 [-]: LOADN R2 0   

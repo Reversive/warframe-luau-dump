@@ -5,10 +5,10 @@
 ; Is_vararg:       1
 ; Max Stack Size:  10
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x2D0FAD09]
        2 [-]: LOADK R1 K2 ["EE.Interface.Utilities"]
        3 [-]: CALL R0 1 1  
-       4 [-]: GETIMPORT R1 1 [nil]
+       4 [-]: GETIMPORT R1 1 [0x2D0FAD09]
        5 [-]: LOADK R2 K3 ["Lotus.Interface.LotusUtilities"]
        6 [-]: CALL R1 1 1  
        7 [-]: LOADNIL R2   
@@ -60,7 +60,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 [0xAE91E43B]
        1 [-]: NAMECALL R0 R0 K2 [0x32302B4A]
        2 [-]: CALL R0 1 0  
        3 [-]: RETURN R0 0  
@@ -83,12 +83,12 @@
        7 [-]: SETTABLEKS R4 R3 K2 ["CallOut"]
        8 [-]: FASTCALL2 52 R0 R3 L0
        9 [-]: MOVE R2 R0   
-      10 [-]: GETIMPORT R1 8 [nil]
+      10 [-]: GETIMPORT R1 8 [0x23D5322F]
       11 [-]: CALL R1 2 0  
-L 0:  12 [-]: GETIMPORT R1 11 [nil]
-      13 [-]: GETIMPORT R2 13 [nil]
+L 0:  12 [-]: GETIMPORT R1 11 ["SetButtons"]
+      13 [-]: GETIMPORT R2 13 [0xAE91E43B]
       14 [-]: MOVE R3 R0   
-      15 [-]: GETIMPORT R4 15 [nil]
+      15 [-]: GETIMPORT R4 15 [0xCD0165A3]
       16 [-]: LOADN R5 1   
       17 [-]: CALL R4 1 -1 
       18 [-]: CALL R1 -1 0 
@@ -102,8 +102,8 @@ L 0:  12 [-]: GETIMPORT R1 11 [nil]
 ; Is_vararg:       0
 ; Max Stack Size:  3
 
-       0 [-]: GETIMPORT R0 2 [nil]
-       1 [-]: GETIMPORT R1 4 [nil]
+       0 [-]: GETIMPORT R0 2 ["SetButtons"]
+       1 [-]: GETIMPORT R1 4 [0xAE91E43B]
        2 [-]: LOADNIL R2   
        3 [-]: CALL R0 2 0  
        4 [-]: RETURN R0 0  
@@ -116,23 +116,23 @@ L 0:  12 [-]: GETIMPORT R1 11 [nil]
 ; Is_vararg:       0
 ; Max Stack Size:  9
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 [0xAE91E43B]
        1 [-]: LOADK R2 K2 ["Banner.Image"]
-       2 [-]: GETIMPORT R3 6 [nil]
+       2 [-]: GETIMPORT R3 6 ["Banner"]
        3 [-]: NAMECALL R0 R0 K7 [0x1CB415C1]
        4 [-]: CALL R0 3 0  
-       5 [-]: GETIMPORT R0 1 [nil]
+       5 [-]: GETIMPORT R0 1 [0xAE91E43B]
        6 [-]: LOADK R2 K8 ["Banner.ProjectName"]
        7 [-]: LOADN R3 38  
        8 [-]: LOADK R4 K9 ["bottom"]
        9 [-]: NAMECALL R0 R0 K10 [0x5F56EEAB]
       10 [-]: CALL R0 4 0  
-      11 [-]: GETIMPORT R0 1 [nil]
+      11 [-]: GETIMPORT R0 1 [0xAE91E43B]
       12 [-]: LOADK R2 K11 ["Banner.ProjectName.text"]
       13 [-]: LOADK R3 K12 ["/Lotus/Language/RelayReconstruction/RelayTitle"]
       14 [-]: DUPTABLE R4 14
-      15 [-]: GETIMPORT R5 1 [nil]
-      16 [-]: GETIMPORT R7 16 [nil]
+      15 [-]: GETIMPORT R5 1 [0xAE91E43B]
+      16 [-]: GETIMPORT R7 16 ["ProjectName"]
       17 [-]: LOADB R8 0   
       18 [-]: NAMECALL R5 R5 K17 [0x42B04007]
       19 [-]: CALL R5 3 1  
@@ -158,7 +158,7 @@ L 0:  12 [-]: GETIMPORT R1 11 [nil]
        6 [-]: MOVE R0 R0   
        7 [-]: MOVE R2 R0   
        8 [-]: MOVE R2 R3   
-       9 [-]: GETIMPORT R2 2 [nil]
+       9 [-]: GETIMPORT R2 2 [0xA94DF70B]
       10 [-]: NAMECALL R2 R2 K3 [0xE7AD2A85]
       11 [-]: CALL R2 1 1  
       12 [-]: MOVE R3 R1   
@@ -172,7 +172,7 @@ L 0:  12 [-]: GETIMPORT R1 11 [nil]
       20 [-]: GETUPVAL R6 4
       21 [-]: GETTABLEKS R5 R6 K6 ["mForcedVerticalSeparation"]
       22 [-]: MUL R3 R4 R5 
-      23 [-]: GETIMPORT R4 8 [nil]
+      23 [-]: GETIMPORT R4 8 [0xAE91E43B]
       24 [-]: LOADK R6 K9 ["Bg"]
       25 [-]: LOADN R7 13  
       26 [-]: LOADN R9 142 
@@ -189,8 +189,8 @@ L 0:  12 [-]: GETIMPORT R1 11 [nil]
 ; Is_vararg:       0
 ; Max Stack Size:  3
 
-       0 [-]: GETIMPORT R0 1 [nil]
-       1 [-]: GETIMPORT R2 3 [nil]
+       0 [-]: GETIMPORT R0 1 [0xAE91E43B]
+       1 [-]: GETIMPORT R2 3 [0x67652851]
        2 [-]: CALL R2 0 -1 
        3 [-]: NAMECALL R0 R0 K4 [0x8A8C8D5A]
        4 [-]: CALL R0 -1 0 
@@ -204,22 +204,22 @@ L 0:  12 [-]: GETIMPORT R1 11 [nil]
 ; Is_vararg:       0
 ; Max Stack Size:  9
 
-       0 [-]: GETIMPORT R0 1 [nil]
-       1 [-]: GETIMPORT R3 4 [nil]
+       0 [-]: GETIMPORT R0 1 [0xAE91E43B]
+       1 [-]: GETIMPORT R3 4 ["RadialSolarMapOpen"]
        2 [-]: JUMPXEQKB R3 1 L0
        3 [-]: LOADB R2 0 +1
 L 0:   4 [-]: LOADB R2 1   
 L 1:   5 [-]: NAMECALL R0 R0 K5 [0x2002E1DC]
        6 [-]: CALL R0 2 0  
-       7 [-]: GETIMPORT R0 1 [nil]
+       7 [-]: GETIMPORT R0 1 [0xAE91E43B]
        8 [-]: LOADN R2 0   
        9 [-]: NAMECALL R0 R0 K6 [0xC6A10AB1]
       10 [-]: CALL R0 2 0  
-      11 [-]: GETIMPORT R0 1 [nil]
+      11 [-]: GETIMPORT R0 1 [0xAE91E43B]
       12 [-]: LOADK R2 K7 [0.75]
       13 [-]: NAMECALL R0 R0 K8 [0x58BEC6D6]
       14 [-]: CALL R0 2 0  
-      15 [-]: GETIMPORT R0 10 [nil]
+      15 [-]: GETIMPORT R0 10 [0x76EA806B]
       16 [-]: LOADN R2 0   
       17 [-]: NAMECALL R0 R0 K11 [0x3F3AE64C]
       18 [-]: CALL R0 2 1  
@@ -228,56 +228,56 @@ L 1:   5 [-]: NAMECALL R0 R0 K5 [0x2002E1DC]
       21 [-]: SETUPVAL R0 0
       22 [-]: GETUPVAL R1 0
       23 [-]: FASTCALL1 62 R1 L2
-      24 [-]: GETIMPORT R0 14 [nil]
+      24 [-]: GETIMPORT R0 14 [0x7B998233]
       25 [-]: CALL R0 1 1  
 L 2:  26 [-]: JUMPIFNOT R0 L3
       27 [-]: RETURN R0 0  
-L 3:  28 [-]: GETIMPORT R1 16 [nil]
+L 3:  28 [-]: GETIMPORT R1 16 ["RelayReconPhaseInfo"]
       29 [-]: FASTCALL1 62 R1 L4
-      30 [-]: GETIMPORT R0 14 [nil]
+      30 [-]: GETIMPORT R0 14 [0x7B998233]
       31 [-]: CALL R0 1 1  
 L 4:  32 [-]: JUMPIFNOT R0 L5
-      33 [-]: GETIMPORT R0 1 [nil]
+      33 [-]: GETIMPORT R0 1 [0xAE91E43B]
       34 [-]: NAMECALL R0 R0 K17 [0x32302B4A]
       35 [-]: CALL R0 1 0  
       36 [-]: RETURN R0 0  
-L 5:  37 [-]: GETIMPORT R0 1 [nil]
+L 5:  37 [-]: GETIMPORT R0 1 [0xAE91E43B]
       38 [-]: LOADK R2 K18 ["BannerSeparator"]
       39 [-]: LOADN R3 10  
       40 [-]: LOADN R4 20  
       41 [-]: NAMECALL R0 R0 K19 [0x67BC869F]
       42 [-]: CALL R0 4 0  
-      43 [-]: GETIMPORT R0 1 [nil]
+      43 [-]: GETIMPORT R0 1 [0xAE91E43B]
       44 [-]: LOADK R2 K20 ["Bg"]
-      45 [-]: GETIMPORT R4 22 [nil]
+      45 [-]: GETIMPORT R4 22 [0x0032441C]
       46 [-]: GETTABLEKS R3 R4 K23 ["UIMaterial_RectangleNoDepth"]
       47 [-]: NAMECALL R0 R0 K24 [0xD5181643]
       48 [-]: CALL R0 3 0  
-      49 [-]: GETIMPORT R0 1 [nil]
+      49 [-]: GETIMPORT R0 1 [0xAE91E43B]
       50 [-]: LOADK R2 K20 ["Bg"]
       51 [-]: LOADK R3 K25 ["RectEdgeColor"]
-      52 [-]: GETIMPORT R6 22 [nil]
+      52 [-]: GETIMPORT R6 22 [0x0032441C]
       53 [-]: GETTABLEKS R5 R6 K26 ["UIColorObject_White"]
       54 [-]: GETTABLEKS R4 R5 K27 ["r"]
-      55 [-]: GETIMPORT R7 22 [nil]
+      55 [-]: GETIMPORT R7 22 [0x0032441C]
       56 [-]: GETTABLEKS R6 R7 K26 ["UIColorObject_White"]
       57 [-]: GETTABLEKS R5 R6 K28 ["g"]
-      58 [-]: GETIMPORT R8 22 [nil]
+      58 [-]: GETIMPORT R8 22 [0x0032441C]
       59 [-]: GETTABLEKS R7 R8 K26 ["UIColorObject_White"]
       60 [-]: GETTABLEKS R6 R7 K29 ["b"]
       61 [-]: LOADK R7 K30 [0.20000000000000001]
       62 [-]: NAMECALL R0 R0 K31 [0x91E13703]
       63 [-]: CALL R0 7 0  
-      64 [-]: GETIMPORT R0 1 [nil]
+      64 [-]: GETIMPORT R0 1 [0xAE91E43B]
       65 [-]: LOADK R2 K20 ["Bg"]
       66 [-]: LOADK R3 K32 ["RectInnerColor"]
-      67 [-]: GETIMPORT R6 22 [nil]
+      67 [-]: GETIMPORT R6 22 [0x0032441C]
       68 [-]: GETTABLEKS R5 R6 K33 ["UIColorObject_DarkBlue"]
       69 [-]: GETTABLEKS R4 R5 K27 ["r"]
-      70 [-]: GETIMPORT R7 22 [nil]
+      70 [-]: GETIMPORT R7 22 [0x0032441C]
       71 [-]: GETTABLEKS R6 R7 K33 ["UIColorObject_DarkBlue"]
       72 [-]: GETTABLEKS R5 R6 K28 ["g"]
-      73 [-]: GETIMPORT R8 22 [nil]
+      73 [-]: GETIMPORT R8 22 [0x0032441C]
       74 [-]: GETTABLEKS R7 R8 K33 ["UIColorObject_DarkBlue"]
       75 [-]: GETTABLEKS R6 R7 K29 ["b"]
       76 [-]: LOADK R7 K34 [0.25]
@@ -287,7 +287,7 @@ L 5:  37 [-]: GETIMPORT R0 1 [nil]
       80 [-]: CALL R0 0 0  
       81 [-]: GETUPVAL R0 2
       82 [-]: CALL R0 0 0  
-      83 [-]: GETIMPORT R0 35 [nil]
+      83 [-]: GETIMPORT R0 35 ["_T"]
       84 [-]: LOADNIL R1   
       85 [-]: SETTABLEKS R1 R0 K15 ["RelayReconPhaseInfo"]
       86 [-]: GETUPVAL R0 3

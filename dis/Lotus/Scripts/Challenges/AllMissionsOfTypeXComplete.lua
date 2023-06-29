@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  2
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x2D0FAD09]
        2 [-]: LOADK R1 K2 ["Lotus.Interface.LotusUtilities"]
        3 [-]: CALL R0 1 1  
        4 [-]: DUPCLOSURE R1 K3 []
@@ -34,15 +34,15 @@ L 0:   8 [-]: NAMECALL R7 R0 K2 [0xBE524B27]
       10 [-]: LOADN R8 0   
       11 [-]: FASTCALL1 62 R7 L1
       12 [-]: MOVE R10 R7  
-      13 [-]: GETIMPORT R9 4 [nil]
+      13 [-]: GETIMPORT R9 4 [0x7B998233]
       14 [-]: CALL R9 1 1  
 L 1:  15 [-]: JUMPIF R9 L3 
-      16 [-]: GETIMPORT R10 6 [nil]
+      16 [-]: GETIMPORT R10 6 [0x703BE01D]
       17 [-]: FASTCALL1 62 R10 L2
-      18 [-]: GETIMPORT R9 4 [nil]
+      18 [-]: GETIMPORT R9 4 [0x7B998233]
       19 [-]: CALL R9 1 1  
 L 2:  20 [-]: JUMPIF R9 L3 
-      21 [-]: GETIMPORT R11 6 [nil]
+      21 [-]: GETIMPORT R11 6 [0x703BE01D]
       22 [-]: NAMECALL R9 R7 K7 [0xD87C0114]
       23 [-]: CALL R9 2 1  
       24 [-]: MOVE R8 R9   
@@ -61,9 +61,9 @@ L 5:  33 [-]: GETTABLE R13 R6 R12
       36 [-]: CALL R15 1 1 
       37 [-]: NAMECALL R16 R14 K10 [0x243148D6]
       38 [-]: CALL R16 1 1 
-      39 [-]: GETIMPORT R17 12 [nil]
+      39 [-]: GETIMPORT R17 12 [0x7412F628]
       40 [-]: JUMPIFNOTEQ R15 R17 L6
-      41 [-]: GETIMPORT R17 14 [nil]
+      41 [-]: GETIMPORT R17 14 [0xAE93B30E]
       42 [-]: JUMPIFNOTEQ R16 R17 L6
       43 [-]: GETTABLEKS R17 R13 K15 ["missionsCompleted"]
       44 [-]: LOADN R18 0  

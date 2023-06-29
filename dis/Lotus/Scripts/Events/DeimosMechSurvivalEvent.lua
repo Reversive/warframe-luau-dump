@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  2
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x0469F296]
        2 [-]: LOADK R1 K2 ["MechSurvivalEventIntro"]
        3 [-]: CALL R0 1 1  
        4 [-]: DUPCLOSURE R1 K3 []
@@ -21,12 +21,12 @@
 ; Is_vararg:       0
 ; Max Stack Size:  3
 
-       0 [-]: GETIMPORT R0 1 [nil]
-       1 [-]: GETIMPORT R1 3 [nil]
+       0 [-]: GETIMPORT R0 1 ["_T"]
+       1 [-]: GETIMPORT R1 3 ["TaggedDialog"]
        2 [-]: JUMPIF R1 L0 
        3 [-]: NEWTABLE R1 0 0
 L 0:   4 [-]: SETTABLEKS R1 R0 K2 ["TaggedDialog"]
-       5 [-]: GETIMPORT R0 3 [nil]
+       5 [-]: GETIMPORT R0 3 ["TaggedDialog"]
        6 [-]: DUPTABLE R1 7
        7 [-]: DUPCLOSURE R2 K8 []
        8 [-]: SETTABLEKS R2 R1 K4 ["mCondition"]

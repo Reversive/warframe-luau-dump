@@ -5,10 +5,10 @@
 ; Is_vararg:       1
 ; Max Stack Size:  12
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x2D0FAD09]
        2 [-]: LOADK R1 K2 ["EE.Interface.Utilities"]
        3 [-]: CALL R0 1 1  
-       4 [-]: GETIMPORT R1 1 [nil]
+       4 [-]: GETIMPORT R1 1 [0x2D0FAD09]
        5 [-]: LOADK R2 K3 ["Lotus.Interface.LotusUtilities"]
        6 [-]: CALL R1 1 1  
        7 [-]: LOADNIL R2   
@@ -72,7 +72,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 [0xAE91E43B]
        1 [-]: NAMECALL R0 R0 K2 [0x32302B4A]
        2 [-]: CALL R0 1 0  
        3 [-]: RETURN R0 0  
@@ -95,12 +95,12 @@
        7 [-]: SETTABLEKS R4 R3 K2 ["CallOut"]
        8 [-]: FASTCALL2 52 R0 R3 L0
        9 [-]: MOVE R2 R0   
-      10 [-]: GETIMPORT R1 8 [nil]
+      10 [-]: GETIMPORT R1 8 [0x23D5322F]
       11 [-]: CALL R1 2 0  
-L 0:  12 [-]: GETIMPORT R1 11 [nil]
-      13 [-]: GETIMPORT R2 13 [nil]
+L 0:  12 [-]: GETIMPORT R1 11 ["SetButtons"]
+      13 [-]: GETIMPORT R2 13 [0xAE91E43B]
       14 [-]: MOVE R3 R0   
-      15 [-]: GETIMPORT R4 15 [nil]
+      15 [-]: GETIMPORT R4 15 [0xCD0165A3]
       16 [-]: LOADN R5 1   
       17 [-]: CALL R4 1 -1 
       18 [-]: CALL R1 -1 0 
@@ -114,12 +114,12 @@ L 0:  12 [-]: GETIMPORT R1 11 [nil]
 ; Is_vararg:       0
 ; Max Stack Size:  6
 
-       0 [-]: GETIMPORT R1 1 [nil]
+       0 [-]: GETIMPORT R1 1 [0xAE91E43B]
        1 [-]: NAMECALL R1 R1 K2 [0x33ABEE92]
        2 [-]: CALL R1 1 1  
        3 [-]: FASTCALL1 62 R1 L0
        4 [-]: MOVE R3 R1   
-       5 [-]: GETIMPORT R2 4 [nil]
+       5 [-]: GETIMPORT R2 4 [0x7B998233]
        6 [-]: CALL R2 1 1  
 L 0:   7 [-]: JUMPIF R2 L1 
        8 [-]: LOADK R4 K5 ["ShowHyperlinkItem"]
@@ -138,11 +138,11 @@ L 1:  14 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  7
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 [0x2D0FAD09]
        1 [-]: LOADK R1 K2 ["EE.Interface.Components.List"]
        2 [-]: CALL R0 1 1  
        3 [-]: GETTABLEKS R1 R0 K3 [0x9383BC56]
-       4 [-]: GETIMPORT R2 5 [nil]
+       4 [-]: GETIMPORT R2 5 [0xAE91E43B]
        5 [-]: LOADK R3 K6 ["MessageList.Element"]
        6 [-]: CALL R1 2 1  
        7 [-]: SETUPVAL R1 0
@@ -159,14 +159,14 @@ L 1:  14 [-]: RETURN R0 0
       18 [-]: LOADN R2 0   
       19 [-]: SETTABLEKS R2 R1 K12 ["mForcedHorizontalSeparation"]
       20 [-]: GETUPVAL R1 0
-      21 [-]: GETIMPORT R2 5 [nil]
+      21 [-]: GETIMPORT R2 5 [0xAE91E43B]
       22 [-]: LOADK R4 K13 ["MessageListMask"]
       23 [-]: LOADN R5 13  
       24 [-]: NAMECALL R2 R2 K14 [0x91A24E4B]
       25 [-]: CALL R2 3 1  
       26 [-]: SETTABLEKS R2 R1 K15 ["mVisibleHeight"]
       27 [-]: GETUPVAL R1 0
-      28 [-]: GETIMPORT R2 5 [nil]
+      28 [-]: GETIMPORT R2 5 [0xAE91E43B]
       29 [-]: LOADK R4 K16 ["MessageList"]
       30 [-]: LOADN R5 1   
       31 [-]: NAMECALL R2 R2 K14 [0x91A24E4B]
@@ -196,11 +196,11 @@ L 1:  14 [-]: RETURN R0 0
       55 [-]: DUPCLOSURE R2 K28 []
       56 [-]: MOVE R2 R1   
       57 [-]: SETTABLEKS R2 R1 K29 ["mElementDrawCallback"]
-      58 [-]: GETIMPORT R1 1 [nil]
+      58 [-]: GETIMPORT R1 1 [0x2D0FAD09]
       59 [-]: LOADK R2 K30 ["EE.Interface.Components.ScrollBar"]
       60 [-]: CALL R1 1 1  
       61 [-]: GETTABLEKS R2 R1 K31 [0x3B3EA08C]
-      62 [-]: GETIMPORT R3 5 [nil]
+      62 [-]: GETIMPORT R3 5 [0xAE91E43B]
       63 [-]: LOADK R4 K32 ["ScrollBar"]
       64 [-]: LOADN R5 600 
       65 [-]: LOADN R6 1   
@@ -216,7 +216,7 @@ L 1:  14 [-]: RETURN R0 0
       75 [-]: GETUPVAL R2 3
       76 [-]: NAMECALL R2 R2 K35 [0x687AE094]
       77 [-]: CALL R2 1 0  
-      78 [-]: GETIMPORT R2 5 [nil]
+      78 [-]: GETIMPORT R2 5 [0xAE91E43B]
       79 [-]: GETUPVAL R5 3
       80 [-]: GETTABLEKS R4 R5 K36 ["mClipName"]
       81 [-]: LOADN R5 11  
@@ -235,14 +235,14 @@ L 1:  14 [-]: RETURN R0 0
 
        0 [-]: GETUPVAL R1 0
        1 [-]: FASTCALL1 62 R1 L0
-       2 [-]: GETIMPORT R0 1 [nil]
+       2 [-]: GETIMPORT R0 1 [0x7B998233]
        3 [-]: CALL R0 1 1  
 L 0:   4 [-]: JUMPIF R0 L2 
-       5 [-]: GETIMPORT R2 3 [nil]
+       5 [-]: GETIMPORT R2 3 ["_T"]
        6 [-]: GETUPVAL R3 0
        7 [-]: GETTABLE R1 R2 R3
        8 [-]: FASTCALL1 62 R1 L1
-       9 [-]: GETIMPORT R0 1 [nil]
+       9 [-]: GETIMPORT R0 1 [0x7B998233]
       10 [-]: CALL R0 1 1  
 L 1:  11 [-]: JUMPIFNOT R0 L3
 L 2:  12 [-]: RETURN R0 0  
@@ -251,7 +251,7 @@ L 3:  13 [-]: GETUPVAL R0 1
       15 [-]: LOADB R3 1   
       16 [-]: NAMECALL R0 R0 K4 [0x7C09C373]
       17 [-]: CALL R0 3 0  
-      18 [-]: GETIMPORT R1 3 [nil]
+      18 [-]: GETIMPORT R1 3 ["_T"]
       19 [-]: GETUPVAL R2 0
       20 [-]: GETTABLE R0 R1 R2
       21 [-]: CALL R0 0 1  
@@ -285,17 +285,17 @@ L 5:  38 [-]: GETUPVAL R1 1
       49 [-]: CALL R1 -1 1 
       50 [-]: FASTCALL1 62 R1 L6
       51 [-]: MOVE R3 R1   
-      52 [-]: GETIMPORT R2 1 [nil]
+      52 [-]: GETIMPORT R2 1 [0x7B998233]
       53 [-]: CALL R2 1 1  
 L 6:  54 [-]: JUMPIF R2 L13
       55 [-]: GETTABLEKS R2 R1 K12 ["mClipName"]
       56 [-]: JUMPXEQKNIL R2 L13
-      57 [-]: GETIMPORT R2 14 [nil]
+      57 [-]: GETIMPORT R2 14 [0xAE91E43B]
       58 [-]: GETTABLEKS R4 R1 K12 ["mClipName"]
       59 [-]: LOADN R5 1   
       60 [-]: NAMECALL R2 R2 K15 [0x91A24E4B]
       61 [-]: CALL R2 3 1  
-      62 [-]: GETIMPORT R3 14 [nil]
+      62 [-]: GETIMPORT R3 14 [0xAE91E43B]
       63 [-]: GETTABLEKS R6 R1 K12 ["mClipName"]
       64 [-]: LOADK R7 K16 [".Bg"]
       65 [-]: CONCAT R5 R6 R7
@@ -305,7 +305,7 @@ L 6:  54 [-]: JUMPIF R2 L13
       69 [-]: GETUPVAL R4 1
       70 [-]: SUB R6 R2 R3 
       71 [-]: FASTCALL1 2 R6 L7
-      72 [-]: GETIMPORT R5 19 [nil]
+      72 [-]: GETIMPORT R5 19 [0xE4A5B3CA]
       73 [-]: CALL R5 1 1  
 L 7:  74 [-]: SETTABLEKS R5 R4 K20 ["mTotalHeight"]
       75 [-]: GETUPVAL R5 1
@@ -313,7 +313,7 @@ L 7:  74 [-]: SETTABLEKS R5 R4 K20 ["mTotalHeight"]
       77 [-]: GETUPVAL R6 1
       78 [-]: GETTABLEKS R5 R6 K21 ["mVisibleHeight"]
       79 [-]: JUMPIFNOTLT R5 R4 L8
-      80 [-]: GETIMPORT R4 14 [nil]
+      80 [-]: GETIMPORT R4 14 [0xAE91E43B]
       81 [-]: GETUPVAL R7 2
       82 [-]: GETTABLEKS R6 R7 K12 ["mClipName"]
       83 [-]: LOADN R7 11  
@@ -344,11 +344,11 @@ L 8: 103 [-]: GETUPVAL R6 1
      108 [-]: GETUPVAL R9 1
      109 [-]: GETTABLEKS R8 R9 K26 ["mForcedVerticalSeparation"]
      110 [-]: FASTCALL1 2 R8 L9
-     111 [-]: GETIMPORT R7 19 [nil]
+     111 [-]: GETIMPORT R7 19 [0xE4A5B3CA]
      112 [-]: CALL R7 1 1  
 L 9: 113 [-]: DIV R6 R4 R7 
      114 [-]: FASTCALL1 7 R6 L10
-     115 [-]: GETIMPORT R5 28 [nil]
+     115 [-]: GETIMPORT R5 28 [0x99675E23]
      116 [-]: CALL R5 1 1  
 L10: 117 [-]: LOADN R8 1   
      118 [-]: MOVE R6 R5   
@@ -378,50 +378,50 @@ L13: 135 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  9
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 [0xAE91E43B]
        1 [-]: LOADN R2 0   
        2 [-]: NAMECALL R0 R0 K2 [0xC6A10AB1]
        3 [-]: CALL R0 2 0  
-       4 [-]: GETIMPORT R0 1 [nil]
+       4 [-]: GETIMPORT R0 1 [0xAE91E43B]
        5 [-]: LOADK R2 K3 [0.90000000000000002]
        6 [-]: NAMECALL R0 R0 K4 [0x58BEC6D6]
        7 [-]: CALL R0 2 0  
        8 [-]: GETUPVAL R1 0
        9 [-]: GETTABLEKS R0 R1 K5 [0xDD3CFB64]
-      10 [-]: GETIMPORT R1 1 [nil]
+      10 [-]: GETIMPORT R1 1 [0xAE91E43B]
       11 [-]: LOADK R2 K6 ["Bluer"]
       12 [-]: CALL R0 2 0  
-      13 [-]: GETIMPORT R0 1 [nil]
+      13 [-]: GETIMPORT R0 1 [0xAE91E43B]
       14 [-]: LOADK R2 K7 ["Bg"]
-      15 [-]: GETIMPORT R4 9 [nil]
+      15 [-]: GETIMPORT R4 9 [0x0032441C]
       16 [-]: GETTABLEKS R3 R4 K10 ["UIMaterial_RectangleNoDepth"]
       17 [-]: NAMECALL R0 R0 K11 [0xD5181643]
       18 [-]: CALL R0 3 0  
-      19 [-]: GETIMPORT R0 1 [nil]
+      19 [-]: GETIMPORT R0 1 [0xAE91E43B]
       20 [-]: LOADK R2 K7 ["Bg"]
       21 [-]: LOADK R3 K12 ["RectInnerColor"]
-      22 [-]: GETIMPORT R6 9 [nil]
+      22 [-]: GETIMPORT R6 9 [0x0032441C]
       23 [-]: GETTABLEKS R5 R6 K13 ["UIColorObject_White"]
       24 [-]: GETTABLEKS R4 R5 K14 ["r"]
-      25 [-]: GETIMPORT R7 9 [nil]
+      25 [-]: GETIMPORT R7 9 [0x0032441C]
       26 [-]: GETTABLEKS R6 R7 K13 ["UIColorObject_White"]
       27 [-]: GETTABLEKS R5 R6 K15 ["g"]
-      28 [-]: GETIMPORT R8 9 [nil]
+      28 [-]: GETIMPORT R8 9 [0x0032441C]
       29 [-]: GETTABLEKS R7 R8 K13 ["UIColorObject_White"]
       30 [-]: GETTABLEKS R6 R7 K16 ["b"]
       31 [-]: LOADK R7 K17 [0.029999999999999999]
       32 [-]: NAMECALL R0 R0 K18 [0x91E13703]
       33 [-]: CALL R0 7 0  
-      34 [-]: GETIMPORT R0 1 [nil]
+      34 [-]: GETIMPORT R0 1 [0xAE91E43B]
       35 [-]: LOADK R2 K7 ["Bg"]
       36 [-]: LOADK R3 K19 ["RectEdgeColor"]
-      37 [-]: GETIMPORT R6 9 [nil]
+      37 [-]: GETIMPORT R6 9 [0x0032441C]
       38 [-]: GETTABLEKS R5 R6 K13 ["UIColorObject_White"]
       39 [-]: GETTABLEKS R4 R5 K14 ["r"]
-      40 [-]: GETIMPORT R7 9 [nil]
+      40 [-]: GETIMPORT R7 9 [0x0032441C]
       41 [-]: GETTABLEKS R6 R7 K13 ["UIColorObject_White"]
       42 [-]: GETTABLEKS R5 R6 K15 ["g"]
-      43 [-]: GETIMPORT R8 9 [nil]
+      43 [-]: GETIMPORT R8 9 [0x0032441C]
       44 [-]: GETTABLEKS R7 R8 K13 ["UIColorObject_White"]
       45 [-]: GETTABLEKS R6 R7 K16 ["b"]
       46 [-]: LOADK R7 K20 [0.25]
@@ -443,7 +443,7 @@ L13: 135 [-]: RETURN R0 0
 
        0 [-]: GETUPVAL R3 0
        1 [-]: GETTABLEKS R2 R3 K0 [0xDD3CFB64]
-       2 [-]: GETIMPORT R3 2 [nil]
+       2 [-]: GETIMPORT R3 2 [0xAE91E43B]
        3 [-]: LOADK R4 K3 ["Bluer"]
        4 [-]: CALL R2 2 0  
        5 [-]: RETURN R0 0  
@@ -456,8 +456,8 @@ L13: 135 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  3
 
-       0 [-]: GETIMPORT R0 1 [nil]
-       1 [-]: GETIMPORT R2 3 [nil]
+       0 [-]: GETIMPORT R0 1 [0xAE91E43B]
+       1 [-]: GETIMPORT R2 3 [0xB693B6C1]
        2 [-]: CALL R2 0 -1 
        3 [-]: NAMECALL R0 R0 K4 [0x8A8C8D5A]
        4 [-]: CALL R0 -1 0 
@@ -473,17 +473,17 @@ L13: 135 [-]: RETURN R0 0
 
        0 [-]: GETUPVAL R1 0
        1 [-]: FASTCALL1 62 R1 L0
-       2 [-]: GETIMPORT R0 1 [nil]
+       2 [-]: GETIMPORT R0 1 [0x7B998233]
        3 [-]: CALL R0 1 1  
 L 0:   4 [-]: JUMPIF R0 L2 
-       5 [-]: GETIMPORT R2 3 [nil]
+       5 [-]: GETIMPORT R2 3 ["_T"]
        6 [-]: GETUPVAL R3 0
        7 [-]: GETTABLE R1 R2 R3
        8 [-]: FASTCALL1 62 R1 L1
-       9 [-]: GETIMPORT R0 1 [nil]
+       9 [-]: GETIMPORT R0 1 [0x7B998233]
       10 [-]: CALL R0 1 1  
 L 1:  11 [-]: JUMPIF R0 L2 
-      12 [-]: GETIMPORT R1 3 [nil]
+      12 [-]: GETIMPORT R1 3 ["_T"]
       13 [-]: GETUPVAL R2 0
       14 [-]: GETTABLE R0 R1 R2
       15 [-]: CALL R0 0 0  
@@ -523,11 +523,11 @@ L 2:  16 [-]: RETURN R0 0
 
        0 [-]: GETUPVAL R2 0
        1 [-]: FASTCALL1 62 R2 L0
-       2 [-]: GETIMPORT R1 1 [nil]
+       2 [-]: GETIMPORT R1 1 [0x7B998233]
        3 [-]: CALL R1 1 1  
 L 0:   4 [-]: JUMPIF R1 L1 
        5 [-]: GETUPVAL R1 0
-       6 [-]: GETIMPORT R3 3 [nil]
+       6 [-]: GETIMPORT R3 3 [0x03F57322]
        7 [-]: MOVE R4 R0   
        8 [-]: CALL R3 1 -1 
        9 [-]: NAMECALL R1 R1 K4 [0x070DAA5A]
@@ -544,11 +544,11 @@ L 1:  11 [-]: RETURN R0 0
 
        0 [-]: GETUPVAL R2 0
        1 [-]: FASTCALL1 62 R2 L0
-       2 [-]: GETIMPORT R1 1 [nil]
+       2 [-]: GETIMPORT R1 1 [0x7B998233]
        3 [-]: CALL R1 1 1  
 L 0:   4 [-]: JUMPIF R1 L1 
        5 [-]: GETUPVAL R1 0
-       6 [-]: GETIMPORT R3 3 [nil]
+       6 [-]: GETIMPORT R3 3 [0x03F57322]
        7 [-]: MOVE R4 R0   
        8 [-]: CALL R3 1 -1 
        9 [-]: NAMECALL R1 R1 K4 [0xDF42446E]
@@ -565,11 +565,11 @@ L 1:  11 [-]: RETURN R0 0
 
        0 [-]: GETUPVAL R2 0
        1 [-]: FASTCALL1 62 R2 L0
-       2 [-]: GETIMPORT R1 1 [nil]
+       2 [-]: GETIMPORT R1 1 [0x7B998233]
        3 [-]: CALL R1 1 1  
 L 0:   4 [-]: JUMPIF R1 L1 
        5 [-]: GETUPVAL R1 0
-       6 [-]: GETIMPORT R3 3 [nil]
+       6 [-]: GETIMPORT R3 3 [0x03F57322]
        7 [-]: MOVE R4 R0   
        8 [-]: CALL R3 1 -1 
        9 [-]: NAMECALL R1 R1 K4 [0xBCE5A201]
@@ -586,14 +586,14 @@ L 1:  11 [-]: RETURN R0 0
 
        0 [-]: GETUPVAL R3 0
        1 [-]: FASTCALL1 62 R3 L0
-       2 [-]: GETIMPORT R2 1 [nil]
+       2 [-]: GETIMPORT R2 1 [0x7B998233]
        3 [-]: CALL R2 1 1  
 L 0:   4 [-]: JUMPIF R2 L1 
        5 [-]: GETUPVAL R2 0
-       6 [-]: GETIMPORT R4 3 [nil]
+       6 [-]: GETIMPORT R4 3 [0x03F57322]
        7 [-]: MOVE R5 R1   
        8 [-]: CALL R4 1 1  
-       9 [-]: GETIMPORT R6 5 [nil]
+       9 [-]: GETIMPORT R6 5 [0x0032441C]
       10 [-]: GETTABLEKS R5 R6 K6 ["UISound_Scroll"]
       11 [-]: NAMECALL R2 R2 K7 [0x30456F58]
       12 [-]: CALL R2 3 0  

@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  1
 
-            1 [-]: DUPCLOSURE R0 K0 []
+       1 [-]: DUPCLOSURE R0 K0 []
        2 [-]: SETGLOBAL R0 K1 ["MatchTagEvent"]
        3 [-]: RETURN R0 0  
 
@@ -17,16 +17,16 @@
 ; Is_vararg:       0
 ; Max Stack Size:  8
 
-       0 [-]: GETIMPORT R2 1 [nil]
+       0 [-]: GETIMPORT R2 1 [0x722C04D2]
        1 [-]: NAMECALL R2 R2 K2 [0x56C01834]
        2 [-]: CALL R2 1 1  
        3 [-]: JUMPIFNOT R2 L1
-       4 [-]: GETIMPORT R3 5 [nil]
-       5 [-]: GETIMPORT R4 7 [nil]
+       4 [-]: GETIMPORT R3 5 [0xA5C556B9]
+       5 [-]: GETIMPORT R4 7 [0x64FB1586]
        6 [-]: MOVE R5 R1   
        7 [-]: CALL R4 1 1  
-       8 [-]: GETIMPORT R5 7 [nil]
-       9 [-]: GETIMPORT R6 1 [nil]
+       8 [-]: GETIMPORT R5 7 [0x64FB1586]
+       9 [-]: GETIMPORT R6 1 [0x722C04D2]
       10 [-]: CALL R5 1 1  
       11 [-]: LOADN R6 1   
       12 [-]: LOADB R7 1   

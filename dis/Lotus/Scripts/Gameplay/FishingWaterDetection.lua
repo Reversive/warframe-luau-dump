@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  4
 
-            1 [-]: DUPCLOSURE R0 K0 []
+       1 [-]: DUPCLOSURE R0 K0 []
        2 [-]: DUPCLOSURE R1 K1 []
        3 [-]: DUPCLOSURE R2 K2 []
        4 [-]: DUPCLOSURE R3 K3 []
@@ -31,15 +31,15 @@
 ; Is_vararg:       0
 ; Max Stack Size:  8
 
-       0 [-]: GETIMPORT R4 2 [nil]
+       0 [-]: GETIMPORT R4 2 ["gFishing"]
        1 [-]: JUMPIFNOT R4 L0
-       2 [-]: GETIMPORT R4 4 [nil]
+       2 [-]: GETIMPORT R4 4 ["levelData"]
        3 [-]: JUMPIFNOT R4 L0
-       4 [-]: GETIMPORT R5 4 [nil]
+       4 [-]: GETIMPORT R5 4 ["levelData"]
        5 [-]: GETTABLEKS R4 R5 K5 ["freshBait"]
        6 [-]: JUMPIF R4 L1 
 L 0:   7 [-]: RETURN R0 0  
-L 1:   8 [-]: GETIMPORT R6 4 [nil]
+L 1:   8 [-]: GETIMPORT R6 4 ["levelData"]
        9 [-]: GETTABLEKS R5 R6 K5 ["freshBait"]
       10 [-]: DUPTABLE R6 10
       11 [-]: SETTABLEKS R0 R6 K6 ["bait"]
@@ -48,7 +48,7 @@ L 1:   8 [-]: GETIMPORT R6 4 [nil]
       14 [-]: GETTABLEKS R7 R1 K11 ["y"]
       15 [-]: SETTABLEKS R7 R6 K9 ["surface"]
       16 [-]: FASTCALL2 52 R5 R6 L2
-      17 [-]: GETIMPORT R4 14 [nil]
+      17 [-]: GETIMPORT R4 14 [0x23D5322F]
       18 [-]: CALL R4 2 0  
 L 2:  19 [-]: RETURN R0 0  
 
@@ -62,15 +62,15 @@ L 2:  19 [-]: RETURN R0 0
 
        0 [-]: NAMECALL R2 R0 K0 [0xD4DCB570]
        1 [-]: CALL R2 1 1  
-       2 [-]: GETIMPORT R3 3 [nil]
+       2 [-]: GETIMPORT R3 3 ["gFishing"]
        3 [-]: JUMPIFNOT R3 L0
-       4 [-]: GETIMPORT R3 5 [nil]
+       4 [-]: GETIMPORT R3 5 ["levelData"]
        5 [-]: JUMPIFNOT R3 L0
-       6 [-]: GETIMPORT R4 5 [nil]
+       6 [-]: GETIMPORT R4 5 ["levelData"]
        7 [-]: GETTABLEKS R3 R4 K6 ["perceptions"]
        8 [-]: JUMPIF R3 L1 
 L 0:   9 [-]: RETURN R0 0  
-L 1:  10 [-]: GETIMPORT R5 5 [nil]
+L 1:  10 [-]: GETIMPORT R5 5 ["levelData"]
       11 [-]: GETTABLEKS R4 R5 K6 ["perceptions"]
       12 [-]: DUPTABLE R5 11
       13 [-]: LOADN R6 2   
@@ -81,7 +81,7 @@ L 1:  10 [-]: GETIMPORT R5 5 [nil]
       18 [-]: CALL R6 1 1  
       19 [-]: SETTABLEKS R6 R5 K10 ["sourceType"]
       20 [-]: FASTCALL2 52 R4 R5 L2
-      21 [-]: GETIMPORT R3 15 [nil]
+      21 [-]: GETIMPORT R3 15 [0x23D5322F]
       22 [-]: CALL R3 2 0  
 L 2:  23 [-]: RETURN R0 0  
 
@@ -93,33 +93,33 @@ L 2:  23 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  9
 
-       0 [-]: GETIMPORT R2 2 [nil]
+       0 [-]: GETIMPORT R2 2 ["gFishing"]
        1 [-]: JUMPIFNOT R2 L0
-       2 [-]: GETIMPORT R2 4 [nil]
+       2 [-]: GETIMPORT R2 4 ["levelData"]
        3 [-]: JUMPIFNOT R2 L0
-       4 [-]: GETIMPORT R3 4 [nil]
+       4 [-]: GETIMPORT R3 4 ["levelData"]
        5 [-]: GETTABLEKS R2 R3 K5 ["perceptions"]
        6 [-]: JUMPIF R2 L1 
 L 0:   7 [-]: RETURN R0 0  
-L 1:   8 [-]: GETIMPORT R4 4 [nil]
+L 1:   8 [-]: GETIMPORT R4 4 ["levelData"]
        9 [-]: GETTABLEKS R3 R4 K5 ["perceptions"]
       10 [-]: DUPTABLE R4 8
       11 [-]: LOADN R5 5   
       12 [-]: SETTABLEKS R5 R4 K6 ["pType"]
       13 [-]: SETTABLEKS R1 R4 K7 ["pos"]
       14 [-]: FASTCALL2 52 R3 R4 L2
-      15 [-]: GETIMPORT R2 11 [nil]
+      15 [-]: GETIMPORT R2 11 [0x23D5322F]
       16 [-]: CALL R2 2 0  
 L 2:  17 [-]: NAMECALL R2 R0 K12 [0xA5E492D4]
       18 [-]: CALL R2 1 1  
       19 [-]: JUMPIFNOT R2 L7
-      20 [-]: GETIMPORT R3 4 [nil]
+      20 [-]: GETIMPORT R3 4 ["levelData"]
       21 [-]: GETTABLEKS R2 R3 K13 ["avatarsInWater"]
       22 [-]: JUMPIF R2 L3 
-      23 [-]: GETIMPORT R2 4 [nil]
+      23 [-]: GETIMPORT R2 4 ["levelData"]
       24 [-]: NEWTABLE R3 0 0
       25 [-]: SETTABLEKS R3 R2 K13 ["avatarsInWater"]
-L 3:  26 [-]: GETIMPORT R3 4 [nil]
+L 3:  26 [-]: GETIMPORT R3 4 ["levelData"]
       27 [-]: GETTABLEKS R2 R3 K13 ["avatarsInWater"]
       28 [-]: LOADB R3 0   
       29 [-]: LOADN R6 1   
@@ -149,7 +149,7 @@ L 6:  41 [-]: JUMPIF R3 L7
       52 [-]: SETTABLEKS R7 R6 K19 ["lastPostureModifiers"]
       53 [-]: FASTCALL2 52 R2 R6 L7
       54 [-]: MOVE R5 R2   
-      55 [-]: GETIMPORT R4 11 [nil]
+      55 [-]: GETIMPORT R4 11 [0x23D5322F]
       56 [-]: CALL R4 2 0  
 L 7:  57 [-]: RETURN R0 0  
 
@@ -161,12 +161,12 @@ L 7:  57 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  8
 
-       0 [-]: GETIMPORT R2 2 [nil]
+       0 [-]: GETIMPORT R2 2 ["gFishing"]
        1 [-]: JUMPIF R2 L0 
        2 [-]: RETURN R0 0  
 L 0:   3 [-]: NAMECALL R2 R1 K3 [0xD1586535]
        4 [-]: CALL R2 1 1  
-       5 [-]: GETIMPORT R5 5 [nil]
+       5 [-]: GETIMPORT R5 5 [0x13C0BCD8]
        6 [-]: NAMECALL R3 R1 K6 [0xF2DEAF69]
        7 [-]: CALL R3 2 1  
        8 [-]: JUMPIFNOT R3 L1
@@ -175,7 +175,7 @@ L 0:   3 [-]: NAMECALL R2 R1 K3 [0xD1586535]
       11 [-]: MOVE R5 R2   
       12 [-]: CALL R3 2 0  
       13 [-]: RETURN R0 0  
-L 1:  14 [-]: GETIMPORT R5 8 [nil]
+L 1:  14 [-]: GETIMPORT R5 8 [0xAB1E9B71]
       15 [-]: NAMECALL R3 R1 K6 [0xF2DEAF69]
       16 [-]: CALL R3 2 1  
       17 [-]: JUMPIFNOT R3 L2
@@ -184,7 +184,7 @@ L 1:  14 [-]: GETIMPORT R5 8 [nil]
       20 [-]: CALL R5 1 1  
       21 [-]: GETTABLEKS R4 R5 K9 ["y"]
       22 [-]: SETTABLEKS R4 R2 K9 ["y"]
-      23 [-]: GETIMPORT R4 11 [nil]
+      23 [-]: GETIMPORT R4 11 [0x89326C93]
       24 [-]: MOVE R6 R2   
       25 [-]: LOADB R7 0   
       26 [-]: NAMECALL R4 R4 K12 [0x62F9D8D2]
@@ -197,7 +197,7 @@ L 1:  14 [-]: GETIMPORT R5 8 [nil]
       33 [-]: MOVE R7 R0   
       34 [-]: CALL R4 3 0  
       35 [-]: RETURN R0 0  
-L 2:  36 [-]: GETIMPORT R5 14 [nil]
+L 2:  36 [-]: GETIMPORT R5 14 ["gBaseAvatarType"]
       37 [-]: NAMECALL R3 R1 K6 [0xF2DEAF69]
       38 [-]: CALL R3 2 1  
       39 [-]: JUMPIFNOT R3 L3
@@ -219,10 +219,10 @@ L 3:  44 [-]: RETURN R0 0
        1 [-]: CALL R2 1 1  
        2 [-]: FASTCALL1 62 R2 L0
        3 [-]: MOVE R4 R2   
-       4 [-]: GETIMPORT R3 2 [nil]
+       4 [-]: GETIMPORT R3 2 [0x7B998233]
        5 [-]: CALL R3 1 1  
 L 0:   6 [-]: JUMPIF R3 L1 
-       7 [-]: GETIMPORT R5 4 [nil]
+       7 [-]: GETIMPORT R5 4 ["gRiverFishingSplineType"]
        8 [-]: NAMECALL R3 R2 K5 [0xF2DEAF69]
        9 [-]: CALL R3 2 1  
       10 [-]: JUMPIFNOT R3 L1
@@ -246,10 +246,10 @@ L 1:  17 [-]: RETURN R0 0
        1 [-]: CALL R2 1 1  
        2 [-]: FASTCALL1 62 R2 L0
        3 [-]: MOVE R4 R2   
-       4 [-]: GETIMPORT R3 2 [nil]
+       4 [-]: GETIMPORT R3 2 [0x7B998233]
        5 [-]: CALL R3 1 1  
 L 0:   6 [-]: JUMPIF R3 L1 
-       7 [-]: GETIMPORT R5 4 [nil]
+       7 [-]: GETIMPORT R5 4 ["gRiverFishingSplineType"]
        8 [-]: NAMECALL R3 R2 K5 [0xF2DEAF69]
        9 [-]: CALL R3 2 1  
       10 [-]: JUMPIFNOT R3 L1
@@ -271,19 +271,19 @@ L 1:  19 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  9
 
-       0 [-]: GETIMPORT R2 2 [nil]
+       0 [-]: GETIMPORT R2 2 ["gFishing"]
        1 [-]: JUMPIFNOT R2 L0
-       2 [-]: GETIMPORT R2 4 [nil]
+       2 [-]: GETIMPORT R2 4 ["levelData"]
        3 [-]: JUMPIFNOT R2 L0
-       4 [-]: GETIMPORT R3 4 [nil]
+       4 [-]: GETIMPORT R3 4 ["levelData"]
        5 [-]: GETTABLEKS R2 R3 K5 ["avatarsInWater"]
        6 [-]: JUMPIF R2 L1 
 L 0:   7 [-]: RETURN R0 0  
-L 1:   8 [-]: GETIMPORT R4 7 [nil]
+L 1:   8 [-]: GETIMPORT R4 7 ["gBaseAvatarType"]
        9 [-]: NAMECALL R2 R1 K8 [0xF2DEAF69]
       10 [-]: CALL R2 2 1  
       11 [-]: JUMPIFNOT R2 L4
-      12 [-]: GETIMPORT R3 4 [nil]
+      12 [-]: GETIMPORT R3 4 ["levelData"]
       13 [-]: GETTABLEKS R2 R3 K5 ["avatarsInWater"]
       14 [-]: LOADN R5 1   
       15 [-]: LENGTH R3 R2 
@@ -292,7 +292,7 @@ L 1:   8 [-]: GETIMPORT R4 7 [nil]
 L 2:  18 [-]: GETTABLE R7 R2 R5
       19 [-]: GETTABLEKS R6 R7 K9 ["avatar"]
       20 [-]: JUMPIFNOTEQ R6 R1 L3
-      21 [-]: GETIMPORT R6 12 [nil]
+      21 [-]: GETIMPORT R6 12 [0x9C1F3B5A]
       22 [-]: MOVE R7 R2   
       23 [-]: MOVE R8 R5   
       24 [-]: CALL R6 2 0  

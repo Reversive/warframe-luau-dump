@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  4
 
-            1 [-]: LOADNIL R0   
+       1 [-]: LOADNIL R0   
        2 [-]: DUPCLOSURE R1 K0 []
        3 [-]: NEWCLOSURE R2 P1
        4 [-]: MOVE R1 R0   
@@ -46,8 +46,8 @@ L 0:   6 [-]: GETGLOBAL R1 K0 [0xBD769ABC]
 
        0 [-]: NEWTABLE R1 0 0
        1 [-]: JUMPIFNOT R0 L2
-       2 [-]: GETIMPORT R2 1 [nil]
-       3 [-]: GETIMPORT R4 3 [nil]
+       2 [-]: GETIMPORT R2 1 [0x89326C93]
+       3 [-]: GETIMPORT R4 3 [0xEC496CDF]
        4 [-]: NAMECALL R2 R2 K4 [0xFB669000]
        5 [-]: CALL R2 2 1  
        6 [-]: LOADN R5 1   
@@ -56,29 +56,29 @@ L 0:   6 [-]: GETGLOBAL R1 K0 [0xBD769ABC]
        9 [-]: FORNPREP R3 L3
 L 0:  10 [-]: MOVE R7 R1   
       11 [-]: GETTABLE R8 R2 R5
-      12 [-]: GETIMPORT R10 6 [nil]
+      12 [-]: GETIMPORT R10 6 [0x520E413D]
       13 [-]: LOADB R11 0  
       14 [-]: LOADN R12 1  
       15 [-]: LOADB R13 0  
       16 [-]: NAMECALL R8 R8 K7 [0x659D451F]
       17 [-]: CALL R8 5 -1 
       18 [-]: FASTCALL 52 L1
-      19 [-]: GETIMPORT R6 10 [nil]
+      19 [-]: GETIMPORT R6 10 [0x23D5322F]
       20 [-]: CALL R6 -1 0 
 L 1:  21 [-]: FORNLOOP R3 L0
       22 [-]: JUMP L3
      
-L 2:  23 [-]: GETIMPORT R2 12 [nil]
+L 2:  23 [-]: GETIMPORT R2 12 [0xA655E247]
       24 [-]: LOADK R4 K13 ["Enable"]
       25 [-]: NAMECALL R2 R2 K14 [0x8EB2112D]
       26 [-]: CALL R2 2 0  
-L 3:  27 [-]: GETIMPORT R2 17 [nil]
+L 3:  27 [-]: GETIMPORT R2 17 ["curTransmission"]
       28 [-]: GETUPVAL R3 0
       29 [-]: JUMPIFEQ R2 R3 L4
-      30 [-]: GETIMPORT R2 19 [nil]
+      30 [-]: GETIMPORT R2 19 ["CurrentInWorldTransmission"]
       31 [-]: GETUPVAL R3 0
       32 [-]: JUMPIFNOTEQ R2 R3 L5
-L 4:  33 [-]: GETIMPORT R2 21 [nil]
+L 4:  33 [-]: GETIMPORT R2 21 [0xCBD666E1]
       34 [-]: LOADN R3 0   
       35 [-]: CALL R2 1 0  
       36 [-]: JUMPBACK L3  
@@ -88,7 +88,7 @@ L 5:  37 [-]: LOADN R4 1
       40 [-]: FORNPREP R2 L9
 L 6:  41 [-]: GETTABLE R6 R1 R4
       42 [-]: FASTCALL1 62 R6 L7
-      43 [-]: GETIMPORT R5 23 [nil]
+      43 [-]: GETIMPORT R5 23 [0x7B998233]
       44 [-]: CALL R5 1 1  
 L 7:  45 [-]: JUMPIF R5 L8 
       46 [-]: GETTABLE R5 R1 R4
@@ -107,21 +107,21 @@ L 9:  51 [-]: RETURN R0 0
 ; Max Stack Size:  4
 
        0 [-]: GETGLOBAL R0 K0 [0xBD769ABC]
-       1 [-]: GETIMPORT R2 2 [nil]
+       1 [-]: GETIMPORT R2 2 ["gLotusEffectDecorationType"]
        2 [-]: NAMECALL R0 R0 K3 [0xC9F6A7D7]
        3 [-]: CALL R0 2 1  
        4 [-]: SETGLOBAL R0 K0 [0xBD769ABC]
-       5 [-]: GETIMPORT R0 6 [nil]
+       5 [-]: GETIMPORT R0 6 ["curTransmission"]
        6 [-]: JUMPIF R0 L0 
-       7 [-]: GETIMPORT R0 8 [nil]
+       7 [-]: GETIMPORT R0 8 ["CurrentInWorldTransmission"]
 L 0:   8 [-]: SETUPVAL R0 0
-L 1:   9 [-]: GETIMPORT R1 8 [nil]
+L 1:   9 [-]: GETIMPORT R1 8 ["CurrentInWorldTransmission"]
       10 [-]: GETUPVAL R2 0
       11 [-]: JUMPIFEQ R1 R2 L2
       12 [-]: LOADB R0 0 +1
 L 2:  13 [-]: LOADB R0 1   
 L 3:  14 [-]: JUMPIF R0 L4 
-      15 [-]: GETIMPORT R1 6 [nil]
+      15 [-]: GETIMPORT R1 6 ["curTransmission"]
       16 [-]: GETUPVAL R2 0
       17 [-]: JUMPIFNOTEQ R1 R2 L7
 L 4:  18 [-]: JUMPIFNOT R0 L5
@@ -138,7 +138,7 @@ L 5:  24 [-]: GETGLOBAL R1 K0 [0xBD769ABC]
 L 6:  28 [-]: GETUPVAL R1 1
       29 [-]: MOVE R2 R0   
       30 [-]: CALL R1 1 0  
-L 7:  31 [-]: GETIMPORT R1 13 [nil]
+L 7:  31 [-]: GETIMPORT R1 13 [0xCBD666E1]
       32 [-]: LOADN R2 0   
       33 [-]: CALL R1 1 0  
       34 [-]: JUMPBACK L1  

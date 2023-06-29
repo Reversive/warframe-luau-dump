@@ -5,10 +5,10 @@
 ; Is_vararg:       1
 ; Max Stack Size:  3
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x88EFC25E]
        2 [-]: LOADK R1 K2 ["/Lotus/Upgrades/Skins/RestrainingBolt/RestrainingBoltVor"]
        3 [-]: CALL R0 1 1  
-       4 [-]: GETIMPORT R1 1 [nil]
+       4 [-]: GETIMPORT R1 1 [0x88EFC25E]
        5 [-]: LOADK R2 K3 ["/Lotus/Upgrades/Skins/RestrainingBolt/RestrainingBoltLegAttachmentVor"]
        6 [-]: CALL R1 1 1  
        7 [-]: DUPCLOSURE R2 K4 []
@@ -27,15 +27,15 @@
 
        0 [-]: LOADNIL R0   
        1 [-]: LOADNIL R1   
-L 0:   2 [-]: GETIMPORT R3 1 [nil]
+L 0:   2 [-]: GETIMPORT R3 1 [0x0032441C]
        3 [-]: GETTABLEKS R2 R3 K2 ["TutorialBoltRemoved"]
        4 [-]: JUMPIF R2 L5 
-       5 [-]: GETIMPORT R2 4 [nil]
+       5 [-]: GETIMPORT R2 4 [0x89326C93]
        6 [-]: NAMECALL R2 R2 K5 [0xFB64E76C]
        7 [-]: CALL R2 1 1  
        8 [-]: FASTCALL1 62 R2 L1
        9 [-]: MOVE R4 R2   
-      10 [-]: GETIMPORT R3 7 [nil]
+      10 [-]: GETIMPORT R3 7 [0x7B998233]
       11 [-]: CALL R3 1 1  
 L 1:  12 [-]: JUMPIF R3 L4 
       13 [-]: LOADN R5 0   
@@ -43,7 +43,7 @@ L 1:  12 [-]: JUMPIF R3 L4
       15 [-]: CALL R3 2 1  
       16 [-]: FASTCALL1 62 R3 L2
       17 [-]: MOVE R5 R3   
-      18 [-]: GETIMPORT R4 7 [nil]
+      18 [-]: GETIMPORT R4 7 [0x7B998233]
       19 [-]: CALL R4 1 1  
 L 2:  20 [-]: JUMPIF R4 L4 
       21 [-]: NAMECALL R4 R3 K9 [0xDE321E6F]
@@ -62,7 +62,7 @@ L 3:  27 [-]: MOVE R0 R3
       34 [-]: GETUPVAL R8 1
       35 [-]: NAMECALL R6 R5 K11 [0x599A8E07]
       36 [-]: CALL R6 2 0  
-L 4:  37 [-]: GETIMPORT R3 13 [nil]
+L 4:  37 [-]: GETIMPORT R3 13 [0xCBD666E1]
       38 [-]: LOADK R4 K14 [0.10000000000000001]
       39 [-]: CALL R3 1 0  
       40 [-]: JUMPBACK L0  

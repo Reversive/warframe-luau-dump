@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  5
 
-            1 [-]: NEWTABLE R0 0 0
+       1 [-]: NEWTABLE R0 0 0
        2 [-]: NEWTABLE R1 0 0
        3 [-]: LOADB R2 0   
        4 [-]: NEWCLOSURE R3 P0
@@ -52,7 +52,7 @@
        0 [-]: NAMECALL R3 R1 K0 [0xBB610E5B]
        1 [-]: CALL R3 1 -1 
        2 [-]: FASTCALL 62 L0
-       3 [-]: GETIMPORT R2 2 [nil]
+       3 [-]: GETIMPORT R2 2 [0x7B998233]
        4 [-]: CALL R2 -1 1 
 L 0:   5 [-]: JUMPIF R2 L1 
        6 [-]: NAMECALL R2 R0 K3 [0x52DE0ED7]
@@ -71,10 +71,10 @@ L 3:  17 [-]: LOADB R2 0
       19 [-]: CALL R3 1 1  
       20 [-]: FASTCALL1 62 R3 L4
       21 [-]: MOVE R5 R3   
-      22 [-]: GETIMPORT R4 2 [nil]
+      22 [-]: GETIMPORT R4 2 [0x7B998233]
       23 [-]: CALL R4 1 1  
 L 4:  24 [-]: JUMPIF R4 L12
-      25 [-]: GETIMPORT R6 7 [nil]
+      25 [-]: GETIMPORT R6 7 ["gProjectileType"]
       26 [-]: NAMECALL R4 R3 K8 [0xF2DEAF69]
       27 [-]: CALL R4 2 1  
       28 [-]: JUMPIFNOT R4 L5
@@ -83,10 +83,10 @@ L 4:  24 [-]: JUMPIF R4 L12
       31 [-]: MOVE R3 R4   
 L 5:  32 [-]: FASTCALL1 62 R3 L6
       33 [-]: MOVE R5 R3   
-      34 [-]: GETIMPORT R4 2 [nil]
+      34 [-]: GETIMPORT R4 2 [0x7B998233]
       35 [-]: CALL R4 1 1  
 L 6:  36 [-]: JUMPIF R4 L12
-      37 [-]: GETIMPORT R6 11 [nil]
+      37 [-]: GETIMPORT R6 11 ["gLotusWeaponType"]
       38 [-]: NAMECALL R4 R3 K8 [0xF2DEAF69]
       39 [-]: CALL R4 2 1  
       40 [-]: JUMPIFNOT R4 L12
@@ -94,7 +94,7 @@ L 6:  36 [-]: JUMPIF R4 L12
       42 [-]: CALL R4 1 1  
       43 [-]: FASTCALL1 62 R4 L7
       44 [-]: MOVE R6 R4   
-      45 [-]: GETIMPORT R5 2 [nil]
+      45 [-]: GETIMPORT R5 2 [0x7B998233]
       46 [-]: CALL R5 1 1  
 L 7:  47 [-]: JUMPIF R5 L12
       48 [-]: NAMECALL R5 R4 K13 [0xE223E2B1]
@@ -105,7 +105,7 @@ L 7:  47 [-]: JUMPIF R5 L12
       53 [-]: CALL R7 1 1  
       54 [-]: GETUPVAL R9 0
       55 [-]: GETTABLE R8 R9 R5
-      56 [-]: GETIMPORT R9 17 [nil]
+      56 [-]: GETIMPORT R9 17 [0x55156FF7]
       57 [-]: CALL R9 0 1  
       58 [-]: JUMPXEQKNIL R8 L8
       59 [-]: SUB R10 R9 R8
@@ -120,7 +120,7 @@ L 8:  62 [-]: GETUPVAL R10 0
       68 [-]: LOADB R10 1  
       69 [-]: GETUPVAL R12 1
       70 [-]: GETTABLE R11 R12 R5
-      71 [-]: GETIMPORT R12 21 [nil]
+      71 [-]: GETIMPORT R12 21 [0xA810F4EA]
       72 [-]: JUMPIFLE R12 R11 L9
       73 [-]: NAMECALL R10 R0 K22 [0x36822477]
       74 [-]: CALL R10 1 1 
@@ -141,7 +141,7 @@ L10:  79 [-]: GETUPVAL R10 2
       88 [-]: LOADB R10 1  
       89 [-]: GETUPVAL R12 1
       90 [-]: GETTABLE R11 R12 R5
-      91 [-]: GETIMPORT R12 21 [nil]
+      91 [-]: GETIMPORT R12 21 [0xA810F4EA]
       92 [-]: JUMPIFLE R12 R11 L11
       93 [-]: NAMECALL R10 R0 K22 [0x36822477]
       94 [-]: CALL R10 1 1 
@@ -163,8 +163,8 @@ L13: 103 [-]: RETURN R2 1
 ; Is_vararg:       0
 ; Max Stack Size:  4
 
-       0 [-]: GETIMPORT R2 1 [nil]
-       1 [-]: GETIMPORT R3 3 [nil]
+       0 [-]: GETIMPORT R2 1 [0x64FB1586]
+       1 [-]: GETIMPORT R3 3 [0x5949B942]
        2 [-]: CALL R2 1 1  
        3 [-]: JUMPIFNOTEQ R1 R2 L0
        4 [-]: LOADB R2 0   

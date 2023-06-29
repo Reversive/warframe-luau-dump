@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  2
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x2D0FAD09]
        2 [-]: LOADK R1 K2 ["Lotus.Interface.LotusUtilities"]
        3 [-]: CALL R0 1 1  
        4 [-]: DUPCLOSURE R1 K3 []
@@ -29,7 +29,7 @@
        5 [-]: LOADB R3 1   
        6 [-]: CALL R1 2 0  
        7 [-]: RETURN R0 0  
-L 0:   8 [-]: GETIMPORT R1 2 [nil]
+L 0:   8 [-]: GETIMPORT R1 2 [0xD644C2F1]
        9 [-]: LOADK R2 K3 ["Rank must be positive"]
       10 [-]: CALL R1 1 0  
       11 [-]: RETURN R0 0  

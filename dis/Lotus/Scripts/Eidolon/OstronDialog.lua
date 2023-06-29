@@ -5,300 +5,300 @@
 ; Is_vararg:       1
 ; Max Stack Size:  12
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x2D0FAD09]
        2 [-]: LOADK R1 K2 ["EE.Interface.Utilities"]
        3 [-]: CALL R0 1 1  
-       4 [-]: GETIMPORT R1 1 [nil]
+       4 [-]: GETIMPORT R1 1 [0x2D0FAD09]
        5 [-]: LOADK R2 K3 ["Lotus.Interface.LotusUtilities"]
        6 [-]: CALL R1 1 1  
-       7 [-]: GETIMPORT R2 1 [nil]
+       7 [-]: GETIMPORT R2 1 [0x2D0FAD09]
        8 [-]: LOADK R3 K4 ["Lotus.Scripts.WeaponAttachments.WeaponUtil"]
        9 [-]: CALL R2 1 1  
-      10 [-]: GETIMPORT R3 1 [nil]
+      10 [-]: GETIMPORT R3 1 [0x2D0FAD09]
       11 [-]: LOADK R4 K5 ["Lotus.Interface.StoreItemUtilities"]
       12 [-]: CALL R3 1 1  
       13 [-]: NEWTABLE R4 128 0
-      14 [-]: GETIMPORT R5 7 [nil]
+      14 [-]: GETIMPORT R5 7 [0x0469F296]
       15 [-]: LOADK R6 K8 ["Ostron_CraftingScreen"]
       16 [-]: CALL R5 1 1  
       17 [-]: SETTABLEKS R5 R4 K9 ["ostronCraftingTag"]
-      18 [-]: GETIMPORT R5 7 [nil]
+      18 [-]: GETIMPORT R5 7 [0x0469F296]
       19 [-]: LOADK R6 K10 ["Ostron_WeaponOfTheDay"]
       20 [-]: CALL R5 1 1  
       21 [-]: SETTABLEKS R5 R4 K11 ["ostronWeaponOfTheDayTag"]
-      22 [-]: GETIMPORT R5 7 [nil]
+      22 [-]: GETIMPORT R5 7 [0x0469F296]
       23 [-]: LOADK R6 K12 ["Ostron_Actions"]
       24 [-]: CALL R5 1 1  
       25 [-]: SETTABLEKS R5 R4 K13 ["ostronActionsTag"]
-      26 [-]: GETIMPORT R5 7 [nil]
+      26 [-]: GETIMPORT R5 7 [0x0469F296]
       27 [-]: LOADK R6 K14 ["Amp_CraftingScreen"]
       28 [-]: CALL R5 1 1  
       29 [-]: SETTABLEKS R5 R4 K15 ["ampCraftingTag"]
-      30 [-]: GETIMPORT R5 7 [nil]
+      30 [-]: GETIMPORT R5 7 [0x0469F296]
       31 [-]: LOADK R6 K16 ["FishmongerDailySpecial"]
       32 [-]: CALL R5 1 1  
       33 [-]: SETTABLEKS R5 R4 K17 ["fishmongerDailySpecialTag"]
-      34 [-]: GETIMPORT R5 7 [nil]
+      34 [-]: GETIMPORT R5 7 [0x0469F296]
       35 [-]: LOADK R6 K18 ["ProspectorDailySpecial"]
       36 [-]: CALL R5 1 1  
       37 [-]: SETTABLEKS R5 R4 K19 ["prospectorDailySpecialTag"]
-      38 [-]: GETIMPORT R5 7 [nil]
+      38 [-]: GETIMPORT R5 7 [0x0469F296]
       39 [-]: LOADK R6 K20 ["PetVendorDailySpecial"]
       40 [-]: CALL R5 1 1  
       41 [-]: SETTABLEKS R5 R4 K21 ["petVendorDailySpecialTag"]
-      42 [-]: GETIMPORT R5 7 [nil]
+      42 [-]: GETIMPORT R5 7 [0x0469F296]
       43 [-]: LOADK R6 K22 ["MaskSellerVendorItems"]
       44 [-]: CALL R5 1 1  
       45 [-]: SETTABLEKS R5 R4 K23 ["maskSellerVendorItemsTag"]
-      46 [-]: GETIMPORT R5 7 [nil]
+      46 [-]: GETIMPORT R5 7 [0x0469F296]
       47 [-]: LOADK R6 K24 ["PetVendorItems"]
       48 [-]: CALL R5 1 1  
       49 [-]: SETTABLEKS R5 R4 K25 ["petVendorWaresTag"]
-      50 [-]: GETIMPORT R5 7 [nil]
+      50 [-]: GETIMPORT R5 7 [0x0469F296]
       51 [-]: LOADK R6 K26 ["PetVendorTags"]
       52 [-]: CALL R5 1 1  
       53 [-]: SETTABLEKS R5 R4 K27 ["petVendorTradeTag"]
-      54 [-]: GETIMPORT R5 7 [nil]
+      54 [-]: GETIMPORT R5 7 [0x0469F296]
       55 [-]: LOADK R6 K28 ["PetVendorBarter"]
       56 [-]: CALL R5 1 1  
       57 [-]: SETTABLEKS R5 R4 K29 ["petVendorBarterTag"]
-      58 [-]: GETIMPORT R5 7 [nil]
+      58 [-]: GETIMPORT R5 7 [0x0469F296]
       59 [-]: LOADK R6 K30 ["Solaris_MoaPetOfTheDay"]
       60 [-]: CALL R5 1 1  
       61 [-]: SETTABLEKS R5 R4 K31 ["solarisMoaOfTheDayTag"]
-      62 [-]: GETIMPORT R5 7 [nil]
+      62 [-]: GETIMPORT R5 7 [0x0469F296]
       63 [-]: LOADK R6 K32 ["Solaris_HoverboardOfTheDay"]
       64 [-]: CALL R5 1 1  
       65 [-]: SETTABLEKS R5 R4 K33 ["solarisHoverboardOfTheDayTag"]
-      66 [-]: GETIMPORT R5 7 [nil]
+      66 [-]: GETIMPORT R5 7 [0x0469F296]
       67 [-]: LOADK R6 K34 ["MoaCraftingScreen"]
       68 [-]: CALL R5 1 1  
       69 [-]: SETTABLEKS R5 R4 K35 ["moaCraftingTag"]
-      70 [-]: GETIMPORT R5 7 [nil]
+      70 [-]: GETIMPORT R5 7 [0x0469F296]
       71 [-]: LOADK R6 K36 ["ZanukaCraftingScreen"]
       72 [-]: CALL R5 1 1  
       73 [-]: SETTABLEKS R5 R4 K37 ["zanukaCraftingTag"]
-      74 [-]: GETIMPORT R5 7 [nil]
+      74 [-]: GETIMPORT R5 7 [0x0469F296]
       75 [-]: LOADK R6 K38 ["Moa_Actions"]
       76 [-]: CALL R5 1 1  
       77 [-]: SETTABLEKS R5 R4 K39 ["moaActionsTag"]
-      78 [-]: GETIMPORT R5 7 [nil]
+      78 [-]: GETIMPORT R5 7 [0x0469F296]
       79 [-]: LOADK R6 K40 ["HoverboardScreen"]
       80 [-]: CALL R5 1 1  
       81 [-]: SETTABLEKS R5 R4 K41 ["hoverboardTag"]
-      82 [-]: GETIMPORT R5 7 [nil]
+      82 [-]: GETIMPORT R5 7 [0x0469F296]
       83 [-]: LOADK R6 K42 ["HoverboardCraftingScreen"]
       84 [-]: CALL R5 1 1  
       85 [-]: SETTABLEKS R5 R4 K43 ["hoverboardCraftingTag"]
-      86 [-]: GETIMPORT R5 7 [nil]
+      86 [-]: GETIMPORT R5 7 [0x0469F296]
       87 [-]: LOADK R6 K44 ["HoverboardFavorsScreen"]
       88 [-]: CALL R5 1 1  
       89 [-]: SETTABLEKS R5 R4 K45 ["hoverboardFavorsTag"]
-      90 [-]: GETIMPORT R5 7 [nil]
+      90 [-]: GETIMPORT R5 7 [0x0469F296]
       91 [-]: LOADK R6 K46 ["Hoverboard_Actions"]
       92 [-]: CALL R5 1 1  
       93 [-]: SETTABLEKS R5 R4 K47 ["hoverboardActionsTag"]
-      94 [-]: GETIMPORT R5 7 [nil]
+      94 [-]: GETIMPORT R5 7 [0x0469F296]
       95 [-]: LOADK R6 K48 ["DebtTokenVendorFreeDebtBonds"]
       96 [-]: CALL R5 1 1  
       97 [-]: SETTABLEKS R5 R4 K49 ["debtTokenVendorFreeDebtBondsTag"]
-      98 [-]: GETIMPORT R5 7 [nil]
+      98 [-]: GETIMPORT R5 7 [0x0469F296]
       99 [-]: LOADK R6 K50 ["DebtTokenVendorItems"]
      100 [-]: CALL R5 1 1  
      101 [-]: SETTABLEKS R5 R4 K51 ["debtTokenVendorItemsTag"]
-     102 [-]: GETIMPORT R5 7 [nil]
+     102 [-]: GETIMPORT R5 7 [0x0469F296]
      103 [-]: LOADK R6 K52 ["DebtTokenVendorCrewMembers"]
      104 [-]: CALL R5 1 1  
      105 [-]: SETTABLEKS R5 R4 K53 ["debtTokenVendorCrewMembersTag"]
-     106 [-]: GETIMPORT R5 7 [nil]
+     106 [-]: GETIMPORT R5 7 [0x0469F296]
      107 [-]: LOADK R6 K54 ["SolarisFishmongerVendorItems"]
      108 [-]: CALL R5 1 1  
      109 [-]: SETTABLEKS R5 R4 K55 ["solarisFishMongerVendorItemsTag"]
-     110 [-]: GETIMPORT R5 7 [nil]
+     110 [-]: GETIMPORT R5 7 [0x0469F296]
      111 [-]: LOADK R6 K56 ["HivemindTokenVendorCommissions"]
      112 [-]: CALL R5 1 1  
      113 [-]: SETTABLEKS R5 R4 K57 ["hivemindTokenVendorCommissionsTag"]
-     114 [-]: GETIMPORT R5 7 [nil]
+     114 [-]: GETIMPORT R5 7 [0x0469F296]
      115 [-]: LOADK R6 K58 ["HivemindTokenVendorProducts"]
      116 [-]: CALL R5 1 1  
      117 [-]: SETTABLEKS R5 R4 K59 ["hivemindTokenVendorProductsTag"]
-     118 [-]: GETIMPORT R5 7 [nil]
+     118 [-]: GETIMPORT R5 7 [0x0469F296]
      119 [-]: LOADK R6 K60 ["HivemindTokenVendorBarter"]
      120 [-]: CALL R5 1 1  
      121 [-]: SETTABLEKS R5 R4 K61 ["hivemindTokenVendorBarterTag"]
-     122 [-]: GETIMPORT R5 7 [nil]
+     122 [-]: GETIMPORT R5 7 [0x0469F296]
      123 [-]: LOADK R6 K62 ["HivemindProspectorCommissions"]
      124 [-]: CALL R5 1 1  
      125 [-]: SETTABLEKS R5 R4 K63 ["hivemindProspectorCommissionsTag"]
-     126 [-]: GETIMPORT R5 7 [nil]
+     126 [-]: GETIMPORT R5 7 [0x0469F296]
      127 [-]: LOADK R6 K64 ["OtakLastWishManifest"]
      128 [-]: CALL R5 1 1  
      129 [-]: SETTABLEKS R5 R4 K65 ["hivemindProspectorLastWishManifestTag"]
-     130 [-]: GETIMPORT R5 7 [nil]
+     130 [-]: GETIMPORT R5 7 [0x0469F296]
      131 [-]: LOADK R6 K66 ["HivemindFishmongerCommissions"]
      132 [-]: CALL R5 1 1  
      133 [-]: SETTABLEKS R5 R4 K67 ["hivemindFishmongerCommissionsTag"]
-     134 [-]: GETIMPORT R5 7 [nil]
+     134 [-]: GETIMPORT R5 7 [0x0469F296]
      135 [-]: LOADK R6 K68 ["HivemindPetVendorCommissions"]
      136 [-]: CALL R5 1 1  
      137 [-]: SETTABLEKS R5 R4 K69 ["hivemindPetVendorCommissionsTag"]
-     138 [-]: GETIMPORT R5 7 [nil]
+     138 [-]: GETIMPORT R5 7 [0x0469F296]
      139 [-]: LOADK R6 K70 ["HivemindGunsmithCommissions"]
      140 [-]: CALL R5 1 1  
      141 [-]: SETTABLEKS R5 R4 K71 ["hivemindGunsmithCommissionsTag"]
-     142 [-]: GETIMPORT R5 7 [nil]
+     142 [-]: GETIMPORT R5 7 [0x0469F296]
      143 [-]: LOADK R6 K72 ["HivemindKubrowCraftingScreen"]
      144 [-]: CALL R5 1 1  
      145 [-]: SETTABLEKS R5 R4 K73 ["hivemindKubrowPetCraftingTag"]
-     146 [-]: GETIMPORT R5 7 [nil]
+     146 [-]: GETIMPORT R5 7 [0x0469F296]
      147 [-]: LOADK R6 K74 ["HivemindCatbrowCraftingScreen"]
      148 [-]: CALL R5 1 1  
      149 [-]: SETTABLEKS R5 R4 K75 ["hivemindCatbrowPetCraftingTag"]
-     150 [-]: GETIMPORT R5 7 [nil]
+     150 [-]: GETIMPORT R5 7 [0x0469F296]
      151 [-]: LOADK R6 K76 ["HivemindPetActions"]
      152 [-]: CALL R5 1 1  
      153 [-]: SETTABLEKS R5 R4 K77 ["hivemindPetActionsTag"]
-     154 [-]: GETIMPORT R5 7 [nil]
+     154 [-]: GETIMPORT R5 7 [0x0469F296]
      155 [-]: LOADK R6 K78 ["AWCraftingScreen"]
      156 [-]: CALL R5 1 1  
      157 [-]: SETTABLEKS R5 R4 K79 ["AWCraftingTag"]
-     158 [-]: GETIMPORT R5 7 [nil]
+     158 [-]: GETIMPORT R5 7 [0x0469F296]
      159 [-]: LOADK R6 K80 ["AWFavorsScreen"]
      160 [-]: CALL R5 1 1  
      161 [-]: SETTABLEKS R5 R4 K81 ["AWFavorsTag"]
-     162 [-]: GETIMPORT R5 7 [nil]
+     162 [-]: GETIMPORT R5 7 [0x0469F296]
      163 [-]: LOADK R6 K82 ["SolarisUnitedScreen"]
      164 [-]: CALL R5 1 1  
      165 [-]: SETTABLEKS R5 R4 K83 ["solarisUnitedTag"]
-     166 [-]: GETIMPORT R5 7 [nil]
+     166 [-]: GETIMPORT R5 7 [0x0469F296]
      167 [-]: LOADK R6 K84 ["VoxFavorsScreen"]
      168 [-]: CALL R5 1 1  
      169 [-]: SETTABLEKS R5 R4 K85 ["solarisUnitedFavorsTag"]
-     170 [-]: GETIMPORT R5 7 [nil]
+     170 [-]: GETIMPORT R5 7 [0x0469F296]
      171 [-]: LOADK R6 K86 ["SolarisUnited_Actions"]
      172 [-]: CALL R5 1 1  
      173 [-]: SETTABLEKS R5 R4 K87 ["solarisUnitedActionTag"]
-     174 [-]: GETIMPORT R5 7 [nil]
+     174 [-]: GETIMPORT R5 7 [0x0469F296]
      175 [-]: LOADK R6 K88 ["SolarisUnited_AmpCraftingScreen"]
      176 [-]: CALL R5 1 1  
      177 [-]: SETTABLEKS R5 R4 K89 ["solarisUnitedAmpCraftingTag"]
-     178 [-]: GETIMPORT R5 7 [nil]
+     178 [-]: GETIMPORT R5 7 [0x0469F296]
      179 [-]: LOADK R6 K90 ["SentientInvasionScreen"]
      180 [-]: CALL R5 1 1  
      181 [-]: SETTABLEKS R5 R4 K91 ["solarisUnitedSentientInvasionTag"]
-     182 [-]: GETIMPORT R5 7 [nil]
+     182 [-]: GETIMPORT R5 7 [0x0469F296]
      183 [-]: LOADK R6 K92 ["WeaponsmithFavorsScreen"]
      184 [-]: CALL R5 1 1  
      185 [-]: SETTABLEKS R5 R4 K93 ["weaponsmithFavorsTag"]
-     186 [-]: GETIMPORT R5 7 [nil]
+     186 [-]: GETIMPORT R5 7 [0x0469F296]
      187 [-]: LOADK R6 K94 ["FishmongerFavorsScreen"]
      188 [-]: CALL R5 1 1  
      189 [-]: SETTABLEKS R5 R4 K95 ["fishmongerFavorsTag"]
-     190 [-]: GETIMPORT R5 7 [nil]
+     190 [-]: GETIMPORT R5 7 [0x0469F296]
      191 [-]: LOADK R6 K96 ["ProspectorFavorsScreen"]
      192 [-]: CALL R5 1 1  
      193 [-]: SETTABLEKS R5 R4 K97 ["prospectorFavorsTag"]
-     194 [-]: GETIMPORT R5 7 [nil]
+     194 [-]: GETIMPORT R5 7 [0x0469F296]
      195 [-]: LOADK R6 K98 ["Moa_FavorsScreen"]
      196 [-]: CALL R5 1 1  
      197 [-]: SETTABLEKS R5 R4 K99 ["moaFavorsTag"]
-     198 [-]: GETIMPORT R5 7 [nil]
+     198 [-]: GETIMPORT R5 7 [0x0469F296]
      199 [-]: LOADK R6 K100 ["QuillsFavorsScreen"]
      200 [-]: CALL R5 1 1  
      201 [-]: SETTABLEKS R5 R4 K101 ["quillsFavorsTag"]
-     202 [-]: GETIMPORT R5 7 [nil]
+     202 [-]: GETIMPORT R5 7 [0x0469F296]
      203 [-]: LOADK R6 K102 ["QuillsScreen"]
      204 [-]: CALL R5 1 1  
      205 [-]: SETTABLEKS R5 R4 K103 ["quillsTag"]
-     206 [-]: GETIMPORT R5 7 [nil]
+     206 [-]: GETIMPORT R5 7 [0x0469F296]
      207 [-]: LOADK R6 K104 ["Quills_Actions"]
      208 [-]: CALL R5 1 1  
      209 [-]: SETTABLEKS R5 R4 K105 ["quillsActionTag"]
-     210 [-]: GETIMPORT R5 7 [nil]
+     210 [-]: GETIMPORT R5 7 [0x0469F296]
      211 [-]: LOADK R6 K106 ["NecraloidFavorsScreen"]
      212 [-]: CALL R5 1 1  
      213 [-]: SETTABLEKS R5 R4 K107 ["necraloidFavorsTag"]
-     214 [-]: GETIMPORT R5 7 [nil]
+     214 [-]: GETIMPORT R5 7 [0x0469F296]
      215 [-]: LOADK R6 K108 ["NecraloidSyndicateScreen"]
      216 [-]: CALL R5 1 1  
      217 [-]: SETTABLEKS R5 R4 K109 ["necraloidTag"]
-     218 [-]: GETIMPORT R5 7 [nil]
+     218 [-]: GETIMPORT R5 7 [0x0469F296]
      219 [-]: LOADK R6 K110 ["NecraloidProducts"]
      220 [-]: CALL R5 1 1  
      221 [-]: SETTABLEKS R5 R4 K111 ["necraloidProductsTag"]
-     222 [-]: GETIMPORT R5 7 [nil]
+     222 [-]: GETIMPORT R5 7 [0x0469F296]
      223 [-]: LOADK R6 K112 ["EventSyndicate"]
      224 [-]: CALL R5 1 1  
      225 [-]: SETTABLEKS R5 R4 K113 ["eventSyndicateTag"]
-     226 [-]: GETIMPORT R5 7 [nil]
+     226 [-]: GETIMPORT R5 7 [0x0469F296]
      227 [-]: LOADK R6 K114 ["EventSyndicateScreen"]
      228 [-]: CALL R5 1 1  
      229 [-]: SETTABLEKS R5 R4 K115 ["eventSyndicateScreenTag"]
-     230 [-]: GETIMPORT R5 7 [nil]
+     230 [-]: GETIMPORT R5 7 [0x0469F296]
      231 [-]: LOADK R6 K116 ["WaterFightVendorScreen"]
      232 [-]: CALL R5 1 1  
      233 [-]: SETTABLEKS R5 R4 K117 ["waterFightScreenTag"]
-     234 [-]: GETIMPORT R5 7 [nil]
+     234 [-]: GETIMPORT R5 7 [0x0469F296]
      235 [-]: LOADK R6 K118 ["FishmongerExchangeScreen"]
      236 [-]: CALL R5 1 1  
      237 [-]: SETTABLEKS R5 R4 K119 ["fishmongerExchangeTag"]
-     238 [-]: GETIMPORT R5 7 [nil]
+     238 [-]: GETIMPORT R5 7 [0x0469F296]
      239 [-]: LOADK R6 K120 ["FishmongerBaitScreen"]
      240 [-]: CALL R5 1 1  
      241 [-]: SETTABLEKS R5 R4 K121 ["fishmongerBaitTag"]
-     242 [-]: GETIMPORT R5 7 [nil]
+     242 [-]: GETIMPORT R5 7 [0x0469F296]
      243 [-]: LOADK R6 K122 ["ZarimanApartmentFavorsScreen"]
      244 [-]: CALL R5 1 1  
      245 [-]: SETTABLEKS R5 R4 K123 ["zarimanApartmentFavorsTag"]
-     246 [-]: GETIMPORT R5 7 [nil]
+     246 [-]: GETIMPORT R5 7 [0x0469F296]
      247 [-]: LOADK R6 K124 ["ZarimanVoidshellFavorsScreen"]
      248 [-]: CALL R5 1 1  
      249 [-]: SETTABLEKS R5 R4 K125 ["zarimanVoidshellFavorsTag"]
-     250 [-]: GETIMPORT R5 7 [nil]
+     250 [-]: GETIMPORT R5 7 [0x0469F296]
      251 [-]: LOADK R6 K126 ["ZarimanWeaponsmithFavorsScreen"]
      252 [-]: CALL R5 1 1  
      253 [-]: SETTABLEKS R5 R4 K127 ["zarimanWeaponsmithFavorsTag"]
-     254 [-]: GETIMPORT R5 7 [nil]
+     254 [-]: GETIMPORT R5 7 [0x0469F296]
      255 [-]: LOADK R6 K128 ["ZarimanWeaponsmithEvolveScreen"]
      256 [-]: CALL R5 1 1  
      257 [-]: SETTABLEKS R5 R4 K129 ["zarimanWeaponsmithEvolveWeapTag"]
-     258 [-]: GETIMPORT R5 7 [nil]
+     258 [-]: GETIMPORT R5 7 [0x0469F296]
      259 [-]: LOADK R6 K130 ["ZarimanWeaponsmithIncarnonShop"]
      260 [-]: CALL R5 1 1  
      261 [-]: SETTABLEKS R5 R4 K131 ["zarimanWeaponsmithIncarnonShopTag"]
-     262 [-]: GETIMPORT R5 7 [nil]
+     262 [-]: GETIMPORT R5 7 [0x0469F296]
      263 [-]: LOADK R6 K132 ["ArchimedeanVendorItems"]
      264 [-]: CALL R5 1 1  
      265 [-]: SETTABLEKS R5 R4 K133 ["zarimanArchimedeanManifestTag"]
-     266 [-]: GETIMPORT R5 7 [nil]
+     266 [-]: GETIMPORT R5 7 [0x0469F296]
      267 [-]: LOADK R6 K134 ["ZarimanArchimedeanCommissions"]
      268 [-]: CALL R5 1 1  
      269 [-]: SETTABLEKS R5 R4 K135 ["zarimanArchimedeanCommissionsTag"]
-     270 [-]: GETIMPORT R5 7 [nil]
+     270 [-]: GETIMPORT R5 7 [0x0469F296]
      271 [-]: LOADK R6 K136 ["ArchimedeanVoidEclipseManifest"]
      272 [-]: CALL R5 1 1  
      273 [-]: SETTABLEKS R5 R4 K137 ["zarimanArchimedeanVoidEclipseManifestTag"]
-     274 [-]: GETIMPORT R5 7 [nil]
+     274 [-]: GETIMPORT R5 7 [0x0469F296]
      275 [-]: LOADK R6 K138 ["DuviriArchivistVendorItems"]
      276 [-]: CALL R5 1 1  
      277 [-]: SETTABLEKS R5 R4 K139 ["duviriArchivistVendorItemsTag"]
-     278 [-]: GETIMPORT R5 7 [nil]
+     278 [-]: GETIMPORT R5 7 [0x0469F296]
      279 [-]: LOADK R6 K140 ["DuviriArchivistKullervoShop"]
      280 [-]: CALL R5 1 1  
      281 [-]: SETTABLEKS R5 R4 K141 ["duviriArchivistKullervoShopTag"]
-     282 [-]: GETIMPORT R5 7 [nil]
+     282 [-]: GETIMPORT R5 7 [0x0469F296]
      283 [-]: LOADK R6 K142 ["DuviriArchivistEnigmaGyrumShop"]
      284 [-]: CALL R5 1 1  
      285 [-]: SETTABLEKS R5 R4 K143 ["duviriArchivistEnigmaGyrumShopTag"]
-     286 [-]: GETIMPORT R5 7 [nil]
+     286 [-]: GETIMPORT R5 7 [0x0469F296]
      287 [-]: LOADK R6 K144 ["Kahl_MissionBrief"]
      288 [-]: CALL R5 1 1  
      289 [-]: SETTABLEKS R5 R4 K145 ["kahlMissionBriefTag"]
-     290 [-]: GETIMPORT R5 7 [nil]
+     290 [-]: GETIMPORT R5 7 [0x0469F296]
      291 [-]: LOADK R6 K146 ["Kahl_Customizations"]
      292 [-]: CALL R5 1 1  
      293 [-]: SETTABLEKS R5 R4 K147 ["kahlCustomizationsTag"]
-     294 [-]: GETIMPORT R5 7 [nil]
+     294 [-]: GETIMPORT R5 7 [0x0469F296]
      295 [-]: LOADK R6 K148 ["Chipper_VendorItems"]
      296 [-]: CALL R5 1 1  
      297 [-]: SETTABLEKS R5 R4 K149 ["chipperVendorItemsTag"]
@@ -345,18 +345,18 @@
 
        0 [-]: FASTCALL1 62 R1 L0
        1 [-]: MOVE R4 R1   
-       2 [-]: GETIMPORT R3 1 [nil]
+       2 [-]: GETIMPORT R3 1 [0x7B998233]
        3 [-]: CALL R3 1 1  
 L 0:   4 [-]: JUMPIF R3 L2 
        5 [-]: GETTABLEKS R3 R1 K2 ["mTransmissionSet"]
-       6 [-]: GETIMPORT R5 4 [nil]
+       6 [-]: GETIMPORT R5 4 [0x0469F296]
        7 [-]: LOADK R6 K5 ["TradeInEnter"]
        8 [-]: CALL R5 1 -1 
        9 [-]: NAMECALL R3 R3 K6 [0x10C9EEF2]
       10 [-]: CALL R3 -1 1 
       11 [-]: FASTCALL1 62 R3 L1
       12 [-]: MOVE R5 R3   
-      13 [-]: GETIMPORT R4 1 [nil]
+      13 [-]: GETIMPORT R4 1 [0x7B998233]
       14 [-]: CALL R4 1 1  
 L 1:  15 [-]: JUMPIF R4 L2 
       16 [-]: MOVE R6 R3   
@@ -377,30 +377,30 @@ L 2:  22 [-]: DUPTABLE R3 10
       31 [-]: SETTABLEKS R6 R3 K14 ["RepReq"]
       32 [-]: SETTABLEKS R7 R3 K15 ["HasRepForSac"]
       33 [-]: SETTABLEKS R8 R3 K16 ["MaxRepInc"]
-      34 [-]: GETIMPORT R4 18 [nil]
+      34 [-]: GETIMPORT R4 18 ["_T"]
       35 [-]: SETTABLEKS R3 R4 K19 ["SyndicateInvInfo"]
-      36 [-]: GETIMPORT R4 21 [nil]
+      36 [-]: GETIMPORT R4 21 ["GetScreenRes"]
       37 [-]: LOADK R5 K22 ["Inventory"]
       38 [-]: CALL R4 1 1  
-      39 [-]: GETIMPORT R5 24 [nil]
+      39 [-]: GETIMPORT R5 24 [0x9BA7909F]
       40 [-]: MOVE R7 R4   
       41 [-]: NAMECALL R5 R5 K25 [0xCFBA257F]
       42 [-]: CALL R5 2 1  
 L 3:  43 [-]: FASTCALL1 62 R5 L4
       44 [-]: MOVE R7 R5   
-      45 [-]: GETIMPORT R6 1 [nil]
+      45 [-]: GETIMPORT R6 1 [0x7B998233]
       46 [-]: CALL R6 1 1  
 L 4:  47 [-]: JUMPIF R6 L5 
-      48 [-]: GETIMPORT R6 27 [nil]
+      48 [-]: GETIMPORT R6 27 [0xCBD666E1]
       49 [-]: LOADN R7 0   
       50 [-]: CALL R6 1 0  
       51 [-]: JUMPBACK L3  
-L 5:  52 [-]: GETIMPORT R6 18 [nil]
+L 5:  52 [-]: GETIMPORT R6 18 ["_T"]
       53 [-]: LOADNIL R7   
       54 [-]: SETTABLEKS R7 R6 K19 ["SyndicateInvInfo"]
       55 [-]: FASTCALL1 62 R1 L6
       56 [-]: MOVE R7 R1   
-      57 [-]: GETIMPORT R6 1 [nil]
+      57 [-]: GETIMPORT R6 1 [0x7B998233]
       58 [-]: CALL R6 1 1  
 L 6:  59 [-]: JUMPIF R6 L7 
       60 [-]: LOADB R6 1   
@@ -415,13 +415,13 @@ L 7:  62 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
-       0 [-]: GETIMPORT R1 1 [nil]
+       0 [-]: GETIMPORT R1 1 [0x1BFBAE56]
        1 [-]: FASTCALL1 62 R1 L0
-       2 [-]: GETIMPORT R0 3 [nil]
+       2 [-]: GETIMPORT R0 3 [0x7B998233]
        3 [-]: CALL R0 1 1  
 L 0:   4 [-]: JUMPIF R0 L1 
        5 [-]: GETUPVAL R0 0
-       6 [-]: GETIMPORT R1 1 [nil]
+       6 [-]: GETIMPORT R1 1 [0x1BFBAE56]
        7 [-]: CALL R0 1 0  
 L 1:   8 [-]: RETURN R0 0  
 
@@ -433,23 +433,23 @@ L 1:   8 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  12
 
-       0 [-]: GETIMPORT R5 1 [nil]
+       0 [-]: GETIMPORT R5 1 [0x89326C93]
        1 [-]: MOVE R7 R2   
        2 [-]: NAMECALL R5 R5 K2 [0x46A0EBF5]
        3 [-]: CALL R5 2 1  
        4 [-]: FASTCALL1 62 R5 L0
        5 [-]: MOVE R7 R5   
-       6 [-]: GETIMPORT R6 4 [nil]
+       6 [-]: GETIMPORT R6 4 [0x7B998233]
        7 [-]: CALL R6 1 1  
 L 0:   8 [-]: JUMPIF R6 L2 
        9 [-]: FASTCALL1 62 R1 L1
       10 [-]: MOVE R7 R1   
-      11 [-]: GETIMPORT R6 4 [nil]
+      11 [-]: GETIMPORT R6 4 [0x7B998233]
       12 [-]: CALL R6 1 1  
 L 1:  13 [-]: JUMPIFNOT R6 L3
 L 2:  14 [-]: RETURN R0 0  
 L 3:  15 [-]: JUMPXEQKNIL R3 L4
-      16 [-]: GETIMPORT R6 6 [nil]
+      16 [-]: GETIMPORT R6 6 ["_T"]
       17 [-]: SETTABLEKS R3 R6 K7 ["OstronSmith_CraftingMode"]
 L 4:  18 [-]: JUMPXEQKNIL R4 L7
       19 [-]: GETUPVAL R7 0
@@ -459,15 +459,15 @@ L 4:  18 [-]: JUMPXEQKNIL R4 L7
       23 [-]: JUMPXEQKNIL R6 L6
       24 [-]: GETTABLEKS R8 R6 K9 ["mWeapon"]
       25 [-]: FASTCALL1 62 R8 L5
-      26 [-]: GETIMPORT R7 4 [nil]
+      26 [-]: GETIMPORT R7 4 [0x7B998233]
       27 [-]: CALL R7 1 1  
 L 5:  28 [-]: JUMPIF R7 L6 
-      29 [-]: GETIMPORT R7 6 [nil]
-      30 [-]: GETIMPORT R8 11 [nil]
+      29 [-]: GETIMPORT R7 6 ["_T"]
+      30 [-]: GETIMPORT R8 11 [0x0469F296]
       31 [-]: MOVE R9 R4   
       32 [-]: CALL R8 1 1  
       33 [-]: SETTABLEKS R8 R7 K12 ["CraftingSaleWeapon"]
-      34 [-]: GETIMPORT R7 6 [nil]
+      34 [-]: GETIMPORT R7 6 ["_T"]
       35 [-]: GETTABLEKS R8 R6 K9 ["mWeapon"]
       36 [-]: SETTABLEKS R8 R7 K13 ["ModularCraftingSaleWeapon"]
       37 [-]: JUMP L8
@@ -481,13 +481,13 @@ L 6:  38 [-]: GETUPVAL R8 1
       44 [-]: RETURN R0 0  
       45 [-]: JUMP L8
      
-L 7:  46 [-]: GETIMPORT R6 6 [nil]
+L 7:  46 [-]: GETIMPORT R6 6 ["_T"]
       47 [-]: LOADNIL R7   
       48 [-]: SETTABLEKS R7 R6 K12 ["CraftingSaleWeapon"]
-      49 [-]: GETIMPORT R6 6 [nil]
+      49 [-]: GETIMPORT R6 6 ["_T"]
       50 [-]: LOADNIL R7   
       51 [-]: SETTABLEKS R7 R6 K13 ["ModularCraftingSaleWeapon"]
-L 8:  52 [-]: GETIMPORT R6 6 [nil]
+L 8:  52 [-]: GETIMPORT R6 6 ["_T"]
       53 [-]: SETTABLEKS R2 R6 K17 ["previousConsoleTag"]
       54 [-]: GETTABLEKS R8 R1 K18 ["mPlayerAvatar"]
       55 [-]: NAMECALL R6 R5 K19 [0x263A3CC2]
@@ -500,7 +500,7 @@ L 8:  52 [-]: GETIMPORT R6 6 [nil]
 L 9:  62 [-]: NAMECALL R6 R5 K23 [0xFE3BE07A]
       63 [-]: CALL R6 1 1  
       64 [-]: JUMPIFNOT R6 L10
-      65 [-]: GETIMPORT R6 25 [nil]
+      65 [-]: GETIMPORT R6 25 [0xCBD666E1]
       66 [-]: LOADN R7 0   
       67 [-]: CALL R6 1 0  
       68 [-]: JUMPBACK L9  
@@ -508,7 +508,7 @@ L10:  69 [-]: NAMECALL R6 R0 K26 [0x383D2E7D]
       70 [-]: CALL R6 1 0  
       71 [-]: NAMECALL R6 R5 K22 [0xF4E253B6]
       72 [-]: CALL R6 1 0  
-      73 [-]: GETIMPORT R6 27 [nil]
+      73 [-]: GETIMPORT R6 27 ["previousConsoleTag"]
       74 [-]: JUMPIFNOTEQ R6 R2 L11
       75 [-]: GETTABLEKS R6 R1 K18 ["mPlayerAvatar"]
       76 [-]: NAMECALL R6 R6 K28 [0x0B4BCFB6]
@@ -533,13 +533,13 @@ L11:  87 [-]: RETURN R0 0
 ; Max Stack Size:  6
 
        0 [-]: LOADB R1 0   
-       1 [-]: GETIMPORT R2 1 [nil]
+       1 [-]: GETIMPORT R2 1 [0x76EA806B]
        2 [-]: LOADN R4 0   
        3 [-]: NAMECALL R2 R2 K2 [0x3F3AE64C]
        4 [-]: CALL R2 2 1  
        5 [-]: FASTCALL1 62 R2 L0
        6 [-]: MOVE R4 R2   
-       7 [-]: GETIMPORT R3 4 [nil]
+       7 [-]: GETIMPORT R3 4 [0x7B998233]
        8 [-]: CALL R3 1 1  
 L 0:   9 [-]: JUMPIF R3 L1 
       10 [-]: NAMECALL R3 R2 K5 [0x40E9C32B]
@@ -567,53 +567,53 @@ L 2:  18 [-]: NEWTABLE R3 1 0
 ; Is_vararg:       0
 ; Max Stack Size:  10
 
-       0 [-]: GETIMPORT R5 1 [nil]
+       0 [-]: GETIMPORT R5 1 [0x89326C93]
        1 [-]: MOVE R7 R2   
        2 [-]: NAMECALL R5 R5 K2 [0x46A0EBF5]
        3 [-]: CALL R5 2 1  
        4 [-]: FASTCALL1 62 R5 L0
        5 [-]: MOVE R7 R5   
-       6 [-]: GETIMPORT R6 4 [nil]
+       6 [-]: GETIMPORT R6 4 [0x7B998233]
        7 [-]: CALL R6 1 1  
 L 0:   8 [-]: JUMPIF R6 L2 
        9 [-]: FASTCALL1 62 R1 L1
       10 [-]: MOVE R7 R1   
-      11 [-]: GETIMPORT R6 4 [nil]
+      11 [-]: GETIMPORT R6 4 [0x7B998233]
       12 [-]: CALL R6 1 1  
 L 1:  13 [-]: JUMPIFNOT R6 L3
 L 2:  14 [-]: RETURN R0 0  
 L 3:  15 [-]: JUMPIFNOT R3 L4
-      16 [-]: GETIMPORT R6 6 [nil]
+      16 [-]: GETIMPORT R6 6 ["_T"]
       17 [-]: LOADB R7 0   
       18 [-]: SETTABLEKS R7 R6 K7 ["HaveDynamicVendorInfo"]
-L 4:  19 [-]: GETIMPORT R6 6 [nil]
+L 4:  19 [-]: GETIMPORT R6 6 ["_T"]
       20 [-]: SETTABLEKS R4 R6 K8 ["GenericVendor_IgnoreOwned"]
       21 [-]: GETTABLEKS R8 R1 K9 ["mPlayerAvatar"]
       22 [-]: NAMECALL R6 R5 K10 [0xF6C0229F]
       23 [-]: CALL R6 2 0  
       24 [-]: JUMPIFNOT R3 L6
-L 5:  25 [-]: GETIMPORT R6 11 [nil]
+L 5:  25 [-]: GETIMPORT R6 11 ["HaveDynamicVendorInfo"]
       26 [-]: JUMPIF R6 L6 
-      27 [-]: GETIMPORT R6 13 [nil]
+      27 [-]: GETIMPORT R6 13 [0xCBD666E1]
       28 [-]: LOADN R7 0   
       29 [-]: CALL R6 1 0  
       30 [-]: JUMPBACK L5  
-L 6:  31 [-]: GETIMPORT R6 15 [nil]
-      32 [-]: GETIMPORT R8 17 [nil]
+L 6:  31 [-]: GETIMPORT R6 15 [0x9BA7909F]
+      32 [-]: GETIMPORT R8 17 [0x7ED0A956]
       33 [-]: LOADK R9 K18 ["/Lotus/Interface/GenericVendor.swf"]
       34 [-]: CALL R8 1 -1 
       35 [-]: NAMECALL R6 R6 K19 [0xBCFB64AB]
       36 [-]: CALL R6 -1 1 
 L 7:  37 [-]: FASTCALL1 62 R6 L8
       38 [-]: MOVE R8 R6   
-      39 [-]: GETIMPORT R7 4 [nil]
+      39 [-]: GETIMPORT R7 4 [0x7B998233]
       40 [-]: CALL R7 1 1  
 L 8:  41 [-]: JUMPIF R7 L9 
-      42 [-]: GETIMPORT R7 13 [nil]
+      42 [-]: GETIMPORT R7 13 [0xCBD666E1]
       43 [-]: LOADN R8 0   
       44 [-]: CALL R7 1 0  
       45 [-]: JUMPBACK L7  
-L 9:  46 [-]: GETIMPORT R7 6 [nil]
+L 9:  46 [-]: GETIMPORT R7 6 ["_T"]
       47 [-]: LOADNIL R8   
       48 [-]: SETTABLEKS R8 R7 K8 ["GenericVendor_IgnoreOwned"]
       49 [-]: LOADB R7 1   
@@ -628,26 +628,26 @@ L 9:  46 [-]: GETIMPORT R7 6 [nil]
 ; Is_vararg:       0
 ; Max Stack Size:  11
 
-       0 [-]: GETIMPORT R4 1 [nil]
+       0 [-]: GETIMPORT R4 1 [0x89326C93]
        1 [-]: MOVE R6 R2   
        2 [-]: NAMECALL R4 R4 K2 [0x46A0EBF5]
        3 [-]: CALL R4 2 1  
        4 [-]: FASTCALL1 62 R4 L0
        5 [-]: MOVE R6 R4   
-       6 [-]: GETIMPORT R5 4 [nil]
+       6 [-]: GETIMPORT R5 4 [0x7B998233]
        7 [-]: CALL R5 1 1  
 L 0:   8 [-]: JUMPIF R5 L2 
        9 [-]: FASTCALL1 62 R1 L1
       10 [-]: MOVE R6 R1   
-      11 [-]: GETIMPORT R5 4 [nil]
+      11 [-]: GETIMPORT R5 4 [0x7B998233]
       12 [-]: CALL R5 1 1  
 L 1:  13 [-]: JUMPIFNOT R5 L3
 L 2:  14 [-]: RETURN R0 0  
 L 3:  15 [-]: GETTABLEKS R7 R1 K5 ["mPlayerAvatar"]
       16 [-]: NAMECALL R5 R4 K6 [0xF6C0229F]
       17 [-]: CALL R5 2 0  
-      18 [-]: GETIMPORT R5 8 [nil]
-      19 [-]: GETIMPORT R7 10 [nil]
+      18 [-]: GETIMPORT R5 8 [0x9BA7909F]
+      19 [-]: GETIMPORT R7 10 [0x7ED0A956]
       20 [-]: LOADK R8 K11 ["/Lotus/Interface/ThemedSyndicates.swf"]
       21 [-]: CALL R7 1 -1 
       22 [-]: NAMECALL R5 R5 K12 [0xBCFB64AB]
@@ -655,11 +655,11 @@ L 3:  15 [-]: GETTABLEKS R7 R1 K5 ["mPlayerAvatar"]
       24 [-]: LOADB R6 0   
 L 4:  25 [-]: FASTCALL1 62 R5 L5
       26 [-]: MOVE R8 R5   
-      27 [-]: GETIMPORT R7 4 [nil]
+      27 [-]: GETIMPORT R7 4 [0x7B998233]
       28 [-]: CALL R7 1 1  
 L 5:  29 [-]: JUMPIF R7 L7 
       30 [-]: JUMPXEQKNIL R3 L6
-      31 [-]: GETIMPORT R7 15 [nil]
+      31 [-]: GETIMPORT R7 15 [0xC6FA2EBA]
       32 [-]: MOVE R8 R3   
       33 [-]: CALL R7 1 1  
       34 [-]: LOADN R8 -3600
@@ -675,7 +675,7 @@ L 5:  29 [-]: JUMPIF R7 L7
       44 [-]: LOADB R6 1   
       45 [-]: JUMP L7
      
-L 6:  46 [-]: GETIMPORT R7 22 [nil]
+L 6:  46 [-]: GETIMPORT R7 22 [0xCBD666E1]
       47 [-]: LOADN R8 0   
       48 [-]: CALL R7 1 0  
       49 [-]: JUMPBACK L4  
@@ -691,23 +691,23 @@ L 7:  50 [-]: NOT R7 R6
 ; Is_vararg:       0
 ; Max Stack Size:  18
 
-       0 [-]: GETIMPORT R4 1 [nil]
+       0 [-]: GETIMPORT R4 1 [0x89326C93]
        1 [-]: MOVE R6 R2   
        2 [-]: NAMECALL R4 R4 K2 [0x46A0EBF5]
        3 [-]: CALL R4 2 1  
        4 [-]: FASTCALL1 62 R4 L0
        5 [-]: MOVE R6 R4   
-       6 [-]: GETIMPORT R5 4 [nil]
+       6 [-]: GETIMPORT R5 4 [0x7B998233]
        7 [-]: CALL R5 1 1  
 L 0:   8 [-]: JUMPIF R5 L3 
        9 [-]: FASTCALL1 62 R1 L1
       10 [-]: MOVE R6 R1   
-      11 [-]: GETIMPORT R5 4 [nil]
+      11 [-]: GETIMPORT R5 4 [0x7B998233]
       12 [-]: CALL R5 1 1  
 L 1:  13 [-]: JUMPIF R5 L3 
-      14 [-]: GETIMPORT R6 6 [nil]
+      14 [-]: GETIMPORT R6 6 [0x25D99D89]
       15 [-]: FASTCALL1 62 R6 L2
-      16 [-]: GETIMPORT R5 4 [nil]
+      16 [-]: GETIMPORT R5 4 [0x7B998233]
       17 [-]: CALL R5 1 1  
 L 2:  18 [-]: JUMPIFNOT R5 L4
 L 3:  19 [-]: RETURN R0 0  
@@ -719,32 +719,32 @@ L 4:  20 [-]: NEWTABLE R5 0 0
       25 [-]: GETTABLEKS R7 R8 K8 ["SOUND_SET_EIDOLON"]
       26 [-]: JUMPIFNOTEQ R6 R7 L9
       27 [-]: MOVE R8 R5   
-      28 [-]: GETIMPORT R9 10 [nil]
+      28 [-]: GETIMPORT R9 10 [0x7ED0A956]
       29 [-]: LOADK R10 K11 ["/Lotus/Types/Items/Fish/Eidolon/CommonFishItem"]
       30 [-]: CALL R9 1 -1 
       31 [-]: FASTCALL 52 L5
-      32 [-]: GETIMPORT R7 14 [nil]
+      32 [-]: GETIMPORT R7 14 [0x23D5322F]
       33 [-]: CALL R7 -1 0 
 L 5:  34 [-]: MOVE R8 R5   
-      35 [-]: GETIMPORT R9 10 [nil]
+      35 [-]: GETIMPORT R9 10 [0x7ED0A956]
       36 [-]: LOADK R10 K15 ["/Lotus/Types/Items/Fish/Eidolon/UncommonFishItem"]
       37 [-]: CALL R9 1 -1 
       38 [-]: FASTCALL 52 L6
-      39 [-]: GETIMPORT R7 14 [nil]
+      39 [-]: GETIMPORT R7 14 [0x23D5322F]
       40 [-]: CALL R7 -1 0 
 L 6:  41 [-]: MOVE R8 R5   
-      42 [-]: GETIMPORT R9 10 [nil]
+      42 [-]: GETIMPORT R9 10 [0x7ED0A956]
       43 [-]: LOADK R10 K16 ["/Lotus/Types/Items/Fish/Eidolon/RareFishItem"]
       44 [-]: CALL R9 1 -1 
       45 [-]: FASTCALL 52 L7
-      46 [-]: GETIMPORT R7 14 [nil]
+      46 [-]: GETIMPORT R7 14 [0x23D5322F]
       47 [-]: CALL R7 -1 0 
 L 7:  48 [-]: MOVE R8 R5   
-      49 [-]: GETIMPORT R9 10 [nil]
+      49 [-]: GETIMPORT R9 10 [0x7ED0A956]
       50 [-]: LOADK R10 K17 ["/Lotus/Types/Items/Fish/Eidolon/LegendaryFishItem"]
       51 [-]: CALL R9 1 -1 
       52 [-]: FASTCALL 52 L8
-      53 [-]: GETIMPORT R7 14 [nil]
+      53 [-]: GETIMPORT R7 14 [0x23D5322F]
       54 [-]: CALL R7 -1 0 
 L 8:  55 [-]: JUMP L18
     
@@ -752,32 +752,32 @@ L 9:  56 [-]: GETUPVAL R8 0
       57 [-]: GETTABLEKS R7 R8 K18 ["SOUND_SET_FORTUNA"]
       58 [-]: JUMPIFNOTEQ R6 R7 L14
       59 [-]: MOVE R8 R5   
-      60 [-]: GETIMPORT R9 10 [nil]
+      60 [-]: GETIMPORT R9 10 [0x7ED0A956]
       61 [-]: LOADK R10 K19 ["/Lotus/Types/Items/Fish/Solaris/CommonFishItem"]
       62 [-]: CALL R9 1 -1 
       63 [-]: FASTCALL 52 L10
-      64 [-]: GETIMPORT R7 14 [nil]
+      64 [-]: GETIMPORT R7 14 [0x23D5322F]
       65 [-]: CALL R7 -1 0 
 L10:  66 [-]: MOVE R8 R5   
-      67 [-]: GETIMPORT R9 10 [nil]
+      67 [-]: GETIMPORT R9 10 [0x7ED0A956]
       68 [-]: LOADK R10 K20 ["/Lotus/Types/Items/Fish/Solaris/UncommonFishItem"]
       69 [-]: CALL R9 1 -1 
       70 [-]: FASTCALL 52 L11
-      71 [-]: GETIMPORT R7 14 [nil]
+      71 [-]: GETIMPORT R7 14 [0x23D5322F]
       72 [-]: CALL R7 -1 0 
 L11:  73 [-]: MOVE R8 R5   
-      74 [-]: GETIMPORT R9 10 [nil]
+      74 [-]: GETIMPORT R9 10 [0x7ED0A956]
       75 [-]: LOADK R10 K21 ["/Lotus/Types/Items/Fish/Solaris/RareFishItem"]
       76 [-]: CALL R9 1 -1 
       77 [-]: FASTCALL 52 L12
-      78 [-]: GETIMPORT R7 14 [nil]
+      78 [-]: GETIMPORT R7 14 [0x23D5322F]
       79 [-]: CALL R7 -1 0 
 L12:  80 [-]: MOVE R8 R5   
-      81 [-]: GETIMPORT R9 10 [nil]
+      81 [-]: GETIMPORT R9 10 [0x7ED0A956]
       82 [-]: LOADK R10 K22 ["/Lotus/Types/Items/Fish/Solaris/LegendaryFishItem"]
       83 [-]: CALL R9 1 -1 
       84 [-]: FASTCALL 52 L13
-      85 [-]: GETIMPORT R7 14 [nil]
+      85 [-]: GETIMPORT R7 14 [0x23D5322F]
       86 [-]: CALL R7 -1 0 
 L13:  87 [-]: JUMP L18
     
@@ -785,35 +785,35 @@ L14:  88 [-]: GETUPVAL R8 0
       89 [-]: GETTABLEKS R7 R8 K23 ["SOUND_SET_OROKIN_TOWER"]
       90 [-]: JUMPIFNOTEQ R6 R7 L18
       91 [-]: MOVE R8 R5   
-      92 [-]: GETIMPORT R9 10 [nil]
+      92 [-]: GETIMPORT R9 10 [0x7ED0A956]
       93 [-]: LOADK R10 K24 ["/Lotus/Types/Items/Fish/Deimos/CommonFishItem"]
       94 [-]: CALL R9 1 -1 
       95 [-]: FASTCALL 52 L15
-      96 [-]: GETIMPORT R7 14 [nil]
+      96 [-]: GETIMPORT R7 14 [0x23D5322F]
       97 [-]: CALL R7 -1 0 
 L15:  98 [-]: MOVE R8 R5   
-      99 [-]: GETIMPORT R9 10 [nil]
+      99 [-]: GETIMPORT R9 10 [0x7ED0A956]
      100 [-]: LOADK R10 K25 ["/Lotus/Types/Items/Fish/Deimos/UncommonFishItem"]
      101 [-]: CALL R9 1 -1 
      102 [-]: FASTCALL 52 L16
-     103 [-]: GETIMPORT R7 14 [nil]
+     103 [-]: GETIMPORT R7 14 [0x23D5322F]
      104 [-]: CALL R7 -1 0 
 L16: 105 [-]: MOVE R8 R5   
-     106 [-]: GETIMPORT R9 10 [nil]
+     106 [-]: GETIMPORT R9 10 [0x7ED0A956]
      107 [-]: LOADK R10 K26 ["/Lotus/Types/Items/Fish/Deimos/RareFishItem"]
      108 [-]: CALL R9 1 -1 
      109 [-]: FASTCALL 52 L17
-     110 [-]: GETIMPORT R7 14 [nil]
+     110 [-]: GETIMPORT R7 14 [0x23D5322F]
      111 [-]: CALL R7 -1 0 
 L17: 112 [-]: MOVE R8 R5   
-     113 [-]: GETIMPORT R9 10 [nil]
+     113 [-]: GETIMPORT R9 10 [0x7ED0A956]
      114 [-]: LOADK R10 K27 ["/Lotus/Types/Items/Fish/Deimos/LegendaryFishItem"]
      115 [-]: CALL R9 1 -1 
      116 [-]: FASTCALL 52 L18
-     117 [-]: GETIMPORT R7 14 [nil]
+     117 [-]: GETIMPORT R7 14 [0x23D5322F]
      118 [-]: CALL R7 -1 0 
 L18: 119 [-]: LOADB R7 0   
-     120 [-]: GETIMPORT R8 6 [nil]
+     120 [-]: GETIMPORT R8 6 [0x25D99D89]
      121 [-]: NAMECALL R8 R8 K28 [0x25A6E75E]
      122 [-]: CALL R8 1 1  
      123 [-]: NAMECALL R8 R8 K29 [0xF4045B7E]
@@ -843,14 +843,14 @@ L21: 145 [-]: FORNLOOP R12 L20
 L22: 146 [-]: FORNLOOP R9 L19
 L23: 147 [-]: JUMPIF R7 L26
      148 [-]: GETTABLEKS R9 R1 K33 ["mTransmissionSet"]
-     149 [-]: GETIMPORT R11 35 [nil]
+     149 [-]: GETIMPORT R11 35 [0x0469F296]
      150 [-]: LOADK R12 K36 ["NoFish"]
      151 [-]: CALL R11 1 -1
      152 [-]: NAMECALL R9 R9 K37 [0x10C9EEF2]
      153 [-]: CALL R9 -1 1 
      154 [-]: FASTCALL1 62 R9 L24
      155 [-]: MOVE R11 R9  
-     156 [-]: GETIMPORT R10 4 [nil]
+     156 [-]: GETIMPORT R10 4 [0x7B998233]
      157 [-]: CALL R10 1 1 
 L24: 158 [-]: JUMPIF R10 L25
      159 [-]: MOVE R12 R9  
@@ -864,14 +864,14 @@ L25: 165 [-]: LOADB R10 1
      167 [-]: RETURN R0 0  
 L26: 168 [-]: JUMPXEQKNIL R3 L28
      169 [-]: GETTABLEKS R9 R1 K33 ["mTransmissionSet"]
-     170 [-]: GETIMPORT R11 35 [nil]
+     170 [-]: GETIMPORT R11 35 [0x0469F296]
      171 [-]: MOVE R12 R3  
      172 [-]: CALL R11 1 -1
      173 [-]: NAMECALL R9 R9 K37 [0x10C9EEF2]
      174 [-]: CALL R9 -1 1 
      175 [-]: FASTCALL1 62 R9 L27
      176 [-]: MOVE R11 R9  
-     177 [-]: GETIMPORT R10 4 [nil]
+     177 [-]: GETIMPORT R10 4 [0x7B998233]
      178 [-]: CALL R10 1 1 
 L27: 179 [-]: JUMPIF R10 L28
      180 [-]: MOVE R12 R9  
@@ -883,9 +883,9 @@ L27: 179 [-]: JUMPIF R10 L28
 L28: 186 [-]: GETTABLEKS R11 R1 K40 ["mPlayerAvatar"]
      187 [-]: NAMECALL R9 R4 K41 [0xF6C0229F]
      188 [-]: CALL R9 2 0  
-L29: 189 [-]: GETIMPORT R9 44 [nil]
+L29: 189 [-]: GETIMPORT R9 44 ["InFishMgmt"]
      190 [-]: JUMPIFNOT R9 L30
-     191 [-]: GETIMPORT R9 46 [nil]
+     191 [-]: GETIMPORT R9 46 [0xCBD666E1]
      192 [-]: LOADN R10 0  
      193 [-]: CALL R9 1 0  
      194 [-]: JUMPBACK L29 
@@ -901,15 +901,15 @@ L30: 195 [-]: LOADB R9 1
 ; Is_vararg:       0
 ; Max Stack Size:  19
 
-       0 [-]: GETIMPORT R1 2 [nil]
+       0 [-]: GETIMPORT R1 2 ["TaggedDialog"]
        1 [-]: JUMPXEQKNIL R1 L0 NOT
-       2 [-]: GETIMPORT R1 3 [nil]
+       2 [-]: GETIMPORT R1 3 ["_T"]
        3 [-]: NEWTABLE R2 0 0
        4 [-]: SETTABLEKS R2 R1 K1 ["TaggedDialog"]
 L 0:   5 [-]: GETUPVAL R2 0
        6 [-]: GETTABLEKS R1 R2 K4 [0x8BC3CFEC]
        7 [-]: CALL R1 0 0  
-       8 [-]: GETIMPORT R1 2 [nil]
+       8 [-]: GETIMPORT R1 2 ["TaggedDialog"]
        9 [-]: DUPTABLE R2 7
       10 [-]: LOADK R3 K8 ["/Lotus/Language/OstronCrafting/Crafting_CraftDialogTag"]
       11 [-]: SETTABLEKS R3 R2 K5 ["mName"]
@@ -919,7 +919,7 @@ L 0:   5 [-]: GETUPVAL R2 0
       15 [-]: MOVE R2 R2   
       16 [-]: SETTABLEKS R3 R2 K6 ["mCallback"]
       17 [-]: SETTABLEKS R2 R1 K9 ["OstronSmith_GoToCrafting"]
-      18 [-]: GETIMPORT R1 2 [nil]
+      18 [-]: GETIMPORT R1 2 ["TaggedDialog"]
       19 [-]: DUPTABLE R2 7
       20 [-]: LOADK R3 K10 ["/Lotus/Language/OstronCrafting/WeaponOfTheDay_DialogTag"]
       21 [-]: SETTABLEKS R3 R2 K5 ["mName"]
@@ -929,7 +929,7 @@ L 0:   5 [-]: GETUPVAL R2 0
       25 [-]: MOVE R2 R2   
       26 [-]: SETTABLEKS R3 R2 K6 ["mCallback"]
       27 [-]: SETTABLEKS R2 R1 K11 ["OstronSmith_GoToWeaponOfTheDay"]
-      28 [-]: GETIMPORT R1 2 [nil]
+      28 [-]: GETIMPORT R1 2 ["TaggedDialog"]
       29 [-]: DUPTABLE R2 7
       30 [-]: LOADK R3 K12 ["/Lotus/Language/OstronCrafting/Crafting_Favors"]
       31 [-]: SETTABLEKS R3 R2 K5 ["mName"]
@@ -939,7 +939,7 @@ L 0:   5 [-]: GETUPVAL R2 0
       35 [-]: MOVE R2 R2   
       36 [-]: SETTABLEKS R3 R2 K6 ["mCallback"]
       37 [-]: SETTABLEKS R2 R1 K13 ["OstronSmith_ShowFavors"]
-      38 [-]: GETIMPORT R1 2 [nil]
+      38 [-]: GETIMPORT R1 2 ["TaggedDialog"]
       39 [-]: DUPTABLE R2 7
       40 [-]: LOADK R3 K14 ["/Lotus/Language/OstronCrafting/Crafting_ActionsDialogTag"]
       41 [-]: SETTABLEKS R3 R2 K5 ["mName"]
@@ -949,7 +949,7 @@ L 0:   5 [-]: GETUPVAL R2 0
       45 [-]: MOVE R2 R2   
       46 [-]: SETTABLEKS R3 R2 K6 ["mCallback"]
       47 [-]: SETTABLEKS R2 R1 K15 ["OstronSmith_Actions"]
-      48 [-]: GETIMPORT R1 2 [nil]
+      48 [-]: GETIMPORT R1 2 ["TaggedDialog"]
       49 [-]: DUPTABLE R2 7
       50 [-]: LOADK R3 K16 ["/Lotus/Language/SolarisVenus/WeaponsmithCraftWeapon"]
       51 [-]: SETTABLEKS R3 R2 K5 ["mName"]
@@ -959,7 +959,7 @@ L 0:   5 [-]: GETUPVAL R2 0
       55 [-]: MOVE R2 R2   
       56 [-]: SETTABLEKS R3 R2 K6 ["mCallback"]
       57 [-]: SETTABLEKS R2 R1 K17 ["GunSmith_GoToCrafting"]
-      58 [-]: GETIMPORT R1 2 [nil]
+      58 [-]: GETIMPORT R1 2 ["TaggedDialog"]
       59 [-]: DUPTABLE R2 7
       60 [-]: LOADK R3 K10 ["/Lotus/Language/OstronCrafting/WeaponOfTheDay_DialogTag"]
       61 [-]: SETTABLEKS R3 R2 K5 ["mName"]
@@ -969,7 +969,7 @@ L 0:   5 [-]: GETUPVAL R2 0
       65 [-]: MOVE R2 R2   
       66 [-]: SETTABLEKS R3 R2 K6 ["mCallback"]
       67 [-]: SETTABLEKS R2 R1 K18 ["GunSmith_GoToWeaponOfTheDay"]
-      68 [-]: GETIMPORT R1 2 [nil]
+      68 [-]: GETIMPORT R1 2 ["TaggedDialog"]
       69 [-]: DUPTABLE R2 7
       70 [-]: LOADK R3 K19 ["/Lotus/Language/SolarisVenus/WeaponsmithBrowseWares"]
       71 [-]: SETTABLEKS R3 R2 K5 ["mName"]
@@ -979,7 +979,7 @@ L 0:   5 [-]: GETUPVAL R2 0
       75 [-]: MOVE R2 R2   
       76 [-]: SETTABLEKS R3 R2 K6 ["mCallback"]
       77 [-]: SETTABLEKS R2 R1 K20 ["GunSmith_ShowFavors"]
-      78 [-]: GETIMPORT R1 2 [nil]
+      78 [-]: GETIMPORT R1 2 ["TaggedDialog"]
       79 [-]: DUPTABLE R2 7
       80 [-]: LOADK R3 K21 ["/Lotus/Language/SolarisVenus/WeaponsmithOtherServices"]
       81 [-]: SETTABLEKS R3 R2 K5 ["mName"]
@@ -989,7 +989,7 @@ L 0:   5 [-]: GETUPVAL R2 0
       85 [-]: MOVE R2 R2   
       86 [-]: SETTABLEKS R3 R2 K6 ["mCallback"]
       87 [-]: SETTABLEKS R2 R1 K22 ["GunSmith_Actions"]
-      88 [-]: GETIMPORT R1 2 [nil]
+      88 [-]: GETIMPORT R1 2 ["TaggedDialog"]
       89 [-]: DUPTABLE R2 7
       90 [-]: LOADK R3 K10 ["/Lotus/Language/OstronCrafting/WeaponOfTheDay_DialogTag"]
       91 [-]: SETTABLEKS R3 R2 K5 ["mName"]
@@ -999,7 +999,7 @@ L 0:   5 [-]: GETUPVAL R2 0
       95 [-]: MOVE R2 R2   
       96 [-]: SETTABLEKS R3 R2 K6 ["mCallback"]
       97 [-]: SETTABLEKS R2 R1 K23 ["Fishmonger_DailySpecial"]
-      98 [-]: GETIMPORT R1 2 [nil]
+      98 [-]: GETIMPORT R1 2 ["TaggedDialog"]
       99 [-]: DUPTABLE R2 7
      100 [-]: LOADK R3 K12 ["/Lotus/Language/OstronCrafting/Crafting_Favors"]
      101 [-]: SETTABLEKS R3 R2 K5 ["mName"]
@@ -1009,7 +1009,7 @@ L 0:   5 [-]: GETUPVAL R2 0
      105 [-]: MOVE R2 R2   
      106 [-]: SETTABLEKS R3 R2 K6 ["mCallback"]
      107 [-]: SETTABLEKS R2 R1 K24 ["Fishmonger_ShowFavors"]
-     108 [-]: GETIMPORT R1 2 [nil]
+     108 [-]: GETIMPORT R1 2 ["TaggedDialog"]
      109 [-]: DUPTABLE R2 7
      110 [-]: LOADK R3 K25 ["/Lotus/Language/OstronCrafting/Fishmonger_DonateOption"]
      111 [-]: SETTABLEKS R3 R2 K5 ["mName"]
@@ -1019,7 +1019,7 @@ L 0:   5 [-]: GETUPVAL R2 0
      115 [-]: MOVE R2 R2   
      116 [-]: SETTABLEKS R3 R2 K6 ["mCallback"]
      117 [-]: SETTABLEKS R2 R1 K26 ["Fishmonger_ExchangeFish"]
-     118 [-]: GETIMPORT R1 2 [nil]
+     118 [-]: GETIMPORT R1 2 ["TaggedDialog"]
      119 [-]: DUPTABLE R2 7
      120 [-]: LOADK R3 K27 ["/Lotus/Language/OstronCrafting/Fishmonger_DissectOption"]
      121 [-]: SETTABLEKS R3 R2 K5 ["mName"]
@@ -1030,7 +1030,7 @@ L 0:   5 [-]: GETUPVAL R2 0
      126 [-]: SETTABLEKS R3 R2 K6 ["mCallback"]
      127 [-]: SETTABLEKS R2 R1 K28 ["Fishmonger_CutBait"]
      128 [-]: DUPCLOSURE R1 K29 []
-     129 [-]: GETIMPORT R2 2 [nil]
+     129 [-]: GETIMPORT R2 2 ["TaggedDialog"]
      130 [-]: DUPTABLE R3 31
      131 [-]: LOADK R4 K32 ["/Lotus/Language/SolarisVenus/DailySpecial"]
      132 [-]: SETTABLEKS R4 R3 K5 ["mName"]
@@ -1041,7 +1041,7 @@ L 0:   5 [-]: GETUPVAL R2 0
      137 [-]: MOVE R2 R2   
      138 [-]: SETTABLEKS R4 R3 K6 ["mCallback"]
      139 [-]: SETTABLEKS R3 R2 K33 ["SolarisFishmonger_DailySpecial"]
-     140 [-]: GETIMPORT R2 2 [nil]
+     140 [-]: GETIMPORT R2 2 ["TaggedDialog"]
      141 [-]: DUPTABLE R3 31
      142 [-]: LOADK R4 K34 ["/Lotus/Language/SolarisVenus/BrowseWares"]
      143 [-]: SETTABLEKS R4 R3 K5 ["mName"]
@@ -1052,7 +1052,7 @@ L 0:   5 [-]: GETUPVAL R2 0
      148 [-]: MOVE R2 R2   
      149 [-]: SETTABLEKS R4 R3 K6 ["mCallback"]
      150 [-]: SETTABLEKS R3 R2 K35 ["SolarisFishmonger_ShowFavors"]
-     151 [-]: GETIMPORT R2 2 [nil]
+     151 [-]: GETIMPORT R2 2 ["TaggedDialog"]
      152 [-]: DUPTABLE R3 31
      153 [-]: LOADK R4 K36 ["/Lotus/Language/SolarisVenus/Fishmonger_DonateOptionSV"]
      154 [-]: SETTABLEKS R4 R3 K5 ["mName"]
@@ -1063,7 +1063,7 @@ L 0:   5 [-]: GETUPVAL R2 0
      159 [-]: MOVE R2 R2   
      160 [-]: SETTABLEKS R4 R3 K6 ["mCallback"]
      161 [-]: SETTABLEKS R3 R2 K37 ["SolarisFishmonger_ExchangeFish"]
-     162 [-]: GETIMPORT R2 2 [nil]
+     162 [-]: GETIMPORT R2 2 ["TaggedDialog"]
      163 [-]: DUPTABLE R3 31
      164 [-]: LOADK R4 K38 ["/Lotus/Language/SolarisVenus/Fishmonger_DissectOptionSV"]
      165 [-]: SETTABLEKS R4 R3 K5 ["mName"]
@@ -1074,7 +1074,7 @@ L 0:   5 [-]: GETUPVAL R2 0
      170 [-]: MOVE R2 R2   
      171 [-]: SETTABLEKS R4 R3 K6 ["mCallback"]
      172 [-]: SETTABLEKS R3 R2 K39 ["SolarisFishmonger_CutBait"]
-     173 [-]: GETIMPORT R2 2 [nil]
+     173 [-]: GETIMPORT R2 2 ["TaggedDialog"]
      174 [-]: DUPTABLE R3 31
      175 [-]: LOADK R4 K40 ["/Lotus/Language/SolarisVenus/SolarisFishMongerVendorItems"]
      176 [-]: SETTABLEKS R4 R3 K5 ["mName"]
@@ -1085,7 +1085,7 @@ L 0:   5 [-]: GETUPVAL R2 0
      181 [-]: MOVE R2 R2   
      182 [-]: SETTABLEKS R4 R3 K6 ["mCallback"]
      183 [-]: SETTABLEKS R3 R2 K41 ["SolarisFishmonger_VendorItems"]
-     184 [-]: GETIMPORT R2 2 [nil]
+     184 [-]: GETIMPORT R2 2 ["TaggedDialog"]
      185 [-]: DUPTABLE R3 7
      186 [-]: LOADK R4 K12 ["/Lotus/Language/OstronCrafting/Crafting_Favors"]
      187 [-]: SETTABLEKS R4 R3 K5 ["mName"]
@@ -1095,7 +1095,7 @@ L 0:   5 [-]: GETUPVAL R2 0
      191 [-]: MOVE R2 R2   
      192 [-]: SETTABLEKS R4 R3 K6 ["mCallback"]
      193 [-]: SETTABLEKS R3 R2 K42 ["Prospector_ShowFavors"]
-     194 [-]: GETIMPORT R2 2 [nil]
+     194 [-]: GETIMPORT R2 2 ["TaggedDialog"]
      195 [-]: DUPTABLE R3 7
      196 [-]: LOADK R4 K10 ["/Lotus/Language/OstronCrafting/WeaponOfTheDay_DialogTag"]
      197 [-]: SETTABLEKS R4 R3 K5 ["mName"]
@@ -1105,7 +1105,7 @@ L 0:   5 [-]: GETUPVAL R2 0
      201 [-]: MOVE R2 R2   
      202 [-]: SETTABLEKS R4 R3 K6 ["mCallback"]
      203 [-]: SETTABLEKS R3 R2 K43 ["Prospector_DailySpecial"]
-     204 [-]: GETIMPORT R2 2 [nil]
+     204 [-]: GETIMPORT R2 2 ["TaggedDialog"]
      205 [-]: DUPTABLE R3 7
      206 [-]: LOADK R4 K44 ["/Lotus/Language/OstronCrafting/ProspectorStandingBonuses"]
      207 [-]: SETTABLEKS R4 R3 K5 ["mName"]
@@ -1113,7 +1113,7 @@ L 0:   5 [-]: GETUPVAL R2 0
      209 [-]: MOVE R2 R5   
      210 [-]: SETTABLEKS R4 R3 K6 ["mCallback"]
      211 [-]: SETTABLEKS R3 R2 K46 ["Prospector_SyndicateStandingBonuses"]
-     212 [-]: GETIMPORT R2 2 [nil]
+     212 [-]: GETIMPORT R2 2 ["TaggedDialog"]
      213 [-]: DUPTABLE R3 7
      214 [-]: LOADK R4 K47 ["/Lotus/Language/SolarisVenus/ProspectorBrowseWares"]
      215 [-]: SETTABLEKS R4 R3 K5 ["mName"]
@@ -1123,7 +1123,7 @@ L 0:   5 [-]: GETUPVAL R2 0
      219 [-]: MOVE R2 R2   
      220 [-]: SETTABLEKS R4 R3 K6 ["mCallback"]
      221 [-]: SETTABLEKS R3 R2 K48 ["SolarisProspector_ShowFavors"]
-     222 [-]: GETIMPORT R2 2 [nil]
+     222 [-]: GETIMPORT R2 2 ["TaggedDialog"]
      223 [-]: DUPTABLE R3 7
      224 [-]: LOADK R4 K49 ["/Lotus/Language/SolarisVenus/ProspectorDailySpecial"]
      225 [-]: SETTABLEKS R4 R3 K5 ["mName"]
@@ -1133,7 +1133,7 @@ L 0:   5 [-]: GETUPVAL R2 0
      229 [-]: MOVE R2 R2   
      230 [-]: SETTABLEKS R4 R3 K6 ["mCallback"]
      231 [-]: SETTABLEKS R3 R2 K50 ["SolarisProspector_DailySpecial"]
-     232 [-]: GETIMPORT R2 2 [nil]
+     232 [-]: GETIMPORT R2 2 ["TaggedDialog"]
      233 [-]: DUPTABLE R3 52
      234 [-]: LOADK R4 K53 ["/Lotus/Language/SolarisVenus/ProspectorStandingBonusesSV"]
      235 [-]: SETTABLEKS R4 R3 K5 ["mName"]
@@ -1143,7 +1143,7 @@ L 0:   5 [-]: GETUPVAL R2 0
      239 [-]: MOVE R2 R5   
      240 [-]: SETTABLEKS R4 R3 K6 ["mCallback"]
      241 [-]: SETTABLEKS R3 R2 K55 ["SolarisProspector_SyndicateStandingBonuses"]
-     242 [-]: GETIMPORT R2 2 [nil]
+     242 [-]: GETIMPORT R2 2 ["TaggedDialog"]
      243 [-]: DUPTABLE R3 7
      244 [-]: LOADK R4 K56 ["/Lotus/Language/OstronCrafting/AmpMod_DialogTag"]
      245 [-]: SETTABLEKS R4 R3 K5 ["mName"]
@@ -1153,7 +1153,7 @@ L 0:   5 [-]: GETUPVAL R2 0
      249 [-]: MOVE R2 R2   
      250 [-]: SETTABLEKS R4 R3 K6 ["mCallback"]
      251 [-]: SETTABLEKS R3 R2 K57 ["Quills_AmpCrafting"]
-     252 [-]: GETIMPORT R2 2 [nil]
+     252 [-]: GETIMPORT R2 2 ["TaggedDialog"]
      253 [-]: DUPTABLE R3 7
      254 [-]: LOADK R4 K14 ["/Lotus/Language/OstronCrafting/Crafting_ActionsDialogTag"]
      255 [-]: SETTABLEKS R4 R3 K5 ["mName"]
@@ -1163,7 +1163,7 @@ L 0:   5 [-]: GETUPVAL R2 0
      259 [-]: MOVE R2 R2   
      260 [-]: SETTABLEKS R4 R3 K6 ["mCallback"]
      261 [-]: SETTABLEKS R3 R2 K58 ["Quills_Actions"]
-     262 [-]: GETIMPORT R2 2 [nil]
+     262 [-]: GETIMPORT R2 2 ["TaggedDialog"]
      263 [-]: DUPTABLE R3 7
      264 [-]: LOADK R4 K59 ["/Lotus/Language/OstronCrafting/QuillsViewStanding"]
      265 [-]: SETTABLEKS R4 R3 K5 ["mName"]
@@ -1173,7 +1173,7 @@ L 0:   5 [-]: GETUPVAL R2 0
      269 [-]: MOVE R2 R2   
      270 [-]: SETTABLEKS R4 R3 K6 ["mCallback"]
      271 [-]: SETTABLEKS R3 R2 K60 ["Quills_Syndicate"]
-     272 [-]: GETIMPORT R2 2 [nil]
+     272 [-]: GETIMPORT R2 2 ["TaggedDialog"]
      273 [-]: DUPTABLE R3 7
      274 [-]: LOADK R4 K34 ["/Lotus/Language/SolarisVenus/BrowseWares"]
      275 [-]: SETTABLEKS R4 R3 K5 ["mName"]
@@ -1183,7 +1183,7 @@ L 0:   5 [-]: GETUPVAL R2 0
      279 [-]: MOVE R2 R2   
      280 [-]: SETTABLEKS R4 R3 K6 ["mCallback"]
      281 [-]: SETTABLEKS R3 R2 K61 ["Quills_ShowFavors"]
-     282 [-]: GETIMPORT R2 2 [nil]
+     282 [-]: GETIMPORT R2 2 ["TaggedDialog"]
      283 [-]: DUPTABLE R3 7
      284 [-]: LOADK R4 K62 ["/Lotus/Language/OstronCrafting/QuillsStandingBonuses"]
      285 [-]: SETTABLEKS R4 R3 K5 ["mName"]
@@ -1191,7 +1191,7 @@ L 0:   5 [-]: GETUPVAL R2 0
      287 [-]: MOVE R2 R5   
      288 [-]: SETTABLEKS R4 R3 K6 ["mCallback"]
      289 [-]: SETTABLEKS R3 R2 K64 ["Quills_SyndicateStandingBonuses"]
-     290 [-]: GETIMPORT R2 2 [nil]
+     290 [-]: GETIMPORT R2 2 ["TaggedDialog"]
      291 [-]: DUPTABLE R3 7
      292 [-]: LOADK R4 K65 ["/Lotus/Language/OstronCrafting/QuillsSaya"]
      293 [-]: SETTABLEKS R4 R3 K5 ["mName"]
@@ -1199,25 +1199,25 @@ L 0:   5 [-]: GETUPVAL R2 0
      295 [-]: SETTABLEKS R4 R3 K6 ["mCallback"]
      296 [-]: SETTABLEKS R3 R2 K67 ["Quills_Saya"]
      297 [-]: LOADN R2 0   
-     298 [-]: GETIMPORT R4 69 [nil]
+     298 [-]: GETIMPORT R4 69 [0x25D99D89]
      299 [-]: FASTCALL1 62 R4 L1
-     300 [-]: GETIMPORT R3 71 [nil]
+     300 [-]: GETIMPORT R3 71 [0x7B998233]
      301 [-]: CALL R3 1 1  
 L 1: 302 [-]: JUMPIF R3 L2 
-     303 [-]: GETIMPORT R3 69 [nil]
+     303 [-]: GETIMPORT R3 69 [0x25D99D89]
      304 [-]: NAMECALL R3 R3 K72 [0xD8159207]
      305 [-]: CALL R3 1 1  
      306 [-]: MOVE R2 R3   
 L 2: 307 [-]: DUPCLOSURE R3 K73 []
      308 [-]: DUPCLOSURE R4 K74 []
-     309 [-]: GETIMPORT R5 3 [nil]
-     310 [-]: GETIMPORT R6 76 [nil]
+     309 [-]: GETIMPORT R5 3 ["_T"]
+     310 [-]: GETIMPORT R6 76 ["SkipVendorDialog"]
      311 [-]: JUMPIF R6 L3 
      312 [-]: NEWTABLE R6 0 0
 L 3: 313 [-]: SETTABLEKS R6 R5 K75 ["SkipVendorDialog"]
-     314 [-]: GETIMPORT R5 76 [nil]
+     314 [-]: GETIMPORT R5 76 ["SkipVendorDialog"]
      315 [-]: SETTABLEKS R4 R5 K77 ["/Lotus/Language/SolarisVenus/SolarisUnitedContactName"]
-     316 [-]: GETIMPORT R5 2 [nil]
+     316 [-]: GETIMPORT R5 2 ["TaggedDialog"]
      317 [-]: DUPTABLE R6 31
      318 [-]: LOADK R7 K78 [""]
      319 [-]: SETTABLEKS R7 R6 K5 ["mName"]
@@ -1227,7 +1227,7 @@ L 3: 313 [-]: SETTABLEKS R6 R5 K75 ["SkipVendorDialog"]
      323 [-]: SETTABLEKS R6 R5 K80 ["LittleDuck_Warframe"]
      324 [-]: LOADN R5 3   
      325 [-]: JUMPIFNOTLE R5 R2 L4
-     326 [-]: GETIMPORT R5 2 [nil]
+     326 [-]: GETIMPORT R5 2 ["TaggedDialog"]
      327 [-]: DUPTABLE R6 31
      328 [-]: LOADK R7 K56 ["/Lotus/Language/OstronCrafting/AmpMod_DialogTag"]
      329 [-]: SETTABLEKS R7 R6 K5 ["mName"]
@@ -1238,7 +1238,7 @@ L 3: 313 [-]: SETTABLEKS R6 R5 K75 ["SkipVendorDialog"]
      334 [-]: MOVE R2 R2   
      335 [-]: SETTABLEKS R7 R6 K6 ["mCallback"]
      336 [-]: SETTABLEKS R6 R5 K81 ["SolarisUnited_AmpCrafting"]
-     337 [-]: GETIMPORT R5 2 [nil]
+     337 [-]: GETIMPORT R5 2 ["TaggedDialog"]
      338 [-]: DUPTABLE R6 31
      339 [-]: LOADK R7 K14 ["/Lotus/Language/OstronCrafting/Crafting_ActionsDialogTag"]
      340 [-]: SETTABLEKS R7 R6 K5 ["mName"]
@@ -1249,7 +1249,7 @@ L 3: 313 [-]: SETTABLEKS R6 R5 K75 ["SkipVendorDialog"]
      345 [-]: MOVE R2 R2   
      346 [-]: SETTABLEKS R7 R6 K6 ["mCallback"]
      347 [-]: SETTABLEKS R6 R5 K82 ["SolarisUnited_Actions"]
-     348 [-]: GETIMPORT R5 2 [nil]
+     348 [-]: GETIMPORT R5 2 ["TaggedDialog"]
      349 [-]: DUPTABLE R6 31
      350 [-]: LOADK R7 K83 ["/Lotus/Language/SolarisVenus/SolarisUnitedViewStanding"]
      351 [-]: SETTABLEKS R7 R6 K5 ["mName"]
@@ -1260,7 +1260,7 @@ L 3: 313 [-]: SETTABLEKS R6 R5 K75 ["SkipVendorDialog"]
      356 [-]: MOVE R2 R2   
      357 [-]: SETTABLEKS R7 R6 K6 ["mCallback"]
      358 [-]: SETTABLEKS R6 R5 K84 ["SolarisUnited_Syndicate"]
-     359 [-]: GETIMPORT R5 2 [nil]
+     359 [-]: GETIMPORT R5 2 ["TaggedDialog"]
      360 [-]: DUPTABLE R6 31
      361 [-]: LOADK R7 K34 ["/Lotus/Language/SolarisVenus/BrowseWares"]
      362 [-]: SETTABLEKS R7 R6 K5 ["mName"]
@@ -1271,7 +1271,7 @@ L 3: 313 [-]: SETTABLEKS R6 R5 K75 ["SkipVendorDialog"]
      367 [-]: MOVE R2 R2   
      368 [-]: SETTABLEKS R7 R6 K6 ["mCallback"]
      369 [-]: SETTABLEKS R6 R5 K85 ["SolarisUnited_Favors"]
-     370 [-]: GETIMPORT R5 2 [nil]
+     370 [-]: GETIMPORT R5 2 ["TaggedDialog"]
      371 [-]: DUPTABLE R6 31
      372 [-]: LOADK R7 K86 ["/Lotus/Language/SolarisVenus/SolarisUnitedStandingBonuses"]
      373 [-]: SETTABLEKS R7 R6 K5 ["mName"]
@@ -1280,7 +1280,7 @@ L 3: 313 [-]: SETTABLEKS R6 R5 K75 ["SkipVendorDialog"]
      376 [-]: MOVE R2 R5   
      377 [-]: SETTABLEKS R7 R6 K6 ["mCallback"]
      378 [-]: SETTABLEKS R6 R5 K88 ["SolarisUnited_SyndicateStandingBonuses"]
-     379 [-]: GETIMPORT R5 2 [nil]
+     379 [-]: GETIMPORT R5 2 ["TaggedDialog"]
      380 [-]: DUPTABLE R6 31
      381 [-]: LOADK R7 K89 ["/Lotus/Language/SolarisVenus/SolarisUnitedSentientInvasionStore"]
      382 [-]: SETTABLEKS R7 R6 K5 ["mName"]
@@ -1295,15 +1295,15 @@ L 3: 313 [-]: SETTABLEKS R6 R5 K75 ["SkipVendorDialog"]
      
 L 4: 391 [-]: LOADN R5 2   
      392 [-]: JUMPIFNOTEQ R2 R5 L6
-     393 [-]: GETIMPORT R5 3 [nil]
-     394 [-]: GETIMPORT R6 76 [nil]
+     393 [-]: GETIMPORT R5 3 ["_T"]
+     394 [-]: GETIMPORT R6 76 ["SkipVendorDialog"]
      395 [-]: JUMPIF R6 L5 
      396 [-]: NEWTABLE R6 0 0
 L 5: 397 [-]: SETTABLEKS R6 R5 K75 ["SkipVendorDialog"]
-     398 [-]: GETIMPORT R5 76 [nil]
+     398 [-]: GETIMPORT R5 76 ["SkipVendorDialog"]
      399 [-]: LOADB R6 1   
      400 [-]: SETTABLEKS R6 R5 K77 ["/Lotus/Language/SolarisVenus/SolarisUnitedContactName"]
-     401 [-]: GETIMPORT R5 2 [nil]
+     401 [-]: GETIMPORT R5 2 ["TaggedDialog"]
      402 [-]: DUPTABLE R6 31
      403 [-]: LOADK R7 K78 [""]
      404 [-]: SETTABLEKS R7 R6 K5 ["mName"]
@@ -1311,7 +1311,7 @@ L 5: 397 [-]: SETTABLEKS R6 R5 K75 ["SkipVendorDialog"]
      406 [-]: DUPCLOSURE R7 K91 []
      407 [-]: SETTABLEKS R7 R6 K6 ["mCallback"]
      408 [-]: SETTABLEKS R6 R5 K92 ["LittleDuck_Intro"]
-L 6: 409 [-]: GETIMPORT R5 2 [nil]
+L 6: 409 [-]: GETIMPORT R5 2 ["TaggedDialog"]
      410 [-]: DUPTABLE R6 93
      411 [-]: LOADK R7 K12 ["/Lotus/Language/OstronCrafting/Crafting_Favors"]
      412 [-]: SETTABLEKS R7 R6 K5 ["mName"]
@@ -1323,7 +1323,7 @@ L 6: 409 [-]: GETIMPORT R5 2 [nil]
      418 [-]: DUPCLOSURE R7 K94 []
      419 [-]: SETTABLEKS R7 R6 K30 ["mCondition"]
      420 [-]: SETTABLEKS R6 R5 K95 ["MaskSeller_VendorItems"]
-     421 [-]: GETIMPORT R5 2 [nil]
+     421 [-]: GETIMPORT R5 2 ["TaggedDialog"]
      422 [-]: DUPTABLE R6 7
      423 [-]: LOADK R7 K12 ["/Lotus/Language/OstronCrafting/Crafting_Favors"]
      424 [-]: SETTABLEKS R7 R6 K5 ["mName"]
@@ -1333,7 +1333,7 @@ L 6: 409 [-]: GETIMPORT R5 2 [nil]
      428 [-]: MOVE R2 R2   
      429 [-]: SETTABLEKS R7 R6 K6 ["mCallback"]
      430 [-]: SETTABLEKS R6 R5 K96 ["PetVendor_Items"]
-     431 [-]: GETIMPORT R5 2 [nil]
+     431 [-]: GETIMPORT R5 2 ["TaggedDialog"]
      432 [-]: DUPTABLE R6 7
      433 [-]: LOADK R7 K40 ["/Lotus/Language/SolarisVenus/SolarisFishMongerVendorItems"]
      434 [-]: SETTABLEKS R7 R6 K5 ["mName"]
@@ -1343,7 +1343,7 @@ L 6: 409 [-]: GETIMPORT R5 2 [nil]
      438 [-]: MOVE R2 R2   
      439 [-]: SETTABLEKS R7 R6 K6 ["mCallback"]
      440 [-]: SETTABLEKS R6 R5 K97 ["PetVendor_Tags"]
-     441 [-]: GETIMPORT R5 2 [nil]
+     441 [-]: GETIMPORT R5 2 ["TaggedDialog"]
      442 [-]: DUPTABLE R6 7
      443 [-]: LOADK R7 K98 ["/Lotus/Language/OstronCrafting/Crafting_FavorsBarter"]
      444 [-]: SETTABLEKS R7 R6 K5 ["mName"]
@@ -1353,7 +1353,7 @@ L 6: 409 [-]: GETIMPORT R5 2 [nil]
      448 [-]: MOVE R2 R2   
      449 [-]: SETTABLEKS R7 R6 K6 ["mCallback"]
      450 [-]: SETTABLEKS R6 R5 K99 ["PetVendor_Trade"]
-     451 [-]: GETIMPORT R5 2 [nil]
+     451 [-]: GETIMPORT R5 2 ["TaggedDialog"]
      452 [-]: DUPTABLE R6 52
      453 [-]: LOADK R7 K100 ["/Lotus/Language/OstronCrafting/Crafting_CraftMoaPetDialogTag"]
      454 [-]: SETTABLEKS R7 R6 K5 ["mName"]
@@ -1365,7 +1365,7 @@ L 6: 409 [-]: GETIMPORT R5 2 [nil]
      460 [-]: MOVE R2 R2   
      461 [-]: SETTABLEKS R7 R6 K6 ["mCallback"]
      462 [-]: SETTABLEKS R6 R5 K101 ["MoaSmith_GoToCrafting"]
-     463 [-]: GETIMPORT R5 2 [nil]
+     463 [-]: GETIMPORT R5 2 ["TaggedDialog"]
      464 [-]: DUPTABLE R6 52
      465 [-]: LOADK R7 K102 ["/Lotus/Language/OstronCrafting/Crafting_CraftZanukaPetDialogTag"]
      466 [-]: SETTABLEKS R7 R6 K5 ["mName"]
@@ -1377,7 +1377,7 @@ L 6: 409 [-]: GETIMPORT R5 2 [nil]
      472 [-]: MOVE R2 R2   
      473 [-]: SETTABLEKS R7 R6 K6 ["mCallback"]
      474 [-]: SETTABLEKS R6 R5 K103 ["MoaSmith_GoToZanukaCrafting"]
-     475 [-]: GETIMPORT R5 2 [nil]
+     475 [-]: GETIMPORT R5 2 ["TaggedDialog"]
      476 [-]: DUPTABLE R6 7
      477 [-]: LOADK R7 K10 ["/Lotus/Language/OstronCrafting/WeaponOfTheDay_DialogTag"]
      478 [-]: SETTABLEKS R7 R6 K5 ["mName"]
@@ -1387,7 +1387,7 @@ L 6: 409 [-]: GETIMPORT R5 2 [nil]
      482 [-]: MOVE R2 R2   
      483 [-]: SETTABLEKS R7 R6 K6 ["mCallback"]
      484 [-]: SETTABLEKS R6 R5 K104 ["MoaSmith_GoToWeaponOfTheDay"]
-     485 [-]: GETIMPORT R5 2 [nil]
+     485 [-]: GETIMPORT R5 2 ["TaggedDialog"]
      486 [-]: DUPTABLE R6 7
      487 [-]: LOADK R7 K21 ["/Lotus/Language/SolarisVenus/WeaponsmithOtherServices"]
      488 [-]: SETTABLEKS R7 R6 K5 ["mName"]
@@ -1397,7 +1397,7 @@ L 6: 409 [-]: GETIMPORT R5 2 [nil]
      492 [-]: MOVE R2 R2   
      493 [-]: SETTABLEKS R7 R6 K6 ["mCallback"]
      494 [-]: SETTABLEKS R6 R5 K105 ["MoaSmith_Actions"]
-     495 [-]: GETIMPORT R5 2 [nil]
+     495 [-]: GETIMPORT R5 2 ["TaggedDialog"]
      496 [-]: DUPTABLE R6 7
      497 [-]: LOADK R7 K12 ["/Lotus/Language/OstronCrafting/Crafting_Favors"]
      498 [-]: SETTABLEKS R7 R6 K5 ["mName"]
@@ -1407,7 +1407,7 @@ L 6: 409 [-]: GETIMPORT R5 2 [nil]
      502 [-]: MOVE R2 R2   
      503 [-]: SETTABLEKS R7 R6 K6 ["mCallback"]
      504 [-]: SETTABLEKS R6 R5 K106 ["MoaSmith_ShowFavors"]
-     505 [-]: GETIMPORT R5 2 [nil]
+     505 [-]: GETIMPORT R5 2 ["TaggedDialog"]
      506 [-]: DUPTABLE R6 7
      507 [-]: LOADK R7 K107 ["/Lotus/Language/SolarisVenus/VentkidsViewStanding"]
      508 [-]: SETTABLEKS R7 R6 K5 ["mName"]
@@ -1417,7 +1417,7 @@ L 6: 409 [-]: GETIMPORT R5 2 [nil]
      512 [-]: MOVE R2 R2   
      513 [-]: SETTABLEKS R7 R6 K6 ["mCallback"]
      514 [-]: SETTABLEKS R6 R5 K108 ["HBVendor_Syndicate"]
-     515 [-]: GETIMPORT R5 2 [nil]
+     515 [-]: GETIMPORT R5 2 ["TaggedDialog"]
      516 [-]: DUPTABLE R6 52
      517 [-]: LOADK R7 K109 ["/Lotus/Language/Hoverboards/Crafting_CraftHBDialogTag"]
      518 [-]: SETTABLEKS R7 R6 K5 ["mName"]
@@ -1429,7 +1429,7 @@ L 6: 409 [-]: GETIMPORT R5 2 [nil]
      524 [-]: MOVE R2 R2   
      525 [-]: SETTABLEKS R7 R6 K6 ["mCallback"]
      526 [-]: SETTABLEKS R6 R5 K110 ["HBVendor_GoToCrafting"]
-     527 [-]: GETIMPORT R5 2 [nil]
+     527 [-]: GETIMPORT R5 2 ["TaggedDialog"]
      528 [-]: DUPTABLE R6 7
      529 [-]: LOADK R7 K10 ["/Lotus/Language/OstronCrafting/WeaponOfTheDay_DialogTag"]
      530 [-]: SETTABLEKS R7 R6 K5 ["mName"]
@@ -1439,7 +1439,7 @@ L 6: 409 [-]: GETIMPORT R5 2 [nil]
      534 [-]: MOVE R2 R2   
      535 [-]: SETTABLEKS R7 R6 K6 ["mCallback"]
      536 [-]: SETTABLEKS R6 R5 K111 ["HBVendor_GoToWeaponOfTheDay"]
-     537 [-]: GETIMPORT R5 2 [nil]
+     537 [-]: GETIMPORT R5 2 ["TaggedDialog"]
      538 [-]: DUPTABLE R6 52
      539 [-]: LOADK R7 K12 ["/Lotus/Language/OstronCrafting/Crafting_Favors"]
      540 [-]: SETTABLEKS R7 R6 K5 ["mName"]
@@ -1451,7 +1451,7 @@ L 6: 409 [-]: GETIMPORT R5 2 [nil]
      546 [-]: MOVE R2 R2   
      547 [-]: SETTABLEKS R7 R6 K6 ["mCallback"]
      548 [-]: SETTABLEKS R6 R5 K112 ["HBVendor_ShowFavors"]
-     549 [-]: GETIMPORT R5 2 [nil]
+     549 [-]: GETIMPORT R5 2 ["TaggedDialog"]
      550 [-]: DUPTABLE R6 7
      551 [-]: LOADK R7 K21 ["/Lotus/Language/SolarisVenus/WeaponsmithOtherServices"]
      552 [-]: SETTABLEKS R7 R6 K5 ["mName"]
@@ -1461,7 +1461,7 @@ L 6: 409 [-]: GETIMPORT R5 2 [nil]
      556 [-]: MOVE R2 R2   
      557 [-]: SETTABLEKS R7 R6 K6 ["mCallback"]
      558 [-]: SETTABLEKS R6 R5 K113 ["HBVendor_Actions"]
-     559 [-]: GETIMPORT R5 2 [nil]
+     559 [-]: GETIMPORT R5 2 ["TaggedDialog"]
      560 [-]: DUPTABLE R6 7
      561 [-]: LOADK R7 K114 ["/Lotus/Language/SolarisVenus/VentkidsStandingBonuses"]
      562 [-]: SETTABLEKS R7 R6 K5 ["mName"]
@@ -1469,7 +1469,7 @@ L 6: 409 [-]: GETIMPORT R5 2 [nil]
      564 [-]: MOVE R2 R5   
      565 [-]: SETTABLEKS R7 R6 K6 ["mCallback"]
      566 [-]: SETTABLEKS R6 R5 K116 ["HBVendor_SyndicateStandingBonuses"]
-     567 [-]: GETIMPORT R5 2 [nil]
+     567 [-]: GETIMPORT R5 2 ["TaggedDialog"]
      568 [-]: DUPTABLE R6 7
      569 [-]: LOADK R7 K117 ["/Lotus/Language/SolarisVenus/DebtTokenVendorFreeDebtBonds"]
      570 [-]: SETTABLEKS R7 R6 K5 ["mName"]
@@ -1479,7 +1479,7 @@ L 6: 409 [-]: GETIMPORT R5 2 [nil]
      574 [-]: MOVE R2 R2   
      575 [-]: SETTABLEKS R7 R6 K6 ["mCallback"]
      576 [-]: SETTABLEKS R6 R5 K118 ["DebtTokenVendor_FreeDebtBonds"]
-     577 [-]: GETIMPORT R5 2 [nil]
+     577 [-]: GETIMPORT R5 2 ["TaggedDialog"]
      578 [-]: DUPTABLE R6 7
      579 [-]: LOADK R7 K119 ["/Lotus/Language/SolarisVenus/DebtTokenVendorItems"]
      580 [-]: SETTABLEKS R7 R6 K5 ["mName"]
@@ -1489,7 +1489,7 @@ L 6: 409 [-]: GETIMPORT R5 2 [nil]
      584 [-]: MOVE R2 R2   
      585 [-]: SETTABLEKS R7 R6 K6 ["mCallback"]
      586 [-]: SETTABLEKS R6 R5 K120 ["DebtTokenVendor_VendorItems"]
-     587 [-]: GETIMPORT R5 2 [nil]
+     587 [-]: GETIMPORT R5 2 ["TaggedDialog"]
      588 [-]: DUPTABLE R6 93
      589 [-]: LOADK R7 K121 ["/Lotus/Language/SolarisVenus/DebtTokenVendorCrewMembers"]
      590 [-]: SETTABLEKS R7 R6 K5 ["mName"]
@@ -1501,7 +1501,7 @@ L 6: 409 [-]: GETIMPORT R5 2 [nil]
      596 [-]: DUPCLOSURE R7 K122 []
      597 [-]: SETTABLEKS R7 R6 K30 ["mCondition"]
      598 [-]: SETTABLEKS R6 R5 K123 ["DebtTokenVendor_CrewMembers"]
-     599 [-]: GETIMPORT R5 2 [nil]
+     599 [-]: GETIMPORT R5 2 ["TaggedDialog"]
      600 [-]: DUPTABLE R6 52
      601 [-]: LOADK R7 K124 ["/Lotus/Language/SolarisVenus/DebtTokenVendorStandingBonuses"]
      602 [-]: SETTABLEKS R7 R6 K5 ["mName"]
@@ -1511,7 +1511,7 @@ L 6: 409 [-]: GETIMPORT R5 2 [nil]
      606 [-]: MOVE R2 R5   
      607 [-]: SETTABLEKS R7 R6 K6 ["mCallback"]
      608 [-]: SETTABLEKS R6 R5 K126 ["DebtTokenVendor_SyndicateStandingBonuses"]
-     609 [-]: GETIMPORT R5 2 [nil]
+     609 [-]: GETIMPORT R5 2 ["TaggedDialog"]
      610 [-]: DUPTABLE R6 7
      611 [-]: LOADK R7 K127 ["/Lotus/Language/InfestedMicroplanet/HivemindTokenVendorCommissions"]
      612 [-]: SETTABLEKS R7 R6 K5 ["mName"]
@@ -1521,7 +1521,7 @@ L 6: 409 [-]: GETIMPORT R5 2 [nil]
      616 [-]: MOVE R2 R2   
      617 [-]: SETTABLEKS R7 R6 K6 ["mCallback"]
      618 [-]: SETTABLEKS R6 R5 K128 ["HivemindTokenVendor_Commissions"]
-     619 [-]: GETIMPORT R5 2 [nil]
+     619 [-]: GETIMPORT R5 2 ["TaggedDialog"]
      620 [-]: DUPTABLE R6 7
      621 [-]: LOADK R7 K129 ["/Lotus/Language/InfestedMicroplanet/HivemindTokenVendorProducts"]
      622 [-]: SETTABLEKS R7 R6 K5 ["mName"]
@@ -1531,7 +1531,7 @@ L 6: 409 [-]: GETIMPORT R5 2 [nil]
      626 [-]: MOVE R2 R2   
      627 [-]: SETTABLEKS R7 R6 K6 ["mCallback"]
      628 [-]: SETTABLEKS R6 R5 K130 ["HivemindTokenVendor_Products"]
-     629 [-]: GETIMPORT R5 2 [nil]
+     629 [-]: GETIMPORT R5 2 ["TaggedDialog"]
      630 [-]: DUPTABLE R6 93
      631 [-]: LOADK R7 K12 ["/Lotus/Language/OstronCrafting/Crafting_Favors"]
      632 [-]: SETTABLEKS R7 R6 K5 ["mName"]
@@ -1543,7 +1543,7 @@ L 6: 409 [-]: GETIMPORT R5 2 [nil]
      638 [-]: DUPCLOSURE R7 K131 []
      639 [-]: SETTABLEKS R7 R6 K30 ["mCondition"]
      640 [-]: SETTABLEKS R6 R5 K132 ["HivemindTokenVendor_Items"]
-     641 [-]: GETIMPORT R5 2 [nil]
+     641 [-]: GETIMPORT R5 2 ["TaggedDialog"]
      642 [-]: DUPTABLE R6 7
      643 [-]: LOADK R7 K133 ["/Lotus/Language/InfestedMicroplanet/HivemindTokenVendorBarter"]
      644 [-]: SETTABLEKS R7 R6 K5 ["mName"]
@@ -1553,7 +1553,7 @@ L 6: 409 [-]: GETIMPORT R5 2 [nil]
      648 [-]: MOVE R2 R2   
      649 [-]: SETTABLEKS R7 R6 K6 ["mCallback"]
      650 [-]: SETTABLEKS R6 R5 K134 ["HivemindTokenVendor_Trade"]
-     651 [-]: GETIMPORT R5 2 [nil]
+     651 [-]: GETIMPORT R5 2 ["TaggedDialog"]
      652 [-]: DUPTABLE R6 52
      653 [-]: LOADK R7 K135 ["/Lotus/Language/InfestedMicroplanet/HivemindTokenVendorStandingBonuses"]
      654 [-]: SETTABLEKS R7 R6 K5 ["mName"]
@@ -1563,7 +1563,7 @@ L 6: 409 [-]: GETIMPORT R5 2 [nil]
      658 [-]: MOVE R2 R5   
      659 [-]: SETTABLEKS R7 R6 K6 ["mCallback"]
      660 [-]: SETTABLEKS R6 R5 K137 ["HivemindTokenVendor_SyndicateStandingBonuses"]
-     661 [-]: GETIMPORT R5 2 [nil]
+     661 [-]: GETIMPORT R5 2 ["TaggedDialog"]
      662 [-]: DUPTABLE R6 7
      663 [-]: LOADK R7 K138 ["/Lotus/Language/InfestedMicroplanet/HivemindProspectorCommissions"]
      664 [-]: SETTABLEKS R7 R6 K5 ["mName"]
@@ -1573,7 +1573,7 @@ L 6: 409 [-]: GETIMPORT R5 2 [nil]
      668 [-]: MOVE R2 R2   
      669 [-]: SETTABLEKS R7 R6 K6 ["mCallback"]
      670 [-]: SETTABLEKS R6 R5 K139 ["HivemindProspector_Commissions"]
-     671 [-]: GETIMPORT R5 2 [nil]
+     671 [-]: GETIMPORT R5 2 ["TaggedDialog"]
      672 [-]: DUPTABLE R6 7
      673 [-]: LOADK R7 K12 ["/Lotus/Language/OstronCrafting/Crafting_Favors"]
      674 [-]: SETTABLEKS R7 R6 K5 ["mName"]
@@ -1583,7 +1583,7 @@ L 6: 409 [-]: GETIMPORT R5 2 [nil]
      678 [-]: MOVE R2 R2   
      679 [-]: SETTABLEKS R7 R6 K6 ["mCallback"]
      680 [-]: SETTABLEKS R6 R5 K140 ["HivemindProspector_ShowFavors"]
-     681 [-]: GETIMPORT R5 2 [nil]
+     681 [-]: GETIMPORT R5 2 ["TaggedDialog"]
      682 [-]: DUPTABLE R6 7
      683 [-]: LOADK R7 K10 ["/Lotus/Language/OstronCrafting/WeaponOfTheDay_DialogTag"]
      684 [-]: SETTABLEKS R7 R6 K5 ["mName"]
@@ -1593,7 +1593,7 @@ L 6: 409 [-]: GETIMPORT R5 2 [nil]
      688 [-]: MOVE R2 R2   
      689 [-]: SETTABLEKS R7 R6 K6 ["mCallback"]
      690 [-]: SETTABLEKS R6 R5 K141 ["HivemindProspector_DailySpecial"]
-     691 [-]: GETIMPORT R5 2 [nil]
+     691 [-]: GETIMPORT R5 2 ["TaggedDialog"]
      692 [-]: DUPTABLE R6 7
      693 [-]: LOADK R7 K142 ["/Lotus/Language/InfestedMicroplanet/HivemindProspectorLastWishManifest"]
      694 [-]: SETTABLEKS R7 R6 K5 ["mName"]
@@ -1603,7 +1603,7 @@ L 6: 409 [-]: GETIMPORT R5 2 [nil]
      698 [-]: MOVE R2 R2   
      699 [-]: SETTABLEKS R7 R6 K6 ["mCallback"]
      700 [-]: SETTABLEKS R6 R5 K143 ["HivemindProspector_LastWishManifest"]
-     701 [-]: GETIMPORT R5 2 [nil]
+     701 [-]: GETIMPORT R5 2 ["TaggedDialog"]
      702 [-]: DUPTABLE R6 7
      703 [-]: LOADK R7 K144 ["/Lotus/Language/InfestedMicroplanet/HivemindFishmongerCommissions"]
      704 [-]: SETTABLEKS R7 R6 K5 ["mName"]
@@ -1614,7 +1614,7 @@ L 6: 409 [-]: GETIMPORT R5 2 [nil]
      709 [-]: MOVE R2 R2   
      710 [-]: SETTABLEKS R7 R6 K6 ["mCallback"]
      711 [-]: SETTABLEKS R6 R5 K145 ["HivemindFishmonger_Commissions"]
-     712 [-]: GETIMPORT R5 2 [nil]
+     712 [-]: GETIMPORT R5 2 ["TaggedDialog"]
      713 [-]: DUPTABLE R6 7
      714 [-]: LOADK R7 K10 ["/Lotus/Language/OstronCrafting/WeaponOfTheDay_DialogTag"]
      715 [-]: SETTABLEKS R7 R6 K5 ["mName"]
@@ -1625,7 +1625,7 @@ L 6: 409 [-]: GETIMPORT R5 2 [nil]
      720 [-]: MOVE R2 R2   
      721 [-]: SETTABLEKS R7 R6 K6 ["mCallback"]
      722 [-]: SETTABLEKS R6 R5 K146 ["HivemindFishmonger_DailySpecial"]
-     723 [-]: GETIMPORT R5 2 [nil]
+     723 [-]: GETIMPORT R5 2 ["TaggedDialog"]
      724 [-]: DUPTABLE R6 7
      725 [-]: LOADK R7 K12 ["/Lotus/Language/OstronCrafting/Crafting_Favors"]
      726 [-]: SETTABLEKS R7 R6 K5 ["mName"]
@@ -1636,7 +1636,7 @@ L 6: 409 [-]: GETIMPORT R5 2 [nil]
      731 [-]: MOVE R2 R2   
      732 [-]: SETTABLEKS R7 R6 K6 ["mCallback"]
      733 [-]: SETTABLEKS R6 R5 K147 ["HivemindFishmonger_ShowFavors"]
-     734 [-]: GETIMPORT R5 2 [nil]
+     734 [-]: GETIMPORT R5 2 ["TaggedDialog"]
      735 [-]: DUPTABLE R6 7
      736 [-]: LOADK R7 K27 ["/Lotus/Language/OstronCrafting/Fishmonger_DissectOption"]
      737 [-]: SETTABLEKS R7 R6 K5 ["mName"]
@@ -1647,7 +1647,7 @@ L 6: 409 [-]: GETIMPORT R5 2 [nil]
      742 [-]: MOVE R2 R2   
      743 [-]: SETTABLEKS R7 R6 K6 ["mCallback"]
      744 [-]: SETTABLEKS R6 R5 K148 ["HivemindFishmonger_CutBait"]
-     745 [-]: GETIMPORT R5 2 [nil]
+     745 [-]: GETIMPORT R5 2 ["TaggedDialog"]
      746 [-]: DUPTABLE R6 52
      747 [-]: LOADK R7 K149 ["/Lotus/Language/InfestedMicroplanet/HivemindKubrowCraftingScreen"]
      748 [-]: SETTABLEKS R7 R6 K5 ["mName"]
@@ -1660,7 +1660,7 @@ L 6: 409 [-]: GETIMPORT R5 2 [nil]
      755 [-]: MOVE R2 R2   
      756 [-]: SETTABLEKS R7 R6 K6 ["mCallback"]
      757 [-]: SETTABLEKS R6 R5 K150 ["HivemindPetVendor_KubrowCrafting"]
-     758 [-]: GETIMPORT R5 2 [nil]
+     758 [-]: GETIMPORT R5 2 ["TaggedDialog"]
      759 [-]: DUPTABLE R6 52
      760 [-]: LOADK R7 K151 ["/Lotus/Language/InfestedMicroplanet/HivemindCatbrowCraftingScreen"]
      761 [-]: SETTABLEKS R7 R6 K5 ["mName"]
@@ -1673,7 +1673,7 @@ L 6: 409 [-]: GETIMPORT R5 2 [nil]
      768 [-]: MOVE R2 R2   
      769 [-]: SETTABLEKS R7 R6 K6 ["mCallback"]
      770 [-]: SETTABLEKS R6 R5 K152 ["HivemindPetVendor_CatbrowCrafting"]
-     771 [-]: GETIMPORT R5 2 [nil]
+     771 [-]: GETIMPORT R5 2 ["TaggedDialog"]
      772 [-]: DUPTABLE R6 7
      773 [-]: LOADK R7 K153 ["/Lotus/Language/InfestedMicroplanet/HivemindPetActions"]
      774 [-]: SETTABLEKS R7 R6 K5 ["mName"]
@@ -1684,7 +1684,7 @@ L 6: 409 [-]: GETIMPORT R5 2 [nil]
      779 [-]: MOVE R2 R2   
      780 [-]: SETTABLEKS R7 R6 K6 ["mCallback"]
      781 [-]: SETTABLEKS R6 R5 K154 ["HivemindPetVendor_Actions"]
-     782 [-]: GETIMPORT R5 2 [nil]
+     782 [-]: GETIMPORT R5 2 ["TaggedDialog"]
      783 [-]: DUPTABLE R6 7
      784 [-]: LOADK R7 K155 ["/Lotus/Language/InfestedMicroplanet/HivemindPetVendorCommissions"]
      785 [-]: SETTABLEKS R7 R6 K5 ["mName"]
@@ -1695,7 +1695,7 @@ L 6: 409 [-]: GETIMPORT R5 2 [nil]
      790 [-]: MOVE R2 R2   
      791 [-]: SETTABLEKS R7 R6 K6 ["mCallback"]
      792 [-]: SETTABLEKS R6 R5 K156 ["HivemindPetVendor_Commissions"]
-     793 [-]: GETIMPORT R5 2 [nil]
+     793 [-]: GETIMPORT R5 2 ["TaggedDialog"]
      794 [-]: DUPTABLE R6 7
      795 [-]: LOADK R7 K12 ["/Lotus/Language/OstronCrafting/Crafting_Favors"]
      796 [-]: SETTABLEKS R7 R6 K5 ["mName"]
@@ -1706,7 +1706,7 @@ L 6: 409 [-]: GETIMPORT R5 2 [nil]
      801 [-]: MOVE R2 R2   
      802 [-]: SETTABLEKS R7 R6 K6 ["mCallback"]
      803 [-]: SETTABLEKS R6 R5 K157 ["HivemindPetVendor_Items"]
-     804 [-]: GETIMPORT R5 2 [nil]
+     804 [-]: GETIMPORT R5 2 ["TaggedDialog"]
      805 [-]: DUPTABLE R6 7
      806 [-]: LOADK R7 K40 ["/Lotus/Language/SolarisVenus/SolarisFishMongerVendorItems"]
      807 [-]: SETTABLEKS R7 R6 K5 ["mName"]
@@ -1717,7 +1717,7 @@ L 6: 409 [-]: GETIMPORT R5 2 [nil]
      812 [-]: MOVE R2 R2   
      813 [-]: SETTABLEKS R7 R6 K6 ["mCallback"]
      814 [-]: SETTABLEKS R6 R5 K158 ["HivemindPetVendor_Tags"]
-     815 [-]: GETIMPORT R5 2 [nil]
+     815 [-]: GETIMPORT R5 2 ["TaggedDialog"]
      816 [-]: DUPTABLE R6 7
      817 [-]: LOADK R7 K10 ["/Lotus/Language/OstronCrafting/WeaponOfTheDay_DialogTag"]
      818 [-]: SETTABLEKS R7 R6 K5 ["mName"]
@@ -1727,7 +1727,7 @@ L 6: 409 [-]: GETIMPORT R5 2 [nil]
      822 [-]: MOVE R2 R2   
      823 [-]: SETTABLEKS R7 R6 K6 ["mCallback"]
      824 [-]: SETTABLEKS R6 R5 K159 ["HivemindPetVendor_DailySpecial"]
-     825 [-]: GETIMPORT R5 2 [nil]
+     825 [-]: GETIMPORT R5 2 ["TaggedDialog"]
      826 [-]: DUPTABLE R6 7
      827 [-]: LOADK R7 K160 ["/Lotus/Language/InfestedMicroplanet/HivemindGunsmithCommissions"]
      828 [-]: SETTABLEKS R7 R6 K5 ["mName"]
@@ -1738,7 +1738,7 @@ L 6: 409 [-]: GETIMPORT R5 2 [nil]
      833 [-]: MOVE R2 R2   
      834 [-]: SETTABLEKS R7 R6 K6 ["mCallback"]
      835 [-]: SETTABLEKS R6 R5 K161 ["HivemindGunSmith_Commissions"]
-     836 [-]: GETIMPORT R5 2 [nil]
+     836 [-]: GETIMPORT R5 2 ["TaggedDialog"]
      837 [-]: DUPTABLE R6 7
      838 [-]: LOADK R7 K16 ["/Lotus/Language/SolarisVenus/WeaponsmithCraftWeapon"]
      839 [-]: SETTABLEKS R7 R6 K5 ["mName"]
@@ -1749,7 +1749,7 @@ L 6: 409 [-]: GETIMPORT R5 2 [nil]
      844 [-]: MOVE R2 R2   
      845 [-]: SETTABLEKS R7 R6 K6 ["mCallback"]
      846 [-]: SETTABLEKS R6 R5 K162 ["HivemindGunSmith_GoToCrafting"]
-     847 [-]: GETIMPORT R5 2 [nil]
+     847 [-]: GETIMPORT R5 2 ["TaggedDialog"]
      848 [-]: DUPTABLE R6 7
      849 [-]: LOADK R7 K21 ["/Lotus/Language/SolarisVenus/WeaponsmithOtherServices"]
      850 [-]: SETTABLEKS R7 R6 K5 ["mName"]
@@ -1760,7 +1760,7 @@ L 6: 409 [-]: GETIMPORT R5 2 [nil]
      855 [-]: MOVE R2 R2   
      856 [-]: SETTABLEKS R7 R6 K6 ["mCallback"]
      857 [-]: SETTABLEKS R6 R5 K163 ["HivemindGunSmith_Actions"]
-     858 [-]: GETIMPORT R5 2 [nil]
+     858 [-]: GETIMPORT R5 2 ["TaggedDialog"]
      859 [-]: DUPTABLE R6 7
      860 [-]: LOADK R7 K19 ["/Lotus/Language/SolarisVenus/WeaponsmithBrowseWares"]
      861 [-]: SETTABLEKS R7 R6 K5 ["mName"]
@@ -1771,7 +1771,7 @@ L 6: 409 [-]: GETIMPORT R5 2 [nil]
      866 [-]: MOVE R2 R2   
      867 [-]: SETTABLEKS R7 R6 K6 ["mCallback"]
      868 [-]: SETTABLEKS R6 R5 K164 ["HivemindGunSmith_ShowFavors"]
-     869 [-]: GETIMPORT R5 2 [nil]
+     869 [-]: GETIMPORT R5 2 ["TaggedDialog"]
      870 [-]: DUPTABLE R6 7
      871 [-]: LOADK R7 K165 ["/Lotus/Language/InfestedMicroplanet/NecraloidViewStanding"]
      872 [-]: SETTABLEKS R7 R6 K5 ["mName"]
@@ -1781,7 +1781,7 @@ L 6: 409 [-]: GETIMPORT R5 2 [nil]
      876 [-]: MOVE R2 R2   
      877 [-]: SETTABLEKS R7 R6 K6 ["mCallback"]
      878 [-]: SETTABLEKS R6 R5 K166 ["Necraloid_Syndicate"]
-     879 [-]: GETIMPORT R5 2 [nil]
+     879 [-]: GETIMPORT R5 2 ["TaggedDialog"]
      880 [-]: DUPTABLE R6 7
      881 [-]: LOADK R7 K34 ["/Lotus/Language/SolarisVenus/BrowseWares"]
      882 [-]: SETTABLEKS R7 R6 K5 ["mName"]
@@ -1791,7 +1791,7 @@ L 6: 409 [-]: GETIMPORT R5 2 [nil]
      886 [-]: MOVE R2 R2   
      887 [-]: SETTABLEKS R7 R6 K6 ["mCallback"]
      888 [-]: SETTABLEKS R6 R5 K167 ["Necraloid_ShowFavors"]
-     889 [-]: GETIMPORT R5 2 [nil]
+     889 [-]: GETIMPORT R5 2 ["TaggedDialog"]
      890 [-]: DUPTABLE R6 7
      891 [-]: LOADK R7 K168 ["/Lotus/Language/InfestedMicroplanet/NecraloidStandingBonuses"]
      892 [-]: SETTABLEKS R7 R6 K5 ["mName"]
@@ -1799,7 +1799,7 @@ L 6: 409 [-]: GETIMPORT R5 2 [nil]
      894 [-]: MOVE R2 R5   
      895 [-]: SETTABLEKS R7 R6 K6 ["mCallback"]
      896 [-]: SETTABLEKS R6 R5 K170 ["Necraloid_SyndicateStandingBonuses"]
-     897 [-]: GETIMPORT R5 2 [nil]
+     897 [-]: GETIMPORT R5 2 ["TaggedDialog"]
      898 [-]: DUPTABLE R6 7
      899 [-]: LOADK R7 K171 ["/Lotus/Language/InfestedMicroplanet/HivemindMechsVendorProducts"]
      900 [-]: SETTABLEKS R7 R6 K5 ["mName"]
@@ -1809,7 +1809,7 @@ L 6: 409 [-]: GETIMPORT R5 2 [nil]
      904 [-]: MOVE R2 R2   
      905 [-]: SETTABLEKS R7 R6 K6 ["mCallback"]
      906 [-]: SETTABLEKS R6 R5 K172 ["Necraloid_Products"]
-     907 [-]: GETIMPORT R5 2 [nil]
+     907 [-]: GETIMPORT R5 2 ["TaggedDialog"]
      908 [-]: DUPTABLE R6 7
      909 [-]: LOADK R7 K173 ["/Lotus/Language/Zariman/BrowseWaresApartment"]
      910 [-]: SETTABLEKS R7 R6 K5 ["mName"]
@@ -1819,7 +1819,7 @@ L 6: 409 [-]: GETIMPORT R5 2 [nil]
      914 [-]: MOVE R2 R2   
      915 [-]: SETTABLEKS R7 R6 K6 ["mCallback"]
      916 [-]: SETTABLEKS R6 R5 K174 ["ZarimanApartment_ShowFavors"]
-     917 [-]: GETIMPORT R5 2 [nil]
+     917 [-]: GETIMPORT R5 2 ["TaggedDialog"]
      918 [-]: DUPTABLE R6 7
      919 [-]: LOADK R7 K175 ["/Lotus/Language/Zariman/BrowseWaresVoidshell"]
      920 [-]: SETTABLEKS R7 R6 K5 ["mName"]
@@ -1829,7 +1829,7 @@ L 6: 409 [-]: GETIMPORT R5 2 [nil]
      924 [-]: MOVE R2 R2   
      925 [-]: SETTABLEKS R7 R6 K6 ["mCallback"]
      926 [-]: SETTABLEKS R6 R5 K176 ["ZarimanVoidshell_ShowFavors"]
-     927 [-]: GETIMPORT R5 2 [nil]
+     927 [-]: GETIMPORT R5 2 ["TaggedDialog"]
      928 [-]: DUPTABLE R6 7
      929 [-]: LOADK R7 K177 ["/Lotus/Language/Zariman/ZarimanStandingBonuses"]
      930 [-]: SETTABLEKS R7 R6 K5 ["mName"]
@@ -1837,7 +1837,7 @@ L 6: 409 [-]: GETIMPORT R5 2 [nil]
      932 [-]: MOVE R2 R5   
      933 [-]: SETTABLEKS R7 R6 K6 ["mCallback"]
      934 [-]: SETTABLEKS R6 R5 K179 ["Zariman_SyndicateStandingBonuses"]
-     935 [-]: GETIMPORT R5 2 [nil]
+     935 [-]: GETIMPORT R5 2 ["TaggedDialog"]
      936 [-]: DUPTABLE R6 7
      937 [-]: LOADK R7 K180 ["/Lotus/Language/Zariman/BrowseArchimedeanManifest"]
      938 [-]: SETTABLEKS R7 R6 K5 ["mName"]
@@ -1847,7 +1847,7 @@ L 6: 409 [-]: GETIMPORT R5 2 [nil]
      942 [-]: MOVE R2 R2   
      943 [-]: SETTABLEKS R7 R6 K6 ["mCallback"]
      944 [-]: SETTABLEKS R6 R5 K181 ["Zariman_ArchimedeanManifest"]
-     945 [-]: GETIMPORT R5 2 [nil]
+     945 [-]: GETIMPORT R5 2 ["TaggedDialog"]
      946 [-]: DUPTABLE R6 7
      947 [-]: LOADK R7 K182 ["/Lotus/Language/Zariman/ZarimanCommisionsArchimedean"]
      948 [-]: SETTABLEKS R7 R6 K5 ["mName"]
@@ -1857,7 +1857,7 @@ L 6: 409 [-]: GETIMPORT R5 2 [nil]
      952 [-]: MOVE R2 R2   
      953 [-]: SETTABLEKS R7 R6 K6 ["mCallback"]
      954 [-]: SETTABLEKS R6 R5 K183 ["Zariman_ArchimedeanCommisions"]
-     955 [-]: GETIMPORT R5 2 [nil]
+     955 [-]: GETIMPORT R5 2 ["TaggedDialog"]
      956 [-]: DUPTABLE R6 7
      957 [-]: LOADK R7 K184 ["/Lotus/Language/Zariman/ZarimanArchimedeanVoidEclipseManifest"]
      958 [-]: SETTABLEKS R7 R6 K5 ["mName"]
@@ -1867,7 +1867,7 @@ L 6: 409 [-]: GETIMPORT R5 2 [nil]
      962 [-]: MOVE R2 R2   
      963 [-]: SETTABLEKS R7 R6 K6 ["mCallback"]
      964 [-]: SETTABLEKS R6 R5 K185 ["Zariman_ArchimedeanVoidEclipseManifest"]
-     965 [-]: GETIMPORT R5 2 [nil]
+     965 [-]: GETIMPORT R5 2 ["TaggedDialog"]
      966 [-]: DUPTABLE R6 7
      967 [-]: LOADK R7 K34 ["/Lotus/Language/SolarisVenus/BrowseWares"]
      968 [-]: SETTABLEKS R7 R6 K5 ["mName"]
@@ -1877,7 +1877,7 @@ L 6: 409 [-]: GETIMPORT R5 2 [nil]
      972 [-]: MOVE R2 R2   
      973 [-]: SETTABLEKS R7 R6 K6 ["mCallback"]
      974 [-]: SETTABLEKS R6 R5 K186 ["ZarimanWeaponsmith_ShowFavors"]
-     975 [-]: GETIMPORT R5 2 [nil]
+     975 [-]: GETIMPORT R5 2 ["TaggedDialog"]
      976 [-]: DUPTABLE R6 7
      977 [-]: LOADK R7 K187 ["/Lotus/Language/Zariman/ZarimanWeaponsmithIncarnonShop"]
      978 [-]: SETTABLEKS R7 R6 K5 ["mName"]
@@ -1887,7 +1887,7 @@ L 6: 409 [-]: GETIMPORT R5 2 [nil]
      982 [-]: MOVE R2 R2   
      983 [-]: SETTABLEKS R7 R6 K6 ["mCallback"]
      984 [-]: SETTABLEKS R6 R5 K188 ["ZarimanWeaponsmith_IncarnonShop"]
-     985 [-]: GETIMPORT R5 2 [nil]
+     985 [-]: GETIMPORT R5 2 ["TaggedDialog"]
      986 [-]: DUPTABLE R6 7
      987 [-]: LOADK R7 K189 ["/Lotus/Language/Zariman/ZarimanEvolveWeapons"]
      988 [-]: SETTABLEKS R7 R6 K5 ["mName"]
@@ -1899,10 +1899,10 @@ L 6: 409 [-]: GETIMPORT R5 2 [nil]
      994 [-]: MOVE R2 R2   
      995 [-]: SETTABLEKS R7 R6 K6 ["mCallback"]
      996 [-]: SETTABLEKS R6 R5 K190 ["ZarimanWeaponsmith_EvolveWeapons"]
-     997 [-]: GETIMPORT R5 3 [nil]
+     997 [-]: GETIMPORT R5 3 ["_T"]
      998 [-]: DUPCLOSURE R6 K191 []
      999 [-]: SETTABLEKS R6 R5 K192 ["ZarimanSyndicate_IntroTransmissionCheck"]
-     1000 [-]: GETIMPORT R5 2 [nil]
+     1000 [-]: GETIMPORT R5 2 ["TaggedDialog"]
      1001 [-]: DUPTABLE R6 52
      1002 [-]: LOADK R7 K193 ["/Lotus/Language/Duviri/BrowseWares"]
      1003 [-]: SETTABLEKS R7 R6 K5 ["mName"]
@@ -1914,7 +1914,7 @@ L 6: 409 [-]: GETIMPORT R5 2 [nil]
      1009 [-]: MOVE R2 R2   
      1010 [-]: SETTABLEKS R7 R6 K6 ["mCallback"]
      1011 [-]: SETTABLEKS R6 R5 K194 ["DuviriArchivist_VendorItems"]
-     1012 [-]: GETIMPORT R5 2 [nil]
+     1012 [-]: GETIMPORT R5 2 ["TaggedDialog"]
      1013 [-]: DUPTABLE R6 52
      1014 [-]: LOADK R7 K195 ["/Lotus/Language/Duviri/AcrithisKullervoShopManifest"]
      1015 [-]: SETTABLEKS R7 R6 K5 ["mName"]
@@ -1926,7 +1926,7 @@ L 6: 409 [-]: GETIMPORT R5 2 [nil]
      1021 [-]: MOVE R2 R2   
      1022 [-]: SETTABLEKS R7 R6 K6 ["mCallback"]
      1023 [-]: SETTABLEKS R6 R5 K196 ["DuviriArchivist_KullervoShop"]
-     1024 [-]: GETIMPORT R5 2 [nil]
+     1024 [-]: GETIMPORT R5 2 ["TaggedDialog"]
      1025 [-]: DUPTABLE R6 52
      1026 [-]: LOADK R7 K197 ["/Lotus/Language/Duviri/AcrithisEnigmaGyrumShopManifest"]
      1027 [-]: SETTABLEKS R7 R6 K5 ["mName"]
@@ -1940,7 +1940,7 @@ L 6: 409 [-]: GETIMPORT R5 2 [nil]
      1035 [-]: SETTABLEKS R6 R5 K198 ["DuviriArchivist_EnigmaGyrumShop"]
      1036 [-]: DUPCLOSURE R5 K199 []
      1037 [-]: DUPCLOSURE R6 K200 []
-     1038 [-]: GETIMPORT R7 2 [nil]
+     1038 [-]: GETIMPORT R7 2 ["TaggedDialog"]
      1039 [-]: DUPTABLE R8 31
      1040 [-]: LOADK R9 K201 ["/Lotus/Language/Veilbreaker/KahlMissionBrief"]
      1041 [-]: SETTABLEKS R9 R8 K5 ["mName"]
@@ -1951,7 +1951,7 @@ L 6: 409 [-]: GETIMPORT R5 2 [nil]
      1046 [-]: MOVE R2 R2   
      1047 [-]: SETTABLEKS R9 R8 K6 ["mCallback"]
      1048 [-]: SETTABLEKS R8 R7 K202 ["Kahl_MissionBrief"]
-     1049 [-]: GETIMPORT R7 2 [nil]
+     1049 [-]: GETIMPORT R7 2 ["TaggedDialog"]
      1050 [-]: DUPTABLE R8 7
      1051 [-]: LOADK R9 K203 ["/Lotus/Language/Veilbreaker/KahlCustomizations"]
      1052 [-]: SETTABLEKS R9 R8 K5 ["mName"]
@@ -1961,7 +1961,7 @@ L 6: 409 [-]: GETIMPORT R5 2 [nil]
      1056 [-]: MOVE R2 R2   
      1057 [-]: SETTABLEKS R9 R8 K6 ["mCallback"]
      1058 [-]: SETTABLEKS R8 R7 K204 ["Kahl_Customizations"]
-     1059 [-]: GETIMPORT R7 2 [nil]
+     1059 [-]: GETIMPORT R7 2 ["TaggedDialog"]
      1060 [-]: DUPTABLE R8 31
      1061 [-]: LOADK R9 K205 ["/Lotus/Language/Syndicates/RankUp"]
      1062 [-]: SETTABLEKS R9 R8 K5 ["mName"]
@@ -1974,7 +1974,7 @@ L 6: 409 [-]: GETIMPORT R5 2 [nil]
      1069 [-]: MOVE R2 R9   
      1070 [-]: SETTABLEKS R9 R8 K6 ["mCallback"]
      1071 [-]: SETTABLEKS R8 R7 K208 ["Kahl_RankUp"]
-     1072 [-]: GETIMPORT R7 2 [nil]
+     1072 [-]: GETIMPORT R7 2 ["TaggedDialog"]
      1073 [-]: DUPTABLE R8 52
      1074 [-]: LOADK R9 K34 ["/Lotus/Language/SolarisVenus/BrowseWares"]
      1075 [-]: SETTABLEKS R9 R8 K5 ["mName"]
@@ -1986,7 +1986,7 @@ L 6: 409 [-]: GETIMPORT R5 2 [nil]
      1081 [-]: MOVE R2 R2   
      1082 [-]: SETTABLEKS R9 R8 K6 ["mCallback"]
      1083 [-]: SETTABLEKS R8 R7 K209 ["Chipper_VendorItems"]
-     1084 [-]: GETIMPORT R7 2 [nil]
+     1084 [-]: GETIMPORT R7 2 ["TaggedDialog"]
      1085 [-]: DUPTABLE R8 52
      1086 [-]: LOADK R9 K210 ["/Lotus/Language/Railjack/ModularAWCrafting_CraftTag"]
      1087 [-]: SETTABLEKS R9 R8 K5 ["mName"]
@@ -1998,7 +1998,7 @@ L 6: 409 [-]: GETIMPORT R5 2 [nil]
      1093 [-]: MOVE R2 R2   
      1094 [-]: SETTABLEKS R9 R8 K6 ["mCallback"]
      1095 [-]: SETTABLEKS R8 R7 K211 ["AWVendor_GoToCrafting"]
-     1096 [-]: GETIMPORT R7 2 [nil]
+     1096 [-]: GETIMPORT R7 2 ["TaggedDialog"]
      1097 [-]: DUPTABLE R8 52
      1098 [-]: LOADK R9 K12 ["/Lotus/Language/OstronCrafting/Crafting_Favors"]
      1099 [-]: SETTABLEKS R9 R8 K5 ["mName"]
@@ -2010,13 +2010,13 @@ L 6: 409 [-]: GETIMPORT R5 2 [nil]
      1105 [-]: MOVE R2 R2   
      1106 [-]: SETTABLEKS R9 R8 K6 ["mCallback"]
      1107 [-]: SETTABLEKS R8 R7 K212 ["AWVendor_ShowFavors"]
-     1108 [-]: GETIMPORT R7 214 [nil]
+     1108 [-]: GETIMPORT R7 214 [0x76EA806B]
      1109 [-]: LOADN R9 0   
      1110 [-]: NAMECALL R7 R7 K215 [0x3F3AE64C]
      1111 [-]: CALL R7 2 1  
      1112 [-]: FASTCALL1 62 R7 L7
      1113 [-]: MOVE R9 R7   
-     1114 [-]: GETIMPORT R8 71 [nil]
+     1114 [-]: GETIMPORT R8 71 [0x7B998233]
      1115 [-]: CALL R8 1 1  
 L 7: 1116 [-]: JUMPIFNOT R8 L8
      1117 [-]: RETURN R0 0  
@@ -2024,7 +2024,7 @@ L 8: 1118 [-]: NAMECALL R8 R7 K216 [0x80563238]
      1119 [-]: CALL R8 1 1  
      1120 [-]: FASTCALL1 62 R8 L9
      1121 [-]: MOVE R10 R8  
-     1122 [-]: GETIMPORT R9 71 [nil]
+     1122 [-]: GETIMPORT R9 71 [0x7B998233]
      1123 [-]: CALL R9 1 1  
 L 9: 1124 [-]: JUMPIFNOT R9 L10
      1125 [-]: RETURN R0 0  
@@ -2048,19 +2048,19 @@ L11: 1133 [-]: GETTABLE R13 R9 R12
      1143 [-]: NAMECALL R16 R15 K223 [0x56C01834]
      1144 [-]: CALL R16 1 1 
      1145 [-]: JUMPIFNOT R16 L12
-     1146 [-]: GETIMPORT R16 226 [nil]
+     1146 [-]: GETIMPORT R16 226 [0x397B920F]
      1147 [-]: MOVE R17 R15 
      1148 [-]: CALL R16 1 1 
      1149 [-]: LOADN R17 0  
      1150 [-]: JUMPIFNOTLE R16 R17 L12
-     1151 [-]: GETIMPORT R16 226 [nil]
+     1151 [-]: GETIMPORT R16 226 [0x397B920F]
      1152 [-]: MOVE R17 R14 
      1153 [-]: CALL R16 1 1 
      1154 [-]: LOADN R17 -3600
      1155 [-]: JUMPIFNOTLT R17 R16 L12
      1156 [-]: GETTABLEKS R16 R13 K221 ["mExpiry"]
      1157 [-]: GETTABLEKS R14 R16 K227 ["sec"]
-     1158 [-]: GETIMPORT R16 2 [nil]
+     1158 [-]: GETIMPORT R16 2 ["TaggedDialog"]
      1159 [-]: DUPTABLE R17 93
      1160 [-]: LOADK R18 K228 ["/Lotus/Language/Menu/EventSyndicate"]
      1161 [-]: SETTABLEKS R18 R17 K5 ["mName"]
@@ -2080,7 +2080,7 @@ L12: 1174 [-]: CLOSEUPVALS R14
      1175 [-]: JUMP L15
     
 L13: 1176 [-]: GETTABLEKS R14 R13 K230 ["mTag"]
-     1177 [-]: GETIMPORT R15 232 [nil]
+     1177 [-]: GETIMPORT R15 232 [0x0469F296]
      1178 [-]: LOADK R16 K233 ["WaterFight"]
      1179 [-]: CALL R15 1 1 
      1180 [-]: JUMPIFNOTEQ R14 R15 L15
@@ -2092,19 +2092,19 @@ L13: 1176 [-]: GETTABLEKS R14 R13 K230 ["mTag"]
      1186 [-]: NAMECALL R16 R15 K223 [0x56C01834]
      1187 [-]: CALL R16 1 1 
      1188 [-]: JUMPIFNOT R16 L14
-     1189 [-]: GETIMPORT R16 226 [nil]
+     1189 [-]: GETIMPORT R16 226 [0x397B920F]
      1190 [-]: MOVE R17 R15 
      1191 [-]: CALL R16 1 1 
      1192 [-]: LOADN R17 0  
      1193 [-]: JUMPIFNOTLE R16 R17 L14
-     1194 [-]: GETIMPORT R16 226 [nil]
+     1194 [-]: GETIMPORT R16 226 [0x397B920F]
      1195 [-]: MOVE R17 R14 
      1196 [-]: CALL R16 1 1 
      1197 [-]: LOADN R17 -3600
      1198 [-]: JUMPIFNOTLT R17 R16 L14
      1199 [-]: GETTABLEKS R16 R13 K221 ["mExpiry"]
      1200 [-]: GETTABLEKS R14 R16 K227 ["sec"]
-     1201 [-]: GETIMPORT R16 2 [nil]
+     1201 [-]: GETIMPORT R16 2 ["TaggedDialog"]
      1202 [-]: DUPTABLE R17 93
      1203 [-]: LOADK R18 K234 ["/Lotus/Language/Menu/WaterFightWares"]
      1204 [-]: SETTABLEKS R18 R17 K5 ["mName"]
@@ -2132,11 +2132,11 @@ L16: 1218 [-]: RETURN R0 0
 ; Max Stack Size:  3
 
        0 [-]: JUMPIFNOT R0 L0
-       1 [-]: GETIMPORT R1 1 [nil]
+       1 [-]: GETIMPORT R1 1 [0x3D106989]
        2 [-]: LOADK R2 K2 ["Operator upgraded!"]
        3 [-]: CALL R1 1 0  
        4 [-]: RETURN R0 0  
-L 0:   5 [-]: GETIMPORT R1 1 [nil]
+L 0:   5 [-]: GETIMPORT R1 1 [0x3D106989]
        6 [-]: LOADK R2 K3 ["Failed to upgrade operator!"]
        7 [-]: CALL R1 1 0  
        8 [-]: RETURN R0 0  
@@ -2149,13 +2149,13 @@ L 0:   5 [-]: GETIMPORT R1 1 [nil]
 ; Is_vararg:       0
 ; Max Stack Size:  13
 
-       0 [-]: GETIMPORT R1 1 [nil]
+       0 [-]: GETIMPORT R1 1 [0x76EA806B]
        1 [-]: LOADN R3 0   
        2 [-]: NAMECALL R1 R1 K2 [0x3F3AE64C]
        3 [-]: CALL R1 2 1  
        4 [-]: FASTCALL1 62 R1 L0
        5 [-]: MOVE R3 R1   
-       6 [-]: GETIMPORT R2 4 [nil]
+       6 [-]: GETIMPORT R2 4 [0x7B998233]
        7 [-]: CALL R2 1 1  
 L 0:   8 [-]: JUMPIFNOT R2 L1
        9 [-]: RETURN R0 0  
@@ -2163,7 +2163,7 @@ L 1:  10 [-]: NAMECALL R2 R1 K5 [0x80563238]
       11 [-]: CALL R2 1 1  
       12 [-]: FASTCALL1 62 R2 L2
       13 [-]: MOVE R4 R2   
-      14 [-]: GETIMPORT R3 4 [nil]
+      14 [-]: GETIMPORT R3 4 [0x7B998233]
       15 [-]: CALL R3 1 1  
 L 2:  16 [-]: JUMPIFNOT R3 L3
       17 [-]: RETURN R0 0  
@@ -2171,15 +2171,15 @@ L 3:  18 [-]: NAMECALL R3 R2 K6 [0xD8159207]
       19 [-]: CALL R3 1 1  
       20 [-]: LOADN R4 3   
       21 [-]: JUMPIFNOTLE R4 R3 L6
-      22 [-]: GETIMPORT R4 8 [nil]
-      23 [-]: GETIMPORT R6 10 [nil]
+      22 [-]: GETIMPORT R4 8 [0x89326C93]
+      23 [-]: GETIMPORT R6 10 [0x0469F296]
       24 [-]: LOADK R7 K11 ["OperatorAmpAction"]
       25 [-]: CALL R6 1 -1 
       26 [-]: NAMECALL R4 R4 K12 [0x46A0EBF5]
       27 [-]: CALL R4 -1 1 
       28 [-]: FASTCALL1 62 R4 L4
       29 [-]: MOVE R6 R4   
-      30 [-]: GETIMPORT R5 4 [nil]
+      30 [-]: GETIMPORT R5 4 [0x7B998233]
       31 [-]: CALL R5 1 1  
 L 4:  32 [-]: JUMPIF R5 L5 
       33 [-]: NAMECALL R5 R4 K13 [0x383D2E7D]
@@ -2190,22 +2190,22 @@ L 5:  35 [-]: NAMECALL R5 R0 K14 [0xF4E253B6]
 L 6:  38 [-]: LOADK R6 K15 ["OnOperatorUpgraded"]
       39 [-]: NAMECALL R4 R2 K16 [0xC8B5B363]
       40 [-]: CALL R4 2 0  
-      41 [-]: GETIMPORT R4 8 [nil]
-      42 [-]: GETIMPORT R6 10 [nil]
+      41 [-]: GETIMPORT R4 8 [0x89326C93]
+      42 [-]: GETIMPORT R6 10 [0x0469F296]
       43 [-]: LOADK R7 K17 ["UpgradeOperatorCinematic"]
       44 [-]: CALL R6 1 -1 
       45 [-]: NAMECALL R4 R4 K12 [0x46A0EBF5]
       46 [-]: CALL R4 -1 1 
       47 [-]: FASTCALL1 62 R4 L7
       48 [-]: MOVE R6 R4   
-      49 [-]: GETIMPORT R5 4 [nil]
+      49 [-]: GETIMPORT R5 4 [0x7B998233]
       50 [-]: CALL R5 1 1  
 L 7:  51 [-]: JUMPIF R5 L8 
       52 [-]: LOADK R7 K18 ["StartPlaying"]
       53 [-]: NAMECALL R5 R4 K19 [0x8EB2112D]
       54 [-]: CALL R5 2 0  
-L 8:  55 [-]: GETIMPORT R5 8 [nil]
-      56 [-]: GETIMPORT R7 21 [nil]
+L 8:  55 [-]: GETIMPORT R5 8 [0x89326C93]
+      56 [-]: GETIMPORT R7 21 [0x7ED0A956]
       57 [-]: LOADK R8 K22 ["/Lotus/Types/Player/TennoAvatarHubPeer"]
       58 [-]: CALL R7 1 -1 
       59 [-]: NAMECALL R5 R5 K23 [0xFB669000]
@@ -2222,7 +2222,7 @@ L 9:  65 [-]: GETTABLE R9 R5 R8
       70 [-]: FORNLOOP R6 L9
 L10:  71 [-]: FASTCALL1 62 R4 L11
       72 [-]: MOVE R7 R4   
-      73 [-]: GETIMPORT R6 4 [nil]
+      73 [-]: GETIMPORT R6 4 [0x7B998233]
       74 [-]: CALL R6 1 1  
 L11:  75 [-]: JUMPIF R6 L12
       76 [-]: NAMECALL R6 R4 K25 [0x1C84839C]
@@ -2231,7 +2231,7 @@ L11:  75 [-]: JUMPIF R6 L12
       79 [-]: NAMECALL R6 R4 K26 [0x3BD7FECA]
       80 [-]: CALL R6 1 1  
       81 [-]: JUMPIF R6 L12
-      82 [-]: GETIMPORT R6 28 [nil]
+      82 [-]: GETIMPORT R6 28 [0xCBD666E1]
       83 [-]: LOADN R7 0   
       84 [-]: CALL R6 1 0  
       85 [-]: JUMPBACK L10 
@@ -2241,7 +2241,7 @@ L12:  86 [-]: LOADN R8 1
       89 [-]: FORNPREP R6 L16
 L13:  90 [-]: GETTABLE R10 R5 R8
       91 [-]: FASTCALL1 62 R10 L14
-      92 [-]: GETIMPORT R9 4 [nil]
+      92 [-]: GETIMPORT R9 4 [0x7B998233]
       93 [-]: CALL R9 1 1  
 L14:  94 [-]: JUMPIF R9 L15
       95 [-]: GETTABLE R9 R5 R8
@@ -2250,21 +2250,21 @@ L14:  94 [-]: JUMPIF R9 L15
       98 [-]: NAMECALL R9 R9 K24 [0xEADF35A7]
       99 [-]: CALL R9 3 0  
 L15: 100 [-]: FORNLOOP R6 L13
-L16: 101 [-]: GETIMPORT R6 8 [nil]
+L16: 101 [-]: GETIMPORT R6 8 [0x89326C93]
      102 [-]: NAMECALL R6 R6 K29 [0x78298275]
      103 [-]: CALL R6 1 1  
      104 [-]: FASTCALL1 62 R6 L17
      105 [-]: MOVE R8 R6   
-     106 [-]: GETIMPORT R7 4 [nil]
+     106 [-]: GETIMPORT R7 4 [0x7B998233]
      107 [-]: CALL R7 1 1  
 L17: 108 [-]: JUMPIF R7 L19
-     109 [-]: GETIMPORT R9 31 [nil]
+     109 [-]: GETIMPORT R9 31 [0x3FD6CD72]
      110 [-]: LOADB R10 1  
      111 [-]: NAMECALL R7 R6 K32 [0x511D26B8]
      112 [-]: CALL R7 3 1  
      113 [-]: FASTCALL1 62 R7 L18
      114 [-]: MOVE R9 R7   
-     115 [-]: GETIMPORT R8 4 [nil]
+     115 [-]: GETIMPORT R8 4 [0x7B998233]
      116 [-]: CALL R8 1 1  
 L18: 117 [-]: JUMPIF R8 L19
      118 [-]: NAMECALL R8 R7 K33 [0x72D56F6B]

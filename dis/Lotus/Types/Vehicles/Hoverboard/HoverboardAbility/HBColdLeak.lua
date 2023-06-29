@@ -5,10 +5,10 @@
 ; Is_vararg:       1
 ; Max Stack Size:  13
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x2D0FAD09]
        2 [-]: LOADK R1 K2 ["Lotus.Scripts.Libs.AbilitiesLib"]
        3 [-]: CALL R0 1 1  
-       4 [-]: GETIMPORT R1 1 [nil]
+       4 [-]: GETIMPORT R1 1 [0x2D0FAD09]
        5 [-]: LOADK R2 K3 ["Lotus.Types.Vehicles.Hoverboard.HoverboardAbility.HoverboardAbilityUtil"]
        6 [-]: CALL R1 1 1  
        7 [-]: NEWTABLE R2 0 4
@@ -23,7 +23,7 @@
       16 [-]: LOADN R6 3   
       17 [-]: LOADN R7 4   
       18 [-]: SETLIST R3 R4 4 [1]
-      19 [-]: GETIMPORT R4 5 [nil]
+      19 [-]: GETIMPORT R4 5 [0x0469F296]
       20 [-]: LOADK R5 K6 ["GAME_C1_ENGINE"]
       21 [-]: CALL R4 1 1  
       22 [-]: LOADN R5 1   
@@ -68,7 +68,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  6
 
-       0 [-]: GETIMPORT R1 1 [nil]
+       0 [-]: GETIMPORT R1 1 [0x42DCC9F5]
        1 [-]: MOVE R2 R0   
        2 [-]: LOADN R3 1   
        3 [-]: GETUPVAL R5 0
@@ -87,7 +87,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  6
 
-       0 [-]: GETIMPORT R1 1 [nil]
+       0 [-]: GETIMPORT R1 1 [0x42DCC9F5]
        1 [-]: MOVE R2 R0   
        2 [-]: LOADN R3 1   
        3 [-]: GETUPVAL R5 0
@@ -108,7 +108,7 @@
 
        0 [-]: DUPTABLE R1 2
        1 [-]: MOVE R3 R0   
-       2 [-]: GETIMPORT R4 4 [nil]
+       2 [-]: GETIMPORT R4 4 [0x42DCC9F5]
        3 [-]: MOVE R5 R3   
        4 [-]: LOADN R6 1   
        5 [-]: GETUPVAL R8 0
@@ -119,7 +119,7 @@
       10 [-]: GETTABLE R2 R4 R3
       11 [-]: SETTABLEKS R2 R1 K0 ["DAMAGE"]
       12 [-]: MOVE R3 R0   
-      13 [-]: GETIMPORT R4 4 [nil]
+      13 [-]: GETIMPORT R4 4 [0x42DCC9F5]
       14 [-]: MOVE R5 R3   
       15 [-]: LOADN R6 1   
       16 [-]: GETUPVAL R8 1
@@ -129,7 +129,7 @@
       20 [-]: GETUPVAL R4 1
       21 [-]: GETTABLE R2 R4 R3
       22 [-]: SETTABLEKS R2 R1 K1 ["RADIUS"]
-      23 [-]: GETIMPORT R2 7 [nil]
+      23 [-]: GETIMPORT R2 7 [0xB139D7BC]
       24 [-]: MOVE R3 R1   
       25 [-]: CALL R2 1 -1 
       26 [-]: RETURN R2 -1 
@@ -144,24 +144,24 @@
 
        0 [-]: FASTCALL1 62 R0 L0
        1 [-]: MOVE R2 R0   
-       2 [-]: GETIMPORT R1 1 [nil]
+       2 [-]: GETIMPORT R1 1 [0x7B998233]
        3 [-]: CALL R1 1 1  
 L 0:   4 [-]: JUMPIF R1 L3 
        5 [-]: GETUPVAL R2 0
        6 [-]: FASTCALL1 62 R2 L1
-       7 [-]: GETIMPORT R1 1 [nil]
+       7 [-]: GETIMPORT R1 1 [0x7B998233]
        8 [-]: CALL R1 1 1  
 L 1:   9 [-]: JUMPIF R1 L3 
       10 [-]: NAMECALL R1 R0 K2 [0xDE321E6F]
       11 [-]: CALL R1 1 1  
       12 [-]: NAMECALL R1 R1 K3 [0xF7D48EE0]
       13 [-]: CALL R1 1 1  
-      14 [-]: GETIMPORT R2 5 [nil]
+      14 [-]: GETIMPORT R2 5 [0x89326C93]
       15 [-]: MOVE R4 R0   
       16 [-]: NAMECALL R5 R0 K6 [0xF6EBD926]
       17 [-]: CALL R5 1 1  
       18 [-]: GETUPVAL R7 1
-      19 [-]: GETIMPORT R8 8 [nil]
+      19 [-]: GETIMPORT R8 8 [0x42DCC9F5]
       20 [-]: MOVE R9 R7   
       21 [-]: LOADN R10 1  
       22 [-]: GETUPVAL R12 2
@@ -171,7 +171,7 @@ L 1:   9 [-]: JUMPIF R1 L3
       26 [-]: GETUPVAL R8 2
       27 [-]: GETTABLE R6 R8 R7
       28 [-]: GETUPVAL R8 1
-      29 [-]: GETIMPORT R9 8 [nil]
+      29 [-]: GETIMPORT R9 8 [0x42DCC9F5]
       30 [-]: MOVE R10 R8  
       31 [-]: LOADN R11 1  
       32 [-]: GETUPVAL R13 3
@@ -194,12 +194,12 @@ L 1:   9 [-]: JUMPIF R1 L3
       49 [-]: LOADN R19 0  
       50 [-]: NAMECALL R2 R2 K9 [0x97DCFF30]
       51 [-]: CALL R2 17 0 
-      52 [-]: GETIMPORT R3 11 [nil]
+      52 [-]: GETIMPORT R3 11 [0xD1A327A9]
       53 [-]: FASTCALL1 62 R3 L2
-      54 [-]: GETIMPORT R2 1 [nil]
+      54 [-]: GETIMPORT R2 1 [0x7B998233]
       55 [-]: CALL R2 1 1  
 L 2:  56 [-]: JUMPIF R2 L3 
-      57 [-]: GETIMPORT R4 11 [nil]
+      57 [-]: GETIMPORT R4 11 [0xD1A327A9]
       58 [-]: GETUPVAL R5 4
       59 [-]: NAMECALL R2 R0 K12 [0x47901F07]
       60 [-]: CALL R2 3 0  
@@ -220,7 +220,7 @@ L 3:  61 [-]: RETURN R0 0
        4 [-]: MOVE R3 R0   
        5 [-]: CALL R2 1 0  
 L 0:   6 [-]: JUMPIFNOT R1 L1
-       7 [-]: GETIMPORT R4 1 [nil]
+       7 [-]: GETIMPORT R4 1 ["gLotusVehicleAvatarType"]
        8 [-]: NAMECALL R2 R0 K2 [0xF2DEAF69]
        9 [-]: CALL R2 2 1  
       10 [-]: JUMPIFNOT R2 L1

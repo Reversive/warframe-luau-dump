@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  1
 
-            1 [-]: DUPCLOSURE R0 K0 []
+       1 [-]: DUPCLOSURE R0 K0 []
        2 [-]: SETGLOBAL R0 K1 ["CmdAddJob"]
        3 [-]: RETURN R0 0  
 
@@ -17,22 +17,22 @@
 ; Is_vararg:       0
 ; Max Stack Size:  18
 
-       0 [-]: GETIMPORT R3 1 [nil]
+       0 [-]: GETIMPORT R3 1 [0xB009BBC6]
        1 [-]: MOVE R4 R0   
        2 [-]: CALL R3 1 1  
        3 [-]: FASTCALL1 62 R3 L0
        4 [-]: MOVE R5 R3   
-       5 [-]: GETIMPORT R4 3 [nil]
+       5 [-]: GETIMPORT R4 3 [0x7B998233]
        6 [-]: CALL R4 1 1  
 L 0:   7 [-]: JUMPIFNOT R4 L1
-       8 [-]: GETIMPORT R4 5 [nil]
+       8 [-]: GETIMPORT R4 5 [0xD644C2F1]
        9 [-]: LOADK R5 K6 ["Job type not found"]
       10 [-]: CALL R4 1 0  
       11 [-]: RETURN R0 0  
-L 1:  12 [-]: GETIMPORT R4 9 [nil]
+L 1:  12 [-]: GETIMPORT R4 9 ["DEBUG_JOBS"]
       13 [-]: JUMPIF R4 L2 
       14 [-]: NEWTABLE R4 0 0
-L 2:  15 [-]: GETIMPORT R5 10 [nil]
+L 2:  15 [-]: GETIMPORT R5 10 ["_T"]
       16 [-]: SETTABLEKS R4 R5 K8 ["DEBUG_JOBS"]
       17 [-]: LOADN R7 1   
       18 [-]: LENGTH R5 R4 
@@ -53,7 +53,7 @@ L 5:  26 [-]: NEWTABLE R5 0 0
       33 [-]: FORNPREP R8 L7
 L 6:  34 [-]: GETTABLE R13 R7 R10
       35 [-]: GETTABLEKS R12 R13 K13 ["encounterChoices"]
-      36 [-]: GETIMPORT R13 15 [nil]
+      36 [-]: GETIMPORT R13 15 [0x55730E1A]
       37 [-]: LOADN R14 1  
       38 [-]: GETTABLE R17 R7 R10
       39 [-]: GETTABLEKS R16 R17 K13 ["encounterChoices"]
@@ -68,16 +68,16 @@ L 7:  47 [-]: DUPTABLE R10 34
       48 [-]: NAMECALL R11 R3 K35 [0xED4E0128]
       49 [-]: CALL R11 1 1 
       50 [-]: SETTABLEKS R11 R10 K16 ["jobId"]
-      51 [-]: GETIMPORT R11 37 [nil]
-      52 [-]: GETIMPORT R12 39 [nil]
+      51 [-]: GETIMPORT R11 37 [0x603636AD]
+      52 [-]: GETIMPORT R12 39 [0x64FB1586]
       53 [-]: NAMECALL R13 R3 K40 [0xAF8359C4]
       54 [-]: CALL R13 1 -1
       55 [-]: CALL R12 -1 1
       56 [-]: LOADNIL R13  
       57 [-]: CALL R11 2 1 
       58 [-]: SETTABLEKS R11 R10 K17 ["name"]
-      59 [-]: GETIMPORT R11 37 [nil]
-      60 [-]: GETIMPORT R12 39 [nil]
+      59 [-]: GETIMPORT R11 37 [0x603636AD]
+      60 [-]: GETIMPORT R12 39 [0x64FB1586]
       61 [-]: NAMECALL R13 R3 K41 [0x78BAE559]
       62 [-]: CALL R13 1 -1
       63 [-]: CALL R12 -1 1
@@ -90,8 +90,8 @@ L 7:  47 [-]: DUPTABLE R10 34
       70 [-]: SETTABLEKS R5 R10 K20 ["stages"]
       71 [-]: LOADNIL R11  
       72 [-]: SETTABLEKS R11 R10 K21 ["reward"]
-      73 [-]: GETIMPORT R11 44 [nil]
-      74 [-]: GETIMPORT R12 15 [nil]
+      73 [-]: GETIMPORT R11 44 [0x0997DBE6]
+      74 [-]: GETIMPORT R12 15 [0x55730E1A]
       75 [-]: LOADN R13 0  
       76 [-]: LOADK R14 K45 [1073741824]
       77 [-]: CALL R12 2 -1
@@ -103,18 +103,18 @@ L 7:  47 [-]: DUPTABLE R10 34
       83 [-]: SETTABLEKS R11 R10 K23 ["jobTypeName"]
       84 [-]: LOADN R11 0  
       85 [-]: SETTABLEKS R11 R10 K24 ["masteryReq"]
-      86 [-]: GETIMPORT R12 48 [nil]
+      86 [-]: GETIMPORT R12 48 [0x03F57322]
       87 [-]: MOVE R13 R1  
       88 [-]: CALL R12 1 1 
       89 [-]: ORK R11 R12 K46 [15]
       90 [-]: SETTABLEKS R11 R10 K25 ["minEnemyLevel"]
-      91 [-]: GETIMPORT R12 48 [nil]
+      91 [-]: GETIMPORT R12 48 [0x03F57322]
       92 [-]: MOVE R13 R2  
       93 [-]: CALL R12 1 1 
       94 [-]: ORK R11 R12 K49 [20]
       95 [-]: SETTABLEKS R11 R10 K26 ["maxEnemyLevel"]
       96 [-]: SETTABLEKS R6 R10 K27 ["xpAmounts"]
-      97 [-]: GETIMPORT R11 51 [nil]
+      97 [-]: GETIMPORT R11 51 ["EMPTY_SYMBOL"]
       98 [-]: SETTABLEKS R11 R10 K28 ["syndicateTag"]
       99 [-]: NAMECALL R11 R3 K52 [0xE4C355E2]
      100 [-]: CALL R11 1 1 
@@ -129,9 +129,9 @@ L 7:  47 [-]: DUPTABLE R10 34
      109 [-]: SETTABLEKS R11 R10 K33 ["isDebug"]
      110 [-]: FASTCALL2 52 R4 R10 L8
      111 [-]: MOVE R9 R4   
-     112 [-]: GETIMPORT R8 55 [nil]
+     112 [-]: GETIMPORT R8 55 [0x23D5322F]
      113 [-]: CALL R8 2 0  
-L 8: 114 [-]: GETIMPORT R8 10 [nil]
+L 8: 114 [-]: GETIMPORT R8 10 ["_T"]
      115 [-]: LOADB R9 1   
      116 [-]: SETTABLEKS R9 R8 K56 ["RefreshJobs"]
      117 [-]: RETURN R0 0  

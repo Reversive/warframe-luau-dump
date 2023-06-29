@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  2
 
-            1 [-]: LOADB R0 1   
+       1 [-]: LOADB R0 1   
        2 [-]: NEWCLOSURE R1 P0
        3 [-]: MOVE R1 R0   
        4 [-]: SETGLOBAL R1 K0 ["OnApplied"]
@@ -26,7 +26,7 @@
        3 [-]: CALL R6 1 1  
 L 0:   4 [-]: FASTCALL1 62 R0 L1
        5 [-]: MOVE R8 R0   
-       6 [-]: GETIMPORT R7 3 [nil]
+       6 [-]: GETIMPORT R7 3 [0x7B998233]
        7 [-]: CALL R7 1 1  
 L 1:   8 [-]: JUMPIF R7 L9 
        9 [-]: NAMECALL R7 R0 K4 [0xDE321E6F]
@@ -73,7 +73,7 @@ L 6:  40 [-]: SUBK R14 R11 K6 [1]
       49 [-]: CALL R13 2 0 
       50 [-]: FORNLOOP R9 L6
 L 7:  51 [-]: SETUPVAL R8 0
-L 8:  52 [-]: GETIMPORT R9 12 [nil]
+L 8:  52 [-]: GETIMPORT R9 12 [0xCBD666E1]
       53 [-]: LOADN R10 0  
       54 [-]: CALL R9 1 0  
       55 [-]: JUMPBACK L0  

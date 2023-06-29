@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  2
 
-            1 [-]: DUPCLOSURE R0 K0 []
+       1 [-]: DUPCLOSURE R0 K0 []
        2 [-]: DUPCLOSURE R1 K1 []
        3 [-]: MOVE R0 R0   
        4 [-]: SETGLOBAL R1 K2 ["EMO_START"]
@@ -27,7 +27,7 @@
 
        0 [-]: FASTCALL1 62 R0 L0
        1 [-]: MOVE R5 R0   
-       2 [-]: GETIMPORT R4 1 [nil]
+       2 [-]: GETIMPORT R4 1 [0x7B998233]
        3 [-]: CALL R4 1 1  
 L 0:   4 [-]: JUMPIFNOT R4 L1
        5 [-]: RETURN R0 0  
@@ -38,7 +38,7 @@ L 1:   6 [-]: LOADNIL R4
       10 [-]: CALL R5 1 1  
       11 [-]: FASTCALL1 62 R5 L2
       12 [-]: MOVE R7 R5   
-      13 [-]: GETIMPORT R6 1 [nil]
+      13 [-]: GETIMPORT R6 1 [0x7B998233]
       14 [-]: CALL R6 1 1  
 L 2:  15 [-]: JUMPIF R6 L3 
       16 [-]: MOVE R8 R2   
@@ -46,7 +46,7 @@ L 2:  15 [-]: JUMPIF R6 L3
       18 [-]: CALL R6 2 1  
       19 [-]: MOVE R4 R6   
 L 3:  20 [-]: JUMPIF R4 L4 
-      21 [-]: GETIMPORT R6 6 [nil]
+      21 [-]: GETIMPORT R6 6 [0xD149544D]
       22 [-]: GETTABLE R4 R6 R1
 L 4:  23 [-]: MOVE R8 R4   
       24 [-]: LOADB R9 0   
@@ -68,7 +68,7 @@ L 4:  23 [-]: MOVE R8 R4
        0 [-]: GETUPVAL R1 0
        1 [-]: MOVE R2 R0   
        2 [-]: LOADN R3 1   
-       3 [-]: GETIMPORT R4 1 [nil]
+       3 [-]: GETIMPORT R4 1 [0x0469F296]
        4 [-]: LOADK R5 K2 ["StandToKneel"]
        5 [-]: CALL R4 1 1  
        6 [-]: LOADN R5 3   
@@ -86,7 +86,7 @@ L 4:  23 [-]: MOVE R8 R4
        0 [-]: GETUPVAL R2 0
        1 [-]: MOVE R3 R0   
        2 [-]: LOADN R4 2   
-       3 [-]: GETIMPORT R5 1 [nil]
+       3 [-]: GETIMPORT R5 1 [0x0469F296]
        4 [-]: LOADK R6 K2 ["KneelIdle"]
        5 [-]: CALL R5 1 1  
        6 [-]: LOADN R6 2   
@@ -104,7 +104,7 @@ L 4:  23 [-]: MOVE R8 R4
        0 [-]: GETUPVAL R1 0
        1 [-]: MOVE R2 R0   
        2 [-]: LOADN R3 3   
-       3 [-]: GETIMPORT R4 1 [nil]
+       3 [-]: GETIMPORT R4 1 [0x0469F296]
        4 [-]: LOADK R5 K2 ["KneelToStand"]
        5 [-]: CALL R4 1 1  
        6 [-]: LOADN R5 1   

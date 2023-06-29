@@ -5,11 +5,11 @@
 ; Is_vararg:       1
 ; Max Stack Size:  5
 
-            1 [-]: LOADN R0 5   
-       2 [-]: GETIMPORT R1 1 [nil]
+       1 [-]: LOADN R0 5   
+       2 [-]: GETIMPORT R1 1 [0x2D0FAD09]
        3 [-]: LOADK R2 K2 ["Lotus.Scripts.Libs.AbilitiesLib"]
        4 [-]: CALL R1 1 1  
-       5 [-]: GETIMPORT R2 1 [nil]
+       5 [-]: GETIMPORT R2 1 [0x2D0FAD09]
        6 [-]: LOADK R3 K3 ["EE.Interface.Utilities"]
        7 [-]: CALL R2 1 1  
        8 [-]: NEWCLOSURE R3 P0
@@ -120,12 +120,12 @@ L 7:  32 [-]: DUPTABLE R3 9
       34 [-]: SETTABLEKS R4 R3 K7 ["DURATION"]
       35 [-]: LOADN R4 480 
       36 [-]: SETTABLEKS R4 R3 K8 ["COOLDOWN"]
-      37 [-]: GETIMPORT R4 11 [nil]
+      37 [-]: GETIMPORT R4 11 [0x89326C93]
       38 [-]: NAMECALL R4 R4 K12 [0x78298275]
       39 [-]: CALL R4 1 1  
       40 [-]: FASTCALL1 62 R4 L8
       41 [-]: MOVE R6 R4   
-      42 [-]: GETIMPORT R5 14 [nil]
+      42 [-]: GETIMPORT R5 14 [0x7B998233]
       43 [-]: CALL R5 1 1  
 L 8:  44 [-]: JUMPIF R5 L9 
       45 [-]: GETUPVAL R6 1
@@ -137,7 +137,7 @@ L 8:  44 [-]: JUMPIF R5 L9
       51 [-]: CALL R6 2 -1 
       52 [-]: CALL R5 -1 1 
       53 [-]: SETTABLEKS R5 R3 K8 ["COOLDOWN"]
-L 9:  54 [-]: GETIMPORT R5 19 [nil]
+L 9:  54 [-]: GETIMPORT R5 19 [0xB139D7BC]
       55 [-]: MOVE R6 R3   
       56 [-]: CALL R5 1 -1 
       57 [-]: RETURN R5 -1 
@@ -150,7 +150,7 @@ L 9:  54 [-]: GETIMPORT R5 19 [nil]
 ; Is_vararg:       0
 ; Max Stack Size:  13
 
-       0 [-]: GETIMPORT R8 1 [nil]
+       0 [-]: GETIMPORT R8 1 [0x6687F6E0]
        1 [-]: GETUPVAL R11 0
        2 [-]: GETTABLEKS R10 R11 K2 [0x516B7980]
        3 [-]: MOVE R11 R7  
@@ -201,7 +201,7 @@ L 7:  40 [-]: GETUPVAL R9 1
       41 [-]: NAMECALL R10 R5 K11 [0x163DF2E6]
       42 [-]: CALL R10 1 -1
       43 [-]: FASTCALL 19 L8
-      44 [-]: GETIMPORT R8 14 [nil]
+      44 [-]: GETIMPORT R8 14 [0xAC1B386A]
       45 [-]: CALL R8 -1 1 
 L 8:  46 [-]: SETUPVAL R8 1
       47 [-]: GETUPVAL R10 1

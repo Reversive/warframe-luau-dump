@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  6
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x2D0FAD09]
        2 [-]: LOADK R1 K2 ["Lotus.Scripts.Libs.AbilitiesLib"]
        3 [-]: CALL R0 1 1  
        4 [-]: LOADN R1 200 
@@ -80,7 +80,7 @@ L 2:  18 [-]: LOADN R1 500
        1 [-]: GETUPVAL R2 1
        2 [-]: FASTCALL1 62 R0 L0
        3 [-]: MOVE R4 R0   
-       4 [-]: GETIMPORT R3 1 [nil]
+       4 [-]: GETIMPORT R3 1 [0x7B998233]
        5 [-]: CALL R3 1 1  
 L 0:   6 [-]: JUMPIF R3 L2 
        7 [-]: NAMECALL R3 R0 K2 [0xDE321E6F]
@@ -89,7 +89,7 @@ L 0:   6 [-]: JUMPIF R3 L2
       10 [-]: CALL R4 1 1  
       11 [-]: FASTCALL1 62 R4 L1
       12 [-]: MOVE R6 R4   
-      13 [-]: GETIMPORT R5 1 [nil]
+      13 [-]: GETIMPORT R5 1 [0x7B998233]
       14 [-]: CALL R5 1 1  
 L 1:  15 [-]: JUMPIF R5 L2 
       16 [-]: NAMECALL R5 R4 K4 [0xCDE10C4A]
@@ -118,7 +118,7 @@ L 2:  32 [-]: RETURN R1 2
 ; Is_vararg:       0
 ; Max Stack Size:  7
 
-       0 [-]: GETIMPORT R0 3 [nil]
+       0 [-]: GETIMPORT R0 3 ["Level"]
        1 [-]: JUMPXEQKN R0 K4 L0 NOT [1]
        2 [-]: LOADN R1 200 
        3 [-]: SETUPVAL R1 0
@@ -144,14 +144,14 @@ L 2:  19 [-]: LOADN R1 500
       20 [-]: SETUPVAL R1 0
       21 [-]: LOADN R1 10  
       22 [-]: SETUPVAL R1 1
-L 3:  23 [-]: GETIMPORT R1 8 [nil]
-      24 [-]: GETIMPORT R3 10 [nil]
+L 3:  23 [-]: GETIMPORT R1 8 ["Ability"]
+      24 [-]: GETIMPORT R3 10 ["Modded"]
       25 [-]: NAMECALL R1 R1 K11 [0x7E627183]
       26 [-]: CALL R1 2 1  
-      27 [-]: GETIMPORT R2 10 [nil]
+      27 [-]: GETIMPORT R2 10 ["Modded"]
       28 [-]: JUMPXEQKB R2 1 L4 NOT
       29 [-]: GETUPVAL R2 2
-      30 [-]: GETIMPORT R3 13 [nil]
+      30 [-]: GETIMPORT R3 13 ["Avatar"]
       31 [-]: CALL R2 1 2  
       32 [-]: SETUPVAL R2 0
       33 [-]: SETUPVAL R3 1
@@ -163,7 +163,7 @@ L 4:  34 [-]: NEWTABLE R2 1 0
       39 [-]: SETTABLEKS R6 R5 K15 ["Value"]
       40 [-]: FASTCALL2 52 R2 R5 L5
       41 [-]: MOVE R4 R2   
-      42 [-]: GETIMPORT R3 20 [nil]
+      42 [-]: GETIMPORT R3 20 [0x23D5322F]
       43 [-]: CALL R3 2 0  
 L 5:  44 [-]: DUPTABLE R5 22
       45 [-]: LOADK R6 K23 ["/Lotus/Language/Labels/AVATAR_ABILITY"]
@@ -173,7 +173,7 @@ L 5:  44 [-]: DUPTABLE R5 22
       49 [-]: SETTABLEKS R6 R5 K21 ["ValueIcon"]
       50 [-]: FASTCALL2 52 R2 R5 L6
       51 [-]: MOVE R4 R2   
-      52 [-]: GETIMPORT R3 20 [nil]
+      52 [-]: GETIMPORT R3 20 [0x23D5322F]
       53 [-]: CALL R3 2 0  
 L 6:  54 [-]: DUPTABLE R5 26
       55 [-]: LOADK R6 K27 ["/Lotus/Language/Game/ABILITY_DURATION"]
@@ -184,11 +184,11 @@ L 6:  54 [-]: DUPTABLE R5 26
       60 [-]: SETTABLEKS R6 R5 K25 ["ValueUnit"]
       61 [-]: FASTCALL2 52 R2 R5 L7
       62 [-]: MOVE R4 R2   
-      63 [-]: GETIMPORT R3 20 [nil]
+      63 [-]: GETIMPORT R3 20 [0x23D5322F]
       64 [-]: CALL R3 2 0  
-L 7:  65 [-]: GETIMPORT R3 10 [nil]
+L 7:  65 [-]: GETIMPORT R3 10 ["Modded"]
       66 [-]: SETTABLEKS R3 R2 K9 ["Modded"]
-      67 [-]: GETIMPORT R3 29 [nil]
+      67 [-]: GETIMPORT R3 29 ["_T"]
       68 [-]: SETTABLEKS R2 R3 K30 ["AbilityUpgradeLevelInfo"]
       69 [-]: RETURN R0 0  
 
@@ -241,16 +241,16 @@ L 3:  22 [-]: GETUPVAL R4 2
       24 [-]: CALL R4 1 2  
       25 [-]: SETUPVAL R4 0
       26 [-]: SETUPVAL R5 1
-      27 [-]: GETIMPORT R4 4 [nil]
+      27 [-]: GETIMPORT R4 4 [0x6687F6E0]
       28 [-]: LOADB R6 1   
       29 [-]: NAMECALL R4 R4 K5 [0x7E627183]
       30 [-]: CALL R4 2 1  
-      31 [-]: GETIMPORT R7 7 [nil]
-      32 [-]: GETIMPORT R8 9 [nil]
+      31 [-]: GETIMPORT R7 7 [0x17C91A14]
+      32 [-]: GETIMPORT R8 9 [0x0469F296]
       33 [-]: LOADK R9 K10 ["GAME_R1_WEAPON1"]
       34 [-]: CALL R8 1 1  
-      35 [-]: GETIMPORT R9 12 [nil]
-      36 [-]: GETIMPORT R10 14 [nil]
+      35 [-]: GETIMPORT R9 12 ["ZERO_VECTOR"]
+      36 [-]: GETIMPORT R10 14 ["ZERO_ROTATION"]
       37 [-]: MOVE R11 R0  
       38 [-]: NAMECALL R5 R1 K15 [0x47901F07]
       39 [-]: CALL R5 6 0  
@@ -260,24 +260,24 @@ L 3:  22 [-]: GETUPVAL R4 2
       43 [-]: GETUPVAL R6 3
       44 [-]: GETTABLEKS R5 R6 K17 [0x8D11E79E]
       45 [-]: MOVE R6 R0   
-      46 [-]: GETIMPORT R7 19 [nil]
+      46 [-]: GETIMPORT R7 19 [0x0ED8B456]
       47 [-]: LOADK R8 K20 ["PowerCast"]
       48 [-]: LOADB R9 0   
       49 [-]: LOADN R10 2  
       50 [-]: LOADN R11 1  
       51 [-]: LOADB R12 1  
       52 [-]: CALL R5 7 0  
-      53 [-]: GETIMPORT R7 22 [nil]
-      54 [-]: GETIMPORT R8 24 [nil]
-      55 [-]: GETIMPORT R9 12 [nil]
-      56 [-]: GETIMPORT R10 14 [nil]
+      53 [-]: GETIMPORT R7 22 [0x32B75B61]
+      54 [-]: GETIMPORT R8 24 ["EMPTY_SYMBOL"]
+      55 [-]: GETIMPORT R9 12 ["ZERO_VECTOR"]
+      56 [-]: GETIMPORT R10 14 ["ZERO_ROTATION"]
       57 [-]: MOVE R11 R0  
       58 [-]: NAMECALL R5 R1 K15 [0x47901F07]
       59 [-]: CALL R5 6 0  
       60 [-]: LOADB R7 0   
       61 [-]: NAMECALL R5 R0 K16 [0x68B88E58]
       62 [-]: CALL R5 2 0  
-      63 [-]: GETIMPORT R5 26 [nil]
+      63 [-]: GETIMPORT R5 26 [0x89326C93]
       64 [-]: NAMECALL R5 R5 K27 [0x18D05D30]
       65 [-]: CALL R5 1 1  
       66 [-]: JUMPIFNOT R5 L15
@@ -285,27 +285,27 @@ L 3:  22 [-]: GETUPVAL R4 2
       68 [-]: CALL R5 1 1  
       69 [-]: FASTCALL1 62 R5 L4
       70 [-]: MOVE R7 R5   
-      71 [-]: GETIMPORT R6 30 [nil]
+      71 [-]: GETIMPORT R6 30 [0x7B998233]
       72 [-]: CALL R6 1 1  
 L 4:  73 [-]: JUMPIF R6 L5 
       74 [-]: NAMECALL R6 R5 K31 [0xD8140B94]
       75 [-]: CALL R6 1 1  
       76 [-]: JUMPIF R6 L5 
       77 [-]: RETURN R0 0  
-L 5:  78 [-]: GETIMPORT R6 34 [nil]
+L 5:  78 [-]: GETIMPORT R6 34 ["helminthEnergyShare"]
       79 [-]: JUMPIF R6 L6 
-      80 [-]: GETIMPORT R6 35 [nil]
+      80 [-]: GETIMPORT R6 35 ["_T"]
       81 [-]: NEWTABLE R7 0 0
       82 [-]: SETTABLEKS R7 R6 K33 ["helminthEnergyShare"]
 L 6:  83 [-]: NAMECALL R6 R1 K36 [0x388577D5]
       84 [-]: CALL R6 1 1  
-      85 [-]: GETIMPORT R8 34 [nil]
+      85 [-]: GETIMPORT R8 34 ["helminthEnergyShare"]
       86 [-]: GETTABLE R7 R8 R6
       87 [-]: JUMPIF R7 L7 
-      88 [-]: GETIMPORT R7 34 [nil]
+      88 [-]: GETIMPORT R7 34 ["helminthEnergyShare"]
       89 [-]: NEWTABLE R8 0 0
       90 [-]: SETTABLE R8 R7 R6
-L 7:  91 [-]: GETIMPORT R8 34 [nil]
+L 7:  91 [-]: GETIMPORT R8 34 ["helminthEnergyShare"]
       92 [-]: GETTABLE R7 R8 R6
       93 [-]: GETTABLEKS R9 R7 K37 ["healAmount"]
       94 [-]: NOT R8 R9    
@@ -316,7 +316,7 @@ L 7:  91 [-]: GETIMPORT R8 34 [nil]
       99 [-]: GETUPVAL R9 1
      100 [-]: SETTABLEKS R9 R7 K38 ["healDuration"]
      101 [-]: JUMPIFNOT R8 L8
-     102 [-]: GETIMPORT R11 9 [nil]
+     102 [-]: GETIMPORT R11 9 [0x0469F296]
      103 [-]: LOADK R12 K39 ["DoHeal"]
      104 [-]: CALL R11 1 1 
      105 [-]: LOADB R12 0  
@@ -333,7 +333,7 @@ L 8: 108 [-]: NAMECALL R9 R1 K41 [0xEF8E8F7F]
      116 [-]: LOADB R15 0  
      117 [-]: NAMECALL R12 R10 K44 [0x6C7D9C4D]
      118 [-]: CALL R12 3 1 
-     119 [-]: GETIMPORT R13 46 [nil]
+     119 [-]: GETIMPORT R13 46 [0xC8802016]
      120 [-]: MOVE R14 R12 
      121 [-]: CALL R13 1 3 
      122 [-]: FORGPREP_INEXT R13 L14
@@ -341,7 +341,7 @@ L 9: 123 [-]: NAMECALL R18 R17 K47 [0xA534C3AC]
      124 [-]: CALL R18 1 1 
      125 [-]: FASTCALL1 62 R18 L10
      126 [-]: MOVE R20 R18 
-     127 [-]: GETIMPORT R19 30 [nil]
+     127 [-]: GETIMPORT R19 30 [0x7B998233]
      128 [-]: CALL R19 1 1 
 L10: 129 [-]: JUMPIF R19 L14
      130 [-]: MOVE R21 R1  
@@ -359,13 +359,13 @@ L10: 129 [-]: JUMPIF R19 L14
      142 [-]: JUMPIFNOTLE R19 R11 L14
      143 [-]: NAMECALL R19 R18 K36 [0x388577D5]
      144 [-]: CALL R19 1 1 
-     145 [-]: GETIMPORT R21 34 [nil]
+     145 [-]: GETIMPORT R21 34 ["helminthEnergyShare"]
      146 [-]: GETTABLE R20 R21 R19
      147 [-]: JUMPIF R20 L11
-     148 [-]: GETIMPORT R20 34 [nil]
+     148 [-]: GETIMPORT R20 34 ["helminthEnergyShare"]
      149 [-]: NEWTABLE R21 0 0
      150 [-]: SETTABLE R21 R20 R19
-L11: 151 [-]: GETIMPORT R21 34 [nil]
+L11: 151 [-]: GETIMPORT R21 34 ["helminthEnergyShare"]
      152 [-]: GETTABLE R20 R21 R19
      153 [-]: GETTABLEKS R21 R20 K51 ["energyAmount"]
      154 [-]: NOT R8 R21   
@@ -375,10 +375,10 @@ L11: 151 [-]: GETIMPORT R21 34 [nil]
      158 [-]: GETUPVAL R21 1
      159 [-]: SETTABLEKS R21 R20 K52 ["energyDuration"]
      160 [-]: SETTABLEKS R1 R20 K53 ["source"]
-     161 [-]: GETIMPORT R21 4 [nil]
+     161 [-]: GETIMPORT R21 4 [0x6687F6E0]
      162 [-]: SETTABLEKS R21 R20 K54 ["ability"]
      163 [-]: JUMPIFNOT R8 L12
-     164 [-]: GETIMPORT R23 9 [nil]
+     164 [-]: GETIMPORT R23 9 [0x0469F296]
      165 [-]: LOADK R24 K55 ["DoEnergy"]
      166 [-]: CALL R23 1 1 
      167 [-]: LOADB R24 0  
@@ -390,13 +390,13 @@ L12: 170 [-]: NAMECALL R21 R18 K42 [0xDE321E6F]
      173 [-]: CALL R21 1 1 
      174 [-]: FASTCALL1 62 R21 L13
      175 [-]: MOVE R23 R21 
-     176 [-]: GETIMPORT R22 30 [nil]
+     176 [-]: GETIMPORT R22 30 [0x7B998233]
      177 [-]: CALL R22 1 1 
 L13: 178 [-]: JUMPIF R22 L14
-     179 [-]: GETIMPORT R22 26 [nil]
-     180 [-]: GETIMPORT R24 58 [nil]
+     179 [-]: GETIMPORT R22 26 [0x89326C93]
+     180 [-]: GETIMPORT R24 58 [0x5633F0A6]
      181 [-]: MOVE R25 R9  
-     182 [-]: GETIMPORT R26 14 [nil]
+     182 [-]: GETIMPORT R26 14 ["ZERO_ROTATION"]
      183 [-]: MOVE R27 R21 
      184 [-]: NAMECALL R22 R22 K59 [0x05909209]
      185 [-]: CALL R22 5 0 
@@ -413,11 +413,11 @@ L15: 187 [-]: RETURN R0 0
 
        0 [-]: NAMECALL R1 R0 K0 [0x388577D5]
        1 [-]: CALL R1 1 1  
-       2 [-]: GETIMPORT R3 3 [nil]
+       2 [-]: GETIMPORT R3 3 ["helminthEnergyShare"]
        3 [-]: GETTABLE R2 R3 R1
        4 [-]: GETTABLEKS R3 R2 K4 ["healDuration"]
        5 [-]: GETTABLEKS R4 R2 K5 ["healAmount"]
-       6 [-]: GETIMPORT R5 8 [nil]
+       6 [-]: GETIMPORT R5 8 [0x608BC054]
        7 [-]: CALL R5 0 1  
        8 [-]: SETTABLEKS R0 R5 K9 ["instigator"]
        9 [-]: NEWTABLE R6 0 1
@@ -426,7 +426,7 @@ L15: 187 [-]: RETURN R0 0
       12 [-]: SETTABLEKS R6 R5 K10 ["affected"]
       13 [-]: LOADN R6 7   
       14 [-]: SETTABLEKS R6 R5 K11 ["buffType"]
-      15 [-]: GETIMPORT R6 13 [nil]
+      15 [-]: GETIMPORT R6 13 [0x13C5EF21]
       16 [-]: SETTABLEKS R6 R5 K14 ["abilityType"]
       17 [-]: SETTABLEKS R3 R5 K15 ["buffData"]
       18 [-]: SETTABLEKS R4 R5 K16 ["buffDataExtra"]
@@ -450,12 +450,12 @@ L 0:  31 [-]: LOADN R7 0
       36 [-]: NAMECALL R7 R0 K21 [0x73901ACF]
       37 [-]: CALL R7 1 1  
       38 [-]: JUMPIF R7 L5 
-      39 [-]: GETIMPORT R8 23 [nil]
+      39 [-]: GETIMPORT R8 23 [0x6687F6E0]
       40 [-]: FASTCALL1 62 R8 L1
-      41 [-]: GETIMPORT R7 25 [nil]
+      41 [-]: GETIMPORT R7 25 [0x7B998233]
       42 [-]: CALL R7 1 1  
 L 1:  43 [-]: JUMPIF R7 L5 
-      44 [-]: GETIMPORT R7 23 [nil]
+      44 [-]: GETIMPORT R7 23 [0x6687F6E0]
       45 [-]: MOVE R9 R0   
       46 [-]: NAMECALL R7 R7 K26 [0xC05A66CD]
       47 [-]: CALL R7 2 1  
@@ -485,11 +485,11 @@ L 3:  65 [-]: GETTABLEKS R3 R2 K4 ["healDuration"]
       71 [-]: LOADB R11 1  
       72 [-]: NAMECALL R7 R0 K17 [0x37E45FB5]
       73 [-]: CALL R7 4 0  
-L 4:  74 [-]: GETIMPORT R7 29 [nil]
+L 4:  74 [-]: GETIMPORT R7 29 [0x67652851]
       75 [-]: CALL R7 0 1  
       76 [-]: SUB R3 R3 R7 
       77 [-]: SETTABLEKS R3 R2 K4 ["healDuration"]
-      78 [-]: GETIMPORT R7 31 [nil]
+      78 [-]: GETIMPORT R7 31 [0xCBD666E1]
       79 [-]: LOADN R8 0   
       80 [-]: CALL R7 1 0  
       81 [-]: JUMPBACK L0  
@@ -509,14 +509,14 @@ L 6:  89 [-]: LOADN R9 64
       95 [-]: SETTABLEKS R7 R2 K5 ["healAmount"]
       96 [-]: GETTABLEKS R7 R2 K32 ["energyAmount"]
       97 [-]: JUMPIF R7 L7 
-      98 [-]: GETIMPORT R7 3 [nil]
+      98 [-]: GETIMPORT R7 3 ["helminthEnergyShare"]
       99 [-]: LOADNIL R8   
      100 [-]: SETTABLE R8 R7 R1
-     101 [-]: GETIMPORT R7 34 [nil]
-     102 [-]: GETIMPORT R8 3 [nil]
+     101 [-]: GETIMPORT R7 34 [0x4EC73E73]
+     102 [-]: GETIMPORT R8 3 ["helminthEnergyShare"]
      103 [-]: CALL R7 1 1  
      104 [-]: JUMPIF R7 L7 
-     105 [-]: GETIMPORT R7 35 [nil]
+     105 [-]: GETIMPORT R7 35 ["_T"]
      106 [-]: LOADNIL R8   
      107 [-]: SETTABLEKS R8 R7 K2 ["helminthEnergyShare"]
 L 7: 108 [-]: RETURN R0 0  
@@ -531,11 +531,11 @@ L 7: 108 [-]: RETURN R0 0
 
        0 [-]: NAMECALL R1 R0 K0 [0x388577D5]
        1 [-]: CALL R1 1 1  
-       2 [-]: GETIMPORT R3 3 [nil]
+       2 [-]: GETIMPORT R3 3 ["helminthEnergyShare"]
        3 [-]: GETTABLE R2 R3 R1
        4 [-]: GETTABLEKS R3 R2 K4 ["energyDuration"]
        5 [-]: GETTABLEKS R4 R2 K5 ["energyAmount"]
-       6 [-]: GETIMPORT R5 8 [nil]
+       6 [-]: GETIMPORT R5 8 [0x608BC054]
        7 [-]: CALL R5 0 1  
        8 [-]: GETTABLEKS R6 R2 K9 ["source"]
        9 [-]: SETTABLEKS R6 R5 K10 ["instigator"]
@@ -545,7 +545,7 @@ L 7: 108 [-]: RETURN R0 0
       13 [-]: SETTABLEKS R6 R5 K11 ["affected"]
       14 [-]: LOADN R6 7   
       15 [-]: SETTABLEKS R6 R5 K12 ["buffType"]
-      16 [-]: GETIMPORT R6 14 [nil]
+      16 [-]: GETIMPORT R6 14 [0xBEF8FFE3]
       17 [-]: SETTABLEKS R6 R5 K15 ["abilityType"]
       18 [-]: SETTABLEKS R3 R5 K16 ["buffData"]
       19 [-]: SETTABLEKS R4 R5 K17 ["buffDataExtra"]
@@ -571,7 +571,7 @@ L 0:  32 [-]: LOADN R7 0
       39 [-]: JUMPIF R7 L6 
       40 [-]: GETTABLEKS R8 R2 K23 ["ability"]
       41 [-]: FASTCALL1 62 R8 L1
-      42 [-]: GETIMPORT R7 25 [nil]
+      42 [-]: GETIMPORT R7 25 [0x7B998233]
       43 [-]: CALL R7 1 1  
 L 1:  44 [-]: JUMPIF R7 L6 
       45 [-]: GETTABLEKS R7 R2 K23 ["ability"]
@@ -617,11 +617,11 @@ L 4:  77 [-]: GETTABLEKS R3 R2 K4 ["energyDuration"]
       85 [-]: LOADB R11 1  
       86 [-]: NAMECALL R7 R0 K18 [0x37E45FB5]
       87 [-]: CALL R7 4 0  
-L 5:  88 [-]: GETIMPORT R7 29 [nil]
+L 5:  88 [-]: GETIMPORT R7 29 [0x67652851]
       89 [-]: CALL R7 0 1  
       90 [-]: SUB R3 R3 R7 
       91 [-]: SETTABLEKS R3 R2 K4 ["energyDuration"]
-      92 [-]: GETIMPORT R7 31 [nil]
+      92 [-]: GETIMPORT R7 31 [0xCBD666E1]
       93 [-]: LOADN R8 0   
       94 [-]: CALL R7 1 0  
       95 [-]: JUMPBACK L0  
@@ -641,14 +641,14 @@ L 7: 103 [-]: LOADN R9 92
      109 [-]: SETTABLEKS R7 R2 K5 ["energyAmount"]
      110 [-]: GETTABLEKS R7 R2 K32 ["healAmount"]
      111 [-]: JUMPIF R7 L8 
-     112 [-]: GETIMPORT R7 3 [nil]
+     112 [-]: GETIMPORT R7 3 ["helminthEnergyShare"]
      113 [-]: LOADNIL R8   
      114 [-]: SETTABLE R8 R7 R1
-     115 [-]: GETIMPORT R7 34 [nil]
-     116 [-]: GETIMPORT R8 3 [nil]
+     115 [-]: GETIMPORT R7 34 [0x4EC73E73]
+     116 [-]: GETIMPORT R8 3 ["helminthEnergyShare"]
      117 [-]: CALL R7 1 1  
      118 [-]: JUMPIF R7 L8 
-     119 [-]: GETIMPORT R7 35 [nil]
+     119 [-]: GETIMPORT R7 35 ["_T"]
      120 [-]: LOADNIL R8   
      121 [-]: SETTABLEKS R8 R7 K2 ["helminthEnergyShare"]
 L 8: 122 [-]: RETURN R0 0  

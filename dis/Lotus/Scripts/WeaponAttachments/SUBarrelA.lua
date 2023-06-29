@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  4
 
-            1 [-]: NEWTABLE R0 0 1
+       1 [-]: NEWTABLE R0 0 1
        2 [-]: NEWTABLE R1 0 2
        3 [-]: LOADK R2 K0 [0.10000000000000001]
        4 [-]: LOADN R3 0   
@@ -41,14 +41,14 @@ L 1:  12 [-]: LOADN R3 1
       14 [-]: LENGTH R1 R4 
       15 [-]: LOADN R2 1   
       16 [-]: FORNPREP R1 L4
-L 2:  17 [-]: GETIMPORT R4 2 [nil]
+L 2:  17 [-]: GETIMPORT R4 2 [0xCBD666E1]
       18 [-]: GETUPVAL R7 0
       19 [-]: GETTABLE R6 R7 R3
       20 [-]: GETTABLEN R5 R6 1
       21 [-]: CALL R4 1 0  
       22 [-]: FASTCALL1 62 R0 L3
       23 [-]: MOVE R5 R0   
-      24 [-]: GETIMPORT R4 4 [nil]
+      24 [-]: GETIMPORT R4 4 [0x7B998233]
       25 [-]: CALL R4 1 1  
 L 3:  26 [-]: JUMPIF R4 L4 
       27 [-]: GETUPVAL R8 0

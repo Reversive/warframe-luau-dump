@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  3
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x2D0FAD09]
        2 [-]: LOADK R1 K2 ["Lotus.Scripts.WeaponAttachments.WeaponUtil"]
        3 [-]: CALL R0 1 1  
        4 [-]: DUPCLOSURE R1 K3 []
@@ -45,7 +45,7 @@ L 0:   6 [-]: GETTABLE R2 R1 R0
 ; Is_vararg:       0
 ; Max Stack Size:  16
 
-       0 [-]: GETIMPORT R2 1 [nil]
+       0 [-]: GETIMPORT R2 1 [0x89326C93]
        1 [-]: NAMECALL R2 R2 K2 [0x18D05D30]
        2 [-]: CALL R2 1 1  
        3 [-]: JUMPIF R2 L0 
@@ -54,7 +54,7 @@ L 0:   5 [-]: NAMECALL R2 R0 K3 [0x73A8846A]
        6 [-]: CALL R2 1 1  
        7 [-]: FASTCALL1 62 R2 L1
        8 [-]: MOVE R4 R2   
-       9 [-]: GETIMPORT R3 5 [nil]
+       9 [-]: GETIMPORT R3 5 [0x7B998233]
       10 [-]: CALL R3 1 1  
 L 1:  11 [-]: JUMPIFNOT R3 L2
       12 [-]: RETURN R0 0  
@@ -62,7 +62,7 @@ L 2:  13 [-]: NAMECALL R3 R2 K6 [0x5163741E]
       14 [-]: CALL R3 1 1  
       15 [-]: FASTCALL1 62 R3 L3
       16 [-]: MOVE R5 R3   
-      17 [-]: GETIMPORT R4 5 [nil]
+      17 [-]: GETIMPORT R4 5 [0x7B998233]
       18 [-]: CALL R4 1 1  
 L 3:  19 [-]: JUMPIFNOT R4 L4
       20 [-]: RETURN R0 0  
@@ -119,7 +119,7 @@ L 8:  47 [-]: LOADN R11 369
 ; Is_vararg:       0
 ; Max Stack Size:  12
 
-       0 [-]: GETIMPORT R1 1 [nil]
+       0 [-]: GETIMPORT R1 1 [0x89326C93]
        1 [-]: NAMECALL R1 R1 K2 [0x18D05D30]
        2 [-]: CALL R1 1 1  
        3 [-]: JUMPIF R1 L0 
@@ -128,10 +128,10 @@ L 0:   5 [-]: NAMECALL R1 R0 K3 [0x5163741E]
        6 [-]: CALL R1 1 1  
        7 [-]: FASTCALL1 62 R1 L1
        8 [-]: MOVE R3 R1   
-       9 [-]: GETIMPORT R2 5 [nil]
+       9 [-]: GETIMPORT R2 5 [0x7B998233]
       10 [-]: CALL R2 1 1  
 L 1:  11 [-]: JUMPIF R2 L2 
-      12 [-]: GETIMPORT R4 7 [nil]
+      12 [-]: GETIMPORT R4 7 ["gTennoAvatarType"]
       13 [-]: NAMECALL R2 R1 K8 [0xF2DEAF69]
       14 [-]: CALL R2 2 1  
       15 [-]: JUMPIF R2 L3 
@@ -143,7 +143,7 @@ L 3:  17 [-]: NAMECALL R2 R0 K9 [0x1403242C]
       21 [-]: MOVE R4 R0   
       22 [-]: DUPTABLE R5 13
       23 [-]: SETTABLEKS R2 R5 K11 ["mIndex"]
-      24 [-]: GETIMPORT R6 15 [nil]
+      24 [-]: GETIMPORT R6 15 [0xE6871F87]
       25 [-]: SETTABLEKS R6 R5 K12 ["mZoomMultipliers"]
       26 [-]: CALL R3 2 1  
       27 [-]: NAMECALL R4 R1 K16 [0xDE321E6F]
@@ -175,7 +175,7 @@ L 5:  40 [-]: NAMECALL R9 R0 K18 [0xCDE10C4A]
 ; Is_vararg:       0
 ; Max Stack Size:  11
 
-       0 [-]: GETIMPORT R1 1 [nil]
+       0 [-]: GETIMPORT R1 1 [0x89326C93]
        1 [-]: NAMECALL R1 R1 K2 [0x18D05D30]
        2 [-]: CALL R1 1 1  
        3 [-]: JUMPIF R1 L0 
@@ -184,10 +184,10 @@ L 0:   5 [-]: NAMECALL R1 R0 K3 [0x5163741E]
        6 [-]: CALL R1 1 1  
        7 [-]: FASTCALL1 62 R1 L1
        8 [-]: MOVE R3 R1   
-       9 [-]: GETIMPORT R2 5 [nil]
+       9 [-]: GETIMPORT R2 5 [0x7B998233]
       10 [-]: CALL R2 1 1  
 L 1:  11 [-]: JUMPIF R2 L2 
-      12 [-]: GETIMPORT R4 7 [nil]
+      12 [-]: GETIMPORT R4 7 ["gTennoAvatarType"]
       13 [-]: NAMECALL R2 R1 K8 [0xF2DEAF69]
       14 [-]: CALL R2 2 1  
       15 [-]: JUMPIF R2 L3 
@@ -199,7 +199,7 @@ L 3:  17 [-]: NAMECALL R2 R0 K9 [0x1403242C]
       21 [-]: LOADN R5 369 
       22 [-]: LOADN R6 2   
       23 [-]: MOVE R8 R2   
-      24 [-]: GETIMPORT R9 12 [nil]
+      24 [-]: GETIMPORT R9 12 [0xE6871F87]
       25 [-]: ADDK R8 R8 K13 [1]
       26 [-]: LENGTH R10 R9
       27 [-]: JUMPIFNOTLT R10 R8 L4

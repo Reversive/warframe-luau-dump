@@ -5,9 +5,9 @@
 ; Is_vararg:       1
 ; Max Stack Size:  3
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0xAEABECDA]
        2 [-]: GETVARARGS R1 1
-       3 [-]: GETIMPORT R2 4 [nil]
+       3 [-]: GETIMPORT R2 4 ["seeall"]
        4 [-]: CALL R0 2 0  
        5 [-]: DUPCLOSURE R0 K5 []
        6 [-]: SETGLOBAL R0 K6 ["CreateRandomMovieClipGenerator"]
@@ -39,7 +39,7 @@
       15 [-]: SETTABLEKS R3 R2 K6 ["mOnClipDestroyedCallback"]
       16 [-]: LOADNIL R3   
       17 [-]: SETTABLEKS R3 R2 K7 ["mOnClipUpdatedCallback"]
-      18 [-]: GETIMPORT R3 35 [nil]
+      18 [-]: GETIMPORT R3 35 [0x2D0FAD09]
       19 [-]: LOADK R4 K36 ["EE.Interface.Utilities"]
       20 [-]: CALL R3 1 1  
       21 [-]: SETTABLEKS R3 R2 K8 ["UTIL"]

@@ -5,9 +5,9 @@
 ; Is_vararg:       1
 ; Max Stack Size:  3
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0xAEABECDA]
        2 [-]: GETVARARGS R1 1
-       3 [-]: GETIMPORT R2 4 [nil]
+       3 [-]: GETIMPORT R2 4 ["seeall"]
        4 [-]: CALL R0 2 0  
        5 [-]: DUPCLOSURE R0 K5 []
        6 [-]: SETGLOBAL R0 K6 ["CreateImageSlideShow"]
@@ -27,7 +27,7 @@
        3 [-]: LOADN R6 1   
        4 [-]: LOADN R7 -7  
        5 [-]: FASTCALL 45 L0
-       6 [-]: GETIMPORT R4 3 [nil]
+       6 [-]: GETIMPORT R4 3 [0x1A94C9CC]
        7 [-]: CALL R4 3 1  
 L 0:   8 [-]: SETTABLEKS R4 R3 K4 ["mMainClipName"]
        9 [-]: SETTABLEKS R1 R3 K5 ["mClipName"]
@@ -41,19 +41,19 @@ L 0:   8 [-]: SETTABLEKS R4 R3 K4 ["mMainClipName"]
       17 [-]: NAMECALL R4 R0 K9 [0x91A24E4B]
       18 [-]: CALL R4 3 1  
       19 [-]: SETTABLEKS R4 R3 K10 ["mInitialControlsY"]
-      20 [-]: GETIMPORT R4 12 [nil]
+      20 [-]: GETIMPORT R4 12 [0x2D0FAD09]
       21 [-]: LOADK R5 K13 ["EE.Interface.Utilities"]
       22 [-]: CALL R4 1 1  
       23 [-]: SETTABLEKS R4 R3 K14 ["UTIL"]
-      24 [-]: GETIMPORT R4 12 [nil]
+      24 [-]: GETIMPORT R4 12 [0x2D0FAD09]
       25 [-]: LOADK R5 K15 ["Lotus.Interface.LotusUtilities"]
       26 [-]: CALL R4 1 1  
       27 [-]: SETTABLEKS R4 R3 K16 ["LOTUS_UTIL"]
-      28 [-]: GETIMPORT R4 12 [nil]
+      28 [-]: GETIMPORT R4 12 [0x2D0FAD09]
       29 [-]: LOADK R5 K17 ["Lotus.Interface.UIStyleUtilities"]
       30 [-]: CALL R4 1 1  
       31 [-]: SETTABLEKS R4 R3 K18 ["STYLE_UTIL"]
-      32 [-]: GETIMPORT R4 12 [nil]
+      32 [-]: GETIMPORT R4 12 [0x2D0FAD09]
       33 [-]: LOADK R5 K19 ["Lotus.Interface.UIUtilities"]
       34 [-]: CALL R4 1 1  
       35 [-]: SETTABLEKS R4 R3 K20 ["UI_UTIL"]
@@ -80,11 +80,11 @@ L 0:   8 [-]: SETTABLEKS R4 R3 K4 ["mMainClipName"]
       56 [-]: NAMECALL R4 R0 K9 [0x91A24E4B]
       57 [-]: CALL R4 3 1  
       58 [-]: SETTABLEKS R4 R3 K27 ["mInitialProgressWidth"]
-      59 [-]: GETIMPORT R4 29 [nil]
+      59 [-]: GETIMPORT R4 29 [0xB009BBC6]
       60 [-]: LOADK R5 K30 ["/Lotus/Interface/Materials/VisibleRangeSlideshowControl"]
       61 [-]: CALL R4 1 1  
       62 [-]: SETTABLEKS R4 R3 K31 ["mControlsVisRange"]
-      63 [-]: GETIMPORT R4 29 [nil]
+      63 [-]: GETIMPORT R4 29 [0xB009BBC6]
       64 [-]: LOADK R5 K32 ["/Lotus/Interface/Materials/CodexArtProcedural"]
       65 [-]: CALL R4 1 1  
       66 [-]: SETTABLEKS R4 R3 K33 ["mImageMaterial"]

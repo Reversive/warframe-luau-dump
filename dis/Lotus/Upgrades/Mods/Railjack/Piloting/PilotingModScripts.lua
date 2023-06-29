@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  3
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x2D0FAD09]
        2 [-]: LOADK R1 K2 ["Lotus.Scripts.Libs.RailjackUtilities"]
        3 [-]: CALL R0 1 1  
        4 [-]: DUPCLOSURE R1 K3 []
@@ -56,12 +56,12 @@
 
        0 [-]: NAMECALL R5 R0 K0 [0x388577D5]
        1 [-]: CALL R5 1 1  
-       2 [-]: GETIMPORT R6 3 [nil]
+       2 [-]: GETIMPORT R6 3 ["chanceOfBreachHitAttenuator"]
        3 [-]: JUMPIF R6 L0 
-       4 [-]: GETIMPORT R6 4 [nil]
+       4 [-]: GETIMPORT R6 4 ["_T"]
        5 [-]: NEWTABLE R7 0 0
        6 [-]: SETTABLEKS R7 R6 K2 ["chanceOfBreachHitAttenuator"]
-L 0:   7 [-]: GETIMPORT R6 3 [nil]
+L 0:   7 [-]: GETIMPORT R6 3 ["chanceOfBreachHitAttenuator"]
        8 [-]: LOADN R8 1   
        9 [-]: LOADN R12 0  
       10 [-]: NAMECALL R10 R4 K6 [0xFEF27732]
@@ -83,26 +83,26 @@ L 0:   7 [-]: GETIMPORT R6 3 [nil]
 
        0 [-]: NAMECALL R5 R0 K0 [0x388577D5]
        1 [-]: CALL R5 1 1  
-       2 [-]: GETIMPORT R7 3 [nil]
+       2 [-]: GETIMPORT R7 3 ["chanceOfBreachHitAttenuator"]
        3 [-]: FASTCALL1 62 R7 L0
-       4 [-]: GETIMPORT R6 5 [nil]
+       4 [-]: GETIMPORT R6 5 [0x7B998233]
        5 [-]: CALL R6 1 1  
 L 0:   6 [-]: JUMPIFNOT R6 L1
        7 [-]: RETURN R0 0  
-L 1:   8 [-]: GETIMPORT R8 3 [nil]
+L 1:   8 [-]: GETIMPORT R8 3 ["chanceOfBreachHitAttenuator"]
        9 [-]: GETTABLE R7 R8 R5
       10 [-]: FASTCALL1 62 R7 L2
-      11 [-]: GETIMPORT R6 5 [nil]
+      11 [-]: GETIMPORT R6 5 [0x7B998233]
       12 [-]: CALL R6 1 1  
 L 2:  13 [-]: JUMPIF R6 L3 
-      14 [-]: GETIMPORT R6 3 [nil]
+      14 [-]: GETIMPORT R6 3 ["chanceOfBreachHitAttenuator"]
       15 [-]: LOADNIL R7   
       16 [-]: SETTABLE R7 R6 R5
-      17 [-]: GETIMPORT R6 7 [nil]
-      18 [-]: GETIMPORT R7 3 [nil]
+      17 [-]: GETIMPORT R6 7 [0x4EC73E73]
+      18 [-]: GETIMPORT R7 3 ["chanceOfBreachHitAttenuator"]
       19 [-]: CALL R6 1 1  
       20 [-]: JUMPIF R6 L3 
-      21 [-]: GETIMPORT R6 8 [nil]
+      21 [-]: GETIMPORT R6 8 ["_T"]
       22 [-]: LOADNIL R7   
       23 [-]: SETTABLEKS R7 R6 K2 ["chanceOfBreachHitAttenuator"]
 L 3:  24 [-]: RETURN R0 0  
@@ -115,7 +115,7 @@ L 3:  24 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  17
 
-       0 [-]: GETIMPORT R5 1 [nil]
+       0 [-]: GETIMPORT R5 1 [0x0469F296]
        1 [-]: LOADK R7 K2 ["SENTIENT_SHIELD"]
        2 [-]: NAMECALL R8 R0 K3 [0x388577D5]
        3 [-]: CALL R8 1 1  
@@ -146,7 +146,7 @@ L 3:  24 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  10
 
-       0 [-]: GETIMPORT R5 1 [nil]
+       0 [-]: GETIMPORT R5 1 [0x0469F296]
        1 [-]: LOADK R7 K2 ["SENTIENT_SHIELD"]
        2 [-]: NAMECALL R8 R0 K3 [0x388577D5]
        3 [-]: CALL R8 1 1  
@@ -167,7 +167,7 @@ L 3:  24 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  12
 
-       0 [-]: GETIMPORT R5 1 [nil]
+       0 [-]: GETIMPORT R5 1 ["_T"]
        1 [-]: LOADN R7 1   
        2 [-]: LOADN R11 0  
        3 [-]: NAMECALL R9 R4 K3 [0xFEF27732]
@@ -187,7 +187,7 @@ L 3:  24 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  7
 
-       0 [-]: GETIMPORT R5 1 [nil]
+       0 [-]: GETIMPORT R5 1 ["_T"]
        1 [-]: LOADNIL R6   
        2 [-]: SETTABLEKS R6 R5 K2 ["multiToolAmmoReduction"]
        3 [-]: RETURN R0 0  
@@ -200,7 +200,7 @@ L 3:  24 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  16
 
-       0 [-]: GETIMPORT R5 1 [nil]
+       0 [-]: GETIMPORT R5 1 [0x89326C93]
        1 [-]: NAMECALL R5 R5 K2 [0x18D05D30]
        2 [-]: CALL R5 1 1  
        3 [-]: JUMPIF R5 L0 
@@ -214,7 +214,7 @@ L 0:   5 [-]: NAMECALL R5 R0 K3 [0xDE321E6F]
       11 [-]: NAMECALL R8 R8 K6 [0x0FBC7293]
       12 [-]: CALL R8 1 1  
       13 [-]: DIVK R7 R8 K4 [100]
-      14 [-]: GETIMPORT R8 8 [nil]
+      14 [-]: GETIMPORT R8 8 [0x7ED0A956]
       15 [-]: LOADK R9 K9 ["/Lotus/Types/Game/CrewShip/Malfunctions/WallBreach"]
       16 [-]: CALL R8 1 1  
       17 [-]: GETUPVAL R10 0
@@ -222,12 +222,12 @@ L 0:   5 [-]: NAMECALL R5 R0 K3 [0xDE321E6F]
       19 [-]: CALL R9 0 1  
 L 1:  20 [-]: FASTCALL1 62 R0 L2
       21 [-]: MOVE R11 R0  
-      22 [-]: GETIMPORT R10 12 [nil]
+      22 [-]: GETIMPORT R10 12 [0x7B998233]
       23 [-]: CALL R10 1 1 
 L 2:  24 [-]: JUMPIF R10 L7
       25 [-]: FASTCALL1 62 R9 L3
       26 [-]: MOVE R11 R9  
-      27 [-]: GETIMPORT R10 12 [nil]
+      27 [-]: GETIMPORT R10 12 [0x7B998233]
       28 [-]: CALL R10 1 1 
 L 3:  29 [-]: JUMPIFNOT R10 L4
       30 [-]: GETUPVAL R11 0
@@ -258,7 +258,7 @@ L 5:  48 [-]: JUMPXEQKN R10 K15 L6 NOT [0]
       53 [-]: NAMECALL R11 R5 K16 [0x12DD9DA2]
       54 [-]: CALL R11 4 0 
       55 [-]: LOADB R6 0   
-L 6:  56 [-]: GETIMPORT R10 18 [nil]
+L 6:  56 [-]: GETIMPORT R10 18 [0xCBD666E1]
       57 [-]: LOADN R11 0  
       58 [-]: CALL R10 1 0 
       59 [-]: JUMPBACK L1  
@@ -272,7 +272,7 @@ L 7:  60 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  10
 
-       0 [-]: GETIMPORT R5 1 [nil]
+       0 [-]: GETIMPORT R5 1 ["_T"]
        1 [-]: LOADN R9 0   
        2 [-]: NAMECALL R7 R4 K3 [0xFEF27732]
        3 [-]: CALL R7 2 1  
@@ -290,7 +290,7 @@ L 7:  60 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  7
 
-       0 [-]: GETIMPORT R5 1 [nil]
+       0 [-]: GETIMPORT R5 1 ["_T"]
        1 [-]: LOADNIL R6   
        2 [-]: SETTABLEKS R6 R5 K2 ["repelRamSledChance"]
        3 [-]: RETURN R0 0  

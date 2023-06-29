@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  1
 
-            1 [-]: DUPCLOSURE R0 K0 []
+       1 [-]: DUPCLOSURE R0 K0 []
        2 [-]: SETGLOBAL R0 K1 ["FlyByBomber"]
        3 [-]: RETURN R0 0  
 
@@ -17,28 +17,28 @@
 ; Is_vararg:       0
 ; Max Stack Size:  8
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 [0x38D661ED]
        1 [-]: LOADN R1 0   
 L 0:   2 [-]: LOADN R2 0   
        3 [-]: JUMPIFNOTLT R2 R0 L2
-       4 [-]: GETIMPORT R2 3 [nil]
+       4 [-]: GETIMPORT R2 3 [0x97C4A183]
        5 [-]: JUMPIFNOTLE R2 R1 L1
        6 [-]: LOADN R1 0   
-       7 [-]: GETIMPORT R2 5 [nil]
-       8 [-]: GETIMPORT R4 7 [nil]
-       9 [-]: GETIMPORT R5 9 [nil]
+       7 [-]: GETIMPORT R2 5 [0x89326C93]
+       8 [-]: GETIMPORT R4 7 [0x2D3279D8]
+       9 [-]: GETIMPORT R5 9 [0x73EB22D7]
       10 [-]: NAMECALL R5 R5 K10 [0xD1586535]
       11 [-]: CALL R5 1 1  
-      12 [-]: GETIMPORT R6 9 [nil]
+      12 [-]: GETIMPORT R6 9 [0x73EB22D7]
       13 [-]: NAMECALL R6 R6 K11 [0xCB3851B8]
       14 [-]: CALL R6 1 -1 
       15 [-]: NAMECALL R2 R2 K12 [0x05909209]
       16 [-]: CALL R2 -1 0 
       17 [-]: SUBK R0 R0 K13 [1]
-L 1:  18 [-]: GETIMPORT R2 15 [nil]
+L 1:  18 [-]: GETIMPORT R2 15 [0x67652851]
       19 [-]: CALL R2 0 1  
       20 [-]: ADD R1 R1 R2 
-      21 [-]: GETIMPORT R2 17 [nil]
+      21 [-]: GETIMPORT R2 17 [0xCBD666E1]
       22 [-]: LOADN R3 0   
       23 [-]: CALL R2 1 0  
       24 [-]: JUMPBACK L0  

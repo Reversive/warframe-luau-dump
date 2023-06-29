@@ -5,19 +5,19 @@
 ; Is_vararg:       1
 ; Max Stack Size:  18
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x2D0FAD09]
        2 [-]: LOADK R1 K2 ["Lotus.Scripts.Duviri.Encounters.DuviriRewardsLib"]
        3 [-]: CALL R0 1 1  
-       4 [-]: GETIMPORT R1 1 [nil]
+       4 [-]: GETIMPORT R1 1 [0x2D0FAD09]
        5 [-]: LOADK R2 K3 ["Lotus.Interface.Libs.DuviriUtil"]
        6 [-]: CALL R1 1 1  
-       7 [-]: GETIMPORT R2 1 [nil]
+       7 [-]: GETIMPORT R2 1 [0x2D0FAD09]
        8 [-]: LOADK R3 K4 ["Lotus.Interface.LotusUtilities"]
        9 [-]: CALL R2 1 1  
-      10 [-]: GETIMPORT R3 1 [nil]
+      10 [-]: GETIMPORT R3 1 [0x2D0FAD09]
       11 [-]: LOADK R4 K5 ["EE.Interface.Utilities"]
       12 [-]: CALL R3 1 1  
-      13 [-]: GETIMPORT R4 7 [nil]
+      13 [-]: GETIMPORT R4 7 [0x0469F296]
       14 [-]: LOADK R5 K8 ["SwimmingMawSpawnLocation"]
       15 [-]: CALL R4 1 1  
       16 [-]: NEWTABLE R5 0 0
@@ -74,7 +74,7 @@
 
        0 [-]: FASTCALL1 62 R0 L0
        1 [-]: MOVE R3 R0   
-       2 [-]: GETIMPORT R2 1 [nil]
+       2 [-]: GETIMPORT R2 1 [0x7B998233]
        3 [-]: CALL R2 1 1  
 L 0:   4 [-]: JUMPIF R2 L1 
        5 [-]: MOVE R4 R1   
@@ -103,33 +103,33 @@ L 1:  21 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  14
 
-       0 [-]: GETIMPORT R2 1 [nil]
+       0 [-]: GETIMPORT R2 1 [0x89326C93]
        1 [-]: NAMECALL R2 R2 K2 [0x18D05D30]
        2 [-]: CALL R2 1 1  
        3 [-]: JUMPIFNOT R2 L2
        4 [-]: FASTCALL1 62 R0 L0
        5 [-]: MOVE R3 R0   
-       6 [-]: GETIMPORT R2 4 [nil]
+       6 [-]: GETIMPORT R2 4 [0x7B998233]
        7 [-]: CALL R2 1 1  
 L 0:   8 [-]: JUMPIF R2 L2 
        9 [-]: NAMECALL R2 R0 K5 [0xFA9E477F]
       10 [-]: CALL R2 1 1  
       11 [-]: FASTCALL1 62 R2 L1
       12 [-]: MOVE R4 R2   
-      13 [-]: GETIMPORT R3 4 [nil]
+      13 [-]: GETIMPORT R3 4 [0x7B998233]
       14 [-]: CALL R3 1 1  
 L 1:  15 [-]: JUMPIF R3 L2 
-      16 [-]: GETIMPORT R3 7 [nil]
+      16 [-]: GETIMPORT R3 7 [0x0469F296]
       17 [-]: LOADK R4 K8 ["PlayerControlled"]
       18 [-]: CALL R3 1 1  
-      19 [-]: GETIMPORT R4 10 [nil]
+      19 [-]: GETIMPORT R4 10 [0x3D106989]
       20 [-]: LOADK R6 K11 ["agent:SetPaused("]
-      21 [-]: GETIMPORT R12 13 [nil]
+      21 [-]: GETIMPORT R12 13 [0x64FB1586]
       22 [-]: MOVE R13 R1  
       23 [-]: CALL R12 1 1 
       24 [-]: MOVE R7 R12  
       25 [-]: LOADK R8 K14 [", "]
-      26 [-]: GETIMPORT R12 13 [nil]
+      26 [-]: GETIMPORT R12 13 [0x64FB1586]
       27 [-]: MOVE R13 R3  
       28 [-]: CALL R12 1 1 
       29 [-]: MOVE R9 R12  
@@ -152,9 +152,9 @@ L 2:  39 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  11
 
-       0 [-]: GETIMPORT R3 1 [nil]
+       0 [-]: GETIMPORT R3 1 [0x3D106989]
        1 [-]: LOADK R5 K2 ["DoTransference(toSwimmingMaw = "]
-       2 [-]: GETIMPORT R8 4 [nil]
+       2 [-]: GETIMPORT R8 4 [0x64FB1586]
        3 [-]: MOVE R9 R0   
        4 [-]: CALL R8 1 1  
        5 [-]: MOVE R6 R8   
@@ -163,10 +163,10 @@ L 2:  39 [-]: RETURN R0 0
        8 [-]: CALL R3 1 0  
        9 [-]: FASTCALL1 62 R1 L0
       10 [-]: MOVE R4 R1   
-      11 [-]: GETIMPORT R3 7 [nil]
+      11 [-]: GETIMPORT R3 7 [0x7B998233]
       12 [-]: CALL R3 1 1  
 L 0:  13 [-]: JUMPIFNOT R3 L1
-      14 [-]: GETIMPORT R3 1 [nil]
+      14 [-]: GETIMPORT R3 1 [0x3D106989]
       15 [-]: LOADK R4 K8 ["DoTransference - ERROR: instigatorAvatar is null"]
       16 [-]: CALL R3 1 0  
       17 [-]: LOADB R3 0   
@@ -175,7 +175,7 @@ L 1:  19 [-]: NAMECALL R3 R1 K9 [0x5B89142C]
       20 [-]: CALL R3 1 1  
       21 [-]: FASTCALL1 62 R2 L2
       22 [-]: MOVE R5 R2   
-      23 [-]: GETIMPORT R4 7 [nil]
+      23 [-]: GETIMPORT R4 7 [0x7B998233]
       24 [-]: CALL R4 1 1  
 L 2:  25 [-]: JUMPIF R4 L3 
       26 [-]: LOADB R6 1   
@@ -196,17 +196,17 @@ L 3:  29 [-]: NAMECALL R4 R1 K11 [0xD3A01177]
       41 [-]: NAMECALL R4 R1 K15 [0xF80FAE85]
       42 [-]: CALL R4 1 1  
       43 [-]: JUMPIF R4 L4 
-      44 [-]: GETIMPORT R5 17 [nil]
+      44 [-]: GETIMPORT R5 17 [0x89326C93]
       45 [-]: NAMECALL R5 R5 K18 [0x18D05D30]
       46 [-]: CALL R5 1 1  
       47 [-]: JUMPIFNOT R5 L12
 L 4:  48 [-]: JUMPIFNOT R0 L9
       49 [-]: FASTCALL1 62 R2 L5
       50 [-]: MOVE R6 R2   
-      51 [-]: GETIMPORT R5 7 [nil]
+      51 [-]: GETIMPORT R5 7 [0x7B998233]
       52 [-]: CALL R5 1 1  
 L 5:  53 [-]: JUMPIFNOT R5 L6
-      54 [-]: GETIMPORT R5 1 [nil]
+      54 [-]: GETIMPORT R5 1 [0x3D106989]
       55 [-]: LOADK R6 K19 ["DoTransference - ERROR: swimmingMawAvatar is null"]
       56 [-]: CALL R5 1 0  
       57 [-]: LOADB R5 0   
@@ -220,7 +220,7 @@ L 6:  59 [-]: NAMECALL R5 R3 K20 [0x6AF29BBE]
       65 [-]: CALL R6 1 1  
       66 [-]: FASTCALL1 62 R6 L7
       67 [-]: MOVE R8 R6   
-      68 [-]: GETIMPORT R7 7 [nil]
+      68 [-]: GETIMPORT R7 7 [0x7B998233]
       69 [-]: CALL R7 1 1  
 L 7:  70 [-]: JUMPIF R7 L8 
       71 [-]: NAMECALL R7 R6 K24 [0xAD1E0B4B]
@@ -241,7 +241,7 @@ L 9:  82 [-]: MOVE R7 R1
       85 [-]: CALL R5 3 0  
 L10:  86 [-]: FASTCALL1 62 R2 L11
       87 [-]: MOVE R6 R2   
-      88 [-]: GETIMPORT R5 7 [nil]
+      88 [-]: GETIMPORT R5 7 [0x7B998233]
       89 [-]: CALL R5 1 1  
 L11:  90 [-]: JUMPIF R5 L12
       91 [-]: LOADB R7 0   
@@ -264,14 +264,14 @@ L 0:   2 [-]: LOADN R5 0
        3 [-]: JUMPIFNOTLT R5 R4 L6
        4 [-]: FASTCALL1 62 R3 L1
        5 [-]: MOVE R6 R3   
-       6 [-]: GETIMPORT R5 1 [nil]
+       6 [-]: GETIMPORT R5 1 [0x7B998233]
        7 [-]: CALL R5 1 1  
 L 1:   8 [-]: JUMPIFNOT R5 L6
-       9 [-]: GETIMPORT R5 3 [nil]
+       9 [-]: GETIMPORT R5 3 [0x67652851]
       10 [-]: CALL R5 0 1  
       11 [-]: SUB R4 R4 R5 
-      12 [-]: GETIMPORT R5 5 [nil]
-      13 [-]: GETIMPORT R7 7 [nil]
+      12 [-]: GETIMPORT R5 5 [0x89326C93]
+      13 [-]: GETIMPORT R7 7 [0xEFF6E3AB]
       14 [-]: NAMECALL R5 R5 K8 [0xFB669000]
       15 [-]: CALL R5 2 1  
       16 [-]: LOADN R8 1   
@@ -281,7 +281,7 @@ L 1:   8 [-]: JUMPIFNOT R5 L6
 L 2:  20 [-]: GETTABLE R9 R5 R8
       21 [-]: FASTCALL1 62 R9 L3
       22 [-]: MOVE R11 R9  
-      23 [-]: GETIMPORT R10 1 [nil]
+      23 [-]: GETIMPORT R10 1 [0x7B998233]
       24 [-]: CALL R10 1 1 
 L 3:  25 [-]: JUMPIF R10 L4
       26 [-]: NAMECALL R10 R9 K9 [0x2047CFE7]
@@ -297,23 +297,23 @@ L 3:  25 [-]: JUMPIF R10 L4
       36 [-]: JUMP L5
      
 L 4:  37 [-]: FORNLOOP R6 L2
-L 5:  38 [-]: GETIMPORT R6 13 [nil]
+L 5:  38 [-]: GETIMPORT R6 13 [0xCBD666E1]
       39 [-]: LOADN R7 0   
       40 [-]: CALL R6 1 0  
       41 [-]: JUMPBACK L0  
 L 6:  42 [-]: FASTCALL1 62 R3 L7
       43 [-]: MOVE R6 R3   
-      44 [-]: GETIMPORT R5 1 [nil]
+      44 [-]: GETIMPORT R5 1 [0x7B998233]
       45 [-]: CALL R5 1 1  
 L 7:  46 [-]: JUMPIFNOT R5 L8
-      47 [-]: GETIMPORT R5 15 [nil]
+      47 [-]: GETIMPORT R5 15 [0x3D106989]
       48 [-]: LOADK R7 K16 ["MawFishingAction - ERROR: TranferenceControlSwimmingMaw failed, no suitable swimmingMawAvatar found for "]
       49 [-]: MOVE R8 R1   
       50 [-]: CONCAT R6 R7 R8
       51 [-]: CALL R5 1 0  
       52 [-]: LOADB R5 0   
       53 [-]: RETURN R5 1  
-L 8:  54 [-]: GETIMPORT R5 15 [nil]
+L 8:  54 [-]: GETIMPORT R5 15 [0x3D106989]
       55 [-]: LOADK R7 K17 ["MawFishingAction - TranferenceControlSwimmingMaw found target "]
       56 [-]: NAMECALL R11 R3 K18 [0xED4E0128]
       57 [-]: CALL R11 1 1 
@@ -324,10 +324,10 @@ L 8:  54 [-]: GETIMPORT R5 15 [nil]
       62 [-]: CALL R5 1 0  
       63 [-]: FASTCALL1 62 R2 L9
       64 [-]: MOVE R6 R2   
-      65 [-]: GETIMPORT R5 1 [nil]
+      65 [-]: GETIMPORT R5 1 [0x7B998233]
       66 [-]: CALL R5 1 1  
 L 9:  67 [-]: JUMPIFNOT R5 L10
-      68 [-]: GETIMPORT R5 15 [nil]
+      68 [-]: GETIMPORT R5 15 [0x3D106989]
       69 [-]: LOADK R6 K20 ["MawFishingAction - ERROR: TranferenceControlSwimmingMaw failed, mawFishingAvatar is gone"]
       70 [-]: CALL R5 1 0  
       71 [-]: LOADB R5 0   
@@ -335,7 +335,7 @@ L 9:  67 [-]: JUMPIFNOT R5 L10
 L10:  73 [-]: NAMECALL R5 R3 K21 [0xE4B9DB64]
       74 [-]: CALL R5 1 1  
       75 [-]: JUMPIFEQ R5 R2 L11
-      76 [-]: GETIMPORT R5 15 [nil]
+      76 [-]: GETIMPORT R5 15 [0x3D106989]
       77 [-]: LOADK R6 K22 ["MawFishingAction - ERROR: target swimmingMawAvatar's spawner ~= mawFishingAvatar"]
       78 [-]: CALL R5 1 0  
 L11:  79 [-]: GETUPVAL R5 0
@@ -350,21 +350,21 @@ L11:  79 [-]: GETUPVAL R5 0
       88 [-]: JUMPIF R5 L12
       89 [-]: LOADB R5 0   
       90 [-]: RETURN R5 1  
-L12:  91 [-]: GETIMPORT R5 5 [nil]
+L12:  91 [-]: GETIMPORT R5 5 [0x89326C93]
       92 [-]: NAMECALL R5 R5 K23 [0x18D05D30]
       93 [-]: CALL R5 1 1  
       94 [-]: JUMPIFNOT R5 L15
-      95 [-]: GETIMPORT R5 5 [nil]
+      95 [-]: GETIMPORT R5 5 [0x89326C93]
       96 [-]: NAMECALL R5 R5 K24 [0x7D108DDB]
       97 [-]: CALL R5 1 1  
       98 [-]: NAMECALL R6 R0 K25 [0x5B89142C]
       99 [-]: CALL R6 1 1  
-     100 [-]: GETIMPORT R7 27 [nil]
+     100 [-]: GETIMPORT R7 27 [0xC8802016]
      101 [-]: MOVE R8 R5   
      102 [-]: CALL R7 1 3  
      103 [-]: FORGPREP_INEXT R7 L14
 L13: 104 [-]: JUMPIFEQ R11 R6 L14
-     105 [-]: GETIMPORT R12 29 [nil]
+     105 [-]: GETIMPORT R12 29 [0xBE190284]
      106 [-]: MOVE R14 R11 
      107 [-]: LOADK R15 K30 ["/Lotus/Language/Duviri/MawFishingStarted"]
      108 [-]: LOADK R16 K31 [""]
@@ -378,36 +378,36 @@ L13: 104 [-]: JUMPIFEQ R11 R6 L14
 L14: 116 [-]: FORGLOOP R7 L13 2 [inext]
 L15: 117 [-]: FASTCALL1 62 R0 L16
      118 [-]: MOVE R6 R0   
-     119 [-]: GETIMPORT R5 1 [nil]
+     119 [-]: GETIMPORT R5 1 [0x7B998233]
      120 [-]: CALL R5 1 1  
 L16: 121 [-]: JUMPIF R5 L29
      122 [-]: NAMECALL R5 R0 K34 [0xF80FAE85]
      123 [-]: CALL R5 1 1  
      124 [-]: JUMPIFNOT R5 L29
-     125 [-]: GETIMPORT R5 15 [nil]
+     125 [-]: GETIMPORT R5 15 [0x3D106989]
      126 [-]: LOADK R6 K35 ["MawFishingAction - TranferenceControlSwimmingMaw - init fishing UI"]
      127 [-]: CALL R5 1 0  
-     128 [-]: GETIMPORT R6 38 [nil]
+     128 [-]: GETIMPORT R6 38 ["HideWeaponPanel"]
      129 [-]: FASTCALL1 62 R6 L17
-     130 [-]: GETIMPORT R5 1 [nil]
+     130 [-]: GETIMPORT R5 1 [0x7B998233]
      131 [-]: CALL R5 1 1  
 L17: 132 [-]: JUMPIF R5 L18
-     133 [-]: GETIMPORT R5 38 [nil]
+     133 [-]: GETIMPORT R5 38 ["HideWeaponPanel"]
      134 [-]: CALL R5 0 0  
-L18: 135 [-]: GETIMPORT R6 40 [nil]
+L18: 135 [-]: GETIMPORT R6 40 ["HideAbilityPanel"]
      136 [-]: FASTCALL1 62 R6 L19
-     137 [-]: GETIMPORT R5 1 [nil]
+     137 [-]: GETIMPORT R5 1 [0x7B998233]
      138 [-]: CALL R5 1 1  
 L19: 139 [-]: JUMPIF R5 L20
-     140 [-]: GETIMPORT R5 40 [nil]
+     140 [-]: GETIMPORT R5 40 ["HideAbilityPanel"]
      141 [-]: LOADB R6 1   
      142 [-]: CALL R5 1 0  
-L20: 143 [-]: GETIMPORT R5 29 [nil]
+L20: 143 [-]: GETIMPORT R5 29 [0xBE190284]
      144 [-]: NAMECALL R5 R5 K41 [0x33307F92]
      145 [-]: CALL R5 1 1  
      146 [-]: FASTCALL1 62 R5 L21
      147 [-]: MOVE R7 R5   
-     148 [-]: GETIMPORT R6 1 [nil]
+     148 [-]: GETIMPORT R6 1 [0x7B998233]
      149 [-]: CALL R6 1 1  
 L21: 150 [-]: JUMPIF R6 L22
      151 [-]: LOADK R8 K42 ["HideAbilityDots"]
@@ -425,66 +425,66 @@ L22: 159 [-]: GETUPVAL R7 2
      163 [-]: CALL R6 1 1  
      164 [-]: NAMECALL R7 R2 K47 [0x0E557944]
      165 [-]: CALL R7 1 1  
-     166 [-]: GETIMPORT R9 49 [nil]
+     166 [-]: GETIMPORT R9 49 ["MAW_SetTimer"]
      167 [-]: FASTCALL1 62 R9 L23
-     168 [-]: GETIMPORT R8 1 [nil]
+     168 [-]: GETIMPORT R8 1 [0x7B998233]
      169 [-]: CALL R8 1 1  
 L23: 170 [-]: JUMPIF R8 L24
-     171 [-]: GETIMPORT R8 49 [nil]
+     171 [-]: GETIMPORT R8 49 ["MAW_SetTimer"]
      172 [-]: MOVE R9 R6   
      173 [-]: MOVE R10 R7  
      174 [-]: CALL R8 2 0  
      175 [-]: JUMP L25
     
-L24: 176 [-]: GETIMPORT R8 50 [nil]
+L24: 176 [-]: GETIMPORT R8 50 ["_T"]
      177 [-]: SETTABLEKS R6 R8 K51 ["MAW_remainingTime"]
-     178 [-]: GETIMPORT R8 50 [nil]
+     178 [-]: GETIMPORT R8 50 ["_T"]
      179 [-]: SETTABLEKS R7 R8 K52 ["MAW_fishingDuration"]
 L25: 180 [-]: NAMECALL R8 R2 K53 [0x416570C7]
      181 [-]: CALL R8 1 1  
-     182 [-]: GETIMPORT R10 55 [nil]
+     182 [-]: GETIMPORT R10 55 ["MAW_SetKillCount"]
      183 [-]: FASTCALL1 62 R10 L26
-     184 [-]: GETIMPORT R9 1 [nil]
+     184 [-]: GETIMPORT R9 1 [0x7B998233]
      185 [-]: CALL R9 1 1  
 L26: 186 [-]: JUMPIF R9 L27
-     187 [-]: GETIMPORT R9 55 [nil]
+     187 [-]: GETIMPORT R9 55 ["MAW_SetKillCount"]
      188 [-]: MOVE R10 R8  
      189 [-]: CALL R9 1 0  
      190 [-]: JUMP L28
     
-L27: 191 [-]: GETIMPORT R9 50 [nil]
+L27: 191 [-]: GETIMPORT R9 50 ["_T"]
      192 [-]: SETTABLEKS R8 R9 K56 ["MAW_currentScore"]
-L28: 193 [-]: GETIMPORT R10 5 [nil]
+L28: 193 [-]: GETIMPORT R10 5 [0x89326C93]
      194 [-]: NAMECALL R10 R10 K57 [0x7C1A0374]
      195 [-]: CALL R10 1 1 
      196 [-]: GETTABLEKS R9 R10 K58 ["postProcess"]
      197 [-]: LOADB R10 0  
      198 [-]: SETTABLEKS R10 R9 K59 ["useBnwBuffer"]
-     199 [-]: GETIMPORT R9 50 [nil]
+     199 [-]: GETIMPORT R9 50 ["_T"]
      200 [-]: LOADB R10 0  
      201 [-]: SETTABLEKS R10 R9 K60 ["DuviriWeather"]
-     202 [-]: GETIMPORT R11 62 [nil]
-     203 [-]: GETIMPORT R12 64 [nil]
+     202 [-]: GETIMPORT R11 62 [0xE4EE2F34]
+     203 [-]: GETIMPORT R12 64 ["EMPTY_SYMBOL"]
      204 [-]: NAMECALL R9 R3 K65 [0x47901F07]
      205 [-]: CALL R9 3 0  
 L29: 206 [-]: FASTCALL1 62 R0 L30
      207 [-]: MOVE R6 R0   
-     208 [-]: GETIMPORT R5 1 [nil]
+     208 [-]: GETIMPORT R5 1 [0x7B998233]
      209 [-]: CALL R5 1 1  
 L30: 210 [-]: JUMPIF R5 L33
      211 [-]: NAMECALL R5 R0 K34 [0xF80FAE85]
      212 [-]: CALL R5 1 1  
      213 [-]: JUMPIFNOT R5 L33
-     214 [-]: GETIMPORT R5 5 [nil]
+     214 [-]: GETIMPORT R5 5 [0x89326C93]
      215 [-]: NAMECALL R5 R5 K57 [0x7C1A0374]
      216 [-]: CALL R5 1 1  
      217 [-]: LOADN R6 0   
 L31: 218 [-]: LOADN R7 1   
      219 [-]: JUMPIFNOTLT R6 R7 L32
-     220 [-]: GETIMPORT R7 3 [nil]
+     220 [-]: GETIMPORT R7 3 [0x67652851]
      221 [-]: CALL R7 0 1  
      222 [-]: ADD R6 R6 R7 
-     223 [-]: GETIMPORT R7 67 [nil]
+     223 [-]: GETIMPORT R7 67 [0x42DCC9F5]
      224 [-]: DIVK R8 R6 K68 [1]
      225 [-]: LOADN R9 0   
      226 [-]: LOADN R10 1  
@@ -495,42 +495,42 @@ L31: 218 [-]: LOADN R7 1
      231 [-]: MOVE R11 R8  
      232 [-]: NAMECALL R9 R5 K69 [0xB6DF3E50]
      233 [-]: CALL R9 2 0  
-     234 [-]: GETIMPORT R9 13 [nil]
+     234 [-]: GETIMPORT R9 13 [0xCBD666E1]
      235 [-]: LOADN R10 0  
      236 [-]: CALL R9 1 0  
      237 [-]: JUMPBACK L31 
 L32: 238 [-]: LOADN R9 0   
      239 [-]: NAMECALL R7 R5 K69 [0xB6DF3E50]
      240 [-]: CALL R7 2 0  
-L33: 241 [-]: GETIMPORT R5 5 [nil]
+L33: 241 [-]: GETIMPORT R5 5 [0x89326C93]
      242 [-]: NAMECALL R5 R5 K23 [0x18D05D30]
      243 [-]: CALL R5 1 1  
      244 [-]: JUMPIF R5 L35
      245 [-]: FASTCALL1 62 R0 L34
      246 [-]: MOVE R6 R0   
-     247 [-]: GETIMPORT R5 1 [nil]
+     247 [-]: GETIMPORT R5 1 [0x7B998233]
      248 [-]: CALL R5 1 1  
 L34: 249 [-]: JUMPIF R5 L35
      250 [-]: NAMECALL R5 R0 K34 [0xF80FAE85]
      251 [-]: CALL R5 1 1  
      252 [-]: JUMPIFNOT R5 L35
-     253 [-]: GETIMPORT R5 29 [nil]
+     253 [-]: GETIMPORT R5 29 [0xBE190284]
      254 [-]: LOADK R7 K70 ["OnDeath"]
      255 [-]: NAMECALL R5 R5 K71 [0xBD710F80]
      256 [-]: CALL R5 2 0  
-     257 [-]: GETIMPORT R5 29 [nil]
+     257 [-]: GETIMPORT R5 29 [0xBE190284]
      258 [-]: LOADK R7 K70 ["OnDeath"]
      259 [-]: NAMECALL R5 R5 K72 [0xE7EF698D]
      260 [-]: CALL R5 2 0  
 L35: 261 [-]: LOADB R5 0   
 L36: 262 [-]: FASTCALL1 62 R3 L37
      263 [-]: MOVE R7 R3   
-     264 [-]: GETIMPORT R6 1 [nil]
+     264 [-]: GETIMPORT R6 1 [0x7B998233]
      265 [-]: CALL R6 1 1  
 L37: 266 [-]: JUMPIF R6 L44
      267 [-]: FASTCALL1 62 R0 L38
      268 [-]: MOVE R7 R0   
-     269 [-]: GETIMPORT R6 1 [nil]
+     269 [-]: GETIMPORT R6 1 [0x7B998233]
      270 [-]: CALL R6 1 1  
 L38: 271 [-]: JUMPIF R6 L44
      272 [-]: NAMECALL R6 R3 K9 [0x2047CFE7]
@@ -539,7 +539,7 @@ L38: 271 [-]: JUMPIF R6 L44
      275 [-]: NAMECALL R6 R3 K10 [0x73901ACF]
      276 [-]: CALL R6 1 1  
      277 [-]: JUMPIFNOT R6 L40
-L39: 278 [-]: GETIMPORT R6 15 [nil]
+L39: 278 [-]: GETIMPORT R6 15 [0x3D106989]
      279 [-]: NAMECALL R10 R3 K18 [0xED4E0128]
      280 [-]: CALL R10 1 1 
      281 [-]: MOVE R8 R10  
@@ -550,10 +550,10 @@ L39: 278 [-]: GETIMPORT R6 15 [nil]
     
 L40: 286 [-]: FASTCALL1 62 R2 L41
      287 [-]: MOVE R7 R2   
-     288 [-]: GETIMPORT R6 1 [nil]
+     288 [-]: GETIMPORT R6 1 [0x7B998233]
      289 [-]: CALL R6 1 1  
 L41: 290 [-]: JUMPIFNOT R6 L42
-     291 [-]: GETIMPORT R6 15 [nil]
+     291 [-]: GETIMPORT R6 15 [0x3D106989]
      292 [-]: LOADK R7 K74 ["ERROR - mawFishingAvatar is gone, fishing activity must be terminated"]
      293 [-]: CALL R6 1 0  
      294 [-]: JUMP L44
@@ -562,7 +562,7 @@ L42: 295 [-]: NAMECALL R6 R2 K75 [0x3DED3591]
      296 [-]: CALL R6 1 1  
      297 [-]: LOADN R7 2   
      298 [-]: JUMPIFNOTEQ R6 R7 L43
-     299 [-]: GETIMPORT R6 15 [nil]
+     299 [-]: GETIMPORT R6 15 [0x3D106989]
      300 [-]: LOADK R8 K76 ["MawFishingAction - fishing state == FS_FISHING_COMPLETE, "]
      301 [-]: NAMECALL R12 R0 K18 [0xED4E0128]
      302 [-]: CALL R12 1 1 
@@ -575,36 +575,36 @@ L42: 295 [-]: NAMECALL R6 R2 K75 [0x3DED3591]
      309 [-]: LOADB R5 1   
      310 [-]: JUMP L44
     
-L43: 311 [-]: GETIMPORT R6 13 [nil]
+L43: 311 [-]: GETIMPORT R6 13 [0xCBD666E1]
      312 [-]: LOADN R7 0   
      313 [-]: CALL R6 1 0  
      314 [-]: JUMPBACK L36 
-L44: 315 [-]: GETIMPORT R6 5 [nil]
+L44: 315 [-]: GETIMPORT R6 5 [0x89326C93]
      316 [-]: NAMECALL R6 R6 K23 [0x18D05D30]
      317 [-]: CALL R6 1 1  
      318 [-]: JUMPIF R6 L45
-     319 [-]: GETIMPORT R6 29 [nil]
+     319 [-]: GETIMPORT R6 29 [0xBE190284]
      320 [-]: LOADK R8 K70 ["OnDeath"]
      321 [-]: NAMECALL R6 R6 K71 [0xBD710F80]
      322 [-]: CALL R6 2 0  
 L45: 323 [-]: FASTCALL1 62 R0 L46
      324 [-]: MOVE R7 R0   
-     325 [-]: GETIMPORT R6 1 [nil]
+     325 [-]: GETIMPORT R6 1 [0x7B998233]
      326 [-]: CALL R6 1 1  
 L46: 327 [-]: JUMPIF R6 L49
      328 [-]: NAMECALL R6 R0 K34 [0xF80FAE85]
      329 [-]: CALL R6 1 1  
      330 [-]: JUMPIFNOT R6 L49
-     331 [-]: GETIMPORT R6 5 [nil]
+     331 [-]: GETIMPORT R6 5 [0x89326C93]
      332 [-]: NAMECALL R6 R6 K57 [0x7C1A0374]
      333 [-]: CALL R6 1 1  
      334 [-]: LOADN R7 0   
 L47: 335 [-]: LOADK R8 K78 [0.5]
      336 [-]: JUMPIFNOTLT R7 R8 L48
-     337 [-]: GETIMPORT R8 3 [nil]
+     337 [-]: GETIMPORT R8 3 [0x67652851]
      338 [-]: CALL R8 0 1  
      339 [-]: ADD R7 R7 R8 
-     340 [-]: GETIMPORT R8 67 [nil]
+     340 [-]: GETIMPORT R8 67 [0x42DCC9F5]
      341 [-]: DIVK R9 R7 K78 [0.5]
      342 [-]: LOADN R10 0  
      343 [-]: LOADN R11 1  
@@ -613,7 +613,7 @@ L47: 335 [-]: LOADK R8 K78 [0.5]
      346 [-]: MOVE R12 R9  
      347 [-]: NAMECALL R10 R6 K69 [0xB6DF3E50]
      348 [-]: CALL R10 2 0 
-     349 [-]: GETIMPORT R10 13 [nil]
+     349 [-]: GETIMPORT R10 13 [0xCBD666E1]
      350 [-]: LOADN R11 0  
      351 [-]: CALL R10 1 0 
      352 [-]: JUMPBACK L47 
@@ -622,40 +622,40 @@ L48: 353 [-]: LOADN R10 1
      355 [-]: CALL R8 2 0  
      356 [-]: JUMP L50
     
-L49: 357 [-]: GETIMPORT R6 13 [nil]
+L49: 357 [-]: GETIMPORT R6 13 [0xCBD666E1]
      358 [-]: LOADK R7 K78 [0.5]
      359 [-]: CALL R6 1 0  
 L50: 360 [-]: FASTCALL1 62 R0 L51
      361 [-]: MOVE R7 R0   
-     362 [-]: GETIMPORT R6 1 [nil]
+     362 [-]: GETIMPORT R6 1 [0x7B998233]
      363 [-]: CALL R6 1 1  
 L51: 364 [-]: JUMPIF R6 L60
      365 [-]: NAMECALL R6 R0 K34 [0xF80FAE85]
      366 [-]: CALL R6 1 1  
      367 [-]: JUMPIFNOT R6 L60
-     368 [-]: GETIMPORT R6 15 [nil]
+     368 [-]: GETIMPORT R6 15 [0x3D106989]
      369 [-]: LOADK R7 K79 ["MawFishingAction - TranferenceControlSwimmingMaw - restoring normal UI"]
      370 [-]: CALL R6 1 0  
-     371 [-]: GETIMPORT R7 81 [nil]
+     371 [-]: GETIMPORT R7 81 ["ShowWeaponPanel"]
      372 [-]: FASTCALL1 62 R7 L52
-     373 [-]: GETIMPORT R6 1 [nil]
+     373 [-]: GETIMPORT R6 1 [0x7B998233]
      374 [-]: CALL R6 1 1  
 L52: 375 [-]: JUMPIF R6 L53
-     376 [-]: GETIMPORT R6 81 [nil]
+     376 [-]: GETIMPORT R6 81 ["ShowWeaponPanel"]
      377 [-]: CALL R6 0 0  
-L53: 378 [-]: GETIMPORT R7 83 [nil]
+L53: 378 [-]: GETIMPORT R7 83 ["ShowAbilityPanel"]
      379 [-]: FASTCALL1 62 R7 L54
-     380 [-]: GETIMPORT R6 1 [nil]
+     380 [-]: GETIMPORT R6 1 [0x7B998233]
      381 [-]: CALL R6 1 1  
 L54: 382 [-]: JUMPIF R6 L55
-     383 [-]: GETIMPORT R6 83 [nil]
+     383 [-]: GETIMPORT R6 83 ["ShowAbilityPanel"]
      384 [-]: CALL R6 0 0  
-L55: 385 [-]: GETIMPORT R6 29 [nil]
+L55: 385 [-]: GETIMPORT R6 29 [0xBE190284]
      386 [-]: NAMECALL R6 R6 K41 [0x33307F92]
      387 [-]: CALL R6 1 1  
      388 [-]: FASTCALL1 62 R6 L56
      389 [-]: MOVE R8 R6   
-     390 [-]: GETIMPORT R7 1 [nil]
+     390 [-]: GETIMPORT R7 1 [0x7B998233]
      391 [-]: CALL R7 1 1  
 L56: 392 [-]: JUMPIF R7 L57
      393 [-]: LOADK R9 K84 ["ShowReticle"]
@@ -671,7 +671,7 @@ L56: 392 [-]: JUMPIF R7 L57
      403 [-]: LOADB R11 1  
      404 [-]: NAMECALL R7 R6 K87 [0xAADE900E]
      405 [-]: CALL R7 4 0  
-L57: 406 [-]: GETIMPORT R7 50 [nil]
+L57: 406 [-]: GETIMPORT R7 50 ["_T"]
      407 [-]: LOADNIL R8   
      408 [-]: SETTABLEKS R8 R7 K88 ["HidePlayerPanel"]
      409 [-]: GETUPVAL R8 2
@@ -679,19 +679,19 @@ L57: 406 [-]: GETIMPORT R7 50 [nil]
      411 [-]: CALL R7 0 0  
      412 [-]: FASTCALL1 62 R3 L58
      413 [-]: MOVE R8 R3   
-     414 [-]: GETIMPORT R7 1 [nil]
+     414 [-]: GETIMPORT R7 1 [0x7B998233]
      415 [-]: CALL R7 1 1  
 L58: 416 [-]: JUMPIF R7 L59
-     417 [-]: GETIMPORT R9 62 [nil]
+     417 [-]: GETIMPORT R9 62 [0xE4EE2F34]
      418 [-]: NAMECALL R7 R3 K90 [0xAD10E5BC]
      419 [-]: CALL R7 2 0  
-L59: 420 [-]: GETIMPORT R8 5 [nil]
+L59: 420 [-]: GETIMPORT R8 5 [0x89326C93]
      421 [-]: NAMECALL R8 R8 K57 [0x7C1A0374]
      422 [-]: CALL R8 1 1  
      423 [-]: GETTABLEKS R7 R8 K58 ["postProcess"]
      424 [-]: LOADB R8 1   
      425 [-]: SETTABLEKS R8 R7 K59 ["useBnwBuffer"]
-     426 [-]: GETIMPORT R7 50 [nil]
+     426 [-]: GETIMPORT R7 50 ["_T"]
      427 [-]: LOADB R8 1   
      428 [-]: SETTABLEKS R8 R7 K60 ["DuviriWeather"]
 L60: 429 [-]: GETUPVAL R6 0
@@ -716,12 +716,12 @@ L61: 441 [-]: RETURN R5 1
 ; Is_vararg:       0
 ; Max Stack Size:  11
 
-       0 [-]: GETIMPORT R3 1 [nil]
+       0 [-]: GETIMPORT R3 1 [0x3D106989]
        1 [-]: LOADK R4 K2 ["MawFishingAction - RestoreAvatarPostFishing"]
        2 [-]: CALL R3 1 0  
        3 [-]: FASTCALL1 62 R0 L0
        4 [-]: MOVE R4 R0   
-       5 [-]: GETIMPORT R3 4 [nil]
+       5 [-]: GETIMPORT R3 4 [0x7B998233]
        6 [-]: CALL R3 1 1  
 L 0:   7 [-]: JUMPIF R3 L5 
        8 [-]: MOVE R5 R2   
@@ -732,7 +732,7 @@ L 0:   7 [-]: JUMPIF R3 L5
       13 [-]: MOVE R5 R2   
       14 [-]: NAMECALL R3 R3 K7 [0x553549E8]
       15 [-]: CALL R3 2 0  
-      16 [-]: GETIMPORT R5 9 [nil]
+      16 [-]: GETIMPORT R5 9 [0xCB0BC4B2]
       17 [-]: NAMECALL R3 R0 K10 [0xB2532845]
       18 [-]: CALL R3 2 0  
       19 [-]: NAMECALL R3 R0 K11 [0xF80FAE85]
@@ -740,18 +740,18 @@ L 0:   7 [-]: JUMPIF R3 L5
       21 [-]: JUMPIFNOT R3 L3
       22 [-]: GETUPVAL R4 0
       23 [-]: GETTABLEKS R3 R4 K12 [0x659D451F]
-      24 [-]: GETIMPORT R4 14 [nil]
+      24 [-]: GETIMPORT R4 14 [0xB9C6C020]
       25 [-]: CALL R3 1 0  
-      26 [-]: GETIMPORT R3 16 [nil]
+      26 [-]: GETIMPORT R3 16 [0x89326C93]
       27 [-]: NAMECALL R3 R3 K17 [0x7C1A0374]
       28 [-]: CALL R3 1 1  
       29 [-]: LOADN R4 0   
 L 1:  30 [-]: LOADN R5 1   
       31 [-]: JUMPIFNOTLT R4 R5 L2
-      32 [-]: GETIMPORT R5 19 [nil]
+      32 [-]: GETIMPORT R5 19 [0x67652851]
       33 [-]: CALL R5 0 1  
       34 [-]: ADD R4 R4 R5 
-      35 [-]: GETIMPORT R5 21 [nil]
+      35 [-]: GETIMPORT R5 21 [0x42DCC9F5]
       36 [-]: DIVK R6 R4 K22 [1]
       37 [-]: LOADN R7 0   
       38 [-]: LOADN R8 1   
@@ -762,25 +762,25 @@ L 1:  30 [-]: LOADN R5 1
       43 [-]: MOVE R9 R6   
       44 [-]: NAMECALL R7 R3 K23 [0xB6DF3E50]
       45 [-]: CALL R7 2 0  
-      46 [-]: GETIMPORT R7 25 [nil]
+      46 [-]: GETIMPORT R7 25 [0xCBD666E1]
       47 [-]: LOADN R8 0   
       48 [-]: CALL R7 1 0  
       49 [-]: JUMPBACK L1  
 L 2:  50 [-]: LOADN R7 0   
       51 [-]: NAMECALL R5 R3 K23 [0xB6DF3E50]
       52 [-]: CALL R5 2 0  
-      53 [-]: GETIMPORT R5 25 [nil]
+      53 [-]: GETIMPORT R5 25 [0xCBD666E1]
       54 [-]: LOADN R6 1   
       55 [-]: CALL R5 1 0  
 L 3:  56 [-]: FASTCALL1 62 R0 L4
       57 [-]: MOVE R4 R0   
-      58 [-]: GETIMPORT R3 4 [nil]
+      58 [-]: GETIMPORT R3 4 [0x7B998233]
       59 [-]: CALL R3 1 1  
 L 4:  60 [-]: JUMPIF R3 L5 
-      61 [-]: GETIMPORT R5 27 [nil]
+      61 [-]: GETIMPORT R5 27 [0x1A79D56D]
       62 [-]: NAMECALL R3 R0 K28 [0xAF7C1D8D]
       63 [-]: CALL R3 2 0  
-L 5:  64 [-]: GETIMPORT R3 16 [nil]
+L 5:  64 [-]: GETIMPORT R3 16 [0x89326C93]
       65 [-]: NAMECALL R3 R3 K29 [0x18D05D30]
       66 [-]: CALL R3 1 1  
       67 [-]: JUMPIF R3 L16
@@ -789,45 +789,45 @@ L 6:  69 [-]: LOADN R4 0
       70 [-]: JUMPIFNOTLT R4 R3 L9
       71 [-]: FASTCALL1 62 R0 L7
       72 [-]: MOVE R5 R0   
-      73 [-]: GETIMPORT R4 4 [nil]
+      73 [-]: GETIMPORT R4 4 [0x7B998233]
       74 [-]: CALL R4 1 1  
 L 7:  75 [-]: JUMPIF R4 L9 
       76 [-]: NAMECALL R5 R0 K30 [0x5E651723]
       77 [-]: CALL R5 1 1  
       78 [-]: FASTCALL1 62 R5 L8
-      79 [-]: GETIMPORT R4 4 [nil]
+      79 [-]: GETIMPORT R4 4 [0x7B998233]
       80 [-]: CALL R4 1 1  
 L 8:  81 [-]: JUMPIFNOT R4 L9
-      82 [-]: GETIMPORT R4 1 [nil]
+      82 [-]: GETIMPORT R4 1 [0x3D106989]
       83 [-]: LOADK R5 K31 ["RestoreAvatarPostFishing - waiting for instigatorAvatar to have its player"]
       84 [-]: CALL R4 1 0  
-      85 [-]: GETIMPORT R4 19 [nil]
+      85 [-]: GETIMPORT R4 19 [0x67652851]
       86 [-]: CALL R4 0 1  
       87 [-]: SUB R3 R3 R4 
-      88 [-]: GETIMPORT R4 25 [nil]
+      88 [-]: GETIMPORT R4 25 [0xCBD666E1]
       89 [-]: LOADN R5 0   
       90 [-]: CALL R4 1 0  
       91 [-]: JUMPBACK L6  
-L 9:  92 [-]: GETIMPORT R4 25 [nil]
+L 9:  92 [-]: GETIMPORT R4 25 [0xCBD666E1]
       93 [-]: LOADN R5 0   
       94 [-]: CALL R4 1 0  
-      95 [-]: GETIMPORT R4 1 [nil]
+      95 [-]: GETIMPORT R4 1 [0x3D106989]
       96 [-]: LOADK R5 K32 ["Client reinitializing avatar post-fishing"]
       97 [-]: CALL R4 1 0  
       98 [-]: FASTCALL1 62 R1 L10
       99 [-]: MOVE R5 R1   
-     100 [-]: GETIMPORT R4 4 [nil]
+     100 [-]: GETIMPORT R4 4 [0x7B998233]
      101 [-]: CALL R4 1 1  
 L10: 102 [-]: JUMPIF R4 L12
      103 [-]: LOADN R6 0   
      104 [-]: NAMECALL R4 R1 K33 [0xE3A0BBCA]
      105 [-]: CALL R4 2 1  
-     106 [-]: GETIMPORT R5 1 [nil]
+     106 [-]: GETIMPORT R5 1 [0x3D106989]
      107 [-]: LOADK R6 K34 ["Client reinitializing avatar - SetAvatarEnabled(false)"]
      108 [-]: CALL R5 1 0  
      109 [-]: FASTCALL1 62 R4 L11
      110 [-]: MOVE R6 R4   
-     111 [-]: GETIMPORT R5 4 [nil]
+     111 [-]: GETIMPORT R5 4 [0x7B998233]
      112 [-]: CALL R5 1 1  
 L11: 113 [-]: JUMPIF R5 L12
      114 [-]: LOADB R7 0   
@@ -848,15 +848,15 @@ L11: 113 [-]: JUMPIF R5 L12
      129 [-]: CALL R5 3 0  
 L12: 130 [-]: FASTCALL1 62 R0 L13
      131 [-]: MOVE R5 R0   
-     132 [-]: GETIMPORT R4 4 [nil]
+     132 [-]: GETIMPORT R4 4 [0x7B998233]
      133 [-]: CALL R4 1 1  
 L13: 134 [-]: JUMPIF R4 L16
-     135 [-]: GETIMPORT R4 1 [nil]
+     135 [-]: GETIMPORT R4 1 [0x3D106989]
      136 [-]: LOADK R5 K40 ["Client reinitializing avatar - SetAvatarEnabled(true)+PlayAnimation"]
      137 [-]: CALL R4 1 0  
      138 [-]: FASTCALL1 62 R0 L14
      139 [-]: MOVE R5 R0   
-     140 [-]: GETIMPORT R4 4 [nil]
+     140 [-]: GETIMPORT R4 4 [0x7B998233]
      141 [-]: CALL R4 1 1  
 L14: 142 [-]: JUMPIF R4 L15
      143 [-]: LOADB R6 1   
@@ -894,7 +894,7 @@ L16: 166 [-]: RETURN R0 0
 
        0 [-]: FASTCALL1 62 R0 L0
        1 [-]: MOVE R2 R0   
-       2 [-]: GETIMPORT R1 1 [nil]
+       2 [-]: GETIMPORT R1 1 [0x7B998233]
        3 [-]: CALL R1 1 1  
 L 0:   4 [-]: JUMPIFNOT R1 L1
        5 [-]: LOADB R1 0   
@@ -910,7 +910,7 @@ L 2:  14 [-]: LOADB R3 1
 L 3:  15 [-]: LOADB R4 0   
       16 [-]: LOADN R5 1   
       17 [-]: JUMPIFNOTEQ R1 R5 L5
-      18 [-]: GETIMPORT R5 5 [nil]
+      18 [-]: GETIMPORT R5 5 [0x26B70502]
       19 [-]: JUMPIFLT R2 R5 L4
       20 [-]: LOADB R4 0 +1
 L 4:  21 [-]: LOADB R4 1   
@@ -945,13 +945,13 @@ L 1:  10 [-]: GETUPVAL R1 0
       13 [-]: JUMPIF R0 L2 
       14 [-]: LOADB R0 0   
       15 [-]: RETURN R0 1  
-L 2:  16 [-]: GETIMPORT R0 4 [nil]
-      17 [-]: GETIMPORT R2 6 [nil]
+L 2:  16 [-]: GETIMPORT R0 4 [0x89326C93]
+      17 [-]: GETIMPORT R2 6 [0x1449FD34]
       18 [-]: NAMECALL R0 R0 K7 [0xFB669000]
       19 [-]: CALL R0 2 1  
       20 [-]: FASTCALL1 62 R0 L3
       21 [-]: MOVE R2 R0   
-      22 [-]: GETIMPORT R1 9 [nil]
+      22 [-]: GETIMPORT R1 9 [0x7B998233]
       23 [-]: CALL R1 1 1  
 L 3:  24 [-]: JUMPIF R1 L13
       25 [-]: LENGTH R1 R0 
@@ -960,7 +960,7 @@ L 3:  24 [-]: JUMPIF R1 L13
       28 [-]: GETTABLEN R1 R0 1
       29 [-]: FASTCALL1 62 R1 L4
       30 [-]: MOVE R4 R1   
-      31 [-]: GETIMPORT R3 9 [nil]
+      31 [-]: GETIMPORT R3 9 [0x7B998233]
       32 [-]: CALL R3 1 1  
 L 4:  33 [-]: JUMPIFNOT R3 L5
       34 [-]: LOADB R2 0   
@@ -977,7 +977,7 @@ L 6:  43 [-]: LOADB R5 1
 L 7:  44 [-]: LOADB R6 0   
       45 [-]: LOADN R7 1   
       46 [-]: JUMPIFNOTEQ R3 R7 L9
-      47 [-]: GETIMPORT R7 13 [nil]
+      47 [-]: GETIMPORT R7 13 [0x26B70502]
       48 [-]: JUMPIFLT R4 R7 L8
       49 [-]: LOADB R6 0 +1
 L 8:  50 [-]: LOADB R6 1   
@@ -1001,30 +1001,30 @@ L13:  59 [-]: LOADB R1 1
 ; Is_vararg:       0
 ; Max Stack Size:  14
 
-L 0:   0 [-]: GETIMPORT R2 1 [nil]
+L 0:   0 [-]: GETIMPORT R2 1 [0xBE190284]
        1 [-]: FASTCALL1 62 R2 L1
-       2 [-]: GETIMPORT R1 3 [nil]
+       2 [-]: GETIMPORT R1 3 [0x7B998233]
        3 [-]: CALL R1 1 1  
 L 1:   4 [-]: JUMPIF R1 L3 
-       5 [-]: GETIMPORT R2 5 [nil]
+       5 [-]: GETIMPORT R2 5 [0x83F4E77C]
        6 [-]: FASTCALL1 62 R2 L2
-       7 [-]: GETIMPORT R1 3 [nil]
+       7 [-]: GETIMPORT R1 3 [0x7B998233]
        8 [-]: CALL R1 1 1  
 L 2:   9 [-]: JUMPIF R1 L3 
-      10 [-]: GETIMPORT R1 5 [nil]
+      10 [-]: GETIMPORT R1 5 [0x83F4E77C]
       11 [-]: NAMECALL R1 R1 K6 [0xD98EE9B7]
       12 [-]: CALL R1 1 1  
       13 [-]: JUMPIF R1 L4 
-L 3:  14 [-]: GETIMPORT R1 8 [nil]
+L 3:  14 [-]: GETIMPORT R1 8 [0xCBD666E1]
       15 [-]: LOADN R2 0   
       16 [-]: CALL R1 1 0  
       17 [-]: JUMPBACK L0  
-L 4:  18 [-]: GETIMPORT R1 8 [nil]
+L 4:  18 [-]: GETIMPORT R1 8 [0xCBD666E1]
       19 [-]: LOADN R2 1   
       20 [-]: CALL R1 1 0  
       21 [-]: FASTCALL1 62 R0 L5
       22 [-]: MOVE R2 R0   
-      23 [-]: GETIMPORT R1 3 [nil]
+      23 [-]: GETIMPORT R1 3 [0x7B998233]
       24 [-]: CALL R1 1 1  
 L 5:  25 [-]: JUMPIFNOT R1 L6
       26 [-]: RETURN R0 0  
@@ -1040,7 +1040,7 @@ L 6:  27 [-]: NEWCLOSURE R1 P0
       36 [-]: JUMPIFNOT R2 L10
 L 7:  37 [-]: MOVE R2 R1   
       38 [-]: CALL R2 0 1  
-      39 [-]: GETIMPORT R3 12 [nil]
+      39 [-]: GETIMPORT R3 12 [0xC8802016]
       40 [-]: MOVE R4 R2   
       41 [-]: CALL R3 1 3  
       42 [-]: FORGPREP_INEXT R3 L9
@@ -1053,7 +1053,7 @@ L 9:  47 [-]: FORGLOOP R3 L8 2 [inext]
 L10:  49 [-]: LOADNIL R2   
 L11:  50 [-]: FASTCALL1 62 R0 L12
       51 [-]: MOVE R4 R0   
-      52 [-]: GETIMPORT R3 3 [nil]
+      52 [-]: GETIMPORT R3 3 [0x7B998233]
       53 [-]: CALL R3 1 1  
 L12:  54 [-]: JUMPIF R3 L16
       55 [-]: GETUPVAL R4 0
@@ -1063,7 +1063,7 @@ L12:  54 [-]: JUMPIF R3 L16
       59 [-]: MOVE R2 R3   
       60 [-]: MOVE R4 R1   
       61 [-]: CALL R4 0 1  
-      62 [-]: GETIMPORT R5 12 [nil]
+      62 [-]: GETIMPORT R5 12 [0xC8802016]
       63 [-]: MOVE R6 R4   
       64 [-]: CALL R5 1 3  
       65 [-]: FORGPREP_INEXT R5 L14
@@ -1072,7 +1072,7 @@ L13:  66 [-]: MOVE R12 R3
       68 [-]: NAMECALL R10 R9 K13 [0x768274D6]
       69 [-]: CALL R10 3 0 
 L14:  70 [-]: FORGLOOP R5 L13 2 [inext]
-L15:  71 [-]: GETIMPORT R4 8 [nil]
+L15:  71 [-]: GETIMPORT R4 8 [0xCBD666E1]
       72 [-]: LOADN R5 1   
       73 [-]: CALL R4 1 0  
       74 [-]: JUMPBACK L11 
@@ -1088,14 +1088,14 @@ L16:  75 [-]: RETURN R0 0
 
        0 [-]: FASTCALL1 62 R1 L0
        1 [-]: MOVE R3 R1   
-       2 [-]: GETIMPORT R2 1 [nil]
+       2 [-]: GETIMPORT R2 1 [0x7B998233]
        3 [-]: CALL R2 1 1  
 L 0:   4 [-]: JUMPIFNOT R2 L1
-       5 [-]: GETIMPORT R2 3 [nil]
+       5 [-]: GETIMPORT R2 3 [0x3D106989]
        6 [-]: LOADK R3 K4 ["MawFishingAction - ERROR: instigatorAvatar is null"]
        7 [-]: CALL R2 1 0  
        8 [-]: RETURN R0 0  
-L 1:   9 [-]: GETIMPORT R2 6 [nil]
+L 1:   9 [-]: GETIMPORT R2 6 [0x89326C93]
       10 [-]: NAMECALL R2 R2 K7 [0x18D05D30]
       11 [-]: CALL R2 1 1  
       12 [-]: JUMPIFNOT R2 L9
@@ -1103,8 +1103,8 @@ L 1:   9 [-]: GETIMPORT R2 6 [nil]
       14 [-]: CALL R2 1 1  
       15 [-]: JUMPXEQKN R2 K9 L6 NOT [0]
       16 [-]: LOADN R3 0   
-      17 [-]: GETIMPORT R4 6 [nil]
-      18 [-]: GETIMPORT R6 11 [nil]
+      17 [-]: GETIMPORT R4 6 [0x89326C93]
+      18 [-]: GETIMPORT R6 11 [0x0469F296]
       19 [-]: LOADK R7 K12 ["MawFishingAction"]
       20 [-]: CALL R6 1 -1 
       21 [-]: NAMECALL R4 R4 K13 [0xC7FCADA9]
@@ -1115,7 +1115,7 @@ L 1:   9 [-]: GETIMPORT R2 6 [nil]
       26 [-]: FORNPREP R5 L5
 L 2:  27 [-]: GETTABLE R9 R4 R7
       28 [-]: FASTCALL1 62 R9 L3
-      29 [-]: GETIMPORT R8 1 [nil]
+      29 [-]: GETIMPORT R8 1 [0x7B998233]
       30 [-]: CALL R8 1 1  
 L 3:  31 [-]: JUMPIF R8 L4 
       32 [-]: GETTABLE R8 R4 R7
@@ -1128,7 +1128,7 @@ L 5:  38 [-]: ADDK R2 R3 K14 [1]
       39 [-]: MOVE R7 R2   
       40 [-]: NAMECALL R5 R0 K15 [0x2EAF0988]
       41 [-]: CALL R5 2 0  
-      42 [-]: GETIMPORT R5 3 [nil]
+      42 [-]: GETIMPORT R5 3 [0x3D106989]
       43 [-]: LOADK R7 K16 ["MawFishingAction - setting ID of "]
       44 [-]: NAMECALL R11 R0 K17 [0xED4E0128]
       45 [-]: CALL R11 1 1 
@@ -1139,7 +1139,7 @@ L 5:  38 [-]: ADDK R2 R3 K14 [1]
       50 [-]: CALL R5 1 0  
       51 [-]: JUMP L7
      
-L 6:  52 [-]: GETIMPORT R3 3 [nil]
+L 6:  52 [-]: GETIMPORT R3 3 [0x3D106989]
       53 [-]: LOADK R5 K19 ["MawFishingAction - ID of "]
       54 [-]: NAMECALL R9 R0 K17 [0xED4E0128]
       55 [-]: CALL R9 1 1  
@@ -1152,7 +1152,7 @@ L 7:  61 [-]: NAMECALL R3 R1 K21 [0x5B89142C]
       62 [-]: CALL R3 1 1  
       63 [-]: FASTCALL1 62 R3 L8
       64 [-]: MOVE R5 R3   
-      65 [-]: GETIMPORT R4 1 [nil]
+      65 [-]: GETIMPORT R4 1 [0x7B998233]
       66 [-]: CALL R4 1 1  
 L 8:  67 [-]: JUMPIF R4 L9 
       68 [-]: LOADB R6 1   
@@ -1161,26 +1161,26 @@ L 8:  67 [-]: JUMPIF R4 L9
       71 [-]: LOADK R6 K23 ["MawFishingLocationIndex_"]
       72 [-]: MOVE R7 R4   
       73 [-]: CONCAT R5 R6 R7
-      74 [-]: GETIMPORT R6 25 [nil]
-      75 [-]: GETIMPORT R8 11 [nil]
+      74 [-]: GETIMPORT R6 25 [0xBE190284]
+      75 [-]: GETIMPORT R8 11 [0x0469F296]
       76 [-]: MOVE R9 R5   
       77 [-]: CALL R8 1 1  
       78 [-]: MOVE R9 R2   
       79 [-]: NAMECALL R6 R6 K26 [0x751F061D]
       80 [-]: CALL R6 3 0  
-      81 [-]: GETIMPORT R6 3 [nil]
+      81 [-]: GETIMPORT R6 3 [0x3D106989]
       82 [-]: LOADK R8 K27 ["MawFishingAction - setting netvar "]
       83 [-]: MOVE R9 R5   
       84 [-]: LOADK R10 K28 ["="]
       85 [-]: MOVE R11 R2  
       86 [-]: LOADK R12 K29 [", pos = "]
-      87 [-]: GETIMPORT R13 31 [nil]
+      87 [-]: GETIMPORT R13 31 [0x64FB1586]
       88 [-]: NAMECALL R14 R0 K32 [0xD1586535]
       89 [-]: CALL R14 1 -1
       90 [-]: CALL R13 -1 1
       91 [-]: CONCAT R7 R8 R13
       92 [-]: CALL R6 1 0  
-L 9:  93 [-]: GETIMPORT R4 11 [nil]
+L 9:  93 [-]: GETIMPORT R4 11 [0x0469F296]
       94 [-]: LOADK R5 K33 ["ExecuteMawFishingAction"]
       95 [-]: CALL R4 1 1  
       96 [-]: LOADB R5 0   
@@ -1200,36 +1200,36 @@ L 9:  93 [-]: GETIMPORT R4 11 [nil]
        1 [-]: CALL R1 1 1  
        2 [-]: FASTCALL1 62 R1 L0
        3 [-]: MOVE R3 R1   
-       4 [-]: GETIMPORT R2 2 [nil]
+       4 [-]: GETIMPORT R2 2 [0x7B998233]
        5 [-]: CALL R2 1 1  
 L 0:   6 [-]: JUMPIFNOT R2 L1
-       7 [-]: GETIMPORT R2 4 [nil]
+       7 [-]: GETIMPORT R2 4 [0x3D106989]
        8 [-]: LOADK R3 K5 ["MawFishingAction - ERROR: instigatorPlayer is null"]
        9 [-]: CALL R2 1 0  
       10 [-]: RETURN R0 0  
 L 1:  11 [-]: LOADB R4 1   
       12 [-]: NAMECALL R2 R1 K6 [0x5CA33548]
       13 [-]: CALL R2 2 1  
-      14 [-]: GETIMPORT R3 4 [nil]
+      14 [-]: GETIMPORT R3 4 [0x3D106989]
       15 [-]: LOADK R5 K7 ["MawFishingAction - activated by "]
       16 [-]: MOVE R6 R2   
       17 [-]: CONCAT R4 R5 R6
       18 [-]: CALL R3 1 0  
       19 [-]: LOADNIL R3   
-      20 [-]: GETIMPORT R4 9 [nil]
-      21 [-]: GETIMPORT R6 11 [nil]
+      20 [-]: GETIMPORT R4 9 [0x89326C93]
+      21 [-]: GETIMPORT R6 11 [0x1449FD34]
       22 [-]: NAMECALL R4 R4 K12 [0xFB669000]
       23 [-]: CALL R4 2 1  
       24 [-]: FASTCALL1 62 R4 L2
       25 [-]: MOVE R6 R4   
-      26 [-]: GETIMPORT R5 2 [nil]
+      26 [-]: GETIMPORT R5 2 [0x7B998233]
       27 [-]: CALL R5 1 1  
 L 2:  28 [-]: JUMPIF R5 L3 
       29 [-]: LENGTH R5 R4 
       30 [-]: LOADN R6 0   
       31 [-]: JUMPIFNOTLT R6 R5 L3
       32 [-]: GETTABLEN R3 R4 1
-      33 [-]: GETIMPORT R5 4 [nil]
+      33 [-]: GETIMPORT R5 4 [0x3D106989]
       34 [-]: LOADK R7 K13 ["MawFishingAction activated, found "]
       35 [-]: NAMECALL R8 R3 K14 [0xED4E0128]
       36 [-]: CALL R8 1 1  
@@ -1237,37 +1237,37 @@ L 2:  28 [-]: JUMPIF R5 L3
       38 [-]: CALL R5 1 0  
       39 [-]: JUMP L13
     
-L 3:  40 [-]: GETIMPORT R5 9 [nil]
+L 3:  40 [-]: GETIMPORT R5 9 [0x89326C93]
       41 [-]: NAMECALL R5 R5 K15 [0x18D05D30]
       42 [-]: CALL R5 1 1  
       43 [-]: JUMPIFNOT R5 L7
-      44 [-]: GETIMPORT R5 4 [nil]
+      44 [-]: GETIMPORT R5 4 [0x3D106989]
       45 [-]: LOADK R6 K16 ["MawFishingAction activated, no mawFishingAvatar found, creating instance"]
       46 [-]: CALL R5 1 0  
-      47 [-]: GETIMPORT R5 9 [nil]
+      47 [-]: GETIMPORT R5 9 [0x89326C93]
       48 [-]: NAMECALL R5 R5 K17 [0x29EF273D]
       49 [-]: CALL R5 1 1  
-      50 [-]: GETIMPORT R8 19 [nil]
-      51 [-]: GETIMPORT R9 21 [nil]
+      50 [-]: GETIMPORT R8 19 [0x88EFC25E]
+      51 [-]: GETIMPORT R9 21 [0xE936FD5E]
       52 [-]: CALL R8 1 1  
-      53 [-]: GETIMPORT R9 23 [nil]
-      54 [-]: GETIMPORT R10 25 [nil]
+      53 [-]: GETIMPORT R9 23 [0x0CC73129]
+      54 [-]: GETIMPORT R10 25 [0x0469F296]
       55 [-]: LOADK R11 K26 ["TENNO"]
       56 [-]: CALL R10 1 -1
       57 [-]: NAMECALL R6 R5 K27 [0x33FC842F]
       58 [-]: CALL R6 -1 1 
-      59 [-]: GETIMPORT R7 29 [nil]
+      59 [-]: GETIMPORT R7 29 [0xCBD666E1]
       60 [-]: LOADN R8 0   
       61 [-]: CALL R7 1 0  
       62 [-]: FASTCALL1 62 R6 L4
       63 [-]: MOVE R8 R6   
-      64 [-]: GETIMPORT R7 2 [nil]
+      64 [-]: GETIMPORT R7 2 [0x7B998233]
       65 [-]: CALL R7 1 1  
 L 4:  66 [-]: JUMPIF R7 L6 
       67 [-]: NAMECALL R8 R6 K30 [0xBB610E5B]
       68 [-]: CALL R8 1 1  
       69 [-]: FASTCALL1 62 R8 L5
-      70 [-]: GETIMPORT R7 2 [nil]
+      70 [-]: GETIMPORT R7 2 [0x7B998233]
       71 [-]: CALL R7 1 1  
 L 5:  72 [-]: JUMPIF R7 L6 
       73 [-]: LOADB R9 0   
@@ -1276,7 +1276,7 @@ L 5:  72 [-]: JUMPIF R7 L6
       76 [-]: NAMECALL R7 R6 K30 [0xBB610E5B]
       77 [-]: CALL R7 1 1  
       78 [-]: MOVE R3 R7   
-      79 [-]: GETIMPORT R7 4 [nil]
+      79 [-]: GETIMPORT R7 4 [0x3D106989]
       80 [-]: LOADK R9 K32 ["MawFishingAction created "]
       81 [-]: NAMECALL R10 R3 K14 [0xED4E0128]
       82 [-]: CALL R10 1 1 
@@ -1284,35 +1284,35 @@ L 5:  72 [-]: JUMPIF R7 L6
       84 [-]: CALL R7 1 0  
       85 [-]: JUMP L13
     
-L 6:  86 [-]: GETIMPORT R7 4 [nil]
+L 6:  86 [-]: GETIMPORT R7 4 [0x3D106989]
       87 [-]: LOADK R8 K33 ["MawFishingAction - ERROR: Creating mawFishingAgent failed"]
       88 [-]: CALL R7 1 0  
       89 [-]: JUMP L13
     
-L 7:  90 [-]: GETIMPORT R5 4 [nil]
+L 7:  90 [-]: GETIMPORT R5 4 [0x3D106989]
       91 [-]: LOADK R6 K34 ["MawFishingAction activated, no mawFishingAvatar found, waiting for instance to be created"]
       92 [-]: CALL R5 1 0  
       93 [-]: LOADN R5 5   
 L 8:  94 [-]: LOADN R6 0   
       95 [-]: JUMPIFNOTLT R6 R5 L11
-      96 [-]: GETIMPORT R6 36 [nil]
+      96 [-]: GETIMPORT R6 36 [0x67652851]
       97 [-]: CALL R6 0 1  
       98 [-]: SUB R5 R5 R6 
-      99 [-]: GETIMPORT R6 9 [nil]
-     100 [-]: GETIMPORT R8 11 [nil]
+      99 [-]: GETIMPORT R6 9 [0x89326C93]
+     100 [-]: GETIMPORT R8 11 [0x1449FD34]
      101 [-]: NAMECALL R6 R6 K12 [0xFB669000]
      102 [-]: CALL R6 2 1  
      103 [-]: MOVE R4 R6   
      104 [-]: FASTCALL1 62 R4 L9
      105 [-]: MOVE R7 R4   
-     106 [-]: GETIMPORT R6 2 [nil]
+     106 [-]: GETIMPORT R6 2 [0x7B998233]
      107 [-]: CALL R6 1 1  
 L 9: 108 [-]: JUMPIF R6 L10
      109 [-]: LENGTH R6 R4 
      110 [-]: LOADN R7 0   
      111 [-]: JUMPIFNOTLT R7 R6 L10
      112 [-]: GETTABLEN R3 R4 1
-     113 [-]: GETIMPORT R6 4 [nil]
+     113 [-]: GETIMPORT R6 4 [0x3D106989]
      114 [-]: LOADK R8 K37 ["MawFishingAvatar instance found: "]
      115 [-]: NAMECALL R9 R3 K14 [0xED4E0128]
      116 [-]: CALL R9 1 1  
@@ -1320,24 +1320,24 @@ L 9: 108 [-]: JUMPIF R6 L10
      118 [-]: CALL R6 1 0  
      119 [-]: JUMP L11
     
-L10: 120 [-]: GETIMPORT R6 29 [nil]
+L10: 120 [-]: GETIMPORT R6 29 [0xCBD666E1]
      121 [-]: LOADN R7 0   
      122 [-]: CALL R6 1 0  
      123 [-]: JUMPBACK L8  
 L11: 124 [-]: FASTCALL1 62 R3 L12
      125 [-]: MOVE R7 R3   
-     126 [-]: GETIMPORT R6 2 [nil]
+     126 [-]: GETIMPORT R6 2 [0x7B998233]
      127 [-]: CALL R6 1 1  
 L12: 128 [-]: JUMPIFNOT R6 L13
-     129 [-]: GETIMPORT R6 4 [nil]
+     129 [-]: GETIMPORT R6 4 [0x3D106989]
      130 [-]: LOADK R7 K38 ["MawFishingAction - ERROR: no mawFishingAvatar got created"]
      131 [-]: CALL R6 1 0  
 L13: 132 [-]: FASTCALL1 62 R0 L14
      133 [-]: MOVE R6 R0   
-     134 [-]: GETIMPORT R5 2 [nil]
+     134 [-]: GETIMPORT R5 2 [0x7B998233]
      135 [-]: CALL R5 1 1  
 L14: 136 [-]: JUMPIFNOT R5 L15
-     137 [-]: GETIMPORT R5 4 [nil]
+     137 [-]: GETIMPORT R5 4 [0x3D106989]
      138 [-]: LOADK R7 K39 ["MawFishingAction - instigatorAvatar of "]
      139 [-]: MOVE R8 R2   
      140 [-]: LOADK R9 K40 [" is gone, action aborted"]
@@ -1346,13 +1346,13 @@ L14: 136 [-]: JUMPIFNOT R5 L15
      143 [-]: RETURN R0 0  
 L15: 144 [-]: FASTCALL1 62 R3 L16
      145 [-]: MOVE R6 R3   
-     146 [-]: GETIMPORT R5 2 [nil]
+     146 [-]: GETIMPORT R5 2 [0x7B998233]
      147 [-]: CALL R5 1 1  
 L16: 148 [-]: JUMPIF R5 L27
      149 [-]: MOVE R6 R3   
      150 [-]: FASTCALL1 62 R6 L17
      151 [-]: MOVE R8 R6   
-     152 [-]: GETIMPORT R7 2 [nil]
+     152 [-]: GETIMPORT R7 2 [0x7B998233]
      153 [-]: CALL R7 1 1  
 L17: 154 [-]: JUMPIFNOT R7 L18
      155 [-]: LOADB R5 0   
@@ -1369,7 +1369,7 @@ L19: 164 [-]: LOADB R9 1
 L20: 165 [-]: LOADB R10 0  
      166 [-]: LOADN R11 1  
      167 [-]: JUMPIFNOTEQ R7 R11 L22
-     168 [-]: GETIMPORT R11 44 [nil]
+     168 [-]: GETIMPORT R11 44 [0x26B70502]
      169 [-]: JUMPIFLT R8 R11 L21
      170 [-]: LOADB R10 0 +1
 L21: 171 [-]: LOADB R10 1  
@@ -1380,14 +1380,14 @@ L23: 174 [-]: LOADB R5 0
     
 L24: 176 [-]: LOADB R5 1   
 L25: 177 [-]: JUMPIF R5 L28
-     178 [-]: GETIMPORT R6 4 [nil]
+     178 [-]: GETIMPORT R6 4 [0x3D106989]
      179 [-]: LOADK R7 K45 ["MawFishingAction - can't join the current fishing activity; fishing is complete or too little remaining time"]
      180 [-]: CALL R6 1 0  
-     181 [-]: GETIMPORT R6 9 [nil]
+     181 [-]: GETIMPORT R6 9 [0x89326C93]
      182 [-]: NAMECALL R6 R6 K15 [0x18D05D30]
      183 [-]: CALL R6 1 1  
      184 [-]: JUMPIFNOT R6 L26
-     185 [-]: GETIMPORT R6 47 [nil]
+     185 [-]: GETIMPORT R6 47 [0xBE190284]
      186 [-]: MOVE R8 R1   
      187 [-]: LOADK R9 K48 ["/Lotus/Language/Duviri/MawFishingCannotJoin"]
      188 [-]: LOADK R10 K49 [""]
@@ -1399,7 +1399,7 @@ L25: 177 [-]: JUMPIF R5 L28
 L26: 194 [-]: RETURN R0 0  
      195 [-]: JUMP L28
     
-L27: 196 [-]: GETIMPORT R5 4 [nil]
+L27: 196 [-]: GETIMPORT R5 4 [0x3D106989]
      197 [-]: LOADK R6 K51 ["MawFishingAction - ERROR: mawFishingAvatar is gone, can't join fishing activity"]
      198 [-]: CALL R5 1 0  
      199 [-]: RETURN R0 0  
@@ -1415,17 +1415,17 @@ L28: 200 [-]: NAMECALL R5 R0 K52 [0xD3A01177]
      209 [-]: LOADB R8 0   
      210 [-]: NAMECALL R5 R0 K55 [0x30EB0CC3]
      211 [-]: CALL R5 3 0  
-     212 [-]: GETIMPORT R7 57 [nil]
+     212 [-]: GETIMPORT R7 57 [0x1A79D56D]
      213 [-]: NAMECALL R5 R0 K58 [0x89F5ABE4]
      214 [-]: CALL R5 2 0  
      215 [-]: NAMECALL R7 R3 K59 [0xD1586535]
      216 [-]: CALL R7 1 -1 
      217 [-]: NAMECALL R5 R0 K60 [0x98776060]
      218 [-]: CALL R5 -1 0 
-     219 [-]: GETIMPORT R7 62 [nil]
+     219 [-]: GETIMPORT R7 62 [0xC2C82717]
      220 [-]: NAMECALL R5 R0 K63 [0xB2532845]
      221 [-]: CALL R5 2 0  
-     222 [-]: GETIMPORT R5 65 [nil]
+     222 [-]: GETIMPORT R5 65 [0x20B7F774]
      223 [-]: NAMECALL R6 R0 K66 [0xF6EBD926]
      224 [-]: CALL R6 1 1  
      225 [-]: NAMECALL R7 R3 K66 [0xF6EBD926]
@@ -1436,22 +1436,22 @@ L28: 200 [-]: NAMECALL R5 R0 K52 [0xD3A01177]
      230 [-]: LOADN R7 0   
 L29: 231 [-]: LOADK R8 K68 [0.20000000000000001]
      232 [-]: JUMPIFNOTLT R7 R8 L33
-     233 [-]: GETIMPORT R10 36 [nil]
+     233 [-]: GETIMPORT R10 36 [0x67652851]
      234 [-]: CALL R10 0 1 
      235 [-]: ADD R9 R7 R10
      236 [-]: FASTCALL2K 19 R9 K68 L30 [0.20000000000000001]
      237 [-]: LOADK R10 K68 [0.20000000000000001]
-     238 [-]: GETIMPORT R8 71 [nil]
+     238 [-]: GETIMPORT R8 71 [0xAC1B386A]
      239 [-]: CALL R8 2 1  
 L30: 240 [-]: MOVE R7 R8   
-     241 [-]: GETIMPORT R8 73 [nil]
+     241 [-]: GETIMPORT R8 73 [0x5E223E7D]
      242 [-]: MOVE R9 R6   
      243 [-]: MOVE R10 R5  
      244 [-]: DIVK R11 R7 K68 [0.20000000000000001]
      245 [-]: CALL R8 3 1  
      246 [-]: FASTCALL1 62 R0 L31
      247 [-]: MOVE R10 R0  
-     248 [-]: GETIMPORT R9 2 [nil]
+     248 [-]: GETIMPORT R9 2 [0x7B998233]
      249 [-]: CALL R9 1 1  
 L31: 250 [-]: JUMPIF R9 L32
      251 [-]: MOVE R11 R8  
@@ -1470,21 +1470,21 @@ L31: 250 [-]: JUMPIF R9 L32
      264 [-]: MOVE R12 R8  
      265 [-]: NAMECALL R9 R0 K78 [0x589EF1C1]
      266 [-]: CALL R9 3 0  
-L32: 267 [-]: GETIMPORT R9 29 [nil]
+L32: 267 [-]: GETIMPORT R9 29 [0xCBD666E1]
      268 [-]: LOADN R10 0  
      269 [-]: CALL R9 1 0  
      270 [-]: JUMPBACK L29 
-L33: 271 [-]: GETIMPORT R8 29 [nil]
+L33: 271 [-]: GETIMPORT R8 29 [0xCBD666E1]
      272 [-]: LOADK R9 K79 [1.1000000000000001]
      273 [-]: CALL R8 1 0  
      274 [-]: FASTCALL1 62 R0 L34
      275 [-]: MOVE R9 R0   
-     276 [-]: GETIMPORT R8 2 [nil]
+     276 [-]: GETIMPORT R8 2 [0x7B998233]
      277 [-]: CALL R8 1 1  
 L34: 278 [-]: JUMPIF R8 L39
      279 [-]: FASTCALL1 62 R3 L35
      280 [-]: MOVE R9 R3   
-     281 [-]: GETIMPORT R8 2 [nil]
+     281 [-]: GETIMPORT R8 2 [0x7B998233]
      282 [-]: CALL R8 1 1  
 L35: 283 [-]: JUMPIF R8 L39
      284 [-]: NAMECALL R8 R0 K77 [0xF80FAE85]
@@ -1492,22 +1492,22 @@ L35: 283 [-]: JUMPIF R8 L39
      286 [-]: JUMPIFNOT R8 L38
      287 [-]: GETUPVAL R9 0
      288 [-]: GETTABLEKS R8 R9 K80 [0x659D451F]
-     289 [-]: GETIMPORT R9 82 [nil]
+     289 [-]: GETIMPORT R9 82 [0x09B173AE]
      290 [-]: CALL R8 1 0  
-     291 [-]: GETIMPORT R8 25 [nil]
+     291 [-]: GETIMPORT R8 25 [0x0469F296]
      292 [-]: LOADK R9 K83 ["GAME_C1_NECKTOP"]
      293 [-]: CALL R8 1 1  
      294 [-]: MOVE R12 R8  
      295 [-]: NAMECALL R10 R3 K84 [0x003C792F]
      296 [-]: CALL R10 2 1 
-     297 [-]: GETIMPORT R11 86 [nil]
+     297 [-]: GETIMPORT R11 86 [0xA421AF95]
      298 [-]: LOADN R12 0  
      299 [-]: LOADK R13 K87 [0.80000000000000004]
      300 [-]: LOADN R14 0  
      301 [-]: CALL R11 3 1 
      302 [-]: ADD R9 R10 R11
-     303 [-]: GETIMPORT R10 9 [nil]
-     304 [-]: GETIMPORT R12 89 [nil]
+     303 [-]: GETIMPORT R10 9 [0x89326C93]
+     304 [-]: GETIMPORT R12 89 [0x73E21089]
      305 [-]: MOVE R13 R9  
      306 [-]: MOVE R14 R5  
      307 [-]: NAMECALL R10 R10 K90 [0x05909209]
@@ -1516,7 +1516,7 @@ L35: 283 [-]: JUMPIF R8 L39
      310 [-]: CALL R11 1 1 
      311 [-]: FASTCALL1 62 R11 L36
      312 [-]: MOVE R13 R11 
-     313 [-]: GETIMPORT R12 2 [nil]
+     313 [-]: GETIMPORT R12 2 [0x7B998233]
      314 [-]: CALL R12 1 1 
 L36: 315 [-]: JUMPIF R12 L39
      316 [-]: NAMECALL R12 R11 K92 [0xA72AFC7E]
@@ -1531,16 +1531,16 @@ L36: 315 [-]: JUMPIF R12 L39
      325 [-]: MOVE R15 R12 
      326 [-]: NAMECALL R13 R11 K94 [0x68F07B6A]
      327 [-]: CALL R13 2 0 
-     328 [-]: GETIMPORT R13 9 [nil]
+     328 [-]: GETIMPORT R13 9 [0x89326C93]
      329 [-]: NAMECALL R13 R13 K96 [0x7C1A0374]
      330 [-]: CALL R13 1 1 
      331 [-]: LOADN R14 0  
 L37: 332 [-]: LOADK R15 K93 [0.59999999999999998]
      333 [-]: JUMPIFNOTLT R14 R15 L39
-     334 [-]: GETIMPORT R15 36 [nil]
+     334 [-]: GETIMPORT R15 36 [0x67652851]
      335 [-]: CALL R15 0 1 
      336 [-]: ADD R14 R14 R15
-     337 [-]: GETIMPORT R15 98 [nil]
+     337 [-]: GETIMPORT R15 98 [0x42DCC9F5]
      338 [-]: DIVK R16 R14 K93 [0.59999999999999998]
      339 [-]: LOADN R17 0  
      340 [-]: LOADN R18 1  
@@ -1549,19 +1549,19 @@ L37: 332 [-]: LOADK R15 K93 [0.59999999999999998]
      343 [-]: MOVE R19 R16 
      344 [-]: NAMECALL R17 R13 K99 [0xB6DF3E50]
      345 [-]: CALL R17 2 0 
-     346 [-]: GETIMPORT R17 29 [nil]
+     346 [-]: GETIMPORT R17 29 [0xCBD666E1]
      347 [-]: LOADN R18 0  
      348 [-]: CALL R17 1 0 
      349 [-]: JUMPBACK L37 
      350 [-]: JUMP L39
     
-L38: 351 [-]: GETIMPORT R8 29 [nil]
+L38: 351 [-]: GETIMPORT R8 29 [0xCBD666E1]
      352 [-]: LOADK R9 K93 [0.59999999999999998]
      353 [-]: CALL R8 1 0  
 L39: 354 [-]: LOADN R8 5   
 L40: 355 [-]: FASTCALL1 62 R3 L41
      356 [-]: MOVE R10 R3  
-     357 [-]: GETIMPORT R9 2 [nil]
+     357 [-]: GETIMPORT R9 2 [0x7B998233]
      358 [-]: CALL R9 1 1  
 L41: 359 [-]: JUMPIF R9 L42
      360 [-]: NAMECALL R9 R3 K41 [0x3DED3591]
@@ -1570,16 +1570,16 @@ L41: 359 [-]: JUMPIF R9 L42
      363 [-]: JUMPIFNOTEQ R9 R10 L42
      364 [-]: LOADN R9 0   
      365 [-]: JUMPIFNOTLT R9 R8 L42
-     366 [-]: GETIMPORT R9 36 [nil]
+     366 [-]: GETIMPORT R9 36 [0x67652851]
      367 [-]: CALL R9 0 1  
      368 [-]: SUB R8 R8 R9 
-     369 [-]: GETIMPORT R9 29 [nil]
+     369 [-]: GETIMPORT R9 29 [0xCBD666E1]
      370 [-]: LOADN R10 0  
      371 [-]: CALL R9 1 0  
      372 [-]: JUMPBACK L40 
 L42: 373 [-]: LOADN R9 0   
      374 [-]: JUMPIFNOTLT R8 R9 L43
-     375 [-]: GETIMPORT R9 4 [nil]
+     375 [-]: GETIMPORT R9 4 [0x3D106989]
      376 [-]: LOADK R10 K100 ["MawFishingAction - ERROR: mawFishingAvatar stuck in FS_INITIALIZING state?! Aborting joining."]
      377 [-]: CALL R9 1 0  
      378 [-]: GETUPVAL R9 1
@@ -1594,29 +1594,29 @@ L43: 384 [-]: GETUPVAL R9 2
      387 [-]: MOVE R12 R3  
      388 [-]: CALL R9 3 1  
      389 [-]: JUMPIFNOT R9 L44
-     390 [-]: GETIMPORT R10 4 [nil]
+     390 [-]: GETIMPORT R10 4 [0x3D106989]
      391 [-]: LOADK R11 K101 ["MawFishingAction - fishing activity successfully completed"]
      392 [-]: CALL R10 1 0 
      393 [-]: JUMP L45
     
-L44: 394 [-]: GETIMPORT R10 4 [nil]
+L44: 394 [-]: GETIMPORT R10 4 [0x3D106989]
      395 [-]: LOADK R11 K102 ["MawFishingAction - ERROR: fishing activity did not complete"]
      396 [-]: CALL R10 1 0 
-L45: 397 [-]: GETIMPORT R10 9 [nil]
+L45: 397 [-]: GETIMPORT R10 9 [0x89326C93]
      398 [-]: NAMECALL R10 R10 K15 [0x18D05D30]
      399 [-]: CALL R10 1 1 
      400 [-]: JUMPIFNOT R10 L46
      401 [-]: LOADK R11 K103 ["MawFishingLocationIndex_"]
      402 [-]: MOVE R12 R2  
      403 [-]: CONCAT R10 R11 R12
-     404 [-]: GETIMPORT R11 47 [nil]
-     405 [-]: GETIMPORT R13 25 [nil]
+     404 [-]: GETIMPORT R11 47 [0xBE190284]
+     405 [-]: GETIMPORT R13 25 [0x0469F296]
      406 [-]: MOVE R14 R10 
      407 [-]: CALL R13 1 1 
      408 [-]: LOADN R14 0  
      409 [-]: NAMECALL R11 R11 K104 [0xB9BFD47C]
      410 [-]: CALL R11 3 0 
-     411 [-]: GETIMPORT R11 4 [nil]
+     411 [-]: GETIMPORT R11 4 [0x3D106989]
      412 [-]: LOADK R13 K105 ["MawFishingAction - cleared netvar "]
      413 [-]: MOVE R14 R10 
      414 [-]: CONCAT R12 R13 R14
@@ -1638,7 +1638,7 @@ L46: 416 [-]: GETUPVAL R10 1
 
        0 [-]: FASTCALL1 62 R0 L0
        1 [-]: MOVE R3 R0   
-       2 [-]: GETIMPORT R2 1 [nil]
+       2 [-]: GETIMPORT R2 1 [0x7B998233]
        3 [-]: CALL R2 1 1  
 L 0:   4 [-]: JUMPIF R2 L1 
        5 [-]: LOADB R4 1   
@@ -1650,20 +1650,20 @@ L 2:  10 [-]: LOADN R3 0
       11 [-]: JUMPIFNOTLE R3 R2 L4
       12 [-]: FASTCALL1 62 R0 L3
       13 [-]: MOVE R4 R0   
-      14 [-]: GETIMPORT R3 1 [nil]
+      14 [-]: GETIMPORT R3 1 [0x7B998233]
       15 [-]: CALL R3 1 1  
 L 3:  16 [-]: JUMPIF R3 L4 
-      17 [-]: GETIMPORT R3 4 [nil]
+      17 [-]: GETIMPORT R3 4 [0x67652851]
       18 [-]: CALL R3 0 1  
       19 [-]: SUB R2 R2 R3 
-      20 [-]: GETIMPORT R5 6 [nil]
+      20 [-]: GETIMPORT R5 6 [0x42DCC9F5]
       21 [-]: DIV R6 R2 R1 
       22 [-]: LOADN R7 0   
       23 [-]: LOADN R8 1   
       24 [-]: CALL R5 3 -1 
       25 [-]: NAMECALL R3 R0 K7 [0x66472BF5]
       26 [-]: CALL R3 -1 0 
-      27 [-]: GETIMPORT R3 9 [nil]
+      27 [-]: GETIMPORT R3 9 [0xCBD666E1]
       28 [-]: LOADN R4 0   
       29 [-]: CALL R3 1 0  
       30 [-]: JUMPBACK L2  
@@ -1693,15 +1693,15 @@ L 4:  31 [-]: RETURN R0 0
 
        0 [-]: FASTCALL1 62 R0 L0
        1 [-]: MOVE R2 R0   
-       2 [-]: GETIMPORT R1 1 [nil]
+       2 [-]: GETIMPORT R1 1 [0x7B998233]
        3 [-]: CALL R1 1 1  
 L 0:   4 [-]: JUMPIF R1 L2 
-       5 [-]: GETIMPORT R2 3 [nil]
+       5 [-]: GETIMPORT R2 3 [0xF7BC25D1]
        6 [-]: FASTCALL1 62 R2 L1
-       7 [-]: GETIMPORT R1 1 [nil]
+       7 [-]: GETIMPORT R1 1 [0x7B998233]
        8 [-]: CALL R1 1 1  
 L 1:   9 [-]: JUMPIF R1 L2 
-      10 [-]: GETIMPORT R3 3 [nil]
+      10 [-]: GETIMPORT R3 3 [0xF7BC25D1]
       11 [-]: LOADB R4 1   
       12 [-]: LOADN R5 3   
       13 [-]: LOADN R6 3   
@@ -1718,8 +1718,8 @@ L 2:  17 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  7
 
-       0 [-]: GETIMPORT R0 1 [nil]
-       1 [-]: GETIMPORT R2 3 [nil]
+       0 [-]: GETIMPORT R0 1 [0x89326C93]
+       1 [-]: GETIMPORT R2 3 [0xEFF6E3AB]
        2 [-]: NAMECALL R0 R0 K4 [0xFB669000]
        3 [-]: CALL R0 2 1  
        4 [-]: LOADN R3 1   
@@ -1728,7 +1728,7 @@ L 2:  17 [-]: RETURN R0 0
        7 [-]: FORNPREP R1 L4
 L 0:   8 [-]: GETTABLE R5 R0 R3
        9 [-]: FASTCALL1 62 R5 L1
-      10 [-]: GETIMPORT R4 6 [nil]
+      10 [-]: GETIMPORT R4 6 [0x7B998233]
       11 [-]: CALL R4 1 1  
 L 1:  12 [-]: JUMPIF R4 L3 
       13 [-]: GETTABLE R4 R0 R3
@@ -1739,7 +1739,7 @@ L 1:  12 [-]: JUMPIF R4 L3
       18 [-]: NAMECALL R5 R5 K8 [0x5E651723]
       19 [-]: CALL R5 1 1  
       20 [-]: FASTCALL1 62 R5 L2
-      21 [-]: GETIMPORT R4 6 [nil]
+      21 [-]: GETIMPORT R4 6 [0x7B998233]
       22 [-]: CALL R4 1 1  
 L 2:  23 [-]: JUMPIF R4 L3 
       24 [-]: GETTABLE R4 R0 R3
@@ -1760,13 +1760,13 @@ L 4:  31 [-]: LOADB R1 0
 ; Is_vararg:       0
 ; Max Stack Size:  3
 
-       0 [-]: GETIMPORT R1 1 [nil]
+       0 [-]: GETIMPORT R1 1 [0x89326C93]
        1 [-]: NAMECALL R1 R1 K2 [0x18D05D30]
        2 [-]: CALL R1 1 1  
        3 [-]: JUMPIFNOT R1 L1
        4 [-]: FASTCALL1 62 R0 L0
        5 [-]: MOVE R2 R0   
-       6 [-]: GETIMPORT R1 4 [nil]
+       6 [-]: GETIMPORT R1 4 [0x7B998233]
        7 [-]: CALL R1 1 1  
 L 0:   8 [-]: JUMPIF R1 L1 
        9 [-]: NAMECALL R1 R0 K5 [0xA2880940]
@@ -1781,25 +1781,25 @@ L 1:  11 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  29
 
-       0 [-]: GETIMPORT R1 1 [nil]
+       0 [-]: GETIMPORT R1 1 [0x89326C93]
        1 [-]: NAMECALL R1 R1 K2 [0x18D05D30]
        2 [-]: CALL R1 1 1  
        3 [-]: JUMPIFNOT R1 L4
-       4 [-]: GETIMPORT R1 1 [nil]
-       5 [-]: GETIMPORT R3 4 [nil]
+       4 [-]: GETIMPORT R1 1 [0x89326C93]
+       5 [-]: GETIMPORT R3 4 [0x1449FD34]
        6 [-]: NAMECALL R1 R1 K5 [0xFB669000]
        7 [-]: CALL R1 2 1  
        8 [-]: LENGTH R2 R1 
        9 [-]: LOADN R3 1   
       10 [-]: JUMPIFNOTLT R3 R2 L4
-      11 [-]: GETIMPORT R2 1 [nil]
-      12 [-]: GETIMPORT R4 7 [nil]
+      11 [-]: GETIMPORT R2 1 [0x89326C93]
+      12 [-]: GETIMPORT R4 7 [0xEFF6E3AB]
       13 [-]: NAMECALL R2 R2 K5 [0xFB669000]
       14 [-]: CALL R2 2 1  
       15 [-]: LENGTH R3 R2 
       16 [-]: LOADN R4 0   
       17 [-]: JUMPIFNOTLT R4 R3 L0
-      18 [-]: GETIMPORT R3 9 [nil]
+      18 [-]: GETIMPORT R3 9 [0x3D106989]
       19 [-]: LOADK R5 K10 ["MawFishingAvatar - ERROR: there are "]
       20 [-]: LENGTH R6 R1 
       21 [-]: LOADK R7 K11 [" mawFishingAvatars ("]
@@ -1837,36 +1837,36 @@ L 1:  43 [-]: GETTABLE R7 R1 R6
       53 [-]: NAMECALL R7 R7 K15 [0xA2880940]
       54 [-]: CALL R7 1 0  
 L 2:  55 [-]: FORNLOOP R4 L1
-L 3:  56 [-]: GETIMPORT R4 9 [nil]
+L 3:  56 [-]: GETIMPORT R4 9 [0x3D106989]
       57 [-]: MOVE R5 R3   
       58 [-]: CALL R4 1 0  
 L 4:  59 [-]: NEWTABLE R1 0 0
-      60 [-]: GETIMPORT R2 1 [nil]
+      60 [-]: GETIMPORT R2 1 [0x89326C93]
       61 [-]: NAMECALL R2 R2 K2 [0x18D05D30]
       62 [-]: CALL R2 1 1  
       63 [-]: JUMPIFNOT R2 L9
-      64 [-]: GETIMPORT R2 1 [nil]
+      64 [-]: GETIMPORT R2 1 [0x89326C93]
       65 [-]: GETUPVAL R4 0
       66 [-]: NAMECALL R2 R2 K19 [0xC7FCADA9]
       67 [-]: CALL R2 2 1  
       68 [-]: MOVE R1 R2   
       69 [-]: FASTCALL1 62 R1 L5
       70 [-]: MOVE R3 R1   
-      71 [-]: GETIMPORT R2 21 [nil]
+      71 [-]: GETIMPORT R2 21 [0x7B998233]
       72 [-]: CALL R2 1 1  
 L 5:  73 [-]: JUMPIF R2 L6 
       74 [-]: LENGTH R2 R1 
       75 [-]: JUMPXEQKN R2 K22 L9 NOT [0]
-L 6:  76 [-]: GETIMPORT R2 9 [nil]
+L 6:  76 [-]: GETIMPORT R2 9 [0x3D106989]
       77 [-]: LOADK R3 K23 ["MawFishingAvatar - ERROR: no spawn location found for swimming maws"]
       78 [-]: CALL R2 1 0  
-      79 [-]: GETIMPORT R2 1 [nil]
+      79 [-]: GETIMPORT R2 1 [0x89326C93]
       80 [-]: NAMECALL R2 R2 K2 [0x18D05D30]
       81 [-]: CALL R2 1 1  
       82 [-]: JUMPIFNOT R2 L8
       83 [-]: FASTCALL1 62 R0 L7
       84 [-]: MOVE R3 R0   
-      85 [-]: GETIMPORT R2 21 [nil]
+      85 [-]: GETIMPORT R2 21 [0x7B998233]
       86 [-]: CALL R2 1 1  
 L 7:  87 [-]: JUMPIF R2 L8 
       88 [-]: NAMECALL R2 R0 K15 [0xA2880940]
@@ -1876,38 +1876,38 @@ L 9:  91 [-]: LOADB R4 0
       92 [-]: LOADB R5 1   
       93 [-]: NAMECALL R2 R0 K24 [0x768274D6]
       94 [-]: CALL R2 3 0  
-      95 [-]: GETIMPORT R2 26 [nil]
+      95 [-]: GETIMPORT R2 26 [0xCBD666E1]
       96 [-]: LOADN R3 0   
       97 [-]: CALL R2 1 0  
       98 [-]: GETUPVAL R2 1
       99 [-]: MOVE R3 R0   
      100 [-]: LOADN R4 1   
      101 [-]: CALL R2 2 0  
-     102 [-]: GETIMPORT R2 1 [nil]
+     102 [-]: GETIMPORT R2 1 [0x89326C93]
      103 [-]: NAMECALL R2 R2 K2 [0x18D05D30]
      104 [-]: CALL R2 1 1  
      105 [-]: JUMPIFNOT R2 L91
-     106 [-]: GETIMPORT R2 28 [nil]
+     106 [-]: GETIMPORT R2 28 [0xBE190284]
      107 [-]: LOADK R4 K29 ["OnDeath"]
      108 [-]: NAMECALL R2 R2 K30 [0xBD710F80]
      109 [-]: CALL R2 2 0  
-     110 [-]: GETIMPORT R2 28 [nil]
+     110 [-]: GETIMPORT R2 28 [0xBE190284]
      111 [-]: LOADK R4 K29 ["OnDeath"]
      112 [-]: NAMECALL R2 R2 K31 [0xE7EF698D]
      113 [-]: CALL R2 2 0  
-     114 [-]: GETIMPORT R2 1 [nil]
-     115 [-]: GETIMPORT R4 7 [nil]
+     114 [-]: GETIMPORT R2 1 [0x89326C93]
+     115 [-]: GETIMPORT R4 7 [0xEFF6E3AB]
      116 [-]: NAMECALL R2 R2 K5 [0xFB669000]
      117 [-]: CALL R2 2 1  
      118 [-]: FASTCALL1 62 R2 L10
      119 [-]: MOVE R4 R2   
-     120 [-]: GETIMPORT R3 21 [nil]
+     120 [-]: GETIMPORT R3 21 [0x7B998233]
      121 [-]: CALL R3 1 1  
 L10: 122 [-]: JUMPIF R3 L15
      123 [-]: LENGTH R3 R2 
      124 [-]: LOADN R4 0   
      125 [-]: JUMPIFNOTLT R4 R3 L15
-     126 [-]: GETIMPORT R3 9 [nil]
+     126 [-]: GETIMPORT R3 9 [0x3D106989]
      127 [-]: LOADK R5 K32 ["MawFishingAvatar - found "]
      128 [-]: LENGTH R6 R2 
      129 [-]: LOADK R7 K33 [" existing swimming maw avatars to be destroyed"]
@@ -1920,13 +1920,13 @@ L10: 122 [-]: JUMPIF R3 L15
 L11: 136 [-]: GETTABLE R6 R2 R5
      137 [-]: FASTCALL1 62 R6 L12
      138 [-]: MOVE R8 R6   
-     139 [-]: GETIMPORT R7 21 [nil]
+     139 [-]: GETIMPORT R7 21 [0x7B998233]
      140 [-]: CALL R7 1 1  
 L12: 141 [-]: JUMPIF R7 L14
      142 [-]: NAMECALL R8 R6 K34 [0x5E651723]
      143 [-]: CALL R8 1 1  
      144 [-]: FASTCALL1 62 R8 L13
-     145 [-]: GETIMPORT R7 21 [nil]
+     145 [-]: GETIMPORT R7 21 [0x7B998233]
      146 [-]: CALL R7 1 1  
 L13: 147 [-]: JUMPIFNOT R7 L14
      148 [-]: NAMECALL R7 R6 K35 [0x449C4562]
@@ -1935,13 +1935,13 @@ L13: 147 [-]: JUMPIFNOT R7 L14
      151 [-]: NAMECALL R7 R6 K15 [0xA2880940]
      152 [-]: CALL R7 1 0  
 L14: 153 [-]: FORNLOOP R3 L11
-L15: 154 [-]: GETIMPORT R3 1 [nil]
+L15: 154 [-]: GETIMPORT R3 1 [0x89326C93]
      155 [-]: NAMECALL R3 R3 K36 [0x8B5B1F58]
      156 [-]: CALL R3 1 1  
-     157 [-]: GETIMPORT R4 1 [nil]
+     157 [-]: GETIMPORT R4 1 [0x89326C93]
      158 [-]: NAMECALL R4 R4 K37 [0x29EF273D]
      159 [-]: CALL R4 1 1  
-     160 [-]: GETIMPORT R5 39 [nil]
+     160 [-]: GETIMPORT R5 39 [0x55730E1A]
      161 [-]: LOADN R6 0   
      162 [-]: LENGTH R8 R1 
      163 [-]: SUBK R7 R8 K40 [1]
@@ -1952,7 +1952,7 @@ L15: 154 [-]: GETIMPORT R3 1 [nil]
      168 [-]: FORNPREP R6 L23
 L16: 169 [-]: GETTABLE R10 R3 R8
      170 [-]: FASTCALL1 62 R10 L17
-     171 [-]: GETIMPORT R9 21 [nil]
+     171 [-]: GETIMPORT R9 21 [0x7B998233]
      172 [-]: CALL R9 1 1  
 L17: 173 [-]: JUMPIF R9 L22
      174 [-]: ADDK R9 R5 K40 [1]
@@ -1962,25 +1962,25 @@ L17: 173 [-]: JUMPIF R9 L22
      178 [-]: GETTABLE R11 R1 R9
      179 [-]: NAMECALL R11 R11 K42 [0xCB3851B8]
      180 [-]: CALL R11 1 1 
-     181 [-]: GETIMPORT R14 44 [nil]
-     182 [-]: GETIMPORT R15 46 [nil]
+     181 [-]: GETIMPORT R14 44 [0x88EFC25E]
+     182 [-]: GETIMPORT R15 46 [0xDF93AC4F]
      183 [-]: CALL R14 1 1 
      184 [-]: MOVE R15 R10 
      185 [-]: MOVE R16 R11 
-     186 [-]: GETIMPORT R17 48 [nil]
+     186 [-]: GETIMPORT R17 48 [0x0469F296]
      187 [-]: LOADK R18 K49 [""]
      188 [-]: CALL R17 1 -1
      189 [-]: NAMECALL R12 R4 K50 [0x6CD833C5]
      190 [-]: CALL R12 -1 1
      191 [-]: FASTCALL1 62 R12 L18
      192 [-]: MOVE R14 R12 
-     193 [-]: GETIMPORT R13 21 [nil]
+     193 [-]: GETIMPORT R13 21 [0x7B998233]
      194 [-]: CALL R13 1 1 
 L18: 195 [-]: JUMPIF R13 L20
      196 [-]: NAMECALL R14 R12 K51 [0xBB610E5B]
      197 [-]: CALL R14 1 1 
      198 [-]: FASTCALL1 62 R14 L19
-     199 [-]: GETIMPORT R13 21 [nil]
+     199 [-]: GETIMPORT R13 21 [0x7B998233]
      200 [-]: CALL R13 1 1 
 L19: 201 [-]: JUMPIF R13 L20
      202 [-]: LOADB R15 0  
@@ -2004,7 +2004,7 @@ L19: 201 [-]: JUMPIF R13 L20
      220 [-]: LOADB R18 1  
      221 [-]: NAMECALL R15 R13 K24 [0x768274D6]
      222 [-]: CALL R15 3 0 
-     223 [-]: GETIMPORT R15 9 [nil]
+     223 [-]: GETIMPORT R15 9 [0x3D106989]
      224 [-]: LOADK R17 K56 ["MawFishingAvatar - spawned "]
      225 [-]: NAMECALL R24 R13 K12 [0xED4E0128]
      226 [-]: CALL R24 1 1 
@@ -2021,20 +2021,20 @@ L19: 201 [-]: JUMPIF R13 L20
      237 [-]: CALL R15 1 0 
      238 [-]: JUMP L21
     
-L20: 239 [-]: GETIMPORT R13 9 [nil]
+L20: 239 [-]: GETIMPORT R13 9 [0x3D106989]
      240 [-]: LOADK R14 K60 ["MawFishingAvatar - ERROR: spawning swimming maw agent failed"]
      241 [-]: CALL R13 1 0 
 L21: 242 [-]: ADDK R13 R5 K40 [1]
      243 [-]: LENGTH R14 R1
      244 [-]: MOD R5 R13 R14
 L22: 245 [-]: FORNLOOP R6 L16
-L23: 246 [-]: GETIMPORT R6 26 [nil]
+L23: 246 [-]: GETIMPORT R6 26 [0xCBD666E1]
      247 [-]: LOADN R7 0   
      248 [-]: CALL R6 1 0  
      249 [-]: NEWTABLE R6 0 0
      250 [-]: SETUPVAL R6 2
-     251 [-]: GETIMPORT R8 62 [nil]
-     252 [-]: GETIMPORT R9 64 [nil]
+     251 [-]: GETIMPORT R8 62 [0xF79A17D7]
+     252 [-]: GETIMPORT R9 64 [0x97812462]
      253 [-]: NAMECALL R6 R0 K65 [0xA2C2A919]
      254 [-]: CALL R6 3 0  
      255 [-]: LOADN R6 60  
@@ -2044,25 +2044,25 @@ L23: 246 [-]: GETIMPORT R6 26 [nil]
      259 [-]: MOVE R9 R6   
      260 [-]: NAMECALL R7 R0 K67 [0xD218533F]
      261 [-]: CALL R7 2 0  
-     262 [-]: GETIMPORT R7 9 [nil]
+     262 [-]: GETIMPORT R7 9 [0x3D106989]
      263 [-]: LOADK R9 K68 ["MawFishingAvatar - fishing activity initialized, score goal: "]
-     264 [-]: GETIMPORT R10 62 [nil]
+     264 [-]: GETIMPORT R10 62 [0xF79A17D7]
      265 [-]: LOADK R11 K69 [", stretch goal: "]
-     266 [-]: GETIMPORT R12 64 [nil]
+     266 [-]: GETIMPORT R12 64 [0x97812462]
      267 [-]: LOADK R13 K70 [", remaining time: "]
      268 [-]: MOVE R14 R6  
      269 [-]: CONCAT R8 R9 R14
      270 [-]: CALL R7 1 0  
-     271 [-]: GETIMPORT R7 1 [nil]
-     272 [-]: GETIMPORT R9 72 [nil]
+     271 [-]: GETIMPORT R7 1 [0x89326C93]
+     272 [-]: GETIMPORT R9 72 [0x553D57AE]
      273 [-]: NAMECALL R7 R7 K73 [0x46A0EBF5]
      274 [-]: CALL R7 2 1  
      275 [-]: FASTCALL1 62 R7 L24
      276 [-]: MOVE R9 R7   
-     277 [-]: GETIMPORT R8 21 [nil]
+     277 [-]: GETIMPORT R8 21 [0x7B998233]
      278 [-]: CALL R8 1 1  
 L24: 279 [-]: JUMPIF R8 L25
-     280 [-]: GETIMPORT R8 9 [nil]
+     280 [-]: GETIMPORT R8 9 [0x3D106989]
      281 [-]: LOADK R10 K74 ["MawFishingAvatar - firing port 'Execute' on "]
      282 [-]: NAMECALL R11 R7 K12 [0xED4E0128]
      283 [-]: CALL R11 1 1 
@@ -2073,54 +2073,54 @@ L24: 279 [-]: JUMPIF R8 L25
      288 [-]: CALL R8 2 0  
      289 [-]: JUMP L26
     
-L25: 290 [-]: GETIMPORT R8 9 [nil]
+L25: 290 [-]: GETIMPORT R8 9 [0x3D106989]
      291 [-]: LOADK R10 K77 ["MawFishingAvatar - ERROR: found no script trigger tagged "]
-     292 [-]: GETIMPORT R11 72 [nil]
+     292 [-]: GETIMPORT R11 72 [0x553D57AE]
      293 [-]: CONCAT R9 R10 R11
      294 [-]: CALL R8 1 0  
 L26: 295 [-]: LOADN R10 1  
      296 [-]: NAMECALL R8 R0 K78 [0x0A636D4D]
      297 [-]: CALL R8 2 0  
-     298 [-]: GETIMPORT R8 9 [nil]
+     298 [-]: GETIMPORT R8 9 [0x3D106989]
      299 [-]: LOADK R9 K79 ["MawFishingAvatar - waiting for the first player to be active"]
      300 [-]: CALL R8 1 0  
 L27: 301 [-]: GETUPVAL R8 3
      302 [-]: CALL R8 0 1  
      303 [-]: JUMPIF R8 L28
-     304 [-]: GETIMPORT R8 26 [nil]
+     304 [-]: GETIMPORT R8 26 [0xCBD666E1]
      305 [-]: LOADK R9 K80 [0.10000000000000001]
      306 [-]: CALL R8 1 0  
      307 [-]: JUMPBACK L27 
-L28: 308 [-]: GETIMPORT R8 9 [nil]
+L28: 308 [-]: GETIMPORT R8 9 [0x3D106989]
      309 [-]: LOADK R9 K81 ["MawFishingAvatar - starting the fishing activity"]
      310 [-]: CALL R8 1 0  
 L29: 311 [-]: FASTCALL1 62 R0 L30
      312 [-]: MOVE R9 R0   
-     313 [-]: GETIMPORT R8 21 [nil]
+     313 [-]: GETIMPORT R8 21 [0x7B998233]
      314 [-]: CALL R8 1 1  
 L30: 315 [-]: JUMPIF R8 L35
      316 [-]: NAMECALL R8 R0 K82 [0x3DED3591]
      317 [-]: CALL R8 1 1  
      318 [-]: LOADN R9 1   
      319 [-]: JUMPIFNOTEQ R8 R9 L35
-     320 [-]: GETIMPORT R8 26 [nil]
+     320 [-]: GETIMPORT R8 26 [0xCBD666E1]
      321 [-]: LOADN R9 0   
      322 [-]: CALL R8 1 0  
      323 [-]: NAMECALL R9 R0 K83 [0xBB6C455B]
      324 [-]: CALL R9 1 1  
-     325 [-]: GETIMPORT R10 85 [nil]
+     325 [-]: GETIMPORT R10 85 [0x67652851]
      326 [-]: CALL R10 0 1 
      327 [-]: SUB R8 R9 R10
      328 [-]: LOADN R12 0  
      329 [-]: FASTCALL2 18 R12 R8 L31
      330 [-]: MOVE R13 R8  
-     331 [-]: GETIMPORT R11 88 [nil]
+     331 [-]: GETIMPORT R11 88 [0xB62ECFE0]
      332 [-]: CALL R11 2 1 
 L31: 333 [-]: NAMECALL R9 R0 K67 [0xD218533F]
      334 [-]: CALL R9 2 0  
      335 [-]: LOADN R9 0   
      336 [-]: JUMPIFNOTLE R8 R9 L32
-     337 [-]: GETIMPORT R9 9 [nil]
+     337 [-]: GETIMPORT R9 9 [0x3D106989]
      338 [-]: LOADK R10 K89 ["MawFishingAvatar - ending fishing activity as time ran out"]
      339 [-]: CALL R9 1 0  
      340 [-]: LOADN R11 2  
@@ -2131,7 +2131,7 @@ L31: 333 [-]: NAMECALL R9 R0 K67 [0xD218533F]
 L32: 344 [-]: GETUPVAL R9 3
      345 [-]: CALL R9 0 1  
      346 [-]: JUMPIF R9 L33
-     347 [-]: GETIMPORT R9 9 [nil]
+     347 [-]: GETIMPORT R9 9 [0x3D106989]
      348 [-]: LOADK R10 K90 ["MawFishingAvatar - ending fishing activity as there are no participating players left"]
      349 [-]: CALL R9 1 0  
      350 [-]: LOADN R11 2  
@@ -2144,7 +2144,7 @@ L33: 354 [-]: NAMECALL R9 R0 K91 [0x416570C7]
      356 [-]: NAMECALL R10 R0 K92 [0x58AC3E7E]
      357 [-]: CALL R10 1 1 
      358 [-]: JUMPIFNOTLE R10 R9 L34
-     359 [-]: GETIMPORT R9 9 [nil]
+     359 [-]: GETIMPORT R9 9 [0x3D106989]
      360 [-]: LOADK R10 K93 ["MawFishingAvatar - ending fishing activity as stretch-goal has been reached"]
      361 [-]: CALL R9 1 0  
      362 [-]: LOADN R11 2  
@@ -2153,40 +2153,40 @@ L33: 354 [-]: NAMECALL R9 R0 K91 [0x416570C7]
      365 [-]: JUMP L35
     
 L34: 366 [-]: JUMPBACK L29 
-L35: 367 [-]: GETIMPORT R8 26 [nil]
+L35: 367 [-]: GETIMPORT R8 26 [0xCBD666E1]
      368 [-]: LOADN R9 0   
      369 [-]: CALL R8 1 0  
-     370 [-]: GETIMPORT R8 28 [nil]
+     370 [-]: GETIMPORT R8 28 [0xBE190284]
      371 [-]: LOADK R10 K29 ["OnDeath"]
      372 [-]: NAMECALL R8 R8 K30 [0xBD710F80]
      373 [-]: CALL R8 2 0  
-     374 [-]: GETIMPORT R8 9 [nil]
+     374 [-]: GETIMPORT R8 9 [0x3D106989]
      375 [-]: LOADK R9 K94 ["MawFishingAvatar - waiting for all active players to leave"]
      376 [-]: CALL R8 1 0  
 L36: 377 [-]: GETUPVAL R8 3
      378 [-]: CALL R8 0 1  
      379 [-]: JUMPIFNOT R8 L37
-     380 [-]: GETIMPORT R8 26 [nil]
+     380 [-]: GETIMPORT R8 26 [0xCBD666E1]
      381 [-]: LOADK R9 K80 [0.10000000000000001]
      382 [-]: CALL R8 1 0  
      383 [-]: JUMPBACK L36 
-L37: 384 [-]: GETIMPORT R8 9 [nil]
+L37: 384 [-]: GETIMPORT R8 9 [0x3D106989]
      385 [-]: LOADK R9 K95 ["MawFishingAvatar - no active players left, can start cleanup and rewarding now"]
      386 [-]: CALL R8 1 0  
-     387 [-]: GETIMPORT R8 26 [nil]
+     387 [-]: GETIMPORT R8 26 [0xCBD666E1]
      388 [-]: LOADN R9 1   
      389 [-]: CALL R8 1 0  
      390 [-]: FASTCALL1 62 R0 L38
      391 [-]: MOVE R9 R0   
-     392 [-]: GETIMPORT R8 21 [nil]
+     392 [-]: GETIMPORT R8 21 [0x7B998233]
      393 [-]: CALL R8 1 1  
 L38: 394 [-]: JUMPIF R8 L40
-     395 [-]: GETIMPORT R9 97 [nil]
+     395 [-]: GETIMPORT R9 97 [0xF7BC25D1]
      396 [-]: FASTCALL1 62 R9 L39
-     397 [-]: GETIMPORT R8 21 [nil]
+     397 [-]: GETIMPORT R8 21 [0x7B998233]
      398 [-]: CALL R8 1 1  
 L39: 399 [-]: JUMPIF R8 L40
-     400 [-]: GETIMPORT R10 97 [nil]
+     400 [-]: GETIMPORT R10 97 [0xF7BC25D1]
      401 [-]: LOADB R11 1  
      402 [-]: LOADN R12 3  
      403 [-]: LOADN R13 3  
@@ -2197,7 +2197,7 @@ L40: 407 [-]: LOADN R8 0
      408 [-]: LOADN R9 0   
      409 [-]: FASTCALL1 62 R0 L41
      410 [-]: MOVE R11 R0  
-     411 [-]: GETIMPORT R10 21 [nil]
+     411 [-]: GETIMPORT R10 21 [0x7B998233]
      412 [-]: CALL R10 1 1 
 L41: 413 [-]: JUMPIF R10 L43
      414 [-]: NAMECALL R10 R0 K91 [0x416570C7]
@@ -2206,27 +2206,27 @@ L41: 413 [-]: JUMPIF R10 L43
      417 [-]: NAMECALL R10 R0 K92 [0x58AC3E7E]
      418 [-]: CALL R10 1 1 
      419 [-]: JUMPIFNOTLE R10 R9 L42
-     420 [-]: GETIMPORT R8 100 [nil]
+     420 [-]: GETIMPORT R8 100 [0x4DD7AC83]
      421 [-]: JUMP L43
     
 L42: 422 [-]: NAMECALL R10 R0 K101 [0xCE732123]
      423 [-]: CALL R10 1 1 
      424 [-]: JUMPIFNOTLE R10 R9 L43
-     425 [-]: GETIMPORT R8 103 [nil]
-L43: 426 [-]: GETIMPORT R10 1 [nil]
+     425 [-]: GETIMPORT R8 103 [0xA1C3CD88]
+L43: 426 [-]: GETIMPORT R10 1 [0x89326C93]
      427 [-]: NAMECALL R10 R10 K2 [0x18D05D30]
      428 [-]: CALL R10 1 1 
      429 [-]: JUMPIFNOT R10 L45
      430 [-]: FASTCALL1 62 R0 L44
      431 [-]: MOVE R11 R0  
-     432 [-]: GETIMPORT R10 21 [nil]
+     432 [-]: GETIMPORT R10 21 [0x7B998233]
      433 [-]: CALL R10 1 1 
 L44: 434 [-]: JUMPIF R10 L45
      435 [-]: NAMECALL R10 R0 K15 [0xA2880940]
      436 [-]: CALL R10 1 0 
-L45: 437 [-]: GETIMPORT R10 9 [nil]
+L45: 437 [-]: GETIMPORT R10 9 [0x3D106989]
      438 [-]: LOADK R12 K104 ["MawFishingAvatar - maw fishing activity completed, score: "]
-     439 [-]: GETIMPORT R16 106 [nil]
+     439 [-]: GETIMPORT R16 106 [0x64FB1586]
      440 [-]: MOVE R17 R9  
      441 [-]: CALL R16 1 1 
      442 [-]: MOVE R13 R16 
@@ -2234,24 +2234,24 @@ L45: 437 [-]: GETIMPORT R10 9 [nil]
      444 [-]: MOVE R15 R8  
      445 [-]: CONCAT R11 R12 R15
      446 [-]: CALL R10 1 0 
-     447 [-]: GETIMPORT R11 1 [nil]
+     447 [-]: GETIMPORT R11 1 [0x89326C93]
      448 [-]: FASTCALL1 62 R11 L46
-     449 [-]: GETIMPORT R10 21 [nil]
+     449 [-]: GETIMPORT R10 21 [0x7B998233]
      450 [-]: CALL R10 1 1 
 L46: 451 [-]: JUMPIF R10 L48
-     452 [-]: GETIMPORT R10 1 [nil]
+     452 [-]: GETIMPORT R10 1 [0x89326C93]
      453 [-]: NAMECALL R10 R10 K108 [0xFB64E76C]
      454 [-]: CALL R10 1 1 
      455 [-]: FASTCALL1 62 R10 L47
      456 [-]: MOVE R12 R10 
-     457 [-]: GETIMPORT R11 21 [nil]
+     457 [-]: GETIMPORT R11 21 [0x7B998233]
      458 [-]: CALL R11 1 1 
 L47: 459 [-]: JUMPIF R11 L48
-     460 [-]: GETIMPORT R11 1 [nil]
+     460 [-]: GETIMPORT R11 1 [0x89326C93]
      461 [-]: NAMECALL R11 R11 K2 [0x18D05D30]
      462 [-]: CALL R11 1 1 
      463 [-]: JUMPIFNOT R11 L48
-     464 [-]: GETIMPORT R13 48 [nil]
+     464 [-]: GETIMPORT R13 48 [0x0469F296]
      465 [-]: LOADK R14 K109 ["DUVIRI_MINIGAME_PLAYED"]
      466 [-]: CALL R13 1 1 
      467 [-]: LOADK R14 K110 ["DuviriMawFishing"]
@@ -2259,24 +2259,24 @@ L47: 459 [-]: JUMPIF R11 L48
      469 [-]: CALL R11 3 0 
 L48: 470 [-]: LOADN R10 0  
      471 [-]: JUMPIFNOTLT R10 R8 L91
-     472 [-]: GETIMPORT R11 1 [nil]
+     472 [-]: GETIMPORT R11 1 [0x89326C93]
      473 [-]: FASTCALL1 62 R11 L49
-     474 [-]: GETIMPORT R10 21 [nil]
+     474 [-]: GETIMPORT R10 21 [0x7B998233]
      475 [-]: CALL R10 1 1 
 L49: 476 [-]: JUMPIF R10 L51
-     477 [-]: GETIMPORT R10 1 [nil]
+     477 [-]: GETIMPORT R10 1 [0x89326C93]
      478 [-]: NAMECALL R10 R10 K108 [0xFB64E76C]
      479 [-]: CALL R10 1 1 
      480 [-]: FASTCALL1 62 R10 L50
      481 [-]: MOVE R12 R10 
-     482 [-]: GETIMPORT R11 21 [nil]
+     482 [-]: GETIMPORT R11 21 [0x7B998233]
      483 [-]: CALL R11 1 1 
 L50: 484 [-]: JUMPIF R11 L51
-     485 [-]: GETIMPORT R11 1 [nil]
+     485 [-]: GETIMPORT R11 1 [0x89326C93]
      486 [-]: NAMECALL R11 R11 K2 [0x18D05D30]
      487 [-]: CALL R11 1 1 
      488 [-]: JUMPIFNOT R11 L51
-     489 [-]: GETIMPORT R13 48 [nil]
+     489 [-]: GETIMPORT R13 48 [0x0469F296]
      490 [-]: LOADK R14 K112 ["DUVIRI_MINIGAME_COMPLETE"]
      491 [-]: CALL R13 1 1 
      492 [-]: LOADK R14 K110 ["DuviriMawFishing"]
@@ -2288,80 +2288,80 @@ L51: 495 [-]: NEWTABLE R10 0 0
      498 [-]: JUMPXEQKN R8 K114 L52 [2]
      499 [-]: LOADB R12 0 +1
 L52: 500 [-]: LOADB R12 1  
-L53: 501 [-]: GETIMPORT R13 116 [nil]
+L53: 501 [-]: GETIMPORT R13 116 [0x721B17CF]
      502 [-]: LOADN R14 1  
      503 [-]: CALL R11 3 1 
      504 [-]: LOADK R12 K49 [""]
      505 [-]: LOADN R15 1  
-     506 [-]: GETIMPORT R16 118 [nil]
+     506 [-]: GETIMPORT R16 118 [0xDBD4FB0E]
      507 [-]: LENGTH R13 R16
      508 [-]: LOADN R14 1  
      509 [-]: FORNPREP R13 L63
-L54: 510 [-]: GETIMPORT R18 118 [nil]
+L54: 510 [-]: GETIMPORT R18 118 [0xDBD4FB0E]
      511 [-]: GETTABLE R17 R18 R15
      512 [-]: FASTCALL1 62 R17 L55
-     513 [-]: GETIMPORT R16 21 [nil]
+     513 [-]: GETIMPORT R16 21 [0x7B998233]
      514 [-]: CALL R16 1 1 
 L55: 515 [-]: JUMPIF R16 L62
      516 [-]: LOADN R16 100
-     517 [-]: GETIMPORT R18 120 [nil]
+     517 [-]: GETIMPORT R18 120 [0x54737690]
      518 [-]: LENGTH R17 R18
      519 [-]: JUMPIFNOTLE R15 R17 L57
-     520 [-]: GETIMPORT R19 120 [nil]
+     520 [-]: GETIMPORT R19 120 [0x54737690]
      521 [-]: GETTABLE R18 R19 R15
      522 [-]: FASTCALL1 62 R18 L56
-     523 [-]: GETIMPORT R17 21 [nil]
+     523 [-]: GETIMPORT R17 21 [0x7B998233]
      524 [-]: CALL R17 1 1 
 L56: 525 [-]: JUMPIF R17 L57
-     526 [-]: GETIMPORT R17 122 [nil]
-     527 [-]: GETIMPORT R19 120 [nil]
+     526 [-]: GETIMPORT R17 122 [0x42DCC9F5]
+     527 [-]: GETIMPORT R19 120 [0x54737690]
      528 [-]: GETTABLE R18 R19 R15
      529 [-]: LOADN R19 0  
      530 [-]: LOADN R20 100
      531 [-]: CALL R17 3 1 
      532 [-]: MOVE R16 R17 
-L57: 533 [-]: GETIMPORT R17 39 [nil]
+L57: 533 [-]: GETIMPORT R17 39 [0x55730E1A]
      534 [-]: LOADN R18 0  
      535 [-]: LOADN R19 99 
      536 [-]: CALL R17 2 1 
      537 [-]: JUMPIFNOTLT R17 R16 L62
      538 [-]: LOADN R18 0  
-     539 [-]: GETIMPORT R20 124 [nil]
+     539 [-]: GETIMPORT R20 124 [0x26073973]
      540 [-]: LENGTH R19 R20
      541 [-]: JUMPIFNOTLE R15 R19 L60
-     542 [-]: GETIMPORT R24 124 [nil]
+     542 [-]: GETIMPORT R24 124 [0x26073973]
      543 [-]: GETTABLE R23 R24 R15
      544 [-]: GETTABLEKS R22 R23 K126 ["x"]
      545 [-]: MUL R21 R22 R11
      546 [-]: ADDK R20 R21 K125 [0.5]
      547 [-]: FASTCALL1 12 R20 L58
-     548 [-]: GETIMPORT R19 128 [nil]
+     548 [-]: GETIMPORT R19 128 [0x55F27C30]
      549 [-]: CALL R19 1 1 
-L58: 550 [-]: GETIMPORT R25 124 [nil]
+L58: 550 [-]: GETIMPORT R25 124 [0x26073973]
      551 [-]: GETTABLE R24 R25 R15
      552 [-]: GETTABLEKS R23 R24 K129 ["y"]
      553 [-]: MUL R22 R23 R11
      554 [-]: ADDK R21 R22 K125 [0.5]
      555 [-]: FASTCALL1 12 R21 L59
-     556 [-]: GETIMPORT R20 128 [nil]
+     556 [-]: GETIMPORT R20 128 [0x55F27C30]
      557 [-]: CALL R20 1 1 
-L59: 558 [-]: GETIMPORT R21 39 [nil]
+L59: 558 [-]: GETIMPORT R21 39 [0x55730E1A]
      559 [-]: MOVE R22 R19 
      560 [-]: MOVE R23 R20 
      561 [-]: CALL R21 2 1 
      562 [-]: MOVE R18 R21 
 L60: 563 [-]: DUPTABLE R19 132
-     564 [-]: GETIMPORT R21 118 [nil]
+     564 [-]: GETIMPORT R21 118 [0xDBD4FB0E]
      565 [-]: GETTABLE R20 R21 R15
      566 [-]: SETTABLEKS R20 R19 K130 ["type"]
      567 [-]: SETTABLEKS R18 R19 K131 ["amount"]
      568 [-]: FASTCALL2 52 R10 R19 L61
      569 [-]: MOVE R21 R10 
      570 [-]: MOVE R22 R19 
-     571 [-]: GETIMPORT R20 135 [nil]
+     571 [-]: GETIMPORT R20 135 [0x23D5322F]
      572 [-]: CALL R20 2 0 
 L61: 573 [-]: MOVE R20 R12 
-     574 [-]: GETIMPORT R25 106 [nil]
+     574 [-]: GETIMPORT R25 106 [0x64FB1586]
      575 [-]: GETTABLEKS R26 R19 K131 ["amount"]
      576 [-]: CALL R25 1 1 
      577 [-]: MOVE R21 R25 
@@ -2374,25 +2374,25 @@ L61: 573 [-]: MOVE R20 R12
      584 [-]: CONCAT R12 R20 R24
 L62: 585 [-]: FORNLOOP R13 L54
 L63: 586 [-]: JUMPXEQKN R8 K114 L74 NOT [2]
-     587 [-]: GETIMPORT R14 139 [nil]
+     587 [-]: GETIMPORT R14 139 [0xD25DCDD4]
      588 [-]: LENGTH R13 R14
      589 [-]: LOADN R14 0  
      590 [-]: JUMPIFNOTLT R14 R13 L74
-     591 [-]: GETIMPORT R14 142 [nil]
+     591 [-]: GETIMPORT R14 142 ["MawFishingSuccessfullyCompleted"]
      592 [-]: FASTCALL1 62 R14 L64
-     593 [-]: GETIMPORT R13 21 [nil]
+     593 [-]: GETIMPORT R13 21 [0x7B998233]
      594 [-]: CALL R13 1 1 
 L64: 595 [-]: JUMPIFNOT R13 L74
-     596 [-]: GETIMPORT R13 39 [nil]
+     596 [-]: GETIMPORT R13 39 [0x55730E1A]
      597 [-]: LOADN R14 1  
-     598 [-]: GETIMPORT R16 139 [nil]
+     598 [-]: GETIMPORT R16 139 [0xD25DCDD4]
      599 [-]: LENGTH R15 R16
      600 [-]: CALL R13 2 1 
-     601 [-]: GETIMPORT R15 144 [nil]
+     601 [-]: GETIMPORT R15 144 [0x4EC73E73]
      602 [-]: GETUPVAL R16 2
      603 [-]: CALL R15 1 1 
      604 [-]: FASTCALL1 62 R15 L65
-     605 [-]: GETIMPORT R14 21 [nil]
+     605 [-]: GETIMPORT R14 21 [0x7B998233]
      606 [-]: CALL R14 1 1 
 L65: 607 [-]: JUMPIF R14 L71
      608 [-]: LOADK R14 K49 [""]
@@ -2409,49 +2409,49 @@ L66: 614 [-]: MOVE R21 R14
      619 [-]: CONCAT R14 R21 R25
      620 [-]: FASTCALL1 41 R19 L67
      621 [-]: MOVE R24 R19 
-     622 [-]: GETIMPORT R23 148 [nil]
+     622 [-]: GETIMPORT R23 148 [0x4534F434]
      623 [-]: CALL R23 1 1 
 L67: 624 [-]: SUBK R22 R23 K145 [65]
      625 [-]: ADDK R21 R22 K40 [1]
      626 [-]: LOADN R22 1  
      627 [-]: JUMPIFNOTLE R22 R21 L69
-     628 [-]: GETIMPORT R23 139 [nil]
+     628 [-]: GETIMPORT R23 139 [0xD25DCDD4]
      629 [-]: LENGTH R22 R23
      630 [-]: JUMPIFNOTLE R21 R22 L69
      631 [-]: FASTCALL2 52 R15 R21 L68
      632 [-]: MOVE R23 R15 
      633 [-]: MOVE R24 R21 
-     634 [-]: GETIMPORT R22 135 [nil]
+     634 [-]: GETIMPORT R22 135 [0x23D5322F]
      635 [-]: CALL R22 2 0 
 L68: 636 [-]: JUMP L70
     
-L69: 637 [-]: GETIMPORT R22 9 [nil]
+L69: 637 [-]: GETIMPORT R22 9 [0x3D106989]
      638 [-]: LOADK R24 K149 ["MawFishingAvatar - ERROR: invalid victim type index "]
      639 [-]: MOVE R25 R21 
      640 [-]: LOADK R26 K150 [", #fishRewards=="]
-     641 [-]: GETIMPORT R28 139 [nil]
+     641 [-]: GETIMPORT R28 139 [0xD25DCDD4]
      642 [-]: LENGTH R27 R28
      643 [-]: CONCAT R23 R24 R27
      644 [-]: CALL R22 1 0 
 L70: 645 [-]: FORGLOOP R16 L66 2
-     646 [-]: GETIMPORT R16 9 [nil]
+     646 [-]: GETIMPORT R16 9 [0x3D106989]
      647 [-]: LOADK R18 K151 ["MawFishingAvatar - kill stats: "]
      648 [-]: MOVE R19 R14 
      649 [-]: CONCAT R17 R18 R19
      650 [-]: CALL R16 1 0 
-     651 [-]: GETIMPORT R16 39 [nil]
+     651 [-]: GETIMPORT R16 39 [0x55730E1A]
      652 [-]: LOADN R17 1  
      653 [-]: LENGTH R18 R15
      654 [-]: CALL R16 2 1 
      655 [-]: GETTABLE R13 R15 R16
      656 [-]: JUMP L72
     
-L71: 657 [-]: GETIMPORT R14 9 [nil]
+L71: 657 [-]: GETIMPORT R14 9 [0x3D106989]
      658 [-]: LOADK R15 K152 ["MawFishingAvatar - ERROR: reward tier == 2 but mKillStats is empty! Choosing fish reward type randomly from all types."]
      659 [-]: CALL R14 1 0 
 L72: 660 [-]: DUPTABLE R14 132
-     661 [-]: GETIMPORT R15 154 [nil]
-     662 [-]: GETIMPORT R17 139 [nil]
+     661 [-]: GETIMPORT R15 154 [0xB009BBC6]
+     662 [-]: GETIMPORT R17 139 [0xD25DCDD4]
      663 [-]: GETTABLE R16 R17 R13
      664 [-]: NAMECALL R16 R16 K155 [0xF278F8A1]
      665 [-]: CALL R16 1 -1
@@ -2462,10 +2462,10 @@ L72: 660 [-]: DUPTABLE R14 132
      670 [-]: FASTCALL2 52 R10 R14 L73
      671 [-]: MOVE R16 R10 
      672 [-]: MOVE R17 R14 
-     673 [-]: GETIMPORT R15 135 [nil]
+     673 [-]: GETIMPORT R15 135 [0x23D5322F]
      674 [-]: CALL R15 2 0 
 L73: 675 [-]: MOVE R15 R12 
-     676 [-]: GETIMPORT R19 106 [nil]
+     676 [-]: GETIMPORT R19 106 [0x64FB1586]
      677 [-]: GETTABLEKS R20 R14 K131 ["amount"]
      678 [-]: CALL R19 1 1 
      679 [-]: MOVE R16 R19 
@@ -2474,12 +2474,12 @@ L73: 675 [-]: MOVE R15 R12
      682 [-]: NAMECALL R18 R18 K137 [0xE223E2B1]
      683 [-]: CALL R18 1 1 
      684 [-]: CONCAT R12 R15 R18
-L74: 685 [-]: GETIMPORT R13 9 [nil]
+L74: 685 [-]: GETIMPORT R13 9 [0x3D106989]
      686 [-]: LOADK R15 K156 ["MawFishingAvatar - rewards to give: "]
      687 [-]: MOVE R16 R12 
      688 [-]: CONCAT R14 R15 R16
      689 [-]: CALL R13 1 0 
-     690 [-]: GETIMPORT R13 1 [nil]
+     690 [-]: GETIMPORT R13 1 [0x89326C93]
      691 [-]: NAMECALL R13 R13 K157 [0x7D108DDB]
      692 [-]: CALL R13 1 1 
      693 [-]: LOADN R16 1  
@@ -2489,7 +2489,7 @@ L74: 685 [-]: GETIMPORT R13 9 [nil]
 L75: 697 [-]: GETTABLE R17 R13 R16
      698 [-]: FASTCALL1 62 R17 L76
      699 [-]: MOVE R19 R17 
-     700 [-]: GETIMPORT R18 21 [nil]
+     700 [-]: GETIMPORT R18 21 [0x7B998233]
      701 [-]: CALL R18 1 1 
 L76: 702 [-]: JUMPIF R18 L81
      703 [-]: NAMECALL R18 R17 K158 [0xD8140B94]
@@ -2499,17 +2499,17 @@ L76: 702 [-]: JUMPIF R18 L81
      707 [-]: CALL R18 1 1 
      708 [-]: FASTCALL1 62 R18 L77
      709 [-]: MOVE R20 R18 
-     710 [-]: GETIMPORT R19 21 [nil]
+     710 [-]: GETIMPORT R19 21 [0x7B998233]
      711 [-]: CALL R19 1 1 
 L77: 712 [-]: JUMPIF R19 L81
      713 [-]: NAMECALL R19 R18 K159 [0xDE321E6F]
      714 [-]: CALL R19 1 1 
      715 [-]: FASTCALL1 62 R19 L78
      716 [-]: MOVE R21 R19 
-     717 [-]: GETIMPORT R20 21 [nil]
+     717 [-]: GETIMPORT R20 21 [0x7B998233]
      718 [-]: CALL R20 1 1 
 L78: 719 [-]: JUMPIF R20 L81
-     720 [-]: GETIMPORT R20 161 [nil]
+     720 [-]: GETIMPORT R20 161 [0xC8802016]
      721 [-]: MOVE R21 R10 
      722 [-]: CALL R20 1 3 
      723 [-]: FORGPREP_INEXT R20 L80
@@ -2518,14 +2518,14 @@ L79: 724 [-]: GETTABLEKS R27 R24 K130 ["type"]
      726 [-]: NAMECALL R25 R19 K162 [0xEC017EFA]
      727 [-]: CALL R25 3 0 
 L80: 728 [-]: FORGLOOP R20 L79 2 [inext]
-     729 [-]: GETIMPORT R20 9 [nil]
+     729 [-]: GETIMPORT R20 9 [0x3D106989]
      730 [-]: LOADK R22 K163 ["MawFishingAvatar - rewards were given to "]
      731 [-]: LOADB R25 1  
      732 [-]: NAMECALL R23 R17 K54 [0x5CA33548]
      733 [-]: CALL R23 2 1 
      734 [-]: CONCAT R21 R22 R23
      735 [-]: CALL R20 1 0 
-     736 [-]: GETIMPORT R20 1 [nil]
+     736 [-]: GETIMPORT R20 1 [0x89326C93]
      737 [-]: NAMECALL R20 R20 K2 [0x18D05D30]
      738 [-]: CALL R20 1 1 
      739 [-]: JUMPIFNOT R20 L81
@@ -2535,27 +2535,27 @@ L80: 728 [-]: FORGLOOP R20 L79 2 [inext]
      743 [-]: CALL R21 1 -1
      744 [-]: CALL R20 -1 0
 L81: 745 [-]: FORNLOOP R14 L75
-L82: 746 [-]: GETIMPORT R15 167 [nil]
+L82: 746 [-]: GETIMPORT R15 167 ["MawFishingDuviriRewardsDelivered"]
      747 [-]: FASTCALL1 62 R15 L83
-     748 [-]: GETIMPORT R14 21 [nil]
+     748 [-]: GETIMPORT R14 21 [0x7B998233]
      749 [-]: CALL R14 1 1 
 L83: 750 [-]: JUMPIFNOT R14 L89
-     751 [-]: GETIMPORT R14 9 [nil]
+     751 [-]: GETIMPORT R14 9 [0x3D106989]
      752 [-]: LOADK R15 K168 ["MawFishingAvatar - delivering Duviri rewards"]
      753 [-]: CALL R14 1 0 
      754 [-]: GETUPVAL R15 5
      755 [-]: GETTABLEKS R14 R15 K169 [0xE6574978]
      756 [-]: MOVE R15 R8  
      757 [-]: CALL R14 1 0 
-     758 [-]: GETIMPORT R14 1 [nil]
-     759 [-]: GETIMPORT R16 48 [nil]
+     758 [-]: GETIMPORT R14 1 [0x89326C93]
+     759 [-]: GETIMPORT R16 48 [0x0469F296]
      760 [-]: LOADK R17 K170 ["FishingIncompleteDeco"]
      761 [-]: CALL R16 1 -1
      762 [-]: NAMECALL R14 R14 K19 [0xC7FCADA9]
      763 [-]: CALL R14 -1 1
      764 [-]: FASTCALL1 62 R14 L84
      765 [-]: MOVE R16 R14 
-     766 [-]: GETIMPORT R15 21 [nil]
+     766 [-]: GETIMPORT R15 21 [0x7B998233]
      767 [-]: CALL R15 1 1 
 L84: 768 [-]: JUMPIF R15 L88
      769 [-]: MOVE R15 R14 
@@ -2564,21 +2564,21 @@ L84: 768 [-]: JUMPIF R15 L88
      772 [-]: FORGPREP R15 L87
 L85: 773 [-]: FASTCALL1 62 R19 L86
      774 [-]: MOVE R21 R19 
-     775 [-]: GETIMPORT R20 21 [nil]
+     775 [-]: GETIMPORT R20 21 [0x7B998233]
      776 [-]: CALL R20 1 1 
 L86: 777 [-]: JUMPIF R20 L87
      778 [-]: NAMECALL R20 R19 K15 [0xA2880940]
      779 [-]: CALL R20 1 0 
 L87: 780 [-]: FORGLOOP R15 L85 2
-L88: 781 [-]: GETIMPORT R15 171 [nil]
+L88: 781 [-]: GETIMPORT R15 171 ["_T"]
      782 [-]: LOADB R16 1  
      783 [-]: SETTABLEKS R16 R15 K166 ["MawFishingDuviriRewardsDelivered"]
      784 [-]: JUMP L90
     
-L89: 785 [-]: GETIMPORT R14 9 [nil]
+L89: 785 [-]: GETIMPORT R14 9 [0x3D106989]
      786 [-]: LOADK R15 K172 ["MawFishingAvatar - Duviri rewards have been delivered before"]
      787 [-]: CALL R14 1 0 
-L90: 788 [-]: GETIMPORT R14 171 [nil]
+L90: 788 [-]: GETIMPORT R14 171 ["_T"]
      789 [-]: LOADB R15 1  
      790 [-]: SETTABLEKS R15 R14 K141 ["MawFishingSuccessfullyCompleted"]
 L91: 791 [-]: RETURN R0 0  
@@ -2597,38 +2597,38 @@ L91: 791 [-]: RETURN R0 0
        3 [-]: CALL R2 1 1  
        4 [-]: FASTCALL1 62 R1 L0
        5 [-]: MOVE R4 R1   
-       6 [-]: GETIMPORT R3 3 [nil]
+       6 [-]: GETIMPORT R3 3 [0x7B998233]
        7 [-]: CALL R3 1 1  
 L 0:   8 [-]: JUMPIF R3 L12
-       9 [-]: GETIMPORT R5 5 [nil]
+       9 [-]: GETIMPORT R5 5 [0xB9FBFF43]
       10 [-]: NAMECALL R3 R1 K6 [0xF2DEAF69]
       11 [-]: CALL R3 2 1  
       12 [-]: JUMPIFNOT R3 L12
       13 [-]: FASTCALL1 62 R2 L1
       14 [-]: MOVE R4 R2   
-      15 [-]: GETIMPORT R3 3 [nil]
+      15 [-]: GETIMPORT R3 3 [0x7B998233]
       16 [-]: CALL R3 1 1  
 L 1:  17 [-]: JUMPIF R3 L12
-      18 [-]: GETIMPORT R5 8 [nil]
+      18 [-]: GETIMPORT R5 8 [0xEFF6E3AB]
       19 [-]: NAMECALL R3 R2 K6 [0xF2DEAF69]
       20 [-]: CALL R3 2 1  
       21 [-]: JUMPIFNOT R3 L12
       22 [-]: NAMECALL R4 R2 K9 [0x5E651723]
       23 [-]: CALL R4 1 1  
       24 [-]: FASTCALL1 62 R4 L2
-      25 [-]: GETIMPORT R3 3 [nil]
+      25 [-]: GETIMPORT R3 3 [0x7B998233]
       26 [-]: CALL R3 1 1  
 L 2:  27 [-]: JUMPIF R3 L12
       28 [-]: NAMECALL R3 R2 K10 [0xE4B9DB64]
       29 [-]: CALL R3 1 1  
       30 [-]: FASTCALL1 62 R3 L3
       31 [-]: MOVE R5 R3   
-      32 [-]: GETIMPORT R4 3 [nil]
+      32 [-]: GETIMPORT R4 3 [0x7B998233]
       33 [-]: CALL R4 1 1  
 L 3:  34 [-]: JUMPIF R4 L12
       35 [-]: NAMECALL R4 R1 K11 [0xE223E2B1]
       36 [-]: CALL R4 1 1  
-      37 [-]: GETIMPORT R5 13 [nil]
+      37 [-]: GETIMPORT R5 13 [0x3D106989]
       38 [-]: LOADK R7 K14 ["MawFishing OnDeath - "]
       39 [-]: MOVE R8 R4   
       40 [-]: LOADK R9 K15 [" killed by "]
@@ -2639,14 +2639,14 @@ L 3:  34 [-]: JUMPIF R4 L12
       45 [-]: CALL R10 2 1 
       46 [-]: CONCAT R6 R7 R10
       47 [-]: CALL R5 1 0  
-      48 [-]: GETIMPORT R6 19 [nil]
+      48 [-]: GETIMPORT R6 19 ["MAW_RegisterKill"]
       49 [-]: FASTCALL1 62 R6 L4
-      50 [-]: GETIMPORT R5 3 [nil]
+      50 [-]: GETIMPORT R5 3 [0x7B998233]
       51 [-]: CALL R5 1 1  
 L 4:  52 [-]: JUMPIF R5 L5 
-      53 [-]: GETIMPORT R5 19 [nil]
+      53 [-]: GETIMPORT R5 19 ["MAW_RegisterKill"]
       54 [-]: CALL R5 0 0  
-L 5:  55 [-]: GETIMPORT R5 21 [nil]
+L 5:  55 [-]: GETIMPORT R5 21 [0x89326C93]
       56 [-]: NAMECALL R5 R5 K22 [0x18D05D30]
       57 [-]: CALL R5 1 1  
       58 [-]: JUMPIFNOT R5 L12
@@ -2654,17 +2654,17 @@ L 5:  55 [-]: GETIMPORT R5 21 [nil]
       60 [-]: LOADN R7 17  
       61 [-]: LOADN R8 17  
       62 [-]: FASTCALL 45 L6
-      63 [-]: GETIMPORT R5 25 [nil]
+      63 [-]: GETIMPORT R5 25 [0x1A94C9CC]
       64 [-]: CALL R5 3 1  
 L 6:  65 [-]: FASTCALL1 43 R5 L7
       66 [-]: MOVE R7 R5   
-      67 [-]: GETIMPORT R6 27 [nil]
+      67 [-]: GETIMPORT R6 27 [0x41E2AE25]
       68 [-]: CALL R6 1 1  
 L 7:  69 [-]: JUMPXEQKN R6 K28 L10 NOT [1]
       70 [-]: GETUPVAL R8 0
       71 [-]: GETTABLE R7 R8 R5
       72 [-]: FASTCALL1 62 R7 L8
-      73 [-]: GETIMPORT R6 3 [nil]
+      73 [-]: GETIMPORT R6 3 [0x7B998233]
       74 [-]: CALL R6 1 1  
 L 8:  75 [-]: JUMPIFNOT R6 L9
       76 [-]: GETUPVAL R6 0
@@ -2679,7 +2679,7 @@ L 9:  80 [-]: GETUPVAL R6 0
       84 [-]: SETTABLE R7 R6 R5
       85 [-]: JUMP L11
     
-L10:  86 [-]: GETIMPORT R6 13 [nil]
+L10:  86 [-]: GETIMPORT R6 13 [0x3D106989]
       87 [-]: LOADK R7 K29 ["MawFishing OnDeath - ERROR: cannot process victim avatar's name"]
       88 [-]: CALL R6 1 0  
 L11:  89 [-]: NAMECALL R6 R3 K30 [0xB2B1738C]

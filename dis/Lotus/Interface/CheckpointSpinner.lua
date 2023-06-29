@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  5
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x2D0FAD09]
        2 [-]: LOADK R1 K2 ["Lotus.Interface.UIStyleUtilities"]
        3 [-]: CALL R0 1 1  
        4 [-]: LOADB R1 0   
@@ -42,8 +42,8 @@
 ; Is_vararg:       0
 ; Max Stack Size:  9
 
-       0 [-]: GETIMPORT R0 1 [nil]
-       1 [-]: GETIMPORT R1 3 [nil]
+       0 [-]: GETIMPORT R0 1 [0x25312C9B]
+       1 [-]: GETIMPORT R1 3 [0xAE91E43B]
        2 [-]: LOADK R2 K4 ["_root"]
        3 [-]: LOADN R3 0   
        4 [-]: NEWTABLE R4 0 1
@@ -69,15 +69,15 @@
        0 [-]: JUMPXEQKS R1 K0 L0 NOT ["LoopCheck"]
        1 [-]: GETUPVAL R2 0
        2 [-]: JUMPIF R2 L2 
-       3 [-]: GETIMPORT R2 2 [nil]
-       4 [-]: GETIMPORT R3 4 [nil]
+       3 [-]: GETIMPORT R2 2 [0x38F10E85]
+       4 [-]: GETIMPORT R3 4 [0xAE91E43B]
        5 [-]: LOADK R4 K5 ["Spinner.gotoAndPlay"]
        6 [-]: LOADN R5 1   
        7 [-]: CALL R2 3 0  
        8 [-]: RETURN R0 0  
 L 0:   9 [-]: JUMPXEQKS R1 K6 L1 NOT ["ShowLabel"]
-      10 [-]: GETIMPORT R2 8 [nil]
-      11 [-]: GETIMPORT R3 4 [nil]
+      10 [-]: GETIMPORT R2 8 [0x25312C9B]
+      11 [-]: GETIMPORT R3 4 [0xAE91E43B]
       12 [-]: LOADK R4 K9 ["SpinnerLabel"]
       13 [-]: LOADN R5 2   
       14 [-]: NEWTABLE R6 0 1
@@ -103,7 +103,7 @@ L 2:  27 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  8
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 [0x2D0FAD09]
        1 [-]: LOADK R1 K2 ["Lotus.Interface.Libs.TimerMgr"]
        2 [-]: CALL R0 1 1  
        3 [-]: GETTABLEKS R1 R0 K3 [0xDE474187]
@@ -115,7 +115,7 @@ L 2:  27 [-]: RETURN R0 0
        9 [-]: MOVE R2 R1   
       10 [-]: NAMECALL R1 R1 K4 [0xBD2E96EA]
       11 [-]: CALL R1 3 0  
-      12 [-]: GETIMPORT R1 6 [nil]
+      12 [-]: GETIMPORT R1 6 [0xAE91E43B]
       13 [-]: LOADB R3 1   
       14 [-]: NAMECALL R1 R1 K7 [0x78F32995]
       15 [-]: CALL R1 2 0  
@@ -129,42 +129,42 @@ L 2:  27 [-]: RETURN R0 0
       23 [-]: LOADN R3 10  
       24 [-]: LOADB R4 1   
       25 [-]: CALL R2 2 1  
-      26 [-]: GETIMPORT R3 6 [nil]
+      26 [-]: GETIMPORT R3 6 [0xAE91E43B]
       27 [-]: LOADK R5 K9 ["SpinnerLabel"]
       28 [-]: LOADN R6 10  
       29 [-]: LOADN R7 0   
       30 [-]: NAMECALL R3 R3 K10 [0x67BC869F]
       31 [-]: CALL R3 4 0  
-      32 [-]: GETIMPORT R3 6 [nil]
+      32 [-]: GETIMPORT R3 6 [0xAE91E43B]
       33 [-]: LOADK R5 K11 ["Spinner"]
       34 [-]: LOADN R6 9   
       35 [-]: MOVE R7 R2   
       36 [-]: NAMECALL R3 R3 K10 [0x67BC869F]
       37 [-]: CALL R3 4 0  
-      38 [-]: GETIMPORT R3 6 [nil]
+      38 [-]: GETIMPORT R3 6 [0xAE91E43B]
       39 [-]: LOADK R5 K12 ["Backer"]
       40 [-]: LOADN R6 9   
       41 [-]: MOVE R7 R1   
       42 [-]: NAMECALL R3 R3 K10 [0x67BC869F]
       43 [-]: CALL R3 4 0  
-      44 [-]: GETIMPORT R3 6 [nil]
+      44 [-]: GETIMPORT R3 6 [0xAE91E43B]
       45 [-]: LOADK R5 K13 ["SpinnerLabel.Label"]
       46 [-]: LOADN R6 36  
       47 [-]: MOVE R7 R2   
       48 [-]: NAMECALL R3 R3 K10 [0x67BC869F]
       49 [-]: CALL R3 4 0  
-      50 [-]: GETIMPORT R3 6 [nil]
+      50 [-]: GETIMPORT R3 6 [0xAE91E43B]
       51 [-]: LOADK R5 K14 ["SpinnerLabel.TextBacker"]
       52 [-]: LOADN R6 9   
       53 [-]: MOVE R7 R1   
       54 [-]: NAMECALL R3 R3 K10 [0x67BC869F]
       55 [-]: CALL R3 4 0  
-      56 [-]: GETIMPORT R3 6 [nil]
+      56 [-]: GETIMPORT R3 6 [0xAE91E43B]
       57 [-]: LOADK R5 K15 ["SpinnerLabel.Label.text"]
       58 [-]: LOADK R6 K16 ["/Lotus/Language/SystemMessages/ProgressSaved"]
       59 [-]: NAMECALL R3 R3 K17 [0x20B98DB3]
       60 [-]: CALL R3 3 0  
-      61 [-]: GETIMPORT R3 6 [nil]
+      61 [-]: GETIMPORT R3 6 [0xAE91E43B]
       62 [-]: LOADK R5 K11 ["Spinner"]
       63 [-]: LOADK R6 K18 ["OnFrameEnter"]
       64 [-]: NAMECALL R3 R3 K19 [0x5EE2CC30]
@@ -179,18 +179,18 @@ L 2:  27 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  3
 
-       0 [-]: GETIMPORT R0 1 [nil]
-       1 [-]: GETIMPORT R2 3 [nil]
+       0 [-]: GETIMPORT R0 1 [0xAE91E43B]
+       1 [-]: GETIMPORT R2 3 [0xB693B6C1]
        2 [-]: CALL R2 0 -1 
        3 [-]: NAMECALL R0 R0 K4 [0x8A8C8D5A]
        4 [-]: CALL R0 -1 0 
        5 [-]: GETUPVAL R1 0
        6 [-]: FASTCALL1 62 R1 L0
-       7 [-]: GETIMPORT R0 6 [nil]
+       7 [-]: GETIMPORT R0 6 [0x7B998233]
        8 [-]: CALL R0 1 1  
 L 0:   9 [-]: JUMPIF R0 L1 
       10 [-]: GETUPVAL R0 0
-      11 [-]: GETIMPORT R2 3 [nil]
+      11 [-]: GETIMPORT R2 3 [0xB693B6C1]
       12 [-]: CALL R2 0 -1 
       13 [-]: NAMECALL R0 R0 K7 [0xFAA69527]
       14 [-]: CALL R0 -1 0 
@@ -206,7 +206,7 @@ L 1:  15 [-]: RETURN R0 0
 
        0 [-]: GETUPVAL R1 0
        1 [-]: FASTCALL1 62 R1 L0
-       2 [-]: GETIMPORT R0 1 [nil]
+       2 [-]: GETIMPORT R0 1 [0x7B998233]
        3 [-]: CALL R0 1 1  
 L 0:   4 [-]: JUMPIF R0 L1 
        5 [-]: GETUPVAL R0 0

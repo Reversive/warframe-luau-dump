@@ -5,14 +5,14 @@
 ; Is_vararg:       1
 ; Max Stack Size:  5
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0xB009BBC6]
        2 [-]: LOADK R1 K2 ["/Lotus/Sounds/Dialog/WarWithinFinal/QueensLairC/DQueensLairC0120ElderQueen_en.wav"]
        3 [-]: CALL R0 1 1  
-       4 [-]: GETIMPORT R1 1 [nil]
+       4 [-]: GETIMPORT R1 1 [0xB009BBC6]
        5 [-]: LOADK R2 K3 ["/Lotus/Sounds/Dialog/WarWithinFinal/QueensLairC/DQueensLairC0088ElderQueen"]
        6 [-]: CALL R1 1 1  
-       7 [-]: GETIMPORT R2 5 [nil]
-       8 [-]: GETIMPORT R3 7 [nil]
+       7 [-]: GETIMPORT R2 5 [0xBE190284]
+       8 [-]: GETIMPORT R3 7 [0x2D0FAD09]
        9 [-]: LOADK R4 K8 ["Lotus.Interface.LotusUtilities"]
       10 [-]: CALL R3 1 1  
       11 [-]: DUPCLOSURE R4 K9 []
@@ -31,7 +31,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  15
 
-       0 [-]: GETIMPORT R1 1 [nil]
+       0 [-]: GETIMPORT R1 1 [0xCBD666E1]
        1 [-]: LOADN R2 0   
        2 [-]: CALL R1 1 0  
        3 [-]: LOADN R1 0   
@@ -40,39 +40,39 @@
        6 [-]: NAMECALL R3 R0 K3 [0x8FC72941]
        7 [-]: CALL R3 1 1  
        8 [-]: MOVE R4 R2   
-       9 [-]: GETIMPORT R6 5 [nil]
+       9 [-]: GETIMPORT R6 5 [0xF11DA321]
       10 [-]: MUL R5 R6 R3 
-      11 [-]: GETIMPORT R8 7 [nil]
+      11 [-]: GETIMPORT R8 7 [0xD14AC114]
       12 [-]: NAMECALL R6 R0 K8 [0xC9F6A7D7]
       13 [-]: CALL R6 2 1  
-      14 [-]: GETIMPORT R9 10 [nil]
+      14 [-]: GETIMPORT R9 10 [0x78A39459]
       15 [-]: NAMECALL R7 R0 K8 [0xC9F6A7D7]
       16 [-]: CALL R7 2 1  
-      17 [-]: GETIMPORT R10 12 [nil]
+      17 [-]: GETIMPORT R10 12 [0x5F11583A]
       18 [-]: NAMECALL R8 R0 K8 [0xC9F6A7D7]
       19 [-]: CALL R8 2 1  
-      20 [-]: GETIMPORT R10 15 [nil]
+      20 [-]: GETIMPORT R10 15 ["ActiveBraids"]
       21 [-]: FASTCALL1 62 R10 L0
-      22 [-]: GETIMPORT R9 17 [nil]
+      22 [-]: GETIMPORT R9 17 [0x7B998233]
       23 [-]: CALL R9 1 1  
 L 0:  24 [-]: JUMPIFNOT R9 L1
-      25 [-]: GETIMPORT R9 18 [nil]
+      25 [-]: GETIMPORT R9 18 ["_T"]
       26 [-]: LOADN R10 1  
       27 [-]: SETTABLEKS R10 R9 K14 ["ActiveBraids"]
       28 [-]: JUMP L2
      
-L 1:  29 [-]: GETIMPORT R9 18 [nil]
-      30 [-]: GETIMPORT R11 15 [nil]
+L 1:  29 [-]: GETIMPORT R9 18 ["_T"]
+      30 [-]: GETIMPORT R11 15 ["ActiveBraids"]
       31 [-]: ADDK R10 R11 K19 [1]
       32 [-]: SETTABLEKS R10 R9 K14 ["ActiveBraids"]
 L 2:  33 [-]: FASTCALL1 62 R0 L3
       34 [-]: MOVE R10 R0  
-      35 [-]: GETIMPORT R9 17 [nil]
+      35 [-]: GETIMPORT R9 17 [0x7B998233]
       36 [-]: CALL R9 1 1  
 L 3:  37 [-]: JUMPIF R9 L10
       38 [-]: LOADN R9 0   
       39 [-]: JUMPIFNOTLT R9 R2 L10
-      40 [-]: GETIMPORT R9 21 [nil]
+      40 [-]: GETIMPORT R9 21 ["BraidsVulnerable"]
       41 [-]: JUMPIFNOT R9 L4
       42 [-]: LOADK R11 K22 ["Show"]
       43 [-]: NAMECALL R9 R0 K23 [0x8EB2112D]
@@ -83,7 +83,7 @@ L 3:  37 [-]: JUMPIF R9 L10
       48 [-]: CALL R9 1 0  
       49 [-]: NAMECALL R9 R7 K25 [0x383D2E7D]
       50 [-]: CALL R9 1 0  
-      51 [-]: GETIMPORT R11 27 [nil]
+      51 [-]: GETIMPORT R11 27 [0x0469F296]
       52 [-]: LOADK R12 K28 ["UnlitAtten"]
       53 [-]: CALL R11 1 1 
       54 [-]: DIV R13 R2 R3
@@ -101,7 +101,7 @@ L 4:  59 [-]: LOADK R11 K31 ["Hide"]
       65 [-]: CALL R9 1 0  
       66 [-]: NAMECALL R9 R7 K33 [0xF4E253B6]
       67 [-]: CALL R9 1 0  
-      68 [-]: GETIMPORT R11 27 [nil]
+      68 [-]: GETIMPORT R11 27 [0x0469F296]
       69 [-]: LOADK R12 K28 ["UnlitAtten"]
       70 [-]: CALL R11 1 1 
       71 [-]: LOADN R12 0  
@@ -111,16 +111,16 @@ L 5:  74 [-]: NAMECALL R9 R0 K2 [0xD2715720]
       75 [-]: CALL R9 1 1  
       76 [-]: MOVE R2 R9   
       77 [-]: JUMPIFNOTLT R2 R4 L6
-      78 [-]: GETIMPORT R9 35 [nil]
+      78 [-]: GETIMPORT R9 35 [0x55156FF7]
       79 [-]: CALL R9 0 1  
       80 [-]: MOVE R1 R9   
 L 6:  81 [-]: JUMPIFNOTLT R2 R3 L7
-      82 [-]: GETIMPORT R10 37 [nil]
+      82 [-]: GETIMPORT R10 37 [0xBF21B56F]
       83 [-]: ADD R9 R1 R10
-      84 [-]: GETIMPORT R10 35 [nil]
+      84 [-]: GETIMPORT R10 35 [0x55156FF7]
       85 [-]: CALL R10 0 1 
       86 [-]: JUMPIFNOTLT R9 R10 L7
-      87 [-]: GETIMPORT R10 39 [nil]
+      87 [-]: GETIMPORT R10 39 [0x67652851]
       88 [-]: CALL R10 0 1 
       89 [-]: MUL R9 R5 R10
       90 [-]: ADD R2 R2 R9 
@@ -130,12 +130,12 @@ L 6:  81 [-]: JUMPIFNOTLT R2 R3 L7
       94 [-]: CALL R9 3 0  
 L 7:  95 [-]: FASTCALL1 62 R6 L8
       96 [-]: MOVE R10 R6  
-      97 [-]: GETIMPORT R9 17 [nil]
+      97 [-]: GETIMPORT R9 17 [0x7B998233]
       98 [-]: CALL R9 1 1  
 L 8:  99 [-]: JUMPIF R9 L9 
-     100 [-]: GETIMPORT R9 21 [nil]
+     100 [-]: GETIMPORT R9 21 ["BraidsVulnerable"]
      101 [-]: JUMPIFNOT R9 L9
-     102 [-]: GETIMPORT R11 27 [nil]
+     102 [-]: GETIMPORT R11 27 [0x0469F296]
      103 [-]: LOADK R12 K28 ["UnlitAtten"]
      104 [-]: CALL R11 1 1 
      105 [-]: DIV R12 R2 R3
@@ -144,21 +144,21 @@ L 8:  99 [-]: JUMPIF R9 L9
 L 9: 108 [-]: NAMECALL R9 R0 K2 [0xD2715720]
      109 [-]: CALL R9 1 1  
      110 [-]: MOVE R4 R9   
-     111 [-]: GETIMPORT R9 1 [nil]
+     111 [-]: GETIMPORT R9 1 [0xCBD666E1]
      112 [-]: LOADN R10 0  
      113 [-]: CALL R9 1 0  
      114 [-]: JUMPBACK L2  
-L10: 115 [-]: GETIMPORT R9 18 [nil]
-     116 [-]: GETIMPORT R11 15 [nil]
+L10: 115 [-]: GETIMPORT R9 18 ["_T"]
+     116 [-]: GETIMPORT R11 15 ["ActiveBraids"]
      117 [-]: SUBK R10 R11 K19 [1]
      118 [-]: SETTABLEKS R10 R9 K14 ["ActiveBraids"]
-     119 [-]: GETIMPORT R9 42 [nil]
-     120 [-]: GETIMPORT R11 27 [nil]
+     119 [-]: GETIMPORT R9 42 [0x89326C93]
+     120 [-]: GETIMPORT R11 27 [0x0469F296]
      121 [-]: LOADK R12 K43 ["ElderQueen"]
      122 [-]: CALL R11 1 -1
      123 [-]: NAMECALL R9 R9 K44 [0x46A0EBF5]
      124 [-]: CALL R9 -1 1 
-     125 [-]: GETIMPORT R10 15 [nil]
+     125 [-]: GETIMPORT R10 15 ["ActiveBraids"]
      126 [-]: JUMPXEQKN R10 K45 L11 NOT [3]
      127 [-]: GETUPVAL R11 0
      128 [-]: GETTABLEKS R10 R11 K46 [0xB5C6BBAF]
@@ -171,12 +171,12 @@ L10: 115 [-]: GETIMPORT R9 18 [nil]
      135 [-]: CALL R10 4 0 
      136 [-]: JUMP L14
     
-L11: 137 [-]: GETIMPORT R11 49 [nil]
+L11: 137 [-]: GETIMPORT R11 49 ["QueenSound"]
      138 [-]: FASTCALL1 62 R11 L12
-     139 [-]: GETIMPORT R10 17 [nil]
+     139 [-]: GETIMPORT R10 17 [0x7B998233]
      140 [-]: CALL R10 1 1 
 L12: 141 [-]: JUMPIF R10 L13
-     142 [-]: GETIMPORT R10 49 [nil]
+     142 [-]: GETIMPORT R10 49 ["QueenSound"]
      143 [-]: LOADB R12 1  
      144 [-]: NAMECALL R10 R10 K50 [0x6CF1E476]
      145 [-]: CALL R10 2 0 

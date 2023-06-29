@@ -5,9 +5,9 @@
 ; Is_vararg:       1
 ; Max Stack Size:  3
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0xAEABECDA]
        2 [-]: GETVARARGS R1 1
-       3 [-]: GETIMPORT R2 4 [nil]
+       3 [-]: GETIMPORT R2 4 ["seeall"]
        4 [-]: CALL R0 2 0  
        5 [-]: DUPCLOSURE R0 K5 []
        6 [-]: DUPCLOSURE R1 K6 []
@@ -34,7 +34,7 @@
        2 [-]: RETURN R1 1  
 L 0:   3 [-]: NAMECALL R1 R0 K0 [0x6BFEAC2E]
        4 [-]: CALL R1 1 0  
-L 1:   5 [-]: GETIMPORT R1 2 [nil]
+L 1:   5 [-]: GETIMPORT R1 2 [0xCBD666E1]
        6 [-]: LOADN R2 0   
        7 [-]: CALL R1 1 0  
        8 [-]: NAMECALL R1 R0 K3 [0xDEFDEF64]
@@ -101,7 +101,7 @@ L 0:  10 [-]: GETTABLEN R2 R1 1
        8 [-]: JUMPXEQKN R3 K2 L0 NOT [0]
        9 [-]: LOADNIL R3   
       10 [-]: RETURN R3 1  
-L 0:  11 [-]: GETIMPORT R3 4 [nil]
+L 0:  11 [-]: GETIMPORT R3 4 [0x55730E1A]
       12 [-]: LOADN R4 1   
       13 [-]: LENGTH R5 R2 
       14 [-]: CALL R3 2 1  

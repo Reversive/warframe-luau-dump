@@ -5,10 +5,10 @@
 ; Is_vararg:       1
 ; Max Stack Size:  15
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x2D0FAD09]
        2 [-]: LOADK R1 K2 ["EE.Interface.Utilities"]
        3 [-]: CALL R0 1 1  
-       4 [-]: GETIMPORT R1 1 [nil]
+       4 [-]: GETIMPORT R1 1 [0x2D0FAD09]
        5 [-]: LOADK R2 K3 ["Lotus.Interface.UIStyleUtilities"]
        6 [-]: CALL R1 1 1  
        7 [-]: LOADB R2 1   
@@ -18,11 +18,11 @@
       11 [-]: LOADN R4 0   
       12 [-]: SETTABLEKS R4 R3 K5 ["y"]
       13 [-]: NEWTABLE R4 0 0
-      14 [-]: GETIMPORT R5 8 [nil]
+      14 [-]: GETIMPORT R5 8 [0x78CA68A2]
       15 [-]: LOADN R6 0   
       16 [-]: LOADK R7 K9 [0.14999999999999999]
       17 [-]: CALL R5 2 1  
-      18 [-]: GETIMPORT R6 8 [nil]
+      18 [-]: GETIMPORT R6 8 [0x78CA68A2]
       19 [-]: LOADN R7 0   
       20 [-]: LOADK R8 K9 [0.14999999999999999]
       21 [-]: CALL R6 2 1  
@@ -90,26 +90,26 @@
 
        0 [-]: GETUPVAL R1 0
        1 [-]: GETTABLEKS R0 R1 K0 [0x44537ADF]
-       2 [-]: GETIMPORT R1 2 [nil]
+       2 [-]: GETIMPORT R1 2 [0xAE91E43B]
        3 [-]: CALL R0 1 2  
-       4 [-]: GETIMPORT R2 2 [nil]
+       4 [-]: GETIMPORT R2 2 [0xAE91E43B]
        5 [-]: NAMECALL R2 R2 K3 [0x091C120E]
        6 [-]: CALL R2 1 1  
-       7 [-]: GETIMPORT R3 2 [nil]
+       7 [-]: GETIMPORT R3 2 [0xAE91E43B]
        8 [-]: NAMECALL R3 R3 K4 [0x2CC9D281]
        9 [-]: CALL R3 1 1  
       10 [-]: MULK R4 R2 K5 [0.5]
       11 [-]: MULK R5 R3 K5 [0.5]
-      12 [-]: GETIMPORT R6 7 [nil]
+      12 [-]: GETIMPORT R6 7 [0xC8802016]
       13 [-]: GETUPVAL R7 1
       14 [-]: CALL R6 1 3  
       15 [-]: FORGPREP_INEXT R6 L8
 L 0:  16 [-]: GETTABLEKS R12 R10 K8 ["Texture"]
       17 [-]: FASTCALL1 62 R12 L1
-      18 [-]: GETIMPORT R11 10 [nil]
+      18 [-]: GETIMPORT R11 10 [0x7B998233]
       19 [-]: CALL R11 1 1 
 L 1:  20 [-]: JUMPIF R11 L2
-      21 [-]: GETIMPORT R11 2 [nil]
+      21 [-]: GETIMPORT R11 2 [0xAE91E43B]
       22 [-]: GETTABLEKS R13 R10 K11 ["ClipName"]
       23 [-]: GETTABLEKS R14 R10 K8 ["Texture"]
       24 [-]: NAMECALL R11 R11 K12 [0x1CB415C1]
@@ -118,14 +118,14 @@ L 2:  26 [-]: GETTABLEKS R11 R10 K13 ["Scale"]
       27 [-]: JUMPXEQKNIL R11 L5
       28 [-]: GETTABLEKS R11 R10 K14 ["KeepProportions"]
       29 [-]: JUMPIFNOT R11 L3
-      30 [-]: GETIMPORT R11 2 [nil]
+      30 [-]: GETIMPORT R11 2 [0xAE91E43B]
       31 [-]: GETTABLEKS R13 R10 K11 ["ClipName"]
       32 [-]: LOADN R14 5  
       33 [-]: GETTABLEKS R16 R10 K13 ["Scale"]
       34 [-]: MULK R15 R16 K15 [100]
       35 [-]: NAMECALL R11 R11 K16 [0x67BC869F]
       36 [-]: CALL R11 4 0 
-      37 [-]: GETIMPORT R11 2 [nil]
+      37 [-]: GETIMPORT R11 2 [0xAE91E43B]
       38 [-]: GETTABLEKS R13 R10 K11 ["ClipName"]
       39 [-]: LOADN R14 6  
       40 [-]: GETTABLEKS R16 R10 K13 ["Scale"]
@@ -134,21 +134,21 @@ L 2:  26 [-]: GETTABLEKS R11 R10 K13 ["Scale"]
       43 [-]: CALL R11 4 0 
       44 [-]: JUMP L4
      
-L 3:  45 [-]: GETIMPORT R11 2 [nil]
+L 3:  45 [-]: GETIMPORT R11 2 [0xAE91E43B]
       46 [-]: GETTABLEKS R13 R10 K11 ["ClipName"]
       47 [-]: LOADN R14 12 
       48 [-]: GETTABLEKS R16 R10 K13 ["Scale"]
       49 [-]: MUL R15 R16 R2
       50 [-]: NAMECALL R11 R11 K16 [0x67BC869F]
       51 [-]: CALL R11 4 0 
-      52 [-]: GETIMPORT R11 2 [nil]
+      52 [-]: GETIMPORT R11 2 [0xAE91E43B]
       53 [-]: GETTABLEKS R13 R10 K11 ["ClipName"]
       54 [-]: LOADN R14 13 
       55 [-]: GETTABLEKS R16 R10 K13 ["Scale"]
       56 [-]: MUL R15 R16 R3
       57 [-]: NAMECALL R11 R11 K16 [0x67BC869F]
       58 [-]: CALL R11 4 0 
-L 4:  59 [-]: GETIMPORT R11 2 [nil]
+L 4:  59 [-]: GETIMPORT R11 2 [0xAE91E43B]
       60 [-]: GETTABLEKS R13 R10 K11 ["ClipName"]
       61 [-]: LOADN R14 4  
       62 [-]: LOADN R16 -1000
@@ -163,19 +163,19 @@ L 4:  59 [-]: GETIMPORT R11 2 [nil]
       71 [-]: CALL R11 4 0 
       72 [-]: JUMP L6
      
-L 5:  73 [-]: GETIMPORT R11 2 [nil]
+L 5:  73 [-]: GETIMPORT R11 2 [0xAE91E43B]
       74 [-]: GETTABLEKS R13 R10 K11 ["ClipName"]
       75 [-]: LOADN R14 0  
       76 [-]: LOADN R15 0  
       77 [-]: NAMECALL R11 R11 K16 [0x67BC869F]
       78 [-]: CALL R11 4 0 
-      79 [-]: GETIMPORT R11 2 [nil]
+      79 [-]: GETIMPORT R11 2 [0xAE91E43B]
       80 [-]: GETTABLEKS R13 R10 K11 ["ClipName"]
       81 [-]: LOADN R14 1  
       82 [-]: LOADN R15 0  
       83 [-]: NAMECALL R11 R11 K16 [0x67BC869F]
       84 [-]: CALL R11 4 0 
-L 6:  85 [-]: GETIMPORT R11 2 [nil]
+L 6:  85 [-]: GETIMPORT R11 2 [0xAE91E43B]
       86 [-]: GETTABLEKS R13 R10 K11 ["ClipName"]
       87 [-]: LOADN R14 10 
       88 [-]: GETTABLEKS R15 R10 K18 ["Alpha"]
@@ -183,19 +183,19 @@ L 6:  85 [-]: GETIMPORT R11 2 [nil]
       90 [-]: CALL R11 4 0 
       91 [-]: GETTABLEKS R12 R10 K19 ["Material"]
       92 [-]: FASTCALL1 62 R12 L7
-      93 [-]: GETIMPORT R11 10 [nil]
+      93 [-]: GETIMPORT R11 10 [0x7B998233]
       94 [-]: CALL R11 1 1 
 L 7:  95 [-]: JUMPIF R11 L8
-      96 [-]: GETIMPORT R11 2 [nil]
+      96 [-]: GETIMPORT R11 2 [0xAE91E43B]
       97 [-]: GETTABLEKS R13 R10 K11 ["ClipName"]
       98 [-]: GETTABLEKS R14 R10 K19 ["Material"]
       99 [-]: NAMECALL R11 R11 K20 [0xD5181643]
      100 [-]: CALL R11 3 0 
 L 8: 101 [-]: FORGLOOP R6 L0 2 [inext]
-     102 [-]: GETIMPORT R6 2 [nil]
+     102 [-]: GETIMPORT R6 2 [0xAE91E43B]
      103 [-]: NAMECALL R6 R6 K21 [0x6B837788]
      104 [-]: CALL R6 1 1  
-     105 [-]: GETIMPORT R7 2 [nil]
+     105 [-]: GETIMPORT R7 2 [0xAE91E43B]
      106 [-]: NAMECALL R7 R7 K22 [0xAF9FDA9F]
      107 [-]: CALL R7 1 1  
      108 [-]: GETUPVAL R9 3
@@ -206,20 +206,20 @@ L 8: 101 [-]: FORGLOOP R6 L0 2 [inext]
      113 [-]: MOVE R12 R3  
      114 [-]: CALL R8 4 1  
      115 [-]: SETUPVAL R8 2
-     116 [-]: GETIMPORT R8 2 [nil]
+     116 [-]: GETIMPORT R8 2 [0xAE91E43B]
      117 [-]: LOADK R10 K24 ["ForegroundContainer.Foreground"]
      118 [-]: LOADN R11 5  
      119 [-]: GETUPVAL R13 2
      120 [-]: MULK R12 R13 K15 [100]
      121 [-]: NAMECALL R8 R8 K16 [0x67BC869F]
      122 [-]: CALL R8 4 0  
-     123 [-]: GETIMPORT R8 2 [nil]
+     123 [-]: GETIMPORT R8 2 [0xAE91E43B]
      124 [-]: LOADK R10 K25 ["_root"]
      125 [-]: LOADN R11 0  
      126 [-]: MOVE R12 R4  
      127 [-]: NAMECALL R8 R8 K16 [0x67BC869F]
      128 [-]: CALL R8 4 0  
-     129 [-]: GETIMPORT R8 2 [nil]
+     129 [-]: GETIMPORT R8 2 [0xAE91E43B]
      130 [-]: LOADK R10 K25 ["_root"]
      131 [-]: LOADN R11 1  
      132 [-]: MOVE R12 R5  
@@ -271,77 +271,77 @@ L 8: 101 [-]: FORGLOOP R6 L0 2 [inext]
       33 [-]: LOADN R9 9   
       34 [-]: LOADB R10 1  
       35 [-]: CALL R8 2 1  
-      36 [-]: GETIMPORT R9 3 [nil]
+      36 [-]: GETIMPORT R9 3 [0xAE91E43B]
       37 [-]: LOADK R11 K4 ["Stars"]
       38 [-]: LOADN R12 9  
       39 [-]: MOVE R13 R7  
       40 [-]: NAMECALL R9 R9 K5 [0x67BC869F]
       41 [-]: CALL R9 4 0  
-      42 [-]: GETIMPORT R9 3 [nil]
+      42 [-]: GETIMPORT R9 3 [0xAE91E43B]
       43 [-]: LOADK R11 K6 ["ForegroundContainer.Foreground.TopFlourish"]
       44 [-]: LOADN R12 9  
       45 [-]: MOVE R13 R8  
       46 [-]: NAMECALL R9 R9 K5 [0x67BC869F]
       47 [-]: CALL R9 4 0  
-      48 [-]: GETIMPORT R9 3 [nil]
+      48 [-]: GETIMPORT R9 3 [0xAE91E43B]
       49 [-]: LOADK R11 K7 ["ForegroundContainer.Foreground.BottomFlourish"]
       50 [-]: LOADN R12 9  
       51 [-]: MOVE R13 R8  
       52 [-]: NAMECALL R9 R9 K5 [0x67BC869F]
       53 [-]: CALL R9 4 0  
-      54 [-]: GETIMPORT R9 3 [nil]
+      54 [-]: GETIMPORT R9 3 [0xAE91E43B]
       55 [-]: LOADK R11 K8 ["ForegroundContainer.Foreground.LeftSideDeco"]
       56 [-]: LOADN R12 9  
       57 [-]: MOVE R13 R8  
       58 [-]: NAMECALL R9 R9 K5 [0x67BC869F]
       59 [-]: CALL R9 4 0  
-      60 [-]: GETIMPORT R9 3 [nil]
+      60 [-]: GETIMPORT R9 3 [0xAE91E43B]
       61 [-]: LOADK R11 K9 ["ForegroundContainer.Foreground.RightSideDeco"]
       62 [-]: LOADN R12 9  
       63 [-]: MOVE R13 R8  
       64 [-]: NAMECALL R9 R9 K5 [0x67BC869F]
       65 [-]: CALL R9 4 0  
-      66 [-]: GETIMPORT R9 3 [nil]
+      66 [-]: GETIMPORT R9 3 [0xAE91E43B]
       67 [-]: LOADK R11 K10 ["ForegroundContainer.Foreground.Egg"]
       68 [-]: LOADN R12 9  
       69 [-]: MOVE R13 R8  
       70 [-]: NAMECALL R9 R9 K5 [0x67BC869F]
       71 [-]: CALL R9 4 0  
-      72 [-]: GETIMPORT R9 3 [nil]
+      72 [-]: GETIMPORT R9 3 [0xAE91E43B]
       73 [-]: LOADK R11 K11 ["ForegroundContainer.Foreground.EggFill"]
       74 [-]: LOADN R12 9  
       75 [-]: MOVE R13 R6  
       76 [-]: NAMECALL R9 R9 K5 [0x67BC869F]
       77 [-]: CALL R9 4 0  
-      78 [-]: GETIMPORT R9 3 [nil]
+      78 [-]: GETIMPORT R9 3 [0xAE91E43B]
       79 [-]: LOADK R11 K12 ["ForegroundContainer.Foreground.EggLines"]
       80 [-]: LOADN R12 9  
       81 [-]: MOVE R13 R8  
       82 [-]: NAMECALL R9 R9 K5 [0x67BC869F]
       83 [-]: CALL R9 4 0  
-      84 [-]: GETIMPORT R9 3 [nil]
+      84 [-]: GETIMPORT R9 3 [0xAE91E43B]
       85 [-]: LOADK R11 K13 ["ForegroundContainer.Foreground.BackgroundDesign"]
       86 [-]: LOADN R12 9  
       87 [-]: MOVE R13 R6  
       88 [-]: NAMECALL R9 R9 K5 [0x67BC869F]
       89 [-]: CALL R9 4 0  
-      90 [-]: GETIMPORT R9 3 [nil]
+      90 [-]: GETIMPORT R9 3 [0xAE91E43B]
       91 [-]: LOADK R11 K10 ["ForegroundContainer.Foreground.Egg"]
-      92 [-]: GETIMPORT R12 15 [nil]
+      92 [-]: GETIMPORT R12 15 [0x793C66CE]
       93 [-]: NAMECALL R9 R9 K16 [0x1CB415C1]
       94 [-]: CALL R9 3 0  
-      95 [-]: GETIMPORT R9 3 [nil]
+      95 [-]: GETIMPORT R9 3 [0xAE91E43B]
       96 [-]: LOADK R11 K11 ["ForegroundContainer.Foreground.EggFill"]
-      97 [-]: GETIMPORT R12 18 [nil]
+      97 [-]: GETIMPORT R12 18 [0x926577D9]
       98 [-]: NAMECALL R9 R9 K16 [0x1CB415C1]
       99 [-]: CALL R9 3 0  
-     100 [-]: GETIMPORT R9 3 [nil]
+     100 [-]: GETIMPORT R9 3 [0xAE91E43B]
      101 [-]: LOADK R11 K12 ["ForegroundContainer.Foreground.EggLines"]
-     102 [-]: GETIMPORT R12 20 [nil]
-     103 [-]: GETIMPORT R13 22 [nil]
+     102 [-]: GETIMPORT R12 20 [0x2E31530D]
+     103 [-]: GETIMPORT R13 22 [0xF582FCBD]
      104 [-]: NAMECALL R9 R9 K23 [0xEF99134F]
      105 [-]: CALL R9 4 0  
-     106 [-]: GETIMPORT R9 3 [nil]
+     106 [-]: GETIMPORT R9 3 [0xAE91E43B]
      107 [-]: LOADK R11 K12 ["ForegroundContainer.Foreground.EggLines"]
      108 [-]: LOADK R12 K24 ["RipplesColor"]
      109 [-]: GETTABLEKS R14 R4 K26 ["red"]
@@ -353,7 +353,7 @@ L 8: 101 [-]: FORGLOOP R6 L0 2 [inext]
      115 [-]: LOADK R16 K29 [0.40000000000000002]
      116 [-]: NAMECALL R9 R9 K30 [0x91E13703]
      117 [-]: CALL R9 7 0  
-     118 [-]: GETIMPORT R9 3 [nil]
+     118 [-]: GETIMPORT R9 3 [0xAE91E43B]
      119 [-]: LOADK R11 K31 ["Clouds"]
      120 [-]: LOADK R12 K32 ["StartColor"]
      121 [-]: GETTABLEKS R14 R2 K26 ["red"]
@@ -365,7 +365,7 @@ L 8: 101 [-]: FORGLOOP R6 L0 2 [inext]
      127 [-]: LOADN R16 1  
      128 [-]: NAMECALL R9 R9 K30 [0x91E13703]
      129 [-]: CALL R9 7 0  
-     130 [-]: GETIMPORT R9 3 [nil]
+     130 [-]: GETIMPORT R9 3 [0xAE91E43B]
      131 [-]: LOADK R11 K31 ["Clouds"]
      132 [-]: LOADK R12 K33 ["EndColor"]
      133 [-]: GETTABLEKS R14 R2 K26 ["red"]
@@ -377,7 +377,7 @@ L 8: 101 [-]: FORGLOOP R6 L0 2 [inext]
      139 [-]: LOADN R16 1  
      140 [-]: NAMECALL R9 R9 K30 [0x91E13703]
      141 [-]: CALL R9 7 0  
-     142 [-]: GETIMPORT R9 3 [nil]
+     142 [-]: GETIMPORT R9 3 [0xAE91E43B]
      143 [-]: LOADK R11 K34 ["CloudsGreen"]
      144 [-]: LOADK R12 K32 ["StartColor"]
      145 [-]: GETTABLEKS R14 R5 K26 ["red"]
@@ -389,7 +389,7 @@ L 8: 101 [-]: FORGLOOP R6 L0 2 [inext]
      151 [-]: LOADN R16 1  
      152 [-]: NAMECALL R9 R9 K30 [0x91E13703]
      153 [-]: CALL R9 7 0  
-     154 [-]: GETIMPORT R9 3 [nil]
+     154 [-]: GETIMPORT R9 3 [0xAE91E43B]
      155 [-]: LOADK R11 K34 ["CloudsGreen"]
      156 [-]: LOADK R12 K33 ["EndColor"]
      157 [-]: GETTABLEKS R14 R5 K26 ["red"]
@@ -401,7 +401,7 @@ L 8: 101 [-]: FORGLOOP R6 L0 2 [inext]
      163 [-]: LOADN R16 1  
      164 [-]: NAMECALL R9 R9 K30 [0x91E13703]
      165 [-]: CALL R9 7 0  
-     166 [-]: GETIMPORT R9 3 [nil]
+     166 [-]: GETIMPORT R9 3 [0xAE91E43B]
      167 [-]: LOADK R11 K35 ["Bg"]
      168 [-]: LOADK R12 K32 ["StartColor"]
      169 [-]: GETTABLEKS R14 R0 K26 ["red"]
@@ -413,7 +413,7 @@ L 8: 101 [-]: FORGLOOP R6 L0 2 [inext]
      175 [-]: LOADN R16 1  
      176 [-]: NAMECALL R9 R9 K30 [0x91E13703]
      177 [-]: CALL R9 7 0  
-     178 [-]: GETIMPORT R9 3 [nil]
+     178 [-]: GETIMPORT R9 3 [0xAE91E43B]
      179 [-]: LOADK R11 K35 ["Bg"]
      180 [-]: LOADK R12 K33 ["EndColor"]
      181 [-]: GETTABLEKS R14 R1 K26 ["red"]
@@ -425,7 +425,7 @@ L 8: 101 [-]: FORGLOOP R6 L0 2 [inext]
      187 [-]: LOADN R16 1  
      188 [-]: NAMECALL R9 R9 K30 [0x91E13703]
      189 [-]: CALL R9 7 0  
-     190 [-]: GETIMPORT R9 3 [nil]
+     190 [-]: GETIMPORT R9 3 [0xAE91E43B]
      191 [-]: LOADK R11 K36 ["Bg2"]
      192 [-]: LOADK R12 K32 ["StartColor"]
      193 [-]: GETTABLEKS R14 R0 K26 ["red"]
@@ -437,7 +437,7 @@ L 8: 101 [-]: FORGLOOP R6 L0 2 [inext]
      199 [-]: LOADN R16 1  
      200 [-]: NAMECALL R9 R9 K30 [0x91E13703]
      201 [-]: CALL R9 7 0  
-     202 [-]: GETIMPORT R9 3 [nil]
+     202 [-]: GETIMPORT R9 3 [0xAE91E43B]
      203 [-]: LOADK R11 K36 ["Bg2"]
      204 [-]: LOADK R12 K33 ["EndColor"]
      205 [-]: GETTABLEKS R14 R1 K26 ["red"]
@@ -449,7 +449,7 @@ L 8: 101 [-]: FORGLOOP R6 L0 2 [inext]
      211 [-]: LOADN R16 1  
      212 [-]: NAMECALL R9 R9 K30 [0x91E13703]
      213 [-]: CALL R9 7 0  
-     214 [-]: GETIMPORT R9 3 [nil]
+     214 [-]: GETIMPORT R9 3 [0xAE91E43B]
      215 [-]: LOADK R11 K36 ["Bg2"]
      216 [-]: LOADK R12 K37 ["PlasmaStrength_PlasmaTopAtten_PlasmaBottomAtten"]
      217 [-]: LOADK R13 K38 [0.01]
@@ -458,7 +458,7 @@ L 8: 101 [-]: FORGLOOP R6 L0 2 [inext]
      220 [-]: LOADN R16 0  
      221 [-]: NAMECALL R9 R9 K30 [0x91E13703]
      222 [-]: CALL R9 7 0  
-     223 [-]: GETIMPORT R9 3 [nil]
+     223 [-]: GETIMPORT R9 3 [0xAE91E43B]
      224 [-]: LOADK R11 K36 ["Bg2"]
      225 [-]: LOADK R12 K39 ["PlasmaSpeed_PlasmaTile"]
      226 [-]: LOADK R13 K40 [0.14999999999999999]
@@ -491,25 +491,25 @@ L 8: 101 [-]: FORGLOOP R6 L0 2 [inext]
 ; Is_vararg:       0
 ; Max Stack Size:  15
 
-       0 [-]: GETIMPORT R6 1 [nil]
+       0 [-]: GETIMPORT R6 1 [0xAE91E43B]
        1 [-]: FASTCALL1 62 R6 L0
-       2 [-]: GETIMPORT R5 3 [nil]
+       2 [-]: GETIMPORT R5 3 [0x7B998233]
        3 [-]: CALL R5 1 1  
 L 0:   4 [-]: JUMPIFNOT R5 L1
        5 [-]: RETURN R0 0  
 L 1:   6 [-]: NEWTABLE R5 0 6
-       7 [-]: GETIMPORT R6 5 [nil]
-       8 [-]: GETIMPORT R7 7 [nil]
-       9 [-]: GETIMPORT R8 9 [nil]
-      10 [-]: GETIMPORT R9 1 [nil]
+       7 [-]: GETIMPORT R6 5 [0x5250726F]
+       8 [-]: GETIMPORT R7 7 [0x3B3EEBE4]
+       9 [-]: GETIMPORT R8 9 [0xD8F5346C]
+      10 [-]: GETIMPORT R9 1 [0xAE91E43B]
       11 [-]: NAMECALL R9 R9 K10 [0x72C146B9]
       12 [-]: CALL R9 1 1  
-      13 [-]: GETIMPORT R10 12 [nil]
-      14 [-]: GETIMPORT R11 14 [nil]
+      13 [-]: GETIMPORT R10 12 [0xF582FCBD]
+      14 [-]: GETIMPORT R11 14 [0x4067A96E]
       15 [-]: SETLIST R5 R6 6 [1]
       16 [-]: GETUPVAL R7 0
       17 [-]: GETTABLEKS R6 R7 K15 [0xE7D4EFA0]
-      18 [-]: GETIMPORT R7 1 [nil]
+      18 [-]: GETIMPORT R7 1 [0xAE91E43B]
       19 [-]: MOVE R8 R0   
       20 [-]: MOVE R9 R1   
       21 [-]: MOVE R10 R2  
@@ -530,7 +530,7 @@ L 1:   6 [-]: NEWTABLE R5 0 6
 
        0 [-]: FASTCALL1 62 R1 L0
        1 [-]: MOVE R5 R1   
-       2 [-]: GETIMPORT R4 1 [nil]
+       2 [-]: GETIMPORT R4 1 [0x7B998233]
        3 [-]: CALL R4 1 1  
 L 0:   4 [-]: JUMPIFNOT R4 L1
        5 [-]: DUPTABLE R4 4
@@ -541,24 +541,24 @@ L 0:   4 [-]: JUMPIFNOT R4 L1
       10 [-]: MOVE R1 R4   
 L 1:  11 [-]: FASTCALL1 62 R2 L2
       12 [-]: MOVE R5 R2   
-      13 [-]: GETIMPORT R4 1 [nil]
+      13 [-]: GETIMPORT R4 1 [0x7B998233]
       14 [-]: CALL R4 1 1  
 L 2:  15 [-]: JUMPIFNOT R4 L3
       16 [-]: LOADB R2 0   
 L 3:  17 [-]: SETUPVAL R1 0
       18 [-]: SETUPVAL R2 1
-      19 [-]: GETIMPORT R4 6 [nil]
+      19 [-]: GETIMPORT R4 6 [0xC8802016]
       20 [-]: GETUPVAL R5 2
       21 [-]: CALL R4 1 3  
       22 [-]: FORGPREP_INEXT R4 L6
 L 4:  23 [-]: GETTABLEKS R9 R8 K7 ["Highlight"]
       24 [-]: JUMPIFNOT R9 L6
-      25 [-]: GETIMPORT R10 9 [nil]
+      25 [-]: GETIMPORT R10 9 [0xAE91E43B]
       26 [-]: FASTCALL1 62 R10 L5
-      27 [-]: GETIMPORT R9 1 [nil]
+      27 [-]: GETIMPORT R9 1 [0x7B998233]
       28 [-]: CALL R9 1 1  
 L 5:  29 [-]: JUMPIF R9 L6 
-      30 [-]: GETIMPORT R9 9 [nil]
+      30 [-]: GETIMPORT R9 9 [0xAE91E43B]
       31 [-]: GETTABLEKS R11 R8 K10 ["ClipName"]
       32 [-]: LOADN R12 11 
       33 [-]: GETUPVAL R13 1
@@ -611,13 +611,13 @@ L 6:  36 [-]: FORGLOOP R4 L4 2 [inext]
 ; Is_vararg:       0
 ; Max Stack Size:  6
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 ["_T"]
        1 [-]: GETUPVAL R1 0
        2 [-]: SETTABLEKS R1 R0 K2 ["ShowBackground"]
-       3 [-]: GETIMPORT R0 1 [nil]
+       3 [-]: GETIMPORT R0 1 ["_T"]
        4 [-]: GETUPVAL R1 1
        5 [-]: SETTABLEKS R1 R0 K3 ["HideBackground"]
-       6 [-]: GETIMPORT R0 1 [nil]
+       6 [-]: GETIMPORT R0 1 ["_T"]
        7 [-]: GETUPVAL R1 2
        8 [-]: SETTABLEKS R1 R0 K4 ["GetBackgroundInfo"]
        9 [-]: NEWTABLE R0 0 0
@@ -626,31 +626,31 @@ L 6:  36 [-]: FORGLOOP R4 L4 2 [inext]
       12 [-]: DUPTABLE R2 10
       13 [-]: LOADK R3 K11 ["Bg"]
       14 [-]: SETTABLEKS R3 R2 K5 ["ClipName"]
-      15 [-]: GETIMPORT R3 13 [nil]
+      15 [-]: GETIMPORT R3 13 [0x3FBD5638]
       16 [-]: SETTABLEKS R3 R2 K6 ["Texture"]
       17 [-]: LOADK R3 K14 [1.1000000000000001]
       18 [-]: SETTABLEKS R3 R2 K7 ["Scale"]
       19 [-]: LOADN R3 100 
       20 [-]: SETTABLEKS R3 R2 K8 ["Alpha"]
-      21 [-]: GETIMPORT R3 16 [nil]
+      21 [-]: GETIMPORT R3 16 [0x3B3EEBE4]
       22 [-]: SETTABLEKS R3 R2 K9 ["Material"]
       23 [-]: FASTCALL2 52 R1 R2 L0
-      24 [-]: GETIMPORT R0 19 [nil]
+      24 [-]: GETIMPORT R0 19 [0x23D5322F]
       25 [-]: CALL R0 2 0  
 L 0:  26 [-]: GETUPVAL R1 3
       27 [-]: DUPTABLE R2 10
       28 [-]: LOADK R3 K20 ["Bg2"]
       29 [-]: SETTABLEKS R3 R2 K5 ["ClipName"]
-      30 [-]: GETIMPORT R3 13 [nil]
+      30 [-]: GETIMPORT R3 13 [0x3FBD5638]
       31 [-]: SETTABLEKS R3 R2 K6 ["Texture"]
       32 [-]: LOADK R3 K14 [1.1000000000000001]
       33 [-]: SETTABLEKS R3 R2 K7 ["Scale"]
       34 [-]: LOADN R3 30  
       35 [-]: SETTABLEKS R3 R2 K8 ["Alpha"]
-      36 [-]: GETIMPORT R3 22 [nil]
+      36 [-]: GETIMPORT R3 22 [0xD8F5346C]
       37 [-]: SETTABLEKS R3 R2 K9 ["Material"]
       38 [-]: FASTCALL2 52 R1 R2 L1
-      39 [-]: GETIMPORT R0 19 [nil]
+      39 [-]: GETIMPORT R0 19 [0x23D5322F]
       40 [-]: CALL R0 2 0  
 L 1:  41 [-]: GETUPVAL R1 3
       42 [-]: DUPTABLE R2 24
@@ -662,10 +662,10 @@ L 1:  41 [-]: GETUPVAL R1 3
       48 [-]: SETTABLEKS R3 R2 K8 ["Alpha"]
       49 [-]: LOADB R3 1   
       50 [-]: SETTABLEKS R3 R2 K23 ["KeepProportions"]
-      51 [-]: GETIMPORT R3 27 [nil]
+      51 [-]: GETIMPORT R3 27 [0x4067A96E]
       52 [-]: SETTABLEKS R3 R2 K9 ["Material"]
       53 [-]: FASTCALL2 52 R1 R2 L2
-      54 [-]: GETIMPORT R0 19 [nil]
+      54 [-]: GETIMPORT R0 19 [0x23D5322F]
       55 [-]: CALL R0 2 0  
 L 2:  56 [-]: GETUPVAL R1 3
       57 [-]: DUPTABLE R2 24
@@ -677,10 +677,10 @@ L 2:  56 [-]: GETUPVAL R1 3
       63 [-]: SETTABLEKS R3 R2 K8 ["Alpha"]
       64 [-]: LOADB R3 1   
       65 [-]: SETTABLEKS R3 R2 K23 ["KeepProportions"]
-      66 [-]: GETIMPORT R3 27 [nil]
+      66 [-]: GETIMPORT R3 27 [0x4067A96E]
       67 [-]: SETTABLEKS R3 R2 K9 ["Material"]
       68 [-]: FASTCALL2 52 R1 R2 L3
-      69 [-]: GETIMPORT R0 19 [nil]
+      69 [-]: GETIMPORT R0 19 [0x23D5322F]
       70 [-]: CALL R0 2 0  
 L 3:  71 [-]: GETUPVAL R1 3
       72 [-]: DUPTABLE R2 29
@@ -691,7 +691,7 @@ L 3:  71 [-]: GETUPVAL R1 3
       77 [-]: LOADN R3 100 
       78 [-]: SETTABLEKS R3 R2 K8 ["Alpha"]
       79 [-]: FASTCALL2 52 R1 R2 L4
-      80 [-]: GETIMPORT R0 19 [nil]
+      80 [-]: GETIMPORT R0 19 [0x23D5322F]
       81 [-]: CALL R0 2 0  
 L 4:  82 [-]: GETUPVAL R1 3
       83 [-]: DUPTABLE R2 33
@@ -706,11 +706,11 @@ L 4:  82 [-]: GETUPVAL R1 3
       92 [-]: LOADB R3 1   
       93 [-]: SETTABLEKS R3 R2 K23 ["KeepProportions"]
       94 [-]: FASTCALL2 52 R1 R2 L5
-      95 [-]: GETIMPORT R0 19 [nil]
+      95 [-]: GETIMPORT R0 19 [0x23D5322F]
       96 [-]: CALL R0 2 0  
 L 5:  97 [-]: GETUPVAL R0 4
       98 [-]: CALL R0 0 0  
-      99 [-]: GETIMPORT R0 36 [nil]
+      99 [-]: GETIMPORT R0 36 ["BackgroundVisible"]
      100 [-]: JUMPIFNOT R0 L6
      101 [-]: GETUPVAL R0 0
      102 [-]: LOADK R1 K37 [0.5]
@@ -741,28 +741,28 @@ L 6: 113 [-]: GETUPVAL R0 5
 ; Is_vararg:       0
 ; Max Stack Size:  4
 
-       0 [-]: GETIMPORT R1 1 [nil]
+       0 [-]: GETIMPORT R1 1 [0xAE91E43B]
        1 [-]: FASTCALL1 62 R1 L0
-       2 [-]: GETIMPORT R0 3 [nil]
+       2 [-]: GETIMPORT R0 3 [0x7B998233]
        3 [-]: CALL R0 1 1  
 L 0:   4 [-]: JUMPIFNOT R0 L1
        5 [-]: RETURN R0 0  
-L 1:   6 [-]: GETIMPORT R0 1 [nil]
-       7 [-]: GETIMPORT R2 5 [nil]
+L 1:   6 [-]: GETIMPORT R0 1 [0xAE91E43B]
+       7 [-]: GETIMPORT R2 5 [0xB693B6C1]
        8 [-]: CALL R2 0 -1 
        9 [-]: NAMECALL R0 R0 K6 [0x8A8C8D5A]
       10 [-]: CALL R0 -1 0 
-      11 [-]: GETIMPORT R0 9 [nil]
+      11 [-]: GETIMPORT R0 9 ["BackgroundVisible"]
       12 [-]: JUMPIFNOT R0 L2
       13 [-]: GETUPVAL R1 0
       14 [-]: GETTABLEKS R0 R1 K10 [0x545EFC62]
-      15 [-]: GETIMPORT R1 1 [nil]
+      15 [-]: GETIMPORT R1 1 [0xAE91E43B]
       16 [-]: DUPTABLE R2 18
       17 [-]: GETUPVAL R3 1
       18 [-]: SETTABLEKS R3 R2 K11 ["SmoothCursorX"]
       19 [-]: GETUPVAL R3 2
       20 [-]: SETTABLEKS R3 R2 K12 ["SmoothCursorY"]
-      21 [-]: GETIMPORT R3 5 [nil]
+      21 [-]: GETIMPORT R3 5 [0xB693B6C1]
       22 [-]: CALL R3 0 1  
       23 [-]: SETTABLEKS R3 R2 K13 ["RDT"]
       24 [-]: GETUPVAL R3 3
@@ -776,7 +776,7 @@ L 1:   6 [-]: GETIMPORT R0 1 [nil]
       32 [-]: CALL R0 2 0  
       33 [-]: GETUPVAL R1 0
       34 [-]: GETTABLEKS R0 R1 K19 [0xDEF57362]
-      35 [-]: GETIMPORT R1 1 [nil]
+      35 [-]: GETIMPORT R1 1 [0xAE91E43B]
       36 [-]: GETUPVAL R2 4
       37 [-]: GETUPVAL R3 5
       38 [-]: CALL R0 3 0  
@@ -800,7 +800,7 @@ L 2:  39 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 [0xAE91E43B]
        1 [-]: NAMECALL R0 R0 K2 [0x32302B4A]
        2 [-]: CALL R0 1 0  
        3 [-]: RETURN R0 0  

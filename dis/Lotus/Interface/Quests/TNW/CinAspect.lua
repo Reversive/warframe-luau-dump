@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  7
 
-            1 [-]: LOADB R0 0   
+       1 [-]: LOADB R0 0   
        2 [-]: LOADN R1 1   
        3 [-]: LOADB R2 0   
        4 [-]: DUPCLOSURE R3 K0 []
@@ -42,7 +42,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 [0xAE91E43B]
        1 [-]: NAMECALL R0 R0 K2 [0x32302B4A]
        2 [-]: CALL R0 1 0  
        3 [-]: RETURN R0 0  
@@ -61,8 +61,8 @@
 L 0:   3 [-]: LOADB R2 0   
        4 [-]: SETUPVAL R2 0
        5 [-]: ORK R0 R0 K0 [1]
-       6 [-]: GETIMPORT R2 2 [nil]
-       7 [-]: GETIMPORT R3 4 [nil]
+       6 [-]: GETIMPORT R2 2 [0x25312C9B]
+       7 [-]: GETIMPORT R3 4 [0xAE91E43B]
        8 [-]: LOADK R4 K5 ["_root"]
        9 [-]: LOADN R5 8   
       10 [-]: NEWTABLE R6 0 1
@@ -75,8 +75,8 @@ L 0:   3 [-]: LOADB R2 0
       17 [-]: LOADN R9 0   
       18 [-]: MOVE R10 R1  
       19 [-]: CALL R2 8 0  
-      20 [-]: GETIMPORT R2 2 [nil]
-      21 [-]: GETIMPORT R3 4 [nil]
+      20 [-]: GETIMPORT R2 2 [0x25312C9B]
+      21 [-]: GETIMPORT R3 4 [0xAE91E43B]
       22 [-]: LOADK R4 K6 ["Top"]
       23 [-]: LOADN R5 0   
       24 [-]: NEWTABLE R6 0 1
@@ -87,8 +87,8 @@ L 0:   3 [-]: LOADB R2 0
       29 [-]: SETLIST R7 R8 1 [1]
       30 [-]: MOVE R8 R0   
       31 [-]: CALL R2 6 0  
-      32 [-]: GETIMPORT R2 2 [nil]
-      33 [-]: GETIMPORT R3 4 [nil]
+      32 [-]: GETIMPORT R2 2 [0x25312C9B]
+      33 [-]: GETIMPORT R3 4 [0xAE91E43B]
       34 [-]: LOADK R4 K7 ["Bottom"]
       35 [-]: LOADN R5 0   
       36 [-]: NEWTABLE R6 0 1
@@ -117,8 +117,8 @@ L 0:   4 [-]: RETURN R0 0
 L 1:   5 [-]: LOADB R2 1   
        6 [-]: SETUPVAL R2 0
        7 [-]: ORK R0 R0 K0 [1]
-       8 [-]: GETIMPORT R2 2 [nil]
-       9 [-]: GETIMPORT R3 4 [nil]
+       8 [-]: GETIMPORT R2 2 [0x25312C9B]
+       9 [-]: GETIMPORT R3 4 [0xAE91E43B]
       10 [-]: LOADK R4 K5 ["_root"]
       11 [-]: LOADN R5 8   
       12 [-]: NEWTABLE R6 0 1
@@ -131,8 +131,8 @@ L 1:   5 [-]: LOADB R2 1
       19 [-]: LOADN R9 0   
       20 [-]: MOVE R10 R1  
       21 [-]: CALL R2 8 0  
-      22 [-]: GETIMPORT R2 2 [nil]
-      23 [-]: GETIMPORT R3 4 [nil]
+      22 [-]: GETIMPORT R2 2 [0x25312C9B]
+      23 [-]: GETIMPORT R3 4 [0xAE91E43B]
       24 [-]: LOADK R4 K6 ["Top"]
       25 [-]: LOADN R5 0   
       26 [-]: NEWTABLE R6 0 1
@@ -145,8 +145,8 @@ L 1:   5 [-]: LOADB R2 1
       33 [-]: SETLIST R7 R8 1 [1]
       34 [-]: MOVE R8 R0   
       35 [-]: CALL R2 6 0  
-      36 [-]: GETIMPORT R2 2 [nil]
-      37 [-]: GETIMPORT R3 4 [nil]
+      36 [-]: GETIMPORT R2 2 [0x25312C9B]
+      37 [-]: GETIMPORT R3 4 [0xAE91E43B]
       38 [-]: LOADK R4 K7 ["Bottom"]
       39 [-]: LOADN R5 0   
       40 [-]: NEWTABLE R6 0 1
@@ -169,7 +169,7 @@ L 1:   5 [-]: LOADB R2 1
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 ["_T"]
        1 [-]: LOADNIL R1   
        2 [-]: SETTABLEKS R1 R0 K2 ["HideCinAspectBars"]
        3 [-]: RETURN R0 0  
@@ -182,13 +182,13 @@ L 1:   5 [-]: LOADB R2 1
 ; Is_vararg:       0
 ; Max Stack Size:  5
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 [0xAE91E43B]
        1 [-]: LOADK R2 K2 ["Top"]
        2 [-]: LOADN R3 6   
        3 [-]: LOADN R4 0   
        4 [-]: NAMECALL R0 R0 K3 [0x67BC869F]
        5 [-]: CALL R0 4 0  
-       6 [-]: GETIMPORT R0 1 [nil]
+       6 [-]: GETIMPORT R0 1 [0xAE91E43B]
        7 [-]: LOADK R2 K4 ["Bottom"]
        8 [-]: LOADN R3 6   
        9 [-]: LOADN R4 0   
@@ -212,7 +212,7 @@ L 1:   5 [-]: LOADB R2 1
        3 [-]: JUMPIFNOTLT R6 R4 L0
        4 [-]: DIVK R6 R0 K1 [2.3333333333333335]
        5 [-]: SUB R7 R1 R6 
-       6 [-]: GETIMPORT R8 3 [nil]
+       6 [-]: GETIMPORT R8 3 [0x42DCC9F5]
        7 [-]: DIVK R9 R7 K4 [2]
        8 [-]: LOADN R10 0  
        9 [-]: LOADN R11 86 
@@ -232,36 +232,36 @@ L 0:  12 [-]: DIVK R6 R5 K5 [86]
 ; Is_vararg:       0
 ; Max Stack Size:  6
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 [0xB693B6C1]
        1 [-]: CALL R0 0 1  
-       2 [-]: GETIMPORT R1 3 [nil]
+       2 [-]: GETIMPORT R1 3 [0xAE91E43B]
        3 [-]: MOVE R3 R0   
        4 [-]: NAMECALL R1 R1 K4 [0x8A8C8D5A]
        5 [-]: CALL R1 2 0  
-       6 [-]: GETIMPORT R1 6 [nil]
+       6 [-]: GETIMPORT R1 6 [0x89326C93]
        7 [-]: NAMECALL R1 R1 K7 [0xDD25E9D1]
        8 [-]: CALL R1 1 1  
        9 [-]: FASTCALL1 62 R1 L0
       10 [-]: MOVE R3 R1   
-      11 [-]: GETIMPORT R2 9 [nil]
+      11 [-]: GETIMPORT R2 9 [0x7B998233]
       12 [-]: CALL R2 1 1  
 L 0:  13 [-]: JUMPIFNOT R2 L3
-      14 [-]: GETIMPORT R3 11 [nil]
+      14 [-]: GETIMPORT R3 11 [0x1211D00F]
       15 [-]: FASTCALL1 62 R3 L1
-      16 [-]: GETIMPORT R2 9 [nil]
+      16 [-]: GETIMPORT R2 9 [0x7B998233]
       17 [-]: CALL R2 1 1  
 L 1:  18 [-]: JUMPIF R2 L3 
-      19 [-]: GETIMPORT R2 11 [nil]
+      19 [-]: GETIMPORT R2 11 [0x1211D00F]
       20 [-]: NAMECALL R2 R2 K7 [0xDD25E9D1]
       21 [-]: CALL R2 1 1  
       22 [-]: MOVE R1 R2   
       23 [-]: FASTCALL1 62 R1 L2
       24 [-]: MOVE R3 R1   
-      25 [-]: GETIMPORT R2 9 [nil]
+      25 [-]: GETIMPORT R2 9 [0x7B998233]
       26 [-]: CALL R2 1 1  
 L 2:  27 [-]: JUMPIF R2 L3 
-      28 [-]: GETIMPORT R2 14 [nil]
-      29 [-]: GETIMPORT R3 16 [nil]
+      28 [-]: GETIMPORT R2 14 [0xA5C556B9]
+      29 [-]: GETIMPORT R3 16 [0x64FB1586]
       30 [-]: NAMECALL R4 R1 K17 [0x22DA1852]
       31 [-]: CALL R4 1 -1 
       32 [-]: CALL R3 -1 1 
@@ -271,7 +271,7 @@ L 2:  27 [-]: JUMPIF R2 L3
       36 [-]: LOADNIL R1   
 L 3:  37 [-]: FASTCALL1 62 R1 L4
       38 [-]: MOVE R3 R1   
-      39 [-]: GETIMPORT R2 9 [nil]
+      39 [-]: GETIMPORT R2 9 [0x7B998233]
       40 [-]: CALL R2 1 1  
 L 4:  41 [-]: JUMPIFNOT R2 L5
       42 [-]: GETUPVAL R2 0
@@ -284,7 +284,7 @@ L 4:  41 [-]: JUMPIFNOT R2 L5
       49 [-]: CALL R2 2 0  
       50 [-]: RETURN R0 0  
 L 5:  51 [-]: GETUPVAL R2 3
-      52 [-]: GETIMPORT R4 21 [nil]
+      52 [-]: GETIMPORT R4 21 ["HideCinAspectBars"]
       53 [-]: JUMPXEQKB R4 1 L6
       54 [-]: LOADB R3 0 +1
 L 6:  55 [-]: LOADB R3 1   

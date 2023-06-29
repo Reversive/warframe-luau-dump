@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  1
 
-            1 [-]: DUPCLOSURE R0 K0 []
+       1 [-]: DUPCLOSURE R0 K0 []
        2 [-]: SETGLOBAL R0 K1 ["OnTargetHit"]
        3 [-]: RETURN R0 0  
 
@@ -19,25 +19,25 @@
 
        0 [-]: FASTCALL1 62 R1 L0
        1 [-]: MOVE R4 R1   
-       2 [-]: GETIMPORT R3 1 [nil]
+       2 [-]: GETIMPORT R3 1 [0x7B998233]
        3 [-]: CALL R3 1 1  
 L 0:   4 [-]: JUMPIFNOT R3 L1
        5 [-]: RETURN R0 0  
-L 1:   6 [-]: GETIMPORT R4 4 [nil]
+L 1:   6 [-]: GETIMPORT R4 4 ["VesoMoas"]
        7 [-]: FASTCALL1 62 R4 L2
-       8 [-]: GETIMPORT R3 1 [nil]
+       8 [-]: GETIMPORT R3 1 [0x7B998233]
        9 [-]: CALL R3 1 1  
 L 2:  10 [-]: JUMPIF R3 L5 
       11 [-]: LOADN R5 1   
-      12 [-]: GETIMPORT R6 4 [nil]
+      12 [-]: GETIMPORT R6 4 ["VesoMoas"]
       13 [-]: LENGTH R3 R6 
       14 [-]: LOADN R4 1   
       15 [-]: FORNPREP R3 L5
-L 3:  16 [-]: GETIMPORT R8 4 [nil]
+L 3:  16 [-]: GETIMPORT R8 4 ["VesoMoas"]
       17 [-]: GETTABLE R7 R8 R5
       18 [-]: GETTABLEKS R6 R7 K5 ["avatar"]
       19 [-]: JUMPIFNOTEQ R1 R6 L4
-      20 [-]: GETIMPORT R6 8 [nil]
+      20 [-]: GETIMPORT R6 8 [0x35C16153]
       21 [-]: CALL R6 0 1  
       22 [-]: NAMECALL R8 R1 K10 [0xB40C191A]
       23 [-]: CALL R8 1 1  

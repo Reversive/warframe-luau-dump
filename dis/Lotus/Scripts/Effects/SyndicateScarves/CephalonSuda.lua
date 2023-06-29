@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  1
 
-            1 [-]: DUPCLOSURE R0 K0 []
+       1 [-]: DUPCLOSURE R0 K0 []
        2 [-]: SETGLOBAL R0 K1 ["MatchTagEvent"]
        3 [-]: RETURN R0 0  
 
@@ -19,7 +19,7 @@
 
        0 [-]: FASTCALL1 62 R0 L0
        1 [-]: MOVE R4 R0   
-       2 [-]: GETIMPORT R3 1 [nil]
+       2 [-]: GETIMPORT R3 1 [0x7B998233]
        3 [-]: CALL R3 1 1  
 L 0:   4 [-]: JUMPIFNOT R3 L1
        5 [-]: RETURN R0 0  
@@ -27,7 +27,7 @@ L 1:   6 [-]: NAMECALL R3 R0 K2 [0xBB610E5B]
        7 [-]: CALL R3 1 1  
        8 [-]: FASTCALL1 62 R3 L2
        9 [-]: MOVE R5 R3   
-      10 [-]: GETIMPORT R4 1 [nil]
+      10 [-]: GETIMPORT R4 1 [0x7B998233]
       11 [-]: CALL R4 1 1  
 L 2:  12 [-]: JUMPIFNOT R4 L3
       13 [-]: RETURN R0 0  
@@ -35,21 +35,21 @@ L 3:  14 [-]: NAMECALL R4 R3 K3 [0x5E651723]
       15 [-]: CALL R4 1 1  
       16 [-]: FASTCALL1 62 R4 L4
       17 [-]: MOVE R6 R4   
-      18 [-]: GETIMPORT R5 1 [nil]
+      18 [-]: GETIMPORT R5 1 [0x7B998233]
       19 [-]: CALL R5 1 1  
 L 4:  20 [-]: JUMPIFNOT R5 L5
       21 [-]: RETURN R0 0  
 L 5:  22 [-]: NAMECALL R5 R4 K4 [0x5CA33548]
       23 [-]: CALL R5 1 1  
-      24 [-]: GETIMPORT R6 7 [nil]
+      24 [-]: GETIMPORT R6 7 ["CephSudaEffects"]
       25 [-]: JUMPXEQKNIL R6 L6 NOT
-      26 [-]: GETIMPORT R6 8 [nil]
+      26 [-]: GETIMPORT R6 8 ["_T"]
       27 [-]: NEWTABLE R7 0 0
       28 [-]: SETTABLEKS R7 R6 K6 ["CephSudaEffects"]
-L 6:  29 [-]: GETIMPORT R7 7 [nil]
+L 6:  29 [-]: GETIMPORT R7 7 ["CephSudaEffects"]
       30 [-]: GETTABLE R6 R7 R5
       31 [-]: JUMPXEQKNIL R6 L7 NOT
-      32 [-]: GETIMPORT R6 7 [nil]
+      32 [-]: GETIMPORT R6 7 ["CephSudaEffects"]
       33 [-]: DUPTABLE R7 13
       34 [-]: LOADN R8 0   
       35 [-]: SETTABLEKS R8 R7 K9 ["Flash"]
@@ -60,13 +60,13 @@ L 6:  29 [-]: GETIMPORT R7 7 [nil]
       40 [-]: LOADN R8 0   
       41 [-]: SETTABLEKS R8 R7 K12 ["BloodTotal"]
       42 [-]: SETTABLE R7 R6 R5
-L 7:  43 [-]: GETIMPORT R7 7 [nil]
+L 7:  43 [-]: GETIMPORT R7 7 ["CephSudaEffects"]
       44 [-]: GETTABLE R6 R7 R5
       45 [-]: LOADN R7 10  
       46 [-]: SETTABLEKS R7 R6 K9 ["Flash"]
-      47 [-]: GETIMPORT R7 7 [nil]
+      47 [-]: GETIMPORT R7 7 ["CephSudaEffects"]
       48 [-]: GETTABLE R6 R7 R5
-      49 [-]: GETIMPORT R10 7 [nil]
+      49 [-]: GETIMPORT R10 7 ["CephSudaEffects"]
       50 [-]: GETTABLE R9 R10 R5
       51 [-]: GETTABLEKS R8 R9 K10 ["Total"]
       52 [-]: ADDK R7 R8 K14 [1]

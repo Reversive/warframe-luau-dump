@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  2
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x2D0FAD09]
        2 [-]: LOADK R1 K2 ["Lotus.Scripts.Libs.LandscapeLib"]
        3 [-]: CALL R0 1 1  
        4 [-]: DUPCLOSURE R1 K3 []
@@ -21,8 +21,8 @@
 ; Is_vararg:       0
 ; Max Stack Size:  14
 
-       0 [-]: GETIMPORT R0 1 [nil]
-       1 [-]: GETIMPORT R2 3 [nil]
+       0 [-]: GETIMPORT R0 1 [0x89326C93]
+       1 [-]: GETIMPORT R2 3 [0x9020E90F]
        2 [-]: NAMECALL R0 R0 K4 [0xC7FCADA9]
        3 [-]: CALL R0 2 1  
        4 [-]: LOADNIL R1   
@@ -30,16 +30,16 @@
        6 [-]: GETTABLEKS R2 R3 K5 [0xF0090084]
        7 [-]: CALL R2 0 1  
        8 [-]: JUMPIFNOT R2 L0
-       9 [-]: GETIMPORT R2 7 [nil]
-      10 [-]: GETIMPORT R3 9 [nil]
-      11 [-]: GETIMPORT R4 11 [nil]
+       9 [-]: GETIMPORT R2 7 [0x55730E1A]
+      10 [-]: GETIMPORT R3 9 [0x956D3B07]
+      11 [-]: GETIMPORT R4 11 [0x8380A669]
       12 [-]: CALL R2 2 1  
       13 [-]: MOVE R1 R2   
       14 [-]: JUMP L1
      
-L 0:  15 [-]: GETIMPORT R2 7 [nil]
-      16 [-]: GETIMPORT R3 13 [nil]
-      17 [-]: GETIMPORT R4 15 [nil]
+L 0:  15 [-]: GETIMPORT R2 7 [0x55730E1A]
+      16 [-]: GETIMPORT R3 13 [0x83FA54FB]
+      17 [-]: GETIMPORT R4 15 [0x79E52A85]
       18 [-]: CALL R2 2 1  
       19 [-]: MOVE R1 R2   
 L 1:  20 [-]: LENGTH R2 R0 
@@ -48,7 +48,7 @@ L 1:  20 [-]: LENGTH R2 R0
 L 2:  23 [-]: JUMPIFNOTLT R3 R1 L3
       24 [-]: LOADN R5 0   
       25 [-]: JUMPIFNOTLT R5 R2 L3
-      26 [-]: GETIMPORT R5 7 [nil]
+      26 [-]: GETIMPORT R5 7 [0x55730E1A]
       27 [-]: LOADN R6 1   
       28 [-]: MOVE R7 R2   
       29 [-]: CALL R5 2 1  
@@ -70,15 +70,15 @@ L 3:  44 [-]: LOADN R7 1
       45 [-]: MOVE R5 R3   
       46 [-]: LOADN R6 1   
       47 [-]: FORNPREP R5 L5
-L 4:  48 [-]: GETIMPORT R8 1 [nil]
-      49 [-]: GETIMPORT R10 23 [nil]
+L 4:  48 [-]: GETIMPORT R8 1 [0x89326C93]
+      49 [-]: GETIMPORT R10 23 [0x1CF90305]
       50 [-]: GETTABLE R12 R4 R7
       51 [-]: GETTABLEKS R11 R12 K17 ["pos"]
       52 [-]: GETTABLE R13 R4 R7
       53 [-]: GETTABLEKS R12 R13 K18 ["rot"]
       54 [-]: NAMECALL R8 R8 K24 [0x05909209]
       55 [-]: CALL R8 4 0  
-      56 [-]: GETIMPORT R8 26 [nil]
+      56 [-]: GETIMPORT R8 26 [0xCBD666E1]
       57 [-]: LOADN R9 0   
       58 [-]: CALL R8 1 0  
       59 [-]: FORNLOOP R5 L4

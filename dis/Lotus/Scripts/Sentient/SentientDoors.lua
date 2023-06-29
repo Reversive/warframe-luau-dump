@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  3
 
-            1 [-]: DUPCLOSURE R0 K0 []
+       1 [-]: DUPCLOSURE R0 K0 []
        2 [-]: DUPCLOSURE R1 K1 []
        3 [-]: DUPCLOSURE R2 K2 []
        4 [-]: MOVE R0 R0   
@@ -23,22 +23,22 @@
 ; Is_vararg:       0
 ; Max Stack Size:  16
 
-       0 [-]: GETIMPORT R2 1 [nil]
+       0 [-]: GETIMPORT R2 1 [0xC8802016]
        1 [-]: MOVE R3 R0   
        2 [-]: CALL R2 1 3  
        3 [-]: FORGPREP_INEXT R2 L5
 L 0:   4 [-]: FASTCALL1 62 R6 L1
        5 [-]: MOVE R8 R6   
-       6 [-]: GETIMPORT R7 3 [nil]
+       6 [-]: GETIMPORT R7 3 [0x7B998233]
        7 [-]: CALL R7 1 1  
 L 1:   8 [-]: JUMPIF R7 L5 
-       9 [-]: GETIMPORT R7 1 [nil]
+       9 [-]: GETIMPORT R7 1 [0xC8802016]
       10 [-]: MOVE R8 R1   
       11 [-]: CALL R7 1 3  
       12 [-]: FORGPREP_INEXT R7 L4
 L 2:  13 [-]: FASTCALL1 62 R11 L3
       14 [-]: MOVE R13 R11 
-      15 [-]: GETIMPORT R12 3 [nil]
+      15 [-]: GETIMPORT R12 3 [0x7B998233]
       16 [-]: CALL R12 1 1 
 L 3:  17 [-]: JUMPIF R12 L4
       18 [-]: SUBK R14 R10 K4 [1]
@@ -57,7 +57,7 @@ L 5:  23 [-]: FORGLOOP R2 L0 2 [inext]
 ; Is_vararg:       0
 ; Max Stack Size:  15
 
-       0 [-]: GETIMPORT R2 1 [nil]
+       0 [-]: GETIMPORT R2 1 [0xC8802016]
        1 [-]: MOVE R3 R0   
        2 [-]: CALL R2 1 3  
        3 [-]: FORGPREP_INEXT R2 L1
@@ -65,8 +65,8 @@ L 0:   4 [-]: MOVE R9 R1
        5 [-]: LOADB R10 0  
        6 [-]: LOADB R11 0  
        7 [-]: LOADN R12 0  
-       8 [-]: GETIMPORT R13 3 [nil]
-       9 [-]: GETIMPORT R14 5 [nil]
+       8 [-]: GETIMPORT R13 3 ["EMPTY_SYMBOL"]
+       9 [-]: GETIMPORT R14 5 [0xBEF61894]
       10 [-]: NAMECALL R7 R6 K6 [0x5D985C7E]
       11 [-]: CALL R7 7 0  
 L 1:  12 [-]: FORGLOOP R2 L0 2 [inext]
@@ -82,10 +82,10 @@ L 1:  12 [-]: FORGLOOP R2 L0 2 [inext]
 
        0 [-]: FASTCALL1 62 R0 L0
        1 [-]: MOVE R3 R0   
-       2 [-]: GETIMPORT R2 1 [nil]
+       2 [-]: GETIMPORT R2 1 [0x7B998233]
        3 [-]: CALL R2 1 1  
 L 0:   4 [-]: JUMPIF R2 L1 
-       5 [-]: GETIMPORT R4 3 [nil]
+       5 [-]: GETIMPORT R4 3 ["gNpcDoorHintType"]
        6 [-]: NAMECALL R2 R0 K4 [0xF2DEAF69]
        7 [-]: CALL R2 2 1  
        8 [-]: JUMPIF R2 L2 
@@ -99,12 +99,12 @@ L 2:  10 [-]: NAMECALL R2 R0 K5 [0xFAE9F648]
       16 [-]: JUMPIFEQ R1 R3 L21
       17 [-]: NAMECALL R3 R0 K6 [0xD1586535]
       18 [-]: CALL R3 1 1  
-      19 [-]: GETIMPORT R4 8 [nil]
+      19 [-]: GETIMPORT R4 8 [0x1CA0E88D]
       20 [-]: LOADN R5 0   
       21 [-]: JUMPIFNOTEQ R2 R5 L3
-      22 [-]: GETIMPORT R4 10 [nil]
-L 3:  23 [-]: GETIMPORT R5 12 [nil]
-      24 [-]: GETIMPORT R7 14 [nil]
+      22 [-]: GETIMPORT R4 10 [0x61CADB5B]
+L 3:  23 [-]: GETIMPORT R5 12 [0x89326C93]
+      24 [-]: GETIMPORT R7 14 [0x0469F296]
       25 [-]: LOADK R8 K15 ["SentientDoorFrame"]
       26 [-]: CALL R7 1 1  
       27 [-]: MOVE R8 R3   
@@ -122,7 +122,7 @@ L 3:  23 [-]: GETIMPORT R5 12 [nil]
       39 [-]: JUMPIFEQ R1 R6 L4
       40 [-]: GETUPVAL R6 1
       41 [-]: MOVE R7 R5   
-      42 [-]: GETIMPORT R8 18 [nil]
+      42 [-]: GETIMPORT R8 18 [0x2A50011A]
       43 [-]: CALL R6 2 0  
       44 [-]: JUMP L6
      
@@ -134,10 +134,10 @@ L 5:  49 [-]: LOADN R6 5
       50 [-]: JUMPIFNOTEQ R1 R6 L6
       51 [-]: GETUPVAL R6 1
       52 [-]: MOVE R7 R5   
-      53 [-]: GETIMPORT R8 20 [nil]
+      53 [-]: GETIMPORT R8 20 [0x62F4C7C0]
       54 [-]: CALL R6 2 0  
-L 6:  55 [-]: GETIMPORT R6 12 [nil]
-      56 [-]: GETIMPORT R8 14 [nil]
+L 6:  55 [-]: GETIMPORT R6 12 [0x89326C93]
+      56 [-]: GETIMPORT R8 14 [0x0469F296]
       57 [-]: LOADK R9 K21 ["DoorBlockingVolume"]
       58 [-]: CALL R8 1 1  
       59 [-]: MOVE R9 R3   
@@ -145,7 +145,7 @@ L 6:  55 [-]: GETIMPORT R6 12 [nil]
       61 [-]: LOADN R11 20 
       62 [-]: NAMECALL R6 R6 K16 [0xF16592C8]
       63 [-]: CALL R6 5 1  
-      64 [-]: GETIMPORT R7 23 [nil]
+      64 [-]: GETIMPORT R7 23 [0xC8802016]
       65 [-]: MOVE R8 R6   
       66 [-]: CALL R7 1 3  
       67 [-]: FORGPREP_INEXT R7 L9
@@ -163,8 +163,8 @@ L 9:  77 [-]: FORGLOOP R7 L7 2 [inext]
       78 [-]: LOADNIL R7   
       79 [-]: LOADN R8 0   
       80 [-]: JUMPIFNOTEQ R2 R8 L10
-      81 [-]: GETIMPORT R8 12 [nil]
-      82 [-]: GETIMPORT R10 14 [nil]
+      81 [-]: GETIMPORT R8 12 [0x89326C93]
+      82 [-]: GETIMPORT R10 14 [0x0469F296]
       83 [-]: LOADK R11 K27 ["DoorLock"]
       84 [-]: CALL R10 1 1 
       85 [-]: MOVE R11 R3  
@@ -175,8 +175,8 @@ L 9:  77 [-]: FORGLOOP R7 L7 2 [inext]
       90 [-]: MOVE R7 R8   
       91 [-]: JUMP L11
     
-L10:  92 [-]: GETIMPORT R8 12 [nil]
-      93 [-]: GETIMPORT R10 14 [nil]
+L10:  92 [-]: GETIMPORT R8 12 [0x89326C93]
+      93 [-]: GETIMPORT R10 14 [0x0469F296]
       94 [-]: LOADK R11 K28 ["DoorUnlock"]
       95 [-]: CALL R10 1 1 
       96 [-]: MOVE R11 R3  
@@ -185,7 +185,7 @@ L10:  92 [-]: GETIMPORT R8 12 [nil]
       99 [-]: NAMECALL R8 R8 K16 [0xF16592C8]
      100 [-]: CALL R8 5 1  
      101 [-]: MOVE R7 R8   
-L11: 102 [-]: GETIMPORT R8 23 [nil]
+L11: 102 [-]: GETIMPORT R8 23 [0xC8802016]
      103 [-]: MOVE R9 R7   
      104 [-]: CALL R8 1 3  
      105 [-]: FORGPREP_INEXT R8 L13
@@ -193,13 +193,13 @@ L12: 106 [-]: LOADK R15 K29 ["TriggerPort"]
      107 [-]: NAMECALL R13 R12 K25 [0x8EB2112D]
      108 [-]: CALL R13 2 0 
 L13: 109 [-]: FORGLOOP R8 L12 2 [inext]
-     110 [-]: GETIMPORT R8 23 [nil]
-     111 [-]: GETIMPORT R9 31 [nil]
+     110 [-]: GETIMPORT R8 23 [0xC8802016]
+     111 [-]: GETIMPORT R9 31 [0xD2FA59A9]
      112 [-]: CALL R8 1 3  
      113 [-]: FORGPREP_INEXT R8 L16
 L14: 114 [-]: FASTCALL1 62 R12 L15
      115 [-]: MOVE R14 R12 
-     116 [-]: GETIMPORT R13 1 [nil]
+     116 [-]: GETIMPORT R13 1 [0x7B998233]
      117 [-]: CALL R13 1 1 
 L15: 118 [-]: JUMPIF R13 L16
      119 [-]: LOADK R15 K32 ["PlayTriggeredFade"]
@@ -212,8 +212,8 @@ L16: 122 [-]: FORGLOOP R8 L14 2 [inext]
      126 [-]: LOADN R9 5   
      127 [-]: JUMPIFNOTEQ R2 R9 L18
 L17: 128 [-]: LOADB R8 0   
-L18: 129 [-]: GETIMPORT R9 23 [nil]
-     130 [-]: GETIMPORT R10 34 [nil]
+L18: 129 [-]: GETIMPORT R9 23 [0xC8802016]
+     130 [-]: GETIMPORT R10 34 [0x0C899A43]
      131 [-]: CALL R9 1 3  
      132 [-]: FORGPREP_INEXT R9 L20
 L19: 133 [-]: MOVE R16 R8  
@@ -230,18 +230,18 @@ L21: 137 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  15
 
-       0 [-]: GETIMPORT R0 1 [nil]
-       1 [-]: GETIMPORT R2 3 [nil]
+       0 [-]: GETIMPORT R0 1 [0x89326C93]
+       1 [-]: GETIMPORT R2 3 [0x0469F296]
        2 [-]: LOADK R3 K4 ["SentientDoorFrame"]
        3 [-]: CALL R2 1 -1 
        4 [-]: NAMECALL R0 R0 K5 [0xC7FCADA9]
        5 [-]: CALL R0 -1 1 
-       6 [-]: GETIMPORT R1 7 [nil]
+       6 [-]: GETIMPORT R1 7 [0xC8802016]
        7 [-]: MOVE R2 R0   
        8 [-]: CALL R1 1 3  
        9 [-]: FORGPREP_INEXT R1 L4
-L 0:  10 [-]: GETIMPORT R6 1 [nil]
-      11 [-]: GETIMPORT R8 9 [nil]
+L 0:  10 [-]: GETIMPORT R6 1 [0x89326C93]
+      11 [-]: GETIMPORT R8 9 ["gNpcDoorHintType"]
       12 [-]: NAMECALL R9 R5 K10 [0xD1586535]
       13 [-]: CALL R9 1 1  
       14 [-]: LOADN R10 12 
@@ -249,17 +249,17 @@ L 0:  10 [-]: GETIMPORT R6 1 [nil]
       16 [-]: CALL R6 4 1  
       17 [-]: FASTCALL1 62 R6 L1
       18 [-]: MOVE R8 R6   
-      19 [-]: GETIMPORT R7 13 [nil]
+      19 [-]: GETIMPORT R7 13 [0x7B998233]
       20 [-]: CALL R7 1 1  
 L 1:  21 [-]: JUMPIFNOT R7 L4
-      22 [-]: GETIMPORT R9 16 [nil]
+      22 [-]: GETIMPORT R9 16 ["EMISSIVE_MAP_ATTEN"]
       23 [-]: LOADN R10 0  
       24 [-]: NAMECALL R7 R5 K17 [0x986D2AB8]
       25 [-]: CALL R7 3 0  
-      26 [-]: GETIMPORT R9 19 [nil]
+      26 [-]: GETIMPORT R9 19 ["gLotusEffectDecorationType"]
       27 [-]: NAMECALL R7 R5 K20 [0xC1595BD5]
       28 [-]: CALL R7 2 1  
-      29 [-]: GETIMPORT R8 7 [nil]
+      29 [-]: GETIMPORT R8 7 [0xC8802016]
       30 [-]: MOVE R9 R7   
       31 [-]: CALL R8 1 3  
       32 [-]: FORGPREP_INEXT R8 L3

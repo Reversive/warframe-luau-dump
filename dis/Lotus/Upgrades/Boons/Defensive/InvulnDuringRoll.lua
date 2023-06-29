@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  1
 
-            1 [-]: DUPCLOSURE R0 K0 []
+       1 [-]: DUPCLOSURE R0 K0 []
        2 [-]: SETGLOBAL R0 K1 ["OnEquip"]
        3 [-]: DUPCLOSURE R0 K2 []
        4 [-]: SETGLOBAL R0 K3 ["OnUnequip"]
@@ -21,7 +21,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  10
 
-       0 [-]: GETIMPORT R7 1 [nil]
+       0 [-]: GETIMPORT R7 1 [0xB70AE9C9]
        1 [-]: LOADN R8 11  
        2 [-]: LOADB R9 0   
        3 [-]: NAMECALL R5 R0 K2 [0x1C661E00]
@@ -51,7 +51,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  14
 
-       0 [-]: GETIMPORT R5 1 [nil]
+       0 [-]: GETIMPORT R5 1 [0x0469F296]
        1 [-]: LOADK R6 K2 ["InvulnDuringRoll"]
        2 [-]: CALL R5 1 1  
        3 [-]: NAMECALL R6 R0 K3 [0x1AC1655C]
@@ -69,16 +69,16 @@
       15 [-]: LOADN R12 0  
       16 [-]: NAMECALL R7 R6 K5 [0x3A0E0670]
       17 [-]: CALL R7 5 0  
-      18 [-]: GETIMPORT R9 7 [nil]
-      19 [-]: GETIMPORT R10 9 [nil]
-      20 [-]: GETIMPORT R11 11 [nil]
-      21 [-]: GETIMPORT R12 13 [nil]
+      18 [-]: GETIMPORT R9 7 [0x8E471DA2]
+      19 [-]: GETIMPORT R10 9 ["EMPTY_SYMBOL"]
+      20 [-]: GETIMPORT R11 11 ["ZERO_VECTOR"]
+      21 [-]: GETIMPORT R12 13 ["ZERO_ROTATION"]
       22 [-]: MOVE R13 R1  
       23 [-]: NAMECALL R7 R0 K14 [0x47901F07]
       24 [-]: CALL R7 6 1  
 L 0:  25 [-]: FASTCALL1 62 R0 L1
       26 [-]: MOVE R9 R0   
-      27 [-]: GETIMPORT R8 16 [nil]
+      27 [-]: GETIMPORT R8 16 [0x7B998233]
       28 [-]: CALL R8 1 1  
 L 1:  29 [-]: JUMPIF R8 L2 
       30 [-]: NAMECALL R8 R0 K17 [0x2047CFE7]
@@ -91,20 +91,20 @@ L 1:  29 [-]: JUMPIF R8 L2
       37 [-]: NAMECALL R8 R0 K19 [0x0E46E45B]
       38 [-]: CALL R8 2 1  
       39 [-]: JUMPIFNOT R8 L2
-      40 [-]: GETIMPORT R8 21 [nil]
+      40 [-]: GETIMPORT R8 21 [0xCBD666E1]
       41 [-]: LOADN R9 0   
       42 [-]: CALL R8 1 0  
       43 [-]: JUMPBACK L0  
 L 2:  44 [-]: FASTCALL1 62 R7 L3
       45 [-]: MOVE R9 R7   
-      46 [-]: GETIMPORT R8 16 [nil]
+      46 [-]: GETIMPORT R8 16 [0x7B998233]
       47 [-]: CALL R8 1 1  
 L 3:  48 [-]: JUMPIF R8 L4 
       49 [-]: NAMECALL R8 R7 K22 [0xA2880940]
       50 [-]: CALL R8 1 0  
 L 4:  51 [-]: FASTCALL1 62 R0 L5
       52 [-]: MOVE R9 R0   
-      53 [-]: GETIMPORT R8 16 [nil]
+      53 [-]: GETIMPORT R8 16 [0x7B998233]
       54 [-]: CALL R8 1 1  
 L 5:  55 [-]: JUMPIF R8 L6 
       56 [-]: MOVE R10 R5  

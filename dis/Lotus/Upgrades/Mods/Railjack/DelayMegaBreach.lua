@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  9
 
-            1 [-]: NEWTABLE R0 0 8
+       1 [-]: NEWTABLE R0 0 8
        2 [-]: LOADN R1 20  
        3 [-]: LOADN R2 25  
        4 [-]: LOADN R3 30  
@@ -15,13 +15,13 @@
        8 [-]: LOADN R7 50  
        9 [-]: LOADN R8 55  
       10 [-]: SETLIST R0 R1 8 [1]
-      11 [-]: GETIMPORT R1 1 [nil]
+      11 [-]: GETIMPORT R1 1 [0x2D0FAD09]
       12 [-]: LOADK R2 K2 ["Lotus.Scripts.Libs.AbilitiesLib"]
       13 [-]: CALL R1 1 1  
-      14 [-]: GETIMPORT R2 1 [nil]
+      14 [-]: GETIMPORT R2 1 [0x2D0FAD09]
       15 [-]: LOADK R3 K3 ["EE.Interface.Utilities"]
       16 [-]: CALL R2 1 1  
-      17 [-]: GETIMPORT R3 1 [nil]
+      17 [-]: GETIMPORT R3 1 [0x2D0FAD09]
       18 [-]: LOADK R4 K4 ["Lotus.Scripts.Libs.RailjackUtilities"]
       19 [-]: CALL R3 1 1  
       20 [-]: DUPCLOSURE R4 K5 []
@@ -51,7 +51,7 @@
        2 [-]: LENGTH R5 R6 
        3 [-]: FASTCALL2 19 R0 R5 L0
        4 [-]: MOVE R4 R0   
-       5 [-]: GETIMPORT R3 2 [nil]
+       5 [-]: GETIMPORT R3 2 [0xAC1B386A]
        6 [-]: CALL R3 2 1  
 L 0:   7 [-]: GETTABLE R1 R2 R3
        8 [-]: RETURN R1 1  
@@ -69,19 +69,19 @@ L 0:   7 [-]: GETTABLE R1 R2 R3
        2 [-]: LENGTH R7 R8 
        3 [-]: FASTCALL2 19 R0 R7 L0
        4 [-]: MOVE R6 R0   
-       5 [-]: GETIMPORT R5 2 [nil]
+       5 [-]: GETIMPORT R5 2 [0xAC1B386A]
        6 [-]: CALL R5 2 1  
 L 0:   7 [-]: GETTABLE R3 R4 R5
        8 [-]: DUPTABLE R4 5
        9 [-]: SETTABLEKS R3 R4 K3 ["DELAY"]
       10 [-]: LOADN R5 300 
       11 [-]: SETTABLEKS R5 R4 K4 ["COOLDOWN"]
-      12 [-]: GETIMPORT R5 7 [nil]
+      12 [-]: GETIMPORT R5 7 [0x89326C93]
       13 [-]: NAMECALL R5 R5 K8 [0x78298275]
       14 [-]: CALL R5 1 1  
       15 [-]: FASTCALL1 62 R5 L1
       16 [-]: MOVE R7 R5   
-      17 [-]: GETIMPORT R6 10 [nil]
+      17 [-]: GETIMPORT R6 10 [0x7B998233]
       18 [-]: CALL R6 1 1  
 L 1:  19 [-]: JUMPIF R6 L2 
       20 [-]: GETUPVAL R7 1
@@ -93,7 +93,7 @@ L 1:  19 [-]: JUMPIF R6 L2
       26 [-]: CALL R7 2 -1 
       27 [-]: CALL R6 -1 1 
       28 [-]: SETTABLEKS R6 R4 K4 ["COOLDOWN"]
-L 2:  29 [-]: GETIMPORT R6 15 [nil]
+L 2:  29 [-]: GETIMPORT R6 15 [0xB139D7BC]
       30 [-]: MOVE R7 R4   
       31 [-]: CALL R6 1 -1 
       32 [-]: RETURN R6 -1 
@@ -106,7 +106,7 @@ L 2:  29 [-]: GETIMPORT R6 15 [nil]
 ; Is_vararg:       0
 ; Max Stack Size:  17
 
-       0 [-]: GETIMPORT R8 1 [nil]
+       0 [-]: GETIMPORT R8 1 [0x6687F6E0]
        1 [-]: GETUPVAL R11 0
        2 [-]: GETTABLEKS R10 R11 K2 [0x516B7980]
        3 [-]: MOVE R11 R7  
@@ -117,12 +117,12 @@ L 2:  29 [-]: GETIMPORT R6 15 [nil]
        8 [-]: GETUPVAL R9 1
        9 [-]: GETTABLEKS R8 R9 K4 [0x81E6C00C]
       10 [-]: CALL R8 0 1  
-      11 [-]: GETIMPORT R9 6 [nil]
+      11 [-]: GETIMPORT R9 6 [0x7ED0A956]
       12 [-]: LOADK R10 K7 ["/Lotus/Types/Game/CrewShip/Malfunctions/MegaBreach"]
       13 [-]: CALL R9 1 1  
       14 [-]: FASTCALL1 62 R8 L0
       15 [-]: MOVE R11 R8  
-      16 [-]: GETIMPORT R10 9 [nil]
+      16 [-]: GETIMPORT R10 9 [0x7B998233]
       17 [-]: CALL R10 1 1 
 L 0:  18 [-]: JUMPIF R10 L2
       19 [-]: MOVE R12 R9  
@@ -130,13 +130,13 @@ L 0:  18 [-]: JUMPIF R10 L2
       21 [-]: CALL R10 2 1 
       22 [-]: LOADN R11 0  
       23 [-]: JUMPIFNOTLT R11 R10 L2
-      24 [-]: GETIMPORT R10 12 [nil]
+      24 [-]: GETIMPORT R10 12 ["_T"]
       25 [-]: GETUPVAL R12 2
       26 [-]: GETUPVAL R16 2
       27 [-]: LENGTH R15 R16
       28 [-]: FASTCALL2 19 R3 R15 L1
       29 [-]: MOVE R14 R3  
-      30 [-]: GETIMPORT R13 15 [nil]
+      30 [-]: GETIMPORT R13 15 [0xAC1B386A]
       31 [-]: CALL R13 2 1 
 L 1:  32 [-]: GETTABLE R11 R12 R13
       33 [-]: SETTABLEKS R11 R10 K16 ["MegaBreachDelayAbilityTime"]

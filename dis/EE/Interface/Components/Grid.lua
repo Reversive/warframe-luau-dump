@@ -5,14 +5,14 @@
 ; Is_vararg:       1
 ; Max Stack Size:  3
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0xAEABECDA]
        2 [-]: GETVARARGS R1 1
-       3 [-]: GETIMPORT R2 4 [nil]
+       3 [-]: GETIMPORT R2 4 ["seeall"]
        4 [-]: CALL R0 2 0  
-       5 [-]: GETIMPORT R0 6 [nil]
+       5 [-]: GETIMPORT R0 6 [0x2D0FAD09]
        6 [-]: LOADK R1 K7 ["Lotus.Interface.UIStyleUtilities"]
        7 [-]: CALL R0 1 1  
-       8 [-]: GETIMPORT R1 6 [nil]
+       8 [-]: GETIMPORT R1 6 [0x2D0FAD09]
        9 [-]: LOADK R2 K8 ["Lotus.Interface.UIUtilities"]
       10 [-]: CALL R1 1 1  
       11 [-]: DUPCLOSURE R2 K9 []
@@ -29,18 +29,18 @@
 ; Max Stack Size:  15
 
        0 [-]: LOADB R5 0   
-       1 [-]: GETIMPORT R7 1 [nil]
+       1 [-]: GETIMPORT R7 1 [0x76EA806B]
        2 [-]: FASTCALL1 62 R7 L0
-       3 [-]: GETIMPORT R6 3 [nil]
+       3 [-]: GETIMPORT R6 3 [0x7B998233]
        4 [-]: CALL R6 1 1  
 L 0:   5 [-]: JUMPIF R6 L3 
-       6 [-]: GETIMPORT R6 1 [nil]
+       6 [-]: GETIMPORT R6 1 [0x76EA806B]
        7 [-]: LOADN R8 0   
        8 [-]: NAMECALL R6 R6 K4 [0x3F3AE64C]
        9 [-]: CALL R6 2 1  
       10 [-]: FASTCALL1 62 R6 L1
       11 [-]: MOVE R9 R6   
-      12 [-]: GETIMPORT R8 3 [nil]
+      12 [-]: GETIMPORT R8 3 [0x7B998233]
       13 [-]: CALL R8 1 1  
 L 1:  14 [-]: NOT R7 R8    
       15 [-]: JUMPIFNOT R7 L2
@@ -49,7 +49,7 @@ L 1:  14 [-]: NOT R7 R8
       18 [-]: NAMECALL R7 R7 K6 [0x12C9DAEE]
       19 [-]: CALL R7 1 1  
 L 2:  20 [-]: MOVE R5 R7   
-L 3:  21 [-]: GETIMPORT R6 8 [nil]
+L 3:  21 [-]: GETIMPORT R6 8 [0x2D0FAD09]
       22 [-]: LOADK R7 K9 ["EE.Interface.Components.List"]
       23 [-]: CALL R6 1 1  
       24 [-]: GETTABLEKS R7 R6 K10 [0x9383BC56]
@@ -122,7 +122,7 @@ L 3:  21 [-]: GETIMPORT R6 8 [nil]
       91 [-]: SETTABLEKS R8 R7 K51 ["mSkipRefocusOnScrollRedraw"]
       92 [-]: GETTABLEKS R9 R7 K20 ["mPaginationClip"]
       93 [-]: FASTCALL1 62 R9 L4
-      94 [-]: GETIMPORT R8 3 [nil]
+      94 [-]: GETIMPORT R8 3 [0x7B998233]
       95 [-]: CALL R8 1 1  
 L 4:  96 [-]: JUMPIF R8 L5 
       97 [-]: GETTABLEKS R8 R7 K52 ["mMovie"]
@@ -166,7 +166,7 @@ L 4:  96 [-]: JUMPIF R8 L5
      135 [-]: GETTABLEKS R14 R7 K40 ["NEXT_PAGE_ID"]
      136 [-]: NAMECALL R9 R9 K59 [0x19AD3F57]
      137 [-]: CALL R9 5 0  
-     138 [-]: GETIMPORT R9 64 [nil]
+     138 [-]: GETIMPORT R9 64 [0x38F10E85]
      139 [-]: GETTABLEKS R10 R7 K52 ["mMovie"]
      140 [-]: GETTABLEKS R12 R7 K20 ["mPaginationClip"]
      141 [-]: LOADK R13 K65 [".PreviousPage.duplicateMovieClip"]
@@ -202,7 +202,7 @@ L 4:  96 [-]: JUMPIF R8 L5
      171 [-]: GETTABLEKS R14 R7 K41 ["FIRST_PAGE_ID"]
      172 [-]: NAMECALL R9 R9 K59 [0x19AD3F57]
      173 [-]: CALL R9 5 0  
-     174 [-]: GETIMPORT R9 64 [nil]
+     174 [-]: GETIMPORT R9 64 [0x38F10E85]
      175 [-]: GETTABLEKS R10 R7 K52 ["mMovie"]
      176 [-]: GETTABLEKS R12 R7 K20 ["mPaginationClip"]
      177 [-]: LOADK R13 K72 [".NextPage.duplicateMovieClip"]
@@ -324,7 +324,7 @@ L 5: 210 [-]: DUPCLOSURE R8 K78 []
      293 [-]: SETTABLEKS R8 R7 K147 ["GetBounds"]
      294 [-]: DUPCLOSURE R8 K150 []
      295 [-]: SETTABLEKS R8 R7 K151 ["RepositionButton"]
-     296 [-]: GETIMPORT R8 154 [nil]
+     296 [-]: GETIMPORT R8 154 [0xE6B41ADB]
      297 [-]: CALL R8 0 1  
      298 [-]: JUMPIFNOT R8 L6
      299 [-]: GETTABLEKS R8 R7 K155 ["EnableDragScrolling"]

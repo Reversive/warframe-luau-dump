@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  1
 
-            1 [-]: DUPCLOSURE R0 K0 []
+       1 [-]: DUPCLOSURE R0 K0 []
        2 [-]: SETGLOBAL R0 K1 ["GroggyKahl"]
        3 [-]: DUPCLOSURE R0 K2 []
        4 [-]: SETGLOBAL R0 K3 ["KahlTurret"]
@@ -19,12 +19,12 @@
 ; Is_vararg:       0
 ; Max Stack Size:  9
 
-       0 [-]: GETIMPORT R1 1 [nil]
+       0 [-]: GETIMPORT R1 1 [0x89326C93]
        1 [-]: NAMECALL R1 R1 K2 [0x78298275]
        2 [-]: CALL R1 1 1  
        3 [-]: FASTCALL1 62 R1 L0
        4 [-]: MOVE R3 R1   
-       5 [-]: GETIMPORT R2 4 [nil]
+       5 [-]: GETIMPORT R2 4 [0x7B998233]
        6 [-]: CALL R2 1 1  
 L 0:   7 [-]: JUMPIF R2 L1 
        8 [-]: NAMECALL R2 R1 K5 [0x0B4BCFB6]
@@ -45,21 +45,21 @@ L 1:  16 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  9
 
-       0 [-]: GETIMPORT R1 1 [nil]
+       0 [-]: GETIMPORT R1 1 [0xCBD666E1]
        1 [-]: LOADN R2 0   
        2 [-]: CALL R1 1 0  
        3 [-]: FASTCALL1 62 R0 L0
        4 [-]: MOVE R2 R0   
-       5 [-]: GETIMPORT R1 3 [nil]
+       5 [-]: GETIMPORT R1 3 [0x7B998233]
        6 [-]: CALL R1 1 1  
 L 0:   7 [-]: JUMPIFNOT R1 L1
        8 [-]: RETURN R0 0  
-L 1:   9 [-]: GETIMPORT R3 5 [nil]
+L 1:   9 [-]: GETIMPORT R3 5 ["gWeaponAttachmentType"]
       10 [-]: NAMECALL R1 R0 K6 [0xC1595BD5]
       11 [-]: CALL R1 2 1  
 L 2:  12 [-]: FASTCALL1 62 R0 L3
       13 [-]: MOVE R3 R0   
-      14 [-]: GETIMPORT R2 3 [nil]
+      14 [-]: GETIMPORT R2 3 [0x7B998233]
       15 [-]: CALL R2 1 1  
 L 3:  16 [-]: JUMPIF R2 L8 
       17 [-]: LENGTH R2 R1 
@@ -75,7 +75,7 @@ L 3:  16 [-]: JUMPIF R2 L8
       27 [-]: FORNPREP R2 L7
 L 4:  28 [-]: GETTABLE R6 R1 R4
       29 [-]: FASTCALL1 62 R6 L5
-      30 [-]: GETIMPORT R5 3 [nil]
+      30 [-]: GETIMPORT R5 3 [0x7B998233]
       31 [-]: CALL R5 1 1  
 L 5:  32 [-]: JUMPIF R5 L6 
       33 [-]: GETTABLE R5 R1 R4
@@ -88,7 +88,7 @@ L 5:  32 [-]: JUMPIF R5 L6
       40 [-]: NAMECALL R5 R5 K7 [0x768274D6]
       41 [-]: CALL R5 3 0  
 L 6:  42 [-]: FORNLOOP R2 L4
-L 7:  43 [-]: GETIMPORT R2 1 [nil]
+L 7:  43 [-]: GETIMPORT R2 1 [0xCBD666E1]
       44 [-]: LOADN R3 0   
       45 [-]: CALL R2 1 0  
       46 [-]: JUMPBACK L2  

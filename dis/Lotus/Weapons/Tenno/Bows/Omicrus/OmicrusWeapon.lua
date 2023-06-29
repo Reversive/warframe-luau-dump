@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  3
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0xB7CBD06B]
        2 [-]: LOADN R1 8   
        3 [-]: LOADN R2 10  
        4 [-]: CALL R0 2 1  
@@ -28,15 +28,15 @@
        1 [-]: CALL R2 1 1  
        2 [-]: FASTCALL1 62 R2 L0
        3 [-]: MOVE R4 R2   
-       4 [-]: GETIMPORT R3 2 [nil]
+       4 [-]: GETIMPORT R3 2 [0x7B998233]
        5 [-]: CALL R3 1 1  
 L 0:   6 [-]: JUMPIF R3 L2 
        7 [-]: FASTCALL1 62 R1 L1
        8 [-]: MOVE R4 R1   
-       9 [-]: GETIMPORT R3 2 [nil]
+       9 [-]: GETIMPORT R3 2 [0x7B998233]
       10 [-]: CALL R3 1 1  
 L 1:  11 [-]: JUMPIF R3 L2 
-      12 [-]: GETIMPORT R5 4 [nil]
+      12 [-]: GETIMPORT R5 4 ["gLotusNpcAvatarType"]
       13 [-]: NAMECALL R3 R1 K5 [0xF2DEAF69]
       14 [-]: CALL R3 2 1  
       15 [-]: JUMPIFNOT R3 L2
@@ -50,7 +50,7 @@ L 1:  11 [-]: JUMPIF R3 L2
       23 [-]: JUMPIF R3 L2 
       24 [-]: NAMECALL R3 R0 K8 [0xD4DCB570]
       25 [-]: CALL R3 1 1  
-      26 [-]: GETIMPORT R4 10 [nil]
+      26 [-]: GETIMPORT R4 10 [0xC2892F65]
       27 [-]: MOVE R5 R3   
       28 [-]: CALL R4 1 0  
       29 [-]: NAMECALL R4 R1 K11 [0x020D4331]
@@ -71,7 +71,7 @@ L 2:  37 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  4
 
-       0 [-]: GETIMPORT R3 1 [nil]
+       0 [-]: GETIMPORT R3 1 [0x99EBA49B]
        1 [-]: NAMECALL R1 R0 K2 [0x0C695B93]
        2 [-]: CALL R1 2 0  
        3 [-]: RETURN R0 0  

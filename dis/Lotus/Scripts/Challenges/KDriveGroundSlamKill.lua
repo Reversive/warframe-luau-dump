@@ -5,13 +5,13 @@
 ; Is_vararg:       1
 ; Max Stack Size:  5
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x7ED0A956]
        2 [-]: LOADK R1 K2 ["/Lotus/Types/Vehicles/Hoverboard/HoverboardAbility/GrindSlamShockwave"]
        3 [-]: CALL R0 1 1  
-       4 [-]: GETIMPORT R1 1 [nil]
+       4 [-]: GETIMPORT R1 1 [0x7ED0A956]
        5 [-]: LOADK R2 K3 ["/Lotus/Types/Vehicles/Hoverboard/HoverboardAbility/GrindSlamShockwaveUpgraded"]
        6 [-]: CALL R1 1 1  
-       7 [-]: GETIMPORT R2 1 [nil]
+       7 [-]: GETIMPORT R2 1 [0x7ED0A956]
        8 [-]: LOADK R3 K4 ["/Lotus/Types/Enemies/Corpus/Venus/Hoverboard/CrpHoverboardTrickDamageTrigger"]
        9 [-]: CALL R2 1 1  
       10 [-]: DUPCLOSURE R3 K5 []
@@ -35,7 +35,7 @@
 
        0 [-]: FASTCALL1 62 R0 L0
        1 [-]: MOVE R2 R0   
-       2 [-]: GETIMPORT R1 1 [nil]
+       2 [-]: GETIMPORT R1 1 [0x7B998233]
        3 [-]: CALL R1 1 1  
 L 0:   4 [-]: JUMPIF R1 L2 
        5 [-]: GETUPVAL R1 0
@@ -64,10 +64,10 @@ L 2:  13 [-]: LOADB R1 0
        4 [-]: JUMPIFNOT R3 L7
        5 [-]: FASTCALL1 62 R2 L0
        6 [-]: MOVE R4 R2   
-       7 [-]: GETIMPORT R3 3 [nil]
+       7 [-]: GETIMPORT R3 3 [0x7B998233]
        8 [-]: CALL R3 1 1  
 L 0:   9 [-]: JUMPIF R3 L7 
-      10 [-]: GETIMPORT R5 5 [nil]
+      10 [-]: GETIMPORT R5 5 ["gLotusVehicleAvatarType"]
       11 [-]: NAMECALL R3 R2 K6 [0xF2DEAF69]
       12 [-]: CALL R3 2 1  
       13 [-]: JUMPIFNOT R3 L7
@@ -84,22 +84,22 @@ L 0:   9 [-]: JUMPIF R3 L7
       24 [-]: CALL R5 1 1  
       25 [-]: FASTCALL1 62 R3 L1
       26 [-]: MOVE R7 R3   
-      27 [-]: GETIMPORT R6 3 [nil]
+      27 [-]: GETIMPORT R6 3 [0x7B998233]
       28 [-]: CALL R6 1 1  
 L 1:  29 [-]: JUMPIF R6 L7 
-      30 [-]: GETIMPORT R8 13 [nil]
+      30 [-]: GETIMPORT R8 13 ["gTennoAvatarType"]
       31 [-]: NAMECALL R6 R3 K6 [0xF2DEAF69]
       32 [-]: CALL R6 2 1  
       33 [-]: JUMPIFNOT R6 L7
       34 [-]: FASTCALL1 62 R4 L2
       35 [-]: MOVE R7 R4   
-      36 [-]: GETIMPORT R6 3 [nil]
+      36 [-]: GETIMPORT R6 3 [0x7B998233]
       37 [-]: CALL R6 1 1  
 L 2:  38 [-]: JUMPIF R6 L7 
       39 [-]: JUMPIFEQ R3 R4 L7
       40 [-]: FASTCALL1 62 R5 L3
       41 [-]: MOVE R8 R5   
-      42 [-]: GETIMPORT R7 3 [nil]
+      42 [-]: GETIMPORT R7 3 [0x7B998233]
       43 [-]: CALL R7 1 1  
 L 3:  44 [-]: JUMPIF R7 L5 
       45 [-]: GETUPVAL R7 0

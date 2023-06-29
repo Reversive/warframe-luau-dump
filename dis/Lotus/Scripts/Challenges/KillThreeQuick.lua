@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  4
 
-            1 [-]: LOADN R0 0   
+       1 [-]: LOADN R0 0   
        2 [-]: LOADN R1 0   
        3 [-]: LOADN R2 0   
        4 [-]: NEWCLOSURE R3 P0
@@ -27,7 +27,7 @@
        0 [-]: NAMECALL R3 R1 K0 [0xBB610E5B]
        1 [-]: CALL R3 1 -1 
        2 [-]: FASTCALL 62 L0
-       3 [-]: GETIMPORT R2 2 [nil]
+       3 [-]: GETIMPORT R2 2 [0x7B998233]
        4 [-]: CALL R2 -1 1 
 L 0:   5 [-]: JUMPIF R2 L1 
        6 [-]: NAMECALL R2 R0 K3 [0x52DE0ED7]
@@ -39,14 +39,14 @@ L 1:  11 [-]: LOADB R2 0
       12 [-]: RETURN R2 1  
 L 2:  13 [-]: NAMECALL R2 R0 K4 [0x14A55974]
       14 [-]: CALL R2 1 1  
-      15 [-]: GETIMPORT R3 6 [nil]
+      15 [-]: GETIMPORT R3 6 [0x55156FF7]
       16 [-]: CALL R3 0 1  
       17 [-]: FASTCALL1 62 R2 L3
       18 [-]: MOVE R5 R2   
-      19 [-]: GETIMPORT R4 2 [nil]
+      19 [-]: GETIMPORT R4 2 [0x7B998233]
       20 [-]: CALL R4 1 1  
 L 3:  21 [-]: JUMPIF R4 L8 
-      22 [-]: GETIMPORT R6 8 [nil]
+      22 [-]: GETIMPORT R6 8 ["gProjectileType"]
       23 [-]: NAMECALL R4 R2 K9 [0xF2DEAF69]
       24 [-]: CALL R4 2 1  
       25 [-]: JUMPIFNOT R4 L4
@@ -55,10 +55,10 @@ L 3:  21 [-]: JUMPIF R4 L8
       28 [-]: MOVE R2 R4   
 L 4:  29 [-]: FASTCALL1 62 R2 L5
       30 [-]: MOVE R5 R2   
-      31 [-]: GETIMPORT R4 2 [nil]
+      31 [-]: GETIMPORT R4 2 [0x7B998233]
       32 [-]: CALL R4 1 1  
 L 5:  33 [-]: JUMPIF R4 L8 
-      34 [-]: GETIMPORT R6 12 [nil]
+      34 [-]: GETIMPORT R6 12 ["gLotusWeaponType"]
       35 [-]: NAMECALL R4 R2 K9 [0xF2DEAF69]
       36 [-]: CALL R4 2 1  
       37 [-]: JUMPIFNOT R4 L8

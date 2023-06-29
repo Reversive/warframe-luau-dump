@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  3
 
-            1 [-]: LOADNIL R0   
+       1 [-]: LOADNIL R0   
        2 [-]: LOADNIL R1   
        3 [-]: NEWCLOSURE R2 P0
        4 [-]: MOVE R1 R1   
@@ -41,8 +41,8 @@
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
-       0 [-]: GETIMPORT R0 1 [nil]
-       1 [-]: GETIMPORT R1 3 [nil]
+       0 [-]: GETIMPORT R0 1 ["_T"]
+       1 [-]: GETIMPORT R1 3 [0x5EBB02A2]
        2 [-]: SETTABLEKS R1 R0 K4 ["testProcType"]
        3 [-]: RETURN R0 0  
 
@@ -67,12 +67,12 @@
 ; Is_vararg:       0
 ; Max Stack Size:  12
 
-       0 [-]: GETIMPORT R1 2 [nil]
+       0 [-]: GETIMPORT R1 2 ["testProcType"]
        1 [-]: JUMPXEQKNIL R1 L0 NOT
-       2 [-]: GETIMPORT R1 3 [nil]
+       2 [-]: GETIMPORT R1 3 ["_T"]
        3 [-]: LOADN R2 0   
        4 [-]: SETTABLEKS R2 R1 K1 ["testProcType"]
-L 0:   5 [-]: GETIMPORT R1 5 [nil]
+L 0:   5 [-]: GETIMPORT R1 5 [0x89326C93]
        6 [-]: NAMECALL R1 R1 K6 [0x21C948F8]
        7 [-]: CALL R1 1 1  
        8 [-]: LOADN R4 1   
@@ -86,7 +86,7 @@ L 1:  12 [-]: GETTABLE R5 R1 R4
       16 [-]: NAMECALL R7 R5 K8 [0x5E651723]
       17 [-]: CALL R7 1 -1 
       18 [-]: FASTCALL 62 L2
-      19 [-]: GETIMPORT R6 10 [nil]
+      19 [-]: GETIMPORT R6 10 [0x7B998233]
       20 [-]: CALL R6 -1 1 
 L 2:  21 [-]: JUMPIFNOT R6 L3
       22 [-]: NAMECALL R7 R5 K11 [0xF6EBD926]
@@ -94,11 +94,11 @@ L 2:  21 [-]: JUMPIFNOT R6 L3
       24 [-]: NAMECALL R8 R0 K11 [0xF6EBD926]
       25 [-]: CALL R8 1 1  
       26 [-]: SUB R6 R7 R8 
-      27 [-]: GETIMPORT R7 14 [nil]
+      27 [-]: GETIMPORT R7 14 [0x35C16153]
       28 [-]: CALL R7 0 1  
       29 [-]: LOADN R8 20  
       30 [-]: SETTABLEKS R8 R7 K15 ["baseAmount"]
-      31 [-]: GETIMPORT R10 2 [nil]
+      31 [-]: GETIMPORT R10 2 ["testProcType"]
       32 [-]: LOADB R11 1  
       33 [-]: NAMECALL R8 R7 K16 [0xFC0E440A]
       34 [-]: CALL R8 3 0  
@@ -123,12 +123,12 @@ L 4:  46 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  12
 
-       0 [-]: GETIMPORT R1 2 [nil]
+       0 [-]: GETIMPORT R1 2 ["testProcType"]
        1 [-]: JUMPXEQKNIL R1 L0 NOT
-       2 [-]: GETIMPORT R1 3 [nil]
+       2 [-]: GETIMPORT R1 3 ["_T"]
        3 [-]: LOADN R2 0   
        4 [-]: SETTABLEKS R2 R1 K1 ["testProcType"]
-L 0:   5 [-]: GETIMPORT R1 5 [nil]
+L 0:   5 [-]: GETIMPORT R1 5 [0x89326C93]
        6 [-]: NAMECALL R1 R1 K6 [0x21C948F8]
        7 [-]: CALL R1 1 1  
        8 [-]: LOADN R4 1   
@@ -142,7 +142,7 @@ L 1:  12 [-]: GETTABLE R5 R1 R4
       16 [-]: NAMECALL R7 R5 K8 [0x5E651723]
       17 [-]: CALL R7 1 -1 
       18 [-]: FASTCALL 62 L2
-      19 [-]: GETIMPORT R6 10 [nil]
+      19 [-]: GETIMPORT R6 10 [0x7B998233]
       20 [-]: CALL R6 -1 1 
 L 2:  21 [-]: JUMPIFNOT R6 L3
       22 [-]: NAMECALL R7 R5 K11 [0xF6EBD926]
@@ -151,11 +151,11 @@ L 2:  21 [-]: JUMPIFNOT R6 L3
       25 [-]: CALL R8 1 1  
       26 [-]: SUB R6 R7 R8 
       27 [-]: MULK R6 R6 K12 [-1]
-      28 [-]: GETIMPORT R7 15 [nil]
+      28 [-]: GETIMPORT R7 15 [0x35C16153]
       29 [-]: CALL R7 0 1  
       30 [-]: LOADN R8 200 
       31 [-]: SETTABLEKS R8 R7 K16 ["baseAmount"]
-      32 [-]: GETIMPORT R10 2 [nil]
+      32 [-]: GETIMPORT R10 2 ["testProcType"]
       33 [-]: LOADB R11 1  
       34 [-]: NAMECALL R8 R7 K17 [0xFC0E440A]
       35 [-]: CALL R8 3 0  

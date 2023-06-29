@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  7
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x2D0FAD09]
        2 [-]: LOADK R1 K2 ["EE.Interface.Utilities"]
        3 [-]: CALL R0 1 1  
        4 [-]: LOADNIL R1   
@@ -50,7 +50,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 ["_T"]
        1 [-]: LOADNIL R1   
        2 [-]: SETTABLEKS R1 R0 K2 ["HudReplacement_ForceVisibility"]
        3 [-]: RETURN R0 0  
@@ -70,15 +70,15 @@ L 0:   3 [-]: LOADB R0 1
        4 [-]: SETUPVAL R0 0
        5 [-]: GETUPVAL R1 1
        6 [-]: FASTCALL1 62 R1 L1
-       7 [-]: GETIMPORT R0 1 [nil]
+       7 [-]: GETIMPORT R0 1 [0x7B998233]
        8 [-]: CALL R0 1 1  
 L 1:   9 [-]: JUMPIF R0 L2 
       10 [-]: GETUPVAL R0 1
       11 [-]: LOADB R2 0   
       12 [-]: NAMECALL R0 R0 K2 [0x6CF1E476]
       13 [-]: CALL R0 2 0  
-L 2:  14 [-]: GETIMPORT R0 4 [nil]
-      15 [-]: GETIMPORT R1 6 [nil]
+L 2:  14 [-]: GETIMPORT R0 4 [0x25312C9B]
+      15 [-]: GETIMPORT R1 6 [0xAE91E43B]
       16 [-]: LOADK R2 K7 ["_root"]
       17 [-]: LOADN R3 8   
       18 [-]: NEWTABLE R4 0 1
@@ -102,8 +102,8 @@ L 2:  14 [-]: GETIMPORT R0 4 [nil]
 ; Is_vararg:       0
 ; Max Stack Size:  9
 
-       0 [-]: GETIMPORT R0 1 [nil]
-       1 [-]: GETIMPORT R1 3 [nil]
+       0 [-]: GETIMPORT R0 1 [0x25312C9B]
+       1 [-]: GETIMPORT R1 3 [0xAE91E43B]
        2 [-]: LOADK R2 K4 ["LogoGleen"]
        3 [-]: LOADN R3 8   
        4 [-]: NEWTABLE R4 0 1
@@ -126,36 +126,36 @@ L 2:  14 [-]: GETIMPORT R0 4 [nil]
 ; Is_vararg:       0
 ; Max Stack Size:  9
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 [0x2D0FAD09]
        1 [-]: LOADK R1 K2 ["Lotus.Interface.Libs.TimerMgr"]
        2 [-]: CALL R0 1 1  
        3 [-]: GETTABLEKS R1 R0 K3 [0xDE474187]
        4 [-]: CALL R1 0 1  
        5 [-]: SETUPVAL R1 0
-       6 [-]: GETIMPORT R1 5 [nil]
+       6 [-]: GETIMPORT R1 5 ["_T"]
        7 [-]: LOADB R2 1   
        8 [-]: SETTABLEKS R2 R1 K6 ["HudReplacement_ForceVisibility"]
-       9 [-]: GETIMPORT R1 8 [nil]
+       9 [-]: GETIMPORT R1 8 [0xAE91E43B]
       10 [-]: LOADN R3 0   
       11 [-]: NAMECALL R1 R1 K9 [0xC6A10AB1]
       12 [-]: CALL R1 2 0  
-      13 [-]: GETIMPORT R1 8 [nil]
+      13 [-]: GETIMPORT R1 8 [0xAE91E43B]
       14 [-]: LOADN R3 0   
       15 [-]: NAMECALL R1 R1 K10 [0x58BEC6D6]
       16 [-]: CALL R1 2 0  
-      17 [-]: GETIMPORT R1 8 [nil]
+      17 [-]: GETIMPORT R1 8 [0xAE91E43B]
       18 [-]: LOADK R3 K11 ["Logo"]
-      19 [-]: GETIMPORT R4 13 [nil]
-      20 [-]: GETIMPORT R5 15 [nil]
+      19 [-]: GETIMPORT R4 13 [0x722F3B10]
+      20 [-]: GETIMPORT R5 15 [0xD3E234EC]
       21 [-]: NAMECALL R1 R1 K16 [0xEF99134F]
       22 [-]: CALL R1 4 0  
-      23 [-]: GETIMPORT R1 8 [nil]
+      23 [-]: GETIMPORT R1 8 [0xAE91E43B]
       24 [-]: LOADK R3 K17 ["LogoGleen"]
-      25 [-]: GETIMPORT R4 13 [nil]
-      26 [-]: GETIMPORT R5 19 [nil]
+      25 [-]: GETIMPORT R4 13 [0x722F3B10]
+      26 [-]: GETIMPORT R5 19 [0xCACA5C57]
       27 [-]: NAMECALL R1 R1 K16 [0xEF99134F]
       28 [-]: CALL R1 4 0  
-      29 [-]: GETIMPORT R1 8 [nil]
+      29 [-]: GETIMPORT R1 8 [0xAE91E43B]
       30 [-]: LOADK R3 K17 ["LogoGleen"]
       31 [-]: LOADK R4 K20 ["TileOffset"]
       32 [-]: LOADK R5 K21 [0.52500000000000002]
@@ -164,7 +164,7 @@ L 2:  14 [-]: GETIMPORT R0 4 [nil]
       35 [-]: LOADN R8 1   
       36 [-]: NAMECALL R1 R1 K22 [0x91E13703]
       37 [-]: CALL R1 7 0  
-      38 [-]: GETIMPORT R1 8 [nil]
+      38 [-]: GETIMPORT R1 8 [0xAE91E43B]
       39 [-]: LOADK R3 K23 ["_root"]
       40 [-]: LOADN R4 10  
       41 [-]: LOADN R5 0   
@@ -202,16 +202,16 @@ L 2:  14 [-]: GETIMPORT R0 4 [nil]
 
        0 [-]: GETUPVAL R1 0
        1 [-]: FASTCALL1 62 R1 L0
-       2 [-]: GETIMPORT R0 1 [nil]
+       2 [-]: GETIMPORT R0 1 [0x7B998233]
        3 [-]: CALL R0 1 1  
 L 0:   4 [-]: JUMPIF R0 L1 
        5 [-]: GETUPVAL R0 0
-       6 [-]: GETIMPORT R2 3 [nil]
+       6 [-]: GETIMPORT R2 3 [0xB693B6C1]
        7 [-]: CALL R2 0 -1 
        8 [-]: NAMECALL R0 R0 K4 [0xFAA69527]
        9 [-]: CALL R0 -1 0 
-L 1:  10 [-]: GETIMPORT R0 6 [nil]
-      11 [-]: GETIMPORT R2 3 [nil]
+L 1:  10 [-]: GETIMPORT R0 6 [0xAE91E43B]
+      11 [-]: GETIMPORT R2 3 [0xB693B6C1]
       12 [-]: CALL R2 0 -1 
       13 [-]: NAMECALL R0 R0 K7 [0x8A8C8D5A]
       14 [-]: CALL R0 -1 0 

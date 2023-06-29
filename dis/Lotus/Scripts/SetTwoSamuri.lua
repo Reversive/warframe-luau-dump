@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  2
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x0469F296]
        2 [-]: LOADK R1 K2 ["Scalar2"]
        3 [-]: CALL R0 1 1  
        4 [-]: DUPCLOSURE R1 K3 []
@@ -26,7 +26,7 @@
 
        0 [-]: FASTCALL1 62 R0 L0
        1 [-]: MOVE R2 R0   
-       2 [-]: GETIMPORT R1 1 [nil]
+       2 [-]: GETIMPORT R1 1 [0x7B998233]
        3 [-]: CALL R1 1 1  
 L 0:   4 [-]: JUMPIFNOT R1 L1
        5 [-]: RETURN R0 0  
@@ -46,12 +46,12 @@ L 1:   6 [-]: GETUPVAL R3 0
 
        0 [-]: FASTCALL1 62 R0 L0
        1 [-]: MOVE R3 R0   
-       2 [-]: GETIMPORT R2 1 [nil]
+       2 [-]: GETIMPORT R2 1 [0x7B998233]
        3 [-]: CALL R2 1 1  
 L 0:   4 [-]: JUMPIF R2 L2 
        5 [-]: FASTCALL1 62 R1 L1
        6 [-]: MOVE R3 R1   
-       7 [-]: GETIMPORT R2 1 [nil]
+       7 [-]: GETIMPORT R2 1 [0x7B998233]
        8 [-]: CALL R2 1 1  
 L 1:   9 [-]: JUMPIFNOT R2 L3
 L 2:  10 [-]: RETURN R0 0  
@@ -69,10 +69,10 @@ L 5:  21 [-]: GETUPVAL R7 0
       22 [-]: MOVE R8 R4   
       23 [-]: NAMECALL R5 R0 K4 [0x986D2AB8]
       24 [-]: CALL R5 3 0  
-      25 [-]: GETIMPORT R5 6 [nil]
+      25 [-]: GETIMPORT R5 6 [0xCBD666E1]
       26 [-]: LOADN R6 0   
       27 [-]: CALL R5 1 0  
-      28 [-]: GETIMPORT R6 9 [nil]
+      28 [-]: GETIMPORT R6 9 [0x67652851]
       29 [-]: CALL R6 0 1  
       30 [-]: MULK R5 R6 K7 [3]
       31 [-]: SUB R4 R4 R5 

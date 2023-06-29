@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  2
 
-            1 [-]: DUPCLOSURE R0 K0 []
+       1 [-]: DUPCLOSURE R0 K0 []
        2 [-]: DUPCLOSURE R1 K1 []
        3 [-]: MOVE R0 R0   
        4 [-]: SETGLOBAL R1 K2 ["DoRadialDamage"]
@@ -19,11 +19,11 @@
 ; Is_vararg:       0
 ; Max Stack Size:  8
 
-       0 [-]: GETIMPORT R2 1 [nil]
+       0 [-]: GETIMPORT R2 1 [0x89326C93]
        1 [-]: NAMECALL R2 R2 K2 [0x18D05D30]
        2 [-]: CALL R2 1 1  
        3 [-]: JUMPIFNOT R2 L0
-       4 [-]: GETIMPORT R2 5 [nil]
+       4 [-]: GETIMPORT R2 5 [0x5CB2ADF8]
        5 [-]: CALL R2 0 1  
        6 [-]: MOVE R5 R0   
        7 [-]: NAMECALL R3 R2 K6 [0x86CD00CB]
@@ -35,9 +35,9 @@
       13 [-]: CALL R5 1 -1 
       14 [-]: NAMECALL R3 R2 K9 [0x618938F0]
       15 [-]: CALL R3 -1 0 
-      16 [-]: GETIMPORT R3 11 [nil]
+      16 [-]: GETIMPORT R3 11 [0x91D85E5F]
       17 [-]: SETTABLEKS R3 R2 K12 ["baseAmount"]
-      18 [-]: GETIMPORT R3 14 [nil]
+      18 [-]: GETIMPORT R3 14 [0x1E9434AC]
       19 [-]: SETTABLEKS R3 R2 K15 ["radius"]
       20 [-]: LOADB R3 1   
       21 [-]: SETTABLEKS R3 R2 K16 ["ignoreSource"]
@@ -47,21 +47,21 @@
       25 [-]: SETTABLEKS R3 R2 K18 ["staticCoverOnly"]
       26 [-]: LOADB R3 1   
       27 [-]: SETTABLEKS R3 R2 K19 ["hostAuthoritative"]
-      28 [-]: GETIMPORT R5 21 [nil]
+      28 [-]: GETIMPORT R5 21 [0x5EBB02A2]
       29 [-]: LOADB R6 1   
       30 [-]: NAMECALL R3 R2 K22 [0xFC0E440A]
       31 [-]: CALL R3 3 0  
-      32 [-]: GETIMPORT R3 1 [nil]
+      32 [-]: GETIMPORT R3 1 [0x89326C93]
       33 [-]: MOVE R5 R2   
       34 [-]: NAMECALL R3 R3 K23 [0x97DCFF30]
       35 [-]: CALL R3 2 0  
-L 0:  36 [-]: GETIMPORT R3 25 [nil]
+L 0:  36 [-]: GETIMPORT R3 25 [0x55BA2EEB]
       37 [-]: FASTCALL1 62 R3 L1
-      38 [-]: GETIMPORT R2 27 [nil]
+      38 [-]: GETIMPORT R2 27 [0x7B998233]
       39 [-]: CALL R2 1 1  
 L 1:  40 [-]: JUMPIF R2 L2 
-      41 [-]: GETIMPORT R2 1 [nil]
-      42 [-]: GETIMPORT R4 25 [nil]
+      41 [-]: GETIMPORT R2 1 [0x89326C93]
+      42 [-]: GETIMPORT R4 25 [0x55BA2EEB]
       43 [-]: NAMECALL R5 R0 K28 [0xF6EBD926]
       44 [-]: CALL R5 1 1  
       45 [-]: NAMECALL R6 R0 K29 [0x5280B883]

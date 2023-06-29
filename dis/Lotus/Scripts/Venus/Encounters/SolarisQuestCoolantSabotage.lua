@@ -5,19 +5,19 @@
 ; Is_vararg:       1
 ; Max Stack Size:  36
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x2D0FAD09]
        2 [-]: LOADK R1 K2 ["EE.Interface.Utilities"]
        3 [-]: CALL R0 1 1  
-       4 [-]: GETIMPORT R1 1 [nil]
+       4 [-]: GETIMPORT R1 1 [0x2D0FAD09]
        5 [-]: LOADK R2 K3 ["Lotus.Scripts.Libs.LandscapeLib"]
        6 [-]: CALL R1 1 1  
-       7 [-]: GETIMPORT R2 1 [nil]
+       7 [-]: GETIMPORT R2 1 [0x2D0FAD09]
        8 [-]: LOADK R3 K4 ["Lotus.Scripts.Libs.TransmissionSet"]
        9 [-]: CALL R2 1 1  
-      10 [-]: GETIMPORT R3 1 [nil]
+      10 [-]: GETIMPORT R3 1 [0x2D0FAD09]
       11 [-]: LOADK R4 K5 ["Lotus.Interface.Libs.TimerMgr"]
       12 [-]: CALL R3 1 1  
-      13 [-]: GETIMPORT R4 1 [nil]
+      13 [-]: GETIMPORT R4 1 [0x2D0FAD09]
       14 [-]: LOADK R5 K6 ["Lotus.Scripts.Libs.ObjectiveText"]
       15 [-]: CALL R4 1 1  
       16 [-]: LOADNIL R5   
@@ -56,13 +56,13 @@
       49 [-]: SETTABLEN R25 R24 6
       50 [-]: LOADN R25 3  
       51 [-]: SETTABLEN R25 R24 7
-      52 [-]: GETIMPORT R25 8 [nil]
+      52 [-]: GETIMPORT R25 8 [0x0469F296]
       53 [-]: LOADK R26 K9 ["QuestM5ConsoleHacked"]
       54 [-]: CALL R25 1 1 
-      55 [-]: GETIMPORT R26 8 [nil]
+      55 [-]: GETIMPORT R26 8 [0x0469F296]
       56 [-]: LOADK R27 K10 ["QuestM5AmarystConsole"]
       57 [-]: CALL R26 1 1 
-      58 [-]: GETIMPORT R27 8 [nil]
+      58 [-]: GETIMPORT R27 8 [0x0469F296]
       59 [-]: LOADK R28 K11 ["QuestMissionDM"]
       60 [-]: CALL R27 1 1 
       61 [-]: NEWCLOSURE R28 P0
@@ -161,7 +161,7 @@
 
        0 [-]: GETUPVAL R2 0
        1 [-]: FASTCALL1 62 R2 L0
-       2 [-]: GETIMPORT R1 1 [nil]
+       2 [-]: GETIMPORT R1 1 [0x7B998233]
        3 [-]: CALL R1 1 1  
 L 0:   4 [-]: JUMPIF R1 L2 
        5 [-]: JUMPIFNOT R0 L1
@@ -210,7 +210,7 @@ L 2:  38 [-]: RETURN R0 0
        0 [-]: GETUPVAL R1 0
        1 [-]: GETTABLEKS R0 R1 K0 [0xBD9A0502]
        2 [-]: GETUPVAL R1 1
-       3 [-]: GETIMPORT R2 2 [nil]
+       3 [-]: GETIMPORT R2 2 ["gNpcSpawnControlType"]
        4 [-]: CALL R0 2 1  
        5 [-]: GETUPVAL R3 2
        6 [-]: NAMECALL R1 R0 K3 [0x64C5C9ED]
@@ -223,21 +223,21 @@ L 2:  38 [-]: RETURN R0 0
       13 [-]: LOADNIL R2   
 L 0:  14 [-]: FASTCALL1 62 R2 L1
       15 [-]: MOVE R4 R2   
-      16 [-]: GETIMPORT R3 7 [nil]
+      16 [-]: GETIMPORT R3 7 [0x7B998233]
       17 [-]: CALL R3 1 1  
 L 1:  18 [-]: JUMPIFNOT R3 L4
       19 [-]: NAMECALL R3 R1 K8 [0x1E3535E5]
       20 [-]: CALL R3 1 1  
       21 [-]: FASTCALL1 62 R3 L2
       22 [-]: MOVE R5 R3   
-      23 [-]: GETIMPORT R4 7 [nil]
+      23 [-]: GETIMPORT R4 7 [0x7B998233]
       24 [-]: CALL R4 1 1  
 L 2:  25 [-]: JUMPIF R4 L3 
       26 [-]: SETUPVAL R3 3
       27 [-]: NAMECALL R4 R3 K9 [0xFA9E477F]
       28 [-]: CALL R4 1 1  
       29 [-]: MOVE R2 R4   
-L 3:  30 [-]: GETIMPORT R4 11 [nil]
+L 3:  30 [-]: GETIMPORT R4 11 [0xCBD666E1]
       31 [-]: LOADN R5 0   
       32 [-]: CALL R4 1 0  
       33 [-]: JUMPBACK L0  
@@ -254,7 +254,7 @@ L 4:  34 [-]: GETUPVAL R3 4
 ; Is_vararg:       0
 ; Max Stack Size:  10
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 [0x64855CED]
        1 [-]: LOADN R1 0   
        2 [-]: LOADN R4 1   
        3 [-]: LENGTH R2 R0 
@@ -263,7 +263,7 @@ L 4:  34 [-]: GETUPVAL R3 4
 L 0:   6 [-]: GETTABLE R5 R0 R4
        7 [-]: ADD R1 R1 R5 
        8 [-]: FORNLOOP R2 L0
-L 1:   9 [-]: GETIMPORT R2 4 [nil]
+L 1:   9 [-]: GETIMPORT R2 4 [0x3630E649]
       10 [-]: CALL R2 0 1  
       11 [-]: LOADN R5 1   
       12 [-]: LENGTH R3 R0 
@@ -283,7 +283,7 @@ L 3:  21 [-]: LOADK R7 K6 [1.1000000000000001]
       26 [-]: DIV R7 R8 R1 
 L 4:  27 [-]: JUMPIFNOTLE R6 R2 L5
       28 [-]: JUMPIFNOTLT R2 R7 L5
-      29 [-]: GETIMPORT R9 8 [nil]
+      29 [-]: GETIMPORT R9 8 [0xCC240205]
       30 [-]: GETTABLE R8 R9 R5
       31 [-]: RETURN R8 1  
 L 5:  32 [-]: FORNLOOP R3 L2
@@ -322,7 +322,7 @@ L 1:  13 [-]: GETUPVAL R5 1
       22 [-]: GETUPVAL R14 0
       23 [-]: NAMECALL R6 R6 K1 [0xA3871690]
       24 [-]: CALL R6 8 0  
-      25 [-]: GETIMPORT R6 3 [nil]
+      25 [-]: GETIMPORT R6 3 [0xD644C2F1]
       26 [-]: LOADK R7 K4 ["Quest: Reinforcements triggered"]
       27 [-]: CALL R6 1 0  
       28 [-]: FORNLOOP R2 L1
@@ -344,15 +344,15 @@ L 2:  29 [-]: RETURN R0 0
        5 [-]: CALL R1 3 1  
        6 [-]: FASTCALL1 62 R1 L0
        7 [-]: MOVE R3 R1   
-       8 [-]: GETIMPORT R2 2 [nil]
+       8 [-]: GETIMPORT R2 2 [0x7B998233]
        9 [-]: CALL R2 1 1  
 L 0:  10 [-]: JUMPIF R2 L1 
       11 [-]: LOADK R4 K3 ["TriggerPort"]
       12 [-]: NAMECALL R2 R1 K4 [0x8EB2112D]
       13 [-]: CALL R2 2 0  
-L 1:  14 [-]: GETIMPORT R2 6 [nil]
+L 1:  14 [-]: GETIMPORT R2 6 [0xD644C2F1]
       15 [-]: LOADK R4 K7 ["Solaris Quest: "]
-      16 [-]: GETIMPORT R7 9 [nil]
+      16 [-]: GETIMPORT R7 9 [0x64FB1586]
       17 [-]: MOVE R8 R0   
       18 [-]: CALL R7 1 1  
       19 [-]: MOVE R5 R7   
@@ -375,12 +375,12 @@ L 1:  14 [-]: GETIMPORT R2 6 [nil]
        3 [-]: GETUPVAL R2 1
        4 [-]: GETTABLEKS R1 R2 K1 [0x2BEB71D2]
        5 [-]: LOADK R2 K2 ["DEBUG STAGE: "]
-       6 [-]: GETIMPORT R3 4 [nil]
+       6 [-]: GETIMPORT R3 4 [0x64FB1586]
        7 [-]: MOVE R4 R0   
        8 [-]: CALL R3 1 -1 
        9 [-]: CALL R1 -1 0 
       10 [-]: JUMPXEQKN R0 K5 L0 NOT [1]
-      11 [-]: GETIMPORT R1 7 [nil]
+      11 [-]: GETIMPORT R1 7 [0x3D106989]
       12 [-]: LOADK R2 K8 ["Solaris United Quest: State Change: ARRIVED"]
       13 [-]: CALL R1 1 0  
       14 [-]: GETUPVAL R2 1
@@ -389,7 +389,7 @@ L 1:  14 [-]: GETIMPORT R2 6 [nil]
       17 [-]: GETUPVAL R2 2
       18 [-]: GETTABLEKS R1 R2 K10 [0x9742B85B]
       19 [-]: GETUPVAL R2 3
-      20 [-]: GETIMPORT R3 12 [nil]
+      20 [-]: GETIMPORT R3 12 [0x0469F296]
       21 [-]: GETUPVAL R5 4
       22 [-]: LOADK R6 K13 ["_Arrived"]
       23 [-]: CONCAT R4 R5 R6
@@ -405,7 +405,7 @@ L 1:  14 [-]: GETIMPORT R2 6 [nil]
       33 [-]: GETUPVAL R1 5
       34 [-]: NAMECALL R1 R1 K17 [0x383D2E7D]
       35 [-]: CALL R1 1 0  
-      36 [-]: GETIMPORT R1 19 [nil]
+      36 [-]: GETIMPORT R1 19 [0x492C7F2A]
       37 [-]: GETUPVAL R2 5
       38 [-]: NAMECALL R2 R2 K20 [0xA02EE9EF]
       39 [-]: CALL R2 1 1  
@@ -413,25 +413,25 @@ L 1:  14 [-]: GETIMPORT R2 6 [nil]
       41 [-]: NAMECALL R3 R3 K21 [0xCB3851B8]
       42 [-]: CALL R3 1 -1 
       43 [-]: CALL R1 -1 1 
-      44 [-]: GETIMPORT R2 23 [nil]
-      45 [-]: GETIMPORT R4 25 [nil]
+      44 [-]: GETIMPORT R2 23 [0x89326C93]
+      45 [-]: GETIMPORT R4 25 [0x7760462D]
       46 [-]: GETUPVAL R6 5
       47 [-]: NAMECALL R6 R6 K26 [0xD1586535]
       48 [-]: CALL R6 1 1  
       49 [-]: ADD R5 R6 R1 
-      50 [-]: GETIMPORT R6 28 [nil]
+      50 [-]: GETIMPORT R6 28 ["ZERO_ROTATION"]
       51 [-]: NAMECALL R2 R2 K29 [0x05909209]
       52 [-]: CALL R2 4 1  
       53 [-]: SETUPVAL R2 6
       54 [-]: JUMP L14
     
 L 0:  55 [-]: JUMPXEQKN R0 K30 L3 NOT [2]
-      56 [-]: GETIMPORT R1 7 [nil]
+      56 [-]: GETIMPORT R1 7 [0x3D106989]
       57 [-]: LOADK R2 K31 ["Solaris United Quest: State Change: CONSOLE_HACKED"]
       58 [-]: CALL R1 1 0  
       59 [-]: GETUPVAL R2 6
       60 [-]: FASTCALL1 62 R2 L1
-      61 [-]: GETIMPORT R1 33 [nil]
+      61 [-]: GETIMPORT R1 33 [0x7B998233]
       62 [-]: CALL R1 1 1  
 L 1:  63 [-]: JUMPIF R1 L2 
       64 [-]: GETUPVAL R1 6
@@ -439,18 +439,18 @@ L 1:  63 [-]: JUMPIF R1 L2
       66 [-]: CALL R1 1 0  
 L 2:  67 [-]: GETUPVAL R1 7
       68 [-]: CALL R1 0 0  
-      69 [-]: GETIMPORT R1 23 [nil]
-      70 [-]: GETIMPORT R3 36 [nil]
+      69 [-]: GETIMPORT R1 23 [0x89326C93]
+      70 [-]: GETIMPORT R3 36 [0x30A9FA98]
       71 [-]: GETUPVAL R5 8
       72 [-]: NAMECALL R5 R5 K26 [0xD1586535]
       73 [-]: CALL R5 1 1  
-      74 [-]: GETIMPORT R6 38 [nil]
+      74 [-]: GETIMPORT R6 38 [0xA421AF95]
       75 [-]: LOADN R7 0   
       76 [-]: LOADN R8 1   
       77 [-]: LOADN R9 0   
       78 [-]: CALL R6 3 1  
       79 [-]: ADD R4 R5 R6 
-      80 [-]: GETIMPORT R5 28 [nil]
+      80 [-]: GETIMPORT R5 28 ["ZERO_ROTATION"]
       81 [-]: NAMECALL R1 R1 K29 [0x05909209]
       82 [-]: CALL R1 4 1  
       83 [-]: SETUPVAL R1 6
@@ -463,7 +463,7 @@ L 2:  67 [-]: GETUPVAL R1 7
       90 [-]: GETUPVAL R2 2
       91 [-]: GETTABLEKS R1 R2 K10 [0x9742B85B]
       92 [-]: GETUPVAL R2 3
-      93 [-]: GETIMPORT R3 12 [nil]
+      93 [-]: GETIMPORT R3 12 [0x0469F296]
       94 [-]: GETUPVAL R5 4
       95 [-]: LOADK R6 K41 ["_Started"]
       96 [-]: CONCAT R4 R5 R6
@@ -479,19 +479,19 @@ L 2:  67 [-]: GETUPVAL R1 7
      106 [-]: JUMP L14
     
 L 3: 107 [-]: JUMPXEQKN R0 K43 L4 NOT [3]
-     108 [-]: GETIMPORT R1 7 [nil]
+     108 [-]: GETIMPORT R1 7 [0x3D106989]
      109 [-]: LOADK R2 K44 ["Solaris United Quest: State Change: DEFEND_INTRO"]
      110 [-]: CALL R1 1 0  
      111 [-]: GETUPVAL R2 2
      112 [-]: GETTABLEKS R1 R2 K10 [0x9742B85B]
      113 [-]: GETUPVAL R2 3
-     114 [-]: GETIMPORT R3 12 [nil]
+     114 [-]: GETIMPORT R3 12 [0x0469F296]
      115 [-]: GETUPVAL R5 4
      116 [-]: LOADK R6 K45 ["_StartedNef"]
      117 [-]: CONCAT R4 R5 R6
      118 [-]: CALL R3 1 -1 
      119 [-]: CALL R1 -1 0 
-     120 [-]: GETIMPORT R1 47 [nil]
+     120 [-]: GETIMPORT R1 47 [0xCBD666E1]
      121 [-]: LOADN R2 10  
      122 [-]: CALL R1 1 0  
      123 [-]: GETUPVAL R1 9
@@ -513,14 +513,14 @@ L 3: 107 [-]: JUMPXEQKN R0 K43 L4 NOT [3]
      139 [-]: GETUPVAL R2 2
      140 [-]: GETTABLEKS R1 R2 K10 [0x9742B85B]
      141 [-]: GETUPVAL R2 3
-     142 [-]: GETIMPORT R3 12 [nil]
+     142 [-]: GETIMPORT R3 12 [0x0469F296]
      143 [-]: GETUPVAL R5 4
      144 [-]: LOADK R6 K50 ["_TurnUpHeat"]
      145 [-]: CONCAT R4 R5 R6
      146 [-]: CALL R3 1 -1 
      147 [-]: CALL R1 -1 0 
      148 [-]: GETUPVAL R1 12
-     149 [-]: GETIMPORT R2 12 [nil]
+     149 [-]: GETIMPORT R2 12 [0x0469F296]
      150 [-]: LOADK R3 K51 ["SQFinalTower_Rumble"]
      151 [-]: CALL R2 1 -1 
      152 [-]: CALL R1 -1 0 
@@ -534,7 +534,7 @@ L 3: 107 [-]: JUMPXEQKN R0 K43 L4 NOT [3]
      160 [-]: JUMP L14
     
 L 4: 161 [-]: JUMPXEQKN R0 K52 L5 NOT [4]
-     162 [-]: GETIMPORT R1 7 [nil]
+     162 [-]: GETIMPORT R1 7 [0x3D106989]
      163 [-]: LOADK R2 K53 ["Solaris United Quest: State Change: DEFEND_A"]
      164 [-]: CALL R1 1 0  
      165 [-]: GETUPVAL R2 1
@@ -548,7 +548,7 @@ L 4: 161 [-]: JUMPXEQKN R0 K52 L5 NOT [4]
      173 [-]: GETUPVAL R2 2
      174 [-]: GETTABLEKS R1 R2 K10 [0x9742B85B]
      175 [-]: GETUPVAL R2 3
-     176 [-]: GETIMPORT R3 12 [nil]
+     176 [-]: GETIMPORT R3 12 [0x0469F296]
      177 [-]: GETUPVAL R5 4
      178 [-]: LOADK R6 K56 ["_DefendStart"]
      179 [-]: CONCAT R4 R5 R6
@@ -557,72 +557,72 @@ L 4: 161 [-]: JUMPXEQKN R0 K52 L5 NOT [4]
      182 [-]: JUMP L14
     
 L 5: 183 [-]: JUMPXEQKN R0 K57 L6 NOT [5]
-     184 [-]: GETIMPORT R1 7 [nil]
+     184 [-]: GETIMPORT R1 7 [0x3D106989]
      185 [-]: LOADK R2 K58 ["Solaris United Quest: State Change: DEFEND_B"]
      186 [-]: CALL R1 1 0  
      187 [-]: GETUPVAL R2 2
      188 [-]: GETTABLEKS R1 R2 K10 [0x9742B85B]
      189 [-]: GETUPVAL R2 3
-     190 [-]: GETIMPORT R3 12 [nil]
+     190 [-]: GETIMPORT R3 12 [0x0469F296]
      191 [-]: GETUPVAL R5 4
      192 [-]: LOADK R6 K59 ["_EventA"]
      193 [-]: CONCAT R4 R5 R6
      194 [-]: CALL R3 1 -1 
      195 [-]: CALL R1 -1 0 
      196 [-]: GETUPVAL R1 12
-     197 [-]: GETIMPORT R2 12 [nil]
+     197 [-]: GETIMPORT R2 12 [0x0469F296]
      198 [-]: LOADK R3 K60 ["SQFinalTower_Smoke"]
      199 [-]: CALL R2 1 -1 
      200 [-]: CALL R1 -1 0 
      201 [-]: JUMP L14
     
 L 6: 202 [-]: JUMPXEQKN R0 K61 L7 NOT [6]
-     203 [-]: GETIMPORT R1 7 [nil]
+     203 [-]: GETIMPORT R1 7 [0x3D106989]
      204 [-]: LOADK R2 K62 ["Solaris United Quest: State Change: DEFEND_C"]
      205 [-]: CALL R1 1 0  
      206 [-]: GETUPVAL R2 2
      207 [-]: GETTABLEKS R1 R2 K10 [0x9742B85B]
      208 [-]: GETUPVAL R2 3
-     209 [-]: GETIMPORT R3 12 [nil]
+     209 [-]: GETIMPORT R3 12 [0x0469F296]
      210 [-]: GETUPVAL R5 4
      211 [-]: LOADK R6 K63 ["_EventB"]
      212 [-]: CONCAT R4 R5 R6
      213 [-]: CALL R3 1 -1 
      214 [-]: CALL R1 -1 0 
      215 [-]: GETUPVAL R1 12
-     216 [-]: GETIMPORT R2 12 [nil]
+     216 [-]: GETIMPORT R2 12 [0x0469F296]
      217 [-]: LOADK R3 K64 ["SQFinalTower_Glow"]
      218 [-]: CALL R2 1 -1 
      219 [-]: CALL R1 -1 0 
      220 [-]: JUMP L14
     
 L 7: 221 [-]: JUMPXEQKN R0 K65 L8 NOT [7]
-     222 [-]: GETIMPORT R1 7 [nil]
+     222 [-]: GETIMPORT R1 7 [0x3D106989]
      223 [-]: LOADK R2 K66 ["Solaris United Quest: State Change: DEFEND_D"]
      224 [-]: CALL R1 1 0  
      225 [-]: GETUPVAL R2 2
      226 [-]: GETTABLEKS R1 R2 K10 [0x9742B85B]
      227 [-]: GETUPVAL R2 3
-     228 [-]: GETIMPORT R3 12 [nil]
+     228 [-]: GETIMPORT R3 12 [0x0469F296]
      229 [-]: GETUPVAL R5 4
      230 [-]: LOADK R6 K67 ["_EventC"]
      231 [-]: CONCAT R4 R5 R6
      232 [-]: CALL R3 1 -1 
      233 [-]: CALL R1 -1 0 
      234 [-]: GETUPVAL R1 12
-     235 [-]: GETIMPORT R2 12 [nil]
+     235 [-]: GETIMPORT R2 12 [0x0469F296]
      236 [-]: LOADK R3 K68 ["SQFinalTower_Shockwave"]
      237 [-]: CALL R2 1 -1 
      238 [-]: CALL R1 -1 0 
      239 [-]: JUMP L14
     
 L 8: 240 [-]: JUMPXEQKN R0 K69 L11 NOT [8]
-     241 [-]: GETIMPORT R1 7 [nil]
+     241 [-]: GETIMPORT R1 7 [0x3D106989]
      242 [-]: LOADK R2 K70 ["Solaris United Quest: State Change: DEFEND_DONE"]
      243 [-]: CALL R1 1 0  
      244 [-]: GETUPVAL R2 6
      245 [-]: FASTCALL1 62 R2 L9
-     246 [-]: GETIMPORT R1 33 [nil]
+     246 [-]: GETIMPORT R1 33 [0x7B998233]
      247 [-]: CALL R1 1 1  
 L 9: 248 [-]: JUMPIF R1 L10
      249 [-]: GETUPVAL R1 6
@@ -631,7 +631,7 @@ L 9: 248 [-]: JUMPIF R1 L10
 L10: 252 [-]: GETUPVAL R2 2
      253 [-]: GETTABLEKS R1 R2 K10 [0x9742B85B]
      254 [-]: GETUPVAL R2 3
-     255 [-]: GETIMPORT R3 12 [nil]
+     255 [-]: GETIMPORT R3 12 [0x0469F296]
      256 [-]: GETUPVAL R5 4
      257 [-]: LOADK R6 K71 ["_DefendStop"]
      258 [-]: CONCAT R4 R5 R6
@@ -661,7 +661,7 @@ L10: 252 [-]: GETUPVAL R2 2
      282 [-]: JUMP L14
     
 L11: 283 [-]: JUMPXEQKN R0 K75 L12 NOT [9]
-     284 [-]: GETIMPORT R1 7 [nil]
+     284 [-]: GETIMPORT R1 7 [0x3D106989]
      285 [-]: LOADK R2 K76 ["Solaris United Quest: State Change: AMARYST"]
      286 [-]: CALL R1 1 0  
      287 [-]: GETUPVAL R2 1
@@ -677,30 +677,30 @@ L11: 283 [-]: JUMPXEQKN R0 K75 L12 NOT [9]
      297 [-]: JUMP L14
     
 L12: 298 [-]: JUMPXEQKN R0 K79 L13 NOT [10]
-     299 [-]: GETIMPORT R1 7 [nil]
+     299 [-]: GETIMPORT R1 7 [0x3D106989]
      300 [-]: LOADK R2 K80 ["Solaris United Quest: State Change: COMPLETE"]
      301 [-]: CALL R1 1 0  
      302 [-]: GETUPVAL R2 2
      303 [-]: GETTABLEKS R1 R2 K10 [0x9742B85B]
      304 [-]: GETUPVAL R2 3
-     305 [-]: GETIMPORT R3 12 [nil]
+     305 [-]: GETIMPORT R3 12 [0x0469F296]
      306 [-]: GETUPVAL R5 4
      307 [-]: LOADK R6 K81 ["_Done"]
      308 [-]: CONCAT R4 R5 R6
      309 [-]: CALL R3 1 -1 
      310 [-]: CALL R1 -1 0 
      311 [-]: GETUPVAL R1 12
-     312 [-]: GETIMPORT R2 12 [nil]
+     312 [-]: GETIMPORT R2 12 [0x0469F296]
      313 [-]: LOADK R3 K82 ["SQFinalTower_Cooldown"]
      314 [-]: CALL R2 1 -1 
      315 [-]: CALL R1 -1 0 
      316 [-]: JUMP L14
     
 L13: 317 [-]: JUMPXEQKN R0 K83 L14 NOT [11]
-     318 [-]: GETIMPORT R1 7 [nil]
+     318 [-]: GETIMPORT R1 7 [0x3D106989]
      319 [-]: LOADK R2 K84 ["Solaris United Quest: State Change: FAILED"]
      320 [-]: CALL R1 1 0  
-     321 [-]: GETIMPORT R1 47 [nil]
+     321 [-]: GETIMPORT R1 47 [0xCBD666E1]
      322 [-]: LOADN R2 3   
      323 [-]: CALL R1 1 0  
 L14: 324 [-]: LOADN R1 10  
@@ -730,10 +730,10 @@ L15: 341 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  8
 
-       0 [-]: GETIMPORT R1 1 [nil]
+       0 [-]: GETIMPORT R1 1 [0x3D106989]
        1 [-]: LOADK R2 K2 ["Solaris United Quest: Initializing..."]
        2 [-]: CALL R1 1 0  
-       3 [-]: GETIMPORT R1 4 [nil]
+       3 [-]: GETIMPORT R1 4 [0x89326C93]
        4 [-]: NAMECALL R1 R1 K5 [0x29EF273D]
        5 [-]: CALL R1 1 1  
        6 [-]: NAMECALL R1 R1 K6 [0x66905CB0]
@@ -743,11 +743,11 @@ L 0:   9 [-]: GETUPVAL R1 0
       10 [-]: NAMECALL R1 R1 K7 [0xA2D83ED4]
       11 [-]: CALL R1 1 1  
       12 [-]: JUMPIF R1 L1 
-      13 [-]: GETIMPORT R1 9 [nil]
+      13 [-]: GETIMPORT R1 9 [0xCBD666E1]
       14 [-]: LOADN R2 0   
       15 [-]: CALL R1 1 0  
       16 [-]: JUMPBACK L0  
-L 1:  17 [-]: GETIMPORT R1 11 [nil]
+L 1:  17 [-]: GETIMPORT R1 11 [0xBE190284]
       18 [-]: SETUPVAL R1 1
       19 [-]: SETUPVAL R0 2
       20 [-]: NAMECALL R1 R0 K12 [0x891629FA]
@@ -770,7 +770,7 @@ L 1:  17 [-]: GETIMPORT R1 11 [nil]
       37 [-]: NAMECALL R1 R1 K17 [0xE4C355E2]
       38 [-]: CALL R1 1 1  
       39 [-]: SETUPVAL R1 8
-      40 [-]: GETIMPORT R1 4 [nil]
+      40 [-]: GETIMPORT R1 4 [0x89326C93]
       41 [-]: NAMECALL R1 R1 K18 [0x7D108DDB]
       42 [-]: CALL R1 1 1  
       43 [-]: SETUPVAL R1 9
@@ -800,8 +800,8 @@ L 1:  17 [-]: GETIMPORT R1 11 [nil]
       67 [-]: GETUPVAL R2 13
       68 [-]: GETTABLEKS R1 R2 K23 [0xBD9A0502]
       69 [-]: GETUPVAL R2 3
-      70 [-]: GETIMPORT R3 25 [nil]
-      71 [-]: GETIMPORT R4 27 [nil]
+      70 [-]: GETIMPORT R3 25 ["gContextActionType"]
+      71 [-]: GETIMPORT R4 27 [0x0469F296]
       72 [-]: LOADK R5 K28 ["SolarisQuestM5DefendConsole"]
       73 [-]: CALL R4 1 -1 
       74 [-]: CALL R1 -1 1 
@@ -809,25 +809,25 @@ L 1:  17 [-]: GETIMPORT R1 11 [nil]
       76 [-]: GETUPVAL R2 13
       77 [-]: GETTABLEKS R1 R2 K23 [0xBD9A0502]
       78 [-]: GETUPVAL R2 3
-      79 [-]: GETIMPORT R3 25 [nil]
-      80 [-]: GETIMPORT R4 27 [nil]
+      79 [-]: GETIMPORT R3 25 ["gContextActionType"]
+      80 [-]: GETIMPORT R4 27 [0x0469F296]
       81 [-]: LOADK R5 K29 ["SolarisQuestM5AmarystConsole"]
       82 [-]: CALL R4 1 -1 
       83 [-]: CALL R1 -1 1 
       84 [-]: SETUPVAL R1 20
       85 [-]: LOADK R3 K30 ["PlayersLeaving"]
-      86 [-]: GETIMPORT R4 27 [nil]
+      86 [-]: GETIMPORT R4 27 [0x0469F296]
       87 [-]: LOADK R5 K31 ["LeavingCB"]
       88 [-]: CALL R4 1 -1 
       89 [-]: NAMECALL R1 R0 K32 [0xE19C3F44]
       90 [-]: CALL R1 -1 0 
       91 [-]: LOADK R3 K33 ["PlayersReturning"]
-      92 [-]: GETIMPORT R4 27 [nil]
+      92 [-]: GETIMPORT R4 27 [0x0469F296]
       93 [-]: LOADK R5 K34 ["ReturningCB"]
       94 [-]: CALL R4 1 -1 
       95 [-]: NAMECALL R1 R0 K35 [0x3F86F5A0]
       96 [-]: CALL R1 -1 0 
-      97 [-]: GETIMPORT R1 1 [nil]
+      97 [-]: GETIMPORT R1 1 [0x3D106989]
       98 [-]: LOADK R2 K36 ["Solaris United Quest: Initialize complete"]
       99 [-]: CALL R1 1 0  
      100 [-]: GETUPVAL R1 2
@@ -866,7 +866,7 @@ L 5: 126 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  13
 
-       0 [-]: GETIMPORT R1 1 [nil]
+       0 [-]: GETIMPORT R1 1 [0x3D106989]
        1 [-]: LOADK R2 K2 ["Solaris United Quest: Started"]
        2 [-]: CALL R1 1 0  
        3 [-]: GETUPVAL R1 0
@@ -883,7 +883,7 @@ L 0:  11 [-]: LOADN R6 10
       14 [-]: CALL R6 1 1  
       15 [-]: LOADN R7 4   
       16 [-]: JUMPIFNOTLT R6 R7 L14
-      17 [-]: GETIMPORT R6 5 [nil]
+      17 [-]: GETIMPORT R6 5 [0xFFF641AF]
       18 [-]: CALL R6 0 1  
       19 [-]: MOVE R4 R6   
       20 [-]: GETUPVAL R6 1
@@ -895,7 +895,7 @@ L 0:  11 [-]: LOADN R6 10
       26 [-]: NAMECALL R6 R6 K8 [0xF37943FF]
       27 [-]: CALL R6 1 1  
       28 [-]: JUMPIF R6 L12
-      29 [-]: GETIMPORT R6 1 [nil]
+      29 [-]: GETIMPORT R6 1 [0x3D106989]
       30 [-]: LOADK R7 K9 ["Solaris United Quest: ARRIVED: Console hack detected"]
       31 [-]: CALL R6 1 0  
       32 [-]: GETUPVAL R6 1
@@ -912,7 +912,7 @@ L 1:  37 [-]: LOADN R6 4
       42 [-]: DIVK R8 R3 K12 [180]
       43 [-]: MULK R7 R8 K11 [100]
       44 [-]: FASTCALL1 12 R7 L2
-      45 [-]: GETIMPORT R6 15 [nil]
+      45 [-]: GETIMPORT R6 15 [0x55F27C30]
       46 [-]: CALL R6 1 1  
 L 2:  47 [-]: GETUPVAL R8 3
       48 [-]: GETTABLEKS R7 R8 K16 [0x03FC64EF]
@@ -924,7 +924,7 @@ L 2:  47 [-]: GETUPVAL R8 3
       54 [-]: JUMPIFNOTLE R1 R7 L3
       55 [-]: GETUPVAL R7 4
       56 [-]: CALL R7 0 0  
-      57 [-]: GETIMPORT R7 18 [nil]
+      57 [-]: GETIMPORT R7 18 [0x9BAFFFE3]
       58 [-]: LOADN R8 13  
       59 [-]: LOADN R9 4   
       60 [-]: DIVK R10 R6 K11 [100]
@@ -951,14 +951,14 @@ L 6:  78 [-]: GETUPVAL R7 7
       81 [-]: FASTCALL2 18 R7 R2 L7
       82 [-]: MOVE R9 R7   
       83 [-]: MOVE R10 R2  
-      84 [-]: GETIMPORT R8 21 [nil]
+      84 [-]: GETIMPORT R8 21 [0xB62ECFE0]
       85 [-]: CALL R8 2 1  
 L 7:  86 [-]: JUMPIFNOTLT R7 R8 L8
       87 [-]: GETUPVAL R9 7
       88 [-]: MOVE R11 R8  
       89 [-]: NAMECALL R9 R9 K22 [0x27D04ADD]
       90 [-]: CALL R9 2 0  
-      91 [-]: GETIMPORT R9 24 [nil]
+      91 [-]: GETIMPORT R9 24 [0xD644C2F1]
       92 [-]: LOADK R11 K25 ["Base Capture: Alert level increased to "]
       93 [-]: MOVE R12 R8  
       94 [-]: CONCAT R10 R11 R12
@@ -974,7 +974,7 @@ L 8:  96 [-]: JUMPXEQKN R5 K26 L9 NOT [7]
     
 L 9: 104 [-]: GETUPVAL R10 8
      105 [-]: FASTCALL1 62 R10 L10
-     106 [-]: GETIMPORT R9 28 [nil]
+     106 [-]: GETIMPORT R9 28 [0x7B998233]
      107 [-]: CALL R9 1 1  
 L10: 108 [-]: JUMPIF R9 L12
      109 [-]: GETUPVAL R9 8
@@ -993,7 +993,7 @@ L11: 119 [-]: JUMPXEQKN R5 K30 L12 NOT [9]
      121 [-]: NAMECALL R6 R6 K8 [0xF37943FF]
      122 [-]: CALL R6 1 1  
      123 [-]: JUMPIF R6 L12
-     124 [-]: GETIMPORT R6 1 [nil]
+     124 [-]: GETIMPORT R6 1 [0x3D106989]
      125 [-]: LOADK R7 K31 ["Solaris United Quest: AMARYST: Console hack detected"]
      126 [-]: CALL R6 1 0  
      127 [-]: GETUPVAL R6 1
@@ -1014,7 +1014,7 @@ L12: 131 [-]: GETUPVAL R6 10
      142 [-]: LOADN R8 11  
      143 [-]: NAMECALL R6 R6 K10 [0x8ABFF40E]
      144 [-]: CALL R6 2 0  
-L13: 145 [-]: GETIMPORT R6 36 [nil]
+L13: 145 [-]: GETIMPORT R6 36 [0xCBD666E1]
      146 [-]: LOADN R7 0   
      147 [-]: CALL R6 1 0  
      148 [-]: JUMPBACK L0  
@@ -1029,12 +1029,12 @@ L15: 155 [-]: GETUPVAL R6 12
      156 [-]: LOADN R8 4   
      157 [-]: NAMECALL R6 R6 K38 [0xFE9DC265]
      158 [-]: CALL R6 2 0  
-L16: 159 [-]: GETIMPORT R8 40 [nil]
+L16: 159 [-]: GETIMPORT R8 40 [0x0469F296]
      160 [-]: LOADK R9 K41 ["LeavingCB"]
      161 [-]: CALL R8 1 -1 
      162 [-]: NAMECALL R6 R0 K42 [0x3D412E0D]
      163 [-]: CALL R6 -1 0 
-     164 [-]: GETIMPORT R8 40 [nil]
+     164 [-]: GETIMPORT R8 40 [0x0469F296]
      165 [-]: LOADK R9 K43 ["ReturningCB"]
      166 [-]: CALL R8 1 -1 
      167 [-]: NAMECALL R6 R0 K44 [0x136A027D]
@@ -1069,7 +1069,7 @@ L16: 159 [-]: GETIMPORT R8 40 [nil]
 ; Is_vararg:       0
 ; Max Stack Size:  3
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 [0x3D106989]
        1 [-]: LOADK R1 K2 ["Solaris United Quest: Players abandoning objective"]
        2 [-]: CALL R0 1 0  
        3 [-]: GETUPVAL R1 0
@@ -1087,7 +1087,7 @@ L16: 159 [-]: GETIMPORT R8 40 [nil]
 ; Is_vararg:       0
 ; Max Stack Size:  3
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 [0x3D106989]
        1 [-]: LOADK R1 K2 ["Solaris United Quest: Players returned"]
        2 [-]: CALL R0 1 0  
        3 [-]: GETUPVAL R1 0

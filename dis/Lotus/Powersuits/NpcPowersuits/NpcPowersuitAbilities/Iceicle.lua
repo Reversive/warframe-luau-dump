@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  3
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x0469F296]
        2 [-]: LOADK R1 K2 ["IcicleAtten"]
        3 [-]: CALL R0 1 1  
        4 [-]: DUPCLOSURE R1 K3 []
@@ -27,7 +27,7 @@
 
        0 [-]: FASTCALL1 62 R0 L0
        1 [-]: MOVE R2 R0   
-       2 [-]: GETIMPORT R1 1 [nil]
+       2 [-]: GETIMPORT R1 1 [0x7B998233]
        3 [-]: CALL R1 1 1  
 L 0:   4 [-]: JUMPIFNOT R1 L1
        5 [-]: RETURN R0 0  
@@ -35,12 +35,12 @@ L 1:   6 [-]: GETUPVAL R3 0
        7 [-]: LOADK R4 K2 [0.59999999999999998]
        8 [-]: NAMECALL R1 R0 K3 [0x9D668F53]
        9 [-]: CALL R1 3 0  
-      10 [-]: GETIMPORT R1 5 [nil]
-      11 [-]: GETIMPORT R2 7 [nil]
+      10 [-]: GETIMPORT R1 5 [0xCBD666E1]
+      11 [-]: GETIMPORT R2 7 [0xE15169D2]
       12 [-]: CALL R1 1 0  
       13 [-]: FASTCALL1 62 R0 L2
       14 [-]: MOVE R2 R0   
-      15 [-]: GETIMPORT R1 1 [nil]
+      15 [-]: GETIMPORT R1 1 [0x7B998233]
       16 [-]: CALL R1 1 1  
 L 2:  17 [-]: JUMPIF R1 L3 
       18 [-]: GETUPVAL R3 0
@@ -58,7 +58,7 @@ L 3:  21 [-]: RETURN R0 0
 
        0 [-]: FASTCALL1 62 R2 L0
        1 [-]: MOVE R4 R2   
-       2 [-]: GETIMPORT R3 1 [nil]
+       2 [-]: GETIMPORT R3 1 [0x7B998233]
        3 [-]: CALL R3 1 1  
 L 0:   4 [-]: JUMPIFNOT R3 L1
        5 [-]: RETURN R0 0  
@@ -66,12 +66,12 @@ L 1:   6 [-]: GETUPVAL R5 0
        7 [-]: LOADK R6 K2 [0.59999999999999998]
        8 [-]: NAMECALL R3 R2 K3 [0x9D668F53]
        9 [-]: CALL R3 3 0  
-      10 [-]: GETIMPORT R3 5 [nil]
-      11 [-]: GETIMPORT R4 7 [nil]
+      10 [-]: GETIMPORT R3 5 [0xCBD666E1]
+      11 [-]: GETIMPORT R4 7 [0xE15169D2]
       12 [-]: CALL R3 1 0  
       13 [-]: FASTCALL1 62 R2 L2
       14 [-]: MOVE R4 R2   
-      15 [-]: GETIMPORT R3 1 [nil]
+      15 [-]: GETIMPORT R3 1 [0x7B998233]
       16 [-]: CALL R3 1 1  
 L 2:  17 [-]: JUMPIF R3 L3 
       18 [-]: GETUPVAL R5 0
@@ -87,7 +87,7 @@ L 3:  21 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  11
 
-       0 [-]: GETIMPORT R1 1 [nil]
+       0 [-]: GETIMPORT R1 1 [0x89326C93]
        1 [-]: NAMECALL R1 R1 K2 [0x18D05D30]
        2 [-]: CALL R1 1 1  
        3 [-]: JUMPIFNOT R1 L2
@@ -101,14 +101,14 @@ L 3:  21 [-]: RETURN R0 0
       11 [-]: CALL R3 1 1  
       12 [-]: NAMECALL R4 R3 K6 [0xF7D48EE0]
       13 [-]: CALL R4 1 1  
-      14 [-]: GETIMPORT R5 9 [nil]
+      14 [-]: GETIMPORT R5 9 [0x733FC736]
       15 [-]: LOADB R6 1   
       16 [-]: CALL R5 1 1  
       17 [-]: MOVE R8 R1   
       18 [-]: NAMECALL R6 R5 K10 [0x277BF617]
       19 [-]: CALL R6 2 0  
-      20 [-]: GETIMPORT R8 12 [nil]
-      21 [-]: GETIMPORT R9 14 [nil]
+      20 [-]: GETIMPORT R8 12 [0x52D433A4]
+      21 [-]: GETIMPORT R9 14 [0x0469F296]
       22 [-]: LOADK R10 K15 ["OnHit"]
       23 [-]: CALL R9 1 1  
       24 [-]: MOVE R10 R5  
@@ -116,7 +116,7 @@ L 3:  21 [-]: RETURN R0 0
       26 [-]: CALL R6 4 0  
 L 0:  27 [-]: FASTCALL1 62 R0 L1
       28 [-]: MOVE R4 R0   
-      29 [-]: GETIMPORT R3 18 [nil]
+      29 [-]: GETIMPORT R3 18 [0x7B998233]
       30 [-]: CALL R3 1 1  
 L 1:  31 [-]: JUMPIF R3 L2 
       32 [-]: NAMECALL R3 R0 K19 [0xA2880940]

@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  6
 
-            1 [-]: NEWTABLE R0 0 4
+       1 [-]: NEWTABLE R0 0 4
        2 [-]: LOADN R1 10  
        3 [-]: LOADN R2 20  
        4 [-]: LOADN R3 30  
@@ -39,7 +39,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  6
 
-       0 [-]: GETIMPORT R1 1 [nil]
+       0 [-]: GETIMPORT R1 1 [0x42DCC9F5]
        1 [-]: MOVE R2 R0   
        2 [-]: LOADN R3 1   
        3 [-]: GETUPVAL R5 0
@@ -58,7 +58,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  6
 
-       0 [-]: GETIMPORT R1 1 [nil]
+       0 [-]: GETIMPORT R1 1 [0x42DCC9F5]
        1 [-]: MOVE R2 R0   
        2 [-]: LOADN R3 1   
        3 [-]: GETUPVAL R5 0
@@ -79,7 +79,7 @@
 
        0 [-]: DUPTABLE R1 2
        1 [-]: MOVE R3 R0   
-       2 [-]: GETIMPORT R4 4 [nil]
+       2 [-]: GETIMPORT R4 4 [0x42DCC9F5]
        3 [-]: MOVE R5 R3   
        4 [-]: LOADN R6 1   
        5 [-]: GETUPVAL R8 0
@@ -90,7 +90,7 @@
       10 [-]: GETTABLE R2 R4 R3
       11 [-]: SETTABLEKS R2 R1 K0 ["DAMAGE"]
       12 [-]: MOVE R3 R0   
-      13 [-]: GETIMPORT R4 4 [nil]
+      13 [-]: GETIMPORT R4 4 [0x42DCC9F5]
       14 [-]: MOVE R5 R3   
       15 [-]: LOADN R6 1   
       16 [-]: GETUPVAL R8 1
@@ -100,7 +100,7 @@
       20 [-]: GETUPVAL R4 1
       21 [-]: GETTABLE R2 R4 R3
       22 [-]: SETTABLEKS R2 R1 K1 ["RADIUS"]
-      23 [-]: GETIMPORT R2 7 [nil]
+      23 [-]: GETIMPORT R2 7 [0xB139D7BC]
       24 [-]: MOVE R3 R1   
       25 [-]: CALL R2 1 -1 
       26 [-]: RETURN R2 -1 
@@ -115,22 +115,22 @@
 
        0 [-]: FASTCALL1 62 R0 L0
        1 [-]: MOVE R5 R0   
-       2 [-]: GETIMPORT R4 1 [nil]
+       2 [-]: GETIMPORT R4 1 [0x7B998233]
        3 [-]: CALL R4 1 1  
 L 0:   4 [-]: JUMPIF R4 L2 
        5 [-]: NAMECALL R4 R0 K2 [0x020D4331]
        6 [-]: CALL R4 1 1  
        7 [-]: FASTCALL1 62 R4 L1
        8 [-]: MOVE R6 R4   
-       9 [-]: GETIMPORT R5 1 [nil]
+       9 [-]: GETIMPORT R5 1 [0x7B998233]
       10 [-]: CALL R5 1 1  
 L 1:  11 [-]: JUMPIF R5 L2 
-      12 [-]: GETIMPORT R7 4 [nil]
+      12 [-]: GETIMPORT R7 4 ["gHoverboardMotionControllerType"]
       13 [-]: NAMECALL R5 R4 K5 [0xF2DEAF69]
       14 [-]: CALL R5 2 1  
       15 [-]: JUMPIFNOT R5 L2
       16 [-]: MOVE R8 R2   
-      17 [-]: GETIMPORT R9 7 [nil]
+      17 [-]: GETIMPORT R9 7 [0x42DCC9F5]
       18 [-]: MOVE R10 R8  
       19 [-]: LOADN R11 1  
       20 [-]: GETUPVAL R13 0
@@ -140,7 +140,7 @@ L 1:  11 [-]: JUMPIF R5 L2
       24 [-]: GETUPVAL R9 0
       25 [-]: GETTABLE R7 R9 R8
       26 [-]: MOVE R9 R2   
-      27 [-]: GETIMPORT R10 7 [nil]
+      27 [-]: GETIMPORT R10 7 [0x42DCC9F5]
       28 [-]: MOVE R11 R9  
       29 [-]: LOADN R12 1  
       30 [-]: GETUPVAL R14 1

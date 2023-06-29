@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  2
 
-            1 [-]: DUPCLOSURE R0 K0 []
+       1 [-]: DUPCLOSURE R0 K0 []
        2 [-]: DUPCLOSURE R1 K1 []
        3 [-]: SETGLOBAL R1 K2 ["OverrideBossDamage"]
        4 [-]: DUPCLOSURE R1 K3 []
@@ -48,18 +48,18 @@ L 2:  17 [-]: LOADN R5 1
 ; Is_vararg:       0
 ; Max Stack Size:  15
 
-       0 [-]: GETIMPORT R1 1 [nil]
+       0 [-]: GETIMPORT R1 1 [0x89326C93]
        1 [-]: NAMECALL R1 R1 K2 [0x18D05D30]
        2 [-]: CALL R1 1 1  
        3 [-]: JUMPIFNOT R1 L10
-       4 [-]: GETIMPORT R1 4 [nil]
+       4 [-]: GETIMPORT R1 4 [0xCBD666E1]
        5 [-]: LOADK R2 K5 [0.10000000000000001]
        6 [-]: CALL R1 1 0  
-       7 [-]: GETIMPORT R2 8 [nil]
-       8 [-]: GETIMPORT R3 10 [nil]
-       9 [-]: GETIMPORT R4 12 [nil]
-      10 [-]: GETIMPORT R5 14 [nil]
-      11 [-]: GETIMPORT R6 16 [nil]
+       7 [-]: GETIMPORT R2 8 ["weaponConclave"]
+       8 [-]: GETIMPORT R3 10 [0x7003E7BE]
+       9 [-]: GETIMPORT R4 12 [0x6DAC8800]
+      10 [-]: GETIMPORT R5 14 [0x46800B00]
+      11 [-]: GETIMPORT R6 16 [0xEDA71A56]
       12 [-]: LOADNIL R7   
       13 [-]: JUMPIFNOTLT R3 R2 L0
       14 [-]: JUMPIFNOTLE R2 R4 L0
@@ -82,11 +82,11 @@ L 1:  26 [-]: JUMPXEQKN R2 K17 L2 NOT [1]
      
 L 2:  29 [-]: LOADN R7 1   
 L 3:  30 [-]: MOVE R1 R7   
-      31 [-]: GETIMPORT R3 8 [nil]
-      32 [-]: GETIMPORT R4 19 [nil]
-      33 [-]: GETIMPORT R5 21 [nil]
-      34 [-]: GETIMPORT R6 23 [nil]
-      35 [-]: GETIMPORT R7 25 [nil]
+      31 [-]: GETIMPORT R3 8 ["weaponConclave"]
+      32 [-]: GETIMPORT R4 19 [0xB9F2AE75]
+      33 [-]: GETIMPORT R5 21 [0xB59C42A3]
+      34 [-]: GETIMPORT R6 23 [0x97C8B71F]
+      35 [-]: GETIMPORT R7 25 [0xB750A6A9]
       36 [-]: LOADNIL R8   
       37 [-]: JUMPIFNOTLT R4 R3 L4
       38 [-]: JUMPIFNOTLE R3 R5 L4
@@ -115,43 +115,43 @@ L 7:  54 [-]: MOVE R2 R8
       58 [-]: LOADK R4 K26 [3.4028234663852886e+38]
       59 [-]: MINUS R3 R4  
       60 [-]: JUMPIFNOTLT R1 R3 L9
-L 8:  61 [-]: GETIMPORT R3 28 [nil]
+L 8:  61 [-]: GETIMPORT R3 28 [0x3D106989]
       62 [-]: LOADK R5 K29 ["NaN health dmg mod. "]
-      63 [-]: GETIMPORT R13 31 [nil]
+      63 [-]: GETIMPORT R13 31 [0x64FB1586]
       64 [-]: MOVE R14 R1  
       65 [-]: CALL R13 1 1 
       66 [-]: MOVE R6 R13  
       67 [-]: LOADK R7 K32 [" - Conclave="]
-      68 [-]: GETIMPORT R13 31 [nil]
-      69 [-]: GETIMPORT R14 8 [nil]
+      68 [-]: GETIMPORT R13 31 [0x64FB1586]
+      69 [-]: GETIMPORT R14 8 ["weaponConclave"]
       70 [-]: CALL R13 1 1 
       71 [-]: MOVE R8 R13  
       72 [-]: LOADK R9 K33 [", min rank="]
-      73 [-]: GETIMPORT R13 31 [nil]
-      74 [-]: GETIMPORT R14 10 [nil]
+      73 [-]: GETIMPORT R13 31 [0x64FB1586]
+      74 [-]: GETIMPORT R14 10 [0x7003E7BE]
       75 [-]: CALL R13 1 1 
       76 [-]: MOVE R10 R13 
       77 [-]: LOADK R11 K34 [", max rank="]
-      78 [-]: GETIMPORT R12 31 [nil]
-      79 [-]: GETIMPORT R13 12 [nil]
+      78 [-]: GETIMPORT R12 31 [0x64FB1586]
+      79 [-]: GETIMPORT R13 12 [0x6DAC8800]
       80 [-]: CALL R12 1 1 
       81 [-]: CONCAT R4 R5 R12
       82 [-]: CALL R3 1 0  
-      83 [-]: GETIMPORT R3 28 [nil]
+      83 [-]: GETIMPORT R3 28 [0x3D106989]
       84 [-]: LOADK R5 K35 ["Min mod="]
-      85 [-]: GETIMPORT R9 31 [nil]
-      86 [-]: GETIMPORT R10 14 [nil]
+      85 [-]: GETIMPORT R9 31 [0x64FB1586]
+      86 [-]: GETIMPORT R10 14 [0x46800B00]
       87 [-]: CALL R9 1 1  
       88 [-]: MOVE R6 R9   
       89 [-]: LOADK R7 K36 [", max mod="]
-      90 [-]: GETIMPORT R8 31 [nil]
-      91 [-]: GETIMPORT R9 16 [nil]
+      90 [-]: GETIMPORT R8 31 [0x64FB1586]
+      91 [-]: GETIMPORT R9 16 [0xEDA71A56]
       92 [-]: CALL R8 1 1  
       93 [-]: CONCAT R4 R5 R8
       94 [-]: CALL R3 1 0  
 L 9:  95 [-]: NAMECALL R3 R0 K37 [0x1AC1655C]
       96 [-]: CALL R3 1 1  
-      97 [-]: GETIMPORT R5 39 [nil]
+      97 [-]: GETIMPORT R5 39 [0x0469F296]
       98 [-]: LOADK R6 K40 ["BossHealthDmgMod"]
       99 [-]: CALL R5 1 1  
      100 [-]: LOADN R6 25  
@@ -161,7 +161,7 @@ L 9:  95 [-]: NAMECALL R3 R0 K37 [0x1AC1655C]
      104 [-]: CALL R3 5 0  
      105 [-]: NAMECALL R3 R0 K37 [0x1AC1655C]
      106 [-]: CALL R3 1 1  
-     107 [-]: GETIMPORT R5 39 [nil]
+     107 [-]: GETIMPORT R5 39 [0x0469F296]
      108 [-]: LOADK R6 K42 ["BossShieldDmgMod"]
      109 [-]: CALL R5 1 1  
      110 [-]: LOADN R6 25  
@@ -179,27 +179,27 @@ L10: 115 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  16
 
-       0 [-]: GETIMPORT R1 1 [nil]
+       0 [-]: GETIMPORT R1 1 [0x89326C93]
        1 [-]: NAMECALL R1 R1 K2 [0x18D05D30]
        2 [-]: CALL R1 1 1  
        3 [-]: JUMPIFNOT R1 L25
-L 0:   4 [-]: GETIMPORT R2 5 [nil]
+L 0:   4 [-]: GETIMPORT R2 5 ["weaponConclave"]
        5 [-]: FASTCALL1 62 R2 L1
-       6 [-]: GETIMPORT R1 7 [nil]
+       6 [-]: GETIMPORT R1 7 [0x7B998233]
        7 [-]: CALL R1 1 1  
 L 1:   8 [-]: JUMPIFNOT R1 L2
-       9 [-]: GETIMPORT R1 9 [nil]
+       9 [-]: GETIMPORT R1 9 [0xCBD666E1]
       10 [-]: LOADN R2 0   
       11 [-]: CALL R1 1 0  
       12 [-]: JUMPBACK L0  
-L 2:  13 [-]: GETIMPORT R1 1 [nil]
+L 2:  13 [-]: GETIMPORT R1 1 [0x89326C93]
       14 [-]: NAMECALL R1 R1 K10 [0x8B5B1F58]
       15 [-]: CALL R1 1 1  
       16 [-]: LOADNIL R2   
       17 [-]: LOADNIL R3   
-      18 [-]: GETIMPORT R4 12 [nil]
+      18 [-]: GETIMPORT R4 12 ["gTutorialMission"]
       19 [-]: JUMPIFNOT R4 L3
-      20 [-]: GETIMPORT R4 5 [nil]
+      20 [-]: GETIMPORT R4 5 ["weaponConclave"]
       21 [-]: LOADN R5 200 
       22 [-]: JUMPIFNOTLT R4 R5 L3
       23 [-]: NAMECALL R4 R0 K13 [0xDE321E6F]
@@ -212,11 +212,11 @@ L 2:  13 [-]: GETIMPORT R1 1 [nil]
 L 3:  30 [-]: LENGTH R4 R1 
       31 [-]: LOADN R5 2   
       32 [-]: JUMPIFNOTLT R5 R4 L12
-      33 [-]: GETIMPORT R4 5 [nil]
-      34 [-]: GETIMPORT R5 17 [nil]
-      35 [-]: GETIMPORT R6 19 [nil]
-      36 [-]: GETIMPORT R7 21 [nil]
-      37 [-]: GETIMPORT R8 23 [nil]
+      33 [-]: GETIMPORT R4 5 ["weaponConclave"]
+      34 [-]: GETIMPORT R5 17 [0x7003E7BE]
+      35 [-]: GETIMPORT R6 19 [0x68FF056D]
+      36 [-]: GETIMPORT R7 21 [0x46800B00]
+      37 [-]: GETIMPORT R8 23 [0xC73E23E7]
       38 [-]: LOADNIL R9   
       39 [-]: JUMPIFNOTLT R5 R4 L4
       40 [-]: JUMPIFNOTLE R4 R6 L4
@@ -239,11 +239,11 @@ L 5:  52 [-]: JUMPXEQKN R4 K24 L6 NOT [1]
      
 L 6:  55 [-]: LOADN R9 1   
 L 7:  56 [-]: MOVE R2 R9   
-      57 [-]: GETIMPORT R4 5 [nil]
-      58 [-]: GETIMPORT R5 26 [nil]
-      59 [-]: GETIMPORT R6 28 [nil]
-      60 [-]: GETIMPORT R7 30 [nil]
-      61 [-]: GETIMPORT R8 32 [nil]
+      57 [-]: GETIMPORT R4 5 ["weaponConclave"]
+      58 [-]: GETIMPORT R5 26 [0xB9F2AE75]
+      59 [-]: GETIMPORT R6 28 [0x1BBEAFCE]
+      60 [-]: GETIMPORT R7 30 [0x97C8B71F]
+      61 [-]: GETIMPORT R8 32 [0x51BCF5F0]
       62 [-]: LOADNIL R9   
       63 [-]: JUMPIFNOTLT R5 R4 L8
       64 [-]: JUMPIFNOTLE R4 R6 L8
@@ -268,11 +268,11 @@ L10:  79 [-]: LOADN R9 1
 L11:  80 [-]: MOVE R3 R9   
       81 [-]: JUMP L21
     
-L12:  82 [-]: GETIMPORT R4 5 [nil]
-      83 [-]: GETIMPORT R5 17 [nil]
-      84 [-]: GETIMPORT R6 34 [nil]
-      85 [-]: GETIMPORT R7 21 [nil]
-      86 [-]: GETIMPORT R8 36 [nil]
+L12:  82 [-]: GETIMPORT R4 5 ["weaponConclave"]
+      83 [-]: GETIMPORT R5 17 [0x7003E7BE]
+      84 [-]: GETIMPORT R6 34 [0x6DAC8800]
+      85 [-]: GETIMPORT R7 21 [0x46800B00]
+      86 [-]: GETIMPORT R8 36 [0xEDA71A56]
       87 [-]: LOADNIL R9   
       88 [-]: JUMPIFNOTLT R5 R4 L13
       89 [-]: JUMPIFNOTLE R4 R6 L13
@@ -295,11 +295,11 @@ L14: 101 [-]: JUMPXEQKN R4 K24 L15 NOT [1]
     
 L15: 104 [-]: LOADN R9 1   
 L16: 105 [-]: MOVE R2 R9   
-     106 [-]: GETIMPORT R4 5 [nil]
-     107 [-]: GETIMPORT R5 26 [nil]
-     108 [-]: GETIMPORT R6 38 [nil]
-     109 [-]: GETIMPORT R7 30 [nil]
-     110 [-]: GETIMPORT R8 40 [nil]
+     106 [-]: GETIMPORT R4 5 ["weaponConclave"]
+     107 [-]: GETIMPORT R5 26 [0xB9F2AE75]
+     108 [-]: GETIMPORT R6 38 [0xB59C42A3]
+     109 [-]: GETIMPORT R7 30 [0x97C8B71F]
+     110 [-]: GETIMPORT R8 40 [0xB750A6A9]
      111 [-]: LOADNIL R9   
      112 [-]: JUMPIFNOTLT R5 R4 L17
      113 [-]: JUMPIFNOTLE R4 R6 L17
@@ -328,37 +328,37 @@ L21: 130 [-]: JUMPIFNOTEQ R2 R2 L22
      133 [-]: LOADK R5 K41 [3.4028234663852886e+38]
      134 [-]: MINUS R4 R5  
      135 [-]: JUMPIFNOTLT R2 R4 L23
-L22: 136 [-]: GETIMPORT R4 43 [nil]
+L22: 136 [-]: GETIMPORT R4 43 [0x3D106989]
      137 [-]: LOADK R6 K44 ["NaN health dmg mod. "]
-     138 [-]: GETIMPORT R14 46 [nil]
+     138 [-]: GETIMPORT R14 46 [0x64FB1586]
      139 [-]: MOVE R15 R2  
      140 [-]: CALL R14 1 1 
      141 [-]: MOVE R7 R14  
      142 [-]: LOADK R8 K47 [" - Conclave="]
-     143 [-]: GETIMPORT R14 46 [nil]
-     144 [-]: GETIMPORT R15 5 [nil]
+     143 [-]: GETIMPORT R14 46 [0x64FB1586]
+     144 [-]: GETIMPORT R15 5 ["weaponConclave"]
      145 [-]: CALL R14 1 1 
      146 [-]: MOVE R9 R14  
      147 [-]: LOADK R10 K48 [", min rank="]
-     148 [-]: GETIMPORT R14 46 [nil]
-     149 [-]: GETIMPORT R15 17 [nil]
+     148 [-]: GETIMPORT R14 46 [0x64FB1586]
+     149 [-]: GETIMPORT R15 17 [0x7003E7BE]
      150 [-]: CALL R14 1 1 
      151 [-]: MOVE R11 R14 
      152 [-]: LOADK R12 K49 [", max rank="]
-     153 [-]: GETIMPORT R13 46 [nil]
-     154 [-]: GETIMPORT R14 34 [nil]
+     153 [-]: GETIMPORT R13 46 [0x64FB1586]
+     154 [-]: GETIMPORT R14 34 [0x6DAC8800]
      155 [-]: CALL R13 1 1 
      156 [-]: CONCAT R5 R6 R13
      157 [-]: CALL R4 1 0  
-     158 [-]: GETIMPORT R4 43 [nil]
+     158 [-]: GETIMPORT R4 43 [0x3D106989]
      159 [-]: LOADK R6 K50 ["Min mod="]
-     160 [-]: GETIMPORT R10 46 [nil]
-     161 [-]: GETIMPORT R11 21 [nil]
+     160 [-]: GETIMPORT R10 46 [0x64FB1586]
+     161 [-]: GETIMPORT R11 21 [0x46800B00]
      162 [-]: CALL R10 1 1 
      163 [-]: MOVE R7 R10  
      164 [-]: LOADK R8 K51 [", max mod="]
-     165 [-]: GETIMPORT R9 46 [nil]
-     166 [-]: GETIMPORT R10 36 [nil]
+     165 [-]: GETIMPORT R9 46 [0x64FB1586]
+     166 [-]: GETIMPORT R10 36 [0xEDA71A56]
      167 [-]: CALL R9 1 1  
      168 [-]: CONCAT R5 R6 R9
      169 [-]: CALL R4 1 0  
@@ -366,7 +366,7 @@ L23: 170 [-]: LOADN R4 0
      171 [-]: JUMPIFNOTLT R4 R2 L24
      172 [-]: NAMECALL R4 R0 K52 [0x1AC1655C]
      173 [-]: CALL R4 1 1  
-     174 [-]: GETIMPORT R6 54 [nil]
+     174 [-]: GETIMPORT R6 54 [0x0469F296]
      175 [-]: LOADK R7 K55 ["BossHealthDmgMod"]
      176 [-]: CALL R6 1 1  
      177 [-]: LOADN R7 25  
@@ -378,7 +378,7 @@ L24: 182 [-]: LOADN R4 0
      183 [-]: JUMPIFNOTLT R4 R3 L25
      184 [-]: NAMECALL R4 R0 K52 [0x1AC1655C]
      185 [-]: CALL R4 1 1  
-     186 [-]: GETIMPORT R6 54 [nil]
+     186 [-]: GETIMPORT R6 54 [0x0469F296]
      187 [-]: LOADK R7 K57 ["BossShieldDmgMod"]
      188 [-]: CALL R6 1 1  
      189 [-]: LOADN R7 25  

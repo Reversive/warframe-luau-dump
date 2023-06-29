@@ -5,19 +5,19 @@
 ; Is_vararg:       1
 ; Max Stack Size:  8
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x2D0FAD09]
        2 [-]: LOADK R1 K2 ["Lotus.Scripts.Libs.PlayerSkillsLib"]
        3 [-]: CALL R0 1 1  
-       4 [-]: GETIMPORT R1 1 [nil]
+       4 [-]: GETIMPORT R1 1 [0x2D0FAD09]
        5 [-]: LOADK R2 K3 ["Lotus.Scripts.Libs.PlayerSkillUpgradesLib"]
        6 [-]: CALL R1 1 1  
-       7 [-]: GETIMPORT R2 5 [nil]
+       7 [-]: GETIMPORT R2 5 [0x7ED0A956]
        8 [-]: LOADK R3 K6 ["/Lotus/Types/Enemies/Orokin/Entrati/EntratiTech/EntratiTechAvatar"]
        9 [-]: CALL R2 1 1  
-      10 [-]: GETIMPORT R3 5 [nil]
+      10 [-]: GETIMPORT R3 5 [0x7ED0A956]
       11 [-]: LOADK R4 K7 ["/Lotus/Levels/KahlMissions/KahlTypes/ControllableKahlTennoAvatar"]
       12 [-]: CALL R3 1 1  
-      13 [-]: GETIMPORT R4 5 [nil]
+      13 [-]: GETIMPORT R4 5 [0x7ED0A956]
       14 [-]: LOADK R5 K8 ["/Lotus/Types/NeutralCreatures/ErsatzHorse/ErsatzHorseAvatar"]
       15 [-]: CALL R4 1 1  
       16 [-]: DUPCLOSURE R5 K9 []
@@ -72,12 +72,12 @@
 
        0 [-]: FASTCALL1 62 R1 L0
        1 [-]: MOVE R5 R1   
-       2 [-]: GETIMPORT R4 1 [nil]
+       2 [-]: GETIMPORT R4 1 [0x7B998233]
        3 [-]: CALL R4 1 1  
 L 0:   4 [-]: JUMPIF R4 L2 
        5 [-]: FASTCALL1 62 R0 L1
        6 [-]: MOVE R5 R0   
-       7 [-]: GETIMPORT R4 1 [nil]
+       7 [-]: GETIMPORT R4 1 [0x7B998233]
        8 [-]: CALL R4 1 1  
 L 1:   9 [-]: JUMPIF R4 L2 
       10 [-]: GETUPVAL R6 0
@@ -115,12 +115,12 @@ L 5:  33 [-]: RETURN R0 0
 
        0 [-]: FASTCALL1 62 R1 L0
        1 [-]: MOVE R5 R1   
-       2 [-]: GETIMPORT R4 1 [nil]
+       2 [-]: GETIMPORT R4 1 [0x7B998233]
        3 [-]: CALL R4 1 1  
 L 0:   4 [-]: JUMPIF R4 L2 
        5 [-]: FASTCALL1 62 R0 L1
        6 [-]: MOVE R5 R0   
-       7 [-]: GETIMPORT R4 1 [nil]
+       7 [-]: GETIMPORT R4 1 [0x7B998233]
        8 [-]: CALL R4 1 1  
 L 1:   9 [-]: JUMPIF R4 L2 
       10 [-]: GETUPVAL R6 0
@@ -209,7 +209,7 @@ L 5:  33 [-]: RETURN R0 0
 
        0 [-]: FASTCALL1 62 R0 L0
        1 [-]: MOVE R4 R0   
-       2 [-]: GETIMPORT R3 1 [nil]
+       2 [-]: GETIMPORT R3 1 [0x7B998233]
        3 [-]: CALL R3 1 1  
 L 0:   4 [-]: JUMPIF R3 L2 
        5 [-]: GETUPVAL R5 0
@@ -264,16 +264,16 @@ L 0:   9 [-]: GETUPVAL R3 0
       15 [-]: CALL R3 4 0  
 L 1:  16 [-]: FASTCALL1 62 R1 L2
       17 [-]: MOVE R4 R1   
-      18 [-]: GETIMPORT R3 3 [nil]
+      18 [-]: GETIMPORT R3 3 [0x7B998233]
       19 [-]: CALL R3 1 1  
 L 2:  20 [-]: JUMPIF R3 L5 
-      21 [-]: GETIMPORT R4 5 [nil]
+      21 [-]: GETIMPORT R4 5 [0xBE190284]
       22 [-]: FASTCALL1 62 R4 L3
-      23 [-]: GETIMPORT R3 3 [nil]
+      23 [-]: GETIMPORT R3 3 [0x7B998233]
       24 [-]: CALL R3 1 1  
 L 3:  25 [-]: JUMPIF R3 L5 
-      26 [-]: GETIMPORT R3 5 [nil]
-      27 [-]: GETIMPORT R5 7 [nil]
+      26 [-]: GETIMPORT R3 5 [0xBE190284]
+      27 [-]: GETIMPORT R5 7 ["gLotusDuviriGameRulesType"]
       28 [-]: NAMECALL R3 R3 K8 [0xF2DEAF69]
       29 [-]: CALL R3 2 1  
       30 [-]: JUMPIFNOT R3 L5
@@ -282,7 +282,7 @@ L 3:  25 [-]: JUMPIF R3 L5
       33 [-]: CALL R3 2 1  
       34 [-]: FASTCALL1 62 R3 L4
       35 [-]: MOVE R5 R3   
-      36 [-]: GETIMPORT R4 3 [nil]
+      36 [-]: GETIMPORT R4 3 [0x7B998233]
       37 [-]: CALL R4 1 1  
 L 4:  38 [-]: JUMPIF R4 L5 
       39 [-]: JUMPIFNOTEQ R3 R0 L5
@@ -307,10 +307,10 @@ L 5:  47 [-]: RETURN R0 0
        1 [-]: CALL R1 1 1  
 L 0:   2 [-]: FASTCALL1 62 R1 L1
        3 [-]: MOVE R3 R1   
-       4 [-]: GETIMPORT R2 2 [nil]
+       4 [-]: GETIMPORT R2 2 [0x7B998233]
        5 [-]: CALL R2 1 1  
 L 1:   6 [-]: JUMPIFNOT R2 L2
-       7 [-]: GETIMPORT R2 4 [nil]
+       7 [-]: GETIMPORT R2 4 [0xCBD666E1]
        8 [-]: LOADN R3 0   
        9 [-]: CALL R2 1 0  
       10 [-]: NAMECALL R2 R0 K0 [0x5E651723]
@@ -338,10 +338,10 @@ L 2:  14 [-]: GETUPVAL R2 0
        1 [-]: CALL R1 1 1  
 L 0:   2 [-]: FASTCALL1 62 R1 L1
        3 [-]: MOVE R3 R1   
-       4 [-]: GETIMPORT R2 2 [nil]
+       4 [-]: GETIMPORT R2 2 [0x7B998233]
        5 [-]: CALL R2 1 1  
 L 1:   6 [-]: JUMPIFNOT R2 L2
-       7 [-]: GETIMPORT R2 4 [nil]
+       7 [-]: GETIMPORT R2 4 [0xCBD666E1]
        8 [-]: LOADN R3 0   
        9 [-]: CALL R2 1 0  
       10 [-]: NAMECALL R2 R0 K0 [0x5E651723]
@@ -369,10 +369,10 @@ L 2:  14 [-]: GETUPVAL R2 0
        1 [-]: CALL R1 1 1  
 L 0:   2 [-]: FASTCALL1 62 R1 L1
        3 [-]: MOVE R3 R1   
-       4 [-]: GETIMPORT R2 2 [nil]
+       4 [-]: GETIMPORT R2 2 [0x7B998233]
        5 [-]: CALL R2 1 1  
 L 1:   6 [-]: JUMPIFNOT R2 L2
-       7 [-]: GETIMPORT R2 4 [nil]
+       7 [-]: GETIMPORT R2 4 [0xCBD666E1]
        8 [-]: LOADN R3 0   
        9 [-]: CALL R2 1 0  
       10 [-]: NAMECALL R2 R0 K0 [0x5B89142C]
@@ -388,16 +388,16 @@ L 2:  14 [-]: GETUPVAL R2 0
       20 [-]: CALL R2 4 0  
       21 [-]: FASTCALL1 62 R1 L3
       22 [-]: MOVE R3 R1   
-      23 [-]: GETIMPORT R2 2 [nil]
+      23 [-]: GETIMPORT R2 2 [0x7B998233]
       24 [-]: CALL R2 1 1  
 L 3:  25 [-]: JUMPIF R2 L5 
-      26 [-]: GETIMPORT R3 7 [nil]
+      26 [-]: GETIMPORT R3 7 [0xBE190284]
       27 [-]: FASTCALL1 62 R3 L4
-      28 [-]: GETIMPORT R2 2 [nil]
+      28 [-]: GETIMPORT R2 2 [0x7B998233]
       29 [-]: CALL R2 1 1  
 L 4:  30 [-]: JUMPIF R2 L5 
-      31 [-]: GETIMPORT R2 7 [nil]
-      32 [-]: GETIMPORT R4 9 [nil]
+      31 [-]: GETIMPORT R2 7 [0xBE190284]
+      32 [-]: GETIMPORT R4 9 ["gLotusDuviriGameRulesType"]
       33 [-]: NAMECALL R2 R2 K10 [0xF2DEAF69]
       34 [-]: CALL R2 2 1  
       35 [-]: JUMPIFNOT R2 L5

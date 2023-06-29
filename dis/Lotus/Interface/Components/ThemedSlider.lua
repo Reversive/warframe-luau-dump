@@ -5,9 +5,9 @@
 ; Is_vararg:       1
 ; Max Stack Size:  3
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0xAEABECDA]
        2 [-]: GETVARARGS R1 1
-       3 [-]: GETIMPORT R2 4 [nil]
+       3 [-]: GETIMPORT R2 4 ["seeall"]
        4 [-]: CALL R0 2 0  
        5 [-]: DUPCLOSURE R0 K5 []
        6 [-]: SETGLOBAL R0 K6 ["Create"]
@@ -21,24 +21,24 @@
 ; Is_vararg:       0
 ; Max Stack Size:  20
 
-       0 [-]: GETIMPORT R7 1 [nil]
+       0 [-]: GETIMPORT R7 1 [0x2D0FAD09]
        1 [-]: LOADK R8 K2 ["EE.Interface.Utilities"]
        2 [-]: CALL R7 1 1  
-       3 [-]: GETIMPORT R8 1 [nil]
+       3 [-]: GETIMPORT R8 1 [0x2D0FAD09]
        4 [-]: LOADK R9 K3 ["Lotus.Interface.UIStyleUtilities"]
        5 [-]: CALL R8 1 1  
-       6 [-]: GETIMPORT R9 1 [nil]
+       6 [-]: GETIMPORT R9 1 [0x2D0FAD09]
        7 [-]: LOADK R10 K4 ["Lotus.Interface.Components.ThemedInputField"]
        8 [-]: CALL R9 1 1  
-       9 [-]: GETIMPORT R10 7 [nil]
+       9 [-]: GETIMPORT R10 7 [0x03F57322]
       10 [-]: MOVE R11 R3  
       11 [-]: CALL R10 1 1 
       12 [-]: ORK R3 R10 K5 [0]
-      13 [-]: GETIMPORT R10 7 [nil]
+      13 [-]: GETIMPORT R10 7 [0x03F57322]
       14 [-]: MOVE R11 R4  
       15 [-]: CALL R10 1 1 
       16 [-]: ORK R4 R10 K8 [100]
-      17 [-]: GETIMPORT R10 7 [nil]
+      17 [-]: GETIMPORT R10 7 [0x03F57322]
       18 [-]: MOVE R11 R2  
       19 [-]: CALL R10 1 1 
       20 [-]: JUMPIF R10 L0
@@ -46,7 +46,7 @@
       22 [-]: DIVK R11 R12 K9 [2]
       23 [-]: ADD R10 R11 R3
 L 0:  24 [-]: MOVE R2 R10  
-      25 [-]: GETIMPORT R10 11 [nil]
+      25 [-]: GETIMPORT R10 11 [0x42DCC9F5]
       26 [-]: MOVE R11 R2  
       27 [-]: MOVE R12 R3  
       28 [-]: MOVE R13 R4  
@@ -54,18 +54,18 @@ L 0:  24 [-]: MOVE R2 R10
       30 [-]: MOVE R2 R10  
       31 [-]: ORK R5 R5 K12 [1]
       32 [-]: JUMPXEQKNIL R6 L2 NOT
-      33 [-]: GETIMPORT R10 15 [nil]
+      33 [-]: GETIMPORT R10 15 [0x348C01F7]
       34 [-]: MOVE R11 R5  
       35 [-]: LOADK R12 K16 ["%.(%d+)"]
       36 [-]: CALL R10 2 1 
-      37 [-]: GETIMPORT R11 15 [nil]
+      37 [-]: GETIMPORT R11 15 [0x348C01F7]
       38 [-]: MOVE R12 R2  
       39 [-]: LOADK R13 K16 ["%.(%d+)"]
       40 [-]: CALL R11 2 1 
       41 [-]: LENGTH R13 R10
       42 [-]: LENGTH R14 R11
       43 [-]: FASTCALL2 18 R13 R14 L1
-      44 [-]: GETIMPORT R12 19 [nil]
+      44 [-]: GETIMPORT R12 19 [0xB62ECFE0]
       45 [-]: CALL R12 2 1 
 L 1:  46 [-]: MOVE R6 R12  
 L 2:  47 [-]: JUMPXEQKNIL R2 L5
@@ -90,7 +90,7 @@ L 4:  59 [-]: MOVE R14 R1
 L 5:  66 [-]: GETTABLEKS R10 R9 K25 [0xAE6791BA]
       67 [-]: MOVE R11 R0  
       68 [-]: MOVE R12 R1  
-      69 [-]: GETIMPORT R13 27 [nil]
+      69 [-]: GETIMPORT R13 27 [0xE8072DED]
       70 [-]: LOADK R15 K28 ["%."]
       71 [-]: MOVE R16 R6  
       72 [-]: LOADK R17 K29 ["f"]

@@ -5,14 +5,14 @@
 ; Is_vararg:       1
 ; Max Stack Size:  3
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0xAEABECDA]
        2 [-]: GETVARARGS R1 1
-       3 [-]: GETIMPORT R2 4 [nil]
+       3 [-]: GETIMPORT R2 4 ["seeall"]
        4 [-]: CALL R0 2 0  
-       5 [-]: GETIMPORT R0 6 [nil]
+       5 [-]: GETIMPORT R0 6 [0x2D0FAD09]
        6 [-]: LOADK R1 K7 ["Lotus.Scripts.Libs.QuestLib"]
        7 [-]: CALL R0 1 1  
-       8 [-]: GETIMPORT R1 9 [nil]
+       8 [-]: GETIMPORT R1 9 [0x7ED0A956]
        9 [-]: LOADK R2 K10 ["/Lotus/Types/Keys/OrokinMoonQuest/OrokinMoonQuestKeyChain"]
       10 [-]: CALL R1 1 1  
       11 [-]: DUPCLOSURE R2 K11 []
@@ -31,14 +31,14 @@
 
        0 [-]: GETUPVAL R2 0
        1 [-]: GETTABLEKS R1 R2 K0 [0x52FB05B3]
-       2 [-]: GETIMPORT R2 2 [nil]
+       2 [-]: GETIMPORT R2 2 [0x7ED0A956]
        3 [-]: GETUPVAL R3 1
        4 [-]: CALL R2 1 -1 
        5 [-]: CALL R1 -1 1 
        6 [-]: JUMPIF R1 L1 
-       7 [-]: GETIMPORT R2 4 [nil]
+       7 [-]: GETIMPORT R2 4 [0xBE190284]
        8 [-]: FASTCALL1 62 R2 L0
-       9 [-]: GETIMPORT R1 6 [nil]
+       9 [-]: GETIMPORT R1 6 [0x7B998233]
       10 [-]: CALL R1 1 1  
 L 0:  11 [-]: JUMPIFNOT R1 L2
 L 1:  12 [-]: RETURN R0 0  
@@ -238,28 +238,28 @@ L 2:  13 [-]: NEWTABLE R1 0 0
      206 [-]: LOADN R17 22 
      207 [-]: LOADN R18 23 
      208 [-]: SETLIST R3 R4 15 [1]
-     209 [-]: GETIMPORT R4 125 [nil]
+     209 [-]: GETIMPORT R4 125 [0x25D99D89]
      210 [-]: NAMECALL R4 R4 K126 [0x25A6E75E]
      211 [-]: CALL R4 1 1  
-     212 [-]: GETIMPORT R5 128 [nil]
+     212 [-]: GETIMPORT R5 128 [0xB009BBC6]
      213 [-]: NAMECALL R6 R0 K129 [0xA8C81A27]
      214 [-]: CALL R6 1 -1 
      215 [-]: CALL R5 -1 1 
      216 [-]: NAMECALL R6 R4 K130 [0x8F6446CF]
      217 [-]: CALL R6 1 1  
-     218 [-]: GETIMPORT R7 132 [nil]
+     218 [-]: GETIMPORT R7 132 [0xC8802016]
      219 [-]: MOVE R8 R6   
      220 [-]: CALL R7 1 3  
      221 [-]: FORGPREP_INEXT R7 L4
-L 3: 222 [-]: GETIMPORT R12 135 [nil]
+L 3: 222 [-]: GETIMPORT R12 135 [0xAED8235F]
      223 [-]: CALL R12 0 1 
      224 [-]: MOVE R11 R12 
 L 4: 225 [-]: FORGLOOP R7 L3 2 [inext]
-     226 [-]: GETIMPORT R7 132 [nil]
+     226 [-]: GETIMPORT R7 132 [0xC8802016]
      227 [-]: MOVE R8 R2   
      228 [-]: CALL R7 1 3  
      229 [-]: FORGPREP_INEXT R7 L14
-L 5: 230 [-]: GETIMPORT R12 137 [nil]
+L 5: 230 [-]: GETIMPORT R12 137 [0x171C56BF]
      231 [-]: CALL R12 0 1 
      232 [-]: MOVE R15 R11 
      233 [-]: NAMECALL R13 R0 K138 [0xC89BAE6F]
@@ -268,7 +268,7 @@ L 5: 230 [-]: GETIMPORT R12 137 [nil]
      236 [-]: LOADNIL R15  
      237 [-]: FASTCALL1 62 R14 L6
      238 [-]: MOVE R17 R14 
-     239 [-]: GETIMPORT R16 6 [nil]
+     239 [-]: GETIMPORT R16 6 [0x7B998233]
      240 [-]: CALL R16 1 1 
 L 6: 241 [-]: JUMPIF R16 L7
      242 [-]: NAMECALL R16 R14 K140 [0xED4E0128]
@@ -281,7 +281,7 @@ L 7: 246 [-]: MOVE R18 R11
      248 [-]: CALL R16 2 1 
      249 [-]: FASTCALL1 62 R16 L8
      250 [-]: MOVE R18 R16 
-     251 [-]: GETIMPORT R17 6 [nil]
+     251 [-]: GETIMPORT R17 6 [0x7B998233]
      252 [-]: CALL R17 1 1 
 L 8: 253 [-]: JUMPIF R17 L9
      254 [-]: NAMECALL R17 R16 K140 [0xED4E0128]
@@ -291,23 +291,23 @@ L 9: 257 [-]: LOADNIL R16
      258 [-]: JUMPIFNOT R15 L11
      259 [-]: GETTABLE R16 R1 R15
      260 [-]: JUMPXEQKNIL R16 L10
-     261 [-]: GETIMPORT R17 2 [nil]
+     261 [-]: GETIMPORT R17 2 [0x7ED0A956]
      262 [-]: MOVE R18 R16 
      263 [-]: CALL R17 1 1 
      264 [-]: MOVE R16 R17 
      265 [-]: JUMP L11
     
-L10: 266 [-]: GETIMPORT R17 143 [nil]
+L10: 266 [-]: GETIMPORT R17 143 [0x3D106989]
      267 [-]: LOADK R19 K144 ["Found valid adult weapon skin "]
      268 [-]: MOVE R20 R15 
      269 [-]: LOADK R21 K145 [" which has no mapping to a child skin."]
      270 [-]: CONCAT R18 R19 R21
      271 [-]: CALL R17 1 0 
-     272 [-]: GETIMPORT R17 147 [nil]
+     272 [-]: GETIMPORT R17 147 [0x484742B6]
      273 [-]: LOADK R18 K148 ["Adult skin has no child mapping!"]
      274 [-]: CALL R17 1 0 
 L11: 275 [-]: SETTABLEKS R16 R12 K139 ["mItemType"]
-     276 [-]: GETIMPORT R17 132 [nil]
+     276 [-]: GETIMPORT R17 132 [0xC8802016]
      277 [-]: MOVE R18 R6  
      278 [-]: CALL R17 1 3 
      279 [-]: FORGPREP_INEXT R17 L13
@@ -317,7 +317,7 @@ L12: 280 [-]: MOVE R24 R11
      283 [-]: CALL R22 3 0 
 L13: 284 [-]: FORGLOOP R17 L12 2 [inext]
 L14: 285 [-]: FORGLOOP R7 L5 2 [inext]
-     286 [-]: GETIMPORT R7 132 [nil]
+     286 [-]: GETIMPORT R7 132 [0xC8802016]
      287 [-]: MOVE R8 R3   
      288 [-]: CALL R7 1 3  
      289 [-]: FORGPREP_INEXT R7 L18
@@ -327,7 +327,7 @@ L15: 290 [-]: MOVE R14 R11
      293 [-]: MOVE R15 R11 
      294 [-]: NAMECALL R13 R0 K151 [0x9241C2E4]
      295 [-]: CALL R13 2 1 
-     296 [-]: GETIMPORT R14 132 [nil]
+     296 [-]: GETIMPORT R14 132 [0xC8802016]
      297 [-]: MOVE R15 R6  
      298 [-]: CALL R14 1 3 
      299 [-]: FORGPREP_INEXT R14 L17
@@ -341,7 +341,7 @@ L16: 300 [-]: MOVE R21 R11
      307 [-]: CALL R19 3 0 
 L17: 308 [-]: FORGLOOP R14 L16 2 [inext]
 L18: 309 [-]: FORGLOOP R7 L15 2 [inext]
-     310 [-]: GETIMPORT R7 132 [nil]
+     310 [-]: GETIMPORT R7 132 [0xC8802016]
      311 [-]: MOVE R8 R6   
      312 [-]: CALL R7 1 3  
      313 [-]: FORGPREP_INEXT R7 L21
@@ -375,15 +375,15 @@ L20: 334 [-]: LOADN R14 14
      341 [-]: NAMECALL R12 R4 K156 [0xABB55F13]
      342 [-]: CALL R12 3 0 
 L21: 343 [-]: FORGLOOP R7 L19 2 [inext]
-     344 [-]: GETIMPORT R7 125 [nil]
+     344 [-]: GETIMPORT R7 125 [0x25D99D89]
      345 [-]: NAMECALL R7 R7 K157 [0x41F4BA99]
      346 [-]: CALL R7 1 0  
-     347 [-]: GETIMPORT R7 159 [nil]
+     347 [-]: GETIMPORT R7 159 [0x89326C93]
      348 [-]: NAMECALL R7 R7 K160 [0xFB64E76C]
      349 [-]: CALL R7 1 1  
      350 [-]: NAMECALL R8 R7 K161 [0x62C81B76]
      351 [-]: CALL R8 1 1  
-     352 [-]: GETIMPORT R10 125 [nil]
+     352 [-]: GETIMPORT R10 125 [0x25D99D89]
      353 [-]: NAMECALL R10 R10 K161 [0x62C81B76]
      354 [-]: CALL R10 1 1 
      355 [-]: GETTABLEKS R9 R10 K162 ["mOperatorCustomization"]

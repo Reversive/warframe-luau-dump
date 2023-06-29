@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  2
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x2D0FAD09]
        2 [-]: LOADK R1 K2 ["Lotus.Scripts.Libs.TransmissionSet"]
        3 [-]: CALL R0 1 1  
        4 [-]: DUPCLOSURE R1 K3 []
@@ -21,13 +21,13 @@
 ; Is_vararg:       0
 ; Max Stack Size:  10
 
-       0 [-]: GETIMPORT R2 1 [nil]
+       0 [-]: GETIMPORT R2 1 [0x89326C93]
        1 [-]: NAMECALL R2 R2 K2 [0x18D05D30]
        2 [-]: CALL R2 1 1  
        3 [-]: JUMPIFNOT R2 L1
        4 [-]: FASTCALL1 62 R0 L0
        5 [-]: MOVE R3 R0   
-       6 [-]: GETIMPORT R2 4 [nil]
+       6 [-]: GETIMPORT R2 4 [0x7B998233]
        7 [-]: CALL R2 1 1  
 L 0:   8 [-]: JUMPIFNOT R2 L2
 L 1:   9 [-]: RETURN R0 0  
@@ -47,8 +47,8 @@ L 2:  10 [-]: NAMECALL R2 R0 K5 [0xD2715720]
       23 [-]: JUMPIFNOTLT R6 R5 L3
       24 [-]: GETUPVAL R7 0
       25 [-]: GETTABLEKS R6 R7 K10 [0x9742B85B]
-      26 [-]: GETIMPORT R7 12 [nil]
-      27 [-]: GETIMPORT R8 14 [nil]
+      26 [-]: GETIMPORT R7 12 [0x2ACA08B9]
+      27 [-]: GETIMPORT R8 14 [0x0469F296]
       28 [-]: LOADK R9 K15 ["BaroQuarterHealth"]
       29 [-]: CALL R8 1 -1 
       30 [-]: CALL R6 -1 0 
@@ -59,8 +59,8 @@ L 3:  32 [-]: LOADK R6 K16 [0.5]
       35 [-]: JUMPIFNOTLT R6 R5 L4
       36 [-]: GETUPVAL R7 0
       37 [-]: GETTABLEKS R6 R7 K10 [0x9742B85B]
-      38 [-]: GETIMPORT R7 12 [nil]
-      39 [-]: GETIMPORT R8 14 [nil]
+      38 [-]: GETIMPORT R7 12 [0x2ACA08B9]
+      39 [-]: GETIMPORT R8 14 [0x0469F296]
       40 [-]: LOADK R9 K17 ["BaroHalfHealth"]
       41 [-]: CALL R8 1 -1 
       42 [-]: CALL R6 -1 0 

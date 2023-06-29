@@ -5,24 +5,24 @@
 ; Is_vararg:       1
 ; Max Stack Size:  23
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0xAEABECDA]
        2 [-]: GETVARARGS R1 1
-       3 [-]: GETIMPORT R2 4 [nil]
+       3 [-]: GETIMPORT R2 4 ["seeall"]
        4 [-]: CALL R0 2 0  
-       5 [-]: GETIMPORT R0 6 [nil]
+       5 [-]: GETIMPORT R0 6 [0x2D0FAD09]
        6 [-]: LOADK R1 K7 ["EE.Interface.Utilities"]
        7 [-]: CALL R0 1 1  
-       8 [-]: GETIMPORT R1 6 [nil]
+       8 [-]: GETIMPORT R1 6 [0x2D0FAD09]
        9 [-]: LOADK R2 K8 ["Lotus.Interface.LotusUtilities"]
       10 [-]: CALL R1 1 1  
-      11 [-]: GETIMPORT R2 6 [nil]
+      11 [-]: GETIMPORT R2 6 [0x2D0FAD09]
       12 [-]: LOADK R3 K9 ["Lotus.Interface.Libs.MissionGeneratorUtil"]
       13 [-]: CALL R2 1 1  
       14 [-]: NEWTABLE R3 0 0
       15 [-]: LOADN R4 0   
       16 [-]: NEWTABLE R5 0 5
       17 [-]: DUPTABLE R6 14
-      18 [-]: GETIMPORT R7 16 [nil]
+      18 [-]: GETIMPORT R7 16 [0x7ED0A956]
       19 [-]: LOADK R8 K17 ["/Lotus/Levels/Proc/Transitional/GrineerToCorpusExterminate"]
       20 [-]: CALL R7 1 1  
       21 [-]: SETTABLEKS R7 R6 K10 ["levelOverride"]
@@ -33,33 +33,33 @@
       26 [-]: LOADNIL R7   
       27 [-]: SETTABLEKS R7 R6 K13 ["vipAgent"]
       28 [-]: DUPTABLE R7 14
-      29 [-]: GETIMPORT R8 16 [nil]
+      29 [-]: GETIMPORT R8 16 [0x7ED0A956]
       30 [-]: LOADK R9 K18 ["/Lotus/Levels/Proc/Transitional/GrineerToCorpusCapture"]
       31 [-]: CALL R8 1 1  
       32 [-]: SETTABLEKS R8 R7 K10 ["levelOverride"]
       33 [-]: LOADN R8 5   
       34 [-]: SETTABLEKS R8 R7 K11 ["missionType"]
-      35 [-]: GETIMPORT R8 20 [nil]
+      35 [-]: GETIMPORT R8 20 [0xB009BBC6]
       36 [-]: LOADK R9 K21 ["/Lotus/Types/Game/EnemySpecs/GamemodeExtraEnemySpecs/CorpusCaptureTargets"]
       37 [-]: CALL R8 1 1  
       38 [-]: SETTABLEKS R8 R7 K12 ["extraEnemySpec"]
       39 [-]: LOADNIL R8   
       40 [-]: SETTABLEKS R8 R7 K13 ["vipAgent"]
       41 [-]: DUPTABLE R8 14
-      42 [-]: GETIMPORT R9 16 [nil]
+      42 [-]: GETIMPORT R9 16 [0x7ED0A956]
       43 [-]: LOADK R10 K22 ["/Lotus/Levels/Proc/Transitional/GrineerToCorpusIntel"]
       44 [-]: CALL R9 1 1  
       45 [-]: SETTABLEKS R9 R8 K10 ["levelOverride"]
       46 [-]: LOADN R9 7   
       47 [-]: SETTABLEKS R9 R8 K11 ["missionType"]
-      48 [-]: GETIMPORT R9 20 [nil]
+      48 [-]: GETIMPORT R9 20 [0xB009BBC6]
       49 [-]: LOADK R10 K23 ["/Lotus/Types/Game/EnemySpecs/GamemodeExtraEnemySpecs/CorpusIntelTiersA"]
       50 [-]: CALL R9 1 1  
       51 [-]: SETTABLEKS R9 R8 K12 ["extraEnemySpec"]
       52 [-]: LOADNIL R9   
       53 [-]: SETTABLEKS R9 R8 K13 ["vipAgent"]
       54 [-]: DUPTABLE R9 14
-      55 [-]: GETIMPORT R10 16 [nil]
+      55 [-]: GETIMPORT R10 16 [0x7ED0A956]
       56 [-]: LOADK R11 K24 ["/Lotus/Levels/Proc/Transitional/GrineerToCorpusRescue"]
       57 [-]: CALL R10 1 1 
       58 [-]: SETTABLEKS R10 R9 K10 ["levelOverride"]
@@ -67,12 +67,12 @@
       60 [-]: SETTABLEKS R10 R9 K11 ["missionType"]
       61 [-]: LOADNIL R10  
       62 [-]: SETTABLEKS R10 R9 K12 ["extraEnemySpec"]
-      63 [-]: GETIMPORT R10 16 [nil]
+      63 [-]: GETIMPORT R10 16 [0x7ED0A956]
       64 [-]: LOADK R11 K25 ["/Lotus/Types/Friendly/Rescue/RescueAgentGrineer"]
       65 [-]: CALL R10 1 1 
       66 [-]: SETTABLEKS R10 R9 K13 ["vipAgent"]
       67 [-]: DUPTABLE R10 14
-      68 [-]: GETIMPORT R11 16 [nil]
+      68 [-]: GETIMPORT R11 16 [0x7ED0A956]
       69 [-]: LOADK R12 K26 ["/Lotus/Levels/Proc/Transitional/GrineerToCorpusSabotage"]
       70 [-]: CALL R11 1 1 
       71 [-]: SETTABLEKS R11 R10 K10 ["levelOverride"]
@@ -87,7 +87,7 @@
       80 [-]: LOADN R4 1   
       81 [-]: NEWTABLE R5 0 5
       82 [-]: DUPTABLE R6 14
-      83 [-]: GETIMPORT R7 16 [nil]
+      83 [-]: GETIMPORT R7 16 [0x7ED0A956]
       84 [-]: LOADK R8 K27 ["/Lotus/Levels/Proc/Transitional/CorpusToGrineerExterminate"]
       85 [-]: CALL R7 1 1  
       86 [-]: SETTABLEKS R7 R6 K10 ["levelOverride"]
@@ -98,33 +98,33 @@
       91 [-]: LOADNIL R7   
       92 [-]: SETTABLEKS R7 R6 K13 ["vipAgent"]
       93 [-]: DUPTABLE R7 14
-      94 [-]: GETIMPORT R8 16 [nil]
+      94 [-]: GETIMPORT R8 16 [0x7ED0A956]
       95 [-]: LOADK R9 K28 ["/Lotus/Levels/Proc/Transitional/CorpusToGrineerCapture"]
       96 [-]: CALL R8 1 1  
       97 [-]: SETTABLEKS R8 R7 K10 ["levelOverride"]
       98 [-]: LOADN R8 5   
       99 [-]: SETTABLEKS R8 R7 K11 ["missionType"]
-     100 [-]: GETIMPORT R8 20 [nil]
+     100 [-]: GETIMPORT R8 20 [0xB009BBC6]
      101 [-]: LOADK R9 K29 ["/Lotus/Types/Game/EnemySpecs/GamemodeExtraEnemySpecs/GrineerCaptureTargets"]
      102 [-]: CALL R8 1 1  
      103 [-]: SETTABLEKS R8 R7 K12 ["extraEnemySpec"]
      104 [-]: LOADNIL R8   
      105 [-]: SETTABLEKS R8 R7 K13 ["vipAgent"]
      106 [-]: DUPTABLE R8 14
-     107 [-]: GETIMPORT R9 16 [nil]
+     107 [-]: GETIMPORT R9 16 [0x7ED0A956]
      108 [-]: LOADK R10 K30 ["/Lotus/Levels/Proc/Transitional/CorpusToGrineerIntel"]
      109 [-]: CALL R9 1 1  
      110 [-]: SETTABLEKS R9 R8 K10 ["levelOverride"]
      111 [-]: LOADN R9 7   
      112 [-]: SETTABLEKS R9 R8 K11 ["missionType"]
-     113 [-]: GETIMPORT R9 20 [nil]
+     113 [-]: GETIMPORT R9 20 [0xB009BBC6]
      114 [-]: LOADK R10 K31 ["/Lotus/Types/Game/EnemySpecs/GamemodeExtraEnemySpecs/GrineerIntelTiersSquadOne"]
      115 [-]: CALL R9 1 1  
      116 [-]: SETTABLEKS R9 R8 K12 ["extraEnemySpec"]
      117 [-]: LOADNIL R9   
      118 [-]: SETTABLEKS R9 R8 K13 ["vipAgent"]
      119 [-]: DUPTABLE R9 14
-     120 [-]: GETIMPORT R10 16 [nil]
+     120 [-]: GETIMPORT R10 16 [0x7ED0A956]
      121 [-]: LOADK R11 K32 ["/Lotus/Levels/Proc/Transitional/CorpusToGrineerRescue"]
      122 [-]: CALL R10 1 1 
      123 [-]: SETTABLEKS R10 R9 K10 ["levelOverride"]
@@ -132,12 +132,12 @@
      125 [-]: SETTABLEKS R10 R9 K11 ["missionType"]
      126 [-]: LOADNIL R10  
      127 [-]: SETTABLEKS R10 R9 K12 ["extraEnemySpec"]
-     128 [-]: GETIMPORT R10 16 [nil]
+     128 [-]: GETIMPORT R10 16 [0x7ED0A956]
      129 [-]: LOADK R11 K33 ["/Lotus/Types/Friendly/Rescue/RescueAgentCorpus"]
      130 [-]: CALL R10 1 1 
      131 [-]: SETTABLEKS R10 R9 K13 ["vipAgent"]
      132 [-]: DUPTABLE R10 14
-     133 [-]: GETIMPORT R11 16 [nil]
+     133 [-]: GETIMPORT R11 16 [0x7ED0A956]
      134 [-]: LOADK R12 K34 ["/Lotus/Levels/Proc/Transitional/CorpusToGrineerSabotage"]
      135 [-]: CALL R11 1 1 
      136 [-]: SETTABLEKS R11 R10 K10 ["levelOverride"]
@@ -156,7 +156,7 @@
      149 [-]: LOADN R8 1   
      150 [-]: SETLIST R6 R7 2 [1]
      151 [-]: SETTABLEKS R6 R5 K35 ["factions"]
-     152 [-]: GETIMPORT R6 20 [nil]
+     152 [-]: GETIMPORT R6 20 [0xB009BBC6]
      153 [-]: LOADK R7 K38 ["/Lotus/Types/Game/EnemySpecs/CorpusGrineerInvasionEasy"]
      154 [-]: CALL R6 1 1  
      155 [-]: SETTABLEKS R6 R5 K36 ["enemySpec"]
@@ -166,7 +166,7 @@
      159 [-]: LOADN R9 1   
      160 [-]: SETLIST R7 R8 2 [1]
      161 [-]: SETTABLEKS R7 R6 K35 ["factions"]
-     162 [-]: GETIMPORT R7 20 [nil]
+     162 [-]: GETIMPORT R7 20 [0xB009BBC6]
      163 [-]: LOADK R8 K39 ["/Lotus/Types/Game/EnemySpecs/CorpusGrineerInvasionHard"]
      164 [-]: CALL R7 1 1  
      165 [-]: SETTABLEKS R7 R6 K36 ["enemySpec"]
@@ -176,7 +176,7 @@
      169 [-]: LOADN R10 1  
      170 [-]: SETLIST R8 R9 2 [1]
      171 [-]: SETTABLEKS R8 R7 K35 ["factions"]
-     172 [-]: GETIMPORT R8 20 [nil]
+     172 [-]: GETIMPORT R8 20 [0xB009BBC6]
      173 [-]: LOADK R9 K40 ["/Lotus/Types/Game/EnemySpecs/ExtremeInvasion"]
      174 [-]: CALL R8 1 1  
      175 [-]: SETTABLEKS R8 R7 K36 ["enemySpec"]
@@ -186,7 +186,7 @@
      179 [-]: LOADN R11 1  
      180 [-]: SETLIST R9 R10 2 [1]
      181 [-]: SETTABLEKS R9 R8 K35 ["factions"]
-     182 [-]: GETIMPORT R9 20 [nil]
+     182 [-]: GETIMPORT R9 20 [0xB009BBC6]
      183 [-]: LOADK R10 K38 ["/Lotus/Types/Game/EnemySpecs/CorpusGrineerInvasionEasy"]
      184 [-]: CALL R9 1 1  
      185 [-]: SETTABLEKS R9 R8 K36 ["enemySpec"]
@@ -196,7 +196,7 @@
      189 [-]: LOADN R12 0  
      190 [-]: SETLIST R10 R11 2 [1]
      191 [-]: SETTABLEKS R10 R9 K35 ["factions"]
-     192 [-]: GETIMPORT R10 20 [nil]
+     192 [-]: GETIMPORT R10 20 [0xB009BBC6]
      193 [-]: LOADK R11 K41 ["/Lotus/Types/Game/EnemySpecs/GrineerInfestedMix"]
      194 [-]: CALL R10 1 1 
      195 [-]: SETTABLEKS R10 R9 K36 ["enemySpec"]
@@ -206,7 +206,7 @@
      199 [-]: LOADN R13 0  
      200 [-]: SETLIST R11 R12 2 [1]
      201 [-]: SETTABLEKS R11 R10 K35 ["factions"]
-     202 [-]: GETIMPORT R11 20 [nil]
+     202 [-]: GETIMPORT R11 20 [0xB009BBC6]
      203 [-]: LOADK R12 K42 ["/Lotus/Types/Game/EnemySpecs/GrineerInfestedMixB"]
      204 [-]: CALL R11 1 1 
      205 [-]: SETTABLEKS R11 R10 K36 ["enemySpec"]
@@ -216,7 +216,7 @@
      209 [-]: LOADN R14 1  
      210 [-]: SETLIST R12 R13 2 [1]
      211 [-]: SETTABLEKS R12 R11 K35 ["factions"]
-     212 [-]: GETIMPORT R12 20 [nil]
+     212 [-]: GETIMPORT R12 20 [0xB009BBC6]
      213 [-]: LOADK R13 K43 ["/Lotus/Types/Game/EnemySpecs/CorpusInfestedMix"]
      214 [-]: CALL R12 1 1 
      215 [-]: SETTABLEKS R12 R11 K36 ["enemySpec"]
@@ -226,7 +226,7 @@
      219 [-]: LOADN R15 1  
      220 [-]: SETLIST R13 R14 2 [1]
      221 [-]: SETTABLEKS R13 R12 K35 ["factions"]
-     222 [-]: GETIMPORT R13 20 [nil]
+     222 [-]: GETIMPORT R13 20 [0xB009BBC6]
      223 [-]: LOADK R14 K44 ["/Lotus/Types/Game/EnemySpecs/CorpusInfestedMixB"]
      224 [-]: CALL R13 1 1 
      225 [-]: SETTABLEKS R13 R12 K36 ["enemySpec"]
@@ -236,7 +236,7 @@
      229 [-]: LOADN R16 1  
      230 [-]: SETLIST R14 R15 2 [1]
      231 [-]: SETTABLEKS R14 R13 K35 ["factions"]
-     232 [-]: GETIMPORT R14 20 [nil]
+     232 [-]: GETIMPORT R14 20 [0xB009BBC6]
      233 [-]: LOADK R15 K45 ["/Lotus/Types/Game/EnemySpecs/SupCorpusInfestedMix"]
      234 [-]: CALL R14 1 1 
      235 [-]: SETTABLEKS R14 R13 K36 ["enemySpec"]
@@ -247,7 +247,7 @@
      240 [-]: SETTABLEKS R7 R6 K46 ["faction"]
      241 [-]: LOADNIL R7   
      242 [-]: SETTABLEKS R7 R6 K47 ["location"]
-     243 [-]: GETIMPORT R7 20 [nil]
+     243 [-]: GETIMPORT R7 20 [0xB009BBC6]
      244 [-]: LOADK R8 K49 ["/Lotus/Types/Game/EnemySpecs/GrineerExterminateSimple"]
      245 [-]: CALL R7 1 1  
      246 [-]: SETTABLEKS R7 R6 K36 ["enemySpec"]
@@ -256,7 +256,7 @@
      249 [-]: SETTABLEKS R8 R7 K46 ["faction"]
      250 [-]: LOADNIL R8   
      251 [-]: SETTABLEKS R8 R7 K47 ["location"]
-     252 [-]: GETIMPORT R8 20 [nil]
+     252 [-]: GETIMPORT R8 20 [0xB009BBC6]
      253 [-]: LOADK R9 K50 ["/Lotus/Types/Game/EnemySpecs/GrineerExterminateFire"]
      254 [-]: CALL R8 1 1  
      255 [-]: SETTABLEKS R8 R7 K36 ["enemySpec"]
@@ -265,7 +265,7 @@
      258 [-]: SETTABLEKS R9 R8 K46 ["faction"]
      259 [-]: LOADNIL R9   
      260 [-]: SETTABLEKS R9 R8 K47 ["location"]
-     261 [-]: GETIMPORT R9 20 [nil]
+     261 [-]: GETIMPORT R9 20 [0xB009BBC6]
      262 [-]: LOADK R10 K51 ["/Lotus/Types/Game/EnemySpecs/GrineerExterminateTech"]
      263 [-]: CALL R9 1 1  
      264 [-]: SETTABLEKS R9 R8 K36 ["enemySpec"]
@@ -274,7 +274,7 @@
      267 [-]: SETTABLEKS R10 R9 K46 ["faction"]
      268 [-]: LOADK R10 K52 ["Forest"]
      269 [-]: SETTABLEKS R10 R9 K47 ["location"]
-     270 [-]: GETIMPORT R10 20 [nil]
+     270 [-]: GETIMPORT R10 20 [0xB009BBC6]
      271 [-]: LOADK R11 K53 ["/Lotus/Types/Game/EnemySpecs/ForestGrineerExterminate"]
      272 [-]: CALL R10 1 1 
      273 [-]: SETTABLEKS R10 R9 K36 ["enemySpec"]
@@ -283,7 +283,7 @@
      276 [-]: SETTABLEKS R11 R10 K46 ["faction"]
      277 [-]: LOADK R11 K54 ["Settlement"]
      278 [-]: SETTABLEKS R11 R10 K47 ["location"]
-     279 [-]: GETIMPORT R11 20 [nil]
+     279 [-]: GETIMPORT R11 20 [0xB009BBC6]
      280 [-]: LOADK R12 K55 ["/Lotus/Types/Game/EnemySpecs/DesertGrineerExterminate"]
      281 [-]: CALL R11 1 1 
      282 [-]: SETTABLEKS R11 R10 K36 ["enemySpec"]
@@ -292,7 +292,7 @@
      285 [-]: SETTABLEKS R12 R11 K46 ["faction"]
      286 [-]: LOADK R12 K56 ["Shipyards"]
      287 [-]: SETTABLEKS R12 R11 K47 ["location"]
-     288 [-]: GETIMPORT R12 20 [nil]
+     288 [-]: GETIMPORT R12 20 [0xB009BBC6]
      289 [-]: LOADK R13 K57 ["/Lotus/Types/Game/EnemySpecs/GrineerExterminateBlades"]
      290 [-]: CALL R12 1 1 
      291 [-]: SETTABLEKS R12 R11 K36 ["enemySpec"]
@@ -301,7 +301,7 @@
      294 [-]: SETTABLEKS R13 R12 K46 ["faction"]
      295 [-]: LOADK R13 K58 ["Ocean"]
      296 [-]: SETTABLEKS R13 R12 K47 ["location"]
-     297 [-]: GETIMPORT R13 20 [nil]
+     297 [-]: GETIMPORT R13 20 [0xB009BBC6]
      298 [-]: LOADK R14 K59 ["/Lotus/Types/Game/EnemySpecs/SeaLabGrineerExterminate"]
      299 [-]: CALL R13 1 1 
      300 [-]: SETTABLEKS R13 R12 K36 ["enemySpec"]
@@ -310,7 +310,7 @@
      303 [-]: SETTABLEKS R14 R13 K46 ["faction"]
      304 [-]: LOADNIL R14  
      305 [-]: SETTABLEKS R14 R13 K47 ["location"]
-     306 [-]: GETIMPORT R14 20 [nil]
+     306 [-]: GETIMPORT R14 20 [0xB009BBC6]
      307 [-]: LOADK R15 K60 ["/Lotus/Types/Game/EnemySpecs/CorpusExterminateRobots"]
      308 [-]: CALL R14 1 1 
      309 [-]: SETTABLEKS R14 R13 K36 ["enemySpec"]
@@ -319,7 +319,7 @@
      312 [-]: SETTABLEKS R15 R14 K46 ["faction"]
      313 [-]: LOADNIL R15  
      314 [-]: SETTABLEKS R15 R14 K47 ["location"]
-     315 [-]: GETIMPORT R15 20 [nil]
+     315 [-]: GETIMPORT R15 20 [0xB009BBC6]
      316 [-]: LOADK R16 K61 ["/Lotus/Types/Game/EnemySpecs/CorpusExterminateHumans"]
      317 [-]: CALL R15 1 1 
      318 [-]: SETTABLEKS R15 R14 K36 ["enemySpec"]
@@ -328,7 +328,7 @@
      321 [-]: SETTABLEKS R16 R15 K46 ["faction"]
      322 [-]: LOADNIL R16  
      323 [-]: SETTABLEKS R16 R15 K47 ["location"]
-     324 [-]: GETIMPORT R16 20 [nil]
+     324 [-]: GETIMPORT R16 20 [0xB009BBC6]
      325 [-]: LOADK R17 K62 ["/Lotus/Types/Game/EnemySpecs/CorpusExterminateMixed"]
      326 [-]: CALL R16 1 1 
      327 [-]: SETTABLEKS R16 R15 K36 ["enemySpec"]
@@ -337,7 +337,7 @@
      330 [-]: SETTABLEKS R17 R16 K46 ["faction"]
      331 [-]: LOADNIL R17  
      332 [-]: SETTABLEKS R17 R16 K47 ["location"]
-     333 [-]: GETIMPORT R17 20 [nil]
+     333 [-]: GETIMPORT R17 20 [0xB009BBC6]
      334 [-]: LOADK R18 K63 ["/Lotus/Types/Game/EnemySpecs/CorpusExterminateSimple"]
      335 [-]: CALL R17 1 1 
      336 [-]: SETTABLEKS R17 R16 K36 ["enemySpec"]
@@ -346,7 +346,7 @@
      339 [-]: SETTABLEKS R18 R17 K46 ["faction"]
      340 [-]: LOADNIL R18  
      341 [-]: SETTABLEKS R18 R17 K47 ["location"]
-     342 [-]: GETIMPORT R18 20 [nil]
+     342 [-]: GETIMPORT R18 20 [0xB009BBC6]
      343 [-]: LOADK R19 K64 ["/Lotus/Types/Game/EnemySpecs/InfestedExterminateMixed"]
      344 [-]: CALL R18 1 1 
      345 [-]: SETTABLEKS R18 R17 K36 ["enemySpec"]
@@ -355,7 +355,7 @@
      348 [-]: SETTABLEKS R19 R18 K46 ["faction"]
      349 [-]: LOADNIL R19  
      350 [-]: SETTABLEKS R19 R18 K47 ["location"]
-     351 [-]: GETIMPORT R19 20 [nil]
+     351 [-]: GETIMPORT R19 20 [0xB009BBC6]
      352 [-]: LOADK R20 K65 ["/Lotus/Types/Game/EnemySpecs/InfestedExterminateToxic"]
      353 [-]: CALL R19 1 1 
      354 [-]: SETTABLEKS R19 R18 K36 ["enemySpec"]
@@ -364,7 +364,7 @@
      357 [-]: SETTABLEKS R20 R19 K46 ["faction"]
      358 [-]: LOADNIL R20  
      359 [-]: SETTABLEKS R20 R19 K47 ["location"]
-     360 [-]: GETIMPORT R20 20 [nil]
+     360 [-]: GETIMPORT R20 20 [0xB009BBC6]
      361 [-]: LOADK R21 K66 ["/Lotus/Types/Game/EnemySpecs/InfestedExterminateSimple"]
      362 [-]: CALL R20 1 1 
      363 [-]: SETTABLEKS R20 R19 K36 ["enemySpec"]
@@ -373,7 +373,7 @@
      366 [-]: SETTABLEKS R21 R20 K46 ["faction"]
      367 [-]: LOADNIL R21  
      368 [-]: SETTABLEKS R21 R20 K47 ["location"]
-     369 [-]: GETIMPORT R21 20 [nil]
+     369 [-]: GETIMPORT R21 20 [0xB009BBC6]
      370 [-]: LOADK R22 K67 ["/Lotus/Types/Game/EnemySpecs/InfestedExterminateSwarm"]
      371 [-]: CALL R21 1 1 
      372 [-]: SETTABLEKS R21 R20 K36 ["enemySpec"]
@@ -391,26 +391,26 @@
      384 [-]: LOADN R11 8  
      385 [-]: SETLIST R7 R8 4 [1]
      386 [-]: DUPTABLE R8 71
-     387 [-]: GETIMPORT R9 16 [nil]
+     387 [-]: GETIMPORT R9 16 [0x7ED0A956]
      388 [-]: LOADK R10 K72 ["/Lotus/Levels/Proc/Grineer/GrineerAsteroidBossInfested"]
      389 [-]: CALL R9 1 1  
      390 [-]: SETTABLEKS R9 R8 K10 ["levelOverride"]
-     391 [-]: GETIMPORT R9 20 [nil]
+     391 [-]: GETIMPORT R9 20 [0xB009BBC6]
      392 [-]: LOADK R10 K42 ["/Lotus/Types/Game/EnemySpecs/GrineerInfestedMixB"]
      393 [-]: CALL R9 1 1  
      394 [-]: SETTABLEKS R9 R8 K68 ["enemySpecGrineer"]
-     395 [-]: GETIMPORT R9 20 [nil]
+     395 [-]: GETIMPORT R9 20 [0xB009BBC6]
      396 [-]: LOADK R10 K44 ["/Lotus/Types/Game/EnemySpecs/CorpusInfestedMixB"]
      397 [-]: CALL R9 1 1  
      398 [-]: SETTABLEKS R9 R8 K69 ["enemySpecCorpus"]
-     399 [-]: GETIMPORT R9 16 [nil]
+     399 [-]: GETIMPORT R9 16 [0x7ED0A956]
      400 [-]: LOADK R10 K73 ["/Lotus/Types/Enemies/Infested/Vip/QuadrupedVIP"]
      401 [-]: CALL R9 1 1  
      402 [-]: SETTABLEKS R9 R8 K13 ["vipAgent"]
      403 [-]: LOADK R9 K74 ["/Lotus/Language/Bosses/BossPhorid"]
      404 [-]: SETTABLEKS R9 R8 K70 ["uniqueName"]
      405 [-]: NEWTABLE R9 0 0
-     406 [-]: GETIMPORT R10 77 [nil]
+     406 [-]: GETIMPORT R10 77 [0x6E0E9F85]
      407 [-]: CALL R10 0 1 
      408 [-]: DUPCLOSURE R11 K78 []
      409 [-]: DUPCLOSURE R12 K79 []
@@ -463,7 +463,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  5
 
-       0 [-]: GETIMPORT R2 1 [nil]
+       0 [-]: GETIMPORT R2 1 [0x0C5E62F9]
        1 [-]: LOADN R3 1   
        2 [-]: LENGTH R4 R0 
        3 [-]: CALL R2 2 1  
@@ -479,12 +479,12 @@
 ; Max Stack Size:  14
 
        0 [-]: NEWTABLE R2 0 0
-       1 [-]: GETIMPORT R3 1 [nil]
+       1 [-]: GETIMPORT R3 1 [0xCFC01047]
        2 [-]: GETUPVAL R4 0
        3 [-]: CALL R3 1 3  
        4 [-]: FORGPREP_NEXT R3 L4
 L 0:   5 [-]: LOADN R8 0   
-       6 [-]: GETIMPORT R9 1 [nil]
+       6 [-]: GETIMPORT R9 1 [0xCFC01047]
        7 [-]: GETTABLEKS R10 R7 K2 ["factions"]
        8 [-]: CALL R9 1 3  
        9 [-]: FORGPREP_NEXT R9 L3
@@ -496,10 +496,10 @@ L 3:  13 [-]: FORGLOOP R9 L1 2
       15 [-]: GETTABLEKS R11 R7 K5 ["enemySpec"]
       16 [-]: FASTCALL2 52 R2 R11 L4
       17 [-]: MOVE R10 R2  
-      18 [-]: GETIMPORT R9 8 [nil]
+      18 [-]: GETIMPORT R9 8 [0x23D5322F]
       19 [-]: CALL R9 2 0  
 L 4:  20 [-]: FORGLOOP R3 L0 2
-      21 [-]: GETIMPORT R4 10 [nil]
+      21 [-]: GETIMPORT R4 10 [0x0C5E62F9]
       22 [-]: LOADN R5 1   
       23 [-]: LENGTH R6 R2 
       24 [-]: CALL R4 2 1  
@@ -515,7 +515,7 @@ L 4:  20 [-]: FORGLOOP R3 L0 2
 ; Max Stack Size:  12
 
        0 [-]: NEWTABLE R3 0 0
-       1 [-]: GETIMPORT R4 1 [nil]
+       1 [-]: GETIMPORT R4 1 [0xCFC01047]
        2 [-]: MOVE R5 R1   
        3 [-]: CALL R4 1 3  
        4 [-]: FORGPREP_NEXT R4 L1
@@ -526,10 +526,10 @@ L 0:   5 [-]: GETTABLEKS R9 R8 K2 ["faction"]
        9 [-]: GETTABLEKS R11 R8 K4 ["enemySpec"]
       10 [-]: FASTCALL2 52 R3 R11 L1
       11 [-]: MOVE R10 R3  
-      12 [-]: GETIMPORT R9 7 [nil]
+      12 [-]: GETIMPORT R9 7 [0x23D5322F]
       13 [-]: CALL R9 2 0  
 L 1:  14 [-]: FORGLOOP R4 L0 2
-      15 [-]: GETIMPORT R5 9 [nil]
+      15 [-]: GETIMPORT R5 9 [0x0C5E62F9]
       16 [-]: LOADN R6 1   
       17 [-]: LENGTH R7 R3 
       18 [-]: CALL R5 2 1  
@@ -546,22 +546,22 @@ L 1:  14 [-]: FORGLOOP R4 L0 2
 
        0 [-]: FASTCALL1 62 R0 L0
        1 [-]: MOVE R2 R0   
-       2 [-]: GETIMPORT R1 1 [nil]
+       2 [-]: GETIMPORT R1 1 [0x7B998233]
        3 [-]: CALL R1 1 1  
 L 0:   4 [-]: JUMPIFNOT R1 L1
        5 [-]: LOADB R1 0   
        6 [-]: RETURN R1 1  
-L 1:   7 [-]: GETIMPORT R1 3 [nil]
+L 1:   7 [-]: GETIMPORT R1 3 [0x64FB1586]
        8 [-]: NAMECALL R2 R0 K4 [0xE223E2B1]
        9 [-]: CALL R2 1 -1 
       10 [-]: CALL R1 -1 1 
       11 [-]: LOADB R2 1   
-      12 [-]: GETIMPORT R3 7 [nil]
+      12 [-]: GETIMPORT R3 7 [0xA5C556B9]
       13 [-]: MOVE R4 R1   
       14 [-]: LOADK R5 K8 ["Galleon"]
       15 [-]: CALL R3 2 1  
       16 [-]: JUMPXEQKNIL R3 L3 NOT
-      17 [-]: GETIMPORT R3 7 [nil]
+      17 [-]: GETIMPORT R3 7 [0xA5C556B9]
       18 [-]: MOVE R4 R1   
       19 [-]: LOADK R5 K9 ["CorpusShip"]
       20 [-]: CALL R3 2 1  
@@ -578,7 +578,7 @@ L 3:  24 [-]: RETURN R2 1
 ; Is_vararg:       0
 ; Max Stack Size:  11
 
-       0 [-]: GETIMPORT R1 1 [nil]
+       0 [-]: GETIMPORT R1 1 [0x64FB1586]
        1 [-]: NAMECALL R2 R0 K2 [0xE223E2B1]
        2 [-]: CALL R2 1 -1 
        3 [-]: CALL R1 -1 1 
@@ -588,11 +588,11 @@ L 3:  24 [-]: RETURN R2 1
        7 [-]: LOADK R5 K5 ["Shipyards"]
        8 [-]: LOADK R6 K6 ["Ocean"]
        9 [-]: SETLIST R2 R3 4 [1]
-      10 [-]: GETIMPORT R3 8 [nil]
+      10 [-]: GETIMPORT R3 8 [0xC8802016]
       11 [-]: MOVE R4 R2   
       12 [-]: CALL R3 1 3  
       13 [-]: FORGPREP_INEXT R3 L1
-L 0:  14 [-]: GETIMPORT R8 11 [nil]
+L 0:  14 [-]: GETIMPORT R8 11 [0xA5C556B9]
       15 [-]: MOVE R9 R1   
       16 [-]: MOVE R10 R7  
       17 [-]: CALL R8 2 1  
@@ -612,16 +612,16 @@ L 1:  20 [-]: FORGLOOP R3 L0 2 [inext]
 
        0 [-]: GETTABLEKS R4 R0 K0 ["mAttackerMissionKey"]
        1 [-]: FASTCALL1 62 R4 L0
-       2 [-]: GETIMPORT R3 2 [nil]
+       2 [-]: GETIMPORT R3 2 [0x7B998233]
        3 [-]: CALL R3 1 1  
 L 0:   4 [-]: JUMPIF R3 L2 
        5 [-]: JUMPIFNOT R2 L2
-       6 [-]: GETIMPORT R3 4 [nil]
+       6 [-]: GETIMPORT R3 4 [0xB009BBC6]
        7 [-]: GETTABLEKS R4 R0 K0 ["mAttackerMissionKey"]
        8 [-]: CALL R3 1 1  
        9 [-]: FASTCALL1 62 R3 L1
       10 [-]: MOVE R5 R3   
-      11 [-]: GETIMPORT R4 2 [nil]
+      11 [-]: GETIMPORT R4 2 [0x7B998233]
       12 [-]: CALL R4 1 1  
 L 1:  13 [-]: JUMPIF R4 L5 
       14 [-]: NAMECALL R4 R3 K5 [0xEF893AEC]
@@ -638,16 +638,16 @@ L 1:  13 [-]: JUMPIF R4 L5
      
 L 2:  25 [-]: GETTABLEKS R4 R0 K11 ["mDefenderMissionKey"]
       26 [-]: FASTCALL1 62 R4 L3
-      27 [-]: GETIMPORT R3 2 [nil]
+      27 [-]: GETIMPORT R3 2 [0x7B998233]
       28 [-]: CALL R3 1 1  
 L 3:  29 [-]: JUMPIF R3 L5 
       30 [-]: JUMPIF R2 L5 
-      31 [-]: GETIMPORT R3 4 [nil]
+      31 [-]: GETIMPORT R3 4 [0xB009BBC6]
       32 [-]: GETTABLEKS R4 R0 K11 ["mDefenderMissionKey"]
       33 [-]: CALL R3 1 1  
       34 [-]: FASTCALL1 62 R3 L4
       35 [-]: MOVE R5 R3   
-      36 [-]: GETIMPORT R4 2 [nil]
+      36 [-]: GETIMPORT R4 2 [0x7B998233]
       37 [-]: CALL R4 1 1  
 L 4:  38 [-]: JUMPIF R4 L5 
       39 [-]: NAMECALL R4 R3 K5 [0xEF893AEC]
@@ -692,7 +692,7 @@ L 7:  77 [-]: GETTABLEKS R9 R1 K16 ["mission"]
       78 [-]: GETTABLEKS R8 R9 K18 ["seed"]
       79 [-]: GETTABLEKS R9 R3 K18 ["seed"]
       80 [-]: CALL R6 3 1  
-      81 [-]: GETIMPORT R7 20 [nil]
+      81 [-]: GETIMPORT R7 20 [0x84883F05]
       82 [-]: MOVE R8 R6   
       83 [-]: GETUPVAL R11 2
       84 [-]: GETTABLEKS R13 R0 K7 ["mId"]
@@ -747,7 +747,7 @@ L10: 124 [-]: LOADN R8 2
      132 [-]: JUMPIFNOT R8 L11
      133 [-]: GETUPVAL R10 5
      134 [-]: GETTABLE R9 R10 R4
-     135 [-]: GETIMPORT R10 30 [nil]
+     135 [-]: GETIMPORT R10 30 [0x0C5E62F9]
      136 [-]: LOADN R11 1  
      137 [-]: LENGTH R12 R9
      138 [-]: CALL R10 2 1 
@@ -784,12 +784,12 @@ L11: 153 [-]: GETUPVAL R9 0
      168 [-]: MOVE R7 R9   
      169 [-]: FASTCALL1 62 R7 L12
      170 [-]: MOVE R10 R7  
-     171 [-]: GETIMPORT R9 2 [nil]
+     171 [-]: GETIMPORT R9 2 [0x7B998233]
      172 [-]: CALL R9 1 1  
 L12: 173 [-]: JUMPIFNOT R9 L13
-     174 [-]: GETIMPORT R9 35 [nil]
+     174 [-]: GETIMPORT R9 35 [0x3D106989]
      175 [-]: LOADK R11 K36 ["Failed to generate invasion mission for "]
-     176 [-]: GETIMPORT R17 38 [nil]
+     176 [-]: GETIMPORT R17 38 [0x64FB1586]
      177 [-]: GETTABLEKS R18 R1 K39 ["name"]
      178 [-]: CALL R17 1 1 
      179 [-]: MOVE R12 R17 
@@ -822,7 +822,7 @@ L13: 190 [-]: GETTABLEKS R8 R7 K22 ["missionType"]
      206 [-]: CALL R11 3 1 
      207 [-]: FASTCALL1 62 R10 L14
      208 [-]: MOVE R13 R10 
-     209 [-]: GETIMPORT R12 2 [nil]
+     209 [-]: GETIMPORT R12 2 [0x7B998233]
      210 [-]: CALL R12 1 1 
 L14: 211 [-]: JUMPIFNOT R12 L15
      212 [-]: GETUPVAL R12 10
@@ -833,7 +833,7 @@ L14: 211 [-]: JUMPIFNOT R12 L15
      217 [-]: MOVE R10 R12 
 L15: 218 [-]: FASTCALL1 62 R11 L16
      219 [-]: MOVE R13 R11 
-     220 [-]: GETIMPORT R12 2 [nil]
+     220 [-]: GETIMPORT R12 2 [0x7B998233]
      221 [-]: CALL R12 1 1 
 L16: 222 [-]: JUMPIFNOT R12 L17
      223 [-]: GETUPVAL R12 10
@@ -919,9 +919,9 @@ L25: 292 [-]: GETTABLEKS R8 R7 K22 ["missionType"]
      296 [-]: SETTABLEKS R8 R7 K47 ["maxWaveNum"]
 L26: 297 [-]: NAMECALL R8 R7 K48 [0xA76123AC]
      298 [-]: CALL R8 1 0  
-     299 [-]: GETIMPORT R8 51 [nil]
+     299 [-]: GETIMPORT R8 51 ["InvasionTest"]
      300 [-]: JUMPIFNOT R8 L27
-     301 [-]: GETIMPORT R8 35 [nil]
+     301 [-]: GETIMPORT R8 35 [0x3D106989]
      302 [-]: GETUPVAL R20 0
      303 [-]: GETTABLEKS R19 R20 K13 [0x06D055F9]
      304 [-]: MOVE R20 R2  
@@ -930,7 +930,7 @@ L26: 297 [-]: NAMECALL R8 R7 K48 [0xA76123AC]
      307 [-]: CALL R19 3 1 
      308 [-]: MOVE R10 R19 
      309 [-]: LOADK R11 K54 ["node="]
-     310 [-]: GETIMPORT R19 38 [nil]
+     310 [-]: GETIMPORT R19 38 [0x64FB1586]
      311 [-]: GETTABLEKS R20 R1 K39 ["name"]
      312 [-]: CALL R19 1 1 
      313 [-]: MOVE R12 R19 
@@ -939,7 +939,7 @@ L26: 297 [-]: NAMECALL R8 R7 K48 [0xA76123AC]
      316 [-]: LOADK R15 K56 [" missionType="]
      317 [-]: GETTABLEKS R16 R7 K22 ["missionType"]
      318 [-]: LOADK R17 K57 [" levelOverride="]
-     319 [-]: GETIMPORT R18 38 [nil]
+     319 [-]: GETIMPORT R18 38 [0x64FB1586]
      320 [-]: GETTABLEKS R19 R7 K23 ["levelOverride"]
      321 [-]: NAMECALL R19 R19 K58 [0xED4E0128]
      322 [-]: CALL R19 1 -1
@@ -956,10 +956,10 @@ L27: 326 [-]: RETURN R7 1
 ; Is_vararg:       0
 ; Max Stack Size:  21
 
-       0 [-]: GETIMPORT R0 2 [nil]
+       0 [-]: GETIMPORT R0 2 ["InvasionTest"]
        1 [-]: JUMPXEQKB R0 1 L0 NOT
        2 [-]: RETURN R0 0  
-L 0:   3 [-]: GETIMPORT R0 3 [nil]
+L 0:   3 [-]: GETIMPORT R0 3 ["_T"]
        4 [-]: LOADB R1 1   
        5 [-]: SETTABLEKS R1 R0 K1 ["InvasionTest"]
        6 [-]: NEWTABLE R0 0 0
@@ -996,7 +996,7 @@ L 0:   3 [-]: GETIMPORT R0 3 [nil]
       37 [-]: LOADN R3 1   
       38 [-]: FORNPREP R2 L9
 L 1:  39 [-]: LOADN R5 0   
-      40 [-]: GETIMPORT R6 10 [nil]
+      40 [-]: GETIMPORT R6 10 [0xCFC01047]
       41 [-]: MOVE R7 R0   
       42 [-]: CALL R6 1 3  
       43 [-]: FORGPREP_NEXT R6 L8
@@ -1023,11 +1023,11 @@ L 2:  44 [-]: NEWTABLE R11 4 0
       64 [-]: MULK R14 R9 K13 [1000]
       65 [-]: ADD R13 R4 R14
       66 [-]: SETTABLEKS R13 R12 K15 ["cycleNum"]
-      67 [-]: GETIMPORT R12 10 [nil]
+      67 [-]: GETIMPORT R12 10 [0xCFC01047]
       68 [-]: MOVE R13 R1  
       69 [-]: CALL R12 1 3 
       70 [-]: FORGPREP_NEXT R12 L7
-L 3:  71 [-]: GETIMPORT R17 17 [nil]
+L 3:  71 [-]: GETIMPORT R17 17 [0xCE225EFA]
       72 [-]: LOADN R18 0  
       73 [-]: CALL R17 1 0 
       74 [-]: GETTABLEKS R17 R16 K18 ["name"]
@@ -1037,12 +1037,12 @@ L 3:  71 [-]: GETIMPORT R17 17 [nil]
       78 [-]: GETTABLEKS R19 R16 K20 ["mission"]
       79 [-]: GETTABLEKS R18 R19 K21 ["levelOverride"]
       80 [-]: FASTCALL1 62 R18 L4
-      81 [-]: GETIMPORT R17 23 [nil]
+      81 [-]: GETIMPORT R17 23 [0x7B998233]
       82 [-]: CALL R17 1 1 
 L 4:  83 [-]: JUMPIF R17 L7
       84 [-]: GETTABLEKS R18 R16 K24 ["tileset"]
       85 [-]: FASTCALL1 62 R18 L5
-      86 [-]: GETIMPORT R17 23 [nil]
+      86 [-]: GETIMPORT R17 23 [0x7B998233]
       87 [-]: CALL R17 1 1 
 L 5:  88 [-]: JUMPIF R17 L7
       89 [-]: GETTABLEKS R18 R16 K20 ["mission"]
@@ -1059,7 +1059,7 @@ L 5:  88 [-]: JUMPIF R17 L7
      100 [-]: JUMPIFNOTEQ R17 R18 L7
 L 6: 101 [-]: NEWTABLE R17 0 0
      102 [-]: SETTABLEKS R17 R11 K26 ["mAttackerMissionInfo"]
-     103 [-]: GETIMPORT R17 29 [nil]
+     103 [-]: GETIMPORT R17 29 [0x6E0E9F85]
      104 [-]: CALL R17 0 1 
      105 [-]: SETTABLEKS R17 R11 K26 ["mAttackerMissionInfo"]
      106 [-]: GETTABLEKS R17 R11 K26 ["mAttackerMissionInfo"]
@@ -1067,7 +1067,7 @@ L 6: 101 [-]: NEWTABLE R17 0 0
      108 [-]: SETTABLEKS R18 R17 K25 ["faction"]
      109 [-]: NEWTABLE R17 0 0
      110 [-]: SETTABLEKS R17 R11 K30 ["mDefenderMissionInfo"]
-     111 [-]: GETIMPORT R17 29 [nil]
+     111 [-]: GETIMPORT R17 29 [0x6E0E9F85]
      112 [-]: CALL R17 0 1 
      113 [-]: SETTABLEKS R17 R11 K30 ["mDefenderMissionInfo"]
      114 [-]: GETTABLEKS R17 R11 K30 ["mDefenderMissionInfo"]
@@ -1086,7 +1086,7 @@ L 6: 101 [-]: NEWTABLE R17 0 0
      127 [-]: ADDK R5 R5 K31 [1]
 L 7: 128 [-]: FORGLOOP R12 L3 2
 L 8: 129 [-]: FORGLOOP R6 L2 2
-     130 [-]: GETIMPORT R6 33 [nil]
+     130 [-]: GETIMPORT R6 33 [0x3D106989]
      131 [-]: LOADK R8 K34 ["Generated cycle "]
      132 [-]: MOVE R9 R4   
      133 [-]: LOADK R10 K35 [" of invasion missions on all eligible starchart nodes. Num generated="]
@@ -1110,7 +1110,7 @@ L 9: 138 [-]: RETURN R0 0
        3 [-]: MODK R2 R3 K0 [1440]
        4 [-]: DIVK R4 R2 K2 [15]
        5 [-]: FASTCALL1 12 R4 L0
-       6 [-]: GETIMPORT R3 5 [nil]
+       6 [-]: GETIMPORT R3 5 [0x55F27C30]
        7 [-]: CALL R3 1 1  
 L 0:   8 [-]: GETTABLEKS R5 R1 K6 ["mId"]
        9 [-]: GETTABLEKS R4 R5 K6 ["mId"]
@@ -1138,7 +1138,7 @@ L 2:  24 [-]: GETUPVAL R6 1
       31 [-]: NAMECALL R5 R5 K11 [0x3AD9ED31]
       32 [-]: CALL R5 2 1  
       33 [-]: LOADK R7 K12 ["GENERATING INVASION MISSIONS FOR "]
-      34 [-]: GETIMPORT R13 14 [nil]
+      34 [-]: GETIMPORT R13 14 [0x64FB1586]
       35 [-]: GETTABLEKS R14 R1 K10 ["mNode"]
       36 [-]: CALL R13 1 1 
       37 [-]: MOVE R8 R13  

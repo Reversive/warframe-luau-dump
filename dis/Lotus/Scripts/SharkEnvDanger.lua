@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  2
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x0469F296]
        2 [-]: LOADK R1 K2 ["GAME_C1_SPINE2"]
        3 [-]: CALL R0 1 1  
        4 [-]: DUPCLOSURE R1 K3 []
@@ -25,26 +25,26 @@
        1 [-]: CALL R1 1 1  
        2 [-]: FASTCALL1 62 R1 L0
        3 [-]: MOVE R3 R1   
-       4 [-]: GETIMPORT R2 2 [nil]
+       4 [-]: GETIMPORT R2 2 [0x7B998233]
        5 [-]: CALL R2 1 1  
 L 0:   6 [-]: JUMPIF R2 L3 
-       7 [-]: GETIMPORT R4 4 [nil]
+       7 [-]: GETIMPORT R4 4 [0x860DD62C]
        8 [-]: NAMECALL R2 R1 K5 [0xC9F6A7D7]
        9 [-]: CALL R2 2 1  
       10 [-]: FASTCALL1 62 R2 L1
       11 [-]: MOVE R4 R2   
-      12 [-]: GETIMPORT R3 2 [nil]
+      12 [-]: GETIMPORT R3 2 [0x7B998233]
       13 [-]: CALL R3 1 1  
 L 1:  14 [-]: JUMPIFNOT R3 L2
-      15 [-]: GETIMPORT R5 4 [nil]
+      15 [-]: GETIMPORT R5 4 [0x860DD62C]
       16 [-]: GETUPVAL R6 0
       17 [-]: NAMECALL R3 R1 K6 [0x47901F07]
       18 [-]: CALL R3 3 0  
-L 2:  19 [-]: GETIMPORT R5 8 [nil]
+L 2:  19 [-]: GETIMPORT R5 8 [0x3865D4CE]
       20 [-]: GETUPVAL R6 0
       21 [-]: NAMECALL R3 R1 K6 [0x47901F07]
       22 [-]: CALL R3 3 0  
-      23 [-]: GETIMPORT R5 10 [nil]
+      23 [-]: GETIMPORT R5 10 [0x795156A3]
       24 [-]: LOADB R6 0   
       25 [-]: LOADB R7 0   
       26 [-]: NAMECALL R3 R1 K11 [0x5D985C7E]

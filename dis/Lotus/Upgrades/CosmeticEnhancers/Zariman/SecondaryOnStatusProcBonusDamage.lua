@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  1
 
-            1 [-]: DUPCLOSURE R0 K0 []
+       1 [-]: DUPCLOSURE R0 K0 []
        2 [-]: SETGLOBAL R0 K1 ["GetDescription"]
        3 [-]: DUPCLOSURE R0 K2 []
        4 [-]: SETGLOBAL R0 K3 ["ModApplied"]
@@ -20,16 +20,16 @@
 ; Max Stack Size:  7
 
        0 [-]: DUPTABLE R1 1
-       1 [-]: GETIMPORT R3 3 [nil]
-       2 [-]: GETIMPORT R6 3 [nil]
+       1 [-]: GETIMPORT R3 3 [0xC39C3F44]
+       2 [-]: GETIMPORT R6 3 [0xC39C3F44]
        3 [-]: LENGTH R5 R6 
        4 [-]: FASTCALL2 19 R5 R0 L0
        5 [-]: MOVE R6 R0   
-       6 [-]: GETIMPORT R4 6 [nil]
+       6 [-]: GETIMPORT R4 6 [0xAC1B386A]
        7 [-]: CALL R4 2 1  
 L 0:   8 [-]: GETTABLE R2 R3 R4
        9 [-]: SETTABLEKS R2 R1 K0 ["AMOUNT"]
-      10 [-]: GETIMPORT R2 9 [nil]
+      10 [-]: GETIMPORT R2 9 [0xB139D7BC]
       11 [-]: MOVE R3 R1   
       12 [-]: CALL R2 1 -1 
       13 [-]: RETURN R2 -1 
@@ -46,7 +46,7 @@ L 0:   8 [-]: GETTABLE R2 R3 R4
        1 [-]: CALL R5 1 1  
        2 [-]: GETTABLEKS R7 R5 K1 ["victim"]
        3 [-]: FASTCALL1 62 R7 L0
-       4 [-]: GETIMPORT R6 3 [nil]
+       4 [-]: GETIMPORT R6 3 [0x7B998233]
        5 [-]: CALL R6 1 1  
 L 0:   6 [-]: JUMPIF R6 L1 
        7 [-]: GETTABLEKS R6 R5 K1 ["victim"]
@@ -54,14 +54,14 @@ L 0:   6 [-]: JUMPIF R6 L1
        9 [-]: CALL R6 1 1  
       10 [-]: JUMPIFNOT R6 L2
 L 1:  11 [-]: RETURN R0 0  
-L 2:  12 [-]: GETIMPORT R6 7 [nil]
+L 2:  12 [-]: GETIMPORT R6 7 [0x35C16153]
       13 [-]: CALL R6 0 1  
-      14 [-]: GETIMPORT R8 9 [nil]
-      15 [-]: GETIMPORT R11 9 [nil]
+      14 [-]: GETIMPORT R8 9 [0xC39C3F44]
+      15 [-]: GETIMPORT R11 9 [0xC39C3F44]
       16 [-]: LENGTH R10 R11
       17 [-]: FASTCALL2 19 R10 R2 L3
       18 [-]: MOVE R11 R2  
-      19 [-]: GETIMPORT R9 12 [nil]
+      19 [-]: GETIMPORT R9 12 [0xAC1B386A]
       20 [-]: CALL R9 2 1  
 L 3:  21 [-]: GETTABLE R7 R8 R9
       22 [-]: SETTABLEKS R7 R6 K13 ["baseAmount"]

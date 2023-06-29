@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  1
 
-            1 [-]: DUPCLOSURE R0 K0 []
+       1 [-]: DUPCLOSURE R0 K0 []
        2 [-]: SETGLOBAL R0 K1 ["OnUpgradeApplied"]
        3 [-]: DUPCLOSURE R0 K2 []
        4 [-]: SETGLOBAL R0 K3 ["OnDamageDone"]
@@ -22,8 +22,8 @@
        0 [-]: NAMECALL R5 R0 K0 [0xA5E492D4]
        1 [-]: CALL R5 1 1  
        2 [-]: JUMPIFNOT R5 L0
-       3 [-]: GETIMPORT R5 2 [nil]
-       4 [-]: GETIMPORT R7 4 [nil]
+       3 [-]: GETIMPORT R5 2 [0x89326C93]
+       4 [-]: GETIMPORT R7 4 [0x520E413D]
        5 [-]: NAMECALL R8 R0 K5 [0xD1586535]
        6 [-]: CALL R8 1 1  
        7 [-]: LOADB R9 0   
@@ -42,7 +42,7 @@ L 0:  13 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  13
 
-       0 [-]: GETIMPORT R3 1 [nil]
+       0 [-]: GETIMPORT R3 1 [0x89326C93]
        1 [-]: NAMECALL R3 R3 K2 [0x18D05D30]
        2 [-]: CALL R3 1 1  
        3 [-]: JUMPIF R3 L0 
@@ -51,14 +51,14 @@ L 0:   5 [-]: NAMECALL R3 R0 K3 [0x5163741E]
        6 [-]: CALL R3 1 1  
        7 [-]: FASTCALL1 62 R3 L1
        8 [-]: MOVE R5 R3   
-       9 [-]: GETIMPORT R4 5 [nil]
+       9 [-]: GETIMPORT R4 5 [0x7B998233]
       10 [-]: CALL R4 1 1  
 L 1:  11 [-]: JUMPIF R4 L3 
-      12 [-]: GETIMPORT R6 7 [nil]
+      12 [-]: GETIMPORT R6 7 ["gBaseAvatarType"]
       13 [-]: NAMECALL R4 R3 K8 [0xF2DEAF69]
       14 [-]: CALL R4 2 1  
       15 [-]: JUMPIFNOT R4 L3
-      16 [-]: GETIMPORT R4 10 [nil]
+      16 [-]: GETIMPORT R4 10 [0xBE190284]
       17 [-]: NAMECALL R4 R4 K11 [0x32316A21]
       18 [-]: CALL R4 1 1  
       19 [-]: JUMPIF R4 L2 
@@ -75,7 +75,7 @@ L 2:  24 [-]: MOVE R6 R3
       30 [-]: NAMECALL R10 R1 K15 [0xFC79A2A8]
       31 [-]: CALL R10 1 1 
       32 [-]: ADD R8 R9 R10
-      33 [-]: GETIMPORT R9 17 [nil]
+      33 [-]: GETIMPORT R9 17 [0x196A8282]
       34 [-]: MUL R7 R8 R9 
       35 [-]: NAMECALL R4 R3 K18 [0x1F135DE0]
       36 [-]: CALL R4 3 0  

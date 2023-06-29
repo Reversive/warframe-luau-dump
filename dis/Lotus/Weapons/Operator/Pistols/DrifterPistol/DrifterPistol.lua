@@ -5,10 +5,10 @@
 ; Is_vararg:       1
 ; Max Stack Size:  6
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x2D0FAD09]
        2 [-]: LOADK R1 K2 ["Lotus.Scripts.Libs.ObjectiveText"]
        3 [-]: CALL R0 1 1  
-       4 [-]: GETIMPORT R1 4 [nil]
+       4 [-]: GETIMPORT R1 4 [0xB009BBC6]
        5 [-]: LOADK R2 K5 ["/Lotus/Types/Player/TennoInputFilter"]
        6 [-]: CALL R1 1 1  
        7 [-]: DUPCLOSURE R2 K6 []
@@ -46,7 +46,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  6
 
-       0 [-]: GETIMPORT R1 1 [nil]
+       0 [-]: GETIMPORT R1 1 [0xB63D5743]
        1 [-]: LOADN R2 0   
        2 [-]: JUMPIFNOTLT R1 R2 L0
        3 [-]: RETURN R0 0  
@@ -54,10 +54,10 @@ L 0:   4 [-]: NAMECALL R1 R0 K2 [0x73A8846A]
        5 [-]: CALL R1 1 1  
        6 [-]: FASTCALL1 62 R1 L1
        7 [-]: MOVE R3 R1   
-       8 [-]: GETIMPORT R2 4 [nil]
+       8 [-]: GETIMPORT R2 4 [0x7B998233]
        9 [-]: CALL R2 1 1  
 L 1:  10 [-]: JUMPIF R2 L3 
-      11 [-]: GETIMPORT R4 6 [nil]
+      11 [-]: GETIMPORT R4 6 ["gLotusWeaponType"]
       12 [-]: NAMECALL R2 R1 K7 [0xF2DEAF69]
       13 [-]: CALL R2 2 1  
       14 [-]: JUMPIFNOT R2 L3
@@ -65,14 +65,14 @@ L 1:  10 [-]: JUMPIF R2 L3
       16 [-]: CALL R2 1 1  
       17 [-]: FASTCALL1 62 R2 L2
       18 [-]: MOVE R4 R2   
-      19 [-]: GETIMPORT R3 4 [nil]
+      19 [-]: GETIMPORT R3 4 [0x7B998233]
       20 [-]: CALL R3 1 1  
 L 2:  21 [-]: JUMPIF R3 L3 
-      22 [-]: GETIMPORT R5 10 [nil]
+      22 [-]: GETIMPORT R5 10 ["gWeaponProjectileFireBehaviorType"]
       23 [-]: NAMECALL R3 R2 K7 [0xF2DEAF69]
       24 [-]: CALL R3 2 1  
       25 [-]: JUMPIFNOT R3 L3
-      26 [-]: GETIMPORT R5 1 [nil]
+      26 [-]: GETIMPORT R5 1 [0xB63D5743]
       27 [-]: NAMECALL R3 R2 K11 [0x7830F18B]
       28 [-]: CALL R3 2 0  
 L 3:  29 [-]: RETURN R0 0  
@@ -85,7 +85,7 @@ L 3:  29 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  6
 
-       0 [-]: GETIMPORT R2 1 [nil]
+       0 [-]: GETIMPORT R2 1 [0x1D5C3904]
        1 [-]: LOADN R3 0   
        2 [-]: JUMPIFNOTLT R2 R3 L0
        3 [-]: RETURN R0 0  
@@ -93,21 +93,21 @@ L 0:   4 [-]: NAMECALL R2 R0 K2 [0x73A8846A]
        5 [-]: CALL R2 1 1  
        6 [-]: FASTCALL1 62 R2 L1
        7 [-]: MOVE R4 R2   
-       8 [-]: GETIMPORT R3 4 [nil]
+       8 [-]: GETIMPORT R3 4 [0x7B998233]
        9 [-]: CALL R3 1 1  
 L 1:  10 [-]: JUMPIFNOT R3 L2
       11 [-]: RETURN R0 0  
-L 2:  12 [-]: GETIMPORT R3 1 [nil]
+L 2:  12 [-]: GETIMPORT R3 1 [0x1D5C3904]
       13 [-]: NAMECALL R4 R2 K5 [0x1403242C]
       14 [-]: CALL R4 1 1  
       15 [-]: JUMPIFEQ R3 R4 L3
-      16 [-]: GETIMPORT R5 1 [nil]
+      16 [-]: GETIMPORT R5 1 [0x1D5C3904]
       17 [-]: NAMECALL R3 R2 K6 [0xC8E7E8F9]
       18 [-]: CALL R3 2 1  
       19 [-]: MOVE R5 R1   
       20 [-]: NAMECALL R3 R3 K7 [0x5500A6BD]
       21 [-]: CALL R3 2 0  
-      22 [-]: GETIMPORT R5 1 [nil]
+      22 [-]: GETIMPORT R5 1 [0x1D5C3904]
       23 [-]: NAMECALL R3 R2 K8 [0x7C68DB20]
       24 [-]: CALL R3 2 0  
       25 [-]: LOADB R5 1   
@@ -152,26 +152,26 @@ L 3:  28 [-]: RETURN R0 0
 
        0 [-]: NAMECALL R1 R0 K0 [0x388577D5]
        1 [-]: CALL R1 1 1  
-       2 [-]: GETIMPORT R3 3 [nil]
+       2 [-]: GETIMPORT R3 3 ["drifterWeaponMissedReload"]
        3 [-]: FASTCALL1 62 R3 L0
-       4 [-]: GETIMPORT R2 5 [nil]
+       4 [-]: GETIMPORT R2 5 [0x7B998233]
        5 [-]: CALL R2 1 1  
 L 0:   6 [-]: JUMPIFNOT R2 L1
        7 [-]: RETURN R0 0  
-L 1:   8 [-]: GETIMPORT R3 7 [nil]
+L 1:   8 [-]: GETIMPORT R3 7 ["ShowImpactMessage"]
        9 [-]: FASTCALL1 62 R3 L2
-      10 [-]: GETIMPORT R2 5 [nil]
+      10 [-]: GETIMPORT R2 5 [0x7B998233]
       11 [-]: CALL R2 1 1  
 L 2:  12 [-]: JUMPIF R2 L7 
-      13 [-]: GETIMPORT R3 9 [nil]
+      13 [-]: GETIMPORT R3 9 ["DisableDrifterPistolMessage"]
       14 [-]: FASTCALL1 62 R3 L3
-      15 [-]: GETIMPORT R2 5 [nil]
+      15 [-]: GETIMPORT R2 5 [0x7B998233]
       16 [-]: CALL R2 1 1  
 L 3:  17 [-]: JUMPIF R2 L7 
-      18 [-]: GETIMPORT R4 3 [nil]
+      18 [-]: GETIMPORT R4 3 ["drifterWeaponMissedReload"]
       19 [-]: GETTABLE R3 R4 R1
       20 [-]: FASTCALL1 62 R3 L4
-      21 [-]: GETIMPORT R2 5 [nil]
+      21 [-]: GETIMPORT R2 5 [0x7B998233]
       22 [-]: CALL R2 1 1  
 L 4:  23 [-]: JUMPIFNOT R2 L5
       24 [-]: GETUPVAL R3 0
@@ -181,7 +181,7 @@ L 4:  23 [-]: JUMPIFNOT R2 L5
       28 [-]: GETUPVAL R5 1
       29 [-]: CALL R2 3 0  
       30 [-]: RETURN R0 0  
-L 5:  31 [-]: GETIMPORT R3 3 [nil]
+L 5:  31 [-]: GETIMPORT R3 3 ["drifterWeaponMissedReload"]
       32 [-]: GETTABLE R2 R3 R1
       33 [-]: LOADN R3 10  
       34 [-]: JUMPIFNOTLE R3 R2 L6
@@ -190,12 +190,12 @@ L 5:  31 [-]: GETIMPORT R3 3 [nil]
       37 [-]: LOADK R3 K11 ["/Lotus/Language/NewWar/DrifterPistolHint_KBM"]
       38 [-]: LOADN R4 3   
       39 [-]: CALL R2 2 0  
-      40 [-]: GETIMPORT R2 3 [nil]
+      40 [-]: GETIMPORT R2 3 ["drifterWeaponMissedReload"]
       41 [-]: LOADN R3 0   
       42 [-]: SETTABLE R3 R2 R1
       43 [-]: RETURN R0 0  
-L 6:  44 [-]: GETIMPORT R2 3 [nil]
-      45 [-]: GETIMPORT R5 3 [nil]
+L 6:  44 [-]: GETIMPORT R2 3 ["drifterWeaponMissedReload"]
+      45 [-]: GETIMPORT R5 3 ["drifterWeaponMissedReload"]
       46 [-]: GETTABLE R4 R5 R1
       47 [-]: ADDK R3 R4 K12 [1]
       48 [-]: SETTABLE R3 R2 R1
@@ -220,19 +220,19 @@ L 7:  49 [-]: RETURN R0 0
        8 [-]: CALL R1 1 1  
        9 [-]: FASTCALL1 62 R1 L0
       10 [-]: MOVE R3 R1   
-      11 [-]: GETIMPORT R2 2 [nil]
+      11 [-]: GETIMPORT R2 2 [0x7B998233]
       12 [-]: CALL R2 1 1  
 L 0:  13 [-]: JUMPIF R2 L4 
-      14 [-]: GETIMPORT R4 4 [nil]
-      15 [-]: GETIMPORT R5 6 [nil]
-      16 [-]: GETIMPORT R6 8 [nil]
-      17 [-]: GETIMPORT R7 10 [nil]
+      14 [-]: GETIMPORT R4 4 [0xF863CDDD]
+      15 [-]: GETIMPORT R5 6 ["EMPTY_SYMBOL"]
+      16 [-]: GETIMPORT R6 8 ["ZERO_VECTOR"]
+      17 [-]: GETIMPORT R7 10 ["ZERO_ROTATION"]
       18 [-]: MOVE R8 R1   
       19 [-]: NAMECALL R2 R0 K11 [0x47901F07]
       20 [-]: CALL R2 6 0  
-      21 [-]: GETIMPORT R3 14 [nil]
+      21 [-]: GETIMPORT R3 14 ["drifterWeaponMissedReload"]
       22 [-]: FASTCALL1 62 R3 L1
-      23 [-]: GETIMPORT R2 2 [nil]
+      23 [-]: GETIMPORT R2 2 [0x7B998233]
       24 [-]: CALL R2 1 1  
 L 1:  25 [-]: JUMPIFNOT R2 L2
       26 [-]: RETURN R0 0  
@@ -240,13 +240,13 @@ L 2:  27 [-]: NAMECALL R2 R1 K15 [0x5163741E]
       28 [-]: CALL R2 1 1  
       29 [-]: FASTCALL1 62 R2 L3
       30 [-]: MOVE R4 R2   
-      31 [-]: GETIMPORT R3 2 [nil]
+      31 [-]: GETIMPORT R3 2 [0x7B998233]
       32 [-]: CALL R3 1 1  
 L 3:  33 [-]: JUMPIF R3 L4 
       34 [-]: NAMECALL R3 R2 K16 [0x4ACCF179]
       35 [-]: CALL R3 1 1  
       36 [-]: JUMPIFNOT R3 L4
-      37 [-]: GETIMPORT R3 14 [nil]
+      37 [-]: GETIMPORT R3 14 ["drifterWeaponMissedReload"]
       38 [-]: NAMECALL R4 R2 K17 [0x388577D5]
       39 [-]: CALL R4 1 1  
       40 [-]: LOADN R5 0   
@@ -264,9 +264,9 @@ L 4:  42 [-]: RETURN R0 0
        0 [-]: GETUPVAL R1 0
        1 [-]: MOVE R2 R0   
        2 [-]: CALL R1 1 0  
-       3 [-]: GETIMPORT R2 2 [nil]
+       3 [-]: GETIMPORT R2 2 ["drifterWeaponMissedReload"]
        4 [-]: FASTCALL1 62 R2 L0
-       5 [-]: GETIMPORT R1 4 [nil]
+       5 [-]: GETIMPORT R1 4 [0x7B998233]
        6 [-]: CALL R1 1 1  
 L 0:   7 [-]: JUMPIFNOT R1 L1
        8 [-]: RETURN R0 0  
@@ -274,14 +274,14 @@ L 1:   9 [-]: NAMECALL R1 R0 K5 [0x73A8846A]
       10 [-]: CALL R1 1 1  
       11 [-]: FASTCALL1 62 R1 L2
       12 [-]: MOVE R3 R1   
-      13 [-]: GETIMPORT R2 4 [nil]
+      13 [-]: GETIMPORT R2 4 [0x7B998233]
       14 [-]: CALL R2 1 1  
 L 2:  15 [-]: JUMPIF R2 L4 
       16 [-]: NAMECALL R2 R1 K6 [0x5163741E]
       17 [-]: CALL R2 1 1  
       18 [-]: FASTCALL1 62 R2 L3
       19 [-]: MOVE R4 R2   
-      20 [-]: GETIMPORT R3 4 [nil]
+      20 [-]: GETIMPORT R3 4 [0x7B998233]
       21 [-]: CALL R3 1 1  
 L 3:  22 [-]: JUMPIF R3 L4 
       23 [-]: NAMECALL R3 R2 K7 [0x4ACCF179]
@@ -300,12 +300,12 @@ L 4:  29 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  3
 
-       0 [-]: GETIMPORT R2 2 [nil]
+       0 [-]: GETIMPORT R2 2 ["drifterWeaponMissedReload"]
        1 [-]: FASTCALL1 62 R2 L0
-       2 [-]: GETIMPORT R1 4 [nil]
+       2 [-]: GETIMPORT R1 4 [0x7B998233]
        3 [-]: CALL R1 1 1  
 L 0:   4 [-]: JUMPIFNOT R1 L1
-       5 [-]: GETIMPORT R1 5 [nil]
+       5 [-]: GETIMPORT R1 5 ["_T"]
        6 [-]: NEWTABLE R2 0 0
        7 [-]: SETTABLEKS R2 R1 K1 ["drifterWeaponMissedReload"]
 L 1:   8 [-]: RETURN R0 0  
@@ -322,10 +322,10 @@ L 1:   8 [-]: RETURN R0 0
        1 [-]: CALL R1 1 1  
        2 [-]: FASTCALL1 62 R1 L0
        3 [-]: MOVE R3 R1   
-       4 [-]: GETIMPORT R2 2 [nil]
+       4 [-]: GETIMPORT R2 2 [0x7B998233]
        5 [-]: CALL R2 1 1  
 L 0:   6 [-]: JUMPIF R2 L3 
-       7 [-]: GETIMPORT R4 4 [nil]
+       7 [-]: GETIMPORT R4 4 ["gLotusOperatorAvatarType"]
        8 [-]: NAMECALL R2 R1 K5 [0xF2DEAF69]
        9 [-]: CALL R2 2 1  
       10 [-]: JUMPIFNOT R2 L3
@@ -339,12 +339,12 @@ L 0:   6 [-]: JUMPIF R2 L3
       18 [-]: CALL R2 3 1  
       19 [-]: FASTCALL1 62 R2 L1
       20 [-]: MOVE R4 R2   
-      21 [-]: GETIMPORT R3 2 [nil]
+      21 [-]: GETIMPORT R3 2 [0x7B998233]
       22 [-]: CALL R3 1 1  
 L 1:  23 [-]: JUMPIF R3 L3 
       24 [-]: GETTABLEKS R4 R2 K8 ["mType"]
       25 [-]: FASTCALL1 62 R4 L2
-      26 [-]: GETIMPORT R3 2 [nil]
+      26 [-]: GETIMPORT R3 2 [0x7B998233]
       27 [-]: CALL R3 1 1  
 L 2:  28 [-]: JUMPIF R3 L3 
       29 [-]: LOADN R5 0   
@@ -371,13 +371,13 @@ L 3:  42 [-]: RETURN R0 0
 ; Max Stack Size:  7
 
        0 [-]: NEWTABLE R1 0 0
-       1 [-]: GETIMPORT R4 1 [nil]
+       1 [-]: GETIMPORT R4 1 [0xF863CDDD]
        2 [-]: NAMECALL R2 R0 K2 [0xC1595BD5]
        3 [-]: CALL R2 2 1  
        4 [-]: MOVE R1 R2   
        5 [-]: FASTCALL1 62 R1 L0
        6 [-]: MOVE R3 R1   
-       7 [-]: GETIMPORT R2 4 [nil]
+       7 [-]: GETIMPORT R2 4 [0x7B998233]
        8 [-]: CALL R2 1 1  
 L 0:   9 [-]: JUMPIF R2 L2 
       10 [-]: LOADN R4 1   

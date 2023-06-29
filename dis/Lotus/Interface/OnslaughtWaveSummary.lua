@@ -5,16 +5,16 @@
 ; Is_vararg:       1
 ; Max Stack Size:  11
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x2D0FAD09]
        2 [-]: LOADK R1 K2 ["EE.Interface.Utilities"]
        3 [-]: CALL R0 1 1  
-       4 [-]: GETIMPORT R1 1 [nil]
+       4 [-]: GETIMPORT R1 1 [0x2D0FAD09]
        5 [-]: LOADK R2 K3 ["Lotus.Interface.UIUtilities"]
        6 [-]: CALL R1 1 1  
-       7 [-]: GETIMPORT R2 5 [nil]
+       7 [-]: GETIMPORT R2 5 [0xB009BBC6]
        8 [-]: LOADK R3 K6 ["/Lotus/Sounds/Gameplay/DarkSector/DarkSectorMidWaveRecapOpen"]
        9 [-]: CALL R2 1 1  
-      10 [-]: GETIMPORT R3 5 [nil]
+      10 [-]: GETIMPORT R3 5 [0xB009BBC6]
       11 [-]: LOADK R4 K7 ["/Lotus/Sounds/Gameplay/DarkSector/DarkSectorMidWaveRecapClose"]
       12 [-]: CALL R3 1 1  
       13 [-]: LOADN R4 6   
@@ -52,7 +52,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  7
 
-       0 [-]: GETIMPORT R2 1 [nil]
+       0 [-]: GETIMPORT R2 1 [0xAE91E43B]
        1 [-]: MOVE R4 R0   
        2 [-]: LOADN R5 29  
        3 [-]: MOVE R6 R1   
@@ -86,15 +86,15 @@
 ; Is_vararg:       0
 ; Max Stack Size:  5
 
-       0 [-]: GETIMPORT R1 2 [nil]
+       0 [-]: GETIMPORT R1 2 ["HUD_GetAnchorMgr"]
        1 [-]: FASTCALL1 62 R1 L0
-       2 [-]: GETIMPORT R0 4 [nil]
+       2 [-]: GETIMPORT R0 4 [0x7B998233]
        3 [-]: CALL R0 1 1  
 L 0:   4 [-]: JUMPIF R0 L1 
-       5 [-]: GETIMPORT R0 2 [nil]
+       5 [-]: GETIMPORT R0 2 ["HUD_GetAnchorMgr"]
        6 [-]: CALL R0 0 1  
        7 [-]: JUMPXEQKNIL R0 L1
-       8 [-]: GETIMPORT R3 6 [nil]
+       8 [-]: GETIMPORT R3 6 [0xAE91E43B]
        9 [-]: LOADK R4 K7 ["Card"]
       10 [-]: NAMECALL R1 R0 K8 [0x7F19C438]
       11 [-]: CALL R1 3 0  
@@ -108,11 +108,11 @@ L 1:  12 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  4
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 [0x2D0FAD09]
        1 [-]: LOADK R1 K2 ["EE.Interface.Components.List"]
        2 [-]: CALL R0 1 1  
        3 [-]: GETTABLEKS R1 R0 K3 [0x9383BC56]
-       4 [-]: GETIMPORT R2 5 [nil]
+       4 [-]: GETIMPORT R2 5 [0xAE91E43B]
        5 [-]: LOADK R3 K6 ["Card.Score1"]
        6 [-]: CALL R1 2 1  
        7 [-]: SETUPVAL R1 0
@@ -134,21 +134,21 @@ L 1:  12 [-]: RETURN R0 0
 
        0 [-]: GETUPVAL R1 0
        1 [-]: FASTCALL1 62 R1 L0
-       2 [-]: GETIMPORT R0 1 [nil]
+       2 [-]: GETIMPORT R0 1 [0x7B998233]
        3 [-]: CALL R0 1 1  
 L 0:   4 [-]: JUMPIF R0 L1 
        5 [-]: GETUPVAL R1 1
        6 [-]: GETTABLEKS R0 R1 K2 [0x659D451F]
        7 [-]: GETUPVAL R1 0
        8 [-]: CALL R0 1 0  
-L 1:   9 [-]: GETIMPORT R1 5 [nil]
+L 1:   9 [-]: GETIMPORT R1 5 ["HUD_GetAnchorMgr"]
       10 [-]: FASTCALL1 62 R1 L2
-      11 [-]: GETIMPORT R0 1 [nil]
+      11 [-]: GETIMPORT R0 1 [0x7B998233]
       12 [-]: CALL R0 1 1  
 L 2:  13 [-]: JUMPIF R0 L3 
-      14 [-]: GETIMPORT R0 5 [nil]
+      14 [-]: GETIMPORT R0 5 ["HUD_GetAnchorMgr"]
       15 [-]: CALL R0 0 1  
-      16 [-]: GETIMPORT R3 7 [nil]
+      16 [-]: GETIMPORT R3 7 [0xAE91E43B]
       17 [-]: LOADK R4 K8 ["Card"]
       18 [-]: NEWTABLE R5 0 2
       19 [-]: GETTABLEKS R6 R0 K9 ["ANCHOR_V_CENTRE"]
@@ -156,61 +156,61 @@ L 2:  13 [-]: JUMPIF R0 L3
       21 [-]: SETLIST R5 R6 2 [1]
       22 [-]: NAMECALL R1 R0 K11 [0x20FF29F7]
       23 [-]: CALL R1 4 0  
-      24 [-]: GETIMPORT R3 7 [nil]
+      24 [-]: GETIMPORT R3 7 [0xAE91E43B]
       25 [-]: NAMECALL R3 R3 K12 [0x6B837788]
       26 [-]: CALL R3 1 1  
-      27 [-]: GETIMPORT R4 7 [nil]
+      27 [-]: GETIMPORT R4 7 [0xAE91E43B]
       28 [-]: NAMECALL R4 R4 K13 [0xAF9FDA9F]
       29 [-]: CALL R4 1 1  
       30 [-]: LOADB R5 1   
       31 [-]: GETTABLEKS R6 R0 K14 ["mHudScalePadding"]
       32 [-]: NAMECALL R1 R0 K15 [0xFAA69527]
       33 [-]: CALL R1 5 0  
-L 3:  34 [-]: GETIMPORT R0 17 [nil]
+L 3:  34 [-]: GETIMPORT R0 17 [0x76EA806B]
       35 [-]: LOADN R2 0   
       36 [-]: NAMECALL R0 R0 K18 [0x3F3AE64C]
       37 [-]: CALL R0 2 1  
       38 [-]: FASTCALL1 62 R0 L4
       39 [-]: MOVE R2 R0   
-      40 [-]: GETIMPORT R1 1 [nil]
+      40 [-]: GETIMPORT R1 1 [0x7B998233]
       41 [-]: CALL R1 1 1  
 L 4:  42 [-]: JUMPIF R1 L6 
       43 [-]: NAMECALL R1 R0 K19 [0x40E9C32B]
       44 [-]: CALL R1 1 1  
       45 [-]: FASTCALL1 62 R1 L5
       46 [-]: MOVE R3 R1   
-      47 [-]: GETIMPORT R2 1 [nil]
+      47 [-]: GETIMPORT R2 1 [0x7B998233]
       48 [-]: CALL R2 1 1  
 L 5:  49 [-]: JUMPIF R2 L6 
       50 [-]: NAMECALL R2 R1 K20 [0x21B2271B]
       51 [-]: CALL R2 1 1  
       52 [-]: GETUPVAL R4 2
       53 [-]: GETTABLEKS R3 R4 K21 [0xFA221145]
-      54 [-]: GETIMPORT R4 7 [nil]
+      54 [-]: GETIMPORT R4 7 [0xAE91E43B]
       55 [-]: SUBK R5 R2 K22 [0.10000000000000001]
       56 [-]: CALL R3 2 0  
-L 6:  57 [-]: GETIMPORT R1 7 [nil]
+L 6:  57 [-]: GETIMPORT R1 7 [0xAE91E43B]
       58 [-]: LOADK R3 K23 ["Card.SimarisShot"]
-      59 [-]: GETIMPORT R4 25 [nil]
+      59 [-]: GETIMPORT R4 25 [0xB6D54DF6]
       60 [-]: NAMECALL R1 R1 K26 [0x1CB415C1]
       61 [-]: CALL R1 3 0  
-      62 [-]: GETIMPORT R1 7 [nil]
+      62 [-]: GETIMPORT R1 7 [0xAE91E43B]
       63 [-]: LOADK R3 K8 ["Card"]
       64 [-]: LOADN R4 10  
       65 [-]: LOADN R5 0   
       66 [-]: NAMECALL R1 R1 K27 [0x67BC869F]
       67 [-]: CALL R1 4 0  
-      68 [-]: GETIMPORT R1 7 [nil]
+      68 [-]: GETIMPORT R1 7 [0xAE91E43B]
       69 [-]: LOADK R3 K8 ["Card"]
       70 [-]: LOADN R4 5   
       71 [-]: LOADN R5 0   
       72 [-]: NAMECALL R1 R1 K27 [0x67BC869F]
       73 [-]: CALL R1 4 0  
-      74 [-]: GETIMPORT R1 29 [nil]
+      74 [-]: GETIMPORT R1 29 [0x2D0FAD09]
       75 [-]: LOADK R2 K30 ["EE.Interface.Components.List"]
       76 [-]: CALL R1 1 1  
       77 [-]: GETTABLEKS R2 R1 K31 [0x9383BC56]
-      78 [-]: GETIMPORT R3 7 [nil]
+      78 [-]: GETIMPORT R3 7 [0xAE91E43B]
       79 [-]: LOADK R4 K32 ["Card.Score1"]
       80 [-]: CALL R2 2 1  
       81 [-]: SETUPVAL R2 3
@@ -220,45 +220,45 @@ L 6:  57 [-]: GETIMPORT R1 7 [nil]
       85 [-]: GETUPVAL R2 3
       86 [-]: DUPCLOSURE R3 K34 []
       87 [-]: SETTABLEKS R3 R2 K35 ["mElementDrawCallback"]
-      88 [-]: GETIMPORT R1 7 [nil]
+      88 [-]: GETIMPORT R1 7 [0xAE91E43B]
       89 [-]: LOADK R3 K36 ["Card.WaveTitle"]
       90 [-]: LOADN R4 44  
       91 [-]: LOADB R5 1   
       92 [-]: NAMECALL R1 R1 K37 [0xAADE900E]
       93 [-]: CALL R1 4 0  
-      94 [-]: GETIMPORT R1 7 [nil]
+      94 [-]: GETIMPORT R1 7 [0xAE91E43B]
       95 [-]: LOADK R3 K36 ["Card.WaveTitle"]
       96 [-]: LOADN R4 38  
       97 [-]: LOADK R5 K38 ["center"]
       98 [-]: NAMECALL R1 R1 K39 [0x5F56EEAB]
       99 [-]: CALL R1 4 0  
-     100 [-]: GETIMPORT R1 7 [nil]
+     100 [-]: GETIMPORT R1 7 [0xAE91E43B]
      101 [-]: LOADK R3 K36 ["Card.WaveTitle"]
      102 [-]: LOADN R4 29  
      103 [-]: LOADK R5 K40 [""]
      104 [-]: NAMECALL R1 R1 K39 [0x5F56EEAB]
      105 [-]: CALL R1 4 0  
-     106 [-]: GETIMPORT R1 7 [nil]
+     106 [-]: GETIMPORT R1 7 [0xAE91E43B]
      107 [-]: LOADK R3 K41 ["Card.Rank"]
      108 [-]: LOADN R4 29  
      109 [-]: LOADK R5 K40 [""]
      110 [-]: NAMECALL R1 R1 K39 [0x5F56EEAB]
      111 [-]: CALL R1 4 0  
-     112 [-]: GETIMPORT R1 7 [nil]
+     112 [-]: GETIMPORT R1 7 [0xAE91E43B]
      113 [-]: LOADK R3 K41 ["Card.Rank"]
      114 [-]: LOADN R4 9   
-     115 [-]: GETIMPORT R6 43 [nil]
+     115 [-]: GETIMPORT R6 43 [0x0032441C]
      116 [-]: GETTABLEKS R5 R6 K44 ["UIColor_MediumGrey"]
      117 [-]: NAMECALL R1 R1 K27 [0x67BC869F]
      118 [-]: CALL R1 4 0  
-     119 [-]: GETIMPORT R1 7 [nil]
+     119 [-]: GETIMPORT R1 7 [0xAE91E43B]
      120 [-]: LOADK R3 K41 ["Card.Rank"]
      121 [-]: LOADN R4 10  
      122 [-]: LOADN R5 40  
      123 [-]: NAMECALL R1 R1 K27 [0x67BC869F]
      124 [-]: CALL R1 4 0  
-     125 [-]: GETIMPORT R1 46 [nil]
-     126 [-]: GETIMPORT R2 7 [nil]
+     125 [-]: GETIMPORT R1 46 [0x25312C9B]
+     126 [-]: GETIMPORT R2 7 [0xAE91E43B]
      127 [-]: LOADK R3 K8 ["Card"]
      128 [-]: LOADN R4 0   
      129 [-]: NEWTABLE R5 0 2
@@ -272,10 +272,10 @@ L 6:  57 [-]: GETIMPORT R1 7 [nil]
      137 [-]: LOADK R7 K47 [0.20000000000000001]
      138 [-]: LOADN R8 0   
      139 [-]: CALL R1 7 0  
-     140 [-]: GETIMPORT R1 48 [nil]
+     140 [-]: GETIMPORT R1 48 ["_T"]
      141 [-]: GETUPVAL R2 4
      142 [-]: SETTABLEKS R2 R1 K49 ["OWS_PopulateWaveSummaryLine"]
-     143 [-]: GETIMPORT R1 48 [nil]
+     143 [-]: GETIMPORT R1 48 ["_T"]
      144 [-]: GETUPVAL R2 5
      145 [-]: SETTABLEKS R2 R1 K50 ["OWS_SetText"]
      146 [-]: RETURN R0 0  
@@ -290,15 +290,15 @@ L 6:  57 [-]: GETIMPORT R1 7 [nil]
 
        0 [-]: GETUPVAL R1 0
        1 [-]: FASTCALL1 62 R1 L0
-       2 [-]: GETIMPORT R0 1 [nil]
+       2 [-]: GETIMPORT R0 1 [0x7B998233]
        3 [-]: CALL R0 1 1  
 L 0:   4 [-]: JUMPIF R0 L1 
        5 [-]: GETUPVAL R1 1
        6 [-]: GETTABLEKS R0 R1 K2 [0x659D451F]
        7 [-]: GETUPVAL R1 0
        8 [-]: CALL R0 1 0  
-L 1:   9 [-]: GETIMPORT R0 4 [nil]
-      10 [-]: GETIMPORT R1 6 [nil]
+L 1:   9 [-]: GETIMPORT R0 4 [0x25312C9B]
+      10 [-]: GETIMPORT R1 6 [0xAE91E43B]
       11 [-]: LOADK R2 K7 ["Card"]
       12 [-]: LOADN R3 0   
       13 [-]: NEWTABLE R4 0 2
@@ -323,9 +323,9 @@ L 1:   9 [-]: GETIMPORT R0 4 [nil]
 ; Is_vararg:       0
 ; Max Stack Size:  4
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 [0xB693B6C1]
        1 [-]: CALL R0 0 1  
-       2 [-]: GETIMPORT R1 3 [nil]
+       2 [-]: GETIMPORT R1 3 [0xAE91E43B]
        3 [-]: MOVE R3 R0   
        4 [-]: NAMECALL R1 R1 K4 [0x8A8C8D5A]
        5 [-]: CALL R1 2 0  

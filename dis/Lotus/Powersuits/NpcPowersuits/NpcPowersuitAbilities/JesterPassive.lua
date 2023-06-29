@@ -5,13 +5,13 @@
 ; Is_vararg:       1
 ; Max Stack Size:  4
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x0469F296]
        2 [-]: LOADK R1 K2 ["AttachIdle"]
        3 [-]: CALL R0 1 1  
-       4 [-]: GETIMPORT R1 1 [nil]
+       4 [-]: GETIMPORT R1 1 [0x0469F296]
        5 [-]: LOADK R2 K3 ["AttachAttack"]
        6 [-]: CALL R1 1 1  
-       7 [-]: GETIMPORT R2 1 [nil]
+       7 [-]: GETIMPORT R2 1 [0x0469F296]
        8 [-]: LOADK R3 K4 ["JesterAttached"]
        9 [-]: CALL R2 1 1  
       10 [-]: DUPCLOSURE R3 K5 []
@@ -31,7 +31,7 @@
 
        0 [-]: FASTCALL1 62 R1 L0
        1 [-]: MOVE R3 R1   
-       2 [-]: GETIMPORT R2 1 [nil]
+       2 [-]: GETIMPORT R2 1 [0x7B998233]
        3 [-]: CALL R2 1 1  
 L 0:   4 [-]: JUMPIFNOT R2 L5
        5 [-]: LOADB R4 1   
@@ -69,7 +69,7 @@ L 0:   4 [-]: JUMPIFNOT R2 L5
       37 [-]: CALL R3 1 1  
       38 [-]: FASTCALL1 62 R3 L1
       39 [-]: MOVE R5 R3   
-      40 [-]: GETIMPORT R4 1 [nil]
+      40 [-]: GETIMPORT R4 1 [0x7B998233]
       41 [-]: CALL R4 1 1  
 L 1:  42 [-]: JUMPIF R4 L8 
       43 [-]: LOADN R6 1   
@@ -83,7 +83,7 @@ L 2:  49 [-]: SUBK R9 R6 K9 [1]
       51 [-]: CALL R7 2 1  
       52 [-]: FASTCALL1 62 R7 L3
       53 [-]: MOVE R9 R7   
-      54 [-]: GETIMPORT R8 1 [nil]
+      54 [-]: GETIMPORT R8 1 [0x7B998233]
       55 [-]: CALL R8 1 1  
 L 3:  56 [-]: JUMPIF R8 L4 
       57 [-]: LOADN R10 5  
@@ -91,7 +91,7 @@ L 3:  56 [-]: JUMPIF R8 L4
       59 [-]: CALL R8 2 0  
 L 4:  60 [-]: FORNLOOP R4 L2
       61 [-]: RETURN R0 0  
-L 5:  62 [-]: GETIMPORT R4 13 [nil]
+L 5:  62 [-]: GETIMPORT R4 13 ["gAvatarType"]
       63 [-]: NAMECALL R2 R1 K14 [0xF2DEAF69]
       64 [-]: CALL R2 2 1  
       65 [-]: JUMPIFNOT R2 L8

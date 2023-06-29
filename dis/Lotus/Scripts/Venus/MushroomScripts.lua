@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  1
 
-            1 [-]: DUPCLOSURE R0 K0 []
+       1 [-]: DUPCLOSURE R0 K0 []
        2 [-]: SETGLOBAL R0 K1 ["FruitSheathDamaged"]
        3 [-]: RETURN R0 0  
 
@@ -17,7 +17,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  14
 
-       0 [-]: GETIMPORT R2 1 [nil]
+       0 [-]: GETIMPORT R2 1 [0x89326C93]
        1 [-]: NAMECALL R2 R2 K2 [0x18D05D30]
        2 [-]: CALL R2 1 1  
        3 [-]: JUMPIFNOT R2 L9
@@ -31,7 +31,7 @@
       11 [-]: CALL R3 1 1  
 L 0:  12 [-]: FASTCALL1 62 R3 L1
       13 [-]: MOVE R5 R3   
-      14 [-]: GETIMPORT R4 7 [nil]
+      14 [-]: GETIMPORT R4 7 [0x7B998233]
       15 [-]: CALL R4 1 1  
 L 1:  16 [-]: JUMPIF R4 L2 
       17 [-]: NAMECALL R4 R3 K4 [0x65D389CB]
@@ -41,7 +41,7 @@ L 1:  16 [-]: JUMPIF R4 L2
       21 [-]: CALL R4 1 1  
       22 [-]: MOVE R3 R4   
       23 [-]: JUMPBACK L0  
-L 2:  24 [-]: GETIMPORT R6 9 [nil]
+L 2:  24 [-]: GETIMPORT R6 9 [0xE827EBE2]
       25 [-]: NAMECALL R4 R0 K10 [0xC1595BD5]
       26 [-]: CALL R4 2 1  
       27 [-]: NAMECALL R5 R1 K11 [0x45E8EAFD]
@@ -56,7 +56,7 @@ L 3:  33 [-]: GETTABLE R9 R4 R8
       36 [-]: CALL R10 2 0 
       37 [-]: NAMECALL R10 R9 K13 [0x467C327C]
       38 [-]: CALL R10 1 0 
-      39 [-]: GETIMPORT R12 15 [nil]
+      39 [-]: GETIMPORT R12 15 [0x54B15627]
       40 [-]: NAMECALL R10 R9 K16 [0x5B6A70FB]
       41 [-]: CALL R10 2 0 
       42 [-]: MOVE R12 R5  
@@ -68,8 +68,8 @@ L 4:  47 [-]: LOADB R8 0
       48 [-]: LOADB R9 0   
       49 [-]: NAMECALL R6 R0 K18 [0x768274D6]
       50 [-]: CALL R6 3 0  
-      51 [-]: GETIMPORT R6 20 [nil]
-      52 [-]: GETIMPORT R7 22 [nil]
+      51 [-]: GETIMPORT R6 20 [0xCBD666E1]
+      52 [-]: GETIMPORT R7 22 [0x502F4EE0]
       53 [-]: CALL R6 1 0  
       54 [-]: LOADN R8 1   
       55 [-]: LENGTH R6 R4 
@@ -78,13 +78,13 @@ L 4:  47 [-]: LOADB R8 0
 L 5:  58 [-]: GETTABLE R9 R4 R8
       59 [-]: FASTCALL1 62 R9 L6
       60 [-]: MOVE R11 R9  
-      61 [-]: GETIMPORT R10 7 [nil]
+      61 [-]: GETIMPORT R10 7 [0x7B998233]
       62 [-]: CALL R10 1 1 
 L 6:  63 [-]: JUMPIF R10 L7
       64 [-]: NAMECALL R10 R9 K23 [0x04347778]
       65 [-]: CALL R10 1 0 
 L 7:  66 [-]: FORNLOOP R6 L5
-L 8:  67 [-]: GETIMPORT R6 1 [nil]
+L 8:  67 [-]: GETIMPORT R6 1 [0x89326C93]
       68 [-]: MOVE R8 R0   
       69 [-]: NAMECALL R6 R6 K24 [0x59C96E77]
       70 [-]: CALL R6 2 0  

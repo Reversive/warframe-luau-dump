@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  1
 
-            1 [-]: DUPCLOSURE R0 K0 []
+       1 [-]: DUPCLOSURE R0 K0 []
        2 [-]: SETGLOBAL R0 K1 ["GetDescriptionInfo"]
        3 [-]: DUPCLOSURE R0 K2 []
        4 [-]: SETGLOBAL R0 K3 ["MatchAttackEvent"]
@@ -20,9 +20,9 @@
 ; Max Stack Size:  4
 
        0 [-]: DUPTABLE R1 1
-       1 [-]: GETIMPORT R2 3 [nil]
+       1 [-]: GETIMPORT R2 3 [0x0A924B4D]
        2 [-]: SETTABLEKS R2 R1 K0 ["val"]
-       3 [-]: GETIMPORT R2 6 [nil]
+       3 [-]: GETIMPORT R2 6 [0xB139D7BC]
        4 [-]: MOVE R3 R1   
        5 [-]: CALL R2 1 -1 
        6 [-]: RETURN R2 -1 
@@ -35,7 +35,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  7
 
-       0 [-]: GETIMPORT R4 1 [nil]
+       0 [-]: GETIMPORT R4 1 [0x0469F296]
        1 [-]: LOADK R5 K2 ["SIMPLE_PROC_UPGRADES"]
        2 [-]: CALL R4 1 -1 
        3 [-]: NAMECALL R2 R0 K3 [0x7622C1F6]
@@ -47,20 +47,20 @@ L 0:   8 [-]: NAMECALL R2 R0 K4 [0x14A55974]
        9 [-]: CALL R2 1 1  
       10 [-]: FASTCALL1 62 R2 L1
       11 [-]: MOVE R4 R2   
-      12 [-]: GETIMPORT R3 6 [nil]
+      12 [-]: GETIMPORT R3 6 [0x7B998233]
       13 [-]: CALL R3 1 1  
 L 1:  14 [-]: JUMPIF R3 L6 
-      15 [-]: GETIMPORT R5 8 [nil]
+      15 [-]: GETIMPORT R5 8 ["gPowerSuitType"]
       16 [-]: NAMECALL R3 R2 K9 [0xF2DEAF69]
       17 [-]: CALL R3 2 1  
       18 [-]: JUMPIF R3 L2 
-      19 [-]: GETIMPORT R5 11 [nil]
+      19 [-]: GETIMPORT R5 11 ["gPowerSuitAbilityType"]
       20 [-]: NAMECALL R3 R2 K9 [0xF2DEAF69]
       21 [-]: CALL R3 2 1  
       22 [-]: JUMPIFNOT R3 L3
 L 2:  23 [-]: LOADB R3 1   
       24 [-]: RETURN R3 1  
-L 3:  25 [-]: GETIMPORT R5 13 [nil]
+L 3:  25 [-]: GETIMPORT R5 13 ["gWeaponExType"]
       26 [-]: NAMECALL R3 R2 K9 [0xF2DEAF69]
       27 [-]: CALL R3 2 1  
       28 [-]: JUMPIFNOT R3 L6
@@ -68,14 +68,14 @@ L 3:  25 [-]: GETIMPORT R5 13 [nil]
       30 [-]: CALL R3 1 1  
       31 [-]: FASTCALL1 62 R3 L4
       32 [-]: MOVE R5 R3   
-      33 [-]: GETIMPORT R4 6 [nil]
+      33 [-]: GETIMPORT R4 6 [0x7B998233]
       34 [-]: CALL R4 1 1  
 L 4:  35 [-]: JUMPIF R4 L6 
-      36 [-]: GETIMPORT R6 8 [nil]
+      36 [-]: GETIMPORT R6 8 ["gPowerSuitType"]
       37 [-]: NAMECALL R4 R3 K9 [0xF2DEAF69]
       38 [-]: CALL R4 2 1  
       39 [-]: JUMPIF R4 L5 
-      40 [-]: GETIMPORT R6 11 [nil]
+      40 [-]: GETIMPORT R6 11 ["gPowerSuitAbilityType"]
       41 [-]: NAMECALL R4 R3 K9 [0xF2DEAF69]
       42 [-]: CALL R4 2 1  
       43 [-]: JUMPIFNOT R4 L6

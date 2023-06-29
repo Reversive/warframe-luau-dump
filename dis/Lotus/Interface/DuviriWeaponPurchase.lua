@@ -5,16 +5,16 @@
 ; Is_vararg:       1
 ; Max Stack Size:  18
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x7ED0A956]
        2 [-]: LOADK R1 K2 ["/Lotus/Types/StoreItems/Packages/DuviriWeaponsBundle"]
        3 [-]: CALL R0 1 1  
-       4 [-]: GETIMPORT R1 4 [nil]
+       4 [-]: GETIMPORT R1 4 [0xB009BBC6]
        5 [-]: LOADK R2 K5 ["/Lotus/Types/Gameplay/Duviri/Resource/DuviriDragonDropItem"]
        6 [-]: CALL R1 1 1  
-       7 [-]: GETIMPORT R2 7 [nil]
+       7 [-]: GETIMPORT R2 7 [0x2D0FAD09]
        8 [-]: LOADK R3 K8 ["EE.Interface.Utilities"]
        9 [-]: CALL R2 1 1  
-      10 [-]: GETIMPORT R3 7 [nil]
+      10 [-]: GETIMPORT R3 7 [0x2D0FAD09]
       11 [-]: LOADK R4 K9 ["Lotus.Interface.Libs.DuviriUtil"]
       12 [-]: CALL R3 1 1  
       13 [-]: LOADN R4 0   
@@ -99,7 +99,7 @@
        5 [-]: GETUPVAL R0 0
        6 [-]: ADDK R0 R0 K0 [1]
        7 [-]: SETUPVAL R0 0
-       8 [-]: GETIMPORT R0 2 [nil]
+       8 [-]: GETIMPORT R0 2 [0xAE91E43B]
        9 [-]: LOADK R2 K3 ["Panel.Icon"]
       10 [-]: GETUPVAL R5 1
       11 [-]: GETUPVAL R6 0
@@ -107,7 +107,7 @@
       13 [-]: GETTABLEKS R3 R4 K4 ["mIcon"]
       14 [-]: NAMECALL R0 R0 K5 [0x1CB415C1]
       15 [-]: CALL R0 3 0  
-      16 [-]: GETIMPORT R0 2 [nil]
+      16 [-]: GETIMPORT R0 2 [0xAE91E43B]
       17 [-]: LOADK R2 K6 ["Panel.Price"]
       18 [-]: LOADN R3 29  
       19 [-]: GETUPVAL R6 1
@@ -116,8 +116,8 @@
       22 [-]: GETTABLEKS R4 R5 K7 ["mCost"]
       23 [-]: NAMECALL R0 R0 K8 [0x5F56EEAB]
       24 [-]: CALL R0 4 0  
-      25 [-]: GETIMPORT R0 10 [nil]
-      26 [-]: GETIMPORT R1 2 [nil]
+      25 [-]: GETIMPORT R0 10 [0x25312C9B]
+      26 [-]: GETIMPORT R1 2 [0xAE91E43B]
       27 [-]: LOADK R2 K3 ["Panel.Icon"]
       28 [-]: LOADN R3 2   
       29 [-]: NEWTABLE R4 0 1
@@ -128,8 +128,8 @@
       34 [-]: SETLIST R5 R6 1 [1]
       35 [-]: LOADK R6 K11 [0.20000000000000001]
       36 [-]: CALL R0 6 0  
-      37 [-]: GETIMPORT R0 10 [nil]
-      38 [-]: GETIMPORT R1 2 [nil]
+      37 [-]: GETIMPORT R0 10 [0x25312C9B]
+      38 [-]: GETIMPORT R1 2 [0xAE91E43B]
       39 [-]: LOADK R2 K6 ["Panel.Price"]
       40 [-]: LOADN R3 2   
       41 [-]: NEWTABLE R4 0 1
@@ -159,13 +159,13 @@
        3 [-]: NAMECALL R1 R1 K1 [0x105074FB]
        4 [-]: CALL R1 -1 1 
        5 [-]: LOADNIL R2   
-       6 [-]: GETIMPORT R5 3 [nil]
+       6 [-]: GETIMPORT R5 3 [0x7ED0A956]
        7 [-]: LOADK R6 K4 ["/Lotus/Weapons/Tenno/Melee/Polearms/DaxDuviriPolearm/DaxDuviriPolearmSpearPlayerWeapon"]
        8 [-]: CALL R5 1 -1 
        9 [-]: NAMECALL R3 R0 K5 [0xF2DEAF69]
       10 [-]: CALL R3 -1 1 
       11 [-]: JUMPIFNOT R3 L0
-      12 [-]: GETIMPORT R3 8 [nil]
+      12 [-]: GETIMPORT R3 8 [0x66EDF04F]
       13 [-]: NAMECALL R4 R1 K9 [0xED4E0128]
       14 [-]: CALL R4 1 1  
       15 [-]: LOADK R5 K10 ["SpearPlayerWeapon"]
@@ -174,14 +174,14 @@
       18 [-]: MOVE R2 R3   
       19 [-]: JUMP L1
      
-L 0:  20 [-]: GETIMPORT R3 8 [nil]
+L 0:  20 [-]: GETIMPORT R3 8 [0x66EDF04F]
       21 [-]: NAMECALL R4 R1 K9 [0xED4E0128]
       22 [-]: CALL R4 1 1  
       23 [-]: LOADK R5 K12 ["PlayerWeapon"]
       24 [-]: LOADK R6 K11 ["Weapon"]
       25 [-]: CALL R3 3 1  
       26 [-]: MOVE R2 R3   
-L 1:  27 [-]: GETIMPORT R3 14 [nil]
+L 1:  27 [-]: GETIMPORT R3 14 [0xB009BBC6]
       28 [-]: MOVE R4 R2   
       29 [-]: CALL R3 1 -1 
       30 [-]: RETURN R3 -1 
@@ -195,7 +195,7 @@ L 1:  27 [-]: GETIMPORT R3 14 [nil]
 ; Max Stack Size:  8
 
        0 [-]: NEWTABLE R0 0 0
-       1 [-]: GETIMPORT R1 1 [nil]
+       1 [-]: GETIMPORT R1 1 [0x9ACB2239]
        2 [-]: NAMECALL R1 R1 K2 [0x60E4AA28]
        3 [-]: CALL R1 1 1  
        4 [-]: LOADN R4 1   
@@ -223,7 +223,7 @@ L 2:  15 [-]: GETUPVAL R3 1
       25 [-]: CALL R5 1 1  
       26 [-]: SETTABLEKS R5 R4 K6 ["mIcon"]
       27 [-]: FASTCALL2 52 R3 R4 L3
-      28 [-]: GETIMPORT R2 13 [nil]
+      28 [-]: GETIMPORT R2 13 [0x23D5322F]
       29 [-]: CALL R2 2 0  
 L 3:  30 [-]: GETUPVAL R3 1
       31 [-]: DUPTABLE R4 7
@@ -234,11 +234,11 @@ L 3:  30 [-]: GETUPVAL R3 1
       36 [-]: CALL R6 1 -1 
       37 [-]: CALL R5 -1 1 
       38 [-]: SETTABLEKS R5 R4 K5 ["mCost"]
-      39 [-]: GETIMPORT R6 16 [nil]
+      39 [-]: GETIMPORT R6 16 [0x0032441C]
       40 [-]: GETTABLEKS R5 R6 K17 ["UITexture_PlatinumIcon"]
       41 [-]: SETTABLEKS R5 R4 K6 ["mIcon"]
       42 [-]: FASTCALL2 52 R3 R4 L4
-      43 [-]: GETIMPORT R2 13 [nil]
+      43 [-]: GETIMPORT R2 13 [0x23D5322F]
       44 [-]: CALL R2 2 0  
 L 4:  45 [-]: GETUPVAL R2 5
       46 [-]: CALL R2 0 0  
@@ -252,58 +252,58 @@ L 4:  45 [-]: GETUPVAL R2 5
 ; Is_vararg:       0
 ; Max Stack Size:  6
 
-       0 [-]: GETIMPORT R1 1 [nil]
+       0 [-]: GETIMPORT R1 1 [0xAE91E43B]
        1 [-]: FASTCALL1 62 R1 L0
-       2 [-]: GETIMPORT R0 3 [nil]
+       2 [-]: GETIMPORT R0 3 [0x7B998233]
        3 [-]: CALL R0 1 1  
 L 0:   4 [-]: JUMPIFNOT R0 L1
        5 [-]: RETURN R0 0  
-L 1:   6 [-]: GETIMPORT R0 5 [nil]
+L 1:   6 [-]: GETIMPORT R0 5 [0xBE190284]
        7 [-]: NAMECALL R0 R0 K6 [0xA1C390FE]
        8 [-]: CALL R0 1 1  
        9 [-]: SETUPVAL R0 0
-      10 [-]: GETIMPORT R0 1 [nil]
+      10 [-]: GETIMPORT R0 1 [0xAE91E43B]
       11 [-]: LOADK R2 K7 ["Panel.Backer"]
-      12 [-]: GETIMPORT R3 9 [nil]
+      12 [-]: GETIMPORT R3 9 [0xDE963091]
       13 [-]: NAMECALL R0 R0 K10 [0x1CB415C1]
       14 [-]: CALL R0 3 0  
-      15 [-]: GETIMPORT R0 1 [nil]
+      15 [-]: GETIMPORT R0 1 [0xAE91E43B]
       16 [-]: LOADK R2 K11 ["Panel.Lock"]
-      17 [-]: GETIMPORT R3 13 [nil]
-      18 [-]: GETIMPORT R4 15 [nil]
+      17 [-]: GETIMPORT R3 13 [0xE3D95194]
+      18 [-]: GETIMPORT R4 15 [0xA0547574]
       19 [-]: NAMECALL R0 R0 K16 [0xEF99134F]
       20 [-]: CALL R0 4 0  
-      21 [-]: GETIMPORT R0 1 [nil]
+      21 [-]: GETIMPORT R0 1 [0xAE91E43B]
       22 [-]: LOADK R2 K17 ["Panel.LockShadow"]
-      23 [-]: GETIMPORT R3 13 [nil]
+      23 [-]: GETIMPORT R3 13 [0xE3D95194]
       24 [-]: NAMECALL R0 R0 K10 [0x1CB415C1]
       25 [-]: CALL R0 3 0  
-      26 [-]: GETIMPORT R0 1 [nil]
+      26 [-]: GETIMPORT R0 1 [0xAE91E43B]
       27 [-]: LOADK R2 K11 ["Panel.Lock"]
       28 [-]: LOADN R3 9   
       29 [-]: LOADK R4 K18 [12495206]
       30 [-]: NAMECALL R0 R0 K19 [0x67BC869F]
       31 [-]: CALL R0 4 0  
-      32 [-]: GETIMPORT R0 1 [nil]
+      32 [-]: GETIMPORT R0 1 [0xAE91E43B]
       33 [-]: LOADK R2 K17 ["Panel.LockShadow"]
       34 [-]: LOADN R3 9   
-      35 [-]: GETIMPORT R5 21 [nil]
+      35 [-]: GETIMPORT R5 21 [0x0032441C]
       36 [-]: GETTABLEKS R4 R5 K22 ["UIColor_Black"]
       37 [-]: NAMECALL R0 R0 K19 [0x67BC869F]
       38 [-]: CALL R0 4 0  
-      39 [-]: GETIMPORT R0 1 [nil]
+      39 [-]: GETIMPORT R0 1 [0xAE91E43B]
       40 [-]: LOADK R2 K23 ["Panel.PriceBacker"]
-      41 [-]: GETIMPORT R3 25 [nil]
+      41 [-]: GETIMPORT R3 25 [0x4F6EDC5E]
       42 [-]: NAMECALL R0 R0 K10 [0x1CB415C1]
       43 [-]: CALL R0 3 0  
-      44 [-]: GETIMPORT R0 1 [nil]
+      44 [-]: GETIMPORT R0 1 [0xAE91E43B]
       45 [-]: LOADK R2 K23 ["Panel.PriceBacker"]
       46 [-]: LOADN R3 9   
-      47 [-]: GETIMPORT R5 21 [nil]
+      47 [-]: GETIMPORT R5 21 [0x0032441C]
       48 [-]: GETTABLEKS R4 R5 K22 ["UIColor_Black"]
       49 [-]: NAMECALL R0 R0 K19 [0x67BC869F]
       50 [-]: CALL R0 4 0  
-      51 [-]: GETIMPORT R0 1 [nil]
+      51 [-]: GETIMPORT R0 1 [0xAE91E43B]
       52 [-]: LOADK R2 K23 ["Panel.PriceBacker"]
       53 [-]: LOADN R3 10  
       54 [-]: LOADN R4 40  
@@ -319,15 +319,15 @@ L 1:   6 [-]: GETIMPORT R0 5 [nil]
 ; Is_vararg:       0
 ; Max Stack Size:  4
 
-       0 [-]: GETIMPORT R1 1 [nil]
+       0 [-]: GETIMPORT R1 1 [0xAE91E43B]
        1 [-]: FASTCALL1 62 R1 L0
-       2 [-]: GETIMPORT R0 3 [nil]
+       2 [-]: GETIMPORT R0 3 [0x7B998233]
        3 [-]: CALL R0 1 1  
 L 0:   4 [-]: JUMPIFNOT R0 L1
        5 [-]: RETURN R0 0  
-L 1:   6 [-]: GETIMPORT R0 5 [nil]
+L 1:   6 [-]: GETIMPORT R0 5 [0xB693B6C1]
        7 [-]: CALL R0 0 1  
-       8 [-]: GETIMPORT R1 1 [nil]
+       8 [-]: GETIMPORT R1 1 [0xAE91E43B]
        9 [-]: MOVE R3 R0   
       10 [-]: NAMECALL R1 R1 K6 [0x8A8C8D5A]
       11 [-]: CALL R1 2 0  
@@ -335,16 +335,16 @@ L 1:   6 [-]: GETIMPORT R0 5 [nil]
       13 [-]: JUMPIFNOT R1 L3
       14 [-]: GETUPVAL R2 1
       15 [-]: FASTCALL1 62 R2 L2
-      16 [-]: GETIMPORT R1 3 [nil]
+      16 [-]: GETIMPORT R1 3 [0x7B998233]
       17 [-]: CALL R1 1 1  
 L 2:  18 [-]: JUMPIFNOT R1 L3
       19 [-]: LOADB R1 0   
       20 [-]: SETUPVAL R1 0
       21 [-]: GETGLOBAL R1 K7 ["RefreshDrifterWeapons"]
       22 [-]: CALL R1 0 0  
-      23 [-]: GETIMPORT R1 10 [nil]
+      23 [-]: GETIMPORT R1 10 ["DuviriWeaponPurchaseResult"]
       24 [-]: JUMPXEQKNIL R1 L3 NOT
-      25 [-]: GETIMPORT R1 11 [nil]
+      25 [-]: GETIMPORT R1 11 ["_T"]
       26 [-]: LOADB R2 0   
       27 [-]: SETTABLEKS R2 R1 K9 ["DuviriWeaponPurchaseResult"]
 L 3:  28 [-]: RETURN R0 0  
@@ -359,7 +359,7 @@ L 3:  28 [-]: RETURN R0 0
 
        0 [-]: GETUPVAL R1 0
        1 [-]: FASTCALL1 62 R1 L0
-       2 [-]: GETIMPORT R0 1 [nil]
+       2 [-]: GETIMPORT R0 1 [0x7B998233]
        3 [-]: CALL R0 1 1  
 L 0:   4 [-]: JUMPIF R0 L1 
        5 [-]: GETUPVAL R0 0
@@ -367,7 +367,7 @@ L 0:   4 [-]: JUMPIF R0 L1
        7 [-]: CALL R0 1 0  
        8 [-]: LOADB R0 0   
        9 [-]: SETUPVAL R0 1
-L 1:  10 [-]: GETIMPORT R0 4 [nil]
+L 1:  10 [-]: GETIMPORT R0 4 ["_T"]
       11 [-]: LOADNIL R1   
       12 [-]: SETTABLEKS R1 R0 K5 ["IsDuviriWeaponPurchase"]
       13 [-]: RETURN R0 0  
@@ -380,15 +380,15 @@ L 1:  10 [-]: GETIMPORT R0 4 [nil]
 ; Is_vararg:       0
 ; Max Stack Size:  10
 
-       0 [-]: GETIMPORT R1 1 [nil]
+       0 [-]: GETIMPORT R1 1 [0x03F57322]
        1 [-]: MOVE R2 R0   
        2 [-]: CALL R1 1 1  
        3 [-]: SETUPVAL R1 0
-       4 [-]: GETIMPORT R2 4 [nil]
+       4 [-]: GETIMPORT R2 4 ["DuviriDrifterWeaponSpawns"]
        5 [-]: GETUPVAL R3 0
        6 [-]: GETTABLE R1 R2 R3
        7 [-]: GETTABLEKS R2 R1 K5 ["weapon"]
-       8 [-]: GETIMPORT R3 7 [nil]
+       8 [-]: GETIMPORT R3 7 [0xB009BBC6]
        9 [-]: LOADK R5 K8 ["/Lotus/Types/StoreItems/Packages/DrifterWeaponBundles/"]
       10 [-]: NAMECALL R8 R2 K9 [0xE223E2B1]
       11 [-]: CALL R8 1 1  
@@ -424,12 +424,12 @@ L 1:   3 [-]: LOADB R2 0
        8 [-]: LOADB R4 0 +1
 L 2:   9 [-]: LOADB R4 1   
 L 3:  10 [-]: JUMPIF R4 L8 
-      11 [-]: GETIMPORT R5 2 [nil]
-      12 [-]: GETIMPORT R6 5 [nil]
+      11 [-]: GETIMPORT R5 2 [0xCFC01047]
+      12 [-]: GETIMPORT R6 5 ["DuviriDrifterWeaponSpawns"]
       13 [-]: CALL R5 1 3  
       14 [-]: FORGPREP_NEXT R5 L7
 L 4:  15 [-]: GETTABLEKS R10 R9 K6 ["weapon"]
-      16 [-]: GETIMPORT R11 8 [nil]
+      16 [-]: GETIMPORT R11 8 [0xB009BBC6]
       17 [-]: LOADK R13 K9 ["/Lotus/Types/StoreItems/Packages/DrifterWeaponBundles/"]
       18 [-]: NAMECALL R16 R10 K10 [0xE223E2B1]
       19 [-]: CALL R16 1 1 
@@ -457,7 +457,7 @@ L 8:  40 [-]: JUMPIF R2 L9
       41 [-]: JUMPIFNOT R4 L13
 L 9:  42 [-]: GETUPVAL R6 4
       43 [-]: FASTCALL1 62 R6 L10
-      44 [-]: GETIMPORT R5 13 [nil]
+      44 [-]: GETIMPORT R5 13 [0x7B998233]
       45 [-]: CALL R5 1 1  
 L10:  46 [-]: JUMPIF R5 L11
       47 [-]: GETUPVAL R5 4
@@ -465,7 +465,7 @@ L10:  46 [-]: JUMPIF R5 L11
       49 [-]: CALL R5 1 0  
 L11:  50 [-]: JUMPIF R3 L12
       51 [-]: JUMPIFNOT R4 L13
-L12:  52 [-]: GETIMPORT R5 15 [nil]
+L12:  52 [-]: GETIMPORT R5 15 ["_T"]
       53 [-]: LOADB R6 1   
       54 [-]: SETTABLEKS R6 R5 K16 ["DuviriWeaponPurchaseResult"]
 L13:  55 [-]: RETURN R0 0  
@@ -483,7 +483,7 @@ L13:  55 [-]: RETURN R0 0
        2 [-]: LOADN R1 4   
        3 [-]: JUMPIFNOTEQ R0 R1 L6
        4 [-]: NEWTABLE R1 0 0
-       5 [-]: GETIMPORT R2 1 [nil]
+       5 [-]: GETIMPORT R2 1 [0x9ACB2239]
        6 [-]: NAMECALL R2 R2 K2 [0x60E4AA28]
        7 [-]: CALL R2 1 1  
        8 [-]: LOADN R5 1   
@@ -515,7 +515,7 @@ L 3:  24 [-]: DUPTABLE R9 8
       33 [-]: SETTABLEKS R10 R9 K7 ["mItemCountBeforeDiscount"]
       34 [-]: FASTCALL2 52 R3 R9 L4
       35 [-]: MOVE R8 R3   
-      36 [-]: GETIMPORT R7 11 [nil]
+      36 [-]: GETIMPORT R7 11 [0x23D5322F]
       37 [-]: CALL R7 2 0  
 L 4:  38 [-]: FORNLOOP R4 L3
 L 5:  39 [-]: DUPTABLE R4 15
@@ -533,7 +533,7 @@ L 5:  39 [-]: DUPTABLE R4 15
       51 [-]: DUPTABLE R6 23
       52 [-]: LOADN R7 7   
       53 [-]: SETTABLEKS R7 R6 K21 ["Type"]
-      54 [-]: GETIMPORT R7 1 [nil]
+      54 [-]: GETIMPORT R7 1 [0x9ACB2239]
       55 [-]: NAMECALL R7 R7 K24 [0xED4E0128]
       56 [-]: CALL R7 1 1  
       57 [-]: SETTABLEKS R7 R6 K22 ["Id"]
@@ -553,21 +553,21 @@ L 6:  61 [-]: LOADN R1 6
       70 [-]: SETUPVAL R2 0
       71 [-]: JUMP L8
      
-L 7:  72 [-]: GETIMPORT R1 28 [nil]
+L 7:  72 [-]: GETIMPORT R1 28 ["_T"]
       73 [-]: LOADB R2 0   
       74 [-]: SETTABLEKS R2 R1 K29 ["DuviriWeaponPurchaseResult"]
       75 [-]: RETURN R0 0  
-L 8:  76 [-]: GETIMPORT R1 28 [nil]
+L 8:  76 [-]: GETIMPORT R1 28 ["_T"]
       77 [-]: LOADB R2 1   
       78 [-]: SETTABLEKS R2 R1 K30 ["IsDuviriWeaponPurchase"]
       79 [-]: GETUPVAL R1 0
       80 [-]: GETUPVAL R2 3
       81 [-]: SETTABLEKS R2 R1 K31 ["CALLBACK"]
-      82 [-]: GETIMPORT R1 28 [nil]
+      82 [-]: GETIMPORT R1 28 ["_T"]
       83 [-]: GETUPVAL R2 0
       84 [-]: SETTABLEKS R2 R1 K32 ["marketDetailedViewParms"]
-      85 [-]: GETIMPORT R1 34 [nil]
-      86 [-]: GETIMPORT R4 36 [nil]
+      85 [-]: GETIMPORT R1 34 [0xAE91E43B]
+      86 [-]: GETIMPORT R4 36 [0x0032441C]
       87 [-]: GETTABLEKS R3 R4 K37 ["UIMovie_DetailedPurchaseDialog"]
       88 [-]: NAMECALL R1 R1 K38 [0x1FD6ABD0]
       89 [-]: CALL R1 2 1  
@@ -584,40 +584,40 @@ L 8:  76 [-]: GETIMPORT R1 28 [nil]
 ; Is_vararg:       0
 ; Max Stack Size:  17
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 [0x25D99D89]
        1 [-]: NAMECALL R0 R0 K2 [0x25A6E75E]
        2 [-]: CALL R0 1 1  
-       3 [-]: GETIMPORT R1 4 [nil]
+       3 [-]: GETIMPORT R1 4 ["_T"]
        4 [-]: NEWTABLE R2 0 0
        5 [-]: SETTABLEKS R2 R1 K5 ["DuviriDrifterWeapons"]
        6 [-]: NAMECALL R1 R0 K6 [0x6023EC52]
        7 [-]: CALL R1 1 1  
-       8 [-]: GETIMPORT R2 8 [nil]
+       8 [-]: GETIMPORT R2 8 [0xC8802016]
        9 [-]: GETUPVAL R5 0
       10 [-]: GETTABLEKS R3 R5 K9 ["DRIFTER_MELEE"]
       11 [-]: CALL R2 1 3  
       12 [-]: FORGPREP_INEXT R2 L5
 L 0:  13 [-]: LOADNIL R7   
-      14 [-]: GETIMPORT R8 8 [nil]
+      14 [-]: GETIMPORT R8 8 [0xC8802016]
       15 [-]: MOVE R9 R1   
       16 [-]: CALL R8 1 3  
       17 [-]: FORGPREP_INEXT R8 L3
 L 1:  18 [-]: GETTABLEKS R13 R12 K10 ["mItemType"]
       19 [-]: JUMPIFNOTEQ R13 R6 L3
       20 [-]: MOVE R7 R12  
-      21 [-]: GETIMPORT R13 12 [nil]
+      21 [-]: GETIMPORT R13 12 ["DuviriDrifterWeaponSpawns"]
       22 [-]: JUMPIFNOT R13 L3
-      23 [-]: GETIMPORT R14 12 [nil]
+      23 [-]: GETIMPORT R14 12 ["DuviriDrifterWeaponSpawns"]
       24 [-]: GETTABLE R13 R14 R5
       25 [-]: JUMPIFNOT R13 L3
-      26 [-]: GETIMPORT R16 12 [nil]
+      26 [-]: GETIMPORT R16 12 ["DuviriDrifterWeaponSpawns"]
       27 [-]: GETTABLE R15 R16 R5
       28 [-]: GETTABLEKS R14 R15 K13 ["lockedMovie"]
       29 [-]: FASTCALL1 62 R14 L2
-      30 [-]: GETIMPORT R13 15 [nil]
+      30 [-]: GETIMPORT R13 15 [0x7B998233]
       31 [-]: CALL R13 1 1 
 L 2:  32 [-]: JUMPIF R13 L3
-      33 [-]: GETIMPORT R15 12 [nil]
+      33 [-]: GETIMPORT R15 12 ["DuviriDrifterWeaponSpawns"]
       34 [-]: GETTABLE R14 R15 R5
       35 [-]: GETTABLEKS R13 R14 K13 ["lockedMovie"]
       36 [-]: LOADB R15 0  
@@ -625,14 +625,14 @@ L 2:  32 [-]: JUMPIF R13 L3
       38 [-]: CALL R13 2 0 
 L 3:  39 [-]: FORGLOOP R8 L1 2 [inext]
       40 [-]: JUMPXEQKNIL R7 L4 NOT
-      41 [-]: GETIMPORT R8 19 [nil]
+      41 [-]: GETIMPORT R8 19 [0xE1F94DEE]
       42 [-]: CALL R8 0 1  
       43 [-]: MOVE R7 R8   
       44 [-]: SETTABLEKS R6 R7 K10 ["mItemType"]
-L 4:  45 [-]: GETIMPORT R9 20 [nil]
+L 4:  45 [-]: GETIMPORT R9 20 ["DuviriDrifterWeapons"]
       46 [-]: FASTCALL2 52 R9 R7 L5
       47 [-]: MOVE R10 R7  
-      48 [-]: GETIMPORT R8 23 [nil]
+      48 [-]: GETIMPORT R8 23 [0x23D5322F]
       49 [-]: CALL R8 2 0  
 L 5:  50 [-]: FORGLOOP R2 L0 2 [inext]
       51 [-]: RETURN R0 0  
@@ -645,21 +645,21 @@ L 5:  50 [-]: FORGLOOP R2 L0 2 [inext]
 ; Is_vararg:       0
 ; Max Stack Size:  8
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 [0x603636AD]
        1 [-]: LOADK R1 K2 ["/Lotus/Language/Duviri/DuviriDragonDropItemName"]
        2 [-]: NEWTABLE R2 0 0
        3 [-]: CALL R0 2 1  
-       4 [-]: GETIMPORT R1 5 [nil]
+       4 [-]: GETIMPORT R1 5 [0xE27B35BB]
        5 [-]: CALL R1 0 1  
        6 [-]: LOADN R2 5   
        7 [-]: SETTABLEKS R2 R1 K6 ["dialogType"]
-       8 [-]: GETIMPORT R2 1 [nil]
+       8 [-]: GETIMPORT R2 1 [0x603636AD]
        9 [-]: LOADK R3 K7 ["/Lotus/Language/Duviri/DrifterWeaponPurchase"]
       10 [-]: DUPTABLE R4 9
       11 [-]: SETTABLEKS R0 R4 K8 ["ITEM_NAME"]
       12 [-]: CALL R2 2 1  
       13 [-]: SETTABLEKS R2 R1 K10 ["locString"]
-      14 [-]: GETIMPORT R2 1 [nil]
+      14 [-]: GETIMPORT R2 1 [0x603636AD]
       15 [-]: LOADK R3 K11 ["/Lotus/Language/Duviri/DrifterWeaponPurchaseDragonItem"]
       16 [-]: DUPTABLE R4 13
       17 [-]: GETUPVAL R7 0
@@ -669,7 +669,7 @@ L 5:  50 [-]: FORGLOOP R2 L0 2 [inext]
       21 [-]: SETTABLEKS R0 R4 K8 ["ITEM_NAME"]
       22 [-]: CALL R2 2 1  
       23 [-]: SETTABLEKS R2 R1 K15 ["firstString"]
-      24 [-]: GETIMPORT R2 1 [nil]
+      24 [-]: GETIMPORT R2 1 [0x603636AD]
       25 [-]: LOADK R3 K16 ["/Lotus/Language/Dojo/ConstructionNeededMats"]
       26 [-]: DUPTABLE R4 17
       27 [-]: GETUPVAL R7 0
@@ -697,22 +697,22 @@ L 5:  50 [-]: FORGLOOP R2 L0 2 [inext]
 ; Is_vararg:       0
 ; Max Stack Size:  8
 
-       0 [-]: GETIMPORT R1 1 [nil]
+       0 [-]: GETIMPORT R1 1 [0x25D99D89]
        1 [-]: FASTCALL1 62 R1 L0
-       2 [-]: GETIMPORT R0 3 [nil]
+       2 [-]: GETIMPORT R0 3 [0x7B998233]
        3 [-]: CALL R0 1 1  
 L 0:   4 [-]: JUMPIF R0 L3 
-       5 [-]: GETIMPORT R0 1 [nil]
+       5 [-]: GETIMPORT R0 1 [0x25D99D89]
        6 [-]: NAMECALL R0 R0 K4 [0x25A6E75E]
        7 [-]: CALL R0 1 1  
        8 [-]: NAMECALL R0 R0 K5 [0x6023EC52]
        9 [-]: CALL R0 1 1  
-      10 [-]: GETIMPORT R1 7 [nil]
+      10 [-]: GETIMPORT R1 7 [0xC8802016]
       11 [-]: MOVE R2 R0   
       12 [-]: CALL R1 1 3  
       13 [-]: FORGPREP_INEXT R1 L2
 L 1:  14 [-]: GETTABLEKS R6 R5 K8 ["mItemType"]
-      15 [-]: GETIMPORT R7 10 [nil]
+      15 [-]: GETIMPORT R7 10 [0x90E3CB66]
       16 [-]: JUMPIFNOTEQ R6 R7 L2
       17 [-]: LOADB R6 1   
       18 [-]: RETURN R6 1  

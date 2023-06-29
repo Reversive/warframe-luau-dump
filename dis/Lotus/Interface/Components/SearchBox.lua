@@ -5,17 +5,17 @@
 ; Is_vararg:       1
 ; Max Stack Size:  4
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0xAEABECDA]
        2 [-]: GETVARARGS R1 1
-       3 [-]: GETIMPORT R2 4 [nil]
+       3 [-]: GETIMPORT R2 4 ["seeall"]
        4 [-]: CALL R0 2 0  
-       5 [-]: GETIMPORT R0 6 [nil]
+       5 [-]: GETIMPORT R0 6 [0x2D0FAD09]
        6 [-]: LOADK R1 K7 ["EE.Interface.Utilities"]
        7 [-]: CALL R0 1 1  
-       8 [-]: GETIMPORT R1 6 [nil]
+       8 [-]: GETIMPORT R1 6 [0x2D0FAD09]
        9 [-]: LOADK R2 K8 ["Lotus.Interface.LotusUtilities"]
       10 [-]: CALL R1 1 1  
-      11 [-]: GETIMPORT R2 6 [nil]
+      11 [-]: GETIMPORT R2 6 [0x2D0FAD09]
       12 [-]: LOADK R3 K9 ["Lotus.Interface.UIStyleUtilities"]
       13 [-]: CALL R2 1 1  
       14 [-]: DUPCLOSURE R3 K10 []
@@ -66,7 +66,7 @@
       30 [-]: SETTABLEKS R4 R3 K25 ["mOnSearchFocusedCallbackName"]
       31 [-]: LOADK R4 K26 ["OnSearchBigPicCallback"]
       32 [-]: SETTABLEKS R4 R3 K27 ["mSearchBigPicCallbackName"]
-      33 [-]: GETIMPORT R5 29 [nil]
+      33 [-]: GETIMPORT R5 29 [0x0032441C]
       34 [-]: GETTABLEKS R4 R5 K30 ["UIMaterial_RectangleNoDepth"]
       35 [-]: SETTABLEKS R4 R3 K31 ["mBgMaterial"]
       36 [-]: LOADK R5 K32 ["SearchBox("]
@@ -129,21 +129,21 @@
       93 [-]: MOVE R7 R1   
       94 [-]: LOADK R8 K65 [".Icon"]
       95 [-]: CONCAT R6 R7 R8
-      96 [-]: GETIMPORT R8 29 [nil]
+      96 [-]: GETIMPORT R8 29 [0x0032441C]
       97 [-]: GETTABLEKS R7 R8 K66 ["UITexture_Search"]
       98 [-]: NAMECALL R4 R0 K67 [0x1CB415C1]
       99 [-]: CALL R4 3 0  
      100 [-]: MOVE R7 R1   
      101 [-]: LOADK R8 K35 [".Bg"]
      102 [-]: CONCAT R6 R7 R8
-     103 [-]: GETIMPORT R8 29 [nil]
+     103 [-]: GETIMPORT R8 29 [0x0032441C]
      104 [-]: GETTABLEKS R7 R8 K68 ["UIMaterial_Button"]
      105 [-]: NAMECALL R4 R0 K69 [0xD5181643]
      106 [-]: CALL R4 3 0  
      107 [-]: MOVE R7 R1   
      108 [-]: LOADK R8 K70 [".IconBg"]
      109 [-]: CONCAT R6 R7 R8
-     110 [-]: GETIMPORT R8 29 [nil]
+     110 [-]: GETIMPORT R8 29 [0x0032441C]
      111 [-]: GETTABLEKS R7 R8 K68 ["UIMaterial_Button"]
      112 [-]: NAMECALL R4 R0 K69 [0xD5181643]
      113 [-]: CALL R4 3 0  

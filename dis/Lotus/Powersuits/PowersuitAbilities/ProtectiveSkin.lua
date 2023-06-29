@@ -5,10 +5,10 @@
 ; Is_vararg:       1
 ; Max Stack Size:  4
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x0469F296]
        2 [-]: LOADK R1 K2 ["ProtectiveSkinAtten"]
        3 [-]: CALL R0 1 1  
-       4 [-]: GETIMPORT R1 1 [nil]
+       4 [-]: GETIMPORT R1 1 [0x0469F296]
        5 [-]: LOADK R2 K3 ["ProtectiveSkinDM"]
        6 [-]: CALL R1 1 1  
        7 [-]: DUPCLOSURE R2 K4 []
@@ -39,14 +39,14 @@
        3 [-]: CALL R4 1 1  
        4 [-]: FASTCALL1 62 R4 L0
        5 [-]: MOVE R6 R4   
-       6 [-]: GETIMPORT R5 3 [nil]
+       6 [-]: GETIMPORT R5 3 [0x7B998233]
        7 [-]: CALL R5 1 1  
 L 0:   8 [-]: JUMPIF R5 L1 
-       9 [-]: GETIMPORT R7 5 [nil]
+       9 [-]: GETIMPORT R7 5 ["gBaseAvatarType"]
       10 [-]: NAMECALL R5 R4 K6 [0xF2DEAF69]
       11 [-]: CALL R5 2 1  
       12 [-]: JUMPIF R5 L2 
-L 1:  13 [-]: GETIMPORT R7 8 [nil]
+L 1:  13 [-]: GETIMPORT R7 8 [0x0469F296]
       14 [-]: LOADK R8 K9 ["/Lotus/Language/Game/AbilityErrorInvalidTarget"]
       15 [-]: CALL R7 1 -1 
       16 [-]: NAMECALL R5 R1 K10 [0xD7091D77]
@@ -56,39 +56,39 @@ L 1:  13 [-]: GETIMPORT R7 8 [nil]
 L 2:  20 [-]: NAMECALL R6 R4 K11 [0x5E651723]
       21 [-]: CALL R6 1 1  
       22 [-]: FASTCALL1 62 R6 L3
-      23 [-]: GETIMPORT R5 3 [nil]
+      23 [-]: GETIMPORT R5 3 [0x7B998233]
       24 [-]: CALL R5 1 1  
 L 3:  25 [-]: JUMPIFNOT R5 L4
-      26 [-]: GETIMPORT R7 8 [nil]
+      26 [-]: GETIMPORT R7 8 [0x0469F296]
       27 [-]: LOADK R8 K9 ["/Lotus/Language/Game/AbilityErrorInvalidTarget"]
       28 [-]: CALL R7 1 -1 
       29 [-]: NAMECALL R5 R1 K10 [0xD7091D77]
       30 [-]: CALL R5 -1 0 
       31 [-]: LOADB R5 0   
       32 [-]: RETURN R5 1  
-L 4:  33 [-]: GETIMPORT R6 14 [nil]
+L 4:  33 [-]: GETIMPORT R6 14 ["gProtectAbilityStateData"]
       34 [-]: FASTCALL1 62 R6 L5
-      35 [-]: GETIMPORT R5 3 [nil]
+      35 [-]: GETIMPORT R5 3 [0x7B998233]
       36 [-]: CALL R5 1 1  
 L 5:  37 [-]: JUMPIF R5 L7 
-      38 [-]: GETIMPORT R7 14 [nil]
+      38 [-]: GETIMPORT R7 14 ["gProtectAbilityStateData"]
       39 [-]: NAMECALL R8 R4 K11 [0x5E651723]
       40 [-]: CALL R8 1 1  
       41 [-]: NAMECALL R8 R8 K15 [0x8B72B36E]
       42 [-]: CALL R8 1 1  
       43 [-]: GETTABLE R6 R7 R8
       44 [-]: FASTCALL1 62 R6 L6
-      45 [-]: GETIMPORT R5 3 [nil]
+      45 [-]: GETIMPORT R5 3 [0x7B998233]
       46 [-]: CALL R5 1 1  
 L 6:  47 [-]: JUMPIF R5 L7 
-      48 [-]: GETIMPORT R7 8 [nil]
+      48 [-]: GETIMPORT R7 8 [0x0469F296]
       49 [-]: LOADK R8 K9 ["/Lotus/Language/Game/AbilityErrorInvalidTarget"]
       50 [-]: CALL R7 1 -1 
       51 [-]: NAMECALL R5 R1 K10 [0xD7091D77]
       52 [-]: CALL R5 -1 0 
       53 [-]: LOADB R5 0   
       54 [-]: RETURN R5 1  
-L 7:  55 [-]: GETIMPORT R5 17 [nil]
+L 7:  55 [-]: GETIMPORT R5 17 [0x4DA5C118]
       56 [-]: JUMPXEQKN R2 K18 L8 NOT [1]
       57 [-]: LOADN R5 20  
       58 [-]: JUMP L11
@@ -115,7 +115,7 @@ L11:  66 [-]: NAMECALL R6 R1 K0 [0xDE321E6F]
       76 [-]: NAMECALL R7 R4 K23 [0xBEBAD19F]
       77 [-]: CALL R7 2 1  
       78 [-]: JUMPIFNOTLT R6 R7 L12
-      79 [-]: GETIMPORT R10 8 [nil]
+      79 [-]: GETIMPORT R10 8 [0x0469F296]
       80 [-]: LOADK R11 K24 ["/Lotus/Language/Game/AbilityErrorOutOfRange"]
       81 [-]: CALL R10 1 -1
       82 [-]: NAMECALL R8 R1 K10 [0xD7091D77]
@@ -170,31 +170,31 @@ L 3:  11 [-]: NAMECALL R5 R1 K3 [0xDE321E6F]
       28 [-]: SETTABLEKS R8 R7 K9 ["bodyMat"]
       29 [-]: LOADN R8 1   
       30 [-]: SETTABLEKS R8 R7 K10 ["damageMult"]
-      31 [-]: GETIMPORT R9 14 [nil]
+      31 [-]: GETIMPORT R9 14 ["gProtectAbilityStateData"]
       32 [-]: FASTCALL1 62 R9 L4
-      33 [-]: GETIMPORT R8 16 [nil]
+      33 [-]: GETIMPORT R8 16 [0x7B998233]
       34 [-]: CALL R8 1 1  
 L 4:  35 [-]: JUMPIFNOT R8 L5
-      36 [-]: GETIMPORT R8 17 [nil]
+      36 [-]: GETIMPORT R8 17 ["_T"]
       37 [-]: NEWTABLE R9 0 0
       38 [-]: SETTABLEKS R9 R8 K13 ["gProtectAbilityStateData"]
 L 5:  39 [-]: LOADB R8 0   
-      40 [-]: GETIMPORT R11 14 [nil]
+      40 [-]: GETIMPORT R11 14 ["gProtectAbilityStateData"]
       41 [-]: GETTABLE R10 R11 R6
       42 [-]: FASTCALL1 62 R10 L6
-      43 [-]: GETIMPORT R9 16 [nil]
+      43 [-]: GETIMPORT R9 16 [0x7B998233]
       44 [-]: CALL R9 1 1  
 L 6:  45 [-]: JUMPIFNOT R9 L7
-      46 [-]: GETIMPORT R9 14 [nil]
+      46 [-]: GETIMPORT R9 14 ["gProtectAbilityStateData"]
       47 [-]: SETTABLE R7 R9 R6
       48 [-]: JUMP L8
      
 L 7:  49 [-]: LOADB R8 1   
-L 8:  50 [-]: GETIMPORT R11 19 [nil]
-      51 [-]: GETIMPORT R12 21 [nil]
+L 8:  50 [-]: GETIMPORT R11 19 [0xBD6A335C]
+      51 [-]: GETIMPORT R12 21 ["EMPTY_SYMBOL"]
       52 [-]: NAMECALL R9 R1 K22 [0x47901F07]
       53 [-]: CALL R9 3 0  
-      54 [-]: GETIMPORT R11 24 [nil]
+      54 [-]: GETIMPORT R11 24 [0x0ED8B456]
       55 [-]: LOADB R12 1  
       56 [-]: LOADN R13 2  
       57 [-]: LOADN R14 1  
@@ -205,14 +205,14 @@ L 8:  50 [-]: GETIMPORT R11 19 [nil]
       62 [-]: NAMECALL R9 R2 K26 [0x2047CFE7]
       63 [-]: CALL R9 1 1  
       64 [-]: JUMPIFNOT R9 L10
-L 9:  65 [-]: GETIMPORT R9 28 [nil]
+L 9:  65 [-]: GETIMPORT R9 28 [0xCBD666E1]
       66 [-]: ADDK R10 R5 K1 [2]
       67 [-]: CALL R9 1 0  
       68 [-]: RETURN R0 0  
 L10:  69 [-]: NAMECALL R9 R0 K29 [0x0D0482E0]
       70 [-]: CALL R9 1 0  
-      71 [-]: GETIMPORT R11 31 [nil]
-      72 [-]: GETIMPORT R12 21 [nil]
+      71 [-]: GETIMPORT R11 31 [0x872CC037]
+      72 [-]: GETIMPORT R12 21 ["EMPTY_SYMBOL"]
       73 [-]: NAMECALL R9 R2 K22 [0x47901F07]
       74 [-]: CALL R9 3 0  
       75 [-]: NAMECALL R9 R2 K32 [0x1AC1655C]
@@ -220,7 +220,7 @@ L10:  69 [-]: NAMECALL R9 R0 K29 [0x0D0482E0]
       77 [-]: NAMECALL R10 R9 K33 [0x73901ACF]
       78 [-]: CALL R10 1 1 
       79 [-]: JUMPIFNOT R10 L11
-      80 [-]: GETIMPORT R10 35 [nil]
+      80 [-]: GETIMPORT R10 35 [0x89326C93]
       81 [-]: NAMECALL R10 R10 K36 [0x18D05D30]
       82 [-]: CALL R10 1 1 
       83 [-]: JUMPIFNOT R10 L12
@@ -229,7 +229,7 @@ L10:  69 [-]: NAMECALL R9 R0 K29 [0x0D0482E0]
       86 [-]: CALL R10 2 0 
       87 [-]: JUMP L12
     
-L11:  88 [-]: GETIMPORT R12 39 [nil]
+L11:  88 [-]: GETIMPORT R12 39 [0x8BA0FF40]
       89 [-]: LOADB R13 1  
       90 [-]: LOADN R14 2  
       91 [-]: LOADN R15 1  
@@ -245,14 +245,14 @@ L12:  95 [-]: LOADN R12 0
      101 [-]: CALL R10 2 1 
      102 [-]: SETTABLEKS R10 R7 K9 ["bodyMat"]
      103 [-]: LOADN R12 0  
-     104 [-]: GETIMPORT R13 42 [nil]
+     104 [-]: GETIMPORT R13 42 [0xDA24F7A9]
      105 [-]: NAMECALL R10 R2 K43 [0xCDDC3ABB]
      106 [-]: CALL R10 3 0 
      107 [-]: LOADN R12 1  
-     108 [-]: GETIMPORT R13 42 [nil]
+     108 [-]: GETIMPORT R13 42 [0xDA24F7A9]
      109 [-]: NAMECALL R10 R2 K43 [0xCDDC3ABB]
      110 [-]: CALL R10 3 0 
-     111 [-]: GETIMPORT R10 35 [nil]
+     111 [-]: GETIMPORT R10 35 [0x89326C93]
      112 [-]: NAMECALL R10 R10 K36 [0x18D05D30]
      113 [-]: CALL R10 1 1 
      114 [-]: JUMPIFNOT R10 L13
@@ -266,9 +266,9 @@ L12:  95 [-]: LOADN R12 0
      122 [-]: LOADN R13 0  
      123 [-]: NAMECALL R10 R2 K45 [0x9D668F53]
      124 [-]: CALL R10 3 0 
-L13: 125 [-]: GETIMPORT R10 14 [nil]
+L13: 125 [-]: GETIMPORT R10 14 ["gProtectAbilityStateData"]
      126 [-]: SETTABLE R7 R10 R6
-     127 [-]: GETIMPORT R10 28 [nil]
+     127 [-]: GETIMPORT R10 28 [0xCBD666E1]
      128 [-]: MOVE R11 R5  
      129 [-]: CALL R10 1 0 
      130 [-]: RETURN R0 0  
@@ -281,7 +281,7 @@ L13: 125 [-]: GETIMPORT R10 14 [nil]
 ; Is_vararg:       0
 ; Max Stack Size:  9
 
-       0 [-]: GETIMPORT R1 1 [nil]
+       0 [-]: GETIMPORT R1 1 [0x89326C93]
        1 [-]: NAMECALL R1 R1 K2 [0x21C948F8]
        2 [-]: CALL R1 1 1  
        3 [-]: LOADN R4 1   
@@ -295,7 +295,7 @@ L 0:   7 [-]: GETTABLE R5 R1 R4
       11 [-]: NAMECALL R7 R5 K4 [0xFA9E477F]
       12 [-]: CALL R7 1 1  
       13 [-]: FASTCALL1 62 R7 L1
-      14 [-]: GETIMPORT R6 6 [nil]
+      14 [-]: GETIMPORT R6 6 [0x7B998233]
       15 [-]: CALL R6 1 1  
 L 1:  16 [-]: JUMPIFNOT R6 L2
       17 [-]: MOVE R8 R0   
@@ -322,18 +322,18 @@ L 3:  27 [-]: RETURN R0 0
        1 [-]: CALL R3 1 1  
        2 [-]: NAMECALL R3 R3 K1 [0x8B72B36E]
        3 [-]: CALL R3 1 1  
-       4 [-]: GETIMPORT R5 4 [nil]
+       4 [-]: GETIMPORT R5 4 ["gProtectAbilityStateData"]
        5 [-]: FASTCALL1 62 R5 L0
-       6 [-]: GETIMPORT R4 6 [nil]
+       6 [-]: GETIMPORT R4 6 [0x7B998233]
        7 [-]: CALL R4 1 1  
 L 0:   8 [-]: JUMPIF R4 L4 
-       9 [-]: GETIMPORT R6 4 [nil]
+       9 [-]: GETIMPORT R6 4 ["gProtectAbilityStateData"]
       10 [-]: GETTABLE R5 R6 R3
       11 [-]: FASTCALL1 62 R5 L1
-      12 [-]: GETIMPORT R4 6 [nil]
+      12 [-]: GETIMPORT R4 6 [0x7B998233]
       13 [-]: CALL R4 1 1  
 L 1:  14 [-]: JUMPIF R4 L4 
-      15 [-]: GETIMPORT R5 4 [nil]
+      15 [-]: GETIMPORT R5 4 ["gProtectAbilityStateData"]
       16 [-]: GETTABLE R4 R5 R3
       17 [-]: LOADN R7 0   
       18 [-]: GETTABLEKS R8 R4 K7 ["headMat"]
@@ -347,7 +347,7 @@ L 1:  14 [-]: JUMPIF R4 L4
       26 [-]: NAMECALL R6 R1 K10 [0xD1586535]
       27 [-]: CALL R6 1 -1 
       28 [-]: CALL R5 -1 0 
-      29 [-]: GETIMPORT R5 12 [nil]
+      29 [-]: GETIMPORT R5 12 [0x89326C93]
       30 [-]: NAMECALL R5 R5 K13 [0x18D05D30]
       31 [-]: CALL R5 1 1  
       32 [-]: JUMPIFNOT R5 L3
@@ -365,7 +365,7 @@ L 2:  41 [-]: GETUPVAL R8 1
       44 [-]: GETUPVAL R8 2
       45 [-]: NAMECALL R6 R2 K18 [0xD8ECECCC]
       46 [-]: CALL R6 2 0  
-L 3:  47 [-]: GETIMPORT R5 4 [nil]
+L 3:  47 [-]: GETIMPORT R5 4 ["gProtectAbilityStateData"]
       48 [-]: LOADNIL R6   
       49 [-]: SETTABLE R6 R5 R3
 L 4:  50 [-]: RETURN R0 0  

@@ -5,17 +5,17 @@
 ; Is_vararg:       1
 ; Max Stack Size:  28
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0xAEABECDA]
        2 [-]: GETVARARGS R1 1
-       3 [-]: GETIMPORT R2 4 [nil]
+       3 [-]: GETIMPORT R2 4 ["seeall"]
        4 [-]: CALL R0 2 0  
-       5 [-]: GETIMPORT R0 7 [nil]
-       6 [-]: GETIMPORT R1 9 [nil]
-       7 [-]: GETIMPORT R2 11 [nil]
+       5 [-]: GETIMPORT R0 7 [0xA40531D8]
+       6 [-]: GETIMPORT R1 9 [0x3EDA26FC]
+       7 [-]: GETIMPORT R2 11 [0x00FA6BF1]
        8 [-]: LOADK R3 K12 [3.1415927410125732]
-       9 [-]: GETIMPORT R4 14 [nil]
-      10 [-]: GETIMPORT R5 16 [nil]
-      11 [-]: GETIMPORT R6 18 [nil]
+       9 [-]: GETIMPORT R4 14 [0x34E9F45C]
+      10 [-]: GETIMPORT R5 16 [0xE4A5B3CA]
+      11 [-]: GETIMPORT R6 18 [0xF7D38BE5]
       12 [-]: DUPCLOSURE R7 K19 []
       13 [-]: SETGLOBAL R7 K20 ["linear"]
       14 [-]: DUPCLOSURE R7 K21 []

@@ -5,29 +5,29 @@
 ; Is_vararg:       1
 ; Max Stack Size:  8
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0xAEABECDA]
        2 [-]: GETVARARGS R1 1
-       3 [-]: GETIMPORT R2 4 [nil]
+       3 [-]: GETIMPORT R2 4 ["seeall"]
        4 [-]: CALL R0 2 0  
-       5 [-]: GETIMPORT R0 6 [nil]
+       5 [-]: GETIMPORT R0 6 [0x7ED0A956]
        6 [-]: LOADK R1 K7 ["/Lotus/Upgrades/Mods/Randomized/LotusRifleRandomModRare"]
        7 [-]: CALL R0 1 1  
-       8 [-]: GETIMPORT R1 6 [nil]
+       8 [-]: GETIMPORT R1 6 [0x7ED0A956]
        9 [-]: LOADK R2 K8 ["/Lotus/Upgrades/Mods/Randomized/LotusShotgunRandomModRare"]
       10 [-]: CALL R1 1 1  
-      11 [-]: GETIMPORT R2 6 [nil]
+      11 [-]: GETIMPORT R2 6 [0x7ED0A956]
       12 [-]: LOADK R3 K9 ["/Lotus/Upgrades/Mods/Randomized/LotusPistolRandomModRare"]
       13 [-]: CALL R2 1 1  
-      14 [-]: GETIMPORT R3 6 [nil]
+      14 [-]: GETIMPORT R3 6 [0x7ED0A956]
       15 [-]: LOADK R4 K10 ["/Lotus/Upgrades/Mods/Randomized/PlayerMeleeWeaponRandomModRare"]
       16 [-]: CALL R3 1 1  
-      17 [-]: GETIMPORT R4 6 [nil]
+      17 [-]: GETIMPORT R4 6 [0x7ED0A956]
       18 [-]: LOADK R5 K11 ["/Lotus/Upgrades/Mods/Randomized/LotusArchgunRandomModRare"]
       19 [-]: CALL R4 1 1  
-      20 [-]: GETIMPORT R5 6 [nil]
+      20 [-]: GETIMPORT R5 6 [0x7ED0A956]
       21 [-]: LOADK R6 K12 ["/Lotus/Upgrades/Mods/Randomized/LotusModularMeleeRandomModRare"]
       22 [-]: CALL R5 1 1  
-      23 [-]: GETIMPORT R6 6 [nil]
+      23 [-]: GETIMPORT R6 6 [0x7ED0A956]
       24 [-]: LOADK R7 K13 ["/Lotus/Upgrades/Mods/Randomized/LotusModularPistolRandomModRare"]
       25 [-]: CALL R6 1 1  
       26 [-]: DUPCLOSURE R7 K14 []
@@ -49,16 +49,16 @@
 ; Is_vararg:       0
 ; Max Stack Size:  14
 
-       0 [-]: GETIMPORT R3 1 [nil]
+       0 [-]: GETIMPORT R3 1 [0x2D0FAD09]
        1 [-]: LOADK R4 K2 ["EE.Interface.Utilities"]
        2 [-]: CALL R3 1 1  
-       3 [-]: GETIMPORT R4 1 [nil]
+       3 [-]: GETIMPORT R4 1 [0x2D0FAD09]
        4 [-]: LOADK R5 K3 ["Lotus.Interface.UIStyleUtilities"]
        5 [-]: CALL R4 1 1  
-       6 [-]: GETIMPORT R5 1 [nil]
+       6 [-]: GETIMPORT R5 1 [0x2D0FAD09]
        7 [-]: LOADK R6 K4 ["Lotus.Interface.UIUtilities"]
        8 [-]: CALL R5 1 1  
-       9 [-]: GETIMPORT R6 1 [nil]
+       9 [-]: GETIMPORT R6 1 [0x2D0FAD09]
       10 [-]: LOADK R7 K5 ["Lotus.Interface.StoreItemUtilities"]
       11 [-]: CALL R6 1 1  
       12 [-]: DUPTABLE R7 18
@@ -94,7 +94,7 @@
       42 [-]: NEWCLOSURE R8 P5
       43 [-]: MOVE R0 R1   
       44 [-]: SETTABLEKS R8 R7 K17 ["SetupOmega"]
-      45 [-]: GETIMPORT R8 1 [nil]
+      45 [-]: GETIMPORT R8 1 [0x2D0FAD09]
       46 [-]: LOADK R9 K21 ["Lotus.Interface.Components.CategorizedGrid"]
       47 [-]: CALL R8 1 1  
       48 [-]: GETTABLEKS R9 R8 K22 [0x67D7B715]

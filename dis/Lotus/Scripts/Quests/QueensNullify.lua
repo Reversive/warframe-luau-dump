@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  1
 
-            1 [-]: DUPCLOSURE R0 K0 []
+       1 [-]: DUPCLOSURE R0 K0 []
        2 [-]: SETGLOBAL R0 K1 ["OnEnter"]
        3 [-]: DUPCLOSURE R0 K2 []
        4 [-]: SETGLOBAL R0 K3 ["OnExit"]
@@ -21,11 +21,11 @@
 
        0 [-]: FASTCALL1 62 R1 L0
        1 [-]: MOVE R3 R1   
-       2 [-]: GETIMPORT R2 1 [nil]
+       2 [-]: GETIMPORT R2 1 [0x7B998233]
        3 [-]: CALL R2 1 1  
 L 0:   4 [-]: JUMPIFNOT R2 L1
        5 [-]: RETURN R0 0  
-L 1:   6 [-]: GETIMPORT R4 3 [nil]
+L 1:   6 [-]: GETIMPORT R4 3 ["gHitProxyPhysicsType"]
        7 [-]: NAMECALL R2 R1 K4 [0xF2DEAF69]
        8 [-]: CALL R2 2 1  
        9 [-]: JUMPIFNOT R2 L5
@@ -33,7 +33,7 @@ L 1:   6 [-]: GETIMPORT R4 3 [nil]
       11 [-]: CALL R2 1 1  
       12 [-]: FASTCALL1 62 R2 L2
       13 [-]: MOVE R4 R2   
-      14 [-]: GETIMPORT R3 1 [nil]
+      14 [-]: GETIMPORT R3 1 [0x7B998233]
       15 [-]: CALL R3 1 1  
 L 2:  16 [-]: JUMPIF R3 L3 
       17 [-]: LOADN R5 1   
@@ -46,7 +46,7 @@ L 4:  22 [-]: NAMECALL R3 R2 K7 [0x5163741E]
       24 [-]: MOVE R1 R3   
 L 5:  25 [-]: FASTCALL1 62 R1 L6
       26 [-]: MOVE R3 R1   
-      27 [-]: GETIMPORT R2 1 [nil]
+      27 [-]: GETIMPORT R2 1 [0x7B998233]
       28 [-]: CALL R2 1 1  
 L 6:  29 [-]: JUMPIF R2 L7 
       30 [-]: NAMECALL R2 R1 K8 [0x2047CFE7]
@@ -59,11 +59,11 @@ L 8:  34 [-]: NAMECALL R2 R1 K9 [0xDE321E6F]
       37 [-]: CALL R2 1 1  
       38 [-]: FASTCALL1 62 R2 L9
       39 [-]: MOVE R4 R2   
-      40 [-]: GETIMPORT R3 1 [nil]
+      40 [-]: GETIMPORT R3 1 [0x7B998233]
       41 [-]: CALL R3 1 1  
 L 9:  42 [-]: JUMPIF R3 L10
       43 [-]: LOADB R5 1   
-      44 [-]: GETIMPORT R6 12 [nil]
+      44 [-]: GETIMPORT R6 12 [0xA8FDF260]
       45 [-]: NAMECALL R3 R2 K13 [0xD533F1CC]
       46 [-]: CALL R3 3 0  
 L10:  47 [-]: RETURN R0 0  
@@ -78,11 +78,11 @@ L10:  47 [-]: RETURN R0 0
 
        0 [-]: FASTCALL1 62 R1 L0
        1 [-]: MOVE R3 R1   
-       2 [-]: GETIMPORT R2 1 [nil]
+       2 [-]: GETIMPORT R2 1 [0x7B998233]
        3 [-]: CALL R2 1 1  
 L 0:   4 [-]: JUMPIFNOT R2 L1
        5 [-]: RETURN R0 0  
-L 1:   6 [-]: GETIMPORT R4 3 [nil]
+L 1:   6 [-]: GETIMPORT R4 3 ["gHitProxyPhysicsType"]
        7 [-]: NAMECALL R2 R1 K4 [0xF2DEAF69]
        8 [-]: CALL R2 2 1  
        9 [-]: JUMPIFNOT R2 L5
@@ -90,7 +90,7 @@ L 1:   6 [-]: GETIMPORT R4 3 [nil]
       11 [-]: CALL R2 1 1  
       12 [-]: FASTCALL1 62 R2 L2
       13 [-]: MOVE R4 R2   
-      14 [-]: GETIMPORT R3 1 [nil]
+      14 [-]: GETIMPORT R3 1 [0x7B998233]
       15 [-]: CALL R3 1 1  
 L 2:  16 [-]: JUMPIF R3 L3 
       17 [-]: LOADN R5 1   
@@ -103,7 +103,7 @@ L 4:  22 [-]: NAMECALL R3 R2 K7 [0x5163741E]
       24 [-]: MOVE R1 R3   
 L 5:  25 [-]: FASTCALL1 62 R1 L6
       26 [-]: MOVE R3 R1   
-      27 [-]: GETIMPORT R2 1 [nil]
+      27 [-]: GETIMPORT R2 1 [0x7B998233]
       28 [-]: CALL R2 1 1  
 L 6:  29 [-]: JUMPIFNOT R2 L7
       30 [-]: RETURN R0 0  
@@ -113,11 +113,11 @@ L 7:  31 [-]: NAMECALL R2 R1 K8 [0xDE321E6F]
       34 [-]: CALL R2 1 1  
       35 [-]: FASTCALL1 62 R2 L8
       36 [-]: MOVE R4 R2   
-      37 [-]: GETIMPORT R3 1 [nil]
+      37 [-]: GETIMPORT R3 1 [0x7B998233]
       38 [-]: CALL R3 1 1  
 L 8:  39 [-]: JUMPIF R3 L9 
       40 [-]: LOADB R5 0   
-      41 [-]: GETIMPORT R6 11 [nil]
+      41 [-]: GETIMPORT R6 11 [0xA8FDF260]
       42 [-]: NAMECALL R3 R2 K12 [0xD533F1CC]
       43 [-]: CALL R3 3 0  
 L 9:  44 [-]: RETURN R0 0  

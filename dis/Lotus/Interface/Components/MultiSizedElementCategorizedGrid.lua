@@ -5,9 +5,9 @@
 ; Is_vararg:       1
 ; Max Stack Size:  3
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0xAEABECDA]
        2 [-]: GETVARARGS R1 1
-       3 [-]: GETIMPORT R2 4 [nil]
+       3 [-]: GETIMPORT R2 4 ["seeall"]
        4 [-]: CALL R0 2 0  
        5 [-]: DUPCLOSURE R0 K5 []
        6 [-]: SETGLOBAL R0 K6 ["CreateMultiSizedElementCategorizedGrid"]
@@ -21,7 +21,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  22
 
-       0 [-]: GETIMPORT R10 1 [nil]
+       0 [-]: GETIMPORT R10 1 [0x2D0FAD09]
        1 [-]: LOADK R11 K2 ["Lotus.Interface.Components.CategorizedGrid"]
        2 [-]: CALL R10 1 1 
        3 [-]: GETTABLEKS R11 R10 K3 [0x67D7B715]
@@ -41,7 +41,7 @@
       17 [-]: LOADK R15 K5 [")::"]
       18 [-]: CONCAT R12 R13 R15
       19 [-]: SETTABLEKS R12 R11 K6 ["mPrefix"]
-      20 [-]: GETIMPORT R12 1 [nil]
+      20 [-]: GETIMPORT R12 1 [0x2D0FAD09]
       21 [-]: LOADK R13 K7 ["Lotus.Interface.LotusUtilities"]
       22 [-]: CALL R12 1 1 
       23 [-]: SETTABLEKS R12 R11 K8 ["LOTUS_UTIL"]

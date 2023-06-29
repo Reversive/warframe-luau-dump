@@ -5,45 +5,45 @@
 ; Is_vararg:       1
 ; Max Stack Size:  16
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x2D0FAD09]
        2 [-]: LOADK R1 K2 ["EE.Interface.Utilities"]
        3 [-]: CALL R0 1 1  
-       4 [-]: GETIMPORT R1 1 [nil]
+       4 [-]: GETIMPORT R1 1 [0x2D0FAD09]
        5 [-]: LOADK R2 K3 ["Lotus.Interface.Libs.DuviriUtil"]
        6 [-]: CALL R1 1 1  
-       7 [-]: GETIMPORT R2 5 [nil]
+       7 [-]: GETIMPORT R2 5 [0x0469F296]
        8 [-]: LOADK R3 K6 ["GrownPlant"]
        9 [-]: CALL R2 1 1  
-      10 [-]: GETIMPORT R3 8 [nil]
+      10 [-]: GETIMPORT R3 8 [0xB009BBC6]
       11 [-]: LOADK R4 K9 ["/Lotus/Fx/Gameplay/Duviri/Games/Plants/DuvxDuviriPlantNotInteractibleBMat"]
       12 [-]: CALL R3 1 1  
-      13 [-]: GETIMPORT R4 11 [nil]
+      13 [-]: GETIMPORT R4 11 [0x88EFC25E]
       14 [-]: LOADK R5 K12 ["/Lotus/Fx/Gameplay/Duviri/Games/Plants/SeedPickupItemFx"]
       15 [-]: CALL R4 1 1  
       16 [-]: LOADNIL R5   
       17 [-]: NEWTABLE R6 0 0
       18 [-]: DUPTABLE R7 19
-      19 [-]: GETIMPORT R8 11 [nil]
+      19 [-]: GETIMPORT R8 11 [0x88EFC25E]
       20 [-]: LOADK R9 K20 ["/Lotus/Types/Gameplay/Duviri/Resource/Plants/DuviriPlantAExtractItemDeco"]
       21 [-]: CALL R8 1 1  
       22 [-]: SETTABLEKS R8 R7 K13 ["PLANT_ITEM_A"]
-      23 [-]: GETIMPORT R8 11 [nil]
+      23 [-]: GETIMPORT R8 11 [0x88EFC25E]
       24 [-]: LOADK R9 K21 ["/Lotus/Types/Gameplay/Duviri/Resource/Plants/DuviriPlantBExtractItemDeco"]
       25 [-]: CALL R8 1 1  
       26 [-]: SETTABLEKS R8 R7 K14 ["PLANT_ITEM_B"]
-      27 [-]: GETIMPORT R8 11 [nil]
+      27 [-]: GETIMPORT R8 11 [0x88EFC25E]
       28 [-]: LOADK R9 K22 ["/Lotus/Types/Gameplay/Duviri/Resource/Plants/DuviriPlantCExtractItemDeco"]
       29 [-]: CALL R8 1 1  
       30 [-]: SETTABLEKS R8 R7 K15 ["PLANT_ITEM_C"]
-      31 [-]: GETIMPORT R8 11 [nil]
+      31 [-]: GETIMPORT R8 11 [0x88EFC25E]
       32 [-]: LOADK R9 K23 ["/Lotus/Types/Gameplay/Duviri/Resource/Plants/DuviriPlantDExtractItemDeco"]
       33 [-]: CALL R8 1 1  
       34 [-]: SETTABLEKS R8 R7 K16 ["PLANT_ITEM_D"]
-      35 [-]: GETIMPORT R8 11 [nil]
+      35 [-]: GETIMPORT R8 11 [0x88EFC25E]
       36 [-]: LOADK R9 K24 ["/Lotus/Types/Gameplay/Duviri/Resource/Plants/DuviriPlantEExtractItemDeco"]
       37 [-]: CALL R8 1 1  
       38 [-]: SETTABLEKS R8 R7 K17 ["PLANT_ITEM_E"]
-      39 [-]: GETIMPORT R8 11 [nil]
+      39 [-]: GETIMPORT R8 11 [0x88EFC25E]
       40 [-]: LOADK R9 K25 ["/Lotus/Types/Gameplay/Duviri/Resource/Plants/DuviriPlantFExtractItemDeco"]
       41 [-]: CALL R8 1 1  
       42 [-]: SETTABLEKS R8 R7 K18 ["PLANT_ITEM_F"]
@@ -109,45 +109,45 @@
 
        0 [-]: FASTCALL1 62 R0 L0
        1 [-]: MOVE R2 R0   
-       2 [-]: GETIMPORT R1 1 [nil]
+       2 [-]: GETIMPORT R1 1 [0x7B998233]
        3 [-]: CALL R1 1 1  
 L 0:   4 [-]: JUMPIFNOT R1 L1
-       5 [-]: GETIMPORT R0 3 [nil]
-L 1:   6 [-]: GETIMPORT R1 5 [nil]
+       5 [-]: GETIMPORT R0 3 [0xE270B70A]
+L 1:   6 [-]: GETIMPORT R1 5 [0x89326C93]
        7 [-]: MOVE R3 R0   
        8 [-]: NAMECALL R1 R1 K6 [0x46A0EBF5]
        9 [-]: CALL R1 2 1  
       10 [-]: FASTCALL1 62 R1 L2
       11 [-]: MOVE R3 R1   
-      12 [-]: GETIMPORT R2 1 [nil]
+      12 [-]: GETIMPORT R2 1 [0x7B998233]
       13 [-]: CALL R2 1 1  
 L 2:  14 [-]: JUMPIFNOT R2 L3
       15 [-]: LOADNIL R2   
       16 [-]: RETURN R2 1  
-L 3:  17 [-]: GETIMPORT R3 9 [nil]
+L 3:  17 [-]: GETIMPORT R3 9 ["Gardens"]
       18 [-]: FASTCALL1 62 R3 L4
-      19 [-]: GETIMPORT R2 1 [nil]
+      19 [-]: GETIMPORT R2 1 [0x7B998233]
       20 [-]: CALL R2 1 1  
 L 4:  21 [-]: JUMPIFNOT R2 L5
-      22 [-]: GETIMPORT R2 10 [nil]
+      22 [-]: GETIMPORT R2 10 ["_T"]
       23 [-]: NEWTABLE R3 0 0
       24 [-]: SETTABLEKS R3 R2 K8 ["Gardens"]
 L 5:  25 [-]: NAMECALL R2 R1 K11 [0xED4E0128]
       26 [-]: CALL R2 1 1  
-      27 [-]: GETIMPORT R5 9 [nil]
+      27 [-]: GETIMPORT R5 9 ["Gardens"]
       28 [-]: GETTABLE R4 R5 R2
       29 [-]: FASTCALL1 62 R4 L6
-      30 [-]: GETIMPORT R3 1 [nil]
+      30 [-]: GETIMPORT R3 1 [0x7B998233]
       31 [-]: CALL R3 1 1  
 L 6:  32 [-]: JUMPIFNOT R3 L7
-      33 [-]: GETIMPORT R3 9 [nil]
+      33 [-]: GETIMPORT R3 9 ["Gardens"]
       34 [-]: DUPTABLE R4 14
-      35 [-]: GETIMPORT R5 3 [nil]
+      35 [-]: GETIMPORT R5 3 [0xE270B70A]
       36 [-]: SETTABLEKS R5 R4 K12 ["gardenTagName"]
       37 [-]: NEWTABLE R5 0 0
       38 [-]: SETTABLEKS R5 R4 K13 ["pottedPlants"]
       39 [-]: SETTABLE R4 R3 R2
-L 7:  40 [-]: GETIMPORT R4 9 [nil]
+L 7:  40 [-]: GETIMPORT R4 9 ["Gardens"]
       41 [-]: GETTABLE R3 R4 R2
       42 [-]: RETURN R3 1  
 
@@ -161,18 +161,18 @@ L 7:  40 [-]: GETIMPORT R4 9 [nil]
 
        0 [-]: FASTCALL1 62 R0 L0
        1 [-]: MOVE R2 R0   
-       2 [-]: GETIMPORT R1 1 [nil]
+       2 [-]: GETIMPORT R1 1 [0x7B998233]
        3 [-]: CALL R1 1 1  
 L 0:   4 [-]: JUMPIFNOT R1 L1
-       5 [-]: GETIMPORT R0 3 [nil]
-L 1:   6 [-]: GETIMPORT R1 5 [nil]
+       5 [-]: GETIMPORT R0 3 [0xE270B70A]
+L 1:   6 [-]: GETIMPORT R1 5 [0x89326C93]
        7 [-]: MOVE R3 R0   
        8 [-]: NAMECALL R1 R1 K6 [0x46A0EBF5]
        9 [-]: CALL R1 2 1  
       10 [-]: LOADB R2 0   
       11 [-]: FASTCALL1 62 R1 L2
       12 [-]: MOVE R4 R1   
-      13 [-]: GETIMPORT R3 1 [nil]
+      13 [-]: GETIMPORT R3 1 [0x7B998233]
       14 [-]: CALL R3 1 1  
 L 2:  15 [-]: JUMPIF R3 L17
       16 [-]: GETUPVAL R3 0
@@ -180,17 +180,17 @@ L 2:  15 [-]: JUMPIF R3 L17
       18 [-]: CALL R3 1 1  
       19 [-]: FASTCALL1 62 R3 L3
       20 [-]: MOVE R5 R3   
-      21 [-]: GETIMPORT R4 1 [nil]
+      21 [-]: GETIMPORT R4 1 [0x7B998233]
       22 [-]: CALL R4 1 1  
 L 3:  23 [-]: JUMPIFNOT R4 L4
       24 [-]: RETURN R0 0  
 L 4:  25 [-]: NAMECALL R4 R1 K7 [0xDB7325E3]
       26 [-]: CALL R4 1 1  
       27 [-]: GETTABLEKS R6 R4 K8 ["x"]
-      28 [-]: GETIMPORT R7 10 [nil]
+      28 [-]: GETIMPORT R7 10 [0x6723FB3B]
       29 [-]: DIV R5 R6 R7 
       30 [-]: GETTABLEKS R7 R4 K11 ["z"]
-      31 [-]: GETIMPORT R8 13 [nil]
+      31 [-]: GETIMPORT R8 13 [0x4A197A8D]
       32 [-]: DIV R6 R7 R8 
       33 [-]: GETTABLEKS R9 R4 K8 ["x"]
       34 [-]: SUB R8 R5 R9 
@@ -198,36 +198,36 @@ L 4:  25 [-]: NAMECALL R4 R1 K7 [0xDB7325E3]
       36 [-]: GETTABLEKS R10 R4 K11 ["z"]
       37 [-]: SUB R9 R6 R10
       38 [-]: MULK R8 R9 K14 [0.5]
-      39 [-]: GETIMPORT R9 16 [nil]
+      39 [-]: GETIMPORT R9 16 [0xA421AF95]
       40 [-]: LOADN R10 0  
       41 [-]: LOADN R11 0  
       42 [-]: LOADN R12 0  
       43 [-]: CALL R9 3 1  
-      44 [-]: GETIMPORT R10 18 [nil]
+      44 [-]: GETIMPORT R10 18 [0x00046924]
       45 [-]: CALL R10 0 1 
-      46 [-]: GETIMPORT R11 16 [nil]
+      46 [-]: GETIMPORT R11 16 [0xA421AF95]
       47 [-]: LOADN R12 0  
       48 [-]: LOADN R13 0  
       49 [-]: LOADN R14 0  
       50 [-]: CALL R11 3 1 
       51 [-]: LOADN R12 0  
       52 [-]: LOADN R13 0  
-      53 [-]: GETIMPORT R14 20 [nil]
+      53 [-]: GETIMPORT R14 20 [0xCFC01047]
       54 [-]: GETTABLEKS R15 R3 K21 ["pottedPlants"]
       55 [-]: CALL R14 1 3 
       56 [-]: FORGPREP_NEXT R14 L15
 L 5:  57 [-]: GETTABLEKS R20 R18 K22 ["currentPlant"]
       58 [-]: FASTCALL1 62 R20 L6
-      59 [-]: GETIMPORT R19 1 [nil]
+      59 [-]: GETIMPORT R19 1 [0x7B998233]
       60 [-]: CALL R19 1 1 
 L 6:  61 [-]: JUMPIFNOT R19 L15
-      62 [-]: GETIMPORT R21 13 [nil]
+      62 [-]: GETIMPORT R21 13 [0x4A197A8D]
       63 [-]: DIV R20 R17 R21
       64 [-]: FASTCALL1 12 R20 L7
-      65 [-]: GETIMPORT R19 25 [nil]
+      65 [-]: GETIMPORT R19 25 [0x55F27C30]
       66 [-]: CALL R19 1 1 
 L 7:  67 [-]: MOVE R12 R19 
-      68 [-]: GETIMPORT R19 13 [nil]
+      68 [-]: GETIMPORT R19 13 [0x4A197A8D]
       69 [-]: MOD R13 R17 R19
       70 [-]: MUL R20 R5 R12
       71 [-]: ADD R19 R7 R20
@@ -238,7 +238,7 @@ L 7:  67 [-]: MOVE R12 R19
       76 [-]: NAMECALL R19 R1 K26 [0xCB3851B8]
       77 [-]: CALL R19 1 1 
       78 [-]: MOVE R10 R19 
-      79 [-]: GETIMPORT R19 28 [nil]
+      79 [-]: GETIMPORT R19 28 [0x492C7F2A]
       80 [-]: MOVE R20 R9  
       81 [-]: MOVE R21 R10 
       82 [-]: CALL R19 2 1 
@@ -257,12 +257,12 @@ L 7:  67 [-]: MOVE R12 R19
       95 [-]: GETTABLEKS R20 R18 K31 ["growingPlant"]
       96 [-]: NAMECALL R20 R20 K34 [0xD0F96336]
       97 [-]: CALL R20 1 1 
-      98 [-]: GETIMPORT R22 37 [nil]
+      98 [-]: GETIMPORT R22 37 [0x397B920F]
       99 [-]: GETTABLEKS R23 R18 K38 ["growthEndTime"]
      100 [-]: CALL R22 1 1 
      101 [-]: FASTCALL2K 18 R22 K39 L8 [0]
      102 [-]: LOADK R23 K39 [0]
-     103 [-]: GETIMPORT R21 41 [nil]
+     103 [-]: GETIMPORT R21 41 [0xB62ECFE0]
      104 [-]: CALL R21 2 1 
 L 8: 105 [-]: SUBK R25 R20 K42 [1]
      106 [-]: LOADN R27 1  
@@ -270,19 +270,19 @@ L 8: 105 [-]: SUBK R25 R20 K42 [1]
      108 [-]: SUB R26 R27 R28
      109 [-]: MUL R24 R25 R26
      110 [-]: FASTCALL1 12 R24 L9
-     111 [-]: GETIMPORT R23 25 [nil]
+     111 [-]: GETIMPORT R23 25 [0x55F27C30]
      112 [-]: CALL R23 1 1 
 L 9: 113 [-]: SUBK R24 R20 K42 [1]
      114 [-]: FASTCALL2 19 R23 R24 L10
-     115 [-]: GETIMPORT R22 44 [nil]
+     115 [-]: GETIMPORT R22 44 [0xAC1B386A]
      116 [-]: CALL R22 2 1 
-L10: 117 [-]: GETIMPORT R23 46 [nil]
+L10: 117 [-]: GETIMPORT R23 46 [0x88EFC25E]
      118 [-]: GETTABLEKS R24 R18 K31 ["growingPlant"]
      119 [-]: MOVE R26 R22 
      120 [-]: NAMECALL R24 R24 K47 [0x8BE69BB2]
      121 [-]: CALL R24 2 -1
      122 [-]: CALL R23 -1 1
-     123 [-]: GETIMPORT R24 5 [nil]
+     123 [-]: GETIMPORT R24 5 [0x89326C93]
      124 [-]: MOVE R26 R23 
      125 [-]: MOVE R27 R11 
      126 [-]: MOVE R28 R10 
@@ -299,22 +299,22 @@ L10: 117 [-]: GETIMPORT R23 46 [nil]
      137 [-]: NAMECALL R25 R24 K50 [0x3273BA96]
      138 [-]: CALL R25 2 0 
      139 [-]: LOADB R2 1   
-L11: 140 [-]: GETIMPORT R25 52 [nil]
+L11: 140 [-]: GETIMPORT R25 52 [0xB00890BD]
      141 [-]: JUMPIF R25 L14
-     142 [-]: GETIMPORT R27 54 [nil]
+     142 [-]: GETIMPORT R27 54 ["gEntityType"]
      143 [-]: NAMECALL R25 R24 K55 [0xC1595BD5]
      144 [-]: CALL R25 2 1 
-     145 [-]: GETIMPORT R26 57 [nil]
+     145 [-]: GETIMPORT R26 57 [0xC8802016]
      146 [-]: MOVE R27 R25 
      147 [-]: CALL R26 1 3 
      148 [-]: FORGPREP_INEXT R26 L13
 L12: 149 [-]: LOADN R31 1  
      150 [-]: JUMPIFNOTLT R31 R29 L13
-     151 [-]: GETIMPORT R33 59 [nil]
+     151 [-]: GETIMPORT R33 59 ["gSequencerType"]
      152 [-]: NAMECALL R31 R30 K60 [0xF2DEAF69]
      153 [-]: CALL R31 2 1 
      154 [-]: JUMPIF R31 L13
-     155 [-]: GETIMPORT R31 5 [nil]
+     155 [-]: GETIMPORT R31 5 [0x89326C93]
      156 [-]: MOVE R33 R30 
      157 [-]: NAMECALL R31 R31 K61 [0x59C96E77]
      158 [-]: CALL R31 2 0 
@@ -327,8 +327,8 @@ L14: 164 [-]: SETTABLEKS R24 R18 K22 ["currentPlant"]
      165 [-]: GETUPVAL R25 4
      166 [-]: SETTABLE R18 R25 R17
 L15: 167 [-]: FORGLOOP R14 L5 2
-     168 [-]: GETIMPORT R14 5 [nil]
-     169 [-]: GETIMPORT R16 64 [nil]
+     168 [-]: GETIMPORT R14 5 [0x89326C93]
+     169 [-]: GETIMPORT R16 64 [0x0469F296]
      170 [-]: LOADK R17 K65 ["GardenScreen"]
      171 [-]: CALL R16 1 1 
      172 [-]: NAMECALL R17 R1 K29 [0xD1586535]
@@ -337,7 +337,7 @@ L15: 167 [-]: FORGLOOP R14 L5 2
      175 [-]: CALL R14 -1 1
      176 [-]: FASTCALL1 62 R14 L16
      177 [-]: MOVE R16 R14 
-     178 [-]: GETIMPORT R15 1 [nil]
+     178 [-]: GETIMPORT R15 1 [0x7B998233]
      179 [-]: CALL R15 1 1 
 L16: 180 [-]: JUMPIF R15 L17
      181 [-]: MOVE R17 R2  
@@ -353,13 +353,13 @@ L17: 184 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  9
 
-       0 [-]: GETIMPORT R2 1 [nil]
+       0 [-]: GETIMPORT R2 1 [0x89326C93]
        1 [-]: MOVE R4 R0   
        2 [-]: NAMECALL R2 R2 K2 [0x46A0EBF5]
        3 [-]: CALL R2 2 1  
        4 [-]: FASTCALL1 62 R2 L0
        5 [-]: MOVE R4 R2   
-       6 [-]: GETIMPORT R3 4 [nil]
+       6 [-]: GETIMPORT R3 4 [0x7B998233]
        7 [-]: CALL R3 1 1  
 L 0:   8 [-]: JUMPIF R3 L2 
        9 [-]: NAMECALL R3 R2 K5 [0xED4E0128]
@@ -369,7 +369,7 @@ L 0:   8 [-]: JUMPIF R3 L2
       13 [-]: CALL R4 1 1  
       14 [-]: FASTCALL1 62 R4 L1
       15 [-]: MOVE R6 R4   
-      16 [-]: GETIMPORT R5 4 [nil]
+      16 [-]: GETIMPORT R5 4 [0x7B998233]
       17 [-]: CALL R5 1 1  
 L 1:  18 [-]: JUMPIF R5 L2 
       19 [-]: DUPTABLE R5 9
@@ -379,7 +379,7 @@ L 1:  18 [-]: JUMPIF R5 L2
       23 [-]: SETTABLEKS R6 R5 K7 ["currentPlant"]
       24 [-]: GETTABLEKS R6 R1 K11 ["mEndTime"]
       25 [-]: SETTABLEKS R6 R5 K8 ["growthEndTime"]
-      26 [-]: GETIMPORT R8 14 [nil]
+      26 [-]: GETIMPORT R8 14 ["Gardens"]
       27 [-]: GETTABLE R7 R8 R3
       28 [-]: GETTABLEKS R6 R7 K15 ["pottedPlants"]
       29 [-]: GETTABLEKS R7 R1 K16 ["mPlotIndex"]
@@ -394,13 +394,13 @@ L 2:  31 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  12
 
-       0 [-]: GETIMPORT R2 1 [nil]
+       0 [-]: GETIMPORT R2 1 [0x89326C93]
        1 [-]: MOVE R4 R0   
        2 [-]: NAMECALL R2 R2 K2 [0x46A0EBF5]
        3 [-]: CALL R2 2 1  
        4 [-]: FASTCALL1 62 R2 L0
        5 [-]: MOVE R4 R2   
-       6 [-]: GETIMPORT R3 4 [nil]
+       6 [-]: GETIMPORT R3 4 [0x7B998233]
        7 [-]: CALL R3 1 1  
 L 0:   8 [-]: JUMPIF R3 L4 
        9 [-]: NAMECALL R3 R2 K5 [0xED4E0128]
@@ -410,27 +410,27 @@ L 0:   8 [-]: JUMPIF R3 L4
       13 [-]: CALL R4 1 1  
       14 [-]: FASTCALL1 62 R4 L1
       15 [-]: MOVE R6 R4   
-      16 [-]: GETIMPORT R5 4 [nil]
+      16 [-]: GETIMPORT R5 4 [0x7B998233]
       17 [-]: CALL R5 1 1  
 L 1:  18 [-]: JUMPIF R5 L4 
-      19 [-]: GETIMPORT R10 8 [nil]
+      19 [-]: GETIMPORT R10 8 ["Gardens"]
       20 [-]: GETTABLE R9 R10 R3
       21 [-]: GETTABLEKS R8 R9 K9 ["pottedPlants"]
       22 [-]: GETTABLE R7 R8 R1
       23 [-]: GETTABLEKS R6 R7 K10 ["currentPlant"]
       24 [-]: FASTCALL1 62 R6 L2
-      25 [-]: GETIMPORT R5 4 [nil]
+      25 [-]: GETIMPORT R5 4 [0x7B998233]
       26 [-]: CALL R5 1 1  
 L 2:  27 [-]: JUMPIF R5 L3 
-      28 [-]: GETIMPORT R5 1 [nil]
-      29 [-]: GETIMPORT R11 8 [nil]
+      28 [-]: GETIMPORT R5 1 [0x89326C93]
+      29 [-]: GETIMPORT R11 8 ["Gardens"]
       30 [-]: GETTABLE R10 R11 R3
       31 [-]: GETTABLEKS R9 R10 K9 ["pottedPlants"]
       32 [-]: GETTABLE R8 R9 R1
       33 [-]: GETTABLEKS R7 R8 K10 ["currentPlant"]
       34 [-]: NAMECALL R5 R5 K11 [0x59C96E77]
       35 [-]: CALL R5 2 0  
-L 3:  36 [-]: GETIMPORT R7 8 [nil]
+L 3:  36 [-]: GETIMPORT R7 8 ["Gardens"]
       37 [-]: GETTABLE R6 R7 R3
       38 [-]: GETTABLEKS R5 R6 K9 ["pottedPlants"]
       39 [-]: LOADNIL R6   
@@ -446,25 +446,25 @@ L 4:  41 [-]: RETURN R0 0
 ; Max Stack Size:  4
 
        0 [-]: LOADNIL R0   
-L 0:   1 [-]: GETIMPORT R2 1 [nil]
+L 0:   1 [-]: GETIMPORT R2 1 [0x89326C93]
        2 [-]: NAMECALL R2 R2 K2 [0xFB64E76C]
        3 [-]: CALL R2 1 1  
        4 [-]: FASTCALL1 62 R2 L1
-       5 [-]: GETIMPORT R1 4 [nil]
+       5 [-]: GETIMPORT R1 4 [0x7B998233]
        6 [-]: CALL R1 1 1  
 L 1:   7 [-]: JUMPIFNOT R1 L2
-       8 [-]: GETIMPORT R1 6 [nil]
+       8 [-]: GETIMPORT R1 6 [0xCBD666E1]
        9 [-]: LOADN R2 0   
       10 [-]: CALL R1 1 0  
       11 [-]: JUMPBACK L0  
-L 2:  12 [-]: GETIMPORT R1 1 [nil]
+L 2:  12 [-]: GETIMPORT R1 1 [0x89326C93]
       13 [-]: NAMECALL R1 R1 K2 [0xFB64E76C]
       14 [-]: CALL R1 1 1  
       15 [-]: NAMECALL R1 R1 K7 [0xBE524B27]
       16 [-]: CALL R1 1 1  
       17 [-]: FASTCALL1 62 R1 L3
       18 [-]: MOVE R3 R1   
-      19 [-]: GETIMPORT R2 4 [nil]
+      19 [-]: GETIMPORT R2 4 [0x7B998233]
       20 [-]: CALL R2 1 1  
 L 3:  21 [-]: JUMPIF R2 L4 
       22 [-]: NAMECALL R2 R1 K8 [0x80563238]
@@ -482,16 +482,16 @@ L 4:  25 [-]: RETURN R0 1
 
        0 [-]: FASTCALL1 62 R0 L0
        1 [-]: MOVE R3 R0   
-       2 [-]: GETIMPORT R2 1 [nil]
+       2 [-]: GETIMPORT R2 1 [0x7B998233]
        3 [-]: CALL R2 1 1  
 L 0:   4 [-]: JUMPIFNOT R2 L1
        5 [-]: RETURN R0 0  
-L 1:   6 [-]: GETIMPORT R2 3 [nil]
+L 1:   6 [-]: GETIMPORT R2 3 [0x89326C93]
        7 [-]: NAMECALL R2 R2 K4 [0xFB64E76C]
        8 [-]: CALL R2 1 1  
        9 [-]: FASTCALL1 62 R2 L2
       10 [-]: MOVE R4 R2   
-      11 [-]: GETIMPORT R3 1 [nil]
+      11 [-]: GETIMPORT R3 1 [0x7B998233]
       12 [-]: CALL R3 1 1  
 L 2:  13 [-]: JUMPIFNOT R3 L3
       14 [-]: RETURN R0 0  
@@ -499,11 +499,11 @@ L 3:  15 [-]: NAMECALL R3 R2 K5 [0xBB610E5B]
       16 [-]: CALL R3 1 1  
       17 [-]: FASTCALL1 62 R3 L4
       18 [-]: MOVE R5 R3   
-      19 [-]: GETIMPORT R4 1 [nil]
+      19 [-]: GETIMPORT R4 1 [0x7B998233]
       20 [-]: CALL R4 1 1  
 L 4:  21 [-]: JUMPIFNOT R4 L5
       22 [-]: RETURN R0 0  
-L 5:  23 [-]: GETIMPORT R4 3 [nil]
+L 5:  23 [-]: GETIMPORT R4 3 [0x89326C93]
       24 [-]: MOVE R6 R1   
       25 [-]: NAMECALL R4 R4 K6 [0x46A0EBF5]
       26 [-]: CALL R4 2 1  
@@ -514,16 +514,16 @@ L 5:  23 [-]: GETIMPORT R4 3 [nil]
       31 [-]: SUB R6 R7 R5 
       32 [-]: LOADK R7 K8 [0.5]
       33 [-]: SETTABLEKS R7 R6 K9 ["y"]
-      34 [-]: GETIMPORT R7 11 [nil]
+      34 [-]: GETIMPORT R7 11 [0xC2892F65]
       35 [-]: MOVE R8 R6   
       36 [-]: CALL R7 1 0  
       37 [-]: ADD R5 R5 R6 
       38 [-]: NAMECALL R8 R4 K7 [0xD1586535]
       39 [-]: CALL R8 1 1  
       40 [-]: SUB R7 R5 R8 
-      41 [-]: GETIMPORT R8 13 [nil]
+      41 [-]: GETIMPORT R8 13 [0xBE190284]
       42 [-]: MOVE R10 R2  
-      43 [-]: GETIMPORT R11 15 [nil]
+      43 [-]: GETIMPORT R11 15 [0xF7EB75C5]
       44 [-]: MOVE R12 R4  
       45 [-]: NAMECALL R13 R3 K16 [0x808B79E6]
       46 [-]: CALL R13 1 1 
@@ -543,12 +543,12 @@ L 5:  23 [-]: GETIMPORT R4 3 [nil]
 ; Is_vararg:       0
 ; Max Stack Size:  8
 
-       0 [-]: GETIMPORT R6 1 [nil]
+       0 [-]: GETIMPORT R6 1 [0x64FB1586]
        1 [-]: MOVE R7 R0   
        2 [-]: CALL R6 1 1  
        3 [-]: MOVE R3 R6   
        4 [-]: LOADK R4 K2 ["_"]
-       5 [-]: GETIMPORT R5 1 [nil]
+       5 [-]: GETIMPORT R5 1 [0x64FB1586]
        6 [-]: MOVE R6 R1   
        7 [-]: CALL R5 1 1  
        8 [-]: CONCAT R2 R3 R5
@@ -612,69 +612,69 @@ L 5:  24 [-]: LOADNIL R1
 ; Is_vararg:       0
 ; Max Stack Size:  20
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 [0x89326C93]
        1 [-]: NAMECALL R0 R0 K2 [0x78298275]
        2 [-]: CALL R0 1 1  
        3 [-]: FASTCALL1 62 R0 L0
        4 [-]: MOVE R2 R0   
-       5 [-]: GETIMPORT R1 4 [nil]
+       5 [-]: GETIMPORT R1 4 [0x7B998233]
        6 [-]: CALL R1 1 1  
 L 0:   7 [-]: JUMPIFNOT R1 L1
        8 [-]: RETURN R0 0  
 L 1:   9 [-]: LOADB R1 0   
       10 [-]: LOADNIL R2   
-      11 [-]: GETIMPORT R4 7 [nil]
+      11 [-]: GETIMPORT R4 7 ["GardenStuffToLoad"]
       12 [-]: LENGTH R3 R4 
       13 [-]: LOADN R4 0   
       14 [-]: JUMPIFNOTLT R4 R3 L2
       15 [-]: LOADB R1 1   
-      16 [-]: GETIMPORT R3 10 [nil]
-      17 [-]: GETIMPORT R4 7 [nil]
+      16 [-]: GETIMPORT R3 10 [0x42645DA3]
+      17 [-]: GETIMPORT R4 7 ["GardenStuffToLoad"]
       18 [-]: CALL R3 1 1  
       19 [-]: MOVE R2 R3   
 L 2:  20 [-]: LOADB R3 0   
 L 3:  21 [-]: JUMPIFNOT R1 L11
       22 [-]: FASTCALL1 62 R2 L4
       23 [-]: MOVE R5 R2   
-      24 [-]: GETIMPORT R4 4 [nil]
+      24 [-]: GETIMPORT R4 4 [0x7B998233]
       25 [-]: CALL R4 1 1  
 L 4:  26 [-]: JUMPIF R4 L11
       27 [-]: NAMECALL R4 R2 K11 [0xD2D3875A]
       28 [-]: CALL R4 1 1  
       29 [-]: JUMPIFNOT R4 L11
       30 [-]: LOADB R1 0   
-      31 [-]: GETIMPORT R4 13 [nil]
+      31 [-]: GETIMPORT R4 13 [0x76EA806B]
       32 [-]: LOADN R6 0   
       33 [-]: NAMECALL R4 R4 K14 [0x3F3AE64C]
       34 [-]: CALL R4 2 1  
       35 [-]: FASTCALL1 62 R4 L5
       36 [-]: MOVE R6 R4   
-      37 [-]: GETIMPORT R5 4 [nil]
+      37 [-]: GETIMPORT R5 4 [0x7B998233]
       38 [-]: CALL R5 1 1  
 L 5:  39 [-]: JUMPIF R5 L11
       40 [-]: NAMECALL R5 R4 K15 [0x80563238]
       41 [-]: CALL R5 1 1  
       42 [-]: FASTCALL1 62 R5 L6
       43 [-]: MOVE R7 R5   
-      44 [-]: GETIMPORT R6 4 [nil]
+      44 [-]: GETIMPORT R6 4 [0x7B998233]
       45 [-]: CALL R6 1 1  
 L 6:  46 [-]: JUMPIF R6 L11
-      47 [-]: GETIMPORT R6 17 [nil]
-      48 [-]: GETIMPORT R7 7 [nil]
+      47 [-]: GETIMPORT R6 17 [0xC8802016]
+      48 [-]: GETIMPORT R7 7 ["GardenStuffToLoad"]
       49 [-]: CALL R6 1 3  
       50 [-]: FORGPREP_INEXT R6 L10
-L 7:  51 [-]: GETIMPORT R12 19 [nil]
+L 7:  51 [-]: GETIMPORT R12 19 ["GardenStuffToLoadRewards"]
       52 [-]: GETTABLE R11 R12 R10
       53 [-]: FASTCALL1 62 R11 L8
       54 [-]: MOVE R13 R11 
-      55 [-]: GETIMPORT R12 4 [nil]
+      55 [-]: GETIMPORT R12 4 [0x7B998233]
       56 [-]: CALL R12 1 1 
 L 8:  57 [-]: JUMPIF R12 L10
       58 [-]: GETTABLEKS R12 R11 K20 ["Credits"]
       59 [-]: JUMPXEQKNIL R12 L10 NOT
       60 [-]: GETTABLEKS R12 R11 K21 ["ScarletSpearItem"]
       61 [-]: JUMPXEQKNIL R12 L10 NOT
-      62 [-]: GETIMPORT R14 23 [nil]
+      62 [-]: GETIMPORT R14 23 [0xB009BBC6]
       63 [-]: MOVE R15 R10 
       64 [-]: CALL R14 1 1 
       65 [-]: GETTABLEKS R16 R11 K25 ["UpgradeLevel"]
@@ -689,21 +689,21 @@ L 9:  73 [-]: NAMECALL R12 R5 K28 [0x1B746252]
       74 [-]: CALL R12 6 0 
 L10:  75 [-]: FORGLOOP R6 L7 2 [inext]
 L11:  76 [-]: LOADB R3 1   
-      77 [-]: GETIMPORT R4 30 [nil]
-      78 [-]: GETIMPORT R5 32 [nil]
+      77 [-]: GETIMPORT R4 30 [0xCFC01047]
+      78 [-]: GETIMPORT R5 32 ["GardenPickups"]
       79 [-]: CALL R4 1 3  
       80 [-]: FORGPREP_NEXT R4 L16
 L12:  81 [-]: FASTCALL1 62 R7 L13
       82 [-]: MOVE R10 R7  
-      83 [-]: GETIMPORT R9 4 [nil]
+      83 [-]: GETIMPORT R9 4 [0x7B998233]
       84 [-]: CALL R9 1 1  
 L13:  85 [-]: JUMPIF R9 L16
       86 [-]: FASTCALL1 62 R8 L14
       87 [-]: MOVE R10 R8  
-      88 [-]: GETIMPORT R9 4 [nil]
+      88 [-]: GETIMPORT R9 4 [0x7B998233]
       89 [-]: CALL R9 1 1  
 L14:  90 [-]: JUMPIF R9 L16
-      91 [-]: GETIMPORT R9 34 [nil]
+      91 [-]: GETIMPORT R9 34 [0x03EA2485]
       92 [-]: NAMECALL R10 R7 K35 [0xD1586535]
       93 [-]: CALL R10 1 1 
       94 [-]: NAMECALL R11 R0 K35 [0xD1586535]
@@ -711,11 +711,11 @@ L14:  90 [-]: JUMPIF R9 L16
       96 [-]: CALL R9 -1 1 
       97 [-]: LOADN R10 1  
       98 [-]: JUMPIFNOTLT R9 R10 L15
-      99 [-]: GETIMPORT R10 1 [nil]
+      99 [-]: GETIMPORT R10 1 [0x89326C93]
      100 [-]: GETUPVAL R12 0
      101 [-]: NAMECALL R13 R7 K35 [0xD1586535]
      102 [-]: CALL R13 1 1 
-     103 [-]: GETIMPORT R14 37 [nil]
+     103 [-]: GETIMPORT R14 37 ["ZERO_ROTATION"]
      104 [-]: LOADNIL R15  
      105 [-]: LOADNIL R16  
      106 [-]: GETUPVAL R18 1
@@ -724,7 +724,7 @@ L14:  90 [-]: JUMPIF R9 L16
      109 [-]: NAMECALL R10 R10 K39 [0x05909209]
      110 [-]: CALL R10 -1 1
      111 [-]: GETTABLEKS R11 R8 K40 ["RewardInfo"]
-     112 [-]: GETIMPORT R12 23 [nil]
+     112 [-]: GETIMPORT R12 23 [0xB009BBC6]
      113 [-]: GETTABLEKS R13 R11 K41 ["TypeName"]
      114 [-]: CALL R12 1 1 
      115 [-]: NAMECALL R13 R0 K42 [0xDE321E6F]
@@ -735,23 +735,23 @@ L14:  90 [-]: JUMPIF R9 L16
      120 [-]: MOVE R17 R12 
      121 [-]: NAMECALL R13 R13 K44 [0x7BC127AA]
      122 [-]: CALL R13 4 0 
-     123 [-]: GETIMPORT R13 32 [nil]
+     123 [-]: GETIMPORT R13 32 ["GardenPickups"]
      124 [-]: LOADNIL R14  
      125 [-]: SETTABLE R14 R13 R7
      126 [-]: NAMECALL R13 R7 K45 [0xA2880940]
      127 [-]: CALL R13 1 0 
-     128 [-]: GETIMPORT R13 1 [nil]
+     128 [-]: GETIMPORT R13 1 [0x89326C93]
      129 [-]: MOVE R15 R7  
      130 [-]: NAMECALL R13 R13 K46 [0x59C96E77]
      131 [-]: CALL R13 2 0 
      132 [-]: LOADNIL R7   
      133 [-]: JUMP L16
     
-L15: 134 [-]: GETIMPORT R10 48 [nil]
+L15: 134 [-]: GETIMPORT R10 48 [0x9BAFFFE3]
      135 [-]: LOADN R11 2  
      136 [-]: LOADN R12 10 
      137 [-]: LOADN R14 1  
-     138 [-]: GETIMPORT R15 50 [nil]
+     138 [-]: GETIMPORT R15 50 [0x42DCC9F5]
      139 [-]: DIVK R16 R9 K51 [10]
      140 [-]: LOADN R17 0  
      141 [-]: LOADN R18 1  
@@ -763,20 +763,20 @@ L15: 134 [-]: GETIMPORT R10 48 [nil]
      147 [-]: NAMECALL R12 R0 K35 [0xD1586535]
      148 [-]: CALL R12 1 1 
      149 [-]: SUB R13 R12 R11
-     150 [-]: GETIMPORT R14 53 [nil]
+     150 [-]: GETIMPORT R14 53 [0xC2892F65]
      151 [-]: MOVE R15 R13 
      152 [-]: CALL R14 1 0 
      153 [-]: MULK R13 R13 K51 [10]
-     154 [-]: GETIMPORT R14 55 [nil]
+     154 [-]: GETIMPORT R14 55 [0x5DB3CE80]
      155 [-]: GETTABLEKS R15 R8 K56 ["Velocity"]
      156 [-]: MOVE R16 R13 
-     157 [-]: GETIMPORT R18 58 [nil]
+     157 [-]: GETIMPORT R18 58 [0x67652851]
      158 [-]: CALL R18 0 1 
      159 [-]: MUL R17 R18 R10
      160 [-]: CALL R14 3 1 
      161 [-]: SETTABLEKS R14 R8 K56 ["Velocity"]
      162 [-]: GETTABLEKS R18 R8 K56 ["Velocity"]
-     163 [-]: GETIMPORT R19 58 [nil]
+     163 [-]: GETIMPORT R19 58 [0x67652851]
      164 [-]: CALL R19 0 1 
      165 [-]: MUL R17 R18 R19
      166 [-]: ADD R16 R11 R17
@@ -786,19 +786,19 @@ L15: 134 [-]: GETIMPORT R10 48 [nil]
 L16: 170 [-]: FORGLOOP R4 L12 2
      171 [-]: JUMPIFNOT R3 L20
      172 [-]: JUMPIF R1 L20
-     173 [-]: GETIMPORT R4 1 [nil]
-     174 [-]: GETIMPORT R6 61 [nil]
+     173 [-]: GETIMPORT R4 1 [0x89326C93]
+     174 [-]: GETIMPORT R6 61 [0x0469F296]
      175 [-]: LOADK R7 K62 ["GardenScreen"]
      176 [-]: CALL R6 1 -1 
      177 [-]: NAMECALL R4 R4 K63 [0xC7FCADA9]
      178 [-]: CALL R4 -1 1 
-     179 [-]: GETIMPORT R5 17 [nil]
+     179 [-]: GETIMPORT R5 17 [0xC8802016]
      180 [-]: MOVE R6 R4   
      181 [-]: CALL R5 1 3  
      182 [-]: FORGPREP_INEXT R5 L19
 L17: 183 [-]: FASTCALL1 62 R9 L18
      184 [-]: MOVE R11 R9  
-     185 [-]: GETIMPORT R10 4 [nil]
+     185 [-]: GETIMPORT R10 4 [0x7B998233]
      186 [-]: CALL R10 1 1 
 L18: 187 [-]: JUMPIF R10 L19
      188 [-]: LOADB R12 0  
@@ -807,11 +807,11 @@ L18: 187 [-]: JUMPIF R10 L19
 L19: 191 [-]: FORGLOOP R5 L17 2 [inext]
      192 [-]: JUMP L21
     
-L20: 193 [-]: GETIMPORT R4 66 [nil]
+L20: 193 [-]: GETIMPORT R4 66 [0xCBD666E1]
      194 [-]: LOADN R5 0   
      195 [-]: CALL R4 1 0  
      196 [-]: JUMPBACK L3  
-L21: 197 [-]: GETIMPORT R4 67 [nil]
+L21: 197 [-]: GETIMPORT R4 67 ["_T"]
      198 [-]: LOADB R5 0   
      199 [-]: SETTABLEKS R5 R4 K68 ["WaitingForPresentation"]
      200 [-]: RETURN R0 0  
@@ -830,41 +830,41 @@ L21: 197 [-]: GETIMPORT R4 67 [nil]
        3 [-]: MOVE R3 R1   
        4 [-]: CALL R2 1 0  
        5 [-]: RETURN R0 0  
-L 0:   6 [-]: GETIMPORT R2 2 [nil]
+L 0:   6 [-]: GETIMPORT R2 2 [0x89326C93]
        7 [-]: NAMECALL R2 R2 K3 [0x78298275]
        8 [-]: CALL R2 1 1  
        9 [-]: FASTCALL1 62 R2 L1
       10 [-]: MOVE R4 R2   
-      11 [-]: GETIMPORT R3 5 [nil]
+      11 [-]: GETIMPORT R3 5 [0x7B998233]
       12 [-]: CALL R3 1 1  
 L 1:  13 [-]: JUMPIFNOT R3 L2
       14 [-]: RETURN R0 0  
-L 2:  15 [-]: GETIMPORT R3 7 [nil]
+L 2:  15 [-]: GETIMPORT R3 7 ["_T"]
       16 [-]: NEWTABLE R4 0 0
       17 [-]: SETTABLEKS R4 R3 K8 ["GardenStuffToLoad"]
-      18 [-]: GETIMPORT R3 7 [nil]
+      18 [-]: GETIMPORT R3 7 ["_T"]
       19 [-]: NEWTABLE R4 0 0
       20 [-]: SETTABLEKS R4 R3 K9 ["GardenStuffToLoadRewards"]
-      21 [-]: GETIMPORT R3 7 [nil]
+      21 [-]: GETIMPORT R3 7 ["_T"]
       22 [-]: NEWTABLE R4 0 0
       23 [-]: SETTABLEKS R4 R3 K10 ["GardenPickups"]
-      24 [-]: GETIMPORT R3 13 [nil]
+      24 [-]: GETIMPORT R3 13 [0x7AB914D8]
       25 [-]: MOVE R4 R1   
       26 [-]: CALL R3 1 1  
-      27 [-]: GETIMPORT R4 15 [nil]
-      28 [-]: GETIMPORT R5 17 [nil]
+      27 [-]: GETIMPORT R4 15 [0xCFC01047]
+      28 [-]: GETIMPORT R5 17 ["Gardens"]
       29 [-]: CALL R4 1 3  
       30 [-]: FORGPREP_NEXT R4 L23
-L 3:  31 [-]: GETIMPORT R9 19 [nil]
+L 3:  31 [-]: GETIMPORT R9 19 [0x64FB1586]
       32 [-]: GETTABLEKS R10 R8 K20 ["gardenTagName"]
       33 [-]: CALL R9 1 1  
       34 [-]: GETTABLEKS R12 R3 K21 ["Rewards"]
       35 [-]: GETTABLE R11 R12 R9
       36 [-]: FASTCALL1 62 R11 L4
-      37 [-]: GETIMPORT R10 5 [nil]
+      37 [-]: GETIMPORT R10 5 [0x7B998233]
       38 [-]: CALL R10 1 1 
 L 4:  39 [-]: JUMPIF R10 L23
-      40 [-]: GETIMPORT R10 15 [nil]
+      40 [-]: GETIMPORT R10 15 [0xCFC01047]
       41 [-]: GETTABLEKS R11 R8 K22 ["pottedPlants"]
       42 [-]: CALL R10 1 3 
       43 [-]: FORGPREP_NEXT R10 L22
@@ -874,10 +874,10 @@ L 5:  44 [-]: GETTABLEKS R17 R3 K21 ["Rewards"]
       47 [-]: GETTABLE R15 R16 R17
       48 [-]: FASTCALL1 62 R15 L6
       49 [-]: MOVE R17 R15 
-      50 [-]: GETIMPORT R16 5 [nil]
+      50 [-]: GETIMPORT R16 5 [0x7B998233]
       51 [-]: CALL R16 1 1 
 L 6:  52 [-]: JUMPIF R16 L22
-      53 [-]: GETIMPORT R16 15 [nil]
+      53 [-]: GETIMPORT R16 15 [0xCFC01047]
       54 [-]: MOVE R17 R15 
       55 [-]: CALL R16 1 3 
       56 [-]: FORGPREP_NEXT R16 L21
@@ -885,13 +885,13 @@ L 7:  57 [-]: LOADN R23 1
       58 [-]: GETTABLEKS R21 R20 K24 ["ItemCount"]
       59 [-]: LOADN R22 1  
       60 [-]: FORNPREP R21 L16
-L 8:  61 [-]: GETIMPORT R24 26 [nil]
-      62 [-]: GETIMPORT R25 28 [nil]
+L 8:  61 [-]: GETIMPORT R24 26 [0xA421AF95]
+      62 [-]: GETIMPORT R25 28 [0xC163F229]
       63 [-]: LOADK R26 K29 [-0.5]
       64 [-]: LOADK R27 K30 [0.5]
       65 [-]: CALL R25 2 1 
       66 [-]: LOADN R26 0  
-      67 [-]: GETIMPORT R27 28 [nil]
+      67 [-]: GETIMPORT R27 28 [0xC163F229]
       68 [-]: LOADK R28 K29 [-0.5]
       69 [-]: LOADK R29 K30 [0.5]
       70 [-]: CALL R27 2 -1
@@ -928,13 +928,13 @@ L13:  93 [-]: JUMPXEQKS R26 K42 L14 NOT ["/Lotus/Types/Gameplay/Duviri/Resource/
       96 [-]: JUMP L15
     
 L14:  97 [-]: LOADNIL R25  
-L15:  98 [-]: GETIMPORT R26 2 [nil]
+L15:  98 [-]: GETIMPORT R26 2 [0x89326C93]
       99 [-]: MOVE R28 R25 
      100 [-]: GETTABLEKS R30 R14 K44 ["currentPlant"]
      101 [-]: NAMECALL R30 R30 K45 [0xD1586535]
      102 [-]: CALL R30 1 1 
      103 [-]: ADD R29 R30 R24
-     104 [-]: GETIMPORT R30 47 [nil]
+     104 [-]: GETIMPORT R30 47 ["ZERO_ROTATION"]
      105 [-]: LOADNIL R31  
      106 [-]: LOADNIL R32  
      107 [-]: GETUPVAL R34 2
@@ -947,70 +947,70 @@ L15:  98 [-]: GETIMPORT R26 2 [nil]
      114 [-]: NAMECALL R29 R26 K45 [0xD1586535]
      115 [-]: CALL R29 1 1 
      116 [-]: SUB R27 R28 R29
-     117 [-]: GETIMPORT R28 28 [nil]
+     117 [-]: GETIMPORT R28 28 [0xC163F229]
      118 [-]: LOADN R29 5  
      119 [-]: LOADN R30 10 
      120 [-]: CALL R28 2 1 
      121 [-]: SETTABLEKS R28 R27 K50 ["y"]
-     122 [-]: GETIMPORT R28 52 [nil]
+     122 [-]: GETIMPORT R28 52 [0xC2892F65]
      123 [-]: MOVE R29 R27 
      124 [-]: CALL R28 1 0 
-     125 [-]: GETIMPORT R28 28 [nil]
+     125 [-]: GETIMPORT R28 28 [0xC163F229]
      126 [-]: LOADN R29 5  
      127 [-]: LOADN R30 10 
      128 [-]: CALL R28 2 1 
      129 [-]: MUL R27 R27 R28
-     130 [-]: GETIMPORT R28 53 [nil]
+     130 [-]: GETIMPORT R28 53 ["GardenPickups"]
      131 [-]: DUPTABLE R29 56
      132 [-]: SETTABLEKS R20 R29 K54 ["RewardInfo"]
      133 [-]: SETTABLEKS R27 R29 K55 ["Velocity"]
      134 [-]: SETTABLE R29 R28 R26
      135 [-]: FORNLOOP R21 L8
-L16: 136 [-]: GETIMPORT R23 57 [nil]
+L16: 136 [-]: GETIMPORT R23 57 ["GardenStuffToLoadRewards"]
      137 [-]: GETTABLEKS R24 R20 K58 ["StoreItem"]
      138 [-]: GETTABLE R22 R23 R24
      139 [-]: FASTCALL1 62 R22 L17
-     140 [-]: GETIMPORT R21 5 [nil]
+     140 [-]: GETIMPORT R21 5 [0x7B998233]
      141 [-]: CALL R21 1 1 
 L17: 142 [-]: JUMPIFNOT R21 L19
-     143 [-]: GETIMPORT R22 59 [nil]
+     143 [-]: GETIMPORT R22 59 ["GardenStuffToLoad"]
      144 [-]: GETTABLEKS R23 R20 K58 ["StoreItem"]
      145 [-]: FASTCALL2 52 R22 R23 L18
-     146 [-]: GETIMPORT R21 62 [nil]
+     146 [-]: GETIMPORT R21 62 [0x23D5322F]
      147 [-]: CALL R21 2 0 
-L18: 148 [-]: GETIMPORT R21 57 [nil]
+L18: 148 [-]: GETIMPORT R21 57 ["GardenStuffToLoadRewards"]
      149 [-]: GETTABLEKS R22 R20 K58 ["StoreItem"]
      150 [-]: SETTABLE R20 R21 R22
      151 [-]: JUMP L20
     
-L19: 152 [-]: GETIMPORT R22 57 [nil]
+L19: 152 [-]: GETIMPORT R22 57 ["GardenStuffToLoadRewards"]
      153 [-]: GETTABLEKS R23 R20 K58 ["StoreItem"]
      154 [-]: GETTABLE R21 R22 R23
      155 [-]: GETTABLEKS R22 R21 K24 ["ItemCount"]
      156 [-]: GETTABLEKS R23 R20 K24 ["ItemCount"]
      157 [-]: ADD R22 R22 R23
      158 [-]: SETTABLEKS R22 R21 K24 ["ItemCount"]
-L20: 159 [-]: GETIMPORT R21 7 [nil]
+L20: 159 [-]: GETIMPORT R21 7 ["_T"]
      160 [-]: LOADB R22 1  
      161 [-]: SETTABLEKS R22 R21 K63 ["WaitingForPresentation"]
 L21: 162 [-]: FORGLOOP R16 L7 2
      163 [-]: GETTABLEKS R16 R14 K44 ["currentPlant"]
      164 [-]: NAMECALL R16 R16 K64 [0xA2880940]
      165 [-]: CALL R16 1 0 
-     166 [-]: GETIMPORT R16 2 [nil]
+     166 [-]: GETIMPORT R16 2 [0x89326C93]
      167 [-]: GETTABLEKS R18 R14 K44 ["currentPlant"]
      168 [-]: NAMECALL R16 R16 K65 [0x59C96E77]
      169 [-]: CALL R16 2 0 
      170 [-]: LOADNIL R16  
      171 [-]: SETTABLEKS R16 R14 K44 ["currentPlant"]
-     172 [-]: GETIMPORT R18 17 [nil]
+     172 [-]: GETIMPORT R18 17 ["Gardens"]
      173 [-]: GETTABLE R17 R18 R7
      174 [-]: GETTABLEKS R16 R17 K22 ["pottedPlants"]
      175 [-]: LOADNIL R17  
      176 [-]: SETTABLE R17 R16 R13
 L22: 177 [-]: FORGLOOP R10 L5 2
 L23: 178 [-]: FORGLOOP R4 L3 2
-     179 [-]: GETIMPORT R4 7 [nil]
+     179 [-]: GETIMPORT R4 7 ["_T"]
      180 [-]: LOADB R5 0   
      181 [-]: SETTABLEKS R5 R4 K66 ["WaitingForRewards"]
      182 [-]: RETURN R0 0  
@@ -1023,50 +1023,50 @@ L23: 178 [-]: FORGLOOP R4 L3 2
 ; Is_vararg:       0
 ; Max Stack Size:  6
 
-       0 [-]: GETIMPORT R2 2 [nil]
+       0 [-]: GETIMPORT R2 2 ["GardenHarvested"]
        1 [-]: JUMPIF R2 L6 
-       2 [-]: GETIMPORT R2 4 [nil]
+       2 [-]: GETIMPORT R2 4 [0x89326C93]
        3 [-]: NAMECALL R2 R2 K5 [0x78298275]
        4 [-]: CALL R2 1 1  
        5 [-]: FASTCALL1 62 R2 L0
        6 [-]: MOVE R4 R2   
-       7 [-]: GETIMPORT R3 7 [nil]
+       7 [-]: GETIMPORT R3 7 [0x7B998233]
        8 [-]: CALL R3 1 1  
 L 0:   9 [-]: JUMPIF R3 L1 
       10 [-]: JUMPIFEQ R2 R1 L2
 L 1:  11 [-]: RETURN R0 0  
-L 2:  12 [-]: GETIMPORT R3 4 [nil]
+L 2:  12 [-]: GETIMPORT R3 4 [0x89326C93]
       13 [-]: GETUPVAL R5 0
       14 [-]: NAMECALL R3 R3 K8 [0xC7FCADA9]
       15 [-]: CALL R3 2 1  
       16 [-]: FASTCALL1 62 R3 L3
       17 [-]: MOVE R5 R3   
-      18 [-]: GETIMPORT R4 7 [nil]
+      18 [-]: GETIMPORT R4 7 [0x7B998233]
       19 [-]: CALL R4 1 1  
 L 3:  20 [-]: JUMPIF R4 L6 
       21 [-]: LENGTH R4 R3 
       22 [-]: LOADN R5 0   
       23 [-]: JUMPIFNOTLT R5 R4 L6
-      24 [-]: GETIMPORT R4 9 [nil]
+      24 [-]: GETIMPORT R4 9 ["_T"]
       25 [-]: LOADB R5 1   
       26 [-]: SETTABLEKS R5 R4 K1 ["GardenHarvested"]
-      27 [-]: GETIMPORT R4 9 [nil]
+      27 [-]: GETIMPORT R4 9 ["_T"]
       28 [-]: LOADB R5 1   
       29 [-]: SETTABLEKS R5 R4 K10 ["WaitingForRewards"]
-      30 [-]: GETIMPORT R4 13 [nil]
+      30 [-]: GETIMPORT R4 13 [0x33546F80]
       31 [-]: LOADK R5 K14 ["OnHarvestAllComplete"]
       32 [-]: CALL R4 1 1  
       33 [-]: SETUPVAL R4 1
       34 [-]: GETUPVAL R4 1
       35 [-]: NAMECALL R4 R4 K15 [0xE4162EED]
       36 [-]: CALL R4 1 0  
-L 4:  37 [-]: GETIMPORT R4 16 [nil]
+L 4:  37 [-]: GETIMPORT R4 16 ["WaitingForRewards"]
       38 [-]: JUMPIFNOT R4 L5
-      39 [-]: GETIMPORT R4 18 [nil]
+      39 [-]: GETIMPORT R4 18 [0xCBD666E1]
       40 [-]: LOADN R5 0   
       41 [-]: CALL R4 1 0  
       42 [-]: JUMPBACK L4  
-L 5:  43 [-]: GETIMPORT R4 20 [nil]
+L 5:  43 [-]: GETIMPORT R4 20 ["WaitingForPresentation"]
       44 [-]: JUMPIFNOT R4 L6
       45 [-]: GETUPVAL R4 2
       46 [-]: CALL R4 0 0  
@@ -1080,39 +1080,39 @@ L 6:  47 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  6
 
-       0 [-]: GETIMPORT R1 1 [nil]
+       0 [-]: GETIMPORT R1 1 [0x89326C93]
        1 [-]: MOVE R3 R0   
        2 [-]: NAMECALL R1 R1 K2 [0x46A0EBF5]
        3 [-]: CALL R1 2 1  
        4 [-]: FASTCALL1 62 R1 L0
        5 [-]: MOVE R3 R1   
-       6 [-]: GETIMPORT R2 4 [nil]
+       6 [-]: GETIMPORT R2 4 [0x7B998233]
        7 [-]: CALL R2 1 1  
 L 0:   8 [-]: JUMPIF R2 L8 
        9 [-]: NAMECALL R2 R1 K5 [0xED4E0128]
       10 [-]: CALL R2 1 1  
-L 1:  11 [-]: GETIMPORT R3 8 [nil]
+L 1:  11 [-]: GETIMPORT R3 8 ["GardenHarvested"]
       12 [-]: JUMPIF R3 L8 
-      13 [-]: GETIMPORT R4 10 [nil]
+      13 [-]: GETIMPORT R4 10 ["Gardens"]
       14 [-]: FASTCALL1 62 R4 L2
-      15 [-]: GETIMPORT R3 4 [nil]
+      15 [-]: GETIMPORT R3 4 [0x7B998233]
       16 [-]: CALL R3 1 1  
 L 2:  17 [-]: JUMPIF R3 L4 
-      18 [-]: GETIMPORT R5 10 [nil]
+      18 [-]: GETIMPORT R5 10 ["Gardens"]
       19 [-]: GETTABLE R4 R5 R2
       20 [-]: FASTCALL1 62 R4 L3
-      21 [-]: GETIMPORT R3 4 [nil]
+      21 [-]: GETIMPORT R3 4 [0x7B998233]
       22 [-]: CALL R3 1 1  
 L 3:  23 [-]: JUMPIFNOT R3 L7
-L 4:  24 [-]: GETIMPORT R4 10 [nil]
+L 4:  24 [-]: GETIMPORT R4 10 ["Gardens"]
       25 [-]: FASTCALL1 62 R4 L5
-      26 [-]: GETIMPORT R3 4 [nil]
+      26 [-]: GETIMPORT R3 4 [0x7B998233]
       27 [-]: CALL R3 1 1  
 L 5:  28 [-]: JUMPIFNOT R3 L6
-      29 [-]: GETIMPORT R3 11 [nil]
+      29 [-]: GETIMPORT R3 11 ["_T"]
       30 [-]: NEWTABLE R4 0 0
       31 [-]: SETTABLEKS R4 R3 K9 ["Gardens"]
-L 6:  32 [-]: GETIMPORT R3 10 [nil]
+L 6:  32 [-]: GETIMPORT R3 10 ["Gardens"]
       33 [-]: DUPTABLE R4 14
       34 [-]: SETTABLEKS R0 R4 K12 ["gardenTagName"]
       35 [-]: GETUPVAL R5 0
@@ -1121,7 +1121,7 @@ L 6:  32 [-]: GETIMPORT R3 10 [nil]
       38 [-]: GETUPVAL R3 1
       39 [-]: MOVE R4 R0   
       40 [-]: CALL R3 1 0  
-L 7:  41 [-]: GETIMPORT R3 16 [nil]
+L 7:  41 [-]: GETIMPORT R3 16 [0xCBD666E1]
       42 [-]: LOADN R4 0   
       43 [-]: CALL R3 1 0  
       44 [-]: JUMPBACK L1  
@@ -1145,7 +1145,7 @@ L 8:  45 [-]: RETURN R0 0
        7 [-]: CALL R2 0 1  
        8 [-]: FASTCALL1 62 R2 L0
        9 [-]: MOVE R4 R2   
-      10 [-]: GETIMPORT R3 2 [nil]
+      10 [-]: GETIMPORT R3 2 [0x7B998233]
       11 [-]: CALL R3 1 1  
 L 0:  12 [-]: JUMPIF R3 L2 
       13 [-]: LOADB R5 1   
@@ -1178,26 +1178,26 @@ L 0:   5 [-]: GETUPVAL R0 1
        6 [-]: CALL R0 0 1  
        7 [-]: FASTCALL1 62 R0 L1
        8 [-]: MOVE R2 R0   
-       9 [-]: GETIMPORT R1 2 [nil]
+       9 [-]: GETIMPORT R1 2 [0x7B998233]
       10 [-]: CALL R1 1 1  
 L 1:  11 [-]: JUMPIFNOT R1 L2
       12 [-]: RETURN R0 0  
-L 2:  13 [-]: GETIMPORT R2 5 [nil]
+L 2:  13 [-]: GETIMPORT R2 5 ["GardenHarvested"]
       14 [-]: FASTCALL1 62 R2 L3
-      15 [-]: GETIMPORT R1 2 [nil]
+      15 [-]: GETIMPORT R1 2 [0x7B998233]
       16 [-]: CALL R1 1 1  
 L 3:  17 [-]: JUMPIFNOT R1 L4
-      18 [-]: GETIMPORT R1 6 [nil]
+      18 [-]: GETIMPORT R1 6 ["_T"]
       19 [-]: LOADB R2 0   
       20 [-]: SETTABLEKS R2 R1 K4 ["GardenHarvested"]
-L 4:  21 [-]: GETIMPORT R2 8 [nil]
+L 4:  21 [-]: GETIMPORT R2 8 [0x89326C93]
       22 [-]: NAMECALL R2 R2 K9 [0xFB64E76C]
       23 [-]: CALL R2 1 1  
       24 [-]: FASTCALL1 62 R2 L5
-      25 [-]: GETIMPORT R1 2 [nil]
+      25 [-]: GETIMPORT R1 2 [0x7B998233]
       26 [-]: CALL R1 1 1  
 L 5:  27 [-]: JUMPIFNOT R1 L6
-      28 [-]: GETIMPORT R1 11 [nil]
+      28 [-]: GETIMPORT R1 11 [0xCBD666E1]
       29 [-]: LOADN R2 0   
       30 [-]: CALL R1 1 0  
       31 [-]: JUMPBACK L4  
@@ -1205,11 +1205,11 @@ L 6:  32 [-]: GETUPVAL R1 2
       33 [-]: CALL R1 0 1  
       34 [-]: FASTCALL1 62 R1 L7
       35 [-]: MOVE R3 R1   
-      36 [-]: GETIMPORT R2 2 [nil]
+      36 [-]: GETIMPORT R2 2 [0x7B998233]
       37 [-]: CALL R2 1 1  
 L 7:  38 [-]: JUMPIF R2 L10
       39 [-]: LOADB R4 1   
-      40 [-]: GETIMPORT R5 13 [nil]
+      40 [-]: GETIMPORT R5 13 [0xE270B70A]
       41 [-]: NAMECALL R2 R1 K14 [0x52C5860E]
       42 [-]: CALL R2 3 1  
       43 [-]: LOADN R5 1   
@@ -1217,14 +1217,14 @@ L 7:  38 [-]: JUMPIF R2 L10
       45 [-]: LOADN R4 1   
       46 [-]: FORNPREP R3 L9
 L 8:  47 [-]: GETUPVAL R6 3
-      48 [-]: GETIMPORT R7 13 [nil]
+      48 [-]: GETIMPORT R7 13 [0xE270B70A]
       49 [-]: GETTABLE R8 R2 R5
       50 [-]: CALL R6 2 0  
       51 [-]: FORNLOOP R3 L8
 L 9:  52 [-]: GETUPVAL R3 4
       53 [-]: CALL R3 0 0  
 L10:  54 [-]: GETGLOBAL R2 K15 ["_MonitorGarden"]
-      55 [-]: GETIMPORT R3 13 [nil]
+      55 [-]: GETIMPORT R3 13 [0xE270B70A]
       56 [-]: CALL R2 1 0  
       57 [-]: RETURN R0 0  
 

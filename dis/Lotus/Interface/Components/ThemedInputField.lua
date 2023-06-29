@@ -5,9 +5,9 @@
 ; Is_vararg:       1
 ; Max Stack Size:  3
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0xAEABECDA]
        2 [-]: GETVARARGS R1 1
-       3 [-]: GETIMPORT R2 4 [nil]
+       3 [-]: GETIMPORT R2 4 ["seeall"]
        4 [-]: CALL R0 2 0  
        5 [-]: DUPCLOSURE R0 K5 []
        6 [-]: SETGLOBAL R0 K6 ["Create"]
@@ -21,19 +21,19 @@
 ; Is_vararg:       0
 ; Max Stack Size:  23
 
-       0 [-]: GETIMPORT R9 1 [nil]
+       0 [-]: GETIMPORT R9 1 [0x2D0FAD09]
        1 [-]: LOADK R10 K2 ["EE.Interface.Utilities"]
        2 [-]: CALL R9 1 1  
-       3 [-]: GETIMPORT R10 1 [nil]
+       3 [-]: GETIMPORT R10 1 [0x2D0FAD09]
        4 [-]: LOADK R11 K3 ["Lotus.Interface.UIUtilities"]
        5 [-]: CALL R10 1 1 
-       6 [-]: GETIMPORT R11 1 [nil]
+       6 [-]: GETIMPORT R11 1 [0x2D0FAD09]
        7 [-]: LOADK R12 K4 ["Lotus.Interface.LotusUtilities"]
        8 [-]: CALL R11 1 1 
-       9 [-]: GETIMPORT R12 1 [nil]
+       9 [-]: GETIMPORT R12 1 [0x2D0FAD09]
       10 [-]: LOADK R13 K5 ["Lotus.Interface.UIStyleUtilities"]
       11 [-]: CALL R12 1 1 
-      12 [-]: GETIMPORT R13 1 [nil]
+      12 [-]: GETIMPORT R13 1 [0x2D0FAD09]
       13 [-]: LOADK R14 K6 ["Lotus.Interface.Components.ThemedButton"]
       14 [-]: CALL R13 1 1 
       15 [-]: GETTABLEKS R14 R13 K7 [0xAE6791BA]
@@ -52,7 +52,7 @@
       28 [-]: SETTABLEKS R15 R14 K9 ["mLabelClipName"]
       29 [-]: LOADB R15 0  
       30 [-]: SETTABLEKS R15 R14 K10 ["mAltButtonVisible"]
-      31 [-]: GETIMPORT R16 12 [nil]
+      31 [-]: GETIMPORT R16 12 [0x0032441C]
       32 [-]: GETTABLEKS R15 R16 K13 ["UITexture_ClearSearch"]
       33 [-]: SETTABLEKS R15 R14 K14 ["mAltButtonIcon"]
       34 [-]: LOADB R15 0  
@@ -97,7 +97,7 @@
       73 [-]: LOADN R15 4  
       74 [-]: SETTABLEKS R15 R14 K37 ["mLabelXOffset"]
       75 [-]: GETTABLEKS R15 R9 K38 [0x06D055F9]
-      76 [-]: GETIMPORT R16 41 [nil]
+      76 [-]: GETIMPORT R16 41 [0xE6B41ADB]
       77 [-]: CALL R16 0 1 
       78 [-]: LOADB R17 1  
       79 [-]: MOVE R18 R8  

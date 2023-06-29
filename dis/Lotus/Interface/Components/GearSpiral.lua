@@ -5,9 +5,9 @@
 ; Is_vararg:       1
 ; Max Stack Size:  3
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0xAEABECDA]
        2 [-]: GETVARARGS R1 1
-       3 [-]: GETIMPORT R2 4 [nil]
+       3 [-]: GETIMPORT R2 4 ["seeall"]
        4 [-]: CALL R0 2 0  
        5 [-]: DUPCLOSURE R0 K5 []
        6 [-]: SETGLOBAL R0 K6 ["CreateGearList"]
@@ -21,16 +21,16 @@
 ; Is_vararg:       0
 ; Max Stack Size:  14
 
-       0 [-]: GETIMPORT R3 1 [nil]
+       0 [-]: GETIMPORT R3 1 [0x2D0FAD09]
        1 [-]: LOADK R4 K2 ["EE.Interface.Utilities"]
        2 [-]: CALL R3 1 1  
-       3 [-]: GETIMPORT R4 1 [nil]
+       3 [-]: GETIMPORT R4 1 [0x2D0FAD09]
        4 [-]: LOADK R5 K3 ["Lotus.Interface.LotusUtilities"]
        5 [-]: CALL R4 1 1  
-       6 [-]: GETIMPORT R5 1 [nil]
+       6 [-]: GETIMPORT R5 1 [0x2D0FAD09]
        7 [-]: LOADK R6 K4 ["Lotus.Interface.UIStyleUtilities"]
        8 [-]: CALL R5 1 1  
-       9 [-]: GETIMPORT R6 1 [nil]
+       9 [-]: GETIMPORT R6 1 [0x2D0FAD09]
       10 [-]: LOADK R7 K5 ["Lotus.Interface.StoreItemUtilities"]
       11 [-]: CALL R6 1 1  
       12 [-]: MOVE R8 R1   
@@ -115,83 +115,83 @@
       91 [-]: NAMECALL R9 R0 K39 [0x91A24E4B]
       92 [-]: CALL R9 3 1  
       93 [-]: SETTABLEKS R9 R8 K43 ["mUnfocusedScale"]
-      94 [-]: GETIMPORT R9 45 [nil]
+      94 [-]: GETIMPORT R9 45 [0x7ED0A956]
       95 [-]: LOADK R10 K46 ["/Lotus/Types/Restoratives/Consumable/LibraryScanner"]
       96 [-]: CALL R9 1 1  
       97 [-]: SETTABLEKS R9 R8 K47 ["CollectorScannerType"]
-      98 [-]: GETIMPORT R9 45 [nil]
+      98 [-]: GETIMPORT R9 45 [0x7ED0A956]
       99 [-]: LOADK R10 K48 ["/Lotus/Types/Restoratives/Consumable/InfestedSyringe"]
      100 [-]: CALL R9 1 1  
      101 [-]: SETTABLEKS R9 R8 K49 ["SyringeType"]
-     102 [-]: GETIMPORT R9 45 [nil]
+     102 [-]: GETIMPORT R9 45 [0x7ED0A956]
      103 [-]: LOADK R10 K50 ["/Lotus/Types/PickUps/RaidInfestedAntidoteItem"]
      104 [-]: CALL R9 1 1  
      105 [-]: SETTABLEKS R9 R8 K51 ["AntidoteType"]
-     106 [-]: GETIMPORT R9 45 [nil]
+     106 [-]: GETIMPORT R9 45 [0x7ED0A956]
      107 [-]: LOADK R10 K52 ["/Lotus/Types/Items/MiscItems/LibraryScannerRechargeUpgrade"]
      108 [-]: CALL R9 1 1  
      109 [-]: SETTABLEKS R9 R8 K53 ["CollectorScannerRechargeUpgradeType"]
-     110 [-]: GETIMPORT R9 45 [nil]
+     110 [-]: GETIMPORT R9 45 [0x7ED0A956]
      111 [-]: LOADK R10 K54 ["/Lotus/Types/Restoratives/Consumable/GlyphConsumable"]
      112 [-]: CALL R9 1 1  
      113 [-]: SETTABLEKS R9 R8 K55 ["GlyphConsumableType"]
-     114 [-]: GETIMPORT R9 45 [nil]
+     114 [-]: GETIMPORT R9 45 [0x7ED0A956]
      115 [-]: LOADK R10 K56 ["/Lotus/Types/Restoratives/Consumable/GlyphConsumableNoCharges"]
      116 [-]: CALL R9 1 1  
      117 [-]: SETTABLEKS R9 R8 K57 ["GlyphNoConsumeType"]
-     118 [-]: GETIMPORT R9 45 [nil]
+     118 [-]: GETIMPORT R9 45 [0x7ED0A956]
      119 [-]: LOADK R10 K58 ["/Lotus/Types/Restoratives/Consumable/MiningLaser"]
      120 [-]: CALL R9 1 1  
      121 [-]: SETTABLEKS R9 R8 K59 ["MiningLaserType"]
-     122 [-]: GETIMPORT R9 45 [nil]
+     122 [-]: GETIMPORT R9 45 [0x7ED0A956]
      123 [-]: LOADK R10 K60 ["/Lotus/Types/Restoratives/Consumable/RepairTool"]
      124 [-]: CALL R9 1 1  
      125 [-]: SETTABLEKS R9 R8 K61 ["MultiToolType"]
-     126 [-]: GETIMPORT R9 45 [nil]
+     126 [-]: GETIMPORT R9 45 [0x7ED0A956]
      127 [-]: LOADK R10 K62 ["/Lotus/Types/Restoratives/Consumable/BaseSpearFishingSpear"]
      128 [-]: CALL R9 1 1  
      129 [-]: SETTABLEKS R9 R8 K63 ["SpearFishingSpearType"]
-     130 [-]: GETIMPORT R9 45 [nil]
+     130 [-]: GETIMPORT R9 45 [0x7ED0A956]
      131 [-]: LOADK R10 K64 ["/Lotus/Types/Restoratives/OpenArchwingSummon"]
      132 [-]: CALL R9 1 1  
      133 [-]: SETTABLEKS R9 R8 K65 ["ArchwingSummonType"]
-     134 [-]: GETIMPORT R9 45 [nil]
+     134 [-]: GETIMPORT R9 45 [0x7ED0A956]
      135 [-]: LOADK R10 K66 ["/Lotus/Types/Restoratives/HoverboardSummon"]
      136 [-]: CALL R9 1 1  
      137 [-]: SETTABLEKS R9 R8 K67 ["HoverboardSummonType"]
-     138 [-]: GETIMPORT R9 45 [nil]
+     138 [-]: GETIMPORT R9 45 [0x7ED0A956]
      139 [-]: LOADK R10 K68 ["/Lotus/Types/Restoratives/LoadoutTechSummon"]
      140 [-]: CALL R9 1 1  
      141 [-]: SETTABLEKS R9 R8 K69 ["MechSummonType"]
-     142 [-]: GETIMPORT R9 45 [nil]
+     142 [-]: GETIMPORT R9 45 [0x7ED0A956]
      143 [-]: LOADK R10 K70 ["/Lotus/Types/Restoratives/HeavyWeaponSummon"]
      144 [-]: CALL R9 1 1  
      145 [-]: SETTABLEKS R9 R8 K71 ["HeavyWeaponSummonType"]
-     146 [-]: GETIMPORT R9 45 [nil]
+     146 [-]: GETIMPORT R9 45 [0x7ED0A956]
      147 [-]: LOADK R10 K72 ["/Lotus/Types/Restoratives/Consumable/CrewmateBall"]
      148 [-]: CALL R9 1 1  
      149 [-]: SETTABLEKS R9 R8 K73 ["CrewmateBallType"]
-     150 [-]: GETIMPORT R9 45 [nil]
+     150 [-]: GETIMPORT R9 45 [0x7ED0A956]
      151 [-]: LOADK R10 K74 ["/Lotus/Types/Restoratives/Conservation/BaseHuntingGearItem"]
      152 [-]: CALL R9 1 1  
      153 [-]: SETTABLEKS R9 R8 K75 ["BaseHuntingGearItemType"]
-     154 [-]: GETIMPORT R9 45 [nil]
+     154 [-]: GETIMPORT R9 45 [0x7ED0A956]
      155 [-]: LOADK R10 K76 ["/Lotus/Types/Restoratives/Conservation/BaseHuntingAccessoryGearItem"]
      156 [-]: CALL R9 1 1  
      157 [-]: SETTABLEKS R9 R8 K77 ["BaseHuntingAccessoryType"]
-     158 [-]: GETIMPORT R9 45 [nil]
+     158 [-]: GETIMPORT R9 45 [0x7ED0A956]
      159 [-]: LOADK R10 K78 ["/Lotus/Powersuits/Fairy/FairyFlightAnimController"]
      160 [-]: CALL R9 1 1  
      161 [-]: SETTABLEKS R9 R8 K79 ["FairyFlightAcType"]
-     162 [-]: GETIMPORT R9 45 [nil]
+     162 [-]: GETIMPORT R9 45 [0x7ED0A956]
      163 [-]: LOADK R10 K80 ["/Lotus/Powersuits/Wraith/ReaperBaseSuit"]
      164 [-]: CALL R9 1 1  
      165 [-]: SETTABLEKS R9 R8 K81 ["ReaperType"]
-     166 [-]: GETIMPORT R9 45 [nil]
+     166 [-]: GETIMPORT R9 45 [0x7ED0A956]
      167 [-]: LOADK R10 K82 ["/Lotus/Types/Items/Emotes/ShawzinEmote"]
      168 [-]: CALL R9 1 1  
      169 [-]: SETTABLEKS R9 R8 K83 ["InstrumentType"]
-     170 [-]: GETIMPORT R9 45 [nil]
+     170 [-]: GETIMPORT R9 45 [0x7ED0A956]
      171 [-]: LOADK R10 K84 ["/Lotus/Interface/Icons/Player/LotusSymbol.png"]
      172 [-]: CALL R9 1 1  
      173 [-]: SETTABLEKS R9 R8 K85 ["DefaultGlyphIcon"]

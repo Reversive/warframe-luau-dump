@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  2
 
-            1 [-]: DUPCLOSURE R0 K0 []
+       1 [-]: DUPCLOSURE R0 K0 []
        2 [-]: DUPCLOSURE R1 K1 []
        3 [-]: SETGLOBAL R1 K2 ["GetDescriptionInfo"]
        4 [-]: RETURN R0 0  
@@ -22,7 +22,7 @@
        1 [-]: DIV R4 R0 R5 
        2 [-]: ADDK R3 R4 K0 [0.5]
        3 [-]: FASTCALL1 12 R3 L0
-       4 [-]: GETIMPORT R2 4 [nil]
+       4 [-]: GETIMPORT R2 4 [0x55F27C30]
        5 [-]: CALL R2 1 -1 
 L 0:   6 [-]: RETURN R2 -1 
 
@@ -51,13 +51,13 @@ L 0:   6 [-]: RETURN R2 -1
       14 [-]: DIVK R10 R6 K9 [2]
       15 [-]: ADDK R9 R10 K8 [0.5]
       16 [-]: FASTCALL1 12 R9 L0
-      17 [-]: GETIMPORT R8 12 [nil]
+      17 [-]: GETIMPORT R8 12 [0x55F27C30]
       18 [-]: CALL R8 1 1  
 L 0:  19 [-]: SETTABLEKS R8 R7 K4 ["PISTOL_RIFLE"]
       20 [-]: DIVK R10 R6 K0 [1]
       21 [-]: ADDK R9 R10 K8 [0.5]
       22 [-]: FASTCALL1 12 R9 L1
-      23 [-]: GETIMPORT R8 12 [nil]
+      23 [-]: GETIMPORT R8 12 [0x55F27C30]
       24 [-]: CALL R8 1 1  
 L 1:  25 [-]: SETTABLEKS R8 R7 K5 ["SHOTGUN_SNIPER"]
       26 [-]: LOADN R13 0  
@@ -68,11 +68,11 @@ L 1:  25 [-]: SETTABLEKS R8 R7 K5 ["SHOTGUN_SNIPER"]
       31 [-]: MUL R10 R11 R0
       32 [-]: MULK R9 R10 K13 [100]
       33 [-]: FASTCALL1 12 R9 L2
-      34 [-]: GETIMPORT R8 12 [nil]
+      34 [-]: GETIMPORT R8 12 [0x55F27C30]
       35 [-]: CALL R8 1 1  
 L 2:  36 [-]: SETTABLEKS R8 R7 K6 ["PERCENT"]
       37 [-]: MOVE R5 R7   
-L 3:  38 [-]: GETIMPORT R6 17 [nil]
+L 3:  38 [-]: GETIMPORT R6 17 [0xB139D7BC]
       39 [-]: MOVE R7 R5   
       40 [-]: CALL R6 1 -1 
       41 [-]: RETURN R6 -1 

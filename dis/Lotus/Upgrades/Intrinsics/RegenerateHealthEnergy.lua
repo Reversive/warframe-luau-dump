@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  2
 
-            1 [-]: DUPCLOSURE R0 K0 []
+       1 [-]: DUPCLOSURE R0 K0 []
        2 [-]: DUPCLOSURE R1 K1 []
        3 [-]: MOVE R0 R0   
        4 [-]: SETGLOBAL R1 K2 ["RegenerateHealthEnergy"]
@@ -31,7 +31,7 @@
        9 [-]: CALL R2 1 1  
       10 [-]: FASTCALL1 62 R2 L0
       11 [-]: MOVE R4 R2   
-      12 [-]: GETIMPORT R3 5 [nil]
+      12 [-]: GETIMPORT R3 5 [0x7B998233]
       13 [-]: CALL R3 1 1  
 L 0:  14 [-]: JUMPIF R3 L1 
       15 [-]: NAMECALL R3 R2 K6 [0xDED54C60]
@@ -51,7 +51,7 @@ L 1:  20 [-]: RETURN R0 0
 
        0 [-]: FASTCALL1 62 R0 L0
        1 [-]: MOVE R6 R0   
-       2 [-]: GETIMPORT R5 1 [nil]
+       2 [-]: GETIMPORT R5 1 [0x7B998233]
        3 [-]: CALL R5 1 1  
 L 0:   4 [-]: JUMPIFNOT R5 L1
        5 [-]: RETURN R0 0  
@@ -62,7 +62,7 @@ L 1:   6 [-]: GETUPVAL R5 0
       10 [-]: CALL R5 1 1  
       11 [-]: FASTCALL1 62 R5 L2
       12 [-]: MOVE R7 R5   
-      13 [-]: GETIMPORT R6 1 [nil]
+      13 [-]: GETIMPORT R6 1 [0x7B998233]
       14 [-]: CALL R6 1 1  
 L 2:  15 [-]: JUMPIF R6 L6 
       16 [-]: LOADN R8 0   
@@ -74,7 +74,7 @@ L 2:  15 [-]: JUMPIF R6 L6
       22 [-]: JUMPIFNOTEQ R0 R6 L4
       23 [-]: FASTCALL1 62 R7 L3
       24 [-]: MOVE R9 R7   
-      25 [-]: GETIMPORT R8 1 [nil]
+      25 [-]: GETIMPORT R8 1 [0x7B998233]
       26 [-]: CALL R8 1 1  
 L 3:  27 [-]: JUMPIF R8 L4 
       28 [-]: GETUPVAL R8 0
@@ -84,7 +84,7 @@ L 3:  27 [-]: JUMPIF R8 L4
 L 4:  32 [-]: JUMPIFNOTEQ R0 R7 L6
       33 [-]: FASTCALL1 62 R6 L5
       34 [-]: MOVE R9 R6   
-      35 [-]: GETIMPORT R8 1 [nil]
+      35 [-]: GETIMPORT R8 1 [0x7B998233]
       36 [-]: CALL R8 1 1  
 L 5:  37 [-]: JUMPIF R8 L6 
       38 [-]: GETUPVAL R8 0

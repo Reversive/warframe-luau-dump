@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  1
 
-            1 [-]: DUPCLOSURE R0 K0 []
+       1 [-]: DUPCLOSURE R0 K0 []
        2 [-]: SETGLOBAL R0 K1 ["EvaluateCustomProjectile"]
        3 [-]: DUPCLOSURE R0 K2 []
        4 [-]: SETGLOBAL R0 K3 ["GiveCustomProjectile"]
@@ -26,19 +26,19 @@
        4 [-]: CALL R2 2 1  
        5 [-]: FASTCALL1 62 R2 L0
        6 [-]: MOVE R4 R2   
-       7 [-]: GETIMPORT R3 3 [nil]
+       7 [-]: GETIMPORT R3 3 [0x7B998233]
        8 [-]: CALL R3 1 1  
 L 0:   9 [-]: JUMPIF R3 L8 
-      10 [-]: GETIMPORT R5 5 [nil]
+      10 [-]: GETIMPORT R5 5 [0x56FAFCD2]
       11 [-]: NAMECALL R3 R2 K6 [0xF2DEAF69]
       12 [-]: CALL R3 2 1  
       13 [-]: JUMPIFNOT R3 L8
       14 [-]: LOADN R5 1   
-      15 [-]: GETIMPORT R6 8 [nil]
+      15 [-]: GETIMPORT R6 8 [0xD9C73EA0]
       16 [-]: LENGTH R3 R6 
       17 [-]: LOADN R4 1   
       18 [-]: FORNPREP R3 L3
-L 1:  19 [-]: GETIMPORT R9 8 [nil]
+L 1:  19 [-]: GETIMPORT R9 8 [0xD9C73EA0]
       20 [-]: GETTABLE R8 R9 R5
       21 [-]: NAMECALL R6 R2 K6 [0xF2DEAF69]
       22 [-]: CALL R6 2 1  
@@ -57,10 +57,10 @@ L 4:  33 [-]: MOVE R9 R6
       35 [-]: CALL R7 2 1  
       36 [-]: FASTCALL1 62 R7 L5
       37 [-]: MOVE R9 R7   
-      38 [-]: GETIMPORT R8 3 [nil]
+      38 [-]: GETIMPORT R8 3 [0x7B998233]
       39 [-]: CALL R8 1 1  
 L 5:  40 [-]: JUMPIF R8 L6 
-      41 [-]: GETIMPORT R10 13 [nil]
+      41 [-]: GETIMPORT R10 13 [0x14AB107E]
       42 [-]: NAMECALL R8 R7 K6 [0xF2DEAF69]
       43 [-]: CALL R8 2 1  
       44 [-]: JUMPIFNOT R8 L6
@@ -82,7 +82,7 @@ L 8:  50 [-]: LOADB R3 0
 
        0 [-]: NAMECALL R2 R0 K0 [0xDE321E6F]
        1 [-]: CALL R2 1 1  
-       2 [-]: GETIMPORT R4 2 [nil]
+       2 [-]: GETIMPORT R4 2 [0x14AB107E]
        3 [-]: NAMECALL R2 R2 K3 [0x599A8E07]
        4 [-]: CALL R2 2 0  
        5 [-]: RETURN R0 0  

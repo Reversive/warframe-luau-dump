@@ -5,207 +5,207 @@
 ; Is_vararg:       1
 ; Max Stack Size:  3
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0xAEABECDA]
        2 [-]: GETVARARGS R1 1
-       3 [-]: GETIMPORT R2 4 [nil]
+       3 [-]: GETIMPORT R2 4 ["seeall"]
        4 [-]: CALL R0 2 0  
-       5 [-]: GETIMPORT R0 6 [nil]
+       5 [-]: GETIMPORT R0 6 [0x0469F296]
        6 [-]: LOADK R1 K7 ["SKILL_COMMANDER_MAP"]
        7 [-]: CALL R0 1 1  
        8 [-]: SETGLOBAL R0 K8 ["sSkillCommanderMap"]
-       9 [-]: GETIMPORT R0 6 [nil]
+       9 [-]: GETIMPORT R0 6 [0x0469F296]
       10 [-]: LOADK R1 K9 ["SKILL_REMOTE_PLAYER_TRACKING"]
       11 [-]: CALL R0 1 1  
       12 [-]: SETGLOBAL R0 K10 ["sSkillRemotePlayerTracking"]
-      13 [-]: GETIMPORT R0 6 [nil]
+      13 [-]: GETIMPORT R0 6 [0x0469F296]
       14 [-]: LOADK R1 K11 ["SKILL_REMOTE_PLAYER_POWER"]
       15 [-]: CALL R0 1 1  
       16 [-]: SETGLOBAL R0 K12 ["sSkillRemotePlayerPower"]
-      17 [-]: GETIMPORT R0 6 [nil]
+      17 [-]: GETIMPORT R0 6 [0x0469F296]
       18 [-]: LOADK R1 K13 ["SKILL_COMMAND_GEAR_MENU"]
       19 [-]: CALL R0 1 1  
       20 [-]: SETGLOBAL R0 K14 ["sSkillCommandGearMenu"]
-      21 [-]: GETIMPORT R0 6 [nil]
+      21 [-]: GETIMPORT R0 6 [0x0469F296]
       22 [-]: LOADK R1 K15 ["SKILL_REMOTE_PLAYER_DEPLOY"]
       23 [-]: CALL R0 1 1  
       24 [-]: SETGLOBAL R0 K16 ["sSkillRemotePlayerDeploy"]
-      25 [-]: GETIMPORT R0 6 [nil]
+      25 [-]: GETIMPORT R0 6 [0x0469F296]
       26 [-]: LOADK R1 K17 ["SKILL_RECALL_TO_RJ"]
       27 [-]: CALL R0 1 1  
       28 [-]: SETGLOBAL R0 K18 ["sSkillRecallToRailjack"]
-      29 [-]: GETIMPORT R0 6 [nil]
+      29 [-]: GETIMPORT R0 6 [0x0469F296]
       30 [-]: LOADK R1 K19 ["SKILL_MECH_SUMMON"]
       31 [-]: CALL R0 1 1  
       32 [-]: SETGLOBAL R0 K20 ["sSkillMechSummon"]
-      33 [-]: GETIMPORT R0 6 [nil]
+      33 [-]: GETIMPORT R0 6 [0x0469F296]
       34 [-]: LOADK R1 K21 ["SKILL_RJ_BOOST"]
       35 [-]: CALL R0 1 1  
       36 [-]: SETGLOBAL R0 K22 ["sSkillRJBoost"]
-      37 [-]: GETIMPORT R0 6 [nil]
+      37 [-]: GETIMPORT R0 6 [0x0469F296]
       38 [-]: LOADK R1 K23 ["SKILL_RJ_DODGE"]
       39 [-]: CALL R0 1 1  
       40 [-]: SETGLOBAL R0 K24 ["sSkillRJDodge"]
-      41 [-]: GETIMPORT R0 6 [nil]
+      41 [-]: GETIMPORT R0 6 [0x0469F296]
       42 [-]: LOADK R1 K25 ["SKILL_RJ_BLINK"]
       43 [-]: CALL R0 1 1  
       44 [-]: SETGLOBAL R0 K26 ["sSkillRJBlink"]
-      45 [-]: GETIMPORT R0 6 [nil]
+      45 [-]: GETIMPORT R0 6 [0x0469F296]
       46 [-]: LOADK R1 K27 ["SKILL_RJ_DRIFT"]
       47 [-]: CALL R0 1 1  
       48 [-]: SETGLOBAL R0 K28 ["sSkillRJDrift"]
-      49 [-]: GETIMPORT R0 6 [nil]
+      49 [-]: GETIMPORT R0 6 [0x0469F296]
       50 [-]: LOADK R1 K29 ["SKILL_RJ_CLEAR_PROJECTILE"]
       51 [-]: CALL R0 1 1  
       52 [-]: SETGLOBAL R0 K30 ["sSkillRJClearProjectile"]
-      53 [-]: GETIMPORT R0 6 [nil]
+      53 [-]: GETIMPORT R0 6 [0x0469F296]
       54 [-]: LOADK R1 K31 ["SKILL_VACUUM_BUFF"]
       55 [-]: CALL R0 1 1  
       56 [-]: SETGLOBAL R0 K32 ["sSkillVacuumBuff"]
-      57 [-]: GETIMPORT R0 6 [nil]
+      57 [-]: GETIMPORT R0 6 [0x0469F296]
       58 [-]: LOADK R1 K33 ["SKILL_LOOT_POI_MARKER"]
       59 [-]: CALL R0 1 1  
       60 [-]: SETGLOBAL R0 K34 ["sSkillLootPOIMarker"]
-      61 [-]: GETIMPORT R0 6 [nil]
+      61 [-]: GETIMPORT R0 6 [0x0469F296]
       62 [-]: LOADK R1 K35 ["SKILL_AW_CANNON"]
       63 [-]: CALL R0 1 1  
       64 [-]: SETGLOBAL R0 K36 ["sSkillAWCannon"]
-      65 [-]: GETIMPORT R0 6 [nil]
+      65 [-]: GETIMPORT R0 6 [0x0469F296]
       66 [-]: LOADK R1 K37 ["SKILL_RAMSLED_EVASION"]
       67 [-]: CALL R0 1 1  
       68 [-]: SETGLOBAL R0 K38 ["sSkillRamsledEvasion"]
-      69 [-]: GETIMPORT R0 6 [nil]
+      69 [-]: GETIMPORT R0 6 [0x0469F296]
       70 [-]: LOADK R1 K39 ["SKILL_RJ_LEAD_INDICATOR"]
       71 [-]: CALL R0 1 1  
       72 [-]: SETGLOBAL R0 K40 ["sSkillRJLeadIndicator"]
-      73 [-]: GETIMPORT R0 6 [nil]
+      73 [-]: GETIMPORT R0 6 [0x0469F296]
       74 [-]: LOADK R1 K41 ["SKILL_RJ_AR_GIMBAL"]
       75 [-]: CALL R0 1 1  
       76 [-]: SETGLOBAL R0 K42 ["sSkillRJARGimbal"]
-      77 [-]: GETIMPORT R0 6 [nil]
+      77 [-]: GETIMPORT R0 6 [0x0469F296]
       78 [-]: LOADK R1 K43 ["SKILL_RJ_ORDNANCE_LOCK_ON"]
       79 [-]: CALL R0 1 1  
       80 [-]: SETGLOBAL R0 K44 ["sSkillRJOrdLockOn"]
-      81 [-]: GETIMPORT R0 6 [nil]
+      81 [-]: GETIMPORT R0 6 [0x0469F296]
       82 [-]: LOADK R1 K45 ["SKILL_AIM_INDICATOR_CONVERGE"]
       83 [-]: CALL R0 1 1  
       84 [-]: SETGLOBAL R0 K46 ["sSkillAimIndicatorConverge"]
-      85 [-]: GETIMPORT R0 6 [nil]
+      85 [-]: GETIMPORT R0 6 [0x0469F296]
       86 [-]: LOADK R1 K47 ["SKILL_RJ_RELOAD"]
       87 [-]: CALL R0 1 1  
       88 [-]: SETGLOBAL R0 K48 ["sSkillRJReload"]
-      89 [-]: GETIMPORT R0 6 [nil]
+      89 [-]: GETIMPORT R0 6 [0x0469F296]
       90 [-]: LOADK R1 K49 ["SKILL_MULTI_TOOL_EXPERT"]
       91 [-]: CALL R0 1 1  
       92 [-]: SETGLOBAL R0 K50 ["sSkillMultiToolExpert"]
-      93 [-]: GETIMPORT R0 6 [nil]
+      93 [-]: GETIMPORT R0 6 [0x0469F296]
       94 [-]: LOADK R1 K51 ["SKILL_BC_ORDNANCE"]
       95 [-]: CALL R0 1 1  
       96 [-]: SETGLOBAL R0 K52 ["sSkillBCOrd"]
-      97 [-]: GETIMPORT R0 6 [nil]
+      97 [-]: GETIMPORT R0 6 [0x0469F296]
       98 [-]: LOADK R1 K53 ["SKILL_BC_SUPER_AMMO"]
       99 [-]: CALL R0 1 1  
      100 [-]: SETGLOBAL R0 K54 ["sSkillBCSuperAmmo"]
-     101 [-]: GETIMPORT R0 6 [nil]
+     101 [-]: GETIMPORT R0 6 [0x0469F296]
      102 [-]: LOADK R1 K55 ["SKILL_BC_UBER_FIX"]
      103 [-]: CALL R0 1 1  
      104 [-]: SETGLOBAL R0 K56 ["sSkillBCUberFix"]
-     105 [-]: GETIMPORT R0 6 [nil]
+     105 [-]: GETIMPORT R0 6 [0x0469F296]
      106 [-]: LOADK R1 K57 ["SKILL_BC_HEAL"]
      107 [-]: CALL R0 1 1  
      108 [-]: SETGLOBAL R0 K58 ["sSkillBCHeal"]
-     109 [-]: GETIMPORT R0 6 [nil]
+     109 [-]: GETIMPORT R0 6 [0x0469F296]
      110 [-]: LOADK R1 K59 ["SKILL_CREW_COMMAND"]
      111 [-]: CALL R0 1 1  
      112 [-]: SETGLOBAL R0 K60 ["sSkillCrewCommand"]
-     113 [-]: GETIMPORT R0 6 [nil]
+     113 [-]: GETIMPORT R0 6 [0x0469F296]
      114 [-]: LOADK R1 K61 ["SKILL_SECOND_COMMAND"]
      115 [-]: CALL R0 1 1  
      116 [-]: SETGLOBAL R0 K62 ["sSkillSecondCommand"]
-     117 [-]: GETIMPORT R0 6 [nil]
+     117 [-]: GETIMPORT R0 6 [0x0469F296]
      118 [-]: LOADK R1 K63 ["SKILL_DAMAGE_PER_BOON"]
      119 [-]: CALL R0 1 1  
      120 [-]: SETGLOBAL R0 K64 ["sSkillDamagePerBoon"]
-     121 [-]: GETIMPORT R0 6 [nil]
+     121 [-]: GETIMPORT R0 6 [0x0469F296]
      122 [-]: LOADK R1 K65 ["SKILL_RESTORATION_MOVESPEED"]
      123 [-]: CALL R0 1 1  
      124 [-]: SETGLOBAL R0 K66 ["sSkillRestorationMoveSpeed"]
-     125 [-]: GETIMPORT R0 6 [nil]
+     125 [-]: GETIMPORT R0 6 [0x0469F296]
      126 [-]: LOADK R1 K67 ["SKILL_DUVIRI_BEAST_MODE"]
      127 [-]: CALL R0 1 1  
      128 [-]: SETGLOBAL R0 K68 ["sSkillDuviriBeastMode"]
-     129 [-]: GETIMPORT R0 6 [nil]
+     129 [-]: GETIMPORT R0 6 [0x0469F296]
      130 [-]: LOADK R1 K69 ["SKILL_RADAR_SLOMO"]
      131 [-]: CALL R0 1 1  
      132 [-]: SETGLOBAL R0 K70 ["sSkillRadarSlomo"]
-     133 [-]: GETIMPORT R0 6 [nil]
+     133 [-]: GETIMPORT R0 6 [0x0469F296]
      134 [-]: LOADK R1 K71 ["SKILL_SUMMON_HORSE"]
      135 [-]: CALL R0 1 1  
      136 [-]: SETGLOBAL R0 K72 ["sSkillSummonHorse"]
-     137 [-]: GETIMPORT R0 6 [nil]
+     137 [-]: GETIMPORT R0 6 [0x0469F296]
      138 [-]: LOADK R1 K73 ["SKILL_HORSE_RESIST_DISMOUNT"]
      139 [-]: CALL R0 1 1  
      140 [-]: SETGLOBAL R0 K74 ["sSkillHorseResistDismount"]
-     141 [-]: GETIMPORT R0 6 [nil]
+     141 [-]: GETIMPORT R0 6 [0x0469F296]
      142 [-]: LOADK R1 K75 ["SKILL_HORSE_DODGE"]
      143 [-]: CALL R0 1 1  
      144 [-]: SETGLOBAL R0 K76 ["sSkillHorseDodge"]
-     145 [-]: GETIMPORT R0 6 [nil]
+     145 [-]: GETIMPORT R0 6 [0x0469F296]
      146 [-]: LOADK R1 K77 ["SKILL_HORSE_PROTECT"]
      147 [-]: CALL R0 1 1  
      148 [-]: SETGLOBAL R0 K78 ["sSkillHorseProtect"]
-     149 [-]: GETIMPORT R0 6 [nil]
+     149 [-]: GETIMPORT R0 6 [0x0469F296]
      150 [-]: LOADK R1 K79 ["SKILL_HORSE_STOMP"]
      151 [-]: CALL R0 1 1  
      152 [-]: SETGLOBAL R0 K80 ["sSkillHorseStomp"]
-     153 [-]: GETIMPORT R0 6 [nil]
+     153 [-]: GETIMPORT R0 6 [0x0469F296]
      154 [-]: LOADK R1 K81 ["SKILL_HORSE_WARCRY"]
      155 [-]: CALL R0 1 1  
      156 [-]: SETGLOBAL R0 K82 ["sSkillHorseWarcry"]
-     157 [-]: GETIMPORT R0 6 [nil]
+     157 [-]: GETIMPORT R0 6 [0x0469F296]
      158 [-]: LOADK R1 K83 ["SKILL_HORSE_RENAME"]
      159 [-]: CALL R0 1 1  
      160 [-]: SETGLOBAL R0 K84 ["sSkillHorseRename"]
-     161 [-]: GETIMPORT R0 6 [nil]
+     161 [-]: GETIMPORT R0 6 [0x0469F296]
      162 [-]: LOADK R1 K85 ["SKILL_DUVIRI_FAST_TRAVEL"]
      163 [-]: CALL R0 1 1  
      164 [-]: SETGLOBAL R0 K86 ["sSkillDuviriFastTravel"]
-     165 [-]: GETIMPORT R0 6 [nil]
+     165 [-]: GETIMPORT R0 6 [0x0469F296]
      166 [-]: LOADK R1 K87 ["SKILL_DUVIRI_FAST_TRAVEL_TO_DRIFTERS"]
      167 [-]: CALL R0 1 1  
      168 [-]: SETGLOBAL R0 K88 ["sSkillDuviriFastTravelToDrifters"]
-     169 [-]: GETIMPORT R0 6 [nil]
+     169 [-]: GETIMPORT R0 6 [0x0469F296]
      170 [-]: LOADK R1 K89 ["SKILL_BOON_OPTIONS"]
      171 [-]: CALL R0 1 1  
      172 [-]: SETGLOBAL R0 K90 ["sSkillBoonOptions"]
-     173 [-]: GETIMPORT R0 6 [nil]
+     173 [-]: GETIMPORT R0 6 [0x0469F296]
      174 [-]: LOADK R1 K91 ["SKILL_WEAPON_OPTIONS"]
      175 [-]: CALL R0 1 1  
      176 [-]: SETGLOBAL R0 K92 ["sSkillWeaponOptions"]
-     177 [-]: GETIMPORT R0 6 [nil]
+     177 [-]: GETIMPORT R0 6 [0x0469F296]
      178 [-]: LOADK R1 K93 ["SKILL_FREE_BOONS"]
      179 [-]: CALL R0 1 1  
      180 [-]: SETGLOBAL R0 K94 ["sSkillFreeBoons"]
-     181 [-]: GETIMPORT R0 6 [nil]
+     181 [-]: GETIMPORT R0 6 [0x0469F296]
      182 [-]: LOADK R1 K95 ["SKILL_WARFRAME_OPTIONS"]
      183 [-]: CALL R0 1 1  
      184 [-]: SETGLOBAL R0 K96 ["sSkillWarframeOptions"]
-     185 [-]: GETIMPORT R0 6 [nil]
+     185 [-]: GETIMPORT R0 6 [0x0469F296]
      186 [-]: LOADK R1 K97 ["SKILL_RARE_BOONS"]
      187 [-]: CALL R0 1 1  
      188 [-]: SETGLOBAL R0 K98 ["sSkillRareBoons"]
-     189 [-]: GETIMPORT R0 6 [nil]
+     189 [-]: GETIMPORT R0 6 [0x0469F296]
      190 [-]: LOADK R1 K99 ["SKILL_REROLL_BOON"]
      191 [-]: CALL R0 1 1  
      192 [-]: SETGLOBAL R0 K100 ["sSkillRerollBoon"]
-     193 [-]: GETIMPORT R0 6 [nil]
+     193 [-]: GETIMPORT R0 6 [0x0469F296]
      194 [-]: LOADK R1 K101 ["SKILL_STALKER_OPTION"]
      195 [-]: CALL R0 1 1  
      196 [-]: SETGLOBAL R0 K102 ["sSkillStalkerOption"]
-     197 [-]: GETIMPORT R0 6 [nil]
+     197 [-]: GETIMPORT R0 6 [0x0469F296]
      198 [-]: LOADK R1 K103 ["SKILL_HEALTH_PER_BOON"]
      199 [-]: CALL R0 1 1  
      200 [-]: SETGLOBAL R0 K104 ["sSkillHealthPerBoon"]
-     201 [-]: GETIMPORT R0 6 [nil]
+     201 [-]: GETIMPORT R0 6 [0x0469F296]
      202 [-]: LOADK R1 K105 ["SKILL_DUVIRI_BEAST_MODE_INCREASE_ON_COUNTER"]
      203 [-]: CALL R0 1 1  
      204 [-]: SETGLOBAL R0 K106 ["sSkillDuviriBeastModeIncreaseOnCounter"]

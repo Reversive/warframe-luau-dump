@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  1
 
-            1 [-]: DUPCLOSURE R0 K0 []
+       1 [-]: DUPCLOSURE R0 K0 []
        2 [-]: SETGLOBAL R0 K1 ["NpcEvaluateAbility"]
        3 [-]: DUPCLOSURE R0 K2 []
        4 [-]: SETGLOBAL R0 K3 ["ActivateAbility"]
@@ -31,7 +31,7 @@
 L 0:   9 [-]: GETTABLE R10 R4 R7
       10 [-]: GETTABLEKS R9 R10 K2 ["entity"]
       11 [-]: FASTCALL1 62 R9 L1
-      12 [-]: GETIMPORT R8 4 [nil]
+      12 [-]: GETIMPORT R8 4 [0x7B998233]
       13 [-]: CALL R8 1 1  
 L 1:  14 [-]: JUMPIF R8 L2 
       15 [-]: GETTABLE R9 R4 R7
@@ -39,7 +39,7 @@ L 1:  14 [-]: JUMPIF R8 L2
       17 [-]: JUMPIFNOT R8 L2
       18 [-]: GETTABLE R9 R4 R7
       19 [-]: GETTABLEKS R8 R9 K6 ["distanceToTarget"]
-      20 [-]: GETIMPORT R9 8 [nil]
+      20 [-]: GETIMPORT R9 8 [0xC2B72223]
       21 [-]: JUMPIFNOTLE R8 R9 L2
       22 [-]: ADDK R3 R3 K9 [1]
 L 2:  23 [-]: FORNLOOP R5 L0
@@ -53,8 +53,8 @@ L 3:  24 [-]: RETURN R3 1
 ; Is_vararg:       0
 ; Max Stack Size:  11
 
-       0 [-]: GETIMPORT R4 1 [nil]
-       1 [-]: GETIMPORT R6 3 [nil]
+       0 [-]: GETIMPORT R4 1 [0x89326C93]
+       1 [-]: GETIMPORT R6 3 [0x01BF001B]
        2 [-]: NAMECALL R7 R1 K4 [0xD1586535]
        3 [-]: CALL R7 1 1  
        4 [-]: NAMECALL R8 R1 K5 [0xCB3851B8]
@@ -64,24 +64,24 @@ L 3:  24 [-]: RETURN R3 1
        8 [-]: CALL R4 5 1  
        9 [-]: FASTCALL1 62 R4 L0
       10 [-]: MOVE R6 R4   
-      11 [-]: GETIMPORT R5 8 [nil]
+      11 [-]: GETIMPORT R5 8 [0x7B998233]
       12 [-]: CALL R5 1 1  
 L 0:  13 [-]: JUMPIF R5 L2 
       14 [-]: MOVE R7 R1   
       15 [-]: NAMECALL R5 R4 K9 [0xA9365339]
       16 [-]: CALL R5 2 0  
-      17 [-]: GETIMPORT R6 11 [nil]
+      17 [-]: GETIMPORT R6 11 [0x520E413D]
       18 [-]: FASTCALL1 62 R6 L1
-      19 [-]: GETIMPORT R5 8 [nil]
+      19 [-]: GETIMPORT R5 8 [0x7B998233]
       20 [-]: CALL R5 1 1  
 L 1:  21 [-]: JUMPIF R5 L2 
-      22 [-]: GETIMPORT R7 11 [nil]
+      22 [-]: GETIMPORT R7 11 [0x520E413D]
       23 [-]: LOADB R8 0   
       24 [-]: LOADN R9 0   
       25 [-]: LOADB R10 1  
       26 [-]: NAMECALL R5 R1 K12 [0x659D451F]
       27 [-]: CALL R5 5 0  
-L 2:  28 [-]: GETIMPORT R5 14 [nil]
+L 2:  28 [-]: GETIMPORT R5 14 [0xCBD666E1]
       29 [-]: LOADN R6 0   
       30 [-]: CALL R5 1 0  
       31 [-]: RETURN R0 0  

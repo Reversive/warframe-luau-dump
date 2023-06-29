@@ -5,16 +5,16 @@
 ; Is_vararg:       1
 ; Max Stack Size:  6
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x2D0FAD09]
        2 [-]: LOADK R1 K2 ["Lotus.Scripts.Libs.AudioLib"]
        3 [-]: CALL R0 1 1  
-       4 [-]: GETIMPORT R1 1 [nil]
+       4 [-]: GETIMPORT R1 1 [0x2D0FAD09]
        5 [-]: LOADK R2 K3 ["EE.Interface.Utilities"]
        6 [-]: CALL R1 1 1  
-       7 [-]: GETIMPORT R2 1 [nil]
+       7 [-]: GETIMPORT R2 1 [0x2D0FAD09]
        8 [-]: LOADK R3 K4 ["Lotus.Scripts.Libs.DuviriStoryQuestLib"]
        9 [-]: CALL R2 1 1  
-      10 [-]: GETIMPORT R3 6 [nil]
+      10 [-]: GETIMPORT R3 6 [0x0469F296]
       11 [-]: LOADK R4 K7 ["PLAYER_DEATH"]
       12 [-]: CALL R3 1 1  
       13 [-]: DUPCLOSURE R4 K8 []
@@ -42,10 +42,10 @@
 ; Is_vararg:       0
 ; Max Stack Size:  6
 
-       0 [-]: GETIMPORT R1 2 [nil]
+       0 [-]: GETIMPORT R1 2 ["ArchonMission"]
        1 [-]: JUMPIFNOT R1 L0
        2 [-]: RETURN R0 0  
-L 0:   3 [-]: GETIMPORT R1 4 [nil]
+L 0:   3 [-]: GETIMPORT R1 4 [0x3D106989]
        4 [-]: LOADK R2 K5 ["Going into pre death, but reviving soon"]
        5 [-]: CALL R1 1 0  
        6 [-]: GETUPVAL R2 0
@@ -53,13 +53,13 @@ L 0:   3 [-]: GETIMPORT R1 4 [nil]
        8 [-]: LOADNIL R2   
        9 [-]: LOADN R3 6   
       10 [-]: CALL R1 2 0  
-      11 [-]: GETIMPORT R1 8 [nil]
+      11 [-]: GETIMPORT R1 8 [0xCBD666E1]
       12 [-]: LOADN R2 2   
       13 [-]: CALL R1 1 0  
-      14 [-]: GETIMPORT R1 9 [nil]
+      14 [-]: GETIMPORT R1 9 ["_T"]
       15 [-]: LOADB R2 1   
       16 [-]: SETTABLEKS R2 R1 K10 ["PlayerDead"]
-      17 [-]: GETIMPORT R1 8 [nil]
+      17 [-]: GETIMPORT R1 8 [0xCBD666E1]
       18 [-]: LOADN R2 3   
       19 [-]: CALL R1 1 0  
       20 [-]: GETUPVAL R2 0
@@ -109,10 +109,10 @@ L 0:   5 [-]: NAMECALL R1 R0 K1 [0xF323A8E4]
       11 [-]: RETURN R3 1  
 L 1:  12 [-]: NAMECALL R3 R0 K3 [0x2D0A291F]
       13 [-]: CALL R3 1 1  
-      14 [-]: GETIMPORT R4 5 [nil]
+      14 [-]: GETIMPORT R4 5 [0x89326C93]
       15 [-]: NAMECALL R4 R4 K6 [0x7D108DDB]
       16 [-]: CALL R4 1 1  
-      17 [-]: GETIMPORT R5 8 [nil]
+      17 [-]: GETIMPORT R5 8 [0xC8802016]
       18 [-]: MOVE R6 R4   
       19 [-]: CALL R5 1 3  
       20 [-]: FORGPREP_INEXT R5 L4
@@ -120,7 +120,7 @@ L 2:  21 [-]: NAMECALL R10 R9 K9 [0xBB610E5B]
       22 [-]: CALL R10 1 1 
       23 [-]: FASTCALL1 62 R10 L3
       24 [-]: MOVE R12 R10 
-      25 [-]: GETIMPORT R11 11 [nil]
+      25 [-]: GETIMPORT R11 11 [0x7B998233]
       26 [-]: CALL R11 1 1 
 L 3:  27 [-]: JUMPIF R11 L4
       28 [-]: JUMPIFEQ R10 R0 L4
@@ -152,12 +152,12 @@ L 4:  41 [-]: FORGLOOP R5 L2 2 [inext]
        1 [-]: GETTABLEKS R1 R2 K0 [0xD8067A3C]
        2 [-]: CALL R1 0 1  
        3 [-]: JUMPIFNOT R1 L0
-       4 [-]: GETIMPORT R1 2 [nil]
+       4 [-]: GETIMPORT R1 2 ["_T"]
        5 [-]: LOADB R2 1   
        6 [-]: SETTABLEKS R2 R1 K3 ["PlayerDead"]
 L 0:   7 [-]: FASTCALL1 62 R0 L1
        8 [-]: MOVE R2 R0   
-       9 [-]: GETIMPORT R1 5 [nil]
+       9 [-]: GETIMPORT R1 5 [0x7B998233]
       10 [-]: CALL R1 1 1  
 L 1:  11 [-]: JUMPIFNOT R1 L2
       12 [-]: RETURN R0 0  
@@ -165,7 +165,7 @@ L 2:  13 [-]: GETUPVAL R1 1
       14 [-]: MOVE R2 R0   
       15 [-]: CALL R1 1 1  
       16 [-]: JUMPIF R1 L3 
-      17 [-]: GETIMPORT R1 7 [nil]
+      17 [-]: GETIMPORT R1 7 [0x89326C93]
       18 [-]: NAMECALL R1 R1 K8 [0x18D05D30]
       19 [-]: CALL R1 1 1  
       20 [-]: JUMPIFNOT R1 L3
@@ -189,7 +189,7 @@ L 3:  24 [-]: LOADN R3 17
        1 [-]: GETTABLEKS R1 R2 K0 [0xD8067A3C]
        2 [-]: CALL R1 0 1  
        3 [-]: JUMPIFNOT R1 L0
-       4 [-]: GETIMPORT R1 2 [nil]
+       4 [-]: GETIMPORT R1 2 ["_T"]
        5 [-]: LOADB R2 1   
        6 [-]: SETTABLEKS R2 R1 K3 ["PlayerDead"]
 L 0:   7 [-]: RETURN R0 0  
@@ -207,25 +207,25 @@ L 0:   7 [-]: RETURN R0 0
        2 [-]: LOADNIL R2   
        3 [-]: LOADN R3 6   
        4 [-]: CALL R1 2 0  
-       5 [-]: GETIMPORT R1 2 [nil]
+       5 [-]: GETIMPORT R1 2 [0xCBD666E1]
        6 [-]: LOADN R2 2   
        7 [-]: CALL R1 1 0  
-       8 [-]: GETIMPORT R1 4 [nil]
+       8 [-]: GETIMPORT R1 4 ["_T"]
        9 [-]: LOADB R2 1   
       10 [-]: SETTABLEKS R2 R1 K5 ["PlayerDead"]
-      11 [-]: GETIMPORT R2 7 [nil]
+      11 [-]: GETIMPORT R2 7 [0xBA7DFCD2]
       12 [-]: FASTCALL1 62 R2 L0
-      13 [-]: GETIMPORT R1 9 [nil]
+      13 [-]: GETIMPORT R1 9 [0x7B998233]
       14 [-]: CALL R1 1 1  
 L 0:  15 [-]: JUMPIF R1 L1 
-      16 [-]: GETIMPORT R1 7 [nil]
-      17 [-]: GETIMPORT R3 11 [nil]
+      16 [-]: GETIMPORT R1 7 [0xBA7DFCD2]
+      17 [-]: GETIMPORT R3 11 [0x89326C93]
       18 [-]: NAMECALL R3 R3 K12 [0xFB64E76C]
       19 [-]: CALL R3 1 1  
       20 [-]: GETUPVAL R4 1
       21 [-]: NAMECALL R1 R1 K13 [0xF056B179]
       22 [-]: CALL R1 3 0  
-L 1:  23 [-]: GETIMPORT R1 2 [nil]
+L 1:  23 [-]: GETIMPORT R1 2 [0xCBD666E1]
       24 [-]: LOADN R2 3   
       25 [-]: CALL R1 1 0  
       26 [-]: GETUPVAL R2 0

@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  4
 
-            1 [-]: DUPCLOSURE R0 K0 []
+       1 [-]: DUPCLOSURE R0 K0 []
        2 [-]: SETGLOBAL R0 K1 ["NpcEvaluateAbility"]
        3 [-]: DUPCLOSURE R0 K2 []
        4 [-]: DUPCLOSURE R1 K3 []
@@ -33,11 +33,11 @@
        3 [-]: CALL R2 1 1  
        4 [-]: FASTCALL1 62 R2 L0
        5 [-]: MOVE R4 R2   
-       6 [-]: GETIMPORT R3 3 [nil]
+       6 [-]: GETIMPORT R3 3 [0x7B998233]
        7 [-]: CALL R3 1 1  
 L 0:   8 [-]: JUMPIF R3 L1 
        9 [-]: GETTABLEKS R3 R2 K4 ["distanceToTarget"]
-      10 [-]: GETIMPORT R4 6 [nil]
+      10 [-]: GETIMPORT R4 6 [0x443A8D0B]
       11 [-]: JUMPIFNOTLT R4 R3 L2
 L 1:  12 [-]: LOADN R3 0   
       13 [-]: RETURN R3 1  
@@ -74,7 +74,7 @@ L 2:  14 [-]: LOADN R3 1
        4 [-]: CALL R1 2 1  
        5 [-]: FASTCALL1 62 R1 L0
        6 [-]: MOVE R3 R1   
-       7 [-]: GETIMPORT R2 3 [nil]
+       7 [-]: GETIMPORT R2 3 [0x7B998233]
        8 [-]: CALL R2 1 1  
 L 0:   9 [-]: JUMPIFNOT R2 L1
       10 [-]: RETURN R0 0  
@@ -92,7 +92,7 @@ L 3:  19 [-]: MOVE R10 R4
       22 [-]: CALL R8 3 1  
       23 [-]: FASTCALL1 62 R8 L4
       24 [-]: MOVE R10 R8  
-      25 [-]: GETIMPORT R9 3 [nil]
+      25 [-]: GETIMPORT R9 3 [0x7B998233]
       26 [-]: CALL R9 1 1  
 L 4:  27 [-]: JUMPIF R9 L5 
       28 [-]: NAMECALL R9 R8 K5 [0x467C327C]
@@ -116,7 +116,7 @@ L 7:  32 [-]: RETURN R0 0
        4 [-]: CALL R1 2 1  
        5 [-]: FASTCALL1 62 R1 L0
        6 [-]: MOVE R3 R1   
-       7 [-]: GETIMPORT R2 3 [nil]
+       7 [-]: GETIMPORT R2 3 [0x7B998233]
        8 [-]: CALL R2 1 1  
 L 0:   9 [-]: JUMPIFNOT R2 L1
       10 [-]: RETURN R0 0  
@@ -134,12 +134,12 @@ L 3:  19 [-]: MOVE R10 R4
       22 [-]: CALL R8 3 1  
       23 [-]: FASTCALL1 62 R8 L4
       24 [-]: MOVE R10 R8  
-      25 [-]: GETIMPORT R9 3 [nil]
+      25 [-]: GETIMPORT R9 3 [0x7B998233]
       26 [-]: CALL R9 1 1  
 L 4:  27 [-]: JUMPIF R9 L6 
       28 [-]: GETTABLEKS R10 R8 K5 ["mInstance"]
       29 [-]: FASTCALL1 62 R10 L5
-      30 [-]: GETIMPORT R9 3 [nil]
+      30 [-]: GETIMPORT R9 3 [0x7B998233]
       31 [-]: CALL R9 1 1  
 L 5:  32 [-]: JUMPIF R9 L6 
       33 [-]: GETTABLEKS R9 R8 K5 ["mInstance"]
@@ -166,9 +166,9 @@ L 8:  47 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  12
 
-       0 [-]: GETIMPORT R4 1 [nil]
+       0 [-]: GETIMPORT R4 1 [0x55156FF7]
        1 [-]: CALL R4 0 1  
-       2 [-]: GETIMPORT R7 3 [nil]
+       2 [-]: GETIMPORT R7 3 [0xDF9E1B8E]
        3 [-]: LOADB R8 0   
        4 [-]: LOADN R9 2   
        5 [-]: LOADN R10 1  
@@ -179,7 +179,7 @@ L 8:  47 [-]: RETURN R0 0
       10 [-]: MOVE R9 R5   
       11 [-]: NAMECALL R6 R1 K6 [0x21B4C60E]
       12 [-]: CALL R6 3 0  
-      13 [-]: GETIMPORT R6 1 [nil]
+      13 [-]: GETIMPORT R6 1 [0x55156FF7]
       14 [-]: CALL R6 0 1  
       15 [-]: ADD R7 R4 R5 
       16 [-]: JUMPIFNOTLT R6 R7 L0

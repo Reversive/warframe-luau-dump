@@ -5,18 +5,18 @@
 ; Is_vararg:       1
 ; Max Stack Size:  5
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0xAEABECDA]
        2 [-]: GETVARARGS R1 1
-       3 [-]: GETIMPORT R2 4 [nil]
+       3 [-]: GETIMPORT R2 4 ["seeall"]
        4 [-]: CALL R0 2 0  
-       5 [-]: GETIMPORT R0 6 [nil]
+       5 [-]: GETIMPORT R0 6 [0x2D0FAD09]
        6 [-]: LOADK R1 K7 ["Lotus.Interface.LotusUtilities"]
        7 [-]: CALL R0 1 1  
-       8 [-]: GETIMPORT R1 6 [nil]
+       8 [-]: GETIMPORT R1 6 [0x2D0FAD09]
        9 [-]: LOADK R2 K8 ["EE.Interface.Utilities"]
       10 [-]: CALL R1 1 1  
       11 [-]: NEWTABLE R2 0 1
-      12 [-]: GETIMPORT R3 10 [nil]
+      12 [-]: GETIMPORT R3 10 [0x7ED0A956]
       13 [-]: LOADK R4 K11 ["/Lotus/Types/Items/RelayRebuild/PhaseOneClanItemBlueprint"]
       14 [-]: CALL R3 1 -1 
       15 [-]: SETLIST R2 R3 -1 [1]
@@ -62,8 +62,8 @@ L 0:   8 [-]: GETTABLE R8 R1 R6
       19 [-]: LOADK R9 K1 ["\r\n"]
       20 [-]: CONCAT R3 R8 R9
 L 1:  21 [-]: MOVE R8 R3   
-      22 [-]: GETIMPORT R9 5 [nil]
-      23 [-]: GETIMPORT R10 7 [nil]
+      22 [-]: GETIMPORT R9 5 [0x5F0788C4]
+      23 [-]: GETIMPORT R10 7 [0x603636AD]
       24 [-]: GETTABLE R12 R1 R6
       25 [-]: GETTABLEKS R11 R12 K2 ["mLocTag"]
       26 [-]: NAMECALL R11 R11 K3 [0x6D604BA7]
@@ -98,17 +98,17 @@ L 3:  33 [-]: RETURN R3 1
 
        0 [-]: FASTCALL1 62 R2 L0
        1 [-]: MOVE R8 R2   
-       2 [-]: GETIMPORT R7 1 [nil]
+       2 [-]: GETIMPORT R7 1 [0x7B998233]
        3 [-]: CALL R7 1 1  
 L 0:   4 [-]: JUMPIF R7 L3 
        5 [-]: FASTCALL1 62 R3 L1
        6 [-]: MOVE R8 R3   
-       7 [-]: GETIMPORT R7 1 [nil]
+       7 [-]: GETIMPORT R7 1 [0x7B998233]
        8 [-]: CALL R7 1 1  
 L 1:   9 [-]: JUMPIF R7 L3 
       10 [-]: FASTCALL1 62 R4 L2
       11 [-]: MOVE R8 R4   
-      12 [-]: GETIMPORT R7 1 [nil]
+      12 [-]: GETIMPORT R7 1 [0x7B998233]
       13 [-]: CALL R7 1 1  
 L 2:  14 [-]: JUMPIFNOT R7 L4
 L 3:  15 [-]: NEWTABLE R7 0 0
@@ -131,12 +131,12 @@ L 4:  17 [-]: NEWTABLE R7 0 0
       32 [-]: LOADN R11 1  
       33 [-]: FORNPREP R10 L47
 L 5:  34 [-]: GETTABLE R13 R8 R12
-      35 [-]: GETIMPORT R14 10 [nil]
+      35 [-]: GETIMPORT R14 10 [0xCE225EFA]
       36 [-]: LOADN R15 0  
       37 [-]: CALL R14 1 0 
       38 [-]: FASTCALL1 62 R13 L6
       39 [-]: MOVE R15 R13 
-      40 [-]: GETIMPORT R14 1 [nil]
+      40 [-]: GETIMPORT R14 1 [0x7B998233]
       41 [-]: CALL R14 1 1 
 L 6:  42 [-]: JUMPIF R14 L46
       43 [-]: NAMECALL R14 R13 K11 [0xCAC8408F]
@@ -159,11 +159,11 @@ L 6:  42 [-]: JUMPIF R14 L46
       60 [-]: NAMECALL R14 R14 K14 [0xED4E0128]
       61 [-]: CALL R14 1 1 
       62 [-]: LOADNIL R15  
-      63 [-]: GETIMPORT R18 16 [nil]
+      63 [-]: GETIMPORT R18 16 ["gDojoColorRecipeItemType"]
       64 [-]: NAMECALL R16 R13 K17 [0xF2DEAF69]
       65 [-]: CALL R16 2 1 
       66 [-]: JUMPIFNOT R16 L7
-      67 [-]: GETIMPORT R16 16 [nil]
+      67 [-]: GETIMPORT R16 16 ["gDojoColorRecipeItemType"]
       68 [-]: NAMECALL R16 R16 K14 [0xED4E0128]
       69 [-]: CALL R16 1 1 
       70 [-]: MOVE R14 R16 
@@ -183,7 +183,7 @@ L 7:  75 [-]: GETTABLE R16 R7 R14
       84 [-]: NEWTABLE R17 0 0
       85 [-]: SETTABLEKS R17 R16 K5 ["recipes"]
       86 [-]: SETTABLE R16 R7 R14
-L 8:  87 [-]: GETIMPORT R18 22 [nil]
+L 8:  87 [-]: GETIMPORT R18 22 [0x7ED0A956]
       88 [-]: MOVE R19 R13 
       89 [-]: CALL R18 1 -1
       90 [-]: NAMECALL R16 R3 K23 [0x105074FB]
@@ -191,7 +191,7 @@ L 8:  87 [-]: GETIMPORT R18 22 [nil]
       92 [-]: GETTABLE R18 R7 R14
       93 [-]: GETTABLEKS R17 R18 K3 ["Name"]
       94 [-]: JUMPXEQKS R17 K20 L12 NOT [""]
-      95 [-]: GETIMPORT R19 16 [nil]
+      95 [-]: GETIMPORT R19 16 ["gDojoColorRecipeItemType"]
       96 [-]: NAMECALL R17 R13 K17 [0xF2DEAF69]
       97 [-]: CALL R17 2 1 
       98 [-]: JUMPIFNOT R17 L9
@@ -202,14 +202,14 @@ L 8:  87 [-]: GETIMPORT R18 22 [nil]
     
 L 9: 103 [-]: FASTCALL1 62 R16 L10
      104 [-]: MOVE R18 R16 
-     105 [-]: GETIMPORT R17 1 [nil]
+     105 [-]: GETIMPORT R17 1 [0x7B998233]
      106 [-]: CALL R17 1 1 
 L10: 107 [-]: JUMPIF R17 L12
      108 [-]: NAMECALL R17 R16 K25 [0x5CC4DDE3]
      109 [-]: CALL R17 1 1 
      110 [-]: FASTCALL1 62 R17 L11
      111 [-]: MOVE R19 R17 
-     112 [-]: GETIMPORT R18 1 [nil]
+     112 [-]: GETIMPORT R18 1 [0x7B998233]
      113 [-]: CALL R18 1 1 
 L11: 114 [-]: JUMPIF R18 L12
      115 [-]: GETTABLE R18 R7 R14
@@ -222,7 +222,7 @@ L12: 121 [-]: LOADK R17 K20 [""]
      122 [-]: NAMECALL R19 R13 K25 [0x5CC4DDE3]
      123 [-]: CALL R19 1 1 
      124 [-]: FASTCALL1 62 R19 L13
-     125 [-]: GETIMPORT R18 1 [nil]
+     125 [-]: GETIMPORT R18 1 [0x7B998233]
      126 [-]: CALL R18 1 1 
 L13: 127 [-]: JUMPIF R18 L14
      128 [-]: NAMECALL R20 R13 K25 [0x5CC4DDE3]
@@ -293,7 +293,7 @@ L16: 179 [-]: GETTABLE R22 R4 R21
     
 L17: 192 [-]: GETTABLEKS R23 R22 K45 ["mState"]
      193 [-]: JUMPXEQKN R23 K47 L19 NOT [1]
-     194 [-]: GETIMPORT R23 50 [nil]
+     194 [-]: GETIMPORT R23 50 [0x397B920F]
      195 [-]: GETTABLEKS R24 R22 K51 ["mCompletionDate"]
      196 [-]: NAMECALL R24 R24 K52 [0x8F89D633]
      197 [-]: CALL R24 1 -1
@@ -327,7 +327,7 @@ L22: 222 [-]: GETGLOBAL R27 K54 ["RAID_RESEARCH_TYPES"]
      224 [-]: NAMECALL R24 R13 K17 [0xF2DEAF69]
      225 [-]: CALL R24 2 1 
      226 [-]: JUMPIFNOT R24 L23
-     227 [-]: GETIMPORT R24 56 [nil]
+     227 [-]: GETIMPORT R24 56 [0x25D99D89]
      228 [-]: MOVE R26 R13 
      229 [-]: NAMECALL R24 R24 K57 [0x33C9FD7F]
      230 [-]: CALL R24 2 1 
@@ -347,7 +347,7 @@ L25: 237 [-]: GETTABLE R21 R7 R14
      243 [-]: GETTABLEKS R22 R23 K5 ["recipes"]
      244 [-]: FASTCALL2 52 R22 R18 L26
      245 [-]: MOVE R23 R18 
-     246 [-]: GETIMPORT R21 60 [nil]
+     246 [-]: GETIMPORT R21 60 [0x23D5322F]
      247 [-]: CALL R21 2 0 
 L26: 248 [-]: GETTABLEKS R21 R18 K38 ["State"]
      249 [-]: JUMPXEQKN R21 K46 L27 [0]
@@ -370,12 +370,12 @@ L27: 254 [-]: GETTABLEKS R21 R7 K8 ["InProgress"]
      266 [-]: GETTABLEKS R23 R24 K5 ["recipes"]
      267 [-]: FASTCALL2 52 R23 R21 L28
      268 [-]: MOVE R24 R21 
-     269 [-]: GETIMPORT R22 60 [nil]
+     269 [-]: GETIMPORT R22 60 [0x23D5322F]
      270 [-]: CALL R22 2 0 
 L28: 271 [-]: JUMP L46
     
 L29: 272 [-]: JUMPIF R5 L38
-     273 [-]: GETIMPORT R16 64 [nil]
+     273 [-]: GETIMPORT R16 64 ["gDojoDecorationRecipeItemType"]
      274 [-]: NAMECALL R14 R13 K17 [0xF2DEAF69]
      275 [-]: CALL R14 2 1 
      276 [-]: JUMPIFNOT R14 L38
@@ -406,7 +406,7 @@ L30: 295 [-]: GETTABLEKS R15 R7 K65 ["Decorations"]
      301 [-]: NAMECALL R17 R13 K25 [0x5CC4DDE3]
      302 [-]: CALL R17 1 1 
      303 [-]: FASTCALL1 62 R17 L31
-     304 [-]: GETIMPORT R16 1 [nil]
+     304 [-]: GETIMPORT R16 1 [0x7B998233]
      305 [-]: CALL R16 1 1 
 L31: 306 [-]: JUMPIF R16 L32
      307 [-]: NAMECALL R18 R13 K25 [0x5CC4DDE3]
@@ -467,12 +467,12 @@ L36: 359 [-]: GETTABLEKS R19 R7 K65 ["Decorations"]
      360 [-]: GETTABLEKS R18 R19 K5 ["recipes"]
      361 [-]: FASTCALL2 52 R18 R16 L37
      362 [-]: MOVE R19 R16 
-     363 [-]: GETIMPORT R17 60 [nil]
+     363 [-]: GETIMPORT R17 60 [0x23D5322F]
      364 [-]: CALL R17 2 0 
 L37: 365 [-]: JUMP L46
     
 L38: 366 [-]: JUMPIF R5 L46
-     367 [-]: GETIMPORT R16 73 [nil]
+     367 [-]: GETIMPORT R16 73 ["gDojoRecipeItemType"]
      368 [-]: NAMECALL R14 R13 K17 [0xF2DEAF69]
      369 [-]: CALL R14 2 1 
      370 [-]: JUMPIFNOT R14 L46
@@ -503,7 +503,7 @@ L39: 389 [-]: GETTABLEKS R15 R7 K74 ["Components"]
      395 [-]: NAMECALL R17 R13 K25 [0x5CC4DDE3]
      396 [-]: CALL R17 1 1 
      397 [-]: FASTCALL1 62 R17 L40
-     398 [-]: GETIMPORT R16 1 [nil]
+     398 [-]: GETIMPORT R16 1 [0x7B998233]
      399 [-]: CALL R16 1 1 
 L40: 400 [-]: JUMPIF R16 L41
      401 [-]: NAMECALL R18 R13 K25 [0x5CC4DDE3]
@@ -564,7 +564,7 @@ L45: 453 [-]: GETTABLEKS R19 R7 K74 ["Components"]
      454 [-]: GETTABLEKS R18 R19 K5 ["recipes"]
      455 [-]: FASTCALL2 52 R18 R16 L46
      456 [-]: MOVE R19 R16 
-     457 [-]: GETIMPORT R17 60 [nil]
+     457 [-]: GETIMPORT R17 60 [0x23D5322F]
      458 [-]: CALL R17 2 0 
 L46: 459 [-]: FORNLOOP R10 L5
 L47: 460 [-]: RETURN R7 1  

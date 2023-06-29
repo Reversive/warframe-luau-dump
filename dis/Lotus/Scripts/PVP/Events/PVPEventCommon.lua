@@ -5,11 +5,11 @@
 ; Is_vararg:       1
 ; Max Stack Size:  3
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0xAEABECDA]
        2 [-]: GETVARARGS R1 1
-       3 [-]: GETIMPORT R2 4 [nil]
+       3 [-]: GETIMPORT R2 4 ["seeall"]
        4 [-]: CALL R0 2 0  
-       5 [-]: GETIMPORT R0 6 [nil]
+       5 [-]: GETIMPORT R0 6 [0x2D0FAD09]
        6 [-]: LOADK R1 K7 ["Lotus.Scripts.PVP.PVPHelper"]
        7 [-]: CALL R0 1 1  
        8 [-]: GETTABLEKS R1 R0 K8 [0xC96D0CE6]
@@ -44,23 +44,23 @@
 ; Is_vararg:       0
 ; Max Stack Size:  5
 
-       0 [-]: GETIMPORT R2 1 [nil]
+       0 [-]: GETIMPORT R2 1 [0x3D106989]
        1 [-]: LOADK R3 K2 ["AAAAAAAAAAAAAAA PVPEventCommon:Init"]
        2 [-]: CALL R2 1 0  
-       3 [-]: GETIMPORT R2 4 [nil]
+       3 [-]: GETIMPORT R2 4 ["_T"]
        4 [-]: SETTABLEKS R0 R2 K5 ["PVPEvent"]
-       5 [-]: GETIMPORT R2 7 [nil]
+       5 [-]: GETIMPORT R2 7 [0xB009BBC6]
        6 [-]: MOVE R3 R1   
        7 [-]: CALL R2 1 1  
        8 [-]: SETTABLEKS R2 R0 K8 ["pvpEventData"]
        9 [-]: LOADB R2 0   
       10 [-]: SETTABLEKS R2 R0 K9 ["playedIntroTransYet"]
-      11 [-]: GETIMPORT R2 7 [nil]
+      11 [-]: GETIMPORT R2 7 [0xB009BBC6]
       12 [-]: GETTABLEKS R4 R0 K8 ["pvpEventData"]
       13 [-]: GETTABLEKS R3 R4 K10 ["mIntroTrans"]
       14 [-]: CALL R2 1 1  
       15 [-]: SETTABLEKS R2 R0 K11 ["introTransRes"]
-      16 [-]: GETIMPORT R2 7 [nil]
+      16 [-]: GETIMPORT R2 7 [0xB009BBC6]
       17 [-]: GETTABLEKS R4 R0 K8 ["pvpEventData"]
       18 [-]: GETTABLEKS R3 R4 K12 ["mStartTrans"]
       19 [-]: CALL R2 1 1  
@@ -73,7 +73,7 @@
       26 [-]: SETTABLEKS R2 R0 K16 ["PVPSTATE_FINISHED"]
       27 [-]: GETTABLEKS R2 R0 K14 ["PVPSTATE_NOTSTARTED"]
       28 [-]: SETTABLEKS R2 R0 K17 ["lastKnownPVPEventState"]
-      29 [-]: GETIMPORT R2 19 [nil]
+      29 [-]: GETIMPORT R2 19 [0x0469F296]
       30 [-]: LOADK R3 K20 ["PVPEVENT_STATE"]
       31 [-]: CALL R2 1 1  
       32 [-]: SETTABLEKS R2 R0 K21 ["NV_PVPEVENT_STATE"]
@@ -87,7 +87,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
-       0 [-]: GETIMPORT R1 2 [nil]
+       0 [-]: GETIMPORT R1 2 ["PVPObject"]
        1 [-]: RETURN R1 1  
 
 
@@ -98,7 +98,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  4
 
-       0 [-]: GETIMPORT R2 1 [nil]
+       0 [-]: GETIMPORT R2 1 [0x3D106989]
        1 [-]: LOADK R3 K2 ["AAAAAAAAAAAAAAA PVPEventCommon:OnPlayerKilled"]
        2 [-]: CALL R2 1 0  
        3 [-]: RETURN R0 0  
@@ -127,7 +127,7 @@
 
        0 [-]: GETTABLEKS R2 R0 K0 ["pvpEventData"]
        1 [-]: FASTCALL1 62 R2 L0
-       2 [-]: GETIMPORT R1 2 [nil]
+       2 [-]: GETIMPORT R1 2 [0x7B998233]
        3 [-]: CALL R1 1 1  
 L 0:   4 [-]: JUMPIFNOT R1 L1
        5 [-]: RETURN R0 0  
@@ -135,17 +135,17 @@ L 1:   6 [-]: LOADN R2 30
        7 [-]: NAMECALL R3 R0 K3 [0x39406D2F]
        8 [-]: CALL R3 1 1  
        9 [-]: ADD R1 R2 R3 
-      10 [-]: GETIMPORT R2 5 [nil]
+      10 [-]: GETIMPORT R2 5 [0xBE190284]
       11 [-]: FASTCALL1 62 R2 L2
       12 [-]: MOVE R4 R2   
-      13 [-]: GETIMPORT R3 2 [nil]
+      13 [-]: GETIMPORT R3 2 [0x7B998233]
       14 [-]: CALL R3 1 1  
 L 2:  15 [-]: JUMPIF R3 L7 
       16 [-]: GETTABLEKS R5 R0 K6 ["NV_PVPEVENT_STATE"]
       17 [-]: GETTABLEKS R6 R0 K7 ["PVPSTATE_NOTSTARTED"]
       18 [-]: NAMECALL R3 R2 K8 [0x0EB34C69]
       19 [-]: CALL R3 3 1  
-      20 [-]: GETIMPORT R4 10 [nil]
+      20 [-]: GETIMPORT R4 10 [0x89326C93]
       21 [-]: NAMECALL R4 R4 K11 [0x18D05D30]
       22 [-]: CALL R4 1 1  
       23 [-]: JUMPIFNOT R4 L5
@@ -231,15 +231,15 @@ L 7:  95 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  18
 
-       0 [-]: GETIMPORT R2 1 [nil]
-       1 [-]: GETIMPORT R3 3 [nil]
+       0 [-]: GETIMPORT R2 1 [0xBE190284]
+       1 [-]: GETIMPORT R3 3 [0x3D106989]
        2 [-]: LOADK R5 K4 ["OnEventActivateChange isActivated="]
-       3 [-]: GETIMPORT R6 6 [nil]
+       3 [-]: GETIMPORT R6 6 [0x64FB1586]
        4 [-]: MOVE R7 R1   
        5 [-]: CALL R6 1 1  
        6 [-]: CONCAT R4 R5 R6
        7 [-]: CALL R3 1 0  
-       8 [-]: GETIMPORT R3 8 [nil]
+       8 [-]: GETIMPORT R3 8 [0x89326C93]
        9 [-]: NAMECALL R3 R3 K9 [0x18D05D30]
       10 [-]: CALL R3 1 1  
       11 [-]: JUMPIFNOT R3 L2
@@ -249,10 +249,10 @@ L 7:  95 [-]: RETURN R0 0
       15 [-]: NAMECALL R4 R4 K12 [0x1FF0012A]
       16 [-]: CALL R4 1 1  
       17 [-]: SUBK R3 R4 K10 [30]
-      18 [-]: GETIMPORT R4 14 [nil]
+      18 [-]: GETIMPORT R4 14 [0x2D0FAD09]
       19 [-]: LOADK R5 K15 ["Lotus.Interface.LotusUtilities"]
       20 [-]: CALL R4 1 1  
-      21 [-]: GETIMPORT R5 18 [nil]
+      21 [-]: GETIMPORT R5 18 ["AddHudTracker"]
       22 [-]: LOADK R6 K19 ["PvpEventTimer"]
       23 [-]: GETTABLEKS R7 R4 K20 ["HT_TIMER"]
       24 [-]: LOADK R8 K21 [0.25]
@@ -281,8 +281,8 @@ L 7:  95 [-]: RETURN R0 0
       47 [-]: LOADK R11 K31 [" </font>"]
       48 [-]: LOADK R12 K32 ["</p>"]
       49 [-]: CONCAT R6 R7 R12
-      50 [-]: GETIMPORT R7 34 [nil]
-      51 [-]: GETIMPORT R8 8 [nil]
+      50 [-]: GETIMPORT R7 34 [0xC8802016]
+      51 [-]: GETIMPORT R8 8 [0x89326C93]
       52 [-]: NAMECALL R8 R8 K35 [0x7D108DDB]
       53 [-]: CALL R8 1 -1 
       54 [-]: CALL R7 -1 3 
@@ -294,7 +294,7 @@ L 0:  56 [-]: MOVE R14 R11
       60 [-]: NAMECALL R12 R2 K36 [0x03B99283]
       61 [-]: CALL R12 5 0 
 L 1:  62 [-]: FORGLOOP R7 L0 2 [inext]
-L 2:  63 [-]: GETIMPORT R3 3 [nil]
+L 2:  63 [-]: GETIMPORT R3 3 [0x3D106989]
       64 [-]: LOADK R4 K37 ["OnEventActivateChange fix up mode"]
       65 [-]: CALL R3 1 0  
       66 [-]: NOT R5 R1    

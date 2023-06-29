@@ -5,10 +5,10 @@
 ; Is_vararg:       1
 ; Max Stack Size:  23
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x2D0FAD09]
        2 [-]: LOADK R1 K2 ["Lotus.Interface.UIUtilities"]
        3 [-]: CALL R0 1 1  
-       4 [-]: GETIMPORT R1 1 [nil]
+       4 [-]: GETIMPORT R1 1 [0x2D0FAD09]
        5 [-]: LOADK R2 K3 ["EE.Interface.Utilities"]
        6 [-]: CALL R1 1 1  
        7 [-]: LOADB R2 0   
@@ -20,7 +20,7 @@
       13 [-]: LOADNIL R8   
       14 [-]: LOADB R9 0   
       15 [-]: LOADN R10 0  
-      16 [-]: GETIMPORT R11 5 [nil]
+      16 [-]: GETIMPORT R11 5 [0x78CA68A2]
       17 [-]: LOADN R12 0  
       18 [-]: LOADK R13 K6 [0.14999999999999999]
       19 [-]: CALL R11 2 1 
@@ -91,7 +91,7 @@
 
        0 [-]: LOADN R1 10000
        1 [-]: JUMPIFNOTLT R0 R1 L0
-       2 [-]: GETIMPORT R1 1 [nil]
+       2 [-]: GETIMPORT R1 1 [0xAE91E43B]
        3 [-]: LOADK R3 K2 ["Splinter.Damage"]
        4 [-]: LOADN R4 29  
        5 [-]: GETUPVAL R6 0
@@ -102,7 +102,7 @@
       10 [-]: NAMECALL R1 R1 K4 [0x5F56EEAB]
       11 [-]: CALL R1 -1 0 
       12 [-]: RETURN R0 0  
-L 0:  13 [-]: GETIMPORT R1 1 [nil]
+L 0:  13 [-]: GETIMPORT R1 1 [0xAE91E43B]
       14 [-]: LOADK R3 K2 ["Splinter.Damage"]
       15 [-]: LOADN R4 29  
       16 [-]: GETUPVAL R6 0
@@ -121,32 +121,32 @@ L 0:  13 [-]: GETIMPORT R1 1 [nil]
 ; Is_vararg:       0
 ; Max Stack Size:  9
 
-       0 [-]: GETIMPORT R1 1 [nil]
+       0 [-]: GETIMPORT R1 1 [0xAE91E43B]
        1 [-]: FASTCALL1 62 R1 L0
-       2 [-]: GETIMPORT R0 3 [nil]
+       2 [-]: GETIMPORT R0 3 [0x7B998233]
        3 [-]: CALL R0 1 1  
 L 0:   4 [-]: JUMPIF R0 L1 
        5 [-]: GETUPVAL R0 0
        6 [-]: JUMPIF R0 L2 
 L 1:   7 [-]: RETURN R0 0  
-L 2:   8 [-]: GETIMPORT R0 5 [nil]
+L 2:   8 [-]: GETIMPORT R0 5 [0x67652851]
        9 [-]: CALL R0 0 1  
-      10 [-]: GETIMPORT R1 1 [nil]
+      10 [-]: GETIMPORT R1 1 [0xAE91E43B]
       11 [-]: MOVE R3 R0   
       12 [-]: NAMECALL R1 R1 K6 [0x8A8C8D5A]
       13 [-]: CALL R1 2 0  
       14 [-]: GETUPVAL R2 1
       15 [-]: FASTCALL1 62 R2 L3
-      16 [-]: GETIMPORT R1 3 [nil]
+      16 [-]: GETIMPORT R1 3 [0x7B998233]
       17 [-]: CALL R1 1 1  
 L 3:  18 [-]: JUMPIFNOT R1 L4
-      19 [-]: GETIMPORT R1 8 [nil]
+      19 [-]: GETIMPORT R1 8 [0xBE190284]
       20 [-]: NAMECALL R1 R1 K9 [0x33307F92]
       21 [-]: CALL R1 1 1  
       22 [-]: SETUPVAL R1 1
 L 4:  23 [-]: GETUPVAL R2 1
       24 [-]: FASTCALL1 62 R2 L5
-      25 [-]: GETIMPORT R1 3 [nil]
+      25 [-]: GETIMPORT R1 3 [0x7B998233]
       26 [-]: CALL R1 1 1  
 L 5:  27 [-]: JUMPIF R1 L6 
       28 [-]: GETUPVAL R1 1
@@ -157,7 +157,7 @@ L 5:  27 [-]: JUMPIF R1 L6
       33 [-]: GETUPVAL R2 2
       34 [-]: JUMPIFEQ R2 R1 L6
       35 [-]: SETUPVAL R1 2
-      36 [-]: GETIMPORT R2 1 [nil]
+      36 [-]: GETIMPORT R2 1 [0xAE91E43B]
       37 [-]: LOADK R4 K10 ["_root"]
       38 [-]: LOADN R5 10  
       39 [-]: MOVE R6 R1   
@@ -170,20 +170,20 @@ L 6:  42 [-]: GETUPVAL R1 3
       46 [-]: ADD R2 R3 R4 
       47 [-]: MODK R1 R2 K13 [2160]
       48 [-]: SETUPVAL R1 4
-      49 [-]: GETIMPORT R1 1 [nil]
+      49 [-]: GETIMPORT R1 1 [0xAE91E43B]
       50 [-]: LOADK R3 K15 ["Splinter.Frag1"]
       51 [-]: LOADN R4 14  
       52 [-]: GETUPVAL R5 4
       53 [-]: NAMECALL R1 R1 K12 [0x67BC869F]
       54 [-]: CALL R1 4 0  
-      55 [-]: GETIMPORT R1 1 [nil]
+      55 [-]: GETIMPORT R1 1 [0xAE91E43B]
       56 [-]: LOADK R3 K16 ["Splinter.Frag2"]
       57 [-]: LOADN R4 14  
       58 [-]: GETUPVAL R6 4
       59 [-]: DIVK R5 R6 K17 [2]
       60 [-]: NAMECALL R1 R1 K12 [0x67BC869F]
       61 [-]: CALL R1 4 0  
-      62 [-]: GETIMPORT R1 1 [nil]
+      62 [-]: GETIMPORT R1 1 [0xAE91E43B]
       63 [-]: LOADK R3 K18 ["Splinter.Frag3"]
       64 [-]: LOADN R4 14  
       65 [-]: GETUPVAL R7 4
@@ -191,7 +191,7 @@ L 6:  42 [-]: GETUPVAL R1 3
       67 [-]: DIVK R5 R6 K19 [3]
       68 [-]: NAMECALL R1 R1 K12 [0x67BC869F]
       69 [-]: CALL R1 4 0  
-      70 [-]: GETIMPORT R1 1 [nil]
+      70 [-]: GETIMPORT R1 1 [0xAE91E43B]
       71 [-]: LOADK R3 K20 ["Splinter.Frag4"]
       72 [-]: LOADN R4 14  
       73 [-]: GETUPVAL R7 4
@@ -227,7 +227,7 @@ L10: 102 [-]: LOADB R1 0
      103 [-]: SETUPVAL R1 5
      104 [-]: GETUPVAL R2 8
      105 [-]: GETTABLEKS R1 R2 K22 [0x0CAD99B9]
-     106 [-]: GETIMPORT R2 1 [nil]
+     106 [-]: GETIMPORT R2 1 [0xAE91E43B]
      107 [-]: LOADK R3 K23 ["Splinter"]
      108 [-]: GETUPVAL R4 9
      109 [-]: GETUPVAL R5 7
@@ -267,22 +267,22 @@ L11: 134 [-]: RETURN R0 0
 
        0 [-]: GETUPVAL R1 0
        1 [-]: FASTCALL1 62 R1 L0
-       2 [-]: GETIMPORT R0 1 [nil]
+       2 [-]: GETIMPORT R0 1 [0x7B998233]
        3 [-]: CALL R0 1 1  
 L 0:   4 [-]: JUMPIFNOT R0 L3
-       5 [-]: GETIMPORT R0 3 [nil]
+       5 [-]: GETIMPORT R0 3 [0x89326C93]
        6 [-]: NAMECALL R0 R0 K4 [0x78298275]
        7 [-]: CALL R0 1 1  
        8 [-]: FASTCALL1 62 R0 L1
        9 [-]: MOVE R2 R0   
-      10 [-]: GETIMPORT R1 1 [nil]
+      10 [-]: GETIMPORT R1 1 [0x7B998233]
       11 [-]: CALL R1 1 1  
 L 1:  12 [-]: JUMPIF R1 L3 
       13 [-]: NAMECALL R1 R0 K5 [0xDE321E6F]
       14 [-]: CALL R1 1 1  
       15 [-]: FASTCALL1 62 R1 L2
       16 [-]: MOVE R3 R1   
-      17 [-]: GETIMPORT R2 1 [nil]
+      17 [-]: GETIMPORT R2 1 [0x7B998233]
       18 [-]: CALL R2 1 1  
 L 2:  19 [-]: JUMPIF R2 L3 
       20 [-]: NAMECALL R2 R1 K6 [0xF7D48EE0]
@@ -298,27 +298,27 @@ L 3:  23 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  6
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 [0x60130201]
        1 [-]: CALL R0 0 1  
        2 [-]: SETUPVAL R0 0
        3 [-]: GETUPVAL R1 1
        4 [-]: FASTCALL1 62 R1 L0
-       5 [-]: GETIMPORT R0 3 [nil]
+       5 [-]: GETIMPORT R0 3 [0x7B998233]
        6 [-]: CALL R0 1 1  
 L 0:   7 [-]: JUMPIFNOT R0 L3
-       8 [-]: GETIMPORT R0 5 [nil]
+       8 [-]: GETIMPORT R0 5 [0x89326C93]
        9 [-]: NAMECALL R0 R0 K6 [0x78298275]
       10 [-]: CALL R0 1 1  
       11 [-]: FASTCALL1 62 R0 L1
       12 [-]: MOVE R2 R0   
-      13 [-]: GETIMPORT R1 3 [nil]
+      13 [-]: GETIMPORT R1 3 [0x7B998233]
       14 [-]: CALL R1 1 1  
 L 1:  15 [-]: JUMPIF R1 L3 
       16 [-]: NAMECALL R1 R0 K7 [0xDE321E6F]
       17 [-]: CALL R1 1 1  
       18 [-]: FASTCALL1 62 R1 L2
       19 [-]: MOVE R3 R1   
-      20 [-]: GETIMPORT R2 3 [nil]
+      20 [-]: GETIMPORT R2 3 [0x7B998233]
       21 [-]: CALL R2 1 1  
 L 2:  22 [-]: JUMPIF R2 L3 
       23 [-]: NAMECALL R2 R1 K8 [0xF7D48EE0]
@@ -326,7 +326,7 @@ L 2:  22 [-]: JUMPIF R2 L3
       25 [-]: SETUPVAL R2 1
 L 3:  26 [-]: GETUPVAL R1 1
       27 [-]: FASTCALL1 62 R1 L4
-      28 [-]: GETIMPORT R0 3 [nil]
+      28 [-]: GETIMPORT R0 3 [0x7B998233]
       29 [-]: CALL R0 1 1  
 L 4:  30 [-]: JUMPIF R0 L5 
       31 [-]: GETUPVAL R0 1
@@ -335,13 +335,13 @@ L 4:  30 [-]: JUMPIF R0 L5
       34 [-]: CALL R0 2 0  
 L 5:  35 [-]: GETUPVAL R1 0
       36 [-]: FASTCALL1 62 R1 L6
-      37 [-]: GETIMPORT R0 3 [nil]
+      37 [-]: GETIMPORT R0 3 [0x7B998233]
       38 [-]: CALL R0 1 1  
 L 6:  39 [-]: JUMPIF R0 L7 
       40 [-]: GETUPVAL R0 0
       41 [-]: NAMECALL R0 R0 K10 [0xA5D5C8F6]
       42 [-]: CALL R0 1 1  
-      43 [-]: GETIMPORT R1 12 [nil]
+      43 [-]: GETIMPORT R1 12 [0xAE91E43B]
       44 [-]: LOADK R4 K13 ["Splinter.Frag"]
       45 [-]: LOADN R5 1   
       46 [-]: CONCAT R3 R4 R5
@@ -349,7 +349,7 @@ L 6:  39 [-]: JUMPIF R0 L7
       48 [-]: MOVE R5 R0   
       49 [-]: NAMECALL R1 R1 K14 [0x67BC869F]
       50 [-]: CALL R1 4 0  
-      51 [-]: GETIMPORT R1 12 [nil]
+      51 [-]: GETIMPORT R1 12 [0xAE91E43B]
       52 [-]: LOADK R4 K13 ["Splinter.Frag"]
       53 [-]: LOADN R5 2   
       54 [-]: CONCAT R3 R4 R5
@@ -357,7 +357,7 @@ L 6:  39 [-]: JUMPIF R0 L7
       56 [-]: MOVE R5 R0   
       57 [-]: NAMECALL R1 R1 K14 [0x67BC869F]
       58 [-]: CALL R1 4 0  
-      59 [-]: GETIMPORT R1 12 [nil]
+      59 [-]: GETIMPORT R1 12 [0xAE91E43B]
       60 [-]: LOADK R4 K13 ["Splinter.Frag"]
       61 [-]: LOADN R5 3   
       62 [-]: CONCAT R3 R4 R5
@@ -365,7 +365,7 @@ L 6:  39 [-]: JUMPIF R0 L7
       64 [-]: MOVE R5 R0   
       65 [-]: NAMECALL R1 R1 K14 [0x67BC869F]
       66 [-]: CALL R1 4 0  
-      67 [-]: GETIMPORT R1 12 [nil]
+      67 [-]: GETIMPORT R1 12 [0xAE91E43B]
       68 [-]: LOADK R4 K13 ["Splinter.Frag"]
       69 [-]: LOADN R5 4   
       70 [-]: CONCAT R3 R4 R5
@@ -373,7 +373,7 @@ L 6:  39 [-]: JUMPIF R0 L7
       72 [-]: MOVE R5 R0   
       73 [-]: NAMECALL R1 R1 K14 [0x67BC869F]
       74 [-]: CALL R1 4 0  
-      75 [-]: GETIMPORT R1 12 [nil]
+      75 [-]: GETIMPORT R1 12 [0xAE91E43B]
       76 [-]: LOADK R3 K15 ["Splinter.SplinterCenter"]
       77 [-]: LOADN R4 9   
       78 [-]: MOVE R5 R0   
@@ -399,7 +399,7 @@ L 7:  81 [-]: RETURN R0 0
 ; Is_vararg:       1
 ; Max Stack Size:  6
 
-            1 [-]: GETUPVAL R1 0
+       1 [-]: GETUPVAL R1 0
        2 [-]: JUMPIFNOT R1 L0
        3 [-]: MOVE R1 R0   
        4 [-]: GETVARARGS R2 -1
@@ -411,7 +411,7 @@ L 0:   7 [-]: GETUPVAL R2 1
       10 [-]: GETVARARGS R5 -1
       11 [-]: SETLIST R3 R4 -1 [1]
       12 [-]: FASTCALL2 52 R2 R3 L1
-      13 [-]: GETIMPORT R1 2 [nil]
+      13 [-]: GETIMPORT R1 2 [0x23D5322F]
       14 [-]: CALL R1 2 0  
 L 1:  15 [-]: RETURN R0 0  
 
@@ -423,30 +423,30 @@ L 1:  15 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  5
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 ["_T"]
        1 [-]: LOADNIL R1   
        2 [-]: SETTABLEKS R1 R0 K2 ["GARA_ShowSplinter"]
-       3 [-]: GETIMPORT R0 1 [nil]
+       3 [-]: GETIMPORT R0 1 ["_T"]
        4 [-]: LOADNIL R1   
        5 [-]: SETTABLEKS R1 R0 K3 ["GARA_SetDamage"]
-       6 [-]: GETIMPORT R1 5 [nil]
+       6 [-]: GETIMPORT R1 5 ["HUD_RemoveMotionClip"]
        7 [-]: FASTCALL1 62 R1 L0
-       8 [-]: GETIMPORT R0 7 [nil]
+       8 [-]: GETIMPORT R0 7 [0x7B998233]
        9 [-]: CALL R0 1 1  
 L 0:  10 [-]: JUMPIF R0 L1 
-      11 [-]: GETIMPORT R0 5 [nil]
-      12 [-]: GETIMPORT R1 9 [nil]
+      11 [-]: GETIMPORT R0 5 ["HUD_RemoveMotionClip"]
+      12 [-]: GETIMPORT R1 9 [0xAE91E43B]
       13 [-]: LOADK R2 K10 ["Splinter"]
       14 [-]: CALL R0 2 0  
-L 1:  15 [-]: GETIMPORT R1 12 [nil]
+L 1:  15 [-]: GETIMPORT R1 12 ["HUD_GetAnchorMgr"]
       16 [-]: FASTCALL1 62 R1 L2
-      17 [-]: GETIMPORT R0 7 [nil]
+      17 [-]: GETIMPORT R0 7 [0x7B998233]
       18 [-]: CALL R0 1 1  
 L 2:  19 [-]: JUMPIF R0 L3 
-      20 [-]: GETIMPORT R0 12 [nil]
+      20 [-]: GETIMPORT R0 12 ["HUD_GetAnchorMgr"]
       21 [-]: CALL R0 0 1  
       22 [-]: JUMPXEQKNIL R0 L3
-      23 [-]: GETIMPORT R3 9 [nil]
+      23 [-]: GETIMPORT R3 9 [0xAE91E43B]
       24 [-]: LOADK R4 K10 ["Splinter"]
       25 [-]: NAMECALL R1 R0 K13 [0x7F19C438]
       26 [-]: CALL R1 3 0  
@@ -463,8 +463,8 @@ L 3:  27 [-]: RETURN R0 0
        0 [-]: JUMPIFNOT R0 L0
        1 [-]: LOADB R1 1   
        2 [-]: SETUPVAL R1 0
-L 0:   3 [-]: GETIMPORT R1 1 [nil]
-       4 [-]: GETIMPORT R2 3 [nil]
+L 0:   3 [-]: GETIMPORT R1 1 [0x25312C9B]
+       4 [-]: GETIMPORT R2 3 [0xAE91E43B]
        5 [-]: LOADK R3 K4 ["Splinter"]
        6 [-]: LOADN R4 0   
        7 [-]: NEWTABLE R5 0 1
@@ -508,23 +508,23 @@ L 0:   3 [-]: GETIMPORT R1 1 [nil]
 ; Is_vararg:       0
 ; Max Stack Size:  8
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 [0xAE91E43B]
        1 [-]: LOADK R2 K2 ["_root"]
        2 [-]: LOADN R3 10  
        3 [-]: LOADN R4 0   
        4 [-]: NAMECALL R0 R0 K3 [0x67BC869F]
        5 [-]: CALL R0 4 0  
-       6 [-]: GETIMPORT R0 5 [nil]
+       6 [-]: GETIMPORT R0 5 ["_T"]
        7 [-]: DUPCLOSURE R1 K6 []
        8 [-]: MOVE R2 R0   
        9 [-]: MOVE R2 R1   
       10 [-]: SETTABLEKS R1 R0 K7 ["GARA_ShowSplinter"]
-      11 [-]: GETIMPORT R0 5 [nil]
+      11 [-]: GETIMPORT R0 5 ["_T"]
       12 [-]: DUPCLOSURE R1 K8 []
       13 [-]: MOVE R2 R0   
       14 [-]: MOVE R2 R2   
       15 [-]: SETTABLEKS R1 R0 K9 ["GARA_SetDamage"]
-      16 [-]: GETIMPORT R0 1 [nil]
+      16 [-]: GETIMPORT R0 1 [0xAE91E43B]
       17 [-]: LOADK R2 K10 ["Splinter"]
       18 [-]: LOADN R3 10  
       19 [-]: LOADN R4 0   
@@ -533,20 +533,20 @@ L 0:   3 [-]: GETIMPORT R1 1 [nil]
       22 [-]: GETUPVAL R0 3
       23 [-]: CALL R0 0 0  
       24 [-]: LOADNIL R0   
-      25 [-]: GETIMPORT R2 12 [nil]
+      25 [-]: GETIMPORT R2 12 ["HUD_GetAnchorMgr"]
       26 [-]: FASTCALL1 62 R2 L0
-      27 [-]: GETIMPORT R1 14 [nil]
+      27 [-]: GETIMPORT R1 14 [0x7B998233]
       28 [-]: CALL R1 1 1  
 L 0:  29 [-]: JUMPIF R1 L1 
-      30 [-]: GETIMPORT R1 12 [nil]
+      30 [-]: GETIMPORT R1 12 ["HUD_GetAnchorMgr"]
       31 [-]: CALL R1 0 1  
       32 [-]: MOVE R0 R1   
 L 1:  33 [-]: FASTCALL1 62 R0 L2
       34 [-]: MOVE R2 R0   
-      35 [-]: GETIMPORT R1 14 [nil]
+      35 [-]: GETIMPORT R1 14 [0x7B998233]
       36 [-]: CALL R1 1 1  
 L 2:  37 [-]: JUMPIF R1 L3 
-      38 [-]: GETIMPORT R3 1 [nil]
+      38 [-]: GETIMPORT R3 1 [0xAE91E43B]
       39 [-]: LOADK R4 K10 ["Splinter"]
       40 [-]: NEWTABLE R5 0 2
       41 [-]: GETTABLEKS R6 R0 K15 ["ANCHOR_V_BOTTOM"]
@@ -554,70 +554,70 @@ L 2:  37 [-]: JUMPIF R1 L3
       43 [-]: SETLIST R5 R6 2 [1]
       44 [-]: NAMECALL R1 R0 K17 [0x20FF29F7]
       45 [-]: CALL R1 4 0  
-      46 [-]: GETIMPORT R3 1 [nil]
+      46 [-]: GETIMPORT R3 1 [0xAE91E43B]
       47 [-]: NAMECALL R3 R3 K18 [0x6B837788]
       48 [-]: CALL R3 1 1  
-      49 [-]: GETIMPORT R4 1 [nil]
+      49 [-]: GETIMPORT R4 1 [0xAE91E43B]
       50 [-]: NAMECALL R4 R4 K19 [0xAF9FDA9F]
       51 [-]: CALL R4 1 1  
       52 [-]: LOADB R5 1   
       53 [-]: GETTABLEKS R6 R0 K20 ["mHudScalePadding"]
       54 [-]: NAMECALL R1 R0 K21 [0xFAA69527]
       55 [-]: CALL R1 5 0  
-L 3:  56 [-]: GETIMPORT R2 23 [nil]
+L 3:  56 [-]: GETIMPORT R2 23 ["HUD_AddMotionClip"]
       57 [-]: FASTCALL1 62 R2 L4
-      58 [-]: GETIMPORT R1 14 [nil]
+      58 [-]: GETIMPORT R1 14 [0x7B998233]
       59 [-]: CALL R1 1 1  
 L 4:  60 [-]: JUMPIF R1 L5 
-      61 [-]: GETIMPORT R1 23 [nil]
-      62 [-]: GETIMPORT R2 1 [nil]
+      61 [-]: GETIMPORT R1 23 ["HUD_AddMotionClip"]
+      62 [-]: GETIMPORT R2 1 [0xAE91E43B]
       63 [-]: LOADK R3 K10 ["Splinter"]
       64 [-]: CALL R1 2 0  
-L 5:  65 [-]: GETIMPORT R1 1 [nil]
+L 5:  65 [-]: GETIMPORT R1 1 [0xAE91E43B]
       66 [-]: LOADK R4 K24 ["Splinter.Frag"]
       67 [-]: LOADN R5 1   
       68 [-]: CONCAT R3 R4 R5
-      69 [-]: GETIMPORT R4 26 [nil]
+      69 [-]: GETIMPORT R4 26 [0xDA49EA72]
       70 [-]: NAMECALL R1 R1 K27 [0xD5181643]
       71 [-]: CALL R1 3 0  
-      72 [-]: GETIMPORT R1 1 [nil]
+      72 [-]: GETIMPORT R1 1 [0xAE91E43B]
       73 [-]: LOADK R4 K24 ["Splinter.Frag"]
       74 [-]: LOADN R5 2   
       75 [-]: CONCAT R3 R4 R5
-      76 [-]: GETIMPORT R4 26 [nil]
+      76 [-]: GETIMPORT R4 26 [0xDA49EA72]
       77 [-]: NAMECALL R1 R1 K27 [0xD5181643]
       78 [-]: CALL R1 3 0  
-      79 [-]: GETIMPORT R1 1 [nil]
+      79 [-]: GETIMPORT R1 1 [0xAE91E43B]
       80 [-]: LOADK R4 K24 ["Splinter.Frag"]
       81 [-]: LOADN R5 3   
       82 [-]: CONCAT R3 R4 R5
-      83 [-]: GETIMPORT R4 26 [nil]
+      83 [-]: GETIMPORT R4 26 [0xDA49EA72]
       84 [-]: NAMECALL R1 R1 K27 [0xD5181643]
       85 [-]: CALL R1 3 0  
-      86 [-]: GETIMPORT R1 1 [nil]
+      86 [-]: GETIMPORT R1 1 [0xAE91E43B]
       87 [-]: LOADK R4 K24 ["Splinter.Frag"]
       88 [-]: LOADN R5 4   
       89 [-]: CONCAT R3 R4 R5
-      90 [-]: GETIMPORT R4 26 [nil]
+      90 [-]: GETIMPORT R4 26 [0xDA49EA72]
       91 [-]: NAMECALL R1 R1 K27 [0xD5181643]
       92 [-]: CALL R1 3 0  
-      93 [-]: GETIMPORT R1 1 [nil]
+      93 [-]: GETIMPORT R1 1 [0xAE91E43B]
       94 [-]: LOADK R3 K28 ["Splinter.SplinterCenter"]
-      95 [-]: GETIMPORT R4 26 [nil]
+      95 [-]: GETIMPORT R4 26 [0xDA49EA72]
       96 [-]: NAMECALL R1 R1 K27 [0xD5181643]
       97 [-]: CALL R1 3 0  
-      98 [-]: GETIMPORT R1 1 [nil]
+      98 [-]: GETIMPORT R1 1 [0xAE91E43B]
       99 [-]: LOADK R3 K29 ["Splinter.DamageHint.text"]
      100 [-]: LOADK R4 K30 ["/Lotus/Language/Game/DAMAGE"]
      101 [-]: NAMECALL R1 R1 K31 [0x20B98DB3]
      102 [-]: CALL R1 3 0  
-     103 [-]: GETIMPORT R1 1 [nil]
+     103 [-]: GETIMPORT R1 1 [0xAE91E43B]
      104 [-]: LOADK R3 K32 ["Splinter.Damage"]
      105 [-]: LOADN R4 29  
      106 [-]: LOADK R5 K33 [""]
      107 [-]: NAMECALL R1 R1 K34 [0x5F56EEAB]
      108 [-]: CALL R1 4 0  
-     109 [-]: GETIMPORT R1 1 [nil]
+     109 [-]: GETIMPORT R1 1 [0xAE91E43B]
      110 [-]: LOADK R3 K32 ["Splinter.Damage"]
      111 [-]: LOADN R4 75  
      112 [-]: LOADB R5 1   
@@ -625,7 +625,7 @@ L 5:  65 [-]: GETIMPORT R1 1 [nil]
      114 [-]: CALL R1 4 0  
      115 [-]: FASTCALL1 62 R0 L6
      116 [-]: MOVE R2 R0   
-     117 [-]: GETIMPORT R1 14 [nil]
+     117 [-]: GETIMPORT R1 14 [0x7B998233]
      118 [-]: CALL R1 1 1  
 L 6: 119 [-]: JUMPIF R1 L7 
      120 [-]: LOADK R4 K10 ["Splinter"]
@@ -633,13 +633,13 @@ L 6: 119 [-]: JUMPIF R1 L7
      122 [-]: CALL R2 2 1  
      123 [-]: GETTABLEKS R1 R2 K37 ["y"]
      124 [-]: SETUPVAL R1 4
-L 7: 125 [-]: GETIMPORT R1 39 [nil]
+L 7: 125 [-]: GETIMPORT R1 39 [0x89326C93]
      126 [-]: NAMECALL R1 R1 K40 [0x78298275]
      127 [-]: CALL R1 1 1  
      128 [-]: SETUPVAL R1 5
      129 [-]: GETUPVAL R2 5
      130 [-]: FASTCALL1 62 R2 L8
-     131 [-]: GETIMPORT R1 14 [nil]
+     131 [-]: GETIMPORT R1 14 [0x7B998233]
      132 [-]: CALL R1 1 1  
 L 8: 133 [-]: JUMPIF R1 L10
      134 [-]: GETUPVAL R1 5
@@ -647,7 +647,7 @@ L 8: 133 [-]: JUMPIF R1 L10
      136 [-]: CALL R1 1 1  
      137 [-]: FASTCALL1 62 R1 L9
      138 [-]: MOVE R3 R1   
-     139 [-]: GETIMPORT R2 14 [nil]
+     139 [-]: GETIMPORT R2 14 [0x7B998233]
      140 [-]: CALL R2 1 1  
 L 9: 141 [-]: JUMPIF R2 L10
      142 [-]: NAMECALL R2 R1 K42 [0x0803EEE1]
@@ -674,8 +674,8 @@ L10: 145 [-]: GETUPVAL R1 1
 
        0 [-]: GETUPVAL R2 0
        1 [-]: GETTABLEKS R1 R2 K0 [0xFA221145]
-       2 [-]: GETIMPORT R2 2 [nil]
-       3 [-]: GETIMPORT R3 4 [nil]
+       2 [-]: GETIMPORT R2 2 [0xAE91E43B]
+       3 [-]: GETIMPORT R3 4 [0x03F57322]
        4 [-]: MOVE R4 R0   
        5 [-]: CALL R3 1 -1 
        6 [-]: CALL R1 -1 0 

@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  8
 
-            1 [-]: NEWTABLE R0 0 0
+       1 [-]: NEWTABLE R0 0 0
        2 [-]: NEWTABLE R1 0 0
        3 [-]: DUPCLOSURE R2 K0 []
        4 [-]: MOVE R0 R0   
@@ -42,24 +42,24 @@
 ; Is_vararg:       0
 ; Max Stack Size:  11
 
-       0 [-]: GETIMPORT R2 1 [nil]
+       0 [-]: GETIMPORT R2 1 [0xCBD666E1]
        1 [-]: LOADN R3 0   
        2 [-]: CALL R2 1 0  
        3 [-]: FASTCALL1 62 R0 L0
        4 [-]: MOVE R3 R0   
-       5 [-]: GETIMPORT R2 3 [nil]
+       5 [-]: GETIMPORT R2 3 [0x7B998233]
        6 [-]: CALL R2 1 1  
 L 0:   7 [-]: JUMPIFNOT R2 L1
        8 [-]: RETURN R0 0  
 L 1:   9 [-]: LOADK R4 K4 ["Start"]
       10 [-]: NAMECALL R2 R0 K5 [0x8EB2112D]
       11 [-]: CALL R2 2 0  
-      12 [-]: GETIMPORT R2 1 [nil]
+      12 [-]: GETIMPORT R2 1 [0xCBD666E1]
       13 [-]: LOADN R3 0   
       14 [-]: CALL R2 1 0  
       15 [-]: FASTCALL1 62 R0 L2
       16 [-]: MOVE R3 R0   
-      17 [-]: GETIMPORT R2 3 [nil]
+      17 [-]: GETIMPORT R2 3 [0x7B998233]
       18 [-]: CALL R2 1 1  
 L 2:  19 [-]: JUMPIFNOT R2 L3
       20 [-]: RETURN R0 0  
@@ -70,13 +70,13 @@ L 3:  21 [-]: NAMECALL R2 R0 K6 [0xD1586535]
       25 [-]: GETTABLEKS R5 R3 K9 ["bank"]
       26 [-]: ADDK R4 R5 K8 [160]
       27 [-]: SETTABLEKS R4 R3 K9 ["bank"]
-      28 [-]: GETIMPORT R4 11 [nil]
+      28 [-]: GETIMPORT R4 11 [0x55730E1A]
       29 [-]: LOADN R5 1   
-      30 [-]: GETIMPORT R7 13 [nil]
+      30 [-]: GETIMPORT R7 13 [0x9D3C2F03]
       31 [-]: LENGTH R6 R7 
       32 [-]: CALL R4 2 1  
-      33 [-]: GETIMPORT R5 15 [nil]
-      34 [-]: GETIMPORT R8 13 [nil]
+      33 [-]: GETIMPORT R5 15 [0x89326C93]
+      34 [-]: GETIMPORT R8 13 [0x9D3C2F03]
       35 [-]: GETTABLE R7 R8 R4
       36 [-]: MOVE R8 R2   
       37 [-]: MOVE R9 R3   
@@ -84,15 +84,15 @@ L 3:  21 [-]: NAMECALL R2 R0 K6 [0xD1586535]
       39 [-]: CALL R5 4 1  
       40 [-]: FASTCALL1 62 R5 L4
       41 [-]: MOVE R7 R5   
-      42 [-]: GETIMPORT R6 3 [nil]
+      42 [-]: GETIMPORT R6 3 [0x7B998233]
       43 [-]: CALL R6 1 1  
 L 4:  44 [-]: JUMPIF R6 L5 
-      45 [-]: GETIMPORT R6 18 [nil]
+      45 [-]: GETIMPORT R6 18 [0x11A19C5E]
       46 [-]: MOVE R7 R5   
       47 [-]: LOADK R8 K19 ["OnPickedUp"]
       48 [-]: CALL R6 2 0  
-L 5:  49 [-]: GETIMPORT R6 15 [nil]
-      50 [-]: GETIMPORT R8 21 [nil]
+L 5:  49 [-]: GETIMPORT R6 15 [0x89326C93]
+      50 [-]: GETIMPORT R8 21 [0x67C122DA]
       51 [-]: NAMECALL R6 R6 K22 [0x6A8CA536]
       52 [-]: CALL R6 2 1  
       53 [-]: GETUPVAL R8 0
@@ -210,13 +210,13 @@ L 2:  12 [-]: LOADNIL R1
 L 3:  13 [-]: GETUPVAL R3 0
       14 [-]: GETTABLE R2 R3 R1
       15 [-]: JUMPIF R2 L4 
-      16 [-]: GETIMPORT R3 2 [nil]
+      16 [-]: GETIMPORT R3 2 [0xD644C2F1]
       17 [-]: LOADK R4 K3 ["RandomHangingBlocks.lua:OnDone() Could not find mover!"]
       18 [-]: CALL R3 1 0  
       19 [-]: RETURN R0 0  
 L 4:  20 [-]: GETTABLEKS R4 R2 K4 ["joint"]
       21 [-]: FASTCALL1 62 R4 L5
-      22 [-]: GETIMPORT R3 6 [nil]
+      22 [-]: GETIMPORT R3 6 [0x7B998233]
       23 [-]: CALL R3 1 1  
 L 5:  24 [-]: JUMPIF R3 L6 
       25 [-]: GETTABLEKS R3 R2 K4 ["joint"]
@@ -237,7 +237,7 @@ L 6:  31 [-]: GETTABLEKS R3 R2 K0 ["mover"]
       39 [-]: RETURN R0 0  
 L 7:  40 [-]: GETTABLEKS R4 R2 K11 ["block"]
       41 [-]: FASTCALL1 62 R4 L8
-      42 [-]: GETIMPORT R3 6 [nil]
+      42 [-]: GETIMPORT R3 6 [0x7B998233]
       43 [-]: CALL R3 1 1  
 L 8:  44 [-]: JUMPIF R3 L9 
       45 [-]: GETTABLEKS R3 R2 K11 ["block"]
@@ -245,7 +245,7 @@ L 8:  44 [-]: JUMPIF R3 L9
       47 [-]: CALL R3 1 0  
       48 [-]: LOADNIL R3   
       49 [-]: SETTABLEKS R3 R2 K11 ["block"]
-L 9:  50 [-]: GETIMPORT R3 15 [nil]
+L 9:  50 [-]: GETIMPORT R3 15 ["gStopConveyor"]
       51 [-]: JUMPXEQKB R3 1 L10 NOT
       52 [-]: GETTABLEKS R3 R2 K0 ["mover"]
       53 [-]: LOADK R5 K8 ["Stop"]
@@ -271,7 +271,7 @@ L10:  61 [-]: GETUPVAL R3 1
 ; Is_vararg:       0
 ; Max Stack Size:  7
 
-       0 [-]: GETIMPORT R1 1 [nil]
+       0 [-]: GETIMPORT R1 1 [0xCFC01047]
        1 [-]: GETUPVAL R2 0
        2 [-]: CALL R1 1 3  
        3 [-]: FORGPREP_NEXT R1 L1
@@ -290,11 +290,11 @@ L 1:   7 [-]: FORGLOOP R1 L0 1
 ; Is_vararg:       0
 ; Max Stack Size:  11
 
-       0 [-]: GETIMPORT R0 1 [nil]
-       1 [-]: GETIMPORT R1 3 [nil]
+       0 [-]: GETIMPORT R0 1 [0xC8802016]
+       1 [-]: GETIMPORT R1 3 [0x483E0870]
        2 [-]: CALL R0 1 3  
        3 [-]: FORGPREP_INEXT R0 L6
-L 0:   4 [-]: GETIMPORT R6 5 [nil]
+L 0:   4 [-]: GETIMPORT R6 5 [0xCFC01047]
        5 [-]: GETUPVAL R7 0
        6 [-]: CALL R6 1 3  
        7 [-]: FORGPREP_NEXT R6 L2
@@ -310,7 +310,7 @@ L 3:  13 [-]: JUMPIF R5 L6
       16 [-]: GETUPVAL R6 1
       17 [-]: FASTCALL2 52 R6 R4 L4
       18 [-]: MOVE R7 R4   
-      19 [-]: GETIMPORT R5 8 [nil]
+      19 [-]: GETIMPORT R5 8 [0x23D5322F]
       20 [-]: CALL R5 2 0  
 L 4:  21 [-]: GETUPVAL R6 2
       22 [-]: DUPTABLE R7 12
@@ -320,9 +320,9 @@ L 4:  21 [-]: GETUPVAL R6 2
       26 [-]: LOADNIL R8   
       27 [-]: SETTABLEKS R8 R7 K11 ["block"]
       28 [-]: FASTCALL2 52 R6 R7 L5
-      29 [-]: GETIMPORT R5 8 [nil]
+      29 [-]: GETIMPORT R5 8 [0x23D5322F]
       30 [-]: CALL R5 2 0  
-L 5:  31 [-]: GETIMPORT R5 14 [nil]
+L 5:  31 [-]: GETIMPORT R5 14 [0x11A19C5E]
       32 [-]: MOVE R6 R4   
       33 [-]: LOADK R7 K15 ["OnDone"]
       34 [-]: CALL R5 2 0  
@@ -331,11 +331,11 @@ L 5:  31 [-]: GETIMPORT R5 14 [nil]
       37 [-]: GETUPVAL R8 1
       38 [-]: LENGTH R7 R8 
       39 [-]: CALL R5 2 0  
-      40 [-]: GETIMPORT R5 17 [nil]
-      41 [-]: GETIMPORT R6 19 [nil]
+      40 [-]: GETIMPORT R5 17 [0xCBD666E1]
+      41 [-]: GETIMPORT R6 19 [0x9E3FAE97]
       42 [-]: CALL R5 1 0  
 L 6:  43 [-]: FORGLOOP R0 L0 2 [inext]
-      44 [-]: GETIMPORT R0 21 [nil]
+      44 [-]: GETIMPORT R0 21 ["_T"]
       45 [-]: LOADB R1 0   
       46 [-]: SETTABLEKS R1 R0 K22 ["gStopConveyor"]
       47 [-]: RETURN R0 0  
@@ -348,8 +348,8 @@ L 6:  43 [-]: FORGLOOP R0 L0 2 [inext]
 ; Is_vararg:       0
 ; Max Stack Size:  8
 
-       0 [-]: GETIMPORT R0 1 [nil]
-       1 [-]: GETIMPORT R1 3 [nil]
+       0 [-]: GETIMPORT R0 1 [0xC8802016]
+       1 [-]: GETIMPORT R1 3 [0x483E0870]
        2 [-]: CALL R0 1 3  
        3 [-]: FORGPREP_INEXT R0 L1
 L 0:   4 [-]: LOADK R7 K4 ["Stop"]
@@ -359,18 +359,18 @@ L 0:   4 [-]: LOADK R7 K4 ["Stop"]
        8 [-]: NAMECALL R5 R4 K5 [0x8EB2112D]
        9 [-]: CALL R5 2 0  
 L 1:  10 [-]: FORGLOOP R0 L0 2 [inext]
-      11 [-]: GETIMPORT R0 8 [nil]
-      12 [-]: GETIMPORT R2 10 [nil]
+      11 [-]: GETIMPORT R0 8 [0x89326C93]
+      12 [-]: GETIMPORT R2 10 [0x67C122DA]
       13 [-]: NAMECALL R0 R0 K11 [0xFB669000]
       14 [-]: CALL R0 2 1  
-      15 [-]: GETIMPORT R1 1 [nil]
+      15 [-]: GETIMPORT R1 1 [0xC8802016]
       16 [-]: MOVE R2 R0   
       17 [-]: CALL R1 1 3  
       18 [-]: FORGPREP_INEXT R1 L3
 L 2:  19 [-]: NAMECALL R6 R5 K12 [0x44373B1E]
       20 [-]: CALL R6 1 0  
 L 3:  21 [-]: FORGLOOP R1 L2 2 [inext]
-      22 [-]: GETIMPORT R1 14 [nil]
+      22 [-]: GETIMPORT R1 14 ["_T"]
       23 [-]: LOADB R2 1   
       24 [-]: SETTABLEKS R2 R1 K15 ["gStopConveyor"]
       25 [-]: RETURN R0 0  

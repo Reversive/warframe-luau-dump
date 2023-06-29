@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  2
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x0469F296]
        2 [-]: LOADK R1 K2 ["EnvironmentDamage"]
        3 [-]: CALL R0 1 1  
        4 [-]: DUPCLOSURE R1 K3 []
@@ -26,14 +26,14 @@
 
        0 [-]: NAMECALL R1 R0 K0 [0xD1586535]
        1 [-]: CALL R1 1 1  
-       2 [-]: GETIMPORT R2 2 [nil]
+       2 [-]: GETIMPORT R2 2 [0x89326C93]
        3 [-]: GETUPVAL R4 0
        4 [-]: MOVE R5 R1   
        5 [-]: LOADN R6 0   
-       6 [-]: GETIMPORT R7 4 [nil]
+       6 [-]: GETIMPORT R7 4 [0xE80B50B8]
        7 [-]: NAMECALL R2 R2 K5 [0xF16592C8]
        8 [-]: CALL R2 5 1  
-       9 [-]: GETIMPORT R3 7 [nil]
+       9 [-]: GETIMPORT R3 7 [0x98B0A3E7]
       10 [-]: JUMPIF R3 L1 
       11 [-]: LOADN R5 1   
       12 [-]: LENGTH R3 R2 
@@ -43,7 +43,7 @@ L 0:  15 [-]: GETTABLE R6 R2 R5
       16 [-]: NAMECALL R6 R6 K8 [0x383D2E7D]
       17 [-]: CALL R6 1 0  
       18 [-]: FORNLOOP R3 L0
-L 1:  19 [-]: GETIMPORT R3 7 [nil]
+L 1:  19 [-]: GETIMPORT R3 7 [0x98B0A3E7]
       20 [-]: JUMPIFNOT R3 L4
       21 [-]: LOADN R5 1   
       22 [-]: LENGTH R3 R2 
@@ -53,14 +53,14 @@ L 2:  25 [-]: GETTABLE R6 R2 R5
       26 [-]: NAMECALL R6 R6 K8 [0x383D2E7D]
       27 [-]: CALL R6 1 0  
       28 [-]: FORNLOOP R3 L2
-L 3:  29 [-]: GETIMPORT R3 10 [nil]
-      30 [-]: GETIMPORT R4 12 [nil]
+L 3:  29 [-]: GETIMPORT R3 10 [0xCBD666E1]
+      30 [-]: GETIMPORT R4 12 [0xD64F8E3E]
       31 [-]: CALL R3 1 0  
-      32 [-]: GETIMPORT R3 2 [nil]
+      32 [-]: GETIMPORT R3 2 [0x89326C93]
       33 [-]: GETUPVAL R5 0
       34 [-]: MOVE R6 R1   
       35 [-]: LOADN R7 0   
-      36 [-]: GETIMPORT R8 4 [nil]
+      36 [-]: GETIMPORT R8 4 [0xE80B50B8]
       37 [-]: NAMECALL R3 R3 K5 [0xF16592C8]
       38 [-]: CALL R3 5 1  
       39 [-]: MOVE R2 R3   
@@ -75,7 +75,7 @@ L 4:  41 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  6
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 [0x89326C93]
        1 [-]: GETUPVAL R2 0
        2 [-]: NAMECALL R0 R0 K2 [0xC7FCADA9]
        3 [-]: CALL R0 2 1  

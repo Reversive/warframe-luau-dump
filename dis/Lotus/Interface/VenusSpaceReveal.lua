@@ -5,13 +5,13 @@
 ; Is_vararg:       1
 ; Max Stack Size:  7
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x2D0FAD09]
        2 [-]: LOADK R1 K2 ["EE.Interface.Utilities"]
        3 [-]: CALL R0 1 1  
        4 [-]: LOADNIL R1   
        5 [-]: NEWTABLE R2 0 2
        6 [-]: DUPTABLE R3 7
-       7 [-]: GETIMPORT R4 9 [nil]
+       7 [-]: GETIMPORT R4 9 [0x0469F296]
        8 [-]: LOADK R5 K10 ["CrewBattleNode502"]
        9 [-]: CALL R4 1 1  
       10 [-]: SETTABLEKS R4 R3 K3 ["Location"]
@@ -22,7 +22,7 @@
       15 [-]: LOADK R4 K13 ["SECTOR: 3.55"]
       16 [-]: SETTABLEKS R4 R3 K6 ["Subtitle2"]
       17 [-]: DUPTABLE R4 7
-      18 [-]: GETIMPORT R5 9 [nil]
+      18 [-]: GETIMPORT R5 9 [0x0469F296]
       19 [-]: LOADK R6 K14 ["CrewBattleNode505"]
       20 [-]: CALL R5 1 1  
       21 [-]: SETTABLEKS R5 R4 K3 ["Location"]
@@ -68,8 +68,8 @@
 ; Is_vararg:       0
 ; Max Stack Size:  9
 
-       0 [-]: GETIMPORT R0 1 [nil]
-       1 [-]: GETIMPORT R1 3 [nil]
+       0 [-]: GETIMPORT R0 1 [0x25312C9B]
+       1 [-]: GETIMPORT R1 3 [0xAE91E43B]
        2 [-]: LOADK R2 K4 ["_root"]
        3 [-]: LOADN R3 0   
        4 [-]: NEWTABLE R4 0 1
@@ -92,8 +92,8 @@
 ; Is_vararg:       0
 ; Max Stack Size:  7
 
-       0 [-]: GETIMPORT R0 1 [nil]
-       1 [-]: GETIMPORT R1 3 [nil]
+       0 [-]: GETIMPORT R0 1 [0x25312C9B]
+       1 [-]: GETIMPORT R1 3 [0xAE91E43B]
        2 [-]: LOADK R2 K4 ["Title"]
        3 [-]: LOADN R3 0   
        4 [-]: NEWTABLE R4 0 1
@@ -127,29 +127,29 @@
 ; Is_vararg:       0
 ; Max Stack Size:  8
 
-       0 [-]: GETIMPORT R0 1 [nil]
+       0 [-]: GETIMPORT R0 1 [0xAE91E43B]
        1 [-]: LOADK R2 K2 ["Title"]
        2 [-]: LOADN R3 10  
        3 [-]: LOADN R4 0   
        4 [-]: NAMECALL R0 R0 K3 [0x67BC869F]
        5 [-]: CALL R0 4 0  
-       6 [-]: GETIMPORT R0 1 [nil]
+       6 [-]: GETIMPORT R0 1 [0xAE91E43B]
        7 [-]: LOADK R2 K4 ["Subtitle1.text"]
        8 [-]: LOADK R3 K5 [""]
        9 [-]: NAMECALL R0 R0 K6 [0x20B98DB3]
       10 [-]: CALL R0 3 0  
-      11 [-]: GETIMPORT R0 1 [nil]
+      11 [-]: GETIMPORT R0 1 [0xAE91E43B]
       12 [-]: LOADK R2 K7 ["Subtitle2.text"]
       13 [-]: LOADK R3 K5 [""]
       14 [-]: NAMECALL R0 R0 K6 [0x20B98DB3]
       15 [-]: CALL R0 3 0  
-      16 [-]: GETIMPORT R0 9 [nil]
+      16 [-]: GETIMPORT R0 9 [0x2D0FAD09]
       17 [-]: LOADK R1 K10 ["Lotus.Interface.Libs.TimerMgr"]
       18 [-]: CALL R0 1 1  
       19 [-]: GETTABLEKS R1 R0 K11 [0xDE474187]
       20 [-]: CALL R1 0 1  
       21 [-]: SETUPVAL R1 0
-      22 [-]: GETIMPORT R1 13 [nil]
+      22 [-]: GETIMPORT R1 13 [0xBE190284]
       23 [-]: NAMECALL R1 R1 K14 [0xEF893AEC]
       24 [-]: CALL R1 1 1  
       25 [-]: NAMECALL R1 R1 K15 [0x8F89D633]
@@ -176,7 +176,7 @@ L 0:  32 [-]: GETUPVAL R6 1
       46 [-]: JUMP L2
      
 L 1:  47 [-]: FORNLOOP R2 L0
-L 2:  48 [-]: GETIMPORT R2 1 [nil]
+L 2:  48 [-]: GETIMPORT R2 1 [0xAE91E43B]
       49 [-]: LOADK R4 K20 ["Title.text"]
       50 [-]: GETUPVAL R6 2
       51 [-]: GETTABLEKS R5 R6 K2 ["Title"]
@@ -195,12 +195,12 @@ L 2:  48 [-]: GETIMPORT R2 1 [nil]
 ; Max Stack Size:  3
 
        0 [-]: GETUPVAL R0 0
-       1 [-]: GETIMPORT R2 1 [nil]
+       1 [-]: GETIMPORT R2 1 [0x67652851]
        2 [-]: CALL R2 0 -1 
        3 [-]: NAMECALL R0 R0 K2 [0xFAA69527]
        4 [-]: CALL R0 -1 0 
-       5 [-]: GETIMPORT R0 4 [nil]
-       6 [-]: GETIMPORT R2 6 [nil]
+       5 [-]: GETIMPORT R0 4 [0xAE91E43B]
+       6 [-]: GETIMPORT R2 6 [0xB693B6C1]
        7 [-]: CALL R2 0 -1 
        8 [-]: NAMECALL R0 R0 K7 [0x8A8C8D5A]
        9 [-]: CALL R0 -1 0 

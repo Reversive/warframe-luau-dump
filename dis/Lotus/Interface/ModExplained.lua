@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  5
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0x2D0FAD09]
        2 [-]: LOADK R1 K2 ["Lotus.Interface.CardUtilitiesRedux"]
        3 [-]: CALL R0 1 1  
        4 [-]: NEWTABLE R1 0 1
@@ -106,14 +106,14 @@
       47 [-]: GETUPVAL R4 2
       48 [-]: GETTABLEN R3 R4 1
       49 [-]: GETTABLEKS R2 R3 K4 ["mClipName"]
-      50 [-]: GETIMPORT R3 10 [nil]
+      50 [-]: GETIMPORT R3 10 [0xAE91E43B]
       51 [-]: MOVE R5 R2   
       52 [-]: LOADN R6 10  
       53 [-]: LOADN R7 0   
       54 [-]: NAMECALL R3 R3 K11 [0x67BC869F]
       55 [-]: CALL R3 4 0  
-      56 [-]: GETIMPORT R3 13 [nil]
-      57 [-]: GETIMPORT R4 10 [nil]
+      56 [-]: GETIMPORT R3 13 [0x25312C9B]
+      57 [-]: GETIMPORT R4 10 [0xAE91E43B]
       58 [-]: MOVE R5 R2   
       59 [-]: LOADN R6 8   
       60 [-]: NEWTABLE R7 0 1
@@ -124,7 +124,7 @@
       65 [-]: SETLIST R8 R9 1 [1]
       66 [-]: LOADK R9 K14 [0.20000000000000001]
       67 [-]: CALL R3 6 0  
-      68 [-]: GETIMPORT R3 10 [nil]
+      68 [-]: GETIMPORT R3 10 [0xAE91E43B]
       69 [-]: MOVE R5 R2   
       70 [-]: LOADN R6 11  
       71 [-]: LOADB R7 1   
@@ -140,14 +140,14 @@
 ; Is_vararg:       0
 ; Max Stack Size:  10
 
-       0 [-]: GETIMPORT R1 1 [nil]
+       0 [-]: GETIMPORT R1 1 [0xFD909F70]
        1 [-]: FASTCALL1 62 R1 L0
-       2 [-]: GETIMPORT R0 3 [nil]
+       2 [-]: GETIMPORT R0 3 [0x7B998233]
        3 [-]: CALL R0 1 1  
 L 0:   4 [-]: JUMPIF R0 L1 
-       5 [-]: GETIMPORT R0 6 [nil]
+       5 [-]: GETIMPORT R0 6 [0x1ABA4D9E]
        6 [-]: CALL R0 0 1  
-       7 [-]: GETIMPORT R1 1 [nil]
+       7 [-]: GETIMPORT R1 1 [0xFD909F70]
        8 [-]: SETTABLEKS R1 R0 K7 ["mItemType"]
        9 [-]: GETTABLEKS R1 R0 K8 ["mInstance"]
       10 [-]: LOADN R3 2   
@@ -158,7 +158,7 @@ L 0:   4 [-]: JUMPIF R0 L1
       15 [-]: LOADK R2 K11 ["Card1"]
       16 [-]: MOVE R3 R0   
       17 [-]: CALL R1 2 0  
-L 1:  18 [-]: GETIMPORT R0 13 [nil]
+L 1:  18 [-]: GETIMPORT R0 13 [0xAE91E43B]
       19 [-]: LOADK R2 K14 ["Card2"]
       20 [-]: LOADN R3 11  
       21 [-]: LOADB R4 0   
@@ -175,61 +175,61 @@ L 1:  18 [-]: GETIMPORT R0 13 [nil]
       32 [-]: LOADK R8 K23 ["Rarity"]
       33 [-]: LOADK R9 K24 ["Equipped"]
       34 [-]: SETLIST R0 R1 9 [1]
-      35 [-]: GETIMPORT R1 13 [nil]
+      35 [-]: GETIMPORT R1 13 [0xAE91E43B]
       36 [-]: LOADK R3 K25 ["Name.text"]
       37 [-]: LOADK R4 K26 ["/Lotus/Language/Menu/SortName"]
       38 [-]: LOADB R5 0   
       39 [-]: NAMECALL R1 R1 K27 [0x20B98DB3]
       40 [-]: CALL R1 4 0  
-      41 [-]: GETIMPORT R1 13 [nil]
+      41 [-]: GETIMPORT R1 13 [0xAE91E43B]
       42 [-]: LOADK R3 K28 ["Fusion.text"]
       43 [-]: LOADK R4 K29 ["/Lotus/Language/Menu/FusionMode"]
       44 [-]: LOADB R5 0   
       45 [-]: NAMECALL R1 R1 K27 [0x20B98DB3]
       46 [-]: CALL R1 4 0  
-      47 [-]: GETIMPORT R1 13 [nil]
+      47 [-]: GETIMPORT R1 13 [0xAE91E43B]
       48 [-]: LOADK R3 K30 ["Conclave.text"]
       49 [-]: LOADK R4 K31 ["/Lotus/Language/Menu/PvpValue"]
       50 [-]: LOADB R5 0   
       51 [-]: NAMECALL R1 R1 K27 [0x20B98DB3]
       52 [-]: CALL R1 4 0  
-      53 [-]: GETIMPORT R1 13 [nil]
+      53 [-]: GETIMPORT R1 13 [0xAE91E43B]
       54 [-]: LOADK R3 K18 ["Conclave"]
       55 [-]: LOADN R4 75  
       56 [-]: LOADB R5 1   
       57 [-]: NAMECALL R1 R1 K15 [0xAADE900E]
       58 [-]: CALL R1 4 0  
-      59 [-]: GETIMPORT R1 13 [nil]
+      59 [-]: GETIMPORT R1 13 [0xAE91E43B]
       60 [-]: LOADK R3 K32 ["Item.text"]
       61 [-]: LOADK R4 K33 ["/Lotus/Language/Menu/ItemSelection_Item"]
       62 [-]: LOADB R5 0   
       63 [-]: NAMECALL R1 R1 K27 [0x20B98DB3]
       64 [-]: CALL R1 4 0  
-      65 [-]: GETIMPORT R1 13 [nil]
+      65 [-]: GETIMPORT R1 13 [0xAE91E43B]
       66 [-]: LOADK R3 K34 ["Benefits.text"]
       67 [-]: LOADK R4 K35 ["/Lotus/Language/Menu/Global_ProductCategory_Upgrade"]
       68 [-]: LOADB R5 0   
       69 [-]: NAMECALL R1 R1 K27 [0x20B98DB3]
       70 [-]: CALL R1 4 0  
-      71 [-]: GETIMPORT R1 13 [nil]
+      71 [-]: GETIMPORT R1 13 [0xAE91E43B]
       72 [-]: LOADK R3 K36 ["Drain.text"]
       73 [-]: LOADK R4 K37 ["/Lotus/Language/Labels/Drain_Capacity"]
       74 [-]: LOADB R5 0   
       75 [-]: NAMECALL R1 R1 K27 [0x20B98DB3]
       76 [-]: CALL R1 4 0  
-      77 [-]: GETIMPORT R1 13 [nil]
+      77 [-]: GETIMPORT R1 13 [0xAE91E43B]
       78 [-]: LOADK R3 K38 ["Polarity.text"]
       79 [-]: LOADK R4 K39 ["/Lotus/Language/Menu/SortBy_Polarity"]
       80 [-]: LOADB R5 0   
       81 [-]: NAMECALL R1 R1 K27 [0x20B98DB3]
       82 [-]: CALL R1 4 0  
-      83 [-]: GETIMPORT R1 13 [nil]
+      83 [-]: GETIMPORT R1 13 [0xAE91E43B]
       84 [-]: LOADK R3 K40 ["Rarity.text"]
       85 [-]: LOADK R4 K41 ["/Lotus/Language/Menu/SortRarity"]
       86 [-]: LOADB R5 0   
       87 [-]: NAMECALL R1 R1 K27 [0x20B98DB3]
       88 [-]: CALL R1 4 0  
-      89 [-]: GETIMPORT R1 13 [nil]
+      89 [-]: GETIMPORT R1 13 [0xAE91E43B]
       90 [-]: LOADK R3 K42 ["Equipped.text"]
       91 [-]: LOADK R4 K43 ["/Lotus/Language/Menu/ItemSelection_Equipped"]
       92 [-]: LOADB R5 0   
@@ -239,7 +239,7 @@ L 1:  18 [-]: GETIMPORT R0 13 [nil]
       96 [-]: LENGTH R1 R0 
       97 [-]: LOADN R2 1   
       98 [-]: FORNPREP R1 L3
-L 2:  99 [-]: GETIMPORT R4 13 [nil]
+L 2:  99 [-]: GETIMPORT R4 13 [0xAE91E43B]
      100 [-]: GETTABLE R6 R0 R3
      101 [-]: LOADN R7 9   
      102 [-]: LOADK R8 K44 [16746547]
@@ -256,8 +256,8 @@ L 3: 106 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  3
 
-       0 [-]: GETIMPORT R0 1 [nil]
-       1 [-]: GETIMPORT R2 3 [nil]
+       0 [-]: GETIMPORT R0 1 [0xAE91E43B]
+       1 [-]: GETIMPORT R2 3 [0xB693B6C1]
        2 [-]: CALL R2 0 -1 
        3 [-]: NAMECALL R0 R0 K4 [0x8A8C8D5A]
        4 [-]: CALL R0 -1 0 

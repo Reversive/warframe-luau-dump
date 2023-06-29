@@ -5,23 +5,23 @@
 ; Is_vararg:       1
 ; Max Stack Size:  10
 
-            1 [-]: GETIMPORT R0 1 [nil]
+       1 [-]: GETIMPORT R0 1 [0xAEABECDA]
        2 [-]: GETVARARGS R1 1
-       3 [-]: GETIMPORT R2 4 [nil]
+       3 [-]: GETIMPORT R2 4 ["seeall"]
        4 [-]: CALL R0 2 0  
-       5 [-]: GETIMPORT R0 6 [nil]
+       5 [-]: GETIMPORT R0 6 [0x2D0FAD09]
        6 [-]: LOADK R1 K7 ["Lotus.Interface.CrossPlatformUtilities"]
        7 [-]: CALL R0 1 1  
-       8 [-]: GETIMPORT R1 6 [nil]
+       8 [-]: GETIMPORT R1 6 [0x2D0FAD09]
        9 [-]: LOADK R2 K8 ["Lotus.Interface.LotusUtilities"]
       10 [-]: CALL R1 1 1  
-      11 [-]: GETIMPORT R2 6 [nil]
+      11 [-]: GETIMPORT R2 6 [0x2D0FAD09]
       12 [-]: LOADK R3 K9 ["Lotus.Interface.LotusNetworkUtilities"]
       13 [-]: CALL R2 1 1  
-      14 [-]: GETIMPORT R3 6 [nil]
+      14 [-]: GETIMPORT R3 6 [0x2D0FAD09]
       15 [-]: LOADK R4 K10 ["Lotus.Scripts.Libs.RailjackUtilities"]
       16 [-]: CALL R3 1 1  
-      17 [-]: GETIMPORT R4 6 [nil]
+      17 [-]: GETIMPORT R4 6 [0x2D0FAD09]
       18 [-]: LOADK R5 K11 ["EE.Interface.Utilities"]
       19 [-]: CALL R4 1 1  
       20 [-]: DUPTABLE R5 16
@@ -33,13 +33,13 @@
       26 [-]: SETTABLEKS R6 R5 K14 ["MUTED"]
       27 [-]: LOADN R6 4   
       28 [-]: SETTABLEKS R6 R5 K15 ["TALKING"]
-      29 [-]: GETIMPORT R6 18 [nil]
+      29 [-]: GETIMPORT R6 18 [0x88EFC25E]
       30 [-]: LOADK R7 K19 ["/Lotus/Types/Game/HealthShieldDisplay"]
       31 [-]: CALL R6 1 1  
-      32 [-]: GETIMPORT R7 21 [nil]
+      32 [-]: GETIMPORT R7 21 [0x7ED0A956]
       33 [-]: LOADK R8 K22 ["/Lotus/Types/Keys/OrokinMoonQuest/OrokinMoonQuestKeyChain"]
       34 [-]: CALL R7 1 1  
-      35 [-]: GETIMPORT R8 21 [nil]
+      35 [-]: GETIMPORT R8 21 [0x7ED0A956]
       36 [-]: LOADK R9 K23 ["/Lotus/Powersuits/Operator/OperatorSuit"]
       37 [-]: CALL R8 1 1  
       38 [-]: DUPCLOSURE R9 K24 []
@@ -211,7 +211,7 @@ L 0: 121 [-]: GETTABLEKS R8 R4 K4 ["mPlayerInfo"]
      145 [-]: MOVE R13 R7  
      146 [-]: LOADK R14 K67 [".Icon"]
      147 [-]: CONCAT R10 R11 R14
-     148 [-]: GETIMPORT R12 69 [nil]
+     148 [-]: GETIMPORT R12 69 [0x0032441C]
      149 [-]: GETTABLEKS R11 R12 K70 ["UIMaterial_SmoothEdgeNoDepthTest"]
      150 [-]: NAMECALL R8 R8 K71 [0xD5181643]
      151 [-]: CALL R8 3 0  
@@ -221,7 +221,7 @@ L 0: 121 [-]: GETTABLEKS R8 R4 K4 ["mPlayerInfo"]
      155 [-]: MOVE R13 R7  
      156 [-]: LOADK R14 K72 [".VoipState.Bg"]
      157 [-]: CONCAT R10 R11 R14
-     158 [-]: GETIMPORT R12 69 [nil]
+     158 [-]: GETIMPORT R12 69 [0x0032441C]
      159 [-]: GETTABLEKS R11 R12 K73 ["UITexture_CircleGradientBacker"]
      160 [-]: NAMECALL R8 R8 K74 [0x1CB415C1]
      161 [-]: CALL R8 3 0  
@@ -232,7 +232,7 @@ L 0: 121 [-]: GETTABLEKS R8 R4 K4 ["mPlayerInfo"]
      166 [-]: LOADK R14 K72 [".VoipState.Bg"]
      167 [-]: CONCAT R10 R11 R14
      168 [-]: LOADN R11 9  
-     169 [-]: GETIMPORT R13 69 [nil]
+     169 [-]: GETIMPORT R13 69 [0x0032441C]
      170 [-]: GETTABLEKS R12 R13 K75 ["UIColor_Black"]
      171 [-]: NAMECALL R8 R8 K59 [0x67BC869F]
      172 [-]: CALL R8 4 0  
