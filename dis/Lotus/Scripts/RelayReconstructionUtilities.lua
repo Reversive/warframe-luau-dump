@@ -5,10 +5,10 @@
 ; Is_vararg:       1
 ; Max Stack Size:  2
 
-       1 [-]: DUPTABLE R0 1
-       2 [-]: DUPCLOSURE R1 K2 []
-       3 [-]: SETTABLEKS R1 R0 K0 ["GetConstructionProjects"]
-       4 [-]: RETURN R0 1  
+       1 [-]: DUPTABLE R0 1; 
+       2 [-]: DUPCLOSURE R1 K2; 
+       3 [-]: SETTABLEKS R1 R0 K0; var1["GetConstructionProjects"] = var0
+       4 [-]: RETURN R0 1  ; 
 
 
 ; Name:            
@@ -18,99 +18,98 @@
 ; Is_vararg:       0
 ; Max Stack Size:  28
 
-       0 [-]: GETIMPORT R0 1 [0x76EA806B]
-       1 [-]: LOADN R2 0   
-       2 [-]: NAMECALL R0 R0 K2 [0x3F3AE64C]
-       3 [-]: CALL R0 2 1  
-       4 [-]: NEWTABLE R1 0 0
-       5 [-]: FASTCALL1 62 R0 L0
-       6 [-]: MOVE R3 R0   
-       7 [-]: GETIMPORT R2 4 [0x7B998233]
-       8 [-]: CALL R2 1 1  
-L 0:   9 [-]: JUMPIF R2 L9 
-      10 [-]: NAMECALL R2 R0 K5 [0x80563238]
-      11 [-]: CALL R2 1 1  
-      12 [-]: FASTCALL1 62 R2 L1
-      13 [-]: MOVE R4 R2   
-      14 [-]: GETIMPORT R3 4 [0x7B998233]
-      15 [-]: CALL R3 1 1  
-L 1:  16 [-]: JUMPIF R3 L9 
-      17 [-]: NAMECALL R3 R2 K6 [0x9897ECC6]
-      18 [-]: CALL R3 1 1  
-      19 [-]: NAMECALL R4 R2 K7 [0x69727E0B]
-      20 [-]: CALL R4 1 1  
-      21 [-]: GETTABLEKS R5 R4 K8 ["mGoals"]
-      22 [-]: GETTABLEKS R6 R4 K9 ["mConstructionProjects"]
-      23 [-]: GETIMPORT R7 11 [0xC8802016]
-      24 [-]: MOVE R8 R5   
-      25 [-]: CALL R7 1 3  
-      26 [-]: FORGPREP_INEXT R7 L8
-L 2:  27 [-]: GETTABLEKS R12 R11 K12 ["mRelayReconstruction"]
-      28 [-]: JUMPIFNOT R12 L8
-      29 [-]: GETIMPORT R12 15 [0x397B920F]
-      30 [-]: GETTABLEKS R13 R11 K16 ["mActivation"]
-      31 [-]: CALL R12 1 1 
-      32 [-]: LOADN R13 0  
-      33 [-]: JUMPIFNOTLE R12 R13 L8
-      34 [-]: LOADN R15 1  
-      35 [-]: LENGTH R13 R6
-      36 [-]: LOADN R14 1  
-      37 [-]: FORNPREP R13 L8
-L 3:  38 [-]: GETTABLE R16 R6 R15
-      39 [-]: GETTABLEKS R17 R11 K17 ["mTag"]
-      40 [-]: GETTABLEKS R18 R16 K17 ["mTag"]
-      41 [-]: JUMPIFNOTEQ R17 R18 L7
-      42 [-]: DUPTABLE R17 21
-      43 [-]: NAMECALL R18 R16 K22 [0x8F89D633]
-      44 [-]: CALL R18 1 1 
-      45 [-]: SETTABLEKS R18 R17 K18 ["info"]
-      46 [-]: LOADN R18 0  
-      47 [-]: SETTABLEKS R18 R17 K19 ["progress"]
-      48 [-]: GETIMPORT R18 24 [0x3584DCA2]
-      49 [-]: CALL R18 0 1 
-      50 [-]: SETTABLEKS R18 R17 K20 ["goalId"]
-      51 [-]: GETTABLEKS R18 R17 K20 ["goalId"]
-      52 [-]: GETTABLEKS R20 R11 K25 ["mId"]
-      53 [-]: NAMECALL R20 R20 K26 [0xF537CFC7]
-      54 [-]: CALL R20 1 -1
-      55 [-]: NAMECALL R18 R18 K27 [0x46E9D221]
-      56 [-]: CALL R18 -1 0
-      57 [-]: GETIMPORT R18 29 [0x0469F296]
-      58 [-]: GETTABLEKS R23 R17 K18 ["info"]
-      59 [-]: GETTABLEKS R22 R23 K30 ["mNode"]
-      60 [-]: NAMECALL R22 R22 K31 [0x6D604BA7]
-      61 [-]: CALL R22 1 1 
-      62 [-]: MOVE R20 R22 
-      63 [-]: LOADK R21 K32 ["Rebuild"]
-      64 [-]: CONCAT R19 R20 R21
-      65 [-]: CALL R18 1 1 
-      66 [-]: SETTABLEKS R18 R17 K33 ["rebuildNode"]
-      67 [-]: GETIMPORT R18 24 [0x3584DCA2]
-      68 [-]: CALL R18 0 1 
-      69 [-]: GETIMPORT R19 35 [0xCFC01047]
-      70 [-]: MOVE R20 R3  
-      71 [-]: CALL R19 1 3 
-      72 [-]: FORGPREP_NEXT R19 L5
-L 4:  73 [-]: GETTABLEKS R26 R23 K25 ["mId"]
-      74 [-]: NAMECALL R26 R26 K26 [0xF537CFC7]
-      75 [-]: CALL R26 1 -1
-      76 [-]: NAMECALL R24 R18 K27 [0x46E9D221]
-      77 [-]: CALL R24 -1 0
-      78 [-]: GETTABLEKS R24 R17 K20 ["goalId"]
-      79 [-]: JUMPIFNOTEQ R24 R18 L5
-      80 [-]: GETTABLEKS R24 R23 K36 ["mCount"]
-      81 [-]: SETTABLEKS R24 R17 K19 ["progress"]
-      82 [-]: JUMP L6
-     
-L 5:  83 [-]: FORGLOOP R19 L4 2
-L 6:  84 [-]: FASTCALL2 52 R1 R17 L7
-      85 [-]: MOVE R20 R1  
-      86 [-]: MOVE R21 R17 
-      87 [-]: GETIMPORT R19 39 [0x23D5322F]
-      88 [-]: CALL R19 2 0 
-L 7:  89 [-]: FORNLOOP R13 L3
-L 8:  90 [-]: FORGLOOP R7 L2 2 [inext]
-L 9:  91 [-]: RETURN R1 1  
+       0 [-]: GETIMPORT R0 1; var0 = 0x76EA806B
+       1 [-]: LOADN R2 0   ; var2 = 0
+       2 [-]: NAMECALL R0 R0 K2; var1 = var0; var0 = var0[0x3F3AE64C]
+       3 [-]: CALL R0 3 2  ; var0 = var0(var1, var2)
+       4 [-]: NEWTABLE R1 0 0; var1 = {}
+       5 [-]: FASTCALL1 62 R0 L0; 
+       6 [-]: MOVE R3 R0   ; var3 = var0
+       7 [-]: GETIMPORT R2 4; var2 = 0x7B998233
+       8 [-]: CALL R2 2 2  ; var2 = var2(var3)
+L 0:   9 [-]: JUMPIF R2 L9 ; goto L9 if var2
+      10 [-]: NAMECALL R2 R0 K5; var3 = var0; var2 = var0[0x80563238]
+      11 [-]: CALL R2 2 2  ; var2 = var2(var3)
+      12 [-]: FASTCALL1 62 R2 L1; 
+      13 [-]: MOVE R4 R2   ; var4 = var2
+      14 [-]: GETIMPORT R3 4; var3 = 0x7B998233
+      15 [-]: CALL R3 2 2  ; var3 = var3(var4)
+L 1:  16 [-]: JUMPIF R3 L9 ; goto L9 if var3
+      17 [-]: NAMECALL R3 R2 K6; var4 = var2; var3 = var2[0x9897ECC6]
+      18 [-]: CALL R3 2 2  ; var3 = var3(var4)
+      19 [-]: NAMECALL R4 R2 K7; var5 = var2; var4 = var2[0x69727E0B]
+      20 [-]: CALL R4 2 2  ; var4 = var4(var5)
+      21 [-]: GETTABLEKS R5 R4 K8; var5 = var4["mGoals"]
+      22 [-]: GETTABLEKS R6 R4 K9; var6 = var4["mConstructionProjects"]
+      23 [-]: GETIMPORT R7 11; var7 = 0xC8802016
+      24 [-]: MOVE R8 R5   ; var8 = var5
+      25 [-]: CALL R7 2 4  ; var7, var8, var9 = var7(var8)
+      26 [-]: FORGPREP_INEXT R7 L8; 
+L 2:  27 [-]: GETTABLEKS R12 R11 K12; var12 = var11["mRelayReconstruction"]
+      28 [-]: JUMPIFNOT R12 L8; goto L8 if not var12
+      29 [-]: GETIMPORT R12 15; var12 = 0x34291F5C[0x397B920F]
+      30 [-]: GETTABLEKS R13 R11 K16; var13 = var11["mActivation"]
+      31 [-]: CALL R12 2 2 ; var12 = var12(var13)
+      32 [-]: LOADN R13 0  ; var13 = 0
+      33 [-]: JUMPIFNOTLE R12 R13 L8; goto L8 if var12 > var69447
+      34 [-]: LOADN R15 1  ; var15 = 1
+      35 [-]: LENGTH R13 R6; var13 = #var6
+      36 [-]: LOADN R14 1  ; var14 = 1
+      37 [-]: FORNPREP R13 L8; nforprep start - [escape at L8] -- var13 = iterator
+L 3:  38 [-]: GETTABLE R16 R6 R15; var16 = var6[var15]
+      39 [-]: GETTABLEKS R17 R11 K17; var17 = var11["mTag"]
+      40 [-]: GETTABLEKS R18 R16 K17; var18 = var16["mTag"]
+      41 [-]: JUMPIFNOTEQ R17 R18 L7; goto L7 if var17 ~= var1380641
+      42 [-]: DUPTABLE R17 21; 
+      43 [-]: NAMECALL R18 R16 K22; var19 = var16; var18 = var16[0x8F89D633]
+      44 [-]: CALL R18 2 2 ; var18 = var18(var19)
+      45 [-]: SETTABLEKS R18 R17 K18; var18["info"] = var17
+      46 [-]: LOADN R18 0  ; var18 = 0
+      47 [-]: SETTABLEKS R18 R17 K19; var18["progress"] = var17
+      48 [-]: GETIMPORT R18 24; var18 = 0x3584DCA2
+      49 [-]: CALL R18 1 2 ; var18 = var18()
+      50 [-]: SETTABLEKS R18 R17 K20; var18["goalId"] = var17
+      51 [-]: GETTABLEKS R18 R17 K20; var18 = var17["goalId"]
+      52 [-]: GETTABLEKS R20 R11 K25; var20 = var11["mId"]
+      53 [-]: NAMECALL R20 R20 K26; var21 = var20; var20 = var20[0xF537CFC7]
+      54 [-]: CALL R20 2 0 ; var20, ... = var20(var21)
+      55 [-]: NAMECALL R18 R18 K27; var19 = var18; var18 = var18[0x46E9D221]
+      56 [-]: CALL R18 0 1 ; var18(var19, ...)
+      57 [-]: GETIMPORT R18 29; var18 = 0x0469F296
+      58 [-]: GETTABLEKS R23 R17 K18; var23 = var17["info"]
+      59 [-]: GETTABLEKS R22 R23 K30; var22 = var23["mNode"]
+      60 [-]: NAMECALL R22 R22 K31; var23 = var22; var22 = var22[0x6D604BA7]
+      61 [-]: CALL R22 2 2 ; var22 = var22(var23)
+      62 [-]: MOVE R20 R22 ; var20 = var22
+      63 [-]: LOADK R21 K32; var21 = "Rebuild"
+      64 [-]: CONCAT R19 R20 R21; var19 = var20 .. var21
+      65 [-]: CALL R18 2 2 ; var18 = var18(var19)
+      66 [-]: SETTABLEKS R18 R17 K33; var18["rebuildNode"] = var17
+      67 [-]: GETIMPORT R18 24; var18 = 0x3584DCA2
+      68 [-]: CALL R18 1 2 ; var18 = var18()
+      69 [-]: GETIMPORT R19 35; var19 = 0xCFC01047
+      70 [-]: MOVE R20 R3  ; var20 = var3
+      71 [-]: CALL R19 2 4 ; var19, var20, var21 = var19(var20)
+      72 [-]: FORGPREP_NEXT R19 L5; 
+L 4:  73 [-]: GETTABLEKS R26 R23 K25; var26 = var23["mId"]
+      74 [-]: NAMECALL R26 R26 K26; var27 = var26; var26 = var26[0xF537CFC7]
+      75 [-]: CALL R26 2 0 ; var26, ... = var26(var27)
+      76 [-]: NAMECALL R24 R18 K27; var25 = var18; var24 = var18[0x46E9D221]
+      77 [-]: CALL R24 0 1 ; var24(var25, ...)
+      78 [-]: GETTABLEKS R24 R17 K20; var24 = var17["goalId"]
+      79 [-]: JUMPIFNOTEQ R24 R18 L5; goto L5 if var24 ~= var-1692985316
+      80 [-]: GETTABLEKS R24 R23 K36; var24 = var23["mCount"]
+      81 [-]: SETTABLEKS R24 R17 K19; var24["progress"] = var17
+      82 [-]: JUMP L6      ; goto L6
+L 5:  83 [-]: FORGLOOP R19 L4 2; 
+L 6:  84 [-]: FASTCALL2 52 R1 R17 L7; 
+      85 [-]: MOVE R20 R1  ; var20 = var1
+      86 [-]: MOVE R21 R17 ; var21 = var17
+      87 [-]: GETIMPORT R19 39; var19 = 0x33BDD652[0x23D5322F]
+      88 [-]: CALL R19 3 1 ; var19(var20, var21)
+L 7:  89 [-]: FORNLOOP R13 L3; nforloop end - iterate + goto L3
+L 8:  90 [-]: FORGLOOP R7 L2 2 [inext]; 
+L 9:  91 [-]: RETURN R1 1  ; 
 
 
 

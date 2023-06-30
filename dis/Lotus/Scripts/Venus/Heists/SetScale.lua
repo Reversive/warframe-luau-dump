@@ -5,9 +5,9 @@
 ; Is_vararg:       1
 ; Max Stack Size:  1
 
-       1 [-]: DUPCLOSURE R0 K0 []
-       2 [-]: SETGLOBAL R0 K1 ["SetScale"]
-       3 [-]: RETURN R0 0  
+       1 [-]: DUPCLOSURE R0 K0; 
+       2 [-]: SETGLOBAL R0 K1; "SetScale" = var0
+       3 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
@@ -17,16 +17,16 @@
 ; Is_vararg:       0
 ; Max Stack Size:  5
 
-       0 [-]: FASTCALL1 62 R0 L0
-       1 [-]: MOVE R3 R0   
-       2 [-]: GETIMPORT R2 1 [0x7B998233]
-       3 [-]: CALL R2 1 1  
-L 0:   4 [-]: JUMPIFNOT R2 L1
-       5 [-]: RETURN R0 0  
-L 1:   6 [-]: MOVE R4 R1   
-       7 [-]: NAMECALL R2 R0 K2 [0x2D9BA74F]
-       8 [-]: CALL R2 2 0  
-       9 [-]: RETURN R0 0  
+       0 [-]: FASTCALL1 62 R0 L0; 
+       1 [-]: MOVE R3 R0   ; var3 = var0
+       2 [-]: GETIMPORT R2 1; var2 = 0x7B998233
+       3 [-]: CALL R2 2 2  ; var2 = var2(var3)
+L 0:   4 [-]: JUMPIFNOT R2 L1; goto L1 if not var2
+       5 [-]: RETURN R0 0  ; 
+L 1:   6 [-]: MOVE R4 R1   ; var4 = var1
+       7 [-]: NAMECALL R2 R0 K2; var3 = var0; var2 = var0[0x2D9BA74F]
+       8 [-]: CALL R2 3 1  ; var2(var3, var4)
+       9 [-]: RETURN R0 0  ; 
 
 
 

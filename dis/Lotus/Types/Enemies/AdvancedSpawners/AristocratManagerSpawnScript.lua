@@ -5,63 +5,63 @@
 ; Is_vararg:       1
 ; Max Stack Size:  16
 
-       1 [-]: GETIMPORT R0 1 [0x0469F296]
-       2 [-]: LOADK R1 K2 ["Corpus"]
-       3 [-]: CALL R0 1 1  
-       4 [-]: GETIMPORT R1 1 [0x0469F296]
-       5 [-]: LOADK R2 K3 ["ShrineMarker"]
-       6 [-]: CALL R1 1 1  
-       7 [-]: GETIMPORT R2 5 [0x7ED0A956]
-       8 [-]: LOADK R3 K6 ["/Lotus/Types/Game/AutoTurretAvatar"]
-       9 [-]: CALL R2 1 1  
-      10 [-]: GETIMPORT R3 5 [0x7ED0A956]
-      11 [-]: LOADK R4 K7 ["/Lotus/Types/Game/SecurityCameraAvatar"]
-      12 [-]: CALL R3 1 1  
-      13 [-]: GETIMPORT R4 5 [0x7ED0A956]
-      14 [-]: LOADK R5 K8 ["/Lotus/Types/Items/Tokens/GreedTokens/GreedTokenBasePickup"]
-      15 [-]: CALL R4 1 1  
-      16 [-]: GETIMPORT R5 5 [0x7ED0A956]
-      17 [-]: LOADK R6 K9 ["/Lotus/Types/Enemies/Corpus/Aristocrats/Avatars/AristocratManagerAvatar"]
-      18 [-]: CALL R5 1 1  
-      19 [-]: GETIMPORT R6 11 [0x2D0FAD09]
-      20 [-]: LOADK R7 K12 ["Lotus.Scripts.Libs.PanicLib"]
-      21 [-]: CALL R6 1 1  
-      22 [-]: LOADN R7 0   
-      23 [-]: LOADN R8 0   
-      24 [-]: LOADNIL R9   
-      25 [-]: GETIMPORT R10 1 [0x0469F296]
-      26 [-]: LOADK R11 K13 ["AristoManagerTimer"]
-      27 [-]: CALL R10 1 1 
-      28 [-]: GETIMPORT R11 1 [0x0469F296]
-      29 [-]: LOADK R12 K14 ["AristoManagerKillCount"]
-      30 [-]: CALL R11 1 1 
-      31 [-]: DUPCLOSURE R12 K15 []
-      32 [-]: DUPCLOSURE R13 K16 []
-      33 [-]: NEWCLOSURE R14 P2
-      34 [-]: MOVE R0 R0   
-      35 [-]: MOVE R0 R2   
-      36 [-]: MOVE R0 R3   
-      37 [-]: MOVE R1 R8   
-      38 [-]: MOVE R0 R11  
-      39 [-]: SETGLOBAL R14 K17 ["OnDeath"]
-      40 [-]: NEWCLOSURE R14 P3
-      41 [-]: MOVE R1 R9   
-      42 [-]: NEWCLOSURE R15 P4
-      43 [-]: MOVE R0 R4   
-      44 [-]: MOVE R0 R5   
-      45 [-]: MOVE R0 R0   
-      46 [-]: MOVE R0 R12  
-      47 [-]: MOVE R0 R1   
-      48 [-]: MOVE R1 R9   
-      49 [-]: MOVE R1 R7   
-      50 [-]: MOVE R0 R10  
-      51 [-]: MOVE R1 R8   
-      52 [-]: MOVE R0 R11  
-      53 [-]: MOVE R0 R14  
-      54 [-]: MOVE R0 R6   
-      55 [-]: SETGLOBAL R15 K18 ["ManagerSpawnLogic"]
-      56 [-]: CLOSEUPVALS R7
-      57 [-]: RETURN R0 0  
+       1 [-]: GETIMPORT R0 1; var0 = 0x0469F296
+       2 [-]: LOADK R1 K2  ; var1 = "Corpus"
+       3 [-]: CALL R0 2 2  ; var0 = var0(var1)
+       4 [-]: GETIMPORT R1 1; var1 = 0x0469F296
+       5 [-]: LOADK R2 K3  ; var2 = "ShrineMarker"
+       6 [-]: CALL R1 2 2  ; var1 = var1(var2)
+       7 [-]: GETIMPORT R2 5; var2 = 0x7ED0A956
+       8 [-]: LOADK R3 K6  ; var3 = "/Lotus/Types/Game/AutoTurretAvatar"
+       9 [-]: CALL R2 2 2  ; var2 = var2(var3)
+      10 [-]: GETIMPORT R3 5; var3 = 0x7ED0A956
+      11 [-]: LOADK R4 K7  ; var4 = "/Lotus/Types/Game/SecurityCameraAvatar"
+      12 [-]: CALL R3 2 2  ; var3 = var3(var4)
+      13 [-]: GETIMPORT R4 5; var4 = 0x7ED0A956
+      14 [-]: LOADK R5 K8  ; var5 = "/Lotus/Types/Items/Tokens/GreedTokens/GreedTokenBasePickup"
+      15 [-]: CALL R4 2 2  ; var4 = var4(var5)
+      16 [-]: GETIMPORT R5 5; var5 = 0x7ED0A956
+      17 [-]: LOADK R6 K9  ; var6 = "/Lotus/Types/Enemies/Corpus/Aristocrats/Avatars/AristocratManagerAvatar"
+      18 [-]: CALL R5 2 2  ; var5 = var5(var6)
+      19 [-]: GETIMPORT R6 11; var6 = 0x2D0FAD09
+      20 [-]: LOADK R7 K12 ; var7 = "Lotus.Scripts.Libs.PanicLib"
+      21 [-]: CALL R6 2 2  ; var6 = var6(var7)
+      22 [-]: LOADN R7 0   ; var7 = 0
+      23 [-]: LOADN R8 0   ; var8 = 0
+      24 [-]: LOADNIL R9   ; var9 = nil
+      25 [-]: GETIMPORT R10 1; var10 = 0x0469F296
+      26 [-]: LOADK R11 K13; var11 = "AristoManagerTimer"
+      27 [-]: CALL R10 2 2 ; var10 = var10(var11)
+      28 [-]: GETIMPORT R11 1; var11 = 0x0469F296
+      29 [-]: LOADK R12 K14; var12 = "AristoManagerKillCount"
+      30 [-]: CALL R11 2 2 ; var11 = var11(var12)
+      31 [-]: DUPCLOSURE R12 K15; 
+      32 [-]: DUPCLOSURE R13 K16; 
+      33 [-]: NEWCLOSURE R14 P2; 
+      34 [-]: CAPTURE VAL R0; 
+      35 [-]: CAPTURE VAL R2; 
+      36 [-]: CAPTURE VAL R3; 
+      37 [-]: CAPTURE REF R8; 
+      38 [-]: CAPTURE VAL R11; 
+      39 [-]: SETGLOBAL R14 K17; "OnDeath" = var14
+      40 [-]: NEWCLOSURE R14 P3; 
+      41 [-]: CAPTURE REF R9; 
+      42 [-]: NEWCLOSURE R15 P4; 
+      43 [-]: CAPTURE VAL R4; 
+      44 [-]: CAPTURE VAL R5; 
+      45 [-]: CAPTURE VAL R0; 
+      46 [-]: CAPTURE VAL R12; 
+      47 [-]: CAPTURE VAL R1; 
+      48 [-]: CAPTURE REF R9; 
+      49 [-]: CAPTURE REF R7; 
+      50 [-]: CAPTURE VAL R10; 
+      51 [-]: CAPTURE REF R8; 
+      52 [-]: CAPTURE VAL R11; 
+      53 [-]: CAPTURE VAL R14; 
+      54 [-]: CAPTURE VAL R6; 
+      55 [-]: SETGLOBAL R15 K18; "ManagerSpawnLogic" = var15
+      56 [-]: CLOSEUPVALS R7; 
+      57 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
@@ -71,20 +71,20 @@
 ; Is_vararg:       0
 ; Max Stack Size:  8
 
-       0 [-]: GETIMPORT R0 1 [0x89326C93]
-       1 [-]: GETIMPORT R2 3 [0x0469F296]
-       2 [-]: LOADK R3 K4 ["ShrineTokenAction"]
-       3 [-]: CALL R2 1 -1 
-       4 [-]: NAMECALL R0 R0 K5 [0xC7FCADA9]
-       5 [-]: CALL R0 -1 1 
-       6 [-]: GETIMPORT R1 7 [0xC8802016]
-       7 [-]: MOVE R2 R0   
-       8 [-]: CALL R1 1 3  
-       9 [-]: FORGPREP_INEXT R1 L1
-L 0:  10 [-]: NAMECALL R6 R5 K8 [0xF4E253B6]
-      11 [-]: CALL R6 1 0  
-L 1:  12 [-]: FORGLOOP R1 L0 2 [inext]
-      13 [-]: RETURN R0 0  
+       0 [-]: GETIMPORT R0 1; var0 = 0x89326C93
+       1 [-]: GETIMPORT R2 3; var2 = 0x0469F296
+       2 [-]: LOADK R3 K4  ; var3 = "ShrineTokenAction"
+       3 [-]: CALL R2 2 0  ; var2, ... = var2(var3)
+       4 [-]: NAMECALL R0 R0 K5; var1 = var0; var0 = var0[0xC7FCADA9]
+       5 [-]: CALL R0 0 2  ; var0 = var0(var1, ...)
+       6 [-]: GETIMPORT R1 7; var1 = 0xC8802016
+       7 [-]: MOVE R2 R0   ; var2 = var0
+       8 [-]: CALL R1 2 4  ; var1, var2, var3 = var1(var2)
+       9 [-]: FORGPREP_INEXT R1 L1; 
+L 0:  10 [-]: NAMECALL R6 R5 K8; var7 = var5; var6 = var5[0xF4E253B6]
+      11 [-]: CALL R6 2 1  ; var6(var7)
+L 1:  12 [-]: FORGLOOP R1 L0 2 [inext]; 
+      13 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
@@ -94,18 +94,18 @@ L 1:  12 [-]: FORGLOOP R1 L0 2 [inext]
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
-       0 [-]: LOADN R1 2   
-       1 [-]: JUMPIFEQ R0 R1 L0
-       2 [-]: GETIMPORT R1 2 ["MT_DEFEND"]
-       3 [-]: JUMPIFEQ R0 R1 L0
-       4 [-]: LOADN R1 33  
-       5 [-]: JUMPIFEQ R0 R1 L0
-       6 [-]: LOADN R1 13  
-       7 [-]: JUMPIFNOTEQ R0 R1 L1
-L 0:   8 [-]: LOADB R1 1   
-       9 [-]: RETURN R1 1  
-L 1:  10 [-]: LOADB R1 0   
-      11 [-]: RETURN R1 1  
+       0 [-]: LOADN R1 2   ; var1 = 2
+       1 [-]: JUMPIFEQ R0 R1 L0; goto L0 if var0 == var131406
+       2 [-]: GETIMPORT R1 2; var1 = 0x6C97A788["MT_DEFEND"]
+       3 [-]: JUMPIFEQ R0 R1 L0; goto L0 if var0 == var2163015
+       4 [-]: LOADN R1 33  ; var1 = 33
+       5 [-]: JUMPIFEQ R0 R1 L0; goto L0 if var0 == var852295
+       6 [-]: LOADN R1 13  ; var1 = 13
+       7 [-]: JUMPIFNOTEQ R0 R1 L1; goto L1 if var0 ~= var65819
+L 0:   8 [-]: LOADB R1 1   ; var1 = true
+       9 [-]: RETURN R1 1  ; 
+L 1:  10 [-]: LOADB R1 0   ; var1 = false
+      11 [-]: RETURN R1 1  ; 
 
 
 ; Name:            
@@ -115,39 +115,39 @@ L 1:  10 [-]: LOADB R1 0
 ; Is_vararg:       0
 ; Max Stack Size:  6
 
-       0 [-]: NAMECALL R1 R0 K0 [0x01145F7A]
-       1 [-]: CALL R1 1 1  
-       2 [-]: FASTCALL1 62 R1 L0
-       3 [-]: MOVE R3 R1   
-       4 [-]: GETIMPORT R2 2 [0x7B998233]
-       5 [-]: CALL R2 1 1  
-L 0:   6 [-]: JUMPIFNOT R2 L1
-       7 [-]: RETURN R0 0  
-L 1:   8 [-]: GETIMPORT R4 4 ["gLotusNpcAvatarType"]
-       9 [-]: NAMECALL R2 R1 K5 [0xF2DEAF69]
-      10 [-]: CALL R2 2 1  
-      11 [-]: JUMPIFNOT R2 L2
-      12 [-]: NAMECALL R2 R1 K6 [0x808B79E6]
-      13 [-]: CALL R2 1 1  
-      14 [-]: GETUPVAL R3 0
-      15 [-]: JUMPIFNOTEQ R2 R3 L2
-      16 [-]: GETUPVAL R4 1
-      17 [-]: NAMECALL R2 R1 K5 [0xF2DEAF69]
-      18 [-]: CALL R2 2 1  
-      19 [-]: JUMPIF R2 L2 
-      20 [-]: GETUPVAL R4 2
-      21 [-]: NAMECALL R2 R1 K5 [0xF2DEAF69]
-      22 [-]: CALL R2 2 1  
-      23 [-]: JUMPIF R2 L2 
-      24 [-]: GETUPVAL R3 3
-      25 [-]: ADDK R2 R3 K7 [1]
-      26 [-]: SETUPVAL R2 3
-      27 [-]: GETIMPORT R2 9 [0xBE190284]
-      28 [-]: GETUPVAL R4 4
-      29 [-]: GETUPVAL R5 3
-      30 [-]: NAMECALL R2 R2 K10 [0x751F061D]
-      31 [-]: CALL R2 3 0  
-L 2:  32 [-]: RETURN R0 0  
+       0 [-]: NAMECALL R1 R0 K0; var2 = var0; var1 = var0[0x01145F7A]
+       1 [-]: CALL R1 2 2  ; var1 = var1(var2)
+       2 [-]: FASTCALL1 62 R1 L0; 
+       3 [-]: MOVE R3 R1   ; var3 = var1
+       4 [-]: GETIMPORT R2 2; var2 = 0x7B998233
+       5 [-]: CALL R2 2 2  ; var2 = var2(var3)
+L 0:   6 [-]: JUMPIFNOT R2 L1; goto L1 if not var2
+       7 [-]: RETURN R0 0  ; 
+L 1:   8 [-]: GETIMPORT R4 4; var4 = gLotusNpcAvatarType
+       9 [-]: NAMECALL R2 R1 K5; var3 = var1; var2 = var1[0xF2DEAF69]
+      10 [-]: CALL R2 3 2  ; var2 = var2(var3, var4)
+      11 [-]: JUMPIFNOT R2 L2; goto L2 if not var2
+      12 [-]: NAMECALL R2 R1 K6; var3 = var1; var2 = var1[0x808B79E6]
+      13 [-]: CALL R2 2 2  ; var2 = var2(var3)
+      14 [-]: GETUPVAL R3 0; var3 = upvalues[0]
+      15 [-]: JUMPIFNOTEQ R2 R3 L2; goto L2 if var2 ~= var66567
+      16 [-]: GETUPVAL R4 1; var4 = upvalues[1]
+      17 [-]: NAMECALL R2 R1 K5; var3 = var1; var2 = var1[0xF2DEAF69]
+      18 [-]: CALL R2 3 2  ; var2 = var2(var3, var4)
+      19 [-]: JUMPIF R2 L2 ; goto L2 if var2
+      20 [-]: GETUPVAL R4 2; var4 = upvalues[2]
+      21 [-]: NAMECALL R2 R1 K5; var3 = var1; var2 = var1[0xF2DEAF69]
+      22 [-]: CALL R2 3 2  ; var2 = var2(var3, var4)
+      23 [-]: JUMPIF R2 L2 ; goto L2 if var2
+      24 [-]: GETUPVAL R3 3; var3 = upvalues[3]
+      25 [-]: ADDK R2 R3 K7; var2 = var3 + 1
+      26 [-]: SETUPVAL R2 3; upvalues[2] = var3
+      27 [-]: GETIMPORT R2 9; var2 = 0xBE190284
+      28 [-]: GETUPVAL R4 4; var4 = upvalues[4]
+      29 [-]: GETUPVAL R5 3; var5 = upvalues[3]
+      30 [-]: NAMECALL R2 R2 K10; var3 = var2; var2 = var2[0x751F061D]
+      31 [-]: CALL R2 4 1  ; var2(var3, var4, var5)
+L 2:  32 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
@@ -157,76 +157,76 @@ L 2:  32 [-]: RETURN R0 0
 ; Is_vararg:       0
 ; Max Stack Size:  12
 
-       0 [-]: GETIMPORT R1 1 [0x89326C93]
-       1 [-]: NAMECALL R1 R1 K2 [0x29EF273D]
-       2 [-]: CALL R1 1 1  
-       3 [-]: NAMECALL R1 R1 K3 [0x66905CB0]
-       4 [-]: CALL R1 1 1  
-       5 [-]: SETUPVAL R1 0
-       6 [-]: NEWTABLE R1 0 0
-       7 [-]: NEWTABLE R2 0 0
-       8 [-]: GETUPVAL R3 0
-       9 [-]: GETIMPORT R5 5 ["gNpcSpawnPointType"]
-      10 [-]: GETIMPORT R6 7 [0x259D183F]
-      11 [-]: GETIMPORT R7 9 [0xDE28B675]
-      12 [-]: LOADB R8 1   
-      13 [-]: MOVE R9 R0   
-      14 [-]: NAMECALL R3 R3 K10 [0xF0606E8B]
-      15 [-]: CALL R3 6 1  
-      16 [-]: MOVE R1 R3   
-      17 [-]: FASTCALL1 62 R1 L0
-      18 [-]: MOVE R4 R1   
-      19 [-]: GETIMPORT R3 12 [0x7B998233]
-      20 [-]: CALL R3 1 1  
-L 0:  21 [-]: JUMPIF R3 L3 
-      22 [-]: LOADN R5 1   
-      23 [-]: LENGTH R3 R1 
-      24 [-]: LOADN R4 1   
-      25 [-]: FORNPREP R3 L3
-L 1:  26 [-]: GETTABLE R6 R1 R5
-      27 [-]: NAMECALL R6 R6 K13 [0x22DA1852]
-      28 [-]: CALL R6 1 1  
-      29 [-]: GETIMPORT R7 15 ["EMPTY_SYMBOL"]
-      30 [-]: JUMPIFNOTEQ R6 R7 L2
-      31 [-]: GETTABLE R9 R1 R5
-      32 [-]: NAMECALL R7 R0 K16 [0x68D0CBED]
-      33 [-]: CALL R7 2 1  
-      34 [-]: NEWTABLE R10 1 1
-      35 [-]: GETTABLE R11 R1 R5
-      36 [-]: SETLIST R10 R11 1 [1]
-      37 [-]: SETTABLEKS R7 R10 K17 ["dist"]
-      38 [-]: FASTCALL2 52 R2 R10 L2
-      39 [-]: MOVE R9 R2   
-      40 [-]: GETIMPORT R8 20 [0x23D5322F]
-      41 [-]: CALL R8 2 0  
-L 2:  42 [-]: FORNLOOP R3 L1
-L 3:  43 [-]: LENGTH R3 R2 
-      44 [-]: LOADN R4 1   
-      45 [-]: JUMPIFNOTLT R4 R3 L4
-      46 [-]: DUPCLOSURE R3 K21 []
-      47 [-]: GETIMPORT R4 23 [0xF21B1D8E]
-      48 [-]: MOVE R5 R2   
-      49 [-]: MOVE R6 R3   
-      50 [-]: CALL R4 2 0  
-L 4:  51 [-]: LOADN R5 1   
-      52 [-]: LENGTH R3 R2 
-      53 [-]: LOADN R4 1   
-      54 [-]: FORNPREP R3 L7
-L 5:  55 [-]: GETIMPORT R6 1 [0x89326C93]
-      56 [-]: GETTABLE R9 R2 R5
-      57 [-]: GETTABLEN R8 R9 1
-      58 [-]: NAMECALL R6 R6 K24 [0xE5A34EAE]
-      59 [-]: CALL R6 2 1  
-      60 [-]: JUMPIF R6 L6 
-      61 [-]: GETTABLE R7 R2 R5
-      62 [-]: GETTABLEN R6 R7 1
-      63 [-]: RETURN R6 1  
-L 6:  64 [-]: FORNLOOP R3 L5
-L 7:  65 [-]: GETIMPORT R3 26 [0x3D106989]
-      66 [-]: LOADK R4 K27 ["No valid spawnPoints found in given radius"]
-      67 [-]: CALL R3 1 0  
-      68 [-]: LOADNIL R3   
-      69 [-]: RETURN R3 1  
+       0 [-]: GETIMPORT R1 1; var1 = 0x89326C93
+       1 [-]: NAMECALL R1 R1 K2; var2 = var1; var1 = var1[0x29EF273D]
+       2 [-]: CALL R1 2 2  ; var1 = var1(var2)
+       3 [-]: NAMECALL R1 R1 K3; var2 = var1; var1 = var1[0x66905CB0]
+       4 [-]: CALL R1 2 2  ; var1 = var1(var2)
+       5 [-]: SETUPVAL R1 0; upvalues[1] = var0
+       6 [-]: NEWTABLE R1 0 0; var1 = {}
+       7 [-]: NEWTABLE R2 0 0; var2 = {}
+       8 [-]: GETUPVAL R3 0; var3 = upvalues[0]
+       9 [-]: GETIMPORT R5 5; var5 = gNpcSpawnPointType
+      10 [-]: GETIMPORT R6 7; var6 = 0x259D183F
+      11 [-]: GETIMPORT R7 9; var7 = 0xDE28B675
+      12 [-]: LOADB R8 1   ; var8 = true
+      13 [-]: MOVE R9 R0   ; var9 = var0
+      14 [-]: NAMECALL R3 R3 K10; var4 = var3; var3 = var3[0xF0606E8B]
+      15 [-]: CALL R3 7 2  ; var3 = var3(var4, var5, var6, var7, var8, var9)
+      16 [-]: MOVE R1 R3   ; var1 = var3
+      17 [-]: FASTCALL1 62 R1 L0; 
+      18 [-]: MOVE R4 R1   ; var4 = var1
+      19 [-]: GETIMPORT R3 12; var3 = 0x7B998233
+      20 [-]: CALL R3 2 2  ; var3 = var3(var4)
+L 0:  21 [-]: JUMPIF R3 L3 ; goto L3 if var3
+      22 [-]: LOADN R5 1   ; var5 = 1
+      23 [-]: LENGTH R3 R1 ; var3 = #var1
+      24 [-]: LOADN R4 1   ; var4 = 1
+      25 [-]: FORNPREP R3 L3; nforprep start - [escape at L3] -- var3 = iterator
+L 1:  26 [-]: GETTABLE R6 R1 R5; var6 = var1[var5]
+      27 [-]: NAMECALL R6 R6 K13; var7 = var6; var6 = var6[0x22DA1852]
+      28 [-]: CALL R6 2 2  ; var6 = var6(var7)
+      29 [-]: GETIMPORT R7 15; var7 = EMPTY_SYMBOL
+      30 [-]: JUMPIFNOTEQ R6 R7 L2; goto L2 if var6 ~= var83953975
+      31 [-]: GETTABLE R9 R1 R5; var9 = var1[var5]
+      32 [-]: NAMECALL R7 R0 K16; var8 = var0; var7 = var0[0x68D0CBED]
+      33 [-]: CALL R7 3 2  ; var7 = var7(var8, var9)
+      34 [-]: NEWTABLE R10 1 1; var10 = {}
+      35 [-]: GETTABLE R11 R1 R5; var11 = var1[var5]
+      36 [-]: SETLIST R10 R11 1 [1]; var10[1] = var11; var10[2] = var12; 
+      37 [-]: SETTABLEKS R7 R10 K17; var7["dist"] = var10
+      38 [-]: FASTCALL2 52 R2 R10 L2; 
+      39 [-]: MOVE R9 R2   ; var9 = var2
+      40 [-]: GETIMPORT R8 20; var8 = 0x33BDD652[0x23D5322F]
+      41 [-]: CALL R8 3 1  ; var8(var9, var10)
+L 2:  42 [-]: FORNLOOP R3 L1; nforloop end - iterate + goto L1
+L 3:  43 [-]: LENGTH R3 R2 ; var3 = #var2
+      44 [-]: LOADN R4 1   ; var4 = 1
+      45 [-]: JUMPIFNOTLT R4 R3 L4; goto L4 if var4 >= var1377080
+      46 [-]: DUPCLOSURE R3 K21; 
+      47 [-]: GETIMPORT R4 23; var4 = 0x33BDD652[0xF21B1D8E]
+      48 [-]: MOVE R5 R2   ; var5 = var2
+      49 [-]: MOVE R6 R3   ; var6 = var3
+      50 [-]: CALL R4 3 1  ; var4(var5, var6)
+L 4:  51 [-]: LOADN R5 1   ; var5 = 1
+      52 [-]: LENGTH R3 R2 ; var3 = #var2
+      53 [-]: LOADN R4 1   ; var4 = 1
+      54 [-]: FORNPREP R3 L7; nforprep start - [escape at L7] -- var3 = iterator
+L 5:  55 [-]: GETIMPORT R6 1; var6 = 0x89326C93
+      56 [-]: GETTABLE R9 R2 R5; var9 = var2[var5]
+      57 [-]: GETTABLEN R8 R9 1; var8 = var9[1]
+      58 [-]: NAMECALL R6 R6 K24; var7 = var6; var6 = var6[0xE5A34EAE]
+      59 [-]: CALL R6 3 2  ; var6 = var6(var7, var8)
+      60 [-]: JUMPIF R6 L6 ; goto L6 if var6
+      61 [-]: GETTABLE R7 R2 R5; var7 = var2[var5]
+      62 [-]: GETTABLEN R6 R7 1; var6 = var7[1]
+      63 [-]: RETURN R6 1  ; 
+L 6:  64 [-]: FORNLOOP R3 L5; nforloop end - iterate + goto L5
+L 7:  65 [-]: GETIMPORT R3 26; var3 = 0x3D106989
+      66 [-]: LOADK R4 K27 ; var4 = "No valid spawnPoints found in given radius"
+      67 [-]: CALL R3 2 1  ; var3(var4)
+      68 [-]: LOADNIL R3   ; var3 = nil
+      69 [-]: RETURN R3 1  ; 
 
 
 ; Name:            
@@ -236,446 +236,438 @@ L 7:  65 [-]: GETIMPORT R3 26 [0x3D106989]
 ; Is_vararg:       0
 ; Max Stack Size:  33
 
-       0 [-]: GETIMPORT R1 1 [0xBE190284]
-L 0:   1 [-]: FASTCALL1 62 R1 L1
-       2 [-]: MOVE R3 R1   
-       3 [-]: GETIMPORT R2 3 [0x7B998233]
-       4 [-]: CALL R2 1 1  
-L 1:   5 [-]: JUMPIFNOT R2 L2
-       6 [-]: GETIMPORT R2 5 [0xCBD666E1]
-       7 [-]: LOADN R3 0   
-       8 [-]: CALL R2 1 0  
-       9 [-]: GETIMPORT R1 1 [0xBE190284]
-      10 [-]: JUMPBACK L0  
-L 2:  11 [-]: GETIMPORT R2 7 [0x89326C93]
-      12 [-]: NAMECALL R2 R2 K8 [0x61BE252A]
-      13 [-]: CALL R2 1 1  
-      14 [-]: JUMPXEQKN R2 K9 L3 NOT [0]
-      15 [-]: GETIMPORT R2 5 [0xCBD666E1]
-      16 [-]: LOADN R3 0   
-      17 [-]: CALL R2 1 0  
-      18 [-]: JUMPBACK L2  
-L 3:  19 [-]: GETIMPORT R3 7 [0x89326C93]
-      20 [-]: NAMECALL R3 R3 K10 [0x78298275]
-      21 [-]: CALL R3 1 -1 
-      22 [-]: FASTCALL 62 L4
-      23 [-]: GETIMPORT R2 3 [0x7B998233]
-      24 [-]: CALL R2 -1 1 
-L 4:  25 [-]: JUMPIFNOT R2 L5
-      26 [-]: GETIMPORT R2 5 [0xCBD666E1]
-      27 [-]: LOADN R3 0   
-      28 [-]: CALL R2 1 0  
-      29 [-]: JUMPBACK L3  
-L 5:  30 [-]: GETIMPORT R2 7 [0x89326C93]
-      31 [-]: GETUPVAL R4 0
-      32 [-]: NAMECALL R2 R2 K11 [0xFB669000]
-      33 [-]: CALL R2 2 1  
-      34 [-]: FASTCALL1 62 R2 L6
-      35 [-]: MOVE R4 R2   
-      36 [-]: GETIMPORT R3 3 [0x7B998233]
-      37 [-]: CALL R3 1 1  
-L 6:  38 [-]: JUMPIF R3 L7 
-      39 [-]: LENGTH R3 R2 
-      40 [-]: LOADN R4 0   
-      41 [-]: JUMPIFNOTLT R4 R3 L7
-      42 [-]: GETIMPORT R3 13 [0x3D106989]
-      43 [-]: LOADK R4 K14 ["Corpus Greed: Exiting, token already dropped."]
-      44 [-]: CALL R3 1 0  
-      45 [-]: RETURN R0 0  
-L 7:  46 [-]: GETIMPORT R3 7 [0x89326C93]
-      47 [-]: GETUPVAL R5 1
-      48 [-]: NAMECALL R3 R3 K11 [0xFB669000]
-      49 [-]: CALL R3 2 1  
-      50 [-]: FASTCALL1 62 R3 L8
-      51 [-]: MOVE R5 R3   
-      52 [-]: GETIMPORT R4 3 [0x7B998233]
-      53 [-]: CALL R4 1 1  
-L 8:  54 [-]: JUMPIF R4 L9 
-      55 [-]: GETIMPORT R4 13 [0x3D106989]
-      56 [-]: LOADK R5 K15 ["Corpus Greed: Exiting, Treasurer already active."]
-      57 [-]: CALL R4 1 0  
-      58 [-]: RETURN R0 0  
-L 9:  59 [-]: GETIMPORT R4 1 [0xBE190284]
-      60 [-]: NAMECALL R4 R4 K16 [0xEF893AEC]
-      61 [-]: CALL R4 1 1  
-      62 [-]: FASTCALL1 62 R4 L10
-      63 [-]: MOVE R6 R4   
-      64 [-]: GETIMPORT R5 3 [0x7B998233]
-      65 [-]: CALL R5 1 1  
-L10:  66 [-]: JUMPIF R5 L12
-      67 [-]: GETTABLEKS R6 R4 K17 ["levelOverride"]
-      68 [-]: FASTCALL1 62 R6 L11
-      69 [-]: GETIMPORT R5 3 [0x7B998233]
-      70 [-]: CALL R5 1 1  
-L11:  71 [-]: JUMPIFNOT R5 L13
-L12:  72 [-]: GETIMPORT R5 13 [0x3D106989]
-      73 [-]: LOADK R6 K18 ["Corpus Greed: Exiting, proc level loaded from editor."]
-      74 [-]: CALL R5 1 0  
-      75 [-]: RETURN R0 0  
-L13:  76 [-]: GETIMPORT R5 21 ["faction"]
-      77 [-]: GETUPVAL R6 2
-      78 [-]: JUMPIFEQ R5 R6 L14
-      79 [-]: GETIMPORT R5 13 [0x3D106989]
-      80 [-]: LOADK R6 K22 ["Corpus Greed: Exiting and disabling shrines, main faction isn't Corpus."]
-      81 [-]: CALL R5 1 0  
-      82 [-]: GETUPVAL R5 3
-      83 [-]: CALL R5 0 0  
-      84 [-]: RETURN R0 0  
-L14:  85 [-]: GETTABLEKS R6 R4 K23 ["invasionId"]
-      86 [-]: FASTCALL1 62 R6 L15
-      87 [-]: GETIMPORT R5 3 [0x7B998233]
-      88 [-]: CALL R5 1 1  
-L15:  89 [-]: JUMPIF R5 L16
-      90 [-]: GETTABLEKS R5 R4 K23 ["invasionId"]
-      91 [-]: JUMPXEQKS R5 K24 L16 [""]
-      92 [-]: GETIMPORT R5 13 [0x3D106989]
-      93 [-]: LOADK R6 K25 ["Corpus Greed: Exiting and disabling shrines since this is an invasion mission."]
-      94 [-]: CALL R5 1 0  
-      95 [-]: GETUPVAL R5 3
-      96 [-]: CALL R5 0 0  
-      97 [-]: RETURN R0 0  
-L16:  98 [-]: GETIMPORT R5 7 [0x89326C93]
-      99 [-]: GETIMPORT R7 27 [0x0469F296]
-     100 [-]: LOADK R8 K28 ["PurgatorySpawn"]
-     101 [-]: CALL R7 1 -1 
-     102 [-]: NAMECALL R5 R5 K29 [0x46A0EBF5]
-     103 [-]: CALL R5 -1 1 
-     104 [-]: FASTCALL1 62 R5 L17
-     105 [-]: MOVE R7 R5   
-     106 [-]: GETIMPORT R6 3 [0x7B998233]
-     107 [-]: CALL R6 1 1  
-L17: 108 [-]: JUMPIFNOT R6 L18
-     109 [-]: GETIMPORT R6 13 [0x3D106989]
-     110 [-]: LOADK R7 K30 ["Corpus Greed: Disabling shrines, no purgatory tile present in this level."]
-     111 [-]: CALL R6 1 0  
-     112 [-]: GETUPVAL R6 3
-     113 [-]: CALL R6 0 0  
-L18: 114 [-]: GETTABLEKS R6 R4 K17 ["levelOverride"]
-     115 [-]: NAMECALL R6 R6 K31 [0xED4E0128]
-     116 [-]: CALL R6 1 1  
-     117 [-]: GETIMPORT R7 34 [0xA5C556B9]
-     118 [-]: GETIMPORT R8 36 [0x64FB1586]
-     119 [-]: MOVE R9 R6   
-     120 [-]: CALL R8 1 1  
-     121 [-]: LOADK R9 K37 ["Protea"]
-     122 [-]: CALL R7 2 1  
-     123 [-]: JUMPIFNOT R7 L19
-     124 [-]: GETIMPORT R7 13 [0x3D106989]
-     125 [-]: LOADK R8 K38 ["Corpus Greed: Exiting, protea quest active."]
-     126 [-]: CALL R7 1 0  
-     127 [-]: RETURN R0 0  
-L19: 128 [-]: GETIMPORT R7 40 ["gQuestMission"]
-     129 [-]: JUMPIFNOT R7 L20
-     130 [-]: GETIMPORT R7 13 [0x3D106989]
-     131 [-]: LOADK R8 K41 ["Corpus Greed: Exiting and disabling shrines, quest mission active."]
-     132 [-]: CALL R7 1 0  
-     133 [-]: GETUPVAL R7 3
-     134 [-]: CALL R7 0 0  
-     135 [-]: RETURN R0 0  
-L20: 136 [-]: NAMECALL R7 R1 K42 [0x5C390F04]
-     137 [-]: CALL R7 1 1  
-     138 [-]: LOADNIL R8   
-     139 [-]: LOADN R10 8  
-     140 [-]: JUMPIFEQ R7 R10 L21
-     141 [-]: LOADB R9 0 +1
-L21: 142 [-]: LOADB R9 1   
-L22: 143 [-]: JUMPIFNOT R9 L25
-     144 [-]: GETIMPORT R10 7 [0x89326C93]
-     145 [-]: GETUPVAL R12 4
-     146 [-]: NAMECALL R10 R10 K43 [0xC7FCADA9]
-     147 [-]: CALL R10 2 1 
-     148 [-]: MOVE R8 R10  
-     149 [-]: FASTCALL1 62 R8 L23
-     150 [-]: MOVE R11 R8  
-     151 [-]: GETIMPORT R10 3 [0x7B998233]
-     152 [-]: CALL R10 1 1 
-L23: 153 [-]: JUMPIF R10 L24
-     154 [-]: LENGTH R10 R8
-     155 [-]: JUMPXEQKN R10 K9 L25 NOT [0]
-L24: 156 [-]: GETIMPORT R10 13 [0x3D106989]
-     157 [-]: LOADK R11 K44 ["Corpus Greed: No shrines found!"]
-     158 [-]: CALL R10 1 0 
-     159 [-]: RETURN R0 0  
-L25: 160 [-]: LOADN R11 2  
-     161 [-]: JUMPIFEQ R7 R11 L26
-     162 [-]: GETIMPORT R11 47 ["MT_DEFEND"]
-     163 [-]: JUMPIFEQ R7 R11 L26
-     164 [-]: LOADN R11 33 
-     165 [-]: JUMPIFEQ R7 R11 L26
-     166 [-]: LOADN R11 13 
-     167 [-]: JUMPIFNOTEQ R7 R11 L27
-L26: 168 [-]: LOADB R10 1  
-     169 [-]: JUMP L28
-    
-L27: 170 [-]: LOADB R10 0  
-L28: 171 [-]: LOADNIL R11  
-     172 [-]: JUMPIFNOT R10 L29
-     173 [-]: GETIMPORT R12 13 [0x3D106989]
-     174 [-]: LOADK R13 K48 ["Corpus Greed: Enless mission rules apply"]
-     175 [-]: CALL R12 1 0 
-     176 [-]: GETIMPORT R12 50 [0xC163F229]
-     177 [-]: GETIMPORT R13 52 [0x5597C2AA]
-     178 [-]: GETIMPORT R14 54 [0x5FAB5A20]
-     179 [-]: CALL R12 2 1 
-     180 [-]: MOVE R11 R12 
-     181 [-]: JUMP L30
-    
-L29: 182 [-]: GETIMPORT R12 50 [0xC163F229]
-     183 [-]: GETIMPORT R13 56 [0x16E7FC61]
-     184 [-]: GETIMPORT R14 58 [0x08FB6E0F]
-     185 [-]: CALL R12 2 1 
-     186 [-]: MOVE R11 R12 
-L30: 187 [-]: GETIMPORT R12 7 [0x89326C93]
-     188 [-]: NAMECALL R12 R12 K59 [0x29EF273D]
-     189 [-]: CALL R12 1 1 
-     190 [-]: NAMECALL R12 R12 K60 [0x66905CB0]
-     191 [-]: CALL R12 1 1 
-     192 [-]: SETUPVAL R12 5
-     193 [-]: LOADK R14 K61 ["OnDeath"]
-     194 [-]: NAMECALL R12 R1 K62 [0xE7EF698D]
-     195 [-]: CALL R12 2 0 
-     196 [-]: GETUPVAL R12 5
-     197 [-]: NAMECALL R12 R12 K63 [0x6968EA36]
-     198 [-]: CALL R12 1 1 
-     199 [-]: GETUPVAL R15 7
-     200 [-]: LOADN R16 0  
-     201 [-]: NAMECALL R13 R1 K64 [0x0EB34C69]
-     202 [-]: CALL R13 3 1 
-     203 [-]: SETUPVAL R13 6
-     204 [-]: GETUPVAL R13 6
-     205 [-]: LOADN R14 1000
-     206 [-]: JUMPIFNOTLE R14 R13 L31
-     207 [-]: GETIMPORT R13 13 [0x3D106989]
-     208 [-]: LOADK R14 K65 ["Corpus Greed: Exiting, Treasurer event has already concluded"]
-     209 [-]: CALL R13 1 0 
-     210 [-]: RETURN R0 0  
-L31: 211 [-]: GETUPVAL R15 9
-     212 [-]: LOADN R16 0  
-     213 [-]: NAMECALL R13 R1 K64 [0x0EB34C69]
-     214 [-]: CALL R13 3 1 
-     215 [-]: SETUPVAL R13 8
-     216 [-]: GETIMPORT R13 13 [0x3D106989]
-     217 [-]: LOADK R14 K66 ["Corpus Greed: Starting..."]
-     218 [-]: CALL R13 1 0 
-L32: 219 [-]: GETUPVAL R13 6
-     220 [-]: JUMPIFLE R13 R11 L33
-     221 [-]: GETUPVAL R13 8
-     222 [-]: GETIMPORT R14 68 [0xF0CB315A]
-     223 [-]: JUMPIFNOTLE R13 R14 L35
-L33: 224 [-]: GETIMPORT R13 5 [0xCBD666E1]
-     225 [-]: LOADK R14 K69 [0.5]
-     226 [-]: CALL R13 1 0 
-     227 [-]: GETUPVAL R15 6
-     228 [-]: ADDK R14 R15 K69 [0.5]
-     229 [-]: GETIMPORT R15 71 [0x67652851]
-     230 [-]: CALL R15 0 1 
-     231 [-]: ADD R13 R14 R15
-     232 [-]: SETUPVAL R13 6
-     233 [-]: GETUPVAL R15 7
-     234 [-]: GETUPVAL R17 6
-     235 [-]: FASTCALL1 12 R17 L34
-     236 [-]: GETIMPORT R16 74 [0x55F27C30]
-     237 [-]: CALL R16 1 -1
-L34: 238 [-]: NAMECALL R13 R1 K75 [0x751F061D]
-     239 [-]: CALL R13 -1 0
-     240 [-]: JUMPBACK L32 
-L35: 241 [-]: NAMECALL R13 R0 K76 [0x6189CB44]
-     242 [-]: CALL R13 1 1 
-     243 [-]: GETTABLEN R14 R13 1
-     244 [-]: LOADNIL R15  
-     245 [-]: LOADB R16 0  
-     246 [-]: LOADNIL R17  
-     247 [-]: GETIMPORT R18 78 [0x990F0A25]
-L36: 248 [-]: JUMPIF R16 L61
-     249 [-]: JUMPIFNOT R9 L37
-     250 [-]: GETUPVAL R19 5
-     251 [-]: GETIMPORT R21 27 [0x0469F296]
-     252 [-]: CALL R21 0 1 
-     253 [-]: LOADB R22 0  
-     254 [-]: LOADB R23 0  
-     255 [-]: LOADB R24 0  
-     256 [-]: NAMECALL R19 R19 K79 [0x234BA63B]
-     257 [-]: CALL R19 5 1 
-     258 [-]: MOVE R17 R19 
-     259 [-]: JUMP L38
-    
-L37: 260 [-]: GETUPVAL R19 5
-     261 [-]: NAMECALL R19 R19 K80 [0x8026755D]
-     262 [-]: CALL R19 1 1 
-     263 [-]: GETUPVAL R20 10
-     264 [-]: MOVE R21 R19 
-     265 [-]: CALL R20 1 1 
-     266 [-]: MOVE R17 R20 
-L38: 267 [-]: GETUPVAL R19 5
-     268 [-]: NAMECALL R19 R19 K81 [0xE6AE57EE]
-     269 [-]: CALL R19 1 1 
-     270 [-]: JUMPIFNOT R19 L39
-     271 [-]: LOADN R18 0  
-     272 [-]: JUMP L40
-    
-L39: 273 [-]: ADDK R20 R18 K82 [1]
-     274 [-]: GETIMPORT R21 71 [0x67652851]
-     275 [-]: CALL R21 0 1 
-     276 [-]: ADD R18 R20 R21
-L40: 277 [-]: FASTCALL1 62 R15 L41
-     278 [-]: MOVE R21 R15 
-     279 [-]: GETIMPORT R20 3 [0x7B998233]
-     280 [-]: CALL R20 1 1 
-L41: 281 [-]: JUMPIFNOT R20 L59
-     282 [-]: FASTCALL1 62 R17 L42
-     283 [-]: MOVE R21 R17 
-     284 [-]: GETIMPORT R20 3 [0x7B998233]
-     285 [-]: CALL R20 1 1 
-L42: 286 [-]: JUMPIF R20 L59
-     287 [-]: JUMPIF R19 L59
-     288 [-]: GETIMPORT R20 78 [0x990F0A25]
-     289 [-]: JUMPIFNOTLE R20 R18 L59
-     290 [-]: FASTCALL1 62 R15 L43
-     291 [-]: MOVE R21 R15 
-     292 [-]: GETIMPORT R20 3 [0x7B998233]
-     293 [-]: CALL R20 1 1 
-L43: 294 [-]: JUMPIFNOT R20 L44
-     295 [-]: GETUPVAL R20 5
-     296 [-]: LOADB R22 1  
-     297 [-]: NAMECALL R20 R20 K83 [0xE830AC3D]
-     298 [-]: CALL R20 2 1 
-     299 [-]: GETUPVAL R21 5
-     300 [-]: NAMECALL R21 R21 K84 [0x9A49D00C]
-     301 [-]: CALL R21 1 1 
-     302 [-]: JUMPIFNOTLT R20 R21 L44
-     303 [-]: GETUPVAL R20 5
-     304 [-]: MOVE R22 R14 
-     305 [-]: MOVE R23 R17 
-     306 [-]: GETUPVAL R24 2
-     307 [-]: MOVE R25 R12 
-     308 [-]: NAMECALL R20 R20 K85 [0x33FC842F]
-     309 [-]: CALL R20 5 1 
-     310 [-]: MOVE R15 R20 
-L44: 311 [-]: FASTCALL1 62 R15 L45
-     312 [-]: MOVE R21 R15 
-     313 [-]: GETIMPORT R20 3 [0x7B998233]
-     314 [-]: CALL R20 1 1 
-L45: 315 [-]: JUMPIF R20 L58
-     316 [-]: GETUPVAL R20 5
-     317 [-]: LOADN R22 1  
-     318 [-]: NAMECALL R20 R20 K86 [0xF2D6020E]
-     319 [-]: CALL R20 2 0 
-     320 [-]: GETUPVAL R21 11
-     321 [-]: GETTABLEKS R20 R21 K87 [0x67A78DAD]
-     322 [-]: GETUPVAL R22 11
-     323 [-]: GETTABLEKS R21 R22 K88 ["UNALERT"]
-     324 [-]: CALL R20 1 0 
-     325 [-]: GETUPVAL R20 5
-     326 [-]: LOADB R22 0  
-     327 [-]: NAMECALL R20 R20 K89 [0x8F4DC1B0]
-     328 [-]: CALL R20 2 0 
-     329 [-]: JUMPIFNOT R9 L57
-     330 [-]: LENGTH R22 R8
-     331 [-]: LOADN R20 1  
-     332 [-]: LOADN R21 -1 
-     333 [-]: FORNPREP R20 L49
-L46: 334 [-]: GETTABLE R24 R8 R22
-     335 [-]: FASTCALL1 62 R24 L47
-     336 [-]: GETIMPORT R23 3 [0x7B998233]
-     337 [-]: CALL R23 1 1 
-L47: 338 [-]: JUMPIFNOT R23 L48
-     339 [-]: GETIMPORT R23 92 [0x9C1F3B5A]
-     340 [-]: MOVE R24 R8  
-     341 [-]: MOVE R25 R22 
-     342 [-]: CALL R23 2 0 
-L48: 343 [-]: FORNLOOP R20 L46
-L49: 344 [-]: FASTCALL1 62 R8 L50
-     345 [-]: MOVE R21 R8  
-     346 [-]: GETIMPORT R20 3 [0x7B998233]
-     347 [-]: CALL R20 1 1 
-L50: 348 [-]: JUMPIF R20 L56
-     349 [-]: LENGTH R20 R8
-     350 [-]: LOADN R21 0  
-     351 [-]: JUMPIFNOTLT R21 R20 L56
-     352 [-]: GETIMPORT R20 13 [0x3D106989]
-     353 [-]: LOADK R21 K93 ["Corpus Greed: Defense setup"]
-     354 [-]: CALL R20 1 0 
-     355 [-]: NAMECALL R20 R15 K94 [0xBB610E5B]
-     356 [-]: CALL R20 1 1 
-     357 [-]: FASTCALL1 62 R20 L51
-     358 [-]: MOVE R22 R20 
-     359 [-]: GETIMPORT R21 3 [0x7B998233]
-     360 [-]: CALL R21 1 1 
-L51: 361 [-]: JUMPIF R21 L55
-     362 [-]: NAMECALL R21 R20 K95 [0xD1586535]
-     363 [-]: CALL R21 1 1 
-     364 [-]: LOADN R22 0  
-     365 [-]: LOADN R23 0  
-     366 [-]: GETTABLEN R24 R8 1
-     367 [-]: LOADN R27 1  
-     368 [-]: LENGTH R25 R8
-     369 [-]: LOADN R26 1  
-     370 [-]: FORNPREP R25 L54
-L52: 371 [-]: GETUPVAL R28 5
-     372 [-]: MOVE R30 R21 
-     373 [-]: GETTABLE R31 R8 R27
-     374 [-]: NAMECALL R31 R31 K95 [0xD1586535]
-     375 [-]: CALL R31 1 -1
-     376 [-]: NAMECALL R28 R28 K96 [0x87358EF0]
-     377 [-]: CALL R28 -1 1
-     378 [-]: MOVE R22 R28 
-     379 [-]: JUMPIFNOTLT R23 R22 L53
-     380 [-]: MOVE R23 R22 
-     381 [-]: GETTABLE R24 R8 R27
-L53: 382 [-]: FORNLOOP R25 L52
-L54: 383 [-]: NAMECALL R27 R24 K95 [0xD1586535]
-     384 [-]: CALL R27 1 -1
-     385 [-]: NAMECALL R25 R15 K97 [0x54CFC0CF]
-     386 [-]: CALL R25 -1 0
-     387 [-]: JUMP L57
-    
-L55: 388 [-]: GETIMPORT R21 13 [0x3D106989]
-     389 [-]: LOADK R22 K98 ["Corpus Greed: Avatar is nil!"]
-     390 [-]: CALL R21 1 0 
-     391 [-]: JUMP L57
-    
-L56: 392 [-]: GETIMPORT R20 13 [0x3D106989]
-     393 [-]: LOADK R21 K44 ["Corpus Greed: No shrines found!"]
-     394 [-]: CALL R20 1 0 
-L57: 395 [-]: LOADB R16 1  
-     396 [-]: GETIMPORT R22 100 [0x280EF87D]
-     397 [-]: NAMECALL R20 R1 K101 [0xC19D05D7]
-     398 [-]: CALL R20 2 0 
-     399 [-]: GETIMPORT R20 13 [0x3D106989]
-     400 [-]: LOADK R21 K102 ["Manager spawned"]
-     401 [-]: CALL R20 1 0 
-     402 [-]: JUMP L60
-    
-L58: 403 [-]: GETIMPORT R20 5 [0xCBD666E1]
-     404 [-]: LOADN R21 1  
-     405 [-]: CALL R20 1 0 
-     406 [-]: JUMP L60
-    
-L59: 407 [-]: GETIMPORT R20 13 [0x3D106989]
-     408 [-]: LOADK R21 K103 ["Aristocrat Treasurer: No valid spawnpoint, AI cap reached or VIP/after VIP timer is active."]
-     409 [-]: CALL R20 1 0 
-     410 [-]: GETIMPORT R20 5 [0xCBD666E1]
-     411 [-]: LOADN R21 1  
-     412 [-]: CALL R20 1 0 
-L60: 413 [-]: JUMPBACK L36 
-L61: 414 [-]: GETUPVAL R21 7
-     415 [-]: LOADN R22 1000
-     416 [-]: NAMECALL R19 R1 K75 [0x751F061D]
-     417 [-]: CALL R19 3 0 
-     418 [-]: GETIMPORT R19 13 [0x3D106989]
-     419 [-]: LOADK R21 K104 ["Corpus Greed: Aristocrat Treasurer Spawned at "]
-     420 [-]: GETIMPORT R22 36 [0x64FB1586]
-     421 [-]: NAMECALL R23 R15 K94 [0xBB610E5B]
-     422 [-]: CALL R23 1 1 
-     423 [-]: NAMECALL R23 R23 K95 [0xD1586535]
-     424 [-]: CALL R23 1 -1
-     425 [-]: CALL R22 -1 1
-     426 [-]: CONCAT R20 R21 R22
-     427 [-]: CALL R19 1 0 
-     428 [-]: GETIMPORT R19 13 [0x3D106989]
-     429 [-]: LOADK R20 K105 ["Corpus Greed: Ended"]
-     430 [-]: CALL R19 1 0 
-     431 [-]: RETURN R0 0  
+       0 [-]: GETIMPORT R1 1; var1 = 0xBE190284
+L 0:   1 [-]: FASTCALL1 62 R1 L1; 
+       2 [-]: MOVE R3 R1   ; var3 = var1
+       3 [-]: GETIMPORT R2 3; var2 = 0x7B998233
+       4 [-]: CALL R2 2 2  ; var2 = var2(var3)
+L 1:   5 [-]: JUMPIFNOT R2 L2; goto L2 if not var2
+       6 [-]: GETIMPORT R2 5; var2 = 0xCBD666E1
+       7 [-]: LOADN R3 0   ; var3 = 0
+       8 [-]: CALL R2 2 1  ; var2(var3)
+       9 [-]: GETIMPORT R1 1; var1 = 0xBE190284
+      10 [-]: JUMPBACK L0  ; goto L0
+L 2:  11 [-]: GETIMPORT R2 7; var2 = 0x89326C93
+      12 [-]: NAMECALL R2 R2 K8; var3 = var2; var2 = var2[0x61BE252A]
+      13 [-]: CALL R2 2 2  ; var2 = var2(var3)
+      14 [-]: JUMPXEQKN R2 K9 L3 NOT; 
+      15 [-]: GETIMPORT R2 5; var2 = 0xCBD666E1
+      16 [-]: LOADN R3 0   ; var3 = 0
+      17 [-]: CALL R2 2 1  ; var2(var3)
+      18 [-]: JUMPBACK L2  ; goto L2
+L 3:  19 [-]: GETIMPORT R3 7; var3 = 0x89326C93
+      20 [-]: NAMECALL R3 R3 K10; var4 = var3; var3 = var3[0x78298275]
+      21 [-]: CALL R3 2 0  ; var3, ... = var3(var4)
+      22 [-]: FASTCALL 62 L4; 
+      23 [-]: GETIMPORT R2 3; var2 = 0x7B998233
+      24 [-]: CALL R2 0 2  ; var2 = var2(var3, ...)
+L 4:  25 [-]: JUMPIFNOT R2 L5; goto L5 if not var2
+      26 [-]: GETIMPORT R2 5; var2 = 0xCBD666E1
+      27 [-]: LOADN R3 0   ; var3 = 0
+      28 [-]: CALL R2 2 1  ; var2(var3)
+      29 [-]: JUMPBACK L3  ; goto L3
+L 5:  30 [-]: GETIMPORT R2 7; var2 = 0x89326C93
+      31 [-]: GETUPVAL R4 0; var4 = upvalues[0]
+      32 [-]: NAMECALL R2 R2 K11; var3 = var2; var2 = var2[0xFB669000]
+      33 [-]: CALL R2 3 2  ; var2 = var2(var3, var4)
+      34 [-]: FASTCALL1 62 R2 L6; 
+      35 [-]: MOVE R4 R2   ; var4 = var2
+      36 [-]: GETIMPORT R3 3; var3 = 0x7B998233
+      37 [-]: CALL R3 2 2  ; var3 = var3(var4)
+L 6:  38 [-]: JUMPIF R3 L7 ; goto L7 if var3
+      39 [-]: LENGTH R3 R2 ; var3 = #var2
+      40 [-]: LOADN R4 0   ; var4 = 0
+      41 [-]: JUMPIFNOTLT R4 R3 L7; goto L7 if var4 >= var852814
+      42 [-]: GETIMPORT R3 13; var3 = 0x3D106989
+      43 [-]: LOADK R4 K14 ; var4 = "Corpus Greed: Exiting, token already dropped."
+      44 [-]: CALL R3 2 1  ; var3(var4)
+      45 [-]: RETURN R0 0  ; 
+L 7:  46 [-]: GETIMPORT R3 7; var3 = 0x89326C93
+      47 [-]: GETUPVAL R5 1; var5 = upvalues[1]
+      48 [-]: NAMECALL R3 R3 K11; var4 = var3; var3 = var3[0xFB669000]
+      49 [-]: CALL R3 3 2  ; var3 = var3(var4, var5)
+      50 [-]: FASTCALL1 62 R3 L8; 
+      51 [-]: MOVE R5 R3   ; var5 = var3
+      52 [-]: GETIMPORT R4 3; var4 = 0x7B998233
+      53 [-]: CALL R4 2 2  ; var4 = var4(var5)
+L 8:  54 [-]: JUMPIF R4 L9 ; goto L9 if var4
+      55 [-]: GETIMPORT R4 13; var4 = 0x3D106989
+      56 [-]: LOADK R5 K15 ; var5 = "Corpus Greed: Exiting, Treasurer already active."
+      57 [-]: CALL R4 2 1  ; var4(var5)
+      58 [-]: RETURN R0 0  ; 
+L 9:  59 [-]: GETIMPORT R4 1; var4 = 0xBE190284
+      60 [-]: NAMECALL R4 R4 K16; var5 = var4; var4 = var4[0xEF893AEC]
+      61 [-]: CALL R4 2 2  ; var4 = var4(var5)
+      62 [-]: FASTCALL1 62 R4 L10; 
+      63 [-]: MOVE R6 R4   ; var6 = var4
+      64 [-]: GETIMPORT R5 3; var5 = 0x7B998233
+      65 [-]: CALL R5 2 2  ; var5 = var5(var6)
+L10:  66 [-]: JUMPIF R5 L12; goto L12 if var5
+      67 [-]: GETTABLEKS R6 R4 K17; var6 = var4["levelOverride"]
+      68 [-]: FASTCALL1 62 R6 L11; 
+      69 [-]: GETIMPORT R5 3; var5 = 0x7B998233
+      70 [-]: CALL R5 2 2  ; var5 = var5(var6)
+L11:  71 [-]: JUMPIFNOT R5 L13; goto L13 if not var5
+L12:  72 [-]: GETIMPORT R5 13; var5 = 0x3D106989
+      73 [-]: LOADK R6 K18 ; var6 = "Corpus Greed: Exiting, proc level loaded from editor."
+      74 [-]: CALL R5 2 1  ; var5(var6)
+      75 [-]: RETURN R0 0  ; 
+L13:  76 [-]: GETIMPORT R5 21; var5 = _T["faction"]
+      77 [-]: GETUPVAL R6 2; var6 = upvalues[2]
+      78 [-]: JUMPIFEQ R5 R6 L14; goto L14 if var5 == var853326
+      79 [-]: GETIMPORT R5 13; var5 = 0x3D106989
+      80 [-]: LOADK R6 K22 ; var6 = "Corpus Greed: Exiting and disabling shrines, main faction isn't Corpus."
+      81 [-]: CALL R5 2 1  ; var5(var6)
+      82 [-]: GETUPVAL R5 3; var5 = upvalues[3]
+      83 [-]: CALL R5 1 1  ; var5()
+      84 [-]: RETURN R0 0  ; 
+L14:  85 [-]: GETTABLEKS R6 R4 K23; var6 = var4["invasionId"]
+      86 [-]: FASTCALL1 62 R6 L15; 
+      87 [-]: GETIMPORT R5 3; var5 = 0x7B998233
+      88 [-]: CALL R5 2 2  ; var5 = var5(var6)
+L15:  89 [-]: JUMPIF R5 L16; goto L16 if var5
+      90 [-]: GETTABLEKS R5 R4 K23; var5 = var4["invasionId"]
+      91 [-]: JUMPXEQKS R5 K24 L16; 
+      92 [-]: GETIMPORT R5 13; var5 = 0x3D106989
+      93 [-]: LOADK R6 K25 ; var6 = "Corpus Greed: Exiting and disabling shrines since this is an invasion mission."
+      94 [-]: CALL R5 2 1  ; var5(var6)
+      95 [-]: GETUPVAL R5 3; var5 = upvalues[3]
+      96 [-]: CALL R5 1 1  ; var5()
+      97 [-]: RETURN R0 0  ; 
+L16:  98 [-]: GETIMPORT R5 7; var5 = 0x89326C93
+      99 [-]: GETIMPORT R7 27; var7 = 0x0469F296
+     100 [-]: LOADK R8 K28 ; var8 = "PurgatorySpawn"
+     101 [-]: CALL R7 2 0  ; var7, ... = var7(var8)
+     102 [-]: NAMECALL R5 R5 K29; var6 = var5; var5 = var5[0x46A0EBF5]
+     103 [-]: CALL R5 0 2  ; var5 = var5(var6, ...)
+     104 [-]: FASTCALL1 62 R5 L17; 
+     105 [-]: MOVE R7 R5   ; var7 = var5
+     106 [-]: GETIMPORT R6 3; var6 = 0x7B998233
+     107 [-]: CALL R6 2 2  ; var6 = var6(var7)
+L17: 108 [-]: JUMPIFNOT R6 L18; goto L18 if not var6
+     109 [-]: GETIMPORT R6 13; var6 = 0x3D106989
+     110 [-]: LOADK R7 K30 ; var7 = "Corpus Greed: Disabling shrines, no purgatory tile present in this level."
+     111 [-]: CALL R6 2 1  ; var6(var7)
+     112 [-]: GETUPVAL R6 3; var6 = upvalues[3]
+     113 [-]: CALL R6 1 1  ; var6()
+L18: 114 [-]: GETTABLEKS R6 R4 K17; var6 = var4["levelOverride"]
+     115 [-]: NAMECALL R6 R6 K31; var7 = var6; var6 = var6[0xED4E0128]
+     116 [-]: CALL R6 2 2  ; var6 = var6(var7)
+     117 [-]: GETIMPORT R7 34; var7 = 0x7F5022CF[0xA5C556B9]
+     118 [-]: GETIMPORT R8 36; var8 = 0x64FB1586
+     119 [-]: MOVE R9 R6   ; var9 = var6
+     120 [-]: CALL R8 2 2  ; var8 = var8(var9)
+     121 [-]: LOADK R9 K37 ; var9 = "Protea"
+     122 [-]: CALL R7 3 2  ; var7 = var7(var8, var9)
+     123 [-]: JUMPIFNOT R7 L19; goto L19 if not var7
+     124 [-]: GETIMPORT R7 13; var7 = 0x3D106989
+     125 [-]: LOADK R8 K38 ; var8 = "Corpus Greed: Exiting, protea quest active."
+     126 [-]: CALL R7 2 1  ; var7(var8)
+     127 [-]: RETURN R0 0  ; 
+L19: 128 [-]: GETIMPORT R7 40; var7 = _T["gQuestMission"]
+     129 [-]: JUMPIFNOT R7 L20; goto L20 if not var7
+     130 [-]: GETIMPORT R7 13; var7 = 0x3D106989
+     131 [-]: LOADK R8 K41 ; var8 = "Corpus Greed: Exiting and disabling shrines, quest mission active."
+     132 [-]: CALL R7 2 1  ; var7(var8)
+     133 [-]: GETUPVAL R7 3; var7 = upvalues[3]
+     134 [-]: CALL R7 1 1  ; var7()
+     135 [-]: RETURN R0 0  ; 
+L20: 136 [-]: NAMECALL R7 R1 K42; var8 = var1; var7 = var1[0x5C390F04]
+     137 [-]: CALL R7 2 2  ; var7 = var7(var8)
+     138 [-]: LOADNIL R8   ; var8 = nil
+     139 [-]: LOADN R10 8  ; var10 = 8
+     140 [-]: JUMPIFEQ R7 R10 L21; goto L21 if var7 == var16779547
+     141 [-]: LOADB R9 0 +1; var9 = false
+L21: 142 [-]: LOADB R9 1   ; var9 = true
+L22: 143 [-]: JUMPIFNOT R9 L25; goto L25 if not var9
+     144 [-]: GETIMPORT R10 7; var10 = 0x89326C93
+     145 [-]: GETUPVAL R12 4; var12 = upvalues[4]
+     146 [-]: NAMECALL R10 R10 K43; var11 = var10; var10 = var10[0xC7FCADA9]
+     147 [-]: CALL R10 3 2 ; var10 = var10(var11, var12)
+     148 [-]: MOVE R8 R10  ; var8 = var10
+     149 [-]: FASTCALL1 62 R8 L23; 
+     150 [-]: MOVE R11 R8  ; var11 = var8
+     151 [-]: GETIMPORT R10 3; var10 = 0x7B998233
+     152 [-]: CALL R10 2 2 ; var10 = var10(var11)
+L23: 153 [-]: JUMPIF R10 L24; goto L24 if var10
+     154 [-]: LENGTH R10 R8; var10 = #var8
+     155 [-]: JUMPXEQKN R10 K9 L25 NOT; 
+L24: 156 [-]: GETIMPORT R10 13; var10 = 0x3D106989
+     157 [-]: LOADK R11 K44; var11 = "Corpus Greed: No shrines found!"
+     158 [-]: CALL R10 2 1 ; var10(var11)
+     159 [-]: RETURN R0 0  ; 
+L25: 160 [-]: LOADN R11 2  ; var11 = 2
+     161 [-]: JUMPIFEQ R7 R11 L26; goto L26 if var7 == var3083086
+     162 [-]: GETIMPORT R11 47; var11 = 0x6C97A788["MT_DEFEND"]
+     163 [-]: JUMPIFEQ R7 R11 L26; goto L26 if var7 == var2165575
+     164 [-]: LOADN R11 33 ; var11 = 33
+     165 [-]: JUMPIFEQ R7 R11 L26; goto L26 if var7 == var854855
+     166 [-]: LOADN R11 13 ; var11 = 13
+     167 [-]: JUMPIFNOTEQ R7 R11 L27; goto L27 if var7 ~= var68123
+L26: 168 [-]: LOADB R10 1  ; var10 = true
+     169 [-]: JUMP L28     ; goto L28
+L27: 170 [-]: LOADB R10 0  ; var10 = false
+L28: 171 [-]: LOADNIL R11  ; var11 = nil
+     172 [-]: JUMPIFNOT R10 L29; goto L29 if not var10
+     173 [-]: GETIMPORT R12 13; var12 = 0x3D106989
+     174 [-]: LOADK R13 K48; var13 = "Corpus Greed: Enless mission rules apply"
+     175 [-]: CALL R12 2 1 ; var12(var13)
+     176 [-]: GETIMPORT R12 50; var12 = 0xC163F229
+     177 [-]: GETIMPORT R13 52; var13 = 0x5597C2AA
+     178 [-]: GETIMPORT R14 54; var14 = 0x5FAB5A20
+     179 [-]: CALL R12 3 2 ; var12 = var12(var13, var14)
+     180 [-]: MOVE R11 R12 ; var11 = var12
+     181 [-]: JUMP L30     ; goto L30
+L29: 182 [-]: GETIMPORT R12 50; var12 = 0xC163F229
+     183 [-]: GETIMPORT R13 56; var13 = 0x16E7FC61
+     184 [-]: GETIMPORT R14 58; var14 = 0x08FB6E0F
+     185 [-]: CALL R12 3 2 ; var12 = var12(var13, var14)
+     186 [-]: MOVE R11 R12 ; var11 = var12
+L30: 187 [-]: GETIMPORT R12 7; var12 = 0x89326C93
+     188 [-]: NAMECALL R12 R12 K59; var13 = var12; var12 = var12[0x29EF273D]
+     189 [-]: CALL R12 2 2 ; var12 = var12(var13)
+     190 [-]: NAMECALL R12 R12 K60; var13 = var12; var12 = var12[0x66905CB0]
+     191 [-]: CALL R12 2 2 ; var12 = var12(var13)
+     192 [-]: SETUPVAL R12 5; upvalues[12] = var5
+     193 [-]: LOADK R14 K61; var14 = "OnDeath"
+     194 [-]: NAMECALL R12 R1 K62; var13 = var1; var12 = var1[0xE7EF698D]
+     195 [-]: CALL R12 3 1 ; var12(var13, var14)
+     196 [-]: GETUPVAL R12 5; var12 = upvalues[5]
+     197 [-]: NAMECALL R12 R12 K63; var13 = var12; var12 = var12[0x6968EA36]
+     198 [-]: CALL R12 2 2 ; var12 = var12(var13)
+     199 [-]: GETUPVAL R15 7; var15 = upvalues[7]
+     200 [-]: LOADN R16 0  ; var16 = 0
+     201 [-]: NAMECALL R13 R1 K64; var14 = var1; var13 = var1[0x0EB34C69]
+     202 [-]: CALL R13 4 2 ; var13 = var13(var14, var15, var16)
+     203 [-]: SETUPVAL R13 6; upvalues[13] = var6
+     204 [-]: GETUPVAL R13 6; var13 = upvalues[6]
+     205 [-]: LOADN R14 1000; var14 = 1000
+     206 [-]: JUMPIFNOTLE R14 R13 L31; goto L31 if var14 > var855374
+     207 [-]: GETIMPORT R13 13; var13 = 0x3D106989
+     208 [-]: LOADK R14 K65; var14 = "Corpus Greed: Exiting, Treasurer event has already concluded"
+     209 [-]: CALL R13 2 1 ; var13(var14)
+     210 [-]: RETURN R0 0  ; 
+L31: 211 [-]: GETUPVAL R15 9; var15 = upvalues[9]
+     212 [-]: LOADN R16 0  ; var16 = 0
+     213 [-]: NAMECALL R13 R1 K64; var14 = var1; var13 = var1[0x0EB34C69]
+     214 [-]: CALL R13 4 2 ; var13 = var13(var14, var15, var16)
+     215 [-]: SETUPVAL R13 8; upvalues[13] = var8
+     216 [-]: GETIMPORT R13 13; var13 = 0x3D106989
+     217 [-]: LOADK R14 K66; var14 = "Corpus Greed: Starting..."
+     218 [-]: CALL R13 2 1 ; var13(var14)
+L32: 219 [-]: GETUPVAL R13 6; var13 = upvalues[6]
+     220 [-]: JUMPIFLE R13 R11 L33; goto L33 if var13 <= var527623
+     221 [-]: GETUPVAL R13 8; var13 = upvalues[8]
+     222 [-]: GETIMPORT R14 68; var14 = 0xF0CB315A
+     223 [-]: JUMPIFNOTLE R13 R14 L35; goto L35 if var13 > var331086
+L33: 224 [-]: GETIMPORT R13 5; var13 = 0xCBD666E1
+     225 [-]: LOADK R14 K69; var14 = 0.5
+     226 [-]: CALL R13 2 1 ; var13(var14)
+     227 [-]: GETUPVAL R15 6; var15 = upvalues[6]
+     228 [-]: ADDK R14 R15 K69; var14 = var15 + 0.5
+     229 [-]: GETIMPORT R15 71; var15 = 0x67652851
+     230 [-]: CALL R15 1 2 ; var15 = var15()
+     231 [-]: ADD R13 R14 R15; var13 = var14 + var15
+     232 [-]: SETUPVAL R13 6; upvalues[13] = var6
+     233 [-]: GETUPVAL R15 7; var15 = upvalues[7]
+     234 [-]: GETUPVAL R17 6; var17 = upvalues[6]
+     235 [-]: FASTCALL1 12 R17 L34; 
+     236 [-]: GETIMPORT R16 74; var16 = 0x5BCED4C4[0x55F27C30]
+     237 [-]: CALL R16 2 0 ; var16, ... = var16(var17)
+L34: 238 [-]: NAMECALL R13 R1 K75; var14 = var1; var13 = var1[0x751F061D]
+     239 [-]: CALL R13 0 1 ; var13(var14, ...)
+     240 [-]: JUMPBACK L32 ; goto L32
+L35: 241 [-]: NAMECALL R13 R0 K76; var14 = var0; var13 = var0[0x6189CB44]
+     242 [-]: CALL R13 2 2 ; var13 = var13(var14)
+     243 [-]: GETTABLEN R14 R13 1; var14 = var13[1]
+     244 [-]: LOADNIL R15  ; var15 = nil
+     245 [-]: LOADB R16 0  ; var16 = false
+     246 [-]: LOADNIL R17  ; var17 = nil
+     247 [-]: GETIMPORT R18 78; var18 = 0x990F0A25
+L36: 248 [-]: JUMPIF R16 L61; goto L61 if var16
+     249 [-]: JUMPIFNOT R9 L37; goto L37 if not var9
+     250 [-]: GETUPVAL R19 5; var19 = upvalues[5]
+     251 [-]: GETIMPORT R21 27; var21 = 0x0469F296
+     252 [-]: CALL R21 1 2 ; var21 = var21()
+     253 [-]: LOADB R22 0  ; var22 = false
+     254 [-]: LOADB R23 0  ; var23 = false
+     255 [-]: LOADB R24 0  ; var24 = false
+     256 [-]: NAMECALL R19 R19 K79; var20 = var19; var19 = var19[0x234BA63B]
+     257 [-]: CALL R19 6 2 ; var19 = var19(var20, var21, var22, var23, var24)
+     258 [-]: MOVE R17 R19 ; var17 = var19
+     259 [-]: JUMP L38     ; goto L38
+L37: 260 [-]: GETUPVAL R19 5; var19 = upvalues[5]
+     261 [-]: NAMECALL R19 R19 K80; var20 = var19; var19 = var19[0x8026755D]
+     262 [-]: CALL R19 2 2 ; var19 = var19(var20)
+     263 [-]: GETUPVAL R20 10; var20 = upvalues[10]
+     264 [-]: MOVE R21 R19 ; var21 = var19
+     265 [-]: CALL R20 2 2 ; var20 = var20(var21)
+     266 [-]: MOVE R17 R20 ; var17 = var20
+L38: 267 [-]: GETUPVAL R19 5; var19 = upvalues[5]
+     268 [-]: NAMECALL R19 R19 K81; var20 = var19; var19 = var19[0xE6AE57EE]
+     269 [-]: CALL R19 2 2 ; var19 = var19(var20)
+     270 [-]: JUMPIFNOT R19 L39; goto L39 if not var19
+     271 [-]: LOADN R18 0  ; var18 = 0
+     272 [-]: JUMP L40     ; goto L40
+L39: 273 [-]: ADDK R20 R18 K82; var20 = var18 + 1
+     274 [-]: GETIMPORT R21 71; var21 = 0x67652851
+     275 [-]: CALL R21 1 2 ; var21 = var21()
+     276 [-]: ADD R18 R20 R21; var18 = var20 + var21
+L40: 277 [-]: FASTCALL1 62 R15 L41; 
+     278 [-]: MOVE R21 R15 ; var21 = var15
+     279 [-]: GETIMPORT R20 3; var20 = 0x7B998233
+     280 [-]: CALL R20 2 2 ; var20 = var20(var21)
+L41: 281 [-]: JUMPIFNOT R20 L59; goto L59 if not var20
+     282 [-]: FASTCALL1 62 R17 L42; 
+     283 [-]: MOVE R21 R17 ; var21 = var17
+     284 [-]: GETIMPORT R20 3; var20 = 0x7B998233
+     285 [-]: CALL R20 2 2 ; var20 = var20(var21)
+L42: 286 [-]: JUMPIF R20 L59; goto L59 if var20
+     287 [-]: JUMPIF R19 L59; goto L59 if var19
+     288 [-]: GETIMPORT R20 78; var20 = 0x990F0A25
+     289 [-]: JUMPIFNOTLE R20 R18 L59; goto L59 if var20 > var51330635
+     290 [-]: FASTCALL1 62 R15 L43; 
+     291 [-]: MOVE R21 R15 ; var21 = var15
+     292 [-]: GETIMPORT R20 3; var20 = 0x7B998233
+     293 [-]: CALL R20 2 2 ; var20 = var20(var21)
+L43: 294 [-]: JUMPIFNOT R20 L44; goto L44 if not var20
+     295 [-]: GETUPVAL R20 5; var20 = upvalues[5]
+     296 [-]: LOADB R22 1  ; var22 = true
+     297 [-]: NAMECALL R20 R20 K83; var21 = var20; var20 = var20[0xE830AC3D]
+     298 [-]: CALL R20 3 2 ; var20 = var20(var21, var22)
+     299 [-]: GETUPVAL R21 5; var21 = upvalues[5]
+     300 [-]: NAMECALL R21 R21 K84; var22 = var21; var21 = var21[0x9A49D00C]
+     301 [-]: CALL R21 2 2 ; var21 = var21(var22)
+     302 [-]: JUMPIFNOTLT R20 R21 L44; goto L44 if var20 >= var332807
+     303 [-]: GETUPVAL R20 5; var20 = upvalues[5]
+     304 [-]: MOVE R22 R14 ; var22 = var14
+     305 [-]: MOVE R23 R17 ; var23 = var17
+     306 [-]: GETUPVAL R24 2; var24 = upvalues[2]
+     307 [-]: MOVE R25 R12 ; var25 = var12
+     308 [-]: NAMECALL R20 R20 K85; var21 = var20; var20 = var20[0x33FC842F]
+     309 [-]: CALL R20 6 2 ; var20 = var20(var21, var22, var23, var24, var25)
+     310 [-]: MOVE R15 R20 ; var15 = var20
+L44: 311 [-]: FASTCALL1 62 R15 L45; 
+     312 [-]: MOVE R21 R15 ; var21 = var15
+     313 [-]: GETIMPORT R20 3; var20 = 0x7B998233
+     314 [-]: CALL R20 2 2 ; var20 = var20(var21)
+L45: 315 [-]: JUMPIF R20 L58; goto L58 if var20
+     316 [-]: GETUPVAL R20 5; var20 = upvalues[5]
+     317 [-]: LOADN R22 1  ; var22 = 1
+     318 [-]: NAMECALL R20 R20 K86; var21 = var20; var20 = var20[0xF2D6020E]
+     319 [-]: CALL R20 3 1 ; var20(var21, var22)
+     320 [-]: GETUPVAL R21 11; var21 = upvalues[11]
+     321 [-]: GETTABLEKS R20 R21 K87; var20 = var21[0x67A78DAD]
+     322 [-]: GETUPVAL R22 11; var22 = upvalues[11]
+     323 [-]: GETTABLEKS R21 R22 K88; var21 = var22["UNALERT"]
+     324 [-]: CALL R20 2 1 ; var20(var21)
+     325 [-]: GETUPVAL R20 5; var20 = upvalues[5]
+     326 [-]: LOADB R22 0  ; var22 = false
+     327 [-]: NAMECALL R20 R20 K89; var21 = var20; var20 = var20[0x8F4DC1B0]
+     328 [-]: CALL R20 3 1 ; var20(var21, var22)
+     329 [-]: JUMPIFNOT R9 L57; goto L57 if not var9
+     330 [-]: LENGTH R22 R8; var22 = #var8
+     331 [-]: LOADN R20 1  ; var20 = 1
+     332 [-]: LOADN R21 -1 ; var21 = -1
+     333 [-]: FORNPREP R20 L49; nforprep start - [escape at L49] -- var20 = iterator
+L46: 334 [-]: GETTABLE R24 R8 R22; var24 = var8[var22]
+     335 [-]: FASTCALL1 62 R24 L47; 
+     336 [-]: GETIMPORT R23 3; var23 = 0x7B998233
+     337 [-]: CALL R23 2 2 ; var23 = var23(var24)
+L47: 338 [-]: JUMPIFNOT R23 L48; goto L48 if not var23
+     339 [-]: GETIMPORT R23 92; var23 = 0x33BDD652[0x9C1F3B5A]
+     340 [-]: MOVE R24 R8  ; var24 = var8
+     341 [-]: MOVE R25 R22 ; var25 = var22
+     342 [-]: CALL R23 3 1 ; var23(var24, var25)
+L48: 343 [-]: FORNLOOP R20 L46; nforloop end - iterate + goto L46
+L49: 344 [-]: FASTCALL1 62 R8 L50; 
+     345 [-]: MOVE R21 R8  ; var21 = var8
+     346 [-]: GETIMPORT R20 3; var20 = 0x7B998233
+     347 [-]: CALL R20 2 2 ; var20 = var20(var21)
+L50: 348 [-]: JUMPIF R20 L56; goto L56 if var20
+     349 [-]: LENGTH R20 R8; var20 = #var8
+     350 [-]: LOADN R21 0  ; var21 = 0
+     351 [-]: JUMPIFNOTLT R21 R20 L56; goto L56 if var21 >= var857166
+     352 [-]: GETIMPORT R20 13; var20 = 0x3D106989
+     353 [-]: LOADK R21 K93; var21 = "Corpus Greed: Defense setup"
+     354 [-]: CALL R20 2 1 ; var20(var21)
+     355 [-]: NAMECALL R20 R15 K94; var21 = var15; var20 = var15[0xBB610E5B]
+     356 [-]: CALL R20 2 2 ; var20 = var20(var21)
+     357 [-]: FASTCALL1 62 R20 L51; 
+     358 [-]: MOVE R22 R20 ; var22 = var20
+     359 [-]: GETIMPORT R21 3; var21 = 0x7B998233
+     360 [-]: CALL R21 2 2 ; var21 = var21(var22)
+L51: 361 [-]: JUMPIF R21 L55; goto L55 if var21
+     362 [-]: NAMECALL R21 R20 K95; var22 = var20; var21 = var20[0xD1586535]
+     363 [-]: CALL R21 2 2 ; var21 = var21(var22)
+     364 [-]: LOADN R22 0  ; var22 = 0
+     365 [-]: LOADN R23 0  ; var23 = 0
+     366 [-]: GETTABLEN R24 R8 1; var24 = var8[1]
+     367 [-]: LOADN R27 1  ; var27 = 1
+     368 [-]: LENGTH R25 R8; var25 = #var8
+     369 [-]: LOADN R26 1  ; var26 = 1
+     370 [-]: FORNPREP R25 L54; nforprep start - [escape at L54] -- var25 = iterator
+L52: 371 [-]: GETUPVAL R28 5; var28 = upvalues[5]
+     372 [-]: MOVE R30 R21 ; var30 = var21
+     373 [-]: GETTABLE R31 R8 R27; var31 = var8[var27]
+     374 [-]: NAMECALL R31 R31 K95; var32 = var31; var31 = var31[0xD1586535]
+     375 [-]: CALL R31 2 0 ; var31, ... = var31(var32)
+     376 [-]: NAMECALL R28 R28 K96; var29 = var28; var28 = var28[0x87358EF0]
+     377 [-]: CALL R28 0 2 ; var28 = var28(var29, ...)
+     378 [-]: MOVE R22 R28 ; var22 = var28
+     379 [-]: JUMPIFNOTLT R23 R22 L53; goto L53 if var23 >= var1447702
+     380 [-]: MOVE R23 R22 ; var23 = var22
+     381 [-]: GETTABLE R24 R8 R27; var24 = var8[var27]
+L53: 382 [-]: FORNLOOP R25 L52; nforloop end - iterate + goto L52
+L54: 383 [-]: NAMECALL R27 R24 K95; var28 = var24; var27 = var24[0xD1586535]
+     384 [-]: CALL R27 2 0 ; var27, ... = var27(var28)
+     385 [-]: NAMECALL R25 R15 K97; var26 = var15; var25 = var15[0x54CFC0CF]
+     386 [-]: CALL R25 0 1 ; var25(var26, ...)
+     387 [-]: JUMP L57     ; goto L57
+L55: 388 [-]: GETIMPORT R21 13; var21 = 0x3D106989
+     389 [-]: LOADK R22 K98; var22 = "Corpus Greed: Avatar is nil!"
+     390 [-]: CALL R21 2 1 ; var21(var22)
+     391 [-]: JUMP L57     ; goto L57
+L56: 392 [-]: GETIMPORT R20 13; var20 = 0x3D106989
+     393 [-]: LOADK R21 K44; var21 = "Corpus Greed: No shrines found!"
+     394 [-]: CALL R20 2 1 ; var20(var21)
+L57: 395 [-]: LOADB R16 1  ; var16 = true
+     396 [-]: GETIMPORT R22 100; var22 = 0x280EF87D
+     397 [-]: NAMECALL R20 R1 K101; var21 = var1; var20 = var1[0xC19D05D7]
+     398 [-]: CALL R20 3 1 ; var20(var21, var22)
+     399 [-]: GETIMPORT R20 13; var20 = 0x3D106989
+     400 [-]: LOADK R21 K102; var21 = "Manager spawned"
+     401 [-]: CALL R20 2 1 ; var20(var21)
+     402 [-]: JUMP L60     ; goto L60
+L58: 403 [-]: GETIMPORT R20 5; var20 = 0xCBD666E1
+     404 [-]: LOADN R21 1  ; var21 = 1
+     405 [-]: CALL R20 2 1 ; var20(var21)
+     406 [-]: JUMP L60     ; goto L60
+L59: 407 [-]: GETIMPORT R20 13; var20 = 0x3D106989
+     408 [-]: LOADK R21 K103; var21 = "Aristocrat Treasurer: No valid spawnpoint, AI cap reached or VIP/after VIP timer is active."
+     409 [-]: CALL R20 2 1 ; var20(var21)
+     410 [-]: GETIMPORT R20 5; var20 = 0xCBD666E1
+     411 [-]: LOADN R21 1  ; var21 = 1
+     412 [-]: CALL R20 2 1 ; var20(var21)
+L60: 413 [-]: JUMPBACK L36 ; goto L36
+L61: 414 [-]: GETUPVAL R21 7; var21 = upvalues[7]
+     415 [-]: LOADN R22 1000; var22 = 1000
+     416 [-]: NAMECALL R19 R1 K75; var20 = var1; var19 = var1[0x751F061D]
+     417 [-]: CALL R19 4 1 ; var19(var20, var21, var22)
+     418 [-]: GETIMPORT R19 13; var19 = 0x3D106989
+     419 [-]: LOADK R21 K104; var21 = "Corpus Greed: Aristocrat Treasurer Spawned at "
+     420 [-]: GETIMPORT R22 36; var22 = 0x64FB1586
+     421 [-]: NAMECALL R23 R15 K94; var24 = var15; var23 = var15[0xBB610E5B]
+     422 [-]: CALL R23 2 2 ; var23 = var23(var24)
+     423 [-]: NAMECALL R23 R23 K95; var24 = var23; var23 = var23[0xD1586535]
+     424 [-]: CALL R23 2 0 ; var23, ... = var23(var24)
+     425 [-]: CALL R22 0 2 ; var22 = var22(var23, ...)
+     426 [-]: CONCAT R20 R21 R22; var20 = var21 .. var22
+     427 [-]: CALL R19 2 1 ; var19(var20)
+     428 [-]: GETIMPORT R19 13; var19 = 0x3D106989
+     429 [-]: LOADK R20 K105; var20 = "Corpus Greed: Ended"
+     430 [-]: CALL R19 2 1 ; var19(var20)
+     431 [-]: RETURN R0 0  ; 
 
 
 

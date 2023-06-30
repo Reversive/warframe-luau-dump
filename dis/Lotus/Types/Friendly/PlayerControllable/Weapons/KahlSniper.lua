@@ -5,9 +5,9 @@
 ; Is_vararg:       1
 ; Max Stack Size:  1
 
-       1 [-]: DUPCLOSURE R0 K0 []
-       2 [-]: SETGLOBAL R0 K1 ["OnHit"]
-       3 [-]: RETURN R0 0  
+       1 [-]: DUPCLOSURE R0 K0; 
+       2 [-]: SETGLOBAL R0 K1; "OnHit" = var0
+       3 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
@@ -17,23 +17,23 @@
 ; Is_vararg:       0
 ; Max Stack Size:  8
 
-       0 [-]: GETIMPORT R6 1 ["gHitProxyType"]
-       1 [-]: NAMECALL R4 R3 K2 [0xF2DEAF69]
-       2 [-]: CALL R4 2 1  
-       3 [-]: JUMPIFNOT R4 L0
-       4 [-]: NAMECALL R4 R3 K3 [0xFA7DBB54]
-       5 [-]: CALL R4 1 1  
-       6 [-]: GETIMPORT R7 5 ["gDynamicCoverType"]
-       7 [-]: NAMECALL R5 R4 K2 [0xF2DEAF69]
-       8 [-]: CALL R5 2 1  
-       9 [-]: JUMPIFNOT R5 L0
-      10 [-]: GETIMPORT R5 7 [0x3D106989]
-      11 [-]: LOADK R6 K8 ["Hit Dyanmic Cover"]
-      12 [-]: CALL R5 1 0  
-      13 [-]: LOADN R7 1   
-      14 [-]: NAMECALL R5 R4 K9 [0x014DB014]
-      15 [-]: CALL R5 2 0  
-L 0:  16 [-]: RETURN R0 0  
+       0 [-]: GETIMPORT R6 1; var6 = gHitProxyType
+       1 [-]: NAMECALL R4 R3 K2; var5 = var3; var4 = var3[0xF2DEAF69]
+       2 [-]: CALL R4 3 2  ; var4 = var4(var5, var6)
+       3 [-]: JUMPIFNOT R4 L0; goto L0 if not var4
+       4 [-]: NAMECALL R4 R3 K3; var5 = var3; var4 = var3[0xFA7DBB54]
+       5 [-]: CALL R4 2 2  ; var4 = var4(var5)
+       6 [-]: GETIMPORT R7 5; var7 = gDynamicCoverType
+       7 [-]: NAMECALL R5 R4 K2; var6 = var4; var5 = var4[0xF2DEAF69]
+       8 [-]: CALL R5 3 2  ; var5 = var5(var6, var7)
+       9 [-]: JUMPIFNOT R5 L0; goto L0 if not var5
+      10 [-]: GETIMPORT R5 7; var5 = 0x3D106989
+      11 [-]: LOADK R6 K8  ; var6 = "Hit Dyanmic Cover"
+      12 [-]: CALL R5 2 1  ; var5(var6)
+      13 [-]: LOADN R7 1   ; var7 = 1
+      14 [-]: NAMECALL R5 R4 K9; var6 = var4; var5 = var4[0x014DB014]
+      15 [-]: CALL R5 3 1  ; var5(var6, var7)
+L 0:  16 [-]: RETURN R0 0  ; 
 
 
 

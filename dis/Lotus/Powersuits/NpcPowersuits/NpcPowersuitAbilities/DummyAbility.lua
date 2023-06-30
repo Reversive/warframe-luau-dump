@@ -5,9 +5,9 @@
 ; Is_vararg:       1
 ; Max Stack Size:  1
 
-       1 [-]: DUPCLOSURE R0 K0 []
-       2 [-]: SETGLOBAL R0 K1 ["NpcEvaluateAbility"]
-       3 [-]: RETURN R0 0  
+       1 [-]: DUPCLOSURE R0 K0; 
+       2 [-]: SETGLOBAL R0 K1; "NpcEvaluateAbility" = var0
+       3 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
@@ -17,8 +17,8 @@
 ; Is_vararg:       0
 ; Max Stack Size:  3
 
-       0 [-]: LOADN R2 0   
-       1 [-]: RETURN R2 1  
+       0 [-]: LOADN R2 0   ; var2 = 0
+       1 [-]: RETURN R2 1  ; 
 
 
 
