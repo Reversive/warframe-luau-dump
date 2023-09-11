@@ -1,5 +1,5 @@
-# warframe-lua-dump
+# warframe-luau-dump
 
-dumped lua warframe scripts (2023.06.28.12.12)
+dumped & disassembled luau warframe scripts (2023.06.28.12.12)
 
-Special thanks to gudov and rogerxiii.
+do not open issues asking on how to to this.
